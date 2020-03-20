@@ -11,4 +11,4 @@ Bienvenue sur Geotribu !
 
 Après des années de sommeil, Geotribu revient ! Enfin bientôt...
 
-![Bannière Géotribu](/assets/images/geotribu/banner_geotribu.jpg)
+![Bannière Géotribu](assets/images/geotribu/banner_geotribu.jpg)
