@@ -1,0 +1,11 @@
+-i https://pypi.org/simple
+
+# Common requirements
+# -----------------------
+pip
+setuptools
+
+# Project requirements
+# -----------------------
+
+-r src/mkdocs/requirements.txt   # using mkdocs
