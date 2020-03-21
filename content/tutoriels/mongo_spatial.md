@@ -58,14 +58,14 @@ Au lieu d'utiliser ça:
 
     {
       "type": "FeatureCollection",
-      "features": 
+      "features":
       [
-        { 
-          "type": "Feature", "id": 0, "properties": { 
-            "Name": "Queensie Mini", "Lat": -33.7857729, "Long": 151.2899673 
-          }, "geometry": { 
-            "type": "Point", 
-            "coordinates": [ 151.2899673, -33.785772899999586 ] 
+        {
+          "type": "Feature", "id": 0, "properties": {
+            "Name": "Queensie Mini", "Lat": -33.7857729, "Long": 151.2899673
+          }, "geometry": {
+            "type": "Point",
+            "coordinates": [ 151.2899673, -33.785772899999586 ]
           }
         }
       ]
@@ -74,12 +74,12 @@ Au lieu d'utiliser ça:
 Utiliser ceci:
 
     [
-      { 
-        "type": "Feature", "id": 0, "properties": { 
-          "Name": "Queensie Mini", "Lat": -33.7857729, "Long": 151.2899673 
-        }, "geometry": { 
-          "type": "Point", 
-          "coordinates": [ 151.2899673, -33.785772899999586 ] 
+      {
+        "type": "Feature", "id": 0, "properties": {
+          "Name": "Queensie Mini", "Lat": -33.7857729, "Long": 151.2899673
+        }, "geometry": {
+          "type": "Point",
+          "coordinates": [ 151.2899673, -33.785772899999586 ]
         }
       }
     ]
