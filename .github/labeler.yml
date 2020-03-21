@@ -1,0 +1,8 @@
+ci-cd:
+    - .github/**/*
+
+mkdocs:
+    - src/mkdocs/**/*
+
+rdp:
+    - content/rdp/**/*.md
