@@ -5,6 +5,10 @@
 pip
 setuptools
 
+# Development
+# -----------------------
+pre-commit==2.2.*
+
 # Project requirements
 # -----------------------
 

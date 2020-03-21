@@ -53,7 +53,7 @@ FredM:
 
 ### 4. En terme de logistique et de mise en oeuvre, combien de temps prend le paramétrage d&#39;une mission?
 
-(Adam) Tout dépend de la complexité de la zone.  Pour la plupart des situations le planning est automatique et peut être fait en quelques minutes.  Le logiciel peut même diviser des zones d&#39;intérêt en plusieurs zones si un seul vol ne suffit pas.  Par exemple, sur la cartographie de Fort Liberté au nord de Haiti nous avons volé avec trois drones en même temps pour réduire le temps necessaire pour prendre les images.  
+(Adam) Tout dépend de la complexité de la zone.  Pour la plupart des situations le planning est automatique et peut être fait en quelques minutes.  Le logiciel peut même diviser des zones d&#39;intérêt en plusieurs zones si un seul vol ne suffit pas.  Par exemple, sur la cartographie de Fort Liberté au nord de Haiti nous avons volé avec trois drones en même temps pour réduire le temps necessaire pour prendre les images.
 
 Ce qui peut prendre du temps, surtout pour les drones à aile fixe, c&#39;est de trouver un endroit assez grand pour attérir.  Un eBee par exemple a besoin d&#39;environ 80m d&#39;espace en longueur sans obstacles.  Cela a surtout difficile pendant les vols que nous avons fait dans les zones urbaines dense de Port-au-Prince, où les endroit ouvert sont difficile à identifié à travers des cartes de satellite qui sont parfoit assez anciens.
 
