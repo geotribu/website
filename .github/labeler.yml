@@ -6,3 +6,7 @@ mkdocs:
 
 rdp:
     - content/rdp/**/*.md
+
+tuto:
+    - content/tutoriels/**/*.md
+    
