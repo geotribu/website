@@ -40,4 +40,4 @@ jobs:
         python -m pip install -r requirements.txt
 
     - name: Build static site in strict mode
-      run: mkdocs build -f src/mkdocs/mkdocs.yml --verbose --strict
+      run: mkdocs build --config-file src/mkdocs/mkdocs.yml --verbose --strict
