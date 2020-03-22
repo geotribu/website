@@ -40,4 +40,4 @@ jobs:
         python -m pip install -r requirements.txt
 
     - name: Deploy to Github Pages
-      run: mkdocs gh-deploy -f .\src\mkdocs\mkdocs.yml
+      run: mkdocs gh-deploy -f src/mkdocs/mkdocs.yml
