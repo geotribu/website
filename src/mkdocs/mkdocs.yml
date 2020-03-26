@@ -16,7 +16,8 @@ site_dir: '../../build/mkdocs/site'
 # Plugins
 plugins:
   - awesome-pages
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      ignore_missing_git: true
   - minify:
       minify_html: true
   - search:
@@ -47,12 +48,21 @@ extra:
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
-  - admonition  # https://squidfunk.github.io/mkdocs-material/extensions/admonition/
-  - codehilite: # https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+  - attr_list
+  # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
+  - admonition
+  # CodeHilite - https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+  - codehilite:
       linenums: true
-  - meta        # https://squidfunk.github.io/mkdocs-material/extensions/metadata/
+  # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
+  - meta
+  # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+  - pymdownx.emoji
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
-      permalink: true # https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
+      permalink: true
 
 # Navigation - Menu organization
 # # Disabled to use auto detection
