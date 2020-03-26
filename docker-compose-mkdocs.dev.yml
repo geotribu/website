@@ -7,7 +7,7 @@ services:
     build:
       context: .
       dockerfile: src/mkdocs/Dockerfile
-    environment: 
+    environment:
       - GIT_PYTHON_REFRESH=warn
     ports:
       - 8000:8000
