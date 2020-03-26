@@ -16,7 +16,8 @@ site_dir: '../../build/mkdocs/site'
 # Plugins
 plugins:
   - awesome-pages
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      ignore_missing_git: true
   - minify:
       minify_html: true
   - search:

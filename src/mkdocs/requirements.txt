@@ -4,7 +4,8 @@
 # -----------------------
 
 mkdocs-awesome-pages-plugin==2.2.*
-mkdocs-git-revision-date-localized-plugin==0.4.*
+# mkdocs-git-revision-date-localized-plugin==0.4.*
+https://github.com/Guts/mkdocs-git-revision-date-localized-plugin/archive/ignore-git-exceptions.zip
 mkdocs-material==4.6.*
 mkdocs-minify-plugin==0.2.*
 markdown-include==0.5.*
