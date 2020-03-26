@@ -10,6 +10,7 @@ Tags: contribuer, compétences, outils
 ## Compte GitHub
 
 Le site (sources et contenu) sont hébergés sur Github : <https://github.com/geotribu/website>.
+
 Pas de compte, pas de contribution : <https://github.com/join>.
 
 ## Markdown
@@ -21,11 +22,13 @@ La rédaction de contenu requiert la maîtrise de la syntaxe _[markdown]_.
 
     C'est bien le dernier qui fait foi, d'où l'intérêt de travailler en local.
 
-## Edition locale
+## Logiciels
+
+### Python
 
 Pour éditer localement et visualiser le résultat final avant de publier sur le dépôt, il faut installer [Python] 3.7+ et installer les dépendances :
 
-```shell
+```powershell
 # se rendre à la racine du dépôt local - adapter à son environnement
 cd ~/git-repos/geotribu/website/
 # créer un environnement virtuel
@@ -37,6 +40,18 @@ python -m pip install -U -r requirements.txt
 cd src/mkdocs
 mkdocs serve
 ```
+
+Le site est accessible sur : <http://locahost:8000>
+
+### Docker
+
+Il est possible de se passer de Python en utilisant Docker.
+
+```bash
+docker-compose -f "docker-compose-mkdocs.dev.yml" up --build
+```
+
+Le site est accessible sur : <http://locahost:8000>
 
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/download/win
