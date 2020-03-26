@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  website:
+    container_name: geotribu-mkdocs
+    image: geotribu-static-mkdocs
+    build:
+      context: .
+      dockerfile: src/mkdocs/Dockerfile
+    environment:
+      - GIT_PYTHON_REFRESH=warn
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+    command: mkdocs serve -f src/mkdocs/mkdocs.yml --dev-addr=0.0.0.0:8000
