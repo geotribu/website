@@ -20,6 +20,7 @@ Coucher sa prose en markdown en s'appuyant sur :
 - [voir un spécimen de ce qu'il est possible d'obtenir](https://squidfunk.github.io/mkdocs-material/specimen/)
 - [utiliser des blocs stylés](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
 - [insérer du code](https://squidfunk.github.io/mkdocs-material/extensions/codehilite/)
+- [astuces de rédaction (en)](https://yakworks.github.io/mkdocs-material-components/cheat-sheet/)
 
 ### Ajouter une image
 
