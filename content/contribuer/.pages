@@ -1,5 +1,7 @@
 title: Contribuer
 arrange:
+    - introduction.md
     - requirements.md
-    - contribution-guide.md
+    - local_edition_setup.md
+    - contribution_guide.md
     - archives
