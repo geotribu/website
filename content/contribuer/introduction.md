@@ -20,9 +20,9 @@ Bref, c'est ouvert :wink: :smile: ! Pas besoin d'être dans l'équipe _officiell
 
 Voici les étapes :
 
-- **s'assurer de remplir** les [prérequis techniques](requirements)
-- **configurer** [l'édition locale](local_edition_setup)
-- **suivre** le [guide de contribution](contribution_guide)
+- **s'assurer de remplir** les [prérequis techniques](../requirements)
+- **configurer** [l'édition locale](../local_edition_setup)
+- **suivre** le [guide de contribution](../contribution_guide)
 
 !!! question
 
