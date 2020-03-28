@@ -8,6 +8,7 @@ copyright: '&#127279; geotribu'
 # Repository
 repo_name: 'geotribu/website'
 repo_url: 'https://github.com/geotribu/website'
+edit_uri: edit/master/content
 
 # advanced options
 docs_dir: '../../content'
