@@ -16,8 +16,10 @@ site_dir: '../../build/mkdocs/site'
 # Plugins
 plugins:
   - awesome-pages
+  - git-authors
   - git-revision-date-localized:
       ignore_missing_git: true
+      type: datetime
   - minify:
       minify_html: true
   - search:
@@ -27,6 +29,7 @@ plugins:
 # Theme
 theme:
   name: 'material'
+  custom_dir: '../../content/theme/'
   feature:
     tabs: true
   font: false
