@@ -1,1 +1,1 @@
-release: mkdocs build --config-file src/mkdocs/mkdocs.yml --force
+release: mkdocs build --config-file src/mkdocs/mkdocs.yml
