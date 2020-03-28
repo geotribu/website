@@ -40,6 +40,11 @@ theme:
   favicon: 'assets/images/geotribu/logo_geotribu.png'
   logo: 'assets/images/geotribu/logo_geotribu.png'
 
+# Integrations with 3rd party
+google_analytics:
+  - 'UA-162113930-1'
+  - 'auto'
+
 # Customization
 extra:
   manifest: 'manifest.webmanifest'
