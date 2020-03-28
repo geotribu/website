@@ -17,6 +17,8 @@ site_dir: '../../build/mkdocs/site'
 # Plugins
 plugins:
   - awesome-pages
+  - git-authors:
+      show_contribution: true
   - git-revision-date-localized:
       fallback_to_build_date: true
   - minify:
@@ -28,6 +30,7 @@ plugins:
 # Theme
 theme:
   name: 'material'
+  custom_dir: '../../content/theme/'
   feature:
     tabs: true
   font: false
@@ -37,6 +40,11 @@ theme:
     accent: 'deep-orange'
   favicon: 'assets/images/geotribu/logo_geotribu.png'
   logo: 'assets/images/geotribu/logo_geotribu.png'
+
+# Integrations with 3rd party
+google_analytics:
+  - 'UA-162113930-1'
+  - 'auto'
 
 # Customization
 extra:
