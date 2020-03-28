@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block disqus %}
+    <div class="md-source-date">
+    <small>
+        Contributions à cette page : {{ git_authors_summary }}
+    </small>
+  </div>
+    {% include "partials/integrations/disqus.html" %}
+{% endblock %}
