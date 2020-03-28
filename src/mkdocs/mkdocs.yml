@@ -18,8 +18,7 @@ plugins:
   - awesome-pages
   - git-authors
   - git-revision-date-localized:
-      ignore_missing_git: true
-      type: datetime
+      fallback_to_build_date: true
   - minify:
       minify_html: true
   - search:
