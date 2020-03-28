@@ -26,7 +26,7 @@ git clone https://github.com/geotribu/website.git
     ```
 
     b. Ou, utiliser la branche "rdp/2020-01-01" déjà existante
-     ```
+    ```
     >git checkout rdp/2020-01-01
     Switched to a new branch 'rdp/2020-01-01'
     ```
