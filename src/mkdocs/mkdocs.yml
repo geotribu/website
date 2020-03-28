@@ -48,7 +48,7 @@ google_analytics:
 
 # Customization
 extra:
-  disqus: 'geotribu_static'  # comment system
+  disqus: 'geotribu-static'  # comment system
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
     - type: 'github'
