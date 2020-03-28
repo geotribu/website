@@ -15,7 +15,7 @@ Tags: guide
 
 1. [Cloner le dépôt central](requirements#git) localement
 ```
-git clone https://github.com/geotribu/website.git
+>git clone https://github.com/geotribu/website.git
 ```
 2. Créer ou utiliser une branche git locale
 
@@ -36,12 +36,12 @@ git clone https://github.com/geotribu/website.git
 
     a. Si c'est une nouvelle branche
     ```
-    git push -u origin "rdp/2020-01-01"
+    >git push -u origin "rdp/2020-01-01"
     ```
 
     b. Ou, si c'est une branche déjà existante
     ```
-    git push
+    >git push
     ```
 
 5. Une fois le contenu prêt pour être publié, créer une [_Pull Request_](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) de sa branche vers la branche `master` du dépôt central
@@ -51,7 +51,7 @@ git clone https://github.com/geotribu/website.git
 
     Avant d'ajouter du contenu sur une branche déjà existante, bien penser à récupérer les changements faits par les autres contributeurs avant, en faisant :
     ```
-    git pull
+    >git pull
     ```  
 
 ## Créer une revue de presse
