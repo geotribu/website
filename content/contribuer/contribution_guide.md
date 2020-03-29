@@ -14,11 +14,45 @@ Tags: guide
 ## Processus (_workflow_)
 
 1. [Cloner le dépôt central](requirements#git) localement
+```
+>git clone https://github.com/geotribu/website.git
+```
 2. Créer ou utiliser une branche git locale
+
+    a. Soit, créer une branche locale "rdp/2020-01-01"
+    ```
+    >git checkout -b rdp/2020-01-01
+    Switched to a new branch 'rdp/2020-01-01'
+    ```
+
+    b. Ou, utiliser la branche "rdp/2020-01-01" déjà existante
+    ```
+    >git checkout rdp/2020-01-01
+    Switched to a new branch 'rdp/2020-01-01'
+    ```
+
 3. Créer/modifier localement du contenu en markdown
 4. Pousser son contenu avec Git vers le dépôt central ou vers un dépôt de son compte si on n'a pas les droits
+
+    a. Si c'est une nouvelle branche
+    ```
+    >git push -u origin "rdp/2020-01-01"
+    ```
+
+    b. Ou, si c'est une branche déjà existante
+    ```
+    >git push
+    ```
+
 5. Une fois le contenu prêt pour être publié, créer une [_Pull Request_](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) de sa branche vers la branche `master` du dépôt central
 
+
+!!! info
+
+    Avant d'ajouter du contenu sur une branche déjà existante, bien penser à récupérer les changements faits par les autres contributeurs avant, en faisant :
+    ```
+    >git pull
+    ```  
 
 ## Créer une revue de presse
 
