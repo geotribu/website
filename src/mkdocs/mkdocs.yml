@@ -48,7 +48,8 @@ google_analytics:
 
 # Customization
 extra:
-  manifest: 'manifest.webmanifest'
+  disqus: 'geotribu-static'  # comment system
+  manifest: 'manifest.webmanifest'  # PWA declaration
   social:
     - type: 'github'
       link: 'https://github.com/geotribu/'
