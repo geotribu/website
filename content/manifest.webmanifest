@@ -1,11 +1,11 @@
 {
   "short_name": "geotribu",
   "name": "Geotribu",
-  "description": "Veille libre sur le petit monde de la géomatique",
+  "description": "Veille libre sur le petit monde de la g&eacute;omatique",
   "lang": "fr",
   "icons": [
     {
-      "src": "/assets/images/geotribu/logo_geotribu.png",
+      "src": "/theme/assets/images/geotribu/logo_geotribu.png",
       "type": "image/png",
       "sizes": "192x192"
     }
