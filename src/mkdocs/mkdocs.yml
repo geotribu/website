@@ -8,6 +8,7 @@ copyright: '&#127279; geotribu'
 # Repository
 repo_name: 'geotribu/website'
 repo_url: 'https://github.com/geotribu/website'
+edit_uri: edit/master/content
 
 # advanced options
 docs_dir: '../../content'
@@ -16,8 +17,10 @@ site_dir: '../../build/mkdocs/site'
 # Plugins
 plugins:
   - awesome-pages
+  - git-authors:
+      show_contribution: true
   - git-revision-date-localized:
-      ignore_missing_git: true
+      fallback_to_build_date: true
   - minify:
       minify_html: true
   - search:
@@ -27,6 +30,7 @@ plugins:
 # Theme
 theme:
   name: 'material'
+  custom_dir: '../../content/theme/'
   feature:
     tabs: true
   font: false
@@ -37,14 +41,23 @@ theme:
   favicon: 'assets/images/geotribu/logo_geotribu.png'
   logo: 'assets/images/geotribu/logo_geotribu.png'
 
+# Integrations with 3rd party
+google_analytics:
+  - 'UA-162113930-1'
+  - 'auto'
+
 # Customization
 extra:
-  manifest: 'manifest.webmanifest'
+  disqus: 'geotribu-static'  # comment system
+  manifest: 'manifest.webmanifest'  # PWA declaration
   social:
     - type: 'github'
       link: 'https://github.com/geotribu/'
     - type: 'twitter'
       link: 'https://twitter.com/geotribu/'
+
+extra_css:
+  - 'theme/assets/stylesheets/extra.css'
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
