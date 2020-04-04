@@ -4,4 +4,5 @@ arrange:
     - requirements.md
     - local_edition_setup.md
     - contribution_guide.md
+    - fix_content_from_website.md
     - archives
