@@ -10,4 +10,4 @@ mkdocs-git-revision-date-localized-plugin==0.5.*
 mkdocs-material>=5.0.0rc4
 mkdocs-minify-plugin==0.2.*
 markdown-include==0.5.*
-pymdown-extensions==6.*
+# pymdown-extensions==6.*
