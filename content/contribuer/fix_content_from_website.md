@@ -25,7 +25,7 @@ Voici comment corriger en quelques étapes simples et **sans rien installer**.
 
 ![Prévisualiser le rendu d'une page sur Github](https://cdn.geotribu.fr/images/internal/contribution/edit_github_preview.png)
 
-## 5. Une fois prêt à publier, se rendre en bas de la page et  rensiegner le petit formulaire de contribution
+## 5. Une fois prêt à publier, se rendre en bas de la page et  renseigner le petit formulaire de contribution
 
 - une phrase lapidaire de la modification
 - optionnellement, utiliser le champ plus grand pour détailler la modification (raisons, etc.)
