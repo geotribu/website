@@ -2,7 +2,7 @@
 Title: Guide de contribution à Geotribu
 Category: contribution
 Date: 2020-03-20 10:20
-Tags: guide
+Tags: guide,contribuer,geotribu
 ---
 
 # Guide de contribution
@@ -13,26 +13,42 @@ Tags: guide
 
 ## Processus (_workflow_)
 
-1. [Cloner le dépôt central](requirements#git) localement
-```
->git clone https://github.com/geotribu/website.git
-```
-2. Créer ou utiliser une branche git locale
+### 1. [Cloner le dépôt central](../requirements#git) localement
 
-    a. Soit, créer une branche locale "rdp/2020-01-01"
-    ```
-    >git checkout -b rdp/2020-01-01
+```bash
+git clone https://github.com/geotribu/website.git
+```
+
+Lister les branches distantes pour savoir si une revue de presse a déjà été créée :
+
+```bash
+# liste toutes les branches centralisées
+git branch -r
+# liste les branches débutant par 'rdp'
+git branch --list 'rdp*'
+```
+
+### 2. Créer ou utiliser une branche git locale
+
+- soit créer une branche locale "rdp/2020-01-01"
+
+    ```bash
+    git checkout -b rdp/2020-01-01
     Switched to a new branch 'rdp/2020-01-01'
     ```
 
-    b. Ou, utiliser la branche "rdp/2020-01-01" déjà existante
-    ```
-    >git checkout rdp/2020-01-01
+- soit utiliser la branche "rdp/2020-01-01" déjà existante
+
+    ```bash
+    git checkout rdp/2020-01-01
     Switched to a new branch 'rdp/2020-01-01'
     ```
 
-3. Créer/modifier localement du contenu en markdown
-4. Pousser son contenu avec Git vers le dépôt central ou vers un dépôt de son compte si on n'a pas les droits
+### 3. Créer/modifier localement du contenu en markdown
+
+Le bon moment de se rappeler [comment écrire du bon markdown](../requirements#markdown) :wink: !
+
+### 4. Pousser son contenu avec Git vers le dépôt central ou vers un dépôt de son compte si on n'a pas les droits
 
     a. Si c'est une nouvelle branche
     ```
@@ -56,7 +72,6 @@ Tags: guide
 
 ## Créer une revue de presse
 
-
 Créer un fichier dans `content\rdp` en respectant le nommage suivant : `rdp_AAAA-MM-JJ.md`. Exemple : `rdp_2020-03-27.md` pour la revue de presse du 20 mars 2020.
 
 ## Modifier une revue de presse
@@ -77,11 +92,6 @@ Dans la mesure du possible, les images doivent être récupérées depuis les au
 ```markdown
 ![Texte de remplacement](https://www.site-externe.com/medias/adresse_de_l_image.png "Titre/légende de mon image")
 ```
-
-Si ça n'est vraiment pas possible :
-
-1. Déposer l'image dans le sous-dossier adéquat sous `content/assets/images/`
-2. La référencer dans un article suivant cette syntaxe :
 
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/download/win
