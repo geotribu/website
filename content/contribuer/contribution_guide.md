@@ -44,51 +44,71 @@ git branch -r
   origin/vuepress
 ```
 
+Basculer ensuite sur la branche qui va bien :
 
-
-- soit créer une branche locale "rdp/2020-01-01"
+- soit en créant une branche locale `rdp/2020-04-03` :
 
     ```bash
-    git checkout -b rdp/2020-01-01
-    Switched to a new branch 'rdp/2020-01-01'
+    git checkout -b rdp/2020-04-03
+    Switched to a new branch 'rdp/2020-04-03'
     ```
 
-- soit utiliser la branche "rdp/2020-01-01" déjà existante
+- soit en utilisant la branche `rdp/2020-04-03` déjà existante
 
     ```bash
-    git checkout rdp/2020-01-01
-    Switched to a new branch 'rdp/2020-01-01'
+    git checkout rdp/2020-04-03
+    Switched to a new branch 'rdp/2020-04-03'
     ```
 
 ### 3. Créer/modifier localement du contenu en markdown
 
 Le bon moment de se rappeler [comment écrire du bon markdown](../requirements#markdown) :wink: !
 
-### 4. Pousser son contenu avec Git vers le dépôt central ou vers un dépôt de son compte si on n'a pas les droits
+### 4. Pousser son contenu avec Git vers le dépôt central
 
-    a. Si c'est une nouvelle branche
-    ```
-    >git push -u origin "rdp/2020-01-01"
-    ```
+> ou vers un dépôt de son compte si on n'a pas les droits
 
-    b. Ou, si c'est une branche déjà existante
-    ```
-    >git push
+- si c'est une nouvelle branche
+
+    ```bash
+    git push -u origin "rdp/2020-04-03"
     ```
 
-5. Une fois le contenu prêt pour être publié, créer une [_Pull Request_](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) de sa branche vers la branche `master` du dépôt central
+- Ou, si c'est une branche déjà existante
+
+    ```bash
+    git push
+    ```
+
+### 5. Proposer la publication sur le site
+
+Une fois le contenu prêt pour être publié, créer une [_Pull Request_](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) de sa branche vers la branche `master` du dépôt central
+
+![Créer la pull request](https://cdn.geotribu.fr/images/internal/contribution/github_pull-request_form.png)
+
+Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publiée :smile:
 
 
-!!! info
+!!! warning
 
     Avant d'ajouter du contenu sur une branche déjà existante, bien penser à récupérer les changements faits par les autres contributeurs avant, en faisant :
-    ```
-    >git pull
+
+    ```bash
+    git pull
     ```  
+
+----
 
 ## Créer une revue de presse
 
 Créer un fichier dans `content\rdp` en respectant le nommage suivant : `rdp_AAAA-MM-JJ.md`. Exemple : `rdp_2020-03-27.md` pour la revue de presse du 20 mars 2020.
+
+## Ajouter une news
+
+Un modèle de news est disponible ici :
+
+- en brut : <https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp_news.md>
+- rendu : <https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp_news.md>
 
 ## Modifier une revue de presse
 
