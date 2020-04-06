@@ -27,8 +27,23 @@ Tags: guide
 
     b. Ou, utiliser la branche "rdp/2020-01-01" déjà existante
     ```
-    >git checkout rdp/2020-01-01
+    >git branch -a
     Switched to a new branch 'rdp/2020-01-01'
+    ```
+    Pour afficher les différentes branches actives afin de sélectionner celle souhaitée, il suffit de lancer la commande ci-dessous :
+    ```
+    
+    >$ git branch -r
+    origin/HEAD -> origin/master
+    origin/ci-cd
+    origin/gh-pages
+    origin/master
+    origin/material-5
+    origin/pelican
+    origin/rdp/2020-04-03
+    origin/tutorials
+    origin/tutos
+    origin/vuepress
     ```
 
 3. Créer/modifier localement du contenu en markdown
