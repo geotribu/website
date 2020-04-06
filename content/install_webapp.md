@@ -5,11 +5,11 @@ Date: 2020-03-20 10:20
 tags: pwa,installation
 ---
 
-# Installer Geotribu sur Windows 10
+# Installer en tant qu'application
 
 Ce site étant entièrement statique et déclaré comme une [application web progressive] (_progressive web apps_), il est possible de l'installer à la manière d'une application classique.
 
-## Ordinateur
+## Windows 10
 
 !!! tip
     Pour l'instant, seuls les navigateurs utilisant une base Chromium proposent cette option. Par exemple : Google Chrome, Microsoft Edge (à partir de la version 2020, aussi appelée Edgium), etc.
@@ -41,10 +41,15 @@ Deux méthodes :
 
 ----
 
-## Mobile
+## Android
 
-!!! info
-    Prochainement sur vos écrans...
+1. Une fois sur la page d'accueil, ouvrir le menu du navigateur et sélectionner le menu `Ajouter à l'écran d'accueil` :
+
+    ![Ajouter Geotribu à l'écran d'accueil](https://cdn.geotribu.fr/images/internal/install_pwa/geotribu_pwa_install_android_firefox_chrome.png)
+
+2. Le site est donc ajouté à l'écran principal du smartphone :
+
+    ![Geotribu sur l'écran d'accueil d'un smartphone Android](https://cdn.geotribu.fr/images/internal/install_pwa/geotribu_pwa_install_android_homescreen.jpg)
 
 <!-- Hyperlinks -->
 
