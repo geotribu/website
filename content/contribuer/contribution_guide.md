@@ -19,16 +19,32 @@ Tags: guide,contribuer,geotribu
 git clone https://github.com/geotribu/website.git
 ```
 
-Lister les branches distantes pour savoir si une revue de presse a déjà été créée :
+### 2. Créer ou utiliser une branche git locale
+
+Pour afficher les différentes branches actives afin de sélectionner celle souhaitée, il suffit de lister les branches distantes pour savoir si une revue de presse a déjà été créée :
 
 ```bash
-# liste toutes les branches centralisées
-git branch -r
 # liste les branches débutant par 'rdp'
 git branch --list 'rdp*'
+
+  rdp/2020-04-03
+
+# liste toutes les branches centralisées
+git branch -r
+
+  origin/HEAD -> origin/master
+  origin/ci-cd
+  origin/gh-pages
+  origin/master
+  origin/material-5
+  origin/pelican
+  origin/rdp/2020-04-03
+  origin/tutorials
+  origin/tutos
+  origin/vuepress
 ```
 
-### 2. Créer ou utiliser une branche git locale
+
 
 - soit créer une branche locale "rdp/2020-01-01"
 
