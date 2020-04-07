@@ -8,9 +8,9 @@ copyright: '&#127279; geotribu'
 # Repository
 repo_name: 'geotribu/website'
 repo_url: 'https://github.com/geotribu/website'
-edit_uri: edit/master/content
+edit_uri: 'edit/master/content'
 
-# advanced options
+# Custom folder structure
 docs_dir: '../../content'
 site_dir: '../../build/mkdocs/site'
 
@@ -24,24 +24,31 @@ plugins:
   - minify:
       minify_html: true
   - search:
+      lang:
+        - en
+        - fr
       prebuild_index: true
       separator: '[\s\-\.]+'
-  - localsearch:
-      promise_delay: 100
 
 # Theme
 theme:
   name: 'material'
   custom_dir: '../../content/theme/'
-  feature:
-    tabs: true
+  favicon: 'assets/images/geotribu/logo_geotribu.png'
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  features:
+    - tabs
+    - instant
   font: false
   language: 'fr'
+  logo: 'theme/assets/images/geotribu/logo_geotribu.png'
   palette:
     primary: 'teal'
     accent: 'deep-orange'
-  favicon: 'assets/images/geotribu/logo_geotribu.png'
-  logo: 'assets/images/geotribu/logo_geotribu.png'
 
 # Integrations with 3rd party
 google_analytics:
@@ -53,9 +60,9 @@ extra:
   disqus: 'geotribu-static'  # comment system
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
-    - type: 'github'
+    - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/geotribu/'
-    - type: 'twitter'
+    - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/geotribu/'
 
 extra_css:
@@ -75,6 +82,7 @@ markdown_extensions:
   - pymdownx.emoji
   - pymdownx.inlinehilite
   - pymdownx.superfences
+  - pymdownx.tabbed
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: true
