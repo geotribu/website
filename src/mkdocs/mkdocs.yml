@@ -24,6 +24,10 @@ plugins:
   - minify:
       minify_html: true
   - search:
+      prebuild_index: true
+      separator: '[\s\-\.]+'
+  - localsearch:
+      promise_delay: 100
 
 # Theme
 theme:
