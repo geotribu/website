@@ -24,8 +24,6 @@ plugins:
   - minify:
       minify_html: true
   - search:
-      lang: fr
-      prebuild_index: python
 
 # Theme
 theme:
