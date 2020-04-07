@@ -60,32 +60,36 @@ git clone https://github.com/geotribu/website.git
 
 Pour éditer localement et visualiser le résultat final avant de publier sur le dépôt, il faut installer [Python] 3.7+, les dépendances :
 
-```bash hl_lines="10" tab="Bash"
-# se rendre à la racine du dépôt local - adapter à son environnement
-cd ~/git-repos/geotribu/website/
+=== "Bash"
 
-# créer un environnement virtuel
-virtualenv -p /usr/bin/python3.7 .venv
-source .venv/bin/activate
+    ```bash
+    # se rendre à la racine du dépôt local - adapter à son environnement
+    cd ~/git-repos/geotribu/website/
 
-# installer les dépendances
-python -m pip install -U -r requirements.txt
-```
+    # créer un environnement virtuel
+    virtualenv -p /usr/bin/python3.7 .venv
+    source .venv/bin/activate
 
-```powershell tab="Powershell"
-# se rendre à la racine du dépôt local - adapter à son environnement
-cd ~/git-repos/geotribu/website/
+    # installer les dépendances
+    python -m pip install -U -r requirements.txt
+    ```
 
-# si besoin, autoriser l'utilisation des environnements virtuels
-# commande à exécuter dans Powershell en mode administrateur (puis quitter le mode admin avant de continuer)
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+=== "Powershell"
 
-# créer un environnement virtuel
-py -3.7 -m venv .venv   # attention ne fonctionne pas avec Python installé depuis le Windows Store
+    ```powershell
+    # se rendre à la racine du dépôt local - adapter à son environnement
+    cd ~/git-repos/geotribu/website/
 
-# installer les dépendances
-python -m pip install -U -r requirements.txt
-```
+    # si besoin, autoriser l'utilisation des environnements virtuels
+    # commande à exécuter dans Powershell en mode administrateur (puis quitter le mode admin avant de continuer)
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+    # créer un environnement virtuel
+    py -3.7 -m venv .venv   # attention ne fonctionne pas avec Python installé depuis le Windows Store
+
+    # installer les dépendances
+    python -m pip install -U -r requirements.txt
+    ```
 
 Puis de lancer la commande qui lance le site en local avec rechargement automatique :
 
