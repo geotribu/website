@@ -7,13 +7,13 @@
             "label": "pipInstall",
             "type": "shell",
             "osx": {
-                "command": "${config:python.pythonPath} -m pip install -r requirements.txt"
+                "command": "${config:python.pythonPath} -m pip install -U -r requirements.txt"
             },
             "windows": {
-                "command": "${config:python.pythonPath} -m pip install -r requirements.txt"
+                "command": "${config:python.pythonPath} -m pip install -U -r requirements.txt"
             },
             "linux": {
-                "command": "${config:python.pythonPath} -m pip install -r requirements.txt"
+                "command": "${config:python.pythonPath} -m pip install -U -r requirements.txt"
             },
             "problemMatcher": []
         },
