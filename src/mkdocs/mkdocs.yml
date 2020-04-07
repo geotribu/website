@@ -27,7 +27,7 @@ plugins:
       lang:
         - en
         - fr
-      prebuild_index: true
+      prebuild_index: python
       separator: '[\s\-\.]+'
 
 # Theme
