@@ -1,10 +1,17 @@
 {% extends "base.html" %}
 
+{% block config %}
+{% if "localsearch" in config["plugins"] %}
+<script src="assets/javascript/iframe-worker.js"></script>
+<script src="search/search_index.js"></script>
+{% endif %}
+{% endblock %}
+
 {% block disqus %}
-    <div class="md-source-date">
-    <small>
-        Contributions à cette page : {{ git_page_authors }}
-    </small>
-  </div>
-    {% include "partials/integrations/disqus.html" %}
+<div class="md-source-date">
+  <small>
+    Contributions à cette page : {{ git_page_authors }}
+  </small>
+</div>
+{% include "partials/integrations/disqus.html" %}
 {% endblock %}
