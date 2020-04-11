@@ -24,7 +24,7 @@ plugins:
   - minify:
       minify_html: true
   - search:
-      prebuild_index: python
+      # prebuild_index: python
       separator: '[\s\-\.]+'
 
 # Theme
