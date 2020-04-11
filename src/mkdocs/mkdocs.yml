@@ -24,9 +24,6 @@ plugins:
   - minify:
       minify_html: true
   - search:
-      lang:
-        - en
-        - fr
       prebuild_index: python
       separator: '[\s\-\.]+'
 
