@@ -7,6 +7,6 @@ mkdocs-awesome-pages-plugin==2.2.*
 mkdocs-git-authors-plugin==0.3.*
 mkdocs-git-revision-date-localized-plugin==0.5.*
 mkdocs-localsearch==0.7.*
-mkdocs-material==5.0.*
+mkdocs-material==5.1.*
 mkdocs-minify-plugin==0.3.*
 markdown-include==0.5.*
