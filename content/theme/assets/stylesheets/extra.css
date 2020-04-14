@@ -3,4 +3,6 @@
     clear: right;
     overflow: auto;
     padding-right: 10px;
+    max-height: 75px;
+    max-width: 75px;
 }
