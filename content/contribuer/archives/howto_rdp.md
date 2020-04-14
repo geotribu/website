@@ -89,7 +89,7 @@ Une brève possède obligatoirement un type. Les types permettent de découper l
 - Client
 - Serveur
 - Logiciel
-- [OpenStreetMap](http://www.openstreetmap.org/)
+- [OpenStreetMap](https://www.openstreetmap.org/)
 - Google
 - Open Data
 - Représentation Cartographique
