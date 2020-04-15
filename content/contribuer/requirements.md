@@ -91,11 +91,16 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
     python -m pip install -U -r requirements.txt
     ```
 
+### Servir en local
+
 Puis de lancer la commande qui lance le site en local avec rechargement automatique :
 
 ```shell
 # servir le site avec mkdocs
 mkdocs serve -f src/mkdocs/mkdocs.yml
+
+# il existe aussi un mode où le rechargement ne concerne que la page modifiée
+mkdocs serve -f src/mkdocs/mkdocs.yml --dirtyreload
 ```
 
 Le site est accessible sur : <http://localhost:8000>
