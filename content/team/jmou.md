@@ -1,0 +1,7 @@
+# Julien Moura
+
+![](https://cdn.geotribu.fr/images/internal/contributeurs/jmou.jpg){: .img-rdp-news-thumb }
+
+Géographe "sigiste" de formation, je suis en poste auprès de l'IRD à Lima depuis bientôt deux ans, après avoir commencé à travailler dans la zone Océan Indien (Madagascar et surtout La Réunion où j'ai notamment animé le [club géomatique](http://clubgeomatique.agorah.com/clubgeomatique/index.php)) et fait un petit tour sac au dos en Amérique du Sud. Plutôt formé aux solutions propriétaires bureautiques classiques, ma curiosité et mes postes m'amènent vers de nombreux autres domaines, notamment le monde du libre en géomatique et le développement en python, avec lequel j'accouche de petits outils, comme [Metadator](http://www.portailsig.org/content/metadator-creation-automatisee-de-metadonnees).
+
+J'exerce une veille technologique élargie à la géographie et à la cartographie, notamment via une [agrégation des principaux flux](https://www.google.com/reader/bundle/user%2F03705632004351862828%2Fbundle%2FLes%20SIG%20sur%20la%20toile) (en [anglais](http://www.google.fr/reader/bundle/user%2F03705632004351862828%2Fbundle%2FGIS%20%28en%29) et [espagnol](http://www.google.fr/reader/bundle/user%2F03705632004351862828%2Fbundle%2FGIS%20%28es%29) également), un [twitter](https://twitter.com/geojulien) et [Google+](https://plus.google.com/101577483589644696143) qui servent les intérêts de GéoTribu depuis un peu plus d'un an.
