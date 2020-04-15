@@ -2,8 +2,9 @@
 
 ![](https://cdn.geotribu.fr/images/internal/contributeurs/fgob.jfif){: .img-rdp-news-thumb }
 
-Informaticien et géographe de formation, je suis indépendant en base de données, webmapping, j'aide à la modélisation et à la définition du besoin, je développe les interfaces d'administration justement pour gérer les données stockées, je 'fabrique' des api pour faire les connexions entre les données et les cartes glissantes - principalement pour des ONG, des labos de recherche et des organismes de consommation durable / équitable.
+Informaticien et géographe de formation, ~~je suis~~ j'étais indépendant en base de données, webmapping, j'aide à la modélisation et à la définition du besoin client, ~~je développe~~ j'encadre le développement des interfaces d'administration et des carto-web, je conçois des api géographiques pour les administrations, les ONG, les labos de recherche.
+Je suis maintenant responsable de l'innovation chez Sogefi. Toujours des cartes et des données qui ont besoin de communiquer. Nous avons une spécialité dans les données foncières et de leur représentation à destination des administrations.
 
-J'aime bien représenter toute forme de données ; du coup je fais pas mal de veille techno sur tout ce qui touche aux technologies web de dataviz - carto ou non.
+J'aime comprendre les données et en faire quelquechose ; du coup je fais pas mal de veille techno sur tout ce qui touche aux technologies web de dataviz - carto ou non.
 
-J'ai une préférence pour les technologies libres mais je ne suis pas fermé aux solutions / api propriétaires - parfois elles sont vraiment pratiques. Je travaille également avec des designers / créateurs sur des modes de représentation digitale dans le monde réel et je regarde beaucoup du côté des interactions hommes-machines sur des technos comme la Kinect, Arduino, les imprimantes 3d ou les machines de découpe laser.
+J'ai une préférence pour les technologies libres. Tout ce qui touche aux interactions hommes-machines avec des technos comme Kinect, Arduino, Raspberry, les imprimantes 3d ou les machines de découpe laser, les caméras 360° me passionne. Et j'essaie de les utiliser dans le cadre du travail.
