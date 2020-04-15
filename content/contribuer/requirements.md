@@ -105,6 +105,8 @@ mkdocs serve -f src/mkdocs/mkdocs.yml --dirtyreload
 
 Le site est accessible sur : <http://localhost:8000>
 
+----
+
 #### Docker
 
 Il est possible de se passer de Python en utilisant Docker.
