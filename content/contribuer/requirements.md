@@ -98,7 +98,7 @@ Puis de lancer la commande qui lance le site en local avec rechargement automati
 mkdocs serve -f src/mkdocs/mkdocs.yml
 ```
 
-Le site est accessible sur : <http://locahost:8000>
+Le site est accessible sur : <http://localhost:8000>
 
 #### Docker
 
