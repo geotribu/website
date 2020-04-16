@@ -60,7 +60,9 @@ extra:
     - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/geotribu/'
     - icon: 'fontawesome/brands/twitter'
-      link: 'https://twitter.com/geotribu/'
+      link: 'https://twitter.com/search?q=%23GeoRDP&src=typed_query&f=live'
+    - icon: 'fontawesome/brands/facebook'
+      link: 'https://fr-fr.facebook.com/geotribu/'
 
 extra_css:
   - 'theme/assets/stylesheets/extra.css'
