@@ -50,6 +50,8 @@ La _renaissance_ de Geotribu a été rendue possible par l'existence de ressourc
 - [Mkdocs](https://www.mkdocs.org/) : générateur de site web statique à partir de contenus rédigés en [markdown](https://fr.wikipedia.org/wiki/Markdown). Simple et extensible, c'est un outil puissant. Le fait qu'il soit en [Python](https://www.python.org/) le rend compatible avec notre socle technique interne.
 - [Material for Mkdocs](https://fr.wikipedia.org/wiki/Markdown) : thème pour Mkdocs qui utilise le framework graphique [Material](https://fr.wikipedia.org/wiki/Markdown) conçu et utilisé par Google. C'est propre, moderne (du bon JS webpacké), orienté performances et facilement personnalisable. Mention spéciale à **Martin Donath**, qui maintient presque seul ce projet.
 - [Github Actions](https://help.github.com/actions) : permet l'automatisation du _workflow_ de publication, réduisant énormément le travail technique à produire.
+- [Tiny File Manager](https://tinyfilemanager.github.io/) : le gestionnaire de fichiers
+petit (1 seul fichier PHP !) mais costaud que nous utilisons pour gérer nos contenus statiques.
 
 ### Autres
 
