@@ -1,11 +1,22 @@
+<!-- Documentation : https://squidfunk.github.io/mkdocs-material/customization/#overriding-template-blocks -->
+
 {% extends "base.html" %}
 
+{% block extrahead %}
+<meta name="twitter:widgets:align" content="center">
+{% endblock %}
+
 {% block config %}
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Handle Twitter oEmbed - See #54 -->
+<script charset="utf-8" id="twitter-wjs" type="text/javascript" async defer
+  src="//platform.twitter.com/widgets.js"></script>
+
+<!-- Make search plugin works offline - See https://github.com/wilhelmer/mkdocs-localsearch -->
 {% if "localsearch" in config["plugins"] %}
 <script src="assets/javascript/iframe-worker.js"></script>
 <script src="search/search_index.js"></script>
 {% endif %}
+
 {% endblock %}
 
 {% block disqus %}
