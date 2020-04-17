@@ -1,7 +1,8 @@
+/* Custom images */
 img {
-    /* border-style: solid;
+    border-style: solid;
     border-color: darkgrey;
-    border-width: thin; */
+    border-width: thin;
     box-shadow: 0px 1px 2px darkgrey;
 }
 
@@ -13,6 +14,11 @@ img {
     max-height: 75px;
     max-width: 75px;
     box-shadow: none;
+}
+
+.emojione {
+    box-shadow: none;
+    border: none;
 }
 
 /* Customize embedded tweets */
