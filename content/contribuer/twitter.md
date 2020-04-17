@@ -19,7 +19,7 @@ Prenons ce tweet pour exemple : <https://twitter.com/geojulien/status/1169878346
 
     !!! info
 
-        Le scénario peut varier dans certains cas. Par exemple, il est possible que le mini-formulaire d'intégration apparaisse directement au-dessus du tweet. Pas de panique, ça revient au même à partir du point 3.
+        Le scénario peut varier dans certains cas. Par exemple, il est possible que le mini-formulaire d'intégration apparaisse directement au-dessus du tweet. Pas de panique, ça revient au même à partir du point 4.
 
     ![Outil de publication des tweets dans des sites tiers](https://cdn.geotribu.fr/images/internal/contribution/twitter/embed_tweet_publish_website.png)
 
