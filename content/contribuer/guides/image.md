@@ -64,9 +64,43 @@ Merci de suivre au mieux ces recommandations qui permettent de garantir une util
 
 Ce n'est évidemment pas exhaustif et il n'y a pas de brigade des images dans l'équipe, on s'en remet donc au bon sens de chacun/e :slightly_smiling_face:.
 
+### Structure
+
+Globalement, voici comment les images sont organisées :
+
+
+- racine : :rotating_light: éviter d'ajouter de nouvelles images ici :rotating_light:
+- articles-blog-rdp :
+    - captures d'écrans utilisées pour illustrer une revue de presse
+- external
+- internal : ressources propres au site.
+    - charte graphique
+    - photos des contributeurs : nommage avec initiale du prénom et 3 premières lettres du nom
+    - images liées à la section contribution du site, de cet article entre autres (captures d'écran, exemples, etc.)
+    - icônes créées par Geotribu pour symboliser le sujet d'une news d'une revue de presse
+- logos-icones : entreprises, associations, logiciels, librairies, technologies, etc. Idéales pour l'icône d'une news de revue de presse.
+- projets-geotribu
+- slideshow : images du diaporama sur l'ancien site de Geotribu. Elles étaient pour la plupart pré-découpées en rectangle mais ça peut toujours servir à ds fins d'illustration. :rotating_light: éviter d'ajouter de nouvelles images ici :rotating_light:.
+- tuto : contenus liés aux tutoriels publiés. Un sous-dossier par tutoriel.
+
 ### Pas à pas
 
-> Coming soon
+1. Se connecter à au gestionnaire de fichiers en ligne : <https://cdn.geotribu.fr/tinyfilemanager.php>
+
+    ![Tiny File Manager - Formulaire d'authentification](https://cdn.geotribu.fr/images/internal/contribution/embed_image/cdn_filemanager_authform.png "Tiny File Manager - Formulaire d'authentification")
+
+    > l'identifiant et mot de passe sont transmis sur demande sur le Slack de l'équipe
+
+2. Utiliser la recherche pour savoir si jamais une image correspond au besoin
+3. Se positionner dans le dossier souhaité
+4. Cliquer sur :cloud: `Envoyer`
+5. Glisser/déposer ou sélectionner l'image
+
+    ![Téléverser une image](https://cdn.geotribu.fr/images/internal/contribution/embed_image/cdn_filemanager_upload.png)
+
+6. Cliquer `Retour` et récupérer l'URL de l'image. Par exemple, avec un clic droit sur l'icône de lien ou en cliquant sur l'imahge puis sur `Ouvrir``
+
+    ![Clic doit copier l'adresse du lien](https://cdn.geotribu.fr/images/internal/contribution/embed_image/cdn_filemanager_get_image_url.png "Clic doit copier l'adresse du lien")
 
 <!-- Hyperlinks reference -->
 [CDN de Geotribu]: https://cdn.geotribu.fr/images/
