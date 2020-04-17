@@ -1,3 +1,10 @@
+img {
+    /* border-style: solid;
+    border-color: darkgrey;
+    border-width: thin; */
+    box-shadow: 0px 1px 2px darkgrey;
+}
+
 .img-rdp-news-thumb {
     float: left;
     clear: right;
@@ -5,6 +12,7 @@
     padding-right: 10px;
     max-height: 75px;
     max-width: 75px;
+    box-shadow: none;
 }
 
 /* Customize embedded tweets */
