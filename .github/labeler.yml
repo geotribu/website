@@ -1,5 +1,11 @@
+articles:
+    - content/articles/**/*.md
+
 ci-cd:
     - .github/**/*
+
+contribution:
+    - content/contribuer/**/*.md
 
 dependencies:
     - ./**/requirements.txt
