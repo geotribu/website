@@ -1,5 +1,5 @@
 ---
-title: Comment intégrer un tweet
+title: Intégrer un tweet
 category: contribution
 date: 2020-04-20 10:20
 tags: contribuer,twitter,tweet,embed,intégration,tutoriel

@@ -1,13 +1,13 @@
 ---
-Title: Corriger un contenu depuis le site web
+Title: Modifier un contenu depuis le site web
 Category: contribution
 Date: 2020-04-04 17:20
 Tags: guide,corriger,faute,contribuer,modifier
 ---
 
-# Corriger un contenu depuis le site web
+# Modifier un contenu depuis le site web
 
-Vous avez aperçu une insupportable coquille ? Une image ou un contenu intégré n'apparaît pas correctement ?
+Vous voulez ajouter une précision ? Vous avez aperçu une insupportable coquille ? Une image ou un contenu intégré n'apparaît pas correctement ?
 
 Voici comment corriger en quelques étapes simples et **sans rien installer**.
 
