@@ -1,6 +1,6 @@
 # L'équipe Geotribu
 
-## Actifs depuis le _reboot_
+## Membres de l'équipe
 
 - [Arnaud](avdc)
 - [Fabien](fgob)
@@ -11,7 +11,7 @@
 - [Etienne](edel)
 - [Rémi](rbov)
 
-## Inactifs depuis le _reboot_
+## Membres historiques
 
 - [Adrien](avha)
 - [Guillaume](gdbo)
