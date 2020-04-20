@@ -64,7 +64,16 @@ Basculer ensuite sur la branche qui va bien :
 
 Le bon moment de se rappeler [comment écrire du bon markdown](../requirements#markdown) :wink: !
 
-### 4. Pousser son contenu avec Git vers le dépôt central
+
+### 4. Enregistrer sa modification
+
+Ajouter un message bref qui décrivant :
+
+```bash
+git commit -am "Ajout news sur la carte de la semaine"
+```
+
+### 5. Pousser son contenu avec Git vers le dépôt central
 
 > ou vers un dépôt de son compte si on n'a pas les droits
 
@@ -80,7 +89,7 @@ Le bon moment de se rappeler [comment écrire du bon markdown](../requirements#m
     git push
     ```
 
-### 5. Proposer la publication sur le site
+### 6. Proposer la publication sur le site
 
 Une fois le contenu prêt pour être publié, créer une [_Pull Request_](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) de sa branche vers la branche `master` du dépôt central
 

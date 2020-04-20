@@ -60,7 +60,9 @@ extra:
     - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/geotribu/'
     - icon: 'fontawesome/brands/twitter'
-      link: 'https://twitter.com/geotribu/'
+      link: 'https://twitter.com/search?q=%23GeoRDP&src=typed_query&f=live'
+    - icon: 'fontawesome/brands/facebook'
+      link: 'https://fr-fr.facebook.com/geotribu/'
 
 extra_css:
   - 'theme/assets/stylesheets/extra.css'
@@ -73,6 +75,10 @@ markdown_extensions:
   # CodeHilite - https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
   - codehilite:
       linenums: true
+  # Markdown Include support : https://github.com/cmacmackin/markdown-include/issues/10#issuecomment-296808341
+  - markdown_include.include:
+      base_path: 'content/' # starting from where the build command is ran
+      inheritHeadingDepth: true
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
@@ -80,6 +86,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.tabbed
+  - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: true
