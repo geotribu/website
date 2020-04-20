@@ -1,7 +1,9 @@
 arrange:
     - index.md
+    - acknowledgements.md
     - install_webapp.md
     - rdp
     - tutoriels
     - interviews
+    - team
     - contribuer
