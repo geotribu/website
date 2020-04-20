@@ -7,11 +7,15 @@ tags: pwa,installation
 
 # Installer en tant qu'application
 
-Ce site étant entièrement statique et déclaré comme une [application web progressive] (_progressive web apps_), il est possible de l'installer à la manière d'une application classique.
+Ce site étant entièrement statique et déclaré comme une [application web progressive] (_progressive web apps_ ou PWA), il est possible de l'installer à la manière d'une application classique.
+
+!!! info
+
+    Pour en savoir plus sur les PWA, consulter [Progressive Web Apps : utilité, installation et gestion dans des environnements fixes et mobiles](https://www.nextinpact.com/news/108095-progressive-web-apps-utilite-installation-et-gestion-dans-environnements-fixes-et-mobiles.htm)
 
 ## Windows 10
 
-!!! tip
+!!! note
     Pour l'instant, seuls les navigateurs utilisant une base Chromium proposent cette option. Par exemple : Google Chrome, Microsoft Edge (à partir de la version 2020, aussi appelée Edgium), etc.
 
 1. Une fois sur la page d'accueil, dérouler le menu _hamburger_ en haut à droite, sélectionner le menu `Applications` > `Installer ce site en tant qu'application` :
@@ -43,13 +47,15 @@ Deux méthodes :
 
 ## Android
 
-1. Une fois sur la page d'accueil, ouvrir le menu du navigateur et sélectionner le menu `Ajouter à l'écran d'accueil` :
+1. Une fois sur la page d'accueil, selon le navigateur, soit cliquer sur l'icône de maison avec un +, soit ouvrir le menu et sélectionner `Ajouter à l'écran d'accueil` :
 
     ![Ajouter Geotribu à l'écran d'accueil](https://cdn.geotribu.fr/images/internal/install_pwa/geotribu_pwa_install_android_firefox_chrome.png)
 
 2. Le site est donc ajouté à l'écran principal du smartphone :
 
     ![Geotribu sur l'écran d'accueil d'un smartphone Android](https://cdn.geotribu.fr/images/internal/install_pwa/geotribu_pwa_install_android_homescreen.jpg)
+
+En cliquant dessus, le site s'ouvre dans sa propre fenêtre et se comporte comme une application, avec notamment l'accès hors-ligne aux pages déjà consultées avec une connexion.
 
 <!-- Hyperlinks -->
 

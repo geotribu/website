@@ -19,19 +19,6 @@ La liste ci-après est générée automatiquement à partir de l'historique de [
 
 Consulter la page listant les membres : [l'équipe](/team)
 
-Par ordre d'apparition :
-
-- [Arnaud](/team/avdc)
-- [Fabien](/team/fgob)
-- [Thomas](/team/tgra)
-- [Julien](/team/jmou)
-- [Pierre](/team/pver)
-- [Rodolphe](/team/rqui)
-- [Jérémie](/team/jory)
-- [Mathieu](/team/mraj)
-- [Etienne](/team/edel)
-- [Rémi](/team/rbov)
-
 ----
 
 ## Remerciements
