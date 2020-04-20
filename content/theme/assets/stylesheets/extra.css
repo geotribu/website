@@ -16,7 +16,8 @@ img {
     box-shadow: none;
 }
 
-.emojione {
+.emojione,
+.twemoji {
     box-shadow: none;
     border: none;
 }
