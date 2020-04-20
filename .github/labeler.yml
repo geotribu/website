@@ -1,11 +1,25 @@
+articles:
+    - content/articles/**/*.md
+
 ci-cd:
     - .github/**/*
 
+contribution:
+    - content/contribuer/**/*.md
+
+dependencies:
+    - ./**/requirements.txt
+
 mkdocs:
     - src/mkdocs/**/*
+    - content/**/*.pages
+    - content/manifest.webmanifest
 
 rdp:
     - content/rdp/**/*.md
+
+thème:
+    - content/theme/**/*
 
 tuto:
     - content/tutoriels/**/*.md
