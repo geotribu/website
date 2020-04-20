@@ -2,6 +2,7 @@ title: Contribuer
 
 arrange:
     - introduction.md
+    - requirements.md
     - contribution_guide.md
     - guides
     - online

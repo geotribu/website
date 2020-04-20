@@ -13,7 +13,7 @@ Tags: guide,contribuer,geotribu
 
 ## Processus (_workflow_)
 
-### 1. [Cloner le dépôt central](../requirements#git) localement
+### 1. [Cloner le dépôt central](../local/requirements#git) localement
 
 ```bash
 git clone https://github.com/geotribu/website.git
@@ -62,8 +62,7 @@ Basculer ensuite sur la branche qui va bien :
 
 ### 3. Créer/modifier localement du contenu en markdown
 
-Le bon moment de se rappeler [comment écrire du bon markdown](../requirements#markdown) :wink: !
-
+Le bon moment de se rappeler [comment écrire du bon markdown](../local/requirements#markdown) :wink: !
 
 ### 4. Enregistrer sa modification
 
