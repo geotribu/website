@@ -80,7 +80,7 @@ markdown_extensions:
   - markdown_include.include:
       base_path: 'content/' # starting from where the build command is ran
       # base_path: "D:\\risor\\Documents\\GitHub\\Geotribu\\website\\content"
-      #inheritHeadingDepth: true
+      inheritHeadingDepth: true
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
