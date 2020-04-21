@@ -14,9 +14,11 @@ img {
     max-height: 75px;
     max-width: 75px;
     box-shadow: none;
+    border: none;
 }
 
-.emojione {
+.emojione,
+.twemoji {
     box-shadow: none;
     border: none;
 }
