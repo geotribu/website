@@ -6,7 +6,7 @@ setuptools
 
 # Development
 # -----------------------
-pre-commit==2.2.*
+pre-commit==2.3.*
 
 # Project requirements
 # -----------------------
