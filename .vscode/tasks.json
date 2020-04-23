@@ -47,7 +47,8 @@
                 "mkdocs",
                 "serve",
                 "-f",
-                "src/mkdocs/mkdocs.yml"
+                "src/mkdocs/mkdocs.yml",
+                "--dirtyreload"
             ],
             "presentation": {
                 "echo": true,
