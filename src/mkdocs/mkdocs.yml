@@ -78,7 +78,7 @@ markdown_extensions:
   # Markdown Include support : https://github.com/cmacmackin/markdown-include/issues/10#issuecomment-296808341
   - markdown_include.include:
       base_path: 'content/' # starting from where the build command is ran
-      inheritHeadingDepth: true
+      #inheritHeadingDepth: true
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
