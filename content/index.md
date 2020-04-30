@@ -9,6 +9,4 @@ tags: homepage,accueil,geotribu,bienvenue,global
 
 Bienvenue sur Geotribu !
 
-Après des années de sommeil, Geotribu revient ! Enfin bientôt...
-
-![Bannière Géotribu](assets/images/geotribu/banner_geotribu.jpg)
+![Bannière Géotribu](https://cdn.geotribu.fr/images/internal/charte/geotribu_banner.jpg)
