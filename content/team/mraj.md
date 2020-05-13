@@ -1,6 +1,6 @@
 # Mathieu Rajerison
 
-![](images/mraj.jpg){: .img-rdp-news-thumb }
+![Mathieu Rajerison](https://cdn.geotribu.fr/img/internal/contributeurs/mraj.jpg){: .img-rdp-news-thumb }
 
 Agronome de formation, je travaille actuellement au Cerema, un centre d'études et d'expertise associé au Ministère de l'Ecologie en tant qu'ingénieur de données géomaticien.
 
