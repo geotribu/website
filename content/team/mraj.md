@@ -1,9 +1,11 @@
 # Mathieu Rajerison
 
-![](https://cdn.geotribu.fr/images/internal/contributeurs/mraj.jpg){: .img-rdp-news-thumb }
+![Mathieu Rajerison](https://cdn.geotribu.fr/img/internal/contributeurs/mraj.jpg){: .img-rdp-news-thumb }
 
-Agronome de formation, et géomaticien, je travaille actuellement dans un service déconcentré du Ministère de l'Écologie. Je m'intéresse aux statistiques spatiales, ainsi qu'aux représentations et "contorsions" cartographiques. Je faisais pas mal de veille, déjà.
+Agronome de formation, je travaille actuellement au Cerema, un centre d'études et d'expertise associé au Ministère de l'Ecologie en tant qu'ingénieur de données géomaticien.
 
-Avoir rejoint la GéoTribu en Mars 2013 est un honneur pour moi, ainsi qu'un privilège, qui me permettent de diffuser au plus grand nombre les pépites géomatiques trouvées dans la semaine. Les rubriques dans lesquelles j'interviens surtout sont celles des "Représentations cartographiques" ainsi que la rubrique "Divers".
+Je m'intéresse particulièrement aux statistiques spatiales, ainsi qu'aux "contorsions" cartographiques.
 
-Sinon, selon l'humeur du moment, j'alimente un [blog appelé datagistips](https://datagistips.hypotheses.org/). Il m'arrive de diffuser des choses aussi sur [twitter](https://twitter.com/datagistips).
+J'ai rejoint la GéoTribu en 2013. Les revues de presse m'ont permis de partager au plus grand nombre les pépites géomatiques trouvées sur la Toile.
+
+Selon l'humeur du moment, j'alimente un [blog appelé datagistips](https://datagistips.hypotheses.org/) et il m'arrive, aussi, de diffuser des choses sur [twitter](https://twitter.com/datagistips).
