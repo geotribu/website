@@ -44,8 +44,9 @@ theme:
   language: 'fr'
   logo: 'theme/assets/images/geotribu/logo_geotribu.png'
   palette:
-    primary: 'teal'
-    accent: 'deep-orange'
+    accent: deep-orange
+    primary: teal
+    scheme: default
 
 # Integrations with 3rd party
 google_analytics:
