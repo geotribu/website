@@ -8,7 +8,6 @@ tags: DicoGIS | GDAL | OGR | Python | métadonnées
 
 # DicoGIS : le dictionnaire de données SIG
 
-
 :calendar: Date de publication initiale : 25 septembre 2014
 
 **Mots-clés :** DicoGIS | GDAL | OGR | Python | métadonnées
@@ -16,7 +15,7 @@ tags: DicoGIS | GDAL | OGR | Python | métadonnées
 Ou comment se créer un Petit Robert de l’information géographique en 5 minutes et 3 clics.  
 Je vous présente un petit utilitaire sans prétention sinon d'être bien pratique pour la gestion de données.
 
- ![DicoGIS - Animated demonstration](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_demo_w8.gif)
+![DicoGIS - Animated demonstration](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_demo_w8.gif)
 
 ----
 
@@ -65,6 +64,7 @@ En ce qui concerne les performances, cela dépend surtout de la machine sur laqu
 * une dizaine de rasters ( qui pèsent environ 90 Mo au total),
 * 7 FileGDB contenant une soixantaine de vecteurs
 * et quelques DXF.
+
 ## Comment l'utiliser
 
 1. Télécharger la dernière version :
@@ -107,8 +107,6 @@ Voici les quelques évolutions que j'envisage, mais vu que je ne suis pas mère 
 * basculer de python-xlwt vers xlsxwriter.
 * un jour sur Python 3.x mais il faudrait déjà que py2exe soit stable de ce côté-là.
 * travailler sur les performances en basculant les traitements en multiprocessing (mais je crois que ça coince avec py2exe).
-
-
 
 ----
 
