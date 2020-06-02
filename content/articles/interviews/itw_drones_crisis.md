@@ -51,7 +51,7 @@ FredM:
 - Le traitement des images est facilité par le logiciel Pix4D, auquel nous allons ajouter un mini serveur portatif pour limiter le temps de traitement et pouvoir diffuser les images sur plusieurs ordinateurs simultanéments. Il ne manque plus que des panneaux solaires pour etre completement autonome sur le terrain.
 - Les conditions météo: Le vent est un handicap, on peut voler avec des vents a 30-40 km/h apres cela devient difficile. Cependant on peut voler sous une couverture nuageuse, ce qui peut etre utile parfois lors du passage d&#39;un cyclone ou d&#39;inondation.
 
-### 4. En terme de logistique et de mise en oeuvre, combien de temps prend le paramétrage d&#39;une mission?
+### 4. En terme de logistique et de mise en œuvre, combien de temps prend le paramétrage d&#39;une mission?
 
 (Adam) Tout dépend de la complexité de la zone.  Pour la plupart des situations le planning est automatique et peut être fait en quelques minutes.  Le logiciel peut même diviser des zones d&#39;intérêt en plusieurs zones si un seul vol ne suffit pas.  Par exemple, sur la cartographie de Fort Liberté au nord de Haiti nous avons volé avec trois drones en même temps pour réduire le temps necessaire pour prendre les images.
 
@@ -148,7 +148,7 @@ La photogrammétrie traditionnelle tente de produire la meilleure cartographie p
 
 (Pix4D)
 
-- Mise en oeuvre d&#39;algorithmes complexes tirant parti de la solidité et de la maturité de la photogrammétrie sur laquelle sont venus se greffer les techniques issues du &quot;computer vision&quot; afin de proposer une plus grande souplesse d&#39;utilisation. (eg. Prise de vue oblique notamment)
+- Mise en œuvre d&#39;algorithmes complexes tirant parti de la solidité et de la maturité de la photogrammétrie sur laquelle sont venus se greffer les techniques issues du &quot;computer vision&quot; afin de proposer une plus grande souplesse d&#39;utilisation. (eg. Prise de vue oblique notamment)
 
 - Proposer une interface ergonomique et simplifiée à nos clients tout en proposant l&#39;obtention de résultats pertinents et de qualité comparables - voir supérieurs, à ceux proposés par les techniques traditionnelles. (Total station vs UAV)
 
