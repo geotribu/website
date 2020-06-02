@@ -3,6 +3,8 @@ title: "DicoGIS : le dictionnaire de données SIG"
 authors: Julien Moura
 category: article
 date: 2014-09-25
+description: "DicoGIS, utilitaire pour générer automatiquement un dictionnaire de métadonnées sur une base SIG."
+hero: "DicoGIS, Le Petit Robert des données SIG"
 tags: DicoGIS,GDAL,OGR,Python,métadonnées
 ---
 
