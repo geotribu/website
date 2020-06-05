@@ -1,9 +1,7 @@
-title: Blog
+title: Articles
 
 arrange:
     - index.md
-    - "interviews"
-    - "tutoriels"
     - "2015"
     - "2014"
     - "2013"
