@@ -105,20 +105,11 @@ Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publi
     git pull
     ```  
 
+
+
 ----
 
-## Créer une revue de presse
-
-Créer un fichier dans `content\rdp` en respectant le nommage suivant : `rdp_AAAA-MM-JJ.md`. Exemple : `rdp_2020-03-27.md` pour la revue de presse du 20 mars 2020.
-
-## Ajouter une news
-
-Un modèle de news est disponible ici :
-
-- en brut : <https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp_news.md>
-- rendu : <https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp_news.md>
-
-## Modifier une revue de presse
+## Modifier un contenu
 
 ### Texte
 
@@ -131,11 +122,32 @@ Coucher sa prose en markdown en s'appuyant sur :
 
 ### Ajouter une image
 
-Dans la mesure du possible, les images doivent être récupérées depuis les autres sites / hébergées en externe :
+Voir [le guide dédié](../guides/image).
 
-```markdown
-![Texte de remplacement](https://www.site-externe.com/medias/adresse_de_l_image.png "Titre/légende de mon image")
-```
+### Insérer un tweet
+
+Voir [le guide dédié](../guides/twitter).
+
+### Insérer une vidéo
+
+Voir [le guide dédié](../guides/video).
+
+### Utiliser un emoji
+
+Voir [le guide dédié](../guides/emoji).
+
+----
+
+## Créer une revue de presse
+
+Créer un fichier dans `content\rdp\AAAA` en respectant le nommage suivant : `rdp_AAAA-MM-JJ.md`. Exemple : `content\rdp\2020\rdp_2020-06-12.md` pour la revue de presse du 12 juin 2020.
+
+## Ajouter une news
+
+Un modèle de news est disponible ici :
+
+- en brut : <https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp_news.md>
+- rendu sur Github (non contractuel) : <https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp_news.md>
 
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/download/win
