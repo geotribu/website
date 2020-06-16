@@ -76,10 +76,6 @@ markdown_extensions:
   # CodeHilite - https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
   - codehilite:
       linenums: true
-  # Markdown Include support : https://github.com/cmacmackin/markdown-include/issues/10#issuecomment-296808341
-  - markdown_include.include:
-      base_path: 'content/' # starting from where the build command is ran
-      inheritHeadingDepth: true
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
@@ -87,6 +83,10 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
+  # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+  - pymdownx.snippets:
+      base_path: '.'
+      check_paths: true
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.tilde
