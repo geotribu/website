@@ -46,7 +46,7 @@ theme:
   palette:
     accent: deep-orange
     primary: teal
-    scheme: default
+    scheme: preference
 
 # Integrations with 3rd party
 google_analytics:
