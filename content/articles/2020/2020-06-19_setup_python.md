@@ -5,19 +5,19 @@ category: article
 date: 2020-06-19 10:20
 description: "Ma configuration et mon outillage pour Python en 2020."
 hero: "Configuration de Python sous Windows et outillage de base."
-tags: python,tooling,setup
+tags: python,tooling,setup,windows
 ---
 
 # Python : configuration sur Windows et outillage
 
 :calendar: Date de publication initiale : 19 juin 2020
 
-**Mots-clés :** Python
+**Mots-clés :** Python | Windows | Développement
 
 Je travaille beaucoup avec Python sur Windows depuis quelques années. En comparaison avec des distributions Linux comme Debian où l'interpréteur est intégré au système (ce qui peut poser d'autres problèmes), cela a toujours été plus compliqué de se faire un environnement de travail confortable.
 Avec le changement de braquet de la firme de Redmond par rapport à l'open source, les choses se sont grandement améliorées ces dernières années.
 
-Ceci dit, cela fait toujours du bien de se noter quelque part les méthodes et étapes à ne pas oublier pour être rapidement confortable et efficace.
+Ceci dit, cela fait toujours du bien de se noter quelque part les méthodes et étapes à ne pas oublier pour être rapidement confortable et efficace. Et, qui sait, en partageant, ça servira peut-être à quelqu'un et j'apprendrai des éventuels retours :slightly_smiling_face:.
 
 ## Installation et configuration
 
@@ -60,6 +60,14 @@ Les environnements virtuels utilisent des scripts que Windows demande d'autorise
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
+### Autoriser Python à accéder au système de fichiers
+
+Dans les configurations récentes de Windows 10, la politique de sécurité est parfois configurée pour filtrer l'accès au système de fichiers notamment pour limiter les attaques par [rançongiciels (_ransomwares_)](https://fr.wikipedia.org/wiki/Ran%C3%A7ongiciel).
+
+Lors des premières utilisations, il est donc parfois nécessaire d'autoriser Python à accéder au système de fichiers sur l'appareil, via le centre de sécurité :
+
+![Centre de sécurité de Windows 10](https://cdn.geotribu.fr/img/tuto/python_windows/windows_security_folder_access.jpg)
+
 ----
 
 ## Bonnes habitudes et astuces
@@ -80,7 +88,9 @@ Et puis on ne peut décemment pas utiliser un outil désormais [daté au carbone
 
 L'installation de plusieurs versions de Python finit toujours par arriver, notamment pour s'adapter aux différentes intégrations logicielles.
 
-S'il est bien sûr possible de créer des profils pour Powershell à la manière d'un `.bashrc`, le lanceur intégré lors de l'installation de Python permet de gérer facilement les différentes versions. Un peu à la manière d'un [`update-alternatives`](https://manpages.debian.org/stretch/dpkg/update-alternatives.1) mais, à mon sens en tout cas, avec une meilleure flexibilité à l'usage.
+S'il est bien sûr possible de créer des profils pour Powershell à la manière d'un `.bashrc`, le [lanceur intégré lors de l'installation de Python](https://docs.python.org/fr/3/using/windows.html#launcher) permet de gérer facilement les différentes versions. Un peu à la manière d'un [`update-alternatives`](https://manpages.debian.org/stretch/dpkg/update-alternatives.1) mais, à mon sens en tout cas, avec une meilleure flexibilité à l'usage.
+
+Par exemple :
 
 Lister les versions installées :
 
@@ -129,41 +139,13 @@ python -m pip install -e .
 
 ### Documentation _in-code_
 
-Python est un langage qui se documente facilement avec les _docstrings_, utilisables par d'autres outils : IDE, génération de documentation en ligne (HTML) ou statique (PDF), etc.
+Python est un langage qui se documente facilement avec les _docstrings_, utilisables par d'autres outils : logiciels de développement, génération de documentation en ligne (HTML) ou statique (PDF), etc.
 
-!!! tip
-    [L'extension Python Docstring Generator pour Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) permet de générer automatiquement une structure type de docstring pour les fonctions, mais attention elle demande un fichier de cofniguration pour s'adapter à la convention utilisée à . Exemple ci-dessous d'un fichier `docstring-config.mustache` (généralement stocké dans le dossier `.vscode`) :
+Personnellement, j'utilise Visual Studio Code et [l'extension Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) qui permet de générer automatiquement une structure type de docstring à partir du code.
 
-        {{! Sphinx Docstring Template }}
-        {{summaryPlaceholder}}
+Par défaut, elle implémente certaines conventions mais il est possible de personnaliser la structure avec un fichier `docstring-config.mustache` (généralement stocké dans le dossier `.vscode`) :
 
-        {{#parametersExist}}
-        {{#args}}
-        :param {{typePlaceholder}} {{var}}: {{descriptionPlaceholder}}
-        {{/args}}
-        {{#kwargs}}
-        :param {{typePlaceholder}} {{var}}: {{descriptionPlaceholder}}. Defaults to: {{&default}} - optional
-        {{/kwargs}}
-        {{/parametersExist}}
-
-        {{#exceptionsExist}}
-        {{#exceptions}}
-        :raises {{type}}: {{descriptionPlaceholder}}
-        {{/exceptions}}
-        {{/exceptionsExist}}
-
-        {{#returnsExist}}
-        {{#returns}}
-        :return: {{descriptionPlaceholder}}
-        :rtype: {{typePlaceholder}}
-        {{/returns}}
-        {{/returnsExist}}
-
-        :example:
-
-        .. code-block:: python
-
-            # here comes an example in Python
+> Voir le [fichier de template mustache](https://github.com/Guts/elgeopaso/blob/master/.vscode/docstring-config.mustache) que j'utilise pour El Géo Paso.
 
 ### Tests
 
@@ -180,9 +162,11 @@ La configuration de `pytest` est gérée dans la section `[tool:pytest]` du fich
 
 ## Outillage
 
+Il existe de [nombreuses listes de packages recommandés](https://encrypted.google.com/search?q=awesome+python), mais voici ma sélection personnelle. Je ne mets ici que les bibliothèques qui ne sont pas spécifiquement liées à la géomatique puisqu'il s'agit d'outillage, non du coeur de métier.
+
 ### La base
 
-* [black](https://twine.readthedocs.io/en/latest/) : formatage et homogénéisation du code automatisés
+* [black](https://black.readthedocs.io/en/stable/) : formatage et homogénéisation du code automatisés, parce-que l'indentation à la main ou les débats de syntaxe, ça va 5 minutes
 * [flake8](https://flake8.pycqa.org) : analyse statique de code (_[linter](https://fr.wikipedia.org/wiki/Lint_(logiciel))_) qui permet de lever des incohérences ou des problèmes dans le code
 * [setuptools](https://setuptools.readthedocs.io/en/latest/) : packaging et installation de dépendances
 * [twine](https://twine.readthedocs.io/en/latest/) : publication sur PyPi
@@ -190,26 +174,27 @@ La configuration de `pytest` est gérée dans la section `[tool:pytest]` du fich
 
 ### Protagonistes
 
-* [click](https://palletsprojects.com/p/click/) : framework pour créer des outils en ligne de commande
-* [PyInstaller](https://github.com/pyinstaller/pyinstaller/) : transforme les projets Python en exécutable (compatible avec la plateforme sur lequel il est utilisé)
+* [click](https://palletsprojects.com/p/click/) : framework pour créer des outils en ligne de commande. A noter qu'il existe un surensemble très prometteur : [Typer](https://typer.tiangolo.com/).
+* [django](https://www.djangoproject.com/) ou [Flask](https://www.palletsprojects.com/p/flask/) pour les applications webs, même si je pense désormais utiliser [FastAPI](https://fastapi.tiangolo.com/) pour les prochaines APIs.
 * [requests](https://requests.readthedocs.io/en/master/) : requêtes HTTP/S faciles, à la base du SDK . Cependant, évolue peu donc envisager d'autres options : [httpx](https://www.python-httpx.org/).
 
 ### Seconds rôles
 
-* [docx-tpl](https://docxtpl.readthedocs.io/en/latest/) : écriture de fichiers Word à l'aide de templates Jinja2
-* [OpenPyXl](https://openpyxl.readthedocs.io/) : lecture/écriture de fichiers Excel
 * [peewee](https://peewee.readthedocs.io/) : [ORM](https://fr.wikipedia.org/wiki/Mapping_objet-relationnel) SQL très léger et efficace (utilisé par [Flask](https://www.palletsprojects.com/p/flask/) par exemple)
 * [pipenv](https://pipenv.kennethreitz.org/en/latest/) : gestion du workflow de développement (environnements virtuels, dépendances…). Optionnel, sans besoin spécifique, se contenter de `pip`. Envisager aussi [poetry](https://python-poetry.org/)
+* [PyInstaller](https://github.com/pyinstaller/pyinstaller/) : transforme les projets Python en exécutable (compatible avec la plateforme sur lequel il est utilisé)
 * [PyQt](https://www.riverbankcomputing.com/software/pyqt/intro) : bindings Python du framework d'interface graphique et tout le reste (réseau, _threads_, etc.)
 * [pytest](https://docs.pytest.org/) : framework de tests.
 * [python-dotenv](https://saurabh-kumar.com/python-dotenv/) : lecture/écriture de fichiers de configuration au format `.env`
 * [requests-oauthlib](https://requests-oauthlib.readthedocs.io/) : outillage pour gérer les différents scénarios oAuth2 (basé sur `requests`)
-* [sphinx](https://www.sphinx-doc.org/en/master/) : générateur de documentations rédigées en `.rst` dans différents formats (PDF? epub, HTML). Utilisé pour générer les docs en ligne à partir du code, par exemple avec Read The Docs. Beaucoup d'extensions, notamment :
+* [sphinx](https://www.sphinx-doc.org/en/master/) : générateur de documentations rédigées en `.rst` (ou markdown) dans différents formats (PDF, epub, HTML). Utilisé pour générer les docs en ligne à partir du code, par exemple avec Read The Docs.
 
 ### Figurants
 
+* [docx-tpl](https://docxtpl.readthedocs.io/en/latest/) : écriture de fichiers Word à l'aide de templates Jinja2
 * [LXML](https://lxml.de/) : outillage complet pour le XML et autres langages balisés (HTML...)
-* [pre-commit](https://pre-commit.com/) : automatisation de certaines tâches liées à des étapes du [flow git](/git/workflow/). Par exemple : lancer le formatage du code avec `black` au moment de `git commit`.
+* [OpenPyXl](https://openpyxl.readthedocs.io/) : lecture/écriture de fichiers Excel
+* [pre-commit](https://pre-commit.com/) : automatisation de certaines tâches liées à des étapes du processus git. Par exemple : lancer le formatage du code avec `black` au moment de `git commit`.
 
 ----
 
