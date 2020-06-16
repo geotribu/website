@@ -25,7 +25,7 @@ Ceci dit, cela fait toujours du bien de se noter quelque part les méthodes et �
 
 Sur Windows, Python peut être installé de plusieurs manières :
 
-* via les [installateurs traditionnels](https://www.python.org/downloads/windows/)
+* via les [installateurs traditionnels](https://www.python.org/downloads/windows/) : ça reste la meilleure option d'après moi
 * via [Chocolatey](https://chocolatey.org/packages?q=python&moderatorQueue=&moderationStatus=all-statuses&prerelease=false&sortOrder=relevance) avec un simple `choco install python`
 * via [le Windows Store](https://docs.python.org/fr/3/using/windows.html#the-microsoft-store-package) : pratique pour le déployer chez des utilisateurs mais il y a certaines limites bloquantes pour les usages avancés
 * via [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html) : un peu _bourrin_ mais très pratique lorsque l'on travaille sur des thématiques de traitement scientifique
@@ -45,14 +45,16 @@ Désormais c'est assez facile de réduire le risque d'AVC :
 
 ### Ajouter Python au PATH
 
-Cependant, prendre garde lorsque plusieurs versions sont installées. Utiliser [le _launcher_ sous Windows](https://docs.python.org/fr/3/using/windows.html#launcher).
+De même, c'est désormais très bien géré :
 
 * soit en cochant l’option dans l’installateur Python
 * soit en ajoutant manuellement les chemins vers le dossier d'installation et le sous-dossier `Scripts`
 
+Lorsque plusieurs versions sont installées, [utiliser le lanceur](#utiliser-le-launcher).
+
 ### Autoriser l’utilisation des environnements virtuels
 
-Ouvrir Powershell en mode admin et entrer :
+Les environnements virtuels utilisent des scripts que Windows demande d'autoriser spécifiquement. Ouvrir Powershell en mode admin et entrer :
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -62,15 +64,44 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ## Bonnes habitudes et astuces
 
+### Utiliser Powershell
+
+Cela peut paraître évident mais ça va mieux en le disant : **il faut arrêter avec cmd et utiliser Powershell**.
+Sauf cas spécifiques (dont l'OSGeo4W...), il faut oublier `cmd` et configurer le système pour utiliser Powershell par défaut. Pourquoi ? Mais parce-que :
+
+* `cmd` ne tient pas compte de toutes les subtilités apportées par les versions récentes du système (encodage, chemins,)
+* certaines commandes `bash` sont prises en compte : `ls`, `rm`, `mkdir`...
+* les chemins sont compris, quel que soit le séparateur utilisé : `/` ou `\`
+* autocomplétion, modules, coloration, etc.
+
+Et puis on ne peut décemment pas utiliser un outil désormais [daté au carbone 14](https://fr.wikipedia.org/wiki/Datation_par_le_carbone_14) et s'en servir pour pester contre le système. Donc utiliser Powershell permet de râler en toute honnêteté (la bonne foi n'est jamais obligatoire) sur Windows. Et il ne faut pas s'inquiéter, il y a encore largement de quoi :wink: !
+
 ### Utiliser le launcher
 
-L'usage
+L'installation de plusieurs versions de Python finit toujours par arriver, notamment pour s'adapter aux différentes intégrations logicielles.
+
+S'il est bien sûr possible de créer des profils pour Powershell à la manière d'un `.bashrc`, le lanceur intégré lors de l'installation de Python permet de gérer facilement les différentes versions. Un peu à la manière d'un [`update-alternatives`](https://manpages.debian.org/stretch/dpkg/update-alternatives.1) mais, à mon sens en tout cas, avec une meilleure flexibilité à l'usage.
+
+Lister les versions installées :
+
+```powershell
+PS C:\Users\ingeoveritas> py --list
+Installed Pythons found by C:\WINDOWS\py.exe Launcher for Windows
+ -3.8-64 *
+ -3.7-64
+```
+
+Mettre à jour `pip` pour une version en particulier :
+
+```powershell
+py -3.7 -m pip install -U pip
+```
 
 ### Environnements virtuels
 
 Les environnements virtuels (_virtual environment_) sont un des fondamentaux du développement en Python, car ils permettent de garantir l'isolation des dépendances (et leurs versions) entre les différents projets.
 
-Tout développement, sur un projet nouveau ou existant, commence donc par ces commandes (à adapter au besoin) :
+Tout développement, sur un projet nouveau ou existant, commence donc plus ou moins ar ces commandes :
 
 ```powershell
 # créer l'environnement virtuel
@@ -101,7 +132,7 @@ python -m pip install -e .
 Python est un langage qui se documente facilement avec les _docstrings_, utilisables par d'autres outils : IDE, génération de documentation en ligne (HTML) ou statique (PDF), etc.
 
 !!! tip
-    [L'extension autoDocstring pour Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) permet de générer automatiquement une structure type de docstring pour les fonctions, mais attention elle demande un fichier de cofniguration pour s'adapter à la convention utilisée à . Exemple ci-dessous d'un fichier `docstring-config.mustache` (généralement stocké dans le dossier `.vscode`) :
+    [L'extension Python Docstring Generator pour Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) permet de générer automatiquement une structure type de docstring pour les fonctions, mais attention elle demande un fichier de cofniguration pour s'adapter à la convention utilisée à . Exemple ci-dessous d'un fichier `docstring-config.mustache` (généralement stocké dans le dossier `.vscode`) :
 
         {{! Sphinx Docstring Template }}
         {{summaryPlaceholder}}
