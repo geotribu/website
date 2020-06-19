@@ -11,9 +11,9 @@ dependencies:
     - ./**/requirements.txt
 
 mkdocs:
-    - src/mkdocs/**/*
     - content/**/*.pages
     - content/manifest.webmanifest
+    - mkdocs.yml
 
 rdp:
     - content/rdp/**/*.md

@@ -42,4 +42,4 @@ jobs:
         python -m pip install -r requirements.txt
 
     - name: Deploy to Github Pages
-      run: mkdocs gh-deploy --config-file src/mkdocs/mkdocs.yml --force
+      run: mkdocs gh-deploy --config-file mkdocs.yml --force
