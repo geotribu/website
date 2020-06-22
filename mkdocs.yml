@@ -32,6 +32,7 @@ plugins:
         "node/636.md": "articles/2013/art_2013-09-26.md"
         "rdp/rdp_2020-04-30.md": "rdp/2020/rdp_2020-04-30.md"
 
+
 # Theme
 theme:
   name: 'material'
