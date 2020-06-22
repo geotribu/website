@@ -6,11 +6,11 @@ services:
     image: geotribu-static-mkdocs
     build:
       context: .
-      dockerfile: src/mkdocs/Dockerfile
+      dockerfile: Dockerfile
     environment:
       - GIT_PYTHON_REFRESH=warn
     ports:
       - 8000:8000
     volumes:
       - .:/app
-    command: mkdocs serve -f src/mkdocs/mkdocs.yml --dev-addr=0.0.0.0:8000
+    command: mkdocs serve -f mkdocs.yml --dev-addr=0.0.0.0:8000
