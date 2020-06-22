@@ -13,7 +13,9 @@ Bienvenue sur Geotribu !
 
 ## Thème
 
-<button data-md-color-scheme="default"><code>Thème clair (défault)</code></button>
+Par défaut, le site utilise votre réglage système (clair ou sombre). Il est possible de forcer le thème utilisé le temps d'une session de navigation :
+
+<button data-md-color-scheme="default"><code>Thème clair</code></button>
 <button data-md-color-scheme="slate"><code>Thème sombre</code></button>
 
 <script>

@@ -11,8 +11,8 @@ repo_url: 'https://github.com/geotribu/website'
 edit_uri: 'edit/master/content'
 
 # Custom folder structure
-docs_dir: '../../content'
-site_dir: '../../build/mkdocs/site'
+docs_dir: './content'
+site_dir: './build/mkdocs/site'
 
 # Plugins
 plugins:
@@ -26,11 +26,17 @@ plugins:
   - search:
       # prebuild_index: python
       separator: '[\s\-\.]+'
+  - redirects:
+      redirect_maps:
+        "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
+        "node/636.md": "articles/2013/art_2013-09-26.md"
+        "rdp/rdp_2020-04-30.md": "rdp/2020/rdp_2020-04-30.md"
+
 
 # Theme
 theme:
   name: 'material'
-  custom_dir: '../../content/theme/'
+  custom_dir: './content/theme/'
   favicon: 'assets/images/geotribu/logo_geotribu.png'
 
   # Don't include MkDocs' JavaScript
@@ -46,7 +52,7 @@ theme:
   palette:
     accent: deep-orange
     primary: teal
-    scheme: default
+    scheme: preference
 
 # Integrations with 3rd party
 google_analytics:
@@ -76,10 +82,6 @@ markdown_extensions:
   # CodeHilite - https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
   - codehilite:
       linenums: true
-  # Markdown Include support : https://github.com/cmacmackin/markdown-include/issues/10#issuecomment-296808341
-  - markdown_include.include:
-      base_path: 'content/' # starting from where the build command is ran
-      inheritHeadingDepth: true
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
@@ -87,6 +89,10 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
+  # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+  - pymdownx.snippets:
+      base_path: '.'
+      check_paths: true
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.tilde

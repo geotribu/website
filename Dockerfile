@@ -10,7 +10,7 @@ RUN apk add --no-cache \
     git git-fast-import
 
 # Install pip requirements
-ADD src/mkdocs/requirements.txt .
+ADD requirements.txt .
 RUN python -m pip install -r requirements.txt --no-cache-dir
 
 WORKDIR /app
