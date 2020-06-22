@@ -109,10 +109,10 @@ Puis de lancer la commande qui lance le site en local avec rechargement automati
 
 ```bash
 # servir le site avec mkdocs
-mkdocs serve -f src/mkdocs/mkdocs.yml
+mkdocs serve -f mkdocs.yml
 
 # il existe aussi un mode où le rechargement automatique est plus rapide mais ne concerne que la page modifiée
-mkdocs serve -f src/mkdocs/mkdocs.yml --dirtyreload
+mkdocs serve -f mkdocs.yml --dirtyreload
 ```
 
 Le site est accessible sur : <http://localhost:8000>
