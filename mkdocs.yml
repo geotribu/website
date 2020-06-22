@@ -28,8 +28,8 @@ plugins:
       separator: '[\s\-\.]+'
   - redirects:
       redirect_maps:
-        "dicogis": "articles/2014/art_2014-09-25_dicogis.md"
-        "node/636": "articles/2013/art_2013-09-26.md"
+        "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
+        "node/636.md": "articles/2013/art_2013-09-26.md"
         "rdp/rdp_2020-04-30.md": "rdp/2020/rdp_2020-04-30.md"
 
 # Theme
