@@ -1,0 +1,35 @@
+site_name: "Geotribu RDPS"
+
+docs_dir: '.'
+
+plugins:
+  - awesome-pages
+
+theme:
+  name: 'material'
+
+# Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
+markdown_extensions:
+  - attr_list
+  # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
+  - admonition
+  # CodeHilite - https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+  - codehilite:
+      linenums: true
+  # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
+  - meta
+  # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+  - pymdownx.snippets:
+      base_path: '.'
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
+  - toc:
+      permalink: true
