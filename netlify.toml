@@ -1,5 +1,5 @@
 [build]
 publish = "build/mkdocs/site"
 command = """
-python -m mkdocs build --config-file mkdocs.yml --verbose --strict
+python -m mkdocs build --verbose --strict
 """
