@@ -185,7 +185,7 @@ Puis on repasse en mode &quot;Full HTML&quot;. Et hop la vidéo est insérée :)
 
 Pour les IFrames, c&#39;est un peu pareil que pour les vidéos.
 
-Exemple pour une carto pleine page qu&#39;on a trouvé[quelquepart](http://openlayers.org/dev/examples/fullScreen.html). On créé un nouveau paragraphe, on centre le curseur, on clique sur &quot;Plain Text&quot; et dans le dernier
+Exemple pour une carto pleine page qu&#39;on a trouvé[quelquepart](https://openlayers.org/dev/examples/fullScreen.html). On créé un nouveau paragraphe, on centre le curseur, on clique sur &quot;Plain Text&quot; et dans le dernier
 
 on insère ce bout de code :
 

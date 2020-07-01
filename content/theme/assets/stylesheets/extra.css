@@ -23,7 +23,15 @@ img {
     border: none;
 }
 
+.copyleft {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+/* see: https://stackoverflow.com/questions/37088198/copyleft-symbol */
+
 /* Custom buttons to set dark/ligth modes */
+
 .md-typeset button[data-md-color-scheme] {
     cursor: pointer;
     transition: opacity 250ms;
