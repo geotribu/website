@@ -13,7 +13,7 @@ Tags: guide,contribuer,geotribu
 
 ## Processus (_workflow_)
 
-### 1. [Cloner le dépôt central](../local/requirements#git) localement
+### 1. [Cloner le dépôt central](../local/local_edition_setup/#git) localement
 
 ```bash
 git clone https://github.com/geotribu/website.git
@@ -94,8 +94,7 @@ Une fois le contenu prêt pour être publié, créer une [_Pull Request_](https:
 
 ![Créer la pull request](https://cdn.geotribu.fr/images/internal/contribution/github_pull-request_form.png)
 
-Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publiée :smile:
-
+Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publiée :smile:.
 
 !!! warning
 
