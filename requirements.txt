@@ -19,3 +19,4 @@ mkdocs-localsearch==0.7.*
 mkdocs-material==5.3.*
 mkdocs-minify-plugin==0.3.*
 mkdocs-redirects==1.0.*
+mkdocs-rss-plugin==0.2.*
