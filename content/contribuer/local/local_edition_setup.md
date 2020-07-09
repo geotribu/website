@@ -129,6 +129,32 @@ docker-compose -f "docker-compose-mkdocs.dev.yml" up --build
 
 Le site est accessible sur : <http://localhost:8000>
 
+----
+
+## Mettre à jour son dépôt local
+
+Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement supprimée par GitHub afin d'éviter de garder un trop grand nombre de branches. Il faut alors mettre à jour le dépôt local sur votre machine :
+
+=== "Bash"
+
+    ```bash
+    # mettre le dépôt local en conformité avec le dépôt central (notamment en supprimant les branches locales déjà supprimées sur GitHub)
+    git remote prune origin
+
+    # supprimer les branches qui ont été fusionnées - sauf master
+    git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d
+    ```
+
+=== "Powershell"
+
+    ```powershell
+    # mettre le dépôt local en conformité avec le dépôt central (notamment en supprimant les branches locales déjà supprimées sur GitHub)
+    git remote prune origin
+
+    # ouvre une fenêtre de sélection des branches à supprimer
+    git branch --format "%(refname:short)" --merged  | Out-GridView -PassThru | % { git branch -d $_ }
+    ```
+
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/download/
 [GitHub Desktop]: https://desktop.github.com/
