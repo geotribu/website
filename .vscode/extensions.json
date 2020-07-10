@@ -2,6 +2,7 @@
     "recommendations": [
       "coenraads.bracket-pair-colorizer-2",
       "davidanson.vscode-markdownlint",
+      "github.vscode-pull-request-github",
       "mdickin.markdown-shortcuts",
       "ms-python.python",
       "ms-ceintl.vscode-language-pack-fr",
