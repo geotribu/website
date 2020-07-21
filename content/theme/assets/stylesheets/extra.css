@@ -1,4 +1,5 @@
 /* Custom images */
+/* attribute classes to be used via {: .class} */
 
 img {
     border-style: solid;
@@ -35,6 +36,7 @@ img {
 .md-typeset button[data-md-color-scheme] {
     cursor: pointer;
     transition: opacity 250ms;
+    font-size: larger;
 }
 
 .md-typeset button[data-md-color-scheme]:hover {
