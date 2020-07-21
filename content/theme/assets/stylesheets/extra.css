@@ -1,4 +1,5 @@
 /* Custom images */
+/* attribute classes to be used via {: .class} */
 
 img {
     border-style: solid;
@@ -23,6 +24,18 @@ img {
     border: none;
 }
 
+.right {
+    /* right align with text float on the left */
+    float: right;
+    padding-left: 20px;
+}
+
+
+/* Copyleft */
+
+
+/* see: https://stackoverflow.com/questions/37088198/copyleft-symbol */
+
 .copyleft {
     display: inline-block;
     transform: rotate(180deg);
@@ -35,6 +48,7 @@ img {
 .md-typeset button[data-md-color-scheme] {
     cursor: pointer;
     transition: opacity 250ms;
+    font-size: larger;
 }
 
 .md-typeset button[data-md-color-scheme]:hover {
