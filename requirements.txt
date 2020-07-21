@@ -14,7 +14,7 @@ pre-commit>=2.5,<2.7
 
 mkdocs-awesome-pages-plugin==2.2.*
 mkdocs-git-authors-plugin==0.3.*
-mkdocs-git-revision-date-localized-plugin==0.6
+mkdocs-git-revision-date-localized-plugin>=0.6,<0.8
 mkdocs-localsearch==0.7.*
 mkdocs-material==5.4.*
 mkdocs-minify-plugin==0.3.*
