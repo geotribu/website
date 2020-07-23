@@ -1,7 +1,17 @@
+---
+title: "Configurer l'environnement pour l'édition locale des contenus de Geotribu"
+Category: tutoriel
+Date: 2020-07-23 10:20
+hero: "Configurer son environnement pour l'édition locale"
+tags: contribution,édition,markdown,guide
+---
+
 # Installation pour l'édition locale
 
 !!! tip
     Remplir d'abord [les prérequis](../../requirements).
+   
+    Les chemins de fichiers et répertoires sont à adapter à votre environnement.
 
 ## Git
 
