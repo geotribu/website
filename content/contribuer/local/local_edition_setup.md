@@ -10,7 +10,6 @@ tags: contribution,édition,markdown,guide
 
 !!! tip
     Remplir d'abord [les prérequis](../../requirements).
-   
     Les chemins de fichiers et répertoires sont à adapter à votre environnement.
 
 ## Git
