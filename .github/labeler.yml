@@ -6,9 +6,11 @@ ci-cd:
 
 contribution:
     - content/contribuer/**/*.md
+    - content/team/**/*.md
 
 dependencies:
     - ./**/requirements.txt
+    - requirements.txt
 
 mkdocs:
     - content/**/*.pages
@@ -20,6 +22,3 @@ rdp:
 
 thème:
     - content/theme/**/*
-
-tuto:
-    - content/tutoriels/**/*.md
