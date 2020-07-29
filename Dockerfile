@@ -1,16 +1,24 @@
-# FROM python:3.7-slim-buster
-FROM python:3.7-alpine3.11
+FROM python:3.8.1-alpine3.11
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-# Upgrade distrib
-RUN apk add --no-cache \
-    # dependencies for mkdocs-git-revision-date-localized-plugin
-    git git-fast-import
+# Set build directory
+WORKDIR /tmp
 
 # Install pip requirements
 ADD requirements.txt .
-RUN python -m pip install -r requirements.txt --no-cache-dir
 
+# Perform build and cleanup artifacts
+RUN \
+  apk add --no-cache \
+    git \
+    git-fast-import \
+    openssh \
+  && apk add --no-cache --virtual .build gcc musl-dev \
+  && pip install --no-cache-dir -r requirements.txt \
+  && apk del .build gcc musl-dev \
+  && rm -rf /tmp/*
+
+# Set working directory
 WORKDIR /app
