@@ -24,6 +24,8 @@ plugins:
   - minify:
       minify_html: true
   - rss:
+      abstract_chars_count: 500
+      image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
   - search:
       # prebuild_index: python
@@ -49,6 +51,8 @@ theme:
     - tabs
     - instant
   font: false
+  icon:
+    repo: fontawesome/brands/github-alt
   language: 'fr'
   logo: 'theme/assets/images/geotribu/logo_geotribu.png'
   palette:
@@ -68,10 +72,19 @@ extra:
   social:
     - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/geotribu/'
+      name: "L'organisation Github de Geotribu"
     - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/search?q=%23GeoRDP&src=typed_query&f=live'
+      name: "La #GeoRDP de Geotribu sur Twitter"
     - icon: 'fontawesome/brands/facebook'
       link: 'https://fr-fr.facebook.com/geotribu/'
+      name: "Page Facebook de Geotribu"
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<geotribu@gmail.com>
+      name: "Nous contacter"
+    - icon: 'fontawesome/brands/slack'
+      link: 'https://geotribu.slack.com'
+      name: "Rejoignez-nous sur Slack"
 
 extra_css:
   - 'theme/assets/stylesheets/extra.css'
