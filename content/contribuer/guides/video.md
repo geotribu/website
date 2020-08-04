@@ -11,7 +11,7 @@ tags: contribuer,vidéo,youtube,vimeo,embed,intégration,tutoriel
 
 Pour les vidéos qui ne sont pas hébergées sur une plateforme en particulier, il est toujours possible de les intégrer en utilisant [la balise dédiée de HTML 5](https://www.w3schools.com/tags/tag_video.asp).
 
-Prenons cette vidéo pour exemple : <https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1280_10MG.mp4>
+Prenons cette vidéo pour exemple : <https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4>
 
 === "Markdown"
 
@@ -19,7 +19,7 @@ Prenons cette vidéo pour exemple : <https://file-examples.com/wp-content/upload
     Une **vidéo** d'illustration de cette _webmap_ :
 
     <video width="700" controls>
-  		<source src="https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+  		<source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
   		Votre navigateur ne supporte pas la balise video HTML 5.
 	</video>
     ```
@@ -29,7 +29,7 @@ Prenons cette vidéo pour exemple : <https://file-examples.com/wp-content/upload
     Une **vidéo** d'illustration de cette _webmap_ :
 
     <video width="700" controls>
-  		<source src="https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+  		<source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
   		Votre navigateur ne supporte pas la balise video HTML 5.
 	</video>
 
