@@ -22,16 +22,63 @@ En `markdown`, intégrer une image se fait via la syntaxe suivante :
     ![Texte de remplacement au cas où l'image ne soit pas accessible](https://url_de_l_image.extension "Légende de l'image")
 
     <!-- avec notre image externe, ça donne donc -->
-    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia")
+    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia)")
     ```
 
 === "Rendu"
 
-    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia")`
+    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia)")
 
 !!! tip
 
     On note que la légende est ajoutée en infobulle qui apparaît au survol prolongé de la souris sur l'image.
+
+## Style, position et dimension
+
+Par défaut, les images sont :
+
+- centrées
+- détourées d'une fine bordure gris foncé
+
+Le site utilise l'extension [`Attribute Lists`](https://python-markdown.github.io/extensions/attr_list/) permettant d'affecter dynamiquement des attributs HTML en utilisant la syntaxe Markdown.
+
+L'idée étant que l'attribut corresponde à un style CSS défini dans le fichier [extra.css](https://github.com/geotribu/website/blob/master/content/theme/assets/stylesheets/extra.css).
+
+### Vignette
+
+C'est le style appliqué pour les icônes des news des revues de presse : `{: .img-rdp-news-thumb }`.
+
+=== "Markdown"
+
+    ```markdown
+    ![Geotribu logo](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_254x254.png "Logo de Geotribu"){: .img-rdp-news-thumb }
+
+    La balise `{: .img-rdp-news-thumb }` permet d'appliquer automatiquement le style vignette à l'image : pas de bordure, taille limitée à 75px, alignement à gauche et texte autour.
+    ```
+
+=== "Rendu"
+
+    ![Geotribu logo](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_254x254.png "Logo de Geotribu"){: .img-rdp-news-thumb }
+
+    La balise `{: .img-rdp-news-thumb }` permet d'appliquer automatiquement le style vignette à l'image : pas de bordure, taille limitée à 75px, alignement à gauche et texte autour.
+
+### Aligner à droite
+
+Pour aligner une image à droite, utiliser : `{: .img-right }`.
+
+=== "Markdown"
+
+    ```markdown
+    ![Geotribu old logo](https://cdn.geotribu.fr/img/internal/charte/old_geotribu_logo.png "Ancien logo de Geotribu"){: .img-right }
+
+    La balise `{: .img-right }` permet d'aligner l'image à droite en laissant le texte autour, sans changer les dimensions.
+    ```
+
+=== "Rendu"
+
+    ![Geotribu old logo](https://cdn.geotribu.fr/img/internal/charte/old_geotribu_logo.png "Ancien logo de Geotribu"){: .img-right }
+
+    La balise `{: .img-right }` permet d'aligner l'image à droite en laissant le texte autour, sans changer les dimensions.
 
 ----
 
@@ -49,12 +96,12 @@ Traditionnellement, nous hébergeons les images sur notre propre serveur pour pl
 
 ### Bonnes pratiques
 
-Sur le site historique de Geotribu, la difficile gestion des images a laissé en héritage chaotique : doublons en pagaille (jusqu'à 10 exemplaires dans certains cas...), noms d'images abscons rendant impossible la recherche, caractèrs spéciaux, dimensions démesurées (qui avait même provoqué un crash du serveur à l'époque :boom: !), etc.
+Sur le site historique de Geotribu, la difficile gestion des images a laissé un héritage chaotique : doublons en pagaille (jusqu'à 10 exemplaires dans certains cas...), noms d'images abscons rendant impossible la recherche, caractères spéciaux, dimensions démesurées (qui avait même provoqué un crash du serveur à l'époque :boom: !), etc.
 
 Merci de suivre au mieux ces recommandations qui permettent de garantir une utilisation sereine des mêmes ressources par plusieurs personnes :pray: :
 
 - chercher d'abord si l'image n'existe pas déjà (voir structure du CDN)
-- redimensionner les images avant de les téléverser (= uploader) : 800px maximum en largeur ou en hauteur sont largement suffisants pour illustrer un article ou une news sur Geotribu.
+- redimensionner les images avant de les téléverser (= _uploader_) : 800px maximum en largeur ou en hauteur sont largement suffisants pour illustrer un article ou une news sur Geotribu.
 - utiliser des formats avec de bons niveaux de compression :
     - JPEG ou mieux [JFIF](https://fr.wikipedia.org/wiki/JPEG_File_Interchange_Format), [PNG](https://fr.wikipedia.org/wiki/Portable_Network_Graphics), [WebP](https://fr.wikipedia.org/wiki/WebP).
     - à éviter Bitmap, Tiff, etc.
@@ -67,7 +114,6 @@ Ce n'est évidemment pas exhaustif et il n'y a pas de brigade des images dans l'
 ### Structure
 
 Globalement, voici comment les images sont organisées :
-
 
 - racine : :rotating_light: éviter d'ajouter de nouvelles images ici :rotating_light:
 - articles-blog-rdp :
@@ -85,22 +131,22 @@ Globalement, voici comment les images sont organisées :
 
 ### Pas à pas
 
-1. Se connecter à au gestionnaire de fichiers en ligne : <https://cdn.geotribu.fr/tinyfilemanager.php>
+1. Se connecter au gestionnaire de fichiers en ligne : <https://cdn.geotribu.fr/>
 
-    ![Tiny File Manager - Formulaire d'authentification](https://cdn.geotribu.fr/images/internal/contribution/embed_image/cdn_filemanager_authform.png "Tiny File Manager - Formulaire d'authentification")
+    ![Tiny File Manager - Formulaire d'authentification](https://cdn.geotribu.fr/img/internal/contribution/embed_image/cdn_filemanager_authform.png "Tiny File Manager - Formulaire d'authentification")
 
-    > l'identifiant et mot de passe sont transmis sur demande sur le Slack de l'équipe
+    > l'identifiant et mot de passe sont transmis sur demande sur le [Slack de l'équipe](https://geotribu.slack.com)
 
 2. Utiliser la recherche pour savoir si jamais une image correspond au besoin
 3. Se positionner dans le dossier souhaité
 4. Cliquer sur :cloud: `Envoyer`
 5. Glisser/déposer ou sélectionner l'image
 
-    ![Téléverser une image](https://cdn.geotribu.fr/images/internal/contribution/embed_image/cdn_filemanager_upload.png)
+    ![Téléverser une image](https://cdn.geotribu.fr/img/internal/contribution/embed_image/cdn_filemanager_upload.png)
 
 6. Cliquer `Retour` et récupérer l'URL de l'image. Par exemple, avec un clic droit sur l'icône de lien ou en cliquant sur l'imahge puis sur `Ouvrir``
 
-    ![Clic doit copier l'adresse du lien](https://cdn.geotribu.fr/images/internal/contribution/embed_image/cdn_filemanager_get_image_url.png "Clic doit copier l'adresse du lien")
+    ![Clic doit copier l'adresse du lien](https://cdn.geotribu.fr/img/internal/contribution/embed_image/cdn_filemanager_get_image_url.png "Clic doit copier l'adresse du lien")
 
 <!-- Hyperlinks reference -->
 [CDN de Geotribu]: https://cdn.geotribu.fr/images/

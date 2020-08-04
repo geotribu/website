@@ -24,10 +24,10 @@ img {
     border: none;
 }
 
-.right {
+.img-right {
     /* right align with text float on the left */
     float: right;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 
