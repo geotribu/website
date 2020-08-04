@@ -1,13 +1,4 @@
----
-title: Julien Moura
-category: auteur
-date: 2020-08-04 15:20
-description: "Présentation de Julien Moura, administrateur et contributeur régulier à Geotribu."
-hero: "Fiche auteur de Julien Moura"
-tags: auteur,contributeur,biographie,geotribu,julien moura
----
-
-### Julien Moura
+# Julien Moura
 
 ![Portrait Julien Moura](https://cdn.geotribu.fr/images/internal/contributeurs/jmou.jfif "Portrait Julien Moura"){: .img-rdp-news-thumb }
 
@@ -17,6 +8,6 @@ Géographe "sigiste" de formation, j'ai commencé à travailler dans la zone Oc�
 
 Au printemps 2020, je me mets à mon compte en tant que consultant indépendant en créant ma petite entreprise : In Geo Veritas.
 
-Formé aux solutions propriétaires, je glisse fortement vers de nombreux autres domaines, notamment le monde du libre en géomatique et le développement en Python, avec lequel j'accouche de petits outils, comme [Metadator](https://github.com/Guts/Metadator), [DicoGIS](https://github.com/Guts/DicoGIS) ou [El Géo Paso](https://elgeopaso.georezo.net).
+Initialement formé aux solutions propriétaires, j'ai rapidement préféré les valeurs du monde du libre. Côté développement, si je tends à utiliser tout ce qui m'est utile, j'ai particulièrement apprécié Python, avec lequel j'accouche de petits outils, comme [Metadator](https://github.com/Guts/Metadator), [DicoGIS](https://github.com/Guts/DicoGIS) ou [El Géo Paso](https://elgeopaso.georezo.net).
 
 Je participe activement à Geotribu depuis fin 2011 et, comme ça me manquait trop, j'ai décidé de lancer sa renaissance en 2020.
