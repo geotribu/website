@@ -35,20 +35,20 @@ Si vous en utilisez plusieurs ou si vous souhaitez personnaliser le nom d'affich
 
 ## Bloc auteur
 
-Les contributeurs/rices réguliers peuvent se créer une page contenant une brève présentation.
+Les contributeurs/rices réguliers peuvent se créer une page contenant une brève présentation dans [`content/team/`](https://github.com/geotribu/website/new/master/content/team) en respectant le nommage des fichiers déjà créés.
 
 ### Syntaxe d'intégration
 
+On utilise ensuite les capacités d'insertion héritée d'un fichier Markdown dans un autre : [Snippets](https://facelessuser.github.io/pymdown-extensions/extensions/snippets/).
+
+Une fois la page créée, la syntaxe est la suivante : `--8<-- "content/team/filename.extension"`.
+
+Exemple :
+
 === "Markdown"
 
-    ```markdown
-    ## Auteur
-
-    \--8<-- "content/team/jmou.md"
-    ```
+    <pre><code>--8&lt;-- "content/team/jmou.md"</code></pre>
 
 === "Rendu"
-
-    ## Auteur
 
     --8<-- "content/team/jmou.md"
