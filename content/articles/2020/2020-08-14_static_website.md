@@ -37,7 +37,11 @@ la joie de la configuration
 
 ### la mode
 
-https://www.staticgen.com/
+<https://www.staticgen.com/>
+
+<https://html5up.net/>
+
+outillage : netlify, <https://staticman.net/>
 
 ----
 
@@ -84,11 +88,17 @@ Il y a même le curseur qui parcourt les lignes, donnant un petit côté Minitel
 
 #### Hugo
 
-> TO COMPLETE
+Parmi les générateurs de sites statiques les plus utilisés, Hugo est l'un des plus côtés récemment. Développé en Go, les performances
 
-#### Gatsby
+```powershell
+hugo new site geotribu_hugo
+cd geotribu_hugo
+git init
+git submodule add https://github.com/jpescador/hugo-future-imperfect.git themes/hugo-future-imperfect
+```
 
-> TO COMPLETE
+![Geotribu - Hugo](https://cdn.geotribu.fr/img/tuto/static_web/static_theming_geotribu_hugo_future_imperfect.png "Geotribu avec le thème Future Imperfect du moteur Hugo")
+
 
 ----
 
