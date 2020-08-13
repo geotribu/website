@@ -1,18 +1,18 @@
 ---
-title: "Publier un site web statique"
-authors: Julien Moura
-category: tutoriel
+authors: "Julien Moura"
+categories: ["tutoriel"]
 date: 2020-08-14 11:11
-description: "A l'instar de nombreux autres sites web, celui de Geotribu est un site statique."
+description: "A l'instar de nombreux autres sites web, celui de Geotribu est un site statique. Mais c'est quoi exactement ?"
 hero: "Publier facilement sur internet : l'ère des sites statiques."
 tags: site web,geotribu,site statique,static website,mkdocs,hugo,markdown
+title: "Publier un site web statique"
 ---
 
-# Publier un site web  : l'avènement des sites statiques
+# Publier un site web : l'avènement des sites statiques
 
 :calendar: Date de publication initiale : 14 août 2020
 
-**Mots-clés :** web | astuces | Déploiement | Installation | Powershell
+**Mots-clés :** web | astuces | Geotribu | contribution
 
 ## Intro
 
