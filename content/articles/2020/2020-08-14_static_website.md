@@ -16,6 +16,10 @@ title: "Publier un site web statique"
 
 ## Intro
 
+Dans le cadre de mon intervention dans le [CQP GEOM](https://www.idgeo.fr/formation/cqp-geom-geomaticien-developpeur-dapplications-spatiales/) propulsé par [IDGEO](https://www.idgeo.fr/) le mois dernier, on m'a demandé de faire un retour d'expérience sur Geotribu et plus largement d'initier les participant/es à la contribution à l'écosystème, notamment sous la forme de blogs ou autre.
+
+Après de grandes envolées théoriques mais non moins lyriques sur l'intérêt de partager, celui d'apporter ~~sa pierre~~ son caillou à son écosystème professionnel au risque/bénéfice de s'exposer "publiquement", les enjeux du délicat équilibre à trouver en termes d'investissement personnel bénévole, nous sommes passés aux travaux pratiques : publier un
+
 Avez-vous besoin d'un service d'authentification intégré (gestion des utilisateurs et des accès) ?
 Avez-vous besoin d'une interface d'édition très complète ?
 
