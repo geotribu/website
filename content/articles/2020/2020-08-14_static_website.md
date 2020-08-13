@@ -39,6 +39,39 @@ En gros : un dossier avec du html, du CSS et du JS. Le tout s'ouvre sur n'import
 
 la joie de la configuration
 
+### Toi aussi, déploie le site Geotribu chez toi
+
+Pour mieux se rendre compte de la légèreté et de la facilité qu'occasionnent les sites statiques, déployons le site actuel de Geotribu en 3 étapes.
+
+1. Télécharger [la dernière version du site en production](https://github.com/geotribu/website/archive/gh-pages.zip)
+2. Dézipper, lancer le fichier `website-gh-pages/index.html` et voir apparaître la page d'accueil dans son navigateur par défaut.
+
+Mais le site ayant été configuré pour avoir des URL correspondant au titre sans l'extension `.html`, la navigation n'est donc pas fonctionnelle, le [navigateur se comportant davantage comme un explorateur de fichiers](https://developer.mozilla.org/fr/docs/Apprendre/Ouvrir_un_fichier_dans_un_navigateur_web#Ouvrir_un_fichier_local).
+
+Si on veut avoir le site pleinement fonctionnel, il suffit de servir le dossier par un serveur web. On peut aussi utiliser les serveurs webs minimalistes intégrés à de nombreux langages :
+
+=== "Python (3)"
+
+    ```bash
+    # se placer dans le dossier où vous avez téléchargé le site. Exemple :
+    cd ~/downloads/website-gh-pages
+
+    # lancer un serveur web minimaliste. Exemple avec Python 3 :
+    python -m http.server 8085
+    ```
+
+=== "Node (12)"
+
+    ```bash
+    # se placer dans le dossier où vous avez téléchargé le site. Exemple :
+    cd ~/downloads/website-gh-pages
+
+    # lancer un serveur web minimaliste. Exemple avec Python 3 :
+    npx serve -l 8085
+    ```
+
+Ouvrir le navigateur sur l'adresse <http://localhost:8085> et vous devriez avoir le site en local, pleinement fonctionnel.
+
 ### la mode
 
 <https://www.staticgen.com/>
@@ -55,9 +88,6 @@ outillage : netlify, <https://staticman.net/>
 
 > TO COMPLETE
 
-### Toi aussi, déploie le site Geotribu chez toi
-
-> TO COMPLETE
 
 ### Jouer avec les thèmes de MkDocs
 
@@ -120,7 +150,9 @@ git submodule add https://github.com/jpescador/hugo-future-imperfect.git themes/
 
 ## Auteur
 
---8<-- "content/team/jmou.md"
+--8<--
+content/team/jmou.md
+--8<--
 
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/
