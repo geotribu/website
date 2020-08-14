@@ -18,11 +18,26 @@ tags: "geotribu,histoire,scrapy"
 
 En juillet dernier, j'ai été invité par [IDGEO](https://www.idgeo.fr/) à faire un retour d'expérience sur l'aventure Geotribu auprès des participant/es au [CQP GEOM](https://www.idgeo.fr/formation/cqp-geom-geomaticien-developpeur-dapplications-spatiales/) dans le cadre du bloc dédié à la veille et à l'implication dans l'écosystème.
 
-Autant partager ici notre petite histoire : naissance, jeunesse, vie, mort... et renaissance en 2020 avec un peu de [Scrapy] et d'[Internet Archive].
+Autant partager ici notre petite histoire ou du moins ma façon de la raconter : naissance, jeunesse, vie, mort... et renaissance en 2020 avec un peu de [Scrapy] et d'[Internet Archive].
 
 Souvenirs, souvenirs et avenir !
 
+## Geotribu, c'est quoi ?
+
+D'un point de vue strictement formel, Geotribu c'est un nom de domaine. Et deux suffixes (.net et .fr, le [.com étant squatté depuis longtemps](https://www.whois.com/whois/geotribu.com) en attendant qu'on devienne [riche ou bête](https://www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)). Il n'y a pas de structure, ni entrepreneuriale, ni associative. D'ailleurs, la convention encadrant le prêt du serveur par GeoRezo est à mon nom et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
+
+C'est donc un regroupement spontané de personnes autour de leur intérêt pour leur dénominateur commun professionnel : la dimension géographique des métiers de chacun/e. Vient ensuite la ligne "éditoriale" imprimée dès les débuts que je résume en deux faces d'une même pièce :
+
+- pile : la technique, l'informatique nous désignant ainsi comme "geo-geeks".
+- face : la promotion du monde du libre, Une philosophie naturelle en cohérence naturelle avec la démarche de partage inhérente au site (avez-vous noté le copyleft qui orne le pied de page ?). Au-delà de nos propres convictions que le libre, l'_open_ et le commun sont des pistes vers des cercles vertueux, il ne s'agit pas de dire que nous n'utilisons jamais de briques propriétaires ou que nous les , mais nous considérons que les éditeurs de briques propriétaires ont généralement les moyens d'assurer leur propre publicité.
+
+Bref, la vie du site se [vit à pile ou face](https://fr.wikipedia.org/wiki/Pile_ou_face_(chanson)) ! L'occasion d'un petit intermède musical :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-l70OKXjg98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Un peu d'histoire
+
+
 
 | 2006 | 2008 | 2010-2012 | 2013 | 2017 | 2020 |
 | :--: | :--: | :--: | :--: | :--: | :--: |
