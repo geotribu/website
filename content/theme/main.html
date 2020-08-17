@@ -1,30 +1,82 @@
-<!-- Documentation : https://squidfunk.github.io/mkdocs-material/customization/#overriding-template-blocks -->
-
 {% extends "base.html" %}
 
 {% block extrahead %}
-<meta name="twitter:dnt" content="on">
-<meta name="twitter:widgets:align" content="center">
+  <meta name="twitter:dnt" content="on">
+  <meta name="twitter:widgets:align" content="center">
+  <!-- OpenGraph -->
+  {% set title = config.site_name %}
+  {% if page and page.meta and page.meta.title %}
+    {% set title = title ~ " - " ~ page.meta.title %}
+  {% elif page and page.title and not page.is_homepage %}
+    {% set title = title ~ " - " ~ page.title | striptags %}
+  {% endif %}
+  {% set image = 'https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg' %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:image" content="{{ image }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@geotribu" />
+  <meta name="twitter:creator" content="@geojulien" />
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ config.site_description }}">
+  <meta name="twitter:image" content="{{ image }}">
 {% endblock %}
 
 {% block config %}
-<!-- Handle Twitter oEmbed - See #54 -->
-<script charset="utf-8" id="twitter-wjs" type="text/javascript" async defer
-  src="//platform.twitter.com/widgets.js"></script>
+  <!-- Handle Twitter oEmbed - See #54 -->
+  <script charset="utf-8" id="twitter-wjs" type="text/javascript" async defer src="https://platform.twitter.com/widgets.js"></script>
 
-<!-- Make search plugin works offline - See https://github.com/wilhelmer/mkdocs-localsearch -->
-{% if "localsearch" in config["plugins"] %}
-<script src="assets/javascript/iframe-worker.js"></script>
-<script src="search/search_index.js"></script>
-{% endif %}
+  <!-- Make search plugin works offline - See https://github.com/wilhelmer/mkdocs-localsearch -->
+  {% if "localsearch" in config["plugins"] %}
+    <script src="/theme/assets/javascript/iframe-worker.js"></script>
+    <script src="/theme/search/search_index.js"></script>
+  {% endif %}
 
 {% endblock %}
 
 {% block disqus %}
-<div class="md-source-date">
-  <small>
-    Contributions à cette page : {{ git_page_authors }}
-  </small>
-</div>
+
+  <div class="md-source-date">
+    <small>
+      Contributions à cette page : {{ git_page_authors }}
+    </small>
+  </div>
+
 {% include "partials/integrations/disqus.html" %}
+
 {% endblock %}
+
+{% block analytics %}
+  {{ super() }}
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.addEventListener("click", ev => {
+        if (ev.target instanceof HTMLElement) {
+          var el = ev.target.closest("a[href^=http]")
+          if (el)
+            ga("send", "event", "outbound", "click", el.href)
+        }
+      })
+    })
+  </script>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script defer type="text/javascript">
+    // Translate - set before any binding
+    WAMediaBox.lang = {
+      prev: "Précédente",
+      next: "Suivante",
+      close: "Fermer",
+      openInNew: "Ouvrir dans un nouvel onglet"
+    };
+
+  </script>
+{% endblock scripts %}
