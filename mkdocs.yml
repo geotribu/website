@@ -41,7 +41,7 @@ plugins:
 theme:
   name: 'material'
   custom_dir: './content/theme/'
-  favicon: 'assets/images/geotribu/logo_geotribu.png'
+  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -54,7 +54,7 @@ theme:
   icon:
     repo: fontawesome/brands/github-alt
   language: 'fr'
-  logo: 'theme/assets/images/geotribu/logo_geotribu.png'
+  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
     accent: deep-orange
     primary: teal
@@ -92,6 +92,7 @@ extra_css:
 
 extra_javascript:
   - 'theme/assets/javascripts/extra.js'
+  - 'theme/assets/javascripts/iframe-worker.js'
   - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js'
 
 
