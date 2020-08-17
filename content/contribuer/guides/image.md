@@ -1,6 +1,7 @@
 ---
-title: Intégrer une image
-category: contribution
+title: "Intégrer une image"
+author: "Julien Moura"
+categories: ["contribution", "tutoriel"]
 date: 2020-04-20 10:20
 tags: contribuer,media,image,intégration,tutoriel,cdn
 ---
@@ -80,6 +81,56 @@ Pour aligner une image à droite, utiliser : `{: .img-right }`.
 
     La balise `{: .img-right }` permet d'aligner l'image à droite en laissant le texte autour, sans changer les dimensions.
 
+### Lightbox
+
+Le site intègre la bibliothèque [wa-mediabox](https://github.com/jirihybek/wa-mediabox/) afin de pouvoir créer un effet [lightbox], mettre en avant des images ou créer une galerie.
+
+=== "Markdown"
+
+    ```markdown
+    [![Texte de remplacement](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: width=200px }](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: data-mediabox="demo-lightbox" data-title="Titre de l'image utilisé comme légende" }
+    [![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ width="200" }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG){: data-mediabox="demo-lightbox" data-title="Une partie de l'équipe Geotribu au FOSS4G-FR 2016" }
+
+    Pour appliquer une [lightbox](https://en.wikipedia.org/wiki/Lightbox_(JavaScript)) sur une image, il faut :
+
+    - faire un lien vers l'image en entier
+    - appliquer l'attribut `data-mediabox=` avec pour valeur le nom du groupe d'images
+
+    Donc la structure type est :
+
+    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="ligthbox-gallery" data-title="Légende image"}`
+    ```
+
+=== "Rendu"
+
+    [![Texte de remplacement](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: width=200px }](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: data-mediabox="demo-lightbox" data-title="Titre de l'image utilisé comme légende" }
+    [![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ width="200" }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG){: data-mediabox="demo-lightbox" data-title="Une partie de l'équipe Geotribu au FOSS4G-FR 2016" }
+
+    Pour appliquer une [lightbox](https://en.wikipedia.org/wiki/Lightbox_(JavaScript)) sur une image, il faut :
+
+    - faire un lien vers l'image en entier
+    - appliquer l'attribut `data-mediabox=` avec pour valeur le nom du groupe d'images
+
+    Donc la structure type est :
+
+    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="ligthbox-gallery" data-title="Légende image"}`
+
+### Style personnalisé
+
+Au-delà des styles prédéfinis, il est évidemment possible de personnaliser à la volée :
+
+=== "Markdown"
+
+    ```markdown
+    ![Bannière Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg "Bannière de Geotribu"){: width=100px loading=lazy align=middle } Par exemple, appliquer une largeur maximum, appliquer un centrage du texte et activer le chargement asynchrone sur une image. Ou centrer tout un paragraphe.
+    {: text-align="center" }
+    ```
+
+=== "Rendu"
+
+    ![Bannière Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg "Bannière de Geotribu"){: width=100px loading=lazy align=middle } Par exemple, appliquer une largeur maximum, appliquer un centrage du texte et activer le chargement asynchrone sur une image. Ou centrer tout un paragraphe.
+    {: text-align="center" }
+
 ----
 
 ## Héberger une image sur le CDN de Geotribu
@@ -150,4 +201,5 @@ Globalement, voici comment les images sont organisées :
 
 <!-- Hyperlinks reference -->
 [CDN de Geotribu]: https://cdn.geotribu.fr/images/
+[lightbox]: https://en.wikipedia.org/wiki/Lightbox_(JavaScript)
 [markdown]: https://fr.wikipedia.org/wiki/Markdown
