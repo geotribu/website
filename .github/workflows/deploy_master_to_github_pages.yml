@@ -42,4 +42,8 @@ jobs:
         python -m pip install -r requirements.txt
 
     - name: Deploy to Github Pages
-      run: mkdocs gh-deploy --clean --force --verbose
+      run: |
+        git config --global user.name "Geotribu (Github Action)"
+        git config --global user.email "geotribu@gmail.com"
+        mkdocs gh-deploy --clean --force --verbose
+
