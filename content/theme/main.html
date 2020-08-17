@@ -28,3 +28,17 @@
 </div>
 {% include "partials/integrations/disqus.html" %}
 {% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script defer type="text/javascript">
+    // Translate - set before any binding
+    WAMediaBox.lang = {
+      prev: "Précédente",
+      next: "Suivante",
+      close: "Fermer",
+      openInNew: "Ouvrir dans un nouvel onglet"
+    };
+
+  </script>
+{% endblock scripts %}
