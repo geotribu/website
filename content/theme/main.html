@@ -1,5 +1,3 @@
-<!-- Documentation : https://squidfunk.github.io/mkdocs-material/customization/#overriding-template-blocks -->
-
 {% extends "base.html" %}
 
 {% block extrahead %}
@@ -8,25 +6,42 @@
 {% endblock %}
 
 {% block config %}
-<!-- Handle Twitter oEmbed - See #54 -->
-<script charset="utf-8" id="twitter-wjs" type="text/javascript" async defer
-  src="//platform.twitter.com/widgets.js"></script>
+  <!-- Handle Twitter oEmbed - See #54 -->
+  <script charset="utf-8" id="twitter-wjs" type="text/javascript" async defer src="https://platform.twitter.com/widgets.js"></script>
 
-<!-- Make search plugin works offline - See https://github.com/wilhelmer/mkdocs-localsearch -->
-{% if "localsearch" in config["plugins"] %}
-<script src="assets/javascript/iframe-worker.js"></script>
-<script src="search/search_index.js"></script>
-{% endif %}
+  <!-- Make search plugin works offline - See https://github.com/wilhelmer/mkdocs-localsearch -->
+  {% if "localsearch" in config["plugins"] %}
+    <script src="/theme/assets/javascript/iframe-worker.js"></script>
+    <script src="/theme/search/search_index.js"></script>
+  {% endif %}
 
 {% endblock %}
 
 {% block disqus %}
-<div class="md-source-date">
-  <small>
-    Contributions à cette page : {{ git_page_authors }}
-  </small>
-</div>
+
+  <div class="md-source-date">
+    <small>
+      Contributions à cette page : {{ git_page_authors }}
+    </small>
+  </div>
+
 {% include "partials/integrations/disqus.html" %}
+
+{% endblock %}
+
+{% block analytics %}
+  {{ super() }}
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.addEventListener("click", ev => {
+        if (ev.target instanceof HTMLElement) {
+          var el = ev.target.closest("a[href^=http]")
+          if (el)
+            ga("send", "event", "outbound", "click", el.href)
+        }
+      })
+    })
+  </script>
 {% endblock %}
 
 {% block scripts %}
