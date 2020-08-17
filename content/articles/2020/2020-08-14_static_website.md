@@ -18,7 +18,9 @@ title: "Publier un site web statique"
 
 Dans le cadre de mon intervention dans le [CQP GEOM](https://www.idgeo.fr/formation/cqp-geom-geomaticien-developpeur-dapplications-spatiales/) propulsé par [IDGEO](https://www.idgeo.fr/) le mois dernier, on m'a demandé de faire un retour d'expérience sur Geotribu et plus largement d'initier les participant/es à la contribution à l'écosystème, notamment sous la forme de blogs ou autre.
 
-Après de grandes envolées théoriques mais non moins lyriques sur l'intérêt de partager, celui d'apporter ~~sa pierre~~ son caillou à son écosystème professionnel au risque/bénéfice de s'exposer "publiquement", les enjeux du délicat équilibre à trouver en termes d'investissement personnel bénévole, nous sommes passés aux travaux pratiques : publier un
+Après de grandes envolées théoriques mais non moins lyriques sur l'intérêt de partager, celui d'apporter ~~sa pierre~~ son caillou à l'édifice de son écosystème professionnel au risque/bénéfice de s'exposer "publiquement", les enjeux du délicat équilibre à trouver en termes d'investissement personnel bénévole, les dangers de faire des phrases trop longues, nous sommes passés aux travaux pratiques : comment publier un blog.
+
+Dès lors, des étudiants
 
 Avez-vous besoin d'un service d'authentification intégré (gestion des utilisateurs et des accès) ?
 Avez-vous besoin d'une interface d'édition très complète ?
@@ -29,15 +31,24 @@ Exemples : documentations techniques, *landing pages*, événements (FOSS4G-FR),
 
 ### Historique
 
+En entendant "site statique", on peut avoir l'impression de revenir en arrière. Après tout, n'avons-nous pas passé ces deux dernières décennies à contextualiser, à dynamiser tout ce qui avait trait au web (Ajax, API, WebSocket...) ?
+
+Mais attention,
+
 rst -> markdown
 sphinx
 
 ### Définition
 
 Pas de base de données, pas de requêtes externes (même si...).
-En gros : un dossier avec du html, du CSS et du JS. Le tout s'ouvre sur n'importe quel serveur web ou même un  navigateur.
+En résumé, ce que l'on appelle un site statique, ça n'est ni plus ni moins qu'un dossier avec du HTML, du CSS et du JS, accessible depuis un serveur de type HTTP (web). Le tout s'ouvre sur n'importe quel serveur web ou même un  navigateur.
 
-la joie de la configuration
+Principaux intérêts :
+
+- légèreté et donc performant
+- interopérable
+- portabilité du contenu
+- sécurisation peu stressante
 
 ### Toi aussi, déploie le site Geotribu chez toi
 
@@ -72,13 +83,46 @@ Si on veut avoir le site pleinement fonctionnel, il suffit de servir le dossier 
 
 Ouvrir le navigateur sur l'adresse <http://localhost:8085> et vous devriez avoir le site en local, pleinement fonctionnel.
 
-### la mode
+### Les 90, c'est so 2020
 
-<https://www.staticgen.com/>
+![Vintage, pas vieux](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/pas_vieux_mais_vintage.png "Je ne suis pas vieux, je suis vintage"){: .img-rdp-news-thumb loading=lazy }
+
+A l'instar du goût éternellement renouvelé pour le vintage, le site statique est de nouveau _hype_ aujourd'hui. Un truc de hipster en somme.
+
+A chaque langage ou framework de développement, son ou ses moteur/s de génération de site statique :
+
+- Go : Hugo - la star, le hit de l'été qui "tue" le game (en ce moment)
+- JavaScript : NextJS (et son pendant now.sh), Gatsby, Vue Press, Gitbook
+- PHP : Jigsaw
+- Python : Sphinx, MkDocs, Pelican
+
+Pour mieux vous rendre compte ou faire votre propre choix, je vous recommande le site [StaticGen](https://www.staticgen.com/) qui classe les différentes technologies selon leur "popularité" ou taux d'utilisation dans les dépôts de code ouverts :
+
+![StaticGen capture](https://cdn.geotribu.fr/img/tuto/static_web/static_gen_picker.png "StaticGen - Sélecteur de générateur de site statique"){: loading=lazy }
+
+Autre signe que tout cela a le vent en poupe, c'est qu'au-delà des moteurs, l'écosystème s'épaissit rapidement, des briques ou services proposant de s'affranchir facilement des limitations du site statique... en promettant d'y inclure facilement du dynamique :zany_face:.
+
+Quelques exemples parmi les plus connus :
+
+- [Netlify](https://www.netlify.com/) : la plateforme complète de services dédiés aux sites statiques : test, pré-déploiement, déploiement, optimisation des images, vérification des liens, formulaires de contact, etc.
+- [Forestry](https://forestry.io/) : un CMS dédié aux sites statiques et basé sur les git workflows
+- [StaticMan](https://staticman.net/) : ajoute un micro-service sous forme d'API intermédiaire pour, par exemple, ajouter un système de commentaires.
+- [_Object Storage as a Static Web Server as a Service_ ou _OSaaSWSaaS_](https://en.wikipedia.org/wiki/Object_storage) : tous les services de cloud permettent d'utiliser leurs services de stockage objet sous forme d'un mini serveur web de fichiers statiques : Amazon, Azure, CloudFlare, Google, Scaleway (qui vient de racheter OpenIO), etc. Oh et pour l'acronyme, c'est une blague, je viens de l'inventer :grin: !
+
+### La joie de la configuration
+
+Si les sites statiques épargnent 75% l'effort de développement, de maintenance et de sécurisation du site web, il reste trois principaux postes de dépense :
+
+- la rédaction bien sûr :
+- le design : même si la plupart des templates sont suffisamment bien
+- la configuration :
+
+
+
 
 <https://html5up.net/>
 
-outillage : netlify, <https://staticman.net/>
+
 
 ----
 
@@ -103,7 +147,7 @@ Intégré par défaut dans MkDocs, on peut par exemple rendre le contenu dans le
 mkdocs serve -t readthedocs
 ```
 
-![Geotribu - Read the Docs](https://cdn.geotribu.fr/img/tuto/static_web/static_theming_geotribu_rtd.png "Geotribu avec le thème Read the Docs")
+![Geotribu - Read the Docs](https://cdn.geotribu.fr/img/tuto/static_web/static_theming_geotribu_rtd.png "Geotribu avec le thème Read the Docs"){: loading=lazy }
 
 #### Terminal
 
@@ -114,7 +158,7 @@ pip install mkdocs-bootstrap386
 mkdocs serve -t bootstrap386
 ```
 
-![Geotribu - Vintage terminal](https://cdn.geotribu.fr/img/tuto/static_web/static_theming_geotribu_dos386.png "Geotribu avec le thème DOS i386")
+![Geotribu - Vintage terminal](https://cdn.geotribu.fr/img/tuto/static_web/static_theming_geotribu_dos386.png "Geotribu avec le thème DOS i386"){: loading=lazy }
 
 Il y a même le curseur qui parcourt les lignes, donnant un petit côté Minitel !
 
@@ -131,7 +175,7 @@ git init
 git submodule add https://github.com/jpescador/hugo-future-imperfect.git themes/hugo-future-imperfect
 ```
 
-![Geotribu - Hugo](https://cdn.geotribu.fr/img/tuto/static_web/static_theming_geotribu_hugo_future_imperfect.png "Geotribu avec le thème Future Imperfect du moteur Hugo")
+![Geotribu - Hugo](https://cdn.geotribu.fr/img/tuto/static_web/static_theming_geotribu_hugo_future_imperfect.png "Geotribu avec le thème Future Imperfect du moteur Hugo"){: loading=lazy }
 
 
 ----
@@ -145,6 +189,8 @@ git submodule add https://github.com/jpescador/hugo-future-imperfect.git themes/
 ## Sur internet : mettre à profit les
 
 > TO COMPLETE
+
+![Déploiement sur GitHub](https://cdn.geotribu.fr/img/tuto/static_web/static_deploy_ci-cd_github.png "Notification GitHub confirmant le déploiement"){: loading=lazy }
 
 ----
 
