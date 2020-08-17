@@ -46,4 +46,3 @@ jobs:
         git config --global user.name "Geotribu (Github Action)"
         git config --global user.email "geotribu@gmail.com"
         mkdocs gh-deploy --clean --force --verbose
-
