@@ -20,34 +20,43 @@ En juillet dernier, j'ai été invité par [IDGEO](https://www.idgeo.fr/) à fai
 
 Autant partager ici notre petite histoire ou du moins ma façon de la raconter : naissance, jeunesse, vie, mort... et renaissance en 2020 avec un peu de [Scrapy] et d'[Internet Archive].
 
+[![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ width="500" }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG){: data-mediabox="demo-lightbox" data-title="Une partie de l'équipe Geotribu au FOSS4G-FR 2016" }
+
 Souvenirs, souvenirs et avenir !
 
 ## Geotribu, c'est quoi ?
 
-D'un point de vue strictement formel, Geotribu c'est un nom de domaine. Et deux suffixes (.net et .fr, le [.com étant squatté depuis longtemps](https://www.whois.com/whois/geotribu.com) en attendant qu'on devienne [riche ou bête](https://www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)). Il n'y a pas de structure, ni entrepreneuriale, ni associative. D'ailleurs, la convention encadrant le prêt du serveur par GeoRezo est à mon nom et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
+D'un point de vue strictement formel, Geotribu c'est un nom de domaine. Et deux suffixes (.net et .fr, le [.com étant squatté depuis longtemps](https://www.whois.com/whois/geotribu.com) en attendant qu'on devienne [riche](https://www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)). Il n'y a pas de structure : ni entrepreneuriale, ni associative, ni contrat de sang dans un tipi. D'ailleurs, la convention encadrant le prêt du serveur par GeoRezo est à mon nom et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
 
-C'est donc un regroupement spontané de personnes autour de leur intérêt pour leur dénominateur commun professionnel : la dimension géographique des métiers de chacun/e. Vient ensuite la ligne "éditoriale" imprimée dès les débuts que je résume en deux faces d'une même pièce :
+C'est donc un regroupement spontané de personnes autour de leur intérêt pour leur dénominateur commun professionnel : la dimension géographique des métiers de chacun/e. Vient ensuite la ligne "éditoriale" imprimée dès les débuts que je présente comme les deux faces d'une même pièce :
 
-- pile : la technique, l'informatique nous désignant ainsi comme "geo-geeks".
-- face : la promotion du monde du libre, Une philosophie naturelle en cohérence naturelle avec la démarche de partage inhérente au site (avez-vous noté le copyleft qui orne le pied de page ?). Au-delà de nos propres convictions que le libre, l'_open_ et le commun sont des pistes vers des cercles vertueux, il ne s'agit pas de dire que nous n'utilisons jamais de briques propriétaires ou que nous les , mais nous considérons que les éditeurs de briques propriétaires ont généralement les moyens d'assurer leur propre publicité.
+- pile, la technique : l'informatique nous désignant ainsi comme "geo-geeks", convaincus que la maîtrise d'outils sert le travail thématique.
 
-Bref, la vie du site se [vit à pile ou face](https://fr.wikipedia.org/wiki/Pile_ou_face_(chanson)) ! L'occasion d'un petit intermède musical :
+- face, le libre : une philosophie en cohérence naturelle avec la démarche de partage inhérente au site (avez-vous noté le [copyleft](https://fr.wikipedia.org/wiki/Copyleft) qui orne le pied de page ?). Au-delà de nos propres convictions que le libre, l'_open_ et le commun sont des leviers vertueux, il ne s'agit pas de dire que nous n'utilisons jamais de briques propriétaires ou que nous les dénigrons, mais nous considérons que les éditeurs de briques propriétaires ont généralement les moyens d'assurer leur propre publicité.
+
+Bref, on vit le site [à pile ou face](https://fr.wikipedia.org/wiki/Pile_ou_face_(chanson)) ! L'occasion d'un petit intermède musical dans un article fleuve :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-l70OKXjg98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+> ou la [version d'Emmanuelle Béart dans 8 Femmes](https://www.youtube.com/watch?v=rTL1FSv9ldw)
+
 ## Un peu d'histoire
-
-
 
 | 2006 | 2008 | 2010-2012 | 2013 | 2017 | 2020 |
 | :--: | :--: | :--: | :--: | :--: | :--: |
-| ![Capture vide](https://gurumed-oxn8moh.netdna-ssl.com/wp-content/uploads/2020/02/terre-sans-eau-1-20_thumb.jpg "Geotribu s'appelait alors Catalogue SIG - Pas de capture") | ![Lancement du premier site](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2008.png "Lancement du premier site") | ![Geotribu 2012](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2012.png "Le coeur du site : articles et tutoriaux") | ![Geotribu 2013](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2013.png "La belle époque : aspect collaboratif central et revues de presse hebdomadaires") | ![Geotribu 2017 - crash](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2017.png "Geotribu = Apache default page") | ![Geotribu 2020](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2020-07-23.png "Le site statique de la renaissance") |
+| [![Toulouse quartiers vides](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/toulouse_quartiers_vide.svg)](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/toulouse_quartiers_vide.svg){: data-mediabox="historic-captures" data-title="Geotribu s'appelait alors Catalogue SIG - J'ai pas de capture, alors j'ai mis une carte vide des quartiers de Toulouse" } | ![Lancement du premier site](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2008.png "Lancement du premier site") | ![Geotribu 2012](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2012.png "Le coeur du site : articles et tutoriaux") | ![Geotribu 2013](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2013.png "La belle époque : aspect collaboratif central et revues de presse hebdomadaires") | ![Geotribu 2017 - crash](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2017.png "Geotribu = Apache default page") | ![Geotribu 2020](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2020-07-23.png "Le site statique de la renaissance") |
 
 ----
 
 ## Renaissance
 
+### Plein d'envie, pas de temps
+
+
+
 ### Le web-scraping à la rescousse
+
+
 
 
 ----
