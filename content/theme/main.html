@@ -32,12 +32,6 @@
   <!-- Handle Twitter oEmbed - See #54 -->
   <script charset="utf-8" id="twitter-wjs" type="text/javascript" async defer src="https://platform.twitter.com/widgets.js"></script>
 
-  <!-- Make search plugin works offline - See https://github.com/wilhelmer/mkdocs-localsearch -->
-  {% if "localsearch" in config["plugins"] %}
-    <script src="/theme/assets/javascripts/iframe-worker.js"></script>
-    <script src="/theme/search/search_index.js"></script>
-  {% endif %}
-
 {% endblock %}
 
 {% block disqus %}
@@ -69,7 +63,7 @@
 
 {% block scripts %}
   {{ super() }}
-  <script defer type="text/javascript">
+  <script async type="text/javascript">
     // Translate - set before any binding
     WAMediaBox.lang = {
       prev: "Précédente",

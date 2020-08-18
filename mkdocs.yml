@@ -92,7 +92,6 @@ extra_css:
 
 extra_javascript:
   - 'theme/assets/javascripts/extra.js'
-  - 'theme/assets/javascripts/iframe-worker.js'
   - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js'
 
 
