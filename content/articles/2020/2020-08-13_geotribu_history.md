@@ -59,6 +59,92 @@ Bref, on vit le site [à pile ou face](https://fr.wikipedia.org/wiki/Pile_ou_fac
 
 
 
+### Du HTML au Markdown
+
+Une fois le HTML et les ressources liées (images...) récupérés, j'ai opté pour un stockage sous forme de Markdown. Pour cela, j'ai utilisé le package [markdowinify](https://github.com/matthewwithanm/python-markdownify) qui permet de transformer du HTML en Markdown.
+
+#### Rendons lisible un article du CNIG
+
+L'usage de _markdownify_ est simple. Pour s'en rendre compte, testons cela rapidement avec un petit objectif pour l'occasion : transformer en markdown [le dernier article du site du CNIG](http://cnig.gouv.fr/?p=23807) pour le lire sans saigner des yeux.
+
+Au passage, on en profite pour essayer deux autres bibliothèques pour ce genre de cas de figure :
+
+- [Beautifulsoup](https://www.crummy.com/software/BeautifulSoup/) : pour le parsing du HTML
+- [urllib3](https://urllib3.readthedocs.io/) : pour facilement faire des requêtes HTTP ; _requests_ ou _httpx_ étant surdimensionnés pour notre besoin, mais avec la flemme de gérer les détails (décodage, etc.)
+
+#### Structure
+
+En regardant [les sources de l'article](view-source:http://cnig.gouv.fr/?p=23807), on sait que le contenu intéressant est dans la div de class `post-content` :
+
+![Source HTML CNIG](https://cdn.geotribu.fr/img/articles-blog-rdp/scraping_cnig_art_source.png "Les sources de l'article du CNIG "){: .img-center loading=lazy data-mediabox="scraping" data-title="Sources d'un article du site du CNIG."}
+
+Avant de commencer, on installe ce qu'il nous manque :
+
+```bash
+python -m pip install beautifulsoup4==4.9.* markdownify==0.5.* urllib3==1.25.*
+```
+
+Puis cela tient en quelques lignes dûment commentées :
+
+```python
+#! python3
+
+# -- Imports
+
+# Bibliothèque standard
+from pathlib import Path
+
+# Packages tiers
+import urllib3
+from bs4 import BeautifulSoup
+from markdownify import markdownify
+
+# -- Variables
+
+in_url = "http://cnig.gouv.fr/?p=23807"
+out_filepath = Path("./cnig_23807.md")
+
+# -- Programme principal
+
+# d'abord on télécharge la page
+http = urllib3.PoolManager()
+page = http.request('GET', in_url)
+
+# on parse le html
+soup = BeautifulSoup(page.data, "html.parser")
+
+# on extrait ce qu'il y a dans la classe post-content
+post_content = soup.find("div", {"class": "post-content"})
+
+# on transforme en markdown en spécifiant le style de titre avec des '#'
+out_md = markdownify(post_content, heading_style="ATX", autolinks=False)
+
+# on écrit notre fichier
+with out_filepath.open("w", encoding="UTF8") as fifi:
+    fifi.write(out_md)
+```
+
+Le résultat, ainsi que le code, sont disponibles dans [ce gist](https://gist.github.com/Guts/a77e9e378b7157f568077ab47937a9d9).
+
+### Conclusion
+
+Evidemment, le résultat est loin d'être parfait et cela demande quelques ajustements et améliorations : déterminer le nom du fichier selon le titre de la page, nettoyer les espacements avant les paragraphes, etc.
+
+Mais cela démontre bien la faisabilité du traitement automatisé :
+
+```mermaid
+graph TD;
+  A[Site archivé]-->B[Scraping];
+  B-->C[HTML];
+  B-->D[Images];
+  C-->E[Markdown];
+  D-->F[CDN];
+```
+
+!!! tip "Cliffhanger"
+
+    Que faire ensuite de tous ces fichiers markdown ? C'est ici que commence un autre chapitre de l'histoire : le site statique !
+
 ----
 
 ## Auteur
