@@ -94,7 +94,7 @@ extra_css:
 extra_javascript:
   - 'theme/assets/javascripts/extra.js'
   - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js'
-  - 'https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js'
+  - 'https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js'
 
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
