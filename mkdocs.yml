@@ -90,7 +90,6 @@ extra:
 extra_css:
   - 'theme/assets/stylesheets/extra.css'
   - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css'
-  - 'https://unpkg.com/mermaid@8.5.1/dist/mermaid.css'
 
 extra_javascript:
   - 'theme/assets/javascripts/extra.js'
