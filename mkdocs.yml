@@ -102,9 +102,6 @@ markdown_extensions:
   - attr_list
   # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - admonition
-  # CodeHilite - https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
-  - codehilite:
-      linenums: true
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   - pymdownx.details
@@ -112,6 +109,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+      use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.smartsymbols
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
