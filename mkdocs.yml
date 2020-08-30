@@ -1,6 +1,11 @@
 # Project information
 site_name: Geotribu
-site_description: Veille libre sur la géomatique
+site_description: >-
+  Site indépendant de veille sur la géomatique libre.
+  Retrouvez nos articles, tutoriels et nos revues de presse (#GeoRDP) sur
+  l'information géographique, les SIG, la cartographie, la représentation des données géographiques...
+  Globalement, tout ce qui mêle géographie et informatique.
+
 site_author: Geotribu
 site_url: https://static.geotribu.fr/
 copyright: '<span class="copyleft">&copy;</span> Geotribu'
@@ -22,7 +27,10 @@ plugins:
   - git-revision-date-localized:
       fallback_to_build_date: true
   - minify:
-      minify_html: true
+      minify_html: !!python/object/apply:os.getenv ["MKDOCS_MINIFY_HTML"]
+      minify_js: !!python/object/apply:os.getenv ["MKDOCS_MINIFY_JS"]
+      htmlmin_opts:
+        remove_comments: !!python/object/apply:os.getenv ["MKDOCS_MINIFY_HTML"]
   - rss:
       abstract_chars_count: 500
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
@@ -71,6 +79,9 @@ extra:
   disqus: 'geotribu-static'  # comment system
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
+    - icon: 'fontawesome/solid/rss'
+      link: 'https://static.geotribu.fr/feed_rss_created.xml'
+      name: "S'abonner aux nouveaux contenus via RSS"
     - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/geotribu/'
       name: "L'organisation Github de Geotribu"
