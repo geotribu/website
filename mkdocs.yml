@@ -27,10 +27,10 @@ plugins:
   - git-revision-date-localized:
       fallback_to_build_date: true
   - minify:
-      minify_html: !!python/object/apply:os.getenv ["MKDOCS_MINIFY_HTML"]
-      minify_js: !!python/object/apply:os.getenv ["MKDOCS_MINIFY_JS"]
+      minify_html: true
+      minify_js: false
       htmlmin_opts:
-        remove_comments: !!python/object/apply:os.getenv ["MKDOCS_MINIFY_HTML"]
+        remove_comments: true
   - rss:
       abstract_chars_count: 500
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
