@@ -53,3 +53,5 @@ jobs:
         mkdocs gh-deploy --clean --force --verbose
       env:
         MKDOCS_SEARCH_PREBUILD_INDEX: node
+        MKDOCS_MINIFY_HTML: true
+        MKDOCS_MINIFY_JS: true
