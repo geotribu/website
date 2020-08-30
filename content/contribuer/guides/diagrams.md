@@ -14,7 +14,7 @@ On utilise [l'extension SuperFences de PyMdown](https://facelessuser.github.io/p
 
 ## Syntaxe
 
-Cela consiste en créant une balise de code pointant sur le langage `mermaid`.
+Cela consiste en créant une balise de code pointant sur le langage `mermaid`, dans laquelle on insère notre syntaxe MermaidJS.
 
 ### Exemple
 
@@ -32,8 +32,10 @@ Cela consiste en créant une balise de code pointant sur le langage `mermaid`.
         H-->Twitter;
         H-->LinkedIn;
     ```
+!!! tip
 
 ```
+    Pour se faciliter les choses, il est conseillé d'utiliser [l'éditeur en ligne](https://mermaid-js.github.io/mermaid-live-editor/) pour préparer son diagramme.
 
 ### Rendu
 
