@@ -41,7 +41,7 @@ Désormais c'est assez facile de réduire le risque d'AVC :
 * soit en cochant l’option dans l’installateur Python
 * soit en suivant [cette procédure](https://docs.python.org/fr/3/using/windows.html#removing-the-max-path-limitation) (ou [ici](https://www.it-connect.fr/windows-10-comment-activer-la-gestion-des-chemins-trop-long/))
 
-![Installateur Python - Option pour les chemins longs](https://cdn.geotribu.fr/img/tuto/python_windows/python_windows_installer_path_length.jpg)
+![Installateur Python - Option pour les chemins longs](https://cdn.geotribu.fr/img/tuto/python_windows/python_windows_installer_path_length.jpg "Installateur Python - Option pour les chemins longs")
 
 ### Ajouter Python au PATH
 
@@ -66,7 +66,7 @@ Dans les configurations récentes de Windows 10, la politique de sécurité est 
 
 Lors des premières utilisations, il est donc parfois nécessaire d'autoriser Python à accéder au système de fichiers sur l'appareil, via le centre de sécurité :
 
-![Centre de sécurité de Windows 10](https://cdn.geotribu.fr/img/tuto/python_windows/windows_security_folder_access.jpg)
+![Centre de sécurité de Windows 10](https://cdn.geotribu.fr/img/tuto/python_windows/windows_security_folder_access.jpg "Veiller à ce que la protection contre les ransomwares ne bloquent pas les scripts Python")
 
 ----
 
@@ -200,4 +200,6 @@ Il existe de [nombreuses listes de packages recommandés](https://encrypted.goog
 
 ## Auteur
 
---8<-- "content/team/jmou.md"
+--8<--
+  content/team/jmou.md
+--8<--
