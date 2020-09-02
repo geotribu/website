@@ -62,7 +62,7 @@ Basculer ensuite sur la branche qui va bien :
 
 ### 3. Créer/modifier localement du contenu en markdown
 
-Le bon moment de se rappeler [comment écrire du bon markdown](../local/requirements#markdown) :wink: !
+Le bon moment de se rappeler [comment écrire du bon markdown](../requirements#markdown) :wink: !
 
 ### 4. Enregistrer sa modification
 

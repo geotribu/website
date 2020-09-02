@@ -7,7 +7,7 @@ Tags: article,interview,dossier,tutoriel,blog
 
 # Articles
 
-Les articles sont regroupés par année de publication. On y toruve :
+Les articles sont regroupés par année de publication. On y trouve :
 
 * des billets de blogs
 * des dossiers
