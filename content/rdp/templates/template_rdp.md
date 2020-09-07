@@ -1,16 +1,19 @@
 ---
 title: "Revue de presse du 21 août 2020"
-authors: Geotribu
-category: Revues de presse
+authors: ["Geotribu"]
+categories: ["Revues de presse"]
 date: 2020-08-21 14:20
-description: "Revue de presse géomatique du 21 août 2020"
+description: "GeoRDP du 21 août 2020 : "
 hero: "Revue de presse du 21 août 2020"
+image:
 tags: rdp
 ---
 
 # Revue de presse du 21 août 2020
 
 ## Intro
+
+![icône news générique](https://cdn.geotribu.fr/images/internal/icons-rdp-news/news.png "News"){: .img-rdp-news-thumb loading=lazy }
 
 ----
 
