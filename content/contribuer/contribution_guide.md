@@ -2,6 +2,7 @@
 Title: Guide de contribution à Geotribu
 Category: contribution
 Date: 2020-03-20 10:20
+description: "Guide de contribution au site collaboratif Geotribu : processus (git flow), modifier un contenu et guides spécifiques (images, vidéos, émojis...)"
 Tags: guide,contribuer,geotribu
 ---
 
@@ -104,8 +105,6 @@ Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publi
     git pull
     ```  
 
-
-
 ----
 
 ## Modifier un contenu
@@ -114,10 +113,9 @@ Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publi
 
 Coucher sa prose en markdown en s'appuyant sur :
 
-- [voir un spécimen de ce qu'il est possible d'obtenir](https://squidfunk.github.io/mkdocs-material/specimen/)
+- [les bases](https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown/)
 - [utiliser des blocs stylés](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
 - [insérer du code](https://squidfunk.github.io/mkdocs-material/extensions/codehilite/)
-- [astuces de rédaction (en)](https://yakworks.github.io/mkdocs-material-components/cheat-sheet/)
 
 ### Ajouter une image
 

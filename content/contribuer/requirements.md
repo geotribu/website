@@ -1,8 +1,9 @@
 ---
 Title: Prérequis pour la contribution
-Category: contribution
+categories: ["contribution"]
 Date: 2020-03-20 10:20
-Tags: contribuer,requirement,markdown,github
+description: "Prérequis minimaux pour contribuer à Geotribu : un compte GitHub et savoir écrire en Markdown."
+tags: contribuer,requirement,markdown,github
 ---
 
 # Prérequis
@@ -24,7 +25,7 @@ La rédaction de contenu requiert la maîtrise de la syntaxe _[markdown]_ qui pe
 - tableaux
 - insertion de code
 
-Il y a également certaines limites (dimensionnement ou alignement des images par exemple) mais qui sont parfois comblées soit par des [extensions](https://squidfunk.github.io/mkdocs-material/extensions/pymdown/) de la syntaxe de base (exemple d'[**attr_list**](https://python-markdown.github.io/extensions/attr_list/) qui permet d'ajouter des balises de style), soit par d'autres langages (CSS, HTML...).
+Il y a également certaines limites (dimensionnement ou alignement des images par exemple) mais qui sont parfois comblées soit par des [extensions](https://facelessuser.github.io/pymdown-extensions/) de la syntaxe de base (exemple d'[**attr_list**](https://python-markdown.github.io/extensions/attr_list/) qui permet d'ajouter des balises de style), soit par d'autres langages (CSS, HTML...).
 
 !!! warning
     Le _[markdown]_ est une syntaxe extensible et son rendu dépend de l'outil utilisé pour l'implémenter. Il existe donc des différences entre le rendu :
@@ -37,8 +38,8 @@ Il y a également certaines limites (dimensionnement ou alignement des images pa
 
 Ressources :
 
-- la page "spécimen" de [Mkdocs / Material]
-- [astuces de rédaction spécifiques à MkDocs / Material (en)](https://yakworks.github.io/mkdocs-material-components/cheat-sheet/)
+- [les bases](https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown/)
+- [utiliser des blocs stylés](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
 - le [markdown dans Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
 
 <!-- Hyperlinks reference -->
@@ -46,7 +47,6 @@ Ressources :
 [GitHub Desktop]: https://desktop.github.com/
 [GitHub]: https://help.github.com/en/github/writing-on-github
 [markdown]: https://fr.wikipedia.org/wiki/Markdown
-[MkDocs / Material]: https://squidfunk.github.io/mkdocs-material/specimen/
 [Python]: http://help.isogeo.com/development-guidelines/languages/python/
 [StackEdit]: https://stackedit.io/
 [Visual Studio Code]: https://github.com/DavidAnson/vscode-markdownlint#intro

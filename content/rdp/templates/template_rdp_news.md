@@ -1,6 +1,6 @@
 ### TITRE DE LA NEWS
 
-![](https://cdn.geotribu.fr/images/internal/icons-rdp-news/news.png){: .img-rdp-news-thumb }
+![](https://cdn.geotribu.fr/images/internal/icons-rdp-news/news.png){: .img-rdp-news-thumb loading=lazy }
 
 **Ou choisir une autre icône depuis le CDN : <https://cdn.geotribu.fr/images/internal/icons-rdp-news/>**
 
@@ -17,7 +17,7 @@ Liste à puces :
 
 Image :
 
-![TITRE DE REMPLACEMENT DE L'IMAGE](https://www.trekmag.com/media/news/2018/05/ign-home.jpg)
+![TITRE DE REMPLACEMENT DE L'IMAGE](https://www.trekmag.com/media/news/2018/05/ign-home.jpg){: loading=lazy }
 
 Vidéo youtube via  iframe (obligatoirement en https) :
 
