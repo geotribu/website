@@ -25,7 +25,7 @@ La rédaction de contenu requiert la maîtrise de la syntaxe _[markdown]_ qui pe
 - tableaux
 - insertion de code
 
-Il y a également certaines limites (dimensionnement ou alignement des images par exemple) mais qui sont parfois comblées soit par des [extensions](https://squidfunk.github.io/mkdocs-material/extensions/pymdown/) de la syntaxe de base (exemple d'[**attr_list**](https://python-markdown.github.io/extensions/attr_list/) qui permet d'ajouter des balises de style), soit par d'autres langages (CSS, HTML...).
+Il y a également certaines limites (dimensionnement ou alignement des images par exemple) mais qui sont parfois comblées soit par des [extensions](https://facelessuser.github.io/pymdown-extensions/) de la syntaxe de base (exemple d'[**attr_list**](https://python-markdown.github.io/extensions/attr_list/) qui permet d'ajouter des balises de style), soit par d'autres langages (CSS, HTML...).
 
 !!! warning
     Le _[markdown]_ est une syntaxe extensible et son rendu dépend de l'outil utilisé pour l'implémenter. Il existe donc des différences entre le rendu :
