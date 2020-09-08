@@ -1,12 +1,12 @@
 ---
-title: "Du web-scraping avec Scrapy au format Markdown."
+title: "Le web-scraping avec Scrapy."
 authors: "Julien Moura"
 categories: ["article", "tutoriel"]
-date: "2020-09-07 10:20"
-description: "Utiliser le web-scraping (Scrapy) pour récupérer les anciens contenus de Geotribu puis les convertir en Markdown (via markdownify)."
+date: "2020-09-08 10:20"
+description: "Utiliser le web-scraping (Scrapy) pour récupérer les anciens contenus de Geotribu depuis l'Internet Archive."
 hero: "Le web-scraping à la rescousse des anciens contenus."
 image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
-tags: "Scrapy,Python,BeautifulSoup,markdown,geotribu,histoire"
+tags: "Scrapy,Python,geotribu,histoire"
 ---
 
 # Récupérer les anciens contenus : le web-scraping à la rescousse
@@ -21,10 +21,7 @@ Après avoir disserté sur [la petite histoire de Geotribu](../2020-08-31_geotri
 
 Pendant un temps, on a eu l'espoir de remonter le site depuis une ancienne sauvegarde, quitte à faire le deuil des contenus les plus récents. Techniquement faisable, l'idée de repartir sur un Drupal vieillot et difficile à maintenir n'a pas séduit grand monde.
 
-Lorsque que le moment est venu, j'ai donc opté pour le web-scraping. Dans cet article, 2 volets :
-
-1. comment cela a permis de récupérer les anciens contenus de Geotribu - [raccourci](#aspirons-lancien-geotribu)
-2. les convertir en Markdown avec un petit exercice pratique avec le site du CNIG :wink: - [raccourci](#du-html-au-markdown).
+Lorsque que le moment est venu, j'ai donc opté pour le web-scraping. L'occasion ici de partager mon expérience, comme d'habitude.
 
 ## Le web-scraping, c'est quoi
 
@@ -32,13 +29,15 @@ C'est une technique visant à aspirer le contenu d'un site web pour le stocker d
 
 Si le nom ne vous dit rien, c'est pourtant une technique qui est largement utilisée de façon sous-jacente à de nombreux services : référencement automatisé des sites par les moteurs de recherche, tests automatisés d'applications webs (_headless_), comparateurs de prix, agrégateurs de contenus (actualités par exemple) etc.
 
+Le fonctionnement global est schématisé de la façon suivante :
+
 [![web scraping schéma](https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png "Le web-scraping schématisé. Crédits : Web Harvy"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png){: data-mediabox="scraping" data-title="Le web-scraping schématisé. Crédits Web Harvy"}
 
 ----
 
 ## Aspirons l'ancien Geotribu
 
-Si on en croit la simplification du schéma, on a donc besoin de 3 ingrédients :
+:cup_with_straw: Si on en croit cette simplification, on a donc besoin de 3 ingrédients :
 
 - un site web qui tourne
 - un logiciel (ou un service) de web-scraping
@@ -46,7 +45,7 @@ Si on en croit la simplification du schéma, on a donc besoin de 3 ingrédients 
 
 ### Le site : local et Internet Archive
 
-Pour ce premier point, je suis d'abord parti de la dernière sauvegarde dont disposait Fabien mais qui datait. Après quelques batailles homme-machine, je gagnai la guerre et déployais l'ancien Geotribu en local. Travaillant alors sur Windows, j'ai même eu le toupet de faire tourner le site sur [WAMP](https://fr.wikipedia.org/wiki/WampServer) !
+Pour ce premier point, je suis d'abord parti de la dernière sauvegarde dont disposait Fabien mais qui datait. Après quelques batailles homme-machine, je gagnai la guerre et déployai l'ancien Geotribu en local. Pour l'anecdote, travaillant alors sur Windows, j'ai même eu le toupet de faire tourner le site sur [WAMP](https://fr.wikipedia.org/wiki/WampServer) !
 
 Pour les contenus les plus récents, je me suis tourné vers l'[Internet Archive] sur les conseils de [Vincent Picavet](https://www.linkedin.com/in/vincentpicavet/) (merci à lui !), d'où j'ai tiré les captures d'écran du précédent article.
 
@@ -136,34 +135,53 @@ rdp = response.css('article')[0]
 ['Client', 'Serveur', 'Représentation Cartographique', 'Conférences', 'Divers']
 ```
 
-Inutile de détailler davantage, je pense que tout le monde a compris et cet article est déjà trop long !
+Inutile de détailler davantage, je pense que tout le monde a compris le principe et cet article est déjà bien long !
 
+#### Mise en musique
 
-!!! info "Aller plus loin"
+Une fois que l'on a démêlé la structure des contenus ciblés, on met tout cela en musique dans le projet Scrapy :
 
-    Pour consulter la partie consolidée du web-scraping :
+- à chaque type de contenu, son _item_ : un objet dont les attributs correspondent à ce que l'on attend de récupérer d'un contenu (titre, introduction, etc.)
+- un _spider_ chargé d'extraire les informations ciblées dans un ensemble de pages : par exemple, les articles et les revues de presse n'ont pas la même structure, il faut donc adapter le _crawling_. De plus, cela permet de cibler un certain type de contenus
+- concevoir les _pipeline_ qui traiteront les données récuprées : nettoyage des balises, exclusion, conversion dans le ou les formats de destination, etc.
+- éventuellement jouer avec les couches intermédiaires (_middlewares_) pour gérer des cas particuliers ou personnaliser des comportements : redimensionnement des images, etc.
+- le tout orchestré par un fichier de configuration `settings.py` dont les options sont nombreuses, sans compter les éventuelles extensions.
 
-    - [le code source](https://github.com/geotribu/scraping_old_site/)
-    - [la documentation](https://geotribu-web-scraping-resurrection.readthedocs.io/)
+[![Architecture Scrapy](https://cdn.geotribu.fr/img/tuto/webscraping/scrapy_architecture.png "Schéma d'architecture des modules de Scrapy."){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/scrapy_architecture.png){: data-mediabox="scraping" data-title="Schéma d'architecture des modules de Scrapy." }
+
+Bref, à ce stade, le travail est loin d'être terminé. Soyons réaliste : ça n'est pas très "rentable" lorsqu'il s'agit, comme dans notre cas, de faire tourner notre programme de scraping que quelques fois seulement, le temps en fait de le peaufiner et de gérer les cas particuliers.
+
+Mais l'idée est bien là : parcourir un site web de façon automatisée pour en extraire les contenus.
+
+### Aller plus loin
+
+Si vous souhaitez aller au bout de la démarche, vous pouvez lancer le projet que j'ai développé et utilisé pour Geotribu. Je n'ai pas la prétention de dire que c'est un modèle du genre mais ça a le mérite de tourner (sinon dites-le moi) et d'illustrer le propos :
+
+- [le code source](https://github.com/geotribu/scraping_old_site/)
+- [la documentation](https://geotribu-web-scraping-resurrection.readthedocs.io/)
+
+Une fois le projet installé, il est aisé de lancer le scraping via une simple ligne de commande, en spécifiant  :
+
+```bash
+# pour les revues de presse
+scrapy crawl geotribu_rdp -L WARNING
+# pour les articles
+scrapy crawl geotribu_articles -L WARNING
+```
 
 ----
 
 ## Conclusion
 
-Evidemment, le résultat est loin d'être parfait et cela demande quelques ajustements et améliorations : déterminer le nom du fichier selon le titre de la page, nettoyer les espacements avant les paragraphes, etc. D'ailleurs, ce nettoyage manuel est toujours en cours pour une partie des contenus de Geotribu.
+Les plus minutieux auront remarqué que tous les contenus n'ont pas été récupérés ou intégrés dans le site actuel. En effet, plusieurs raisons à cela.
 
-Cela démontre bien à la fois la faisabilité et les limitations du traitement automatisé, qu'on peut résumer ainsi :
+D'abord par manque de temps : par principe, je suis plus fervent d'investir dans le futur que dans le passé. Au-delà d'une certaine limite, autant consacrer du temps à des nouveaux contenus et à l'actualisation de la dynamique.
 
-```mermaid
-graph TD;
-  A[Site archivé]-->B[Scraping];
-  B-->C[HTML];
-  B-->D[Images];
-  C-->E[Markdown];
-  D-->F[CDN];
-```
+Ensuite, cela fatigue les serveurs de l'[Internet Archive] : c'est pas très fair-play et de toute façon ça renvoie des [429](https://developer.mozilla.org/fr/docs/Web/HTTP/Status/429) en chaîne. Il aurait fallu passer par des instances cloud permettant de simuler des connexions de différents endroits ([Crawlera de ScrapingHub](https://www.scrapinghub.com/crawlera/) par exemple), mais nous n'avons pas sassez de public ou de demande pour que le jeu en vaille la chandelle.
 
-[A suivre (14 septembre) : les sites statiques :fontawesome-solid-step-forward:](#){: .md-button }
+Maintenant on sait comment moissonner un site web, en l'occurence l'ancien Geotribu. Dans le prochain article, on verra quoi faire de tous cette soupe de HTML/CSS/Javascript/Images.
+
+[A suivre (11 septembre) : convertir des fichiers HTML en Markdown :fontawesome-solid-step-forward:](#){: .md-button }
 {: align=middle }
 
 ----
