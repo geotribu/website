@@ -1,5 +1,5 @@
 ---
-title: "Le web-scraping avec Scrapy."
+title: "Le web-scraping avec Scrapy"
 authors: "Julien Moura"
 categories: ["article", "tutoriel"]
 date: "2020-09-08 10:20"
