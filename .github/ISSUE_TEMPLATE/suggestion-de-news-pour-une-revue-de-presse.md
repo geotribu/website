@@ -43,3 +43,17 @@ Longeur maximale indicative : 100/120 caractères
 Prose.
 
 ## Medias d'illustration (images, vidéos, tweets, etc.)
+
+----
+
+## Texte final à copier/coller
+
+```markdown
+## {{ news.section }}
+
+### {{ news.title }}
+
+![{{ news.thumbnail.replace_txt }}]({{ news.thumbnail.url }} "{{ news.thumbnail.caption }}"){: .img-rdp-news-thumb loading=lazy }
+
+{{ news.body }}
+```

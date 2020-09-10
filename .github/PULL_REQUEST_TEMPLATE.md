@@ -1,9 +1,4 @@
----
-name: New GeoRDP
-about: Modèle pour créer une nouvelle revue de presse.
-title: "GeoRDP du [DATE]"
-assignees: guts
----
+<!-- Modèle pour créer une nouvelle revue de presse. Ignorer ou adapter pour les autres types de contenus -->
 
 # Amorcer une nouvelle revue de presse
 
@@ -30,7 +25,7 @@ assignees: guts
 - [ ] les images téléversées sur le CDN n'ont pas de caractère spécial dans leur nom de fichier (espace, accent, etc.)
 - [ ] chaque news a une vignette
 - [ ] les images (sauf les vignettes) ont l'attribut `loading` défini sur `lazy` (cf. [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading) et [guide material-mkdocs](https://squidfunk.github.io/mkdocs-material/reference/images/#image-lazy-loading))
-- [ ] accessibilité : chaque image a un texte de remplacement (entre les crochets) et un titre lisible par les outils d'assistance. Bref, respecte la syntaxe générale : <https://static.geotribu.fr/contribuer/guides/image/#syntaxe-generale>
+- [ ] accessibilité : chaque image a un texte de remplacement (entre les crochets) et un titre lisible par les outils d'assistance. Bref, qui respecte la [syntaxe générale](https://static.geotribu.fr/contribuer/guides/image/#syntaxe-generale)
 
 ### SEO
 
@@ -47,4 +42,4 @@ assignees: guts
 
 ## Diffuser sur Twitter
 
-Une fois le déploiement effectué (~ 5 minutes), diffuser a minima sur Twitter avec le hashtag `#GeoRDP`, en citant les contributeur/ices avec leur compte (le cas échéant). Attention le compte Twitter `@geotribu` est en fait le compte personnel d'Arnaud.
+Une fois le déploiement effectué (~ 5 minutes), diffuser a minima sur Twitter avec le hashtag `#GeoRDP`, en citant les contributeur/ices avec leur compte. Attention le compte Twitter `@geotribu` est en fait le compte personnel d'Arnaud.

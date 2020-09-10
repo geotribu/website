@@ -1,10 +1,10 @@
 ---
 title: "Titre principal"
-authors: Prénom NOM
+authors: ["Prénom NOM"]
 categories: ["article"]
 date: "2020-08-09 10:20"
 description: "Description pour le SEO."
-hero: "Phrase affichée en-tête de la page"
+image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
 tags: "mot-clé-seo1,mot-clé-seo2"
 
 ---
