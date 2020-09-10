@@ -1,10 +1,9 @@
 ---
-title: "Convertir du HTML en Markdown."
+title: "Du HTML en Markdown (et vice-versa)"
 authors: "Julien Moura"
 categories: ["article", "tutoriel"]
 date: "2020-09-11 10:20"
 description: "Comment convertir les contenus récupérés de l'ancien site de Geotribu en Markdown (via markdownify)."
-hero: "Le nouve."
 image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
 tags: "markdown,Python,BeautifulSoup,markdown,geotribu,histoire"
 ---
