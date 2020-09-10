@@ -1,9 +1,4 @@
----
-name: New GeoRDP
-about: Modèle pour créer une nouvelle revue de presse.
-title: "GeoRDP du [DATE]"
-assignees: guts
----
+<-- Modèle pour créer une nouvelle revue de presse. Ignorer ou adapter pour les autres types de contenus -->
 
 # Amorcer une nouvelle revue de presse
 
