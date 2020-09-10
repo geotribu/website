@@ -17,17 +17,17 @@ tags: "markdown,Python,BeautifulSoup,markdown,geotribu,histoire"
 
 ## Introduction
 
-Dans le cadre de la série d'articles sur la renaissance de Geotribu (lire la [petite histoire de Geotribu](../2020-08-31_geotribu_histoire/)), on a vu comment utiliser le web-scraping (avec [Scrapy]) pour récupérer les anciens contenus depuis une sauvegarde locale ou l'[Internet Archive].
+Dans le cadre de la série d'articles sur la renaissance de Geotribu (lire la [petite histoire de Geotribu](../2020-08-31_geotribu_histoire/)), on a vu comment [utiliser le web-scraping pour récupérer les anciens contenus](../2020-09-08_web-scraping_scrapy_geotribu/) depuis une sauvegarde locale ou l'[Internet Archive].
 
-Après tout cela, on a donc un beau cocktail *Web on The Beach* : HTML + CSS + JavaScript :cocktail:. C'est bien mais ce qui nous intéresse c'est le contenu et la structure, les scripts et les mécanismes de rendu (CSS...) sont encore trop intimement liés.
+Après tout cela, on a donc un beau cocktail *Web on The Beach* : HTML + CSS + JavaScript :cocktail:. C'est bien mais ce qui nous intéresse c'est de récupérer le contenu : le texte et les images. or, la structure, les scripts et les mécanismes de rendu (CSS...) sont encore trop intimement liés.
 
-Dans cet article, on va voir pourquoi et comment on a choisi de passer sur une rédaction en Markdown.
+Dans cet article, on va voir pourquoi et comment on a choisi de passer sur une rédaction en Markdown. Au passage, on se refait un coup de web-scraping histoire d'enfoncer le clou :hammer:.
 
 ----
 
 ## Markdown, lingua frinca du contenu éditorial en ligne
 
-Surensemble de HTML, la syntaxe Markdown initialement très répandue pour
+Surensemble de HTML, la syntaxe [Markdown] initialement très répandue pour
 Au revoir les bbcodes, rst, etc.
 
 ----
@@ -120,7 +120,7 @@ graph TD;
   D-->F[CDN];
 ```
 
-[A suivre (14 septembre) : les sites statiques :fontawesome-solid-step-forward:](#){: .md-button }
+[A suivre : les sites statiques :fontawesome-solid-step-forward:](#){: .md-button }
 {: align=middle }
 
 ----
@@ -132,5 +132,6 @@ content/team/jmou.md
 --8<--
 
 <!-- Hyperlinks reference -->
-[Scrapy]: https://scrapy.org/
+[Markdown]: https://fr.wikipedia.org/wiki/Markdown
 [Internet Archive]: https://archive.org
+[Scrapy]: https://scrapy.org/
