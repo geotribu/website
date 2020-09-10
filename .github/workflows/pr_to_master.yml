@@ -24,7 +24,7 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Set up NodeJS (for serach index prebuilding)
+    - name: Set up NodeJS (for search index prebuilding)
       uses: actions/setup-node@v2.1.1
       with:
         node-version: '12'
