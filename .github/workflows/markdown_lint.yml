@@ -27,20 +27,24 @@ jobs:
         with:
           output: ' '
 
+      # -- APPLY LINTER ------------------------------------------------------
       - name: Install markdown-cli
+        id: dependencies
         run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
 
       - name: Run markdownlint-cli on new files
         id: mdl_added
         run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }}
-        continue-on-error: true
 
       - name: Run markdownlint-cli on modified files
         id: mdl_modified
+        if: success() || failure()
         run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-modified.txt" ${{ steps.file_changes.outputs.files_modified }}
-        continue-on-error: true
 
+      # -- REPORTING ARTEFACT ------------------------------------------------
       - name: Upload report
+        id: report_upload
+        if: success() || failure()
         uses: actions/upload-artifact@v2
         with:
           name: markdown-lint-report
@@ -48,7 +52,9 @@ jobs:
             markdown-lint-report-added.txt
             markdown-lint-report-modified.txt
 
-      - name: Comment PR
+      # -- USER INFORMATION --------------------------------------------------
+      - name: Comment PR - Fail
+        id: pr_comment
         if: failure()
         uses: mshick/add-pr-comment@v1
         with:
