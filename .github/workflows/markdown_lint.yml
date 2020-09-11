@@ -9,11 +9,15 @@ jobs:
     lint-markdown:
       name: Lint markdown files
       runs-on: ubuntu-latest
+
       steps:
+      - name: Set up NodeJS (for serach index prebuilding)
+        uses: actions/setup-node@v2.1.1
+        with:
+          node-version: '12'
+
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Lint changelog file
-        uses: avto-dev/markdown-lint@v1
-        with:
-          config: '.markdown.lint.json'
+      - name: Install markdown-cli
+        run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
