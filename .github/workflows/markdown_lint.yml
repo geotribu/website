@@ -31,10 +31,12 @@ jobs:
         run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
 
       - name: Run markdownlint-cli on new files
+        id: mdl_added
         run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }}
         continue-on-error: true
 
       - name: Run markdownlint-cli on modified files
+        id: mdl_modified
         run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-modified.txt" ${{ steps.file_changes.outputs.files_modified }}
         continue-on-error: true
 
@@ -45,3 +47,12 @@ jobs:
           path: |
             markdown-lint-report-added.txt
             markdown-lint-report-modified.txt
+
+      - name: Comment PR
+        if: steps.mdl_added.failure()
+        uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+           **Hello MASTER**
+          allow-repeats: false
+
