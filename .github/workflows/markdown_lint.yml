@@ -41,5 +41,5 @@ jobs:
       - name: Upload report
         uses: actions/upload-artifact@v2
         with:
-          name: markdown-lint-report
+          name: markdown-lint-report.txt
           path: markdown-lint-report.txt
