@@ -49,10 +49,9 @@ jobs:
             markdown-lint-report-modified.txt
 
       - name: Comment PR
-        if: steps.mdl_added.failure()
+        if: failure()
         uses: mshick/add-pr-comment@v1
         with:
           message: |
            **Hello MASTER**
           allow-repeats: false
-
