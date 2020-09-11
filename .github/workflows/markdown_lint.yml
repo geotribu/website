@@ -21,3 +21,6 @@ jobs:
 
       - name: Install markdown-cli
         run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
+
+      - name: Run makrdownlint-cli
+        run: markdownlint -c .markdownlint.json -o "markdown-lint-report.txt" content/
