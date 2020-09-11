@@ -24,3 +24,9 @@ jobs:
 
       - name: Run markdownlint-cli
         run: yarn markdownlint -c .markdownlint.json -o "markdown-lint-report.txt" content/
+
+      - name: Upload report
+        uses: actions/upload-artifact@v2
+        with:
+          name: markdown-lint-report
+          path: markdown-lint-report.txt
