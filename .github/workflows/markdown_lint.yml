@@ -59,6 +59,8 @@ jobs:
         uses: mshick/add-pr-comment@v1
         with:
           message: |
-           **Hello MASTER**
+           :boom: Erreurs repérées dans la syntaxe Markdown. Merci de corriger si besoin @${{ GITHUB_ACTOR }}.
           allow-repeats: false
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+
