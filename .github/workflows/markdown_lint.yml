@@ -23,7 +23,7 @@ jobs:
         run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
 
       - name: Run markdownlint-cli
-        run: yarn markdownlint -c .markdownlint.json -o "markdown-lint-report.txt" content/
+        run: yarn markdownlint -c .markdownlint.json -i "content/**/template_*.md" -o "markdown-lint-report.txt" "content/**/*.md"
         continue-on-error: true
 
       - name: Upload report
