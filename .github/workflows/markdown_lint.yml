@@ -61,3 +61,4 @@ jobs:
           message: |
            **Hello MASTER**
           allow-repeats: false
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
