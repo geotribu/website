@@ -37,7 +37,7 @@ jobs:
         run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
 
       - name: Run markdownlint-cli
-        run: yarn markdownlint -i "content/**/template_*.md" -o "markdown-lint-report.txt" '${{ steps.file_changes.outputs.files_modified}}'
+        run: yarn markdownlint -i "content/**/template_*.md" -o "markdown-lint-report.txt" ${{ steps.file_changes.outputs.files_modified}}
         continue-on-error: true
 
       - name: Upload report
