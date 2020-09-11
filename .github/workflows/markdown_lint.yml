@@ -21,27 +21,27 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      # - name: Get modified files in the commit
-      #   run: git diff-tree --no-commit-id --name-only -r $GITHUB_SHA
-
-      - id: file_changes
+      - name: List files changes
+        id: file_changes
         uses: trilom/file-changes-action@v1.2.3
         with:
           output: ' '
 
-      - name: show off
-        run: |
-          echo '${{ steps.file_changes.outputs.files_modified }}'
-
       - name: Install markdown-cli
         run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
 
-      - name: Run markdownlint-cli
-        run: yarn markdownlint -i "content/**/template_*.md" -o "markdown-lint-report.txt" ${{ steps.file_changes.outputs.files_modified}}
+      - name: Run markdownlint-cli on new files
+        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added}}
+        continue-on-error: true
+
+      - name: Run markdownlint-cli on modified files
+        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-modified.txt" ${{ steps.file_changes.outputs.files_modified}}
         continue-on-error: true
 
       - name: Upload report
         uses: actions/upload-artifact@v2
         with:
-          name: markdown-lint-report.txt
-          path: markdown-lint-report.txt
+          name: markdown-lint-report
+          path: |
+            markdown-lint-report-added.txt
+            markdown-lint-report-modified.txt
