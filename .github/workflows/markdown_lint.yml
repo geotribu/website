@@ -4,8 +4,8 @@ name: Markdown Linter
 on:
   pull_request:
     branches: [ master ]
-    # paths:
-    #   - "content/**/*.md"
+    paths:
+      - "content/**/*.md"
 
 jobs:
     lint-markdown:
@@ -31,11 +31,11 @@ jobs:
         run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
 
       - name: Run markdownlint-cli on new files
-        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added}}
+        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }}
         continue-on-error: true
 
       - name: Run markdownlint-cli on modified files
-        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-modified.txt" ${{ steps.file_changes.outputs.files_modified}}
+        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-modified.txt" ${{ steps.file_changes.outputs.files_modified }}
         continue-on-error: true
 
       - name: Upload report
