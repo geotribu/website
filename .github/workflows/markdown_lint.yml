@@ -62,5 +62,3 @@ jobs:
            :boom: Erreurs repérées dans la syntaxe Markdown. Merci de corriger si besoin @${{ GITHUB_ACTOR }}.
           allow-repeats: false
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-
-
