@@ -4,6 +4,8 @@ name: Markdown Linter
 on:
   pull_request:
     branches: [ master ]
+    # paths:
+    #   - "content/**/*.md"
 
 jobs:
     lint-markdown:
@@ -18,6 +20,16 @@ jobs:
 
       - name: Check out code
         uses: actions/checkout@v2
+
+      # - name: Get modified files in the commit
+      #   run: git diff-tree --no-commit-id --name-only -r $GITHUB_SHA
+
+      - id: file_changes
+        uses: trilom/file-changes-action@v1.2.3
+
+      - name: show off
+        run: |
+          echo '${{ steps.file_changes.outputs.files_modified}}'
 
       - name: Install markdown-cli
         run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
