@@ -11,7 +11,7 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-      - name: Set up NodeJS (for serach index prebuilding)
+      - name: Set up NodeJS
         uses: actions/setup-node@v2.1.1
         with:
           node-version: '12'
@@ -22,5 +22,5 @@ jobs:
       - name: Install markdown-cli
         run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
 
-      - name: Run makrdownlint-cli
-        run: markdownlint -c .markdownlint.json -o "markdown-lint-report.txt" content/
+      - name: Run markdownlint-cli
+        run: yarn markdownlint -c .markdownlint.json -o "markdown-lint-report.txt" content/
