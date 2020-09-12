@@ -60,5 +60,5 @@ jobs:
         with:
           message: |
             :boom: Erreurs repérées dans la syntaxe Markdown. Merci de consulter le rapport du linter. :pray:
-            hello ${{ GITHUB_AUTHOR }}
+            hello ${{ env.GITHUB_AUTHOR }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
