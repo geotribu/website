@@ -34,7 +34,9 @@ jobs:
 
       - name: Run markdownlint-cli on new files
         id: mdl_added
-        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }}
+        run: |
+          mdl_result=$(yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }})
+          echo $?
 
       - name: Run markdownlint-cli on modified files
         id: mdl_modified
