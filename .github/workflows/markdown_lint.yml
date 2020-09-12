@@ -59,5 +59,8 @@ jobs:
         uses: mshick/add-pr-comment@v1
         with:
           message: |
-            :boom: Erreurs repérées dans la syntaxe Markdown. Merci de consulter le rapport du linter.
+            :boom: Erreurs repérées dans la syntaxe Markdown. Merci de consulter le rapport du linter. :pray:
+            ```
+            hello $GITHUB_AUTHOR
+            ```
           repo-token: ${{ secrets.GITHUB_TOKEN }}
