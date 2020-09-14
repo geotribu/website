@@ -4,7 +4,12 @@ arrange:
     - introduction.md
     - requirements.md
     - contribution_guide.md
+    - markdown_engine.md
+    - edit
+    - build_site
+    - publish
     - guides
     - online
     - local
+    - ...
     - archives

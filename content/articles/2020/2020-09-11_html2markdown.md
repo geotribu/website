@@ -2,15 +2,15 @@
 title: "Du HTML en Markdown (et vice-versa)"
 authors: "Julien Moura"
 categories: ["article", "tutoriel"]
-date: "2020-09-11 10:20"
-description: "Comment convertir les contenus récupérés de l'ancien site de Geotribu en Markdown (via markdownify)."
+date: "2020-09-14 10:20"
+description: "Convertir les contenus récupérés de l'ancien site de Geotribu en Markdown (via markdownify) : lingua franca du contenu web 2020."
 image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
 tags: "markdown,Python,BeautifulSoup,markdown,geotribu,histoire"
 ---
 
 # Vers la simplification de la contribution : le choix du Markdown
 
-:calendar: Date de publication initiale : 11 septembre 2020
+:calendar: Date de publication initiale : 14 septembre 2020
 
 **Mots-clés :** Python | Markdown | Beautifulsoup
 
@@ -18,22 +18,46 @@ tags: "markdown,Python,BeautifulSoup,markdown,geotribu,histoire"
 
 Dans le cadre de la série d'articles sur la renaissance de Geotribu (lire la [petite histoire de Geotribu](../2020-08-31_geotribu_histoire/)), on a vu comment [utiliser le web-scraping pour récupérer les anciens contenus](../2020-09-08_web-scraping_scrapy_geotribu/) depuis une sauvegarde locale ou l'[Internet Archive].
 
-Après tout cela, on a donc un beau cocktail *Web on The Beach* : HTML + CSS + JavaScript :cocktail:. C'est bien mais ce qui nous intéresse c'est de récupérer le contenu : le texte et les images. or, la structure, les scripts et les mécanismes de rendu (CSS...) sont encore trop intimement liés.
+Après cela, on a donc un beau cocktail *Web on The Beach* : HTML + CSS + JavaScript :cocktail:.
+
+![cocktail Gatsby](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/gif_cocktail_gatsby.webp "Il est frais mon cocktail Web on the Beach, il est frais !"){: loading=lazy }
+{: align=middle }
+
+C'est bien beau mais, à part réinstaller un Drupal avec le bon modèle de BDD, on en tirera pas grand chose. Et puis ce qui nous intéresse vraiment, le nectar de Geotribu c'est le contenu rédactionnel : le texte, les images, les bouts de code, les vidéos, etc. Or, la structure, les scripts et les mécanismes de rendu (CSS...) sont encore trop intimement liés.
 
 Dans cet article, on va voir pourquoi et comment on a choisi de passer sur une rédaction en Markdown. Au passage, on se refait un coup de web-scraping histoire d'enfoncer le clou :hammer:.
 
 ----
 
-## Markdown, lingua frinca du contenu éditorial en ligne
+## Markdown, lingua franca du contenu éditorial en ligne
 
-Surensemble de HTML, la syntaxe [Markdown] initialement très répandue pour
-Au revoir les bbcodes, rst, etc.
+![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png){: .img-rdp-news-thumb }
+
+Inspiré par le *plain-text email* ([texte brut dans un courriel en bon français](https://fr.wikipedia.org/wiki/Texte_brut#Texte_brut_dans_un_courriel)) ou encore le [ReStructuredText](https://fr.wikipedia.org/wiki/) (RST), la syntaxe [Markdown] est conçue pour être facile à lire, à écrire et à convertir, tout en prenant soin de ne pas casser les balises du HTML.
+
+Cette dernière caractéristique est essentielle puisque cela a facilité l'intégration de la syntaxe dans de nombreux formulaires webs ou services. Très utilisée par les développeurs pour les documentations, elle est désormais très intégrée dans les milieux professionnels et y compris grand public : Slack, WordPress, etc.
+Certains services, tels [Markdown Here](https://markdown-here.com/features.html), allant jusqu'à proposer de l'utiliser pour améliorer la rédaction des emails. Du côté universitaire, la syntaxe est également très répandue :
+
+- d'une part en étant quasiment un pré-requis pour les [notebooks Jupyter](https://jupyter.org/)
+- d'autre part car elle permet d'intégrer LateX et les syntaxes scientifiques. Exemple : <https://upmath.me/>.
+
+Bref, au revoir [BBCode](https://fr.wikipedia.org/wiki/BBCode), DokuWiki, [WikiTexte](https://fr.wikipedia.org/wiki/Wikitexte), etc. Bonjour [Markdown] :
+
+[![markdown exemple](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png "Exemple basique de la syntaxe markdown"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png){: data-mediabox="ligthbox-gallery" data-title="Exemple basiques de la syntaxe markdown rendue dans StackEdit."}
+
+### Une syntaxe, des rendus
+
+
 
 ----
 
 ## Du HTML au Markdown
 
-Une fois le HTML et les ressources liées (images...) récupérés, j'ai opté pour un stockage sous forme de Markdown. Pour cela, j'ai utilisé le package [markdowinify](https://github.com/matthewwithanm/python-markdownify) qui permet de transformer du HTML en Markdown.
+![mouton](https://cdn.geotribu.fr/img/logos-icones/divers/mouton.jpg "Bêêêêê"){: .img-rdp-news-thumb }
+
+Revenons à nos géo-moutons.
+
+Une fois le HTML et les ressources liées (images...) récupérés de Geotribu, j'ai opté pour un stockage sous forme de Markdown. Pour cela, j'ai utilisé le package [markdownify](https://github.com/matthewwithanm/python-markdownify) qui permet de transformer du HTML en Markdown.
 
 ## La conversion par l'exemple : rendre lisible un article du CNIG
 
