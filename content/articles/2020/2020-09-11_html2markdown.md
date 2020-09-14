@@ -51,7 +51,7 @@ A l'instar de n'importe quelle langue, qui plus est non standardisée, le rendu 
 
 !!! tip
 
-  Pour ne pas dupliquer ici du contenu existant, je vous renvoie vers l'article [Comprendre et tester le moteur de rendu du site](/contribuer/build_site/markdown_engine/).
+    Pour ne pas dupliquer ici du contenu existant, je vous renvoie vers l'article [Comprendre et tester le moteur de rendu du site](/contribuer/build_site/markdown_engine/).
 
 ----
 
