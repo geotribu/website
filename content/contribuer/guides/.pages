@@ -2,6 +2,7 @@ title: Guides de rédaction
 
 arrange:
     - markdown_basics.md
+    - markdown_quality.md
     - image.md
     - twitter.md
     - video.md
