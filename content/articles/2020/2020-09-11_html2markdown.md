@@ -90,7 +90,7 @@ En regardant [les sources de l'article](view-source:http://cnig.gouv.fr/?p=23807
 Avant de commencer, on installe ce qu'il nous manque :
 
 ```bash
-python -m pip install beautifulsoup4==4.9.* markdownify==0.5.* urllib3==1.25.*
+python -m pip install beautifulsoup4==4.9.* markdownify==0.5.2 urllib3==1.25.*
 ```
 
 ### Scraping et conversion à la volée
