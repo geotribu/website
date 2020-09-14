@@ -1,20 +1,17 @@
 ---
-Title: Guide de contribution à Geotribu
-Category: contribution
-Date: 2020-03-20 10:20
+title: "Guide de contribution"
+categories: ["contribution"]
+date: 2020-03-20 10:20
 description: "Guide de contribution au site collaboratif Geotribu : processus (git flow), modifier un contenu et guides spécifiques (images, vidéos, émojis...)"
-Tags: guide,contribuer,geotribu
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
+tags: guide,contribuer,geotribu
 ---
 
 # Guide de contribution
 
-!!! info
-
-    Page en cours de rédaction. Veuillez patienter...
-
 ## Processus (_workflow_)
 
-### 1. [Cloner le dépôt central](../local/local_edition_setup/#git) localement
+### 1. [Cloner le dépôt central](../edit/local_edition_setup/#git) localement
 
 ```bash
 git clone https://github.com/geotribu/website.git
@@ -111,11 +108,7 @@ Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publi
 
 ### Texte
 
-Coucher sa prose en markdown en s'appuyant sur :
-
-- [les bases](https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown/)
-- [utiliser des blocs stylés](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
-- [insérer du code](https://squidfunk.github.io/mkdocs-material/extensions/codehilite/)
+Voir [le guide dédié](../guides/markdown_basics).
 
 ### Ajouter une image
 
@@ -132,6 +125,14 @@ Voir [le guide dédié](../guides/video).
 ### Utiliser un emoji
 
 Voir [le guide dédié](../guides/emoji).
+
+### Créer des diagrammes UML
+
+Voir [le guide dédié](../guides/diagrams).
+
+### Signer ses contributions
+
+Voir [le guide dédié](../guides/authoring).
 
 ----
 

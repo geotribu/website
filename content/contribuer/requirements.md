@@ -27,20 +27,8 @@ La rédaction de contenu requiert la maîtrise de la syntaxe _[markdown]_ qui pe
 
 Il y a également certaines limites (dimensionnement ou alignement des images par exemple) mais qui sont parfois comblées soit par des [extensions](https://facelessuser.github.io/pymdown-extensions/) de la syntaxe de base (exemple d'[**attr_list**](https://python-markdown.github.io/extensions/attr_list/) qui permet d'ajouter des balises de style), soit par d'autres langages (CSS, HTML...).
 
-!!! warning
-    Le _[markdown]_ est une syntaxe extensible et son rendu dépend de l'outil utilisé pour l'implémenter. Il existe donc des différences entre le rendu :
-
-    - dans l'onglet `Preview` de [GitHub],
-    - celui dans un éditeur [Visual Studio Code]
-    - celui de l'outil utilisé pour le rendu final [MkDocs / Material].
-
-    C'est ce dernier qui fait foi, d'où l'intérêt de travailler en local.
-
-Ressources :
-
-- [les bases](https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown/)
-- [utiliser des blocs stylés](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
-- le [markdown dans Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+[Prochaine étape : rédiger du Markdown :fontawesome-solid-step-forward:](/contribuer/guides/markdown_basics/){: .md-button }
+{: align=middle }
 
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/download/

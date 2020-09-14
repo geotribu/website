@@ -117,7 +117,7 @@ Après quelques litres de collyre en lisant le HTML/CSS et les messages d'erreur
 '/web/20170222025421/http://www.geotribu.net/GeoRDP/20170127'
 ```
 
-On a donc compris comment isoler l'url relative de chaque revue de presse :victory: !
+On a donc compris comment isoler l'url relative de chaque revue de presse :v: !
 
 #### Décortiquer les contenus
 
@@ -181,7 +181,7 @@ Ensuite, cela fatigue les serveurs de l'[Internet Archive] : c'est pas très fai
 
 Maintenant on sait comment moissonner un site web, en l'occurence l'ancien Geotribu. Dans le prochain article, on verra quoi faire de tous cette soupe de HTML/CSS/Javascript/Images.
 
-[A suivre (11 septembre) : convertir des fichiers HTML en Markdown :fontawesome-solid-step-forward:](#){: .md-button }
+[A suivre (11 septembre) : convertir des fichiers HTML en Markdown :fontawesome-solid-step-forward:](../2020-09-11_html2markdown){: .md-button }
 {: align=middle }
 
 ----
