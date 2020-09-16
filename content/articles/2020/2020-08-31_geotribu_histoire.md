@@ -2,7 +2,7 @@
 title: "Histoire de Geotribu : vie, mort et renaissance."
 authors: "Julien Moura"
 categories: ["article"]
-date: "2020-08-09 10:20"
+date: "2020-08-31 10:20"
 description: "Invité à faire un retour d'expérience sur l'aventure Geotribu, voici une petite histoire du site : naissance, jeunesse, vie, mort... et renaissance en 2020. Souvenirs, souvenirs et avenir !"
 hero: "Une brève histoire de Geotribu."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_frise_chrono_2006-2017.png"
@@ -102,9 +102,8 @@ En racontant notre petite histoire aux auditeur/ices du CQP, je me suis aperçu 
 
 Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent suffisamment en envergure pour animer leur écosystème (ou du moins une partie), voire le structurer dans le cadre de projets plus gros tels [GeoRezo] mais qui restent fragiles. En effet, si le bénévolat garantit une certaine indépendance, il peut aussi être synonyme de faible résilience. A l'instar de nombreux projets, surtout libres et gratuits, Geotribu repose sur quelques individus seulement. Dès lors qu'ils n'ont plus le temps, le goût ou la motivation, l'initiative s'arrête. Aucune fatalité ou amertume à avoir, après tout l'éphémère ça crée des souvenirs !
 
-
-
-[A suivre (7 septembre) : le web-scraping à la rescousse :fontawesome-solid-step-forward:](#){: .md-button }
+[Suite : le web-scraping à la rescousse :fontawesome-solid-step-forward:](../2020-09-08_web-scraping_scrapy_geotribu/){: .md-button }
+{: align=center }
 
 ----
 

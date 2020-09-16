@@ -17,8 +17,8 @@ Liste à puces :
 
 Image :
 
-![TITRE DE REMPLACEMENT DE L'IMAGE](https://www.trekmag.com/media/news/2018/05/ign-home.jpg){: loading=lazy }
+![TITRE DE REMPLACEMENT DE L'IMAGE](https://www.trekmag.com/media/news/2018/05/ign-home.jpg "Légende de l'image"){: loading=lazy }
 
-Vidéo youtube via  iframe (obligatoirement en https) :
+Exemple pour une vidéo youtube via iframe (obligatoirement en https) :
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G_oUBeLLjKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
