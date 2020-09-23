@@ -42,140 +42,175 @@ Il est plus connu pour être le créateur de MagicaVoxel, logiciel de création 
 
 Ce sont les créations d'Alasdair Rae qui m'ont vraiment donné envie de tester Aerialod, notamment [grâce à ses tutoriels.]([http://www.statsmapsnpix.com/2020/03/making-3d-landscape-and-city-models.html?m=1](http://www.statsmapsnpix.com/2020/03/making-3d-landscape-and-city-models.html?m=1))
 
-Le principe général du logiciel est d'afficher une extrusion s'appuyant sur la valeur des pixels d'une image. On peut naturellement utiliser un MNT pour réaliser cela, mais tout fichier raster peut être utilisé en théorie (même si je n'ai pour l'instant testé que des MNT 😁). 
+Le principe général du logiciel est d'afficher une extrusion s'appuyant sur la valeur des pixels d'une image. On peut naturellement utiliser un MNT pour réaliser cela, mais tout fichier raster peut être utilisé en théorie (même si je n'ai pour l'instant testé que des MNT 😁).
 
-A la demande générale 🥁 (de Julien Moura...), j'écris cet article afin d'expliquer en quoi ce "petit" logiciel est puissant et très simple d'utilisation, grâce à un côté hyper ludique. On peut rapidement passer du temps à jouer avec des angles de caméra, des couleurs, des ouvertures, des zooms et des rendus différents. Je ne prétends pas en être spécialiste, et ne pourrait donc pas apporter des détails poussés sur chaque fonctionnalité. 
+A la demande générale 🥁 (de Julien Moura...), j'écris cet article afin d'expliquer en quoi ce "petit" logiciel est puissant et très simple d'utilisation, grâce à un côté hyper ludique. On peut rapidement passer du temps à jouer avec des angles de caméra, des couleurs, des ouvertures, des zooms et des rendus différents. Je ne prétends pas en être spécialiste, et ne pourrait donc pas apporter des détails poussés sur chaque fonctionnalité.
 En revanche, cet article a pour but d'être une entrée en matière consistante, permettant de comprendre les principes de fonctionnement généraux de l'application, et vous permettre, j'en suis sûr de créer de beaux visuels !
 
-----
-
-## Markdown, lingua franca du contenu éditorial en ligne
-
-![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png){: .img-rdp-news-thumb }
-
-Inspiré par le *plain-text email* ([texte brut dans un courriel en bon français](https://fr.wikipedia.org/wiki/Texte_brut#Texte_brut_dans_un_courriel)) ou encore le [ReStructuredText](https://fr.wikipedia.org/wiki/) (RST), la syntaxe [Markdown] est conçue pour être facile à lire, à écrire et à convertir, tout en prenant soin de ne pas casser les balises du HTML.
-
-Cette dernière caractéristique est essentielle puisque cela a facilité l'intégration de la syntaxe dans de nombreux formulaires webs ou services. Très utilisée par les développeurs pour les documentations, elle est désormais très intégrée dans les milieux professionnels et y compris grand public : Slack, WordPress, etc.
-Certains services, tels [Markdown Here](https://markdown-here.com/features.html), allant jusqu'à proposer de l'utiliser pour améliorer la rédaction des emails. Du côté universitaire, la syntaxe est également très répandue :
-
-- d'une part en étant quasiment un pré-requis pour les [notebooks Jupyter](https://jupyter.org/)
-- d'autre part car elle permet d'intégrer LateX et les syntaxes scientifiques. Exemple : <https://upmath.me/>.
-
-Bref, au revoir [BBCode](https://fr.wikipedia.org/wiki/BBCode), DokuWiki, [WikiTexte](https://fr.wikipedia.org/wiki/Wikitexte), etc. Bonjour [Markdown] :
-
-[![markdown exemple](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png "Exemple basique de la syntaxe markdown"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png){: data-mediabox="ligthbox-gallery" data-title="Exemple basiques de la syntaxe markdown rendue dans StackEdit."}
-
-### Une syntaxe, des rendus
-
-A l'instar de n'importe quelle langue, qui plus est non standardisée, le rendu HTML du Markdown dépend de l'implémentation qui en est faite : technologie, finalité et philosophie du processus de conversion, etc. Ainsi, il y aura des différences à l'affichage ou au traitement.
-
-!!! tip
-
-    Pour ne pas dupliquer ici du contenu existant, je vous renvoie vers l'article [Comprendre et tester le moteur de rendu du site](/contribuer/build_site/markdown_engine/).
+IMAGE
 
 ----
 
-## Du HTML au Markdown
+## Installation du logiciel
 
-![mouton](https://cdn.geotribu.fr/img/logos-icones/divers/mouton.jpg "Bêêêêê"){: .img-rdp-news-thumb }
+A petit logiciel, interface hyper simple !
 
-Revenons à nos géo-moutons.
+Elle se décompose en 3 parties : Le panneau de gauche gère les options principalement autour de la lumière, le panneau de droite gère plutôt le rendu caméra et le panneau central affiche le résultat.
 
-Une fois le HTML et les ressources liées (images...) récupérés de Geotribu, j'ai opté pour un stockage sous forme de Markdown. Pour cela, j'ai utilisé le package [markdownify](https://github.com/matthewwithanm/python-markdownify) qui permet de transformer du HTML en Markdown.
+IMAGE
 
-Vu qu'on a déjà passé un article sur le projet Scrapy utilisé pour récupérer les anciens contenus depuis l'Internet Archive, je ne vais pas de nouveau détailler le [_pipeline_](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) mais plutôt démontrer comment appliquer la même mécanique facilement :
+### Panneau de gauche
 
-1. aspirer un site web avec du web-scraping
-2. traiter le HTML pour décortiquer le contenu :
-    - extraire le texte et les styles du HTML --> transformer en Markdown
-    - extraire les medias statiques (images, etc.) pour les stocker dans un espace tiers (CDN)
+IMAGE
 
-## La conversion par l'exemple : rendre lisible un article du CNIG
+### Panneau du centre
 
-L'usage de _markdownify_ est simple. Pour s'en rendre compte, testons cela rapidement avec un petit objectif pour l'occasion : transformer en markdown [le dernier article du site du CNIG](http://cnig.gouv.fr/?p=23807) pour le lire sans saigner des yeux.
+La partie centrale, en plus d'afficher le rendu, permet d'afficher le nom des options en bas et le paramétrage de la caméra : vue personnelle, freestyle, orthogonale ou isométrique.
 
-Au passage, on en profite pour essayer deux autres bibliothèques pour ce genre de cas de figure :
+IMAGE
 
-- [Beautifulsoup](https://www.crummy.com/software/BeautifulSoup/) : pour le parsing du HTML
-- [urllib3](https://urllib3.readthedocs.io/) : pour facilement faire des requêtes HTTP ; _requests_ ou _httpx_ étant surdimensionnés pour notre besoin, mais avec la flemme de gérer les détails (décodage, etc.)
+### Panneau de droite
 
-### Structure
+IMAGE
 
-En regardant [les sources de l'article](view-source:http://cnig.gouv.fr/?p=23807), on sait que le contenu intéressant est dans la div de class `post-content` :
+Une dernière partie encore non évoquée se trouve en haut à droite du logiciel avec 4 boutons.
 
-[![Source HTML CNIG](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png "Les sources de l'article du CNIG "){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png){: data-mediabox="scraping" data-title="Sources d'un article du site du CNIG."}
+IMAGE
 
-### Prérequis
+- Contrairement à ce que pourrait laisser penser le premier bouton, impossible pour l'instant d'enregistrer un projet Aerialod, il sert uniquement à enregistrer l'image de base en png
+- Le 2ème en revanche est plus évocateur et permet d'afficher une image
+- Le 3ème (stitch map) permet de charger un ensemble d'images, pratique !
+- Et le 4ème permet de repartir d'une feuille blanche
 
-Avant de commencer, on installe ce qu'il nous manque :
+Si tout ça n'est pour l'instant pas très clair, pas d'inquiétude, ça vient très vite avec la pratique !
 
-```bash
-python -m pip install beautifulsoup4==4.9.* markdownify==0.5.2 urllib3==1.25.*
-```
+Dans la suite de cet article, lorsque nous parlerons d'une fonctionnalité particulière, je donnerai le nom qui s'affiche au survol de la souris, en bas du panneau principal.
+De plus, chaque capture d'écran affichera également les paramètres appliqués, afin que vous puissiez suivre et reproduire les manipulations.
 
-### Scraping et conversion à la volée
+IMAGE
 
-Puis cela tient en quelques lignes dûment commentées :
+Il est possible de trouver un certain nombre de MNT en open data sur internet, notamment sur [data.gouv.fr](https://www.data.gouv.fr/fr/search/?q=mnt) pour le territoire français.
 
-```python
-#! python3
+## Prise en main
 
-# -- Imports
+Ceci étant dit, allons-y avec notre première image importée dans Aerialod.
+Le logiciel peut lire plusieurs types de fichiers (png, jpg, tif, dtm, asc). A ce jour, je n'ai testé que du tif, car c'est généralement dans ce genre de format, que les MNT sont enregistrés.
 
-# Bibliothèque standard
-from pathlib import Path
+Attention à la taille du fichier que vous souhaitez lire. Le logiciel ne permet pas de lire de très gros tif.
 
-# Packages tiers
-import urllib3
-from bs4 import BeautifulSoup
-from markdownify import markdownify
+Pour l'exercice, j'ai téléchargé le [MNT LIDAR de Bora Bora 🤤.](https://www.data.gouv.fr/fr/datasets/r/92216da9-64a1-4522-8858-7e2537cab60d)
 
-# -- Variables
+Pour l'afficher, vous pouvez l'ouvrir en cliquant sur le bouton en haut à droite *Open map* ou bien plus simplement en faisant un glisser-déposer depuis un explorateur.
 
-in_url = "http://cnig.gouv.fr/?p=23807"
-out_filepath = Path("./cnig_23807.md")
+Aerialod l'ouvre alors (s'il n'est pas trop gros).
 
-# -- Programme principal
+IMAGE
 
-# d'abord on télécharge la page
-http = urllib3.PoolManager()
-page = http.request('GET', in_url)
+Quelques éléments de base pour la manipulation du rendu :
 
-# on parse le html
-soup = BeautifulSoup(page.data, "html.parser")
+- Le clic molette de la souris + déplacement permet de bouger la carte
+- Le clic droit de la souris + déplacement permet de changer l'angle de vue
+- La molette de la souris zoome/dézoome par rapport au centre du panneau central
 
-# on extrait ce qu'il y a dans la classe post-content
-post_content = soup.find("div", {"class": "post-content"})
+Avec ça, vous pouvez facilement gérer le déplacement de la caméra sur votre carte.
 
-# on transforme en markdown en spécifiant le style de titre avec des '#'
-out_md = markdownify(post_content, heading_style="ATX", autolinks=False)
+A noter que chaque modification d'un paramètre (fenêtre gauche ou droite, ou déplacement sur la carte) imposera un temps de chargement (assez rapide), afin que le logiciel recalcule le rendu. Cela rend le logiciel très réactif car à chaque modification, vous verrez quasi-instantanément le résultat !
 
-# on écrit notre fichier
-with out_filepath.open("w", encoding="UTF8") as fifi:
-    fifi.write(out_md)
-```
+Dans un premier temps, vous pouvez modifier la couleur du terrain sur la fenêtre de droite (*Base color*), ainsi que celle du terrain, dans la fenêtre de gauche (*Ground color*).
 
-Le résultat, ainsi que le code, sont disponibles dans [ce gist](https://gist.github.com/Guts/a77e9e378b7157f568077ab47937a9d9).
+Il est ensuite possible de jouer sur la hauteur de rendu des pixels grâce à l'option *Scale* (panneau de droite), afin d'exagérer un peu le relief. Cela peu donner quelque chose comme ça :
+
+IMAGE
+
+Nous avons déjà une première idée (exagérée certes, mais c'est quand même beau comme ça 😎) du relief de Bora Bora.
+
+On peut maintenant jouer sur les angles du soleil pour avoir un premier rendu différent, dans la fenêtre de gauche (*Pitch Angle of Sun Light* / *Yaw Angle of Sun Light*).
+
+IMAGE
+
+Il est possible de changer le mode de vue grâce au bouton en bas à droite du panneau central, pour avoir une idée de l'horizon, en passant par exemple sur la *Perspective camera*.
+
+Si nous souhaitons nous rapprocher un peu de la "réalité", il faudrait que le niveau d'eau soit plus haut, car nous pouvons observer que le lidar a pris des mesures sous l'eau à l'intérieur du lagon. Même si cela est également intéressant ! On peut notamment observer des structures relativement organisées à certains endroits. Si un lecteur peut nous renseigner sur la nature de ces reliefs sous marins, il gagnera notre gratitude éternelle 😉.
+Pour cela, il suffit de modifier l'*Offset* dans le panneau de droite.
+
+IMAGE
+
+Bien, fini de jouer ! Diminuons l'*Offset* pour relever le niveau de la mer.
+
+Etant donné que je connais très bien Bora-Bora 😂 (merci Google Maps...), "-77" apparait comme une valeur d'*Offset* pertinente pour cette représentation.
+
+IMAGE
+
+Pour rappel, en réalisant un clic-droit souris et en la bougeant vers le haut vous devriez voir l'horizon apparaitre (si vous êtes bien passés auparavant en vue Perspective avec le bouton en bas à droite du panneau central).
+
+Afin de rajouter un peu de réalisme, vous pouvez choisir un autre type de ciel appelé *Atmospheric Scattering*. Cela va jouer sur la lumière ambiante et le rendu, et nous avons maintenant la possibilité de rendre visible le soleil, ce qui peut donner un effet sympa. Pour ce faire, dans le panneau de gauche, activez le bouton rond *Show Sun Disk*.
+
+IMAGE
+
+Ici l'azimut du soleil est assez faible, nous permettant de l'apercevoir, tout en créant des ombres dignes d'une aube peu éclairante. 2 solutions pour y voir un peu plus clair :
+
+- vous souhaitez garder visible le soleil et vous modifiez l'exposition (panneau de droite *Exposure*)
+- vous ne voyez pas d'intérêt à garder visible directement le soleil et vous modifiez son azimut. Plus celui-ci sera proche de 90 (degrés), et plus vous imiterez un moment de la journée proche de midi donc très exposé.
+
+IMAGE
+
+La modification de la valeur *Rayleigh* (panneau de gauche) permet de jouer sur la diffusion de la lumière et certains effets peuvent être intéressants. [Pour en savoir plus sur la diffusion Rayleigh, une Wikipedia-pause s'impose !]([https://fr.wikipedia.org/wiki/Diffusion_Rayleigh](https://fr.wikipedia.org/wiki/Diffusion_Rayleigh))
+
+La partie du panneau de gauche appelé *Sample* est un ensemble d'effet permettant plus ou moins de lisser l'image et d'avoir un rendu plus "propre". Jusque là, je les coche tous...
+
+L'option *Grid*" (panneau de gauche) permet l'affichage d'une grille sur le terrain de base ou sur le rendu directement. Vous pouvez sélectionner l'épaisseur du trait ainsi que son espacement.
+
+IMAGE
+
+Si on zoome un peu, on peut s'apercevoir que le rendu est très cubique. On peut l'exagérer en modifiant le Step et le Lod (panneau de droite) par exemple. Mais nous pouvons également tenté de l'aplatir en sélectionnant le rendu Bilinear Surface Mode (panneau de droite toujours).
+
+IMAGE
+
+IMAGE
+
+IMAGE
+
+Tout ca fait partie des multiples paramètres sur lesquels il est possible de jouer afin d'avoir des rendus relativement différents.
+
+Dernière chose concernant les effets, sil est possible de réaliser un focus sur un élément particulier que vous souhaiteriez mettre en valeur (et donc flouter les autres) en cliquant sur cet élément.
+Vous avez ensuite la possibilité de paramétrer cet effet grâce à la partie *Lens* (panneau de droite).
+
+IMAGE
+
+IMAGE
+
+Enfin, Aerialod offre la possibilité d'exporter vos rendus grâce à la partie Image du panneau de droite. Il ne vous reste qu'à sélectionner la hauteur et la largeur souhaitées, puis cliquez sur Render et attendez que le logiciel fasse le reste ;).
+
+IMAGE
+
+Deux autres rendus avec la donnée LIDAR sur l'Île d'Oléron (un peu de chauvinisme 😄) :
+
+IMAGE
+
+IMAGE
 
 ----
 
 ## Conclusion
 
-Evidemment, le résultat est loin d'être parfait et cela demande quelques ajustements et améliorations : déterminer le nom du fichier selon le titre de la page, nettoyer les espacements avant les paragraphes, etc. D'ailleurs, ce nettoyage manuel est toujours en cours pour une partie des contenus de Geotribu.
+En guise de conclusion, je me permettrai simplement de faire une liste rapide des avantages et inconvénients à utiliser Aerialod :
 
-Cela démontre bien à la fois la faisabilité et les limitations du traitement automatisé, qu'on peut résumer ainsi :
+### Avantages à utiliser Aerialod
 
-```mermaid
-graph TD;
-  A[Site archivé]-->B[Scraping];
-  B-->C[HTML];
-  B-->D[Images];
-  C-->E[Markdown];
-  D-->F[CDN];
-```
+- Logiciel libre, gratuit, de petite taille (<30Mo) et très performant pour un rendu rapide ! (déjà 4 énormes avantages en un !)
+- Vraiment simple d'utilisation, après seulement quelques heures de pratique autodidacte, on peut sortir des rendus intéressants
+- Hyper ludique ! On se prend très rapidement au jeu de modifier les paramètres un par un et de tester différents angles de caméra. Tout en visualisant le résultat quasiment directement.
 
-[A suivre : du Markdown aux sites statiques :fontawesome-solid-step-forward:](#){: .md-button }
-{: align=middle }
+### Inconvénients à utiliser Aerialod
+
+- Pour l'instant, il n'existe pas de version Mac, désolé pour les pommes-addict
+- Impossible d'enregistrer des projets, et donc de revenir travailler dessus par la suite
+- Le logiciel ne lit pas les fichiers "trop" volumineux
+- Impossible de draper une texture sur un relief obtenu, comme Blender le propose par exemple
+- Pas de Ctrl+Z ou un quelconque retour en arrière sur un paramètre modifié, donc faites attention lorsque vous commencez à être content de votre rendu et que vous continuez à faire des modifications. Ca peut être frustrant...
+- Peu d'ajouts pour l'instant sur le logiciel, espérons et croisons les doigts qu'ephtracy lise les différents commentaires des personnes utilisant Aerialod ;)
+
+Libre à vous de faire jouer votre imagination et votre sens artistique, et n'hésitez pas à interagir dans les commentaires ou sur Twitter !!!
 
 ----
 
