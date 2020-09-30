@@ -3,7 +3,7 @@
 ![Deploy to Github Pages](https://github.com/geotribu/website/workflows/Deploy%20to%20Github%20Pages/badge.svg)
 ![Pull Request Checker](https://github.com/geotribu/website/workflows/Pull%20Request%20Checker/badge.svg)
 
-Sources et contenus du site de Geotribu, accessible via les URLs suivantes :
+Sources Code et contenus du site de Geotribu, accessible via les URLs suivantes :
 
 - <https://static.geotribu.fr>
 - <http://geotribu.fr>
