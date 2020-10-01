@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:3.8-alpine an amaging project
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
