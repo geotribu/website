@@ -3,13 +3,13 @@ FROM python:3.8-alpine
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-# Set build directory
+# Set Build Directory
 WORKDIR /tmp
 
-# Install pip requirements
+# Install pip Requirements
 ADD requirements.txt .
 
-# Perform build and cleanup artifacts
+# Perform build and Cleanup Artifacts
 RUN \
   apk add --no-cache \
     git \
@@ -20,5 +20,5 @@ RUN \
   && apk del .build gcc musl-dev \
   && rm -rf /tmp/*
 
-# Set working directory
-WORKDIR /app
+# Set Working Directory
+WORKDIR /App
