@@ -1,6 +1,6 @@
 title: Articles
 
-arrange:
+nav:
     - index.md
     - "2020"
     - "2015"

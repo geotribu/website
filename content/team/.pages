@@ -1,6 +1,6 @@
 title: L'équipe
 
-arrange:
+nav:
     - index.md
     - ...
     - archives
