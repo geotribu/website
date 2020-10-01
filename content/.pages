@@ -1,4 +1,4 @@
-arrange:
+nav:
     - index.md
     - acknowledgements.md
     - install_webapp.md
