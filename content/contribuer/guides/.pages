@@ -1,6 +1,6 @@
 title: Guides de rédaction
 
-arrange:
+nav:
     - markdown_basics.md
     - markdown_quality.md
     - image.md

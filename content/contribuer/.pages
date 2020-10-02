@@ -1,6 +1,6 @@
 title: Contribuer
 
-arrange:
+nav:
     - introduction.md
     - requirements.md
     - contribution_guide.md
