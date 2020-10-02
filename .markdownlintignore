@@ -1,0 +1,4 @@
+.*
+**/*.yml
+**/template_*.md
+node_modules/
