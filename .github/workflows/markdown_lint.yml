@@ -2,10 +2,14 @@ name: Markdown Linter
 
 # Trigger
 on:
-  pull_request:
+  pull_request_target:
     branches: [ master ]
     paths:
       - "content/**/*.md"
+
+# Environment variables
+env:
+  GITHUB_AUTHOR: ${{ github.actor }}
 
 jobs:
     lint-markdown:
@@ -54,11 +58,22 @@ jobs:
 
       # -- USER INFORMATION --------------------------------------------------
       - name: Comment PR - Fail
-        id: pr_comment
+        id: pr_comment_bad
         if: failure()
         uses: mshick/add-pr-comment@v1
         with:
           message: |
             :boom: Erreurs repérées dans la syntaxe Markdown.
-            Merci de consulter le rapport du linter (téléchargeable comme artifact). :pray:
+            @${{ env.GITHUB_AUTHOR }} merci de consulter le rapport du linter (téléchargeable comme artifact). :pray:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-repeats: true
+
+      - name: Comment PR - Success
+        id: pr_comment_good
+        if: success()
+        uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            :tada: Le markdown a l'air tout propre !
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-repeats: true
