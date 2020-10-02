@@ -23,6 +23,7 @@
 ### Images
 
 - [ ] les images téléversées sur le CDN n'ont pas de caractère spécial dans leur nom de fichier (espace, accent, etc.)
+- [ ] les images sont hébergées sur des sites sécurisés (HTTPS)
 - [ ] chaque news a une vignette
 - [ ] les images (sauf les vignettes) ont l'attribut `loading` défini sur `lazy` (cf. [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading) et [guide material-mkdocs](https://squidfunk.github.io/mkdocs-material/reference/images/#image-lazy-loading))
 - [ ] accessibilité : chaque image a un texte de remplacement (entre les crochets) et un titre lisible par les outils d'assistance. Bref, qui respecte la [syntaxe générale](https://static.geotribu.fr/contribuer/guides/image/#syntaxe-generale)
