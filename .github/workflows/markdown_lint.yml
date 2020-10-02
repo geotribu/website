@@ -2,7 +2,7 @@ name: Markdown Linter
 
 # Trigger
 on:
-  pull_request_target:
+  pull_request:
     branches: [ master ]
     paths:
       - "content/**/*.md"
