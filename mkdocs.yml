@@ -57,8 +57,8 @@ theme:
   search_index_only: true
 
   features:
-    - tabs
-    - instant
+    - navigation.tabs
+    - navigation.instant
   font: false
   icon:
     repo: fontawesome/brands/github-alt
