@@ -29,6 +29,8 @@ J'avais abouti à un petit script Powershell et vu que j'avais trouvé cela prat
 
 On l'oublie souvent (ou on ne le sait tout simplement pas, comme moi pendant de longues et heureuses années) mais les installateurs sont d'abord des outils en ligne de commande (des [CLIs](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande) comme disent les grandes personnes) qui proposent en prime une interface graphique... qui est rarement mieux qu'un concours de clics sur `Suivant`.
 
+![OSGeo4W QGIS](https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/osgeo4w_qgis.png "OSGeo for Windows et QGIS"){: .img-center loading=lazy }
+
 ### --help ex machina
 
 En regardant [l'aide de l'exécutable](https://trac.osgeo.org/osgeo4w/wiki/CommandLine), on s'aperçoit qu'il est possible de passer un certain nombre d'arguments :
