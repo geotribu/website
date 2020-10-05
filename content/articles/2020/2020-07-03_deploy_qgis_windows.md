@@ -16,7 +16,7 @@ tags: qgis,installation,osgeo,powershell,deploiement,setup,windows,chocolatey
 
 L'installation et la mise à jour de QGIS peuvent être rébarbatives, notamment sous Windows où il n'est pas possible de profiter d'une mise à jour via une simple ligne de commande (`apt` mon amour :heart:)... Il y a quelques mois de cela, je cherchais à automatiser l'installation et la configuration de QGIS sur Windows et j'avais donc creusé du côté de [l'installateur de l'OSGeo](https://qgis.org/fr/site/forusers/download.html).
 
-J'avais abouti à un petit script Powershell et vu que j'avais trouvé cela pratique, je me l'étais mis de côté sur [Gist](https://gist.github.com/Guts/6303dc5eb941eb24be3e27609cd46985). Fidèle au *Geotribu Spirit <span class="copyleft">&copy;</span>*, pourquoi ne pas partager le résultat mais (surtout) la démarche ? :wink:
+J'avais abouti à un petit script Powershell et vu que j'avais trouvé cela pratique, je me l'étais mis de côté sur [Gist](https://gist.github.com/Guts/6303dc5eb941eb24be3e27609cd46985). Fidèle au *Geotribu Spirit* :copyright:{: .copyleft }, pourquoi ne pas partager le résultat et (surtout) la démarche ? :wink:
 
 !!! info "Prérequis"
 
