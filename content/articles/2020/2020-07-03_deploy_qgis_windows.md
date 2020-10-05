@@ -19,7 +19,6 @@ L'installation et la mise à jour de QGIS peuvent être rébarbatives, notamment
 J'avais abouti à un petit script Powershell et vu que j'avais trouvé cela pratique, je me l'étais mis de côté sur [Gist](https://gist.github.com/Guts/6303dc5eb941eb24be3e27609cd46985). Fidèle au *Geotribu Spirit* :copyright:{: .copyleft }, pourquoi ne pas partager le résultat et (surtout) la démarche ? :wink:
 
 !!! info "Prérequis"
-
     - une machine avec Windows et Powershell
     - droits administrateur
     - droits d'exécution de scripts, comme pour les environnements virtuels Python (voir [la doc Microsoft](https://docs.microsoft.com/fr-fr/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7) ou [cet article](/articles/2020/2020-06-19_setup_python/#autoriser-lutilisation-des-environnements-virtuels)) : `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
@@ -140,7 +139,6 @@ Après un avoir regardé de plus près les options de l'installateur [OSGeo4W], 
 Concrètement, les packages sont téléchargés dans le dossier temporaire de l'utilisateur (classiquement : `C:\Users\USERNAME\AppData\Local\Temp\{url_site}`) puis sont décompressés et déplacés vers le dossier habituel de l'installateur : `C:\OSGeo4W64`. Il est possible de modifier ces deux emplacements via respectivement les options `--local-package-dir` et `--root`.
 
 !!! tip "Serveurs (sites) de téléchargement"
-
     L'option `-s/--site` est répétable afin de pouvoir passer plusieurs serveurs (comme dans l'interface graphique) et les URLs doivent faire partie de ce fichier `https://download.osgeo.org/osgeo4w/mirrors.lst`.
 
 ----
