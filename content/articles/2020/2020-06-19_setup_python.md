@@ -3,8 +3,8 @@ title: "Python - Configuration sur Windows et outillage"
 authors: Julien Moura
 category: article
 date: 2020-06-19 10:20
-description: "Ma configuration et mon outillage pour Python en 2020."
-hero: "Configuration de Python sous Windows et outillage de base."
+description: "Configuration et outillage de base pour développer en Python en 2020, avec un focus sur le travail sous Windows."
+image: "https://cdn.geotribu.fr/img/tuto/python_windows/python_windows_installer_path_length.jpg"
 tags: python,tooling,setup,windows
 ---
 
