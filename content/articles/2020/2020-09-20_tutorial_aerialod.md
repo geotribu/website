@@ -14,6 +14,9 @@ tags: "carte3D,aerialod,rendu3D"
 
 **Mots-clés :** Aerialod | Cartes3D
 
+![oceania forest](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg "exemple aerialod Oceania foret"){: loading=lazy }
+{: align=middle }
+
 ## Introduction
 
 Lorsqu'on parle de cartographie 3D, des choses m'arrivent pèle mêle en tête.
@@ -24,17 +27,16 @@ Côté logiciel, QGIS, avec le plug in QGIS2threeJS qui permet depuis un moment 
 Des noms et leurs visuels me viennent également :
 
 - Sean Conway réalise des cartes visuellement impressionnantes. Il travail pour Quantum Spatial aux Etats-Unis, en tant que spécialiste orthophoto. Et au vu de ses créations, il a clairement un sacré sens artistique ! Il utilise notamment QGIS et Blender pour ses rendus. Vous pourrez aller admirer son travail [sur son profil Twitter.]([https://twitter.com/geo_spatialist?s=20](https://twitter.com/geo_spatialist?s=20))
-IMAGE
 
-IMAGE
+![france geologique](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png "Carte géologique France 3D"){: loading=lazy }
+{: align=middle }
+*[Carte Géologique de la France, à l'échelle du millionième, Exécutée en utilisant les documents publiés par le Service de la Carte géologique détaillée de la France - Ministère des Travaux Publics - 1905 /](https://twitter.com/geo_spatialist/status/1257352618705387526)*
 
-- Alasdair Rae [https://twitter.com/undertheraedar?s=09](https://twitter.com/undertheraedar?s=09) qui a notamment produit des cartes 3D avec la densité de population comme donnée entrante par exemple
+- [Alasdair Rae](https://twitter.com/undertheraedar?s=09) qui a notamment produit des cartes 3D avec la densité de population comme donnée entrante par exemple
 
-IMAGE
-Densité de population globale / [https://twitter.com/undertheraedar/status/1259086700225146881](https://twitter.com/undertheraedar/status/1259086700225146881)
-
-IMAGE
-MiniScale raster relief maps of Great Britain / [http://www.statsmapsnpix.com/2019/11/amazing-3d-rendering-with-aerialod.html](http://www.statsmapsnpix.com/2019/11/amazing-3d-rendering-with-aerialod.html)
+![population mondiale](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png "Population mondiale pics Alasdair rae"){: loading=lazy }
+{: align=middle }
+*[Densité de population globale](https://twitter.com/undertheraedar/status/1259086700225146881)*
 
 Il utilise le logiciel libre Aerialod, développé par [ephtracy](https://twitter.com/ephtracy?s=09)
 
@@ -47,7 +49,8 @@ Le principe général du logiciel est d'afficher une extrusion s'appuyant sur la
 A la demande générale 🥁 (de Julien Moura...), j'écris cet article afin d'expliquer en quoi ce "petit" logiciel est puissant et très simple d'utilisation, grâce à un côté hyper ludique. On peut rapidement passer du temps à jouer avec des angles de caméra, des couleurs, des ouvertures, des zooms et des rendus différents. Je ne prétends pas en être spécialiste, et ne pourrait donc pas apporter des détails poussés sur chaque fonctionnalité.
 En revanche, cet article a pour but d'être une entrée en matière consistante, permettant de comprendre les principes de fonctionnement généraux de l'application, et vous permettre, j'en suis sûr de créer de beaux visuels !
 
-IMAGE
+![oleron 3D](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png "Oleron 3D render"){: loading=lazy }
+{: align=middle }
 
 ----
 
@@ -57,25 +60,30 @@ A petit logiciel, interface hyper simple !
 
 Elle se décompose en 3 parties : Le panneau de gauche gère les options principalement autour de la lumière, le panneau de droite gère plutôt le rendu caméra et le panneau central affiche le résultat.
 
-IMAGE
+![interface ouverture aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/interface_aerialod.png "Interface ouverture aerialod"){: loading=lazy }
+{: align=middle }
 
 ### Panneau de gauche
 
-IMAGE
+![panneau gauche aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_gauche_1bis.jpg "Panneau gauche aerialod"){: loading=lazy }
+{: align=middle }
 
 ### Panneau du centre
 
 La partie centrale, en plus d'afficher le rendu, permet d'afficher le nom des options en bas et le paramétrage de la caméra : vue personnelle, freestyle, orthogonale ou isométrique.
 
-IMAGE
+![panneau centre aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_centre.png "Panneau centre aerialod"){: loading=lazy }
+{: align=middle }
 
 ### Panneau de droite
 
-IMAGE
+![panneau droite aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_droite.jpg "Panneau droite aerialod"){: loading=lazy }
+{: align=middle }
 
 Une dernière partie encore non évoquée se trouve en haut à droite du logiciel avec 4 boutons.
 
-IMAGE
+![boutons droite aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/boutons_droite.png "Boutons droite aerialod"){: loading=lazy }
+{: align=middle }
 
 - Contrairement à ce que pourrait laisser penser le premier bouton, impossible pour l'instant d'enregistrer un projet Aerialod, il sert uniquement à enregistrer l'image de base en png
 - Le 2ème en revanche est plus évocateur et permet d'afficher une image
@@ -87,7 +95,8 @@ Si tout ça n'est pour l'instant pas très clair, pas d'inquiétude, ça vient t
 Dans la suite de cet article, lorsque nous parlerons d'une fonctionnalité particulière, je donnerai le nom qui s'affiche au survol de la souris, en bas du panneau principal.
 De plus, chaque capture d'écran affichera également les paramètres appliqués, afin que vous puissiez suivre et reproduire les manipulations.
 
-IMAGE
+![nom fonction aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/nom_fonction.png "Nom fonction aerialod"){: loading=lazy }
+{: align=middle }
 
 Il est possible de trouver un certain nombre de MNT en open data sur internet, notamment sur [data.gouv.fr](https://www.data.gouv.fr/fr/search/?q=mnt) pour le territoire français.
 
