@@ -36,5 +36,8 @@
             "video"
         ]
     },
+    "MD046": {
+        "style": "fenced"
+    },
     "no-trailing-spaces": true
 }

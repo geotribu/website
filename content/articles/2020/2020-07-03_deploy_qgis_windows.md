@@ -3,8 +3,8 @@ title: "Installer QGIS sur Windows avec Powershell"
 authors: Julien Moura
 category: tutoriel
 date: 2020-07-03 10:20
-description: "Comment déployer QGIS sur Windows avec Powershell, via chocolatey ou un script."
-hero: "Déploiement de QGIS sur Windows avec Powershell."
+description: "Comment déployer automatiquement (téléchargement et installation) QGIS sur Windows avec un script Powershell (ou via chocolatey), en tirant parti des capacités de l'installeur OSGeo4W."
+image: "https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/qgis_deploy_win_prog_postinstall.png"
 tags: qgis,installation,osgeo,powershell,deploiement,setup,windows,chocolatey
 ---
 
@@ -16,18 +16,19 @@ tags: qgis,installation,osgeo,powershell,deploiement,setup,windows,chocolatey
 
 L'installation et la mise à jour de QGIS peuvent être rébarbatives, notamment sous Windows où il n'est pas possible de profiter d'une mise à jour via une simple ligne de commande (`apt` mon amour :heart:)... Il y a quelques mois de cela, je cherchais à automatiser l'installation et la configuration de QGIS sur Windows et j'avais donc creusé du côté de [l'installateur de l'OSGeo](https://qgis.org/fr/site/forusers/download.html).
 
-J'avais abouti à un petit script Powershell et vu que j'avais trouvé cela pratique, je me l'étais mis de côté sur [Gist](https://gist.github.com/Guts/6303dc5eb941eb24be3e27609cd46985). Fidèle au *Geotribu Spirit <span class="copyleft">&copy;</span>*, pourquoi ne pas partager le résultat mais (surtout) la démarche ? :wink:
+J'avais abouti à un petit script Powershell et vu que j'avais trouvé cela pratique, je me l'étais mis de côté sur [Gist](https://gist.github.com/Guts/6303dc5eb941eb24be3e27609cd46985). Fidèle au *Geotribu Spirit* :copyright:{: .copyleft }, pourquoi ne pas partager le résultat et (surtout) la démarche ? :wink:
 
 !!! info "Prérequis"
-
-    - une machine avec Windows installé
+    - une machine avec Windows et Powershell
     - droits administrateur
-    - droits d'exécution de scripts
+    - droits d'exécution de scripts, comme pour les environnements virtuels Python (voir [la doc Microsoft](https://docs.microsoft.com/fr-fr/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7) ou [cet article](/articles/2020/2020-06-19_setup_python/#autoriser-lutilisation-des-environnements-virtuels)) : `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
     - optionnellement : [Git]
 
 ## Comment L'Installateur (CLI) fonctionne
 
 On l'oublie souvent (ou on ne le sait tout simplement pas, comme moi pendant de longues et heureuses années) mais les installateurs sont d'abord des outils en ligne de commande (des [CLIs](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande) comme disent les grandes personnes) qui proposent en prime une interface graphique... qui est rarement mieux qu'un concours de clics sur `Suivant`.
+
+![OSGeo4W QGIS](https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/osgeo4w_qgis.png "OSGeo for Windows et QGIS"){: .img-center loading=lazy }
 
 ### --help ex machina
 
@@ -138,7 +139,6 @@ Après un avoir regardé de plus près les options de l'installateur [OSGeo4W], 
 Concrètement, les packages sont téléchargés dans le dossier temporaire de l'utilisateur (classiquement : `C:\Users\USERNAME\AppData\Local\Temp\{url_site}`) puis sont décompressés et déplacés vers le dossier habituel de l'installateur : `C:\OSGeo4W64`. Il est possible de modifier ces deux emplacements via respectivement les options `--local-package-dir` et `--root`.
 
 !!! tip "Serveurs (sites) de téléchargement"
-
     L'option `-s/--site` est répétable afin de pouvoir passer plusieurs serveurs (comme dans l'interface graphique) et les URLs doivent faire partie de ce fichier `https://download.osgeo.org/osgeo4w/mirrors.lst`.
 
 ----

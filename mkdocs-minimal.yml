@@ -20,8 +20,6 @@ plugins:
       show_contribution: true
   - git-revision-date-localized:
       fallback_to_build_date: true
-  - minify:
-      minify_html: true
   - rss:
       length: 50
   - search:
@@ -45,8 +43,8 @@ theme:
   search_index_only: true
 
   features:
-    - tabs
-    - instant
+    - navigation.tabs
+    - navigation.instant
   font: false
   language: 'fr'
   logo: 'theme/assets/images/geotribu/logo_geotribu.png'
