@@ -110,7 +110,7 @@ De plus, chaque capture d'écran affichera également les paramètres appliqués
 ![nom fonction](https://cdn.geotribu.fr/img/tuto/aerialod/nom_fonction.png "Nom fonction"){: loading=lazy }
 {: align=middle }
 
-!!! success "Où trouver des données ?"
+!!! check "Où trouver des données ?"
     Il est possible de trouver un certain nombre de MNT en open data sur internet, notamment sur [data.gouv.fr](https://www.data.gouv.fr/fr/search/?q=mnt) pour le territoire français.
 
 ## Prise en main
