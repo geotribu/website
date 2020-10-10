@@ -156,7 +156,7 @@ On peut maintenant jouer sur les angles du soleil pour avoir un premier rendu di
 
 Il est possible de changer le mode de vue grâce au bouton en bas à droite du panneau central, pour avoir une idée de l'horizon, en passant par exemple sur la *Perspective camera*.
 
-Si nous souhaitons nous rapprocher un peu de la "réalité", il faudrait que le niveau d'eau soit plus haut, car nous pouvons observer que le lidar a pris des mesures sous l'eau à l'intérieur du lagon. Même si cela est également intéressant ! On peut notamment observer des structures relativement organisées à certains endroits. 
+Si nous souhaitons nous rapprocher un peu de la "réalité", il faudrait que le niveau d'eau soit plus haut, car nous pouvons observer que le lidar a pris des mesures sous l'eau à l'intérieur du lagon. Même si cela est également intéressant ! On peut notamment observer des structures relativement organisées à certains endroits.
 
 !!! question "GeoQuizz"
     Si un lecteur peut nous renseigner sur la nature de ces reliefs sous marins, il gagnera notre gratitude éternelle 😉.
