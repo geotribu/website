@@ -13,7 +13,7 @@ Prenons ce tweet pour exemple : <https://twitter.com/geojulien/status/1169878346
 
 1. Cliquer sur le menu déroulant et sélectionner **Intégrer le tweet** :
 
-    ![Menu Intégrer le tweet](https://cdn.geotribu.fr/images/internal/contribution/twitter/embed_tweet_menu.png)
+    ![Menu Intégrer le tweet](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_menu.png)
 
 2. On est alors dirigé vers [le site dédié à l'intégration Twitter Publish](https://publish.twitter.com/) :
 
@@ -21,11 +21,11 @@ Prenons ce tweet pour exemple : <https://twitter.com/geojulien/status/1169878346
 
         Le scénario peut varier dans certains cas. Par exemple, il est possible que le mini-formulaire d'intégration apparaisse directement au-dessus du tweet. Pas de panique, ça revient au même à partir du point 4.
 
-    ![Outil de publication des tweets dans des sites tiers](https://cdn.geotribu.fr/images/internal/contribution/twitter/embed_tweet_publish_website.png)
+    ![Outil de publication des tweets dans des sites tiers](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_publish_website.png)
 
 3. Pour bien faire les choses, notamment pour respecter les utilisateurs de Geotribu qui ne souhaitent pas être traqués par le marketing de Twitter, il est de bon ton de prendre le temps de changer les options de personnalisation. Cliquer sur `set customization options`, faire les réglages et cliquer sur `Update` :
 
-    ![Personnaliser l'intégration du tweet](https://cdn.geotribu.fr/images/internal/contribution/twitter/embed_tweet_publish_custom.png)
+    ![Personnaliser l'intégration du tweet](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_publish_custom.png)
 
 4. Cliquer sur `Copy code` pour récupérer le bout de HTML à coller dans le markdown :
 
@@ -91,7 +91,7 @@ Bizarrement, l'option n'est pas proposée dans le formulaire de Twitter alors qu
 
 Si un utilisateur utilise une protection renforcée contre le pistage et toute forme de tracking publicitaire, Twitter renvoie les tweets dans une forme dégradée (notamment sans les médias). Les tweets intégrés apparaissent alors dans une forme simplifiée avec uniquement le texte :
 
-![Tweet dégradé rendu quand la protection contre le pistage est active](https://cdn.geotribu.fr/images/internal/contribution/twitter/embed_tweet_tracking_fallback.png)
+![Tweet dégradé rendu quand la protection contre le pistage est active](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_tracking_fallback.png)
 
 Consulter :
 
