@@ -3,19 +3,18 @@ title: "Tutoriel de prise en main du logiciel de rendu 3D Aerialod"
 authors: "Aurélien Chaumet"
 categories: ["article", "tutoriel","3D"]
 date: "2020-09-23 10:20"
-description: "Concepts de base et exemples de paramétrages et de rendu sur aerialod"
-image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
+description: "Concepts de base et exemples de paramétrage et de rendu sur aerialod"
+image : "https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg"
 tags: "carte3D,aerialod,rendu3D"
 ---
 
 # Aerialod, un logiciel libre, léger et puissant de rendu de cartes 3D
 
-:calendar: Date de publication initiale : 14 septembre 2020
+:calendar: Date de publication initiale : 13 octobre 2020
 
 **Mots-clés :** Aerialod | Cartes3D
 
-![oceania forest](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg "exemple aerialod Oceania foret"){: loading=lazy }
-{: align=middle }
+[![oceania forest](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg "exemple aerialod Oceania foret"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg){: data-mediabox="oceania forest" data-title="Exemple aerialod forêt Oceania" }
 
 ## Pourquoi utiliser un nouvel outil ?
 
@@ -178,9 +177,11 @@ L'option *Grid*" (panneau de gauche) permet l'affichage d'une grille sur le terr
 
 Si on zoome un peu, on peut s'apercevoir que le rendu est très cubique. On peut l'exagérer en modifiant le *Step* et le *Lod* (panneau de droite) par exemple. Mais nous pouvons également tenté de l'aplatir en sélectionnant le rendu *Bilinear Surface Mode* (panneau de droite toujours).
 
-[![cube](https://cdn.geotribu.fr/img/tuto/aerialod/cube.jpg "Cube"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/cube.jpg){: data-mediabox="cube" data-title="Mode cube on" }
-[![cube exagere](https://cdn.geotribu.fr/img/tuto/aerialod/cube_exagere.jpg "Cube exagéré"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/cube_exagere.jpg){: data-mediabox="cube exagere" data-title="Cube exagéré" }
-[![mode surface](https://cdn.geotribu.fr/img/tuto/aerialod/surface_mode.png "Mode surface on"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/surface_mode.png){: data-mediabox="mode surface" data-title="Mode surface on" }
+[![cube](https://cdn.geotribu.fr/img/tuto/aerialod/cube.jpg "Cube"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/cube.jpg){: data-mediabox="rendu surface" data-title="Mode cube on" }
+
+[![cube exagere](https://cdn.geotribu.fr/img/tuto/aerialod/cube_exagere.jpg "Cube exagéré"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/cube_exagere.jpg){: data-mediabox="rendu surface" data-title="Cube exagéré" }
+
+[![mode surface](https://cdn.geotribu.fr/img/tuto/aerialod/surface_mode.png "Mode surface on"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/surface_mode.png){: data-mediabox="rendu surface" data-title="Mode surface on" }
 
 Tout ca fait partie des multiples paramètres sur lesquels il est possible de jouer, afin d'avoir des rendus relativement différents.
 
