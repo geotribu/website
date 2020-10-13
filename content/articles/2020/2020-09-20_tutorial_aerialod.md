@@ -14,14 +14,14 @@ tags: "carte3D,aerialod,rendu3D"
 
 **Mots-clés :** Aerialod | Cartes3D
 
-[![oceania forest](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg "exemple aerialod Oceania foret"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg){: data-mediabox="oceania forest" data-title="Exemple aerialod forêt Oceania" }
+[![oceania forest](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg "exemple aerialod Oceania foret"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg){: data-mediabox="oceania forest" data-title="Couverture forestière d'une partie de l'Océanie" }
 
 ## Pourquoi utiliser un nouvel outil ?
 
 Lorsqu'on parle de cartographie 3D, des choses arrivent pèle mêle en tête.
 
 Un peu de technique, comme la technologie Lidar et sa capacité à générer des modèles numériques de terrain (MNT). GoogleMaps ou bien Maps d'Apple qui génèrent des vues 3D à partir de photo aériennes.
-Côté logiciel, QGIS, avec le plug-in QGIS2threeJS qui permet depuis un moment de réaliser des blocs 3D et [maintenant nativement dans sa version 3](https://www.qgis.org/fr/site/forusers/visualchangelog30/index.html#d-features). Ou bien encore [Blender](https://www.blender.org/download/), qui est un logiciel libre de modélisation, d'animation et de rendu 3D. Et pêle-mêle ArcGIS, MapBox ou Kepler.gl pour ne citer qu'eux.
+Côté logiciel, QGIS, avec le plug-in QGIS2threeJS qui permet depuis un moment de réaliser des blocs 3D et [maintenant nativement dans sa version 3](https://www.qgis.org/fr/site/forusers/visualchangelog30/index.html#d-features). Ou bien encore [Blender](https://www.blender.org/download/), qui est un logiciel libre de modélisation, d'animation et de rendu 3D. Et pêle-mêle [ArcGIS](https://www.esrifrance.fr/arcgis.aspx), [MapBox](https://www.mapbox.com/) ou [Kepler.gl](https://kepler.gl/) pour ne citer qu'eux.
 
 Des noms et leurs créations viennent également :
 
@@ -29,7 +29,7 @@ Des noms et leurs créations viennent également :
 
 [![france geologique](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png "Carte géologique France 3D"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png){: data-mediabox="france géologique" data-title="Carte Géologique de la France, à l'échelle du millionième, Exécutée en utilisant les documents publiés par le Service de la Carte géologique détaillée de la France - Ministère des Travaux Publics - 1905" }
 
-- [Alasdair Rae](https://twitter.com/undertheraedar?s=09) qui a notamment produit des cartes 3D avec la densité de population comme donnée entrante par exemple
+- [Alasdair Rae](https://twitter.com/undertheraedar?s=09), anciennement Professeur  des étude urbaines et de la planification et qui a fondé récemment [Automatic Knowledge](https://automaticknowledge.co.uk/), a notamment produit des cartes 3D avec la densité de population comme donnée entrante par exemple
 
 [![population mondiale](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png "Population mondiale pics Alasdair Rae"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png){: data-mediabox="population mondiale" data-title="Densité de population mondiale" }
 
@@ -60,7 +60,7 @@ Dézippez l'archive téléchargée, et vous trouverez directement à l'intérieu
 
 ## Présentation de l'interface
 
-A "petit" logiciel (30Mo une fois dézippé...), interface hyper simple !
+A "petit" logiciel (30 Mo une fois dézippé...), interface hyper simple !
 
 Elle se décompose en 3 parties : Le panneau de gauche gère les options principalement autour de la lumière, le panneau de droite gère plutôt le rendu caméra et le panneau central affiche le résultat.
 
@@ -82,7 +82,7 @@ La partie centrale, en plus d'afficher le rendu, permet d'afficher le nom des op
 
 Une dernière partie encore non évoquée se trouve en haut à droite du logiciel avec 4 boutons.
 
-[![boutons de droite](https://cdn.geotribu.fr/img/tuto/aerialod/boutons_droite.png "Boutons de droite"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/boutons_droite.png){: data-mediabox="boutons de droite" data-title="Boutons de droite" }
+![boutons de droite](https://cdn.geotribu.fr/img/tuto/aerialod/boutons_droite.png "Boutons de droite"){: width=100px loading=lazy }
 
 - Contrairement à ce que pourrait laisser penser le premier bouton, impossible pour l'instant d'enregistrer un projet Aerialod, il sert uniquement à enregistrer l'image de base en png
 - Le 2ème en revanche est plus évocateur et permet d'afficher une image
@@ -125,7 +125,7 @@ Avec ça, vous pouvez facilement gérer le déplacement de la caméra sur votre 
 
 A noter que chaque modification d'un paramètre (fenêtre gauche ou droite, ou déplacement sur la carte) imposera un temps de chargement (assez rapide), afin que le logiciel recalcule le rendu. Cela rend le logiciel très réactif, car à chaque modification, vous verrez quasi-instantanément le résultat !
 
-Dans un premier temps, vous pouvez modifier la couleur du terrain sur la fenêtre de droite (*Base color*), ainsi que celle du terrain, dans la fenêtre de gauche (*Ground color*).
+Dans un premier temps, vous pouvez modifier la couleur du terrain sur la fenêtre de droite *Base color*, ainsi que celle du terrain, dans la fenêtre de gauche *Ground color*.
 
 Il est ensuite possible de jouer sur la hauteur de rendu des pixels grâce à l'option *Scale* (panneau de droite), afin d'exagérer un peu le relief. Cela peu donner quelque chose comme ça :
 
@@ -133,7 +133,7 @@ Il est ensuite possible de jouer sur la hauteur de rendu des pixels grâce à l'
 
 Nous avons déjà une première idée (exagérée certes, mais c'est quand même beau comme ça 😎) du relief de Bora Bora.
 
-On peut maintenant jouer sur les angles du soleil pour avoir un premier rendu différent, dans la fenêtre de gauche (*Pitch Angle of Sun Light* / *Yaw Angle of Sun Light*).
+On peut maintenant jouer sur les angles du soleil pour avoir un premier rendu différent, dans la fenêtre de gauche *Pitch Angle of Sun Light* / *Yaw Angle of Sun Light*.
 
 [![scale](https://cdn.geotribu.fr/img/tuto/aerialod/scale.png "Scale"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/scale.png){: data-mediabox="scale" data-title="Scale" }
 
@@ -185,8 +185,8 @@ Si on zoome un peu, on peut s'apercevoir que le rendu est très cubique. On peut
 
 Tout ca fait partie des multiples paramètres sur lesquels il est possible de jouer, afin d'avoir des rendus relativement différents.
 
-Dernière chose concernant les effets, s'il est possible de réaliser un focus sur un élément particulier que vous souhaiteriez mettre en valeur (et donc flouter les autres) en cliquant sur cet élément.
-Vous avez ensuite la possibilité de paramétrer cet effet grâce à la partie *Lens* (panneau de droite).
+Dernière chose concernant les effets, il est possible de réaliser un focus sur un élément particulier que vous souhaiteriez mettre en valeur (et donc flouter les autres) en cliquant sur cet élément.
+Vous pouvez ensuite paramétrer cet effet grâce à la partie *Lens* (panneau de droite).
 
 [![lens](https://cdn.geotribu.fr/img/tuto/aerialod/lens.jpg "Effet d'ouverture"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/lens.jpg){: data-mediabox="lens" data-title="Effet d'ouverture" }
 
@@ -206,11 +206,11 @@ Deux autres types de rendu un peu différent :
 
 ## Conclusion
 
-En guise de conclusion, je me permettrai simplement de faire une liste rapide des avantages et inconvénients (que j'ai pu voir jusque là) à utiliser Aerialod :
+En guise de conclusion, vous trouverez ci-dessous une liste rapide des avantages et inconvénients (que j'ai pu voir jusque là) à utiliser Aerialod :
 
 ### Avantages à utiliser Aerialod
 
-- Logiciel libre, gratuit, de petite taille (<30Mo) et très performant pour un rendu rapide ! (déjà 4 énormes avantages en un !)
+- Logiciel libre, gratuit, de petite taille (<30 Mo) et très performant pour un rendu rapide ! (déjà 4 énormes avantages en un !)
 - Vraiment simple d'utilisation, après seulement quelques heures de pratique autodidacte, on peut sortir des rendus intéressants
 - Hyper ludique ! On se prend très rapidement au jeu de modifier les paramètres un par un et de tester différents angles de caméra. Tout en visualisant le résultat quasiment directement
 
