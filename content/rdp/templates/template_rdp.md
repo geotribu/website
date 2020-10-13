@@ -12,7 +12,7 @@ tags: rdp
 
 ## Intro
 
-![icône news générique](https://cdn.geotribu.fr/images/internal/icons-rdp-news/news.png "News"){: .img-rdp-news-thumb loading=lazy }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "News"){: .img-rdp-news-thumb loading=lazy }
 
 ----
 
