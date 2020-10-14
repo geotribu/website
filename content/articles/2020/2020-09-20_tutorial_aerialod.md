@@ -1,6 +1,6 @@
 ---
 title: "Tutoriel de prise en main du logiciel de rendu 3D Aerialod"
-authors: "Aurélien Chaumet"
+authors: ["Aurélien Chaumet"]
 categories: ["article", "tutoriel","3D"]
 date: "2020-10-14 10:20"
 description: "Concepts de base et exemples de paramétrage et de rendu sur aerialod"
