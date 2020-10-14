@@ -13,7 +13,7 @@ tags: "geogame,mots-croisés"
 
 :calendar: Date de publication initiale : 30 octobre 2013
 
-**Mots-clés :** Géogame | mots-croisé
+**Mots-clés :** Géogame | mots-croisés
 
 L'équipe de GeoTribu est super fière de vous présenter sa nouvelle rubrique "Geogame" !
 
