@@ -51,6 +51,7 @@ plugins:
         "node/668.md": "articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig.md"
         "node/671.md": "https://geotribu.github.io/geogames/"
         "node/675.md": "articles/2013/art_2013-11-20_geogame_mots_croises_webmapping.md"
+        "node/679.md": "articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md"
 
 # Theme
 theme:
