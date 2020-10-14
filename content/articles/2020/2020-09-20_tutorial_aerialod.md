@@ -41,7 +41,7 @@ Ce sont les créations d'Alasdair Rae qui m'ont vraiment donné envie de tester 
 
 Le principe général du logiciel est d'afficher une extrusion s'appuyant sur la valeur des pixels d'une image. On peut naturellement utiliser un MNT pour réaliser cela, mais tout fichier raster peut être utilisé en théorie.
 
-A la demande générale 🥁 (surtout celle de Julien Moura...), cet article a pour but d'expliquer en quoi ce "petit" logiciel est puissant et très simple d'utilisation, grâce à un côté hyper ludique. On peut rapidement passer du temps à jouer avec des angles de caméra, des couleurs, des ouvertures, des zooms et des rendus différents. Je ne prétends pas en être spécialiste, et ne pourrait donc pas apporter des détails poussés sur chaque fonctionnalité.
+A la demande générale :drum: (surtout celle de Julien Moura...), cet article a pour but d'expliquer en quoi ce "petit" logiciel est puissant et très simple d'utilisation, grâce à un côté hyper ludique. On peut rapidement passer du temps à jouer avec des angles de caméra, des couleurs, des ouvertures, des zooms et des rendus différents. Je ne prétends pas en être spécialiste, et ne pourrait donc pas apporter des détails poussés sur chaque fonctionnalité.
 En revanche, cet article vous donnera une entrée en matière consistante, permettant de comprendre les principes de fonctionnement généraux de l'application. En espérant que cela vous inspire, et qu'il vous donnera envie, j'en suis sûr, de créer de beaux visuels !
 
 [![oleron 3D](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png "Oleron 3D render"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png){: data-mediabox="oleron 3D" data-title="Oleron 3D" }
@@ -57,7 +57,7 @@ Afin d'installer Aerialod, vous devez :
 
 Et puis c'est tout en fait !
 
-Dézippez l'archive téléchargée, et vous trouverez directement à l'intérieur un exécutable se nommant Aerialod. Cliquez et c'est parti vers l'infini et l'au-delà 🚀 !
+Dézippez l'archive téléchargée, et vous trouverez directement à l'intérieur un exécutable se nommant Aerialod. Cliquez et c'est parti vers l'infini et l'au-delà :rocket: !
 
 ----
 
@@ -113,7 +113,7 @@ Le logiciel peut lire plusieurs types de fichiers (png, jpg, tif, dtm, asc). A c
 !!! warning "Taille des fichiers importés"
     Attention à la taille du fichier que vous souhaitez lire. Le logiciel ne permet pas de lire de très gros tif, avec des résolutions importantes.
 
-Pour l'exercice, nous utiliserons le [MNT LIDAR de Bora Bora 🤤](https://www.data.gouv.fr/fr/datasets/r/92216da9-64a1-4522-8858-7e2537cab60d).
+Pour l'exercice, nous utiliserons le [MNT LIDAR de Bora Bora :drooling_face:](https://www.data.gouv.fr/fr/datasets/r/92216da9-64a1-4522-8858-7e2537cab60d).
 
 Pour l'afficher, vous pouvez l'ouvrir en cliquant sur le bouton en haut à droite *Open map* ou bien plus simplement en faisant un glisser-déposer depuis un explorateur.
 
@@ -137,7 +137,7 @@ Il est ensuite possible de jouer sur la hauteur de rendu des pixels grâce à l'
 
 [![couleurs](https://cdn.geotribu.fr/img/tuto/aerialod/couleurs.png "Modification des couleurs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/couleurs.png){: data-mediabox="couleurs" data-title="Modification des couleurs" }
 
-Nous avons déjà une première idée (exagérée certes, mais c'est quand même beau comme ça 😎) du relief de Bora Bora.
+Nous avons déjà une première idée (exagérée certes, mais c'est quand même beau comme ça :sunglasses:) du relief de Bora Bora.
 
 On peut maintenant jouer sur les angles du soleil pour avoir un premier rendu différent, dans la fenêtre de gauche *Pitch Angle of Sun Light* / *Yaw Angle of Sun Light*.
 
@@ -148,7 +148,7 @@ Il est possible de changer le mode de vue grâce au bouton en bas à droite du p
 Si nous souhaitons nous rapprocher un peu de la "réalité", il faudrait que le niveau d'eau soit plus haut, car nous pouvons observer que le lidar a pris des mesures sous l'eau à l'intérieur du lagon. Même si cela est également intéressant ! On peut notamment observer des structures relativement organisées à certains endroits.
 
 !!! question "GeoQuizz"
-    Si un lecteur peut nous renseigner sur la nature de ces reliefs sous marins, il gagnera notre gratitude éternelle 😉.
+    Si un lecteur peut nous renseigner sur la nature de ces reliefs sous marins, il gagnera notre gratitude éternelle :wink:.
 
 Pour cela, il suffit de modifier l'*Offset* dans le panneau de droite.
 
@@ -156,7 +156,7 @@ Pour cela, il suffit de modifier l'*Offset* dans le panneau de droite.
 
 Bien, fini de jouer ! Diminuons l'*Offset* pour relever le niveau de la mer.
 
-Etant donné que je connais très bien Bora-Bora 😂 (merci Google Maps...), "-77" apparait comme une valeur d'*Offset* pertinente pour cette représentation.
+Etant donné que je connais très bien Bora-Bora :laughing: (merci Google Maps...), "-77" apparait comme une valeur d'*Offset* pertinente pour cette représentation.
 
 [![offset](https://cdn.geotribu.fr/img/tuto/aerialod/offset.jpg "Réglage de l'offset"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/offset.jpg){: data-mediabox="offset" data-title="Réglage de l'offset" }
 
@@ -198,7 +198,7 @@ Vous pouvez ensuite paramétrer cet effet grâce à la partie *Lens* (panneau de
 
 [![panorama](https://cdn.geotribu.fr/img/tuto/aerialod/panorama.jpg "Mais quel beau panorama !"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/panorama.jpg){: data-mediabox="panorama" data-title="Mais quel beau panorama !" }
 
-Enfin, Aerialod offre la possibilité d'exporter vos rendus grâce à la partie Image du panneau de droite. Il ne vous reste qu'à sélectionner la hauteur et la largeur souhaitées, puis cliquez sur *Render* et attendez que le logiciel fasse le reste 👌.
+Enfin, Aerialod offre la possibilité d'exporter vos rendus grâce à la partie Image du panneau de droite. Il ne vous reste qu'à sélectionner la hauteur et la largeur souhaitées, puis cliquez sur *Render* et attendez que le logiciel fasse le reste :ok_hand:.
 
 [![rendu bora bora](https://cdn.geotribu.fr/img/tuto/aerialod/bora_bora.png "Un exemple de rendu de Bora-Bora"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/bora_bora.png){: data-mediabox="rendu bora bora" data-title="Un exemple de rendu de Bora-Bora" }
 
@@ -222,12 +222,12 @@ En guise de conclusion, vous trouverez ci-dessous une liste rapide des avantages
 
 ### Inconvénients à utiliser Aerialod
 
-- Pour l'instant, il n'existe pas de version Mac, désolé pour les 🍏 addict
+- Pour l'instant, il n'existe pas de version Mac, désolé pour les :apple: addict
 - Impossible d'enregistrer des projets, et donc de revenir travailler dessus par la suite (gros inconvénient...)
 - Le logiciel ne lit pas les fichiers trop grands
 - Impossible de draper une texture sur un relief obtenu, comme Blender le propose par exemple
 - Pas de Ctrl+Z ou un quelconque retour en arrière sur un paramètre modifié, donc faites attention lorsque vous commencez à être content de votre rendu et que vous continuez à faire des modifications. Ca peut être frustrant...
-- Peu d'ajouts pour l'instant sur le logiciel, espérons et croisons les doigts qu'ephtracy lise les différents commentaires des personnes utilisant Aerialod 😉
+- Peu d'ajouts pour l'instant sur le logiciel, espérons et croisons les doigts qu'ephtracy lise les différents commentaires des personnes utilisant Aerialod :wink:
 
 Libre à vous de faire jouer votre imagination et votre sens artistique, et n'hésitez pas à interagir dans les commentaires ou sur Twitter !
 
@@ -235,15 +235,15 @@ Libre à vous de faire jouer votre imagination et votre sens artistique, et n'h�
 
 ## Auteur
 
-![Portrait Aurélien Chaumet](https://cdn.geotribu.fr/img/internal/contributeurs/achaumet.jpg "Portrait Aurélien Chaumet"){: .img-rdp-news-thumb }
+![Portrait Aurélien Chaumet](https://cdn.geotribu.fr/img/internal/contributeurs/achaumet.jpg "Portrait Aurélien Chaumet"){: .img-rdp-news-thumb loading=lazy }
 
 Ingénieur en Aménagement du territoire, je suis arrivé à la géomatique par un hasard de parcours professionnel en 2016, suite à mon admission au concours d'ingénieur territorial.
 
-De formation autodidacte, je travaille au Pays Marennes Oléron en tant que chargé de mission Système d'Informarion Territoriale, sur toutes les thématiques de compétence communale et intercommunale.
+De formation autodidacte, je travaille au Pays Marennes Oléron en tant que chargé de mission Système d'Information Territoriale, sur toutes les thématiques de compétence communale et intercommunale.
 
 Intéressé par les données et leurs représentations, je reste en permanence en veille sur les outils SIG, données et dataviz, comme Qgis, Tableau, FME ou encore Kepler.gl, Aerialod ou Blender.
 
-À travers Geotribu, j'espère pouvoir apporter mes connaissances sur les différents outils que j'utilise, en continuant de me former sur de nouveaux ! Pour toute question, [n'hésitez pas à passer par Twitter]("https://twitter.com/AurelienChaumet") 🐦
+À travers Geotribu, j'espère pouvoir apporter mes connaissances sur les différents outils que j'utilise, en continuant de me former sur de nouveaux ! Pour toute question, [n'hésitez pas à passer par Twitter]("https://twitter.com/AurelienChaumet") :bird:
 
 <!-- Hyperlinks reference -->
 [Aerialod]: https://ephtracy.github.io/index.html?page=aerialod
