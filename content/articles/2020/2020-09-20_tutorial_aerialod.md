@@ -25,11 +25,11 @@ Côté logiciel, QGIS, avec le plug-in QGIS2threeJS qui permet depuis un moment 
 
 Des noms et leurs créations viennent également :
 
-- Sean Conway réalise des cartes visuellement impressionnantes. Il travail pour Quantum Spatial aux Etats-Unis, en tant que spécialiste orthophoto. Et au vu de ses créations, il a clairement un sacré sens artistique ! Il utilise notamment QGIS et Blender pour ses rendus. Vous pouvez admirer son travail [sur son profil Twitter](https://twitter.com/geo_spatialist?s=20).
+- Sean Conway réalise des cartes visuellement impressionnantes. Il travaille pour Quantum Spatial aux Etats-Unis, en tant que spécialiste orthophoto. Et au vu de ses créations, il a clairement un sacré sens artistique ! Il utilise notamment QGIS et Blender pour ses rendus. Vous pouvez admirer son travail [sur son profil Twitter](https://twitter.com/geo_spatialist?s=20).
 
 [![france geologique](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png "Carte géologique France 3D"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png){: data-mediabox="france géologique" data-title="Carte Géologique de la France, à l'échelle du millionième, Exécutée en utilisant les documents publiés par le Service de la Carte géologique détaillée de la France - Ministère des Travaux Publics - 1905" }
 
-- [Alasdair Rae](https://twitter.com/undertheraedar?s=09), anciennement Professeur  des étude urbaines et de la planification et qui a fondé récemment [Automatic Knowledge](https://automaticknowledge.co.uk/), a notamment produit des cartes 3D avec la densité de population comme donnée entrante par exemple
+- [Alasdair Rae](https://twitter.com/undertheraedar?s=09), anciennement Professeur des étude urbaines et de la planification et qui a fondé récemment [Automatic Knowledge](https://automaticknowledge.co.uk/), a notamment produit des cartes 3D avec la densité de population comme donnée entrante par exemple
 
 [![population mondiale](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png "Population mondiale pics Alasdair Rae"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png){: data-mediabox="population mondiale" data-title="Densité de population mondiale" }
 
@@ -54,7 +54,7 @@ Afin d'installer Aerialod, vous devez [vous rendre sur le site d'ephtracy](https
 
 Et puis c'est tout en fait !
 
-Dézippez l'archive téléchargée, et vous trouverez directement à l'intérieur un exécutable se nommant Aerialod. Cliquez et c'est parti vers l'infini et l'au-delà 🚀 !!!
+Dézippez l'archive téléchargée, et vous trouverez directement à l'intérieur un exécutable se nommant Aerialod. Cliquez et c'est parti vers l'infini et l'au-delà 🚀 !
 
 ----
 
