@@ -35,9 +35,9 @@ Des noms et leurs créations viennent également :
 
 Il utilise le logiciel gratuit Aerialod, développé par [ephtracy](https://twitter.com/ephtracy?s=09), plus connu pour être le créateur de MagicaVoxel, logiciel de création de voxels (pixels 3D).
 
-----
-
 Ce sont les créations d'Alasdair Rae qui m'ont vraiment donné envie de tester Aerialod, notamment [grâce à ses tutoriels](http://www.statsmapsnpix.com/2020/03/making-3d-landscape-and-city-models.html?m=1).
+
+----
 
 ## Objectifs du tutoriel
 
