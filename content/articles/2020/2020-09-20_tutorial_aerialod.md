@@ -50,7 +50,10 @@ En revanche, cet article vous donnera une entrée en matière consistante, perme
 
 ## Installation du logiciel
 
-Afin d'installer Aerialod, vous devez [vous rendre sur le site d'ephtracy](https://ephtracy.github.io/index.html?page=aerialod) et téléchargez la version (Windows uniquement pour le moment) qui correspond à votre système.
+Afin d'installer Aerialod, vous devez :
+
+1. [vous rendre sur le site d'ephtracy](https://ephtracy.github.io/index.html?page=aerialod)
+2. télécharger la version (Windows uniquement pour le moment) qui correspond à votre système.
 
 Et puis c'est tout en fait !
 
