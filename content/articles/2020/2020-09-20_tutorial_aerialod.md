@@ -85,7 +85,8 @@ La partie centrale, en plus d'afficher le rendu, permet d'afficher le nom des op
 
 Une dernière partie encore non évoquée se trouve en haut à droite du logiciel avec 4 boutons.
 
-![boutons de droite](https://cdn.geotribu.fr/img/tuto/aerialod/boutons_droite.png "Boutons de droite"){: width=100px loading=lazy }
+![boutons de droite](https://cdn.geotribu.fr/img/tuto/aerialod/boutons_droite.png "Boutons de droite"){: loading=lazy }
+{: align=middle }
 
 - Contrairement à ce que pourrait laisser penser le premier bouton, impossible pour l'instant d'enregistrer un projet Aerialod, il sert uniquement à enregistrer l'image de base en png
 - Le 2ème en revanche est plus évocateur et permet d'afficher une image
@@ -102,10 +103,12 @@ De plus, chaque capture d'écran affichera également les paramètres appliqués
 !!! check "Où trouver des données ?"
     Il est possible de trouver un certain nombre de MNT en open data sur internet, notamment sur [data.gouv.fr](https://www.data.gouv.fr/fr/search/?q=mnt) pour le territoire français.
 
+----
+
 ## Prise en main
 
 Ceci étant dit, allons-y avec notre première image importée dans Aerialod.
-Le logiciel peut lire plusieurs types de fichiers (png, jpg, tif, dtm, asc). A ce jour, je n'ai testé que du tif, car c'est généralement dans ce genre de format, que les MNT sont enregistrés.
+Le logiciel peut lire plusieurs types de fichiers (png, jpg, tif, dtm, asc). A ce jour, je n'ai testé que du tif, car c'est généralement dans ce format que les MNT sont enregistrés.
 
 !!! warning "Taille des fichiers importés"
     Attention à la taille du fichier que vous souhaitez lire. Le logiciel ne permet pas de lire de très gros tif, avec des résolutions importantes.
@@ -130,7 +133,7 @@ A noter que chaque modification d'un paramètre (fenêtre gauche ou droite, ou d
 
 Dans un premier temps, vous pouvez modifier la couleur du terrain sur la fenêtre de droite *Base color*, ainsi que celle du terrain, dans la fenêtre de gauche *Ground color*.
 
-Il est ensuite possible de jouer sur la hauteur de rendu des pixels grâce à l'option *Scale* (panneau de droite), afin d'exagérer un peu le relief. Cela peu donner quelque chose comme ça :
+Il est ensuite possible de jouer sur la hauteur de rendu des pixels grâce à l'option *Scale* (panneau de droite), afin d'exagérer un peu le relief. Cela peut donner quelque chose comme ça :
 
 [![couleurs](https://cdn.geotribu.fr/img/tuto/aerialod/couleurs.png "Modification des couleurs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/couleurs.png){: data-mediabox="couleurs" data-title="Modification des couleurs" }
 
@@ -157,7 +160,7 @@ Etant donné que je connais très bien Bora-Bora 😂 (merci Google Maps...), "-
 
 [![offset](https://cdn.geotribu.fr/img/tuto/aerialod/offset.jpg "Réglage de l'offset"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/offset.jpg){: data-mediabox="offset" data-title="Réglage de l'offset" }
 
-Pour rappel, en réalisant un clic-droit souris et en la bougeant vers le haut vous devriez voir l'horizon apparaitre (si vous êtes bien passés auparavant en vue *Perspective* avec le bouton en bas à droite du panneau central).
+Pour rappel, en réalisant un clic-droit souris et en la bougeant vers le haut vous devriez voir l'horizon apparaître (si vous êtes bien passés auparavant en vue *Perspective* avec le bouton en bas à droite du panneau central).
 
 Afin de rajouter un peu de réalisme, vous pouvez choisir un autre type de ciel appelé *Atmospheric Scattering*. Cela va jouer sur la lumière ambiante et le rendu, et nous avons maintenant la possibilité de rendre visible le soleil, ce qui peut donner un effet sympa. Pour ce faire, dans le panneau de gauche, activez le bouton rond *Show Sun Disk*.
 
@@ -166,7 +169,7 @@ Afin de rajouter un peu de réalisme, vous pouvez choisir un autre type de ciel 
 Ici l'azimut du soleil est assez faible, nous permettant de l'apercevoir, tout en créant des ombres dignes d'une aube peu éclairante. 2 solutions pour y voir un peu plus clair :
 
 - vous souhaitez garder visible le soleil et vous modifiez l'exposition (panneau de droite *Exposure*)
-- vous ne voyez pas d'intérêt à garder visible directement le soleil et vous modifiez son azimut. Plus celui-ci sera proche de 90 (degrés), et plus vous imiterez un moment de la journée proche de midi donc très exposé.
+- vous ne voyez pas d'intérêt à garder visible directement le soleil et vous modifiez son azimut. Plus celui-ci sera proche de 90 (degrés) et plus vous imiterez un moment de la journée proche de midi (donc très exposé).
 
 [![midi](https://cdn.geotribu.fr/img/tuto/aerialod/midi.jpg "Une meilleure exposition"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/midi.jpg){: data-mediabox="midi" data-title="Une meilleure exposition" }
 
@@ -186,7 +189,7 @@ Si on zoome un peu, on peut s'apercevoir que le rendu est très cubique. On peut
 
 [![mode surface](https://cdn.geotribu.fr/img/tuto/aerialod/surface_mode.png "Mode surface on"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/surface_mode.png){: data-mediabox="rendu surface" data-title="Mode surface on" }
 
-Tout ca fait partie des multiples paramètres sur lesquels il est possible de jouer, afin d'avoir des rendus relativement différents.
+Tout ça fait partie des multiples paramètres sur lesquels il est possible de jouer, afin d'avoir des rendus relativement différents.
 
 Dernière chose concernant les effets, il est possible de réaliser un focus sur un élément particulier que vous souhaiteriez mettre en valeur (et donc flouter les autres) en cliquant sur cet élément.
 Vous pouvez ensuite paramétrer cet effet grâce à la partie *Lens* (panneau de droite).
@@ -226,7 +229,7 @@ En guise de conclusion, vous trouverez ci-dessous une liste rapide des avantages
 - Pas de Ctrl+Z ou un quelconque retour en arrière sur un paramètre modifié, donc faites attention lorsque vous commencez à être content de votre rendu et que vous continuez à faire des modifications. Ca peut être frustrant...
 - Peu d'ajouts pour l'instant sur le logiciel, espérons et croisons les doigts qu'ephtracy lise les différents commentaires des personnes utilisant Aerialod 😉
 
-Libre à vous de faire jouer votre imagination et votre sens artistique, et n'hésitez pas à interagir dans les commentaires ou sur Twitter !!!
+Libre à vous de faire jouer votre imagination et votre sens artistique, et n'hésitez pas à interagir dans les commentaires ou sur Twitter !
 
 ----
 
