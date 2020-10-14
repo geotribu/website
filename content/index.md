@@ -11,7 +11,7 @@ tags: bienvenue,géomatique,sig,géographie,dataviz,geordp,accueil,geotribu
 
 Bienvenue sur le site de Geotribu !
 
-![Bannière Géotribu](https://cdn.geotribu.fr/images/internal/charte/geotribu_banner.jpg "Bannière Geotribu"){: loading=lazy }
+![Bannière Géotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg "Bannière Geotribu"){: loading=lazy }
 
 ----
 

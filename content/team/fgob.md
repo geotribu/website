@@ -1,6 +1,6 @@
 # Fabien Goblet
 
-![](https://cdn.geotribu.fr/images/internal/contributeurs/fgob.jfif){: .img-rdp-news-thumb }
+![](https://cdn.geotribu.fr/img/internal/contributeurs/fgob.jfif){: .img-rdp-news-thumb }
 
 Informaticien et géographe de formation, ~~je suis~~ j'étais indépendant en base de données, webmapping, j'aide à la modélisation et à la définition du besoin client, ~~je développe~~ j'encadre le développement des interfaces d'administration et des carto-web, je conçois des api géographiques pour les administrations, les ONG, les labos de recherche.
 Je suis maintenant responsable de l'innovation chez Sogefi. Toujours des cartes et des données qui ont besoin de communiquer. Nous avons une spécialité dans les données foncières et de leur représentation à destination des administrations.

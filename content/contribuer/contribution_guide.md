@@ -90,7 +90,7 @@ git commit -am "Ajout news sur la carte de la semaine"
 
 Une fois le contenu prêt pour être publié, créer une [_Pull Request_](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) de sa branche vers la branche `master` du dépôt central
 
-![Créer la pull request](https://cdn.geotribu.fr/images/internal/contribution/github_pull-request_form.png)
+![Créer la pull request](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form.png)
 
 Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publiée :smile:.
 
