@@ -31,7 +31,7 @@ Des noms et leurs créations viennent également :
 
 - [Alasdair Rae](https://twitter.com/undertheraedar?s=09), anciennement Professeur  des étude urbaines et de la planification et qui a fondé récemment [Automatic Knowledge](https://automaticknowledge.co.uk/), a notamment produit des cartes 3D avec la densité de population comme donnée entrante par exemple
 
-[![population mondiale](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png "Population mondiale pics Alasdair Rae"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png){: data-mediabox="population mondiale" data-title="Densité de population mondiale" }
+[![population mondiale](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png "Population mondiale pics Alasdair Rae"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png){: data-mediabox="population mondiale" data-title="Densité de population mondiale" }
 
 Il utilise le logiciel libre Aerialod, développé par [ephtracy](https://twitter.com/ephtracy?s=09), plus connu pour être le créateur de MagicaVoxel, logiciel de création de voxels (pixels 3D) libre et léger.
 
@@ -44,7 +44,7 @@ Le principe général du logiciel est d'afficher une extrusion s'appuyant sur la
 A la demande générale 🥁 (surtout celle de Julien Moura...), cet article a pour but d'expliquer en quoi ce "petit" logiciel est puissant et très simple d'utilisation, grâce à un côté hyper ludique. On peut rapidement passer du temps à jouer avec des angles de caméra, des couleurs, des ouvertures, des zooms et des rendus différents. Je ne prétends pas en être spécialiste, et ne pourrait donc pas apporter des détails poussés sur chaque fonctionnalité.
 En revanche, cet article vous donnera une entrée en matière consistante, permettant de comprendre les principes de fonctionnement généraux de l'application. En espérant que cela vous inspire, et qu'il vous donnera envie, j'en suis sûr, de créer de beaux visuels !
 
-[![oleron 3D](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png "Oleron 3D render"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png){: data-mediabox="oleron 3D" data-title="Oleron 3D render" }
+[![oleron 3D](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png "Oleron 3D render"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png){: data-mediabox="oleron 3D" data-title="Oleron 3D" }
 
 ----
 
@@ -94,7 +94,7 @@ Si tout ça n'est pour l'instant pas très clair, pas d'inquiétude, ça vient t
 Dans la suite de cet article, lorsque nous parlerons d'une fonctionnalité particulière, il sera indiqué *le nom* qui s'affiche au survol de la souris, en bas du panneau principal.
 De plus, chaque capture d'écran affichera également les paramètres appliqués, afin que vous puissiez suivre et reproduire les manipulations.
 
-[![nom fonction](https://cdn.geotribu.fr/img/tuto/aerialod/nom_fonction.png "Nom fonction"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/nom_fonction.png){: data-mediabox="nom fonction" data-title="Nom fonction" }
+[![nom fonction](https://cdn.geotribu.fr/img/tuto/aerialod/nom_fonction.png "Nom fonction"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/nom_fonction.png){: data-mediabox="nom fonction" data-title="Affichage du nom de la fonction en passant la souris" }
 
 !!! check "Où trouver des données ?"
     Il est possible de trouver un certain nombre de MNT en open data sur internet, notamment sur [data.gouv.fr](https://www.data.gouv.fr/fr/search/?q=mnt) pour le territoire français.
@@ -113,7 +113,7 @@ Pour l'afficher, vous pouvez l'ouvrir en cliquant sur le bouton en haut à droit
 
 Aerialod l'ouvre alors (s'il n'est pas trop gros).
 
-[![import aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/import.png "Import aerialod"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/import.png){: data-mediabox="import aerialod" data-title="Import aerialod" }
+[![import aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/import.png "Import aerialod"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/import.png){: data-mediabox="import aerialod" data-title="Affichage du MNT après import" }
 
 Quelques éléments de base pour la manipulation du rendu :
 
@@ -135,7 +135,7 @@ Nous avons déjà une première idée (exagérée certes, mais c'est quand même
 
 On peut maintenant jouer sur les angles du soleil pour avoir un premier rendu différent, dans la fenêtre de gauche *Pitch Angle of Sun Light* / *Yaw Angle of Sun Light*.
 
-[![scale](https://cdn.geotribu.fr/img/tuto/aerialod/scale.png "Scale"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/scale.png){: data-mediabox="scale" data-title="Scale" }
+[![scale](https://cdn.geotribu.fr/img/tuto/aerialod/scale.png "Scale"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/scale.png){: data-mediabox="scale" data-title="Modification du Scale" }
 
 Il est possible de changer le mode de vue grâce au bouton en bas à droite du panneau central, pour avoir une idée de l'horizon, en passant par exemple sur la *Perspective camera*.
 
@@ -229,11 +229,15 @@ Libre à vous de faire jouer votre imagination et votre sens artistique, et n'h�
 
 ## Auteur
 
---8<--
-content/team/jmou.md
---8<--
+![Portrait Aurélien Chaumet](https://cdn.geotribu.fr/img/internal/contributeurs/achaumet.jpg "Portrait Aurélien Chaumet"){: .img-rdp-news-thumb }
+
+Ingénieur en Aménagement du territoire, je suis arrivé à la géomatique par un hasard de parcours professionnel en 2016, suite à mon admission au concours d'ingénieur territorial.
+
+De formation autodidacte, je travaille au Pays Marennes Oléron en tant que chargé de mission Système d'Informarion Territoriale, sur toutes les thématiques de compétence communale et intercommunale.
+
+Intéressé par les données et leurs représentations, je reste en permanence en veille sur les outils SIG, données et dataviz, comme Qgis, Tableau, FME ou encore Kepler.gl, Aerialod ou Blender.
+
+À travers Geotribu, j'espère pouvoir apporter mes connaissances sur les différents outils que j'utilise, en continuant de me former sur de nouveaux ! Pour toute question, [n'hésitez pas à passer par Twitter]("https://twitter.com/AurelienChaumet") 🐦
 
 <!-- Hyperlinks reference -->
-[Markdown]: https://fr.wikipedia.org/wiki/Markdown
-[Internet Archive]: https://archive.org
-[Scrapy]: https://scrapy.org/
+[Aerialod]: https://ephtracy.github.io/index.html?page=aerialod
