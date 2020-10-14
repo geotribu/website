@@ -1,6 +1,6 @@
 # Jérémie Ory
 
-![](https://cdn.geotribu.fr/images/internal/contributeurs/jory.jpg){: .img-rdp-news-thumb }
+![](https://cdn.geotribu.fr/img/internal/contributeurs/jory.jpg){: .img-rdp-news-thumb }
 
 Géographe/géomaticien de formation, j'ai suivi le master SIGMA puis effectuer un doctorat et post-doc en sciences de l'information géographique à l'IGN.
 Je travaille actuellement dans la fonction publique territoriale sur des problématiques autour de la donnée : SIG, opendata, RGPD, etc.

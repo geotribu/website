@@ -1,8 +1,8 @@
 ### TITRE DE LA NEWS
 
-![](https://cdn.geotribu.fr/images/internal/icons-rdp-news/news.png){: .img-rdp-news-thumb loading=lazy }
+![](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png){: .img-rdp-news-thumb loading=lazy }
 
-**Ou choisir une autre icône depuis le CDN : <https://cdn.geotribu.fr/images/internal/icons-rdp-news/>**
+**Ou choisir une autre icône depuis le CDN : <https://cdn.geotribu.fr/img/internal/icons-rdp-news/>**
 
 **Texte en gras**
 
