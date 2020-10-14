@@ -2,7 +2,7 @@
 title: "Tutoriel de prise en main du logiciel de rendu 3D Aerialod"
 authors: "Aurélien Chaumet"
 categories: ["article", "tutoriel","3D"]
-date: "2020-09-23 10:20"
+date: "2020-10-14 10:20"
 description: "Concepts de base et exemples de paramétrage et de rendu sur aerialod"
 image : "https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg"
 tags: "carte3D,aerialod,rendu3D"
@@ -10,7 +10,7 @@ tags: "carte3D,aerialod,rendu3D"
 
 # Aerialod, un logiciel libre, léger et puissant de rendu de cartes 3D
 
-:calendar: Date de publication initiale : 13 octobre 2020
+:calendar: Date de publication initiale : 14 octobre 2020
 
 **Mots-clés :** Aerialod | Cartes3D
 
