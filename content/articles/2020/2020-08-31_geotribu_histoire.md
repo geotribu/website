@@ -9,7 +9,7 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_
 tags: "geotribu,histoire,bénévolat"
 ---
 
-# Histoire de Geotribu : vie, mort et renaissance.
+# Histoire de Geotribu : vie, mort et renaissance
 
 :calendar: Date de publication initiale : 31 août 2020
 

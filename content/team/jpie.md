@@ -1,6 +1,6 @@
 # Julie Pierson
 
-![](https://cdn.geotribu.fr/images/internal/contributeurs/jpie.png){: .img-rdp-news-thumb }
+![](https://cdn.geotribu.fr/img/internal/contributeurs/jpie.png){: .img-rdp-news-thumb }
 
 > Twitter : <https://twitter.com/sigomatique>
 

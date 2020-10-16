@@ -1,6 +1,6 @@
 # Adrien Van Hamme
 
-![](https://cdn.geotribu.fr/images/internal/contributeurs/avha.jpg){: .img-rdp-news-thumb }
+![](https://cdn.geotribu.fr/img/internal/contributeurs/avha.jpg){: .img-rdp-news-thumb }
 
 Site officiel : <https://adrienvh.fr/>
 
