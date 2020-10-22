@@ -4,7 +4,7 @@ authors: ["Jérémie ORY", "Julien MOURA"]
 categories: ["article"]
 date: "2020-10-22 10:20"
 description: "En restaurant les géogames de Geotribu, j'ai trouvé un jeu qui n'avait été publié qui consiste à associer les déserts à leurs continents. Saurez-vous ne pas finir privé/e de désert ?"
-image: "https://cdn.geotribu.fr/img/geogames/geogame6_capture.png"
+image: "https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette.png"
 tags: "geogame,déserts,continents"
 ---
 
@@ -14,7 +14,15 @@ tags: "geogame,déserts,continents"
 
 **Mots-clés :** Géogame | désert | jeu
 
-> TO COMPLETE
+## Introduction
+
+[![icône Geogames Geotribu](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette_200x200.png "Géogames Geotribu"){: .img-rdp-news-thumb }](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette.png)
+
+Ecartés lors de la phase de résurrection de Geotribu, les Géogames sont désormais de nouveau en ligne. Basés sur une petite [bibliothèque JavaScript Quiz Script](https://www.felix-riesterer.de/main/seiten/quiz-script.html) et conçus par [Jérémie](/team/jory/), les jeux sont construits autour de la thématique de la cartographie et de la géomatique (évidemment). A part faire en sorte qu'ils soient de nouveau jouables, je n'ai rien touché, donc ambiance vintage assurée :wink: !
+
+Au passage, je suis tombé sur un sixième jeu qui n'avait pas été publié à l'époque. Un inédit ! Il s'agit ici d'associer les différents déserts au bon continent.
+
+Bon jeu et bonne nostalgie :smile:.
 
 [Ouvrir le jeu en grand :fontawesome-solid-external-link-alt:](https://geotribu.github.io/geogames/sixieme_jeu){: .md-button }
 {: align=middle }
