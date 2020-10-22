@@ -41,6 +41,9 @@ plugins:
       separator: '[\s\-\.]+'
   - redirects:
       redirect_maps:
+        # RSS
+        "rss.md": "https://static.geotribu.fr/feed_rss_created.xml"
+        # contenus
         "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
         "node/348.md": "rdp/2011/rdp_2011-02-25.md"
         "node/462.md": "articles/2011/art_2011-11-09.md"
