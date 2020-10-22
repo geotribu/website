@@ -12,6 +12,13 @@
   {% elif page and page.title and not page.is_homepage %}
   {% set title = title ~ " - " ~ page.title | striptags %}
   {% endif %}
+  <!-- Meta description -->
+  {% set description = config.site_description %}
+  {% if page and page.meta and page.meta.description %}
+  {% set description = page.meta.description | striptags %}
+  {% elif page and page.description and not page.is_homepage %}
+  {% set description = page.description | striptags %}
+  {% endif %}
   <!-- Meta image -->
   {% set image = 'https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg' %}
   {% if page and page.meta and page.meta.image %}
@@ -20,7 +27,7 @@
   <!-- OpenGraph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:description" content="{{ description }}">
   <meta property="og:url" content="{{ page.canonical_url }}">
   <meta property="og:image" content="{{ image }}">
   <!-- Twitter -->
@@ -30,7 +37,7 @@
   <meta name="twitter:site" content="@geotribu" />
   <meta name="twitter:creator" content="@geojulien" />
   <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ config.site_description }}">
+  <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:image" content="{{ image }}">
 {% endblock %}
 
