@@ -12,7 +12,7 @@ pre-commit>=2.5,<2.8
 # Project requirements
 # -----------------------
 
-mkdocs-awesome-pages-plugin==2.3.*
+mkdocs-awesome-pages-plugin==2.4.*
 mkdocs-git-authors-plugin==0.3.*
 mkdocs-git-revision-date-localized-plugin>=0.6,<0.8
 mkdocs-material>=5.4,<6.1
