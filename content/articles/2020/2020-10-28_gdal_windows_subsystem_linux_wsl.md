@@ -74,8 +74,8 @@ WSL faisant partie du bouquet de fonctionnalités avancées, il faut donc un acc
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     ```
 
-2. Redémarrer
-3. [Télécharger](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) et installer la version 2 de WSL
+2. Redémarrer l'ordinateur
+3. [Télécharger](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) et installer la version 2 du noyau WSL
 4. Définir la version à utiliser : `wsl --set-default-version 2`
 
 En cas de doute, se référer à [la documentation officielle](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10) et/ou harceler votre DSI.
@@ -84,11 +84,88 @@ En cas de doute, se référer à [la documentation officielle](https://docs.micr
 
 Une fois le sous-système prêt, il est temps d'installer une ou plusieurs distributions Linux parmi celles disponibles (voir [la liste ici](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10#step-6---install-your-linux-distribution-of-choice)).
 
-Pour ce tutoriel, on a besoin d'[Ubuntu 20.04](https://www.microsoft.com/store/apps/9n6svws3rx71).
+1. pour ce tutoriel, on a besoin de télécharger [Ubuntu 20.04](https://www.microsoft.com/store/apps/9n6svws3rx71)
+2. au premier lancement, créer son utilisateur (voir [page dédiée de la doc](https://docs.microsoft.com/fr-fr/windows/wsl/user-support))
+3. Mettre à jour les paquets avec un bon vieux `sudo apt update && sudo apt upgrade`
+4. Fermer la fenêtre
+
+Volà, désormais nous avons notre distribution Ubuntu 20.04 prête à être utilisée dans notre Windows. Allez, on s'arrrrête pas en si bon chemin : on continue vers l'installation de GDAL !
 
 ----
 
 ## Utiliser GDAL dans le sous-système Linux de Windows
+
+Une fois notre distribution installée, continuons nos opérations sur notre nouveau terminal.
+
+Avant d'aller plus loin, quelques commandes à retenir, qui sont évidemment disponibles (et même traduites !) via l'argument `--help` :
+
+[![Texte remplacement](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_terminal_tabs.png "Titre image"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_terminal_tabs.png){: data-mediabox="ligthbox-gallery" data-title="Légende image"}
+
+### Lister les distributions installées
+
+```powershell
+wsl --list
+```
+
+Chez moi, cela donne :
+
+```powershell
+Distributions du sous-système Windows pour Linux :
+Ubuntu-20.04 (par défaut)
+docker-desktop
+docker-desktop-data
+Debian
+Ubuntu-18.04
+```
+
+### Entrer/sortir dans une distribution
+
+Cela se passe avec l'option `-d / --distribution` avec le nom de la distribution souhaitée. Dans notre cas :
+
+```powershell
+wsl -d Ubuntu-20.04
+```
+
+Pour en sortir, il suffit de taper `exit`.
+
+### Installer GDAL sur notre Ubuntu 20.04
+
+Nous voilà enfin dans notre environnement bash chéri :heart_eyes: !
+
+Rien que du très classique, donc d'abord, on définit la version de GDAL que l'on souhaite :
+
+```bash
+export GDAL_VERSION=3.1.*
+```
+
+Ensuite, on ajoute le dépôt bien connu d'ubuntugis :
+
+```bash
+sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable && sudo apt-get update
+```
+
+Puis, on installe GDAL :
+
+```bash
+sudo apt-get install gdal-bin=$GDAL_VERSION
+sudo apt-get install libgdal-dev=$GDAL_VERSION
+export CPLUS_INCLUDE_PATH=/usr/include/gdal
+export C_INCLUDE_PATH=/usr/include/gdal
+```
+
+Et enfin, on vérifie que tout va bien :
+
+```bash
+$ gdal-config --version
+3.1.3
+```
+
+On peut même faire cela depuis Powershell :
+
+```powershell
+PS C:\Users\geojulien> wsl -d Ubuntu-20.04 -- ogrinfo --version
+GDAL 3.1.3, released 2020/09/01
+```
 
 ----
 
@@ -102,63 +179,63 @@ Dans le nouveau terminal, il est possible de [personnaliser chaque shell répert
     ```json
     {
     "list":
-            [
-                {
-                    // Make changes here to the powershell.exe profile.
-                    "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                    "name": "Windows PowerShell",
-                    "commandline": "powershell.exe",
-                    "hidden": false
-                },
-                {
-                    // Make changes here to the cmd.exe profile.
-                    "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                    "name": "Invite de commandes",
-                    "commandline": "cmd.exe",
-                    "hidden": false
-                },
-                {
-                    "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                    "hidden": true,
-                    "name": "Azure Cloud Shell",
-                    "source": "Windows.Terminal.Azure"
-                },
-                {
-                    "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                    "hidden": false,
-                    "name": "Debian",
-                    "source": "Windows.Terminal.Wsl"
-                },
-                {
-                    "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
-                    "hidden": false,
-                    "name": "Ubuntu-18.04",
-                    "source": "Windows.Terminal.Wsl",
-                    // personnalisation
-                    "acrylicOpacity": 0.9,
-                    "antialiasingMode": "cleartype",
-                    "colorScheme": "Solarized Dark",
-                    "cursorColor": "#FFFFFD",
-                    "fontFace": "Cascadia Code PL",
-                    "suppressApplicationTitle": true,
-                    "useAcrylic": true  
-                },
-                {
-                    "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                    "hidden": false,
-                    "name": "Ubuntu-20.04",
-                    "source": "Windows.Terminal.Wsl",
-                    // personnalisation
-                    "acrylicOpacity": 0.9,
-                    "antialiasingMode": "cleartype",
-                    "colorScheme": "One Half Dark",
-                    "cursorColor": "#FFFFFD",
-                    "fontFace": "Cascadia Code PL",
-                    "suppressApplicationTitle": true,
-                    "useAcrylic": true
-                }
+        [
+            {
+                // Make changes here to the powershell.exe profile.
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile.
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "Invite de commandes",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                "hidden": false,
+                "name": "Ubuntu-18.04",
+                "source": "Windows.Terminal.Wsl",
+                // personnalisation
+                "acrylicOpacity": 0.9,
+                "antialiasingMode": "cleartype",
+                "colorScheme": "Solarized Dark",
+                "cursorColor": "#FFFFFD",
+                "fontFace": "Cascadia Code PL",
+                "suppressApplicationTitle": true,
+                "useAcrylic": true  
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl",
+                // personnalisation
+                "acrylicOpacity": 0.9,
+                "antialiasingMode": "cleartype",
+                "colorScheme": "One Half Dark",
+                "cursorColor": "#FFFFFD",
+                "fontFace": "Cascadia Code PL",
+                "suppressApplicationTitle": true,
+                "useAcrylic": true
+            }
 
-            ]
+        ]
     },
     ```
 
