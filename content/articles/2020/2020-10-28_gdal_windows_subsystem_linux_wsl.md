@@ -167,6 +167,48 @@ PS C:\Users\geojulien> wsl -d Ubuntu-20.04 -- ogrinfo --version
 GDAL 3.1.3, released 2020/09/01
 ```
 
+### Lancer des commandes réalistes
+
+L'un des atouts de ce montage est de pouvoir exécuter GDAL (ou tout autre commande propre à la distribution) à l'intérieur de la VM (Ubuntu) mais en pointant de façon transparente sur le système de fichiers hôté (Windows).
+
+Petit scénario d'exemple : je veux télécharger une donnée ouverte (au hasard : [les bassin de mobilité scolaire en Normandie](https://www.data.gouv.fr/fr/datasets/bassins-de-mobilite-scolaire-normandie/)), vérifier rapidement son état avec `ogrinfo` puis la transformer en GeoPackage parce-que c'est la hype.
+
+Voici ce que ça donne en utilisant Powershell :
+
+#### Télécharger la donnée avec wget
+
+A l'instar des autres utilitaires intégrés de base dans Ubuntu, `wget` n'attend que d'être utilisé
+
+```powershell
+# wget est accessible, pourquoi se priver ?
+wsl -d Ubuntu-20.04 -- wget https://www.data.gouv.fr/fr/datasets/r/931cb357-33e6-46d6-8d2c-a17be9038e90 -O test_gdal_wsl.shp.zip
+```
+
+Et voilà mon fichier dans mon explorateur Windows :
+
+![]()
+
+#### Un petit ogrinfo des familles
+
+De même
+
+```powershell
+# ogrinfo
+wsl -d Ubuntu-20.04 -- ogrinfo -al -so test_gdal_wsl.shp.zip
+```
+
+![]()
+
+#### Contribuons à la fin du règne du Shapefiles
+
+Histoi
+
+```powershell
+wsl -d Ubuntu-20.04 -- ogr2ogr -t_srs EPSG:3857 -f GPKG "geotribu_gdal_wsl_gpkg.gpkg" "test_gdal_wsl.shp.zip" -nln "GDAL_Windows_SO_SIMPLE" -nlt POLYGON -dim 2 -overwrite -makevalid
+```
+
+![]()
+
 ----
 
 ## Bonux stage
@@ -176,7 +218,7 @@ GDAL 3.1.3, released 2020/09/01
 Dans le nouveau terminal, il est possible de [personnaliser chaque shell répertorié](https://docs.microsoft.com/fr-fr/windows/terminal/customize-settings/profile-settings) histoire de s'y retrouver facilement ou tout simplement de faire les choses à son goût.
 
 ??? "Ma configuration (objet `profiles/list`)"
-    ```json
+    ```jsonc
     {
     "list":
         [
