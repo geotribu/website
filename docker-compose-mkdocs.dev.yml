@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   website:
-    container_name: geotribu-mkdocs
+    container_name: geotribu-mkdocs-site
     image: geotribu-static-mkdocs
     build:
       context: .
@@ -13,4 +13,4 @@ services:
       - 8000:8000
     volumes:
       - .:/app
-    command: mkdocs serve --config-file mkdocs.yml --dirtyreload --dev-addr=0.0.0.0:8000
+    command: mkdocs serve --dirtyreload --dev-addr=0.0.0.0:8000

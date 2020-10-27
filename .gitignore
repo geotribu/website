@@ -209,3 +209,11 @@ Thumbs.db
 # #########################
 
 *node_modules*
+
+# #########################
+# ####### Custom  #########
+# #########################
+
+markdown-lint-report.txt
+package.json
+markdown-lint-report-added.txt

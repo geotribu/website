@@ -1,10 +1,11 @@
 title: Contribuer
 
-arrange:
+nav:
     - introduction.md
     - requirements.md
     - contribution_guide.md
+    - edit
+    - build_site
     - guides
-    - online
-    - local
+    - ...
     - archives

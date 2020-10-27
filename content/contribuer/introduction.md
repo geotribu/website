@@ -18,13 +18,10 @@ Bref, c'est ouvert :wink: :smile: ! Pas besoin d'être dans l'équipe _officiell
 
     Même s'il n'y a pas de charte établie, merci de réserver les communiqués de presse ou les copiés/collés de communication commerciale à d'autres sites dont c'est la vocation. Par exemple : [Décryptagéo](https://decryptageo.fr/), [GeoRezo](https://georezo.net/forum/viewforum.php?id=14)
 
-Voici les étapes :
-
-- **s'assurer de remplir** les [prérequis techniques](../requirements)
-- **configurer** [l'édition locale](../local/local_edition_setup)
-- **suivre** le [guide de contribution](../contribution_guide)
-
 !!! question
 
-    Un blocage ? Un souci ? Une angoise exitentielle apparue pendant le procédé de contribution ?
-    N'hésitez pas à nous contacter sur les réseaux sociaux ou [par email :email:](mailto:geotribu@gmail.com).
+    Un blocage ? Un souci ? Une angoise existentielle apparue pendant le procédé de contribution ?
+    N'hésitez pas à nous contacter sur [Slack](https://geotribu.slack.com/), les réseaux sociaux ([Twitter de Julien](https://twitter.com/geojulien)) ou [par email :email:](mailto:geotribu@gmail.com).
+
+[Prochaine étape : vérifier les prérequis :fontawesome-solid-step-forward:](/contribuer/requirements/){: .md-button }
+{: align=middle }

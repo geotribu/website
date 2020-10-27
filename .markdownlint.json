@@ -1,0 +1,43 @@
+{
+    // Enable all markdownlint rules
+    "default": true,
+    "MD003": {
+        "style": "atx"
+    },
+    // Set list indent level to 4 which Python-Markdown requires
+    "MD007": {
+        "indent": 4
+    },
+    "MD013": false,
+    "MD024": {
+        "allow_different_nesting": true
+    },
+    "MD025": {
+        "front_matter_title": ""
+    },
+    "MD026": {
+        "punctuation": ".,;:。，；："
+    },
+    // Set Ordered list item prefix to "ordered" (use 1. 2. 3. not 1. 1. 1.)
+    "MD029": {
+        "style": "ordered"
+    },
+    "MD035": {
+        "style": "----"
+    },
+    "MD041": {
+        "front_matter_title": "^\\s*title\\s*[:=]"
+    },
+    "no-hard-tabs": true,
+    "no-inline-html": {
+        "allowed_elements": [
+            "blockquote",
+            "iframe",
+            "video"
+        ]
+    },
+    "MD046": {
+        "style": "fenced"
+    },
+    "no-trailing-spaces": true
+}
