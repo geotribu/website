@@ -92,6 +92,80 @@ Pour ce tutoriel, on a besoin d'[Ubuntu 20.04](https://www.microsoft.com/store/a
 
 ----
 
+## Bonux stage
+
+### Personnaliser le terminal
+
+Dans le nouveau terminal, il est possible de [personnaliser chaque shell répertorié](https://docs.microsoft.com/fr-fr/windows/terminal/customize-settings/profile-settings) histoire de s'y retrouver facilement ou tout simplement de faire les choses à son goût.
+
+??? "Ma configuration (objet `profiles/list`)"
+    ```json
+    {
+    "list":
+            [
+                {
+                    // Make changes here to the powershell.exe profile.
+                    "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                    "name": "Windows PowerShell",
+                    "commandline": "powershell.exe",
+                    "hidden": false
+                },
+                {
+                    // Make changes here to the cmd.exe profile.
+                    "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                    "name": "Invite de commandes",
+                    "commandline": "cmd.exe",
+                    "hidden": false
+                },
+                {
+                    "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                    "hidden": true,
+                    "name": "Azure Cloud Shell",
+                    "source": "Windows.Terminal.Azure"
+                },
+                {
+                    "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                    "hidden": false,
+                    "name": "Debian",
+                    "source": "Windows.Terminal.Wsl"
+                },
+                {
+                    "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                    "hidden": false,
+                    "name": "Ubuntu-18.04",
+                    "source": "Windows.Terminal.Wsl",
+                    // personnalisation
+                    "acrylicOpacity": 0.9,
+                    "antialiasingMode": "cleartype",
+                    "colorScheme": "Solarized Dark",
+                    "cursorColor": "#FFFFFD",
+                    "fontFace": "Cascadia Code PL",
+                    "suppressApplicationTitle": true,
+                    "useAcrylic": true  
+                },
+                {
+                    "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                    "hidden": false,
+                    "name": "Ubuntu-20.04",
+                    "source": "Windows.Terminal.Wsl",
+                    // personnalisation
+                    "acrylicOpacity": 0.9,
+                    "antialiasingMode": "cleartype",
+                    "colorScheme": "One Half Dark",
+                    "cursorColor": "#FFFFFD",
+                    "fontFace": "Cascadia Code PL",
+                    "suppressApplicationTitle": true,
+                    "useAcrylic": true
+                }
+
+            ]
+    },
+    ```
+
+Et j'ai commenté la partie correspondant au shell Azure.
+
+----
+
 ## Ressources
 
 - <https://docs.microsoft.com/fr-fr/windows/wsl/install-win10>
