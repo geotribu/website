@@ -1,7 +1,7 @@
 ---
 title: "Utiliser GDAL avec WSL"
 authors: ["Julien MOURA"]
-categories: ["article"]
+categories: ["article", "tutoriel"]
 date: "2020-10-28 10:20"
 description: "En restaurant les géogames de Geotribu, des mini-jeux sur la culture générale en cartographie et géomatique, j'ai trouvé un jeu qui n'avait jamais été publié qui consiste à associer les déserts à leurs continents. Saurez-vous ne pas finir privé/e de désert ?"
 image: "https://cdn.geotribu.fr/img/tuto/gdal_wsl/ubuntu_wsl_landing_page.png"
@@ -23,9 +23,9 @@ Pré-requis :
 
 ![icône GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
 
-Deux étapes dans cet article :
+Deux étapes dans ce tutoriel :
 
-- [installer et configurer le sous-système](#installer-wsl)
+- [installer et configurer le sous-système](#installer-wsl) Windows pour Linux
 - utiliser le sous-système pour [utiliser GDAL 3.1.4 dans Ubuntu 20.04](#utiliser-gdal-dans-le-sous-systeme-linux-de-windows) sans quitter son terminal Windows
 
 ## Installer WSL
@@ -99,7 +99,7 @@ Une fois notre distribution installée, continuons nos opérations sur notre nou
 
 Avant d'aller plus loin, quelques commandes à retenir, qui sont évidemment disponibles (et même traduites !) via l'argument `--help` :
 
-[![Texte remplacement](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_terminal_tabs.png "Titre image"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_terminal_tabs.png){: data-mediabox="ligthbox-gallery" data-title="Légende image"}
+[![Onglets WSL dans Windows Terminal](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_terminal_tabs.png "Titre image"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_terminal_tabs.png){: data-mediabox="ligthbox-gallery" data-title="Changer de shell encore plus facilement que de chemise"}
 
 ### Lister les distributions installées
 
@@ -147,8 +147,7 @@ sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable && sudo apt-get update
 Puis, on installe GDAL :
 
 ```bash
-sudo apt-get install gdal-bin=$GDAL_VERSION
-sudo apt-get install libgdal-dev=$GDAL_VERSION
+sudo apt install gdal-bin=$GDAL_VERSION libgdal-dev=$GDAL_VERSION
 export CPLUS_INCLUDE_PATH=/usr/include/gdal
 export C_INCLUDE_PATH=/usr/include/gdal
 ```
@@ -156,28 +155,32 @@ export C_INCLUDE_PATH=/usr/include/gdal
 Et enfin, on vérifie que tout va bien :
 
 ```bash
-$ gdal-config --version
-3.1.3
+$ ogrinfo --version
+GDAL 3.1.3, released 2020/09/01
 ```
 
-On peut même faire cela depuis Powershell :
+### Lancer des commandes, des vraies
+
+L'un des atouts de ce système est de pouvoir exécuter GDAL (ou tout autre commande propre à la distribution) à l'intérieur de la VM (Ubuntu) mais en pointant de façon transparente sur le système de fichiers hôte (Windows).
+
+Par exemple, on peut directement lancer la commande précédente depuis Powershell :
 
 ```powershell
 PS C:\Users\geojulien> wsl -d Ubuntu-20.04 -- ogrinfo --version
 GDAL 3.1.3, released 2020/09/01
 ```
 
-### Lancer des commandes réalistes
+Pour aller plus loin, considérons un petit scénario d'exemple dans lequel on souhaite :
 
-L'un des atouts de ce montage est de pouvoir exécuter GDAL (ou tout autre commande propre à la distribution) à l'intérieur de la VM (Ubuntu) mais en pointant de façon transparente sur le système de fichiers hôté (Windows).
+1. télécharger une donnée ouverte (au hasard : [les bassin de mobilité scolaire en Normandie](https://www.data.gouv.fr/fr/datasets/bassins-de-mobilite-scolaire-normandie/), version convertie à la volée),
+2. vérifier rapidement son état avec `ogrinfo`
+3. convertir en couche de GeoPackage (parce-que c'est la hype), en appliquant des contrôles géométriques
 
-Petit scénario d'exemple : je veux télécharger une donnée ouverte (au hasard : [les bassin de mobilité scolaire en Normandie](https://www.data.gouv.fr/fr/datasets/bassins-de-mobilite-scolaire-normandie/)), vérifier rapidement son état avec `ogrinfo` puis la transformer en GeoPackage parce-que c'est la hype.
-
-Voici ce que ça donne en utilisant Powershell :
+Et tout ça, en lançant les commandes depuis Powershell !
 
 #### Télécharger la donnée avec wget
 
-A l'instar des autres utilitaires intégrés de base dans Ubuntu, `wget` n'attend que d'être utilisé
+A l'instar des autres utilitaires intégrés de base dans Ubuntu, `wget` n'attend que d'être utilisé via WSL :
 
 ```powershell
 # wget est accessible, pourquoi se priver ?
@@ -186,18 +189,18 @@ wsl -d Ubuntu-20.04 -- wget https://www.data.gouv.fr/fr/datasets/r/931cb357-33e6
 
 Et voilà mon fichier dans mon explorateur Windows :
 
-![]()
+[![capture wget wsl](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_test_wget_download.png "Résultat du téléchargement avec wget dans Windows"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_test_wget_download.png){: data-mediabox="ligthbox-gallery" data-title="Résultat du téléchargement avec wget dans Windows"}
 
 #### Un petit ogrinfo des familles
 
-De même
+On peut donc regarder de plus près notre fichier téléchargé avec un bon vieux [ogrinfo] :
 
 ```powershell
 # ogrinfo
 wsl -d Ubuntu-20.04 -- ogrinfo -al -so test_gdal_wsl.shp.zip
 ```
 
-![]()
+[![capture wsl ogrinfo](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogrinfo.png "ogrinfo dans Windows via WSL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogrinfo.png){: data-mediabox="ligthbox-gallery" data-title="ogrinfo dans Windows via WSL"}
 
 #### Contribuons à la fin du règne du Shapefiles
 
@@ -207,7 +210,7 @@ Histoi
 wsl -d Ubuntu-20.04 -- ogr2ogr -t_srs EPSG:3857 -f GPKG "geotribu_gdal_wsl_gpkg.gpkg" "test_gdal_wsl.shp.zip" -nln "GDAL_Windows_SO_SIMPLE" -nlt POLYGON -dim 2 -overwrite -makevalid
 ```
 
-![]()
+[![capture qgis résultat ogr2ogr](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogr2ogr_result_qgis.png "ogrinfo dans Windows via WSL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogr2ogr_result_qgis.png){: data-mediabox="ligthbox-gallery" data-title="La couche du geopackage dans QGIS en sortie d'ogr2ogr via WSL"}
 
 ----
 
