@@ -102,7 +102,7 @@ Une fois le sous-système prêt, il est temps d'installer une ou plusieurs distr
 3. Mettre à jour les paquets avec un bon vieux `sudo apt update && sudo apt upgrade`
 4. Fermer la fenêtre
 
-Volà, désormais nous avons notre distribution Ubuntu 20.04 prête à être utilisée dans notre Windows. Allez, on s'arrrrête pas en si bon chemin : on continue vers l'installation de GDAL !
+Voilà, désormais nous avons notre distribution Ubuntu 20.04 prête à être utilisée dans notre Windows. Allez, on ne s'arrête pas en si bon chemin : on continue vers l'installation de GDAL !
 
 ----
 
@@ -185,7 +185,7 @@ GDAL 3.1.3, released 2020/09/01
 
 Pour aller plus loin, considérons un petit scénario d'exemple dans lequel on souhaite :
 
-1. télécharger une donnée ouverte (au hasard : [les bassin de mobilité scolaire en Normandie](https://www.data.gouv.fr/fr/datasets/bassins-de-mobilite-scolaire-normandie/), version convertie à la volée),
+1. télécharger une donnée ouverte (au hasard : [les bassins de mobilité scolaire en Normandie](https://www.data.gouv.fr/fr/datasets/bassins-de-mobilite-scolaire-normandie/), version convertie à la volée),
 2. vérifier rapidement son état avec [ogrinfo]
 3. convertir en couche de GeoPackage (parce-que c'est la hype), en appliquant des contrôles géométriques
 
