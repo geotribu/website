@@ -237,6 +237,8 @@ Libre à vous de faire jouer votre imagination et votre sens artistique, et n'h�
 
 ## Auteur
 
+### Aurélien Chaumet
+
 ![Portrait Aurélien Chaumet](https://cdn.geotribu.fr/img/internal/contributeurs/achaumet.jpg "Portrait Aurélien Chaumet"){: .img-rdp-news-thumb loading=lazy }
 
 Ingénieur en Aménagement du territoire, je suis arrivé à la géomatique par un hasard de parcours professionnel en 2016, suite à mon admission au concours d'ingénieur territorial.

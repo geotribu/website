@@ -41,11 +41,24 @@ plugins:
       separator: '[\s\-\.]+'
   - redirects:
       redirect_maps:
+        # RSS
+        "rss.md": "https://static.geotribu.fr/feed_rss_created.xml"
+        # contenus
         "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
+        "node/348.md": "rdp/2011/rdp_2011-02-25.md"
         "node/462.md": "articles/2011/art_2011-11-09.md"
+        "node/488.md": "rdp/2012/rdp_2012-01-13.md"
+        "node/532.md": "articles/2012/art_2012-07-12.md"
         "node/636.md": "articles/2013/art_2013-09-26.md"
+        # correction de la structure initiale de la résurrection
         "rdp/rdp_2020-04-30.md": "rdp/2020/rdp_2020-04-30.md"
-
+        # geogames
+        "node/668.md": "articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig.md"
+        "node/671.md": "https://geotribu.github.io/geogames/"
+        "node/675.md": "articles/2013/art_2013-11-20_geogame_mots_croises_webmapping.md"
+        "node/679.md": "articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md"
+        "node/689.md": "articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md"
+        "node/680.md": "articles/2014/art_2014-03-19_geogame_pendu_geomatique.md"
 
 # Theme
 theme:
@@ -116,8 +129,8 @@ markdown_extensions:
   - admonition
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
-  - pymdownx.details
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -139,7 +152,7 @@ markdown_extensions:
   - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
-      permalink: ⚓
+      permalink: "#"
 
 # Navigation - Menu organization
 # # Disabled to use auto detection
