@@ -152,7 +152,7 @@ markdown_extensions:
   - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
-      permalink: ⚓
+      permalink: "#"
 
 # Navigation - Menu organization
 # # Disabled to use auto detection
