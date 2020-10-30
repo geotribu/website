@@ -29,7 +29,7 @@ J'ai à ma disposition un ordinateur puissant sous Windows, mais l'accès à GDA
 
 Alors pourquoi ne pas essayer de mettre à profit WSL que [j'utilise déjà pour le développement ou le test](https://twitter.com/geojulien/status/1139811447414775808) ?
 
-[![Architecture WSL 2](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl2_architecture.png "UArchitecture WSL 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl2_architecture.png){: data-mediabox="ligthbox-gallery" data-title="UArchitecture WSL 2"}
+[![Architecture WSL 2](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl2_architecture.png "UArchitecture WSL 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl2_architecture.png){: data-mediabox="ligthbox-gallery" data-title="Architecture WSL 2"}
 
 WSL ? Le Windows Subsystem for Linux (dont [le code du noyau est sous GPL-2](https://github.com/microsoft/WSL2-Linux-Kernel)) permet depuis quelques années déjà de faire tourner un terminal bash sous Windows et ainsi bénéficier de l'usage des programmes populaires de l'écosystème Linux. Dans ce tutoriel, nous verrons comment installer et configurer WSL sur Windows 10, puis nous verrons les possibilités que cela ouvre en installant et utilisant GDAL dans le sous-système Linux.
 
@@ -102,7 +102,7 @@ Une fois le sous-système prêt, il est temps d'installer une ou plusieurs distr
 3. Mettre à jour les paquets avec un bon vieux `sudo apt update && sudo apt upgrade`
 4. Fermer la fenêtre
 
-Volà, désormais nous avons notre distribution Ubuntu 20.04 prête à être utilisée dans notre Windows. Allez, on s'arrrrête pas en si bon chemin : on continue vers l'installation de GDAL !
+Voilà, désormais nous avons notre distribution Ubuntu 20.04 prête à être utilisée dans notre Windows. Allez, on ne s'arrête pas en si bon chemin : on continue vers l'installation de GDAL !
 
 ----
 
@@ -185,7 +185,7 @@ GDAL 3.1.3, released 2020/09/01
 
 Pour aller plus loin, considérons un petit scénario d'exemple dans lequel on souhaite :
 
-1. télécharger une donnée ouverte (au hasard : [les bassin de mobilité scolaire en Normandie](https://www.data.gouv.fr/fr/datasets/bassins-de-mobilite-scolaire-normandie/), version convertie à la volée),
+1. télécharger une donnée ouverte (au hasard : [les bassins de mobilité scolaire en Normandie](https://www.data.gouv.fr/fr/datasets/bassins-de-mobilite-scolaire-normandie/), version convertie à la volée),
 2. vérifier rapidement son état avec [ogrinfo]
 3. convertir en couche de GeoPackage (parce-que c'est la hype), en appliquant des contrôles géométriques
 
@@ -245,6 +245,7 @@ Et on ouvre notre couche dans QGIS :
 Dans le nouveau terminal, il est possible de [personnaliser chaque shell répertorié](https://docs.microsoft.com/fr-fr/windows/terminal/customize-settings/profile-settings) histoire de s'y retrouver facilement ou tout simplement de faire les choses à son goût.
 
 ??? example "Ma configuration (objet `profiles/list`)"
+    <!-- markdownlint-disable MD046 -->
     ```jsonc
     {
     "list":
@@ -307,6 +308,7 @@ Dans le nouveau terminal, il est possible de [personnaliser chaque shell répert
         ]
     },
     ```
+    <!-- markdownlint-enable MD046 -->
 
 Et j'ai commenté la partie correspondant au shell Azure.
 
