@@ -18,4 +18,4 @@ mkdocs-git-revision-date-localized-plugin>=0.6,<0.8
 mkdocs-material>=5.4,<6.2
 mkdocs-minify-plugin==0.3.*
 mkdocs-redirects==1.0.*
-mkdocs-rss-plugin>=0.3,<0.9
+mkdocs-rss-plugin>=0.3,<0.10
