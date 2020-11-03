@@ -46,6 +46,7 @@ plugins:
         # contenus
         "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
         "node/348.md": "rdp/2011/rdp_2011-02-25.md"
+        "node/423.md": "articles/2011/art_2011-06-15.md"
         "node/462.md": "articles/2011/art_2011-11-09.md"
         "node/488.md": "rdp/2012/rdp_2012-01-13.md"
         "node/532.md": "articles/2012/art_2012-07-12.md"
