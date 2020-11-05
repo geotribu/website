@@ -12,6 +12,10 @@
   {% elif page and page.title and not page.is_homepage %}
   {% set title = title ~ " - " ~ page.title | striptags %}
   {% endif %}
+  <!-- Meta date -->
+  {% if page and page.meta and page.meta.date %}
+  {% set date = page.meta.date %}
+  {% endif %}
   <!-- Meta description -->
   {% set description = config.site_description %}
   {% if page and page.meta and page.meta.description %}
@@ -65,6 +69,30 @@
   <meta name="twitter:site" content="@geotribu" />
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:widgets:align" content="center">
+  <!-- Structured data using schema.org -->
+  {% if type == "article" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ title }}",
+      "abstract": "{{ description }}",
+      "datePublished": "{{ date }}",
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ image }}",
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Geotribu",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+        }
+    }
+    }
+  </script>
+{% endif %}
 {% endblock %}
 
 {% block config %}
