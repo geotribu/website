@@ -75,13 +75,14 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.canonical_url }}"
+      },
       "headline": "{{ title }}",
       "abstract": "{{ description }}",
       "datePublished": "{{ date }}",
-      "image": {
-        "@type": "ImageObject",
-        "url": "{{ image }}",
-      },
+      "image": "{{ image }}",
       "publisher": {
         "@type": "Organization",
         "name": "Geotribu",
@@ -89,9 +90,9 @@
           "@type": "ImageObject",
           "url": "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
         }
+      }
     }
-    }
-  </script>
+    </script>
 {% endif %}
 {% endblock %}
 
