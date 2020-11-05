@@ -28,7 +28,7 @@
   {% set author = config.site_author %}
   {% if page and page.is_homepage %}
   {% set author = author %}
-  {% if page and page.meta and page.meta.author %}
+  {% elif page and page.meta and page.meta.author %}
   {% set author = author ~ " - " ~ page.meta.author %}
   {% elif page and page.author and not page.is_homepage %}
   {% set author = author ~ " - " ~ page.author | striptags %}
