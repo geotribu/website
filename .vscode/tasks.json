@@ -47,7 +47,7 @@
                 "mkdocs",
                 "serve",
                 "-f",
-                "mkdocs.yml",
+                "mkdocs-minimal.yml",
                 "--dirtyreload"
             ],
             "presentation": {

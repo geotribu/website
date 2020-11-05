@@ -1,8 +1,7 @@
 ---
-title: "Configurer l'environnement pour l'édition locale des contenus de Geotribu"
-Category: tutoriel
-Date: 2020-07-23 10:20
-hero: "Configurer son environnement pour l'édition locale"
+title: "Configurer l'environnement pour l'édition en local"
+category: tutoriel
+date: 2020-07-23 10:20
 tags: contribution,édition,markdown,guide
 ---
 
@@ -79,7 +78,6 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
     ```
 
 !!! tip
-
     Le projet est configuré pour mettre semi-automatiquement à jour certaines dépendances. Il est donc recommandé de  mettre son environnement virtuel local à jour avant de contribuer : `pip install -U -r requirements.txt`.
 
 ----
@@ -133,10 +131,10 @@ Puis de lancer la commande qui lance le site en local avec rechargement automati
 mkdocs serve
 
 # il existe aussi un mode où le rechargement automatique est plus rapide mais ne concerne que la page modifiée
-mkdocs serve -f mkdocs.yml --dirtyreload
+mkdocs serve -f mkdocs-minimal.yml --dirtyreload
 
 # si besoin, il est évidemment possible de spécifier le port
-mkdocs serve -f mkdocs.yml --dirtyreload -a localhost:8085
+mkdocs serve -f mkdocs-minimal.yml --dirtyreload -a localhost:8085
 ```
 
 Par défaut, le site est accessible sur : <http://localhost:8000> mais il est évidemment possible de spécifier le port à utiliser : `mkdocs serve -a localhost:8085`.
