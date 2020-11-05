@@ -26,19 +26,29 @@
   {% endif %}
   <!-- Meta author -->
   {% set author = config.site_author %}
-  {% if page and page.is_homepage %}
-  {% set author = author %}
-  {% elif page and page.meta and page.meta.author %}
-  {% set author = author ~ " - " ~ page.meta.author %}
-  {% elif page and page.author and not page.is_homepage %}
-  {% set author = author ~ " - " ~ page.author | striptags %}
+  {% if page and page.meta and page.meta.authors and not page.is_homepage %}
+  {% set author = page.meta.authors %}
+  {% elif page and page.meta and page.meta.author and not page.is_homepage %}
+  {% set author = page.meta.author %}
   {% endif %}
+
+  {% if author is iterable and (author is not string and author is not mapping) %}
+  {% for a in author %}
+  {% if author != config.site_author %}
+  <meta name="author" content="{{ a }}">
+  {% endif %}
+  {% endfor %}
+  {% elif author is string and author != config.site_author %}
+  <meta name="author" content="{{ author }}">
+  {% endif %}
+
   <!-- Meta type -->
   {% if page.is_homepage %}
   {% set type = "website" %}
   {% else %}
   {% set type = "article" %}
   {% endif %}
+
   <!-- OpenGraph -->
   <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="{{ image }}">
