@@ -30,22 +30,28 @@
   {% set author = author ~ " - " ~ page.meta.author %}
   {% elif page and page.author and not page.is_homepage %}
   {% set author = author ~ " - " ~ page.author | striptags %}
+  <!-- Meta type -->
+  {% if page.is_homepage %}
+  {% set type = "website" %}
+  {% else %}
+  {% set type = "article" %}
   {% endif %}
   <!-- OpenGraph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:url" content="{{ page.canonical_url }}">
   <meta property="og:image" content="{{ image }}">
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:type" content="{{ type }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
   <!-- Twitter -->
-  <meta name="twitter:dnt" content="on">
-  <meta name="twitter:widgets:align" content="center">
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@geotribu" />
   <meta name="twitter:creator" content="@geojulien" />
-  <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:dnt" content="on">
   <meta name="twitter:image" content="{{ image }}">
+  <meta name="twitter:site" content="@geotribu" />
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:widgets:align" content="center">
 {% endblock %}
 
 {% block config %}
