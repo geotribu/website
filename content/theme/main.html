@@ -3,14 +3,18 @@
 {% block extrahead %}
   <meta property="robots" content="all" />
   <!-- RSS Feed -->
-  <link rel="alternate" type="application/rss+xml" title="RSS feed of created content" href="feed_rss_created.xml">
-  <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="feed_rss_updated.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS feed of created content" href="/feed_rss_created.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="/feed_rss_updated.xml">
   <!-- Meta title -->
   {% set title = config.site_name %}
   {% if page and page.meta and page.meta.title %}
   {% set title = title ~ " - " ~ page.meta.title %}
   {% elif page and page.title and not page.is_homepage %}
   {% set title = title ~ " - " ~ page.title | striptags %}
+  {% endif %}
+  <!-- Meta date -->
+  {% if page and page.meta and page.meta.date %}
+  {% set date = page.meta.date %}
   {% endif %}
   <!-- Meta description -->
   {% set description = config.site_description %}
@@ -24,21 +28,71 @@
   {% if page and page.meta and page.meta.image %}
   {% set image = page.meta.image %}
   {% endif %}
+  <!-- Meta author -->
+  {% set author = config.site_author %}
+  {% if page and page.meta and page.meta.authors and not page.is_homepage %}
+  {% set author = page.meta.authors %}
+  {% elif page and page.meta and page.meta.author and not page.is_homepage %}
+  {% set author = page.meta.author %}
+  {% endif %}
+
+  {% if author is iterable and (author is not string and author is not mapping) %}
+  {% for a in author %}
+  {% if author != config.site_author %}
+  <meta name="author" content="{{ a }}">
+  {% endif %}
+  {% endfor %}
+  {% elif author is string and author != config.site_author %}
+  <meta name="author" content="{{ author }}">
+  {% endif %}
+
+  <!-- Meta type -->
+  {% if page.is_homepage %}
+  {% set type = "website" %}
+  {% else %}
+  {% set type = "article" %}
+  {% endif %}
+
   <!-- OpenGraph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:url" content="{{ page.canonical_url }}">
   <meta property="og:image" content="{{ image }}">
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:type" content="{{ type }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
   <!-- Twitter -->
-  <meta name="twitter:dnt" content="on">
-  <meta name="twitter:widgets:align" content="center">
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@geotribu" />
   <meta name="twitter:creator" content="@geojulien" />
-  <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:dnt" content="on">
   <meta name="twitter:image" content="{{ image }}">
+  <meta name="twitter:site" content="@geotribu" />
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:widgets:align" content="center">
+  <!-- Structured data using schema.org -->
+  {% if type == "article" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ title }}",
+      "abstract": "{{ description }}",
+      "datePublished": "{{ date }}",
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ image }}",
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Geotribu",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+        }
+    }
+    }
+  </script>
+{% endif %}
 {% endblock %}
 
 {% block config %}
