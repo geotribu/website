@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "c:\\Users\\jmoura\\Documents\\Git\\Geotribu\\website\\.venv\\Scripts\\python.exe",
+    "python.pythonPath": ".venv\\Scripts\\python.exe",
     "python.formatting.provider": "black",
     "python.linting.enabled": false,
     "git.ignoreLimitWarning": true,
