@@ -2,7 +2,7 @@ articles:
     - content/articles/**/*.md
 
 ci-cd:
-    - .github/**/*
+    - .github/**/*.yml
 
 contribution:
     - content/contribuer/**/*.md
