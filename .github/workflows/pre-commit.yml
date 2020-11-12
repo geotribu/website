@@ -33,4 +33,4 @@ jobs:
         key: pre-commit|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
 
     - name: Ensure code rules using pre-commit
-      uses: pre-commit/action@v1.0.1
+      uses: pre-commit/action@v2.0.0
