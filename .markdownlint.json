@@ -31,8 +31,10 @@
     "no-hard-tabs": true,
     "no-inline-html": {
         "allowed_elements": [
+            "a",
             "blockquote",
             "iframe",
+            "p",
             "video"
         ]
     },
