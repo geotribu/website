@@ -19,11 +19,12 @@ tags: "OpenStreetMap,Street Complete,contribution,Android"
 
 ![icône Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-rdp-news-thumb }
 
-Je dois vous avouer quelque-chose : cela fait quelques années déjà que je ne contribue plus de façon assidue à OpenStreetMap. Le principal frein est le manque de temps, notamment dû à la complexité que revêt la contribution quand on veut faire ça "proprement".
+Je dois vous avouer quelque-chose : cela fait quelques années déjà que je ne contribue plus de façon assidue à OpenStreetMap. Le principal frein est le manque de temps, notamment dû à la complexité que revêt la contribution quand on veut faire cela "proprement".
 
-Au-delà de mon propre cas, je n'ai jamais réussi à convaincre des amis de contribuer qui n'étaient pas déjà des géo-machins ou des geeks plus ou moins politisés. Or, à mon sens, l'un des enjeux de la pérennité du projet réside dans sa capacité à engranger de nouveaux contributeurs/ices et avec des profils plus diversifiés.
+Au-delà de mon propre cas, je n'ai jamais réussi à convaincre des amis de contribuer qui n'étaient pas déjà des géo-machins ou des geeks plus ou moins politisés. On me rétorque souvent que c'est trop lourd et long pour juste renseigner les petites infos qui seraient intéressantes d'un point de vue d'un utilisateur grand public : numéro de boîte, nom d'un commerce, horaires d'ouverture, etc.
+Or, à mon sens, l'un des enjeux de la pérennité du projet réside dans sa capacité à engranger de nouveaux contributeurs/ices et avec des profils plus diversifiés.
 
-Et au début de l'été, j'ai fait la connaissance de Street Complete, une application qui facilite grandement la contribution en plus de la rendre ludique. Petite présentation.
+Et au milieu du dernier printemps, j'ai fait la connaissance de Street Complete, une application qui facilite grandement la contribution en plus de la rendre ludique. Petite présentation en guise de coup de pub.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
