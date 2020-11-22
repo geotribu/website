@@ -33,7 +33,7 @@ Et au milieu du dernier printemps, j'ai fait la connaissance de Street Complete,
 
 ## Présentation
 
-[![Quête : typologie des bâtiments](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_carte.jpg "Quête : typologie des bâtiments"){: loading=lazy align=left clear=right width=150px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_carte.jpg){: data-mediabox="lightbox-gallery" data-title="Quête : typologie des bâtiments"}
+[![La carte de Street Complete](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_carte.jpg "La carte de Street Complete"){: loading=lazy align=left clear=right width=150px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_carte.jpg){: data-mediabox="lightbox-gallery" data-title="Chaque marqueur correspond à une question/quête"}
 
 Sponsorisée entre autres par le ministère de l'éducation et de la recherche de l'Allemagne et soutenue par la fondation OSM, Street Complete est une [application open source pour smartphone Android](https://github.com/westnordost/StreetComplete) qui propose de contribuer à la base OpenStreetMap au travers d'un système de questions simples sur les éléments environnants.
 
@@ -43,7 +43,7 @@ Je trouve que le design de l'application est soigné et se différencie des inte
 
 ### Quêtes et rangs
 
-Pour rendre le tout attrayant, l'application suit les préceptes de la Ludification. Les questions sont en fait des "quêtes" et renseigner des informations est récompensé par des "rangs", pour donner l'impression que le/a contributeur/rice est en fait un/e joueur/se (sans non plus duper l'utilisateur/rice). Les quêtes sont catégorisées selon le type d'informations renseigné. La liste des quêtes est documentée dans [le wiki d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/FR:StreetComplete/Quests).
+Pour rendre le tout attrayant, l'application suit les préceptes de la [ludification]. Les questions sont en fait des "quêtes" et renseigner des informations est récompensé par des "rangs", pour donner l'impression que le/a contributeur/rice est en fait un/e joueur/se. Les quêtes sont catégorisées selon le type d'informations renseigné. La liste des quêtes est documentée dans [le wiki d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/FR:StreetComplete/Quests).
 
 [![Quête : typologie des bâtiments](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_batiment.jpg "Quête : typologie des bâtiments"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_batiment.jpg){: data-mediabox="lightbox-gallery" data-title="Quête : typologie des bâtiments"}
 [![Quête : bornes de recyclage](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_dechets.jpg "Quête : bornes de recyclage"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_dechets.jpg){: data-mediabox="lightbox-gallery" data-title="Quête : bornes de recyclage"}
@@ -76,3 +76,6 @@ Pour finir, voici une vidéo de l'utilisation (elle date d'avril donc il y a eu 
 ## Auteur
 
 --8<-- "content/team/jmou.md"
+
+<!-- Hyperlinks reference -->
+[ludification]: https://fr.wikipedia.org/wiki/Ludification
