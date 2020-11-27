@@ -1,6 +1,6 @@
 title: Revues de presse
 
-arrange:
+nav:
     - index.md
     - "2020"
     - "2017"

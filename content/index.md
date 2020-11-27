@@ -1,15 +1,17 @@
 ---
-Title: Bienvenue sur Geotribu
+title: "Bienvenue"
 Category: global
 Date: 2020-03-20 10:20
-tags: homepage,accueil,geotribu,bienvenue,global
+description: "Bienvenue sur Geotribu, le site indépendant de veille sur la géomatique libre. Retrouvez nos articles, tutoriels et nos revues de presse (#GeoRDP) sur l'information géographique, les SIG, la cartographie, la représentation des données géographiques... Globalement, tout ce qui mêle géographie et informatique."
+hero: "Bienvenue sur Geotribu !"
+tags: bienvenue,géomatique,sig,géographie,dataviz,geordp,accueil,geotribu
 ---
 
-# Accueil
+# Bienvenue
 
-Bienvenue sur Geotribu !
+Bienvenue sur le site de Geotribu !
 
-![Bannière Géotribu](https://cdn.geotribu.fr/images/internal/charte/geotribu_banner.jpg)
+![Bannière Géotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg "Bannière Geotribu"){: loading=lazy }
 
 ----
 
@@ -21,8 +23,10 @@ Bienvenue sur Geotribu !
 
 Il est possible de suivre l'évolution de nos contenus via les deux flux RSS qui sont générés avec le [plugin RSS pour MkDocs](https://guts.github.io/mkdocs-rss-plugin/) à partir de l'historique Git :
 
-- [l'un pour les derniers contenus créés](/feed_rss_created.xml)
-- [l'autre pour les derniers contenus mis à jour](/feed_rss_updated.xml)
+| Derniers contenus créés | Derniers contenus mis à jour |
+| :---------------------: | :--------------------------: |
+| [feed_rss_created.xml](/feed_rss_created.xml) | [feed_rss_updated.xml](/feed_rss_updated.xml) |
+| [![Feedly button](https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-big_2x.png "Follow us on Feedly"){: width=130 height= 50 loading=lazy }](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fstatic.geotribu.fr%2Ffeed_rss_created.xml) | [![Feedly button](https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-big_2x.png "Follow us on Feedly"){: width=130 height= 50 loading=lazy }](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fstatic.geotribu.fr%2Ffeed_rss_updated.xml) |
 
 ----
 

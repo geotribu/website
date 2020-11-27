@@ -1,6 +1,10 @@
 # Project information
 site_name: Geotribu
-site_description: Veille libre sur la géomatique
+site_description: >-
+  Site indépendant de veille sur la géomatique libre et open source.
+  Articles, tutoriels et revues de presse (#GeoRDP) sur
+  l'information géographique, les SIG, la cartographie, la représentation des données...
+
 site_author: Geotribu
 site_url: https://static.geotribu.fr/
 copyright: '<span class="copyleft">&copy;</span> Geotribu'
@@ -23,19 +27,38 @@ plugins:
       fallback_to_build_date: true
   - minify:
       minify_html: true
+      minify_js: false
+      htmlmin_opts:
+        remove_comments: true
   - rss:
       abstract_chars_count: 500
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
   - search:
-      # prebuild_index: python
+      lang: fr
+      prebuild_index: !!python/object/apply:os.getenv ["MKDOCS_SEARCH_PREBUILD_INDEX"]
       separator: '[\s\-\.]+'
   - redirects:
       redirect_maps:
+        # RSS
+        "rss.md": "https://static.geotribu.fr/feed_rss_created.xml"
+        # contenus
         "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
+        "node/348.md": "rdp/2011/rdp_2011-02-25.md"
+        "node/423.md": "articles/2011/art_2011-06-15.md"
+        "node/462.md": "articles/2011/art_2011-11-09.md"
+        "node/488.md": "rdp/2012/rdp_2012-01-13.md"
+        "node/532.md": "articles/2012/art_2012-07-12.md"
         "node/636.md": "articles/2013/art_2013-09-26.md"
+        # correction de la structure initiale de la résurrection
         "rdp/rdp_2020-04-30.md": "rdp/2020/rdp_2020-04-30.md"
-
+        # geogames
+        "node/668.md": "articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig.md"
+        "node/671.md": "https://geotribu.github.io/geogames/"
+        "node/675.md": "articles/2013/art_2013-11-20_geogame_mots_croises_webmapping.md"
+        "node/679.md": "articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md"
+        "node/689.md": "articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md"
+        "node/680.md": "articles/2014/art_2014-03-19_geogame_pendu_geomatique.md"
 
 # Theme
 theme:
@@ -48,8 +71,8 @@ theme:
   search_index_only: true
 
   features:
-    - tabs
-    - instant
+    - navigation.tabs
+    - navigation.instant
   font: false
   icon:
     repo: fontawesome/brands/github-alt
@@ -70,6 +93,9 @@ extra:
   disqus: 'geotribu-static'  # comment system
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
+    - icon: 'fontawesome/solid/rss'
+      link: 'https://static.geotribu.fr/feed_rss_created.xml'
+      name: "S'abonner aux nouveaux contenus via RSS"
     - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/geotribu/'
       name: "L'organisation Github de Geotribu"
@@ -92,8 +118,8 @@ extra_css:
 
 extra_javascript:
   - 'theme/assets/javascripts/extra.js'
-  - 'theme/assets/javascripts/iframe-worker.js'
   - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js'
+  - 'https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js'
 
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
@@ -101,26 +127,32 @@ markdown_extensions:
   - attr_list
   # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - admonition
-  # CodeHilite - https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
-  - codehilite:
-      linenums: true
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+      use_pygments: true
   - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
       base_path: '.'
       check_paths: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed
   - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
-      permalink: ⚓
+      permalink: "#"
 
 # Navigation - Menu organization
 # # Disabled to use auto detection

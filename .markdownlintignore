@@ -1,0 +1,7 @@
+.*
+**/*.toml
+**/*.txt
+**/*.y*ml
+**/template_*.md
+node_modules/
+content/theme/

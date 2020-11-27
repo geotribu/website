@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /rdp/archives/
+
+Sitemap: https://static.geotribu.fr/sitemap.xml

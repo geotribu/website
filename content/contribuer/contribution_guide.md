@@ -1,19 +1,17 @@
 ---
-Title: Guide de contribution à Geotribu
-Category: contribution
-Date: 2020-03-20 10:20
-Tags: guide,contribuer,geotribu
+title: "Guide de contribution"
+categories: ["contribution"]
+date: 2020-03-20 10:20
+description: "Guide de contribution au site collaboratif Geotribu : processus (git flow), modifier un contenu et guides spécifiques (images, vidéos, émojis...)"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
+tags: guide,contribuer,geotribu
 ---
 
 # Guide de contribution
 
-!!! info
-
-    Page en cours de rédaction. Veuillez patienter...
-
 ## Processus (_workflow_)
 
-### 1. [Cloner le dépôt central](../local/local_edition_setup/#git) localement
+### 1. [Cloner le dépôt central](../edit/local_edition_setup/#git) localement
 
 ```bash
 git clone https://github.com/geotribu/website.git
@@ -62,7 +60,7 @@ Basculer ensuite sur la branche qui va bien :
 
 ### 3. Créer/modifier localement du contenu en markdown
 
-Le bon moment de se rappeler [comment écrire du bon markdown](../local/requirements#markdown) :wink: !
+Le bon moment de se rappeler [comment écrire du bon markdown](../requirements#markdown) :wink: !
 
 ### 4. Enregistrer sa modification
 
@@ -92,7 +90,7 @@ git commit -am "Ajout news sur la carte de la semaine"
 
 Une fois le contenu prêt pour être publié, créer une [_Pull Request_](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) de sa branche vers la branche `master` du dépôt central
 
-![Créer la pull request](https://cdn.geotribu.fr/images/internal/contribution/github_pull-request_form.png)
+![Créer la pull request](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form.png)
 
 Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publiée :smile:.
 
@@ -104,20 +102,13 @@ Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publi
     git pull
     ```  
 
-
-
 ----
 
 ## Modifier un contenu
 
 ### Texte
 
-Coucher sa prose en markdown en s'appuyant sur :
-
-- [voir un spécimen de ce qu'il est possible d'obtenir](https://squidfunk.github.io/mkdocs-material/specimen/)
-- [utiliser des blocs stylés](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
-- [insérer du code](https://squidfunk.github.io/mkdocs-material/extensions/codehilite/)
-- [astuces de rédaction (en)](https://yakworks.github.io/mkdocs-material-components/cheat-sheet/)
+Voir [le guide dédié](../guides/markdown_basics).
 
 ### Ajouter une image
 
@@ -134,6 +125,14 @@ Voir [le guide dédié](../guides/video).
 ### Utiliser un emoji
 
 Voir [le guide dédié](../guides/emoji).
+
+### Créer des diagrammes UML
+
+Voir [le guide dédié](../guides/diagrams).
+
+### Signer ses contributions
+
+Voir [le guide dédié](../guides/authoring).
 
 ----
 

@@ -1,8 +1,7 @@
 ---
-title: "Configurer l'environnement pour l'édition locale des contenus de Geotribu"
-Category: tutoriel
-Date: 2020-07-23 10:20
-hero: "Configurer son environnement pour l'édition locale"
+title: "Configurer l'environnement pour l'édition en local"
+category: tutoriel
+date: 2020-07-23 10:20
 tags: contribution,édition,markdown,guide
 ---
 
@@ -27,7 +26,7 @@ git clone https://github.com/geotribu/website.git
 
 ## Python
 
-Pour éditer localement et visualiser le résultat final avant de publier sur le dépôt, il faut installer [Python] 3.7+, les dépendances :
+Pour éditer localement et visualiser le résultat final avant de publier sur le dépôt, il faut installer [Python] 3.7 ou supérieure et les dépendances du projet. Exemple avec Ubuntu 18. 04 et Windows 10 (quelques adaptations peuvent être nécessaires):
 
 === "Bash"
 
@@ -35,9 +34,18 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
     # se rendre à la racine du dépôt local - adapter à son environnement
     cd ~/git-repos/geotribu/website/
 
+    # lister les versions de Python installées
+    ls -1 /usr/bin/python* | grep '[2-3].[0-9]$'
+
+    # si aucune version supérieure ou égale à 3.7 n'est installée, installons la dernière
+    sudo apt install python3.8
+
     # créer un environnement virtuel
-    virtualenv -p /usr/bin/python3.7 .venv
+    python3.8 -m venv .venv
     source .venv/bin/activate
+
+    # mettre à jour pip et les outils de packaging
+    pip install -U pip setuptools wheel
 
     # installer les dépendances
     python -m pip install -U -r requirements.txt
@@ -53,6 +61,9 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
     # commande à exécuter dans Powershell en mode administrateur (puis quitter le mode admin avant de continuer)
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
+    # lister les versions de Python installées
+    py --list
+
     # créer un environnement virtuel
     py -3.7 -m venv .venv   # attention ne fonctionne pas avec Python installé depuis le Windows Store
 
@@ -67,7 +78,6 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
     ```
 
 !!! tip
-
     Le projet est configuré pour mettre semi-automatiquement à jour certaines dépendances. Il est donc recommandé de  mettre son environnement virtuel local à jour avant de contribuer : `pip install -U -r requirements.txt`.
 
 ----
@@ -118,13 +128,16 @@ Puis de lancer la commande qui lance le site en local avec rechargement automati
 
 ```bash
 # servir le site avec mkdocs
-mkdocs serve -f mkdocs.yml
+mkdocs serve
 
 # il existe aussi un mode où le rechargement automatique est plus rapide mais ne concerne que la page modifiée
-mkdocs serve -f mkdocs.yml --dirtyreload
+mkdocs serve -f mkdocs-minimal.yml --dirtyreload
+
+# si besoin, il est évidemment possible de spécifier le port
+mkdocs serve -f mkdocs-minimal.yml --dirtyreload -a localhost:8085
 ```
 
-Le site est accessible sur : <http://localhost:8000>
+Par défaut, le site est accessible sur : <http://localhost:8000> mais il est évidemment possible de spécifier le port à utiliser : `mkdocs serve -a localhost:8085`.
 
 ----
 

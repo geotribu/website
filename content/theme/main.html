@@ -1,42 +1,104 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
-  <meta name="twitter:dnt" content="on">
-  <meta name="twitter:widgets:align" content="center">
-  <!-- OpenGraph -->
+  <meta property="robots" content="all" />
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="RSS feed of created content" href="/feed_rss_created.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="/feed_rss_updated.xml">
+  <!-- Meta title -->
   {% set title = config.site_name %}
   {% if page and page.meta and page.meta.title %}
-    {% set title = title ~ " - " ~ page.meta.title %}
+  {% set title = title ~ " - " ~ page.meta.title %}
   {% elif page and page.title and not page.is_homepage %}
-    {% set title = title ~ " - " ~ page.title | striptags %}
+  {% set title = title ~ " - " ~ page.title | striptags %}
   {% endif %}
+  <!-- Meta date -->
+  {% if page and page.meta and page.meta.date %}
+  {% set date = page.meta.date %}
+  {% endif %}
+  <!-- Meta description -->
+  {% set description = config.site_description %}
+  {% if page and page.meta and page.meta.description %}
+  {% set description = page.meta.description | striptags %}
+  {% elif page and page.description and not page.is_homepage %}
+  {% set description = page.description | striptags %}
+  {% endif %}
+  <!-- Meta image -->
   {% set image = 'https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg' %}
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ config.site_description }}">
-  <meta property="og:url" content="{{ page.canonical_url }}">
+  {% if page and page.meta and page.meta.image %}
+  {% set image = page.meta.image %}
+  {% endif %}
+  <!-- Meta author -->
+  {% set author = config.site_author %}
+  {% if page and page.meta and page.meta.authors and not page.is_homepage %}
+  {% set author = page.meta.authors %}
+  {% elif page and page.meta and page.meta.author and not page.is_homepage %}
+  {% set author = page.meta.author %}
+  {% endif %}
+
+  {% if author is iterable and (author is not string and author is not mapping) %}
+  {% for a in author %}
+  {% if author != config.site_author %}
+  <meta name="author" content="{{ a }}">
+  {% endif %}
+  {% endfor %}
+  {% elif author is string and author != config.site_author %}
+  <meta name="author" content="{{ author }}">
+  {% endif %}
+
+  <!-- Meta type -->
+  {% if page.is_homepage %}
+  {% set type = "website" %}
+  {% else %}
+  {% set type = "article" %}
+  {% endif %}
+
+  <!-- OpenGraph -->
+  <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="{{ image }}">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <!-- Twitter Cards -->
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:type" content="{{ type }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@geotribu" />
   <meta name="twitter:creator" content="@geojulien" />
-  <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ config.site_description }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:dnt" content="on">
   <meta name="twitter:image" content="{{ image }}">
+  <meta name="twitter:site" content="@geotribu" />
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:widgets:align" content="center">
+  <!-- Structured data using schema.org -->
+  {% if type == "article" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.canonical_url }}"
+      },
+      "headline": "{{ title }}",
+      "abstract": "{{ description }}",
+      "datePublished": "{{ date }}",
+      "image": "{{ image }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Geotribu",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+        }
+      }
+    }
+    </script>
+{% endif %}
 {% endblock %}
 
 {% block config %}
   <!-- Handle Twitter oEmbed - See #54 -->
   <script charset="utf-8" id="twitter-wjs" type="text/javascript" async defer src="https://platform.twitter.com/widgets.js"></script>
-
-  <!-- Make search plugin works offline - See https://github.com/wilhelmer/mkdocs-localsearch -->
-  {% if "localsearch" in config["plugins"] %}
-    <script src="/theme/assets/javascripts/iframe-worker.js"></script>
-    <script src="/theme/search/search_index.js"></script>
-  {% endif %}
 
 {% endblock %}
 
@@ -69,7 +131,7 @@
 
 {% block scripts %}
   {{ super() }}
-  <script defer type="text/javascript">
+  <script async type="text/javascript">
     // Translate - set before any binding
     WAMediaBox.lang = {
       prev: "Précédente",

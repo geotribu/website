@@ -1,9 +1,14 @@
 # Project information
 site_name: Geotribu
-site_description: Veille libre sur la géomatique
+site_description: >-
+  Site indépendant de veille sur la géomatique libre.
+  Retrouvez nos articles, tutoriels et nos revues de presse (#GeoRDP) sur
+  l'information géographique, les SIG, la cartographie, la représentation des données géographiques...
+  Globalement, tout ce qui mêle géographie et informatique.
+
 site_author: Geotribu
 site_url: https://static.geotribu.fr/
-copyright: '<span class="copyleft">&copy;</span> geotribu'
+copyright: '<span class="copyleft">&copy;</span> Geotribu'
 
 # Repository
 repo_name: 'geotribu/website'
@@ -16,88 +21,74 @@ site_dir: './build/mkdocs/site'
 
 # Plugins
 plugins:
-  - git-authors:
-      show_contribution: true
-  - git-revision-date-localized:
-      fallback_to_build_date: true
-  - minify:
-      minify_html: true
-  - rss:
-      length: 50
-  - search:
-      # prebuild_index: python
-      separator: '[\s\-\.]+'
-  - redirects:
-      redirect_maps:
-        "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
-        "node/636.md": "articles/2013/art_2013-09-26.md"
-        "rdp/rdp_2020-04-30.md": "rdp/2020/rdp_2020-04-30.md"
-
+  - awesome-pages
 
 # Theme
 theme:
   name: 'material'
   custom_dir: './content/theme/'
-  favicon: 'assets/images/geotribu/logo_geotribu.png'
+  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
 
   features:
-    - tabs
-    - instant
+    - navigation.tabs
+    - navigation.instant
   font: false
+  icon:
+    repo: fontawesome/brands/github-alt
   language: 'fr'
-  logo: 'theme/assets/images/geotribu/logo_geotribu.png'
+  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
     accent: deep-orange
     primary: teal
     scheme: preference
 
-# Customization
-extra:
-  disqus: 'geotribu-static'  # comment system
-  manifest: 'manifest.webmanifest'  # PWA declaration
-  social:
-    - icon: 'fontawesome/brands/github-alt'
-      link: 'https://github.com/geotribu/'
-    - icon: 'fontawesome/brands/twitter'
-      link: 'https://twitter.com/search?q=%23GeoRDP&src=typed_query&f=live'
-    - icon: 'fontawesome/brands/facebook'
-      link: 'https://fr-fr.facebook.com/geotribu/'
-
 extra_css:
   - 'theme/assets/stylesheets/extra.css'
+  - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css'
+
+extra_javascript:
+  - 'theme/assets/javascripts/extra.js'
+  - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js'
+  - 'https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js'
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
   - attr_list
   # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - admonition
-  # CodeHilite - https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
-  - codehilite:
-      linenums: true
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+      use_pygments: true
   - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
       base_path: '.'
       check_paths: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed
   - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
-      permalink: true
+      permalink: "#"
 
 # Navigation - Menu organization
-nav:
-  - Accueil: index.md
-  - acknowledgements.md
-  - install_webapp.md
+# nav:
+#   - Accueil: index.md
+#   - acknowledgements.md
+#   - install_webapp.md
