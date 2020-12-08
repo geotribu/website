@@ -129,14 +129,11 @@ Evidemment, ce dossier ne contient pas les images, hébergées sur un [serveur �
 
 ### Servir le site
 
+En ouvrant simplement le fichier `index.html`, on voit déjà apparaître la page d'accueil dans son navigateur par défaut. Mais le site étant configuré pour avoir des URLs correspondant au titre de la page sans l'extension `.html`, la navigation n'est donc pas fonctionnelle, le [navigateur se comportant davantage comme un explorateur de fichiers](https://developer.mozilla.org/fr/docs/Apprendre/Ouvrir_un_fichier_dans_un_navigateur_web#Ouvrir_un_fichier_local).
 
-Vous pouvez d'ores-et-déjà
+![Le site sans serveur web](https://cdn.geotribu.fr/img/tuto/static_web/static_web_browser_as_file_explorer.png "Le site sans serveur web"){: .img-center  loading=lazy }
 
-2. Dézipper, lancer le fichier `website-gh-pages/index.html` et voir apparaître la page d'accueil dans son navigateur par défaut.
-
-Mais le site ayant été configuré pour avoir des URL correspondant au titre sans l'extension `.html`, la navigation n'est donc pas fonctionnelle, le [navigateur se comportant davantage comme un explorateur de fichiers](https://developer.mozilla.org/fr/docs/Apprendre/Ouvrir_un_fichier_dans_un_navigateur_web#Ouvrir_un_fichier_local).
-
-Si on veut avoir le site pleinement fonctionnel, il suffit de servir le dossier par un serveur web. On peut aussi utiliser les serveurs webs minimalistes intégrés à de nombreux langages :
+Si on veut avoir le site pleinement fonctionnel, il suffit donc de "servir" le dossier par un... serveur web. Parce-que déployer un serveur web n'est pas du tout le sujet, on peut utiliser les outils minimalistes intégrés à de nombreux langages :
 
 <!-- markdownlint-disable MD046 -->
 === "Python 3+"
