@@ -115,10 +115,10 @@ Pour les personnes facturées au clic sur les interfaces graphiques, voici la pe
 === "Powershell"
 
     ```powershell
-    Set-Location -Path "$env:TEMP" `
-        Invoke-WebRequest -Uri "https://github.com/geotribu/website/archive/gh-pages.zip" -OutFile geotribu_website_prod.zip `
-        Expand-Archive -Path geotribu_website_prod.zip `
-        cd website-gh-pages
+    Set-Location -Path "$env:TEMP"; `
+    Invoke-WebRequest -Uri "https://github.com/geotribu/website/archive/gh-pages.zip" -OutFile geotribu_website_prod.zip ;`
+    Expand-Archive -Path geotribu_website_prod.zip -DestinationPath . ;`
+    cd website-gh-pages
     ```
 <!-- markdownlint-enable MD046 -->
 
@@ -141,9 +141,16 @@ Si on veut avoir le site pleinement fonctionnel, il suffit de servir le dossier 
 
 <!-- markdownlint-disable MD046 -->
 === "Python 3+"
+    Avec bash :
 
     ```bash
     $ python3 -m http.server 8085
+    Serving HTTP on 0.0.0.0 port 8085 (http://0.0.0.0:8085/) ...
+    ```
+
+    Avec Powershell :
+    ```powershell
+    PS > py -3 -m http.server 8085
     Serving HTTP on 0.0.0.0 port 8085 (http://0.0.0.0:8085/) ...
     ```
 
@@ -166,7 +173,7 @@ Si on veut avoir le site pleinement fonctionnel, il suffit de servir le dossier 
     ```
 <!-- markdownlint-enable MD046 -->
 
-Ouvrir le navigateur sur l'adresse <http://localhost:8085> et vous devriez avoir le site en local, pleinement fonctionnel.
+Ouvrir le navigateur sur l'adresse <http://localhost:8085> et vous devriez avoir le site en local, pleinement fonctionnel. Si les images n'apparaissent pas, c'est que vous n'accédez pas à <https://cdn.geotribu.fr>.
 
 ----
 
