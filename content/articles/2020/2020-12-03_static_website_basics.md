@@ -50,7 +50,6 @@ Principaux intérêts :
 - portabilité du contenu
 - sécurisation peu stressante
 
-
 ### Les 90, c'est so 2020
 
 ![Vintage, pas vieux](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/pas_vieux_mais_vintage.png "Je ne suis pas vieux, je suis vintage"){: .img-rdp-news-thumb loading=lazy }
@@ -85,9 +84,6 @@ Si les sites statiques épargnent 75% l'effort de développement, de maintenance
 - le design : même si la plupart des templates sont suffisamment bien
 - la configuration :
 
-
-
-
 <https://html5up.net/>
 
 ----
@@ -109,7 +105,8 @@ Pour les personnes facturées au clic sur les interfaces graphiques, voici la pe
     cd /tmp \
         && wget -N -c https://github.com/geotribu/website/archive/gh-pages.zip -O geotribu_website_prod.zip \
         && unzip -o -q geotribu_website_prod.zip \
-        && cd website-gh-pages
+        && cd website-gh-pages \
+        && nautilus .
     ```
 
 === "Powershell"
@@ -117,8 +114,9 @@ Pour les personnes facturées au clic sur les interfaces graphiques, voici la pe
     ```powershell
     Set-Location -Path "$env:TEMP"; `
     Invoke-WebRequest -Uri "https://github.com/geotribu/website/archive/gh-pages.zip" -OutFile geotribu_website_prod.zip ;`
-    Expand-Archive -Path geotribu_website_prod.zip -DestinationPath . ;`
-    cd website-gh-pages
+    Expand-Archive -Path geotribu_website_prod.zip -DestinationPath . -Force ;`
+    cd website-gh-pages ;
+    explorer .
     ```
 <!-- markdownlint-enable MD046 -->
 
@@ -130,6 +128,7 @@ Evidemment, ce dossier ne contient pas les images, hébergées sur un [serveur �
 {: align=middle }
 
 ### Servir le site
+
 
 Vous pouvez d'ores-et-déjà
 
