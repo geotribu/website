@@ -32,6 +32,10 @@ plugins:
         remove_comments: true
   - rss:
       abstract_chars_count: 500
+      date_from_meta:
+        as_creation: "date"
+        as_update: false
+        datetime_format: "%Y-%m-%d %H:%M"
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
   - search:
