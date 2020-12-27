@@ -1,19 +1,13 @@
 # Project information
 site_name: Geotribu
 site_description: >-
-  Site indépendant de veille sur la géomatique libre.
-  Retrouvez nos articles, tutoriels et nos revues de presse (#GeoRDP) sur
-  l'information géographique, les SIG, la cartographie, la représentation des données géographiques...
-  Globalement, tout ce qui mêle géographie et informatique.
+  Site indépendant de veille sur la géomatique libre et open source.
+  Articles, tutoriels et revues de presse (#GeoRDP) sur
+  l'information géographique, les SIG, la cartographie, la représentation des données...
 
 site_author: Geotribu
 site_url: https://static.geotribu.fr/
 copyright: '<span class="copyleft">&copy;</span> Geotribu'
-
-# Repository
-repo_name: 'geotribu/website'
-repo_url: 'https://github.com/geotribu/website/'
-edit_uri: 'edit/master/content'
 
 # Custom folder structure
 docs_dir: './content'
