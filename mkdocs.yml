@@ -75,8 +75,9 @@ theme:
   search_index_only: true
 
   features:
-    - navigation.tabs
     - navigation.instant
+    - navigation.expand
+    - navigation.tabs
   font: false
   icon:
     repo: fontawesome/brands/github-alt

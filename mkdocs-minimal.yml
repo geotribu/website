@@ -28,8 +28,9 @@ theme:
   search_index_only: true
 
   features:
-    - navigation.tabs
+    - navigation.expand
     - navigation.instant
+    - navigation.tabs
   font: false
   icon:
     repo: fontawesome/brands/github-alt
