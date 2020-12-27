@@ -18,7 +18,7 @@ Cela consiste en créant une balise de code pointant sur le langage `mermaid`, d
 
 ### Exemple
 
-````
+````markdown
 ```mermaid
 graph TD;
     Z[master]-->A[Création d'une branche]-->B(Pull Request);
