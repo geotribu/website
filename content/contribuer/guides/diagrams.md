@@ -18,23 +18,22 @@ Cela consiste en créant une balise de code pointant sur le langage `mermaid`, d
 
 ### Exemple
 
-```markdown
-
-    ```mermaid
-    graph TD;
-        Z[master]-->A[Création d'une branche]-->B(Pull Request);
-        C[Contributeur 1]-->B;
-        D[Contributrice 2]-->B;
-        E[Contributeur n]-->B;
-        B-->F[Merge dans la branche principale];
-        F-->G[Conversion en HTML];
-        G-->H[Déploiement sur GitHub Pages];
-        H-->Twitter;
-        H-->LinkedIn;
-    ```
-!!! tip
-
+````
+```mermaid
+graph TD;
+    Z[master]-->A[Création d'une branche]-->B(Pull Request);
+    C[Contributeur 1]-->B;
+    D[Contributrice 2]-->B;
+    E[Contributeur n]-->B;
+    B-->F[Merge dans la branche principale];
+    F-->G[Conversion en HTML];
+    G-->H[Déploiement sur GitHub Pages];
+    H-->Twitter;
+    H-->LinkedIn;
 ```
+````
+
+!!! tip
     Pour se faciliter les choses, il est conseillé d'utiliser [l'éditeur en ligne](https://mermaid-js.github.io/mermaid-live-editor/) pour préparer son diagramme.
 
 ### Rendu
