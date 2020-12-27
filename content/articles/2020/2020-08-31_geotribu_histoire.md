@@ -1,6 +1,6 @@
 ---
 title: "Histoire de Geotribu : vie, mort et renaissance."
-authors: "Julien Moura"
+authors: ["Julien MOURA"]
 categories: ["article"]
 date: "2020-08-31 10:20"
 description: "Invité à faire un retour d'expérience sur l'aventure Geotribu, voici une petite histoire du site : naissance, jeunesse, vie, mort... et renaissance en 2020. Souvenirs, souvenirs et avenir !"
