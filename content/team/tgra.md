@@ -1,6 +1,6 @@
 # Thomas Gratier
 
-![](https://cdn.geotribu.fr/img/internal/contributeurs/tgra.png){: .img-rdp-news-thumb }
+![portrait Thomas Gratier](https://cdn.geotribu.fr/img/internal/contributeurs/tgra.png "portrait Thomas Gratier"){: .img-rdp-news-thumb }
 
 Géographe de formation, après quelques années tant côté gestion de projet , que côté développement Géomatique, je suis maintenant consultant SIG indépendant basé sur Nantes. Je m'intéresse à tout ce qui gravite autour du web et de la cartographie. Pour cette raison, je suis un fan des bibliothèques javascript pour la cartographie et la dataviz, mais j'aime aussi le côté administrateur système pour configurer les serveurs web, les serveurs cartographiques et les serveurs de tuiles.
 
@@ -9,5 +9,4 @@ J'utilise plutôt des technologies open source mais je m'intéresse aussi à l'i
 Pour en savoir plus, [suivez-moi sur Twitter](https://twitter.com/ThomasG77).
 
 !!! info
-
     :moyai: Ce contributeur n'est plus actif. :wave:
