@@ -1,5 +1,5 @@
 ---
-Title: Contribuer à Geotribu
+title: Contribuer à Geotribu
 Category: contribution
 date: 2020-03-20 10:20
 Tags: contribuer, introduction

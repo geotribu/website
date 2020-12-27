@@ -1,5 +1,5 @@
 ---
-Title: Prérequis pour la contribution
+title: Prérequis pour la contribution
 categories: ["contribution"]
 date: 2020-03-20 10:20
 description: "Prérequis minimaux pour contribuer à Geotribu : un compte GitHub et savoir écrire en Markdown."

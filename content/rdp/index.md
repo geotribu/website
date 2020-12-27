@@ -1,5 +1,5 @@
 ---
-Title: Revues de presse de Geotribu
+title: Revues de presse de Geotribu
 Category: Revues de presse
 date: 2020-04-03 15:18
 Tags: rdp, geordp, revue de presse

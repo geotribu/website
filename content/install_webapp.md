@@ -1,7 +1,7 @@
 ---
-Title: Bienvenue sur Geotribu
+title: Bienvenue sur Geotribu
 Category: global
-Date: 2020-03-20 10:20
+date: 2020-03-20 10:20
 tags: pwa,installation
 ---
 
