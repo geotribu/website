@@ -10,7 +10,6 @@ tags: pwa,installation
 Ce site étant entièrement statique et déclaré comme une [application web progressive] (_progressive web apps_ ou PWA), il est possible de l'installer à la manière d'une application classique.
 
 !!! info
-
     Pour en savoir plus sur les PWA, consulter [Progressive Web Apps : utilité, installation et gestion dans des environnements fixes et mobiles](https://www.nextinpact.com/news/108095-progressive-web-apps-utilite-installation-et-gestion-dans-environnements-fixes-et-mobiles.htm)
 
 ## Windows 10

@@ -1,5 +1,5 @@
 nav:
-    - index.md
+    - "&#127968; Accueil" : index.md
     - acknowledgements.md
     - install_webapp.md
     - rdp
