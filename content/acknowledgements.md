@@ -3,7 +3,6 @@ title: Qui sommes nous ?
 category: about
 date: 2020-04-10 10:20
 description: "Contributeurs actifs de Geotribu et remerciements aux personnes et projets libres qui rendent l'aventure possible."
-hero: "L'équipe et ses soutiens"
 tags: auteur,contributrice,credits,remerciement,soutien
 ---
 

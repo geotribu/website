@@ -1,9 +1,8 @@
 ---
 title: "Bienvenue"
 Category: global
-Date: 2020-03-20 10:20
+date: 2020-03-20 10:20
 description: "Bienvenue sur Geotribu, le site indépendant de veille sur la géomatique libre. Retrouvez nos articles, tutoriels et nos revues de presse (#GeoRDP) sur l'information géographique, les SIG, la cartographie, la représentation des données géographiques... Globalement, tout ce qui mêle géographie et informatique."
-hero: "Bienvenue sur Geotribu !"
 tags: bienvenue,géomatique,sig,géographie,dataviz,geordp,accueil,geotribu
 ---
 

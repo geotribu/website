@@ -1,7 +1,7 @@
 ---
 Title: Modifier un contenu depuis le site web
 Category: contribution
-Date: 2020-04-04 17:20
+date: 2020-04-04 17:20
 Tags: guide,corriger,faute,contribuer,modifier
 ---
 
