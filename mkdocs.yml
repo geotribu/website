@@ -63,6 +63,8 @@ plugins:
         "node/679.md": "articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md"
         "node/689.md": "articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md"
         "node/680.md": "articles/2014/art_2014-03-19_geogame_pendu_geomatique.md"
+        # recent moves
+        "acknowledgements.md": "team/index.md"
 
 # Theme
 theme:
