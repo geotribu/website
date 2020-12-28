@@ -1,6 +1,5 @@
 nav:
     - "&#127968; Accueil" : index.md
-    - install_webapp.md
     - rdp
     - articles
     - contribuer
