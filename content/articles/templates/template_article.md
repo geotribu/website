@@ -17,6 +17,9 @@ tags: "mot-clé-seo1,mot-clé-seo2"
 
 Introduction
 
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
 ## Titre 2
 
 Texte.

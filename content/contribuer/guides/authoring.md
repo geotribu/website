@@ -3,7 +3,6 @@ title: Signer ses contributions
 category: contribution
 date: 2020-08-04 14:20
 description: "Contribuer à Geotribu : comment signer ses contributions au site."
-hero: "Signer ses contributions à Geotribu"
 tags: contribuer,tutoriel,signature,authoring,auteur,paternité
 ---
 
