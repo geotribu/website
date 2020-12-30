@@ -5,7 +5,7 @@ categories: ["article", "tutoriel"]
 date: "2020-10-14 10:20"
 description: "Concepts de base et exemples de paramétrage et de rendu sur aerialod"
 image : "https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg"
-tags: "aerialod,3D,carte,map,rendu"
+tags: "carte,3D,aerialod,rendu 3D"
 ---
 
 # Aerialod, un logiciel léger, puissant et gratuit de rendu de cartes 3D
