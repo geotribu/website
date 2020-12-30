@@ -1,8 +1,6 @@
 nav:
-    - index.md
-    - acknowledgements.md
-    - install_webapp.md
+    - "&#127968; Accueil" : index.md
     - rdp
     - articles
-    - team
     - contribuer
+    - team

@@ -1,6 +1,6 @@
 # Arnaud Vandecasteele
 
-![](https://cdn.geotribu.fr/img/internal/contributeurs/avdc.jpg){: .img-rdp-news-thumb }
+![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/avdc.jpg "portrait"){: .img-rdp-news-thumb }
 
 Bien qu'issus à l'origine d'un parcours universitaire (doctorat et post-doc), j'ai finalement tenté l'aventure entrepreunariale au travers de [Geolab](http://geolab.re/). Mes principaux centres d'intêrets dans le domaine de la géomatique portent sur les logiciels Open Source et plus particulièrement QGIS. J'aime également le développement informatique avec une forte préférence à tout ce qui se passe côté serveur (base de données, traitements, etc.). Côté techno, mes choix se portent habituellement sur du (Geo)Django et PostgreSQL/PostGIS.
 

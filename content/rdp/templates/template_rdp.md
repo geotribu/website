@@ -12,7 +12,17 @@ tags: rdp
 
 ## Intro
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "News"){: .img-rdp-news-thumb loading=lazy }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "News"){: .img-rdp-news-thumb }
+
+[Commenter cette revue de presse :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
+----
+
+## Vie du site
+
+![logo geotribu orange](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png "logo geotribu orange"){: style="border: none; box-shadow: none;" }
+{: align=middle }
 
 ----
 

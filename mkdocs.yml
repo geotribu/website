@@ -32,6 +32,10 @@ plugins:
         remove_comments: true
   - rss:
       abstract_chars_count: 500
+      date_from_meta:
+        as_creation: "date"
+        as_update: false
+        datetime_format: "%Y-%m-%d %H:%M"
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
   - search:
@@ -59,6 +63,9 @@ plugins:
         "node/679.md": "articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md"
         "node/689.md": "articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md"
         "node/680.md": "articles/2014/art_2014-03-19_geogame_pendu_geomatique.md"
+        # recent moves
+        "acknowledgements.md": "team/index.md"
+        "install_webapp.md": "articles/2020/2020-03-20_installer_site_comme_application.md"
 
 # Theme
 theme:
@@ -71,8 +78,9 @@ theme:
   search_index_only: true
 
   features:
-    - navigation.tabs
     - navigation.instant
+    - navigation.expand
+    - navigation.tabs
   font: false
   icon:
     repo: fontawesome/brands/github-alt
