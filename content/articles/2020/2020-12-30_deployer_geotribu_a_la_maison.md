@@ -3,7 +3,7 @@ title: "Geotribu à la maison"
 authors: ["Julien Moura"]
 categories: ["article", "tutoriel"]
 date: 2020-12-30 11:11
-description: "A l'instar de nombreux autres sites web, celui de Geotribu est un site statique. SO what ? Pour comprendre, le mieux c'est encore de le déployer à la maison."
+description: "A l'instar de nombreux autres sites web, celui de Geotribu est un site statique. So what ? Pour comprendre, le mieux c'est encore de le déployer à la maison."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg"
 tags: geotribu,site statique,static website,github,serveur web
 ---
@@ -28,7 +28,7 @@ A l'instar de nombreux sites webs, Geotribu est un site statique, cela signifie 
 
 C'est un gage de plein de mots-clés : légèreté, réactivité, faible maintenance, bonne résilience et sécurité.
 
-Mais c'est surtout la garantie un bon moyen de jouer avec un site web sans se casser la tête !
+Mais c'est surtout un bon moyen de jouer avec un site web sans se casser la tête !
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
