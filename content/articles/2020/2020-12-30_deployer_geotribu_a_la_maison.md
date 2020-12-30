@@ -63,7 +63,7 @@ Pour les personnes facturées au clic sur les interfaces graphiques, voici la pe
     ```
 <!-- markdownlint-enable MD046 -->
 
-On peut déjà observer que le site ne pèse que ~25 Mo compressé et ~110 Mo décompressé, pour un contenu de presque 600 pages (articles, revues de presse, guides de contribution pages d'équipe, etc.). Et encore, le fichier d'index de la recherche (`search/search_index.json`) pèse à lui seul près de 50 Mo.
+On peut déjà observer que le site ne pèse que ~25 Mo compressé et ~110 Mo décompressé, pour un contenu de presque 600 pages (articles, revues de presse, guides de contribution, pages d'équipe, etc.). Et encore, le fichier d'index de la recherche (`search/search_index.json`) pèse à lui seul près de 50 Mo.
 
 ```bash
 jmo@jmoslandia:/tmp/website-gh-pages$ ls -al .
@@ -149,7 +149,7 @@ Si on veut avoir le site pleinement fonctionnel, il suffit donc de "servir" le d
 
 Ouvrir le navigateur sur l'adresse <http://localhost:8085> et vous devriez avoir le site en local, pleinement fonctionnel. Si les images n'apparaissent pas, c'est que vous n'accédez pas à <https://cdn.geotribu.fr>.
 
-Et voilà, vous avec le site Geotribu sur votre ordinateur :smile: !
+Et voilà, vous avez le site Geotribu sur votre ordinateur :smile: !
 
 ----
 
