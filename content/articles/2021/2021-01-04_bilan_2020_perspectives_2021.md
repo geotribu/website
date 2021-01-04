@@ -14,19 +14,30 @@ tags: geotribu,voeux,statistiques,fréquentation
 
 **Mots-clés :** Geotribu | voeux | fréquentation | statistiques
 
-C'est de saison : on fait le bilan en se remémorant chaque instant et on se projette dans les mois à venir.
+:hourglass_flowing_sand: Vous connaissez l'histoire, déjà relatée dans nos articles ([ici](/articles/2020/2020-08-31_geotribu_histoire/), [là](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) et encore [là](/articles/2020/2020-09-11_html2markdown/)), le site renaît doucement de ses cendres depuis l'opération géophénix du printemps dernier.
 
-## 2020
+Si l'année aura été éprouvante pour le monde (de la cartograhie surtout :wink:), 2020 signe aussi le retour de Geotribu. Nous voilà à l'aube de 2021 et comme c'est de saison, on fait un premier bilan sur la dynamique de ces 9 derniers mois et on se projette sur l'année qui démarre.
 
-:hourglass_flowing_sand: Vous connaissez l'histoire qu'on a déjà relaté dans nos articles ([ici](/articles/2020/2020-08-31_geotribu_histoire/), [là](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) et encore [là](/articles/2020/2020-09-11_html2markdown/)) : le site renaît doucement de ses cendres depuis l'opération géophénix du printemps dernier.
+[![Carte de la ville de Phoenix](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_city_maricota.svg "Carte de la ville de Phoenix"){: loading=lazy width=200px }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_city_maricota.svg){: data-mediabox="lightbox-gallery" data-title="Opération GéoPhénix - Crédits Wikimédia"}
 
-Si l'année aura été éprouvante pour le monde (de la cartograhie surtout :wink:), 2020 signe aussi le retour de Geotribu.
+## Contenus et dynamique de contribution
 
-![Carte de la ville de Phoenix](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_city_maricota.svg "Opération GéoPhénix - Crédits Wikimédia"){: .img-center loading=lazy }
+On peut dater la reprise officielle du site au 30 avril 2020, jour de publication de la première revue de presse. Depuis, nous avons publié 18 revues de presse, 12 articles et une quinzaine de contenus dédiés à accompagner la contribution et documenter le fonctionnement interne (parce-que la contribution collaborative est forcément plus exigeante qu'un log personnel).
 
-### Fréquentation
+Ce sont donc plus de 30 nouveaux contenus publics qui sont venus rejoindre les 500 contenus récupérés de l'ancien site, soit un par semaine environ. Nous avons tenu le rythme annoncé d'une GeoRDP toutes les deux semaines et franchement, compte-tenu du travail que cela représente, de la quantité d'informations consolidées et de la qualité globale qu'on a réussi à s'imposer, on n'est pas peu fiers :sunglasses: !
 
-Parce-que c'était plus simple et intégré à MkDocs, nous utilisons Google Analytics pour mesurer la fréquentation du site en mode minimal. Compte-tenu de la typologie de notre audience plutôt geek sensibilisée aux [bloqueurs de pubs](https://fr.wikipedia.org/wiki/Logiciel_antipub), [opt-outs](https://tools.google.com/dlpage/gaoptout/index.html?hl=fr) et autres [VPNs](https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virtuel), les données sont certainement incomplètes. Mais l'objectif n'étant pas de faire du marketing, cela importe peu. L'idée est surtout de suivre les tendances.
+!!! info
+    C'était le paragraphe de l'auto-satisfaction. Merci de l'avoir lu.
+
+En y regardant de plus près, ce sont 4 contributeurs réguliers qui rédigent l'essentiel des revues de presse, aidés d'un "irrégulier" et de contributeurs ponctuels, sans compter les chasseurs-cueilleurs de coquilles orthographiques ou syntaxiques. Du côté des articles, ce sont 2 auteurs qui se partagent les 12 contenus originaux dont 1 en a écrit 11. Il faut aussi dire qu'une bonne partie des articles ne concerne pas vraiment la géomatique.
+
+En somme, une dynamique progressive mais réelle qu'il s'agira de consolider dans les mois à venir pour éviter [le syndrôme du SPOF](https://fr.wikipedia.org/wiki/Point_de_d%C3%A9faillance_unique).
+
+Mais on est content de retrouver le plaisir de partager notre effort de veille et notre passion. Encore merci à tout le monde ! Régulier, irrégulier, ponctuel ou tipex numérique : toute contribution est vraiment la bienvenue et comme on ne le dit jamais assez : il n'y a aucune obligation. Ni de contribution, ni de résultat.
+
+## Fréquentation
+
+Parce-que c'était plus simple et intégré à MkDocs, nous utilisons Google Analytics pour mesurer la fréquentation du site en mode minimal. Compte-tenu de la typologie de notre audience technophile et sensibilisée aux [bloqueurs de pubs](https://fr.wikipedia.org/wiki/Logiciel_antipub), [opt-outs](https://tools.google.com/dlpage/gaoptout/index.html?hl=fr) et autres [VPNs](https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virtuel), les données sont certainement incomplètes. Mais l'objectif n'étant pas de faire du marketing, cela importe peu. L'idée est surtout de suivre les tendances.
 
 Sans surprise, notre fréquentation se mesure en cycles de 14 jours, reflétant le rythme de publication de nos revues de presse. Côté réseaux sociaux, Twitter domine les débats, même si l'effort sur LinkedIn trouve visiblement son public ([pour suivre le flux c'est par ici](https://www.linkedin.com/feed/hashtag/?keywords=geotribu)).
 
@@ -37,11 +48,12 @@ Voici quelques captures de Google Analytics :
 [![Statistiques 2020 - Utilisateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_users.png "Statistiques 2020 - Utilisateurs"){: loading=lazy width=200px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_users.png){: data-mediabox="lightbox-gallery" data-title="Utilisateurs"}
 [![Statistiques 2020 - Réseaux sociaux](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_social.png "Statistiques 2020 - Réseaux sociaux"){: loading=lazy width=200px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_social.png){: data-mediabox="lightbox-gallery" data-title="Réseaux sociaux"}
 [![Statistiques 2020 - Contenus](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_content.png "Statistiques 2020 - Contenus"){: loading=lazy width=200px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_content.png){: data-mediabox="lightbox-gallery" data-title="Contenus"}
+{: align=middle }
 
 !!! note
     Quand cela n'est pas précisé, la période retenue est du 1er avril au 31 décembre 2020.
 
-### Référencement
+## Référencement
 
 Après 3 ans d'absence de la Toile, le changement d'URLs sans redirection et le manque de fraîcheur de la majorité de nos contenus, autant vous dire qu'il faut du temps avant de retrouver grâce aux yeux des moteurs de recherche !
 
@@ -69,7 +81,7 @@ Si ça vous intéresse, j'ai aussi exploré les possibilité de Google Data Stud
 
 ## 2021
 
-:dart: Sans surprise, pour cette nouvelle année, l'objectif est de pérenniser la dynamique. Pour cela, on est bien décidés à faciliter la contribution
+:dart: Pour cette nouvelle année, l'objectif est de pérenniser la dynamique. Pour cela, on est bien décidés à faciliter la contribution
 
 Aujourd'hui, pour contribuer à la revue de presse, il y a déjà plusieurs moyens adaptés à l'appétence technique de chacun/e :
 
