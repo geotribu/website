@@ -1,3 +1,7 @@
+# Florian Boret
+
+![Portrait Florian Boret](https://cdn.geotribu.fr/img/internal/contributeurs/fbor.png "Portrait Florian Boret"){: .img-rdp-news-thumb }
+
 Géomaticien/cartographe, je suis arrivé dans le monde de la géomatique en suivant un cursus « professionnalisant » (BTS Géomètre-Topographe, Licence pro GGAT, Master SIGAT). J’ai ensuite travaillé dans un bureau d’étude spécialisé dans la production de données d’occupation du sol et puis pour des raisons personnelles je me suis m’expatrié au Sénégal ou je suis intervenu comme géomaticien indépendant ([DATA\WAX](data-wax.com)). Depuis mon retour en France, je suis en charge du SIG de la communauté de communes du Pays de Lunel.
 
 En dehors de mes expériences, je me suis régulièrement lancé dans différents projets personnels : [iGeo-Topo](https://www.igeo-topo.fr), GIS-Blog.fr, [osm2igeo](https://github.com/igeofr/osm2igeo), [osm2igeotopo](https://github.com/igeofr/osm2igeotopo) et c’est avec plaisir que j’interviens maintenant comme contributeur de la revue de presse de GeoTribu.
