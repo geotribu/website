@@ -20,12 +20,12 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up Python 3.8
-      uses: actions/setup-python@v2.1.4
+      uses: actions/setup-python@v2.2.1
       with:
         python-version: 3.8
 
     - name: Set up NodeJS (for search index prebuilding)
-      uses: actions/setup-node@v2.1.2
+      uses: actions/setup-node@v2.1.4
       with:
         node-version: '12'
 

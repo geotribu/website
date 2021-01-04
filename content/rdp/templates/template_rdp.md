@@ -14,6 +14,9 @@ tags: rdp
 
 ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "News"){: .img-rdp-news-thumb }
 
+[Commenter cette revue de presse :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
 ----
 
 ## Vie du site
