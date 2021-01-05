@@ -104,9 +104,13 @@ Si vous préférez le format libre et écrire un article comme [celui-ici](/arti
 
 Que ce soit pour proposer un tutoriel sur un outil que vous maîtrisez ou sur une application que vous avez développée, un billet d'humeur, une idée, une présentation d'un sujet de mémoire ou de thèse ou sur tout autre chose concernant la géomatique, venez participer à la communauté Geotribu en agrandissant les ressources disponibles !
 
+Il faut aussi ajouter que Geotribu peut facilement vous permettre de partager vos articles sans pour autant devoir vous lancer dans la création d'un blog personnel (temps d'administration, peur du manque de contenu,...), alors lâchez-vous.
+
 [Proposer un article par email :fontawesome-solid-paper-plane:](mailto:geotribu+article@gmail.com?subject=Proposition d'article){: .md-button }
 [Proposer un article :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=Guts%2C+igeofr%2C+aurelienchaumet&labels=articles%2C+contribution+externe&template=proposition-d-article.md&title=%5BArticle%5D){: .md-button }
 {: align=middle }
+
+_Nota : Pour ceux qui auraient un blog en fin de vie, on se propose de vous aider à rappatrier et à centraliser le contenu ici pour ne pas perdre le travail accompli._
 
 ### 3. Soutenir
 
