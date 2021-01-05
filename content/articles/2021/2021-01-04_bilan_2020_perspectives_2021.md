@@ -12,7 +12,7 @@ tags: geotribu,voeux,statistiques,fréquentation
 
 :calendar: Date de publication initiale : 4 janvier 2021
 
-:bookmark: **Mots-clés :** Geotribu | voeux | fréquentation | statistiques
+**Mots-clés :** Geotribu | voeux | fréquentation | statistiques
 
 ## 2020
 
@@ -86,7 +86,7 @@ Si ça vous intéresse, j'ai aussi exploré les possibilité de Google Data Stud
 
 Si on a les ressources, on pourra peut-être opter pour un site web plus design et moins technique (on est quand même sur un outil de documentation à la base...).
 
-En plus de continuer sur notre lancée, on est bien décidés à faciliter la contribution. Pourquoi pas la vôtre ? Comme dit plus haut, elle peut être régulière, irrégulière, ponctuelle ou même *one-shot* !
+En plus de continuer sur notre lancée, on est bien décidés à faciliter la contribution. Pourquoi pas la vôtre ? Elle peut être régulière, irrégulière, ponctuelle ou même *one-shot* !
 
 Si vous ne souhaitez pas nous rejoindre (la peur de l'engagement tout ça), plusieurs possibilités s'offrent déjà à vous :
 
