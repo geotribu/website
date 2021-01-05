@@ -25,11 +25,13 @@ Plusieurs choix possibles :
 - [ ] Tutoriel
 - [ ] Autre (préciser un peu)
 
+## Mots-clés
+
+<!-- Ajouter vos mots-clés en les séparant par des | -->
+
 ## Article
 
 <!-- Rédiger ou coller ici le texte de l'article. Si pas à l'aise avec la syntaxe Markdown, s'aider de la barre d'outils au-dessus et du mode prévisualisation... ou tout simplement ne pas s'en préoccuper, on verra ça plus tard -->
-
-
 
 ## Medias d'illustration (images, vidéos, tweets, etc.)
 
