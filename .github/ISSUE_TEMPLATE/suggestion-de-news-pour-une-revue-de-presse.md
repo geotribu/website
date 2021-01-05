@@ -2,8 +2,8 @@
 name: Suggestion de news pour une revue de presse
 about: Formulaire pour soumettre une contribution de news à une revue de presse.
 title: "[News GeoRDP]"
-labels: contribution, rdp
-assignees: ''
+labels: contribution externe, rdp
+assignees: aurelienchaumet, Guts, igeofr
 
 ---
 
