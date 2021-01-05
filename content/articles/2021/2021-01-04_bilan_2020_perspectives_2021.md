@@ -1,5 +1,5 @@
 ---
-title: "2020 dans le rétro, 2021 en ligne de mire"
+title: "2020 dans le géorétro, 2021 en ligne de mire"
 authors: ["Geotribu"]
 categories: ["article"]
 date: 2021-01-04 11:11
@@ -95,7 +95,7 @@ Si vous ne souhaitez pas nous rejoindre (la peur de l'engagement tout ça), plus
 Aujourd'hui, pour contribuer à la revue de presse, il y a déjà plusieurs moyens adaptés à l'appétence technique de chacun/e :
 
 [Proposer une news par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution à la GeoRDP){: .md-button }
-[Proposer une news via GitHub :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=&labels=contribution%2C+rdp&template=suggestion-de-news-pour-une-revue-de-presse.md&title=%5BNews+GeoRDP%5D){: .md-button }
+[Proposer une news via GitHub :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=aurelienchaumet%2C+Guts%2C+igeofr&labels=contribution+externe%2C+rdp&template=suggestion-de-news-pour-une-revue-de-presse.md&title=%5BNews+GeoRDP%5D){: .md-button }
 {: align=middle }
 
 ### 2. Rédiger un article
@@ -105,7 +105,7 @@ Si vous préférez le format libre et écrire un article comme [celui-ici](/arti
 Que ce soit pour proposer un tutoriel sur un outil que vous maîtrisez ou sur une application que vous avez développée, un billet d'humeur, une idée, une présentation d'un sujet de mémoire ou de thèse ou sur tout autre chose concernant la géomatique, venez participer à la communauté Geotribu en agrandissant les ressources disponibles !
 
 [Proposer un article par email :fontawesome-solid-paper-plane:](mailto:geotribu+article@gmail.com?subject=Proposition d'article){: .md-button }
-[Proposer un article :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=&labels=contribution%2C+rdp&template=proposition-d-article.md&title=%5BNews+GeoRDP%5D){: .md-button }
+[Proposer un article :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=Guts%2C+igeofr%2C+aurelienchaumet&labels=articles%2C+contribution+externe&template=proposition-d-article.md&title=%5BArticle%5D){: .md-button }
 {: align=middle }
 
 ### 3. Soutenir
