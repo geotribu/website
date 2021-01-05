@@ -112,7 +112,6 @@ Il faut aussi ajouter que Geotribu peut facilement vous permettre de partager vo
 
 !!! tip "Le bon plan"
     Pour celles et ceux qui auraient un blog en fin de vie, on se propose de vous aider à rapatrier et à centraliser le contenu ici pour ne pas perdre le travail accompli.
-_Nota : Pour ceux qui auraient un blog en fin de vie, on se propose de vous aider à rapatrier et à centraliser le contenu ici pour ne pas perdre le travail accompli._
 
 ### 3. Soutenir
 
