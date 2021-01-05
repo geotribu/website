@@ -110,7 +110,8 @@ Il faut aussi ajouter que Geotribu peut facilement vous permettre de partager vo
 [Proposer un article :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=Guts%2C+igeofr%2C+aurelienchaumet&labels=articles%2C+contribution+externe&template=proposition-d-article.md&title=%5BArticle%5D){: .md-button }
 {: align=middle }
 
-_Nota : Pour ceux qui auraient un blog en fin de vie, on se propose de vous aider à rappatrier et à centraliser le contenu ici pour ne pas perdre le travail accompli._
+!!! tip "Le bon plan"
+    Pour celles et ceux qui auraient un blog en fin de vie, on se propose de vous aider à rapatrier et à centraliser le contenu ici pour ne pas perdre le travail accompli.
 
 ### 3. Soutenir
 
