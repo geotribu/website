@@ -83,11 +83,20 @@ Si ça vous intéresse, j'ai aussi exploré les possibilité de Google Data Stud
 
 :dart: Pour cette nouvelle année, l'objectif est de pérenniser la dynamique. Pour cela, on est bien décidés à faciliter la contribution
 
+### 1. Revue de presse - GeoRDP
+
 Aujourd'hui, pour contribuer à la revue de presse, il y a déjà plusieurs moyens adaptés à l'appétence technique de chacun/e :
 
 [Proposer une news par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution spontanée à la GeoRDP){: .md-button }
 [Proposer une news via GitHub :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=&labels=contribution%2C+rdp&template=suggestion-de-news-pour-une-revue-de-presse.md&title=%5BNews+GeoRDP%5D){: .md-button }
 {: align=middle }
+
+### 2. Rédiger un article
+
+Si vous préférez le format long et écrire un article [comme ici par exemple](https://static.geotribu.fr/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/), n'hésitez pas à nous contacter.  
+Que ce soit pour un tutoriel sur un outil que vous maîtrisez, sur une application que vous avez développée ou sur tout autre chose concernant la géomatique, venez participer à la communauté Geotribu en agrandissant les ressources disponibles !
+
+----
 
 Il est aussi tout simplement possible de faire un petit signe d'encouragement :kiss: :
 
