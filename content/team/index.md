@@ -17,7 +17,9 @@ La liste ci-après est générée automatiquement à partir de l'historique de [
 ## Membres de l'équipe
 
 - [Arnaud](avdc)
+- [Aurélien](acha)
 - [Fabien](fgob)
+- [Florian](fbor)
 - [Julien](jmou)
 - [Mathieu R.](mraj)
 
