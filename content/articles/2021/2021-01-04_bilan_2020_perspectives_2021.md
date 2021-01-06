@@ -2,10 +2,10 @@
 title: "2020 dans le géorétro, 2021 en ligne de mire"
 authors: ["Geotribu"]
 categories: ["article"]
-date: 2021-01-04 11:11
-description: "L'équipe de Geotribu vous souhaite ses meilleurs voeux pour 2021, avec quelques statistiques sur l'année 2020."
+date: 2021-01-06 11:11
+description: "L'équipe de Geotribu vous souhaite ses meilleurs voeux pour 2021, avec quelques statistiques sur l'année 2020 et une feuille de route 2021."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_constellation_map_fr.png"
-tags: geotribu,voeux,statistiques,fréquentation
+tags: geotribu,voeux,statistiques,fréquentation,géomatique,sig,contribution,collaboratif
 ---
 
 # 2020 dans le rétro, 2021 en ligne de mire
@@ -68,14 +68,13 @@ En fait, mon sentiment c'est que faire du *bon* web dans les années 2020s, c'es
 
 Le travail de nettoyage des voies sans issue (images et liens morts), même s'il est loin d'être terminé, ainsi que le retour du [flux RSS](https://static.geotribu.fr/feed_rss_created.xml) (notamment sur [Georezo](https://georezo.net/planet/Toile_g%C3%A9omatique_francophone/)) ont largement contribué à un retour à la normale.
 
-[![Statistiques 2020 - Etat de la couverture de l'indexation](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_cover.png "Statistiques 2020 - Etat de la couverture de l'indexation"){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_cover.png){: data-mediabox="lightbox-gallery" data-title="Etat de la couverture de l'indexation"}
+[![Statistiques 2020 - Etat de la couverture de l'indexation](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_cover.png "Statistiques 2020 - Etat de la couverture de l'indexation"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_cover.png){: data-mediabox="lightbox-gallery" data-title="Etat de la couverture de l'indexation"}
 
-Si ça vous intéresse, j'ai aussi exploré les possibilité de Google Data Studio :
+L'occasion d'explorer rapidemement les possibilité de Google Data Studio en modifiant à la marge un des modèles clés-en-mains :
 
-<iframe width="700" height="525" src="https://datastudio.google.com/embed/reporting/5bee5b9e-a62d-4ff5-ba3b-c553fa636f15/page/6zXD" frameborder="0" style="border:0" allowfullscreen></iframe>
+[![Statistiques 2020 - Google Data Studio](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search.png "Statistiques 2020 - Google Data Studio"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search.png){: data-mediabox="lightbox-gallery" data-title="Google Data Studio"}
 
 [Le rapport interactif :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/poQHpKWzFaE){: .md-button }
-[La capture d'écran :fontawesome-regular-image:](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search.png){: .md-button }
 {: align=middle }
 
 ----
