@@ -3,7 +3,7 @@ title: "CSV - Import/export d'un style catégorisé QGIS"
 authors: ["Florian Boret"]
 categories: ["article"]
 date: 2021-01-09 11:11
-description: "Comment importer et exporter des styles CSV à partir de QGIS"
+description: "CSV - Import/export d'un style catégorisé QGIS"
 image: ""
 tags: qgis,style,csv,processing
 ---
@@ -28,3 +28,5 @@ Hexadécimal : [CSV_HEX_to_categorized_style_algo.py](https://github.com/igeofr/
 Pour compléter ces premiers outils, j'ai également ajouté la possiblité d'exporter les couleurs d'un style QGIS vers un fichier CSV : [Style_to_CSV_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/Style_to_CSV_algo.py).
 
 [![Exempe CCPL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif "Exemple réalisé à partir de la donnée d'occupation de la CCPL."){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif){: data-mediabox="lightbox-gallery" data-title="Exemple réalisé à partir de la donnée d'occupation de la CCPL."}
+
+
