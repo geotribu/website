@@ -1,5 +1,5 @@
 ---
-title: "QGIS - Import/export de styles CSV"
+title: "CSV - Import/export d'un style catégorisé QGIS"
 authors: ["Florian Boret"]
 categories: ["article"]
 date: 2021-01-09 11:11
