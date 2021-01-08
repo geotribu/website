@@ -27,3 +27,9 @@ Fin 2020 et après 5 années de bons et loyaux services, il était grand temps d
 Et pour compléter ces outils, j'en profite pour vous partager un script qui permet d'exporter les couleurs d'un style QGIS vers un fichier CSV : [Style_to_CSV_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/Style_to_CSV_algo.py).
 
 [![Exempe CCPL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif "Exemple réalisé à partir de la donnée d'occupation de la CCPL."){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif){: data-mediabox="lightbox-gallery" data-title="Exemple réalisé à partir de la donnée d'occupation de la CCPL."}
+
+----
+
+## Auteur
+
+--8<-- "content/team/fbor.md"
