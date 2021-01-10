@@ -21,7 +21,7 @@ Voici comment corriger en quelques étapes simples et **sans rien installer**.
 
 ## 3. Corriger ce qui doit l'être
 
-Le bon moment de se rappeler [comment écrire du bon markdown](../requirements#markdown) :wink: !
+Le bon moment de se rappeler [comment écrire du bon markdown](/contribuer/requirements/#markdown) :wink: !
 
 ## 4. Prévisualiser le rendu dans l'onglet `Preview`
 
