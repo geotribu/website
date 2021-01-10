@@ -21,6 +21,11 @@ site_dir: './build/mkdocs/site'
 # Plugins
 plugins:
   - awesome-pages
+  - exclude:
+      glob:
+        - "content/articles/templates/*"
+        - "content/**/_*.md"
+        - "*.yml"
   - git-authors:
       show_contribution: true
   - git-revision-date-localized:
