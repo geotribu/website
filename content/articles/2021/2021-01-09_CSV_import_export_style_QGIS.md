@@ -24,9 +24,17 @@ Fin 2020 et après 5 années de bons et loyaux services, il était grand temps d
 * le premier a toujours besoin de 3 colonnes dans le fichier csv : Red - Green – Blue : [CSV_R_G_B_to_categorized_style_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/CSV_R_G_B_to_categorized_style_algo.py).
 * le second a été séparé en deux scripts qui utilisent toujours une seule colonne de couleur : Hexadécimal : [CSV_HEX_to_categorized_style_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/CSV_HEX_to_categorized_style_algo.py) ou RGB : [CSV_RGB_to_categorized_style_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/CSV_RGB_to_categorized_style_algo.py).
 
-Et pour compléter ces outils, j'en profite pour vous partager un script qui permet d'exporter les couleurs d'un style QGIS vers un fichier CSV : [Style_to_CSV_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/Style_to_CSV_algo.py).
+### Pour aller plus loin
+
+Pour compléter ces premiers outils, j'en ai profité pour travailler sur un nouveau script qui permet d'exporter les couleurs d'un style QGIS vers un fichier CSV : [Style_to_CSV_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/Style_to_CSV_algo.py).
 
 [![Exempe CCPL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif "Exemple réalisé à partir de la donnée d'occupation de la CCPL."){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif){: data-mediabox="lightbox-gallery" data-title="Exemple réalisé à partir de la donnée d'occupation de la CCPL."}
+
+### Pour terminer
+
+En ce qui me concerne, j'ai surtout utilisé ces scripts lors de travaux sur l'occupation du sol ou le nombre de classes était généralement important mais au-delà du fait qu'ils m'ont fait gagné du temps, ils m'ont aussi permis de jongler plus facilement entre une nomenclature (tableur) et QGIS.
+
+Si vous êtes amené à utiliser l'un de ces scripts alors n'hésitez pas à me faire un retour par mail ou à laisser [un commentaire :fontawesome-solid-comments:](#__comments).
 
 ----
 
