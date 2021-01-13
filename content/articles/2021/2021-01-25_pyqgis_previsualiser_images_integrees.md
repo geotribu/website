@@ -17,7 +17,7 @@ tags: "geotribu,QGIS,plugin,PyQt5,icônes,interface graphique"
 Pré-requis :
 
 - une connexion internet
-- des notions en Python
+- Python 3.7+ et les notions qui vont avec
 
 ## Intro
 
@@ -38,7 +38,7 @@ Dans cet article, je vous propose de générer une page HTML dans laquelle on li
 
 ## L'heure du script a sonné
 
-Voici comment on va procéder :
+Voici comment on va procéder dans un script qu'on va nommer `qrc_preview_in_md.py`:
 
 1. Télécharger le fichier `images/images.qrc` depuis le dépôt de QGIS
 2. Lire le fichier pour en extraire les informations sur les images
@@ -51,6 +51,8 @@ On se donne quelques contraintes pour pimenter un peu :
 - légèreté et rapidité : ne pas télécharger l'intégralité du projet QGIS, ni même les images.
 
 ### Télécharger le fichier
+
+![icône browser QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/icons/qbrowser_icon.svg "Icône browser QGIS"){: .img-rdp-news-thumb }
 
 Pour cette étape, on démarre sereinement : le fichier est sur GitHub qui supporte parfairement les requêtes anonymes et il n'y a pas vraiment de difficulté.
 
@@ -91,6 +93,8 @@ Voilà, on a donc notre fichier `qgis_resources.qrc` :
 
 ### Lire le fichier QRC
 
+![icône overview QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionAddAllToOverview.svg "Icône overview QGIS"){: .img-rdp-news-thumb }
+
 En y regardant plus attentivement, on comprend qu'il s'agit d'un XML qui ne dit pas son nom. On a donc tout ce qu'il nous faut :
 
 ```python
@@ -121,40 +125,124 @@ RCC
 
 On a donc une structure très simple :
 
-- les éléments de second niveau sont des "préfixes" correspondant au chemin vers un sous-dossier par rapport au projet principal de l'application qui utilise le fichier (ici QGIS). Il n'y en a que deux.
+- les éléments de deuxième niveau sont des "préfixes" correspondant au chemin vers un sous-dossier par rapport au projet principal de l'application qui utilise le fichier (ici QGIS). Il n'y en a que deux.
 - les éléments de troisième niveau contiennent le chemin jusqu'aux images
 
-### Extraction
+### Extraire la chemin des images
 
+![icône filter QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionFilter2.svg "Icône filter QGIS"){: .img-rdp-news-thumb }
 
+Maintenant qu'on a une idée de la structure, on doit se débrouiller pour reconstituer l'URL complète vers les images, elles-aussi stockées dans le dépôt GitHub de QGIS.
+
+Petit point de vigilance, il faut pointer sur l'URL brute du fichier et non pas celle vers l'interface de la plateforme. Par exemple, pour cette image ![icône console QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconClassConsole.svg "Icône console Python QGIS") :
+
+- le lien de l'interface GitHub : <https://github.com/qgis/QGIS/blob/master/images/themes/default/console/iconClassConsole.svg>
+- le lien de l'image brute : <https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconClassConsole.svg>
+
+Le chemin complet d'une image est donc la somme de 3 éléments :
+
+- l'[URL brute de base du dépôt QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/)
+- l'attribut du préfixe de chaque élément `<qresource>`
+- la valeur textuelle de chaque élément `<file></file>`
+
+C'est partiiii :rocket: :
 
 ```python
-# on importe de quoi lire du XML
-import xml.etree.ElementTree as ET
+# on importe l'outillage de manipulation des chemins
+from pathlib import Path
 
-# on ouvre notre fichier précédemment téléchargé
-tree = ET.parse("qgis_resources.qrc")
-root = tree.getroot()
+# on stocke l'URL de base pour construire les chemins
+base_path = "https://raw.githubusercontent.com/qgis/QGIS/master/"  # avec le final slash :vegeta:
+
+# on boucle sur les préfixes
+for prefix in root:
+    # là on est dans un élément de niveau 2
+    prefix_name = prefix.attrib.get("prefix")[1:]           # on garde le préfixe mais sans son slash initial
+    prefix_path = Path(prefix.attrib.get("prefix")[1:])     # on charge aussi le préfixe sous forme de chemin
+
+    # on boucle sur les fichiers
+    for binimg in prefix.findall("file"):
+        # là on est dans un élément de niveau 3
+        # on construit le chemin (URL) absolue
+        img_path_abs = base_path / prefix_path / binimg.text
+        # un petit print des familles histoire pouvoir vérifier les liens
+        print(img_path_abs)
 ```
 
-for prefix in root:
-    if prefix.tag == "qresource" and "prefix" in prefix.attrib:
-        # set prefix (= level 2 in markdown)
-        prefix_name = prefix.attrib.get("prefix")[1:]
-        prefix_path = Path(prefix.attrib.get("prefix")[1:])
-        out_markdown += "\n## {}\n".format(prefix_name)
+On obtient quelque chose comme ça :
 
-> TO WRITE
+```bash
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/temporal_navigation/pause.svg
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconIterate.svg
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconNetworkLogger.svg
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionAddMarker.svg
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mLayoutItemMarker.svg
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/algorithms/mAlgorithmConstantRaster.svg
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconStopwatch.svg
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/georeferencer/mGeorefRun.png
+[...]
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconSyntaxErrorConsoleParams.svg
+https:/raw.githubusercontent.com/qgis/QGIS/master/images/tips/qgis_tips/symbol_levels.png
+$
+```
+
+On remarque d'abord que les liens fonctionnent bien. Mais ça n'est pas très bien rangé et ce serait dommage de pas avoir les images rangées selon leurs dossiers dans notre document final.
+
+Pour corriger cela, on applique une méthode de tri sur la liste des éléments `file` :
+
+```python
+for binimg in sorted(prefix.findall("file"), key=lambda x: x.text.rsplit("/", 1)[0]):
+    img_path_abs = base_path / prefix_path / binimg.text
+    print(img_path_abs)
+```
+
+C'est beaucoup mieux ! Maintenant, mettons cela en forme dans du Markdown.
 
 ### Mise en forme Markdown
 
-> TO WRITE
+![icône digitizing QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/digitizing.svg "Icône digitizing QGIS"){: .img-rdp-news-thumb }
+
+Pour cette étape, on va stocker le texte dans une variable qu'on incrémentera avec les liens formatés au fur et à mesure de nos boucles, avant d'enregistrer le tout dans un fichier. Histoire d'avoir quelque chose de lisible, on met ça dans un tableau de 2 colonnes : nom du fichier et prévisualiation.
+
+Voici le code qu'on insère avant nos boucles :
+
+```python
+# donnons un doux nom à notre variable
+out_markdown = ""
+
+# on ajoute un titre à la page
+out_markdown += """# Mémo pratique sur les images intégrées dans QGIS\n\n"""
+
+# on ajoute l'entête de notre tableau
+out_markdown += "| Nom du fichier | Prévisualisation |\n| :----- | ------- |\n"
+```
+
+Celui que l'on insère dans la boucle pour ajouter une ligne pour chaque image:
+
+```python
+[...]
+for binimg in sorted(prefix.findall("file"), key=lambda x: x.text.rsplit("/", 1)[0]):
+    img_path_abs = base_path / prefix_path / binimg.text
+    # on crée le modèle de chaque ligne qu'on pourra ainsi utiliser avec le formatage dynamique des chaînes de caractères
+    out_markdown += f"| {img_path_abs.name} | ![{img_path_abs.name}]({img_path_abs} '{img_path_abs.name}') |\n"
+```
+
+Et celui qu'on insère à la fin pour sauvegarder tout cela dans un fichier avec l'extension du Markdown :
+
+```python
+# donnons un doux nom à notre variable
+with Path("qgis_resources_preview_table.md").open("w") as io_out:
+    io_out.write(out_markdown)
+```
 
 ## Conclusion
 
-> TO DOC
+Nous voici avec notre joli fichier que l'on peut [convertir en HTML par exemple](/contribuer/build_site/markdown_engine/). D'ailleurs, j'en ai profité pour l'intégrer à notre site (cf bouton plus bas). A garder sous le coude pour avoir les images et leurs chemins pour développer des plugins colorés.
+
+Pour les plus curieux, j'ai stocké le script complet et avec quelques optimisations dans un Gist dont le lien est également en bas de page. Enfin, tout ça m'a aussi permis d'utiliser les icônes de QGIS pour illustrer les parties de ce tutoriel.
 
 [Afficher le rendu final :fontawesome-regular-eye:](/toc_nav_ignored/qgis_resources_preview_table/){: .md-button }
+[Consulter le script finalisé :fontawesome-brands-github-alt:](https://gist.github.com/Guts/47448dd1c112f5afe28adedd047caf61#file-qrc_preview_in_md-py){: .md-button }
 {: align=middle }
 
 ----
