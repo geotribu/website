@@ -16,7 +16,6 @@ tags: "geotribu,QGIS,plugin,PyQt5,icônes,interface graphique"
 
 Pré-requis :
 
-- une connexion internet.
 - des notions en PyQGIS (Python + Qt + API QGIS)
 
 ## Intro
