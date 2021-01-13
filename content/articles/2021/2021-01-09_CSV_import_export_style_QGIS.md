@@ -10,12 +10,12 @@ tags: qgis,style,csv,processing
 
 ### Historique (QGIS2)
 
-En 2015 après avoir lu un article de José Guerrero :  "[Cómo establecer el color de un rasgo (feature) dependiendo de los valores de los atributos con PyQGIS](https://joseguerreroa.wordpress.com/2015/02/22/como-establecer-el-color-de-un-rasgo-feature-dependiendo-de-los-valores-de-los-atributos-con-pyqgis/)"  l'idée m'était venue de créer de 2 scripts python/processing qui permettaient de générer un **style catégorisé** à partir d'un fichier CSV dans lequel on trouvait des informations de couleur.
+En 2015 après avoir lu un article de José Guerrero :  "[Cómo establecer el color de un rasgo (feature) dependiendo de los valores de los atributos con PyQGIS](https://joseguerreroa.wordpress.com/2015/02/22/como-establecer-el-color-de-un-rasgo-feature-dependiendo-de-los-valores-de-los-atributos-con-pyqgis/)",  l'idée m'était venue de créer de 2 scripts python/processing afin de générer un **style catégorisé** à partir d'un fichier CSV dans lequel des codes couleurs seraient renseignées.
 
 * le premier script avait besoin de 3 colonnes R,G,B dans le fichier csv : [CSV_R-G-B_to_categorized_style.py](https://github.com/igeofr/qgis2/blob/master/scripts/CSV_R-G-B_to_categorized_style.py).
 * le second avait besoin d'un seul champ de couleur RGB ou Hexadécimal : [CSV_RGB_or_HEX_to_categorized_style.py](https://github.com/igeofr/qgis2/blob/master/scripts/CSV_RGB_or_HEX_to_categorized_style.py).
 
-[![Exempe Réunion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/CSV_QGIS_style.gif "Exemple réalisé à partir de la donnée Corine Land Cover de la Réunion."){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/CSV_QGIS_style.gif){: data-mediabox="lightbox-gallery" data-title="Exemple réalisé à partir de la donnée Corine Land Cover de la Réunion."}
+[![Exempe Réunion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/CSV_QGIS_style.gif "Exemple réalisé à partir de la donnée Corine Land Cover de la Réunion."){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/CSV_QGIS_style.gif){: data-mediabox="lightbox-gallery" data-title="Exemple réalisé à partir de la donnée Corine Land Cover de la Réunion."} *Exemple réalisé à partir de la donnée Corine Land Cover de la Réunion.*
 
 ### Aujourd'hui (QGIS3)
 
@@ -26,15 +26,15 @@ Fin 2020 et après 5 années de bons et loyaux services, il était grand temps d
 
 ### Pour aller plus loin
 
-Pour compléter ces premiers outils, j'en ai profité pour travailler sur un nouveau script qui permet d'exporter les couleurs d'un style QGIS vers un fichier CSV : [Style_to_CSV_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/Style_to_CSV_algo.py).
+Pour compléter ces premiers outils, j'en ai profité pour travailler sur un nouveau script python/processing qui permet cette fois-ci d'exporter les couleurs d'un style QGIS vers un fichier CSV (la boucle est bouclée!) : [Style_to_CSV_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/Style_to_CSV_algo.py).
 
-[![Exempe CCPL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif "Exemple réalisé à partir de la donnée d'occupation de la CCPL."){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif){: data-mediabox="lightbox-gallery" data-title="Exemple réalisé à partir de la donnée d'occupation de la CCPL."}
+[![Exempe CCPL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif "Exemple réalisé à partir d'une donnée produite sur le territoire du Lunellois."){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif){: data-mediabox="lightbox-gallery" data-title="Exemple réalisé à partir d'une donnée produite sur le territoire du Lunellois."}*Exemple réalisé à partir d'une donnée produite sur le territoire du Lunellois"
 
 ### Pour terminer
 
-En ce qui me concerne, j'ai surtout utilisé ces scripts lors de travaux sur l'occupation du sol ou le nombre de classes était généralement important mais au-delà du fait qu'ils m'ont fait gagné du temps, ils m'ont aussi permis de jongler plus facilement entre une nomenclature (tableur) et QGIS.
+En ce qui me concerne, j'ai régulièrement utilisé ces scripts lors de travaux sur l'occupation du sol ou le nombre de classes était généralement important mais au-delà du fait qu'ils m'ont fait gagné du temps, ils m'ont aussi permis de jongler plus facilement entre des nomenclatures (tableurs) et QGIS.
 
-Si vous êtes amené à utiliser l'un de ces scripts alors n'hésitez pas à me faire un retour par mail ou à laisser [un commentaire :fontawesome-solid-comments:](#__comments).
+Je vous laisse maintenant assaisonner vos cartes de couleurs :yum:!
 
 ----
 
