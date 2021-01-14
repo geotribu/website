@@ -23,7 +23,7 @@ Pré-requis :
 
 ![icône Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
 
-Avec mon arrivée chez [Oslandia], je me remets au développement de plugins pour QGIS alors autant partager de temps en temps quelques cas d’usage :slightly_smiling_face:. Dans [l'article précédent](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees.md), on vous invitait à utiliser les images embarquées dans le "coeur" de QGIS pour égayer l'interface graphique de vos plugins.
+Avec mon arrivée chez [Oslandia], je me remets au développement de plugins pour QGIS alors autant partager de temps en temps quelques cas d’usage :slightly_smiling_face:. Dans [l'article précédent](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees), on vous invitait à utiliser les images embarquées dans le "coeur" de QGIS pour égayer l'interface graphique de vos plugins.
 
 Pour trouver les icônes, je vous renvoyais sur [le fichier de ressources de QGIS](https://github.com/qgis/QGIS/blob/master/images/images.qrc), mais c'est vrai qu'une fois sur le fichier, c'est un peu sec !
 
@@ -236,6 +236,8 @@ with Path("qgis_resources_preview_table.md").open("w") as io_out:
 ```
 
 ## Conclusion
+
+![icône feature attribute table QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionCalculateField.svg "Icône feature attribute table QGIS"){: .img-rdp-news-thumb }
 
 Nous voici avec notre joli fichier que l'on peut [convertir en HTML par exemple](/contribuer/build_site/markdown_engine/). D'ailleurs, j'en ai profité pour l'intégrer à notre site (cf bouton plus bas). A garder sous le coude pour avoir les images et leurs chemins pour développer des plugins colorés.
 
