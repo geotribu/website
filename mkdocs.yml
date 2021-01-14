@@ -23,8 +23,7 @@ plugins:
   - awesome-pages
   - exclude:
       glob:
-        - "content/articles/templates/*"
-        - "content/**/_*.md"
+        - "*/templates/*"
         - "*.yml"
   - git-authors:
       show_contribution: true
