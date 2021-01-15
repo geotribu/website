@@ -10,7 +10,6 @@ tags: contribuer,tutoriel,markdown,rédaction,python,html,markdownlint
 # Rédiger en Markdown : règles et enjeux de qualité
 
 !!! note
-
     Les règles à appliquer dépendent du moteur de rendu (conversion en HTML) utilisé. Consulter [l'article "Comprendre le rendu Markdown"](/contribuer/markdown_engine/#specificites) pour en savoir plus.
 
 ## Règles
@@ -38,17 +37,17 @@ Il est aussi possible d'utiliser markdownlint sous forme d'[extension dans Visua
 
 ## Erreurs fréquentes
 
-#### Cohérence du caractère pour les listes à puces
+### Cohérence du caractère pour les listes à puces
 
 S'il est techniquement possible d'utiliser différents caractères, il est préférable d'utiliser le même caractère (généralement l'astérisque ou le tiret) et a minima le style doit être cohérent dans une même page.
 
-Dans cet exemple, des astérisques (`*` ) ont été utilisés après que des tirets (`-`) l'aient déjà été pour le même niveau de puces.
+Dans cet exemple, des astérisques (`*`) ont été utilisés après que des tirets (`-`) l'aient déjà été pour le même niveau de puces.
 
 ![erreur style puces](https://user-images.githubusercontent.com/1596222/92222985-186a0200-eea0-11ea-9887-21fdbce10080.png "Signalement de l'erreur dans Visual Studio Code"){: .img-center loading=lazy }
 
 > Référence : [MD004 - Unordered list style](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
 
-#### Sauts de ligne et lignes vides
+### Sauts de ligne et lignes vides
 
 En markdown, selon les implémentations, il est important de laisser des lignes vides entre les différents paragraphes (ou ce qui deviendra une balise HTML différente une fois converti). Par exemple :
 

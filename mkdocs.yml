@@ -21,6 +21,10 @@ site_dir: './build/mkdocs/site'
 # Plugins
 plugins:
   - awesome-pages
+  - exclude:
+      glob:
+        - "*/templates/*"
+        - "*.yml"
   - git-authors:
       show_contribution: true
   - git-revision-date-localized:
@@ -110,6 +114,9 @@ extra:
     - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/search?q=%23GeoRDP&src=typed_query&f=live'
       name: "La #GeoRDP de Geotribu sur Twitter"
+    - icon: 'fontawesome/brands/linkedin'
+      link: 'https://www.linkedin.com/feed/hashtag/?keywords=geotribu'
+      name: "Les contenus de Geotribu sur LinkedIn"
     - icon: 'fontawesome/brands/facebook'
       link: 'https://fr-fr.facebook.com/geotribu/'
       name: "Page Facebook de Geotribu"
