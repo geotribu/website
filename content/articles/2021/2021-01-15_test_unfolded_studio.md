@@ -8,10 +8,8 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded
 tags: unfolded, application, geodonnees, datavisualisation, analyse
 ---
 
-Unfolded Studio est un tout nouvel outil créé par l'équipe derrière [kepler.gl](https://kepler.gl/), [deck.gl](https://deck.gl/) ou [H3](https://h3geo.org/).  
+[![logo unfolded](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png "Logo Unfolded"){: loading=lazy }](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png){: data-mediabox="illustrations" data-title="Logo Unfolded" } Unfolded Studio est un tout nouvel outil créé par l'équipe derrière [kepler.gl](https://kepler.gl/), [deck.gl](https://deck.gl/) ou [H3](https://h3geo.org/).  
 Ils se sont rencontrés lorsqu'ils travaillaient pour Uber et ont monté en 2019 la société [Unfolded.ai](https://www.unfolded.ai/).
-
-[![logo unfolded](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png "Logo Unfolded"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png){: data-mediabox="illustrations" data-title="Logo Unfolded" }
 
 Ils parlent de cette plateforme comme de la nouvelle génération d'outils d'analyse et de visualisation web de données géographiques.
 
@@ -32,13 +30,13 @@ Si vous avez essayé Unfolded Studio, n'hésitez pas à laisser vos impressions 
 
 <iframe width="100%" height="500px" src="https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440/embed" frameborder="0" allowfullscreen></iframe>
 
+!!! info "[Pour voir la carte en plein écran, cliquez ici !](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440)"
+
 Vous allez rapidement vous rendre compte que le premier défaut que je trouve à l'outil est le temps de chargement.  
 Il y a une 60aine de Mo à charger, certes, mais ça gâche un peu l'expérience utilisateur, qu'ils vantent comme simple et rapide...  
 En revanche, une fois l'affichage terminé, l'interface réagit très bien, ce qui est un très bon point.
 
 Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglomération bordelaise, comparée (à droite) à une discrétisation par niveaux de prix (plus c'est foncé, plus le logement est cher).
-
->Si vous souhaitez explorer plus librement cette carte, n'hésitez pas à [vous rendre ici pour l'afficher en plein écran.](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440)
 
 ## Une documentation bien fournie
 
@@ -55,11 +53,11 @@ Vous accédez au studio ici <https://studio.unfolded.ai/>, et une fois connecté
 
 On vous propose d'importer des fichiers ou d'en utiliser à partir d'une url.
 
-[![import donnee](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/import_donnees.png "Import données"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/import_donnees.png){: data-mediabox="illustrations" data-title="Import données" }
+[![import donnee](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/import_donnees.png "Import données"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/import_donnees.png){: data-mediabox="illustrations" data-title="Import données" }
 
 Et l'application affiche dans un premier temps ce qu'il lui semble le plus "logique" comme manière de représenter chaque donnée chargée.
 
-[![premiere representation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png "Première représentation"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png){: data-mediabox="illustrations" data-title="Première représentation" }
+[![premiere representation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png "Première représentation"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png){: data-mediabox="illustrations" data-title="Première représentation" }
 
 Libre à vous ensuite de changer le type de représentation, dont les possibilités sont assez fournies :
 
@@ -75,9 +73,9 @@ Libre à vous ensuite de changer le type de représentation, dont les possibilit
 - H3
 - Trip layer
 
-Et de choisir quel champs servira à la symbologie.  
+Et de choisir quels champs serviront à la symbologie.  
 
-Sur cet exemple, j'ai chosi de représenter une heatmap pour observer la densité de logements Airbnb.  
+Sur cet exemple, j'ai choisi de représenter une heatmap pour observer la densité de logements Airbnb.  
 On peut modifier la palette de couleurs, ainsi que le radius et ajouter un poids à sa création.
 
 Pour la deuxième carte, j'ai voulu afficher les différences de prix, en jouant sur la couleur du ponctuel.
@@ -92,7 +90,7 @@ Passons rapidement sur ce titre imitant très mal le bad side de Smeagol.
 
 L'onglet Columns permet de faire un peu de manipulation de données.
 
-[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: data-mediabox="illustrations" data-title="Manipulation de données" }
+[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: data-mediabox="illustrations" data-title="Manipulation de données" }
 
 Il est possible de :
 
@@ -108,7 +106,7 @@ Déjà pas mal !
 D'autres fonctionnalités existent comme des filtres, des options sur les infobulles ou encore un geocoder.  
 Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
 
-[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
+[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
 
 Il est également possible de choisir quelle fond de plan servira à votre carte.  
 Il faudra pour cela accepter de passer par MapBox, hé oui...
@@ -116,11 +114,11 @@ Il faudra pour cela accepter de passer par MapBox, hé oui...
 ## Publication et export
 
 C'est dans la publication de votre carte que les choses changent réellement par rapport à kepler.gl.  
-Unfolded va stocker la carte que vous venez de créer dans un dossier, vous permettant alors d'y revenir ou bien de la partager.
+Unfolded va stocker la carte que vous venez de créer dans un dossier sur leur serveur, vous permettant alors d'y revenir ou bien de la partager.
 
-Une fois publiée (ce qui peut prendre du temps), vous pourrez soit la partager directement via une url ou l'embarquer dans un site internet via un iframe.
+Une fois publiée (ce qui peut prendre du temps), vous pourrez la partager directement via une url ou l'embarquer dans un site internet via un iframe.
 
-[![partager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png "Partager"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png){: data-mediabox="illustrations" data-title="Partager" }
+[![partager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png "Partager"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png){: data-mediabox="illustrations" data-title="Partager" }
 
 Enfin, plusieurs options d'export s'offrent à vous :
 
@@ -132,13 +130,13 @@ Enfin, plusieurs options d'export s'offrent à vous :
 
 Unfolded propose un free tier avec les caractéristiques suivantes :
 
-[![pricing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png "Pricing"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png){: data-mediabox="illustrations" data-title="Pricing" }
+[![pricing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png "Pricing"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png){: data-mediabox="illustrations" data-title="Pricing" }
 
-Clairement, rien n'est gratuit dans ce bas monde, donc si vous souhiatez faire un peu plus que jouer avec Unfolded Studio, il est fort à parier que vous serez obligé de passer par la version payante (dont le prix n'est pour l'instant pas communiqué) ou que vous vous retournerez vers kepler.gl ou deck.gl.
+Clairement, rien n'est gratuit dans ce bas monde, donc si vous souhaitez faire un peu plus que jouer avec Unfolded Studio, il est fort à parier que vous serez obligé de passer par la version payante (dont le prix n'est pour l'instant pas communiqué) ou que vous vous retournerez vers kepler.gl ou deck.gl.
 
 # Données
 
-Les données utilisées pour cet article proviennent du site <http://insideairbnb.com/get-the-data.html> qui n'est pas affilié à Airbnb, mais qui a récupéré des tonnes de données directement sur le site.
+Les données utilisées pour cet article proviennent du site <http://insideairbnb.com> qui n'est pas affilié à Airbnb, mais qui a récupéré des tonnes de données directement sur le site.
 
 # Conclusions
 
@@ -158,6 +156,8 @@ Evidemment, quelques inconvénients ou améliorations à attendre :
 
 Personnellement, au vu des avantages et inconvénients précédemment listés, cela me donne l'impression d'un kepler.gl embarqué dans un PaaS.  
 Si vous n'avez le temps ou les compétences pour utiliser kepler.gl ou d'autres bibliothèques de ce type, cela peut être une bonne solution.
+
+Reste à voir la manière dont cela évoluera dans le futur !
 
 ----
 
