@@ -17,6 +17,15 @@ Ils parlent de cette plateforme comme de la nouvelle génération d'outils d'ana
 
 J'ai donc voulu tester un peu tout ça !
 
+----
+
+Si vous avez essayé Unfolded Studio, n'hésitez pas à laisser vos impressions dans les commentaires !
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
+----
+
 # Carte des logements Airbnb de Bordeaux
 
 ## Un primo-affichage un poil lent
@@ -152,7 +161,6 @@ Si vous n'avez le temps ou les compétences pour utiliser kepler.gl ou d'autres 
 
 ----
 
-En espérant que cet article aura pu vous être utile, n'hésitez pas à laisser vos impressions sur Unfolded Studio dans les commentaires !
+## Auteur
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
-{: align=middle }
+--8<-- "content/team/acha.md"
