@@ -4,12 +4,14 @@ authors: ["Aurélien Chaumet"]
 categories: ["article"]
 date: 2021-01-15 11:11
 description: "Représentation de données Airbnb de Bordeaux via Unfolded Studio"
-#image: ""
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png"
 tags: unfolded, application, geodonnees, datavisualisation, analyse
 ---
 
 Unfolded Studio est un tout nouvel outil créé par l'équipe derrière [kepler.gl](https://kepler.gl/), [deck.gl](https://deck.gl/) ou [H3](https://h3geo.org/).  
 Ils se sont rencontrés lorsqu'ils travaillaient pour Uber et ont monté en 2019 la société [Unfolded.ai](https://www.unfolded.ai/).
+
+[![logo unfolded](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png "Logo Unfolded"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png){: data-mediabox="illustrations" data-title="Logo Unfolded" }
 
 Ils parlent de cette plateforme comme de la nouvelle génération d'outils d'analyse et de visualisation web de données géographiques.
 
@@ -94,11 +96,53 @@ Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
 Il est également possible de choisir quelle fond de plan servira à votre carte.  
 Il faudra pour cela accepter de passer par MapBox, hé oui...
 
+## Publication et export
+
+C'est dans la publication de votre carte que les choses changent réellement par rapport à kepler.gl.  
+Unfolded va stocker la carte que vous venez de créer dans un dossier, vous permettant alors d'y revenir ou bien de la partager.
+
+Une fois publiée (ce qui peut prendre du temps), vous pourrez soit la partager directement via une url ou l'embarquer dans un site internet via un iframe.
+
 Enfin, plusieurs options d'export s'offrent à vous :
-- 
+
+- Image
+- Data
+- Carte
+
+## Business model
+
+Unfolded propose un free tier avec les caractéristiques suivantes :
+
+LIEN IMAGE
+
+Clairement, rien n'est gratuit dans ce bas monde, donc si vous souhiatez faire un peu plus que jouer avec Unfolded Studio, il est fort à parier que vous serez obligé de passer par la version payante (dont le prix n'est pour l'instant pas communiqué) ou que vous vous retournerez vers kepler.gl ou deck.gl.
 
 # Données
 
-Les données proviennent du site <http://insideairbnb.com/get-the-data.html> qui n'est pas affilié à Airbnb, mais qui a récupéré des tonnes de données directement sur le site.
+Les données utilisées pour cet article proviennent du site <http://insideairbnb.com/get-the-data.html> qui n'est pas affilié à Airbnb, mais qui a récupéré des tonnes de données directement sur le site.
 
 # Conclusions
+
+Quelques réflexions issues de cette première prise en main.
+
+D'abord, ses avantages :
+
+- Prise en main de l'application très rapide
+- Une fois les données chargées, l'application répond très rapidement aux changements de paramètres
+- La publication de la carte permet de la réutiliser facilement ailleurs
+
+Evidemment, quelques inconvénients ou améliorations à attendre :
+
+- Une certaine lenteur dans le chargement de la carte publiée
+- Les fonctionnalités de modification des jeux de données sont assez peu poussées
+- Le free tier limite assez rapidement l'utilisation, que ce soit au niveau de la taille de fichier stockable (1Go), du nombre de cartes publiables ou encore sur la non capacité à se connecter à des bases de données
+
+Personnellement, au vu des avantages et inconvénients précédemment listés, cela me donne l'impression d'un kepler.gl embarqué dans un PaaS.  
+Si vous n'avez le temps ou les compétences pour utiliser kepler.gl ou d'autres bibliothèques de ce type, cela peut être une bonne solution.
+
+----
+
+En espérant que cet article aura pu vous être utile, n'hésitez pas à laisser vos impressions sur Unfolded Studio dans les commentaires !
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
