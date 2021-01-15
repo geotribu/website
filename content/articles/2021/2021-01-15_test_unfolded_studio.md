@@ -35,7 +35,7 @@ Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglom
 
 La documentation [se trouve ici](https://docs.unfolded.ai/) et est déjà bien achalandée pour un nouveau produit.
 
-Pour ceux ayant utilisé kepler.gl, vous remarquerez que pas mal de features se croisent dans Unfolded Studio, ce qui explique sans doute, le niveau de maturité de l'application.
+Pour ceux ayant utilisé kepler.gl, vous remarquerez que pas mal de features se croisent dans Unfolded Studio, ce qui explique, sans doute, le niveau de maturité de l'application.
 
 ## Manipulation de l'application
 
@@ -46,9 +46,13 @@ Vous accédez au studio ici <https://studio.unfolded.ai/>, et une fois connecté
 
 On vous propose d'importer des fichiers ou d'en utiliser à partir d'une url.
 
+[![import donnee](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/import_donnees.png "Import données"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/import_donnees.png){: data-mediabox="illustrations" data-title="Import données" }
+
 Et l'application affiche dans un premier temps ce qu'il lui semble le plus "logique" comme manière de représenter chaque donnée chargée.
 
-Libre à vous ensuite de changer de type de représentation, dont les possibilités sont assez fournies :
+[![premiere representation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png "Première représentation"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png){: data-mediabox="illustrations" data-title="Première représentation" }
+
+Libre à vous ensuite de changer le type de représentation, dont les possibilités sont assez fournies :
 
 - Point
 - Arc
@@ -71,13 +75,15 @@ Pour la deuxième carte, j'ai voulu afficher les différences de prix, en jouant
 
 Tout ces paramètres sont très rapides à modifier et relativement instinctifs.
 
-On remarquera qu'il n'est pour l'instant pas possible de jouer sur les transparences des différentes couches affichées...
+On remarquera qu'il n'est, pour l'instant, pas possible de jouer sur les transparences des différentes couches affichées...
 
 ## Coooluuuuumns
 
 Passons rapidement sur ce titre imitant très mal le bad side de Smeagol.
 
 L'onglet Columns permet de faire un peu de manipulation de données.
+
+[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: data-mediabox="illustrations" data-title="Manipulation de données" }
 
 Il est possible de :
 
@@ -93,6 +99,8 @@ Déjà pas mal !
 D'autres fonctionnalités existent comme des filtres, des options sur les infobulles ou encore un geocoder.  
 Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
 
+[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
+
 Il est également possible de choisir quelle fond de plan servira à votre carte.  
 Il faudra pour cela accepter de passer par MapBox, hé oui...
 
@@ -102,6 +110,8 @@ C'est dans la publication de votre carte que les choses changent réellement par
 Unfolded va stocker la carte que vous venez de créer dans un dossier, vous permettant alors d'y revenir ou bien de la partager.
 
 Une fois publiée (ce qui peut prendre du temps), vous pourrez soit la partager directement via une url ou l'embarquer dans un site internet via un iframe.
+
+[![partager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png "Partager"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png){: data-mediabox="illustrations" data-title="Partager" }
 
 Enfin, plusieurs options d'export s'offrent à vous :
 
@@ -113,7 +123,7 @@ Enfin, plusieurs options d'export s'offrent à vous :
 
 Unfolded propose un free tier avec les caractéristiques suivantes :
 
-LIEN IMAGE
+[![pricing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png "Pricing"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png){: data-mediabox="illustrations" data-title="Pricing" }
 
 Clairement, rien n'est gratuit dans ce bas monde, donc si vous souhiatez faire un peu plus que jouer avec Unfolded Studio, il est fort à parier que vous serez obligé de passer par la version payante (dont le prix n'est pour l'instant pas communiqué) ou que vous vous retournerez vers kepler.gl ou deck.gl.
 
