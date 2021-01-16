@@ -52,4 +52,5 @@ jobs:
         git config --global user.email "geotribu@gmail.com"
         mkdocs gh-deploy --clean --force --verbose
       env:
+        MKDOCS_GOOGLE_ANALYTICS_KEY: 'UA-162113930-1'
         MKDOCS_SEARCH_PREBUILD_INDEX: node

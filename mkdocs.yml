@@ -97,7 +97,7 @@ theme:
 
 # Integrations with 3rd party
 google_analytics:
-  - 'UA-162113930-1'
+  - !!python/object/apply:os.getenv ["MKDOCS_GOOGLE_ANALYTICS_KEY"]
   - 'auto'
 
 # Customization
