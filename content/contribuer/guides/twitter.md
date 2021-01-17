@@ -2,6 +2,7 @@
 title: Intégrer un tweet
 category: contribution
 date: 2020-04-20 10:20
+description: "Guide de contribution à Geotribu : comment intégrer un tweet dans un contenu en Markdown."
 tags: contribuer,twitter,tweet,embed,intégration,tutoriel
 ---
 
