@@ -32,15 +32,30 @@ Lorsque qu'il s'agit de soigner l'interface graphique, c'est souvent fastidieux,
 
 Une solution est d'utiliser les images déjà embarquées dans QGIS. Elles sont déjà chargées, intégrées dans le thème de QGIS et sont suffisamment génériques pour bien des cas de figure. La plupart des images sont répertoriées dans le *Resource Collection File* enfin le [fichier de ressources](https://github.com/qgis/QGIS/blob/master/images/images.qrc) quoi.
 
-Par exemple, lorsque l'on ajoute un bouton d'aide à son menu, on peut pointer sur l'icône du manuel d'aide :
+Par exemple, lorsque l'on ajoute un bouton d'aide à son menu, on peut pointer sur celle du manuel d'aide de QGIS :
 
-```python
-self.action_menu_help = QAction(
-    QIcon(":/images/themes/default/mActionHelpContents.svg"),
-    self.tr("Help") + "...",
-    self.iface.mainWindow(),
-)
-self.iface.addPluginToMenu("Le nom du plugin", self.action_menu_help)
+```python hl_lines="17"
+# imports
+from qgis.core import QgsApplication
+from qgis.PyQt.QtGui import QIcon
+
+[...]
+
+class PluginGeotribu:
+
+    [...]
+
+    # quelque part dans la fonction de définition du menu de notre plugin
+    def initGui(self):
+
+        [...]
+
+        self.action_menu_help = QAction(
+            QIcon(QgsApplication.iconPath("mActionHelpContents.svg")),
+            self.tr("Help") + "...",
+            self.iface.mainWindow(),
+        )
+        self.iface.addPluginToMenu("Le nom du plugin", self.action_menu_help)
 ```
 
 On obtient alors :
@@ -50,9 +65,9 @@ On obtient alors :
 C'est déjà plus sympa et intégré non ?
 
 !!! note
-    De la même façon, il est aussi possible d'utiliser les ressources d'un autre plugin en adaptant le chemin avec le préfixe correspondant. Mais il faut pouvoir s'assurer que cet autre plugin soit toujours installé avec le nôtre.
+    De la même façon, il est aussi possible d'utiliser les ressources d'un autre plugin en adaptant le chemin avec le préfixe correspondant. Mais il faut pouvoir s'assurer que cet autre plugin soit toujours installé avec le nôtre (en l'indiquant comme dépendance par exemple).
 
-Maintenant, vous n'avez plus aucune excuse pour ne pas mettre de belles icônes dans vos fenêtres et menus ! Avec modération bien sûr :wink:.
+Maintenant, vous n'avez plus aucune excuse pour ne pas mettre de belles icônes dans vos fenêtres et menus ! Avec modération bien sûr :wink:. Merci à [Etienne](https://twitter.com/etrimaille/) pour le rappel sur [_QgsApplication.iconPath_](https://qgis.org/api/classQgsApplication.html#aeb52c5382784b9adbdf0e0328a7ea2ad) dont "l'avantage, c'est que ca gère le thème de QGIS (Dark, Grey or Normal)".
 
 ----
 
