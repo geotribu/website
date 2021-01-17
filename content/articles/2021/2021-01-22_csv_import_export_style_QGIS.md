@@ -61,9 +61,9 @@ Ouvrir la fenêtre du processing et :point_down:
 
 1. Vous devez placer le ou les script(s) dans ce répertoire :
 
-* Linux : /home/USER/.local/share/QGIS/QGIS3/profiles/default/processing/scripts
-* MacOS : ~/Bibliothèque/Application Support/QGIS/QGIS3/profiles/default/processing/scripts
-* Windows : C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\processing\scripts
+  * Linux : /home/USER/.local/share/QGIS/QGIS3/profiles/default/processing/scripts
+  * MacOS : ~/Bibliothèque/Application Support/QGIS/QGIS3/profiles/default/processing/scripts
+  * Windows : C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\processing\scripts
 
 2. Lancer QGIS
 
