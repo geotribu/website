@@ -10,13 +10,13 @@ tags: qgis,style,csv,processing
 
 # CSV - Import/export d'un style catégorisé QGIS
 
-:calendar: Date de publication initiale : 19 janvier 2021
+:calendar: Date de publication initiale : 22 janvier 2021
 
 **Mots-clés :** QGIS | style | CSV | processing
 
 ## Historique (QGIS2)
 
-En 2015 après avoir lu un article de José Guerrero :  [Cómo establecer el color de un rasgo (feature) dependiendo de los valores de los atributos con PyQGIS](https://joseguerreroa.wordpress.com/2015/02/22/como-establecer-el-color-de-un-rasgo-feature-dependiendo-de-los-valores-de-los-atributos-con-pyqgis/),  l'idée m'était venue de créer 2 scripts python/processing afin de générer un **style catégorisé** à partir d'un fichier CSV dans lequel des codes couleurs seraient renseignées.
+En 2015, après avoir lu l'article de José Guerrero [_Cómo establecer el color de un rasgo (feature) dependiendo de los valores de los atributos con PyQGIS_](https://joseguerreroa.wordpress.com/2015/02/22/como-establecer-el-color-de-un-rasgo-feature-dependiendo-de-los-valores-de-los-atributos-con-pyqgis/),  l'idée m'était venue de créer 2 scripts python/processing afin de générer un **style catégorisé** à partir d'un fichier CSV dans lequel des codes couleurs seraient renseignés.
 
 Pourquoi ? Parce que saisir jusqu'à 80 codes couleur à la mains c'était juste pas concevable :wink: !
 
@@ -33,13 +33,17 @@ Fin 2020 et après 5 années de bons et loyaux services, il était grand temps d
 
 * le premier a toujours besoin de 3 colonnes dans le fichier csv : Red - Green – Blue : [CSV_R_G_B_to_categorized_style_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/CSV_R_G_B_to_categorized_style_algo.py).
 
-!!! Structure du fichier CSV
-  Par défaut, la structure du fichier CSV est la suivante : Value;Label;Red;Green;Blue mais l'ordre peut être modifié puisque le script permet de définir le numéro de chaque colonne en commençant par zéro (Par défaut : value : 0 ; label : 1 ; Red : 2 ; Green : 3 ; Blue : 4).
+!!! info "Structure du fichier CSV"
+    Par défaut, la structure du fichier CSV est la suivante : `Value;Label;Red;Green;Blue` mais l'ordre peut être modifié puisque le script permet de définir le numéro de chaque colonne en commençant par zéro.  
+    Par défaut : `value : 0 ; label : 1 ; Red : 2 ; Green : 3 ; Blue : 4`.
 
-* le second a été séparé en deux scripts qui utilisent toujours une seule colonne de couleur : Hexadécimal : [CSV_HEX_to_categorized_style_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/CSV_HEX_to_categorized_style_algo.py) ou RGB : [CSV_RGB_to_categorized_style_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/CSV_RGB_to_categorized_style_algo.py).
+* le second a été séparé en deux scripts qui utilisent toujours une seule colonne de couleur :
+    * Hexadécimal : [CSV_HEX_to_categorized_style_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/CSV_HEX_to_categorized_style_algo.py)
+    * ou RGB : [CSV_RGB_to_categorized_style_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/CSV_RGB_to_categorized_style_algo.py).
 
-!!! Structure du fichier CSV
-   Par défaut, la structure du fichier CSV est la suivante : Value;Label;RGB mais l'ordre peut être modifié puisque le script permet là aussi de définir le numéro de chaque colonne en commençant par zéro (Par défaut : value : 0 ; label : 1 ; RGB : 2).
+!!! info "Structure du fichier CSV"
+    Par défaut, la structure du fichier CSV est la suivante : `Value;Label;RGB` mais l'ordre peut être modifié puisque le script permet là aussi de définir le numéro de chaque colonne en commençant par zéro.  
+    Parr défaut : `value : 0 ; label : 1 ; RGB : 2`.
 
 ## Pour aller plus loin
 
@@ -49,27 +53,35 @@ Pour compléter ces premiers outils, j'en ai profité pour travailler sur un nou
 *Exemple réalisé à partir d'une donnée produite sur le territoire du Lunellois*
 {: align=middle }
 
+----
+
 ## Comment ajouter ces scripts dans QGIS3
 
-**La facilité :**
+### La facilité
 
 Ouvrir la fenêtre du processing et :point_down:
 
-![Liste des scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ajouter_scripts.png "Liste des scripts."){: loading=lazy }{: align=middle }
+![Liste des scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ajouter_scripts.png "Liste des scripts."){: loading=lazy }
+{: align=middle }
 
-**A l'ancienne :**
+### A l'ancienne
 
 1. Vous devez placer le ou les script(s) dans ce répertoire :
 
-* Linux : /home/USER/.local/share/QGIS/QGIS3/profiles/default/processing/scripts
-* MacOS : ~/Bibliothèque/Application Support/QGIS/QGIS3/profiles/default/processing/scripts
-* Windows : C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\processing\scripts
+    * Linux : `/home/USER/.local/share/QGIS/QGIS3/profiles/default/processing/scripts`
+    * MacOS : `~/Bibliothèque/Application Support/QGIS/QGIS3/profiles/default/processing/scripts`
+    * Windows : `C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\processing\scripts`
 
 2. Lancer QGIS
+3. Ensuite au niveau de la fenêtre du processing, vous devez voir une section `Scripts` :
 
-Ensuite au niveau de la fenêtre du processing, vous devez voir une section ![Scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/scripts_processing.png "Scripts."){: loading=lazy } et si vous la déroulez vous devez voir la sous-section "Style" dans laquelle se trouvent les scripts ajoutés.
+    ![Scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/scripts_processing.png "Scripts."){: loading=lazy }
+    {: align=middle }
 
-![Liste des scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/scripts_QGIS_style.png "Liste des scripts."){: loading=lazy }{: align=middle }
+4. Si vous la déroulez vous devez voir la sous-section "Style" dans laquelle se trouvent les scripts ajoutés.
+
+    ![Liste des scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/scripts_QGIS_style.png "Liste des scripts."){: loading=lazy }
+    {: align=middle }
 
 ## Pour terminer
 
