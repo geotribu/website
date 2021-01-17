@@ -58,14 +58,18 @@ Ouvrir la fenêtre du processing et :point_down:
 ![Liste des scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ajouter_scripts.png "Liste des scripts."){: loading=lazy }{: align=middle }
 
 **A l'ancienne :**
+
 1. Vous devez placer le ou les script(s) dans ce répertoire :
-  * Linux : /home/USER/.local/share/QGIS/QGIS3/profiles/default/processing/scripts
-  * MacOS : ~/Bibliothèque/Application Support/QGIS/QGIS3/profiles/default/processing/scripts
-  * Windows : C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\processing\scripts
+
+* Linux : /home/USER/.local/share/QGIS/QGIS3/profiles/default/processing/scripts
+* MacOS : ~/Bibliothèque/Application Support/QGIS/QGIS3/profiles/default/processing/scripts
+* Windows : C:\Users\USER\AppData\Roaming\QGIS\QGIS3\profiles\default\processing\scripts
+
 2. Lancer QGIS 
 
-Ensuite au niveau de la fenêtre du processing, vous devez voir une section ![Scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/scripts_processing.png "Scripts."){: loading=lazy } et si vous la déroulez vous devez voir la sous-section "Style" dans laquelle se trouvent les scripts ajoutés 
-    ![Liste des scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/scripts_QGIS_style.png "Liste des scripts."){: loading=lazy }{: align=middle }
+Ensuite au niveau de la fenêtre du processing, vous devez voir une section ![Scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/scripts_processing.png "Scripts."){: loading=lazy } et si vous la déroulez vous devez voir la sous-section "Style" dans laquelle se trouvent les scripts ajoutés.
+
+![Liste des scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/scripts_QGIS_style.png "Liste des scripts."){: loading=lazy }{: align=middle }
 
 ## Pour terminer
 
