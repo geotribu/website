@@ -5,7 +5,7 @@ categories: ["article", "tutoriel"]
 date: "2020-01-19 10:20"
 description: "Pour le développement d'un plugin pour QGIS, soigner l'interface graphique peut être fastidieux, notamment de concevoir ou trouver les éléments graphiques. Pourquoi ne pas utiliser les icônes déjà embarquées dans QGIS ?."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_file-explorer.png"
-tags: "geotribu,QGIS,plugin,PyQt5,icônes,interface graphique"
+tags: "QGIS,plugin,PyQt5,icônes,interface graphique"
 ---
 
 # Utiliser les icônes intégrées de QGIS pour égayer ses plugins
