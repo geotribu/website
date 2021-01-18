@@ -2,7 +2,7 @@
 title: "Unfolded Studio, une nouvelle plateforme de visualisation de géodonnées"
 authors: ["Aurélien Chaumet"]
 categories: ["article"]
-date: 2021-01-15 11:11
+date: 2021-02-02 11:11
 description: "Représentation de données Airbnb de Bordeaux via Unfolded Studio"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png"
 tags: unfolded, application, geodonnees, datavisualisation, analyse
