@@ -42,7 +42,7 @@ plugins:
         datetime_format: "%Y-%m-%d %H:%M"
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 40
-      pretty_print: false
+      pretty_print: true
   - search:
       lang: fr
       prebuild_index: !!python/object/apply:os.getenv ["MKDOCS_SEARCH_PREBUILD_INDEX"]
