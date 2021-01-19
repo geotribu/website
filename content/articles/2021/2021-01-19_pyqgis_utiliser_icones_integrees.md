@@ -2,7 +2,7 @@
 title: "Plugin QGIS : utiliser les icônes intégrées"
 authors: ["Julien MOURA"]
 categories: ["article", "tutoriel"]
-date: "2020-01-19 10:20"
+date: "2021-01-19 14:20"
 description: "Pour le développement d'un plugin pour QGIS, soigner l'interface graphique peut être fastidieux, notamment de concevoir ou trouver les éléments graphiques. Pourquoi ne pas utiliser les icônes déjà embarquées dans QGIS ?."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_file-explorer.png"
 tags: "QGIS,plugin,PyQt5,icônes,interface graphique"
@@ -29,6 +29,8 @@ Lorsque qu'il s'agit de soigner l'interface graphique, c'est souvent fastidieux,
 ![menu plugin cadastre](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/pyqgis_menu_icons_cadastre.png "Le menu du plugin Cadastre"){: .img-center }
 *Pourtant c'est quand même plus joli avec des icônes*
 {: align=middle }
+
+## Recycler les icônes de l'interface de QGIS
 
 Une solution est d'utiliser les images déjà embarquées dans QGIS. Elles sont déjà chargées, intégrées dans le thème de QGIS et sont suffisamment génériques pour bien des cas de figure. La plupart des images sont répertoriées dans le *Resource Collection File* enfin le [fichier de ressources](https://github.com/qgis/QGIS/blob/master/images/images.qrc) quoi.
 
