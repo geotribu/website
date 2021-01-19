@@ -2,7 +2,7 @@
 title: "QGIS : lister et prévisualiser les images intégrées"
 authors: ["Julien MOURA"]
 categories: ["article", "tutoriel"]
-date: "2020-01-25 10:20"
+date: "2021-01-25 10:20"
 description: "Suite au dernier article, voici les images intégrées à QGIS et le script qui va avec pour générer une jolie page markdown."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_file-explorer.png"
 tags: "geotribu,QGIS,plugin,PyQt5,icônes,interface graphique"
