@@ -8,7 +8,11 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded
 tags: unfolded, application, geodonnees, datavisualisation, analyse
 ---
 
-[![logo unfolded](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png "Logo Unfolded"){: loading=lazy }](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png){: data-mediabox="illustrations" data-title="Logo Unfolded" } Unfolded Studio est un tout nouvel outil créé par l'équipe derrière [kepler.gl](https://kepler.gl/), [deck.gl](https://deck.gl/) ou [H3](https://h3geo.org/).  
+# Unfolded Studio, une nouvelle plateforme de visualisation de géodonnées
+
+![capture unfolded studio](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png "Capture Unfolded Studio"){: align=middle : loading=lazy }
+
+[Unfolded Studio](https://studio.unfolded.ai/) est un tout nouvel outil créé par l'équipe derrière [kepler.gl](https://kepler.gl/), [deck.gl](https://deck.gl/) ou [H3](https://h3geo.org/).  
 Ils se sont rencontrés lorsqu'ils travaillaient pour Uber et ont monté en 2019 la société [Unfolded.ai](https://www.unfolded.ai/).
 
 Ils parlent de cette plateforme comme de la nouvelle génération d'outils d'analyse et de visualisation web de données géographiques.
@@ -24,9 +28,9 @@ Si vous avez essayé Unfolded Studio, n'hésitez pas à laisser vos impressions 
 
 ----
 
-# Carte des logements Airbnb de Bordeaux
+## Carte des logements Airbnb de Bordeaux
 
-## Un primo-affichage un poil lent
+### Un primo-affichage un poil lent
 
 <iframe width="100%" height="500px" src="https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440/embed" frameborder="0" allowfullscreen></iframe>
 
@@ -38,13 +42,13 @@ En revanche, une fois l'affichage terminé, l'interface réagit très bien, ce q
 
 Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglomération bordelaise, comparée (à droite) à une discrétisation par niveaux de prix (plus c'est foncé, plus le logement est cher).
 
-## Une documentation bien fournie
+### Une documentation bien fournie
 
 La documentation [se trouve ici](https://docs.unfolded.ai/) et est déjà bien achalandée pour un nouveau produit.
 
 Pour ceux ayant utilisé kepler.gl, vous remarquerez que pas mal de features se croisent dans Unfolded Studio, ce qui explique, sans doute, le niveau de maturité de l'application.
 
-## Manipulation de l'application
+### Manipulation de l'application
 
 Tout est très simple dans l'application pour construire une carte.
 
@@ -84,7 +88,7 @@ Tout ces paramètres sont très rapides à modifier et relativement instinctifs.
 
 On remarquera qu'il n'est, pour l'instant, pas possible de jouer sur les transparences des différentes couches affichées...
 
-## Coooluuuuumns
+### Coooluuuuumns
 
 Passons rapidement sur ce titre imitant très mal le bad side de Smeagol.
 
@@ -101,7 +105,7 @@ Il est possible de :
 
 Déjà pas mal !
 
-## Fonctionnalités réjouissantes mais peu poussées
+### Fonctionnalités réjouissantes mais peu poussées
 
 D'autres fonctionnalités existent comme des filtres, des options sur les infobulles ou encore un geocoder.  
 Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
@@ -111,7 +115,7 @@ Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
 Il est également possible de choisir quelle fond de plan servira à votre carte.  
 Il faudra pour cela accepter de passer par MapBox, hé oui...
 
-## Publication et export
+### Publication et export
 
 C'est dans la publication de votre carte que les choses changent réellement par rapport à kepler.gl.  
 Unfolded va stocker la carte que vous venez de créer dans un dossier sur leur serveur, vous permettant alors d'y revenir ou bien de la partager.
@@ -126,7 +130,7 @@ Enfin, plusieurs options d'export s'offrent à vous :
 - Data
 - Carte
 
-## Business model
+### Business model
 
 Unfolded propose un free tier avec les caractéristiques suivantes :
 
@@ -134,11 +138,11 @@ Unfolded propose un free tier avec les caractéristiques suivantes :
 
 Clairement, rien n'est gratuit dans ce bas monde, donc si vous souhaitez faire un peu plus que jouer avec Unfolded Studio, il est fort à parier que vous serez obligé de passer par la version payante (dont le prix n'est pour l'instant pas communiqué) ou que vous vous retournerez vers kepler.gl ou deck.gl.
 
-# Données
+## Données
 
 Les données utilisées pour cet article proviennent du site <http://insideairbnb.com> qui n'est pas affilié à Airbnb, mais qui a récupéré des tonnes de données directement sur le site.
 
-# Conclusions
+## Conclusions
 
 Quelques réflexions issues de cette première prise en main.
 
