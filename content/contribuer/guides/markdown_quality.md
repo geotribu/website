@@ -10,7 +10,7 @@ tags: contribuer,tutoriel,markdown,rédaction,python,html,markdownlint
 # Rédiger en Markdown : règles et enjeux de qualité
 
 !!! note
-    Les règles à appliquer dépendent du moteur de rendu (conversion en HTML) utilisé. Consulter [l'article "Comprendre le rendu Markdown"](/contribuer/markdown_engine/#specificites) pour en savoir plus.
+    Les règles à appliquer dépendent du moteur de rendu (conversion en HTML) utilisé. Consulter [l'article "Comprendre le rendu Markdown"](/contribuer/build_site/markdown_engine/#specificites) pour en savoir plus.
 
 ## Règles
 

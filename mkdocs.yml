@@ -21,6 +21,10 @@ site_dir: './build/mkdocs/site'
 # Plugins
 plugins:
   - awesome-pages
+  - exclude:
+      glob:
+        - "*/templates/*"
+        - "*.yml"
   - git-authors:
       show_contribution: true
   - git-revision-date-localized:
@@ -37,7 +41,8 @@ plugins:
         as_update: false
         datetime_format: "%Y-%m-%d %H:%M"
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-      length: 50
+      length: 40
+      pretty_print: true
   - search:
       lang: fr
       prebuild_index: !!python/object/apply:os.getenv ["MKDOCS_SEARCH_PREBUILD_INDEX"]
@@ -93,7 +98,7 @@ theme:
 
 # Integrations with 3rd party
 google_analytics:
-  - 'UA-162113930-1'
+  - !!python/object/apply:os.getenv ["MKDOCS_GOOGLE_ANALYTICS_KEY"]
   - 'auto'
 
 # Customization
