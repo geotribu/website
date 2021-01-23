@@ -2,6 +2,7 @@
 title: Utiliser des emojis
 category: contribution
 date: 2020-07-20 10:20
+description: "Guide de contribution à Geotribu : comment insérer des émojis dans un contenu en Markdown."
 tags: geotribu,contribuer,media,emoji,emoticone,intégration,tutoriel
 ---
 
