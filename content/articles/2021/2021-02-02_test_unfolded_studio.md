@@ -10,7 +10,7 @@ tags: unfolded, application, geodonnees, datavisualisation, analyse
 
 # Unfolded Studio, une nouvelle plateforme de visualisation de géodonnées
 
-![capture unfolded studio](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png "Capture Unfolded Studio"){: align=middle : loading=lazy }
+![logo unfolded studio](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png "Logo Unfolded Studio"){: .img-rdp-news-thumb : loading=lazy }
 
 [Unfolded Studio](https://studio.unfolded.ai/) est un tout nouvel outil créé par l'équipe derrière [kepler.gl](https://kepler.gl/), [deck.gl](https://deck.gl/) ou [H3](https://h3geo.org/).  
 Ils se sont rencontrés lorsqu'ils travaillaient pour Uber et ont monté en 2019 la société [Unfolded.ai](https://www.unfolded.ai/).
@@ -18,6 +18,8 @@ Ils se sont rencontrés lorsqu'ils travaillaient pour Uber et ont monté en 2019
 Ils parlent de cette plateforme comme de la nouvelle génération d'outils d'analyse et de visualisation web de données géographiques.
 
 J'ai donc voulu tester un peu tout ça !
+
+![capture unfolded studio](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png "Capture Unfolded Studio"){: .img-center : loading=lazy }
 
 ----
 
@@ -34,7 +36,7 @@ Si vous avez essayé Unfolded Studio, n'hésitez pas à laisser vos impressions 
 
 <iframe width="100%" height="500px" src="https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440/embed" frameborder="0" allowfullscreen></iframe>
 
-!!! info "[Pour voir la carte en plein écran, cliquez ici !](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440)"
+!!! info "[Pour voir la carte en plein écran, cliquez ici](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440)" !
 
 Vous allez rapidement vous rendre compte que le premier défaut que je trouve à l'outil est le temps de chargement.  
 Il y a une 60aine de Mo à charger, certes, mais ça gâche un peu l'expérience utilisateur, qu'ils vantent comme simple et rapide...  
