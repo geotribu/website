@@ -129,7 +129,7 @@ On remarquera qu'il n'est, pour l'instant, pas possible de jouer sur les transpa
 
 L'onglet Columns permet de faire un peu de manipulation de données.
 
-[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: data-mediabox="illustrations" data-title="Manipulation de données" }
+[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: .img-center : data-mediabox="illustrations" data-title="Manipulation de données" }
 
 Il est possible de :
 
@@ -145,7 +145,7 @@ Déjà pas mal !
 D'autres fonctionnalités existent comme des filtres, des options sur les infobulles ou encore un geocoder.  
 Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
 
-[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
+[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: .img-center : data-mediabox="illustrations" data-title="Filtres" }
 
 Il est également possible de choisir quelle fond de plan servira à votre carte.  
 Il faudra pour cela accepter de passer par MapBox, hé oui...
@@ -153,13 +153,13 @@ Il faudra pour cela accepter de passer par MapBox, hé oui...
 ### Publication et export
 
 C'est dans la publication de votre carte que les choses changent réellement par rapport à kepler.gl.  
-Unfolded va stocker la carte que vous venez de créer dans un dossier sur leur serveur, vous permettant alors d'y revenir ou bien de la partager.
+Unfolded va stocker la carte que vous venez de créer dans un dossier de leur côté, vous permettant alors d'y revenir ou bien de la partager.
 
 Une fois publiée (ce qui peut prendre du temps), vous pourrez la partager directement via une url ou l'embarquer dans un site internet via un iframe.
 
-[![partager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png "Partager"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png){: data-mediabox="illustrations" data-title="Partager" }
+[![partager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png "Partager"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png){: .img-center : data-mediabox="illustrations" data-title="Partager" }
 
-Enfin, plusieurs options d'export s'offrent à vous :
+Enfin, [plusieurs options d'export](https://docs.unfolded.ai/studio/user-guide/publish-and-export) s'offrent à vous :
 
 - Image
 - Data
@@ -169,7 +169,7 @@ Enfin, plusieurs options d'export s'offrent à vous :
 
 Unfolded propose un free tier avec les caractéristiques suivantes :
 
-[![pricing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png "Pricing"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png){: data-mediabox="illustrations" data-title="Pricing" }
+[![pricing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png "Pricing"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png){: .img-center : data-mediabox="illustrations" data-title="Pricing" }
 
 Clairement, rien n'est gratuit dans ce bas monde, donc si vous souhaitez faire un peu plus que jouer avec Unfolded Studio, il est fort à parier que vous serez obligé de passer par la version payante (dont le prix n'est pour l'instant pas communiqué) ou que vous vous retournerez vers kepler.gl ou deck.gl.
 
@@ -187,14 +187,14 @@ D'abord, ses avantages :
 - Une fois les données chargées, l'application répond très rapidement aux changements de paramètres
 - La publication de la carte permet de la réutiliser facilement ailleurs
 
-Evidemment, quelques inconvénients ou améliorations à attendre :
+Quelques inconvénients ou améliorations à attendre :
 
 - Une certaine lenteur dans le chargement de la carte publiée
 - Les fonctionnalités de modification des jeux de données sont assez peu poussées
-- Le free tier limite assez rapidement l'utilisation, que ce soit au niveau de la taille de fichier stockable (1Go), du nombre de cartes publiables ou encore sur la non capacité à se connecter à des bases de données
+- Le free tier limite assez rapidement l'utilisation, que ce soit au niveau de la taille de fichier stockable (1GB au total), du nombre de cartes publiables ou encore sur la non capacité à se connecter à des bases de données
 
 Personnellement, au vu des avantages et inconvénients précédemment listés, cela me donne l'impression d'un kepler.gl embarqué dans un PaaS.  
-Si vous n'avez le temps ou les compétences pour utiliser kepler.gl ou d'autres bibliothèques de ce type, cela peut être une bonne solution.
+Si vous n'avez le temps ou les compétences pour utiliser et embarquer kepler.gl ou d'autres bibliothèques de ce type, cela peut être une bonne solution.
 
 Reste à voir la manière dont cela évoluera dans le futur !
 
