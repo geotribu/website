@@ -44,7 +44,6 @@ Vous allez rapidement vous rendre compte que le premier défaut que je trouve à
 Il y a une 60aine de Mo à charger, certes, mais ça gâche un peu l'expérience utilisateur, que l'entreprise vante comme simple et rapide...  
 En revanche, une fois l'affichage terminé, l'interface réagit très bien, ce qui est un très bon point.
 
-
 ### Une documentation bien fournie
 
 La documentation [se trouve ici](https://docs.unfolded.ai/) et est déjà bien achalandée pour un nouveau produit.
@@ -68,47 +67,47 @@ Et l'application affiche dans un premier temps ce qu'il lui semble le plus "logi
 
 Libre à vous ensuite de changer le type de représentation, dont les possibilités sont assez fournies. Vous trouverez ci-dessous la liste complète, avec un accès à la documentation (en cliquant sur le nom de la représentation) et un exemple :
 
-- [Point](https://docs.unfolded.ai/studio/layer-reference/point)
+#### [Point](https://docs.unfolded.ai/studio/layer-reference/point)
 
 [![point](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/point.png "Point"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/point.png){: data-mediabox="illustrations" data-title="Point" }
 
-- [Arc](https://docs.unfolded.ai/studio/layer-reference/arc)
+#### [Arc](https://docs.unfolded.ai/studio/layer-reference/arc)
 
 [![arc](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/arc.png "Arc"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/arc.png){: data-mediabox="illustrations" data-title="Arc" }
 
-- [Ligne](https://docs.unfolded.ai/studio/layer-reference/line)
+#### [Ligne](https://docs.unfolded.ai/studio/layer-reference/line)
 
 [![ligne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/ligne.png "Ligne"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/ligne.png){: data-mediabox="illustrations" data-title="Ligne" }
 
-- [Grille](https://docs.unfolded.ai/studio/layer-reference/grid)
+#### [Grille](https://docs.unfolded.ai/studio/layer-reference/grid)
 
 [![grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/grille.png "Grille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/grille.png){: data-mediabox="illustrations" data-title="Grille" }
 
-- [Polygone](https://docs.unfolded.ai/studio/layer-reference/polygon)
+#### [Polygone](https://docs.unfolded.ai/studio/layer-reference/polygon)
 
 [![polygone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/polygone.png "Polygone"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/polygone.png){: data-mediabox="illustrations" data-title="Polygone" }
 
-- [Cluster](https://docs.unfolded.ai/studio/layer-reference/cluster)
+#### [Cluster](https://docs.unfolded.ai/studio/layer-reference/cluster)
 
 [![cluster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/cluster.png "Cluster"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/cluster.png){: data-mediabox="illustrations" data-title="Cluster" }
 
-- [Icône](https://docs.unfolded.ai/studio/layer-reference/icon)
+#### [Icône](https://docs.unfolded.ai/studio/layer-reference/icon)
 
 [![icone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/icone.png "Icône"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/icone.png){: data-mediabox="illustrations" data-title="Icône" }
 
-- [Hexbin](https://docs.unfolded.ai/studio/layer-reference/hexbin)
+#### [Hexbin](https://docs.unfolded.ai/studio/layer-reference/hexbin)
 
 [![hexbin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/hexbin.png "Hexbin"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/hexbin.png){: data-mediabox="illustrations" data-title="Hexbin" }
 
-- [Heatmap](https://docs.unfolded.ai/studio/layer-reference/heatmap)
+#### [Heatmap](https://docs.unfolded.ai/studio/layer-reference/heatmap)
 
 [![heatmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/heatmap.png "Heatmap"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/heatmap.png){: data-mediabox="illustrations" data-title="Heatmap" }
 
-- [H3](https://docs.unfolded.ai/studio/layer-reference/h3)
+#### [H3](https://docs.unfolded.ai/studio/layer-reference/h3)
 
 [![h3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/h3.png "H3"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/h3.png){: data-mediabox="illustrations" data-title="H3" }
 
-- [Trip layer](https://docs.unfolded.ai/studio/layer-reference/trip)
+#### [Trip layer](https://docs.unfolded.ai/studio/layer-reference/trip)
 
 ![trip layer](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/k-trip.gif "Trip layer"){: .img-center loading=lazy }
 
