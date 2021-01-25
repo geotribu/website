@@ -128,7 +128,7 @@ On remarquera qu'il n'est, pour l'instant, pas possible de jouer sur les transpa
 !!! warning
     Passons rapidement sur ce titre imitant très mal le bad side de Smeagol.
 
-[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: loading=lazy align=left clear=right width=90px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: data-mediabox="illustrations" data-title="Manipulation de données" }
+[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: loading=lazy align=right clear=left width=100px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: data-mediabox="illustrations" data-title="Manipulation de données" }
 
 L'onglet Columns permet de faire un peu de manipulation de données.
 
@@ -143,7 +143,7 @@ Déjà pas mal !
 
 ### Fonctionnalités réjouissantes mais peu poussées
 
-[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy align=right clear=right width=100px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
+[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy align=left clear=left width=90px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
 
 D'autres fonctionnalités existent comme des filtres, des options sur les infobulles ou encore un geocoder.
 
