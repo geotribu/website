@@ -12,7 +12,7 @@ tags: unfolded, application, geodonnees, datavisualisation, analyse
 
 ![logo unfolded studio](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png "Logo Unfolded Studio"){: .img-rdp-news-thumb : loading=lazy }
 
-[Unfolded Studio](https://studio.unfolded.ai/) est un tout nouvel outil créé par l'équipe derrière [kepler.gl](https://kepler.gl/), [deck.gl](https://deck.gl/) ou [H3](https://h3geo.org/).  
+[Unfolded Studio](https://studio.unfolded.ai/) est un tout nouvel outil créé par l'équipe derrière [kepler.gl], [deck.gl] ou [H3].  
 Ils se sont rencontrés lorsqu'ils travaillaient pour Uber et ont monté en 2019 la société [Unfolded.ai](https://www.unfolded.ai/).
 
 Ils parlent de cette plateforme comme de la nouvelle génération d'outils d'analyse et de visualisation web de données géographiques.
@@ -48,7 +48,7 @@ Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglom
 
 La documentation [se trouve ici](https://docs.unfolded.ai/) et est déjà bien achalandée pour un nouveau produit.
 
-Pour ceux ayant utilisé kepler.gl, vous remarquerez que pas mal de features se retrouvent dans Unfolded Studio, ce qui explique, sans doute, le niveau de maturité de l'application.
+Pour ceux ayant utilisé [kepler.gl], vous remarquerez que pas mal de features se retrouvent dans Unfolded Studio, ce qui explique, sans doute, le niveau de maturité de l'application.
 
 ### Manipulation de l'application
 
@@ -152,7 +152,7 @@ Il faudra pour cela accepter de passer par MapBox, hé oui...
 
 ### Publication et export
 
-C'est dans la publication de votre carte que les choses changent réellement par rapport à kepler.gl.  
+C'est dans la publication de votre carte que les choses changent réellement par rapport à [kepler.gl].  
 Unfolded va stocker la carte que vous venez de créer dans un dossier de leur côté, vous permettant alors d'y revenir ou bien de la partager.
 
 Une fois publiée (ce qui peut prendre du temps), vous pourrez la partager directement via une url ou l'embarquer dans un site internet via un iframe.
@@ -171,7 +171,7 @@ Unfolded propose un free tier avec les caractéristiques suivantes :
 
 [![pricing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png "Pricing"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png){: .img-center : data-mediabox="illustrations" data-title="Pricing" }
 
-Clairement, rien n'est gratuit dans ce bas monde, donc si vous souhaitez faire un peu plus que jouer avec Unfolded Studio, il est fort à parier que vous serez obligé de passer par la version payante (dont le prix n'est pour l'instant pas communiqué) ou que vous vous retournerez vers kepler.gl ou deck.gl.
+Clairement, rien n'est gratuit dans ce bas monde, donc si vous souhaitez faire un peu plus que jouer avec Unfolded Studio, il est fort à parier que vous serez obligé de passer par la version payante (dont le prix n'est pour l'instant pas communiqué) ou que vous vous retournerez vers [kepler.gl] ou [deck.gl].
 
 ## Données
 
@@ -193,8 +193,8 @@ Quelques inconvénients ou améliorations à attendre :
 - Les fonctionnalités de modification des jeux de données sont assez peu poussées
 - Le free tier limite assez rapidement l'utilisation, que ce soit au niveau de la taille de fichier stockable (1GB au total), du nombre de cartes publiables ou encore sur la non capacité à se connecter à des bases de données
 
-Personnellement, au vu des avantages et inconvénients précédemment listés, cela me donne l'impression d'un kepler.gl embarqué dans un [PaaS](https://fr.wikipedia.org/wiki/Platform_as_a_service).  
-Si vous n'avez le temps ou les compétences pour utiliser et embarquer kepler.gl ou d'autres bibliothèques de ce type, cela peut être une bonne solution.
+Personnellement, au vu des avantages et inconvénients précédemment listés, cela me donne l'impression d'un [kepler.gl] embarqué dans un [PaaS](https://fr.wikipedia.org/wiki/Platform_as_a_service).  
+Si vous n'avez le temps ou les compétences pour utiliser et embarquer [kepler.gl] ou d'autres bibliothèques de ce type, cela peut être une bonne solution.
 
 Reste à voir la manière dont cela évoluera dans le futur !
 
@@ -203,3 +203,8 @@ Reste à voir la manière dont cela évoluera dans le futur !
 ## Auteur
 
 --8<-- "content/team/acha.md"
+
+<!-- hyperlinks reference -->
+[deck.gl]: https://deck.gl/
+[kepler.gl]: https://kepler.gl/
+[H3]: https://h3geo.org/
