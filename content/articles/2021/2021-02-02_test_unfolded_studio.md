@@ -193,7 +193,7 @@ Quelques inconvénients ou améliorations à attendre :
 - Les fonctionnalités de modification des jeux de données sont assez peu poussées
 - Le free tier limite assez rapidement l'utilisation, que ce soit au niveau de la taille de fichier stockable (1GB au total), du nombre de cartes publiables ou encore sur la non capacité à se connecter à des bases de données
 
-Personnellement, au vu des avantages et inconvénients précédemment listés, cela me donne l'impression d'un kepler.gl embarqué dans un PaaS.  
+Personnellement, au vu des avantages et inconvénients précédemment listés, cela me donne l'impression d'un kepler.gl embarqué dans un [PaaS](https://fr.wikipedia.org/wiki/Platform_as_a_service).  
 Si vous n'avez le temps ou les compétences pour utiliser et embarquer kepler.gl ou d'autres bibliothèques de ce type, cela peut être une bonne solution.
 
 Reste à voir la manière dont cela évoluera dans le futur !
