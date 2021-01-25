@@ -19,7 +19,7 @@ Ils parlent de cette plateforme comme de la nouvelle génération d'outils d'ana
 
 J'ai donc voulu tester un peu tout ça !
 
-![capture unfolded studio](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png "Capture Unfolded Studio"){: .img-center : loading=lazy }
+[![capture unfolded studio](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png "Capture Unfolded Studio"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png){: data-mediabox="illustrations" data-title="Capture Unfolded Studio" }
 
 ----
 
@@ -36,10 +36,10 @@ Si vous avez essayé Unfolded Studio, n'hésitez pas à laisser vos impressions 
 
 <iframe width="100%" height="500px" src="https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440/embed" frameborder="0" allowfullscreen></iframe>
 
-!!! info "[Pour voir la carte en plein écran, cliquez ici](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440)" !
+!!! info "[Pour voir la carte en plein écran, cliquez ici](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440) !"
 
 Vous allez rapidement vous rendre compte que le premier défaut que je trouve à l'outil est le temps de chargement.  
-Il y a une 60aine de Mo à charger, certes, mais ça gâche un peu l'expérience utilisateur, qu'ils vantent comme simple et rapide...  
+Il y a une 60aine de Mo à charger, certes, mais ça gâche un peu l'expérience utilisateur, que l'entreprise vante comme simple et rapide...  
 En revanche, une fois l'affichage terminé, l'interface réagit très bien, ce qui est un très bon point.
 
 Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglomération bordelaise, comparée (à droite) à une discrétisation par niveaux de prix (plus c'est foncé, plus le logement est cher).
@@ -48,7 +48,7 @@ Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglom
 
 La documentation [se trouve ici](https://docs.unfolded.ai/) et est déjà bien achalandée pour un nouveau produit.
 
-Pour ceux ayant utilisé kepler.gl, vous remarquerez que pas mal de features se croisent dans Unfolded Studio, ce qui explique, sans doute, le niveau de maturité de l'application.
+Pour ceux ayant utilisé kepler.gl, vous remarquerez que pas mal de features se retrouvent dans Unfolded Studio, ce qui explique, sans doute, le niveau de maturité de l'application.
 
 ### Manipulation de l'application
 
@@ -65,23 +65,55 @@ Et l'application affiche dans un premier temps ce qu'il lui semble le plus "logi
 
 [![premiere representation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png "Première représentation"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png){: data-mediabox="illustrations" data-title="Première représentation" }
 
-Libre à vous ensuite de changer le type de représentation, dont les possibilités sont assez fournies :
+Libre à vous ensuite de changer le type de représentation, dont les possibilités sont assez fournies. Vous trouverez ci-dessous la liste complète, avec un accès à la documentation (en cliquant sur le nom de la représentation) et un exemple :
 
-- Point
-- Arc
-- Ligne
-- Grille
-- Polygone
-- Cluster
-- Icône
-- Hexbin
-- Heatmap
-- H3
-- Trip layer
+- [Point](https://docs.unfolded.ai/studio/layer-reference/point)
 
-Et de choisir quels champs serviront à la symbologie.  
+[![point](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/point.png "Point"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/point.png){: data-mediabox="illustrations" data-title="Point" }
 
-Sur cet exemple, j'ai choisi de représenter une heatmap pour observer la densité de logements Airbnb.  
+- [Arc](https://docs.unfolded.ai/studio/layer-reference/arc)
+
+[![arc](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/arc.png "Arc"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/arc.png){: data-mediabox="illustrations" data-title="Arc" }
+
+- [Ligne](https://docs.unfolded.ai/studio/layer-reference/line)
+
+[![ligne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/ligne.png "Ligne"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/ligne.png){: data-mediabox="illustrations" data-title="Ligne" }
+
+- [Grille](https://docs.unfolded.ai/studio/layer-reference/grid)
+
+[![grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/grille.png "Grille"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/grille.png){: data-mediabox="illustrations" data-title="Grille" }
+
+- [Polygone](https://docs.unfolded.ai/studio/layer-reference/polygon)
+
+[![polygone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/polygone.png "Polygone"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/polygone.png){: data-mediabox="illustrations" data-title="Polygone" }
+
+- [Cluster](https://docs.unfolded.ai/studio/layer-reference/cluster)
+
+[![cluster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/cluster.png "Cluster"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/cluster.png){: data-mediabox="illustrations" data-title="Cluster" }
+
+- [Icône](https://docs.unfolded.ai/studio/layer-reference/icon)
+
+[![icone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/icone.png "Icône"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/icone.png){: data-mediabox="illustrations" data-title="Icône" }
+
+- [Hexbin](https://docs.unfolded.ai/studio/layer-reference/hexbin)
+
+[![hexbin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/hexbin.png "Hexbin"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/hexbin.png){: data-mediabox="illustrations" data-title="Hexbin" }
+
+- [Heatmap](https://docs.unfolded.ai/studio/layer-reference/heatmap)
+
+[![heatmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/heatmap.png "Heatmap"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/heatmap.png){: data-mediabox="illustrations" data-title="Heatmap" }
+
+- [H3](https://docs.unfolded.ai/studio/layer-reference/h3)
+
+[![h3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/h3.png "H3"){: .img-center : loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/h3.png){: data-mediabox="illustrations" data-title="H3" }
+
+- [Trip layer](https://docs.unfolded.ai/studio/layer-reference/trip)
+
+![trip layer](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/k-trip.gif "Trip layer"){: .img-center : loading=lazy }
+
+Vous avez la possibilité de choisir quel(s) champs servira(ont) à la symbologie.  
+
+Sur l'exemple illustrant cet article, j'ai choisi de représenter une heatmap pour observer la densité de logements Airbnb.  
 On peut modifier la palette de couleurs, ainsi que le radius et ajouter un poids à sa création.
 
 Pour la deuxième carte, j'ai voulu afficher les différences de prix, en jouant sur la couleur du ponctuel.
@@ -92,7 +124,8 @@ On remarquera qu'il n'est, pour l'instant, pas possible de jouer sur les transpa
 
 ### Coooluuuuumns
 
-Passons rapidement sur ce titre imitant très mal le bad side de Smeagol.
+!!! warning
+    Passons rapidement sur ce titre imitant très mal le bad side de Smeagol.
 
 L'onglet Columns permet de faire un peu de manipulation de données.
 
