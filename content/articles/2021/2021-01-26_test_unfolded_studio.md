@@ -147,7 +147,7 @@ Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
 
 [![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: .img-center data-mediabox="illustrations" data-title="Filtres" }
 
-Il est également possible de choisir quelle fond de plan servira à votre carte.  
+Il est également possible de choisir quel fond de plan servira à votre carte.  
 Il faudra pour cela accepter de passer par MapBox, hé oui...
 
 ### Publication et export
