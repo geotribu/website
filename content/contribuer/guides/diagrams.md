@@ -3,6 +3,7 @@ title: Insérer des diagrammes
 author: "Julien Moura"
 categories: ["contribution", "tutoriel"]
 date: 2020-07-20 10:20
+description: "Guide de contribution à Geotribu : comment intégrer des diagrammes Mermaid dans un contenu en Markdown."
 tags: geotribu,contribuer,diagramme,schéma,mermaid
 ---
 

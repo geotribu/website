@@ -2,7 +2,8 @@
 title: Modifier un contenu depuis le site web
 Category: contribution
 date: 2020-04-04 17:20
-Tags: guide,corriger,faute,contribuer,modifier
+description: "Guide de contribution à Geotribu : comment modifier un contenu depuis le site de GitHub."
+tags: guide,corriger,faute,contribuer,modifier
 ---
 
 # Modifier un contenu depuis le site web
@@ -21,7 +22,7 @@ Voici comment corriger en quelques étapes simples et **sans rien installer**.
 
 ## 3. Corriger ce qui doit l'être
 
-Le bon moment de se rappeler [comment écrire du bon markdown](../requirements#markdown) :wink: !
+Le bon moment de se rappeler [comment écrire du bon markdown](/contribuer/requirements/#markdown) :wink: !
 
 ## 4. Prévisualiser le rendu dans l'onglet `Preview`
 
