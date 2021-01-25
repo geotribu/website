@@ -19,8 +19,6 @@ Ils parlent de cette plateforme comme de la nouvelle génération d'outils d'ana
 
 Après l'avoir évoqué dans [la dernière GeoRDP](/rdp/2021/rdp_2021-01-15/#unfolded-studio), j'ai donc voulu tester un peu tout ça !
 
-[![capture unfolded studio](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png "Capture Unfolded Studio"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png){: data-mediabox="illustrations" data-title="Capture Unfolded Studio" }
-
 ----
 
 Si vous avez essayé Unfolded Studio, n'hésitez pas à laisser vos impressions dans les commentaires !
@@ -32,6 +30,10 @@ Si vous avez essayé Unfolded Studio, n'hésitez pas à laisser vos impressions 
 
 ## Carte des logements Airbnb de Bordeaux
 
+[![capture unfolded studio](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png "Capture Unfolded Studio"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png){: data-mediabox="illustrations" data-title="Capture Unfolded Studio" }
+
+Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglomération bordelaise, comparée (à droite) à une discrétisation par niveaux de prix (plus c'est foncé, plus le logement est cher).
+
 ### Un primo-affichage un poil lent
 
 <iframe width="100%" height="500px" src="https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440/embed" frameborder="0" allowfullscreen></iframe>
@@ -42,7 +44,6 @@ Vous allez rapidement vous rendre compte que le premier défaut que je trouve à
 Il y a une 60aine de Mo à charger, certes, mais ça gâche un peu l'expérience utilisateur, que l'entreprise vante comme simple et rapide...  
 En revanche, une fois l'affichage terminé, l'interface réagit très bien, ce qui est un très bon point.
 
-Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglomération bordelaise, comparée (à droite) à une discrétisation par niveaux de prix (plus c'est foncé, plus le logement est cher).
 
 ### Une documentation bien fournie
 
