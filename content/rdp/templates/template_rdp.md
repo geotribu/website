@@ -1,14 +1,14 @@
 ---
-title: "Revue de presse du 21 août 2020"
+title: "Revue de presse du 21 août 2021"
 authors: ["Geotribu"]
 categories: ["Revues de presse"]
-date: 2020-08-21 14:20
-description: "GeoRDP du 21 août 2020 : "
+date: 2021-08-21 14:20
+description: "GeoRDP du 21 août 2021 : "
 image: "URL de l'image d'illustration de la RDP"
 tags: rdp
 ---
 
-# Revue de presse du 21 août 2020
+# Revue de presse du 21 août 2021
 
 ## Intro
 
