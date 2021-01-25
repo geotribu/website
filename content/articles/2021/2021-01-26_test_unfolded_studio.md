@@ -127,9 +127,9 @@ On remarquera qu'il n'est, pour l'instant, pas possible de jouer sur les transpa
 !!! warning
     Passons rapidement sur ce titre imitant très mal le bad side de Smeagol.
 
-L'onglet Columns permet de faire un peu de manipulation de données.
+[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: loading=lazy align=left clear=right width=90px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: data-mediabox="illustrations" data-title="Manipulation de données" }
 
-[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: .img-center data-mediabox="illustrations" data-title="Manipulation de données" }
+L'onglet Columns permet de faire un peu de manipulation de données.
 
 Il est possible de :
 
@@ -142,12 +142,14 @@ Déjà pas mal !
 
 ### Fonctionnalités réjouissantes mais peu poussées
 
-D'autres fonctionnalités existent comme des filtres, des options sur les infobulles ou encore un geocoder.  
+[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy align=left clear=right width=90px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
+
+D'autres fonctionnalités existent comme des filtres, des options sur les infobulles ou encore un geocoder.
+
 Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
 
-[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: .img-center data-mediabox="illustrations" data-title="Filtres" }
+Il est également possible de choisir quelle fond de plan servira à votre carte.
 
-Il est également possible de choisir quelle fond de plan servira à votre carte.  
 Il faudra pour cela accepter de passer par MapBox, hé oui...
 
 ### Publication et export
