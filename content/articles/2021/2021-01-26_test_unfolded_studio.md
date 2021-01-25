@@ -38,7 +38,9 @@ Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglom
 
 <iframe width="100%" height="500px" src="https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440/embed" frameborder="0" allowfullscreen></iframe>
 
-!!! info "[Pour voir la carte en plein écran, cliquez ici](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440) !"
+[Cliquez ici pour voir la carte en plein écran](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440)
+{: .md-button }
+{: align=middle }
 
 Vous allez rapidement vous rendre compte que le premier défaut que je trouve à l'outil est le temps de chargement.  
 Il y a une 60aine de Mo à charger, certes, mais ça gâche un peu l'expérience utilisateur, que l'entreprise vante comme simple et rapide...  
@@ -142,13 +144,11 @@ Déjà pas mal !
 
 ### Fonctionnalités réjouissantes mais peu poussées
 
-[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy align=left clear=right width=90px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
+[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy align=right clear=right width=100px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
 
 D'autres fonctionnalités existent comme des filtres, des options sur les infobulles ou encore un geocoder.
 
 Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
-
-Il est également possible de choisir quelle fond de plan servira à votre carte.
 
 Il est également possible de choisir quel fond de plan servira à votre carte.
 
