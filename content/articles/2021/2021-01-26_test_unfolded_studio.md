@@ -148,11 +148,7 @@ D'autres fonctionnalités existent comme des filtres, des options sur les infobu
 
 Elles ont le mérite d'exister, mais ne sont pour l'instant que peu poussées.
 
-Il est également possible de choisir quelle fond de plan servira à votre carte.
-
-Il est également possible de choisir quel fond de plan servira à votre carte.
-
-Il faudra pour cela accepter de passer par MapBox, hé oui...
+Il est également possible de choisir quel fond de plan servira à votre carte. Il faudra pour cela accepter de passer par MapBox, hé oui...
 
 ### Publication et export
 
