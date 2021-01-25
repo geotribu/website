@@ -38,8 +38,7 @@ Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglom
 
 <iframe width="100%" height="500px" src="https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440/embed" frameborder="0" allowfullscreen></iframe>
 
-[Cliquez ici pour voir la carte en plein écran](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440)
-{: .md-button }
+[Cliquez ici pour voir la carte en plein écran](https://studio.unfolded.ai/public/705a57c1-b45d-4c68-9cd2-45064d5b2440){: .md-button }
 {: align=middle }
 
 Vous allez rapidement vous rendre compte que le premier défaut que je trouve à l'outil est le temps de chargement.  
