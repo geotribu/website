@@ -1,5 +1,5 @@
 ---
-title: "QGIS : lister et prévisualiser les images intégrées"
+title: "PyQGIS : lister et prévisualiser les images intégrées"
 authors: ["Julien MOURA"]
 categories: ["article", "tutoriel"]
 date: "2020-02-02 10:20"
@@ -27,7 +27,7 @@ Avec mon arrivée chez [Oslandia], je me remets au développement de plugins pou
 
 Pour trouver les icônes, je vous renvoyais sur [le fichier de ressources de QGIS](https://github.com/qgis/QGIS/blob/master/images/images.qrc), mais c'est vrai qu'une fois sur le fichier, c'est un peu sec !
 
-![fichier resources.qrc de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_resources-qrc_github.png "Le fichier resources.qrc de QGIS"){: .img-center }
+[![fichier resources.qrc de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_resources-qrc_github.png "fichier resources.qrc de QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_resources-qrc_github.png){: data-mediabox="illustrations" data-title="Comment ça, le fichier de ressources c'est pas suffisant ?" }
 *Comment ça, le fichier de ressources c'est pas suffisant ?*
 {: align=middle }
 
@@ -54,7 +54,7 @@ On se donne quelques contraintes pour pimenter un peu :
 
 ![icône browser QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/icons/qbrowser_icon.svg "Icône browser QGIS"){: .img-rdp-news-thumb }
 
-Pour cette étape, on démarre sereinement : le fichier est sur GitHub qui supporte parfairement les requêtes anonymes et il n'y a pas vraiment de difficulté.
+Pour cette étape, on démarre sereinement : le fichier est sur GitHub qui supporte parfaitement les requêtes anonymes et il n'y a pas vraiment de difficulté.
 
 ```python
 # on importe de quoi faire des requêtes HTTP
@@ -136,8 +136,8 @@ Maintenant qu'on a une idée de la structure, on doit se débrouiller pour recon
 
 Petit point de vigilance, il faut pointer sur l'URL brute du fichier et non pas celle vers l'interface de la plateforme. Par exemple, pour cette image ![icône console QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconClassConsole.svg "Icône console Python QGIS") :
 
-- le lien de l'interface GitHub : <https://github.com/qgis/QGIS/blob/master/images/themes/default/console/iconClassConsole.svg>
-- le lien de l'image brute : <https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconClassConsole.svg>
+- :no_entry: le lien de l'interface GitHub : <https://github.com/qgis/QGIS/blob/master/images/themes/default/console/iconClassConsole.svg>
+- :white_check_mark: le lien de l'image brute : <https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconClassConsole.svg>
 
 Le chemin complet d'une image est donc la somme de 3 éléments :
 
