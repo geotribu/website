@@ -2,7 +2,7 @@
 title: "QGIS embedded images - Cheatsheet"
 authors: ["Julien MOURA"]
 categories: ["article"]
-date: "2020-01-25 10:20"
+date: "2021-02-01 15:20"
 description: "Cheatsheet about embedded QGIS images: list, preview and snippet to easily insert in your PyQGIS development."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_preview_cheatsheet.png"
 language: "en"
