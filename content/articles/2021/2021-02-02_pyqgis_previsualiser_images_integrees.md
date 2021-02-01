@@ -148,8 +148,9 @@ Le chemin complet d'une image est donc la somme de 3 éléments :
 C'est partiiii :rocket: :
 
 ```python
-# on importe l'outillage de manipulation des chemins
+# on importe l'outillage de manipulation des chemins et des URLs
 from pathlib import Path
+from urllib.parse import urljoin
 
 # on stocke l'URL de base pour construire les chemins
 base_path = "https://raw.githubusercontent.com/qgis/QGIS/master/"  # avec le final slash :vegeta:
@@ -158,13 +159,12 @@ base_path = "https://raw.githubusercontent.com/qgis/QGIS/master/"  # avec le fin
 for prefix in root:
     # là on est dans un élément de niveau 2
     prefix_name = prefix.attrib.get("prefix")[1:]           # on garde le préfixe mais sans son slash initial
-    prefix_path = Path(prefix.attrib.get("prefix")[1:])     # on charge aussi le préfixe sous forme de chemin
 
     # on boucle sur les fichiers
     for binimg in prefix.findall("file"):
         # là on est dans un élément de niveau 3
-        # on construit le chemin (URL) absolue
-        img_path_abs = base_path / prefix_path / binimg.text
+        # on construit l'URL absolue
+        img_path_abs = urljoin(base_path,  f"{prefix_name}/{binimg.text}")
         # un petit print des familles histoire pouvoir vérifier les liens
         print(img_path_abs)
 ```
@@ -192,7 +192,7 @@ Pour corriger cela, on applique une méthode de tri sur la liste des éléments 
 
 ```python
 for binimg in sorted(prefix.findall("file"), key=lambda x: x.text.rsplit("/", 1)[0]):
-    img_path_abs = base_path / prefix_path / binimg.text
+    img_path_abs = urljoin(base_path,  f"{prefix_name}/{binimg.text}")
     print(img_path_abs)
 ```
 
@@ -222,9 +222,11 @@ Celui que l'on insère dans la boucle pour ajouter une ligne pour chaque image:
 ```python
 [...]
 for binimg in sorted(prefix.findall("file"), key=lambda x: x.text.rsplit("/", 1)[0]):
-    img_path_abs = base_path / prefix_path / binimg.text
+    img_path_abs = urljoin(base_path,  f"{prefix_name}/{binimg.text}")
+    img_path_rel = Path(prefix_name, binimg.text)
+
     # on crée le modèle de chaque ligne qu'on pourra ainsi utiliser avec le formatage dynamique des chaînes de caractères
-    out_markdown += f"| {img_path_abs.name} | ![{img_path_abs.name}]({img_path_abs} '{img_path_abs.name}') |\n"
+    out_markdown += f"| {img_path_rel.stem} | ![{img_path_rel.name}]({img_path_abs} '{img_path_rel.name}') |\n"
 ```
 
 Et celui qu'on insère à la fin pour sauvegarder tout cela dans un fichier avec l'extension du Markdown :
