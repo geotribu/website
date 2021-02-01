@@ -12,7 +12,7 @@ img {
     float: left;
     clear: right;
     overflow: auto;
-    padding-right: 10px;
+    margin-right: 10px;
     max-height: 75px;
     max-width: 75px;
     box-shadow: none;
@@ -27,7 +27,7 @@ img {
 .img-right {
     /* right align with text float on the left */
     float: right;
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 
@@ -39,8 +39,6 @@ img {
 }
 
 /* Copyleft */
-
-
 /* see: https://stackoverflow.com/questions/37088198/copyleft-symbol */
 
 .copyleft {
@@ -48,7 +46,6 @@ img {
     transform: rotate(180deg);
 }
 
-/* see: https://stackoverflow.com/questions/37088198/copyleft-symbol */
 
 /* Custom buttons to set dark/ligth modes */
 

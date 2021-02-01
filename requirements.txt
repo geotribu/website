@@ -7,7 +7,7 @@ wheel
 
 # Development
 # -----------------------
-pre-commit>=2.5,<2.10
+pre-commit>=2.5,<2.11
 
 # Project requirements
 # -----------------------
@@ -19,4 +19,4 @@ mkdocs-git-revision-date-localized-plugin>=0.6,<0.9
 mkdocs-material>=6.0,<6.3
 mkdocs-minify-plugin==0.4.*
 mkdocs-redirects==1.0.*
-mkdocs-rss-plugin>=0.10,<0.12
+mkdocs-rss-plugin>=0.10,<0.13
