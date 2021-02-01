@@ -17,7 +17,7 @@ hide:
 
 ## Related tutorial
 
-[Read how to generate this page (in French :fr:)](/articles/2021/2021-01-25_pyqgis_previsualiser_images_integrees){: .md-button }
+[Read how to generate this page (in French :fr:)](/articles/2021/2021-02-02_pyqgis_previsualiser_images_integrees/){: .md-button }
 {: align=middle }
 
 Remember how to import:

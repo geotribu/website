@@ -128,7 +128,7 @@ On a donc une structure très simple :
 - les éléments de deuxième niveau sont des "préfixes" correspondant au chemin vers un sous-dossier par rapport au projet principal de l'application qui utilise le fichier (ici QGIS). Il n'y en a que deux.
 - les éléments de troisième niveau contiennent le chemin jusqu'aux images
 
-### Extraire la chemin des images
+### Extraire le chemin des images
 
 ![icône filter QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionFilter2.svg "Icône filter QGIS"){: .img-rdp-news-thumb }
 
