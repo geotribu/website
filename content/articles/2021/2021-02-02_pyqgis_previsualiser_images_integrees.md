@@ -172,17 +172,17 @@ for prefix in root:
 On obtient quelque chose comme ça :
 
 ```bash
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/temporal_navigation/pause.svg
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconIterate.svg
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconNetworkLogger.svg
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionAddMarker.svg
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mLayoutItemMarker.svg
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/algorithms/mAlgorithmConstantRaster.svg
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconStopwatch.svg
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/georeferencer/mGeorefRun.png
+https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/temporal_navigation/pause.svg
+https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconIterate.svg
+https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconNetworkLogger.svg
+https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionAddMarker.svg
+https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mLayoutItemMarker.svg
+https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/algorithms/mAlgorithmConstantRaster.svg
+https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconStopwatch.svg
+https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/georeferencer/mGeorefRun.png
 [...]
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconSyntaxErrorConsoleParams.svg
-https:/raw.githubusercontent.com/qgis/QGIS/master/images/tips/qgis_tips/symbol_levels.png
+https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconSyntaxErrorConsoleParams.svg
+https://raw.githubusercontent.com/qgis/QGIS/master/images/tips/qgis_tips/symbol_levels.png
 $
 ```
 
