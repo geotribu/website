@@ -32,13 +32,14 @@ Et puis c'est aussi l'occasion de faire un article sur le forage de données ([u
 
 Avant d'analyser quoi que ce soit, il faut disposer de données. Et ça tombe bien, nous en avons énormément autour de nous !
 
-Twitter est une mine d'or de données sociales, et leur récupération n'est réellement pas compliquée, notamment grâce à Twint LIEN https://github.com/twintproject/twint
+Twitter est une mine d'or de données sociales, et leur récupération n'est réellement pas compliquée, notamment grâce à [Twint](https://github.com/twintproject/twint).
 
 D'autres bibliothèques existent, notamment Tweepy par exemple, mais 1 ma connaissance Twint est la seule à ne passer par l'API officielle Twitter et donc à pouvoir s'affranchir d'un certain nombre de limitations comme le nombre de tweets maximal récupérés par exemple.
 
 ### Installation
 
 L’installation est ultra simple, il suffit de taper dans un terminal de commande :
+
 ```python
 pip3 install twint
 ```
