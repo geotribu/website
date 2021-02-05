@@ -173,9 +173,9 @@ Vous trouverez [sur le wiki l'ensemble des champs produits](https://github.com/t
 
 ### Visualisation des différentes données réupérées
 
-Pour celles et ceux qui seraient intéressés, le code de l'ensemble de la récupération, préparation et représentation des données est disponible dans un gist ici LIEN !!!
-
 Il y a un peu de travail complémentaire sur la donnée, notamment pour pouvoir comparer un peu les différentes sources, en passant par exemple les données du site Geotribu en format quinzomadaire, étant donné que les GeoRDP influencent très clairement les statistiques du site.
+
+Pour celles et ceux qui seraient intéressés, le code de la fin de la préparation des données est disponible dans un gist ici LIEN !!!
 
 #### Représentation des données des GeoRDP
 
@@ -196,6 +196,12 @@ En revanche, le lien entre publication de GeoRDP et partage Twitter n'est pas to
 - D'autres contenus ont été partagés en plus des GeoRDP et ne sont pas comptabilisés dans les statistiques twitteriennes présentées plus haut.
 
 Nom de Zeus! Marty, regardons de suite ce que cela implique si on rajoute les tweets de publication des articles ! :rocket:
+
+#### Ajout des données des articles
+
+Ce nouveau graphique représente les mêmes champs, avec les données provenant des tweets sur les articles.
+
+IFRAME
 
 ----
 
