@@ -13,7 +13,7 @@ tags: "twitter,scraping,twint,statistiques,geotribu,plotly"
 
 :calendar: Date de publication initiale : 16 février 2021
 
-**Mots-clés :** Mot-clé 1 | Mot-clé 2
+**Mots-clés :** python| scraping| twint |statistiques
 
 ## Introduction
 
@@ -21,7 +21,7 @@ Nous avions déjà parlé statistiques GeoTribu dans [l'article rétrospectivo-b
 
 Pas que les statistiques de fréquentation soient un objectif en soit, mais nous souhaitions creuser un peu plus certaines de ces statistiques et principalement celles provenant de Twitter, dans un principe d'exploration et de compréhension.
 
-Et puis c'est aussi l'occasion de faire un article sur le forage de données ([une fois n'est pas coutume](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) :smile:), avec des données meta autour de l'activité GeoTribu !
+Et puis c'est aussi l'occasion de faire un article sur le forage de données ([une fois n'est pas coutume](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) :smile:), avec des metadonnées autour de l'activité GeoTribu !
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -34,11 +34,11 @@ Avant d'analyser quoi que ce soit, il faut disposer de données. Et ça tombe bi
 
 Twitter est une mine d'or de données sociales, et leur récupération n'est réellement pas compliquée, notamment grâce à [Twint](https://github.com/twintproject/twint).
 
-D'autres bibliothèques existent, notamment Tweepy par exemple, mais 1 ma connaissance Twint est la seule à ne passer par l'API officielle Twitter et donc à pouvoir s'affranchir d'un certain nombre de limitations comme le nombre de tweets maximal récupérés par exemple.
+D'autres bibliothèques existent, notamment [Tweepy](https://www.tweepy.org/) par exemple, mais à ma connaissance Twint est la seule à ne passer par l'API officielle Twitter et donc à pouvoir s'affranchir d'un certain nombre de limitations, comme le nombre de tweets maximal récupérés par exemple.
 
 ### Installation
 
-L’installation est ultra simple, il suffit de taper dans un terminal de commande :
+L’installation est ultra simple, il suffit d'entrer dans un terminal de commande :
 
 ```python
 pip3 install twint
@@ -87,15 +87,28 @@ L’avantage de cette deuxième méthode réside dans le fait de pouvoir utilise
 
 Vous trouverez plus d'informations sur [les fonctions utilisables ici](https://github.com/twintproject/twint/wiki/Configuration), ainsi que [plusieurs exemples ici](https://github.com/twintproject/twint/wiki/Scraping-functions).
 
+!!! warning
+    Si vous souhiatez utiliser Twint via un Jupyter Notebook, il est important d'installer et d'importer la bibliothèque [`nest_asyncio`](https://github.com/erdewit/nest_asyncio).  
+
+```python
+# Pour l'installer
+pip3 install nest_asyncio
+
+# Pour l'importer et l'utiliser
+import nest_asyncio
+nest_asyncio.apply()
+```
+
 ### Scraping et préparation des données twitter GeoTribu
 
-Maintenant que les bases sont posées,nous pouvons rentrer dans le vif du sujet.
+Maintenant que les bases sont posées, nous pouvons rentrer dans le vif du sujet.
 
-Nous cherchons ici à objectiver les tendances observées via les statistiques d'utilisation du site GeoTribu provenant de Google Analytics. La problématique est donc la suivante : à quel point Twitter  influence le trafic du site ?
+Nous cherchons ici à objectiver les tendances observées via les statistiques d'utilisation du site GeoTribu provenant de Google Analytics. La problématique est donc la suivante : à quel point Twitter influence-t-il le trafic du site ?
 
 Nous allons récupérer pour cela 2 types de données : les tweets liées aux GeoRDP et ceux liés aux articles.
 
-Le cas d'usage étant simple ici, le choix aurait pu se porter sur les commandes directs en CLI. Mais pour l'exemple, nous allons passer par le Module de Twint, qui ouvre plus de possibilités.
+!!! info
+    Le cas d'usage étant simple ici, le choix aurait pu se porter sur les commandes directs en CLI. Mais pour l'exemple, nous passerons par le Module de Twint, qui ouvre plus de possibilités.
 
 #### Données des GeoRDP
 
@@ -114,7 +127,7 @@ twint.run.Search(c)
 Il faut dans un premier temps créé une instance qu'on stocke sur la variable `c`.  
 Puis le `.Search` dit à Twint qu'il va devoir récupérer les données sur les tweets contenant le terme qui nous intéresse.  
 Le `.Since` indique à partir de quand il doit chercher.  
-Et enfin le `.Store_csv` lui dit de stocker le résultat dans un fichier csv et le `.Output` sous quel nom et où doit-il le faire.
+Et enfin le `.Store_csv` lui dit de stocker le résultat dans un fichier csv, et le `.Output` sous quel nom et où doit-il le faire.
 
 Si vous avez installé Twint et que vous faites tourner ce bout de code chez vous, vous pourrez bien sûr récupérer les mêmes données que moi (sans doute juste plus à jour). Tout ceci est réalisé sans trucage et ne nécessite pas de quelconque compétences de cascadeur.
 
@@ -123,12 +136,12 @@ La pédagogie passe par la répétition, donc l'adage suivant ne sera sans doute
 Ce n'est donc pas parce que nous venons de récupérer des données (aussi intéressantes soient-elles) qu'il faut se précipiter à vouloir les représenter. Un peu de patience que diable !
 
 Afin de pouvoir utiliser ses données, il va encore falloir travailer un peu.  
-En effet, telle quel, Twint a renvoyé l'ensemble des tweets contenant `geordp`, donc sans doute les tweets de partage originelle des GeoRDP, mais également les retweets cités, ainsi que tout tweet mentionnant ce mot, et n'ayant pas forcément à voir avec une GeoRDP directement.
+En effet, en l'état, Twint a renvoyé l'ensemble des tweets contenant `geordp`, donc sans doute les tweets originels de partage des GeoRDP, mais également les retweets cités, ainsi que tout tweet mentionnant ce mot, et n'ayant pas forcément à voir avec une GeoRDP directement.
 
 Il va donc falloir identifier les tweets originels, et ici, à part faire le boulot à la main, je n'ai pas trouvé d'autres méthodes, mais pour une grosse dizaine de lignes, ça devrait aller.
 
-J'ai donc ajouter un champ dans le csv `geordp` que je peuple avec des 'oui' lorsqu'ils correspondent au premier partage.  
-J'ai également ajouter la date de publication de la GeoRDP, car il peut arriver que les GeoRDP soient partagées après leur publication sur le site de GeoTribu.
+On ajoute un champ dans le csv `geordp`, peuplé avec des 'oui' lorsqu'ils correspondent au premier partage.  
+On ajoute également la date de publication de la GeoRDP, car il peut arriver que les GeoRDP soient partagées après leur publication sur le site de GeoTribu.
 
 #### Données des articles
 
@@ -159,7 +172,7 @@ En exportant les données du nombre d'utilisateurs quotidiens, on devrait avoir 
 
 #### Twint vous informe
 
-Pour être un peu plus complet sur Twint, il faut savoir que les résultats des tweets ressemblent à un gros fichier csv avec pas mal de champs et notamment :
+Pour être un peu plus complet sur Twint, il faut savoir que les résultats des tweets ressemblent à un fichier csv avec pas mal de champs et notamment :
 
 - id du tweet
 - date de création
@@ -186,14 +199,14 @@ Les pointillés orange verticaux correspondent aux dates de publication des GeoR
 IFRAME
 
 On remarque une certaine corrélation (comme déjà évoqué précédemment) entre la publication des GeoRDP et l'affluence sur le site GeoTribu.  
-Les périodes de vacances scolaires n'ont pas l'air très propices à la géo-lecture, étant qu'en août et en fin d'année on observ des baisses de fréquentation, alors que des GeoRDP ont bien été publiées.
+Les périodes de vacances scolaires n'ont pas l'air très propices à la géo-lecture, étant donné qu'en août et en fin d'année on observe des baisses de fréquentation, alors que des GeoRDP ont bien été publiées.
 
-En revanche, le lien entre publication de GeoRDP et partage Twitter n'est pas toujours très évident. Certains pics (29 mai et 30 juillet par exemple) ont l'air d'être associés à Twitter, en revanche on observe à une baisse du nombre de likes et retweets à partir du 13 novembre , alors que la fréquentation du site continue d'augmenter jusqu'au 13 décembre.
+En revanche, le lien entre publication de GeoRDP et partage Twitter n'est pas toujours très évident. Certains pics (29 mai et 30 juillet par exemple) ont l'air d'être associés à Twitter, en revanche on observe une baisse du nombre de likes et retweets à partir du 13 novembre , alors que la fréquentation du site continue d'augmenter jusqu'au 13 décembre.
 
 2 hypothèses principales :
 
-- L'apport du partage des GeoRDP sur Linkedin est assez important (17% du trafic provenant des réseaux sociaux) et donc non pris en compte ici. De plus, Linkedin affiche parfois du contenu datant de plusieurs semaines sur les fils d'actualité
-- D'autres contenus ont été partagés en plus des GeoRDP et ne sont pas comptabilisés dans les statistiques twitteriennes présentées plus haut.
+- L'apport du partage des GeoRDP sur Linkedin est assez important (17% du trafic provenant des réseaux sociaux) et donc non pris en compte ici. De plus, Linkedin affiche parfois du contenu datant de plusieurs semaines sur les fils d'actualité, décalant donc potentiellement son impact sur la fréquentation du site
+- D'autres contenus ont été partagés en plus des GeoRDP ([des articles](/articles)) et ne sont pas comptabilisés dans les statistiques twitteriennes présentées plus haut.
 
 Nom de Zeus! Marty, regardons de suite ce que cela implique si on rajoute les tweets de publication des articles ! :rocket:
 
