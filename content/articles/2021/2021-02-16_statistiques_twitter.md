@@ -190,6 +190,8 @@ Il y a un peu de travail complémentaire sur la donnée, notamment pour pouvoir 
 
 Pour celles et ceux qui seraient intéressés, le code de la fin de la préparation des données est disponible dans un gist ici LIEN !!!
 
+Enfin, c'est [Plotly](https://plotly.com/python/) qui a été utilisé ici pour représenter les données. Le code des 2 graphiques que trouverez dans la suite de l'article sont disponibles dans des gist sous chacun d'eux.
+
 #### Représentation des données des GeoRDP
 
 Le graphique ci-dessous représente en bleu le nombre de likes et en rouge le nombre de retweets des tweets originels de partage, plus les statistiques des retweets cités (qui ne rentrent pas en compte dans les statistiques des tweets originaux, à l'inverse des retweets classiques, étant considérés comme un nouveau contenu original par Twitter).  
@@ -197,6 +199,8 @@ La courbe verte représente le nombe d'utilisateurs du site GeoTribu par quinzai
 Les pointillés orange verticaux correspondent aux dates de publication des GeoRDP.
 
 IFRAME
+
+LIEN GIST
 
 On remarque une certaine corrélation (comme déjà évoqué précédemment) entre la publication des GeoRDP et l'affluence sur le site GeoTribu.  
 Les périodes de vacances scolaires n'ont pas l'air très propices à la géo-lecture, étant donné qu'en août et en fin d'année on observe des baisses de fréquentation, alors que des GeoRDP ont bien été publiées.
@@ -215,6 +219,19 @@ Nom de Zeus! Marty, regardons de suite ce que cela implique si on rajoute les tw
 Ce nouveau graphique représente les mêmes champs, avec les données provenant des tweets sur les articles.
 
 IFRAME
+
+LIEN GIST
+
+Bingo, comme disent les amateurs de loto !
+
+On voit bien que la hausse de fréquentation observée mi-octobre et de manière continue jusqu'aux vacances de Noël sont sans doute liées aux articles et à leur partage.  
+Le pic du 5 juillet peut également sans doute s'expliquer grâce au partage d'un article.
+
+## Conclusion
+
+Clairement, Twint est très simple d'utilisation et en 3 coups de cuillères à python, il est possible d'arriver à représenter et analyser quelques phénomènes provenant de Twitter.
+
+N'hésitez pas à nous faire des retours dans les commentaires, si vous avez également des cas d'usage de Twint !
 
 ----
 
