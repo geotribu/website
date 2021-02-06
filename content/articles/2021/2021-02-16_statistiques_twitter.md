@@ -194,7 +194,7 @@ Enfin, c'est [Plotly](https://plotly.com/python/) qui a été utilisé ici pour 
 
 #### Représentation des données des GeoRDP
 
-Le graphique ci-dessous représente en bleu le nombre de likes et en rouge le nombre de retweets des tweets originels de partage, plus les statistiques des retweets cités (qui ne rentrent pas en compte dans les statistiques des tweets originaux, à l'inverse des retweets classiques, étant considérés comme un nouveau contenu original par Twitter).  
+Le graphique ci-dessous représente en bleu le nombre de likes et en rouge le nombre de retweets des tweets originels de partage, plus les statistiques des retweets cités (qui ne rentrent pas en compte dans les statistiques des tweets originaux, à l'inverse des retweets classiques, étant considérés comme un nouveau contenu original par Twitter). Les données de likes et retweets ont été placées à la date de partage originelle de chaque GeoRDP. 
 La courbe verte représente le nombe d'utilisateurs du site GeoTribu par quinzaine.  
 Les pointillés orange verticaux correspondent aux dates de publication des GeoRDP.
 
@@ -216,7 +216,8 @@ Nom de Zeus! Marty, regardons de suite ce que cela implique si on rajoute les tw
 
 #### Ajout des données des articles
 
-Ce nouveau graphique représente les mêmes champs, avec les données provenant des tweets sur les articles.
+Ce nouveau graphique représente les mêmes champs, avec les données provenant des tweets sur les articles.  
+Les données de partage des articles ont été ramenées à l'échelle de celles des GeoRDP, c'est-à-dire au minimum toutes les 2 semaines (comme les données utilisateurs du site GeoTribu), afin de pouvoir comparer ensemble des données.
 
 IFRAME
 
