@@ -1,6 +1,6 @@
 ---
 title: "Impact de Twitter sur la fréquentation du site GeoTribu"
-authors: ["Aurélien CHAUMEt"]
+authors: ["Aurélien CHAUMET"]
 categories: ["article"]
 date: "2021-02-16 10:20"
 description: "Description pour le SEO."
@@ -88,7 +88,7 @@ L’avantage de cette deuxième méthode réside dans le fait de pouvoir utilise
 Vous trouverez plus d'informations sur [les fonctions utilisables ici](https://github.com/twintproject/twint/wiki/Configuration), ainsi que [plusieurs exemples ici](https://github.com/twintproject/twint/wiki/Scraping-functions).
 
 !!! warning
-    Si vous souhiatez utiliser Twint via un Jupyter Notebook, il est important d'installer et d'importer la bibliothèque [`nest_asyncio`](https://github.com/erdewit/nest_asyncio).  
+    Si vous souhiatez utiliser Twint via un [Jupyter Notebook](https://jupyter.org), il est important d'installer et d'importer la bibliothèque [`nest_asyncio`](https://github.com/erdewit/nest_asyncio).  
 
 ```python
 # Pour l'installer
@@ -131,11 +131,11 @@ Et enfin le `.Store_csv` lui dit de stocker le résultat dans un fichier csv, et
 
 Si vous avez installé Twint et que vous faites tourner ce bout de code chez vous, vous pourrez bien sûr récupérer les mêmes données que moi (sans doute juste plus à jour). Tout ceci est réalisé sans trucage et ne nécessite pas de quelconque compétences de cascadeur.
 
-La pédagogie passe par la répétition, donc l'adage suivant ne sera sans doute pas répété asez souvent : toute dataviz est basée sur une bonne préparation de la donnée.
+La pédagogie passe par la répétition, donc l'adage suivant ne sera sans doute pas répété assez souvent : toute dataviz est basée sur une bonne préparation de la donnée.
 
 Ce n'est donc pas parce que nous venons de récupérer des données (aussi intéressantes soient-elles) qu'il faut se précipiter à vouloir les représenter. Un peu de patience que diable !
 
-Afin de pouvoir utiliser ses données, il va encore falloir travailer un peu.  
+Afin de pouvoir utiliser ses données, il va encore falloir travailler un peu.  
 En effet, en l'état, Twint a renvoyé l'ensemble des tweets contenant `geordp`, donc sans doute les tweets originels de partage des GeoRDP, mais également les retweets cités, ainsi que tout tweet mentionnant ce mot, et n'ayant pas forcément à voir avec une GeoRDP directement.
 
 Il va donc falloir identifier les tweets originels, et ici, à part faire le boulot à la main, je n'ai pas trouvé d'autres méthodes, mais pour une grosse dizaine de lignes, ça devrait aller.
