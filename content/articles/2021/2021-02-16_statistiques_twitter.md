@@ -111,10 +111,10 @@ Maintenant que les bases sont posées, nous pouvons rentrer dans le vif du sujet
 
 Nous cherchons ici à objectiver les tendances observées via les statistiques d'utilisation du site GeoTribu provenant de Google Analytics. La problématique est donc la suivante : à quel point Twitter influence-t-il le trafic du site ?
 
-Nous allons récupérer pour cela 2 types de données : les tweets liées aux GeoRDP et ceux liés aux articles.
+Nous allons récupérer pour cela 2 types de données : les tweets liés aux GeoRDP et ceux liés aux articles.
 
 !!! info
-    Le cas d'usage étant simple ici, le choix aurait pu se porter sur les commandes directs en CLI. Mais pour l'exemple, nous passerons par le Module de Twint, qui ouvre plus de possibilités.
+    Le cas d'usage étant simple ici, le choix aurait pu se porter sur les commandes directes en CLI. Mais pour l'exemple, nous passerons par le module de Twint, qui ouvre plus de possibilités.
 
 ### Données des GeoRDP
 
@@ -123,19 +123,24 @@ Voici le code que j'ai utilisé pour obtenir les tweets depuis le 30 avril 2020 
 ```python
 c = twint.Config()
 c.Search = "geordp"
-c.Store_csv = True
 c.Since = "2020-04-30"
+c.Store_csv = True
 c.Output = "geordp-tweets.csv"
 
 twint.run.Search(c)
 ```
 
-Il faut dans un premier temps créé une instance qu'on stocke sur la variable `c`.  
-Puis le `.Search` dit à Twint qu'il va devoir récupérer les données sur les tweets contenant le terme qui nous intéresse.  
-Le `.Since` indique à partir de quand il doit chercher.  
-Et enfin le `.Store_csv` lui dit de stocker le résultat dans un fichier csv, et le `.Output` sous quel nom et où doit-il le faire.
+Détil des paramètres :
 
-Si vous avez installé Twint et que vous faites tourner ce bout de code chez vous, vous pourrez bien sûr récupérer les mêmes données que moi (sans doute juste plus à jour). Tout ceci est réalisé sans trucage et ne nécessite pas de quelconque compétences de cascadeur.
+- `c` : variable dans laquelle on stocke une instance Twint
+- `.Search` dit à Twint qu'il va devoir récupérer les données sur les tweets contenant le terme qui nous intéresse.
+- `.Since` indique à partir de quand il doit chercher.
+- `.Store_csv` lui dit de stocker le résultat dans un fichier csv
+- `.Output` sous quel nom et où doit-il le faire.
+
+Si vous avez installé Twint et que vous faites tourner ce bout de code chez vous, vous pourrez bien sûr récupérer les mêmes données que moi. Tout ceci est réalisé sans trucage et ne nécessite pas de quelconque compétences de cascadeur.
+
+!!!!!!!!!!!!!!! ICI INSERER UN GIF DE CASCADEUR ? !!!!!!!!!!!!!!!!!!!!
 
 La pédagogie passe par la répétition, donc l'adage suivant ne sera sans doute pas répété assez souvent : toute dataviz est basée sur une bonne préparation de la donnée.
 
@@ -153,11 +158,11 @@ On ajoute également la date de publication de la GeoRDP, car il peut arriver qu
 
 Pour les articles, le code est sensiblement le même :
 
-```python
+```python hl_lines="2 5"
 c = twint.Config()
 c.Search = "geotribu"
-c.Store_csv = True
 c.Since = "2020-04-30"
+c.Store_csv = True
 c.Output = "geotribu-tweets.csv"
 
 twint.run.Search(c)
@@ -189,6 +194,8 @@ Pour être un peu plus complet sur Twint, il faut savoir que les résultats des 
 - les nombres de likes, retweets et réponses
 
 Vous trouverez [sur le wiki l'ensemble des champs produits](https://github.com/twintproject/twint/wiki/Tweet-attributes).
+
+----
 
 ## Visualisation des différentes données récupérées
 
