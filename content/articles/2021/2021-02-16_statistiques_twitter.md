@@ -225,7 +225,7 @@ En revanche, le lien entre publication de GeoRDP et partage Twitter n'est pas to
 - L'apport du partage des GeoRDP sur Linkedin est assez important (17% du trafic provenant des réseaux sociaux) et donc non pris en compte ici. De plus, Linkedin affiche parfois du contenu datant de plusieurs semaines sur les fils d'actualité, décalant donc potentiellement son impact sur la fréquentation du site
 - D'autres contenus ont été partagés en plus des GeoRDP (des articles) et ne sont pas comptabilisés dans les statistiques twitteriennes présentées plus haut.
 
-Nom de Zeus! Marty, regardons de suite ce que cela implique si on rajoute les tweets de publication des articles ! :rocket:
+Nom de Zeus ! Marty, regardons de suite ce que cela implique si on rajoute les tweets de publication des articles ! :rocket:
 
 #### Ajout des données des articles
 
@@ -243,7 +243,7 @@ Le pic du 5 juillet peut également sans doute s'expliquer grâce au partage d'u
 
 ## Conclusion
 
-Clairement, Twint est très simple d'utilisation et en 3 coups de cuillères à python, il est possible d'arriver à représenter et analyser quelques phénomènes provenant de Twitter.
+Clairement, Twint est très simple d'utilisation et en 3 coups de cuillères à Python, il est possible d'arriver à représenter et analyser quelques phénomènes provenant de Twitter.
 
 N'hésitez pas à nous faire des retours dans les commentaires, si vous avez également des cas d'usage de Twint !
 
