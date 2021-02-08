@@ -2,17 +2,17 @@
 title: "Impact de Twitter sur la fréquentation du site GeoTribu"
 authors: ["Aurélien CHAUMET"]
 categories: ["article"]
-date: "2021-02-16 10:20"
-description: "Description pour le SEO."
+date: "2021-02-09 10:20"
+description: "Récupérer des données sociales de Twitter, les préparer et les représenter est assez simple, grâce à trois bibliothèques Python : Twint, Pandas et Plolty. L'exemple développé ici s'appuie sur les statistiques autour des GeoRDP et articles parus dans GeoTribu en 2020"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png"
-tags: "twitter,scraping,twint,statistiques,geotribu,plotly"
+tags: "twitter,scraping,twint,statistiques,geotribu,pandas,plotly"
 ---
 
 # Impact de Twitter sur la fréquentation du site GeoTribu
 
-:calendar: Date de publication initiale : 16 février 2021
+:calendar: Date de publication initiale : 9 février 2021
 
-**Mots-clés :** python | scraping | twint | statistiques
+**Mots-clés :** python | scraping | twint | statistiques | Geotribu
 
 Prérequis :
 
@@ -40,7 +40,7 @@ Avant d'analyser quoi que ce soit, il faut disposer de données. Et ça tombe bi
 
 Twitter est une mine d'or de données sociales et leur récupération n'est réellement pas compliquée, notamment grâce à [Twint](https://github.com/twintproject/twint).
 
-D'autres bibliothèques existent, comme [Tweepy](https://www.tweepy.org/) par exemple, mais à ma connaissance Twint est la seule à ne pas passer par l'API officielle Twitter et donc à pouvoir s'affranchir d'un certain nombre de limitations, comme le nombre de tweets maximal récupérés.
+D'autres bibliothèques existent, comme [Tweepy](https://www.tweepy.org/) par exemple, mais à ma connaissance Twint est la seule à ne pas passer par l'API officielle Twitter et donc à pouvoir s'affranchir de ses limitations, comme le nombre de tweets maximal récupérés.
 
 De plus, c'était une nouvelle occasion d'utiliser Twint, sur le même principe que [le scraping de données sur le 30DayMapChallenge](https://aurelienchaumet.github.io/articles/30daymapchallenge_scraping_twitter/), que j'avais déjà réalisé.
 
@@ -122,7 +122,7 @@ Nous allons récupérer pour cela 2 types de données : les tweets liés aux Geo
 
 ### Données des GeoRDP
 
-Voici le code que j'ai utilisé pour obtenir les tweets depuis le 30 avril 2020 qui contiennent le mot `geordp` :
+Voici le code que j'ai utilisé pour obtenir les tweets depuis le 30 avril 2020, qui contiennent le mot `geordp` :
 
 ```python
 c = twint.Config()
@@ -136,11 +136,11 @@ twint.run.Search(c)
 
 Détail des paramètres :
 
-- `c` : variable dans laquelle on stocke une instance Twint
-- `.Search` dit à Twint qu'il va devoir récupérer les données sur les tweets contenant le terme qui nous intéresse.
-- `.Since` indique à partir de quand il doit chercher.
+- `c` est la variable dans laquelle on stocke une instance Twint
+- `.Search` dit à Twint qu'il va devoir récupérer les données sur les tweets contenant le terme qui nous intéresse
+- `.Since` indique à partir de quand il doit chercher
 - `.Store_csv` lui dit de stocker le résultat dans un fichier csv
-- `.Output` sous quel nom et où doit-il le faire.
+- `.Output` sous quel nom et où doit-il le faire
 
 Si vous avez installé Twint et que vous faites tourner ce bout de code chez vous, vous pourrez bien sûr récupérer les mêmes données que moi. Tout ceci est réalisé sans trucage et ne nécessite pas de quelconque compétences de cascadeur.
 
@@ -208,9 +208,9 @@ Vous trouverez [sur le wiki l'ensemble des champs produits](https://github.com/t
 
 Il y a un peu de travail complémentaire sur la donnée pour pouvoir comparer les différentes sources, en passant par exemple les données du site Geotribu en format quinzomadaire, étant donné que les GeoRDP influencent très clairement les statistiques du site.
 
-Pour celles et ceux qui seraient intéressés, le code de la fin de la préparation des données est disponible dans un dépôt Github sous deux scripts, tel qu'ils sont présentés dans la suite de cet article.
+Pour celles et ceux qui seraient intéressés, le code de la fin de la préparation des données est disponible dans un dépôt Github sous deux scripts, un premier permettant de visualiser les données provenant exclusivement des GeoRDP et un deuxième prenant également en compte les articles parus sur GeoTribu.
 
-Concernant la visualisation des données, c'est [Plotly](https://plotly.com/python/) qui a été utilisé ici. Les 2 scripts évoqués plus haut contiennent également le code de chaque graphique.
+Concernant la visualisation des données, c'est [Plotly](https://plotly.com/python/) qui a été utilisé ici. Les 2 scripts évoqués plus haut contiennent également le code permettant de reproduire les deux graphiques présents dans la suite de l'article.
 
 [:page_facing_up: Accéder au dépôt Github :page_facing_up:](https://github.com/geotribu/stats-twitter-geotribu){: .md-button }
 {: align=middle }
@@ -229,19 +229,19 @@ Les pointillés orange verticaux correspondent aux dates de publication des GeoR
 On remarque une certaine corrélation (comme déjà évoqué précédemment) entre la publication des GeoRDP et l'affluence sur le site GeoTribu.  
 Les périodes de vacances scolaires n'ont pas l'air très propices à la géo-lecture, étant donné qu'en août et en fin d'année on observe des baisses de fréquentation, alors que des GeoRDP ont bien été publiées.
 
-En revanche, le lien entre publication de GeoRDP et partage Twitter n'est pas toujours très évident. Certains pics (29 mai et 30 juillet par exemple) ont l'air d'être associés à Twitter, en revanche on observe une baisse du nombre de likes et retweets à partir du 13 novembre , alors que la fréquentation du site continue d'augmenter jusqu'au 13 décembre.
+En revanche, le lien entre publication de GeoRDP et partage Twitter n'est pas toujours très évident. Certains pics (dernière quinzaine de mai et fin juillet par exemple) ont l'air d'être associés à Twitter, en revanche on observe une baisse du nombre de likes et retweets à partir du 13 novembre , alors que la fréquentation du site continue d'augmenter jusqu'au 13 décembre.
 
 2 hypothèses principales :
 
-- L'apport du partage des GeoRDP sur Linkedin est assez important (17% du trafic provenant des réseaux sociaux) et donc non pris en compte ici. De plus, Linkedin affiche parfois du contenu datant de plusieurs semaines sur les fils d'actualité, décalant donc potentiellement son impact sur la fréquentation du site
+- L'apport du partage des GeoRDP sur Linkedin est assez important (17% du trafic provenant des réseaux sociaux) et donc, non pris en compte ici. De plus, Linkedin affiche parfois du contenu datant de plusieurs semaines sur les fils d'actualité, décalant donc potentiellement son impact sur la fréquentation du site
 - D'autres contenus ont été partagés en plus des GeoRDP (des articles) et ne sont pas comptabilisés dans les statistiques twitteriennes présentées plus haut.
 
 Nom de Zeus ! Marty, regardons de suite ce que cela implique si on rajoute les tweets de publication des articles ! :rocket:
 
 ### Ajout des données des articles
 
-Ce nouveau graphique représente les mêmes champs, avec les données provenant des tweets sur les articles.  
-Les données de partage des articles ont été ramenées à l'échelle de celles des GeoRDP, c'est-à-dire au minimum toutes les 2 semaines (comme les données utilisateurs du site GeoTribu), afin de pouvoir comparer ensemble des données.
+Ce nouveau graphique représente les mêmes champs, avec les données provenant des tweets sur les articles en plus de celles des GeoRDP.  
+Les données de partage des articles ont été ramenées à l'échelle de celles des GeoRDP, c'est-à-dire au minimum toutes les 2 semaines (comme les données utilisateurs du site GeoTribu), afin de pouvoir comparer l'ensemble des données.
 
 <iframe width="100%" height="500px" src="https://geotribu.github.io/stats-twitter-geotribu/articles.html" frameborder="0" allowfullscreen></iframe>
 
@@ -251,7 +251,7 @@ Les données de partage des articles ont été ramenées à l'échelle de celles
 Bingo, comme disent les amateurs de loto !
 
 On voit bien que la hausse de fréquentation observée mi-octobre et de manière continue jusqu'aux vacances de Noël est sans doute liée aux articles et à leur partage.  
-Le pic du 5 juillet peut également s'expliquer grâce au partage [d'un article](/articles/2020/2020-07-03_deploy_qgis_windows/).
+Le pic de fin juin peut également s'expliquer grâce au partage [d'un article](/articles/2020/2020-07-03_deploy_qgis_windows/).
 
 ## Conclusion
 
