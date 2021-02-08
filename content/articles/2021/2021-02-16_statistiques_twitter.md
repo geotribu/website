@@ -130,7 +130,7 @@ c.Output = "geordp-tweets.csv"
 twint.run.Search(c)
 ```
 
-Détil des paramètres :
+Détail des paramètres :
 
 - `c` : variable dans laquelle on stocke une instance Twint
 - `.Search` dit à Twint qu'il va devoir récupérer les données sur les tweets contenant le terme qui nous intéresse.
@@ -153,6 +153,9 @@ Il va donc falloir identifier les tweets originels, et ici, à part faire le bou
 
 On ajoute un champ dans le csv `geordp`, peuplé avec des 'oui' lorsqu'ils correspondent au premier partage.  
 On ajoute également la date de publication de la GeoRDP, car il peut arriver que les GeoRDP soient partagées après leur publication sur le site de GeoTribu.
+
+[:page_facing_up: Accéder au script :page_facing_up:](https://github.com/geotribu/stats-twitter-geotribu/blob/main/scripts/scrap-twint.py){: .md-button }
+{: align=middle }
 
 ### Données des articles
 
@@ -213,10 +216,8 @@ Les pointillés orange verticaux correspondent aux dates de publication des GeoR
 
 <iframe width="100%" height="500px" src="https://geotribu.github.io/stats-twitter-geotribu/geordp.html" frameborder="0" allowfullscreen></iframe>
 
-[Cliquez ici pour voir le graphique en plein écran](https://geotribu.github.io/stats-twitter-geotribu/geordp.html){: .md-button }
+[:chart_with_upwards_trend: Voir le graphique en plein écran :chart_with_upwards_trend:](https://geotribu.github.io/stats-twitter-geotribu/geordp.html){: .md-button } [:page_facing_up: Accéder au script :page_facing_up:](https://github.com/geotribu/stats-twitter-geotribu/blob/main/scripts/prepa-visu-geordp-ga.py){: .md-button }
 {: align=middle }
-
-LIEN GIST
 
 On remarque une certaine corrélation (comme déjà évoqué précédemment) entre la publication des GeoRDP et l'affluence sur le site GeoTribu.  
 Les périodes de vacances scolaires n'ont pas l'air très propices à la géo-lecture, étant donné qu'en août et en fin d'année on observe des baisses de fréquentation, alors que des GeoRDP ont bien été publiées.
@@ -237,15 +238,13 @@ Les données de partage des articles ont été ramenées à l'échelle de celles
 
 <iframe width="100%" height="500px" src="https://geotribu.github.io/stats-twitter-geotribu/articles.html" frameborder="0" allowfullscreen></iframe>
 
-[Cliquez ici pour voir le graphique en plein écran](https://geotribu.github.io/stats-twitter-geotribu/articles.html){: .md-button }
+[:chart_with_upwards_trend: Voir le graphique en plein écran :chart_with_upwards_trend:](https://geotribu.github.io/stats-twitter-geotribu/articles.html){: .md-button } [:page_facing_up: Accéder au script :page_facing_up:](https://github.com/geotribu/stats-twitter-geotribu/blob/main/scripts/prepa-visu-geordp-articles-ga.py){: .md-button }
 {: align=middle }
-
-LIEN GIST
 
 Bingo, comme disent les amateurs de loto !
 
-On voit bien que la hausse de fréquentation observée mi-octobre et de manière continue jusqu'aux vacances de Noël sont sans doute liées aux articles et à leur partage.  
-Le pic du 5 juillet peut également sans doute s'expliquer grâce au partage d'un article.
+On voit bien que la hausse de fréquentation observée mi-octobre et de manière continue jusqu'aux vacances de Noël est sans doute liée aux articles et à leur partage.  
+Le pic du 5 juillet peut également s'expliquer grâce au partage [d'un article](/articles/2020/2020-07-03_deploy_qgis_windows/).
 
 ## Conclusion
 
