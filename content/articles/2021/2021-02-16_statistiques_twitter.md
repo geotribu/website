@@ -211,7 +211,10 @@ Le graphique ci-dessous représente en bleu le nombre de likes et en rouge le no
 La courbe verte représente le nombe d'utilisateurs du site GeoTribu par quinzaine.  
 Les pointillés orange verticaux correspondent aux dates de publication des GeoRDP.
 
-IFRAME
+<iframe width="100%" height="500px" src="https://geotribu.github.io/stats-twitter-geotribu/geordp.html" frameborder="0" allowfullscreen></iframe>
+
+[Cliquez ici pour voir le graphique en plein écran](https://geotribu.github.io/stats-twitter-geotribu/geordp.html){: .md-button }
+{: align=middle }
 
 LIEN GIST
 
@@ -232,7 +235,10 @@ Nom de Zeus ! Marty, regardons de suite ce que cela implique si on rajoute les t
 Ce nouveau graphique représente les mêmes champs, avec les données provenant des tweets sur les articles.  
 Les données de partage des articles ont été ramenées à l'échelle de celles des GeoRDP, c'est-à-dire au minimum toutes les 2 semaines (comme les données utilisateurs du site GeoTribu), afin de pouvoir comparer ensemble des données.
 
-IFRAME
+<iframe width="100%" height="500px" src="https://geotribu.github.io/stats-twitter-geotribu/articles.html" frameborder="0" allowfullscreen></iframe>
+
+[Cliquez ici pour voir le graphique en plein écran](https://geotribu.github.io/stats-twitter-geotribu/articles.html){: .md-button }
+{: align=middle }
 
 LIEN GIST
 
