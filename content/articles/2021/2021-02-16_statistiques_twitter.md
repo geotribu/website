@@ -40,6 +40,8 @@ Twitter est une mine d'or de données sociales et leur récupération n'est rée
 
 D'autres bibliothèques existent, notamment [Tweepy](https://www.tweepy.org/) par exemple, mais à ma connaissance Twint est la seule à ne pas passer par l'API officielle Twitter et donc à pouvoir s'affranchir d'un certain nombre de limitations, comme le nombre de tweets maximal récupérés par exemple.
 
+De plus, c'était une nouvelle fois l'occasion d'utiliser Twint, sur le même principe que [le scraping de données sur le 30DayMapChallenge](https://aurelienchaumet.github.io/articles/30daymapchallenge_scraping_twitter/), que j'avais déjà réalisé.
+
 ### Installation
 
 L’installation est ultra simple, il suffit d'entrer dans un terminal de commande :
@@ -140,7 +142,7 @@ Détail des paramètres :
 
 Si vous avez installé Twint et que vous faites tourner ce bout de code chez vous, vous pourrez bien sûr récupérer les mêmes données que moi. Tout ceci est réalisé sans trucage et ne nécessite pas de quelconque compétences de cascadeur.
 
-!!!!!!!!!!!!!!! ICI INSERER UN GIF DE CASCADEUR ? !!!!!!!!!!!!!!!!!!!!
+![pouf cascadeur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pouf_cascadeur.gif "Pouf le cascadeur"){: .img-center loading=lazy }
 
 La pédagogie passe par la répétition, donc l'adage suivant ne sera sans doute pas répété assez souvent : toute dataviz est basée sur une bonne préparation de la donnée.
 
