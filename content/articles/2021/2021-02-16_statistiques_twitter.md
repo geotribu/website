@@ -4,7 +4,7 @@ authors: ["Aurélien CHAUMET"]
 categories: ["article"]
 date: "2021-02-16 10:20"
 description: "Description pour le SEO."
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png"
 tags: "twitter,scraping,twint,statistiques,geotribu,plotly"
 ---
 
@@ -27,6 +27,8 @@ Pas que les statistiques de fréquentation soient un objectif en soi, mais nous 
 
 Et puis c'est aussi l'occasion de faire un article sur le forage de données ([une fois n'est pas coutume](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) :smile:), avec des metadonnées autour de l'activité GeoTribu !
 
+![banner geotribu stats twitter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png "Geotribu stats Twitter"){: .img-center loading=lazy }
+
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
@@ -38,9 +40,9 @@ Avant d'analyser quoi que ce soit, il faut disposer de données. Et ça tombe bi
 
 Twitter est une mine d'or de données sociales et leur récupération n'est réellement pas compliquée, notamment grâce à [Twint](https://github.com/twintproject/twint).
 
-D'autres bibliothèques existent, notamment [Tweepy](https://www.tweepy.org/) par exemple, mais à ma connaissance Twint est la seule à ne pas passer par l'API officielle Twitter et donc à pouvoir s'affranchir d'un certain nombre de limitations, comme le nombre de tweets maximal récupérés par exemple.
+D'autres bibliothèques existent, comme [Tweepy](https://www.tweepy.org/) par exemple, mais à ma connaissance Twint est la seule à ne pas passer par l'API officielle Twitter et donc à pouvoir s'affranchir d'un certain nombre de limitations, comme le nombre de tweets maximal récupérés.
 
-De plus, c'était une nouvelle fois l'occasion d'utiliser Twint, sur le même principe que [le scraping de données sur le 30DayMapChallenge](https://aurelienchaumet.github.io/articles/30daymapchallenge_scraping_twitter/), que j'avais déjà réalisé.
+De plus, c'était une nouvelle occasion d'utiliser Twint, sur le même principe que [le scraping de données sur le 30DayMapChallenge](https://aurelienchaumet.github.io/articles/30daymapchallenge_scraping_twitter/), que j'avais déjà réalisé.
 
 ### Installation
 
@@ -142,7 +144,7 @@ Détail des paramètres :
 
 Si vous avez installé Twint et que vous faites tourner ce bout de code chez vous, vous pourrez bien sûr récupérer les mêmes données que moi. Tout ceci est réalisé sans trucage et ne nécessite pas de quelconque compétences de cascadeur.
 
-![pouf cascadeur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pouf_cascadeur.gif "Pouf le cascadeur"){: .img-center loading=lazy }
+![pouf cascadeur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/cascadeur_pouf.gif "Pouf le cascadeur"){: .img-center loading=lazy }
 
 La pédagogie passe par la répétition, donc l'adage suivant ne sera sans doute pas répété assez souvent : toute dataviz est basée sur une bonne préparation de la donnée.
 
@@ -155,9 +157,6 @@ Il va donc falloir identifier les tweets originels, et ici, à part faire le bou
 
 On ajoute un champ dans le csv `geordp`, peuplé avec des 'oui' lorsqu'ils correspondent au premier partage.  
 On ajoute également la date de publication de la GeoRDP, car il peut arriver que les GeoRDP soient partagées après leur publication sur le site de GeoTribu.
-
-[:page_facing_up: Accéder au script :page_facing_up:](https://github.com/geotribu/stats-twitter-geotribu/blob/main/scripts/scrap-twint.py){: .md-button }
-{: align=middle }
 
 ### Données des articles
 
@@ -177,6 +176,9 @@ Les seules différences se situent sur le `.Search` et le `.Output`.
 
 Concernant la préparation de ce fichier, tout comme le précédent, il faut identifier les tweets originels de partage des articles.  
 Un champ `article` est ajouté en le peuplant de 'oui' lorsque cela est nécessaire.
+
+[:page_facing_up: Accéder au script Twint :page_facing_up:](https://github.com/geotribu/stats-twitter-geotribu/blob/main/scripts/scrap-twint.py){: .md-button }
+{: align=middle }
 
 ### Données du site GeoTribu
 
@@ -204,11 +206,14 @@ Vous trouverez [sur le wiki l'ensemble des champs produits](https://github.com/t
 
 ## Visualisation des différentes données récupérées
 
-Il y a un peu de travail complémentaire sur la donnée, notamment pour pouvoir comparer un peu les différentes sources, en passant par exemple les données du site Geotribu en format quinzomadaire, étant donné que les GeoRDP influencent très clairement les statistiques du site.
+Il y a un peu de travail complémentaire sur la donnée pour pouvoir comparer les différentes sources, en passant par exemple les données du site Geotribu en format quinzomadaire, étant donné que les GeoRDP influencent très clairement les statistiques du site.
 
-Pour celles et ceux qui seraient intéressés, le code de la fin de la préparation des données est disponible dans un gist ici LIEN !!!
+Pour celles et ceux qui seraient intéressés, le code de la fin de la préparation des données est disponible dans un dépôt Github sous deux scripts, tel qu'ils sont présentés dans la suite de cet article.
 
-Enfin, c'est [Plotly](https://plotly.com/python/) qui a été utilisé ici pour représenter les données. Le code des 2 graphiques que trouverez dans la suite de l'article sont disponibles dans des gist sous chacun d'eux.
+Concernant la visualisation des données, c'est [Plotly](https://plotly.com/python/) qui a été utilisé ici. Les 2 scripts évoqués plus haut contiennent également le code de chaque graphique.
+
+[:page_facing_up: Accéder au dépôt Github :page_facing_up:](https://github.com/geotribu/stats-twitter-geotribu){: .md-button }
+{: align=middle }
 
 ### Représentation des données des GeoRDP
 
@@ -233,7 +238,7 @@ En revanche, le lien entre publication de GeoRDP et partage Twitter n'est pas to
 
 Nom de Zeus ! Marty, regardons de suite ce que cela implique si on rajoute les tweets de publication des articles ! :rocket:
 
-#### Ajout des données des articles
+### Ajout des données des articles
 
 Ce nouveau graphique représente les mêmes champs, avec les données provenant des tweets sur les articles.  
 Les données de partage des articles ont été ramenées à l'échelle de celles des GeoRDP, c'est-à-dire au minimum toutes les 2 semaines (comme les données utilisateurs du site GeoTribu), afin de pouvoir comparer ensemble des données.
