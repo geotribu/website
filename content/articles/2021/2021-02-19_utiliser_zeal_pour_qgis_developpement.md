@@ -129,8 +129,10 @@ L'utilisation est simple mais voici quelques astuces histoire de
 Il est possible de filtrer sa recherche sur l'une des documentations en utilisant son préfixe (un peu à la manière du [localisateur de QGIS](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#locator-settings)). Par exemple pour chercher dans PyQGIS, on préfixe avec `pyqgis_3:` :
 
 <video width="700" controls>
+    <!-- markdownlint-disable MD033 -->
     <source src="https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_demo_pyqgis.mp4" type="video/mp4">
     Votre navigateur ne supporte pas la balise video HTML 5.
+    <!-- markdownlint-enable MD033 -->
 </video>
 
 ### Intégrer à son IDE
