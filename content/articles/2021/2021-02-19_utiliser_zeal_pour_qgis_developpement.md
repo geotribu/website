@@ -1,0 +1,158 @@
+---
+title: "Développement QGIS : utiliser les documentations hors-ligne avec Zeal"
+authors: ["Julien MOURA"]
+categories: ["article"]
+date: "2021-02-19 10:20"
+description: "Blog-note de développement sur QGIS : présentation de Zeal qui permet de disposer d'un naviguer hors-ligne dans les documentations techniques de QGIS et PyQGIS."
+image: "https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png"
+tags: "QGIS,développement,zeal,documentation"
+---
+
+# Utiliser Zeal pour développer sur QGIS
+
+:calendar: Date de publication initiale : 19 février 2021
+
+**Mots-clés :** développement | QGIS | documentation | IDE
+
+![logo Zeal Docs](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/zeal.png "logo Zeal Docs"){: .img-rdp-news-thumb }
+
+Quand on développe sur QGIS (un plugin, un traitement ou carrément dans le coeur), la documentation technique est souvent ouverte quelque part dans le navigateur web.  
+Mais il est justement fastidieux de naviguer dans une documentation et on a tôt fait de se retrouver avec beaucoup (trop) d'onglets, occasionnant de la confusion voire ~~du troll~~ des soucis de RAM  :innocent:.
+
+![troll Chrome](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/troll_chrome_tabs.jpeg "Troll nombre d'onglets sur Chrome"){: .img-center }
+
+J'avais vu passer le [tweet d'un de mes collègues](https://twitter.com/CabiecesJ/status/1339870135897747456) sur sa contribution à [Zeal] et m'étais alors mis le lien de côté.  
+C'est un autre collègue qui m'en a reparlé récemment (coucou Loïc) : il était donc temps d'essayer !
+
+![Capture d'écran de Zeal](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png "Zeal - Recherche filtrée sur PyQGIS"){: loading=lazy }
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
+----
+
+## Présentation
+
+### Historique
+
+![logo Dash](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/dash_docs.png "logo Dash"){: .img-rdp-news-thumb }
+
+A la base, [Zeal] est une imitation open-source assumée de [Dash], un logiciel pour MacOS uniquement développé par (Maître) Kapeli (en fait un développeur indépendant, Bogdan Popescu) et vendu 30$. Notons que l'éditeur de Dash connaît et tolère bien Zeal et que ce dernier a un accès aux documentations (*docsets*) du premier.
+
+![Bannière Dash](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/dash_banner.png "Bannière Dash")
+
+Zeal est donc un équivalent open-source (GPL 3, [dépôt GitHub](https://github.com/zealdocs/zeal)) en Qt (le même cadriciel graphique que QGIS) packagé pour les plateformes ignorées par Dash : Windows et Linux donc.
+
+### Principes
+
+![logo lessive Dash](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/dash_lessive.jpg "logo lessive Dash"){: .img-rdp-news-thumb }
+
+C'est simple, l'application se compose de deux ingrédients :
+
+- l'interface graphique qui est *grosso modo* **un mini navigateur web** avec des onglets et un volet de favoris
+- les **docsets** : les documentations en elle-mêmes structurées d'en  sous forme de flux que l'on télécharge pour en disposer hors-ligne
+
+----
+
+## Installer
+
+Sur Ubuntu, c'est simple :
+
+```bash
+sudo apt install zeal
+```
+
+Sur Windows, il y a [un installateur](https://zealdocs.org/download.html#windows) ou bien avec Chocolatey (entre autres) :
+
+```powershell
+choco install zeal
+```
+
+----
+
+## Télécharger les docsets
+
+Une fois Zeal installé, il s'agit de télécharger les documentations qui nous intéressent. Il y a deux cas de figure.
+
+### Docsets intégrés
+
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+
+Soit la documentation est maintenue par [Dash] et elle est donc directement intégrée. C'est le cas de nombreux langages de programmation.  
+Il suffit alors de la charger via le menu `Tools > Docsets...`, dans l'onglet `Available`. Par exemple pour Python 3 :
+
+![Zeal Python](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_dash_python.png "Zeal - Docsets Python"){: loading=lazy .img-center }
+
+### Docsets de la communauté
+
+![logo Open Source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source"){: .img-rdp-news-thumb }
+
+Soit il s'agit d'une documentation propre à un projet ou à un cadriciel (*framework*) moins généraliste. Il faut alors de nouveau s'émerveiller devant la force des dynamiques de contribution communautaire et utiliser les documentations publiées sur <https://zealusercontributions.now.sh/>.
+
+![Zeal - Docsets de la commaunauté](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_qgis.png "Zeal - Docsets de la commaunauté filtrés sur le mot-clé qgis"){: loading=lazy }
+
+C'est justement le cas des **docsets** pour QGIS et PyQGIS, pour lesquelles on peut remercier Julien Cabieces :wine_glass: (<-- cet emoji désigne un verre de Gaillac) qui a fait les [mises à jour en décembre dernier](https://github.com/Kapeli/Dash-User-Contributions/pulls?q=is%3Apr+is%3Aclosed+qgis).
+
+Elles se présentent alors sous forme de flux, qu'il s'agit d'ajouter via le bouton `Àdd feed` en bas de l'onglet `Installed` et d'entrer le flux récupéré depuis le site web.
+
+Comme je suis sympa, je vous reporte ici les flux correspodnant aux documentations de [QGIS](https://qgis.org/api/3.16/) et [PyQGIS](https://qgis.org/pyqgis/3.16/) :
+
+Pour développer sur QGIS :
+
+```http
+https://zealusercontributions.now.sh/api/docsets/QGIS.xml
+```
+
+![Zeal - Flux QGIS](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_contrib_qgis.png "Zeal - Flux QGIS"){: loading=lazy .img-center }
+
+Pour développer sur PyQGIS :
+
+```http
+https://zealusercontributions.now.sh/api/docsets/PyQGIS.xml
+```
+
+![Zeal - Flux PyQGIS](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_contrib_pyqgis.png "Zeal - Flux PyQGIS"){: loading=lazy .img-center }
+
+!!! tip
+    Avec un peu de curiosité, on trouve plein d'autres pépites : PostGIS (2.1), Pandas, etc.
+
+----
+
+## Utiliser
+
+L'utilisation est simple mais voici quelques astuces histoire de
+
+### Recherche filtrée
+
+![Filtre QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionFilter2.svg "Filtre QGIS"){: .img-rdp-news-thumb }
+
+Il est possible de filtrer sa recherche sur l'une des documentations en utilisant son préfixe (un peu à la manière du [localisateur de QGIS](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#locator-settings)). Par exemple pour chercher dans PyQGIS, on préfixe avec `pyqgis_3:` :
+
+<video width="700" controls>
+    <source src="https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_demo_pyqgis.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la balise video HTML 5.
+</video>
+
+### Intégrer à son IDE
+
+Par exemple pour Visual Studio Code, il y a cette extension : <https://github.com/deerawan/vscode-dash>.
+
+----
+
+## Conclusion
+
+De mon point de vue, Zeal est de ces outils particulièrement utiles aux personnes faisant du développement mais sans forcément le socle de compétences intiiales qui va avec, catégorie dans laquelle je nous range, géomaticien/nes que nous sommes.  
+C'est aussi avec ce genre d'outil que l'on se rend compte des bénéfices du travail de documentation et de la dynamique de capitalisation/partage qu'est l'open source.
+
+En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-it friendly* en épargnant un paquet de requêtes réseau :leafy_green:.
+
+----
+
+## Auteur
+
+--8<-- "content/team/jmou.md"
+
+<!-- hyperlinks reference -->
+[Dash]: https://kapeli.com/dash
+[Velocity]: https://velocity.silverlakesoftware.com/
+[Zeal]: https://zealdocs.org/
