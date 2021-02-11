@@ -41,7 +41,7 @@ A la base, [Zeal] est une imitation open-source assumée de [Dash], un logiciel 
 
 ![Bannière Dash](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/dash_banner.png "Bannière Dash")
 
-Zeal est donc un équivalent open-source (GPL 3, [dépôt GitHub](https://github.com/zealdocs/zeal)) en Qt (le même cadriciel graphique que QGIS) packagé pour les plateformes ignorées par Dash : Windows et Linux donc.
+Zeal est donc un équivalent open-source (GPL 3, [dépôt GitHub](https://github.com/zealdocs/zeal)) en Qt (le même cadriciel[^1] graphique que QGIS) packagé pour les plateformes ignorées par Dash : Windows et Linux donc, sans oublier [les vrais unix ou Haiku](https://github.com/haikuports/haikuports/tree/master/app-doc/zeal).
 
 ### Principes
 
@@ -87,7 +87,7 @@ Il suffit alors de la charger via le menu `Tools > Docsets...`, dans l'onglet `A
 
 ![logo Open Source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source"){: .img-rdp-news-thumb }
 
-Soit il s'agit d'une documentation propre à un projet ou à un cadriciel (*framework*) moins généraliste. Il faut alors de nouveau s'émerveiller devant la force des dynamiques de contribution communautaire et utiliser les documentations publiées sur <https://zealusercontributions.now.sh/>.
+Soit il s'agit d'une documentation propre à un projet ou à un cadriciel[^1] (*framework*) moins généraliste. Il faut alors de nouveau s'émerveiller devant la force des dynamiques de contribution communautaire et utiliser les documentations publiées sur <https://zealusercontributions.now.sh/>.
 
 ![Zeal - Docsets de la commaunauté](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_qgis.png "Zeal - Docsets de la commaunauté filtrés sur le mot-clé qgis"){: loading=lazy }
 
@@ -153,6 +153,9 @@ En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-
 ## Auteur
 
 --8<-- "content/team/jmou.md"
+
+<!-- Footnotes reference -->
+[^1]: traduction de _framework_ recommandée par l'Office québécois de la langue française. Source : [Wikipedia](https://fr.wikipedia.org/wiki/Framework#Traduction_fran%C3%A7aise)
 
 <!-- hyperlinks reference -->
 [Dash]: https://kapeli.com/dash
