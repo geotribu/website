@@ -143,10 +143,11 @@ Par exemple pour Visual Studio Code, il y a cette extension : <https://github.co
 
 ## Conclusion
 
-De mon point de vue, Zeal est de ces outils particulièrement utiles aux personnes faisant du développement mais sans forcément le socle de compétences intiiales qui va avec, catégorie dans laquelle je nous range, géomaticien/nes que nous sommes.  
+De mon point de vue, Zeal est de ces outils particulièrement utiles aux personnes faisant du développement mais sans forcément le socle de compétences initiales qui va avec, catégorie dans laquelle je nous range, géomaticien/nes que nous sommes. Le fait de pouvoir naviguer entre les documentations est très pratique : QGIS retourne un QStringList ? hop, tu recherches dans la doc et voilà ! Même pas le temps pour le doute :bolt: !
+
 C'est aussi avec ce genre d'outil que l'on se rend compte des bénéfices du travail de documentation et de la dynamique de capitalisation/partage qu'est l'open source.
 
-En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-it friendly* en épargnant un paquet de requêtes réseau :leafy_green:.
+En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-it friendly* en épargnant un paquet de requêtes réseau :leafy_green:. Car, certes les documentations peuvent être tirées avec les paquets mais le gros avantage c'est d'avoir cela dans un seul endroit et accessible à tous (y compris sur des systèmes ou `man` n'existe pas :scream:).
 
 ----
 
