@@ -22,7 +22,7 @@ Mais il est justement fastidieux de naviguer dans une documentation et on a tôt
 ![troll Chrome](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/troll_chrome_tabs.jpeg "Troll nombre d'onglets sur Chrome"){: .img-center }
 
 J'avais vu passer le [tweet d'un de mes collègues](https://twitter.com/CabiecesJ/status/1339870135897747456) sur sa contribution à [Zeal] et m'étais alors mis le lien de côté.  
-C'est un autre collègue qui m'en a reparlé récemment (coucou Loïc) : il était donc temps d'essayer !
+C'est un autre collègue qui m'en a reparlé récemment (coucou [Loïc](https://twitter.com/lo_bartoletti)) : il était donc temps d'essayer !
 
 ![Capture d'écran de Zeal](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png "Zeal - Recherche filtrée sur PyQGIS"){: loading=lazy }
 
