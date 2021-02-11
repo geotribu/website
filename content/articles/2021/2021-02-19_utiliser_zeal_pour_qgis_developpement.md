@@ -50,7 +50,7 @@ Zeal est donc un équivalent open-source (GPL 3, [dépôt GitHub](https://github
 C'est simple, l'application se compose de deux ingrédients :
 
 - l'interface graphique qui est *grosso modo* **un mini navigateur web** avec des onglets et un volet de favoris
-- les **docsets** : les documentations en elle-mêmes structurées d'en  sous forme de flux que l'on télécharge pour en disposer hors-ligne
+- les **docsets** : les documentations en elle-mêmes structurées et distribuées sous forme de flux que l'on télécharge pour en disposer hors-ligne
 
 ----
 
@@ -93,7 +93,7 @@ Soit il s'agit d'une documentation propre à un projet ou à un cadriciel[^1] (*
 
 C'est justement le cas des **docsets** pour QGIS et PyQGIS, pour lesquelles on peut remercier Julien Cabieces :wine_glass: (<-- cet emoji désigne un verre de Gaillac) qui a fait les [mises à jour en décembre dernier](https://github.com/Kapeli/Dash-User-Contributions/pulls?q=is%3Apr+is%3Aclosed+qgis).
 
-Elles se présentent alors sous forme de flux, qu'il s'agit d'ajouter via le bouton `Àdd feed` en bas de l'onglet `Installed` et d'entrer le flux récupéré depuis le site web.
+Elles se présentent alors sous forme de flux, qu'il s'agit d'ajouter via le bouton `Add feed` en bas de l'onglet `Installed` et d'entrer le flux récupéré depuis le site web.
 
 Comme je suis sympa, je vous reporte ici les flux correspodnant aux documentations de [QGIS](https://qgis.org/api/3.16/) et [PyQGIS](https://qgis.org/pyqgis/3.16/) :
 
