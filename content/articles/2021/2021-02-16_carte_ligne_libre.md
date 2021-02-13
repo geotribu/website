@@ -11,7 +11,7 @@ tags: "mot-clé-seo1,mot-clé-seo2"
 
 # Faire une carte en ligne (tuiles vectorielles + WebGL) 100% libre
 
-:calendar: Date de publication initiale : 9 août 2021
+:calendar: Date de publication initiale : 16 février 2021
 
 **Mots-clés :** Mot-clé 1 | Mot-clé 2
 
