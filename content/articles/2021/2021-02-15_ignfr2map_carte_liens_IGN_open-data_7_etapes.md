@@ -3,7 +3,7 @@ title: "ign2map : Du site à la carte en 7 étapes"
 authors: ["Florian Boret, Julien Moura"]
 categories: ["article"]
 date: 2021-02-15 11:11
-description: "ign2map : Rendre l’expérience de téléchargement des données de l'IGN plus interactive"
+description: "ign2map : le petit projet de Geotribu pour rendre l’expérience de téléchargement des données ouvertes de l'IGN plus interactive."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html_rendu.png"
 tags: bash,ign,leaflet,github,sed,awk
 ---
@@ -16,7 +16,12 @@ tags: bash,ign,leaflet,github,sed,awk
 
 ## Intro
 
-A la surprise de tous, [l'IGN annonçait l'ouverture de ses données fin 2020 pour une libération au 1er Janvier 2021](https://static.geotribu.fr/rdp/2020/rdp_2020-12-11/#ouverture-officielle-des-donnees-de-lign). Après des mois à attendre la refonte de l'espace professionnel, nous étions nombreux à penser que cette dynamique d'ouverture allait s'accompagner du lancement d'une plateforme ergonomique de téléchargement des données mais que nenni, les liens ont continué à [s'accumuler sur une page unique](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html). Dans ce contexte, on s’interrogeait en coulisse sur une manière de rendre cette masse d'informations plus lisible par tous :point_down:.
+![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }
+
+A la surprise de tous, [l'IGN annonçait l'ouverture de ses données fin 2020 pour une libération au 1er Janvier 2021](https://static.geotribu.fr/rdp/2020/rdp_2020-12-11/#ouverture-officielle-des-donnees-de-lign).  
+Après des mois à attendre la refonte de l'espace professionnel, nous étions nombreux à penser que cette dynamique d'ouverture allait s'accompagner du lancement d'une plateforme ergonomique de téléchargement des données mais *que nenni*! Les liens ont continué à [s'accumuler sur une page unique](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html).
+
+Dans ce contexte, on s’interrogeait en coulisses sur une manière de rendre cette masse d'informations plus lisible par tous :point_down:.
 
 ## How it started
 
