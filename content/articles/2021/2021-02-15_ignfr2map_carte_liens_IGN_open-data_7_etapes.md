@@ -163,7 +163,7 @@ Après avoir écrit une première mouture de la page html, on a ensuite converti
 
 ----
 
-## La publication :rocket:
+## :rocket: La publication 
 
 On doit avouer :
 
