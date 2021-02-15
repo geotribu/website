@@ -36,6 +36,10 @@ La solution proposée par Julien ne paraissait pas trop complexe à mettre en oe
     - [@Flo](https://static.geotribu.fr/team/fbor/) sur la construction des scripts
     - [@Ju](https://static.geotribu.fr/team/jmou/) l’enchainement des scripts et sur le déploiement
 
+Et c'est parti pour une aventure en 7 étapes :rocket: !
+
+----
+
 ## 1. Scraping du site de l'IGN
 
 [Le scraping](https://fr.wikipedia.org/wiki/Web_scraping) est une technique qui permet de récupérer le contenu d'une page web en vue de le réutiliser (voir aussi [cet article](/articles/2021/2021-02-09_statistiques_twitter/) ou [celui-ci](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/)).  
