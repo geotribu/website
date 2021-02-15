@@ -170,7 +170,7 @@ On doit avouer :
 - que le couvre-feu, nous a un peu aidé car il ne nous aura fallu que 15 jours pour arriver au résultat publié et quelques jours de plus pour mettre tout ça au propre.
 - qu'on ne s'attendait pas à un tel retentissement (Quelques chiffres : plus de 40000 vues sur twitter, plus de 700 clics sur le lien du tweet, 250 likes et plus de 110 retweets).
 
-<blockquote class="twitter-tweet" data-lang="fr"><p lang="fr" dir="ltr">Bravo et merci pour cette initiative, on valide 🙏 <a href="https://t.co/sKvEY8SPix">https://t.co/sKvEY8SPix</a></p>&mdash; IGN France (@IGNFrance) <a href="https://twitter.com/IGNFrance/status/1356272563152945154?ref_src=twsrc%5Etfw">1 février 2021</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="fr"><p lang="fr" dir="ltr">Bravo et merci pour cette initiative, on valide 🙏 <a href="https://t.co/sKvEY8SPix">https://t.co/sKvEY8SPix</a></p>&mdash; IGN France (@IGNFrance) <a href="https://twitter.com/IGNFrance/status/1356272563152945154?ref_src=twsrc%5Etfw">1 février 2021</a></blockquote>
 
 ## La suite
 
