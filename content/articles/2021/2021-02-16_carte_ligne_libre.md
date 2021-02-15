@@ -19,13 +19,13 @@ Le recent passage de la bibliothèque Javascript MapboxGL à une [nouvelle licen
 
 En reaction à ce changement, de nombreuses initiatives ont émergé, dont une très intéressante [MapLibre](https://github.com/maplibre), un fork open source de la version 1.x de MapboxGL.js. Déjà très actif avec plus de 300 contributeurs, ce fork constitue une bonne alternative pour continuer à utiliser les fonctionnalités de MapboxGL sans dépendance aux access token et donc en s'affrichissant des limites et surtout de la monétisation.
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_3af073cf001f557a2e6472d17226dbd5.png)
+![maplibre gl](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/maplibre_pres.JPG "Maplibre GL"){: .img-center loading=lazy }
 
 Ce projet est très intéressant car MapLibre conserve la syntaxe de [MapboxGL.js](https://docs.mapbox.com/mapbox-gl-js/api/), et permet de mobiliser des services de **tuiles vectorielles** et des affichages 3D en **WebGL**. Du coup pas besoin de réapprendre une nouvelle syntaxte et se replonger dans une énième documentation !
 
 Nous proposons dans ce billet de **construire étape par étape une [carte Web 100% libre](https://bl.ocks.org/mastersigat/30898810b41783ffde93330b7edb3124) en mobilisant une série de services ouverts** pour construire rapidement une petite carte Web basée sur les tuiles vectorielles et le WebGL
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_1e106f6d5e9704dbd26176744e627af0.png)
+![carte presentation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/carte_presentation.JPG "Carte de presentation"){: .img-center loading=lazy }
 
 ----
 
@@ -42,7 +42,7 @@ Si vous avez déjà développé avec MapboxGL.js il suffit de remplacer les anci
 
 Sinon voici la **structure globale pour une carte basique**
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_f480324d62e52f943317a1d11f3b94b7.png)
+![carte ba](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/carte_basique.JPG "Carte basique"){: .img-center loading=lazy }
 
 ```html
 <html>
@@ -108,15 +108,15 @@ style: 'URLdufonddecarte'
 
 #### Fond de carte (Style)
 
-```javascript
+``` javascript
 https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json
 ```
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_9da49a73e4e462a062c5578d04e5d2de.png)
+![style etalab](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/etalab.JPG "Style Etalab"){: .img-center loading=lazy }
 
 #### Flux de données thématiques (données OSM, contours administratifs et cadastre)
 
-```javascript
+``` javascript
 https://openmaptiles.geo.data.gouv.fr/data/france-vector.json
 https://openmaptiles.geo.data.gouv.fr/data/decoupage-administratif.json
 https://openmaptiles.geo.data.gouv.fr/data/cadastre.json
@@ -134,7 +134,7 @@ L'IGN met à disposition sans restriction un [flux de tuiles vectorielles de fon
 https://vectortiles.ign.fr/demonstrateur/styles/planign.json
 ```
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_d733a33dcf87739ab7af7eb11c17139f.png)
+![style ign](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/ign.JPG "Styel IGN"){: .img-center loading=lazy }
 
 ----
 
@@ -148,7 +148,7 @@ L'[institut cartographique et géologique de la Catalogne](https://www.icgc.cat/
 https://geoserveis.icgc.cat/contextmaps/icgc.json
 ```
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_1169a7c1990bf1592c835357dbb8768a.png)
+![style icgc](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/icgc.JPG "Stye ICGC"){: .img-center loading=lazy }
 
 #### Style FullDark
 
@@ -156,7 +156,7 @@ https://geoserveis.icgc.cat/contextmaps/icgc.json
 https://geoserveis.icgc.cat/contextmaps/fulldark.json
 ```
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_f283c5ddea012513eb80fea9874fa206.png)
+![style fulldark](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/full_dark.JPG "Style FullDark"){: .img-center loading=lazy }
 
 #### Style Night
 
@@ -164,7 +164,7 @@ https://geoserveis.icgc.cat/contextmaps/fulldark.json
 https://geoserveis.icgc.cat/contextmaps/night.json
 ```
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_b39847c2e2ea5215c1d2ae1d9f985e75.png)
+![style night](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/night.JPG "Style Night"){: .img-center loading=lazy }
 
 #### Style Positron (CARTO)
 
@@ -172,7 +172,7 @@ https://geoserveis.icgc.cat/contextmaps/night.json
 https://geoserveis.icgc.cat/contextmaps/positron.json
 ```
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_6e6d16d3faf797a32f34c3abe4134976.png)
+![style positron](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/positron.JPG "Style Positron"){: .img-center loading=lazy }
 
 ----
 
@@ -182,11 +182,11 @@ Une fois sa carte configurée avec MapLibre et un fond de carte il est temps d'a
 
 L'une des alternatives les plus simples consiste à hébérger ses Geojson sur GitHub.
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_29814909e106484af0f9fa88e30296d8.png)
+![hebergement github](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/github.JPG "Hébergement Github"){: .img-center loading=lazy }
 
 Une fois les Geojson hébergés il suffit de récupérer l'URL.
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_b3ba57e126e674ef206b667d91eb10c5.png)
+![github raw](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/github_raw.JPG "Github raw"){: .img-center loading=lazy }
 
 ----
 
@@ -239,7 +239,7 @@ Pour afficher un Geojson (hébergé sur GitHub) dans sa carte Web il suffit de *
      });   
 ```
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_2f31edf0c9602a94436ae9423a50db24.png)
+![ajout geojson](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/map_addsource.JPG "Ajout des GeoJson"){: .img-center loading=lazy }
 
 ----
 
@@ -279,7 +279,7 @@ map.addLayer({
     });  
 ```
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_51774f6fc6ff2a88b0848b35e2304ff9.png)
+![ajout 3D](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/3d.JPG "Ajout de la 3D"){: .img-center loading=lazy }
 
 ----
 
@@ -331,7 +331,7 @@ map.on('mousemove', function(e) {
 
 ```
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_9ffa7f371c6ccffb7f5cd92a456fab4f.png)
+![popup](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/popup.JPG "Ajout du popup"){: .img-center loading=lazy }
 
 ----
 
@@ -393,7 +393,7 @@ Enfin il suffit d'ajouter dans le script (à la suite) la commande qui va gérer
 
 Voilà vous avez un menu simple mais fonctionnel :smile:
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_0abd997bb180ecb4ed895cd0ccd006ff.png)
+![menu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/menu.JPG "Menu"){: .img-center loading=lazy }
 
 ## 6. Finaliser l'habillage de la carte
 
@@ -409,7 +409,7 @@ map.addControl(new mapboxgl.ScaleControl({position: 'bottom-right'}));
 
 Votre carte en ligne en tuiles vectorielles et WebGL 100% libre est terminée !
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_7f695adb374129cf90bb481f5002471c.png)
+![carte finale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/finalisation.JPG "Carte finale"){: .img-center loading=lazy }
 
 Le code complet se trouve ici [https://bl.ocks.org/mastersigat/30898810b41783ffde93330b7edb3124](https://bl.ocks.org/mastersigat/30898810b41783ffde93330b7edb3124)
 
@@ -419,7 +419,7 @@ Le code complet se trouve ici [https://bl.ocks.org/mastersigat/30898810b41783ffd
 
 Boris Mericskay
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_3240a6252350e24c13c0139d42ecf8dd.png)
+![boris mericskay](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/boris_mericksay.png "Boris Mericskay"){: .img-center loading=lazy }
 
 Enseignant-chercheur en géographie à [l'Université Rennes 2](https://perso.univ-rennes2.fr/boris.mericskay) et co-responsable du [master en géomatique SIGAT](https://sites-formations.univ-rennes2.fr/mastersigat/), mon travail consiste à enseigner les SIG (en licence et en master) et à faire de la recherche autour des questions des données urbaines, de l'analyse spatiale et de la géovisualisation en ligne.  
 
