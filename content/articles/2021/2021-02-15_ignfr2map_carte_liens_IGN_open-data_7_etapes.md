@@ -91,7 +91,7 @@ On a donc utilisé :
 cat "$INPUT_DIR"/2_departements/*csv | sort -u | grep -F '.7z' > "$OUTPUT_DIR/3_liens_par_dep_clean_ext.csv"
 ```
 
-En sortie on obtient, on obtient un fichier csv propre par découpage géographique.
+En sortie, on obtient un fichier csv propre par découpage géographique.
 
 ![Liens IGN propres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_liens_propres.png "Liens IGN propres"){: loading=lazy }
 {: align=middle }
