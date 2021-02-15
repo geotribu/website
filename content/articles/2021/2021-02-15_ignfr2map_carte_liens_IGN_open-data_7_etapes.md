@@ -133,7 +133,7 @@ A noter la donnée ADMIN EXPRESS n'intègre pas les collectivités d'outre mer (
 
 ## 6. Jointure avec les topojson
 
-L'étape de la jointure en bash a sans aucun doute été l'étape la plus prise de tête. Pour faire simple on a utilisé [sed](https://fr.wikipedia.org/wiki/Stream_Editor) pour remplacer l'identifiant géographique de notre topojson source par notre identifiant géographique et les liens associés. En sortie, les nouveaux fichiers topojson ont ensuite été placés dans un répertoire utilisé par la page html de la carte.
+L'étape de la jointure en bash a sans aucun doute été l'étape la plus prise de tête. Pour faire simple on a utilisé [sed] pour remplacer l'identifiant géographique de notre topojson source par notre identifiant géographique et les liens associés. En sortie, les nouveaux fichiers topojson ont ensuite été placés dans un répertoire utilisé par la page html de la carte.
 
 [Consulter le script complet :fontawesome-regular-file-code:](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/5_join_csv_topojson.sh){: .md-button }
 {: align=middle }
@@ -144,7 +144,7 @@ L'étape de la jointure en bash a sans aucun doute été l'étape la plus prise 
 
 Pour cette dernière étape, l'idée était de pouvoir générer automatiquement la page html pour être plus réactif en cas d'évolution des données libérées par l'IGN.
 
-Après avoir écrit une première mouture de la page html, on a ensuite converti cette page en un modèle en introduisant des variables liées notamment à l'appel des fichiers topojson et à la configuration des popups. Une fois le template prêt, on s'est attaché à remplacer ces variables en utilisant une nouvelle fois [sed](https://fr.wikipedia.org/wiki/Stream_Editor) pour générer de manière dynamique la page index.html.
+Après avoir écrit une première mouture de la page html, on a ensuite converti cette page en un modèle en introduisant des variables liées notamment à l'appel des fichiers topojson et à la configuration des popups. Une fois le template prêt, on s'est attaché à remplacer ces variables en utilisant une nouvelle fois [sed] pour générer de manière dynamique la page index.html.
 
 ![ign2map html](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html.png "ign2map html"){: loading=lazy }
 {: align=middle }
@@ -185,6 +185,4 @@ Un autre article sera publié dans les prochains jours pour vous expliquer la pa
 --8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
-[GitHub Actions]: https://github.com/features/actions
-[GitHub Pages]: https://guides.github.com/features/pages/
-[YAML]: https://fr.wikipedia.org/wiki/YAML
+[sed]: https://fr.wikipedia.org/wiki/Stream_Editor
