@@ -2,28 +2,28 @@
 title: "Faire une carte en ligne (tuiles vectorielles + WebGL) 100% libre"
 authors: ["Boris MERICSKAY"]
 categories: ["article", "tutoriel"]
-date: "2021-02-16 10:20"
-description: "Description pour le SEO."
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
-tags: "mot-clé-seo1,mot-clé-seo2"
+date: "2021-02-23 10:20"
+description: "En reaction au changement de licence de MapBox, de nombreuses initiatives ont émergé, dont une très intéressante [MapLibre](https://github.com/maplibre), un fork open source de la version 1.x de MapboxGL.JS. Déjà très actif avec plus de 300 contributeurs, ce fork constitue une bonne alternative pour continuer à utiliser les fonctionnalités de MapboxGL sans dépendance aux access token et donc en s'affrichissant des limites et surtout de la monétisation."
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/finalisation.JPG"
+tags: "webmapping,tuiles vectorielles,webgl"
 
 ---
 
 # Faire une carte en ligne (tuiles vectorielles + WebGL) 100% libre
 
-:calendar: Date de publication initiale : 15 février 2021
+:calendar: Date de publication initiale : 23 février 2021
 
 **Mots-clés :** Webmapping | Tuiles vectorielles | WebGL
 
-Le recent passage de la bibliothèque Javascript MapboxGL à une [nouvelle licence d'utilistion moins ouverte](https://github.com/mapbox/mapbox-gl-js/issues/10162), et disons le fermée, pousse à repenser la dépendance des cartographes du Web à cet ecosystème innovant, fonctionnel et très efficace.
+Le recent passage de la bibliothèque Javascript MapboxGL à une [nouvelle licence d'utilisation moins ouverte](https://github.com/mapbox/mapbox-gl-js/issues/10162), et disons le fermée, pousse à repenser la dépendance des cartographes du Web à cet ecosystème innovant, fonctionnel et très efficace.
 
-En reaction à ce changement, de nombreuses initiatives ont émergé, dont une très intéressante [MapLibre](https://github.com/maplibre), un fork open source de la version 1.x de MapboxGL.js. Déjà très actif avec plus de 300 contributeurs, ce fork constitue une bonne alternative pour continuer à utiliser les fonctionnalités de MapboxGL sans dépendance aux access token et donc en s'affrichissant des limites et surtout de la monétisation.
+En reaction à ce changement, de nombreuses initiatives ont émergé, dont une très intéressante, [MapLibre](https://github.com/maplibre), un fork open source de la version 1.x de MapboxGL.JS. Déjà très actif avec plus de 300 contributeurs, ce fork constitue une bonne alternative pour continuer à utiliser les fonctionnalités de MapboxGL sans dépendance aux access token et donc en s'affranchissant des limites et surtout de la monétisation.
 
 ![maplibre gl](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/maplibre_pres.JPG "Maplibre GL"){: .img-center loading=lazy }
 
-Ce projet est très intéressant car MapLibre conserve la syntaxe de [MapboxGL.js](https://docs.mapbox.com/mapbox-gl-js/api/), et permet de mobiliser des services de **tuiles vectorielles** et des affichages 3D en **WebGL**. Du coup pas besoin de réapprendre une nouvelle syntaxte et se replonger dans une énième documentation !
+Ce projet est très intéressant car MapLibre conserve la syntaxe de [MapboxGL.JS](https://docs.mapbox.com/mapbox-gl-js/api/), et permet de mobiliser des services de **tuiles vectorielles** et des affichages 3D en **WebGL**. Du coup pas besoin de réapprendre une nouvelle syntaxte et se replonger dans une énième documentation !
 
-Nous proposons dans ce billet de **construire étape par étape une [carte Web 100% libre](https://bl.ocks.org/mastersigat/30898810b41783ffde93330b7edb3124) en mobilisant une série de services ouverts** pour construire rapidement une petite carte Web basée sur les tuiles vectorielles et le WebGL
+Nous proposons dans ce billet de **construire étape par étape une [carte Web 100% libre](https://bl.ocks.org/mastersigat/30898810b41783ffde93330b7edb3124) en mobilisant une série de services ouverts** pour construire rapidement une petite carte Web basée sur les tuiles vectorielles et le WebGL.
 
 ![carte presentation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/carte_presentation.JPG "Carte de presentation"){: .img-center loading=lazy }
 
@@ -31,16 +31,16 @@ Nous proposons dans ce billet de **construire étape par étape une [carte Web 1
 
 ## 1. Mobiliser simplement l'API de MapLibre
 
-L'entreprise [Maptiler](https://support.maptiler.com/i849-how-to-use-maplibre) propose depuis peu une URL pour accéder rapidement et sans restrictions à l'API de MapLibre.
+L'entreprise [Maptiler](https://support.maptiler.com/i849-how-to-use-maplibre) propose depuis peu une URL pour accéder rapidement et sans restriction à l'API de MapLibre.
 
 ```html
 <script src="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js"></script>
 <link href="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.css" rel="stylesheet" />
   ```
 
-Si vous avez déjà développé avec MapboxGL.js il suffit de remplacer les anciennes URL fournies par Mapbox par celles-ci, tout simplement ! A partir de là, fini les AccessToken et bonjour la liberté :)
+Si vous avez déjà développé avec MapboxGL.JS, il suffit de remplacer les anciennes URL fournies par Mapbox par celles-ci, tout simplement ! A partir de là, finis les AccessToken et bonjour la liberté :smile:
 
-Sinon voici la **structure globale pour une carte basique**
+Sinon, voici la **structure globale pour une carte basique**
 
 ![carte ba](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/carte_basique.JPG "Carte basique"){: .img-center loading=lazy }
 
@@ -86,15 +86,15 @@ var map = new mapboxgl.Map({
 
 ## 2. Mobiliser des fonds de cartes vectoriels libres
 
-Précurseurs dans la conception et l'hébergement de fond de carte en tuiles vectorielles, des entreprises comme [Mapbox](https://www.mapbox.com/), [Maptiler](https://www.maptiler.com/) ou [Jawg](https://www.jawg.io/fr/) proposent une pléthore de styles de fond de carte et des fonctionnalités de personnalisation. Pour bénéficier de ces services ilfaut toutefois payer le "prix" *via* des abonnement ou  en respectant les quotas imposés par ces fournisseurs.
+Précurseurs dans la conception et l'hébergement de fond de carte en tuiles vectorielles, des entreprises comme [Mapbox](https://www.mapbox.com/), [Maptiler](https://www.maptiler.com/) ou [Jawg](https://www.jawg.io/fr/) proposent une pléthore de styles de fond de carte et des fonctionnalités de personnalisation. Pour bénéficier de ces services il faut toutefois payer le "prix" *via* des abonnement ou en respectant les quotas imposés par ces fournisseurs.
 
 Dans la même logique que précédamment, l'idée est ici de pouvoir mobiliser des fonds de carte en tuiles vectorielles mais sans restrictions (pas de cléf d'accès) afin de ne dépendre de personne !
 
-**Il existe de plus en plus de flux de tuiles vectorielles accessibles gratuitement sans aucune restrictions.**
+**Il existe de plus en plus de flux de tuiles vectorielles accessibles gratuitement sans aucune restriction.**
 
 Cette petite [interface cartographique](https://bl.ocks.org/mastersigat/dd2e0c913391f75f9c2a0796f66cb042) permet de visualiser à la volée différents styles librement accessibles.
 
-Pour changer le **style** du fond de carte il suffit tout simplement de renseigner **l'URL du .json**
+Pour changer le **style** du fond de carte, il suffit tout simplement de renseigner **l'URL du .json**
 
 ```javascript
 style: 'URLdufonddecarte' 
@@ -104,7 +104,7 @@ style: 'URLdufonddecarte'
 
 ### Etalab
 
-[Etalab](https://www.etalab.gouv.fr/) propose plusieurs [flux de tuiles vectorielles](https://openmaptiles.geo.data.gouv.fr/) basées sur les données OSM pour les fond de carte comme des fluxs de données spatiales dédiés (cadastre, limites administrative,...).
+[Etalab](https://www.etalab.gouv.fr/) propose plusieurs [flux de tuiles vectorielles](https://openmaptiles.geo.data.gouv.fr/) basées sur les données OSM pour les fonds de carte comme des flux de données spatiales dédiés (cadastre, limites administrative,...).
 
 #### Fond de carte (Style)
 
@@ -126,7 +126,7 @@ https://openmaptiles.geo.data.gouv.fr/data/cadastre.json
 
 ### IGN
 
-L'IGN met à disposition sans restriction un [flux de tuiles vectorielles de fond carte](https://geoservices.ign.fr/documentation/services_betas/vecteur-tuile.html) basé sur ses propres données ce qui peux contituer une alternative intéressant aux données SOM dans certains cas.
+L'IGN met à disposition sans restriction un [flux de tuiles vectorielles de fond carte](https://geoservices.ign.fr/documentation/services_betas/vecteur-tuile.html) basé sur ses propres données ce qui peux contituer une alternative intéressante aux données OSM dans certains cas.
 
 #### Fond de carte (Style)
 
@@ -134,7 +134,7 @@ L'IGN met à disposition sans restriction un [flux de tuiles vectorielles de fon
 https://vectortiles.ign.fr/demonstrateur/styles/planign.json
 ```
 
-![style ign](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/ign.JPG "Styel IGN"){: .img-center loading=lazy }
+![style ign](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/ign.JPG "Style IGN"){: .img-center loading=lazy }
 
 ----
 
@@ -178,19 +178,19 @@ https://geoserveis.icgc.cat/contextmaps/positron.json
 
 ## 3. Hébérger ses données spatiales sans passer par Mapbox Studio
 
-Une fois sa carte configurée avec MapLibre et un fond de carte il est temps d'afficher ses propres données. Plusieurs options d'hébérgement de Geojson sont possibles comme un hébérgement sur un serveur FTP, toutefois le mécanisme [Cross-origin resource sharing (CORS)](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing) qui permet d'intégrer à sa carte Web des ressources externes peux s'avérer très capricieux, surtout si on est pas connaisseur...
+Une fois sa carte configurée avec MapLibre et un fond de carte, il est temps d'afficher ses propres données. Plusieurs options d'hébérgement de GeoJSON sont possibles, comme un hébérgement sur un serveur FTP, toutefois le mécanisme [Cross-origin resource sharing (CORS)](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing) qui permet d'intégrer à sa carte Web des ressources externes peux s'avérer très capricieux, surtout si on n'est pas connaisseur...
 
-L'une des alternatives les plus simples consiste à hébérger ses Geojson sur GitHub.
+L'une des alternatives les plus simples consiste à hébérger ses GeoJSON sur GitHub.
 
 ![hebergement github](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/github.JPG "Hébergement Github"){: .img-center loading=lazy }
 
-Une fois les Geojson hébergés il suffit de récupérer l'URL.
+Une fois les GeoJSON hébergés il suffit de récupérer l'URL.
 
 ![github raw](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/github_raw.JPG "Github raw"){: .img-center loading=lazy }
 
 ----
 
-Pour afficher un Geojson (hébergé sur GitHub) dans sa carte Web il suffit de **paramétrer la commande map.addSource**, concernant le map.addLayer (pour la mise en forme), la syntaxe de MapboxGL reste identique.
+Pour afficher un GeoJSON (hébergé sur GitHub) dans sa carte Web il suffit de **paramétrer la commande map.addSource**, concernant le map.addLayer (pour la mise en forme), la syntaxe de MapboxGL reste identique.
 
 ```javascript
   map.addSource('Nomdelasource', {
@@ -199,7 +199,7 @@ Pour afficher un Geojson (hébergé sur GitHub) dans sa carte Web il suffit de *
         });
 ```
 
-### Appel du geojson des stations de métro
+### Appel du GeoJSON des stations de métro
 
 ```javascript
 // Ajout stations de metros
@@ -220,7 +220,7 @@ Pour afficher un Geojson (hébergé sur GitHub) dans sa carte Web il suffit de *
                  );  
 ```
 
-### Appel du geojson des lignes de métro
+### Appel du GeoJSON des lignes de métro
 
 ```javascript
      // Ajout lignes de metros
@@ -239,15 +239,15 @@ Pour afficher un Geojson (hébergé sur GitHub) dans sa carte Web il suffit de *
      });   
 ```
 
-![ajout geojson](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/map_addsource.JPG "Ajout des GeoJson"){: .img-center loading=lazy }
+![ajout geojson](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/map_addsource.JPG "Ajout des GeoJSON"){: .img-center loading=lazy }
 
 ----
 
 ## 4. Activer la 3D !
 
-Pour appuyer cette petite démonstration il est important d'illustrer que le fait de passer à des environnements 100% libre ne vient pas forcemment altérer les capacités de rendus graphiques des cartes en ligne.
+Pour appuyer cette petite démonstration, il est important d'illustrer que le fait de passer à des environnements 100% libres ne vient pas forcément altérer les capacités de rendus graphiques des cartes en ligne.
 
-Nous allons ici extruder en 3D les bâtiments de la BDTOPO de l'IGN en se basant sur le champ *HAUTEUR* présent dans la couche (**fill-extrusion-height**). Pour accentuer le rendu visuel nous allon égallement appliquer une graduation de couleur  en se basant sur la même colonne (**fill-extrusion-color**).
+Nous allons ici extruder en 3D les bâtiments de la BDTOPO de l'IGN en se basant sur le champ *HAUTEUR* présent dans la couche (**fill-extrusion-height**). Pour accentuer le rendu visuel, nous allons également appliquer une graduation de couleur en se basant sur la même colonne (**fill-extrusion-color**).
 
 ```javascript
 //BATIMENTS EN 3D
@@ -285,13 +285,11 @@ map.addLayer({
 
 ## 5 Ajouter de l'interactivité à la carte
 
-Nous allons ici ajouter deux fonctionnalités d'intercation avec les données, à savoir une **popup** et un **menu de gestion des couches**.
-
-----
+Nous allons ici ajouter deux fonctionnalités d'interaction avec les données, à savoir une **popup** et un **menu de gestion des couches**.
 
 ### Configurer la Popup (hover)
 
-Nous voulons ajouter une Popup (fenêtre d'informations) pour afficher le nom des stations de métro qui apparaitra lorsqu'on survol (**hover**) les stations de métro. Il est aussi possible de configurer la popup avec une intercation au **clic** (sur l'objet spatial).
+Nous voulons ajouter une Popup (fenêtre d'informations) pour afficher le nom des stations de métro qui apparaitra lorsqu'on survol (**hover**) les stations de métro. Il est aussi possible de configurer la popup avec une interaction au **clic** (sur l'objet spatial).
 
 On ajoute en premier lieu quelques  **paramètres de style dans le CSS** pour que la popup soit jolie.
 
@@ -303,7 +301,7 @@ On ajoute en premier lieu quelques  **paramètres de style dans le CSS** pour qu
 }
 ```
 
-On ajoute ensuite dans le **script la fonction de popup en mode hover**. En gros ici seul l'appel de la couche et le (ou les) champ(s) à afficher dans la popup sont à modifier pour une autre utilisation.
+On ajoute ensuite dans le **script la fonction de popup en mode hover**. En gros, ici, seul l'appel de la couche et le (ou les) champ(s) à afficher dans la popup sont à modifier pour une autre utilisation.
 
 ```javascript
 //Interactivité HOVER
@@ -339,7 +337,7 @@ map.on('mousemove', function(e) {
 
 Etape la plus "compliquée", pour rendre sa carte encore plus interactive, quoi de mieux qu'un menu pour controler l'affichage des couches.
 
-On commence par **configurer le style du menu dans le CSS**
+On commence par **configurer le style du menu dans le CSS**.
 
 ```css
    .menu {
@@ -377,7 +375,7 @@ On **paramètre ensuite le menu au niveau des div**. Cette approche est bien plu
 </div>
 ```
 
-Enfin il suffit d'ajouter dans le script (à la suite) la commande qui va gérer l'affichage à la demande des couches
+Enfin, il suffit d'ajouter dans le script (à la suite) la commande qui va gérer l'affichage à la demande des couches.
 
 ```javascript
   // Configuration affichage menu couches
@@ -391,13 +389,13 @@ Enfin il suffit d'ajouter dans le script (à la suite) la commande qui va gérer
         };
 ```
 
-Voilà vous avez un menu simple mais fonctionnel :smile:
+Voilà vous avez un menu simple mais fonctionnel :smile: !
 
 ![menu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/menu.JPG "Menu"){: .img-center loading=lazy }
 
 ## 6. Finaliser l'habillage de la carte
 
-Dernière étape, habiller la carte avec un **controleur de navigation** et une **échelle**. Il suffit d'ahouter ces commandes à la fin du script.
+Dernière étape, habiller la carte avec un **controleur de navigation** et une **échelle**. Il suffit d'ajouter ces commandes à la fin du script.
 
 ```javascript
   // Ajout controle de navigation et echelle 
@@ -411,17 +409,17 @@ Votre carte en ligne en tuiles vectorielles et WebGL 100% libre est terminée !
 
 ![carte finale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/finalisation.JPG "Carte finale"){: .img-center loading=lazy }
 
-Le code complet se trouve ici [https://bl.ocks.org/mastersigat/30898810b41783ffde93330b7edb3124](https://bl.ocks.org/mastersigat/30898810b41783ffde93330b7edb3124)
+Le code complet [se trouve ici](https://bl.ocks.org/mastersigat/30898810b41783ffde93330b7edb3124).
 
 ----
 
 ## Auteur
 
-Boris Mericskay
+### Boris Mericskay
 
-![boris mericskay](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/boris_mericksay.png "Boris Mericskay"){: .img-center loading=lazy }
+![boris mericskay](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/boris_mericksay.png "Boris Mericskay"){: .img-rdp-news-thumb }
 
-Enseignant-chercheur en géographie à [l'Université Rennes 2](https://perso.univ-rennes2.fr/boris.mericskay) et co-responsable du [master en géomatique SIGAT](https://sites-formations.univ-rennes2.fr/mastersigat/), mon travail consiste à enseigner les SIG (en licence et en master) et à faire de la recherche autour des questions des données urbaines, de l'analyse spatiale et de la géovisualisation en ligne.  
+Enseignant-chercheur en géographie à [l'Université Rennes 2](https://perso.univ-rennes2.fr/boris.mericskay) et co-responsable du [master en géomatique SIGAT](https://sites-formations.univ-rennes2.fr/mastersigat/), mon travail consiste à enseigner les SIG (en licence et en master) et à faire de la recherche autour des questions des données urbaines, de l'analyse spatiale et de la géovisualisation en ligne.
 
 Passioné par les données spatiales (analyse et représentation), j'utilise essentiellement QGIS, R, Python, MapboxGL et KeplerGL. Je produis régulièrement des cartes et autres géovisualisations que je partage via mon [compte Twitter](https://twitter.com/BorisMericskay).
 
