@@ -1,11 +1,11 @@
 ---
-title: "ign2map : Du site à la carte"
+title: "ign2map : Du site à la carte en 7 étapes"
 authors: ["Florian Boret, Julien Moura"]
 categories: ["article"]
 date: 2021-02-15 11:11
-description: ""
-image: ""
-tags: bash,ign,leaflet,github
+description: "ign2map : Rendre l’expérience de téléchargement des données de l'IGN plus interactive"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html_rendu.png"
+tags: bash,ign,leaflet,github,sed,awk
 ---
 
 # ign2map : du site à la carte en 7 étapes
@@ -14,8 +14,9 @@ tags: bash,ign,leaflet,github
 
 **Mots-clés :** bash | IGN | Leaflet | sed | awk
 
-[Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button }
-{: align=middle }
+## Intro
+
+A la surprise de tous, [l'IGN annonçait l'ouverture de ses données fin 2020 pour une libération au 1er Janvier 2021](https://static.geotribu.fr/rdp/2020/rdp_2020-12-11/#ouverture-officielle-des-donnees-de-lign). Après des mois à attendre la refonte de l'espace professionnel, nous étions nombreux à penser que cette dynamique d'ouverture allait s'accompagner du lancement d'une plateforme ergonomique de téléchargement des données mais que nenni, les liens ont continué à [s'accumuler sur une page unique](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html). Dans ce contexte, on s’interrogeait en coulisse sur une manière de rendre cette masse d'informations plus lisible par tous :point_down:.
 
 ## How it started
 
@@ -23,12 +24,12 @@ tags: bash,ign,leaflet,github
 > Le 18 Janvier dans les coulisses de GéoTribu :shushing_face:
 {: align=middle }
 
-Sur le papier, la solution proposée paraissait relativement simple mais pour corser le tout on a décidé :
+La solution proposée par Julien ne paraissait pas trop complexe à mettre en oeuvre mais pour corser le tout on a décidé :
 
 - De travailler en Bash
 - De se répartir les tâches de la manière suivante :
-    - @Flo sur la construction des scripts
-    - @Ju l’enchainement des scripts et sur le déploiement
+    - [@Flo](https://static.geotribu.fr/team/fbor/) sur la construction des scripts
+    - [@Ju](https://static.geotribu.fr/team/jmou/) l’enchainement des scripts et sur le déploiement
 
 ## 1. Scraping du site de l'IGN
 
@@ -148,6 +149,9 @@ Après avoir écrit une première mouture de la page html, on a ensuite converti
 ![ign2map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html_rendu.png "ign2map"){: loading=lazy }
 {: align=middle }
 
+[Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button }
+{: align=middle }
+
 ----
 
 ## La publication
@@ -158,6 +162,10 @@ On doit avouer :
 - qu'on ne s'attendait pas à un tel retentissement
 
 ![Tweet IGN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_tweet_ign.png "Tweet IGN"){: loading=lazy .img-center }
+
+## La suite
+
+Un autre article sera publié dans les prochains jours pour vous expliquer la partie sur l'automatisation et le déploiement depuis Github. Restez connectés à [GeoTribu](https://static.geotribu.fr) :wink:.
 
 ----
 
