@@ -32,7 +32,8 @@ Sur le papier, la solution proposée paraissait relativement simple mais pour co
 
 ## 1. Scraping du site de l'IGN
 
-[Le scraping](https://fr.wikipedia.org/wiki/Web_scraping) est une technique qui permet de récupérer le contenu d'une page web en vue de le réutiliser. On a donc scrapé le site de l'[IGN](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html) pour en extraire tous les liens qui s'y trouvaient (ftp, https et http) et on les a ensuite stocké dans un fichier texte.
+[Le scraping](https://fr.wikipedia.org/wiki/Web_scraping) est une technique qui permet de récupérer le contenu d'une page web en vue de le réutiliser (voir aussi [cet article](/articles/2021/2021-02-09_statistiques_twitter/) ou [celui-ci](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/)).  
+On a donc scrapé le site de l'[IGN](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html) pour en extraire tous les liens qui s'y trouvaient (ftp, https et http) et on les a ensuite stockés dans un fichier texte.
 
 Solutions utilisées :
 
@@ -44,9 +45,13 @@ curl "$SOURCE_URL" | \
   grep -oE '\b(https?|ftp|file)://[-A-Za-z0-9+&@# /%?=~_|!:,.;]*[-A-Za-z0-9+&@# /%=~_|]' > "$OUTPUT_FILE"
 ```
 
-[Consulter le script complet](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/1_scraper.sh)
+![Liens IGN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_liens_ign.png "Liens IGN"){: loading=lazy }
+{: align=middle }
 
-![Liens IGN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_liens_ign.png "Liens IGN"){: loading=lazy .img-center }
+[Consulter le script complet :fontawesome-regular-file-code:](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/1_scraper.sh){: .md-button }
+{: align=middle }
+
+----
 
 ## 2. Extraction des fichiers par département, région et pour la France
 
@@ -61,9 +66,13 @@ Une fois tous les liens extraits, on a :
 grep -E "D$val|DEP_$val" $SOURCE_FILE | awk '{ printf("%s,D'$val_t'\n", $0); }' > "$OUTPUT_DIR/D$val_t.csv"
 ```
 
-[Consulter le script complet](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/2_departements.sh)
+![Liens IGN par id](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_liens_ign_id.png "Liens IGN par id"){: loading=lazy }
+{: align=middle }
 
-![Liens IGN par id](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_liens_ign_id.png "Liens IGN par id"){: loading=lazy .img-center }
+[Consulter le script complet :fontawesome-regular-file-code:](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/2_departements.sh){: .md-button }
+{: align=middle }
+
+----
 
 ## 3. Nettoyage des liens (format, doublons)
 
@@ -82,19 +91,27 @@ On a donc utilisé :
 cat "$INPUT_DIR"/2_departements/*csv | sort -u | grep -F '.7z' > "$OUTPUT_DIR/3_liens_par_dep_clean_ext.csv"
 ```
 
-[Consulter le script complet](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/3_filtered_csv.sh)
-
 En sortie on obtient, on obtient un fichier csv propre par découpage géographique.
 
-![Liens IGN propres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_liens_propres.png "Liens IGN propres"){: loading=lazy .img-center }
+![Liens IGN propres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_liens_propres.png "Liens IGN propres"){: loading=lazy }
+{: align=middle }
+
+[Consulter le script complet :fontawesome-regular-file-code:](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/3_filtered_csv.sh){: .md-button }
+{: align=middle }
+
+----
 
 ## 4. Mise en forme des données avant jointure
 
 Les liens étant proprement organisés, nous avons ensuite généré un fichier csv par produit IGN (BDORTHO, BDFORET,...) en réalisant également une transposition par identifiant géographique afin de faciliter la jointure prévue après.
 
-[Consulter le script complet](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/4_csv_type.sh)
+![Liens IGN type](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_liens_transposition.png "Liens IGN type"){: loading=lazy }
+{: align=middle }
 
-![Liens IGN type](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_liens_transposition.png "Liens IGN type"){: loading=lazy .img-center }
+[Consulter le script complet :fontawesome-regular-file-code:](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/4_csv_type.sh){: .md-button }
+{: align=middle }
+
+----
 
 ## 5. Création des topojson
 
@@ -102,11 +119,16 @@ Les liens étant proprement organisés, nous avons ensuite généré un fichier 
 
 A noter la donnée ADMIN EXPRESS n'intègre pas les collectivités d'outre mer (COM). On a donc du compléter ce manque en utilisant le fichier suivant disponible sur [Data.gouv.fr](https://www.data.gouv.fr/) : [Découpage administratif des COM St Martin et St Barthélemy "Format Admin-Express"](https://www.data.gouv.fr/fr/datasets/decoupage-administratif-des-com-st-martin-et-st-barthelemy-format-admin-express/) mis à disposition par R. Maziere.
 
+----
+
 ## 6. Jointure avec les topojson
 
 L'étape de la jointure en bash a sans aucun doute été l'étape la plus prise de tête. Pour faire simple on a utilisé [sed](https://fr.wikipedia.org/wiki/Stream_Editor) pour remplacer l'identifiant géographique de notre topojson source par notre identifiant géographique et les liens associés. En sortie, les nouveaux fichiers topojson ont ensuite été placés dans un répertoire utilisé par la page html de la carte.
 
-[Consulter le script complet](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/5_join_csv_topojson.sh)
+[Consulter le script complet :fontawesome-regular-file-code:](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/5_join_csv_topojson.sh){: .md-button }
+{: align=middle }
+
+----
 
 ## 7. Création automatique du fichier index.html
 
@@ -114,14 +136,17 @@ Pour cette dernière étape, l'idée était de pouvoir générer automatiquement
 
 Après avoir écrit une première mouture de la page html, on a ensuite converti cette page en un modèle en introduisant des variables liées notamment à l'appel des fichiers topojson et à la configuration des popups. Une fois le template prêt, on s'est attaché à remplacer ces variables en utilisant une nouvelle fois [sed](https://fr.wikipedia.org/wiki/Stream_Editor) pour générer de manière dynamique la page index.html.
 
-[Consulter le script complet](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/6_create_html.sh)
+![ign2map html](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html.png "ign2map html"){: loading=lazy }
+{: align=middle }
 
-![ign2map html](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html.png "ign2map html"){: loading=lazy .img-center }
+[Consulter le script complet :fontawesome-regular-file-code:](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/6_create_html.sh){: .md-button }
+{: align=middle }
 
 !!! tip "Lire des topojson avec Leaflet"
-  Dans Leaflet, il est possible de lire des fichiers topojson en utilisant l'extension [leaflet-omnivore](https://github.com/mapbox/leaflet-omnivore).
+    Dans Leaflet, il est possible de lire des fichiers topojson en utilisant l'extension [leaflet-omnivore](https://github.com/mapbox/leaflet-omnivore).
 
-![ign2map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html_rendu.png "ign2map"){: loading=lazy .img-center }
+![ign2map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html_rendu.png "ign2map"){: loading=lazy }
+{: align=middle }
 
 ----
 
