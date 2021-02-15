@@ -68,7 +68,7 @@ curl "$SOURCE_URL" | \
 Une fois tous les liens extraits, on a :
 
 1. lu notre fichier texte pour ne conserver que les liens possédant un identifiant par exemple pour les départements : D001, D976,...
-2. exporté le résultat dans des fichiers csv séparés pour chacun des identifiant en prenant le soin d'ajouter une colonne avec l'identifiant.
+2. exporté le résultat dans des fichiers csv séparés pour chacun des identifiants en prenant le soin d'ajouter une colonne avec l'identifiant.
 
 *Cette étape a été répétée pour les régions et pour la France.*
 
@@ -174,7 +174,7 @@ On doit avouer :
 
 ## La suite
 
-Un autre article sera publié dans les prochains jours pour vous expliquer la partie sur l'automatisation et le déploiement depuis Github. Restez connectés à [GeoTribu](https://static.geotribu.fr) :wink:.
+Un autre article sera publié dans les prochains jours pour vous expliquer la partie sur l'automatisation et le déploiement depuis Github. Restez connectés à [GeoTribu](https://static.geotribu.fr) ([LinkedIn](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) - [RSS](https://static.geotribu.fr/feed_rss_created.xml) - [Twitter](https://twitter.com/geotribu)) :wink:.
 
 ----
 

@@ -113,8 +113,8 @@ extra:
       link: 'https://github.com/geotribu/'
       name: "L'organisation Github de Geotribu"
     - icon: 'fontawesome/brands/twitter'
-      link: 'https://twitter.com/search?q=%23GeoRDP&src=typed_query&f=live'
-      name: "La #GeoRDP de Geotribu sur Twitter"
+      link: 'https://twitter.com/geotribu'
+      name: "Geotribu sur Twitter"
     - icon: 'fontawesome/brands/linkedin'
       link: 'https://www.linkedin.com/feed/hashtag/?keywords=geotribu'
       name: "Les contenus de Geotribu sur LinkedIn"
