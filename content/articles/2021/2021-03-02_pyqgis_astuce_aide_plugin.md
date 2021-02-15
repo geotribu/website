@@ -1,5 +1,5 @@
 ---
-title: "Gérer facilement l'aide de son plugin QGIS"
+title: "Afficher facilement l'aide de son plugin QGIS"
 authors: ["Julien MOURA"]
 categories: ["article", "tutoriel"]
 date: "2021-03-02 10:20"
@@ -70,18 +70,16 @@ Une fois que tout cela est en place, il reste à brancher notre menu d'aide sur 
 
 Quelque part dans les imports :
 
-```python
+```python hl_lines="4"
+# imports
+from qgis.core import QgsApplication
+from qgis.PyQt.QtGui import QIcon
 from qgis.utils import showPluginHelp
 ```
 
 Quelque part dans la définition du [menu défini dans un précédent tuto](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/#recycler-les-icones-de-linterface-de-qgis) :
 
-
-```python hl_lines="17"
-# imports
-from qgis.core import QgsApplication
-from qgis.PyQt.QtGui import QIcon
-
+```python hl_lines="23 24 25"
 [...]
 
 class PluginGeotribu:
@@ -107,9 +105,12 @@ class PluginGeotribu:
         self.action_menu_help.triggered.connect(
                 lambda: showPluginHelp(filename="doc/index")
             )
-
 ```
 
+A clic sur le menu, QGIS ouvre le fichier index.html dans le navigateur par défaut du système, qui va rediriger vers votre documentation en ligne.
+
+!!! tip
+    A noter que cela gère le multilinguisme en utilisant le code de langue (*locale*) comme suffixe. Par exemple : `index-fr.html` sera ouvert en priorité si QGIS est défini en français.
 
 ----
 
