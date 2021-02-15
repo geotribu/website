@@ -30,7 +30,6 @@ Sur le papier, la solution proposée paraissait relativement simple mais pour co
     - @Flo sur la construction des scripts
     - @Ju l’enchainement des scripts et sur le déploiement
 
-
 ## 1. Scraping du site de l'IGN
 
 [Le scraping](https://fr.wikipedia.org/wiki/Web_scraping) est une technique qui permet de récupérer le contenu d'une page web en vue de le réutiliser. On a donc scrapé le site de l'[IGN](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html) pour en extraire tous les liens qui s'y trouvaient (ftp, https et http) et on les a ensuite stocké dans un fichier texte.
