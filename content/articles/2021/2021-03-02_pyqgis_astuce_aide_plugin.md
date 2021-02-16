@@ -3,12 +3,12 @@ title: "Afficher facilement l'aide de son plugin QGIS"
 authors: ["Julien MOURA"]
 categories: ["article", "tutoriel"]
 date: "2021-03-02 10:20"
-description: "XXXXXXXXXXXXXXXXXX"
+description: "Petite astuce dans le développement de plugins QGIS : rediriger facilement l'utilisateur final vers la documentation en ligne."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_show_help/documentation_le-chat.jpg"
 tags: "geotribu,QGIS,plugin,documentation,help"
 ---
 
-# Utiliser les icônes intégrées de QGIS pour égayer ses plugins
+# Plugin QGIS : rediriger facilement vers l'aide en ligne
 
 :calendar: Date de publication initiale : 02 mars 2021
 
