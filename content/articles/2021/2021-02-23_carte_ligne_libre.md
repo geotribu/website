@@ -3,7 +3,7 @@ title: "Faire une carte en ligne (tuiles vectorielles + WebGL) 100% libre"
 authors: ["Boris MERICSKAY"]
 categories: ["article", "tutoriel"]
 date: "2021-02-23 10:20"
-description: "En reaction au changement de licence de MapBox, de nombreuses initiatives ont émergé, dont une très intéressante [MapLibre](https://github.com/maplibre), un fork open source de la version 1.x de MapboxGL.JS. Déjà très actif avec plus de 300 contributeurs, ce fork constitue une bonne alternative pour continuer à utiliser les fonctionnalités de MapboxGL sans dépendance aux access token et donc en s'affrichissant des limites et surtout de la monétisation."
+description: "En réaction au changement de licence de MapBox, de nombreuses initiatives ont émergé, dont une très intéressante : MapLibre. Voici un tutoriel complet pour l'utiliser pour créer une carte web interactive 100% libre, en continuant à utiliser les fonctionnalités de MapboxGL sans dépendance aux jetons d'accès."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/finalisation.JPG"
 tags: "webmapping,tuiles vectorielles,webgl"
 ---
