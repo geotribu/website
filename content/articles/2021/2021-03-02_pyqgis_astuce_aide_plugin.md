@@ -29,7 +29,7 @@ Si vous n'avez pas d'aide en ligne, de documentation, de wiki sur le dépôt Git
 ![Documentation Le Chat](https://cdn.geotribu.fr/img/tuto/qgis_plugin_show_help/documentation_le-chat.jpg "Documentation Le Chat"){: loading=lazy }
 {: align=middle }
 
-Pour la suite de ce tutoriel, considérons que l'aide en ligne de notre plugin est disponibe en français et an anglais, dont les adresses URLs seraient :
+Pour la suite de ce tutoriel, considérons que l'aide en ligne de notre plugin est disponibe en français et en anglais, dont les adresses URLs seraient :
 
 - :fr: la fiche métier "M1808 Information Géographique" du registre ROME[^1] :
 
@@ -47,23 +47,23 @@ Pour la suite de ce tutoriel, considérons que l'aide en ligne de notre plugin e
 
 ![icône HTML5](https://cdn.geotribu.fr/img/logos-icones/programmation/html5.png "icône HTML5"){: .img-rdp-news-thumb }
 
-Le multilinguisme est géré en utilisant le code de langue (*locale*), renvoyé par l'application Qt (en l'occurrencee QGIS) comme suffixe. Par exemple : `index-fr.html` sera ouvert en priorité si QGIS est défini en français.
+Le multilinguisme est géré en utilisant le code de langue (*locale*), renvoyé par l'application Qt (en l'occurrencee QGIS) comme suffixe. Par exemple : `index-fr.html` sera ouvert en priorité si QGIS est défini en français. En dernier recours, si présent, c'est le fichier sans suffixe qui est ouvert `index.html`.
 
-A l'intérieur de l'arborescence de notre plugin, on crée un fichier `docs/index.html` dans lequel on écrit simplement une [redirection HTTP](https://developer.mozilla.org/fr/docs/Web/HTTP/Status/301) :
+A l'intérieur de l'arborescence de notre plugin, on crée donc un fichier `docs/index-fr.html` dans lequel on écrit simplement une [redirection HTTP](https://developer.mozilla.org/fr/docs/Web/HTTP/Status/301) :
 
-```htmlmixed
+```html
 <!doctype html>
 <html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <title>Redirecting...</title>
+    <title>Redirection en cours...</title>
     <script>var anchor = window.location.hash.substr(1); location.href = "https://candidat.pole-emploi.fr/marche-du-travail/fichemetierrome?codeRome=M1808/"</script>
 </head>
 
 <body>
 
-    <p>Redirection to the online documentation...</p>
+    <p>Redirection vers la documentation en ligne...</p>
 
 </body>
 
@@ -72,7 +72,7 @@ A l'intérieur de l'arborescence de notre plugin, on crée un fichier `docs/inde
 
 Et un fichier `doc/index-en.html` :
 
-```htmlmixed
+```html
 <!doctype html>
 <html lang="fr">
 
@@ -138,7 +138,7 @@ class PluginGeotribu:
             )
 ```
 
-A clic sur le menu, QGIS ouvre le fichier index.html dans le navigateur par défaut du système, qui va rediriger vers votre documentation en ligne.
+Au clic sur le menu, QGIS ouvre le fichier `index-fr.html` (si son interface est en français ou `index-en.html` si elle est en anglais dans le navigateur par défaut du système, qui va rediriger vers votre documentation en ligne :sparkler:.
 
 ----
 
@@ -146,6 +146,9 @@ A clic sur le menu, QGIS ouvre le fichier index.html dans le navigateur par déf
 
 Ce que j'aime bien dans cette façon de faire c'est que ça tient en un seul fichier HTML et 2 lignes de Python.  
 C'est pas cher payé pour orienter facilement vos utilisateur/ices vers la documentation que vous avez mis tant de soin à rédiger (et qu'ils/elles prendront bien soin de survoler) !
+
+!!! tip
+    A noter que la fonction `showPluginHelp` est aussi valable si la documentation est stockée dans le plugin.
 
 ----
 
