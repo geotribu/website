@@ -14,9 +14,11 @@ tags: "webmapping,tuiles vectorielles,webgl"
 
 **Mots-clés :** Webmapping | Tuiles vectorielles | WebGL
 
+## Introduction
+
 Le recent passage de la bibliothèque Javascript MapboxGL à une [nouvelle licence d'utilisation moins ouverte](https://github.com/mapbox/mapbox-gl-js/issues/10162), et disons le fermée, pousse à repenser la dépendance des cartographes du Web à cet ecosystème innovant, fonctionnel et très efficace.
 
-En reaction à ce changement, de nombreuses initiatives ont émergé, dont une très intéressante, [MapLibre](https://github.com/maplibre), un fork open source de la version 1.x de MapboxGL.JS. Déjà très actif avec plus de 300 contributeurs, ce fork constitue une bonne alternative pour continuer à utiliser les fonctionnalités de MapboxGL sans dépendance aux access token et donc en s'affranchissant des limites et surtout de la monétisation.
+En réaction à ce changement, de nombreuses initiatives ont émergé, dont une très intéressante, [MapLibre](https://github.com/maplibre), un fork open source de la version 1.x de MapboxGL.JS. Déjà très actif avec plus de 300 contributeurs, ce fork constitue une bonne alternative pour continuer à utiliser les fonctionnalités de MapboxGL sans dépendance aux jetons d'accès (*access token*) de MapBox et en s'affranchissant donc des limites de l'éditeur et surtout de la monétisation.
 
 ![maplibre gl](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/maplibre_pres.JPG "Maplibre GL"){: .img-center loading=lazy }
 
@@ -35,7 +37,7 @@ L'entreprise [Maptiler](https://support.maptiler.com/i849-how-to-use-maplibre) p
 ```html
 <script src="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js"></script>
 <link href="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.css" rel="stylesheet" />
-  ```
+```
 
 Si vous avez déjà développé avec MapboxGL.JS, il suffit de remplacer les anciennes URL fournies par Mapbox par celles-ci, tout simplement ! A partir de là, finis les AccessToken et bonjour la liberté :smile:
 
@@ -85,9 +87,9 @@ var map = new mapboxgl.Map({
 
 ## 2. Mobiliser des fonds de cartes vectoriels libres
 
-Précurseurs dans la conception et l'hébergement de fond de carte en tuiles vectorielles, des entreprises comme [Mapbox](https://www.mapbox.com/), [Maptiler](https://www.maptiler.com/) ou [Jawg](https://www.jawg.io/fr/) proposent une pléthore de styles de fond de carte et des fonctionnalités de personnalisation. Pour bénéficier de ces services il faut toutefois payer le "prix" *via* des abonnement ou en respectant les quotas imposés par ces fournisseurs.
+Précurseurs dans la conception et l'hébergement de fond de carte en tuiles vectorielles, des entreprises comme [Mapbox](https://www.mapbox.com/), [Maptiler](https://www.maptiler.com/) ou [Jawg](https://www.jawg.io/fr/) proposent une pléthore de styles de fond de carte et des fonctionnalités de personnalisation. Pour bénéficier de ces services il faut toutefois payer le "prix" *via* des abonnements ou en respectant les quotas imposés par ces fournisseurs.
 
-Dans la même logique que précédamment, l'idée est ici de pouvoir mobiliser des fonds de carte en tuiles vectorielles mais sans restrictions (pas de cléf d'accès) afin de ne dépendre de personne !
+Dans la même logique que précédemment, l'idée est ici de pouvoir mobiliser des fonds de carte en tuiles vectorielles mais sans restrictions (sans clé d'accès) afin de ne dépendre de personne !
 
 **Il existe de plus en plus de flux de tuiles vectorielles accessibles gratuitement sans aucune restriction.**
 
@@ -107,7 +109,7 @@ style: 'URLdufonddecarte'
 
 #### Fond de carte (Style)
 
-``` javascript
+```javascript
 https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json
 ```
 
@@ -115,7 +117,7 @@ https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json
 
 #### Flux de données thématiques (données OSM, contours administratifs et cadastre)
 
-``` javascript
+```javascript
 https://openmaptiles.geo.data.gouv.fr/data/france-vector.json
 https://openmaptiles.geo.data.gouv.fr/data/decoupage-administratif.json
 https://openmaptiles.geo.data.gouv.fr/data/cadastre.json
@@ -189,7 +191,7 @@ Une fois les GeoJSON hébergés il suffit de récupérer l'URL.
 
 ----
 
-Pour afficher un GeoJSON (hébergé sur GitHub) dans sa carte Web il suffit de **paramétrer la commande map.addSource**, concernant le map.addLayer (pour la mise en forme), la syntaxe de MapboxGL reste identique.
+Pour afficher un GeoJSON (hébergé sur GitHub) dans sa carte Web il suffit de **paramétrer la commande `map.addSource`**, concernant le `map.addLayer` (pour la mise en forme), la syntaxe de MapboxGL reste identique.
 
 ```javascript
   map.addSource('Nomdelasource', {
@@ -246,7 +248,7 @@ Pour afficher un GeoJSON (hébergé sur GitHub) dans sa carte Web il suffit de *
 
 Pour appuyer cette petite démonstration, il est important d'illustrer que le fait de passer à des environnements 100% libres ne vient pas forcément altérer les capacités de rendus graphiques des cartes en ligne.
 
-Nous allons ici extruder en 3D les bâtiments de la BDTOPO de l'IGN en se basant sur le champ *HAUTEUR* présent dans la couche (**fill-extrusion-height**). Pour accentuer le rendu visuel, nous allons également appliquer une graduation de couleur en se basant sur la même colonne (**fill-extrusion-color**).
+Nous allons ici extruder en 3D les bâtiments de la BDTOPO de l'IGN en se basant sur le champ `HAUTEUR` présent dans la couche (`fill-extrusion-height`). Pour accentuer le rendu visuel, nous allons également appliquer une graduation de couleur en se basant sur la même colonne (`fill-extrusion-color`).
 
 ```javascript
 //BATIMENTS EN 3D
@@ -284,13 +286,16 @@ map.addLayer({
 
 ## 5 Ajouter de l'interactivité à la carte
 
-Nous allons ici ajouter deux fonctionnalités d'interaction avec les données, à savoir une **popup** et un **menu de gestion des couches**.
+Nous allons ici ajouter deux fonctionnalités d'interaction avec les données :
+
+- une popup
+- un menu de gestion des couches
 
 ### Configurer la Popup (hover)
 
-Nous voulons ajouter une Popup (fenêtre d'informations) pour afficher le nom des stations de métro qui apparaitra lorsqu'on survol (**hover**) les stations de métro. Il est aussi possible de configurer la popup avec une interaction au **clic** (sur l'objet spatial).
+Nous voulons ajouter une Popup (fenêtre d'informations) pour afficher le nom des stations de métro qui apparaitra au survol (*hover*) des stations de métro. Il est aussi possible de configurer la popup avec une interaction au clic (sur l'objet spatial).
 
-On ajoute en premier lieu quelques  **paramètres de style dans le CSS** pour que la popup soit jolie.
+On ajoute en premier lieu quelques **paramètres de style dans le CSS** pour que la popup soit jolie.
 
 ```CSS
 .Mypopup .mapboxgl-popup-content {
@@ -325,7 +330,6 @@ map.on('mousemove', function(e) {
         .addTo(map);
 
 });
-
 ```
 
 ![popup](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/popup.JPG "Ajout du popup"){: .img-center loading=lazy }
@@ -350,7 +354,6 @@ On commence par **configurer le style du menu dans le CSS**.
      font: 13px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
      padding:10;
         }
-
 ```
 
 On **paramètre ensuite le menu au niveau des div**. Cette approche est bien plus simple car on **configure sa structure directement en HTML**. Les plus aguerris en développement Web préférerons le CSS :wink:
