@@ -29,15 +29,25 @@ Si vous n'avez pas d'aide en ligne, de documentation, de wiki sur le dépôt Git
 ![Documentation Le Chat](https://cdn.geotribu.fr/img/tuto/qgis_plugin_show_help/documentation_le-chat.jpg "Documentation Le Chat"){: loading=lazy }
 {: align=middle }
 
-Pour la suite de ce tutoriel, considérons que l'aide en ligne de notre plugin est la fiche métier "M1808 Information Géographique" du registre ROME[^1] :
+Pour la suite de ce tutoriel, considérons que l'aide en ligne de notre plugin est disponibe en français et an anglais, dont les adresses URLs seraient :
 
-```txt
-https://candidat.pole-emploi.fr/marche-du-travail/fichemetierrome?codeRome=M1808
-```
+- :fr: la fiche métier "M1808 Information Géographique" du registre ROME[^1] :
+
+    ```txt
+    https://candidat.pole-emploi.fr/marche-du-travail/fichemetierrome?codeRome=M1808
+    ```
+
+- :gb: la fiche Wikipédia *GIS* :
+
+    ```txt
+    https://en.wikipedia.org/wiki/Geographic_information_system
+    ```
 
 ## Créer la redirection 301
 
 ![icône HTML5](https://cdn.geotribu.fr/img/logos-icones/programmation/html5.png "icône HTML5"){: .img-rdp-news-thumb }
+
+Le multilinguisme est géré en utilisant le code de langue (*locale*), renvoyé par l'application Qt (en l'occurrencee QGIS) comme suffixe. Par exemple : `index-fr.html` sera ouvert en priorité si QGIS est défini en français.
 
 A l'intérieur de l'arborescence de notre plugin, on crée un fichier `docs/index.html` dans lequel on écrit simplement une [redirection HTTP](https://developer.mozilla.org/fr/docs/Web/HTTP/Status/301) :
 
@@ -49,6 +59,27 @@ A l'intérieur de l'arborescence de notre plugin, on crée un fichier `docs/inde
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>var anchor = window.location.hash.substr(1); location.href = "https://candidat.pole-emploi.fr/marche-du-travail/fichemetierrome?codeRome=M1808/"</script>
+</head>
+
+<body>
+
+    <p>Redirection to the online documentation...</p>
+
+</body>
+
+</html>
+```
+
+Et un fichier `doc/index-en.html` :
+
+```htmlmixed
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>var anchor = window.location.hash.substr(1); location.href = "https://en.wikipedia.org/wiki/Geographic_information_system/"</script>
 </head>
 
 <body>
@@ -108,9 +139,6 @@ class PluginGeotribu:
 ```
 
 A clic sur le menu, QGIS ouvre le fichier index.html dans le navigateur par défaut du système, qui va rediriger vers votre documentation en ligne.
-
-!!! tip
-    A noter que cela gère le multilinguisme en utilisant le code de langue (*locale*) comme suffixe. Par exemple : `index-fr.html` sera ouvert en priorité si QGIS est défini en français.
 
 ----
 
