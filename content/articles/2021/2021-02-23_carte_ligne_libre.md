@@ -6,7 +6,6 @@ date: "2021-02-23 10:20"
 description: "En reaction au changement de licence de MapBox, de nombreuses initiatives ont émergé, dont une très intéressante [MapLibre](https://github.com/maplibre), un fork open source de la version 1.x de MapboxGL.JS. Déjà très actif avec plus de 300 contributeurs, ce fork constitue une bonne alternative pour continuer à utiliser les fonctionnalités de MapboxGL sans dépendance aux access token et donc en s'affrichissant des limites et surtout de la monétisation."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/finalisation.JPG"
 tags: "webmapping,tuiles vectorielles,webgl"
-
 ---
 
 # Faire une carte en ligne (tuiles vectorielles + WebGL) 100% libre
@@ -46,7 +45,7 @@ Sinon, voici la **structure globale pour une carte basique**
 
 ```html
 <html>
-  
+
 <head>
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
   <script src="https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js"></script>
@@ -58,26 +57,26 @@ Sinon, voici la **structure globale pour une carte basique**
 
 </head>
 
-<body> 
-    
+<body>
+
   <div id="map"></div>
-   
+
 <script>
-   
+
       //Appel et configuration de la carte
-    
+
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json', //Fond de carte 
+  style: 'https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json', //Fond de carte
   zoom: 15.3, // Zoom
-  center: [-1.68, 48.106],  // Centrage 
-  pitch: 60, // Inclinaison 
-  bearing: -50,  // Rotation 
+  center: [-1.68, 48.106],  // Centrage
+  pitch: 60, // Inclinaison
+  bearing: -50,  // Rotation
   minZoom:14.5  // Zoom min
     });
-    
+
 </script>
-    
+
 </body>
 </html>
 ```
@@ -97,7 +96,7 @@ Cette petite [interface cartographique](https://bl.ocks.org/mastersigat/dd2e0c91
 Pour changer le **style** du fond de carte, il suffit tout simplement de renseigner **l'URL du .json**
 
 ```javascript
-style: 'URLdufonddecarte' 
+style: 'URLdufonddecarte'
 ```
 
 ----
@@ -203,7 +202,7 @@ Pour afficher un GeoJSON (hébergé sur GitHub) dans sa carte Web il suffit de *
 
 ```javascript
 // Ajout stations de metros
-  
+
   map.addSource('StationsGIT', {
             type: 'geojson',
             data: 'https://raw.githubusercontent.com/mastersigat/data/main/metro-du-reseau-star-localisation-des-stations.geojson'
@@ -213,8 +212,8 @@ Pour afficher un GeoJSON (hébergé sur GitHub) dans sa carte Web il suffit de *
             'id': 'Stations',
             'type': 'circle',
             'source': 'StationsGIT',
-            'paint': {'circle-stroke-color': 'white', 
-                      'circle-stroke-width': 3, 
+            'paint': {'circle-stroke-color': 'white',
+                      'circle-stroke-width': 3,
                       'circle-radius' : 6,
                       'circle-color': '#0074D9'}}
                  );  
@@ -224,7 +223,7 @@ Pour afficher un GeoJSON (hébergé sur GitHub) dans sa carte Web il suffit de *
 
 ```javascript
      // Ajout lignes de metros
-  
+
      map.addSource('lignesGIT', {
             type: 'geojson',
             data: 'https://raw.githubusercontent.com/mastersigat/data/main/metro-du-reseau-star-traces-de-laxe-des-lignes.geojson'
@@ -236,7 +235,7 @@ Pour afficher un GeoJSON (hébergé sur GitHub) dans sa carte Web il suffit de *
             'source': 'lignesGIT',
             'paint': {'line-opacity': 0.7, 'line-width': 7,
                      'line-color': '#0074D9'}
-     });   
+     });  
 ```
 
 ![ajout geojson](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/map_addsource.JPG "Ajout des GeoJSON"){: .img-center loading=lazy }
@@ -256,12 +255,12 @@ map.addSource('Batiments', {
         type: 'geojson',
         data: 'https://raw.githubusercontent.com/mastersigat/data/main/BatiRennes.geojson'
     });
- 
+
 map.addLayer({
     'id': 'Batiments',
     'type': 'fill-extrusion',
     'source': 'Batiments',
-    'paint': 
+    'paint':
         {'fill-extrusion-height':{'type': 'identity','property': 'HAUTEUR'},
         'fill-extrusion-color': {
         'property': 'HAUTEUR',
@@ -319,7 +318,7 @@ map.on('mousemove', function(e) {
     if (!features.length) {
         popup.remove();
         return; }
- 
+
     var feature = features[0];
         popup.setLngLat(feature.geometry.coordinates)
           .setHTML('<b>'+ feature.properties.nom + '</b>')
@@ -351,7 +350,7 @@ On commence par **configurer le style du menu dans le CSS**.
      font: 13px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
      padding:10;
         }
-                
+
 ```
 
 On **paramètre ensuite le menu au niveau des div**. Cette approche est bien plus simple car on **configure sa structure directement en HTML**. Les plus aguerris en développement Web préférerons le CSS :wink:
@@ -379,7 +378,7 @@ Enfin, il suffit d'ajouter dans le script (à la suite) la commande qui va gére
 
 ```javascript
   // Configuration affichage menu couches
-  
+
  switchlayer = function (lname) {
             if (document.getElementById(lname ).checked) {
                 map.setLayoutProperty(lname, 'visibility', 'visible');
@@ -398,10 +397,10 @@ Voilà vous avez un menu simple mais fonctionnel :smile: !
 Dernière étape, habiller la carte avec un **controleur de navigation** et une **échelle**. Il suffit d'ajouter ces commandes à la fin du script.
 
 ```javascript
-  // Ajout controle de navigation et echelle 
-  
+  // Ajout controle de navigation et echelle
+
 map.addControl(new mapboxgl.NavigationControl({position: 'top-left'}));  
-  
+
 map.addControl(new mapboxgl.ScaleControl({position: 'bottom-right'}));
 ```
 
