@@ -1,16 +1,16 @@
 ---
-title: "Présentation de Geotribu sur les Reclus aux COnfins"
+title: "Présentation de Geotribu sur les Reclus aux Confins"
 authors: ["Geotribu"]
 categories: ["article"]
-date: 2021-02-16 22:22
-description: "XXXXXXXXXXXXXXXXXXXXXXXXX"
+date: 2021-02-18 14:00
+description: "Les Reclus aux Confins : Découvrir ou redécouvrir la présentation de GeoTribu - Contributions ouvertes à tous"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/presentation_reclus_confins/GeoTribu_1.jpeg"
 tags: geotribu,communauté,reclus aux confins,twitch
 ---
 
 # Au-delà des Confins : le replay des Reclus sur Geotribu
 
-:calendar: Date de publication initiale : 16 Février 2021
+:calendar: Date de publication initiale : 18 Février 2021
 
 **Mots-clés :** Geotribu | communauté | Reclus aux Confins | Twitch
 
@@ -20,7 +20,7 @@ On revient avec un format moins formel, plus Twitch mais tout aussi carto-centr�
 
 Fin 2020, [Romain Mejean](https://twitter.com/r_mejean) soumettait [l'idée d'organiser d'éventuels café-géo-visio-zoom-twitch de confinés](https://twitter.com/r_mejean/status/1325486798768910337?s=20). Quelques semaines plus tard, la proposition avait fait son chemin et elle a pu se concrétiser en Janvier avec la tenue d'une première géovisioconférence des [Reclus aux Confins](https://twitter.com/reclus_confins) qui s'est aujourd'hui imposée comme un évènement hebdomadaire :clap:.
 
-Dès le départ au sein de GéoTribu, on a eu envie de se risquer au live [Twitch](https://www.twitch.tv/confins) pour vous présenter le projet à travers un nouveau canal. C'est donc Florian qui s'est prêté au jeu et on vous propose de découvrir ou redécouvrir cette présentation.
+Dès le départ au sein de GéoTribu, on a eu envie de se risquer au live [Twitch](https://www.twitch.tv/confins) pour vous présenter le projet à travers un nouveau canal. C'est donc Florian qui s'est prêté au jeu et à travers cet article, on vous propose de découvrir ou redécouvrir cette présentation : GeoTribu - Contributions ouvertes à tous.
 
 ## La présentation
 
