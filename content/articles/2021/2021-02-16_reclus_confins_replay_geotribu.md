@@ -28,10 +28,7 @@ Dès le départ au sein de GéoTribu, on a eu envie de se risquer au live [Twitc
 
 ## Le replay vidéo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fB1dVOVbkME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!-- Hyperlinks reference -->
-[sed]: https://fr.wikipedia.org/wiki/Stream_Editor
+<iframe width="700" height="400" src="https://www.youtube.com/embed/fB1dVOVbkME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Conclusion
 
