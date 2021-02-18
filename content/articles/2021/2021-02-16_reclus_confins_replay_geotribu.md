@@ -35,7 +35,7 @@ Dès le départ au sein de GéoTribu, on a eu envie de se risquer au live [Twitc
 
 ## Conclusion
 
-On remercie chaleureusement R. Mejean pour cette initiative et on espère que ce beau projet pourra perdurer. On vous invite à surveiller le compte Twitter des [Reclus aux Confins](https://twitter.com/reclus_confins) pour en savoir plus sur le prochain rendez-vous.
+On remercie chaleureusement R. Mejean pour cette initiative et on espère que ce beau projet pourra perdurer. On vous invite à surveiller le compte Twitter des [Reclus aux Confins](https://twitter.com/reclus_confins) ou [leur site web](https://reclusauxconfins.github.io/) pour en savoir plus sur le prochain rendez-vous.
 
 ----
 
