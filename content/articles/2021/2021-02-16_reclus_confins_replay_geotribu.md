@@ -16,11 +16,17 @@ tags: geotribu,communauté,reclus aux confins,twitch
 
 ## Intro
 
+![logo Twitch](https://cdn.geotribu.fr/img/logos-icones/divers/twitch.png "Twitch"){: .img-rdp-news-thumb }
+
 On revient avec un format moins formel, plus Twitch mais tout aussi carto-centré :wink: !
 
-Fin 2020, [Romain Mejean](https://twitter.com/r_mejean) soumettait [l'idée d'organiser d'éventuels café-géo-visio-zoom-twitch de confinés](https://twitter.com/r_mejean/status/1325486798768910337?s=20). Quelques semaines plus tard, la proposition avait fait son chemin et elle a pu se concrétiser en Janvier avec la tenue d'une première géovisioconférence des [Reclus aux Confins](https://twitter.com/reclus_confins) qui s'est aujourd'hui imposée comme un évènement hebdomadaire :clap:.
+Fin 2020, [Romain Mejean](https://twitter.com/r_mejean) soumettait [l'idée d'organiser d'éventuels café-géo-visio-zoom-twitch de confinés](https://twitter.com/r_mejean/status/1325486798768910337?s=20). Quelques semaines plus tard, la proposition avait fait son chemin et elle a pu se concrétiser en janvier avec la tenue d'une première géovisioconférence des [Reclus aux Confins](https://twitter.com/reclus_confins). UNe expérimentation qui s'est aujourd'hui imposée comme un évènement hebdomadaire :clap:.
+
+![logo Reclus aux Confins](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/reclus_aux_confins.png "logo Reclus aux Confins"){: loading=lazy .img-center }
 
 Dès le départ au sein de GéoTribu, on a eu envie de se risquer au live [Twitch](https://www.twitch.tv/confins) pour vous présenter le projet à travers un nouveau canal. C'est donc Florian qui s'est prêté au jeu et à travers cet article, on vous propose de découvrir ou redécouvrir cette présentation : GeoTribu - Contributions ouvertes à tous.
+
+----
 
 ## La présentation
 
