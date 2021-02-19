@@ -111,8 +111,21 @@ On crée donc un script "orchestrateur" qui va lire le fichier de configuration 
 
 ### Pour schématiser
 
-[![Schéma](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBKEZpY2hpZXIgZGUgY29uZmlndXJhdGlvbilcbiAgICBBIC0tPiBDe2lnbmZyMm1hcC5zaH1cbiAgICBDIC0tPiBEWzFfc2NyYXBlci5zaF1cbiAgICBDIC0tPiBFWzJfZGVwYXJ0ZW1lbnRzLnNoPGJyPjJfZnJhbmNlLnNoPGJyPjJfcmVnaW9ucy5zaF1cbiAgICBDIC0tPiBGWzNfZmlsdGVyZWRfY3N2LnNoXSBcbiAgICBDIC0tPiBHWzRfY3N2X3R5cGUuc2hdIFxuICAgIEMgLS0-IEhbNV9qb2luX2Nzdl90b3BvanNvbi5zaF0gXG4gICAgQyAtLT4gSVs2X2NyZWF0ZV9odG1sLnNoXSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBKEZpY2hpZXIgZGUgY29uZmlndXJhdGlvbilcbiAgICBBIC0tPiBDe2lnbmZyMm1hcC5zaH1cbiAgICBDIC0tPiBEWzFfc2NyYXBlci5zaF1cbiAgICBDIC0tPiBFWzJfZGVwYXJ0ZW1lbnRzLnNoPGJyPjJfZnJhbmNlLnNoPGJyPjJfcmVnaW9ucy5zaF1cbiAgICBDIC0tPiBGWzNfZmlsdGVyZWRfY3N2LnNoXSBcbiAgICBDIC0tPiBHWzRfY3N2X3R5cGUuc2hdIFxuICAgIEMgLS0-IEhbNV9qb2luX2Nzdl90b3BvanNvbi5zaF0gXG4gICAgQyAtLT4gSVs2X2NyZWF0ZV9odG1sLnNoXSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9){: loading=lazy }
-{: align=middle }
+Grosso modo, voilà ce que ça donne (*désolé les flèches ne s'affichent pas bien avec le mode sombre*) :
+
+```mermaid
+graph TD
+    A(Fichier de configuration)
+    A --> C{ignfr2map.sh}
+    C --> D[1_scraper.sh]
+    C --> E[2_departements.sh<br>2_france.sh<br>2_regions.sh]
+    C --> F[3_filtered_csv.sh]
+    C --> G[4_csv_type.sh]
+    C --> H[5_join_csv_topojson.sh]
+    C --> I[6_create_html.sh]
+```
+
+> [Voir le schéma en grand](https://mermaid.ink/svg/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBKEZpY2hpZXIgZGUgY29uZmlndXJhdGlvbilcbiAgICBBIC0tPiBDe2lnbmZyMm1hcC5zaH1cbiAgICBDIC0tPiBEWzFfc2NyYXBlci5zaF1cbiAgICBDIC0tPiBFWzJfZGVwYXJ0ZW1lbnRzLnNoPGJyPjJfZnJhbmNlLnNoPGJyPjJfcmVnaW9ucy5zaF1cbiAgICBDIC0tPiBGWzNfZmlsdGVyZWRfY3N2LnNoXSBcbiAgICBDIC0tPiBHWzRfY3N2X3R5cGUuc2hdIFxuICAgIEMgLS0-IEhbNV9qb2luX2Nzdl90b3BvanNvbi5zaF0gXG4gICAgQyAtLT4gSVs2X2NyZWF0ZV9odG1sLnNoXSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
 
 ----
 
