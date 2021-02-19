@@ -128,7 +128,7 @@ Le [fichier complet est dans le dépôt](https://github.com/geotribu/ign-fr-open
 
 Tout d'abord, on indique les critères de déclenchement du processus. On a choisi de concilier deux cas de figure :
 
-- une exécution récurrente sur une base mensuelle, le permier jour de chaque mois
+- une exécution récurrente sur une base mensuelle, le premier jour de chaque mois
 - une exécution manuelle pour nos tests ou quand l'envie nous prend
 
 On souhaite également déclencher l'exécution uniquement lorsque des modifications sont appliquées sur la branche principale du projet.
@@ -175,7 +175,7 @@ steps:
 
 On utilise les variables d'environnement définies dans le fichier example et on le renomme. Notez que c'est la solution de facilité et qu'il aurait été préférable d'utiliser des variables d'environnement :
 
-- soit définies en haut du fichier via (voir [doc sur `env:`](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#env)),
+- soit définies en haut du fichier (voir [doc sur `env:`](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#env)),
 - soit via [la définition d'un environnement](https://docs.github.com/en/actions/reference/environments) ou [les Actions Secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
 
 ```yaml
