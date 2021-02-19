@@ -1,41 +1,114 @@
 ---
 title: "ign2map : automatisation et déploiement"
-authors: ["Florian Boret, Julien Moura"]
-categories: ["article"]
-date: 2021-02-19 11:11
+authors: ["Julien Moura", "Florian Boret"]
+categories: ["article", "tutoriel"]
+date: 2021-02-19 14:14
 description: "Suite du projet ign2map : automatisation de l'exécution des scripts et du déploiement de la carte interactive des liens de téléchargement des données ouvertes de l'IGN, en tirant profit de GitHub Actions et Pages."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/github_action_workflow_result.png"
 tags: bash,IGN,GitHub Pages,GitHub Actions
 ---
 
-# ign2map : automatisation et déploiment
+# ign2map : automatisation des scripts et déploiement de la carte
 
 :calendar: Date de publication initiale : 19 Février 2021
 
 **Mots-clés :** bash | IGN | déploiement | GitHub Actions | GitHub Pages
 
+Pré-requis :
+
+- l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)
+- une connexion internet qui accède au FTP de l'IGN
+- la disponibilité du serveur FTP de l'IGN
+
 ## Intro
 
 ![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }
-
-L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticipe que la page est donc appelée à s'agrandir (*sic*). Pour que le projet ne soit pas un symbôle d'obsolescence programmée (même s'il est certainement éphémère), on choisit donc d'automatiser le processus via [Github Actions] et la publication sur [Github Pages]. Une chaîne de valeurs que l'on connaît bien puisque déjà utilisée pour générer et publier le site actuel de Geotribu à partir des fichiers Markdown.
 
 Après avoir présenté la génèse et détaillé la démarche de notre petit projet de carte des liens IGN, voici venir le second volet consacré à l'exécution complètement automatisée et paramétrable des scripts puis du déploiement tout aussi automatique.
 
 [Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button } [Consulter l'article détaillant la démarche :fontawesome-solid-step-backward:](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/){: .md-button }
 {: align=middle }
 
+L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticipe que la page est donc appelée à s'agrandir (*sic*). Pour que le projet ne soit pas un symbôle d'obsolescence programmée (même s'il est certainement éphémère), on choisit donc d'automatiser le processus via [Github Actions] et la publication sur [Github Pages]. Une chaîne de valeurs que l'on connaît bien puisque déjà utilisée pour générer et publier le site actuel de Geotribu à partir des fichiers Markdown.
+
+<!-- markdownlint-disable MD046 -->
+!!! tip "Sur Windows ?"
+    Vous êtes sur un système Windows et vous vous sentez frustré(e) de ne pas pouvoir expérimenter ce tutoriel ? Deux solutions s'offrent à vous :
+
+    - [adopter un pingouin](https://youtu.be/DRBVUZjrT0k?t=76) et batifoler joyeusement sur la banquise du libre :penguin:
+    - utiliser [WSL, le sous-système Linux intégré à Windows 10 en suivant notre article sur le sujet](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/) :wink:
+<!-- markdownlint-enable MD046 -->
+
 ## Travaux préliminaires
 
-![icône agnostique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/agnostique.jpg "agnostique"){: .img-rdp-news-thumb }
+### Variables d'environnement et fichier de configuration
 
-Avant de pouvoir automatiser sur une plateforme d'intégration et de déploiement continus (CI/CD pour les intimes), il s'agit de rendre l'exécution de nos scripts complètement indépendante de nos machines individuelles et paramétrables.
+![logo Ministère de l'Environnement d'Haïti](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/environnement_ministere_haiti.webp "L'environnement, des politiques variables"){: .img-rdp-news-thumb }
+
+Avant de pouvoir automatiser toute la chaîne d'exécution sur une plateforme d'intégration et de déploiement continus (CI/CD pour les intimes), il s'agit de rendre nos scripts paramétrables et indépendants de nos machines individuelles.
 
 L'idée est donc de pouvoir passer plusieurs paramètres :
 
 - l'URL source
 - gérer les échelles : départements, régions et France entière
 - la liste des produits de l'IGN ouverts pour en ajouter, enlever ou renommer selon l'évolution de la dynamique
+
+S'il y a bien un mécanisme multi-plateforme, c'est celui des variables d'environnement. Linux, [Windows](https://devblogs.microsoft.com/commandline/share-environment-vars-between-wsl-and-windows/), [Android](https://developer.android.com/studio/command-line/variables), [Docker](https://docs.docker.com/compose/environment-variables/), ...
+
+Une variable d'environnement est donc un simple couple clé=valeur, qu'il est possible de stocker également dans des fichiers dont l'extension conventionnelle est `.env`. [Celui de notre script est sous ce lien](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/example.env) mais en voici un extrait pour vous montrer à quoi ça ressemble :
+
+```ini
+# SOURCE
+SOURCE_URL="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html"
+
+# CHEMINS LOCAUX
+LOG_FILE="/var/log/geotribu/ign2map.log"
+RESULT_FOLDER="final"
+TEMP_FOLDER="/tmp/"
+TEMPLATES_FOLDER="templates"
+
+# PRODUITS IGN
+LI_PRODUITS_DEPARTEMENTS="BDFORET,ORTHOHR_1-0_IRC,BDORTHO_2-0_IRC"
+[...]
+```
+
+### Paramètres et arguments
+
+Dans un script Bash, le moyen le plus simple est d'utiliser [les paramètres positionnels](https://www.commentcamarche.net/faq/5444-bash-les-arguments-parametres#parametres-positionnels)... enfin les paramètres passés dans un ordre précis quoi.
+
+Par exemple pour [le quatrième script](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/scripts/4_csv_type.sh) :
+
+```bash
+# Arguments
+SCALE=$1
+SOURCE_FILE=$2
+OUTPUT_DIR=$3
+IFS="," read -a ARRAY_PRODUITS <<< $4
+```
+
+On devra donc lancer le script avec 4 arguments :
+
+1. l'échelle : soit `departements`, soit `regions`, soit `france`
+2. le chemin du fichier en entrée (ici le fichier de sortie du précédent script)
+3. le chemin du dossier où stocker le fichier en sortie
+4. la liste des produits de l'IGN
+
+Ce qui donne par exemple :
+
+```bash
+source scripts/4_csv_type.sh "departements" \
+  /tmp/3_filtered_csv/3_liens_par_dep_clean_ext.csv \
+  /tmp/4_csv_type \
+  "BDFORET,ORTHOHR_1-0_IRC,BDORTHO_2-0_IRC"
+```
+
+### Un script pour les gouverner tous
+
+Une fois les 6 scripts rendus paramétrables, autant se faciliter la vie et permettre de les exécuter tous à la suite d'un coup.  
+On crée donc un script "orchestrateur" qui va lire le fichier de configuration (ou les variables d'environnement) et lancer les scripts dans le bon ordre en s'assurant de leur passer les bons paramètres à chaque fois : [ignfr2map.sh](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/ignfr2map.sh).
+
+![Lord of Scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/lord_of_scripts.png "Lord of The Scripts"){: loading=lazy }
+{: align=middle }
 
 ----
 
@@ -127,7 +200,8 @@ Vu qu'on utilise les paramètres par défaut, le résultat final est donc stock�
 
 #### Déploiement
 
-Enfin, il s'agit de pousser le dossier final sur la branche `gh-pages` publiée sur [Github Pages]. Pour cela, j'ai pris l'habitude d'utiliser l'outil [ghp-import], notamment inclus dans [MkDocs], l'outil qu'on utilise pour notre site. C'est par flemme car dans l'idéal il aurait fallu rester avec la seule ligne de commande et ainsi ne pas avoir besoin d'installer Python. On donne ainsi une chance à une contribution externe de briller :sparkler:.
+Enfin, il s'agit de pousser le dossier final sur la branche `gh-pages` publiée sur [Github Pages]. Pour cela, j'ai pris l'habitude d'utiliser l'outil [ghp-import], notamment inclus dans [MkDocs], l'outil qu'on utilise pour notre site. C'est par flemme car dans l'idéal il aurait fallu rester avec la seule ligne de commande et ainsi ne pas avoir besoin d'installer Python.  
+Disons qu'on donne ainsi une chance à une contribution externe de briller :sparkler: :wink:.
 
 Voici ce que ça donne :
 
@@ -146,6 +220,8 @@ Voici ce que ça donne :
 ----
 
 ## Conclusion
+
+Ce travail semble long mais c'est surtout que j'ai tenu à le détailler car en réalité, l'exécution complète de toute la chaîne de valeur prend moins d'une minute :
 
 ![Github workflow result](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/github_action_workflow_result.png "Résultat de l'exécution déclenchée manuellement : 40 secondes"){: loading=lazy }
 {: align=middle }
