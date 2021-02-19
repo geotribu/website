@@ -31,6 +31,8 @@ jobs:
         with:
           output: ' '
 
+      - uses: xt0rted/markdownlint-problem-matcher@v1
+
       # -- APPLY LINTER ------------------------------------------------------
       - name: Install markdown-cli
         id: dependencies
