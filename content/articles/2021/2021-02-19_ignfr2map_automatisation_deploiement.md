@@ -28,7 +28,7 @@ Après avoir présenté la génèse et détaillé la démarche de notre petit pr
 [Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button } [Consulter l'article détaillant la démarche :fontawesome-solid-step-backward:](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/){: .md-button }
 {: align=middle }
 
-L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticipe que la page est donc appelée à s'agrandir (*sic*). Pour que le projet ne soit pas un symbôle d'obsolescence programmée (même s'il est certainement éphémère), on choisit donc d'automatiser le processus via [Github Actions] et la publication sur [Github Pages]. Une chaîne de valeurs que l'on connaît bien puisque déjà utilisée pour générer et publier le site actuel de Geotribu à partir des fichiers Markdown.
+L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticipe que la page soit donc appelée à s'agrandir (*sic*). Pour que le projet ne soit pas un symbôle d'obsolescence programmée (même s'il est certainement éphémère), on choisit donc d'automatiser le processus via [Github Actions] et la publication sur [Github Pages]. Une chaîne de valeurs que l'on connaît bien puisque déjà utilisée pour générer et publier le site actuel de Geotribu à partir des fichiers Markdown.
 
 <!-- markdownlint-disable MD046 -->
 !!! tip "Sur Windows ?"
@@ -148,7 +148,7 @@ on:
 
 ### L'environnement d'exécution
 
-Une fois les règles de déclenchementen place, passons aux tâches (*jobs*) qui doivent être exécutées. On commence par indiquer dans quel environnement on travaille.  
+Une fois les règles de déclenchement en place, passons aux tâches (*jobs*) qui doivent être exécutées. On commence par indiquer dans quel environnement on travaille.  
 Vu que notre outil est écrit en bash, une surcouche du monde Linux au Shell, on opte pour Ubuntu :
 
 ```yaml
