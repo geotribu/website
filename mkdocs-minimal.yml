@@ -55,6 +55,8 @@ markdown_extensions:
   - attr_list
   # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - admonition
+  # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
+  - footnotes
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
