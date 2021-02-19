@@ -32,6 +32,8 @@ jobs:
           output: ' '
 
       - uses: xt0rted/markdownlint-problem-matcher@v1
+      - name: Run markdownlint-cli on new files with matcher
+        run: markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }}
 
       # -- APPLY LINTER ------------------------------------------------------
       - name: Install markdown-cli
