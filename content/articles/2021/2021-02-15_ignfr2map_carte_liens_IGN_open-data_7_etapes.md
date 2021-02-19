@@ -1,6 +1,6 @@
 ---
 title: "ign2map : Du site à la carte en 7 étapes"
-authors: ["Florian Boret, Julien Moura"]
+authors: ["Florian Boret", "Julien Moura"]
 categories: ["article"]
 date: 2021-02-15 11:11
 description: "ign2map : le petit projet de Geotribu pour rendre l’expérience de téléchargement des données ouvertes de l'IGN plus interactive."
