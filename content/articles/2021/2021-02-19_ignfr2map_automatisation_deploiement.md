@@ -17,8 +17,7 @@ tags: bash,IGN,GitHub Pages,GitHub Actions
 Pré-requis :
 
 - l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)
-- une connexion internet qui accède au FTP de l'IGN
-- la disponibilité du serveur FTP de l'IGN
+- une connexion internet qui accède à [la page de l'IGN qui référence les liens des données libres](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html)
 
 ## Intro
 
