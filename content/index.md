@@ -9,7 +9,7 @@ hide:
   - toc
 template: home.html
 ---
-
+<!--
 # Bienvenue
 
 Bienvenue sur le site de Geotribu !
@@ -49,4 +49,4 @@ Par défaut, le site utilise votre réglage système (clair ou sombre). Il est p
       document.body.setAttribute(attr, this.getAttribute(attr))
     })
   })
-</script>
+</script> -->
