@@ -20,7 +20,7 @@ Cloner le dépôt, soit avec la commande ci-dessous, soit via [le bouton vert su
 
 ```bash
 cd ~/git-repos/geotribu/
-git clone https://github.com/geotribu/website.git
+git clone --depth=1 https://github.com/geotribu/website.git
 ```
 
 ----
