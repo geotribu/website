@@ -1,6 +1,6 @@
 ---
 title: "ign2map : Du site à la carte en 7 étapes"
-authors: ["Florian Boret, Julien Moura"]
+authors: ["Florian Boret", "Julien Moura"]
 categories: ["article"]
 date: 2021-02-15 11:11
 description: "ign2map : le petit projet de Geotribu pour rendre l’expérience de téléchargement des données ouvertes de l'IGN plus interactive."
@@ -175,6 +175,9 @@ On doit avouer :
 ## La suite
 
 Un autre article sera publié dans les prochains jours pour vous expliquer la partie sur l'automatisation et le déploiement depuis Github. Restez connectés à [GeoTribu](https://static.geotribu.fr) ([LinkedIn](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) - [RSS](https://static.geotribu.fr/feed_rss_created.xml) - [Twitter](https://twitter.com/geotribu)) :wink:.
+
+[Suite : automatiser l'exécution et le déploiement :fontawesome-solid-step-forward:](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/){: .md-button }
+{: align=middle }
 
 ----
 
