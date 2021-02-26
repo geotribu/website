@@ -2,7 +2,7 @@
 title: "Développement QGIS : utiliser les documentations hors-ligne avec Zeal"
 authors: ["Julien MOURA"]
 categories: ["article"]
-date: "2021-02-19 10:20"
+date: "2021-03-02 10:20"
 description: "Blog-note de développement sur QGIS : présentation de Zeal qui permet de disposer d'un naviguer hors-ligne dans les documentations techniques de QGIS et PyQGIS."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png"
 tags: "QGIS,développement,zeal,documentation"
@@ -10,7 +10,7 @@ tags: "QGIS,développement,zeal,documentation"
 
 # Utiliser Zeal pour développer sur QGIS
 
-:calendar: Date de publication initiale : 19 février 2021
+:calendar: Date de publication initiale : 2 mars 2021
 
 **Mots-clés :** développement | QGIS | documentation | IDE
 
