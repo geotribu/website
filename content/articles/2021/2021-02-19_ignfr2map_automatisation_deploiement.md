@@ -25,10 +25,10 @@ Pré-requis :
 
 Après avoir présenté la génèse et détaillé la démarche de notre petit projet de carte des liens IGN, voici venir le second volet consacré à l'exécution complètement automatisée et paramétrable des scripts puis du déploiement tout aussi automatique.
 
-[Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button } [Consulter l'article détaillant la démarche :fontawesome-solid-step-backward:](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/){: .md-button }
+[Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button } [Consulter l'article détaillant la démarche :fontawesome-solid-step-backward:](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/){: .md-button }
 {: align=middle }
 
-L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticipe que la page soit donc appelée à s'agrandir (*sic*). Pour que le projet ne soit pas un symbôle d'obsolescence programmée (même s'il est certainement éphémère), on choisit donc d'automatiser le processus via [Github Actions] et la publication sur [Github Pages]. Une chaîne de valeurs que l'on connaît bien puisque déjà utilisée pour générer et publier le site actuel de Geotribu à partir des fichiers Markdown.
+L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticipe que la page soit donc appelée à s'agrandir (*sic*). Pour que le projet ne soit pas un symbole d'obsolescence programmée (même s'il est certainement éphémère), on choisit donc d'automatiser le processus via [Github Actions] et la publication sur [Github Pages]. Une chaîne de valeurs que l'on connaît bien puisque déjà utilisée pour générer et publier le site actuel de Geotribu à partir des fichiers Markdown.
 
 <!-- markdownlint-disable MD046 -->
 !!! tip "Sur Windows ?"
@@ -162,7 +162,7 @@ on:
 ### L'environnement d'exécution
 
 Une fois les règles de déclenchement en place, passons aux tâches (*jobs*) qui doivent être exécutées. On commence par indiquer dans quel environnement on travaille.  
-Vu que notre outil est écrit en bash, une surcouche du monde Linux au Shell, on opte pour Ubuntu :
+Vu que notre outil est écrit en bash, une surcouche au shell Linux, on opte pour Ubuntu :
 
 ```yaml
 jobs:
@@ -205,7 +205,7 @@ Sommairement[^1], cela donne donc :
   run: bash ./ignfr2map.sh
 ```
 
-Vu qu'on utilise les paramètres par défaut, le résultat final est donc stocké dans le dossier `final`. Histoire de se faciliter le debug, on peut lister les fichiers temporaires et finaux :
+Vu qu'on utilise les paramètres par défaut, les fichiers en sortie sont donc stockés dans le dossier `final`. Histoire de se faciliter le debug, on peut lister les fichiers temporaires et finaux :
 
 ```yaml
 - name: List temp
@@ -217,7 +217,7 @@ Vu qu'on utilise les paramètres par défaut, le résultat final est donc stock�
 
 #### Déploiement
 
-Enfin, il s'agit de pousser le dossier final sur la branche `gh-pages` publiée sur [Github Pages]. Pour cela, j'ai pris l'habitude d'utiliser l'outil [ghp-import], notamment inclus dans [MkDocs], l'outil qu'on utilise pour notre site. C'est par flemme car dans l'idéal il aurait fallu rester avec la seule ligne de commande et ainsi ne pas avoir besoin d'installer Python.  
+Enfin, il s'agit de pousser le dossier final sur la branche `gh-pages` publiée sur [Github Pages]. Pour cela, j'ai pris l'habitude d'utiliser l'outil [ghp-import], notamment inclus dans [MkDocs] (l'outil qu'on utilise pour notre site). C'est par flemme car dans l'idéal il aurait fallu rester avec la seule ligne de commande et ainsi ne pas avoir besoin d'installer Python.  
 Disons qu'on donne ainsi une chance à une contribution externe de briller :sparkler: :wink:.
 
 Voici ce que ça donne :
