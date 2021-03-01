@@ -95,7 +95,7 @@ C'est justement le cas des **docsets** pour QGIS et PyQGIS, pour lesquelles on p
 
 Elles se présentent alors sous forme de flux, qu'il s'agit d'ajouter via le bouton `Add feed` en bas de l'onglet `Installed` et d'entrer le flux récupéré depuis le site web.
 
-Comme je suis sympa, je vous reporte ici les flux correspodnant aux documentations de [QGIS](https://qgis.org/api/3.16/) et [PyQGIS](https://qgis.org/pyqgis/3.16/) :
+Comme je suis sympa, je vous reporte ici les flux correspondant aux documentations de [QGIS](https://qgis.org/api/3.16/) et [PyQGIS](https://qgis.org/pyqgis/3.16/) :
 
 Pour développer sur QGIS :
 
