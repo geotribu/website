@@ -29,8 +29,8 @@ git clone --depth=1 https://github.com/geotribu/website.git
 
 Pour éditer localement et visualiser le résultat final avant de publier sur le dépôt, il faut installer [Python] 3.7 ou supérieure et les dépendances du projet. Exemple avec Ubuntu 18. 04 et Windows 10 (quelques adaptations peuvent être nécessaires):
 
+<!-- markdownlint-disable MD046 -->
 === "Bash"
-
     ```bash
     # se rendre à la racine du dépôt local - adapter à son environnement
     cd ~/git-repos/geotribu/website/
@@ -53,7 +53,6 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
     ```
 
 === "Powershell"
-
     ```powershell
     # se rendre à la racine du dépôt local - adapter à son environnement
     cd ~/git-repos/geotribu/website/
@@ -77,6 +76,7 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
     # installer les dépendances
     python -m pip install -U -r requirements.txt
     ```
+<!-- markdownlint-enable MD046 -->
 
 !!! tip
     Le projet est configuré pour mettre semi-automatiquement à jour certaines dépendances. Il est donc recommandé de  mettre son environnement virtuel local à jour avant de contribuer : `pip install -U -r requirements.txt`.
@@ -158,18 +158,17 @@ Le site est accessible sur : <http://localhost:8000>
 
 Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement supprimée par GitHub afin d'éviter de garder un trop grand nombre de branches. Il faut alors mettre à jour le dépôt local sur votre machine :
 
+<!-- markdownlint-disable MD046 -->
 === "Bash"
-
     ```bash
     # mettre le dépôt local en conformité avec le dépôt central (notamment en supprimant les branches locales déjà supprimées sur GitHub)
     git remote prune origin
 
     # supprimer les branches qui ont été fusionnées - sauf master
-    git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d
+    git branch --merged | grep -i -v -E "master|gh-pages"| xargs git branch -d
     ```
 
 === "Powershell"
-
     ```powershell
     # mettre le dépôt local en conformité avec le dépôt central (notamment en supprimant les branches locales déjà supprimées sur GitHub)
     git remote prune origin
@@ -177,6 +176,7 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
     # ouvre une fenêtre de sélection des branches à supprimer
     git branch --format "%(refname:short)" --merged  | Out-GridView -PassThru | % { git branch -d $_ }
     ```
+<!-- markdownlint-enable MD046 -->
 
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/download/
