@@ -120,7 +120,7 @@ https://zealusercontributions.now.sh/api/docsets/PyQGIS.xml
 
 ## Utiliser
 
-L'utilisation est simple mais voici quelques astuces histoire de
+L'utilisation est simple mais voici quelques astuces histoire de fluidifier l'expérience.
 
 ### Recherche filtrée
 
@@ -137,13 +137,13 @@ Il est possible de filtrer sa recherche sur l'une des documentations en utilisan
 
 ### Intégrer à son IDE
 
-Par exemple pour Visual Studio Code, il y a cette extension : <https://github.com/deerawan/vscode-dash>.
+L'outil s'intègre dans de nombreux environnements de développement. Par exemple pour Visual Studio Code, il y a cette extension : <https://github.com/deerawan/vscode-dash>.
 
 ----
 
 ## Conclusion
 
-De mon point de vue, Zeal est de ces outils particulièrement utiles aux personnes faisant du développement mais sans forcément le socle de compétences initiales qui va avec, catégorie dans laquelle je nous range, géomaticien/nes que nous sommes. Le fait de pouvoir naviguer entre les documentations est très pratique : QGIS retourne un QStringList ? hop, tu recherches dans la doc et voilà ! Même pas le temps pour le doute :bolt: !
+Zeal me semble utile particulièrement pour les personnes faisant du développement mais sans forcément le socle de compétences initiales qui va avec ; catégorie dans laquelle je nous range, géomaticien/nes que nous sommes. Le fait de pouvoir naviguer entre les documentations est très pratique : QGIS retourne un QStringList ? hop, tu recherches dans la doc et voilà ! Même pas le temps pour le doute !
 
 C'est aussi avec ce genre d'outil que l'on se rend compte des bénéfices du travail de documentation et de la dynamique de capitalisation/partage qu'est l'open source.
 
