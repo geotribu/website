@@ -1,4 +1,4 @@
-<!-- Modèle pour créer une nouvelle revue de presse. Ignorer ou adapter pour les autres types de contenus -->
+<!-- Modèle pour créer une nouvelle revue de presse. MERCI DE SUPPRIMER OU ADAPTER POUR LES AUTRES TYPES DE CONTENUS (principe du `benevol time fair-use`). -->
 
 # Amorcer une nouvelle revue de presse
 
@@ -8,6 +8,10 @@
   - [ ] `date` : au format `AAAA-MM-JJ HH-MM` - mais laisser l'heure sur 14h20 c'est historique
   - [ ] `title` : correspond à ce qui est affiché dans le menu de navigation, l'onglet du navigateur et le SEO. Bien **indiquer l'année** pour améliorer le référencement et en prévision d'une refonte du moteur de rendu.
 - [ ] changer la date du titre principal (en début de contenu). Idem, **indiquer l'année**.
+
+## Prévenir l'équipe
+
+- Informer l'équipe que la prochaine RDP a été initiée en publiant le lien de la PR sur [le canal `#revues-de-presse` de Slack](https://geotribu.slack.com/archives/C010DD7FMEX)
 
 ## Encourager les contributions spontanées sur Twitter
 
