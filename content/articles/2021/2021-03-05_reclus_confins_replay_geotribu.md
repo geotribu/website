@@ -2,7 +2,7 @@
 title: "Présentation de Geotribu sur les Reclus aux Confins"
 authors: ["Geotribu"]
 categories: ["article"]
-date: 2021-02-18 14:00
+date: 2021-03-05 14:00
 description: "Les Reclus aux Confins : Découvrir ou redécouvrir la présentation de GeoTribu - Contributions ouvertes à tous"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/presentation_reclus_confins/geotribu_slide_contributions_ouvertes.png"
 tags: geotribu,communauté,reclus aux confins,twitch
@@ -10,7 +10,7 @@ tags: geotribu,communauté,reclus aux confins,twitch
 
 # Au-delà des Confins : le replay des Reclus sur Geotribu
 
-:calendar: Date de publication initiale : 18 Février 2021
+:calendar: Date de publication initiale : 5 mars 2021
 
 **Mots-clés :** Geotribu | communauté | Reclus aux Confins | Twitch
 
@@ -65,9 +65,8 @@ On remercie chaleureusement R. Mejean pour cette initiative et on espère que ce
 ----
 
 ## Auteur
+### GeoTribu
 
 ![Portait de GeoTribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png){: .img-rdp-news-thumb }
-
-### GeoTribu
 
 Toute l'actualité de la géomatique Open Source ! Mais aussi des tutoriels, des billets de blog, des tests et surtout une bonne humeur géographique !
