@@ -65,6 +65,7 @@ On remercie chaleureusement R. Mejean pour cette initiative et on espère que ce
 ----
 
 ## Auteur
+
 ### GeoTribu
 
 ![Portait de GeoTribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png){: .img-rdp-news-thumb }
