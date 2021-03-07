@@ -98,14 +98,14 @@ DROP TABLE IF EXISTS bus.bus_lignes_offset;
 -- Création de la table
 CREATE TABLE bus.bus_lignes_offset (
   fid serial PRIMARY KEY,
-	pt_from integer,
-	loc_from numeric,
-	pt_to integer,
-	loc_to numeric,
-	line_id integer,
-	numero integer,
-	offset_nr integer,
-	geom geometry(Linestring, 2154)
+    pt_from integer,
+    loc_from numeric,
+    pt_to integer,
+    loc_to numeric,
+    line_id integer,
+    numero integer,
+    offset_nr integer,
+    geom geometry(Linestring, 2154)
 );
 
 INSERT INTO bus.bus_lignes_offset (WITH
@@ -163,40 +163,40 @@ La dernière étape consiste à compter le nombre de chevauchement pour chacun d
 DROP TABLE IF EXISTS bus.bus_lignes_offset_count;
 -- Création de la table
 CREATE TABLE bus.bus_lignes_offset_count (
-	fid serial PRIMARY KEY,
-	pt_from integer,
-	loc_from integer,
-	pt_to integer,
-	loc_to integer,
-	line_id integer,
-	numero integer,
-	offset_nr integer,
-	geom geometry(Linestring, 2154),
-	pt_from2 integer,
-	pt_to2 integer,
-	count integer
+    fid serial PRIMARY KEY,
+    pt_from integer,
+    loc_from numeric,
+    pt_to integer,
+    loc_to numeric,
+    line_id integer,
+    numero integer,
+    offset_nr integer,
+    geom geometry(Linestring, 2154),
+    pt_from2 integer,
+    pt_to2 integer,
+    count integer
 );
 INSERT INTO bus.bus_lignes_offset_count (
 SELECT 
-	b.fid,
-	b.pt_from,
-	b.loc_from,
-	b.pt_to,
-	b.loc_to,
-	b.line_id,
-	b.numero,
-	b.offset_nr,
-	b.geom,
-	a.pt_from,
-	a.pt_to,
-	a.count 
+    b.fid,
+    b.pt_from,
+    b.loc_from,
+    b.pt_to,
+    b.loc_to,
+    b.line_id,
+    b.numero,
+    b.offset_nr,
+    b.geom,
+    a.pt_from,
+    a.pt_to,
+    a.count 
 FROM bus.bus_lignes_offset as b LEFT JOIN
 (SELECT pt_from,
-	pt_to,
-	count(*) AS COUNT -- Compter le nombre de tronçons qui ont les mêmes points de départ et d'arrivée (rappel : les lignes doivent être dans le même sens)
+    pt_to,
+    count(*) AS COUNT -- Compter le nombre de tronçons qui ont les mêmes points de départ et d'arrivée (rappel : les lignes doivent être dans le même sens)
 FROM bus.bus_lignes_offset GROUP BY
-	pt_from,
-	pt_to) AS a ON a.pt_from = b.pt_from AND a.pt_to = b.pt_to);
+    pt_from,
+    pt_to) AS a ON a.pt_from = b.pt_from AND a.pt_to = b.pt_to);
 ```
 
 ## Le rendu QGIS
@@ -208,9 +208,9 @@ Vous pouvez ajouter la dernière table générée dans QGIS pour réaliser le re
 
 ```sql
 CASE
-	WHEN "count" = 2 THEN 1.2
-	WHEN "count" > 2 THEN 0.8
-	ELSE  1.6
+    WHEN "count" = 2 THEN 1.2
+    WHEN "count" > 2 THEN 0.8
+    ELSE  1.6
 END
 ```
 
@@ -218,9 +218,9 @@ END
 
 ```sql
 CASE
-	WHEN "count" = 2 THEN (("offset_nr"-1)*1.2)-((("count"-1)/2)*1.2)
-	WHEN "count" > 2 THEN (("offset_nr"-1)*0.8)-((("count"-1)/2)*0.8)
-	ELSE  0
+    WHEN "count" = 2 THEN (("offset_nr"-1)*1.2)-((("count"-1)/2)*1.2)
+    WHEN "count" > 2 THEN (("offset_nr"-1)*0.8)-((("count"-1)/2)*0.8)
+    ELSE  0
 END
 ```
 
