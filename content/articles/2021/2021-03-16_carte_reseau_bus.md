@@ -236,6 +236,8 @@ La solution proposée permet :
 * de gérer et de représenter sans trop de difficultés la superposition de plusieurs lignes de bus
 * de relancer facilement les scripts si le réseau venait à évoluer
 
+Toutefois, l’automatisation a ses limites et en l’état ce rendu ne pourrait être communiqué au grand public sans un travail graphique complémentaire.
+
 ----
 
 ## Auteur
