@@ -16,11 +16,11 @@ tags: QGIS,PostGIS,PostGreSQL,bus
 
 ## Intro
 
-Fin 2020, une demande a émergé du service transport de ma collectivité qui souhaitait visualiser toutes les lignes de bus du territoire sur une carte. De prime abord, cela ne me parrassait pas spécialement compliqué mais j'avais omis que plusieurs lignes pouvaient passées par des tronçons identiques et qu'il allait falloir gérer ces superpositions. Après avoir parcouru internet, je suis tombé sur une solution apportée par un utilisateur sur le forum [gis.stackexchange.com](https://gis.stackexchange.com/questions/197384/how-to-split-overlapping-linestrings) et je vous propose de revenir sur la mise en oeuvre de cette solution pour 5 lignes de bus.
+Fin 2020, une demande a émergé du service transport de ma collectivité qui souhaitait visualiser toutes les lignes de bus du territoire sur une carte. De prime abord, cela ne me paraissait pas spécialement compliqué mais j'avais omis que plusieurs lignes pouvaient passées par des tronçons identiques et qu'il allait falloir gérer ces superpositions. Après avoir parcouru internet, je suis tombé sur une solution apportée par un utilisateur sur le forum [gis.stackexchange.com](https://gis.stackexchange.com/questions/197384/how-to-split-overlapping-linestrings) et je vous propose de revenir sur la mise en oeuvre de cette solution pour 5 lignes de bus.
 
 ## Constitution du réseau de bus
 
-Tout d'abord, créer une table dans PostgreSQL pour dessiner votre réseau de bus.
+Tout d'abord, créer une table dans PostgreSQL pour dessiner le réseau de bus.
 
 ```sql
 -- Création de la table bus_ligne
@@ -33,14 +33,14 @@ CREATE TABLE bus.bus_lignes
 );
 ```
 
-Ensuite, vous devez dessiner le réseau de bus en veillant à :
+Ensuite, dessiner le réseau de bus en veillant à :
 
 * **bien superposer les tronçons des lignes de bus qui passent au même endroit,**
 * **ce que les tronçons qui se superposent soient numérisés dans le même sens.**
 
-![Numerisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/reseau_bus_qgis/numerisation.png "Numérisation"){: loading=lazy }{: align=middle }
+![Numerisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/reseau_bus_qgis/numerisation_qgis.png "Numérisation"){: loading=lazy }{: align=middle }
 
-Après la saisie, je vous conseille de faire des filtres sur le numéro de chaque ligne pour contrôler qu'il ne manque pas un tronçon et que lorsqu'il y a des uperpositions vos tronçons vont dans le même sens.
+Après la saisie, je vous conseille de faire des filtres sur le numéro de chaque ligne pour contrôler qu'il ne manque pas un tronçon et que lorsqu'il y a des superpositions vos tronçons vont dans le même sens.
 
 ## Créer des points de rencontre entre les lignes
 
@@ -49,7 +49,7 @@ Maintenant que les tronçons des lignes de bus ont été dessinées proprement (
 * le début ou la fin d'un tronçon
 * le début ou la fin d'une superposition
 
-Pour ce faire, vous devrez utiliser cette requête
+Pour ce faire, vous devez utiliser cette requête :
 
 ```sql
 -- Suppression de la table si elle existe
@@ -90,14 +90,14 @@ FROM
 
 ## Découper les lignes de bus en tronçons
 
-A partir de ces points, on peut découper les lignes de bus en tronçons et déterminer le nombre de superposition.
+A partir des points qu'on a déterminé, on peut découper les lignes de bus en tronçons et en fonction du nombre de superpositions attribuer une valeur de décalage.
 
 ```sql
 -- Suppression de la table si elle existe
 DROP TABLE IF EXISTS bus.bus_lignes_offset;
 -- Création de la table
 CREATE TABLE bus.bus_lignes_offset (
-  fid serial PRIMARY KEY,
+    fid serial PRIMARY KEY,
     pt_from integer,
     loc_from numeric,
     pt_to integer,
@@ -134,7 +134,6 @@ b AS
     a
   WINDOW w_b AS (PARTITION BY line_id ORDER BY loc)
 )
--- Utilisation du row_number pour compter le nombre de lignes qui se chevauchent
 SELECT
   row_number() OVER() fid, -- Création d'un identifiant unique
   pt_from,
@@ -201,9 +200,9 @@ FROM bus.bus_lignes_offset GROUP BY
 
 ## Le rendu QGIS
 
-Vous pouvez ajouter la dernière table générée dans QGIS pour réaliser le rendu.
+Pour terminer, vous pouvez ajouter la dernière table créée dans QGIS pour travaillser sur le rendu :
 
-1. Faites un style catégorisé sur le numéro de ligne et attribuer une couleur différente par ligne
+1. Faire un style catégorisé sur le numéro de ligne et attribuer une couleur différente par ligne
 2. Définir l'épaisseur des tronçons pour chacune des lignes
 
 ```sql
