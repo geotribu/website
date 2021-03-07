@@ -236,3 +236,9 @@ La solution proposée permet :
 
 * de gérer et de représenter sans trop de difficultés la superposition de plusieurs lignes de bus
 * de relancer facilement les scripts si le réseau venait à évoluer
+
+----
+
+## Auteur
+
+--8<-- "content/team/fbor.md"
