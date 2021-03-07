@@ -46,8 +46,8 @@ Après la saisie, je vous conseille de faire des filtres sur le numéro de chaqu
 
 Maintenant que les tronçons des lignes de bus ont été dessinées proprement (avec des superpositions), on va chercher à distinguer tous les points qui marquent :
 
-- le début ou la fin d'un tronçon
-- le début ou la fin d'une superposition 
+* le début ou la fin d'un tronçon
+* le début ou la fin d'une superposition
 
 Pour ce faire, vous devrez utiliser cette requête
 
@@ -105,7 +105,7 @@ CREATE TABLE bus.bus_lignes_offset (
 	line_id integer,
 	numero integer,
 	offset_nr integer,
-  	geom geometry(Linestring, 2154)
+	geom geometry(Linestring, 2154)
 );
 
 INSERT INTO bus.bus_lignes_offset (WITH
@@ -163,7 +163,7 @@ La dernière étape consiste à compter le nombre de chevauchement pour chacun d
 DROP TABLE IF EXISTS bus.bus_lignes_offset_count;
 -- Création de la table
 CREATE TABLE bus.bus_lignes_offset_count (
-  fid serial PRIMARY KEY,
+	fid serial PRIMARY KEY,
 	pt_from integer,
 	loc_from integer,
 	pt_to integer,
@@ -177,7 +177,7 @@ CREATE TABLE bus.bus_lignes_offset_count (
 	count integer
 );
 INSERT INTO bus.bus_lignes_offset_count (
-	SELECT 
+SELECT 
 	b.fid,
 	b.pt_from,
 	b.loc_from,
@@ -190,31 +190,31 @@ INSERT INTO bus.bus_lignes_offset_count (
 	a.pt_from,
 	a.pt_to,
 	a.count 
-	FROM bus.bus_lignes_offset as b LEFT JOIN
+FROM bus.bus_lignes_offset as b LEFT JOIN
 (SELECT pt_from,
-  	pt_to,
-  	count(*) AS COUNT -- Compter le nombre de tronçons qui ont les mêmes points de départ et d'arrivée (rappel : les lignes doivent être dans le même sens)
-	FROM bus.bus_lignes_offset GROUP BY
-  pt_from,
+	pt_to,
+	count(*) AS COUNT -- Compter le nombre de tronçons qui ont les mêmes points de départ et d'arrivée (rappel : les lignes doivent être dans le même sens)
+FROM bus.bus_lignes_offset GROUP BY
+	pt_from,
 	pt_to) AS a ON a.pt_from = b.pt_from AND a.pt_to = b.pt_to);
 ```
 
 ## Le rendu QGIS
 
-Vous pouvez ajouter la dernière table générée dans QGIS pour réaliser le rendu. 
+Vous pouvez ajouter la dernière table générée dans QGIS pour réaliser le rendu.
 
-1. Faites un style catégorisé sur le numéro de ligne et attribuer une couleur différente par ligne 
+1. Faites un style catégorisé sur le numéro de ligne et attribuer une couleur différente par ligne
 2. Définir l'épaisseur des tronçons pour chacune des lignes
 
 ```sql
 CASE
-  WHEN "count" = 2 THEN 1.2
-  WHEN "count" > 2 THEN 0.8
-  ELSE  1.6
+	WHEN "count" = 2 THEN 1.2
+	WHEN "count" > 2 THEN 0.8
+	ELSE  1.6
 END
 ```
 
-3. Définir le décalage pour chacune des lignes 
+3. Définir le décalage pour chacune des lignes
 
 ```sql
 CASE
@@ -232,8 +232,7 @@ END
 
 ## Conclusion
 
-La solution proposée permet : 
+La solution proposée permet :
 
-* de gérer et de représenter sans trop de difficultés la superposition de plusieurs lignes de bus 
+* de gérer et de représenter sans trop de difficultés la superposition de plusieurs lignes de bus
 * de relancer facilement les scripts si le réseau venait à évoluer
-
