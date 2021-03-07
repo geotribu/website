@@ -223,7 +223,7 @@ CASE
 END
 ```
 
-:warning: Attention si les tronçons qui se superposent ne vont pas dans le même sens le décalage des lignes ne va pas se faire correctement.
+:warning: Attention si les tronçons qui se superposent ne vont pas dans le même sens, le décalage des lignes ne se fera pas correctement.
 
 ![Réseau de bus](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/reseau_bus_qgis/reseau_bus_osm.png "Réseau de bus"){: loading=lazy }{: align=middle }
 
