@@ -103,7 +103,7 @@ google_analytics:
 
 # Customization
 extra:
-  disqus: 'geotribu-static'  # comment system
+  # disqus: 'geotribu-static'  # comment system - disabled since ads
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
     - icon: 'fontawesome/solid/rss'
