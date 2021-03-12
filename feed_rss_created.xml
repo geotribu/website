@@ -14,8 +14,8 @@
     <language>fr</language>
 
     
-    <pubDate>Mon, 08 Mar 2021 20:45:56 -0000</pubDate>
-    <lastBuildDate>Mon, 08 Mar 2021 20:45:56 -0000</lastBuildDate>
+    <pubDate>Fri, 12 Mar 2021 16:45:26 -0000</pubDate>
+    <lastBuildDate>Fri, 12 Mar 2021 16:45:26 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -31,6 +31,24 @@
     
 
     
+    
+    <item>
+      <title>Revue de presse du 12 mars 2021</title>
+      
+      
+        
+      <author>Geotribu</author>
+        
+      
+      <description>GeoRDP du 12 mars 2021 : la revue de presse de la géomatique libre et open source.</description>
+      <link>https://static.geotribu.fr/rdp/2021/rdp_2021-03-12/</link>
+      <pubDate>Fri, 12 Mar 2021 17:20:00 -0000</pubDate>
+      <source url="https://static.geotribu.fr/feed_rss_created.xml">Geotribu</source>
+      <guid isPermaLink="true">https://static.geotribu.fr/rdp/2021/rdp_2021-03-12/</guid>
+      
+      <enclosure url="https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/cran_motif_packages.png" type="image/png" length="146596" />
+      
+    </item>
     
     <item>
       <title>Afficher facilement l&#39;aide de son plugin QGIS</title>
@@ -714,24 +732,6 @@
       <guid isPermaLink="true">https://static.geotribu.fr/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/</guid>
       
       <enclosure url="https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png" type="image/png" length="48052" />
-      
-    </item>
-    
-    <item>
-      <title>Revue de presse du 4 septembre 2020</title>
-      
-      
-        
-      <author>Geotribu</author>
-        
-      
-      <description>GeoRDP du 4 Septembre 2020 : présentation de tegola, un serveur de tuiles vectorielles en Go, Leaflet 1.7, nid d&#39;abeilles avec Plotly, un logo pour GeoPandas, avalanche de ressources sur QGIS, Deck GL en C++, sortie du n°128 de M@ppemonde, outils de dessin dans LizMap, données de la canopée mondiale, cartographie artistique et dynamique de l&#39;évolution du glacier du Rhône, D3 en version 6</description>
-      <link>https://static.geotribu.fr/rdp/2020/rdp_2020-09-04/</link>
-      <pubDate>Fri, 04 Sep 2020 14:20:00 -0000</pubDate>
-      <source url="https://static.geotribu.fr/feed_rss_created.xml">Geotribu</source>
-      <guid isPermaLink="true">https://static.geotribu.fr/rdp/2020/rdp_2020-09-04/</guid>
-      
-      <enclosure url="https://cdn.geotribu.fr/img/logos-icones/framework_os.jpeg" type="image/jpeg" length="49908" />
       
     </item>
     

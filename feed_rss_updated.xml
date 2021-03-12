@@ -14,8 +14,8 @@
     <language>fr</language>
 
     
-    <pubDate>Mon, 08 Mar 2021 20:45:56 -0000</pubDate>
-    <lastBuildDate>Mon, 08 Mar 2021 20:45:56 -0000</lastBuildDate>
+    <pubDate>Fri, 12 Mar 2021 16:45:26 -0000</pubDate>
+    <lastBuildDate>Fri, 12 Mar 2021 16:45:26 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -31,6 +31,24 @@
     
 
     
+    
+    <item>
+      <title>Revue de presse du 12 mars 2021</title>
+      
+      
+        
+      <author>Geotribu</author>
+        
+      
+      <description>GeoRDP du 12 mars 2021 : la revue de presse de la géomatique libre et open source.</description>
+      <link>https://static.geotribu.fr/rdp/2021/rdp_2021-03-12/</link>
+      <pubDate>Fri, 12 Mar 2021 15:11:27 -0000</pubDate>
+      <source url="https://static.geotribu.fr/feed_rss_updated.xml">Geotribu</source>
+      <guid isPermaLink="true">https://static.geotribu.fr/rdp/2021/rdp_2021-03-12/</guid>
+      
+      <enclosure url="https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/cran_motif_packages.png" type="image/png" length="146596" />
+      
+    </item>
     
     <item>
       <title>Afficher facilement l&#39;aide de son plugin QGIS</title>
@@ -708,26 +726,6 @@ Et puis...&lt;/p&gt;</description>
       <pubDate>Sat, 23 Jan 2021 09:38:58 -0000</pubDate>
       <source url="https://static.geotribu.fr/feed_rss_updated.xml">Geotribu</source>
       <guid isPermaLink="true">https://static.geotribu.fr/rdp/2011/rdp_2011-09-16/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Revue de presse de la semaine du 20 Février</title>
-      
-      
-        
-      <author>GeoTribu</author>
-        
-      
-      <description>&lt;h1&gt;Revue de presse de la semaine du 20 Février 2012&lt;/h1&gt;
-&lt;p&gt;:calendar: Date de publication initiale : 20 février 2012&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Mots-clés :&lt;/strong&gt; OpenLayers | QGIS | Presse | Spatialite&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;News&#34; src=&#34;https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png&#34; title=&#34;Icône news générique&#34;&gt;{: .img-rdp-news-thumb }&lt;/p&gt;
-&lt;p&gt;C&#39;est une revue de presse bien chargée que nous vous proposons cette semaine. Nous y aborderons comme à l&#39;accoutumée, les sorties de la semaine, mais aussi la possibilité de créer vos applications OpenLayers ave...&lt;/p&gt;</description>
-      <link>https://static.geotribu.fr/rdp/2012/rdp_2012-02-20/</link>
-      <pubDate>Sat, 23 Jan 2021 09:38:58 -0000</pubDate>
-      <source url="https://static.geotribu.fr/feed_rss_updated.xml">Geotribu</source>
-      <guid isPermaLink="true">https://static.geotribu.fr/rdp/2012/rdp_2012-02-20/</guid>
       
     </item>
     
