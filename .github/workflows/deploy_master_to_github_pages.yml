@@ -45,12 +45,17 @@ jobs:
       run: |
         python -m pip install --upgrade pip setuptools wheel
         python -m pip install -r requirements.txt
+        python -m pip install ghp-import
+
+    - name: Build static website
+      run: |
+        mkdocs build --clean --config-file mkdocs.yml --verbose --strict
+      env:
+        MKDOCS_GOOGLE_ANALYTICS_KEY: 'UA-162113930-1'
+        MKDOCS_SEARCH_PREBUILD_INDEX: node
 
     - name: Deploy to Github Pages
       run: |
         git config --global user.name "Geotribu (Github Action)"
         git config --global user.email "geotribu@gmail.com"
-        mkdocs gh-deploy --clean --force --verbose
-      env:
-        MKDOCS_GOOGLE_ANALYTICS_KEY: 'UA-162113930-1'
-        MKDOCS_SEARCH_PREBUILD_INDEX: node
+        ghp-import --force --no-history --no-jekyll --push build/mkdocs/site
