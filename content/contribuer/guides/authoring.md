@@ -4,6 +4,7 @@ authors: ["Geotribu"]
 category: contribution
 date: 2020-08-04 14:20
 description: "Contribuer à Geotribu : comment signer ses contributions au site."
+image: "https://cdn.geotribu.fr/img/internal/contribution/authoring/auto_from_git_log.png"
 tags: contribuer,tutoriel,signature,authoring,auteur,paternité
 ---
 
@@ -32,6 +33,14 @@ Le pourcentage de contribution est proportionnel au nombre de lignes créées ou
 Les informations (nom, adresse email) correspondent à la configuration locale de Git utilisées lors du commit. C'est l'adresse email qui fait office d'identifiant unique.
 
 Si vous en utilisez plusieurs ou si vous souhaitez personnaliser le nom d'affichage, il est possible d'établir une table de correspondance en modifiant le fichier [.mailmap](https://github.com/geotribu/website/blob/master/.mailmap).
+
+### Signer pour quelqu'un d'autre
+
+Si la personne ayant contribué ne dispose pas d'un compte GitHub ou ne souhaite pas mettre les mains dans la mécanique de contribution, il est tout de même possible de lui attribuer au moment de faire le _commit_ :
+
+```bash
+git commit --author="Boris Mericksay <bmericskay@users.noreply.github.com>"
+```
 
 ----
 
