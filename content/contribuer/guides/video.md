@@ -14,15 +14,18 @@ Pour les vidéos qui ne sont pas hébergées sur une plateforme en particulier, 
 
 Prenons cette vidéo pour exemple : <https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4>
 
+<!-- markdownlint-disable MD046 -->
 === "Markdown"
 
     ```html
     Une **vidéo** d'illustration de cette _webmap_ :
 
     <video width="700" controls>
-  		<source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
-  		Votre navigateur ne supporte pas la balise video HTML 5.
-	</video>
+        <!-- markdownlint-disable MD033 -->
+          <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la balise video HTML 5.
+          <!-- markdownlint-enable MD033 -->
+    </video>
     ```
 
 === "Rendu"
@@ -30,9 +33,9 @@ Prenons cette vidéo pour exemple : <https://file-examples-com.github.io/uploads
     Une **vidéo** d'illustration de cette _webmap_ :
 
     <video width="700" controls>
-  		<source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
-  		Votre navigateur ne supporte pas la balise video HTML 5.
-	</video>
+          <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la balise video HTML 5.
+    </video>
 
 :bellhop_bell: Voilà, c'est prêt ! :tada:
 
@@ -57,7 +60,9 @@ Prenons cette vidéo pour exemple : <https://www.youtube.com/watch?v=St8ArwOa3yA
     ```html
     Une **vidéo** d'illustration de cette _webmap_ :
 
+    <!-- markdownlint-disable MD033 -->
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/St8ArwOa3yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- markdownlint-enable MD033 -->
     ```
 
 === "Rendu"
