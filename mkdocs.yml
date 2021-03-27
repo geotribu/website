@@ -86,6 +86,8 @@ theme:
     - navigation.instant
     - navigation.expand
     - navigation.tabs
+    - navigation.top
+    - navigation.tracking
   font: false
   icon:
     repo: fontawesome/brands/github-alt
