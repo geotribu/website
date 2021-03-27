@@ -54,6 +54,7 @@ plugins:
         "rss.md": "https://static.geotribu.fr/feed_rss_created.xml"
         # contenus
         "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
+        "node/270.md": "articles/2010/art_2010-06-11/"
         "node/348.md": "rdp/2011/rdp_2011-02-25.md"
         "node/423.md": "articles/2011/art_2011-06-15.md"
         "node/462.md": "articles/2011/art_2011-11-09.md"
