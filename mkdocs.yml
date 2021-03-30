@@ -108,7 +108,7 @@ google_analytics:
 
 # Customization
 extra:
-  # disqus: 'geotribu-static'  # comment system - disabled since ads
+  comments_url: https://comments.geotribu.fr  # isso url
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
     - icon: 'fontawesome/solid/rss'
