@@ -149,6 +149,7 @@ extra:
 
 extra_css:
   - 'theme/assets/stylesheets/extra.css'
+  # - 'theme/assets/stylesheets/homepage.css'
   - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css'
 
 extra_javascript:
