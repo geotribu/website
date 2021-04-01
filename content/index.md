@@ -11,6 +11,13 @@ hide:
 
 # Bienvenue
 
+Bienvenue sur le site de Geotribu et son nouveau thème !
+
+Consulter :
+
+- le [dernier article](/articles/2021/2021-03-09_pyqgis_astuce_aide_plugin/)
+- la [dernière GeoRDP](/rdp/2021/rdp_2021-03-26/)
+
 ```
        o                 o  
                   o  
@@ -26,8 +33,6 @@ hide:
             |  |___/  
            /__/  
 ```
-
-Bienvenue sur le site de Geotribu !
 
 ![Bannière Géotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_1000x760.jpg "Bannière Geotribu"){: loading=lazy }
 {: align=middle }

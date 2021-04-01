@@ -77,29 +77,29 @@ plugins:
 
 # Theme
 theme:
-  name: 'material'
-  custom_dir: './content/theme/'
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  name: 'bootstrap386'
+  # custom_dir: './content/theme/'
+  # favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
 
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
+  # # Don't include MkDocs' JavaScript
+  # include_search_page: false
+  # search_index_only: true
 
-  features:
-    - navigation.instant
-    - navigation.expand
-    - navigation.tabs
-    - navigation.top
-    - navigation.tracking
-  font: false
-  icon:
-    repo: fontawesome/brands/github-alt
-  language: 'fr'
-  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-  palette:
-    accent: deep-orange
-    primary: teal
-    scheme: preference
+  # features:
+  #   - navigation.instant
+  #   - navigation.expand
+  #   - navigation.tabs
+  #   - navigation.top
+  #   - navigation.tracking
+  # font: false
+  # icon:
+  #   repo: fontawesome/brands/github-alt
+  # language: 'fr'
+  # logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  # palette:
+  #   accent: deep-orange
+  #   primary: teal
+  #   scheme: preference
 
 # Integrations with 3rd party
 google_analytics:
