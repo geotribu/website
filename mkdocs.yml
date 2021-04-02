@@ -42,6 +42,7 @@ plugins:
         datetime_format: "%Y-%m-%d %H:%M"
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 40
+      match_path: "(articles|rdp)/.*"
       pretty_print: true
   - search:
       lang: fr
@@ -53,6 +54,8 @@ plugins:
         "rss.md": "https://static.geotribu.fr/feed_rss_created.xml"
         # contenus
         "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
+        "GeoRDP/20161028.md": "rdp/2016/rdp_2016-10-14.md"
+        "node/270.md": "articles/2010/art_2010-06-11.md"
         "node/348.md": "rdp/2011/rdp_2011-02-25.md"
         "node/423.md": "articles/2011/art_2011-06-15.md"
         "node/462.md": "articles/2011/art_2011-11-09.md"
@@ -86,6 +89,8 @@ theme:
     - navigation.instant
     - navigation.expand
     - navigation.tabs
+    - navigation.top
+    - navigation.tracking
   font: false
   icon:
     repo: fontawesome/brands/github-alt
@@ -103,7 +108,7 @@ google_analytics:
 
 # Customization
 extra:
-  disqus: 'geotribu-static'  # comment system
+  comments_url: https://comments.geotribu.fr  # isso url
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
     - icon: 'fontawesome/solid/rss'
@@ -143,6 +148,8 @@ markdown_extensions:
   - attr_list
   # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - admonition
+  # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
+  - footnotes
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
