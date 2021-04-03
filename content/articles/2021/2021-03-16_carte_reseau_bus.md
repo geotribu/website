@@ -63,7 +63,7 @@ CREATE TABLE bus.bus_lignes_pt (
 INSERT INTO bus.bus_lignes_pt (WITH ix AS
 (
 -- Intersection des lignes entre elles
-  SELECT DISTINCT ST_Intersection(a.geom, b.geom) geom 
+  SELECT DISTINCT ST_Intersection(a.geom, b.geom) geom
   FROM bus.bus_lignes a JOIN bus.bus_lignes b ON ST_Intersects(a.geom, b.geom)
 ),
 ix_simple_lines AS
@@ -176,7 +176,7 @@ CREATE TABLE bus.bus_lignes_offset_count (
     count integer
 );
 INSERT INTO bus.bus_lignes_offset_count (
-SELECT 
+SELECT
     b.fid,
     b.pt_from,
     b.loc_from,
@@ -188,7 +188,7 @@ SELECT
     b.geom,
     a.pt_from,
     a.pt_to,
-    a.count 
+    a.count
 FROM bus.bus_lignes_offset as b LEFT JOIN
 (SELECT pt_from,
     pt_to,
