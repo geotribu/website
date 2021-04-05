@@ -21,8 +21,8 @@ Pré-requis :
 
 ## Intro
 
-Fin 2020, une demande a émergé du service transport de ma collectivité qui souhaitait visualiser toutes les lignes de bus du territoire sur une carte. De prime abord, cela ne me paraissait pas spécialement compliqué mais j'avais omis que plusieurs lignes pouvaient passer par des tronçons identiques et qu'il allait falloir gérer ces superpositions.  
-Après avoir parcouru internet, je suis tombé sur une solution apportée par un utilisateur sur le forum [gis.stackexchange.com](https://gis.stackexchange.com/questions/197384/how-to-split-overlapping-linestrings) et je vous propose de revenir sur la mise en oeuvre de cette solution pour 5 lignes de bus.
+Fin 2020, une demande a émergé du service transport de ma collectivité qui souhaitait visualiser toutes les lignes de bus du territoire sur une même carte. De prime abord, cela ne me paraissait pas spécialement compliqué mais j'avais omis que plusieurs lignes pouvaient passer par des tronçons identiques et qu'il allait falloir gérer ces superpositions.  
+Après avoir parcouru internet, je suis tombé sur une solution apportée par un utilisateur sur le forum [gis.stackexchange.com](https://gis.stackexchange.com/questions/197384/how-to-split-overlapping-linestrings) et je vous propose de revenir sur la mise en oeuvre de cette solution pour nos 5 lignes de bus.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -44,8 +44,8 @@ CREATE TABLE bus.bus_lignes
 
 Ensuite, dessiner le réseau de bus en veillant à :
 
-* bien superposer les tronçons des lignes de bus qui passent au même endroit
-* ce que les tronçons qui se superposent soient numérisés dans le même sens
+- bien superposer les tronçons des lignes de bus qui passent au même endroit
+- ce que les tronçons qui se superposent soient numérisés dans le même sens
 
 ![Numérisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/reseau_bus_qgis/numerisation_qgis.png "Numérisation"){: loading=lazy }
 {: align=middle }
@@ -56,8 +56,8 @@ Après la saisie, je vous conseille de faire des filtres sur le numéro de chaqu
 
 Maintenant que les tronçons des lignes de bus ont été dessinées proprement (avec des superpositions), on va chercher à distinguer tous les points qui marquent :
 
-* le début ou la fin d'un tronçon
-* le début ou la fin d'une superposition
+- le début ou la fin d'un tronçon
+- le début ou la fin d'une superposition
 
 Pour ce faire, vous devez utiliser cette requête :
 
@@ -245,10 +245,12 @@ Pour terminer, vous pouvez ajouter la dernière table créée dans QGIS pour tra
 
 La solution proposée permet :
 
-* de gérer et de représenter sans trop de difficultés la superposition de plusieurs lignes de bus
-* de relancer facilement les scripts si le réseau venait à évoluer
+- de gérer et de représenter sans trop de difficultés la superposition de plusieurs lignes de bus
+- de relancer facilement les scripts si le réseau venait à évoluer
 
 Toutefois, l’automatisation a ses limites et en l’état ce rendu ne pourrait être communiqué au grand public sans un travail graphique complémentaire.
+
+A noter que j'envisage de suivre la même démarche pour représenter nos itinéraires de randonnées alors avant que je me lance, n'hésitez pas à laisser un commentaire.
 
 ----
 
