@@ -14,6 +14,11 @@ tags: QGIS,PostGIS,PostgreSQL,bus
 
 **Mots-clés :** QGIS | PostGIS | PostgreSQL | Bus
 
+Pré-requis :
+
+- Maîtriser PostgreSQL et PostGIS
+- Définir un style QGIS
+
 ## Intro
 
 Fin 2020, une demande a émergé du service transport de ma collectivité qui souhaitait visualiser toutes les lignes de bus du territoire sur une carte. De prime abord, cela ne me paraissait pas spécialement compliqué mais j'avais omis que plusieurs lignes pouvaient passer par des tronçons identiques et qu'il allait falloir gérer ces superpositions.  
