@@ -54,7 +54,7 @@ Après la saisie, je vous conseille de faire des filtres sur le numéro de chaqu
 
 ## Créer des points de rencontre entre les lignes
 
-Maintenant que les tronçons des lignes de bus ont été dessinées proprement (avec des superpositions), on va chercher à distinguer tous les points qui marquent :
+Maintenant que les tronçons des lignes de bus ont été dessinés proprement (avec des superpositions), on va chercher à distinguer tous les points qui marquent :
 
 - le début ou la fin d'un tronçon
 - le début ou la fin d'une superposition
@@ -101,7 +101,7 @@ FROM
 
 ## Découper les lignes de bus en tronçons
 
-A partir des points qu'on a déterminés, on peut découper les lignes de bus en tronçons et en fonction du nombre de superpositions attribuer une valeur de décalage.
+A partir des points qu'on a déterminé, on peut découper les lignes de bus en tronçons et en fonction du nombre de superpositions attribuer une valeur de décalage.
 
 ```sql
 -- Suppression de la table si elle existe
@@ -250,7 +250,7 @@ La solution proposée permet :
 
 Toutefois, l’automatisation a ses limites et en l’état ce rendu ne pourrait être communiqué au grand public sans un travail graphique complémentaire.
 
-A noter que j'envisage de suivre la même démarche pour représenter nos itinéraires de randonnées alors avant que je me lance, n'hésitez pas à laisser un commentaire.
+A noter, que j'envisage de suivre la même démarche pour représenter nos itinéraires de randonnées alors si vous avez des remarques n'hésitez pas à laisser un commentaire.
 
 ----
 
