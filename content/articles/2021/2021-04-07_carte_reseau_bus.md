@@ -2,7 +2,7 @@
 title: "Représentation d'un réseau de bus"
 authors: ["Florian Boret"]
 categories: ["article", "tutoriel"]
-date: 2021-03-16 14:14
+date: 2021-04-07 14:14
 description: "Représenter un réseau de bus et gérer la superposition des lignes"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/reseau_bus_qgis/reseau_bus_osm.png"
 tags: QGIS,PostGIS,PostgreSQL,bus
@@ -10,7 +10,7 @@ tags: QGIS,PostGIS,PostgreSQL,bus
 
 # Représentation d'un réseau de bus
 
-:calendar: Date de publication initiale : 16 Mars 2021
+:calendar: Date de publication initiale : 07 Avril 2021
 
 **Mots-clés :** QGIS | PostGIS | PostgreSQL | Bus
 
