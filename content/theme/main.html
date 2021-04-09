@@ -112,20 +112,23 @@
       </small>
     </div>
 
-    {# Comment system (Isso) #}
-    <div id="__comments">
-      <script
-        data-isso="{{ config.extra.comments_url }}/"
-        data-isso-require-author="true"
-        data-isso-require-email="true"
-        data-isso-reply-to-self="false"
-        data-isso-vote="true"
-        src="{{ config.extra.comments_url }}/js/embed.min.js">
-      </script>
-      <hr><section id="isso-thread"><h2>Commentaires</h2></section>
-      <noscript>Please enable JavaScript to view the comments.</noscript>
-    </div>
-  {% endif %}
+{# Comment system (Isso) #}
+<div id="__comments">
+  <script data-isso="{{ config.extra.comments_url }}/" data-isso-require-author="true" data-isso-require-email="true"
+    data-isso-reply-to-self="false" data-isso-vote="true" data-isso-feed="true"
+    src="{{ config.extra.comments_url }}/js/embed.min.js">
+    </script>
+  <hr>
+  <section id="isso-thread">
+    <h2>Commentaires</h2>
+    <small>
+      Une version minimale de la <a href="/contribuer/guides/markdown_basics/" hreflang="fr" target="_blank">syntaxe
+        markdown</a> est
+      acceptée pour la mise en forme des commentaires.<br>Propulsé par <a href="https://posativ.org/isso/" hreflang="en" target="_blank">Isso</a>. </small>
+  </section>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+</div>
+{% endif %}
 {% endblock %}
 
 {% block analytics %}
