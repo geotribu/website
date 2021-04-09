@@ -114,8 +114,14 @@
 
 {# Comment system (Isso) #}
 <div id="__comments">
-  <script data-isso="{{ config.extra.comments_url }}/" data-isso-require-author="true" data-isso-require-email="true"
-    data-isso-reply-to-self="false" data-isso-vote="true" data-isso-feed="true"
+  <script
+    data-isso="{{ config.extra.comments_url }}/"
+    data-isso-feed="true"
+    data-isso-reply-notifications="true"
+    data-isso-reply-to-self="false"
+    data-isso-require-author="true"
+    data-isso-require-email="true"
+    data-isso-vote="true"
     src="{{ config.extra.comments_url }}/js/embed.min.js">
     </script>
   <hr>
