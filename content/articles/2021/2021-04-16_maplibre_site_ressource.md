@@ -21,20 +21,20 @@ Cette bibliothèque de cartographie en ligne (côté client) repose sur la logiq
 
 Côté francophone, on parle beaucoup de **sémiologie graphique** pour désigner l’ensemble des règles permettant l’utilisation d’un système graphique de signes pour la transmission via une carte d’une information correcte et accessible à un lecteur.
 
-La cartographie est un langage qui repose sur : 
-* Un **alphabet** : l'implantation sous forme de point, de ligne ou de  surface 
-* Un **vocabulaire** : les variables visuelles 
+La cartographie est un langage qui repose sur :
+* Un **alphabet** : l'implantation sous forme de point, de ligne ou de  surface
+* Un **vocabulaire** : les variables visuelles
 * Une **syntaxe** : qui définie par les règles de la perception visuelle
 
-Ce langage doit être : 
-* Visuel : obéir aux règles générales de la perception 
-* Universel : compréhensible par tous 
+Ce langage doit être :
+* Visuel : obéir aux règles générales de la perception
+* Universel : compréhensible par tous
 * Clair et cohérent : évite l’excès de redondance, la surcharge…
 
 
-Pour aller plus loin  : 
+Pour aller plus loin  :
 * [Introduction à la cartographie thématique par Laurent Jégou](https://www.geotests.net/cours/qgis/fr/d-la-mse-en-forme/cartographie-thematique)
- * [Billet du blog NEOCARTO sur la sémiologie graphique](https://neocarto.hypotheses.org/3940) 
+ * [Billet du blog NEOCARTO sur la sémiologie graphique](https://neocarto.hypotheses.org/3940)
  * [Cours de M1 SIGAT sur la sémiologie graphique](https://www.sites.univ-rennes2.fr/mastersigat/Cours/CM%20-%20SEMIOLOGIE%20GRAPHIQUEUNIV.pdf)
 
 IMAGE 2
@@ -53,7 +53,7 @@ Pour en savoir plus > http://lecfc.fr/new/articles/229-article-6.pdf
 
 ## Un site pour présenter les potentialités de cartographie thématique de MapLibreGL
 
-Afin de **documenter** et de **partager**  une série d'expérimentations autour de la cartographie thématique sur le Web, la mise en place d'un [**site Web**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL. 
+Afin de **documenter** et de **partager**  une série d'expérimentations autour de la cartographie thématique sur le Web, la mise en place d'un [**site Web**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL.
 
 Ce site Web se positionne  à la fois comme un **agrégateurs de cartes, de codes et une vitrine** des potentialités de cartographie thématique de MaplibreGL.
 
@@ -138,11 +138,11 @@ Le **changement des fonds de cartes** est paramétré dans script
 ```js
 var layerList = document.getElementById('menu');
 var inputs = layerList.getElementsByTagName('input');
- 
+
 function switchLayer(layer) {
 var layerId = layer.target.id;
 map.setStyle(layerId);}
- 
+
 for (var i = 0; i < inputs.length; i++) {inputs[i].onclick = switchLayer;}
 ```
 
@@ -208,7 +208,7 @@ map.addLayer({
                          [1000, '#c51b7d'],]},
                  'fill-opacity': 0.9}
 });
-``` 
+```
 
 ----
 
@@ -232,14 +232,14 @@ map.addLayer({
             'id': 'Stations',
             'type': 'circle',
             'source': 'Stations',
-            'paint': {'circle-stroke-color': 'white', 
-                      'circle-stroke-width': 1, 
+            'paint': {'circle-stroke-color': 'white',
+                      'circle-stroke-width': 1,
                       'circle-radius': {property: 'capacity',
                                        type: 'exponential',
                                        stops: [[0, 0],
                                                [95, 20]]},
                       'circle-color': '#0074D9'}}
-                 ); 
+                 );
 ```
 
 
@@ -261,17 +261,17 @@ map.addLayer({
             'id': 'Stations',
             'type': 'circle',
             'source': 'Stations',
-            'paint': {'circle-stroke-color': '#ffffff', 
-                      'circle-stroke-width': 0.6, 
-                      'circle-radius': {property: 'capacity', 
-                                       type: 'exponential', 
+            'paint': {'circle-stroke-color': '#ffffff',
+                      'circle-stroke-width': 0.6,
+                      'circle-radius': {property: 'capacity',
+                                       type: 'exponential',
                                        stops: [[0, 0],[100, 20]]},
                       'circle-color': {property: 'capacity',
                                       stops: [[20, '#2c7bb6'],
                                               [30, '#abd9e9'],
                                               [40, '#ffffbf'],
                                               [50, '#fdae61'],
-                                              [60, '#d7191c'],]}, 
+                                              [60, '#d7191c'],]},
                       'circle-opacity':0.9}}
 ```
 
@@ -295,7 +295,7 @@ La syntaxe de mise en forme est assez complexe. Elle s'appuie sur quatre éléme
 1. Le **rayon d'interpolation** en fonction du niveau de zoom```heatmap-radius```
 1. L'**opacité** en fonction du niveau de zoom```heatmap-opacity```
 
-Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap) 
+Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap)
 
 ```js
 map.addLayer({
@@ -314,14 +314,14 @@ map.addLayer({
                     0.6, "rgb(253,219,199)",
                     0.8, "rgb(239,138,98)",
                     1, "rgb(178,24,43)"],
-                    
+
           "heatmap-radius": ["interpolate",["linear"],
                   ["zoom"],0, 0,12, 3, 15,15],
-                  
+
 
           "heatmap-opacity": ["interpolate",["linear"],
                    ["zoom"],12, 1,15, 0.7],}
-                 
+
                  });
 ```
 
@@ -348,10 +348,10 @@ La syntaxe de paramètrage et de mise en forme est **assez complexe**. Elle s'ap
 
 > La configuration des étiquettes du dénombrement des points dans chaque cluster n'est pas réellement à paramétrer, hormis, la taille ou la police.
 
-Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap) 
+Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap)
 
 ```js
-map.addSource('DMR', 
+map.addSource('DMR',
              {type: 'geojson',
              data: 'https://raw.githubusercontent.com/mastersigat/data/main/DMR.geojson',
              cluster: true,
@@ -370,7 +370,7 @@ map.addLayer({
                         '#FF4136'],
                     'circle-radius': ['step',['get', 'point_count'],
                       5,200,10,400,15,600,20,1000,40]}
-});         
+});  
 
 map.addLayer({ id: 'cluster-count-label',
                type: 'symbol',
@@ -379,7 +379,7 @@ filter: ['has', 'point_count'],
 layout: {'text-field': '{point_count_abbreviated}',
 'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
 'text-size': 12}
-}); 
+});
 ```
 
 ## Carte en clusters thématiques
@@ -391,9 +391,9 @@ IMAGE14
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Clusterthematic.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Clusterthematic.html)
 
-La syntaxe de paramètrage et de mise en forme de cluster thémtiques est  **complexe**. 
+La syntaxe de paramètrage et de mise en forme de cluster thémtiques est  **complexe**.
 
->Pour vraiment prendre en main ce mode de représentation de données géographiques voir ce [tutoriel de Mapbox](https://blog.mapbox.com/clustering-properties-with-mapbox-and-html-markers-bb353c8662ba) et  cet [exemple de Mapbox](https://docs.mapbox.com/mapbox-gl-js/example/cluster-html/) 
+>Pour vraiment prendre en main ce mode de représentation de données géographiques voir ce [tutoriel de Mapbox](https://blog.mapbox.com/clustering-properties-with-mapbox-and-html-markers-bb353c8662ba) et  cet [exemple de Mapbox](https://docs.mapbox.com/mapbox-gl-js/example/cluster-html/)
 
 
 En gros, la syntaxe s'appuie sur plusieurs élements comme :
@@ -468,7 +468,7 @@ IMAGE15
 
 La syntaxe de paramètrage et de mise en forme repose sur deux principaux élements relatif au ```fill-extrusion```:
 
-1. La **couleur** des entités extrudées en 3D ```fill-extrusion-color``` 
+1. La **couleur** des entités extrudées en 3D ```fill-extrusion-color```
 1. La **hauteur** des entités extrudées en 3D```ill-extrusion-height```
 
 
@@ -493,8 +493,8 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
                                         [10, 100],
                                         [1000, 5000]]},
       'fill-extrusion-opacity': 0.95,
-      'fill-extrusion-base': 0} 
-  }); 
+      'fill-extrusion-base': 0}
+  });
 ```
 
 ### Carte en 3D basée sur deux variables statistiques
@@ -508,7 +508,7 @@ IMAGE16
 
 La syntaxe de paramètrage et de mise en forme repose sur deux principaux élements relatif au ```fill-extrusion```:
 
-1. La **couleur** des entités extrudées en 3D ```fill-extrusion-color``` 
+1. La **couleur** des entités extrudées en 3D ```fill-extrusion-color```
 1. La **hauteur** des entités extrudées en 3D```ill-extrusion-height```
 
 
@@ -532,7 +532,7 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
       'fill-extrusion-opacity': 0.95,
       'fill-extrusion-base': 0
     }
-}); 
+});
 ```
 
 
@@ -548,7 +548,7 @@ IMAGE17
 
 La syntaxe de paramètrage et de mise en forme repose sur deux principaux élements relatif au ```fill-extrusion```:
 
-1. La **couleur** des entités extrudées en 3D ```fill-extrusion-color``` 
+1. La **couleur** des entités extrudées en 3D ```fill-extrusion-color```
 1. La **hauteur** des entités extrudées en 3D```ill-extrusion-height``` mais dans ce cas pas besoin de préciser des bornes car il est attendu une extrusion calquée sur la hauteur des bâtiments
 
 
