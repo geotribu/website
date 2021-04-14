@@ -33,7 +33,7 @@ Ce langage doit être :
 
 * Visuel : obéir aux règles générales de la perception
 * Universel : compréhensible par tous
-* Clair et cohérent : évite l’excès de redondance, la surcharge…
+* Clair et cohérent : éviter l’excès de redondance, la surcharge…
 
 Pour aller plus loin  :
 
@@ -43,9 +43,9 @@ Pour aller plus loin  :
 
 ![semiologie graphique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/semio_graphique.png "Sémiologie graphique"){: .img-center loading=lazy }
 
-Sur le Web il est davantage question d'une **cartographie guidée par les données (*data driven style*)**, autrement dit basée sur la nature des données (donc des variables), comme le mettent en avant des éditeurs comme [Mapbox](https://docs.mapbox.com/help/getting-started/map-design/#data-driven-styles) ou [Microsoft](https://docs.microsoft.com/fr-fr/azure/azure-maps/data-driven-style-expressions-web-sdk). Au final la logique est exactement la même que celle de la sémiologie graphique de Jacques Bertin, à savoir adapter les modes de représentation cartographique à la nature des données...
+Sur le Web, il est davantage question d'une **cartographie guidée par les données (*data driven style*)**, autrement dit basée sur la nature des données (donc des variables), comme le mettent en avant des éditeurs comme [Mapbox](https://docs.mapbox.com/help/getting-started/map-design/#data-driven-styles) ou [Microsoft](https://docs.microsoft.com/fr-fr/azure/azure-maps/data-driven-style-expressions-web-sdk). Au final la logique est exactement la même que celle de la sémiologie graphique de Jacques Bertin, à savoir adapter les modes de représentation cartographique à la nature des données...
 
-Le développement de la cartographie sur le web ne **marque pas véritablement de rupture avec les approches "classiques"**. Elle s’appuie simplement sur une **réinterprétation de règles et de principes établis** il y a plus de cinquante ans, mais réinvestis dans un contexte socio-technique différent où les pratiques, les utilisateurs comme les outils ont largement évolués.
+Le développement de la cartographie sur le web ne **marque pas véritablement de rupture avec les approches "classiques"**. Elle s’appuie simplement sur une **réinterprétation de règles et de principes établis** il y a plus de cinquante ans, mais réinvestis dans un contexte socio-technique différent où les pratiques, les utilisateurs comme les outils ont largement évolué.
 
 ![regles semiologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/regles_semio.png "Règle de sémiologie"){: .img-center loading=lazy }
 
@@ -57,7 +57,7 @@ Pour en savoir plus, vous pouvez [vous référer à cet article](http://lecfc.fr
 
 Afin de **documenter** et de **partager**  une série d'expérimentations autour de la cartographie thématique sur le Web, la mise en place d'un [**site Web**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL.
 
-Ce site Web se positionne à la fois comme un **agrégateurs de cartes, de codes et une vitrine** des potentialités de cartographie thématique de MaplibreGL.
+Ce site Web se positionne à la fois comme un **agrégateur de cartes, de codes et une vitrine** des potentialités de cartographie thématique de MaplibreGL.
 
 ![accueil site](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.JPG "Accueil site ressources MapLibre"){: .img-center loading=lazy }
 
@@ -75,9 +75,9 @@ Vous trouverez [le projet GitLab ici](https://gitlab.huma-num.fr/bmericskay/mapl
 
 ----
 
-## Un espace Gihub pour héberger les données spatiales
+## Un espace Github pour héberger les données spatiales
 
-Afin d'éviter de dépendre d'un service commercial (payant) d'hébergement et surtout de s'affranchir de toutes clefs d'accès, l'ensemble des données spatiales des cartes présentées ici sont stockées sur [**un espace Github dédié**](https://github.com/mastersigat/data). Les données disponibles en *open data* (IGN, INSEE, Ville de Paris,...) sont toutes téléchargeables
+Afin d'éviter de dépendre d'un service commercial (payant) d'hébergement et surtout de s'affranchir de toutes clefs d'accès, l'ensemble des données spatiales des cartes présentées ici sont stockées sur [**un espace Github dédié**](https://github.com/mastersigat/data). Les données disponibles en *open data* (IGN, INSEE, Ville de Paris,...) sont toutes téléchargeables.
 
 ![A REMPLACER](https://geotribu-pad.herokuapp.com/uploads/upload_50175a955009c9d4ebbce55ba835c706.png)
 
@@ -90,14 +90,14 @@ map.addSource("Nomdelasource", {
 });
 ```
 
-Pour en savoir plus sur le principe voir ce [tutoriel introductif sur MapLibreGL](https://static.geotribu.fr/articles/2021/2021-02-23_carte_ligne_libre/
-) réalisé en février 2021 sur Géotribu :wink:
+Pour en savoir plus sur le principe voir ce [tutoriel introductif sur MapLibreGL](/articles/2021/2021-02-23_carte_ligne_libre/
+) réalisé en février 2021 sur Géotribu :wink:.
 
 ----
 
 ## Cartes de bases
 
-Une [première section](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/#basic) présente deux modèles de cartes "basiques". Il n'est pas question ici de cartographie thématique mais plutôt de revenir sur **les bases syntaxiques d'une carte basée sur MapLibreGL** (appel de la carte, fond de carte, paramètres de la vue, marqueurs, outils de contrôle, échelle...)
+Une [première section](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/#basic) présente deux modèles de cartes "basiques". Il n'est pas question ici de cartographie thématique mais plutôt de revenir sur **les bases syntaxiques d'une carte basée sur MapLibreGL** (appel de la carte, fond de carte, paramètres de la vue, marqueurs, outils de contrôle, échelle...).
 
 ### Une carte de base avec un marqueur interactif
 
@@ -127,7 +127,7 @@ Ici **l'appel des différents fonds de carte** en tuiles vectorielles (avec les 
 </div>
 ```
 
-Le **changement des fonds de cartes** est paramétré dans script
+Le **changement des fonds de cartes** est paramétré dans la partie script.
 
 ```js
 var layerList = document.getElementById('menu');
@@ -144,15 +144,15 @@ for (var i = 0; i < inputs.length; i++) {inputs[i].onclick = switchLayer;}
 
 ## Carte en points (Dot Map)
 
-Une carte de points, est un type de carte thématique qui utilise un signe ponctuel, souvent de taille uniforme, pour visualiser la distribution géographique d'un phénomène. Bien adapaté à la représentation de jeux de données géographiques volumineux, les cartes en points peuevtn s'avérer très efficaces.
+Une carte de points est un type de carte thématique qui utilise un signe ponctuel, souvent de taille uniforme, pour visualiser la distribution géographique d'un phénomène. Bien adapatées à la représentation de jeux de données géographiques volumineux, les cartes en points peuvent s'avérer très efficaces.
 
 ![carte en points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_points.JPG "Carte en points (Dot Map)"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Dotmap.html)  // [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Dotmap.html)
 
-La mise en forme des points s'appuie ici sur une syntaxe simple, on **définit la variable à catégoriser** ```match,['get', 'variable']```et les **correspondances entre les modalités de la variables et les couleurs** désirées > ```circle_color```
+La mise en forme des points s'appuie ici sur une syntaxe simple, on **définit la variable à catégoriser** ```match,['get', 'variable']```et les **correspondances entre les modalités de la variables et les couleurs** désirées via ```circle_color```.
 
-Dans cet exemple ```circle-radius``` est mobilisé pour proposer une symbologie de la **taille des points adaptative** au niveau de zoom (on définit un niveau de zoom et la taille désirée à plusieurs échelles).
+Dans cet exemple, ```circle-radius``` est mobilisé pour proposer une symbologie de la **taille des points adaptative** au niveau de zoom (on définit un niveau de zoom et la taille désirée à plusieurs échelles).
 
  ```js
  map.addLayer({
@@ -176,13 +176,17 @@ Dans cet exemple ```circle-radius``` est mobilisé pour proposer une symbologie 
 
 ## Carte choroplèthe
 
-Une carte choroplèthe est une carte thématique où les régions sont colorées pour montrer une mesure statistique (densité de population, revenu moyen...) Ce type de carte facilite la comparaison d'une variable statistique d'une entité spatiale à l'autre et montre la variabilité de celle-ci pour une région donnée.
+Une carte choroplèthe est une carte thématique où les régions sont colorées pour montrer une mesure statistique (densité de population, revenu moyen...). Ce type de carte facilite la comparaison d'une variable statistique d'une entité spatiale à l'autre et montre la variabilité de celle-ci pour une région donnée.
 
 ![carte choroplete](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_choroplete.JPG "Carte choroplète"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/ChoroplethMap.html) // [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/ChoroplethMap.html)
 
-La syntaxe de mise en forme renvoie à trois éléments, le **choix de la variable** à représenter ```property : 'variable'```, la **discrétisation** de la variable (les bornes des classes) ```stops```et les **couleurs** associées à chaque classes ```fill-color```.
+La syntaxe de mise en forme renvoie à trois éléments :
+
+1. le **choix de la variable** à représenter ```property : 'variable'```
+2. la **discrétisation** de la variable (les bornes des classes) ```stops```
+3. les **couleurs** associées à chaque classes ```fill-color```
 
 ```js
 map.addLayer({
@@ -214,7 +218,10 @@ Une carte en symboles proportionnels représente par un cercle (ou éventuelleme
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/GraduatedCircles.html) // [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/GraduatedCircles.html)
 
-La syntaxe de mise en forme ```circle-radius```renvoie à deux éléments, le **choix de la variable** à représenter ```property : 'variable'``` et la **taille des points en fonction de la valeur de la variable** ```stops: [[0, 0], [95, 20]]```.
+La syntaxe de mise en forme ```circle-radius```renvoie à deux éléments :
+
+1. le **choix de la variable** à représenter ```property : 'variable'```
+2. la **taille des points en fonction de la valeur de la variable** ```stops: [[0, 0], [95, 20]]```
 
 ```js
 map.addLayer({
@@ -233,13 +240,17 @@ map.addLayer({
 
 ### Carte en symboles proportionnels avec  graduation de couleur
 
-Ici on combine **deux variables visuelles, la taille et la couleur**. Dans notre cas on procède à une redondance visuelle de l'information relative aux nombres de vélibs par stations qui sont mises en forma à travers la taille des points et leur couleur.
+Ici on combine **deux variables visuelles, la taille et la couleur**. Dans notre cas, on procède à une redondance visuelle de l'information relative aux nombres de vélibs par station qui sont mis en forme à travers la taille des points et leur couleur.
 
 ![carte symboles proportionnels graduation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_symboles_proportionnels_graduation.JPG "Carte en symboles proportionnels avec graduation de couleur"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/GraduatedCirclesColor.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/GraduatedCirclesColor.html)
 
-La syntaxe de mise en forme renvoie à trois éléments, le **choix de la variable** à représenter, la **taille des points** en fonction de la valeur la variable ```circle-radius,``` et la **graduation de couleurs** (discrétisation) ```circle-color```.
+La syntaxe de mise en forme renvoie à trois éléments :
+
+1. le **choix de la variable** à représenter
+2. la **taille des points** en fonction de la valeur la variable ```circle-radius```
+3. la **graduation de couleurs** (discrétisation) ```circle-color```
 
 ```js
 map.addLayer({
@@ -274,10 +285,10 @@ La syntaxe de mise en forme est assez complexe. Elle s'appuie sur quatre éléme
 
 1. L'**intensité en fonction du niveau de zoom** ```heatmap-intensity```
 2. La **variation des couleurs** ```heatmap-color```
-3. Le **rayon d'interpolation** en fonction du niveau de zoom```heatmap-radius```
-4. L'**opacité** en fonction du niveau de zoom```heatmap-opacity```
+3. Le **rayon d'interpolation** en fonction du niveau de zoom ```heatmap-radius```
+4. L'**opacité** en fonction du niveau de zoom ```heatmap-opacity```
 
-Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap)
+Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap).
 
 ```js
 map.addLayer({
@@ -311,7 +322,7 @@ map.addLayer({
 
 ## Carte en cluster
 
-Les carte basées sur le regroupement spatial de marqueurs sous forme de clusters, tient une place importante dans la cartographie sur le Web. Cette approche appuyée sur l’analyse des distances et des densités d’un ensemble de points permet de rendre plus lisible une carte saturée de points par leur regroupement en grappes homogènes et l’affichage de leur nombre.
+Les carte basées sur le regroupement spatial de marqueurs sous forme de clusters, tiennent une place importante dans la cartographie sur le Web. Cette approche, appuyée sur l’analyse des distances et des densités d’un ensemble de points, permet de rendre plus lisible une carte saturée de points par leur regroupement en grappes homogènes et l’affichage de leur nombre.
 
 ## Carte en clusters classiques
 
@@ -323,12 +334,12 @@ La syntaxe de paramètrage et de mise en forme est **assez complexe**. Elle s'ap
 
 1. Le **niveau de zoom maximal** du clustering ```clusterMaxZoom```
 2. Le **rayon de regroupement** ```clusterRadius```
-3. La **graduation de couleur** des clusters```circle-color```
-4. La **taille des clusters**```circle-color```
+3. La **graduation de couleur** des clusters ```circle-color```
+4. La **taille des clusters** ```circle-color```
 
-> La configuration des étiquettes du dénombrement des points dans chaque cluster n'est pas réellement à paramétrer, hormis, la taille ou la police.
+> La configuration des étiquettes du dénombrement des points dans chaque cluster n'est pas réellement à paramétrer, hormis la taille ou la police.
 
-Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap)
+Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap).
 
 ```js
 map.addSource('DMR',
@@ -368,15 +379,15 @@ layout: {'text-field': '{point_count_abbreviated}',
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Clusterthematic.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Clusterthematic.html)
 
-La syntaxe de paramètrage et de mise en forme de cluster thémtiques est  **complexe**.
+La syntaxe de paramètrage et de mise en forme de cluster thématiques est **complexe**.
 
->Pour vraiment prendre en main ce mode de représentation de données géographiques voir ce [tutoriel de Mapbox](https://blog.mapbox.com/clustering-properties-with-mapbox-and-html-markers-bb353c8662ba) et  cet [exemple de Mapbox](https://docs.mapbox.com/mapbox-gl-js/example/cluster-html/)
+>Pour vraiment prendre en main ce mode de représentation de données géographiques, voir ce [tutoriel de Mapbox](https://blog.mapbox.com/clustering-properties-with-mapbox-and-html-markers-bb353c8662ba) et cet [exemple de Mapbox](https://docs.mapbox.com/mapbox-gl-js/example/cluster-html/)
 
 En gros, la syntaxe s'appuie sur plusieurs élements comme :
 
-* Définir en amont chacune des modalités qui serton prises en compte dans le clustering et leur associer une couleur (
+* Définir en amont chacune des modalités qui serton prises en compte dans le clustering et leur associer une couleur
 
->Dans mon exemple la variable (nom du champ) se nomme ***type*** et renvoie à trois modalités dans le geojson *A*, *B* et *C*) > [voir le Geojson](https://raw.githubusercontent.com/mastersigat/data/main/DMR.geojson)
+>Dans mon exemple la variable (nom du champ) se nomme ***type*** et renvoie à trois modalités dans le geojson (*A*, *B* et *C*) > [voir le Geojson](https://raw.githubusercontent.com/mastersigat/data/main/DMR.geojson)
 
 ```js
 var mag1 = ['match',['get', 'type'],
@@ -421,7 +432,7 @@ props.mag3
 ];
 ```
 
-* Enfin configurer à la fois la **taille des étiquettes** des clusters ```var fontSize``` et la **taille des clusters** ```var r```
+* Enfin, configurer à la fois la **taille des étiquettes** des clusters ```var fontSize``` et la **taille des clusters** ```var r```
 
 ```js
 var fontSize =
@@ -431,20 +442,20 @@ var r = total >= 20000 ? 50 : total >= 10000 ? 40 : total >= 5000 ? 30 : total >
 
 ## Cartes en 3D
 
-Avec le WebGL il est désormais assez simple d'intégrer de la 3D dans les cartes en ligne. Cette perspective est particulièrement intéressante en cartographie thématique pour représenter autrement certaines variables et surtout combiner plusieurs variables visuelles (comme la taille et la couleur) au sein d'une même carte.
+Avec le WebGL, il est désormais assez simple d'intégrer de la 3D dans les cartes en ligne. Cette perspective est particulièrement intéressante en cartographie thématique pour représenter autrement certaines variables et surtout combiner plusieurs variables visuelles (comme la taille et la couleur) au sein d'une même carte.
 
 ### Carte en 3D basée sur un carroyage de population
 
-Dans cette première carte on travaille avec deux variables visuelles, une **variable de couleur** et une **variable de taille** qui renvoient à la même donnée, la population de chaque carreaux.
+Dans cette première carte, on travaille avec deux variables visuelles, une **variable de couleur** et une **variable de taille** qui renvoient à la même donnée, la population de chaque carreau.
 
 ![carte 3d carroyage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_3d_carroyage.JPG "Carte 3D sur un carroyage de population"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/3Dmap.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/3Dmap.html)
 
-La syntaxe de paramètrage et de mise en forme repose sur deux principaux élements relatif au ```fill-extrusion```:
+La syntaxe de paramètrage et de mise en forme repose sur deux principaux élements relatifs au ```fill-extrusion```:
 
 1. La **couleur** des entités extrudées en 3D ```fill-extrusion-color```
-2. La **hauteur** des entités extrudées en 3D```ill-extrusion-height```
+2. La **hauteur** des entités extrudées en 3D ```fill-extrusion-height```
 
 ```js
  map.addLayer({
@@ -473,7 +484,7 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
 
 ### Carte en 3D basée sur deux variables statistiques
 
-Dans cette autre carte on travaille aussi avec deux variables visuelles, une **variable de couleur** et une **variable de taille**, mais qui renvoient ici à deux variables statistiques, **la population** (qui sert à l'extrusion) et la **densité de population** (qui sert à l'applat de couleurs) de chacune des communes bretonnes.
+Dans cette autre carte, on travaille aussi avec deux variables visuelles, une **variable de couleur** et une **variable de taille**, mais qui renvoient ici à deux variables statistiques, la **population** (qui sert à l'extrusion) et la **densité de population** (qui sert à l'applat de couleurs) de chacune des communes bretonnes.
 
 ![carte 3d bivariee](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_3d_bivariee.JPG "Carte 3D bivariée"){: .img-center loading=lazy }
 
@@ -482,7 +493,7 @@ Dans cette autre carte on travaille aussi avec deux variables visuelles, une **v
 La syntaxe de paramètrage et de mise en forme repose sur deux principaux élements relatif au ```fill-extrusion```:
 
 1. La **couleur** des entités extrudées en 3D ```fill-extrusion-color```
-2. La **hauteur** des entités extrudées en 3D```ill-extrusion-height```
+2. La **hauteur** des entités extrudées en 3D ```fill-extrusion-height```
 
 ```js
  map.addLayer({
@@ -509,16 +520,16 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
 
 ### Carte en 3D basée les hauteurs de bâtiments
 
-Avec le WebGL, il est simple d’extruder la hauteur des bâtiments pour représenter de manière plus réaliste les volumétries des villes. Dans cette dernière carte, il s'agit d'appliquer la même logique que précédamment en extrudant en 3D les bâtiments (BDTOPO de l'IGN) selon leur hauteur et en appliquant une graduation de couleur selon la hauteur.
+Avec le WebGL, il est simple d’extruder la hauteur des bâtiments pour représenter de manière plus réaliste les volumétries des villes. Dans cette dernière carte, il s'agit d'appliquer la même logique que précédamment, en extrudant en 3D les bâtiments (BDTOPO de l'IGN) selon leur hauteur et en appliquant une graduation de couleur selon la hauteur.
 
 ![carte 3d hauteurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_3d_hauteurs.JPG "Carte 3D hauteurs de bâtiments"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Buildingmaps.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Buildingmaps.html)
 
-La syntaxe de paramètrage et de mise en forme repose sur deux principaux élements relatif au ```fill-extrusion```:
+La syntaxe de paramètrage et de mise en forme repose sur deux principaux élements relatifs au ```fill-extrusion```:
 
 1. La **couleur** des entités extrudées en 3D ```fill-extrusion-color```
-2. La **hauteur** des entités extrudées en 3D```ill-extrusion-height``` mais dans ce cas pas besoin de préciser des bornes car il est attendu une extrusion calquée sur la hauteur des bâtiments
+2. La **hauteur** des entités extrudées en 3D ```fill-extrusion-height``` mais dans ce cas, pas besoin de préciser des bornes, car il est attendu une extrusion calquée sur la hauteur des bâtiments
 
 ```js
  map.addLayer({
