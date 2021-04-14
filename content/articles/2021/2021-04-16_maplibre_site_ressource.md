@@ -335,8 +335,6 @@ La syntaxe de paramètrage et de mise en forme est **assez complexe**. Elle s'ap
 
 > La configuration des étiquettes du dénombrement des points dans chaque cluster n'est pas réellement à paramétrer, hormis la taille ou la police.
 
-Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap).
-
 ```js
 map.addSource('DMR',
              {type: 'geojson',
