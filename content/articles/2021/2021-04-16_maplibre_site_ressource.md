@@ -79,7 +79,7 @@ Vous trouverez [le projet GitLab ici](https://gitlab.huma-num.fr/bmericskay/mapl
 
 Afin d'éviter de dépendre d'un service commercial (payant) d'hébergement et surtout de s'affranchir de toutes clefs d'accès, l'ensemble des données spatiales des cartes présentées ici sont stockées sur [**un espace Github dédié**](https://github.com/mastersigat/data). Les données disponibles en *open data* (IGN, INSEE, Ville de Paris,...) sont toutes téléchargeables
 
-![](https://geotribu-pad.herokuapp.com/uploads/upload_50175a955009c9d4ebbce55ba835c706.png)
+![A REMPLACER](https://geotribu-pad.herokuapp.com/uploads/upload_50175a955009c9d4ebbce55ba835c706.png)
 
 Les données qui doivent être stockées en ligne sous format **Geojson** en **WGS84** (epsg:4326) sont directement appelées dans les codes des cartes.
 
@@ -132,11 +132,11 @@ Le **changement des fonds de cartes** est paramétré dans script
 ```js
 var layerList = document.getElementById('menu');
 var inputs = layerList.getElementsByTagName('input');
- 
+
 function switchLayer(layer) {
 var layerId = layer.target.id;
 map.setStyle(layerId);}
- 
+
 for (var i = 0; i < inputs.length; i++) {inputs[i].onclick = switchLayer;}
 ```
 
@@ -221,14 +221,14 @@ map.addLayer({
             'id': 'Stations',
             'type': 'circle',
             'source': 'Stations',
-            'paint': {'circle-stroke-color': 'white', 
-                      'circle-stroke-width': 1, 
+            'paint': {'circle-stroke-color': 'white',
+                      'circle-stroke-width': 1,
                       'circle-radius': {property: 'capacity',
                                        type: 'exponential',
                                        stops: [[0, 0],
                                                [95, 20]]},
                       'circle-color': '#0074D9'}}
-                 ); 
+                 );
 ```
 
 ### Carte en symboles proportionnels avec  graduation de couleur
@@ -246,17 +246,17 @@ map.addLayer({
             'id': 'Stations',
             'type': 'circle',
             'source': 'Stations',
-            'paint': {'circle-stroke-color': '#ffffff', 
-                      'circle-stroke-width': 0.6, 
-                      'circle-radius': {property: 'capacity', 
-                                       type: 'exponential', 
+            'paint': {'circle-stroke-color': '#ffffff',
+                      'circle-stroke-width': 0.6,
+                      'circle-radius': {property: 'capacity',
+                                       type: 'exponential',
                                        stops: [[0, 0],[100, 20]]},
                       'circle-color': {property: 'capacity',
                                       stops: [[20, '#2c7bb6'],
                                               [30, '#abd9e9'],
                                               [40, '#ffffbf'],
                                               [50, '#fdae61'],
-                                              [60, '#d7191c'],]}, 
+                                              [60, '#d7191c'],]},
                       'circle-opacity':0.9}}
 ```
 
@@ -296,14 +296,14 @@ map.addLayer({
                     0.6, "rgb(253,219,199)",
                     0.8, "rgb(239,138,98)",
                     1, "rgb(178,24,43)"],
-                    
+
           "heatmap-radius": ["interpolate",["linear"],
                   ["zoom"],0, 0,12, 3, 15,15],
-                  
+
 
           "heatmap-opacity": ["interpolate",["linear"],
                    ["zoom"],12, 1,15, 0.7],}
-                 
+
                  });
 ```
 
@@ -331,7 +331,7 @@ La syntaxe de paramètrage et de mise en forme est **assez complexe**. Elle s'ap
 Pour aller plus loin voir la [documentation de Mapbox](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap)
 
 ```js
-map.addSource('DMR', 
+map.addSource('DMR',
              {type: 'geojson',
              data: 'https://raw.githubusercontent.com/mastersigat/data/main/DMR.geojson',
              cluster: true,
@@ -350,7 +350,7 @@ map.addLayer({
                         '#FF4136'],
                     'circle-radius': ['step',['get', 'point_count'],
                       5,200,10,400,15,600,20,1000,40]}
-});         
+});  
 
 map.addLayer({ id: 'cluster-count-label',
                type: 'symbol',
@@ -359,7 +359,7 @@ filter: ['has', 'point_count'],
 layout: {'text-field': '{point_count_abbreviated}',
 'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
 'text-size': 12}
-}); 
+});
 ```
 
 ## Carte en clusters thématiques
@@ -467,8 +467,8 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
                                         [10, 100],
                                         [1000, 5000]]},
       'fill-extrusion-opacity': 0.95,
-      'fill-extrusion-base': 0} 
-  }); 
+      'fill-extrusion-base': 0}
+  });
 ```
 
 ### Carte en 3D basée sur deux variables statistiques
@@ -504,7 +504,7 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
       'fill-extrusion-opacity': 0.95,
       'fill-extrusion-base': 0
     }
-}); 
+});
 ```
 
 ### Carte en 3D basée les hauteurs de bâtiments
