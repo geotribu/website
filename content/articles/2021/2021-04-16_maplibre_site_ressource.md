@@ -13,7 +13,7 @@ tags: "mot-clé-seo1,mot-clé-seo2"
 
 Fork open source de MapboxGL, **MapLibreGL** représente l'une des solutions actuelles de cartographie en ligne  les plus intéressantes. Bénéficiant d'une communuaté active de plus de 300 contributeurs, la bibliotèque JavaScript [MapLibreGL.js](https://github.com/maplibre/maplibre-gl-js) permet de mettre en place très rapidement des cartes en lignes basées sur les **tuiles vectorielles** et le **WebGL**.
 
-IMAGE1
+![maplibre](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/maplibre.JPG "Maplibre"){: .img-center loading=lazy }
 
 Cette bibliothèque de cartographie en ligne (côté client) repose sur la logique et la syntaxe de [MapboxGL.js](https://docs.mapbox.com/mapbox-gl-js/api/) (version 1.13). Au-delà de produire des cartes en ligne, elle offre de multiples possibilités pour la **cartographie thématique**, autement dit pour représenter sur une carte des données statistiques sous différentes formes.
 
@@ -41,13 +41,13 @@ Pour aller plus loin  :
 * [Billet du blog NEOCARTO sur la sémiologie graphique](https://neocarto.hypotheses.org/3940)
 * [Cours de M1 SIGAT sur la sémiologie graphique](https://www.sites.univ-rennes2.fr/mastersigat/Cours/CM%20-%20SEMIOLOGIE%20GRAPHIQUEUNIV.pdf)
 
-IMAGE 2
+![semiologie graphique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/semio_graphique.png "Sémiologie graphique"){: .img-center loading=lazy }
 
 Sur le Web il est davantage question d'une **cartographie guidée par les données (*data driven style*)**, autrement dit basée sur la nature des données (donc des variables), comme le mettent en avant des éditeurs comme [Mapbox](https://docs.mapbox.com/help/getting-started/map-design/#data-driven-styles) ou [Microsoft](https://docs.microsoft.com/fr-fr/azure/azure-maps/data-driven-style-expressions-web-sdk). Au final la logique est exactement la même que celle de la sémiologie graphique de Jacques Bertin, à savoir adapter les modes de représentation cartographique à la nature des données...
 
 Le développement de la cartographie sur le web ne **marque pas véritablement de rupture avec les approches "classiques"**. Elle s’appuie simplement sur une **réinterprétation de règles et de principes établis** il y a plus de cinquante ans, mais réinvestis dans un contexte socio-technique différent où les pratiques, les utilisateurs comme les outils ont largement évolués.
 
-IMAGE3
+![regles semiologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/regles_semio.png "Règle de sémiologie"){: .img-center loading=lazy }
 
 Pour en savoir plus, vous pouvez [vous référer à cet article](http://lecfc.fr/new/articles/229-article-6.pdf).
 
@@ -57,11 +57,11 @@ Pour en savoir plus, vous pouvez [vous référer à cet article](http://lecfc.fr
 
 Afin de **documenter** et de **partager**  une série d'expérimentations autour de la cartographie thématique sur le Web, la mise en place d'un [**site Web**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL.
 
-Ce site Web se positionne  à la fois comme un **agrégateurs de cartes, de codes et une vitrine** des potentialités de cartographie thématique de MaplibreGL.
+Ce site Web se positionne à la fois comme un **agrégateurs de cartes, de codes et une vitrine** des potentialités de cartographie thématique de MaplibreGL.
 
-IMAGE4
+![accueil site](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.JPG "Accueil site ressources MapLibre"){: .img-center loading=lazy }
 
-[https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL]
+[Cliquez ici pour accéder au site](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) !
 
 ----
 
@@ -69,7 +69,7 @@ IMAGE4
 
 En complémente au  site Web, un [**projet GitLab**](https://gitlab.huma-num.fr/bmericskay/maplibre) permet de son côté de **centraliser les syntaxes HMTL/CSS/Javascript** de toutes les cartes dans un espace commun, ouvert et collaboratif.
 
-IMAGE5
+![projet gitlab](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/projet_gitlab.JPG "Projet GitLab"){: .img-center loading=lazy }
 
 Vous trouverez [le projet GitLab ici](https://gitlab.huma-num.fr/bmericskay/maplibre).
 
@@ -101,13 +101,13 @@ Une [première section](https://sites-formations.univ-rennes2.fr/mastersigat/Map
 
 ### Une carte de base avec un marqueur interactif
 
-IMAGE6
+![carte base marqueur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_base_marqueur.JPG "Carte de base avec un marqueur"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Basicmap.html) // [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Basicmap.html)
 
 ### Une carte avec un menu pour changer le style des fonds de carte
 
-IMAGE7
+![carte menu style](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_menu_style.JPG "Carte avec menu pour changer le style"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Basemapsmenu.html) // [*Voir le code dans GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Basemapsmenu.html)
 
@@ -146,7 +146,7 @@ for (var i = 0; i < inputs.length; i++) {inputs[i].onclick = switchLayer;}
 
 Une carte de points, est un type de carte thématique qui utilise un signe ponctuel, souvent de taille uniforme, pour visualiser la distribution géographique d'un phénomène. Bien adapaté à la représentation de jeux de données géographiques volumineux, les cartes en points peuevtn s'avérer très efficaces.
 
-IMAGE8
+![carte en points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_points.JPG "Carte en points (Dot Map)"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Dotmap.html)  // [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Dotmap.html)
 
@@ -178,7 +178,7 @@ Dans cet exemple ```circle-radius``` est mobilisé pour proposer une symbologie 
 
 Une carte choroplèthe est une carte thématique où les régions sont colorées pour montrer une mesure statistique (densité de population, revenu moyen...) Ce type de carte facilite la comparaison d'une variable statistique d'une entité spatiale à l'autre et montre la variabilité de celle-ci pour une région donnée.
 
-IMAGE9
+![carte choroplete](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_choroplete.JPG "Carte choroplète"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/ChoroplethMap.html) // [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/ChoroplethMap.html)
 
@@ -210,7 +210,7 @@ Une carte en symboles proportionnels représente par un cercle (ou éventuelleme
 
 ### Carte en symboles proportionnels "simples"
 
-IMAGE10
+![carte symboles proportionnels](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_symboles_proportionnels.JPG "Carte en symboles proportionnels"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/GraduatedCircles.html) // [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/GraduatedCircles.html)
 
@@ -235,7 +235,7 @@ map.addLayer({
 
 Ici on combine **deux variables visuelles, la taille et la couleur**. Dans notre cas on procède à une redondance visuelle de l'information relative aux nombres de vélibs par stations qui sont mises en forma à travers la taille des points et leur couleur.
 
-IMAGE11
+![carte symboles proportionnels graduation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_symboles_proportionnels_graduation.JPG "Carte en symboles proportionnels avec graduation de couleur"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/GraduatedCirclesColor.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/GraduatedCirclesColor.html)
 
@@ -266,7 +266,7 @@ map.addLayer({
 
 Une carte de chaleur  (*heatmap*) propose une représentation continue d’un ensemble de données ponctuelles par l’estimation des densités de noyau. Les heatmaps permettent d’identifier en un coup d'œil les zones à forte densité (les points chauds), la distribution ainsi que l’organisation spatiale des concentrations d'un ensemble de données ponctuelles.
 
-IMAGE12
+![carte chaleur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_chaleur.JPG "Carte de chaleur"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Heatmap.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Heatmap.html)
 
@@ -315,7 +315,7 @@ Les carte basées sur le regroupement spatial de marqueurs sous forme de cluster
 
 ## Carte en clusters classiques
 
-IMAGE13
+![carte clusters classiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_clusters.JPG "Carte en clusters classiques"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Cluster.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Cluster.html)
 
@@ -364,7 +364,7 @@ layout: {'text-field': '{point_count_abbreviated}',
 
 ## Carte en clusters thématiques
 
-IMAGE14
+![carte clusters thematiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_clusters_thematiques.JPG "Carte en clusters thématiques"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Clusterthematic.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Clusterthematic.html)
 
@@ -437,7 +437,7 @@ Avec le WebGL il est désormais assez simple d'intégrer de la 3D dans les carte
 
 Dans cette première carte on travaille avec deux variables visuelles, une **variable de couleur** et une **variable de taille** qui renvoient à la même donnée, la population de chaque carreaux.
 
-IMAGE15
+![carte 3d carroyage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_3d_carroyage.JPG "Carte 3D sur un carroyage de population"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/3Dmap.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/3Dmap.html)
 
@@ -475,7 +475,7 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
 
 Dans cette autre carte on travaille aussi avec deux variables visuelles, une **variable de couleur** et une **variable de taille**, mais qui renvoient ici à deux variables statistiques, **la population** (qui sert à l'extrusion) et la **densité de population** (qui sert à l'applat de couleurs) de chacune des communes bretonnes.
 
-IMAGE16
+![carte 3d bivariee](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_3d_bivariee.JPG "Carte 3D bivariée"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Choropleth3DMap.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Choropleth3DMap.html)
 
@@ -511,7 +511,7 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
 
 Avec le WebGL, il est simple d’extruder la hauteur des bâtiments pour représenter de manière plus réaliste les volumétries des villes. Dans cette dernière carte, il s'agit d'appliquer la même logique que précédamment en extrudant en 3D les bâtiments (BDTOPO de l'IGN) selon leur hauteur et en appliquant une graduation de couleur selon la hauteur.
 
-IMAGE17
+![carte 3d hauteurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/carte_3d_hauteurs.JPG "Carte 3D hauteurs de bâtiments"){: .img-center loading=lazy }
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Buildingmaps.html)  //  [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Buildingmaps.html)
 
