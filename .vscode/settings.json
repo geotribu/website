@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": ".venv\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Users\\Aurelien\\anaconda3\\envs\\Work\\python.exe",
     "python.formatting.provider": "black",
     "python.linting.enabled": false,
     "git.ignoreLimitWarning": true,
