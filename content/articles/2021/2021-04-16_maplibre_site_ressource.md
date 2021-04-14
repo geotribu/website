@@ -75,7 +75,7 @@ En complémente au  site Web, un [**projet GitLab**](https://gitlab.huma-num.fr/
 
 Afin d'éviter de dépendre d'un service commercial (payant) d'hébergement et surtout de s'affranchir de toutes clefs d'accès, l'ensemble des données spatiales des cartes présentées ici sont stockées sur [**un espace Github dédié**](https://github.com/mastersigat/data). Les données disponibles en *open data* (IGN, INSEE, Ville de Paris,...) sont toutes téléchargeables.
 
-![A REMPLACER](https://geotribu-pad.herokuapp.com/uploads/upload_50175a955009c9d4ebbce55ba835c706.png "A REMPLACER"){: .img-center loading=lazy }
+![github data](https://geotribu-pad.herokuapp.com/uploads/githubdata.JPG "Github Data"){: .img-center loading=lazy }
 
 Les données qui doivent être stockées en ligne sous format **Geojson** en **WGS84** (epsg:4326) sont directement appelées dans les codes des cartes.
 
