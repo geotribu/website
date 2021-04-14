@@ -55,13 +55,11 @@ Pour en savoir plus, vous pouvez [vous référer à cet article](http://lecfc.fr
 
 ## Un site pour présenter les potentialités de cartographie thématique de MapLibreGL
 
-Afin de **documenter** et de **partager**  une série d'expérimentations autour de la cartographie thématique sur le Web, la mise en place d'un [**site Web**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL.
+Afin de **documenter** et de **partager**  une série d'expérimentations autour de la cartographie thématique sur le Web, [la mise en place d'un **site Web**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL.
 
 Ce site Web se positionne à la fois comme un **agrégateur de cartes, de codes et une vitrine** des potentialités de cartographie thématique de MaplibreGL.
 
-![accueil site](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.JPG "Accueil site ressources MapLibre"){: .img-center loading=lazy }
-
-[Cliquez ici pour accéder au site](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) !
+[![accueil site](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.JPG "Accueil site ressources MapLibre"){: .img-center loading=lazy }](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL)
 
 ----
 
@@ -69,9 +67,7 @@ Ce site Web se positionne à la fois comme un **agrégateur de cartes, de codes 
 
 En complémente au  site Web, un [**projet GitLab**](https://gitlab.huma-num.fr/bmericskay/maplibre) permet de son côté de **centraliser les syntaxes HMTL/CSS/Javascript** de toutes les cartes dans un espace commun, ouvert et collaboratif.
 
-![projet gitlab](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/projet_gitlab.JPG "Projet GitLab"){: .img-center loading=lazy }
-
-Vous trouverez [le projet GitLab ici](https://gitlab.huma-num.fr/bmericskay/maplibre).
+[![projet gitlab](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/projet_gitlab.JPG "Projet GitLab"){: .img-center loading=lazy }](https://gitlab.huma-num.fr/bmericskay/maplibre)
 
 ----
 
@@ -79,7 +75,7 @@ Vous trouverez [le projet GitLab ici](https://gitlab.huma-num.fr/bmericskay/mapl
 
 Afin d'éviter de dépendre d'un service commercial (payant) d'hébergement et surtout de s'affranchir de toutes clefs d'accès, l'ensemble des données spatiales des cartes présentées ici sont stockées sur [**un espace Github dédié**](https://github.com/mastersigat/data). Les données disponibles en *open data* (IGN, INSEE, Ville de Paris,...) sont toutes téléchargeables.
 
-![A REMPLACER](https://geotribu-pad.herokuapp.com/uploads/upload_50175a955009c9d4ebbce55ba835c706.png)
+![A REMPLACER](https://geotribu-pad.herokuapp.com/uploads/upload_50175a955009c9d4ebbce55ba835c706.png "A REMPLACER"){: .img-center loading=lazy }
 
 Les données qui doivent être stockées en ligne sous format **Geojson** en **WGS84** (epsg:4326) sont directement appelées dans les codes des cartes.
 
@@ -554,4 +550,12 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
 
 ## Auteur
 
---8<-- "content/team/jmou.md"
+### Boris Mericskay
+
+![boris mericskay](https://cdn.geotribu.fr/img/internal/contributeurs/bmer.png "Boris Mericskay"){: .img-rdp-news-thumb }
+
+Enseignant-chercheur en géographie à [l'Université Rennes 2](https://perso.univ-rennes2.fr/boris.mericskay) et co-responsable du [master en géomatique SIGAT](https://sites-formations.univ-rennes2.fr/mastersigat/), mon travail consiste à enseigner les SIG (en licence et en master) et à faire de la recherche autour des questions des données urbaines, de l'analyse spatiale et de la géovisualisation en ligne.
+
+Passioné par les données spatiales (analyse et représentation), j'utilise essentiellement QGIS, R, Python, MapboxGL et KeplerGL. Je produis régulièrement des cartes et autres géovisualisations que je partage via mon [compte Twitter](https://twitter.com/BorisMericskay).
+
+J'ai créé un [site internet](https://bmericskay.github.io/portfolio/index.html) qui compile certaines de mes réalisations cartographiques, mes publications et quelques cours.
