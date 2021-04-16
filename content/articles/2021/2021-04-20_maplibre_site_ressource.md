@@ -1,21 +1,28 @@
 ---
-title: "Titre principal"
+title: "Faire de la cartographie thématique sur le Web avec MapLibreGL"
 authors: ["Boris MERICSKAY"]
 categories: ["article"]
 date: "2021-04-16 10:20"
 description: "Fork open source de MapboxGL, MapLibreGL représente l’une des solutions actuelles de cartographie en ligne les plus intéressantes. Afin de documenter et de partager une série d’expérimentations autour de la cartographie thématique sur le Web, la mise en place d’un site Web apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL."
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
-tags: "mot-clé-seo1,mot-clé-seo2"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.JPG"
+tags: "maplibre,ressource,site,libre"
 
 ---
 
 # Faire de la cartographie thématique sur le Web avec MapLibreGL
+
+:calendar: Date de publication initiale : 20 Avril 2021
+
+**Mots-clés :** MapLibre | Ressource
 
 Fork open source de MapboxGL, **MapLibreGL** représente l'une des solutions actuelles de cartographie en ligne  les plus intéressantes. Bénéficiant d'une communuaté active de plus de 300 contributeurs, la bibliotèque JavaScript [MapLibreGL.js](https://github.com/maplibre/maplibre-gl-js) permet de mettre en place très rapidement des cartes en lignes basées sur les **tuiles vectorielles** et le **WebGL**.
 
 ![maplibre](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/maplibre.JPG "Maplibre"){: .img-center loading=lazy }
 
 Cette bibliothèque de cartographie en ligne (côté client) repose sur la logique et la syntaxe de [MapboxGL.js](https://docs.mapbox.com/mapbox-gl-js/api/) (version 1.13). Au-delà de produire des cartes en ligne, elle offre de multiples possibilités pour la **cartographie thématique**, autement dit pour représenter sur une carte des données statistiques sous différentes formes.
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 <!-- markdownlint-disable MD033 -->
 ## Cartographie thématique <en ligne />
