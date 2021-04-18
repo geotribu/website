@@ -72,7 +72,7 @@ Ce site Web se positionne à la fois comme un **agrégateur de cartes, de codes 
 
 ## Un GitLab pour centraliser les syntaxes HMTL/CSS/Javascript
 
-En complémente au  site Web, un [**projet GitLab**](https://gitlab.huma-num.fr/bmericskay/maplibre) permet de son côté de **centraliser les syntaxes HMTL/CSS/Javascript** de toutes les cartes dans un espace commun, ouvert et collaboratif.
+En complément au  site Web, un [**projet GitLab**](https://gitlab.huma-num.fr/bmericskay/maplibre) permet de son côté de **centraliser les syntaxes HMTL/CSS/Javascript** de toutes les cartes dans un espace commun, ouvert et collaboratif.
 
 [![projet gitlab](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/projet_gitlab.JPG "Projet GitLab"){: .img-center loading=lazy }](https://gitlab.huma-num.fr/bmericskay/maplibre)
 
@@ -82,7 +82,7 @@ En complémente au  site Web, un [**projet GitLab**](https://gitlab.huma-num.fr/
 
 Afin d'éviter de dépendre d'un service commercial (payant) d'hébergement et surtout de s'affranchir de toutes clefs d'accès, l'ensemble des données spatiales des cartes présentées ici sont stockées sur [**un espace Github dédié**](https://github.com/mastersigat/data). Les données disponibles en *open data* (IGN, INSEE, Ville de Paris,...) sont toutes téléchargeables.
 
-![github data](https://geotribu-pad.herokuapp.com/uploads/githubdata.JPG "Github Data"){: .img-center loading=lazy }
+![github data](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/gihubdata.JPG "Github Data"){: .img-center loading=lazy }
 
 Les données qui doivent être stockées en ligne sous format **Geojson** en **WGS84** (epsg:4326) sont directement appelées dans les codes des cartes.
 
