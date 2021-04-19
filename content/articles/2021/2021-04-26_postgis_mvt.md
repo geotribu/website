@@ -2,7 +2,7 @@
 title: "Publier une couche PostGIS en tuiles vectorielles (MVT)"
 authors: ["Jean-Baptiste DESBAS"]
 categories: ["article", "tutoriel"]
-date: "2021-04-19 15:00"
+date: "2021-04-26 15:00"
 description: "Présentation d'un serveur léger de tuiles vectorielles"
 image: "server-web.png"
 tags: "geotribu,python,vector tiles,mvt"
@@ -10,7 +10,7 @@ tags: "geotribu,python,vector tiles,mvt"
 
 # Publier une couche PostGIS en tuiles vectorielles (MVT)
 
-:calendar: Date de publication initiale : 19 Avril 2021
+:calendar: Date de publication initiale : 26 Avril 2021
 
 **Mots-clés :** Mapbox Vector Tiles | MVT | Tuiles vectorielles | PostGIS | PostgreSQL
 
