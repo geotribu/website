@@ -18,7 +18,7 @@ Pré-requis :
 
 - Avoir une une base de données PostGIS >= 2.4 fonctionnelle
 - Savoir mettre un place un environnement virtuel Python (voir [Python : configuration sur Windows et outillage](https://static.geotribu.fr/articles/2020/2020-06-19_setup_python/) )
-- Avoir des notions sur l'administration d'un serveur web
+- Avoir des notions d'administration d'un serveur web
 
 ## Introduction
 
@@ -130,7 +130,7 @@ Un [paramétrage adéquat de PostGIS](http://www.postgis.fr/chrome/site/docs/wor
 Les tuiles vectorielles offrent de nombreux avantages et peuvent être (pré)générées sans nécessiter de lourds dispositifs. Elles conviennent aussi bien pour une utilisation web que SIG, et permettent plus de souplesse que les tuiles rasters pour le client.
 J'ai partagé le project [_Vectipy_](https://github.com/jbdesbas/vectipy) pour permettre la mise en place aussi simplement que possible de flux vectorielles et éviter l'installation et la maintenance de GeoServer ou MapServer. Si vous utilisez déjà ces outils, il est probable que le mini-serveur _Vectipy_ vous soit inutile.
 
-Il s'agit de mon premier projet ce genre, aussi n'hésitez pas à m'en faire un retour si vous en avez l'utilité.
+Il s'agit de mon premier projet ce genre, aussi je serais ravis d'avoir votre retour si vous en avez l'utilité.
 
 
 Voir aussi :
