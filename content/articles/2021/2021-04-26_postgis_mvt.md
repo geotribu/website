@@ -111,7 +111,7 @@ Il est aussi possible d'avoir une prévisualisation des couches ici : http://127
 ### Déploiement
 
 !!! warning "Production"
-    Le projet _Vectipy_ n'est pas encore assez avancé pour une utilisation en (grosse) production. 
+    Le projet _Vectipy_ n'est pas encore assez avancé pour une utilisation en (grosse) production.
 
 Pour un déploiement en production, l'utilisation de [Gunicorn / Nginx / Supervisor](https://medium.com/ymedialabs-innovation/deploy-flask-app-with-nginx-using-gunicorn-and-supervisor-d7a93aa07c18) est, à mon sens, une des solutions les plus simples et robustes. Voir aussi la [documention de Flask](https://flask.palletsprojects.com/en/1.1.x/deploying/).
 
@@ -121,7 +121,7 @@ pip install gunicorn
 gunicorn vectipy:app --bind 0.0.0.0:5001
 ```
 
-Un [paramétrage adéquat de PostGIS](http://www.postgis.fr/chrome/site/docs/workshop-foss4g/doc/tuning.html) et l'utilisation des bons indexes est particulièrement important, car c'est lui qui va faire le plus gros du travail : la sélection des données et la génération des tuiles. 
+Un [paramétrage adéquat de PostGIS](http://www.postgis.fr/chrome/site/docs/workshop-foss4g/doc/tuning.html) et l'utilisation des bons indexes est particulièrement important, car c'est lui qui va faire le plus gros du travail : la sélection des données et la génération des tuiles.
 
 
 
