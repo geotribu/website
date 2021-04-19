@@ -31,7 +31,7 @@ La méthode que je présente ici utilise [vectipy](https://github.com/jbdesbas/v
 
 Les tuiles vectorielles, aussi connues sous le nom de _Mapbox Vector Tiles_ (MVT), sont assez similaires aux tuiles matricielles (_raster_) fréquements utilisées pour les fonds de plan de cartes web.
 
-Comme leurs nom l'indique, les tuiles vectorielles sont composées des données vectorielles, elles offrents plusieurs avantages :
+Comme leur nom l'indique, les tuiles vectorielles sont composées des données vectorielles, elles offrent plusieurs avantages :
 - Beaucoup plus légères que les tuiles _raster_
 - Une symbologie effectuée côté client, donc dynamique et modifiable sans recharger les tuiles
 - Une génération rapide côté serveur, donc peu de besoin de stocker des tuiles en cache (le cas échéant les caches sont très légers)
