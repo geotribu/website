@@ -172,4 +172,3 @@ Voir aussi :
 Géomaticien avec une forte appétence pour les thématiques environnement, biodiersité et urbanisme. Je travail en tant que gestionnaire de base de données à l'association [Picardie Nature](http://picardie-nature.org), où j'ai la chance de pouvoir insuffler une logique _open data_ au sein de la communauté naturaliste.
 
 Convaincu de la qualité et de la périnité des nombreuses solutions libres que nous avons la chance d'avoir à notre portée, je n'utilise (quasi) exclusivement que des logiciels sous licence libre. Longtemps consommateur de ces outils, j'essaie aujourd'hui d'apporter des contributions modestes, mais concrètes, au travers de projets tels que [ArrayPlus](https://plugins.qgis.org/plugins/arrayplus/) et [Vectipy](https://github.com/jbdesbas/vectipy).
-
