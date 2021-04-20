@@ -31,7 +31,7 @@ La méthode que je présente ici utilise [vectipy](https://github.com/jbdesbas/v
 
 ## Les tuiles vectorielles
 
-Les tuiles vectorielles, aussi connues sous le nom de _Mapbox Vector Tiles_ (MVT), sont assez similaires aux tuiles matricielles (_raster_) fréquemment utilisées pour les fonds de plan de cartes web.
+Les [tuiles vectorielles](https://docs.qgis.org/3.16/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html), aussi connues sous le nom de _Mapbox Vector Tiles_ (MVT), sont assez similaires aux tuiles matricielles (_raster_) fréquemment utilisées pour les fonds de plan de cartes web.
 
 Comme leur nom l'indique, les tuiles vectorielles sont composées des données vectorielles, elles offrent plusieurs avantages :
 
@@ -40,23 +40,23 @@ Comme leur nom l'indique, les tuiles vectorielles sont composées des données v
 - Une génération rapide côté serveur, donc peu de besoin de stocker des tuiles en cache (le cas échéant les caches sont très légers)
 - Le résultat peut être redimensionné, exporté ou imprimé sans perte de qualité
 
-Commes pour les tuiles raster, les tuiles vecteurs pré-générées peuvent être stockées et servies avec un simple serveur web de fichiers statiques. Ces dernières sont toutefois beaucoup moins gourmandes en espace disque et bande passante, et surtout _un seul jeu suffit pour une infinité de styles_.
+Comme pour les tuiles raster, les tuiles vecteurs pré-générées peuvent être stockées et servies avec un simple serveur web de fichiers statiques. Ces dernières sont toutefois beaucoup moins gourmandes en espace disque et bande passante, et surtout _un seul jeu suffit pour une infinité de styles_.
 
-L'utilisation se fait de manière analogue aux tuiles rasters, c'est à dire avec une url de la forme _http(s)://mondomaine.fr/macouche/{z}/{x}/{y}.pbf_. Si le client le permet, il est généralement possible d'utiliser un fichier de métadonnées [tileJSON](https://docs.mapbox.com/help/glossary/tilejson/), souvent disponible sur http(s)://mondomaine.fr/macouhe.json.
+L'utilisation se fait de manière analogue aux tuiles rasters, c'est à dire avec une URL de la forme `http(s)://mondomaine.fr/macouche/{z}/{x}/{y}.pbf`. Si le client le permet, il est généralement possible d'utiliser un fichier de métadonnées [tileJSON](https://docs.mapbox.com/help/glossary/tilejson/), souvent disponible sur `http(s)://mondomaine.fr/macouhe.json`.
 
-Les tuiles sont généralement (mais pas obligatoirement) encodées au format [Protobuf](https://wiki.openstreetmap.org/wiki/PBF_Format) (pbf), ce qui permet d'en réduire encore la taille.
+Les tuiles sont généralement (mais pas obligatoirement) encodées au format [Protobuf](https://wiki.openstreetmap.org/wiki/PBF_Format) (`.pbf`), ce qui permet d'en réduire encore la taille.
 
-### Génération
+### Génération des tuiles
 
-PostGIS permet de directement générer des tuiles grâce à la fonction [ST_AsMVT](https://postgis.net/docs/ST_AsMVT.html) avec des [bonnes performances](https://blog.cleverelephant.ca/2019/08/postgis-3-mvt.html). C'est ce principe qui sera utiliser pour mettre en place un serveur de tuiles.
+PostGIS permet de directement générer des tuiles grâce à la fonction [ST_AsMVT](https://postgis.net/docs/ST_AsMVT.html) avec des [bonnes performances](https://blog.cleverelephant.ca/2019/08/postgis-3-mvt.html). C'est ce principe qui sera utilisé ici pour mettre en place un serveur de tuiles.
 
-QGIS permet également de prégénérer des tuiles à partir de n'importe quel fichier vectoriel compatible (Boite à outil --> \_Ecrire des tuiles vectorielles).
+QGIS permet également de prégénérer des tuiles à partir de n'importe quel fichier vectoriel compatible ([`Boite à outils`](https://docs.qgis.org/3.16/fr/docs/user_manual/processing/toolbox.html) --> `Ecrire des tuiles vectorielles`).
 
 ### Utilisation
 
 Les flux ainsi publiés sont utilisables par une interface web avec [MapLibre GL](https://github.com/maplibre/maplibre-gl-js), [Leaflet](https://github.com/Leaflet/Leaflet) (avec plugin), mais aussi [supportées nativement par QGIS](https://makina-corpus.com/blog/metier/2020/qgis-nouveau-support-tuiles-rasters-vectorielles) depuis la version 3.14.
 
-[Cet article](/articles/2021/2021-02-23_carte_ligne_libre/) vous explique comment styliser un fichier geoJSON sur carte MapLibre. Le fonctionnement avec un flux MVT est rigouresement identique, la seule différence se faisant au moment de la définition de la source de données :
+[Cet article](/articles/2021/2021-02-23_carte_ligne_libre/) vous explique comment styliser un fichier GeoJSON sur carte MapLibre. Le fonctionnement avec un flux MVT est rigoureusement identique, la seule différence se faisant au moment de la définition de la source de données :
 
 ```javascript
 map.addSource("my-data", {
@@ -66,20 +66,27 @@ map.addSource("my-data", {
 });
 ```
 
-L'utilisation d'un flux MVT, plutôt qu'un fichier GeoJSON, permet d'afficher des couches composées de millions d'élements, puisque les données nécessaires sont chargées au fur et à mesure des besoins (zoom et déplacements sur la carte). Attention, cela ne signifie pas que le client sera capable de charger et afficher **simultanément** des millions d'entités (par exemple lorsque l'emprise inclue la terre entière). Et même s'il en été capable, le résultat sera probablement illisible. Dans ce cas, il convient donc, soit de limiter le niveau de zoom, soit d'étudier un autre mode de représentation (aggrégation, etc.). MapLibre GL permet toutefois l'affichage de plusieurs milliers de points sans ralentissements notables.
+L'utilisation d'un flux MVT, plutôt qu'un fichier GeoJSON, permet d'afficher des couches composées de millions d'élements, puisque les données nécessaires sont chargées au fur et à mesure des besoins (zoom et déplacements sur la carte). Attention, cela ne signifie pas que le client sera capable de charger et afficher **simultanément** des millions d'entités (par exemple lorsque l'emprise inclut la terre entière). Et même s'il en était capable, le résultat sera probablement illisible :wink:.  
+Dans ce cas, il convient :
 
+- soit de limiter le niveau de zoom,
+- soit d'étudier un autre mode de représentation (aggrégation, etc.)
+
+MapLibre GL permet toutefois l'affichage de plusieurs milliers de points sans ralentissements notables.  
 Sur QGIS, les données du flux peuvent être stylisées avec le moteur de symbologie. Le support des tuiles vectorielles est assez récent, mais il offre une alternative simple au WFS.
 
-## Mise en place des flux avec vectipy
+----
 
-Commencez par cloner le dépot, ou [télécharger](https://github.com/jbdesbas/vectipy/archive/refs/heads/main.zip) les fichiers :
+## Mise en place des flux avec Vectipy
+
+Commencez par cloner le dépot ou [télécharger](https://github.com/jbdesbas/vectipy/archive/refs/heads/main.zip) les fichiers :
 
 ```bash
 git clone git@github.com:jbdesbas/vectipy.git
 cd vectipy
 ```
 
-Mettez en place un environnement virtuel avec virtualenv, activez-le et installez les dépendences (Flask et psycopg2) :
+Mettez en place un environnement virtuel avec virtualenv, activez-le et installez les dépendances (Flask et psycopg2) :
 
 ```bash
 virtualenv -p python3 venv
@@ -108,15 +115,20 @@ python vectipy.py run -p 5000
 
 ![screenshot vectipy run](https://raw.githubusercontent.com/jbdesbas/vectipy/main/screenshot1.png)
 
-Les flux et fichiers de métadonnées sont disponibles respectivement sur les url suivantes : <http://127.0.0.1:5000/macouhe/{z}/{x}/{y}.pbf> et <http://127.0.0.1:5000/macouhe.json>.  
-Il est aussi possible d'avoir une prévisualisation des couches ici : <http://127.0.0.1:5000/map/macouhe>
+Les flux et fichiers de métadonnées sont disponibles respectivement sur les URL suivantes :
+
+- <http://127.0.0.1:5000/macouhe/{z}/{x}/{y}.pbf>
+- <http://127.0.0.1:5000/macouhe.json>.  
+
+Il est aussi possible d'avoir une prévisualisation des couches ici : <http://127.0.0.1:5000/map/macouhe>.
 
 ### Déploiement
 
 !!! warning "Production"
     Le projet _Vectipy_ n'est pas encore assez avancé pour une utilisation en (grosse) production.
 
-Pour un déploiement en production, l'utilisation de [Gunicorn / Nginx / Supervisor](https://medium.com/ymedialabs-innovation/deploy-flask-app-with-nginx-using-gunicorn-and-supervisor-d7a93aa07c18) est, à mon sens, une des solutions les plus simples et robustes. Voir aussi la [documention de Flask](https://flask.palletsprojects.com/en/1.1.x/deploying/).
+Pour un déploiement en production, l'utilisation de [Gunicorn / Nginx / Supervisor](https://medium.com/ymedialabs-innovation/deploy-flask-app-with-nginx-using-gunicorn-and-supervisor-d7a93aa07c18) est, à mon sens, une des solutions les plus simples et robustes.  
+Voir aussi la [documention de Flask](https://flask.palletsprojects.com/en/1.1.x/deploying/).
 
 Pour lancer le serveur avec gunicorn :
 
