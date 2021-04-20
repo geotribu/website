@@ -2,7 +2,7 @@
 title: "Faire de la cartographie thématique sur le Web avec MapLibreGL"
 authors: ["Boris MERICSKAY"]
 categories: ["article"]
-date: "2021-04-16 10:20"
+date: "2021-04-20 10:20"
 description: "Fork open source de MapboxGL, MapLibreGL représente l’une des solutions actuelles de cartographie en ligne les plus intéressantes. Afin de documenter et de partager une série d’expérimentations autour de la cartographie thématique sur le Web, la mise en place d’un site Web apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.JPG"
 tags: "maplibre,ressource,site,libre"
@@ -561,7 +561,7 @@ Petit bonus pour terminer ce tour d'horizon des potentialités de MapLibreGL en 
 * la **[carte animée](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Animation.html)** qui bouge toute seule ! [*Code Gitlab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Animation.html)
 * la carte où tu peux même intégrer des **[services WMS](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/WMSmap.html)** dans du MapLibreGL ! [*Code Gitlab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/WMSmap.html)
 
-Bref MapLibre c'est une super solution, assez simple de prise en main, donc plus aucune raison de ne pas opérer sa conversion à la cartographie en ligne en mode libre et avec qualité !
+Bref, MapLibre c'est une super solution, assez simple de prise en main, donc plus aucune raison de ne pas opérer sa conversion à la cartographie en ligne en mode libre et avec qualité !
 
 ![meme maplibre](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/meme_maplibre.jpg "Meme MapLibre"){: .img-center loading=lazy }
 
