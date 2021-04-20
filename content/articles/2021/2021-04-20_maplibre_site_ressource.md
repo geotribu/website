@@ -4,8 +4,8 @@ authors: ["Boris MERICSKAY"]
 categories: ["article"]
 date: "2021-04-20 10:20"
 description: "Fork open source de MapboxGL, MapLibreGL représente l’une des solutions actuelles de cartographie en ligne les plus intéressantes. Afin de documenter et de partager une série d’expérimentations autour de la cartographie thématique sur le Web, la mise en place d’un site Web apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.JPG"
-tags: "maplibre,ressource,site,libre"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.png"
+tags: "maplibre,ressource,site,libre,mapboxgl,web cart"
 
 ---
 
@@ -13,7 +13,7 @@ tags: "maplibre,ressource,site,libre"
 
 :calendar: Date de publication initiale : 20 Avril 2021
 
-**Mots-clés :** MapLibre | Ressource
+**Mots-clés :** MapLibreGL | Ressource | webmapping
 
 Fork open source de MapboxGL, **MapLibreGL** représente l'une des solutions actuelles de cartographie en ligne  les plus intéressantes. Bénéficiant d'une communuaté active de plus de 300 contributeurs, la bibliotèque JavaScript [MapLibreGL.js](https://github.com/maplibre/maplibre-gl-js) permet de mettre en place très rapidement des cartes en lignes basées sur les **tuiles vectorielles** et le **WebGL**.
 
@@ -24,9 +24,9 @@ Cette bibliothèque de cartographie en ligne (côté client) repose sur la logiq
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
-<!-- markdownlint-disable MD033 -->
-## Cartographie thématique <en ligne />
-<!-- markdownlint-enable MD033 -->
+----
+
+## Cartographie thématique <en ligne /\>
 
 Côté francophone, on parle beaucoup de **sémiologie graphique** pour désigner l’ensemble des règles permettant l’utilisation d’un système graphique de signes pour la transmission via une carte d’une information correcte et accessible à un lecteur.
 
