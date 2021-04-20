@@ -50,7 +50,7 @@ Pour aller plus loin  :
 
 ![semiologie graphique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/semio_graphique.png "Sémiologie graphique"){: .img-center loading=lazy }
 
-Sur le Web, il est davantage question d'une **cartographie guidée par les données (*data driven style*)**, autrement dit basée sur la nature des données (donc des variables), comme le mettent en avant des éditeurs comme [Mapbox](https://docs.mapbox.com/help/getting-started/map-design/#data-driven-styles) ou [Microsoft](https://docs.microsoft.com/fr-fr/azure/azure-maps/data-driven-style-expressions-web-sdk). Au final la logique est exactement la même que celle de la sémiologie graphique de Jacques Bertin, à savoir adapter les modes de représentation cartographique à la nature des données...
+Sur le Web, il est davantage question d'une **cartographie guidée par les données (_data driven style_)**, autrement dit basée sur la nature des données (donc des variables), comme le mettent en avant des éditeurs comme [Mapbox](https://docs.mapbox.com/help/getting-started/map-design/#data-driven-styles) ou [Microsoft](https://docs.microsoft.com/fr-fr/azure/azure-maps/data-driven-style-expressions-web-sdk). Au final la logique est exactement la même que celle de la sémiologie graphique de Jacques Bertin, à savoir adapter les modes de représentation cartographique à la nature des données...
 
 Le développement de la cartographie sur le web ne **marque pas véritablement de rupture avec les approches "classiques"**. Elle s’appuie simplement sur une **réinterprétation de règles et de principes établis** il y a plus de cinquante ans, mais réinvestis dans un contexte socio-technique différent où les pratiques, les utilisateurs comme les outils ont largement évolué.
 
@@ -62,9 +62,9 @@ Pour en savoir plus, vous pouvez [vous référer à cet article](http://lecfc.fr
 
 ## Un site pour présenter les potentialités de cartographie thématique de MapLibreGL
 
-Afin de **documenter** et de **partager**  une série d'expérimentations autour de la cartographie thématique sur le Web, [la mise en place d'un **site Web**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL.
+Afin de **documenter** et de **partager** une série d'expérimentations autour de la cartographie thématique sur le Web, [la mise en place d'un **site Web**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL) apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL.
 
-Ce site Web se positionne à la fois comme un **agrégateur de cartes, de codes et une vitrine** des potentialités de cartographie thématique de MaplibreGL.
+Ce site Web se positionne à la fois comme un **agrégateur de cartes, d'extraits de code (_snippets_) et une vitrine** des potentialités de cartographie thématique de MaplibreGL.
 
 [![accueil site](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.JPG "Accueil site ressources MapLibre"){: .img-center loading=lazy }](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL)
 
@@ -80,16 +80,16 @@ En complément au  site Web, un [**projet GitLab**](https://gitlab.huma-num.fr/b
 
 ## Un espace Github pour héberger les données spatiales
 
-Afin d'éviter de dépendre d'un service commercial (payant) d'hébergement et surtout de s'affranchir de toutes clefs d'accès, l'ensemble des données spatiales des cartes présentées ici sont stockées sur [**un espace Github dédié**](https://github.com/mastersigat/data). Les données disponibles en *open data* (IGN, INSEE, Ville de Paris,...) sont toutes téléchargeables.
+Afin d'éviter de dépendre d'un service commercial (payant) d'hébergement et surtout de s'affranchir de toute clé d'accès, l'ensemble des données spatiales des cartes présentées ici sont stockées sur [**un espace Github dédié**](https://github.com/mastersigat/data). Les données disponibles en *open data* (IGN, INSEE, Ville de Paris...) sont toutes téléchargeables.
 
 ![github data](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/gihubdata.JPG "Github Data"){: .img-center loading=lazy }
 
-Les données qui doivent être stockées en ligne sous format **Geojson** en **WGS84** (epsg:4326) sont directement appelées dans les codes des cartes.
+Les données qui doivent être stockées en ligne sous format **GeoJSON** en **WGS84** ([EPSG:4326](https://epsg.io/4326)) sont directement appelées dans les codes des cartes.
 
 ```js
 map.addSource("Nomdelasource", {
-              type: "geojson",
-              data: "URLduGeojson",
+  type: "geojson",
+  data: "URLduGeoJSON",
 });
 ```
 
@@ -118,29 +118,32 @@ Ici **l'appel des différents fonds de carte** en tuiles vectorielles (avec les 
 
 ```html
 <div id="menu"><b>Choose your Basemap Style</b> <hr>
-<input id="https://api.maptiler.com/maps/voyager/style.json?key=rrASqj6frF6l2rrOFR4A" type="radio" name="rtoggle" value="Voyager" checked />Voyager
-<input id="https://api.maptiler.com/maps/streets/style.json?key=rrASqj6frF6l2rrOFR4A" type="radio" name="rtoggle" value="Streets" />Streets
-<input id="https://api.maptiler.com/maps/toner/style.json?key=rrASqj6frF6l2rrOFR4A" type="radio" name="rtoggle" value="Toner" />Toner
-<input id="https://geoserveis.icgc.cat/contextmaps/hibrid.json" type="radio" name="rtoggle" value="Hibrid" />Hibrid
-<input id="https://geoserveis.icgc.cat/contextmaps/osm-bright.json" type="radio" name="rtoggle" value="OSMbright"/>OSM-Bright
-<input id="https://geoserveis.icgc.cat/contextmaps/icgc.json" type="radio" name="rtoggle" value="ICGC" />ICGC
-<input id="https://geoserveis.icgc.cat/contextmaps/positron.json" type="radio" name="rtoggle" value="Positron" />Positron
-<input id="https://geoserveis.icgc.cat/contextmaps/fulldark.json" type="radio" name="rtoggle" value="Fulldark" />Fulldark
-<input id="https://geoserveis.icgc.cat/contextmaps/night.json" type="radio" name="rtoggle" value="Night" />Night
+  <input id="https://api.maptiler.com/maps/voyager/style.json?key=rrASqj6frF6l2rrOFR4A" type="radio" name="rtoggle" value="Voyager" checked />Voyager
+  <input id="https://api.maptiler.com/maps/streets/style.json?key=rrASqj6frF6l2rrOFR4A" type="radio" name="rtoggle" value="Streets" />Streets
+  <input id="https://api.maptiler.com/maps/toner/style.json?key=rrASqj6frF6l2rrOFR4A" type="radio" name="rtoggle" value="Toner" />Toner
+  <input id="https://geoserveis.icgc.cat/contextmaps/hibrid.json" type="radio" name="rtoggle" value="Hibrid" />Hibrid
+  <input id="https://geoserveis.icgc.cat/contextmaps/osm-bright.json" type="radio" name="rtoggle" value="OSMbright"/>OSM-Bright
+  <input id="https://geoserveis.icgc.cat/contextmaps/icgc.json" type="radio" name="rtoggle" value="ICGC" />ICGC
+  <input id="https://geoserveis.icgc.cat/contextmaps/positron.json" type="radio" name="rtoggle" value="Positron" />Positron
+  <input id="https://geoserveis.icgc.cat/contextmaps/fulldark.json" type="radio" name="rtoggle" value="Fulldark" />Fulldark
+  <input id="https://geoserveis.icgc.cat/contextmaps/night.json" type="radio" name="rtoggle" value="Night" />Night
 </div>
 ```
 
 Le **changement des fonds de cartes** est paramétré dans la partie script.
 
 ```js
-var layerList = document.getElementById('menu');
-var inputs = layerList.getElementsByTagName('input');
+var layerList = document.getElementById("menu");
+var inputs = layerList.getElementsByTagName("input");
 
 function switchLayer(layer) {
-var layerId = layer.target.id;
-map.setStyle(layerId);}
+  var layerId = layer.target.id;
+  map.setStyle(layerId);
+}
 
-for (var i = 0; i < inputs.length; i++) {inputs[i].onclick = switchLayer;}
+for (var i = 0; i < inputs.length; i++) {
+  inputs[i].onclick = switchLayer;
+}
 ```
 
 ----
@@ -153,26 +156,37 @@ Une carte de points est un type de carte thématique qui utilise un signe ponctu
 
 [**Ouvrir la carte en plein écran**](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Dotmap.html)  // [*Voir le code sur GitLab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Dotmap.html)
 
-La mise en forme des points s'appuie ici sur une syntaxe simple, on **définit la variable à catégoriser** ```match,['get', 'variable']```et les **correspondances entre les modalités de la variables et les couleurs** désirées via ```circle_color```.
+La mise en forme des points s'appuie ici sur une syntaxe simple, on **définit la variable à catégoriser** `match,['get', 'variable']` et les **correspondances entre les modalités de la variables et les couleurs** désirées via `circle_color`.
 
-Dans cet exemple, ```circle-radius``` est mobilisé pour proposer une symbologie de la **taille des points adaptative** au niveau de zoom (on définit un niveau de zoom et la taille désirée à plusieurs échelles).
+Dans cet exemple, `circle-radius` est mobilisé pour proposer une symbologie de la **taille des points adaptative** au niveau de zoom (on définit un niveau de zoom et la taille désirée à plusieurs échelles).
 
- ```js
- map.addLayer({
-            'id': 'Stations',
-            'type': 'circle',
-            'source': 'Stations',
-            'paint': {
-            'circle-radius': {
-                'base': 0.6,
-                'stops': [[12, 1.5], [14, 2], [20, 4]]},
-            'circle-color': [
-                'match',['get', 'type'],
-                'A', '#fbb03b',
-                'B', '#0074D9',
-                'C', '#2ECC40',
-                /* other */ '#ccc'
-            ]}
+```javascript
+map.addLayer({
+  id: "Stations",
+  type: "circle",
+  source: "Stations",
+  paint: {
+    "circle-radius": {
+      base: 0.6,
+      stops: [
+        [12, 1.5],
+        [14, 2],
+        [20, 4],
+      ],
+    },
+    "circle-color": [
+      "match",
+      ["get", "type"],
+      "A",
+      "#fbb03b",
+      "B",
+      "#0074D9",
+      "C",
+      "#2ECC40",
+      /* other */ "#ccc",
+    ],
+  },
+});
 ```
 
 ----
@@ -193,19 +207,25 @@ La syntaxe de mise en forme renvoie à trois éléments :
 
 ```js
 map.addLayer({
-        'id': 'Municipalities',
-        'type': 'fill',
-        'source': 'Municipalities',
-        'layout': {'visibility': 'visible'},
-        'paint': {'fill-outline-color': '#000000',
-                 'fill-color': { property: 'density',
-                  stops: [[20, '#4d9221'],
-                         [50, '#a1d76a'],
-                         [100, '#e6f5d0'],
-                         [200, '#fde0ef'],
-                         [500, '#e9a3c9'],
-                         [1000, '#c51b7d'],]},
-                 'fill-opacity': 0.9}
+  id: "Municipalities",
+  type: "fill",
+  source: "Municipalities",
+  layout: { visibility: "visible" },
+  paint: {
+    "fill-outline-color": "#000000",
+    "fill-color": {
+      property: "density",
+      stops: [
+        [20, "#4d9221"],
+        [50, "#a1d76a"],
+        [100, "#e6f5d0"],
+        [200, "#fde0ef"],
+        [500, "#e9a3c9"],
+        [1000, "#c51b7d"],
+      ],
+    },
+    "fill-opacity": 0.9,
+  },
 });
 ```
 
@@ -228,20 +248,26 @@ La syntaxe de mise en forme ```circle-radius```renvoie à deux éléments :
 
 ```js
 map.addLayer({
-            'id': 'Stations',
-            'type': 'circle',
-            'source': 'Stations',
-            'paint': {'circle-stroke-color': 'white',
-                      'circle-stroke-width': 1,
-                      'circle-radius': {property: 'capacity',
-                                       type: 'exponential',
-                                       stops: [[0, 0],
-                                               [95, 20]]},
-                      'circle-color': '#0074D9'}}
-                 );
+  id: "Stations",
+  type: "circle",
+  source: "Stations",
+  paint: {
+    "circle-stroke-color": "white",
+    "circle-stroke-width": 1,
+    "circle-radius": {
+      property: "capacity",
+      type: "exponential",
+      stops: [
+        [0, 0],
+        [95, 20],
+      ],
+    },
+    "circle-color": "#0074D9",
+  },
+});
 ```
 
-### Carte en symboles proportionnels avec  graduation de couleur
+### Carte en symboles proportionnels avec graduation de couleur
 
 Ici on combine **deux variables visuelles, la taille et la couleur**. Dans notre cas, on procède à une redondance visuelle de l'information relative aux nombres de vélibs par station qui sont mis en forme à travers la taille des points et leur couleur.
 
@@ -388,7 +414,7 @@ En gros, la syntaxe s'appuie sur plusieurs élements comme :
 
 * Définir en amont chacune des modalités qui serton prises en compte dans le clustering et leur associer une couleur
 
->Dans mon exemple la variable (nom du champ) se nomme ***type*** et renvoie à trois modalités dans le geojson (*A*, *B* et *C*) > [voir le Geojson](https://raw.githubusercontent.com/mastersigat/data/main/DMR.geojson)
+>Dans mon exemple la variable (nom du champ) se nomme ***type*** et renvoie à trois modalités dans le geojson (*A*, *B* et *C*) > [voir le GeoJSON](https://raw.githubusercontent.com/mastersigat/data/main/DMR.geojson)
 
 ```js
 var mag1 = ['match',['get', 'type'],
