@@ -553,6 +553,20 @@ La syntaxe de paramètrage et de mise en forme repose sur deux principaux éleme
 
 ----
 
+## En bonus
+
+Petit bonus pour terminer ce tour d'horizon des potentialités de MapLibreGL en termes de cartographie thématique, trois autres syntaxes fonctionnelles de cartes en ligne qui peuvent servir dans certains contexte !
+
+* la **[carte glissante](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Swipemap.html)** (*swipe map*) pour visualiser deux fonds de carte ! [*Code Gitlab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Swipemap.html)
+* la **[carte animée](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/Animation.html)** qui bouge toute seule ! [*Code Gitlab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/Animation.html)
+* la carte où tu peux même intégrer des **[services WMS](https://sites-formations.univ-rennes2.fr/mastersigat/MaplibreGL/maps/WMSmap.html)** dans du MapLibreGL ! [*Code Gitlab*](https://gitlab.huma-num.fr/bmericskay/maplibre/-/blob/master/WMSmap.html)
+
+Bref MapLibre c'est une super solution, assez simple de prise en main, donc plus aucune raison de ne pas opérer sa conversion à la cartographie en ligne en mode libre et avec qualité !
+
+![meme maplibre](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/meme_maplibre.jpg "Meme MapLibre"){: .img-center loading=lazy }
+
+----
+
 ## Auteur
 
 ### Boris Mericskay
