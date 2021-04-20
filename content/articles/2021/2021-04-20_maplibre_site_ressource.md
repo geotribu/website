@@ -137,11 +137,11 @@ var inputs = layerList.getElementsByTagName("input");
 function switchLayer(layer) {
   var layerId = layer.target.id;
   map.setStyle(layerId);
-}
+};
 
 for (var i = 0; i < inputs.length; i++) {
   inputs[i].onclick = switchLayer;
-}
+};
 ```
 
 ----
@@ -281,21 +281,33 @@ La syntaxe de mise en forme renvoie à trois éléments :
 
 ```js
 map.addLayer({
-            'id': 'Stations',
-            'type': 'circle',
-            'source': 'Stations',
-            'paint': {'circle-stroke-color': '#ffffff',
-                      'circle-stroke-width': 0.6,
-                      'circle-radius': {property: 'capacity',
-                                       type: 'exponential',
-                                       stops: [[0, 0],[100, 20]]},
-                      'circle-color': {property: 'capacity',
-                                      stops: [[20, '#2c7bb6'],
-                                              [30, '#abd9e9'],
-                                              [40, '#ffffbf'],
-                                              [50, '#fdae61'],
-                                              [60, '#d7191c'],]},
-                      'circle-opacity':0.9}}
+  id: "Stations",
+  type: "circle",
+  source: "Stations",
+  paint: {
+    "circle-stroke-color": "#ffffff",
+    "circle-stroke-width": 0.6,
+    "circle-radius": {
+      property: "capacity",
+      type: "exponential",
+      stops: [
+        [0, 0],
+        [100, 20],
+      ],
+    },
+    "circle-color": {
+      property: "capacity",
+      stops: [
+        [20, "#2c7bb6"],
+        [30, "#abd9e9"],
+        [40, "#ffffbf"],
+        [50, "#fdae61"],
+        [60, "#d7191c"],
+      ],
+    },
+    "circle-opacity": 0.9,
+  },
+});
 ```
 
 ----
@@ -449,7 +461,7 @@ La syntaxe de paramètrage et de mise en forme de cluster thématiques est **com
 
 En gros, la syntaxe s'appuie sur plusieurs élements comme :
 
-- Définir en amont chacune des modalités qui serton prises en compte dans le clustering et leur associer une couleur
+- Définir en amont chacune des modalités qui seront prises en compte dans le clustering et leur associer une couleur
 
 > Dans mon exemple la variable (nom du champ) se nomme **_type_** et renvoie à trois modalités dans le geojson (_A_, _B_ et _C_) > [voir le GeoJSON](https://raw.githubusercontent.com/mastersigat/data/main/DMR.geojson)
 
@@ -485,12 +497,9 @@ map.addSource("earthquakes", {
 
 ```js
 function createDonutChart(props) {
-var offsets = [];
-var counts = [
-props.mag1,
-props.mag2,
-props.mag3
-];
+  var offsets = [];
+  var counts = [props.mag1, props.mag2, props.mag3];
+};
 ```
 
 - Enfin, configurer à la fois la **taille des étiquettes** des clusters `var fontSize` et la **taille des clusters** `var r`
@@ -668,6 +677,6 @@ Bref, MapLibre c'est une super solution, assez simple de prise en main, donc plu
 
 Enseignant-chercheur en géographie à [l'Université Rennes 2](https://perso.univ-rennes2.fr/boris.mericskay) et co-responsable du [master en géomatique SIGAT](https://sites-formations.univ-rennes2.fr/mastersigat/), mon travail consiste à enseigner les SIG (en licence et en master) et à faire de la recherche autour des questions des données urbaines, de l'analyse spatiale et de la géovisualisation en ligne.
 
-Passioné par les données spatiales (analyse et représentation), j'utilise essentiellement QGIS, R, Python, MapboxGL et KeplerGL. Je produis régulièrement des cartes et autres géovisualisations que je partage via mon [compte Twitter](https://twitter.com/BorisMericskay).
+Passionné par les données spatiales (analyse et représentation), j'utilise essentiellement QGIS, R, Python, MapboxGL et KeplerGL. Je produis régulièrement des cartes et autres géovisualisations que je partage via mon [compte Twitter](https://twitter.com/BorisMericskay).
 
 J'ai créé un [site internet](https://bmericskay.github.io/portfolio/index.html) qui compile certaines de mes réalisations cartographiques, mes publications et quelques cours.
