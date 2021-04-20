@@ -17,12 +17,18 @@ tags: "python,vector tiles,mvt,vectipy"
 Pré-requis :
 
 - Avoir une une base de données PostGIS >= 2.4 fonctionnelle
-- Savoir mettre un place un environnement virtuel Python (voir [Python : configuration sur Windows et outillage](/articles/2020/2020-06-19_setup_python/))
+- Savoir créer un environnement virtuel Python (voir [Python : configuration sur Windows et outillage](/articles/2020/2020-06-19_setup_python/))
 - Avoir des notions d'administration d'un serveur web
 
 ## Introduction
 
-La méthode que je présente ici utilise [vectipy](https://github.com/jbdesbas/vectipy), un projet libre sans prétention permettant de publier un flux de tuiles vectorielles à partir de couches PostGIS. L'objectif est de pouvoir publier des données stockées dans une base PostGIS, sans installer et administrer un GeoServer ou MapServer. Le flux de tuiles vectorielles peut convenir aussi bien à un usage web que SIG.
+Le serveur de tuiles [vectipy](https://github.com/jbdesbas/vectipy) peut vous interesser si :
+- Vous disposez de données spatiales sur une base PostGIS
+- Vous souhaitez partager ces données via une carte en ligne et/ou un flux SIG
+- Vous ne souhaitez pas (ou ne pouvez pas) mettre en place et administrer une "solution lourde" telle que GeoServer, MapServer ou QGIS Server.
+
+
+La solution que je développe ici est un projet libre de serveur permettant de publier, aussi facilement que possible, un flux de tuiles vectorielles. Ce flux peut convenir aussi bien à un usage web que SIG. Il exploite la faculter de PostGIS à générer des tuiles vectorielles directement depuis une requête SQL, ces tuiles sont ensuites mise à disposition par le micro-framework web [Flask](https://flask.palletsprojects.com/).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -42,7 +48,7 @@ Comme leur nom l'indique, les tuiles vectorielles sont composées des données v
 
 Comme pour les tuiles raster, les tuiles vecteurs pré-générées peuvent être stockées et servies avec un simple serveur web de fichiers statiques. Ces dernières sont toutefois beaucoup moins gourmandes en espace disque et bande passante, et surtout _un seul jeu suffit pour une infinité de styles_.
 
-L'utilisation se fait de manière analogue aux tuiles rasters, c'est à dire avec une URL de la forme `http(s)://mondomaine.fr/macouche/{z}/{x}/{y}.pbf`. Si le client le permet, il est généralement possible d'utiliser un fichier de métadonnées [tileJSON](https://docs.mapbox.com/help/glossary/tilejson/), souvent disponible sur `http(s)://mondomaine.fr/macouhe.json`.
+L'utilisation se fait de manière analogue aux tuiles rasters, c'est à dire avec une URL de la forme `http(s)://mondomaine.fr/macouche/{z}/{x}/{y}.pbf`. Si le client le permet, il est généralement possible d'utiliser un fichier de métadonnées [tileJSON](https://docs.mapbox.com/help/glossary/tilejson/), souvent disponible sur `http(s)://mondomaine.fr/macouhe.json`. Ce dernier comprend généralement l'adresse du flux, les crédits, une description de la couche, etc.
 
 Les tuiles sont généralement (mais pas obligatoirement) encodées au format [Protobuf](https://wiki.openstreetmap.org/wiki/PBF_Format) (`.pbf`), ce qui permet d'en réduire encore la taille.
 
@@ -115,12 +121,15 @@ python vectipy.py run -p 5000
 
 ![screenshot vectipy run](https://raw.githubusercontent.com/jbdesbas/vectipy/main/screenshot1.png)
 
-Les flux et fichiers de métadonnées sont disponibles respectivement sur les URL suivantes :
+Les flux et fichiers de métadonnées _TileJSON_ sont disponibles respectivement sur les URL suivantes :
 
 - <http://127.0.0.1:5000/macouhe/{z}/{x}/{y}.pbf>
 - <http://127.0.0.1:5000/macouhe.json>.  
 
-Il est aussi possible d'avoir une prévisualisation des couches ici : <http://127.0.0.1:5000/map/macouhe>.
+!!! info "Fichier de métadonnées"
+    Le fichier de métadonnées _TileJSON_ n'est pas encore totalement géré par Vectipy : il ne contient pour l'instant que l'adresse du flux (ce qui est suffisant pour afficher la couche).
+
+Il est aussi possible d'avoir une prévisualisation des couches ici : <http://127.0.0.1:5000/map/macouhe>. Le serveur propose aussi un fichier GeoJSON de la couche ici : <http://127.0.0.1:5000/map/macouhe.geojson> (pour le téléchargement ou l'affichage web de couches légères).
 
 ### Déploiement
 
@@ -143,9 +152,8 @@ Un [paramétrage adéquat de PostGIS](http://www.postgis.fr/chrome/site/docs/wor
 
 ## Conclusion
 
-Les tuiles vectorielles offrent de nombreux avantages et peuvent être (pré)générées sans nécessiter de lourds dispositifs. Elles conviennent aussi bien pour une utilisation web que SIG, et permettent plus de souplesse que les tuiles rasters pour le client.
-J'ai partagé le project [Vectipy](https://github.com/jbdesbas/vectipy) pour permettre la mise en place aussi simplement que possible de flux vectorielles et éviter l'installation et la maintenance de GeoServer ou MapServer.  
-Si vous utilisez déjà ces outils, il est probable que le mini-serveur Vectipy vous soit inutile.
+Les tuiles vectorielles offrent de nombreux avantages et peuvent être (pré)générées sans nécessiter de lourds dispositifs. Elles conviennent aussi bien pour une utilisation web que SIG, et permettent plus de souplesse que les tuiles rasters pour le client. Les données étant chargé "à la demande", les tuiles vectorielles conviennent très bien au partage de gros lots de données (plusieurs centaines de milliers).
+J'ai partagé le project [Vectipy](https://github.com/jbdesbas/vectipy) pour permettre la mise en place aussi simplement que possible de flux vectorielles en évitant l'installation et la maintenance de GeoServer ou MapServer.  
 
 Il s'agit de mon premier projet ce genre, aussi je serais ravi d'avoir votre retour si vous en avez l'utilité.
 
@@ -155,3 +163,13 @@ Voir aussi :
 - [Installation python](/articles/2020/2020-06-19_setup_python/)
 - [Les tuiles vectorielles](https://docs.mapbox.com/vector-tiles/specification/)
 - [PostGIS : ST_AsMVT](https://postgis.net/docs/ST_AsMVT.html)
+
+
+# Jean-Baptiste Desbas
+
+![Portrait Jean-Baptiste Desbas](https://pbs.twimg.com/profile_images/893340886679134209/O9gkc2Ez_400x400.jpg "Portrait Jean-Baptiste Desbas"){: .img-rdp-news-thumb }
+
+Géomaticien avec une forte appétence pour les thématiques environnement, biodiersité et urbanisme. Je travail en tant que gestionnaire de base de données à l'association [Picardie Nature](http://picardie-nature.org), où j'ai la chance de pouvoir insuffler une logique _open data_ au sein de la communauté naturaliste.
+
+Convaincu de la qualité et de la périnité des nombreuses solutions libres que nous avons la chance d'avoir à notre portée, je n'utilise (quasi) exclusivement que des logiciels sous licence libre. Longtemps consommateur de ces outils, j'essaie aujourd'hui d'apporter des contributions modestes, mais concrètes, au travers de projets tels que [ArrayPlus](https://plugins.qgis.org/plugins/arrayplus/) et [Vectipy](https://github.com/jbdesbas/vectipy).
+
