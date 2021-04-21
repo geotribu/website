@@ -22,6 +22,8 @@ Pré-requis :
 
 ## Introduction
 
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+
 Le serveur de tuiles [vectipy](https://github.com/jbdesbas/vectipy) peut vous interesser si :
 
 - Vous disposez de données spatiales sur une base PostGIS
@@ -48,7 +50,7 @@ Comme leur nom l'indique, les tuiles vectorielles sont composées des données v
 
 Comme pour les tuiles raster, les tuiles vecteurs pré-générées peuvent être stockées et servies avec un simple serveur web de fichiers statiques. Ces dernières sont toutefois beaucoup moins gourmandes en espace disque et bande passante, et surtout _un seul jeu suffit pour une infinité de styles_.
 
-L'utilisation se fait de manière analogue aux tuiles rasters, c'est à dire avec une URL de la forme `http(s)://mondomaine.fr/macouche/{z}/{x}/{y}.pbf`. Si le client le permet, il est généralement possible d'utiliser un fichier de métadonnées [tileJSON](https://docs.mapbox.com/help/glossary/tilejson/), souvent disponible sur `http(s)://mondomaine.fr/macouhe.json`. Ce dernier comprend généralement l'adresse du flux, les crédits, une description de la couche, etc.
+L'utilisation se fait de manière analogue aux tuiles rasters, c'est à dire avec une URL de la forme `http(s)://mondomaine.fr/macouche/{z}/{x}/{y}.pbf`. Si le client le permet, il est généralement possible d'utiliser un fichier de métadonnées [tileJSON](https://docs.mapbox.com/help/glossary/tilejson/), souvent disponible sur `http(s)://mondomaine.fr/macouche.json`. Ce dernier comprend généralement l'adresse du flux, les crédits, une description de la couche, etc.
 
 Les tuiles sont généralement (mais pas obligatoirement) encodées au format [Protobuf](https://wiki.openstreetmap.org/wiki/PBF_Format) (`.pbf`), ce qui permet d'en réduire encore la taille.
 
@@ -67,8 +69,8 @@ Les flux ainsi publiés sont utilisables par une interface web avec [MapLibre GL
 ```javascript
 map.addSource("my-data", {
   type: "vector",
-  url: "http://mondomaine.fr/macouhe.json",
-  //tiles:"http(s)://mondomaine.fr/macouche/{z}/{x}/{y}.pbf", //Si le serveur ne fournis pas de fichier TileJSON
+  url: "http://mondomaine.fr/macouche.json",
+  //tiles:"http(s)://mondomaine.fr/macouche/{z}/{x}/{y}.pbf", // Si le serveur ne fournit pas de fichier TileJSON
 });
 ```
 
@@ -85,7 +87,7 @@ Sur QGIS, les données du flux peuvent être stylisées avec le moteur de symbol
 
 ## Mise en place des flux avec Vectipy
 
-Commencez par cloner le dépot ou [télécharger](https://github.com/jbdesbas/vectipy/archive/refs/heads/main.zip) les fichiers :
+Commencez par cloner le dépôt ou [télécharger](https://github.com/jbdesbas/vectipy/archive/refs/heads/main.zip) les fichiers :
 
 ```bash
 git clone git@github.com:jbdesbas/vectipy.git
@@ -123,13 +125,13 @@ python vectipy.py run -p 5000
 
 Les flux et fichiers de métadonnées _TileJSON_ sont disponibles respectivement sur les URL suivantes :
 
-- <http://127.0.0.1:5000/macouhe/{z}/{x}/{y}.pbf>
-- <http://127.0.0.1:5000/macouhe.json>.  
+- <http://127.0.0.1:5000/macouche/{z}/{x}/{y}.pbf>
+- <http://127.0.0.1:5000/macouche.json>.  
 
 !!! info "Fichier de métadonnées"
     Le fichier de métadonnées _TileJSON_ n'est pas encore totalement géré par Vectipy : il ne contient pour l'instant que l'adresse du flux (ce qui est suffisant pour afficher la couche).
 
-Il est aussi possible d'avoir une prévisualisation des couches ici : <http://127.0.0.1:5000/map/macouhe>. Le serveur propose aussi un fichier GeoJSON de la couche ici : <http://127.0.0.1:5000/map/macouhe.geojson> (pour le téléchargement ou l'affichage web de couches légères).
+Il est aussi possible d'avoir une prévisualisation des couches ici : <http://127.0.0.1:5000/map/macouche>. Le serveur propose aussi un fichier GeoJSON de la couche ici : <http://127.0.0.1:5000/map/macouche.geojson> (pour le téléchargement ou l'affichage web de couches légères).
 
 ### Déploiement
 
