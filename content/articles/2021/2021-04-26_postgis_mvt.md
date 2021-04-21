@@ -1,5 +1,5 @@
 ---
-title: "Publier une couche PostGIS en tuiles vectorielles (MVT)"
+title: "Vectipy, un serveur minimaliste de tuiles vectorielles (MVT)"
 authors: ["Jean-Baptiste DESBAS"]
 categories: ["article", "tutoriel"]
 date: "2021-04-26 15:00"
@@ -8,7 +8,7 @@ image: "server-web.png"
 tags: "python,vector tiles,mvt,vectipy"
 ---
 
-# Publier une couche PostGIS en tuiles vectorielles (MVT)
+# Vectipy, un serveur minimaliste de tuiles vectorielles (MVT)
 
 :calendar: Date de publication initiale : 26 Avril 2021
 
