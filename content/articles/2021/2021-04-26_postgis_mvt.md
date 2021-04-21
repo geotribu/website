@@ -23,10 +23,10 @@ Pré-requis :
 ## Introduction
 
 Le serveur de tuiles [vectipy](https://github.com/jbdesbas/vectipy) peut vous interesser si :
+
 - Vous disposez de données spatiales sur une base PostGIS
 - Vous souhaitez partager ces données via une carte en ligne et/ou un flux SIG
 - Vous ne souhaitez pas (ou ne pouvez pas) mettre en place et administrer une "solution lourde" telle que GeoServer, MapServer ou QGIS Server.
-
 
 La solution que je développe ici est un projet libre de serveur permettant de publier, aussi facilement que possible, un flux de tuiles vectorielles. Ce flux peut convenir aussi bien à un usage web que SIG. Il exploite la faculter de PostGIS à générer des tuiles vectorielles directement depuis une requête SQL, ces tuiles sont ensuites mise à disposition par le micro-framework web [Flask](https://flask.palletsprojects.com/).
 
