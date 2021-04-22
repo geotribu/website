@@ -32,7 +32,7 @@ Le serveur de tuiles [vectipy](https://github.com/jbdesbas/vectipy) peut vous in
 
 La solution que je développe ici est un projet libre de serveur permettant de publier, aussi facilement que possible, un flux de tuiles vectorielles. Ce flux peut convenir aussi bien à un usage web que SIG. Il exploite la faculter de PostGIS à générer des tuiles vectorielles directement depuis une requête SQL, ces tuiles sont ensuites mise à disposition par le micro-framework web [Flask](https://flask.palletsprojects.com/).
 
-![screenshot vectipy cadastre](https://raw.githubusercontent.com/jbdesbas/vectipy/main/screenshot4_cadastre_bati_3D "Affichage du cadastre sur une carte web")
+![screenshot vectipy cadastre](https://raw.githubusercontent.com/jbdesbas/vectipy/main/screenshot4_cadastre_bati_3D.png "Affichage du cadastre sur une carte web")
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
