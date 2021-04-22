@@ -4,7 +4,7 @@ authors: ["Jean-Baptiste DESBAS"]
 categories: ["article", "tutoriel"]
 date: "2021-04-26 15:00"
 description: "Présentation de vectipy, un serveur léger de tuiles vectorielles"
-image: "server-web.png"
+image: "https://raw.githubusercontent.com/jbdesbas/vectipy/main/vectipy_logo.png"
 tags: "python,vector tiles,mvt,vectipy"
 ---
 
