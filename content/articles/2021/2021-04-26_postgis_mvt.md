@@ -32,6 +32,8 @@ Le serveur de tuiles [vectipy](https://github.com/jbdesbas/vectipy) peut vous in
 
 La solution que je développe ici est un projet libre de serveur permettant de publier, aussi facilement que possible, un flux de tuiles vectorielles. Ce flux peut convenir aussi bien à un usage web que SIG. Il exploite la faculter de PostGIS à générer des tuiles vectorielles directement depuis une requête SQL, ces tuiles sont ensuites mise à disposition par le micro-framework web [Flask](https://flask.palletsprojects.com/).
 
+![screenshot vectipy cadastre](https://raw.githubusercontent.com/jbdesbas/vectipy/main/screenshot4_cadastre_bati_3D "Affichage du cadastre sur une carte web")
+
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
@@ -132,6 +134,10 @@ Les flux et fichiers de métadonnées _TileJSON_ sont disponibles respectivement
     Le fichier de métadonnées _TileJSON_ n'est pas encore totalement géré par Vectipy : il ne contient pour l'instant que l'adresse du flux (ce qui est suffisant pour afficher la couche).
 
 Il est aussi possible d'avoir une prévisualisation des couches ici : <http://127.0.0.1:5000/map/macouche>. Le serveur propose aussi un fichier GeoJSON de la couche ici : <http://127.0.0.1:5000/map/macouche.geojson> (pour le téléchargement ou l'affichage web de couches légères).
+
+
+![screenshot vectipy geojson](https://raw.githubusercontent.com/jbdesbas/vectipy/main/screenshot3_geojson.png "Le fichier GeoJSON")
+
 
 ### Déploiement
 
