@@ -3,8 +3,8 @@ title: "Vectipy, un serveur minimaliste de tuiles vectorielles (MVT)"
 authors: ["Jean-Baptiste DESBAS"]
 categories: ["article", "tutoriel"]
 date: "2021-04-26 15:00"
-description: "Présentation de vectipy, un serveur léger de tuiles vectorielles"
-image: "https://raw.githubusercontent.com/jbdesbas/vectipy/main/vectipy_logo.png"
+description: "Présentation de vectipy, un serveur léger de tuiles vectorielles (MVT)"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_logo.png"
 tags: "python,vector tiles,mvt,vectipy"
 ---
 
@@ -32,7 +32,7 @@ Le serveur de tuiles [vectipy](https://github.com/jbdesbas/vectipy) peut vous in
 
 La solution que je développe ici est un projet libre de serveur permettant de publier, aussi facilement que possible, un flux de tuiles vectorielles. Ce flux peut convenir aussi bien à un usage web que SIG. Il exploite la faculter de PostGIS à générer des tuiles vectorielles directement depuis une requête SQL, ces tuiles sont ensuites mise à disposition par le micro-framework web [Flask](https://flask.palletsprojects.com/).
 
-![screenshot vectipy cadastre](https://raw.githubusercontent.com/jbdesbas/vectipy/main/screenshot4_cadastre_bati_3D.png "Affichage du cadastre sur une carte web")
+![screenshot vectipy cadastre](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_rendu_exemple_cadastre.png "Affichage du cadastre sur une carte web"){: loading=lazy }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -123,7 +123,7 @@ Lancez le serveur (par exemple ici sur le port 5000) :
 python vectipy.py run -p 5000
 ```
 
-![screenshot vectipy run](https://raw.githubusercontent.com/jbdesbas/vectipy/main/screenshot1.png)
+![screenshot vectipy run](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_console.png){: loading=lazy }
 
 Les flux et fichiers de métadonnées _TileJSON_ sont disponibles respectivement sur les URL suivantes :
 
@@ -135,9 +135,7 @@ Les flux et fichiers de métadonnées _TileJSON_ sont disponibles respectivement
 
 Il est aussi possible d'avoir une prévisualisation des couches ici : <http://127.0.0.1:5000/map/macouche>. Le serveur propose aussi un fichier GeoJSON de la couche ici : <http://127.0.0.1:5000/map/macouche.geojson> (pour le téléchargement ou l'affichage web de couches légères).
 
-
-![screenshot vectipy geojson](https://raw.githubusercontent.com/jbdesbas/vectipy/main/screenshot3_geojson.png "Le fichier GeoJSON")
-
+![screenshot vectipy geojson](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_rendu_exemple_json.png "Le fichier GeoJSON"){: loading=lazy }
 
 ### Déploiement
 
