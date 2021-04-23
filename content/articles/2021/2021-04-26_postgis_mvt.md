@@ -56,6 +56,9 @@ L'utilisation se fait de manière analogue aux tuiles rasters, c'est à dire ave
 
 Les tuiles sont généralement (mais pas obligatoirement) encodées au format [Protobuf](https://wiki.openstreetmap.org/wiki/PBF_Format) (`.pbf`), ce qui permet d'en réduire encore la taille.
 
+![tiles pyramid](https://user-images.githubusercontent.com/6163107/115919884-b9cab600-a479-11eb-90b8-42da471ee88f.png "Structure pyramidale de tuiles vectorielles avec niveaux de zoom" )
+*Extrait de la [documentation](https://docs.qgis.org/3.16/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html?highlight=tuiles%20vectorielles) de QGIS*
+
 ### Génération des tuiles
 
 PostGIS permet de directement générer des tuiles grâce à la fonction [ST_AsMVT](https://postgis.net/docs/ST_AsMVT.html) avec des [bonnes performances](https://blog.cleverelephant.ca/2019/08/postgis-3-mvt.html). C'est ce principe qui sera utilisé ici pour mettre en place un serveur de tuiles.
