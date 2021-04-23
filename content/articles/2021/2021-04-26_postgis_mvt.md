@@ -180,7 +180,7 @@ Voir aussi :
 
 ### Jean-Baptiste Desbas
 
-![Portrait Jean-Baptiste Desbas](https://pbs.twimg.com/profile_images/893340886679134209/O9gkc2Ez_400x400.jpg "Portrait Jean-Baptiste Desbas"){: .img-rdp-news-thumb }
+![Portrait Jean-Baptiste Desbas](https://user-images.githubusercontent.com/6163107/115921169-6bb6b200-a47b-11eb-9f2d-e90d95f67f2b.png "Portrait Jean-Baptiste Desbas"){: .img-rdp-news-thumb }
 
 Géomaticien avec une forte appétence pour les thématiques environnement, biodiersité et urbanisme. Je travaille en tant que gestionnaire de base de données à l'association [Picardie Nature](http://picardie-nature.org), où j'ai la chance de pouvoir insuffler une logique _open data_ au sein de la communauté naturaliste.
 
