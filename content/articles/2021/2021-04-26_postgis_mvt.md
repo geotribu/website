@@ -56,7 +56,7 @@ L'utilisation se fait de manière analogue aux tuiles rasters, c'est à dire ave
 
 Les tuiles sont généralement (mais pas obligatoirement) encodées au format [Protobuf](https://wiki.openstreetmap.org/wiki/PBF_Format) (`.pbf`), ce qui permet d'en réduire encore la taille.
 
-![tiles pyramid](https://user-images.githubusercontent.com/6163107/115919884-b9cab600-a479-11eb-90b8-42da471ee88f.png "Structure pyramidale de tuiles vectorielles avec niveaux de zoom" )
+![tiles pyramid](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/mvt_vector_tiles_schema_pyramides.png "Structure pyramidale de tuiles vectorielles avec niveaux de zoom"){: .img-center loading=lazy }
 
 *Extrait de la [documentation](https://docs.qgis.org/3.16/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html?highlight=tuiles%20vectorielles) de QGIS*
 
@@ -180,7 +180,7 @@ Voir aussi :
 
 ### Jean-Baptiste Desbas
 
-![Portrait Jean-Baptiste Desbas](https://user-images.githubusercontent.com/6163107/115921169-6bb6b200-a47b-11eb-9f2d-e90d95f67f2b.png "Portrait Jean-Baptiste Desbas"){: .img-rdp-news-thumb }
+![Portrait Jean-Baptiste Desbas](https://cdn.geotribu.fr/img/internal/contributeurs/jdes.png "Portrait Jean-Baptiste Desbas"){: .img-rdp-news-thumb }
 
 Géomaticien avec une forte appétence pour les thématiques environnement, biodiersité et urbanisme. Je travaille en tant que gestionnaire de base de données à l'association [Picardie Nature](http://picardie-nature.org), où j'ai la chance de pouvoir insuffler une logique _open data_ au sein de la communauté naturaliste.
 
