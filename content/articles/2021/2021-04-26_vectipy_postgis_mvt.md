@@ -176,7 +176,6 @@ Voir aussi :
 
 Autres serveurs de tuiles vectorielles sur le [Github de Mapbox](https://github.com/mapbox/awesome-vector-tiles#servers)
 
-
 ----
 
 ## Auteur
