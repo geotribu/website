@@ -174,6 +174,12 @@ Voir aussi :
 - [Les tuiles vectorielles](https://docs.mapbox.com/vector-tiles/specification/)
 - [PostGIS : ST_AsMVT](https://postgis.net/docs/ST_AsMVT.html)
 
+Autres serveurs de tuiles vectorielles :
+
+- [T-rex](https://t-rex.tileserver.ch/)
+- [pg_tileserver](https://github.com/CrunchyData/pg_tileserv)
+- [Tegola](https://tegola.io/)
+
 ----
 
 ## Auteur
