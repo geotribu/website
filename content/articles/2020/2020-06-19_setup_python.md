@@ -77,12 +77,12 @@ Lors des premières utilisations, il est donc parfois nécessaire d'autoriser Py
 Cela peut paraître évident mais ça va mieux en le disant : **il faut arrêter avec cmd et utiliser Powershell**.
 Sauf cas spécifiques (dont l'OSGeo4W...), il faut oublier `cmd` et configurer le système pour utiliser Powershell par défaut. Pourquoi ? Mais parce-que :
 
-* `cmd` ne tient pas compte de toutes les subtilités apportées par les versions récentes du système (encodage, chemins,)
+* `cmd` ne tient pas compte de toutes les subtilités apportées par les versions récentes du système (encodage, chemins, etc.)
 * certaines commandes `bash` sont prises en compte : `ls`, `rm`, `mkdir`...
-* les chemins sont compris, quel que soit le séparateur utilisé : `/` ou `\`
-* autocomplétion, modules, coloration, etc.
+* les chemins de dossiers et fichiers sont bien interprétés, quel que soit le séparateur utilisé : `/` ou `\`
+* des fonctionnalités désormais basiques : autocomplétion, modules, coloration, etc.
 
-Et puis on ne peut décemment pas utiliser un outil désormais [daté au carbone 14](https://fr.wikipedia.org/wiki/Datation_par_le_carbone_14) et s'en servir pour pester contre le système. Donc utiliser Powershell permet de râler en toute honnêteté (la bonne foi n'est jamais obligatoire) sur Windows. Et il ne faut pas s'inquiéter, il y a encore largement de quoi :wink: !
+Et puis on ne peut décemment pas utiliser un outil [daté au carbone 14](https://fr.wikipedia.org/wiki/Datation_par_le_carbone_14) et s'en servir pour pester contre le système d'exploitation. Donc utiliser Powershell permet de râler en toute honnêteté (la bonne foi n'est jamais obligatoire) sur Windows. Et il ne faut pas s'inquiéter, après ça il reste encore largement de quoi critiquer :wink: !
 
 ### Utiliser le launcher
 
@@ -101,7 +101,7 @@ Installed Pythons found by C:\WINDOWS\py.exe Launcher for Windows
  -3.7-64
 ```
 
-Mettre à jour `pip` pour une version en particulier :
+Mettre à jour `pip` pour une version de Python en particulier :
 
 ```powershell
 py -3.7 -m pip install -U pip
@@ -200,6 +200,4 @@ Il existe de [nombreuses listes de packages recommandés](https://encrypted.goog
 
 ## Auteur
 
---8<--
-  content/team/jmou.md
---8<--
+--8<-- "content/team/jmou.md"
