@@ -25,4 +25,4 @@ jobs:
         python-version: 3.8
 
     - name: Ensure code rules using pre-commit
-      uses: pre-commit/action@v2.0.0
+      uses: pre-commit/action@v2.0.3
