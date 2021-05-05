@@ -44,6 +44,10 @@ plugins:
       length: 40
       match_path: "(articles|rdp)/.*"
       pretty_print: true
+      url_parameters:
+        utm_source: "rss-feed"
+        utm_medium: "RSS"
+        utm_campaign: "feed-syndication"
   - search:
       lang: fr
       prebuild_index: !!python/object/apply:os.getenv ["MKDOCS_SEARCH_PREBUILD_INDEX"]
