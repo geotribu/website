@@ -2,6 +2,7 @@
 
 ![Deploy to Github Pages](https://github.com/geotribu/website/workflows/Deploy%20to%20Github%20Pages/badge.svg)
 ![Pull Request Checker](https://github.com/geotribu/website/workflows/Pull%20Request%20Checker/badge.svg)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/geotribu/website/master.svg)](https://results.pre-commit.ci/latest/github/geotribu/website/master)
 
 Sources et contenus du site de Geotribu, accessible via les URLs suivantes :
 

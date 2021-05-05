@@ -14,7 +14,7 @@ tags: guide,contribuer,geotribu
 ### 1. [Cloner le dépôt central](../edit/local_edition_setup/#git) localement
 
 ```bash
-git clone https://github.com/geotribu/website.git
+git clone --depth=1 https://github.com/geotribu/website.git
 ```
 
 ### 2. Créer ou utiliser une branche git locale
