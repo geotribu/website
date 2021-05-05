@@ -30,7 +30,7 @@ Un concept cher au nouveau directeur de l'IGN qu'il a décliné dans son essai [
 
 ![GeoITW GéoCommuns](https://cdn.geotribu.fr/img/articles-blog-rdp/interview/sebastien_soriano/geocommuns_geoitw.png "GeoITW géocommuns"){: .img-center loading=lazy }
 
-Rendez-vous **lundi 10 mai, à 19h** (l'heure du géoapéro :wine_glass:) pour une discussion en live avec Sébastien Soriano sur Geotribu. Dans l'esprit des #GeoITW, on laissera aussi la place à vos questions.
+Rendez-vous **lundi 10 mai, à 19h** (l'heure du géoapéro :wine_glass:) pour une discussion en live avec Sébastien Soriano sur Geotribu. Dans l'esprit des #GeoITW, on laissera aussi la place à vos questions via Twitter et un tchat.
 
 ----
 
