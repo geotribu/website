@@ -22,10 +22,6 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Install markdown-cli
-        id: dependencies
-        run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
-
       - name: Check out code
         uses: actions/checkout@v2
 
@@ -35,52 +31,49 @@ jobs:
         with:
           output: ' '
 
-      - uses: xt0rted/markdownlint-problem-matcher@v1
-
-      - name: Run markdownlint-cli on new files with matcher
-        run: markdownlint --ignore node_modules -i "**/template_*.md" content/**/*.md
-
       # -- APPLY LINTER ------------------------------------------------------
+      - name: Install markdown-cli
+        id: dependencies
+        run: yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
 
+      - name: Run markdownlint-cli on new files
+        id: mdl_added
+        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }}
 
-      # - name: Run markdownlint-cli on new files
-      #   id: mdl_added
-      #   run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }}
+      - name: Run markdownlint-cli on modified files
+        id: mdl_modified
+        if: success() || failure()
+        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-modified.txt" ${{ steps.file_changes.outputs.files_modified }}
 
-      # - name: Run markdownlint-cli on modified files
-      #   id: mdl_modified
-      #   if: success() || failure()
-      #   run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-modified.txt" ${{ steps.file_changes.outputs.files_modified }}
+      # -- REPORTING ARTEFACT ------------------------------------------------
+      - name: Upload report
+        id: report_upload
+        if: success() || failure()
+        uses: actions/upload-artifact@v2
+        with:
+          name: markdown-lint-report
+          path: |
+            markdown-lint-report-added.txt
+            markdown-lint-report-modified.txt
 
-      # # -- REPORTING ARTEFACT ------------------------------------------------
-      # - name: Upload report
-      #   id: report_upload
-      #   if: success() || failure()
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: markdown-lint-report
-      #     path: |
-      #       markdown-lint-report-added.txt
-      #       markdown-lint-report-modified.txt
+      # -- USER INFORMATION --------------------------------------------------
+      - name: Comment PR - Fail
+        id: pr_comment_bad
+        if: failure()
+        uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            :boom: Erreurs repérées dans la syntaxe Markdown.
+            @${{ env.GITHUB_AUTHOR }} merci de consulter le rapport du linter (téléchargeable comme artifact). :pray:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-repeats: true
 
-      # # -- USER INFORMATION --------------------------------------------------
-      # - name: Comment PR - Fail
-      #   id: pr_comment_bad
-      #   if: failure()
-      #   uses: mshick/add-pr-comment@v1
-      #   with:
-      #     message: |
-      #       :boom: Erreurs repérées dans la syntaxe Markdown.
-      #       @${{ env.GITHUB_AUTHOR }} merci de consulter le rapport du linter (téléchargeable comme artifact). :pray:
-      #     repo-token: ${{ secrets.GITHUB_TOKEN }}
-      #     allow-repeats: true
-
-      # - name: Comment PR - Success
-      #   id: pr_comment_good
-      #   if: success()
-      #   uses: mshick/add-pr-comment@v1
-      #   with:
-      #     message: |
-      #       :tada: Le markdown a l'air tout propre !
-      #     repo-token: ${{ secrets.GITHUB_TOKEN }}
-      #     allow-repeats: true
+      - name: Comment PR - Success
+        id: pr_comment_good
+        if: success()
+        uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            :tada: Le markdown a l'air tout propre !
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-repeats: true
