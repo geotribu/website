@@ -68,10 +68,8 @@ Si on ouvre le fichier `super_tuto.html` dans un navigateur :
 ![Markdown rapide exemple](https://cdn.geotribu.fr/img/internal/contribution/markdown_quick_exemple_rendu.png "Fichier HTML en sortie de la conversion du Markdown"){: .img-center loading=lazy }
 
 !!! note
-
-	La bibliothèque est évidemment utilisable en ligne de commande :
-
-	`python -m markdown input.md > output.html`
+    La bibliothèque est évidemment utilisable en ligne de commande :  
+    `python -m markdown input.md > output.html`
 
 ## Différences avec la syntaxe de référence
 
@@ -81,7 +79,6 @@ Si [Python-Markdown] est quasiment compatible avec l'implémentation [Markdown] 
 
 - le retrait (tabulation) est de 4 espaces
 - les sauts de lignes sont significatifs
-
 
 ## Extensions
 

@@ -1,5 +1,3 @@
 [build]
-publish = "build/mkdocs/site"
-command = """
-python -m mkdocs build --verbose --strict
-"""
+    command = "mkdocs build --strict"
+    publish = "build/mkdocs/site"
