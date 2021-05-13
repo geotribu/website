@@ -26,7 +26,7 @@ Mais avec la montée en puissance de [la fréquentation du site](/articles/2021/
 
 On peut comprendre qu'un service n'est jamais gratuit et que la publicité est l'un des moyens de le viabiliser (modèle freemium dans le cas de [Disqus](https://fr.wikipedia.org/wiki/Disqus)). Mais le prix est trop élevé pour un site bénévole comme Geotribu et les publicités (que je ne voyais pas moi-même, utilisant entre autres [le mode strict de Firefox](https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox-ordinateur?cache=no&redirectslug=activer-desactiver-cookies&redirectlocale=fr#w_reglage-stricte-de-la-protection-renforcee-contre-le-pistage) et [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin)) affichées vraiment mal ciblées voire gênantes :
 
-[![Disqus - Publicités affichées](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_activees.webp "Disqus - Publicités affichées"){: loading=lazy align=left clear=right width=150px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_activees.webp){: data-mediabox="lightbox-comments" data-title="Un exemple des publicités affichées. Pas vraiment ciblées..."}
+[![Disqus - Publicités affichées](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_activees.webp "Disqus - Publicités affichées"){: loading=lazy align=right clear=left width=150px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_activees.webp){: data-mediabox="lightbox-comments" data-title="Un exemple des publicités affichées. Pas vraiment ciblées..."}
 
 D'après la [FAQ](https://help.disqus.com/en/articles/1717307-subscription-payments-faq), nous aurions pu prétendre à un forfait gratuit exempt de publicité mais c'était l'occasion de s'affranchir d'un service propriétaire et qui, même gratuit, ajoute des éléments de tracking non désirés.
 
@@ -65,7 +65,7 @@ Vu que GeoRezo nous autorise gracieusement à utiliser le serveur d'[El Géo Pas
 
 L'occasion de rappeler que soutenir GeoRezo c'est une bonne idée pour l'écosystème et c'est aussi soutenir GeoTribu :hugging_face: :
 
-[Faire un don à GeoRezo :fontawesome-solid-hand-holding-heart:](https://www.helloasso.com/associations/georezo-le-portail-geomatique/){: .md-button--primary }
+[Faire un don à GeoRezo :fontawesome-solid-hand-holding-heart:](https://www.helloasso.com/associations/georezo-le-portail-geomatique/){: .md-button }
 {: align=middle }
 
 Voici dans les grandes lignes les étapes de l'installation, la configuration et du déploiement :
