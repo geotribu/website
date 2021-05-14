@@ -1,5 +1,5 @@
 ---
-title: "Module de commentaires de Geotribu"
+title: "Les commentaires sur Geotribu : de Disqus à Isso"
 authors: ["Julien Moura"]
 categories: ["article"]
 date: "2021-05-14 10:20"
@@ -8,11 +8,11 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/ge
 tags: "geotribu,commentaire,isso,open source"
 ---
 
-# Nouveau module de commentaires sur Geotribu
+# Les commentaires sur Geotribu : de Disqus à Isso, via une contribution open-source
 
 :calendar: Date de publication initiale : 14 mai 2021
 
-**Mots-clés :** Geotribu | Isso | commentaire
+**Mots-clés :** Geotribu | Isso | commentaire | open source
 
 ## Introduction
 
