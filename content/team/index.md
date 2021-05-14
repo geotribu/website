@@ -58,6 +58,6 @@ petit (1 seul fichier PHP !) mais costaud que nous utilisons pour gérer nos con
 
 ### Autres
 
-Merci aux différentes personnes/organismes qui nous motivent et nous aident. Tout d'abord, d'une manière générale, la communauté Open Source qui met à disposition les formidables applications que nous vous présentons. Mais aussi, les associations qui visent à la promotion du logiciel libre comme l'[OSGEO Fr](https://osgeo.asso.fr/) ainsi que celles comme [OSM-Fr](https://www.openstreetmap.fr/fr/) œuvrant pour l'ouverture des données.
+Merci aux différentes personnes/organismes qui nous motivent et nous aident. Tout d'abord, d'une manière générale, la communauté Open Source qui met à disposition les formidables applications que nous vous présentons. Mais aussi, les associations qui visent à la promotion du logiciel libre comme l'[OSGEO Fr](https://osgeo.asso.fr/) ainsi que celles comme [OSM-Fr](https://www.openstreetmap.fr/) œuvrant pour l'ouverture des données.
 
 Enfin, cette aventure n'aurait jamais été possible sans le soutien de [Laurent Jégou](https://fr.linkedin.com/in/laurentjegou) qui pendant longtemps nous a offert l'infrastructure informatique nécessaire au fonctionnement de GéoTribu. Merci Laurent !
