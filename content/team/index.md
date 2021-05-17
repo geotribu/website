@@ -18,17 +18,17 @@ La liste ci-après est générée automatiquement à partir de l'historique de [
 
 - [Arnaud](avdc)
 - [Aurélien](acha)
+- [Etienne](edel)
 - [Fabien](fgob)
 - [Florian](fbor)
+- [Jérémie O.](jory)
 - [Julien](jmou)
 - [Mathieu R.](mraj)
 
 ## Membres historiques
 
 - [Adrien](avha)
-- [Etienne](edel)
 - [Guillaume](gdbo)
-- [Jérémie O.](jory)
 - [Julie](jpie)
 - [Pierre](pver)
 - [Rémi](rbov)
