@@ -22,7 +22,7 @@ L'en-tête est défini en haut de la page par un ensemble de clés/valeurs encad
 - `categories` : contient la typologie du contenu permettant des comportements adaptés. Pour l'instant c'est utilisé pour définir le schéma JSON-LD  à utiliser, mais c'est prévu dans le RSS aussi,
 - `date` : date de création publique de l'article, correspondant à la date de première publication. Utilisée dans le RSS, le SEO et certains moteurs d'affichage.
 - `description` : SEO, recherche interne du site, meta-tag, RSS
-- `image` : RSS et partage des articles dans les réseaux sociaux (c'est ce qui fait qu'on a un jouli rendu quand on partage dans Twitter ou LinkedIn par exemple)
+- `image` : RSS et partage des articles dans les réseaux sociaux (c'est ce qui fait qu'on a un jouli rendu quand on partage dans Twitter ou LinkedIn par exemple). Dimensions : entre 300x600 et 400x800.
 - `tags` : pour l'instant ça ne sert à rien mais c'est prévu pour permettre un classement des contenus par mots-clés.
 
 ## Exemple
