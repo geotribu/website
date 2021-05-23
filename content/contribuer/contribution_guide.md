@@ -1,5 +1,5 @@
 ---
-title: "Guide de contribution"
+title: "Processud de contribution"
 categories: ["contribution"]
 date: 2020-03-20 10:20
 description: "Guide de contribution au site collaboratif Geotribu : processus (git flow), modifier un contenu et guides spécifiques (images, vidéos, émojis...)"
@@ -7,7 +7,7 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 tags: guide,contribuer,geotribu
 ---
 
-# Guide de contribution
+# Processus de contribution
 
 ## Processus (_workflow_)
 
@@ -101,38 +101,6 @@ Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publi
     ```bash
     git pull
     ```  
-
-----
-
-## Modifier un contenu
-
-### Texte
-
-Voir [le guide dédié](../guides/markdown_basics).
-
-### Ajouter une image
-
-Voir [le guide dédié](../guides/image).
-
-### Insérer un tweet
-
-Voir [le guide dédié](../guides/twitter).
-
-### Insérer une vidéo
-
-Voir [le guide dédié](../guides/video).
-
-### Utiliser un emoji
-
-Voir [le guide dédié](../guides/emoji).
-
-### Créer des diagrammes UML
-
-Voir [le guide dédié](../guides/diagrams).
-
-### Signer ses contributions
-
-Voir [le guide dédié](../guides/authoring).
 
 ----
 
