@@ -46,7 +46,7 @@ Voici un exemple d'export réalisé et comme vous pouvez le constater, en plus d
 
 ## Conclusion
 
-Ce projet QGIS est une proposition de rendu mais n'hésitez pas à l'adapter en fonction de vos besoins et à nous faire part de vos améliorations en commentaire. Et qui sait peut être que prochainement on pourra proposer des tuiles raster...
+Ce projet QGIS est une première proposition de rendu mais n'hésitez pas à l'adapter en fonction de vos besoins et à nous faire part de vos améliorations en commentaire. Et qui sait peut être que prochainement on pourra proposer des tuiles raster...
 
 ----
 
