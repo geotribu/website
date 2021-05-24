@@ -23,7 +23,7 @@ Pré-requis :
 
 Il y a maintenant deux ans sur la base des données [osm2igeo](https://github.com/igeofr/osm2igeo) que je produisais, j'avais lancé un second projet qui s'appelait [osm2igeotopo](https://github.com/igeofr/osm2igeotopo) et qui avait pour objectif de générer des tuiles raster sur la base d'un rendu carte topo inspiré notamment par [le travail de R. Lacroix](https://github.com/rxlacroix/CarteTopo).
 
-Mais voilà avec l'[ouverture des données de la BD TOPO®](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html), j'ai décidé de re-travailler sur un rendu QGIS de la carte topo mais en m'appuyant sur les données de la BD TOPO®.
+Mais voilà avec l'[ouverture des données de la BD TOPO®](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html), j'ai décidé de remettre le pied à l'étier pour proposer un rendu QGIS de la carte topo en m'appuyant sur la BD TOPO®.
 
 A noter que ce projet vient en complément du projet [TOPen25](https://osm.cquest.org/topen25/#15/48.4018/2.7945) de [C. Quest](https://twitter.com/cq94).
 
