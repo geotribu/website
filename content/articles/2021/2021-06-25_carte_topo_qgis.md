@@ -8,7 +8,7 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_carte_topo_b
 tags: "carte topographique,QGIS,BD TOPO®,Scan25,IGN"
 ---
 
-# Un rendu carte topo QGIS basé sur la BD TOPO®"
+# Un rendu carte topo QGIS basé sur la BD TOPO®
 
 :calendar: Date de publication initiale : 25 Juin 2021
 
