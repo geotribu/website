@@ -12,7 +12,7 @@ tags: "carte topographique,QGIS,BD TOPO®,Scan25,IGN"
 
 :calendar: Date de publication initiale : 25 Juin 2021
 
-**Mots-clés :** Carte topographique | QGIS | BD TOPO® | Scan25 | IGN 
+**Mots-clés :** Carte topographique | QGIS | BD TOPO® | Scan25 | IGN
 
 Pré-requis :
 
@@ -25,7 +25,7 @@ Il y a maintenant deux ans sur la base des données [osm2igeo](https://github.co
 
 Mais voilà avec l'[ouverture des données de la BD TOPO®](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html), j'ai décidé de travailler sur un rendu carte topo QGIS basé sur la BD TOPO® et qui vient compléter le projet [TOPen25](https://osm.cquest.org/topen25/#15/48.4018/2.7945) réalisé par [C. Quest](https://twitter.com/cq94).
 
-## Le projet QGIS 
+## Le projet QGIS
 
 [Accéder au projet QGIS :world_map:](){: .md-button }
 {: align=middle }
