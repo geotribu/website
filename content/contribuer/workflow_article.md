@@ -102,7 +102,7 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
     ![GitHub fork repository](https://cdn.geotribu.fr/img/internal/contribution/github_fork_geotribu.png "GitHub - Créer un fork de Geotribu"){: .img-center loading=lazy }
 
     !!!tip "Déjà forké auparavant ?"
-        A noter que si vous aviez déjà forké notre dépôt auparavant, il vou suffit de mettre à jour le dépôt dérivé sur votre compte via le bouton `Fetch Upstream` :  
+        A noter que si vous aviez déjà forké notre dépôt auparavant, il vous suffit de mettre à jour le dépôt dérivé sur votre compte via le bouton `Fetch Upstream` :  
         ![Github update fork](https://cdn.geotribu.fr/img/internal/contribution/github_fork_geotribu_update.png "Mettre à jour le fork (appelé upstream)"){: .img-center loading=lazy }
 
 2. Ajouter votre article dans votre dépôt dérivé :
