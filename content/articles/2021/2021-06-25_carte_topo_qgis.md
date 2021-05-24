@@ -21,30 +21,32 @@ Pré-requis :
 
 ## Introduction
 
-Il y a maintenant deux ans sur la base des données [osm2igeo](https://github.com/igeofr/osm2igeo) que je produisais, j'avais lancé un second projet qui s'appelait [osm2igeotopo](https://github.com/igeofr/osm2igeotopo) et qui avait pour objectif de générer des tuiles raster sur la base d'un rendu carte topo inspiré notamment par [le travail de Romain Lacroix](https://github.com/rxlacroix/CarteTopo).
+Il y a maintenant deux ans sur la base des données [osm2igeo](https://github.com/igeofr/osm2igeo) que je produisais, j'avais lancé un second projet qui s'appelait [osm2igeotopo](https://github.com/igeofr/osm2igeotopo) et qui avait pour objectif de générer des tuiles raster sur la base d'un rendu carte topo inspiré notamment par [le travail de R. Lacroix](https://github.com/rxlacroix/CarteTopo).
 
-Mais voilà avec l'[ouverture des données de la BD TOPO®](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html), j'ai décidé de travailler sur un rendu carte topo QGIS basé sur la BD TOPO® qui vient en complément du projet [TOPen25](https://osm.cquest.org/topen25/#15/48.4018/2.7945) réalisé par [C. Quest](https://twitter.com/cq94).
+Mais voilà avec l'[ouverture des données de la BD TOPO®](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html), j'ai décidé de re-travailler sur un rendu QGIS de la carte topo mais en m'appuyant sur les données de la BD TOPO®. 
+
+A noter que ce projet vient en complément du projet [TOPen25](https://osm.cquest.org/topen25/#15/48.4018/2.7945) de [C. Quest](https://twitter.com/cq94).
 
 ## Le projet QGIS
 
-[Accéder au projet QGIS :world_map:](){: .md-button }
+[Accéder au projet QGIS :world_map:](https://github.com/igeofr/qgis3/blob/master/qgs/Projet_Carto_BDT_3-0_FXX_CARTE_TOPO.qgs){: .md-button }
 {: align=middle }
 
 Le projet QGIS est composé des différentes couches de la BD TOPO® et il doit se placer dans le répertoire : BDT_3-0_SHP_LAMB93_D0...
 
 ![Localisation du projet](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_carte_topo_bdtopo/localisation_qgs.png "Localisation du projet"){: loading=lazy .img-center }
 
-Le projet QGIS a été paramétré pour un rendu optimum au 1/25 000 mais libre à chacun de l'adapter à sa guise.
+Le projet QGIS a été paramétré pour un rendu au 1/25 000 mais libre à chacun de l'adapter à sa guise pour d'autres échelles.
 
 ![Le projet QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_carte_topo_bdtopo/qgis_bdtopo_carte_topo.png "Le projet QGIS"){: loading=lazy .img-center }
 
-Voici un exemple d'export réalisé et comme vous pouvez le constater, en plus des données de la BD TOPO® j'ai également ajouté des courbes de niveaux pour améliorer le rendu. Pour les territoires avec plus de relief, il serait également possible de jouer avec les ombrages du MNT pour marquer les pentes.
+Voici un exemple d'export réalisé et comme vous pouvez le constater, en plus des données de la BD TOPO® j'ai également ajouté des courbes de niveaux pour améliorer le rendu. Pour les territoires avec plus de relief, il serait également pertinent de jouer avec les ombrages du MNT pour marquer les pentes.
 
 ![Exemple d'export](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_carte_topo_bdtopo/export_carte_topo_saussines.png "Exemple d'export"){: loading=lazy .img-center }
 
 ## Conclusion
 
-Ce projet QGIS est une proposition de rendu qui pourrait vous rendre service mais n'hésitez pas à l'adapter et à nous faire part de vos améliorations en commentaire.
+Ce projet QGIS est une proposition de rendu mais n'hésitez pas à l'adapter en fonction de vos besoins et à nous faire part de vos améliorations en commentaire. Et qui sait peut être que prochainement on pourra proposer des tuiles raster...
 
 ----
 
