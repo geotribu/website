@@ -22,7 +22,7 @@ Pré-requis :
     - dispose des outils clients PostgreSQL dont psql.exe
     - dispose de ogr2ogr.exe (GDAL v.2.4.1)
 
-Les versions mentionnées sont celles que nous utilisons au département du Gard. Les versions antérieures ou ultérieures n'ont pas été testées, mais devraient fonctionner. 
+Les versions mentionnées sont celles que nous utilisons au département du Gard. Les versions antérieures ou ultérieures n'ont pas été testées, mais devraient fonctionner.
 
 ## Introduction
 
@@ -195,7 +195,7 @@ SIg-Executer-Commande `
     -sortie "$dossierRapports\cog_communes.txt" `
     -erreur $false `
     -autresParams '--tuples-only', '--no-align'
-    
+
 
 # paramétrage des jobs d'export (1 GeoJSON + 1 SHP par commune)
 $parametresJobs = [System.Collections.ArrayList]::new()
