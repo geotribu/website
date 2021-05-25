@@ -22,17 +22,17 @@ Pré-requis :
     - dispose des outils clients PostgreSQL dont psql.exe
     - dispose de ogr2ogr.exe (GDAL v.2.4.1)
 
-Les versions mentionnées sont celles que nous utilisons au département du Gard. Les versions antérieures ou ultérieures n'ont pas été testées, mais devraient fonctionner.
+Les versions mentionnées sont celles que nous utilisons au [département du Gard]. Les versions antérieures ou ultérieures n'ont pas été testées, mais devraient fonctionner.
 
 ## Introduction
 
 ![Logo du département du Gard](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/gard.jpg "Logo du département du Gard"){: .img-rdp-news-thumb }
 
-Le département du Gard gère environ 4600 km de routes. Auparavant, le référentiel géographique de ces routes était tenu à jour manuellement sur la base de plans de récolement mais plus souvent suite à des remontées d'informations du terrain. De fait, la qualité du tracé, dépendante d'une ortho parfois ancienne, n'était pas toujours au rendez-vous.
+Le [département du Gard] gère environ 4600 km de routes. Auparavant, le référentiel géographique de ces routes était tenu à jour manuellement sur la base de plans de récolement mais plus souvent suite à des remontées d'informations du terrain. De fait, la qualité du tracé, dépendante d'une ortho parfois ancienne, n'était pas toujours au rendez-vous.
 
 Pour disposer d'un référentiel à jour, l'idée a été d'automatiser sa génération à partir de la BD TOPO® et de faire en sorte que cette génération soit facilement rejouable à chaque nouvelle livraison de l'[IGN](https://www.ign.fr/).
 
-Les géo-traitements nécessaires à cette réalisation ont été faits avec PostgreSQL/PostGIS. Cependant, plusieurs étapes étaient requises et pour séquencer les différentes opérations nous avons commencé à rédiger des scripts [PowerShell](https://docs.microsoft.com/fr-fr/powershell/scripting/overview?view=powershell-7.1). Au fil du temps, les scripts sont devenus des fonctions, les fonctions sont devenues une bibliothèque plutôt “bancale” et, après pas mal d'efforts de renommage, redécoupage, refactoring, etc., la bibliothèque s'est transformée en quelque chose de propre et réutilisable (du moins, c'est ce qu'on croit :thinking:).
+Les géo-traitements nécessaires à cette réalisation ont été faits avec PostgreSQL/PostGIS. Cependant, plusieurs étapes étaient requises et pour séquencer les différentes opérations nous avons commencé à rédiger des scripts [PowerShell]. Au fil du temps, les scripts sont devenus des fonctions, les fonctions sont devenues une bibliothèque plutôt “bancale” et, après pas mal d'efforts de renommage, redécoupage, refactoring, etc., la bibliothèque s'est transformée en quelque chose de propre et réutilisable (du moins, c'est ce qu'on croit :thinking:).
 
 Pour faire la promotion de ces travaux au sein de la collectivité, nous avons décidé de "personnifier" le SIg que nous développons. Le nom retenu est SI3P0 (pour Système d'Information 3 Point 0) pour le côté "geek" de sa consonance et en lien avec le logo 3.0 du Gard qui fait référence au code officiel géographique du département.
 
@@ -232,7 +232,8 @@ A l'issue de l'export, la table temporaire est supprimée. La version géographi
 SIg-Effacer-Table -table 'BAN_CSV' -sortie "$dossierRapports\$(Get-Date -Format 'yyyy-MM-dd HH-mm-ss') - effacement BAN_CSV.txt"
 ```
 
-[Voir le script complet :fontawesome-solid-comments:](https://github.com/CD30-Devil/SI3P0/blob/main/docs/Ressources/GeoTribu/2021-05-25_biblio_powershell_si3p0.ps1){: .md-button }
+[Voir le script complet :fontawesome-regular-file-code:](https://github.com/CD30-Devil/SI3P0/blob/main/docs/Ressources/GeoTribu/2021-05-25_biblio_powershell_si3p0.ps1){: .md-button }
+{: align=middle }
 
 ### Résultats obtenus
 
