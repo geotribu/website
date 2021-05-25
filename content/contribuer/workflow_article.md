@@ -27,7 +27,7 @@ Allez, cette fois, c'est parti ! L'angoisse de la feuille blanche n'a qu'à bien
 Comme indiqué dans [les prérequis](/contribuer/requirements/), qu'importe le flacon, tant qu'on a l'ivresse de la rédaction  en Markdown : du simple éditeur de texte (oui, même le bloc-notes de Windows !) à l'éditeur lourd (à ce propos voir [le dossier de Next INpact](https://www.nextinpact.com/article/44240/zettlr-prise-en-main-dun-editeur-texte-aux-nombreuses-qualites)), faites votre choix !  
 Mais sachez que nous mettons un éditeur collaboratif ([Hedgedoc](https://hedgedoc.org/)) à disposition des contributeur/ices :
 
-[Utiliser le PAD :fontawesome-solid-feather-alt:](https://geotripad.herokuapp.com/){: .md-button }
+[Utiliser le PAD :fontawesome-solid-feather-alt:](http://pad.geotribu.fr/){: .md-button }
 {: align=middle }
 
 Sinon, cela tient en quelques étapes :
@@ -64,32 +64,6 @@ Problème ? Souci ? Angoisse ? Simple question ?
 
 Une fois le contenu prêt, il ne reste plus qu'à pousser le contenu sur le [dépôt GitHub]. La procédure est différente selon si vous des droits en écriture ou non sur le [dépôt GitHub]. Ces droits sont généralement réservés aux contributeur/ices régulier/ères et aux membres de l'équipe.
 
-### J'ai accès en écriture
-
-1. Créer une branche en respectant la convention de nommage suivante `article/XXXXXX` où `XXXXXX` est nom de l'article en minuscules et sans caractère spécial
-
-    ![Github - New branch](https://cdn.geotribu.fr/img/internal/contribution/github_branch_new.png "GitHub - Création d'une branche"){: .img-center loading=lazy }
-
-2. Créer un fichier selon la convention de nommage `content/articles/YYYY/YYYY-MM-DD_XXXXXX` où :
-    - `YYYY` est l'année de publication
-    - `MM` le mois de publication prévisionelle
-    - `DD` le jour de publication prévisionnelle
-    - `XXXXXX` le nom de l'article sans les caractères spéciaux ou les mots superflus (prépositions...)
-
-    !!!tip
-        Penser à s'inspirer des [articles déjà publiés](https://github.com/geotribu/website/tree/master/content/articles/2021) :wink: !  
-        La date de publication pourra être amenée à changer selon les autres contenus planifiés.
-
-    ![Github - Pull Request button](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_button.png "GitHub - Créer une Pull Request"){: .img-right loading=lazy }
-
-3. [Créer la Pull Request](https://github.com/geotribu/website/compare)[^pr] en choisissant la branche de l'article comme source (`head`) et la branche principale (`master` ou `main`) comme destination (`ref`).
-
-4. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article
-
-    ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
-
-5. Demander la relecture sur Slack, dans [le canal `Articles`](https://geotribu.slack.com/archives/C0165UARRBQ)
-
 ### Je n'ai pas accès en écriture
 
 Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va vous falloir :
@@ -119,6 +93,32 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
 4. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article :
 
     ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
+
+### J'ai accès en écriture
+
+1. Créer une branche en respectant la convention de nommage suivante `article/XXXXXX` où `XXXXXX` est nom de l'article en minuscules et sans caractère spécial
+
+    ![Github - New branch](https://cdn.geotribu.fr/img/internal/contribution/github_branch_new.png "GitHub - Création d'une branche"){: .img-center loading=lazy }
+
+2. Créer un fichier selon la convention de nommage `content/articles/YYYY/YYYY-MM-DD_XXXXXX` où :
+    - `YYYY` est l'année de publication
+    - `MM` le mois de publication prévisionelle
+    - `DD` le jour de publication prévisionnelle
+    - `XXXXXX` le nom de l'article sans les caractères spéciaux ou les mots superflus (prépositions...)
+
+    !!!tip
+        Penser à s'inspirer des [articles déjà publiés](https://github.com/geotribu/website/tree/master/content/articles/2021) :wink: !  
+        La date de publication pourra être amenée à changer selon les autres contenus planifiés.
+
+    ![Github - Pull Request button](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_button.png "GitHub - Créer une Pull Request"){: .img-right loading=lazy }
+
+3. [Créer la Pull Request](https://github.com/geotribu/website/compare)[^pr] en choisissant la branche de l'article comme source (`head`) et la branche principale (`master` ou `main`) comme destination (`ref`).
+
+4. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article
+
+    ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
+
+5. Demander la relecture sur Slack, dans [le canal `Articles`](https://geotribu.slack.com/archives/C0165UARRBQ)
 
 ----
 
