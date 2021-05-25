@@ -22,17 +22,17 @@ Pré-requis :
     - dispose des outils clients PostgreSQL dont psql.exe
     - dispose de ogr2ogr.exe (GDAL v.2.4.1)
 
-Les versions mentionnées sont celles que nous utilisons au département du Gard. Les versions antérieures ou ultérieures n'ont pas été testées, mais devraient fonctionner.
+Les versions mentionnées sont celles que nous utilisons au [département du Gard]. Les versions antérieures ou ultérieures n'ont pas été testées, mais devraient fonctionner.
 
 ## Introduction
 
 ![Logo du département du Gard](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/gard.jpg "Logo du département du Gard"){: .img-rdp-news-thumb }
 
-Le département du Gard gère environ 4600 km de routes. Auparavant, le référentiel géographique de ces routes était tenu à jour manuellement sur la base de plans de récolement mais plus souvent suite à des remontées d'informations du terrain. De fait, la qualité du tracé, dépendante d'une ortho parfois ancienne, n'était pas toujours au rendez-vous.
+Le [département du Gard] gère environ 4600 km de routes. Auparavant, le référentiel géographique de ces routes était tenu à jour manuellement sur la base de plans de récolement mais plus souvent suite à des remontées d'informations du terrain. De fait, la qualité du tracé, dépendante d'une ortho parfois ancienne, n'était pas toujours au rendez-vous.
 
 Pour disposer d'un référentiel à jour, l'idée a été d'automatiser sa génération à partir de la BD TOPO® et de faire en sorte que cette génération soit facilement rejouable à chaque nouvelle livraison de l'[IGN](https://www.ign.fr/).
 
-Les géo-traitements nécessaires à cette réalisation ont été faits avec PostgreSQL/PostGIS. Cependant, plusieurs étapes étaient requises et pour séquencer les différentes opérations nous avons commencé à rédiger des scripts [PowerShell](https://docs.microsoft.com/fr-fr/powershell/scripting/overview?view=powershell-7.1). Au fil du temps, les scripts sont devenus des fonctions, les fonctions sont devenues une bibliothèque plutôt “bancale” et, après pas mal d'efforts de renommage, redécoupage, refactoring, etc., la bibliothèque s'est transformée en quelque chose de propre et réutilisable (du moins, c'est ce qu'on croit :thinking:).
+Les géo-traitements nécessaires à cette réalisation ont été faits avec PostgreSQL/PostGIS. Cependant, plusieurs étapes étaient requises et pour séquencer les différentes opérations nous avons commencé à rédiger des scripts [PowerShell]. Au fil du temps, les scripts sont devenus des fonctions, les fonctions sont devenues une bibliothèque plutôt “bancale” et, après pas mal d'efforts de renommage, redécoupage, refactoring, etc., la bibliothèque s'est transformée en quelque chose de propre et réutilisable (du moins, c'est ce qu'on croit :thinking:).
 
 Pour faire la promotion de ces travaux au sein de la collectivité, nous avons décidé de "personnifier" le SIg que nous développons. Le nom retenu est SI3P0 (pour Système d'Information 3 Point 0) pour le côté "geek" de sa consonance et en lien avec le logo 3.0 du Gard qui fait référence au code officiel géographique du département.
 
@@ -55,7 +55,7 @@ Les étapes sont détaillées sur [les pages GitHub du projet](https://cd30-devi
 
 ## Les fonctions
 
-La bibliothèque propose plusieurs fonctions classiquement nécessaires pour gérer un SIg construit sur PostgreSQL/PostGIS. Elle est enrichie chaque fois que de nouveaux besoins apparaissent. Le MindMap ci-dessous liste les fonctions disponibles au moment de la rédaction de cet article.
+La bibliothèque propose plusieurs fonctions classiquement nécessaires pour gérer un SIg construit sur PostgreSQL/PostGIS. Nous l'utilisons pour traiter différentes thématiques (BAN, Cadastre, 3V - Véloroutes et Voies Vertes, etc.) et l'enrichissons chaque fois que de nouveaux besoins apparaissent. Le MindMap ci-dessous liste les fonctions disponibles au moment de la rédaction de cet article.
 
 ![Liste des fonctions de la bibliothèque SI3P0](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-MindMap_fonctions.png "Liste des fonctions de la bibliothèque SI3P0"){: loading=lazy }
 {: align=middle }
@@ -68,7 +68,7 @@ En guise de démo, le script qui suit te montre comment télécharger la BAN[^ba
 
 ### Détails sur le fonctionnement du script
 
-Le script débute par l'import de la bibliothèque par Dot-Sourcing du fichier `api_complète.ps1`. Quelques variables, utiles dans la suite du script, sont également déclarées.
+Le script débute par l'import de la bibliothèque par Dot-Sourcing du fichier [api_complète.ps1](https://github.com/CD30-Devil/SI3P0/blob/main/API/PowerShell/api_compl%C3%A8te.ps1). Quelques variables, utiles dans la suite du script, sont également déclarées.
 
 ```powershell
 # import de la bibliothèque SI3P0
@@ -82,7 +82,7 @@ $dossierDonnees = "$PSScriptRoot\Données"
 $dossierRapports = "$PSScriptRoot\Rapports"
 ```
 
-Vient ensuite une phase de nettoyage préalable qui permet de remettre le contexte au propre. Il y est notamment question de supprimer des tables grâce à la fonction `SIg-Effacer-Table` qui envoie à la base une commande `drop table if exists`.
+Vient ensuite une phase de nettoyage préalable qui permet de remettre le contexte au propre. Il y est notamment question de supprimer des tables grâce à la fonction `SIg-Effacer-Table` (cf. fichier [sig_défaut.ps1](https://github.com/CD30-Devil/SI3P0/blob/main/API/PowerShell/sig_d%C3%A9faut.ps1)) qui envoie à la base une commande `drop table if exists`.
 
 ```powershell
 # effacement des rapports
@@ -102,7 +102,7 @@ SIg-Effacer-Table `
     -sortie "$dossierRapports\$(Get-Date -Format 'yyyy-MM-dd HH-mm-ss') - effacement BAN_Geo.txt"
 ```
 
-Le téléchargement du fichier BAN[^ban] du département depuis <https://adresse.data.gouv.fr> et son extraction sont faits respectivement grâce aux fonctions `Telecharger` et `DeGZipper`.
+Le téléchargement du fichier BAN[^ban] du département depuis <https://adresse.data.gouv.fr> et son extraction sont faits respectivement grâce aux fonctions `Telecharger` (cf. fichier [fonctions_web.ps1](https://github.com/CD30-Devil/SI3P0/blob/main/API/PowerShell/fonctions_web.ps1)) et `DeGZipper` (cf. fichier [fonctions_archives.ps1](https://github.com/CD30-Devil/SI3P0/blob/main/API/PowerShell/fonctions_archives.ps1)).
 
 ```powershell
 # téléchargement...
@@ -118,9 +118,9 @@ DeGZipper `
 
 Il est alors question d'importer le fichier BAN dans la base de données.
 
-Pour cela, une table, dont les colonnes correspondent à celles du fichier CSV, est construite grâce à la fonction `SIg-Creer-Table-Temp`. Cette dernière crée une table non tracée (`unlogged`) constituée de colonnes de type `text`.
+Pour cela, une table, dont les colonnes correspondent à celles du fichier CSV, est construite grâce à la fonction `SIg-Creer-Table-Temp` (cf. fichier [sig_défaut.ps1](https://github.com/CD30-Devil/SI3P0/blob/main/API/PowerShell/sig_d%C3%A9faut.ps1)). Cette dernière crée une table non tracée (`unlogged`) constituée de colonnes de type `text`.
 
-Le CSV y est importé par appel à la fonction `SIg-Importer-CSV`.
+Le CSV y est importé par appel à la fonction `SIg-Importer-CSV` (cf. fichier [sig_défaut.ps1](https://github.com/CD30-Devil/SI3P0/blob/main/API/PowerShell/sig_d%C3%A9faut.ps1)).
 
 ```powershell
 # création d'une table temporaire pour l'import du CSV
@@ -156,7 +156,7 @@ SIg-Importer-CSV `
     -sortie "$dossierRapports\$(Get-Date -Format 'yyyy-MM-dd HH-mm-ss') - import adresses-$departement.csv.txt"
 ```
 
-La conversion de la table temporaire en table géographique est faite par exécution d'une requête SQL de typage et de transformation. Cette requête est envoyée à PostgreSQL/PostGIS via la fonction `SIg-Executer-Commande`.
+La conversion de la table temporaire en table géographique est faite par exécution d'une requête SQL de typage et de transformation. Cette requête est envoyée à PostgreSQL/PostGIS via la fonction `SIg-Executer-Commande` (cf. fichier [sig_défaut.ps1](https://github.com/CD30-Devil/SI3P0/blob/main/API/PowerShell/sig_d%C3%A9faut.ps1)).
 
 ```powershell
 # transformation de la table "CSV" en table géographique
@@ -184,9 +184,9 @@ from BAN_CSV;
 
 A ce stade, la base de données stocke la table géographique Lambert-93 de l'ensemble des adresses du département.
 
-Pour la phase d'extraction, la liste des communes est déterminée par requête SQL et est sauvegardée dans un fichier. Le résultat est parcouru pour paramétrer deux processus d'extraction par commune (1 pour le GeoJSON + 1 pour le SHP) grâce aux fonctions `Parametrer-Job-SIg-Exporter-GeoJSON` et `Parametrer-Job-SIg-Exporter-SHP`.
+Pour la phase d'extraction, la liste des communes est déterminée par requête SQL et est sauvegardée dans un fichier. Le résultat est parcouru pour paramétrer deux processus d'extraction par commune (1 pour le GeoJSON + 1 pour le SHP) grâce aux fonctions `Parametrer-Job-SIg-Exporter-GeoJSON` et `Parametrer-Job-SIg-Exporter-SHP` (cf. fichier [sig_défaut.ps1](https://github.com/CD30-Devil/SI3P0/blob/main/API/PowerShell/sig_d%C3%A9faut.ps1)).
 
-Les extractions sont enfin lancées grâce à la fonction `Executer-Jobs` qui, par défaut, exécute en parallèle un nombre de processus égal au nombre de cœurs de la machine - 1.
+Les extractions sont enfin lancées grâce à la fonction `Executer-Jobs` (cf. fichier [fonctions_jobs.ps1](https://github.com/CD30-Devil/SI3P0/blob/main/API/PowerShell/fonctions_jobs.ps1)) qui, par défaut, exécute en parallèle un nombre de processus égal au nombre de cœurs de la machine - 1.
 
 ```powershell
 # recherche de la liste des communes
@@ -231,6 +231,9 @@ A l'issue de l'export, la table temporaire est supprimée. La version géographi
 # effacement de la table temporaire
 SIg-Effacer-Table -table 'BAN_CSV' -sortie "$dossierRapports\$(Get-Date -Format 'yyyy-MM-dd HH-mm-ss') - effacement BAN_CSV.txt"
 ```
+
+[Voir le script complet :fontawesome-regular-file-code:](https://github.com/CD30-Devil/SI3P0/blob/main/docs/Ressources/GeoTribu/2021-05-25_biblio_powershell_si3p0.ps1){: .md-button }
+{: align=middle }
 
 ### Résultats obtenus
 
