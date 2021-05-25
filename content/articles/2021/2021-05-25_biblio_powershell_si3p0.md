@@ -2,8 +2,8 @@
 title: "Aperçu de la bibliothèque PowerShell SI3P0"
 authors: ["Michaël GALIEN"]
 categories: ["article"]
-date: "2021-05-25 00:00"
-description: "Aperçu de la bibliothèque PowerShell SI3P0 développée par le département du Gard pour la gestion de son SIg routes et bâtiments."
+date: "2021-05-25 16:00"
+description: "Petit aperçu de la bibliothèque PowerShell SI3P0 développée par le département du Gard pour la gestion de son SIg routes et bâtiments."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-logo.png"
 tags: SIG,PowerShell,PostgreSQL,PostGIS,Open Source,BAN,adresse
 ---
@@ -43,7 +43,7 @@ Pour faire la promotion de ces travaux au sein de la collectivité, nous avons d
 
 ## Utilisation de la bibliothèque
 
-![logo PowerShell](https://cdn.geotribu.fr/img/logos-icones/programmation/powershell.png "logo PowerShell")
+![logo PowerShell](https://cdn.geotribu.fr/img/logos-icones/programmation/powershell.png "logo PowerShell"){: .img-rdp-news-thumb }
 
 La bibliothèque est constituée de fichiers de scripts (extension `.ps1`). Autrement dit, nous n'avons pas construit de module PowerShell (extension `.psm1`).
 
@@ -58,6 +58,7 @@ Les étapes sont détaillées sur [les pages GitHub du projet](https://cd30-devi
 La bibliothèque propose plusieurs fonctions classiquement nécessaires pour gérer un SIg construit sur PostgreSQL/PostGIS. Elle est enrichie chaque fois que de nouveaux besoins apparaissent. Le MindMap ci-dessous liste les fonctions disponibles au moment de la rédaction de cet article.
 
 ![Liste des fonctions de la bibliothèque SI3P0](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-MindMap_fonctions.png "Liste des fonctions de la bibliothèque SI3P0"){: loading=lazy }
+{: align=middle }
 
 ----
 
@@ -267,4 +268,4 @@ Compte Twitter : [@Tetranos](https://twitter.com/tetranos)
 [département du Gard]: https://www.gard.fr
 [PowerShell]: https://fr.wikipedia.org/wiki/Windows_PowerShell
 
-[^ban]: Base Adresse Nationale (voir <adresse.data.gouv.fr/>)
+[^ban]: Base Adresse Nationale (voir <https://adresse.data.gouv.fr/>)
