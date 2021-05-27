@@ -36,10 +36,10 @@ A noter que ce projet vient en complément du projet [TOPen25](https://osm.cques
 
 ![logo qgis](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo Qgis"){: .img-rdp-news-thumb }
 
+Le projet QGIS est composé des différentes couches de la BD TOPO® et il doit se placer dans le répertoire `BDT_3-0_SHP_LAMB93_D0...`.
+
 [Accéder au projet QGIS :world_map:](https://github.com/igeofr/qgis3/blob/master/qgs/Projet_Carto_BDT_3-0_FXX_CARTE_TOPO.qgs){: .md-button }
 {: align=middle }
-
-Le projet QGIS est composé des différentes couches de la BD TOPO® et il doit se placer dans le répertoire `BDT_3-0_SHP_LAMB93_D0...`.
 
 ![Localisation du projet](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_carte_topo_bdtopo/localisation_qgs.png "Localisation du projet"){: loading=lazy .img-center }
 
