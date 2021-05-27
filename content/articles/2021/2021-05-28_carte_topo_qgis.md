@@ -2,7 +2,7 @@
 title: "Un rendu carte topo QGIS basé sur la BD TOPO®"
 authors: ["Florian Boret"]
 categories: ["article", "tutoriel"]
-date: "2021-06-25 15:00"
+date: "2021-05-28 15:00"
 description: "Un rendu carte topographique avec QGIS et la BD TOPO®"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_carte_topo_bdtopo/export_carte_topo_saussines.png"
 tags: "carte topographique,QGIS,BD TOPO,Scan25,IGN"
@@ -10,7 +10,7 @@ tags: "carte topographique,QGIS,BD TOPO,Scan25,IGN"
 
 # Un rendu carte topo QGIS basé sur la BD TOPO®
 
-:calendar: Date de publication initiale : 25 Juin 2021
+:calendar: Date de publication initiale : 28 Mai 2021
 
 **Mots-clés :** Carte topographique | QGIS | BD TOPO | Scan25 | IGN
 
