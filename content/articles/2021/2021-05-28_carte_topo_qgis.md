@@ -27,6 +27,9 @@ Mais voilà, avec l'[ouverture des données de la BD TOPO®](https://geoservices
 
 A noter que ce projet vient en complément du projet [TOPen25](https://osm.cquest.org/topen25/#15/48.4018/2.7945) de [C. Quest](https://twitter.com/cq94).
 
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
 ## Le projet QGIS
 
 [Accéder au projet QGIS :world_map:](https://github.com/igeofr/qgis3/blob/master/qgs/Projet_Carto_BDT_3-0_FXX_CARTE_TOPO.qgs){: .md-button }
