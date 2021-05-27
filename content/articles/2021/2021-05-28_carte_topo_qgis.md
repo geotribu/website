@@ -17,7 +17,7 @@ tags: "carte topographique,QGIS,BD TOPO,Scan25,IGN"
 Pré-requis :
 
 - Avoir une BD TOPO® en version 3
-- Maîtriser [QGIS](https://qgis.org/)
+- Gestion des styles [QGIS](https://qgis.org/)
 
 ## Introduction
 
