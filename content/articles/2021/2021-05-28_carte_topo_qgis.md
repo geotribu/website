@@ -21,6 +21,8 @@ Pré-requis :
 
 ## Introduction
 
+![logo qgis](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo Qgis"){: .img-rdp-news-thumb }
+
 Il y a maintenant deux ans, en travaillant sur la base des données [osm2igeo](https://github.com/igeofr/osm2igeo/) que je produisais, je me lançais dans un second projet [osm2igeotopo](https://github.com/igeofr/osm2igeotopo/) avec pour objectif de générer des tuiles raster sur la base d'un rendu carte topo inspiré notamment par [le travail de R. Lacroix](https://github.com/rxlacroix/CarteTopo/).
 
 Mais voilà, avec l'[ouverture des données de la BD TOPO®](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html), j'ai décidé de remettre le pied à l'étrier pour proposer un rendu QGIS de la carte topo en m'appuyant sur la BD TOPO®.
@@ -49,7 +51,7 @@ Voici un exemple d'export réalisé et comme vous pouvez le constater, en plus d
 
 ## Conclusion
 
-Ce projet QGIS est une première proposition de rendu mais n'hésitez pas à l'adapter en fonction de vos besoins et à nous faire part de vos améliorations en commentaire. Et qui sait peut être que prochainement on pourra proposer des tuiles raster...
+Ce projet QGIS est une première proposition de rendu mais n'hésitez pas à l'adapter en fonction de vos besoins et à nous faire part de vos améliorations en commentaire.
 
 ----
 
