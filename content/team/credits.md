@@ -21,11 +21,28 @@ L'aventure de Geotribu est rendue possible par l'existence de ressources et d'ou
 
 ## Outils libres
 
+![icône open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "icône open source"){: .img-rdp-news-thumb }
+
+Le site repose énormément sur des solutions libres et nous tenons à remercier les personnes mettant ainsi leur travail à la disposition de tout le monde :
+
 - [Mkdocs](https://www.mkdocs.org/) : générateur de site web statique à partir de contenus rédigés en [markdown](https://fr.wikipedia.org/wiki/Markdown). Simple et extensible, c'est un outil puissant. Le fait qu'il soit en [Python](https://www.python.org/) le rend compatible avec notre socle technique interne.
 - [Material for Mkdocs](https://fr.wikipedia.org/wiki/Markdown) : thème pour Mkdocs qui utilise le framework graphique [Material](https://fr.wikipedia.org/wiki/Markdown) conçu et utilisé par Google. C'est propre, moderne (du bon JS webpacké), orienté performances et facilement personnalisable. Mention spéciale à **Martin Donath**, qui maintient presque seul ce projet.
-- [Github Actions](https://help.github.com/actions) : permet l'automatisation du _workflow_ de publication, réduisant énormément le travail technique à produire.
 - [Tiny File Manager](https://tinyfilemanager.github.io/) : le gestionnaire de fichiers
 petit (1 seul fichier PHP !) mais costaud que nous utilisons pour gérer nos contenus statiques.
+- [Isso](https://posativ.org/isso/) système de commentaires minimaliste et open source
+
+A noter qu'en dépit du fait que GitHub ne soit pas open source, nous tirons énormément parti de la plateforme et en particulier :
+
+- [Github Actions](https://help.github.com/actions) : permet l'automatisation du _workflow_ de publication, réduisant énormément le travail technique à produire.
+- [Github Release](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) et [GitHub CLI](https://cli.github.com/) : permet l'automatisation de la sauvegarde du site. Voir [la page sur la sauvegarde](/contribuer/backup/).
+
+### Nos contributions
+
+Afin de couvrir nos besoins, nous sommes parfois amenés à contribuer aux outils cités plus haut :
+
+- Isso : ajout des notifications via web hooks. [Voir l'article sur le sujet](/articles/2021/2021-05-14_commentaires_migration_disqus_isso/).
+- plugin RSS pour MkDocs : génère des flux RSS à partir de l'historique Git et/ou des en-têtes des contenus. [Voir le dépôt du projet](https://github.com/Guts/mkdocs-rss-plugin/).
+- Tiny File Manager : complétion et amélioration de la traduction française ([voir la Pull Request](https://github.com/prasathmani/tinyfilemanager/pull/497)).
 
 ## Autres
 
