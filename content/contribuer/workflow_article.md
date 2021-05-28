@@ -27,7 +27,7 @@ Allez, cette fois, c'est parti ! L'angoisse de la feuille blanche n'a qu'à bien
 Comme indiqué dans [les prérequis](/contribuer/requirements/), qu'importe le flacon, tant qu'on a l'ivresse de la rédaction  en Markdown : du simple éditeur de texte (oui, même le bloc-notes de Windows !) à l'éditeur lourd (à ce propos voir [le dossier de Next INpact](https://www.nextinpact.com/article/44240/zettlr-prise-en-main-dun-editeur-texte-aux-nombreuses-qualites)), faites votre choix !  
 Mais sachez que nous mettons un éditeur collaboratif ([Hedgedoc](https://hedgedoc.org/)) à disposition des contributeur/ices :
 
-[Utiliser le PAD :fontawesome-solid-feather-alt:](https://geotripad.herokuapp.com/){: .md-button }
+[Utiliser le PAD :fontawesome-solid-feather-alt:](http://pad.geotribu.fr/){: .md-button }
 {: align=middle }
 
 Sinon, cela tient en quelques étapes :
@@ -64,6 +64,36 @@ Problème ? Souci ? Angoisse ? Simple question ?
 
 Une fois le contenu prêt, il ne reste plus qu'à pousser le contenu sur le [dépôt GitHub]. La procédure est différente selon si vous des droits en écriture ou non sur le [dépôt GitHub]. Ces droits sont généralement réservés aux contributeur/ices régulier/ères et aux membres de l'équipe.
 
+### Je n'ai pas accès en écriture
+
+Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va vous falloir :
+
+1. Créer un dépôt dérivé (*fork*) sur votre compte GitHub à partir du [dépôt GitHub] original de Geotribu :
+
+    [Forker le dépôt GitHub :fontawesome-solid-code-branch:](https://github.com/geotribu/website/fork/){: .md-button }
+    {: align=middle }
+
+    ![GitHub fork repository](https://cdn.geotribu.fr/img/internal/contribution/github_fork_geotribu.png "GitHub - Créer un fork de Geotribu"){: .img-center loading=lazy }
+
+    !!!tip "Déjà forké auparavant ?"
+        A noter que si vous aviez déjà forké notre dépôt auparavant, il vous suffit de mettre à jour le dépôt dérivé sur votre compte via le bouton `Fetch Upstream` :  
+        ![Github update fork](https://cdn.geotribu.fr/img/internal/contribution/github_fork_geotribu_update.png "Mettre à jour le fork (appelé upstream)"){: .img-center loading=lazy }
+
+2. Ajouter votre article dans votre dépôt dérivé :
+    - soit via [Git] (ou un outil l'utilisant) si vous ça vous parle,
+    - soit directement depuis l'interface web de GitHub en cliquant sur `Add file` :
+
+    ![GitHub add file](https://cdn.geotribu.fr/img/internal/contribution/github_add_file.png "GitHub - Ajouter un fichier"){: loading=lazy }
+    {: align=middle }
+
+3. Créer la Pull Request[^pr] directement depuis votre dépôt dérivé via le bouton `Contribute` :
+
+    ![GitHub submit pull request from fork](https://cdn.geotribu.fr/img/internal/contribution/github_submit_from_fork.png "GitHub - Créer une Pull Request depuis un fork"){: loading=lazy }
+
+4. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article :
+
+    ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
+
 ### J'ai accès en écriture
 
 1. Créer une branche en respectant la convention de nommage suivante `article/XXXXXX` où `XXXXXX` est nom de l'article en minuscules et sans caractère spécial
@@ -89,36 +119,6 @@ Une fois le contenu prêt, il ne reste plus qu'à pousser le contenu sur le [dé
     ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
 
 5. Demander la relecture sur Slack, dans [le canal `Articles`](https://geotribu.slack.com/archives/C0165UARRBQ)
-
-### Je n'ai pas accès en écriture
-
-Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va vous falloir :
-
-1. Créer un dépôt dérivé (*fork*) sur votre compte GitHub à partir du [dépôt GitHub] original de Geotribu :
-
-    [Forker le dépôt GitHub :fontawesome-solid-code-branch:](https://github.com/geotribu/website/fork/){: .md-button }
-    {: align=middle }
-
-    ![GitHub fork repository](https://cdn.geotribu.fr/img/internal/contribution/github_fork_geotribu.png "GitHub - Créer un fork de Geotribu"){: .img-center loading=lazy }
-
-    !!!tip "Déjà forké auparavant ?"
-        A noter que si vous aviez déjà forké notre dépôt auparavant, il vou suffit de mettre à jour le dépôt dérivé sur votre compte via le bouton `Fetch Upstream` :  
-        ![Github update fork](https://cdn.geotribu.fr/img/internal/contribution/github_fork_geotribu_update.png "Mettre à jour le fork (appelé upstream)"){: .img-center loading=lazy }
-
-2. Ajouter votre article dans votre dépôt dérivé :
-    - soit via [Git] (ou un outil l'utilisant) si vous ça vous parle,
-    - soit directement depuis l'interface web de GitHub en cliquant sur `Add file` :
-
-    ![GitHub add file](https://cdn.geotribu.fr/img/internal/contribution/github_add_file.png "GitHub - Ajouter un fichier"){: loading=lazy }
-    {: align=middle }
-
-3. Créer la Pull Request[^pr] directement depuis votre dépôt dérivé via le bouton `Contribute` :
-
-    ![GitHub submit pull request from fork](https://cdn.geotribu.fr/img/internal/contribution/github_submit_from_fork.png "GitHub - Créer une Pull Request depuis un fork"){: loading=lazy }
-
-4. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article :
-
-    ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
 
 ----
 
