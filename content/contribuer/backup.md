@@ -21,14 +21,20 @@ Afin de ne pas reproduire le drame du crash de la base de données (voir [l'arti
 
 Les seuls éléments non couverts directement par ces différents points sont donc les fichiers d'illustration : images, documents, etc.
 
-Pour couvrir cet aspect, nous avons mis en place un mécanisme de sauvegarde
-
 ## GitHub CLI et GitHub Release
 
+![logo GitHub](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/github.png "logo GitHub"){: .img-rdp-news-thumb }
 
-<https://github.com/geotribu/minimalist-cdn/blob/master/backup.sh>
+Pour couvrir cet aspect, nous avons mis en place un mécanisme de sauvegarde qui tire également parti de la plateforme GitHub : [Github Release](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) et [GitHub CLI](https://cli.github.com/).
 
-![Geotribu GitHub Release](https://cdn.geotribu.fr/img/internal/workflow/geotribu_backup_result_github_release.png "Sauvegarde de Geotribu dans GitHub Release"){: loading=lazy }
+Ainsi, tous les mois, le [script](https://github.com/geotribu/minimalist-cdn/blob/master/backup.sh) :
+
+1. compresse l'ensemble des fichiers du pseudo-CDN
+2. étiquette le dernier commit (*git tag*) avec un numéro de version calendaire de la forme `YYYY.MM`
+3. crée une "release" sur GitHub en joignant l'archive compressée
+4. notifie l'équipe sur [Slack](https://geotribu.slack.com/archives/CU9Q1B1FT)
+
+![Sauvegarde - Notification Slack](https://cdn.geotribu.fr/img/internal/workflow/slack_geotribot_backup_notification.png "Sauvegarde - Notification Slack"){: .img-center loading=lazy }
 
 [Télécharger la dernière sauvegarde :fontawesome-solid-download:](https://github.com/geotribu/website/releases/latest/){: .md-button }
 {: align=middle }
