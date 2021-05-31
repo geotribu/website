@@ -51,7 +51,7 @@ jobs:
       run: |
         mkdocs build --clean --config-file mkdocs.yml --verbose --strict
       env:
-        MKDOCS_GOOGLE_ANALYTICS_KEY: 'UA-162113930-1'
+        MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         MKDOCS_SEARCH_PREBUILD_INDEX: node
 
     - name: Deploy to Github Pages
