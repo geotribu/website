@@ -6,7 +6,7 @@ name: Pull Request Checker
 on:
   pull_request:
     branches: [ master ]
-    types: [ labeled ]
+    types: [ labeled, opened, reopened, synchronize ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
