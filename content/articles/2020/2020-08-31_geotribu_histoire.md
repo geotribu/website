@@ -28,17 +28,20 @@ Souvenirs, souvenirs et avenir !
 
 ## Geotribu, c'est quoi ?
 
-D'un point de vue strictement formel, Geotribu c'est un nom de domaine. Et deux suffixes (.net et .fr, le [.com étant squatté depuis longtemps](https://www.whois.com/whois/geotribu.com) en attendant qu'on devienne [riche](https://www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)). Il n'y a pas de structure : ni entrepreneuriale, ni associative, ni contrat de sang dans un tipi. D'ailleurs, la convention encadrant le prêt du serveur par [GeoRezo] est à mon nom et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
+![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-rdp-news-thumb }
 
-C'est donc un regroupement spontané de personnes autour de leur intérêt pour leur dénominateur commun professionnel : la dimension géographique des métiers de chacun/e. Vient ensuite la ligne "éditoriale" imprimée dès les débuts que je présente comme les deux faces d'une même pièce :
+D'un point de vue strictement formel, Geotribu c'est un [nom de domaine](https://fr.wikipedia.org/wiki/Nom_de_domaine). Et trois suffixes (.fr, .net et .org, le [.com étant squatté depuis longtemps](https://www.whois.com/whois/geotribu.com) en attendant qu'on devienne [riche](https://www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)).  
+Il n'y a pas de structure : ni entrepreneuriale, ni associative, ni contrat de sang dans un tipi. D'ailleurs, la convention encadrant le prêt du serveur utilisé pour [héberger les images](/contribuer/guides/image/#heberger-une-image-sur-le-cdn-de-geotribu) par [GeoRezo] est à mon nom et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
 
-- pile, la technique : l'informatique nous désignant ainsi comme "geo-geeks", convaincus que la maîtrise d'outils sert le travail thématique.
+C'est donc un regroupement spontané de personnes autour de leur intérêt pour un dénominateur commun professionnel : la dimension géographique des métiers de chacun/e. Vient ensuite la ligne "éditoriale" imprimée dès les débuts que je présente comme les deux faces d'une même pièce :
 
-- face, le libre : une philosophie en cohérence naturelle avec la démarche de partage inhérente au site (avez-vous noté le [copyleft](https://fr.wikipedia.org/wiki/Copyleft) qui orne le pied de page ?). Au-delà de nos propres convictions que le libre, l'_open_ et le commun sont des leviers vertueux, il ne s'agit pas de dire que nous n'utilisons jamais de briques propriétaires ou que nous les dénigrons, mais nous considérons que les éditeurs de briques propriétaires ont généralement les moyens d'assurer leur propre publicité.
+- pile, la technique : l'informatique nous désignant ainsi comme "geo-geeks", convaincus que la maîtrise d'outils sert le travail thématique, sans perdre de vue que les outils sont le moyen, non la fin.
+
+- face, le libre : une philosophie en cohérence naturelle avec la démarche de partage inhérente au site (avez-vous noté le [copyleft](https://fr.wikipedia.org/wiki/Copyleft) qui orne le pied de page ?). Au-delà de nos propres convictions que le libre, l'_open_ et les communs sont des leviers vertueux, il ne s'agit pas de dire que nous n'utilisons jamais de logiciels propriétaires ou que nous les dénigrons ; mais nous considérons que les éditeurs de briques propriétaires ont généralement les moyens d'assurer leur propre publicité.
 
 Bref, on vit le site [à pile ou face](https://fr.wikipedia.org/wiki/Pile_ou_face_(chanson)) ! L'occasion d'un petit intermède musical dans un article fleuve :
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-l70OKXjg98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/-l70OKXjg98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > ou la [version d'Emmanuelle Béart dans 8 Femmes](https://www.youtube.com/watch?v=rTL1FSv9ldw)
 
@@ -74,6 +77,9 @@ Ma période de disponibilité qui s'ouvre alors, conjuguée au confinement, me d
 Mais si récupérer des contenus n'est qu'une question technique (on le verra dans le prochain article), relancer une dynamique autour d'un processus de contribution collaborative est avant tout une question humaine. L'équipe est beaucoup plus mince qu'avant et rien ne dit que nous tiendrons longtemps un rythme de publication.
 
 Qu'importe, on a retrouvé le plaisir et pourvu que ça dure !
+
+[Page des contributeur/ices :fontawesome-solid-people-carry:](/team/contributors/){: .md-button }
+{: align=middle }
 
 ----
 
