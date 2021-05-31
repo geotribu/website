@@ -78,11 +78,10 @@ jobs:
         enable-pull-request-comment: true
         fails-without-credentials: true
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        netlify-config-path: ./netlify.toml
         overwrites-pull-request-comment: true
         production-branch: master
         production-deploy: false
-        publish-dir: 'build/mkdocs/site'
+        publish-dir: '.'
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
