@@ -48,3 +48,23 @@ jobs:
       run: mkdocs build --config-file mkdocs.yml --verbose --strict
       env:
         MKDOCS_SEARCH_PREBUILD_INDEX: node
+
+    - name: Deploy preview to Netlify
+      if: ${{ github.event.label.name == 'preview' }}
+      uses: nwtgck/actions-netlify@v1.2
+      with:
+        alias: deploy-preview-${{ github.event.number }}
+        deploy-message: "Deploy preview of PR ${{ github.event.pull_request.title }} from GitHub Actions"
+        enable-commit-comment: false
+        enable-pull-request-comment: true
+        fails-without-credentials: true
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        netlify-config-path: ./netlify.toml
+        overwrites-pull-request-comment: true
+        production-branch: master
+        production-deploy: false
+        publish-dir: 'build/mkdocs/site'
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      timeout-minutes: 1
