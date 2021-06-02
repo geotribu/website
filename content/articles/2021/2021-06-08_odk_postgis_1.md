@@ -152,9 +152,9 @@ Elle contient la version du formulaire ainsi que le nom que l'on souhaite donner
 Plusieurs interfaces (*widgets*) cartographiques de saisie vont nous être proposées par ODK. Toutes reposent sur l'utilisation d'un fond de carte et d'une librairie géographique. Pour simplifier la chose à l'utilisateur, le distinguo n'est plus fait à ce sujet dans les réglages de l'application.
 L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce dernier propose plusieurs "styles" (satellite, terrain...) choisir celui qui convient.
 
-![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png){: width=300px }{: .img-center loading=lazy }
+![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png =300x533){: .img-center loading=lazy }
 
-![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png){: width=300px }{: .img-center loading=lazy }
+![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png =300x533){: .img-center loading=lazy }
 
 Ce fond de carte pourra être surchargé par un fond "maison" en (fichier .mbtiles) généré avec QGIS par exemple.
 Les tuiles vecteurs peuvent être utilisées aussi mais seulement avec le fond de carte Mapbox, et elle ne sont pour l'instant pas "stylées".
@@ -169,12 +169,12 @@ Une valeur par défaut peut être renseignée. Un point (latitude longitude alti
 
   Par défaut le Geopoint enregistre la postion du GPS sans l'afficher sur une carte. La précision minimale requise pour enregistrer le point peut être précisée. Elle est par défaut de 5m.
   
-![Recherche de point GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "calcul de la position du GPS"){: width=300px }{: .img-center loading=lazy }
+![Recherche de point GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "calcul de la position du GPS" =300x533){: .img-center loading=lazy }
 
 Dés que la précision du signal sera inférieure à la tolérance précisée dans le formulaire (5m par défaut), le point sera enregistré. L'utilisateur peut à tout moment outrepasser cette contrainte en enregistrant manuellement le "PointGéo".
 Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
-![Affichage des propriétés du point enregistré](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "Affichage des coordonnées enregistrées automatiquement et de la précision du signal"){: width=300px }{: .img-center loading=lazy }
+![Affichage des propriétés du point enregistré](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "Affichage des coordonnées enregistrées automatiquement et de la précision du signal" =300x533){: .img-center loading=lazy }
 
   - [Localisation GPS affichée sur une carte](https://docs.getodk.org/form-question-types/#geopoint-with-map-display)
 
@@ -186,7 +186,7 @@ Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
     Si une apparence (colonne *appearence*) "placement_maps" est mentionnée alors l'utilisateur pourra cliquer le point sur la carte ou enregistrer l'emplacement courant, matérialisé comme précédemment.
     
-![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png){: width=300px }{: .img-center loading=lazy }
+![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png =300x533){: .img-center loading=lazy }
 
   Une valeur par défaut peut-être spécifiée. La carte s'ouvrira sur cette valeur. Ici de quoi afficher l'emplacement du siège Montpelliérain du CEN Occitanie : 
   3.8934834 43.6089782 0 0
@@ -197,19 +197,19 @@ Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
   3 modes d'enregistrement sont possibles et proposés au lancement de la "Geotrace" : 
   
-![choix possible pour création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: width=300px }{: .img-center loading=lazy }
+![choix possible pour création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png =300x533){: .img-center loading=lazy }
 
   - la saisie manuelle en cliquant (tapotant) chacun des points sur la carte
 
-![saisie en tapotant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: width=300px }{: .img-center loading=lazy }
+![saisie en tapotant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png =300x533){: .img-center loading=lazy }
 
   - l'enregistrement manuel des points constituant la ligne. La localisation du GPS apparaît sur la carte, l'utilisateur peut à tout moment enregistrer la position courante
 
-![enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: width=300px }{: .img-center loading=lazy }
+![enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png =300x533){: .img-center loading=lazy }
 
   - l'enregistrement automatique des points au fil du déplacement de l'utilisateur, avec précision du pas de temps et de la précision requise pour enregistrer le sommet (par exemple ci-dessous 1 point toutes les 20 secondes avec une précision minimale requise de 10 mètres). La précision minimale du GPS requise pour créer le point peut-être spécifiée.
 
-![enrgegisrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_rengistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: width=300px }{: .img-center loading=lazy }
+![enrgegisrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_rengistrement_auto_avec_precision_mini_et_intervalle_temps.png  =300x533){: .img-center loading=lazy }
 
 - [Geoshape (polygone)](https://docs.getodk.org/form-question-types/#geoshape)
 
