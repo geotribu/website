@@ -1,20 +1,16 @@
-# This is a basic workflow to help you get started with Actions
-name: Deploy to Github Pages
+name: "Deploy to Github Pages 🚀"
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ master ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
 jobs:
-  # This workflow contains a single job called "build"
   deploy:
-    # The type of runner that the job will run on
+    name: "Déploiement 🚀"
+
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: Get source code
       uses: actions/checkout@v2
@@ -34,8 +30,7 @@ jobs:
     - name: Cache project dependencies (pip)
       uses: actions/cache@v2.1.6
       with:
-        path: ~/.cache/pip          # This path is specific to Ubuntu
-        # Look to see if there is a cache hit for the corresponding requirements file
+        path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
