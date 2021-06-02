@@ -53,7 +53,7 @@ ODK fait partie de la [boite à outils d'HotOSM](https://toolbox.hotosm.org/fr/p
 
 Et des structures bien plus "petites" comme les Conservatoires d'espaces naturels (Cen) utilisent la solution pour collecter des données relatives à la conservation de la nature.
 
-En 2020 ODK a été utilisé dans tous les pays du monde excepté au Groenland et en Corée du Nord ! 
+En 2020 ODK a été utilisé dans tous les pays du monde excepté au Groenland et en Corée du Nord !
 
 ODK Collect a été téléchargé plus d'un million de fois sur le playstore de google.
 
@@ -67,7 +67,7 @@ Le forum est le principal lieu d'échange entre utilisateurs et développeurs. I
 La communauté est assez exemplaire en ce sens qu'il y a beaucoup d'interactions entre utilisateurs qui y échangent conseils et bonnes pratiques. Le forum fait remonter les besoins des utilisateurs et les échanges sont riches avec les développeurs, toujours curieux de l'utilisation faite des outils.
 
 C'est un lieu de discussion mondial, où il n'est pas rare d'échanger avec des utilisateurs de tous les continents en une journée.
-La bienveillance et l'entraide qui y règnent facilitent les échanges entre membres de tous niveaux et font de ce forum un "endroit" chaleureux ! 
+La bienveillance et l'entraide qui y règnent facilitent les échanges entre membres de tous niveaux et font de ce forum un "endroit" chaleureux !
 
 ### Les outils de la "suite" ODK
 
@@ -139,7 +139,7 @@ Nous verrons plusieurs exemple de *widgets* dans la seconde volet de cette séri
 
 #### la feuille de calcul "choices"
 
-Les listes de choix sont nommées (colonne *list_name*) et contiennent pour chaque élément de la liste une valeur (colonne *name*) et une étiquette (colonne *label*). Ces trois colonnes sont obligatoires dans la feuille de calcul *choices*. 
+Les listes de choix sont nommées (colonne *list_name*) et contiennent pour chaque élément de la liste une valeur (colonne *name*) et une étiquette (colonne *label*). Ces trois colonnes sont obligatoires dans la feuille de calcul *choices*.
 
 Des colonnes personnelles peuvent être ajoutées et ainsi être utilisées comme critère dans la colonne *choice _filter* de la feuille *survey*. C'est par exemple dans une colonne "groupe" que je préciserai pour l'élément "têtard" la valeur "batracien" afin de ne pas proposer cette valeur à la saisie pour une obervsation d'oiseau.
 
@@ -159,7 +159,7 @@ L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce
 Ce fond de carte pourra être surchargé par un fond "maison" en (fichier .mbtiles) généré avec QGIS par exemple.
 Les tuiles vecteurs peuvent être utilisées aussi mais seulement avec le fond de carte Mapbox, et elle ne sont pour l'instant pas "stylées".
 
-Les points et les sommets des lignes et des polygones sont décrits par 4 valeurs séparées par un espace : latitude longitude altitude précision 
+Les points et les sommets des lignes et des polygones sont décrits par 4 valeurs séparées par un espace : latitude longitude altitude précision
 
 Une valeur par défaut peut être renseignée. Un point (latitude longitude altitude precision ) ou une série de points séparés par un point-virgule.
 
@@ -168,7 +168,7 @@ Une valeur par défaut peut être renseignée. Un point (latitude longitude alti
 - [Geopoint (point)](https://docs.getodk.org/form-question-types/#geopoint)
 
   Par défaut le Geopoint enregistre la postion du GPS sans l'afficher sur une carte. La précision minimale requise pour enregistrer le point peut être précisée. Elle est par défaut de 5m.
-  
+
 ![Recherche de point GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "calcul de la position du GPS" =300x533){: .img-center loading=lazy }
 
 Dés que la précision du signal sera inférieure à la tolérance précisée dans le formulaire (5m par défaut), le point sera enregistré. L'utilisateur peut à tout moment outrepasser cette contrainte en enregistrant manuellement le "PointGéo".
@@ -185,18 +185,18 @@ Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
   - [Localisation entrée par l'utilisteur, carte centrée sur le GPS](https://docs.getodk.org/form-question-types/#geopoint-with-user-selected-location)
 
     Si une apparence (colonne *appearence*) "placement_maps" est mentionnée alors l'utilisateur pourra cliquer le point sur la carte ou enregistrer l'emplacement courant, matérialisé comme précédemment.
-    
+
 ![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png =300x533){: .img-center loading=lazy }
 
-  Une valeur par défaut peut-être spécifiée. La carte s'ouvrira sur cette valeur. Ici de quoi afficher l'emplacement du siège Montpelliérain du CEN Occitanie : 
+  Une valeur par défaut peut-être spécifiée. La carte s'ouvrira sur cette valeur. Ici de quoi afficher l'emplacement du siège Montpelliérain du CEN Occitanie :
   3.8934834 43.6089782 0 0
 
 - [Geotrace (ligne)](https://docs.getodk.org/form-question-types/#geotrace-widget)
 
-  C'est une série de points, au moins deux, formant une ligne, le premier et le dernier point sont différents. 
+  C'est une série de points, au moins deux, formant une ligne, le premier et le dernier point sont différents.
 
-  3 modes d'enregistrement sont possibles et proposés au lancement de la "Geotrace" : 
-  
+  3 modes d'enregistrement sont possibles et proposés au lancement de la "Geotrace" :
+
 ![choix possible pour création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png =300x533){: .img-center loading=lazy }
 
   - la saisie manuelle en cliquant (tapotant) chacun des points sur la carte
@@ -235,7 +235,7 @@ Notre SI se développe depuis 2007 autour d'une base de données PostgreSQL/Post
 
 En 2015, après que la solution nous avait été présentée par le CEN Rhône-Alpes, nous avons entrepris de mettre en place un formulaire de saisie mobile, correspondant aux données collectées dans notre appli web métier (SiCen).
 
-Quelques arguments de poids nous ont convaincus d'utiliser ODK : 
+Quelques arguments de poids nous ont convaincus d'utiliser ODK :
 
 * la possibilité de générer des formulaires très facilement, sans développement
 * l'utilisation par ODK de PostgreSQL comme base de données.
@@ -257,9 +257,9 @@ Le SI actuel du CEN Occitanie peut-être schématisé ainsi.
 ![écran d'accueil de Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/galaxie_sicen.png){: .img-left }
 
 Nous utilisons actuellement une quinzaine de formulaires ODK pour :
-* des suivis naturalistes répondant à divers protocoles, 
-* le [suivi des paramètres physico-chimiques des lagunes](https://si.cen-occitanie.org/suivi-des-parametres-physico-chimiques-des-lagunes-un-formualire-de-terrain-avec-odk/), 
-* le suivi des ouvrages de gestion hydraulique, 
+* des suivis naturalistes répondant à divers protocoles,
+* le [suivi des paramètres physico-chimiques des lagunes](https://si.cen-occitanie.org/suivi-des-parametres-physico-chimiques-des-lagunes-un-formualire-de-terrain-avec-odk/),
+* le suivi des ouvrages de gestion hydraulique,
 * ou encore le suivi de l'utilisation des voitures de service.
 
 ----
@@ -288,4 +288,4 @@ Nous utilisons actuellement une quinzaine de formulaires ODK pour :
 
 ## Mathieu Bossaert
 
-![Portrait Mathieu Bossaert]( "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }	
+![Portrait Mathieu Bossaert]( "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
