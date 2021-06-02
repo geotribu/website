@@ -154,7 +154,7 @@ L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce
 
 ![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png =300x533){: .img-center loading=lazy }
 
-![Réglages de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png =300x533){: .img-center loading=lazy }
+![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png =300x533){: .img-center loading=lazy }
 
 Ce fond de carte pourra être surchargé par un fond "maison" en (fichier .mbtiles) généré avec QGIS par exemple.
 Les tuiles vecteurs peuvent être utilisées aussi mais seulement avec le fond de carte Mapbox, et elle ne sont pour l'instant pas "stylées".
@@ -209,7 +209,7 @@ Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
   - l'enregistrement automatique des points au fil du déplacement de l'utilisateur, avec précision du pas de temps et de la précision requise pour enregistrer le sommet (par exemple ci-dessous 1 point toutes les 20 secondes avec une précision minimale requise de 10 mètres). La précision minimale du GPS requise pour créer le point peut-être spécifiée.
 
-![enrgegisrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_rengistrement_auto_avec_precision_mini_et_intervalle_temps.png  =300x533){: .img-center loading=lazy }
+![enregistrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png  =300x533){: .img-center loading=lazy }
 
 - [Geoshape (polygone)](https://docs.getodk.org/form-question-types/#geoshape)
 
