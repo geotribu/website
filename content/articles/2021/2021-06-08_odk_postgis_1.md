@@ -61,7 +61,7 @@ ODK Collect a été téléchargé plus d'un million de fois sur le playstore de 
 
 GetODK, la société qui développe ODK est une équipe composée de 9 personnes : https://getodk.org/about/team.html et elle s'appuie sur un comité technique, appelé [TAB (Technical Advisory Board)](https://github.com/getodk/governance/blob/master/TAB-GOVERNANCE.md) impliquant des utilisateurs de toute la planète, de différents domaines. Ce TAB se réunit tous les 15 jours [de manière très transparente](https://forum.getodk.org/tag/tab-meeting).
 
-![l'équipe d'ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Equipe_GetODK.png)
+![l'équipe d'ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Equipe_GetODK.png){: .img-center loading=lazy }
 
 Le forum est le principal lieu d'échange entre utilisateurs et développeurs. Il compte 14 000 inscrits !  
 La communauté est assez exemplaire en ce sens qu'il y a beaucoup d'interactions entre utilisateurs qui y échangent conseils et bonnes pratiques. Le forum fait remonter les besoins des utilisateurs et les échanges sont riches avec les développeurs, toujours curieux de l'utilisation faite des outils.
@@ -152,9 +152,9 @@ Elle contient la version du formulaire ainsi que le nom que l'on souhaite donner
 Plusieurs interfaces (*widgets*) cartographiques de saisie vont nous être proposées par ODK. Toutes reposent sur l'utilisation d'un fond de carte et d'une librairie géographique. Pour simplifier la chose à l'utilisateur, le distinguo n'est plus fait à ce sujet dans les réglages de l'application.
 L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce dernier propose plusieurs "styles" (satellite, terrain...) choisir celui qui convient.
 
-![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png)
+![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png){: width=300px }{: .img-center loading=lazy }
 
-![Réglages de la librairie choisie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png)
+![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png){: width=300px }{: .img-center loading=lazy }
 
 Ce fond de carte pourra être surchargé par un fond "maison" en (fichier .mbtiles) généré avec QGIS par exemple.
 Les tuiles vecteurs peuvent être utilisées aussi mais seulement avec le fond de carte Mapbox, et elle ne sont pour l'instant pas "stylées".
@@ -163,16 +163,18 @@ Les points et les sommets des lignes et des polygones sont décrits par 4 valeur
 
 Une valeur par défaut peut être renseignée. Un point (latitude longitude altitude precision ) ou une série de points séparés par un point-virgule.
 
+***-> Captures d'écran à venir***
+
 - [Geopoint (point)](https://docs.getodk.org/form-question-types/#geopoint)
 
   Par défaut le Geopoint enregistre la postion du GPS sans l'afficher sur une carte. La précision minimale requise pour enregistrer le point peut être précisée. Elle est par défaut de 5m.
   
-![Recherche de point GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "calcul de la position du GPS")
+![Recherche de point GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "calcul de la position du GPS"){: width=300px }{: .img-center loading=lazy }
 
 Dés que la précision du signal sera inférieure à la tolérance précisée dans le formulaire (5m par défaut), le point sera enregistré. L'utilisateur peut à tout moment outrepasser cette contrainte en enregistrant manuellement le "PointGéo".
 Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
-![Affichage des propriétés du point enregistré](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "Affichage des coordonnées enregistrées automatiquement et de la précision du signal")
+![Affichage des propriétés du point enregistré](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "Affichage des coordonnées enregistrées automatiquement et de la précision du signal"){: width=300px }{: .img-center loading=lazy }
 
   - [Localisation GPS affichée sur une carte](https://docs.getodk.org/form-question-types/#geopoint-with-map-display)
 
@@ -184,7 +186,7 @@ Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
     Si une apparence (colonne *appearence*) "placement_maps" est mentionnée alors l'utilisateur pourra cliquer le point sur la carte ou enregistrer l'emplacement courant, matérialisé comme précédemment.
     
-![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png)
+![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png){: width=300px }{: .img-center loading=lazy }
 
   Une valeur par défaut peut-être spécifiée. La carte s'ouvrira sur cette valeur. Ici de quoi afficher l'emplacement du siège Montpelliérain du CEN Occitanie : 
   3.8934834 43.6089782 0 0
@@ -195,19 +197,19 @@ Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
   3 modes d'enregistrement sont possibles et proposés au lancement de la "Geotrace" : 
   
-![choix possible pour création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png)
+![choix possible pour création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: width=300px }{: .img-center loading=lazy }
 
   - la saisie manuelle en cliquant (tapotant) chacun des points sur la carte
 
-![saisie en tapotant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png)
+![saisie en tapotant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: width=300px }{: .img-center loading=lazy }
 
   - l'enregistrement manuel des points constituant la ligne. La localisation du GPS apparaît sur la carte, l'utilisateur peut à tout moment enregistrer la position courante
 
-![enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png)
+![enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: width=300px }{: .img-center loading=lazy }
 
   - l'enregistrement automatique des points au fil du déplacement de l'utilisateur, avec précision du pas de temps et de la précision requise pour enregistrer le sommet (par exemple ci-dessous 1 point toutes les 20 secondes avec une précision minimale requise de 10 mètres). La précision minimale du GPS requise pour créer le point peut-être spécifiée.
 
-![enrgegisrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_rengistrement_auto_avec_precision_mini_et_intervalle_temps.png )
+![enrgegisrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_rengistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: width=300px }{: .img-center loading=lazy }
 
 - [Geoshape (polygone)](https://docs.getodk.org/form-question-types/#geoshape)
 
@@ -252,7 +254,7 @@ La saison de terrain est dense, les journées longues et le temps à consacrer �
 
 Le SI actuel du CEN Occitanie peut-être schématisé ainsi.
 
-![écran d'accueil de Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/galaxie_sicen.png)
+![écran d'accueil de Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/galaxie_sicen.png){: .img-left }
 
 Nous utilisons actuellement une quinzaine de formulaires ODK pour :
 * des suivis naturalistes répondant à divers protocoles, 
