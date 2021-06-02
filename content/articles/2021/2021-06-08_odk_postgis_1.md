@@ -154,7 +154,7 @@ L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce
 
 ![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png =300x533){: .img-center loading=lazy }
 
-![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png =300x533){: .img-center loading=lazy }
+![Réglages de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png =300x533){: .img-center loading=lazy }
 
 Ce fond de carte pourra être surchargé par un fond "maison" en (fichier .mbtiles) généré avec QGIS par exemple.
 Les tuiles vecteurs peuvent être utilisées aussi mais seulement avec le fond de carte Mapbox, et elle ne sont pour l'instant pas "stylées".
