@@ -79,7 +79,6 @@ jobs:
         fails-without-credentials: true
         github-token: ${{ secrets.GITHUB_TOKEN }}
         overwrites-pull-request-comment: true
-        production-branch: master
         production-deploy: false
         publish-dir: '.'
       env:
