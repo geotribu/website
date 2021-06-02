@@ -1,12 +1,18 @@
-name: "Preview on Netlify 👀"
+name: "Pull Request Preview 👀"
 
 on:
   pull_request_target:
     branches: [ master ]
     types: [ labeled ]
+  workflow_run:
+    workflows: ["Pull Request Checker 🛃"]
+    types:
+      - completed
+      - requested
 
 jobs:
   preview-netlify:
+    name: "Netlify preview 👀"
     runs-on: ubuntu-latest
     needs: [ build ]
     if: contains( github.event.pull_request.labels.*.name, 'preview')
@@ -16,7 +22,7 @@ jobs:
       uses: dawidd6/action-download-artifact@v2
       with:
         name: pr-build-website
-        pr: ${{github.event.pull_request.number}}
+        pr: ${{ github.event.pull_request.number }}
         workflow: pr_checker_build.yml
         workflow_conclusion: completed,success
 

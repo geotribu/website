@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: "Déploiement 🚀"
+    name: "Deploy website 🚀"
 
     runs-on: ubuntu-latest
 
