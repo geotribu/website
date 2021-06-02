@@ -1,4 +1,4 @@
-name: Pull Request Checker
+name: "Pull Request Checker 🛃"
 
 on:
   pull_request:
