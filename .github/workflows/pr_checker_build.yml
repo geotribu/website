@@ -4,7 +4,7 @@ name: Pull Request Checker
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  pull_request:
+  pull_request_target:
     branches: [ master ]
     types: [ labeled, opened, reopened, synchronize ]
 
