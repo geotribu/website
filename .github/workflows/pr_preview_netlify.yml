@@ -15,7 +15,7 @@ jobs:
     - name: Download artifact from build workflow
       uses: dawidd6/action-download-artifact@v2
       with:
-      name: pr-build-website
+        name: pr-build-website
         pr: ${{github.event.pull_request.number}}
         workflow: pr_checker_build.yml
         workflow_conclusion: completed,success
