@@ -2,7 +2,7 @@
 title: "Personnaliser le splash screen de QGIS"
 authors: ["Julien MOURA"]
 categories: ["article"]
-date: "2021-03-19 10:20"
+date: "2021-06-17 18:20"
 description: "Description pour le SEO."
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
 tags: "QGIS,personnalisation,splash screen,démarrage"
@@ -10,13 +10,13 @@ tags: "QGIS,personnalisation,splash screen,démarrage"
 
 # Personnaliser l'image au lancement de QGIS
 
-:calendar: Date de publication initiale : 19 mars 2021
+:calendar: Date de publication initiale : 17 juin 2021
 
 **Mots-clés :** QGIS | interface graphique
 
 Pré-requis :
 
-- aucun
+- QGIS installé
 
 ## Introduction
 
