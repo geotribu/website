@@ -187,11 +187,11 @@ https://geoserveis.icgc.cat/contextmaps/positron.json
 
 ----
 
-## 3. Hébérger ses données spatiales sans passer par Mapbox Studio
+## 3. Héberger ses données spatiales sans passer par Mapbox Studio
 
-Une fois sa carte configurée avec MapLibre et un fond de carte, il est temps d'afficher ses propres données. Plusieurs options d'hébérgement de GeoJSON sont possibles, comme un hébérgement sur un serveur FTP, toutefois le mécanisme [Cross-origin resource sharing (CORS)](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing) qui permet d'intégrer à sa carte Web des ressources externes peux s'avérer très capricieux, surtout si on n'est pas connaisseur...
+Une fois sa carte configurée avec MapLibre et un fond de carte, il est temps d'afficher ses propres données. Plusieurs options d'hébergement de GeoJSON sont possibles, comme un hébergement sur un serveur FTP, toutefois le mécanisme [Cross-origin resource sharing (CORS)](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing) qui permet d'intégrer à sa carte Web des ressources externes peux s'avérer très capricieux, surtout si on n'est pas connaisseur...
 
-L'une des alternatives les plus simples consiste à hébérger ses GeoJSON sur GitHub.
+L'une des alternatives les plus simples consiste à héberger ses GeoJSON sur GitHub.
 
 ![hebergement github](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/github.JPG "Hébergement Github"){: .img-center loading=lazy }
 
@@ -459,6 +459,6 @@ Le code complet [se trouve ici](https://bl.ocks.org/mastersigat/30898810b41783ff
 
 Enseignant-chercheur en géographie à [l'Université Rennes 2](https://perso.univ-rennes2.fr/boris.mericskay) et co-responsable du [master en géomatique SIGAT](https://sites-formations.univ-rennes2.fr/mastersigat/), mon travail consiste à enseigner les SIG (en licence et en master) et à faire de la recherche autour des questions des données urbaines, de l'analyse spatiale et de la géovisualisation en ligne.
 
-Passioné par les données spatiales (analyse et représentation), j'utilise essentiellement QGIS, R, Python, MapboxGL et KeplerGL. Je produis régulièrement des cartes et autres géovisualisations que je partage via mon [compte Twitter](https://twitter.com/BorisMericskay).
+Passionné par les données spatiales (analyse et représentation), j'utilise essentiellement QGIS, R, Python, MapboxGL et KeplerGL. Je produis régulièrement des cartes et autres géovisualisations que je partage via mon [compte Twitter](https://twitter.com/BorisMericskay).
 
 J'ai créé un [site internet](https://bmericskay.github.io/portfolio/index.html) qui compile certaines de mes réalisations cartographiques, mes publications et quelques cours.

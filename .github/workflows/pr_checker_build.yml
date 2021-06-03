@@ -1,0 +1,102 @@
+name: "Pull Request Checker 🛃"
+
+# Inspired from: https://github.com/docker-mailserver/docker-mailserver/blob/master/.github/workflows/docs-preview-prepare.yml
+
+on:
+  pull_request:
+    branches: [master]
+
+# Environment variables
+env:
+  BUILD_DIR: build/mkdocs/site
+
+# If the workflow for a PR is triggered multiple times, previous existing runs will be canceled.
+# eg: Applying multiple suggestions from a review directly via the Github UI.
+# Instances of the 2nd phase of this workflow (via `workflow_run`) presently lack concurrency limits due to added complexity.
+concurrency:
+  group: deploypreview-pullrequest-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: "Check site build 📦"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get source code
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: 3.8
+
+      - name: Set up NodeJS (for search index prebuilding)
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Cache project dependencies (pip)
+        uses: actions/cache@v2.1.6
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -U pip setuptools wheel
+          python -m pip install -U -r requirements.txt
+
+      - name: Build in strict mode (no preview)
+        if: "!contains( github.event.pull_request.labels.*.name, 'preview')"
+        env:
+          MKDOCS_SEARCH_PREBUILD_INDEX: node
+        run: |
+          # build
+          mkdocs build --config-file mkdocs.yml --verbose --strict
+
+      # ============================== #
+      # PREVIEW ADDTIONAL STEPS        #
+      # ============================== #
+
+
+      - name: Build in strict mode (to preview on netlify)
+        if: contains( github.event.pull_request.labels.*.name, 'preview')
+        env:
+          MKDOCS_SEARCH_PREBUILD_INDEX: node
+          NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
+          PREVIEW_URL: "https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
+        run: |
+          # Adjust mkdocs.yml for preview build
+          sed -i "s|^site_url:.*|site_url: '${PREVIEW_URL}'|" mkdocs.yml
+
+          # Insert sponsor branding into page content (Provider OSS plan requirement):
+          # Upstream does not provide a nicer maintainable way to do this..
+          # Prepends HTML to copyright text and then aligns to the right side.
+          sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" mkdocs.yml
+
+          # build
+          mkdocs build --config-file mkdocs.yml --verbose --strict
+
+        # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
+        # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
+      - name: "Prepare artifact for transfer"
+        run: |
+          # Save ENV for transfer
+          echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
+          echo "PR_LABEL_PREVIEW=${{ contains( github.event.pull_request.labels.*.name, 'preview') }}" >> pr.env
+          echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
+          echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
+          echo "NETLIFY_SITE_PREFIX=${{ env.NETLIFY_SITE_PREFIX }}"   >> pr.env
+          echo "BUILD_DIR=${{ env.BUILD_DIR }}"                       >> pr.env
+          tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
+
+      - name: Save build website as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: pr-build-website
+          path: artifact.tar.zst
+          retention-days: 1

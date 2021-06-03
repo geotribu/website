@@ -1,5 +1,6 @@
 {
     "recommendations": [
+      "bierner.markdown-mermaid",
       "coenraads.bracket-pair-colorizer-2",
       "davidanson.vscode-markdownlint",
       "eamodio.gitlens",

@@ -1,63 +1,37 @@
 ---
-title: L'équipe Geotribu
-category: about
-date: 2020-04-10 10:20
-description: "Présentation des contributeurs actifs de Geotribu et remerciements aux personnes et projets libres qui rendent l'aventure possible."
-tags: auteur,contributrice,credits,remerciement,soutien
+title: "A propos"
+authors: ["Geotribu"]
+categories: ["meta"]
+date: "2021-05-20 10:20"
+description: "Geotribu, c'est quoi ? Qui se cache dans le géotipi ? Présentation et trombinoscope."
+image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
+tags: "GeoTribu,à propos,about,présentation"
 ---
 
-# Qui sommes nous ?
+# Geotribu, c'est quoi ?
 
-## Contributions au nouveau site
+![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-rdp-news-thumb }
 
-La liste ci-après est générée automatiquement à partir de l'historique de [Git](https://fr.wikipedia.org/wiki/Git). Cela ne reflète donc pas la contribution réelle à l'ensemble des contenus mais plutôt à la phase de résurrection :
+D'un point de vue strictement formel, Geotribu c'est un [nom de domaine](https://fr.wikipedia.org/wiki/Nom_de_domaine). Et trois suffixes (.fr, .net et .org, le [.com étant squatté depuis longtemps](https://www.whois.com/whois/geotribu.com) en attendant qu'on devienne [riche](https://www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)).  
+Il n'y a pas de structure : ni entrepreneuriale, ni associative, ni contrat de sang dans un tipi. D'ailleurs, la convention encadrant le prêt du serveur utilisé pour [héberger les images](/contribuer/guides/image/#heberger-une-image-sur-le-cdn-de-geotribu) par [GeoRezo] est à mon nom et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
 
-{{ git_site_authors }}
+C'est donc un regroupement spontané de personnes autour de leur intérêt pour un dénominateur commun professionnel : la dimension géographique des métiers de chacun/e. Vient ensuite la ligne "éditoriale" imprimée dès les débuts que je présente comme les deux faces d'une même pièce :
 
-## Membres de l'équipe
+- pile, la technique : l'informatique nous désignant ainsi comme "geo-geeks", convaincus que la maîtrise d'outils sert le travail thématique, sans perdre de vue que les outils sont le moyen, non la fin.
 
-- [Arnaud](avdc)
-- [Aurélien](acha)
-- [Fabien](fgob)
-- [Florian](fbor)
-- [Julien](jmou)
-- [Mathieu R.](mraj)
+- face, le libre : une philosophie en cohérence naturelle avec la démarche de partage inhérente au site (avez-vous noté le [copyleft](https://fr.wikipedia.org/wiki/Copyleft) qui orne le pied de page ?). Au-delà de nos propres convictions que le libre, l'_open_ et les communs sont des leviers vertueux, il ne s'agit pas de dire que nous n'utilisons jamais de logiciels propriétaires ou que nous les dénigrons ; mais nous considérons que les éditeurs de briques propriétaires ont généralement les moyens d'assurer leur propre publicité.
 
-## Membres historiques
+[Article complet sur la petite histoire de Geotribu :fontawesome-solid-history:](/articles/2020/2020-08-31_geotribu_histoire/){: .md-button }
+{: align=middle }
 
-- [Adrien](avha)
-- [Etienne](edel)
-- [Guillaume](gdbo)
-- [Jérémie O.](jory)
-- [Julie](jpie)
-- [Pierre](pver)
-- [Rémi](rbov)
-- [Rodolphe](rqui)
-- [Thomas](tgra)
+[Florian](/team/fbor/) a présenté Geotribu dans [l'émission Twitch Les Reclus aux Confins](https://www.twitch.tv/confins), début 2021 :
 
-----
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/fB1dVOVbkME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Remerciements
+## Geotribu c'est qui ?
 
-La _renaissance_ de Geotribu a été rendue possible par l'existence de ressources et d'outils libres, pour la plupart gratuits, derrière lesquels il y a ~~beaucoup~~ une poignée d'humains qu'il nous faut remercier ici.
+[Page des contributeur/ices :fontawesome-solid-people-carry:](/team/contributors/){: .md-button }
+{: align=middle }
 
-### Hébergement et domaine
-
-- Code source : [Github](https://github.com/geotribu)
-- Site web : [Github Pages](https://pages.github.com/)
-- Contenus statiques (images, etc.) : [GeoRezo](https://georezo.net/) nous prête gracieusement un serveur depuis 2016 (utilisé jusqu'en 2020 principalement pour [El Géo Paso](https://elgeopaso.georezo.net/)). Mention spéciale à **Yves**, couteau-suisse technique de l'association, disponible autant que faire se peut.
-- Noms de domaine : [Gandi](https://www.gandi.net/fr). Mention spéciale à **Fabien G.** qui a toujours soigneusement conservé (et payé) les noms de domaine.
-
-### Outils libres
-
-- [Mkdocs](https://www.mkdocs.org/) : générateur de site web statique à partir de contenus rédigés en [markdown](https://fr.wikipedia.org/wiki/Markdown). Simple et extensible, c'est un outil puissant. Le fait qu'il soit en [Python](https://www.python.org/) le rend compatible avec notre socle technique interne.
-- [Material for Mkdocs](https://fr.wikipedia.org/wiki/Markdown) : thème pour Mkdocs qui utilise le framework graphique [Material](https://fr.wikipedia.org/wiki/Markdown) conçu et utilisé par Google. C'est propre, moderne (du bon JS webpacké), orienté performances et facilement personnalisable. Mention spéciale à **Martin Donath**, qui maintient presque seul ce projet.
-- [Github Actions](https://help.github.com/actions) : permet l'automatisation du _workflow_ de publication, réduisant énormément le travail technique à produire.
-- [Tiny File Manager](https://tinyfilemanager.github.io/) : le gestionnaire de fichiers
-petit (1 seul fichier PHP !) mais costaud que nous utilisons pour gérer nos contenus statiques.
-
-### Autres
-
-Merci aux différentes personnes/organismes qui nous motivent et nous aident. Tout d'abord, d'une manière générale, la communauté Open Source qui met à disposition les formidables applications que nous vous présentons. Mais aussi, les associations qui visent à la promotion du logiciel libre comme l'[OSGEO Fr](https://osgeo.asso.fr/) ainsi que celles comme [OSM-Fr](https://www.openstreetmap.fr/fr/) œuvrant pour l'ouverture des données.
-
-Enfin, cette aventure n'aurait jamais été possible sans le soutien de [Laurent Jégou](https://fr.linkedin.com/in/laurentjegou) qui pendant longtemps nous a offert l'infrastructure informatique nécessaire au fonctionnement de GéoTribu. Merci Laurent !
+<!-- Hyperlinks reference -->
+[GeoRezo]: https://georezo.net/

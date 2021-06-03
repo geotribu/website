@@ -1,11 +1,12 @@
 ---
 title: "Intégrer une image"
 author: "Julien Moura"
-categories: ["contribution", "tutoriel"]
+categories: ["article", "contribution", "tutoriel"]
 date: 2020-04-20 10:20
 description: "Guide de contribution à Geotribu : comment intégrer une image dans un article ou une revue de presse et gérer le stockage commun."
 tags: contribuer,media,image,intégration,tutoriel,cdn
 ---
+<!-- markdownlint-disable MD046 -->
 
 # Intégrer une image
 
@@ -143,7 +144,6 @@ Traditionnellement, nous hébergeons les images sur notre propre serveur pour pl
 - ça permet de garantir de toujours disposer des images, même si elles n'existent plus à l'adresse originale (site supprimé, refonte du site, etc.)
 
 !!! warning
-
     L'accès au CDN de Geotribu est réservé à l'équipe. Même si nous laissons les liens vers les images en public, merci de ne pas pointer dessus abusivement depuis d'autres sites.
 
 ### Bonnes pratiques
