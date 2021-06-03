@@ -1,4 +1,4 @@
-name: "💬 Comment on PR"
+name: "PR Linter Comments 💬"
 
 on:
   workflow_run:
