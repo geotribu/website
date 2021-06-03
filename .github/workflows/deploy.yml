@@ -3,7 +3,11 @@ name: "Deploy to Github Pages 🚀"
 on:
   push:
     branches: [ master ]
-
+    paths:
+      - ".github/workflows/deploy.yml"
+      - "content/**"
+      - "mkdocs.yml"
+      - "requirements.txt"
 
 jobs:
   deploy:
