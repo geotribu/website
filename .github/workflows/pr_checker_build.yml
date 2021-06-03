@@ -88,7 +88,7 @@ jobs:
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
 
       - name: Save build website as artifact
-        if: contains( github.event.pull_request.labels.*.name, 'preview')"
+        if: contains( github.event.pull_request.labels.*.name, 'preview')
         uses: actions/upload-artifact@v2
         with:
           name: pr-build-website
