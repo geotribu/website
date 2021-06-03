@@ -1,4 +1,4 @@
-name: "Pull Request Preview 👀"
+name: "PR Preview 👀"
 
 # Inspired from: https://github.com/docker-mailserver/docker-mailserver/blob/master/.github/workflows/docs-preview-deploy.yml
 
