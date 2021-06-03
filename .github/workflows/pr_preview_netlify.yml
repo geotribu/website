@@ -1,49 +1,69 @@
 name: "Pull Request Preview 👀"
 
 on:
-  # pull_request_target:
-  #   branches: [ master ]
-  #   types: [ created, labeled, synchronize ]
   workflow_run:
     workflows: ["Pull Request Checker 🛃"]
     types:
       - completed
-      - requested
 
 jobs:
   preview-netlify:
     name: "Netlify preview 👀"
     runs-on: ubuntu-latest
-    if: contains( github.event.pull_request.labels.*.name, 'preview')
+    if: "${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' }} && contains( github.event.pull_request.labels.*.name, 'preview')"
 
     steps:
-    - name: Download artifact from build workflow
-      uses: dawidd6/action-download-artifact@v2
-      with:
-        name: pr-build-website
-        pr: ${{ github.event.pull_request.number }}
-        workflow: pr_checker_build.yml
-        workflow_conclusion: completed, success
+      # =============================== #
+      # Restore parent workflow context #
+      # =============================== #
 
-    # - name: Download previously build artifact
-    #   uses: actions/download-artifact@v2
-    #   with:
-    #     name: pr-build-website
+      - name: Download artifact from build workflow
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          name: pr-build-website
+          run_id: ${{ github.event.workflow_run.id }}
+          workflow: pr_checker_build.yml
+          workflow_conclusion: completed, success
 
-    - name: Deploy preview to Netlify
-      uses: nwtgck/actions-netlify@v1.2
-      with:
-        alias: deploy-preview-${{ github.event.number }}
-        deploy-message: "Deploy preview of PR ${{ github.event.pull_request.title }} from GitHub Actions"
-        enable-commit-comment: false
-        enable-pull-request-comment: true
-        fails-without-credentials: true
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        overwrites-pull-request-comment: true
-        production-branch: master
-        production-deploy: false
-        publish-dir: '.'
-      env:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-      timeout-minutes: 10
+      - name: "Extract build artifact"
+        run: tar -xf artifact.tar.zst
+
+      - name: "Restore preserved ENV"
+        run: cat pr.env >> "${GITHUB_ENV}"
+
+      # ==================== #
+      # Deploy preview build #
+      # ==================== #
+
+      - name: Deploy preview to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        id: preview
+        timeout-minutes: 10
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          alias: ${{ env.NETLIFY_SITE_PREFIX }}
+          deploy-message: "Deploy preview of PR ${{ env.PR_TITLE }} (PR #${{ env.PR_NUMBER }} @ commit: ${{ env.PR_HEADSHA }})"
+          enable-commit-comment: false
+          enable-commit-status: false
+          enable-pull-request-comment: true
+          fails-without-credentials: true
+          github-deployment-environment: pr-previews
+          github-deployment-description: "Preview deploy for PRs"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          overwrites-pull-request-comment: true
+          production-branch: master
+          production-deploy: false
+          publish-dir: ${{ env.BUILD_DIR }}
+
+      - name: "Comment on PR: Add/Update deployment status"
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          number: ${{ env.PR_NUMBER }}
+          header: preview-comment
+          recreate: true
+          message: |
+            [Documentation preview for this PR](${{ steps.preview.outputs.deploy-url }}) is ready! :tada:
+            Built with commit: ${{ env.PR_HEADSHA }}
