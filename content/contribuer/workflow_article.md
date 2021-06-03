@@ -86,11 +86,21 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
     ![GitHub add file](https://cdn.geotribu.fr/img/internal/contribution/github_add_file.png "GitHub - Ajouter un fichier"){: loading=lazy }
     {: align=middle }
 
-3. Créer la Pull Request[^pr] directement depuis votre dépôt dérivé via le bouton `Contribute` :
+3. Nommer le fichier selon la convention de nommage `content/articles/YYYY/YYYY-MM-DD_XXXXXX` où :
+    - `YYYY` est l'année de publication
+    - `MM` le mois de publication prévisionelle
+    - `DD` le jour de publication prévisionnelle
+    - `XXXXXX` le nom de l'article sans les caractères spéciaux ou les mots superflus (prépositions...)
+
+    !!!tip
+        Penser à s'inspirer des [articles déjà publiés](https://github.com/geotribu/website/tree/master/content/articles/2021) :wink: !  
+        La date de publication pourra être amenée à changer selon les autres contenus planifiés.
+
+4. Créer la Pull Request[^pr] directement depuis votre dépôt dérivé via le bouton `Contribute` :
 
     ![GitHub submit pull request from fork](https://cdn.geotribu.fr/img/internal/contribution/github_submit_from_fork.png "GitHub - Créer une Pull Request depuis un fork"){: loading=lazy }
 
-4. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article :
+5. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article :
 
     ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
 
