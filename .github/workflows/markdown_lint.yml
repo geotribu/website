@@ -67,12 +67,12 @@ jobs:
           recreate: true
           path: markdown-lint-report-added.txt
 
-      - name: Comment PR - Success
-        id: pr_comment_good
-        if: success()
-        uses: mshick/add-pr-comment@v1
-        with:
-          message: |
-            :tada: Le markdown a l'air tout propre !
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          allow-repeats: true
+      # - name: Comment PR - Success
+      #   id: pr_comment_good
+      #   if: success()
+      #   uses: mshick/add-pr-comment@v1
+      #   with:
+      #     message: |
+      #       :tada: Le markdown a l'air tout propre !
+      #     repo-token: ${{ secrets.GITHUB_TOKEN }}
+      #     allow-repeats: true
