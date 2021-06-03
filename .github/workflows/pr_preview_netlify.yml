@@ -1,9 +1,9 @@
 name: "Pull Request Preview 👀"
 
 on:
-  pull_request_target:
-    branches: [ master ]
-    types: [ created, labeled, synchronize ]
+  # pull_request_target:
+  #   branches: [ master ]
+  #   types: [ created, labeled, synchronize ]
   workflow_run:
     workflows: ["Pull Request Checker 🛃"]
     types:
