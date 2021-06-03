@@ -3,12 +3,12 @@ name: "Pull Request Preview 👀"
 on:
   pull_request_target:
     branches: [ master ]
-    types: [ labeled ]
-  workflow_run:
-    workflows: ["Pull Request Checker 🛃"]
-    types:
-      - completed
-      - requested
+    types: [ created, labeled, synchronize ]
+  # workflow_run:
+  #   workflows: ["Pull Request Checker 🛃"]
+  #   types:
+  #     - completed
+  #     - requested
 
 jobs:
   preview-netlify:
@@ -24,7 +24,7 @@ jobs:
         name: pr-build-website
         pr: ${{ github.event.pull_request.number }}
         workflow: pr_checker_build.yml
-        workflow_conclusion: completed,success
+        workflow_conclusion: completed, success
 
     # - name: Download previously build artifact
     #   uses: actions/download-artifact@v2
