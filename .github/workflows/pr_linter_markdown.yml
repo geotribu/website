@@ -48,31 +48,20 @@ jobs:
         run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-modified.txt" ${{ steps.file_changes.outputs.files_modified }}
 
       # -- REPORTING ARTEFACT ------------------------------------------------
+      - name: Save environment for "child" workflow
+        run: |
+          echo "PR_AUTHOR=${{ env.GITHUB_AUTHOR }}" >> pr.env
+          echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
+          echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
+          echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
+
       - name: Upload report
         id: report_upload
         if: success() || failure()
         uses: actions/upload-artifact@v2
         with:
-          name: markdown-lint-report
+          name: pr-markdown-lint-report
           path: |
             markdown-lint-report-added.txt
             markdown-lint-report-modified.txt
-
-      # -- USER INFORMATION --------------------------------------------------
-      - name: Comment PR - Fail
-        id: pr_comment_bad
-        if: failure()
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          recreate: true
-          path: markdown-lint-report-added.txt
-
-      # - name: Comment PR - Success
-      #   id: pr_comment_good
-      #   if: success()
-      #   uses: mshick/add-pr-comment@v1
-      #   with:
-      #     message: |
-      #       :tada: Le markdown a l'air tout propre !
-      #     repo-token: ${{ secrets.GITHUB_TOKEN }}
-      #     allow-repeats: true
+            pr.env
