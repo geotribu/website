@@ -10,6 +10,13 @@ on:
 env:
   BUILD_DIR: build/mkdocs/site
 
+# If the workflow for a PR is triggered multiple times, previous existing runs will be canceled.
+# eg: Applying multiple suggestions from a review directly via the Github UI.
+# Instances of the 2nd phase of this workflow (via `workflow_run`) presently lack concurrency limits due to added complexity.
+concurrency:
+  group: deploypreview-pullrequest-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   build:
     name: "Check site build 📦"
@@ -92,5 +99,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: pr-build-website
-          path: build/mkdocs/site
+          path: artifact.tar.zst
           retention-days: 1

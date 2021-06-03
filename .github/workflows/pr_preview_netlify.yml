@@ -1,5 +1,7 @@
 name: "Pull Request Preview 👀"
 
+# Inspired from: https://github.com/docker-mailserver/docker-mailserver/blob/master/.github/workflows/docs-preview-deploy.yml
+
 on:
   workflow_run:
     workflows: ["Pull Request Checker 🛃"]
@@ -10,7 +12,7 @@ jobs:
   preview-netlify:
     name: "Netlify preview 👀"
     runs-on: ubuntu-latest
-    if: "${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' }} && contains( github.event.pull_request.labels.*.name, 'preview')"
+    if: "${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' && contains( github.event.pull_request.labels.*.name, 'preview') }}"
 
     steps:
       # =============================== #
@@ -24,7 +26,6 @@ jobs:
           name: pr-build-website
           run_id: ${{ github.event.workflow_run.id }}
           workflow: pr_checker_build.yml
-          workflow_conclusion: completed, success
 
       - name: "Extract build artifact"
         run: tar -xf artifact.tar.zst
