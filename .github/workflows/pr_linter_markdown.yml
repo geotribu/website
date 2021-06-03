@@ -49,6 +49,7 @@ jobs:
 
       # -- REPORTING ARTEFACT ------------------------------------------------
       - name: Save environment for "child" workflow
+        if: success() || failure()
         run: |
           echo "PR_AUTHOR=${{ env.GITHUB_AUTHOR }}" >> pr.env
           echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
