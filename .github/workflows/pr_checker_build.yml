@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [master]
 
+# Environment variables
+env:
+  BUILD_DIR: build/mkdocs/site
+
 jobs:
   build:
     name: "Check site build 📦"
