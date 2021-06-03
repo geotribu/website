@@ -4,17 +4,16 @@ on:
   pull_request_target:
     branches: [ master ]
     types: [ created, labeled, synchronize ]
-  # workflow_run:
-  #   workflows: ["Pull Request Checker 🛃"]
-  #   types:
-  #     - completed
-  #     - requested
+  workflow_run:
+    workflows: ["Pull Request Checker 🛃"]
+    types:
+      - completed
+      - requested
 
 jobs:
   preview-netlify:
     name: "Netlify preview 👀"
     runs-on: ubuntu-latest
-    needs: [ build ]
     if: contains( github.event.pull_request.labels.*.name, 'preview')
 
     steps:
