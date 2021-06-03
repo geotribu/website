@@ -35,7 +35,7 @@ jobs:
       - name: Merge reports
         if: ${{ github.event.workflow_run.conclusion == 'failure' }}
         run: |
-          echo ":boom: Erreurs repérées dans la syntaxe Markdown. @${{ env.GITHUB_AUTHOR }} merci de consulter le rapport du linter  :pray:" > msg_comment.txt
+          echo ":boom: Erreurs repérées dans la syntaxe Markdown. @${{ env.PR_AUTHOR }} merci de consulter le rapport du linter  :pray:" > msg_comment.txt
           cat ma*.txt >> msg_comment.txt
 
       # in case of failure
