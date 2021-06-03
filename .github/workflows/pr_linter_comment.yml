@@ -1,4 +1,4 @@
-name: "Comment on PR"
+name: "💬 Comment on PR"
 
 on:
   workflow_run:
@@ -40,17 +40,8 @@ jobs:
 
       # in case of failure
       - uses: marocchino/sticky-pull-request-comment@v2
+        if: ${{ github.event.workflow_run.conclusion == 'failure' }}
         with:
-          if: ${{ github.event.workflow_run.conclusion == 'failure' }}
           recreate: true
           number: ${{ env.PR_NUMBER }}
           path: msg_comment.txt
-
-      # -- USER INFORMATION --------------------------------------------------
-      - name: Comment PR - Fail
-        id: pr_comment_bad
-        if: failure()
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          recreate: true
-          path: markdown-lint-report-added.txt
