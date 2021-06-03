@@ -57,7 +57,7 @@ jobs:
 
 
       - name: Build in strict mode (to preview on netlify)
-        if: "contains( github.event.pull_request.labels.*.name, 'preview')"
+        if: contains( github.event.pull_request.labels.*.name, 'preview')
         env:
           MKDOCS_SEARCH_PREBUILD_INDEX: node
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
@@ -77,7 +77,7 @@ jobs:
         # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
         # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
       - name: "Prepare artifact for transfer"
-        if: contains( github.event.pull_request.labels.*.name, 'preview')"
+        if: contains( github.event.pull_request.labels.*.name, 'preview')
         run: |
           # Save ENV for transfer
           echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
