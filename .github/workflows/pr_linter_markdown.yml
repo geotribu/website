@@ -38,9 +38,7 @@ jobs:
 
       - name: Run markdownlint-cli on new files
         id: mdl_added
-        run: |
-          yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }}
-          sed -i '1s/^/:boom: Erreurs repérées dans la syntaxe Markdown. @${{ env.GITHUB_AUTHOR }} merci de consulter le rapport du linter  :pray:\n/' markdown-lint-report-added.txt
+        run: yarn markdownlint -i "**/template_*.md" -o "markdown-lint-report-added.txt" ${{ steps.file_changes.outputs.files_added }}
 
       - name: Run markdownlint-cli on modified files
         id: mdl_modified
