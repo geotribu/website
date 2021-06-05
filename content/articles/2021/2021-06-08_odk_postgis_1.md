@@ -20,7 +20,7 @@ Cette série de 3 articles vise à présenter Open Data Kit, qui est une solutio
 
 Ce premier article, introductif, présente le projet ODK, ses outils ainsi que les possibilités cartographiques.  
 Le second détaillera les possibilités de création de formulaire à travers l'exemple détaillé du formulaire généraliste du [Conservatoire d'Espaces Naturels d'Occitanie].  
-Le dernier sera consacré à la récupération des données collectées une base de données PostGIS.
+Le dernier sera consacré à la récupération des données collectées dans une base de données PostGIS.
 
 <!-- [2ème partie : Mise en oeuvre d'ODK avec la présentation détaillée de notre formulaire "généraliste" :fontawesome-solid-step-forward:](#){: .md-button }
 [3ème partie : Récupération des données collectées dans notre base de données PostGIS :fontawesome-solid-fast-forward:](#){: .md-button }
@@ -56,7 +56,7 @@ Voici quelques exemples emblématiques d'utilisation Open Data Kit qui font offi
 
 - des structures bien plus "petites" comme les Conservatoires d'Espaces Naturels (CEN) utilisent la solution pour collecter des données relatives à la conservation de la nature.
 
-Du côté des anecdites chiffrées  :
+Du côté des anecdotes chiffrées  :
 
 - En 2020 ODK a été utilisé dans tous les pays du monde excepté au Groenland et en Corée du Nord !
 - ODK Collect a été téléchargé plus d'un million de fois sur le playstore de google.
@@ -92,7 +92,7 @@ C'est l'outil déployé sur les terminaux Android, qui sert les formulaires, per
 ### Central
 
 C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/aggregate-is-no-longer-being-updated/33742). Il assure la gestion et la diffusion des formulaires, des utilisateurs, des droits de ces derniers et la collecte des "soumissions" (données envoyées par Collect). Il inclut aussi [enketo](https://enketo.org/), de sorte que les formulaires réalisés sont désormais aussi utilisables en ligne à travers un naviguateur, et en mode déconnecté.
-Depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible avec Enketo (à des fins de correction ou révision).
+Depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible avec [Enketo](https://enketo.org) (à des fins de correction ou révision).
 
 [![ODK Central : page d'accueil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png "Page d'accueil d'ODK Central"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'accueil d'ODK Central"}
 [![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png "Quête : bornes de recyclage"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'un projet dans ODK Central"}
@@ -155,7 +155,7 @@ Nous verrons plusieurs exemple de *widgets* dans la seconde volet de cette séri
 
 Les listes de choix sont nommées (colonne *list_name*) et contiennent pour chaque élément de la liste une valeur (colonne *name*) et une étiquette (colonne *label*). Ces trois colonnes sont obligatoires dans la feuille de calcul *choices*.
 
-Des colonnes personnelles peuvent être ajoutées et ainsi être utilisées comme critère dans la colonne *choice _filter* de la feuille *survey*. C'est par exemple dans une colonne "groupe" que je préciserai pour l'élément "têtard" la valeur "batracien" afin de ne pas proposer cette valeur à la saisie pour une obervsation d'oiseau.
+Des colonnes personnelles peuvent être ajoutées et ainsi être utilisées comme critère dans la colonne *choice _filter* de la feuille *survey*. C'est par exemple dans une colonne "groupe" que je préciserai pour l'élément "têtard" la valeur "batracien" afin de ne pas proposer cette valeur à la saisie pour une observation d'oiseau.
 
 #### la feuille de calcul "settings"
 
@@ -194,9 +194,9 @@ Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
     Si une apparence (colonne *appearence*) "maps" est mentionnée alors le point calculé sera montré sur une carte à l'utilisateur, qui pourra recapturer le point s'il ne convient pas.
 
-    L'emplacement du GPS est matérialisé par une croix bleue autour de laquelle un disque transparent représente la précision du GPS. Si cela convient, on peut enregistrer le point. Il sera matérialisé par un petit cecrle rouge.
+    L'emplacement du GPS est matérialisé par une croix bleue autour de laquelle un disque transparent représente la précision du GPS. Si cela convient, on peut enregistrer le point. Il sera matérialisé par un petit cercle rouge.
 
-- [Localisation entrée par l'utilisteur, carte centrée sur le GPS](https://docs.getodk.org/form-question-types/#geopoint-with-user-selected-location)
+- [Localisation entrée par l'utilisateur, carte centrée sur le GPS](https://docs.getodk.org/form-question-types/#geopoint-with-user-selected-location)
 
     Si une apparence (colonne *appearence*) "placement_maps" est mentionnée alors l'utilisateur pourra cliquer le point sur la carte ou enregistrer l'emplacement courant, matérialisé comme précédemment.
 
@@ -247,7 +247,7 @@ La présentation ci-dessous est une traduction du [retour fait en 2020 et 2021 s
 
 Les conservatoires d'espaces naturels sont des structures associatives composées d'équipe pluri-disciplinaires (Ecologie, Botanique, Faunistique, Phytosociologie, Agriculture, Gestion administrative et financière, Informatique et Systèmes d'information). L'action des Cen se décline selon 5 axes : Connaître, Protéger, Gérer, Valoriser, Accompagner. La connaissance est la base de notre action.
 
-Elle requiert des compétences techniques de reconnaissances des espèces et des habitats et des compétences dans la mise ne œuvre d'outils de collecte, de consolidation et d'analyse des données collectées.
+Elle requiert des compétences techniques de reconnaissances des espèces et des habitats et des compétences dans la mise en œuvre d'outils de collecte, de consolidation et d'analyse des données collectées.
 
 Notre SI se développe depuis 2007 autour d'une base de données PostgreSQL/PostGIS. Il s'est enrichi au fur et à mesure que nous y avons intégré des outils supportant PostgreSQL, qui est donc bien le cœur et la colonne vertébrale de notre SI :
 
