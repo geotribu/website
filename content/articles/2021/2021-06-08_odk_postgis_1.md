@@ -44,7 +44,7 @@ Voici quelques exemples emblématiques d'utilisation Open Data Kit qui font offi
 
 - Le ministère de l'agriculture nigérian a organisé la cartographie de 2 millions de fermes par 70 000 collecteurs, qui vont de ferme en ferme pour mesurer la ressource herbagère disponible et quantifier les intrants nécessaires au maintien de la fertilité des terres, afin d'assurer la disponibilité locale de nourriture pendant la pandémie.
 
-- ODK a été utiisé au Honduras, par 85 000 enseignants, pendant la pandémie afin d'évaluer la progression "académique" des étudiants pendant la période d'enseignement à distance  avec ODK.
+- ODK a été utilisé au Honduras, par 85 000 enseignants, pendant la pandémie afin d'évaluer la progression "académique" des étudiants pendant la période d'enseignement à distance  avec ODK.
 
 - ODK est utilisé par des acteurs majeurs de l'aide humanitaire et de l'aide au développement tels que la Fédération Internationale de la Croix Rouge ou l'UNICEF (cas du [suivi de la campagne de vaccination contre la rougeole et la polyomyélite en Ouganda](https://www.unicef.org/media/93781/file/gavi-unicef-digital-technology-immunization-2021.pdf)).
 
@@ -94,6 +94,9 @@ C'est l'outil déployé sur les terminaux Android, qui sert les formulaires, per
 C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/aggregate-is-no-longer-being-updated/33742). Il assure la gestion et la diffusion des formulaires, des utilisateurs, des droits de ces derniers et la collecte des "soumissions" (données envoyées par Collect). Il inclut aussi [enketo](https://enketo.org/), de sorte que les formulaires réalisés sont désormais aussi utilisables en ligne à travers un naviguateur, et en mode déconnecté.
 Depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible avec Enketo (à des fins de correction ou révision).
 
+[![ODK Central : page d'accueil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png "Page d'accueil d'ODK Central"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'accueil d'ODK Central"}
+[![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png "Quête : bornes de recyclage"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'un projet dans ODK Central"}
+
 ### Tableur / XLSForm
 
 ODK utilise un sous-ensemble de la norme XForms du W3C pour créer des formulaires (voir [ici la documentation relative à ODK XForms](https://getodk.github.io/xforms-spec/)).
@@ -113,6 +116,9 @@ C'est l'éditeur WYSIWYG de formulaires. Nous ne le présenterons pas dans la s�
 ### [Briefcase](https://docs.getodk.org/briefcase-intro/)
 
 Il permet de pousser des formulaires sur le serveur, d'y récupérer les données et médias "soumis" et aussi de récupérer les données et médias directement depuis votre téléphone, et donc d'utiliser la solution sans avoir déployé Central.
+[![ODK Briefcase : récupération des données depuis Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
+[![ODK Briefcase : récupération des données depuis Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
+[![ODK Briefcase : paramétrage de l'export des données récupérées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png "ODK Briefcase : paramétrage de l'export des données récupérées"){: loading=lazy width=3000px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : paramétrage de l'export des données récupérées"}
 
 ### XLSForm
 
