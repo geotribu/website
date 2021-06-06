@@ -81,8 +81,6 @@ C'est un lieu de discussion mondial, où il n'est pas rare d'échanger avec des 
 Les outils de la suite ODK sont sollicités en différents points du Système d'information géographiques (SIG) du Cen.
 Le serveur nommé Central est au centre du système. Collect (sur les téléphones) et Enketo sur Firefox proposent les interfaces de collecte de données.
 
-L'[extension QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), développée par un membre de la communauté, apparaît en transparence car nous ne l’avons pas encore utilisée, mais elle permet d’afficher directement les données collectées et aussi de créer des formulaires vierges à partir de QGIS. Elle ne fait pas partie des outils maintenus par l’équipe d’ODK.
-
 ![place d'odk dans le SIG du Conservatoire d'espaces naturels](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_dans_le_SIG_du_CEN_Occitanie.png "les outils d'ODK dans le SIG du Cen)"){: .img-center loading=lazy }
 
 ### Collect
@@ -129,7 +127,15 @@ Il permet de pousser des formulaires sur le serveur, d'y récupérer les donnée
 [![ODK Briefcase : récupération des données depuis Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
 [![ODK Briefcase : paramétrage de l'export des données récupérées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png "ODK Briefcase : paramétrage de l'export des données récupérées"){: loading=lazy width=3000px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : paramétrage de l'export des données récupérées"}
 
-### XLSForm
+### Les outils communautaires
+
+Voici deux outils qui ne sont pas développés par l'équipe d'ODK, mais par des membres de la communauté, et qui sont utiliés ou en passe de l'être au CEN. C'est pour ces deux raisons qu'ils apparaissent en transparence sur le schéma.
+
+L'[extension QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), développée par Shiva Reddy Koti et Prabhakar Alok Verma, permet d’afficher directement les données collectées et aussi de créer des formulaires vierges à partir de QGIS. Elle est disponible directement depuis le gestionnaire d'extensions de QGIS.
+
+[ruODK](https://docs.ropensci.org/ruODK/) est un client R pour l'API d'ODK Central, developpé par un membre du TAB ([Florian Mayer](https://forum.getodk.org/u/florian_may/summary)), qui permet de mobiliser directement les données collectées dans R. Il est utilisé depuis peu dans la structure dans le cadre d'un travail de recherche  mené sur les vieilles forêts.
+
+## XLSForm
 
 Un fichier XLSForm est une tableur enregistré au format xls ou xlsx, respectant le standard XLSForm.
 
@@ -143,7 +149,7 @@ La feuille de calcul "survey" décrit le formulaire, la feuille "choices" contie
 
 Les colonnes utilisables dans chacune des feuilles sont normalisées, toutes ne sont pas obligatoires et vous pouvez ajouter des colonnes "personnelles" qui seront ignorées par l'application.
 
-#### la feuille de calcul "survey"
+### la feuille de calcul "survey"
 
 C'est dans cette feuille que sera décrite la logique du formulaire. Chaque question ou élément de structure (groupe de question, répétition) est typé (colonne *type* : quel *widget* sera utilisé pour afficher la question ? ) et nommé (colonne *name*) et étiquetté (colonne *label*). Ces trois colonnes sont obligatoires.
 
@@ -160,17 +166,17 @@ Les formulaires peuvent être affichés dans plusieurs langues et internationali
 Les types de questions qui peuvent être utilisés dans le formulaires sont décrits ici : <https://docs.getodk.org/form-question-types/>
 Nous verrons plusieurs exemple de *widgets* dans la seconde volet de cette série sur ODK. Dans cet article, nous détaillons plus bas les *widgets* cartographiques.
 
-#### la feuille de calcul "choices"
+### la feuille de calcul "choices"
 
 Les listes de choix sont nommées (colonne *list_name*) et contiennent pour chaque élément de la liste une valeur (colonne *name*) et une étiquette (colonne *label*). Ces trois colonnes sont obligatoires dans la feuille de calcul *choices*.
 
 Des colonnes personnelles peuvent être ajoutées et ainsi être utilisées comme critère dans la colonne *choice _filter* de la feuille *survey*. C'est par exemple dans une colonne "groupe" que je préciserai pour l'élément "têtard" la valeur "batracien" afin de ne pas proposer cette valeur à la saisie pour une observation d'oiseau.
 
-#### la feuille de calcul "settings"
+### la feuille de calcul "settings"
 
 Elle contient la version du formulaire ainsi que le nom que l'on souhaite donner à chacune des instances envoyées au serveur. Ce nom peut intégrer des variables issues du formulaire.
 
-#### Focus sur les widgets géographiques
+### Focus sur les widgets géographiques
 
 Plusieurs interfaces (*widgets*) cartographiques de saisie vont nous être proposées par ODK. Toutes reposent sur l'utilisation d'un fond de carte et d'une librairie géographique. Pour simplifier la chose à l'utilisateur, le distinguo n'est plus fait à ce sujet dans les réglages de l'application.  
 L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce dernier propose plusieurs "styles" (satellite, terrain...) choisir celui qui convient.
@@ -185,8 +191,6 @@ Les tuiles vecteurs peuvent être utilisées aussi mais seulement avec le fond d
 Les points et les sommets des lignes et des polygones sont décrits par 4 valeurs séparées par un espace : latitude longitude altitude précision
 
 Une valeur par défaut peut être renseignée. Un point (latitude longitude altitude precision ) ou une série de points séparés par un point-virgule.
-
-***-> Captures d'écran à venir***
 
 - [Geopoint (point)](https://docs.getodk.org/form-question-types/#geopoint)
 
