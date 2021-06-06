@@ -267,7 +267,7 @@ Notre SI se développe depuis 2007 autour d'une base de données PostgreSQL/Post
 - [JasperStudio](https://community.jaspersoft.com/project/jaspersoft-studio)
 - [QGIS](https://qgis.org/)
 - [QGIS Server](https://docs.qgis.org/3.16/fr/docs/server_manual/)
-- [LizMap](https://www.3liz.com/lizmap.html),
+- [LizMap](https://www.3liz.com/lizmap.html)
 
 ### Choix et intégration d'ODK
 
@@ -317,9 +317,10 @@ Nous utilisons actuellement une quinzaine de formulaires ODK pour :
 
 ## Bibliographie / Ressources
 
-- <https://aidevolved.com/podcast/yaw-anokwa/>
-- <https://www.youtube.com/watch?v=jjSkMu0WFVI>
-- <https://forum.getodk.org/t/odk-to-collect-species-and-habitats-localities-as-pressure-and-threats-to-ecosystems/26332>
+- Une interview de Yaw Anokwa pour le podcast Aid, Evolved : <https://aidevolved.com/podcast/yaw-anokwa/>
+- Global impact with open source - ODK for mobile data collection : <https://www.youtube.com/watch?v=jjSkMu0WFVI>
+- Webinar - Innovations in ODK: Improving Data Collection for agriculture & Scaling to the Global Community <https://www.youtube.com/watch?v=rVb8voaN4Fg>
+- Présentation de notre formulaire généraliste sur le forum d'ODK : <https://forum.getodk.org/t/odk-to-collect-species-and-habitats-localities-as-pressure-and-threats-to-ecosystems/26332>
 - [sta4sd tutorials](https://stats4sd.org/resources/507)
 - les vidéos de <https://www.humanitariandatasolutions.com/>
 
@@ -332,5 +333,7 @@ Nous utilisons actuellement une quinzaine de formulaires ODK pour :
 ![Portrait Mathieu Bossaert]( "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
 
 <!-- Hyperlinks reference -->
-[Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org/
+
+[Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
+["blog" géomatique du CEN]: https://si.cen-occitanie.org
 [GetODK]: https://getodk.org/
