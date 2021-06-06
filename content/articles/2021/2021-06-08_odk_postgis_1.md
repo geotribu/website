@@ -92,10 +92,14 @@ C'est l'outil déployé sur les terminaux Android, qui sert les formulaires, per
 ### Central
 
 C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/aggregate-is-no-longer-being-updated/33742). Il assure la gestion et la diffusion des formulaires, des utilisateurs, des droits de ces derniers et la collecte des "soumissions" (données envoyées par Collect). Il inclut aussi [enketo](https://enketo.org/), de sorte que les formulaires réalisés sont désormais aussi utilisables en ligne à travers un naviguateur, et en mode déconnecté.
-Depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible avec [Enketo](https://enketo.org) (à des fins de correction ou révision).
 
 [![ODK Central : page d'accueil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png "Page d'accueil d'ODK Central"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'accueil d'ODK Central"}
 [![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png "Quête : bornes de recyclage"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'un projet dans ODK Central"}
+
+Central embarque [Enketo](https://enketo.org) pour permettre le remplissage de formulaires dans un naviguateur. Et depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible à travers cet outil (à des fins de correction ou révision).
+
+[![Enketo : formulaire d'enquête sur les usagers d'ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png "Enketo : formulaire d'enquête sur les usagers d'ODK"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png){: data-mediabox="lightbox-gallery" data-title="Enketo : formulaire d'enquête sur les usagers d'ODK"}
+[![Enketo : formulaire sur les utilisations des voitures de service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_formulaire_voiture_de_service.png "XLS-Form : feuille de calcul choices"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_formulaire_voiture_de_service.png){: data-mediabox="lightbox-gallery" data-title="Enketo : formulaire sur les utilisations des voitures de service"}
 
 ### Tableur / XLSForm
 
@@ -109,7 +113,6 @@ Une norme intermédiaire nommée [XLSForm](https://xlsform.org/en/) permet de d�
 [![XLS-Form : feuille de calcul survey](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_survey.png "XLS-Form : feuille de calcul survey"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_survey.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul survey"}
 [![XLS-Form : feuille de calcul choices](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_choices.png "XLS-Form : feuille de calcul choices"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_choices.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul choices"}
 [![XLS-Form : feuille de calcul settings](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_settings.png "XLS-Form : feuille de calcul settings"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_settings.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul settings"}
-
 
 ### [xlsform online](https://xlsform.getodk.org/)
 
