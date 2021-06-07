@@ -351,7 +351,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - Un autre sur les inovations dans ODK et leurs impacts sur la collecte de données dans le domaine de l'agriculture <https://www.youtube.com/watch?v=rVb8voaN4Fg>
 - Présentation de notre formulaire généraliste sur le forum d'ODK : <https://forum.getodk.org/t/odk-to-collect-species-and-habitats-localities-as-pressure-and-threats-to-ecosystems/26332>
 - Les tutoriels de "Statistics for Sustainable Development : <https://stats4sd.org/resources/507>
-- les vidéos de <https://www.humanitariandatasolutions.com/>
+- Les vidéos de <https://www.humanitariandatasolutions.com/>
 
 ----
 
