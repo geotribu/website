@@ -89,47 +89,76 @@ C'est l'outil déployé sur les terminaux Android, qui sert les formulaires, per
 
 ### Central
 
-C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/aggregate-is-no-longer-being-updated/33742). Il assure la gestion et la diffusion des formulaires, des utilisateurs, des droits de ces derniers et la collecte des "soumissions" (données envoyées par Collect). Il inclut aussi [enketo](https://enketo.org/), de sorte que les formulaires réalisés sont désormais aussi utilisables en ligne à travers un navigateur, et en mode déconnecté.
+C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/aggregate-is-no-longer-being-updated/33742). Il assure la gestion et la diffusion des formulaires, des utilisateurs, des droits de ces derniers et la collecte des "soumissions" (données envoyées par Collect).
 
 [![ODK Central : page d'accueil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png "Page d'accueil d'ODK Central"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'accueil d'ODK Central"}
 [![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png "Quête : bornes de recyclage"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'un projet dans ODK Central"}
 {: align=middle }
 
-Central embarque [Enketo](https://enketo.org) pour permettre le remplissage de formulaires dans un navigateur. Et depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible à travers cet outil (à des fins de correction ou révision).
+[Documentation ODK Central :fontawesome-solid-book:](https://docs.getodk.org/central-intro/){: .md-button }
+{: align=middle }
+
+#### Enketo
+
+Central embarque [Enketo](https://enketo.org) de sorte que les formulaires réalisés sont désormais aussi utilisables en ligne à travers un navigateur et en mode déconnecté. A noter que depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible à travers cet outil (à des fins de correction ou révision).
 
 [![Enketo : formulaire d'enquête sur les usagers d'ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png "Enketo : formulaire d'enquête sur les usagers d'ODK"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png){: data-mediabox="lightbox-gallery" data-title="Enketo : formulaire d'enquête sur les usagers d'ODK"}
-[![Enketo : formulaire sur les utilisations des voitures de service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_formulaire_voiture_de_service.png "XLS-Form : feuille de calcul choices"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_formulaire_voiture_de_service.png){: data-mediabox="lightbox-gallery" data-title="Enketo : formulaire sur les utilisations des voitures de service"}
+[![Enketo : formulaire sur les utilisations des voitures de service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_formulaire_voiture_de_service.png "XLS-Form : feuille de calcul choices"){: loading=lazy height-max=200px width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_formulaire_voiture_de_service.png){: data-mediabox="lightbox-gallery" data-title="Enketo : formulaire sur les utilisations des voitures de service"}
+{: align=middle }
 
 ### Tableur / XLSForm
 
 ODK utilise un sous-ensemble de la norme XForms du W3C pour créer des formulaires (voir [ici la documentation relative à ODK XForms](https://getodk.github.io/xforms-spec/)).
 
-Une norme intermédiaire nommée [XLSForm](https://xlsform.org/en/) permet de décrire très simplement le formulaire dans un tableur, selon un formalisme simple. C'est avec notre tableur (calc / Excel) préféré que nous allons décrire notre formulaire dans ce formalisme.
+Une norme intermédiaire nommée [XLSForm] permet de décrire très simplement le formulaire dans un tableur, selon un formalisme simple. C'est avec notre tableur (Calc, Excel, AirTable, NocoDB...) préféré que nous allons décrire notre formulaire dans ce formalisme.
 
-[XLSForm](https://xlsform.org/en/) est utilisé par de nombreuses solutions ([Enketo](https://enketo.org/), [Kobotoolbox](https://www.kobotoolbox.org/), [ONA](https://company.ona.io/products/ona-data/features/)). La plus connue des géomaticiens sera peut-être [la plateforme Survey123](https://doc.arcgis.com/fr/survey123/desktop/create-surveys/xlsformessentials.htm) d'ESRI.
+[XLSForm] est utilisé par de nombreuses solutions ([Enketo](https://enketo.org/), [Kobotoolbox](https://www.kobotoolbox.org/), [ONA](https://company.ona.io/products/ona-data/features/)). La plus connue des géomaticiens sera peut-être [la plateforme Survey123](https://doc.arcgis.com/fr/survey123/desktop/create-surveys/xlsformessentials.htm) d'ESRI.
 
-### [xlsform online](https://xlsform.getodk.org/)
+[Documentation ODK Build :fontawesome-solid-book:](https://xlsform.org/en/){: .md-button }
+{: align=middle }
+
+### xlsform online
 
 C'est un outil en ligne, qui permet de transformer le fichier xlsform en xml à charger sur le téléphone. Il n'est pas utile si vous utilisez Central, car ce dernier accepte directement le fichier xls.
 
-### [ODKBuild](https://docs.getodk.org/build-intro/)
+[Ouvrir XLSForm](https://xlsform.getodk.org/){: .md-button }
+{: align=middle }
+
+### ODK Build
 
 C'est l'éditeur WYSIWYG de formulaires. Nous ne le présenterons pas dans la série d'article, car nous avons toujours créé nos formulaires avec xlsform.
 
-### [Briefcase](https://docs.getodk.org/briefcase-intro/)
+[Documentation ODK Build :fontawesome-solid-book:](https://docs.getodk.org/build-intro/){: .md-button }
+{: align=middle }
+
+### Briefcase
 
 Il permet de pousser des formulaires sur le serveur, d'y récupérer les données et médias "soumis" et aussi de récupérer les données et médias directement depuis votre téléphone, et donc d'utiliser la solution sans avoir déployé Central.
-[![ODK Briefcase : récupération des données depuis Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
-[![ODK Briefcase : récupération des données depuis Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
-[![ODK Briefcase : paramétrage de l'export des données récupérées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png "ODK Briefcase : paramétrage de l'export des données récupérées"){: loading=lazy width=3000px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : paramétrage de l'export des données récupérées"}
+
+[![ODK Briefcase : récupération des données depuis Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
+[![ODK Briefcase : récupération des données depuis Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
+{: align=middle }
+
+[![ODK Briefcase : paramétrage de l'export des données récupérées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png "ODK Briefcase : paramétrage de l'export des données récupérées"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : paramétrage de l'export des données récupérées"}
+
+[Documentation Briefcase :fontawesome-solid-book:](https://docs.getodk.org/briefcase-intro/){: .md-button }
+{: align=middle }
 
 ### Les outils communautaires
 
 Voici deux outils qui ne sont pas développés par l'équipe d'ODK, mais par des membres de la communauté, que nous commençons seulement à utiliser au CEN. C'est pour ces deux raisons qu'ils apparaissent en transparence sur le schéma.
 
+#### QReal Time
+
 L'[extension QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), développée par Shiva Reddy Koti et Prabhakar Alok Verma, permet d’afficher directement les données collectées dans QGIS depuis Central et aussi de créer des formulaires vierges à partir d'une couche. Elle est disponible directement depuis le gestionnaire d'extensions de QGIS.
 
+![QReal Time](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qrealtime_schema.webp "QRealTime schéma"){: .img-center loading=lazy }
+
+#### ruODK
+
 [ruODK](https://docs.ropensci.org/ruODK/) est un client R pour l'API d'ODK Central, developpé par un membre du TAB ([Florian Mayer](https://forum.getodk.org/u/florian_may/summary)), qui permet de mobiliser directement les données collectées dans R. Il est utilisé depuis peu dans la structure dans le cadre d'un travail de recherche  mené sur les vieilles forêts.
+
+----
 
 ## XLSForm
 
@@ -339,3 +368,4 @@ Nous utilisons actuellement une quinzaine de formulaires ODK pour :
 [Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
 ["blog" géomatique du CEN]: https://si.cen-occitanie.org
 [GetODK]: https://getodk.org/
+[XLSForm]: https://xlsform.org/en/
