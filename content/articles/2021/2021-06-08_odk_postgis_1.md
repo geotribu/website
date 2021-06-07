@@ -4,8 +4,8 @@ authors: ["Mathieu BOSSAERT"]
 categories: ["article"]
 date: "2021-06-08 10:20"
 description: "Premier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
-tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_and_postgresql.png"
+tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android	"
 ---
 
 # ODK pour la collecte de données géo dans PostGIS (1/3)
