@@ -92,7 +92,7 @@ C'est l'outil déployé sur les terminaux Android, qui sert les formulaires, per
 C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/aggregate-is-no-longer-being-updated/33742). Il assure la gestion et la diffusion des formulaires, des utilisateurs, des droits de ces derniers et la collecte des "soumissions" (données envoyées par Collect).
 
 [![ODK Central : page d'accueil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png "Page d'accueil d'ODK Central"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'accueil d'ODK Central"}
-[![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png "Quête : bornes de recyclage"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'un projet dans ODK Central"}
+[![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png "Central, projets et soumissions"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'un projet dans ODK Central"}
 {: align=middle }
 
 [Documentation ODK Central :fontawesome-solid-book:](https://docs.getodk.org/central-intro/){: .md-button }
