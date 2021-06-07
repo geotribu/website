@@ -153,8 +153,7 @@ C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/
 
 Central embarque [Enketo](https://enketo.org) de sorte que les formulaires réalisés sont désormais aussi utilisables en ligne à travers un navigateur et en mode déconnecté. A noter que depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible à travers cet outil (à des fins de correction ou révision).
 
-[![Enketo : formulaire d'enquête sur les usagers d'ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png "Enketo : formulaire d'enquête sur les usagers d'ODK"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png){: data-mediabox="lightbox-gallery" data-title="Enketo : formulaire d'enquête sur les usagers d'ODK"}
-[![Enketo : formulaire sur les utilisations des voitures de service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_formulaire_voiture_de_service.png "XLS-Form : feuille de calcul choices"){: loading=lazy height-max=200px width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_formulaire_voiture_de_service.png){: data-mediabox="lightbox-gallery" data-title="Enketo : formulaire sur les utilisations des voitures de service"}
+[![Enketo : formulaire d'enquête sur les usagers d'ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png "Enketo : formulaire d'enquête sur les usagers d'ODK"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png){: data-mediabox="lightbox-gallery" data-title="Enketo : formulaire d'enquête sur les usagers d'ODK"}
 {: align=middle }
 
 ### Tableur / XLSForm
