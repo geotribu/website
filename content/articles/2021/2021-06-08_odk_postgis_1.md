@@ -370,7 +370,7 @@ J'ai intégré il y a quelques années l'équipe de georezo et j'y assure la fon
 
 Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement celui d'[ODK](https://forum.getodk.org))
 
-Vous pouvez me contacter pour échanger sur le sujet via [twitter](https://twitter.com/MathieuBossaert), [linkedin](https://www.linkedin.com/in/mathieu-bossaert-08b73a205/) ou par courriel à l'adresse premnom.nom@...
+Vous pouvez me contacter pour échanger sur le sujet via [twitter](https://twitter.com/MathieuBossaert), [linkedin](https://www.linkedin.com/in/mathieu-bossaert-08b73a205/) ou par courriel à l'adresse prenom.nom@...
 
 <!-- Hyperlinks reference -->
 
