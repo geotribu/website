@@ -9,6 +9,7 @@ on:
 # Environment variables
 env:
   BUILD_DIR: build/mkdocs/site
+  NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
 
 # If the workflow for a PR is triggered multiple times, previous existing runs will be canceled.
 # eg: Applying multiple suggestions from a review directly via the Github UI.
