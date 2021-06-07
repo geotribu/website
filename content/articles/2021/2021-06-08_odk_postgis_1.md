@@ -213,6 +213,8 @@ Elle contient la version du formulaire ainsi que le nom que l'on souhaite donner
 
 ### Focus sur les widgets géographiques
 
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+
 Plusieurs interfaces (*widgets*) cartographiques de saisie vont nous être proposées par ODK. Toutes reposent sur l'utilisation d'un fond de carte et d'une librairie géographique. Pour simplifier la chose à l'utilisateur, le distinguo n'est plus fait à ce sujet dans les réglages de l'application.  
 L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce dernier propose plusieurs "styles" (satellite, terrain...) choisir celui qui convient.
 
