@@ -117,11 +117,11 @@ Une norme intermédiaire nommée [XLSForm] permet de décrire très simplement l
 [Documentation ODK Build :fontawesome-solid-book:](https://xlsform.org/en/){: .md-button }
 {: align=middle }
 
-### xlsform online
+### XLSForm Online
 
 C'est un outil en ligne, qui permet de transformer le fichier xlsform en xml à charger sur le téléphone. Il n'est pas utile si vous utilisez Central, car ce dernier accepte directement le fichier xls.
 
-[Ouvrir XLSForm](https://xlsform.getodk.org/){: .md-button }
+[Ouvrir XLSForm Online](https://xlsform.getodk.org/){: .md-button }
 {: align=middle }
 
 ### ODK Build
