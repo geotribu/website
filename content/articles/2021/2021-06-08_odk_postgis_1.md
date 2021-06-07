@@ -347,10 +347,10 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 ## Quelques ressources en ligne
 
 - Une interview de Yaw Anokwa pour le podcast Aid, Evolved : <https://aidevolved.com/podcast/yaw-anokwa/>
-- Global impact with open source - ODK for mobile data collection : <https://www.youtube.com/watch?v=jjSkMu0WFVI>
-- Webinar - Innovations in ODK: Improving Data Collection for agriculture & Scaling to the Global Community <https://www.youtube.com/watch?v=rVb8voaN4Fg>
+- Un webinaire organisé par la Fédération Internationale de la Croix Rouge et du Croissant Rouge sur l'impact de leur usage d'ODK : <https://www.youtube.com/watch?v=jjSkMu0WFVI>
+- Un autre sur les inovations dans ODK et leur impact sur la collecte de données dans le domaine de l'agriculture <https://www.youtube.com/watch?v=rVb8voaN4Fg>
 - Présentation de notre formulaire généraliste sur le forum d'ODK : <https://forum.getodk.org/t/odk-to-collect-species-and-habitats-localities-as-pressure-and-threats-to-ecosystems/26332>
-- [sta4sd tutorials](https://stats4sd.org/resources/507)
+- [Les tutoriels de "Statistics for Sustainable Development"](https://stats4sd.org/resources/507)
 - les vidéos de <https://www.humanitariandatasolutions.com/>
 
 ----
@@ -369,6 +369,8 @@ PostgreSQL est le pillier strucurant de notre SI depuis 2006. Les besoins de la 
 J'ai intégré il y a quelques années l'équipe de georezo et j'y assure la fonction de trésorier.
 
 Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement celui d'[ODK](https://forum.getodk.org))
+
+Contact via [twitter](https://twitter.com/MathieuBossaert), [linkedin](https://www.linkedin.com/in/mathieu-bossaert-08b73a205/) ou par courriel à l'adresse premnom.nom@...
 
 <!-- Hyperlinks reference -->
 
