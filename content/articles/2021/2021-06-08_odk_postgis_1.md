@@ -348,9 +348,9 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 
 - Une interview de Yaw Anokwa pour le podcast Aid, Evolved : <https://aidevolved.com/podcast/yaw-anokwa/>
 - Un webinaire organisé par la Fédération Internationale de la Croix Rouge et du Croissant Rouge sur l'impact de leur usage d'ODK : <https://www.youtube.com/watch?v=jjSkMu0WFVI>
-- Un autre sur les inovations dans ODK et leur impact sur la collecte de données dans le domaine de l'agriculture <https://www.youtube.com/watch?v=rVb8voaN4Fg>
+- Un autre sur les inovations dans ODK et leurs impacts sur la collecte de données dans le domaine de l'agriculture <https://www.youtube.com/watch?v=rVb8voaN4Fg>
 - Présentation de notre formulaire généraliste sur le forum d'ODK : <https://forum.getodk.org/t/odk-to-collect-species-and-habitats-localities-as-pressure-and-threats-to-ecosystems/26332>
-- [Les tutoriels de "Statistics for Sustainable Development"](https://stats4sd.org/resources/507)
+- Les tutoriels de "Statistics for Sustainable Development : <https://stats4sd.org/resources/507>
 - les vidéos de <https://www.humanitariandatasolutions.com/>
 
 ----
