@@ -229,31 +229,30 @@ Les points et les sommets des lignes et des polygones sont décrits par 4 valeur
 
 Une valeur par défaut peut être renseignée. Un point (latitude longitude altitude precision ) ou une série de points séparés par un point-virgule.
 
-- [Geopoint (point)](https://docs.getodk.org/form-question-types/#geopoint)
+#### Geopoint
 
-  Par défaut le Geopoint enregistre la postion du GPS sans l'afficher sur une carte. La précision minimale requise pour enregistrer le point peut être précisée. Elle est par défaut de 5m.
-
-![Recherche de point GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "calcul de la position du GPS"){: .img-center loading=lazy width=300 }
+Par défaut le [Geopoint](https://docs.getodk.org/form-question-types/#geopoint) enregistre la postion du GPS sans l'afficher sur une carte. La précision minimale requise pour enregistrer le point peut être précisée. Elle est par défaut de 5m.
 
 Dés que la précision du signal sera inférieure à la tolérance précisée dans le formulaire (5m par défaut), le point sera enregistré. L'utilisateur peut à tout moment outrepasser cette contrainte en enregistrant manuellement le "PointGéo".
 Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
-![Affichage des propriétés du point enregistré](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "Affichage des coordonnées enregistrées automatiquement et de la précision du signal"){: .img-center loading=lazy width=300 }
+[![Recherche de point GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "calcul de la position du GPS "Recherche de point GPS"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "calcul de la position du GPS"){: data-mediabox="lightbox-gallery" data-title="ODK Geopoint - Affichage des coordonnées enregistrées automatiquement et de la précision du signal"}
+[![propriétés du point enregistré](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "calcul de la position du GPS "Recherche de point GPS"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "calcul de la position du GPS"){: data-mediabox="lightbox-gallery" data-title="ODK Geopoint - Recherche automatique"}
+{: align=middle }
 
-- [Localisation GPS affichée sur une carte](https://docs.getodk.org/form-question-types/#geopoint-with-map-display)
+#### Localisation GPS affichée sur une carte
 
-    Si une apparence (colonne *appearence*) "maps" est mentionnée alors le point calculé sera montré sur une carte à l'utilisateur, qui pourra recapturer le point s'il ne convient pas.
+Si une [apparence (colonne *appearance*) `maps`](https://docs.getodk.org/form-question-types/#geopoint-with-map-display) est mentionnée alors le point calculé sera montré sur une carte à l'utilisateur, qui pourra recapturer le point s'il ne convient pas.
 
-    L'emplacement du GPS est matérialisé par une croix bleue autour de laquelle un disque transparent représente la précision du GPS. Si cela convient, on peut enregistrer le point. Il sera matérialisé par un petit cercle rouge.
+L'emplacement du GPS est matérialisé par une croix bleue autour de laquelle un disque transparent représente la précision du GPS. Si cela convient, on peut enregistrer le point. Il sera matérialisé par un petit cercle rouge.
 
-- [Localisation entrée par l'utilisateur, carte centrée sur le GPS](https://docs.getodk.org/form-question-types/#geopoint-with-user-selected-location)
+#### Localisation entrée par l'utilisateur, carte centrée sur le GPS
 
-    Si une apparence (colonne *appearence*) "placement_maps" est mentionnée alors l'utilisateur pourra cliquer le point sur la carte ou enregistrer l'emplacement courant, matérialisé comme précédemment.
+Si une [apparence (colonne *appearance*) `placement_maps`](https://docs.getodk.org/form-question-types/#geopoint-with-user-selected-location) est mentionnée alors l'utilisateur pourra cliquer le point sur la carte ou enregistrer l'emplacement courant, matérialisé comme précédemment.
 
 ![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png){: .img-center loading=lazy width=300 }
 
-  Une valeur par défaut peut-être spécifiée. La carte s'ouvrira sur cette valeur. Ici de quoi afficher l'emplacement du siège Montpelliérain du CEN Occitanie :
-  3.8934834 43.6089782 0 0
+Une valeur par défaut peut-être spécifiée. La carte s'ouvrira sur cette valeur. Ici de quoi afficher l'emplacement du siège Montpelliérain du CEN Occitanie : `3.8934834 43.6089782 0 0`.
 
 - [Geotrace (ligne)](https://docs.getodk.org/form-question-types/#geotrace-widget)
 
