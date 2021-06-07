@@ -126,7 +126,7 @@ Il permet de pousser des formulaires sur le serveur, d'y récupérer les donnée
 
 Voici deux outils qui ne sont pas développés par l'équipe d'ODK, mais par des membres de la communauté, que nous commençons seulement à utiliser au CEN. C'est pour ces deux raisons qu'ils apparaissent en transparence sur le schéma.
 
-L'[extension QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), développée par Shiva Reddy Koti et Prabhakar Alok Verma, permet d’afficher directement les données collectées et aussi de créer des formulaires vierges à partir de QGIS. Elle est disponible directement depuis le gestionnaire d'extensions de QGIS.
+L'[extension QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), développée par Shiva Reddy Koti et Prabhakar Alok Verma, permet d’afficher directement les données collectées dans QGIS depuis Central et aussi de créer des formulaires vierges à partir d'une couche. Elle est disponible directement depuis le gestionnaire d'extensions de QGIS.
 
 [ruODK](https://docs.ropensci.org/ruODK/) est un client R pour l'API d'ODK Central, developpé par un membre du TAB ([Florian Mayer](https://forum.getodk.org/u/florian_may/summary)), qui permet de mobiliser directement les données collectées dans R. Il est utilisé depuis peu dans la structure dans le cadre d'un travail de recherche  mené sur les vieilles forêts.
 
