@@ -76,6 +76,59 @@ C'est un lieu de discussion mondial, où il n'est pas rare d'échanger avec des 
 
 ----
 
+## Contexte d'utilisation au CEN Occitanie
+
+La présentation ci-dessous est une traduction du [retour fait en 2020 et 2021 sur le forum d'ODK](https://forum.getodk.org/t/odk-to-collect-species-and-habitats-localities-as-pressure-and-threats-to-ecosystems/26332) .
+
+### Le SI du CEN
+
+Les conservatoires d'espaces naturels sont des structures associatives composées d'équipe pluri-disciplinaires (Ecologie, Botanique, Faunistique, Phytosociologie, Agriculture, Gestion administrative et financière, Informatique et Systèmes d'information). L'action des Cen se décline selon 5 axes : Connaître, Protéger, Gérer, Valoriser, Accompagner. La connaissance est la base de notre action.
+
+Elle requiert des compétences techniques de reconnaissances des espèces et des habitats et des compétences dans la mise en œuvre d'outils de collecte, de consolidation et d'analyse des données collectées.
+
+Notre SI se développe depuis 2007 autour d'une base de données PostgreSQL/PostGIS. Il s'est enrichi au fur et à mesure que nous y avons intégré des outils supportant PostgreSQL, qui est donc bien le cœur et la colonne vertébrale de notre SI :
+
+- [JasperStudio](https://community.jaspersoft.com/project/jaspersoft-studio)
+- [QGIS](https://qgis.org/)
+- [QGIS Server](https://docs.qgis.org/3.16/fr/docs/server_manual/)
+- [LizMap](https://www.3liz.com/lizmap.html)
+
+### Choix et intégration d'ODK
+
+En 2015, après que la solution nous avait été présentée par le CEN Rhône-Alpes, nous avons entrepris de mettre en place un formulaire de saisie mobile, correspondant aux données collectées dans notre appli web métier (SiCen).
+
+Quelques arguments de poids nous ont convaincus d'utiliser ODK :
+
+- la possibilité de générer des formulaires très facilement, sans développement
+- l'utilisation par ODK de PostgreSQL comme base de données.
+- les zones dans lesquelles nous intervenons ne sont pas toujours bien connectées. L'outil utilisé devait donc permettre de travailler sans connexion et fournir un système de stockage stable et fiable.
+- il devait également être aussi facile à utiliser que possible et devait permettre une saisie contrôlée (vocabulaires contraints et données typées).
+
+L'intégration de la solution à notre SI s'est faite naturellement. Les possibilités de PostgreSQL (triggers, FDW) ont assuré l'interaction entre le serveur Aggregate d'ODK et les autres outils et bases de données en place.
+
+Depuis c'est la plateforme de reporting web [Redash](https://redash.io/) qui complète le SI.
+
+### La place d'ODK aujourd'hui
+
+ODK est devenu l'outil principal de collecte de données de terrain au sein du CEN Languedoc-Roussillon et prend le même chemin à l'échelle de l'Occitanie.
+
+Les utilisateurs d'ODK chez nous sont initialement des naturalistes, spécialistes de diverses disciplines (botanique, faunistique, phytosociologie).
+
+La saison de terrain est dense, les journées longues et le temps à consacrer à la saisie des données collectées est contraint. ODK nous a permis d'économiser ce temps de saisie (environ 4 jours/expert/an) pour en passer plus sur le terrain, ou à l'analyse de données et à la rédaction de documents.
+
+Le SI actuel du CEN Occitanie peut-être schématisé ainsi :
+
+![Schéma SI CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/galaxie_sicen.png "Schéma SI CEN Occitanie"){: .img-center loading=lazy }
+
+Nous utilisons actuellement une quinzaine de formulaires ODK pour :
+
+- des suivis naturalistes répondant à divers protocoles,
+- le [suivi des paramètres physico-chimiques des lagunes](https://si.cen-occitanie.org/suivi-des-parametres-physico-chimiques-des-lagunes-un-formualire-de-terrain-avec-odk/),
+- le suivi des ouvrages de gestion hydraulique,
+- ou encore le suivi de l'utilisation des voitures de service.
+
+----
+
 ## Les outils de la "suite" ODK
 
 Les outils de la suite ODK sont sollicités en différents points du Système d'information géographiques (SIG) du Cen.
@@ -284,59 +337,6 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 
 ----
 
-## Contexte d'utilisation au CEN Occitanie
-
-La présentation ci-dessous est une traduction du [retour fait en 2020 et 2021 sur le forum d'ODK](https://forum.getodk.org/t/odk-to-collect-species-and-habitats-localities-as-pressure-and-threats-to-ecosystems/26332) .
-
-### Le SI du CEN
-
-Les conservatoires d'espaces naturels sont des structures associatives composées d'équipe pluri-disciplinaires (Ecologie, Botanique, Faunistique, Phytosociologie, Agriculture, Gestion administrative et financière, Informatique et Systèmes d'information). L'action des Cen se décline selon 5 axes : Connaître, Protéger, Gérer, Valoriser, Accompagner. La connaissance est la base de notre action.
-
-Elle requiert des compétences techniques de reconnaissances des espèces et des habitats et des compétences dans la mise en œuvre d'outils de collecte, de consolidation et d'analyse des données collectées.
-
-Notre SI se développe depuis 2007 autour d'une base de données PostgreSQL/PostGIS. Il s'est enrichi au fur et à mesure que nous y avons intégré des outils supportant PostgreSQL, qui est donc bien le cœur et la colonne vertébrale de notre SI :
-
-- [JasperStudio](https://community.jaspersoft.com/project/jaspersoft-studio)
-- [QGIS](https://qgis.org/)
-- [QGIS Server](https://docs.qgis.org/3.16/fr/docs/server_manual/)
-- [LizMap](https://www.3liz.com/lizmap.html)
-
-### Choix et intégration d'ODK
-
-En 2015, après que la solution nous avait été présentée par le CEN Rhône-Alpes, nous avons entrepris de mettre en place un formulaire de saisie mobile, correspondant aux données collectées dans notre appli web métier (SiCen).
-
-Quelques arguments de poids nous ont convaincus d'utiliser ODK :
-
-- la possibilité de générer des formulaires très facilement, sans développement
-- l'utilisation par ODK de PostgreSQL comme base de données.
-- les zones dans lesquelles nous intervenons ne sont pas toujours bien connectées. L'outil utilisé devait donc permettre de travailler sans connexion et fournir un système de stockage stable et fiable.
-- il devait également être aussi facile à utiliser que possible et devait permettre une saisie contrôlée (vocabulaires contraints et données typées).
-
-L'intégration de la solution à notre SI s'est faite naturellement. Les possibilités de PostgreSQL (triggers, FDW) ont assuré l'interaction entre le serveur Aggregate d'ODK et les autres outils et bases de données en place.
-
-Depuis c'est la plateforme de reporting web [Redash](https://redash.io/) qui complète le SI.
-
-### La place d'ODK aujourd'hui
-
-ODK est devenu l'outil principal de collecte de données de terrain au sein du CEN Languedoc-Roussillon et prend le même chemin à l'échelle de l'Occitanie.
-
-Les utilisateurs d'ODK chez nous sont initialement des naturalistes, spécialistes de diverses disciplines (botanique, faunistique, phytosociologie).
-
-La saison de terrain est dense, les journées longues et le temps à consacrer à la saisie des données collectées est contraint. ODK nous a permis d'économiser ce temps de saisie (environ 4 jours/expert/an) pour en passer plus sur le terrain, ou à l'analyse de données et à la rédaction de documents.
-
-Le SI actuel du CEN Occitanie peut-être schématisé ainsi :
-
-![Schéma SI CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/galaxie_sicen.png "Schéma SI CEN Occitanie"){: .img-center loading=lazy }
-
-Nous utilisons actuellement une quinzaine de formulaires ODK pour :
-
-- des suivis naturalistes répondant à divers protocoles,
-- le [suivi des paramètres physico-chimiques des lagunes](https://si.cen-occitanie.org/suivi-des-parametres-physico-chimiques-des-lagunes-un-formualire-de-terrain-avec-odk/),
-- le suivi des ouvrages de gestion hydraulique,
-- ou encore le suivi de l'utilisation des voitures de service.
-
-----
-
 ## A suivre
 
 - La mise en oeuvre d'ODK avec la présentation détaillée de notre formulaire "généraliste"
@@ -347,7 +347,7 @@ Nous utilisons actuellement une quinzaine de formulaires ODK pour :
 
 ----
 
-## Bibliographie / Ressources
+## Quelques ressources en ligne
 
 - Une interview de Yaw Anokwa pour le podcast Aid, Evolved : <https://aidevolved.com/podcast/yaw-anokwa/>
 - Global impact with open source - ODK for mobile data collection : <https://www.youtube.com/watch?v=jjSkMu0WFVI>
@@ -360,9 +360,15 @@ Nous utilisons actuellement une quinzaine de formulaires ODK pour :
 
 ## Auteur
 
-## Mathieu Bossaert
+### Mathieu Bossaert
 
-![Portrait Mathieu Bossaert]( "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
+![Portrait Mathieu Bossaert](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/mb.jpeg "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
+
+Aprés des études de biologie, d'écologie, et d'informatique, j'ai intégré le CEN en 2003 pour y occuper dés 2005 le poste de gestionnaire de bases de données, et suis devenu "géomaticien" par extension.
+J'y suis désormais co-responsable de la "Geomateam" qui compte 5 personnes, pas toutes à temps plein sur la thématique au sein d'une équipe "Occitane" de 80 salariés, répartis sur 14 sites.
+PostgreSQL est le pillier strucurant de notre SI depuis 2006. Les besoins de la structure ont évolués avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers georezo notament, n'ont jamais été avares de conseils.
+J'ai intégré il y a quelques années l'équipe de georezo et j'y assure la fonction de trésorier.
+Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement [forum.getodk.org](https://forum.getodk.org))
 
 <!-- Hyperlinks reference -->
 
