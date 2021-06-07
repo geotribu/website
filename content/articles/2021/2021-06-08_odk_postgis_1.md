@@ -218,9 +218,9 @@ Elle contient la version du formulaire ainsi que le nom que l'on souhaite donner
 Plusieurs interfaces (*widgets*) cartographiques de saisie vont nous être proposées par ODK. Toutes reposent sur l'utilisation d'un fond de carte et d'une librairie géographique. Pour simplifier la chose à l'utilisateur, le distinguo n'est plus fait à ce sujet dans les réglages de l'application.  
 L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce dernier propose plusieurs "styles" (satellite, terrain...) choisir celui qui convient.
 
-![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png "Choix du fond de la librairie"){: .img-center loading=lazy width=300 }
-
-![Choix du fond de la librairie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png "Choix du fond de la librairie"){: .img-center loading=lazy width=300 }
+[![Choix du fond de carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png "Choix du fond de carte"){: loading=lazy align=left clear=right width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png){: data-mediabox="lightbox-gallery" data-title="ODK XLSForm - Choix du fond de carte : MapBox"}
+[![Choix du style du fond de carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png "Choix du style fond de carte"){: loading=lazy align=left clear=right width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png){: data-mediabox="lightbox-gallery" data-title="ODK XLSForm - Choix du style fond de carte MapBox"}
+{: align=middle }
 
 Ce fond de carte pourra être surchargé par un fond "maison" en (fichier `.mbtiles`) généré avec QGIS par exemple.
 Les tuiles vecteurs peuvent être utilisées aussi mais seulement avec le fond de carte Mapbox, et elle ne sont pour l'instant pas "stylées".
