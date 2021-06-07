@@ -81,7 +81,7 @@ C'est un lieu de discussion mondial, où il n'est pas rare d'échanger avec des 
 Les outils de la suite ODK sont sollicités en différents points du Système d'information géographiques (SIG) du Cen.
 Le serveur nommé Central est au centre du système. Collect (sur les téléphones) et Enketo sur Firefox proposent les interfaces de collecte de données.
 
-![place d'odk dans le SIG du Conservatoire d'espaces naturels](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_dans_le_SIG_du_CEN_Occitanie.png "les outils d'ODK dans le SIG du Cen)"){: .img-center loading=lazy }
+[![place d'odk dans le SIG du Conservatoire d'espaces naturels](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_dans_le_SIG_du_CEN_Occitanie.png "Les outils d'ODK dans le SIG du Cen"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_dans_le_SIG_du_CEN_Occitanie.png){: data-mediabox="lightbox-gallery" data-title="Les outils d'ODK dans le SIG du Cen"}
 
 ### Collect
 
@@ -92,7 +92,8 @@ C'est l'outil déployé sur les terminaux Android, qui sert les formulaires, per
 C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/aggregate-is-no-longer-being-updated/33742). Il assure la gestion et la diffusion des formulaires, des utilisateurs, des droits de ces derniers et la collecte des "soumissions" (données envoyées par Collect). Il inclut aussi [enketo](https://enketo.org/), de sorte que les formulaires réalisés sont désormais aussi utilisables en ligne à travers un navigateur, et en mode déconnecté.
 
 [![ODK Central : page d'accueil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png "Page d'accueil d'ODK Central"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'accueil d'ODK Central"}
-[![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png "Quête : bornes de recyclage"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formualire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'un projet dans ODK Central"}
+[![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png "Quête : bornes de recyclage"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'un projet dans ODK Central"}
+{: align=middle }
 
 Central embarque [Enketo](https://enketo.org) pour permettre le remplissage de formulaires dans un navigateur. Et depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible à travers cet outil (à des fins de correction ou révision).
 
