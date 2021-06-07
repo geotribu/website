@@ -248,43 +248,39 @@ L'emplacement du GPS est matérialisé par une croix bleue autour de laquelle un
 
 #### Localisation entrée par l'utilisateur, carte centrée sur le GPS
 
-Si une [apparence (colonne *appearance*) `placement_maps`](https://docs.getodk.org/form-question-types/#geopoint-with-user-selected-location) est mentionnée alors l'utilisateur pourra cliquer le point sur la carte ou enregistrer l'emplacement courant, matérialisé comme précédemment.
+[![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png "Geopoint with placement map"){: loading=lazy align=left clear=right width=150px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png "calcul de la position du GPS"){: data-mediabox="lightbox-gallery" data-title="ODK Geopoint - Recherche automatique"}
 
-![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png){: .img-center loading=lazy width=300 }
+Si une [apparence (colonne *appearance*) `placement_maps`](https://docs.getodk.org/form-question-types/#geopoint-with-user-selected-location) est mentionnée alors l'utilisateur pourra cliquer le point sur la carte ou enregistrer l'emplacement courant, matérialisé comme précédemment.
 
 Une valeur par défaut peut-être spécifiée. La carte s'ouvrira sur cette valeur. Ici de quoi afficher l'emplacement du siège Montpelliérain du CEN Occitanie : `3.8934834 43.6089782 0 0`.
 
-- [Geotrace (ligne)](https://docs.getodk.org/form-question-types/#geotrace-widget)
+#### Geotrace
 
-  C'est une série de points, au moins deux, formant une ligne, le premier et le dernier point sont différents.
+Il s'agit d'une [série de points, au moins deux, formant une ligne](https://docs.getodk.org/form-question-types/#geotrace-widget), le premier et le dernier points étant différents.
 
-  3 modes d'enregistrement sont possibles et proposés au lancement de la "Geotrace" :
-
-![choix possible pour création de sommets](<https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png>){: .img-center loading=lazy width=300 }
+3 modes d'enregistrement sont possibles et proposés au lancement de la "Geotrace" :
 
 - la saisie manuelle en cliquant (tapotant) chacun des points sur la carte
-
-![saisie en tapotant](<https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png>){: .img-center loading=lazy width=300 }
-
 - l'enregistrement manuel des points constituant la ligne. La localisation du GPS apparaît sur la carte, l'utilisateur peut à tout moment enregistrer la position courante
-
-![enregistrement manuel des points GPS](<https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png>){: .img-center loading=lazy width=300 }
-
 - l'enregistrement automatique des points au fil du déplacement de l'utilisateur, avec précision du pas de temps et de la précision requise pour enregistrer le sommet (par exemple ci-dessous 1 point toutes les 20 secondes avec une précision minimale requise de 10 mètres). La précision minimale du GPS requise pour créer le point peut-être spécifiée.
 
-![enregistrement automatique de la trace](<https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png> ){: .img-center loading=lazy width=300 }
+![choix possible pour création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: loading=lazy width=175px }
+![saisie en tapotant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: loading=lazy width=175px }
+![enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: loading=lazy width=175px }
+![enregistrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: loading=lazy width=175px }
+{: align=middle }
 
-- [Geoshape (polygone)](https://docs.getodk.org/form-question-types/#geoshape)
+#### Geoshape
 
-  Identique à la Geotrace si ce n'est que le dernier point de la série est identique au premier. Les modes de saisie proposés à l'utilisateur sont les mêmes.
+[Geoshape (polygone)](https://docs.getodk.org/form-question-types/#geoshape) est similaire à la #geotrace si ce n'est que le dernier point de la série est identique au premier. Les modes de saisie proposés à l'utilisateur sont les mêmes.
 
-- [Bearing (boussole)](https://docs.getodk.org/form-question-types/#bearing-widget)
+#### Bearing
 
-C'est une apparence pour un champ décimal, qui enregistre l'azimuth, l'angle entre la direction du téléphone et le Nord, de 0 à 360°. Nous ne l'avons jamais utilisé.
+[Bearing (boussole)](https://docs.getodk.org/form-question-types/#bearing-widget) est une apparence pour un champ décimal, qui enregistre l'azimuth, l'angle entre la direction du téléphone et le Nord, de 0 à 360°. Nous ne l'avons jamais utilisé.
 
-- [OpenMapKit](https://docs.getodk.org/form-question-types/#openmapkit-widget)
+#### OpenMapKit
 
-  Permet de poser des questions sur des objets OpenStreetMap dans un formulaire ODK. Voir la documentation d'[OpenMapKit](http://www.openmapkit.org/) pour plus d'information. Nous ne l'avons jamais utilisé.
+[OpenMapKit](https://docs.getodk.org/form-question-types/#openmapkit-widget) permet de poser des questions sur des objets OpenStreetMap dans un formulaire ODK. Voir la documentation d'[OpenMapKit](http://www.openmapkit.org/) pour plus d'information. Nous ne l'avons jamais utilisé.
 
 ----
 
