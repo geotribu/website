@@ -114,7 +114,7 @@ Une norme intermédiaire nommée [XLSForm] permet de décrire très simplement l
 
 [XLSForm] est utilisé par de nombreuses solutions ([Enketo](https://enketo.org/), [Kobotoolbox](https://www.kobotoolbox.org/), [ONA](https://company.ona.io/products/ona-data/features/)). La plus connue des géomaticiens sera peut-être [la plateforme Survey123](https://doc.arcgis.com/fr/survey123/desktop/create-surveys/xlsformessentials.htm) d'ESRI.
 
-[Documentation ODK Build :fontawesome-solid-book:](https://xlsform.org/en/){: .md-button }
+[XLS Form est détaillé plus bas :fontawesome-solid-arrow-circle-down:](#xlsform){: .md-button }
 {: align=middle }
 
 ### XLSForm Online
@@ -135,14 +135,14 @@ C'est l'éditeur WYSIWYG de formulaires. Nous ne le présenterons pas dans la s�
 
 Il permet de pousser des formulaires sur le serveur, d'y récupérer les données et médias "soumis" et aussi de récupérer les données et médias directement depuis votre téléphone, et donc d'utiliser la solution sans avoir déployé Central.
 
+[Documentation Briefcase :fontawesome-solid-book:](https://docs.getodk.org/briefcase-intro/){: .md-button }
+{: align=middle }
+
 [![ODK Briefcase : récupération des données depuis Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
 [![ODK Briefcase : récupération des données depuis Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
 {: align=middle }
 
 [![ODK Briefcase : paramétrage de l'export des données récupérées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png "ODK Briefcase : paramétrage de l'export des données récupérées"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : paramétrage de l'export des données récupérées"}
-
-[Documentation Briefcase :fontawesome-solid-book:](https://docs.getodk.org/briefcase-intro/){: .md-button }
-{: align=middle }
 
 ### Les outils communautaires
 
@@ -150,11 +150,15 @@ Voici deux outils qui ne sont pas développés par l'équipe d'ODK, mais par des
 
 #### QReal Time
 
-L'[extension QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), développée par Shiva Reddy Koti et Prabhakar Alok Verma, permet d’afficher directement les données collectées dans QGIS depuis Central et aussi de créer des formulaires vierges à partir d'une couche. Elle est disponible directement depuis le gestionnaire d'extensions de QGIS.
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+
+L'extension [QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), développée par Shiva Reddy Koti et Prabhakar Alok Verma, permet d’afficher directement les données collectées dans QGIS depuis Central et aussi de créer des formulaires vierges à partir d'une couche. Elle est disponible directement depuis le gestionnaire d'extensions de QGIS.
 
 ![QReal Time](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qrealtime_schema.webp "QRealTime schéma"){: .img-center loading=lazy }
 
 #### ruODK
+
+![logo R](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/r.png "logo R"){: .img-rdp-news-thumb }
 
 [ruODK](https://docs.ropensci.org/ruODK/) est un client R pour l'API d'ODK Central, developpé par un membre du TAB ([Florian Mayer](https://forum.getodk.org/u/florian_may/summary)), qui permet de mobiliser directement les données collectées dans R. Il est utilisé depuis peu dans la structure dans le cadre d'un travail de recherche  mené sur les vieilles forêts.
 
@@ -162,23 +166,23 @@ L'[extension QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), 
 
 ## XLSForm
 
-Un fichier XLSForm est une tableur enregistré au format xls ou xlsx, respectant le standard XLSForm.
+![logo Excel](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/excel_2013.png "logo Excel"){: .img-rdp-news-thumb }
 
-Il est composé d'au moins deux feuilles de calculs :
+Un fichier [XLSForm] est un tableur enregistré au format XLS ou XLSX, respectant le standard [XLSForm].
 
-- survey
-- choices
-- settings (optionnelle)
+Il est composé d'au moins deux feuilles de calculs obligatoires :
 
-La feuille de calcul "survey" décrit le formulaire, la feuille "choices" contient les listes de valeurs utilisées par les widgets de type "select".
+- [survey](#la-feuille-de-calcul-survey) : décrit le formulaire
+- [choices](#la-feuille-de-calcul-choices) : contient les listes de valeurs utilisées par les widgets de type "select"
+- [settings](#la-feuille-de-calcul-settings) (optionnelle)
 
 Les colonnes utilisables dans chacune des feuilles sont normalisées, toutes ne sont pas obligatoires et vous pouvez ajouter des colonnes "personnelles" qui seront ignorées par l'application.
 
-### la feuille de calcul "survey"
-
-[![XLS-Form : feuille de calcul survey](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_survey.png "XLS-Form : feuille de calcul survey"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_survey.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul survey"}
+### La feuille de calcul "survey"
 
 C'est dans cette feuille que sera décrite la logique du formulaire. Chaque question ou élément de structure (groupe de question, répétition) est typé (colonne *type* : quel *widget* sera utilisé pour afficher la question ? ) et nommé (colonne *name*) et étiquetté (colonne *label*). Ces trois colonnes sont obligatoires.
+
+[![XLS-Form : feuille de calcul survey](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_survey.png "XLS-Form : feuille de calcul survey"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_survey.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul survey"}
 
 Les listes de choix peuvent être filtrées (colonne *choice_filter*)
 
@@ -190,22 +194,22 @@ Enfin, chaque question peut afficher une astuce (colonne *hint*)
 
 Les formulaires peuvent être affichés dans plusieurs langues et internationalisés.
 
-Les types de questions qui peuvent être utilisés dans le formulaires sont décrits ici : <https://docs.getodk.org/form-question-types/>
-Nous verrons plusieurs exemple de *widgets* dans la seconde volet de cette série sur ODK. Dans cet article, nous détaillons plus bas les *widgets* cartographiques.
+Les types de questions qui peuvent être utilisés dans le formulaires sont décrits ici : <https://docs.getodk.org/form-question-types/>.  
+Dans cet article, nous détaillons plus bas [les *widgets* cartographiques](#focus-sur-les-widgets-geographiques). Nous verrons plusieurs exemples de *widgets* dans le second volet de cette série sur ODK.
 
-### la feuille de calcul "choices"
+### La feuille de calcul "choices"
 
-[![XLS-Form : feuille de calcul choices](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_choices.png "XLS-Form : feuille de calcul choices"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_choices.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul choices"}
+Les listes de choix sont nommées (colonne *list_name*) et contiennent pour chaque élément de la liste une valeur (colonne *name*) et une étiquette (colonne *label*). Ces trois colonnes sont obligatoires dans La feuille de calcul *choices*.
 
-Les listes de choix sont nommées (colonne *list_name*) et contiennent pour chaque élément de la liste une valeur (colonne *name*) et une étiquette (colonne *label*). Ces trois colonnes sont obligatoires dans la feuille de calcul *choices*.
+[![XLS-Form : feuille de calcul choices](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_choices.png "XLS-Form : feuille de calcul choices"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_choices.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul choices"}
 
 Des colonnes personnelles peuvent être ajoutées et ainsi être utilisées comme critère dans la colonne *choice _filter* de la feuille *survey*. C'est par exemple dans une colonne "groupe" que je préciserai pour l'élément "têtard" la valeur "batracien" afin de ne pas proposer cette valeur à la saisie pour une observation d'oiseau.
 
-### la feuille de calcul "settings"
+### La feuille de calcul "settings"
 
 Elle contient la version du formulaire ainsi que le nom que l'on souhaite donner à chacune des instances envoyées au serveur. Ce nom peut intégrer des variables issues du formulaire.
 
-[![XLS-Form : feuille de calcul settings](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_settings.png "XLS-Form : feuille de calcul settings"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_settings.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul settings"}
+[![XLS-Form : feuille de calcul settings](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_settings.png "XLS-Form : feuille de calcul settings"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_settings.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul settings"}
 
 ### Focus sur les widgets géographiques
 
