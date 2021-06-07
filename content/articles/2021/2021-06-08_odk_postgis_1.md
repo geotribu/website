@@ -78,8 +78,6 @@ C'est un lieu de discussion mondial, où il n'est pas rare d'échanger avec des 
 
 ## Contexte d'utilisation au CEN Occitanie
 
-La présentation ci-dessous est une traduction du [retour fait en 2020 et 2021 sur le forum d'ODK](https://forum.getodk.org/t/odk-to-collect-species-and-habitats-localities-as-pressure-and-threats-to-ecosystems/26332) .
-
 ### Le SI du CEN
 
 Les conservatoires d'espaces naturels sont des structures associatives composées d'équipe pluri-disciplinaires (Ecologie, Botanique, Faunistique, Phytosociologie, Agriculture, Gestion administrative et financière, Informatique et Systèmes d'information). L'action des Cen se décline selon 5 axes : Connaître, Protéger, Gérer, Valoriser, Accompagner. La connaissance est la base de notre action.
@@ -317,10 +315,10 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - l'enregistrement manuel des points constituant la ligne. La localisation du GPS apparaît sur la carte, l'utilisateur peut à tout moment enregistrer la position courante
 - l'enregistrement automatique des points au fil du déplacement de l'utilisateur, avec précision du pas de temps et de la précision requise pour enregistrer le sommet (par exemple ci-dessous 1 point toutes les 20 secondes avec une précision minimale requise de 10 mètres). La précision minimale du GPS requise pour créer le point peut-être spécifiée.
 
-![choix possible pour création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: loading=lazy width=175px }
-![saisie en tapotant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: loading=lazy width=175px }
-![enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: loading=lazy width=175px }
-![enregistrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: loading=lazy width=175px }
+[![options disponibles pour la création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: data-mediabox="lightbox-gallery" data-title="options disponibles pour la création de sommets"}
+[![saisie en tapotant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: data-mediabox="lightbox-gallery" data-title="saisie en tapotant"}
+[![enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: data-mediabox="lightbox-gallery" data-title="enregistrement manuel des points GPS"}
+[![enregistrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: data-mediabox="lightbox-gallery" data-title="enregistrement automatique de la trace"}
 {: align=middle }
 
 #### Geoshape
@@ -365,9 +363,12 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 ![Portrait Mathieu Bossaert](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/mb.jpeg "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
 
 Aprés des études de biologie, d'écologie, et d'informatique, j'ai intégré le CEN en 2003 pour y occuper dés 2005 le poste de gestionnaire de bases de données, et suis devenu "géomaticien" par extension.
+
 J'y suis désormais co-responsable de la "Geomateam" qui compte 5 personnes, pas toutes à temps plein sur la thématique au sein d'une équipe "Occitane" de 80 salariés, répartis sur 14 sites.
+
 PostgreSQL est le pillier strucurant de notre SI depuis 2006. Les besoins de la structure ont évolués avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers georezo notament, n'ont jamais été avares de conseils.
 J'ai intégré il y a quelques années l'équipe de georezo et j'y assure la fonction de trésorier.
+
 Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement [forum.getodk.org](https://forum.getodk.org))
 
 <!-- Hyperlinks reference -->
