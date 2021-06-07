@@ -80,6 +80,8 @@ C'est un lieu de discussion mondial, où il n'est pas rare d'échanger avec des 
 
 ### Le SI du CEN
 
+![Cen Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/logo_CEN_Occitanie.jpg "Cen Occitanie"){: .img-rdp-news-thumb }
+
 Les conservatoires d'espaces naturels sont des structures associatives composées d'équipe pluri-disciplinaires (Ecologie, Botanique, Faunistique, Phytosociologie, Agriculture, Gestion administrative et financière, Informatique et Systèmes d'information). L'action des Cen se décline selon 5 axes : Connaître, Protéger, Gérer, Valoriser, Accompagner. La connaissance est la base de notre action.
 
 Elle requiert des compétences techniques de reconnaissances des espèces et des habitats et des compétences dans la mise en œuvre d'outils de collecte, de consolidation et d'analyse des données collectées.
