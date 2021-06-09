@@ -24,21 +24,21 @@ tags: "template,mot-clé-seo1,mot-clé-seo2"
 
 Autant l'avouer d'emblée, je suis quand même un petit peu un traumatisé du point-virgule ; inversement je suis un grand amoureux d'R : mon jugement est donc biaisé, mais je l'assume totalement. :smirk:
 
-Si le développement classique de cartes interactives en JavaScript est devenu prépondérant grâce à une très grande flexibilité d'usages et de paramétrages, il existe certains cas particuliers où d'autres approches peuvent être mobilisées. 
+Si le développement classique de cartes interactives en JavaScript est devenu prépondérant grâce à une très grande flexibilité d'usages et de paramétrages, il existe certains cas particuliers où d'autres approches peuvent être mobilisées.
 
 Par exemple, mettons qu'on ait besoin de communiquer cartographiquement et de la même façon des données privées et personnalisées à 10, 100 ou 1000 destinataires, sans volonté ou possibilité d'infrastructure informatique susceptible d'accueillir une telle application cartographique ou n'ayant tout simplement pas les compétences pour en développer une (ou les finances pour s'en payer). Cela peut à première vue paraître des conditions initiales pour le moins incongrues lorsque l'on parle de géomatique (car trouvant majoritairement son débouché dans des organisations publiques), mais si l'on regarde tout le spectre possible des organisations susceptibles de pouvoir recourir à des applications carto, je pense que des situations telles que je présente ici existent beaucoup plus fréquemment que l'on imagine au premier abord.
 
 Je propose donc ici un petit tutoriel afin de réaliser des cartes interactives personnalisées simplement à l'aide de R et quelques packages.
 L'exemple est de simuler ici la création de cartes personnalisées pour des agriculteurs, chacun possédant quelques parcelles différentes, afin qu'ils puissent repérer différentes informations sur leur environnement.
 
-Vous êtes prêts ? Allez, pour bien comprendre, suivez bien les pas :trumpet: 
+Vous êtes prêts ? Allez, pour bien comprendre, suivez bien les pas :trumpet:
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/GrizzledCircularArmedcrab-size_restricted.gif)
 
 
 ----
 
-## Démarrage, packages et données 
+## Démarrage, packages et données
 
 
 ### Packages R
@@ -46,7 +46,7 @@ Vous êtes prêts ? Allez, pour bien comprendre, suivez bien les pas :trumpet:
 
 
 
-Les packages utilisés sont les suivants : 
+Les packages utilisés sont les suivants :
 
 ```r
 library(tidyverse)
@@ -101,21 +101,21 @@ parcelles <- st_as_sf(geojson_sf(gzcon(url(paste0(
   "/cadastre-", insee, "-parcelles.json.gz"
 )))))
 
-# pour avoir un rendu pas trop moche et des parcelles qui, quand on 
+# pour avoir un rendu pas trop moche et des parcelles qui, quand on
 # les sélectionne au hasard, ressemblent à des parcelles agricoles,
 # on récupère aussi les bâtiments
 
 batiments <- st_as_sf(geojson_sf(gzcon(url(paste0(
-  url,  dpt, "/", insee, 
+  url,  dpt, "/", insee,
   "/cadastre-", insee, "-batiments.json.gz"
 )))))
 ```
-Il faut maintenant passer des données brutes cadastrales à des données d'exemple intéressantes à travailler :yum: 
+Il faut maintenant passer des données brutes cadastrales à des données d'exemple intéressantes à travailler :yum:
 
 #### Création des parcelles
 
 ```r
-# pour filtrer les parcelles "avec bâtiments" 
+# pour filtrer les parcelles "avec bâtiments"
 
 parcelles_bati <- parcelles %>%
   st_intersection(., batiments)
@@ -130,9 +130,9 @@ parcelles_viti <- parcelles %>%
     "Exploitation G", "Exploitation H",
     "Exploitation I", "Exploitation J"
   ), times = 10))%>%
-  mutate(FaireValoir = sample(c("Propriétaire", "Fermier","Métayer","Commodat"), 
+  mutate(FaireValoir = sample(c("Propriétaire", "Fermier","Métayer","Commodat"),
                               100, prob = c(0.6,0.3,0.08,0.02), replace = T))%>%
-  mutate(Cépage = sample(c("Gamay N","Aligoté B","Chardonnay B"),100, 
+  mutate(Cépage = sample(c("Gamay N","Aligoté B","Chardonnay B"),100,
                          prob = c(0.8,0.1,0.1), replace = T))
 
 ggplot() +
@@ -170,31 +170,31 @@ Pour créer un nouveau document .Rmd basé sur flexdashboard, il faut aller dans
 On va utiliser pour cet exemple un agencement par ligne, avec le thème 'lumen', que je trouve intéressant et qui se combine bien avec les tuiles Positron de CartoDB.
 
 
-Ainsi : 
+Ainsi :
 
 ```
 ---
 title: "Cartographie | `r nom_exploitation`"
-output: 
+output:
   flexdashboard::flex_dashboard:
     orientation: rows
     theme: lumen
 ---
 ```
 
-On va ensuite organiser la page comme cela : 
-* un onglet principal avec 
+On va ensuite organiser la page comme cela :
+* un onglet principal avec
     * un bloc header sur la première ligne pour changer d'onglet(généré automatiquement)
     * un bloc "carte" à droite
     * un bloc filtre à gauche
     * un bloc avec le tableau des données sous la carte
 * un deuxième onglet qui peut accueillir les informations annexes, manuel d'utilisation, sources des données, contact, etc.
 
-Cela correspond à la syntaxe suivante : 
+Cela correspond à la syntaxe suivante :
 ```markdown
 ---
 title: "Cartographie | `r nom_operateur`"
-output: 
+output:
   flexdashboard::flex_dashboard:
     orientation: rows
     theme: lumen
@@ -220,7 +220,7 @@ Row {data-height=300}
 
 
 Information {data-orientation=rows data-icon="fa-info-circle"}
-===================================== 
+=====================================
 
 ### Comment utiliser cet outil ?
 
@@ -243,7 +243,7 @@ Il faut tout d'abord injecter nos données dans le Rmd. Le problème à résoudr
 
 #### Filtre des données et génération automatisée
 
-On retourne donc dans notre fichier script et on procède à l'écriture de la boucle permettant d'obtenir 
+On retourne donc dans notre fichier script et on procède à l'écriture de la boucle permettant d'obtenir
 * les données filtrées pour chaque exploitation
 * tant qu'à faire, le nom de l'exploitation pour l'afficher en titre de la carte
 * la sortie .html de la carte pour cette exploitation
@@ -252,17 +252,17 @@ On retourne donc dans notre fichier script et on procède à l'écriture de la b
 liste_exploitation <- unique(parcelles_viti$Exploitation) # liste des exploitations
 
 for (x in 1:10){
-  parcelles_exploitation <- parcelles_viti %>% 
+  parcelles_exploitation <- parcelles_viti %>%
     filter(Exploitation %in% liste_exploitation[[x]]) # filtre perso
 
   nom_exploitation <- liste_exploitation[[x]] # nom de l'exploitation
-  rmarkdown::render("exemple.Rmd", 
+  rmarkdown::render("exemple.Rmd",
   output_file = paste0(nom_exploitation,".html"), quiet = T) # rendu par exploitation
 
   cat("carte ",x,"/10\n")
 }
 ```
-Et sur notre répertoire de travail apparaissent : :smiley: 
+Et sur notre répertoire de travail apparaissent : :smiley:
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/files_auto.png)
 
 Bon, c'est bien, par contre les cartes sont toutes vides. Il faut maintenant s'atteler à remplir le document Rmd en utilisant les données personnalisées : "parcelles_exploitation" et "nom_exploitation"
@@ -288,22 +288,22 @@ data <- parcelles_exploitation %>%
   select(-c("prefixe","created","updated","arpente"))%>%
   as_Spatial()
 
-# on met nos données dans un environnement crosstalk permettant 
+# on met nos données dans un environnement crosstalk permettant
 # la connexion entre les différents modules
 
 sd <- SharedData$new(data)
 sd_df <- SharedData$new(data@data, group = sd$groupName())
 
-``` 
+```
 
  Maintenant, chaque carte intégrera des données spécifiques.
- 
+
  On peut également en profiter et modifier le titre de la carte afin qu'il affiche le nom de l'exploitation :
- 
+
 ```markdown
 ---
-title: "Cartographie | `r nom_exploitation`" 
-output: 
+title: "Cartographie | `r nom_exploitation`"
+output:
   flexdashboard::flex_dashboard:
     orientation: rows
     theme: lumen
@@ -324,7 +324,7 @@ Row {data-height=700}
 
 On va créer une carte leaflet avec :
 * nos parcelles
-* 3 fonds de carte : couche Positron (CartoDB), couche Satellite (Google) et couche Cadastre (IGN) 
+* 3 fonds de carte : couche Positron (CartoDB), couche Satellite (Google) et couche Cadastre (IGN)
 * un module de mesures de surfaces et de distance
 * une échelle
 * un sélecteur de couches
@@ -334,7 +334,7 @@ Afin d'ajouter de l'interactivité, on crée un objet contenant le texte à affi
 ```markdown
 Row {data-height=700}
 -------------------------------------
-### 
+###
 ```{r}
 # définition du texte quand on clique sur la parcelle
 click <- paste0(
@@ -352,7 +352,7 @@ leaflet(sd) %>%
     popup = click, group = "Parcelles"
   ) %>%
 
-  addScaleBar(position = "bottomleft", 
+  addScaleBar(position = "bottomleft",
       options = scaleBarOptions(metric = TRUE, imperial = FALSE)) %>%
   addLayersControl(baseGroups = c("Positron", "Satellite", "Cadastre"),
       overlayGroups = c("Parcelles"), options = layersControlOptions(collapsed = FALSE)) %>%
@@ -404,7 +404,7 @@ Row {data-height=300}
 #```{r}
 datatable(sd_df, editable = T,
   rownames = FALSE, extensions = c("Scroller", "Buttons"),
-  options = list(dom = "Blrtip", scrollY = 300, scroller = TRUE, 
+  options = list(dom = "Blrtip", scrollY = 300, scroller = TRUE,
                  buttons = list('copy', 'csv', 'excel')))
 
 #```
@@ -430,7 +430,7 @@ Par exemple, pour un WMS du BRGM on ajoute une nouvelle connexion WMS à QGIS - 
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_wms_brgm.png)
 
-Puis on clique sur connexion pour obtenir les noms des différentes couches disponibles : 
+Puis on clique sur connexion pour obtenir les noms des différentes couches disponibles :
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_brgm_couches.png)
 
@@ -444,15 +444,15 @@ leaflet(sd) %>%
   addProviderTiles("CartoDB.Positron", group = "Positron") %>%
   addTiles(urlTemplate = "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}", "© Google", group = "Satellite") %>%
   addTiles(urlTemplate = "https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE=PCI vecteur&TILEMATRIXSET=PM&FORMAT=image/png&LAYER=CADASTRALPARCELS.PARCELLAIRE_EXPRESS&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}", "© IGN", group = "Cadastre") %>%
-  addWMSTiles(baseUrl = "http://geoservices.brgm.fr/geologie/", 
+  addWMSTiles(baseUrl = "http://geoservices.brgm.fr/geologie/",
               layers = "SCAN_D_GEOL50",
-              options = WMSTileOptions(token = "public", format = "image/png", 
-                         transparent = F, srs = "EPSG:4326"), 
+              options = WMSTileOptions(token = "public", format = "image/png",
+                         transparent = F, srs = "EPSG:4326"),
               attribution = "© BRGM", group = "Géologie") %>%
-  addWMSTiles(baseUrl = "http://ws.carmencarto.fr/WMS/119/fxx_inpn", 
+  addWMSTiles(baseUrl = "http://ws.carmencarto.fr/WMS/119/fxx_inpn",
               layers = "Znieff1",
-              options = WMSTileOptions(token = "public", format = "image/png", 
-                         transparent = F, srs = "EPSG:4326"), 
+              options = WMSTileOptions(token = "public", format = "image/png",
+                         transparent = F, srs = "EPSG:4326"),
               attribution = "© INPN", group = "ZNIEFF") %>%
 
   addPolygons(
@@ -460,7 +460,7 @@ leaflet(sd) %>%
     popup = click, group = "Parcelles"
   ) %>%
 
-  addScaleBar(position = "bottomleft", 
+  addScaleBar(position = "bottomleft",
               options = scaleBarOptions(metric = TRUE, imperial = FALSE)) %>%
 
 # bien modifier les groupes ici pour qu'ils soient cliquables
@@ -490,7 +490,7 @@ leaflet(sd) %>%
 
 
 
-Un WMS est disponible, mais ne permet pas de correctement différencier les AOC au sein d'une même zone :yum: 
+Un WMS est disponible, mais ne permet pas de correctement différencier les AOC au sein d'une même zone :yum:
 À partir de la couche INAO des aires AOC viticoles, on réalise donc une extraction autour de notre zone d'étude sur QGIS. On la nettoie (Alg. : *Réparer les géométries*), on passe la couche en géométries uniques (Alg. : *De morceaux multiples à morceaux uniques*), et on l'exporte en geojson / WGS84.
 
 
@@ -506,7 +506,7 @@ Vous cliquez ensuite sur Layers et ajoutez vos données depuis le bouton "Source
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox1.png)
 
-On peut ensuite paramétrer notre style en conditionnant la symbologie aux valeurs des attributs : 
+On peut ensuite paramétrer notre style en conditionnant la symbologie aux valeurs des attributs :
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox2.png)
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox3.png)
@@ -519,7 +519,7 @@ Puis sur Share, en sélectionnant "Third party" & Fulcrum pour avoir un lien de 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox5.png)
 
 
-On met à jour notre code de carte, en utilisant cette fois la fonction addTiles() : 
+On met à jour notre code de carte, en utilisant cette fois la fonction addTiles() :
 
 ```r
 leaflet(sd) %>%
@@ -530,12 +530,12 @@ addWMSTiles(baseUrl = "http://geoservices.brgm.fr/geologie/", layers = "SCAN_D_G
 options = WMSTileOptions(token = "public", format = "image/png", transparent = F, srs = "EPSG:4326"), attribution = "© BRGM", group = "Géologie") %>%
   addWMSTiles(baseUrl = "http://ws.carmencarto.fr/WMS/119/fxx_inpn", layers = "Znieff1",
 options = WMSTileOptions(token = "public", format = "image/png", transparent = F, srs = "EPSG:4326"), attribution = "© INPN", group = "ZNIEFF") %>%
-  
+
   #remplacer l'adresse ci-dessous par la votre ;-)
-  addTiles(urlTemplate = "https://api.mapbox.com/styles/v1/yournamehere/codebizarre/tiles/256/{z}/{x}/{y}@2x?access_token=codeencoreplusbizarre", 
+  addTiles(urlTemplate = "https://api.mapbox.com/styles/v1/yournamehere/codebizarre/tiles/256/{z}/{x}/{y}@2x?access_token=codeencoreplusbizarre",
            "INAO, Mapbox", group = "Aires AOC") %>%
 
-  
+
   addPolygons(
     fillOpacity = 0.7, weight = 0.5,
     popup = click, group = "Parcelles"
