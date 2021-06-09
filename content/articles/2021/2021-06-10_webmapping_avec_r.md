@@ -35,16 +35,11 @@ Vous êtes prêts ? Allez, pour bien comprendre, suivez bien les pas :trumpet:
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/GrizzledCircularArmedcrab-size_restricted.gif)
 
-
 ----
 
 ## Démarrage, packages et données
 
-
 ### Packages R
-
-
-
 
 Les packages utilisés sont les suivants :
 
@@ -60,7 +55,6 @@ library(DT)
 library(sf)
 library(flexdashboard)
 ```
-
 
 **Une version particulière de leaflet pour une utilisation des polygones avec crosstalk doit être installée :**
 
@@ -79,6 +73,7 @@ La commune choisie est par exemple ici celle de Quincié-en-Beaujolais (INSEE : 
 #### Organisation
 
 Notre projet consistera basiquement en 2 fichiers :
+
 * un fichier "script" .R : pour la création des données et la génération automatisée des cartes pour chaque agriculteur
 * un fichier "sortie" .Rmd : pour la sortie .html de la carte avec ses différents composants
 
@@ -110,6 +105,7 @@ batiments <- st_as_sf(geojson_sf(gzcon(url(paste0(
   "/cadastre-", insee, "-batiments.json.gz"
 )))))
 ```
+
 Il faut maintenant passer des données brutes cadastrales à des données d'exemple intéressantes à travailler :yum:
 
 #### Création des parcelles
@@ -142,11 +138,10 @@ ggplot() +
   theme_minimal()
 
 ```
+
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/parcelles_viti_test.png)
 
 Sur notre jeu de données, on a ajouté des attributs spécifiques à titre d'exemple (Faire-Valoir, Cépage) histoire d'avoir des possibilités de filtres "intelligents" sur la carte finale.
-
-
 
 ## La carte
 
@@ -158,17 +153,15 @@ Un certain nombre de packages R permettent des rendus déjà préconfigurés : p
 
 L'intérêt est aussi d'avoir ces différents modules qui communiquent entre eux : un filtre doit par exemple interagir sur ce qui est affiché sur la carte, mais également sur le tableau de données.
 
-
 ### Organisation de la page
 
 Pour créer un nouveau document .Rmd basé sur flexdashboard, il faut aller dans File > New File > R Markdown et sélectionner flexdashboard dans l'onglet 'From Template'
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/tmprmd.png)
 
-*(parce qu'il serait trop long de décrire ici toutes les fonctionnalités d'agencement graphique, je vous renvoie à l'adresse suivante pour en savoir plus : https://pkgs.rstudio.com/flexdashboard/articles/using.html)*
+*(parce qu'il serait trop long de décrire ici toutes les fonctionnalités d'agencement graphique, je vous renvoie à l'adresse suivante pour en savoir plus : <https://pkgs.rstudio.com/flexdashboard/articles/using.html>)*
 
 On va utiliser pour cet exemple un agencement par ligne, avec le thème 'lumen', que je trouve intéressant et qui se combine bien avec les tuiles Positron de CartoDB.
-
 
 Ainsi :
 
@@ -183,6 +176,7 @@ output:
 ```
 
 On va ensuite organiser la page comme cela :
+
 * un onglet principal avec
     * un bloc header sur la première ligne pour changer d'onglet(généré automatiquement)
     * un bloc "carte" à droite
@@ -191,6 +185,7 @@ On va ensuite organiser la page comme cela :
 * un deuxième onglet qui peut accueillir les informations annexes, manuel d'utilisation, sources des données, contact, etc.
 
 Cela correspond à la syntaxe suivante :
+
 ```markdown
 ---
 title: "Cartographie | `r nom_operateur`"
@@ -237,6 +232,7 @@ Ce qui donne la sortie suivante (après compilation en appuyant sur le bouton Kn
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/carte_blank2.png)
 
 Maintenant il s'agit de remplir les différentes parties avec nos données !
+
 ### La carte
 
 Il faut tout d'abord injecter nos données dans le Rmd. Le problème à résoudre, c'est d'avoir nos données spécifiques à chaque exploitation dans la carte : les données doivent donc être filtrées en amont de la création de la carte.
@@ -244,6 +240,7 @@ Il faut tout d'abord injecter nos données dans le Rmd. Le problème à résoudr
 #### Filtre des données et génération automatisée
 
 On retourne donc dans notre fichier script et on procède à l'écriture de la boucle permettant d'obtenir
+
 * les données filtrées pour chaque exploitation
 * tant qu'à faire, le nom de l'exploitation pour l'afficher en titre de la carte
 * la sortie .html de la carte pour cette exploitation
@@ -262,6 +259,7 @@ for (x in 1:10){
   cat("carte ",x,"/10\n")
 }
 ```
+
 Et sur notre répertoire de travail apparaissent : :smiley:
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/files_auto.png)
 
@@ -309,6 +307,7 @@ output:
     theme: lumen
 ---
 ```
+
  ![](https://geotripad.herokuapp.com/uploads/upload_fa13dadb00c71723051059d7f805c2ef.png)
 
 #### À la carte !
@@ -320,9 +319,11 @@ Row {data-height=700}
 -------------------------------------
 ###
 ```
+
 *(Il faut bien rajouter les 3 # avant de mettre le chunk sinon des bugs peuvent se produire)*
 
 On va créer une carte leaflet avec :
+
 * nos parcelles
 * 3 fonds de carte : couche Positron (CartoDB), couche Satellite (Google) et couche Cadastre (IGN)
 * un module de mesures de surfaces et de distance
@@ -367,13 +368,9 @@ leaflet(sd) %>%
 
 ```
 
-
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev0.png)
 
-
 #### Création des filtres
-
-
 
 ```{r}
 Inputs {.sidebar}
@@ -388,7 +385,6 @@ filter_select("FaireValoir", "Faire-Valoir", sd_df, ~FaireValoir, allLevels = TR
 ```
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev1.png)
-
 
 #### Création du tableau de données
 
@@ -412,21 +408,15 @@ datatable(sd_df, editable = T,
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev2.png)
 
-
 ### L'ajout d'autres couches non-personnalisées
 
 La dernière question : comment *facilement* ajouter des couches non-personnalisées telles que les aires AOC ou la géologie ?
-
-
-
-
-
 
 #### Cas où la donnée a une version tuilée : carte géologique & ZNIEFF
 
 On récupère les couches WMS : comme c'est assez retors pour obtenir les liens directs, on passe par QGIS.
 
-Par exemple, pour un WMS du BRGM on ajoute une nouvelle connexion WMS à QGIS - http://geoservices.brgm.fr/geologie
+Par exemple, pour un WMS du BRGM on ajoute une nouvelle connexion WMS à QGIS - <http://geoservices.brgm.fr/geologie>
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_wms_brgm.png)
 
@@ -434,10 +424,7 @@ Puis on clique sur connexion pour obtenir les noms des différentes couches disp
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_brgm_couches.png)
 
-
-Ici, la couche qui nous intéresse est par exemple le scan des cartes géologiques 1/50000e, on note donc de prendre "SCAN_D_GEOL50". Dans notre carte, on rajoute une fonction addWMSTiles comme ci-dessous. J'ai également mis les ZNIEFF 1 que l'on peut récupérer de la même façon depuis https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/inv/znieff1
-
-
+Ici, la couche qui nous intéresse est par exemple le scan des cartes géologiques 1/50000e, on note donc de prendre "SCAN_D_GEOL50". Dans notre carte, on rajoute une fonction addWMSTiles comme ci-dessous. J'ai également mis les ZNIEFF 1 que l'on peut récupérer de la même façon depuis <https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/inv/znieff1>
 
 ```r
 leaflet(sd) %>%
@@ -484,20 +471,17 @@ leaflet(sd) %>%
   ) %>%
     hideGroup(c("Géologie","ZNIEFF"))
 ```
+
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev3.png)
 
 #### Cas où la donnée n'a pas de version tuilée : aires AOC et autres couches perso avec Mapbox
 
-
-
 Un WMS est disponible, mais ne permet pas de correctement différencier les AOC au sein d'une même zone :yum:
 À partir de la couche INAO des aires AOC viticoles, on réalise donc une extraction autour de notre zone d'étude sur QGIS. On la nettoie (Alg. : *Réparer les géométries*), on passe la couche en géométries uniques (Alg. : *De morceaux multiples à morceaux uniques*), et on l'exporte en geojson / WGS84.
 
-
-On charge ensuite la couche sur https://studio.mapbox.com/tilesets/, dans *New Tilesets*.
+On charge ensuite la couche sur <https://studio.mapbox.com/tilesets/>, dans *New Tilesets*.
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/uploadmapbox.png)
-
 
 Ce service va nous permettre de nous créer facilement de petits WMS intégrables dans notre carte. On peut les customiser et créer des couches de belle facture pour notre carte en quelques clics.
 
@@ -517,7 +501,6 @@ Quand votre style est prêt, pour pouvoir l'utiliser dans la carte interactive, 
 Puis sur Share, en sélectionnant "Third party" & Fulcrum pour avoir un lien de tuile XYZ facile à intégrer dans notre code.
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox5.png)
-
 
 On met à jour notre code de carte, en utilisant cette fois la fonction addTiles() :
 
@@ -568,15 +551,9 @@ options = WMSTileOptions(token = "public", format = "image/png", transparent = F
     hideGroup(c("Géologie","ZNIEFF", "Aires AOC"))
 ```
 
-
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev4.png)
 
-
-
 **Remarque** : si vous prévoyez un usage intensif de ce genre de cartes, il existe une limite à la version gratuite, avec un certain nombre de requêtes par mois. Au-delà de ce montant, il vous faudra payer pour assurer la continuité de service de ces données dans votre carte.
-
-
-
 
 ## Conclusion
 
@@ -586,8 +563,6 @@ Le fichier peut ensuite être partagé, envoyé par mail, uploadé sur un site o
 Il est alors possible de créer à la chaîne et pour un grand nombre d'opérateurs (testé par votre humble serviteur pour 10'000 cartes différentes) ce type de petites cartes personnalisées très utiles et relativement faciles à mettre en place.
 
 Bon courage !
-
-
 
 ----
 
