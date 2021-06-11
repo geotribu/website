@@ -2,7 +2,7 @@
 title: "Personnaliser le splash screen de QGIS"
 authors: ["Julien MOURA"]
 categories: ["article", "tutoriel"]
-date: "2021-06-17 18:20"
+date: "2021-06-11 10:20"
 description: "Le lancement de QGIS vous semble long ? Vous êtes sur la LTR et las de voir la même image pendant 2 ans ? Voici comment personnaliser l'image au lancement de QGIS."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_splash_screen/qgis_qtribu_splash_screen_custom.png"
 tags: "QGIS,personnalisation,splash screen,démarrage"
@@ -10,7 +10,7 @@ tags: "QGIS,personnalisation,splash screen,démarrage"
 
 # Personnaliser l'image au lancement de QGIS
 
-:calendar: Date de publication initiale : 17 juin 2021
+:calendar: Date de publication initiale : 11 juin 2021
 
 **Mots-clés :** QGIS | interface graphique
 
