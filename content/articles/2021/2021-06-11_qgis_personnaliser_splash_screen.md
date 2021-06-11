@@ -24,7 +24,7 @@ Pré-requis :
 
 Le *splash screen* est l'image qui apparaît au lancement de QGIS. Une image que vous pouvez voir plus ou moins longtemps, la durée étant inversement proportionnelle aux caractéristiques techniques de votre ordinateur et au nombre de plugins installés.
 
-![splash screens QGIS](https://raw.githubusercontent.com/webgeodatavore/qgis-splash-screens-birthday/master/qgis-splash-screens-no-text.gif "Défilement des splash screens de QGIS - Crédits : QGIS et Web Geo Data Vore")
+![splash screens QGIS](https://raw.githubusercontent.com/webgeodatavore/qgis-splash-screens-birthday/master/qgis-splash-screens-no-text.gif "Défilement des splash screens de QGIS - Crédits : QGIS et Web Geo Data Vore"){: loading=lazy }
 {: align=middle }
 > Défilement des splash screens de QGIS - Crédits : QGIS et [Web Geo Data Vore](https://github.com/webgeodatavore/qgis-splash-screens-birthday)
 {: align=middle }
@@ -58,7 +58,7 @@ Pour cela, il suffit suivre les indications de [la documentation officielle](htt
 1. menu `Préférences` > `Personnalisation de l'interface`
 2. cocher `Autoriser la modification`
 
-![QGIS menu personnalisation](https://cdn.geotribu.fr/img/tuto/qgis_splash_screen/qgis_customization_ui_menu.png "QGIS - Menu personnalisation de l'interface")
+![QGIS menu personnalisation](https://cdn.geotribu.fr/img/tuto/qgis_splash_screen/qgis_customization_ui_menu.png "QGIS - Menu personnalisation de l'interface"){: .img-center loading=lazy }
 
 Ce faisant, QGIS crée un fichier `QGISCUSTOMIZATION3.ini` dans le dossier du profil utilisateur actif.
 
