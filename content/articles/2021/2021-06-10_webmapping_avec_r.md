@@ -391,19 +391,18 @@ filter_select("FaireValoir", "Faire-Valoir", sd_df, ~FaireValoir, allLevels = TR
 On utilise ici le package DT qui permet la communication avec le reste des modules via crosstalk.
 On ajoute des boutons pour copier, exporter en csv et exporter en excel.
 
-```
+```markdown
 Row {data-height=300}
 -------------------------------------
 
 ###
 
-#```{r}
+```{r}
 datatable(sd_df, editable = T,
   rownames = FALSE, extensions = c("Scroller", "Buttons"),
   options = list(dom = "Blrtip", scrollY = 300, scroller = TRUE,
                  buttons = list('copy', 'csv', 'excel')))
 
-#```
 ```
 
 ![Carte v2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev2.png  "Carte v2"){: .img-center loading=lazy }
