@@ -320,7 +320,7 @@ Row {data-height=700}
 ###
 ```
 
-*(Il faut bien rajouter les 3 # avant de mettre le chunk sinon des bugs peuvent se produire)*
+*(Il faut bien rajouter les 3* # *avant de mettre le chunk sinon des bugs peuvent se produire)*
 
 On va créer une carte leaflet avec :
 
