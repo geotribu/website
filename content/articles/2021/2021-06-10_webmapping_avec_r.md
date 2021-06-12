@@ -61,7 +61,7 @@ library(flexdashboard) # https://cran.r-project.org/web/packages/flexdashboard/i
 ```r
 devtools::install_github("dmurdoch/leaflet@crosstalk4") # https://github.com/dmurdoch/leaflet
 
-library(leaflet) 
+library(leaflet)
 ```
 
 ### Données
