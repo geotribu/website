@@ -16,9 +16,9 @@ tags: "template,mot-clé-seo1,mot-clé-seo2"
 
 ## Prérequis
 
-* une machine avec R 4.0 et RStudio
+* une machine avec [R](https://www.r-project.org) 4.0 et [RStudio](https://www.rstudio.com)
 * quelques connaissances sur la programmation R
-* éventuellement un compte Mapbox
+* éventuellement un compte [Mapbox](https://www.mapbox.com)
 
 ## Introduction
 
@@ -26,14 +26,14 @@ Autant l'avouer d'emblée, je suis quand même un petit peu un traumatisé du po
 
 Si le développement classique de cartes interactives en JavaScript est devenu prépondérant grâce à une très grande flexibilité d'usages et de paramétrages, il existe certains cas particuliers où d'autres approches peuvent être mobilisées.
 
-Par exemple, mettons qu'on ait besoin de communiquer cartographiquement et de la même façon des données privées et personnalisées à 10, 100 ou 1000 destinataires, sans volonté ou possibilité d'infrastructure informatique susceptible d'accueillir une telle application cartographique ou n'ayant tout simplement pas les compétences pour en développer une (ou les finances pour s'en payer). Cela peut à première vue paraître des conditions initiales pour le moins incongrues lorsque l'on parle de géomatique (car trouvant majoritairement son débouché dans des organisations publiques), mais si l'on regarde tout le spectre possible des organisations susceptibles de pouvoir recourir à des applications carto, je pense que des situations telles que je présente ici existent beaucoup plus fréquemment que l'on imagine au premier abord.
+Par exemple, admettons qu'on ait besoin de communiquer cartographiquement et de la même façon des données privées et personnalisées à 10, 100 ou 1000 destinataires, sans volonté ou possibilité d'infrastructure informatique susceptible d'accueillir une telle application cartographique ou n'ayant tout simplement pas les compétences pour en développer une (ou les finances pour se l'offrir). Cela peut à première vue ressembler à des conditions initiales pour le moins incongrues lorsque l'on parle de géomatique (car trouvant majoritairement son débouché dans des organisations publiques), mais si l'on regarde tout le spectre possible des organisations susceptibles de pouvoir recourir à des applications carto, je pense que des situations telles que je présente ici existent beaucoup plus fréquemment que l'on imagine au premier abord.
 
-Je propose donc ici un petit tutoriel afin de réaliser des cartes interactives personnalisées simplement à l'aide de R et quelques packages.
+Je propose donc un petit tutoriel afin de réaliser des cartes interactives personnalisées simplement à l'aide de R et quelques packages.
 L'exemple est de simuler ici la création de cartes personnalisées pour des agriculteurs, chacun possédant quelques parcelles différentes, afin qu'ils puissent repérer différentes informations sur leur environnement.
 
 Vous êtes prêts ? Allez, pour bien comprendre, suivez bien les pas :trumpet:
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/GrizzledCircularArmedcrab-size_restricted.gif)
+![Carioca](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/GrizzledCircularArmedcrab-size_restricted.gif "Carioca"){: .img-center loading=lazy }
 
 ----
 
@@ -44,29 +44,29 @@ Vous êtes prêts ? Allez, pour bien comprendre, suivez bien les pas :trumpet:
 Les packages utilisés sont les suivants :
 
 ```r
-library(tidyverse)
-library(geojsonsf)
-library(crosstalk)
-library(rnaturalearth)
-library(rgdal)
-library(geosphere)
-library(RColorBrewer)
-library(DT)
-library(sf)
-library(flexdashboard)
+library(tidyverse) # https://cran.r-project.org/web/packages/tidyverse/index.html
+library(geojsonsf) # https://cran.r-project.org/web/packages/geojsonsf/index.html
+library(crosstalk) # https://cran.r-project.org/web/packages/crosstalk/index.html
+library(rnaturalearth) # https://cran.r-project.org/web/packages/rnaturalearth/index.html
+library(rgdal) # https://cran.r-project.org/web/packages/rgdal/index.html
+library(geosphere) # https://cran.r-project.org/web/packages/geosphere/index.html
+library(RColorBrewer) # https://cran.r-project.org/web/packages/RColorBrewer/index.html
+library(DT) # https://cran.r-project.org/web/packages/DT/index.html
+library(sf) # https://cran.r-project.org/web/packages/sf/index.html
+library(flexdashboard) # https://cran.r-project.org/web/packages/flexdashboard/index.html
 ```
 
 **Une version particulière de leaflet pour une utilisation des polygones avec crosstalk doit être installée :**
 
 ```r
-devtools::install_github("dmurdoch/leaflet@crosstalk4")
+devtools::install_github("dmurdoch/leaflet@crosstalk4") # https://github.com/dmurdoch/leaflet
 
-library(leaflet)
+library(leaflet) 
 ```
 
 ### Données
 
-On va générer un jeu de données aléatoire basé sur les données du cadastre Etalab pour les parcelles. Seront également utilisées quelques autres pour de l'information géographique que l'on veut superposer.
+On va générer un jeu de données aléatoire basé sur les données du [cadastre Etalab](https://cadastre.data.gouv.fr/datasets/cadastre-etalab) pour les parcelles.
 
 La commune choisie est par exemple ici celle de Quincié-en-Beaujolais (INSEE : 69192), on inventera une dizaine d'agriculteurs fictifs possédant des parcelles tout aussi fictives sur lesquelles ils voudront avoir l'information des délimitations des AOC viticoles, ainsi que celle de la carte géologique ou des ZNIEFF.
 
@@ -139,7 +139,7 @@ ggplot() +
 
 ```
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/parcelles_viti_test.png)
+![Création des parcelles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/parcelles_viti_test.png "Création des parcelles"){: .img-center loading=lazy }
 
 Sur notre jeu de données, on a ajouté des attributs spécifiques à titre d'exemple (Faire-Valoir, Cépage) histoire d'avoir des possibilités de filtres "intelligents" sur la carte finale.
 
@@ -157,15 +157,15 @@ L'intérêt est aussi d'avoir ces différents modules qui communiquent entre eux
 
 Pour créer un nouveau document .Rmd basé sur flexdashboard, il faut aller dans File > New File > R Markdown et sélectionner flexdashboard dans l'onglet 'From Template'
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/tmprmd.png)
+![Flex Dashboard](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/tmprmd.png "Flex Dashboard"){: .img-center loading=lazy }
 
 *(parce qu'il serait trop long de décrire ici toutes les fonctionnalités d'agencement graphique, je vous renvoie à l'adresse suivante pour en savoir plus : <https://pkgs.rstudio.com/flexdashboard/articles/using.html>)*
 
-On va utiliser pour cet exemple un agencement par ligne, avec le thème 'lumen', que je trouve intéressant et qui se combine bien avec les tuiles Positron de CartoDB.
+On va utiliser pour cet exemple un agencement par ligne, avec le thème 'lumen', que je trouve intéressant et qui se combine bien avec les tuiles Positron de [CartoDB](https://carto.com).
 
 Ainsi :
 
-```
+```markdown
 ---
 title: "Cartographie | `r nom_exploitation`"
 output:
@@ -228,8 +228,7 @@ Information {data-orientation=rows data-icon="fa-info-circle"}
 
 Ce qui donne la sortie suivante (après compilation en appuyant sur le bouton Knit qui vous demande également de sauvegarder votre fichier, ici on l'a appelé "exemple.Rmd")
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/carte_blank.png)
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/carte_blank2.png)
+![Structure vierge](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/carte_blank2.png "Structure vierge"){: .img-center loading=lazy }
 
 Maintenant il s'agit de remplir les différentes parties avec nos données !
 
@@ -261,7 +260,8 @@ for (x in 1:10){
 ```
 
 Et sur notre répertoire de travail apparaissent : :smiley:
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/files_auto.png)
+
+![Fichiers par exploitation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/files_auto.png "Fichiers par exploitation"){: .img-center loading=lazy }
 
 Bon, c'est bien, par contre les cartes sont toutes vides. Il faut maintenant s'atteler à remplir le document Rmd en utilisant les données personnalisées : "parcelles_exploitation" et "nom_exploitation"
 
@@ -308,7 +308,7 @@ output:
 ---
 ```
 
- ![](https://geotripad.herokuapp.com/uploads/upload_fa13dadb00c71723051059d7f805c2ef.png)
+![Titre exploitation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/exempletitre.png "Titre exploitation"){: .img-center loading=lazy }
 
 #### À la carte !
 
@@ -368,7 +368,7 @@ leaflet(sd) %>%
 
 ```
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev0.png)
+![Carte v0](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev0.png "Carte v0"){: .img-center loading=lazy }
 
 #### Création des filtres
 
@@ -384,7 +384,7 @@ filter_select("FaireValoir", "Faire-Valoir", sd_df, ~FaireValoir, allLevels = TR
 #```
 ```
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev1.png)
+![Carte v1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev1.png "Carte v1"){: .img-center loading=lazy }
 
 #### Création du tableau de données
 
@@ -406,7 +406,7 @@ datatable(sd_df, editable = T,
 #```
 ```
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev2.png)
+![Carte v2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev2.png  "Carte v2"){: .img-center loading=lazy }
 
 ### L'ajout d'autres couches non-personnalisées
 
@@ -418,11 +418,11 @@ On récupère les couches WMS : comme c'est assez retors pour obtenir les liens 
 
 Par exemple, pour un WMS du BRGM on ajoute une nouvelle connexion WMS à QGIS - <http://geoservices.brgm.fr/geologie>
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_wms_brgm.png)
+![QGIS lien WMS BRGM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_wms_brgm.png "QGIS lien WMS du BRGM"){: .img-center loading=lazy }
 
 Puis on clique sur connexion pour obtenir les noms des différentes couches disponibles :
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_brgm_couches.png)
+![QGIS couches WMS du BRGM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_brgm_couches.png "QGIS couches WMS du BRGM"){: .img-center loading=lazy }
 
 Ici, la couche qui nous intéresse est par exemple le scan des cartes géologiques 1/50000e, on note donc de prendre "SCAN_D_GEOL50". Dans notre carte, on rajoute une fonction addWMSTiles comme ci-dessous. J'ai également mis les ZNIEFF 1 que l'on peut récupérer de la même façon depuis <https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/inv/znieff1>
 
@@ -472,7 +472,7 @@ leaflet(sd) %>%
     hideGroup(c("Géologie","ZNIEFF"))
 ```
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev3.png)
+![Carte v3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev3.png "Carte v3"){: .img-center loading=lazy }
 
 #### Cas où la donnée n'a pas de version tuilée : aires AOC et autres couches perso avec Mapbox
 
@@ -481,26 +481,26 @@ Un WMS est disponible, mais ne permet pas de correctement différencier les AOC 
 
 On charge ensuite la couche sur <https://studio.mapbox.com/tilesets/>, dans *New Tilesets*.
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/uploadmapbox.png)
+![Upload Mapbox](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/uploadmapbox.png "Upload Mapbox"){: .img-center loading=lazy }
 
 Ce service va nous permettre de nous créer facilement de petits WMS intégrables dans notre carte. On peut les customiser et créer des couches de belle facture pour notre carte en quelques clics.
 
 Une fois la couche chargée, vous pouvez créer un style comprenant la donnée que vous venez d'uploader en allant dans Styles > New Style > Blank Style.
 Vous cliquez ensuite sur Layers et ajoutez vos données depuis le bouton "Source"
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox1.png)
+![Mapbox source](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox1.png "Mapbox source"){: .img-center loading=lazy }
 
 On peut ensuite paramétrer notre style en conditionnant la symbologie aux valeurs des attributs :
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox2.png)
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox3.png)
+![Mapbox style](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox2.png "Mapbox style"){: .img-center loading=lazy }
+![Mapbox style du texte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox3.png "Mapbox style du texte"){: .img-center loading=lazy }
 
 Quand votre style est prêt, pour pouvoir l'utiliser dans la carte interactive, il faut le publier et récupérer le lien. On clique sur "Publish"
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox4.png)
+![Mapbox publier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox4.png "Mapbox publier"){: .img-center loading=lazy }
 
 Puis sur Share, en sélectionnant "Third party" & Fulcrum pour avoir un lien de tuile XYZ facile à intégrer dans notre code.
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox5.png)
+![Mapbox url](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/mapbox5.png "Mapbox url"){: .img-center loading=lazy }
 
 On met à jour notre code de carte, en utilisant cette fois la fonction addTiles() :
 
@@ -551,7 +551,7 @@ options = WMSTileOptions(token = "public", format = "image/png", transparent = F
     hideGroup(c("Géologie","ZNIEFF", "Aires AOC"))
 ```
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev4.png)
+![Carte finale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/cartev4.png "Carte finale"){: .img-center loading=lazy }
 
 **Remarque** : si vous prévoyez un usage intensif de ce genre de cartes, il existe une limite à la version gratuite, avec un certain nombre de requêtes par mois. Au-delà de ce montant, il vous faudra payer pour assurer la continuité de service de ces données dans votre carte.
 
