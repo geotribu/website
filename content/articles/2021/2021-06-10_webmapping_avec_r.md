@@ -22,6 +22,8 @@ tags: "template,mot-clé-seo1,mot-clé-seo2"
 
 ## Introduction
 
+![logo R stats](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/r.png){: .img-rdp-news-thumb }
+
 Autant l'avouer d'emblée, je suis quand même un petit peu un traumatisé du point-virgule ; inversement je suis un grand amoureux d'R : mon jugement est donc biaisé, mais je l'assume totalement. :smirk:
 
 Si le développement classique de cartes interactives en JavaScript est devenu prépondérant grâce à une très grande flexibilité d'usages et de paramétrages, il existe certains cas particuliers où d'autres approches peuvent être mobilisées.
@@ -34,6 +36,9 @@ L'exemple est de simuler ici la création de cartes personnalisées pour des agr
 Vous êtes prêts ? Allez, pour bien comprendre, suivez bien les pas :trumpet:
 
 ![Carioca](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/GrizzledCircularArmedcrab-size_restricted.gif "Carioca"){: .img-center loading=lazy }
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 ----
 
@@ -144,6 +149,8 @@ ggplot() +
 Sur notre jeu de données, on a ajouté des attributs spécifiques à titre d'exemple (Faire-Valoir, Cépage) histoire d'avoir des possibilités de filtres "intelligents" sur la carte finale.
 
 ## La carte
+
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
 
 Bon, les données sont disponibles, mais concrètement, maintenant, comment on passe de cette carte statique à la carte interactive, personnalisée et partageable promise ?
 
