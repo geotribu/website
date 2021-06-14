@@ -120,13 +120,11 @@ theme:
         icon: material/weather-night
         name: Basculer en mode clair
 
-# Integrations with 3rd party
-google_analytics:
-  - !!python/object/apply:os.getenv ["MKDOCS_GOOGLE_ANALYTICS_KEY"]
-  - 'auto'
-
 # Customization
 extra:
+  analytics:
+    provider: google
+    property: !!python/object/apply:os.getenv ["MKDOCS_GOOGLE_ANALYTICS_KEY"]
   comments_url: https://comments.geotribu.fr  # isso url
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
