@@ -3,9 +3,9 @@ title: "De petites applications webmapping avec R"
 authors: ["Romain LACROIX"]
 categories: ["article", "tutoriel"]
 date: "2021-04-XX 10:20"
-description: "Description pour le SEO."
+description: "Comment réaliser des cartes interactives personnalisées simplement à l'aide de R et quelques packages"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/exempletitre.png"
-tags: "template,mot-clé-seo1,mot-clé-seo2"
+tags: "Carte interactive,webmapping,R,Leaflet,dashboard,Mapbox"
 ---
 
 # De petites applications webmapping avec R
