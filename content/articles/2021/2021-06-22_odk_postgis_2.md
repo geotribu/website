@@ -86,14 +86,12 @@ Voici l'extrait correspondant de la feuille survey (le principe est le mêm pour
 * la liste utilisée dans la feuille choicies s'appelle "boolean"
 * et par défaut (default) la question prend la dernière valeur enregistrée si elle existe, sinon "true"
 
-| **type**           | **name**          | **label**                                 | **hint** | **constraint** | **constraint_message** | **calculation** | **required** | **appearance** | **default**                                      |
-| ------------------ | ----------------- | ----------------------------------------- | -------- | -------------- | ---------------------- | --------------- | ------------ | -------------- | ------------------------------------------------ |
-|                    |                   |                                           |          |                |                        |                 |              |                |                                                  |
-| begin group        | settings          | Préférences → Types de géométries saisies |          |                |                        |                 |              | field-list     |                                                  |
-| select_one boolean | utiliser_geopoint | Points                                    |          |                |                        |                 | yes          |                | coalesce(${last-saved#utiliser_geopoint},’true’) |
-| select_one boolean | utiliser_geotrace | Lignes                                    |          |                |                        |                 | yes          |                | coalesce(${last-saved#utiliser_geotrace},’true’) |
-| select_one boolean | utiliser_geoshape | Polygones                                 |          |                |                        |                 | yes          |                | coalesce(${last-saved#utiliser_geoshape},’true’) |
-| end group          |                   |                                           |          |                |                        |                 |              |                |                                                  |
+| **type**           | **name**          | **label** | **required** | **default**                                      |
+| ------------------ | ----------------- | --------- | ------------ | ------------------------------------------------ |
+| select_one boolean | utiliser_geopoint | Points    | yes          | coalesce(${last-saved#utiliser_geopoint},’true’) |
+| select_one boolean | utiliser_geotrace | Lignes    | yes          | coalesce(${last-saved#utiliser_geotrace},’true’) |
+| select_one boolean | utiliser_geoshape | Polygones | yes          | coalesce(${last-saved#utiliser_geoshape},’true’) |
+| end group          |                   |           |              |                                                  |
 
 ### Écran de paramétrage n°3 -> Types de données (thématiques) et paramétrage de l'autocomplétion
 
@@ -101,28 +99,80 @@ Le dernier écran permet de choisir le nombre de caractères à saisir dans le r
 
 Une fois les paramétrages vérifiés et ou modifiés l'utilisateur peut choisir l'étude pour laquelle le relevé est effectué
 
-### Choix de l'étude
-A terme nous aimerions générer dynamiquement et régulièrement cette liste d'études pour ne faire apparaître que les études en cours et pourquoi pas seulement celles qui concernent l’utilisateur de l'application
+### Choix de l'étude et du protocole
+
+Ces deux référentiels sont gérés dans des fichiers csv externes associés au formulaire. Les fichiers sont mentionnés dans la colonne appaerence des lignes 34 et 3 -> search('etudes') et search('protocole').
+La feuille de calcul choices nous renseigne sur la structure de ces csv. Les colonnes nom_etude_id et libelle_id contiennent les identifiants à stocker, tandis que les colonnes nom_etude et libelle contiennent les "noms" à afficher dans les listes.
+Cela permet de les mettre à jour sur le téléphone sans avoir à mettre à jour le formulaire sur le serveur.
+Nous verrons plus tard avec le référentiel taxonomique que le stockage externe de ces référentiels nous offre des possibilités de recherche intéressantes. 
 
 [![choix de l'étude](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png "choix de l'étude"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png){: data-mediabox="lightbox-gallery" data-title="choix de l'étude"} 
-
-### Choisir le protocole
-Ici aussi, nous devrions pouvoir limiter la liste des protocoles selon l'étude choisie ou l'utilisateur de l'application.
-
 [![métadonnées utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png "métadonnées utilisateur"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png){: data-mediabox="lightbox-gallery" data-title="métadonnées utilisateur"} 
 
+#### Extrait de la feuille survey
+
+| **type**                  | **name**        | **label**          | **required** | **appearance**             |
+| ------------------------- | --------------- | ------------------ | ------------ | -------------------------- |
+| begin group               | protocole_etude | Protocole et étude |              | field_list                 |
+| select_one list_etude     | id_etude        | Etude              | yes          | quick search('etudes')     |
+| select_one list_protocole | id_protocole    | Protocole          | yes          | quick search('protocoles') |
+| end group                 |                 |                    |              |                            |
+
+#### Extrait de la feuille choices
+
+| **list_name**  | **name**     | **label** |
+| -------------- | ------------ | --------- |
+| list_etude     | nom_etude_id | nom_etude |
+| list_protocole | libelle_id   | libelle   |
+
+A terme nous aimerions générer dynamiquement et régulièrement la listedes études pour ne faire apparaître que les études en cours et pourquoi pas seulement celles qui concernent l’utilisateur de l'application.
+La même chose pourrait être envisagée pour les protocoles.
 Une fois ces paramètres de "session" renseignés, nous pouvons commencer la saisie de données proprement dite.
 
 ### Création d'une localité
-Il s'agira d'un point, d'une ligne ou d'un polygone.
+Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans la première partie de cet article.
 
 [![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png){: data-mediabox="lightbox-gallery" data-title="Choix du type de géoréférencement de l'emplacement courant"} 
 
 Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, que vous pouvez aussi dessiner à la main sur l'écran. L'automatisation peut être paramétrée selon la distance maximale ou le temps de parcours entre deux points. Une précision minimale du GPS peut aussi être configurée dans le formualire pour interdire des localisation trop peu précises.
-
 [![localisation assistée par le GPS du téléphone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png "localisation assistée par le GPS du téléphone"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png){: data-mediabox="lightbox-gallery" data-title="localisation assistée par le GPS du téléphone"} 
+[![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: data-mediabox="lightbox-gallery" data-title="coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement"} 
 
- ![coordonnées du point GPS collecté et précision du captuer lors de l'enregistrement.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: .img-left }
+#### Extrait de la fauille survey
+  
+| **type**               | **name**                  | **label**                     | **calculation**                              | **required** | **appearance**      | **default** | **relevant**                                | **choice_filter**                           | **bind::odk:length** | **body::accuracyThreshold** |
+| ---------------------- | ------------------------- | ----------------------------- | -------------------------------------------- | ------------ | ------------------- | ----------- | ------------------------------------------- | ------------------------------------------- | -------------------- | --------------------------- |
+| begin repeat           | emplacements              | Emplacements                  |                                              |              |                     |             |                                             |                                             |                      |                             |
+| begin group            | localites                 | ${heure_localite}             |                                              |              |                     |             |                                             |                                             |                      |                             |
+| begin group            | loc                       |                               |                                              |              | field-list          |             |                                             |                                             |                      |                             |
+| calculate              | heure_localite            |                               | concat(‘à ‘,format-date-time(now(),"%H:%M")) |              |                     |             |                                             |                                             |                      |                             |
+| select_one methode_geo | methode_geo               | méthode de géoréférencement ? |                                              | yes          |                     | point       | contains(${preferences_utilisateur},filter) | contains(${preferences_utilisateur},filter) |                      |                             |
+| decimal                | longitude                 | longitude (WGS 84)            |                                              | yes          |                     |             | ${methode_geo} = 'long_lat'                 |                                             |                      |                             |
+| decimal                | latitude                  | latitude (WGS 84)             |                                              | yes          |                     |             | ${methode_geo} = 'long_lat'                 |                                             |                      |                             |
+| geopoint               | point_auto                | point automatique             |                                              | yes          |                     |             | ${methode_geo} = 'point_auto'               |                                             |                      | 5                           |
+| geopoint               | point                     | point sur carte               |                                              | yes          | quick placement-map |             | ${methode_geo} = 'point'                    |                                             |                      |                             |
+| geotrace               | ligne                     | ligne                         |                                              | yes          |                     |             | ${methode_geo} = 'ligne'                    |                                             | 10000                |                             |
+| calculate              | longueur_ligne            |                               | distance(${ligne})                           |              |                     |             | ${methode_geo} = 'ligne’                    |                                             |                      |                             |
+| calculate              | longueur_ligne_arrondie   |                               | round(${longueur_ligne},2)                   |              |                     |             | ${methode_geo} = 'ligne’                    |                                             |                      |                             |
+| geoshape               | polygone                  | polygone                      |                                              | yes          |                     |             | ${methode_geo} = 'polygone’                 |                                             | 10000                |                             |
+| calculate              | surface_polygone          |                               | area(${polygone})                            |              |                     |             | ${methode_geo} = 'polygone’                 |                                             |                      |                             |
+| calculate              | surface_polygone_arrondie |                               | round(${surface_polygone}, 2)                |              |                     |             | ${methode_geo} = 'polygone’                 |                                             |                      |                             |
+| end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+|                        |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+| end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+| end repeat             |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+
+Le **begin repeat** démarre une boucle de création de localité. Le groupe qui suit directement ce reapeat encapsule l'ensemble des éléments contenus dans la boucle et pemrettra de nommer chaue instanciation de la boucle, ici avec la valeur du champ calculé **heure_localite**
+
+#### Extrait de la feuille choices
+
+| **list_name** | **name**   | **label**             | **filter** |
+| ------------- | ---------- | --------------------- | ---------- |
+| methode_geo   | point_auto | point automatique     | point      |
+| methode_geo   | point      | point sur une carte   | point      |
+| methode_geo   | ligne      | ligne                 | line       |
+| methode_geo   | polygone   | polygone              | polygon    |
+| methode_geo   | long_lat   | Saisie de coordonnées | point      |
 
 ### Saisie d'une ou plusieurs observations à cet endroit
 Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observations que nous le souhaitons, de chacun des types d'observations autorisés dans les paramétrages du formulaire.
