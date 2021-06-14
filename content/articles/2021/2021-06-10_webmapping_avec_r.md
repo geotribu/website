@@ -587,6 +587,7 @@ Bon courage !
 ----
 
 ## Auteur
+
 ### Romain Lacroix
 
 Ingénieur SIG mutualisé entre différents organismes vitivinicoles de la Vallée du Rhône, mon travail consiste à simplifier le travail administratif d'une petite dizaine de milliers d'exploitations agricoles à travers des technologies SIG et d'assister les études techniques et expérimentations réalisées en viticulture et oenologie.
