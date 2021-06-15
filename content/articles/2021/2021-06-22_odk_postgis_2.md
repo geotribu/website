@@ -97,7 +97,14 @@ Voici l'extrait correspondant de la feuille survey (le principe est le mêm pour
 
 Le dernier écran permet de choisir le nombre de caractères à saisir dans le recherche des espèces avant de déclencher l'interrogation du référentiel. 3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB") . Notez que la dernière question n'est pas visible et nécessite de scroller l'écran. La version à paraitre de Collect va permettre de [regouper plusieurs questions proposant des réponses identiques sous la forme d'une grille](https://docs.getodk.org/form-question-types/#grid-of-selects-on-the-same-screen) et permettre ansi un gain de place.
 
-Une fois les paramétrages vérifiés et ou modifiés l'utilisateur peut choisir l'étude pour laquelle le relevé est effectué
+L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur". C'est un champ de type **calculate** qui réalise la concaténation dans la colonne **calculation**
+
+| **type**  | **name**                | **calculation**                                              |
+| --------- | ----------------------- | ------------------------------------------------------------ |
+| calculate | preferences_utilisateur | concat(if(${utiliser_geopoint} = 'true','point',''),if(${utiliser_geotrace} = 'true','line',''),if(${utiliser_geoshape} = 'true','polygon',''),if(${animalia} = 'true','animalia',''),if(${plantae} = 'true','plantae',''),if(${fungi} = 'true','fungi',''),if(${habitat} = 'true','habitat',''),if(${pression_menace} = 'true','pression_menace',''),if(${observation_generale} = 'true','observation_generale',''),${nb_lettres}) |
+
+
+Une fois les paramétrages vérifiés et ou modifiés l'utilisateur peut choisir l'étude pour laquelle le relevé est effectué.
 
 ### Choix de l'étude et du protocole
 
@@ -146,7 +153,7 @@ Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, 
 | begin group            | localites                 | ${heure_localite}             |                                              |              |                     |             |                                             |                                             |                      |                             |
 | begin group            | loc                       |                               |                                              |              | field-list          |             |                                             |                                             |                      |                             |
 | calculate              | heure_localite            |                               | concat(‘à ‘,format-date-time(now(),"%H:%M")) |              |                     |             |                                             |                                             |                      |                             |
-| select_one methode_geo | methode_geo               | méthode de géoréférencement ? |                                              | yes          |                     | point       | contains(${preferences_utilisateur},filter) | contains(${preferences_utilisateur},filter) |                      |                             |
+| select_one methode_geo | methode_geo               | méthode de géoréférencement ? |                                              | yes          |                     | point       |                                             | contains(${preferences_utilisateur},filter) |                      |                             |
 | decimal                | longitude                 | longitude (WGS 84)            |                                              | yes          |                     |             | ${methode_geo} = 'long_lat'                 |                                             |                      |                             |
 | decimal                | latitude                  | latitude (WGS 84)             |                                              | yes          |                     |             | ${methode_geo} = 'long_lat'                 |                                             |                      |                             |
 | geopoint               | point_auto                | point automatique             |                                              | yes          |                     |             | ${methode_geo} = 'point_auto'               |                                             |                      | 5                           |
@@ -162,7 +169,12 @@ Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, 
 | end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
 | end repeat             |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
 
-Le **begin repeat** démarre une boucle de création de localité. Le groupe qui suit directement ce reapeat encapsule l'ensemble des éléments contenus dans la boucle et pemrettra de nommer chaue instanciation de la boucle, ici avec la valeur du champ calculé **heure_localite**
+Le **begin repeat** démarre une boucle de création de localités.
+Le groupe qui suit directement ce repeat encapsule l'ensemble des éléments contenus dans la boucle et pemrettra de nommer chaque instance de la boucle, ici avec la valeur du champ calculé **heure_localite**.
+Cela nous sera utile pour rerouver une donnée saisie plus tôt.
+La colonne **choice_filter**, utilisée pour la question **methode_geo** permet de ne proposr que les options de la feuille **choices** pour les quelles la valeur "filter" est contenue dans les "préferences utilisateur" camlculée plus haut (écrans 2 et 3).
+La colonne **relevant** permet de mentionner si la question est pertinente, et dans quel contexte. PUn test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut :
+
 
 #### Extrait de la feuille choices
 
