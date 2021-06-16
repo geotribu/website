@@ -102,17 +102,29 @@ theme:
   language: 'fr'
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
-    accent: deep-orange
-    primary: teal
-    scheme: preference
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep-orange
+      toggle:
+        icon: material/weather-sunny
+        name: Basculer en mode sombre
 
-# Integrations with 3rd party
-google_analytics:
-  - !!python/object/apply:os.getenv ["MKDOCS_GOOGLE_ANALYTICS_KEY"]
-  - 'auto'
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: deep-orange
+      toggle:
+        icon: material/weather-night
+        name: Basculer en mode clair
 
 # Customization
 extra:
+  analytics:
+    provider: google
+    property: !!python/object/apply:os.getenv ["MKDOCS_GOOGLE_ANALYTICS_KEY"]
   comments_url: https://comments.geotribu.fr  # isso url
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
