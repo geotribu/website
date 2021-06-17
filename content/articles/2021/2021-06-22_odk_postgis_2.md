@@ -2,10 +2,10 @@
 title: "Open Data Kit pour la collecte de données géographiques dans PostGIS (2/3)"
 authors: ["Mathieu BOSSAERT"]
 categories: ["article"]
-date: "2021-06-08 10:20"
+date: "2021-06-22 10:20"
 description: "Premier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_and_postgresql.png"
-tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android	"
+tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 ---
 
 # ODK pour la collecte de données géo dans PostGIS (2/3)
@@ -20,11 +20,12 @@ Aprés vous avoir présenté la place les outils proposés par ODK et la place q
 Des extraits du "XLSForm" du formualaire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "survey" et de la feuille de calcul "Choices". Dans ces extraits, nous n'avons conservé que les colonnes renseignées pour en faciliter la lecture.
 Le fichier XLSform de notre formulaire est disponible en [bas de l'article](#ressources_complémentaires).
 
-Dans un dernier article, nous verrson comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe à travers les différents outils que nous utilisons.
+Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe à travers les différents outils que nous utilisons.
 
-<!--[1ère partie : Introduction à ODK :fontawesome-solid-step-backward:](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
-[3ème partie : Récupération des données dans notre SI :fontawesome-solid-step-forward:](#){: .md-button }
+[1ère partie : Introduction à ODK :fontawesome-solid-step-backward:](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
+<!--[3ème partie : Récupération des données dans notre SI :fontawesome-solid-step-forward:](#){: .md-button }
 {: align=middle }-->
+{: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -38,7 +39,7 @@ Cette présentation faite au FOSS4G-fr de 2018 reprend l'historique de notre SI 
 
 [16mai_Cauchy_Bossaert-CENLR_0.pdf|attachment](upload://u9ABQjmft6uNNSniqHtUMPstwJz.pdf) (3.0 MB)
 
-### Logique du formulaire
+## Logique du formulaire
 
 Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Chaque révision successive a apporté son lot d'amélioration, et des question "adaptatives" dont les réponses possibles dépendaient par exemple de l'espèce sélectionnée (ex. pas de têtard si on a vu un oiseau). EN 2019, avec le travail de Jean Baïsez, le formulaire est devenu une sorte de carnet de note, dans lequel on peut noter ses observations d'espèces et d'habitats, mais aussi des pressions ou des menaces sur les milieux naturels. Toutes ses données sont géoréférencées (point, lignes ou polygones) et peuvent être documentées de photos prise par le téléphone. Ces photos peuvent être annotées.
 
@@ -67,6 +68,7 @@ Les fonctionnalités désactivées ici seront masquées pendant l'utilisation du
 **Au fur et à mesure de la saisie, l’icône de la disquette permet d'enregistrer le formulaire en cours sur le téléphone.**
 
 ### Écran de paramétrage n°1 -> l'identité de l’utilisateur
+
 Les champs sont remplis par défaut avec les valeurs saisies dans les paramètres généraux de l'application
 
 [![Métadonnées relatives à l'utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
@@ -75,11 +77,12 @@ Les champs sont remplis par défaut avec les valeurs saisies dans les paramètre
 
 ### Écran de paramétrage n°2 -> types de géométries créées
 
- * points
- * lignes
- * polygones
+* points
+* lignes
+* polygones
 
 Voici l'extrait correspondant de la feuille survey (le principe est le mêm pour l'écran précédent et le 3ème) :
+
 * le groupe (begin_group et end_group) permet de faire apparaitre les questions dans un même écran
 * les questions sont des select_one (une seule option à choisir)
 * la liste utilisée dans la feuille choicies s'appelle "boolean"
@@ -101,7 +104,6 @@ L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferen
 | **type**  | **name**                | **calculation**                                              |
 | --------- | ----------------------- | ------------------------------------------------------------ |
 | calculate | preferences_utilisateur | concat(if(${utiliser_geopoint} = 'true','point',''),if(${utiliser_geotrace} = 'true','line',''),if(${utiliser_geoshape} = 'true','polygon',''),if(${animalia} = 'true','animalia',''),if(${plantae} = 'true','plantae',''),if(${fungi} = 'true','fungi',''),if(${habitat} = 'true','habitat',''),if(${pression_menace} = 'true','pression_menace',''),if(${observation_generale} = 'true','observation_generale',''),${nb_lettres}) |
-
 
 Une fois les paramétrages vérifiés et ou modifiés l'utilisateur peut choisir l'étude pour laquelle le relevé est effectué.
 
@@ -137,6 +139,7 @@ La même chose pourrait être envisagée pour les protocoles.
 Une fois ces paramètres de "session" renseignés, nous pouvons commencer la saisie de données proprement dite.
 
 ### Création d'une localité
+
 Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans la première partie de cet article.
 
 [![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png){: data-mediabox="lightbox-gallery" data-title="Choix du type de géoréférencement de l'emplacement courant"}
@@ -175,7 +178,6 @@ Cela nous sera utile pour rerouver une donnée saisie plus tôt.
 La colonne **choice_filter**, utilisée pour la question **methode_geo** permet de ne proposer que les options de la feuille **choices** pour lesquelles la valeur "filter" est contenue dans les "préferences utilisateur" calculée plus haut (écrans 2 et 3).
 La colonne **relevant** permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correpondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
 
-
 #### Extrait de la feuille choices
 
 | **list_name** | **name**   | **label**             | **filter** |
@@ -187,6 +189,7 @@ La colonne **relevant** permet de mentionner si la question est pertinente (à a
 | methode_geo   | long_lat   | Saisie de coordonnées | point      |
 
 ### Saisie d'une ou plusieurs observations à cet endroit
+
 Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observations que nous le souhaitons, de chacun des types d'observations autorisés dans les paramétrages du formulaire.
 
 [![choix du type d'observation à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_type_d_observation.png "choix du type d'observation à renseigner"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_type_d_observation.png){: data-mediabox="lightbox-gallery" data-title="choix du type d'observation à renseigner"}
@@ -196,11 +199,13 @@ Commençons par une espèce végétale
 [![recherche d'une espèce végétale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_autocompletion.png "recherche d'une espèce végétale"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_autocompletion.png){: data-mediabox="lightbox-gallery" data-title="recherche d'une espèce végétale"}
 
 ### Propositions des taxons de référence et des synonymes qui correspondent aux lettres tapées
+
 D'abord les taxons de rangs supérieurs puis les espèces et sous espèces.
 
 [![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png){: data-mediabox="lightbox-gallery" data-title="propositions de taxons correspondant à la recherche"}
 
 ### Renseignement de l'effectif observé
+
 L'espèce mentionnée a-t-elle été observée ?
 [![l'espèce a-t-elle été observée ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/le_taxon_a_t_il_ete_observe.png "l'espèce a-t-elle été observée ?"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/le_taxon_a_t_il_ete_observe.png){: data-mediabox="lightbox-gallery" data-title="l'espèce a-t-elle été observée ?"}
 Si oui, les écrans suivants (ou leurs homologues pour la Faune sont affichés)
@@ -224,6 +229,7 @@ L'observation pourra être retrouvée dans la navigation du formulaire, avec l�
 [![prendre un photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png "prendre un photo"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png){: data-mediabox="lightbox-gallery" data-title="prendre un photo"}
 
 ### Annotation de la photo
+
 Cela peut être utile pour les photos de site dans le cas d'observations de type pression/menace
 [Photos mobilisables dans QGIS par la suite](https://si.cen-occitanie.org/?p=191)
 
@@ -284,7 +290,7 @@ Les données sont alors automatiquement (c'est le comportement par défaut déso
 
 ## Ressources complémentaires
 
-- le formualaire complet, prêt à l'emploi.
+- le formulaire complet, prêt à l'emploi.
 - ...
 
 ----
