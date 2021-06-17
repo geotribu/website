@@ -306,7 +306,7 @@ Aprés des études de biologie, d'écologie, et d'informatique, j'ai intégré l
 J'y suis désormais co-responsable de la "Geomateam" qui compte 5 personnes, pas toutes à temps plein sur la thématique, au sein d'une équipe "Occitane" de 80 salariés, répartis sur 14 sites.
 
 PostgreSQL est le pillier strucurant de notre SI depuis 2006. Les besoins de la structure ont évolués avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers georezo notament, n'ont jamais été avares de conseils.
-J'ai intégré il y a quelques années l'équipe de georezo et j'y assure la fonction de trésorier.
+J'ai intégré il y a quelques années l'équipe de GeoRezo et j'y assure la fonction de trésorier.
 
 Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement celui d'[ODK](https://forum.getodk.org))
 
