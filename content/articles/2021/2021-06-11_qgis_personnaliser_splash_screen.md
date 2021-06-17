@@ -49,6 +49,12 @@ L'image doit respecter quelques prérequis :
 
 Certes, ce dernier point n'est pas vraiment un pré-requis mais vu que la plupart d'entre nous ne payons pas pour ce merveilleux logiciel, on peut bien le créditer correctement !
 
+### Utiliser les images sources du projet
+
+Peur de la page blanche ? Ou de ta propre inspiration ?  
+
+Le [projet QGIS](https://github.com/qgis/QGIS/tree/master/images/splash/) référence un [dossier Google Drive](https://drive.google.com/drive/folders/0Bwc-5JFVTnfIMUwyLTU2cjI4MEU?usp=sharing) dans lequel on trouve toutes les sources des splash screens (y compris les fichiers gimp `.xcf`). La police référencée est [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro?preview.text_type=custom) pour le lettrage QGIS.
+
 ----
 
 ## Activer la personnalisation de l'interface
