@@ -17,7 +17,7 @@ tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android	"
 ![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
 
 Aprés vous avoir présenté la place les outils proposés par ODK et la place qu'ils occupent dans notre SI centré sur PostGIS, ce second article illustre à travers notre formulaire généraliste l'utilisation des différents "widgets" à notre disposition.
-Des extraits du "XLSForm" du formualire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "surevey" et de la feuille de calcul "Choices".
+Des extraits du "XLSForm" du formualaire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "survey" et de la feuille de calcul "Choices". Dans ces extraits, nous n'avons conservé que les colonnes renseignées pour en faciliter la lecture.
 Le fichier XLSform de notre formulaire est disponible en [bas de l'article](#ressources_complémentaires).
 
 Dans un dernier article, nous verrson comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe à travers les différents outils que nous utilisons.
@@ -74,17 +74,16 @@ Les champs sont remplis par défaut avec les valeurs saisies dans les paramètre
 [![Préférences de l'utilisateur - Types et thématiques des données à saisir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}{: loading=lazy width=300 }]
 
 ### Écran de paramétrage n°2 -> types de géométries créées
+
  * points
-
  * lignes
-
  * polygones
 
 Voici l'extrait correspondant de la feuille survey (le principe est le mêm pour l'écran précédent et le 3ème) : 
 * le groupe (begin_group et end_group) permet de faire apparaitre les questions dans un même écran
 * les questions sont des select_one (une seule option à choisir)
 * la liste utilisée dans la feuille choicies s'appelle "boolean"
-* et par défaut (default) la question prend la dernière valeur enregistrée si elle existe, sinon "true"
+* et par défaut (colonne **default**) la question prend la dernière valeur enregistrée (**${last-saved#question_concernee**} elle existe, sinon "true"
 
 | **type**           | **name**          | **label** | **required** | **default**                                      |
 | ------------------ | ----------------- | --------- | ------------ | ------------------------------------------------ |
@@ -108,8 +107,9 @@ Une fois les paramétrages vérifiés et ou modifiés l'utilisateur peut choisir
 
 ### Choix de l'étude et du protocole
 
-Ces deux référentiels sont gérés dans des fichiers csv externes associés au formulaire. Les fichiers sont mentionnés dans la colonne appaerence des lignes 34 et 3 -> search('etudes') et search('protocole').
-La feuille de calcul choices nous renseigne sur la structure de ces csv. Les colonnes nom_etude_id et libelle_id contiennent les identifiants à stocker, tandis que les colonnes nom_etude et libelle contiennent les "noms" à afficher dans les listes.
+Ces deux référentiels sont gérés dans des fichiers csv externes associés au formulaire. Les fichiers sont mentionnés dans la colonne **appearence** des lignes 2 et 3 de l'extrait ci-dessous (search('etudes') et search('protocole')).
+L'utilisation combinée de l'apparence **quick** permet de passer automatiquement à la question suivante quand une option est selectionnée.
+La feuille de calcul choices nous renseigne sur la structure de ces fichiers csv. Les colonnes nom_etude_id et libelle_id contiennent les identifiants à stocker, tandis que les colonnes nom_etude et libelle contiennent les "noms" à afficher dans les listes.
 Cela permet de les mettre à jour sur le téléphone sans avoir à mettre à jour le formulaire sur le serveur.
 Nous verrons plus tard avec le référentiel taxonomique que le stockage externe de ces référentiels nous offre des possibilités de recherche intéressantes. 
 
@@ -118,12 +118,12 @@ Nous verrons plus tard avec le référentiel taxonomique que le stockage externe
 
 #### Extrait de la feuille survey
 
-| **type**                  | **name**        | **label**          | **required** | **appearance**             |
-| ------------------------- | --------------- | ------------------ | ------------ | -------------------------- |
-| begin group               | protocole_etude | Protocole et étude |              | field_list                 |
-| select_one list_etude     | id_etude        | Etude              | yes          | quick search('etudes')     |
-| select_one list_protocole | id_protocole    | Protocole          | yes          | quick search('protocoles') |
-| end group                 |                 |                    |              |                            |
+|   | **type**                  | **name**        | **label**          | **required** | **appearance**             |
+| - | ------------------------- | --------------- | ------------------ | ------------ | -------------------------- |
+| 1 | begin group               | protocole_etude | Protocole et étude |              |                            |
+| 2 | select_one list_etude     | id_etude        | Etude              | yes          | quick search('etudes')     |
+| 3 | select_one list_protocole | id_protocole    | Protocole          | yes          | quick search('protocoles') |
+| 4 | end group                 |                 |                    |              |                            |
 
 #### Extrait de la feuille choices
 
@@ -147,33 +147,33 @@ Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, 
 
 #### Extrait de la fauille survey
   
-| **type**               | **name**                  | **label**                     | **calculation**                              | **required** | **appearance**      | **default** | **relevant**                                | **choice_filter**                           | **bind::odk:length** | **body::accuracyThreshold** |
-| ---------------------- | ------------------------- | ----------------------------- | -------------------------------------------- | ------------ | ------------------- | ----------- | ------------------------------------------- | ------------------------------------------- | -------------------- | --------------------------- |
-| begin repeat           | emplacements              | Emplacements                  |                                              |              |                     |             |                                             |                                             |                      |                             |
-| begin group            | localites                 | ${heure_localite}             |                                              |              |                     |             |                                             |                                             |                      |                             |
-| begin group            | loc                       |                               |                                              |              | field-list          |             |                                             |                                             |                      |                             |
-| calculate              | heure_localite            |                               | concat(‘à ‘,format-date-time(now(),"%H:%M")) |              |                     |             |                                             |                                             |                      |                             |
-| select_one methode_geo | methode_geo               | méthode de géoréférencement ? |                                              | yes          |                     | point       |                                             | contains(${preferences_utilisateur},filter) |                      |                             |
-| decimal                | longitude                 | longitude (WGS 84)            |                                              | yes          |                     |             | ${methode_geo} = 'long_lat'                 |                                             |                      |                             |
-| decimal                | latitude                  | latitude (WGS 84)             |                                              | yes          |                     |             | ${methode_geo} = 'long_lat'                 |                                             |                      |                             |
-| geopoint               | point_auto                | point automatique             |                                              | yes          |                     |             | ${methode_geo} = 'point_auto'               |                                             |                      | 5                           |
-| geopoint               | point                     | point sur carte               |                                              | yes          | quick placement-map |             | ${methode_geo} = 'point'                    |                                             |                      |                             |
-| geotrace               | ligne                     | ligne                         |                                              | yes          |                     |             | ${methode_geo} = 'ligne'                    |                                             | 10000                |                             |
-| calculate              | longueur_ligne            |                               | distance(${ligne})                           |              |                     |             | ${methode_geo} = 'ligne’                    |                                             |                      |                             |
-| calculate              | longueur_ligne_arrondie   |                               | round(${longueur_ligne},2)                   |              |                     |             | ${methode_geo} = 'ligne’                    |                                             |                      |                             |
-| geoshape               | polygone                  | polygone                      |                                              | yes          |                     |             | ${methode_geo} = 'polygone’                 |                                             | 10000                |                             |
-| calculate              | surface_polygone          |                               | area(${polygone})                            |              |                     |             | ${methode_geo} = 'polygone’                 |                                             |                      |                             |
-| calculate              | surface_polygone_arrondie |                               | round(${surface_polygone}, 2)                |              |                     |             | ${methode_geo} = 'polygone’                 |                                             |                      |                             |
-| end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
-|                        |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
-| end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
-| end repeat             |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+| -- | **type**               | **name**                  | **label**                     | **calculation**                              | **required** | **appearance**      | **default** | **relevant**                                | **choice_filter**                           | **bind::odk:length** | **body::accuracyThreshold** |
+| -- | ---------------------- | ------------------------- | ----------------------------- | -------------------------------------------- | ------------ | ------------------- | ----------- | ------------------------------------------- | ------------------------------------------- | -------------------- | --------------------------- |
+| 1  | begin repeat           | emplacements              | Emplacements                  |                                              |              |                     |             |                                             |                                             |                      |                             |
+| 2  | begin group            | localites                 | ${heure_localite}             |                                              |              |                     |             |                                             |                                             |                      |                             |
+| 3  | begin group            | loc                       |                               |                                              |              | field-list          |             |                                             |                                             |                      |                             |
+| 4  | calculate              | heure_localite            |                               | concat(‘à ‘,format-date-time(now(),"%H:%M")) |              |                     |             |                                             |                                             |                      |                             |
+| 5  | select_one methode_geo | methode_geo               | méthode de géoréférencement ? |                                              | yes          |                     | point       |                                             | contains(${preferences_utilisateur},filter) |                      |                             |
+| 6  | decimal                | longitude                 | longitude (WGS 84)            |                                              | yes          |                     |             | ${methode_geo} = 'long_lat'                 |                                             |                      |                             |
+| 7  | decimal                | latitude                  | latitude (WGS 84)             |                                              | yes          |                     |             | ${methode_geo} = 'long_lat'                 |                                             |                      |                             |
+| 8  | geopoint               | point_auto                | point automatique             |                                              | yes          |                     |             | ${methode_geo} = 'point_auto'               |                                             |                      | 5                           |
+| 9  | geopoint               | point                     | point sur carte               |                                              | yes          | quick placement-map |             | ${methode_geo} = 'point'                    |                                             |                      |                             |
+| 10 | geotrace               | ligne                     | ligne                         |                                              | yes          |                     |             | ${methode_geo} = 'ligne'                    |                                             | 10000                |                             |
+| 11 | calculate              | longueur_ligne            |                               | distance(${ligne})                           |              |                     |             | ${methode_geo} = 'ligne’                    |                                             |                      |                             |
+| 12 | calculate              | longueur_ligne_arrondie   |                               | round(${longueur_ligne},2)                   |              |                     |             | ${methode_geo} = 'ligne’                    |                                             |                      |                             |
+| 13 | geoshape               | polygone                  | polygone                      |                                              | yes          |                     |             | ${methode_geo} = 'polygone’                 |                                             | 10000                |                             |
+| 14 | calculate              | surface_polygone          |                               | area(${polygone})                            |              |                     |             | ${methode_geo} = 'polygone’                 |                                             |                      |                             |
+| 15 | calculate              | surface_polygone_arrondie |                               | round(${surface_polygone}, 2)                |              |                     |             | ${methode_geo} = 'polygone’                 |                                             |                      |                             |
+| 16 | end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+| 17 |                        |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+| 18 | end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+| 19 | end repeat             |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
 
 Le **begin repeat** démarre une boucle de création de localités.
-Le groupe qui suit directement ce repeat encapsule l'ensemble des éléments contenus dans la boucle et pemrettra de nommer chaque instance de la boucle, ici avec la valeur du champ calculé **heure_localite**.
+Le groupe qui suit directement ce repeat (ligne n°2) encapsule l'ensemble des éléments contenus dans la boucle et permettra de nommer chaque instance de la boucle, ici avec la valeur du champ calculé **heure_localite**.
 Cela nous sera utile pour rerouver une donnée saisie plus tôt.
-La colonne **choice_filter**, utilisée pour la question **methode_geo** permet de ne proposr que les options de la feuille **choices** pour les quelles la valeur "filter" est contenue dans les "préferences utilisateur" camlculée plus haut (écrans 2 et 3).
-La colonne **relevant** permet de mentionner si la question est pertinente, et dans quel contexte. PUn test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut :
+La colonne **choice_filter**, utilisée pour la question **methode_geo** permet de ne proposer que les options de la feuille **choices** pour lesquelles la valeur "filter" est contenue dans les "préferences utilisateur" calculée plus haut (écrans 2 et 3).
+La colonne **relevant** permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correpondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché. 
 
 
 #### Extrait de la feuille choices
