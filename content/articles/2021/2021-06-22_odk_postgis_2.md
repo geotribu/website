@@ -320,7 +320,7 @@ Nous verrons dans le prochain article comment les données sont récupérées et
 
 ## Ressources complémentaires
 
-* [le formulaire complet, prêt à l'emploi]()
+* [le formulaire complet, prêt à l'emploi](https://forum.getodk.org/uploads/short-url/dqspKIp4h5YmKJhGCe6ZgOL85R7.zip)
 * [le script sql de génération du référentiel](https://forum.getodk.org/uploads/short-url/vBGcLFxLAjCACOLbrC7F2xaMV4X.txt)
 
 ----
