@@ -17,10 +17,13 @@ tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 ![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
 
 Aprés vous avoir présenté la place les outils proposés par ODK et la place qu'ils occupent dans notre SI centré sur PostGIS, ce second article illustre à travers notre formulaire généraliste l'utilisation des différents "widgets" à notre disposition.
-Des extraits du "XLSForm" du formualaire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "survey" et de la feuille de calcul "Choices". Dans ces extraits, nous n'avons conservé que les colonnes renseignées pour en faciliter la lecture.
-Le fichier XLSform de notre formulaire est disponible en [bas de l'article](#ressources_complémentaires).
+Des extraits du "XLSForm" du formualaire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "survey" et de la feuille de calcul "choices".
 
-Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe à travers les différents outils que nous utilisons.
+Dans ces extraits, nous n'avons conservé que les colonnes renseignées pour en faciliter la lecture et noux avons numéroté les lignes.
+
+Le lien vers fichier XLSform de notre formulaire est disponible en [bas de l'article](#ressources_complémentaires).
+
+Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans le précédent article.
 
 [1ère partie : Introduction à ODK :fontawesome-solid-step-backward:](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
 <!--[3ème partie : Récupération des données dans notre SI :fontawesome-solid-step-forward:](#){: .md-button }
@@ -40,13 +43,23 @@ Cette présentation faite au FOSS4G-fr de 2018 reprend l'historique de notre SI 
 
 ## Logique du formulaire
 
-Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Chaque révision successive a apporté son lot d'amélioration, et des question "adaptatives" dont les réponses possibles dépendaient par exemple de l'espèce sélectionnée (ex. pas de têtard si on a vu un oiseau). EN 2019, avec le travail de Jean Baïsez, le formulaire est devenu une sorte de carnet de note, dans lequel on peut noter ses observations d'espèces et d'habitats, mais aussi des pressions ou des menaces sur les milieux naturels. Toutes ses données sont géoréférencées (point, lignes ou polygones) et peuvent être documentées de photos prise par le téléphone. Ces photos peuvent être annotées.
+Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Elle résultait d'un "workshop" orgnaisé avec les collègues du CEN Rhône-Alpes (Rémy Clément, Laurent Poulin et Guillaume Costes) qui maitrisaient la création de formulaire. Je m'étais alors occupé de la récupération des données collectées dans PostGIS..
 
-EN 2021, le système de préférences a été amélioré et les attentes évoquées par les collègues à la fin de la saison 2020 ont été satisfaites.
+Chaque révision successive a apporté son lot d'améliorations, et les questions sont devenues plus "adaptatives". Les réponses possibles dépendaient par exemple de l'espèce sélectionnée (ex. pas de têtard si on a vu un oiseau). 
 
-Notre formulaire est constitué de deux boucles imbriquées. Aprés avoir renseigné les informations de base du relevé (contexte, observateur...), il nous est proposé de renseigner une localité (objet géographique), puis de renseigner une ou plusieurs observations sur cette localité. Aprés la dernière observation de la localité courante, il est proposé de saisir une nouvelle localité...
+En 2019, avec le travail de Jean Baïsez, le formulaire s'est enrichi : aux observations d'espèces et d'habitats, ont été ajoutées la description des pressions ou des menaces sur les milieux naturels.
 
-Voici un schéma illustrant la logique du formulaire, que l'on peut résumer ainsi :
+Toutes ses données sont géoréférencées (point, lignes ou polygones) et peuvent être documentées par des photos prise par le téléphone. Ces dernières peuvent être annotées.
+
+En 2021, le système de préférences a été amélioré et les attentes évoquées par les collègues à la fin de la saison 2020 ont été satisfaites (navigaution dans les données collectées, recherche des taxons dans le référentiel taxonomique).
+
+Aucune de ces évolutions n'a nécessité de développement de notre part, elles ont certes été possibles grace aux évolutions de *Collect*, mais surtout par l'apporpriation du standard XLSform. 
+
+Notre formulaire est constitué de deux boucles imbriquées : aprés avoir renseigné les informations de base du relevé (contexte, observateur...), il nous est proposé de créer une localité (objet géographique), puis d'y renseigner une ou plusieurs observations.
+
+Aprés la dernière observation de la localité courante, il est proposé de saisir une nouvelle localité... Si c'était la dernière localité, le formualire est "finalisé" et peut être envoyé au serveur.
+
+Voici un schéma illustrant la logique du formulaire :
 
 [![Logique du formulaire](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg "Logique du formulaire"){: loading=lazy width=600 }](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg){: data-mediabox="lightbox-gallery" data-title="Logique du formulaire"}
 
@@ -60,10 +73,12 @@ Voici un schéma illustrant la logique du formulaire, que l'on peut résumer ain
 
 [![Choix du formulaire à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png "Choix du formuliare à renseigner"){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
 
-Les 3 premiers écrans présentent le paramétrage de l'application et demandent à l'utilisateur ses préférences pour la session qu'il démarre.
-A la première utilisation du formulaire, les fonctionnalités seront toutes activées par défaut. Libre à chacun de désactiver celles qui lui semblent provisoirement ou définitivement inutiles.
-A l'utilisation suivante, chacune des fonctionnalités sera proposée dans l'état d'activation qui était le sien lors de la précédente utilisation du formulaire. Il sera là encore possible de valider ou modifier chacun de ces choix.
-Les fonctionnalités désactivées ici seront masquées pendant l'utilisation du formulaire.
+Les 3 premiers écrans du formulaire a proprement parler permettent de le paramétrer et demandent à l'utilisateur ses préférences pour la session qu'il démarre.
+
+A la première utilisation du formulaire, les fonctionnalités seront toutes activées par défaut. Libre à chacun de désactiver celles qui lui semblent inutiles.
+
+A l'utilisation suivante, chacune des options sera proposée dans l'état d'activation qui était le sien lors de la précédente utilisation du formulaire. Il sera là encore possible de valider ou modifier chacun de ces choix.
+Les fonctionnalités à cette étape seront masquées pendant l'utilisation du formulaire.
 
 [![Métadonnées relatives à l'utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
 [![Préférences de l'utilisateur - Choix des possibilités cartographiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
@@ -74,19 +89,19 @@ Les fonctionnalités désactivées ici seront masquées pendant l'utilisation du
 
 ### Écran de paramétrage n°1 -> l'identité de l’utilisateur
 
-Le nom de l'utilisatuer et sont adresse email. Cette dernière nous sert entre autre à identifier l'utilisteur dans notre SI métier.
+Le nom de l'utilisateur et sont adresse email sont demandés. L'adresse email nous sert à identifier l'utilisteur dans notre SI métier.
 Ces deux champs sont remplis par défaut avec les valeurs saisies dans les paramètres généraux de l'application. S'ils l'utilistauer ne les a pas renseigné dans l'application, il devra les saisir ici.
 
 ### Écran de paramétrage n°2 -> types de géométries créées
 
 Quels types de géométrie sont suceptibles d'être créées au cours de la session ? Des points ? Des lignes ? Des polygones ?
 
-Voici l'extrait correspondant de la feuille survey (le principe est le mêm pour l'écran précédent et le 3ème) :
+Voici l'extrait correspondant de la feuille survey (le principe est le même pour l'écran précédent et le 3ème) :
 
 * le groupe (begin_group et end_group) permet de faire apparaitre les questions dans un même écran
 * les questions sont des select_one (une seule option à choisir)
 * la liste utilisée dans la feuille choicies s'appelle "boolean"
-* et par défaut (colonne **default**) la question prend la dernière valeur enregistrée (**${last-saved#question_concernee**} elle existe, sinon "true"
+* et par défaut (colonne *default*) la question prend la dernière valeur enregistrée (*${last-saved#question_concernee*} elle existe, sinon "true"
 
 | **type**           | **name**          | **label** | **required** | **default**                                      |
 | ------------------ | ----------------- | --------- | ------------ | ------------------------------------------------ |
@@ -97,24 +112,23 @@ Voici l'extrait correspondant de la feuille survey (le principe est le mêm pour
 
 ### Écran de paramétrage n°3 -> Types de données (thématiques) et paramétrage de l'autocomplétion
 
-Le dernier écran permet de choisir le nombre de caractères à saisir dans le recherche des espèces avant de déclencher l'interrogation du référentiel ("auto-complétion").
-3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB") .
+Le dernier écran permet de choisir le nombre de caractères à saisir dans le recherche des espèces pour déclencher l'interrogation du référentiel ("auto-complétion").
+3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB" pour *Erithacus rubecula* qui est le rouge-gorge) .
 Notez que la dernière question n'est pas visible et nécessite de "scroller" l'écran.
 
-L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur".
-C'est un champ de type **calculate** qui réalise la concaténation dans la colonne **calculation**
+L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur" (champ de type *calculate* et fonction *concat* dans la colonne *calculation*).
 
 | **type**  | **name**                | **calculation**                                              |
 | --------- | ----------------------- | ------------------------------------------------------------ |
 | calculate | preferences_utilisateur | concat(if(${utiliser_geopoint} = 'true','point',''),if(${utiliser_geotrace} = 'true','line',''),if(${utiliser_geoshape} = 'true','polygon',''),if(${animalia} = 'true','animalia',''),if(${plantae} = 'true','plantae',''),if(${fungi} = 'true','fungi',''),if(${habitat} = 'true','habitat',''),if(${pression_menace} = 'true','pression_menace',''),if(${observation_generale} = 'true','observation_generale',''),${nb_lettres}) |
 
-Une fois les paramétrages vérifiés et ou modifiés l'utilisateur peut choisir l'étude pour laquelle le relevé est effectué.
+Une fois les paramétrages vérifiés et/ou modifiés, l'utilisateur peut choisir l'étude pour laquelle le relevé est effectué ainsi que le protocole de collecte utilisé.
 
 ### Choix de l'étude et du protocole
 
-Ces deux référentiels sont gérés dans des fichiers csv externes associés au formulaire. Les fichiers sont mentionnés dans la colonne **appearence** des lignes 2 et 3 de l'extrait ci-dessous (search('etudes') et search('protocole')).
-L'utilisation combinée de l'apparence **quick** permet de passer automatiquement à la question suivante quand une option est selectionnée.
-La feuille de calcul **choices** nous renseigne sur la structure de ces fichiers csv. Les colonnes nom_etude_id et libelle_id contiennent les identifiants à stocker, les colonnes nom_etude et libelle contiennent les "noms" à afficher dans les listes.
+Ces deux référentiels sont gérés dans des fichiers csv externes associés au formulaire. Les fichiers sont mentionnés dans la colonne *appearence* des lignes 2 et 3 de l'extrait ci-dessous (search('etudes') et search('protocole')).
+L'utilisation combinée de l'apparence *quick* permet de passer automatiquement à la question suivante quand une option est selectionnée.
+La feuille de calcul *choices* nous renseigne sur la structure de ces fichiers csv. Les colonnes nom_etude_id et libelle_id contiennent les identifiants à stocker, les colonnes nom_etude et libelle contiennent les "noms" à afficher dans les listes.
 Cela permet de les mettre à jour sur le téléphone sans avoir à mettre à jour le formulaire sur le serveur.
 Nous verrons plus tard avec le référentiel taxonomique que le stockage externe de ces référentiels nous offre des possibilités de recherche intéressantes.
 
@@ -140,7 +154,8 @@ Nous verrons plus tard avec le référentiel taxonomique que le stockage externe
 
 A terme nous aimerions générer dynamiquement et régulièrement la liste des études pour ne faire apparaître que les études en cours et pourquoi pas seulement celles qui concernent l’utilisateur de l'application.
 La même chose pourrait être envisagée pour les protocoles.
-Une fois ces paramètres de "session" renseignés, nous pouvons commencer la saisie de données proprement dite.
+
+Une fois ces paramètres de "session" renseignés, nous pouvons commencer la saisie de données.
 
 ### Création d'une localité
 
@@ -169,28 +184,28 @@ Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, 
 | 9  | geopoint               | point                     | point sur carte               |                                              | yes          | quick placement-map |             | ${methode_geo} = 'point'                    |                                             |                      |                             |
 | 10 | geotrace               | ligne                     | ligne                         |                                              | yes          |                     |             | ${methode_geo} = 'ligne'                    |                                             | 10000                |                             |
 | 11 | calculate              | longueur_ligne            |                               | distance(${ligne})                           |              |                     |             | ${methode_geo} = 'ligne’                    |                                             |                      |                             |
-| 12 | calculate              | longueur_ligne_arrondie   |                               | round(${longueur_ligne},2)                   |              |                     |             | ${methode_geo} = 'ligne’                    |                                             |                      |                             |
-| 13 | geoshape               | polygone                  | polygone                      |                                              | yes          |                     |             | ${methode_geo} = 'polygone’                 |                                             | 10000                |                             |
-| 14 | calculate              | surface_polygone          |                               | area(${polygone})                            |              |                     |             | ${methode_geo} = 'polygone’                 |                                             |                      |                             |
-| 15 | calculate              | surface_polygone_arrondie |                               | round(${surface_polygone}, 2)                |              |                     |             | ${methode_geo} = 'polygone’                 |                                             |                      |                             |
+| 12 | geoshape               | polygone                  | polygone                      |                                              | yes          |                     |             | ${methode_geo} = 'polygone’                 |                                             | 10000                |                             |
+| 13 | calculate              | surface_polygone          |                               | area(${polygone})                            |              |                     |             | ${methode_geo} = 'polygone’                 |                                             |                      |                             |
+| 14 | end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+| 15 |                        |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
 | 16 | end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
-| 17 |                        |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
-| 18 | end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
-| 19 | end repeat             |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
+| 17 | end repeat             |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
 
-Le **begin repeat** démarre une boucle de création de localités.
+Le *begin repeat* démarre une boucle de création de localités.
 
-Le groupe qui suit directement ce repeat (ligne n°2) encapsule l'ensemble des éléments contenus dans la boucle et permettra de nommer chaque instance de la boucle, ici avec la valeur du champ calculé **heure_localite**.
+Le groupe qui suit directement ce repeat (ligne n°2) encapsule l'ensemble des éléments contenus dans la boucle et permettra de nommer chaque instance de la boucle, ici avec la valeur du champ calculé *heure_localite* (ligne 4).
 
-Cela nous sera utile pour retrouver une donnée saisie plus tôt.
+L'observation pourra ainsi être retrouvée dans la navigation du formulaire, avec l’heure de l'emplacement et l’espèce observée.
 
-La colonne **choice_filter**, utilisée pour la question **methode_geo** permet de ne proposer que les options de la feuille **choices** pour lesquelles la valeur "filter" est contenue dans les "préferences utilisateur" calculée plus haut (écrans 2 et 3).
+La colonne *choice_filter*, utilisée pour la question *methode_geo* permet de ne proposer que les options de la feuille *choices* pour lesquelles la valeur "filter" est contenue dans les "préferences utilisateur" calculée plus haut (écrans 2 et 3).
 
-La colonne **relevant** permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correpondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
+La colonne *relevant* permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correpondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
 
 Des fonctions permettent de réaliser des calculs pendant la saisie, ici la longueur d'un ligne ou la surface d'un polygone.
 
 #### Extrait de la feuille choices
+
+La liste des choix proposés pour la méthode de localisation des observations est décrite comme ceci :
 
 | **list_name** | **name**   | **label**             | **filter** |
 | ------------- | ---------- | --------------------- | ---------- |
@@ -202,7 +217,7 @@ Des fonctions permettent de réaliser des calculs pendant la saisie, ici la long
 
 ### Saisie d'une ou plusieurs observations à cet endroit
 
-Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observations que nous le souhaitons, de chacun des types d'observations autorisés dans les paramétrages du formulaire. Ici une observation de plante.
+Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observations que nous le souhaitons, de chacun des types autorisés dans les paramétrages du formulaire. Ici une observation de plante.
 
 [![choix du type d'observation à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_type_d_observation.png "choix du type d'observation à renseigner"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_type_d_observation.png){: data-mediabox="lightbox-gallery" data-title="choix du type d'observation à renseigner"}
 [![recherche d'une espèce végétale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_autocompletion.png "recherche d'une espèce végétale"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_autocompletion.png){: data-mediabox="lightbox-gallery" data-title="recherche d'une espèce végétale"}
@@ -210,7 +225,9 @@ Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observation
 
 ### Propositions des taxons de référence et des synonymes qui correspondent aux lettres tapées
 
-D'abord les taxons de rangs supérieurs puis les espèces et sous-espèces.
+Les collègues ont souhaité que cette fonctionnalé soit améliorée. Nous proposions dans les versions précédentes une simple liste avec une saisie prédictive.
+
+Ils ont souhaité que cette liste propose d'abord les noms de références, classés du rang taxonomique le plus élevé (famille, genre) au plus bas (espèce, sous-espèce...).
 
 [![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png){: data-mediabox="lightbox-gallery" data-title="propositions de taxons correspondant à la recherche"}
 
@@ -224,19 +241,19 @@ D'abord les taxons de rangs supérieurs puis les espèces et sous-espèces.
 | 4    | calculate              | cd_nom_plantae    |                            |                                | pulldata('espece_plante','cd_nom_key','lb_cd_nom_key',${lb_nom_plantae}) |              |                                                              |                                                           |
 | 5    | end group              |                   |                            |                                |                                                              |              |                                                              |                                                           |
 
-Ici encore nous utilisons un référentiel externe (qui n'est pas dans la feuille **choices** mais dans un fichier csv.
+Nous utilisons ici aussi un référentiel externe (qui n'est pas dans la feuille *choices* mais dans un fichier csv.
 
 Nous voyons (ligne n°3) que le fichier s'appelle espece_plante, et que nous allons chercher dedans les lignes pour lesquelles les colonnes code_espece_key ou lb_nom_key commencent (startwith) par les caractère tapés dans la question précédente (ligne 2).
 
-Les propositions n'apparaitront que si le nombre de caractères tapés est supérieur ou égal au nombre de lettre requi spécifié dans les préférences utilisateur (colonne **relevant** de la ligne 3).
-les propositions sont ordonnées selon la valeur stockée dans la colonne **orderby** du fichier csv. Cette colonne est optionnelle, sil elle n'est pas présente, les propositions sont proposées par ordre alphabétique.
+Les propositions n'apparaitront que si le nombre de caractères tapés est supérieur ou égal au nombre de lettre requi spécifié dans les préférences utilisateur (colonne *relevant* de la ligne 3).
+les propositions sont ordonnées selon la valeur stockée dans la colonne *orderby* du fichier csv. Cette colonne est optionnelle, sil elle n'est pas présente, les propositions sont proposées par ordre alphabétique.
 
 Cela nous permet de calculer un ordre a posteriori lors de la génération du référentiel, qui tient compte du caractère valide du taxon (on affiche d'abord les noms de références) puis du rang du taxon (on affiche en premier les rangs supérieurs)
 
-Le suffixe **_key** utilisé dans les noms de colonnes des fichiers csv force la création d'un index quand ces fichiers externes sont transformés par collect en base de données sqlite.
+Le suffixe *_key* utilisé dans les noms de colonnes des fichiers csv force la création d'un index lors de leur transformation en base de données sqlite sur le téléphone.
 
-Cela nous permet d'utiliser l'ensemble du référentiel taxonomique [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'INPN qui contient plusieurs centaines de milliers de lignes.
-Le lein vers le script SQL de génération du référentiel csv à partir de taxref est proposé dans la section "ressources" de l'article
+Cela nous permet d'utiliser l'ensemble du référentiel taxonomique [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'INPN qui contient plusieurs centaines de milliers de lignes sans souci de performance.
+Le lien vers le script SQL de génération du référentiel csv à partir de taxref est proposé dans la section "ressources" de l'article
 
 ### Renseignement de l'effectif observé
 
@@ -251,8 +268,6 @@ Ici pour les espèces végétales il s'agit d'un effectif par classes d’abonda
 {: align=middle }
 
 ### Informations sur la "qualité" de la donnée
-
-L'observation pourra être retrouvée dans la navigation du formulaire, avec l’heure de l'emplacement et l’espèce observée.
 
 [![éléments de qualité de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png "éléments de qualité de la donnée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png){: data-mediabox="lightbox-gallery" data-title="éléments de qualité de la donnée"}
 [![modalité de detrmination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de detrmination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de detrmination"}
@@ -294,7 +309,7 @@ Souhaitons nous ajouter une observation sur l'emplacement courant ?
 L’icône représentant une flèche montrant un point permet de naviguer dans les observations déjà saisies pour les vérifier ou les modifier.
 En cliquant sur le groupe répétitif "Emplacements", on accède à la liste des emplacements du formulaire.
 En cliquant sur l'emplacement désiré, on accède au détail le concernant.
-Enfin en cliquant sur le groupe répétitif "Observations" nous accédons à la liste des observations ratachées à l'emplacement.
+Enfin un clic sur le groupe répétitif "Observations" nous donne accès à la liste des observations rattachées à l'emplacement.
 Et au détail de chacune d'elles :
 
 [![Navigation dans les données collectées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_navigation_donnees_collectees.png "Navigation dans les données collectées"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_navigation_donnees_collectees.png){: data-mediabox="lightbox-gallery" data-title="Navigation dans les données collectées"}
@@ -304,7 +319,7 @@ Et au détail de chacune d'elles :
 [![Résumé d'une observation antérieure](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png){: data-mediabox="lightbox-gallery" data-title="Résumé d'une observation antérieure"}
 {: align=middle }
 
-Une fois ceci fait on peut aller au bout du formulaire et le marquer comme "finalisé".
+Une fois ceci fait on peut aller au bout du formulaire et le "finaliser".
 
 ### Finalisation du formulaire
 
@@ -316,11 +331,11 @@ Nous verrons dans le prochain article comment les données sont récupérées et
 
 ## Perspectives
 
-Les perspectives sont nombreuses au regard des discussions en cours au sein du TAB d'ODK.
+Les perspectives sont nombreuses au regard des discussions en cours au sein du TAB (*Technical Advisory Board*) d'ODK.
 
-Notamment celles concernant les "entity based data collection" et sur les "longitudinal data collection" laissent entrevoir des possibilités trés intéressantes de suivis récurents d'objets définis sur le terrain : placettes, ouvrages, parcelles agricoles...
+Notamment celles concernant les "entity based data collection" et les "longitudinal data collection" qui laissent entrevoir des possibilités trés intéressantes de suivis récurrents d'objets définis sur le terrain : placettes, ouvrages, parcelles agricoles...
 
-Des évolutions relatives au widgets cartographiques et aux interactions qu'ils porraient proposer seraient intéressantes : pouvoir cliquer un objet de la carte pour le décrire, afficher de manière différenciée les objets présnets sur la carte...
+Des évolutions des widgets cartographiques seraient intéressantes : pouvoir cliquer un objet de la carte pour le décrire, afficher de manière différenciée les objets présents sur la carte...
 
 Le forum est le lieu de discussion privilégié pour interragir avec la communauté et l'équipe de développement sur ces questions :
 
@@ -328,16 +343,16 @@ Le forum est le lieu de discussion privilégié pour interragir avec la communau
 * <https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/8>
 * <https://forum.getodk.org/t/geo-using-the-mapbox-sdk-for-android/19223/17>
 
-ODK était la porte d'entrée principale des données métiers dans le SI du CEN Languedoc-Roussillon. La fusion en septembre dernier avec le CEN Midi-Pyrénées ne semble pas remettre en cause cela.
+ODK était la porte d'entrée principale des données métiers dans le SI de l'ex CEN Languedoc-Roussillon. La fusion en septembre dernier avec le CEN Midi-Pyrénées ne semble pas remettre en cause cela.
 
-Et certains formulaires sépcifiques à des projets de l'ex-région Midi-Pyrénées voient le jour.
+Et certains formulaires spécifiques à des projets de l'ex-région Midi-Pyrénées voient le jour, développés par des collègues nont géomaticiens !
 
-Le graphique ci-dessous montre pour l'année 2021 le nombre de données d'observation d'espèce intégrées chaque mois selon leur modalité de saisie.
+Le graphique ci-dessous montre pour l'année 2021 le nombre de données d'observations d'espèces intégrées chaque mois selon leurs modalités de saisie.
 Nous pourrons faire un bilan plus juste à la fin de l'année quand les carnets de terrain papier auront été numérisés.
 
 [![Modalité de saisie des données de biodiversité dans notre SI en 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_saisie_des_donnees_de_biodiversite_en_2021.png "modailtés de saise en 2021"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/403/visualization/872?api_key=n0qV6a6FX6DyKCGtOBZQ1mPmw8wNfLHnha1SmDsO&)
 
-Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'évolution des modalités de saisie. 2015 marque l'arrivée d'ODK dans le SI, 2020 la création du CEN Occitanie.
+Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'évolution des modes de saisie. 2015 marque l'arrivée d'ODK dans le SI, 2020 la création du CEN Occitanie.
 
 [![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&)
 
