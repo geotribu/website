@@ -2,7 +2,7 @@
 title: "De petites applications webmapping avec R"
 authors: ["Romain LACROIX"]
 categories: ["article", "tutoriel"]
-date: "2021-04-XX 10:20"
+date: "2021-06-25 10:20"
 description: "Comment réaliser des cartes interactives personnalisées simplement à l'aide de R et quelques packages"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/exempletitre.png"
 tags: "Carte interactive,webmapping,R,Leaflet,dashboard,Mapbox"
@@ -10,7 +10,7 @@ tags: "Carte interactive,webmapping,R,Leaflet,dashboard,Mapbox"
 
 # De petites applications webmapping avec R
 
-:calendar: Date de publication initiale : XX juin 2021
+:calendar: Date de publication initiale : 25 juin 2021
 
 **Mots-clés :** Carte interactive | webmapping | R | Leaflet | dashboard | Mapbox
 
