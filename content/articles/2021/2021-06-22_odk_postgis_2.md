@@ -276,17 +276,18 @@ Cela peut être utile pour les photos de site dans le cas d'observations de type
 ### Ajout d'une nouvelle observation ? d'une nouvelle localité ?
 
 Souhaitons nous ajouter une observation sur l'emplacement courant ?
-  * Si oui nous redémarrons une boucle de saisie d'observation.
-  * Si non il nous est proposé d'ajouter une nouvelle localité.
-  	* Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
-  	* Si nous refusons nous pouvons finaliser le formaulaire aprés avoir renseigné d'éventuels accompagnateurs
+
+* Si oui nous redémarrons une boucle de saisie d'observation.
+* Si non il nous est proposé d'ajouter une nouvelle localité.
+  * Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
+  * Si nous refusons nous pouvons finaliser le formaulaire aprés avoir renseigné d'éventuels accompagnateurs
 
 [![Ajouter une observation à l'emplacment courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacmeent courant ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png){: data-mediabox="lightbox-gallery" data-title="Ajouter une observation à l'emplacmeent courant ?"}
 [![Ajouter un nouvel emplacement au relevé ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png "Ajouter un nouvel emplacement au relevé ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un nouvel emplacement au relevé ?"}
 [![Ajouter un ou plusieurs accompagnateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png "Ajouter un ou plusieurs accompagnateurs"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un ou plusieurs accompagnateurs"}
 {: align=middle }
 
-### Fin du formulaire, parcours et révision des données colletées.
+### Fin du formulaire, parcours et révision des données colletées
 
 [![Fin du formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin du formulaire"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin du formulaire"}  
 
@@ -319,8 +320,8 @@ Nous verrons dans le prochain article comment les données sont récupérées et
 
 ## Ressources complémentaires
 
-- [le formulaire complet, prêt à l'emploi]()
-- [le script sql de génération du référentiel](https://forum.getodk.org/uploads/short-url/vBGcLFxLAjCACOLbrC7F2xaMV4X.txt)
+* [le formulaire complet, prêt à l'emploi]()
+* [le script sql de génération du référentiel](https://forum.getodk.org/uploads/short-url/vBGcLFxLAjCACOLbrC7F2xaMV4X.txt)
 
 ----
 
