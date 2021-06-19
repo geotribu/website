@@ -316,6 +316,34 @@ Nous verrons dans le prochain article comment les données sont récupérées et
 
 ## Perspectives
 
+Les perspectives sont nombreuses au regard des discussions en cours au sein du TAB d'ODK.
+
+Notamment celles concernant les "entity based data collection" et sur les "longitudinal data collection" laissent entrevoir des possibilités trés intéressantes de suivis récurents d'objets définis sur le terrain : placettes, ouvrages, parcelles agricoles...
+
+Des évolutions relatives au widgets cartographiques et aux interactions qu'ils porraient proposer seraient intéressantes : pouvoir cliquer un objet de la carte pour le décrire, afficher de manière différenciée les objets présnets sur la carte...
+
+Le forum est le lieu de discussion privilégié pour interragir avec la communauté et l'équipe de développement sur ces questions :
+
+* https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353
+* https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/8
+* https://forum.getodk.org/t/geo-using-the-mapbox-sdk-for-android/19223/17
+
+
+ODK était la porte d'entrée principale des données métiers dans le SI du CEN Languedoc-Roussillon. La fusion en septembre dernier avec le CEN Midi-Pyrénées ne semble pas remettre en cause cela.
+
+Et certains formulaires sépcifiques à des projets de l'ex-région Midi-Pyrénées voient le jour.
+
+Le graphique ci-dessous montre pour l'année 2021 le nombre de données d'observation d'espèce intégrées chaque mois selon leur modalité de saisie. 
+Nous pourrons faire un bilan plus juste à la fin de l'année quand les carnets de terrain papier auront été numérisés.
+
+[![Modalité de saisie des données de biodiversité dans notre SI en 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_saisie_des_donnees_de_biodiversite_en_2021.png "modailtés de saise en 2021"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/403/visualization/872?api_key=n0qV6a6FX6DyKCGtOBZQ1mPmw8wNfLHnha1SmDsO&)
+
+Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'évolution des modalités de saisie. 2015 marque l'arrivée d'ODK dans le SI, 2020 la création du CEN Occitanie.
+
+[![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&)
+
+
+
 ----
 
 ## Ressources complémentaires
