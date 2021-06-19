@@ -25,7 +25,6 @@ Dans un dernier article, nous verrons comment les données collectées sur les t
 [1ère partie : Introduction à ODK :fontawesome-solid-step-backward:](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
 <!--[3ème partie : Récupération des données dans notre SI :fontawesome-solid-step-forward:](#){: .md-button }
 {: align=middle }-->
-{: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -49,7 +48,7 @@ Notre formulaire est constitué de deux boucles imbriquées. Aprés avoir rensei
 
 Voici un schéma illustrant la logique du formulaire, que l'on peut résumer ainsi :
 
-[![Logique du formulaire](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg "Logique du formulaire"){: loading=lazy width=300 }](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg){: data-mediabox="lightbox-gallery" data-title="Logique du formulaire"}
+[![Logique du formulaire](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg "Logique du formulaire"){: loading=lazy width=600 }](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg){: data-mediabox="lightbox-gallery" data-title="Logique du formulaire"}
 
 ## Captures d'écran / collecte de données
 
@@ -71,9 +70,10 @@ Les fonctionnalités désactivées ici seront masquées pendant l'utilisation du
 
 Les champs sont remplis par défaut avec les valeurs saisies dans les paramètres généraux de l'application
 
-[![Métadonnées relatives à l'utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
-[![Préférences de l'utilisateur - Choix des possibilités cartographiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
-[![Préférences de l'utilisateur - Types et thématiques des données à saisir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}{: loading=lazy width=300 }]
+[![Métadonnées relatives à l'utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
+[![Préférences de l'utilisateur - Choix des possibilités cartographiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
+[![Préférences de l'utilisateur - Types et thématiques des données à saisir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
+{: align=middle }
 
 ### Écran de paramétrage n°2 -> types de géométries créées
 
@@ -145,8 +145,10 @@ Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géo
 [![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png){: data-mediabox="lightbox-gallery" data-title="Choix du type de géoréférencement de l'emplacement courant"}
 
 Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, que vous pouvez aussi dessiner à la main sur l'écran. L'automatisation peut être paramétrée selon la distance maximale ou le temps de parcours entre deux points. Une précision minimale du GPS peut aussi être configurée dans le formualire pour interdire des localisation trop peu précises.
-[![localisation assistée par le GPS du téléphone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png "localisation assistée par le GPS du téléphone"){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png){: data-mediabox="lightbox-gallery" data-title="localisation assistée par le GPS du téléphone"}
-[![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: .img-left }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: data-mediabox="lightbox-gallery" data-title="coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement"}
+
+[![localisation assistée par le GPS du téléphone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png "localisation assistée par le GPS du téléphone"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png){: data-mediabox="lightbox-gallery" data-title="localisation assistée par le GPS du téléphone"}
+[![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: data-mediabox="lightbox-gallery" data-title="coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement"}
+{: align=middle }
 
 #### Extrait de la fauille survey
 
