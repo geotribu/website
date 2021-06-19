@@ -97,11 +97,11 @@ Voici l'extrait correspondant de la feuille survey (le principe est le mêm pour
 
 ### Écran de paramétrage n°3 -> Types de données (thématiques) et paramétrage de l'autocomplétion
 
-Le dernier écran permet de choisir le nombre de caractères à saisir dans le recherche des espèces avant de déclencher l'interrogation du référentiel ("auto-complétion"). 
+Le dernier écran permet de choisir le nombre de caractères à saisir dans le recherche des espèces avant de déclencher l'interrogation du référentiel ("auto-complétion").
 3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB") .
 Notez que la dernière question n'est pas visible et nécessite de "scroller" l'écran.
 
-L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur". 
+L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur".
 C'est un champ de type **calculate** qui réalise la concaténation dans la colonne **calculation**
 
 | **type**  | **name**                | **calculation**                                              |
