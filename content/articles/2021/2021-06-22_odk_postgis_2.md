@@ -279,8 +279,8 @@ Souhaitons nous ajouter une observation sur l'emplacement courant ?
 
 * Si oui nous redémarrons une boucle de saisie d'observation.
 * Si non il nous est proposé d'ajouter une nouvelle localité.
-  * Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
-  * Si nous refusons nous pouvons finaliser le formaulaire aprés avoir renseigné d'éventuels accompagnateurs
+    * Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
+    * Si nous refusons nous pouvons finaliser le formaulaire aprés avoir renseigné d'éventuels accompagnateurs
 
 [![Ajouter une observation à l'emplacment courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacmeent courant ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png){: data-mediabox="lightbox-gallery" data-title="Ajouter une observation à l'emplacmeent courant ?"}
 [![Ajouter un nouvel emplacement au relevé ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png "Ajouter un nouvel emplacement au relevé ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un nouvel emplacement au relevé ?"}
@@ -324,10 +324,9 @@ Des évolutions relatives au widgets cartographiques et aux interactions qu'ils 
 
 Le forum est le lieu de discussion privilégié pour interragir avec la communauté et l'équipe de développement sur ces questions :
 
-* https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353
-* https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/8
-* https://forum.getodk.org/t/geo-using-the-mapbox-sdk-for-android/19223/17
-
+* <https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353>
+* <https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/8>
+* <https://forum.getodk.org/t/geo-using-the-mapbox-sdk-for-android/19223/17>
 
 ODK était la porte d'entrée principale des données métiers dans le SI du CEN Languedoc-Roussillon. La fusion en septembre dernier avec le CEN Midi-Pyrénées ne semble pas remettre en cause cela.
 
@@ -341,8 +340,6 @@ Nous pourrons faire un bilan plus juste à la fin de l'année quand les carnets 
 Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'évolution des modalités de saisie. 2015 marque l'arrivée d'ODK dans le SI, 2020 la création du CEN Occitanie.
 
 [![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&)
-
-
 
 ----
 
