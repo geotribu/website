@@ -54,11 +54,11 @@ Voici un schéma illustrant la logique du formulaire, que l'on peut résumer ain
 
 ### Ecran d'accueil d'ODK Collect
 
-[![écran d'accueil de Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_accueil_ODK_Collect.png "Ecran d'accueil d'ODK Collect"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_accueil_ODK_Collect.png){: data-mediabox="lightbox-gallery" data-title="Ecran d'accueil d'ODK Collect"}
+[![écran d'accueil de Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_accueil_ODK_Collect.png "Ecran d'accueil d'ODK Collect"){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_accueil_ODK_Collect.png){: data-mediabox="lightbox-gallery" data-title="Ecran d'accueil d'ODK Collect"}
 
 ### Choix du formulaire à renseigner -> SICEN
 
-[![Choix du formulaire à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png "Choix du formuliare à renseigner"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
+[![Choix du formulaire à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png "Choix du formuliare à renseigner"){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
 
 Les 3 premiers écrans présentent le paramétrage de l'application et demandent à l'utilisateur ses préférences pour la session qu'il démarre.
 A la première utilisation du formulaire, les fonctionnalités seront toutes activées par défaut. Libre à chacun de désactiver celles qui lui semblent provisoirement ou définitivement inutiles.
@@ -120,6 +120,7 @@ Nous verrons plus tard avec le référentiel taxonomique que le stockage externe
 
 [![choix de l'étude](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png "choix de l'étude"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png){: data-mediabox="lightbox-gallery" data-title="choix de l'étude"}
 [![métadonnées utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png){: data-mediabox="lightbox-gallery" data-title="métadonnées utilisateur"}
+{: align=middle }
 
 #### Extrait de la feuille survey
 
@@ -143,7 +144,7 @@ Une fois ces paramètres de "session" renseignés, nous pouvons commencer la sai
 
 ### Création d'une localité
 
-Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans la première partie de cet article.
+Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans [la première partie de cet article](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/).
 
 [![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png){: data-mediabox="lightbox-gallery" data-title="Choix du type de géoréférencement de l'emplacement courant"}
 
@@ -178,10 +179,15 @@ Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, 
 | 19 | end repeat             |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
 
 Le **begin repeat** démarre une boucle de création de localités.
+
 Le groupe qui suit directement ce repeat (ligne n°2) encapsule l'ensemble des éléments contenus dans la boucle et permettra de nommer chaque instance de la boucle, ici avec la valeur du champ calculé **heure_localite**.
-Cela nous sera utile pour rerouver une donnée saisie plus tôt.
+
+Cela nous sera utile pour retrouver une donnée saisie plus tôt.
+
 La colonne **choice_filter**, utilisée pour la question **methode_geo** permet de ne proposer que les options de la feuille **choices** pour lesquelles la valeur "filter" est contenue dans les "préferences utilisateur" calculée plus haut (écrans 2 et 3).
+
 La colonne **relevant** permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correpondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
+
 Des fonctions permettent de réaliser des calculs pendant la saisie, ici la longueur d'un ligne ou la surface d'un polygone.
 
 #### Extrait de la feuille choices
@@ -196,50 +202,74 @@ Des fonctions permettent de réaliser des calculs pendant la saisie, ici la long
 
 ### Saisie d'une ou plusieurs observations à cet endroit
 
-Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observations que nous le souhaitons, de chacun des types d'observations autorisés dans les paramétrages du formulaire.
+Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observations que nous le souhaitons, de chacun des types d'observations autorisés dans les paramétrages du formulaire. Ici une observation de plante.
 
 [![choix du type d'observation à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_type_d_observation.png "choix du type d'observation à renseigner"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_type_d_observation.png){: data-mediabox="lightbox-gallery" data-title="choix du type d'observation à renseigner"}
-
-Commençons par une espèce végétale
-
 [![recherche d'une espèce végétale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_autocompletion.png "recherche d'une espèce végétale"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_autocompletion.png){: data-mediabox="lightbox-gallery" data-title="recherche d'une espèce végétale"}
+{: align=middle }
 
 ### Propositions des taxons de référence et des synonymes qui correspondent aux lettres tapées
 
-D'abord les taxons de rangs supérieurs puis les espèces et sous espèces.
+D'abord les taxons de rangs supérieurs puis les espèces et sous-espèces.
 
 [![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png){: data-mediabox="lightbox-gallery" data-title="propositions de taxons correspondant à la recherche"}
+
+#### Extrait d ela feuille de calcul survey
+
+|      | **type**               | **name**          | **label**                  | **hint**                       | **calculation**                                              | **required** | **appearance**                                               | **relevant**                                              |
+| ---- | ---------------------- | ----------------- | -------------------------- | ------------------------------ | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
+| 1    | begin group            | plantae_selection | ${lb_nom_plantae}          |                                |                                                              |              | field-list                                                   | ${type_observation} = 'plantae'                           |
+| 2    | text                   | recherche_plantae | Nom de l’espèce végétale : | au moins ${nb_lettres} lettres |                                                              | yes          |                                                              |                                                           |
+| 3    | select_one list_espece | lb_nom_plantae    | Sélectionnez l'espèce :    |                                |                                                              | yes          | quick search('espece_plante', 'startswith', 'code_espece_key,lb_nom_key', ${recherche_plantae}) | string-length(${recherche_plantae}) > (${nb_lettres} - 1) |
+| 4    | calculate              | cd_nom_plantae    |                            |                                | pulldata('espece_plante','cd_nom_key','lb_cd_nom_key',${lb_nom_plantae}) |              |                                                              |                                                           |
+| 5    | end group              |                   |                            |                                |                                                              |              |                                                              |                                                           |
+
+Ici encore nous utilisons un référentiel externe (qui n'est pas dans la feuille **choices** mais dans un fichier csv.
+
+Ligne 3, nous voyons que le fichier s'appelle espece_plante. Et que nous allons chercher dedans les lignes pour lesquelles les colonnes code_espece_key ou lb_nom_key commencent (startwith) par les caractère tapés dans la question précédente (ligne 2).
+
+Les propositions n'apparaitront que si le nombre de caractères tapés est supérieur ou égal au nombre de lettre requi spécifié dans les préférences utilisateur (colonne **relevant** de la ligne 3).
+les propositions sont ordonnées selon la valeur stockée dans la colonne **orderby** du fichier csv. Cette colonne est optionnelle, sil elle n'est pas présente, les propositions sont proposées par ordre alphabétique.
+
+Cela nous permet de calculer un ordre a posteriori lors de la génération du référentiel, qui tient compte du caractère valide du taxon (on affiche d'abord les noms de références) puis du rang du taxon (on affiche en premier les rangs supérieurs)
+
+Le suffixe **_key** utilisé dans les noms de colonnes des fichiers csv force la création d'un index quand ceux-ci sont transformés par collect en base de données sqlite.
+
+Cela nous permet d'utiliser l'ensemble du référentiel taxonomique [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'INPN qui contient plusieurs centaines de milliers de lignes.
+Le lein vers le script SQL de génération du référentiel csv à partir de taxref est proposé dans la section "ressources" de l'article
 
 ### Renseignement de l'effectif observé
 
 L'espèce mentionnée a-t-elle été observée ?
-[![l'espèce a-t-elle été observée ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/le_taxon_a_t_il_ete_observe.png "l'espèce a-t-elle été observée ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/le_taxon_a_t_il_ete_observe.png){: data-mediabox="lightbox-gallery" data-title="l'espèce a-t-elle été observée ?"}
+
 Si oui, les écrans suivants (ou leurs homologues pour la Faune sont affichés)
 
 Ici pour les espèces végétales il s'agit d'un effectif par classes d’abondance
 
+[![l'espèce a-t-elle été observée ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/le_taxon_a_t_il_ete_observe.png "l'espèce a-t-elle été observée ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/le_taxon_a_t_il_ete_observe.png){: data-mediabox="lightbox-gallery" data-title="l'espèce a-t-elle été observée ?"}
 [![abondance de l'espèce](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/renseignement_abondance_espece.png "abondance de l'espèce"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/renseignement_abondance_espece.png){: data-mediabox="lightbox-gallery" data-title="abondance de l'espèce"}
+{: align=middle }
 
 ### Informations sur la "qualité" de la donnée
 
 L'observation pourra être retrouvée dans la navigation du formulaire, avec l’heure de l'emplacement et l’espèce observée.
 
 [![éléments de qualité de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png "éléments de qualité de la donnée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png){: data-mediabox="lightbox-gallery" data-title="éléments de qualité de la donnée"}
-
 [![modalité de detrmination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de detrmination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de detrmination"}
+{: align=middle }
 
 ### Renseignement de détails optionnels, prise de photo
 
 [![prendre une photo ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png "prendre une photo ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png){: data-mediabox="lightbox-gallery" data-title="prendre une photo ?"}
-
 [![prendre un photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png "prendre un photo"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png){: data-mediabox="lightbox-gallery" data-title="prendre un photo"}
+{: align=middle }
 
 ### Annotation de la photo
 
 Cela peut être utile pour les photos de site dans le cas d'observations de type pression/menace
 [Ces photos seront mobilisables par la suite dans QGIS.](https://si.cen-occitanie.org/?p=191)
 
-[![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png){: data-mediabox="lightbox-gallery" data-title="Annotation de la photo"}
+[![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png){: data-mediabox="lightbox-gallery" data-title="Annotation de la photo"}
 [![Visualistion de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualistion de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
 {: align=middle }
 
@@ -273,13 +303,15 @@ Et au détail de chacune d'elles :
 [![Résumé d'une observation antérieure](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png){: data-mediabox="lightbox-gallery" data-title="Résumé d'une observation antérieure"}
 {: align=middle }
 
-Une fois ceci fait on peut aller au bout du formulaire et le marquer comme finalisé.
+Une fois ceci fait on peut aller au bout du formulaire et le marquer comme "finalisé".
 
 ### Finalisation du formulaire
 
 [![Fin de la session](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin de la session"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin de la session"}
 
-Les données sont alors automatiquement (c'est le comportement par défaut désormais) envoyées à Central.
+Les données sont alors automatiquement envoyées ("soumises") à Central (c'est le comportement par défaut désormais).
+
+Nous verrons dans le prochain article comment les données sont récupérées et intégrées à notre base de données PostGis.
 
 ## Perspectives
 
@@ -287,8 +319,8 @@ Les données sont alors automatiquement (c'est le comportement par défaut déso
 
 ## Ressources complémentaires
 
-- le formulaire complet, prêt à l'emploi.
-- ...
+- [le formulaire complet, prêt à l'emploi]()
+- [le script sql de génération du référentiel](https://forum.getodk.org/uploads/short-url/vBGcLFxLAjCACOLbrC7F2xaMV4X.txt)
 
 ----
 
