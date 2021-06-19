@@ -45,7 +45,7 @@ Cette présentation faite au FOSS4G-fr de 2018 reprend l'historique de notre SI 
 
 Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Elle résultait d'un "workshop" orgnaisé avec les collègues du CEN Rhône-Alpes (Rémy Clément, Laurent Poulin et Guillaume Costes) qui maitrisaient la création de formulaire. Je m'étais alors occupé de la récupération des données collectées dans PostGIS..
 
-Chaque révision successive a apporté son lot d'améliorations, et les questions sont devenues plus "adaptatives". Les réponses possibles dépendaient par exemple de l'espèce sélectionnée (ex. pas de têtard si on a vu un oiseau). 
+Chaque révision successive a apporté son lot d'améliorations, et les questions sont devenues plus "adaptatives". Les réponses possibles dépendaient par exemple de l'espèce sélectionnée (ex. pas de têtard si on a vu un oiseau).
 
 En 2019, avec le travail de Jean Baïsez, le formulaire s'est enrichi : aux observations d'espèces et d'habitats, ont été ajoutées la description des pressions ou des menaces sur les milieux naturels.
 
@@ -53,7 +53,7 @@ Toutes ses données sont géoréférencées (point, lignes ou polygones) et peuv
 
 En 2021, le système de préférences a été amélioré et les attentes évoquées par les collègues à la fin de la saison 2020 ont été satisfaites (navigaution dans les données collectées, recherche des taxons dans le référentiel taxonomique).
 
-Aucune de ces évolutions n'a nécessité de développement de notre part, elles ont certes été possibles grace aux évolutions de *Collect*, mais surtout par l'apporpriation du standard XLSform. 
+Aucune de ces évolutions n'a nécessité de développement de notre part, elles ont certes été possibles grace aux évolutions de *Collect*, mais surtout par l'apporpriation du standard XLSform.
 
 Notre formulaire est constitué de deux boucles imbriquées : aprés avoir renseigné les informations de base du relevé (contexte, observateur...), il nous est proposé de créer une localité (objet géographique), puis d'y renseigner une ou plusieurs observations.
 
