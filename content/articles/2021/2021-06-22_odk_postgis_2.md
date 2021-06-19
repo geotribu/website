@@ -243,46 +243,35 @@ Cela peut être utile pour les photos de site dans le cas d'observations de type
 [![Visualistion de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualistion de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
 {: align=middle }
 
-### Ajout d'une observation
+### Ajout d'une nouvelle observation ? d'une nouvelle localité ?
 
-Si oui on revient à la saisie d'une observation sur l'emplacement courant.
+Souhaitons nous ajouter une observation sur l'emplacement courant ?
+  * Si oui nous redémarrons une boucle de saisie d'observation.
+  * Si non il nous est proposé d'ajouter une nouvelle localité.
+  	* Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
+  	* Si nous refusons nous pouvons finaliser le formaulaire aprés avoir renseigné d'éventuels accompagnateurs
 
-[![Ajouter une observation à l'emplacmeent courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacmeent courant ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png){: data-mediabox="lightbox-gallery" data-title="Ajouter une observation à l'emplacmeent courant ?"}
-
-Si non il nous est proposé d'ajouter une nouvelle localité
-
+[![Ajouter une observation à l'emplacment courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacmeent courant ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png){: data-mediabox="lightbox-gallery" data-title="Ajouter une observation à l'emplacmeent courant ?"}
 [![Ajouter un nouvel emplacement au relevé ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png "Ajouter un nouvel emplacement au relevé ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un nouvel emplacement au relevé ?"}
-
-Si oui on revient à l'ajout d'une localité (point, ligne ou polygone)
-Si non, on finalise le formulaire en renseignant la présence d'éventuels accompagnateurs
-
-### Renseignement des accompagnateurs éventuels
-
 [![Ajouter un ou plusieurs accompagnateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png "Ajouter un ou plusieurs accompagnateurs"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un ou plusieurs accompagnateurs"}
+{: align=middle }
 
-### Fin du formulaire, parcours des données colletées.
+### Fin du formulaire, parcours et révision des données colletées.
 
 [![Fin du formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin du formulaire"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin du formulaire"}  
 
-L’icône représentant une flèche montrant un point permet de naviguer dans les observations déjà saisie pour les vérifier ou les modifier.
+L’icône représentant une flèche montrant un point permet de naviguer dans les observations déjà saisies pour les vérifier ou les modifier.
+En cliquant sur le groupe répétitif "Emplacements", on accède à la liste des emplacements du formulaire.
+En cliquant sur l'emplacement désiré, on accède au détail le concernant.
+Enfin en cliquant sur le groupe répétitif "Observations" nous accédons à la liste des observations ratachées à l'emplacement.
+Et au détail de chacune d'elles :
 
 [![Navigation dans les données collectées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_navigation_donnees_collectees.png "Navigation dans les données collectées"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_navigation_donnees_collectees.png){: data-mediabox="lightbox-gallery" data-title="Navigation dans les données collectées"}
-
-En cliquant sur le groupe répétitif "Emplacements", on accède à la liste des emplacement du formualaire.
-
 [![Liste des lieux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_emplacements_sessions.png "Liste des lieux"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_emplacements_sessions.png){: data-mediabox="lightbox-gallery" data-title="Liste des lieux"}
-
-En cliquant sur l'emplacement désiré, on accède au détail le concernant.
-
-[![métadonnées utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_emplacement_anterieur.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_emplacement_anterieur.png){: data-mediabox="lightbox-gallery" data-title="métadonnées utilisateur"}
-
-Enfin en cliquant sur le groupe répétitif "Observations" nous accédons à la liste des observations ratachées à l'emplacement.
-
+[![Résumé d'un emplacement antérieur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_emplacement_anterieur.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_emplacement_anterieur.png){: data-mediabox="lightbox-gallery" data-title="Résumé d'un emplacement antérieur"}
 [![Observations rattachées à l'emplacement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_observations_emplacement_1.png "Observations rattachées à l'emplacement"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_observations_emplacement_1.png){: data-mediabox="lightbox-gallery" data-title="Observations rattachées à l'emplacement"}
-
-et au détail de chacune d'elles :
-
-[![métadonnées utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png){: data-mediabox="lightbox-gallery" data-title="métadonnées utilisateur"}
+[![Résumé d'une observation antérieure](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png){: data-mediabox="lightbox-gallery" data-title="Résumé d'une observation antérieure"}
+{: align=middle }
 
 Une fois ceci fait on peut aller au bout du formulaire et le marquer comme finalisé.
 
