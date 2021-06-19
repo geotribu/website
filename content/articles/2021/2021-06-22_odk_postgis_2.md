@@ -333,7 +333,7 @@ ODK était la porte d'entrée principale des données métiers dans le SI du CEN
 
 Et certains formulaires sépcifiques à des projets de l'ex-région Midi-Pyrénées voient le jour.
 
-Le graphique ci-dessous montre pour l'année 2021 le nombre de données d'observation d'espèce intégrées chaque mois selon leur modalité de saisie. 
+Le graphique ci-dessous montre pour l'année 2021 le nombre de données d'observation d'espèce intégrées chaque mois selon leur modalité de saisie.
 Nous pourrons faire un bilan plus juste à la fin de l'année quand les carnets de terrain papier auront été numérisés.
 
 [![Modalité de saisie des données de biodiversité dans notre SI en 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_saisie_des_donnees_de_biodiversite_en_2021.png "modailtés de saise en 2021"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/403/visualization/872?api_key=n0qV6a6FX6DyKCGtOBZQ1mPmw8wNfLHnha1SmDsO&)
