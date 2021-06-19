@@ -214,7 +214,7 @@ D'abord les taxons de rangs supérieurs puis les espèces et sous-espèces.
 
 [![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png){: data-mediabox="lightbox-gallery" data-title="propositions de taxons correspondant à la recherche"}
 
-#### Extrait d ela feuille de calcul survey
+#### Extrait de la feuille de calcul survey
 
 |      | **type**               | **name**          | **label**                  | **hint**                       | **calculation**                                              | **required** | **appearance**                                               | **relevant**                                              |
 | ---- | ---------------------- | ----------------- | -------------------------- | ------------------------------ | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
@@ -226,14 +226,14 @@ D'abord les taxons de rangs supérieurs puis les espèces et sous-espèces.
 
 Ici encore nous utilisons un référentiel externe (qui n'est pas dans la feuille **choices** mais dans un fichier csv.
 
-Ligne 3, nous voyons que le fichier s'appelle espece_plante. Et que nous allons chercher dedans les lignes pour lesquelles les colonnes code_espece_key ou lb_nom_key commencent (startwith) par les caractère tapés dans la question précédente (ligne 2).
+Nous voyons (ligne n°3) que le fichier s'appelle espece_plante, et que nous allons chercher dedans les lignes pour lesquelles les colonnes code_espece_key ou lb_nom_key commencent (startwith) par les caractère tapés dans la question précédente (ligne 2).
 
 Les propositions n'apparaitront que si le nombre de caractères tapés est supérieur ou égal au nombre de lettre requi spécifié dans les préférences utilisateur (colonne **relevant** de la ligne 3).
 les propositions sont ordonnées selon la valeur stockée dans la colonne **orderby** du fichier csv. Cette colonne est optionnelle, sil elle n'est pas présente, les propositions sont proposées par ordre alphabétique.
 
 Cela nous permet de calculer un ordre a posteriori lors de la génération du référentiel, qui tient compte du caractère valide du taxon (on affiche d'abord les noms de références) puis du rang du taxon (on affiche en premier les rangs supérieurs)
 
-Le suffixe **_key** utilisé dans les noms de colonnes des fichiers csv force la création d'un index quand ceux-ci sont transformés par collect en base de données sqlite.
+Le suffixe **_key** utilisé dans les noms de colonnes des fichiers csv force la création d'un index quand ces fichiers externes sont transformés par collect en base de données sqlite.
 
 Cela nous permet d'utiliser l'ensemble du référentiel taxonomique [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'INPN qui contient plusieurs centaines de milliers de lignes.
 Le lein vers le script SQL de génération du référentiel csv à partir de taxref est proposé dans la section "ressources" de l'article
@@ -287,7 +287,7 @@ Souhaitons nous ajouter une observation sur l'emplacement courant ?
 [![Ajouter un ou plusieurs accompagnateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png "Ajouter un ou plusieurs accompagnateurs"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un ou plusieurs accompagnateurs"}
 {: align=middle }
 
-### Fin du formulaire, parcours et révision des données colletées
+### Fin du formulaire, parcours et révision des données collectées
 
 [![Fin du formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin du formulaire"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin du formulaire"}  
 
