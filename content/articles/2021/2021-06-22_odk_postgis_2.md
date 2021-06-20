@@ -354,7 +354,7 @@ Nous pourrons faire un bilan plus juste à la fin de l'année quand les carnets 
 
 Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'évolution des modes de saisie. 2015 marque l'arrivée d'ODK dans le SI, 2020 la création du CEN Occitanie.
 
-[![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&)
+[![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: loading=lazy width=500px }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&)
 
 ----
 
