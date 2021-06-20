@@ -65,12 +65,14 @@ Aprés la dernière observation de la localité courante, il est proposé de sai
 Voici un schéma illustrant la logique du formulaire :
 
 [![Logique du formulaire](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg "Logique du formulaire"){: loading=lazy width=600 }](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg){: data-mediabox="lightbox-gallery" data-title="Logique du formulaire"}
+{: align=middle }
 
 ## Captures d'écran / collecte de données
 
 ### Ecran d'accueil d'ODK Collect
 
 [![écran d'accueil de Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_accueil_ODK_Collect.png "Ecran d'accueil d'ODK Collect"){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_accueil_ODK_Collect.png){: data-mediabox="lightbox-gallery" data-title="Ecran d'accueil d'ODK Collect"}
+{: align=middle }
 
 ### Choix du formulaire à renseigner -> SICEN
 
@@ -165,6 +167,7 @@ Une fois ces paramètres de "session" renseignés, nous pouvons commencer la sai
 Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans [la première partie de cet article](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/).
 
 [![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png){: data-mediabox="lightbox-gallery" data-title="Choix du type de géoréférencement de l'emplacement courant"}
+{: align=middle }
 
 Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, que vous pouvez aussi dessiner à la main sur l'écran. L'automatisation peut être paramétrée selon la distance maximale ou le temps de parcours entre deux points. Une précision minimale du GPS peut aussi être configurée dans le formualire pour interdire des localisation trop peu précises.
 
@@ -228,11 +231,12 @@ Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observation
 
 ### Propositions des taxons de référence et des synonymes qui correspondent aux lettres tapées
 
-Les collègues ont souhaité que cette fonctionnalé soit améliorée. Nous proposions dans les versions précédentes une simple liste avec une saisie prédictive.
+Les collègues ont fait remonter des besoins d'amélioration de cette fonctionnalité. Nous proposions dans les versions précédentes une simple liste avec une saisie prédictive.
 
 Ils ont souhaité que cette liste propose d'abord les noms de références, classés du rang taxonomique le plus élevé (famille, genre) au plus bas (espèce, sous-espèce...).
 
 [![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png){: data-mediabox="lightbox-gallery" data-title="propositions de taxons correspondant à la recherche"}
+{: align=middle }
 
 #### Extrait de la feuille de calcul *survey*
 
@@ -318,13 +322,16 @@ Souhaitons nous ajouter une observation sur l'emplacement courant ?
 
 ### Fin du formulaire, parcours et révision des données collectées
 
-[![Fin du formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin du formulaire"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin du formulaire"}  
+[![Fin du formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin du formulaire"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin du formulaire"}
+{: align=middle }
 
 L’icône représentant une flèche montrant un point permet de naviguer dans les observations déjà saisies pour les vérifier ou les modifier.
+
 En cliquant sur le groupe répétitif "Emplacements", on accède à la liste des emplacements du formulaire.
+
 En cliquant sur l'emplacement désiré, on accède au détail le concernant.
-Enfin un clic sur le groupe répétitif "Observations" nous donne accès à la liste des observations rattachées à l'emplacement.
-Et au détail de chacune d'elles :
+
+Enfin un clic sur le groupe répétitif "Observations" nous donne accès à la liste des observations rattachées à l'emplacement et au détail de chacune d'elles :
 
 [![Navigation dans les données collectées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_navigation_donnees_collectees.png "Navigation dans les données collectées"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_navigation_donnees_collectees.png){: data-mediabox="lightbox-gallery" data-title="Navigation dans les données collectées"}
 [![Liste des lieux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_emplacements_sessions.png "Liste des lieux"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_emplacements_sessions.png){: data-mediabox="lightbox-gallery" data-title="Liste des lieux"}
