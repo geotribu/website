@@ -291,12 +291,12 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 {: align=middle }
 
 #### Extrait de la feuille de calcul *survey*
-                                               
+
 | **type** | **name**    | **label**         | **appearance** | **relevant**           | **parameters**  |
 | -------- | ----------- | ----------------- | -------------- | ---------------------- | --------------- |
 | image    | prise_image | Prendre une photo | annotate       | ${prendre_image}='oui' | max-pixels=2000 |
 
-La question est de type *image*, elle ne sera affichée que si la prise d'image a été cochée dans les préférences. 
+La question est de type *image*, elle ne sera affichée que si la prise d'image a été cochée dans les préférences.
 
 Les photos peuvent être annotées, et leur plus grande dimension ne déparssera pas 2000 pixels.
 
