@@ -341,7 +341,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - La mise en oeuvre d'ODK avec la présentation détaillée de notre formulaire "généraliste"
 - La récupération des données collectées dans notre base de données PostGIS
 
-[Lire la deuxième partie :fontawesome-solid-step-forward:](#){: .md-button }
+[Lire la deuxième partie :fontawesome-solid-step-forward:](https://static.geotribu.fr/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
 {: align=middle }
 
 ----
