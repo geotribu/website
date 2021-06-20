@@ -17,16 +17,16 @@ tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 ![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
 
 Aprés vous avoir présenté la place les outils proposés par ODK et la place qu'ils occupent dans notre SI centré sur PostGIS, ce second article illustre à travers notre formulaire généraliste l'utilisation des différents "widgets" à notre disposition.
-Des extraits du "XLSForm" du formualaire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "survey" et de la feuille de calcul "choices".
+Des extraits du "XLSForm" du formulaire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "survey" et de la feuille de calcul "choices".
 
-Dans ces extraits, nous n'avons conservé que les colonnes renseignées pour en faciliter la lecture et noux avons numéroté les lignes.
+Dans ces extraits, nous n'avons conservé que les colonnes renseignées pour en faciliter la lecture et nous avons numéroté les lignes.
 
 Le lien vers fichier XLSform de notre formulaire est disponible en [bas de l'article](#ressources_complémentaires).
 
-Vous pouvez utiliser ODK pour la collecte de données sur le terrain même si vous n'avez pas installé le serveur. Vous pouvez simplement créer votre fichier XLSForm, le transformer via [XLSForm Online](https://getodk.org/xlsform/) et tansferer le xml et les éventuels médias associés sur votre téléphone.
+Vous pouvez utiliser ODK pour la collecte de données sur le terrain même si vous n'avez pas installé le serveur. Vous pouvez simplement créer votre fichier XLSForm, le transformer via [XLSForm Online](https://getodk.org/xlsform/) et transférer le xml et les éventuels médias associés sur votre téléphone.
 Vous pourrez ensuite récupérer les données collectées avec [Briefcase](https://docs.getodk.org/briefcase-intro/), rapidement évoqué dans le premier épisode de cette série.
 
-Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans le précédent article.
+Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans l'article précédent.
 
 [1ère partie : Introduction à ODK :fontawesome-solid-step-backward:](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
 <!--[3ème partie : Récupération des données dans notre SI :fontawesome-solid-step-forward:](#){: .md-button }
@@ -46,21 +46,21 @@ Cette présentation faite au FOSS4G-fr de 2018 reprend l'historique de notre SI 
 
 ## Logique du formulaire
 
-Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Elle résultait d'un "workshop" orgnaisé avec les collègues du CEN Rhône-Alpes (Rémy Clément, Laurent Poulin et Guillaume Costes) qui maitrisaient la création de formulaire. Je m'étais alors occupé de la récupération des données collectées dans PostGIS..
+Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Elle résultait d'un "workshop" organisé avec les collègues du CEN Rhône-Alpes (Rémy Clément, Laurent Poulin et Guillaume Costes) qui maitrisaient la création de formulaire. Je m'étais alors occupé de la récupération des données collectées dans PostGIS..
 
 Chaque révision successive a apporté son lot d'améliorations, et les questions sont devenues plus "adaptatives". Les réponses possibles dépendaient par exemple de l'espèce sélectionnée (ex. pas de têtard si on a vu un oiseau).
 
 En 2019, avec le travail de Jean Baïsez, le formulaire s'est enrichi : aux observations d'espèces et d'habitats, ont été ajoutées la description des pressions ou des menaces sur les milieux naturels.
 
-Toutes ses données sont géoréférencées (point, lignes ou polygones) et peuvent être documentées par des photos prise par le téléphone. Ces dernières peuvent être annotées.
+Toutes ces données sont géoréférencées (point, lignes ou polygones) et peuvent être documentées par des photos prises par le téléphone. Ces dernières peuvent être annotées.
 
-En 2021, le système de préférences a été amélioré et les attentes évoquées par les collègues à la fin de la saison 2020 ont été satisfaites (navigaution dans les données collectées, recherche des taxons dans le référentiel taxonomique).
+En 2021, le système de préférences a été amélioré et les attentes évoquées par les collègues à la fin de la saison 2020 ont été satisfaites (navigation dans les données collectées, recherche des taxons dans le référentiel taxonomique).
 
-Aucune de ces évolutions n'a nécessité de développement de notre part, elles ont certes été possibles grace aux évolutions de *Collect*, mais surtout par l'apporpriation du standard XLSform.
+Aucune de ces évolutions n'a nécessité de développement de notre part, elles ont certes été possibles grace aux évolutions de *Collect*, mais surtout par l'appropriation du standard XLSform.
 
 Notre formulaire est constitué de deux boucles imbriquées : aprés avoir renseigné les informations de base du relevé (contexte, observateur...), il nous est proposé de créer une localité (objet géographique), puis d'y renseigner une ou plusieurs observations.
 
-Aprés la dernière observation de la localité courante, il est proposé de saisir une nouvelle localité... Si c'était la dernière localité, le formualire est "finalisé" et peut être envoyé au serveur.
+Aprés la dernière observation de la localité courante, il est proposé de saisir une nouvelle localité... Si c'était la dernière localité, le formulaire est "finalisé" et peut être envoyé au serveur.
 
 Voici un schéma illustrant la logique du formulaire :
 
@@ -77,6 +77,7 @@ Voici un schéma illustrant la logique du formulaire :
 ### Choix du formulaire à renseigner -> SICEN
 
 [![Choix du formulaire à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png "Choix du formuliare à renseigner"){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
+{: align=middle }
 
 Les 3 premiers écrans du formulaire a proprement parler permettent de le paramétrer et demandent à l'utilisateur ses préférences pour la session qu'il démarre.
 
@@ -94,12 +95,12 @@ Les fonctionnalités à cette étape seront masquées pendant l'utilisation du f
 
 ### Écran de paramétrage n°1 -> l'identité de l’utilisateur
 
-Le nom de l'utilisateur et sont adresse email sont demandés. L'adresse email nous sert à identifier l'utilisteur dans notre SI métier.
-Ces deux champs sont remplis par défaut avec les valeurs saisies dans les paramètres généraux de l'application. S'ils l'utilistauer ne les a pas renseigné dans l'application, il devra les saisir ici.
+Le nom de l'utilisateur et sont adresse email sont demandés. L'adresse email nous sert à identifier l'utilisateur dans notre SI métier.
+Ces deux champs sont remplis par défaut avec les valeurs saisies dans les paramètres généraux de l'application. Si l'utilisateur ne les a pas renseigné dans l'application, il devra les saisir ici.
 
 ### Écran de paramétrage n°2 -> types de géométries créées
 
-Quels types de géométrie sont suceptibles d'être créées au cours de la session ? Des points ? Des lignes ? Des polygones ?
+Quels types de géométrie sont susceptibles d'être créées au cours de la session ? Des points ? Des lignes ? Des polygones ?
 
 Voici l'extrait correspondant de la feuille *survey* (le principe est le même pour l'écran précédent et le 3ème) :
 
@@ -169,13 +170,13 @@ Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géo
 [![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png){: data-mediabox="lightbox-gallery" data-title="Choix du type de géoréférencement de l'emplacement courant"}
 {: align=middle }
 
-Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, que vous pouvez aussi dessiner à la main sur l'écran. L'automatisation peut être paramétrée selon la distance maximale ou le temps de parcours entre deux points. Une précision minimale du GPS peut aussi être configurée dans le formualire pour interdire des localisation trop peu précises.
+Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, que vous pouvez aussi dessiner à la main sur l'écran. L'automatisation peut être paramétrée selon la distance maximale ou le temps de parcours entre deux points. Une précision minimale du GPS peut aussi être configurée dans le formulaire pour interdire des localisation trop peu précises.
 
 [![localisation assistée par le GPS du téléphone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png "localisation assistée par le GPS du téléphone"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png){: data-mediabox="lightbox-gallery" data-title="localisation assistée par le GPS du téléphone"}
 [![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: data-mediabox="lightbox-gallery" data-title="coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement"}
 {: align=middle }
 
-#### Extrait de la fauille *survey*
+#### Extrait de la feuille *survey*
 
 | -- | **type**               | **name**                  | **label**                     | **calculation**                              | **required** | **appearance**      | **default** | **relevant**                                | **choice_filter**                           | **bind::odk:length** | **body::accuracyThreshold** |
 | -- | ---------------------- | ------------------------- | ----------------------------- | -------------------------------------------- | ------------ | ------------------- | ----------- | ------------------------------------------- | ------------------------------------------- | -------------------- | --------------------------- |
@@ -205,7 +206,7 @@ L'observation pourra ainsi être retrouvée dans la navigation du formulaire, av
 
 La colonne *choice_filter*, utilisée pour la question *methode_geo* permet de ne proposer que les options de la feuille *choices* pour lesquelles la valeur "filter" est contenue dans les "préferences utilisateur" calculée plus haut (écrans 2 et 3).
 
-La colonne *relevant* permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correpondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
+La colonne *relevant* permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correspondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
 
 Des fonctions permettent de réaliser des calculs pendant la saisie, ici la longueur d'un ligne ou la surface d'un polygone.
 
@@ -248,18 +249,18 @@ Ils ont souhaité que cette liste propose d'abord les noms de références, clas
 | 4    | calculate              | cd_nom_plantae    |                            |                                | pulldata('espece_plante','cd_nom_key','lb_cd_nom_key',${lb_nom_plantae}) |              |                                                              |                                                           |
 | 5    | end group              |                   |                            |                                |                                                              |              |                                                              |                                                           |
 
-Nous utilisons ici aussi un référentiel externe (qui n'est pas dans la feuille *choices* mais dans un fichier csv.
+Nous utilisons ici aussi un référentiel externe (qui n'est pas dans la feuille *choices* mais dans un fichier csv).
 
-Nous voyons (ligne n°3) que le fichier s'appelle espece_plante, et que nous allons chercher dedans les lignes pour lesquelles les colonnes code_espece_key ou lb_nom_key commencent (startwith) par les caractère tapés dans la question précédente (ligne 2).
+Nous voyons (ligne n°3) que le fichier s'appelle espece_plante, et que nous allons chercher dedans les lignes pour lesquelles les colonnes code_espece_key ou lb_nom_key commencent (startwith) par les caractères tapés dans la question précédente (ligne 2).
 
-Les propositions n'apparaitront que si le nombre de caractères tapés est supérieur ou égal au nombre de lettre requi spécifié dans les préférences utilisateur (colonne *relevant* de la ligne 3).
+Les propositions n'apparaitront que si le nombre de caractères tapés est supérieur ou égal au nombre de lettre requis spécifié dans les préférences utilisateur (colonne *relevant* de la ligne 3).
 les propositions sont ordonnées selon la valeur stockée dans la colonne *orderby* du fichier csv. Cette colonne est optionnelle, sil elle n'est pas présente, les propositions sont proposées par ordre alphabétique.
 
 Cela nous permet de calculer un ordre a posteriori lors de la génération du référentiel, qui tient compte du caractère valide du taxon (on affiche d'abord les noms de références) puis du rang du taxon (on affiche en premier les rangs supérieurs)
 
 Le suffixe *_key* utilisé dans les noms de colonnes des fichiers csv force la création d'un index lors de leur transformation en base de données sqlite sur le téléphone.
 
-Cela nous permet d'utiliser l'ensemble du référentiel taxonomique [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'INPN qui contient plusieurs centaines de milliers de lignes sans souci de performance.
+Cela nous permet d'utiliser l'ensemble du référentiel taxonomique [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'[INPN]https://inpn.mnhn.fr/accueil/index) qui contient plusieurs centaines de milliers de lignes sans souci de performance.
 Le lien vers le script SQL de génération du référentiel csv à partir de taxref est proposé dans la section "ressources" de l'article
 
 ### Renseignement de l'effectif observé
@@ -277,12 +278,12 @@ Ici pour les espèces végétales il s'agit d'un effectif par classes d’abonda
 ### Informations sur la "qualité" de la donnée
 
 [![éléments de qualité de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png "éléments de qualité de la donnée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png){: data-mediabox="lightbox-gallery" data-title="éléments de qualité de la donnée"}
-[![modalité de detrmination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de detrmination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de detrmination"}
+[![modalité de determination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de detrmination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de detrmination"}
 {: align=middle }
 
 ### Renseignement de détails optionnels, prise de photo, annotation
 
-ODK peut mobiliser l'ensemble descpateurs de votre télphone. La prise de photo peut-être utile, pour confirmer une détermination d'espèce ou documenter la dégradation d'un milieu.
+ODK peut mobiliser l'ensemble des capteurs de votre téléphone. La prise de photo peut-être utile, pour confirmer une détermination d'espèce ou documenter la dégradation d'un milieu.
 
 L'annotation de la photo peut être utile par exemple pour les observations de type "pression/menace" ou "observation générale"
 
@@ -291,7 +292,7 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 [![prendre une photo ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png "prendre une photo ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png){: data-mediabox="lightbox-gallery" data-title="prendre une photo ?"}
 [![prendre un photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png "prendre un photo"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png){: data-mediabox="lightbox-gallery" data-title="prendre un photo"}
 [![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png){: data-mediabox="lightbox-gallery" data-title="Annotation de la photo"}
-[![Visualistion de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualistion de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
+[![Visualisation de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualistion de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
 {: align=middle }
 
 #### Extrait de la feuille de calcul *survey*
@@ -302,9 +303,9 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 
 La question est de type *image*, elle ne sera affichée que si la prise d'image a été cochée dans les préférences.
 
-Les photos peuvent être annotées, et leur plus grande dimension ne déparssera pas 2000 pixels.
+Les photos peuvent être annotées, et leur plus grande dimension ne dépassera pas 2000 pixels.
 
-Cela permet d'éviter l'envoi de phots aux définitions démesurées pour l'usage qui en sera fait.
+Cela permet d'éviter l'envoi de photos aux définitions démesurées pour l'usage qui en sera fait.
 
 ### Ajout d'une nouvelle observation ? d'une nouvelle localité ?
 
@@ -315,7 +316,7 @@ Souhaitons nous ajouter une observation sur l'emplacement courant ?
     - Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
     - Si nous refusons nous pouvons finaliser le formulaire aprés avoir renseigné d'éventuels accompagnateurs
 
-[![Ajouter une observation à l'emplacment courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacmeent courant ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png){: data-mediabox="lightbox-gallery" data-title="Ajouter une observation à l'emplacmeent courant ?"}
+[![Ajouter une observation à l'emplacement courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacement courant ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png){: data-mediabox="lightbox-gallery" data-title="Ajouter une observation à l'emplacement courant ?"}
 [![Ajouter un nouvel emplacement au relevé ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png "Ajouter un nouvel emplacement au relevé ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un nouvel emplacement au relevé ?"}
 [![Ajouter un ou plusieurs accompagnateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png "Ajouter un ou plusieurs accompagnateurs"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un ou plusieurs accompagnateurs"}
 {: align=middle }
@@ -344,7 +345,7 @@ Une fois ceci fait on peut aller au bout du formulaire et le "finaliser".
 
 ### Finalisation du formulaire
 
-[![Fin de la session](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin de la session"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin de la session"}
+[![Fin de la session](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin de la session"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin de la session"}{: align=middle }
 
 Les données sont alors automatiquement envoyées ("soumises") à Central (c'est le comportement par défaut désormais).
 
@@ -354,11 +355,11 @@ Nous verrons dans le prochain article comment les données sont récupérées et
 
 Les perspectives sont nombreuses au regard des discussions en cours au sein du TAB (*Technical Advisory Board*) d'ODK.
 
-Notamment celles concernant les "entity based data collection" et les "longitudinal data collection" qui laissent entrevoir des possibilités trés intéressantes de suivis récurrents d'objets définis sur le terrain : placettes, ouvrages, parcelles agricoles...
+Notamment celles concernant les "entity based data collection" et les "longitudinal data collection" qui laissent entrevoir des possibilités très intéressantes de suivis récurrents d'objets définis sur le terrain : placettes, ouvrages, parcelles agricoles...
 
 Des évolutions des widgets cartographiques seraient intéressantes : pouvoir cliquer un objet de la carte pour le décrire, afficher de manière différenciée les objets présents sur la carte...
 
-Le forum est le lieu de discussion privilégié pour interragir avec la communauté et l'équipe de développement sur ces questions :
+Le forum est le lieu de discussion privilégié pour interagir avec la communauté et l'équipe de développement sur ces questions :
 
 - <https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353>
 - <https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/8>
@@ -366,16 +367,16 @@ Le forum est le lieu de discussion privilégié pour interragir avec la communau
 
 ODK était la porte d'entrée principale des données métiers dans le SI de l'ex CEN Languedoc-Roussillon. La fusion en septembre dernier avec le CEN Midi-Pyrénées ne semble pas remettre en cause cela.
 
-Et certains formulaires spécifiques à des projets de l'ex-région Midi-Pyrénées voient le jour, développés par des collègues nont géomaticiens !
+Et certains formulaires spécifiques à des projets de l'ex-région Midi-Pyrénées voient le jour, développés par des collègues non géomaticiens !
 
 Le graphique ci-dessous montre pour l'année 2021 le nombre de données d'observations d'espèces intégrées chaque mois selon leurs modalités de saisie.
 Nous pourrons faire un bilan plus juste à la fin de l'année quand les carnets de terrain papier auront été numérisés.
 
-[![Modalité de saisie des données de biodiversité dans notre SI en 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_saisie_des_donnees_de_biodiversite_en_2021.png "modailtés de saise en 2021"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/403/visualization/872?api_key=n0qV6a6FX6DyKCGtOBZQ1mPmw8wNfLHnha1SmDsO&)
+[![Modalité de saisie des données de biodiversité dans notre SI en 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_saisie_des_donnees_de_biodiversite_en_2021.png "modalités de saisie en 2021"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/403/visualization/872?api_key=n0qV6a6FX6DyKCGtOBZQ1mPmw8wNfLHnha1SmDsO&){: align=middle }
 
 Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'évolution des modes de saisie. 2015 marque l'arrivée d'ODK dans le SI, 2020 la création du CEN Occitanie.
 
-[![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: loading=lazy width=500px }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&)
+[![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: loading=lazy width=500px }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&){: align=middle }
 
 ----
 
@@ -400,7 +401,7 @@ Aprés des études de biologie, d'écologie, et d'informatique, j'ai intégré l
 
 J'y suis désormais co-responsable de la "Geomateam" qui compte 5 personnes, pas toutes à temps plein sur la thématique, au sein d'une équipe "Occitane" de 80 salariés, répartis sur 14 sites.
 
-PostgreSQL est le pillier strucurant de notre SI depuis 2006. Les besoins de la structure ont évolués avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers georezo notament, n'ont jamais été avares de conseils.
+PostgreSQL est le pilier structurant de notre SI depuis 2006. Les besoins de la structure ont évolués avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers [GeoRezo](https://georezo.net) notamment, n'ont jamais été avares de conseils.
 J'ai intégré il y a quelques années l'équipe de GeoRezo et j'y assure la fonction de trésorier.
 
 Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement celui d'[ODK](https://forum.getodk.org))
