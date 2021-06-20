@@ -260,7 +260,7 @@ Cela nous permet de calculer un ordre a posteriori lors de la génération du r�
 
 Le suffixe *_key* utilisé dans les noms de colonnes des fichiers csv force la création d'un index lors de leur transformation en base de données sqlite sur le téléphone.
 
-Cela nous permet d'utiliser l'ensemble du référentiel taxonomique [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'[INPN]https://inpn.mnhn.fr/accueil/index) qui contient plusieurs centaines de milliers de lignes sans souci de performance.
+Cela nous permet d'utiliser l'ensemble du référentiel taxonomique [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'[INPN](https://inpn.mnhn.fr) qui contient plusieurs centaines de milliers de lignes sans souci de performance.
 Le lien vers le script SQL de génération du référentiel csv à partir de taxref est proposé dans la section "ressources" de l'article
 
 ### Renseignement de l'effectif observé
