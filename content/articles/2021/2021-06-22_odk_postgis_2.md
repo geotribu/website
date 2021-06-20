@@ -3,7 +3,7 @@ title: "Open Data Kit pour la collecte de données géographiques dans PostGIS (
 authors: ["Mathieu BOSSAERT"]
 categories: ["article"]
 date: "2021-06-22 10:20"
-description: "Premier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
+description: "Second article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_and_postgresql.png"
 tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 ---
@@ -22,6 +22,9 @@ Des extraits du "XLSForm" du formualaire complètent les captures d'écrans pour
 Dans ces extraits, nous n'avons conservé que les colonnes renseignées pour en faciliter la lecture et noux avons numéroté les lignes.
 
 Le lien vers fichier XLSform de notre formulaire est disponible en [bas de l'article](#ressources_complémentaires).
+
+Vous pouvez utiliser ODK pour la collecte de données sur le terrain même si vous n'avez pas installé le serveur. Vous pouvez simplement créer votre fichier XLSForm, le transformer via [XLSForm Online](https://getodk.org/xlsform/) et tansferer le xml et les éventuels médias associés sur votre téléphone.
+Vous pourrez ensuite récupérer les données collectées avec [Briefcase](https://docs.getodk.org/briefcase-intro/), rapidement évoqué dans le premier épisode de cette série.
 
 Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans le précédent article.
 
@@ -96,12 +99,12 @@ Ces deux champs sont remplis par défaut avec les valeurs saisies dans les param
 
 Quels types de géométrie sont suceptibles d'être créées au cours de la session ? Des points ? Des lignes ? Des polygones ?
 
-Voici l'extrait correspondant de la feuille survey (le principe est le même pour l'écran précédent et le 3ème) :
+Voici l'extrait correspondant de la feuille *survey* (le principe est le même pour l'écran précédent et le 3ème) :
 
-* le groupe (begin_group et end_group) permet de faire apparaitre les questions dans un même écran
-* les questions sont des select_one (une seule option à choisir)
-* la liste utilisée dans la feuille choicies s'appelle "boolean"
-* et par défaut (colonne *default*) la question prend la dernière valeur enregistrée (*${last-saved#question_concernee*} elle existe, sinon "true"
+- le groupe (begin_group et end_group) permet de faire apparaitre les questions dans un même écran
+- les questions sont des select_one (une seule option à choisir)
+- la liste utilisée dans la feuille choicies s'appelle "boolean"
+- et par défaut (colonne *default*) la question prend la dernière valeur enregistrée (*${last-saved#question_concernee*} elle existe, sinon "true"
 
 | **type**           | **name**          | **label** | **required** | **default**                                      |
 | ------------------ | ----------------- | --------- | ------------ | ------------------------------------------------ |
@@ -136,7 +139,7 @@ Nous verrons plus tard avec le référentiel taxonomique que le stockage externe
 [![métadonnées utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png){: data-mediabox="lightbox-gallery" data-title="métadonnées utilisateur"}
 {: align=middle }
 
-#### Extrait de la feuille survey
+#### Extrait de la feuille *survey*
 
 |   | **type**                  | **name**        | **label**          | **required** | **appearance**             |
 | - | ------------------------- | --------------- | ------------------ | ------------ | -------------------------- |
@@ -169,7 +172,7 @@ Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, 
 [![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: data-mediabox="lightbox-gallery" data-title="coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement"}
 {: align=middle }
 
-#### Extrait de la fauille survey
+#### Extrait de la fauille *survey*
 
 | -- | **type**               | **name**                  | **label**                     | **calculation**                              | **required** | **appearance**      | **default** | **relevant**                                | **choice_filter**                           | **bind::odk:length** | **body::accuracyThreshold** |
 | -- | ---------------------- | ------------------------- | ----------------------------- | -------------------------------------------- | ------------ | ------------------- | ----------- | ------------------------------------------- | ------------------------------------------- | -------------------- | --------------------------- |
@@ -231,7 +234,7 @@ Ils ont souhaité que cette liste propose d'abord les noms de références, clas
 
 [![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png){: data-mediabox="lightbox-gallery" data-title="propositions de taxons correspondant à la recherche"}
 
-#### Extrait de la feuille de calcul survey
+#### Extrait de la feuille de calcul *survey*
 
 |      | **type**               | **name**          | **label**                  | **hint**                       | **calculation**                                              | **required** | **appearance**                                               | **relevant**                                              |
 | ---- | ---------------------- | ----------------- | -------------------------- | ------------------------------ | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
@@ -273,29 +276,40 @@ Ici pour les espèces végétales il s'agit d'un effectif par classes d’abonda
 [![modalité de detrmination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de detrmination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de detrmination"}
 {: align=middle }
 
-### Renseignement de détails optionnels, prise de photo
+### Renseignement de détails optionnels, prise de photo, annotation
+
+ODK peut mobiliser l'ensemble descpateurs de votre télphone. La prise de photo peut-être utile, pour confirmer une détermination d'espèce ou documenter la dégradation d'un milieu.
+
+L'annotation de la photo peut être utile par exemple pour les observations de type "pression/menace" ou "observation générale"
+
+[Ces photos seront mobilisables par la suite dans QGIS ou dans nos tableaux de bord.](https://si.cen-occitanie.org/?p=191)
 
 [![prendre une photo ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png "prendre une photo ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png){: data-mediabox="lightbox-gallery" data-title="prendre une photo ?"}
 [![prendre un photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png "prendre un photo"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png){: data-mediabox="lightbox-gallery" data-title="prendre un photo"}
-{: align=middle }
-
-### Annotation de la photo
-
-Cela peut être utile pour les photos de site dans le cas d'observations de type pression/menace
-[Ces photos seront mobilisables par la suite dans QGIS.](https://si.cen-occitanie.org/?p=191)
-
 [![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png){: data-mediabox="lightbox-gallery" data-title="Annotation de la photo"}
 [![Visualistion de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualistion de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
 {: align=middle }
+
+#### Extrait de la feuille de calcul *survey*
+                                               
+| **type** | **name**    | **label**         | **appearance** | **relevant**           | **parameters**  |
+| -------- | ----------- | ----------------- | -------------- | ---------------------- | --------------- |
+| image    | prise_image | Prendre une photo | annotate       | ${prendre_image}='oui' | max-pixels=2000 |
+
+La question est de type *image*, elle ne sera affichée que si la prise d'image a été cochée dans les préférences. 
+
+Les photos peuvent être annotées, et leur plus grande dimension ne déparssera pas 2000 pixels.
+
+Cela permet d'éviter l'envoi de phots aux définitions démesurées pour l'usage qui en sera fait.
 
 ### Ajout d'une nouvelle observation ? d'une nouvelle localité ?
 
 Souhaitons nous ajouter une observation sur l'emplacement courant ?
 
-* Si oui nous redémarrons une boucle de saisie d'observation.
-* Si non il nous est proposé d'ajouter une nouvelle localité.
-  * Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
-  * Si nous refusons nous pouvons finaliser le formulaire aprés avoir renseigné d'éventuels accompagnateurs
+- Si oui nous redémarrons une boucle de saisie d'observation.
+- Si non il nous est proposé d'ajouter une nouvelle localité.
+    - Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
+    - Si nous refusons nous pouvons finaliser le formulaire aprés avoir renseigné d'éventuels accompagnateurs
 
 [![Ajouter une observation à l'emplacment courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacmeent courant ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png){: data-mediabox="lightbox-gallery" data-title="Ajouter une observation à l'emplacmeent courant ?"}
 [![Ajouter un nouvel emplacement au relevé ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png "Ajouter un nouvel emplacement au relevé ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un nouvel emplacement au relevé ?"}
@@ -360,8 +374,12 @@ Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'�
 
 ## Ressources complémentaires
 
-* [le formulaire complet, prêt à l'emploi](https://forum.getodk.org/uploads/short-url/dqspKIp4h5YmKJhGCe6ZgOL85R7.zip)
-* [le script sql de génération du référentiel](https://forum.getodk.org/uploads/short-url/vBGcLFxLAjCACOLbrC7F2xaMV4X.txt)
+- [le formulaire complet, prêt à l'emploi](https://forum.getodk.org/uploads/short-url/dqspKIp4h5YmKJhGCe6ZgOL85R7.zip)
+- [le script sql de génération du référentiel](https://forum.getodk.org/uploads/short-url/vBGcLFxLAjCACOLbrC7F2xaMV4X.txt)
+- [la documentation de chaque type de question](https://docs.getodk.org/form-question-types/)
+- [le fichier XLSFform présentant l'ensemble des types de questions disponibles](https://docs.google.com/spreadsheets/d/1af_Sl8A_L8_EULbhRLHVl8OclCfco09Hq2tqb9CslwQ/edit#gid=0)
+- [utiliser ODK sans serveur Central](https://www.youtube.com/watch?v=F4tntbcdGI0)
+- [la liste des cours de stats4sd sur ODK](https://forum.getodk.org/t/great-resources-from-stats4sd-team/31045)
 
 ----
 
