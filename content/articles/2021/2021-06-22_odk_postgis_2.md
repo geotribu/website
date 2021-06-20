@@ -294,8 +294,8 @@ Souhaitons nous ajouter une observation sur l'emplacement courant ?
 
 * Si oui nous redémarrons une boucle de saisie d'observation.
 * Si non il nous est proposé d'ajouter une nouvelle localité.
-    * Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
-    * Si nous refusons nous pouvons finaliser le formaulaire aprés avoir renseigné d'éventuels accompagnateurs
+  * Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
+  * Si nous refusons nous pouvons finaliser le formulaire aprés avoir renseigné d'éventuels accompagnateurs
 
 [![Ajouter une observation à l'emplacment courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacmeent courant ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png){: data-mediabox="lightbox-gallery" data-title="Ajouter une observation à l'emplacmeent courant ?"}
 [![Ajouter un nouvel emplacement au relevé ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png "Ajouter un nouvel emplacement au relevé ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un nouvel emplacement au relevé ?"}
