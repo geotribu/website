@@ -353,9 +353,9 @@ Des évolutions des widgets cartographiques seraient intéressantes : pouvoir cl
 
 Le forum est le lieu de discussion privilégié pour interragir avec la communauté et l'équipe de développement sur ces questions :
 
-* <https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353>
-* <https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/8>
-* <https://forum.getodk.org/t/geo-using-the-mapbox-sdk-for-android/19223/17>
+- <https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353>
+- <https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/8>
+- <https://forum.getodk.org/t/geo-using-the-mapbox-sdk-for-android/19223/17>
 
 ODK était la porte d'entrée principale des données métiers dans le SI de l'ex CEN Languedoc-Roussillon. La fusion en septembre dernier avec le CEN Midi-Pyrénées ne semble pas remettre en cause cela.
 
