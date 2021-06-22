@@ -40,15 +40,16 @@ Traditionnellement, les naturalistes et les écologues du CEN notaient toutes le
 En conséquence, il pouvait s'écouler plusieurs mois avant que les observations d'un membre de l'équipe soient visibles dans le SI par les autres collègues. La création de notre outil web interne en 2009 a été un premier élément de réponse technique à cette difficulté de consolidation et de partage rapide des données.
 Nous avions eu en 2007 une expérience de collecte de données sur PDA (avec ArcPad) et l'absence de double saisie nous avait beaucoup enthousiasmé.
 
-La présentation ci-dessous faite au [FOSS4G-fr de 2018](https://www.osgeo.asso.fr/foss4gfr-2018/) reprend l'historique de notre SI et présente notre utilisation d'ODK :
+La présentation ci-dessous faite au [FOSS4G-fr de 2018](https://www.osgeo.asso.fr/foss4gfr-2018/) reprend l'historique de notre SI et présente notre utilisation d'ODK (cliquer sur l'image pour télécharger le PDF de la présentation) :
 
-[![présentation d'ODK au FOSS4G-fr 2018](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/presentation_odk_foss4gfr_2018.png "présentation d'ODK au FOSS4G-fr 2018"){: loading=lazy width=300 }](http://si.cen-occitanie.org/wp-content/uploads/2019/11/16mai_Cauchy_Bossaert-CENLR_0.pdf)
+[![présentation d'ODK au FOSS4G-fr 2018](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/presentation_odk_foss4gfr_2018.png "présentation d'ODK au FOSS4G-fr 2018"){: loading=lazy }](http://si.cen-occitanie.org/wp-content/uploads/2019/11/16mai_Cauchy_Bossaert-CENLR_0.pdf)
+{: align=middle }
 
 ## Logique du formulaire
 
-Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Elle résultait d'un "workshop" organisé avec les collègues du CEN Rhône-Alpes (Rémy Clément, Laurent Poulin et Guillaume Costes) qui maitrisaient la création de formulaire. Je m'étais alors occupé de la récupération des données collectées dans PostGIS..
+Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Elle résultait d'un atelier (_workshop_) organisé avec les collègues du CEN Rhône-Alpes (Rémy Clément, Laurent Poulin et Guillaume Costes) qui maitrisaient la création de formulaire. Je m'étais alors occupé de la récupération des données collectées dans PostGIS.
 
-Chaque révision successive a apporté son lot d'améliorations, et les questions sont devenues plus "adaptatives". Les réponses possibles dépendaient par exemple de l'espèce sélectionnée (ex. pas de têtard si on a vu un oiseau).
+Chaque révision successive a apporté son lot d'améliorations et les questions sont devenues plus "adaptatives". Les réponses possibles dépendaient par exemple de l'espèce sélectionnée (ex. pas de têtard si on a vu un oiseau).
 
 En 2019, avec le travail de Jean Baïsez, le formulaire s'est enrichi : aux observations d'espèces et d'habitats, ont été ajoutées la description des pressions ou des menaces sur les milieux naturels.
 
@@ -64,8 +65,7 @@ Aprés la dernière observation de la localité courante, il est proposé de sai
 
 Voici un schéma illustrant la logique du formulaire :
 
-[![Logique du formulaire](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg "Logique du formulaire"){: loading=lazy width=600 }](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg){: data-mediabox="lightbox-gallery" data-title="Logique du formulaire"}
-{: align=middle }
+[![Logique du formulaire](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg "Logique du formulaire"){: .img-center loading=lazy }](https://si.cen-occitanie.org/wp-content/uploads/2021/05/geotribu/logique_formulaire.jpeg){: data-mediabox="lightbox-gallery" data-title="Logique du formulaire"}
 
 ## Captures d'écran / collecte de données
 
@@ -79,7 +79,7 @@ Voici un schéma illustrant la logique du formulaire :
 [![Choix du formulaire à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png "Choix du formuliare à renseigner"){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
 {: align=middle }
 
-Les 3 premiers écrans du formulaire a proprement parler permettent de le paramétrer et demandent à l'utilisateur ses préférences pour la session qu'il démarre.
+Les 3 premiers écrans du formulaire à proprement parler permettent de le paramétrer et demandent à l'utilisateur ses préférences pour la session qu'il démarre.
 
 A la première utilisation du formulaire, les fonctionnalités seront toutes activées par défaut. Libre à chacun de désactiver celles qui lui semblent inutiles.
 
