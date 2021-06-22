@@ -77,7 +77,7 @@ C'est parti pour la collecte : on lance ODK Collect qui nous propose plusieurs o
 [![Choix du formulaire à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png "Choix du formulaire à renseigner"){: loading=lazy width=250 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
 {: align=middle }
 
-### Choix du formulaire à renseigner -> SICEN
+### Choix du formulaire à renseigner --> SICEN
 
 Les 3 premiers écrans du formulaire à proprement parler permettent de le paramétrer et demandent à l'utilisateur ses préférences pour la session qu'il démarre.
 
@@ -86,19 +86,20 @@ A la première utilisation du formulaire, les fonctionnalités seront toutes act
 A l'utilisation suivante, chacune des options sera proposée dans l'état d'activation qui était le sien lors de la précédente utilisation du formulaire. Il sera là encore possible de valider ou modifier chacun de ces choix.  
 Les fonctionnalités à cette étape seront masquées pendant l'utilisation du formulaire.
 
-[![Métadonnées relatives à l'utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
-[![Préférences de l'utilisateur - Choix des possibilités cartographiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
-[![Préférences de l'utilisateur - Types et thématiques des données à saisir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
+[![Métadonnées relatives à l'utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: loading=lazy width=200 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
+[![Préférences de l'utilisateur - Choix des possibilités cartographiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: loading=lazy width=200 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
+[![Préférences de l'utilisateur - Types et thématiques des données à saisir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: loading=lazy width=200 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
 {: align=middle }
 
-**Au fur et à mesure de la saisie, l’icône de la disquette permet d'enregistrer le formulaire en cours sur le téléphone.**
+!!! info
+    Au fur et à mesure de la saisie, l’icône de la disquette (:floppy_disk:) permet d'enregistrer le formulaire en cours sur le téléphone.
 
-### Écran de paramétrage n°1 -> l'identité de l’utilisateur
+### Écran de paramétrage n°1 -->  l'identité de l’utilisateur
 
 Le nom de l'utilisateur et sont adresse email sont demandés. L'adresse email nous sert à identifier l'utilisateur dans notre SI métier.
 Ces deux champs sont remplis par défaut avec les valeurs saisies dans les paramètres généraux de l'application. Si l'utilisateur ne les a pas renseigné dans l'application, il devra les saisir ici.
 
-### Écran de paramétrage n°2 -> types de géométries créées
+### Écran de paramétrage n°2 -->  types de géométries créées
 
 Quels types de géométrie sont susceptibles d'être créées au cours de la session ? Des points ? Des lignes ? Des polygones ?
 
@@ -116,7 +117,7 @@ Voici l'extrait correspondant de la feuille *survey* (le principe est le même p
 | select_one boolean | utiliser_geoshape | Polygones | yes          | coalesce(${last-saved#utiliser_geoshape},’true’) |
 | end group          |                   |           |              |                                                  |
 
-### Écran de paramétrage n°3 -> Types de données (thématiques) et paramétrage de l'autocomplétion
+### Écran de paramétrage n°3 -->  Types de données (thématiques) et paramétrage de l'autocomplétion
 
 Le dernier écran permet de choisir le nombre de caractères à saisir dans le recherche des espèces pour déclencher l'interrogation du référentiel ("auto-complétion").
 3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB" pour *Erithacus rubecula* qui est le rouge-gorge) .
