@@ -105,12 +105,12 @@ Ces deux champs sont remplis par défaut avec les valeurs saisies dans les param
 
 Quels types de géométrie sont susceptibles d'être créés au cours de la session ? Des points ? Des lignes ? Des polygones ?
 
-Voici l'extrait correspondant de la feuille *survey* (le principe est le même pour l'écran précédent et le 3ème) :
+Voici l'extrait correspondant de la feuille **survey** (le principe est le même pour l'écran précédent et le 3ème) :
 
-- le groupe (`begin_group` et `end_group`) permet de faire apparaitre les questions dans un même écran
-- les questions sont des `select_one` (une seule option à choisir)
-- la liste utilisée dans la feuille *choices* s'appelle `boolean`
-- et par défaut (colonne *default*) la question prend la dernière valeur enregistrée (*${last-saved#question_concernee*} elle existe, sinon `true` :
+- le groupe (*begin_group* et *end_group*) permet de faire apparaitre les questions dans un même écran
+- les questions sont des *select_one* (une seule option à choisir)
+- la liste utilisée dans la feuille **choices** s'appelle *boolea
+- et par défaut (colonne **default**) la question prend la dernière valeur enregistrée (*${last-saved#utiliser_geopoint}*), sinon *true* :
 
 | **type**           | **name**          | **label** | **required** | **default**                                      |
 | ------------------ | ----------------- | --------- | :----------: | ------------------------------------------------ |
@@ -125,7 +125,7 @@ Le dernier écran permet de choisir le nombre de caractères à saisir dans le r
 3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB" pour *Erithacus rubecula* qui est le rouge-gorge) :bird:.
 Notez que la dernière question n'est pas visible et nécessite de "scroller" l'écran.
 
-L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur" (champ de type *calculate* et fonction *concat* dans la colonne *calculation*).
+L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur" (champ de type *calculate* et fonction *concat* dans la colonne **calculation**).
 
 | **type**  | **name**                | **calculation**                                              |
 | --------- | ----------------------- | ------------------------------------------------------------ |
@@ -135,17 +135,18 @@ Une fois les paramétrages vérifiés et/ou modifiés, l'utilisateur peut choisi
 
 ### Choix de l'étude et du protocole
 
-Ces deux référentiels sont gérés dans des fichiers csv externes associés au formulaire. Les fichiers sont mentionnés dans la colonne *appearence* des lignes 2 et 3 de l'extrait ci-dessous (search('etudes') et search('protocole')).
-L'utilisation combinée de l'apparence *quick* permet de passer automatiquement à la question suivante quand une option est selectionnée.
-La feuille de calcul *choices* nous renseigne sur la structure de ces fichiers csv. Les colonnes nom_etude_id et libelle_id contiennent les identifiants à stocker, les colonnes nom_etude et libelle contiennent les "noms" à afficher dans les listes.
+Ces deux référentiels sont gérés dans des fichiers csv externes associés au formulaire. Les fichiers sont mentionnés dans la colonne **appearence** des lignes 2 et 3 de l'extrait ci-dessous (*search('etudes')* et *search('protocole')*).
 Cela permet de les mettre à jour sur le téléphone sans avoir à mettre à jour le formulaire sur le serveur.
 Nous verrons plus tard avec le référentiel taxonomique que le stockage externe de ces référentiels nous offre des possibilités de recherche intéressantes.
+
+L'utilisation combinée de l'apparence *quick* permet de passer automatiquement à la question suivante quand une option est selectionnée.
+La feuille de calcul **choices** nous renseigne sur la structure de ces fichiers csv. Les colonnes *nom_etude_id* et *libelle_id* contiennent les valeurs à stocker, les colonnes *nom_etude* et *libelle* contiennent les "noms" à afficher dans les listes.
 
 [![choix de l'étude](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png "choix de l'étude"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png){: data-mediabox="lightbox-gallery" data-title="choix de l'étude"}
 [![métadonnées utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png){: data-mediabox="lightbox-gallery" data-title="métadonnées utilisateur"}
 {: align=middle }
 
-#### Extrait de la feuille *survey*
+#### Extrait de la feuille **survey**
 
 |   | **type**                  | **name**        | **label**          | **required** | **appearance**             |
 | - | ------------------------- | --------------- | ------------------ | ------------ | -------------------------- |
@@ -173,13 +174,13 @@ Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géo
 [![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png){: data-mediabox="lightbox-gallery" data-title="Choix du type de géoréférencement de l'emplacement courant"}
 {: align=middle }
 
-Le GPS peut vous aider à dessiner automatiquement points, lignes et polygones, que vous pouvez aussi dessiner à la main sur l'écran. L'automatisation peut être paramétrée selon la distance maximale ou le temps de parcours entre deux points. Une précision minimale du GPS peut aussi être configurée dans le formulaire pour interdire des localisation trop peu précises.
+Le GPS peut nous aider à dessiner automatiquement points, lignes et polygones, que nous pouvons aussi dessiner à la main sur l'écran. L'automatisation peut être paramétrée selon la distance maximale ou le temps de parcours entre deux points. Une précision minimale du GPS peut aussi être configurée dans le formulaire pour interdire des localisations trop peu précises.
 
 [![localisation assistée par le GPS du téléphone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png "localisation assistée par le GPS du téléphone"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png){: data-mediabox="lightbox-gallery" data-title="localisation assistée par le GPS du téléphone"}
 [![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: data-mediabox="lightbox-gallery" data-title="coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement"}
 {: align=middle }
 
-#### Extrait de la feuille *survey*
+#### Extrait de la feuille **survey**
 
 | -- | **type**               | **name**                  | **label**                     | **calculation**                              | **required** | **appearance**      | **default** | **relevant**                                | **choice_filter**                           | **bind::odk:length** | **body::accuracyThreshold** |
 | -- | ---------------------- | ------------------------- | ----------------------------- | -------------------------------------------- | ------------ | ------------------- | ----------- | ------------------------------------------- | ------------------------------------------- | -------------------- | --------------------------- |
@@ -207,11 +208,11 @@ Le groupe qui suit directement ce repeat (ligne n°2) encapsule l'ensemble des �
 
 L'observation pourra ainsi être retrouvée dans la navigation du formulaire, avec l’heure de l'emplacement et l’espèce observée.
 
-La colonne *choice_filter*, utilisée pour la question *methode_geo* permet de ne proposer que les options de la feuille *choices* pour lesquelles la valeur "filter" est contenue dans les "préferences utilisateur" calculée plus haut (écrans 2 et 3).
+La colonne **choice_filter**, utilisée pour la question *methode_geo* permet de ne proposer que les options de la feuille **choices** pour lesquelles la valeur **filter** est contenue dans les "préferences utilisateur" calculée plus haut (écrans 2 et 3).
 
-La colonne *relevant* permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correspondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
+La colonne **relevant** permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correspondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
 
-Des fonctions permettent de réaliser des calculs pendant la saisie, ici la longueur d'un ligne ou la surface d'un polygone.
+Des fonctions, appelées dans la colonne **calculation** permettent de réaliser des calculs pendant la saisie, ici l'heure courante, la longueur d'un ligne et la surface d'un polygone.
 
 #### Extrait de la feuille choices
 
@@ -235,14 +236,14 @@ Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observation
 
 ### Propositions des taxons de référence et des synonymes qui correspondent aux lettres tapées
 
-Les collègues ont fait remonter des besoins d'amélioration de cette fonctionnalité. Nous proposions dans les versions précédentes une simple liste avec une saisie prédictive.
+Les collègues ont fait remonter des besoins d'amélioration de cette fonctionnalité. Nous proposions dans les versions précédentes du formulaire une simple liste avec une saisie prédictive.
 
-Ils ont souhaité que cette liste propose d'abord les noms de références, classés du rang taxonomique le plus élevé (famille, genre) au plus bas (espèce, sous-espèce...).
+Ils ont souhaité que cette liste propose d'abord les noms de référence, classés du rang taxonomique le plus élevé (famille, genre) au plus bas (espèce, sous-espèce...).
 
 [![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png){: data-mediabox="lightbox-gallery" data-title="propositions de taxons correspondant à la recherche"}
 {: align=middle }
 
-#### Extrait de la feuille de calcul *survey*
+#### Extrait de la feuille de calcul **survey**
 
 |      | **type**               | **name**          | **label**                  | **hint**                       | **calculation**                                              | **required** | **appearance**                                               | **relevant**                                              |
 | ---- | ---------------------- | ----------------- | -------------------------- | ------------------------------ | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
@@ -252,23 +253,25 @@ Ils ont souhaité que cette liste propose d'abord les noms de références, clas
 | 4    | calculate              | cd_nom_plantae    |                            |                                | pulldata('espece_plante','cd_nom_key','lb_cd_nom_key',${lb_nom_plantae}) |              |                                                              |                                                           |
 | 5    | end group              |                   |                            |                                |                                                              |              |                                                              |                                                           |
 
-Nous utilisons ici aussi un référentiel externe (qui n'est pas dans la feuille *choices* mais dans un fichier csv).
+Nous utilisons ici aussi un référentiel externe (les entrées de la "liste déroulante" ne sont pas stockées dans la feuille **choices** mais dans un fichier csv).
 
-Nous voyons (ligne n°3) que le fichier s'appelle espece_plante, et que nous allons chercher dedans les lignes pour lesquelles les colonnes code_espece_key ou lb_nom_key commencent (startwith) par les caractères tapés dans la question précédente (ligne 2).
+Nous voyons (ligne n°3) que le fichier s'appelle *espece_plant*e, et que nous allons y chercher les lignes pour lesquelles les colonnes **code_espece_key** ou **lb_nom_key** commencent (*startswith*) par les caractères tapés dans la question précédente (ligne 2).
+```
+quick search('espece_plante', 'startswith', 'code_espece_key,lb_nom_key', ${recherche_plantae})
+```
 
-Les propositions n'apparaitront que si le nombre de caractères tapés est supérieur ou égal au nombre de lettre requis spécifié dans les préférences utilisateur (colonne *relevant* de la ligne 3).
-les propositions sont ordonnées selon la valeur stockée dans la colonne *orderby* du fichier csv. Cette colonne est optionnelle, sil elle n'est pas présente, les propositions sont proposées par ordre alphabétique.
+Les propositions n'apparaitront que si le nombre de caractères saisis est supérieur ou égal au nombre de lettres requises, spécifié dans les préférences utilisateur (colonne **relevant** de la ligne 3).
+Elles seront ordonnées selon la valeur stockée dans la colonne **orderby** du fichier csv. Cette colonne est optionnelle, si elle n'est pas présente, les propositions seront affichées dans l'ordre alphabétique.
 
-Cela nous permet de calculer un ordre a posteriori lors de la génération du référentiel, qui tient compte du caractère valide du taxon (on affiche d'abord les noms de références) puis du rang du taxon (on affiche en premier les rangs supérieurs)
+Cela nous permet de calculer un ordre a priori, lors de la génération du référentiel, qui tient compte du caractère valide du taxon puis de son niveau taxonomique.
 
 Le suffixe *_key* utilisé dans les noms de colonnes des fichiers csv force la création d'un index lors de leur transformation en base de données sqlite sur le téléphone.
-
-Cela nous permet d'utiliser l'ensemble du référentiel taxonomique [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'[INPN](https://inpn.mnhn.fr) qui contient plusieurs centaines de milliers de lignes sans souci de performance.
+C'est trés utile pour interroger efficacement les référentiels taxonomiques (faune et flore) issus de [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'[INPN](https://inpn.mnhn.fr), qui comptent chacun plusieurs dizaines de milliers de lignes.
 Le lien vers le script SQL de génération du référentiel csv à partir de taxref est proposé dans la section "ressources" de l'article
 
 ### Renseignement de l'effectif observé
 
-L'espèce mentionnée a-t-elle été observée ?
+L'espèce mentionnée a-t-elle été observée ? Cette question est posée car il est important dans certains protocoles de mentionner l'absence d'un taxon recherché.
 
 Si oui, les écrans suivants (ou leurs homologues pour la Faune sont affichés)
 
@@ -284,7 +287,7 @@ Ici pour les espèces végétales il s'agit d'un effectif par classes d’abonda
 [![modalité de determination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de detrmination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de detrmination"}
 {: align=middle }
 
-### Renseignement de détails optionnels, prise de photo, annotation
+### Renseignement de détails optionnels, prise de photo :camera: , annotation
 
 ODK peut mobiliser l'ensemble des capteurs de votre téléphone. La prise de photo peut-être utile, pour confirmer une détermination d'espèce ou documenter la dégradation d'un milieu.
 
@@ -298,17 +301,16 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 [![Visualisation de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualistion de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
 {: align=middle }
 
-#### Extrait de la feuille de calcul *survey*
+#### Extrait de la feuille de calcul **survey**
 
-| **type** | **name**    | **label**         | **appearance** | **relevant**           | **parameters**  |
-| -------- | ----------- | ----------------- | -------------- | ---------------------- | --------------- |
-| image    | prise_image | Prendre une photo | annotate       | ${prendre_image}='oui' | max-pixels=2000 |
+| **type**                 | **name**      | **label**           | **appearance** | **relevant**           | **parameters**  |
+| ------------------------ | ------------- | ------------------- | -------------- | ---------------------- | --------------- |
+| select_one prendre_image | prendre_image | Prendre une photo ? |                |                        |                 |
+| image                    | prise_image   | Prendre une photo   | annotate       | ${prendre_image}='oui' | max-pixels=2000 |
 
-La question est de type *image*, elle ne sera affichée que si la prise d'image a été cochée dans les préférences.
+La question est de type *image*, elle ne sera affichée que si l'utilisateur souhaite prendre une photo (*${prendre_image}='oui'*).
 
-Les photos peuvent être annotées, et leur plus grande dimension ne dépassera pas 2000 pixels.
-
-Cela permet d'éviter l'envoi de photos aux définitions démesurées pour l'usage qui en sera fait.
+Les photos peuvent être annotées (*annotate*), et leur taille est limitée pour éviter l'envoi d'images trop grandes pour l'usage qui en sera fait (*max-pixels=2000*).
 
 ### Ajout d'une nouvelle observation ? d'une nouvelle localité ?
 
