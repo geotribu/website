@@ -22,8 +22,8 @@ Ce premier article, introductif, présente le projet ODK, ses outils ainsi que l
 Le second détaillera les possibilités de création de formulaire à travers l'exemple détaillé du formulaire généraliste du [Conservatoire d'Espaces Naturels d'Occitanie].  
 Le dernier sera consacré à la récupération des données collectées dans une base de données PostGIS.
 
-<!-- [2ème partie : Mise en oeuvre d'ODK avec la présentation détaillée de notre formulaire "généraliste" :fontawesome-solid-step-forward:](#){: .md-button }
-[3ème partie : Récupération des données collectées dans notre base de données PostGIS :fontawesome-solid-fast-forward:](#){: .md-button }
+[2ème partie : Création d'un formulaire ODK :fontawesome-solid-step-forward:](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+<!--[3ème partie : Récupération des données collectées dans notre base de données PostGIS :fontawesome-solid-fast-forward:](#){: .md-button }
 {: align=middle } -->
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -341,8 +341,8 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - La mise en oeuvre d'ODK avec la présentation détaillée de notre formulaire "généraliste"
 - La récupération des données collectées dans notre base de données PostGIS
 
-<!-- [Lire la deuxième partie :fontawesome-solid-step-forward:](#){: .md-button }
-{: align=middle } -->
+[Lire la deuxième partie :fontawesome-solid-step-forward:](https://static.geotribu.fr/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+{: align=middle }
 
 ----
 
@@ -367,12 +367,12 @@ Aprés des études de biologie, d'écologie et d'informatique, j'ai intégré le
 
 J'y suis désormais co-responsable de la "Geomateam" qui compte 5 personnes, pas toutes à temps plein sur la thématique, au sein d'une équipe "Occitane" de 80 salariés, répartis sur 14 sites.
 
-PostgreSQL est le pillier structurant de notre SI depuis 2006. Les besoins de la structure ont évolués avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers GeoRezo notament, n'ont jamais été avares de conseils.  
+PostgreSQL est le pillier strucurant de notre SI depuis 2006. Les besoins de la structure ont évolués avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers georezo notament, n'ont jamais été avares de conseils.
 J'ai intégré il y a quelques années l'équipe de GeoRezo et j'y assure la fonction de trésorier.
 
 Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement celui d'[ODK](https://forum.getodk.org))
 
-Vous pouvez me contacter pour échanger sur le sujet via [Twitter](https://twitter.com/MathieuBossaert), [Linkedin](https://www.linkedin.com/in/mathieu-bossaert-08b73a205/) ou par courriel à l'adresse prenom.nom@...
+Vous pouvez me contacter pour échanger sur le sujet via [twitter](https://twitter.com/MathieuBossaert) et [linkedin](https://www.linkedin.com/in/mathieu-bossaert-08b73a205/).
 
 <!-- Hyperlinks reference -->
 [Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
