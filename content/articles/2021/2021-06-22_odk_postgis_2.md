@@ -35,14 +35,14 @@ Dans un dernier article, nous verrons comment les données collectées sur les t
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
-Traditionnellement, les naturalistes et les écologues du CEN notaient toutes leurs observations sur des carnets de terrain papier, et les informatisaient au retour au bureau, via une interface web, un tableur ou une couche SIG. Dans le cas des tableurs et couches SIG -fichiers-, une étape supplémentaire était nécessaire pour consolider les données saisies dans notre base de données PostGIS.
+Traditionnellement, les naturalistes et les écologues du CEN notaient toutes leurs observations sur des carnets de terrain papier, et les informatisaient au retour au bureau, via une interface web, un tableur ou une couche SIG. Dans le cas des tableurs et fichiers SIG, une étape supplémentaire était nécessaire pour consolider les données saisies dans notre base de données PostGIS.
 
 En conséquence, il pouvait s'écouler plusieurs mois avant que les observations d'un membre de l'équipe soient visibles dans le SI par les autres collègues. La création de notre outil web interne en 2009 a été un premier élément de réponse technique à cette difficulté de consolidation et de partage rapide des données.
 Nous avions eu en 2007 une expérience de collecte de données sur PDA (avec ArcPad) et l'absence de double saisie nous avait beaucoup enthousiasmé.
 
-Cette présentation faite au FOSS4G-fr de 2018 reprend l'historique de notre SI et présente notre utilisation d'ODK :
+La présentation ci-dessous faite au [FOSS4G-fr de 2018](https://www.osgeo.asso.fr/foss4gfr-2018/) reprend l'historique de notre SI et présente notre utilisation d'ODK :
 
-[16mai_Cauchy_Bossaert-CENLR_0.pdf|attachment](upload://u9ABQjmft6uNNSniqHtUMPstwJz.pdf) (3.0 MB)
+[![présentation d'ODK au FOSS4G-fr 2018](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/presentation_odk_foss4gfr_2018.png "présentation d'ODK au FOSS4G-fr 2018"){: loading=lazy width=300 }](http://si.cen-occitanie.org/wp-content/uploads/2019/11/16mai_Cauchy_Bossaert-CENLR_0.pdf)
 
 ## Logique du formulaire
 
