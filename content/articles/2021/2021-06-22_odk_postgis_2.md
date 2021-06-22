@@ -16,21 +16,21 @@ tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 
 ![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
 
-Aprés vous avoir présenté la place les outils proposés par ODK et la place qu'ils occupent dans notre SI centré sur PostGIS, ce second article illustre à travers notre formulaire généraliste l'utilisation des différents "widgets" à notre disposition.
+Aprés vous avoir présenté les outils proposés par ODK et la place qu'ils occupent dans notre SI centré sur PostGIS, ce second article illustre à travers notre formulaire généraliste l'utilisation des différents "widgets" à notre disposition.
 Des extraits du "XLSForm" du formulaire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "survey" et de la feuille de calcul "choices".
 
 Dans ces extraits, nous n'avons conservé que les colonnes renseignées pour en faciliter la lecture et nous avons numéroté les lignes.
 
-Le lien vers fichier XLSform de notre formulaire est disponible en [bas de l'article](#ressources_complémentaires).
+Le lien vers le fichier [XLSForm] de notre formulaire est disponible en [bas de l'article](#ressources-complementaires).
 
-Vous pouvez utiliser ODK pour la collecte de données sur le terrain même si vous n'avez pas installé le serveur. Vous pouvez simplement créer votre fichier XLSForm, le transformer via [XLSForm Online](https://getodk.org/xlsform/) et transférer le xml et les éventuels médias associés sur votre téléphone.
+Vous pouvez utiliser ODK pour la collecte de données sur le terrain même si vous n'avez pas installé le serveur. Vous pouvez simplement créer votre fichier [XLSForm], le transformer via [XLSForm Online](https://getodk.org/xlsform/) et transférer le xml et les éventuels médias associés sur votre téléphone.
 Vous pourrez ensuite récupérer les données collectées avec [Briefcase](https://docs.getodk.org/briefcase-intro/), rapidement évoqué dans le premier épisode de cette série.
 
 Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans l'article précédent.
 
-[1ère partie : Introduction à ODK :fontawesome-solid-step-backward:](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
-<!--[3ème partie : Récupération des données dans notre SI :fontawesome-solid-step-forward:](#){: .md-button }
-{: align=middle }-->
+[:fontawesome-solid-step-backward: 1ère partie : Introduction à ODK](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
+{: align=middle }
+<!-- [3è partie : Récupération des données dans notre SI :fontawesome-solid-step-forward:](#){: .md-button } -->
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -56,7 +56,7 @@ Toutes ces données sont géoréférencées (point, lignes ou polygones) et peuv
 
 En 2021, le système de préférences a été amélioré et les attentes évoquées par les collègues à la fin de la saison 2020 ont été satisfaites (navigation dans les données collectées, recherche des taxons dans le référentiel taxonomique).
 
-Aucune de ces évolutions n'a nécessité de développement de notre part, elles ont certes été possibles grace aux évolutions de *Collect*, mais surtout par l'appropriation du standard XLSform.
+Aucune de ces évolutions n'a nécessité de développement de notre part, elles ont certes été possibles grace aux évolutions de *Collect*, mais surtout par l'appropriation du standard [XLSForm].
 
 Notre formulaire est constitué de deux boucles imbriquées : aprés avoir renseigné les informations de base du relevé (contexte, observateur...), il nous est proposé de créer une localité (objet géographique), puis d'y renseigner une ou plusieurs observations.
 
