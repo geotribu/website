@@ -2,7 +2,7 @@
 title: "Open Data Kit pour la collecte de données géographiques dans PostGIS (2/3)"
 authors: ["Mathieu BOSSAERT"]
 categories: ["article"]
-date: "2021-06-22 10:20"
+date: "2021-06-22 22:50"
 description: "Second article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_and_postgresql.png"
 tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
@@ -169,7 +169,7 @@ Une fois ces paramètres de "session" renseignés, nous pouvons commencer la sai
 
 ### Création d'une localité
 
-Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans [la première partie de cet article](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/).
+Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans [la première partie de cet article](/articles/2021/2021-06-08_odk_postgis_1/).
 
 [![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png){: data-mediabox="lightbox-gallery" data-title="Choix du type de géoréférencement de l'emplacement courant"}
 {: align=middle }
@@ -257,7 +257,7 @@ Nous utilisons ici aussi un référentiel externe (les entrées de la "liste dé
 
 Nous voyons (ligne n°3) que le fichier s'appelle *espece_plante*, et que nous allons y chercher les lignes pour lesquelles les colonnes **code_espece_key** ou **lb_nom_key** commencent (*startswith*) par les caractères tapés dans la question précédente (ligne 2).
 
-```
+```excel
 quick search('espece_plante', 'startswith', 'code_espece_key,lb_nom_key', ${recherche_plantae})
 ```
 
@@ -288,7 +288,7 @@ Ici pour les espèces végétales il s'agit d'un effectif par classes d’abonda
 [![modalité de determination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de determination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de determination"}
 {: align=middle }
 
-### Renseignement de détails optionnels, prise de photo :camera: , annotation
+### Renseignement de détails optionnels, prise de photo :camera:, annotation
 
 ODK peut mobiliser l'ensemble des capteurs de votre téléphone. La prise de photo peut-être utile, pour confirmer une détermination d'espèce ou documenter la dégradation d'un milieu.
 
@@ -296,7 +296,6 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 
 [Ces photos seront mobilisables par la suite dans QGIS ou dans nos tableaux de bord.](https://si.cen-occitanie.org/?p=191)
 
-[![prendre une photo ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png "prendre une photo ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png){: data-mediabox="lightbox-gallery" data-title="prendre une photo ?"}
 [![prendre un photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png "prendre un photo"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png){: data-mediabox="lightbox-gallery" data-title="prendre un photo"}
 [![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png){: data-mediabox="lightbox-gallery" data-title="Annotation de la photo"}
 [![Visualisation de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualisation de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
@@ -356,7 +355,7 @@ Une fois ceci fait on peut aller au bout du formulaire et le "finaliser".
 
 Les données sont alors automatiquement envoyées ("soumises") à Central (c'est le comportement par défaut désormais).
 
-Nous verrons dans le prochain article comment les données sont récupérées et intégrées à notre base de données PostGis.
+Nous verrons dans le prochain article comment les données sont récupérées et intégrées à notre base de données PostGIS.
 
 ## Perspectives
 
