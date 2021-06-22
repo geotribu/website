@@ -378,12 +378,12 @@ Et certains formulaires spécifiques à des projets de l'ex-région Midi-Pyrén�
 Le graphique ci-dessous montre pour l'année 2021 le nombre de données d'observations d'espèces intégrées chaque mois selon leurs modalités de saisie.
 Nous pourrons faire un bilan plus juste à la fin de l'année quand les carnets de terrain papier auront été numérisés.
 
-[![Modalité de saisie des données de biodiversité dans notre SI en 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_saisie_des_donnees_de_biodiversite_en_2021.png "modalités de saisie en 2021"){: loading=lazy width=300px }](https://dashboards.cen-occitanie.org/embed/query/403/visualization/872?api_key=n0qV6a6FX6DyKCGtOBZQ1mPmw8wNfLHnha1SmDsO&)
+[![Modalité de saisie des données de biodiversité dans notre SI en 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_saisie_des_donnees_de_biodiversite_en_2021.png "modalités de saisie en 2021"){: .img-center loading=lazy }](https://dashboards.cen-occitanie.org/embed/query/403/visualization/872?api_key=n0qV6a6FX6DyKCGtOBZQ1mPmw8wNfLHnha1SmDsO&)
 {: align=middle }
 
 Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'évolution des modes de saisie. 2015 marque l'arrivée d'ODK dans le SI, 2020 la création du CEN Occitanie.
 
-[![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: loading=lazy width=500px }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&)
+[![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: .img-center loading=lazy }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&)
 {: align=middle }
 
 ----
