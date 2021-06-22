@@ -28,7 +28,7 @@ Vous pourrez ensuite récupérer les données collectées avec [Briefcase](https
 
 Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans l'article précédent.
 
-[:fontawesome-solid-step-backward: 1ère partie : Introduction à ODK](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
+[:fontawesome-solid-step-backward: 1ère partie : Introduction à ODK](/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
 {: align=middle }
 <!-- [3è partie : Récupération des données dans notre SI :fontawesome-solid-step-forward:](#){: .md-button } -->
 
