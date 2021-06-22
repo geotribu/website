@@ -35,6 +35,8 @@ Dans un dernier article, nous verrons comment les données collectées sur les t
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
+## Introduction
+
 Traditionnellement, les naturalistes et les écologues du CEN notaient toutes leurs observations sur des carnets de terrain papier, et les informatisaient au retour au bureau, via une interface web, un tableur ou une couche SIG. Dans le cas des tableurs et fichiers SIG, une étape supplémentaire était nécessaire pour consolider les données saisies dans notre base de données PostGIS.
 
 En conséquence, il pouvait s'écouler plusieurs mois avant que les observations d'un membre de l'équipe soient visibles dans le SI par les autres collègues. La création de notre outil web interne en 2009 a été un premier élément de réponse technique à cette difficulté de consolidation et de partage rapide des données.
@@ -96,22 +98,22 @@ Les fonctionnalités à cette étape seront masquées pendant l'utilisation du f
 
 ### Écran de paramétrage n°1 -->  l'identité de l’utilisateur
 
-Le nom de l'utilisateur et sont adresse email sont demandés. L'adresse email nous sert à identifier l'utilisateur dans notre SI métier.
-Ces deux champs sont remplis par défaut avec les valeurs saisies dans les paramètres généraux de l'application. Si l'utilisateur ne les a pas renseigné dans l'application, il devra les saisir ici.
+Le nom de l'utilisateur et son adresse email sont demandés. L'adresse email nous sert à identifier l'utilisateur dans notre SI métier.  
+Ces deux champs sont remplis par défaut avec les valeurs saisies dans les paramètres généraux de l'application. Si l'utilisateur ne les a pas renseignés dans l'application, il devra les saisir ici.
 
 ### Écran de paramétrage n°2 -->  types de géométries créées
 
-Quels types de géométrie sont susceptibles d'être créées au cours de la session ? Des points ? Des lignes ? Des polygones ?
+Quels types de géométrie sont susceptibles d'être créés au cours de la session ? Des points ? Des lignes ? Des polygones ?
 
 Voici l'extrait correspondant de la feuille *survey* (le principe est le même pour l'écran précédent et le 3ème) :
 
-- le groupe (begin_group et end_group) permet de faire apparaitre les questions dans un même écran
-- les questions sont des select_one (une seule option à choisir)
-- la liste utilisée dans la feuille choicies s'appelle "boolean"
-- et par défaut (colonne *default*) la question prend la dernière valeur enregistrée (*${last-saved#question_concernee*} elle existe, sinon "true"
+- le groupe (`begin_group` et `end_group`) permet de faire apparaitre les questions dans un même écran
+- les questions sont des `select_one` (une seule option à choisir)
+- la liste utilisée dans la feuille *choices* s'appelle `boolean`
+- et par défaut (colonne *default*) la question prend la dernière valeur enregistrée (*${last-saved#question_concernee*} elle existe, sinon `true` :
 
 | **type**           | **name**          | **label** | **required** | **default**                                      |
-| ------------------ | ----------------- | --------- | ------------ | ------------------------------------------------ |
+| ------------------ | ----------------- | --------- | :----------: | ------------------------------------------------ |
 | select_one boolean | utiliser_geopoint | Points    | yes          | coalesce(${last-saved#utiliser_geopoint},’true’) |
 | select_one boolean | utiliser_geotrace | Lignes    | yes          | coalesce(${last-saved#utiliser_geotrace},’true’) |
 | select_one boolean | utiliser_geoshape | Polygones | yes          | coalesce(${last-saved#utiliser_geoshape},’true’) |
@@ -119,8 +121,8 @@ Voici l'extrait correspondant de la feuille *survey* (le principe est le même p
 
 ### Écran de paramétrage n°3 -->  Types de données (thématiques) et paramétrage de l'autocomplétion
 
-Le dernier écran permet de choisir le nombre de caractères à saisir dans le recherche des espèces pour déclencher l'interrogation du référentiel ("auto-complétion").
-3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB" pour *Erithacus rubecula* qui est le rouge-gorge) .
+Le dernier écran permet de choisir le nombre de caractères à saisir dans le recherche des espèces pour déclencher l'interrogation du référentiel ("auto-complétion").  
+3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB" pour *Erithacus rubecula* qui est le rouge-gorge) :bird:.
 Notez que la dernière question n'est pas visible et nécessite de "scroller" l'écran.
 
 L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur" (champ de type *calculate* et fonction *concat* dans la colonne *calculation*).
