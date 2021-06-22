@@ -139,7 +139,7 @@ Ces deux référentiels sont gérés dans des fichiers csv externes associés au
 Cela permet de les mettre à jour sur le téléphone sans avoir à mettre à jour le formulaire sur le serveur.
 Nous verrons plus tard avec le référentiel taxonomique que le stockage externe de ces référentiels nous offre des possibilités de recherche intéressantes.
 
-L'utilisation combinée de l'apparence *quick* permet de passer automatiquement à la question suivante quand une option est selectionnée.
+L'utilisation combinée de l'apparence *quick* permet de passer automatiquement à la question suivante quand une option est sélectionnée.
 La feuille de calcul **choices** nous renseigne sur la structure de ces fichiers csv. Les colonnes *nom_etude_id* et *libelle_id* contiennent les valeurs à stocker, les colonnes *nom_etude* et *libelle* contiennent les "noms" à afficher dans les listes.
 
 [![choix de l'étude](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png "choix de l'étude"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png){: data-mediabox="lightbox-gallery" data-title="choix de l'étude"}
@@ -208,7 +208,7 @@ Le groupe qui suit directement ce repeat (ligne n°2) encapsule l'ensemble des �
 
 L'observation pourra ainsi être retrouvée dans la navigation du formulaire, avec l’heure de l'emplacement et l’espèce observée.
 
-La colonne **choice_filter**, utilisée pour la question *methode_geo* permet de ne proposer que les options de la feuille **choices** pour lesquelles la valeur **filter** est contenue dans les "préferences utilisateur" calculée plus haut (écrans 2 et 3).
+La colonne **choice_filter**, utilisée pour la question *methode_geo* permet de ne proposer que les options de la feuille **choices** pour lesquelles la valeur **filter** est contenue dans les "préférences utilisateur" calculée plus haut (écrans 2 et 3).
 
 La colonne **relevant** permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correspondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
 
@@ -255,7 +255,8 @@ Ils ont souhaité que cette liste propose d'abord les noms de référence, class
 
 Nous utilisons ici aussi un référentiel externe (les entrées de la "liste déroulante" ne sont pas stockées dans la feuille **choices** mais dans un fichier csv).
 
-Nous voyons (ligne n°3) que le fichier s'appelle *espece_plant*e, et que nous allons y chercher les lignes pour lesquelles les colonnes **code_espece_key** ou **lb_nom_key** commencent (*startswith*) par les caractères tapés dans la question précédente (ligne 2).
+Nous voyons (ligne n°3) que le fichier s'appelle *espece_plante*, et que nous allons y chercher les lignes pour lesquelles les colonnes **code_espece_key** ou **lb_nom_key** commencent (*startswith*) par les caractères tapés dans la question précédente (ligne 2).
+
 ```
 quick search('espece_plante', 'startswith', 'code_espece_key,lb_nom_key', ${recherche_plantae})
 ```
@@ -284,7 +285,7 @@ Ici pour les espèces végétales il s'agit d'un effectif par classes d’abonda
 ### Informations sur la "qualité" de la donnée
 
 [![éléments de qualité de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png "éléments de qualité de la donnée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png){: data-mediabox="lightbox-gallery" data-title="éléments de qualité de la donnée"}
-[![modalité de determination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de detrmination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de detrmination"}
+[![modalité de determination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de determination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de determination"}
 {: align=middle }
 
 ### Renseignement de détails optionnels, prise de photo :camera: , annotation
@@ -298,7 +299,7 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 [![prendre une photo ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png "prendre une photo ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/proposition_prise_de_photo_et_remarque.png){: data-mediabox="lightbox-gallery" data-title="prendre une photo ?"}
 [![prendre un photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png "prendre un photo"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png){: data-mediabox="lightbox-gallery" data-title="prendre un photo"}
 [![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png){: data-mediabox="lightbox-gallery" data-title="Annotation de la photo"}
-[![Visualisation de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualistion de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
+[![Visualisation de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualisation de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
 {: align=middle }
 
 #### Extrait de la feuille de calcul **survey**
@@ -409,7 +410,7 @@ Aprés des études de biologie, d'écologie, et d'informatique, j'ai intégré l
 
 J'y suis désormais co-responsable de la "Geomateam" qui compte 5 personnes, pas toutes à temps plein sur la thématique, au sein d'une équipe "Occitane" de 80 salariés, répartis sur 14 sites.
 
-PostgreSQL est le pilier structurant de notre SI depuis 2006. Les besoins de la structure ont évolués avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers [GeoRezo](https://georezo.net) notamment, n'ont jamais été avares de conseils.
+PostgreSQL est le pilier structurant de notre SI depuis 2006. Les besoins de la structure ont évolué avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers [GeoRezo](https://georezo.net) notamment, n'ont jamais été avares de conseils.
 J'ai intégré il y a quelques années l'équipe de GeoRezo et j'y assure la fonction de trésorier.
 
 Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement celui d'[ODK](https://forum.getodk.org))
