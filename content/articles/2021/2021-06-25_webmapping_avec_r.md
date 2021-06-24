@@ -590,10 +590,13 @@ Bon courage !
 
 ### Romain Lacroix
 
+![Portrait Romain Lacroix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/rl_225.jpg "Portrait Romain Lacroix"){: .img-rdp-news-thumb }
+
+
 Ingénieur SIG mutualisé entre différents organismes vitivinicoles de la Vallée du Rhône, mon travail consiste à simplifier le travail administratif d'une petite dizaine de milliers d'exploitations agricoles à travers des technologies SIG et d'assister les études techniques et expérimentations réalisées en viticulture et oenologie.
 
 Géographe attiré par les géostatistiques et la cartographie sous ses différentes formes, fouilleur de données (spatiales ou non), j'utilise essentiellement QGIS et R. Je produis à l'occasion quelques trucs visibles sur mon compte [Twitter](https://twitter.com/lacxrx).
 
-En attendant d'avoir une photo bien (soon), on va dire que je suis un GISticier masqué !
+Je suis aussi un GISticier masqué !
 
-![GISticier masqué](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/GISticier_masque_zorro.jpg "GISticier masqué"){: .img-center loading=lazy }
+![GISticier masqué](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/GISticier_masque_zorro.jpg "GISticier masqué"){: .img-center loading=lazy; width: 50%;  }
