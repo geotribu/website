@@ -578,8 +578,7 @@ options = WMSTileOptions(token = "public", format = "image/png", transparent = F
 ## Conclusion
 
 On refait tourner notre script sur les 10 exploitations, et pour chacune d'entre elles nous avons une carte interactive avec ses parcelles, différents fonds de carte, la géologie, les aires AOC, les ZNIEFF et on peut empiler facilement un certain nombre de couches sans monter bien haut en ce qui concerne la taille des fichiers (entre 6 et 20 Mo selon le nombre de polygones effectivement compris dans le fichier, ici les parcelles de l'exploitation). Il est possible de filtrer nos données, d'interagir avec dans le tableau qui peut être exporté, de réaliser des mesures sur la carte.
-
-Le fichier peut ensuite être partagé, envoyé par mail, uploadé sur un site ou déposé sur une base de données documentaire.
+Le fichier peut ensuite être partagé, envoyé par mail, uploadé sur un site (vous pouvez d'ailleurs consulter un exemple [ici](https://rxlacroix.github.io/exempleRwebmap/index.html)) ou déposé sur une base de données documentaire.
 Il est alors possible de créer à la chaîne et pour un grand nombre d'opérateurs (testé par votre humble serviteur pour 10'000 cartes différentes) ce type de petites cartes personnalisées très utiles et relativement faciles à mettre en place.
 
 Bon courage !
