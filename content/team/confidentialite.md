@@ -1,5 +1,5 @@
 ---
-title: "Confidentialité des données "
+title: "Confidentialité des données"
 authors: ["Geotribu"]
 categories: ["meta"]
 date: "2021-05-20 10:20"
