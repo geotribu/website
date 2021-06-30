@@ -2,7 +2,7 @@
 title: "Préconfigurer QGIS en entreprise"
 authors: ["Régis Haubourg"]
 categories: ["article", "tutoriel"]
-date: "2021-07-01 10:20"
+date: "2021-07-06 10:20"
 description: "vous voulez contrôler l'interface et les paramètres de QGIS dans votre organisation. Ne pas infliger à vos utilisateurs de trifouiller les réglages du proxy, ou connaître l'adresse IP des serveurs PostGIS? Suivez le guide pour industrialiser votre installation personnalisée"
 image: "https://cdn.geotribu.fr/img/tuto/"
 tags: "QGIS,personnalisation,osgeo4W,déploiement,configuration"
@@ -92,7 +92,7 @@ Et donc... roulement de tambours ...
 
 **J'ai le plaisir d'annoncer la naissance du projet:**
 
-https://github.com/haubourg/custom-osgeo4w-qgis
+<https://github.com/haubourg/custom-osgeo4w-qgis>
 
 C'est un modèle qui a simplement pour vocation de vous aider à construire vos propres paquets OSGEO4W dans ce cas d'utilisation bien particulier.
 
@@ -102,7 +102,7 @@ Copiez le, modifiez le, partagez le. Et si vous pensez pouvoir l'améliorer, pro
 
 Voilà la structure type du paquet de configuration :
 
-```
+```ascii
 qgis-yourorganizationname/
 ├── apps
 │   ├── qgis-yourorganizationname
@@ -170,7 +170,7 @@ Le script `deploy.sh` va déplacer l'archive `tar.bz2` dans votre miroir local e
 
 Vous devriez trouver à la fin du fichier ce genre de chose :
 
-```
+```ini
 @qgis-custom
 sdesc: "QGIS LTR configuration package"
 ldesc: "QGIS LTR custom configuration package"
@@ -192,9 +192,10 @@ Pensez à changer les noms de variables hein.
 ```batch
 .\osgeo4w-setup.exe  --menu-name "WINDOWS_MENU_NAME" --root "X:\OSGEO4W_DEPLOY_TEST\INSTALL" --advanced  --quiet-mode --local-install --local-package-dir "X:\OSGEO4W_DEPLOY_TEST\PAQUETS\http%3a%2f%2fwww.norbit.de%2fosgeo4w%2f" --autoaccept  --delete-orphans --upgrade-also -C Libs -C Desktop -C Commandline_Utilitiesinstall
 ```
+
 C'est incrémental, donc la première installation prendra quelques minutes, les suivantes, quelques secondes.
 
-Il est possible d'installer et désinstaller chaque paquet et ses dépendances finemement, allez lire le README :)
+Il est possible d'installer et désinstaller chaque paquet et ses dépendances finemement, allez lire le README :smile:.
 
 ## Déployer !
 
