@@ -17,13 +17,13 @@ tags: "QGIS,personnalisation,osgeo4W,déploiement,configuration"
 Pré-requis :
 
 - être en charge de déployer QGIS sur des postes d'une organisation, grande ou petite
-- ne pas avoir peur de petits scripts shell et batch 
+- ne pas avoir peur de petits scripts shell et batch
 
 ## Introduction
 
 ![logo QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/tuning_qgis.png){: .img-rdp-news-thumb }
 
-Vous aimez que tout soit bien paramétré pour vos utilisateurs? Vous avez ce coté psycho rigide de l'admin SIG perfectionniste? Vous voulez déployer de manière transparente un jeu de plugins obligatoires? Ou vous aimeriez tout simplement que les connexions aux bases de données dans les projets QGIS soient toutes les mêmes? 
+Vous aimez que tout soit bien paramétré pour vos utilisateurs? Vous avez ce coté psycho rigide de l'admin SIG perfectionniste? Vous voulez déployer de manière transparente un jeu de plugins obligatoires? Ou vous aimeriez tout simplement que les connexions aux bases de données dans les projets QGIS soient toutes les mêmes?
 
 Dans la série des articles parlant de l'installeur [OSGeo4W en ligne de commande](https://static.geotribu.fr/articles/2020/2020-07-03_deploy_qgis_windows/), ou de la personnalisation du [splashscreen](https://static.geotribu.fr/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
 
@@ -32,7 +32,7 @@ Dans la série des articles parlant de l'installeur [OSGeo4W en ligne de command
 
 ----
 
-## Préconfigurez QGIS! 
+## Préconfigurez QGIS!
 
 Ce n'est pas une suggestion, mais presque un ordre !
 
@@ -41,7 +41,7 @@ En effet, déployer un logiciel SIG en entreprise, c'est préparer les fondation
 - que les nouvelles données soient dans la bonne projection
 - que les utilisateurs utilisent la bonne connection à la base de données (sans la casser)
 - que le proxy soit bien configuré (saletés de proxy)
-- que vos utilisateurs n'aient pas à mettre les mains dans ce cambouis la, parce qu'ils n'ont pas que ça à faire 
+- que vos utilisateurs n'aient pas à mettre les mains dans ce cambouis la, parce qu'ils n'ont pas que ça à faire
 - que le cache internet ne fasse pas plus de 5 Mo sinon votre admin sys boude et ronchonne
 - etc...
 
@@ -56,9 +56,9 @@ Reste à les mettre en oeuvre chez vous, pour installer QGIS. Et industrialiser 
 On connaît volontiers le rôle des développeurs, qui oeuvrent dans le monde pur et merveilleux avec du code source pur.  
 Ils codent de préférence sous linux, parfois sous MacOs ou BSD. Rarement sous Windows.
 
-Ces développeurs ne seraient rien sans les "packagers", qui ont en charge la compilation des sources en binaires éxécutables sur les différentes plateformes. Et c'est un cauchemar le packaging, particulièrement sous Windows. 
+Ces développeurs ne seraient rien sans les "packagers", qui ont en charge la compilation des sources en binaires éxécutables sur les différentes plateformes. Et c'est un cauchemar le packaging, particulièrement sous Windows.
 QGIS est multi-plateforme, ce qui veut dire qu'il est possible de le compiler sur la majorité des OS.
-Le projet QGIS.org gère le packaging pour Ubuntu/Debian, et Windows. Les autres plateformes sont dans les mains d'autres volontaires.   
+Le projet QGIS.org gère le packaging pour Ubuntu/Debian, et Windows. Les autres plateformes sont dans les mains d'autres volontaires.  
 
 Pour Windows, Il n'existait pas (jusqu'en 2020) de véritable gestionnaire de paquet. On réinstalle donc pour chaque application une majorité de ses dépendances logicielles. C'est plus lourd, il faut tout faire rentrer dans un énorme installeur (parfois au chausse pied)
 
@@ -78,7 +78,7 @@ Il existe une grande diversité de méthodes pour faire des installeurs et préc
 
 Pour rendre hommage aux recettes existantes, il y a :
 
-- Une série de recettes souvent obsolètes comme [l'installation alternative par Frederikssund (obsolète)](https://github.com/Frederikssund/Alternativ-QGIS-installation), ou cette [version de l'université d'Edinburgh](https://fr.slideshare.net/RossMcDonald1/installing-qgis-on-a-network) 
+- Une série de recettes souvent obsolètes comme [l'installation alternative par Frederikssund (obsolète)](https://github.com/Frederikssund/Alternativ-QGIS-installation), ou cette [version de l'université d'Edinburgh](https://fr.slideshare.net/RossMcDonald1/installing-qgis-on-a-network)
 - [Les installeurs du ministère en charge de l'écologie](http://www.geoinformations.developpement-durable.gouv.fr/qgis-r625.html)
 - Le vénérable et désormais obsolète installeur [NSIS](https://github.com/qgis/QGIS/blob/master/ms-windows/QGIS-Installer.nsi), que l'on peut bricoler
 - Le fringant installeur [MSI](https://qgis.org/downloads/QGIS-OSGeo4W-3.20.0-4.msi) qui permet de passer la limitation des 2 Go. Les recettes sont [ici](https://github.com/jef-n/OSGeo4W)
@@ -88,13 +88,13 @@ A la différence de ces solutions qui réalisaient un paquet 'tout en un', long 
 
 Cette idée lumineuse est née dans l'esprit de Sébastien Peillet, Hugo Mercier, et grâce à des travaux successifs pour le Ministère de l'écologie, la gendarmerie nationale, la Métropole de Grenoble, etc... Merci à eux d'avoir permis d'aboutir à la recette de cuisine qui suit.
 
-Et donc... roulement de tambours ... 
+Et donc... roulement de tambours ...
 
 **J'ai le plaisir d'annoncer la naissance du projet:**
 
-https://github.com/haubourg/custom-osgeo4w-qgis 
+https://github.com/haubourg/custom-osgeo4w-qgis
 
-C'est un modèle qui a simplement pour vocation de vous aider à construire vos propres paquets OSGEO4W dans ce cas d'utilisation bien particulier. 
+C'est un modèle qui a simplement pour vocation de vous aider à construire vos propres paquets OSGEO4W dans ce cas d'utilisation bien particulier.
 
 Copiez le, modifiez le, partagez le. Et si vous pensez pouvoir l'améliorer, proposez donc une [modification de code](https://github.com/haubourg/custom-osgeo4w-qgis/pulls) !
 
@@ -111,12 +111,12 @@ qgis-yourorganizationname/
 │   │   ├── qgis-ltr-yourorganizationname.bat.template  -- .bat launcher template. This launcher will override the native qgis launchers after install
 │   │   ├── qgis_constrained_settings.py -- a nice utility to constraint some in place user settings
 │   │   ├── qgis_constrained_settings.yml -- the config file to decide which settings to constrain
-│   │   ├── qgis_global_settings.ini      -- your customized default settings ini file. 
+│   │   ├── qgis_global_settings.ini      -- your customized default settings ini file.
 │   │   └── startup_project.qgs            -- a qgis startup project (optional)
-│   │   └── qgis-ltr-backup  -- a directory to save the native OSGEO4W shortcut .lnk files that will be removed on install. Uninstall will reinstate them 
+│   │   └── qgis-ltr-backup  -- a directory to save the native OSGEO4W shortcut .lnk files that will be removed on install. Uninstall will reinstate them
 │   └── qgis-ltr
 │       └── python
-│           └── plugins      -- Some plugins you need to deploy on the PC. 
+│           └── plugins      -- Some plugins you need to deploy on the PC.
 │               ├── SpreadsheetLayers│  
 │               ├── coordinator
 │               ├── french_locator_filter
@@ -135,10 +135,10 @@ qgis-yourorganizationname/
 ├── setup.hint   -- package metadat - Change here the package name and the version only
 ```
 
-Il est possible d'embarquer des extensions, des symboles, du code, des ressources fichiers diverses, et d'ajouter de la logique applicative à l'installation et la désinstallation du paquet. 
+Il est possible d'embarquer des extensions, des symboles, du code, des ressources fichiers diverses, et d'ajouter de la logique applicative à l'installation et la désinstallation du paquet.
 Il est même possible de changer l'[écran de démarrage](https://static.geotribu.fr/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), ou de forcer l'utilisation de version très simplifiées de l'interface de QGIS.
 
-Si vous combinez cela avec, les [options de démarrage](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#running-qgis-with-advanced-settings) ou les différentes [possibilités de configuration](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#deploying-qgis-within-an-organization), il y a finalement peu de limites. 
+Si vous combinez cela avec, les [options de démarrage](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#running-qgis-with-advanced-settings) ou les différentes [possibilités de configuration](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#deploying-qgis-within-an-organization), il y a finalement peu de limites.
 
 Suivant vos contraintes, vous pouvez choisir d'embarquer toutes les ressources dans l'installeur, par exemple si vous n'avez pas de lecteur réseau partagé, ou si vous travaillez avec des machines déconnectées. A l'opposé, une bonne partie des ressources, plugins, SVG, settings, peuvent être déplacé sur un lecteur réseau (avec des problèmes potentiels de latence ou de non montage de disque réseau).
 
@@ -155,7 +155,7 @@ Ici, on travaille sous Windows, mais on a besoin d'une ligne de commande linux. 
 
 Le paquet est un fichier .tar.bz2 standard, bien décrit sur la [documentation OSGEO4W](https://trac.osgeo.org/osgeo4w/wiki/PackagingInstructions).
 
-Pensez à incrémenter la version à chaque évolution, en suivant [Semver](https://semver.org/lang/fr/). Le chiffre après le `-` est dédié à la version du package, mais pas au contenu métier. 
+Pensez à incrémenter la version à chaque évolution, en suivant [Semver](https://semver.org/lang/fr/). Le chiffre après le `-` est dédié à la version du package, mais pas au contenu métier.
 
 Le script `make.sh` fait la compression pour vous.
 
@@ -187,20 +187,20 @@ On rebascule ici dans le monde Windows. (au passage, je vous conseille moi aussi
 
 Vous pouvez soit utiliser l'interface graphique, soit la ligne de commande à ce stade. Et comme le but est de déployer automatiquement QGIS en masse, voilà une commande type qui va installer, mettre à jour et nettoyer tous les paquets disponibles :
 
-Pensez à changer les noms de variables hein. 
+Pensez à changer les noms de variables hein.
 
 ```batch
 .\osgeo4w-setup.exe  --menu-name "WINDOWS_MENU_NAME" --root "X:\OSGEO4W_DEPLOY_TEST\INSTALL" --advanced  --quiet-mode --local-install --local-package-dir "X:\OSGEO4W_DEPLOY_TEST\PAQUETS\http%3a%2f%2fwww.norbit.de%2fosgeo4w%2f" --autoaccept  --delete-orphans --upgrade-also -C Libs -C Desktop -C Commandline_Utilitiesinstall
 ```
-C'est incrémental, donc la première installation prendra quelques minutes, les suivantes, quelques secondes. 
+C'est incrémental, donc la première installation prendra quelques minutes, les suivantes, quelques secondes.
 
 Il est possible d'installer et désinstaller chaque paquet et ses dépendances finemement, allez lire le README :)
 
 ## Déployer !
 
 A ce stade, rapprochez vous de votre DSI pour voir la meilleur méthode de déploiement chez vous.
-La plupart des outils de déploiement logiciel (SCCm, OCS INventory, WApt, etc...) accepte un script .bat qui déroule l'installation. 
-Restera à choisir votre stratégie de versionnement de méta-paquet logiciel, et les méthodes d'accès aux fichiers du miroir d'installation. 
+La plupart des outils de déploiement logiciel (SCCm, OCS INventory, WApt, etc...) accepte un script .bat qui déroule l'installation.
+Restera à choisir votre stratégie de versionnement de méta-paquet logiciel, et les méthodes d'accès aux fichiers du miroir d'installation.
 
 Je ne vous mets pas d'image, rien de moins spectaculaire qu'un QGIS avec les bonnes barres d'outils, les bons paramètres et des templates de mise en page tout prêt. :)
 
