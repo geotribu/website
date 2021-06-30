@@ -25,7 +25,7 @@ Pré-requis :
 
 Vous aimez que tout soit bien paramétré pour vos utilisateurs? Vous avez ce coté psycho rigide de l'admin SIG perfectionniste? Vous voulez déployer de manière transparente un jeu de plugins obligatoires? Ou vous aimeriez tout simplement que les connexions aux bases de données dans les projets QGIS soient toutes les mêmes?
 
-Dans la série des articles parlant de l'installeur [OSGeo4W en ligne de commande](https://static.geotribu.fr/articles/2020/2020-07-03_deploy_qgis_windows/), ou de la personnalisation du [splashscreen](https://static.geotribu.fr/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
+Dans la série des articles parlant de l'installeur [OSGeo4W en ligne de commande](/articles/2020/2020-07-03_deploy_qgis_windows/), ou de la personnalisation du [splashscreen](/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -136,7 +136,7 @@ qgis-yourorganizationname/
 ```
 
 Il est possible d'embarquer des extensions, des symboles, du code, des ressources fichiers diverses, et d'ajouter de la logique applicative à l'installation et la désinstallation du paquet.
-Il est même possible de changer l'[écran de démarrage](https://static.geotribu.fr/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), ou de forcer l'utilisation de version très simplifiées de l'interface de QGIS.
+Il est même possible de changer l'[écran de démarrage](/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), ou de forcer l'utilisation de version très simplifiées de l'interface de QGIS.
 
 Si vous combinez cela avec, les [options de démarrage](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#running-qgis-with-advanced-settings) ou les différentes [possibilités de configuration](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#deploying-qgis-within-an-organization), il y a finalement peu de limites.
 
