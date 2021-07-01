@@ -92,7 +92,7 @@ Puisque la majorité des utilisateurs travaillent sous Windows, l'[OSGeo](https:
 
 Cet utilitaire est à la base de tous les installeurs QGIS, mais il embarque également d'autres outils (GRASS, SAGA, etc.. ), des librairies (GDAL, PROJ), des framework de développement (python, Qt, etc.. ), dans une arborescence similaire à une plateforme linux.
 
-Et donc, nous reposons tous les larges épaules de [Jurgen Fischer](https://qgis.org/lt/site/getinvolved/governance/governance.html#release-management), qui a la lourde charge de maintenir OSGEO4W et les releases de QGIS. 
+Et donc, nous reposons tous les larges épaules de [Jurgen Fischer](https://qgis.org/lt/site/getinvolved/governance/governance.html#release-management), qui a la lourde charge de maintenir OSGEO4W et les releases de QGIS.
 
 _Et non, ce n'est pas une tâche facile, ni rapide, ni réellement payé par des clients. Pensez éventuellement un jour à financer des choses de ce coté là._
 
@@ -121,7 +121,7 @@ Et donc... roulement de tambours ...
 
 **J'ai le plaisir d'annoncer la naissance du projet:**
 
-<https://github.com/haubourg/custom-osgeo4w-qgis> 
+<https://github.com/haubourg/custom-osgeo4w-qgis>
 
 C'est un modèle qui a simplement pour vocation de vous aider à construire vos propres paquets OSGEO4W dans ce cas d'utilisation bien particulier.
 
@@ -168,7 +168,7 @@ qgis-yourorganizationname/
 Il est possible d'embarquer des extensions, des symboles, du code, des ressources fichiers diverses, et d'ajouter de la logique applicative à l'installation et la désinstallation du paquet.
 Il est même possible de changer l'[écran de démarrage](/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), ou de forcer l'utilisation de version très simplifiées de l'interface de QGIS.
 
-Si vous combinez cela avec, les [options de démarrage](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#running-qgis-with-advanced-settings) 
+Si vous combinez cela avec, les [options de démarrage](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#running-qgis-with-advanced-settings)
 
 ```
 <QGIS is a user friendly Open Source Geographic Information System.
@@ -178,7 +178,7 @@ Usage: /usr/bin/qgis.bin [OPTION] [FILE]
         [--project projectfile] load the given QGIS project
         [--extent xmin,ymin,xmax,ymax]  set initial map extent
         [--nologo]      hide splash screen
-        [...] 
+        [...]
         [--noplugins]   don't restore plugins on startup
         [--nocustomization]     don't apply GUI customization
         [--customizationfile path]      use the given ini file as GUI customization
@@ -195,7 +195,7 @@ Usage: /usr/bin/qgis.bin [OPTION] [FILE]
 
 ou encore les différentes [possibilités de configuration](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#deploying-qgis-within-an-organization), et particulièrement le fichier `global_settings.ini`, il y a finalement peu de limites.
 
-Suivant vos contraintes, vous pouvez choisir d'embarquer toutes les ressources dans l'installeur, par exemple si vous n'avez pas de lecteur réseau partagé, ou si vous travaillez avec des machines déconnectées. 
+Suivant vos contraintes, vous pouvez choisir d'embarquer toutes les ressources dans l'installeur, par exemple si vous n'avez pas de lecteur réseau partagé, ou si vous travaillez avec des machines déconnectées.
 
 A l'opposé, une bonne partie des ressources, plugins, SVG, settings, peuvent être déplacées sur un lecteur réseau (avec des problèmes potentiels de latence ou de non montage de disque réseau).
 
@@ -212,7 +212,7 @@ Si vous souhaitez **contraindre** certains de ces paramètres, par exemple en fo
 Ici, on travaille sous Windows, mais on a besoin d'une ligne de commande linux (shell bash).
 
 Vous pouvez utiliser [WSL2](https://fr.wikipedia.org/wiki/Windows_Subsystem_for_Linux), la console [MSYS](https://trac.osgeo.org/osgeo4w/wiki/pkg-msys)  disponible dans OSGEO4W, une machine virtuelle, un pc dédié.... Cet environnement doit disposer des utilitaires classiques mais puissants `sed`, `md5`, `rsync`.  
-Bref, je recommande chaudement un vrai système linux. WSL2 fait parfaitement le job, puisque vous pourrez avoir un environnement complétement intégré depuis VScode + un terminal linux + un terminal powershell au même endroit, tout en pouvant versionner tout cela dans GIT. Dans notepad++, ce sera plus pénible, mais vous être libre de votre configuration. 
+Bref, je recommande chaudement un vrai système linux. WSL2 fait parfaitement le job, puisque vous pourrez avoir un environnement complétement intégré depuis VScode + un terminal linux + un terminal powershell au même endroit, tout en pouvant versionner tout cela dans GIT. Dans notepad++, ce sera plus pénible, mais vous être libre de votre configuration.
 
 Le paquet est une archive `.tar.bz2` standard, bien décrite sur la [documentation OSGEO4W](https://trac.osgeo.org/osgeo4w/wiki/PackagingInstructions).
 
@@ -245,14 +245,14 @@ version: 0.9-2
 install: x86_64/release/qgis/qgis-custom/qgis-custom-0.9-2.tar.bz2 4891963 80c5d2d743718e4c4472f983e4972dbe
 ```
 
-Et si vous lancez l'installeur setup.exe qui est dans votre version de QGIS de développement, vous devez voir ce paquet apparaître comme ici: 
+Et si vous lancez l'installeur setup.exe qui est dans votre version de QGIS de développement, vous devez voir ce paquet apparaître comme ici:
 
 ![OSGEO4W GUI avec paquet de personnaliszation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/osgeo4W_with_custom_package.png)
 _ici `qgis-gam` est le paquet de personnalisation pour Grenoble Alpes Métropole)
 
 ## Tester votre déploiement
 
-On rebascule ici dans le monde **Windows**. 
+On rebascule ici dans le monde **Windows**.
 
 Vous pouvez soit utiliser l'interface graphique, soit la ligne de commande (DOS-batch ou powershell) à ce stade. Et comme le but est de déployer automatiquement QGIS en masse, voilà une commande type qui va installer, mettre à jour et nettoyer tous les paquets disponibles :
 
@@ -264,7 +264,7 @@ Pensez à changer les noms de variables hein.
 
 C'est incrémental, donc la première installation prendra quelques minutes, les suivantes, quelques secondes.
 
-Il est aussi possible d'installer et désinstaller chaque paquet et ses dépendances finemement, allez lire le [README](https://github.com/haubourg/custom-osgeo4w-qgis/blob/main/README.md#install--uninstall-your-package). 
+Il est aussi possible d'installer et désinstaller chaque paquet et ses dépendances finemement, allez lire le [README](https://github.com/haubourg/custom-osgeo4w-qgis/blob/main/README.md#install--uninstall-your-package).
 
 ## Déployer !
 
@@ -272,7 +272,7 @@ A ce stade, rapprochez vous de votre DSI pour voir la meilleur méthode de dépl
 La plupart des outils de déploiement logiciel ([SCCM](https://fr.wikipedia.org/wiki/System_Center_Configuration_Manager), [OCS INventory](https://ocsinventory-ng.org/?lang=fr), [WApt](https://www.tranquil.it/gerer-parc-informatique/decouvrir-wapt/), etc...) accepte un script .bat qui déroule l'installation.
 Restera à choisir votre stratégie de versionnement de méta-paquet logiciel, et les méthodes d'accès aux fichiers du miroir d'installation.
 
-Promis, si la recette interne de ma DSI pour SCCM est publiable, je documenterais ça. 
+Promis, si la recette interne de ma DSI pour SCCM est publiable, je documenterais ça.
 
 Je ne vous mets pas d'image, rien de moins spectaculaire qu'un QGIS avec les bonnes barres d'outils, les bons paramètres et des templates de mise en page tout prêt. :)
 
