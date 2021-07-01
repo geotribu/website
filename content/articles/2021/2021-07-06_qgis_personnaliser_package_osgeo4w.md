@@ -47,7 +47,7 @@ En effet, déployer un logiciel SIG en entreprise, c'est préparer les fondation
 
 Bonne nouvelle, QGIS étant open source et financé par des administrateurs SIG, la grande majorité de ces fonctionnalités sont déjà possibles.
 
-![tuning voiture qgis moche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png)
+![tuning voiture qgis moche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png){: .img-center loading=lazy }
 
 Par exemple, moi j'aime bien :
 
@@ -61,13 +61,13 @@ Par exemple, moi j'aime bien :
 
 - [Layers menu from project](https://xcaeag.github.io/MenuFromProject-Qgis-Plugin/#english-version), pour servir un socle de données de référence facile à maintenir.
 
-![menu déroulant socle de couches de données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/drop_down_menu_fr.png))
+![menu déroulant socle de couches de données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/drop_down_menu_fr.png){: .img-center loading=lazy }
 
 - et [red Layer](https://plugins.qgis.org/plugins/redLayer/), pour gribouiller un fond de carte rapido, [spreadsheet layers](https://plugins.qgis.org/plugins/SpreadsheetLayers/) pour faciliter l'ouverture de tableurs excel, etc...
 
 - et tous les paramètres qui vont bien, comme ici un user agent nommé `QGIS` et le proxy système (qui passe par le proxy.pac d'entreprise)
 
-![quelques paramètres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/some_settings.png)
+![quelques paramètres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/some_settings.png){: .img-center loading=lazy }
 
 A vous de jouer sur le contenu de votre profil utilisateur.
 
@@ -241,9 +241,10 @@ version: 0.9-2
 install: x86_64/release/qgis/qgis-custom/qgis-custom-0.9-2.tar.bz2 4891963 80c5d2d743718e4c4472f983e4972dbe
 ```
 
-Et si vous lancez l'installeur setup.exe qui est dans votre version de QGIS de développement, vous devez voir ce paquet apparaître comme ici:
+Et si vous lancez l'installeur setup.exe qui est dans votre version de QGIS de développement, vous devez voir ce paquet apparaître comme ici :
 
-![OSGEO4W GUI avec paquet de personnaliszation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/osgeo4W_with_custom_package.png)
+![OSGEO4W GUI avec paquet de personnaliszation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/osgeo4W_with_custom_package.png){: .img-center loading=lazy }
+
 _ici `qgis-gam` est le paquet de personnalisation pour Grenoble Alpes Métropole)
 
 ## Tester votre déploiement
@@ -265,7 +266,7 @@ Il est aussi possible d'installer et désinstaller chaque paquet et ses dépenda
 ## Déployer !
 
 A ce stade, rapprochez vous de votre DSI pour voir la meilleur méthode de déploiement chez vous.
-La plupart des outils de déploiement logiciel ([SCCM](https://fr.wikipedia.org/wiki/System_Center_Configuration_Manager), [OCS INventory](https://ocsinventory-ng.org/?lang=fr), [WApt](https://www.tranquil.it/gerer-parc-informatique/decouvrir-wapt/), etc...) accepte un script .bat qui déroule l'installation.
+La plupart des outils de déploiement logiciel ([SCCM](https://fr.wikipedia.org/wiki/System_Center_Configuration_Manager), [OCS INventory](https://ocsinventory-ng.org/?lang=fr), [WApt](https://www.tranquil.it/gerer-parc-informatique/decouvrir-wapt/), etc...) accepte un script .bat qui déroule l'installation.  
 Restera à choisir votre stratégie de versionnement de méta-paquet logiciel, et les méthodes d'accès aux fichiers du miroir d'installation.
 
 Promis, si la recette interne de ma DSI pour SCCM est publiable, je documenterais ça.
@@ -274,7 +275,7 @@ Je ne vous mets pas d'image, rien de moins spectaculaire qu'un QGIS avec les bon
 
 Et là, normalement, l'admin SIG est satisfait, heureux, et ses utilisateurs l'appellent pour le remercier de tant de sollicitude à leur égard. Je m'égare...
 
-![Admin SIG satisfait](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/satisfied.webp)
+![Admin SIG satisfait](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/satisfied.webp){: .img-center loading=lazy }
 
 Maintenant, à vous de jouer, et pensez à remonter toute anomalie ou amélioration (oui, il faudrait de suite tester cette recette avec l'[installeur V2](https://www.qgis.org/fr/site/forusers/download.html) tout juste sorti)
 
