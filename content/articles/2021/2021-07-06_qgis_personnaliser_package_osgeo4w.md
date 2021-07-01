@@ -3,14 +3,14 @@ title: "Préconfigurer QGIS en entreprise"
 authors: ["Régis HAUBOURG"]
 categories: ["article", "tutoriel"]
 date: "2021-07-06 10:20"
-description: "vous voulez contrôler l'interface et les paramètres de QGIS dans votre organisation. Ne pas infliger à vos utilisateurs de trifouiller les réglages du proxy, ou connaître l'adresse IP des serveurs PostGIS? Suivez le guide pour industrialiser votre installation personnalisée"
+description: "vous voulez contrôler l'interface et les paramètres de QGIS dans votre organisation. Ne pas infliger à vos utilisateurs de trifouiller les réglages du proxy, ou connaître l'adresse IP des serveurs PostGIS ? Suivez le guide pour industrialiser votre installation personnalisée de QGIS."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png"
 tags: "QGIS,personnalisation,osgeo4W,déploiement,configuration"
 ---
 
 # Personnaliser l'image au lancement de QGIS
 
-:calendar: Date de publication initiale : 1er juillet 2021
+:calendar: Date de publication initiale : 6 juillet 2021
 
 **Mots-clés :** QGIS | OSGEO4W | installeur
 
@@ -23,7 +23,7 @@ Pré-requis :
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-rdp-news-thumb }
 
-Vous aimez que tout soit bien paramétré pour vos utilisateurs? Vous avez ce coté psycho rigide de l'admin SIG perfectionniste? Vous voulez déployer de manière transparente un jeu de plugins obligatoires? Ou vous aimeriez tout simplement que les connexions aux bases de données dans les projets QGIS soient toutes les mêmes?
+Vous aimez que tout soit bien paramétré pour vos utilisateurs ? Vous avez ce coté psychorigide de l'admin SIG perfectionniste ? Vous voulez déployer de manière transparente un jeu de plugins obligatoires ? Ou vous aimeriez tout simplement que les connexions aux bases de données dans les projets QGIS soient toutes les mêmes ?
 
 Dans la série des articles parlant de l'installeur [OSGeo4W en ligne de commande](/articles/2020/2020-07-03_deploy_qgis_windows/), ou de la personnalisation du [splashscreen](/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
 
@@ -36,16 +36,16 @@ Dans la série des articles parlant de l'installeur [OSGeo4W en ligne de command
 
 Ce n'est pas une suggestion, mais presque une obligation !
 
-En effet, déployer un logiciel SIG en entreprise, c'est préparer les fondations d'un patrimoine de données, cartes et applications qui seront créées par vos utilisateurs.  Et comme tout bon administrateur SIG, vous voulez :
+En effet, déployer un logiciel SIG en entreprise, c'est préparer les fondations d'un patrimoine de données, cartes et applications qui seront créées par vos utilisateurs. Et comme tout bon administrateur SIG, vous voulez :
 
 - que les nouvelles données soient dans la bonne projection
-- que les utilisateurs utilisent la bonne connection à la base de données (sans la casser)
+- que les utilisateurs utilisent la bonne connexion à la base de données (sans la casser)
 - que le proxy soit bien configuré (saletés de proxy)
-- que vos utilisateurs n'aient pas à mettre les mains dans ce cambouis la, parce qu'ils n'ont pas que ça à faire
+- que vos utilisateurs n'aient pas à mettre les mains dans ce cambouis, parce-qu'ils n'ont pas que ça à faire
 - que le cache internet ne fasse pas plus de 5 Mo sinon votre admin sys boude et ronchonne
 - etc...
 
-Bonne nouvelle, QGIS étant open source, et financé par des administrateurs SIG, la grande majorité de ces fonctionnalités sont déjà possibles.
+Bonne nouvelle, QGIS étant open source et financé par des administrateurs SIG, la grande majorité de ces fonctionnalités sont déjà possibles.
 
 ![tuning voiture qgis moche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png)
 
@@ -53,13 +53,11 @@ Par exemple, moi j'aime bien :
 
 - toujours avoir une recherche d'adresse dans la barre de recherche universelle (merci la BAN, via le plugin [French Locator Filter](https://oslandia.com/2019/10/14/rechercher-une-adresse-avec-qgis/))
 
-![capture écran french locator filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/recherche_adresse_qgis.png)
+![capture écran french locator filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/recherche_adresse_qgis.png){: .img-center loading=lazy }
 
 - Le plugin [Mask](https://plugins.qgis.org/plugins/mask/), pour faire des jolis.. masques, qui [gèrent les étiquettes à masquer et les atlas](https://regishaubourg.net/2015/12/21/le-plugin-mask-dans-qgis-genese-dune-extension-python-bien-pratique/).  
 
-
-![capture écran plugin mask](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/etiquettes_with_mask.png)
-
+![capture écran plugin mask](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/etiquettes_with_mask.png){: .img-center loading=lazy }
 
 - [Layers menu from project](https://xcaeag.github.io/MenuFromProject-Qgis-Plugin/#english-version), pour servir un socle de données de référence facile à maintenir.
 
