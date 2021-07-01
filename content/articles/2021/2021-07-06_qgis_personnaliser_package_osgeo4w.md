@@ -98,7 +98,6 @@ _Et non, ce n'est pas une tâche facile, ni rapide, ni réellement payé par des
 
 Maintenant vous [saCHez](https://twitter.com/ComplotsFaciles/status/1409880935084986380?s=20), vous ne pourrez plus négliger cet aspect des choses.
 
-
 ----
 
 ## Partageons nos recettes
@@ -126,7 +125,6 @@ Et donc... roulement de tambours ...
 C'est un modèle qui a simplement pour vocation de vous aider à construire vos propres paquets OSGEO4W dans ce cas d'utilisation bien particulier.
 
 **Copiez le, modifiez le, partagez le.** Et si vous pensez pouvoir l'améliorer, proposez donc une [modification de code](https://github.com/haubourg/custom-osgeo4w-qgis/pulls) !
-
 
 ## Choisir sa configuration
 
@@ -170,7 +168,7 @@ Il est même possible de changer l'[écran de démarrage](/articles/2021/2021-06
 
 Si vous combinez cela avec, les [options de démarrage](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#running-qgis-with-advanced-settings)
 
-```
+```sh
 <QGIS is a user friendly Open Source Geographic Information System.
 Usage: /usr/bin/qgis.bin [OPTION] [FILE]
   OPTION:
