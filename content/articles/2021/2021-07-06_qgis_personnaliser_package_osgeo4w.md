@@ -1,5 +1,5 @@
 ---
-title: "Préconfigurer QGIS en entreprise"
+title: "Préconfigurer QGIS en entreprise avec OSGEO4W"
 authors: ["Régis HAUBOURG"]
 categories: ["article", "tutoriel"]
 date: "2021-07-06 10:20"
