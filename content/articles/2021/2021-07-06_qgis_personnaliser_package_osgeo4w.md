@@ -8,7 +8,7 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_os
 tags: "QGIS,personnalisation,osgeo4W,déploiement,configuration"
 ---
 
-# Personnaliser l'image au lancement de QGIS
+# Préconfigurer QGIS en entreprise avec OSGEO4W
 
 :calendar: Date de publication initiale : 6 juillet 2021
 
