@@ -25,7 +25,7 @@ Pré-requis :
 
 Vous aimez que tout soit bien paramétré pour vos utilisateurs ? Vous avez ce coté psychorigide de l'admin SIG perfectionniste ? Vous voulez déployer de manière transparente un jeu de plugins obligatoires ? Ou vous aimeriez tout simplement que les connexions aux bases de données dans les projets QGIS soient toutes les mêmes ?
 
-Dans la série des articles parlant de l'installeur [OSGeo4W en ligne de commande](/articles/2020/2020-07-03_deploy_qgis_windows/), ou de la personnalisation du [splashscreen](/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
+Dans la lignée des articles parlant de l'installeur [OSGeo4W en ligne de commande](/articles/2020/2020-07-03_deploy_qgis_windows/), ou de la personnalisation du [splashscreen](/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -53,21 +53,21 @@ Par exemple, moi j'aime bien :
 
 - toujours avoir une recherche d'adresse dans la barre de recherche universelle (merci la BAN, via le plugin [French Locator Filter](https://oslandia.com/2019/10/14/rechercher-une-adresse-avec-qgis/))
 
-![capture écran french locator filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/recherche_adresse_qgis.png){: .img-center loading=lazy }
+  ![capture écran french locator filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/recherche_adresse_qgis.png "Plugin French Locator Filter pour QGIS"){: .img-center loading=lazy }
 
 - Le plugin [Mask](https://plugins.qgis.org/plugins/mask/), pour faire des jolis.. masques, qui [gèrent les étiquettes à masquer et les atlas](https://regishaubourg.net/2015/12/21/le-plugin-mask-dans-qgis-genese-dune-extension-python-bien-pratique/).  
 
-![capture écran plugin mask](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/etiquettes_with_mask.png){: .img-center loading=lazy }
+  ![capture écran plugin mask](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/etiquettes_with_mask.png "Plugin Mask pour QGIS"){: .img-center loading=lazy }
 
-- [Layers menu from project](https://xcaeag.github.io/MenuFromProject-Qgis-Plugin/#english-version), pour servir un socle de données de référence facile à maintenir.
+- [Layers menu from project](https://xcaeag.github.io/MenuFromProject-Qgis-Plugin/#en-francais), pour servir un socle de données de référence facile à maintenir.
 
-![menu déroulant socle de couches de données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/drop_down_menu_fr.png){: .img-center loading=lazy }
+  ![menu déroulant socle de couches de données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/drop_down_menu_fr.png "Plugin Layers Menu from Project"){: .img-center loading=lazy }
 
-- et [red Layer](https://plugins.qgis.org/plugins/redLayer/), pour gribouiller un fond de carte rapido, [spreadsheet layers](https://plugins.qgis.org/plugins/SpreadsheetLayers/) pour faciliter l'ouverture de tableurs excel, etc...
+- et [Red Layer](https://plugins.qgis.org/plugins/redLayer/), pour gribouiller un fond de carte rapido, [spreadsheet layers](https://plugins.qgis.org/plugins/SpreadsheetLayers/) pour faciliter l'ouverture de tableurs excel, etc.
 
-- et tous les paramètres qui vont bien, comme ici un user agent nommé `QGIS` et le proxy système (qui passe par le proxy.pac d'entreprise)
+- et tous les paramètres qui vont bien, comme ici un [*user-agent*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) nommé `QGIS` et le proxy système (qui passe par le `proxy.pac` d'entreprise) :
 
-![quelques paramètres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/some_settings.png){: .img-center loading=lazy }
+  ![quelques paramètres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/some_settings.png "Personnalisation QGIS"){: .img-center loading=lazy }
 
 A vous de jouer sur le contenu de votre profil utilisateur.
 
@@ -75,16 +75,17 @@ Reste à industrialiser et installer ça. Parce que vous n'avez pas que ça à f
 
 ----
 
-## Les installeurs, monde adoré d'une espèce rare, les packagerzs
+## Les installeurs, monde adoré d'une espèce rare, les packagers
 
 On connaît volontiers le rôle des développeurs, qui oeuvrent dans le monde pur et merveilleux avec du code source pur.  
-Ils codent de préférence sous linux, parfois sous MacOs ou BSD. Rarement sous Windows.
+Ils codent de préférence sous Linux, parfois sous MacOs ou BSD. Rarement sous Windows.
 
-Ces développeurs ne seraient rien sans les "packagers", qui ont en charge la compilation des sources en binaires éxécutables sur les différentes plateformes. Et c'est un cauchemar le packaging, particulièrement sous Windows.
-QGIS est multi-plateforme, ce qui veut dire qu'il est possible de le compiler sur la majorité des OS.
-Le projet QGIS.org gère le packaging pour Ubuntu/Debian, et Windows. Les autres plateformes sont dans les mains d'autres volontaires.  
+Ces développeurs ne seraient rien sans les "packagers", qui ont en charge la compilation des sources en binaires éxécutables sur les différentes plateformes. Et c'est un cauchemar le packaging, particulièrement sous Windows quand le code est développé sur et pour Linux.
 
-Pour Windows, Il n'existait pas (jusqu'en [2021 en tous cas](https://docs.microsoft.com/fr-fr/windows/package-manager/winget/)) de véritable gestionnaire de paquet natif. On réinstalle donc pour chaque application une majorité de ses dépendances logicielles. C'est plus lourd, il faut tout faire rentrer dans un énorme installeur (parfois au chausse pied.
+QGIS est multi-plateforme, ce qui veut dire qu'il est possible de le compiler sur la majorité des OS.  
+Le projet QGIS.org gère le packaging pour Ubuntu/Debian et Windows. Les autres plateformes sont dans les mains d'autres volontaires.  
+
+Pour Windows, il n'existait pas (jusqu'en [2021 en tous cas](https://docs.microsoft.com/fr-fr/windows/package-manager/winget/)) de véritable gestionnaire de paquets natif. On réinstalle donc pour chaque application une majorité de ses dépendances logicielles. C'est plus lourd, il faut tout faire rentrer dans un énorme installateur (parfois au chausse pied).
 
 Puisque la majorité des utilisateurs travaillent sous Windows, l'[OSGeo](https://www.osgeo.org) a développé un environnement de compilation et d'installation, basé sur [MinGW](https://fr.wikipedia.org/wiki/MinGW), le fameux [OSGEO4W](https://www.osgeo.org/projects/osgeo4w/) (prononcez "for Windows").
 
