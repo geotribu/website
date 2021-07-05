@@ -43,7 +43,7 @@ En effet, déployer un logiciel SIG en entreprise, c'est préparer les fondation
 - que le proxy soit bien configuré (saletés de proxy)
 - que vos utilisateurs n'aient pas à mettre les mains dans ce cambouis, parce-qu'ils n'ont pas que ça à faire
 - que le cache internet ne fasse pas plus de 5 Mo sinon votre admin sys boude et ronchonne
-- etc...
+- etc..
 
 Bonne nouvelle, QGIS étant open source et financé par des administrateurs SIG, la grande majorité de ces fonctionnalités sont déjà possibles.
 
@@ -55,7 +55,7 @@ Par exemple, moi j'aime bien :
 
   ![capture écran french locator filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/recherche_adresse_qgis.png "Plugin French Locator Filter pour QGIS"){: .img-center loading=lazy }
 
-- Le plugin [Mask](https://plugins.qgis.org/plugins/mask/), pour faire des jolis.. masques, qui [gèrent les étiquettes à masquer et les atlas](https://regishaubourg.net/2015/12/21/le-plugin-mask-dans-qgis-genese-dune-extension-python-bien-pratique/).  
+- Le plugin [Mask](https://plugins.qgis.org/plugins/mask/), pour faire des jolis... masques qui [gèrent les étiquettes à masquer et les atlas](https://regishaubourg.net/2015/12/21/le-plugin-mask-dans-qgis-genese-dune-extension-python-bien-pratique/).  
 
   ![capture écran plugin mask](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/etiquettes_with_mask.png "Plugin Mask pour QGIS"){: .img-center loading=lazy }
 
@@ -77,23 +77,24 @@ Reste à industrialiser et installer ça. Parce que vous n'avez pas que ça à f
 
 ## Les installeurs, monde adoré d'une espèce rare, les packagers
 
-On connaît volontiers le rôle des développeurs, qui oeuvrent dans le monde pur et merveilleux avec du code source pur.  
-Ils codent de préférence sous Linux, parfois sous MacOs ou BSD. Rarement sous Windows.
+On connaît volontiers le rôle des développeurs, qui oeuvrent dans le monde pur et merveilleux du code source pur.  
+Ils codent de préférence sous Linux, parfois sous MacOS ou BSD. Rarement sous Windows.
 
-Ces développeurs ne seraient rien sans les "packagers", qui ont en charge la compilation des sources en binaires éxécutables sur les différentes plateformes. Et c'est un cauchemar le packaging, particulièrement sous Windows quand le code est développé sur et pour Linux.
+Ces développeurs ne seraient rien sans les "packagers", qui ont en charge la compilation des sources en binaires éxécutables sur les différentes plateformes. Et c'est un cauchemar le packaging, particulièrement sous Windows puisque le code est développé sur et pour Linux.
 
-QGIS est multi-plateforme, ce qui veut dire qu'il est possible de le compiler sur la majorité des OS.  
+QGIS se veut multi-plateforme, ce qui veut dire qu'il est possible de le compiler sur la majorité des OS.  
 Le projet QGIS.org gère le packaging pour Ubuntu/Debian et Windows. Les autres plateformes sont dans les mains d'autres volontaires.  
 
 Pour Windows, il n'existait pas (jusqu'en [2021 en tous cas](https://docs.microsoft.com/fr-fr/windows/package-manager/winget/)) de véritable gestionnaire de paquets natif. On réinstalle donc pour chaque application une majorité de ses dépendances logicielles. C'est plus lourd, il faut tout faire rentrer dans un énorme installateur (parfois au chausse pied).
 
-Puisque la majorité des utilisateurs travaillent sous Windows, l'[OSGeo](https://www.osgeo.org) a développé un environnement de compilation et d'installation, basé sur [MinGW](https://fr.wikipedia.org/wiki/MinGW), le fameux [OSGEO4W](https://www.osgeo.org/projects/osgeo4w/) (prononcez "for Windows").
+Puisque la majorité des utilisateurs travaillent sous Windows, l'[OSGeo](https://www.osgeo.org) a développé un environnement de compilation et d'installation, basé sur [MinGW](https://fr.wikipedia.org/wiki/MinGW), le fameux [OSGeo4W](https://www.osgeo.org/projects/osgeo4w/) (prononcez *OSGeo for Windows*).
 
-Cet utilitaire est à la base de tous les installeurs QGIS, mais il embarque également d'autres outils (GRASS, SAGA, etc.. ), des librairies (GDAL, PROJ), des framework de développement (python, Qt, etc.. ), dans une arborescence similaire à une plateforme linux.
+Cet utilitaire est à la base de tous les installeurs QGIS, mais il embarque également d'autres outils (GRASS, SAGA, etc.), des librairies (GDAL, PROJ), des langages et *framework* de développement (Python, Qt, etc.), dans une arborescence similaire à une plateforme Linux.
 
-Et donc, nous reposons tous les larges épaules de [Jurgen Fischer](https://qgis.org/lt/site/getinvolved/governance/governance.html#release-management), qui a la lourde charge de maintenir OSGEO4W et les releases de QGIS.
+Et donc, nous reposons tous sur les larges épaules de [Jurgen Fischer](https://qgis.org/lt/site/getinvolved/governance/governance.html#release-management), qui a la lourde charge de maintenir OSGeo4W et les releases de QGIS.
 
-_Et non, ce n'est pas une tâche facile, ni rapide, ni réellement payé par des clients. Pensez éventuellement un jour à financer des choses de ce coté là._
+!!! tip "Spoiler"
+    Et non, ce n'est pas une tâche facile, ni rapide, ni réellement payée par des clients. Pensez éventuellement un jour à financer des choses de ce coté là :pray:.
 
 Maintenant vous [saCHez](https://twitter.com/ComplotsFaciles/status/1409880935084986380?s=20), vous ne pourrez plus négliger cet aspect des choses.
 
@@ -113,7 +114,7 @@ Pour rendre hommage aux recettes existantes, il y a :
 
 A la différence de ces solutions qui réalisaient un paquet 'tout en un', long à compresser, long à installer, et qui ne permet pas de gérer finement les versions des différents sous paquets, l'idée ici est de faire un paquet logiciel dédié à la configuration uniquement.
 
-Cette idée lumineuse est née dans l'esprit de Sébastien Peillet, Hugo Mercier, et grâce à des travaux successifs pour le Ministère de l'écologie, la gendarmerie nationale, la Métropole de Grenoble, etc... Merci à eux d'avoir permis d'aboutir à la recette de cuisine qui suit.
+Cette idée lumineuse est née dans l'esprit de Sébastien Peillet, Hugo Mercier, et grâce à des travaux successifs pour le Ministère de l'écologie, la gendarmerie nationale, la Métropole de Grenoble, etc.. Merci à eux d'avoir permis d'aboutir à la recette de cuisine qui suit.
 
 Et donc... roulement de tambours ...
 
@@ -134,7 +135,7 @@ qgis-yourorganizationname/
 ├── apps
 │   ├── qgis-yourorganizationname
 │   │   ├── WMTS_scales.xml  -- some default scales (optional)
-│   │   ├── layout_checks.py  -- some layout checks (copyright, citations, etc..) (optional)
+│   │   ├── layout_checks.py  -- some layout checks (copyright, citations, etc.) (optional)
 │   │   ├── qgis-ltr-yourorganizationname.bat.template  -- .bat launcher template. This launcher will override the native qgis launchers after install
 │   │   ├── qgis_constrained_settings.py -- a nice utility to constraint some in place user settings
 │   │   ├── qgis_constrained_settings.yml -- the config file to decide which settings to constrain
@@ -267,7 +268,7 @@ Il est aussi possible d'installer et désinstaller chaque paquet et ses dépenda
 ## Déployer !
 
 A ce stade, rapprochez vous de votre DSI pour voir la meilleur méthode de déploiement chez vous.
-La plupart des outils de déploiement logiciel ([SCCM](https://fr.wikipedia.org/wiki/System_Center_Configuration_Manager), [OCS INventory](https://ocsinventory-ng.org/?lang=fr), [WApt](https://www.tranquil.it/gerer-parc-informatique/decouvrir-wapt/), etc...) accepte un script .bat qui déroule l'installation.  
+La plupart des outils de déploiement logiciel ([SCCM](https://fr.wikipedia.org/wiki/System_Center_Configuration_Manager), [OCS INventory](https://ocsinventory-ng.org/?lang=fr), [WApt](https://www.tranquil.it/gerer-parc-informatique/decouvrir-wapt/), etc..) accepte un script .bat qui déroule l'installation.  
 Restera à choisir votre stratégie de versionnement de méta-paquet logiciel, et les méthodes d'accès aux fichiers du miroir d'installation.
 
 Promis, si la recette interne de ma DSI pour SCCM est publiable, je documenterais ça.
