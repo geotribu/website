@@ -51,7 +51,7 @@ Bonne nouvelle, QGIS étant open source et financé par des administrateurs SIG,
 
 Par exemple, moi j'aime bien :
 
-- toujours avoir une recherche d'adresse dans la barre de recherche universelle (merci la BAN, via le plugin [French Locator Filter](https://oslandia.com/2019/10/14/rechercher-une-adresse-avec-qgis/))
+- toujours avoir une recherche d'adresse dans la barre de recherche universelle (merci la BAN, via le plugin [French Locator Filter](https://oslandia.gitlab.io/qgis/french_locator_filter/)
 
   ![capture écran french locator filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/recherche_adresse_qgis.png "Plugin French Locator Filter pour QGIS"){: .img-center loading=lazy }
 
@@ -124,7 +124,9 @@ C'est un modèle qui a simplement pour vocation de vous aider à construire vos 
 
 **Copiez le, modifiez le, partagez le.** Et si vous pensez pouvoir l'améliorer, proposez donc une [modification de code](https://github.com/haubourg/custom-osgeo4w-qgis/pulls) !
 
-## Choisir sa configuration
+## En route pour le tuto
+
+### Choisir sa configuration
 
 Voilà la structure type du paquet de configuration :
 
@@ -158,7 +160,7 @@ qgis-yourorganizationname/
 ├── make.sh     -- Build your package tar.bz2 using the version tag in the setup.hint
 ├── deploy.sh   -- Deploy your built tar.bz2 to a local osgeo4W repository
 ├── deploy_ressources_somewhere.sh  -- a demo script if you wish to deploy things on a centralized repository (optional)
-├── setup.hint   -- package metadat - Change here the package name and the version only
+├── setup.hint   -- package metadata - Change here the package name and the version only
 ```
 
 Il est possible d'embarquer des extensions, des symboles, du code, des ressources fichiers diverses, et d'ajouter de la logique applicative à l'installation et la désinstallation du paquet.
@@ -203,7 +205,7 @@ Si vous souhaitez **contraindre** certains de ces paramètres, par exemple en fo
 
 (On vous a déjà dit qu'on s'appuie sur les épaules des géants dans l'open source ?).
 
-## Créer votre paquet
+### Créer votre paquet
 
 Ici, on travaille sous Windows, mais on a besoin d'une ligne de commande linux (shell bash).
 
@@ -217,7 +219,7 @@ Pensez à incrémenter la version à chaque évolution, en suivant [Semver](http
 
 Le script `make.sh` fait la compression pour vous.
 
-## Récupérer vos sources d'installation hors ligne
+### Récupérer vos sources d'installation hors ligne
 
 L'installeur OSGEO4W permet de [récupérer](https://trac.osgeo.org/osgeo4w/wiki/FAQ#HowdoIperformanofflineorcomputerlabinstall) les paquets d'installation, sans faire l'installation. Ces paquets peuvent ensuite servir de miroir interne pour dérouler les installations sur vos milliers de postes informatiques.  
 
@@ -225,7 +227,7 @@ Cela permet de contrôler exactement les versions déployées, tout en contrôla
 
 Juste **indispensable**, ne serait-ce que pour contrôler et faciliter le déploiement des [correctifs de sécurité mensuels](https://www.qgis.org/fr/site/getinvolved/development/roadmap.html?highlight=feuille%20route#release-schedule), après validation.
 
-## Insérer votre paquet dans ces sources
+### Insérer votre paquet dans ces sources
 
 Le script `deploy.sh` va déplacer l'archive `tar.bz2` dans votre miroir local et adapter les métadonnées de l'installeur (fichier `setup.ini`) pour y ajouter les métadonnées de votre paquet, le md5 et la taille de l'archive. Sans quoi OSGEO4W ignorera superbement votre paquet.
 
@@ -248,23 +250,43 @@ Et si vous lancez l'installeur `setup.exe` qui est dans votre version de QGIS de
 
 Ici `qgis-gam` est le paquet de personnalisation pour Grenoble Alpes Métropole.
 
-## Tester votre déploiement
+### Tester votre déploiement
 
 On rebascule ici dans le monde **Windows**.
 
 Vous pouvez soit utiliser l'interface graphique, soit la ligne de commande (DOS-batch ou PowerShell) à ce stade. Et comme le but est de déployer automatiquement QGIS en masse, voilà une commande type qui va installer, mettre à jour et nettoyer tous les paquets disponibles :
 
-Pensez à changer les noms de variables hein.
 
 ```batch
-.\osgeo4w-setup.exe  --menu-name "WINDOWS_MENU_NAME" --root "X:\OSGEO4W_DEPLOY_TEST\INSTALL" --advanced  --quiet-mode --local-install --local-package-dir "X:\OSGEO4W_DEPLOY_TEST\PAQUETS\http%3a%2f%2fwww.norbit.de%2fosgeo4w%2f" --autoaccept  --delete-orphans --upgrade-also -C Libs -C Desktop -C Commandline_Utilitiesinstall
+.\osgeo4w-setup.exe `
+  --menu-name "WINDOWS_MENU_NAME" `
+  --root "X:\OSGEO4W_DEPLOY_TEST\INSTALL" `
+  --advanced  `
+  --quiet-mode   `
+  --local-install `
+  --local-package-dir "X:\OSGEO4W_DEPLOY_TEST\PAQUETS\http%3a%2f%2fwww.norbit.de%2fosgeo4w%2f" `
+  --autoaccept  `
+  --delete-orphans `
+  --upgrade-also `
+  -C Libs `
+  -C Desktop `
+  -C Commandline_Utilities 
 ```
+
+_Pensez à changer les noms de variables hein :)_  
+_les ``` sont là pour le retour à la ligne en powershell et vous rendre ça plus lisible)_
 
 C'est incrémental, donc la première installation prendra quelques minutes, les suivantes, quelques secondes.
 
 Il est aussi possible d'installer et désinstaller chaque paquet et ses dépendances finemement, allez lire le [README](https://github.com/haubourg/custom-osgeo4w-qgis/blob/main/README.md#install--uninstall-your-package).
 
-## Déployer !
+Par exemple, avec des itérations de développement sans changer la version, vous pouvez :
+
+1. Désinstaller le paquet custom avec l'option `-x qgis-monpaquetcustom`
+2. Eventuellement supprimer manuellement raccourcis de lancement et profils (si votre désinstallation n'a pas fonctionné correctement)
+3. Rejouer l'installation uniquement de votre paquet avec l'option `-P qgis-monpaquetcustom`
+
+### Déployer !
 
 A ce stade, rapprochez vous de votre DSI pour voir la meilleure méthode de déploiement chez vous.  
 La plupart des outils de déploiement logiciel ([SCCM](https://fr.wikipedia.org/wiki/System_Center_Configuration_Manager), [OCS INventory](https://ocsinventory-ng.org/?lang=fr), [WApt](https://www.tranquil.it/gerer-parc-informatique/decouvrir-wapt/), etc.) accepte un script `.bat` qui déroule l'installation.  
@@ -277,6 +299,16 @@ Je ne vous mets pas d'image, rien de moins spectaculaire qu'un QGIS avec les bon
 Et là, normalement, l'admin SIG est satisfait, heureux et ses utilisateurs l'appellent pour le remercier de tant de sollicitude à leur égard. Je m'égare...
 
 ![Admin SIG satisfait](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/satisfied.webp){: .img-center loading=lazy }
+
+## On récapitule tout ça
+
+1. Faites votre panier de modifications sur une machine locale.
+2. Déposer les modifications de paramètres, ressources et script à déployer sur les machines
+3. Choisissez les paramètres à contraindre, laissez les autres libres
+4. Compilez le et déployer le sur une machine locale.
+5. Versionnez et déposez votre paquet sur les répertoires de déploiement réels utilisés.
+
+Une fois en place, une mise à jour de version sera vraiment légère pour vous. Cela vous permettra de garder le rythme des mises à jour mineures, et surtout d'être en phase avec le rythme de développement de QGIS. Si vous devez financer un correctif bloquant, vous n'avez aucune chance de déployer les patchs simplement si vous utilisez une version en fin de vie.
 
 Maintenant, à vous de jouer, et pensez à remonter toute anomalie ou amélioration (oui, il faudrait de suite tester cette recette avec l'[installeur V2](https://www.qgis.org/fr/site/forusers/download.html) tout juste sorti).
 
