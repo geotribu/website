@@ -51,15 +51,15 @@ Bonne nouvelle, QGIS étant open source et financé par des administrateurs SIG,
 
 Par exemple, moi j'aime bien :
 
-- toujours avoir une recherche d'adresse dans la barre de recherche universelle (merci la BAN, via le plugin [French Locator Filter](https://oslandia.gitlab.io/qgis/french_locator_filter/)
+- toujours avoir une recherche d'adresse dans la barre de recherche universelle (merci la BAN), via le plugin [French Locator Filter](https://oslandia.gitlab.io/qgis/french_locator_filter/) :
 
   ![capture écran french locator filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/recherche_adresse_qgis.png "Plugin French Locator Filter pour QGIS"){: .img-center loading=lazy }
 
-- Le plugin [Mask](https://plugins.qgis.org/plugins/mask/), pour faire des jolis... masques qui [gèrent les étiquettes à masquer et les atlas](https://regishaubourg.net/2015/12/21/le-plugin-mask-dans-qgis-genese-dune-extension-python-bien-pratique/).  
+- Le plugin [Mask](https://plugins.qgis.org/plugins/mask/), pour faire des jolis... masques qui [gèrent les étiquettes à masquer et les atlas](https://regishaubourg.net/2015/12/21/le-plugin-mask-dans-qgis-genese-dune-extension-python-bien-pratique/) :
 
   ![capture écran plugin mask](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/etiquettes_with_mask.png "Plugin Mask pour QGIS"){: .img-center loading=lazy }
 
-- [Layers menu from project](https://xcaeag.github.io/MenuFromProject-Qgis-Plugin/#en-francais), pour servir un socle de données de référence facile à maintenir.
+- [Layers menu from project](https://xcaeag.github.io/MenuFromProject-Qgis-Plugin/#en-francais), pour servir un socle de données de référence facile à maintenir :
 
   ![menu déroulant socle de couches de données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/drop_down_menu_fr.png "Plugin Layers Menu from Project"){: .img-center loading=lazy }
 
@@ -256,7 +256,6 @@ On rebascule ici dans le monde **Windows**.
 
 Vous pouvez soit utiliser l'interface graphique, soit la ligne de commande (DOS-batch ou PowerShell) à ce stade. Et comme le but est de déployer automatiquement QGIS en masse, voilà une commande type qui va installer, mettre à jour et nettoyer tous les paquets disponibles :
 
-
 ```batch
 .\osgeo4w-setup.exe `
   --menu-name "WINDOWS_MENU_NAME" `
@@ -273,8 +272,10 @@ Vous pouvez soit utiliser l'interface graphique, soit la ligne de commande (DOS-
   -C Commandline_Utilities
 ```
 
-_Pensez à changer les noms de variables hein :)_  
-_les ``` sont là pour le retour à la ligne en powershell et vous rendre ça plus lisible)_
+Pensez à changer les noms de variables hein :wink: !
+
+!!! info
+    Les "`" sont là pour le retour à la ligne en PowerShell et vous rendre ça plus lisible.
 
 C'est incrémental, donc la première installation prendra quelques minutes, les suivantes, quelques secondes.
 
