@@ -270,7 +270,7 @@ Vous pouvez soit utiliser l'interface graphique, soit la ligne de commande (DOS-
   --upgrade-also `
   -C Libs `
   -C Desktop `
-  -C Commandline_Utilities 
+  -C Commandline_Utilities
 ```
 
 _Pensez à changer les noms de variables hein :)_  
