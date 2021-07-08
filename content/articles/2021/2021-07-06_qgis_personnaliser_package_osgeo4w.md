@@ -318,3 +318,5 @@ Maintenant, à vous de jouer, et pensez à remonter toute anomalie ou améliorat
 ## Auteur
 
 --8<-- "content/team/rha.md"
+
+{% include "licenses/default.md" %}
