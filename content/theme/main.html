@@ -104,6 +104,39 @@
 
 {% block disqus %}
 
+  {# License #}
+  {% if not page.is_homepage  and ("license" not in page.meta or page.meta.license == "default") %}
+    <div class="md-source-date">
+      <small>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        Ce contenu est sous licence Creative Commons
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
+          target="_blank"
+          rel="license noopener noreferrer"
+          >BY-NC-SA 4.0 International
+            <img
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+            class=img-license-picto
+            />
+          <img
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+            class=img-license-picto
+            />
+          <img
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
+            class=img-license-picto
+            />
+          <img
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
+            class=img-license-picto
+            />
+        </a>
+      </p>
+      </small>
+    </div>
+  {% endif %}
+
   {% if not page.is_homepage %}
     {# Authoring based on git log #}
     <div class="md-source-date">
@@ -140,7 +173,6 @@
 {% block scripts %}
   {{ super() }}
   <script type="text/javascript">
-    // Translate - set before any binding
     WAMediaBox.lang = {
       prev: "Précédente",
       next: "Suivante",
