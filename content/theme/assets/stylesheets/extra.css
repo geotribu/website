@@ -2,100 +2,108 @@
 /* attribute classes to be used via {: .class} */
 
 img {
-    border-style: solid;
-    border-color: darkgrey;
-    border-width: thin;
-    box-shadow: 0px 1px 2px darkgrey;
+  border-style: solid;
+  border-color: darkgrey;
+  border-width: thin;
+  box-shadow: 0px 1px 2px darkgrey;
 }
 
 .img-rdp-news-thumb {
-    float: left;
-    clear: right;
-    overflow: auto;
-    margin-right: 10px;
-    max-height: 75px;
-    max-width: 75px;
-    box-shadow: none;
-    border: none;
+  float: left;
+  clear: right;
+  overflow: auto;
+  margin-right: 10px;
+  max-height: 75px;
+  max-width: 75px;
+  box-shadow: none;
+  border: none;
 }
 
-.emojione, .twemoji {
-    box-shadow: none;
-    border: none;
+.emojione,
+.twemoji {
+  box-shadow: none;
+  border: none;
 }
 
 .img-right {
-    /* right align with text float on the left */
-    float: right;
-    margin-left: 10px;
+  /* right align with text float on the left */
+  float: right;
+  margin-left: 10px;
 }
 
-
 .img-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.img-license-picto {
+  box-shadow: none;
+  border: none;
+  height: 22px !important;
+  margin-left: 3px;
+  vertical-align: text-bottom;
 }
 
 /* Copyleft */
 /* see: https://stackoverflow.com/questions/37088198/copyleft-symbol */
 
 .copyleft {
-    display: inline-block;
-    transform: rotate(180deg);
+  display: inline-block;
+  transform: rotate(180deg);
 }
-
 
 /* Custom buttons to set dark/ligth modes */
 
 .md-typeset button[data-md-color-scheme] {
-    cursor: pointer;
-    transition: opacity 250ms;
-    font-size: larger;
+  cursor: pointer;
+  transition: opacity 250ms;
+  font-size: larger;
 }
 
 .md-typeset button[data-md-color-scheme]:hover {
-    opacity: 0.75;
+  opacity: 0.75;
 }
 
-.md-typeset button[data-md-color-scheme]>code {
-    display: block;
-    color: var(--md-primary-bg-color);
-    background-color: var(--md-primary-fg-color);
+.md-typeset button[data-md-color-scheme] > code {
+  display: block;
+  color: var(--md-primary-bg-color);
+  background-color: var(--md-primary-fg-color);
 }
 
 /* Customize embedded tweets */
 
 blockquote.twitter-tweet {
-    display: inline-block;
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 16px;
-    border-color: #eee #ddd #bbb;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-    margin: 10px 5px;
-    padding: 0 16px 16px 16px;
-    max-width: 468px;
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  max-width: 468px;
 }
 
 blockquote.twitter-tweet p {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
 }
 
 blockquote.twitter-tweet a {
-    color: inherit;
-    font-weight: normal;
-    text-decoration: none;
-    outline: 0 none;
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  outline: 0 none;
 }
 
-blockquote.twitter-tweet a:hover, blockquote.twitter-tweet a:focus {
-    text-decoration: underline;
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
 }
