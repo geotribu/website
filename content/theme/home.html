@@ -1,91 +1,62 @@
 {% extends "main.html" %}
 
-{% block libs %}
-<script src=theme/assets/javascripts/glider.min.js></script>
-{{ super() }}
-{% endblock %}
-
 {% block styles %}
 {{ super() }}
+
 <link rel=stylesheet href=theme/assets/stylesheets/homepage.css>
-<link rel=stylesheet href=theme/assets/stylesheets/glider.min.css>
 {% endblock %}
 
 <!-- Render hero under tabs -->
 {% block tabs %}
 {{ super() }}
+
 <!-- Hero for landing page -->
-<div class="md-container tx-hero">
+<div class="tx-container">
   <div class="md-grid md-typeset">
-    <div class="md-main__inner">
-      <div>
-        <h1>Your toolkit for containerized applications on AWS</h1>
-        <p>AWS Copilot is an open source command line interface that makes it easy for developers to <span
-            class="em">build</span>,
-          <span class="em">release</span>, and <span class="em">operate</span> production ready containerized
-          applications on Amazon ECS and AWS Fargate.
-        </p>
-        <a href="docs/overview/" title="Get Started" class="md-button md-button--primary">
-          Get started
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" style="margin-left:2px">
-            <path d="M1 5.16772H9.5M9.5 5.16772L6.5 1.66772M9.5 5.16772L6.5 8.66772" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </a>
+    <div class="tx-hero">
+      <div class="tx-hero__title">
+        <h1 style="visibility: hidden">Geotribu</h1>
+      </div>
+      <div class="tx-hero__image">
+        <img src="https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png" alt="Bannière Geotribu"
+          draggable="false" title="logo Geotribu">
+      </div>
+      <div class="tx-hero__content">
+        <p>Site collaboratif sur la géomatique <span class="em">libre</span> et <span
+            class="em">ouverte</span>.</p>
       </div>
     </div>
   </div>
 </div>
-
-<div class="md-container">
-  <div class="tx-hero__image">
-    <img src="assets/images/screen.png" alt="" draggable="false">
-  </div>
 </div>
 
-
-
+<!-- Content -->
 <div class="md-container secondary-section">
   <div class="g">
-    <div class="glider-contain">
-      <div class="glider">
-        <div> <img src="https://cdn.geotribu.fr/img/internal/contribution/embed_image/coronelli_globe_celeste.jpg"
-            width="500" max-height="300" /></div>
-        <div>your content here</div>
-        <div>your content here</div>
-        <div>your content here</div>
-      </div>
-
-      <button aria-label="Previous" class="glider-prev">«</button>
-      <button aria-label="Next" class="glider-next">»</button>
-      <div role="tablist" class="dots"></div>
-    </div>
-    <!-- Architecture as building blocks -->
+    <!-- Revues de presse -->
     <div class="section">
       <div class="component-wrapper">
         <div class="first-column">
-          <h3>Get started with architectures</h3>
+          <h3>Revues de presse</h3>
           <p>
-            Run a <span class="em">single command</span> to quickly get started with a containerized
-            application using best practices on AWS from a Dockerfile.
+            Un vendredi sur deux, c'est <span class="em">GeoRDP</span> ! Un condensé d'actualités
+            sur l'écosystème de l'information géographique, concocté à plusieurs mains.
           </p>
           <p>
-            Instead of modeling individual resources, Copilot provides common cloud architectures: <a
-              href="docs/concepts/services/#load-balanced-web-service">Load Balanced Web Service</a>,
-            <a href="docs/concepts/services/#backend-service">Backend Service</a>, <a
-              href="docs/concepts/jobs/">Scheduled Job</a> and generates the necessary infrastructure from that.
-            Focus your time on writing business logic instead of connecting AWS resources.
+            Nouveautés des logiciels, clients cartographiques, serveurs géographiques, applications mobiles,
+            modes de représentation graphique, Open Data, événements, OpenStreetMap... C'est ouvert !
           </p>
         </div>
         <div class="second-column">
           <div class="image-wrapper">
-            <img src="assets/images/copilot-init.png" alt="" draggable="false">
+            <img src="https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/cnes_canal_suez.png" alt=""
+              draggable="false">
           </div>
         </div>
       </div>
 
       <div class="component-wrapper" style="display: block;">
-        <h4>Explore features</h4>
+        <h4>Participer</h4>
 
         <!-- Arch as code -->
         <div class="responsive-grid">
@@ -93,13 +64,13 @@
             <div class="card">
               <div class="logo">
                 <span class="twemoji">
-                  {% include ".icons/octicons/file-code-24.svg" %}
+                   {#  {% include ".icons/octicons/file-code-24.svg" %} #}
                 </span>
               </div>
               <div class="card-content">
-                <h5>Manifests</h5>
+                <h5>Proposer une actualité</h5>
                 <p>
-                  Describe your services with architecture-as-code.
+                  Mail ? GitHub ?.
                 </p>
               </div>
             </div>
@@ -114,9 +85,10 @@
                 </span>
               </div>
               <div class="card-content">
-                <h5>Networking</h5>
+                <h5>Indépendance</h5>
                 <p>
-                  Service discovery is setup by default for your services to connect to each other.
+                  Geotribu n'est rattaché à aucune structure. La parole y est donc
+                  libre de toute démarche publicitaire.
                 </p>
               </div>
             </div>
@@ -131,9 +103,9 @@
                 </span>
               </div>
               <div class="card-content">
-                <h5>Grow with Addons</h5>
+                <h5>Qualité</h5>
                 <p>
-                  Integrate your services with databases or any other AWS resources.
+                  blablabla.
                 </p>
               </div>
             </div>
@@ -142,61 +114,39 @@
       </div>
     </div>
 
-
-
-    <!-- Continuous delivery -->
+    <!-- Articles -->
     <div class="section follow">
       <div class="component-wrapper">
-        <div class="first-column">
-          <h3>Continuous delivery</h3>
+        <div class="second-column">
+          <h3>Articles</h3>
           <p>
-            No need to worry about gluing Copilot commands in a script to create an automated release process.
-            Copilot provides commands to create multiple deployment <a
-              href="docs/concepts/environments/">environments</a> in separate AWS accounts and regions,
-            as well as creating an AWS CodePipeline <a href="docs/concepts/pipelines/">pipeline</a> to build your
-            container images, deploy your services, and
-            run automated tests.
+            En plus des revues de presse Tutoriel, dossiers, billets d'humeur, blog-note, partage d'expérience,
+            présentation d'un outil
           </p>
         </div>
-        <div class="second-column">
+        <div class="first-column">
           <div class="image-wrapper">
-            <img src="assets/images/copilot-env-init.png" alt="" draggable="false">
+            <img src="https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png" alt=""
+              draggable="false">
           </div>
         </div>
       </div>
       <div class="component-wrapper" style="display: block;">
-        <h4>Explore features</h4>
+        <h4>Explorer les articles</h4>
 
         <!-- Environments -->
         <div class="responsive-grid">
-          <a class="card-wrapper" href="docs/commands/env-init/">
+          <a class="card-wrapper" href="/contribuer/workflow_article/">
             <div class="card">
               <div class="logo">
                 <span class="twemoji">
-                  {% include ".icons/octicons/copy-24.svg" %}
+                   {# {% include ".icons/octicons/copy-24.svg" %} #}
                 </span>
               </div>
               <div class="card-content">
-                <h5>Environments</h5>
+                <h5>Collaboratif</h5>
                 <p>
-                  Deploy to multiple AWS accounts and regions.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <!-- Override -->
-          <a class="card-wrapper" href="docs/manifest/lb-web-service/#environments">
-            <div class="card">
-              <div class="logo">
-                <span class="twemoji">
-                  {% include ".icons/octicons/pencil-24.svg" %}
-                </span>
-              </div>
-              <div class="card-content">
-                <h5>Override per environment</h5>
-                <p>
-                  Adjust your service settings per environments in the manifest.
+                  Proposer un article
                 </p>
               </div>
             </div>
@@ -207,70 +157,13 @@
             <div class="card">
               <div class="logo">
                 <span class="twemoji">
-                  {% include ".icons/octicons/pencil-24.svg" %}
+                  {# {% include ".icons/aws/codepipeline-32.svg" %} #}
                 </span>
               </div>
               <div class="card-content">
                 <h5>Automated releases</h5>
                 <p>
                   Create a continuous delivery pipeline with built-in commands.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Operations -->
-    <div class="section follow">
-      <div class="component-wrapper">
-        <div class="first-column">
-          <h3>Operations is part of the workflow</h3>
-          <p>
-            Modeling, provisioning, and deploying services are only part of the application lifecycle for the developer.
-            Copilot also supports workflows around troubleshooting and debugging to help when things go wrong. <a
-              href="docs/commands/svc-logs/">Tail
-              your logs</a> or <a href="docs/commands/svc-status/">view the health</a> of your services
-            from the comfort of your terminal.
-          </p>
-        </div>
-        <div class="second-column">
-          <div class="image-wrapper">
-            <img src="assets/images/copilot-svc-status.png" alt="" draggable="false">
-          </div>
-        </div>
-      </div>
-      <div class="component-wrapper" style="display: block;">
-        <h4>Explore features</h4>
-
-        <!-- Tasks -->
-        <div class="responsive-grid">
-          <a class="card-wrapper" href="docs/commands/task-run/">
-            <div class="card">
-              <div class="logo">
-                <span class="twemoji">
-                </span>
-              </div>
-              <div class="card-content">
-                <h5>Run tasks</h5>
-                <p>
-                  Run one-off tasks for operational workloads.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a class="card-wrapper" href="docs/commands/svc-status/">
-            <div class="card">
-              <div class="logo">
-                <span class="twemoji">
-                </span>
-              </div>
-              <div class="card-content">
-                <h5>Monitoring</h5>
-                <p>
-                  View logs or alarms from your services or tasks.
                 </p>
               </div>
             </div>
@@ -285,12 +178,28 @@
 <!-- Content -->
 {% block content %}{% endblock %}
 
-<!-- Application footer -->
+<!-- Light footer -->
 {% block footer %}
-{{ super() }}
-{% endblock %}
-
-{% block scripts %}
-{{ super() }}
-<script src=theme/assets/javascripts/slideshow.js></script>
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        {% if config.copyright %}
+        <div class="md-footer-copyright__highlight">
+          {{ config.copyright }}
+        </div>
+        {% endif %}
+        Généré avec
+        <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        et le thème
+        <a href="https://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      {% block social %}
+      {% include "partials/social.html" %}
+      {% endblock %}
+    </div>
+  </div>
+</footer>
 {% endblock %}
