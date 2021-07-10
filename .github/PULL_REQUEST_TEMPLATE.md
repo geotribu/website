@@ -1,4 +1,4 @@
-<!-- Modèle pour créer une nouvelle revue de presse. Ignorer ou adapter pour les autres types de contenus -->
+<!-- Modèle pour créer une nouvelle revue de presse. MERCI DE SUPPRIMER OU ADAPTER POUR LES AUTRES TYPES DE CONTENUS (principe du `benevol time fair-use`). -->
 
 # Amorcer une nouvelle revue de presse
 
@@ -8,6 +8,30 @@
   - [ ] `date` : au format `AAAA-MM-JJ HH-MM` - mais laisser l'heure sur 14h20 c'est historique
   - [ ] `title` : correspond à ce qui est affiché dans le menu de navigation, l'onglet du navigateur et le SEO. Bien **indiquer l'année** pour améliorer le référencement et en prévision d'une refonte du moteur de rendu.
 - [ ] changer la date du titre principal (en début de contenu). Idem, **indiquer l'année**.
+
+## Prévenir l'équipe
+
+- Informer l'équipe que la prochaine RDP a été initiée en publiant le lien de la PR sur [le canal `#revues-de-presse` de Slack](https://geotribu.slack.com/archives/C010DD7FMEX)
+
+## Encourager les contributions spontanées sur Twitter
+
+Pour encourager les contributions extérieures, il est sympa de tweeter le lien du fichier de la RDP. Voici ci-dessous un modèle dans lequel :
+
+- remplacer `XXXXXXXXXX` par le lien vers le fichier de la GeoRDP dans la branche créée (par exemple : <https://github.com/geotribu/website/blob/rdp/2021-02-26/content/rdp/2021/rdp_2021-02-26.md>)
+- insérer l'image dans le tweet <https://cdn.geotribu.fr/img/internal/contribution/geotribu_contribuer_rdp_github_edit.png>
+
+```txt
+Ce vendredi c'est #GeoRDP !
+
+💡 Une idée de news ? Une envie de parler de #carte ? d'outil #SIG ? de relayer un article, un tutoriel  sur la #géographie ou la #géomatique ?
+
+C'est par ici 👉 XXXXXXXXXX 👈
+(icône 🖍️)
+
+Modèle de news ici : https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp_news.md
+```
+
+Exemple tweet : <https://twitter.com/geotribu/status/1364625815099613185>
 
 ----
 

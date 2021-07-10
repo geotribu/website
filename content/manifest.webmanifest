@@ -1,7 +1,7 @@
 {
   "short_name": "geotribu",
   "name": "Geotribu",
-  "description": "Veille libre sur le petit monde de la g&eacute;omatique",
+  "description": "Veille libre et francophone sur la g&eacute;omatique et l'information géographique",
   "lang": "fr",
   "icons": [
     {
@@ -10,7 +10,7 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/?utm_source=web_app_manifest&utm_medium=pwa",
+  "start_url": "/?utm_campaign=installed_as_application&utm_source=web_app_manifest&utm_medium=pwa",
   "background_color": "#3366cc",
   "display": "standalone",
   "theme_color": "#ff9933"
