@@ -1,8 +1,10 @@
 ---
 title: Utiliser des emojis
-category: contribution
+authors: ["Geotribu"]
+categories: ["article", "contribution", "tutoriel"]
 date: 2020-07-20 10:20
 description: "Guide de contribution à Geotribu : comment insérer des émojis dans un contenu en Markdown."
+image: "https://blog.emojipedia.org/content/images/size/w2000/2020/02/Emojipedia-Header-Image-JoyPixels-5.5.jpg"
 tags: geotribu,contribuer,media,emoji,emoticone,intégration,tutoriel
 ---
 
@@ -19,6 +21,7 @@ On utilise [l'extension dédiée de PyMdown](https://facelessuser.github.io/pymd
 
 Elle est semblable à la plupart des outils de discussion : `:emoji_code:`.
 
+<!-- markdownlint-disable MD046 -->
 === "Markdown"
 
     ```markdown
@@ -28,3 +31,13 @@ Elle est semblable à la plupart des outils de discussion : `:emoji_code:`.
 === "Rendu"
 
     Voici quelques exemples d'émojis : :beginner: :birthday: :boom: :candle: :earth_americas: :earth_africa: :earth_asia: :eyeglasses: :globe_with_meridians: :heart: :heart_eyes: :parachute: :pirate_flag: :pray: :smile: :smiley: :sweat_smile: :slight_smile: :unicorn: :woman_levitate:
+<!-- markdownlint-enable MD046 -->
+
+----
+
+## Table de correspondance
+
+:warning: La liste étant très grande, cela peut-être très long à afficher :warning:
+
+[Consulter le tableau des codes de chaque emoji et leur aperçu :fontawesome-regular-eye:](/toc_nav_ignored/emojis_joypixels_preview/){: .md-button }
+{: align=middle }

@@ -36,6 +36,7 @@ plugins:
         remove_comments: true
   - rss:
       abstract_chars_count: 500
+      comments_path: "#__comments"
       date_from_meta:
         as_creation: "date"
         as_update: false
@@ -44,6 +45,10 @@ plugins:
       length: 40
       match_path: "(articles|rdp)/.*"
       pretty_print: true
+      url_parameters:
+        utm_source: "rss-feed"
+        utm_medium: "RSS"
+        utm_campaign: "feed-syndication"
   - search:
       lang: fr
       prebuild_index: !!python/object/apply:os.getenv ["MKDOCS_SEARCH_PREBUILD_INDEX"]
@@ -114,14 +119,11 @@ theme:
         icon: material/weather-night
         name: Basculer en mode clair
 
-
-# Integrations with 3rd party
-google_analytics:
-  - !!python/object/apply:os.getenv ["MKDOCS_GOOGLE_ANALYTICS_KEY"]
-  - 'auto'
-
 # Customization
 extra:
+  analytics:
+    provider: google
+    property: !!python/object/apply:os.getenv ["MKDOCS_GOOGLE_ANALYTICS_KEY"]
   comments_url: https://comments.geotribu.fr  # isso url
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:

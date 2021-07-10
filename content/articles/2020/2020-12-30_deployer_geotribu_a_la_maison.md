@@ -104,7 +104,7 @@ Evidemment, ce dossier ne contient pas les images, hébergées sur un [serveur �
 [![Fernand Léger - Les constructeurs](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg "Quand je vous disais que c'est Léger !"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg){: data-mediabox="lightbox-gallery" data-title="Quand je vous disais que c'est Léger !"}
 {: align=middle }
 
-## 2. Servir le site
+## 2. Servir le site
 
 En ouvrant simplement le fichier `index.html`, on voit déjà apparaître la page d'accueil dans son navigateur par défaut. Mais le site étant configuré pour avoir des URLs correspondant au titre de la page sans l'extension `.html`, la navigation n'est donc pas fonctionnelle, le [navigateur se comportant davantage comme un explorateur de fichiers](https://developer.mozilla.org/fr/docs/Apprendre/Ouvrir_un_fichier_dans_un_navigateur_web#Ouvrir_un_fichier_local).
 
