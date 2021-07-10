@@ -7,8 +7,9 @@ tags: home,géomatique,sig,géographie,dataviz,geordp,accueil,geotribu
 hide:
   - navigation
   - toc
+template: home.html
 ---
-
+<!--
 # Bienvenue
 
 Bienvenue sur le site de Geotribu !
