@@ -245,9 +245,10 @@
     rgba(0, 0, 0, 0.15) 0px 0.25rem 0.5rem 0px;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
+
 .secondary-section .g .section .component-wrapper .responsive-grid .card:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0.3125rem 0.3125rem 0px -0.0625rem,
-    rgba(0, 0, 0, 0.26) 0px 0.25rem 0.5rem 0px;
+    rgba(255, 138, 102, 0.26) 0px 0.25rem 0.5rem 0px;
 }
 
 @media screen and (min-width: 75rem) {
@@ -319,6 +320,24 @@
   background: rgba(0, 0, 0, 0.05) none repeat scroll 0% 0%;
   padding: 2px 6px;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 64rem) {
+  .four-cols .g .section .component-wrapper .responsive-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.four-cols .g .section .component-wrapper .first-column {
+  width: 100%;
+}
+
+@media screen and (max-width: 1012px) {
+  .four-cols .g .section .component-wrapper .first-column {
+    padding-right: 0px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
 }
 
 .component-wrapper span.em {
