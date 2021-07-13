@@ -60,6 +60,7 @@ La syntaxe est celle de la [fonction d'intégration de Jinja](https://jinja.pall
 | :------ | :---------- | :-----: |
 | [Creative Commons 4.0 BY-SA](/toc_nav_ignored/snippets/licenses/cc4_by-sa/) | Licence autorisant toutes les réutilisations, y compris pour une finalité commerciale. | {% raw %}`{% include "licenses/cc4_by-sa.md" %}`{% endraw %} |
 | [Creative Commons 4.0 BY-NC-SA](/toc_nav_ignored/snippets/licenses/cc4_by-nc-sa/) | **Licence par défaut**. Empêche la réutilisation pour une finalité commerciale. | {% raw %}`{% include "licenses/cc4_by-nc-sa.md" %}`{% endraw %} |
+| [Beerware](/toc_nav_ignored/snippets/licenses/beerware/) | Licence humoristique autorisant toute réutilisation sans conditions mais qui invite à payer un coup à l'auteur/e original/e. | {% raw %}`{% include "licenses/beerware.md" %}`{% endraw %} |
 
 !!! question "Suggérer une licence"
     La licence souhaitée n'est pas disponible ? Proposez-la via GitHub en créant un fichier dans [ce dossier](https://github.com/geotribu/website/tree/master/content/toc_nav_ignored/snippets/licenses), ou [en ouvrant une issue](https://github.com/geotribu/website/issues/new?title=Ajout%20d%27une%20licence) et/ou contactez-nous !

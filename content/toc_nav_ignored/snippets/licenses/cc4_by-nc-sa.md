@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD026 MD041 -->
-## Licence :fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-nc-eu: :fontawesome-brands-creative-commons-sa:
+## Licence :fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-nc-eu: :fontawesome-brands-creative-commons-sa: {: id="license" }
 
 Ce contenu est sous licence [Creative Commons International 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr), avec attribution et partage dans les mêmes conditions, sauf dans le cadre d'une utilisation commerciale.  
 Les médias d'illustration sont potentiellement soumis à d'autres conditions d'utilisation.
@@ -13,6 +13,6 @@ Les médias d'illustration sont potentiellement soumis à d'autres conditions d'
 
     Citer cet article :
 
-    > "*{{ page.title }}*" publié par {{ page.meta.authors | join(",") }} sur **{{ config.site_name }}** - Source : <{{ page.canonical_url }}>
+    > "*{{ page.title }}*" publié par {{ page.meta.authors | join(",") }} sur **{{ config.site_name }}** sous [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr) - Source : <{{ page.canonical_url }}>
 
 <!-- markdownlint-enable MD026 MD041 MD046 -->
