@@ -3,7 +3,7 @@ title: "Choisir une licence"
 categories: ["article", "contribution", "tutoriel"]
 date: "2021-07-12 11:20"
 description: "Comment choisir et appliquer une licence à son article Geotribu."
-image: "https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_yaml_frontmatter.png"
+image: "https://cdn.geotribu.fr/img/internal/contribution/licensing/license_block.png"
 tags: "contribuer,tutoriel,markdown,licence"
 ---
 
