@@ -79,7 +79,7 @@ Maintenant, vous n'avez plus aucune excuse pour ne pas mettre de belles icônes 
 
 ## Auteur
 
---8<-- content/team/jmou.md
+--8<-- "content/team/jmou.md"
 
 {% include "licenses/beerware.md" %}
 
