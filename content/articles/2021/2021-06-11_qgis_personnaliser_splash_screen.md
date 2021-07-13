@@ -5,6 +5,7 @@ categories: ["article", "tutoriel"]
 date: "2021-06-11 10:20"
 description: "Le lancement de QGIS vous semble long ? Vous êtes sur la LTR et las de voir la même image pendant 2 ans ? Voici comment personnaliser l'image au lancement de QGIS."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_splash_screen/qgis_qtribu_splash_screen_custom.png"
+license: none
 tags: "QGIS,personnalisation,splash screen,démarrage"
 ---
 
@@ -107,3 +108,5 @@ Pas de souci, j'ai intégré la possibilité de le faire en un clic sur [notre p
 ## Auteur
 
 --8<-- "content/team/jmou.md"
+
+{% include "licenses/cc4_by-sa.md" %}

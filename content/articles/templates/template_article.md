@@ -33,3 +33,5 @@ Texte.
 ## Auteur
 
 --8<-- "content/team/jmou.md"
+
+{% include "licenses/default.md" %}
