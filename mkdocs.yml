@@ -52,7 +52,7 @@ plugins:
         utm_campaign: "feed-syndication"
   - search:
       lang: fr
-      prebuild_index: !!python/object/apply:os.getenv ["MKDOCS_SEARCH_PREBUILD_INDEX"]
+      prebuild_index: !ENV MKDOCS_SEARCH_PREBUILD_INDEX
       separator: '[\s\-\.]+'
   - macros:
       include_dir: content/toc_nav_ignored/snippets
@@ -68,6 +68,7 @@ plugins:
         "node/423.md": "articles/2011/art_2011-06-15.md"
         "node/462.md": "articles/2011/art_2011-11-09.md"
         "node/488.md": "rdp/2012/rdp_2012-01-13.md"
+        "node/520.md": "articles/2012/art_2012-06-21.md"
         "node/532.md": "articles/2012/art_2012-07-12.md"
         "node/636.md": "articles/2013/art_2013-09-26.md"
         # correction de la structure initiale de la résurrection
@@ -127,7 +128,7 @@ theme:
 extra:
   analytics:
     provider: google
-    property: !!python/object/apply:os.getenv ["MKDOCS_GOOGLE_ANALYTICS_KEY"]
+    property: !ENV MKDOCS_GOOGLE_ANALYTICS_KEY
   comments_url: https://comments.geotribu.fr  # isso url
   manifest: 'manifest.webmanifest'  # PWA declaration
   social:
