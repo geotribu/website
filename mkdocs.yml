@@ -10,13 +10,13 @@ site_url: https://static.geotribu.fr/
 copyright: '<span class="copyleft">&copy;</span> Geotribu'
 
 # Repository
-repo_name: 'geotribu/website'
-repo_url: 'https://github.com/geotribu/website'
-edit_uri: 'edit/master/content'
+repo_name: "geotribu/website"
+repo_url: "https://github.com/geotribu/website"
+edit_uri: "edit/master/content"
 
 # Custom folder structure
-docs_dir: './content'
-site_dir: './build/mkdocs/site'
+docs_dir: "./content"
+site_dir: "./build/mkdocs/site"
 
 # Plugins
 plugins:
@@ -86,8 +86,8 @@ plugins:
 
 # Theme
 theme:
-  name: 'material'
-  custom_dir: './content/theme/'
+  name: "material"
+  custom_dir: "./content/theme/"
   favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
 
   # Don't include MkDocs' JavaScript
@@ -103,7 +103,7 @@ theme:
   font: false
   icon:
     repo: fontawesome/brands/github-alt
-  language: 'fr'
+  language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
     # Light mode
@@ -129,40 +129,39 @@ extra:
   analytics:
     provider: google
     property: !ENV MKDOCS_GOOGLE_ANALYTICS_KEY
-  comments_url: https://comments.geotribu.fr  # isso url
-  manifest: 'manifest.webmanifest'  # PWA declaration
+  comments_url: https://comments.geotribu.fr # isso url
+  manifest: "manifest.webmanifest" # PWA declaration
   social:
-    - icon: 'fontawesome/solid/rss'
-      link: 'https://static.geotribu.fr/feed_rss_created.xml'
+    - icon: "fontawesome/solid/rss"
+      link: "https://static.geotribu.fr/feed_rss_created.xml"
       name: "S'abonner aux nouveaux contenus via RSS"
-    - icon: 'fontawesome/brands/github-alt'
-      link: 'https://github.com/geotribu/'
+    - icon: "fontawesome/brands/github-alt"
+      link: "https://github.com/geotribu/"
       name: "L'organisation Github de Geotribu"
-    - icon: 'fontawesome/brands/twitter'
-      link: 'https://twitter.com/geotribu'
+    - icon: "fontawesome/brands/twitter"
+      link: "https://twitter.com/geotribu"
       name: "Geotribu sur Twitter"
-    - icon: 'fontawesome/brands/linkedin'
-      link: 'https://www.linkedin.com/feed/hashtag/?keywords=geotribu'
+    - icon: "fontawesome/brands/linkedin"
+      link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
       name: "Les contenus de Geotribu sur LinkedIn"
-    - icon: 'fontawesome/brands/facebook'
-      link: 'https://fr-fr.facebook.com/geotribu/'
+    - icon: "fontawesome/brands/facebook"
+      link: "https://fr-fr.facebook.com/geotribu/"
       name: "Page Facebook de Geotribu"
     - icon: fontawesome/solid/paper-plane
       link: mailto:<geotribu@gmail.com>
       name: "Nous contacter"
-    - icon: 'fontawesome/brands/slack'
-      link: 'https://geotribu.slack.com'
+    - icon: "fontawesome/brands/slack"
+      link: "https://geotribu.slack.com"
       name: "Rejoignez-nous sur Slack"
 
 extra_css:
-  - 'theme/assets/stylesheets/extra.css'
-  - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css'
+  - "theme/assets/stylesheets/extra.css"
+  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css"
 
 extra_javascript:
-  - 'theme/assets/javascripts/extra.js'
-  - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js'
-  - 'https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js'
-
+  - "theme/assets/javascripts/extra.js"
+  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js"
+  - "https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
@@ -185,7 +184,7 @@ markdown_extensions:
   - pymdownx.smartsymbols
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
-      base_path: '.'
+      base_path: "."
       check_paths: true
   - pymdownx.superfences:
       custom_fences:
@@ -197,7 +196,6 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
-
 # Navigation - Menu organization
 # # Disabled to use auto detection
 # nav:
