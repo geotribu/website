@@ -94,7 +94,8 @@
 
 /* Secondary content styles */
 .secondary-section {
-  background: rgb(245, 245, 245) none repeat scroll 0% 0%;
+  /* background: rgb(245, 245, 245) none repeat scroll 0% 0%; */
+  background: var(--md-default-bg-color) none repeat scroll 0% 0%;
   border-top: 1px solid rgb(222, 222, 222);
   border-bottom: 1px solid rgb(222, 222, 222);
 }
@@ -137,7 +138,7 @@
 }
 
 .secondary-section .g .section .component-wrapper h3 {
-  color: rgb(38, 38, 38);
+  color: var(--md-default-fg-color);
   font-size: 36px;
   font-weight: 700;
   line-height: 46px;
@@ -146,11 +147,11 @@
 }
 
 .secondary-section .g .section .component-wrapper h4 {
-  color: rgb(38, 38, 38);
+  color: var(--md-default-fg-color--light);
 }
 
 .secondary-section .g .section .component-wrapper p {
-  color: rgb(92, 92, 92);
+  color: var(--md-default-fg-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -232,7 +233,7 @@
 
 .secondary-section .g .section .component-wrapper .responsive-grid .card {
   position: relative;
-  background-color: #fff none repeat scroll 0% 0%;
+  background-color: var(--md-primary-bg-color) none repeat scroll 0% 0%;
   padding: 1.5rem;
   display: flex;
   flex-direction: row;
@@ -241,14 +242,14 @@
   height: 100%;
   -moz-box-pack: start;
   justify-content: flex-start;
-  box-shadow: rgba(0, 0, 0, 0.09) 0.3125rem 0.3125rem 0px -0.0625rem,
-    rgba(0, 0, 0, 0.15) 0px 0.25rem 0.5rem 0px;
+  box-shadow: var(--md-default-fg-color--lightest) 0.3125rem 0.3125rem 0px -0.0625rem,
+    var(--md-accent-bg-color) 0px 0.25rem 0.5rem 0px;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 
 .secondary-section .g .section .component-wrapper .responsive-grid .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0.3125rem 0.3125rem 0px -0.0625rem,
-    rgba(255, 138, 102, 0.26) 0px 0.25rem 0.5rem 0px;
+  box-shadow: var(--md-accent-fg-color--transparent) 0.3125rem 0.3125rem 0px -0.0625rem,
+    var(--md-accent-bg-color--light) 0px 0.25rem 0.5rem 0px;
 }
 
 @media screen and (min-width: 75rem) {
@@ -263,9 +264,10 @@
 }
 
 .secondary-section .g .section .component-wrapper .responsive-grid .card .logo {
+  fill: currentColor;
   margin-right: 0.75rem;
-  width: 1.2rem;
   min-width: 1.2rem;
+  width: 1.2rem;
 }
 
 .secondary-section
@@ -289,7 +291,7 @@
   .card
   .card-content
   h5 {
-  color: rgb(61, 61, 61);
+  color: var(--md-primary-fg-color);
   margin: 0;
 }
 
@@ -303,7 +305,7 @@
   p {
   margin-top: 0.25em;
   margin-bottom: 0;
-  color: rgb(92, 92, 92);
+  color: var(--md-default-fg-color);
   font-size: 0.65rem;
   font-weight: 300;
   line-height: normal;
@@ -317,7 +319,7 @@
   .card
   .card-content
   code {
-  background: rgba(0, 0, 0, 0.05) none repeat scroll 0% 0%;
+  background: var(--md-default-bg-color) none repeat scroll 0% 0%;
   padding: 2px 6px;
   border-radius: 4px;
 }
@@ -341,7 +343,8 @@
 }
 
 .component-wrapper span.em {
-  color: rgb(61, 61, 61);
+  /* color: rgb(61, 61, 61); */
+  color: var(--md-accent-fg-color);
 }
 
 .component-wrapper a {
