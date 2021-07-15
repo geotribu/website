@@ -95,11 +95,10 @@ theme:
   search_index_only: true
 
   features:
-    - navigation.instant
+    # - navigation.instant
     - navigation.expand
     - navigation.tabs
     - navigation.top
-    - navigation.tracking
   font: false
   icon:
     repo: fontawesome/brands/github-alt
