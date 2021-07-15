@@ -160,24 +160,64 @@
 }
 
 .secondary-section .g .section .component-wrapper .image-wrapper {
-  margin-bottom: 12px;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-top: 48px;
+  align-items: stretch;
   border: 1px solid rgb(222, 222, 222);
+  border-radius: 8px;
   box-shadow: rgba(202, 202, 202, 0.15) 0px 0px 0px 6px;
-  max-width: 600px;
-  width: 100%;
+  display: flex;
   height: auto;
   margin: 0 auto;
-  display: flex;
-  align-items: stretch;
+  margin-bottom: 12px;
+  margin-top: 48px;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.secondary-section .g .section .component-wrapper .image-wrapper:hover {
+  border-radius: 10px;
+  box-shadow: var(--md-accent-fg-color--transparent) 0.3125rem 0.3125rem 0px -0.0625rem,
+    var(--md-accent-bg-color--light) 2px 0.25rem 0.5rem 0px;
 }
 
 .image-wrapper img {
-  width: 100%;
+  display: block;
   height: 100%;
   min-width: 0;
+  width: 100%;
+}
+
+.image-wrapper:hover img {
+  opacity: 0.85;
+}
+
+.secondary-section
+  .g
+  .section
+  .component-wrapper
+  .image-wrapper
+  .image-overlay {
+  background: var(--md-default-bg-color--light);
+  bottom: 5px;
+  color: var(--md-default-fg-color);
+  font-size: 0.65rem;
+  font-weight: 400;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+.secondary-section
+  .g
+  .section
+  .component-wrapper
+  .image-wrapper:hover
+  .image-overlay {
+  opacity: 1;
 }
 
 .secondary-section .g .section .component-wrapper .first-column {
@@ -343,11 +383,10 @@
 }
 
 .component-wrapper span.em {
-  /* color: rgb(61, 61, 61); */
   color: var(--md-accent-fg-color);
 }
 
-.component-wrapper a {
+.component-wrapper .responsive-grid a {
   transition: color 125ms;
   color: rgb(61, 61, 61);
   background: rgba(0, 0, 0, 0.05) none repeat scroll 0% 0%;
@@ -359,7 +398,7 @@
   font-weight: 600;
 }
 
-.component-wrapper a:hover {
+.component-wrapper .responsive-grid a:hover {
   color: var(--md-typeset-a-color);
   background: var(--md-accent-fg-color--transparent);
 }

@@ -47,8 +47,15 @@
         </div>
         <div class="second-column">
           <div class="image-wrapper">
-            <img src="https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/cnes_canal_suez.png" alt=""
-              draggable="false">
+            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" >
+              <img
+                src="{{ page.next_page.meta.image }}"
+                alt="lien vers la {{ page.next_page.title | e }}"
+                loading="lazy"
+                draggable="false"
+                title="Illustration de la {{ page.next_page.title | e }}">
+                <div class="image-overlay">{{ page.next_page.meta.description | truncate(100, False) | e }}</div>
+            </a>
           </div>
         </div>
       </div>
@@ -67,7 +74,7 @@
               <div class="card-content">
                 <h5>Proposer une news</h5>
                 <p>
-                  Créez un ticket (<i>issue</i>) ou une <i>Pull Request</i><br>.
+                  Créez un ticket (<i>issue</i>) ou une <i>Pull Request</i>.<br>
                   Pas de compte GitHub ? Envoyez un mail à <em>geotribu+rdp [at] gmail.com</em>.
                 </p>
               </div>
@@ -124,8 +131,15 @@
         </div>
         <div class="second-column">
           <div class="image-wrapper">
-            <img src="https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png" alt=""
-              draggable="false">
+            <a href="/articles/2021/2021-07-06_qgis_personnaliser_package_osgeo4w/" title="Préconfigurer QGIS en entreprise avec OSGEO4W, par Régis Haubourg" >
+              <img
+                src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png"
+                alt="lien vers le dernier article publié"
+                loading="lazy"
+                draggable="false"
+                title="Illustration du dernier article publié">
+                <div class="image-overlay">Préconfigurer QGIS en entreprise avec OSGEO4W, par Régis Haubourg</div>
+            </a>
           </div>
         </div>
       </div>
@@ -270,11 +284,11 @@
     </div>
   </div>
 </div>
-
 {% endblock %}
 
 <!-- Content -->
-{% block content %}{% endblock %}
+{% block content %}
+{% endblock %}
 
 <!-- Light footer -->
 {% block footer %}
