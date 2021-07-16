@@ -95,7 +95,6 @@ theme:
   search_index_only: true
 
   features:
-    # - navigation.instant
     - navigation.expand
     - navigation.tabs
     - navigation.top
@@ -195,6 +194,7 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
+
 # Navigation - Menu organization
 # # Disabled to use auto detection
 # nav:
