@@ -12,14 +12,14 @@ tags: "GeoTribu,contributeur,contributrice,auteur,contributrice,credits,remercie
 
 ## Membres de l'équipe
 
-- [Arnaud](avdc)
-- [Aurélien](acha)
-- [Etienne](edel)
-- [Fabien](fgob)
-- [Florian](fbor)
-- [Jérémie O.](jory)
-- [Julien](jmou)
-- [Mathieu R.](mraj)
+- [Arnaud](/team/avdc/)
+- [Aurélien](/team/acha/)
+- [Etienne](/team/edel/)
+- [Fabien](/team/fgob/)
+- [Florian](/team/fbor/)
+- [Jérémie O.](/team/jory/)
+- [Julien](/team/jmou/)
+- [Mathieu R.](/team/mraj/)
 
 ----
 
@@ -33,10 +33,10 @@ La liste ci-après est générée automatiquement à partir de l'historique de [
 
 ## Membres historiques
 
-- [Adrien](avha)
-- [Guillaume](gdbo)
-- [Julie](jpie)
-- [Pierre](pver)
-- [Rémi](rbov)
-- [Rodolphe](rqui)
-- [Thomas](tgra)
+- [Adrien](/team/avha/)
+- [Guillaume](/team/gdbo/)
+- [Julie](/team/jpie/)
+- [Pierre](/team/pver/)
+- [Rémi](/team/rbov/)
+- [Rodolphe](/team/rqui/)
+- [Thomas](/team/tgra/)
