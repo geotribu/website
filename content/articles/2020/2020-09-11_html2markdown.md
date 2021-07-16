@@ -43,7 +43,7 @@ Certains services, tels [Markdown Here](https://markdown-here.com/features.html)
 
 Bref, au revoir [BBCode](https://fr.wikipedia.org/wiki/BBCode), DokuWiki, [WikiTexte](https://fr.wikipedia.org/wiki/Wikitexte), etc. Bonjour [Markdown] :
 
-[![markdown exemple](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png "Exemple basique de la syntaxe markdown"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png){: data-mediabox="ligthbox-gallery" data-title="Exemple basiques de la syntaxe markdown rendue dans StackEdit."}
+[![markdown exemple](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png "Exemple basique de la syntaxe markdown"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png){: data-mediabox="lightbox-gallery" data-title="Exemple basiques de la syntaxe markdown rendue dans StackEdit."}
 
 ### Une syntaxe, des rendus
 
