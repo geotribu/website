@@ -50,6 +50,7 @@ Sinon, cela tient en quelques étapes :
     - des [tweets](/contribuer/guides/twitter/)
 - gérer les [métadonnées](/contribuer/guides/metadata_yaml_frontmatter/)
 - [signer son article](/contribuer/guides/authoring/)
+- [choisir une licence](/contribuer/guides/licensing/)
 
 Problème ? Souci ? Angoisse ? Simple question ?
 
