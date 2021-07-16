@@ -48,7 +48,7 @@ N'hésitez pas à nous dire ce que vous en pensez :slight_smile:.
 
 ![icône poignée de main](https://cdn.geotribu.fr/img/internal/icons-rdp-news/lobby.png "icône poignée de main"){: .img-rdp-news-thumb }
 
-Quand on publie, il est important d'indiquer comment le contenu peut être éventullement réutilisé. Jusqu'à présent, le flou régnait (comme sur une bonne partie de la Toile) sur qui est diffusé sur Geotribu. C'est un manque désormais comblé :
+Quand on publie, il est important d'indiquer comment le contenu peut être éventullement réutilisé. Jusqu'à présent, le flou régnait (comme sur une bonne partie de la Toile) sur ce qui est diffusé sur Geotribu. C'est un manque désormais comblé :
 
 - une licence par défaut s'applique aux contenus communs (GeoRDP notamment) : la [Creative Commmons BY-NC-SA 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr), mentionnée en bas de chaque contenu
 - chaque auteur/e peut choisir une licence différente via une syntaxe Markdown simple
@@ -62,7 +62,7 @@ Si vous avez déjà publié sur Geotribu et que vous souhaitez ne pas utiliser l
 
 ## A suivre
 
-:track_next: Pour continuer l'été sans tourner le dos à celles te ceux qui continuent de travailler, nous allons quand même créer une revue de presse pour chaque mois à auxquelles nous vous invitons à contribuer.
+:track_next: Pour continuer l'été sans tourner le dos à celles et ceux qui continuent de travailler, nous allons quand même créer une revue de presse pour chaque mois à auxquelles nous vous invitons à contribuer.
 
 Par ailleurs, nous envisageons de financer collectivement (contributeurs + lectorat) les projets open source que nous utilisons ici (en particulier Material for MkDocs) et avons créé une cagnotte sur Liberapay qui pourrait nous servir également à régler la (petite) note du nom de domaine.  
 Nous vous en reparlerons bientôt mais d'ici là, n'hésitez pas à nous donner votre avis sur cet aspect ou quelques sesterces :wink:.
