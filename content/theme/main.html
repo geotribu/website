@@ -2,33 +2,33 @@
 
 {% block extrahead %}
   <meta property="robots" content="all" />
-  <!-- RSS Feed -->
+  {# RSS Feed #}
   <link rel="alternate" type="application/rss+xml" title="RSS feed of created content" href="{{ config.site_url }}feed_rss_created.xml">
   <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="{{ config.site_url }}feed_rss_updated.xml">
-  <!-- Meta title -->
+  {# Meta title #}
   {% set title = config.site_name %}
   {% if page and page.meta and page.meta.title %}
   {% set title = title ~ " - " ~ page.meta.title %}
   {% elif page and page.title and not page.is_homepage %}
   {% set title = title ~ " - " ~ page.title | striptags %}
   {% endif %}
-  <!-- Meta date -->
+  {# Meta date #}
   {% if page and page.meta and page.meta.date %}
   {% set date = page.meta.date %}
   {% endif %}
-  <!-- Meta description -->
+  {# Meta description #}
   {% set description = config.site_description %}
   {% if page and page.meta and page.meta.description %}
   {% set description = page.meta.description | striptags %}
   {% elif page and page.description and not page.is_homepage %}
   {% set description = page.description | striptags %}
   {% endif %}
-  <!-- Meta image -->
+  {# Meta image #}
   {% set image = 'https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg' %}
   {% if page and page.meta and page.meta.image %}
   {% set image = page.meta.image %}
   {% endif %}
-  <!-- Meta author -->
+  {# Meta author #}
   {% set author = config.site_author %}
   {% if page and page.meta and page.meta.authors and not page.is_homepage %}
   {% set author = page.meta.authors %}
@@ -46,21 +46,21 @@
   <meta name="author" content="{{ author }}">
   {% endif %}
 
-  <!-- Meta type -->
+  {# Meta type #}
   {% if page.is_homepage %}
   {% set type = "website" %}
   {% else %}
   {% set type = "article" %}
   {% endif %}
 
-  <!-- OpenGraph -->
+  {# OpenGraph #}
   <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="{{ image }}">
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="{{ type }}">
   <meta property="og:url" content="{{ page.canonical_url }}">
-  <!-- Twitter -->
+  {# Twitter #}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@geojulien" />
   <meta name="twitter:description" content="{{ description }}">
@@ -69,7 +69,7 @@
   <meta name="twitter:site" content="@geotribu" />
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:widgets:align" content="center">
-  <!-- Structured data using schema.org -->
+  {# Structured data using schema.org #}
   {% if type == "article" %}
     <script type="application/ld+json">
     {
@@ -97,7 +97,7 @@
 {% endblock %}
 
 {% block libs %}
-  <!-- Handle Twitter oEmbed - See #54 -->
+  {# Handle Twitter oEmbed - See #54 #}
   <script charset="utf-8" id="twitter-wjs" type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
 
 {% endblock %}
@@ -105,42 +105,76 @@
 {% block disqus %}
 
   {% if not page.is_homepage %}
-    {# Authoring based on git log #}
+  {# Authoring based on git log #}
     <div class="md-source-date">
       <small>
         Contributions à cette page : {{ git_page_authors }}
       </small>
     </div>
+  {% endif %}
 
-{# Comment system (Isso) #}
-<div id="__comments">
-  <script
-    data-isso="{{ config.extra.comments_url }}/"
-    data-isso-feed="true"
-    data-isso-reply-notifications="true"
-    data-isso-reply-to-self="false"
-    data-isso-require-author="true"
-    data-isso-require-email="true"
-    data-isso-vote="true"
-    src="{{ config.extra.comments_url }}/js/embed.min.js">
-    </script>
-  <hr>
-  <section id="isso-thread">
-    <h2>Commentaires</h2>
-    <small>
-      Une version minimale de la <a href="/contribuer/guides/markdown_basics/" hreflang="fr" target="_blank">syntaxe
-        markdown</a> est
-      acceptée pour la mise en forme des commentaires.<br>Propulsé par <a href="https://posativ.org/isso/" hreflang="en" target="_blank">Isso</a>. </small>
-  </section>
-  <noscript>Please enable JavaScript to view the comments.</noscript>
-</div>
-{% endif %}
+  {# License #}
+  {% if not page.is_homepage  and ("license" not in page.meta or page.meta.license == "default") %}
+    <div class="md-source-date">
+      <small>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        Ce contenu est sous licence Creative Commons
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
+          target="_blank"
+          rel="license noopener noreferrer"
+          >BY-NC-SA 4.0 International
+            <img
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+            class=img-license-picto
+            />
+          <img
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+            class=img-license-picto
+            />
+          <img
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
+            class=img-license-picto
+            />
+          <img
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
+            class=img-license-picto
+            />
+        </a>
+      </p>
+      </small>
+    </div>
+  {% endif %}
+
+  {% if not page.is_homepage %}
+  {# Comment system (Isso) #}
+    <div id="__comments">
+      <script
+        data-isso="{{ config.extra.comments_url }}/"
+        data-isso-feed="true"
+        data-isso-reply-notifications="true"
+        data-isso-reply-to-self="false"
+        data-isso-require-author="true"
+        data-isso-require-email="true"
+        data-isso-vote="true"
+        src="{{ config.extra.comments_url }}/js/embed.min.js">
+        </script>
+      <hr>
+      <section id="isso-thread">
+        <h2>Commentaires</h2>
+        <small>
+          Une version minimale de la <a href="/contribuer/guides/markdown_basics/" hreflang="fr" target="_blank">syntaxe
+            markdown</a> est
+          acceptée pour la mise en forme des commentaires.<br>Propulsé par <a href="https://posativ.org/isso/" hreflang="en" target="_blank">Isso</a>. </small>
+      </section>
+      <noscript>Please enable JavaScript to view the comments.</noscript>
+    </div>
+  {% endif %}
 {% endblock %}
 
 {% block scripts %}
   {{ super() }}
   <script type="text/javascript">
-    // Translate - set before any binding
     WAMediaBox.lang = {
       prev: "Précédente",
       next: "Suivante",

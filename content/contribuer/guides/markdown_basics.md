@@ -24,7 +24,6 @@ Le _[markdown]_ est une syntaxe extensible et son rendu dépend de l'outil utili
 C'est ce dernier qui fait foi.
 
 !!! tip
-
     Pour comprendre comment fonctionne le rendu des contenus, consulter [l'article dédié](/contribuer/build_site/markdown_engine/).
 
 #### Bien démarrer
@@ -54,7 +53,6 @@ N'importe quel éditeur de texte "plat" suffit pour rédiger en [Markdown].
 - [Upmath]
 
 !!! tip
-
     Le choix du Markdown pour Geotribu a été détaillé dans l'article [Du HTML au Markdown (et vice-versa)](/articles/2020/2020-09-11_html2markdown/). Il contient quelques éléments de compréhension sur la syntaxe et un petit TP pour s'exercer.
 
 [Prochaine étape : respecter et valider la syntaxe :fontawesome-solid-step-forward:](/contribuer/guides/markdown_quality/){: .md-button }
@@ -68,6 +66,7 @@ En plus des ressources, à suivre quelques exemples de base.
 
 ### Titres et paragraphes
 
+<!-- markdownlint-disable MD046 -->
 === "Markdown"
 
     ```markdown
@@ -167,6 +166,7 @@ En plus des ressources, à suivre quelques exemples de base.
         + signe plus (\+)
     * mais, pour éviter les effets de bord (espacement de paragraphe, mauvais niveau de retrait...) et selon les règles établies, il est préférable de rester cohérent dans le caractère utilisé, au moins dans un même document
     * en général, on utilise l'astérisque ou alors le tiret.
+<!-- markdownlint-enable MD046 -->
 
 [Prochaine étape : respecter et valider la syntaxe :fontawesome-solid-step-forward:](/contribuer/guides/markdown_quality/){: .md-button }
 {: align=middle }
