@@ -1,0 +1,234 @@
+---
+title: "Open Data Kit pour la collecte de données géographiques dans PostGIS (3/3)"
+authors: ["Mathieu BOSSAERT"]
+categories: ["article"]
+date: "2021-08-10 10:20"
+description: "Troisième et derneir article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_and_postgresql.png"
+tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
+---
+
+
+# ODK pour la collecte de données géo dans PostGIS (3/3)
+
+:calendar: Date de publication initiale : 10 aout 2021
+
+**Mots-clés :** ODK | PostgresSQL | PostGIS | PL/pgSQL | Android
+
+![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
+
+## Troisième partie - Récupération des données dans notre SI
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
+[1ère partie : Introduction à ODK :fontawesome-solid-fast-backward:](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
+[2ème partie : Exemple de mise en œuvre d'ODK avec notre formulaire principal :fontawesome-solid-step-backward:](https://static.geotribu.fr/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+
+## Différents silos possibles
+
+* Aggregate (EOL)
+* Central (détaillé plus bas)
+* https://docs.getodk.org/briefcase-intro/
+* [Google sheet](https://docs.getodk.org/collect-connect-google/)
+
+## Exploitation des données
+
+### Outils opensource
+
+* R / [RuODK](https://github.com/ropensci/ruODK)
+* QGIS -> [QRealtime](https://shivareddyiirs.github.io/QRealTime/)
+* PostgreSQL/PostGIS -> [Central2PG](https://forum.getodk.org/t/postgresql-set-of-functions-to-get-data-from-central/33350)
+* LibreOffice : Il n'existe malheureusement pas d'extension à LibreOffice qui pemrettrait l'exploitation des données de Central dans Calc comme c'est possible dans excel (connecteur OData)
+* Redash : via l'API : https://forum.getodk.org/t/first-use-of-a-central-web-form-and-basic-restitution-with-redash/30334/4 ou à travers une BDD PostgreSQL intermédiaire
+
+### Outils propriétaires
+
+* Excel via l'API Odata
+* Tableau
+* Power BI
+* [Google Data Studio](https://github.com/UDub-Impact/OData-Connector/issues)
+
+## ODK Central
+C'est la composante "seveur" de la suite ODK. Il remplace Aggregate, arrivé en fin de vie au printemps.
+
+ODK Central reçoit les données des téléphones sous forme de fichiers xml tout à fait lisibles, et de fichiers binaires pour les éventuels médias collectés.
+
+Il les stocke et en assure la diffusion via une [API REST (OData)](https://odkcentral.docs.apiary.io/#).
+
+Il assure en outre la gestion des utilisateurs d'applications mobiles, ces derniers ayant accès à certains formulaires regroupés dans des projets.
+Lorsque votre téléphone interroge le serveur pour savoir quels formulaires sont diponibles à la saisie ou quels formulaires ont été mis à jour, Central sait à quelle ressource vous avez accès.
+La configuration des téléphones des utilisateurs se fait simplement en scannant avec ODK Collect le QRCode proposé par Central pour cet utilisateur.
+Voir la liste des fonctionnalités de Central dans la [documentation](https://docs.getodk.org/central-intro/#odk-central-features).
+
+Comme Aggregate, Central s'appuie sur une base de données PostgreSQL.
+
+## Intégration des données au SI(G) du CEN (BDD PostGIS)
+
+Aggregate, qui était le serveur proposé avant Central, créait pour chaque formulaire qu'il servait des tables dédiées pour accueillir les données. Une table pour les paramètres communs à chaque session et des tables filles pour chaque répétition. Cela se traduisait dans notre cas par une table **sicen_core**, une table **sicen_emplacments** et une table https://odkcentral.docs.apiary.io/# . Chaque enregistrement de la table des observations faisait référence à un enregistrement de la table des emplacements, et chaque emplacement faisait référence à un enregistrement de la table "racine".
+
+Ce n'était pas fait pour cela mais il était ainsi très facile d'exploiter les données consolidées dans Aggregate par simple jointure entre les tables, en utilisant des triggers ou des FDW.
+
+Central a quelque peu bouleversé nos habitudes. Les données reçues y sont stockées en XML dans PostgreSQL et les formulaires ne sont plus "transposés" en tables dans la base de données.
+
+Diverses pistes d'exploitation des données ont été suivies. Elles ont été présentées [ici](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102?u=mathieubossaert) sur le forum d'ODK.
+
+### Utilisation des fonctions XML de PostgreSQL
+
+La première en exploitant les données XML contenues dans la table submission_defs avec les fonctions intégrées de PostgreSQL. Ce test a été concluant puisque nous pouvons afficher cette vue dans QGIS :-)
+
+```sql
+CREATE VIEW odk_central.obs_sicen2020 AS
+ WITH xmldata AS (
+         SELECT submission_defs.xml::xml AS xml
+           FROM odk_central.submission_defs
+        ), core AS (
+         SELECT "xmltable".phonenumber,
+            "xmltable".custom_setting,
+            "xmltable".astuce,
+            "xmltable".email_utilisateur,
+            "xmltable".username,
+            "xmltable".nom_observateur,
+            "xmltable".mail_observateur,
+            ....
+   
+```
+
+Vous pouvez voir l'intégralité de la requête [sur le forum d'ODK](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102?u=mathieubossaert).
+
+Cette méthode d'accès aux données n'est cependant [pas conseillée par l'équipe de développement](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102/2?u=mathieubossaert) qui ne guarantit pas que le modèle de données n'évoluera pas dans le temps, contrairement à l'API qui est stable et normalisée.
+
+Par ailleurs, l'exploitation du XML, bien que très efficace dans PostgreSQL n'est pas "naturelle" pour qui n'exploite que des tables de base de données.
+
+### Utilisation de l'extension pgsql_http
+
+Ne souhaitant pas passer par un outil tiers, de type ETL (Extract Transform and Load) ([voir le travail décrit par Dave Henry avec Kettle](https://forum.getodk.org/t/automating-data-delivery-using-the-odata-endpoint-in-odk-central/22010)) pour réaliser cette tâche, une seconde voie a consisté à utiliser l'extension [pgsql_http](https://github.com/pramsey/pgsql-http) développée par Paul Ramsey. Cela m'a conforté dans l'idée que l'exploitation du json dans postgreSQL est beaucoup plus aisée que celle du xml. 
+
+Cette méthode est présentée [ici](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102/6?u=mathieubossaert) .
+
+L'extension permet de faire des appels à des ressources web et donc à l'API de Central. Le resultat de l'appel est un document Json.
+
+On réalise un appel à l'API pour chaque "table" du formulaire et le tour est presque joué. Il ne reste qu'à exploiter le JSON avec les [fonctions JSON proposées par PostgreSQL](https://www.postgresql.org/docs/13/functions-json.html).
+
+```sql
+WITH submissions AS (
+         SELECT json_array_elements(http.content::json -> 'value'::text) AS data
+           FROM http(ROW('GET'::text::http_method, 'https://central.myserver.fr/v1/projects/1/forms/Sicen2020.svc/Submissions'::character varying, ARRAY[http_header('Authorization'::character varying, 'Basic bASDlldfdsfdf5d6f5ds65f6dsAD5f6ds5fds5f44dsdYi9P7zIw'::character varying)], NULL::character varying, NULL::character varying)::http_request) http(status, content_type, headers, content)
+        )
+ SELECT submissions.data ->> '__id'::text AS id,
+    submissions.data ->> '__Submissions-id'::text AS "__Submissions-id",
+        CASE
+            WHEN (submissions.data #> '{phonenumber}'::text[]) IS NOT NULL THEN submissions.data -> 'phonenumber'::text
+            ELSE NULL::json
+        END AS phonenumber,
+        CASE
+            WHEN (submissions.data #> '{custom_setting}'::text[]) IS NOT NULL THEN submissions.data -> 'custom_setting'::text
+            ELSE NULL::json
+        END AS custom_setting,
+        CASE
+            WHEN (submissions.data #> '{utilisateur}'::text[]) IS NOT NULL THEN submissions.data -> 'utilisateur'::text
+            ELSE NULL::json
+        END AS utilisateur,
+        CASE
+            WHEN (submissions.data #> '{__system}'::text[]) IS NOT NULL THEN (submissions.data -> '__system'::text) ->> 'submissionDate'::text
+            ELSE NULL::text
+        END AS "submissionDate",
+...
+```
+
+Cette première tentative est concluante mais je vois avec le recul que je complexifiais la requête pour rien, par exemple en testant l'existence d'un élément avant de tenter d'y accéder. Alors que si l'élément n'existe pas, une valeur NULL sera simplement renvoyée.
+
+### Utilisation de la commande COPY FROM...
+
+Enfin au gré de mes recherches j'ai découvert une fonctionnalité ancienne de PostgreSQL (9.3+) qui est de pouvoir passer à la commande COPY le résultat d'une commande système avec la syntaxe :
+
+```sql
+COPY FROM program...
+```
+
+Le programme utilisé sera curl pour interroger l'API de Central. Les données reçues seront toujours du JSON, que nous savons maintenant exploiter.
+
+Restait à automatiser le tout pour ne pas devoir tout refaire à chaque nouveau formulaire. 
+
+L'idée générale était la suivante :
+
+- Interroger l'API de Central au sujet d'un formualire donné pour connaitre les tables qui le composent
+- Récupérer via l'API les données disponibles pour chacune de ces tables
+- En créant **automatiquement** la table de destination dans PostgreSQL
+- Lancer cette tâche à intervalle régulier pour récupérer rapidement en base les données du terrain (30' actuellement) et les mettre à disposition dans nos outils
+
+Cette reflexion a abouti à la première version d'une "bibliothèque" de fonction pl/pgsql nommée [central2pg](https://framagit.org/mathieubossaert/central2pg) présentée ici https://forum.getodk.org/t/postgresql-set-of-functions-to-get-data-from-central/33350
+
+Deux ressources ont été déterminantes : 
+
+- https://postgresql.verite.pro/blog/2018/06/19/crosstab-pivot.html par Daniel Verité
+- https://stackoverflow.com/questions/50837548/insert-into-fetch-all-from-cant-be-compiled/52889381#52889381 par Evgeny Nozdrev
+
+Quelques adaptations de ces travaux nous ont permis d'aboutir à une méthode générique et automatique.
+
+Les pistes d'amélioration sont les suivantes : 
+
+- gérer l'ajout de nouvelles questions au formulaire et d'ajouter les champs correspondant aux tables de la base de données.
+- paramétrer le nom des éléments à ignorer lors du parcours récursif du json (colonne géo en geojson notamment)
+
+## Perspectives
+
+### Coté ODK Collect / formulaires / "workflow"
+
+**->A preciser**
+
+Gestion des "longitudinal data collection" et "Entity based data collection"
+
+- https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/15
+- https://forum.getodk.org/t/ability-to-load-locations-into-the-geowidget-to-guide-data-collection/27406/10
+- https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353
+
+### Coté Central
+
+En mai est sortie Central 1.2, avec de nouvelles fonctionnalités de gestion des utilisateurs et des projets, des données reçues... mais aussi, coté API, la possibilité de récupérer les données "jointes" avec [l'option $expand](https://forum.getodk.org/t/extend-api-to-retrieve-plain-json/32204).
+
+Un seul appel devrait alors permettre de récupérer les données du formulaire, qui pourront par ailleurs être filtrées afin de ne pas récupérer à chaque fois l'ensemble des données disponibles. Actuellement seule la table "racine" peut être filtrée sur la date de réception des données par le serveur.
+
+## Conclusion
+ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales sont :
+
+- la solution s'intègre très facilement dans notre SI centré sur PostgreSQL, c'était le cas avec Aggregate et ça l'est toujours avec Central et son API OData,
+- nous n'avons pas à développer d'application mobile dédiée à chaque protocole, quand bien même nous le pourrions, quel sens cela aurait-il ?
+- nous pouvons à la place prendre le temps de transposer nos protocoles de collecte de données dans XLSForm pour en faire des formulaires efficaces servis par une application robuste.
+- une connaissance minimale est nécessaire pour créer un formulaire. Si vous connaissez votre protocole, vous pouvez le transposer en xlsform, dans les limites sans cesse repoussées des possibilités d'ODK.
+- la faciliter d'adaptation de formulaires existant pour de nouveaux besoins
+- la facilité de partage et de réadaptation de ces formulaires.
+- et peut-être avant tout sa communauté d'utilisateurs et de développeurs
+
+----
+
+## Ressources complémentaires
+
+- [...](#)
+
+----
+
+
+## Auteur
+
+### Mathieu Bossaert
+
+![Portrait Mathieu Bossaert](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/mb.jpeg "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
+
+Aprés des études de biologie, d'écologie, et d'informatique, j'ai intégré le CEN en 2003 pour y occuper le poste de gestionnaire de bases de données, et suis devenu "géomaticien" par extension.
+
+J'y suis désormais co-responsable de la "Geomateam" qui compte 5 personnes, pas toutes à temps plein sur la thématique, au sein d'une équipe "Occitane" de 80 salariés, répartis sur 14 sites.
+
+PostgreSQL est le pilier structurant de notre SI depuis 2006. Les besoins de la structure ont évolué avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers [GeoRezo](https://georezo.net) notamment, n'ont jamais été avares de conseils.
+J'ai intégré il y a quelques années l'équipe de GeoRezo et j'y assure la fonction de trésorier.
+
+Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement celui d'[ODK](https://forum.getodk.org))
+
+Vous pouvez me contacter pour échanger sur le sujet via [twitter](https://twitter.com/MathieuBossaert) et [linkedin](https://www.linkedin.com/in/mathieu-bossaert-08b73a205/).
+
+<!-- Hyperlinks reference -->
+
+[Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
+["blog" géomatique du CEN]: https://si.cen-occitanie.org
+[GetODK]: https://getodk.org/
+[XLSForm]: https://xlsform.org/en/
