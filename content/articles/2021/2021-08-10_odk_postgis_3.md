@@ -58,7 +58,7 @@ Il les stocke et en assure la diffusion via une [API REST (OData)](https://odkce
 Il assure en outre la gestion des utilisateurs d'applications mobiles, ces derniers ayant accès à certains formulaires regroupés dans des projets.
 Lorsque votre téléphone interroge le serveur pour savoir quels formulaires sont diponibles à la saisie ou quels formulaires ont été mis à jour, Central sait à quelle ressource vous avez accès.
 La configuration des téléphones des utilisateurs se fait simplement en scannant avec ODK Collect le QRCode proposé par Central pour cet utilisateur.
-Les versions récentes de Central et d'ODK Collect permettent à un utilisateur de prticiper à plusieurs projets qui peuvent être sur différentes serveurs.
+Les versions récentes de Central et d'ODK Collect permettent à un utilisateur de participer à plusieurs projets qui peuvent être sur différentes serveurs.
 
 Voir la liste des fonctionnalités de Central dans la [documentation](https://docs.getodk.org/central-intro/#odk-central-features).
 
