@@ -39,7 +39,7 @@ Bref, appliquons le principe du *fair-use*[^fairuse] au bénévolat :hugging: !
 
 ![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
 
-La première étape consiste à créer une branche git pour la revue de presse. Elle n'est réalisable que par une personne disposant d'un compte GitHub ayant les droits en écriture sur le dépôt du site : [{{ config.repo_name }}]({{ config.repo_url }}).
+La première étape consiste à créer une branche [Git] pour la revue de presse. Elle n'est réalisable que par une personne disposant d'un compte GitHub ayant les droits en écriture sur le dépôt du site : [{{ config.repo_name }}]({{ config.repo_url }}).
 
 Il est important de respecter la convention de nommage `rdp/YYYY-MM-DD` où :
 
@@ -61,7 +61,7 @@ Sur l'interface web du dépôt :
 
 ### :fontawesome-solid-terminal: Ligne de commande
 
-Si vous disposez du dépôt localement et que vous préférez utiliser la ligne de commande de git, voici les étapes à suivre :
+Si vous disposez du dépôt localement et que vous préférez utiliser la ligne de commande de [Git], voici les étapes à suivre :
 
 1. Mettre à jour le dépôt local :
 
@@ -160,21 +160,25 @@ Enfin, il faut pousser le fichier sur la branche créée sur GitHub.
 git add content/rdp/{{ now().strftime("%Y") }}/rdp_{{ now().strftime("%Y-%m-%d") }}.md
 ```
 
+### :fontawesome-brands-github: Création via l'interface web de GitHub
+
+Voici une vidéo retraçant les étapes de création via l'interface web de GitHub :
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/dVpOdGYAtIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ----
 
 ## Publication et diffusion
 
 ![icône porte-voix](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône porte-voix"){: .img-rdp-news-thumb }
 
-Une fois la Pull Request[^pr] validée par un membre de l'équipe, une date de publication est décidée en tenant compte du planning de publication.
+Une fois la Pull Request[^pr] validée par un membre de l'équipe, la branche de la revue de presse est fusionnée (*merged*) dans la branche principale, déclenchant la génération et le déploiement du site web.
 
-Une fois la branche de l'article fusionnée (*merged*) dans la branche principale, votre contenu est publié et référencé automatiquement.  
-En ce qui concerne la diffusion, cela reste à la discrétion de chacun/e, sachant que nous utiliserons le compte Twitter de Geotribu pour relayer la publication.
+Il est alors temps de lancer la diffusion via le compte Twitter de Geotribu pour relayer la publication.
 
 <!-- Footnotes -->
 [^fairuse]: analogie avec un cadre légal qui repose sur un usage raisonnable des oeuvres et ressources. Voir [la fiche Wikipedia](https://fr.wikipedia.org/wiki/Fair_use).
 [^pr]: étape où un contributeur propose d'intégrer ses modifications dans le socle principal du projet. Voir [la documentation de GitHub](https://docs.github.com/fr/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 <!-- Hyperlinks reference -->
-[dépôt GitHub]: https://github.com/geotribu/website
 [Git]: https://fr.wikipedia.org/wiki/Git
