@@ -1,5 +1,4 @@
 ---
-{% include "licenses/cc4_by-sa.md" %}
 title: "Open Data Kit pour la collecte de données géographiques dans PostGIS (1/3)"
 authors: ["Mathieu BOSSAERT"]
 categories: ["article"]
@@ -380,3 +379,5 @@ Vous pouvez me contacter pour échanger sur le sujet via [twitter](https://twitt
 ["blog" géomatique du CEN]: https://si.cen-occitanie.org
 [GetODK]: https://getodk.org/
 [XLSForm]: https://xlsform.org/en/
+
+{% include "licenses/cc4_by-sa.md" %}
