@@ -27,8 +27,6 @@ tags: PostgreSQL,data.gouv.fr,data,open data,Bash,ogr,api,jq,cURL
 
 Je ne vais pas vous faire le rappel sur ce qu'est l'Open Data mais si ça ne vous parle pas, je vous recommande l'introduction de l'[article proposé par le Parc national des Ecrins](https://si.ecrins-parcnational.com/blog/2021-06-publier-opendata-continu.html) qui propose également une solution pour publier des données en open data sur son propre serveur.
 
-<Voir si autorisation d ajouter l image>
-
 En ce qui me concerne et contrairement au Parc national des Ecrins, je n'ai pas de serveur à disposition pour y désposer mes données, j'ai donc développé un processus en Bash qui s'appuie sur [OGR](https://gdal.org/programs/ogr2ogr.html) pour extraire des données stockées dans une base [PostgreSQL](https://www.postgresql.org) et les publier directement sur le portail [data.gouv.fr](https://www.data.gouv.fr/fr/) à travers l'[API dédiée](https://doc.data.gouv.fr/api/intro/).
 
 ## pg2datagouv
@@ -186,8 +184,6 @@ pg2datagouv.sh COMPOSTEURS 2154 CSV
 ```
 
 Les données seront alors directement publiées sur data.gouv.fr à l'aide de l'API et vous pourrez ensuite voir votre jeu de données dans l'interface de gestion du site.
-
-<AJOUTER UNE IMAGE>
 
 [Découvrir l'API :fontawesome-regular-file-code:](https://doc.data.gouv.fr/api/dataset-workflow/#mise-à-jour-des-metadonnées-de-la-fiche){: .md-button }{: align=middle }
 
