@@ -33,10 +33,6 @@ Bref, appliquons le principe du *fair-use*[^fairuse] au bénévolat :hugging: !
 4. La validation de la RDP se fait par une équipe de validation
 5. Une fois validée et relue, la branche est fusionnée et la RDP publiée puis diffusée.
 
-## Git workflow
-
-> TO DOC
-
 ----
 
 ## Créer la branche de la revue de presse
@@ -105,9 +101,64 @@ Si vous disposez du dépôt localement et que vous préférez utiliser la ligne 
 
 ![icône globe tricot](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe tricot"){: .img-rdp-news-thumb }
 
-Créer un fichier dans `content\rdp\AAAA` en respectant le nommage suivant : `rdp_AAAA-MM-JJ.md`. Exemple : `content\rdp\2020\rdp_2020-06-12.md` pour la revue de presse du 12 juin 2020.
+Afin d'accueillir les news, il s'agit de créer un fichier en respectant l'organisation et le nommage des fichiers : `content/rdp/YYYY/rdp_YYYY-MM-DD.md` où :
+
+- `YYYY` est l'année de publication
+- `MM` le mois de publication prévisionelle
+- `DD` le jour de publication prévisionnelle
+
+Exemple si la GeoRDP devait être publiée aujourd'hui : `content/rdp/{{ now().strftime("%Y") }}/rdp_{{ now().strftime("%Y-%m-%d") }}.md`.
+
+### Structure type et modèle
+
+Les revues de presse sont structurées de la même façon d'une édition à l'autre, facilitant leur consultation et les traitements automatiques. Le plus simple est donc de copier/coller la structure type à partir du modèle maintenu à jour :
+
+[soit depuis le PAD :fontawesome-solid-feather-alt:](https://geotripad.herokuapp.com/DCBQirjYSp6sqxPd5JYqLg?both){: .md-button }
+[soit depuis GitHub :fontawesome-brands-github-alt:](https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp.md){: .md-button }
+{: align=middle }
+
+Ensuite, il faut mettre à jour certains éléments :
+
+- dans [l'en-tête du fichier](/contribuer/guides/metadata_yaml_frontmatter/), mettre à jour les valeurs de `title:`, `date:` et `description:` (notamment la date)
+- changer la date dans le titre de niveau 1
+
+Les lignes concernées sont surlignées ci-dessous (attention, cela peut varier selon le modèle utilisé) :
+
+```markdown hl_lines="2 5 12"
+---
+title: "[TEMPLATE] Revue de presse du 21 août 2021"
+authors: ["Geotribu"]
+categories: ["revue de presse"]
+date: 2021-08-21 14:20
+description: ""
+image: "URL de l'image d'illustration de la RDP"
+license: default
+tags: rdp
+---
+
+# Revue de presse du 21 août 2021
+
+## Intro
+
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
+
+[Commenter cette revue de presse :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+```
+
+### Pousser le fichier sur GitHub
+
+Enfin, il faut pousser le fichier sur la branche créée sur GitHub.
+
+#### :fontawesome-brands-github:  GitHub
 
 > TO DOC
+
+#### :fontawesome-solid-terminal: Ligne de commande
+
+```bash
+git add content/rdp/{{ now().strftime("%Y") }}/rdp_{{ now().strftime("%Y-%m-%d") }}.md
+```
 
 ----
 
