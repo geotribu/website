@@ -43,6 +43,8 @@ Pour exemple, prenons ce son : <https://www.w3schools.com/html/horse.mp3>
 
 ### Exemples déjà publiés
 
+Voici quelques exemples de syntaxe markdown qui ont été publiés sur Geotribu :
+
 - [intégration du podcast de l'April au format ogg](https://github.com/geotribu/website/blob/master/content/rdp/2021/rdp_2021-03-26.md?plain=1#L172-L181)
 
 ----
