@@ -20,40 +20,46 @@ hide:
 
 En complément de la liste des dispositifs de mesure d'audience détaillée sur [cette page](/team/confidentialite/), nous partageons ici des tableaux de bord représentant les statistiques remontées par les outils Google :
 
-- la [fréquentation](#frequentation) via Analytics
-- le [référencement](#referencement) via la Search Console
-- l'[acquisition](#acquisition) via Analytics
+- la [fréquentation](#frequentation)
+- l'[acquisition](#acquisition)
+- les [contenus](#contenus)
 
 ## Fréquentation
 
 Visites du site et typologie de l'audience.
 
-[Voir le rapport interactif en grand :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/vJelbgNjfJs){: .md-button }
+[Voir ce rapport dans un nouvel onglet :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/vJelbgNjfJs){: .md-button }
 {: align=middle }
 
 <iframe width="100%" height="800" src="https://datastudio.google.com/embed/reporting/05f16e84-9ddc-47d6-908f-f664f5cd6b46/page/5M1KC" frameborder="1" style="border:0.5" allowfullscreen></iframe>
 
-[Voir le rapport interactif en grand :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/vJelbgNjfJs){: .md-button }
-{: align=middle }
-
-----
-
-## Référencement
-
-Comment le site apparaît dans le moteur de recherche de Google.
-
-<iframe width="100%" height="800" src="https://datastudio.google.com/embed/reporting/4e5a1444-7b04-42fb-b44e-761713274719/page/5F1KC" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-[Le rapport interactif :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/poQHpKWzFaE){: .md-button }
+[Voir ce rapport dans un nouvel onglet :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/vJelbgNjfJs){: .md-button }
 {: align=middle }
 
 ----
 
 ## Acquisition
 
-Comment les internautes arrivent sur notre site.
+Comment les internautes arrivent sur le site.
 
-<iframe width="100%" height="800" src="https://datastudio.google.com/embed/reporting/4e5a1444-7b04-42fb-b44e-761713274719/page/5F1KC" frameborder="0" style="border:0" allowfullscreen></iframe>
+[Voir ce rapport dans un nouvel onglet :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/q5oDQxfCmvI){: .md-button }
+{: align=middle }
 
-[Le rapport interactif :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/poQHpKWzFaE){: .md-button }
+<iframe width="100%" height="800" src="https://datastudio.google.com/embed/reporting/9d7b4dc7-b83c-416a-88fe-5a364cbf20b5/page/hz6WC" frameborder="1" style="border:0.1" allowfullscreen></iframe>
+
+[Voir ce rapport dans un nouvel onglet :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/q5oDQxfCmvI){: .md-button }
+{: align=middle }
+
+----
+
+## Contenus
+
+Quels contenus les internautes consultent-ils le plus.
+
+[Voir ce rapport dans un nouvel onglet :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/ur4CecKVF3o){: .md-button }
+{: align=middle }
+
+<iframe width="100%" height="800" src="https://datastudio.google.com/embed/reporting/214d7a66-dc67-47d1-ad57-f744aa3dd979/page/c66WC" frameborder="1" style="border:0.1" allowfullscreen></iframe>
+
+[Voir ce rapport dans un nouvel onglet :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/ur4CecKVF3o){: .md-button }
 {: align=middle }
