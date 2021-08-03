@@ -14,7 +14,7 @@ tags: contribuer,audio,musique,podcast,son,markdown,intégration,tutoriel
 
 Pour les fichiers de son qui ne sont pas hébergés sur une plateforme en particulier, il est toujours possible de les intégrer en utilisant [la balise dédiée de HTML 5](https://www.w3schools.com/html/html5_audio.asp).
 
-Prenons le son pour exemple : <https://www.w3schools.com/html/horse.mp3>
+Pour exemple, prenons ce son : <https://www.w3schools.com/html/horse.mp3>
 
 <!-- markdownlint-disable MD046 -->
 === "Markdown"
