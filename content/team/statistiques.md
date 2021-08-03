@@ -4,7 +4,7 @@ authors: ["Geotribu"]
 categories: ["meta"]
 date: "2021-07-05 10:20"
 description: "Consulter les statistiques de fréquentation (Google Analytics) et de référencement (Google Search) de Geotribu."
-image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_dashboard_google_data_studio_audience.png"
 tags: "GeoTribu,tracking,SEO,statistiques,fréquentation,référencement"
 hide:
   - toc
@@ -12,7 +12,7 @@ hide:
 
 # Tableaux de bord de la fréquentation et du référencement
 
-:calendar: Date de publication initiale : 28 juin 2021
+:calendar: Date de publication initiale : 3 août 2021
 
 **Mots-clés :** tracking | fréquentation | référencement | transparence
 
