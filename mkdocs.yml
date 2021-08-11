@@ -199,6 +199,7 @@ extra_javascript:
   - path: https://platform.twitter.com/widgets.js
     async: true
     defer: true
+  - "theme/assets/javascripts/matomo-tracking.js"
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
