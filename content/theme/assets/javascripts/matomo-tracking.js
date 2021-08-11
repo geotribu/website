@@ -2,6 +2,9 @@
 <script>
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.static.geotribu.fr"]);
+  _paq.push(["setDomains", ["*.static.geotribu.fr"]]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
@@ -12,4 +15,5 @@
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
+<noscript><p><img src="//matomo.data-wax.com/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
