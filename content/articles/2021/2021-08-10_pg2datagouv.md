@@ -155,7 +155,7 @@ Afin d'appeler le script fils préalablement créé vous devez l'ajouter au scri
 
 Voici un exemple correspondant toujours à la donnée des composteurs.
 
-1. Ajouter la variable correspondant à la donnée définie
+Premièrement, ajouter la variable correspondant à la donnée définie
 
 ``` bash
 if [ "$#" -ge 1 ]; then
@@ -184,7 +184,7 @@ else
 fi
 ```
 
-2. Définir le script d'extraction de la donnée ainsi que les actions associées.
+Deuxièmement, définir le script d'extraction de la donnée ainsi que les actions associées.
 
 ``` bash
 if [ "$DONNEE" = "COMPOSTEURS" ]; then
