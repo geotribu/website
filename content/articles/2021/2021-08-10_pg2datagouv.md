@@ -4,14 +4,14 @@ authors: ["Florian Boret"]
 categories: ["article", "tutoriel"]
 date: 2021-08-10 14:14
 description: "Automatiser la publication et la mise à jour de données entre PostgreSQL et Data.gouv.fr en utilisant OGR et l'API data.gouv"
-image: ""
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/pg2datagouv_illustration.png"
 license: default
 tags: PostgreSQL,data.gouv.fr,data,open data,Bash,ogr,api,jq,cURL
 ---
 
 # Automatiser la publication et la mise à jour de données de PostgreSQL vers Data.gouv.fr
 
-:calendar: Date de publication initiale : 03 Aout 2021
+:calendar: Date de publication initiale : XX Aout 2021
 
 **Mots-clés :** PostgreSQL | data.gouv.fr | Open Data | Bash | API | OGR | jq | cURL
 
@@ -25,9 +25,14 @@ tags: PostgreSQL,data.gouv.fr,data,open data,Bash,ogr,api,jq,cURL
 
 Être géomaticien dans un petit EPCI c'est souvent être multitâche et cela implique également d'intervenir sur une diversité de sujet. D'ailleurs celui qui va nous intéresser aujourd'hui, c'est l'Open Data!
 
-Je ne vais pas vous faire le rappel sur ce qu'est l'Open Data mais si ça ne vous parle pas, je vous recommande l'introduction de l'[article proposé par le Parc national des Ecrins](https://si.ecrins-parcnational.com/blog/2021-06-publier-opendata-continu.html) qui propose également une solution pour publier des données en open data sur son propre serveur.
+Je ne vais pas vous faire un rappel sur ce qu'est l'ouverture des données et l'Open Data mais si ça ne vous parle pas, je vous recommande l'introduction de l'[article proposé par le Parc national des Ecrins (Cendrine HOARAU / Juin 2021)](https://si.ecrins-parcnational.com/blog/2021-06-publier-opendata-continu.html) qui propose également une solution pour publier des données en open data sur son propre serveur.
+
+![Ouverture des données publiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/od-ouverture-dates.jpg "Ouverture des données publiques"){: .img-center loading=lazy }
 
 En ce qui me concerne et contrairement au Parc national des Ecrins, je n'ai pas de serveur à disposition pour y désposer mes données, j'ai donc développé un processus en Bash qui s'appuie sur [OGR](https://gdal.org/programs/ogr2ogr.html) pour extraire des données stockées dans une base [PostgreSQL](https://www.postgresql.org) et les publier directement sur le portail [data.gouv.fr](https://www.data.gouv.fr/fr/) à travers l'[API dédiée](https://doc.data.gouv.fr/api/intro/).
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 ## pg2datagouv
 
@@ -45,7 +50,8 @@ graph TD;
     H --> |Publier| X{Data.gouv.fr};
 ```
 
-[Accéder à pg2datagouv :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr){: .md-button } {: align=middle }
+[Accéder à pg2datagouv :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr){: .md-button }
+{: align=middle }
 
 !!! info
     Je rappelle que pg2datagouv repose sur l'utilisation de [jq](https://curl.se) , [cURL](https://curl.se) et [GDAL](https://gdal.org) et que vous devez les installer avant de vous lancer.
@@ -88,7 +94,8 @@ export C_PASSWORD='pass'
 export C_DBNAME='database'
 ```
 
-[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/config.env){: .md-button }{: align=middle }
+[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/config.env){: .md-button }
+{: align=middle }
 
 ## 2. Un script d'extraction par donnée à publier
 
@@ -136,7 +143,8 @@ then
 fi
 ```
 
-[Consulter le'exemple des composteurs :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/scripts/dechets_composteurs.sh){: .md-button }{: align=middle }
+[Consulter le'exemple des composteurs :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/scripts/dechets_composteurs.sh){: .md-button }
+{: align=middle }
 
 ## 3. Intégrer le script d'extraction dans le script maître : pg2datagouv.sh
 
@@ -155,7 +163,8 @@ if [ "$DONNEE" = "COMPOSTEURS" ]; then
   cp attachement/Z_Licence.txt $REPER_TEMP'/'$DONNEE'/'$OUT_EPSG'/Z_Licence.txt'
 ```
 
-[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/pg2datagouv.sh){: .md-button }{: align=middle }
+[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/pg2datagouv.sh){: .md-button }
+{: align=middle }
 
 ## 4. Renseigner les métadonnées du jeu de données
 
@@ -173,7 +182,8 @@ export ZONES='fr:epci:243400520@2019-01-01'
 export TEMPORAL_COVERAGE=''
 ```
 
-[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/description/COMPOSTEURS.env){: .md-button }{: align=middle }
+[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/description/COMPOSTEURS.env){: .md-button }
+{: align=middle }
 
 ## 5. Exécution
 
@@ -185,7 +195,10 @@ pg2datagouv.sh COMPOSTEURS 2154 CSV
 
 Les données seront alors directement publiées sur data.gouv.fr à l'aide de l'API et vous pourrez ensuite voir votre jeu de données dans l'interface de gestion du site.
 
-[Découvrir l'API :fontawesome-regular-file-code:](https://doc.data.gouv.fr/api/dataset-workflow/#mise-à-jour-des-metadonnées-de-la-fiche){: .md-button }{: align=middle }
+![Jeu de données publié](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/data_gouv_composteurs.png "Jeu de données publié"){: .img-center loading=lazy }
+
+[Découvrir l'API :fontawesome-regular-file-code:](https://doc.data.gouv.fr/api/dataset-workflow/#mise-à-jour-des-metadonnées-de-la-fiche){: .md-button }
+{: align=middle }
 
 !!! info
     Une fois le processus d'extraction validé, il est également recommandé d'automatiser la publication à l'aide de tâches [cron](https://fr.wikipedia.org/wiki/Cron) en définissant la fréquence d'actualisation des ressources.
