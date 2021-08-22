@@ -155,6 +155,37 @@ Afin d'appeler le script fils préalablement créé vous devez l'ajouter au scri
 
 Voici un exemple correspondant toujours à la donnée des composteurs.
 
+1. Ajouter la variable correspondant à la donnée définie
+
+``` bash
+if [ "$#" -ge 1 ]; then
+  if [ "$1" = "COMPOSTEURS" ];
+  then
+    a_DONNEE=$1
+  else
+  IFS= read -p "DONNEE : " p_DONNEE
+  if [ "$p_DONNEE" = "COMPOSTEURS" ];
+  then
+    export a_DONNEE=$p_DONNEE
+  else
+    echo "Erreur de paramètre"
+    exit 0
+  fi
+fi
+else
+  IFS= read -p "DONNEE : " p_DONNEE
+  if [ "$p_DONNEE" = "COMPOSTEURS" ];
+  then
+    export a_DONNEE=$p_DONNEE
+  else
+    echo "Erreur de paramètre"
+    exit 0
+  fi
+fi
+```
+
+2. Définir le script d'extraction de la donnée ainsi que les actions associées.
+
 ``` bash
 if [ "$DONNEE" = "COMPOSTEURS" ]; then
   # LANCEMENT DE L'EXTRACTION
