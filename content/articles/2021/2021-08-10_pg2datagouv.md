@@ -25,7 +25,7 @@ tags: PostgreSQL,data.gouv.fr,data,open data,Bash,ogr,api,jq,cURL
 
 Être géomaticien dans un petit EPCI c'est souvent être multitâche et cela implique également d'intervenir sur une diversité de sujet. D'ailleurs celui qui va nous intéresser aujourd'hui, c'est l'Open Data!
 
-Je ne vais pas vous faire un rappel sur ce qu'est l'ouverture des données et l'Open Data mais si ça ne vous parle pas, je vous recommande l'introduction de l'[article proposé par le Parc national des Ecrins (Cendrine HOARAU / Juin 2021)](https://si.ecrins-parcnational.com/blog/2021-06-publier-opendata-continu.html) qui propose également une solution pour publier des données en open data sur son propre serveur.
+Je ne vais pas vous faire un rappel sur l'ouverture des données et l'Open Data mais si ça ne vous parle pas, je vous recommande l'introduction de l'[article proposé par le Parc national des Ecrins (Cendrine HOARAU / Juin 2021)](https://si.ecrins-parcnational.com/blog/2021-06-publier-opendata-continu.html) qui propose également une solution pour publier des données en open data sur son propre serveur.
 
 ![Ouverture des données publiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/od-ouverture-dates.jpg "Ouverture des données publiques"){: .img-center loading=lazy }
 
