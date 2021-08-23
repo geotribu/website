@@ -29,14 +29,14 @@ Je ne vais pas vous faire un rappel sur l'ouverture des données et l'Open Data 
 
 ![Ouverture des données publiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/od-ouverture-dates.jpg "Ouverture des données publiques"){: .img-center loading=lazy }
 
-En ce qui me concerne et contrairement au Parc national des Ecrins, je n'ai pas de serveur à disposition pour y désposer mes données, j'ai donc développé un processus en Bash qui s'appuie sur [OGR](https://gdal.org/programs/ogr2ogr.html) pour extraire des données stockées dans une base [PostgreSQL](https://www.postgresql.org) et les publier directement sur le portail [data.gouv.fr](https://www.data.gouv.fr/fr/) à travers l'[API dédiée](https://doc.data.gouv.fr/api/intro/).
+En ce qui me concerne et contrairement au Parc national des Écrins, je n'ai pas de serveur à disposition pour y déposer mes données, j'ai donc développé un processus en Bash qui s'appuie sur [OGR](https://gdal.org/programs/ogr2ogr.html) pour extraire des données stockées dans une base [PostgreSQL](https://www.postgresql.org) et les publier directement sur le portail [data.gouv.fr](https://www.data.gouv.fr/fr/) à travers l'[API dédiée](https://doc.data.gouv.fr/api/intro/).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
 ## pg2datagouv
 
-Avant de démarrer voici une représentation schématique du fonctionnement de pg2datagouv.
+Avant de démarrer, voici une représentation schématique du fonctionnement de pg2datagouv.
 
 ```mermaid
 graph TD;
@@ -143,12 +143,12 @@ then
 fi
 ```
 
-[Consulter le'exemple des composteurs :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/scripts/dechets_composteurs.sh){: .md-button }
+[Consulter l'exemple des composteurs :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/scripts/dechets_composteurs.sh){: .md-button }
 {: align=middle }
 
 ## 3. Intégrer le script d'extraction dans le script maître : pg2datagouv.sh
 
-Afin d'appeler le script fils préalablement créé vous devez l'ajouter au script maître qui sera exécuté ([*un script pour les gouverner tous*](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script fils vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrées dans le zip final publié.
+Afin d'appeler le script fils préalablement créé vous devez l'ajouter au script maître qui sera exécuté ([*un script pour les gouverner tous*](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script fils vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
 
 !!! info
     Nota les fichiers annexes sont rangés dans le répertoire *attachement*.
@@ -199,7 +199,7 @@ if [ "$DONNEE" = "COMPOSTEURS" ]; then
 
 ## 4. Renseigner les métadonnées du jeu de données
 
-Comme pour le script d'extraction des données, il faut créer un fichier définissant les paramètres de chaque jeu de données publiés (titre, licence, description,tags,...) et qui seront utilisée par le site data.gouv.fr pour générer la fiche associée au jeu de données.
+Comme pour le script d'extraction des données, il faut créer un fichier définissant les paramètres de chaque jeu de données publié (titre, licence, description, tags,...) et qui seront utilisés par le site data.gouv.fr pour générer la fiche associée au jeu de données.
 
 ``` bash
 export TITLE='Composteurs collectifs'
@@ -236,10 +236,10 @@ Les données seront alors directement publiées sur data.gouv.fr à l'aide de l'
 
 ## 6. Et après
 
-Une fois qu'une ressource est publié pour un jeu de données, leurs métadonnées respectives sont stockées dans le répertoire : *data_config_json*. Ces fichiers contiennent notamment un identifiant unique exploité pour leurs mises à jour à suivre.
+Une fois qu'une ressource est publiée pour un jeu de données, leurs métadonnées respectives sont stockées dans le répertoire : *data_config_json*. Ces fichiers contiennent notamment un identifiant unique exploité pour leurs mises à jour à suivre.
 
 !!! info
-    Il est important de ne pas supprimer ces fichiers une fois le jeu de données ou la ressource publiée.
+    Il est important de ne pas supprimer ces fichiers une fois le jeu de données ou la ressource publiés.
 
 ----
 
