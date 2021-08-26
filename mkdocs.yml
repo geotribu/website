@@ -30,6 +30,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
+      locale: fr
   - minify:
       minify_html: true
       minify_js: false
@@ -98,6 +99,9 @@ theme:
     - navigation.expand
     - navigation.tabs
     - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
   font: false
   icon:
     repo: fontawesome/brands/github-alt
