@@ -25,7 +25,7 @@ tags: PostgreSQL,data.gouv.fr,data,open data,Bash,ogr,api,jq,cURL
 
 ![Logo opendata](https://cdn.geotribu.fr/img/logos-icones/divers/opendata_logo.png "OpenData"){: .img-rdp-news-thumb }
 
-Être géomaticien dans un petit EPCI c'est souvent être multitâche et cela implique également d'intervenir sur une diversité de sujet. D'ailleurs celui qui va nous intéresser aujourd'hui, c'est l'Open Data!
+Être géomaticien dans un petit EPCI c'est souvent être multitâche et cela implique également d'intervenir sur une diversité de sujets. D'ailleurs celui qui va nous intéresser aujourd'hui, c'est l'Open Data !
 
 Je ne vais pas vous faire un rappel sur l'ouverture des données et l'Open Data mais si ça ne vous parle pas, je vous recommande l'introduction de l'[article proposé par le Parc national des Ecrins (Cendrine HOARAU / Juin 2021)](https://si.ecrins-parcnational.com/blog/2021-06-publier-opendata-continu.html) qui propose également une solution pour publier des données en open data sur son propre serveur.
 
@@ -60,11 +60,13 @@ graph TD;
 
 Dans la suite de ce tutoriel, je vais détailler les étapes à prendre en compte pour pouvoir adapter le projet à votre structure/infrastructure après l'avoir récupéré depuis [Github](https://github.com/igeofr/pg2datagouvfr).
 
-## 1. Configurer l'environnement de travail : config.env
+## Adapter et utiliser pg2datagouv
+
+### 1. Configurer l'environnement de travail : config.env
 
 Avant de se lancer, il est bon de paramétrer le fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé par les différents scripts présentés ci-après. On y définit notamment les différents répertoires de travail ainsi que les variables permettant d'accéder au portail national et à la base de données.
 
-``` ini
+```ini
 # REPERTOIRE DE TRAVAIL
 REPER='/Users/'
 
@@ -99,13 +101,13 @@ C_DBNAME='database'
 [Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/config.env){: .md-button }
 {: align=middle }
 
-## 2. Un script d'extraction par donnée à publier
+### 2. Un script d'extraction par donnée à publier
 
-Dans le répertoire *script*, vous devez y placer un script Bash pour chaque donnée à extraire. Chacun des scripts va permettre de personnaliser la mise en forme de la donnée extraite depuis la base PosgreSQL et de gérer les différents formats en sortie (shp, json, sql, csv, ods, gpkg,..).
+Dans le répertoire *scripts*, vous devez y placer un script Bash pour chaque donnée à extraire. Chacun des scripts va permettre de personnaliser la mise en forme de la donnée extraite depuis la base PosgreSQL et de gérer les différents formats en sortie (shp, json, sql, csv, ods, gpkg,..).
 
 Voici un exemple d'extraction des informations liées aux composteurs au format shapefile.
 
-``` bash
+```bash
 #- -----------------------------------------------------------------------------------------------------------
 var_group=DECHETS
 var_file=COMPOSTEURS
@@ -148,18 +150,18 @@ fi
 [Consulter l'exemple des composteurs :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/scripts/dechets_composteurs.sh){: .md-button }
 {: align=middle }
 
-## 3. Intégrer le script d'extraction dans le script maître : pg2datagouv.sh
+### 3. Intégrer le script d'extraction dans le script maître : pg2datagouv.sh
 
 Afin d'appeler le script fils préalablement créé vous devez l'ajouter au script maître qui sera exécuté ([*un script pour les gouverner tous*](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script fils vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
 
 !!! info
-    Nota les fichiers annexes sont rangés dans le répertoire *attachement*.
+    Nota les fichiers annexes sont rangés dans le répertoire *attachment*.
 
 Voici un exemple correspondant toujours à la donnée des composteurs.
 
 Premièrement, ajouter la variable correspondant à la donnée définie
 
-``` bash
+```bash
 if [ "$#" -ge 1 ]; then
   if [ "$1" = "COMPOSTEURS" ];
   then
@@ -188,41 +190,39 @@ fi
 
 Deuxièmement, définir le script d'extraction de la donnée ainsi que les actions associées.
 
-``` bash
+```bash
 if [ "$DONNEE" = "COMPOSTEURS" ]; then
   # LANCEMENT DE L'EXTRACTION
   sh scripts/dechets_composteurs.sh | tee $REPER_TEMP'/'$DONNEE'/'$OUT_EPSG'/dechets_composteurs.txt'
   # AJOUT DE LA LICENCE
-  cp attachement/Z_Licence.txt $REPER_TEMP'/'$DONNEE'/'$OUT_EPSG'/Z_Licence.txt'
+  cp attachment/Z_Licence.txt $REPER_TEMP'/'$DONNEE'/'$OUT_EPSG'/Z_Licence.txt'
 ```
 
 [Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/pg2datagouv.sh){: .md-button }
 {: align=middle }
 
-## 4. Renseigner les métadonnées du jeu de données
+### 4. Renseigner les métadonnées du jeu de données
 
 Comme pour le script d'extraction des données, il faut créer un fichier définissant les paramètres de chaque jeu de données publié (titre, licence, description, tags,...) et qui seront utilisés par le site data.gouv.fr pour générer la fiche associée au jeu de données.
 
-``` ini
+```ini
 TITLE='Composteurs collectifs'
 DESCRIPTION='Points localisant les sites de compostage partagé. Ces aires de compostage partagé sont mises en place par Communauté de Communes du ... dans le cadre de sa politique de réduction des déchets.'
 TAG='dechet,composteurs,compostage,compost,CCPL'
 FREQUENCY='monthly'
 LICENSE='lov2'
-SPATIAL='Communauté de Communes...'
-GRANULARITY='fr:epci'
-ZONES='fr:epci:243400520@2019-01-01'
+SPATIAL='{"geom": null, "granularity": "fr:epci", "zones": ["fr:epci:243400520@2019-01-01"]}'
 TEMPORAL_COVERAGE=''
 ```
 
 [Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/description/COMPOSTEURS.env){: .md-button }
 {: align=middle }
 
-## 5. Exécution
+### 5. Exécution
 
 Une fois que tout est configuré, il est possible de lancer manuellement la publication d'une donnée en définissant les paramètres : Données - Code EPSG - Format :
 
-``` bash
+```bash
 pg2datagouv.sh COMPOSTEURS 2154 CSV
 ```
 
@@ -236,7 +236,7 @@ Les données seront alors directement publiées sur data.gouv.fr à l'aide de l'
 !!! info
     Une fois le processus d'extraction validé, il est également recommandé d'automatiser la publication à l'aide de tâches [cron](https://fr.wikipedia.org/wiki/Cron) en définissant la fréquence d'actualisation des ressources.
 
-## 6. Et après
+### 6. Et après
 
 Une fois qu'une ressource est publiée pour un jeu de données, leurs métadonnées respectives sont stockées dans le répertoire : *data_config_json*. Ces fichiers contiennent notamment un identifiant unique exploité pour leurs mises à jour à suivre.
 
