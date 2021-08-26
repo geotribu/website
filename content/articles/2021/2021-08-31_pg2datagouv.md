@@ -64,7 +64,7 @@ Dans la suite de ce tutoriel, je vais détailler les étapes à prendre en compt
 
 Avant de se lancer, il est bon de paramétrer le fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé par les différents scripts présentés ci-après. On y définit notamment les différents répertoires de travail ainsi que les variables permettant d'accéder au portail national et à la base de données.
 
-``` env
+``` ini
 # REPERTOIRE DE TRAVAIL
 REPER='/Users/'
 
@@ -203,7 +203,7 @@ if [ "$DONNEE" = "COMPOSTEURS" ]; then
 
 Comme pour le script d'extraction des données, il faut créer un fichier définissant les paramètres de chaque jeu de données publié (titre, licence, description, tags,...) et qui seront utilisés par le site data.gouv.fr pour générer la fiche associée au jeu de données.
 
-``` env
+``` ini
 TITLE='Composteurs collectifs'
 DESCRIPTION='Points localisant les sites de compostage partagé. Ces aires de compostage partagé sont mises en place par Communauté de Communes du ... dans le cadre de sa politique de réduction des déchets.'
 TAG='dechet,composteurs,compostage,compost,CCPL'
