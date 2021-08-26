@@ -2,7 +2,7 @@
 title: "Automatiser la publication et la mise à jour de données de PostgreSQL vers Data.gouv.fr"
 authors: ["Florian Boret"]
 categories: ["article", "tutoriel"]
-date: 2021-08-10 14:14
+date: 2021-08-31 14:20
 description: "Automatiser la publication et la mise à jour de données entre PostgreSQL et Data.gouv.fr en utilisant OGR et l'API data.gouv"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/pg2datagouv_illustration.png"
 license: default
@@ -11,7 +11,7 @@ tags: PostgreSQL,data.gouv.fr,data,open data,Bash,ogr,api,jq,cURL
 
 # Automatiser la publication et la mise à jour de données de PostgreSQL vers Data.gouv.fr
 
-:calendar: Date de publication initiale : XX Aout 2021
+:calendar: Date de publication initiale : 31 Aout 2021
 
 **Mots-clés :** PostgreSQL | data.gouv.fr | Open Data | Bash | API | OGR | jq | cURL
 
@@ -22,6 +22,8 @@ tags: PostgreSQL,data.gouv.fr,data,open data,Bash,ogr,api,jq,cURL
 - une connexion internet pour publier vos données
 
 ## Intro
+
+![Logo opendata](https://cdn.geotribu.fr/img/logos-icones/divers/opendata_logo.png "OpenData"){: .img-rdp-news-thumb }
 
 Être géomaticien dans un petit EPCI c'est souvent être multitâche et cela implique également d'intervenir sur une diversité de sujet. D'ailleurs celui qui va nous intéresser aujourd'hui, c'est l'Open Data!
 
@@ -62,36 +64,36 @@ Dans la suite de ce tutoriel, je vais détailler les étapes à prendre en compt
 
 Avant de se lancer, il est bon de paramétrer le fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé par les différents scripts présentés ci-après. On y définit notamment les différents répertoires de travail ainsi que les variables permettant d'accéder au portail national et à la base de données.
 
-``` bash
+``` env
 # REPERTOIRE DE TRAVAIL
-export REPER='/Users/'
+REPER='/Users/'
 
 # REPERTOIRE DE SORTIE
-export REPER_OUT='data_out'
+REPER_OUT='data_out'
 
 # REPERTOIRE TEMPORAIRE
-export REPER_TEMP='data_temp'
+REPER_TEMP='data_temp'
 
 # REPERTOIRE PARAMETRES DATAGOUV
-export REPER_CONFIG_JSON='data_config_json'
+REPER_CONFIG_JSON='data_config_json'
 
 # REPERTOIRE DESCRIPTION JEU DE DONNEES
-export REPER_DESC='description'
+REPER_DESC='description'
 
 # PARAMETRES OGR
-export LINK_OGR=ogr2ogr
-export ENCODAGE=UTF-8
+LINK_OGR=ogr2ogr
+ENCODAGE=UTF-8
 
 # VARIABLES DATA-GOUV.FR
-export API='https://www.data.gouv.fr/api/1'
-export API_KEY='XXXXXXXXXXXXXXXXXXXXXXXXXX'
-export ORG='XXXXXXXXXXXXXXXXXXXXXXXXXX'
+API='https://www.data.gouv.fr/api/1'
+API_KEY='XXXXXXXXXXXXXXXXXXXXXXXXXX'
+ORG='XXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 # CONNEXION A LA BASE DE DONNEES
-export C_HOST='localhost'
-export C_USER='user'
-export C_PASSWORD='pass'
-export C_DBNAME='database'
+C_HOST='localhost'
+C_USER='user'
+C_PASSWORD='pass'
+C_DBNAME='database'
 ```
 
 [Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/config.env){: .md-button }
@@ -201,16 +203,16 @@ if [ "$DONNEE" = "COMPOSTEURS" ]; then
 
 Comme pour le script d'extraction des données, il faut créer un fichier définissant les paramètres de chaque jeu de données publié (titre, licence, description, tags,...) et qui seront utilisés par le site data.gouv.fr pour générer la fiche associée au jeu de données.
 
-``` bash
-export TITLE='Composteurs collectifs'
-export DESCRIPTION='Points localisant les sites de compostage partagé. Ces aires de compostage partagé sont mises en place par Communauté de Communes du ... dans le cadre de sa politique de réduction des déchets.'
-export TAG='dechet,composteurs,compostage,compost,CCPL'
-export FREQUENCY='monthly'
-export LICENSE='lov2'
-export SPATIAL='Communauté de Communes...'
-export GRANULARITY='fr:epci'
-export ZONES='fr:epci:243400520@2019-01-01'
-export TEMPORAL_COVERAGE=''
+``` env
+TITLE='Composteurs collectifs'
+DESCRIPTION='Points localisant les sites de compostage partagé. Ces aires de compostage partagé sont mises en place par Communauté de Communes du ... dans le cadre de sa politique de réduction des déchets.'
+TAG='dechet,composteurs,compostage,compost,CCPL'
+FREQUENCY='monthly'
+LICENSE='lov2'
+SPATIAL='Communauté de Communes...'
+GRANULARITY='fr:epci'
+ZONES='fr:epci:243400520@2019-01-01'
+TEMPORAL_COVERAGE=''
 ```
 
 [Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/description/COMPOSTEURS.env){: .md-button }
