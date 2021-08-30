@@ -45,7 +45,8 @@ graph TD;
     A{pg2datagouv.sh} --> G(config.env);
     G --> A;
     A --> D[dechets_composteurs.sh] --> |Extraction<br>avec OGR| U(composteurs.shp);
-    D --> G --> D
+    D --> G
+    G --> D
     U --> H{API};
     R{Tâche CRON} --> |Lancer| A;
     A --> H;
