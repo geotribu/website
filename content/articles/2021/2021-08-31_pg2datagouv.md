@@ -27,7 +27,7 @@ tags: PostgreSQL,data.gouv.fr,data,open data,Bash,ogr,api,jq,cURL
 
 Être géomaticien dans un petit EPCI c'est souvent être multitâche et cela implique également d'intervenir sur une diversité de sujets. D'ailleurs celui qui va nous intéresser aujourd'hui, c'est l'Open Data !
 
-Je ne vais pas vous faire un rappel sur l'ouverture des données et l'Open Data mais si ça ne vous parle pas, je vous recommande l'introduction de l'[article proposé par le Parc national des Ecrins (Cendrine HOARAU / Juin 2021)](https://si.ecrins-parcnational.com/blog/2021-06-publier-opendata-continu.html) qui propose également une solution pour publier des données en open data sur son propre serveur.
+Je ne vais pas vous faire un rappel sur l'ouverture des données publiques mais si ça ne vous parle pas, je vous recommande l'introduction de l'[article proposé par le Parc national des Écrins (Cendrine HOARAU / Juin 2021)](https://si.ecrins-parcnational.com/blog/2021-06-publier-opendata-continu.html) qui propose également une solution pour publier des données en open data sur son propre serveur.
 
 ![Ouverture des données publiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/od-ouverture-dates.jpg "Ouverture des données publiques"){: .img-center loading=lazy }
 
@@ -45,6 +45,7 @@ graph TD;
     A{pg2datagouv.sh} --> G(config.env);
     G --> A;
     A --> D[dechets_composteurs.sh] --> |Extraction<br>avec OGR| U(composteurs.shp);
+    D --> G --> D
     U --> H{API};
     R{Tâche CRON} --> |Lancer| A;
     A --> H;
@@ -62,9 +63,11 @@ Dans la suite de ce tutoriel, je vais détailler les étapes à prendre en compt
 
 ## Adapter et utiliser pg2datagouv
 
-### 1. Configurer l'environnement de travail : config.env
+### 1. Configurer l'environnement de travail
 
 Avant de se lancer, il est bon de paramétrer le fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé par les différents scripts présentés ci-après. On y définit notamment les différents répertoires de travail ainsi que les variables permettant d'accéder au portail national et à la base de données.
+
+Voici le fichier `config.env` à adapter :
 
 ```ini
 # REPERTOIRE DE TRAVAIL
@@ -150,9 +153,9 @@ fi
 [Consulter l'exemple des composteurs :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/scripts/dechets_composteurs.sh){: .md-button }
 {: align=middle }
 
-### 3. Intégrer le script d'extraction dans le script maître : pg2datagouv.sh
+### 3. Intégrer le script d'extraction dans le script père : pg2datagouv.sh
 
-Afin d'appeler le script fils préalablement créé vous devez l'ajouter au script maître qui sera exécuté ([*un script pour les gouverner tous*](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script fils vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
+Afin d'appeler le script fils préalablement créé vous devez l'ajouter au script père qui sera exécuté ([*un script pour les gouverner tous*](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script fils vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
 
 !!! info
     Nota les fichiers annexes sont rangés dans le répertoire *attachment*.
@@ -211,7 +214,7 @@ DESCRIPTION='Points localisant les sites de compostage partagé. Ces aires de co
 TAG='dechet,composteurs,compostage,compost,CCPL'
 FREQUENCY='monthly'
 LICENSE='lov2'
-SPATIAL='{"geom": null, "granularity": "fr:epci", "zones": ["fr:epci:243400520@2019-01-01"]}'
+SPATIAL='{"geom": null, "granularity": "fr:epci", "zones": ["fr:epci:000000000@2019-01-01"]}'
 TEMPORAL_COVERAGE=''
 ```
 
