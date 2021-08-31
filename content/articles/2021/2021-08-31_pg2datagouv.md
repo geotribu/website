@@ -49,6 +49,8 @@ graph TD;
     G --> D;
     U --> H{API};
     R{Tâche CRON} --> |Lancer| A;
+    S(metadonnees.json) --> A;
+    H --> S;
     A --> H;
     M(composteurs.env) --> H;
     H --> |Publier| X{Data.gouv.fr};
