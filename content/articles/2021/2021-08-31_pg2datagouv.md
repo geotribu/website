@@ -112,7 +112,9 @@ Dans le répertoire *scripts*, vous devez y placer un script Bash pour chaque do
 Voici un exemple d'extraction des informations liées aux composteurs au format shapefile.
 
 ```bash
-#- -----------------------------------------------------------------------------------------------------------
+# Lecture du fichier de configuration
+. ./config.env
+# ------------------------------------------------------------------------------------------------------------
 var_group=DECHETS
 var_file=COMPOSTEURS
 schema=dechet # Définir le schéma dans lequel se trouve la donnée
@@ -137,7 +139,7 @@ adresse,
 -----------------------------------------
 'Communauté de Communes ...' as source
 -----------------------------------------
-FROM composteurs WHERE ST_IsValid(GEOMETRY)"
+FROM composteurs WHERE ST_IsValid(geom)"
 
 # ------------------------------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------------------------------
