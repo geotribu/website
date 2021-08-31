@@ -3,7 +3,7 @@ title: "Automatiser la publication et la mise à jour de données de PostgreSQL 
 authors: ["Florian Boret"]
 categories: ["article", "tutoriel"]
 date: 2021-08-31 14:20
-description: "Automatiser la publication et la mise à jour de données entre PostgreSQL et Data.gouv.fr en utilisant OGR et l'API data.gouv"
+description: "Automatiser la publication et la mise à jour de données entre PostgreSQL et Data.gouv.fr en utilisant OGR et l'API data.gouv."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/pg2datagouv_illustration.png"
 license: default
 tags: PostgreSQL,data.gouv.fr,data,open data,Bash,ogr,api,jq,cURL
@@ -154,9 +154,9 @@ fi
 [Consulter l'exemple des composteurs :fontawesome-regular-file-code:](https://github.com/igeofr/pg2datagouvfr/blob/main/scripts/dechets_composteurs.sh){: .md-button }
 {: align=middle }
 
-### 3. Intégrer le script d'extraction dans le script père : pg2datagouv.sh
+### 3. Intégrer le script d'extraction dans le script parent : pg2datagouv.sh
 
-Afin d'appeler le script fils préalablement créé vous devez l'ajouter au script père qui sera exécuté ([*un script pour les gouverner tous*](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script fils vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
+Afin d'appeler le script enfant préalablement créé vous devez l'ajouter au script parent qui sera exécuté ([*un script pour les gouverner tous*](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script enfant vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
 
 !!! info
     Nota les fichiers annexes sont rangés dans le répertoire *attachment*.
@@ -224,7 +224,7 @@ TEMPORAL_COVERAGE=''
 
 ### 5. Exécution
 
-Une fois que tout est configuré, il est possible de lancer manuellement la publication d'une donnée en définissant les paramètres : Données - Code EPSG - Format :
+Une fois que tout est configuré, il est possible de lancer manuellement la publication d'une donnée en passant les paramètres `nom_table` `code_ EPSG` `format` :
 
 ```bash
 pg2datagouv.sh COMPOSTEURS 2154 CSV
@@ -244,7 +244,7 @@ Les données seront alors directement publiées sur data.gouv.fr à l'aide de l'
 
 Une fois qu'une ressource est publiée pour un jeu de données, leurs métadonnées respectives sont stockées dans le répertoire : *data_config_json*. Ces fichiers contiennent notamment un identifiant unique exploité pour leurs mises à jour à suivre.
 
-!!! info
+!!! important
     Il est important de ne pas supprimer ces fichiers une fois le jeu de données ou la ressource publiés.
 
 ----
