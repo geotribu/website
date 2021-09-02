@@ -269,8 +269,6 @@ ogr2ogr \
   adresses.vrt
 ```
 
-
-
 ```xml
 <OGRVRTDataSource>
     <OGRVRTLayer name="adresses-33">
