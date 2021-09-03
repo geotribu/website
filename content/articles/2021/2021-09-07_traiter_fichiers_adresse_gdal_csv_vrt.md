@@ -1,19 +1,19 @@
 ---
-title: "Utiliser GDAL pour traiter les fichiers au standard Bases Adresses Locales"
+title: "Utiliser GDAL pour traiter les fichiers de la Base Adresse Nationale et Locales"
 authors: ["Julien MOURA"]
 categories: ["article", "tutoriel"]
 date: "2021-09-07 10:20"
-description: "Travailler les données de la Base Adresse Nationale (BAN) avec GDAL/OGR."
+description: "Travailler les données de la Base Adresse Nationale (BAN) avec GDAL/OGR, en tirant parti de l'abstraction sur les systèmes de fichiers virtuels (VSI) et de la lecture (VRT)."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png"
 license: beerware
 tags: "GDAL,OGR,CSV,Adresse,BAL,BAN"
 ---
 
-# Utiliser GDAL VSI et VRT pour intégrer les fichiers au standard BAL
+# Utiliser GDAL VSI et VRT pour intégrer les fichiers BAN/BAL
 
 :calendar: Date de publication initiale : 7 septembre 2021
 
-**Mots-clés :** Adresse | BAL | CSV | GDAL
+**Mots-clés :** Adresse | BAL | BAN | CSV | GDAL
 
 Prérequis :
 
@@ -21,9 +21,9 @@ Prérequis :
 
 ## Introduction
 
-![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-rdp-news-thumb }
+![logo GDAL tshirt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_logo_tshirt.webp "logo GDAL tshirt"){: .img-rdp-news-thumb }
 
-On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années. Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressé avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](/?q=adress).
+On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années et plus récemment des Bases Adresses Locales (BAL). Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressé avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](/?q=adress).
 
 Après que [Michaël Galien ait proposé une méthode avec sa bibliothèque PowerShell](/articles/2021/2021-05-25_biblio_powershell_si3p0/#cas-dusage-traitement-automatise-de-la-ban), je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes :
 
@@ -31,19 +31,17 @@ Après que [Michaël Galien ait proposé une méthode avec sa bibliothèque Powe
 2. les décompresser
 3. les convertir et intégrer dans notre format préféré (ici le GeoPackage)
 
-Pour les besoins de ce tutoriel, on va utiliser les données du plus grand département de France métropolitaine, [la Gironde](https://fr.wikipedia.org/wiki/Gironde_(d%C3%A9partement)) dont la dernière version des données de la base adresses est donc : <https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz>.
+Pour les besoins de ce tutoriel, on va utiliser les données du plus grand département de France métropolitaine, [la Gironde](https://fr.wikipedia.org/wiki/Gironde_(d%C3%A9partement)) dont la dernière version des données de la base adresses est donc : <https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz>. Pour ce qui est de la BAL, j'ai opté pour les [données de Bayonne](https://adresse.data.gouv.fr/bases-locales/jeux-de-donnees/5adf405b88ee38303c046910) (:wave: Chantal et Laura).
 
 !!! tip
-    Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier). Si vous utilisez GDAL sur Windows avec PowerShell, remplacez le caractère multi-ligne \\ par `.
+    Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier). Si vous utilisez GDAL sur Windows avec PowerShell, remplacez le caractère multi-ligne \\ (*backslash*) par ` (*backtick*).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
 ----
 
-## Télécharger et décompresser
-
-### La magie du VSI
+## La magie du système virtuel de GDAL (VSI)
 
 ![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
 
@@ -114,7 +112,7 @@ source_nom_voie: String (0.0)
 
 ![logo GDAL next](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_next_logo.png "logo GDAL next"){: .img-rdp-news-thumb }
 
-En regardant du côté du [format BAL] qui est bien documenté grâce aux petits soins de l'[AITF] (merci entre autres à Maël Reboux et Chantal Arruti) et de [la documentation GDAL sur les CSV](https://gdal.org/drivers/vector/csv.html#open-options), on peut dès lors améliorer encore un peu les choses :
+En regardant le modèle du [format BAN] et la [documentation GDAL sur les CSV](https://gdal.org/drivers/vector/csv.html#open-options), on peut dès lors améliorer encore un peu les choses :
 
 - demander à GDAL de déterminer les types et la longueur des différents champs
 - indiquer que la première ligne est un en-tête
@@ -192,13 +190,15 @@ Mais on est là pour automatiser et ce serait quand même BALlot de se rajouter 
 
 ----
 
-## Le format virtuel de GDAL (VRT)
+## Le tout-en-un du format virtuel de GDAL (VRT)
 
-![logo BAL](https://cdn.geotribu.fr/img/logos-icones/divers/bal.png "logo BAL"){: .img-rdp-news-thumb }
+![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-rdp-news-thumb }
 
 Bien connu des habitués de GDAL, le format virtuel (les fichiers `*.vrt`), présent dès les premières versions, sert notamment pour le mosaïquage de rasters mais aussi la définition d'un jeu de données à partir de plusieurs sources et paramètres. C'est cet aspect qui nous intéresse ici.
 
 Ni plus ni moins qu'[un fichier XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language), il faut considérer un fichier VRT comme un fichier de configuration de GDAL qui définit les sources de données (*datasource*), les couches (*layers*), les champs (*fields*), les éventuels filtres ou opérations intermédiaires en SQL, les options de lecture (l'équivalent de `-OO`) et les options de sortie (l'équivalent de `-CO`).
+
+Bref, ça permet de faire beaucoup de choses avec un simple fichier XML.
 
 ### Un VRT pour les données de la BAN
 
@@ -238,13 +238,25 @@ Voici mes choix :
 - renommer le champ `rep` en `repetition`
 - supprimer les champs des coordonnées géographiques (`x`, `y` et `lon`, `lat`)
 - forcer les types des champs `code_insee_*` et `code_postal` à `String`
-- spécifier la longueur des champs quand c'était possible
+- spécifier la longueur des champs quand c'est possible
+
+#### Utiliser le fichier VRT
+
+Il suffit de passer le fichier VRT en paramètre comme jeu de données en entrée. Par exemple pour une conversion en GeoPackage et une reprojection en [Lambert 93](https://fr.wikipedia.org/wiki/Lambert_93) :
+
+```bash
+ogr2ogr \
+    -f GPKG \
+    -t_srs 'EPSG:2154' \
+    ban.gpkg \
+    ban.vrt
+```
 
 #### Combiner plusieurs départements
 
 Si on veut combiner les données d'un autre département, il suffit de dupliquer l'élément `<OGRVRTLayer>` en changeant évidemment le nom de la couche et la source. Par exemple pour ajouter les Landes :
 
-```xml hl_lines="2-4 24-26"
+```xml hl_lines="2-4 25-27"
 <OGRVRTDataSource>
     <OGRVRTLayer name="gironde">
         <SrcDataSource>/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz</SrcDataSource>
@@ -295,21 +307,11 @@ Si on veut combiner les données d'un autre département, il suffit de dupliquer
 </OGRVRTDataSource>
 ```
 
-### Utiliser le fichier VRT
+#### Indiquer la reprojection dans le VRT
 
-Il suffit de passer le fichier VRT en paramètre comme jeu de données en entrée. Par exemple pour une conversion en GeoPackage et une reprojection en [Lambert 93](https://fr.wikipedia.org/wiki/Lambert_93) :
+![logo projection](https://cdn.geotribu.fr/img/logos-icones/divers/projection.png "logo projection"){: .img-rdp-news-thumb }
 
-```bash
-ogr2ogr \
-    -f GPKG \
-    -t_srs 'EPSG:2154' \
-    ban.gpkg \
-    ban.vrt
-```
-
-### Indiquer la reprojection dans le VRT
-
-Comme dit plus haut, j'ai voulu que mes fichiers VRT soient le plus génériques possibles et j'ai donc opté pour les champs `lat` et `lon` en WGS 84. Ainsi, il suffit juste de changer le nom et la source.
+Comme dit plus haut, j'ai voulu que mes fichiers VRT soient le plus génériques possibles et j'ai donc opté pour utiliser les champs `lat` et `lon` qui référencent les coordonnées en WGS 84. Ainsi, pour adapter les fichiers à d'autres départements, il suffit juste de changer le nom et la source.
 
 Si vous utilisez toujours la même projection finale, il est possible de spécifier la reprojection des données dans le VRT en encadrant chaque source par l'élément `OGRVRTWarpedLayer` et en précisant le système de coordonnées désiré `TargetSRS`.
 
@@ -317,20 +319,20 @@ Par exemple pour reprojeter les données en Lambert 93 :
 
 ```xml
     <OGRVRTWarpedLayer>
-        <OGRVRTLayer name="adresses-33">
+        <OGRVRTLayer name="gironde">
             [...]
         </OGRVRTLayer>
         <TargetSRS>EPSG:2154</TargetSRS>
     </OGRVRTWarpedLayer>
         <OGRVRTWarpedLayer>
-        <OGRVRTLayer name="adresses-40">
+        <OGRVRTLayer name="landes">
             [...]
         </OGRVRTLayer>
         <TargetSRS>EPSG:2154</TargetSRS>
     </OGRVRTWarpedLayer>
 ```
 
-La commande `ogr2ogr` deviant alors :
+La commande `ogr2ogr` devient alors :
 
 ```bash
 ogr2ogr \
@@ -341,7 +343,53 @@ ogr2ogr \
 
 ### BALance ton fichier VRT
 
-> TO DOC
+![logo BAL](https://cdn.geotribu.fr/img/logos-icones/divers/bal.png "logo BAL"){: .img-rdp-news-thumb }
+
+Pour le [format BAL] qui est bien documenté grâce aux petits soins de l'[AITF] (merci entre autres à Maël Reboux et Chantal Arruti), on retrouve peu ou prou la même logique si ce n'est que les CSV sont stockés sans compression sur le site statique de data.gouv.fr.
+
+Ce qui nous donne :
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<OGRVRTDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/gdal/data/ogrvrt.xsd">
+    <OGRVRTLayer name="bayonne">
+        <SrcDataSource>/vsicurl/https://static.data.gouv.fr/resources/adresses-au-format-bal-bayonne/20210802-091433/20210731-bal-216401026.csv</SrcDataSource>
+        <SrcLayer>20210731-bal-216401026</SrcLayer>
+        <GeometryField encoding="PointFromColumns" x="long" y="lat"/>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <Field name="uid_adresse" type="String" nullable="true"/>
+        <Field name="cle_interop" type="String" nullable="false"/>
+        <Field name="commune_insee" type="String" nullable="false" width="5"/>
+        <Field name="commune_nom" type="String" nullable="false"/>
+        <Field name="commune_deleguee_insee" type="String" nullable="true"/>
+        <Field name="commune_deleguee_nom" type="String" nullable="true"/>
+        <Field name="voie_nom" type="String" nullable="false"/>
+        <Field name="lieudit_complement_nom" type="String" nullable="true"/>
+        <Field name="numero" type="Integer" nullable="false"/>
+        <Field name="suffixe" type="String" nullable="true"/>
+        <Field name="position" type="String" nullable="false" width="20" />
+        <Field name="cad_parcelles" type="String" nullable="true"/>
+        <Field name="source" type="String" nullable="false"/>
+        <Field name="date_der_maj" type="Date" nullable="false" width="10" />
+    </OGRVRTLayer>
+</OGRVRTDataSource>
+```
+
+!!! question "Lien générique ?"
+    Je n'ai pas trouvé de lien qui renvoie automatiquement vers le dernier fichier BAL publié (typiquement `latest.csv` comme pour la BAN). Si quelqu'un sait où je peux trouver cela ? Ce serait très pratique pour rendre mon fichier VRT plus générique ainsi que les mécanismes automatisés d'intégration et de validation.
+
+La commande `ogr2ogr` devient alors :
+
+```bash
+ogr2ogr \
+    -f GPKG \
+    bal.gpkg \
+    bal.vrt
+```
+
+Après tout ce travail, on vérifie le rendu et la structure des données dans notre SIG préféré :
+
+[![QGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "QGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Rendu final des donnés BAN et BAL" }
 
 ----
 
@@ -352,16 +400,19 @@ ogr2ogr \
 ![icône CSV](https://cdn.geotribu.fr/img/logos-icones/divers/csv.png "icône CSV - CSV File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
 
 Tant qu'on y est, autant capitaliser sur ce travail pour faciliter les choses aux outils qui tirent parti des fichiers de définition des types de champs : les fichiers CSVT.  
-C'est en tout cas utilisé par QGIS (voir [la doc officielle](https://docs.qgis.org/3.16/fr/docs/user_manual/managing_data_source/supported_data.html#using-csvt-file-to-control-field-formatting) et [ce billet de blog d'Anita Graser](https://anitagraser.com/2011/03/07/how-to-specify-data-types-of-csv-columns-for-use-in-qgis/))
+C'est en tout cas utilisé par QGIS (voir [la doc officielle](https://docs.qgis.org/3.16/fr/docs/user_manual/managing_data_source/supported_data.html#using-csvt-file-to-control-field-formatting) et [ce billet de blog d'Anita Graser](https://anitagraser.com/2011/03/07/how-to-specify-data-types-of-csv-columns-for-use-in-qgis/)).
+
+Voici pour la BAN :
 
 ```csv
-"String","String","Integer","String","String","String","String","String","String","String","Real","Real","Real","Real","String","String","String","String","String","String"
+String,String,Integer,String,String,String,String,String,String,String,CoordX,CoordY,CoordX,CoordY,String,String,String,String,String,String
 ```
 
-Si la ligne de commande vous effraie, il y a aussi des outils disponibles en ligne bien pratiques CSVT Generator, qui créent aussi le VRT :
+Et pour la BAL 1.2 :
 
-[CSVT Generator :fontawesome-solid-tools:](https://loicbcn.github.io/csvtgenerator/){: .md-button }
-{: align=middle }
+```csv
+String,String,String,String,String,String,String,String,Integer,String,String,CoordX,CoordY,CoordX,CoordY,String,String,Date
+```
 
 ### Utiliser le XSD pour valider le schéma
 
@@ -378,15 +429,22 @@ Comme indiqué dans la documentation, le [schéma du format VRT est défini par 
 
 Par exemple, si comme moi vous utilisez Visual Studio Code, vous pouvez profiter de l'auto-complétion et de la validation via une extension comme [XML Complete](https://marketplace.visualstudio.com/items?itemName=rogalmic.vscode-xml-complete) :
 
-![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }
+[![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png){: data-mediabox="lightbox-gallery" data-title="Visual Studio Code - XML Complete" }
 
 ----
 
 ## Conclusion
 
-![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }
+[![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png){: data-mediabox="lightbox-gallery" data-title="GDAL c'est de la BAL" }
 
 Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. On pourrait le suggérer aux équipes Etalab/ANCT et/ou à l'AITF. Qu'en pensez-vous ?
+
+Par ailleurs, n'étant pas non plus un spécialiste des données d'adressage, si vous pensez pouvoir améliorer ces fichiers VRT et/ou CSVT, n'hésitez pas à faire vos remarques en commentaire !
+
+Enfin, si la ligne de commande vous effraie, il y a aussi des outils disponibles en ligne bien pratiques, tels CSVT Generator :
+
+[CSVT Generator :fontawesome-solid-tools:](https://loicbcn.github.io/csvtgenerator/){: .md-button }
+{: align=middle }
 
 ----
 
@@ -406,3 +464,4 @@ Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'inté
 <!-- Hyperlinks reference -->
 [AITF]: https://www.aitf.fr/
 [format BAL]: https://schema.data.gouv.fr/etalab/schema-bal/latest.html
+[format BAN]: https://doc.adresse.data.gouv.fr/utiliser-la-base-adresse-nationale/les-fichiers-de-la-base-adresse-nationale
