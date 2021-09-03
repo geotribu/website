@@ -244,7 +244,7 @@ Voici mes choix :
 
 Si on veut combiner les données d'un autre département, il suffit de dupliquer l'élément `<OGRVRTLayer>` en changeant évidemment le nom de la couche et la source. Par exemple pour ajouter les Landes :
 
-```xml hl_lines="2 3 24 25"
+```xml hl_lines="2-4 24-26"
 <OGRVRTDataSource>
     <OGRVRTLayer name="gironde">
         <SrcDataSource>/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz</SrcDataSource>
@@ -355,10 +355,10 @@ Tant qu'on y est, autant capitaliser sur ce travail pour faciliter les choses au
 C'est en tout cas utilisé par QGIS (voir [la doc officielle](https://docs.qgis.org/3.16/fr/docs/user_manual/managing_data_source/supported_data.html#using-csvt-file-to-control-field-formatting) et [ce billet de blog d'Anita Graser](https://anitagraser.com/2011/03/07/how-to-specify-data-types-of-csv-columns-for-use-in-qgis/))
 
 ```csv
-fdfd,dfdfd
+"String","String","Integer","String","String","String","String","String","String","String","Real","Real","Real","Real","String","String","String","String","String","String"
 ```
 
-Si la ligne de commande vous effraie, il y a aussi des outils disponibles en ligne bien pratiques comme :
+Si la ligne de commande vous effraie, il y a aussi des outils disponibles en ligne bien pratiques CSVT Generator, qui créent aussi le VRT :
 
 [CSVT Generator :fontawesome-solid-tools:](https://loicbcn.github.io/csvtgenerator/){: .md-button }
 {: align=middle }
