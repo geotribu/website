@@ -1,5 +1,5 @@
 ---
-title: "Utiliser GDAL pour traiter les fichiers au standard Bases Adresses Locales"
+title: "Utiliser GDAL pour traiter les fichiers de la Base Adresse Nationale et Locales"
 authors: ["Julien MOURA"]
 categories: ["article", "tutoriel"]
 date: "2021-09-07 10:20"
@@ -9,7 +9,7 @@ license: beerware
 tags: "GDAL,OGR,CSV,Adresse,BAL,BAN"
 ---
 
-# Utiliser GDAL VSI et VRT pour intégrer les fichiers au standard BAL
+# Utiliser GDAL VSI et VRT pour intégrer les fichiers BAN/BAL
 
 :calendar: Date de publication initiale : 7 septembre 2021
 
