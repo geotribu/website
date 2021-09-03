@@ -9,7 +9,7 @@ license: default
 tags: "GDAL,OGR,CSV,Adresse,BAL,BAN"
 ---
 
-# Un fichier GDAL/OGR VRT pour les Bases Adresses Locales
+# Utiliser GDAL VSI et VRT pour intégrer les fichiers au standard BAL
 
 :calendar: Date de publication initiale : 7 septembre 2021
 
@@ -34,28 +34,46 @@ Dans ce tutoriel, je vous propose de tirer parti de fonctionnalités de GDAL par
 
 Pour les besoins de ce tutoriel, on va utiliser les données du plus grand département de France métropolitaine, [la Gironde](https://fr.wikipedia.org/wiki/Gironde_(d%C3%A9partement)) dont la dernière version des données de la base adresses est : <https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz>.
 
+!!! tip
+    Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier).  
+    Sinon, en PowerShell, remplacez le caractère multi-ligne \\ par `.
+
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
-## Télécharger et décompresser : la magie du VSI
+----
+
+## Télécharger et décompresser
+
+### La magie du VSI
 
 ![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
 
-Pour commencer, jetons un coup d'oeil à ces fameux CSV de la BAN accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV compressés avec GZIP. On doit donc :
+Voilà bien 2 étapes répétitives qu'il est facile d'automatiser en tirant parti de la gestion des [systèmes de fichiers virtuels](https://gdal.org/user/virtual_file_systems.html) intégré à GDAL (VSI).  
+Le couteau-suisse de la géomatique intègre en effet des outils comme cURL et permet donc de gérer l'accès à des fichiers stockés ailleurs que sur un disque local, dans différents protocoles (HTTP, FTP...), formats de compression (ZIP, GZIP, TAR...) et mécanismes d'abstraction (APIs, stockage objet...). Très pratique pour qui n'a pas le temps d'apprendre à utiliser de multiples outils et surtout à les articuler.
 
-1. télécharger les données
-2. les décompresser
-3. les analyser
-4. les transformer
+La syntaxe est simple (préfixer le chemin d'accès avec `/vsi[protocole]/`) et puissante (chaînage possible). Quelques exemples rapides :
 
-Pour gagneren tirant parti du [système de fichier virtuel (VSI)](https://gdal.org/user/virtual_file_systems.html) intégré à GDAL, qui permet de gérer l'accès à des fichiers stockés ailleurs que sur un disque local, dans différents protocoles (HTTP, FTP...), formats de compression (ZIP, GZIP, TAR...) et mécanismes d'abstraction (APIs, stockage objet...).
+```bash
+# lire un fichier zippé
+gdalinfo /vsizip/my.zip/my.tif
+
+# lire un fichier accessible en HTTP
+gdalinfo /vsicurl/https://github.com/qgis/QGIS-Training-Data/blob/master/exercise_data/forestry/basic_map.tif?raw=true
+
+# lire un fichier zippé accessible en HTTP
+ogrinfo /vsizip/vsicurl/https://download.geofabrik.de/south-america/suriname-latest-free.shp.zip
+
+# lire une couche en particulier d'un fichier zippé accessible en HTTP
+ogrinfo -ro -al -so /vsizip/vsicurl/https://download.geofabrik.de/south-america/suriname-latest-free.shp.zip/gis_osm_buildings_a_free_1.shp
+```
+
+### Utilisons le VSI pour nos données BAL
 
 C'est parti pour notre `ogrinfo` des familles :
 
 ```bash
 ogrinfo -ro -al -so \
-    -oo AUTODETECT_TYPE=YES \
-    -oo AUTODETECT_WIDTH=YES \
     /vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz
 ```
 
@@ -91,6 +109,8 @@ nom_afnor: String (32.0)
 source_position: String (8.0)
 source_nom_voie: String (8.0)
 ```
+
+### Affinons les options
 
 En regardant du côté du [format BAL] qui est bien documenté grâce aux petits soins de l'[AITF] (merci entre autres à Maël Reboux et Chantal Arruti) et de [la documentation GDAL sur les CSV](https://gdal.org/drivers/vector/csv.html#open-options), on peut dès lors améliorer encore un peu les choses :
 
@@ -159,7 +179,7 @@ ogr2ogr \
   /vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz
 ```  
 
-Mais on s'aperçoit que les types de champs ne sont pas corrects.
+Mais on s'aperçoit que les types de champs ne sont pas corrects. Par exemple, le champ `code_insee` devrait être de type `String` et non `Integer`.
 
 ## Le format virtuel de GDAL à la rescousse
 
@@ -315,6 +335,14 @@ Si la ligne de commande vous effraie, il y a aussi des outils disponibles en lig
 
 [CSVT Generator :fontawesome-solid-tools:](https://loicbcn.github.io/csvtgenerator/){: .md-button }
 {: align=middle }
+
+----
+
+## Conclusion
+
+
+
+En rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. Qu'en pensez-vous ?
 
 ----
 
