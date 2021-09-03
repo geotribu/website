@@ -29,11 +29,11 @@ tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 
 Les données collectées avec les formulaires peuvent être envoyées à différents outils :
 
-* Aggregate (EOL)
+* Aggregate ("EOL", n'est plus maintenu)
 * Central (détaillé plus bas)
 * [Google sheet](https://docs.getodk.org/collect-connect-google/)
 
-ou récupérées directement sur le téléphone connecté à un ordinateur avec
+ou récupérées directement sur le poste de travail avec
 
 * https://docs.getodk.org/briefcase-intro/
 
@@ -45,8 +45,8 @@ Différentes solutions d'exploitation, d'analyse et de visualisation de données
 
 * R / [RuODK](https://github.com/ropensci/ruODK)
 * QGIS -> [QRealtime](https://shivareddyiirs.github.io/QRealTime/)
-* Redash : via l'API : https://forum.getodk.org/t/first-use-of-a-central-web-form-and-basic-restitution-with-redash/30334/4 ou à travers une BDD PostgreSQL intermédiaire
-* PostgreSQL/PostGIS -> [Central2PG](https://forum.getodk.org/t/postgresql-set-of-functions-to-get-data-from-central/33350)
+* Redash : via l'API : https://forum.getodk.org/t/first-use-of-a-central-web-form-and-basic-restitution-with-redash/30334/4 ou à travers une base de données PostgreSQL intermédiaire
+* PostgreSQL/PostGIS -> [Central2PG](https://forum.getodk.org/t/postgresql-set-of-functions-to-get-data-from-central/33350) est la solution qui sera présentée plus en détail dans cet article
 
 ### Outils propriétaires
 
@@ -67,7 +67,7 @@ Lorsque le téléphone interroge le serveur pour savoir quels formulaires sont d
 La configuration des téléphones des utilisateurs se fait simplement en scannant avec ODK Collect le QRCode proposé par Central pour cet utilisateur.
 Les versions récentes de Central et d'ODK Collect permettent à un utilisateur de participer à plusieurs projets qui peuvent être hébergés sur différentes serveurs.
 
-Voir la liste des fonctionnalités de Central dans la [documentation](https://docs.getodk.org/central-intro/#odk-central-features).
+Les fonctionnalités de Central sont décrites dans la [documentation](https://docs.getodk.org/central-intro/#odk-central-features).
 
 Comme Aggregate, Central s'appuie sur une base de données PostgreSQL.
 
