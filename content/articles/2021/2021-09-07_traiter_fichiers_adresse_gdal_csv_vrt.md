@@ -66,7 +66,7 @@ ogrinfo /vsizip/vsicurl/https://download.geofabrik.de/south-america/suriname-lat
 ogrinfo -ro -al -so /vsizip/vsicurl/https://download.geofabrik.de/south-america/suriname-latest-free.shp.zip/gis_osm_buildings_a_free_1.shp
 ```
 
-### Utilisons le VSI pour nos données BAL
+### Utilisons le VSI pour les données BAN
 
 C'est parti pour notre `ogrinfo` des familles :
 
