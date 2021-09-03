@@ -25,12 +25,11 @@ Prérequis :
 
 On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années. Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressé avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](/?q=adress).
 
-Dans ce tutoriel, je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes:
+Dans ce tutoriel, je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes :
 
 1. télécharger les données
 2. les décompresser
-3. les analyser
-4. les convertir et intégrer dans notre format préféré (ici le GeoPackage)
+3. les convertir et intégrer dans notre format préféré (ici le GeoPackage)
 
 Pour les besoins de ce tutoriel, on va utiliser les données du plus grand département de France métropolitaine, [la Gironde](https://fr.wikipedia.org/wiki/Gironde_(d%C3%A9partement)) dont la dernière version des données de la base adresses est donc : <https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz>.
 
@@ -119,7 +118,10 @@ En regardant du côté du [format BAL] qui est bien documenté grâce aux petits
 
 - demander à GDAL de déterminer les types et la longueur des différents champs
 - indiquer que la première ligne est un en-tête
-- indiquer les champs à utiliser pour les coordonnées géographiques ([`lat` et `lon` en WGS84](https://github.com/etalab/adresse.data.gouv.fr/blob/master/public/schemas/adresses-csv.md?plain=1#L21-L22)) mais ne pas les garder dans le fichier final
+- indiquer les champs à utiliser pour les coordonnées géographiques ([`lat` et `lon` en WGS84](https://github.com/etalab/adresse.data.gouv.fr/blob/master/public/schemas/adresses-csv.md?plain=1#L21-L22)) mais ne pas les garder dans le fichier final.
+
+!!! info
+    La projection légale de la BAN n'étant pas forcément toujours la même selon les départements, j'ai opté pour les champs `lat` et `lon` en WGS 84. Mais il est aussi possible d'utiliser les champs `y` et `x`.
 
 Ce qui donne :
 
@@ -167,7 +169,7 @@ source_position: String (8.0)
 source_nom_voie: String (8.0)
 ```
 
-... mais on s'aperçoit que les types de champs ne sont pas corrects. Par exemple, les champs `code_insee_*` devraient être de type `String` et non `Integer`. De même, les longueurs de champs sont trop liées à ce jeu de données et lèvent des avertissements (ligne 6).
+... mais on s'aperçoit que les types de champs ne sont pas corrects. Par exemple, les champs `code_insee_*` et `code_postal` devraient être de type `String` et non `Integer`. De même, les longueurs de champs sont trop liées à ce jeu de données et lèvent des avertissements (ligne 6).
 
 Notez que ça n'est pas bloquant, même pour la conversion :
 
@@ -182,156 +184,170 @@ ogr2ogr \
     -oo X_POSSIBLE_NAMES=lon \
     -oo Y_POSSIBLE_NAMES=lat \
     -oo KEEP_GEOM_COLUMNS=NO \
-    ban.gpkg \
+    ban33.gpkg \
     /vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz
 ```  
 
-Mais on est là pour automatiser et ce serait quand même BALlot de se rajouter du travail post-traitement rébarbatif !
+Mais on est là pour automatiser et ce serait quand même BALlot de se rajouter du travail post-traitement rébarbatif ! La belle occasion de tirer parti d'une autre merveille de GDAL : le format virtuel.
 
 ----
 
-## Le format virtuel de GDAL à la rescousse
+## Le format virtuel de GDAL (VRT)
 
 ![logo BAL](https://cdn.geotribu.fr/img/logos-icones/divers/bal.png "logo BAL"){: .img-rdp-news-thumb }
 
+Bien connu des habitués de GDAL, le format virtuel (les fichiers `*.vrt`), présent dès les premières versions, sert notamment pour le mosaïquage de rasters mais aussi la définition d'un jeu de données à partir de plusieurs sources et paramètres. C'est cet aspect qui nous intéresse ici.
 
+Ni plus ni moins qu'[un fichier XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language), il faut considérer un fichier VRT comme un fichier de configuration de GDAL qui définit les sources de données (*datasource*), les couches (*layers*), les champs (*fields*), les éventuels filtres ou opérations intermédiaires en SQL, les options de lecture (l'équivalent de `-OO`) et les options de sortie (l'équivalent de `-CO`).
 
-On peut alors se créer un  fichier VRT qui va bien `adresses.vrt` :
+### Un VRT pour les données de la BAN
 
-```xml
-<OGRVRTDataSource>
-    <OGRVRTLayer name="adresses-33">
-        <SrcDataSource>/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz</SrcDataSource>
-        <GeometryType>wkbPoint</GeometryType>
-        <LayerSRS>EPSG:4326</LayerSRS>
-        <GeometryField encoding="PointFromColumns" x="lon" y="lat"/>
-        <Field name="id" />
-        <Field name="id_fantoir" />
-        <Field name="numero" type="integer" />
-        <Field name="rep" />
-        <Field name="nom_voie" />
-        <Field name="code_postal" />
-        <Field name="code_insee" type="string" />
-        <Field name="nom_commune" />
-        <Field name="code_insee_ancienne_commune" />
-        <Field name="nom_ancienne_commune" />
-        <Field name="alias" />
-        <Field name="nom_ld" />
-        <Field name="libelle_acheminement" />
-        <Field name="nom_afnor" />
-        <Field name="source_position" />
-        <Field name="source_nom_voie" />
-        <OpenOptions>
-            <OOI key="AUTODETECT_TYPE">YES</OOI>
-            <OOI key="AUTODETECT_WIDTH">YES</OOI>
-        </OpenOptions>
-    </OGRVRTLayer>
-</OGRVRTDataSource>
-```
-
-Si on veut combiner les données d'un autre département, il faut duplicuer l'élément `<OGRVRTLayer>` :
+Je vous propose un fichier VRT typique pour un jeu de données au format BAN (nommons le `ban.vrt`) :
 
 ```xml
 <OGRVRTDataSource>
     <OGRVRTLayer name="gironde">
         <SrcDataSource>/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz</SrcDataSource>
+        <SrcLayer>adresses-33</SrcLayer>
         <GeometryType>wkbPoint</GeometryType>
         <LayerSRS>EPSG:4326</LayerSRS>
         <GeometryField encoding="PointFromColumns" x="lon" y="lat"/>
-        <Field name="id" />
-        <Field name="id_fantoir" />
-        <Field name="numero" type="integer" />
-        <Field name="rep" />
-        <Field name="nom_voie" />
-        <Field name="code_postal" />
-        <Field name="code_insee" />
-        <Field name="nom_commune" />
-        <Field name="code_insee_ancienne_commune" />
-        <Field name="nom_ancienne_commune" />
-        <Field name="alias" />
-        <Field name="nom_ld" />
-        <Field name="libelle_acheminement" />
-        <Field name="nom_afnor" />
-        <Field name="source_position" />
-        <Field name="source_nom_voie" />
-        <OpenOptions>
-            <OOI key="AUTODETECT_TYPE">YES</OOI>
-            <OOI key="AUTODETECT_WIDTH">YES</OOI>
-        </OpenOptions>
+        <Field name="id" type="string"/>
+        <Field name="id_fantoir" type="string" width="10"/>
+        <Field name="numero" type="integer"/>
+        <Field name="repetition" src="rep" type="string" nullable="true"/>
+        <Field name="nom_voie" type="string"/>
+        <Field name="code_postal" type="string" width="5"/>
+        <Field name="code_insee" type="string" width="5"/>
+        <Field name="nom_commune" type="string"/>
+        <Field name="code_insee_ancienne_commune" type="string" width="5"/>
+        <Field name="nom_ancienne_commune" type="string"/>
+        <Field name="alias" type="string"/>
+        <Field name="nom_ld" type="string"/>
+        <Field name="libelle_acheminement" type="string"/>
+        <Field name="nom_afnor" type="string"/>
+        <Field name="source_position" type="string" width="10"/>
+        <Field name="source_nom_voie" type="string" width="10"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
+```
+
+Voici mes choix :
+
+- nommer la couche avec le nom du département en minuscules et sans caractères spéciaux le cas échéant
+- renommer le champ `rep` en `repetition`
+- supprimer les champs des coordonnées géographiques (`x`, `y` et `lon`, `lat`)
+- forcer les types des champs `code_insee_*` et `code_postal` à `String`
+- spécifier la longueur des champs quand c'était possible
+
+#### Combiner plusieurs départements
+
+Si on veut combiner les données d'un autre département, il suffit de dupliquer l'élément `<OGRVRTLayer>` en changeant évidemment le nom de la couche et la source. Par exemple pour ajouter les Landes :
+
+```xml hl_lines="2 3 24 25"
+<OGRVRTDataSource>
+    <OGRVRTLayer name="gironde">
+        <SrcDataSource>/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz</SrcDataSource>
+        <SrcLayer>adresses-33</SrcLayer>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="lon" y="lat"/>
+        <Field name="id" type="string"/>    <!--  -->
+        <Field name="id_fantoir" type="string" width="10"/>
+        <Field name="numero" type="integer"/>
+        <Field name="repetition" src="rep" type="string" nullable="true"/>
+        <Field name="nom_voie" type="string"/>
+        <Field name="code_postal" type="string" width="5"/>
+        <Field name="code_insee" type="string" width="5"/>
+        <Field name="nom_commune" type="string"/>
+        <Field name="code_insee_ancienne_commune" type="string" width="5"/>
+        <Field name="nom_ancienne_commune" type="string"/>
+        <Field name="alias" type="string"/>
+        <Field name="nom_ld" type="string"/>
+        <Field name="libelle_acheminement" type="string"/>
+        <Field name="nom_afnor" type="string"/>
+        <Field name="source_position" type="string" width="10"/>
+        <Field name="source_nom_voie" type="string" width="10"/>
     </OGRVRTLayer>
     <OGRVRTLayer name="landes">
         <SrcDataSource>/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-40.csv.gz</SrcDataSource>
+        <SrcLayer>adresses-40</SrcLayer>
         <GeometryType>wkbPoint</GeometryType>
         <LayerSRS>EPSG:4326</LayerSRS>
         <GeometryField encoding="PointFromColumns" x="lon" y="lat"/>
-        <Field name="id" />
-        <Field name="id_fantoir" />
-        <Field name="numero" type="integer" />
-        <Field name="rep" />
-        <Field name="nom_voie" />
-        <Field name="code_postal" />
-        <Field name="code_insee" />
-        <Field name="nom_commune" />
-        <Field name="code_insee_ancienne_commune" />
-        <Field name="nom_ancienne_commune" />
-        <Field name="alias" />
-        <Field name="nom_ld" />
-        <Field name="libelle_acheminement" />
-        <Field name="nom_afnor" />
-        <Field name="source_position" />
-        <Field name="source_nom_voie" />
-        <OpenOptions>
-            <OOI key="AUTODETECT_TYPE">YES</OOI>
-            <OOI key="AUTODETECT_WIDTH">YES</OOI>
-        </OpenOptions>
+        <Field name="id" type="string"/>
+        <Field name="id_fantoir" type="string" width="10"/>
+        <Field name="numero" type="integer"/>
+        <Field name="repetition" src="rep" type="string" nullable="true"/>
+        <Field name="nom_voie" type="string"/>
+        <Field name="code_postal" type="string" width="5"/>
+        <Field name="code_insee" type="string" width="5"/>
+        <Field name="nom_commune" type="string"/>
+        <Field name="code_insee_ancienne_commune" type="string" width="5"/>
+        <Field name="nom_ancienne_commune" type="string"/>
+        <Field name="alias" type="string"/>
+        <Field name="nom_ld" type="string"/>
+        <Field name="libelle_acheminement" type="string"/>
+        <Field name="nom_afnor" type="string"/>
+        <Field name="source_position" type="string" width="10"/>
+        <Field name="source_nom_voie" type="string" width="10"/>
     </OGRVRTLayer>
 </OGRVRTDataSource>
 ```
 
-## Utiliser le fichier VRT
+### Utiliser le fichier VRT
 
-Par exemple pour une conversion :
+Il suffit de passer le fichier VRT en paramètre comme jeu de données en entrée. Par exemple pour une conversion en GeoPackage et une reprojection en [Lambert 93](https://fr.wikipedia.org/wiki/Lambert_93) :
 
 ```bash
 ogr2ogr \
-  -f GPKG \
-  -t_srs 'EPSG:2154' \
-  ban33.gpkg \
-  adresses.vrt
+    -f GPKG \
+    -t_srs 'EPSG:2154' \
+    ban.gpkg \
+    ban.vrt
 ```
+
+### Indiquer la reprojection dans le VRT
+
+Comme dit plus haut, j'ai voulu que mes fichiers VRT soient le plus génériques possibles et j'ai donc opté pour les champs `lat` et `lon` en WGS 84. Ainsi, il suffit juste de changer le nom et la source.
+
+Si vous utilisez toujours la même projection finale, il est possible de spécifier la reprojection des données dans le VRT en encadrant chaque source par l'élément `OGRVRTWarpedLayer` et en précisant le système de coordonnées désiré `TargetSRS`.
+
+Par exemple pour reprojeter les données en Lambert 93 :
 
 ```xml
-<OGRVRTDataSource>
-    <OGRVRTLayer name="adresses-33">
-        <SrcDataSource relativeToVRT="0" >/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz</SrcDataSource>
-        <GeometryType>wkbPoint</GeometryType>
-        <LayerSRS>EPSG:4326</LayerSRS>
-        <GeometryField encoding="PointFromColumns" x="lon" y="lat"/>
-        <Field name="id" />
-        <Field name="id_fantoir" />
-        <Field name="numero" type="integer" />
-        <Field name="rep" />
-        <Field name="nom_voie" />
-        <Field name="code_postal" />
-        <Field name="code_insee" />
-        <Field name="nom_commune" />
-        <Field name="code_insee_ancienne_commune" />
-        <Field name="nom_ancienne_commune" />
-        <Field name="alias" />
-        <Field name="nom_ld" />
-        <Field name="libelle_acheminement" />
-        <Field name="nom_afnor" />
-        <Field name="source_position" />
-        <Field name="source_nom_voie" />
-        <OpenOptions>
-            <OOI key="AUTODETECT_TYPE">YES</OOI>
-            <OOI key="AUTODETECT_WIDTH">YES</OOI>
-        </OpenOptions>
-    </OGRVRTLayer>
-</OGRVRTDataSource>
+    <OGRVRTWarpedLayer>
+        <OGRVRTLayer name="adresses-33">
+            [...]
+        </OGRVRTLayer>
+        <TargetSRS>EPSG:2154</TargetSRS>
+    </OGRVRTWarpedLayer>
+        <OGRVRTWarpedLayer>
+        <OGRVRTLayer name="adresses-40">
+            [...]
+        </OGRVRTLayer>
+        <TargetSRS>EPSG:2154</TargetSRS>
+    </OGRVRTWarpedLayer>
 ```
 
-## Un petit CSVT pour la route
+La commande `ogr2ogr` deviant alors :
+
+```bash
+ogr2ogr \
+    -f GPKG \
+    ban.gpkg \
+    ban.vrt
+```
+
+### BALance ton fichier VRT
+
+> TO DOC
+
+----
+
+## Aller plus loin
+
+### Un petit CSVT pour la route
 
 ![icône CSV](https://cdn.geotribu.fr/img/logos-icones/divers/csv.png "icône CSV - CSV File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
 
@@ -370,7 +386,7 @@ Par exemple, si comme moi vous utilisez Visual Studio Code, vous pouvez profiter
 
 ![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }
 
-Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. Qu'en pensez-vous ? On pourrait le suggérer aux équipes Etalab/ANCT et/ou à l'AITF ?
+Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. On pourrait le suggérer aux équipes Etalab/ANCT et/ou à l'AITF. Qu'en pensez-vous ?
 
 ----
 
