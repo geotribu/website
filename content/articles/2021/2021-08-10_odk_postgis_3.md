@@ -216,7 +216,7 @@ Nous n'entrons pas dans les détails ici mais voici quelques discussions sur le 
 
 - [faciliter la collecte de données basée sur des entités (traduction litérale)](https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353)
 - [pouvoir interragir avec la couche vecteur utilisée en référence](https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/15)
-- et les [cas d'utilistaions listés par Daniel Joseph](https://docs.google.com/document/d/18ICz7gziV-8uiwy_lMDQ5PM_dD_fBmlcJKG_UJsMNUA/edit#heading=h.sil54e9hyeu) (aka [danbjoseph](https://forum.getodk.org/u/danbjoseph/summary) ), membre tu TAB qui déploie ODK à la Croix Rouge Internationale 
+- et les [cas d'utilistaions listés par Daniel Joseph](https://docs.google.com/document/d/18ICz7gziV-8uiwy_lMDQ5PM_dD_fBmlcJKG_UJsMNUA/edit#heading=h.sil54e9hyeu) (aka [danbjoseph](https://forum.getodk.org/u/danbjoseph/summary) ), membre tu TAB qui déploie ODK à la Croix Rouge Internationale
 
 ### Concernant Central
 
@@ -227,7 +227,7 @@ La possibilité de filtrer les données par date de soumission ne s'applique pou
 Cela ne pose pas de souci fonctionnel mais entraîne inutilement des flux de données au volume toujours croissant pour les tables secondaires (les emplacements et les observations dans notre exemple) qui sont en outre par définition les plus volumineuses.
 Une [demande de fonctionnalité](https://forum.getodk.org/t/propagate-submission-date-to-child-tables/34349) a été faite pour que la date de soumission des données soit propagée aux tables filles et utilisable dans les filtres.
 
-Les fonctionnalités futures d'ODK Central sont listées ici, ainsi que celles déjà supportées et celles qui ne le seront jamais : https://forum.getodk.org/t/whats-coming-in-central-over-the-next-few-years/19677proposées ou prévues pour les prochaines années 
+Les fonctionnalités futures d'ODK Central sont listées ici, ainsi que celles déjà supportées et celles qui ne le seront jamais : https://forum.getodk.org/t/whats-coming-in-central-over-the-next-few-years/19677proposées ou prévues pour les prochaines années
 
 ## Conclusion
 ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales sont :
