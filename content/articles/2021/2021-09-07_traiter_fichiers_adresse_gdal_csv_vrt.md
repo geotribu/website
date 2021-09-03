@@ -4,7 +4,7 @@ authors: ["Julien MOURA"]
 categories: ["article", "tutoriel"]
 date: "2021-09-07 10:20"
 description: "Travailler les données de la Base Adresse Nationale (BAN) avec GDAL/OGR."
-image: ""
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png"
 license: beerware
 tags: "GDAL,OGR,CSV,Adresse,BAL,BAN"
 ---
@@ -23,20 +23,19 @@ Prérequis :
 
 ![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-rdp-news-thumb }
 
-On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années. Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressés avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](/?q=adress).
+On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années. Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressé avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](/?q=adress).
 
-Dans ce tutoriel, je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différents étapes:
+Dans ce tutoriel, je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes:
 
 1. télécharger les données
 2. les décompresser
 3. les analyser
-4. les convertir et intégrer
+4. les convertir et intégrer dans notre format préféré (ici le GeoPackage)
 
-Pour les besoins de ce tutoriel, on va utiliser les données du plus grand département de France métropolitaine, [la Gironde](https://fr.wikipedia.org/wiki/Gironde_(d%C3%A9partement)) dont la dernière version des données de la base adresses est : <https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz>.
+Pour les besoins de ce tutoriel, on va utiliser les données du plus grand département de France métropolitaine, [la Gironde](https://fr.wikipedia.org/wiki/Gironde_(d%C3%A9partement)) dont la dernière version des données de la base adresses est donc : <https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz>.
 
 !!! tip
-    Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier).  
-    Sinon, en PowerShell, remplacez le caractère multi-ligne \\ par `.
+    Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier). Si vous utilisez GDAL avec PowerShell, remplacez le caractère multi-ligne \\ par `.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -85,36 +84,40 @@ INFO: Open of `/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/
 
 Layer name: adresses-33
 Geometry: None
-Feature Count: 775598
+Feature Count: 775577
 Layer SRS WKT:
 (unknown)
-id: String (23.0)
-id_fantoir: String (10.0)
-numero: Integer (4.0)
-rep: String (6.0)
-nom_voie: String (40.0)
-code_postal: Integer (5.0)
-code_insee: Integer (5.0)
-nom_commune: String (19.0)
+id: String (0.0)
+id_fantoir: String (0.0)
+numero: String (0.0)
+rep: String (0.0)
+nom_voie: String (0.0)
+code_postal: String (0.0)
+code_insee: String (0.0)
+nom_commune: String (0.0)
 code_insee_ancienne_commune: String (0.0)
 nom_ancienne_commune: String (0.0)
-x: Real (9.2)
-y: Real (10.2)
-lon: Real (9.6)
-lat: Real (9.6)
+x: String (0.0)
+y: String (0.0)
+lon: String (0.0)
+lat: String (0.0)
 alias: String (0.0)
 nom_ld: String (0.0)
-libelle_acheminement: String (18.0)
-nom_afnor: String (32.0)
-source_position: String (8.0)
-source_nom_voie: String (8.0)
+libelle_acheminement: String (0.0)
+nom_afnor: String (0.0)
+source_position: String (0.0)
+source_nom_voie: String (0.0)
 ```
 
-### Affinons les options
+"Mieux faire n'est pas une option" comme dirait M. Barréda, mon instituteur de CE2. Ah bah ça tombe bien, en parlant d'option...
+
+### Le bal des options
+
+![logo GDAL next](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_next_logo.png "logo GDAL next"){: .img-rdp-news-thumb }
 
 En regardant du côté du [format BAL] qui est bien documenté grâce aux petits soins de l'[AITF] (merci entre autres à Maël Reboux et Chantal Arruti) et de [la documentation GDAL sur les CSV](https://gdal.org/drivers/vector/csv.html#open-options), on peut dès lors améliorer encore un peu les choses :
 
-- demander à GDAL de déterminer les types des différents champs
+- demander à GDAL de déterminer les types et la longueur des différents champs
 - indiquer que la première ligne est un en-tête
 - indiquer les champs à utiliser pour les coordonnées géographiques ([`lat` et `lon` en WGS84](https://github.com/etalab/adresse.data.gouv.fr/blob/master/public/schemas/adresses-csv.md?plain=1#L21-L22)) mais ne pas les garder dans le fichier final
 
@@ -122,7 +125,8 @@ Ce qui donne :
 
 ```bash
 ogrinfo -ro -al -so \
-    -oo AUTODETECT_TYPE=YES -oo AUTODETECT_WIDTH=YES \
+    -oo AUTODETECT_TYPE=YES \
+    -oo AUTODETECT_WIDTH=YES \
     -oo HEADERS=YES \
     -oo X_POSSIBLE_NAMES=lon \
     -oo Y_POSSIBLE_NAMES=lat \
@@ -130,7 +134,7 @@ ogrinfo -ro -al -so \
     /vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz
 ```
 
-On a donc gagné le type de géométrie et les types des attributs :
+On y gagne certes au change...
 
 ```bash hl_lines="5"
 INFO: Open of `/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz'
@@ -138,8 +142,8 @@ INFO: Open of `/vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/
 
 Layer name: adresses-33
 Geometry: Point
-Feature Count: 775598
-Warning 1: Value with a width greater than field width found in record 13777 for field nom_voie. This warning will no longer be emitted
+Feature Count: 775577
+Warning 1: Value with a width greater than field width found in record 11503 for field nom_voie. This warning will no longer be emitted
 Extent: (-1.256226, 44.202126) - (0.312561, 45.570345)
 Layer SRS WKT:
 (unknown)
@@ -163,23 +167,28 @@ source_position: String (8.0)
 source_nom_voie: String (8.0)
 ```
 
-On peut même convertir tout cela à la volée :
+... mais on s'aperçoit que les types de champs ne sont pas corrects. Par exemple, les champs `code_insee_*` devraient être de type `String` et non `Integer`. De même, les longueurs de champs sont trop liées à ce jeu de données et lèvent des avertissements (ligne 6).
+
+C'est pas si bloquant et on peut certes convertir tout cela à la volée :
 
 ```bash
 ogr2ogr \
-  -f GPKG \
-  -t_srs 'EPSG:2154' \
-  -nln "gironde" \
-  -oo AUTODETECT_TYPE=YES -oo AUTODETECT_WIDTH=YES \
-  -oo HEADERS=YES \
-  -oo X_POSSIBLE_NAMES=lon \
-  -oo Y_POSSIBLE_NAMES=lat \
-  -oo KEEP_GEOM_COLUMNS=NO \
-  ban.gpkg \
-  /vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz
+    -f GPKG \
+    -s_srs 'EPSG:4326' \
+    -t_srs 'EPSG:2154' \
+    -nln "gironde" \
+    -oo AUTODETECT_TYPE=YES \
+    -oo HEADERS=YES \
+    -oo X_POSSIBLE_NAMES=lon \
+    -oo Y_POSSIBLE_NAMES=lat \
+    -oo KEEP_GEOM_COLUMNS=NO \
+    ban.gpkg \
+    /vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz
 ```  
 
-Mais on s'aperçoit que les types de champs ne sont pas corrects. Par exemple, le champ `code_insee` devrait être de type `String` et non `Integer`.
+Mais on est là pour automatiser, pas pour se rajouter du travail post-traitement rébarbatif !
+
+----
 
 ## Le format virtuel de GDAL à la rescousse
 
@@ -340,7 +349,9 @@ Si la ligne de commande vous effraie, il y a aussi des outils disponibles en lig
 
 ## Conclusion
 
-En rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. Qu'en pensez-vous ?
+![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }
+
+Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. Qu'en pensez-vous ? On pourrait le suggérer aux équipes Etalab/ANCT et/ou à l'AITF ?
 
 ----
 
@@ -349,6 +360,12 @@ En rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux
 --8<-- "content/team/jmou.md"
 
 {% include "licenses/beerware.md" %}
+
+## Crédits
+
+- nouveau logo GDAL proposé sur ce [ticket GitHub](https://github.com/OSGeo/gdal/issues/2117)
+- illustration de [GDAL issue du T-Shirt](https://teespring.com/gdal) par [Joe Morisson](https://twitter.com/mouthofmorrison/status/1326556800997527557?lang=fr)
+- [balle de tennis](https://fr.wikipedia.org/wiki/Balle#/media/Fichier:Tennis_ball.svg) de MesserWoland, [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons
 
 <!-- Hyperlinks reference -->
 [AITF]: https://www.aitf.fr/
