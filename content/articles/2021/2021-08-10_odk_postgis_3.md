@@ -2,7 +2,7 @@
 ltitle: "Open Data Kit pour la collecte de données géographiques dans PostGIS (3/3)"
 authors: ["Mathieu BOSSAERT"]
 categories: ["article"]
-date: "2021-08-31 10:20"
+date: "2021-09-14 10:20"
 description: "Troisième et dernier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_and_postgresql.png"
 tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
@@ -11,7 +11,7 @@ tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 
 # ODK pour la collecte de données géo dans PostGIS (3/3)
 
-:calendar: Date de publication initiale : 31 aout 2021
+:calendar: Date de publication initiale : 14 septembre 2021
 
 **Mots-clés :** ODK | PostgresSQL | PostGIS | PL/pgSQL | Android
 
@@ -23,7 +23,7 @@ tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 {: align=middle }
 
 [1ère partie : Introduction à ODK :fontawesome-solid-fast-backward:](https://static.geotribu.fr/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
-[2ème partie : Exemple de mise en œuvre d'ODK avec notre formulaire principal :fontawesome-solid-step-backward:](https://static.geotribu.fr/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+[2ème partie : Exemple de mise en œuvre au CEN :fontawesome-solid-step-backward:](https://static.geotribu.fr/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
 
 ## Différents silos possibles
 
