@@ -5,7 +5,7 @@ categories: ["article", "tutoriel"]
 date: "2021-09-07 10:20"
 description: "Travailler les données de la Base Adresse Nationale (BAN) avec GDAL/OGR."
 image: ""
-license: default
+license: beerware
 tags: "GDAL,OGR,CSV,Adresse,BAL,BAN"
 ---
 
@@ -350,7 +350,7 @@ En rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux
 
 --8<-- "content/team/jmou.md"
 
-{% include "licenses/default.md" %}
+{% include "licenses/beerware.md" %}
 
 <!-- Hyperlinks reference -->
 [AITF]: https://www.aitf.fr/
