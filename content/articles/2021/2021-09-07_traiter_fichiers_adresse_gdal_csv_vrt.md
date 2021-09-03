@@ -25,7 +25,7 @@ Prérequis :
 
 On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années. Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressé avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](/?q=adress).
 
-Dans ce tutoriel, je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes :
+Après que [Michaël Galien ait proposé une méthode avec sa bibliothèque PowerShell](/articles/2021/2021-05-25_biblio_powershell_si3p0/#cas-dusage-traitement-automatise-de-la-ban), je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes :
 
 1. télécharger les données
 2. les décompresser
