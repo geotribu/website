@@ -169,7 +169,7 @@ source_nom_voie: String (8.0)
 
 ... mais on s'aperçoit que les types de champs ne sont pas corrects. Par exemple, les champs `code_insee_*` devraient être de type `String` et non `Integer`. De même, les longueurs de champs sont trop liées à ce jeu de données et lèvent des avertissements (ligne 6).
 
-C'est pas si bloquant et on peut certes convertir tout cela à la volée :
+Notez que ça n'est pas bloquant, même pour la conversion :
 
 ```bash
 ogr2ogr \
@@ -186,13 +186,15 @@ ogr2ogr \
     /vsigzip//vsicurl/https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz
 ```  
 
-Mais on est là pour automatiser, pas pour se rajouter du travail post-traitement rébarbatif !
+Mais on est là pour automatiser et ce serait quand même BALlot de se rajouter du travail post-traitement rébarbatif !
 
 ----
 
 ## Le format virtuel de GDAL à la rescousse
 
 ![logo BAL](https://cdn.geotribu.fr/img/logos-icones/divers/bal.png "logo BAL"){: .img-rdp-news-thumb }
+
+
 
 On peut alors se créer un  fichier VRT qui va bien `adresses.vrt` :
 
@@ -209,7 +211,7 @@ On peut alors se créer un  fichier VRT qui va bien `adresses.vrt` :
         <Field name="rep" />
         <Field name="nom_voie" />
         <Field name="code_postal" />
-        <Field name="code_insee" />
+        <Field name="code_insee" type="string" />
         <Field name="nom_commune" />
         <Field name="code_insee_ancienne_commune" />
         <Field name="nom_ancienne_commune" />
@@ -345,6 +347,23 @@ Si la ligne de commande vous effraie, il y a aussi des outils disponibles en lig
 [CSVT Generator :fontawesome-solid-tools:](https://loicbcn.github.io/csvtgenerator/){: .md-button }
 {: align=middle }
 
+### Utiliser le XSD pour valider le schéma
+
+![icône XML](https://cdn.geotribu.fr/img/logos-icones/divers/xml.png "icône XML - XML File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
+
+Comme indiqué dans la documentation, le [schéma du format VRT est défini par un XSD](https://github.com/OSGeo/gdal/blob/master/gdal/data/ogrvrt.xsd) ([XML Schema Definition](https://fr.wikipedia.org/wiki/XML_Schema)) qu'il peut être utile d'indiquer dans l'espace de nommage :
+
+```xml
+<OGRVRTDataSource
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/gdal/data/ogrvrt.xsd"
+    >
+```
+
+Par exemple, si comme moi vous utilisez Visual Studio Code, vous pouvez profiter de l'auto-complétion et de la validation via une extension comme [XML Complete](https://marketplace.visualstudio.com/items?itemName=rogalmic.vscode-xml-complete) :
+
+![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }
+
 ----
 
 ## Conclusion
@@ -366,6 +385,7 @@ Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'inté
 - nouveau logo GDAL proposé sur ce [ticket GitHub](https://github.com/OSGeo/gdal/issues/2117)
 - illustration de [GDAL issue du T-Shirt](https://teespring.com/gdal) par [Joe Morisson](https://twitter.com/mouthofmorrison/status/1326556800997527557?lang=fr)
 - [balle de tennis](https://fr.wikipedia.org/wiki/Balle#/media/Fichier:Tennis_ball.svg) de MesserWoland, [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons
+- icônes [CSV](https://thenounproject.com/term/csv-file/3148375 ) et [XML](https://thenounproject.com/term/xml/3148395) de Eucalyp from the Noun Project
 
 <!-- Hyperlinks reference -->
 [AITF]: https://www.aitf.fr/
