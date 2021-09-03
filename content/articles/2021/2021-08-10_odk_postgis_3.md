@@ -33,7 +33,7 @@ Les données collectées avec les formulaires peuvent être envoyées à différ
 * Central (détaillé plus bas)
 * [Google sheet](https://docs.getodk.org/collect-connect-google/)
 
-ou récupérées directement sur le téléphone connecté à un ordinateur avec 
+ou récupérées directement sur le téléphone connecté à un ordinateur avec
 
 * https://docs.getodk.org/briefcase-intro/
 
@@ -73,7 +73,7 @@ Comme Aggregate, Central s'appuie sur une base de données PostgreSQL.
 
 ## Intégration des données au SI(G) du CEN (BDD PostGIS)
 
-Aggregate, qui était le serveur proposé avant Central, créait pour chaque formulaire qu'il servait des tables dédiées pour accueillir les données. 
+Aggregate, qui était le serveur proposé avant Central, créait pour chaque formulaire qu'il servait des tables dédiées pour accueillir les données.
 Une table pour les paramètres communs à chaque session et des tables filles pour chaque répétition. Cela se traduisait dans notre cas par une table **sicen_core**, une table **sicen_emplacments** et une table **sicen_observations** . Chaque enregistrement de la table des observations faisait référence à un enregistrement de la table des emplacements, et chaque emplacement faisait référence à un enregistrement de la table "racine".
 
 Il était ainsi très facile d'exploiter les données consolidées dans Aggregate dans notre système d'information construit sur PostgreSQL, en utilisant les outils fournis par la base de données :
@@ -106,7 +106,7 @@ CREATE VIEW odk_central.obs_sicen2020 AS
             "xmltable".nom_observateur,
             "xmltable".mail_observateur,
             ....
-   
+
 ```
 
 Cette méthode d'accès aux données n'est cependant [pas conseillée, à juste titre, par l'équipe de développement](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102/2?u=mathieubossaert) qui ne guarantit pas que le modèle de données n'évoluera pas dans le temps, contrairement à l'API qui est stable et normalisée.
@@ -115,7 +115,7 @@ Par ailleurs, l'exploitation du XML, bien que très efficace dans PostgreSQL n'e
 
 ### Utilisation de l'extension pgsql_http
 
-Ne souhaitant pas passer par un outil tiers, de type ETL (Extract Transform and Load, [voir le travail décrit par Dave Henry avec Kettle](https://forum.getodk.org/t/automating-data-delivery-using-the-odata-endpoint-in-odk-central/22010)) pour réaliser cette tâche, une seconde voie a consisté à utiliser l'extension [pgsql_http](https://github.com/pramsey/pgsql-http) développée par Paul Ramsey. Cela m'a conforté dans l'idée que l'exploitation du json dans postgreSQL est beaucoup plus aisée que celle du xml. 
+Ne souhaitant pas passer par un outil tiers, de type ETL (Extract Transform and Load, [voir le travail décrit par Dave Henry avec Kettle](https://forum.getodk.org/t/automating-data-delivery-using-the-odata-endpoint-in-odk-central/22010)) pour réaliser cette tâche, une seconde voie a consisté à utiliser l'extension [pgsql_http](https://github.com/pramsey/pgsql-http) développée par Paul Ramsey. Cela m'a conforté dans l'idée que l'exploitation du json dans postgreSQL est beaucoup plus aisée que celle du xml.
 
 Cette méthode est présentée [ici](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102/6?u=mathieubossaert) .
 
@@ -162,7 +162,7 @@ COPY FROM program...
 Le programme dont le résultat sera utilisé par *COPY FROM* sera un appel [curl](https://curl.se) à l'API de Central.
 Les données reçues seront toujours du JSON, que nous savons maintenant exploiter.
 
-Restait à automatiser le tout pour ne pas devoir tout refaire à chaque nouveau formulaire. 
+Restait à automatiser le tout pour ne pas devoir tout refaire à chaque nouveau formulaire.
 
 L'idée générale était la suivante :
 
@@ -171,7 +171,7 @@ L'idée générale était la suivante :
 - Créer **automatiquement** les tables de destination dans PostgreSQL
 - Lancer cette tâche à intervalle régulier pour récupérer rapidement en base, les données du terrain (30' actuellement) et les mettre à disposition dans nos outils
 
-Deux ressources ont été déterminantes : 
+Deux ressources ont été déterminantes :
 
 - https://postgresql.verite.pro/blog/2018/06/19/crosstab-pivot.html par Daniel Verité
 - https://stackoverflow.com/questions/50837548/insert-into-fetch-all-from-cant-be-compiled/52889381#52889381 par Evgeny Nozdrev
@@ -185,7 +185,7 @@ SELECT odk_central.odk_central_to_pg(
 	'me@mydomain.org',			-- user
 	'PassW0rd',				-- password
 	'my_central_server.org',		-- central FQDN
-	2, 					-- the project id, 
+	2, 					-- the project id,
 	'my_form_about_birds',			-- form ID
 	'odk_data',				-- schema where to creta tables and store data
 	'point_auto,point,ligne,polygone'	-- columns to ignore in json transformation to database attributes (geojson fields of GeoWidgets)
@@ -212,7 +212,7 @@ Et à l'appel suivant (tâche cron) :
 
 La gestion de campagne d'enquêtes complexes, non "linéaires" et l'amélioration des widgets géographiques sont des sujets discutés actuellement au sein du TAB et de l'équipe.
 
-Nous n'entrons pas dans les détails ici mais voici quelques liens pour en savoir plus sur le forum d'ODK : 
+Nous n'entrons pas dans les détails ici mais voici quelques liens pour en savoir plus sur le forum d'ODK :
 
 - https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353
 - https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/15
@@ -247,7 +247,7 @@ ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales s
 ![Portrait Mathieu Bossaert](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/mb.jpeg "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
 
 Aprés des études de biologie, d'écologie, et d'informatique, j'ai intégré le CEN en 2003 pour y occuper le poste de gestionnaire de bases de données, et suis devenu "géomaticien" par extension.
-                                                                                                           
+
 J'y suis désormais co-responsable de la "Geomateam" qui compte 5 personnes, pas toutes à temps plein sur la thématique, au sein d'une équipe "Occitane" de 80 salariés, répartis sur 14 sites.
 
 PostgreSQL est le pilier structurant de notre SI depuis 2006. Les besoins de la structure ont évolué avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers [GeoRezo](https://georezo.net) notamment, n'ont jamais été avares de conseils.
