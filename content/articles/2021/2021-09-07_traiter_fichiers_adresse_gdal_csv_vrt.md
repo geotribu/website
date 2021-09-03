@@ -41,9 +41,7 @@ Pour les besoins de ce tutoriel, on va utiliser les données du plus grand dépa
 
 ----
 
-## Télécharger et décompresser
-
-### La magie du VSI
+## La magie du système virtuel de GDAL (VSI)
 
 ![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
 
@@ -192,13 +190,15 @@ Mais on est là pour automatiser et ce serait quand même BALlot de se rajouter 
 
 ----
 
-## Le format virtuel de GDAL (VRT)
+## Le tout-en-un du format virtuel de GDAL (VRT)
 
 ![logo BAL](https://cdn.geotribu.fr/img/logos-icones/divers/bal.png "logo BAL"){: .img-rdp-news-thumb }
 
 Bien connu des habitués de GDAL, le format virtuel (les fichiers `*.vrt`), présent dès les premières versions, sert notamment pour le mosaïquage de rasters mais aussi la définition d'un jeu de données à partir de plusieurs sources et paramètres. C'est cet aspect qui nous intéresse ici.
 
 Ni plus ni moins qu'[un fichier XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language), il faut considérer un fichier VRT comme un fichier de configuration de GDAL qui définit les sources de données (*datasource*), les couches (*layers*), les champs (*fields*), les éventuels filtres ou opérations intermédiaires en SQL, les options de lecture (l'équivalent de `-OO`) et les options de sortie (l'équivalent de `-CO`).
+
+Bref, ça permet de tout faire.
 
 ### Un VRT pour les données de la BAN
 
@@ -239,6 +239,18 @@ Voici mes choix :
 - supprimer les champs des coordonnées géographiques (`x`, `y` et `lon`, `lat`)
 - forcer les types des champs `code_insee_*` et `code_postal` à `String`
 - spécifier la longueur des champs quand c'était possible
+
+#### Utiliser le fichier VRT
+
+Il suffit de passer le fichier VRT en paramètre comme jeu de données en entrée. Par exemple pour une conversion en GeoPackage et une reprojection en [Lambert 93](https://fr.wikipedia.org/wiki/Lambert_93) :
+
+```bash
+ogr2ogr \
+    -f GPKG \
+    -t_srs 'EPSG:2154' \
+    ban.gpkg \
+    ban.vrt
+```
 
 #### Combiner plusieurs départements
 
@@ -295,21 +307,11 @@ Si on veut combiner les données d'un autre département, il suffit de dupliquer
 </OGRVRTDataSource>
 ```
 
-### Utiliser le fichier VRT
-
-Il suffit de passer le fichier VRT en paramètre comme jeu de données en entrée. Par exemple pour une conversion en GeoPackage et une reprojection en [Lambert 93](https://fr.wikipedia.org/wiki/Lambert_93) :
-
-```bash
-ogr2ogr \
-    -f GPKG \
-    -t_srs 'EPSG:2154' \
-    ban.gpkg \
-    ban.vrt
-```
-
 ### Indiquer la reprojection dans le VRT
 
-Comme dit plus haut, j'ai voulu que mes fichiers VRT soient le plus génériques possibles et j'ai donc opté pour les champs `lat` et `lon` en WGS 84. Ainsi, il suffit juste de changer le nom et la source.
+![logo projection](https://cdn.geotribu.fr/img/logos-icones/divers/projection.png "logo projection"){: .img-rdp-news-thumb }
+
+Comme dit plus haut, j'ai voulu que mes fichiers VRT soient le plus génériques possibles et j'ai donc opté pour utiliser les champs `lat` et `lon` qui référencent les coordonnées en WGS 84. Ainsi, pour adapter les fichiers à d'autres départements, il suffit juste de changer le nom et la source.
 
 Si vous utilisez toujours la même projection finale, il est possible de spécifier la reprojection des données dans le VRT en encadrant chaque source par l'élément `OGRVRTWarpedLayer` et en précisant le système de coordonnées désiré `TargetSRS`.
 
@@ -317,13 +319,13 @@ Par exemple pour reprojeter les données en Lambert 93 :
 
 ```xml
     <OGRVRTWarpedLayer>
-        <OGRVRTLayer name="adresses-33">
+        <OGRVRTLayer name="gironde">
             [...]
         </OGRVRTLayer>
         <TargetSRS>EPSG:2154</TargetSRS>
     </OGRVRTWarpedLayer>
         <OGRVRTWarpedLayer>
-        <OGRVRTLayer name="adresses-40">
+        <OGRVRTLayer name="landes">
             [...]
         </OGRVRTLayer>
         <TargetSRS>EPSG:2154</TargetSRS>
@@ -352,7 +354,9 @@ ogr2ogr \
 ![icône CSV](https://cdn.geotribu.fr/img/logos-icones/divers/csv.png "icône CSV - CSV File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
 
 Tant qu'on y est, autant capitaliser sur ce travail pour faciliter les choses aux outils qui tirent parti des fichiers de définition des types de champs : les fichiers CSVT.  
-C'est en tout cas utilisé par QGIS (voir [la doc officielle](https://docs.qgis.org/3.16/fr/docs/user_manual/managing_data_source/supported_data.html#using-csvt-file-to-control-field-formatting) et [ce billet de blog d'Anita Graser](https://anitagraser.com/2011/03/07/how-to-specify-data-types-of-csv-columns-for-use-in-qgis/))
+C'est en tout cas utilisé par QGIS (voir [la doc officielle](https://docs.qgis.org/3.16/fr/docs/user_manual/managing_data_source/supported_data.html#using-csvt-file-to-control-field-formatting) et [ce billet de blog d'Anita Graser](https://anitagraser.com/2011/03/07/how-to-specify-data-types-of-csv-columns-for-use-in-qgis/)).
+
+Voici pour la BAN :
 
 ```csv
 "String","String","Integer","String","String","String","String","String","String","String","Real","Real","Real","Real","String","String","String","String","String","String"
