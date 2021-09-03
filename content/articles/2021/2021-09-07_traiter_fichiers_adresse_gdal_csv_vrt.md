@@ -340,8 +340,6 @@ Si la ligne de commande vous effraie, il y a aussi des outils disponibles en lig
 
 ## Conclusion
 
-
-
 En rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. Qu'en pensez-vous ?
 
 ----
