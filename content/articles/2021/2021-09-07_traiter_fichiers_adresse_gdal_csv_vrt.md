@@ -34,7 +34,7 @@ Après que [Michaël Galien ait proposé une méthode avec sa bibliothèque Powe
 Pour les besoins de ce tutoriel, on va utiliser les données du plus grand département de France métropolitaine, [la Gironde](https://fr.wikipedia.org/wiki/Gironde_(d%C3%A9partement)) dont la dernière version des données de la base adresses est donc : <https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz>.
 
 !!! tip
-    Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier). Si vous utilisez GDAL avec PowerShell, remplacez le caractère multi-ligne \\ par `.
+    Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier). Si vous utilisez GDAL sur Windows avec PowerShell, remplacez le caractère multi-ligne \\ par `.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
