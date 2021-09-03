@@ -208,17 +208,17 @@ Et à l'appel suivant (tâche cron) :
 
 ## Perspectives
 
-### Coté ODK Collect / formulaires / "workflow"
+### Concernant ODK Collect, les formulaires et les "workflow"
 
-La gestion de campagne d'enquêtes complexes, non "linéaires" et l'amélioration des widgets géographiques sont des sujets discutés actuellement au sein du TAB et de l'équipe.
+La gestion de campagne d'enquêtes complexes, non "linéaires" et l'amélioration des fonctionnalités cartographiques sont des sujets discutés actuellement au sein du TAB et de l'équipe.
 
-Nous n'entrons pas dans les détails ici mais voici quelques liens pour en savoir plus sur le forum d'ODK :
+Nous n'entrons pas dans les détails ici mais voici quelques discussions sur le forum d'ODK :
 
-- https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353
-- https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/15
-- https://forum.getodk.org/t/ability-to-load-locations-into-the-geowidget-to-guide-data-collection/27406/10
+- [faciliter la collecte de données basée sur des entités (traduction litérale)](https://forum.getodk.org/t/entity-based-data-capture-workflow-site-based-survey-with-opportunistic-encounters/33353)
+- [pouvoir interragir avec la couche vecteur utilisée en référence](https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/15)
+- et les [cas d'utilistaions listés par Daniel Joseph](https://docs.google.com/document/d/18ICz7gziV-8uiwy_lMDQ5PM_dD_fBmlcJKG_UJsMNUA/edit#heading=h.sil54e9hyeu) (aka [danbjoseph](https://forum.getodk.org/u/danbjoseph/summary) ), membre tu TAB qui déploie ODK à la Croix Rouge Internationale 
 
-### Coté Central
+### Concernant Central
 
 En mai est sortie la version 1.2 de Central, avec de nouvelles fonctionnalités de gestion des utilisateurs et des projets, des données reçues... mais aussi, coté API, la possibilité de récupérer les données "jointes" avec [l'option $expand](https://forum.getodk.org/t/extend-api-to-retrieve-plain-json/32204) et l'espoir de pouvoir ne demander à Central que les données récentes.
 Cette amélioration, répond en théorie à notre envie de ne rapatrier que les données récemment acquises, mais il s'avère que le json reçu est beaucoup plus difficile à exploiter de manière générique.
@@ -227,13 +227,15 @@ La possibilité de filtrer les données par date de soumission ne s'applique pou
 Cela ne pose pas de souci fonctionnel mais entraîne inutilement des flux de données au volume toujours croissant pour les tables secondaires (les emplacements et les observations dans notre exemple) qui sont en outre par définition les plus volumineuses.
 Une [demande de fonctionnalité](https://forum.getodk.org/t/propagate-submission-date-to-child-tables/34349) a été faite pour que la date de soumission des données soit propagée aux tables filles et utilisable dans les filtres.
 
+Les fonctionnalités futures d'ODK Central sont listées ici, ainsi que celles déjà supportées et celles qui ne le seront jamais : https://forum.getodk.org/t/whats-coming-in-central-over-the-next-few-years/19677proposées ou prévues pour les prochaines années 
+
 ## Conclusion
 ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales sont :
 
 - la solution s'intègre très facilement dans notre SI bâti sur PostgreSQL, c'était le cas avec Aggregate et ça l'est toujours avec Central et son API OData,
 - nous n'avons pas à développer d'application mobile dédiée à chaque protocole. Quand bien même nous le pourrions, quel sens cela aurait-il ?
 - nous pouvons à la place prendre le temps de transposer nos protocoles de collecte de données dans XLSForm pour en faire des formulaires efficaces servis par une application robuste.
-- une connaissance minimale est nécessaire pour créer un formulaire. Si vous connaissez votre protocole, vous pouvez le transposer en XLSform, dans les limites (sans cesse repoussées) des possibilités d'ODK.
+- une connaissance minimale est nécessaire pour créer un formulaire. Si vous connaissez votre protocole, vous pouvez le transposer en XLSform, dans les limites (régulièrement repoussées) des possibilités d'ODK.
 - la faciliter d'adaptation de formulaires existant pour de nouveaux besoins
 - la facilité de partage et d'adaptation de ces formulaires à d'autres protocoles
 - et peut-être avant tout sa communauté d'utilisateurs et de développeurs
