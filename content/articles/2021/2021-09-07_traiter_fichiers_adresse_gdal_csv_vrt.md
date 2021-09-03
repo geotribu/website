@@ -387,6 +387,10 @@ ogr2ogr \
     bal.vrt
 ```
 
+Après tout ce travail, on vérifie le rendu et la structure des données dans notre SIG préféré :
+
+[![QGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "QGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Rendu final des donnés BAN et BAL" }
+
 ----
 
 ## Aller plus loin
@@ -425,19 +429,19 @@ Comme indiqué dans la documentation, le [schéma du format VRT est défini par 
 
 Par exemple, si comme moi vous utilisez Visual Studio Code, vous pouvez profiter de l'auto-complétion et de la validation via une extension comme [XML Complete](https://marketplace.visualstudio.com/items?itemName=rogalmic.vscode-xml-complete) :
 
-![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }
+[![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png){: data-mediabox="lightbox-gallery" data-title="Visual Studio Code - XML Complete" }
 
 ----
 
 ## Conclusion
 
-![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }
+[![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png){: data-mediabox="lightbox-gallery" data-title="GDAL c'est de la BAL" }
 
 Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. On pourrait le suggérer aux équipes Etalab/ANCT et/ou à l'AITF. Qu'en pensez-vous ?
 
-Par ailleurs, n'étant pas non plus un spécialiste des données d'adressage, si vous pensz pouvoir améliorer ces fichiers, n'hésitez pas à faire vos remarques en commentaire !
+Par ailleurs, n'étant pas non plus un spécialiste des données d'adressage, si vous pensez pouvoir améliorer ces fichiers VRT et/ou CSVT, n'hésitez pas à faire vos remarques en commentaire !
 
-Enfin, si la ligne de commande vous effraie, il y a aussi des outils disponibles en ligne bien pratiques CSVT Generator (qui créent aussi le VRT d'ailleurs) :
+Enfin, si la ligne de commande vous effraie, il y a aussi des outils disponibles en ligne bien pratiques, tels CSVT Generator :
 
 [CSVT Generator :fontawesome-solid-tools:](https://loicbcn.github.io/csvtgenerator/){: .md-button }
 {: align=middle }
