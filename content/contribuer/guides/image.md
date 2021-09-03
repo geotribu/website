@@ -100,7 +100,7 @@ Le site intègre la bibliothèque [wa-mediabox](https://github.com/jirihybek/wa-
 
     Donc la structure type est :
 
-    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="ligthbox-gallery" data-title="Légende image"}`
+    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="lightbox-gallery" data-title="Légende image"}`
     ```
 
 === "Rendu"
@@ -115,7 +115,7 @@ Le site intègre la bibliothèque [wa-mediabox](https://github.com/jirihybek/wa-
 
     Donc la structure type est :
 
-    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="ligthbox-gallery" data-title="Légende image"}`
+    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="lightbox-gallery" data-title="Légende image"}`
 
 ### Style personnalisé
 
