@@ -31,10 +31,10 @@ Après que [Michaël Galien ait proposé une méthode avec sa bibliothèque Powe
 2. les décompresser
 3. les convertir et intégrer dans notre format préféré (ici le GeoPackage)
 
-Pour les besoins de ce tutoriel, on va utiliser les données du plus grand département de France métropolitaine, [la Gironde](https://fr.wikipedia.org/wiki/Gironde_(d%C3%A9partement)) dont la dernière version des données de la base adresses est donc : <https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz>.
+Pour les besoins de ce tutoriel, on va utiliser les données du plus grand département de France métropolitaine, [la Gironde](https://fr.wikipedia.org/wiki/Gironde_(d%C3%A9partement)) dont la dernière version des données de la base adresses est donc : <https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz>. Pour ce qui est de la BAL, j'ai opté pour les [données de Bayonne](https://adresse.data.gouv.fr/bases-locales/jeux-de-donnees/5adf405b88ee38303c046910) (:wave: Chantal et Laura).
 
 !!! tip
-    Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier). Si vous utilisez GDAL sur Windows avec PowerShell, remplacez le caractère multi-ligne \\ par `.
+    Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier). Si vous utilisez GDAL sur Windows avec PowerShell, remplacez le caractère multi-ligne \\ (*backslash*) par ` (*backtick*).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -359,10 +359,16 @@ C'est en tout cas utilisé par QGIS (voir [la doc officielle](https://docs.qgis.
 Voici pour la BAN :
 
 ```csv
-"String","String","Integer","String","String","String","String","String","String","String","Real","Real","Real","Real","String","String","String","String","String","String"
+String,String,Integer,String,String,String,String,String,String,String,CoordX,CoordY,CoordX,CoordY,String,String,String,String,String,String
 ```
 
-Si la ligne de commande vous effraie, il y a aussi des outils disponibles en ligne bien pratiques CSVT Generator, qui créent aussi le VRT :
+Et pour la BAL 1.2 :
+
+```csv
+String,String,String,String,String,String,String,String,Integer,String,String,CoordX,CoordY,CoordX,CoordY,String,String,Date
+```
+
+Si la ligne de commande vous effraie, il y a aussi des outils disponibles en ligne bien pratiques CSVT Generator (qui créent aussi le VRT d'ailleurs) :
 
 [CSVT Generator :fontawesome-solid-tools:](https://loicbcn.github.io/csvtgenerator/){: .md-button }
 {: align=middle }
