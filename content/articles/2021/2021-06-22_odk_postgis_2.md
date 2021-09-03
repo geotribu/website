@@ -5,6 +5,7 @@ categories: ["article"]
 date: "2021-06-22 22:50"
 description: "Second article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_and_postgresql.png"
+license: "CC-BY-SA"
 tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 ---
 
@@ -28,9 +29,9 @@ Vous pourrez ensuite récupérer les données collectées avec [Briefcase](https
 
 Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans l'article précédent.
 
-[:fontawesome-solid-step-backward: 1ère partie : Introduction à ODK](/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
+[1 : Introduction à ODK](/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
+[3 : Récupération des données dans notre SI](/articles/2021/2021-09-14_odk_postgis_3/){: .md-button }
 {: align=middle }
-<!-- [3è partie : Récupération des données dans notre SI :fontawesome-solid-step-forward:](#){: .md-button } -->
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }

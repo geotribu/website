@@ -5,6 +5,7 @@ categories: ["article"]
 date: "2021-06-08 10:20"
 description: "Premier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/open_data_kit_postgresql.png"
+license: "CC-BY-SA"
 tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 ---
 
@@ -22,9 +23,9 @@ Ce premier article, introductif, présente le projet ODK, ses outils ainsi que l
 Le second détaillera les possibilités de création de formulaire à travers l'exemple détaillé du formulaire généraliste du [Conservatoire d'Espaces Naturels d'Occitanie].  
 Le dernier sera consacré à la récupération des données collectées dans une base de données PostGIS.
 
-[2ème partie : Création d'un formulaire ODK :fontawesome-solid-step-forward:](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
-<!--[3ème partie : Récupération des données collectées dans notre base de données PostGIS :fontawesome-solid-fast-forward:](#){: .md-button }
-{: align=middle } -->
+[2 : Création d'un formulaire ODK](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+[3 : Récupération des données collectées dans PostGIS](/articles/2021/2021-09-14_odk_postgis_3/){: .md-button }
+{: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
