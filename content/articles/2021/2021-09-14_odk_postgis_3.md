@@ -183,7 +183,7 @@ Deux ressources ont été déterminantes :
 
 Quelques adaptations de ces travaux nous ont permis d'aboutir à une méthode générique et automatique et à la première version d'une "bibliothèque" de fonctions pl/pgsql nommée [central2pg](https://github.com/mathieubossaert/central2pg) présentée ici : <https://forum.getodk.org/t/postgresql-set-of-functions-to-get-data-from-central/33350>
 
-Ce simple appel de function :
+Ce simple appel de fonction :
 
 ```sql
 SELECT odk_central.odk_central_to_pg(
@@ -209,7 +209,7 @@ Et à l'appel suivant (tâche cron) :
 
 * vérifie la présence de nouvelles questions dans le formulaire
 * crée les attributs correspondants le cas échéant
-* insert les nouvelles données
+* insère les nouvelles données
 
 ## Perspectives
 
