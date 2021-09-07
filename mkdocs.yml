@@ -83,6 +83,7 @@ plugins:
         # recent moves
         "acknowledgements.md": "team/index.md"
         "install_webapp.md": "articles/2020/2020-03-20_installer_site_comme_application.md"
+        "interviews/itw_drones_crisis.md": "articles/2014/art_2014-08-29_itw_drones_crisis.md"
 
 # Theme
 theme:
