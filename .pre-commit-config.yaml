@@ -2,11 +2,19 @@
 # See https://pre-commit.com/hooks.html for more hooks
 exclude: "node_modules|migrations|.venv|tests/dev/|tests/fixtures/"
 repos:
-- repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.0.1
-  hooks:
-  - id: check-added-large-files
-  - id: detect-private-key
-  - id: end-of-file-fixer
-  - id: trailing-whitespace
-    args: [--markdown-linebreak-ext=md]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-added-large-files
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+
+# Specific part for https://pre-commit.ci
+ci:
+  autofix_commit_msg: "[pre-commit.ci] auto fixes from pre-commit.com hooks"
+  autofix_prs: true
+  autoupdate_commit_msg: "[pre-commit.ci] pre-commit autoupdate"
+  autoupdate_schedule: monthly
+  submodules: false
