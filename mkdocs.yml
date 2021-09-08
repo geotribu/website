@@ -155,6 +155,9 @@ extra:
     - icon: "fontawesome/brands/slack"
       link: "https://geotribu.slack.com"
       name: "Rejoignez-nous sur Slack"
+    - icon: "fontawesome/solid/feather-alt"
+      link: http://pad.geotribu.fr/
+      name: "Editeur en ligne"
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
@@ -198,8 +201,3 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
-
-# Navigation - Menu organization
-# # Disabled to use auto detection
-# nav:
-#   - Accueil: index.md
