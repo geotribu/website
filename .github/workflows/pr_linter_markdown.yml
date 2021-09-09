@@ -12,6 +12,19 @@ env:
   GITHUB_AUTHOR: ${{ github.actor }}
 
 jobs:
+  lint-markdown-review:
+    name: "🎳 Syntaxe Markdown review"
+    runs-on: ubuntu-latest
+    steps:
+      - name: markdownlint-github-pr-review
+        uses: reviewdog/action-markdownlint@v0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: false
+          filter_mode: diff_context
+          reporter: github-pr-review
+          markdownlint_flags: content/**/*.md
+
   lint-markdown:
     name: "Lint markdown files 🎳"
     runs-on: ubuntu-latest
