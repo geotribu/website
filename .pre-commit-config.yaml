@@ -26,3 +26,14 @@ repos:
             "linter_markdown_report.txt",
           ]
         language_version: "14.17.6"
+
+# Specific part for https://pre-commit.ci
+ci:
+  autofix_commit_msg: "[pre-commit.ci] Corrections automatiques appliquées par les git hooks."
+  autofix_prs: true
+  autoupdate_commit_msg: "[pre-commit.ci] Mise à jour des git hooks."
+  autoupdate_schedule: monthly
+  skip: [
+    "markdownlint"
+  ]
+  submodules: false
