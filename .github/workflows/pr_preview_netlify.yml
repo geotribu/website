@@ -4,7 +4,7 @@ name: "👀 PR Preview"
 
 on:
   workflow_run:
-    workflows: ["Pull Request Checker 🛃"]
+    workflows: ["🛃 Pull Request Checker"]
     types:
       - completed
 

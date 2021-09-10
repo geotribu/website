@@ -1,4 +1,4 @@
-name: "Deploy to Github Pages 🚀"
+name: "🚀 Deploiement"
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   deploy:
-    name: "Deploy website 🚀"
+    name: "🚀 Deploiement GitHub Pages"
 
     runs-on: ubuntu-latest
 

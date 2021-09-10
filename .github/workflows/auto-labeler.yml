@@ -1,4 +1,4 @@
-name: "Pull Request Labeler 🏷"
+name: "🏷 Etiquetage de la Pull Request"
 on:
 - pull_request_target
 
