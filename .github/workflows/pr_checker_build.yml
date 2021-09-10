@@ -51,21 +51,7 @@ jobs:
           python -m pip install -U pip setuptools wheel
           python -m pip install -U -r requirements.txt
 
-      - name: Build in strict mode (no preview)
-        if: "!contains( github.event.pull_request.labels.*.name, 'preview')"
-        env:
-          MKDOCS_SEARCH_PREBUILD_INDEX: node
-        run: |
-          # build
-          mkdocs build --config-file mkdocs.yml --verbose --strict
-
-      # ============================== #
-      # PREVIEW ADDTIONAL STEPS        #
-      # ============================== #
-
-
-      - name: Build in strict mode (to preview on netlify)
-        if: contains( github.event.pull_request.labels.*.name, 'preview')
+      - name: Build in strict mode
         env:
           MKDOCS_SEARCH_PREBUILD_INDEX: node
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
@@ -91,6 +77,7 @@ jobs:
           echo "PR_LABEL_PREVIEW=${{ contains( github.event.pull_request.labels.*.name, 'preview') }}" >> pr.env
           echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
           echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
+          echo "NETLIFY_SITE_NAME=${{ env.NETLIFY_SITE_NAME }}"       >> pr.env
           echo "NETLIFY_SITE_PREFIX=${{ env.NETLIFY_SITE_PREFIX }}"   >> pr.env
           echo "BUILD_DIR=${{ env.BUILD_DIR }}"                       >> pr.env
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
