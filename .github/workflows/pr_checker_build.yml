@@ -56,10 +56,10 @@ jobs:
         env:
           MKDOCS_SEARCH_PREBUILD_INDEX: node
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
-          PREVIEW_URL: "https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
+          PREVIEW_URL: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/
         run: |
           # Adjust mkdocs.yml for preview build
-          sed -i "s|^site_url:.*|site_url: '${PREVIEW_URL}'|" mkdocs.yml
+          sed -i "s|^site_url:.*|site_url: ${PREVIEW_URL} |" mkdocs.yml
 
           # Insert sponsor branding into page content (Provider OSS plan requirement):
           # Upstream does not provide a nicer maintainable way to do this..
@@ -71,6 +71,12 @@ jobs:
 
           # save mkdocs.yml for debug
           cp mkdocs.yml ${{ env.BUILD_DIR }}
+
+          # remove files reserved for production
+          rm ${{ env.BUILD_DIR }}/CNAME
+          rm ${{ env.BUILD_DIR }}/robots.txt
+          rm ${{ env.BUILD_DIR }}/sitemap.xml
+          rm ${{ env.BUILD_DIR }}/sitemap.xml.gz
 
         # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
         # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
