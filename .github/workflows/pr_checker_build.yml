@@ -9,6 +9,7 @@ on:
 # Environment variables
 env:
   BUILD_DIR: build/mkdocs/site
+  NETLIFY_SITE_NAME: geotribu-preprod
   NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
 
 # If the workflow for a PR is triggered multiple times, previous existing runs will be canceled.
@@ -68,13 +69,15 @@ jobs:
           # build
           mkdocs build --config-file mkdocs.yml --verbose --strict
 
+          # save mkdocs.yml for debug
+          cp mkdocs.yml ${{ env.BUILD_DIR }}
+
         # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
         # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
       - name: "Prepare artifact for transfer"
         run: |
           # Save ENV for transfer
           echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
-          echo "PR_LABEL_PREVIEW=${{ contains( github.event.pull_request.labels.*.name, 'preview') }}" >> pr.env
           echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
           echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
           echo "NETLIFY_SITE_NAME=${{ env.NETLIFY_SITE_NAME }}"       >> pr.env
