@@ -1,4 +1,4 @@
-name: "🏷 Etiquetage de la Pull Request"
+name: "🏷 Etiquetage automatisé"
 on:
 - pull_request_target
 
