@@ -17,7 +17,7 @@ Pour les articles, voir : https://static.geotribu.fr/contribuer/workflow_article
 
 ## Prévenir l'équipe
 
-- Informer l'équipe que la prochaine RDP a été initiée en publiant le lien de la PR sur [le canal `#revues-de-presse` de Slack](https://geotribu.slack.com/archives/C010DD7FMEX)
+- [ ] Informer l'équipe que la prochaine RDP a été initiée en publiant le lien de la PR sur [le canal `#revues-de-presse` de Slack](https://geotribu.slack.com/archives/C010DD7FMEX)
 
 ## Encourager les contributions spontanées sur Twitter
 
