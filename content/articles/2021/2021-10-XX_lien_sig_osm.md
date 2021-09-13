@@ -65,7 +65,6 @@ Avant de se lancer, il est bon de paramétrer le fichier de configuration que vo
 
 Voici le fichier config.env à adapter :
 
-
 ```ini
 # REPERTOIRE DE TRAVAIL
 REPER='/Users/'
@@ -107,6 +106,7 @@ Voici les tags à ajouter pour les composteurs :
 # keys to report as OGR fields
 attributes=amenity,recycling:organic
 ```
+
 [Consulter le fichier osmconf.ini :fontawesome-regular-file-code:](https://github.com/OSGeo/gdal/blob/master/gdal/data/osmconf.ini){: .md-button }
 {: align=middle }
 
@@ -162,7 +162,7 @@ UPDATE dechet.composteurs
 SET id_osm = a.id_osm
 FROM (SELECT
   g.id,
-	g.id_osm
+  g.id_osm
    FROM (  SELECT a.id,
             c.id_osm as id_osm,
             round(st_distance(a.geom, c.geom)::numeric) AS distance
