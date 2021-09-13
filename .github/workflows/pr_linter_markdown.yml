@@ -15,6 +15,15 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
+      - name: markdownlint-github-check
+        uses: reviewdog/action-markdownlint@v0.2.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          filter_mode: nofilter
+          level: warning
+          reporter: github-check
+          markdownlint_flags: 'content/**/*.md'
+
       - name: markdownlint-github-pr-review
         uses: reviewdog/action-markdownlint@v0.2.0
         with:
