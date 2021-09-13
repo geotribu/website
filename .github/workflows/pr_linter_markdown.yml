@@ -20,7 +20,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           filter_mode: diff_context
-          level: error
           reporter: github-pr-check
           markdownlint_flags: 'content/**/*.md'
 
@@ -29,4 +28,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
-          # markdownlint_flags: 'content/**/*.md'
+          markdownlint_flags: 'content/**/*.md'
