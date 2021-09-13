@@ -1,4 +1,4 @@
-name: "🛃 Pull Request Checker"
+name: "Pull Request Checker 🛃"
 
 # Inspired from: https://github.com/docker-mailserver/docker-mailserver/blob/master/.github/workflows/docs-preview-prepare.yml
 
