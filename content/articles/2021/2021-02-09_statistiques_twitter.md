@@ -98,6 +98,7 @@ Vous trouverez plus d'informations sur [les fonctions utilisables ici](https://g
 !!! info
     Si vous souhaitez utiliser Twint via un [Jupyter Notebook](https://jupyter.org), il est important d'installer et d'importer la bibliothèque [`nest_asyncio`](https://github.com/erdewit/nest_asyncio).  
 
+    <!-- markdownlint-disable MD046 -->
     ```python
     # Pour l'installer
     pip3 install nest_asyncio
@@ -106,6 +107,7 @@ Vous trouverez plus d'informations sur [les fonctions utilisables ici](https://g
     import nest_asyncio
     nest_asyncio.apply()
     ```
+    <!-- markdownlint-enable MD046 -->
 
 ----
 
