@@ -19,7 +19,5 @@ jobs:
         uses: reviewdog/action-markdownlint@v0.2.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
-          # filter_mode: diff_context
           reporter: github-pr-review
           markdownlint_flags: content/**/*.md
