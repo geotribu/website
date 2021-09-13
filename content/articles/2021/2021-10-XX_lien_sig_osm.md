@@ -31,7 +31,7 @@ A COMPLETER
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
-## Schéma de principe 
+## Schéma de principe
 
 ```mermaid
 graph TD
@@ -42,7 +42,7 @@ graph TD
     C --> J[emprise.shp]
     J --> C
     C --> |Intégration composteurs_osm|E{PostgreSQL<br>PostGIS}
-    E --> G[Table composteurs_osm] 
+    E --> G[Table composteurs_osm]
     H[Table composteurs_sig] ---> E
     G --> |Mise à jour id_osm<br>Point le plus proche dans un rayon de 20m| H
     E -----> I(Vue permettant de visualiser les différences)
@@ -177,12 +177,12 @@ ALTER TABLE dechet.composteurs ENABLE TRIGGER set_timestamp_update;
 
 A ce stade, on peut d'ores et déjà :
 
-- visualiser les composteurs associés ou non à nos données 
+- visualiser les composteurs associés ou non à nos données
 - identifier les contributions que nous devrions réaliser pour enrichir la carte collaborative
 
 !!! tip
     Comme pour le script d'intégration de comporteurs OpenStreetMap, vous pouvez l'automatiser en lançant une commande psql pour que la mise à jour de l'identifiant soit réalisée juste après l'intégration de la donnée.
-    
+
 ### 6. Visualiser les différences entre la donnée OpenStreetMap et les données du SIG
 
 Afin de visualiser plus rapidement, les lacunes de notre SIG et celles d'OpenStreetMap, il est possible de créer une vue dans PostgreSQL afin de catégoriser les actions à réaliser.
@@ -197,7 +197,7 @@ AJOUTER UNE IMAGE
 - En orange : une contribution est nécessaire pour enrichir OpenStreetMap
 - En rouge : La donnée n'existe que dans OpenStreetMap, il faut éventuellemeent aller la contrôler pour l'ajouter à nos données ou la supprimer d'OpenStreetMap si elle n'a plus d'intérêt.
 
-### 7. Edition de la donnée et récupération de l'id_osm à travers un trigger 
+### 7. Edition de la donnée et récupération de l'id_osm à travers un trigger
 
 Vous l'avez compris la mise à jour de notre id_osm ne se fait qu'une fois par jour après l'intégration de la mise à jour de la donnée OpenStreetMap mais pour gérer les actions réalisées sur notre donnée interne nous utilisons un trigger pour mettre à jour l'id_osm si une action est réalisée. Ce trigger utlise la même définition que la requête SQL lancée chaque nuit.
 
