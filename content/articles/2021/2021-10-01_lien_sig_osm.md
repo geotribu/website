@@ -35,16 +35,16 @@ A COMPLETER
 
 ```mermaid
 graph TD;
-    A[Données Geofabrik] --> |Télécharger| B(region.pbf);
+    A[Données Geofabrik] -->|Télécharger| B(region.pbf);
     B --> C{Script ogr2ogr};
     C --> D[config.env];
     D --> C;
     C --> J[emprise.shp];
     J --> C;
-    C --> |Intégration composteurs_osm| E{PostgreSQL<br>PostGIS};
+    C -->|Intégration composteurs_osm| E{PostgreSQL/PostGIS};
     E --> G[Table composteurs_osm];
     H[Table composteurs_sig] ---> E;
-    G --> |Mise à jour id_osm (Proximité)| H;
+    G -->|Mise à jour id_osm (Proximité)| H;
     E -----> I(Vue permettant de visualiser les différences);
 ```
 
