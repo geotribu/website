@@ -21,12 +21,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           filter_mode: nofilter
           level: error
-          reporter: github-check
+          reporter: github-pr-check
           markdownlint_flags: 'content/**/*.md'
 
       - name: markdownlint-github-pr-review
         uses: reviewdog/action-markdownlint@v0.2.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          # filter_mode: nofilter
           reporter: github-pr-review
           markdownlint_flags: 'content/**/*.md'
