@@ -15,13 +15,10 @@ Pour les articles, voir : https://static.geotribu.fr/contribuer/workflow_article
   - [ ] `title` : correspond à ce qui est affiché dans le menu de navigation, l'onglet du navigateur et le SEO. Bien **indiquer l'année** pour améliorer le référencement et en prévision d'une refonte du moteur de rendu.
 - [ ] changer la date du titre principal (en début de contenu). Idem, **indiquer l'année**.
 
-## Prévenir l'équipe
+## Encourager les contributions
 
-- [ ] Informer l'équipe que la prochaine RDP a été initiée en publiant le lien de la PR sur [le canal `#revues-de-presse` de Slack](https://geotribu.slack.com/archives/C010DD7FMEX)
-
-## Encourager les contributions spontanées sur Twitter
-
-Pour encourager les contributions extérieures, il est sympa de tweeter le lien du fichier de la RDP. Voici ci-dessous un modèle dans lequel :
+- [ ] informer l'équipe que la prochaine RDP a été initiée en publiant le lien de la PR sur [le canal `#revues-de-presse` de Slack](https://geotribu.slack.com/archives/C010DD7FMEX)
+- [ ] tweeter le lien du fichier de la RDP. Voici ci-dessous un modèle dans lequel :
 
 - remplacer `XXXXXXXXXX` par le lien vers le fichier de la GeoRDP dans la branche créée (par exemple : <https://github.com/geotribu/website/blob/rdp/2021-02-26/content/rdp/2021/rdp_2021-02-26.md?plain=1>)
 - insérer cette image dans le tweet <https://cdn.geotribu.fr/img/internal/contribution/geotribu_contribuer_rdp_github_edit.png>
@@ -37,7 +34,9 @@ C'est par ici 👉 XXXXXXXXXX 👈
 Modèle de news ici : https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp_news.md
 ```
 
-Exemple tweet : <https://twitter.com/geotribu/status/1364625815099613185>
+Exemple de [tweet](https://twitter.com/geotribu/status/1364625815099613185) :
+
+![tweet geordp](https://cdn.geotribu.fr/img/internal/contribution/geotribu_rdp_tweet_incitation.png "exemple de tweet geordp")
 
 ----
 
@@ -79,4 +78,4 @@ Une fois le déploiement effectué (~ 5 minutes), diffuser a minima sur Twitter 
 
 - avec le hashtag `#GeoRDP`, en citant les contributeur/ices avec leur éventuel compte
 - si possible en intégrant quelques hastags des personne, organisations ou logiciels cités dans la revue de presse
-- de préférence via le compte `@geotribu` en utilisant Tweetdeck
+- de préférence via le compte `@geotribu` en utilisant Tweetdeck.
