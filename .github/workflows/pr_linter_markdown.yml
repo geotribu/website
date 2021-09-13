@@ -22,4 +22,4 @@ jobs:
           # fail_on_error: true
           # filter_mode: added
           reporter: github-pr-review
-          markdownlint_flags: content/**/*.md
+          # markdownlint_flags: content/**/*.md
