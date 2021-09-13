@@ -44,7 +44,7 @@ graph TD;
     C -->|Intégration composteurs_osm| E{PostgreSQL/PostGIS};
     E --> G[Table composteurs_osm];
     H[Table composteurs_sig] ---> E;
-    G -->|Mise à jour id_osm (Proximité)| H;
+    G -->|Mise à jour id_osm - Proximité| H;
     E -----> I(Vue permettant de visualiser les différences);
 ```
 
