@@ -1,4 +1,4 @@
-name: "PR Preview 👀"
+name: "👀 PR Preview"
 
 # Inspired from: https://github.com/docker-mailserver/docker-mailserver/blob/master/.github/workflows/docs-preview-deploy.yml
 
@@ -10,10 +10,9 @@ on:
 
 jobs:
   preview-netlify:
-    name: "Netlify preview 👀"
+    name: "⌛ Site temporaire sur Netlify"
     runs-on: ubuntu-latest
     if: "${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' }}"
-    # if: "${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' && contains( github.event.pull_request.labels.*.name, 'preview') }}"
 
     steps:
       # =============================== #
@@ -78,8 +77,8 @@ jobs:
           number: ${{ env.PR_NUMBER }}
           recreate: true
           message: |
-            [Documentation preview for this PR](${{ steps.preview.outputs.deploy-url }}) is ready! :tada:
-            Built with commit: ${{ env.PR_HEADSHA }}
+            :tada: Le site de prévisualisation pour cette PR a été généré et est [disponible sous ce lien](${{ steps.preview.outputs.deploy-url }}).
+            Commit de référence : ${{ env.PR_HEADSHA }}.
 
       - name: "Commit Status: Update deployment status"
         uses: myrotvorets/set-commit-status-action@1.1.2

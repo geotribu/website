@@ -1,4 +1,4 @@
-name: "Deploy to Github Pages 🚀"
+name: "🚀 Déploiement"
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   deploy:
-    name: "Deploy website 🚀"
+    name: "📤 GitHub Pages"
 
     runs-on: ubuntu-latest
 
@@ -22,7 +22,7 @@ jobs:
         fetch-depth: 0
 
     - name: Set up Python 3.8
-      uses: actions/setup-python@v2.2.2
+      uses: actions/setup-python@v2
       with:
         python-version: 3.8
 
@@ -32,7 +32,7 @@ jobs:
         node-version: '14'
 
     - name: Cache project dependencies (pip)
-      uses: actions/cache@v2.1.6
+      uses: actions/cache@v2
       with:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
@@ -57,4 +57,4 @@ jobs:
       run: |
         git config --global user.name "Geotribu (Github Action)"
         git config --global user.email "geotribu@gmail.com"
-        ghp-import --force --message="Deploy Geotribu website" --no-jekyll --no-history --push build/mkdocs/site
+        ghp-import --force --message="Site Geotribu déployé" --no-jekyll --no-history --push build/mkdocs/site
