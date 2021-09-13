@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "markdownlint-cli": "^0.28.1"
-  },
-  "dependencies": {
-    "wa-mediabox": "^1.0.1"
-  }
-}
