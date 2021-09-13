@@ -34,18 +34,18 @@ A COMPLETER
 ## Schéma de principe
 
 ```mermaid
-graph TD
-    A[Données OSM<br>Geofabrik] -->|Télécharger| B(region.pbf)
-    B --> C{Script ogr2ogr}
-    C --> D[config.env]
-    D --> C
-    C --> J[emprise.shp]
-    J --> C
-    C --> |Intégration composteurs_osm|E{PostgreSQL<br>PostGIS}
-    E --> G[Table composteurs_osm]
-    H[Table composteurs_sig] ---> E
-    G --> |Mise à jour id_osm<br>Point le plus proche dans un rayon de 20m| H
-    E -----> I(Vue permettant de visualiser les différences)
+graph TD;
+    A[Données OSM<br>Geofabrik] -->|Télécharger| B(region.pbf);
+    B --> C{Script ogr2ogr};
+    C --> D[config.env];
+    D --> C;
+    C --> J[emprise.shp];
+    J --> C;
+    C --> |Intégration composteurs_osm| E{PostgreSQL<br>PostGIS};
+    E --> G[Table composteurs_osm];
+    H[Table composteurs_sig] ---> E;
+    G --> |Mise à jour id_osm<br>Point le plus proche dans un rayon de 20m| H;
+    E -----> I(Vue permettant de visualiser les différences);
 ```
 
 ### 1. Télécharger les données OpenStreetMap
@@ -97,7 +97,7 @@ Afin de restreindre l'extraction des données OpenStreetMap à notre périmètre
 
 Pour la suite des opérations, j'utilise ogr2ogr pour lire le fichier OpenStreetMap (.pbf) préalablement téléchargé afin d'intégrer une information structurée dans PostgreSQL. Si je reprends l'exemple de mes composteurs, je commence par parcourir le [wiki OpenStreetMap](https://wiki.openstreetmap.org/wiki/Main_Page) pour identifier les tags qui vont nous permettre de les extraire facilement et je les ajoute dans le [fichier osmconf.ini](https://github.com/OSGeo/gdal/blob/master/gdal/data/osmconf.ini) utilisé par ogr.
 
-[A lire : Récupérer des données OpenStreetMap via GDAL/OGR :fontawesome-book:](https://portailsig.org/content/recuperer-des-donnees-openstreetmap-gdalogr.html){: .md-button }
+[Récupérer des données OpenStreetMap via GDAL/OGR :fontawesome-fa-book:](https://portailsig.org/content/recuperer-des-donnees-openstreetmap-gdalogr.html){: .md-button }
 {: align=middle }
 
 Voici les tags à ajouter pour les composteurs :
