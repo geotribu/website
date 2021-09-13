@@ -2,7 +2,7 @@
 title: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
 authors: ["Florian Boret"]
 categories: ["article", "tutoriel"]
-date: 2021-10-XX 14:20
+date: 2021-10-01 14:20
 description: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
 image: ""
 license: default
@@ -11,7 +11,7 @@ tags: PostgreSQL,OpenStreetMap,data,Bash,ogr,cURL,SQL
 
 # Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque
 
-:calendar: Date de publication initiale : XX Octobre 2021
+:calendar: Date de publication initiale : 01 Octobre 2021
 
 **Mots-clés :** PostgreSQL | OpenStreetMap | Data | Bash | OGR | SQL | cURL
 
