@@ -9,7 +9,6 @@ license: "CC-BY-SA"
 tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 ---
 
-
 # ODK pour la collecte de données géo dans PostGIS (3/3)
 
 :calendar: Date de publication initiale : 14 septembre 2021
@@ -263,7 +262,7 @@ ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales s
 
 ## Crédits
 
-- icône [XML](https://thenounproject.com/term/xml/3148395) de Eucalyp from the Noun Project
+* icône [XML](https://thenounproject.com/term/xml/3148395) de Eucalyp from the Noun Project
 
 <!-- Hyperlinks reference -->
 [Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
