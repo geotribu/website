@@ -190,13 +190,14 @@ On voit donc qu'il est possible d'automatiser l'installation et le déploiement 
 
 ----
 
+<!-- markdownlint-disable MD046 -->
 !!! tip "Pour la route"
-
     Pour info, il est également possible d'utiliser [Chocolatey](https://chocolatey.org/) :
 
     ```powershell
     choco install qgis-ltr
     ```
+<!-- markdownlint-enable MD046 -->
 
 ----
 

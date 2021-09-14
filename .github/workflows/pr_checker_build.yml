@@ -9,6 +9,7 @@ on:
 # Environment variables
 env:
   BUILD_DIR: build/mkdocs/site
+  NETLIFY_SITE_NAME: geotribu-preprod
   NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
 
 # If the workflow for a PR is triggered multiple times, previous existing runs will be canceled.
@@ -28,7 +29,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up Python 3.8
-        uses: actions/setup-python@v2.2.2
+        uses: actions/setup-python@v2
         with:
           python-version: 3.8
 
@@ -38,7 +39,7 @@ jobs:
           node-version: "14"
 
       - name: Cache project dependencies (pip)
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v2
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
@@ -51,28 +52,13 @@ jobs:
           python -m pip install -U pip setuptools wheel
           python -m pip install -U -r requirements.txt
 
-      - name: Build in strict mode (no preview)
-        if: "!contains( github.event.pull_request.labels.*.name, 'preview')"
-        env:
-          MKDOCS_SEARCH_PREBUILD_INDEX: node
-        run: |
-          # build
-          mkdocs build --config-file mkdocs.yml --verbose --strict
-
-      # ============================== #
-      # PREVIEW ADDTIONAL STEPS        #
-      # ============================== #
-
-
-      - name: Build in strict mode (to preview on netlify)
-        if: contains( github.event.pull_request.labels.*.name, 'preview')
+      - name: Build in strict mode
         env:
           MKDOCS_SEARCH_PREBUILD_INDEX: node
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
-          PREVIEW_URL: "https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
         run: |
           # Adjust mkdocs.yml for preview build
-          sed -i "s|^site_url:.*|site_url: '${PREVIEW_URL}'|" mkdocs.yml
+          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" mkdocs.yml
 
           # Insert sponsor branding into page content (Provider OSS plan requirement):
           # Upstream does not provide a nicer maintainable way to do this..
@@ -82,15 +68,24 @@ jobs:
           # build
           mkdocs build --config-file mkdocs.yml --verbose --strict
 
+          # save mkdocs.yml for debug
+          cp mkdocs.yml ${{ env.BUILD_DIR }}
+
+          # remove files reserved for production
+          rm ${{ env.BUILD_DIR }}/CNAME
+          rm ${{ env.BUILD_DIR }}/robots.txt
+          rm ${{ env.BUILD_DIR }}/sitemap.xml
+          rm ${{ env.BUILD_DIR }}/sitemap.xml.gz
+
         # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
         # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
       - name: "Prepare artifact for transfer"
         run: |
           # Save ENV for transfer
           echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
-          echo "PR_LABEL_PREVIEW=${{ contains( github.event.pull_request.labels.*.name, 'preview') }}" >> pr.env
           echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
           echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
+          echo "NETLIFY_SITE_NAME=${{ env.NETLIFY_SITE_NAME }}"       >> pr.env
           echo "NETLIFY_SITE_PREFIX=${{ env.NETLIFY_SITE_PREFIX }}"   >> pr.env
           echo "BUILD_DIR=${{ env.BUILD_DIR }}"                       >> pr.env
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}

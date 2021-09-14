@@ -16,7 +16,7 @@ tags: DicoGIS,GDAL,OGR,Python,métadonnées
 Ou comment se créer un Petit Robert de l’information géographique en 5 minutes et 3 clics.  
 Je vous présente un petit utilitaire sans prétention sinon d'être bien pratique pour la gestion de données.
 
-![DicoGIS - Animated demonstration](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_demo_w8.gif)
+![DicoGIS - Animated demonstration](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_demo_w8.gif "DicoGIS - Animated demonstration"){: loading=lazy }
 
 ----
 
@@ -24,13 +24,13 @@ Je vous présente un petit utilitaire sans prétention sinon d'être bien pratiq
 
 [DicoGIS](https://github.com/Guts/DicoGIS) est un petit utilitaire qui produit un dictionnaire de données au format Excel 2003 (.xls). Disponible sous forme d’exécutable Windows (.exe) sans installation ou sous forme de script (voir les pré-requis) il peut donc s’utiliser directement sur une clé USB par exemple.
 
-![DicoGIS - Logo](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_logo.png){: .img-rdp-news-thumb }
+![DicoGIS - Logo](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_logo.png "logo DicoGIS"){: .img-rdp-news-thumb }
 
 Il est particulièrement utile dans certains cas de figure :
 
 * on vous refile une base de données fichiers ou PostGIS dans laquelle vous aimeriez savoir ce qu’il peut bien y avoir dedans ;
 * dans le cadre de votre travail ou d’un projet, vous souhaitez fournir facilement un dictionnaire des données fournies, que ce soit à vos collègues, partenaires ou clients.
-J’ai commencé à le développer en complément de [Metadator](http://www.portailsig.org/content/metadator-creation-automatisee-de-metadonnees) et je m’en sers aujourd’hui régulièrement, notamment pour réaliser un rapide audit des données et un support utile pour la conception des thésaurus internes dans la phase d’accompagnement des projets avec [Isogeo](http://www.isogeo.com/).
+J’ai commencé à le développer en complément de [Metadator](http://www.portailsig.org/content/metadator-creation-automatisee-de-metadonnees) et je m’en sers aujourd’hui régulièrement, notamment pour réaliser un rapide audit des données et un support utile pour la conception des thésaurus internes dans la phase d’accompagnement des projets avec [Isogeo](https://www.isogeo.com/).
 
 ## Caractéristiques techniques
 
@@ -75,35 +75,35 @@ En ce qui concerne les performances, cela dépend surtout de la machine sur laqu
 
 1. Télécharger la dernière version :
 
-* soit de [l’exécutable Windows](https://github.com/Guts/DicoGIS/releases),
-* soit du [code source](https://github.com/Guts/DicoGIS/archive/master.zip).
+    * soit de [l’exécutable Windows](https://github.com/Guts/DicoGIS/releases),
+    * soit du [code source](https://github.com/Guts/DicoGIS/archive/master.zip).
 
 2. Dézipper et lancer DicoGIS.exe / le script DicoGIS.py
 
-![DicoGIS - Launch](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/00a_DicoGIS_Win32exe.PNG)
+    ![DicoGIS - Launch](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/00a_DicoGIS_Win32exe.PNG "DicoGIS - Launch"){: loading=lazy }
 
 3. Changer la langue au besoin
 
-![DicoGIS - Switch language](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/99_DicoGIS_SwitchLanguage.gif)
+    ![DicoGIS - Switch language](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/99_DicoGIS_SwitchLanguage.gif "DicoGIS - Switch language"){: loading=lazy }
 
 ### Scan de données organisées en fichiers
 
 1. Choisir le dossier parent : l’exploration commence et la barre de progression tourne jusqu’à la fin du listing
 2. Choisir les formats désirés
 
-![DicoGIS- Listing](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/02_DicoGIS_Listing.gif)
+![DicoGIS- Listing](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/02_DicoGIS_Listing.gif "DicoGIS- Listing"){: loading=lazy }
 
 ### Scan d'une base PostGIS
 
 Pour des données stockées dans une base PostgreSQL / PostGIS, c'est le même principe sauf qu'il faut entrer les paramètres de connexion :
 
-![DicoGIS - Processing PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/06_DicoGIS_PostGIS.gif)
+![DicoGIS - Processing PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/06_DicoGIS_PostGIS.gif "DicoGIS PostGIS"){: loading=lazy }
 
 ### Traitement
 
 Lancer et attendre la fin du traitement : sauvegarder le fichier Excel généré.
 
-![DicoGIS - Processing files](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/05_DicoGIS_Processing.gif)  
+![DicoGIS - Processing files](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/05_DicoGIS_Processing.gif "DicoGIS fichiers"){: loading=lazy }
 
 Consulter le fichier en sortie et le fichier `DicoGIS.log` (dans lequel il y a un paquet d'informations ^^).
 
@@ -125,7 +125,4 @@ Voici les quelques évolutions que j'envisage, mais vu que je ne suis pas mère 
 
 ## Auteur
 
-![Portait de Julien Moura](https://cdn.geotribu.fr/img/internal/contributeurs/jmou.jpg){: .img-rdp-news-thumb }
-**Julien Moura**
-
-Géographe qui s'est laissé gagner peu à peu par le côté géomatique de la Force. Intéressé par de nombreuses thématiques liées à l'urbain (ségrégation, environnement, risque et vulnérabilité, etc), j'aime bien l'idée de formaliser les pensées en les modélisant et en les automatisant au possible. A ce jeu là, les outils informatiques s'avèrent indispensables, en particulier Python et Javascript.
+--8<-- "content/team/jmou.md"
