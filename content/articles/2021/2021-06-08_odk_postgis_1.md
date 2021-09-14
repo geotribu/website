@@ -23,8 +23,8 @@ Ce premier article, introductif, présente le projet ODK, ses outils ainsi que l
 Le second détaillera les possibilités de création de formulaire à travers l'exemple détaillé du formulaire généraliste du [Conservatoire d'Espaces Naturels d'Occitanie].  
 Le dernier sera consacré à la récupération des données collectées dans une base de données PostGIS.
 
-[2 : Création d'un formulaire ODK](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
-[3 : Récupération des données collectées dans PostGIS](/articles/2021/2021-09-14_odk_postgis_3/){: .md-button }
+[2 : Création d'un formulaire](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+[3 : Récupération des données dans PostGIS](/articles/2021/2021-09-14_odk_postgis_3/){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -342,7 +342,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - La mise en oeuvre d'ODK avec la présentation détaillée de notre formulaire "généraliste"
 - La récupération des données collectées dans notre base de données PostGIS
 
-[Lire la deuxième partie :fontawesome-solid-step-forward:](https://static.geotribu.fr/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+[Lire la deuxième partie :fontawesome-solid-step-forward:](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
 {: align=middle }
 
 ----
