@@ -188,7 +188,31 @@ A ce stade, on peut d'ores et déjà :
 Afin de visualiser plus rapidement, les lacunes de notre SIG et celles d'OpenStreetMap, il est possible de créer une vue dans PostgreSQL afin de catégoriser les actions à réaliser.
 
 ```sql
-AJOUTER LA VUE
+CREATE OR REPLACE VIEW dechet.v_composteurs_comparaison_osm
+ AS
+ SELECT row_number() OVER () AS id,
+    g.geom,
+    g.motif,
+    g.type
+   FROM ( SELECT c.geom,
+            'A valider'::text AS motif,
+            a.type
+           FROM dechet.composteurs_osm c
+             LEFT JOIN dechet.composteurs a ON c.id_osm::text = a.id_osm::text
+          WHERE a.id_osm IS NULL
+        UNION ALL
+         SELECT r.geom,
+            'Contribuer'::text AS motif,
+            r.type
+           FROM dechet.composteurs r
+          WHERE r.id_osm IS NULL
+        UNION ALL
+         SELECT c.geom,
+            'Ok'::text AS motif,
+            c.type
+           FROM dechet.composteurs c
+             LEFT JOIN dechet.composteurs_osm a ON c.id_osm::text = a.id_osm::text
+          WHERE c.id_osm IS NOT NULL) g;
 ```
 
 AJOUTER UNE IMAGE
@@ -202,7 +226,26 @@ AJOUTER UNE IMAGE
 Vous l'avez compris la mise à jour de notre id_osm ne se fait qu'une fois par jour après l'intégration de la mise à jour de la donnée OpenStreetMap mais pour gérer les actions réalisées sur notre donnée interne nous utilisons un trigger pour mettre à jour l'id_osm si une action est réalisée. Ce trigger utlise la même définition que la requête SQL lancée chaque nuit.
 
 ```sql
-AJOUTER LE TRIGGER
+CREATE OR REPLACE FUNCTION dechet.trigger_set_openstreetmap_ccpl_composteurs()
+RETURNS TRIGGER AS $$
+BEGIN
+
+  NEW.id_osm = (SELECT
+	   g.id_osm
+   FROM (  SELECT
+            c.id_osm as id_osm,
+            round(st_distance(NEW.geom, c.geom)::numeric) AS distance
+           FROM dechet.composteurs_osm c
+		 WHERE st_dwithin(NEW.geom, c.geom, 20::double precision)) g
+  ORDER BY g.distance );
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trigger_set_openstreetmap_composteurs
+BEFORE INSERT OR UPDATE ON dechet.composteurs
+FOR EACH ROW
+EXECUTE PROCEDURE dechet.trigger_set_openstreetmap_ccpl_composteurs();
 ```
 
 ----
