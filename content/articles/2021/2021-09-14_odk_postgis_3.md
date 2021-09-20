@@ -6,7 +6,7 @@ date: "2021-09-14 10:20"
 description: "Troisième et dernier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_and_postgresql.png"
 license: "CC-BY-SA"
-tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
+tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android,sql,json,xml"
 ---
 
 # ODK pour la collecte de données géo dans PostGIS (3/3)
@@ -68,7 +68,8 @@ Les versions récentes de Central et d'ODK Collect permettent à un utilisateur 
 
 Les fonctionnalités de Central sont décrites dans la [documentation](https://docs.getodk.org/central-intro/#odk-central-features).
 
-Comme Aggregate, Central s'appuie sur une base de données PostgreSQL.
+Comme Aggregate, Central s'appuie sur une base de données PostgreSQL, mais il stocke les données sous forme de documents xml, quand Aggregate créait des tables de base de données pour chaque formulaire (une table de base et des tables filles pour les boucles de questions).
+L'accès aux données stockées dans Central nécessite donc de revoir notre approche quant à l'intégration des données collectée dans notre SI "métier".
 
 ----
 
@@ -76,22 +77,10 @@ Comme Aggregate, Central s'appuie sur une base de données PostgreSQL.
 
 ![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.jpg "logo PostGIS"){: .img-rdp-news-thumb }
 
-Aggregate, qui était le serveur proposé avant Central, créait pour chaque formulaire qu'il servait des tables dédiées pour accueillir les données.  
-Une table pour les paramètres communs à chaque session et des tables filles pour chaque répétition. Cela se traduisait dans notre cas par une table **sicen_core**, une table **sicen_emplacments** et une table **sicen_observations** .  
-Chaque enregistrement de la table des observations faisait référence à un enregistrement de la table des emplacements, et chaque emplacement faisait référence à un enregistrement de la table "racine".
-
-Il était ainsi très facile d'exploiter les données consolidées dans Aggregate dans notre système d'information construit sur PostgreSQL, en utilisant les outils fournis par la base de données :
-
-* triggers,
-* vues,
-* "Foreign Data Wrapper".
-
-Central a quelque peu bouleversé nos habitudes car les formulaires ne sont plus "transposés" en tables dans la base de données, mais uniquement stockés en XML (comme le faisait aussi Aggregate).
-
 Diverses pistes d'exploitation des données ont été explorées pour conserver la fluidité que nous connaissions dans le cheminement de l'information, depuis ODK Collect vers nos outils métiers.  
 Elles ont été présentées [ici](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102?u=mathieubossaert) sur le forum d'ODK.
 Voici un petit résumé de ces essais et une présentation plus détaillée de la solution générique finalement mise en oeuvre.
-
+Ne souhaitant pas passer par un outil tiers, de type ETL (*Extract, Transform and Load*, [voir le travail décrit par Dave Henry avec Kettle](https://forum.getodk.org/t/automating-data-delivery-using-the-odata-endpoint-in-odk-central/22010)) pour réaliser cette tâche, nous avons exploré diverses pistes.
 ### Utilisation des fonctions XML de PostgreSQL
 
 ![icône XML](https://cdn.geotribu.fr/img/logos-icones/divers/xml.png "icône XML - XML File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
@@ -122,13 +111,17 @@ Par ailleurs, l'exploitation du XML, bien que très efficace dans PostgreSQL n'e
 
 ### Utilisation de l'extension `pgsql_http`
 
-Ne souhaitant pas passer par un outil tiers, de type ETL (*Extract, Transform and Load*, [voir le travail décrit par Dave Henry avec Kettle](https://forum.getodk.org/t/automating-data-delivery-using-the-odata-endpoint-in-odk-central/22010)) pour réaliser cette tâche, une seconde voie a consisté à utiliser l'extension [pgsql_http](https://github.com/pramsey/pgsql-http) développée par Paul Ramsey. Cela m'a conforté dans l'idée que l'exploitation du JSON dans PostgreSQL est beaucoup plus aisée que celle du XML.
+Une seconde voie a consisté à utiliser l'extension [pgsql_http](https://github.com/pramsey/pgsql-http) développée par Paul Ramsey. 
 
-Cette méthode est présentée [ici](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102/6?u=mathieubossaert) .
+Cette méthode est présentée [ici](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102/6?u=mathieubossaert).
 
 L'extension permet de faire des appels à des ressources web et donc à l'API de Central. Le resultat de l'appel est un document JSON.
 
-On réalise un appel à l'API pour chaque "table" du formulaire et le tour est presque joué. Il ne reste qu'à exploiter le JSON avec les [fonctions JSON proposées par PostgreSQL](https://www.postgresql.org/docs/13/functions-json.html).
+On réalise un appel à l'API pour chaque "table" du formulaire et le tour est presque joué.
+
+![icône JSON](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/JSON_vector_logo.svg.png "icône JSON - https://openclipart.org/detail/188447/developers-openclipart-has-a-json-api"){: .img-rdp-news-thumb }
+
+Il ne reste qu'à exploiter le JSON avec les [fonctions JSON proposées par PostgreSQL](https://www.postgresql.org/docs/13/functions-json.html). Avec le recul, la requête pourrait être simplifiée. Il est en effet inutile de tester l'existence d'un élément avant de tenter d'y accéder. S'il n'existe pas, une valeur nulle est renvoyée.
 
 ```sql
 WITH submissions AS (
@@ -156,11 +149,12 @@ WITH submissions AS (
 [...]
 ```
 
-Cette voie est elle aussi concluante mais je vois avec le recul que je complexifiais la requête pour rien, par exemple en testant inutilement l'existence d'un élément avant de tenter d'y accéder.
+Cette voie est elle aussi concluante et elle m'a conforté dans l'idée que l'exploitation du JSON dans PostgreSQL me sera plus aisée que celle du XML.
 
 ### Utilisation de la commande `COPY FROM`
 
-Enfin au gré de mes recherches je me suis souvenu d'un article de [Leo Hsu et Regina Obe sur le "Postgres OnLine Journal"](https://www.postgresonline.com/journal/archives/325-Using-wget-directly-from-PostgreSQL-using-COPY-FROM-PROGRAM.html) au sujet d'une fonctionnalité de PostgreSQL 9.3 qui est de pouvoir passer à l'instruction COPY le résultat d'une commande système avec la syntaxe :
+Enfin un article de [Leo Hsu et Regina Obe sur le "Postgres OnLine Journal"](https://www.postgresonline.com/journal/archives/325-Using-wget-directly-from-PostgreSQL-using-COPY-FROM-PROGRAM.html) m'est revenu à l'esprit... Il décrit une fonctionnalité de PostgreSQL 9.3 qui permet de passer à l'instruction COPY le résultat d'une commande système, 
+La syntaxe est la suivante :
 
 ```sql
 COPY FROM program...
@@ -171,7 +165,7 @@ Les données reçues seront toujours du JSON, que nous savons maintenant exploit
 
 Restait à automatiser le tout pour ne pas devoir tout refaire à chaque nouveau formulaire.
 
-L'idée générale était la suivante :
+Voici les étapes du processus imaginé :
 
 * Interroger l'API de Central au sujet d'un formulaire donné pour connaitre les tables qui le composent
 * Récupérer via l'API les données disponibles pour chacune de ces tables
@@ -204,18 +198,24 @@ réalise ceci :
 * demande à Central la liste des tables qui constituent le formulaire "my_form_about_birds"
 * récupère les données pour chaque table
 * crée les tables dans le schéma odk_data de la base de données, un attribut par question de formulaire
-* le dernier paramètre permet de mentionner les questions à ignorer lors de la transformation récursive des objets json en attributs SQL
+* le dernier paramètre permet de mentionner les questions à ignorer lors de la transformation récursive des objets json en attributs SQL (par exemple les champs geojson que l'on souhaite conserver en l'état)
 * alimente les tables créées avec les données reçues
 
 Et à l'appel suivant (tâche planifiée avec cron) :
 
 * vérifie la présence de nouvelles questions dans le formulaire
 * crée les attributs correspondants le cas échéant
-* insère les nouvelles données
+* insère les nouvelles données (celles non encore intégrées)
 
 ----
 
 ## Perspectives
+
+### Concernant [central2pg](https://github.com/mathieubossaert/central2pg)
+
+Toutes les données colléctées depuis ce printemps à travers une dizaine de formulaires ont été moissonnées automatiquement grâce aux fonctions décrites ici.
+
+Les premiers retours de la communauté sur [central2pg](https://github.com/mathieubossaert/central2pg) sont encourageants et l'utilisation des fonctions développées dans d'autres contextes permettront sans doute de trouver et corriger des bugs, ainsi que d'améliorer la généricité des fonctions (url du serveur, colonne à utiliser en clé primaire)
 
 ### Concernant ODK Collect, les formulaires et les "workflow"
 
@@ -227,13 +227,15 @@ Nous n'entrons pas dans les détails ici mais voici quelques discussions sur le 
 * [pouvoir interagir avec la couche vecteur utilisée en référence](https://forum.getodk.org/t/selecting-a-map-feature-to-collect-data-about/28466/15)
 * et les [cas d'utilisations listés par Daniel Joseph](https://docs.google.com/document/d/18ICz7gziV-8uiwy_lMDQ5PM_dD_fBmlcJKG_UJsMNUA/edit#heading=h.sil54e9hyeu) (aka [danbjoseph](https://forum.getodk.org/u/danbjoseph/summary) ), membre tu TAB qui déploie ODK à la Croix Rouge Internationale
 
+Depuis cet été, ODK Collect permet de se connecter à diffférents projets hébergés sur différents serveur, ce qui permet par exemple à un salarié du CEN de participer à une étude portée et hébergé par une autre structure.
+
 ### Concernant Central
 
 En mai est sortie la version 1.2 de Central, avec de nouvelles fonctionnalités de gestion des utilisateurs et des projets, des données reçues... mais aussi, coté API, la possibilité de récupérer les données "jointes" avec [l'option $expand](https://forum.getodk.org/t/extend-api-to-retrieve-plain-json/32204) et l'espoir de pouvoir ne demander à Central que les données récentes.  
 Cette amélioration, répond en théorie à notre envie de ne rapatrier que les données récemment acquises, mais il s'avère que le json reçu est beaucoup plus difficile à exploiter de manière générique.
 
 La possibilité de filtrer les données par date de soumission ne s'applique pour l'instant qu'à la table "Submissions" et non aux tables sous-jacentes dont nous devons récupérer l'ensemble des données.
-Cela ne pose pas de souci fonctionnel mais entraîne inutilement des flux de données au volume toujours croissant pour les tables secondaires (les emplacements et les observations dans notre exemple) qui sont en outre par définition les plus volumineuses.  
+Cela ne pose pas de souci fonctionnel mais entraîne inutilement des flux de données au volume toujours croissant pour les tables secondaires (les emplacements et les observations dans notre exemple) qui sont par définition les plus volumineuses.  
 Une [demande de fonctionnalité](https://forum.getodk.org/t/propagate-submission-date-to-child-tables/34349) a été faite pour que la date de soumission des données soit propagée aux tables filles et utilisable dans les filtres.
 
 Les fonctionnalités futures d'ODK Central sont listées ici, ainsi que celles déjà supportées et celles qui ne le seront jamais : <https://forum.getodk.org/t/whats-coming-in-central-over-the-next-few-years/19677proposées> ou prévues pour les prochaines années.
@@ -242,7 +244,7 @@ Les fonctionnalités futures d'ODK Central sont listées ici, ainsi que celles d
 
 ## Conclusion
 
-ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales sont :
+ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales sont les suivantes :
 
 * la solution s'intègre très facilement dans notre SI bâti sur PostgreSQL, c'était le cas avec Aggregate et ça l'est toujours avec Central et son API OData,
 * nous n'avons pas à développer d'application mobile dédiée à chaque protocole. Quand bien même nous le pourrions, quel sens cela aurait-il ?
@@ -263,6 +265,7 @@ ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales s
 ## Crédits
 
 * icône [XML](https://thenounproject.com/term/xml/3148395) de Eucalyp from the Noun Project
+* icône [JSON](https://openclipart.org/detail/188447/developers-openclipart-has-a-json-api)
 
 <!-- Hyperlinks reference -->
 [Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
