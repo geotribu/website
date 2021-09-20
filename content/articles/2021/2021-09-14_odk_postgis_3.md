@@ -111,7 +111,7 @@ Par ailleurs, l'exploitation du XML, bien que très efficace dans PostgreSQL n'e
 
 ### Utilisation de l'extension `pgsql_http`
 
-Une seconde voie a consisté à utiliser l'extension [pgsql_http](https://github.com/pramsey/pgsql-http) développée par Paul Ramsey. 
+Une seconde voie a consisté à utiliser l'extension [pgsql_http](https://github.com/pramsey/pgsql-http) développée par Paul Ramsey.
 
 Cette méthode est présentée [ici](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102/6?u=mathieubossaert).
 
@@ -153,7 +153,7 @@ Cette voie est elle aussi concluante et elle m'a conforté dans l'idée que l'ex
 
 ### Utilisation de la commande `COPY FROM`
 
-Enfin un article de [Leo Hsu et Regina Obe sur le "Postgres OnLine Journal"](https://www.postgresonline.com/journal/archives/325-Using-wget-directly-from-PostgreSQL-using-COPY-FROM-PROGRAM.html) m'est revenu à l'esprit... Il décrit une fonctionnalité de PostgreSQL 9.3 qui permet de passer à l'instruction COPY le résultat d'une commande système, 
+Enfin un article de [Leo Hsu et Regina Obe sur le "Postgres OnLine Journal"](https://www.postgresonline.com/journal/archives/325-Using-wget-directly-from-PostgreSQL-using-COPY-FROM-PROGRAM.html) m'est revenu à l'esprit... Il décrit une fonctionnalité de PostgreSQL 9.3 qui permet de passer à l'instruction COPY le résultat d'une commande système,
 La syntaxe est la suivante :
 
 ```sql
