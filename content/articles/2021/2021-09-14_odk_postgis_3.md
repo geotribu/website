@@ -119,7 +119,7 @@ L'extension permet de faire des appels à des ressources web et donc à l'API de
 
 On réalise un appel à l'API pour chaque "table" du formulaire et le tour est presque joué.
 
-![icône JSON](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/JSON_vector_logo.svg.png "icône JSON - https://openclipart.org/detail/188447/developers-openclipart-has-a-json-api"){: .img-rdp-news-thumb }
+![icône JSON](https://cdn.geotribu.fr/img/logos-icones/programmation/json.png "icône JSON"){: .img-rdp-news-thumb }
 
 Il ne reste qu'à exploiter le JSON avec les [fonctions JSON proposées par PostgreSQL](https://www.postgresql.org/docs/13/functions-json.html). Avec le recul, la requête pourrait être simplifiée. Il est en effet inutile de tester l'existence d'un élément avant de tenter d'y accéder. S'il n'existe pas, une valeur nulle est renvoyée.
 
