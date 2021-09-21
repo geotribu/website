@@ -9,6 +9,11 @@ assignees: aurelienchaumet, Guts, igeofr
 
 # News
 
+L'auteur/e a un lien avec le contenu proposé :
+
+- [ ] Oui (développeur, intégrateur, vendeur, distributeur...)
+- [ ] Non
+
 ## Section cible
 
 Un seul choix possible :
@@ -43,6 +48,8 @@ Longeur maximale indicative : 100/120 caractères
 Prose.
 
 ## Medias d'illustration (images, vidéos, tweets, etc.)
+
+<!-- Liens bruts. -->
 
 ----
 
