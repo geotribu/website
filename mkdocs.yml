@@ -171,6 +171,8 @@ theme:
 
 # Customization
 extra:
+    provider: matomo
+    property: !ENV MKDOCS_MATOMO_URL_BASE
   comments_url: https://comments.geotribu.fr # isso url
   url_contribuer: https://contribuer.geotribu.fr/
   consent:
