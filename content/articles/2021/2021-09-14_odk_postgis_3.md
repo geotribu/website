@@ -232,11 +232,11 @@ Depuis cet été, ODK Collect peut se connecter à différents projets hébergé
 
 ### Concernant Central
 
-En mai est sortie la version 1.2 de Central, avec de nouvelles fonctionnalités de gestion des utilisateurs et des projets, des données reçues... mais aussi, coté API, la possibilité de récupérer les données "jointes" avec l'option [$expand](https://forum.getodk.org/t/extend-api-to-retrieve-plain-json/32204) de l'API et l'espoir de pouvoir ne demander à Central que les données récentes. 
+En mai est sortie la version 1.2 de Central, avec de nouvelles fonctionnalités de gestion des utilisateurs et des projets, des données reçues... mais aussi, coté API, la possibilité de récupérer les données "jointes" avec l'option [$expand](https://forum.getodk.org/t/extend-api-to-retrieve-plain-json/32204) de l'API et l'espoir de pouvoir ne demander à Central que les données récentes.
 Cette amélioration, répond en théorie à notre envie de ne rapatrier que les données récemment acquises, mais il s'avère que le json reçu est beaucoup plus difficile à exploiter de manière générique.
 
 La possibilité de filtrer les données par date de soumission ne s'applique pour l'instant qu'à la table "Submissions" et non aux tables sous-jacentes dont nous devons récupérer l'ensemble des données.
-Cela ne pose pas de souci fonctionnel mais entraîne inutilement des flux de données toujours croissant, contenant des données déjà intégrées. 
+Cela ne pose pas de souci fonctionnel mais entraîne inutilement des flux de données toujours croissant, contenant des données déjà intégrées.
 Une [demande de fonctionnalité](https://forum.getodk.org/t/propagate-submission-date-to-child-tables/34349) a été faite pour que la date de soumission des données soit propagée aux tables filles et utilisable dans les filtres.
 
 Les fonctionnalités futures d'ODK Central sont listées ici, ainsi que celles déjà supportées et celles qui ne le seront jamais : <https://forum.getodk.org/t/whats-coming-in-central-over-the-next-few-years/19677proposées> ou prévues pour les prochaines années.
