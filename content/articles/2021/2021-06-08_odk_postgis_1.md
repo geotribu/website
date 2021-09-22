@@ -24,7 +24,7 @@ Le second détaillera les possibilités de création de formulaire à travers l'
 Le dernier sera consacré à la récupération des données collectées dans une base de données PostGIS.
 
 [2 : Création d'un formulaire](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
-[3 : Récupération des données dans PostGIS](/articles/2021/2021-09-14_odk_postgis_3/){: .md-button }
+[3 : Récupération des données dans PostGIS](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }

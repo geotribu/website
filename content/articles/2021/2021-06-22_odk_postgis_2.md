@@ -4,7 +4,7 @@ authors: ["Mathieu BOSSAERT"]
 categories: ["article"]
 date: "2021-06-22 22:50"
 description: "Second article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_and_postgresql.png"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/open_data_kit_postgresql.png"
 license: "CC-BY-SA"
 tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 ---
@@ -30,7 +30,7 @@ Vous pourrez ensuite récupérer les données collectées avec [Briefcase](https
 Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans l'article précédent.
 
 [1 : Introduction à ODK](/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
-[3 : Récupération des données dans notre SI](/articles/2021/2021-09-14_odk_postgis_3/){: .md-button }
+[3 : Récupération des données dans notre SI](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -385,6 +385,13 @@ Nous pourrons faire un bilan plus juste à la fin de l'année quand les carnets 
 Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'évolution des modes de saisie. 2015 marque l'arrivée d'ODK dans le SI, 2020 la création du CEN Occitanie.
 
 [![Evolution des modalités d'entrée des données de biodiversité dans le SI du CEN Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/evolution_des_modes_de_saisie.png "évolution des modes de saisie"){: .img-center loading=lazy }](https://dashboards.cen-occitanie.org/embed/query/150/visualization/490?api_key=k6q0e0T0CPfE2ceVJz4uaaCfapg4VHio2dTlmsoK&)
+{: align=middle }
+
+----
+
+## A suivre
+
+[Lire la troisième partie :fontawesome-solid-step-forward:](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
 {: align=middle }
 
 ----
