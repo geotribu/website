@@ -132,6 +132,12 @@ extra:
     provider: google
     property: !ENV MKDOCS_GOOGLE_ANALYTICS_KEY
   comments_url: https://comments.geotribu.fr # isso url
+  consent:
+    title: "Consentement :cookie:"
+    description: >
+      Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
+      des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
+      l'audience du site.
   manifest: "manifest.webmanifest" # PWA declaration
   social:
     - icon: "fontawesome/solid/rss"
