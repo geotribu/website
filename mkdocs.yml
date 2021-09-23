@@ -84,6 +84,8 @@ plugins:
         # recent moves
         "acknowledgements.md": "team/index.md"
         "install_webapp.md": "articles/2020/2020-03-20_installer_site_comme_application.md"
+  - tags:
+      tags_file: tags.md
 
 # Theme
 theme:
