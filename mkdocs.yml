@@ -54,7 +54,6 @@ plugins:
   - search:
       lang: fr
       prebuild_index: !ENV MKDOCS_SEARCH_PREBUILD_INDEX
-      separator: '[\s\-\.]+'
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - redirects:
