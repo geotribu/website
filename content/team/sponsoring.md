@@ -2,11 +2,15 @@
 title: "Soutenir"
 authors: ["Geotribu"]
 categories: ["meta"]
-date: "2021-07-18 10:20"
+date: "2021-10-18 10:20"
 description: "L'aventure de Geotribu est rendue possible par le travail et le soutien de personnes et aussi d'outils et ressources libres. Crédits et remerciements."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
 license: default
-tags: "GeoTribu,sponsor,soutien,financement,open source"
+tags:
+    - sponsor
+    - soutien
+    - financement
+    - open source
 ---
 
 # Soutenir Geotribu
@@ -40,6 +44,10 @@ On pourrait proposer plusieurs moyens aux gens :
 - offrir un goodie à l'équipe (mug QGIS, thsirt GDAL...)
 - un prêt de ressources techniques (genre pour le CDN)
 
+----
+
+## Soutenir le site
+
 <!-- markdownlint-disable MD033 -->
 <script src="https://liberapay.com/Geotribu/widgets/button.js"></script>
 <noscript>
@@ -50,3 +58,15 @@ On pourrait proposer plusieurs moyens aux gens :
 
 <script src="https://liberapay.com/Geotribu/widgets/receiving.js"></script>
 <!-- markdownlint-enable MD033 -->
+
+----
+
+## Projets soutenus
+
+Actuellement, nous contribuons financièrement aux projets suivants.
+
+### Material for Mkdocs
+
+:money_with_wings: 10$/mois.
+
+![Sponsoring - Material for Mkdocs](https://cdn.geotribu.fr/img/internal/sponsoring/sponsoring_material_mkdocs.png "Sponsoring - Material for Mkdocs"){: .img-center loading=lazy }
