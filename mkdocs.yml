@@ -163,7 +163,6 @@ extra_css:
 extra_javascript:
   - "theme/assets/javascripts/extra.js"
   - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js"
-  - "https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
@@ -192,13 +191,12 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_div_format
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed
   - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
-
 # Navigation - Menu organization
 # # Disabled to use auto detection
 # nav:
