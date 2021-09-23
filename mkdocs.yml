@@ -134,7 +134,7 @@ extra:
     property: !ENV MKDOCS_GOOGLE_ANALYTICS_KEY
   comments_url: https://comments.geotribu.fr # isso url
   consent:
-    title: "Consentement :cookie:"
+    title: Consentement 🍪
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
       des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
