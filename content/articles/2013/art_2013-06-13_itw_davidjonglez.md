@@ -2,7 +2,7 @@
 title: Interview de David JONGLEZ
 Category: géointerview
 date: 2013-06-13 10:20
-tags: 
+tags:
     - ESRI
     - Interview
 ---

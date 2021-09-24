@@ -5,7 +5,7 @@ categories: ["article", "tutoriel"]
 date: "2021-03-09 10:20"
 description: "Petite astuce dans le développement de plugins QGIS : rediriger facilement l'utilisateur final vers la documentation en ligne."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_show_help/documentation_le-chat.jpg"
-tags: 
+tags:
     - Geotribu
     - QGIS
     - Plugin
