@@ -2,7 +2,10 @@
 title: Interview de Drones Crisis
 Category: géointerview
 date: 2014-08-20 11:20
-tags: drone, osm, interview
+tags: 
+    - Drone
+    - OpenStreetMap
+    - Interview
 ---
 
 # Interview de Drones Crisis

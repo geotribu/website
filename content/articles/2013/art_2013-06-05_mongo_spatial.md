@@ -1,3 +1,12 @@
+---
+title: Mongo Spatial
+Category: ["article"]
+date: 2013-06-05 10:20
+tags:
+  - Mongo
+  - NodeJS
+---
+
 # Mongo Spatial
 
 !!! warning
