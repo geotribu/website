@@ -80,7 +80,7 @@ Au passage, on en profite pour essayer deux autres bibliothèques pour ce genre 
 
 ### Structure
 
-En regardant [les sources de l'article](view-source:http://cnig.gouv.fr/?p=23807), on sait que le contenu intéressant est dans la div de class `post-content` :
+En regardant [les sources de l'article](view-source:http://cnig.gouv.fr/?p=23807), on sait que le contenu intéressant est dans la `div` de class `post-content` :
 
 [![Source HTML CNIG](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png "Les sources de l'article du CNIG "){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png){: data-mediabox="scraping" data-title="Sources d'un article du site du CNIG."}
 
@@ -146,11 +146,11 @@ Cela démontre bien à la fois la faisabilité et les limitations du traitement 
 
 ```mermaid
 graph TD;
-  A[Site archivé]-->B[Scraping];
-  B-->C[HTML];
-  B-->D[Images];
-  C-->E[Markdown];
-  D-->F[CDN];
+    A[Site archivé] --> B[Scraping];
+    B --> C[HTML];
+    B --> D[Images];
+    C --> E[Markdown];
+    D --> F[CDN];
 ```
 
 [Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-step-forward:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
@@ -163,6 +163,8 @@ graph TD;
 --8<--
 content/team/jmou.md
 --8<--
+
+--8<-- "content/toc_nav_ignored/snippets/abbreviations.md"
 
 <!-- Hyperlinks reference -->
 [Markdown]: https://fr.wikipedia.org/wiki/Markdown
