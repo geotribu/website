@@ -5,7 +5,7 @@ categories: ["article", "tutoriel"]
 date: 2021-02-19 14:14
 description: "Suite du projet ign2map : automatisation de l'exécution des scripts et du déploiement de la carte interactive des liens de téléchargement des données ouvertes de l'IGN, en tirant profit de GitHub Actions et Pages."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/github_action_workflow_result.png"
-tags: 
+tags:
   - Bash
   - IGN
   - GitHub Pages

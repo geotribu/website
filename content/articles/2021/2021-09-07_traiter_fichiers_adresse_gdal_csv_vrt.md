@@ -6,7 +6,7 @@ date: "2021-09-07 10:20"
 description: "Travailler les données de la Base Adresse Nationale (BAN) avec GDAL/OGR, en tirant parti de l'abstraction sur les systèmes de fichiers virtuels (VSI) et de la lecture (VRT)."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png"
 license: beerware
-tags: 
+tags:
     - GDAL
     - OGR
     - CSV

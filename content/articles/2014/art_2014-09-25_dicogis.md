@@ -4,7 +4,7 @@ authors: Julien Moura
 categories: ["article"]
 date: 2014-09-25
 description: "DicoGIS, utilitaire pour générer automatiquement un dictionnaire de métadonnées sur une base SIG."
-tags: 
+tags:
     - DicoGIS
     - GDAL
     - OGR
