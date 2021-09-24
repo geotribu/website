@@ -10,7 +10,7 @@ tags:
     - PWA
     - Site
     - Application
-    - Astuce"
+    - Astuce
 ---
 
 # Installer en tant qu'application

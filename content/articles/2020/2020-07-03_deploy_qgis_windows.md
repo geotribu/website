@@ -9,7 +9,7 @@ tags:
     - QGIS
     - Installation
     - OSGEO
-    - Powershell
+    - PowerShell
     - Déploiement
     - Setup
     - Windows

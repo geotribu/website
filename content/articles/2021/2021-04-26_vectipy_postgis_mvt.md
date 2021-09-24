@@ -7,7 +7,7 @@ description: "Présentation de vectipy, un serveur léger de tuiles vectorielles
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_logo.png"
 tags: 
     - Python
-    - Vector tiles
+    - Tuiles vectorielles
     - MVT
     - Vectipy
 license: cc4_by-sa
