@@ -5,7 +5,11 @@ categories: ["article"]
 date: "2020-11-21 10:20"
 description: "Présentation de Street Complete, l'application Android qui permet de contribuer facilement et de façon ludique à OpenStreetMap."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/streetcomplete_banner.png"
-tags: "OpenStreetMap,Street Complete,contribution,Android"
+tags: 
+    - OpenStreetMap
+    - Street Complete
+    - Contribution
+    - Android
 ---
 
 # Street Complete : la contribution facile à OpenStreetMap

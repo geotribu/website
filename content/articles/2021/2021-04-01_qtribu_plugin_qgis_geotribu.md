@@ -6,7 +6,11 @@ date: "2021-04-01 13:20"
 description: "Présentation du plugin de Geotribu pour QGIS : QTribu. Inutile donc forcément indispensable."
 image: "https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png"
 license: default
-tags: "QGIS,plugin,Geotribu,QTribu"
+tags: 
+    - QGIS
+    - Plugin
+    - Geotribu
+    - QTribu
 ---
 
 # QTribu, le plugin Geotribu pour QGIS

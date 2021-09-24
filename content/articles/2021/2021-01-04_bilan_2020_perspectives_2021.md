@@ -5,7 +5,15 @@ categories: ["article"]
 date: 2021-01-06 11:11
 description: "L'équipe de Geotribu vous souhaite ses meilleurs voeux pour 2021, avec quelques statistiques sur l'année 2020 et une feuille de route 2021."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_constellation_map_fr.png"
-tags: geotribu,voeux,statistiques,fréquentation,géomatique,sig,contribution,collaboratif
+tags: 
+    - Geotribu
+    - Voeux
+    - Statistiques
+    - Fréquentation
+    - Géomatique
+    - SIG
+    - Contribution
+    - Collaboratif
 ---
 
 # 2020 dans le rétro, 2021 en ligne de mire
