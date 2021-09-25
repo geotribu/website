@@ -233,7 +233,7 @@ CREATE OR REPLACE VIEW dechet.v_composteurs_comparaison_osm
 
 Voici un autre exemple avec des données sur le patrimoine :
 
-![Carte patrimoine](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_patrimoine.png "Carte du patrimoine"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_patrimoine.png){: data-mediabox="lightbox-gallery" data-title="Carte du patrimoine" }
+[![Carte patrimoine](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_patrimoine.png "Carte du patrimoine"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_patrimoine.png){: data-mediabox="lightbox-gallery" data-title="Carte du patrimoine" }
 
 ### 7. Edition de la donnée et récupération de l'id_osm à travers un trigger
 
