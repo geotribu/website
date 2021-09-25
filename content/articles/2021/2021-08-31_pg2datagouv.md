@@ -44,7 +44,7 @@ Avant de démarrer, voici une représentation schématique du fonctionnement de 
 graph TD;
     A{pg2datagouv.sh} --> G(config.env);
     G --> A;
-    A --> D[dechets_composteurs.sh] --> |Extraction<br>avec OGR| U(composteurs.shp);
+    A --> D[dechets_composteurs.sh] --> |Extraction avec OGR| U(composteurs.shp);
     D --> G;
     G --> D;
     U --> H{API};
