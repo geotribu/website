@@ -231,7 +231,7 @@ CREATE OR REPLACE VIEW dechet.v_composteurs_comparaison_osm
 - Contour orange : une contribution est nécessaire pour enrichir OpenStreetMap
 - Contour rouge : La donnée n'existe que dans OpenStreetMap, il faut éventuellement aller la contrôler pour l'ajouter à nos données ou la supprimer d'OpenStreetMap si elle n'a plus d'intérêt.
 
-Voici un autre exemple avec des données sur le patrimoine : 
+Voici un autre exemple avec des données sur le patrimoine :
 
 ![Carte patrimoine](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_patrimoine.png "Carte du patrimoine"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_patrimoine.png){: data-mediabox="lightbox-gallery" data-title="Carte du patrimoine" }
 
@@ -266,7 +266,7 @@ EXECUTE PROCEDURE dechet.trigger_set_openstreetmap_ccpl_composteurs();
 
 ## Conclusion
 
-Avec cette solution "low cost" nous pouvons identifier rapidement des évolutions ou des différences entre nos données et les informations saisies dans OpenStreetMap ce qui nous permet d'une part d'améliorer l'information que nous apportons à nos utilisateurs et d'autre part de contribuer pleinement au projet collaboratif. 
+Avec cette solution "low cost" nous pouvons identifier rapidement des évolutions ou des différences entre nos données et les informations saisies dans OpenStreetMap ce qui nous permet d'une part d'améliorer l'information que nous apportons à nos utilisateurs et d'autre part de contribuer pleinement au projet collaboratif.
 
 Après la phase mise en oeuvre et d'état des lieux sur le territoire, nous allons maintenant entrer dans la phase longue d'harmonisation de l'information mais ce travail s'inscrit pleinement dans notre participations aux géo-communs.
 
