@@ -35,6 +35,13 @@ python -m pip install -U setuptools wheel
 python -m pip install -U -r requirements.txt
 ```
 
+Pour utiliser la [version Insiders du thème Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/), il faut disposer du *token* lié au compte GitHub de Geotribu :
+
+```bash
+export GH_TOKEN_MATERIAL_INSIDERS=************
+python -m pip install -U -r requirements-insiders.txt
+```
+
 ### Générer le site
 
 Version complète :
