@@ -9,7 +9,7 @@ tags:
     - Geotribu
     - Site statique
     - Static website
-    - Github
+    - GitHub
     - Serveur web
 ---
 
