@@ -7,13 +7,13 @@ description: "Intégrer les données OpenStreetMap dans son SIG pour s'engager d
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/osm_sig.jpeg"
 license: default
 tags:
-    - PostgreSQL
+    - Bash
+    - cURL
+    - data
+    - OGR
     - OpenStreetMap
     - PostGIS
-    - data
-    - Bash
-    - OGR
-    - cURL
+    - PostgreSQL
     - SQL
 ---
 
@@ -63,7 +63,7 @@ Pour télécharger les données OpenStreetMap depuis le site [Geofabrik](https:/
 ```bash
 # SUPPRESSION DU FICHIER SI IL EXISTE
 rm './data_in/LANGUEDOC_ROUSSILLON.pbf'
-# TELECHARMENT ET RENOMMAGE
+# TELECHARGEMENT ET RENOMMAGE
 curl --limit-rate 1G https://download.geofabrik.de/europe/france/languedoc-roussillon'-latest.osm.pbf' > './data_in/LANGUEDOC_ROUSSILLON.pbf'
 ```
 
@@ -158,7 +158,7 @@ ogr2ogr -append -clipsrc $REPER'/'$EMPRISE -f "PostgreSQL" PG:"host=$C_HOST user
 
 Après avoir intégré les données OpenStreetMap dans PostgreSQL, il est maintenant possible de les visualiser avec QGIS pour notamment faire une comparaison visuelle avec les données internes mais cela s'apparente à chercher des aiguilles dans une meule de foin. Je vous propose donc de créer une requête pour associer spatialement l'entité OpenStreetMap la plus proche de notre donnée si elle se trouve dans un rayon de 20m (choix purement arbitraire).
 
-Après avoir créer une colonne id_osm dans ma table des composteurs, on va lancer la requête pour renseigner l'identifiant OSM dans la table des composteurs, il sera donc stocké en dur.
+Après avoir créé une colonne id_osm dans ma table des composteurs, on va lancer la requête pour renseigner l'identifiant OSM dans la table des composteurs, il sera donc stocké en dur.
 
 ```sql
 -- On désactive le trigger permettant de renseigner la date de mise à jour
@@ -268,7 +268,7 @@ EXECUTE PROCEDURE dechet.trigger_set_openstreetmap_ccpl_composteurs();
 
 Avec cette solution "low cost" nous pouvons identifier rapidement des évolutions ou des différences entre nos données et les informations saisies dans OpenStreetMap ce qui nous permet d'une part d'améliorer l'information que nous apportons à nos utilisateurs et d'autre part de contribuer pleinement au projet collaboratif.
 
-Après la phase mise en oeuvre et d'état des lieux sur le territoire, nous allons maintenant entrer dans la phase longue d'harmonisation de l'information mais ce travail s'inscrit pleinement dans notre participations aux géo-communs.
+Après la phase mise en oeuvre et d'état des lieux sur le territoire, nous allons maintenant entrer dans la phase longue d'harmonisation de l'information mais ce travail s'inscrit pleinement dans notre participation aux géo-communs.
 
 ----
 
