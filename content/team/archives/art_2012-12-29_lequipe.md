@@ -3,7 +3,11 @@ title: "L'équipe de GéoTribu fin 2012"
 authors: GeoTribu
 category: article
 date: 2012-12-29
-tags: team,équipe,contributeurs
+tags:
+    - équipe
+    - contributeur
+    - contributrice
+    - crédits
 ---
 
 # L'équipe de GéoTribu
