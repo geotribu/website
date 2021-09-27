@@ -8,7 +8,7 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/
 tags:
   - awk
   - Bash
-  - Github
+  - GitHub
   - IGN
   - Leaflet
   - sed
