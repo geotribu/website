@@ -5,7 +5,12 @@ categories: ["meta"]
 date: "2021-05-20 10:20"
 description: "Cette page détaille les dispositifs de traçage que l'utilisateur/ice final/e peut rencontrer sur le site Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
-tags: "GeoTribu,confidentialité,données personnelles,vie privée,tracking"
+tags:
+    - confidentialité
+    - données personnelles
+    - Geotribu
+    - tracking
+    - vie privée
 ---
 
 # Données personnelles et confidentialité

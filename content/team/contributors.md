@@ -5,7 +5,11 @@ categories: ["meta"]
 date: "2020-04-10 10:20"
 description: "Présentation des contributeurs actifs de Geotribu et remerciements aux personnes et projets libres qui rendent l'aventure possible."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
-tags: "GeoTribu,contributeur,contributrice,auteur,contributrice,credits,remerciement,soutien"
+tags:
+    - Geotribu
+    - contributeur
+    - contributrice
+    - crédits
 ---
 
 # L'équipe Geotribu
