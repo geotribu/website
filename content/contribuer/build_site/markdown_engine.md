@@ -4,7 +4,13 @@ categories: ["contribution"]
 date: 2020-09-14 14:20
 description: "Comprendre le fonctionnement de Python Markdown et ses spécificités pour contribuer en markdown à Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png"
-tags: contribuer,tutoriel,markdown,rédaction,python,html
+tags:
+    - contribuer
+    - HTML
+    - Markdown
+    - Python
+    - rédaction
+    - tutoriel
 ---
 
 # Le moteur de rendu Markdown utilisé et ses spécificités

@@ -8,7 +8,7 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 tags:
     - article
     - contribuer
-    - geotribu
+    - Geotribu
     - guide
     - workflow
 ---
