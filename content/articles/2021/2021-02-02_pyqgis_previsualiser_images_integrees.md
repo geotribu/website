@@ -7,12 +7,12 @@ description: "Suite au dernier article, voici comment lister et prévisualiser l
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_preview_cheatsheet.png"
 license: beerware
 tags:
-    - Geotribu
-    - QGIS
-    - Plugin
-    - PyQt5
     - Icônes
     - Interface graphique
+    - Plugin
+    - PyQt5
+    - PyQGIS
+    - QGIS
 ---
 
 # Récupérer et prévisualiser les icônes intégrées à QGIS
