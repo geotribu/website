@@ -3,7 +3,12 @@ title: "Configurer l'environnement pour l'édition en local"
 categories: ["contribution", "tutoriel"]
 date: 2020-07-23 10:20
 description: "Guide de contribution à Geotribu : comment déployer l'environnment local idéal pour la contribuer."
-tags: contribution,édition,markdown,guide
+tags:
+    - contribuer
+    - guide
+    - installation locale
+    - Markdown
+    - Visual Studio Code
 ---
 
 # Installation pour l'édition locale

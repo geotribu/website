@@ -5,7 +5,12 @@ categories: ["contribution"]
 date: "2021-05-24 10:20"
 description: "Comment proposer un article sur Geotribu : recommandations, outils et workflow."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
-tags: guide,contribuer,geotribu,article,workflow
+tags:
+    - article
+    - contribuer
+    - geotribu
+    - guide
+    - workflow
 ---
 
 # Proposer un article

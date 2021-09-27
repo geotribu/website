@@ -4,7 +4,14 @@ author: "Julien Moura"
 categories: ["article", "contribution", "tutoriel"]
 date: 2020-04-20 10:20
 description: "Guide de contribution à Geotribu : comment intégrer une image dans un article ou une revue de presse et gérer le stockage commun."
-tags: contribuer,media,image,intégration,tutoriel,cdn
+tags:
+    - contribuer
+    - media
+    - image
+    - intégration
+    - tutoriel
+    - Markdown
+    - cdn
 ---
 <!-- markdownlint-disable MD046 -->
 

@@ -5,7 +5,11 @@ date: "2021-07-12 11:20"
 description: "Comment choisir et appliquer une licence à son article Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/contribution/licensing/license_block.png"
 license: default
-tags: "contribuer,tutoriel,markdown,licence"
+tags:
+    - contribuer
+    - licence
+    - Markdown
+    - tutoriel
 ---
 
 # Choisir une licence pour son article

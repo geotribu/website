@@ -6,12 +6,12 @@ date: 2021-02-15 11:11
 description: "ign2map : le petit projet de Geotribu pour rendre l’expérience de téléchargement des données ouvertes de l'IGN plus interactive."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html_rendu.png"
 tags:
+  - awk
   - Bash
+  - Github
   - IGN
   - Leaflet
-  - Github
   - sed
-  - awk
 ---
 
 # ign2map : du site à la carte en 7 étapes

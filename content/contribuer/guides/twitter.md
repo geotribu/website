@@ -4,7 +4,12 @@ categories: ["article", "contribution", "tutoriel"]
 date: 2020-04-20 10:20
 description: "Guide de contribution à Geotribu : comment intégrer un tweet dans un contenu en Markdown."
 image: "https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_publish_website.png"
-tags: contribuer,twitter,tweet,embed,intégration,tutoriel
+tags:
+    - contribuer
+    - guide
+    - intégration
+    - Markdown
+    - Twitter
 ---
 
 <!-- markdownlint-disable MD046 -->
