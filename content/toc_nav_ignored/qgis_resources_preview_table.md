@@ -6,7 +6,14 @@ date: "2021-02-01 15:20"
 description: "Cheatsheet about embedded QGIS images: list, preview and snippet to easily insert in your PyQGIS development."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_preview_cheatsheet.png"
 language: "en"
-tags: "geotribu,QGIS,plugin,PyQt5,icon,pyqgis,cheatsheet,ui"
+tags:
+  - QGIS
+  - plugin
+  - PyQt5
+  - icon
+  - PyQGIS
+  - cheatsheet
+  - Interface graphique
 hide:
   - navigation
 ---
