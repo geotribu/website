@@ -54,7 +54,7 @@ plugins:
   - search:
       lang: fr
       prebuild_index: !ENV MKDOCS_SEARCH_PREBUILD_INDEX
-      separator: "[\\s\\-,:!=\\[\\]()\"/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])"
+      separator: '[\s\-\.]+'
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - redirects:
@@ -209,7 +209,6 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
-
 # Navigation - Menu organization
 # # Disabled to use auto detection
 # nav:
