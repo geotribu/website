@@ -130,12 +130,14 @@ Pour le développement d'un package, installer le projet en cours en mode édita
 python -m pip install -e .
 ```
 
+<!-- markdownlint-disable MD046 -->
 !!! info
     De nombreuses ressources existent en ligne :
 
     * [tutoriel dans la documentation officielle](https://docs.python.org/fr/3/tutorial/venv.html)
     * [configurer son environnement virtuel (Google)](https://cloud.google.com/python/setup?hl=fr#installing_and_using_virtualenv)
     * [prise en main de Python sur Windows pour les débutants](https://docs.microsoft.com/fr-fr/windows/python/beginners)
+<!-- markdownlint-enable MD046 -->
 
 ### Documentation _in-code_
 

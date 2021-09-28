@@ -5,6 +5,7 @@ categories: ["article"]
 date: "2021-06-08 10:20"
 description: "Premier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/open_data_kit_postgresql.png"
+license: "CC-BY-SA"
 tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
 ---
 
@@ -22,9 +23,9 @@ Ce premier article, introductif, présente le projet ODK, ses outils ainsi que l
 Le second détaillera les possibilités de création de formulaire à travers l'exemple détaillé du formulaire généraliste du [Conservatoire d'Espaces Naturels d'Occitanie].  
 Le dernier sera consacré à la récupération des données collectées dans une base de données PostGIS.
 
-[2ème partie : Création d'un formulaire ODK :fontawesome-solid-step-forward:](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
-<!--[3ème partie : Récupération des données collectées dans notre base de données PostGIS :fontawesome-solid-fast-forward:](#){: .md-button }
-{: align=middle } -->
+[2 : Création d'un formulaire](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+[3 : Récupération des données dans PostGIS](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
+{: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -341,7 +342,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - La mise en oeuvre d'ODK avec la présentation détaillée de notre formulaire "généraliste"
 - La récupération des données collectées dans notre base de données PostGIS
 
-[Lire la deuxième partie :fontawesome-solid-step-forward:](https://static.geotribu.fr/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+[Lire la deuxième partie :fontawesome-solid-step-forward:](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
 {: align=middle }
 
 ----
@@ -359,20 +360,9 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 
 ## Auteur
 
-### Mathieu Bossaert
+--8<-- "content/team/mbos.md"
 
-![Portrait Mathieu Bossaert](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/mb.jpeg "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
-
-Aprés des études de biologie, d'écologie et d'informatique, j'ai intégré le CEN en 2003 pour y occuper le poste de gestionnaire de bases de données et suis devenu "géomaticien" par extension.
-
-J'y suis désormais co-responsable de la "Geomateam" qui compte 5 personnes, pas toutes à temps plein sur la thématique, au sein d'une équipe "Occitane" de 80 salariés, répartis sur 14 sites.
-
-PostgreSQL est le pillier strucurant de notre SI depuis 2006. Les besoins de la structure ont évolués avec elle et chacun d'eux a trouvé une solution robuste dans le monde du libre et les communautés des différents outils, à travers georezo notament, n'ont jamais été avares de conseils.
-J'ai intégré il y a quelques années l'équipe de GeoRezo et j'y assure la fonction de trésorier.
-
-Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement celui d'[ODK](https://forum.getodk.org))
-
-Vous pouvez me contacter pour échanger sur le sujet via [twitter](https://twitter.com/MathieuBossaert) et [linkedin](https://www.linkedin.com/in/mathieu-bossaert-08b73a205/).
+{% include "licenses/cc4_by-sa.md" %}
 
 <!-- Hyperlinks reference -->
 [Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
