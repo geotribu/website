@@ -2,7 +2,7 @@
 
 MERCI DE SUPPRIMER OU ADAPTER POUR LES AUTRES TYPES DE CONTENUS (principe du `benevol time fair-use`).
 
-Pour les articles, voir : https://static.geotribu.fr/contribuer/workflow_article/#soumettre
+Pour les articles, voir : https://static.geotribu.fr/contribuer/articles/workflow/#soumettre
 
  -->
 
