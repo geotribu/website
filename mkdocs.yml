@@ -101,7 +101,6 @@ theme:
 
   features:
     - content.tabs.links
-    - navigation.expand
     - navigation.tabs
     - navigation.top
     - navigation.tracking

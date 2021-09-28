@@ -34,7 +34,6 @@ theme:
   search_index_only: true
 
   features:
-    - navigation.expand
     - navigation.tabs
     - navigation.top
     - navigation.tracking
