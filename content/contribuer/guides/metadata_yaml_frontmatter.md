@@ -24,7 +24,7 @@ L'en-tête est défini en haut de la page par un ensemble de clés/valeurs encad
 - `description` : SEO, recherche interne du site, meta-tag, RSS
 - `image` : RSS et partage des articles dans les réseaux sociaux (c'est ce qui fait qu'on a un jouli rendu quand on partage dans Twitter ou LinkedIn par exemple). Dimensions : entre 300x600 et 400x800.
 - `license` : détermine si la licence du contenu est celle par défaut (`license: default`) ou non (`license: none`). Si la clé n'est pas renseignée, c'est la licence par défaut qui s'applique. Voir le guide [Choisir sa licence](/contribuer/guides/licensing/).
-- `tags` : pour l'instant ça ne sert à rien mais c'est prévu pour permettre un classement des contenus par mots-clés.
+- `tags` : permet un classement des contenus par mots-clés.
 
 ### Catégories
 
@@ -49,6 +49,18 @@ date: 2020-12-25 14:20
 description: "GeoRDP du 25 décembre 2020 : la revue de presse géomatique de Geotribu pour souhaiter Joyeux Noël et bonnes fêtes !"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/merry_christmas_blender.png"
 license: default
-tags: rdp,ign,geoserver,nominatim,opendata,cerema,fig,georezo,drone,postgis,mapbox,openlayers
+tags:
+    - RDP
+    - IGN
+    - Geoserver
+    - Nominatim
+    - OpenData
+    - Cerema
+    - FIG
+    - Georezo
+    - Drone
+    - PostGIS
+    - Mapbox
+    - OpenLayers
 ---
 ```
