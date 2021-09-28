@@ -87,7 +87,7 @@ plugins:
         "interviews/itw_drones_crisis.md": "articles/2014/art_2014-08-29_itw_drones_crisis.md"
         "contribuer/workflow_article.md": "contribuer/articles/workflow.md"
         "contribuer/backup.md": "contribuer/internal/backup.md"
-        "contribuer/build_site/markdown_engine.md": "contribuer/internal/build_site.md"
+        "contribuer/build_site/markdown_engine.md": "contribuer/internal/markdown_engine.md"
 
 # Theme
 theme:
