@@ -153,4 +153,4 @@ En ce qui concerne la diffusion, cela reste à la discrétion de chacun/e, sacha
 [dépôt GitHub]: https://github.com/geotribu/website
 [Git]: https://fr.wikipedia.org/wiki/Git
 
---8<-- "content/toc_nav_ignored/snippets/abbreviations.md"
+--8<-- "content/toc_nav_ignored/snippets/glossaire.md"

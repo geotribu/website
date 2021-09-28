@@ -72,4 +72,4 @@ tags: rdp
 - Annonces diverses
 
 <!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/abbreviations.md"
+--8<-- "content/toc_nav_ignored/snippets/glossaire.md"
