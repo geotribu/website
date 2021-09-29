@@ -51,16 +51,15 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/merry_christmas_blender.pn
 license: default
 tags:
     - Cerema
-    - Drone
+    - drone
     - FIG
-    - Georezo
-    - Geoserver
+    - GeoRezo
+    - GeoServer
     - IGN
     - Mapbox
     - Nominatim
-    - OpenData
+    - Open Data
     - OpenLayers
     - PostGIS
-    - RDP
 ---
 ```
