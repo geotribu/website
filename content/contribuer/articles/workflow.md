@@ -144,7 +144,10 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
 
 Une fois la Pull Request[^pr] validée par un membre de l'équipe, une date de publication est décidée en tenant compte du planning de publication.
 
-Une fois la branche de l'article fusionnée (*merged*) dans la branche principale, votre contenu est publié et référencé automatiquement.  
+Une fois la branche de l'article fusionnée (*merged*) dans la branche principale, votre contenu est publié et référencé automatiquement.
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/50V0KiFhwF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 En ce qui concerne la diffusion, cela reste à la discrétion de chacun/e, sachant que nous utiliserons le compte Twitter de Geotribu pour relayer la publication.
 
 <!-- Footnotes -->
@@ -154,3 +157,5 @@ En ce qui concerne la diffusion, cela reste à la discrétion de chacun/e, sacha
 <!-- Hyperlinks reference -->
 [dépôt GitHub]: https://github.com/geotribu/website
 [Git]: https://fr.wikipedia.org/wiki/Git
+
+--8<-- "content/toc_nav_ignored/snippets/glossaire.md"

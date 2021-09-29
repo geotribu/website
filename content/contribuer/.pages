@@ -3,10 +3,11 @@ title: "📝 Contribuer"
 nav:
     - introduction.md
     - requirements.md
-    - workflow_article.md
     - contribution_guide.md
-    - edit
+    - rdp
+    - articles
     - guides
-    - build_site
+    - edit
+    - internal
     - ...
     - archives

@@ -142,6 +142,18 @@ Au-delà des styles prédéfinis, il est évidemment possible de personnaliser �
 
 ----
 
+## Parcourir les images sur le CDN de Geotribu
+
+L'accès en lecture à notre entrepôt d'images (un pseudo-CDN minimaliste) accumulées depuis toutes ces années est ouvert :gift_heart: :
+
+- adresse : <https://cdn.geotribu.fr>
+- identifiant : `invité`
+- mot de passe : `geotribu_bemyguest2020`
+
+En plus de permettre un petit voyage dans le temps, autant que toutes ces ressources servent en plus de notre site :smiley:. Merci de ne pas en abuser en respectant le *fair-use*[^fairuse]. Pensez également à créditer les auteur/es.
+
+----
+
 ## Héberger une image sur le CDN de Geotribu
 
 Traditionnellement, nous hébergeons les images sur notre propre serveur pour plusieurs raisons :
@@ -208,6 +220,9 @@ Globalement, voici comment les images sont organisées :
     ![Clic doit copier l'adresse du lien](https://cdn.geotribu.fr/img/internal/contribution/embed_image/cdn_filemanager_get_image_url.png "Clic doit copier l'adresse du lien")
 
 <!-- Hyperlinks reference -->
-[CDN de Geotribu]: https://cdn.geotribu.fr/img/
+[CDN de Geotribu]: https://cdn.geotribu.fr/
 [lightbox]: https://en.wikipedia.org/wiki/Lightbox_(JavaScript)
 [markdown]: https://fr.wikipedia.org/wiki/Markdown
+
+<!-- Intègre le glossaire centralisé -->
+--8<-- "content/toc_nav_ignored/snippets/glossaire.md"

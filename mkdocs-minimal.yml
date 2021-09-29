@@ -34,7 +34,6 @@ theme:
   search_index_only: true
 
   features:
-    - navigation.expand
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -100,6 +99,8 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
