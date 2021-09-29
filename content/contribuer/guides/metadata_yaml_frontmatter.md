@@ -58,7 +58,7 @@ tags:
     - IGN
     - Mapbox
     - Nominatim
-    - Open Data
+    - open data
     - OpenLayers
     - PostGIS
 ---
