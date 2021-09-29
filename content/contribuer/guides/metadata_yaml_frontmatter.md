@@ -50,17 +50,17 @@ description: "GeoRDP du 25 décembre 2020 : la revue de presse géomatique de Ge
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/merry_christmas_blender.png"
 license: default
 tags:
-    - RDP
-    - IGN
-    - Geoserver
-    - Nominatim
-    - OpenData
     - Cerema
+    - Drone
     - FIG
     - Georezo
-    - Drone
-    - PostGIS
+    - Geoserver
+    - IGN
     - Mapbox
+    - Nominatim
+    - OpenData
     - OpenLayers
+    - PostGIS
+    - RDP
 ---
 ```
