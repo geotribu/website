@@ -85,8 +85,8 @@ jobs:
       - name: "Prepare artifact for transfer"
         run: |
           # Save ENV for transfer
-          echo "GITHUB_REPOSITORY=${{ github.GITHUB_REPOSITORY }}" >> pr.env
-          echo "GITHUB_HEAD_REF=${{ github.GITHUB_HEAD_REF }}" >> pr.env
+          echo "GITHUB_REPOSITORY=${{ GITHUB_REPOSITORY }}" >> pr.env
+          echo "GITHUB_HEAD_REF=${{ GITHUB_HEAD_REF }}" >> pr.env
           echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
           echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
           echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
