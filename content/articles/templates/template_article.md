@@ -6,8 +6,10 @@ date: "2021-08-09 10:20"
 description: "Description pour le SEO."
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
 license: default
-tags: "mot-clé-seo1,mot-clé-seo2"
-
+tags:
+    - tag 1
+    - tag 2
+    - ...
 ---
 
 # Titre principal
