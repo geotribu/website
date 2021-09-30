@@ -57,6 +57,8 @@ jobs:
 
       - name: Build in strict mode
         env:
+          MKDOCS_EDIT_URI: edit/$GITHUB_HEAD_REF/content
+          MKDOCS_REPO_URL: https://github.com/$GITHUB_REPOSITORY
           MKDOCS_SEARCH_PREBUILD_INDEX: node
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
@@ -67,6 +69,9 @@ jobs:
           # Upstream does not provide a nicer maintainable way to do this..
           # Prepends HTML to copyright text and then aligns to the right side.
           sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" mkdocs.yml
+
+          # set repo and branch
+          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" mkdocs.yml
 
           # build
           mkdocs build --config-file mkdocs.yml --verbose --strict
