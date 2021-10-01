@@ -60,6 +60,9 @@ jobs:
           MKDOCS_SEARCH_PREBUILD_INDEX: node
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
+          # site name
+          sed -i "s|^site_name:.*|site_name: Geotribu PREVIEW |" mkdocs.yml
+
           # Adjust mkdocs.yml for preview build
           sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" mkdocs.yml
 
@@ -67,6 +70,10 @@ jobs:
           # Upstream does not provide a nicer maintainable way to do this..
           # Prepends HTML to copyright text and then aligns to the right side.
           sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" mkdocs.yml
+
+          # set repo and branch
+          sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" mkdocs.yml
+          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" mkdocs.yml
 
           # build
           mkdocs build --config-file mkdocs.yml --verbose --strict
@@ -85,12 +92,16 @@ jobs:
       - name: "Prepare artifact for transfer"
         run: |
           # Save ENV for transfer
+          echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"                 >> pr.env
+          echo "GITHUB_HEAD_REF=$GITHUB_HEAD_REF"                     >> pr.env
           echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
           echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
           echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
           echo "NETLIFY_SITE_NAME=${{ env.NETLIFY_SITE_NAME }}"       >> pr.env
           echo "NETLIFY_SITE_PREFIX=${{ env.NETLIFY_SITE_PREFIX }}"   >> pr.env
           echo "BUILD_DIR=${{ env.BUILD_DIR }}"                       >> pr.env
+
+          # archive build dir
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
 
       - name: Save build website as artifact

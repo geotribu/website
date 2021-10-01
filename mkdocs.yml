@@ -10,9 +10,9 @@ site_url: https://static.geotribu.fr/
 copyright: '<span class="copyleft">&copy;</span> Geotribu'
 
 # Repository
-repo_name: "geotribu/website"
-repo_url: "https://github.com/geotribu/website"
-edit_uri: "edit/master/content"
+repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/website"]
+repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/website"]
+edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/master/content"]
 
 # Custom folder structure
 docs_dir: "./content"
@@ -84,6 +84,10 @@ plugins:
         # recent moves
         "acknowledgements.md": "team/index.md"
         "install_webapp.md": "articles/2020/2020-03-20_installer_site_comme_application.md"
+        "interviews/itw_drones_crisis.md": "articles/2014/art_2014-08-29_itw_drones_crisis.md"
+        "contribuer/workflow_article.md": "contribuer/articles/workflow.md"
+        "contribuer/backup.md": "contribuer/internal/backup.md"
+        "contribuer/build_site/markdown_engine.md": "contribuer/internal/markdown_engine.md"
 
 # Theme
 theme:
@@ -97,7 +101,6 @@ theme:
 
   features:
     - content.tabs.links
-    - navigation.expand
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -163,6 +166,9 @@ extra:
     - icon: "fontawesome/brands/slack"
       link: "https://geotribu.slack.com"
       name: "Rejoignez-nous sur Slack"
+    - icon: "fontawesome/solid/feather-alt"
+      link: http://pad.geotribu.fr/
+      name: "Editeur en ligne"
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
@@ -202,11 +208,9 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
-# Navigation - Menu organization
-# # Disabled to use auto detection
-# nav:
-#   - Accueil: index.md
