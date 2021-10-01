@@ -57,7 +57,6 @@ jobs:
 
       - name: Build in strict mode
         env:
-          MKDOCS_EDIT_URI: "edit/${GITHUB_HEAD_REF}/content"
           MKDOCS_SEARCH_PREBUILD_INDEX: node
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
@@ -71,6 +70,7 @@ jobs:
 
           # set repo and branch
           sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" mkdocs.yml
+          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" mkdocs.yml
 
           # build
           mkdocs build --config-file mkdocs.yml --verbose --strict
