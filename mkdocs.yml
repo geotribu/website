@@ -10,9 +10,9 @@ site_url: https://static.geotribu.fr/
 copyright: '<span class="copyleft">&copy;</span> Geotribu'
 
 # Repository
-repo_name: "geotribu/website"
-repo_url: "https://github.com/geotribu/website"
-edit_uri: "edit/master/content"
+repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/website"]
+repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/website"]
+edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/master/content"]
 
 # Custom folder structure
 docs_dir: "./content"
