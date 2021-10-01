@@ -11,7 +11,6 @@ assignees: Guts, igeofr, aurelienchaumet
 
 <!-- Dans cette partie, donner quelques informations sur vous pour la signature : mini-biographie, photo, etc. -->
 
-
 ## Type d'article
 
 <!-- Cocher la case en inscrivant un 'x' dans une ou plusieurs cases ci-dessous. Ne pas hésiter à cocher "Autre" et à développer ;) -->

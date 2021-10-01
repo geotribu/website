@@ -215,6 +215,7 @@ Thumbs.db
 # #########################
 
 markdown-lint-report.txt
-package.json
+; package.json
 markdown-lint-report-added.txt
 .Rhistory
+linter_markdown_report.txt
