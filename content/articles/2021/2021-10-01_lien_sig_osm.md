@@ -4,7 +4,7 @@ authors: ["Florian Boret"]
 categories: ["article", "tutoriel"]
 date: 2021-10-01 14:20
 description: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/osm_sig.jpeg"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/osm_sig.png"
 license: default
 tags:
     - Bash
@@ -26,7 +26,7 @@ tags:
 ## Prérequis
 
 - l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)
-- l'outil de convertion [ogr2ogr](https://gdal.org/programs/ogr2ogr.html)
+- l'outil de conversion [ogr2ogr](https://gdal.org/programs/ogr2ogr.html)
 - [psql](https://docs.postgresql.fr/13/app-psql.html) et nécessairement le SQL associé
 - [cURL](https://curl.se)
 
@@ -34,12 +34,14 @@ tags:
 
 ![Logo OSM](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Logo OSM"){: .img-rdp-news-thumb }
 
-Après cette première année bien remplie à la Communauté de Communes, j'ai profité du calme estival pour travailler sur la possibilité de créer des liens entre les informations renseignées dans OpenStreetMap et les données que nous produisons en interne avec pour objectif de consolider les deux bases données de manière réciproque. Pour l'instant, la solution proposée a été uniquement utilisée pour valider nos données ponctuelles mais n'hésitez pas à partager vos expériences avec d'autres types de données ainsi que vos adaptations éventuelles.
+Après cette première année bien remplie à la Communauté de Communes, j'ai profité du calme estival pour travailler sur la possibilité de créer des liens entre les informations renseignées dans OpenStreetMap et les données que nous produisons en interne avec pour objectif de consolider les deux bases de données de manière réciproque. Pour l'instant, la solution proposée a été uniquement utilisée pour valider nos données ponctuelles mais n'hésitez pas à partager vos expériences avec d'autres types de données ainsi que vos adaptations éventuelles.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
-## Schéma de principe
+----
+
+##  Fonctionnement et processus
 
 ```mermaid
 graph TD;
@@ -71,7 +73,7 @@ curl --limit-rate 1G https://download.geofabrik.de/europe/france/languedoc-rouss
 
 Avant de se lancer, il est bon de paramétrer le fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé par les scripts qui vont vous servir à intégrer les données OpenStreeMap préalablement structurées dans votre base de données. On y définit les différents répertoires de travail ainsi que les variables permettant d'accéder à la base de données.
 
-Voici le fichier config.env à adapter :
+Voici le fichier `config.env` à adapter :
 
 ```ini
 # REPERTOIRE DE TRAVAIL
@@ -103,6 +105,8 @@ Afin de restreindre l'extraction des données OpenStreetMap à notre périmètre
 
 ### 4. Un script par donnée à extraire et à intégrer dans PostgreSQL
 
+![logo GDAL tshirt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_logo_tshirt.webp "logo GDAL tshirt"){: .img-rdp-news-thumb }
+
 Pour la suite des opérations, j'utilise [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) pour lire le fichier OpenStreetMap (.pbf) préalablement téléchargé afin d'intégrer une information structurée dans PostgreSQL. Si je reprends l'exemple de mes composteurs, je commence par parcourir le [wiki OpenStreetMap](https://wiki.openstreetmap.org/wiki/Main_Page) pour identifier les tags qui vont me permettre de les extraire facilement et je les ajoute dans le [fichier osmconf.ini](https://github.com/OSGeo/gdal/blob/master/gdal/data/osmconf.ini) utilisé par ogr2ogr.
 
 [Récupérer des données OpenStreetMap via GDAL/OGR :fontawesome-solid-book:](https://portailsig.org/content/recuperer-des-donnees-openstreetmap-gdalogr.html){: .md-button }
@@ -124,9 +128,11 @@ Maintenant que le fichier de configuration est paramétré, on va passer au scri
 # LECTURE DU FICHIER DE CONFIGURATION
 . ./config.env
 #------------------------------------------------------------------------------------------------------------
-var_group=OSM_POI
-var_sub_group=DECHETS
+# NOM DU FICHIER _osmconf.ini
+var_osm_conf=DECHETS
+# NOM DU SCHEMA DANS LEQUEL EST STOCKE L'INFORMATION
 var_schema=dechet
+# NOM DE LA TABLE CORRESPONDANT AUX COMPOSTEURS OSM
 var_table=composteurs_osm
 #------------------------------------------------------------------------------------------------------------
 #------------------------------------ COMPOSTEURS -----------------------------------------------------------
@@ -148,7 +154,7 @@ FROM points WHERE amenity='recycling' AND recycling_organic='yes' AND ST_IsValid
 #------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------
 
-ogr2ogr -append -clipsrc $REPER'/'$EMPRISE -f "PostgreSQL" PG:"host=$C_HOST user=$C_USER dbname=$C_DBNAME password=$C_PASSWORD schemas=$var_schema" -dialect SQLITE -sql "SELECT * FROM ($(echo $requete | sed -e 's/-//g'))" $REPER'/'$REPER_IN'/'$F_PBF -s_srs EPSG:4326 -t_srs EPSG:2154 -nln $var_table -lco SCHEMA=$var_schema --config OGR_TRUNCATE YES --debug ON --config CPL_TMPDIR $REPER'/data_tmp/' --config OSM_MAX_TMPFILE_SIZE 4096 -oo CONFIG_FILE=$REPER'/scripts/'$var_sub_group'_osmconf.ini'
+ogr2ogr -append -clipsrc $REPER'/'$EMPRISE -f "PostgreSQL" PG:"host=$C_HOST user=$C_USER dbname=$C_DBNAME password=$C_PASSWORD schemas=$var_schema" -dialect SQLITE -sql "SELECT * FROM ($(echo $requete | sed -e 's/-//g'))" $REPER'/'$REPER_IN'/'$F_PBF -s_srs EPSG:4326 -t_srs EPSG:2154 -nln $var_table -lco SCHEMA=$var_schema --config OGR_TRUNCATE YES --debug ON --config CPL_TMPDIR $REPER'/data_tmp/' --config OSM_MAX_TMPFILE_SIZE 4096 -oo CONFIG_FILE=$REPER'/scripts/'$var_osm_conf'_osmconf.ini'
 ```
 
 !!! tip
@@ -158,7 +164,7 @@ ogr2ogr -append -clipsrc $REPER'/'$EMPRISE -f "PostgreSQL" PG:"host=$C_HOST user
 
 Après avoir intégré les données OpenStreetMap dans PostgreSQL, il est maintenant possible de les visualiser avec QGIS pour notamment faire une comparaison visuelle avec les données internes mais cela s'apparente à chercher des aiguilles dans une meule de foin. Je vous propose donc de créer une requête pour associer spatialement l'entité OpenStreetMap la plus proche de notre donnée si elle se trouve dans un rayon de 20m (choix purement arbitraire).
 
-Après avoir créé une colonne id_osm dans ma table des composteurs, on va lancer la requête pour renseigner l'identifiant OSM dans la table des composteurs, il sera donc stocké en dur.
+Après avoir créé une colonne `id_osm` dans ma table des composteurs, on va lancer la requête pour renseigner l'identifiant OSM dans la table des composteurs, il sera donc stocké en dur.
 
 ```sql
 -- On désactive le trigger permettant de renseigner la date de mise à jour
@@ -237,10 +243,10 @@ Voici un autre exemple avec des données sur le patrimoine :
 
 ### 7. Edition de la donnée et récupération de l'id_osm à travers un trigger
 
-Vous l'avez compris la mise à jour de notre id_osm ne se fait qu'après l'intégration des données OpenStreetMap actualisées mais pour gérer les actions réalisées par les utilisateurs de notre base de données interne nous utilisons un trigger afin de mettre à jour l'id_osm à une entité modifiée ou ajoutée. Ce trigger utilise la même définition que la requête SQL lancée après l'intégration des données OSM.
+Vous l'avez compris la mise à jour de notre `id_osm` ne se fait qu'après l'intégration des données OpenStreetMap actualisées mais pour gérer les actions réalisées par les utilisateurs de notre base de données interne nous utilisons un *trigger* afin de mettre à jour l'`id_osm` à une entité modifiée ou ajoutée. Ce *trigger* utilise la même définition que la requête SQL lancée après l'intégration des données OSM.
 
 ```sql
-CREATE OR REPLACE FUNCTION dechet.trigger_set_openstreetmap_ccpl_composteurs()
+CREATE OR REPLACE FUNCTION dechet.trigger_set_openstreetmap_composteurs()
 RETURNS TRIGGER AS $$
 BEGIN
 
@@ -259,7 +265,7 @@ $$ LANGUAGE plpgsql;
 CREATE TRIGGER trigger_set_openstreetmap_composteurs
 BEFORE INSERT OR UPDATE ON dechet.composteurs
 FOR EACH ROW
-EXECUTE PROCEDURE dechet.trigger_set_openstreetmap_ccpl_composteurs();
+EXECUTE PROCEDURE dechet.trigger_set_openstreetmap_composteurs();
 ```
 
 ----
@@ -268,7 +274,7 @@ EXECUTE PROCEDURE dechet.trigger_set_openstreetmap_ccpl_composteurs();
 
 Avec cette solution "low cost" nous pouvons identifier rapidement des évolutions ou des différences entre nos données et les informations saisies dans OpenStreetMap ce qui nous permet d'une part d'améliorer l'information que nous apportons à nos utilisateurs et d'autre part de contribuer pleinement au projet collaboratif.
 
-Après la phase mise en oeuvre et d'état des lieux sur le territoire, nous allons maintenant entrer dans la phase longue d'harmonisation de l'information mais ce travail s'inscrit pleinement dans notre participation aux géo-communs.
+Après la phase de mise en œuvre et d'état des lieux sur le territoire, nous allons maintenant entrer dans la phase longue d'harmonisation de l'information mais ce travail s'inscrit pleinement dans notre participation aux géo-communs.
 
 ----
 
@@ -277,3 +283,6 @@ Après la phase mise en oeuvre et d'état des lieux sur le territoire, nous allo
 --8<-- "content/team/fbor.md"
 
 {% include "licenses/default.md" %}
+
+<!-- Intègre le glossaire centralisé -->
+--8<-- "content/toc_nav_ignored/snippets/glossaire.md"
