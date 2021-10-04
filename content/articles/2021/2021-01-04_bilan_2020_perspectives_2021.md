@@ -1,6 +1,7 @@
 ---
 title: "2020 dans le géorétro, 2021 en ligne de mire"
-authors: ["Geotribu"]
+authors:
+    - Geotribu
 categories: ["article"]
 date: 2021-01-06 11:11
 description: "L'équipe de Geotribu vous souhaite ses meilleurs voeux pour 2021, avec quelques statistiques sur l'année 2020 et une feuille de route 2021."

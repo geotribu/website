@@ -1,6 +1,7 @@
 ---
 title: "Proposer un article"
-authors: ["Geotribu"]
+authors:
+    - Geotribu
 categories: ["contribution"]
 date: "2021-05-24 10:20"
 description: "Comment proposer un article sur Geotribu : recommandations, outils et workflow."

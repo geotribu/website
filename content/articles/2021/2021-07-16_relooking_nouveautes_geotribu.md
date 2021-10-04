@@ -1,6 +1,7 @@
 ---
 title: "Mise à jour estivale 2021"
-authors: ["Geotribu"]
+authors:
+    - Geotribu
 categories: ["article"]
 date: "2021-07-16 15:20"
 description: "Ce vendredi, pas de revue de presse mais une revue des nouveautés du site récentes : licences, page d'accueil et sponsoring à venir."

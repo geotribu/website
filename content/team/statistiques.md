@@ -1,6 +1,7 @@
 ---
 title: "Référencement et fréquentation du site"
-authors: ["Geotribu"]
+authors:
+    - Geotribu
 categories: ["meta"]
 date: "2021-07-05 10:20"
 description: "Consulter les statistiques de fréquentation (Google Analytics) et de référencement (Google Search) de Geotribu."

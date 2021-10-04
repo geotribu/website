@@ -48,7 +48,8 @@ Exemple pour la GeoRDP de Noël 2020 :
 ```yaml
 ---
 title: "Revue de presse du 25 décembre 2020"
-authors: ["Geotribu"]
+authors:
+    - Geotribu
 categories: ["revue de presse"]
 date: 2020-12-25 14:20
 description: "GeoRDP du 25 décembre 2020 : la revue de presse géomatique de Geotribu pour souhaiter Joyeux Noël et bonnes fêtes !"

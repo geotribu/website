@@ -1,6 +1,7 @@
 ---
 title: "Ajouter une news"
-authors: ["Geotribu"]
+authors:
+    - Geotribu
 categories: ["contribution"]
 date: "2021-09-30 10:20"
 description: "Ajouter une actualité à la prochaine revue de presse de Geotribu (GeoRDP)."

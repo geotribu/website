@@ -1,6 +1,7 @@
 ---
 title: "A propos"
-authors: ["Geotribu"]
+authors:
+    - Geotribu
 categories: ["meta"]
 date: "2021-05-20 10:20"
 description: "Geotribu, c'est quoi ? Qui se cache dans le géotipi ? Présentation et trombinoscope."

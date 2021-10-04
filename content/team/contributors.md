@@ -1,6 +1,7 @@
 ---
 title: "L'équipe Geotribu"
-authors: ["Geotribu"]
+authors:
+    - Geotribu
 categories: ["meta"]
 date: "2020-04-10 10:20"
 description: "Présentation des contributeurs actifs de Geotribu et remerciements aux personnes et projets libres qui rendent l'aventure possible."

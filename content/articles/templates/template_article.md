@@ -1,7 +1,9 @@
 ---
 title: "Titre principal"
-authors: ["Prénom NOM"]
-categories: ["article"]
+authors:
+    - Prénom NOM
+categories:
+    - article
 date: "2021-08-09 10:20"
 description: "Description pour le SEO."
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
@@ -15,8 +17,6 @@ tags:
 # Titre principal
 
 :calendar: Date de publication initiale : 9 août 2021
-
-**Mots-clés :** Mot-clé 1 | Mot-clé 2
 
 Introduction
 

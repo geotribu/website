@@ -1,6 +1,7 @@
 ---
 title: "Présentation de Geotribu sur les Reclus aux Confins"
-authors: ["Geotribu"]
+authors:
+    - Geotribu
 categories: ["article"]
 date: 2021-03-05 14:00
 description: "Les Reclus aux Confins : Découvrir ou redécouvrir la présentation de GeoTribu - Contributions ouvertes à tous"
