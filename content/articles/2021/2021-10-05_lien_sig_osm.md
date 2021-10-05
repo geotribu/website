@@ -79,11 +79,11 @@ Voici le fichier `config.env` à adapter :
 # REPERTOIRE DE TRAVAIL
 REPER='/Users/'
 
-# REPERTOIRE DE SORTIE
-REPER_OUT='data_out'
+# FICHIER PBF
+F_PBF='LANGUEDOC_ROUSSILLON.pbf'
 
-# REPERTOIRE TEMPORAIRE
-REPER_TEMP='data_temp'
+# REPERTOIRE DES DONNEES
+REPER_IN='data_in'
 
 # PARAMETRES OGR
 LINK_OGR=ogr2ogr
@@ -103,9 +103,11 @@ C_DBNAME='database'
 
 Afin de restreindre l'extraction des données OpenStreetMap à notre périmètre d'étude, il est préférable d'utiliser un fichier d'emprise que je stocke au format .shp dans mon répertoire de travail.
 
+[![Arborescence](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/arborescence.PNG "Arborescence"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/arborescence.PNG){: data-mediabox="lightbox-gallery" data-title="Arborescence" }
+
 ### 4. Un script par donnée à extraire et à intégrer dans PostgreSQL
 
-![logo GDAL tshirt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_logo_tshirt.webp "logo GDAL tshirt"){: .img-rdp-news-thumb }
+![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
 
 Pour la suite des opérations, j'utilise [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) pour lire le fichier OpenStreetMap (.pbf) préalablement téléchargé afin d'intégrer une information structurée dans PostgreSQL. Si je reprends l'exemple de mes composteurs, je commence par parcourir le [wiki OpenStreetMap](https://wiki.openstreetmap.org/wiki/Main_Page) pour identifier les tags qui vont me permettre de les extraire facilement et je les ajoute dans le [fichier osmconf.ini](https://github.com/OSGeo/gdal/blob/master/gdal/data/osmconf.ini) utilisé par ogr2ogr.
 
@@ -130,7 +132,7 @@ Maintenant que le fichier de configuration est paramétré, on va passer au scri
 #------------------------------------------------------------------------------------------------------------
 # NOM DU FICHIER _osmconf.ini
 var_osm_conf=DECHETS
-# NOM DU SCHEMA DANS LEQUEL EST STOCKE L'INFORMATION
+# NOM DU SCHEMA DANS LEQUEL EST STOCKEE L'INFORMATION
 var_schema=dechet
 # NOM DE LA TABLE CORRESPONDANT AUX COMPOSTEURS OSM
 var_table=composteurs_osm
