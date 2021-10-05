@@ -103,7 +103,8 @@ C_DBNAME='database'
 
 Afin de restreindre l'extraction des données OpenStreetMap à notre périmètre d'étude, il est préférable d'utiliser un fichier d'emprise que je stocke au format .shp dans mon répertoire de travail.
 
-[![Arborescence](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/arborescence.PNG "Arborescence"){: .img-center loading=lazy width=200px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/arborescence.PNG){: data-mediabox="lightbox-gallery" data-title="Arborescence" }
+[![Arborescence](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/arborescence.PNG "Arborescence"){: loading=lazy width=200px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/arborescence.PNG){: data-mediabox="lightbox-gallery" data-title="Arborescence" }
+{: align=middle }
 
 ### 4. Un script par donnée à extraire et à intégrer dans PostgreSQL
 
