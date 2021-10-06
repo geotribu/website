@@ -1,7 +1,9 @@
 ---
 title: "Sauvegarde des contenus et des images"
 authors: ["Julien Moura"]
-categories: ["article", "meta"]
+categories:
+    - article
+    - Geotribu
 date: 2021-06-01 10:20
 description: "Comment fonctionne la sauvegarde automatique du site Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/workflow/geotribu_backup_result_github_release.png"

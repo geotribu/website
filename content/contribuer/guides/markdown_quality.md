@@ -1,6 +1,9 @@
 ---
 title: "Rédiger en Markdown : enjeux de qualité et régles"
-categories: ["article", "contribution", "tutoriel"]
+categories:
+    - article
+    - contribution
+    - tutoriel
 date: 2020-09-14 14:20
 description: "Rédiger en Markdown : règles partagées, erreurs fréquentes et mécanismes de validation."
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_quick_exemple_rendu.png"

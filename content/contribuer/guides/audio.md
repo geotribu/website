@@ -1,6 +1,9 @@
 ---
 title: Intégrer un contenu audio
-categories: ["article", "contribution", "tutoriel"]
+categories:
+    - article
+    - contribution
+    - tutoriel
 date: 2021-08-03 10:20
 description: "Guide de contribution à Geotribu : comment intégrer un fichier audio (podcast, etc.) dans un contenu en Markdown."
 image: "https://cdn.geotribu.fr/img/internal/contribution/audio/html_audio_tag.png"

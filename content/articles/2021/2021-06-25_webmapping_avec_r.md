@@ -1,7 +1,9 @@
 ---
 title: "De petites applications webmapping avec R"
 authors: ["Romain LACROIX"]
-categories: ["article", "tutoriel"]
+categories:
+    - article
+    - tutoriel
 date: "2021-06-25 10:20"
 description: "Comment réaliser des cartes interactives personnalisées simplement à l'aide de R et quelques packages"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/exempletitre.png"

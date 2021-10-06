@@ -2,7 +2,8 @@
 title: "Crédits et remerciements"
 authors:
     - Geotribu
-categories: ["meta"]
+categories:
+    - Geotribu
 date: "2020-04-10 10:20"
 description: "L'aventure de Geotribu est rendue possible par le travail et le soutien de personnes et aussi d'outils et ressources libres. Crédits et remerciements."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"

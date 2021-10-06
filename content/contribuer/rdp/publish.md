@@ -2,7 +2,8 @@
 title: "Publier et diffuser"
 authors:
     - Geotribu
-categories: ["contribution"]
+categories:
+    - contribution
 date: "2021-09-30 10:20"
 description: "Publication et diffusion d'une revue de presse de Geotribu (GeoRDP)."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
