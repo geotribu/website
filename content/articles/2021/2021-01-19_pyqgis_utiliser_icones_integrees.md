@@ -1,6 +1,7 @@
 ---
 title: "Plugin QGIS : utiliser les icônes intégrées"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

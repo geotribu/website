@@ -1,6 +1,7 @@
 ---
 title: "PyQGIS : lister et prévisualiser les images intégrées"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

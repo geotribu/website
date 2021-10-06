@@ -1,6 +1,7 @@
 ---
 title: "Le web-scraping avec Scrapy"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

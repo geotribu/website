@@ -1,6 +1,7 @@
 ---
 title: "Geotribu à la maison"
-authors: ["Julien Moura"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

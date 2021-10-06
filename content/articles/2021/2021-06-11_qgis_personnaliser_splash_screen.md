@@ -1,6 +1,7 @@
 ---
 title: "Personnaliser le splash screen de QGIS"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

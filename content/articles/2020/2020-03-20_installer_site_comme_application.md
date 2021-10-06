@@ -1,6 +1,7 @@
 ---
 title: "Installer le site Geotribu comme une application"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
 date: "2020-03-31 10:20"

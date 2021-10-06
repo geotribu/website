@@ -1,6 +1,7 @@
 ---
 title: "Les commentaires sur Geotribu : de Disqus à Isso"
-authors: ["Julien Moura"]
+authors:
+    - Julien MOURA
 categories:
     - article
 date: "2021-05-14 10:20"

@@ -1,6 +1,7 @@
 ---
 title: "Développement QGIS : utiliser les documentations hors-ligne avec Zeal"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
 date: "2021-03-02 10:20"

@@ -1,6 +1,7 @@
 ---
 title: "Utiliser GDAL sous Windows avec WSL (Windows Subsystem for Linux)"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

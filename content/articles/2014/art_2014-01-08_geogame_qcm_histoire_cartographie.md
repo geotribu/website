@@ -1,6 +1,7 @@
 ---
 title: "QCM Histoire de la cartographie"
-authors: ["Jérémie ORY"]
+authors:
+    - Jérémie ORY
 categories:
     - article
 date: "2014-01-08 10:20"

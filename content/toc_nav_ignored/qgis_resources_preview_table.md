@@ -1,6 +1,7 @@
 ---
 title: "QGIS embedded images - Cheatsheet"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
 date: "2021-02-01 15:20"

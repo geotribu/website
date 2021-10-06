@@ -1,6 +1,7 @@
 ---
 title: "Unfolded Studio, une nouvelle plateforme de visualisation de géodonnées"
-authors: ["Aurélien Chaumet"]
+authors:
+    - Aurélien CHAUMET
 categories:
     - article
 date: 2021-01-26 11:11

@@ -1,6 +1,7 @@
 ---
 title: "Contribution facile et ludique à OSM avec Street Complete"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
 date: "2020-11-21 10:20"

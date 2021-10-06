@@ -1,6 +1,7 @@
 ---
 title: "Afficher facilement l'aide de son plugin QGIS"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

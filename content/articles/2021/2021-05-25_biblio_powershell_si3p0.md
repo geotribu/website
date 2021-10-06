@@ -1,6 +1,7 @@
 ---
 title: "Aperçu de la bibliothèque PowerShell SI3P0"
-authors: ["Michaël GALIEN"]
+authors:
+    - Michaël GALIEN
 categories:
     - article
 date: "2021-05-25 16:00"

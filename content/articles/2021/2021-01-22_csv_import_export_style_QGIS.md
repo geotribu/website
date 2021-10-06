@@ -1,6 +1,7 @@
 ---
 title: "CSV - Import/export d'un style catégorisé QGIS"
-authors: ["Florian Boret"]
+authors:
+    - Florian BORET
 categories:
     - article
 date: 2021-01-22 11:11

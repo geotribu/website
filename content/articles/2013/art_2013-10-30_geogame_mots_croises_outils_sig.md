@@ -1,6 +1,7 @@
 ---
 title: "Mots-croisés avec les outils SIG"
-authors: ["Jérémie ORY"]
+authors:
+    - Jérémie ORY
 categories:
     - article
 date: "2013-10-30 10:20"

@@ -1,6 +1,7 @@
 ---
 title: "Vectipy, un serveur minimaliste de tuiles vectorielles (MVT)"
-authors: ["Jean-Baptiste DESBAS"]
+authors:
+    - Jean-Baptiste DESBAS
 categories:
     - article
     - tutoriel

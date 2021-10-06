@@ -1,6 +1,7 @@
 ---
 title: "QTribu, le plugin QGIS inutile donc forcément indispensable"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
 date: "2021-04-01 13:20"

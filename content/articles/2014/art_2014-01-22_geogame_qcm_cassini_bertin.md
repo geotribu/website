@@ -1,6 +1,7 @@
 ---
 title: "QCM de Cassini à Bertin"
-authors: ["Jérémie ORY"]
+authors:
+    - Jérémie ORY
 categories:
     - article
 date: "2014-01-22 10:20"

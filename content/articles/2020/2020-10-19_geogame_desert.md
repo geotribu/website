@@ -1,6 +1,8 @@
 ---
 title: "Privé de désert : le géogame inédit"
-authors: ["Jérémie ORY", "Julien MOURA"]
+authors:
+    - Jérémie ORY
+    - Julien MOURA
 categories:
     - article
 date: "2020-10-22 10:20"

@@ -1,6 +1,7 @@
 ---
 title: "Sauvegarde des contenus et des images"
-authors: ["Julien Moura"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - Geotribu

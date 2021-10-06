@@ -1,6 +1,7 @@
 ---
 title: "Un rendu carte topo QGIS basé sur la BD TOPO®"
-authors: ["Florian Boret"]
+authors:
+    - Florian BORET
 categories:
     - article
     - tutoriel

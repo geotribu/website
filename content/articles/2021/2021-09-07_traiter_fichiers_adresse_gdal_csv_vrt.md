@@ -1,6 +1,7 @@
 ---
 title: "Utiliser GDAL pour traiter les fichiers de la Base Adresse Nationale et Locales"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

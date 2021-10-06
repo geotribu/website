@@ -1,6 +1,7 @@
 ---
 title: "Histoire de Geotribu : vie, mort et renaissance."
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
 date: "2020-08-31 10:20"

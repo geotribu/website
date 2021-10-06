@@ -1,6 +1,7 @@
 ---
 title: "Open Data Kit pour la collecte de données géographiques dans PostGIS (1/3)"
-authors: ["Mathieu BOSSAERT"]
+authors:
+    - Mathieu BOSSAERT
 categories:
     - article
 date: "2021-06-08 10:20"

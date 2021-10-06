@@ -1,6 +1,7 @@
 ---
 title: "Du HTML en Markdown (et vice-versa)"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

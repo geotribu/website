@@ -1,6 +1,7 @@
 ---
 title: "Faire de la cartographie thématique sur le Web avec MapLibreGL"
-authors: ["Boris MERICSKAY"]
+authors:
+  - Boris MERICSKAY
 categories:
     - article
 date: "2021-04-20 10:20"

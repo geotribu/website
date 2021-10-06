@@ -1,6 +1,7 @@
 ---
 title: "Le pendu de la géomatique"
-authors: ["Jérémie ORY"]
+authors:
+    - Jérémie ORY
 categories:
     - article
 date: "2014-03-19 10:20"

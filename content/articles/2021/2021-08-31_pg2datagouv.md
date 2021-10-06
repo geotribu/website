@@ -1,6 +1,7 @@
 ---
 title: "Automatiser la publication et la mise à jour de données de PostgreSQL vers Data.gouv.fr"
-authors: ["Florian Boret"]
+authors:
+    - Florian BORET
 categories:
     - article
     - tutoriel

@@ -1,6 +1,7 @@
 ---
 title: "Mots-croisés avec les solutions de webmapping"
-authors: ["Jérémie ORY"]
+authors:
+    - Jérémie ORY
 categories:
     - article
 date: "2013-11-20 10:20"

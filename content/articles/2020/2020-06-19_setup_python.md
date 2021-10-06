@@ -1,6 +1,7 @@
 ---
 title: "Python - Configuration sur Windows et outillage"
-authors: ["Julien MOURA"]
+authors:
+    - Julien MOURA
 categories:
     - article
     - tutoriel

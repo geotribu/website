@@ -1,6 +1,7 @@
 ---
 title: "Représentation d'un réseau de bus"
-authors: ["Florian Boret"]
+authors:
+    - Florian BORET
 categories:
     - article
     - tutoriel
