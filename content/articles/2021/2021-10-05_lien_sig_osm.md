@@ -41,7 +41,7 @@ Après cette première année bien remplie à la Communauté de Communes, j'ai p
 
 ----
 
-##  Fonctionnement et processus
+## Fonctionnement et processus
 
 ```mermaid
 graph TD;
@@ -254,12 +254,12 @@ RETURNS TRIGGER AS $$
 BEGIN
 
   NEW.id_osm = (SELECT
-	   g.id_osm
+    g.id_osm
    FROM (  SELECT
             c.id_osm as id_osm,
             round(st_distance(NEW.geom, c.geom)::numeric) AS distance
            FROM dechet.composteurs_osm c
-		 WHERE st_dwithin(NEW.geom, c.geom, 20::double precision)) g
+   WHERE st_dwithin(NEW.geom, c.geom, 20::double precision)) g
   ORDER BY g.distance );
   RETURN NEW;
 END;
