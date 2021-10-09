@@ -1,6 +1,7 @@
 ---
 title: "Rendez-vous aux GéoDataDays"
-authors: "Geotribu"
+authors:
+    - Geotribu
 categories:
     - article
 date: "2020-09-09 10:20"
