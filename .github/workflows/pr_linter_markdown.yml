@@ -30,4 +30,4 @@ jobs:
           fail_on_error: true
           filter_mode: diff_context
           reporter: github-pr-review
-          markdownlint_flags: -c '.markdownlint.json' -i '**/template_*.md' 'content/**/202*.md'
+          markdownlint_flags: "-c '.markdownlint.json' -i '**/template_*.md' 'content/**/202*.md'"
