@@ -1,6 +1,7 @@
 ---
 title: "Intégrer une image"
-author: "Julien Moura"
+authors:
+    - Julien Moura
 categories:
     - article
     - contribution
