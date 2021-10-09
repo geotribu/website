@@ -1,10 +1,10 @@
 ---
 title: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
 authors:
-  - Florian Boret
+    - Florian Boret
 categories:
-  - article
-  - tutoriel
+    - article
+    - tutoriel
 date: 2021-10-05 14:20
 description: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/osm_sig.png"
