@@ -1,6 +1,7 @@
 ---
 title: "Impact de Twitter sur la fréquentation du site GeoTribu"
-authors: ["Aurélien CHAUMET"]
+authors:
+    - Aurélien CHAUMET
 categories:
     - article
 date: "2021-02-09 10:20"
