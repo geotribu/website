@@ -18,8 +18,6 @@ tags:
 
 :calendar: Date de publication initiale : 5 mars 2021
 
-**Mots-clés :** Geotribu | communauté | Reclus aux Confins | Twitch
-
 ## Intro
 
 ![logo Twitch](https://cdn.geotribu.fr/img/logos-icones/divers/twitch.png "Twitch"){: .img-rdp-news-thumb }

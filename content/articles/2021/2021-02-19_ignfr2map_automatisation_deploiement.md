@@ -20,8 +20,6 @@ tags:
 
 :calendar: Date de publication initiale : 19 Février 2021
 
-**Mots-clés :** bash | IGN | déploiement | GitHub Actions | GitHub Pages
-
 Pré-requis :
 
 - l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)

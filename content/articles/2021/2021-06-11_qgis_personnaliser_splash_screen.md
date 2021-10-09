@@ -20,8 +20,6 @@ tags:
 
 :calendar: Date de publication initiale : 11 juin 2021
 
-**Mots-clés :** QGIS | interface graphique
-
 Pré-requis :
 
 - aucun

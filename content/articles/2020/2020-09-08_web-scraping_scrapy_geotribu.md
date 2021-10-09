@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 7 septembre 2020
 
-**Mots-clés :** Geotribu | histoire | Scrapy | Python | web-scraping
-
 ## Introduction
 
 Après avoir disserté sur [la petite histoire de Geotribu](../2020-08-31_geotribu_histoire/), il est désormais temps de se pencher sur la méthode retenue pour récupérer les anciens contenus.

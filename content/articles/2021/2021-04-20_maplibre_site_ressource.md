@@ -21,8 +21,6 @@ tags:
 
 :calendar: Date de publication initiale : 20 Avril 2021
 
-**Mots-clés :** MapLibreGL | Ressource | webmapping
-
 Fork open source de MapboxGL, **MapLibreGL** représente l'une des solutions actuelles de cartographie en ligne les plus intéressantes. Bénéficiant d'une communuaté active de plus de 300 contributeurs, la bibliotèque JavaScript [MapLibreGL.js](https://github.com/maplibre/maplibre-gl-js) permet de mettre en place très rapidement des cartes en lignes basées sur les **tuiles vectorielles** et le **WebGL**.
 
 ![maplibre](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/maplibre.JPG "Maplibre"){: .img-center loading=lazy }

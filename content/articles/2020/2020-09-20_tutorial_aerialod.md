@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 14 octobre 2020
 
-**Mots-clés :** Aerialod | Cartes | 3D
-
 [![oceania forest](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg "exemple aerialod Oceania foret"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg){: data-mediabox="illustrations" data-title="Couverture forestière d'une partie de l'Océanie" }
 
 ## La cartographie 3D, passage à une autre géo-dimension

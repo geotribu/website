@@ -22,8 +22,6 @@ tags:
 
 :calendar: Date de publication initiale : 7 septembre 2021
 
-**Mots-clés :** Adresse | BAL | BAN | CSV | GDAL
-
 Prérequis :
 
 - GDAL > 3 - sur [Windows 10+, il est possible d'utiliser WSL](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/)

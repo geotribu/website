@@ -18,8 +18,6 @@ tags:
 
 :calendar: Date de publication initiale : 23 février 2021
 
-**Mots-clés :** Webmapping | Tuiles vectorielles | WebGL
-
 ## Introduction
 
 Le recent passage de la bibliothèque Javascript MapboxGL à une [nouvelle licence d'utilisation moins ouverte](https://github.com/mapbox/mapbox-gl-js/issues/10162), et disons le fermée, pousse à repenser la dépendance des cartographes du Web à cet ecosystème innovant, fonctionnel et très efficace.

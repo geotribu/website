@@ -16,8 +16,6 @@ tags:
 
 :calendar: Date de publication initiale : 16 juillet 2021
 
-**Mots-clés :** Geotribu
-
 ## Introduction
 
 ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }

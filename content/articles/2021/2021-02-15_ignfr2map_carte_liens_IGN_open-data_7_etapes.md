@@ -21,8 +21,6 @@ tags:
 
 :calendar: Date de publication initiale : 15 Février 2021
 
-**Mots-clés :** bash | IGN | Leaflet | sed | awk
-
 ## Intro
 
 ![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }

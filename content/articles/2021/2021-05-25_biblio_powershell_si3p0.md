@@ -21,8 +21,6 @@ tags:
 
 :calendar: Date de publication initiale : 25 mai 2021
 
-**Mots-clés :** SIG | PowerShell | PostgreSQL | PostGIS | Open Source | BAN | Adresse
-
 Pré-requis :
 
 - une base de données PostgreSQL/PostGIS (v10.5/v.2.4)

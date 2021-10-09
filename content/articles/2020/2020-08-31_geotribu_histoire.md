@@ -17,8 +17,6 @@ tags:
 
 :calendar: Date de publication initiale : 31 août 2020
 
-**Mots-clés :** Geotribu | histoire | bénévolat
-
 ## Introduction
 
 En juillet dernier, j'ai été invité par [IDGEO](https://www.idgeo.fr/) à faire un retour d'expérience sur l'aventure Geotribu auprès des participant/es au [CQP GEOM](https://www.idgeo.fr/formation/cqp-geom-geomaticien-developpeur-dapplications-spatiales/) dans le cadre du bloc dédié à la veille et à l'implication dans l'écosystème.

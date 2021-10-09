@@ -18,8 +18,6 @@ tags:
 
 :calendar: Date de publication initiale : 14 mai 2021
 
-**Mots-clés :** Geotribu | Isso | commentaire | open source
-
 ## Introduction
 
 ![icône commentaire](https://cdn.geotribu.fr/img/logos-icones/astuce.png "icône commentaire"){: .img-rdp-news-thumb }

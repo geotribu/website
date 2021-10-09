@@ -20,8 +20,6 @@ tags:
 
 :calendar: Date de publication initiale : 09 mars 2021
 
-**Mots-clés :** QGIS | PyQGIS | développement | plugin | documentation
-
 Pré-requis :
 
 - des notions en PyQGIS (Python + Qt + API QGIS)

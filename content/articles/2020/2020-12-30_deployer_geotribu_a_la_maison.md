@@ -20,8 +20,6 @@ tags:
 
 :calendar: Date de publication initiale : 30 décembre 2020
 
-**Mots-clés :** web | Geotribu
-
 Pré-requis : une connexion internet.
 
 ## Intro

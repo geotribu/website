@@ -24,8 +24,6 @@ tags:
 
 :calendar: Date de publication initiale : 22 septembre 2021
 
-**Mots-clés :** ODK | PostgresSQL | PostGIS | PL/pgSQL | Android
-
 ## Troisième partie - Récupération des données dans notre SI
 
 ![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }

@@ -21,8 +21,6 @@ tags:
 
 :calendar: Date de publication initiale : 22 juin 2021
 
-**Mots-clés :** ODK | PostgresSQL | PostGIS | Android
-
 ![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
 
 Aprés vous avoir présenté les outils proposés par ODK et la place qu'ils occupent dans notre SI centré sur PostGIS, ce second article illustre à travers notre formulaire généraliste l'utilisation des différents "widgets" à notre disposition.

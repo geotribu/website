@@ -17,8 +17,6 @@ tags:
 
 :calendar: Date de publication initiale : 20 novembre 2013
 
-**Mots-clés :** Géogame | mots-croisés | webmapping
-
 Pour ce deuxième Geogame, nous vous avons préparé un Mot croisé spécial Webmapping ! C'est le moment de tester vos connaissances sur les différents outils...
 
 **Rappel des règles :** il est nécessaire de compléter l'ensemble de la grille pour pouvoir évaluer ses réponses.

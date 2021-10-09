@@ -22,8 +22,6 @@ hide:
 
 :calendar: Date de publication initiale : 3 août 2021
 
-**Mots-clés :** tracking | fréquentation | référencement | transparence
-
 ![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
 
 En complément de la liste des dispositifs de mesure d'audience détaillée sur [cette page](/team/confidentialite/), nous partageons ici des tableaux de bord représentant les statistiques remontées par les outils Google :

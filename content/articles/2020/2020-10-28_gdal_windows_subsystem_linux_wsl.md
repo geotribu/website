@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 28 octobre 2020
 
-**Mots-clés :** GDAL | OGR | Windows | WSL | Linux
-
 Pré-requis :
 
 - un [Windows à jour](#version-minimale-de-windows)

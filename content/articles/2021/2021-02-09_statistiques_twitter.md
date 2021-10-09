@@ -21,8 +21,6 @@ tags:
 
 :calendar: Date de publication initiale : 9 février 2021
 
-**Mots-clés :** python | scraping | twint | statistiques | Geotribu
-
 Prérequis :
 
 - un interpréteur Python > 3.5

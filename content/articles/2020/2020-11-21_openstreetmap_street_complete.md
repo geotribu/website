@@ -18,8 +18,6 @@ tags:
 
 :calendar: Date de publication initiale : 21 novembre 2020
 
-**Mots-clés :** OpenStreetMap | Street Complete | application Android
-
 ## Introduction
 
 ![icône Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-rdp-news-thumb }

@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 1er avril 2021
 
-**Mots-clés :** QGIS | plugin | délire | QTribu
-
 ## Un plugin sérieux pour ne pas se prendre au sérieux
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }

@@ -22,8 +22,6 @@ tags:
 
 :calendar: Date de publication initiale : 4 janvier 2021
 
-**Mots-clés :** Geotribu | voeux | fréquentation | statistiques
-
 ## 2020
 
 :hourglass_flowing_sand: Vous connaissez l'histoire, déjà relatée dans nos articles ([ici](/articles/2020/2020-08-31_geotribu_histoire/), [là](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) et encore [là](/articles/2020/2020-09-11_html2markdown/)), le site renaît doucement de ses cendres depuis l'opération géophénix du printemps dernier.

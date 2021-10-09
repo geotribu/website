@@ -25,8 +25,6 @@ tags:
 
 :calendar: Date de publication initiale : 31 Aout 2021
 
-**Mots-clés :** PostgreSQL | data.gouv.fr | Open Data | Bash | API | OGR | jq | cURL
-
 ## Prérequis
 
 - l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)

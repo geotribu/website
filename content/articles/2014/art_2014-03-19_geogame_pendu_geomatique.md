@@ -18,8 +18,6 @@ tags:
 
 :calendar: Date de publication initiale : 19 mars 2014
 
-**Mots-clés :** Géogame | pendu | géomatique
-
 Les Geogames sont de retour après quelques semaines d'absence. Cette fois-ci, nous avons décidé de nous attaquer à un jeu bien connu de tous, le pendu ! La potence est prête à vous accueillir : défiez-la !
 
 **Règles du jeu :**

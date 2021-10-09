@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 8 janvier 2014
 
-**Mots-clés :** Géogame | QCM | histoire | cartographie
-
 L'équipe de GeoTribu vous propose cette semaine de tester vos connaissances en cartographie avec un nouveau jeu, les questions à choix multiples. Le principe est simple, on vous pose une question, vous cochez une ou plusieurs réponses, une fois que vous avez répondu à toutes les questions, on vous retourne un pourcentage de bonnes réponses, ce qui vous permet de vérifier votre niveau ! Pour cette première de ce nouveau jeu, nous avons décidé de s'attaquer à l'histoire de la cartographie.
 
 Vous êtes prêt ? c'est parti... Bonne chance !

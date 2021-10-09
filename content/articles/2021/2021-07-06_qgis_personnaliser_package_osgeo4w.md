@@ -21,8 +21,6 @@ tags:
 
 :calendar: Date de publication initiale : 6 juillet 2021
 
-**Mots-clés :** QGIS | OSGEO4W | installeur
-
 Pré-requis :
 
 - être en charge de déployer QGIS sur des postes d'une organisation, grande ou petite

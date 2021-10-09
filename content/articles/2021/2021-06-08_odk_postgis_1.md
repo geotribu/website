@@ -21,8 +21,6 @@ tags:
 
 :calendar: Date de publication initiale : 08 juin 2021
 
-**Mots-clés :** ODK | PostgreSQL | PostGIS | Android
-
 ![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
 
 Cette série de 3 articles vise à présenter Open Data Kit, qui est une solution de recueil de données sur téléphone Android, utilisée par le [Conservatoire d'Espaces Naturels d'Occitanie], pour la collecte de données spatialisées de biodiversité, et leur intégration à une base de données PostGIS.

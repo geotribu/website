@@ -22,8 +22,6 @@ tags:
 
 :calendar: Date de publication initiale : 25 janvier 2021
 
-**Mots-clés :** Python | QGIS | développement | plugin | interface graphique | script | Markdown
-
 Pré-requis :
 
 - une connexion internet

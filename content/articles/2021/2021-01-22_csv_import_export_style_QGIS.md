@@ -18,8 +18,6 @@ tags:
 
 :calendar: Date de publication initiale : 22 janvier 2021
 
-**Mots-clés :** QGIS | style | CSV | processing
-
 ## Historique (QGIS2)
 
 En 2015, après avoir lu l'article de José Guerrero [_Cómo establecer el color de un rasgo (feature) dependiendo de los valores de los atributos con PyQGIS_](https://joseguerreroa.wordpress.com/2015/02/22/como-establecer-el-color-de-un-rasgo-feature-dependiendo-de-los-valores-de-los-atributos-con-pyqgis/),  l'idée m'était venue de créer 2 scripts python/processing afin de générer un **style catégorisé** à partir d'un fichier CSV dans lequel des codes couleurs seraient renseignés.

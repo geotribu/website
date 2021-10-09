@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 20 mai 2021
 
-**Mots-clés :** tracking | confidentialité | RGPD
-
 Cette page détaille les dispositifs de traçage que l'utilisateur/ice final/e peut rencontrer sur le site Geotribu. Si la liste paraît longue c'est qu'elle est le fruit d'un effort de transparence :slightly_smiling_face:, mais pour faire court :
 
 > Quand c'est gratuit, c'est moi le produit !

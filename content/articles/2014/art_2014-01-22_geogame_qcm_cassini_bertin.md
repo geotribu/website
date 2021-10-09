@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 22 janvier 2014
 
-**Mots-clés :** Géogame | QCM | histoire | cartographie | Bertin | Cassini
-
 Cette semaine, nous vous proposons un deuxième Geogame, "questions choix multiples", sur l'histoire contemporaine française de la cartographie. De Cassini à Jacques Bertin, dix questions pour tester vos connaissances.
 
 ![citation](https://cdn.geotribu.fr/images/logos-icones/divers/quote_citation.png "icône citation"){: .img-rdp-news-thumb }

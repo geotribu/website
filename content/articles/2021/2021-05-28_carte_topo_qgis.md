@@ -20,8 +20,6 @@ tags:
 
 :calendar: Date de publication initiale : 28 Mai 2021
 
-**Mots-clés :** Carte topographique | QGIS | BD TOPO | Scan25 | IGN
-
 Pré-requis :
 
 - Avoir une BD TOPO® en version 3

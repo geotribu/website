@@ -20,8 +20,6 @@ tags:
 
 :calendar: Date de publication initiale : 5 mai 2021
 
-**Mots-clés :** GéoInterview | IGN | géocommun
-
 ## Introduction
 
 ![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "logo IGN"){: .img-rdp-news-thumb }

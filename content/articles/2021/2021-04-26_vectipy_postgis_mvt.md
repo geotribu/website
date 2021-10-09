@@ -20,8 +20,6 @@ license: cc4_by-sa
 
 :calendar: Date de publication initiale : 26 Avril 2021
 
-**Mots-clés :** Mapbox Vector Tiles | tuiles vectorielles | PostGIS | PostgreSQL
-
 Pré-requis :
 
 - Avoir une une base de données PostGIS >= 2.4 fonctionnelle

@@ -17,8 +17,6 @@ tags:
 
 :calendar: Date de publication initiale : 9 septembre 2020
 
-**Mots-clés :** GéoDataDays | événement | AFIGéo
-
 ![Bannière GéoDataDays 2020](https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_2020_banniere.jpg "GéoDataDays 2020 à Montpellier"){: loading=lazy }
 
 ## Un événement professionnel sympathique

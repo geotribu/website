@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 07 Avril 2021
 
-**Mots-clés :** QGIS | PostGIS | PostgreSQL | Bus
-
 Pré-requis :
 
 - Maîtriser PostgreSQL et PostGIS

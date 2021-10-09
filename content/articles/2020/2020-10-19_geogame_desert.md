@@ -18,8 +18,6 @@ tags:
 
 :calendar: Date de publication initiale : 22 octobre 2020
 
-**Mots-clés :** Géogame | désert | jeu
-
 ## Introduction
 
 [![icône Geogames Geotribu](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette_200x200.png "Géogames Geotribu"){: .img-rdp-news-thumb }](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette.png)

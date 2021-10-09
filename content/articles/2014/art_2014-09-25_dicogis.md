@@ -18,8 +18,6 @@ tags:
 
 :calendar: Date de publication initiale : 25 septembre 2014
 
-**Mots-clés :** DicoGIS | GDAL | OGR | Python | métadonnées
-
 Ou comment se créer un Petit Robert de l’information géographique en 5 minutes et 3 clics.  
 Je vous présente un petit utilitaire sans prétention sinon d'être bien pratique pour la gestion de données.
 

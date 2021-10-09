@@ -24,8 +24,6 @@ tags:
 
 :calendar: Date de publication initiale : 05 Octobre 2021
 
-**Mots-clés :** PostgreSQL | OpenStreetMap | Data | Bash | OGR | SQL | cURL
-
 ## Prérequis
 
 - l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)

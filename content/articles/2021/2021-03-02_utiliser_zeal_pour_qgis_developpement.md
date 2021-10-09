@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 2 mars 2021
 
-**Mots-clés :** développement | QGIS | documentation | IDE
-
 ![logo Zeal Docs](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/zeal.png "logo Zeal Docs"){: .img-rdp-news-thumb }
 
 Quand on développe sur QGIS (un plugin, un traitement ou carrément dans le coeur), la documentation technique est souvent ouverte quelque part dans le navigateur web.  

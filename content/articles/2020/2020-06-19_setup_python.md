@@ -19,8 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 19 juin 2020
 
-**Mots-clés :** Python | Windows | Développement
-
 Je travaille beaucoup avec Python sur Windows depuis quelques années. En comparaison avec des distributions Linux comme Debian où l'interpréteur est intégré au système (ce qui peut poser d'autres problèmes), cela a toujours été plus compliqué de se faire un environnement de travail confortable.
 Avec le changement de braquet de la firme de Redmond par rapport à l'open source, les choses se sont grandement améliorées ces dernières années.
 
