@@ -1,7 +1,10 @@
 ---
 title: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
-authors: ["Florian Boret"]
-categories: ["article", "tutoriel"]
+authors:
+  - Florian Boret
+categories:
+  - article
+  - tutoriel
 date: 2021-10-05 14:20
 description: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/osm_sig.png"
@@ -41,7 +44,7 @@ Après cette première année bien remplie à la Communauté de Communes, j'ai p
 
 ----
 
-##  Fonctionnement et processus
+## Fonctionnement et processus
 
 ```mermaid
 graph TD;
@@ -254,12 +257,12 @@ RETURNS TRIGGER AS $$
 BEGIN
 
   NEW.id_osm = (SELECT
-	   g.id_osm
+    g.id_osm
    FROM (  SELECT
             c.id_osm as id_osm,
             round(st_distance(NEW.geom, c.geom)::numeric) AS distance
            FROM dechet.composteurs_osm c
-		 WHERE st_dwithin(NEW.geom, c.geom, 20::double precision)) g
+   WHERE st_dwithin(NEW.geom, c.geom, 20::double precision)) g
   ORDER BY g.distance );
   RETURN NEW;
 END;

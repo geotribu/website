@@ -54,10 +54,7 @@ plugins:
         utm_source: "rss-feed"
         utm_medium: "RSS"
         utm_campaign: "feed-syndication"
-  - search:
-      lang: fr
-      prebuild_index: !ENV MKDOCS_SEARCH_PREBUILD_INDEX
-      separator: '[\s\-\.]+'
+  - search
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - redirects:

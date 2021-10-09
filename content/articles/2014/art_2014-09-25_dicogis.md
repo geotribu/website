@@ -1,6 +1,7 @@
 ---
 title: "DicoGIS : le dictionnaire de données SIG"
-authors: Julien Moura
+authors:
+    - Julien MOURA
 categories:
     - article
 date: 2014-09-25

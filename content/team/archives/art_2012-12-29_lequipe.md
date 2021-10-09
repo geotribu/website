@@ -1,6 +1,7 @@
 ---
 title: "L'équipe de GéoTribu fin 2012"
-authors: GeoTribu
+authors:
+    - Geotribu
 category: article
 date: 2012-12-29
 tags:
