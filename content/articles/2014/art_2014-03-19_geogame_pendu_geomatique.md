@@ -1,7 +1,9 @@
 ---
 title: "Le pendu de la géomatique"
-authors: ["Jérémie ORY"]
-categories: ["article"]
+authors:
+    - Jérémie ORY
+categories:
+    - article
 date: "2014-03-19 10:20"
 description: "Géogame de Geotribu : jouez au pendu de la géomatique ! Si la carte de France disparaît, vous avez perdu !"
 image: "https://cdn.geotribu.fr/img/geogames/geogame2_capture.png"

@@ -1,7 +1,10 @@
 ---
 title: "Privé de désert : le géogame inédit"
-authors: ["Jérémie ORY", "Julien MOURA"]
-categories: ["article"]
+authors:
+    - Jérémie ORY
+    - Julien MOURA
+categories:
+    - article
 date: "2020-10-22 10:20"
 description: "En restaurant les géogames de Geotribu, des mini-jeux sur la culture générale en cartographie et géomatique, j'ai trouvé un jeu qui n'avait jamais été publié qui consiste à associer les déserts à leurs continents. Saurez-vous ne pas finir privé/e de désert ?"
 image: "https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette.png"

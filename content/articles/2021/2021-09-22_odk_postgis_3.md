@@ -1,20 +1,22 @@
 ---
 ltitle: "Open Data Kit pour la collecte de données géographiques dans PostGIS (3/3)"
-authors: ["Mathieu BOSSAERT"]
-categories: ["article"]
+authors:
+    - Mathieu BOSSAERT
+categories:
+    - article
 date: "2021-09-22 10:30"
 description: "Troisième et dernier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/open_data_kit_postgresql.png"
 license: "CC-BY-SA"
 tags:
+    - Android
+    - collecte terrain
+    - JSON
     - ODK
     - Open Data Kit
     - PostgreSQL
     - PostGIS
-    - Collecte
-    - Android
     - SQL
-    - JSON
     - XML
 ---
 
@@ -91,6 +93,7 @@ Elles ont été présentées [ici](https://forum.getodk.org/t/sql-first-try-to-g
 Voici un petit résumé de ces essais et une présentation plus détaillée de la solution générique finalement mise en oeuvre.
 
 Ne souhaitant pas passer par un outil tiers, de type ETL (*Extract, Transform and Load*, [voir le travail décrit par Dave Henry avec Kettle](https://forum.getodk.org/t/automating-data-delivery-using-the-odata-endpoint-in-odk-central/22010)) pour réaliser cette tâche, nous avons exploré diverses pistes.
+
 ### Utilisation des fonctions XML de PostgreSQL
 
 ![icône XML](https://cdn.geotribu.fr/img/logos-icones/divers/xml.png "icône XML - XML File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
