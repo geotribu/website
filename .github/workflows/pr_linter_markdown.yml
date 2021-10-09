@@ -2,7 +2,7 @@ name: "🎳 Markdown Linter"
 
 # Trigger
 on:
-  pull_request_target:
+  pull_request:
     branches: [master]
     paths:
       - "content/**/*.md"
@@ -15,13 +15,13 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: markdownlint-github-check
-        uses: reviewdog/action-markdownlint@v0.2.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          filter_mode: added
-          reporter: github-pr-check
-          markdownlint_flags: 'content/**/202*.md'
+      # - name: markdownlint-github-check
+      #   uses: reviewdog/action-markdownlint@v0.2.0
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     filter_mode: added
+      #     reporter: github-pr-check
+      #     markdownlint_flags: 'content/**/202*.md'
 
       - name: markdownlint-github-pr-review
         uses: reviewdog/action-markdownlint@v0.2.0
@@ -30,4 +30,4 @@ jobs:
           fail_on_error: true
           filter_mode: diff_context
           reporter: github-pr-review
-          markdownlint_flags: 'content/**/202*.md'
+          markdownlint_flags: -c '.markdownlint.json' -i '**/template_*.md' 'content/**/202*.md'
