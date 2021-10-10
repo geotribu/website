@@ -52,7 +52,6 @@ jobs:
           GH_TOKEN_MATERIAL_INSIDERS: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
         run: |
           python -m pip install -U pip setuptools wheel
-          python -m pip install -U -r requirements.txt
           python -m pip install -U -r requirements-insiders.txt
 
       - name: Build in strict mode

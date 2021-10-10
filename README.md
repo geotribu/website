@@ -32,8 +32,10 @@ Après avoir cloné ou téléchargé le dépôt, installer les prérequis (de pr
 ```bash
 python -m pip install -U pip
 python -m pip install -U setuptools wheel
-python -m pip install -U -r requirements.txt
+python -m pip install -U -r requirements-free.txt
 ```
+
+#### Version Insiders
 
 Pour utiliser la [version Insiders du thème Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/), il faut disposer du *token* lié au compte GitHub de Geotribu :
 
