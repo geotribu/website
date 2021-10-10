@@ -9,8 +9,7 @@ description: "Deuxième géogame proposé par Geotribu : des mots-croisés sur l
 image: "https://cdn.geotribu.fr/img/geogames/geogame1_capture.png"
 tags:
     - Géogame
-    - Mots-croisés
-
+    - mots-croisés
 ---
 
 # Mots croisés : webmapping

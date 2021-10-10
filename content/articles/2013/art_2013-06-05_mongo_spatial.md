@@ -1,10 +1,14 @@
 ---
-title: Mongo Spatial
-Category: ["article"]
+title: "Mongo Spatial"
+authors:
+    - Geotribu
+categories:
+    - article
 date: 2013-06-05 10:20
+description: "Mongo Spatial"
 tags:
   - Mongo
-  - NodeJS
+  - Node.js
 ---
 
 # Mongo Spatial
