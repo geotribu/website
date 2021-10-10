@@ -40,7 +40,7 @@ A noter que ce projet vient en complément du projet [TOPen25](https://osm.cques
 
 ## Le projet QGIS
 
-![logo qgis](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo Qgis"){: .img-rdp-news-thumb }
+![logo qgis](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo QGIS"){: .img-rdp-news-thumb }
 
 Le projet QGIS est composé des différentes couches de la BD TOPO® et il doit se placer dans le répertoire `BDT_3-0_SHP_LAMB93_D0...`.
 
