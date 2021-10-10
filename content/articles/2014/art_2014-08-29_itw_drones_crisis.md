@@ -1,11 +1,15 @@
 ---
-title: Interview de Drones Crisis
-Category: géointerview
+title: "Interview de Drones Crisis"
+authors:
+    - Geotribu
+categories:
+    - géointerview
 date: 2014-08-20 11:20
+description: "Interview de Drones Crisis"
 tags:
-    - Drone
+    - drone
+    - interview
     - OpenStreetMap
-    - Interview
 ---
 
 # Interview de Drones Crisis

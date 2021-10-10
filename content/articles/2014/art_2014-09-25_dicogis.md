@@ -9,9 +9,9 @@ description: "DicoGIS, utilitaire pour générer automatiquement un dictionnaire
 tags:
     - DicoGIS
     - GDAL
+    - métadonnées
     - OGR
     - Python
-    - Métadonnées
 ---
 
 # DicoGIS : le dictionnaire de données SIG

@@ -9,9 +9,8 @@ description: "Géogame de Geotribu : jouez au pendu de la géomatique ! Si la ca
 image: "https://cdn.geotribu.fr/img/geogames/geogame2_capture.png"
 tags:
     - Géogame
-    - Pendu
-    - Géomatique
-
+    - geomatique
+    - pendu
 ---
 
 # Le pendu de la géomatique
