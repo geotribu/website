@@ -47,7 +47,7 @@ plugins:
         as_update: false
         datetime_format: "%Y-%m-%d %H:%M"
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-      length: 40
+      length: 100
       match_path: "(articles|rdp)/.*"
       pretty_print: true
       url_parameters:
