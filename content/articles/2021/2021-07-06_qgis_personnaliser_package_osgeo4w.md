@@ -10,11 +10,11 @@ description: "vous voulez contrôler l'interface et les paramètres de QGIS dans
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png"
 license: default
 tags:
-  - QGIS
-  - Personnalisation
-  - OSGEO4W
-  - Déploiement
-  - Configuration
+    - configuration
+    - déploiement
+    - OSGEO4W
+    - personnalisation
+    - QGIS
 ---
 
 # Préconfigurer QGIS en entreprise avec OSGEO4W

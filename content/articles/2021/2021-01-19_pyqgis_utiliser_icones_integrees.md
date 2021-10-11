@@ -10,9 +10,9 @@ description: "Pour le développement d'un plugin pour QGIS, soigner l'interface 
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_file-explorer.png"
 license: beerware
 tags:
-    - Icônes
-    - Interface graphique
-    - Plugin
+    - icônes
+    - interface graphique
+    - plugin
     - PyQGIS
     - PyQt5
     - QGIS

@@ -9,9 +9,9 @@ description: "Présentation du plugin de Geotribu pour QGIS : QTribu. Inutile do
 image: "https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png"
 license: default
 tags:
-    - QGIS
-    - Plugin
+    - plugin
     - Geotribu
+    - QGIS
     - QTribu
 ---
 

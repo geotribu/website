@@ -11,8 +11,8 @@ tags:
     - Geotribu
     - Pandas
     - Plotly
-    - Scraping
-    - Statistiques
+    - scraping
+    - statistiques
     - Twint
     - Twitter
 ---

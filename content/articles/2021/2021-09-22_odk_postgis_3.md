@@ -14,8 +14,8 @@ tags:
     - JSON
     - ODK
     - Open Data Kit
-    - PostgreSQL
     - PostGIS
+    - PostgreSQL
     - SQL
     - XML
 ---

@@ -10,15 +10,15 @@ description: "Automatiser la publication et la mise à jour de données entre Po
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/pg2datagouv_illustration.png"
 license: default
 tags:
-  - PostgreSQL
-  - data.gouv.fr
-  - Data
-  - Open Data
-  - Bash
-  - OGR
-  - API
-  - JQ
-  - cURL
+    - API
+    - Bash
+    - cURL
+    - data
+    - data.gouv.fr
+    - jq
+    - PostgreSQL
+    - OGR
+    - open data
 ---
 
 # Automatiser la publication et la mise à jour de données de PostgreSQL vers Data.gouv.fr

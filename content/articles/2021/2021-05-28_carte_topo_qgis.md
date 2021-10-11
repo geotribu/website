@@ -9,11 +9,11 @@ date: "2021-05-28 15:00"
 description: "Un rendu carte topographique avec QGIS et la BD TOPO®"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_carte_topo_bdtopo/export_carte_topo_saussines.png"
 tags:
-    - Carte topographique
-    - QGIS
+    - carte topographique
     - BD TOPO
-    - Scan25
     - IGN
+    - QGIS
+    - Scan25
 ---
 
 # Un rendu carte topo QGIS basé sur la BD TOPO®

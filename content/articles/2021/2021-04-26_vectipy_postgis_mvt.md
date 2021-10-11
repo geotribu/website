@@ -9,9 +9,9 @@ date: "2021-04-26 15:00"
 description: "Présentation de vectipy, un serveur léger de tuiles vectorielles (MVT)"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_logo.png"
 tags:
-    - Python
-    - Tuiles vectorielles
     - MVT
+    - Python
+    - tuiles vectorielles
     - Vectipy
 license: cc4_by-sa
 ---

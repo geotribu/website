@@ -8,10 +8,10 @@ date: 2021-01-22 11:11
 description: "CSV - Import/export d'un style catégorisé QGIS"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif"
 tags:
-    - QGIS
-    - Style
     - CSV
     - Processing
+    - QGIS
+    - style
 ---
 
 # CSV - Import/export d'un style catégorisé QGIS

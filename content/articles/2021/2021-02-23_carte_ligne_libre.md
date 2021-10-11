@@ -9,9 +9,9 @@ date: "2021-02-23 10:20"
 description: "En réaction au changement de licence de MapBox, de nombreuses initiatives ont émergé, dont une très intéressante : MapLibre. Voici un tutoriel complet pour l'utiliser pour créer une carte web interactive 100% libre, en continuant à utiliser les fonctionnalités de MapboxGL sans dépendance aux jetons d'accès."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/finalisation.JPG"
 tags:
-    - Webmapping
-    - Tuiles vectorielles
+    - tuiles vectorielles
     - WebGL
+    - webmapping
 ---
 
 # Faire une carte en ligne (tuiles vectorielles + WebGL) 100% libre

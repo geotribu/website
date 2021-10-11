@@ -10,12 +10,12 @@ description: "Travailler les données de la Base Adresse Nationale (BAN) avec GD
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png"
 license: beerware
 tags:
-    - GDAL
-    - OGR
-    - CSV
-    - Adresse
+    - adresse
     - BAL
     - BAN
+    - CSV
+    - GDAL
+    - OGR
 ---
 
 # Utiliser GDAL VSI et VRT pour intégrer les fichiers BAN/BAL

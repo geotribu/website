@@ -9,12 +9,12 @@ description: "Premier article de présentation de la suite Open Data Kit (ODK) e
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/open_data_kit_postgresql.png"
 license: "CC-BY-SA"
 tags:
+    - Android
+    - collecte
     - ODK
     - Open Data Kit
-    - PostgreSQL
     - PostGIS
-    - Collecte
-    - Android
+    - PostgreSQL
 ---
 
 # ODK pour la collecte de données géo dans PostGIS (1/3)

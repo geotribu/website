@@ -10,10 +10,10 @@ description: "Le lancement de QGIS vous semble long ? Vous êtes sur la LTR et l
 image: "https://cdn.geotribu.fr/img/tuto/qgis_splash_screen/qgis_qtribu_splash_screen_custom.png"
 license: none
 tags:
+    - démarrage
+    - personnalisation
     - QGIS
-    - Personnalisation
-    - Splash screen
-    - Démarrage
+    - splash screen
 ---
 
 # Personnaliser l'image au lancement de QGIS

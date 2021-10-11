@@ -10,9 +10,9 @@ description: "Suite au dernier article, voici comment lister et prévisualiser l
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_preview_cheatsheet.png"
 license: beerware
 tags:
-    - Icônes
-    - Interface graphique
-    - Plugin
+    - icônes
+    - interface graphique
+    - plugin
     - PyQt5
     - PyQGIS
     - QGIS
