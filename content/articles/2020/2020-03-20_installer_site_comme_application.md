@@ -8,11 +8,11 @@ date: "2020-03-31 10:20"
 description: "Le site de Geotribu se présente comme une PWA. Voici comment l'installer comme une application (Windows 10 et Android)."
 image: "https://cdn.geotribu.fr/img/internal/install_pwa/geotribu_uninstall_pwa_win10.png"
 tags:
+    - application
+    - astuce
     - Geotribu
     - PWA
-    - Site
-    - Application
-    - Astuce
+    - site
 ---
 
 # Installer en tant qu'application

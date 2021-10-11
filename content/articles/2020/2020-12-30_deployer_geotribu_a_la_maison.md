@@ -10,10 +10,10 @@ description: "A l'instar de nombreux autres sites web, celui de Geotribu est un 
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg"
 tags:
     - Geotribu
-    - Site statique
-    - Static website
     - GitHub
-    - Serveur web
+    - serveur web
+    - site statique
+    - static website
 ---
 
 # Toi aussi, déploie le site Geotribu chez toi

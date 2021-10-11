@@ -8,9 +8,9 @@ date: "2020-08-31 10:20"
 description: "Invité à faire un retour d'expérience sur l'aventure Geotribu, voici une petite histoire du site : naissance, jeunesse, vie, mort... et renaissance en 2020. Souvenirs, souvenirs et avenir !"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_frise_chrono_2006-2017.png"
 tags:
+    - bénévolat
     - Geotribu
     - Histoire
-    - Bénévolat
 ---
 
 # Histoire de Geotribu : vie, mort et renaissance
