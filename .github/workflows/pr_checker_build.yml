@@ -53,7 +53,7 @@ jobs:
         run: |
           python -m pip install -U pip setuptools wheel
           python -m pip install -U -r requirements.txt
-          python -m pip install -U -r requirements-insiders.txt
+          python -m pip install -U -r requirements-free.txt
 
       - name: Build in strict mode
         env:
