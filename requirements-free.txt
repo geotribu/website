@@ -1,9 +1,6 @@
-# Insiders
-# --------
+# No Material Insiders
+# --------------------
 
-# git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-insiders.git@mkdocs-material-7.3.2-insiders-3.1.2#egg=mkdocs-material
-git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-insiders.git
-
-mkdocs-material>=7.2,<7.4
+mkdocs-material>=7.3,<7.4
 
 -r requirements.txt
