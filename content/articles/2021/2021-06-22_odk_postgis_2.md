@@ -1,19 +1,25 @@
 ---
 title: "Open Data Kit pour la collecte de données géographiques dans PostGIS (2/3)"
-authors: ["Mathieu BOSSAERT"]
-categories: ["article"]
+authors:
+    - Mathieu BOSSAERT
+categories:
+    - article
 date: "2021-06-22 22:50"
 description: "Second article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/open_data_kit_postgresql.png"
 license: "CC-BY-SA"
-tags: "ODK,Open Data Kit,PostgreSQL,PostGIS,collecte,Android"
+tags:
+    - Android
+    - collecte
+    - ODK
+    - Open Data Kit
+    - PostGIS
+    - PostgreSQL
 ---
 
 # ODK pour la collecte de données géo dans PostGIS (2/3)
 
 :calendar: Date de publication initiale : 22 juin 2021
-
-**Mots-clés :** ODK | PostgresSQL | PostGIS | Android
 
 ![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
 

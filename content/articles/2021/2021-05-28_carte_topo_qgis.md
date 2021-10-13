@@ -1,18 +1,24 @@
 ---
 title: "Un rendu carte topo QGIS basé sur la BD TOPO®"
-authors: ["Florian Boret"]
-categories: ["article", "tutoriel"]
+authors:
+    - Florian BORET
+categories:
+    - article
+    - tutoriel
 date: "2021-05-28 15:00"
 description: "Un rendu carte topographique avec QGIS et la BD TOPO®"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_carte_topo_bdtopo/export_carte_topo_saussines.png"
-tags: "carte topographique,QGIS,BD TOPO,Scan25,IGN"
+tags:
+    - carte topographique
+    - BD TOPO
+    - IGN
+    - QGIS
+    - Scan25
 ---
 
 # Un rendu carte topo QGIS basé sur la BD TOPO®
 
 :calendar: Date de publication initiale : 28 Mai 2021
-
-**Mots-clés :** Carte topographique | QGIS | BD TOPO | Scan25 | IGN
 
 Pré-requis :
 
@@ -34,7 +40,7 @@ A noter que ce projet vient en complément du projet [TOPen25](https://osm.cques
 
 ## Le projet QGIS
 
-![logo qgis](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo Qgis"){: .img-rdp-news-thumb }
+![logo qgis](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo QGIS"){: .img-rdp-news-thumb }
 
 Le projet QGIS est composé des différentes couches de la BD TOPO® et il doit se placer dans le répertoire `BDT_3-0_SHP_LAMB93_D0...`.
 

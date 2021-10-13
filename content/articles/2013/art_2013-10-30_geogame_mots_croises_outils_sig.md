@@ -1,19 +1,20 @@
 ---
 title: "Mots-croisés avec les outils SIG"
-authors: ["Jérémie ORY"]
-categories: ["article"]
+authors:
+    - Jérémie ORY
+categories:
+    - article
 date: "2013-10-30 10:20"
 description: "Premier géogame proposé par Geotribu : des mots-croisés sur les outils SIG. Bon jeu !"
 image: "https://cdn.geotribu.fr/img/geogames/geogame1_capture.png"
-tags: "geogame,mots-croisés"
-
+tags:
+    - Géogame
+    - mots-croisés
 ---
 
 # Mots croisés : outils SIG
 
 :calendar: Date de publication initiale : 30 octobre 2013
-
-**Mots-clés :** Géogame | mots-croisés
 
 L'équipe de GeoTribu est super fière de vous présenter sa nouvelle rubrique "Geogame" !
 
