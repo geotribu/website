@@ -1,18 +1,23 @@
 ---
 title: "Tutoriel de prise en main du logiciel de rendu 3D Aerialod"
-authors: ["Aurélien Chaumet"]
-categories: ["article", "tutoriel"]
+authors:
+    - Aurélien CHAUMET
+categories:
+    - article
+    - tutoriel
 date: "2020-10-14 10:20"
 description: "Concepts de base et exemples de paramétrage et de rendu sur aerialod (cartographie 3D)."
 image : "https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg"
-tags: "carte,3D,aerialod,rendu 3D"
+tags:
+    - 3D
+    - Aerialod
+    - carte
+    - rendu 3D
 ---
 
 # Aerialod, un logiciel léger, puissant et gratuit de rendu de cartes 3D
 
 :calendar: Date de publication initiale : 14 octobre 2020
-
-**Mots-clés :** Aerialod | Cartes | 3D
 
 [![oceania forest](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg "exemple aerialod Oceania foret"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg){: data-mediabox="illustrations" data-title="Couverture forestière d'une partie de l'Océanie" }
 

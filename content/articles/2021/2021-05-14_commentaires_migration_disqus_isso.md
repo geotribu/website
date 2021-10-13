@@ -1,18 +1,22 @@
 ---
 title: "Les commentaires sur Geotribu : de Disqus à Isso"
-authors: ["Julien Moura"]
-categories: ["article"]
+authors:
+    - Julien MOURA
+categories:
+    - article
 date: "2021-05-14 10:20"
 description: "Rien à voir avec la Géo, mais tout à voir avec la Tribu : nous avons migré notre système de commentaires de Disqus vers Isso. Partage d'expérience et contribution open source."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_comments_isso_backend.png"
-tags: "geotribu,commentaire,isso,open source"
+tags:
+    - commentaire
+    - Geotribu
+    - Isso
+    - open source
 ---
 
 # Les commentaires sur Geotribu : de Disqus à Isso, via une contribution open-source
 
 :calendar: Date de publication initiale : 14 mai 2021
-
-**Mots-clés :** Geotribu | Isso | commentaire | open source
 
 ## Introduction
 

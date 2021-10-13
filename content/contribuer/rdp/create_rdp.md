@@ -1,7 +1,9 @@
 ---
 title: "Créer une revue de presse"
-authors: ["Geotribu"]
-categories: ["contribution"]
+authors:
+    - Geotribu
+categories:
+    - contribution
 date: "2021-09-30 10:20"
 description: "Guide de création d'une revue de presse sur Geotribu."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
@@ -117,13 +119,18 @@ Les lignes concernées sont surlignées ci-dessous (attention, cela peut varier 
 ```markdown hl_lines="2 5 12"
 ---
 title: "[TEMPLATE] Revue de presse du 21 août 2021"
-authors: ["Geotribu"]
-categories: ["revue de presse"]
+authors:
+    - Geotribu
+categories:
+    - revue de presse
 date: 2021-08-21 14:20
 description: ""
 image: "URL de l'image d'illustration de la RDP"
 license: default
-tags: rdp
+tags:
+    - tag 1
+    - tag 2
+    - ...
 ---
 
 # Revue de presse du 21 août 2021
