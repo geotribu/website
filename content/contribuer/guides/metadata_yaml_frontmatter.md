@@ -1,10 +1,18 @@
 ---
 title: "Rédiger en Markdown : comprendre l'en-tête"
-categories: ["article", "contribution", "tutoriel"]
+categories:
+    - article
+    - contribution
+    - tutoriel
 date: "2021-01-05 20:20"
 description: "Rédiger en Markdown : de l'importance de l'en-tête (YAML front-matter) pour définir les métadonnées, la navigation et le référencement."
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_yaml_frontmatter.png"
-tags: contribuer,tutoriel,markdown,rédaction,yaml frontmatter,seo,head
+tags:
+    - contribuer
+    - Markdown
+    - rédaction
+    - SEO
+    - YAML
 ---
 
 # L'en-tête des contenus (*YAML frontmatter*)
@@ -23,7 +31,8 @@ L'en-tête est défini en haut de la page par un ensemble de clés/valeurs encad
 - `date` : date de création publique de l'article, correspondant à la date de première publication. Utilisée dans le RSS, le SEO et certains moteurs d'affichage.
 - `description` : SEO, recherche interne du site, meta-tag, RSS
 - `image` : RSS et partage des articles dans les réseaux sociaux (c'est ce qui fait qu'on a un jouli rendu quand on partage dans Twitter ou LinkedIn par exemple). Dimensions : entre 300x600 et 400x800.
-- `tags` : pour l'instant ça ne sert à rien mais c'est prévu pour permettre un classement des contenus par mots-clés.
+- `license` : détermine si la licence du contenu est celle par défaut (`license: default`) ou non (`license: none`). Si la clé n'est pas renseignée, c'est la licence par défaut qui s'applique. Voir le guide [Choisir sa licence](/contribuer/guides/licensing/).
+- `tags` : permet un classement des contenus par mots-clés.
 
 ### Catégories
 
@@ -42,11 +51,25 @@ Exemple pour la GeoRDP de Noël 2020 :
 ```yaml
 ---
 title: "Revue de presse du 25 décembre 2020"
-authors: ["Geotribu"]
-categories: ["revue de presse"]
+authors:
+    - Geotribu
+categories:
+    - revue de presse
 date: 2020-12-25 14:20
 description: "GeoRDP du 25 décembre 2020 : la revue de presse géomatique de Geotribu pour souhaiter Joyeux Noël et bonnes fêtes !"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/merry_christmas_blender.png"
-tags: rdp,ign,geoserver,nominatim,opendata,cerema,fig,georezo,drone,postgis,mapbox,openlayers
+license: default
+tags:
+    - Cerema
+    - drone
+    - FIG
+    - GeoRezo
+    - GeoServer
+    - IGN
+    - Mapbox
+    - Nominatim
+    - open data
+    - OpenLayers
+    - PostGIS
 ---
 ```

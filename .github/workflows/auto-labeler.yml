@@ -1,4 +1,4 @@
-name: "Pull Request Labeler 🏷"
+name: "🏷 Etiquetage automatisé"
 on:
 - pull_request_target
 

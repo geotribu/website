@@ -1,18 +1,23 @@
 ---
 title: "Python - Configuration sur Windows et outillage"
-authors: ["Julien MOURA"]
-categories: ["article", "tutoriel"]
+authors:
+    - Julien MOURA
+categories:
+    - article
+    - tutoriel
 date: 2020-06-19 10:20
 description: "Configuration et outillage de base pour développer en Python en 2020, avec un focus sur le travail sous Windows."
 image: "https://cdn.geotribu.fr/img/tuto/python_windows/python_windows_installer_path_length.jpg"
-tags: python,tooling,setup,windows
+tags:
+    - Python
+    - tooling
+    - setup
+    - Windows
 ---
 
 # Python : configuration sur Windows et outillage
 
 :calendar: Date de publication initiale : 19 juin 2020
-
-**Mots-clés :** Python | Windows | Développement
 
 Je travaille beaucoup avec Python sur Windows depuis quelques années. En comparaison avec des distributions Linux comme Debian où l'interpréteur est intégré au système (ce qui peut poser d'autres problèmes), cela a toujours été plus compliqué de se faire un environnement de travail confortable.
 Avec le changement de braquet de la firme de Redmond par rapport à l'open source, les choses se sont grandement améliorées ces dernières années.
@@ -130,12 +135,14 @@ Pour le développement d'un package, installer le projet en cours en mode édita
 python -m pip install -e .
 ```
 
+<!-- markdownlint-disable MD046 -->
 !!! info
     De nombreuses ressources existent en ligne :
 
     * [tutoriel dans la documentation officielle](https://docs.python.org/fr/3/tutorial/venv.html)
     * [configurer son environnement virtuel (Google)](https://cloud.google.com/python/setup?hl=fr#installing_and_using_virtualenv)
     * [prise en main de Python sur Windows pour les débutants](https://docs.microsoft.com/fr-fr/windows/python/beginners)
+<!-- markdownlint-enable MD046 -->
 
 ### Documentation _in-code_
 

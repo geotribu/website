@@ -1,0 +1,317 @@
+{% extends "main.html" %}
+
+{% block styles %}
+{{ super() }}
+
+<link rel=stylesheet href=theme/assets/stylesheets/homepage.css>
+{% endblock %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+{{ super() }}
+
+<!-- Hero for landing page -->
+<div class="tx-container">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero">
+      <div class="tx-hero__title">
+        <h1 style="visibility: hidden">Geotribu</h1>
+      </div>
+      <div class="tx-hero__image">
+        <img src="https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png"
+          alt="Bannière Geotribu" draggable="false" title="logo Geotribu">
+      </div>
+      <div class="tx-hero__content">
+        <p>Site collaboratif sur la géomatique <span class="em">libre</span> et <span class="em">ouverte</span>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="md-container secondary-section">
+  <div class="g">
+    <!-- Revues de presse -->
+    <div class="section" id="revues-de-presse">
+      <div class="component-wrapper">
+        <div class="first-column">
+          <h3>Revues de presse</h3>
+          <p>
+            Un vendredi sur deux, c'est GeoRDP ! Un condensé d'actualités
+            sur l'écosystème de l'information géographique, concocté à plusieurs mains.
+          </p>
+          <p>
+            Nouveautés des logiciels, clients cartographiques, serveurs géographiques, applications mobiles,
+            modes de représentation graphique, Open Data, événements, OpenStreetMap... C'est ouvert !
+          </p>
+        </div>
+        <div class="second-column">
+          <div class="image-wrapper">
+            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" >
+              <img
+                src="{{ page.next_page.meta.image }}"
+                alt="lien vers la {{ page.next_page.title | e }}"
+                loading="lazy"
+                draggable="false"
+                title="Illustration de la {{ page.next_page.title | e }}">
+                <div class="image-overlay">{{ page.next_page.meta.description | truncate(100, False) | e }}</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="component-wrapper" style="display: block;">
+        <h4></h4>
+        <div class="responsive-grid">
+          <a class="card-wrapper"
+            href="/contribuer/rdp/add_news/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/github-alt.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Proposer une news</h5>
+                <p>
+                  Créez un ticket (<i>issue</i>) ou une <i>Pull Request</i>.<br>
+                  Pas de compte GitHub ? Envoyez un mail à <em>geotribu+rdp [at] gmail.com</em>.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper" href="/team/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/ubuntu.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Indépendance</h5>
+                <p>
+                  La Geotribu n'est liée à aucune structure. La parole y est donc
+                  libre de toute démarche publicitaire ou mercantile.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Customize -->
+          <a class="card-wrapper" href="/contribuer/guides/licensing/#licence-par-defaut">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/creative-commons.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Une veille libre et ouverte</h5>
+                <p>
+                  Les contenus sont publiés sous licence Creative Commons BY-NC-SA et le site est open-source.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Articles -->
+    <div class="section follow" id="articles">
+      <div class="component-wrapper">
+        <div class="first-column">
+          <h3>Articles</h3>
+          <p>
+            En plus des revues de presse, le site héberge des tutoriels, dossiers, billets d'humeur, blog-note, retours
+            d'expérience,
+            présentations d'un outil, d'une méthodologie... Mutualisons la connaissance en géomatique !
+          </p>
+        </div>
+        <div class="second-column">
+          <div class="image-wrapper">
+            <a href="/articles/2021/2021-10-05_lien_sig_osm/" title="Lien vers le dernier article" >
+              <img
+                src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/osm_sig.png"
+                alt="lien vers le dernier article publié"
+                loading="lazy"
+                draggable="false"
+                title="Illustration du dernier article publié">
+                <div class="image-overlay">Intégrer les données OSM dans son SIG et vice-versa, ou la contribution réciproque, par Florian Boret.</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="component-wrapper" style="display: block;">
+        <h4></h4>
+        <div class="responsive-grid">
+          <a class="card-wrapper" href="/contribuer/articles/workflow/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/solid/feather-alt.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Proposer un article</h5>
+                <p>
+                  Pourquoi pas vous ?
+                  Apportez votre pierre à l'édifice de la connaissance partagée en géomatique.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper" href="/contribuer/guides/markdown_basics/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/markdown.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Rédigez en Markdown</h5>
+                <p>
+                  Tout le site est entièrement rédigé en Markdown, la <i>lingua franca</i> du web.
+                  Découvrez nos guides de rédaction pour un rendu soigné.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper" href="/articles/2021/2021-05-05_geointerview_ign_sebastien_soriano_annonce/#suivre-et-participer">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/solid/people-carry.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Pas le goût ou le temps d'écrire ?</h5>
+                <p>
+                  Pourquoi ne pas proposer un autre type de contenu :
+                  une interview ? un podcast ? autre chose ?
+                </p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="md-container secondary-section four-cols" id="nous-suivre">
+  <div class="g">
+    <!-- Follow -->
+    <div class="section follow" id="follow">
+      <div class="component-wrapper">
+        <div class="first-column">
+          <h3>Nous suivre</h3>
+        </div>
+      </div>
+      <div class="component-wrapper" style="display: block;">
+        <div class="responsive-grid">
+          <a class="card-wrapper" href="{{ config.site_url }}feed_rss_created.xml">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/solid/rss.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>RSS</h5>
+                <p>
+                  S'abonner au flux des nouveaux contenus.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper" href="https://twitter.com/geotribu/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/twitter.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Twitter</h5>
+                <p>
+                  Suivez le compte officiel @geotribu.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper" href="https://www.linkedin.com/feed/hashtag/geotribu/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/linkedin.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>LinkedIn</h5>
+                <p>
+                  S'abonner au hashtag #Geotribu.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper" href="/articles/2021/2021-04-01_qtribu_plugin_qgis_geotribu/#installer-le-plugin">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/solid/puzzle-piece.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Plugin QGIS</h5>
+                <p>
+                  Consulter les contenus directement depuis QGIS !
+                </p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
+{% endblock %}
+
+<!-- Light footer -->
+{% block footer %}
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        {% if config.copyright %}
+        <div class="md-footer-copyright__highlight">
+          {{ config.copyright }}
+        </div>
+        {% endif %}
+        Généré avec
+        <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        et le thème
+        <a href="https://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      {% block social %}
+      {% include "partials/social.html" %}
+      {% endblock %}
+    </div>
+  </div>
+</footer>
+{% endblock %}

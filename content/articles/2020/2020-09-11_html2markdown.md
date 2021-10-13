@@ -1,18 +1,24 @@
 ---
 title: "Du HTML en Markdown (et vice-versa)"
-authors: ["Julien MOURA"]
-categories: ["article", "tutoriel"]
+authors:
+    - Julien MOURA
+categories:
+    - article
+    - tutoriel
 date: "2020-09-14 10:20"
 description: "Convertir les contenus récupérés de l'ancien site de Geotribu en Markdown (via markdownify) : lingua franca du contenu web 2020."
 image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
-tags: "markdown,Python,BeautifulSoup,markdown,geotribu,histoire"
+tags:
+    - BeautifulSoup
+    - Geotribu
+    - Histoire
+    - Markdown
+    - Python
 ---
 
 # Vers la simplification de la contribution : le choix du Markdown
 
 :calendar: Date de publication initiale : 14 septembre 2020
-
-**Mots-clés :** Python | Markdown | Beautifulsoup
 
 ## Introduction
 
@@ -43,14 +49,13 @@ Certains services, tels [Markdown Here](https://markdown-here.com/features.html)
 
 Bref, au revoir [BBCode](https://fr.wikipedia.org/wiki/BBCode), DokuWiki, [WikiTexte](https://fr.wikipedia.org/wiki/Wikitexte), etc. Bonjour [Markdown] :
 
-[![markdown exemple](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png "Exemple basique de la syntaxe markdown"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png){: data-mediabox="ligthbox-gallery" data-title="Exemple basiques de la syntaxe markdown rendue dans StackEdit."}
+[![markdown exemple](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png "Exemple basique de la syntaxe markdown"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png){: data-mediabox="lightbox-gallery" data-title="Exemple basiques de la syntaxe markdown rendue dans StackEdit."}
 
 ### Une syntaxe, des rendus
 
 A l'instar de n'importe quelle langue, qui plus est non standardisée, le rendu HTML du Markdown dépend de l'implémentation qui en est faite : technologie, finalité et philosophie du processus de conversion, etc. Ainsi, il y aura des différences à l'affichage ou au traitement.
 
 !!! tip
-
     Pour ne pas dupliquer ici du contenu existant, je vous renvoie vers l'article [Comprendre et tester le moteur de rendu du site](/contribuer/build_site/markdown_engine/).
 
 ----
@@ -81,7 +86,7 @@ Au passage, on en profite pour essayer deux autres bibliothèques pour ce genre 
 
 ### Structure
 
-En regardant [les sources de l'article](view-source:http://cnig.gouv.fr/?p=23807), on sait que le contenu intéressant est dans la div de class `post-content` :
+En regardant [les sources de l'article](view-source:http://cnig.gouv.fr/?p=23807), on sait que le contenu intéressant est dans la `div` de class `post-content` :
 
 [![Source HTML CNIG](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png "Les sources de l'article du CNIG "){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png){: data-mediabox="scraping" data-title="Sources d'un article du site du CNIG."}
 
@@ -147,11 +152,11 @@ Cela démontre bien à la fois la faisabilité et les limitations du traitement 
 
 ```mermaid
 graph TD;
-  A[Site archivé]-->B[Scraping];
-  B-->C[HTML];
-  B-->D[Images];
-  C-->E[Markdown];
-  D-->F[CDN];
+    A[Site archivé] --> B[Scraping];
+    B --> C[HTML];
+    B --> D[Images];
+    C --> E[Markdown];
+    D --> F[CDN];
 ```
 
 [Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-step-forward:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
@@ -164,6 +169,8 @@ graph TD;
 --8<--
 content/team/jmou.md
 --8<--
+
+--8<-- "content/toc_nav_ignored/snippets/glossaire.md"
 
 <!-- Hyperlinks reference -->
 [Markdown]: https://fr.wikipedia.org/wiki/Markdown

@@ -1,18 +1,23 @@
 ---
 title: "Contribution facile et ludique à OSM avec Street Complete"
-authors: ["Julien MOURA"]
-categories: ["article"]
+authors:
+    - Julien MOURA
+categories:
+    - article
 date: "2020-11-21 10:20"
 description: "Présentation de Street Complete, l'application Android qui permet de contribuer facilement et de façon ludique à OpenStreetMap."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/streetcomplete_banner.png"
-tags: "OpenStreetMap,Street Complete,contribution,Android"
+tags:
+    - Android
+    - contribution
+    - OpenStreetMap
+    - Street Complete
+
 ---
 
 # Street Complete : la contribution facile à OpenStreetMap
 
 :calendar: Date de publication initiale : 21 novembre 2020
-
-**Mots-clés :** OpenStreetMap | Street Complete | application Android
 
 ## Introduction
 

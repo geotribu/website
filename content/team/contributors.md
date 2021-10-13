@@ -1,25 +1,31 @@
 ---
 title: "L'équipe Geotribu"
-authors: ["Geotribu"]
-categories: ["meta"]
+authors:
+    - Geotribu
+categories:
+    - Geotribu
 date: "2020-04-10 10:20"
 description: "Présentation des contributeurs actifs de Geotribu et remerciements aux personnes et projets libres qui rendent l'aventure possible."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
-tags: "GeoTribu,contributeur,contributrice,auteur,contributrice,credits,remerciement,soutien"
+tags:
+    - Geotribu
+    - contributeur
+    - contributrice
+    - crédits
 ---
 
 # L'équipe Geotribu
 
 ## Membres de l'équipe
 
-- [Arnaud](avdc)
-- [Aurélien](acha)
-- [Etienne](edel)
-- [Fabien](fgob)
-- [Florian](fbor)
-- [Jérémie O.](jory)
-- [Julien](jmou)
-- [Mathieu R.](mraj)
+- [Arnaud](/team/avdc/)
+- [Aurélien](/team/acha/)
+- [Etienne](/team/edel/)
+- [Fabien](/team/fgob/)
+- [Florian](/team/fbor/)
+- [Jérémie O.](/team/jory/)
+- [Julien](/team/jmou/)
+- [Mathieu R.](/team/mraj/)
 
 ----
 
@@ -33,10 +39,10 @@ La liste ci-après est générée automatiquement à partir de l'historique de [
 
 ## Membres historiques
 
-- [Adrien](avha)
-- [Guillaume](gdbo)
-- [Julie](jpie)
-- [Pierre](pver)
-- [Rémi](rbov)
-- [Rodolphe](rqui)
-- [Thomas](tgra)
+- [Adrien](/team/avha/)
+- [Guillaume](/team/gdbo/)
+- [Julie](/team/jpie/)
+- [Pierre](/team/pver/)
+- [Rémi](/team/rbov/)
+- [Rodolphe](/team/rqui/)
+- [Thomas](/team/tgra/)

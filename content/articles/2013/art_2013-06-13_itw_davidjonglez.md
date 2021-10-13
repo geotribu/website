@@ -1,8 +1,14 @@
 ---
-title: Interview de David JONGLEZ
-Category: géointerview
+title: "Interview de David JONGLEZ"
+authors:
+    - Geotribu
+categories:
+    - article
 date: 2013-06-13 10:20
-tags: esri, interview
+description: "Interview de David JONGLEZ"
+tags:
+    - Esri
+    - interview
 ---
 
 # Interview de David Jonglez

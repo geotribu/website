@@ -1,11 +1,16 @@
 ---
 title: "A propos"
-authors: ["Geotribu"]
-categories: ["meta"]
+authors:
+    - Geotribu
+categories:
+    - Geotribu
 date: "2021-05-20 10:20"
 description: "Geotribu, c'est quoi ? Qui se cache dans le géotipi ? Présentation et trombinoscope."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
-tags: "GeoTribu,à propos,about,présentation"
+tags:
+    - à propos
+    - Geotribu
+    - présentation
 ---
 
 # Geotribu, c'est quoi ?

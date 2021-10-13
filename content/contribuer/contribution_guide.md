@@ -1,10 +1,13 @@
 ---
 title: "Processus de contribution"
-categories: ["contribution"]
+categories:
+    - contribution
 date: 2020-03-20 10:20
 description: "Guide de contribution au site collaboratif Geotribu : processus (git flow), modifier un contenu et guides spécifiques (images, vidéos, émojis...)"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
-tags: guide,contribuer,geotribu
+tags:
+    - contribuer
+    - guide
 ---
 
 # Processus de contribution

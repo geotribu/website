@@ -1,18 +1,24 @@
 ---
 title: "Vectipy, un serveur minimaliste de tuiles vectorielles (MVT)"
-authors: ["Jean-Baptiste DESBAS"]
-categories: ["article", "tutoriel"]
+authors:
+    - Jean-Baptiste DESBAS
+categories:
+    - article
+    - tutoriel
 date: "2021-04-26 15:00"
 description: "Présentation de vectipy, un serveur léger de tuiles vectorielles (MVT)"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_logo.png"
-tags: "python,vector tiles,mvt,vectipy"
+tags:
+    - MVT
+    - Python
+    - tuiles vectorielles
+    - Vectipy
+license: cc4_by-sa
 ---
 
 # Vectipy, un serveur minimaliste de tuiles vectorielles (MVT)
 
 :calendar: Date de publication initiale : 26 Avril 2021
-
-**Mots-clés :** Mapbox Vector Tiles | tuiles vectorielles | PostGIS | PostgreSQL
 
 Pré-requis :
 
@@ -187,3 +193,5 @@ Autres serveurs de tuiles vectorielles sur le [Github de Mapbox](https://github.
 Géomaticien avec une forte appétence pour les thématiques environnement, biodiersité et urbanisme. Je travaille en tant que gestionnaire de base de données à l'association [Picardie Nature](http://picardie-nature.org), où j'ai la chance de pouvoir insuffler une logique _open data_ au sein de la communauté naturaliste.
 
 Convaincu de la qualité et de la pérennité des nombreuses solutions libres que nous avons la chance d'avoir à notre portée, je n'utilise (quasi) exclusivement que des logiciels sous licence libre. Longtemps consommateur de ces outils, j'essaie aujourd'hui d'apporter des contributions modestes, mais concrètes, au travers de projets tels que [ArrayPlus](https://plugins.qgis.org/plugins/arrayplus/) et [Vectipy](https://github.com/jbdesbas/vectipy).
+
+{% include "licenses/cc4_by-sa.md" %}

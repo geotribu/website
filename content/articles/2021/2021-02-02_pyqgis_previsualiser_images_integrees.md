@@ -1,18 +1,26 @@
 ---
 title: "PyQGIS : lister et prévisualiser les images intégrées"
-authors: ["Julien MOURA"]
-categories: ["article", "tutoriel"]
+authors:
+    - Julien MOURA
+categories:
+    - article
+    - tutoriel
 date: "2021-02-02 10:20"
 description: "Suite au dernier article, voici comment lister et prévisualiser les images intégrées à QGIS via script Python pour générer une jolie page markdown."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_preview_cheatsheet.png"
-tags: "geotribu,QGIS,plugin,PyQt5,icônes,interface graphique"
+license: beerware
+tags:
+    - icônes
+    - interface graphique
+    - plugin
+    - PyQt5
+    - PyQGIS
+    - QGIS
 ---
 
 # Récupérer et prévisualiser les icônes intégrées à QGIS
 
 :calendar: Date de publication initiale : 25 janvier 2021
-
-**Mots-clés :** Python | QGIS | développement | plugin | interface graphique | script | Markdown
 
 Pré-requis :
 
@@ -253,9 +261,9 @@ Pour les plus curieux, j'ai stocké le script complet et avec quelques optimisat
 
 ## Auteur
 
---8<--
-content/team/jmou.md
---8<--
+--8<-- "content/team/jmou.md"
+
+{% include "licenses/beerware.md" %}
 
 <!-- Hyperlinks reference -->
 [Oslandia]: https://oslandia.com/

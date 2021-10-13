@@ -3,10 +3,12 @@ title: "Geotribu - Page d'accueil"
 Category: global
 date: 2020-03-20 10:20
 description: "Page d'accueil de Geotribu, site indépendant de veille sur la géomatique libre. Articles, tutoriels et revues de presse (#GeoRDP) sur l'information géographique."
-tags: home,géomatique,sig,géographie,dataviz,geordp,accueil,geotribu
+tags:
+  - Geotribu
 hide:
   - navigation
   - toc
+template: home.html
 ---
 
 # Bienvenue
@@ -30,22 +32,3 @@ Il est possible de suivre l'évolution de nos contenus via les deux flux RSS qui
 | :---------------------: | :--------------------------: |
 | [feed_rss_created.xml](/feed_rss_created.xml) | [feed_rss_updated.xml](/feed_rss_updated.xml) |
 | [![Feedly button](https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-big_2x.png "Follow us on Feedly"){: width=130 height= 50 loading=lazy }](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fstatic.geotribu.fr%2Ffeed_rss_created.xml) | [![Feedly button](https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-big_2x.png "Follow us on Feedly"){: width=130 height= 50 loading=lazy }](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fstatic.geotribu.fr%2Ffeed_rss_updated.xml) |
-
-----
-
-## Thème
-
-Par défaut, le site utilise votre réglage système (clair ou sombre). Il est possible de forcer le thème utilisé le temps d'une session de navigation :
-
-<button data-md-color-scheme="default"><code>Thème clair</code></button>
-<button data-md-color-scheme="slate"><code>Thème sombre</code></button>
-
-<script>
-  var buttons = document.querySelectorAll("button[data-md-color-scheme]")
-  buttons.forEach(function(button) {
-    var attr = "data-md-color-scheme"
-    button.addEventListener("click", function() {
-      document.body.setAttribute(attr, this.getAttribute(attr))
-    })
-  })
-</script>

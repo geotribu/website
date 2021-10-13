@@ -1,8 +1,9 @@
-title: A propos
+title: "⛺ A propos"
 
 nav:
     - index.md
     - contributors.md
     - credits.md
     - confidentialite.md
+    - statistiques.md
     - archives

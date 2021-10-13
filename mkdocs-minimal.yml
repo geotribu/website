@@ -16,6 +16,12 @@ site_dir: './build/mkdocs/site'
 # Plugins
 plugins:
   - awesome-pages
+  - exclude:
+      glob:
+        - "*/templates/*"
+        - "*.yml"
+  - macros:
+      include_dir: content/toc_nav_ignored/snippets
 
 # Theme
 theme:
@@ -28,18 +34,32 @@ theme:
   search_index_only: true
 
   features:
-    - navigation.expand
-    - navigation.instant
     - navigation.tabs
+    - navigation.top
+    - navigation.tracking
   font: false
   icon:
     repo: fontawesome/brands/github-alt
   language: 'fr'
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
-    accent: deep-orange
-    primary: teal
-    scheme: preference
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep-orange
+      toggle:
+        icon: material/weather-sunny
+        name: Basculer en mode sombre
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: deep-orange
+      toggle:
+        icon: material/weather-night
+        name: Basculer en mode clair
 
 extra_css:
   - 'theme/assets/stylesheets/extra.css'
@@ -79,6 +99,8 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
