@@ -1,18 +1,23 @@
 ---
 title: "Confidentialité des données"
-authors: ["Geotribu"]
-categories: ["meta"]
+authors:
+    - Geotribu
+categories:
+    - Geotribu
 date: "2021-05-20 10:20"
 description: "Cette page détaille les dispositifs de traçage que l'utilisateur/ice final/e peut rencontrer sur le site Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
-tags: "GeoTribu,confidentialité,données personnelles,vie privée,tracking"
+tags:
+    - confidentialité
+    - données personnelles
+    - Geotribu
+    - tracking
+    - vie privée
 ---
 
 # Données personnelles et confidentialité
 
 :calendar: Date de publication initiale : 20 mai 2021
-
-**Mots-clés :** tracking | confidentialité | RGPD
 
 Cette page détaille les dispositifs de traçage que l'utilisateur/ice final/e peut rencontrer sur le site Geotribu. Si la liste paraît longue c'est qu'elle est le fruit d'un effort de transparence :slightly_smiling_face:, mais pour faire court :
 

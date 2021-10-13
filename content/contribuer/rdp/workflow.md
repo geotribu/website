@@ -1,7 +1,9 @@
 ---
 title: "Processus global"
-authors: ["Geotribu"]
-categories: ["contribution"]
+authors:
+    - Geotribu
+categories:
+    - contribution
 date: "2021-09-30 10:20"
 description: "Cycle de vie d'une revue de presse sur Geotribu (GeoRDP) : création, contribution, validation, publication, diffusion."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"

@@ -38,23 +38,23 @@ plugins:
         remove_comments: true
   - rss:
       abstract_chars_count: 500
+      categories:
+        - categories
+        - tags
       comments_path: "#__comments"
       date_from_meta:
         as_creation: "date"
         as_update: false
         datetime_format: "%Y-%m-%d %H:%M"
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-      length: 40
+      length: 50
       match_path: "(articles|rdp)/.*"
-      pretty_print: true
+      pretty_print: false
       url_parameters:
         utm_source: "rss-feed"
         utm_medium: "RSS"
         utm_campaign: "feed-syndication"
-  - search:
-      lang: fr
-      prebuild_index: !ENV MKDOCS_SEARCH_PREBUILD_INDEX
-      separator: "[\\s\\-,:!=\\[\\]()\"/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])"
+  - search
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - redirects:
@@ -65,6 +65,7 @@ plugins:
         "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
         "GeoRDP/20161028.md": "rdp/2016/rdp_2016-10-14.md"
         "node/270.md": "articles/2010/art_2010-06-11.md"
+        "node/284.md": "articles/2010/art_2010-09-23.md"
         "node/348.md": "rdp/2011/rdp_2011-02-25.md"
         "node/423.md": "articles/2011/art_2011-06-15.md"
         "node/462.md": "articles/2011/art_2011-11-09.md"
@@ -88,6 +89,8 @@ plugins:
         "contribuer/workflow_article.md": "contribuer/articles/workflow.md"
         "contribuer/backup.md": "contribuer/internal/backup.md"
         "contribuer/build_site/markdown_engine.md": "contribuer/internal/markdown_engine.md"
+  - tags:
+      tags_file: tags.md
 
 # Theme
 theme:

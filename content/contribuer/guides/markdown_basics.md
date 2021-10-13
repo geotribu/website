@@ -1,10 +1,20 @@
 ---
 title: "Rédiger en Markdown : bases et spécimen"
-categories: ["article", "contribution", "tutoriel"]
+categories:
+    - article
+    - contribution
+    - tutoriel
 date: 2020-09-14 14:20
 description: "Maîtriser les bases de la rédaction en Markdown pour contribuer à Geotribu et exemples de mise en forme."
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_quick_exemple_rendu.png"
-tags: contribuer,tutoriel,markdown,rédaction,python,html,markdownlint
+tags:
+    - contribuer
+    - HTML
+    - lint
+    - Markdown
+    - rédaction
+    - Python
+    - tutoriel
 ---
 
 # Les bases de rédaction en Markdown

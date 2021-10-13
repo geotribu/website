@@ -52,8 +52,17 @@ jobs:
           GH_TOKEN_MATERIAL_INSIDERS: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
         run: |
           python -m pip install -U pip setuptools wheel
-          python -m pip install -U -r requirements.txt
-          python -m pip install -U -r requirements-insiders.txt
+
+          # if secret (PR created by repo collaborator) exists = paid features, else only free
+          if [[ -z "${GH_TOKEN_MATERIAL_INSIDERS}" ]]; then
+            echo "::warning:: L'accès aux token est réservé aux comptes avec droits d'écriture sur le dépôt. La version gratuite du thème est donc utilisée sans mots-clés, etc.)"
+
+            python -m pip install -U -r requirements-free.txt
+            # remove paid features from site configuration
+            sed -i '/^.*- tags:/{N;d}' mkdocs.yml
+          else
+            python -m pip install -U -r requirements-insiders.txt
+          fi
 
       - name: Build in strict mode
         env:
