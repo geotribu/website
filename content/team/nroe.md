@@ -5,7 +5,7 @@
 Géomaticien au sein de l'[Université Gustave Eiffel](https://www.univ-gustave-eiffel.fr/) depuis 2018 suite à une reconversion.
 J'avais goûté à la topographie et aux SIG durant ma formation de forestier.
 J'ai oeuvré pendant 10 ans en tant que topographe sur des chantiers aéroportuaires, puis lassé je me suis tourné vers la géomatique.
-J'ai ensuite suivi la [licence pro](https://www.ensg.eu/Licence-professionnelle) de l'ENSG puis 
+J'ai ensuite suivi la [licence pro](https://www.ensg.eu/Licence-professionnelle) de l'ENSG puis
 le [master G2M](https://geographie.univ-paris8.fr/?Master-G2M) de l'université Paris8 en alternance.
 En 2018, j'ai intégré en tant que géomaticien l'[IFSTTAR](https://www.ifsttar.fr/accueil/) qui deviendra l'Université Gustave Eiffel en 2020.
 
