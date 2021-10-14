@@ -14,4 +14,3 @@ GRASS, puis QGIS et PostGIS. Au fil du temps j'ai contribué à ces
 logiciels, principalement pour migrer des outils DAO vers le SIG et je suis
 aujourd'hui commiter QGIS et FreeBSD où je m'occupe des ports des outils OSGeo
 et plus si affinité.
-
