@@ -57,6 +57,7 @@ jobs:
           # if secret (PR created by repo collaborator) exists = paid features, else only free
           if [[ -z "${GH_TOKEN_MATERIAL_INSIDERS}" ]]; then
             echo "::warning:: L'accès aux token est réservé aux comptes avec droits d'écriture sur le dépôt. La version gratuite du thème est donc utilisée sans mots-clés, etc.)"
+            python -m pip install -U -r requirements-free.txt
             echo "::set-output name=config_path::mkdocs-free.yml"
           else
             # install insiders version using token
