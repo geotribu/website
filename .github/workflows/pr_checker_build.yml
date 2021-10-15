@@ -70,25 +70,25 @@ jobs:
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
           # site name
-          sed -i "s|^site_name:.*|site_name: Geotribu PREVIEW |" ${{dependencies.outputs.config_path}}
+          sed -i "s|^site_name:.*|site_name: Geotribu PREVIEW |" ${{steps.dependencies.outputs.config_path}}
 
-          # Adjust ${{dependencies.outputs.config_path}} for preview build
-          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" ${{dependencies.outputs.config_path}}
+          # Adjust ${{steps.dependencies.outputs.config_path}} for preview build
+          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" ${{steps.dependencies.outputs.config_path}}
 
           # Insert sponsor branding into page content (Provider OSS plan requirement):
           # Upstream does not provide a nicer maintainable way to do this..
           # Prepends HTML to copyright text and then aligns to the right side.
-          sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" ${{dependencies.outputs.config_path}}
+          sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" ${{steps.dependencies.outputs.config_path}}
 
           # set repo and branch
-          sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" ${{dependencies.outputs.config_path}}
-          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" ${{dependencies.outputs.config_path}}
+          sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" ${{steps.dependencies.outputs.config_path}}
+          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" ${{steps.dependencies.outputs.config_path}}
 
           # build
-          mkdocs build --config-file ${{dependencies.outputs.config_path}} --verbose --strict
+          mkdocs build --config-file ${{steps.dependencies.outputs.config_path}} --verbose --strict
 
           # save mkdocs.yml for debug
-          cp ${{dependencies.outputs.config_path}} ${{ env.BUILD_DIR }}
+          cp ${{steps.dependencies.outputs.config_path}} ${{ env.BUILD_DIR }}
 
           # remove files reserved for production
           rm ${{ env.BUILD_DIR }}/CNAME
