@@ -151,7 +151,7 @@ Evidemment, le résultat est loin d'être parfait et cela demande quelques ajust
 Cela démontre bien à la fois la faisabilité et les limitations du traitement automatisé, qu'on peut résumer ainsi :
 
 ```mermaid
-graph TD;
+graph TD
     A[Site archivé] --> B[Scraping];
     B --> C[HTML];
     B --> D[Images];
