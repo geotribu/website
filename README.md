@@ -32,6 +32,11 @@ Après avoir cloné ou téléchargé le dépôt, installer les prérequis (de pr
 ```bash
 python -m pip install -U pip
 python -m pip install -U setuptools wheel
+```
+
+### Version gratuite
+
+```bash
 python -m pip install -U -r requirements-free.txt
 ```
 
@@ -52,6 +57,12 @@ Version complète :
 mkdocs build
 ```
 
+Version complète gratuite :
+
+```bash
+mkdocs build -f mkdocs-free.yml --dirtyreload
+```
+
 Version minimale (seulement certains plugins) :
 
 ```bash
@@ -64,6 +75,12 @@ Version complète :
 
 ```bash
 mkdocs serve --dirtyreload
+```
+
+Version complète gratuite :
+
+```bash
+mkdocs serve -f mkdocs-free.yml --dirtyreload
 ```
 
 Version minimale (seulement certains plugins) :
