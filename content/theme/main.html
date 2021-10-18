@@ -153,7 +153,7 @@
 
   {% if not page.is_homepage %}
   {# Comment system (Isso) #}
-    <div id="__comments">
+    {# <div id="__comments">
       <script
         data-isso="{{ config.extra.comments_url }}/"
         data-isso-feed="true"
@@ -173,6 +173,6 @@
           acceptée pour la mise en forme des commentaires.<br>Propulsé par <a href="https://posativ.org/isso/" hreflang="en" target="_blank">Isso</a>. </small>
       </section>
       <noscript>Please enable JavaScript to view the comments.</noscript>
-    </div>
+    </div> #}
   {% endif %}
 {% endblock %}
