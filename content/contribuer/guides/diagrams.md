@@ -40,24 +40,24 @@ graph TD;
     B-->F["Merge dans la branche principale"];
     F-->G["Conversion en HTML"];
     G-->H["Déploiement sur GitHub Pages"];
-    H-->I(("Twitter"));
-    H-->J(("LinkedIn"));
+    H-->I("Twitter");
+    H-->J("LinkedIn");
 ```
 ````
 
 ### Rendu 1
 
 ```mermaid
-graph TD;
-    Z["master"]-->A["Création d'une branche"]-->B{{"Pull Request"}};
+graph TD
+    Z["master"]-->A["Création d'une branche"]-->B["PullRequest"];
     C["Contributeur 1"]-->B;
     D["Contributrice 2"]-->B;
     E["Contributeur n"]-->B;
     B-->F["Merge dans la branche principale"];
     F-->G["Conversion en HTML"];
     G-->H["Déploiement sur GitHub Pages"];
-    H-->I(("Twitter"));
-    H-->J(("LinkedIn"));
+    H-->I("Twitter");
+    H-->J("LinkedIn");
 ```
 
 ### Exemple 2
