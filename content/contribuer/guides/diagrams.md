@@ -33,15 +33,15 @@ Cela consiste en créant une balise de code pointant sur le langage `mermaid`, d
 ````markdown
 ```mermaid
 graph TD;
-    Z[master]-->A[Création d'une branche]-->B(Pull Request);
-    C[Contributeur 1]-->B;
-    D[Contributrice 2]-->B;
-    E[Contributeur n]-->B;
-    B-->F[Merge dans la branche principale];
-    F-->G[Conversion en HTML];
-    G-->H[Déploiement sur GitHub Pages];
-    H-->Twitter;
-    H-->LinkedIn;
+    Z["master"]-->A["Création d'une branche"]-->B{{"Pull Request"}};
+    C["Contributeur 1"]-->B;
+    D["Contributrice 2"]-->B;
+    E["Contributeur n"]-->B;
+    B-->F["Merge dans la branche principale"];
+    F-->G["Conversion en HTML"];
+    G-->H["Déploiement sur GitHub Pages"];
+    H-->I(("Twitter"));
+    H-->J(("LinkedIn"));
 ```
 ````
 
@@ -49,21 +49,21 @@ graph TD;
 
 ```mermaid
 graph TD;
-    Z[master]-->A[Création d'une branche]-->B(Pull Request);
-    C[Contributeur 1]-->B;
-    D[Contributrice 2]-->B;
-    E[Contributeur n]-->B;
-    B-->F[Merge dans la branche principale];
-    F-->G[Conversion en HTML];
-    G-->H[Déploiement sur GitHub Pages];
-    H-->Twitter;
-    H-->LinkedIn;
+    Z["master"]-->A["Création d'une branche"]-->B{{"Pull Request"}};
+    C["Contributeur 1"]-->B;
+    D["Contributrice 2"]-->B;
+    E["Contributeur n"]-->B;
+    B-->F["Merge dans la branche principale"];
+    F-->G["Conversion en HTML"];
+    G-->H["Déploiement sur GitHub Pages"];
+    H-->I(("Twitter"));
+    H-->J(("LinkedIn"));
 ```
 
 ### Exemple 2
 
 ````markdown
-```mermaid
+``` mermaid
 graph LR
   A[Start] --> B{Error?};
   B -->|Yes| C[Hmm...];
@@ -77,9 +77,9 @@ graph LR
 
 ``` mermaid
 graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
+  A["Start"] --> B{"Error?"};
+  B -->|"Yes"| C["Hmm..."];
+  C --> D["Debug"];
   D --> B;
-  B ---->|No| E[Yay!];
+  B ---->|"No"| E["Yay!"];
 ```
