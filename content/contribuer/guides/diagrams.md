@@ -32,7 +32,7 @@ Cela consiste en créant une balise de code pointant sur le langage `mermaid`, d
 
 ````markdown
 ```mermaid
-graph TD;
+flowchart TD;
     Z["master"]-->A["Création d'une branche"]-->B{{"Pull Request"}};
     C["Contributeur 1"]-->B;
     D["Contributrice 2"]-->B;
@@ -48,7 +48,7 @@ graph TD;
 ### Rendu 1
 
 ```mermaid
-graph TD
+flowchart TD
     Z["master"]-->A["Création d'une branche"]-->B["PullRequest"];
     C["Contributeur 1"]-->B;
     D["Contributrice 2"]-->B;
@@ -63,8 +63,8 @@ graph TD
 ### Exemple 2
 
 ````markdown
-``` mermaid
-graph LR
+```mermaid
+flowchart LR
   A[Start] --> B{Error?};
   B -->|Yes| C[Hmm...];
   C --> D[Debug];
@@ -75,8 +75,8 @@ graph LR
 
 ### Rendu 2
 
-``` mermaid
-graph LR
+```mermaid
+flowchart LR
   A["Start"] --> B{"Error?"};
   B -->|"Yes"| C["Hmm..."];
   C --> D["Debug"];
