@@ -9,24 +9,26 @@ categories:
 date: 2020-07-20 10:20
 description: "Guide de contribution à Geotribu : comment intégrer des diagrammes Mermaid dans un contenu en Markdown."
 tags:
-    - geotribu
     - contribuer
     - diagramme
-    - schéma
     - MermaidJS
+    - schéma
 ---
 
 # Insérer des diagrammes
 
 Le site intègre la bibliothèque [MermaidJS](https://mermaid-js.github.io/mermaid/#/) qui permet de générer des diagrammes en utilisant une extension de la syntaxe Markdown.
 
-On utilise [l'extension SuperFences de PyMdown](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/#uml-diagram-example/).
+On utilise [l'intégration dans le thème Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/reference/diagrams/).
 
 ## Syntaxe
 
 Cela consiste en créant une balise de code pointant sur le langage `mermaid`, dans laquelle on insère notre syntaxe MermaidJS.
 
-### Exemple
+!!! tip
+    Pour se faciliter les choses, il est conseillé d'utiliser [l'éditeur en ligne](https://mermaid-js.github.io/mermaid-live-editor/) pour préparer son diagramme.
+
+### Exemple 1
 
 ````markdown
 ```mermaid
@@ -43,10 +45,7 @@ graph TD;
 ```
 ````
 
-!!! tip
-    Pour se faciliter les choses, il est conseillé d'utiliser [l'éditeur en ligne](https://mermaid-js.github.io/mermaid-live-editor/) pour préparer son diagramme.
-
-### Rendu
+### Rendu 1
 
 ```mermaid
 graph TD;
@@ -59,4 +58,28 @@ graph TD;
     G-->H[Déploiement sur GitHub Pages];
     H-->Twitter;
     H-->LinkedIn;
+```
+
+### Exemple 2
+
+````markdown
+```mermaid
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
+```
+````
+
+### Rendu 2
+
+``` mermaid
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
 ```

@@ -10,8 +10,8 @@ site_url: https://static.geotribu.fr/
 copyright: '<span class="copyleft">&copy;</span> Geotribu'
 
 # Custom folder structure
-docs_dir: './content'
-site_dir: './build/mkdocs/site'
+docs_dir: "./content"
+site_dir: "./build/mkdocs/site"
 
 # Plugins
 plugins:
@@ -25,8 +25,8 @@ plugins:
 
 # Theme
 theme:
-  name: 'material'
-  custom_dir: './content/theme/'
+  name: "material"
+  custom_dir: "./content/theme/"
   favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
 
   # Don't include MkDocs' JavaScript
@@ -40,7 +40,7 @@ theme:
   font: false
   icon:
     repo: fontawesome/brands/github-alt
-  language: 'fr'
+  language: "fr"
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
     # Light mode
@@ -62,13 +62,13 @@ theme:
         name: Basculer en mode clair
 
 extra_css:
-  - 'theme/assets/stylesheets/extra.css'
-  - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css'
+  - "theme/assets/stylesheets/extra.css"
+  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css"
 
 extra_javascript:
   - 'theme/assets/javascripts/extra.js'
   - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js'
-  - 'https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js'
+  - 'https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js'
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
@@ -91,7 +91,7 @@ markdown_extensions:
   - pymdownx.smartsymbols
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
-      base_path: '.'
+      base_path: "."
       check_paths: true
   - pymdownx.superfences:
       custom_fences:
@@ -105,7 +105,6 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
-
 # Navigation - Menu organization
 # nav:
 #   - Accueil: index.md
