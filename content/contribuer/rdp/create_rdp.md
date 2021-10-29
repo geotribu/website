@@ -116,7 +116,7 @@ Ensuite, il faut mettre à jour certains éléments :
 
 Les lignes concernées sont surlignées ci-dessous (attention, cela peut varier selon le modèle utilisé) :
 
-```markdown hl_lines="2 5 12"
+```markdown hl_lines="2 7 17"
 ---
 title: "[TEMPLATE] Revue de presse du 21 août 2021"
 authors:
