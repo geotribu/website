@@ -24,7 +24,7 @@ Ces jours-ci je formais quelques éminents membres des [CEN](https://fr.wikipedi
 
 ![QGIS 0.9.1 Ganymede - Splash](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9_ganymede_splash.png "QGIS 0.9.1 Ganymede - Splash"){: .img-center loading=lazy }
 
-Alors, plus de 12 ans après [notre article "A la découverte de QGIS"](/articles/2009/art_2009-08-28/), pour fêter la Toussaint / Halloween, je vous propose d'exhumer QGIS 0.x et de voir si le cadavre bouge encore :skull: :headstone:.
+Alors, plus de 12 ans après [notre article "A la découverte de Quantum GIS 1.0.0"](/articles/2009/art_2009-08-28/), pour fêter la Toussaint / Halloween, je vous propose d'exhumer Quantum GIS 0.x et de voir si le cadavre bouge encore :skull: :headstone:.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
