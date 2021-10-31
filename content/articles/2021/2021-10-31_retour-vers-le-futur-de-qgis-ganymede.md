@@ -59,7 +59,7 @@ La première chose que l'on remarque, c'est que comme bon nombre d'entre nous, Q
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
 Mais qu'y avait-il donc dans Quantum GIS avant même sa version 1, seuil conventionnel de stabilisation d'un logiciel ?  
-A l'époque où [Esri investissait près de 20% de son CA en R&D, sortait ArcExplorer, ArcGIS for AutoCAD et amorçait ArcGIS Online](https://www.esri.com/news/arcnews/winter0708articles/arcgis-product-suite.html) et que MapInfo, alors principal logiciel SIG dans les institutions françaises, [était racheté par Pitney Bowes](https://www.investorrelations.pitneybowes.com/news-releases/news-release-details/pitney-bowes-completes-acquisition-mapinfo) et que l'open source géospatial utilisait entre autres [Puzzle GIS](/articles/2009/art_2009-05-24/), [OpenJump](/articles/2009/art_2009-05-31/), [uDig](/articles/2009/art_2009-06-07/) ?
+A l'époque où [Esri investissait près de 20% de son CA en R&D, sortait ArcExplorer, ArcGIS for AutoCAD et amorçait ArcGIS Online](https://www.esri.com/news/arcnews/winter0708articles/arcgis-product-suite.html), que MapInfo, alors principal logiciel SIG dans les institutions françaises, [était racheté par Pitney Bowes](https://www.investorrelations.pitneybowes.com/news-releases/news-release-details/pitney-bowes-completes-acquisition-mapinfo) et que l'open source géospatial proposait entre autres [Puzzle GIS](/articles/2009/art_2009-05-24/), [OpenJump](/articles/2009/art_2009-05-31/), [uDig](/articles/2009/art_2009-06-07/) ?
 
 Eh bien, voici quelques captures :
 
@@ -83,9 +83,9 @@ Eh bien, voici quelques captures :
 
 Chaud comme j'étais, je me suis dit : et si je faisais une carte avec QGIS 0.9 en utilisant des données d'aujourd'hui ?
 
-Pour rester dans le thème, j'ai cherché des données sur data.gouv.fr avec les déconvenues habituelles : lien mort (post-mortem geo.data.gouv.fr), données pas vraiment ouvertes (écosanté), etc. Mais en creusant les mots-clés dans la recherche, [`crémation`](https://www.data.gouv.fr/fr/datasets/?q=cr%C3%A9mation) m'a donné satisfaction !
+Tout en restant dans le thème de la Toussaint, j'ai cherché des données sur data.gouv.fr avec les déconvenues habituelles : lien mort (post-mortem geo.data.gouv.fr), données pas vraiment ouvertes (écosanté), etc. Mais en variant les mots-clés dans la recherche, [`crémation`](https://www.data.gouv.fr/fr/datasets/?q=cr%C3%A9mation) m'a donné satisfaction !
 
-Nous voici donc avec le jeu de données de [l'origine des défunts incinées depuis 2014 sur Lille Métropole](https://www.data.gouv.fr/fr/datasets/cremations-depuis-2014/) qui semble [avoir 2 crématoriums](https://www.lillemetropole.fr/votre-metropole/competences/cadre-de-vie/crematorium). Niquel :smoking: !
+Nous voici donc avec le jeu de données de [l'origine des défunts incinérés depuis 2014 sur Lille Métropole](https://www.data.gouv.fr/fr/datasets/cremations-depuis-2014/) qui semble [avoir 2 crématoriums](https://www.lillemetropole.fr/votre-metropole/competences/cadre-de-vie/crematorium). Niquel :smoking: !
 
 Un rapide coup d'oeil aux données et je me dis : "Trop cool ! Je vais faire une carte de flux entre les origines des défunts et les crématorium."
 
