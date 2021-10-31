@@ -35,7 +35,7 @@ Alors, plus de 12 ans après [notre article "A la découverte de Quantum GIS 1.0
 
 ![Ancien logo de QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis_old.png "Ancien logo de QGIS"){: .img-rdp-news-thumb }
 
-Le site officiel indique [où trouver les anciennes versions](https://download.osgeo.org/qgis/), y'a plus qu'à se servir. J'ai opté pour la plus vieille : la [0.9.1 Ganymède, mise en ligne le 18 décembre 2017](https://download.osgeo.org/qgis/windows/qgis_setup0.9.1.18_12_2007.exe).
+Le site officiel indique [où trouver les anciennes versions](https://download.osgeo.org/qgis/), y'a plus qu'à se servir. J'ai opté pour la plus vieille : la [0.9.1 Ganymède, mise en ligne le 18 décembre 2007](https://download.osgeo.org/qgis/windows/qgis_setup0.9.1.18_12_2007.exe).
 
 Lancer l'installateur en mode administrateur et quelques instants plus tard, c'est bon : Quantum GIS est dans Program Files x86 de Windows 10 :men_with_bunny_ears_partying:.
 
