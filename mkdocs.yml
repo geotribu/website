@@ -49,7 +49,7 @@ plugins:
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
       match_path: "(articles|rdp)/.*"
-      pretty_print: false
+      pretty_print: true
       url_parameters:
         utm_source: "rss-feed"
         utm_medium: "RSS"
