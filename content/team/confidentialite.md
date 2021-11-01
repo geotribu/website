@@ -71,6 +71,18 @@ Les paramètres utilisés sont :
 
 ----
 
+## Newsletter
+
+![icône newsletter](https://cdn.geotribu.fr/img/logos-icones/divers/newsletter.webp "icône newsletter"){: .img-rdp-news-thumb }
+
+Pour gérer les abonnements (inscription, désinscription, etc.) ainsi que les envois de la newsletter, nous utilisons la [plateforme Mailchimp](https://mailchimp.com/fr/). Aucun code spécifique issu de cette plateforme n'est intégré au site.
+Les informations requises pour l'inscription sont :
+
+- une adresse email valide (évidemment)
+- un pseudonyme
+
+----
+
 ## Commentaires
 
 ![icône commentaire](https://cdn.geotribu.fr/img/logos-icones/astuce.png "icône commentaire"){: .img-rdp-news-thumb }
