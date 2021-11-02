@@ -21,7 +21,7 @@ tags:
 La newsletter existe suite à différents constats.
 
 Tout le monde n'utilise pas le RSS.  
-Tout le monde ne gâche pas sa vie sur ls réseaux sociaux à scruter les hashtags [#GeoRDP sur Twitter](https://twitter.com/hashtag/GeoRDP) ou [#Geotribu sur LinkedIn](https://www.linkedin.com/feed/hashtag/?keywords=geotribu).
+Tout le monde ne gâche pas sa vie sur ls réseaux sociaux à scruter les hashtags [#GeoRDP sur Twitter](https://twitter.com/hashtag/GeoRDP) ou [#Geotribu sur LinkedIn](https://www.linkedin.com/feed/hashtag/?keywords=geotribu).  
 Tout le monde n'a pas mis le site Geotribu en page d'accueil de son butineur préféré.
 
 Enfin, la newsletter existe également pour faciliter la vie aux gens qui amalgament la revue de presse à une newsletter. Voilà qui les absout d'office !
