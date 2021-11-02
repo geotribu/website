@@ -161,6 +161,9 @@ extra:
     - icon: "fontawesome/brands/facebook"
       link: "https://fr-fr.facebook.com/geotribu/"
       name: "Page Facebook de Geotribu"
+    - icon: "fontawesome/brands/mailchimp"
+      link: http://eepurl.com/hL0zVr/
+      name: "Abonnez-vous à la newsletter"
     - icon: fontawesome/solid/paper-plane
       link: mailto:<geotribu@gmail.com>
       name: "Nous contacter"
