@@ -160,9 +160,15 @@ extra:
     - icon: "fontawesome/brands/linkedin"
       link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
       name: "Les contenus de Geotribu sur LinkedIn"
+    - icon: "fontawesome/brands/youtube"
+      link: "https://www.youtube.com/channel/UCfpO6BcaqxxykBOWJzP_9jg/"
+      name: "Chaîne Youtube de Geotribu"
     - icon: "fontawesome/brands/facebook"
       link: "https://fr-fr.facebook.com/geotribu/"
       name: "Page Facebook de Geotribu"
+    - icon: "fontawesome/brands/mailchimp"
+      link: http://eepurl.com/hL0zVr/
+      name: "Abonnez-vous à la newsletter"
     - icon: fontawesome/solid/paper-plane
       link: mailto:<geotribu@gmail.com>
       name: "Nous contacter"
