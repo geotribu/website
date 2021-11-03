@@ -51,5 +51,20 @@ Comme toujours, le code et fichiers de configuration sont librement accessibles 
 [Fichiers de configuration et documentation :fontawesome-brands-github:](https://github.com/geotribu/minimalist-cdn/){: .md-button }
 {: align=middle }
 
+## Pour la sobriété numérique
+
+![logo environnement](https://cdn.geotribu.fr/img/logos-icones/divers/environnement.png "logo environnement"){: .img-rdp-news-thumb }
+
+Afin de ne pas encombrer inutilement des serveurs, et donc de les faire tourner pour peu de choses et consommer de l'énergie, il est préférable de garder le moins possible de fichiers joints aux sauvegardes. Seuls les fichiers des sauvegardes la plus récente et la plus ancienne peuvent être utiles un jour. Il est en revanche important de garder les sauvegardes et de ne supprimer que le fichier tar.gz joint.
+
+Dans un premier temps, il a été décidé de réaliser cette opération à la main :
+
+1. Se rendre sur [la page Github Releases](https://github.com/geotribu/website/releases) du site web de Geotribu
+2. Editer la sauvegarde à effacer pour l'éditer
+3. Supprimer le fichier tar.gz attaché
+4. Valider la modification en cliquant sur `Update release`
+
+**:bear: Bien joué, les ours polaires vous remercieront un jour !**
+
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/
