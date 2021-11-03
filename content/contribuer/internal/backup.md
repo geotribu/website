@@ -62,7 +62,7 @@ Dans un premier temps, il a été décidé de réaliser cette opération à la m
 - Se rendre sur [la page Github Releases](https://github.com/geotribu/website/releases) du site web de Geotribu
 - Editer la sauvegarde à effacer pour l'éditer
 - Supprimer le fichier tar.gz attaché
-- Valider la modification en cliquant sur Update release
+- Valider la modification en cliquant sur `Update release`
 
 Bien joué, les ours polaires vont remercieront un jour :bear: !
 
