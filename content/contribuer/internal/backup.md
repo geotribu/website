@@ -59,10 +59,10 @@ Afin de ne pas encombrer inutilement des serveurs, et donc de les faire tourner 
 
 Dans un premier temps, il a été décidé de réaliser cette opération à la main :
 
-- Se rendre sur [la page Github Releases](https://github.com/geotribu/website/releases) du site web de Geotribu
-- Editer la sauvegarde à effacer pour l'éditer
-- Supprimer le fichier tar.gz attaché
-- Valider la modification en cliquant sur `Update release`
+1. Se rendre sur [la page Github Releases](https://github.com/geotribu/website/releases) du site web de Geotribu
+2. Editer la sauvegarde à effacer pour l'éditer
+3. Supprimer le fichier tar.gz attaché
+4. Valider la modification en cliquant sur `Update release`
 
 **:bear: Bien joué, les ours polaires vous remercieront un jour !**
 
