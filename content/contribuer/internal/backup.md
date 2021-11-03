@@ -64,7 +64,7 @@ Dans un premier temps, il a été décidé de réaliser cette opération à la m
 - Supprimer le fichier tar.gz attaché
 - Valider la modification en cliquant sur `Update release`
 
-**:bear: Bien joué, les ours polaires vont remercieront un jour !**
+**:bear: Bien joué, les ours polaires vous remercieront un jour !**
 
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/
