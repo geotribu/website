@@ -18,13 +18,15 @@ tags:
 
 :calendar: Date de publication initiale : 9 novembre 2021
 
-![couverture enfer du numerique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png "Couverture Enfer du numérique"){: .img-rdp-news-thumb }
+![icône livre](https://cdn.geotribu.fr/img/logos-icones/divers/livre.png "Logo livre"){: .img-rdp-news-thumb }
 
 Sur Geotribu, on parle d'outils libres et de géomatique. C’est un fait partagé par nous tous, rédacteurs et lecteurs de ce site. L'ouvrage dont je m'apprête à vous parler n'est pas directement lié aux SIG. En revanche, il questionne pas mal de choses sur nos pratiques quotidiennes professionnelles (et pas que !). C'est pourquoi je me permets de vous en parler ici.
 
+[![couverture enfer du numerique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png "Couverture Enfer du numérique"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png){: data-mediabox="lightbox-gallery" data-title="Couverture Enfer du numérique"}
+
 Lorsque j'ai entendu le titre du livre à la radio, je l'ai trouvé intrigant, limite aguicheur. Je suis allé regarder un peu plus ce qu'en disait le grand internet et les médias. Assez peu de choses en réalité car il venait de sortir. Mais je suis surtout tombé sur les récompenses que l'auteur, Guillaume Pitron, a reçu pour son précédent ouvrage *La guerre des métaux rares.*
 
-A ce moment-là, très honnêtement je me suis dit " 🤔Pourquoi pas, ça peut être intéressant". Et au fil de sa lecture, je me suis pris une série de claques. Pas que l'auteur soit d'un naturel à mettre en cause le lecteur et à le pointer du doigt. Plutôt tout le contraire en fait. Il a cette capacité à mêler avec brio, bibliographie scientifique et retours du terrain, qui font de la lecture de cet ouvrage, un moment à la fois très agréable et légèrement dérangeant psychologiquement. Car il pose des questions, du genre de celles qui dérangent. Sur nos habitudes face au numérique, au divertissement et à la manière dont nous travaillons aujourd'hui.
+A ce moment-là, très honnêtement je me suis dit ":pensive: Pourquoi pas, ça peut être intéressant". Et au fil de sa lecture, je me suis pris une série de claques. Pas que l'auteur soit d'un naturel à mettre en cause le lecteur et à le pointer du doigt. Plutôt tout le contraire en fait. Il a cette capacité à mêler avec brio, bibliographie scientifique et retours du terrain, qui font de la lecture de cet ouvrage, un moment à la fois très agréable et légèrement dérangeant psychologiquement. Car il pose des questions, du genre de celles qui dérangent. Sur nos habitudes face au numérique, au divertissement et à la manière dont nous travaillons aujourd'hui.
 
 Personnellement, je me considère comme étant sensible et informé des questions autour du changement climatique et de l'impact que cela a et va sans doute avoir sur nos territoires. Mais je n'étais sans doute pas prêt à me poser autant de questions sur l'impact matériel, physique et bien concret de mes actions numériques quotidiennes.
 
@@ -116,7 +118,6 @@ Une des actions prises comme exemple pour lutter contre cela est le World Digita
 - Généraliser les principes de data FAIR lien
 
 !!! tip
-
 La meilleure données est celle qu'on ne crée pas
 
 Certains chercheurs travaillent sur une sorte de super-intelligence verte (grosso modo une IA forte référence) qui permettrait en théorie de pallier à nos faiblesses humaines en prenant des choix objectifs qui tendraient vers une amélioration climatique. La question à se poser est : n'irait-elle pas jusqu'à considérer l'homme comme nuisible pour l'écosystème mondial et nous rayer de la carte?
