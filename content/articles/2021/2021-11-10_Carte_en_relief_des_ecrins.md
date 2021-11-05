@@ -7,8 +7,7 @@ categories:
     - tutoriel
 date: 2021-10-10 00:00
 description: "Réalisez facilement une carte en relief du Parc National des Écrins avec des données IGN et QGIS."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/"
-image: "https://i.imgur.com/L8q8Cs3.png"
+image: "https://camo.githubusercontent.com/c8c6044847a7d623c9bd638181da2e143454f3aa1cc85feb06e697e152941552/68747470733a2f2f692e696d6775722e636f6d2f4c3871384373332e706e67"
 license: default
 tags: 
     - TutoCarto
