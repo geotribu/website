@@ -1,5 +1,5 @@
 ---
-title: "Fiche de géolecture : L'enfer du numérique"
+title: "Fiche de géo-lecture : L'enfer du numérique"
 authors:
     - Aurélien Chaumet
 categories:
@@ -9,7 +9,7 @@ description: "Description pour le SEO."
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
 license: default
 tags:
-    - geolecture
+    - géo-lecture
     - numérique
     - sobriété
 ---
