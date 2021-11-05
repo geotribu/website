@@ -14,7 +14,7 @@ tags:
     - sobriété
 ---
 
-# Fiche de géolecture : L'enfer du numérique - Guillaume Pitron
+# Fiche de géo-lecture : L'enfer du numérique - Guillaume Pitron
 
 :calendar: Date de publication initiale : 9 novembre 2021
 
@@ -22,15 +22,16 @@ tags:
 
 Sur Geotribu, on parle d'outils libres et de géomatique. C’est un fait partagé par nous tous, rédacteurs et lecteurs de ce site. L'ouvrage dont je m'apprête à vous parler n'est pas directement lié aux SIG. En revanche, il questionne pas mal de choses sur nos pratiques quotidiennes professionnelles (et pas que !). C'est pourquoi je me permets de vous en parler ici.
 
-[![couverture enfer du numerique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png "Couverture Enfer du numérique"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png){: data-mediabox="lightbox-gallery" data-title="Couverture Enfer du numérique"}
+![couverture enfer du numerique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png "Couverture Enfer du numérique"){:img-center loading=lazy }
 
-Lorsque j'ai entendu le titre du livre à la radio, je l'ai trouvé intrigant, limite aguicheur. Je suis allé regarder un peu plus ce qu'en disait le grand internet et les médias. Assez peu de choses en réalité car il venait de sortir. Mais je suis surtout tombé sur les récompenses que l'auteur, Guillaume Pitron, a reçu pour son précédent ouvrage *La guerre des métaux rares.*
+Lorsque j'ai entendu le titre du livre à la radio, je l'ai trouvé intrigant, limite aguicheur. Je suis allé regarder un peu plus ce qu'en disait le grand internet et les médias. Assez peu de choses en réalité car il venait de sortir. Mais je suis surtout tombé sur les récompenses que l'auteur, Guillaume Pitron, a reçu pour son précédent ouvrage [*La guerre des métaux rares*](http://www.editionslesliensquiliberent.fr/livre-La_guerre_des_m%C3%A9taux_rares-9791020905741-1-1-0-1.html).
 
-A ce moment-là, très honnêtement je me suis dit ":pensive: Pourquoi pas, ça peut être intéressant". Et au fil de sa lecture, je me suis pris une série de claques. Pas que l'auteur soit d'un naturel à mettre en cause le lecteur et à le pointer du doigt. Plutôt tout le contraire en fait. Il a cette capacité à mêler avec brio, bibliographie scientifique et retours du terrain, qui font de la lecture de cet ouvrage, un moment à la fois très agréable et légèrement dérangeant psychologiquement. Car il pose des questions, du genre de celles qui dérangent. Sur nos habitudes face au numérique, au divertissement et à la manière dont nous travaillons aujourd'hui.
+A ce moment-là, très honnêtement je me suis dit "Pourquoi pas, ça peut être intéressant".  
+Et au fil de sa lecture, je me suis pris une série de claques. Pas que l'auteur soit d'un naturel à mettre en cause le lecteur et à le pointer du doigt. Plutôt tout le contraire en fait. Il a cette capacité à mêler avec brio, bibliographie scientifique et retours du terrain, qui font de la lecture de cet ouvrage, un moment à la fois très agréable et légèrement dérangeant psychologiquement. Car il pose des questions, du genre de celles qui dérangent. Sur nos habitudes face au numérique, au divertissement et à la manière dont nous travaillons aujourd'hui.
 
 Personnellement, je me considère comme étant sensible et informé des questions autour du changement climatique et de l'impact que cela a et va sans doute avoir sur nos territoires. Mais je n'étais sans doute pas prêt à me poser autant de questions sur l'impact matériel, physique et bien concret de mes actions numériques quotidiennes.
 
-L'objectif de cette fiche de géolecture n'est pas de résumer le livre, mais plus d'en sortir quelques idées fortes et chiffres choc.  
+L'objectif de cette fiche de géo-lecture n'est pas de résumer le livre, mais plus d'en sortir quelques idées fortes et chiffres choc.  
 J'espère sincèrement qu'il vous donnera envie de vous plonger dans ce livre, car il a changé ma manière de réfléchir sur un certain nombre de choses, et m'a donné envie d'agir différemment.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -57,11 +58,13 @@ Dans l'ensemble de son œuvre, il tente de renverser certains paradigmes admis a
 
 Le numérique représente 4% des émissions globales de GES, soit autant que le secteur aérien. En grande partie dû à la production de dispositifs numériques.
 
+[![empreinte du numerique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/empreinte_numerique_greenit.png "Empreinte du numérique - Source : GreenIT.fr"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/empreinte_numerique_greenit.png){: data-mediabox="lightbox-gallery" data-title="Empreinte du numérique - Source : GreenIT.fr"}
+
 La consommation électrique du numérique a augmenté de 5 à 7% par an et pourrait solliciter 20% de l'électricité mondiale en 2025. Sa part dans les gaz à effet de serre pourrait passer à 8% d'ici là.
 
 Le changement de paradigme dans la pensée populaire de "Numérique = Écologie" pourrait venir des industriels eux-mêmes afin de se plier aux attentes des consommateurs.
 
-La seule fabrication d'un smartphone est responsable de 80% de l'ensemble de sa dépense énergétique et près de la moitié de son empreinte environnementale. D'où l'importance de la réparabilité de nos devices ainsi que de leur compatibilité avec les OS sur un moyen terme. Aujourd'hui, nous sommes certes propriétaires de nos machines, mais nous acquérons avec, seulement une licence d'utilisation du logiciel, et nous n'avons que rarement droit d'y toucher (intérêt du libre :smile:). #TechniqueMonsanto
+La seule fabrication d'un smartphone est responsable de 80% de l'ensemble de sa dépense énergétique et près de la moitié de son empreinte environnementale. D'où l'importance de la réparabilité de nos devices ainsi que de leur compatibilité avec les OS sur un moyen terme. Aujourd'hui, nous sommes certes propriétaires de nos machines, mais nous acquérons avec, seulement une licence d'utilisation du logiciel, et nous n'avons que rarement droit d'y toucher (intérêt du libre :smiley:). #TechniqueMonsanto
 
 Les quantités de données produites allant exponentiellement, il faut de plus en plus de datacenters pour stocker et gérer ces données. Le secteur croit de 7% par an.
 
@@ -74,6 +77,8 @@ Les quantités de données produites allant exponentiellement, il faut de plus e
 - Les designers, qui s'échinent a rendre toujours plus épurées nos machines. Et donc à les simplifier jusqu'à faire disparaître la complexité des machines et du numérique globalement
 
 En réalité, dématérialiser, c'est rematérialiser autrement. Il faudrait maintenant plutôt parler de démultiplication de la matière en lieu et place de dématérialisation.
+
+[![mirage du cloud](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/serveur_mirage_cloud.png "Mirage du cloud"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/serveur_mirage_cloud.png){: data-mediabox="lightbox-gallery" data-title="Mirage du cloud"}
 
 A cela s'ajoute l'apparente impression de services gratuits, comme ceux fournis par Google et Facebook. Mais l'adage dit "Quand c'est gratuit, c'est que vous êtes le produit". A quel point sommes-nous prêts à laisser les grandes firmes du numériques utiliser nos habitudes de vie et de consommation pour les monnayer à d'autres entreprises ? Sans qu'on sache quelles sont-elles.  
 De plus, cette gratuité ne pousse pas à l'économie et provoque même un sentiment d'open bar dans la consommation de data. Nous générerions chacun en moyenne 150 Go par jour.
