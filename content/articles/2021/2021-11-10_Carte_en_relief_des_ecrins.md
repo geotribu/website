@@ -9,7 +9,7 @@ date: 2021-10-10 00:00
 description: "Réalisez facilement une carte en relief du Parc National des Écrins avec des données IGN et QGIS."
 image: "https://camo.githubusercontent.com/c8c6044847a7d623c9bd638181da2e143454f3aa1cc85feb06e697e152941552/68747470733a2f2f692e696d6775722e636f6d2f4c3871384373332e706e67"
 license: default
-tags: 
+tags:
     - TutoCarto
     - QGIS
     - BDAlti
@@ -21,12 +21,12 @@ breaks: false
 ---
 # 🗺️ Faire une carte en relief des Écrins
 
-Aujourd'hui, nous allons voir comment réaliser une carte en relief du [Parc National des Écrins](https://fr.wikipedia.org/wiki/Parc_national_des_%C3%89crins). 
+Aujourd'hui, nous allons voir comment réaliser une carte en relief du [Parc National des Écrins](https://fr.wikipedia.org/wiki/Parc_national_des_%C3%89crins).
 Vous pouvez suivre le déroulement [sur la vidéo <i class="fa fa-youtube-play"></i>](https://youtu.be/wJjlKoSkmjY) (activez les sous-titres).
 
 <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/wJjlKoSkmjY?cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Pour cela, nous aurons besoins : 
+Pour cela, nous aurons besoins :
 - d'un modèle numérique de terrain (MNT)
 - d'un fond de carte
 - et d'un logiciel SIG ([QGis](https://www.qgis.org/fr/site/))
@@ -88,7 +88,7 @@ Supprimer les dalles et ne conservez que le résultat de la fusion.
 
 Il va maintenant falloir trouver une carte à mettre sur ces données.
 Pour cela, l'IGN met à disposition [un ensemble de fond de carte sur sont sit Géoservice](https://geoservices.ign.fr/services-web-experts).
-En particulier, pour ajouter les cartes, rendez-vous [sur cette page](https://geoservices.ign.fr/services-web-experts-cartes) pour récupérer l'url du service : 
+En particulier, pour ajouter les cartes, rendez-vous [sur cette page](https://geoservices.ign.fr/services-web-experts-cartes) pour récupérer l'url du service :
 ```html
 https://wxs.ign.fr/cartes/geoportail/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities
 ```
@@ -103,7 +103,7 @@ Dans notre cas, nous allons choisir le SCAN historique qui a un rendu plutôt sy
 
 ## Passez dans la 3ième dimension
 
-Pour cela, vous devrez ajouter une extension à QGis. 
+Pour cela, vous devrez ajouter une extension à QGis.
 Allez dans le menu `Extension > Installer / gérer les extensions` et recherchez Qgis2threejs et installez la si ce n'est pas déjà fait.
 
 Il vous suffit alors de cliquer sur la nouvelle icone ![](https://i.imgur.com/qzmotVy.png) (ou via le menu Internet).
@@ -125,4 +125,4 @@ Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page in
 <iframe src="https://viglino.github.io/maps/static/PNE_coeur.html" width="100%" height="500"></iframe>
 
 [Voir en plein écran <i class="fa fa-external-link"></i>](https://viglino.github.io/maps/static/PNE_coeur.html)
-    
+
