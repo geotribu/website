@@ -1,24 +1,25 @@
 ---
 title: "Faire une carte en relief des Écrins"
 authors:
-    - Viglino
+  - Viglino
 categories:
-    - article
-    - tutoriel
+  - article
+  - tutoriel
 date: 2021-10-10 00:00
 description: "Réalisez facilement une carte en relief du Parc National des Écrins avec des données IGN et QGIS."
 image: "https://camo.githubusercontent.com/c8c6044847a7d623c9bd638181da2e143454f3aa1cc85feb06e697e152941552/68747470733a2f2f692e696d6775722e636f6d2f4c3871384373332e706e67"
 license: default
 tags:
-    - TutoCarto
-    - QGIS
-    - BDAlti
-    - ThreeJS
-    - relief
-    - DEM
-    - 3D
+  - TutoCarto
+  - QGIS
+  - BDAlti
+  - ThreeJS
+  - relief
+  - DEM
+  - 3D
 breaks: false
 ---
+
 # 🗺️ Faire une carte en relief des Écrins
 
 Aujourd'hui, nous allons voir comment réaliser une carte en relief du [Parc National des Écrins](https://fr.wikipedia.org/wiki/Parc_national_des_%C3%89crins).
@@ -27,6 +28,7 @@ Vous pouvez suivre le déroulement [sur la vidéo <i class="fa fa-youtube-play">
 <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/wJjlKoSkmjY?cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Pour cela, nous aurons besoins :
+
 - d'un modèle numérique de terrain (MNT)
 - d'un fond de carte
 - et d'un logiciel SIG ([QGis](https://www.qgis.org/fr/site/))
@@ -37,7 +39,6 @@ Ouvrez [QGis](https://www.qgis.org/fr/site/) et faites glisser le fichier sur la
 
 ## Le MNT
 
-
 ### Charger les données
 
 Il va nous falloir un modèle numérique de terrain pour plaquer la carte dessus.
@@ -45,8 +46,9 @@ Vous en trouverez disponible en OpenData [sur le site de l'IGN, rubrique BDAlti 
 ![](https://geoservices.ign.fr/sites/default/files/2021-05/bdalti_Visuel.png)
 Il faudra charger les deux départements de l'Isère (38) et les Hautes-Alpes (05) sur lesquels se trouve le parc.
 Attention, ils sont fournis en ftp et il vous faudra un logiciel tel que [FileZilla](https://filezilla-project.org/) pour les charger. Sinon ils sont également disponible en téléchargement sur [opendatarchives.fr](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/).
-- [le MNT del'Isère (06) <i class="fa fa-download"></i>](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D005_2021-08-04.7z)
-- [le MNT Hautes-Alpes (38)  <i class="fa fa-download"></i>](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D038_2020-11-13.7z)
+
+- [le MNT de l'Isère (06) <i class="fa fa-download"></i>](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D005_2021-08-04.7z)
+- [le MNT Hautes-Alpes (38) <i class="fa fa-download"></i>](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D038_2020-11-13.7z)
 
 ### Afficher les données
 
@@ -64,18 +66,19 @@ Comme le parc est à cheval sur deux départements, le plus simple est de recopi
 En fait, vous n'aurez pas besoins de tous les fichier, seul ceux qui se superposent avec le parc sont nécessaires.
 
 Soit les fichiers :
-- BDALTIV2_25M_FXX_**0925_6400**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0925_6425**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0925_6450**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0925_6475**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0950_6400**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0950_6425**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0950_6450**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0950_6475**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0975_6400**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0975_6425**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0975_6450**_MNT_LAMB93_IGN69.asc
-- BDALTIV2_25M_FXX_**0975_6475**_MNT_LAMB93_IGN69.asc
+
+- BDALTIV2*25M_FXX***0925_6400**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0925_6425**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0925_6450**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0925_6475**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0950_6400**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0950_6425**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0950_6450**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0950_6475**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0975_6400**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0975_6425**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0975_6450**\_MNT_LAMB93_IGN69.asc
+- BDALTIV2*25M_FXX***0975_6475**\_MNT_LAMB93_IGN69.asc
 
 Il faudra encore une petite opération si vous voulez éviter les discontinuités en bord de tuile : il va falloir les fusionner.
 Dans le menu, choississez `Raster > Divers > Fusionner` et indiquez les tuiles à fusionner.
@@ -89,9 +92,11 @@ Supprimer les dalles et ne conservez que le résultat de la fusion.
 Il va maintenant falloir trouver une carte à mettre sur ces données.
 Pour cela, l'IGN met à disposition [un ensemble de fond de carte sur sont sit Géoservice](https://geoservices.ign.fr/services-web-experts).
 En particulier, pour ajouter les cartes, rendez-vous [sur cette page](https://geoservices.ign.fr/services-web-experts-cartes) pour récupérer l'url du service :
+
 ```html
 https://wxs.ign.fr/cartes/geoportail/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities
 ```
+
 Puis rendez-vous dans l'explorateur de QGIS à gauche pour ajouter une couche WMS/WMTS (clic-droit nouvelle connexion) et coller l'url dans le champ dédié du dialogue.
 
 ![](https://i.imgur.com/H79A9nN.png)
@@ -99,7 +104,6 @@ Puis rendez-vous dans l'explorateur de QGIS à gauche pour ajouter une couche WM
 Dans notre cas, nous allons choisir le SCAN historique qui a un rendu plutôt sympa.
 
 ![](https://i.imgur.com/yCfwagS.jpg)
-
 
 ## Passez dans la 3ième dimension
 
@@ -112,7 +116,7 @@ Vous pouvez modifier l'exagération vertical pour donner plus de relief...
 
 ![](https://i.imgur.com/0GjwdiZ.png)
 
-Vous pouvez fixer l'étendue de la carte (fixed extent). Dans notre cas, on peut fixer le centre à x 958500, y 6418000 et la largeur 68300 et hauteur  87000.
+Vous pouvez fixer l'étendue de la carte (fixed extent). Dans notre cas, on peut fixer le centre à x 958500, y 6418000 et la largeur 68300 et hauteur 87000.
 
 Vous pouvez également augmenter la résolution de la carte en faisant un clic-droit sur la couche d'élévation (DEM). Il suffit d'augmenter la largeur de la texture.
 
@@ -125,4 +129,3 @@ Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page in
 <iframe src="https://viglino.github.io/maps/static/PNE_coeur.html" width="100%" height="500"></iframe>
 
 [Voir en plein écran <i class="fa fa-external-link"></i>](https://viglino.github.io/maps/static/PNE_coeur.html)
-
