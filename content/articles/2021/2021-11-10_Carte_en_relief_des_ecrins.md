@@ -81,9 +81,13 @@ Soit les fichiers :
 - BDALTIV2*25M_FXX***0975_6475**\_MNT_LAMB93_IGN69.asc
 
 Il faudra encore une petite opération si vous voulez éviter les discontinuités en bord de tuile : il va falloir les fusionner.
-Dans le menu, choisissez `Raster > Divers > Fusionner` et indiquez les tuiles à fusionner.
+Dans le menu, choisissez `Raster > Divers > Construire un raster virtuel...`.
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/3-merge.jpg){: .img-center loading=lazy }
+
+Dans la boite de dialogue, indiquez les tuiles à fusionner (input layers) et décocher `Place each input file in separate band`, indiquez la projection (Lambert 93).
+
+![](hthttps://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/3-vrt.jpg){: .img-center loading=lazy }
 
 Supprimer les dalles et ne conservez que le résultat de la fusion.
 
@@ -110,7 +114,7 @@ Dans notre cas, nous allons choisir le SCAN historique qui a un rendu plutôt sy
 Pour cela, vous devrez ajouter une extension à QGIS.
 Allez dans le menu `Extension > Installer / gérer les extensions` et recherchez Qgis2threejs et installez la si ce n'est pas déjà fait.
 
-Il vous suffit alors de cliquer sur la nouvelle icône ![](https://i.imgur.com/qzmotVy.png) (ou via le menu Internet).
+Il vous suffit alors de cliquer sur la nouvelle icône ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/qgis2threejs.png) (ou via le menu Internet).
 Dans la fenêtre, choisissez la couche terrain à utiliser (DEM = Digital Elevation Model) et dans le menu `Scene > Scene settings` réglez les paramètres de la vue.
 Vous pouvez modifier l'exagération verticale pour donner plus de relief...
 
@@ -130,4 +134,4 @@ Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page in
 
 [Voir en plein écran <i class="fa fa-external-link"></i>](https://viglino.github.io/maps/static/PNE_coeur.html)
 
---8<-- "content/team/jmev.md"
+--8<-- "content/team/jemv.md"
