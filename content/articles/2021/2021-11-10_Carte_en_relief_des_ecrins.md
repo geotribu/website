@@ -7,7 +7,7 @@ categories:
   - tutoriel
 date: 2021-10-10 00:00
 description: "Réalisez facilement une carte en relief du Parc National des Écrins avec des données IGN et QGIS."
-image: "https://camo.githubusercontent.com/c8c6044847a7d623c9bd638181da2e143454f3aa1cc85feb06e697e152941552/68747470733a2f2f692e696d6775722e636f6d2f4c3871384373332e706e67"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/0-head.jpg"
 license: default
 tags:
   - TutoCarto
@@ -43,7 +43,9 @@ Ouvrez [QGis](https://www.qgis.org/fr/site/) et faites glisser le fichier sur la
 
 Il va nous falloir un modèle numérique de terrain pour plaquer la carte dessus.
 Vous en trouverez disponible en OpenData [sur le site de l'IGN, rubrique BDAlti <i class="fa fa-external-link"></i>](https://geoservices.ign.fr/bdalti).
-![](https://geoservices.ign.fr/sites/default/files/2021-05/bdalti_Visuel.png)
+
+![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/0-BDAlti.jpg){: .img-center loading=lazy }
+
 Il faudra charger les deux départements de l'Isère (38) et les Hautes-Alpes (05) sur lesquels se trouve le parc.
 Attention, ils sont fournis en ftp et il vous faudra un logiciel tel que [FileZilla](https://filezilla-project.org/) pour les charger. Sinon ils sont également disponible en téléchargement sur [opendatarchives.fr](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/).
 
@@ -54,10 +56,10 @@ Attention, ils sont fournis en ftp et il vous faudra un logiciel tel que [FileZi
 
 Décompressez les fichiers chargés précédemment et faite glisser les fichiers `.asc` dans le fenêtre de QGis.
 Il vous faudra définir le système de coordonnées de référence (SCR) pour les données afin que QGis sache comment placer ces fichiers sur la carte. Faites un clic-droit sur la couche pour définir le SCR.
-![](https://i.imgur.com/cVAmody.png)
+![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/1-SCR.jpg){: .img-center loading=lazy }
 
 Les données sont dans le système Lambert 93 (code 2154).
-![](https://i.imgur.com/2PPPWrG.png)
+![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/2-SCR.jpg){: .img-center loading=lazy }
 
 Comme le parc est à cheval sur deux départements, le plus simple est de recopier les fichiers `.asc` des deux archives dans un même répertoire et de les faire glisser tous ensemble sur QGis. On peut ensuite les sélectionner et changer leur SCR en une seule fois.
 
@@ -83,7 +85,7 @@ Soit les fichiers :
 Il faudra encore une petite opération si vous voulez éviter les discontinuités en bord de tuile : il va falloir les fusionner.
 Dans le menu, choississez `Raster > Divers > Fusionner` et indiquez les tuiles à fusionner.
 
-![](https://i.imgur.com/c2UShiQ.png)
+![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/3-merge.jpg){: .img-center loading=lazy }
 
 Supprimer les dalles et ne conservez que le résultat de la fusion.
 
@@ -99,11 +101,11 @@ https://wxs.ign.fr/cartes/geoportail/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=Get
 
 Puis rendez-vous dans l'explorateur de QGIS à gauche pour ajouter une couche WMS/WMTS (clic-droit nouvelle connexion) et coller l'url dans le champ dédié du dialogue.
 
-![](https://i.imgur.com/H79A9nN.png)
+![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/4-WMTS.jpg){: .img-center loading=lazy }
 
 Dans notre cas, nous allons choisir le SCAN historique qui a un rendu plutôt sympa.
 
-![](https://i.imgur.com/yCfwagS.jpg)
+![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/5-scanhisto.jpg){: .img-center loading=lazy }
 
 ## Passez dans la 3ième dimension
 
@@ -114,13 +116,13 @@ Il vous suffit alors de cliquer sur la nouvelle icone ![](https://i.imgur.com/qz
 Dans la fenêtre, choissez la couche terrain à utiliser (DEM = Digital Elevation Model) et dans le menu `Scene > Scene settings` règlez les paramètres de la vue.
 Vous pouvez modifier l'exagération vertical pour donner plus de relief...
 
-![](https://i.imgur.com/0GjwdiZ.png)
+![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/6-scene.jpg){: .img-center loading=lazy }
 
 Vous pouvez fixer l'étendue de la carte (fixed extent). Dans notre cas, on peut fixer le centre à x 958500, y 6418000 et la largeur 68300 et hauteur 87000.
 
 Vous pouvez également augmenter la résolution de la carte en faisant un clic-droit sur la couche d'élévation (DEM). Il suffit d'augmenter la largeur de la texture.
 
-![](https://i.imgur.com/TlusqjN.png)
+![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/7-DEM.jpg){: .img-center loading=lazy }
 
 Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page internet (Export to web et l'extension QGis2threejs).
 
@@ -129,3 +131,5 @@ Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page in
 <iframe src="https://viglino.github.io/maps/static/PNE_coeur.html" width="100%" height="500"></iframe>
 
 [Voir en plein écran <i class="fa fa-external-link"></i>](https://viglino.github.io/maps/static/PNE_coeur.html)
+
+--8<-- "content/team/jmv.md"
