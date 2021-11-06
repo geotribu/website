@@ -5,25 +5,23 @@ authors:
 categories:
   - article
   - tutoriel
-date: 2021-10-10 00:00
+date: 2021-10-11 08:00
 description: "Réalisez facilement une carte en relief du Parc National des Écrins avec des données IGN et QGIS."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/0-head.jpg"
 license: default
 tags:
-  - TutoCarto
   - QGIS
   - BDAlti
   - ThreeJS
   - relief
   - DEM
   - 3D
-breaks: false
 ---
 
-# 🗺️ Faire une carte en relief des Écrins
+# Faire une carte en relief des Écrins
 
 Aujourd'hui, nous allons voir comment réaliser une carte en relief du [Parc National des Écrins](https://fr.wikipedia.org/wiki/Parc_national_des_%C3%89crins).
-Vous pouvez suivre le déroulement [sur la vidéo <i class="fa fa-youtube-play"></i>](https://youtu.be/wJjlKoSkmjY) (activez les sous-titres).
+Vous pouvez suivre le déroulement [sur la vidéo :fontawesome-brands-youtube:](https://youtu.be/wJjlKoSkmjY) (activez les sous-titres).
 
 <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/wJjlKoSkmjY?cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
