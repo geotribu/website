@@ -130,4 +130,4 @@ Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page in
 
 [Voir en plein écran <i class="fa fa-external-link"></i>](https://viglino.github.io/maps/static/PNE_coeur.html)
 
---8<-- "content/team/jmv.md"
+--8<-- "content/team/jmev.md"
