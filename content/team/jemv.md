@@ -6,4 +6,5 @@ Ingénieur à l'[IGN](https://www.ign.fr/), je travaille au développement d'out
 J'entretiens une bibliothèque JS d'extension pour Openlayers [ol-ext](https://viglino.github.io/ol-ext/) disponible en Opensource sur Github.
 
 Ma page [Github](https://github.com/Viglino). Vous pouvez me contacter sur [Twitter](https://twitter.com/jmviglino) ou [LinkedIn](https://www.linkedin.com/in/jean-marc-viglino-87826b14b/).
-Je m'exprime sure ce blog à titre personnel.
+
+Je m'exprime sur ce blog à titre personnel.
