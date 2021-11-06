@@ -87,7 +87,7 @@ Dans le menu, choisissez `Raster > Divers > Construire un raster virtuel...`.
 
 Dans la boite de dialogue, indiquez les tuiles à fusionner (input layers) et décocher `Place each input file in separate band`, indiquez la projection (Lambert 93).
 
-![](hthttps://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/3-vrt.jpg){: .img-center loading=lazy }
+![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/3-vrt.jpg){: .img-center loading=lazy }
 
 Supprimer les dalles et ne conservez que le résultat de la fusion.
 
