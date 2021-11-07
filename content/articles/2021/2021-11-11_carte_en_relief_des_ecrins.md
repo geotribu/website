@@ -38,6 +38,8 @@ Mais tout d'abord, il nous faut trouver une emprise du parc pour nous repérer. 
 
 Ouvrez [QGIS](https://www.qgis.org/fr/site/) et faites glisser le fichier sur la fenêtre pour afficher cette limite.
 
+----
+
 ## Le MNT
 
 ### Charger les données
