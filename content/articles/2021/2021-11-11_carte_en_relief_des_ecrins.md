@@ -47,7 +47,7 @@ Vous en trouverez disponible en OpenData [sur le site de l'IGN, rubrique BDAlti 
 Il faudra charger les deux départements de l'Isère (38) et les Hautes-Alpes (05) sur lesquels se trouve le parc.
 Attention, ils sont fournis en FTP et il vous faudra un logiciel tel que [FileZilla](https://filezilla-project.org/) pour les charger. Sinon ils sont également disponibles en téléchargement sur [opendatarchives.fr](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/).
 
-- [le MNT de l'Isère (06) <i class="fa fa-download"></i>](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D005_2021-08-04.7z)
+- [le MNT de l'Isère (06) :fontawesome-solid-download:](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D005_2021-08-04.7z)
 - [le MNT Hautes-Alpes (38) <i class="fa fa-download"></i>](https://files.opendatarchives.fr/professionnels.ign.fr/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D038_2020-11-13.7z)
 
 ### Afficher les données
