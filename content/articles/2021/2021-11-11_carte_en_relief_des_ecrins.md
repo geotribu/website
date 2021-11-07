@@ -15,7 +15,7 @@ tags:
   - DEM
   - QGIS
   - relief
-  - ThreeJS
+  - three.js
 ---
 
 # Faire une carte en relief des Écrins
@@ -146,7 +146,8 @@ Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page in
 
 <iframe src="https://viglino.github.io/maps/static/PNE_coeur.html" width="100%" height="500"></iframe>
 
-[Voir en plein écran :fontawesome-solid-external-link-alt:](https://viglino.github.io/maps/static/PNE_coeur.html)
+[Voir en plein écran :fontawesome-solid-expand:](https://viglino.github.io/maps/static/PNE_coeur.html){: .md-button }
+{: align=middle }
 
 ----
 
