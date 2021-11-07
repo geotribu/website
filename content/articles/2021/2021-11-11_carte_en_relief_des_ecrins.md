@@ -135,7 +135,9 @@ Vous pouvez également augmenter la résolution de la carte en faisant un clic-d
 
 Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page internet (Export to web et l'extension QGis2threejs).
 
-## Et voilà le résultat...
+----
+
+## Et voilà le résultat !
 
 <iframe src="https://viglino.github.io/maps/static/PNE_coeur.html" width="100%" height="500"></iframe>
 
