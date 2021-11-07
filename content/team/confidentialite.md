@@ -35,6 +35,9 @@ Pas grand chose d'utile et rien de mercantile ! On s'en sert pour :
 
 Question ? Souci ? Angoisse ? Si vous souhaitez en savoir plus sur les données collectées, merci de [nous contacter par email](mailto:geotribu+rgpd@gmail.com).
 
+[Changer à tout moment vos paramètres pour les cookies](#__consent){ .md-button }
+{: align=middle }
+
 ----
 
 ## Google Analytics
@@ -44,9 +47,6 @@ Question ? Souci ? Angoisse ? Si vous souhaitez en savoir plus sur les données 
 Parce-que c'était plus simple et intégré à MkDocs, nous utilisons Google Analytics pour mesurer la fréquentation du site en mode minimal. Compte-tenu de la typologie de notre audience technophile et sensibilisée aux [bloqueurs de pubs](https://fr.wikipedia.org/wiki/Logiciel_antipub), [opt-outs](https://tools.google.com/dlpage/gaoptout/index.html?hl=fr) et autres [VPNs](https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virtuel), les données sont certainement incomplètes voire faussées.
 
 Mais l'objectif n'étant pas de faire du marketing, cela importe peu. L'idée est surtout de suivre les tendances.
-
-[Changer vos paramètres pour les cookies](#__consent){ .md-button }
-{: align=middle }
 
 ----
 
