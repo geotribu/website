@@ -45,6 +45,9 @@ Parce-que c'était plus simple et intégré à MkDocs, nous utilisons Google Ana
 
 Mais l'objectif n'étant pas de faire du marketing, cela importe peu. L'idée est surtout de suivre les tendances.
 
+[Changer vos paramètres pour les cookies](#__consent){ .md-button }
+{: align=middle }
+
 ----
 
 ## Twitter
