@@ -114,7 +114,9 @@ Dans notre cas, nous allons choisir le SCAN historique qui a un rendu plutôt sy
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/5-scanhisto.jpg){: .img-center loading=lazy }
 
-## Passez dans la 3ième dimension
+----
+
+## Passez dans la 3ème dimension
 
 Pour cela, vous devrez ajouter une extension à QGIS.
 Allez dans le menu `Extension > Installer / gérer les extensions` et recherchez Qgis2threejs et installez la si ce n'est pas déjà fait.
