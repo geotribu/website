@@ -96,6 +96,8 @@ Dans la boite de dialogue, indiquez les tuiles à fusionner (input layers) et d�
 
 Supprimer les dalles et ne conservez que le résultat de la fusion.
 
+----
+
 ## Charger les cartes
 
 Il va maintenant falloir trouver une carte à mettre sur ces données.
