@@ -22,7 +22,8 @@ tags:
 
 Sur Geotribu, on parle d'outils libres et de géomatique. C’est un fait partagé par nous tous, rédacteurs et lecteurs de ce site. L'ouvrage dont je m'apprête à vous parler n'est pas directement lié aux SIG. En revanche, il questionne pas mal de choses sur nos pratiques quotidiennes professionnelles (et pas que !). C'est pourquoi je me permets de vous en parler ici.
 
-[![couverture enfer du numerique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png "Couverture Enfer du numérique"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png){: data-mediabox="lightbox-gallery" data-title="Couverture Enfer du numérique"}
+[![couverture enfer du numerique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png "Couverture Enfer du numérique"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png){: data-mediabox="lightbox-gallery" data-title="Couverture Enfer du numérique"}
+{: align=middle }
 
 Lorsque j'ai entendu le titre du livre à la radio, je l'ai trouvé intrigant, limite aguicheur. Je suis allé regarder un peu plus ce qu'en disait le grand internet et les médias. Assez peu de choses en réalité car il venait de sortir. Mais je suis surtout tombé sur les récompenses que l'auteur, Guillaume Pitron, a reçu pour son précédent ouvrage *La guerre des métaux rares.*
 
