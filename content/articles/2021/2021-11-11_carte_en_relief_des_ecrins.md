@@ -19,6 +19,9 @@ tags:
 ---
 
 # Faire une carte en relief des Écrins
+:calendar: Date de publication initiale : 11 novembre 2021
+
+## Introduction
 
 Aujourd'hui, nous allons voir comment réaliser une carte en relief du [Parc National des Écrins](https://fr.wikipedia.org/wiki/Parc_national_des_%C3%89crins).
 Vous pouvez suivre le déroulement [sur la vidéo :fontawesome-brands-youtube:](https://youtu.be/wJjlKoSkmjY) (activez les sous-titres).
