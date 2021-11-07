@@ -1,7 +1,7 @@
 ---
 title: "Faire une carte en relief des Écrins"
 authors:
-  - Viglino
+  - Jean-Marc Viglino
 categories:
   - article
   - tutoriel
