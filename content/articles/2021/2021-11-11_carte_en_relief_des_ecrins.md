@@ -28,7 +28,7 @@ Vous pouvez suivre le déroulement [sur la vidéo :fontawesome-brands-youtube:](
 
 <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/wJjlKoSkmjY?cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Pour cela, nous aurons besoins :
+Pour cela, nous aurons besoin :
 
 - d'un modèle numérique de terrain (MNT)
 - d'un fond de carte
