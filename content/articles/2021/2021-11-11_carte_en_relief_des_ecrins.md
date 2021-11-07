@@ -59,7 +59,7 @@ Attention, ils sont fournis en FTP et il vous faudra un logiciel tel que [FileZi
 
 Décompressez les fichiers chargés précédemment et faite glisser les fichiers `.asc` dans la fenêtre de QGIS.
 Il vous faudra définir le système de coordonnées de référence (SCR) pour les données afin que QGIS sache comment placer ces fichiers sur la carte. Faites un clic-droit sur la couche pour définir le SCR.
-![Manu définir le CRS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/1-SCR.jpg){: .img-center loading=lazy }
+![Menu définir le CRS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/1-SCR.jpg){: .img-center loading=lazy }
 
 Les données sont dans le système Lambert 93 (code 2154).
 ![Choisir le CRS Lambert93](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/2-SCR.jpg){: .img-center loading=lazy }
