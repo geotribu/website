@@ -45,7 +45,7 @@ Ouvrez [QGIS](https://www.qgis.org/fr/site/) et faites glisser le fichier sur la
 ### Charger les données
 
 Il va nous falloir un modèle numérique de terrain pour plaquer la carte dessus.
-Vous en trouverez disponible en OpenData [sur le site de l'IGN, rubrique BDAlti <i class="fa fa-external-link"></i>](https://geoservices.ign.fr/bdalti).
+Vous en trouverez disponible en OpenData [sur le site de l'IGN, rubrique BDAlti :fontawesome-solid-external-link-alt:](https://geoservices.ign.fr/bdalti).
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/0-BDAlti.jpg){: .img-center loading=lazy }
 
