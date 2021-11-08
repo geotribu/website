@@ -32,6 +32,7 @@ plugins:
       fallback_to_build_date: true
       locale: fr
   - minify:
+      minify_css: true
       minify_html: true
       minify_js: false
       htmlmin_opts:
