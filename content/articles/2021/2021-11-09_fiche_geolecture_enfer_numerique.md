@@ -1,5 +1,5 @@
 ---
-title: "Fiche de géo-lecture : L'enfer du numérique"
+title: "Géo-lecture : L'enfer du numérique"
 authors:
     - Aurélien Chaumet
 categories:
