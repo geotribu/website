@@ -125,6 +125,8 @@ Certains chercheurs travaillent sur une sorte de super-intelligence verte (gross
 
 > C'est désormais une évidence : nos vies numérisées sont dupliquées[...]. Internet offre ce don d'ubiquité qui confère à nos actions une consistance physique ici-même et a des milliards de kilomètres à la fois.
 
+----
+
 ## Remarques et réflexions personnelles
 
 Je crois que je devrais remercier personnellement Guillaume Pitron pour l'écriture de ce livre, car il m'a réellement amené à me poser des questions sur la manière dont je consomme le numérique. Ai-je besoin de stocker ces photos de vacances sur un serveur distant, sans doute répliqué plusieurs fois et accessible en permanence alors que je vais n'en regarder qu'une partie 1 a 2 fois par an? Peut-être devrais-je plutôt réfléchir à quelles photos je garde avant de les basculer de mon téléphone et surtout devrais-je sans doute les stocker sur un disque dur, froid par essence.
