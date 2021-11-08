@@ -76,7 +76,7 @@ Les quantités de données produites allant exponentiellement, il faut de plus e
 
 En réalité, **dématérialiser, c'est rematérialiser autrement**. Il faudrait maintenant plutôt parler de démultiplication de la matière en lieu et place de dématérialisation.
 
-A cela s'ajoute l'apparente impression de services gratuits, comme ceux fournis par Google et Facebook. Mais l'adage dit "Quand c'est gratuit, c'est que vous êtes le produit". A quel point sommes-nous prêts à laisser les grandes firmes du numériques utiliser nos habitudes de vie et de consommation pour les monnayer à d'autres entreprises ? Sans qu'on sache quelles sont-elles.  
+A cela s'ajoute l'apparente impression de services gratuits, comme ceux fournis par Google et Facebook. Mais l'adage dit "Quand c'est gratuit, c'est que vous êtes le produit". A quel point sommes-nous prêts à laisser les grandes firmes du numérique utiliser nos habitudes de vie et de consommation pour les monnayer à d'autres entreprises ? Sans qu'on sache quelles sont-elles.  
 De plus, cette gratuité ne pousse pas à l'économie et provoque même un sentiment d'open bar dans la consommation de data. Nous générerions chacun en moyenne 150 Go par jour.
 
 ### Matérialisation et impacts du numérique
