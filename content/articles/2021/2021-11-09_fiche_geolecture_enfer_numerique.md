@@ -56,7 +56,9 @@ Dans l'ensemble de son œuvre, il tente de renverser certains paradigmes admis a
 ## Messages principaux de l'auteur
 
 - Se questionner sur l'impact physique et matériel de nos actes numériques est indispensable dans notre société actuelle
-- :warning: SPOILER :warning: Le numérique n'est pas écologique par essence, et il ne pourra l'être que si nous le voulons et l'aiguillons en ce sens, en changeant bon nombre de ce que sont devenues aujourd'hui des habitudes
+
+!!! warning ":warning: SPOILER :warning:"
+        Le numérique n'est pas écologique par essence, et il ne pourra l'être que si nous le voulons et l'aiguillons en ce sens, en changeant bon nombre de ce que sont devenues aujourd'hui des habitudes
 
 ## Points clés de compréhension
 
