@@ -41,7 +41,7 @@ J'espère sincèrement qu'il vous donnera envie de vous plonger dans ce livre, c
 
 Guillaume Pitron est un journaliste, auteur et réalisateur français.
 
-Il a écrit en en 2018 *La Guerre des métaux rares*, récompensé par plusieurs prix.
+Il a écrit en 2018 *La Guerre des métaux rares*, récompensé par plusieurs prix.
 
 Il a également réalisé des documentaires sur l'industrie agro-alimentaire et sur les énergies vertes.
 
