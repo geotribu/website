@@ -152,7 +152,7 @@ Une des actions prises comme exemple pour lutter contre cela est le World Digita
 
 Certains chercheurs travaillent sur une sorte de super-intelligence verte (grosso modo une IA forte référence) qui permettrait en théorie de pallier à nos faiblesses humaines en prenant des choix objectifs qui tendraient vers une amélioration climatique. La question à se poser est : n'irait-elle pas jusqu'à considérer l'homme comme nuisible pour l'écosystème mondial et nous rayer de la carte ?
 
-!!! quote
+!!! quote "Guillaume Pitron"
     C'est désormais une évidence : nos vies numérisées sont dupliquées[...]. Internet offre ce don d'ubiquité qui confère à nos actions une consistance physique ici-même et a des milliards de kilomètres à la fois.
 
 ----
