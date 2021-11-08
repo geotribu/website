@@ -148,7 +148,9 @@ Certains chercheurs travaillent sur une sorte de super-intelligence verte (gross
 
 Je crois que je devrais remercier personnellement Guillaume Pitron pour l'écriture de ce livre, car il m'a réellement amené à me poser des questions sur la manière dont je consomme le numérique. Ai-je besoin de stocker ces photos de vacances sur un serveur distant, sans doute répliqué plusieurs fois et accessible en permanence alors que je vais n'en regarder qu'une partie 1 a 2 fois par an ? Peut-être devrais-je plutôt réfléchir à quelles photos je garde avant de les basculer de mon téléphone et surtout devrais-je sans doute les stocker sur un disque dur, froid par essence.
 
-Et cette question bien sûr n'est qu'un exemple. Au-delà de ce genre de considérations personnelles, combien parmi vous se sont déjà posés la question de ce que nous consommons réellement en temps que professionnels de la géomatique ? A l'heure où les SIG sont accessibles à nos utilisateurs en ligne, avec toutes ces données stockées dans des serveurs et disponibles en permanence. Et même parfois (souvent) pas hébergées localement, sans que nous n'ayons réellement ni la main sur elles, ni une quelconque idée de l'endroit où elles se trouvent. Où se retrouvent une 2ème fois. Voire une 3ème. Voire peut-être une 4ème...
+### Et les SIG dans tout ça ?
+
+La question précédente bien sûr n'est qu'un exemple. Au-delà de ce genre de considérations personnelles, combien parmi vous se sont déjà posés la question de ce que nous consommons réellement en temps que professionnels de la géomatique ? A l'heure où les SIG sont accessibles à nos utilisateurs en ligne, avec toutes ces données stockées dans des serveurs et disponibles en permanence. Et même parfois (souvent) pas hébergées localement, sans que nous n'ayons réellement ni la main sur elles, ni une quelconque idée de l'endroit où elles se trouvent. Où se retrouvent une 2ème fois. Voire une 3ème. Voire peut-être une 4ème...
 
 Au moment de choisir un prestataire d'hébergement, quelle collectivité a choisi comme critère de notation de prendre en compte l'impact énergétique du stockage de ses données ?
 
@@ -156,7 +158,7 @@ Jusqu’ici, ces questions ne se sont jamais posées dans la collectivité pour 
 
 Encore une fois, j'espère sincèrement vous avoir donné l'envie de lire ce livre passionnant, mais également si ce n'était pas déjà le cas, intéressé à l'impact de nos pratiques professionnelles sur le climat et nos territoires.
 
-## Ressources a creuser
+## Ressources à creuser
 
 - Kikki Lambrecht Ipsen, Regitze Kjær Zimmermann, Pier Sieverts Nielsen, Morten Birkved (2019), *Environmental assesment of Smart city Solutions using a coupled urban metabolism*
 [https://link.springer.com/article/10.1007/s11367-018-1453-9](https://link.springer.com/article/10.1007/s11367-018-1453-9)
