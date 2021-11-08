@@ -10,6 +10,8 @@ description: "Description pour le SEO."
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
 license: default
 tags:
+    - écologie
+    - environnement
     - géo-lecture
     - numérique
     - sobriété
@@ -28,7 +30,7 @@ Sur Geotribu, on parle d'outils libres et de géomatique. C’est un fait partag
 
 Lorsque j'ai entendu le titre du livre à la radio, je l'ai trouvé intrigant, limite aguicheur. Je suis allé regarder un peu plus ce qu'en disait le grand internet et les médias. Assez peu de choses en réalité car il venait de sortir. Mais je suis surtout tombé sur les récompenses que l'auteur, Guillaume Pitron, a reçu pour son précédent ouvrage [*La guerre des métaux rares* (éd. Les Liens qui Libèrent)](http://www.editionslesliensquiliberent.fr/livre-La_guerre_des_m%C3%A9taux_rares-9791020905741-1-1-0-1.html).
 
-A ce moment-là, très honnêtement je me suis dit "Pourquoi pas, ça peut être intéressant".  
+A ce moment-là, très honnêtement je me suis dit ":thinking: Pourquoi pas, ça peut être intéressant".  
 Et au fil de sa lecture, je me suis pris une série de claques. Pas que l'auteur soit d'un naturel à mettre en cause le lecteur et à le pointer du doigt. Plutôt tout le contraire en fait. Il a cette capacité à mêler avec brio, bibliographie scientifique et retours du terrain, qui font de la lecture de cet ouvrage, un moment à la fois très agréable et légèrement dérangeant psychologiquement. Car il pose des questions, du genre de celles qui dérangent. Sur nos habitudes face au numérique, au divertissement et à la manière dont nous travaillons aujourd'hui.
 
 Personnellement, je me considère comme étant sensible et informé des questions autour du changement climatique et de l'impact que cela a et va sans doute avoir sur nos territoires. Mais je n'étais sans doute pas prêt à me poser autant de questions sur l'impact matériel, physique et bien concret de mes actions numériques quotidiennes.
