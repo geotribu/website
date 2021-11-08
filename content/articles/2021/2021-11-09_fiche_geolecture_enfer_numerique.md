@@ -119,7 +119,7 @@ Une des actions prises comme exemple pour lutter contre cela est le World Digita
 - Généraliser les principes de data FAIR lien
 
 !!! tip
-La meilleure données est celle qu'on ne crée pas
+    La meilleure donnée est celle qu'on ne crée pas.
 
 Certains chercheurs travaillent sur une sorte de super-intelligence verte (grosso modo une IA forte référence) qui permettrait en théorie de pallier à nos faiblesses humaines en prenant des choix objectifs qui tendraient vers une amélioration climatique. La question à se poser est : n'irait-elle pas jusqu'à considérer l'homme comme nuisible pour l'écosystème mondial et nous rayer de la carte?
 
