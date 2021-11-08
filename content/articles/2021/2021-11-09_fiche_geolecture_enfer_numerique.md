@@ -68,7 +68,7 @@ Les quantités de données produites allant exponentiellement, il faut de plus e
 
 ### Dématérialisation, cloud et autres termes vaporeux
 
-`Dématérialisation` est sans doute un des termes les plus trompeurs du moment (auquel on peut rajouter le `cloud` et les `technologies virtuelles`). A chaque action numérique est rattachée son pendant matériel, et parfois même plusieurs fois (stockage de données parfois répliquée jusqu'à 6 fois sur des serveurs différents pour garantir la sécurité et l'accessibilité de la donnée en cas de panne). D'après l'auteur, notre oubli du *comment* derrière le fonctionnement de nos machines serait dû à 3 catégories de professionnels :
+`Dématérialisation` est sans doute un des termes les plus trompeurs du moment (auquel on peut rajouter le `cloud` et les `technologies virtuelles`). A chaque action numérique est rattachée son pendant matériel, et parfois même plusieurs fois (stockage de données parfois répliquées jusqu'à 6 fois sur des serveurs différents pour garantir la sécurité et l'accessibilité de la donnée en cas de panne). D'après l'auteur, notre oubli du *comment* derrière le fonctionnement de nos machines serait dû à 3 catégories de professionnels :
 
 - Les théoriciens, qui ont toujours vanté le libertarisme en allant jusqu'à l'effacement de la matière et de la contrainte physique sur la connaissance
 - Les publicitaires, qui ont su trouver les mots justes pour faire "disparaître" la matière du numérique
