@@ -4,6 +4,7 @@ authors:
     - Aurélien Chaumet
 categories:
     - article
+    - lecture
 date: "2021-11-09 10:20"
 description: "Description pour le SEO."
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
@@ -92,7 +93,8 @@ Aujourd'hui, la fabrication de certaines pièces électroniques nécessite la gr
 
 Une question peu souvent abordée du numérique concerne les gaz utilisés dans la chaîne de production et d'utilisation (notamment pour le refroidissement des datacenters). Au-delà du CO2 dégagé, beaucoup de gaz fluorés (souvent plus dangereux que le premier) sont utilisés, et peu recyclés, dans l'industrie numérique, rendant encore l'utilisation de nos équipements numériques encore un peu moins écologique.
 
-"Chaque minute, 1,3 million de personnes se connectent sur Facebook, 4,1 millions de recherches sont effectuées sur Google, 4,7 millions de vidéos sont consultées sur YouTube et 1,1 millions de dollars sont dépensés sur des sites de vente en ligne."
+!!! quote inline "Guillaume Pitron"
+    Chaque minute, 1,3 million de personnes se connectent sur Facebook, 4,1 millions de recherches sont effectuées sur Google, 4,7 millions de vidéos sont consultées sur YouTube et 1,1 millions de dollars sont dépensés sur des sites de vente en ligne.
 
 Vous n'êtes pas seul à aller faire un "petit tour" sur les réseaux sociaux. Et chacun de nous participe à l'ensemble des dépenses énergétiques en eau pour faire tourner les datacenters, ainsi qu'à la consommation des ressources nécessaires pour construire le réseau capable d'acheminer l'information et de la stocker aux 4 coins du monde.
 
@@ -129,12 +131,13 @@ Une des actions prises comme exemple pour lutter contre cela est le World Digita
 - Se tourner vers des solutions respectueuses de la vie privée permet également de réduire notre empreinte. Si des données de navigation ne sont pas stockées, elle ne feront tourner aucun serveur :smile:
 - Généraliser les principes de data FAIR lien
 
-!!! tip
+!!! tip inline end
     La meilleure donnée est celle qu'on ne crée pas.
 
 Certains chercheurs travaillent sur une sorte de super-intelligence verte (grosso modo une IA forte référence) qui permettrait en théorie de pallier à nos faiblesses humaines en prenant des choix objectifs qui tendraient vers une amélioration climatique. La question à se poser est : n'irait-elle pas jusqu'à considérer l'homme comme nuisible pour l'écosystème mondial et nous rayer de la carte ?
 
-> C'est désormais une évidence : nos vies numérisées sont dupliquées[...]. Internet offre ce don d'ubiquité qui confère à nos actions une consistance physique ici-même et a des milliards de kilomètres à la fois.
+!!! quote
+    C'est désormais une évidence : nos vies numérisées sont dupliquées[...]. Internet offre ce don d'ubiquité qui confère à nos actions une consistance physique ici-même et a des milliards de kilomètres à la fois.
 
 ----
 
