@@ -154,7 +154,7 @@ L'accès en lecture à notre entrepôt d'images (un pseudo-CDN minimaliste) accu
 - identifiant : `invité`
 - mot de passe : `geotribu_bemyguest2020`
 
-En plus de permettre un petit voyage dans le temps, autant que toutes ces ressources servent en plus de notre site :smiley:. Merci de ne pas en abuser en respectant le *fair-use*[^fairuse]. Pensez également à créditer les auteur/es.
+En plus de permettre un petit voyage dans le temps, autant que toutes ces ressources servent en plus de notre site :smiley:. Merci de ne pas en abuser en respectant le *fair-use*. Pensez également à créditer les auteur/es.
 
 ----
 
