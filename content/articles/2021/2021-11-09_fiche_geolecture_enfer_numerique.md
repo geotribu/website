@@ -57,7 +57,7 @@ Dans l'ensemble de son œuvre, il tente de renverser certains paradigmes admis a
 
 - Se questionner sur l'impact physique et matériel de nos actes numériques est indispensable dans notre société actuelle
 
-!!! warning ":warning: SPOILER :warning:"
+!!! warning "SPOILER"
         Le numérique n'est pas écologique par essence, et il ne pourra l'être que si nous le voulons et l'aiguillons en ce sens, en changeant bon nombre de ce que sont devenues aujourd'hui des habitudes
 
 ## Points clés de compréhension
@@ -90,7 +90,10 @@ En réalité, **dématérialiser, c'est rematérialiser autrement**. Il faudrait
 [![mirage du cloud](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/serveur_mirage_cloud.png "Mirage du cloud"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/serveur_mirage_cloud.png){: data-mediabox="lightbox-gallery" data-title="Mirage du cloud"}
 {: align=middle }
 
-A cela s'ajoute l'apparente impression de services gratuits, comme ceux fournis par Google et Facebook. Mais l'adage dit "Quand c'est gratuit, c'est que vous êtes le produit". A quel point sommes-nous prêts à laisser les grandes firmes du numériques utiliser nos habitudes de vie et de consommation pour les monnayer à d'autres entreprises ? Sans qu'on sache quelles sont-elles.
+!!!note inline end "Pense-bête"
+    "Quand c'est gratuit, c'est que vous êtes le produit."
+
+A cela s'ajoute l'apparente impression de services gratuits, comme ceux fournis par Google et Facebook. A quel point sommes-nous prêts à laisser les grandes firmes du numériques utiliser nos habitudes de vie et de consommation pour les monnayer à d'autres entreprises ? Sans qu'on sache quelles sont-elles.
 De plus, cette gratuité ne pousse pas à l'économie et provoque même un sentiment d'open bar dans la consommation de data. Nous générerions chacun en moyenne 150 Go par jour.
 
 ### Matérialisation et impacts du numérique
@@ -124,7 +127,9 @@ Niveau environnemental la 5G c'est une meilleure efficacité énergétique notam
 [![réseau cables sous-marins](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/cables_sousmarins.jpeg "Réseau de cables sous-marins - Source : Tobias Stalder @toeb18"){:img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/cables_sousmarins.jpeg){: data-mediabox="lightbox-gallery" data-title="Réseau de cables sous-marins - Source : Tobias Stalder @toeb18"}
 {: align=middle }
 
-L'auteur va jusqu'à discuter du réseau de câbles sous-marins mondial. Là encore il existe des réplicats de câble afin d'assurer que si un est sectionné, un autre puisse prendre le relai.  Parfois ces câbles sont victimes de sabotage et il est aisé d'imaginer qu'un câble sectionné pourrait tout à fait être au centre de négociations ou représailles internationales. La question de leur recyclage n'est que peu traité en amont et notamment la question de savoir qui et comment les récupère-t-on une fois que d'autres sont en service. Il faut également avoir en tête qu'aujourd'hui, très peu de projets de câblage (voire aucun) ne se font sans le financement en tout ou partie d'un des géants du numérique. Ce qui pose évidemment la question du futur de la neutralité du net. Le jour où Facebook, Google et Netflix se partagent l'ensemble du réseau physique mondial qui permet de faire transiter les données, qu'est ce qui les empêchera de faire ce que bon leur semble de nos données ? Les projets de câblage à venir sont éminemment géopolitiques car qui détiendra sur son sol le réseau pourra prétendre avoir un poids dans les données du futur.
+L'auteur va jusqu'à discuter du réseau de câbles sous-marins mondial. Là encore il existe des réplicats de câble afin d'assurer que si un est sectionné, un autre puisse prendre le relai.  Parfois ces câbles sont victimes de sabotage et il est aisé d'imaginer qu'un câble sectionné pourrait tout à fait être au centre de négociations ou représailles internationales. La question de leur recyclage n'est que peu traité en amont et notamment la question de savoir qui et comment les récupère-t-on une fois que d'autres sont en service. Il faut également avoir en tête qu'aujourd'hui, très peu de projets de câblage (voire aucun) ne se font sans le financement en tout ou partie d'un des géants du numérique. Ce qui pose évidemment la question du futur de la neutralité du net. Le jour où Facebook, Google et Netflix se partagent l'ensemble du réseau physique mondial qui permet de faire transiter les données, qu'est ce qui les empêchera de faire ce que bon leur semble de nos données ? 
+
+**Les projets de câblage à venir sont éminemment géopolitiques car qui détiendra sur son sol le réseau pourra prétendre avoir un poids dans les données du futur.**
 
 ### Quelques pistes d'action
 
