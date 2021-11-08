@@ -170,7 +170,7 @@ Je crois que je devrais remercier personnellement Guillaume Pitron pour l'écrit
 
 ### Et les SIG dans tout ça ?
 
-La question précédente bien sûr n'est qu'un exemple. Au-delà de ce genre de considérations personnelles, combien parmi vous se sont déjà posés la question de ce que nous consommons réellement en temps que professionnels de la géomatique ? A l'heure où les SIG sont accessibles à nos utilisateurs en ligne, avec toutes ces données stockées dans des serveurs et disponibles en permanence. Et même parfois (souvent) pas hébergées localement, sans que nous n'ayons réellement ni la main sur elles, ni une quelconque idée de l'endroit où elles se trouvent. Où se retrouvent une 2ème fois. Voire une 3ème. Voire peut-être une 4ème...
+La question précédente bien sûr n'est qu'un exemple. Au-delà de ce genre de considérations personnelles, combien parmi vous se sont déjà posés **la question de ce que nous consommons réellement en temps que professionnels de la géomatique ?** A l'heure où les SIG sont accessibles à nos utilisateurs en ligne, avec toutes ces données stockées dans des serveurs et disponibles en permanence. Et même parfois (souvent) pas hébergées localement, sans que nous n'ayons réellement ni la main sur elles, ni une quelconque idée de l'endroit où elles se trouvent. Où se retrouvent une 2ème fois. Voire une 3ème. Voire peut-être une 4ème...
 
 Au moment de choisir un prestataire d'hébergement, quelle collectivité a choisi comme critère de notation de prendre en compte l'impact énergétique du stockage de ses données ?
 
