@@ -6,8 +6,8 @@ categories:
     - article
     - lecture
 date: "2021-11-09 10:20"
-description: "Description pour le SEO."
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
+description: "Quelques éléments de lecture et de réflexions autour du livre de Guillaume Pitron : l'enfer du numérique - Voyage au bout d'un clic. L'auteur souhaite que nous nous questionnions sur l'impact physique et matériel de nos actes numériques"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png"
 license: default
 tags:
     - écologie
