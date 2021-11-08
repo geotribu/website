@@ -35,6 +35,9 @@ Pas grand chose d'utile et rien de mercantile ! On s'en sert pour :
 
 Question ? Souci ? Angoisse ? Si vous souhaitez en savoir plus sur les données collectées, merci de [nous contacter par email](mailto:geotribu+rgpd@gmail.com).
 
+[Changer à tout moment vos paramètres pour les cookies](#__consent){ .md-button }
+{: align=middle }
+
 ----
 
 ## Google Analytics

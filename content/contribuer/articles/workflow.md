@@ -23,7 +23,7 @@ La rédaction d'articles est ouverte à toute personne souhaitant partager une e
 
 Gardez en tête que le travail de l'équipe est **bénévole**. A ce titre, plus votre contenu est conforme à nos prérequis et aux guides de contribution, moins il ne demande de travail de notre part. Ce que vous ne faites pas, nous devrons le faire.
 
-Bref, appliquons le principe du *fair-use*[^fairuse] au bénévolat :hugging: !
+Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
 ## Rédiger
 
@@ -153,7 +153,6 @@ Une fois la branche de l'article fusionnée (*merged*) dans la branche principal
 En ce qui concerne la diffusion, cela reste à la discrétion de chacun/e, sachant que nous utiliserons le compte Twitter de Geotribu pour relayer la publication.
 
 <!-- Footnotes -->
-[^fairuse]: analogie avec un cadre légal qui repose sur un usage raisonnable des oeuvres et ressources. Voir [la fiche Wikipedia](https://fr.wikipedia.org/wiki/Fair_use).
 [^pr]: étape où un contributeur propose d'intégrer ses modifications dans le socle principal du projet. Voir [la documentation de GitHub](https://docs.github.com/fr/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 <!-- Hyperlinks reference -->
