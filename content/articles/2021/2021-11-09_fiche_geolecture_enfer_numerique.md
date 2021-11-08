@@ -65,6 +65,7 @@ Dans l'ensemble de son œuvre, il tente de renverser certains paradigmes admis a
 Le numérique représente 4% des émissions globales de GES, soit autant que le secteur aérien. En grande partie dû à la production de dispositifs numériques.
 
 [![empreinte du numerique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/empreinte_numerique_greenit.png "Empreinte du numérique - Source : GreenIT.fr"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/empreinte_numerique_greenit.png){: data-mediabox="lightbox-gallery" data-title="Empreinte du numérique - Source : GreenIT.fr"}
+{: align=middle }
 
 La consommation électrique du numérique a augmenté de 5 à 7% par an et pourrait solliciter 20% de l'électricité mondiale en 2025. Sa part dans les gaz à effet de serre pourrait passer à 8% d'ici là.
 
@@ -85,6 +86,7 @@ Les quantités de données produites allant exponentiellement, il faut de plus e
 En réalité, **dématérialiser, c'est rematérialiser autrement**. Il faudrait maintenant plutôt parler de démultiplication de la matière en lieu et place de dématérialisation.
 
 [![mirage du cloud](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/serveur_mirage_cloud.png "Mirage du cloud"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/serveur_mirage_cloud.png){: data-mediabox="lightbox-gallery" data-title="Mirage du cloud"}
+{: align=middle }
 
 A cela s'ajoute l'apparente impression de services gratuits, comme ceux fournis par Google et Facebook. Mais l'adage dit "Quand c'est gratuit, c'est que vous êtes le produit". A quel point sommes-nous prêts à laisser les grandes firmes du numériques utiliser nos habitudes de vie et de consommation pour les monnayer à d'autres entreprises ? Sans qu'on sache quelles sont-elles.
 De plus, cette gratuité ne pousse pas à l'économie et provoque même un sentiment d'open bar dans la consommation de data. Nous générerions chacun en moyenne 150 Go par jour.
@@ -109,6 +111,7 @@ Se pose également la question de l'origine de l'énergie utilisée (comme pour 
 ### Infrastructures
 
 [![datacenter faebook suede](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/facebook_datacenter_suede.jpg "Datacenter suédois de Facebook"){:img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/facebook_datacenter_suede.jpg){: data-mediabox="lightbox-gallery" data-title="Datacenter suédois de Facebook"}
+{: align=middle }
 
 Les datacenters consomment énormément d'électricité, notamment pour se refroidir et fonctionner correctement. Cela a un impact économique tel pour les entreprises responsables de ces fermes qu'elles innovent toujours plus : structures hyperscale, les plonger dans des solutions liquides, datacenters sous-marins ou peut-être dans le futur qu'en utilisant les technologies quantiques ou en les vidant de leurs humains et en les laissant a 35° continuellement. C'est d'ailleurs pour des raisons économiques que Facebook a implanté son datacenter européen en Suède en 2013, afin de bénéficier des températures agréables pouvant descendre jusqu'à -41°C. Même si les serveurs sont de plus en plus performants notre production de données va encore plus vite, et augmenterait de 15% par an.
 
@@ -117,18 +120,21 @@ La 5G est clairement là pour répondre à des besoins numériques qui n'existen
 Niveau environnemental la 5G c'est une meilleure efficacité énergétique notamment car émettant à moins longue distance. En revanche, il faudra potentiellement d'autant plus d'antennes si le choix est fait de couvrir l'ensemble du territoire. De plus, les antennes sont bourrées de métaux rares qui ne seront clairement pas issus du recyclage des anciennes antennes 3G ou 4G. De plus, la performance améliorée de cette technologie provoquera sans aucun doute un effet rebond. Si une technologie consomme moins, on a l'impression de pouvoir s'en servir d'autant plus. Malheureusement cette croissance de consommation génère a chaque fois plus de nuisances environnementales que le gain permis au départ. Et c'est bien ici que l'auteur insiste sur le fait que la technologie ne pourra apporter que du bon en fonction de ce que nous en ferons.
 
 [![réseau cables sous-marins](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/cables_sousmarins.jpg "Réseau de cables sous-marins - Source : Tobias Stalder @toeb18"){:img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/cables_sousmarins.jpg){: data-mediabox="lightbox-gallery" data-title="Réseau de cables sous-marins - Source : Tobias Stalder @toeb18"}
+{: align=middle }
 
 L'auteur va jusqu'à discuter du réseau de câbles sous-marins mondial. Là encore il existe des réplicats de câble afin d'assurer que si un est sectionné, un autre puisse prendre le relai.  Parfois ces câbles sont victimes de sabotage et il est aisé d'imaginer qu'un câble sectionné pourrait tout à fait être au centre de négociations ou représailles internationales. La question de leur recyclage n'est que peu traité en amont et notamment la question de savoir qui et comment les récupère-t-on une fois que d'autres sont en service. Il faut également avoir en tête qu'aujourd'hui, très peu de projets de câblage (voire aucun) ne se font sans le financement en tout ou partie d'un des géants du numérique. Ce qui pose évidemment la question du futur de la neutralité du net. Le jour où Facebook, Google et Netflix se partagent l'ensemble du réseau physique mondial qui permet de faire transiter les données, qu'est ce qui les empêchera de faire ce que bon leur semble de nos données ? Les projets de câblage à venir sont éminemment géopolitiques car qui détiendra sur son sol le réseau pourra prétendre avoir un poids dans les données du futur.
 
 ### Quelques pistes d'action
 
 [![haarlemmermeer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/haarlemmermeer.jpg "Datacenters d'Haarlemmermeer"){:img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/haarlemmermeer.jpg){: data-mediabox="lightbox-gallery" data-title="Datacenters d'Haarlemmermeer"}
+{: align=middle }
 
 Certains élus et territoires réagissent. Comme dans la région d'Amsterdam où un moratoire sur l'installation des datacenters a été décrété le 12 juillet 2019 par Amsterdam et Haarlemmermeer. Il a été levé en juin 2020 le temps d'élaborer une stratégie territoriale. Passé 2030, la collectivité a estimé qu'il n'y aurait plus de foncier disponible pour les datacenters. Et chacun devrait se poser la question. L'Irlande en est rendu à un point de leur politique d'accueil de ces fermes de données qu'ils pourraient consommer à eux seuls jusqu'à 28% de l'électricité irlandaise en 2028.
 
 Une approche possible du calcul de l'incidence matérielle de nos modes de consommation passe par le *Material input per service unit* (MIPS). Cela permet de calculer la quantité de matière qui rentre dans la fabrication d'un objet ou d'un service. Il a été créé afin de renverser la logique de calcul d'émissions de CO2 et arrêter de ne réfléchir qu'aux émissions en intégrant également les matériaux. "Regarder ce qui entre dans un objet plutôt que ce qui en sort". Même si la méthode n'est pas parfaite car elle s'appuie souvent sur des opinions et estimations d'expert, elle permet de donner un ordre de grandeur. Par exemple, la production d'un tee-shirt nécessite 226 kilos de matière, 1L de jus d'orange 100 kilos, 1 SMS 632 grammes. Pour des produits "simples" le MIPS révèle un facteur 10. Mais dès qu'il y a de la technologie le ratio explose. Le record revenant à la puce électronique avec un MIPS de 16 000 fois son poids.
 
 [![digital cleanup day](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/clean_up_day.png "World Digital Cleanup Day"){:img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/clean_up_day.png){: data-mediabox="lightbox-gallery" data-title="World Digital Cleanup Day"}
+{: align=middle }
 
 Une des actions prises comme exemple pour lutter contre cela est le World Digital Cleanup Day. Le principe est de nettoyer tout ce qui est numériquement nettoyable : drives et autres serveurs, boîtes mail... Au-delà de l'impact réel que cela peut avoir sur la consommation des serveurs, cette action permet également de sensibiliser à la sobriété numérique et peut-être de penser mieux à la source du stockage de données éventuelles
 
@@ -139,7 +145,7 @@ Une des actions prises comme exemple pour lutter contre cela est le World Digita
 - Se connecter en direct à un site web dont on connaît l'adresse sans passer par une recherche Google
 - Visionner un film sur une résolution adaptée à l'écran de visionnage
 - Se tourner vers des solutions respectueuses de la vie privée permet également de réduire notre empreinte. Si des données de navigation ne sont pas stockées, elle ne feront tourner aucun serveur :smile:
-- Généraliser les principes de data FAIR lien
+- Généraliser [les principes de data FAIR](https://openscience.pasteur.fr/2020/10/05/les-principes-fair-findable-accessible-interoperable-reusable/)
 
 !!! tip inline end
     La meilleure donnée est celle qu'on ne crée pas.
@@ -160,6 +166,8 @@ Je crois que je devrais remercier personnellement Guillaume Pitron pour l'écrit
 La question précédente bien sûr n'est qu'un exemple. Au-delà de ce genre de considérations personnelles, combien parmi vous se sont déjà posés la question de ce que nous consommons réellement en temps que professionnels de la géomatique ? A l'heure où les SIG sont accessibles à nos utilisateurs en ligne, avec toutes ces données stockées dans des serveurs et disponibles en permanence. Et même parfois (souvent) pas hébergées localement, sans que nous n'ayons réellement ni la main sur elles, ni une quelconque idée de l'endroit où elles se trouvent. Où se retrouvent une 2ème fois. Voire une 3ème. Voire peut-être une 4ème...
 
 Au moment de choisir un prestataire d'hébergement, quelle collectivité a choisi comme critère de notation de prendre en compte l'impact énergétique du stockage de ses données ?
+
+De plus, nous travaillons parfois avec des données environnementales, territoriales voire en lien direct avec l'écologie. Cependant, il faut également garder en tête que nos outils géomatiques devraient également faire partie de l'équation, de part leur consommation en matières premières et en énergie.
 
 Jusqu’ici, ces questions ne se sont jamais posées dans la collectivité pour laquelle je travaille, mais cela pourrait changer. Nous n'allons sans doute pas basculer du tout au tout en quelques mois. Mais à force de pédagogie et de prises de conscience successives, fort à parier que dans quelques temps, ces questions deviendront naturelles.
 
