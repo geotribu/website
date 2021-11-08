@@ -62,7 +62,7 @@ La consommation électrique du numérique a augmenté de 5 à 7% par an et pourr
 
 Le changement de paradigme dans la pensée populaire de "Numérique = Écologie" pourrait venir des industriels eux-mêmes afin de se plier aux attentes des consommateurs.
 
-La seule fabrication d'un smartphone est responsable de 80% de l'ensemble de sa dépense énergétique et près de la moitié de son empreinte environnementale. D'où l'importance de la réparabilité de nos devices ainsi que de leur compatibilité avec les OS sur un moyen terme. Aujourd'hui, nous sommes certes propriétaires de nos machines, mais nous acquérons avec, seulement une licence d'utilisation du logiciel, et nous n'avons que rarement droit d'y toucher (intérêt du libre :smile:). #TechniqueMonsanto
+La seule fabrication d'un smartphone est responsable de 80% de l'ensemble de sa dépense énergétique et près de la moitié de son empreinte environnementale. D'où l'importance de la réparabilité de nos équipements ainsi que de leur compatibilité avec les OS (systèmes d'exploitation) sur le moyen terme. Aujourd'hui, nous sommes certes propriétaires de nos machines, mais nous acquérons avec, seulement une licence d'utilisation du logiciel, et nous n'avons que rarement droit d'y toucher (intérêt du libre :smile:). #TechniqueMonsanto
 
 Les quantités de données produites allant exponentiellement, il faut de plus en plus de datacenters pour stocker et gérer ces données. Le secteur croit de 7% par an.
 
