@@ -81,7 +81,7 @@ De plus, cette gratuité ne pousse pas à l'économie et provoque même un senti
 
 ### Matérialisation et impacts du numérique
 
-Aujourd'hui, la fabrication de certaines pièces électroniques nécessite la gravure de plus de 20 milliards de transistors chacune. Et il existe 500 étapes dans la chaînes de fabrication, éclatées dans des dizaines de pays à travers le monde. Avant même de faire son dernier voyage entre sa mise en boîte et votre poche, votre smartphone, de part ses composants, a déjà réalisé plusieurs tours du monde. Et dépensé donc une énergie monstrueuse ainsi qu'une quantité affolante d'eau. Car pour produire des circuits intégrés, l'eau est essentielle en masse.
+Aujourd'hui, la fabrication de certaines pièces électroniques nécessite la gravure de plus de 20 milliards de transistors chacune. Et il existe 500 étapes dans la chaîne de fabrication, éclatées dans des dizaines de pays à travers le monde. Avant même de faire son dernier voyage entre sa mise en boîte et votre poche, votre smartphone, de part ses composants, a déjà réalisé plusieurs tours du monde. Et dépensé donc une énergie monstrueuse ainsi qu'une quantité affolante d'eau. Car pour produire des circuits intégrés, l'eau est essentielle en masse.
 
 Une question peu souvent abordée du numérique concerne les gaz utilisés dans la chaîne de production et d'utilisation (notamment pour le refroidissement des datacenters). Au-delà du CO2 dégagé, beaucoup de gaz fluorés (souvent plus dangereux que le premier) sont utilisés, et peu recyclés, dans l'industrie numérique, rendant encore l'utilisation de nos devices numériques encore un peu moins écologique.
 
