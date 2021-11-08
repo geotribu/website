@@ -113,7 +113,7 @@ Une approche possible du calcul de l'incidence matérielle de nos modes de conso
 
 Une des actions prises comme exemple pour lutter contre cela est le World Digital Cleanup Day. Le principe est de nettoyer tout ce qui est numériquement nettoyable : drives et autres serveurs, boîtes mail... Au-delà de l'impact réel que cela peut avoir sur la consommation des serveurs, cette action permet également de sensibiliser à la sobriété numérique et peut-être de penser mieux à la source du stockage de données éventuelles
 
-Évidemment d'autres gestes quotidiens sont faisables
+Évidemment d'autres gestes quotidiens sont faisables :
 
 - Si vous ne faites que l'écouter sans la regarder, télécharger une vidéo YouTube en MP3
 - Utilisé le wifi plutôt que la 4G pour transférer des données sur votre mobile ou tablette
