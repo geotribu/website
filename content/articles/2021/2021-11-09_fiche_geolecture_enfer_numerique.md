@@ -58,7 +58,7 @@ Dans l'ensemble de son œuvre, il tente de renverser certains paradigmes admis a
 - Se questionner sur l'impact physique et matériel de nos actes numériques est indispensable dans notre société actuelle
 
 !!! warning "SPOILER"
-        Le numérique n'est pas écologique par essence, et il ne pourra l'être que si nous le voulons et l'aiguillons en ce sens, en changeant bon nombre de ce que sont devenues aujourd'hui des habitudes
+        Le numérique n'est pas écologique par essence, et il ne pourra l'être que si nous le voulons et l'aiguillons en ce sens, en changeant bon nombre de ce que sont devenues aujourd'hui des habitudes.
 
 ## Points clés de compréhension
 
@@ -129,7 +129,7 @@ Niveau environnemental la 5G c'est une meilleure efficacité énergétique notam
 
 L'auteur va jusqu'à discuter du réseau de câbles sous-marins mondial. Là encore il existe des réplicats de câble afin d'assurer que si un est sectionné, un autre puisse prendre le relai.  Parfois ces câbles sont victimes de sabotage et il est aisé d'imaginer qu'un câble sectionné pourrait tout à fait être au centre de négociations ou représailles internationales. La question de leur recyclage n'est que peu traité en amont et notamment la question de savoir qui et comment les récupère-t-on une fois que d'autres sont en service. Il faut également avoir en tête qu'aujourd'hui, très peu de projets de câblage (voire aucun) ne se font sans le financement en tout ou partie d'un des géants du numérique. Ce qui pose évidemment la question du futur de la neutralité du net. Le jour où Facebook, Google et Netflix se partagent l'ensemble du réseau physique mondial qui permet de faire transiter les données, qu'est ce qui les empêchera de faire ce que bon leur semble de nos données ? 
 
-**Les projets de câblage à venir sont éminemment géopolitiques car qui détiendra sur son sol le réseau pourra prétendre avoir un poids dans les données du futur.**
+Les projets de câblage à venir sont éminemment géopolitiques car qui détiendra sur son sol le réseau pourra prétendre avoir un poids dans les données du futur.
 
 ### Quelques pistes d'action
 
