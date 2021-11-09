@@ -5,6 +5,7 @@ categories:
     - tutoriel
 date: 2020-07-23 10:20
 description: "Guide de contribution à Geotribu : comment déployer l'environnement local idéal pour contribuer tranquillement."
+image: "https://cdn.geotribu.fr/img/internal/contribution/geotribu_ide_vscode_local.png"
 tags:
     - contribuer
     - git
@@ -17,7 +18,11 @@ tags:
 
 <!-- markdownlint-disable MD046 -->
 
-# Installation pour l'édition locale
+# Installation et configuration de l'environnement de travail pour l'édition locale
+
+![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-rdp-news-thumb }
+
+Cette page a pour but de vous guider dans les principales étapes afin de pouvoir gérer le site et ses contenus depuis une machine locale. Il est probable que chacun/e doive ajuster selon son propre environnement de travail (chemins de fichiers, répertoires...).
 
 Après avoir rempli [les prérequis](/contribuer/requirements/) généraux, pour travailler sur le site en local, il faut donc :
 
@@ -26,8 +31,6 @@ Après avoir rempli [les prérequis](/contribuer/requirements/) généraux, pour
 - une connexion autorisée vers le [CDN de Geotribu]
 
 Il est également recommandé de disposer de [Node.js (LTS)](https://nodejs.org) pour pouvoir utiliser markdownlint (voir [Rédiger en Markdown : enjeux de qualité et règles](/contribuer/guides/markdown_quality/#verifier-la-syntaxe-avec-markdownlint-cli)).
-
-Cette page a pour but de vous guider dans les principales étapes mais il est probable que chacun/e doive ajuster selon son propre environnement de travail (chemins de fichiers, répertoires...).
 
 !!! tip
     Pour aborder de façon sympathique le fonctionnement du site web, pourquoi ne pas commencer par suivre le tutoriel publié fin 2020 pour déployer Geotribu localement ?
@@ -41,25 +44,80 @@ Cette page a pour but de vous guider dans les principales étapes mais il est pr
 
 ![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
 
-La gestion et la mise en ligne du contenu se font via [Git]. Si vous n'êtes pas à l'aise avec la ligne de commande, il est possible d'utiliser [GitHub Desktop].
+La gestion et la mise en ligne du contenu se font via [Git], une suite d'outils en ligne de commande ([CLI](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande)). Si vous n'êtes pas à l'aise avec la ligne de commande, il est possible d'utiliser [GitHub Desktop] en suivant [la documentation officielle](https://docs.github.com/en/desktop).
 
 ### Installation
 
+Il y a beaucoup de ressources sur la Toile pour installer et configurer [Git].
+Nous mettons ici une documentation minimaliste destinée à donner la trame globale de l'installation de Git, mais il y a fort à parier que cette documentation soit trop générique. A chacun/e de trouver son tuto à son pied si besoin !
+
+=== "Linux Debian (Bash)"
+    Pour avoir une version récente de Git, il faut ajoute les dépôts communautaires :
+
+    ```bash
+    sudo add-apt-repository ppa:git-core/ppa
+    sudo apt update
+    sudo apt install git
+    ```
+
+=== "Windows (Powershell)"
+    Il "suffit" d'utiliser l'installateur à télécharger depuis le site officiel. Quelques ressources tout de même :
+
+    - la [documentation Microsoft](https://docs.microsoft.com/fr-fr/devops/develop/git/install-and-set-up-git#windows)
+    - le tutoriel d'[Astuces Informatiques](https://astuces-informatique.com/comment-installer-utiliser-git-sous-windows/)
+
 ### Récupérer le site localement
 
-Cloner le dépôt, soit avec la commande ci-dessous, soit via [le bouton vert sur le dépôt avec GitHub Desktop](https://github.com/geotribu/website) :
+Cloner le dépôt :
+
+- soit via [le bouton vert sur le dépôt avec GitHub Desktop](https://github.com/geotribu/website). Dans ce cas-là, ouvrez un terminal dans le dossier décompressé et passez à l'étape suivante.
+- soit avec la commande ci-dessous :
 
 ```bash
-cd ~/git-repos/geotribu/
-git clone --depth=1 https://github.com/geotribu/website.git
+$ cd ~/git-repos/geotribu/
+$ git clone --depth=1 https://github.com/geotribu/website.git
+Clonage dans 'website'...
+remote: Enumerating objects: 850, done.
+remote: Counting objects: 100% (850/850), done.
+remote: Compressing objects: 100% (780/780), done.
+remote: Total 850 (delta 112), reused 202 (delta 60), pack-reused 0
+Réception d'objets: 100% (850/850), 2.47 Mio | 8.84 Mio/s, fait.
+Résolution des deltas: 100% (112/112), fait.
+```
+
+!!! question "Et le SSH alors ?!"
+    Pourquoi je ne mentionne pas la possibilité de cloner par SSH ?
+    Parce-que si vous vous posez cette question, c'est que vous n'avez pas du tout besoin de lire cette partie-là car,féliciations : vous avez un niveau en Git supérieur à un *quickstart* ! :partying_face:
+
+### Configurer Git
+
+Il s'agit d'indiquer le nom et l'adresse email qui seront utilisés pour les commits. Par exemple, si vous vous appelez Mona Lisa :
+
+```bash
+cd website
+git config user.name "Mona Lisa"
+git config user.email "mona.lisa@devinci.com"
 ```
 
 ## Mettre à jour son dépôt local
 
-Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement supprimée sur le dépôt central (hébergé sur [GitHub]) afin d'éviter de garder un dépôt propre et lisible. Il faut alors mettre à jour le dépôt local sur votre machine :
+Vérifier que votre dépôt local (sur votre ordinateur) soit à jour par rapport le dépôt central (sur GitHub) Git :
 
-=== "Linux (Bash)"
+```bash
+$ cd website
+$ git status
+Sur la branche master
+Votre branche est à jour avec 'origin/master'.
+
+rien à valider, la copie de travail est propre
+```
+
+Si la commande `git status` ne vous renvoie pas le même genre de message qu'au-dessus, cela signifie que vous n'êtes pas à jour. Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement supprimée sur le dépôt central (hébergé sur [GitHub]) afin d'éviter de garder un dépôt propre et lisible. Il faut alors mettre à jour le dépôt local sur votre machine :
+
+=== "Linux Debian (Bash)"
     ```bash
+    git pull origin
+
     # mettre le dépôt local en conformité avec le dépôt central (notamment en supprimant les branches locales déjà supprimées sur GitHub)
     git remote prune origin
 
@@ -69,6 +127,8 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
 
 === "Windows (Powershell)"
     ```powershell
+    git pull origin
+
     # mettre le dépôt local en conformité avec le dépôt central (notamment en supprimant les branches locales déjà supprimées sur GitHub)
     git remote prune origin
 
@@ -86,7 +146,7 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
 
 ### Installation de Python
 
-=== "Linux (Bash)"
+=== "Linux Debian (Bash)"
     ```bash
     # lister les versions de Python installées
     ls -1 /usr/bin/python* | grep '[2-3].[0-9]$'
@@ -108,7 +168,7 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
 
 Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'installation de Python au niveau du système, on préfère utiliser un environnement virtuel.
 
-=== "Linux (Bash)"
+=== "Linux Debian (Bash)"
     ```bash
     # se rendre à la racine du dépôt local - adapter au dossier dans lequel vous avez cloné le dépôt
     cd ~/git-repos/geotribu/website/
@@ -126,15 +186,14 @@ Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'in
     ```
 
 === "Windows (Powershell)"
+    Si ça n'est pas encore fait, il faut [autoriser l'utilisation des environnements virtuels](/articles/2020/2020-06-19_setup_python/#autoriser-lutilisation-des-environnements-virtuels).  
+    Puis :
+
     ```powershell
     # se rendre à la racine du dépôt local - adapter au dossier dans lequel vous avez cloné le dépôt
     cd ~/git-repos/geotribu/website/
 
-    # si besoin, autoriser l'utilisation des environnements virtuels
-    # commande à exécuter dans Powershell en mode administrateur (puis quitter le mode admin avant de continuer)
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-
-    # lister les versions de Python installées - hors mode admin donc
+    # lister les versions de Python installées
     py --list
 
     # créer un environnement virtuel - Attention : ne fonctionne pas avec Python installé depuis le Windows Store
@@ -162,7 +221,7 @@ Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'in
 
 ## Pre-commit
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "News"){: .img-rdp-news-thumb }
+![logo pre-commit](https://cdn.geotribu.fr/img/logos-icones/programmation/precommit.png "logo pre-commit"){: .img-rdp-news-thumb }
 
 Le projet vient avec une [configuration](https://github.com/geotribu/website/blob/master/.pre-commit-config.yaml) pour [pre-commit], qui permet d'appliquer des scripts (des [_git hooks_](https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Crochets-Git)) de vérification et de nettoyage des fichiers avant qu'ils ne soit enregistrés dans le dépôt (d'où le nom).
 
@@ -170,7 +229,7 @@ L'installation est optionnelle mais recommandée car l'outil garantit :
 
 - un socle minimal de qualité des contenus et codes sources
 - une cohérence d'ensemble entre les contributions
-- qu'une fois poussée sur le dépôt central, la contribution passe [les checks exécutés par Github Action](https://github.com/geotribu/website/actions?query=workflow%3A%22Code+Rules+Checker%22).
+- qu'une fois poussée sur le dépôt central, la contribution passe [les checks exécutés dans la CI](https://results.pre-commit.ci/repo/github/248722492).
 
 Installer [pre-commit] :
 
@@ -202,22 +261,76 @@ pre-commit run -a
 
 ----
 
-## Servir en local
+## Mkdocs
 
-Puis de lancer la commande qui lance le site en local avec rechargement automatique :
+![icône générateur de site web statique](https://cdn.geotribu.fr/img/logos-icones/divers/web_static_generator.webp "icône générateur de site web statique"){: .img-rdp-news-thumb }
+
+C'est l'outil qui sert à générer le site web à partir des contenus rédigés en [markdown] et configuré dans le fichier `mkdocs.yml` et dérivés. Voici quelques bases pour l'utiliser... qui ne vous épargnent pas le droit de regarder l'aide `mkdocs --help` :wink:.
+
+### Différentes configurations
+
+Depuis la rentrée 2021, Geotribu sponsorise le thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) afin de tirer parti des fonctionnalités réservées aux financeurs. La clé de licence (en fait, un *token* GitHub lié au compte de Julien) devant rester secrète, nous gérons donc différents fichiers de configuration afin de pouvoir s'adapter aux différents cas.
+
+| Fichier | Fonctionnalités payantes | Complet | Commentaire |
+| :------ | :-----: | :-----: | :---------- |
+| `mkdocs.yml`         | **X** | **X** | Configuration complète utilisée pour le site en production. Utilisé par défaut. |
+| `mkdocs-free.yml`    |       | **X** | Configuration sans les fonctioannlités payantes (tags, etc.) |
+| `mkdocs-minimal.yml` |       |       | Configuration minimaliste qui n'active qu'un minimum de plugins et d'extensions pour obtenir de meilleures performances lors de l'édition en local. |
+
+### Générer le site web
+
+Version complète :
 
 ```bash
-# servir le site avec mkdocs
-mkdocs serve
-
-# il existe aussi un mode où le rechargement automatique est plus rapide mais ne concerne que la page modifiée
-mkdocs serve -f mkdocs-minimal.yml --dirtyreload
-
-# si besoin, il est évidemment possible de spécifier le port
-mkdocs serve -f mkdocs-minimal.yml --dirtyreload -a localhost:8085
+mkdocs build
 ```
 
-Par défaut, le site est accessible sur : <http://localhost:8000> mais il est évidemment possible de spécifier le port à utiliser : `mkdocs serve -a localhost:8085`.
+Version complète gratuite :
+
+```bash
+mkdocs build -f mkdocs-free.yml
+```
+
+Version minimale :
+
+```bash
+mkdocs build --config-file mkdocs-minimal.yml
+```
+
+Le site généré est dans le répertoire : `{{ config.site_dir }}`.
+
+### Avoir un rendu local mis à jour selon les modifications
+
+Pour voir les changements en local sans les pousser sur le dépôt central, il est possible de servir le site et qu'il se recharge automatiquement quand on modifie les fichiers :
+
+Version complète :
+
+```bash
+# regénération complète
+mkdocs serve
+# regénération rapide
+mkdocs serve --dirtyreload
+```
+
+Version complète gratuite :
+
+```bash
+# regénération complète
+mkdocs serve -f mkdocs-free.yml --dirtyreload
+# regénération rapide
+mkdocs serve --config-file mkdocs-free.yml --dirtyreload
+```
+
+Version minimale :
+
+```bash
+# regénération complète
+mkdocs serve --config-file mkdocs-minimal.yml
+# regénération rapide
+mkdocs serve --config-file mkdocs-minimal.yml --dirtyreload
+```
+
+Par défaut, le site est accessible sur <http://localhost:8000> mais il est possible de spécifier le port à utiliser : `mkdocs serve -a localhost:8085`.
 
 ----
 
@@ -232,13 +345,6 @@ docker-compose -f "docker-compose-mkdocs.dev.yml" up --build
 ```
 
 Le site est alors accessible sur : <http://0.0.0.0:8000>
-
-<!-- Hyperlinks reference -->
-[markdown]: https://fr.wikipedia.org/wiki/Markdown
-[MkDocs / Material]: https://squidfunk.github.io/mkdocs-material/specimen/
-[Python]: https://docs.python.org/fr/3/tutorial/
-[StackEdit]: https://stackedit.io/
-[Visual Studio Code]: https://github.com/DavidAnson/vscode-markdownlint#intro
 
 <!-- Intègre le glossaire centralisé -->
 --8<-- "content/toc_nav_ignored/snippets/glossaire.md"
