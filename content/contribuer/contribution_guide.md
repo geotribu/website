@@ -10,6 +10,8 @@ tags:
     - guide
 ---
 
+<!-- markdownlint-disable MD046 -->
+
 # Processus de contribution
 
 ## Processus (_workflow_)
@@ -98,7 +100,6 @@ Une fois le contenu prêt pour être publié, créer une [_Pull Request_](https:
 Et voilà ! Dès qu'elle sera validée, la correction sera automatiquement publiée :smile:.
 
 !!! warning
-
     Avant d'ajouter du contenu sur une branche déjà existante, bien penser à récupérer les changements faits par les autres contributeurs avant, en faisant :
 
     ```bash
