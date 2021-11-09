@@ -28,9 +28,11 @@ Après avoir rempli [les prérequis](/contribuer/requirements/) généraux, pour
 
 - [Git](#git)
 - [Python](#python)
-- une connexion autorisée vers le [CDN de Geotribu]
 
-Il est également recommandé de disposer de [Node.js (LTS)](https://nodejs.org) pour pouvoir utiliser markdownlint (voir [Rédiger en Markdown : enjeux de qualité et règles](/contribuer/guides/markdown_quality/#verifier-la-syntaxe-avec-markdownlint-cli)).
+Il est également recommandé :
+
+- d'avoir une connexion autorisée vers le [CDN de Geotribu]
+- d'installer [Node.js (LTS)](https://nodejs.org) pour pouvoir utiliser markdownlint (voir [Rédiger en Markdown : enjeux de qualité et règles](/contribuer/guides/markdown_quality/#verifier-la-syntaxe-avec-markdownlint-cli)).
 
 !!! tip
     Pour aborder de façon sympathique le fonctionnement du site web, pourquoi ne pas commencer par suivre le tutoriel publié fin 2020 pour déployer Geotribu localement ?
@@ -48,11 +50,11 @@ La gestion et la mise en ligne du contenu se font via [Git], une suite d'outils 
 
 ### Installation
 
-Il y a beaucoup de ressources sur la Toile pour installer et configurer [Git].
-Nous mettons ici une documentation minimaliste destinée à donner la trame globale de l'installation de Git, mais il y a fort à parier que cette documentation soit trop générique. A chacun/e de trouver son tuto à son pied si besoin !
+Il y a beaucoup de ressources sur la Toile pour installer et configurer [Git].  
+Nous mettons ici une documentation minimaliste destinée à donner la trame globale de l'installation de Git, mais il y a fort à parier que cette documentation soit trop générique. A chacun/e de trouver tuto à son pied si besoin !
 
-=== "Linux Debian (Bash)"
-    Pour avoir une version récente de Git, il faut ajoute les dépôts communautaires :
+=== "Debian (Bash)"
+    Pour avoir une version récente de Git, il faut ajouter les dépôts communautaires :
 
     ```bash
     sudo add-apt-repository ppa:git-core/ppa
@@ -70,8 +72,8 @@ Nous mettons ici une documentation minimaliste destinée à donner la trame glob
 
 Cloner le dépôt :
 
-- soit via [le bouton vert sur le dépôt avec GitHub Desktop](https://github.com/geotribu/website). Dans ce cas-là, ouvrez un terminal dans le dossier décompressé et passez à l'étape suivante.
-- soit avec la commande ci-dessous :
+- soit via [le bouton vert sur le dépôt avec GitHub Desktop](https://github.com/geotribu/website). Dans ce cas-là, ouvrez un terminal Powershell dans le dossier décompressé et passez à l'étape suivante.
+- soit avec les commandes ci-dessous :
 
 ```bash
 $ cd ~/git-repos/geotribu/
@@ -87,13 +89,14 @@ Résolution des deltas: 100% (112/112), fait.
 
 !!! question "Et le SSH alors ?!"
     Pourquoi je ne mentionne pas la possibilité de cloner par SSH ?
-    Parce-que si vous vous posez cette question, c'est que vous n'avez pas du tout besoin de lire cette partie-là car,féliciations : vous avez un niveau en Git supérieur à un *quickstart* ! :partying_face:
+    Parce-que si vous vous posez cette question, c'est que vous n'avez pas du tout besoin de lire cette partie-là car, féliciations : vous avez un niveau en Git supérieur à un *quickstart* ! :partying_face:
 
 ### Configurer Git
 
 Il s'agit d'indiquer le nom et l'adresse email qui seront utilisés pour les commits. Par exemple, si vous vous appelez Mona Lisa :
 
 ```bash
+# on se déplace dans le dossier qui contient le sous dossier caché '.git'
 cd website
 git config user.name "Mona Lisa"
 git config user.email "mona.lisa@devinci.com"
@@ -101,10 +104,9 @@ git config user.email "mona.lisa@devinci.com"
 
 ## Mettre à jour son dépôt local
 
-Vérifier que votre dépôt local (sur votre ordinateur) soit à jour par rapport le dépôt central (sur GitHub) Git :
+Vérifier que votre dépôt local (sur votre ordinateur) soit à jour par rapport au dépôt central (sur GitHub) :
 
 ```bash
-$ cd website
 $ git status
 Sur la branche master
 Votre branche est à jour avec 'origin/master'.
@@ -112,9 +114,15 @@ Votre branche est à jour avec 'origin/master'.
 rien à valider, la copie de travail est propre
 ```
 
-Si la commande `git status` ne vous renvoie pas le même genre de message qu'au-dessus, cela signifie que vous n'êtes pas à jour. Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement supprimée sur le dépôt central (hébergé sur [GitHub]) afin d'éviter de garder un dépôt propre et lisible. Il faut alors mettre à jour le dépôt local sur votre machine :
+Si la commande `git status` ne vous renvoie pas le même genre de message qu'au-dessus, cela signifie que vous n'êtes pas à jour. Il faut alors faire :
 
-=== "Linux Debian (Bash)"
+```bash
+git pull
+```
+
+Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement supprimée sur le dépôt central (hébergé sur [GitHub]) afin de garder un dépôt propre et lisible. Il faut alors mettre à jour le dépôt local sur votre machine :
+
+=== "Debian (Bash)"
     ```bash
     git pull origin
 
@@ -146,12 +154,12 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
 
 ### Installation de Python
 
-=== "Linux Debian (Bash)"
+=== "Debian (Bash)"
     ```bash
     # lister les versions de Python installées
     ls -1 /usr/bin/python* | grep '[2-3].[0-9]$'
 
-    # si aucune version de Python supérieure ou égale à 3.7 n'est installée, installons la 3.8 par exemple
+    # si aucune version de Python >= 3.7 n'est installée, installons la 3.8 par exemple
     sudo apt install software-properties-common
     sudo add-apt-repository ppa:deadsnakes/ppa
     sudo apt update
@@ -161,14 +169,14 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
 === "Windows (Powershell)"
     Le mieux est encore de suivre l'article dédié :
 
-    [Python : installation et configuration sur Windows :fontawesome-solid-home:](/articles/2020/2020-06-19_setup_python/#installation-et-configuration){: .md-button }
+    [Python : installation et configuration sur Windows :fontawesome-brands-windows:](/articles/2020/2020-06-19_setup_python/#installation-et-configuration){: .md-button }
     {: align=middle }
 
 ### Création de l'environnement de travail
 
 Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'installation de Python au niveau du système, on préfère utiliser un environnement virtuel.
 
-=== "Linux Debian (Bash)"
+=== "Debian (Bash)"
     ```bash
     # se rendre à la racine du dépôt local - adapter au dossier dans lequel vous avez cloné le dépôt
     cd ~/git-repos/geotribu/website/
@@ -269,7 +277,7 @@ C'est l'outil qui sert à générer le site web à partir des contenus rédigés
 
 ### Différentes configurations
 
-Depuis la rentrée 2021, Geotribu sponsorise le thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) afin de tirer parti des fonctionnalités réservées aux financeurs. La clé de licence (en fait, un *token* GitHub lié au compte de Julien) devant rester secrète, nous gérons donc différents fichiers de configuration afin de pouvoir s'adapter aux différents cas.
+Depuis la rentrée 2021, Geotribu sponsorise le thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) afin de pérenniser  le projet et tirer parti des fonctionnalités réservées aux financeurs. La clé de licence (en fait, un *token* GitHub lié au compte de Julien) devant rester secrète, nous gérons donc plusieurs fichiers de configuration afin de pouvoir s'adapter aux différents cas.
 
 | Fichier | Fonctionnalités payantes | Complet | Commentaire |
 | :------ | :-----: | :-----: | :---------- |
