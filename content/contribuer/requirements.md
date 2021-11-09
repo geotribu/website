@@ -16,7 +16,10 @@ tags:
 
 Le site (sources et contenu) sont hébergés sur Github : <https://github.com/geotribu/website>.
 
-Pas de compte, pas de contribution : <https://github.com/join>.
+Pas de compte, pas de contribution !
+
+[Ouvrir un compte GitHub :fontawesome-brands-github:](https://github.com/join){: .md-button }
+{: align=middle }
 
 ## Markdown
 
@@ -33,12 +36,3 @@ Il y a également certaines limites (dimensionnement ou alignement des images pa
 
 [Prochaine étape : rédiger du Markdown :fontawesome-solid-step-forward:](/contribuer/guides/markdown_basics/){: .md-button }
 {: align=middle }
-
-<!-- Hyperlinks reference -->
-[Git]: https://git-scm.com/download/
-[GitHub Desktop]: https://desktop.github.com/
-[GitHub]: https://help.github.com/en/github/writing-on-github
-[markdown]: https://fr.wikipedia.org/wiki/Markdown
-[Python]: http://help.isogeo.com/development-guidelines/languages/python/
-[StackEdit]: https://stackedit.io/
-[Visual Studio Code]: https://github.com/DavidAnson/vscode-markdownlint#intro

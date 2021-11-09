@@ -66,5 +66,5 @@ Dans un premier temps, il a été décidé de réaliser cette opération à la m
 
 **:bear: Bien joué, les ours polaires vous remercieront un jour !**
 
-<!-- Hyperlinks reference -->
-[Git]: https://git-scm.com/
+<!-- Intègre le glossaire centralisé -->
+--8<-- "content/toc_nav_ignored/snippets/glossaire.md"

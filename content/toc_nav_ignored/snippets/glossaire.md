@@ -2,6 +2,15 @@
 
 <!-- Liens -->
 [CDN de Geotribu]: https://cdn.geotribu.fr/
+[Git]: https://git-scm.com/
+[GitHub]: https://github.com/
+[GitHub Desktop]: https://desktop.github.com/
+[markdown]: https://fr.wikipedia.org/wiki/Markdown
+[pre-commit]: https://pre-commit.com/
+[Python]: https://www.python.org/
+[StackEdit]: https://stackedit.io/
+[Upmath]: https://upmath.me/
+[Visual Studio Code]: https://github.com/DavidAnson/vscode-markdownlint#intro
 
 <!-- Abbreviations -->
 *[CSS]: Cascading Style Sheets - Feuilles de style en cascade.

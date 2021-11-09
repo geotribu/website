@@ -118,10 +118,5 @@ Un modèle de news est disponible ici :
 - en brut : <https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp_news.md>
 - rendu sur Github (non contractuel) : <https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp_news.md>
 
-<!-- Hyperlinks reference -->
-[Git]: https://git-scm.com/download/win
-[GitHub Desktop]: https://desktop.github.com/
-[GitHub]: https://help.github.com/en/github/writing-on-github
-[markdown]: https://fr.wikipedia.org/wiki/Markdown
-[Python]: http://help.geotribu.com/development-guidelines/languages/python/
-[StackEdit]: https://stackedit.io/
+<!-- Intègre le glossaire centralisé -->
+--8<-- "content/toc_nav_ignored/snippets/glossaire.md"
