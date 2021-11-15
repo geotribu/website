@@ -9,7 +9,8 @@ description: "Etat des lieux des traitements OSM de geovelo"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/0-head.jpg"
 license: default
 tags:
-  - 3D
+  - osm
+  - geovelo
 ---
 
 # Le traitement des données OSM chez Geovelo
@@ -86,10 +87,12 @@ Pour les traitements de réutilisation, on est sur du classique libre :
 
 ---
 
-Bonus ! La station de travail de Simon, notre cartographe
+Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre cartographe:  
+![station_simon](https://wpformation.com/wp-content/uploads/2014/03/todo1.jpg "La station de travail du cartographe"){: loading=lazy align=right}
+
 ## Auteur
 
---8<-- "content/team/jemv.md"
+--8<-- "content/team/sdesb.md"
 
 <!-- Intègre le glossaire centralisé -->
 --8<-- "content/toc_nav_ignored/snippets/glossaire.md"
