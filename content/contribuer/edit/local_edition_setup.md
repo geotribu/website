@@ -89,7 +89,7 @@ Résolution des deltas: 100% (112/112), fait.
 
 !!! question "Et le SSH alors ?!"
     Pourquoi je ne mentionne pas la possibilité de cloner par SSH ?
-    Parce-que si vous vous posez cette question, c'est que vous n'avez pas du tout besoin de lire cette partie-là car, féliciations : vous avez un niveau en Git supérieur à un *quickstart* ! :partying_face:
+    Parce-que si vous vous posez cette question, c'est que vous n'avez pas du tout besoin de lire cette partie-là car, félicitations : vous avez un niveau en Git supérieur à un *quickstart* ! :partying_face:
 
 ### Configurer Git
 
