@@ -147,7 +147,6 @@ extra:
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
       des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
       l'audience du site.
-  manifest: "manifest.webmanifest" # PWA declaration
   social:
     - icon: "fontawesome/solid/rss"
       link: "https://static.geotribu.fr/feed_rss_created.xml"
