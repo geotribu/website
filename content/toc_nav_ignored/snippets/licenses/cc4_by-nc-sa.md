@@ -1,3 +1,7 @@
+---
+robots: noindex,nofollow
+---
+
 <!-- markdownlint-disable MD026 MD041 -->
 ## Licence :fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-nc-eu: :fontawesome-brands-creative-commons-sa: {: id="license" }
 

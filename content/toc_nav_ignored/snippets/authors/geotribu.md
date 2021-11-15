@@ -1,3 +1,7 @@
+---
+robots: noindex,nofollow
+---
+
 <!-- markdownlint-disable MD041 -->
 ### L'équipe Geotribu
 
