@@ -4,6 +4,8 @@
   {# SEO Robots #}
   {% if page and page.meta and page.meta.robots %}
     <meta property="robots" content="{{ page.meta.robots }}" />
+  {% elif page and "toc_nav_ignored/snippets" in page.canonical_url %}
+    <meta property="robots" content="noindex,nofollow" />
   {% else %}
     <meta property="robots" content="index, follow" />
   {% endif %}
