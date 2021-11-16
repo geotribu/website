@@ -1,7 +1,3 @@
----
-robots: noindex,nofollow
----
-
 <!-- markdownlint-disable -->
 
 <!-- Liens -->

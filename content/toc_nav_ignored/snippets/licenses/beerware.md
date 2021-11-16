@@ -1,7 +1,3 @@
----
-robots: noindex,nofollow
----
-
 <!-- markdownlint-disable MD026 MD041 -->
 ## Licence Beerware :fontawesome-solid-beer: :fontawesome-solid-mug-hot: {: id="license" }
 
