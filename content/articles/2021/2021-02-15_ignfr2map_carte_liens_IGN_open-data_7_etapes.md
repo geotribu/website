@@ -40,8 +40,8 @@ La solution proposée par Julien ne paraissait pas trop complexe à mettre en oe
 
 - De travailler en Bash
 - De se répartir les tâches de la manière suivante :
-    - [@Flo](https://static.geotribu.fr/team/fbor/) sur la construction des scripts
-    - [@Ju](https://static.geotribu.fr/team/jmou/) l’enchainement des scripts et sur le déploiement
+    - [@Flo](/team/fbor/) sur la construction des scripts
+    - [@Ju](/team/jmou/) l’enchainement des scripts et sur le déploiement
 
 Et c'est parti pour une aventure en 7 étapes :rocket: !
 
