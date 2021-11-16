@@ -6,7 +6,7 @@ categories:
   - article
 date: 2021-11-20 08:00
 description: "Etat des lieux des traitements OSM de geovelo"
-image: "https://wpformation.com/wp-content/uploads/2014/03/todo1.jpg"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/logo_geovelo_osm.jpg"
 license: default
 tags:
   - osm
@@ -150,7 +150,7 @@ Pour les traitements de réutilisation, on est sur du classique libre :
 ---
 
 Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre cartographe:  
-![station_simon](https://wpformation.com/wp-content/uploads/2014/03/todo1.jpg "La station de travail du cartographe"){: loading=lazy}
+![station_simon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/station_travail_simon_geovelo.jpg "La station de travail du cartographe"){: loading=lazy}
 
 ## Auteur
 
