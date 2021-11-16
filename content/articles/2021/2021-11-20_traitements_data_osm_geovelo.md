@@ -33,7 +33,7 @@ Nous participons donc activement à la communauté OSM, notamment grace à [l'ac
 
 Pour s’assurer d’avoir les meilleures données cyclables possibles, Geovelo participe quotidiennement à l’amélioration des données. Nous sommes 4 (1 à temps plein et 3 “connaisseurs”) à commiter régulièrement des changements, qui sont basés sur :  
 
-![Suivi OSM chez Geovelo](https://wpformation.com/wp-content/uploads/2014/03/todo1.jpg "Suivi OSM chez Geovelo"){: loading=lazy align=right}
+![Suivi OSM chez Geovelo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png "Suivi OSM chez Geovelo"){: loading=lazy align=right}
 
 - des **enquêtes sur le terrain**, avec import des images sur Mapillary,
 - des bases Open Data, ou documents assimilés, fournis par les collectivités partenaires pour intégration,
@@ -46,7 +46,7 @@ Nous allons par la suite nous intéresser aux 2 catégories qui posent le plus d
 ### Processus de traitement des contributions
 Geovelo intègre un outil de contribution à son site web et ses applications, permettant aux utilisateurs de contribuer sur 8 thématiques différentes:
 
-![Signalements possibles](https://wpformation.com/wp-content/uploads/2014/03/todo1.jpg "Signalements possibles sur l'appli Geovelo"){: loading=lazy align=right}
+![Signalements possibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.png "Signalements possibles sur l'appli Geovelo"){: loading=lazy align=right}
 > Erreur de cartographie, Aménagement Cyclable manquant, parking Vélo Manquant, A faire à voir, Points noirs, Travaux, Route bloquée, Nid de Poule
 
 Les catégories *“Erreur de cartographie”, “Aménagement Cyclable manquant”*, et *“Parking vélo manquant”*, créent une note sur OpenStreetMap et entraînent un traitement de notre équipe (support & cartographe).
