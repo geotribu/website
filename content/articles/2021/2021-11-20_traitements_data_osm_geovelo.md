@@ -18,11 +18,13 @@ tags:
 :calendar: Date de publication initiale : 20 novembre 2021
 
 ## Présentation
+
 [Geovelo](https://geovelo.fr) est une application gratuite qui permet de **trouver facilement l'itinéraire à vélo le plus adapté** selon plusieurs critères. Plusieurs options sont proposées, de la plus rapide à la plus sécurisée. En complément, l'application intègre aussi d'autres fonctionnalités telles que le **suivi de ses statistiques**, l'accès à des **itinéraires touristiques** ou encore un **outil de contributions cartographiques**.
 
 Geovelo accompagne les collectivités dans le but de **favoriser la pratique du vélo**. Cela passe par une meilleure compréhension de l'utilisation du réseau cyclable (via des statistiques anonymisées issues des utilisateurs), et des axes d'amélioration pour le développer.
 
 ## Geovelo & OpenStreetMap
+
 Les données cyclables d’OSM sont l’un des fondements de l’activité même de Geovelo. Elles alimentent non seulement nos calculateurs d’itinéraires pour construire le réseau cyclable, mais servent également de référentiel pour de multiples traitements, des statistiques d’aménagements jusqu’aux informations de déplacements.
 La validité, la qualité, la cohérence et la complétude de ces données sont donc des rouages essentiels de la valeur ajoutée des produits Geovelo.  
 Nous participons donc activement à la communauté OSM, notamment grace à [l'activité de notre cartographe](https://www.openstreetmap.org/user/simon_geovelo)  !
@@ -40,10 +42,10 @@ Pour s’assurer d’avoir les meilleures données cyclables possibles, Geovelo 
 - des **retours utilisateurs**, via notre système intégré de contributions carto sur les apps,  
 - des indices remontés par des failles dans nos calculs d’itinéraires.
 
-
 Nous allons par la suite nous intéresser aux 2 catégories qui posent le plus de problème de qualité : les contributions et les imports "métier".
 
 ### Processus de traitement des contributions
+
 Geovelo intègre un outil de contribution à son site web et ses applications, permettant aux utilisateurs de contribuer sur 8 thématiques différentes:
 
 ![Signalements possibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg "Signalements possibles sur l'appli Geovelo"){: loading=lazy align=right width=28%}
@@ -70,8 +72,6 @@ Les contributions sont ensuite traitées manuellement par nos soins :
 
 Nous modifions alors les données OpenStreetMap, et clôturons la contribution sur [amenagements-cyclables.fr](https://www.amenagements-cyclables.fr/), clôturant ainsi la note OpenStreetMap en même temps.
 
-
-
 !!! Info
     De nombreuses notes restent ouvertes (la plupart en attente de précisions d’un contributeur).
     Ces notes sont parfois traitées par un contributeur local, qui aura connaissance du sujet traité.
@@ -79,6 +79,7 @@ Nous modifions alors les données OpenStreetMap, et clôturons la contribution s
     :stopwatch: *Sans réponse ou retour de la part de l’utilisateur initial, nous clôturons la note 2 mois après sa création.*
 
 ### Qualité de nos imports
+
 > Une part de l'activité de Geovelo réside dans l'intégration de données des collectivités. Avec leurs accords, nous importons donc leurs données cyclables à partir de multiples sources de données (de la carte annotée au fichier GPKG)
 
 Avant toute intégration de données, un audit des données OpenStreetMap est effectué. **L’exhaustivité attributaire et géographique** ainsi que **la qualité de la description** des données dans OpenStreetMap sont vérifiés, afin d’établir un état des lieux précis du territoire existant sur OSM.
@@ -110,9 +111,8 @@ La méthode d’intégration est adaptée à chaque jeu de données, mais respec
     - Test automatique avec le calculateur Geovelo sur les différents profils d’itinéraires,
     - Suivi des dernières contributions sur OpenStreetMap.
 
-
-
 ### Réutilisation des données
+
 Notre base de données OpenStreetMap “monde” est maintenue et mise à jour quotidiennement. A partir de cette base nous créons des extraits spécialisés en fonction des usages. Ils possèdent donc leurs propres spécificités, aussi bien dans la couverture géographique que dans le filtrage des données OpenStreetMap et des champs calculés.
 Cela nous permet d’optimiser la taille et les performances de chaque base de données pour un usage précis.
 
@@ -123,10 +123,10 @@ Nous utilisons les données OpenStreetMap pour différents usages, par exemple :
 - Calculs de statistiques d’aménagements cyclables, disponibles sur [amenagements-cyclables.fr](https://www.amenagements-cyclables.fr/),
 - Extraction dans des formats standardisés ou personnalisés de la données OpenStreetMap. Nous publions par exemple l’extraction des aménagements cyclables de france métropolitaine pour la [Base Nationale des Aménagements Cyclables (BNAC)](https://www.data.gouv.fr/fr/datasets/amenagements-cyclables-france-metropolitaine/) sur data.gouv.fr
 
-
 ----
 
 ## Nos outils pratiques
+
 Pour l'intégration et le traitement des notes :
 
 - **QGIS** (*une évidence...*) avec le plug-in QuickOSM (utilisation du remote controler vers JOSM, merci [3Liz](https://www.3liz.com/en/news/quickosm-2-0.html) :heart_eyes:)
@@ -145,7 +145,6 @@ Pour les traitements de réutilisation, on est sur du classique libre :
 - les 2 comptes OSM principaux :
     - [https://www.openstreetmap.org/user/simon_geovelo](https://www.openstreetmap.org/user/simon_geovelo)
     - [https://www.openstreetmap.org/user/alix_geovelo](https://www.openstreetmap.org/user/alix_geovelo)
-
 
 ---
 
