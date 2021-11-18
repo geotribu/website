@@ -17,9 +17,9 @@ repos:
         args: [--markdown-linebreak-ext=md]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.29.0
+    rev: bf8b1484934b89c791b9aab83c2c6cc950546be4
     hooks:
-      - id: markdownlint
+      - id: markdownlint-fix
         args:
           [
             "--config",
@@ -28,6 +28,7 @@ repos:
             ".markdownlintignore",
             "--fix"
           ]
+        language: node
         # language_version: "14.17.6"
         pass_filenames: true
         types: [file, markdown, non-executable]
