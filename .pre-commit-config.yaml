@@ -1,7 +1,10 @@
-# See https://pre-commit.com for more information
-# See https://pre-commit.com/hooks.html for more hooks
 exclude: "node_modules|migrations|.venv|tests/dev/|tests/fixtures/"
+
 repos:
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
     hooks:
@@ -26,6 +29,8 @@ repos:
             "--fix"
           ]
         # language_version: "14.17.6"
+        pass_filenames: true
+        types: [file, markdown, non-executable]
 
 # Specific part for https://pre-commit.ci
 ci:
