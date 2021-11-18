@@ -17,9 +17,9 @@ repos:
         args: [--markdown-linebreak-ext=md]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: bf8b1484934b89c791b9aab83c2c6cc950546be4
+    rev: v0.29.0
     hooks:
-      - id: markdownlint-fix
+      - id: markdownlint
         args:
           [
             "--config",
@@ -40,6 +40,7 @@ ci:
   autoupdate_commit_msg: "[pre-commit.ci] Mise à jour des git hooks."
   autoupdate_schedule: monthly
   skip: [
-    "check-hooks-apply"
+    "check-hooks-apply",
+    "markdownlint-fix"
   ]
   submodules: false
