@@ -23,7 +23,7 @@ La rédaction des revues de presse (GeoRDP) est collaborative et ouverte à tout
 
 Gardez en tête que le travail de l'équipe est **bénévole**. A ce titre, plus votre contenu est conforme à nos prérequis et aux guides de contribution, moins il ne demande de travail de notre part. Ce que vous ne faites pas, nous devrons le faire.
 
-Bref, appliquons le principe du *fair-use*[^fairuse] au bénévolat :hugging: !
+Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
 [Proposer une news par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution à la GeoRDP){: .md-button }
 [Proposer une news via GitHub :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=aurelienchaumet%2C+Guts%2C+igeofr&labels=contribution+externe%2C+rdp&template=suggestion-de-news-pour-une-revue-de-presse.md&title=%5BNews+GeoRDP%5D){: .md-button }
@@ -68,7 +68,7 @@ Il n'est parfois pas évident de savoir où placer son actualité. Dans ce cas, 
 | Google                        | Idem mais pour la plus grande agence de publicité numérique mondiale. :wink: | |
 | Open Data                     | Tout ce qui a trait aux données ouvertes. | "[Ouverture officielle des données de l'IGN](/rdp/2020/rdp_2020-12-11/#open-data)", "Le libre accès aux données implique t'il leur gratuité ?" |
 | Geo-event                     | Evénements et conférences. | SAGEO, GéoDataDays, CartoMob, "[Rencontres des utilisateurs francophones de QGIS](/rdp/2020/rdp_2020-12-11/#rencontres-des-utilisateurs-francophones-de-qgis)"... |
-| Divers                        | Tout ce qui ne rentre pas dans les autres sections. | "[Des globes made in France](/rdp/2020/rdp_2020-12-11/#des-globes-made-in-france)", "[Les villes sont-elles un corps ?](rdp/2021/rdp_2021-03-26/#les-villes-ont-elles-un-corps)"   |
+| Divers                        | Tout ce qui ne rentre pas dans les autres sections. | "[Des globes made in France](/rdp/2020/rdp_2020-12-11/#des-globes-made-in-france)", "[Les villes sont-elles un corps ?](/rdp/2021/rdp_2021-03-26/#les-villes-ont-elles-un-corps)"   |
 | En bref                       | Liste à puces d'informations mineures ou récurrentes.  | Lettre d'informations de la communauté OSM ; version mineure d'un logiciel qui ne nécessite pas un commentaire. |
 
 ----

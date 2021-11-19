@@ -4,9 +4,11 @@ authors:
     - Julien MOURA
 categories:
     - article
+    - tutoriel
 date: "2020-03-31 10:20"
 description: "Le site de Geotribu se présente comme une PWA. Voici comment l'installer comme une application (Windows 10 et Android)."
 image: "https://cdn.geotribu.fr/img/internal/install_pwa/geotribu_uninstall_pwa_win10.png"
+license: default
 tags:
     - application
     - astuce
@@ -15,12 +17,14 @@ tags:
     - site
 ---
 
-# Installer en tant qu'application
+# Installer Geotribu en tant qu'application
+
+!!! warning "Cette fonctionnalité n'est plus disponible"
+    Très peu utilisée, elle a été désactivée à l'automne 2021 sur Geotribu et retirée à partir de la version 8 du thème [Material for Mkdocs](https://github.com/squidfunk/mkdocs-material/issues/3219).
 
 Ce site étant entièrement statique et déclaré comme une [application web progressive] (_progressive web apps_ ou PWA), il est possible de l'installer à la manière d'une application classique.
 
-!!! info
-    Pour en savoir plus sur les PWA, consulter [Progressive Web Apps : utilité, installation et gestion dans des environnements fixes et mobiles](https://www.nextinpact.com/news/108095-progressive-web-apps-utilite-installation-et-gestion-dans-environnements-fixes-et-mobiles.htm)
+Pour en savoir plus sur les PWA, consulter [Progressive Web Apps : utilité, installation et gestion dans des environnements fixes et mobiles](https://www.nextinpact.com/news/108095-progressive-web-apps-utilite-installation-et-gestion-dans-environnements-fixes-et-mobiles.htm)
 
 ## Windows 10
 

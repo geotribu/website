@@ -1,5 +1,6 @@
 User-Agent: *
 Allow: /
+Disallow: /contribuer/archives/
 Disallow: /rdp/archives/
 Disallow: /toc_nav_ignored/snippets/
 
