@@ -136,6 +136,8 @@ Nous utilisons les données OpenStreetMap pour différents usages, par exemple :
 
 ## Nos outils pratiques
 
+![icône outils](https://cdn.geotribu.fr/img/logos-icones/divers/outils.png "icône outils"){: .img-rdp-news-thumb }
+
 Pour l'intégration et le traitement des notes :
 
 - **QGIS** (*une évidence...*) avec le plug-in QuickOSM (utilisation du remote controler vers JOSM, merci [3Liz](https://www.3liz.com/en/news/quickosm-2-0.html) :heart_eyes:)
