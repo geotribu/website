@@ -9,8 +9,8 @@ description: "Etat des lieux des traitements OSM de geovelo"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/logo_geovelo_osm.jpg"
 license: default
 tags:
-  - osm
-  - geovelo
+  - Geovelo
+  - OpenStreetMap
 ---
 
 # Le traitement des données OSM chez Geovelo
@@ -19,15 +19,22 @@ tags:
 
 ## Présentation
 
+![logo Geovelo](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/geovelo.png "logo Geovelo"){: .img-rdp-news-thumb }
+
 [Geovelo](https://geovelo.fr) est une application gratuite qui permet de **trouver facilement l'itinéraire à vélo le plus adapté** selon plusieurs critères. Plusieurs options sont proposées, de la plus rapide à la plus sécurisée. En complément, l'application intègre aussi d'autres fonctionnalités telles que le **suivi de ses statistiques**, l'accès à des **itinéraires touristiques** ou encore un **outil de contributions cartographiques**.
 
 Geovelo accompagne les collectivités dans le but de **favoriser la pratique du vélo**. Cela passe par une meilleure compréhension de l'utilisation du réseau cyclable (via des statistiques anonymisées issues des utilisateurs), et des axes d'amélioration pour le développer.
 
 ## Geovelo & OpenStreetMap
 
+![logo Geovelo/OSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/logo_geovelo_osm.jpg "logo Geovelo/OSM"){: .img-rdp-news-thumb }
+
 Les données cyclables d’OSM sont l’un des fondements de l’activité même de Geovelo. Elles alimentent non seulement nos calculateurs d’itinéraires pour construire le réseau cyclable, mais servent également de référentiel pour de multiples traitements, des statistiques d’aménagements jusqu’aux informations de déplacements.
 La validité, la qualité, la cohérence et la complétude de ces données sont donc des rouages essentiels de la valeur ajoutée des produits Geovelo.  
-Nous participons donc activement à la communauté OSM, notamment grace à [l'activité de notre cartographe](https://www.openstreetmap.org/user/simon_geovelo)  !
+Nous participons donc activement à la communauté OSM, notamment grâce à [l'activité de notre cartographe](https://www.openstreetmap.org/user/simon_geovelo)  !
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 ----
 
@@ -35,20 +42,22 @@ Nous participons donc activement à la communauté OSM, notamment grace à [l'ac
 
 Pour s’assurer d’avoir les meilleures données cyclables possibles, Geovelo participe quotidiennement à l’amélioration des données. Nous sommes 4 (1 à temps plein et 3 “connaisseurs”) à commiter régulièrement des changements, qui sont basés sur :  
 
-![Suivi OSM chez Geovelo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png "Suivi OSM chez Geovelo"){: loading=lazy align=right width=50%}
+[![Suivi OSM chez Geovelo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png "Suivi OSM chez Geovelo"){: loading=lazy align=right width=50%}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png){: data-mediabox="lightbox-gallery" data-title="Suivi OSM chez Geovelo" }
+
 
 - des **enquêtes sur le terrain**, avec import des images sur Mapillary,
-- des bases Open Data, ou documents assimilés, fournis par les collectivités partenaires pour intégration,
+- des bases de données en open data, ou documents assimilés, fournis par les collectivités partenaires pour intégration,
 - des **retours utilisateurs**, via notre système intégré de contributions carto sur les apps,  
 - des indices remontés par des failles dans nos calculs d’itinéraires.
 
 Nous allons par la suite nous intéresser aux 2 catégories qui posent le plus de problème de qualité : les contributions et les imports "métier".
 
-### Processus de traitement des contributions
+### 1. Processus de traitement des contributions
 
 Geovelo intègre un outil de contribution à son site web et ses applications, permettant aux utilisateurs de contribuer sur 8 thématiques différentes:
 
-![Signalements possibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg "Signalements possibles sur l'appli Geovelo"){: loading=lazy align=right width=28%}
+[![Signalements possibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg "Signalements possibles sur l'appli Geovelo"){: loading=lazy align=right width=28%}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg){: data-mediabox="lightbox-gallery" data-title="Signalements possibles sur l'appli Geovelo" }
+
 > Erreur de cartographie, Aménagement Cyclable manquant, parking Vélo Manquant, A faire à voir, Points noirs, Travaux, Route bloquée, Nid de Poule
 
 Les catégories *“Erreur de cartographie”, “Aménagement Cyclable manquant”*, et *“Parking vélo manquant”*, créent une note sur OpenStreetMap et entraînent un traitement de notre équipe (support & cartographe).
@@ -78,7 +87,7 @@ Nous modifions alors les données OpenStreetMap, et clôturons la contribution s
 
     :stopwatch: *Sans réponse ou retour de la part de l’utilisateur initial, nous clôturons la note 2 mois après sa création.*
 
-### Qualité de nos imports
+### 2. Qualité de nos imports
 
 > Une part de l'activité de Geovelo réside dans l'intégration de données des collectivités. Avec leurs accords, nous importons donc leurs données cyclables à partir de multiples sources de données (de la carte annotée au fichier GPKG)
 
@@ -111,7 +120,7 @@ La méthode d’intégration est adaptée à chaque jeu de données, mais respec
     - Test automatique avec le calculateur Geovelo sur les différents profils d’itinéraires,
     - Suivi des dernières contributions sur OpenStreetMap.
 
-### Réutilisation des données
+## Réutilisation des données
 
 Notre base de données OpenStreetMap “monde” est maintenue et mise à jour quotidiennement. A partir de cette base nous créons des extraits spécialisés en fonction des usages. Ils possèdent donc leurs propres spécificités, aussi bien dans la couverture géographique que dans le filtrage des données OpenStreetMap et des champs calculés.
 Cela nous permet d’optimiser la taille et les performances de chaque base de données pour un usage précis.
@@ -121,7 +130,7 @@ Nous utilisons les données OpenStreetMap pour différents usages, par exemple :
 - Calculateur d’itinéraires,
 - Serveur de tuiles raster et vecteur
 - Calculs de statistiques d’aménagements cyclables, disponibles sur [amenagements-cyclables.fr](https://www.amenagements-cyclables.fr/),
-- Extraction dans des formats standardisés ou personnalisés de la données OpenStreetMap. Nous publions par exemple l’extraction des aménagements cyclables de france métropolitaine pour la [Base Nationale des Aménagements Cyclables (BNAC)](https://www.data.gouv.fr/fr/datasets/amenagements-cyclables-france-metropolitaine/) sur data.gouv.fr
+- Extraction dans des formats standardisés ou personnalisés de la données OpenStreetMap. Nous publions par exemple l’extraction des aménagements cyclables de France métropolitaine pour la [Base Nationale des Aménagements Cyclables (BNAC)](https://www.data.gouv.fr/fr/datasets/amenagements-cyclables-france-metropolitaine/) sur data.gouv.fr
 
 ----
 
@@ -140,7 +149,7 @@ Pour les traitements de réutilisation, on est sur du classique libre :
 :eye_in_speech_bubble: Pour nous suivre ou nous contacter :
 
 - le compte Twitter cartographe Geovelo : [https://twitter.com/c_geovelo](https://twitter.com/c_geovelo)
-- Nos contributions Mapillary : [https://www.mapillary.com/app/user/geovelo](https://www.mapillary.com/app/user/geovelo?lat=47.2512956793162&lng=6.074814436239308&z=5.882729287262007&username%5B%5D=simon_geovelo&username%5B%5D=geovelo)
+- nos contributions Mapillary : [https://www.mapillary.com/app/user/geovelo](https://www.mapillary.com/app/user/geovelo?lat=47.2512956793162&lng=6.074814436239308&z=5.882729287262007&username%5B%5D=simon_geovelo&username%5B%5D=geovelo)
 - le blog : [https://geovelo.fr/blog/](https://geovelo.fr/blog/)
 - les 2 comptes OSM principaux :
     - [https://www.openstreetmap.org/user/simon_geovelo](https://www.openstreetmap.org/user/simon_geovelo)
@@ -148,8 +157,9 @@ Pour les traitements de réutilisation, on est sur du classique libre :
 
 ---
 
-Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre cartographe:  
-![station_simon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/station_travail_simon_geovelo.jpg "La station de travail du cartographe"){: loading=lazy}
+Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre cartographe:
+
+[![station_simon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/station_travail_simon_geovelo.jpg "La station de travail du cartographe"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/station_travail_simon_geovelo.jpg){: data-mediabox="lightbox-gallery" data-title="La station de travail du cartographe" }
 
 ## Auteur
 
