@@ -75,15 +75,13 @@ L’ensemble des commentaires effectués sur Geovelo ainsi que ceux effectués d
 
 Les contributions sont ensuite traitées manuellement par nos soins :
 
-> - :checkered_flag: Si les informations sont pertinentes, les données OpenStreetMap sont modifiées.
->  
-> - :thinking: Si nous manquons d’informations, nous demandons des détails au contributeur initial. Tout commentaire sur note, qu’il soit été effectué coté OpenStreetMap ou coté Geovelo, sont transmis par mail au créateur de la note.
->
->     - :arrow_right_hook: Si l’usager nous répond uniquement par mail, nous recevons ses précisions et nous traitons la demande, mais sa réponse ne s’affiche pas sur la note.
->  
->     - :arrow_right_hook:️Si l’usager nous répond en utilisant amenagements-cyclables.fr, sa réponse s'affiche sur la note OpenStreetMap
->
-> :warning: Si la note comprend des informations personnelles ou semble trop fantaisiste, nous supprimons la contribution.
+- :warning: Si la note comprend des informations personnelles ou semble trop fantaisiste, nous supprimons la contribution.
+- :checkered_flag: Si les informations sont pertinentes, les données OpenStreetMap sont modifiées.
+- :thinking: Si nous manquons d’informations, nous demandons des détails au contributeur initial. Tout commentaire sur note, qu’il soit été effectué coté OpenStreetMap ou coté Geovelo, est transmis par mail au créateur de la note.
+    - :arrow_right_hook: Si l’usager nous répond uniquement par mail, nous recevons ses précisions et nous traitons la demande, mais sa réponse ne s’affiche pas sur la note.
+    - :arrow_right_hook:️ Si l’usager nous répond en utilisant [amenagements-cyclables.fr](amenagements-cyclables.fr), sa réponse s'affiche sur la note OpenStreetMap
+
+
 
 Nous modifions alors les données OpenStreetMap, et clôturons la contribution sur [amenagements-cyclables.fr](https://www.amenagements-cyclables.fr/), clôturant ainsi la note OpenStreetMap en même temps.
 
