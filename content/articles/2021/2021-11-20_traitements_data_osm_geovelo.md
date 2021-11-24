@@ -58,7 +58,14 @@ Geovelo intègre un outil de contribution à son site web et ses applications, p
 
 [![Signalements possibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg "Signalements possibles sur l'appli Geovelo"){: loading=lazy align=right width=28%}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg){: data-mediabox="lightbox-gallery" data-title="Signalements possibles sur l'appli Geovelo" }
 
-> Erreur de cartographie, Aménagement Cyclable manquant, parking Vélo Manquant, A faire à voir, Points noirs, Travaux, Route bloquée, Nid de Poule
+- A faire à voir
+- Aménagement Cyclable manquant
+- Erreur de cartographie
+- Nid de Poule
+- Parking Vélo Manquant
+- Points noirs
+- Route bloquée
+- Travaux
 
 Les catégories *“Erreur de cartographie”, “Aménagement Cyclable manquant”*, et *“Parking vélo manquant”*, créent une note sur OpenStreetMap et entraînent un traitement de notre équipe (support & cartographe).
 
