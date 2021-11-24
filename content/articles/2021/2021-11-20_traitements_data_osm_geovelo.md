@@ -44,7 +44,6 @@ Pour s’assurer d’avoir les meilleures données cyclables possibles, Geovelo 
 
 [![Suivi OSM chez Geovelo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png "Suivi OSM chez Geovelo"){: loading=lazy align=right width=50%}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png){: data-mediabox="lightbox-gallery" data-title="Suivi OSM chez Geovelo" }
 
-
 - des **enquêtes sur le terrain**, avec import des images sur Mapillary,
 - des bases de données en open data, ou documents assimilés, fournis par les collectivités partenaires pour intégration,
 - des **retours utilisateurs**, via notre système intégré de contributions carto sur les apps,  
@@ -81,15 +80,15 @@ Les contributions sont ensuite traitées manuellement par nos soins :
     - :arrow_right_hook: Si l’usager nous répond uniquement par mail, nous recevons ses précisions et nous traitons la demande, mais sa réponse ne s’affiche pas sur la note.
     - :arrow_right_hook:️ Si l’usager nous répond en utilisant [amenagements-cyclables.fr](amenagements-cyclables.fr), sa réponse s'affiche sur la note OpenStreetMap
 
-
-
 Nous modifions alors les données OpenStreetMap, et clôturons la contribution sur [amenagements-cyclables.fr](https://www.amenagements-cyclables.fr/), clôturant ainsi la note OpenStreetMap en même temps.
 
+<!-- markdownlint-disable MD046 -->
 !!! Info
     De nombreuses notes restent ouvertes (la plupart en attente de précisions d’un contributeur).
     Ces notes sont parfois traitées par un contributeur local, qui aura connaissance du sujet traité.
 
     :stopwatch: *Sans réponse ou retour de la part de l’utilisateur initial, nous clôturons la note 2 mois après sa création.*
+<!-- markdownlint-enable MD046 -->
 
 ### 2. Qualité de nos imports
 
@@ -117,12 +116,14 @@ La méthode d’intégration est adaptée à chaque jeu de données, mais respec
 
 > En cas de doute sur des données à intégrer (pas de sources permettant de confirmer ou d’infirmer la donnée), l’objet n’est pas intégré et nous demandons au producteur de nous confirmer ou non la réalité de cet objet.
 
+<!-- markdownlint-disable MD046 -->
 !!! Info
     Une fois les données intégrées, des contrôles qualité *"de suivi"* sont effectués régulièrement avec les outils suivants :
 
     - Contrôle des erreurs sémantiques et validation des géométries via Osmose,
     - Test automatique avec le calculateur Geovelo sur les différents profils d’itinéraires,
     - Suivi des dernières contributions sur OpenStreetMap.
+<!-- markdownlint-enable MD046 -->
 
 ## Réutilisation des données
 
@@ -150,7 +151,7 @@ Pour l'intégration et le traitement des notes :
 Pour les traitements de réutilisation, on est sur du classique libre :
 >Postgis, Osmosis, Osm2pgsql, GDAL
 
----
+----
 
 :eye_in_speech_bubble: Pour nous suivre ou nous contacter :
 
@@ -161,7 +162,7 @@ Pour les traitements de réutilisation, on est sur du classique libre :
     - [https://www.openstreetmap.org/user/simon_geovelo](https://www.openstreetmap.org/user/simon_geovelo)
     - [https://www.openstreetmap.org/user/alix_geovelo](https://www.openstreetmap.org/user/alix_geovelo)
 
----
+----
 
 Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre cartographe:
 
