@@ -95,7 +95,7 @@ Avant toute intégration de données, un audit des données OpenStreetMap est ef
 
 Pour cet audit, plusieurs recherches permettent de qualifier les données OpenStreetMap :
 
-- des analyses [Osmose](http://osmose.openstreetmap.fr/fr/map/), détecteur de problèmes à large spectre,
+- des analyses [Osmose](https://osmose.openstreetmap.fr/fr/map/), détecteur de problèmes à large spectre,
 - une recherche des contributeurs principaux sur la thématique vélo,
 - des vérifications ciblées à l’aide des photos présentes sur Mapillary pour qualifier la description et la complétude des données.
 
