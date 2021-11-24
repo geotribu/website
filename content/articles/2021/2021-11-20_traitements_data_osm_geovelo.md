@@ -84,7 +84,6 @@ Les contributions sont ensuite traitées manuellement par nos soins :
 >     - :arrow_right_hook:️Si l’usager nous répond en utilisant amenagements-cyclables.fr, sa réponse s'affiche sur la note OpenStreetMap
 >
 > :warning: Si la note comprend des informations personnelles ou semble trop fantaisiste, nous supprimons la contribution.
-{: list-style-type: none;}
 
 Nous modifions alors les données OpenStreetMap, et clôturons la contribution sur [amenagements-cyclables.fr](https://www.amenagements-cyclables.fr/), clôturant ainsi la note OpenStreetMap en même temps.
 
