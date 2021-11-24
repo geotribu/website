@@ -6,7 +6,7 @@ categories:
   - article
 date: 2021-11-20 08:00
 description: "Etat des lieux des traitements OSM de geovelo"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/logo_geovelo_osm.jpg"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/visuels_app_geovelo.jpg"
 license: default
 tags:
   - Geovelo
@@ -165,7 +165,7 @@ Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre c
 
 ## Auteur
 
---8<-- "content/team/sdesb.md"
+--8<-- "content/team/sdeb.md"
 
 <!-- Intègre le glossaire centralisé -->
 --8<-- "content/toc_nav_ignored/snippets/glossaire.md"
