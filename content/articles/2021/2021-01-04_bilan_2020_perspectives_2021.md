@@ -115,7 +115,7 @@ Que ce soit pour proposer un tutoriel sur un outil que vous maîtrisez ou sur un
 Il faut aussi ajouter que Geotribu peut facilement vous permettre de partager vos articles sans pour autant devoir vous lancer dans la création d'un blog personnel (temps d'administration, peur du manque de contenu,...), alors lâchez-vous.
 
 [Proposer un article par email :fontawesome-solid-paper-plane:](mailto:geotribu+article@gmail.com?subject=Proposition d'article){: .md-button }
-[Proposer un article :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=Guts%2C+igeofr%2C+aurelienchaumet&labels=articles%2C+contribution+externe&template=proposition-d-article.md&title=%5BArticle%5D){: .md-button }
+[Proposer un article :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Carticle%2Ctriage&template=ARTICLE.yml){: .md-button }
 {: align=middle }
 
 !!! tip "Le bon plan"
