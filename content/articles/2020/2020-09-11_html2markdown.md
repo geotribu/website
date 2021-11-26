@@ -170,8 +170,6 @@ graph TD
 content/team/jmou.md
 --8<--
 
-
-
 <!-- Hyperlinks reference -->
 [Markdown]: https://fr.wikipedia.org/wiki/Markdown
 [Internet Archive]: https://archive.org
