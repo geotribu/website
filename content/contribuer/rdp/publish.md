@@ -28,6 +28,3 @@ Il est alors temps de lancer la diffusion via le compte Twitter de Geotribu pour
 
 <!-- Hyperlinks reference -->
 [Git]: https://fr.wikipedia.org/wiki/Git
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

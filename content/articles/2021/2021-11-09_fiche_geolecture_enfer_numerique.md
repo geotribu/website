@@ -199,6 +199,3 @@ Encore une fois, j'espère sincèrement vous avoir donné l'envie de lire ce liv
 --8<-- "content/team/acha.md"
 
 {% include "licenses/default.md" %}
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

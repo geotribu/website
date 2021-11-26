@@ -129,6 +129,3 @@ Afin de faciliter la saisie, voici le tableau des icônes génériques avec la s
 ## Crédits
 
 Les icônes génériques ont été créées pour Geotribu par [Mathieu Rajerison](/team/mraj/).
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"
