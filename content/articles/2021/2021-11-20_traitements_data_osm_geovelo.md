@@ -125,6 +125,8 @@ La méthode d’intégration est adaptée à chaque jeu de données, mais respec
     - Suivi des dernières contributions sur OpenStreetMap.
 <!-- markdownlint-enable MD046 -->
 
+----
+
 ## Réutilisation des données
 
 Notre base de données OpenStreetMap “monde” est maintenue et mise à jour quotidiennement. A partir de cette base nous créons des extraits spécialisés en fonction des usages. Ils possèdent donc leurs propres spécificités, aussi bien dans la couverture géographique que dans le filtrage des données OpenStreetMap et des champs calculés.
