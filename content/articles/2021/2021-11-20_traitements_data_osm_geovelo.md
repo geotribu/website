@@ -112,7 +112,7 @@ La méthode d’intégration est adaptée à chaque jeu de données, mais respec
 
 1. Un premier traitement est effectué pour rechercher tous les objets décrits de façon similaire dans le jeu de données et dans OpenStreetMap. Nous comparons la géométrie et les attributs pour être sûrs de ne rien louper.
 2. Nous classifions ensuite les objets en catégories selon que les différences portent sur la géométrie ou sur les attributs.
-3. Les données déjà présentes sur OSM sont croisées avec les sources disponibles (Orthophotos, Mapillary, cadastre …) afin d'être certains de la modification à effectuer.
+3. Les données déjà présentes sur OSM sont croisées avec les sources disponibles (orthophotos, Mapillary, cadastre …) afin d'être certains de la modification à effectuer.
 
 > En cas de doute sur des données à intégrer (pas de sources permettant de confirmer ou d’infirmer la donnée), l’objet n’est pas intégré et nous demandons au producteur de nous confirmer ou non la réalité de cet objet.
 
