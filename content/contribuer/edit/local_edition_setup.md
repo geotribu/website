@@ -102,7 +102,7 @@ git config user.name "Mona Lisa"
 git config user.email "mona.lisa@devinci.com"
 ```
 
-## Mettre à jour son dépôt local
+### Mettre à jour son dépôt local
 
 Vérifier que votre dépôt local (sur votre ordinateur) soit à jour par rapport au dépôt central (sur GitHub) :
 
