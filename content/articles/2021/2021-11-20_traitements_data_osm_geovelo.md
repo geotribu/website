@@ -70,7 +70,7 @@ Les catégories *“Erreur de cartographie”, “Aménagement Cyclable manquant
 
 L’ensemble des commentaires effectués sur Geovelo ainsi que ceux effectués directement sur la même note OpenStreetMap sont synchronisés de sorte à pouvoir suivre indépendamment du côté de Geovelo ou d’OpenStreetMap ces signalements. Cela permet aussi une *totale transparence* avec la communauté OpenStreetMap.
 
-*L’outil de signalement interne à l’application incite l’utilisateur à nous joindre une photo et une description du problème.*
+L’outil de signalement interne à l’application incite l’utilisateur à nous joindre une photo et une description du problème.
 
 Les contributions sont ensuite traitées manuellement par nos soins :
 
