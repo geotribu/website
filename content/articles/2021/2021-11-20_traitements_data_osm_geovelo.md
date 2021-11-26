@@ -94,7 +94,7 @@ Nous modifions alors les données OpenStreetMap, et clôturons la contribution s
 
 *Une part de l'activité de Geovelo réside dans l'intégration de données des collectivités. Avec leurs accords, nous importons donc leurs données cyclables à partir de multiples sources de données, de la carte annotée au fichier GPKG.*
 
-Avant toute intégration de données, un audit des données OpenStreetMap est effectué. **L’exhaustivité attributaire et géographique** ainsi que **la qualité de la description** des données dans OpenStreetMap sont vérifiés, afin d’établir un état des lieux précis du territoire existant sur OSM.
+Avant toute intégration de données, un audit des données OpenStreetMap est effectué. **L’exhaustivité attributaire et géographique** ainsi que **la qualité de la description** des données dans OpenStreetMap sont vérifiées, afin d’établir un état des lieux précis du territoire existant sur OSM.
 
 Pour cet audit, plusieurs recherches permettent de qualifier les données OpenStreetMap :
 
