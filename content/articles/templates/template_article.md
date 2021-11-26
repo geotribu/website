@@ -39,6 +39,3 @@ Texte.
 --8<-- "content/team/jmou.md"
 
 {% include "licenses/default.md" %}
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

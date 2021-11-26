@@ -353,6 +353,3 @@ docker-compose -f "docker-compose-mkdocs.dev.yml" up --build
 ```
 
 Le site est alors accessible sur : <http://0.0.0.0:8000>
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

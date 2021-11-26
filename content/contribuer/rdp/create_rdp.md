@@ -162,6 +162,3 @@ git add content/rdp/2021/rdp_2021-09-17.md
 
 <!-- Hyperlinks reference -->
 [Git]: https://fr.wikipedia.org/wiki/Git
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

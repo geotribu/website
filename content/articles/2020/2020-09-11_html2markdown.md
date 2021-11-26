@@ -170,7 +170,7 @@ graph TD
 content/team/jmou.md
 --8<--
 
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"
+
 
 <!-- Hyperlinks reference -->
 [Markdown]: https://fr.wikipedia.org/wiki/Markdown
