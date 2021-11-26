@@ -150,8 +150,7 @@ Pour l'intégration et le traitement des notes :
 - **QGIS** (*une évidence...*) avec le plug-in QuickOSM (utilisation du remote controler vers JOSM, merci [3Liz](https://www.3liz.com/en/news/quickosm-2-0.html) :heart_eyes:)
 - **JOSM**, notamment avec une couche de style aux petits oignons signée [CartoCité](https://github.com/Cartocite/MapCSS-JOSM-Bicycle)
 
-Pour les traitements de réutilisation, on est sur du classique libre :
->Postgis, Osmosis, Osm2pgsql, GDAL
+Pour les traitements de réutilisation, on est sur du classique libre : Postgis, Osmosis, Osm2pgsql, GDAL.
 
 ----
 
