@@ -37,7 +37,7 @@ Dans cet article, on va voir pourquoi et comment on a choisi de passer sur une r
 
 ## Markdown, lingua franca du contenu éditorial en ligne
 
-![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png){: .img-rdp-news-thumb }
+![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-rdp-news-thumb }
 
 Inspiré par le *plain-text email* ([texte brut dans un courriel en bon français](https://fr.wikipedia.org/wiki/Texte_brut#Texte_brut_dans_un_courriel)) ou encore le [ReStructuredText](https://fr.wikipedia.org/wiki/) (RST), la syntaxe [Markdown] est conçue pour être facile à lire, à écrire et à convertir, tout en prenant soin de ne pas casser les balises du HTML.
 
@@ -169,8 +169,6 @@ graph TD
 --8<--
 content/team/jmou.md
 --8<--
-
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"
 
 <!-- Hyperlinks reference -->
 [Markdown]: https://fr.wikipedia.org/wiki/Markdown

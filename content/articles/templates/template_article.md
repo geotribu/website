@@ -8,6 +8,7 @@ date: "2021-08-09 10:20"
 description: "Description pour le SEO."
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
 license: default
+robots: index, follow
 tags:
     - tag 1
     - tag 2
@@ -38,6 +39,3 @@ Texte.
 --8<-- "content/team/jmou.md"
 
 {% include "licenses/default.md" %}
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

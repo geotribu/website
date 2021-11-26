@@ -32,6 +32,7 @@ L'en-tête est défini en haut de la page par un ensemble de clés/valeurs encad
 - `description` : SEO, recherche interne du site, meta-tag, RSS
 - `image` : RSS et partage des articles dans les réseaux sociaux (c'est ce qui fait qu'on a un jouli rendu quand on partage dans Twitter ou LinkedIn par exemple). Dimensions : entre 300x600 et 400x800.
 - `license` : détermine si la licence du contenu est celle par défaut (`license: default`) ou non (`license: none`). Si la clé n'est pas renseignée, c'est la licence par défaut qui s'applique. Voir le guide [Choisir sa licence](/contribuer/guides/licensing/).
+- `robots` : détermine si le contenu doit être indexé par les moteurs de recherche ou non. Par défaut: `index, follow`.
 - `tags` : permet un classement des contenus par mots-clés.
 
 ### Catégories

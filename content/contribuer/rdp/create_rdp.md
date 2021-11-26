@@ -116,7 +116,7 @@ Ensuite, il faut mettre à jour certains éléments :
 
 Les lignes concernées sont surlignées ci-dessous (attention, cela peut varier selon le modèle utilisé) :
 
-```markdown hl_lines="2 5 12"
+```markdown hl_lines="2 7 17"
 ---
 title: "[TEMPLATE] Revue de presse du 21 août 2021"
 authors:
@@ -158,11 +158,7 @@ git add content/rdp/2021/rdp_2021-09-17.md
 ```
 
 <!-- Footnotes -->
-[^fairuse]: analogie avec un cadre légal qui repose sur un usage raisonnable des oeuvres et ressources. Voir [la fiche Wikipedia](https://fr.wikipedia.org/wiki/Fair_use).
 [^pr]: étape où un contributeur propose d'intégrer ses modifications dans le socle principal du projet. Voir [la documentation de GitHub](https://docs.github.com/fr/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 <!-- Hyperlinks reference -->
 [Git]: https://fr.wikipedia.org/wiki/Git
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"
