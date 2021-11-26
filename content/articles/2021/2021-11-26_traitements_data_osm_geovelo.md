@@ -40,15 +40,14 @@ Nous participons donc activement à la communauté OSM, notamment grâce à [l'a
 
 ## Enrichissement des données OSM
 
-Pour s’assurer d’avoir les meilleures données cyclables possibles, Geovelo participe quotidiennement à l’amélioration des données. Nous sommes 4 (1 à temps plein et 3 “connaisseurs”) à commiter régulièrement des changements, qui sont basés sur :  
-
+Pour s’assurer d’avoir les meilleures données cyclables possibles, Geovelo participe quotidiennement à l’amélioration des données. Nous sommes 4 (1 à temps plein et 3 “connaisseurs”) à commiter régulièrement des changements, qui sont basés sur :
 
 - des **enquêtes sur le terrain**, avec import des images sur Mapillary,
 - des bases de données en open data, ou documents assimilés, fournis par les collectivités partenaires pour intégration,
 - des **retours utilisateurs**, via notre système intégré de contributions carto sur les apps,  
 - des indices remontés par des failles dans nos calculs d’itinéraires.
 
-[![Suivi OSM chez Geovelo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png "Suivi OSM chez Geovelo"){: loading=lazy align=center width=80%}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png){: data-mediabox="lightbox-gallery" data-title="Suivi OSM chez Geovelo" }
+[![Suivi OSM chez Geovelo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png "Suivi OSM chez Geovelo"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png){: data-mediabox="lightbox-gallery" data-title="Suivi OSM chez Geovelo" }
 
 Nous allons par la suite nous intéresser aux 2 catégories qui posent le plus de problème de qualité : les contributions et les imports "métier".
 
@@ -56,7 +55,7 @@ Nous allons par la suite nous intéresser aux 2 catégories qui posent le plus d
 
 Geovelo intègre un outil de contribution à son site web et ses applications, permettant aux utilisateurs de contribuer sur 8 thématiques différentes:
 
-[![Signalements possibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg "Signalements possibles sur l'appli Geovelo"){: loading=lazy align=right width=28%}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg){: data-mediabox="lightbox-gallery" data-title="Signalements possibles sur l'appli Geovelo" }
+[![Signalements possibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg "Signalements possibles sur l'appli Geovelo"){: loading=lazy .img-right width=30% }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg){: data-mediabox="lightbox-gallery" data-title="Signalements possibles sur l'appli Geovelo" }
 
 - A faire à voir
 - Aménagement Cyclable manquant
