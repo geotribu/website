@@ -168,6 +168,8 @@ Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre c
 
 [![station_simon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/station_travail_simon_geovelo.jpg "La station de travail du cartographe"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/station_travail_simon_geovelo.jpg){: data-mediabox="lightbox-gallery" data-title="La station de travail du cartographe" }
 
+----
+
 ## Auteur
 
 --8<-- "content/team/sdeb.md"
