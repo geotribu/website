@@ -4,7 +4,7 @@ authors:
   - Samuel Deschamps-Berger
 categories:
   - article
-date: 2021-11-20 08:00
+date: 2021-11-26 08:00
 description: "Etat des lieux des traitements OSM de geovelo"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/visuels_app_geovelo.jpg"
 license: default
@@ -15,7 +15,7 @@ tags:
 
 # Le traitement des données OSM chez Geovelo
 
-:calendar: Date de publication initiale : 20 novembre 2021
+:calendar: Date de publication initiale : 26 novembre 2021
 
 ## Présentation
 
