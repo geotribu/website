@@ -118,6 +118,3 @@ Un modèle de news est disponible ici :
 
 - en brut : <https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp_news.md>
 - rendu sur Github (non contractuel) : <https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp_news.md>
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

@@ -185,6 +185,3 @@ En plus des ressources, à suivre quelques exemples de base.
 <!-- Hyperlinks references -->
 [Markdown]: https://daringfireball.net/projects/markdown/
 [syntaxe]: https://daringfireball.net/projects/markdown/syntax
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

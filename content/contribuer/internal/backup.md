@@ -65,6 +65,3 @@ Dans un premier temps, il a été décidé de réaliser cette opération à la m
 4. Valider la modification en cliquant sur `Update release`
 
 **:bear: Bien joué, les ours polaires vous remercieront un jour !**
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"
