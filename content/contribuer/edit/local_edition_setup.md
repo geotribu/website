@@ -131,6 +131,9 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
 
     # supprimer les branches qui ont été fusionnées - sauf master
     git branch --merged | grep -i -v -E "master|gh-pages"| xargs git branch -d
+
+    # supprimer les branches qui n'existent plus sur GitHub
+    git fetch --prune && git branch -v | grep -i -E "\[disparue|gone\]" | grep -v -E "\*|master|main|gh-pages" | awk '{print $1}' | xargs git branch -D
     ```
 
 === "Windows (Powershell)"
