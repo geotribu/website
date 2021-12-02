@@ -41,7 +41,7 @@ Sinon, cela tient en quelques étapes :
 
 1. Créer un fichier Markdown (extension `.md` ou `markdown`)
 2. Copier/coller le modèle d'article dans votre fichier :
-    - soit [depuis Github](https://github.com/geotribu/website/blob/master/content/articles/templates/template_article.md)
+    - soit [depuis Github](https://github.com/geotribu/website/blob/master/content/articles/templates/template_article.md?plain=1)
     - soit [depuis le PAD](https://geotripad.herokuapp.com/g70BvjD0TAuGHHb6jTzgPQ?edit)
 3. Remplir les parties !
 4. Faire relire
@@ -158,5 +158,3 @@ En ce qui concerne la diffusion, cela reste à la discrétion de chacun/e, sacha
 <!-- Hyperlinks reference -->
 [dépôt GitHub]: https://github.com/geotribu/website
 [Git]: https://fr.wikipedia.org/wiki/Git
-
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

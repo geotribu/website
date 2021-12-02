@@ -5,3 +5,4 @@
 **/template_*.md
 node_modules/
 content/theme/
+content/toc_nav_ignored/snippets/

@@ -123,8 +123,3 @@ Un participant de la formation a tenu à montrer que MapInfo 1998 tournait égal
 --8<-- "content/team/jmou.md"
 
 {% include "licenses/beerware.md" %}
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"
-
-<!-- Hyperlinks reference -->

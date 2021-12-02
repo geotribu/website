@@ -40,6 +40,3 @@ L'adresse de l'expéditeur est : `facteur [chez] geotribu.fr`.
 ## Auteur
 
 --8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

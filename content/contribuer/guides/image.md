@@ -227,6 +227,3 @@ Globalement, voici comment les images sont organisées :
 [CDN de Geotribu]: https://cdn.geotribu.fr/
 [lightbox]: https://en.wikipedia.org/wiki/Lightbox_(JavaScript)
 [markdown]: https://fr.wikipedia.org/wiki/Markdown
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"
