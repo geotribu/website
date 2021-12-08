@@ -105,7 +105,7 @@ Comme je suis sympa, je vous reporte ici les flux correspondant aux documentatio
 Pour développer sur QGIS :
 
 ```http
-https://zealusercontributions.now.sh/api/docsets/QGIS.xml
+https://zealusercontributions.vercel.app/api/docsets/QGIS.xml
 ```
 
 ![Zeal - Flux QGIS](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_contrib_qgis.png "Zeal - Flux QGIS"){: loading=lazy .img-center }
@@ -113,7 +113,7 @@ https://zealusercontributions.now.sh/api/docsets/QGIS.xml
 Pour développer sur PyQGIS :
 
 ```http
-https://zealusercontributions.now.sh/api/docsets/PyQGIS.xml
+https://zealusercontributions.vercel.app/api/docsets/PyQGIS.xml
 ```
 
 ![Zeal - Flux PyQGIS](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_contrib_pyqgis.png "Zeal - Flux PyQGIS"){: loading=lazy .img-center }
