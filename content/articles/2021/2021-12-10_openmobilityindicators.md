@@ -1,5 +1,5 @@
 ---
-title: "Projet OpenMobilityIndicators, appli 'mon quartier à pied' : c'est en ligne"
+title: "OpenMobilityIndicators, l'appli 'Mon quartier à pied' est en ligne"
 authors:
     - Patrick GENDRE
 categories:
