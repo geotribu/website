@@ -70,10 +70,4 @@ Si vous n'avez pas de compte Twitter ou Google (requis pour utiliser le tchat Yo
 
 ## Auteur
 
-### GeoTribu
-
-![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png "logo Geotribu"){: .img-rdp-news-thumb }
-
-Toute l'actualité de la géomatique Open Source ! Mais aussi des tutoriels, des billets de blog, des tests et surtout une bonne humeur géographique !
-
-<!-- Hyperlinks reference -->
+--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"

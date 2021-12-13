@@ -154,7 +154,7 @@ L'accès en lecture à notre entrepôt d'images (un pseudo-CDN minimaliste) accu
 - identifiant : `invité`
 - mot de passe : `geotribu_bemyguest2020`
 
-En plus de permettre un petit voyage dans le temps, autant que toutes ces ressources servent en plus de notre site :smiley:. Merci de ne pas en abuser en respectant le *fair-use*[^fairuse]. Pensez également à créditer les auteur/es.
+En plus de permettre un petit voyage dans le temps, autant que toutes ces ressources servent en plus de notre site :smiley:. Merci de ne pas en abuser en respectant le *fair-use*. Pensez également à créditer les auteur/es.
 
 ----
 
@@ -227,6 +227,3 @@ Globalement, voici comment les images sont organisées :
 [CDN de Geotribu]: https://cdn.geotribu.fr/
 [lightbox]: https://en.wikipedia.org/wiki/Lightbox_(JavaScript)
 [markdown]: https://fr.wikipedia.org/wiki/Markdown
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

@@ -32,6 +32,7 @@ plugins:
       fallback_to_build_date: true
       locale: fr
   - minify:
+      minify_css: true
       minify_html: true
       minify_js: false
       htmlmin_opts:
@@ -146,7 +147,6 @@ extra:
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
       des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
       l'audience du site.
-  manifest: "manifest.webmanifest" # PWA declaration
   social:
     - icon: "fontawesome/solid/rss"
       link: "https://static.geotribu.fr/feed_rss_created.xml"
@@ -160,9 +160,15 @@ extra:
     - icon: "fontawesome/brands/linkedin"
       link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
       name: "Les contenus de Geotribu sur LinkedIn"
+    - icon: "fontawesome/brands/youtube"
+      link: "https://www.youtube.com/channel/UCfpO6BcaqxxykBOWJzP_9jg/"
+      name: "Chaîne Youtube de Geotribu"
     - icon: "fontawesome/brands/facebook"
       link: "https://fr-fr.facebook.com/geotribu/"
       name: "Page Facebook de Geotribu"
+    - icon: "fontawesome/brands/mailchimp"
+      link: http://eepurl.com/hL0zVr
+      name: "Abonnez-vous à la newsletter"
     - icon: fontawesome/solid/paper-plane
       link: mailto:<geotribu@gmail.com>
       name: "Nous contacter"
@@ -201,8 +207,12 @@ markdown_extensions:
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.smartsymbols
+  - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
+      auto_append: [
+        content/toc_nav_ignored/snippets/glossaire.md,
+      ]
       base_path: "."
       check_paths: true
   - pymdownx.superfences:
