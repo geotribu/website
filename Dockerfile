@@ -7,7 +7,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /tmp
 
 # Install pip requirements
-ADD requirements.txt .
+ADD requirements*.txt ./
 
 # Perform build and cleanup artifacts
 RUN \
@@ -16,7 +16,7 @@ RUN \
     git-fast-import \
     openssh \
   && apk add --no-cache --virtual .build gcc musl-dev \
-  && pip install --no-cache-dir -r requirements.txt \
+  && pip install --no-cache-dir -r requirements-free.txt \
   && apk del .build gcc musl-dev \
   && rm -rf /tmp/*
 

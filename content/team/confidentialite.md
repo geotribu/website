@@ -35,6 +35,9 @@ Pas grand chose d'utile et rien de mercantile ! On s'en sert pour :
 
 Question ? Souci ? Angoisse ? Si vous souhaitez en savoir plus sur les données collectées, merci de [nous contacter par email](mailto:geotribu+rgpd@gmail.com).
 
+[Changer à tout moment vos paramètres pour les cookies](#__consent){ .md-button }
+{: align=middle }
+
 ----
 
 ## Google Analytics
@@ -68,6 +71,18 @@ Les paramètres utilisés sont :
 - `utm_source` : "rss-feed"
 - `utm_medium` : "RSS"
 - `utm_campaign` : "feed-syndication"
+
+----
+
+## Newsletter
+
+![icône newsletter](https://cdn.geotribu.fr/img/logos-icones/divers/newsletter.webp "icône newsletter"){: .img-rdp-news-thumb }
+
+Pour gérer les abonnements (inscription, désinscription, etc.) ainsi que les envois de la newsletter, nous utilisons la [plateforme Mailchimp](https://mailchimp.com/fr/). Aucun code spécifique issu de cette plateforme n'est intégré au site.
+Les informations requises pour l'inscription sont :
+
+- une adresse email valide (évidemment)
+- un pseudonyme
 
 ----
 

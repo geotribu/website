@@ -161,6 +161,9 @@ extra:
     - icon: "fontawesome/brands/facebook"
       link: "https://fr-fr.facebook.com/geotribu/"
       name: "Page Facebook de Geotribu"
+    - icon: "fontawesome/brands/mailchimp"
+      link: http://eepurl.com/hL0zVr/
+      name: "Abonnez-vous à la newsletter"
     - icon: fontawesome/solid/paper-plane
       link: mailto:<geotribu@gmail.com>
       name: "Nous contacter"
@@ -200,6 +203,7 @@ markdown_extensions:
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.smartsymbols
+  - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
       base_path: "."

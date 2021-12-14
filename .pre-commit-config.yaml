@@ -1,7 +1,10 @@
-# See https://pre-commit.com for more information
-# See https://pre-commit.com/hooks.html for more hooks
 exclude: "node_modules|migrations|.venv|tests/dev/|tests/fixtures/"
+
 repos:
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
     hooks:
@@ -13,21 +16,22 @@ repos:
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
 
-  # - repo: https://github.com/igorshubovych/markdownlint-cli
-  #   rev: v0.28.1
-  #   hooks:
-  #     - id: markdownlint
-  #       args:
-  #         [
-  #           "--config",
-  #           ".markdownlint.json",
-  #           "--fix",
-  #           "-i",
-  #           "**/template_*.md",
-  #           "--output",
-  #           "linter_markdown_report.txt",
-  #         ]
-  #       language_version: "14.17.6"
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.30.0
+    hooks:
+      - id: markdownlint
+        args:
+          [
+            "--config",
+            ".markdownlint.json",
+            "--ignore-path",
+            ".markdownlintignore",
+            "--fix"
+          ]
+        language: node
+        # language_version: "14.17.6"
+        pass_filenames: true
+        types: [file, markdown, non-executable]
 
 # Specific part for https://pre-commit.ci
 ci:
@@ -35,7 +39,8 @@ ci:
   autofix_prs: true
   autoupdate_commit_msg: "[pre-commit.ci] Mise à jour des git hooks."
   autoupdate_schedule: monthly
-  # skip: [
-  #   "markdownlint"
-  # ]
+  skip: [
+    "check-hooks-apply",
+    "markdownlint"
+  ]
   submodules: false
