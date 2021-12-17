@@ -104,8 +104,6 @@ body:
       label: Contenu de l'article
       description: |
         La syntaxe Markdown est acceptée, mais le rendu final diffèrera de celui de GitHub.
-
-      render: markdown
     validations:
       required: true
 
@@ -119,4 +117,3 @@ body:
     attributes:
       label: Message libre
       description: "Un commentaire ? Une précision à apporter ? Un message pour l'équipe ?"
-      render: markdown
