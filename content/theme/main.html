@@ -117,10 +117,11 @@
 
 {% endblock %}
 
-{% block disqus %}
+{% block content %}
+  {{ super() }}
 
-  {% if not page.is_homepage %}
   {# Authoring based on git log #}
+  {% if git_page_authors %}
     <div class="md-source-date">
       <small>
         Contributions à cette page : {{ git_page_authors }}
@@ -173,7 +174,13 @@
     </div>
   {% endif %}
 
-  {% if not page.is_homepage %}
+  <!-- Get setting from mkdocs.yml, but allow page-level overrides -->
+  {% set comments = config.extra.comments_url %}
+  {% if page and page.meta and page.meta.disqus is string %}
+    {% set comments = page.meta.disqus %}
+  {% endif %}
+
+  {% if not page.is_homepage and comments %}
   {# Comment system (Isso) #}
     <div id="__comments">
       <script
