@@ -210,9 +210,7 @@ markdown_extensions:
   - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
-      auto_append: [
-        content/toc_nav_ignored/snippets/glossaire.md,
-      ]
+      auto_append: [content/toc_nav_ignored/snippets/glossaire.md]
       base_path: "."
       check_paths: true
   - pymdownx.superfences:
@@ -220,7 +218,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
