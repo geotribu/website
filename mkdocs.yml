@@ -26,8 +26,12 @@ plugins:
         - "*/templates/*"
         - "*.yml"
   - git-authors:
+      enabled: !ENV [ENABLED_GIT_AUTHORS, False]
+      exclude:
+        - index.md
       show_contribution: true
   - git-revision-date-localized:
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, False]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
