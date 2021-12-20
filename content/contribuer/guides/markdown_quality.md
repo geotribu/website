@@ -70,6 +70,7 @@ En markdown, selon les implémentations, il est important de laisser des lignes 
 
 Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier élément d'une liste à puces, le rendu ne fonctionnera pas :
 
+<!-- markdownlint-disable MD046 -->
 === "Markdown"
 
     ```markdown
@@ -81,6 +82,7 @@ Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier
 === "Rendu"
 
     ![capture liste à puces](https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_list_broken.png "Rendu de la liste à puces cassé"){: .img-center loading=lazy }
+<!-- markdownlint-enable MD046 -->
 
 > Référence : [MD032 - Lists should be surrounded by blank lines](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032---lists-should-be-surrounded-by-blank-lines)
 
