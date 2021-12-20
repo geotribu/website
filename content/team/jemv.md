@@ -1,4 +1,4 @@
-# Jean-Marc Viglino
+# Jean-Marc Viglino {: data-search-exclude }
 
 ![Portrait Jean-Marc Viglino](https://cdn.geotribu.fr/img/internal/contributeurs/jemv.jpg "Portrait Jean-Marc Viglino"){: .img-rdp-news-thumb }
 

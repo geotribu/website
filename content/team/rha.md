@@ -1,4 +1,4 @@
-# Régis Haubourg
+# Régis Haubourg {: data-search-exclude }
 
 ![Portrait Régis Haubourg](https://cdn.geotribu.fr/img/internal/contributeurs/rha.jpg "Portrait Régis Haubourg"){: .img-rdp-news-thumb }
 

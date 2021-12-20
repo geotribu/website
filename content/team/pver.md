@@ -1,4 +1,4 @@
-# Pierre Vernier
+# Pierre Vernier {: data-search-exclude }
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/pver.jfif "portrait"){: .img-rdp-news-thumb }
 

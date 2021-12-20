@@ -1,4 +1,4 @@
-# Mathieu Bossaert
+# Mathieu Bossaert {: data-search-exclude }
 
 ![Portrait Mathieu Bossaert](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/mb.jpeg "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
 
