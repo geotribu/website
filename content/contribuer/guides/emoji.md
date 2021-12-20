@@ -17,6 +17,9 @@ tags:
     - intégration
     - Markdown
     - tutoriel
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Utiliser des émojis

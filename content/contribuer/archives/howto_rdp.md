@@ -1,3 +1,9 @@
+---
+# theme customizations
+search:
+  exclude: true
+---
+
 # Guide de contribution pour la revue de presse
 
 !!! warning

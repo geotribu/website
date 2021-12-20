@@ -8,6 +8,9 @@ tags:
     - contribuer
     - Markdown
     - GitHub
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Prérequis

@@ -1,5 +1,6 @@
 ---
 title: "Taxonomie"
+description: "Classement des contenus de Geotribu par mot-clé."
 license: none
 ---
 

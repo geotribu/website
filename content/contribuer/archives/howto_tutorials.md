@@ -1,3 +1,9 @@
+---
+# theme customizations
+search:
+  exclude: true
+---
+
 # Guide de contribution pour les tutoriaux
 
 !!! warning

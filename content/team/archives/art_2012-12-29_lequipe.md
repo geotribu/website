@@ -9,6 +9,9 @@ tags:
     - contributeur
     - contributrice
     - crédits
+# theme customizations
+search:
+  exclude: true
 ---
 
 # L'équipe de GéoTribu

@@ -16,6 +16,9 @@ tags:
     - tutoriel
     - Markdown
     - cdn
+# theme customizations
+search:
+  exclude: true
 ---
 <!-- markdownlint-disable MD046 -->
 

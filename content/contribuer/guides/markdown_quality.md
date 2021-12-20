@@ -15,6 +15,9 @@ tags:
     - HTML
     - lint
     - Python
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Rédiger en Markdown : règles et enjeux de qualité

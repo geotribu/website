@@ -16,6 +16,9 @@ tags:
     - vidéo
     - Vimeo
     - Youtube
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Intégrer une vidéo

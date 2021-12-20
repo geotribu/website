@@ -8,6 +8,9 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 tags:
     - contribuer
     - guide
+# theme customizations
+search:
+  exclude: true
 ---
 
 <!-- markdownlint-disable MD046 -->
