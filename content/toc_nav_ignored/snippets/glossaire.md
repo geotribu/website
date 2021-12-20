@@ -10,7 +10,7 @@
 [Python]: https://www.python.org/
 [StackEdit]: https://stackedit.io/
 [Upmath]: https://upmath.me/
-[Visual Studio Code]: https://github.com/DavidAnson/vscode-markdownlint#intro
+[Visual Studio Code]: https://code.visualstudio.com/
 
 <!-- Abbreviations -->
 *[CSS]: Cascading Style Sheets - Feuilles de style en cascade.
