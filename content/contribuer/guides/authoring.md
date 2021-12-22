@@ -16,6 +16,9 @@ tags:
     - authoring
     - auteur
     - paternité
+# theme customizations
+search:
+  exclude: true
 ---
 
 <!-- markdownlint-disable MD046 -->

@@ -26,12 +26,17 @@ plugins:
         - "*/templates/*"
         - "*.yml"
   - git-authors:
+      enabled: !ENV [ENABLED_GIT_AUTHORS, False]
+      exclude:
+        - index.md
       show_contribution: true
   - git-revision-date-localized:
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, False]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
   - minify:
+      minify_css: true
       minify_html: true
       minify_js: false
       htmlmin_opts:
@@ -162,7 +167,7 @@ extra:
       link: "https://fr-fr.facebook.com/geotribu/"
       name: "Page Facebook de Geotribu"
     - icon: "fontawesome/brands/mailchimp"
-      link: http://eepurl.com/hL0zVr/
+      link: http://eepurl.com/hL0zVr
       name: "Abonnez-vous à la newsletter"
     - icon: fontawesome/solid/paper-plane
       link: mailto:<geotribu@gmail.com>
@@ -206,6 +211,7 @@ markdown_extensions:
   - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
+      auto_append: [content/toc_nav_ignored/snippets/glossaire.md]
       base_path: "."
       check_paths: true
   - pymdownx.superfences:
@@ -213,7 +219,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde

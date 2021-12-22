@@ -52,6 +52,8 @@ jobs:
       run: |
         mkdocs build --clean --config-file mkdocs.yml --verbose --strict
       env:
+        ENABLED_GIT_AUTHORS: true
+        ENABLED_GIT_REVISION_DATE: true
         MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         MKDOCS_SEARCH_PREBUILD_INDEX: node
 

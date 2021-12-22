@@ -1,4 +1,4 @@
-# Adrien Van Hamme
+# Adrien Van Hamme  {: data-search-exclude }
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/avha.jpg "portrait"){: .img-rdp-news-thumb }
 

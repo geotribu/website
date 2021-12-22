@@ -1,4 +1,4 @@
-# Julien Moura
+# Julien Moura {: data-search-exclude }
 
 ![Portrait Julien Moura](https://cdn.geotribu.fr/img/internal/contributeurs/jmou.jfif "Portrait Julien Moura"){: .img-rdp-news-thumb }
 

@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD026 MD041 -->
-## Licence Beerware :fontawesome-solid-beer: :fontawesome-solid-mug-hot: {: id="license" }
+## Licence Beerware :fontawesome-solid-beer: :fontawesome-solid-mug-hot: {: id="license" data-search-exclude }
 
 Ce contenu est sous licence [Beerware (Révision 42)](https://fr.wikipedia.org/wiki/Beerware).  
 Les médias d'illustration sont potentiellement soumis à d'autres conditions d'utilisation.

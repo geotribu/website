@@ -1,4 +1,4 @@
-# Samuel Deschamps-Berger
+# Samuel Deschamps-Berger {: data-search-exclude }
 
 ![Portrait Samuel Deschamps-Berger](https://www.doyoubuzz.com/var/users/_/2013/3/11/11/459851/avatar/394574/avatar_cp_big.jpg?t=1636021588 "Portrait Samuel Deschamps-Berger"){: .img-rdp-news-thumb }
 

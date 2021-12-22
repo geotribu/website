@@ -12,6 +12,9 @@ tags:
     - crédits
     - remerciement
     - soutien
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Remerciements

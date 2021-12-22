@@ -1,4 +1,4 @@
-# Fabien Goblet
+# Fabien Goblet {: data-search-exclude }
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/fgob.jfif "portrait"){: .img-rdp-news-thumb }
 

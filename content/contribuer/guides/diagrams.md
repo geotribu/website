@@ -13,6 +13,9 @@ tags:
     - diagramme
     - MermaidJS
     - schéma
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Insérer des diagrammes
