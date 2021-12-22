@@ -1,4 +1,4 @@
-# Nicolas Roelandt
+# Nicolas Roelandt {: data-search-exclude }
 
 ![Bouletmaton Nicolas Roelandt](https://cdn.geotribu.fr/img/internal/contributeurs/nroe.jpg "Bouletmaton Nicolas Roelandt"){: .img-rdp-news-thumb }
 

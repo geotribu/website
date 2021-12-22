@@ -1,4 +1,4 @@
-# Rodolphe Quiédeville
+# Rodolphe Quiédeville {: data-search-exclude }
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/rqui.jfif "portrait"){: .img-rdp-news-thumb }
 

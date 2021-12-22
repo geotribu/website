@@ -1,4 +1,4 @@
-# Loïc Bartoletti
+# Loïc Bartoletti {: data-search-exclude }
 
 ![Portrait Loïc Bartoletti](https://cdn.geotribu.fr/img/internal/contributeurs/lbar.png "Portrait Loïc Bartoletti"){: .img-rdp-news-thumb }
 

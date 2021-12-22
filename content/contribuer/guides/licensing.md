@@ -13,6 +13,9 @@ tags:
     - licence
     - Markdown
     - tutoriel
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Choisir une licence pour son article
