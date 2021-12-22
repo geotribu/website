@@ -13,6 +13,9 @@ tags:
     - coulisses
     - GitHub CLI
     - sauvegarde
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Sauvegarde du site Geotribu

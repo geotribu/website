@@ -1,4 +1,4 @@
-# Aurélien Chaumet
+# Aurélien Chaumet {: data-search-exclude }
 
 ![Portrait Aurélien Chaumet](https://cdn.geotribu.fr/img/internal/contributeurs/achaumet.webp "Portrait Aurélien Chaumet"){: .img-rdp-news-thumb }
 

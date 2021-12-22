@@ -14,8 +14,11 @@ tags:
   - SEO
   - statistiques
   - tracking
+# theme customizations
 hide:
   - toc
+search:
+  exclude: true
 ---
 
 # Tableaux de bord de la fréquentation et du référencement

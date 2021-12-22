@@ -1,4 +1,4 @@
-# Etienne Delay
+# Etienne Delay  {: data-search-exclude }
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/edel.jpg "portrait"){: .img-rdp-news-thumb }
 

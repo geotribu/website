@@ -12,6 +12,9 @@ tags:
   - tutoriel
 hide:
   - navigation
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Codes et aperçus des emojis

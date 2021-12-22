@@ -1,4 +1,4 @@
-# Mathieu Rajerison
+# Mathieu Rajerison {: data-search-exclude }
 
 ![Mathieu Rajerison](https://cdn.geotribu.fr/img/internal/contributeurs/mraj.jpg "portrait de Mathieu Rajerison"){: .img-rdp-news-thumb }
 

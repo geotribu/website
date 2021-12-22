@@ -1,4 +1,4 @@
-# Jérémie Ory
+# Jérémie Ory {: data-search-exclude }
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/jory.jpg "portrait"){: .img-rdp-news-thumb }
 
