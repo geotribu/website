@@ -1,7 +1,7 @@
 ---
 title: "OpenStreetMap dans le terminal, en braille et en ASCII "
 authors:
-    - Jérémy GARNIAUX
+    - Jérémy Garniaux
 categories:
     - article
 date: "2021-12-24 13:00"
