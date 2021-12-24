@@ -32,17 +32,17 @@ tags:
 
 ### Linux et MacOS
 
-MapSCII est accessible via le protocole [telnet](https://fr.wikipedia.org/wiki/Telnet). Si vous êtes sous Linux, telnet devrait être installé par défaut. Sous MacOS, vous pouvez utiliser le gestionnaire de paquets [Homebrew](https://brew.sh/index_fr) pour installer telnet en rentrant la commande suivante dans une fenêtre de Terminal : 
+MapSCII est accessible via le protocole [telnet](https://fr.wikipedia.org/wiki/Telnet). Si vous êtes sous Linux, telnet devrait être installé par défaut. Sous MacOS, vous pouvez utiliser le gestionnaire de paquets [Homebrew](https://brew.sh/index_fr) pour installer telnet en rentrant la commande suivante dans une fenêtre de Terminal :
 
 `brew install telnet`
 
-Ensuite, la commande pour lancer MapSCII dans le terminal sous Linux ou MacOS est : 
+Ensuite, la commande pour lancer MapSCII dans le terminal sous Linux ou MacOS est :
 
 `telnet mapscii.me`
 
 ### Windows
 
-Sous Windows, telnet est accessible avec le logiciel client [PuTTY](https://www.putty.org/). Au lancement de PuTTY, Il faut indiquer `mapscii.me` comme nom d'hôte, `telnet` comme type de connexion, avant d'ouvrir la connexion. 
+Sous Windows, telnet est accessible avec le logiciel client [PuTTY](https://www.putty.org/). Au lancement de PuTTY, Il faut indiquer `mapscii.me` comme nom d'hôte, `telnet` comme type de connexion, avant d'ouvrir la connexion.
 
 
 
@@ -56,11 +56,11 @@ MapSCII se lance ensuite avec`mapscii`.
 
 ## Personnalisation
 
-Vous pouvez également personnaliser différents aspects de MapSCII : changer le style (l'application est fournie avec deux styles Mapbox au choix, Bright ou Dark), ou bien explorer d'autres services d'autres lots de tuiles vecteurs, en local ou en se connectant à un service distant. Ces éléments sont assez faciles à identifier dans le code source : par exemple, le fichier `/src/config.js` permet d'indiquer, ligne 10, le fichier de style au format JSON à utiliser. 
+Vous pouvez également personnaliser différents aspects de MapSCII : changer le style (l'application est fournie avec deux styles Mapbox au choix, Bright ou Dark), ou bien explorer d'autres services d'autres lots de tuiles vecteurs, en local ou en se connectant à un service distant. Ces éléments sont assez faciles à identifier dans le code source : par exemple, le fichier `/src/config.js` permet d'indiquer, ligne 10, le fichier de style au format JSON à utiliser.
 
 ![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_5.png)
 
-Ces aspects de personnalisation dépassent un peu, pour le moment, les compétences de l'auteur de ces lignes, qui fera de son mieux pour développer ce dernier point quand il aura percé les secrets des packages Node.js... N'hésitez pas à compléter cet article si vous le souhaitez, et bonne exploration de MapSCII en attendant ! 
+Ces aspects de personnalisation dépassent un peu, pour le moment, les compétences de l'auteur de ces lignes, qui fera de son mieux pour développer ce dernier point quand il aura percé les secrets des packages Node.js... N'hésitez pas à compléter cet article si vous le souhaitez, et bonne exploration de MapSCII en attendant !
 
 ----
 
