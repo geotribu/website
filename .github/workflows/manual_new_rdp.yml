@@ -1,0 +1,74 @@
+name: "🗞 New GeoRDP"
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        type: string
+        description: Date de la prochaine RDP au format YYYY-MM-DD
+        required: true
+      notify-slack:
+        type: boolean
+        default: true
+        description: Notifier l'équipe sur Slack
+
+env:
+  LANG: "fr_FR.UTF-8"
+  LC_ALL: "fr_FR.UTF-8"
+  LC_TIME: "fr_FR.UTF-8"
+
+jobs:
+  create_rdp:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install French locale
+        id: locale-fr
+        shell: bash
+        run: |
+          sudo locale-gen fr_FR.UTF-8
+          sudo update-locale LANG=fr_FR.UTF-8
+          echo "::set-output name=date-fr-long::$(date -d ${{ github.event.inputs.date }} '+%-d %B %Y')"
+
+      - name: Get source code
+        uses: actions/checkout@v2
+
+      - name: Create a new GeoRDP
+        shell: bash
+        run: bash ./scripts/new_rdp.sh ${{ github.event.inputs.date }}
+
+      - name: New branch
+        run: |
+          git config user.name ${{ github.actor }}
+          git config user.email '${{ github.actor }}@users.noreply.github.com'
+          git checkout -b rdp/${{ github.event.inputs.date }}
+          git status
+
+      - name: Commit new GeoRDP
+        run: |
+          git add content/rdp/
+          git commit -am "Crée la GeoRDP ${{ github.event.inputs.date }}"
+
+      - name: Push to remote
+        run: git push origin rdp/${{ github.event.inputs.date }}
+
+      - name: Create Pull Request
+        id: cpr
+        uses: repo-sync/pull-request@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_branch: rdp/${{ github.event.inputs.date }}
+          destination_branch: "main"
+          pr_allow_empty: false
+          pr_title: "🗞 GeoRDP du ${{ steps.locale-fr.outputs.date-fr-long }}"
+          pr_template: .github/PULL_REQUEST_TEMPLATE.md
+
+      - name: Notification Slack
+        id: slack
+        uses: slackapi/slack-github-action@v1.16
+        if: "${{ github.event.inputs.notify-slack == 'true' }}"
+        with:
+          payload: '{"blocks":[{"type":"section","text":{"type":"mrkdwn","text":":newspaper: La GeoRDP du ${{ steps.locale-fr.outputs.date-fr-long }} a été créée et attend vos contributions :writing_hand: !"}},{"type":"section","fields":[{"type":"mrkdwn","text":"Créée par *${{ github.actor }}* via GitHub Action."}]},{"type":"actions","elements":[{"type":"button","text":{"type":"plain_text","emoji":true,"text":":squid: Voir la PR (GitHub)"},"url":"${{ steps.cpr.outputs.pr_url }}"},{"type":"button","text":{"type":"plain_text","emoji":true,"text":":eye: Voir la preview (Netlify)"},"style":"primary","url":"https://preview-pullrequest-${{steps.cpr.outputs.pr_number}}--geotribu-preprod.netlify.app/"}]}]}'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
