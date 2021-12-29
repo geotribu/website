@@ -2,6 +2,7 @@
 title: "Créer une revue de presse"
 authors:
     - Geotribu
+    - Julien MOURA
 categories:
     - contribution
 date: "2021-09-30 10:20"
@@ -10,6 +11,9 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 license: default
 tags:
     - contribuer
+    - GitHub
+    - GitHub Actions
+    - GitHub Workflow
     - guide
     - GeoRDP
     - workflow
@@ -19,7 +23,15 @@ tags:
 
 ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
 
-La création d'une revue de presse passe par la création d'une branche dédiée dans le dépôt du site et du fichier Markdown qui contiendra les news dans une structure type. Il est possible de créer en utilisant Git en ligne de commande ou via l'interface web de GitHub.
+Concrètement, une revue de presse est un fichier markdown, nommé d'une certaine façon, stocké dans le dossier `content/rdp/` et organisé en sections dans lesquelles les contributeur/ices viennent ensuite insérer leurs "news". L processus de contribution est bâti autour de la logique de Git.
+
+Avant d'ouvrir la revue de presse aux contributions, il est donc nécessaire de créer :
+
+1. une branche dédiée dans le dépôt du site
+2. le fichier Markdown avec la structure type
+3. la Pull Request permettant de visualiser les différentes contributions puis de publier (fusionner) la revue de presse une fois finalisée
+
+Il est possible de créer en utilisant Git en ligne de commande ou via l'interface web de GitHub.
 
 !!! info "Zone réservée"
     La création d'une nouvelle revue de presse nécessite de disposer des droits d'écriture sur le dépôt GitHub : [{{ config.repo_name }}]({{ config.repo_url }}).
@@ -28,9 +40,11 @@ La création d'une revue de presse passe par la création d'une branche dédiée
 
 ![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
 
-La méthode la plus simple de créer une nouvelle revue de presse est d'utiliser le workflow *:newspaper2: New GeoRDP* disponible sur GitHub :
+L'outillage et la logique de publication de Geotribu sont largement basés sur Git et la plateforme GitHub. Nous utilisons notamment les principes de l'intégration et du déploiement continus ([CI/CD pour les intimes](https://fr.wikipedia.org/wiki/CI/CD)).
 
-1. Se rendre sur l'onglet `Actions` et sélectionner le workflow *:newspaper2: New GeoRDP* ou [cliquer ici]({{ config.repo_url }}actions/workflows/manual_new_rdp.yml)
+La méthode la plus simple pour créer une nouvelle revue de presse est donc d'utiliser le *workflow* ":newspaper2: New GeoRDP" disponible sur GitHub :
+
+1. Se rendre sur l'onglet `Actions` et sélectionner le *workflow* ":newspaper2: New GeoRDP" ou [cliquer ici]({{ config.repo_url }}actions/workflows/manual_new_rdp.yml)
 2. Cliquer sur `Run workflow`
 3. Entrer les infos demandées :
     - branche : `master`
@@ -38,12 +52,21 @@ La méthode la plus simple de créer une nouvelle revue de presse est d'utiliser
     - choisir d'envoyer automatiquement une notification sur Slack
 4. Cliquer sur le bouton vert `Run workflow`.
 
+Après une trentaine de secondes, on obtient :
+
+- une branche dédiée pour la revue de presse
+- un fichier Markdown avec la structure type et la date de publication
+- une Pull Request basée sur le modèle
+- une notification Slack pour informer l'équipe
+
 <!-- markdownlint-disable MD046 -->
 !!! abstract "Prérequis"
-    La bonne exécution du workflow dépend de ces éléments configurés au préalable sur le dépôt :
+    La bonne exécution du workflow dépend de ces éléments :
 
+    - la revue de presse ou sa branche n'ont pas déjà été créées par ailleurs
+    - le modèle de revue de presse est à jour et bien présent : `content/rdp/templates/template_rdp.md`
     - le modèle de Pull Request est bien présent : `.github/PULL_REQUEST_TEMPLATE.md`
-    - que l'URL du webhook de Slack (`SLACK_WEBHOOK_URL`) est bien configuré dans [les secrets du dépôt]({{ config.repo_url }}settings/secrets/actions) (cliquer [ici pour administrer le webhook Slack](https://api.slack.com/apps/A020C9Q93BK/incoming-webhooks/))
+    - l'URL du webhook de Slack (`SLACK_WEBHOOK_URL`) est bien configurée dans [les secrets du dépôt]({{ config.repo_url }}settings/secrets/actions) (cliquer [ici pour administrer le webhook Slack](https://api.slack.com/apps/A020C9Q93BK/incoming-webhooks/))
 <!-- markdownlint-enable MD046 -->
 
 ### Utiliser localement le script intégré localement
@@ -81,7 +104,7 @@ Voici une vidéo retraçant les étapes de création d'une revue de presse via l
 
 ## Processus détaillé
 
-Cette partie permet de comprendre chaque étape du processus de création d'une revue de presse.
+Cette partie explique chaque étape du processus de création d'une revue de presse pour comprendre ce que font les automatisations présentées au-dessus (script, GitHub Actions...).
 
 ### 1. Créer la branche de la revue de presse
 
