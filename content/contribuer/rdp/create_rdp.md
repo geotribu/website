@@ -21,13 +21,69 @@ tags:
 
 La création d'une revue de presse passe par la création d'une branche dédiée dans le dépôt du site et du fichier Markdown qui contiendra les news dans une structure type. Il est possible de créer en utilisant Git en ligne de commande ou via l'interface web de GitHub.
 
-TL;DR : voici une vidéo retraçant les étapes de création d'une revue de presse via l'interface web de GitHub :
+!!! info "Zone réservée"
+    La création d'une nouvelle revue de presse nécessite de disposer des droits d'écriture sur le dépôt GitHub : [{{ config.repo_name }}]({{ config.repo_url }}).
+
+## Automatiquement via GitHub Workflow
+
+![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
+
+La méthode la plus simple de créer une nouvelle revue de presse est d'utiliser le workflow *:newspaper2: New GeoRDP* disponible sur GitHub :
+
+1. Se rendre sur l'onglet `Actions` et sélectionner le workflow *:newspaper2: New GeoRDP* ou [cliquer ici]({{ config.repo_url }}actions/workflows/manual_new_rdp.yml)
+2. Cliquer sur `Run workflow`
+3. Entrer les infos demandées :
+    - branche : `master`
+    - date de la revue de presse : doit être au format `YYYY-MM-DD` et pointer sur un vendredi
+    - choisir d'envoyer automatiquement une notification sur Slack
+4. Cliquer sur le bouton vert `Run workflow`.
+
+<!-- markdownlint-disable MD046 -->
+!!! abstract "Prérequis"
+    La bonne exécution du workflow dépend de ces éléments configurés au préalable sur le dépôt :
+
+    - le modèle de Pull Request est bien présent : `.github/PULL_REQUEST_TEMPLATE.md`
+    - que l'URL du webhook de Slack (`SLACK_WEBHOOK_URL`) est bien configuré dans [les secrets du dépôt]({{ config.repo_url }}settings/secrets/actions) (cliquer [ici pour administrer le webhook Slack](https://api.slack.com/apps/A020C9Q93BK/incoming-webhooks/))
+<!-- markdownlint-enable MD046 -->
+
+### Utiliser localement le script intégré localement
+
+Si vous disposez d'un terminal Bash et disposez du dépôt cloné, il est possible d'utiliser le script intégré :
+
+```bash
+# stocker la date de la RDP au format YYYY-MM-DD
+DATE_RDP=2022-01-07
+
+# exécuter le script
+scripts/new_rdp.sh $DATE_RDP
+
+# pousser vers le dépôt distant
+git pull
+git checkout -b rdp/$DATE_RDP
+git add content/rdp/
+git commit -am "Crée la GeoRDP $DATE_RDP"
+git push origin rdp/$DATE_RDP
+```
+
+Ne pas oublier ensuite de :
+
+1. se rendre sur [GitHub pour créer la Pull Request]({{ config.repo_url }}pulls)
+2. sur [le canal dédié aux revues de presse sur Slack](https://geotribu.slack.com/archives/C010DD7FMEX) pour notifier l'équipe
+
+## Manuellement via l'interface web de GitHub
+
+Il est également possible d'utiliser l'ancienne procédure manuelle.  
+Voici une vidéo retraçant les étapes de création d'une revue de presse via l'interface web de GitHub :
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/dVpOdGYAtIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ----
 
-## Créer la branche de la revue de presse
+## Processus détaillé
+
+Cette partie permet de comprendre chaque étape du processus de création d'une revue de presse.
+
+### 1. Créer la branche de la revue de presse
 
 ![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
 
@@ -41,7 +97,7 @@ Il est important de respecter la convention de nommage `rdp/YYYY-MM-DD` où :
 
 Exemple si la GeoRDP devait être publiée le 17 septembre 2021 : `rdp/2021-09-17`.
 
-### :fontawesome-brands-github:  GitHub
+#### :fontawesome-brands-github:  GitHub
 
 Sur l'interface web du dépôt :
 
@@ -51,7 +107,7 @@ Sur l'interface web du dépôt :
 
 ![Github - New branch](https://cdn.geotribu.fr/img/internal/contribution/github_branch_rdp_new.png "GitHub - Création d'une branche"){: .img-center loading=lazy }
 
-### :fontawesome-solid-terminal: Ligne de commande
+#### :fontawesome-solid-terminal: Ligne de commande
 
 Si vous disposez du dépôt localement et que vous préférez utiliser la ligne de commande de [Git], voici les étapes à suivre :
 
@@ -89,7 +145,7 @@ Si vous disposez du dépôt localement et que vous préférez utiliser la ligne 
 
 ----
 
-## Créer le fichier de la revue de presse
+### 2. Créer le fichier de la revue de presse
 
 ![icône globe tricot](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe tricot"){: .img-rdp-news-thumb }
 
@@ -101,7 +157,7 @@ Afin d'accueillir les news, il s'agit de créer un fichier en respectant l'organ
 
 Exemple si la GeoRDP devait être publiée le 17 septembre 2021 : `content/rdp/2021/rdp_2021-09-17.md`.
 
-### Structure type et modèle
+#### Structure type et modèle
 
 Les revues de presse sont structurées de la même façon d'une édition à l'autre, facilitant leur consultation et les traitements automatiques. Le plus simple est donc de copier/coller la structure type à partir du modèle maintenu à jour :
 
@@ -143,7 +199,7 @@ tags:
 {: align=middle }
 ```
 
-### Pousser le fichier sur GitHub
+### 3. Pousser le fichier sur GitHub
 
 Enfin, il faut pousser le fichier sur la branche créée sur GitHub.
 
