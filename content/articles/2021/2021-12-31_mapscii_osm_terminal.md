@@ -62,6 +62,8 @@ Il est possible d'installer MapSCII en local, via[Node.js](https://nodejs.org/fr
 
 ```sh
 npm install -g mapscii
+```
+
 Un snap dédié est aussi disponible sous Linux : `sudo snap install mapscii`.
 
 MapSCII se lance ensuite avec`mapscii`.
