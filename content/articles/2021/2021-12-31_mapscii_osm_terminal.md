@@ -51,8 +51,10 @@ Sous Windows, telnet est accessible avec le logiciel client [PuTTY](https://www.
 
 ## Installation locale
 
-Il est possible d'installer MapSCII en local, via[Node.js](https://nodejs.org/fr/download/) : `npm install -g mapscii` (Ou, pour une installation moins invasive, en retirant le `-g` qui indique une installation globale au niveau du système)
+Il est possible d'installer MapSCII en local, via[Node.js](https://nodejs.org/fr/download/) :
 
+```sh
+npm install -g mapscii
 Un snap dédié est aussi disponible sous Linux : `sudo snap install mapscii`.
 
 MapSCII se lance ensuite avec`mapscii`.
