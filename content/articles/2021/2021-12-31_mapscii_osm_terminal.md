@@ -29,6 +29,8 @@ tags:
 
 ![MapSCII_screenshot_1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_1.png)
 
+----
+
 ## Lancer la démo
 
 ### Linux et MacOS
