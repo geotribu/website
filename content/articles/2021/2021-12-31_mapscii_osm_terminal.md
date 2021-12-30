@@ -49,6 +49,8 @@ telnet mapscii.me
 
 Sous Windows, telnet est accessible avec le logiciel client [PuTTY](https://www.putty.org/). Au lancement de PuTTY, Il faut indiquer `mapscii.me` comme nom d'hôte, `telnet` comme type de connexion, avant d'ouvrir la connexion.
 
+----
+
 ## Installation locale
 
 Il est possible d'installer MapSCII en local, via[Node.js](https://nodejs.org/fr/download/) :
