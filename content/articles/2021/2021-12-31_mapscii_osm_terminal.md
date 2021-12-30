@@ -33,13 +33,13 @@ tags:
 
 MapSCII est accessible via le protocole [telnet](https://fr.wikipedia.org/wiki/Telnet). Si vous êtes sous Linux, telnet devrait être installé par défaut. Sous MacOS, vous pouvez utiliser le gestionnaire de paquets [Homebrew](https://brew.sh/index_fr) pour installer telnet en rentrant la commande suivante dans une fenêtre de Terminal :
 
-```bash
-brew install telnet
+`bash
+brew install telnet`
 
 Ensuite, la commande pour lancer MapSCII dans le terminal sous Linux ou MacOS est :
 
-```bash
-telnet mapscii.me
+`bash
+telnet mapscii.me`
 
 ### Windows
 
