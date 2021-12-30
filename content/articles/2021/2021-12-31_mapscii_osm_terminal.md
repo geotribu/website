@@ -1,5 +1,5 @@
 ---
-title: "OpenStreetMap dans le terminal, en braille et en ASCII "
+title: "OpenStreetMap dans le terminal, en braille et en ASCII"
 authors:
     - Jérémy Garniaux
 categories:
@@ -20,6 +20,8 @@ tags:
 
 :calendar: Date de publication initiale : 31 décembre 2021
 
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+
 [Publié sur Github](https://github.com/rastapasta/mapscii) en 2017 par le développeur allemand Michael Straßburger, MapSCII est une application Node.js qui propose de naviguer dans la carte mondiale d'OpenStreetMap... depuis un [terminal](https://fr.wikipedia.org/wiki/Terminal), avec un style cartographique détonnant construit en braille et en [ASCII](https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) ! Le projet, qui nous avait échappé jusqu'ici, dispose d'une démo rapidement consultable, mais peut aussi être téléchargé et personnalisé.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -33,13 +35,13 @@ tags:
 
 MapSCII est accessible via le protocole [telnet](https://fr.wikipedia.org/wiki/Telnet). Si vous êtes sous Linux, telnet devrait être installé par défaut. Sous MacOS, vous pouvez utiliser le gestionnaire de paquets [Homebrew](https://brew.sh/index_fr) pour installer telnet en rentrant la commande suivante dans une fenêtre de Terminal :
 
-`bash
-brew install telnet`
+````bash
+brew install telnet
 
 Ensuite, la commande pour lancer MapSCII dans le terminal sous Linux ou MacOS est :
 
-`bash
-telnet mapscii.me`
+````bash
+telnet mapscii.me
 
 ### Windows
 
