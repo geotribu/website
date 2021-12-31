@@ -68,6 +68,8 @@ Un snap dédié est aussi disponible sous Linux : `sudo snap install mapscii`.
 
 MapSCII se lance ensuite avec`mapscii`.
 
+----
+
 ## Personnalisation
 
 Vous pouvez également personnaliser différents aspects de MapSCII : changer le style (l'application est fournie avec deux styles Mapbox au choix, Bright ou Dark), ou bien explorer d'autres services d'autres lots de tuiles vecteurs, en local ou en se connectant à un service distant. Ces éléments sont assez faciles à identifier dans le code source : par exemple, le fichier `/src/config.js` permet d'indiquer, ligne 10, le fichier de style au format JSON à utiliser.
