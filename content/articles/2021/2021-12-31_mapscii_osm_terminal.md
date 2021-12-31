@@ -50,6 +50,10 @@ Ensuite, la commande pour lancer MapSCII dans le terminal sous Linux ou MacOS es
 telnet mapscii.me
 ```
 
+<!-- markdownlint-disable MD033 -->
+<script id="asciicast-117813" src="https://asciinema.org/a/117813.js" async></script>
+<!-- markdownlint-enable MD033 -->
+
 ### Windows
 
 Sous Windows, telnet est accessible avec le logiciel client [PuTTY](https://www.putty.org/). Au lancement de PuTTY, Il faut indiquer `mapscii.me` comme nom d'hôte, `telnet` comme type de connexion, avant d'ouvrir la connexion.
