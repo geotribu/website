@@ -70,6 +70,8 @@ Un snap dédié est aussi disponible sous Ubuntu : `sudo snap install mapscii`.
 
 MapSCII se lance ensuite avec`mapscii`.
 
+[![MapSCII_screenshot_3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_3.png "MapSCII 3"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_3.png){: data-mediabox="lightbox-gallery" data-title="MapSCII - Zoom"}
+
 ----
 
 ## Personnalisation
@@ -77,7 +79,7 @@ MapSCII se lance ensuite avec`mapscii`.
 Vous pouvez également personnaliser différents aspects de MapSCII : changer le style (l'application est fournie avec deux styles Mapbox au choix, Bright ou Dark), ou bien explorer d'autres services d'autres lots de tuiles vecteurs, en local ou en se connectant à un service distant.
 Ces éléments sont assez faciles à identifier dans le code source : par exemple, le fichier [`/src/config.js`](https://github.com/rastapasta/mapscii/blob/2315a3515c8870b8f88b1aa7978922fc7d426777/src/config.js#L10) permet d'indiquer, ligne 10, le fichier de style au format JSON à utiliser.
 
-[![MapSCII_screenshot_5](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_5.png "MapSCII 5"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_5.png){: data-mediabox="lightbox-gallery" data-title="MapSCII -Style personnalisé"}
+[![MapSCII_screenshot_5](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_5.png "MapSCII 5"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_5.png){: data-mediabox="lightbox-gallery" data-title="MapSCII - Style personnalisé"}
 
 Ces aspects de personnalisation dépassent un peu, pour le moment, les compétences de l'auteur de ces lignes, qui fera de son mieux pour développer ce dernier point quand il aura percé les secrets des packages Node.js... N'hésitez pas à compléter cet article si vous le souhaitez, et bonne exploration de MapSCII en attendant !
 
