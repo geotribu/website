@@ -72,7 +72,8 @@ MapSCII se lance ensuite avec`mapscii`.
 
 ## Personnalisation
 
-Vous pouvez également personnaliser différents aspects de MapSCII : changer le style (l'application est fournie avec deux styles Mapbox au choix, Bright ou Dark), ou bien explorer d'autres services d'autres lots de tuiles vecteurs, en local ou en se connectant à un service distant. Ces éléments sont assez faciles à identifier dans le code source : par exemple, le fichier `/src/config.js` permet d'indiquer, ligne 10, le fichier de style au format JSON à utiliser.
+Vous pouvez également personnaliser différents aspects de MapSCII : changer le style (l'application est fournie avec deux styles Mapbox au choix, Bright ou Dark), ou bien explorer d'autres services d'autres lots de tuiles vecteurs, en local ou en se connectant à un service distant.
+Ces éléments sont assez faciles à identifier dans le code source : par exemple, le fichier [`/src/config.js`](https://github.com/rastapasta/mapscii/blob/2315a3515c8870b8f88b1aa7978922fc7d426777/src/config.js#L10) permet d'indiquer, ligne 10, le fichier de style au format JSON à utiliser.
 
 ![MapSCII_screenshot_5](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_5.png "MapSCII 5"){: .img-center loading=lazy }
 
