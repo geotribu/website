@@ -38,7 +38,7 @@ Petit tour d'horizon.
 
 ### Linux et MacOS
 
-MapSCII est accessible via le protocole [telnet](https://fr.wikipedia.org/wiki/Telnet). Si vous êtes sous Linux, telnet devrait être installé par défaut. Sous MacOS, vous pouvez utiliser le gestionnaire de paquets [Homebrew](https://brew.sh/index_fr) pour installer telnet en rentrant la commande suivante dans une fenêtre de Terminal :
+MapSCII est accessible via le protocole [telnet](https://fr.wikipedia.org/wiki/Telnet). Si vous êtes sous Debian/Ubuntu, telnet devrait être installé par défaut. Sous MacOS, vous pouvez utiliser le gestionnaire de paquets [Homebrew](https://brew.sh/index_fr) pour installer telnet en rentrant la commande suivante dans une fenêtre de Terminal :
 
 ```bash
 brew install telnet
@@ -64,7 +64,7 @@ Il est possible d'installer MapSCII en local, via[Node.js](https://nodejs.org/fr
 npm install -g mapscii
 ```
 
-Un snap dédié est aussi disponible sous Linux : `sudo snap install mapscii`.
+Un snap dédié est aussi disponible sous Ubuntu : `sudo snap install mapscii`.
 
 MapSCII se lance ensuite avec`mapscii`.
 
