@@ -6,7 +6,7 @@ categories:
     - article
 date: "2022-01-02 22:01"
 description: "Comment quantifier le temps passé par une présentatrice météo devant une zone de la carte de France : passer de la remarque d'un canapé à une réponse circonstanciée"
-image: ![Distance_toutes_seq](https://raw.githubusercontent.com/Valexandre/zones_meteo/main/img/Distance%20moyenne%20toutes%20journ%C3%A9es%20toutes%20s%C3%A9quences.jpg)
+image: "https://raw.githubusercontent.com/Valexandre/zones_meteo/main/img/Distance%20moyenne%20toutes%20journ%C3%A9es%20toutes%20s%C3%A9quences.jpg"
 license: default
 robots: index, follow
 tags:
@@ -47,7 +47,7 @@ Une dame rentre dans le champ de la caméra sur un fond vert, des images ou des 
 Impossible de récupérer les fichiers vidéos des bulletins récents via france.tv, je me suis donc appuyé sur [la chaîne Youtube de Anaïs Baydemir](https://www.youtube.com/channel/UCCjC5WdWYmqLnuwILaJ2Lew), dont j'ai récupéré les fichiers mp4 par un site en ligne ([yt1s.io])(<https://yt1s.io>), puis renommé avec la date en format DDMMYYYY.
 Après avoir essayé différentes techniques, c'est avec `ffmpeg` que j'ai pu sortir un nombre suffisamment important d'images pour chacun des mp4 générés (5 par seconde).
 
-```
+```r
 system("ffmpeg -i METEO_ZONE/01012019.mp4 -r 5 -f image2 METEO_ZONE/img_01012019_%05d.png")
 ```
 
