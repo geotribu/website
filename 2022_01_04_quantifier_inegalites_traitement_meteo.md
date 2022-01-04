@@ -115,4 +115,7 @@ Comme vous pouvez vous en douter, ce projet est purement sur mon temps personnel
 
 ## Auteur {: data-search-exclude }
 
+### Victor Alexandre
+
+
 Datajournaliste au Parisien, j'ai une formation de journaliste, de sociologie et de statistiques.
