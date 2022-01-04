@@ -44,7 +44,7 @@ Une dame rentre dans le champ de la caméra sur un fond vert, des images ou des 
 
 1. Flux vidéo --> listes d'images
 
-Impossible de récupérer les fichiers vidéos des bulletins récents via france.tv, je me suis donc appuyé sur [la chaîne Youtube de Anaïs Baydemir](https://www.youtube.com/channel/UCCjC5WdWYmqLnuwILaJ2Lew), dont j'ai récupéré les fichiers mp4 par un site en ligne ([yt1s.io])(https://yt1s.io), puis renommé avec la date en format DDMMYYYY.
+Impossible de récupérer les fichiers vidéos des bulletins récents via france.tv, je me suis donc appuyé sur [la chaîne Youtube de Anaïs Baydemir](https://www.youtube.com/channel/UCCjC5WdWYmqLnuwILaJ2Lew), dont j'ai récupéré les fichiers mp4 par un site en ligne ([yt1s.io])(<https://yt1s.io>), puis renommé avec la date en format DDMMYYYY.
 Après avoir essayé différentes techniques, c'est avec `ffmpeg` que j'ai pu sortir un nombre suffisamment important d'images pour chacun des mp4 générés (5 par seconde).
 
 ```
@@ -61,7 +61,6 @@ La troisième représente les températures du lendemain matin.
 La quatrième et dernière représente les températures du lendemain après-midi.
 
 ![Explication des images de références, de début et de fin de séquences](img/montageimagesbases_11012019.jpg)
-
 
 3. Découpage de la carte de métropole en zones
 
@@ -81,6 +80,7 @@ Pour les autres images de chaque séquence, on fait le même travail.
 On rapporte la couleur obtenue pour chaque zone de chaque image de la séquence à la couleur de référence de la séquence pour en estimer la distance, avec l'excellent package `colorscale`.
 Avantage de cette façon de faire : on peut prendre en compte les différences dans les couleurs des zones, quelles que soient ces couleurs.
 Inconvénient :
+
 - la séquence de prévision météo utilisant parfois des signalétiques animées (des nuages allant de droite à gauche), l'image de référence ne prend la couleur médiane d'une des phases de cette animation.
 - la présentatrice n'étant pas habillée de pied en cap de la même couleur, la présence de sa main, de ses cheveux ou de sa robe sur une même zone créera une distance différente sur la zone, bien que le résultat soit le même pour le spectateur : une zone cachée.
 
@@ -110,12 +110,10 @@ Est en R et se trouve [ici](https://raw.githubusercontent.com/Valexandre/zones_m
 
 Comme vous pouvez vous en douter, ce projet est purement sur mon temps personnel et n'a pas vocation à enfreindre les droits à l'image de la (excellente au demeurant) présentatrice en question, que je remercie d'avoir publié ces vidéos et ainsi m'avoir permis d'avoir enfin une réponse à une question de canapé.
 
-
 ----
 
 ## Auteur {: data-search-exclude }
 
 ### Victor Alexandre
-
 
 Datajournaliste au Parisien, j'ai une formation de journaliste, de sociologie et de statistiques.
