@@ -1,4 +1,4 @@
-﻿# Michaël GALIEN {: data-search-exclude }
+# Michaël GALIEN {: data-search-exclude }
 
 ![Portrait Michaël GALIEN](https://cdn.geotribu.fr/img/internal/contributeurs/mgal.png "Portrait Michaël GALIEN"){: .img-rdp-news-thumb }
 
