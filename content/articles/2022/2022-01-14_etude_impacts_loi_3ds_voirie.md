@@ -20,9 +20,9 @@ tags:
 
 ## Introduction
 
-Et non, je ne vais pas vous parler dans cet article de la célèbre console Nintento (10 ans déjà) mais de la loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale.
+Et non, je ne vais pas vous parler dans cet article de la célèbre console Nintento (11 ans déjà) mais de la loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale.
 
-![Loi 3DS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png "Loi 3DS"){: loading=lazy }
+![Loi 3DS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png "Loi 3DS"){: .img-center loading=lazy }
 
 Les fonctionnaires territoriaux connaissent par coeur les 3 actes de la décentralisation, la loi 3DS sera peut-être considérée comme le quatrième acte.
 
@@ -42,7 +42,7 @@ Let's go !
 
 ![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "logo IGN"){: .img-rdp-news-thumb }
 
-J'utilise pour cette analyse la BDTopo de l'IGN et plus précisément la classe _troncon_de_route_ du thème _transport_ que j'ai importé dans une table nommée `bdtopo_troncon_de_route`.
+J'utilise pour cette analyse la BDTopo de l'IGN et plus précisément la classe _troncon_de_route_ du thème _transport_ que j'ai importée dans une table nommée `bdtopo_troncon_de_route`.
 
 Je dispose des données France entière et je dois donc limiter l'analyse aux seuls tronçons du département.
 
@@ -57,7 +57,7 @@ Le premier besoin est simplement de connaître la liste des routes nationales co
 
 Je cherche pour cela les numéros distincts des nationales présentes sur l'emprise d'étude grâce à la requête suivante :
 
-NB : Le recours aux expressions régulières c'est clairement pour me la péter, j'aurais pu faire un like...mais ça a l'intérêt de montrer [l'opérateur ~](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP).
+NB : Le recours aux expressions régulières c'est clairement pour me la péter, j'aurais pu faire un `like`...mais ça a l'intérêt de montrer [l'opérateur ~](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP).
 
 ```SQL
 select distinct cpx_numero as "RN"
@@ -168,11 +168,11 @@ Il sera donc question pour le Gard d'assurer la gestion de 36 nouveaux giratoire
 |N580|5|
 |N86|7|
 
-![Giratoires RN580](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-giratoires.png "Giratoires RN580"){: loading=lazy }
+![Giratoires RN580](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-giratoires.png "Giratoires RN580"){: .img-center loading=lazy }
 
 ### Et les ponts ? Et les tunnels ?
 
-Les ouvrages d'arts nécessitent une attention particulière. Il est donc utile de savoir combien d'ouvrages se trouvent sur l'actuel réseau national.
+Les ouvrages d'art nécessitent une attention particulière. Il est donc utile de savoir combien d'ouvrages se trouvent sur l'actuel réseau national.
 
 Pour les identifier, j'utilise cette fois l'attribut `position_par_rapport_au_sol`.
 
@@ -180,7 +180,7 @@ Ma première idée était de réutiliser la fonction [`ST_ClusterIntersecting`](
 
 Lorsqu'on regarde en détail, on remarque que plusieurs ouvrages supportent 2 chaussées séparées et donc 2 lignes distinctes dans la BDTopo.
 
-![Chaussées séparées soutenues par un OA](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-oa.png "Chaussées séparées soutenues par un OA"){: loading=lazy }
+![Chaussées séparées soutenues par un OA](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-oa.png "Chaussées séparées soutenues par un OA"){: .img-center loading=lazy }
 
 Pour contourner ce cas, j'utilise plutôt la fonction [`ST_ClusterWithin`](https://postgis.net/docs/ST_ClusterWithin.html).
 
@@ -238,7 +238,7 @@ Je mets face à face les chiffres obtenus à l'aide d'un `full join` (c'est à d
 
 Je peux ensuite calculer le ratio en prennant soin de gérer les cas aux limites (division par null et 0) notamment à l'aide de la fonction [`coalesce`](https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL).
 
-Enfin j'ordonne le résultat dans l'ordre décroissant des valeurs ce qui donne la requête suivante :
+Enfin, je trie le résultat dans l'ordre décroissant des valeurs ce qui donne la requête suivante :
 
 ```SQL
 with RN as (
