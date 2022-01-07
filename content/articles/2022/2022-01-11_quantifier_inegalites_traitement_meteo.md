@@ -91,7 +91,7 @@ Inconvénient :
 
 Image par image, on peut voir le calcul : d'une vidéo vers une image (à gauche), et de cette image, on sort une couleur médiane par zone (au centre), et de cette couleur médiane on calcule la distance à la couleur médiane lorsque la carte est dégagée (à droite).
 
-![Trois phases](https://user-images.githubusercontent.com/1596222/148133096-3c3349ea-f9ff-4d7e-9b73-1a163ad0fda1.gif){: .img-center loading=lazy }
+![Trois phases](https://user-images.githubusercontent.com/1596222/148133096-3c3349ea-f9ff-4d7e-9b73-1a163ad0fda1.gif){: loading=lazy }
 
 Au global, entre les bulletins du 2, 3, 11, 12, 13 et 14 janvier 2019 (c'est dire si l'étude est sérieuse !), on constate un rapport de 1 à 21 entre Vannes et Gap sur les écarts de couleurs affichées.
 
