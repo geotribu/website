@@ -69,7 +69,7 @@ J'ai donc changé mon fusil d'épaule et suis passé sur une sélection à la ma
 
 Une fois l'image découpée, je conserve uniquement la forme de la métropole. Je scinde ensuite cette forme en une série de zones hexagonales de 10 pix de côté, ce qui fait un peu plus de 660 zones sur notre carte.
 
-4. Estimation de la couleur médiane par zone de la carte sans présentatrice (référence)
+### 4. Estimation de la couleur médiane par zone de la carte sans présentatrice (référence)
 
 Pour pouvoir déterminer l'état de chaque zone, j'ai choisi de me fier à sa couleur et au fait qu'elle variait plus ou moins de son niveau de référence. Par exemple : une zone ensoleillée est présentée en jaune dans la carte de référence. Je considère qu'elle est couverte par la présentatrice si sa couleur est modifiée. En termes de codages, je récupère la couleur de chaque pixel de la carte, en rouge, vert et bleu; et considère que la couleur de la zone est la médiane du niveau de rouge, de vert et de bleu sur chacun des pixels de cette zone.
 On récupère ainsi un tableur avec une couleur de référence pour chaque hexagone, pour chaque séquence (prévision matin et après-midi, températures matin et après-midi).
