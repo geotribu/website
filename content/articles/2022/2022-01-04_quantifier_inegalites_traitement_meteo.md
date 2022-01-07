@@ -34,7 +34,8 @@ Ce projet, complètement con sur le fond, consiste à tenter de mesurer les vari
 
 ### Matériau
 
-- Source vidéo : Je me suis appuyé sur le bulletin météo de France 2 précédant le journal de 20h, tel qu'il a été posté sur la chaîne Youtube de Anaïs Baydemir (la fameuse dame de la météo).
+- **Source vidéo** : Je me suis appuyé sur le bulletin météo de France 2 précédant le journal de 20h, tel qu'il a été posté sur la chaîne Youtube de Anaïs Baydemir (la fameuse dame de la météo).
+- **Logiciel** : `ffmpeg` et `R`, avec les packages `imagemagick`, `tidyverse` et `colorscale`.
 - Logiciel : ffmpeg et R, avec les packages imagemagick, tidyverse et colorscale.
 
 ### Principe du bulletin météo
@@ -43,7 +44,7 @@ Une dame rentre dans le champ de la caméra sur un fond vert, des images ou des 
 
 ## Principe du projet
 
-1. Flux vidéo --> listes d'images
+### 1. Flux vidéo → listes d'images
 
 Impossible de récupérer les fichiers vidéos des bulletins récents via france.tv, je me suis donc appuyé sur [la chaîne Youtube de Anaïs Baydemir](https://www.youtube.com/channel/UCCjC5WdWYmqLnuwILaJ2Lew), dont j'ai récupéré les fichiers mp4 par un site en ligne ([yt1s.io])(<https://yt1s.io>), puis renommé avec la date en format DDMMYYYY.
 Après avoir essayé différentes techniques, c'est avec `ffmpeg` que j'ai pu sortir un nombre suffisamment important d'images pour chacun des mp4 générés (5 par seconde).
@@ -52,18 +53,19 @@ Après avoir essayé différentes techniques, c'est avec `ffmpeg` que j'ai pu so
 system("ffmpeg -i METEO_ZONE/01012019.mp4 -r 5 -f image2 METEO_ZONE/img_01012019_%05d.png")
 ```
 
-2. Extraction des images avec une carte de France
+### 2. Extraction des images avec une carte de France
 
 Le package `imagemagick` permet une lecture de texte dans des images. J'ai donc, dans un premier temps, tenté de délimiter quelles étaient les images relatives aux prévisions ou températures du matin selon ce que le texte présent dans l'image indiquait. Toutefois, certaines images se trouvaient zoomées sur certaines parties de l'hexagone sans que cela ne puisse être détectable.
 J'ai donc changé mon fusil d'épaule et suis passé sur une sélection à la main d'une image de référence, une image de début et de fin de la séquence, pour chaqune des 4 séquences. Par exemple, dans l'image ci-dessous, la première colonne représente l'image de référence : celle qui est la plus dégagée de la séquence, la seconde représente la première image de la séquence et la dernière colonne représente la dernière image de la séquence.
-La première ligne représente les prévisions du lendemain matin.
-La seconde représente les prévisions du lendemain après-midi.
-La troisième représente les températures du lendemain matin.
-La quatrième et dernière représente les températures du lendemain après-midi.
+
+- La première ligne représente les prévisions du lendemain matin.
+- La seconde représente les prévisions du lendemain après-midi.
+- La troisième représente les températures du lendemain matin.
+- La quatrième et dernière représente les températures du lendemain après-midi.
 
 ![Explication des images de références, de début et de fin de séquences](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/montage_images_bases_11012019.jpg){: .img-center loading=lazy }
 
-3. Découpage de la carte de métropole en zones
+### 3. Découpage de la carte de métropole en zones
 
 Une fois l'image découpée, je conserve uniquement la forme de la métropole. Je scinde ensuite cette forme en une série de zones hexagonales de 10 pix de côté, ce qui fait un peu plus de 660 zones sur notre carte.
 
@@ -72,11 +74,11 @@ Une fois l'image découpée, je conserve uniquement la forme de la métropole. J
 Pour pouvoir déterminer l'état de chaque zone, j'ai choisi de me fier à sa couleur et au fait qu'elle variait plus ou moins de son niveau de référence. Par exemple : une zone ensoleillée est présentée en jaune dans la carte de référence. Je considère qu'elle est couverte par la présentatrice si sa couleur est modifiée. En termes de codages, je récupère la couleur de chaque pixel de la carte, en rouge, vert et bleu; et considère que la couleur de la zone est la médiane du niveau de rouge, de vert et de bleu sur chacun des pixels de cette zone.
 On récupère ainsi un tableur avec une couleur de référence pour chaque hexagone, pour chaque séquence (prévision matin et après-midi, températures matin et après-midi).
 
-5. Estimation de la couleur médiane par zone de la carte pour chaque image relative à la séquence
+### 5. Estimation de la couleur médiane par zone de la carte pour chaque image relative à la séquence
 
 Pour les autres images de chaque séquence, on fait le même travail.
 
-6. Estimation de la distance moyenne par zone entre la référence et la séquence
+### 6. Estimation de la distance moyenne par zone entre la référence et la séquence
 
 On rapporte la couleur obtenue pour chaque zone de chaque image de la séquence à la couleur de référence de la séquence pour en estimer la distance, avec l'excellent package `colorscale`.
 Avantage de cette façon de faire : on peut prendre en compte les différences dans les couleurs des zones, quelles que soient ces couleurs.
