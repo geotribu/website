@@ -66,14 +66,14 @@ system("ffmpeg -i METEO_ZONE/01012019.mp4 -r 5 -f image2 METEO_ZONE/img_01012019
 ### 2. Extraction des images avec une carte de France
 
 Le package `imagemagick` permet une lecture de texte dans des images. J'ai donc, dans un premier temps, tenté de délimiter quelles étaient les images relatives aux prévisions ou températures du matin selon ce que le texte présent dans l'image indiquait. Toutefois, certaines images se trouvaient zoomées sur certaines parties de l'hexagone sans que cela ne puisse être détectable.
-J'ai donc changé mon fusil d'épaule et suis passé sur une sélection à la main d'une image de référence, une image de début et de fin de la séquence, pour chaqune des 4 séquences. Par exemple, dans l'image ci-dessous, la première colonne représente l'image de référence : celle qui est la plus dégagée de la séquence, la seconde représente la première image de la séquence et la dernière colonne représente la dernière image de la séquence.
+J'ai donc changé mon fusil d'épaule et suis passé sur une sélection à la main d'une image de référence, une image de début et de fin de la séquence, pour chacune des 4 séquences. Par exemple, dans l'image ci-dessous, la première colonne représente l'image de référence : celle qui est la plus dégagée de la séquence, la seconde représente la première image de la séquence et la dernière colonne représente la dernière image de la séquence.
 
 - La première ligne représente les prévisions du lendemain matin.
 - La seconde représente les prévisions du lendemain après-midi.
 - La troisième représente les températures du lendemain matin.
 - La quatrième et dernière représente les températures du lendemain après-midi.
 
-![Explication des images de références, de début et de fin de séquences](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/montage_images_bases_11012019.jpg){: .img-center loading=lazy }
+[![Explication des images de références, de début et de fin de séquences](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/montage_images_bases_11012019.jpg "Explication des images de références, de début et de fin de séquences"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/montage_images_bases_11012019.jpg){: data-mediabox="lightbox-gallery" data-title="Explication des images de références, de début et de fin de séquences"}
 
 ### 3. Découpage de la carte de métropole en zones
 
@@ -103,11 +103,11 @@ Inconvénient :
 
 Image par image, on peut voir le calcul : d'une vidéo vers une image (à gauche), et de cette image, on sort une couleur médiane par zone (au centre), et de cette couleur médiane on calcule la distance à la couleur médiane lorsque la carte est dégagée (à droite).
 
-![Trois phases](https://user-images.githubusercontent.com/1596222/148133096-3c3349ea-f9ff-4d7e-9b73-1a163ad0fda1.gif){: loading=lazy }
+[![Trois phases](https://user-images.githubusercontent.com/1596222/148133096-3c3349ea-f9ff-4d7e-9b73-1a163ad0fda1.gif "Trois phases"){: loading=lazy }](https://user-images.githubusercontent.com/1596222/148133096-3c3349ea-f9ff-4d7e-9b73-1a163ad0fda1.gif){: data-mediabox="lightbox-gallery" data-title="Trois phases"}
 
 Au global, entre les bulletins du 2, 3, 11, 12, 13 et 14 janvier 2019 (c'est dire si l'étude est sérieuse !), on constate un rapport de 1 à 21 entre Vannes et Gap sur les écarts de couleurs affichées.
 
-![Distance_toutes_seq](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/distance_moyenne_toutes_journees_toutes_sequences.jpg){: .img-center loading=lazy }
+[![Distance entre la couleur de référence et la couleur observée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/distance_moyenne_toutes_journees_toutes_sequences.jpg "Distance entre la couleur de référence et la couleur observée"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/distance_moyenne_toutes_journees_toutes_sequences.jpg){: data-mediabox="lightbox-gallery" data-title="Distance entre la couleur de référence et la couleur observée"}
 
 Pour la partie qui est le moins soumise à des variations de couleurs, car pas soumise à des animations, i.e. les séquences liées aux températures du lendemain, la zone où la variation est la plus faible connaît une distance de 0,16 à sa référence tandis que celle où la variation est la plus forte présente une distance de 43, soit un ratio de 1 à 268. Même ordre de grandeur pour les températures de l'après-midi avec un ratio de 1 pour 261.
 
