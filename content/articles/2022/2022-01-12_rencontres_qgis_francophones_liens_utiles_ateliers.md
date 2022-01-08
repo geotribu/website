@@ -6,7 +6,7 @@ categories:
     - article
     - événement
 date: "2022-01-12 10:20"
-description: "Les 18 et 19 janvier prochains se tiendront les journées QGIS en distanciel : les liens utiles et la liste d'inventaire pour mes ateliers (rattrapage)."
+description: "Les 18 et 19 janvier prochains se tiendront les journées QGIS en distanciel : liens utiles et liste d'inventaire pour mes ateliers (rattrapage)."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/evenement/2022_01_rencontres_QGIS.jpg"
 license: default
 tags:
@@ -40,7 +40,7 @@ L'occasion de mettre les liens utiles pour assister à l'événement et de me ra
 
 ![icône pop-corn cinema](https://cdn.geotribu.fr/img/logos-icones/divers/popcorn_cinema_3d.webp "icône pop-corn cinema"){: .img-rdp-news-thumb }
 
-La journée du 18 est dédiée aux ateliers auxquels il faut être inscrit/e (et débité/e) et qui ne seront pas enregistrés. Il n'y a donc rien à voir, circulez !
+La journée du 18 est dédiée aux ateliers auxquels il faut être inscrit/e (et débité/e) et qui ne seront pas enregistrés. Il n'y a donc rien à voir pour celles et ceux qui n'ont pas leur Pass Workshopaire, circulez !
 
 En revanche, pour la journée du 19, il va y avoir du stream et du tchat pour nous ; de la sueur et des larmes pour l'hébergeur !
 
@@ -88,10 +88,11 @@ L'idée de cet atelier est d'abord de passer un bon moment tout en apprenant à 
 
 #### Notions et compétences
 
-- vous savez que le sens de l'humour est la meilleure arme pour ne pas balancer son ordi par la fenêtre quand QGIS affiche "Crash dumped - minidump written..."
+- vous savez que le sens de l'humour est le meilleur atout pour ne pas balancer son ordi par la fenêtre quand QGIS affiche "Crash dumped - minidump written..."
 - vous êtes abonné/e à Geotribu d'une façon ou d'une autre
 - vous avez déjà éprouvé la douleur du message `IndentationError: unindent does not match any outer indentation level`
 - vous avez déjà écrit un script PyQGIS ou contribué à un plugin QGIS
+- vous regrettez que le droit au troll ne soit ouvert que le vendredi
 
 ----
 
@@ -101,14 +102,14 @@ L'idée de cet atelier est d'abord de passer un bon moment tout en apprenant à 
 
 Pendant que je rédige ce billet de blog, je me dis que ça pourrait être sympa si plusieurs personnes prennent des notes pendant les interventions !
 
-Si ça marche, on les publiera sous forme de compte-rendu sur Geotribu après la conférence histoire de faire amèrement regretter leur absence aux absents.
+Si ça marche, on les publiera sous forme de compte-rendu sur Geotribu après la conférence histoire d'aider les absents à réduire le poids de leur amertume.
 
 Les pré-requis ici aussi :
 
-- avoir les bases de la syntaxe Markdown **OU** savoir taper sur son clavier et cliquer sur les boutons de la barre de mise en forme (WYSIWYG)
+- avoir les bases de la syntaxe Markdown **OU** savoir taper sur son clavier et cliquer sur les boutons de la barre de mise en forme (*WYSIWYG*)
 - comprendre que vous pouvez seulement pointer vers des images externes mais pas glisser/déposer d'images sur le pad (mais on pourra les héberger ensuite sur notre [pseudo-CDN](https://cdn.geotribu.fr/))
 - avoir envie de donner un coup de pouce à l'événement tout en y assistant
-- résister à l'envie d'écrire des choses cheloues ou illégales
+- ne pas avoir envie d'écrire des choses cheloues ou illégales
 
 J'ai préparé un bloc-notes partagé pour l'occasion :
 
