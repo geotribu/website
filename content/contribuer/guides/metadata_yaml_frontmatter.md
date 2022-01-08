@@ -44,6 +44,7 @@ Voici les valeurs possibles pour les catégories de contenus. Il est possible d'
 
 - article : terme générique pour tout contenu, hormis les GeoRDP.
 - contribution : pour les contenus du guide de contribution
+- événement : qualifie les articles présentant une conférence, un salon, etc.
 - meta : qualifie un contenu potentiellement destiné à la section "A propos" évoquant l'équipe, Geotribu, etc.
 - revue de presse : Réservé aux GeoRDP. Exclusif.
 - tutoriel : qualifie un article
