@@ -117,7 +117,7 @@ Pour ce qui est de la partie relative aux prévisions de couverture (nuages, plu
 
 **Voilà donc la conclusion de notre enquête : 20 fois plus difficile de lire ce qui concerne une zone bretonne qu'une zone de l'est ou du sud-est.**
 
-[Consulter le code R :fontawesome-regular-file-code:](https://raw.githubusercontent.com/Valexandre/zones_meteo/main/code.R){: .md-button }
+[Consulter le code R :fontawesome-regular-file-code:](https://github.com/Valexandre/zones_meteo/blob/main/code.R){: .md-button }
 {: align=middle }
 
 <!-- markdownlint-disable MD046 -->
