@@ -115,7 +115,9 @@ Autrement dit, selon ce calcul si vous habitez Dijon, vous aurez un accès à l'
 
 Pour ce qui est de la partie relative aux prévisions de couverture (nuages, pluie, ciel bleu, etc.), le rapport est moins fort avec un ordre de grandeur de 1 pour 34 le matin et 1 pour 55 l'après-midi.
 
-**Voilà donc la conclusion de notre enquête : 20 fois plus difficile de lire ce qui concerne une zone bretonne qu'une zone de l'est ou du sud-est.**
+## Conclusion
+
+Voilà donc la conclusion de notre enquête : **il est 20 fois plus difficile de lire ce qui concerne une zone bretonne qu'une zone de l'est ou du sud-est.**
 
 [Consulter le code R :fontawesome-regular-file-code:](https://github.com/Valexandre/zones_meteo/blob/main/code.R){: .md-button }
 {: align=middle }
