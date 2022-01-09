@@ -6,7 +6,7 @@ categories:
     - article
 date: "2022-01-11 22:01"
 description: "Comment quantifier le temps passé par une présentatrice météo devant une zone de la carte de France : passer de la remarque d'un canapé à une réponse circonstanciée"
-image: "https://raw.githubusercontent.com/Valexandre/zones_meteo/main/img/Distance%20moyenne%20toutes%20journ%C3%A9es%20toutes%20s%C3%A9quences.jpg"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/distance_moyenne_toutes_journees_toutes_sequences.jpg"
 license: default
 robots: index, follow
 tags:
