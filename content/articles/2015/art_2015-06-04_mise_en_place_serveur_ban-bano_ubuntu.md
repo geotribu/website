@@ -5,8 +5,7 @@ authors:
 categories:
     - article
 date: "2015-06-04 10:20"
-description: "Description pour le SEO."
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
+description: "Tutoriel d'installation et de déploiement d'addok, le servur de géocodage lié à la BAN/BANO."
 license: default
 robots: index, follow
 tags:
@@ -26,7 +25,7 @@ tags:
 
 Le but est de rappeler ce qu'est le géocodage. A quoi généralement, cela sert.
 
-Dans une deuxième temps, nous introduisons la Base Adresse Nationale (BAN) et la Base Adresse Nationale Ouverte (BANO, historique). En effet, dans ce contexte, des outils pour géocoder ont été mis en oeuvre. Nous expliquerons comment les utiliser, comment installer un serveur pour géocoder chez vous si par exemple, vous avez des besoins de géocodage massif ou de personnaliser la recherche d'adresse avec vos critères lors du géocodage.
+Dans un deuxième temps, nous introduisons la Base Adresse Nationale (BAN) et la Base Adresse Nationale Ouverte (BANO, historique). En effet, dans ce contexte, des outils pour géocoder ont été mis en oeuvre. Nous expliquerons comment les utiliser, comment installer un serveur pour géocoder chez vous si par exemple, vous avez des besoins de géocodage massif ou de personnaliser la recherche d'adresse avec vos critères lors du géocodage.
 
 Enfin, nous verrons comment consommer les informations venant du géocodeur en voyant les principaux outils pour cela. Nous avons fait le choix dans certains cas de référencer plutôt que de simplement copier/coller les ressources officielles. Ce tutoriel n'a pas vocation à remplacer les sources officielles mais à essayer de présenter les possibilités offertes par la BAN et les outils associés pour faciliter le géocodage.
 
