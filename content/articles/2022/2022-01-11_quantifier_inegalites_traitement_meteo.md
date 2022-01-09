@@ -120,10 +120,8 @@ Pour ce qui est de la partie relative aux prévisions de couverture (nuages, plu
 [Consulter le code R :fontawesome-regular-file-code:](https://github.com/Valexandre/zones_meteo/blob/main/code.R){: .md-button }
 {: align=middle }
 
-<!-- markdownlint-disable MD046 -->
 !!! info "A noter"
     Comme vous pouvez vous en douter, ce projet a été réalisé sur mon temps personnel et n'a pas vocation à enfreindre les droits à l'image de la (excellente au demeurant) présentatrice en question, que je remercie d'avoir publié ces vidéos et ainsi m'avoir permis d'avoir enfin une réponse à une question de canapé.
-<!-- markdownlint-enable MD046 -->
 
 ----
 
