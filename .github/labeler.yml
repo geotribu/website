@@ -10,7 +10,7 @@ contribution:
 
 dependencies:
     - ./**/requirements.txt
-    - requirements.txt
+    - requirements*.txt
 
 mkdocs:
     - content/**/*.pages
