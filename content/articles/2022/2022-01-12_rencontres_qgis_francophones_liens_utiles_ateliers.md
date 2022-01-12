@@ -43,7 +43,7 @@ L'occasion de mettre les liens utiles pour assister à l'événement et de me ra
 La journée du 18 est dédiée aux ateliers auxquels il faut être inscrit/e (et débité/e) et qui ne seront pas enregistrés. Il n'y a donc rien à voir pour celles et ceux qui n'ont pas leur Pass Workshopaire, circulez !
 
 En revanche, pour la journée du 19, il va y avoir du stream et du tchat pour nous ; de la sueur et des larmes pour l'hébergeur !  
-Cette année, c'est la solution de la [société k-prod](https://k-prod.fr/) qui a été retenue d'après [les derniers échanges](https://gitlab.com/osgeo-fr/journees_qgis/-/issues/98), qui intègre son propre outil de tchat et ne requirt aucune création de compte. Les vidéos seront par la suite hébergées sur Youtube et/ou PerTube pour se les remater pépouze dans son fauteuil :
+Cette année, c'est la solution de la [société k-prod](https://k-prod.fr/) qui a été retenue d'après [les derniers échanges](https://gitlab.com/osgeo-fr/journees_qgis/-/issues/98), qui intègre son propre outil de tchat et ne requiert aucune création de compte. Les vidéos seront par la suite hébergées sur Youtube et/ou PeerTube pour se les remater pépouze dans son fauteuil :
 
 !!! info "Teasing"
     Le lien du stream n'est pas encore défini donc l'article sera mis à jour dès qu'on en aura connaissance.
