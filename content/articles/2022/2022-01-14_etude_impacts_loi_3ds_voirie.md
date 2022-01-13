@@ -36,7 +36,8 @@ Let's go !
 * Un client d'accès à la base de données type [_pgAdmin_](https://www.pgadmin.org/) ou [_DBeaver_](https://dbeaver.io/).
 * La BD Topo® de l'IGN sur l'emprise d'étude.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }{: align=middle }
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 ----
 
