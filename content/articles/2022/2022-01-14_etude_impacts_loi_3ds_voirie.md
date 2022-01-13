@@ -291,7 +291,7 @@ Il est désormais possible d'utiliser les ratios obtenus avec la dernière requ�
 
 J'apprécie ce type de d'analyses qui montrent bien que la géomatique ne se limite pas à la cartographie. Elles permettent à partir de quelques requêtes sur un jeu de donnée géographique de sortir des indicateurs assez fins qui pourront aider la direction en charge des routes et les élus pour la prise de décisions.
 
-A noter que les requêtes peuvent facilement être adaptées pour les autres Départements. Il suffit pour cela de cibler la table PostgreSQL qui contient les données source et modifier le filtre appliqué sur les champs `insee_commune_droite` et `insee_commune_gauche`.
+A noter que les requêtes peuvent facilement être adaptées pour les autres Départements. Il suffit pour cela de cibler la table PostgreSQL qui contient les données sources et modifier le filtre appliqué sur les champs `insee_commune_droite` et `insee_commune_gauche`.
 
 ## Auteur
 
