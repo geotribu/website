@@ -1,5 +1,5 @@
 ---
-title: "3DS : Mesurer l'impact du transfert des routes du réseau national aux Départements avec PostgreSQL/PostGIS"
+title: "3DS : mesurer l'impact du transfert des Routes Nationales aux Départements"
 authors:
     - Michaël GALIEN
 categories:
@@ -16,7 +16,7 @@ tags:
     - Voirie
 ---
 
-# 3DS : Mesurer l'impact du transfert des routes du réseau national aux Départements avec PostgreSQL/PostGIS
+# 3DS : mesurer l'impact du transfert des Routes Nationales aux Départements
 
 ## Introduction
 
@@ -36,6 +36,10 @@ Let's go !
 * Un client d'accès à la base de données type [_pgAdmin_](https://www.pgadmin.org/) ou [_DBeaver_](https://dbeaver.io/).
 * La BD Topo® de l'IGN sur l'emprise d'étude.
 
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }{: align=middle }
+
+----
+
 ## Données sources
 
 ![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "logo IGN"){: .img-rdp-news-thumb }
@@ -45,6 +49,8 @@ J'utilise pour cette analyse la [BD Topo® de l'IGN](https://geoservices.ign.fr/
 Je dispose des données France entière et je dois donc limiter l'analyse aux seuls tronçons du département du Gard (30).
 
 Afin ne pas avoir à réaliser une jointure géographique sur une autre table, je m'appuie sur les champs `insee_commune_droite` et `insee_commune_gauche`. Je vérifie que l'un ou l'autre matche avec le [COG](https://fr.wikipedia.org/wiki/Code_officiel_g%C3%A9ographique) d'une commune du Gard c'est à dire qu'il commence par 30.
+
+----
 
 ## Les requêtes réalisées
 
@@ -57,7 +63,7 @@ Je cherche pour cela les numéros distincts des Routes Nationales présentes sur
 !!! Note
     Le recours aux expressions régulières c'est clairement pour me la péter, j'aurais pu faire un `like`...mais ça a l'intérêt de montrer [l'opérateur ~](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP).
 
-```SQL
+```sql
 select distinct cpx_numero as "RN"
 from bdtopo_troncon_de_route
 where cpx_classement_administratif = 'Nationale'
@@ -83,7 +89,7 @@ Je calcule pour cela la somme (`sum`) des longueurs ([`ST_3DLength`](https://pos
 
 Le `group by` me permet d'avoir la longueur non pas totale mais par RN.
 
-```SQL
+```sql
 select cpx_numero as "RN", round(sum(ST_3DLength(geometrie))::numeric / 1000, 2) as "Km"
 from bdtopo_troncon_de_route
 where cpx_classement_administratif = 'Nationale'
@@ -110,7 +116,7 @@ En effet, les profils de RN sont variés et nécessitent un entretien adapté. U
 
 J'adapte ici la requête qui précède pour afficher les longueurs par nature et nombre de voies, ce qui donne la syntaxe suivante :
 
-```SQL
+```sql
 select nature as "Nature", nombre_de_voies as "Nb. voies", round(sum(ST_3DLength(geometrie))::numeric / 1000, 2) as "Km"
 from bdtopo_troncon_de_route
 where cpx_classement_administratif = 'Nationale'
@@ -146,7 +152,7 @@ Il est possible de déterminer ce nombre en se focalisant sur les tronçons de n
 
 Il reste ensuite à compter le nombre de cellules du tableau, ce qui donne la requête suivante :
 
-```SQL
+```sql
 select cpx_numero as "RN", array_length(ST_ClusterIntersecting(geometrie), 1) as "Nb. giratoires"
 from bdtopo_troncon_de_route
 where cpx_classement_administratif = 'Nationale'
@@ -184,7 +190,7 @@ J'ai fixé de façon empirique cette distance à 25 mètres dans les requêtes q
 
 Requête permettant de compter les ponts :
 
-```SQL
+```sql
 select cpx_numero as "RN", array_length(ST_ClusterWithin(geometrie, 25), 1) as "Nb. ouvrages"
 from bdtopo_troncon_de_route
 where cpx_classement_administratif = 'Nationale'
@@ -196,7 +202,7 @@ order by 1;
 
 Requête permettant de compter les tunnels :
 
-```SQL
+```sql
 select cpx_numero as "RN", array_length(ST_ClusterWithin(geometrie, 25), 1) as "Nb. ouvrages"
 from bdtopo_troncon_de_route
 where cpx_classement_administratif = 'Nationale'
@@ -234,7 +240,7 @@ Je peux ensuite calculer le ratio en prennant soin de gérer les cas aux limites
 
 Enfin, je trie le résultat dans l'ordre décroissant des valeurs ce qui donne la requête suivante :
 
-```SQL
+```sql
 with RN as (
     select nature as "Nature", nombre_de_voies as "Nb. voies", round(sum(ST_3DLength(geometrie))::numeric / 1000, 2) as "Km"
     from bdtopo_troncon_de_route
@@ -283,6 +289,8 @@ Le requête s'exécute, sur mon infra, pendant plus de 2 minutes avant de donner
 |Route à 1 chaussée|1|4.78|790.90|0.60%|
 |Route empierrée|NULL|0|0.41|0.00%|
 
+----
+
 ## Bilan
 
 En conclusion, le couple PostgreSQL/PostGIS a permis d'évaluer assez rapidement l'impact de la loi 3DS en mesurant quelques indicateurs routiers à partir des données présentes dans la BD Topo® de l'IGN.
@@ -292,6 +300,8 @@ Il est désormais possible d'utiliser les ratios obtenus avec la dernière requ�
 J'apprécie ce type de d'analyses qui montrent bien que la géomatique ne se limite pas à la cartographie. Elles permettent à partir de quelques requêtes sur un jeu de donnée géographique de sortir des indicateurs assez fins qui pourront aider la direction en charge des routes et les élus pour la prise de décisions.
 
 A noter que les requêtes peuvent facilement être adaptées pour les autres Départements. Il suffit pour cela de cibler la table PostgreSQL qui contient les données sources et modifier le filtre appliqué sur les champs `insee_commune_droite` et `insee_commune_gauche`.
+
+----
 
 ## Auteur
 
