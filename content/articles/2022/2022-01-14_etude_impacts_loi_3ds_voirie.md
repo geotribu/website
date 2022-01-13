@@ -26,14 +26,14 @@ Et non, je ne vais pas vous parler dans cet article de la célèbre console Nint
 
 La loi ambitionne de [donner aux collectivités de nouvelles compétences](https://www.cnews.fr/france/2022-01-04/decentralisation-quest-ce-que-le-projet-3ds-qui-doit-etre-adopte-par-les-deputes), comprenant notamment le transfert d'une partie des Routes Nationales (RN) aux Départements, gestionnaires de la voirie départementale.
 
-C'est dans ce cadre que le Département du Gard a souhaité analyser l'impact pour son organisation de ce transfert de la voirie nationale vers la voirie départementale.
+C'est dans ce cadre que le [Département du Gard](http://www.gard.fr/accueil.html) a souhaité analyser l'impact pour son organisation de ce transfert de la voirie nationale vers la voirie départementale.
 
 Let's go !
 
 **Pré-requis :**
 
 * Une base de données PostgreSQL/PostGIS.
-* Un client d'accès à la base de données type _pgAdmin_ ou _DBeaver_.
+* Un client d'accès à la base de données type [_pgAdmin_](https://www.pgadmin.org/) ou [_DBeaver_](https://dbeaver.io/).
 * La BD Topo® de l'IGN sur l'emprise d'étude.
 
 ## Données sources
@@ -54,7 +54,8 @@ Le premier besoin est d'identifier la liste des Routes Nationales sur le territo
 
 Je cherche pour cela les numéros distincts des Routes Nationales présentes sur l'emprise d'étude grâce à la requête suivante :
 
-NB : Le recours aux expressions régulières c'est clairement pour me la péter, j'aurais pu faire un `like`...mais ça a l'intérêt de montrer [l'opérateur ~](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP).
+!!! Note
+    Le recours aux expressions régulières c'est clairement pour me la péter, j'aurais pu faire un `like`...mais ça a l'intérêt de montrer [l'opérateur ~](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP).
 
 ```SQL
 select distinct cpx_numero as "RN"
@@ -173,7 +174,7 @@ Les ouvrages d'art (ponts, tunnels, etc.) nécessitent un entretien suivi et une
 
 Pour les identifier, j'utilise cette fois l'attribut `position_par_rapport_au_sol`.
 
-Ici la fonction [`ST_ClusterIntersecting`](https://postgis.net/docs/ST_ClusterIntersecting.html) ne convient pas car en visualisant les données, on remarque que plusieurs ouvrages supportent deux chaussées séparées et donc deux géométries distinctes dans la BD Topo®.
+Ici, la fonction [`ST_ClusterIntersecting`](https://postgis.net/docs/ST_ClusterIntersecting.html) ne convient pas car en visualisant les données, on remarque que plusieurs ouvrages supportent deux chaussées séparées et donc deux géométries distinctes dans la BD Topo®.
 
 ![Chaussées séparées soutenues par un OA](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-oa.png "Chaussées séparées soutenues par un OA"){: .img-center loading=lazy }
 
@@ -288,9 +289,9 @@ En conclusion, le couple PostgreSQL/PostGIS a permis d'évaluer assez rapidement
 
 Il est désormais possible d'utiliser les ratios obtenus avec la dernière requête pour estimer l'impact financier et les besoins RH associés au transfert de la voirie nationale vers les Départements.
 
-Les requêtes peuvent être adaptées pour les autres départements en modifiant simplement le filtre appliqué sur les champs `insee_commune_droite` et `insee_commune_gauche`.
-
 J'apprécie ce type de d'analyses qui montrent bien que la géomatique ne se limite pas à la cartographie. Elles permettent à partir de quelques requêtes sur un jeu de donnée géographique de sortir des indicateurs assez fins qui pourront aider la direction en charge des routes et les élus pour la prise de décisions.
+
+A noter que les requêtes peuvent être adaptées pour les autres Départements en ciblant la table PostgreSQL qui contient les données et modifiant le filtre appliqué sur les champs `insee_commune_droite` et `insee_commune_gauche`.
 
 ## Auteur
 
