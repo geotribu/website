@@ -1,5 +1,5 @@
 ---
-title: "3DS : Impacts du déclassement du réseau routier national aux départements"
+title: "3DS : Mesurer l'impact du transfert des routes du réseau national aux Départements avec PostgreSQL/PostGIS"
 authors:
     - Michaël GALIEN
 categories:
@@ -16,7 +16,7 @@ tags:
     - Voirie
 ---
 
-# 3DS : Impacts du déclassement du réseau routier national aux départements
+# 3DS : Mesurer l'impact du transfert des routes du réseau national aux Départements avec PostgreSQL/PostGIS
 
 ## Introduction
 
@@ -24,9 +24,7 @@ Et non, je ne vais pas vous parler dans cet article de la célèbre console Nint
 
 ![Loi 3DS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png "Loi 3DS"){: .img-center loading=lazy }
 
-Les fonctionnaires territoriaux connaissent par coeur les 3 actes de la décentralisation, la loi 3DS sera peut-être considérée comme le quatrième acte.
-
-La loi ambitionne de [donner aux collectivités de nouvelles compétences](https://www.cnews.fr/france/2022-01-04/decentralisation-quest-ce-que-le-projet-3ds-qui-doit-etre-adopte-par-les-deputes). Il y est notamment question du transfert des routes nationales (RN) aux départements.
+La loi ambitionne de [transférer aux collectivités de nouvelles compétences](https://www.cnews.fr/france/2022-01-04/decentralisation-quest-ce-que-le-projet-3ds-qui-doit-etre-adopte-par-les-deputes). Il y est notamment question du transfert des routes nationales (RN) aux départements.
 
 C'est dans ce cadre que le département du Gard m'a demandé d'analyser les impacts de ce transfert sur nos organisations.
 
