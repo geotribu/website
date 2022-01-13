@@ -169,7 +169,7 @@ Il sera donc question pour le Gard d'assurer la gestion de 36 nouveaux giratoire
 
 ### Et les ponts ? Et les tunnels ?
 
-Les ouvrages d'art nécessitent une attention particulière. Il est donc utile de savoir combien d'ouvrages se trouvent sur l'actuel réseau national.
+Les ouvrages d'art nécessitent un entretien suivi et une organisation de service spécifique. Il est donc utile de le nombre d'ouvrages d'art se trouvant actuellement sur le réseau routier national.
 
 Pour les identifier, j'utilise cette fois l'attribut `position_par_rapport_au_sol`.
 
