@@ -293,6 +293,8 @@ Le requête s'exécute, sur mon infra, pendant plus de 2 minutes avant de donner
 
 ## Bilan
 
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: .img-rdp-news-thumb }
+
 En conclusion, le couple PostgreSQL/PostGIS a permis d'évaluer assez rapidement l'impact de la loi 3DS en mesurant quelques indicateurs routiers à partir des données présentes dans la BD Topo® de l'IGN.
 
 Il est désormais possible d'utiliser les ratios obtenus avec la dernière requête pour estimer l'impact financier et les besoins RH associés au transfert de la voirie nationale vers les Départements.
