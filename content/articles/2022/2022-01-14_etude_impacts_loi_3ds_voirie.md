@@ -141,7 +141,7 @@ La requête me permet d'obtenir les mesures suivantes :
 
 Grâce à la requête précédente, on apprend qu'environ 5 Km de ronds-points pourraient être transférés au Département du Gard, il serait intéressant de connaître le nombre exact de giratoires que cela représente.
 
-Il est possible de répondre à cette question en se focalisant sur les tronçons de nature _Rond-point_ et à l'aide de la fonction [`ST_ClusterIntersecting`](https://postgis.net/docs/ST_ClusterIntersecting.html), qui retourne un tableau dont chaque cellule agrège les géométries qui s'intersectent.
+Il est possible de déterminer ce nombre en se focalisant sur les tronçons de nature _Rond-point_ et à l'aide de la fonction [`ST_ClusterIntersecting`](https://postgis.net/docs/ST_ClusterIntersecting.html), qui retourne un tableau dont chaque cellule agrège les géométries qui s'intersectent.
 
 Il reste ensuite à compter le nombre de cellules du tableau, ce qui donne la requête suivante :
 
@@ -169,7 +169,7 @@ Il sera donc question pour le Gard d'assurer la gestion de 36 nouveaux giratoire
 
 ### Et les ponts ? Et les tunnels ?
 
-Les ouvrages d'art nécessitent un entretien suivi et une organisation de service spécifique. Il est donc utile de le nombre d'ouvrages d'art se trouvant actuellement sur le réseau routier national.
+Les ouvrages d'art (ponts, tunnels, etc.) nécessitent un entretien suivi et une organisation de service spécifique. Il est donc utile de connaitre le nombre d'ouvrages d'art se trouvant actuellement sur le réseau routier national.
 
 Pour les identifier, j'utilise cette fois l'attribut `position_par_rapport_au_sol`.
 
@@ -288,7 +288,9 @@ En conclusion, le couple PostgreSQL/PostGIS a permis d'évaluer assez rapidement
 
 Il est désormais possible d'utiliser les ratios obtenus avec la dernière requête pour estimer l'impact financier et les besoins RH associés au transfert de la voirie nationale vers les Départements.
 
-J'apprécie ce type d'analyse, qui permet à partir de quelques requêtes sur un jeu de donnée géographique de sortir une analyse assez fine qui pourra aider la direction des routes, à laquelle je suis rattaché, et les élus à la prise de décision. Cela montre par ailleurs que la géomatique ne se limite pas à la cartographie.
+Les requêtes peuvent être adaptées pour les autres départements en modifiant simplement le filtre appliqué sur les champs `insee_commune_droite` et `insee_commune_gauche`.
+
+J'apprécie ce type de d'analyses qui montrent bien que la géomatique ne se limite pas à la cartographie. Elles permettent à partir de quelques requêtes sur un jeu de donnée géographique de sortir des indicateurs assez fins qui pourront aider la direction en charge des routes et les élus pour la prise de décisions.
 
 ## Auteur
 
