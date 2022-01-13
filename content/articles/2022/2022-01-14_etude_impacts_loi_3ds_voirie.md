@@ -1,11 +1,11 @@
 ---
-title: "3DS : Impacts du déclassement du réseau routier national aux départements"
+title: "3DS : Mesurer l'impact du transfert des routes du réseau national aux Départements avec PostgreSQL/PostGIS"
 authors:
     - Michaël GALIEN
 categories:
     - article
 date: "2022-01-14 10:00"
-description: "Etude d'impacts du déclassement de la voirie nationale aux départements dans le cadre de la loi 3DS ; loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale."
+description: "Etude d'impacts du déclassement de la voirie nationale aux Départements dans le cadre de la loi 3DS ; loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png"
 tags:
     - Loi 3DS
@@ -16,7 +16,7 @@ tags:
     - Voirie
 ---
 
-# 3DS : Impacts du déclassement du réseau routier national aux départements
+# 3DS : Mesurer l'impact du transfert des routes du réseau national aux Départements avec PostgreSQL/PostGIS
 
 ## Introduction
 
@@ -24,11 +24,9 @@ Et non, je ne vais pas vous parler dans cet article de la célèbre console Nint
 
 ![Loi 3DS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png "Loi 3DS"){: .img-center loading=lazy }
 
-Les fonctionnaires territoriaux connaissent par coeur les 3 actes de la décentralisation, la loi 3DS sera peut-être considérée comme le quatrième acte.
+La loi ambitionne de [donner aux collectivités de nouvelles compétences](https://www.cnews.fr/france/2022-01-04/decentralisation-quest-ce-que-le-projet-3ds-qui-doit-etre-adopte-par-les-deputes), comprenant notamment le transfert d'une partie des Routes Nationales (RN) aux Départements, gestionnaires de la voirie départementale.
 
-La loi ambitionne de [donner aux collectivités de nouvelles compétences](https://www.cnews.fr/france/2022-01-04/decentralisation-quest-ce-que-le-projet-3ds-qui-doit-etre-adopte-par-les-deputes). Il y est notamment question du transfert des routes nationales (RN) aux départements.
-
-C'est dans ce cadre que le département du Gard m'a demandé d'analyser les impacts de ce transfert sur nos organisations.
+C'est dans ce cadre que le Département du Gard a souhaité analyser l'impact pour son organisation de ce transfert de la voirie nationale vers la voirie départementale.
 
 Let's go !
 
@@ -36,26 +34,25 @@ Let's go !
 
 * Une base de données PostgreSQL/PostGIS.
 * Un client d'accès à la base de données type _pgAdmin_ ou _DBeaver_.
-* La BDTopo sur l'emprise d'étude.
+* La BD Topo® de l'IGN sur l'emprise d'étude.
 
 ## Données sources
 
 ![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "logo IGN"){: .img-rdp-news-thumb }
 
-J'utilise pour cette analyse la BDTopo de l'IGN et plus précisément la classe _troncon_de_route_ du thème _transport_ que j'ai importée dans une table nommée `bdtopo_troncon_de_route`.
+J'utilise pour cette analyse la [BD Topo® de l'IGN](https://geoservices.ign.fr/bdtopo) et plus précisément la classe _troncon_de_route_ du thème _transport_ que j'ai importée dans une table nommée `bdtopo_troncon_de_route`.
 
-Je dispose des données France entière et je dois donc limiter l'analyse aux seuls tronçons du département.
+Je dispose des données France entière et je dois donc limiter l'analyse aux seuls tronçons du département du Gard (30).
 
-Je pourrais pour cela faire une jointure géographique mais pour ne pas avoir à utiliser une autre table, je m'appuie sur les champs `insee_commune_droite` et `insee_commune_gauche`. Je regarde que l'un ou l'autre matche le COG d'une commune du Gard c'est à dire qu'il commence par 30.
+Afin ne pas avoir à réaliser une jointure géographique sur une autre table, je m'appuie sur les champs `insee_commune_droite` et `insee_commune_gauche`. Je vérifie que l'un ou l'autre matche avec le [COG](https://fr.wikipedia.org/wiki/Code_officiel_g%C3%A9ographique) d'une commune du Gard c'est à dire qu'il commence par 30.
 
-## Les requêtes
+## Les requêtes réalisées
 
-### RN concernées
+### Les Routes Nationales (RN) concernées
 
+Le premier besoin est d'identifier la liste des Routes Nationales sur le territoire d'étude.
 
-Le premier besoin est simplement de connaître la liste des routes nationales concernées.
-
-Je cherche pour cela les numéros distincts des nationales présentes sur l'emprise d'étude grâce à la requête suivante :
+Je cherche pour cela les numéros distincts des Routes Nationales présentes sur l'emprise d'étude grâce à la requête suivante :
 
 NB : Le recours aux expressions régulières c'est clairement pour me la péter, j'aurais pu faire un `like`...mais ça a l'intérêt de montrer [l'opérateur ~](https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP).
 
@@ -79,7 +76,7 @@ Le résultat obtenu est le suivant :
 
 ### Longueur en Km par RN
 
-Vient ensuite la question du nombre de Km supplémentaires de voirie que le département aura en gestion.
+Vient ensuite la question du nombre de Km supplémentaires de voirie que le Département aura en gestion.
 
 Je calcule pour cela la somme (`sum`) des longueurs ([`ST_3DLength`](https://postgis.net/docs/ST_3DLength.html)) des tronçons. La valeur obtenue est convertie en Km puis arrondie à deux décimales (`round`).
 
@@ -106,11 +103,11 @@ Le résultat tombe :
 
 ### Longueur en Km par nature et nombre de voies
 
-Si ces premiers indicateurs sont intéressants, ils ne permettent pas de bien mesurer les incidences pour le département.
+Cette première liste des RN avec les longueurs associées est intéressante mais elle ne permet pas de mesurer précisément l'impact pour le Département du Gard.
 
-En effet, les profils de routes sont variés et nécessitent un entretien adapté. Une 2 * 2 sera plus consommatrice de ressources qu'une simple chaussée.
+En effet, les profils de RN sont variés et nécessitent un entretien adapté. Une 2 * 2 voies sera plus consommatrice de ressources qu'une simple chaussée.
 
-J'adapte ici la requête qui précède pour afficher les longueurs par nature et nombre de voies, ce qui donne :
+J'adapte ici la requête qui précède pour afficher les longueurs par nature et nombre de voies, ce qui donne la syntaxe suivante :
 
 ```SQL
 select nature as "Nature", nombre_de_voies as "Nb. voies", round(sum(ST_3DLength(geometrie))::numeric / 1000, 2) as "Km"
@@ -142,11 +139,11 @@ La requête me permet d'obtenir les mesures suivantes :
 
 ### Nombre de giratoires
 
-On a appris grâce au résultat qui précède que le département devrait récupérer l'équivalent d'environ 5 Km de ronds-points, mais combien de giratoires cela représente ?
+Grâce à la requête précédente, on apprend qu'environ 5 Km de ronds-points pourraient être transférés au Département du Gard, il serait intéressant de connaître le nombre exact de giratoires que cela représente.
 
-Il est possible de répondre à cette question en se focalisant sur les tronçons de nature _Rond-point_ et à l'aide de la fonction [`ST_ClusterIntersecting`](https://postgis.net/docs/ST_ClusterIntersecting.html). Celle-ci retourne un tableau dont chaque cellule agrège les géométries qui s'intersectent.
+Il est possible de répondre à cette question en se focalisant sur les tronçons de nature _Rond-point_ et à l'aide de la fonction [`ST_ClusterIntersecting`](https://postgis.net/docs/ST_ClusterIntersecting.html), qui retourne un tableau dont chaque cellule agrège les géométries qui s'intersectent.
 
-Il ne reste alors plus qu'à compter le nombre de cellules du tableau, ce qui donne :
+Il reste ensuite à compter le nombre de cellules du tableau, ce qui donne la requête suivante :
 
 ```SQL
 select cpx_numero as "RN", array_length(ST_ClusterIntersecting(geometrie), 1) as "Nb. giratoires"
@@ -176,19 +173,15 @@ Les ouvrages d'art nécessitent une attention particulière. Il est donc utile d
 
 Pour les identifier, j'utilise cette fois l'attribut `position_par_rapport_au_sol`.
 
-Ma première idée était de réutiliser la fonction [`ST_ClusterIntersecting`](https://postgis.net/docs/ST_ClusterIntersecting.html) mais celle-ci présente une limite pour ce cas d'usage.
-
-Lorsqu'on regarde en détail, on remarque que plusieurs ouvrages supportent 2 chaussées séparées et donc 2 lignes distinctes dans la BDTopo.
+Ici la fonction [`ST_ClusterIntersecting`](https://postgis.net/docs/ST_ClusterIntersecting.html) ne convient pas car en visualisant les données, on remarque que plusieurs ouvrages supportent deux chaussées séparées et donc deux géométries distinctes dans la BD Topo®.
 
 ![Chaussées séparées soutenues par un OA](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-oa.png "Chaussées séparées soutenues par un OA"){: .img-center loading=lazy }
 
-Pour contourner ce cas, j'utilise plutôt la fonction [`ST_ClusterWithin`](https://postgis.net/docs/ST_ClusterWithin.html).
+Pour gérer ce cas, j'utilise la fonction [`ST_ClusterWithin`](https://postgis.net/docs/ST_ClusterWithin.html) qui permet d'agréger des géométries dès lors qu'elles sont à moins d'une distance donnée.
 
-Son fonctionnement est équivalent mais les géométries sont cette fois agrégées dès lors qu'elles sont à moins d'une distance donnée.
+J'ai fixé de façon empirique cette distance à 25 mètres dans les requêtes qui suivent. La distance utilisée doit être suffisante pour raccrocher les deux géométries représentant les chaussées séparées mais pas trop importante afin d'éviter d'associer à tord deux ouvrages qui seraient proches.
 
-J'ai fixé de façon empirique cette distance à 25 mêtres dans les requêtes qui suivent. La mesure doit être suffisante pour raccrocher les chaussées séparées mais pas trop importante pour ne pas associer à tord deux ouvrages qui seraient proches.
-
-Requête de comptage des ponts :
+Requête permettant de compter les ponts :
 
 ```SQL
 select cpx_numero as "RN", array_length(ST_ClusterWithin(geometrie, 25), 1) as "Nb. ouvrages"
@@ -200,7 +193,7 @@ group by cpx_numero
 order by 1;
 ```
 
-Requête de comptage des tunnels :
+Requête permettant de compter les tunnels :
 
 ```SQL
 select cpx_numero as "RN", array_length(ST_ClusterWithin(geometrie, 25), 1) as "Nb. ouvrages"
@@ -230,7 +223,7 @@ et :
 
 ### Pourcentage d'évolution
 
-Plus que les distances, il est surtout intéressant de mesurer l'évolution du linéaire que cela représente.
+Plus que les distances, il est surtout intéressant de mesurer l'évolution du linéaire que cela représente par rapport à l'actuelle voirie départementale gérée par le Département du Gard.
 
 Pour cela, je reprends la requête de calcul des longueurs par nature et nombre de voies, vue plus haut, que j'applique aux routes nationales et aux routes départementales.
 
@@ -291,11 +284,11 @@ Le requête s'exécute, sur mon infra, pendant plus de 2 minutes avant de donner
 
 ## Bilan
 
-En conclusion, on peut voir qu'il est assez rapide de produire quelques indicateurs routiers à l'aide de la BDTopo IGN et grâce au couple PostgreSQL/PostGIS.
+En conclusion, le couple PostgreSQL/PostGIS a permis d'évaluer assez rapidement l'impact de la loi 3DS en mesurant quelques indicateurs routiers à partir des données présentes dans la BD Topo® de l'IGN.
 
-Les ratios obtenus avec la dernière requête peuvent être appliqués aux ressources financières et humaines actuelles pour en déduire les besoins futurs.
+Il est désormais possible d'utiliser les ratios obtenus avec la dernière requête pour estimer l'impact financier et les besoins RH associés au transfert de la voirie nationale vers les Départements.
 
-Ce que j'apprécie avec ce type d'analyse c'est que d'une donnée géographique sont déduits plusieurs indicateurs...preuve que la géomatique ne se limite pas à la cartographie.
+J'apprécie ce type d'analyse, qui permet à partir de quelques requêtes sur un jeu de donnée géographique de sortir une analyse assez fine qui pourra aider la direction des routes, à laquelle je suis rattaché, et les élus à la prise de décision. Cela montre par ailleurs que la géomatique ne se limite pas à la cartographie.
 
 ## Auteur
 
