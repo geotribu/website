@@ -20,7 +20,7 @@ tags:
 
 ## Introduction
 
-Et non, je ne vais pas vous parler dans cet article de la célèbre console Nintento (11 ans déjà) mais de la loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale.
+Et non, je ne vais pas vous parler dans cet article de la célèbre console Nintendo (11 ans déjà) mais de la loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale.
 
 ![Loi 3DS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png "Loi 3DS"){: .img-center loading=lazy }
 
@@ -239,7 +239,7 @@ Je mets face à face les chiffres obtenus à l'aide d'un `full join` (c'est à d
 
 Je peux ensuite calculer le ratio en prennant soin de gérer les cas aux limites (division par null et 0) notamment à l'aide de la fonction [`coalesce`](https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL).
 
-Enfin, je trie le résultat dans l'ordre décroissant des valeurs ce qui donne la requête suivante :
+Enfin, je trie le résultat dans l'ordre décroissant des valeurs, ce qui donne la requête suivante :
 
 ```sql
 with RN as (
