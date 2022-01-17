@@ -58,7 +58,7 @@ Cette année, c'est la solution de la [société k-prod](https://k-prod.fr/) qui
 Sinon vous pouvez suivre ici même :
 
 <iframe
-  src="https://qgis.k-prod.fr/"
+  src="https://qgis.k-prod.fr"
   title="Owncast - Stream"
   height="400px" width="100%"
   referrerpolicy="origin"
@@ -69,7 +69,7 @@ Sinon vous pouvez suivre ici même :
 Et lire le tchat :
 
 <iframe
-  src="https://qgis.k-prod.fr/embed/chat/readwrite/"
+  src="https://qgis.k-prod.fr/embed/chat/readwrite"
   title="Owncast - Chat"
   height="500px" width="100%"
   referrerpolicy="origin"
