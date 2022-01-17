@@ -49,7 +49,7 @@ Cette année, c'est la solution de la [société k-prod](https://k-prod.fr/) qui
     Le lien du stream n'est pas encore défini donc l'article sera mis à jour dès qu'on en aura connaissance.
 
 <!-- [La chaîne Youtube :fontawesome-brands-youtube:](https://www.youtube.com/channel/UCoD81MU2SrJ4tBvdx4kqIbQ/){: .md-button } -->
-[Se connecter au live (Owncast) :fontawesome-solid-video:](https://qgis.k-prod.fr/){: .md-button }
+[Assister au live (Owncast) :fontawesome-solid-video:](https://qgis.k-prod.fr/){: .md-button }
 {: align=middle }
 
 !!! tip "Le bon plan de 14h25"
