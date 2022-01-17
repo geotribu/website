@@ -10,4 +10,6 @@
     "git.ignoreLimitWarning": true,
     // Extensions
     "cSpell.language": "fr",
+    "git.alwaysSignOff": true,
+    "git.enableCommitSigning": false
 }

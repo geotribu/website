@@ -55,28 +55,6 @@ Cette année, c'est la solution de la [société k-prod](https://k-prod.fr/) qui
 !!! tip "Le bon plan de 14h25"
     Ne manquez pas la présentation de Florian sur la carte topo à partir des données IGN ou OSM (voir aussi [cet article](/articles/2021/2021-05-28_carte_topo_qgis/)).
 
-Sinon vous pouvez suivre ici même :
-
-<iframe
-  src="https://qgis.k-prod.fr"
-  title="Owncast - Stream"
-  height="400px" width="100%"
-  referrerpolicy="origin"
-  scrolling="no"
-  allowfullscreen>
-</iframe>
-
-Et lire le tchat :
-
-<iframe
-  src="https://qgis.k-prod.fr/embed/chat/readwrite"
-  title="Owncast - Chat"
-  height="500px" width="100%"
-  referrerpolicy="origin"
-  scrolling="no"
-  allowfullscreen>
-</iframe>
-
 ### Objectif parité
 
 ![icône globes divers](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globes divers"){: .img-rdp-news-thumb }
