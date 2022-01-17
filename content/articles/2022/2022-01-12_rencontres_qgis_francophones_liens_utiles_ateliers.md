@@ -48,12 +48,47 @@ Cette année, c'est la solution de la [société k-prod](https://k-prod.fr/) qui
 !!! info "Teasing"
     Le lien du stream n'est pas encore défini donc l'article sera mis à jour dès qu'on en aura connaissance.
 
-<!-- [Se connecter au live :fontawesome-solid-video:](#){: .md-button } -->
-[La chaîne Youtube de l'OSGeo FR :fontawesome-brands-youtube:](https://www.youtube.com/channel/UCS5cwMgoLG06fwu0LiDMVsQ/){: .md-button }
+<!-- [La chaîne Youtube :fontawesome-brands-youtube:](https://www.youtube.com/channel/UCoD81MU2SrJ4tBvdx4kqIbQ/){: .md-button } -->
+[Se connecter au live (Owncast) :fontawesome-solid-video:](https://qgis.k-prod.fr/){: .md-button }
 {: align=middle }
 
 !!! tip "Le bon plan de 14h25"
     Ne manquez pas la présentation de Florian sur la carte topo à partir des données IGN ou OSM (voir aussi [cet article](/articles/2021/2021-05-28_carte_topo_qgis/)).
+
+Sinon vous pouvez suivre ici même :
+
+<iframe
+  src="https://qgis.k-prod.fr/"
+  title="Owncast - Stream"
+  height="400px" width="100%"
+  referrerpolicy="origin"
+  scrolling="no"
+  allowfullscreen>
+</iframe>
+
+Et lire le tchat :
+
+<iframe
+  src="https://qgis.k-prod.fr/embed/chat/readwrite/"
+  title="Owncast - Chat"
+  height="500px" width="100%"
+  referrerpolicy="origin"
+  scrolling="no"
+  allowfullscreen>
+</iframe>
+
+### Objectif parité
+
+![icône globes divers](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globes divers"){: .img-rdp-news-thumb }
+
+Lors de la phase d'organisation de l'événement (pour rappel, ouverte à toutes les bonnes volontés) et en particulier de la constitution du programme, la question de la sous-représentation d'intervenan**tes** (ou la sur-représentation d'intervenan**ts** ?) est [apparue](https://gitlab.com/osgeo-fr/journees_qgis/-/issues/78#note_751448228).
+
+Elle se pose régulièrement, voire devient incontournable dans ce genre d'événement. Ici aussi sur Geotribu, la question s'impose d'elle-même où nous ne parvenons pas à compter de femme dans nos rangs réguliers (en ponctuel sur les GeoRDP, Françoise B. et Delphine M. nous sauvent la mise...) depuis le départ de Julie Pierson, très investie par ailleurs dans la dynamique de l'OSGeo France.
+
+Pour avancer sur [le sujet](https://gitlab.com/osgeo-fr/journees_qgis/-/issues/96), Marie Jagaille, partie prenante du collectif [Women in Copernicus](https://womenincopernicus.eu/) a proposé que la problématique gagne en visibilité et qu'on se donne les moyens de comprendre en posant la question à l'occasion de l'événement via ce formulaire qu'on vous invite à remplir soigneusement :
+
+[Répondre au formulaire sur la quête paritaire :fontawesome-solid-people-carry:](https://framaforms.org/rencontres-des-utilisateurs-francophones-de-qgis-et-parite-1642158634){: .md-button }
+{: align=middle }
 
 ----
 
