@@ -9,5 +9,5 @@
     // Git
     "git.ignoreLimitWarning": true,
     // Extensions
-    "cSpell.language": "fr",
+    "cSpell.language": "fr"
 }
