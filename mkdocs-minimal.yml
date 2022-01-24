@@ -10,17 +10,23 @@ site_url: https://static.geotribu.fr/
 copyright: '<span class="copyleft">&copy;</span> Geotribu'
 
 # Custom folder structure
-docs_dir: './content'
-site_dir: './build/mkdocs/site'
+docs_dir: "./content"
+site_dir: "./build/mkdocs/site"
 
 # Plugins
 plugins:
   - awesome-pages
+  - exclude:
+      glob:
+        - "*/templates/*"
+        - "*.yml"
+  - macros:
+      include_dir: content/toc_nav_ignored/snippets
 
 # Theme
 theme:
-  name: 'material'
-  custom_dir: './content/theme/'
+  name: "material"
+  custom_dir: "./content/theme/"
   favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
 
   # Don't include MkDocs' JavaScript
@@ -28,15 +34,13 @@ theme:
   search_index_only: true
 
   features:
-    - navigation.instant
-    - navigation.expand
     - navigation.tabs
     - navigation.top
     - navigation.tracking
   font: false
   icon:
     repo: fontawesome/brands/github-alt
-  language: 'fr'
+  language: "fr"
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
     # Light mode
@@ -58,16 +62,17 @@ theme:
         name: Basculer en mode clair
 
 extra_css:
-  - 'theme/assets/stylesheets/extra.css'
-  - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css'
+  - "theme/assets/stylesheets/extra.css"
+  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css"
 
 extra_javascript:
-  - 'theme/assets/javascripts/extra.js'
-  - 'https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js'
-  - 'https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js'
+  - "theme/assets/javascripts/extra.js"
+  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js"
+  - "https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
+  - abbr
   - attr_list
   # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - admonition
@@ -85,23 +90,21 @@ markdown_extensions:
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.smartsymbols
+  - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
-      base_path: '.'
+      base_path: "."
       check_paths: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
-
-# Navigation - Menu organization
-# nav:
-#   - Accueil: index.md
-#   - acknowledgements.md
-#   - install_webapp.md

@@ -1,10 +1,21 @@
 ---
 title: Intégrer un tweet
-categories: ["article", "contribution", "tutoriel"]
+categories:
+    - article
+    - contribution
+    - tutoriel
 date: 2020-04-20 10:20
 description: "Guide de contribution à Geotribu : comment intégrer un tweet dans un contenu en Markdown."
 image: "https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_publish_website.png"
-tags: contribuer,twitter,tweet,embed,intégration,tutoriel
+tags:
+    - contribuer
+    - guide
+    - intégration
+    - Markdown
+    - Twitter
+# theme customizations
+search:
+  exclude: true
 ---
 
 <!-- markdownlint-disable MD046 -->
@@ -110,3 +121,11 @@ Techniquement, l'intégration des tweets repose sur l'intégration d'une balise 
 Conformément aux [recommandations de Twitter](https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/set-up-twitter-for-websites), le code Javascript est intégré au chargement du site et n'est donc chargé qu'une seule fois par les visiteurs de Geotribu.
 
 Pour plus d'infos, [consulter la Pull Request](https://github.com/geotribu/website/pull/54) qui a permis l'intégration propre des tweets.
+
+----
+
+## Exemples déjà publiés
+
+Voici quelques exemples de syntaxe markdown qui ont été publiés sur Geotribu :
+
+- [intégration du tweet de Sylvain Latarget annonçant l'ouverture des données de l'IGN](https://github.com/geotribu/website/blob/master/content/rdp/2020/rdp_2020-12-11.md?plain=1#L197)

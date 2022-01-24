@@ -1,18 +1,25 @@
 ---
 title: "Impact de Twitter sur la fréquentation du site GeoTribu"
-authors: ["Aurélien CHAUMET"]
-categories: ["article"]
+authors:
+    - Aurélien CHAUMET
+categories:
+    - article
 date: "2021-02-09 10:20"
 description: "Récupérer des données sociales de Twitter, les préparer et les représenter est assez simple, grâce à trois bibliothèques Python : Twint, Pandas et Plolty. L'exemple développé ici s'appuie sur les statistiques autour des GeoRDP et articles parus dans GeoTribu en 2020"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png"
-tags: twitter,scraping,twint,statistiques,geotribu,pandas,plotly
+tags:
+    - Geotribu
+    - Pandas
+    - Plotly
+    - scraping
+    - statistiques
+    - Twint
+    - Twitter
 ---
 
 # Impact de Twitter sur la fréquentation du site GeoTribu
 
 :calendar: Date de publication initiale : 9 février 2021
-
-**Mots-clés :** python | scraping | twint | statistiques | Geotribu
 
 Prérequis :
 
@@ -98,6 +105,7 @@ Vous trouverez plus d'informations sur [les fonctions utilisables ici](https://g
 !!! info
     Si vous souhaitez utiliser Twint via un [Jupyter Notebook](https://jupyter.org), il est important d'installer et d'importer la bibliothèque [`nest_asyncio`](https://github.com/erdewit/nest_asyncio).  
 
+    <!-- markdownlint-disable MD046 -->
     ```python
     # Pour l'installer
     pip3 install nest_asyncio
@@ -106,6 +114,7 @@ Vous trouverez plus d'informations sur [les fonctions utilisables ici](https://g
     import nest_asyncio
     nest_asyncio.apply()
     ```
+    <!-- markdownlint-enable MD046 -->
 
 ----
 

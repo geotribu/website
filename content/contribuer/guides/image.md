@@ -1,10 +1,24 @@
 ---
 title: "Intégrer une image"
-author: "Julien Moura"
-categories: ["article", "contribution", "tutoriel"]
+authors:
+    - Julien Moura
+categories:
+    - article
+    - contribution
+    - tutoriel
 date: 2020-04-20 10:20
 description: "Guide de contribution à Geotribu : comment intégrer une image dans un article ou une revue de presse et gérer le stockage commun."
-tags: contribuer,media,image,intégration,tutoriel,cdn
+tags:
+    - contribuer
+    - media
+    - image
+    - intégration
+    - tutoriel
+    - Markdown
+    - cdn
+# theme customizations
+search:
+  exclude: true
 ---
 <!-- markdownlint-disable MD046 -->
 
@@ -100,7 +114,7 @@ Le site intègre la bibliothèque [wa-mediabox](https://github.com/jirihybek/wa-
 
     Donc la structure type est :
 
-    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="ligthbox-gallery" data-title="Légende image"}`
+    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="lightbox-gallery" data-title="Légende image"}`
     ```
 
 === "Rendu"
@@ -115,7 +129,7 @@ Le site intègre la bibliothèque [wa-mediabox](https://github.com/jirihybek/wa-
 
     Donc la structure type est :
 
-    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="ligthbox-gallery" data-title="Légende image"}`
+    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="lightbox-gallery" data-title="Légende image"}`
 
 ### Style personnalisé
 
@@ -132,6 +146,18 @@ Au-delà des styles prédéfinis, il est évidemment possible de personnaliser �
 
     ![Bannière Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg "Bannière de Geotribu"){: width=100px loading=lazy align=middle } Par exemple, appliquer une largeur maximum, appliquer un centrage du texte et activer le chargement asynchrone sur une image. Ou centrer tout un paragraphe.
     {: text-align="center" }
+
+----
+
+## Parcourir les images sur le CDN de Geotribu
+
+L'accès en lecture à notre entrepôt d'images (un pseudo-CDN minimaliste) accumulées depuis toutes ces années est ouvert :gift_heart: :
+
+- adresse : <https://cdn.geotribu.fr>
+- identifiant : `invité`
+- mot de passe : `geotribu_bemyguest2020`
+
+En plus de permettre un petit voyage dans le temps, autant que toutes ces ressources servent en plus de notre site :smiley:. Merci de ne pas en abuser en respectant le *fair-use*. Pensez également à créditer les auteur/es.
 
 ----
 
@@ -201,6 +227,6 @@ Globalement, voici comment les images sont organisées :
     ![Clic doit copier l'adresse du lien](https://cdn.geotribu.fr/img/internal/contribution/embed_image/cdn_filemanager_get_image_url.png "Clic doit copier l'adresse du lien")
 
 <!-- Hyperlinks reference -->
-[CDN de Geotribu]: https://cdn.geotribu.fr/img/
+[CDN de Geotribu]: https://cdn.geotribu.fr/
 [lightbox]: https://en.wikipedia.org/wiki/Lightbox_(JavaScript)
 [markdown]: https://fr.wikipedia.org/wiki/Markdown

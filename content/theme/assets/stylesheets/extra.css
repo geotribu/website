@@ -1,3 +1,18 @@
+/* Horizontal menu (tabs) */
+.md-tabs__link {
+  font-size: .80rem;
+}
+.md-tabs__link--active {
+  color: var(--md-accent-fg-color);
+  font-weight: bold !important;
+}
+.md-tabs__link:hover {
+  color: var(--md-accent-fg-color--light);
+  font-size: .80rem !important;
+  font-weight: bold;
+  transition: 0.2s ease transform;
+}
+
 /* Custom images */
 /* attribute classes to be used via {: .class} */
 

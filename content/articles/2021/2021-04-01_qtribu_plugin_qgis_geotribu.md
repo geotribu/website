@@ -1,19 +1,23 @@
 ---
 title: "QTribu, le plugin QGIS inutile donc forcément indispensable"
-authors: ["Julien MOURA"]
-categories: ["article"]
+authors:
+    - Julien MOURA
+categories:
+    - article
 date: "2021-04-01 13:20"
 description: "Présentation du plugin de Geotribu pour QGIS : QTribu. Inutile donc forcément indispensable."
 image: "https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png"
 license: default
-tags: "QGIS,plugin,Geotribu,QTribu"
+tags:
+    - plugin
+    - Geotribu
+    - QGIS
+    - QTribu
 ---
 
 # QTribu, le plugin Geotribu pour QGIS
 
 :calendar: Date de publication initiale : 1er avril 2021
-
-**Mots-clés :** QGIS | plugin | délire | QTribu
 
 ## Un plugin sérieux pour ne pas se prendre au sérieux
 

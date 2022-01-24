@@ -1,4 +1,4 @@
-# Rémi Bovard
+# Rémi Bovard {: data-search-exclude }
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/rbov.png "portrait"){: .img-rdp-news-thumb }
 

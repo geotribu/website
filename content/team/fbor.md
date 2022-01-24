@@ -1,4 +1,4 @@
-# Florian Boret
+# Florian Boret  {: data-search-exclude }
 
 ![Portrait Florian Boret](https://cdn.geotribu.fr/img/internal/contributeurs/fbor.png "Portrait Florian Boret"){: .img-rdp-news-thumb }
 

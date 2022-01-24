@@ -1,18 +1,24 @@
 ---
 title: "Geotribu à la maison"
-authors: ["Julien Moura"]
-categories: ["article", "tutoriel"]
+authors:
+    - Julien MOURA
+categories:
+    - article
+    - tutoriel
 date: 2020-12-30 11:11
 description: "A l'instar de nombreux autres sites web, celui de Geotribu est un site statique. So what ? Pour comprendre, le mieux c'est encore de le déployer à la maison."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg"
-tags: geotribu,site statique,static website,github,serveur web
+tags:
+    - Geotribu
+    - GitHub
+    - serveur web
+    - site statique
+    - static website
 ---
 
 # Toi aussi, déploie le site Geotribu chez toi
 
 :calendar: Date de publication initiale : 30 décembre 2020
-
-**Mots-clés :** web | Geotribu
 
 Pré-requis : une connexion internet.
 

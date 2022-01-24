@@ -1,10 +1,23 @@
 ---
 title: "Rédiger en Markdown : enjeux de qualité et régles"
-categories: ["article", "contribution", "tutoriel"]
+categories:
+    - article
+    - contribution
+    - tutoriel
 date: 2020-09-14 14:20
 description: "Rédiger en Markdown : règles partagées, erreurs fréquentes et mécanismes de validation."
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_quick_exemple_rendu.png"
-tags: contribuer,tutoriel,markdown,rédaction,python,html,markdownlint
+tags:
+    - contribuer
+    - tutoriel
+    - Markdown
+    - rédaction
+    - HTML
+    - lint
+    - Python
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Rédiger en Markdown : règles et enjeux de qualité
@@ -57,6 +70,7 @@ En markdown, selon les implémentations, il est important de laisser des lignes 
 
 Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier élément d'une liste à puces, le rendu ne fonctionnera pas :
 
+<!-- markdownlint-disable MD046 -->
 === "Markdown"
 
     ```markdown
@@ -68,6 +82,7 @@ Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier
 === "Rendu"
 
     ![capture liste à puces](https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_list_broken.png "Rendu de la liste à puces cassé"){: .img-center loading=lazy }
+<!-- markdownlint-enable MD046 -->
 
 > Référence : [MD032 - Lists should be surrounded by blank lines](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032---lists-should-be-surrounded-by-blank-lines)
 

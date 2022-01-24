@@ -1,11 +1,21 @@
 ---
 title: "Choisir une licence"
-categories: ["article", "contribution", "tutoriel"]
+categories:
+    - article
+    - contribution
+    - tutoriel
 date: "2021-07-12 11:20"
 description: "Comment choisir et appliquer une licence à son article Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/contribution/licensing/license_block.png"
 license: default
-tags: "contribuer,tutoriel,markdown,licence"
+tags:
+    - contribuer
+    - licence
+    - Markdown
+    - tutoriel
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Choisir une licence pour son article
@@ -102,5 +112,3 @@ D'un point de vue technique, la gestion des licences est liée aux capacités de
 
 <!-- Hyperlinks reference -->
 [Licence Ouverte 2.0]: https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf
-
-<!-- Footnotes reference -->

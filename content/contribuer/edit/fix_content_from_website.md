@@ -1,9 +1,19 @@
 ---
 title: Modifier un contenu depuis le site web
-categories: ["contribution", "tutoriel"]
+categories:
+    - contribution
+    - tutoriel
 date: 2020-04-04 17:20
 description: "Guide de contribution à Geotribu : comment modifier un contenu depuis le site de GitHub."
-tags: guide,corriger,faute,contribuer,modifier
+tags:
+    - contribuer
+    - corriger
+    - faute
+    - guide
+    - modifier
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Modifier un contenu depuis le site web

@@ -1,18 +1,27 @@
 ---
 title: "2020 dans le géorétro, 2021 en ligne de mire"
-authors: ["Geotribu"]
-categories: ["article"]
+authors:
+    - Geotribu
+categories:
+    - article
 date: 2021-01-06 11:11
 description: "L'équipe de Geotribu vous souhaite ses meilleurs voeux pour 2021, avec quelques statistiques sur l'année 2020 et une feuille de route 2021."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_constellation_map_fr.png"
-tags: geotribu,voeux,statistiques,fréquentation,géomatique,sig,contribution,collaboratif
+tags:
+    - collaboratif
+    - contribution
+    - fréquentation
+    - géomatique
+    - Geotribu
+    - SIG
+    - statistiques
+    - voeux
+
 ---
 
 # 2020 dans le rétro, 2021 en ligne de mire
 
 :calendar: Date de publication initiale : 4 janvier 2021
-
-**Mots-clés :** Geotribu | voeux | fréquentation | statistiques
 
 ## 2020
 
@@ -94,7 +103,7 @@ Si vous ne souhaitez pas nous rejoindre (la peur de l'engagement tout ça), plus
 Aujourd'hui, pour contribuer à la revue de presse, il y a déjà plusieurs moyens adaptés à l'appétence technique de chacun/e :
 
 [Proposer une news par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution à la GeoRDP){: .md-button }
-[Proposer une news via GitHub :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=aurelienchaumet%2C+Guts%2C+igeofr&labels=contribution+externe%2C+rdp&template=suggestion-de-news-pour-une-revue-de-presse.md&title=%5BNews+GeoRDP%5D){: .md-button }
+[Proposer une news via GitHub :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml){: .md-button }
 {: align=middle }
 
 ### 2. Rédiger un article
@@ -106,7 +115,7 @@ Que ce soit pour proposer un tutoriel sur un outil que vous maîtrisez ou sur un
 Il faut aussi ajouter que Geotribu peut facilement vous permettre de partager vos articles sans pour autant devoir vous lancer dans la création d'un blog personnel (temps d'administration, peur du manque de contenu,...), alors lâchez-vous.
 
 [Proposer un article par email :fontawesome-solid-paper-plane:](mailto:geotribu+article@gmail.com?subject=Proposition d'article){: .md-button }
-[Proposer un article :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=Guts%2C+igeofr%2C+aurelienchaumet&labels=articles%2C+contribution+externe&template=proposition-d-article.md&title=%5BArticle%5D){: .md-button }
+[Proposer un article :fontawesome-solid-ticket-alt:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Carticle%2Ctriage&template=ARTICLE.yml){: .md-button }
 {: align=middle }
 
 !!! tip "Le bon plan"

@@ -1,0 +1,119 @@
+name: "📝 Proposition d'article"
+description: "Formulaire de proposition d'article pour Geotribu."
+labels: ["contribution externe", "article", "triage"]
+assignees:
+  - aurelienchaumet
+  - guts
+  - igeofr
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de contribuer à Geotribu !
+        Le guide de soumission et la structure d'un article [sont ici](https://static.geotribu.fr/contribuer/articles/workflow/).
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+
+        # Vous
+
+  - type: checkboxes
+    id: cb-author-content-relationship
+    attributes:
+      label: "Avez-vous un lien avec le contenu proposé ?"
+      description: Mise en avant du travail d'un tiers ? Auto-promo ? Publicité ?
+      options:
+        - label: Oui
+        - label: Non
+    validations:
+      required: true
+
+  - type: input
+    id: in-author-name
+    attributes:
+      label: Votre nom
+      description: Merci de nous indiquer le Prénom NOM (pseudonyme accepté) sous lequel vous signez l'article (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
+      placeholder: ex. "Jean DUPONT"
+    validations:
+      required: true
+
+  - type: input
+    id: in-author-mail
+    attributes:
+      label: Votre adresse email
+      description: Merci de nous indiquer votre adresse email afin de pouvoir vous signez l'article (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
+      placeholder: ex. pseudo.nyme [à] mon-organisation.fr
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dr-author-license
+    attributes:
+      label: Licence
+      description: |
+        Choisissez la licence qui vous convient le mieux. Voir [le guide](https://static.geotribu.fr/contribuer/guides/licensing/).
+      options:
+        - "[Creative Commons International BY-NC-SA 4.0](https://static.geotribu.fr/contribuer/guides/licensing/#licence-par-defaut) **licence par défaut**"
+        - "[Creative Commons International BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
+        - "[Beerware (Révision 42)](https://fr.wikipedia.org/wiki/Beerware)"
+        - "autre - merci de préciser dans le champ libre en fin de formulaire"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+
+        # L'article
+
+  - type: input
+    id: in-art-title
+    attributes:
+      label: Titre
+      description: "Le titre de l'article. Longeur maximale indicative : 100/120 caractères"
+    validations:
+      required: true
+
+  - type: input
+    id: in-art-tags
+    attributes:
+      label: Mots-clés
+      description: |
+        Liste de mots-clés séparés par une virgule.
+        De préférence, choisir parmi les [mots-clés existants](https://static.geotribu.fr/tags/).
+    validations:
+      required: true
+
+  - type: input
+    id: in-art-date
+    attributes:
+      label: Date de publication envisagée
+      description: |
+        Pour information, nous avons pour habitude de publier les mardis ou les vendredis sans RDP.
+        Afin d'assurer une bonne ventilation des publications, l'équipe se réserve le droit de changer la date.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tx-art-content
+    attributes:
+      label: Contenu de l'article
+      description: |
+        La syntaxe Markdown est acceptée, mais le rendu final diffèrera de celui de GitHub.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+
+  - type: textarea
+    id: tx-misc-comment
+    attributes:
+      label: Message libre
+      description: "Un commentaire ? Une précision à apporter ? Un message pour l'équipe ?"

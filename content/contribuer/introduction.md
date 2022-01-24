@@ -1,9 +1,14 @@
 ---
 title: Contribuer à Geotribu
-categories: ["contribution"]
+categories:
+  - contribution
 date: 2020-03-20 10:20
 description: "Envie de contribuer à Geotribu ? On vous guide sur le pourquoi du comment."
-tags: contribuer, introduction
+tags:
+  - contribuer
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Introduction

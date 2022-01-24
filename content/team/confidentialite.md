@@ -1,18 +1,23 @@
 ---
-title: "Confidentialité des données "
-authors: ["Geotribu"]
-categories: ["meta"]
+title: "Confidentialité des données"
+authors:
+    - Geotribu
+categories:
+    - Geotribu
 date: "2021-05-20 10:20"
 description: "Cette page détaille les dispositifs de traçage que l'utilisateur/ice final/e peut rencontrer sur le site Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
-tags: "GeoTribu,confidentialité,données personnelles,vie privée,tracking"
+tags:
+    - confidentialité
+    - données personnelles
+    - Geotribu
+    - tracking
+    - vie privée
 ---
 
 # Données personnelles et confidentialité
 
 :calendar: Date de publication initiale : 20 mai 2021
-
-**Mots-clés :** tracking | confidentialité | RGPD
 
 Cette page détaille les dispositifs de traçage que l'utilisateur/ice final/e peut rencontrer sur le site Geotribu. Si la liste paraît longue c'est qu'elle est le fruit d'un effort de transparence :slightly_smiling_face:, mais pour faire court :
 
@@ -29,6 +34,9 @@ Pas grand chose d'utile et rien de mercantile ! On s'en sert pour :
 - avoir du matériau pour des [articles d'analyse statistique](/articles/2021/2021-02-09_statistiques_twitter/)
 
 Question ? Souci ? Angoisse ? Si vous souhaitez en savoir plus sur les données collectées, merci de [nous contacter par email](mailto:geotribu+rgpd@gmail.com).
+
+[Changer à tout moment vos paramètres pour les cookies](#__consent){ .md-button }
+{: align=middle }
 
 ----
 
@@ -63,6 +71,18 @@ Les paramètres utilisés sont :
 - `utm_source` : "rss-feed"
 - `utm_medium` : "RSS"
 - `utm_campaign` : "feed-syndication"
+
+----
+
+## Newsletter
+
+![icône newsletter](https://cdn.geotribu.fr/img/logos-icones/divers/newsletter.webp "icône newsletter"){: .img-rdp-news-thumb }
+
+Pour gérer les abonnements (inscription, désinscription, etc.) ainsi que les envois de la newsletter, nous utilisons la [plateforme Mailchimp](https://mailchimp.com/fr/). Aucun code spécifique issu de cette plateforme n'est intégré au site.
+Les informations requises pour l'inscription sont :
+
+- une adresse email valide (évidemment)
+- un pseudonyme
 
 ----
 

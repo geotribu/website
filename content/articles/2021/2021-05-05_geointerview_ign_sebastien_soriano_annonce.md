@@ -1,18 +1,24 @@
 ---
 title: "Géo-communs : rendez-vous avec Sébastien Soriano, lundi 10 mai"
-authors: ["Geotribu"]
-categories: ["article", "événement"]
+authors:
+    - Geotribu
+categories:
+    - article
+    - événement
 date: "2021-05-09 20:00"
 description: "L'IGN lance une consultation publique inédite pour co-construire son avenir autour du concept fort des géo-communs. Rendez-vous lundi 10 mai sur Geotribu pour la GeoInterview (#GeoITW) de Sébastien Soriano."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/interview/sebastien_soriano/geocommuns_geoitw.png"
-tags: "géointerview,GeoITW,IGN,Sébastien Soriano,géo-commun"
+tags:
+    - géo-communs
+    - Géointerview
+    - GeoITW
+    - IGN
+    - Sébastien Soriano
 ---
 
 # GéoInterview de Sébastien Soriano le 10 mai, 19h
 
 :calendar: Date de publication initiale : 5 mai 2021
-
-**Mots-clés :** GéoInterview | IGN | géocommun
 
 ## Introduction
 
@@ -64,10 +70,4 @@ Si vous n'avez pas de compte Twitter ou Google (requis pour utiliser le tchat Yo
 
 ## Auteur
 
-### GeoTribu
-
-![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png "logo Geotribu"){: .img-rdp-news-thumb }
-
-Toute l'actualité de la géomatique Open Source ! Mais aussi des tutoriels, des billets de blog, des tests et surtout une bonne humeur géographique !
-
-<!-- Hyperlinks reference -->
+--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
