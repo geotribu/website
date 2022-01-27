@@ -73,7 +73,7 @@ Nous vous en reparlerons bientôt mais d'ici là, n'hésitez pas à nous donner 
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
 

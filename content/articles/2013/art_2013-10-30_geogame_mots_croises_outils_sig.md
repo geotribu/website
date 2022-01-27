@@ -29,6 +29,6 @@ Bonne chance !
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jory.md"

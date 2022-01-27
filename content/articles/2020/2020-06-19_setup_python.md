@@ -205,6 +205,6 @@ Il existe de [nombreuses listes de packages recommandés](https://encrypted.goog
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"

@@ -676,7 +676,7 @@ Bref, MapLibre c'est une super solution, assez simple de prise en main, donc plu
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 ### Boris Mericskay
 

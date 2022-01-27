@@ -135,6 +135,6 @@ J'ai préparé un bloc-notes partagé pour l'occasion :
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"

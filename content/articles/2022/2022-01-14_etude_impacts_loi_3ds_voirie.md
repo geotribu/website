@@ -306,6 +306,6 @@ A noter que les requêtes peuvent facilement être adaptées pour les autres Dé
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/mgal.md"

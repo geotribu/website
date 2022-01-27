@@ -33,6 +33,6 @@ Cette semaine, nous vous proposons un deuxième Geogame, "questions choix multip
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jory.md"

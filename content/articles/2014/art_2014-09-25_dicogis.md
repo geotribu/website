@@ -128,6 +128,6 @@ Voici les quelques évolutions que j'envisage, mais vu que je ne suis pas mère 
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"

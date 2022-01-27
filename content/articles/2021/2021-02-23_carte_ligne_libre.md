@@ -455,7 +455,7 @@ Le code complet [se trouve ici](https://bl.ocks.org/mastersigat/30898810b41783ff
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 ### Boris Mericskay
 
