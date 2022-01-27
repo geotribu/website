@@ -156,7 +156,7 @@ En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
 

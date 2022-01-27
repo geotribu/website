@@ -165,7 +165,7 @@ C'est beau l'open source :smiling_face_with_3_hearts:.
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
 

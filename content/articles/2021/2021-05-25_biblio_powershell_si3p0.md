@@ -258,7 +258,7 @@ Comme indiqué plus haut, si tu souhaites récupérer les sources (sous licence 
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/mgal.md"
 

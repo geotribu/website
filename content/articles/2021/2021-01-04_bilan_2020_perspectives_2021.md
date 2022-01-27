@@ -154,7 +154,7 @@ La Geotribu.
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 ![Portait de GeoTribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png){: .img-rdp-news-thumb }
 

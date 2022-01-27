@@ -364,7 +364,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/mbos.md"
 

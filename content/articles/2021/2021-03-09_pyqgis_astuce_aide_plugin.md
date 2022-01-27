@@ -158,7 +158,7 @@ C'est pas cher payé pour orienter facilement vos utilisateur/ices vers la docum
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
 

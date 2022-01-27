@@ -69,7 +69,7 @@ Toutes vos suggestions, questions, remarques et critiques sont bienvenues, et m√
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 ### Patrick Gendre
 

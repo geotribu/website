@@ -48,7 +48,7 @@ Tout ça pour dire qu'on se voit mardi !
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<--
 content/team/jmou.md
