@@ -166,9 +166,7 @@ graph TD
 
 ## Auteur {: data-search-exclude }
 
---8<--
-content/team/jmou.md
---8<--
+--8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
 [Markdown]: https://fr.wikipedia.org/wiki/Markdown
