@@ -109,7 +109,7 @@ theme:
   search_index_only: true
 
   features:
-    - content.tabs.links
+    - content.tabs.link
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -126,7 +126,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: teal
-      accent: deep-orange
+      accent: "deep orange"
       toggle:
         icon: material/weather-sunny
         name: Basculer en mode sombre
@@ -135,7 +135,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue grey
-      accent: deep-orange
+      accent: "deep orange"
       toggle:
         icon: material/weather-night
         name: Basculer en mode clair
