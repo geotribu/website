@@ -37,6 +37,6 @@ L'adresse de l'expéditeur est : `facteur [chez] geotribu.fr`.
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"

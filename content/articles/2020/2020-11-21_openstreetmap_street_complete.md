@@ -77,7 +77,7 @@ Pour finir, voici une vidéo de l'utilisation (elle date d'avril donc il y a eu 
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
 

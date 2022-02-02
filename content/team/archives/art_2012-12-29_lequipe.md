@@ -50,6 +50,6 @@ Pour ceux qui se demandent quelles sont les résolutions de GéoTribu pour l'ann
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"

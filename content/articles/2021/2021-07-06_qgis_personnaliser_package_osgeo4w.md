@@ -322,7 +322,7 @@ Maintenant, à vous de jouer, et pensez à remonter toute anomalie ou améliorat
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/rha.md"
 

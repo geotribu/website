@@ -190,11 +190,9 @@ Maintenant on sait comment moissonner un site web, en l'occurence l'ancien Geotr
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
---8<--
-content/team/jmou.md
---8<--
+--8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
 [Scrapy]: https://scrapy.org/

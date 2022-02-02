@@ -194,7 +194,7 @@ Encore une fois, j'espère sincèrement vous avoir donné l'envie de lire ce liv
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/acha.md"
 

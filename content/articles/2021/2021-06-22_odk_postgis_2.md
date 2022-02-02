@@ -413,7 +413,7 @@ Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'�
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/mbos.md"
 

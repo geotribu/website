@@ -68,7 +68,7 @@ On remercie chaleureusement R. Mejean pour cette initiative et on espère que ce
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 ### GeoTribu
 

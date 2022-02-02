@@ -84,7 +84,7 @@ Maintenant, vous n'avez plus aucune excuse pour ne pas mettre de belles icônes 
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
 

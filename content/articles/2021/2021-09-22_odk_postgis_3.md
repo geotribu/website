@@ -267,7 +267,7 @@ ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales s
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/mbos.md"
 

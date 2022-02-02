@@ -592,7 +592,7 @@ Bon courage !
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 ### Romain Lacroix
 

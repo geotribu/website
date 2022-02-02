@@ -115,11 +115,9 @@ Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
---8<--
-content/team/jmou.md
---8<--
+--8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
 [Arnaud]: /team/avdc/

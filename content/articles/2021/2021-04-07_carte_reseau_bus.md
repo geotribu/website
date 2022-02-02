@@ -259,6 +259,6 @@ A noter, que j'envisage de suivre la même démarche pour représenter nos itin�
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/fbor.md"
