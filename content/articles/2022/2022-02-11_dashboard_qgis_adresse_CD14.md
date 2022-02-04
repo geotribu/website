@@ -26,10 +26,10 @@ Depuis 2019, le Département accompagne les communes pour la saisie et la diffus
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
-## Accompagnement à l’adressage du Département 
+## Accompagnement à l’adressage du Département
 
-L’adressage est obligatoire pour les communes de plus de 2000 habitants et est très fortement conseillé aux plus petites communes. 
-Pour permettre aux communes de diffuser leurs adresses, la Direction du numérique de l’État a mis en place la Base Adresse Nationale (BAN), une base qui référence l’ensemble des adresses locales à l’échelle nationale. Depuis octobre 2019, les adresses de « sources communales » publiées sur la BAN ont la priorité sur les autres sources. 
+L’adressage est obligatoire pour les communes de plus de 2000 habitants et est très fortement conseillé aux plus petites communes.
+Pour permettre aux communes de diffuser leurs adresses, la Direction du numérique de l’État a mis en place la Base Adresse Nationale (BAN), une base qui référence l’ensemble des adresses locales à l’échelle nationale. Depuis octobre 2019, les adresses de « sources communales » publiées sur la BAN ont la priorité sur les autres sources.
 
 Afin d’accompagner les communes dans cette démarche, le Département du Calvados met à disposition des communes une application cartographique de gestion des adresses atlas.calvados.fr (base adresse du calvados), permettant de consulter la BAN, dénommer des voie, créer des nouvelles adresses et modifier ou supprimer des adresses existantes. Cette application a été développée à partir des logiciels open sources Lizmap/POSTGIS/QGIS serveur.
 
@@ -39,9 +39,9 @@ En janvier 2022, le département accompagnait ainsi plus de 200 communes et avai
 ## Un outil de suivi intégré
 
 Le pôle SIG souhaitait obtenir une vue d’ensemble des données produites au fur et à mesure de l’avancement du projet. Il fallait donc identifier une solution SIG permettant d’assurer un suivi interactif des données.
-Elle devait s’intégrer au logiciel QGIS de gestion et sur l’application cartographique Lizmap à disposition des communes et des partenaires. 
+Elle devait s’intégrer au logiciel QGIS de gestion et sur l’application cartographique Lizmap à disposition des communes et des partenaires.
 
-Si sur le logiciel QGIS aucun module additionnel (plugin) ne propose à ce jour de solution complète de dashboarding, Nous avons pu nous appuyer sur une méthodologie publiée sur le site https://plugins.QGIS.org/geopackages/5/ (Sutton, 2020) , afin de développer un « dashboard » par manipulation des étiquettes de couches QGIS. 
+Si sur le logiciel QGIS aucun module additionnel (plugin) ne propose à ce jour de solution complète de dashboarding, Nous avons pu nous appuyer sur une méthodologie publiée sur le site https://plugins.QGIS.org/geopackages/5/ (Sutton, 2020) , afin de développer un « dashboard » par manipulation des étiquettes de couches QGIS.
 
 Cette méthode permet, en créant une couche spécifique de tableau de bord, de paramétrer le style des étiquettes de la couche et via requêtes sql d’agrégation, de produire un tableau interactif de suivi des données présentes dans le projet QGIS.
 
@@ -50,19 +50,19 @@ Cette méthode permet, en créant une couche spécifique de tableau de bord, de 
 
 ### Etape 1 : création de la couche dashboard
 
-Créer une couche « dashboard » de polygone composée des champs suivant : 
+Créer une couche « dashboard » de polygone composée des champs suivant :
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2022-01-03_14h39_28.png "QGIS - Menu étiquettes")
 
 
-### Etape 2 : créer un polygone 
+### Etape 2 : créer un polygone
 
 Editer la couche « dashboard » et créer un polygone suivant l’emprise du projet.
 
 ![](https://geotripad.herokuapp.com/uploads/upload_3712a28a62e74b24ec58cda816db5558.png)
 
 
-### Etape 3 : symbologie de la couche 
+### Etape 3 : symbologie de la couche
 
 Ouvrir les propriétés de la couche dashboard et dans l’onglet symbologie sélectionner ‘aucun symbole’.
 
@@ -71,7 +71,7 @@ Le polygone doit disparaitre à l’écran.
 ![](https://geotripad.herokuapp.com/uploads/upload_08d131680d7037f80058f41de414fae9.png)
 
 
-### Etape 4 : paramétrer les étiquettes 
+### Etape 4 : paramétrer les étiquettes
 
 Sélectionner ‘Etiquettes simples’ dans l’onglet Etiquettes. Dans le sous onglet valeur, faites une sélection par expression et inscrivez le code suivant : eval( "label_expression")
 
@@ -107,7 +107,7 @@ Aller maintenant dans l’onglet **position**.
 
 Choisir l’option quadrant de l’image ci-dessous.
 
-Cliquer sur l’icône à droite de **décalage X,Y**. Choisissez cette fois ci la sélection par expression. 
+Cliquer sur l’icône à droite de **décalage X,Y**. Choisissez cette fois ci la sélection par expression.
 
 Dans le constructeur de requête qui s’ouvre, indiquer la variable suivante : ***array( "label_offset_x" , "label_offset_y")***
 Appuyer sur ok.
@@ -159,25 +159,25 @@ Ci-dessous, nous avons organisé la table avec les unes après les autres des fe
 ![](https://geotripad.herokuapp.com/uploads/upload_9f1e6ecb468949f35ffb9345877631e8.png)
 
 
-### Exemple de requêtes utilisées 
+### Exemple de requêtes utilisées
 
 --total de la somme des valeurs de la collonne pt_total de la couche Infos Communes
 
-aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total) 
+aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total)
 
---total de la somme des valeurs de la collonne pt_total des entités séléctionnées sur la couche Infos Communes 
+--total de la somme des valeurs de la collonne pt_total des entités séléctionnées sur la couche Infos Communes
 
-aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total, filter:=is_selected('Infos Communes', $currentfeature )  ) 
+aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total, filter:=is_selected('Infos Communes', $currentfeature )  )
 
---Nombre de communes accompagnées (champ : actif, valeur : oui) dans la couche Infos Communes 
+--Nombre de communes accompagnées (champ : actif, valeur : oui) dans la couche Infos Communes
 
-aggregate(layer:= 'Infos Communes', aggregate:='count', expression:= actif, filter:= actif LIKE 'Oui' ) 
+aggregate(layer:= 'Infos Communes', aggregate:='count', expression:= actif, filter:= actif LIKE 'Oui' )
 
 
 
 ## Limites de l’outil
 
-Si cette solution semble adaptée « en local » pour le projet QGIS de gestion des données adresse utilisé par le chargé de mission SIG, nous avons pu constater des problèmes au niveau du « responsiv design » de l’outil : l’affichage n’est pas optimal sur certains formats d’écran et sur l’application cartographique lizmap (atlas-calvados.fr). 
+Si cette solution semble adaptée « en local » pour le projet QGIS de gestion des données adresse utilisé par le chargé de mission SIG, nous avons pu constater des problèmes au niveau du « responsiv design » de l’outil : l’affichage n’est pas optimal sur certains formats d’écran et sur l’application cartographique lizmap (atlas-calvados.fr).
 
 Pour pallier ces difficultés d’affichage sur atlas.calvados.fr, la disposition des items a été revue (position centrale), le design a été simplifié et le nombre de données affichées limité par rapport à l’application de gestion des données sur QGIS.
 
