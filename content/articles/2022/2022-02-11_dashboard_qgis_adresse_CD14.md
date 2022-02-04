@@ -1,5 +1,5 @@
 ---
-title: "Dashboard QGIS : Suivi des indicateurs adresse du Département du Calvados"
+title: "Dashboard QGIS : suivi des indicateurs adresse du Département du Calvados"
 authors:
     - Théo GRONDIN
 categories:
