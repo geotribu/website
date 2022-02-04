@@ -226,6 +226,13 @@ Globalement, voici comment les images sont organisées :
 
     ![Clic doit copier l'adresse du lien](https://cdn.geotribu.fr/img/internal/contribution/embed_image/cdn_filemanager_get_image_url.png "Clic doit copier l'adresse du lien")
 
+----
+
+## Ressources
+
+- [Reshot](https://www.reshot.com/), icônes et images libres de droits
+- [TinyPNG](https://tinypng.com/), compression des images
+
 <!-- Hyperlinks reference -->
 [CDN de Geotribu]: https://cdn.geotribu.fr/
 [lightbox]: https://en.wikipedia.org/wiki/Lightbox_(JavaScript)
