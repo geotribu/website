@@ -17,6 +17,9 @@ jobs:
   clean-preview:
     runs-on: ubuntu-latest
     steps:
+      - name: Get source code
+        uses: actions/checkout@v2
+
       - name: Deploy preview to Netlify
         uses: nwtgck/actions-netlify@v1.2
         id: preview
