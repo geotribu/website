@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 date: "2022-01-16 10:20"
-description: "Depuis 2019, le Département accompagne les communes pour la saisie et la diffusion de leur adresse vers la Base adresse Nationale. Après plus de 2 ans de projet, et avec l’augmentation constante du nombre de demandes d’accompagnements par les communes, les équipe du pôle SIG ont souhaité se doter d’un tableau de bord de suivi des indicateurs clés du projet intégré au logiciels SIG utilisés quotidiennement par les équipes et les partenaires."
+description: "Mise en place d'un tableau de bord QGIS par manipulation d'étiquettes de couches dans le cadre du suivi de projet adressage - Pôle SIG du Département du Calvados."
 image: ""
 license: default
 robots: index, follow
@@ -21,7 +21,7 @@ tags:
 
 :calendar: Date de publication initiale : 16 janvier 2022
 
-Depuis 2019, le Département accompagne les communes pour la saisie et la diffusion de leur adresse vers la Base adresse Nationale. Après plus de 2 ans de projet, et avec l’augmentation constante du nombre de demande d’accompagnements par les communes, les équipe du pôle SIG ont souhaité se doter d’un tableau de bord de suivi des indicateurs clés du projet intégré aux logiciels SIG utilisés quotidiennement par les équipes et les partenaires.
+Depuis 2019, le Département accompagne les communes pour la saisie et la diffusion de leurs adresses vers la Base adresse Nationale. Après plus de 2 ans de projet, et avec l’augmentation constante du nombre de demandes d’accompagnements par les communes, les membres du pôle SIG du Département ont souhaité se doter d’un tableau de bord de suivi des indicateurs clés du projet, intégré aux logiciels SIG utilisés quotidiennement par les équipes et les partenaires.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -31,17 +31,17 @@ Depuis 2019, le Département accompagne les communes pour la saisie et la diffus
 L’adressage est obligatoire pour les communes de plus de 2000 habitants et est très fortement conseillé aux plus petites communes.
 Pour permettre aux communes de diffuser leurs adresses, la Direction du numérique de l’État a mis en place la Base Adresse Nationale (BAN), une base qui référence l’ensemble des adresses locales à l’échelle nationale. Depuis octobre 2019, les adresses de « sources communales » publiées sur la BAN ont la priorité sur les autres sources.
 
-Afin d’accompagner les communes dans cette démarche, le Département du Calvados met à disposition des communes une application cartographique de gestion des adresses atlas.calvados.fr (base adresse du calvados), permettant de consulter la BAN, dénommer des voie, créer des nouvelles adresses et modifier ou supprimer des adresses existantes. Cette application a été développée à partir des logiciels open sources Lizmap/POSTGIS/QGIS serveur.
+Afin d’accompagner les communes dans cette démarche, le Département du Calvados met à disposition des communes une application cartographique de gestion des adresses <https://atlas-calvados.fr> (base adresse du calvados), permettant de consulter la BAN, dénommer des voie, créer des nouvelles adresses et modifier ou supprimer des adresses existantes. Cette application a été développée à partir des logiciels open sources Lizmap/PostGIS/QGIS serveur.
 
-En janvier 2022, le département accompagnait ainsi plus de 200 communes et avait publié près de 47000 adresses sur la BAN. Cet accompagnement, réalisé par 2 agents du pôle SIG, implique des interventions sur le terrain, des formations aux normes de l’adressage, la résolution des problématiques terrain complexes, un support pour la saisie des adresses dans l’application, le contrôle des voies et des points adresses saisis.
+En janvier 2022, le département accompagnait ainsi plus de 200 communes et avait publié près de 47 000 adresses sur la BAN. Cet accompagnement, réalisé par 2 agents du pôle SIG, implique des interventions sur le terrain, des formations aux normes de l’adressage, la résolution des problématiques terrain complexes, un support pour la saisie des adresses dans l’application, le contrôle des voies et des points adresses saisis.
 
 
 ## Un outil de suivi intégré
 
-Le pôle SIG souhaitait obtenir une vue d’ensemble des données produites au fur et à mesure de l’avancement du projet. Il fallait donc identifier une solution SIG permettant d’assurer un suivi interactif des données.
-Elle devait s’intégrer au logiciel QGIS de gestion et sur l’application cartographique Lizmap à disposition des communes et des partenaires.
+Au sein du pôle SIG, nous souhaitions obtenir une vue d’ensemble des données produites au fur et à mesure de l’avancement du projet. Il fallait donc identifier une solution SIG permettant d’assurer un suivi interactif des données (contrôle des erreurs de saisies et bilan de l'avancement du projet).
+Elle devait s’intégrer au logiciel QGIS utilisé par le chargé de msision SIG du Département et sur l’application cartographique Lizmap à disposition des communes et des partenaires.
 
-Si sur le logiciel QGIS aucun module additionnel (plugin) ne propose à ce jour de solution complète de dashboarding, Nous avons pu nous appuyer sur une méthodologie publiée sur le site https://plugins.QGIS.org/geopackages/5/ (Sutton, 2020) , afin de développer un « dashboard » par manipulation des étiquettes de couches QGIS.
+Sur le logiciel QGIS aucun module additionnel (plugin) ne propose à ce jour de solution complète de dashboarding. Nous nous nous sommes donc appuyer sur une méthodologie publiée sur le site https://plugins.QGIS.org/geopackages/5/ (Sutton, 2020) , afin de développer un « Dashboard » par manipulation des étiquettes de couches QGIS.
 
 Cette méthode permet, en créant une couche spécifique de tableau de bord, de paramétrer le style des étiquettes de la couche et via requêtes sql d’agrégation, de produire un tableau interactif de suivi des données présentes dans le projet QGIS.
 
@@ -77,7 +77,7 @@ Sélectionner ‘Etiquettes simples’ dans l’onglet Etiquettes. Dans le sous 
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/4_etiquettes_dashboard.png "QGIS - Etiquette simple Dashboard")
 
-Dans le sous onglet texte cliquer sur l’icône à droite de la police. Aller chercher type de champs et pointer vers le champ **font** de la table « dashboard » crée à l’étape 1.
+Dans le sous-onglet texte cliquer sur l’icône à droite de la police. Aller chercher type de champs et pointer vers le champ **font** de la table « dashboard » crée à l’étape 1.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Etiquette font Dashboard")
 
@@ -112,7 +112,7 @@ Cliquer sur l’icône à droite de **décalage X,Y**. Choisissez cette fois ci 
 Dans le constructeur de requête qui s’ouvre, indiquer la variable suivante : ***array( "label_offset_x" , "label_offset_y")***
 Appuyer sur ok.
 
-![QGIS label](https://cdn.geotribu.fr/tinyfilemanager.php?p=articles-blog-rdp%2Farticles%2Fqgis_dashboard_calvados&view=11_etiquettes_dashboard.png "QGIS - Etiquette décalage X/Y Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Etiquette decalage Dashboard")
 
 
 
@@ -124,39 +124,39 @@ Donner un nom qui mette en évidence l’action. Ici le titre de la première é
 
 Puis indiquer dans le champs label expression l’expression qui s’affichera dans la première fenêtre dashboard, ici, simplement le titre *****'nbr pt total'*****
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_dashboard.png"QGIS - Paramétrage fenêtre 1 ")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 1")
+
 
 Paramétrer ensuite les champs qui vont déterminer la taille, la position, la couleur de fond et la police de la première fenêtre Dashboard.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_suite_dashboard.png "QGIS - Paramétrage fenêtre 1 suite ")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_suite_dashboard.png "QGIS - Paramétrage fenêtre 1 suite")
 
 Au fur et à mesure des modifications des valeurs de champs, lorsque vous enregistrez, vous devez voir apparaitre la 1ere fenêtre Dashboard et les modifications apportées.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_vue.png"QGIS - Rendu fenêtre 1  ")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_vue.png "QGIS - Rendu fenêtre 1")
 
-Si aucune fenêtre n’apparait au niveau de votre projet qgis, jouez avec les différents champs (surtout label_ofset x, label_ofset y), cela peut être un problème de position de la fenêtre. Si elle n’apparait toujours pas, reprenez les étapes précédentes.
+Si aucune fenêtre n’apparait au niveau de votre projet QGIS, jouez avec les différents champs (surtout label_ofset x, label_ofset y), cela peut être un problème de position de la fenêtre. Si elle n’apparait toujours pas, reprenez les étapes précédentes.
 
 
 ### Etape 6 : Créer de nouvelles fenêtres dashboard
 
 Pour créer une nouvelle fenêtre dashboard, passer la table attributaire en mode édition. Copiez la première ligne et coller la dans la partie blanche de la table attributaire. Une deuxième ligne identique apparaît.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_dashboard.png"QGIS - Paramétrage fenêtre 2 ")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/13_2nd_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 2")
 
 ### Etape 7 : Paramétrer des requêtes dans les nouvelles lignes
 
 Une fois la nouvelle entité crée, modifier les valeurs de champs de la seconde pour positionner la deuxième fenêtre sous la première.  Vous pouvez modifier le champs label_expression avec une requête sql qgis qui vous permettra d’afficher la valeur souhaitée dans cette deuxième fenêtre.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/14_2nd_fenetre_vue.png"QGIS -  Rendu fenêtre 2 ")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/14_2nd_fenetre_vue.png "QGIS - Rendu fenêtre 2")
+
 
 ### Exemple de table attributaire Dashboard et rendu
 
-Ci-dessous, nous avons organisé la table comme suist : une fenêtre par ligne avec valeur « titre » suivies de fenêtres affichant une valeur « expression ».
+Ci-dessous, nous avons organisé la table avec une fenêtre par ligne comme suit : une 1ère fenêtre avec valeur « titre » suivie d'une fenêtre affichant une valeur « expression ».
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/15_ex_table_attrib.png"QGIS -  Table attributaire Dashboard partie 1 ")
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/16_ex_table_attrib_suite.png"QGIS -  Table attributaire Dashboard partie 2 ")
-
-
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/15_ex_table_attrib.png "Table attributaire Dashboard partie 1")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/16_ex_table_attrib_suite.png "Table attributaire Dashboard partie 2")
 
 ### Exemple de requêtes utilisées
 
@@ -182,9 +182,9 @@ aggregate(layer:= 'Infos Communes', aggregate:='count', expression:= actif, filt
 
 Le Dashboard est utilisé par le pôle SIG afin de contrôler les erreurs de saisies en temps réel par les communes et présenter un bilan général de l'avancement du projet.
 
-Ci-dessous, un exemple d'afffichage des bilans adresses après séléction d'une commune sous QGIS.
+Ci-dessous, un exemple d'afffichage des bilans adresses (en haut à droite) après séléction d'une commune sous QGIS.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/selection_commune_dashboard.gif"QGIS -  Table attributaire Dashboard partie 2 ")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/selection_commune_dashboard.gif "Table attributaire Dashboard partie 2")
 
 ----
 
