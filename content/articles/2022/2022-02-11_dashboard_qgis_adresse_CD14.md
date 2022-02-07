@@ -83,7 +83,7 @@ Dans le sous-onglet texte cliquer sur l’icône à droite de la police. Aller c
 
 Faire de même avec le **style** et pointer sur le champs style.
 
-![QGIS label](https://cdn.geotribu.fr/tinyfilemanager.php?p=articles-blog-rdp%2Farticles%2Fqgis_dashboard_calvados&view=6_etiquettes_dashboard.png "QGIS - Etiquette style Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Etiquette style Dashboard")
 
 Faire de même avec la **couleur** et pointer sur le champ ***font_colour***.
 
