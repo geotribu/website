@@ -2,4 +2,4 @@
 
 ![Portrait Théo Grondin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/theo.png "Portrait Théo Grondin"){: .img-rdp-news-thumb }
 
-Géographe spécialisé dans le domaine du SIG, je travaille depuis 2020 au sein du pôle SIG du Département du Calvados en tant que chargé de mission/administrateur SIG. Je m'investis particulièrement sur les questions de développement et de mise en production de traitements automatiques sur les base de données géographiques.
+Géographe spécialisé dans le domaine du SIG, je travaille depuis 2020 au sein du pôle SIG du Département du Calvados en tant que chargé de mission/administrateur SIG. Je m'investis particulièrement sur les questions de développement et de mise en production de traitements automatiques sur les bases de données géographiques.
