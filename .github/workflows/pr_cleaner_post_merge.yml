@@ -9,7 +9,7 @@ on:
 
 # Environment variables
 env:
-  BUILD_DIR: scripts/
+  BUILD_DIR: build/
   NETLIFY_SITE_NAME: geotribu-preprod
   NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
 
@@ -19,6 +19,11 @@ jobs:
     steps:
       - name: Get source code
         uses: actions/checkout@v2
+
+      - name: Prepare redirection
+        run: |
+          mkdir -p ${{ env.BUILD_DIR }}
+          cp scripts/redirect.html ${{ env.BUILD_DIR }}/index.html
 
       - name: Deploy preview to Netlify
         uses: nwtgck/actions-netlify@v1.2
