@@ -4,7 +4,7 @@ authors:
     - Théo GRONDIN
 categories:
     - article
-date: "2022-01-16 10:20"
+date: "2022-02-07 10:20"
 description: "Mise en place d'un tableau de bord QGIS par manipulation d'étiquettes de couches dans le cadre du suivi de projet adressage - Pôle SIG du Département du Calvados."
 image: ""
 license: default
