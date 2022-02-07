@@ -19,7 +19,7 @@ tags:
 
 # Dashboard QGIS : Suivi des indicateurs adresse du Département du Calvados
 
-:calendar: Date de publication initiale : 16 janvier 2022
+:calendar: Date de publication initiale : 7 février 2022
 
 Depuis 2019, le Département accompagne les communes pour la saisie et la diffusion de leurs adresses vers la Base adresse Nationale. Après plus de 2 ans de projet, et avec l’augmentation constante du nombre de demandes d’accompagnements par les communes, les membres du pôle SIG du Département ont souhaité se doter d’un tableau de bord de suivi des indicateurs clés du projet, intégré aux logiciels SIG utilisés quotidiennement par les équipes et les partenaires.
 
