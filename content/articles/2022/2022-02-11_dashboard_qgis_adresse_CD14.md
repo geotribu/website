@@ -38,7 +38,7 @@ En janvier 2022, le département accompagnait ainsi plus de 200 communes et avai
 ## Un outil de suivi intégré
 
 Au sein du pôle SIG, nous souhaitions obtenir une vue d’ensemble des données produites au fur et à mesure de l’avancement du projet. Il fallait donc identifier une solution SIG permettant d’assurer un suivi interactif des données (contrôle des erreurs de saisies et bilan de l'avancement du projet).
-Elle devait s’intégrer au logiciel QGIS utilisé par le chargé de msision SIG du Département et sur l’application cartographique Lizmap à disposition des communes et des partenaires.
+Elle devait s’intégrer au logiciel QGIS utilisé par le chargé de mission SIG du Département et sur l’application cartographique Lizmap à disposition des communes et des partenaires.
 
 Sur le logiciel QGIS aucun module additionnel (plugin) ne propose à ce jour de solution complète de dashboarding. Nous nous nous sommes donc appuyer sur une méthodologie publiée sur le site <https://plugins.QGIS.org/geopackages/5/> (Sutton, 2020) , afin de développer un « Dashboard » par manipulation des étiquettes de couches QGIS.
 
@@ -54,7 +54,7 @@ Créer une couche « dashboard » de polygone composée des champs suivant :
 
 ### Etape 2 : créer un polygone
 
-Editer la couche « dashboard » et créer un polygone suivant l’emprise du projet.
+Éditer la couche « dashboard » et créer un polygone suivant l’emprise du projet.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard")
 
@@ -62,41 +62,41 @@ Editer la couche « dashboard » et créer un polygone suivant l’emprise du pr
 
 Ouvrir les propriétés de la couche dashboard et dans l’onglet symbologie sélectionner ‘aucun symbole’.
 
-Le polygone doit disparaitre à l’écran.
+Le polygone doit disparaître à l’écran.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/3_symbologie_dashboard.png "QGIS - Symbologie couche Dashboard")
 
 ### Etape 4 : paramétrer les étiquettes
 
-Sélectionner ‘Etiquettes simples’ dans l’onglet Etiquettes. Dans le sous onglet valeur, faites une sélection par expression et inscrivez le code suivant : eval( "label_expression")
+Sélectionner ‘Etiquettes simples’ dans l’onglet Étiquettes. Dans le sous onglet valeur, faites une sélection par expression et inscrivez le code suivant : eval( "label_expression")
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/4_etiquettes_dashboard.png "QGIS - Etiquette simple Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/4_etiquettes_dashboard.png "QGIS - Étiquette simple Dashboard")
 
 Dans le sous-onglet texte cliquer sur l’icône à droite de la police. Aller chercher type de champs et pointer vers le champ **font** de la table « dashboard » crée à l’étape 1.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Etiquette font Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Étiquette font Dashboard")
 
 Faire de même avec le **style** et pointer sur le champs style.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Etiquette style Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Étiquette style Dashboard")
 
 Faire de même avec la **couleur** et pointer sur le champ ***font_colour***.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/7_etiquettes_dashboard.png "QGIS - Etiquette couleur Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/7_etiquettes_dashboard.png "QGIS - Étiquette couleur Dashboard")
 
 Aller maintenant dans l’onglet **arrière-plan.**
 
 Faire de même que précédemment avec la **taille X** et pointer sur le champ ***width***.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/8_etiquettes_dashboard.png "QGIS - Etiquette X Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/8_etiquettes_dashboard.png "QGIS - Étiquette X Dashboard")
 
 Faire de même que précédemment avec la **taille Y** et pointer sur le champ ***height***.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/9_etiquettes_dashboard.png "QGIS - Etiquette Y Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/9_etiquettes_dashboard.png "QGIS - Étiquette Y Dashboard")
 
 Faire de même avec la **couleur de remplissage** et pointer sur le champ ***bg_colour***.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/10_etiquettes_dashboard.png "QGIS - Etiquette remplissage Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/10_etiquettes_dashboard.png "QGIS - Étiquette remplissage Dashboard")
 
 Aller maintenant dans l’onglet **position**.
 
@@ -107,7 +107,7 @@ Cliquer sur l’icône à droite de **décalage X,Y**. Choisissez cette fois ci 
 Dans le constructeur de requête qui s’ouvre, indiquer la variable suivante : ***array( "label_offset_x" , "label_offset_y")***
 Appuyer sur ok.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Etiquette decalage Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard")
 
 ### Etape 5 : Remplir les champs de la table attributaire
 
@@ -123,11 +123,11 @@ Paramétrer ensuite les champs qui vont déterminer la taille, la position, la c
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_suite_dashboard.png "QGIS - Paramétrage fenêtre 1 suite")
 
-Au fur et à mesure des modifications des valeurs de champs, lorsque vous enregistrez, vous devez voir apparaitre la 1ere fenêtre Dashboard et les modifications apportées.
+Au fur et à mesure des modifications des valeurs de champs, lorsque vous enregistrez, vous devez voir apparaître la 1ere fenêtre Dashboard et les modifications apportées.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_vue.png "QGIS - Rendu fenêtre 1")
 
-Si aucune fenêtre n’apparait au niveau de votre projet QGIS, jouez avec les différents champs (surtout label_ofset x, label_ofset y), cela peut être un problème de position de la fenêtre. Si elle n’apparait toujours pas, reprenez les étapes précédentes.
+Si aucune fenêtre n’apparaît au niveau de votre projet QGIS, jouez avec les différents champs (surtout label_offset x, label_offset y), cela peut être un problème de position de la fenêtre. Si elle n’apparaît toujours pas, reprenez les étapes précédentes.
 
 ### Etape 6 : Créer de nouvelles fenêtres dashboard
 
@@ -150,13 +150,13 @@ Ci-dessous, nous avons organisé la table avec une fenêtre par ligne comme suit
 
 ### Exemple de requêtes utilisées
 
-1- total de la somme des valeurs de la collonne pt_total de la couche Infos Communes
+1- total de la somme des valeurs de la colonne pt_total de la couche Infos Communes
 
 ```sql
 aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total)
 ```
 
-2- total de la somme des valeurs de la collonne pt_total des entités séléctionnées sur la couche Infos Communes
+2- total de la somme des valeurs de la collonne pt_total des entités sélectionnées sur la couche Infos Communes
 
 ```sql
 aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total, filter:=is_selected('Infos Communes', $currentfeature )  )
@@ -172,7 +172,7 @@ aggregate(layer:= 'Infos Communes', aggregate:='count', expression:= actif, filt
 
 Le Dashboard est utilisé par le pôle SIG afin de contrôler les erreurs de saisies en temps réel par les communes et présenter un bilan général de l'avancement du projet.
 
-Ci-dessous, un exemple d'afffichage des bilans adresses (en haut à droite) après séléction d'une commune sous QGIS.
+Ci-dessous, un exemple d'affichage des bilans adresses (en haut à droite) après sélection d'une commune sous QGIS.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/selection_commune_dashboard.gif "Table attributaire Dashboard partie 2")
 
