@@ -168,8 +168,6 @@ aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total, filt
 aggregate(layer:= 'Infos Communes', aggregate:='count', expression:= actif, filter:= actif LIKE 'Oui' )
 ```
 
-
-
 ## Exemple de rendu
 
 Le Dashboard est utilisé par le pôle SIG afin de contrôler les erreurs de saisies en temps réel par les communes et présenter un bilan général de l'avancement du projet.
