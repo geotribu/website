@@ -6,7 +6,7 @@ categories:
     - article
 date: "2022-02-07 10:20"
 description: "Mise en place d'un tableau de bord QGIS par manipulation d'étiquettes de couches dans le cadre du suivi de projet adressage - Pôle SIG du Département du Calvados."
-image: ""
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro(2).png "
 license: default
 robots: index, follow
 tags:
@@ -35,7 +35,6 @@ Afin d’accompagner les communes dans cette démarche, le Département du Calva
 
 En janvier 2022, le département accompagnait ainsi plus de 200 communes et avait publié près de 47 000 adresses sur la BAN. Cet accompagnement, réalisé par 2 agents du pôle SIG, implique des interventions sur le terrain, des formations aux normes de l’adressage, la résolution des problématiques terrain complexes, un support pour la saisie des adresses dans l’application, le contrôle des voies et des points adresses saisis.
 
-
 ## Un outil de suivi intégré
 
 Au sein du pôle SIG, nous souhaitions obtenir une vue d’ensemble des données produites au fur et à mesure de l’avancement du projet. Il fallait donc identifier une solution SIG permettant d’assurer un suivi interactif des données (contrôle des erreurs de saisies et bilan de l'avancement du projet).
@@ -45,7 +44,6 @@ Sur le logiciel QGIS aucun module additionnel (plugin) ne propose à ce jour de 
 
 Cette méthode permet, en créant une couche spécifique de tableau de bord, de paramétrer le style des étiquettes de la couche et via requêtes sql d’agrégation, de produire un tableau interactif de suivi des données présentes dans le projet QGIS.
 
-
 ## Les étapes de construction du Dashboard
 
 ### Etape 1 : création de la couche dashboard
@@ -54,13 +52,11 @@ Créer une couche « dashboard » de polygone composée des champs suivant :
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/1_champs_dashboard.png "QGIS - Champs table Dashboard")
 
-
 ### Etape 2 : créer un polygone
 
 Editer la couche « dashboard » et créer un polygone suivant l’emprise du projet.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard")
-
 
 ### Etape 3 : symbologie de la couche
 
@@ -69,7 +65,6 @@ Ouvrir les propriétés de la couche dashboard et dans l’onglet symbologie sé
 Le polygone doit disparaitre à l’écran.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/3_symbologie_dashboard.png "QGIS - Symbologie couche Dashboard")
-
 
 ### Etape 4 : paramétrer les étiquettes
 
@@ -114,8 +109,6 @@ Appuyer sur ok.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Etiquette decalage Dashboard")
 
-
-
 ### Etape 5 : Remplir les champs de la table attributaire
 
 Revenir à la table attributaire de « dashboard ».
@@ -126,7 +119,6 @@ Puis indiquer dans le champs label expression l’expression qui s’affichera d
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 1")
 
-
 Paramétrer ensuite les champs qui vont déterminer la taille, la position, la couleur de fond et la police de la première fenêtre Dashboard.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_suite_dashboard.png "QGIS - Paramétrage fenêtre 1 suite")
@@ -136,7 +128,6 @@ Au fur et à mesure des modifications des valeurs de champs, lorsque vous enregi
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_vue.png "QGIS - Rendu fenêtre 1")
 
 Si aucune fenêtre n’apparait au niveau de votre projet QGIS, jouez avec les différents champs (surtout label_ofset x, label_ofset y), cela peut être un problème de position de la fenêtre. Si elle n’apparait toujours pas, reprenez les étapes précédentes.
-
 
 ### Etape 6 : Créer de nouvelles fenêtres dashboard
 
@@ -150,7 +141,6 @@ Une fois la nouvelle entité crée, modifier les valeurs de champs de la seconde
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/14_2nd_fenetre_vue.png "QGIS - Rendu fenêtre 2")
 
-
 ### Exemple de table attributaire Dashboard et rendu
 
 Ci-dessous, nous avons organisé la table avec une fenêtre par ligne comme suit : une 1ère fenêtre avec valeur « titre » suivie d'une fenêtre affichant une valeur « expression ».
@@ -160,18 +150,20 @@ Ci-dessous, nous avons organisé la table avec une fenêtre par ligne comme suit
 
 ### Exemple de requêtes utilisées
 
-
 1- total de la somme des valeurs de la collonne pt_total de la couche Infos Communes
+
 ```sql
 aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total)
 ```
 
 2- total de la somme des valeurs de la collonne pt_total des entités séléctionnées sur la couche Infos Communes
+
 ```sql
 aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total, filter:=is_selected('Infos Communes', $currentfeature )  )
 ```
 
 3- Nombre de communes accompagnées (champ : actif, valeur : oui) dans la couche Infos Communes
+
 ```sql
 aggregate(layer:= 'Infos Communes', aggregate:='count', expression:= actif, filter:= actif LIKE 'Oui' )
 ```
