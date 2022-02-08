@@ -41,7 +41,7 @@ En janvier 2022, le département accompagnait ainsi plus de 200 communes et avai
 Au sein du pôle SIG, nous souhaitions obtenir une vue d’ensemble des données produites au fur et à mesure de l’avancement du projet. Il fallait donc identifier une solution SIG permettant d’assurer un suivi interactif des données (contrôle des erreurs de saisies et bilan de l'avancement du projet).
 Elle devait s’intégrer au logiciel QGIS utilisé par le chargé de msision SIG du Département et sur l’application cartographique Lizmap à disposition des communes et des partenaires.
 
-Sur le logiciel QGIS aucun module additionnel (plugin) ne propose à ce jour de solution complète de dashboarding. Nous nous nous sommes donc appuyer sur une méthodologie publiée sur le site https://plugins.QGIS.org/geopackages/5/ (Sutton, 2020) , afin de développer un « Dashboard » par manipulation des étiquettes de couches QGIS.
+Sur le logiciel QGIS aucun module additionnel (plugin) ne propose à ce jour de solution complète de dashboarding. Nous nous nous sommes donc appuyer sur une méthodologie publiée sur le site <https://plugins.QGIS.org/geopackages/5/> (Sutton, 2020) , afin de développer un « Dashboard » par manipulation des étiquettes de couches QGIS.
 
 Cette méthode permet, en créant une couche spécifique de tableau de bord, de paramétrer le style des étiquettes de la couche et via requêtes sql d’agrégation, de produire un tableau interactif de suivi des données présentes dans le projet QGIS.
 
