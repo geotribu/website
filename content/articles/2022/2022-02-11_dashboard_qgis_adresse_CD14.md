@@ -23,17 +23,22 @@ tags:
 
 Depuis 2019, le Département accompagne les communes pour la saisie et la diffusion de leurs adresses vers la Base adresse Nationale. Après plus de 2 ans de projet, et avec l’augmentation constante du nombre de demandes d’accompagnements par les communes, les membres du pôle SIG du Département ont souhaité se doter d’un tableau de bord de suivi des indicateurs clés du projet, intégré aux logiciels SIG utilisés quotidiennement par les équipes et les partenaires.
 
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro(2).png  "QGIS - intro vue Dashboard")
+
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
 ## Accompagnement à l’adressage du Département
 
-L’adressage est obligatoire pour les communes de plus de 2000 habitants et est très fortement conseillé aux plus petites communes.
+L’adressage est obligatoire pour les communes de plus de 2000 habitants et le deviendra pour l'ensemble des communes avec l'entrée en vigueur prochaine de la loi 3DS*.
+
 Pour permettre aux communes de diffuser leurs adresses, la Direction du numérique de l’État a mis en place la Base Adresse Nationale (BAN), une base qui référence l’ensemble des adresses locales à l’échelle nationale. Depuis octobre 2019, les adresses de « sources communales » publiées sur la BAN ont la priorité sur les autres sources.
 
-Afin d’accompagner les communes dans cette démarche, le Département du Calvados met à disposition des communes une application cartographique de gestion des adresses <https://atlas-calvados.fr> (base adresse du calvados), permettant de consulter la BAN, dénommer des voie, créer des nouvelles adresses et modifier ou supprimer des adresses existantes. Cette application a été développée à partir des logiciels open sources Lizmap/PostGIS/QGIS serveur.
+Afin d’accompagner les communes dans cette démarche, le Département du Calvados met à disposition des communes une application cartographique de gestion des adresses <https://atlas.calvados.fr/index.php/view/map/?repository=04&project=52_bac_14> (base adresse du calvados), permettant de consulter la BAN, dénommer des voie, créer des nouvelles adresses et modifier ou supprimer des adresses existantes. Cette application a été développée à partir des logiciels open sources Lizmap/PostGIS/QGIS serveur.
 
 En janvier 2022, le département accompagnait ainsi plus de 200 communes et avait publié près de 47 000 adresses sur la BAN. Cet accompagnement, réalisé par 2 agents du pôle SIG, implique des interventions sur le terrain, des formations aux normes de l’adressage, la résolution des problématiques terrain complexes, un support pour la saisie des adresses dans l’application, le contrôle des voies et des points adresses saisis.
+
+> **_*_**  <https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000043496065/>
 
 ## Un outil de suivi intégré
 
@@ -56,7 +61,7 @@ Créer une couche « dashboard » de polygone composée des champs suivant :
 
 Éditer la couche « dashboard » et créer un polygone suivant l’emprise du projet.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard(2).png "QGIS - Création polygone Dashboard")
 
 ### Etape 3 : symbologie de la couche
 
@@ -174,7 +179,7 @@ Le Dashboard est utilisé par le pôle SIG afin de contrôler les erreurs de sai
 
 Ci-dessous, un exemple d'affichage des bilans adresses (en haut à droite) après sélection d'une commune sous QGIS.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/selection_commune_dashboard.gif "Table attributaire Dashboard partie 2")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/gif_dashboard(1).gif "Table attributaire Dashboard partie 2")
 
 ----
 
