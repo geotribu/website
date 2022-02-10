@@ -6,7 +6,7 @@ categories:
     - article
 date: "2022-02-07 10:20"
 description: "Mise en place d'un tableau de bord QGIS par manipulation d'étiquettes de couches dans le cadre du suivi de projet adressage - Pôle SIG du Département du Calvados."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro(2).png "
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro.png "
 license: default
 robots: index, follow
 tags:
@@ -23,7 +23,7 @@ tags:
 
 Depuis 2019, le Département accompagne les communes pour la saisie et la diffusion de leurs adresses vers la Base adresse Nationale. Après plus de 2 ans de projet, et avec l’augmentation constante du nombre de demandes d’accompagnements par les communes, les membres du pôle SIG du Département ont souhaité se doter d’un tableau de bord de suivi des indicateurs clés du projet, intégré aux logiciels SIG utilisés quotidiennement par les équipes et les partenaires.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro(2).png  "QGIS - intro vue Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro.png  "QGIS - intro vue Dashboard")
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -61,7 +61,7 @@ Créer une couche « dashboard » de polygone composée des champs suivant :
 
 Éditer la couche « dashboard » et créer un polygone suivant l’emprise du projet.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard(2).png "QGIS - Création polygone Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard")
 
 ### Etape 3 : symbologie de la couche
 
@@ -85,21 +85,21 @@ Faire de même avec le **style** et pointer sur le champs style.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Étiquette style Dashboard")
 
-Faire de même avec la **couleur** et pointer sur le champ ***font_colour***.
+Faire de même avec la **couleur** et pointer sur le champ _**font_color**_.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/7_etiquettes_dashboard.png "QGIS - Étiquette couleur Dashboard")
 
 Aller maintenant dans l’onglet **arrière-plan.**
 
-Faire de même que précédemment avec la **taille X** et pointer sur le champ ***width***.
+Faire de même que précédemment avec la **taille X** et pointer sur le champ _**width**_.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/8_etiquettes_dashboard.png "QGIS - Étiquette X Dashboard")
 
-Faire de même que précédemment avec la **taille Y** et pointer sur le champ ***height***.
+Faire de même que précédemment avec la **taille Y** et pointer sur le champ _**height**_.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/9_etiquettes_dashboard.png "QGIS - Étiquette Y Dashboard")
 
-Faire de même avec la **couleur de remplissage** et pointer sur le champ ***bg_colour***.
+Faire de même avec la **couleur de remplissage** et pointer sur le champ _**bg_colour**_.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/10_etiquettes_dashboard.png "QGIS - Étiquette remplissage Dashboard")
 
@@ -109,7 +109,7 @@ Choisir l’option quadrant de l’image ci-dessous.
 
 Cliquer sur l’icône à droite de **décalage X,Y**. Choisissez cette fois ci la sélection par expression.
 
-Dans le constructeur de requête qui s’ouvre, indiquer la variable suivante : ***array( "label_offset_x" , "label_offset_y")***
+Dans le constructeur de requête qui s’ouvre, indiquer la variable suivante : _**array( "label_offset_x" , "label_offset_y")**_
 Appuyer sur ok.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard")
@@ -118,9 +118,9 @@ Appuyer sur ok.
 
 Revenir à la table attributaire de « dashboard ».
 
-Donner un nom qui mette en évidence l’action. Ici le titre de la première étiquette que nous appellerons fenêtre dashboard. Dans le champs **geometry_generator** inscrire la valeur ***point_n(  @map_extent, 4  )***.
+Donner un nom qui mette en évidence l’action. Ici le titre de la première étiquette que nous appellerons fenêtre dashboard. Dans le champs **geometry_generator** inscrire la valeur _**point_n(  @map_extent, 4  )**_.
 
-Puis indiquer dans le champs label expression l’expression qui s’affichera dans la première fenêtre dashboard, ici, simplement le titre *****'nbr pt total'*****
+Puis indiquer dans le champs label expression l’expression qui s’affichera dans la première fenêtre dashboard, ici, simplement le titre _***'nbr pt total'**_
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 1")
 
@@ -179,7 +179,7 @@ Le Dashboard est utilisé par le pôle SIG afin de contrôler les erreurs de sai
 
 Ci-dessous, un exemple d'affichage des bilans adresses (en haut à droite) après sélection d'une commune sous QGIS.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/gif_dashboard(1).gif "Table attributaire Dashboard partie 2")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/gif_dashboard.gif "Table attributaire Dashboard partie 2")
 
 ----
 
