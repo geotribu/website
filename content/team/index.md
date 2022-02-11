@@ -35,7 +35,7 @@ C'est donc un regroupement spontané de personnes autour de leur intérêt pour 
 
 ## Geotribu c'est qui ?
 
-[Page des contributeur/ices :fontawesome-solid-people-carry:](/team/contributors/){: .md-button }
+[Page des contributeur/ices :fontawesome-solid-people-carry-box:](/team/contributors/){: .md-button }
 {: align=middle }
 
 <!-- Hyperlinks reference -->
