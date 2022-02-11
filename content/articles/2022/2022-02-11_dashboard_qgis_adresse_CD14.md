@@ -4,7 +4,7 @@ authors:
     - Théo GRONDIN
 categories:
     - article
-date: "2022-02-07 10:20"
+date: "2022-02-11 10:20"
 description: "Mise en place d'un tableau de bord QGIS par manipulation d'étiquettes de couches dans le cadre du suivi de projet adressage - Pôle SIG du Département du Calvados."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro.png "
 license: default
@@ -13,13 +13,14 @@ tags:
     - adresse
     - BAN
     - dashboard
+    - loi 3DS
     - QGIS
     - tableau de bord
 ---
 
 # Dashboard QGIS : Suivi des indicateurs adresse du Département du Calvados
 
-:calendar: Date de publication initiale : 7 février 2022
+:calendar: Date de publication initiale : 11 février 2022
 
 Depuis 2019, le Département accompagne les communes pour la saisie et la diffusion de leurs adresses vers la Base Adresse Nationale. Après plus de 2 ans de projet, et avec l’augmentation constante du nombre de demandes d’accompagnement par les communes, les membres du pôle SIG du Département ont souhaité se doter d’un tableau de bord de suivi des indicateurs clés du projet, intégré aux logiciels SIG utilisés quotidiennement par les équipes et les partenaires.
 
