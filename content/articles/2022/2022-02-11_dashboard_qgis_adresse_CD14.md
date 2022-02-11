@@ -21,16 +21,18 @@ tags:
 
 :calendar: Date de publication initiale : 7 février 2022
 
-Depuis 2019, le Département accompagne les communes pour la saisie et la diffusion de leurs adresses vers la Base adresse Nationale. Après plus de 2 ans de projet, et avec l’augmentation constante du nombre de demandes d’accompagnements par les communes, les membres du pôle SIG du Département ont souhaité se doter d’un tableau de bord de suivi des indicateurs clés du projet, intégré aux logiciels SIG utilisés quotidiennement par les équipes et les partenaires.
+Depuis 2019, le Département accompagne les communes pour la saisie et la diffusion de leurs adresses vers la Base Adresse Nationale. Après plus de 2 ans de projet, et avec l’augmentation constante du nombre de demandes d’accompagnement par les communes, les membres du pôle SIG du Département ont souhaité se doter d’un tableau de bord de suivi des indicateurs clés du projet, intégré aux logiciels SIG utilisés quotidiennement par les équipes et les partenaires.
 
-![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro.png  "QGIS - intro vue Dashboard")
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro.png  "QGIS - intro vue Dashboard"){: .img-center loading=lazy }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
+----
+
 ## Accompagnement à l’adressage du Département
 
-L’adressage est obligatoire pour les communes de plus de 2000 habitants et le deviendra pour l'ensemble des communes avec l'entrée en vigueur prochaine de la loi 3DS*.
+L’adressage est obligatoire pour les communes de plus de 2000 habitants et le deviendra pour l'ensemble des communes avec l'entrée en vigueur prochaine de la loi 3DS[^1].
 
 Pour permettre aux communes de diffuser leurs adresses, la Direction du numérique de l’État a mis en place la Base Adresse Nationale (BAN), une base qui référence l’ensemble des adresses locales à l’échelle nationale. Depuis octobre 2019, les adresses de « sources communales » publiées sur la BAN ont la priorité sur les autres sources.
 
@@ -38,7 +40,7 @@ Afin d’accompagner les communes dans cette démarche, le Département du Calva
 
 En janvier 2022, le département accompagnait ainsi plus de 200 communes et avait publié près de 47 000 adresses sur la BAN. Cet accompagnement, réalisé par 2 agents du pôle SIG, implique des interventions sur le terrain, des formations aux normes de l’adressage, la résolution des problématiques terrain complexes, un support pour la saisie des adresses dans l’application, le contrôle des voies et des points adresses saisis.
 
-> **_*_**  <https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000043496065/>
+----
 
 ## Un outil de suivi intégré
 
@@ -188,3 +190,5 @@ Ci-dessous, un exemple d'affichage des bilans adresses (en haut à droite) aprè
 --8<-- "content/team/tgro.md"
 
 {% include "licenses/default.md" %}
+
+[^1]: loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale. Voir sur [Legifrance](https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000043496065/) et les [contenus liés sur Geotribu](/tags/#loi-3ds).
