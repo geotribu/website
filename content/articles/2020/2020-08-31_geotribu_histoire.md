@@ -81,7 +81,7 @@ Mais si récupérer des contenus n'est qu'une question technique (on le verra da
 
 Qu'importe, on a retrouvé le plaisir et pourvu que ça dure !
 
-[Page des contributeur/ices :fontawesome-solid-people-carry:](/team/contributors/){: .md-button }
+[Page des contributeur/ices :fontawesome-solid-people-carry-box:](/team/contributors/){: .md-button }
 {: align=middle }
 
 ----
