@@ -73,7 +73,7 @@ Le polygone doit disparaître à l’écran.
 
 ### Etape 4 : paramétrer les étiquettes
 
-Sélectionner ‘Etiquettes simples’ dans l’onglet Étiquettes. Dans le sous onglet valeur, faites une sélection par expression et inscrivez le code suivant : eval( "label_expression")
+Sélectionner ‘Etiquettes simples’ dans l’onglet Étiquettes. Dans le sous onglet valeur, faites une sélection par expression et inscrivez le code suivant : `eval( "label_expression")`
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/4_etiquettes_dashboard.png "QGIS - Étiquette simple Dashboard")
 
@@ -109,7 +109,7 @@ Choisir l’option quadrant de l’image ci-dessous.
 
 Cliquer sur l’icône à droite de **décalage X,Y**. Choisissez cette fois ci la sélection par expression.
 
-Dans le constructeur de requête qui s’ouvre, indiquer la variable suivante : _**array( "label_offset_x" , "label_offset_y")**_
+Dans le constructeur de requête qui s’ouvre, indiquer la variable suivante : `array( "label_offset_x" , "label_offset_y")`  
 Appuyer sur ok.
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard")
@@ -118,7 +118,7 @@ Appuyer sur ok.
 
 Revenir à la table attributaire de « dashboard ».
 
-Donner un nom qui mette en évidence l’action. Ici le titre de la première étiquette que nous appellerons fenêtre dashboard. Dans le champs **geometry_generator** inscrire la valeur _**point_n(  @map_extent, 4  )**_.
+Donner un nom qui mette en évidence l’action. Ici le titre de la première étiquette que nous appellerons fenêtre dashboard. Dans le champs **geometry_generator** inscrire la valeur `point_n(  @map_extent, 4  )`.
 
 Puis indiquer dans le champs label expression l’expression qui s’affichera dans la première fenêtre dashboard, ici, simplement le titre _***'nbr pt total'**_
 
