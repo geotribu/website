@@ -18,7 +18,7 @@ tags:
 
 # Un rendu carte topo QGIS basé sur la BD TOPO®
 
-:calendar: Date de publication initiale : 28 Mai 2021 - Mise à jour : 16 Février 2022
+:calendar: Date de publication initiale : 28 Mai 2021
 
 Pré-requis :
 
