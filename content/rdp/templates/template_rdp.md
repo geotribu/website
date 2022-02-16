@@ -8,6 +8,7 @@ date: 2021-08-21 14:20
 description: "GeoRDP du 21 août 2021 : "
 image: "URL de l'image d'illustration de la RDP"
 license: default
+robots: index, follow
 tags:
     - tag 1
     - tag 2
@@ -18,7 +19,7 @@ tags:
 
 ## Intro
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "News"){: .img-rdp-news-thumb }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
 
 [Commenter cette revue de presse :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -75,6 +76,3 @@ tags:
 ## En bref
 
 - Annonces diverses
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

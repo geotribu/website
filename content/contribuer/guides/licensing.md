@@ -13,6 +13,9 @@ tags:
     - licence
     - Markdown
     - tutoriel
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Choisir une licence pour son article
@@ -109,5 +112,3 @@ D'un point de vue technique, la gestion des licences est liée aux capacités de
 
 <!-- Hyperlinks reference -->
 [Licence Ouverte 2.0]: https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf
-
-<!-- Footnotes reference -->

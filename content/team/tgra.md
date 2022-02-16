@@ -1,4 +1,4 @@
-# Thomas Gratier
+# Thomas Gratier {: data-search-exclude }
 
 ![portrait Thomas Gratier](https://cdn.geotribu.fr/img/internal/contributeurs/tgra.png "portrait Thomas Gratier"){: .img-rdp-news-thumb }
 

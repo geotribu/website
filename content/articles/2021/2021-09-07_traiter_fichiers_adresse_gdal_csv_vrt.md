@@ -455,7 +455,7 @@ Enfin, si la ligne de commande vous effraie, il y a aussi des outils disponibles
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
 

@@ -1,4 +1,4 @@
-# Arnaud Vandecasteele
+# Arnaud Vandecasteele  {: data-search-exclude }
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/avdc.jpg "portrait"){: .img-rdp-news-thumb }
 

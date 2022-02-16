@@ -1,0 +1,133 @@
+name: "📰 Suggestion de news pour une revue de presse"
+description: "Formulaire de proposition de news pour une GeoRDP."
+labels: ["contribution externe", "rdp", "triage"]
+assignees:
+  - aurelienchaumet
+  - guts
+  - igeofr
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de contribuer à Geotribu !
+        Le guide de soumission et la structure d'une news [sont ici](https://static.geotribu.fr/contribuer/rdp/add_news/#structure-de-la-news).
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+
+        # Vous
+
+  - type: checkboxes
+    id: cb-author-content-relationship
+    attributes:
+      label: "Avez-vous un lien avec le contenu proposé ?"
+      description: Mise en avant du travail d'un tiers ? Auto-promo ? Publicité ?
+      options:
+        - label: Oui
+        - label: Non
+    validations:
+      required: true
+
+  - type: input
+    id: in-author-name
+    attributes:
+      label: Votre nom
+      description: Merci de nous indiquer le Prénom NOM (pseudonyme accepté) sous lequel vous attribuer la contribution (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
+      placeholder: ex. "Jean DUPONT"
+    validations:
+      required: true
+
+  - type: input
+    id: in-author-mail
+    attributes:
+      label: Votre adresse email
+      description: Merci de nous indiquer votre adresse email afin de pouvoir vous attribuer la contribution (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
+      placeholder: ex. pseudo.nyme [à] mon-organisation.fr
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: in-author-license
+    attributes:
+      label: Licence
+      description: Vous acceptez que votre contribution soit publiée sous la licence [CC BY-NC-SA 4.0](https://static.geotribu.fr/contribuer/guides/licensing/#licence-par-defaut).
+      options:
+        - label: J'accepte
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+
+        # La news
+
+  - type: dropdown
+    id: dr-news-category
+    attributes:
+      label: Section / catégorie
+      description: "A quelle [section ou catégorie](https://static.geotribu.fr/contribuer/rdp/add_news/#sections-categories) rattacher la news ?"
+      options:
+        - Sorties de la semaine
+        - Logiciel
+        - Représentation Cartographique
+        - OpenStreetMap
+        - Google
+        - Open Data
+        - Geo-event
+        - Divers
+        - En bref
+    validations:
+      required: true
+
+  - type: input
+    id: in-news-tags
+    attributes:
+      label: Mots-clés
+      description: |
+        Liste de mots-clés séparés par une virgule.
+        De préférence, choisir parmi les [mots-clés existants](https://static.geotribu.fr/tags/).
+    validations:
+      required: true
+
+  - type: input
+    id: in-news-title
+    attributes:
+      label: Titre de la news
+      description: "Le titre accrocheur de la news. Longeur maximale indicative : 100/120 caractères"
+    validations:
+      required: true
+
+  - type: input
+    id: in-news-icon
+    attributes:
+      label: Icône de la news
+      description: |
+        L'icône de la news. Au choix :
+          - l'une des icônes génériques proposées par le site : choisir dans [ce tableau](https://static.geotribu.fr/contribuer/rdp/add_news/#tableau-des-icones-generiques)
+          - l'une des icônes déjà présentes dans le dossier `logos-icones` du [CDN](https://cdn.geotribu.fr/tinyfilemanager.php?p=logos-icones). Pour l'accès invité (lecture seule), [voir par ici](https://static.geotribu.fr/contribuer/guides/image/#parcourir-les-images-sur-le-cdn-de-geotribu).
+          - une icône personnalisée : utiliser ce champ pour donner la description de l'icône et glisser/déposer l'image en description plus bas
+      value: "https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tx-news-content
+    attributes:
+      label: Contenu de la news
+      description: La syntaxe Markdown est acceptée, mais le rendu final diffèrera de celui de GitHub.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ----
+
+  - type: textarea
+    id: tx-misc-comment
+    attributes:
+      label: Message libre
+      description: "Un commentaire ? Une précision à apporter ? Un message pour l'équipe ?"

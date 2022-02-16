@@ -1,3 +1,9 @@
+---
+# theme customizations
+search:
+  exclude: true
+---
+
 # Guide de contribution pour les tutoriaux
 
 !!! warning
@@ -35,7 +41,7 @@ Pour je ne sais qu'elle raison cela ne fonctionne pas correctement. Il faut main
 
 Vous pouvez maintenant remplacer le texte `Type your code in the box. To create a new line within the box use SHIFT + ENTER` par votre code :
 
-```
+```html
 \&lt;pre class=`brush: css; auto-links: true; collapse: false; first-line: 1; html-script: false; smart-tabs: true; tab-size: 4; toolbar: true; codetag`\&gt; **Type your code in the box. To create a new line within the box use SHIFT + ENTER.** \&lt;/pre\&gt;
 ```
 

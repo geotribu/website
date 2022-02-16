@@ -1,4 +1,4 @@
-# Guillaume de Boyer
+# Guillaume de Boyer {: data-search-exclude }
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/gdbo.jpg "portrait"){: .img-rdp-news-thumb }
 

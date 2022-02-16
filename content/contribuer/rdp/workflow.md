@@ -22,11 +22,8 @@ tags:
 3. Les contributions sont ouvertes :
     - soit via des commits directement sur la branche de la revue de presse
     - soit via des Pull Requests pointant sur la branche de la RDP
-4. La validation de la RDP se fait par une équipe de validation
+4. La validation de la RDP se fait par l'équipe de Geotribu
 5. Une fois validée et relue, la branche est fusionnée et la RDP publiée puis diffusée.
 
 <!-- Hyperlinks reference -->
 [Git]: https://fr.wikipedia.org/wiki/Git
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

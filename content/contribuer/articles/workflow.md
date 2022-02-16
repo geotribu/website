@@ -13,6 +13,9 @@ tags:
     - Geotribu
     - guide
     - workflow
+# theme customizations
+search:
+  exclude: true
 ---
 
 # Proposer un article
@@ -23,7 +26,7 @@ La rédaction d'articles est ouverte à toute personne souhaitant partager une e
 
 Gardez en tête que le travail de l'équipe est **bénévole**. A ce titre, plus votre contenu est conforme à nos prérequis et aux guides de contribution, moins il ne demande de travail de notre part. Ce que vous ne faites pas, nous devrons le faire.
 
-Bref, appliquons le principe du *fair-use*[^fairuse] au bénévolat :hugging: !
+Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
 ## Rédiger
 
@@ -34,14 +37,14 @@ Allez, cette fois, c'est parti ! L'angoisse de la feuille blanche n'a qu'à bien
 Comme indiqué dans [les prérequis](/contribuer/requirements/), qu'importe le flacon, tant qu'on a l'ivresse de la rédaction  en Markdown : du simple éditeur de texte (oui, même le bloc-notes de Windows !) à l'éditeur lourd (à ce propos voir [le dossier de Next INpact](https://www.nextinpact.com/article/44240/zettlr-prise-en-main-dun-editeur-texte-aux-nombreuses-qualites)), faites votre choix !  
 Mais sachez que nous mettons un éditeur collaboratif ([Hedgedoc](https://hedgedoc.org/)) à disposition des contributeur/ices :
 
-[Utiliser le PAD :fontawesome-solid-feather-alt:](http://pad.geotribu.fr/){: .md-button }
+[Utiliser le PAD :fontawesome-solid-feather-pointed:](http://pad.geotribu.fr/){: .md-button }
 {: align=middle }
 
 Sinon, cela tient en quelques étapes :
 
 1. Créer un fichier Markdown (extension `.md` ou `markdown`)
 2. Copier/coller le modèle d'article dans votre fichier :
-    - soit [depuis Github](https://github.com/geotribu/website/blob/master/content/articles/templates/template_article.md)
+    - soit [depuis Github](https://github.com/geotribu/website/blob/master/content/articles/templates/template_article.md?plain=1)
     - soit [depuis le PAD](https://geotripad.herokuapp.com/g70BvjD0TAuGHHb6jTzgPQ?edit)
 3. Remplir les parties !
 4. Faire relire
@@ -153,11 +156,8 @@ Une fois la branche de l'article fusionnée (*merged*) dans la branche principal
 En ce qui concerne la diffusion, cela reste à la discrétion de chacun/e, sachant que nous utiliserons le compte Twitter de Geotribu pour relayer la publication.
 
 <!-- Footnotes -->
-[^fairuse]: analogie avec un cadre légal qui repose sur un usage raisonnable des oeuvres et ressources. Voir [la fiche Wikipedia](https://fr.wikipedia.org/wiki/Fair_use).
 [^pr]: étape où un contributeur propose d'intégrer ses modifications dans le socle principal du projet. Voir [la documentation de GitHub](https://docs.github.com/fr/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 <!-- Hyperlinks reference -->
 [dépôt GitHub]: https://github.com/geotribu/website
 [Git]: https://fr.wikipedia.org/wiki/Git
-
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

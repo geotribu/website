@@ -282,11 +282,8 @@ Après la phase de mise en œuvre et d'état des lieux sur le territoire, nous a
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/fbor.md"
 
 {% include "licenses/default.md" %}
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"

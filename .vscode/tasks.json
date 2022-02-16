@@ -4,28 +4,73 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "pipInstall",
+            "label": "Git - Mise à jour et nettoyage local",
             "type": "shell",
-            "osx": {
-                "command": "${config:python.pythonPath} -m pip install -U -r requirements.txt"
-            },
-            "windows": {
-                "command": "${config:python.pythonPath} -m pip install -U -r requirements.txt"
-            },
             "linux": {
-                "command": "${config:python.pythonPath} -m pip install -U -r requirements.txt"
+                "command": "git",
+                "args": [
+                    "pull",
+                    "&&",
+                    "git",
+                    "remote",
+                    "prune",
+                    "origin",
+                    "&&",
+                    "git",
+                    "branch",
+                    "--merged",
+                    "|",
+                    "grep",
+                    "-i",
+                    "-v",
+                    "-E",
+                    "\"master|gh-pages\"",
+                    "|",
+                    "xargs",
+                    "git",
+                    "branch",
+                    "-d"
+                ]
             },
             "problemMatcher": []
         },
         {
-            "label": "Build mkdocs website",
+            "label": "Markdown - Correction automatique du fichier courant",
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "markdownlint",
+                "-f",
+                "${file}"
+            ],
+            "problemMatcher": [
+                "$markdownlint"
+            ]
+        },
+        {
+            "label": "Python - Installation et mise à jour des dépendances",
+            "type": "shell",
+            "osx": {
+                "command": "${config:python.pythonPath} -m pip install -U -r requirements-free.txt"
+            },
+            "windows": {
+                "command": "${config:python.pythonPath} -m pip install -U -r requirements-free.txt"
+            },
+            "linux": {
+                "command": "${config:python.pythonPath} -m pip install -U -r requirements-free.txt"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Mkdocs - Générer le site (config PROD)",
             "group": "build",
             "command": "${config:python.pythonPath}",
             "args": [
                 "-m",
                 "mkdocs",
                 "build",
-                "-f",
+                "--stric",
+                "--config-file",
                 "mkdocs.yml"
             ],
             "presentation": {
@@ -39,7 +84,7 @@
             "problemMatcher": []
         },
         {
-            "label": "Serve mkdocs website",
+            "label": "Mkdocs - Servir le site localement (config MINIMALE)",
             "group": "test",
             "command": "${config:python.pythonPath}",
             "args": [
