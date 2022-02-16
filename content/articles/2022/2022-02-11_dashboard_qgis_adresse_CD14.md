@@ -64,7 +64,7 @@ Créer une couche « dashboard » de polygone composée des champs suivant :
 
 Éditer la couche « dashboard » et créer un polygone suivant l’emprise du projet.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Création polygone Dashboard" }
+[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboardd.png "QGIS - Création polygone Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboardd.png "QGIS - Création polygone Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Création polygone Dashboard" }
 
 ### Etape 3 : symbologie de la couche
 
@@ -117,11 +117,16 @@ Appuyer sur ok.
 
 [![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette décalage Dashboard" }
 
+
+Pour finir, afin de fixer les étiquettes selon l'emprise de la carte, cocher la case **générateur de géométrie** et inscrire l'expression suivante : start_point( @map_extent )
+
+[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/last_emprise_carte_expression.png "QGIS - Expression emprise de carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/last_emprise_carte_expression.png "QGIS - Expression emprise de carte"){: data-mediabox="gallery-lightbox" data-title="QGIS - Expression emprise de carte" }
+
 ### Etape 5 : Remplir les champs de la table attributaire
 
 Revenir à la table attributaire de « dashboard ».
 
-Donner un nom qui mette en évidence l’action. Ici le titre de la première étiquette que nous appellerons fenêtre dashboard. Dans le champs **geometry_generator** inscrire la valeur `point_n(  @map_extent, 4  )`.
+Donner un nom qui mette en évidence l’action. Ici le titre de la première étiquette que nous appellerons fenêtre dashboard.
 
 Puis indiquer dans le champs label expression l’expression qui s’affichera dans la première fenêtre dashboard, ici, simplement le titre _***'nbr pt total'**_
 
