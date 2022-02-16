@@ -18,7 +18,7 @@ tags:
 
 # Un rendu carte topo QGIS basé sur la BD TOPO®
 
-:calendar: Date de publication initiale : 28 Mai 2021
+:calendar: Date de publication initiale : 28 Mai 2021 - Mise à jour : 16 Février 2022
 
 Pré-requis :
 
@@ -60,6 +60,10 @@ Voici un exemple d'export réalisé et comme vous pouvez le constater, en plus d
 ## Conclusion
 
 Ce projet QGIS est une première proposition de rendu mais n'hésitez pas à l'adapter en fonction de vos besoins et à nous faire part de vos améliorations en commentaire.
+
+## Présentation aux Rencontres des Utilisateurs Francophones de QGIS 2022
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/PjeoqxC9Zy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ----
 
