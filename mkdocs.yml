@@ -180,7 +180,7 @@ extra:
     - icon: "fontawesome/brands/slack"
       link: "https://geotribu.slack.com"
       name: "Rejoignez-nous sur Slack"
-    - icon: "fontawesome/solid/feather-alt"
+    - icon: "fontawesome/solid/feather-pointed"
       link: http://pad.geotribu.fr/
       name: "Editeur en ligne"
 
