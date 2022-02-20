@@ -22,7 +22,7 @@ Régulièrement, nous vous proposerons de tester vos connaissances tout en s'amu
 
 Bonne chance !
 
-[Ouvrir le jeu en grand :fontawesome-solid-external-link-alt:](https://geotribu.github.io/geogames/premier_jeu){: .md-button }
+[Ouvrir le jeu en grand :fontawesome-up-right-from-square:](https://geotribu.github.io/geogames/premier_jeu){: .md-button }
 {: align=middle }
 
 <iframe name="geogame1" width="100%" height="600px" src="https://geotribu.github.io/geogames/premier_jeu" frameborder="1"></iframe>
