@@ -94,6 +94,8 @@ plugins:
         "contribuer/workflow_article.md": "contribuer/articles/workflow.md"
         "contribuer/backup.md": "contribuer/internal/backup.md"
         "contribuer/build_site/markdown_engine.md": "contribuer/internal/markdown_engine.md"
+  - tags:
+      tags_file: tags.md
 
 # Theme
 theme:
