@@ -26,12 +26,12 @@ plugins:
         - "*/templates/*"
         - "*.yml"
   - git-authors:
-      enabled: !ENV [ENABLED_GIT_AUTHORS, False]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, False]
       exclude:
         - index.md
       show_contribution: true
   - git-revision-date-localized:
-      enabled: !ENV [ENABLED_GIT_REVISION_DATE, False]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, False]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
@@ -51,6 +51,7 @@ plugins:
         as_creation: "date"
         as_update: false
         datetime_format: "%Y-%m-%d %H:%M"
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
       match_path: "(articles|rdp)/.*"
@@ -59,9 +60,12 @@ plugins:
         utm_source: "rss-feed"
         utm_medium: "RSS"
         utm_campaign: "feed-syndication"
-  - search
+  - search:
+      lang: fr
   - macros:
       include_dir: content/toc_nav_ignored/snippets
+  - privacy:
+      download: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
   - redirects:
       redirect_maps:
         # RSS
@@ -196,9 +200,9 @@ extra_javascript:
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
   - abbr
-  - attr_list
   # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - admonition
+  - attr_list
   # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
   - footnotes
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata

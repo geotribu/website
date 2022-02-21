@@ -21,17 +21,12 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Set up Python 3.8
+    - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.9
 
-    - name: Set up NodeJS (for search index prebuilding)
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-
-    - name: Cache project dependencies (pip)
+    - name: Cache project dependencies
       uses: actions/cache@v2
       with:
         path: ~/.cache/pip
@@ -52,10 +47,11 @@ jobs:
       run: |
         mkdocs build --clean --config-file mkdocs.yml --verbose --strict
       env:
-        ENABLED_GIT_AUTHORS: true
-        ENABLED_GIT_REVISION_DATE: true
+        MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
+        MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
+        MKDOCS_ENABLE_PLUGIN_PRIVACY: true
+        MKDOCS_ENABLE_PLUGIN_RSS: true
         MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-        MKDOCS_SEARCH_PREBUILD_INDEX: node
 
     - name: Deploy to Github Pages
       run: |
