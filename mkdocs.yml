@@ -65,7 +65,7 @@ plugins:
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - privacy:
-      download: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
+      download: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
   - redirects:
       redirect_maps:
         # RSS
