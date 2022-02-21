@@ -47,10 +47,10 @@ jobs:
       run: |
         mkdocs build --clean --config-file mkdocs.yml --verbose --strict
       env:
-        ENABLED_GIT_AUTHORS: true
-        ENABLED_GIT_REVISION_DATE: true
-        ENABLED_MATERIAL_PRIVACY_PLUGIN: true
-        MKDOCS_ENABLE_RSS_PLUGIN: true
+        MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
+        MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
+        MKDOCS_ENABLE_PLUGIN_PRIVACY: true
+        MKDOCS_ENABLE_PLUGIN_RSS: true
         MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
 
     - name: Deploy to Github Pages
