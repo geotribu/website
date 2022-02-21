@@ -33,7 +33,7 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: Cache project dependencies (pip)
+      - name: Cache project dependencies
         uses: actions/cache@v2
         with:
           path: |
