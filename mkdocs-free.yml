@@ -59,7 +59,8 @@ plugins:
         utm_source: "rss-feed"
         utm_medium: "RSS"
         utm_campaign: "feed-syndication"
-  - search
+  - search:
+      lang: fr
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - redirects:
