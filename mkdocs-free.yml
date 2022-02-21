@@ -193,7 +193,6 @@ extra_javascript:
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
   - abbr
-  - attr_list
   # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - admonition
   # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
