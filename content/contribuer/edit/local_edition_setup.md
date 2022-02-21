@@ -40,7 +40,7 @@ Il est également recommandé :
 !!! tip
     Pour aborder de façon sympathique le fonctionnement du site web, pourquoi ne pas commencer par suivre le tutoriel publié fin 2020 pour déployer Geotribu localement ?
 
-    [Toi aussi, déploie le site Geotribu chez toi :fontawesome-solid-home:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
+    [Toi aussi, déploie le site Geotribu chez toi :fontawesome-solid-house-chimney-window:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
     {: align=middle }
 
 ----
@@ -237,7 +237,7 @@ Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'in
 
 ![logo pre-commit](https://cdn.geotribu.fr/img/logos-icones/programmation/precommit.png "logo pre-commit"){: .img-rdp-news-thumb }
 
-Le projet vient avec une [configuration](https://github.com/geotribu/website/blob/master/.pre-commit-config.yaml) pour [pre-commit], qui permet d'appliquer des scripts (des [_git hooks_](https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Crochets-Git)) de vérification et de nettoyage des fichiers avant qu'ils ne soit enregistrés dans le dépôt (d'où le nom).
+Le projet vient avec une [configuration](https://github.com/geotribu/website/blob/master/.pre-commit-config.yaml) pour [pre-commit], qui permet d'appliquer des scripts (des [*git hooks*](https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Crochets-Git)) de vérification et de nettoyage des fichiers avant qu'ils ne soit enregistrés dans le dépôt (d'où le nom).
 
 L'installation est optionnelle mais recommandée car l'outil garantit :
 

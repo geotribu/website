@@ -397,7 +397,7 @@ Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'�
 
 ## A suivre
 
-[Lire la troisième partie :fontawesome-solid-step-forward:](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
+[Lire la troisième partie :fontawesome-solid-forward:](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
 {: align=middle }
 
 ----

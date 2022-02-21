@@ -116,6 +116,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - toc.follow
   font: false
   icon:
     repo: fontawesome/brands/github-alt
