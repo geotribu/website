@@ -49,6 +49,8 @@ jobs:
       env:
         ENABLED_GIT_AUTHORS: true
         ENABLED_GIT_REVISION_DATE: true
+        ENABLED_MATERIAL_PRIVACY_PLUGIN: true
+        MKDOCS_ENABLE_RSS_PLUGIN: true
         MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
 
     - name: Deploy to Github Pages

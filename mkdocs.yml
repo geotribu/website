@@ -51,6 +51,7 @@ plugins:
         as_creation: "date"
         as_update: false
         datetime_format: "%Y-%m-%d %H:%M"
+      enabled: !ENV [MKDOCS_ENABLE_RSS_PLUGIN, false]
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
       match_path: "(articles|rdp)/.*"
