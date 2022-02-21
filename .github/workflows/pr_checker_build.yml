@@ -41,7 +41,9 @@ jobs:
       - name: Cache project dependencies (pip)
         uses: actions/cache@v2
         with:
-          path: ~/.cache/pip
+          path: |
+            ~/.cache/pip
+            .cache
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
