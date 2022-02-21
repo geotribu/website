@@ -62,8 +62,8 @@ Bien d'autres cas d'usage sont possibles, notamment en travaillant sur le terrai
 
 Toutes vos suggestions, questions, remarques et critiques sont bienvenues, et même plus, **indispensables** pour nous aider à améliorer l'outil. Le [forum est grand ouvert](https://forum.fabmob.io/t/open-mobility-indicators/220) ! Merci !
 
-[Application :fontawesome-solid-globe-europe:](https://app.openmobilityindicators.org/){: .md-button }
-[Site du projet :fontawesome-up-right-from-square:](https://openmobilityindicators.org/projet/){: .md-button }
+[Application :fontawesome-solid-earth-europe:](https://app.openmobilityindicators.org/){: .md-button }
+[Site du projet :fontawesome-solid-up-right-from-square:](https://openmobilityindicators.org/projet/){: .md-button }
 [Forum :fontawesome-regular-comments:](https://forum.fabmob.io/t/open-mobility-indicators/220/){: .md-button }
 {: align=middle }
 
