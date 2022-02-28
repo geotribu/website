@@ -1,5 +1,6 @@
 ---
-ltitle: "Eclairage Public - Gestion et visualisation du réseau avec QGIS et Postgresql/Postgis"
+title: "Éclairage Public - Gestion et visualisation du réseau avec QGIS et PostGIS"
+
 authors: ["Stéphane RITZENTHALER"]
 categories: ["article"]
 date: "2021-09-24 17:30"
