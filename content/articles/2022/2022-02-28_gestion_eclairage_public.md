@@ -8,7 +8,7 @@ categories:
     - article
 
 date: "2021-09-24 17:30"
-description: "Création d'une base de données Postgresql/Postgis pour la visualisation et la gestion du réseau d'éclairage public sur QGIS par une collectivité."
+description: "Création d'une base de données PostgreSQL/PostGIS pour la visualisation et la gestion du réseau d'éclairage public sur QGIS par une collectivité."
 license: "CC-BY-SA"
 tags:
     - éclairage public
@@ -35,7 +35,7 @@ Les besoins identifiés, par ordre de priorité, étaient les suivants :
 * Permettre la gestion des stocks et anticiper sur les commandes de matériel
 
 
-Dans une démarche d'analyse de faisabilité, nous avons monté un projet pour étudier comment le duo Postgres/Postgis et QGIS pourrait répondre à ces enjeux.
+Dans une démarche d'analyse de faisabilité, nous avons monté un projet pour étudier comment le duo PostgreSQL/PostGIS et QGIS pourrait répondre à ces enjeux.
 
 Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres géomaticiens qui souhaitent utiliser ce genre de solution au sein de leur collectivité.
 
