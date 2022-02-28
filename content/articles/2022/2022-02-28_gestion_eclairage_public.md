@@ -17,7 +17,7 @@ tags: "Eclairage,PostgreSQL,PostGIS,QGIS,sql"
 ## Est-ce possible d'utiliser QGIS pour gérer un réseau d'éclairage public ?
 
 Cette question s'est posée dès lors que la solution précédente a affiché ses limites. Pourquoi pas customiser l'outil généraliste QGIS pour en faire une plateforme de gestion du réseau d'éclairage public.
-Les besoins identifiés, par ordre de priorité, étaient les suivants : 
+Les besoins identifiés, par ordre de priorité, étaient les suivants :
 * Visualiser le réseau et les objets le composant sur un fond de plan
 * Offrir la possibilité d'éditer des cartes dans le contexte de DT-DICT
 * Proposer un réseau topographiquement correct où les objets sont en relations les uns avec les autres
@@ -27,7 +27,7 @@ Les besoins identifiés, par ordre de priorité, étaient les suivants :
 Dans une démarche d'analyse de faisabilité, nous avons monté un projet pour étudier comment le duo Postgres/Postgis et QGIS pourrait répondre à ces enjeux.
 
 Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres géomaticiens qui souhaitent utiliser ce genre de solution au sein de leur collectivité.
-  
+
 
 ## La base de données relationnelle, un élément incontournable peu importe la solution future
 
@@ -42,7 +42,7 @@ Voici le modèle de données que nous avons choisi poour notre test représenté
 Le dictionnaire de données avec description de chaque table et de son contenu sous format .csv est disponible via [ce repertoire](https://github.com/stephyritz/ep_structure/tree/main/dictionnaire_donnees)
 
 
-Afin d'automatiser le déploiement de ce modèle de données sur des bases postgres/postgis, nous avons écrit un script sql à déployer sur une base de données dédiée à l'éclairage public. 
+Afin d'automatiser le déploiement de ce modèle de données sur des bases postgres/postgis, nous avons écrit un script sql à déployer sur une base de données dédiée à l'éclairage public.
 
 Il y a deux scripts publiés dans [ce projet] (https://github.com/stephyritz/ep_structure/tree/main/scripts_sql):
 
@@ -57,7 +57,7 @@ Cette démarche est propre à chaque organisme et dépend de l'organissation des
 Nous avons utilisé FME pour configurer l'import des données sources stockées "à plat" (sans relation entre les objets) depuis le logiciel GeoConcept vers Postgresql.
 
 ## Exploitation dans QGIS
-Une fois la partie la plus complexe réalisée, à savoir organisation du stockage des données et transformation, place à un peu plus de fun avec notre logiciel SIG favori! 
+Une fois la partie la plus complexe réalisée, à savoir organisation du stockage des données et transformation, place à un peu plus de fun avec notre logiciel SIG favori!
 A noter qu'il a été important, vu la complexité des premières phases, d'automatiser les traitements dans la mesures du possible. En effet, il est alors beaucoup plus facile de revenir sur certains points, d'appliquer des mises à jour ou des modifications sur un processus reproductible aisément. Le but est maintenant d'exploiter les données au sein de QGIS et de proposer des interfaces plaisantes aux utilisateurs pour interroger, créer ou modifier les données liées à l'éclairage public.
 
 La réelle difficulté de l'exploitation de telles données relationnelles dans QGIS est, à mon sens, de "cacher" la manière dont est stockée l'information. En effet, l'utilisateur final trouve généralement lourd et complexe le fait de stocker les informations dans de multiples tables, bien que cela soit la meilleure solution en termes de bases de données..
@@ -77,14 +77,14 @@ Au delà de l'aspect visuel, qui répond déjà a un besoin prioritaire de la co
 Ces mêmes formulaires, en intégrant les relations entre couches dans le projet QGIS, va permettre à l'utilisateur expert de saisir et modifier de l'information sans devoir éditer chacune des tables séparément.
 
  ## Conclusion
- 
+
 Le POC s'est arrêté à ce stade car la preuve a été faite que le duo QGIS/Postgresql pouvait bien répondre aux principaux besoins mentionnés. La suite des développements seraient déjà orientés vers une mise en production opérationnelle. Logiquement, il faudrai poursuivre en améliorant l'ergonomie des formulaires via QT par exemple. De même, des développements supplémentaires pourraient être fait pour créer des boutons dédiés aux actions d'édition réalisées le plus couramment, pourquoi pas un plugin spécifique à la gestion de l'éclairage public...
 
 Enfin, l'aspect consultation pourrait être externalisée via une carte interactive directement accessible via le naviguateur. Cela permettrait aux utilisateurs de visualiser les données sans devoir passer par un client SIG. L'enjeu concernant la gestion des stocks n'a finalement pas été intégré à ce premier travail.
 
-Une coopération entre collectivités locales rencontrant les mêmes besoins pourrait par exemple se traduire par un financement commun d'un outil adossé à QGIS plus soigné que ces premiers tests.   
+Une coopération entre collectivités locales rencontrant les mêmes besoins pourrait par exemple se traduire par un financement commun d'un outil adossé à QGIS plus soigné que ces premiers tests.  
 
-Merci à la Communauté de Communes Thann-Cernay grâce à qui nous avons pu faire ce premier test. Celui-ci donne beaucoup de perspectives sur le sujet et témoigne de l'intérêt pour les collectivités de porter des projets opensources ensemble. 
+Merci à la Communauté de Communes Thann-Cernay grâce à qui nous avons pu faire ce premier test. Celui-ci donne beaucoup de perspectives sur le sujet et témoigne de l'intérêt pour les collectivités de porter des projets opensources ensemble.
 
 [Lien vers le Github du projet](https://github.com/stephyritz/ep_structure)
 
