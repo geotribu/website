@@ -1,29 +1,39 @@
 ---
 title: "Éclairage Public - Gestion et visualisation du réseau avec QGIS et PostGIS"
 
-authors: ["Stéphane RITZENTHALER"]
-categories: ["article"]
+authors:
+    - Stéphane RITZENTHALER
+
+categories:
+    - article
+
 date: "2021-09-24 17:30"
 description: "Création d'une base de données Postgresql/Postgis pour la visualisation et la gestion du réseau d'éclairage public sur QGIS par une collectivité."
 license: "CC-BY-SA"
-tags: "Eclairage,PostgreSQL,PostGIS,QGIS,sql"
+tags:
+    - éclairage public
+    - PostGIS
+    - PostgreSQL
+    - QGIS
+    - SQL
 ---
 
 # Eclairage Public - Gestion et visualisation du réseau avec QGIS et Postgresql/Postgis
 
-:calendar: Date de publication initiale : 24 septembre 2021
+:calendar: Date de publication initiale : 8 mars 2022
 
-**Mots-clés :** Eclairage | PostgresSQL | PostGIS | Collectivité| QGIS
 
 ## Est-ce possible d'utiliser QGIS pour gérer un réseau d'éclairage public ?
 
 Cette question s'est posée dès lors que la solution précédente a affiché ses limites. Pourquoi pas customiser l'outil généraliste QGIS pour en faire une plateforme de gestion du réseau d'éclairage public.
 Les besoins identifiés, par ordre de priorité, étaient les suivants :
+
 * Visualiser le réseau et les objets le composant sur un fond de plan
 * Offrir la possibilité d'éditer des cartes dans le contexte de DT-DICT
 * Proposer un réseau topographiquement correct où les objets sont en relations les uns avec les autres
 * Faciliter les interventions sur le réseau (historique, identifications des objets sur lesquels intervenir, conséquence de l'intervention sur le réseau, etc...)
 * Permettre la gestion des stocks et anticiper sur les commandes de matériel
+
 
 Dans une démarche d'analyse de faisabilité, nous avons monté un projet pour étudier comment le duo Postgres/Postgis et QGIS pourrait répondre à ces enjeux.
 
@@ -77,7 +87,8 @@ Au delà de l'aspect visuel, qui répond déjà a un besoin prioritaire de la co
 
 Ces mêmes formulaires, en intégrant les relations entre couches dans le projet QGIS, va permettre à l'utilisateur expert de saisir et modifier de l'information sans devoir éditer chacune des tables séparément.
 
- ## Conclusion
+## Conclusion
+
 
 Le POC s'est arrêté à ce stade car la preuve a été faite que le duo QGIS/Postgresql pouvait bien répondre aux principaux besoins mentionnés. La suite des développements seraient déjà orientés vers une mise en production opérationnelle. Logiquement, il faudrai poursuivre en améliorant l'ergonomie des formulaires via QT par exemple. De même, des développements supplémentaires pourraient être fait pour créer des boutons dédiés aux actions d'édition réalisées le plus couramment, pourquoi pas un plugin spécifique à la gestion de l'éclairage public...
 
