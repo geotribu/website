@@ -55,7 +55,7 @@ Le dictionnaire de données avec description de chaque table et de son contenu s
 
 Afin d'automatiser le déploiement de ce modèle de données sur des bases postgres/postgis, nous avons écrit un script sql à déployer sur une base de données dédiée à l'éclairage public.
 
-Il y a deux scripts publiés dans [ce projet] (https://github.com/stephyritz/ep_structure/tree/main/scripts_sql):
+Il y a deux scripts publiés dans [ce projet](https://github.com/stephyritz/ep_structure/tree/main/scripts_sql):
 
 * "EP_init" permet de créer l'ensemble du schéma et des tables liées à la gestion de l'éclairage public. Il doit être executé dans une base de données précédemment créée.
 * "EP_creatview" permet de générer des vues dans un schema spécifique. L'idée est de pouvoir ensuite exploiter ces "vues" à travers un client lourd type QGIS ou par le biais d'application web.
