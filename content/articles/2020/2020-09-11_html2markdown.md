@@ -159,7 +159,7 @@ graph TD
     D --> F[CDN];
 ```
 
-[Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-step-forward:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
+[Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-forward:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
 {: align=middle }
 
 ----
