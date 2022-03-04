@@ -31,7 +31,7 @@ Plusieurs possibilités existent pour réaliser un relevé de terrain et l’exp
   Au moment de la rédaction de ce tutoriel, QField était encore en version bêta pour iOS et trop instable pour un usage réel avec cette plateforme. Cela dit, la version Android avec l’écosystème QFieldCloud/QFieldSync est sans doute une excellente solution, que je n’ai hélas pas eu le temps de tester.
 
   Input App est stable, open source, disponible pour Android et iOS. Les développeurs, Lutra Consulting, font partie de l’équipe de développement de QGIS. Grâce à leur service MerginCloud, facultatif mais très fortement recommandé, il est extrêmement simple de saisir des données géographiques avec un téléphone mobile ou une tablette, et de les synchroniser avec QGIS, même en mode collaboratif.
-  
+
   Dans la suite de ce tutoriel, je vais me concentrer sur cette solution, en prenant l’exemple d’un inventaire d’arbres urbains.
 
 ## Préparation
