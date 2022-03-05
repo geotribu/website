@@ -218,7 +218,7 @@ La documentation de l’application Input est extrêmement complète&nbsp;; vous
 - [ajouter des photos à vos saisies](https://merginmaps.com/docs/howto/project/settingup_forms_photo/)
 - [personnaliser le formulaire pour si vous voulez saisir des données plus complexes](https://merginmaps.com/docs/howto/project/settingup_forms_settings/)
 - [travailler de façon collaborative](https://www.lutraconsulting.co.uk/blog/2022/01/04/input-fibre/)
-- [ajouter automatiquement le nom de la personne qui fait le relevé aux données](https://merginmaps.com/docs/howto/manage/plugin/plugin-variables/) (en utilisant la variable `@mergin_username`) 
+- [ajouter automatiquement le nom de la personne qui fait le relevé aux données](https://merginmaps.com/docs/howto/manage/plugin/plugin-variables/) (en utilisant la variable `@mergin_username`)
 
 ----
 
