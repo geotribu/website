@@ -22,14 +22,15 @@ tags:
 
 ## Introduction
 
-Plusieurs possibilités existent pour réaliser un relevé de terrain et l’exploiter dans QGIS.
+Plusieurs possibilités existent pour réaliser un relevé de terrain et l’exploiter dans QGIS, parmi lesquelles&nbsp;:
 
 - [QField](https://qfield.org/) par OPENGIS.ch
 - [Input app](https://inputapp.io/fr/) par Lutra Consulting
 
 Au moment de la rédaction de ce tutoriel, QField était encore en version bêta pour iOS et trop instable pour un usage réel avec cette plateforme. Cela dit, la version Android avec l’écosystème QFieldCloud/QFieldSync est sans doute une excellente solution, que je n’ai hélas pas eu le temps de tester.
 
-Input App est stable, open source, disponible pour Android et iOS. Les développeurs, [Lutra Consulting](https://www.lutraconsulting.co.uk), font partie de l’équipe de développement de QGIS. Grâce à leur service MerginCloud, facultatif mais très fortement recommandé, il est extrêmement simple de saisir des données géographiques avec un téléphone mobile ou une tablette, et de les synchroniser avec QGIS, même en mode collaboratif.
+Input App est stable, open source et disponible pour Android et iOS. Les développeurs, [Lutra Consulting](https://www.lutraconsulting.co.uk), font partie de l’équipe de développement de QGIS. Grâce à leur service [MerginCloud](https://public.cloudmergin.com), il est extrêmement simple de saisir des données géographiques avec un téléphone mobile ou une tablette, et de les synchroniser avec QGIS, même en mode collaboratif. Ce service est gratuit pour un usage non commercial et jusqu’à 100 Mo de stockage. Pour un usage commercial, ou un stockage plus important, il faudra passer un compte payant (de 25 à 100€ par mois [selon les options choisies](https://public.cloudmergin.com/pricing). Un unique compte payant est suffisant pour des relevés collaboratifs&nbsp;: sur le terrain, les comptes gratuits suffisent.)
+
 
 Dans la suite de ce tutoriel, je vais me concentrer sur cette solution, en prenant l’exemple d’un inventaire d’arbres urbains.
 
