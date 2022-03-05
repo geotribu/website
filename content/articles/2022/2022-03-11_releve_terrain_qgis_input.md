@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 date: "2022-03-11 10:20"
-description: "Description pour le SEO."
+description: "Comment relever des données SIG sur le terrain avec l'application mobile Input, et les synchroniser avec QGIS. Exemple d'un inventaire d'arbres urbains"
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
 license: cc4_by-sa
 tags:
@@ -22,19 +22,19 @@ tags:
 
 ## Introduction
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
-{: align=middle }
-
 Plusieurs possibilités existent pour réaliser un relevé de terrain et l’exploiter dans QGIS.
 
 - [QField](https://qfield.org/) par OPENGIS.ch
 - [Input app](https://inputapp.io/fr/) par Lutra Consulting
 
-  Au moment de la rédaction de ce tutoriel, QField était encore en version bêta pour iOS et trop instable pour un usage réel avec cette plateforme. Cela dit, la version Android avec l’écosystème QFieldCloud/QFieldSync est sans doute une excellente solution, que je n’ai hélas pas eu le temps de tester.
+Au moment de la rédaction de ce tutoriel, QField était encore en version bêta pour iOS et trop instable pour un usage réel avec cette plateforme. Cela dit, la version Android avec l’écosystème QFieldCloud/QFieldSync est sans doute une excellente solution, que je n’ai hélas pas eu le temps de tester.
 
-  Input App est stable, open source, disponible pour Android et iOS. Les développeurs, [Lutra Consulting](https://www.lutraconsulting.co.uk), font partie de l’équipe de développement de QGIS. Grâce à leur service MerginCloud, facultatif mais très fortement recommandé, il est extrêmement simple de saisir des données géographiques avec un téléphone mobile ou une tablette, et de les synchroniser avec QGIS, même en mode collaboratif.
+Input App est stable, open source, disponible pour Android et iOS. Les développeurs, [Lutra Consulting](https://www.lutraconsulting.co.uk), font partie de l’équipe de développement de QGIS. Grâce à leur service MerginCloud, facultatif mais très fortement recommandé, il est extrêmement simple de saisir des données géographiques avec un téléphone mobile ou une tablette, et de les synchroniser avec QGIS, même en mode collaboratif.
 
-  Dans la suite de ce tutoriel, je vais me concentrer sur cette solution, en prenant l’exemple d’un inventaire d’arbres urbains.
+Dans la suite de ce tutoriel, je vais me concentrer sur cette solution, en prenant l’exemple d’un inventaire d’arbres urbains.
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 ## Préparation
 
