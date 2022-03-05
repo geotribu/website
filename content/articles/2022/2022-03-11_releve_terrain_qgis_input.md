@@ -6,7 +6,7 @@ categories:
     - article
 date: "2022-03-11 10:20"
 description: "Comment relever des données SIG sur le terrain avec l'application mobile Input, et les synchroniser avec QGIS. Exemple d'un inventaire d'arbres urbains"
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png"
 license: cc4_by-sa
 tags:
     - collecte
