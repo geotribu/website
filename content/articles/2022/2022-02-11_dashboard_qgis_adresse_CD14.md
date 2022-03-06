@@ -64,7 +64,7 @@ Créer une couche « dashboard » de polygone composée des champs suivant :
 
 Éditer la couche « dashboard » et créer un polygone suivant l’emprise du projet.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboardd.png "QGIS - Création polygone Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboardd.png "QGIS - Création polygone Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Création polygone Dashboard" }
+[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Création polygone Dashboard" }
 
 ### Etape 3 : symbologie de la couche
 
