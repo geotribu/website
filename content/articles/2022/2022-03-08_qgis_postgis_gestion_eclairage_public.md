@@ -35,7 +35,7 @@ Dans une démarche d'analyse de faisabilité, nous avons monté un projet pour �
 
 Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres géomaticiens qui souhaitent utiliser ce genre de solution au sein de leur collectivité.
 
-[![Eclairage public - Crédits : PxHere](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/lighting-street.jpg "Eclairage public - Crédits : PxHere"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/lighting-street.jpg){: data-mediabox="lightbox-gallery" data-title="Eclairage public - Crédits : PxHere"}
+[![Eclairage public - Crédits : PxHere](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png "Eclairage public - Crédits : PxHere"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png){: data-mediabox="lightbox-gallery" data-title="Eclairage public - Crédits : PxHere"}
 
 ----
 
