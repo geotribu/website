@@ -21,6 +21,8 @@ jobs:
   create_rdp:
     runs-on: ubuntu-latest
 
+    if: github.repository_owner == "geotribu"
+
     steps:
       - name: Install French locale
         id: locale-fr

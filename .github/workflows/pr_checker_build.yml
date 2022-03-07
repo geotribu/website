@@ -23,6 +23,7 @@ jobs:
   build:
     name: "Check site build 📦"
     runs-on: ubuntu-latest
+    if: github.repository_owner == "geotribu"
 
     steps:
       - name: Get source code

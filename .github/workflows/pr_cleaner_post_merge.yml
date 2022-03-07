@@ -16,6 +16,8 @@ env:
 jobs:
   clean-preview:
     runs-on: ubuntu-latest
+    if: github.repository_owner == "geotribu"
+
     steps:
       - name: Get source code
         uses: actions/checkout@v2
