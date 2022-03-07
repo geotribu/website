@@ -15,7 +15,7 @@ tags:
     - SQL
 ---
 
-# Eclairage Public - Gestion et visualisation du réseau avec QGIS et Postgresql/Postgis
+# Eclairage Public - Gestion et visualisation du réseau avec QGIS et PostgreSQL/PostGIS
 
 :calendar: Date de publication initiale : 8 mars 2022
 
@@ -35,9 +35,13 @@ Dans une démarche d'analyse de faisabilité, nous avons monté un projet pour �
 
 Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres géomaticiens qui souhaitent utiliser ce genre de solution au sein de leur collectivité.
 
+[![Eclairage public dans une gare - Crédits : Reshot](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/train_gare.jpg "Eclairage public dans une gare - Crédits : Reshot"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/train_gare.jpg){: data-mediabox="lightbox-gallery" data-title="Eclairage public dans une gare - Crédits : Reshot"}
+
 ----
 
 ## La base de données relationnelle, un élément incontournable peu importe la solution future
+
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.jpg "logo PostGIS"){: .img-rdp-news-thumb }
 
 La gestion de réseau ne peut se faire de manière efficace que si elle repose sur une base de données relationnelles solide. Le premier défi de cette étude fut de trouver la formule la plus adéquate pour nos besoins.
 
@@ -46,9 +50,9 @@ Dans notre cas, nous nous sommes appuyés sur les travaux du CRIGE PACA, du dép
 
 Voici le modèle de données que nous avons choisi poour notre test représenté grâce à [DBeaver](https://dbeaver.io/) :
 
-![Image DB structure](https://user-images.githubusercontent.com/34446202/134654337-71c2f48c-94d6-4539-8611-cecce56a88d1.png)
+[![Diagramme du modèle de données exporté via DBeaver](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/bdd_modele_dbeaver.png "Diagramme du modèle de données exporté via DBeaver"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/bdd_modele_dbeaver.png){: data-mediabox="lightbox-gallery" data-title="Diagramme du modèle de données exporté via DBeaver"}
 
-Le dictionnaire de données avec description de chaque table et de son contenu sous format .csv est disponible via [ce repertoire](https://github.com/stephyritz/ep_structure/tree/main/dictionnaire_donnees)
+Le dictionnaire de données avec description de chaque table et de son contenu sous format .csv est disponible via [ce répertoire](https://github.com/stephyritz/ep_structure/tree/main/dictionnaire_donnees)
 
 Afin d'automatiser le déploiement de ce modèle de données sur des bases postgres/postgis, nous avons écrit un script sql à déployer sur une base de données dédiée à l'éclairage public.
 
@@ -61,11 +65,13 @@ Il y a deux scripts publiés dans [ce projet](https://github.com/stephyritz/ep_s
 
 Dans un deuxième temps, il était nécessaire de transformer et importer les données existantes depuis le système d'information existant vers la base de données postgresql que nous venons de créer.
 Cette démarche est propre à chaque organisme et dépend de l'organissation des données de chacun. Je ne vais pas détailler plus le travail réalisé pour le compte de la Communauté de Communes Thann-Cernay.
-Nous avons utilisé FME pour configurer l'import des données sources stockées "à plat" (sans relation entre les objets) depuis le logiciel GeoConcept vers Postgresql.
+Nous avons utilisé FME pour configurer l'import des données sources stockées "à plat" (sans relation entre les objets) depuis le logiciel GeoConcept vers PostgreSQL.
 
 ----
 
 ## Exploitation dans QGIS
+
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
 Une fois la partie la plus complexe réalisée, à savoir organisation du stockage des données et transformation, place à un peu plus de fun avec notre logiciel SIG favori!
 A noter qu'il a été important, vu la complexité des premières phases, d'automatiser les traitements dans la mesures du possible. En effet, il est alors beaucoup plus facile de revenir sur certains points, d'appliquer des mises à jour ou des modifications sur un processus reproductible aisément. Le but est maintenant d'exploiter les données au sein de QGIS et de proposer des interfaces plaisantes aux utilisateurs pour interroger, créer ou modifier les données liées à l'éclairage public.
@@ -77,7 +83,8 @@ Dans le cadre de cette étude, nous avons opté pour la création de 2 projets q
 
 Le premier projet fait appel aux vues précédemment crées grâce au script sql. Ensuite, grâce à une symbologie particulière dans QGIS, nous pouvons proposé un visuel mettant en avant le type de lampe (led, Ballon fluorescent, Sodium Hate Pression, etc...), le nombre de point lumineux sur le mât ou encore si le réseau est aérien ou souterrain.
 Voici un exemple de ce que nous pourrions voir à l'écran :
-![Image visuel QGIS](https://user-images.githubusercontent.com/34446202/134685292-139cd864-bf10-4d41-a24e-f8f29df6dc47.png)
+
+[![Exemple de rendu sur QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_exemple_rendu.png "Exemple de rendu sur QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_exemple_rendu.png){: data-mediabox="lightbox-gallery" data-title="Exemple de rendu sur QGIS"}
 
 Un panel de style est proposé à l'observateur en fonction de son besoin. Un autre exemple serait de représenter de la même couleur tous les points lumineux qui dépendent d'une même armoire électrique. Nous pouvons ici utiliser toute la puissance de QGIS pour styliser la donnée telle que nous souhaitons la voir apparaître.
 
@@ -89,7 +96,7 @@ Ces mêmes formulaires, en intégrant les relations entre couches dans le projet
 
 ## Conclusion
 
-Le POC s'est arrêté à ce stade car la preuve a été faite que le duo QGIS/Postgresql pouvait bien répondre aux principaux besoins mentionnés. La suite des développements seraient déjà orientés vers une mise en production opérationnelle. Logiquement, il faudrai poursuivre en améliorant l'ergonomie des formulaires via QT par exemple. De même, des développements supplémentaires pourraient être fait pour créer des boutons dédiés aux actions d'édition réalisées le plus couramment, pourquoi pas un plugin spécifique à la gestion de l'éclairage public...
+Le POC s'est arrêté à ce stade car la preuve a été faite que le duo QGIS/PostgreSQL pouvait bien répondre aux principaux besoins mentionnés. La suite des développements seraient déjà orientés vers une mise en production opérationnelle. Logiquement, il faudrai poursuivre en améliorant l'ergonomie des formulaires via QT par exemple. De même, des développements supplémentaires pourraient être fait pour créer des boutons dédiés aux actions d'édition réalisées le plus couramment, pourquoi pas un plugin spécifique à la gestion de l'éclairage public...
 
 Enfin, l'aspect consultation pourrait être externalisée via une carte interactive directement accessible via le naviguateur. Cela permettrait aux utilisateurs de visualiser les données sans devoir passer par un client SIG. L'enjeu concernant la gestion des stocks n'a finalement pas été intégré à ce premier travail.
 
