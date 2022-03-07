@@ -31,7 +31,6 @@ Au moment de la rédaction de ce tutoriel, QField était encore en version bêta
 
 Input App est stable, open source et disponible pour Android et iOS. Les développeurs, [Lutra Consulting](https://www.lutraconsulting.co.uk), font partie de l’équipe de développement de QGIS. Grâce à leur service [MerginCloud](https://public.cloudmergin.com), il est extrêmement simple de saisir des données géographiques avec un téléphone mobile ou une tablette, et de les synchroniser avec QGIS, même en mode collaboratif. Ce service est gratuit pour un usage non commercial et jusqu’à 100 Mo de stockage. Pour un usage commercial, ou un stockage plus important, il faudra passer un compte payant (de 25 à 100€ par mois [selon les options choisies](https://public.cloudmergin.com/pricing). Un unique compte payant est suffisant pour des relevés collaboratifs&nbsp;: sur le terrain, les comptes gratuits suffisent.)
 
-
 Dans la suite de ce tutoriel, je vais me concentrer sur cette solution, en prenant l’exemple d’un inventaire d’arbres urbains.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -111,8 +110,8 @@ Dans les couches de QGIS, faites un clic droit sur votre couche `Arbres` puis cl
 [![Le formulaire d’attributs dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-form.png "Le formulaire d’attributs dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-form.png "Le formulaire d’attributs dans QGIS"){: data-mediabox="gallery-lightbox" data-title="Le formulaire d’attributs dans QGIS"}
 
 - Pour `espece` , il est plus simple d’avoir une liste déroulante que de la renseigner à chaque fois. Saisissez `Espèces` dans le champ `Alias`, puis choisissez `Liste de valeurs` comme `Type d’outil`. Vous pouvez alors&nbsp;:
-  - soit les saisir directement.
-  - soit préparer un fichier CSV avec une colonne valeur et une colonne description, et cliquer sur `Charger des données depuis le fichier CSV`.
+- soit les saisir directement.
+- soit préparer un fichier CSV avec une colonne valeur et une colonne description, et cliquer sur `Charger des données depuis le fichier CSV`.
 
 [![Le formulaire d’attributs complété](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-species.png "Le formulaire d’attributs complété"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-species.png "Le formulaire d’attributs complété"){: data-mediabox="gallery-lightbox" data-title="Le formulaire d’attributs complété"}
 
@@ -187,12 +186,10 @@ puis remplissez le reste des champs&nbsp;:
 
 Et enfin, cliquez sur `Enregistrer`.
 
-
 Le point s’affiche sur la carte. Vous pouvez le toucher pour le vérifier ou l’éditer si nécessaire.
 
 [![Affichage du point ajouté par le formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-phone.png "Affichage du point ajouté par le formulaire"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-phone.png "Affichage du point ajouté par le formulaire"){: data-mediabox="gallery-lightbox" data-title="Affichage du point ajouté par le formulaire"}
 {: align=middle }
-
 
 Une fois que vous avez terminé la saisie, cliquez sur l’onglet `Projets`, puis sur l’icône à droite du nom de votre projet pour lancer la synchronisation&nbsp;: vos données sont envoyées dans le cloud Mergin.
 
@@ -200,7 +197,6 @@ Une fois que vous avez terminé la saisie, cliquez sur l’onglet `Projets`, pui
 {: align=middle }
 
 Il est temps de revenir à QGIS pour récupérer les résultats.
-
 
 ## Retour à QGIS
 
