@@ -42,7 +42,7 @@ Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres
 
 ## La base de données relationnelle, un élément incontournable peu importe la solution future
 
-     La gestion de réseau ne peut se faire de manière efficace que si elle repose sur une base de données 
+     La gestion de réseau ne peut se faire de manière efficace que si elle repose sur une base de données
      relationnelles solide. Le premier défi de cette étude fut de trouver la formule la plus adéquate pour nos besoins.
 Et comme on ne ré-invente que très rarement quelque chose, il fallait observer ce qu'il pouvait se faire par ailleurs ! De nombreuses collectivités et IDG régionales ont réfléchi à la question du modèle de données.
 Dans notre cas, nous nous sommes appuyés sur les travaux du CRIGE PACA, du département du Bas-Rhin, de la communauté de communes de la région de Molsheim Mutzig et de l'agglomération de la ville de Compiègne.
