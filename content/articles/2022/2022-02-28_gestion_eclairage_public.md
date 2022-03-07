@@ -1,13 +1,10 @@
 ---
 title: "Éclairage Public - Gestion et visualisation du réseau avec QGIS et PostGIS"
-
 authors:
     - Stéphane RITZENTHALER
-
 categories:
     - article
-
-date: "2021-09-24 17:30"
+date: "2022-03-08 10:30"
 description: "Création d'une base de données PostgreSQL/PostGIS pour la visualisation et la gestion du réseau d'éclairage public sur QGIS par une collectivité."
 license: "CC-BY-SA"
 tags:
@@ -22,7 +19,6 @@ tags:
 
 :calendar: Date de publication initiale : 8 mars 2022
 
-
 ## Est-ce possible d'utiliser QGIS pour gérer un réseau d'éclairage public ?
 
 Au sein de la communauté de communes de Thann-Cernay (68), nous avons mené une reflexion sur ce sujet après que le progiciel utilisé historiquement soit arrivé en fin de vie. En effet, la maintenance de cette solution n'étant plus assurée, les dysfonctionnements se sont multipliés jusqu'à ce qu'elle ne soit tout simplement plus opérationnelle. Ceci nous a conduit à réfléchir à de nouveaux outils de gestion de l'éclairage public, plus pérennes et mieux maitrisés par les agents en interne. Après ce constat, nous nous sommes dit : et pourquoi pas QGIS ?!
@@ -35,16 +31,16 @@ Les besoins identifiés, par ordre de priorité, étaient les suivants :
 * Faciliter les interventions sur le réseau (historique, identifications des objets sur lesquels intervenir, conséquence de l'intervention sur le réseau, etc...)
 * Permettre la gestion des stocks et anticiper sur les commandes de matériel
 
-
 Dans une démarche d'analyse de faisabilité, nous avons monté un projet pour étudier comment le duo PostgreSQL/PostGIS et QGIS pourrait répondre à ces enjeux.
 
 Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres géomaticiens qui souhaitent utiliser ce genre de solution au sein de leur collectivité.
 
+----
 
 ## La base de données relationnelle, un élément incontournable peu importe la solution future
 
-     La gestion de réseau ne peut se faire de manière efficace que si elle repose sur une base de données
-     relationnelles solide. Le premier défi de cette étude fut de trouver la formule la plus adéquate pour nos besoins.
+La gestion de réseau ne peut se faire de manière efficace que si elle repose sur une base de données relationnelles solide. Le premier défi de cette étude fut de trouver la formule la plus adéquate pour nos besoins.
+
 Et comme on ne ré-invente que très rarement quelque chose, il fallait observer ce qu'il pouvait se faire par ailleurs ! De nombreuses collectivités et IDG régionales ont réfléchi à la question du modèle de données.
 Dans notre cas, nous nous sommes appuyés sur les travaux du CRIGE PACA, du département du Bas-Rhin, de la communauté de communes de la région de Molsheim Mutzig et de l'agglomération de la ville de Compiègne.
 
@@ -54,7 +50,6 @@ Voici le modèle de données que nous avons choisi poour notre test représenté
 
 Le dictionnaire de données avec description de chaque table et de son contenu sous format .csv est disponible via [ce repertoire](https://github.com/stephyritz/ep_structure/tree/main/dictionnaire_donnees)
 
-
 Afin d'automatiser le déploiement de ce modèle de données sur des bases postgres/postgis, nous avons écrit un script sql à déployer sur une base de données dédiée à l'éclairage public.
 
 Il y a deux scripts publiés dans [ce projet](https://github.com/stephyritz/ep_structure/tree/main/scripts_sql):
@@ -62,14 +57,16 @@ Il y a deux scripts publiés dans [ce projet](https://github.com/stephyritz/ep_s
 * "EP_init" permet de créer l'ensemble du schéma et des tables liées à la gestion de l'éclairage public. Il doit être executé dans une base de données précédemment créée.
 * "EP_creatview" permet de générer des vues dans un schema spécifique. L'idée est de pouvoir ensuite exploiter ces "vues" à travers un client lourd type QGIS ou par le biais d'application web.
 
-
 ## Import et transformation de l'existant
 
 Dans un deuxième temps, il était nécessaire de transformer et importer les données existantes depuis le système d'information existant vers la base de données postgresql que nous venons de créer.
 Cette démarche est propre à chaque organisme et dépend de l'organissation des données de chacun. Je ne vais pas détailler plus le travail réalisé pour le compte de la Communauté de Communes Thann-Cernay.
 Nous avons utilisé FME pour configurer l'import des données sources stockées "à plat" (sans relation entre les objets) depuis le logiciel GeoConcept vers Postgresql.
 
+----
+
 ## Exploitation dans QGIS
+
 Une fois la partie la plus complexe réalisée, à savoir organisation du stockage des données et transformation, place à un peu plus de fun avec notre logiciel SIG favori!
 A noter qu'il a été important, vu la complexité des premières phases, d'automatiser les traitements dans la mesures du possible. En effet, il est alors beaucoup plus facile de revenir sur certains points, d'appliquer des mises à jour ou des modifications sur un processus reproductible aisément. Le but est maintenant d'exploiter les données au sein de QGIS et de proposer des interfaces plaisantes aux utilisateurs pour interroger, créer ou modifier les données liées à l'éclairage public.
 
@@ -86,11 +83,11 @@ Un panel de style est proposé à l'observateur en fonction de son besoin. Un au
 
 Au delà de l'aspect visuel, qui répond déjà a un besoin prioritaire de la collectivité, l'utilisation des formulaire customisables de QGIS, offre également la possibilité aux utilisateurs "d'interroger" de manière interractive chacun des objets constituant le réseau. Ainsi, grâce à un clic dans QGIS, nous pouvons traduire les relations entre les différents éléments du réseau. Par exemple, ce mât contient 2 points lumineux et un accessoire de type "indicateur de vitesse".
 
-
 Ces mêmes formulaires, en intégrant les relations entre couches dans le projet QGIS, va permettre à l'utilisateur expert de saisir et modifier de l'information sans devoir éditer chacune des tables séparément.
 
-## Conclusion
+----
 
+## Conclusion
 
 Le POC s'est arrêté à ce stade car la preuve a été faite que le duo QGIS/Postgresql pouvait bien répondre aux principaux besoins mentionnés. La suite des développements seraient déjà orientés vers une mise en production opérationnelle. Logiquement, il faudrai poursuivre en améliorant l'ergonomie des formulaires via QT par exemple. De même, des développements supplémentaires pourraient être fait pour créer des boutons dédiés aux actions d'édition réalisées le plus couramment, pourquoi pas un plugin spécifique à la gestion de l'éclairage public...
 
@@ -103,6 +100,7 @@ Merci à la Communauté de Communes Thann-Cernay grâce à qui nous avons pu fai
 [Lien vers le Github du projet :fontawesome-brands-github:](https://github.com/stephyritz/ep_structure/){: .md-button }
 {: align=middle }
 
+----
 
 ## Auteur
 
