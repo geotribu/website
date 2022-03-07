@@ -35,7 +35,7 @@ Dans une démarche d'analyse de faisabilité, nous avons monté un projet pour �
 
 Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres géomaticiens qui souhaitent utiliser ce genre de solution au sein de leur collectivité.
 
-[![Eclairage public dans une gare - Crédits : Reshot](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/train_gare.jpg "Eclairage public dans une gare - Crédits : Reshot"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/train_gare.jpg){: data-mediabox="lightbox-gallery" data-title="Eclairage public dans une gare - Crédits : Reshot"}
+[![Eclairage public - Crédits : PxHere](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/lighting-street.jpg "Eclairage public - Crédits : PxHere"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/lighting-street.jpg){: data-mediabox="lightbox-gallery" data-title="Eclairage public - Crédits : PxHere"}
 
 ----
 
@@ -96,11 +96,11 @@ Ces mêmes formulaires, en intégrant les relations entre couches dans le projet
 
 ## Conclusion
 
-Le POC s'est arrêté à ce stade car la preuve a été faite que le duo QGIS/PostgreSQL pouvait bien répondre aux principaux besoins mentionnés. La suite des développements seraient déjà orientés vers une mise en production opérationnelle. Logiquement, il faudrai poursuivre en améliorant l'ergonomie des formulaires via QT par exemple. De même, des développements supplémentaires pourraient être fait pour créer des boutons dédiés aux actions d'édition réalisées le plus couramment, pourquoi pas un plugin spécifique à la gestion de l'éclairage public...
+Le POC s'est arrêté à ce stade car la preuve a été faite que le duo QGIS/PostgreSQL pouvait bien répondre aux principaux besoins mentionnés. La suite des développements seraient déjà orientés vers une mise en production opérationnelle. Logiquement, il faudrait poursuivre en améliorant l'ergonomie des formulaires grâce [aux outils intégrés dans QGIS](http://piece-jointe-carto.developpement-durable.gouv.fr/NAT002/QGIS/formations/FOAD_PERF_QGIS34/pdf/M09_Formulaires_papier.pdf) ou [via QT comme dans cet exemple](https://archeomatic.wordpress.com/2012/03/06/qgis-qtcreator-creer-son-formulaire-dans-qgis/). De même, des développements supplémentaires pourraient être fait pour créer des boutons dédiés aux actions d'édition réalisées le plus couramment, pourquoi pas un plugin spécifique à la gestion de l'éclairage public...
 
-Enfin, l'aspect consultation pourrait être externalisée via une carte interactive directement accessible via le naviguateur. Cela permettrait aux utilisateurs de visualiser les données sans devoir passer par un client SIG. L'enjeu concernant la gestion des stocks n'a finalement pas été intégré à ce premier travail.
+Enfin, l'aspect consultation pourrait être externalisée via une carte interactive directement accessible via le naviguateur. Cela permettrait aux utilisateurs de visualiser les données sans devoir passer par un client SIG. La gestion des stocks n'a finalement pas été intégré à ce premier travail. Pour poursuivre dans cette direction, il faudrait probableemnt enrichir le modèle de données par des tables liées au matériel.
 
-Une coopération entre collectivités locales rencontrant les mêmes besoins pourrait par exemple se traduire par un financement commun d'un outil adossé à QGIS plus soigné que ces premiers tests.  
+Une coopération entre collectivités locales rencontrant les mêmes besoins pourrait par exemple se traduire par un financement commun d'un outil adossé à QGIS plus soigné que ces premiers tests.
 
 Merci à la Communauté de Communes Thann-Cernay grâce à qui nous avons pu faire ce premier test. Celui-ci donne beaucoup de perspectives sur le sujet et témoigne de l'intérêt pour les collectivités de porter des projets opensources ensemble.
 
