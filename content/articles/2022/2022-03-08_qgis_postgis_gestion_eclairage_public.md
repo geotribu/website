@@ -63,9 +63,8 @@ Il y a deux scripts publiés dans [ce projet](https://github.com/stephyritz/ep_s
 
 ## Import et transformation de l'existant
 
-Dans un deuxième temps, il était nécessaire de transformer et importer les données existantes depuis le système d'information existant vers la base de données postgresql que nous venons de créer.
-Cette démarche est propre à chaque organisme et dépend de l'organissation des données de chacun. Je ne vais pas détailler plus le travail réalisé pour le compte de la Communauté de Communes Thann-Cernay.
-Nous avons utilisé FME pour configurer l'import des données sources stockées "à plat" (sans relation entre les objets) depuis le logiciel GeoConcept vers PostgreSQL.
+Dans un deuxième temps, il était nécessaire de transformer et importer les données existantes vers la base de données postgresql que nous venons de créer.
+Cette démarche est propre à chaque organisme et dépend de l'organisation initiale des données de chacun. Le détail de cette étape  n'est pas décrit ici car non ré-utilisable pour d'autres cas d'usage. Pour information, nous avons utilisé FME pour configurer l'import des données sources stockées initialemennt "à plat" (sans relation entre les objets) depuis le logiciel GeoConcept vers PostgreSQL.
 
 ----
 
@@ -74,14 +73,14 @@ Nous avons utilisé FME pour configurer l'import des données sources stockées 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
 Une fois la partie la plus complexe réalisée, à savoir organisation du stockage des données et transformation, place à un peu plus de fun avec notre logiciel SIG favori!
-A noter qu'il a été important, vu la complexité des premières phases, d'automatiser les traitements dans la mesures du possible. En effet, il est alors beaucoup plus facile de revenir sur certains points, d'appliquer des mises à jour ou des modifications sur un processus reproductible aisément. Le but est maintenant d'exploiter les données au sein de QGIS et de proposer des interfaces plaisantes aux utilisateurs pour interroger, créer ou modifier les données liées à l'éclairage public.
+A noter qu'il a été important, vu la complexité des premières phases, d'automatiser les traitements dans la mesures du possible. En effet, il est alors beaucoup plus facile de revenir sur certains points, d'appliquer des mises à jour ou des modifications. C'est pourquoi nous avons par exemple utiliser des scripts SQL et des jobs FME afin de rendre le processus reproductible aisément. Le but est maintenant d'exploiter les données au sein de QGIS et de proposer des interfaces plaisantes aux utilisateurs pour interroger, créer ou modifier les données liées à l'éclairage public.
 
 La réelle difficulté de l'exploitation de telles données relationnelles dans QGIS est, à mon sens, de "cacher" la manière dont est stockée l'information. En effet, l'utilisateur final trouve généralement lourd et complexe le fait de stocker les informations dans de multiples tables, bien que cela soit la meilleure solution en termes de bases de données..
-Il faut donc veiller à ce que la personne du métier puisse créer/mettre à jour les données ou simplement les visualiser sans être obliger de jongler entre les différentes tables postgres.
+Il faut donc veiller à ce que la personne du métier puisse créer/mettre à jour les données ou simplement les visualiser sans être obliger de jongler entre les différentes tables de postgreSQL.
 
 Dans le cadre de cette étude, nous avons opté pour la création de 2 projets qgis distincts en fonction du type d'utilisateurs. Le premier projet est à destination des utilisateurs qui ne souhaitent que consulter les données. Le second projet est destiné au gestionaire du projet, avec un profil plus expert, qui s'occupera de la création et des mises à jours des données.
 
-Le premier projet fait appel aux vues précédemment crées grâce au script sql. Ensuite, grâce à une symbologie particulière dans QGIS, nous pouvons proposé un visuel mettant en avant le type de lampe (led, Ballon fluorescent, Sodium Hate Pression, etc...), le nombre de point lumineux sur le mât ou encore si le réseau est aérien ou souterrain.
+Le premier projet fait appel aux "vues" précédemment crées grâce au script sql. Ensuite, grâce à une symbologie particulière dans QGIS, nous pouvons proposé un visuel mettant en avant le type de lampe (led, Ballon fluorescent, Sodium Hate Pression, etc...), le nombre de point lumineux sur le mât ou encore si le réseau est aérien ou souterrain.
 Voici un exemple de ce que nous pourrions voir à l'écran :
 
 [![Exemple de rendu sur QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_exemple_rendu.png "Exemple de rendu sur QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_exemple_rendu.png){: data-mediabox="lightbox-gallery" data-title="Exemple de rendu sur QGIS"}
