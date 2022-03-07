@@ -48,7 +48,7 @@ La gestion de réseau ne peut se faire de manière efficace que si elle repose s
 Et comme on ne ré-invente que très rarement quelque chose, il fallait observer ce qu'il pouvait se faire par ailleurs ! De nombreuses collectivités et IDG régionales ont réfléchi à la question du modèle de données.
 Dans notre cas, nous nous sommes appuyés sur les travaux du CRIGE PACA, du département du Bas-Rhin, de la communauté de communes de la région de Molsheim Mutzig et de l'agglomération de la ville de Compiègne.
 
-Voici le modèle de données que nous avons choisi poour notre test représenté grâce à [DBeaver](https://dbeaver.io/) :
+Voici le modèle de données que nous avons choisi pour notre test représenté grâce à [DBeaver](https://dbeaver.io/) :
 
 [![Diagramme du modèle de données exporté via DBeaver](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/bdd_modele_dbeaver.png "Diagramme du modèle de données exporté via DBeaver"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/bdd_modele_dbeaver.png){: data-mediabox="lightbox-gallery" data-title="Diagramme du modèle de données exporté via DBeaver"}
 
