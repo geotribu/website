@@ -25,7 +25,8 @@ tags:
 
 ## Est-ce possible d'utiliser QGIS pour gérer un réseau d'éclairage public ?
 
-Cette question s'est posée dès lors que la solution précédente a affiché ses limites. Pourquoi pas customiser l'outil généraliste QGIS pour en faire une plateforme de gestion du réseau d'éclairage public.
+Au sein de la communauté de communes de Thann-Cernay (68), nous avons mené une reflexion sur ce sujet après que le progiciel utilisé historiquement soit arrivé en fin de vie. En effet, la maintenance de cette solution n'étant plus assurée, les dysfonctionnements se sont multipliés jusqu'à ce qu'elle ne soit tout simplement plus opérationnelle. Ceci nous a conduit à réfléchir à de nouveaux outils de gestion de l'éclairage public, plus pérennes et mieux maitrisés par les agents en interne. Après ce constat, nous nous sommes dit : et pourquoi pas QGIS ?!
+
 Les besoins identifiés, par ordre de priorité, étaient les suivants :
 
 * Visualiser le réseau et les objets le composant sur un fond de plan
