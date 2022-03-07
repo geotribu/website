@@ -99,7 +99,9 @@ Une coopération entre collectivités locales rencontrant les mêmes besoins pou
 
 Merci à la Communauté de Communes Thann-Cernay grâce à qui nous avons pu faire ce premier test. Celui-ci donne beaucoup de perspectives sur le sujet et témoigne de l'intérêt pour les collectivités de porter des projets opensources ensemble.
 
-[Lien vers le Github du projet](https://github.com/stephyritz/ep_structure)
+[Lien vers le Github du projet :fontawesome-brands-github:](https://github.com/stephyritz/ep_structure/){: .md-button }
+{: align=middle }
+
 
 ## Auteur
 
