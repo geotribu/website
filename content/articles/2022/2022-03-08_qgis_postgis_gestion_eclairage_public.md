@@ -40,6 +40,9 @@ Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres
 
 [![Eclairage public - Crédits : PxHere](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png "Éclairage public - Crédits : PxHere"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png){: data-mediabox="lightbox-gallery" data-title="Éclairage public - Crédits : PxHere"}
 
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
 ----
 
 ## La base de données relationnelle, un élément incontournable peu importe la solution future

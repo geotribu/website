@@ -188,6 +188,9 @@ extra:
     - icon: "fontawesome/solid/feather-pointed"
       link: http://pad.geotribu.fr/
       name: "Editeur en ligne"
+    - icon: "fontawesome/solid/piggy-bank"
+      link: https://fr.tipeee.com/geotribu/
+      name: "Le pot commun sur Tipee"
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
