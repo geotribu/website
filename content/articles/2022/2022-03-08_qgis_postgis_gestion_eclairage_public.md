@@ -20,9 +20,11 @@ tags:
 
 :calendar: Date de publication initiale : 8 mars 2022
 
-## Est-ce possible d'utiliser QGIS pour gérer un réseau d'éclairage public ?
+## Introduction
 
-Au sein de la Communauté de Communes de Thann-Cernay (68), nous avons mené une réflexion sur ce sujet après que le progiciel utilisé historiquement soit arrivé en fin de vie. En effet, la maintenance de cette solution n'étant plus assurée, les dysfonctionnements se sont multipliés jusqu'à ce qu'elle ne soit tout simplement plus opérationnelle. Ceci nous a conduit à réfléchir à de nouveaux outils de gestion de l'éclairage public, plus pérennes et mieux maîtrisés par les agents en interne. Après ce constat, nous nous sommes dit : et pourquoi pas QGIS ?!
+Au sein de la Communauté de Communes de Thann-Cernay (68), nous avons mené une réflexion sur la possibilité d'utiliser QGIS pour gérer un réseau d'éclairage public après que le progiciel utilisé historiquement soit arrivé en fin de vie. En effet, la maintenance de cette solution n'étant plus assurée, les dysfonctionnements se sont multipliés jusqu'à ce qu'elle ne soit tout simplement plus opérationnelle. Ceci nous a conduit à réfléchir à de nouveaux outils de gestion de l'éclairage public, plus pérennes et mieux maîtrisés par les agents en interne. Après ce constat, nous nous sommes dit : et pourquoi pas QGIS ?!
+
+### Est-ce possible d'utiliser QGIS pour gérer un réseau d'éclairage public ?
 
 Les besoins identifiés, par ordre de priorité, étaient les suivants :
 
