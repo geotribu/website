@@ -95,9 +95,9 @@ WSL faisant partie du bouquet de fonctionnalités avancées, il faut donc un acc
     ```powershell
     wsl --install
     ```
-    
+
     Sinon, à l'ancienne :
-    
+
     ```powershell
     # activer la fonctionnalité
     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
