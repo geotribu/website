@@ -24,6 +24,9 @@ tags:
 
 > Confinement, Jour 28
 
+!!! info "Republication"
+    Article initialement paru sur [mon blog Hackmd](https://hackmd.io/@viglino/Chasse-aux-Oeufs).
+
 ## Introduction
 
 Avec le confinement, la **chasse aux œufs** est compromise pour Pâques !
