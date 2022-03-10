@@ -11,7 +11,7 @@ jobs:
   lint-markdown-review:
     name: "👓 Vérification de la syntaxe"
     runs-on: ubuntu-latest
-    if: github.repository_owner == "geotribu"
+    if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
       - name: Check out code
