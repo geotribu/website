@@ -11,6 +11,7 @@ on:
         type: boolean
         default: true
         description: Notifier l'équipe sur Slack
+        required: false
 
 env:
   LANG: "fr_FR.UTF-8"
@@ -20,6 +21,8 @@ env:
 jobs:
   create_rdp:
     runs-on: ubuntu-latest
+
+    if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
       - name: Install French locale
