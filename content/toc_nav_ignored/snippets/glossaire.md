@@ -6,6 +6,8 @@
 [GitHub]: https://github.com/
 [GitHub Desktop]: https://desktop.github.com/
 [markdown]: https://fr.wikipedia.org/wiki/Markdown
+[Material for Mkdocs]: https://squidfunk.github.io/mkdocs-material/
+[Mkdocs]: https://www.mkdocs.org/
 [pre-commit]: https://pre-commit.com/
 [Python]: https://www.python.org/
 [StackEdit]: https://stackedit.io/

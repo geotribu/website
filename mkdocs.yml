@@ -64,8 +64,6 @@ plugins:
       lang: fr
   - macros:
       include_dir: content/toc_nav_ignored/snippets
-  - privacy:
-      download: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
   - redirects:
       redirect_maps:
         # RSS
@@ -101,6 +99,8 @@ plugins:
         "contribuer/build_site/markdown_engine.md": "contribuer/internal/markdown_engine.md"
   - tags:
       tags_file: tags.md
+  - privacy:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
 
 # Theme
 theme:
@@ -188,6 +188,9 @@ extra:
     - icon: "fontawesome/solid/feather-pointed"
       link: http://pad.geotribu.fr/
       name: "Editeur en ligne"
+    - icon: "fontawesome/solid/piggy-bank"
+      link: https://fr.tipeee.com/geotribu/
+      name: "Le pot commun sur Tipee"
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
