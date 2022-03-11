@@ -80,7 +80,7 @@ Enregistrez votre projet dans un dossier nommé par exemple `Mon inventaire`.
 Il vous faut maintenant créer la couche qui servira à inventorier les arbres.
 Cliquez sur le menu `Couche > Créer une couche > Nouvelle couche Géopackage…`
 
-[![La boite de dialogue « Nouvelle couche Géopackage » dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-layer.png "La boite de dialogue «&nbsp;Nouvelle couche Géopackage&nbsp;» dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-layer.png "La boite de dialogue «&nbsp;Nouvelle couche Géopackage&nbsp;» dans QGIS"){: data-mediabox="gallery-lightbox" data-title="La boite de dialogue « Nouvelle couche Géopackage » dans QGIS"}
+[![La boite de dialogue « Nouvelle couche Géopackage » dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-layer.png "La boite de dialogue « Nouvelle couche Géopackage » dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-layer.png "La boite de dialogue « Nouvelle couche Géopackage » dans QGIS"){: data-mediabox="gallery-lightbox" data-title="La boite de dialogue « Nouvelle couche Géopackage » dans QGIS"}
 
 Dans le champ `Base de données` cliquez sur `…` et naviguez jusqu’à votre dossier `Mon inventaire`, puis tapez `inventaire.gpkg` comme nom de la base de données.
 
@@ -123,7 +123,7 @@ Vous pouvez également si vous le désirez cliquer sur `Réutiliser la dernière
 
 - Pour `date`, vous pouvez éventuellement mettre une valeur par défaut en saisissant `to_date(now())` dans le champ `Valeur par défaut`
 
-[![Format du champ « date » dans le formulaire d’attributs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-date.png "Format du champ «&nbsp;date&nbsp;» dans le formulaire d’attributs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-species.png "Format du champ «&nbsp;date&nbsp;» dans le formulaire d’attributs"){: data-mediabox="gallery-lightbox" data-title="Format du champ « date » dans le formulaire d’attributs"}
+[![Format du champ « date » dans le formulaire d’attributs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-date.png "Format du champ « date » dans le formulaire d’attributs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-species.png "Format du champ « date » dans le formulaire d’attributs"){: data-mediabox="gallery-lightbox" data-title="Format du champ « date » dans le formulaire d’attributs"}
 
 ### Configurer l’emprise de la carte
 
@@ -151,7 +151,7 @@ Cliquez sur la seconde icône : `Create Mergin Project`, puis dans la fenêtre d
 
 Sélectionnez les couches à synchroniser :
 
-[![Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-mergin-project.png "Sélection des couches à synchroniser. La couche «&nbsp;Arbres&nbsp;» est selectionnée en temps que «&nbsp;Package&nbsp;»&nbsp;; la couche «&nbsp;OpenStreetMap&nbsp;» en tant que «&nbsp;Keep as is&nbsp;»"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-mergin-project.png "Sélection des couches à synchroniser. La couche «&nbsp;Arbres&nbsp;» est selectionnée en temps que «&nbsp;Package&nbsp;»&nbsp;; la couche «&nbsp;OpenStreetMap&nbsp;» en tant que «&nbsp;Keep as is&nbsp;»"){: data-mediabox="gallery-lightbox" data-title="Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »"}
+[![Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-mergin-project.png "Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-mergin-project.png "Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »"){: data-mediabox="gallery-lightbox" data-title="Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »"}
 
 Et enfin, nommez votre projet (par exemple `Mon Inventaire`).  
 Votre projet va être envoyé sur le cloud Mergin.
@@ -162,7 +162,7 @@ Votre projet va être envoyé sur le cloud Mergin.
 
 Lancez l’application **Input** sur votre appareil mobile, puis dans l’onglet `Mes Projets`, sélectionnez votre projet.
 
-[![Écran « Projets » de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/open-project-phone.png "Écran «&nbsp;Projets&nbsp;» de l’application Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/open-project-phone.png "Écran «&nbsp;Projets&nbsp;» de l’application Input"){: data-mediabox="gallery-lightbox" data-title="Écran « Projets » de l’application Input"}
+[![Écran « Projets » de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/open-project-phone.png "Écran « Projets » de l’application Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/open-project-phone.png "Écran « Projets » de l’application Input"){: data-mediabox="gallery-lightbox" data-title="Écran « Projets » de l’application Input"}
 {: align=middle }
 
 Le projet s’ouvre autour de l’emprise que vous avez définie précédemment.
@@ -199,7 +199,7 @@ Le point s’affiche sur la carte. Vous pouvez le toucher pour le vérifier ou l
 
 Une fois que vous avez terminé la saisie, cliquez sur l’onglet `Projets`, puis sur l’icône à droite du nom de votre projet pour lancer la synchronisation : vos données sont envoyées dans le cloud Mergin.
 
-[![Synchronisation du projet dans la page « Projets » de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/sync-project-phone.png "Synchronisation du projet dans la page «&nbsp;Projets&nbsp;» de l’application Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/sync-project-phone.png "Synchronisation du projet dans la page «&nbsp;Projets&nbsp;» de l’application Input"){: data-mediabox="gallery-lightbox" data-title="Synchronisation du projet dans la page « Projets » de l’application Input"}
+[![Synchronisation du projet dans la page « Projets » de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/sync-project-phone.png "Synchronisation du projet dans la page « Projets » de l’application Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/sync-project-phone.png "Synchronisation du projet dans la page « Projets » de l’application Input"){: data-mediabox="gallery-lightbox" data-title="Synchronisation du projet dans la page « Projets » de l’application Input"}
 {: align=middle }
 
 Il est temps de revenir à QGIS pour récupérer les résultats.
@@ -208,11 +208,11 @@ Il est temps de revenir à QGIS pour récupérer les résultats.
 
 ## Retour à QGIS
 
-Dans la barre d’outil Mergin, cliquez sur `Synchronise Mergin Project` ![Bouton « Synchronise Mergin Project » de la barre d’outils Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/sync-qgis.png "Bouton «&nbsp;Synchronise Mergin Project&nbsp;» de la barre d’outils Mergin dans QGIS"){: height=30px loading=lazy }
+Dans la barre d’outil Mergin, cliquez sur `Synchronise Mergin Project` ![Bouton « Synchronise Mergin Project » de la barre d’outils Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/sync-qgis.png "Bouton « Synchronise Mergin Project » de la barre d’outils Mergin dans QGIS"){: height=30px loading=lazy }
 
 La couche Arbres est mise à jour avec les données que vous avez relevées.
 
-[![Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png "Résultat dans QGIS&nbsp;: le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png "Résultat dans QGIS&nbsp;: le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"){: data-mediabox="gallery-lightbox" data-title="Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"}
+[![Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png "Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png "Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"){: data-mediabox="gallery-lightbox" data-title="Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"}
 
 ----
 
