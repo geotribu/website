@@ -450,7 +450,7 @@ Par ailleurs, n'étant pas non plus un spécialiste des données d'adressage, si
 
 Enfin, si la ligne de commande vous effraie, il y a aussi des outils disponibles en ligne bien pratiques, tels CSVT Generator :
 
-[CSVT Generator :fontawesome-solid-tools:](https://loicbcn.github.io/csvtgenerator/){: .md-button }
+[CSVT Generator :fontawesome-solid-toolbox:](https://loicbcn.github.io/csvtgenerator/){: .md-button }
 {: align=middle }
 
 ----
