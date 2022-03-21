@@ -81,7 +81,7 @@ jobs:
             Commit de référence : ${{ env.PR_HEADSHA }}.
 
       - name: "Commit Status: Update deployment status"
-        uses: myrotvorets/set-commit-status-action@1.1.4
+        uses: myrotvorets/set-commit-status-action@1.1
         # Always run this step regardless of job failing early:
         if: ${{ always() }}
         env:

@@ -35,17 +35,6 @@ jobs:
           python-version: 3.9
           cache: "pip"
 
-      - name: Cache project dependencies
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.cache/pip
-            .cache
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-            ${{ runner.os }}-
-
       - name: Install dependencies
         id: dependencies
         env:

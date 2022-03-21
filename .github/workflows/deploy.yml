@@ -29,15 +29,6 @@ jobs:
           python-version: 3.9
           cache: "pip"
 
-      - name: Cache project dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-            ${{ runner.os }}-
-
       - name: Install dependencies
         env:
           GH_TOKEN_MATERIAL_INSIDERS: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
