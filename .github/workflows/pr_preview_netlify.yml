@@ -80,8 +80,8 @@ jobs:
             :tada: Le site de prévisualisation pour cette PR a été généré et est [disponible sous ce lien](${{ steps.preview.outputs.deploy-url }}).
             Commit de référence : ${{ env.PR_HEADSHA }}.
 
-      - name: "Commit Status: Update deployment status"
-        uses: myrotvorets/set-commit-status-action@1.1
+      - name: "Commit Status: update deployment status"
+        uses: myrotvorets/set-commit-status-action@1.1.4
         # Always run this step regardless of job failing early:
         if: ${{ always() }}
         env:
