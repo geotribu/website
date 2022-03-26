@@ -240,6 +240,6 @@ Libre √† vous de faire jouer votre imagination et votre sens artistique, et n'h√
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/acha.md"

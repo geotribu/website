@@ -185,16 +185,14 @@ Ensuite, cela fatigue les serveurs de l'[Internet Archive] : c'est pas très fai
 
 Maintenant on sait comment moissonner un site web, en l'occurence l'ancien Geotribu. Dans le prochain article, on verra quoi faire de tous cette soupe de HTML/CSS/Javascript/Images.
 
-[Suite : convertir des fichiers HTML en Markdown :fontawesome-solid-step-forward:](../2020-09-11_html2markdown){: .md-button }
+[Suite : convertir des fichiers HTML en Markdown :fontawesome-solid-forward:](../2020-09-11_html2markdown){: .md-button }
 {: align=middle }
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
---8<--
-content/team/jmou.md
---8<--
+--8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
 [Scrapy]: https://scrapy.org/

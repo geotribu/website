@@ -188,7 +188,7 @@ Exemple si la GeoRDP devait être publiée le 17 septembre 2021 : `content/rdp/2
 
 Les revues de presse sont structurées de la même façon d'une édition à l'autre, facilitant leur consultation et les traitements automatiques. Le plus simple est donc de copier/coller la structure type à partir du modèle maintenu à jour :
 
-[soit depuis le PAD :fontawesome-solid-feather-alt:](https://geotripad.herokuapp.com/DCBQirjYSp6sqxPd5JYqLg?both){: .md-button }
+[soit depuis le PAD :fontawesome-solid-feather-pointed:](https://geotripad.herokuapp.com/DCBQirjYSp6sqxPd5JYqLg?both){: .md-button }
 [soit depuis GitHub :fontawesome-brands-github-alt:](https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp.md){: .md-button }
 {: align=middle }
 

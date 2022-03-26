@@ -19,7 +19,7 @@ tags:
 
 ## Intro
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "News"){: .img-rdp-news-thumb }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
 
 [Commenter cette revue de presse :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }

@@ -24,7 +24,7 @@ Et non, je ne vais pas vous parler dans cet article de la célèbre console Nint
 
 ![Loi 3DS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png "Loi 3DS"){: .img-center loading=lazy }
 
-La loi ambitionne de [donner aux collectivités de nouvelles compétences](https://www.cnews.fr/france/2022-01-04/decentralisation-quest-ce-que-le-projet-3ds-qui-doit-etre-adopte-par-les-deputes), comprenant notamment le transfert d'une partie des Routes Nationales (RN) aux Départements, gestionnaires de la voirie départementale.
+La loi 3DS ambitionne de [donner aux collectivités de nouvelles compétences](https://www.cnews.fr/france/2022-01-04/decentralisation-quest-ce-que-le-projet-3ds-qui-doit-etre-adopte-par-les-deputes), comprenant notamment le transfert d'une partie des Routes Nationales (RN) aux Départements, gestionnaires de la voirie départementale.
 
 C'est dans ce cadre que le [Département du Gard](http://www.gard.fr/accueil.html) a souhaité analyser l'impact pour son organisation de ce transfert de la voirie nationale vers la voirie départementale.
 
@@ -306,6 +306,6 @@ A noter que les requêtes peuvent facilement être adaptées pour les autres Dé
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/mgal.md"

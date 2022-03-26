@@ -28,13 +28,13 @@ Les Geogames sont de retour après quelques semaines d'absence. Cette fois-ci, n
 
 Bonne chance !
 
-[Ouvrir le jeu en grand :fontawesome-solid-external-link-alt:](https://geotribu.github.io/geogames/cinquieme_jeu){: .md-button }
+[Ouvrir le jeu en grand :fontawesome-solid-up-right-from-square:](https://geotribu.github.io/geogames/cinquieme_jeu){: .md-button }
 {: align=middle }
 
 <iframe name="geogame5" width="100%" height="500px" src="https://geotribu.github.io/geogames/cinquieme_jeu" frameborder="1"></iframe>
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jory.md"

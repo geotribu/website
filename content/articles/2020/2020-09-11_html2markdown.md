@@ -159,16 +159,14 @@ graph TD
     D --> F[CDN];
 ```
 
-[Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-step-forward:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
+[Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-forward:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
 {: align=middle }
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
---8<--
-content/team/jmou.md
---8<--
+--8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
 [Markdown]: https://fr.wikipedia.org/wiki/Markdown

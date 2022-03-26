@@ -31,7 +31,7 @@ Pré-requis :
 
 Après avoir présenté la génèse et détaillé la démarche de notre petit projet de carte des liens IGN, voici venir le second volet consacré à l'exécution complètement automatisée et paramétrable des scripts puis du déploiement tout aussi automatique.
 
-[Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button } [Consulter l'article détaillant la démarche :fontawesome-solid-step-backward:](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/){: .md-button }
+[Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button } [Consulter l'article détaillant la démarche :fontawesome-solid-backward:](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/){: .md-button }
 {: align=middle }
 
 L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticipe que la page soit donc appelée à s'agrandir (*sic*). Pour que le projet ne soit pas un symbole d'obsolescence programmée (même s'il est certainement éphémère), on choisit donc d'automatiser le processus via [Github Actions] et la publication sur [Github Pages]. Une chaîne de valeurs que l'on connaît bien puisque déjà utilisée pour générer et publier le site actuel de Geotribu à partir des fichiers Markdown.

@@ -26,13 +26,13 @@ Cette semaine, nous vous proposons un deuxième Geogame, "questions choix multip
 
 > Source : Cassini de Thury, "Projet et acte d'association, pour l'entreprise d'une Carte générale de France par M. Cassini de Thury", Description géométrique de la France, 1753, Paris, imprimerie J-Ch Desaint, p194-195
 
-[Ouvrir le jeu en grand :fontawesome-solid-external-link-alt:](https://geotribu.github.io/geogames/quatrieme_jeu){: .md-button }
+[Ouvrir le jeu en grand :fontawesome-solid-up-right-from-square:](https://geotribu.github.io/geogames/quatrieme_jeu){: .md-button }
 {: align=middle }
 
 <iframe name="geogame4" width="100%" height="500px" src="https://geotribu.github.io/geogames/quatrieme_jeu" frameborder="1"></iframe>
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jory.md"

@@ -22,13 +22,13 @@ Pour ce deuxième Geogame, nous vous avons préparé un Mot croisé spécial Web
 
 Bonne chance !
 
-[Ouvrir le jeu en grand :fontawesome-solid-external-link-alt:](https://geotribu.github.io/geogames/deuxieme_jeu){: .md-button }
+[Ouvrir le jeu en grand :fontawesome-solid-up-right-from-square:](https://geotribu.github.io/geogames/deuxieme_jeu){: .md-button }
 {: align=middle }
 
 <iframe name="geogame2" width="100%" height="500px" src="https://geotribu.github.io/geogames/deuxieme_jeu" frameborder="1"></iframe>
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jory.md"

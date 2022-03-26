@@ -184,7 +184,7 @@ Autres serveurs de tuiles vectorielles sur le [Github de Mapbox](https://github.
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 ### Jean-Baptiste Desbas
 

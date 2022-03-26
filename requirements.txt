@@ -7,16 +7,16 @@ wheel
 
 # Development
 # -----------------------
-pre-commit>=2.10,<2.17
+pre-commit>=2.10,<2.18
 
 # Project requirements
 # -----------------------
 
-mkdocs-awesome-pages-plugin>=2.4,<2.7
+mkdocs-awesome-pages-plugin>=2.6,<2.8
 mkdocs-exclude>=1.0,<1.1
 mkdocs-git-authors-plugin<0.7
-mkdocs-git-revision-date-localized-plugin>=0.9,<0.12
+mkdocs-git-revision-date-localized-plugin>=0.9,<1.1
 mkdocs-macros-plugin>=0.5,<0.7
 mkdocs-minify-plugin<0.6
 mkdocs-redirects<1.1
-mkdocs-rss-plugin>=0.19.1,<0.20
+mkdocs-rss-plugin>=0.20,<0.22

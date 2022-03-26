@@ -23,25 +23,23 @@ jobs:
   build:
     name: "Check site build 📦"
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
       - name: Get source code
         uses: actions/checkout@v2
 
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v2
+      - name: Set up Python
+        uses: actions/setup-python@v3
         with:
-          python-version: 3.8
+          python-version: 3.9
 
-      - name: Set up NodeJS (for search index prebuilding)
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-
-      - name: Cache project dependencies (pip)
+      - name: Cache project dependencies
         uses: actions/cache@v2
         with:
-          path: ~/.cache/pip
+          path: |
+            ~/.cache/pip
+            .cache
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
@@ -67,7 +65,6 @@ jobs:
 
       - name: Build in strict mode
         env:
-          MKDOCS_SEARCH_PREBUILD_INDEX: node
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
           # site name
