@@ -23,6 +23,7 @@ jobs:
   build:
     name: "Check site build 📦"
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
       - name: Get source code
@@ -32,17 +33,7 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: 3.9
-
-      - name: Cache project dependencies
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.cache/pip
-            .cache
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-            ${{ runner.os }}-
+          cache: "pip"
 
       - name: Install dependencies
         id: dependencies
@@ -64,7 +55,7 @@ jobs:
 
       - name: Build in strict mode
         env:
-            NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
+          NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
           # site name
           sed -i "s|^site_name:.*|site_name: Geotribu PREVIEW |" ${{steps.dependencies.outputs.config_path}}
