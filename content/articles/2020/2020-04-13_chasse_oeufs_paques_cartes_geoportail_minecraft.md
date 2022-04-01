@@ -6,6 +6,7 @@ categories:
   - article
 date: 2020-04-13 10:30
 description: "😷 Confiné chez soi ? Alors embarquez pour une chasse aux œufs virtuelle sur le Géoportail de l'IGN et Minecraft 🥚🎀🐓."
+icon: material/egg-easter
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/oeufs_paques_cartes/easter_egg_geoportail_search_oeuf.png"
 license: default
 tags:
@@ -18,7 +19,7 @@ tags:
   - toponymie
 ---
 
-# :rabbit: Chasse aux œufs sur les cartes du Géoportail et de Minecraft :bell: !
+# Chasse aux œufs sur les cartes du Géoportail et de Minecraft !
 
 :calendar: Date de publication initiale : 13 avril 2020
 
@@ -27,7 +28,7 @@ tags:
 !!! info "Republication"
     Article initialement paru sur [mon blog Hackmd](https://hackmd.io/@viglino/Chasse-aux-Oeufs).
 
-## Introduction
+## Introduction :rabbit
 
 Avec le confinement, la **chasse aux œufs** est compromise pour Pâques !
 
