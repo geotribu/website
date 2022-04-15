@@ -1,0 +1,204 @@
+---
+authors:
+- Fabien Goblet
+categories:
+- article
+date: 2008-11-02 10:20
+description: '...'
+image: ''
+license: default
+robots: index, follow
+tags:
+- Google Earth
+- KML
+title: 5. Ajouter un fichier KML
+---
+
+# 5. Ajouter un fichier KML
+
+
+:calendar: Date de publication initiale : 02 novembre 2008
+
+
+----
+
+**Prérequis :**
+
+
+1. tutoriaux :
+1. [1. Introduction à l'API Google Earth](arno/geotribu/?q=node/49)
+2. [2. Ajoutons quelques contrôles](arno/geotribu/?q=node/53)
+3. [4. Marqueurs et événements](arno/geotribu/?q=node/55)
+2. connaissances
+* notions de HTML, notions de JavaScript, notions d'algorithmique
+3. liens
+* <http://code.google.com/apis/earth/documentation/reference/index.html>
+
+
+**Niveau :** Intermédiaire
+
+
+**Code :**  
+
+`[Google Earth] 5. Ajouter un fichier KML`
+
+
+
+html { overflow:hidden; height:100%; } 
+body { height:100%; margin:0; }
+
+
+google.load("earth", "1");
+var ge = null;
+
+function init() {
+google.earth.createInstance("map3d", initCallback);
+}
+
+function initCallback(object) {
+ge = object;
+ge.getWindow().setVisibility(true);
+ge.getOptions().setMouseNavigationEnabled(true);
+ge.getNavigationControl().setVisibility(ge.VISIBILITY\_SHOW);
+
+map = ge.createStyleMap('styleMap');
+
+normal = ge.createIcon('');
+normal.setHref('http://maps.google.com/mapfiles/kml/shapes/triangle.png');
+iconNormal = ge.createStyle('styleIconNormal');
+iconNormal.getIconStyle().setIcon(normal);
+
+highlight = ge.createIcon('');
+highlight.setHref('http://maps.google.com/mapfiles/kml/shapes/square.png');
+iconHighlight = ge.createStyle('styleIconHighlight');
+iconHighlight.getIconStyle().setIcon(highlight);
+
+map.setNormalStyleUrl('#styleIconNormal');
+map.setHighlightStyleUrl('#styleIconHighlight');
+
+var mirail = ge.createPlacemark('');
+
+var mirail\_point = ge.createPoint('');
+mirail\_point.setLatitude(43.57825178577821);
+mirail\_point.setLongitude(1.40247810866353);
+mirail.setName('Université Toulouse Le Mirail');
+mirail.setGeometry(mirail\_point);
+
+mirail.setStyleSelector(null);
+mirail.setStyleUrl('#styleMap');
+
+google.earth.addEventListener(mirail, "click", function(event) {
+event.preventDefault(); 
+var balloon = ge.createHtmlDivBalloon('');
+balloon.setFeature(mirail);
+var div = document.createElement('DIV');
+div.innerHTML = '<img src="http://www.univ-tlse2.fr/images/utm/bandeau\_011.jpg" onclick="window.open(\'http://www.univ-tlse2.fr\')">';
+balloon.setContentDiv(div);
+ge.setBalloon(balloon);
+});
+
+var ensat = ge.createPlacemark('');
+var ensat\_point = ge.createPoint('');
+ensat\_point.setLatitude(43.53511064424029);
+ensat\_point.setLongitude(1.493182079733259);
+ensat.setName('ENSAT');
+ensat.setGeometry(ensat\_point);
+
+ensat.setStyleSelector(null);
+ensat.setStyleUrl('#styleMap');
+
+google.earth.addEventListener(ensat, "click", function(event) {
+event.preventDefault(); 
+var balloon = ge.createHtmlDivBalloon('');
+balloon.setFeature(ensat);
+var div = document.createElement('DIV');
+div.innerHTML = '<img src="http://www.ensat.fr/images/ensat\_r2\_c3.jpg" onclick="window.open(\'http://www.ensat.fr\')">';
+balloon.setContentDiv(div);
+ge.setBalloon(balloon);
+});
+
+ge.getFeatures().appendChild(mirail);
+ge.getFeatures().appendChild(ensat);
+
+var camera = ge.createLookAt('');
+camera.set(43.6,1.44949866510018,2860,ge.ALTITUDE\_RELATIVE\_TO\_GROUND,190,75,10000);
+ge.getView().setAbstractView(camera);
+
+function finished(object) {
+if (!object) {
+alert('KML mal formé');
+return;
+}
+ge.getFeatures().appendChild(object);
+}
+
+var kmlUrl = 'http://88.191.39.115/fabien/geotribu/kml/route.kml';
+google.earth.fetchKml(ge, kmlUrl, finished);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Processus :**
+
+
+1. Reprendre la carte du tutoriel sur les marqueurs et les événements : <http://www.geotribu.net/?q=node/55>
+2. Définir une fonction qui vérifie la validité du fichier KML :  
+
+`function finished(object) {  
+
+if (!object) {  
+
+alert('KML mal formé');  
+
+return;  
+
+}  
+
+ge.getFeatures().appendChild(object);  
+
+}`
+3. Définir l'objet géographique KML :  
+
+`var kmlUrl = 'http://88.191.39.115/fabien/geotribu/kml/route.kml';`
+4. Et l'appliquer sur la carte :  
+
+`google.earth.fetchKml(ge, kmlUrl, finished);`
+
+
+**Résultat :** 
+
+
+
+
+
+
+[Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Earth_tuto5.html)
+**Remarques :**
+* Ajouter un fichier KML est très simple. Il suffit de déclarer le fichier, vérifier qu'il soit bien formé, et l'ajouter à la carte.
+
+
+**Conclusion :**
+
+Si le fichier KML est mal formé, la fonction finished() renverra NULL et donc l'API ne chargera pas le fichier.
+Cette vérification est nécessaire pour éviter de faire 'planter' la carte.
+
+**Auteur : Fabien - fabien.goblet [ at ] gmail.com**
+
+
+----
+
+## Auteur
+
+--8<-- "content/team/fgob.md"
