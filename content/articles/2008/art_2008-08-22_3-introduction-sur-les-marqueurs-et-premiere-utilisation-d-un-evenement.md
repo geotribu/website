@@ -120,7 +120,7 @@ Ici un 'clic' sur le marqueur ouvrira une infobulle contenant du HTML :
 
 
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 #map { width:100%; height:100%; }
 
@@ -138,7 +138,7 @@ map.addControl(new GLargeMapControl());
 map.enableScrollWheelZoom();
 var marker1 = new GMarker(new GLatLng(43.57769664771851, 1.402821992034912));
 map.addOverlay(marker1);
-var html = "<img src='http://maps.google.fr/intl/fr\_fr/images/maps\_logo\_small.png' alt='Google Maps'></img><br><br>Dans cette 
+var html = "<img src='http://maps.google.fr/intl/fr\_fr/images/maps\_logo\_small.png' alt='Google Maps'></img><br><br>Dans cette
 infobulle, le langage HTML est interprété.";
 GEvent.addListener(marker1, 'click', function() {
 marker1.openInfoWindowHtml(html);

@@ -99,7 +99,7 @@ Exemple d'une carte centrée sur Toulouse, de taille 640 x 640, de 1° de hauteu
 
 `http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&span=1,1&size=640x640&key=votre_clé_ici`  
 
-Qui donne la carte ci-dessous : 
+Qui donne la carte ci-dessous :
 ![](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&span=1,1&size=640x640&key=AIzaSyCKQink6p5B6ifZ6-vfg0ZneqBp08dWLTk)
 
 

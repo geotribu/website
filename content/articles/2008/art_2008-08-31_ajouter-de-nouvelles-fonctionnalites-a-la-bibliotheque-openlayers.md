@@ -35,7 +35,7 @@ Une fonctionnalité qui , à mon sens, manque à [OpenLayers](http://openlayers.
 Pour cela nous utiliserons l'idée précédente qu'était de pouvoir afficher des toolTips au passage de la souris et nous développerons notre propre module qui s'interfacera natullerement avec [OpenLayers](http://openlayers.org/ "Site internet OpenLayers"). Pour cela je me suis inspiré de ce script d'affichage de [label](http://trac.openlayers.org/ticket/751 "Script label OpenLayers") dans lequel j'ai ajouté ensuite quelques particularités.
 
 
-Ajouter de nouvelles classes à OpenLayers n'est pas très difficile. Deux points sont important, tout d'abord bien comprendre la réalisation d'un héritage et savoir définir le constructeur. 
+Ajouter de nouvelles classes à OpenLayers n'est pas très difficile. Deux points sont important, tout d'abord bien comprendre la réalisation d'un héritage et savoir définir le constructeur.
 
 
 ### Déclarer un nouvel objet et réaliser un héritage
@@ -56,7 +56,7 @@ Il y a peu de chance que vous ayez à créer un nouvel objet de base. La plupart
 }`
 
 
-Tiens tiens, cette manière de faire rappel est étrangement similaire à Prototype ! non ? En fait, c'est tout à fait normal puisqu' [OpenLayers](http://openlayers.org/ "Site internet OpenLayers") se base en partie sur cette bibliothèque. 
+Tiens tiens, cette manière de faire rappel est étrangement similaire à Prototype ! non ? En fait, c'est tout à fait normal puisqu' [OpenLayers](http://openlayers.org/ "Site internet OpenLayers") se base en partie sur cette bibliothèque.
 
 
 Partant de là que souhaitons nous faire ? Par où commencer ?
@@ -92,7 +92,7 @@ Partant de là, il ne vous reste plus qu'a construire votre nouvelle classe, cel
 `OpenLayers.MarkerLabel = OpenLayers.Class(OpenLayers.Marker, {`
 
 
-fontColor: "black", 
+fontColor: "black",
 
 
 bckColor: "none",
@@ -121,7 +121,7 @@ draw: function(px) {
 
 //code  
 
-}, 
+},
 
 
 onmouseover: function (evt) {  
@@ -156,7 +156,7 @@ getTextSize: function(labelSize) {
 
 //code  
 
-}, 
+},
 
 
 getLabelVisibility: function () {  

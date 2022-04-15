@@ -88,7 +88,7 @@ La fonction initCallback(object) crée l'objet carte et définit ses options.
 
 `[Google Earth] 1. Introduction à l'API Google Earth
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 
 

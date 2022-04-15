@@ -194,7 +194,7 @@ map.enableScrollWheelZoom();`
 
 
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 #map { width:100%; height:100%; }
 
@@ -225,11 +225,11 @@ var f = "./tile\_files/" + TileToQuadKey(a.x,a.y,b) + ".png";
 return f;
 }
 
-var topoLayer = new GTileLayer(new GCopyrightCollection(''),9,12); 
+var topoLayer = new GTileLayer(new GCopyrightCollection(''),9,12);
 topoLayer.getTileUrl = topoTiles;
 topoLayer.isPng = function() {return true;};
 
-var topoMap = new GMapType([topoLayer], G\_SATELLITE\_MAP.getProjection(), "Topo",{errorMessage: "Pas de données ici !"}); 
+var topoMap = new GMapType([topoLayer], G\_SATELLITE\_MAP.getProjection(), "Topo",{errorMessage: "Pas de données ici !"});
 
 map.addMapType(topoMap);
 map.removeMapType(G\_HYBRID\_MAP);

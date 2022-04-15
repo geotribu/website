@@ -53,7 +53,7 @@ Il existe deux manières de créer un objet en JavaScript :
 var obj2 = {}; // A partir de la notation JSON`
 
 
-JavaScript considère les objets en tant que tableau associatif. 
+JavaScript considère les objets en tant que tableau associatif.
 
 
 ### Mise en pratique
@@ -96,7 +96,7 @@ return this.length - suffix.length==this.indexOf(suffix);
 };`
 
 
-**Exemple :** 
+**Exemple :**
 
 
 
@@ -166,7 +166,7 @@ Composition/agrégation | Ces deux mécanismes sont supportés || Encapsulation/
 | Typage | JS possédant un typage dynamique, le type d'un objet n'est connu que lors de son exécution et peut varier au cours de celle-ci. |
 
 
-### 
+###
 Conclusion
 
 
@@ -175,10 +175,10 @@ Conclusion
 ---
 
 
-A l'heure actuelle la notion d'orienté objet n'est en réalité qu'une émulation. En effet, il n'existe presque aucun support (extends, super...) ni aucune logique (pas de réel concept de classe) permettant de mettre en oeuvre ce paradigme. 
+A l'heure actuelle la notion d'orienté objet n'est en réalité qu'une émulation. En effet, il n'existe presque aucun support (extends, super...) ni aucune logique (pas de réel concept de classe) permettant de mettre en oeuvre ce paradigme.
 
 
-Néanmoins, plusieurs techniques (astuces?) permettent d'y arriver. Pourquoi alors essayer d'utiliser ce langage pour quelque chose pour lequel il n'a pas été prévu? A cette question je n'ai malheureusement aucune réponse claire (vos idées sont les bienvenues). 
+Néanmoins, plusieurs techniques (astuces?) permettent d'y arriver. Pourquoi alors essayer d'utiliser ce langage pour quelque chose pour lequel il n'a pas été prévu? A cette question je n'ai malheureusement aucune réponse claire (vos idées sont les bienvenues).
 
 
 Néanmoins 'avantage indéniable de JS est sa fléxibilité (ex changement en cours d'exécution la structure des classes) ainsi que sa modularité qui en découle. De plus, on peut estimer qu'il a acquis une certaine robustesse (rigeur de codage des développeurs ?) au vu des librairies qui sont aujourd'hui disponibles telles que : Prototype, YUI, script.aculo.us, GoogleMap, OpenLayers...

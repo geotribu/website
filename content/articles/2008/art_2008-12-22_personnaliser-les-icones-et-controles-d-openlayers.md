@@ -30,7 +30,7 @@ title: Personnaliser les icônes et controles d'OpenLayers
 ---
 
 
-Même si la librairie OpenLayers se veut la plus souple et la plus ouverte possible, certaines parties sont encore codées en dures. C'est le cas notamment pour tout ce qui traite de la customisation. 
+Même si la librairie OpenLayers se veut la plus souple et la plus ouverte possible, certaines parties sont encore codées en dures. C'est le cas notamment pour tout ce qui traite de la customisation.
 
 
 La nouvelle classe proposée dans ce tutoriel, qui hérite de [PanZoom](http://dev.openlayers.org/releases/OpenLayers-2.7/doc/apidocs/files/OpenLayers/Control/PanZoom-js.html), vous permettra de personnaliser facilement vos controls.

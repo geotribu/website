@@ -105,4 +105,3 @@ map.zoomToMaxExtent();;
 
 ![Portait de Arnaud](){: .img-rdp-news-thumb }
 **Arnaud**
-

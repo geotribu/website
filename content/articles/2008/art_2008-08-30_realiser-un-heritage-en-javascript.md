@@ -48,7 +48,7 @@ Une fois ces barrières misent en place, on peut maintenant faire communiquer le
 Prenons un exemple concret :
 
 
-Nous utiliserons ici un point de vue géographique en se basant sur l'[API d'OpenLayers](http://dev.openlayers.org/releases/OpenLayers-2.6/doc/apidocs/files/OpenLayers/Layer-js.html "API OpenLayers") est son concept de couche. Partons donc de la Classe couche. Celle-ci est définie par un certains nombres d'attributs et méthodes comme son nom, son extention, la possibilité d'être affiché ou non... Cette Classe de base est la classe mère de laquelle vont hériter d'autres classes. Ces sous-classes sont donc forcément plus spécialisées à l'exemple de la Classe layers.WMS qui hérite de la classe grid qui hérite elle même de la classe httpRequest. 
+Nous utiliserons ici un point de vue géographique en se basant sur l'[API d'OpenLayers](http://dev.openlayers.org/releases/OpenLayers-2.6/doc/apidocs/files/OpenLayers/Layer-js.html "API OpenLayers") est son concept de couche. Partons donc de la Classe couche. Celle-ci est définie par un certains nombres d'attributs et méthodes comme son nom, son extention, la possibilité d'être affiché ou non... Cette Classe de base est la classe mère de laquelle vont hériter d'autres classes. Ces sous-classes sont donc forcément plus spécialisées à l'exemple de la Classe layers.WMS qui hérite de la classe grid qui hérite elle même de la classe httpRequest.
 
 
 ### Faire hériter une classe en JavaScript
@@ -62,7 +62,7 @@ Nous utiliserons ici un point de vue géographique en se basant sur l'[API d'Ope
 Bon passons sur les choses douloureuses imméditament, **il n'existe pas de mécanismes spécifique JS permettant de réaliser des héritages de classes**. Partant de là, toutes les solutions proposées (éh oui il existe plusieurs manières de faire), bien que fonctionnelles, ne sont que des enrichissements (~~rustine~~).
 
 
-Il existe trois manières de faire hériter des classes en JS. La première se base sur le constructeur de la classe-mère, la seconde sur le prototype de la classe mère et la dernière est une combinaison des deux. 
+Il existe trois manières de faire hériter des classes en JS. La première se base sur le constructeur de la classe-mère, la seconde sur le prototype de la classe mère et la dernière est une combinaison des deux.
 
 
 * Héritage par le constructeur de la classe mère
@@ -71,7 +71,7 @@ Il existe trois manières de faire hériter des classes en JS. La première se b
 Cette première méthode consiste en fait en une recopie du constructeur de la classe mère vers une méthode de la classe fille. Ainsi, l'appel de cette méthode initialise cette dernière en se fondant sur le constructeur de la classe mère.
 
 
-L'exemple ci-dessous permet de mieux comprendre les étapes : 
+L'exemple ci-dessous permet de mieux comprendre les étapes :
 
 
 `function classeMere() {  
@@ -114,13 +114,13 @@ this.parent();
 
 
 
-Cette méthode souffre d'un handicap. En effet, si les méthodes de la classe mère sont définies en dehors du constructeur via l'attribut prototype, l'héritage ne peut alors se faire. 
+Cette méthode souffre d'un handicap. En effet, si les méthodes de la classe mère sont définies en dehors du constructeur via l'attribut prototype, l'héritage ne peut alors se faire.
 
 
 * Héritage par le prototype de la classe mère
 
 
-Il existe deux manières, en se basant sur le prototype de la classe mère, de réaliser un héritage. 
+Il existe deux manières, en se basant sur le prototype de la classe mère, de réaliser un héritage.
 
 
 1 - Soit en remplacant la valeur du prototype de la classe fille par celui de la classe mère  
@@ -219,7 +219,7 @@ classeFilleExtendsMere.prototype[element] = classeMere.prototype[element]
 Par contre dans cette méthode la restriction porte sur le fait que la classe fille n'hérite pas des éléments définis dans le constructeur de la classe mère.
 
 
-Chacune des deux approches ci-dessus ont leurs défauts et leurs inconvénients mais ne sont pas des solutions satisfaisantes. Nous allons donc les utiliser conjointement afin de réaliser un héritage plus réaliste. 
+Chacune des deux approches ci-dessus ont leurs défauts et leurs inconvénients mais ne sont pas des solutions satisfaisantes. Nous allons donc les utiliser conjointement afin de réaliser un héritage plus réaliste.
 
 
 * Combinaison des deux approches
@@ -352,7 +352,7 @@ newObjet.methodeA();
 
 
 
-Clair, propre et conçis que demander de plus ? Un point de plus encore pour cette formidavble bibliothèque qu'est [Prototype](http://www.prototypejs.org "site internet prototype"). 
+Clair, propre et conçis que demander de plus ? Un point de plus encore pour cette formidavble bibliothèque qu'est [Prototype](http://www.prototypejs.org "site internet prototype").
 
 
 

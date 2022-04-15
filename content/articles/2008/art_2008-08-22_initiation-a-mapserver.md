@@ -53,7 +53,7 @@ Dans ce tutoriel vous apprendrez dans un premier temps à construire votre MapFi
 MapServer, est un environnement de développement permettant la réalisation d'applications web à composante cartographique. Il ne peut pas être considéré comme un SIG complet, mais il permet d'afficher des données géographique sous forme vectorielle ou cartographique. Pour plus d'informations vous pouvez consulter le site de MapServer.
 
 
-### 
+###
 - Comment intégrer MapServer -
 
 
@@ -226,7 +226,7 @@ Tutorial MapServer
 
 
 
-Si vous avez tout bien suivi, et que je ne me suis pas trompé (j'espère... :) ), une carte des contours de l'Indonésie devrait s'être dessinée. Une carte comme celle-ci : 
+Si vous avez tout bien suivi, et que je ne me suis pas trompé (j'espère... :) ), une carte des contours de l'Indonésie devrait s'être dessinée. Une carte comme celle-ci :
 
 
 ![](http://geotribu.net/img_site/tutoriaux/mapserver/indonesie.png)

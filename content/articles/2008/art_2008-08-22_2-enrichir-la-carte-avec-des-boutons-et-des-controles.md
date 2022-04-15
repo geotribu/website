@@ -114,7 +114,7 @@ Il existe de nombreuses fonctionnalités dans l'API Google Maps pour définir le
 
 
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 #map { width:100%; height:100%; }
 

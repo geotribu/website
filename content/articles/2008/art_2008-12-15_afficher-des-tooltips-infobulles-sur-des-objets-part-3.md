@@ -42,11 +42,11 @@ La librairie OpenLayers fournit un mécanisme intéressant permettant de facilem
 ---
 
 
-Pour ajouter le script il vous suffit simplement, après l'avoir [téléchargé](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/lib/OpenLayers/Control/ToolTips.js) (ou la [version compressée*](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/lib/OpenLayers/Control/ToolTips_optimize.js)), de le déclarer dans le Header de votre page. Cela se fait de la manière suivante : `OpenLayers exemples` Pour utiliser les tooltips, il faut ensuite ajouter un objet de type controle (Etape 1), puis définir une action de type mouseover (Etape 2) pour les objets sur lesquels vous souhaitez voir les tooltips s'afficher . Enfin pour chacune des actions définir les méthodes show() et hide() de la classe (Etape 3) :  `ttips = new OpenLayers.Control.ToolTips({shadow:true}); map.addControl(ttips); // Etape 1 markers.events.register("mouseover", markers, toolTipsOver); markers.events.register("mouseout", markers, toolTipsOut); // Etape 2 function toolTipsOver(e) { ttips.show({html:"My first ToolTips   
+Pour ajouter le script il vous suffit simplement, après l'avoir [téléchargé](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/lib/OpenLayers/Control/ToolTips.js) (ou la [version compressée*](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/lib/OpenLayers/Control/ToolTips_optimize.js)), de le déclarer dans le Header de votre page. Cela se fait de la manière suivante : `OpenLayers exemples` Pour utiliser les tooltips, il faut ensuite ajouter un objet de type controle (Etape 1), puis définir une action de type mouseover (Etape 2) pour les objets sur lesquels vous souhaitez voir les tooltips s'afficher . Enfin pour chacune des actions définir les méthodes show() et hide() de la classe (Etape 3) :  `ttips = new OpenLayers.Control.ToolTips({shadow:true}); map.addControl(ttips); // Etape 1 markers.events.register("mouseover", markers, toolTipsOver); markers.events.register("mouseout", markers, toolTipsOut); // Etape 2 function toolTipsOver(e) { ttips.show({html:"My first ToolTips  
 
 
 
-"}); } function toolTipsOut(e){ ttips.hide(); } // Etape 3` 
+"}); } function toolTipsOut(e){ ttips.hide(); } // Etape 3`
 
 
 ### Propriétés et méthodes

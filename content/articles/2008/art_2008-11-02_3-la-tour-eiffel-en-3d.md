@@ -93,7 +93,7 @@ Et activons le mode 'Bâtiments en 3D' - les mêmes que dans e logiciel Google E
 
 `[Google Earth] 2. Ajoutons quelques contrôles
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 
 

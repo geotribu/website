@@ -98,7 +98,7 @@ PyWPS (Service Web en Python) est une implémentation de la norme Web Processing
 Ce projet débuté en Mai 2006 et supporté par le [DBU](http://dbu.de) offre un environnement permettant la programmation de processus pouvant être ensuite utilisé par tout un chacun.
 
 
-L'avantage principal de PYWps est qu'il a été écrit de manière à pouvoir utiliser nativement les fonctions du logiciel SIG GRASS permettant ainsi un accès facilité aux différents modules de ce dernier directement depuis une interface Web. 
+L'avantage principal de PYWps est qu'il a été écrit de manière à pouvoir utiliser nativement les fonctions du logiciel SIG GRASS permettant ainsi un accès facilité aux différents modules de ce dernier directement depuis une interface Web.
 
 
 Néanmoins, ce n'est pas le seul logiciel supporté, l'utilisation de programmes tels que le package R, GDAL ou PROJ est également possible.
@@ -417,7 +417,7 @@ Par contre si vous obtenez quelque chose comme :
 
 `Traceback (most recent call last):  
 
-File "/usr/bin/wps.py", line 221, in   
+File "/usr/bin/wps.py", line 221, in  
 
 wps = WPS()  
 
@@ -429,11 +429,11 @@ File "/usr/bin/wps.py", line 188, in performRequest
 
 from pywps.WPS.GetCapabilities import GetCapabilities  
 
-File "/usr/lib/python2.5/site-packages/pywps/WPS/GetCapabilities.py", line 26, in   
+File "/usr/lib/python2.5/site-packages/pywps/WPS/GetCapabilities.py", line 26, in  
 
 from Response import Response  
 
-File "/usr/lib/python2.5/site-packages/pywps/WPS/Response.py", line 28, in   
+File "/usr/lib/python2.5/site-packages/pywps/WPS/Response.py", line 28, in  
 
 from htmltmpl import TemplateManager, TemplateProcessor  
 
@@ -451,7 +451,7 @@ Cela veut dire qu'une de vos options de configuration n'est pas bonne. Par exemp
 ---
 
 
-Tous les processus sont stockés dans le répertoire pywps/processes. Il est possible, grace à la variable d'environnement $PYTHON\_PROCESS de définir un autre chemin que celui par défaut. 
+Tous les processus sont stockés dans le répertoire pywps/processes. Il est possible, grace à la variable d'environnement $PYTHON\_PROCESS de définir un autre chemin que celui par défaut.
 
 
 Les deux codes ci-dessous présente un processus de type buffer. Plusieurs processus sont livrés avec le code source PyWPS.
@@ -574,7 +574,7 @@ Une valeur de type complexe peut être un fichier vecteur ou raster (ou tout aus
 ***Exemple d'une donnée en entrée de type Literal Output***
 
 
-Si en sortie vous désirez une chaîne de caractère : 
+Si en sortie vous désirez une chaîne de caractère :
 
 
 `27 self.textOut = self.addLiteralOutput(identifier="text",  
@@ -601,7 +601,7 @@ Calculation progress can be set using self.status(string message, number
 percent) method.
 
 
-Par exemple : 
+Par exemple :
 
 
 `33 def execute(self):  
@@ -691,7 +691,7 @@ grassLocation = True)`
 Dans ce cas, un entrepôt temporaire sera créé durant l'éxecution du processus puis supprimer une fois celui-ci achevé. Par défaut, aucun entrepôt n'est créé.
 
 
-Il est bien sûr possible de travaillerdepuis un entrepot existant. Pour cela il suffit de définir son emplacement de la manière suivante : 
+Il est bien sûr possible de travaillerdepuis un entrepot existant. Pour cela il suffit de définir son emplacement de la manière suivante :
 
 
 
@@ -711,10 +711,10 @@ grassLocation = "/home/grass/grassdata/spearfish60")
 Pour tester PyWPS vous pouvez l'utiliser aussi bien depuis un navigateur qui interrogera votre CGI qu'en ligne de commande directement. Commencer par la ligne de commande est toujours une bonne idée vous n'aurez pas ainsi à regarder, en cas d'erreur, dans le fichier error.log de votre serveur web.
 
 
-**Exemple de requête :** 
+**Exemple de requête :**
 
 
-***Requête de type GetCapabilities (webserver) :*** 
+***Requête de type GetCapabilities (webserver) :***
 
 
 `./wps.py "service=wps&request=getcapabilities"`
@@ -726,7 +726,7 @@ service=Wps&request=getcapabilities"
 
 
 
-***Requête de type DescribeProcess :*** 
+***Requête de type DescribeProcess :***
 
 
 
@@ -738,7 +738,7 @@ version=0.4.0&service=Wps&request=DescribeProcess&\
 Identifier=exampleBufferProcess"
 </code>
 
-<b><i>Requête avec données :</i></b> 
+<b><i>Requête avec données :</i></b>
 
 pour l'encodage des données utilisant la méthode GET depuis le protocole HTTP référez-vous à OGC 05-007r712, page 38 "Execute HTTP GET request KVP encoding"
 
@@ -771,8 +771,8 @@ Traduction réalisée par Van De Casteele Arnaud le 2009-09-28
 <div class="view-content">
 <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
 
-<div class="views-field views-field-field-photo"> <div class="field-content"><img src="http://localhost/geotribu\_reborn/sites/default/public/public\_res/styles/about\_author/public/img/contributeurs/arnaud-vandecasteele\_0\_0.JPG?itok=f8cGqWT6" width="110" height="150" alt="" /></div> </div> 
-<div class="views-field views-field-field-nom-complet"> <div class="field-content">Arnaud Vandecasteele</div> </div> 
+<div class="views-field views-field-field-photo"> <div class="field-content"><img src="http://localhost/geotribu\_reborn/sites/default/public/public\_res/styles/about\_author/public/img/contributeurs/arnaud-vandecasteele\_0\_0.JPG?itok=f8cGqWT6" width="110" height="150" alt="" /></div> </div>
+<div class="views-field views-field-field-nom-complet"> <div class="field-content">Arnaud Vandecasteele</div> </div>
 <div class="views-field views-field-field-description"> <div class="field-content"><p>Fervent défenseur de l'Open Source, Arnaud s'est spécialisé dans le développement d'application cartographiques web. OpenLayers, PostGIS ou encore Django sont autant d'outils qu'il manipule au quotidien. <br>S'il n'est pas en face de son ordinateur, vous le retrouverez un GPS à la main en train de cartographier pour OpenStreetMap, de faire voler son drone ou sur un tatami !</p>
 
 
@@ -787,7 +787,7 @@ Traduction réalisée par Van De Casteele Arnaud le 2009-09-28
 </div></div></div></div><ul class="links inline"><li class="comment-add first"><a href="/geotribu\_reborn/comment/reply/45#comment-form" title="Partager vos idées et opinions au sujet de cette contribution.">Ajouter un commentaire</a></li>
 <li class="print\_mail"><a href="/geotribu\_reborn/printmail/45" title="Send this page by email." class="print-mail" rel="nofollow">Send by email</a></li>
 <li class="print\_pdf last"><a href="/geotribu\_reborn/printpdf/45" title="Display a PDF version of this page." class="print-pdf" rel="nofollow">PDF version</a></li>
-</ul> 
+</ul>
 </article><!-- /.node -->
 </div><!-- /#content -->
 
@@ -958,4 +958,3 @@ Traduction réalisée par Van De Casteele Arnaud le 2009-09-28
 
 ![Portait de Arnaud](){: .img-rdp-news-thumb }
 **Arnaud**
-

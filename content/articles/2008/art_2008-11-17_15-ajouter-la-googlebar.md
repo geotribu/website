@@ -70,7 +70,7 @@ L'API Google Maps permet de définir une barre de géolocalisation et d'afficher
 
 
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 #map { width:100%; height:100%; }
 

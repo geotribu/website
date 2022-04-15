@@ -24,7 +24,7 @@ title: Le coin des bonnes adresses
 
 ----
 
-Sites cartographiques intéressants ou originaux pas leur contenu, leur représentation de l'information ou leur approche de la géomatique : 
+Sites cartographiques intéressants ou originaux pas leur contenu, leur représentation de l'information ou leur approche de la géomatique :
 
 
 **GoogleMaps :**

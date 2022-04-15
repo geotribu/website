@@ -136,7 +136,7 @@ Et éditer le formulaire en HTML :
 
 
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 #map { width:100%; height:100%; }
 
@@ -150,7 +150,7 @@ if (geocoder) {
 geocoder.getLatLng(address,function(point) {
 if (!point) {
 alert(address + " not found");
-} 
+}
 else {
 map.setCenter(point);
 var marker = new GMarker(point);

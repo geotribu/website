@@ -20,7 +20,7 @@ title: Premiers pas dans la cour des grands
 
 ----
 
-J'ai longtemps été réticent à l'idée de me plonger dans l'univers des blogs qui étaient pour moi réservés à tous ces ados pré-pubères (je ne critique pas je suis passé par là). 
+J'ai longtemps été réticent à l'idée de me plonger dans l'univers des blogs qui étaient pour moi réservés à tous ces ados pré-pubères (je ne critique pas je suis passé par là).
 
 
 Mais, le fait est qu'après avoir passé de longues heures sur la toile (comprenez le Web ;) , j'ai pu croiser un certain nombre de personnalités du monde de la géomatique dont les avis et commentaires étaient véhiculés par ce mode de diffusion. J'ai donc appris à mon grand étonnement qu'un blog pouvait être sérieux.

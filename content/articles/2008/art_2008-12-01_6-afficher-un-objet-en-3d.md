@@ -96,7 +96,7 @@ Et l'appliquer sur la carte :
 
 `[Google Earth] 6. Afficher un objet en 3D
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 
 

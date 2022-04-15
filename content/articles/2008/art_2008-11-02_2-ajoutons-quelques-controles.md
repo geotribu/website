@@ -84,7 +84,7 @@ ge.getOptions().setScaleLegendVisibility(true);`
 
 `[Google Earth] 2. Ajoutons quelques contrôles
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 
 

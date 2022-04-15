@@ -32,7 +32,7 @@ title: Utiliser un SLD pour filtrer un flux WMS depuis OpenLayers
 ---
 
 
-Définit par l'OGC, le [**S**tyled **L**ayer **D**escriptor](http://www.opengeospatial.org/standards/sld "Spécifications OGC SLD") (SLD) est un format de description (en [XML](http://fr.wikipedia.org/wiki/Extensible_Markup_Language "Wikipedia XML")) permettant la mise en forme de données géographique provenant d'un flux WMS. Pour simplifier il joue le même rôle qu'un fichier CSS pour une page HTML, le but étant de séparer complètement le style de la donnée. 
+Définit par l'OGC, le [**S**tyled **L**ayer **D**escriptor](http://www.opengeospatial.org/standards/sld "Spécifications OGC SLD") (SLD) est un format de description (en [XML](http://fr.wikipedia.org/wiki/Extensible_Markup_Language "Wikipedia XML")) permettant la mise en forme de données géographique provenant d'un flux WMS. Pour simplifier il joue le même rôle qu'un fichier CSS pour une page HTML, le but étant de séparer complètement le style de la donnée.
 
 
 Concrètement, lors de la réception d'un flux WMS un style définit lui est rattaché. La particularité, étant que ce fichier n'est pas physiquement lié au moteur carto. En effet, il est tout à fait possible d'interroger un serveur cartographique distant, de réceptionner le flux WMS et de lui appliquer un style que vous aurez vous même défini.
@@ -46,7 +46,7 @@ Concrètement, lors de la réception d'un flux WMS un style définit lui est rat
 ---
 
 
-Un SLD est un fichier XML contenant une liste de balises définie. On y retrouve par exemple la version du SLD utilisé, le nom de la données, le style à appliquer... Ci-dessous vous trouverez un exemple succinct de SLD : 
+Un SLD est un fichier XML contenant une liste de balises définie. On y retrouve par exemple la version du SLD utilisé, le nom de la données, le style à appliquer... Ci-dessous vous trouverez un exemple succinct de SLD :
 
 
 `xml version="1.0" encoding="UTF-8"?`

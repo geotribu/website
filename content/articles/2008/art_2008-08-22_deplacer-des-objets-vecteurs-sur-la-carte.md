@@ -142,4 +142,3 @@ panel.activateControl(controls.point)
 
 ![Portait de Arnaud](){: .img-rdp-news-thumb }
 **Arnaud**
-

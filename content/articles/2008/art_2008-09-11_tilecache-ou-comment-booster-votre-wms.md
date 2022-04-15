@@ -31,7 +31,7 @@ title: TileCache ou comment booster votre WMS
 ---
 
 
-Afin que la technologie WMS puisse réellement prendre une ampleur suffisante, il fallait avant tout que soit réglé son principal défaut, sa lenteur. C'est ainsi qu'est né, suite à une réflexion de toute la communauté OpenSource lors du FOSS4G 2006, tileCache. En effet, celui-ci vient s'interfacer entre le serveur cartographique et le client afin de garder en cache toutes les images générées. Si un utilisateur demande à nouveau la même ressource, l'image étant déjà produite l'affichage n'en sera que plus rapide. 
+Afin que la technologie WMS puisse réellement prendre une ampleur suffisante, il fallait avant tout que soit réglé son principal défaut, sa lenteur. C'est ainsi qu'est né, suite à une réflexion de toute la communauté OpenSource lors du FOSS4G 2006, tileCache. En effet, celui-ci vient s'interfacer entre le serveur cartographique et le client afin de garder en cache toutes les images générées. Si un utilisateur demande à nouveau la même ressource, l'image étant déjà produite l'affichage n'en sera que plus rapide.
 
 
 
@@ -53,7 +53,7 @@ Afin que la technologie WMS puisse réellement prendre une ampleur suffisante, i
 Si cela n'est pas déjà fait téléchargez l'archive de [tileCache](http://tilecache.org/ "site internet tileCache").
 
 
-Ensuite décompressez-la dans un répertoire accessible via un serveur web. Cela sera par exemple var/www/html (pour les linuxiens) ou votre répertoire htdocs si vous utilisez ms4w. 
+Ensuite décompressez-la dans un répertoire accessible via un serveur web. Cela sera par exemple var/www/html (pour les linuxiens) ou votre répertoire htdocs si vous utilisez ms4w.
 
 
 Vous devrez maintenant autoriser l'exécution de CGI pour le répertoire dans lequel tileCache est installé. Pour cela, éditez le fichier de configuration d'Apache (httpd.conf) et rajoutez-y les lignes suivantes :
@@ -78,7 +78,7 @@ Le plus dur est fait et la configuration est presque fini ! Il vous suffit maint
 ---
 
 
-TileCache peut être utilisé de plusieurs façons (CGI, FastCGI, Python...). Nous étudierons en particulier le mode CGI qui est le plus simple, ainsi que le mode CGI avec le mod\_python d'activé. 
+TileCache peut être utilisé de plusieurs façons (CGI, FastCGI, Python...). Nous étudierons en particulier le mode CGI qui est le plus simple, ainsi que le mode CGI avec le mod\_python d'activé.
 
 
 La première option sera étudiée très rapidement puisque c'est celle proposée par défaut et qui normalement devrait déjà fonctionner. Dans ce mode, le client interrogera tileCache de la manière suivante (exemple utilisant la notation OpenLayers) :
@@ -99,13 +99,13 @@ wms_sigma = new OpenLayers.Layer.WMS(
 ol_map.addLayer(wms_sigma);`
 
 
-Passons maintenant à l'optimisation. Les lignes qui suivront permettront d'améliorer sensiblement les performances de tileCache. 
+Passons maintenant à l'optimisation. Les lignes qui suivront permettront d'améliorer sensiblement les performances de tileCache.
 
 
 * **tileCache avec apache en mode mod\_python**
 
 
-TileCache est écrit en python, néanmoins le fonctionnement par défaut se fait en mode CGI. Cela entraine pour Apache, à chaque requête, un chargement de l'exécutable python afin de traiter le fichier tilecache.cgi. Il est plus intéressant de charger directement le mode python dans apache. 
+TileCache est écrit en python, néanmoins le fonctionnement par défaut se fait en mode CGI. Cela entraine pour Apache, à chaque requête, un chargement de l'exécutable python afin de traiter le fichier tilecache.cgi. Il est plus intéressant de charger directement le mode python dans apache.
 
 
 Différentes étapes sont nécessaires. Tout d'abord activer, dans la liste des modules, le mod\_python (LoadModule python\_module modules/mod\_python.so). Une fois votre serveur Web redémarré (httpd restart) l'extension python sera alors directement chargée en mémoire. Si votre version d'apache ne propose pas par défaut le mode python celui-ci est téléchargeable [ici](http://httpd.apache.org/modules/python-download.cgi "Téléchargement apache mod_python") ou bien pour les linuxiens directement depuis votre gestionnaire de packages (apache-mod\_python).
@@ -224,7 +224,7 @@ Résolution maximale. Si celle-ci est définie, un tableau de résolutions inter
 
 **metaTile**  
 
-Ce paramètre permet d'améliorer la qualité des images générées. En effet, par cette méthode, lors de l'appel une seule tuile est demandée. Celle-ci est ensuite découpée grâce à la librairie [Python Imaging](http://www.pythonware.com/products/pil/ "Site internet Python Imaging"). Les valeurs possibles sont yes ou no. Attention en cas d'utilisation de ce paramètre l'installation de la librairie Python Imaging est obligatoire. 
+Ce paramètre permet d'améliorer la qualité des images générées. En effet, par cette méthode, lors de l'appel une seule tuile est demandée. Celle-ci est ensuite découpée grâce à la librairie [Python Imaging](http://www.pythonware.com/products/pil/ "Site internet Python Imaging"). Les valeurs possibles sont yes ou no. Attention en cas d'utilisation de ce paramètre l'installation de la librairie Python Imaging est obligatoire.
 
 
 **metaBuffer**  
@@ -239,7 +239,7 @@ Ce paramètre définit combien de (sous)tuiles seront générées lorsque le mod
 
 **resolutions**  
 
-Liste de résolutions séparées par une virgule. 
+Liste de résolutions séparées par une virgule.
 
 
 **size**  
@@ -341,7 +341,7 @@ Ce qui donne l'instruction suivante (à exécuter dans un shell) :
 Ici, nous allons pré-générés les niveaux de zoom compris entre 0 et 3 (en réalité 0 jusqu'à 2 effectif) pour la couche définie comme myOwnLayer dans le fichier de configuration qui s'appuit sur le mapfile dont l'adresse est http: //localhost/cgi-bin/mapserv?map=/var/www/html/mapserver/monFichierMap.map.
 
 
-Il reste deux améliorations possibles : 
+Il reste deux améliorations possibles :
 
 
 * **Forcer le cache client** : il peut arriver que même si une image a déjà été générée le client la redemande à nouveau. Cela est dû au fait que le serveur Apache lors du premier appel n'a pas spécifié la durabilité de la "transaction". Cela peut être réglé par l'ajout du paramètre ExpiresActive.
@@ -359,7 +359,7 @@ Pour ces deux dernières optimisations je vous conseille plus que vivement la co
 ---
 
 
-TileCache est l'outil indispensable pour tous projets utilisant comme source de données un serveur WMS. Il apportera une fluidité incontestable à vos applications sans nécessiter de profonds bouleversements technologiques. 
+TileCache est l'outil indispensable pour tous projets utilisant comme source de données un serveur WMS. Il apportera une fluidité incontestable à vos applications sans nécessiter de profonds bouleversements technologiques.
 
 
 A noter, que pour les personnes utilisant GéoServer il existe un équivalent nommé [GéoWebCache](http://geowebcache.org/trac "tileCache pour GéoServer").

@@ -20,7 +20,7 @@ title: Les données SIG devraient-elles être libres?
 
 ----
 
-Au premier abord cette question semblerait être tout droit sortie de l'esprit d'un doux rêveur. C'est en tous cas ce à quoi j'ai pensé lors de la première lecture de ces deux articles : [Géorézo](http://georezo.net/blog/geolibre/2008/11/25/vers-la-liberation-de-certaines-donnees-de-lign-un-reve-ou-une-realite-proche-1ere-partie/) et [BalizMedia](http://media.baliz-geospatial.com/fr/article/vers-la-liberation-de-certaines-donnees-de-l-ign-un-reve-ou-une-realite-proche). De l'aveu même de l'auteur cette réflexion peut être prise sur le ton de “Un rêve direz-vous ?... Encore un utopiste ! Pourquoi pas". 
+Au premier abord cette question semblerait être tout droit sortie de l'esprit d'un doux rêveur. C'est en tous cas ce à quoi j'ai pensé lors de la première lecture de ces deux articles : [Géorézo](http://georezo.net/blog/geolibre/2008/11/25/vers-la-liberation-de-certaines-donnees-de-lign-un-reve-ou-une-realite-proche-1ere-partie/) et [BalizMedia](http://media.baliz-geospatial.com/fr/article/vers-la-liberation-de-certaines-donnees-de-l-ign-un-reve-ou-une-realite-proche). De l'aveu même de l'auteur cette réflexion peut être prise sur le ton de “Un rêve direz-vous ?... Encore un utopiste ! Pourquoi pas".
 
 
 J'avais donc dans un premier temps survolé rapidement leurs billets en souriant devant tant de candeur. Mais il faut avouer que cela avait éveillé en moi une certaine curiosité. En effet, et si derrière cette douce utopie se cachait une part de vérité? Vérité que nous ne sommes pas seuls à espérer à l'exemple du site [FreeOurData](http://www.freeourdata.org.uk/why-free.php) et [PowerInformation](http://powerofinformation.wordpress.com/2008/11/27/geographic-data-that-should-be-free-in-all-senses-of-the-word/)
@@ -41,7 +41,7 @@ Le gouvernement à de ce côté, je dois l'avouer, fait de nombreux efforts. Ain
 * Les données utiles
 
 
-Par ce terme, j'entends toutes les données ayant une utilité immédiate et réelle dans la vie de tous les jours. Cela est par exemple, la localisation des hôpitaux, des centres de police, des écoles, de toilettes... 
+Par ce terme, j'entends toutes les données ayant une utilité immédiate et réelle dans la vie de tous les jours. Cela est par exemple, la localisation des hôpitaux, des centres de police, des écoles, de toilettes...
 
 
 Il est facile de comprendre l'intérêt que pourrait avoir ces données à êtres libres. N'importe qui pour alors les utiliser afin de proposer des services basés sur une des nombreuses solutions cartographiques existantes.
@@ -63,13 +63,13 @@ Passons maintenant aux **avantages qu'auraient la libéralisation de ces donnée
 
 - Un enrichissement des donnée de par leur utilisation par un grand nombre de personne  
 
-- La mise en place de service annexes par la communauté permettant ainsi d'apporter une réelle valeur ajoutée aux données. 
+- La mise en place de service annexes par la communauté permettant ainsi d'apporter une réelle valeur ajoutée aux données.
 
 
 Prenons un exemple concret et imaginons que demain la poste mette à disposition ses données. Dans la semaine qui suivra de nombreuses applications fleuriront sur internet afin de permettre à vous, à moi, à nous de trouver le bureau de tri ou d'envoi le plus proche. L'intérêt est donc global, aussi bien pour le producteur de cette donnée qui n'a pas les moyens, les ressources ou le temps de valoriser ses données que pour l'utilisateur qui bénéficie ainsi d'une nouvelle qualité de service.
 
 
-En conclusion, face aux tarifs exorbitants et aux manques de libertés une question se pose : **Quels organismes peuvent acheter ces données?** Prenons pour cela un cas concret, l'Ile de La Réunion. Celle-ci possède une superficie d'environ 2500 km², en se basant sur [les prix de l'IGN](http://professionnels.ign.fr/DISPLAY/000/506/461/5064616/BDTOPO_tarif.pdf) je devrais alors débourser 6550 euros pour acquérir la BD Topo en sachant bien entendu qu'on parle là d'une licence monoposte et que les données restent la propriété de l'IGN. Pour en revenir à notre question et en se basant sur notre exemple, la réponse est évidente, seules les très grosses entreprises ou les administrations ont les moyens de les acquérir. Pour le dernier cas, il est tout de même ironique, qu'une administration vende un produit à une autre administration, c'est le serpent qui se mort la queue. Mais bon ce n'est pas très grave puisqu'au final c'est nous qui payons. Qui payons même deux fois, une première par le financement de l'IGN et la seconde par les taxes que nous versons à notre commune par exemple. 
+En conclusion, face aux tarifs exorbitants et aux manques de libertés une question se pose : **Quels organismes peuvent acheter ces données?** Prenons pour cela un cas concret, l'Ile de La Réunion. Celle-ci possède une superficie d'environ 2500 km², en se basant sur [les prix de l'IGN](http://professionnels.ign.fr/DISPLAY/000/506/461/5064616/BDTOPO_tarif.pdf) je devrais alors débourser 6550 euros pour acquérir la BD Topo en sachant bien entendu qu'on parle là d'une licence monoposte et que les données restent la propriété de l'IGN. Pour en revenir à notre question et en se basant sur notre exemple, la réponse est évidente, seules les très grosses entreprises ou les administrations ont les moyens de les acquérir. Pour le dernier cas, il est tout de même ironique, qu'une administration vende un produit à une autre administration, c'est le serpent qui se mort la queue. Mais bon ce n'est pas très grave puisqu'au final c'est nous qui payons. Qui payons même deux fois, une première par le financement de l'IGN et la seconde par les taxes que nous versons à notre commune par exemple.
 
 
 La vie est belle dans la logique administrative française.

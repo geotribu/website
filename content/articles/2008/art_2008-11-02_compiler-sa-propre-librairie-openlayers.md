@@ -50,7 +50,7 @@ Cet outil utilise un fichier de configuration (profils) permettant de choisir le
 ---
 
 
-**OpenLayers Build Profiles** est l'outil (python) permettant de "compiler" sa propre librairie OpenLayers (situé dans build/build.py). 
+**OpenLayers Build Profiles** est l'outil (python) permettant de "compiler" sa propre librairie OpenLayers (situé dans build/build.py).
 
 
 Afin de créer son profil il suffit simplement simplement, à l'intérieur du dossier build, de copier le fichier library.cfg ou lite.cfg en maVersion.cfg. Vous n'avez plus ensuite qu'à lancer la commande suivante : python build.py maVersion
@@ -88,7 +88,7 @@ Si au contraire vous souhaitez enlevez des fichiers il faudra alors spécifier c
 Pour créer un fichier unique et optimisé, il suffit de se rendre dans le répertoire build d'OpenLayers et de taper la commande suivante : python build.py profilename (où profilname correspond au nom de votre fichier de configuration).
 
 
-Crééons maintenant notre propre fichier. Imaginons que nous souhaitons incorporer l'[addins ScaleBar](http://trac.openlayers.org/browser/addins/scalebar/trunk/lib/OpenLayers/Control/ScaleBar.js) directement à notre fichier unique. Cela nous évitera par la suite de le déclarer dans chacun de nos scripts. Pour cela, deux moyens sont possibles. Soit après, avoir téléchargé ce dernier dans le répertoire Control (lib/control), vous pouvez éditer le fichier lib/OpenLayers.js et rajouter le chemin d'accès vers cette nouvelle classe dans le tableau listant l'ensemble des classes. 
+Crééons maintenant notre propre fichier. Imaginons que nous souhaitons incorporer l'[addins ScaleBar](http://trac.openlayers.org/browser/addins/scalebar/trunk/lib/OpenLayers/Control/ScaleBar.js) directement à notre fichier unique. Cela nous évitera par la suite de le déclarer dans chacun de nos scripts. Pour cela, deux moyens sont possibles. Soit après, avoir téléchargé ce dernier dans le répertoire Control (lib/control), vous pouvez éditer le fichier lib/OpenLayers.js et rajouter le chemin d'accès vers cette nouvelle classe dans le tableau listant l'ensemble des classes.
 
 
 `var jsfiles = new Array(  

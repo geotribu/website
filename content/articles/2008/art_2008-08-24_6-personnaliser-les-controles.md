@@ -169,7 +169,7 @@ map.setMapType(G_SATELLITE_MAP);`
 
 
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 #map { width:100%; height:100%; }
 
@@ -188,7 +188,7 @@ var zoomInDiv = document.createElement("div");
 this.setButtonStyle\_(zoomInDiv);
 container.appendChild(zoomInDiv);
 zoomInDiv.appendChild(document.createTextNode("Zoom In"));
-zoomInDiv.innerHTML = '<img src="./icons/32x32/1.png">'; 
+zoomInDiv.innerHTML = '<img src="./icons/32x32/1.png">';
 GEvent.addDomListener(zoomInDiv, "click", function() {
 map.zoomIn();
 });
@@ -196,7 +196,7 @@ map.zoomIn();
 var zoomOutDiv = document.createElement("div");
 this.setButtonStyle\_(zoomOutDiv);
 container.appendChild(zoomOutDiv);
-zoomOutDiv.innerHTML = '<img src="./icons/32x32/2.png">'; 
+zoomOutDiv.innerHTML = '<img src="./icons/32x32/2.png">';
 GEvent.addDomListener(zoomOutDiv, "click", function() {
 map.zoomOut();
 });
@@ -221,7 +221,7 @@ var container = document.createElement("div");
 var panUp = document.createElement("div");
 this.setButtonStyle\_(panUp);
 container.appendChild(panUp);
-panUp.innerHTML = '<img src="./icons/32x32/9.png">'; 
+panUp.innerHTML = '<img src="./icons/32x32/9.png">';
 GEvent.addDomListener(panUp, "click", function() {
 map.panDirection(0,1);
 });
@@ -246,7 +246,7 @@ var container = document.createElement("div");
 var panDown = document.createElement("div");
 this.setButtonStyle\_(panDown);
 container.appendChild(panDown);
-panDown.innerHTML = '<img src="./icons/32x32/10.png">'; 
+panDown.innerHTML = '<img src="./icons/32x32/10.png">';
 GEvent.addDomListener(panDown, "click", function() {
 map.panDirection(0,-1);
 });
@@ -271,7 +271,7 @@ var container = document.createElement("div");
 var panRight = document.createElement("div");
 this.setButtonStyle\_(panRight);
 container.appendChild(panRight);
-panRight.innerHTML = '<img src="./icons/32x32/7.png">'; 
+panRight.innerHTML = '<img src="./icons/32x32/7.png">';
 GEvent.addDomListener(panRight, "click", function() {
 map.panDirection(-1,0);
 });
@@ -296,7 +296,7 @@ var container = document.createElement("div");
 var panLeft = document.createElement("div");
 this.setButtonStyle\_(panLeft);
 container.appendChild(panLeft);
-panLeft.innerHTML = '<img src="./icons/32x32/8.png">'; 
+panLeft.innerHTML = '<img src="./icons/32x32/8.png">';
 GEvent.addDomListener(panLeft, "click", function() {
 map.panDirection(1,0);
 });
@@ -321,7 +321,7 @@ var container = document.createElement("div");
 var CustomMapPlan = document.createElement("div");
 this.setButtonStyle\_(CustomMapPlan);
 container.appendChild(CustomMapPlan);
-CustomMapPlan.innerHTML = '<img src="./buttons/plan\_orange\_75.png">'; 
+CustomMapPlan.innerHTML = '<img src="./buttons/plan\_orange\_75.png">';
 GEvent.addDomListener(CustomMapPlan, "click", function() {
 map.setMapType(G\_NORMAL\_MAP);
 });
@@ -329,7 +329,7 @@ map.setMapType(G\_NORMAL\_MAP);
 var CustomMapSatellite = document.createElement("div");
 this.setButtonStyle\_(CustomMapSatellite);
 container.appendChild(CustomMapSatellite);
-CustomMapSatellite.innerHTML = '<img src="./buttons/satellite\_orange\_75.png">'; 
+CustomMapSatellite.innerHTML = '<img src="./buttons/satellite\_orange\_75.png">';
 GEvent.addDomListener(CustomMapSatellite, "click", function() {
 map.setMapType(G\_SATELLITE\_MAP);
 });
@@ -337,7 +337,7 @@ map.setMapType(G\_SATELLITE\_MAP);
 var CustomMapRelief = document.createElement("div");
 this.setButtonStyle\_(CustomMapRelief);
 container.appendChild(CustomMapRelief);
-CustomMapRelief.innerHTML = '<img src="./buttons/relief\_orange\_75.png">'; 
+CustomMapRelief.innerHTML = '<img src="./buttons/relief\_orange\_75.png">';
 GEvent.addDomListener(CustomMapRelief, "click", function() {
 map.setMapType(G\_PHYSICAL\_MAP);
 });

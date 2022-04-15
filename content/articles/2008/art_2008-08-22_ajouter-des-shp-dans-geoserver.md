@@ -53,7 +53,7 @@ Voici les grandes étapes qui composent ce tutorial. Elles seront ensuite expliq
 
 **7.** Visualisez votre couche en vous rendant dans la partie prévisualisation des cartes de la page de démonstration  
 
-**8.** Visualisez vos données dans GoogleEarth en copiant une url de ce type (mais en changeant myFeatureType), le port 8080 étant le port par défaut pour GéoServer :   
+**8.** Visualisez vos données dans GoogleEarth en copiant une url de ce type (mais en changeant myFeatureType), le port 8080 étant le port par défaut pour GéoServer :  
 **http ://localhost:8080/geoserver/wms/kml\_reflect?layers=myFeatureType**
 
 

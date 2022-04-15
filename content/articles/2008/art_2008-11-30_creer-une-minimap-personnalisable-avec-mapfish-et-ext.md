@@ -32,7 +32,7 @@ title: Créer une MiniMap personnalisable avec mapFish et Ext
 ---
 
 
-Développé par [CampToCamp](http://www.camptocamp.com/), [MapFish](http://trac.mapfish.org/trac/mapfish/wiki/Home) est un famework utilisant [OpenLayers](http://openlayers.org/) pour la partie cartographie et [Ext](http://extjs.com) pour la partie GUI (Graphical User Interface). 
+Développé par [CampToCamp](http://www.camptocamp.com/), [MapFish](http://trac.mapfish.org/trac/mapfish/wiki/Home) est un famework utilisant [OpenLayers](http://openlayers.org/) pour la partie cartographie et [Ext](http://extjs.com) pour la partie GUI (Graphical User Interface).
 
 
 Nous apprendrons dans ce tutoriel a créer notre propre objet MapFish afin d'enrichir la librairie existante. Celui-ci devra permettre d'afficher dans une fenêtre la mini-map d'OpenLayers.
@@ -105,7 +105,7 @@ onRender: function(container, position) {
 
 // Code  
 
-} 
+}
 
 
 });  
@@ -261,7 +261,7 @@ map.addControl(miniMap);
 
 mapfish.widgets.miniMap.superclass.onRender.apply(this, arguments);  
 
-} 
+}
 
 
 });  

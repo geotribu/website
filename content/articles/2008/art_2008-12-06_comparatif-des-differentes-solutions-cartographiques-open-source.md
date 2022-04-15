@@ -21,7 +21,7 @@ title: Comparatif des différentes solutions cartographiques Open-Source
 
 ----
 
-![opensource.gif](/sites/default/files/Tuto/img/Blog/OpenSource/opensource.gif) Les offres d'applications, de logiciels, ou de solutions Open-Source sont de plus en plus vastes, au point qu'il est parfois difficile de pouvoir les comparer. 
+![opensource.gif](/sites/default/files/Tuto/img/Blog/OpenSource/opensource.gif) Les offres d'applications, de logiciels, ou de solutions Open-Source sont de plus en plus vastes, au point qu'il est parfois difficile de pouvoir les comparer.
 
 
 Qui d'entre nous ne s'est pas posé la question de savoir quelle librairie utiliser? Ou encore quelle solution répondra à mes attentes en fonctions de mes critères?

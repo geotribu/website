@@ -109,7 +109,7 @@ Calculer un itinéraire lors de l'appel de la carte :
 
 
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 #map { width:100%; height:100%; }
 
@@ -222,8 +222,8 @@ L'affichage de l'itinéraire ainsi que le niveau de zoom approprié est fait de 
 [Intermédiaire](/geotribu_reborn/taxonomy/term/8)[Google Maps](/geotribu_reborn/taxonomy/term/3)A propos de l'auteur: 
 
 
-![](https://cdn.geotribu.fr/images/internal/charte/geotribu_logo_64x64.png?itok=Q4cCqZQC) 
-Fabien Goblet 
+![](https://cdn.geotribu.fr/images/internal/charte/geotribu_logo_64x64.png?itok=Q4cCqZQC)
+Fabien Goblet
 Fabien est l'un des fondateurs de Geotribu.
 
 
@@ -269,7 +269,7 @@ Fabien est l'un des fondateurs de Geotribu.
 
 
 
-### 
+###
 
 
 Berti - lun, 26/07/2010 - 11:59am
@@ -303,7 +303,7 @@ Peut-on inscrire une adresse de destination fixe?
 
 
 
-Rechercher 
+Rechercher
 
 
 

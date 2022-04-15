@@ -139,7 +139,7 @@ En utilisant la méthode overlay sur la carte (cf. [tutoriel n°3](http://www.ge
 
 
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 #map { width:100%; height:100%; }
 
@@ -155,7 +155,7 @@ map.addControl(new GOverviewMapControl());
 map.addControl(new GScaleControl());
 map.addControl(new GLargeMapControl());
 map.enableScrollWheelZoom();
-var points = [ new GLatLng(43.57776102358721,1.403797022247275), 
+var points = [ new GLatLng(43.57776102358721,1.403797022247275),
 new GLatLng(43.57774203677786,1.402996671914309),
 new GLatLng(43.57770841326447,1.402996671901832),
 new GLatLng(43.57769313342543,1.402998782088943),

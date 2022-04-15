@@ -30,7 +30,7 @@ title: Créer des classes en JavaScript
 ---
 
 
-Comme nous l'avons vu dans le tutoriel précédent, JavaScript (JS) n'offre qu'un support partiel (limité?) des concepts liés à la programmation orientée objet (POO). Le concept de classe en tant que telle (pas de mot-clé *class* dédié) n'existe pas. Toute la POO en JavaScript se base uniquement sur les mécanismes de *fonctions*,*closures* et *prototype*. En même temps que nous apprendrons à créer manuellement nos classes nous utiliserons la bibliothèque Prototype qui offre des mécanismes et raccourcis très intéressants quant à l'utilisation du JavaScript Orienté Objet. 
+Comme nous l'avons vu dans le tutoriel précédent, JavaScript (JS) n'offre qu'un support partiel (limité?) des concepts liés à la programmation orientée objet (POO). Le concept de classe en tant que telle (pas de mot-clé *class* dédié) n'existe pas. Toute la POO en JavaScript se base uniquement sur les mécanismes de *fonctions*,*closures* et *prototype*. En même temps que nous apprendrons à créer manuellement nos classes nous utiliserons la bibliothèque Prototype qui offre des mécanismes et raccourcis très intéressants quant à l'utilisation du JavaScript Orienté Objet.
 
 
 ### Créer sa propre classe

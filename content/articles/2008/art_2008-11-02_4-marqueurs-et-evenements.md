@@ -146,7 +146,7 @@ ge.setBalloon(balloon);
 
 `[Google Earth] 4. Marqueurs et événements
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 
 
@@ -190,7 +190,7 @@ mirail.setStyleSelector(null);
 mirail.setStyleUrl('#styleMap');
 
 google.earth.addEventListener(mirail, "click", function(event) {
-event.preventDefault(); 
+event.preventDefault();
 var balloon = ge.createHtmlDivBalloon('');
 balloon.setFeature(mirail);
 var div = document.createElement('DIV');
@@ -210,7 +210,7 @@ ensat.setStyleSelector(null);
 ensat.setStyleUrl('#styleMap');
 
 google.earth.addEventListener(ensat, "click", function(event) {
-event.preventDefault(); 
+event.preventDefault();
 var balloon = ge.createHtmlDivBalloon('');
 balloon.setFeature(ensat);
 var div = document.createElement('DIV');

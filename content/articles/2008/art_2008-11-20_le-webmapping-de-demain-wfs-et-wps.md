@@ -65,7 +65,7 @@ Pour illustrer ces propos, l'interface présentée ci-dessous s'appuie sur Featu
 
 
 
-[![wfs_wps.jpg](/sites/default/files/Tuto/img/WFS/wfs_wps.jpg)](http://geotribu.net/applications/wfs_wps/index.htm "applications WFS/WPS") 
+[![wfs_wps.jpg](/sites/default/files/Tuto/img/WFS/wfs_wps.jpg)](http://geotribu.net/applications/wfs_wps/index.htm "applications WFS/WPS")
 
 
 

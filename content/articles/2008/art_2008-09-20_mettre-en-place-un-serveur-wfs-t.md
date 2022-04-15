@@ -34,7 +34,7 @@ Dans un [précédent tutoriel](http://geotribu.net/?q=node/42) nous avions appri
 
 C'est là tout l'intérêt de "Feature Server". En effet, basé sur la même logique que TileCache, il permet au moyen d'un simple fichier de configuration de disposer d'un serveur WFS transactionnel.  
 
-Les sources de données qu'il est capable de lire sont les suivantes (**R/W** pour accessible en lecture/écriture et **R** pour seulement en lecture): 
+Les sources de données qu'il est capable de lire sont les suivantes (**R/W** pour accessible en lecture/écriture et **R** pour seulement en lecture):
 
 
 * [DBM](http://en.wikipedia.org/wiki/AnyDBM "Wikipedia AnyDBM")- Utilisation d'ANYDBM comme base de données (sous forme de fichiers). L'avantage est sa facilité d'installation et sa portabilité (marche sur toutes les plateformes) **(R/W)**
@@ -46,7 +46,7 @@ Les sources de données qu'il est capable de lire sont les suivantes (**R/W** po
 * [OSM](http://www.openstreetmap.org/ "Site internet OpenStreet Map") - Permets l'affichage des données provenant d'Open Street Map
 
 
-Les formats de données (service) qu'il est capable de lire sont les suivants (**R/W** pour accessible en lecture/écriture, **W** pour accessible en écriture): 
+Les formats de données (service) qu'il est capable de lire sont les suivants (**R/W** pour accessible en lecture/écriture, **W** pour accessible en écriture):
 
 
 * [GeoJSON](http://geojson.org/ "Site Internet GeoJSON") - Encodage des données géographiques au format JSON. Accessible en **R/W** pour tous les types d'objets (lignes, polygones, points...)
@@ -71,7 +71,7 @@ Les formats de données (service) qu'il est capable de lire sont les suivants (*
 Si cela n'est pas déjà fait télécharger l'archive de [Feature Server](http://featureserver.org/ "site internet Feature Server").
 
 
-Ensuite décompressez-la dans un répertoire accessible via un serveur web. Cela sera var/www/html (pour les linuxiens) ou votre répertoire htdocs si vous utilisez ms4w. 
+Ensuite décompressez-la dans un répertoire accessible via un serveur web. Cela sera var/www/html (pour les linuxiens) ou votre répertoire htdocs si vous utilisez ms4w.
 
 
 Vous devrez maintenant autoriser l'exécution de CGI pour le répertoire dans lequel FeatureServer est installé. Pour cela, éditez le fichier de configuration d'Apache (httpd.conf) et rajoutez-y les lignes suivantes :
@@ -109,7 +109,7 @@ Quittez votre navigateur, revenez l'objet est toujours là ! Pour le moment cet 
 ---
 
 
-FeatureServer peut être utilisé de différentes façons. Nous en étudierons deux, le mode CGI qui est le plus simple, ou alors le mode CGI avec le mod\_python activé. 
+FeatureServer peut être utilisé de différentes façons. Nous en étudierons deux, le mode CGI qui est le plus simple, ou alors le mode CGI avec le mod\_python activé.
 
 
 La première option sera très rapidement étudiée ici puisque c'est celle que vous avez déjà normalement réussi à faire fonctionner. Dans ce mode, le client interrogera FeatureServer de la manière suivante (exemple utilisant la notation OpenLayers) :
@@ -132,7 +132,7 @@ Passons maintenant à l'optimisation. Les lignes qui suivront permettront d'amé
 * **Feature Server apache en mode mod\_python**
 
 
-Feature Server est écrit en python, néanmoins le fonctionnement par défaut se fait en mode CGI. Cela entraine pour Apache, à chaque requête, un chargement de l'exécutable python afin de traiter le fichier featureserver.cgi. Il est plus intéressant de charger directement le mode python dans apache. 
+Feature Server est écrit en python, néanmoins le fonctionnement par défaut se fait en mode CGI. Cela entraine pour Apache, à chaque requête, un chargement de l'exécutable python afin de traiter le fichier featureserver.cgi. Il est plus intéressant de charger directement le mode python dans apache.
 
 
 Différentes étapes sont nécessaires. Tout d'abord activer, dans la liste des modules, le mod\_python (LoadModule python\_module modules/mod\_python.so). Une fois votre serveur Web redémarré (httpd restart) l'extension python sera alors directement chargée en mémoire. Si votre version d'apache ne propose pas par défaut le mode python celui-ci est téléchargeable [ici](http://httpd.apache.org/modules/python-download.cgi "Téléchargement apache mod_python") ou bien pour les linuxiens directement depuis votre gestionnaire de packages (apache-mod\_python).
@@ -211,7 +211,7 @@ Ce sont des attributs que l'on retrouvera quelle que soit le type de stockage/so
 
 type => Représente le type de stockage qui sera utilisé  
 
-gaping\_security\_hole => signifie que vous autorisez, sans restriction, le chargement de ces données depuis des appels JSON. Les utilisateurs pourront accéder à vos données et ce même si elles sont protégées par un firwall. 
+gaping\_security\_hole => signifie que vous autorisez, sans restriction, le chargement de ces données depuis des appels JSON. Les utilisateurs pourront accéder à vos données et ce même si elles sont protégées par un firwall.
 
 
 + DBM
@@ -219,7 +219,7 @@ gaping\_security\_hole => signifie que vous autorisez, sans restriction, le char
 
 C'est le format de stockage par défaut. Si vous avez réussi à configurer correctement featureServer c'est le mode de fonctionnement qui est utilisé dans l'exemple.  
 
-Les arguments nécessaires sont : 
+Les arguments nécessaires sont :
 
 
 [DBM]  

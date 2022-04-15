@@ -26,7 +26,7 @@ title: GeoExt, le mariage de l'IHM et de la cartographie
 L'objectif est de fournir une bibliothèque intégrant à la fois [OpenLayers](http://openlayers.org/) pour la partie cartographique et [Ext](http://extjs.com/) pour l'IHM. Un projet similaire avait été lancé il y a quelques mois par CampToCamp sous le nom de [MapFish](http://trac.mapfish.org/trac/mapfish/wiki/Home). CampToCamp qui s'investit d'ailleurs dans le projet GeoExt en reversant tout le code déjà utilisé par MapFish.
 
 
-En consultant les exemples d'EXT il est facile d'imaginer les possibilités et les applications qu'il sera possible de réaliser. On se dirige là de plus en plus vers du WebSIG orienté métier. 
+En consultant les exemples d'EXT il est facile d'imaginer les possibilités et les applications qu'il sera possible de réaliser. On se dirige là de plus en plus vers du WebSIG orienté métier.
 
 
 La seule question restant en suspens est la [licence utilisée par Ext](http://extjs.com/products/license.php). En effet celle-ci est récemment passée de [LGPL](http://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_limit%C3%A9e_GNU) à [GPL](http://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_GNU) (V3). La différence étant que si vous souhaitez réaliser une application (commerciale ou non), vous devrez dans le cas d'une licence GPL redistribuer la totalité du code source modifié au contraire de la licence LGPL qui permet de s'affranchir de ce caractère héréditaire. En clair, si vous mettez en place une application mais que vous ne souhaitez pas redistribuer les sources vous devrez alors vous orienter vers la licence commerciale d'EXT ($289 pour un développeur).

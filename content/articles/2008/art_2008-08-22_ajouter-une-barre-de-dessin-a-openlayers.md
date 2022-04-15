@@ -103,4 +103,3 @@ map.addControl(new OpenLayers.Control.EditingToolbar(vlayer));`
 
 ![Portait de Arnaud](){: .img-rdp-news-thumb }
 **Arnaud**
-

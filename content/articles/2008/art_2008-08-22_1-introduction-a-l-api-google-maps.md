@@ -45,7 +45,7 @@ title: 1. Introduction à l'API Google Maps
 ---
 
 
-****Pour utiliser l'API Google Maps, il est nécessaire d'obtenir une clé gratuite à cette [adresse](http://code.google.com/intl/fr/apis/maps/signup.html). Et d'écrire cette ligne dans le de la page HTML qui contiendra la carte Google Maps :**** 
+****Pour utiliser l'API Google Maps, il est nécessaire d'obtenir une clé gratuite à cette [adresse](http://code.google.com/intl/fr/apis/maps/signup.html). Et d'écrire cette ligne dans le de la page HTML qui contiendra la carte Google Maps :****
 
 
 * v=2.x : ici on note la version de l'API utilisée dans notre projet : - 2.x correspond à la dernière version de l'API - 2.s correspond à la dernière version stable de l'API - 2 correspond à la version courante Détail des changements de l'API : <http://mapki.com/wiki/Changelog>
@@ -73,7 +73,7 @@ title: 1. Introduction à l'API Google Maps
 ---
 
 
-****Afin d'afficher la carte, il est nécessaire de déclarer un bloc div qui contiendra la carte :**** 
+****Afin d'afficher la carte, il est nécessaire de déclarer un bloc div qui contiendra la carte :****
 
 
 

@@ -106,7 +106,7 @@ Définir l'emplacement de la carte :
 
 
 
-html { overflow:hidden; height:100%; } 
+html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
 #pano { width:100%; height:100%; }
 

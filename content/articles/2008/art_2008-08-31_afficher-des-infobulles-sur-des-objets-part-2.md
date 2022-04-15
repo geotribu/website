@@ -29,10 +29,10 @@ title: Afficher des infobulles sur des objets [Part 2]
 
 
 Lors d'un précédent tutoriel nous avions appris comment afficher des infobulles sur un marker. Bon me direz-vous mais à quoi sert ce nouveau tuto ? Tout simplement l'ancien script était trop artisanal. En effet, la librairie OpenLayers offre des mécanismes simples d'enrichissement de classes qui n'ont pas été exploités.
-Ce [nouveau script](http://ks356007.kimsufi.com/arno/geotribu/applications/js/toolTips_ol.js "script toolTips V2") pallie à ce manque en ajoutant une spécification supplémentaire à la classe marker. Cette façon de faire permet une plus grande souplesse de travail et une meilleur portabilité à long terme. 
+Ce [nouveau script](http://ks356007.kimsufi.com/arno/geotribu/applications/js/toolTips_ol.js "script toolTips V2") pallie à ce manque en ajoutant une spécification supplémentaire à la classe marker. Cette façon de faire permet une plus grande souplesse de travail et une meilleur portabilité à long terme.
 
 
-Je dois souligner que le [code original](http://trac.openlayers.org/ticket/751 "Script label OpenLayers") n'est pas de moi, je n'ai fais que rajouter certaines options supplémentaires. 
+Je dois souligner que le [code original](http://trac.openlayers.org/ticket/751 "Script label OpenLayers") n'est pas de moi, je n'ai fais que rajouter certaines options supplémentaires.
 
 
 ### Ajouter le script
@@ -62,7 +62,7 @@ Pour ajouter le script il vous suffit simplement de le déclarer dans le Header 
 ---
 
 
-La classe OpenLayers.Marker.Label hérite de OpenLayers.Marker en lui ajoutant des spécifiés supplémentaires. Le seul paramètre obligatoire est Label. C'est lui qui définit le texte à afficher : 
+La classe OpenLayers.Marker.Label hérite de OpenLayers.Marker en lui ajoutant des spécifiés supplémentaires. Le seul paramètre obligatoire est Label. C'est lui qui définit le texte à afficher :
 
 
 `var ll = new OpenLayers.LonLat(0,10);  
@@ -80,7 +80,7 @@ marker1 = new OpenLayers.Marker.Label(ll,null,myLabel,options);
 mlayer.addMarker(marker1);`
 
 
-Voici les propriétés et méthodes de cette classe : 
+Voici les propriétés et méthodes de cette classe :
 
 
 

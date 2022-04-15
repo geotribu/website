@@ -34,7 +34,7 @@ title: Introduction à GeoServer
 ---
 
 
-Cette introduction sur GeoServer se décompose en 3 parties. Après avoir retracé l'historique de celui-ci, nous nous attacherons à savoir pour qui ce genre d'outil est utile, et quel sont ces possibilités 
+Cette introduction sur GeoServer se décompose en 3 parties. Après avoir retracé l'historique de celui-ci, nous nous attacherons à savoir pour qui ce genre d'outil est utile, et quel sont ces possibilités
 
 
 ### - Qu'est ce que GeoServer -
@@ -90,9 +90,9 @@ Pour un aperçu complet des possibilités je vous invite à consulter cette page
 [GeoServer](/geotribu_reborn/taxonomy/term/1)A propos de l'auteur: 
 
 
-![](https://cdn.geotribu.fr/images/internal/contributeurs/avdc.jpg?itok=f8cGqWT6) 
-Arnaud Vandecasteele 
-Fervent défenseur de l'Open Source, Arnaud s'est spécialisé dans le développement d'application cartographiques web. OpenLayers, PostGIS ou encore Django sont autant d'outils qu'il manipule au quotidien.   
+![](https://cdn.geotribu.fr/images/internal/contributeurs/avdc.jpg?itok=f8cGqWT6)
+Arnaud Vandecasteele
+Fervent défenseur de l'Open Source, Arnaud s'est spécialisé dans le développement d'application cartographiques web. OpenLayers, PostGIS ou encore Django sont autant d'outils qu'il manipule au quotidien.  
 S'il n'est pas en face de son ordinateur, vous le retrouverez un GPS à la main en train de cartographier pour OpenStreetMap, de faire voler son drone ou sur un tatami !
 
 
@@ -138,7 +138,7 @@ S'il n'est pas en face de son ordinateur, vous le retrouverez un GPS à la main 
 
 
 
-### 
+###
 
 
 Anaïs D - mar, 29/11/2011 - 5:51pm
@@ -169,7 +169,7 @@ Le lien vers l'article comparatif de Y.jacolin entre geoserver et mapserver n'es
 
 
 
-Rechercher 
+Rechercher
 
 
 

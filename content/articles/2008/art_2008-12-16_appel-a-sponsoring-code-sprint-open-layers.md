@@ -20,7 +20,7 @@ title: Appel à sponsoring - Code Sprint Open Layers
 
 ----
 
-![OpenLayers.trac_.png](/sites/default/files/Tuto/img/Blog/OpenLayers/OpenLayers.trac_.png)En prévision de la sortie prochaine de la version 3.0 d'OpenLayers un **appel à sponsoring** est lancé. 
+![OpenLayers.trac_.png](/sites/default/files/Tuto/img/Blog/OpenLayers/OpenLayers.trac_.png)En prévision de la sortie prochaine de la version 3.0 d'OpenLayers un **appel à sponsoring** est lancé.
 
 
 Il permettra aux développeurs d'OpenLayers basés dans le monde entier (Boston, Mexico, Denver...), de **retrouver la communauté francophone** pour un code sprint en mars 2009. Le but de ce dernier étant de regrouper et mobiliser durant un temps défini toutes les énergies disponibles pour faire avancer rapidement une librairie. **L'objectif de ce code sprint étant la préparation de la version 3.0 d'OpenLayers**.

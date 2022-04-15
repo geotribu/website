@@ -31,7 +31,7 @@ title: Afficher des graphiques sur une carte - OpenLayers/Artichow
 ---
 
 
-Une carte n'est qu'un des nombreux moyens existants (graphique, tableaux....) permettant l'affichage et la mise en forme de données. Pourtant la plupart des librairies cartographiques actuelles se résument à un affichage "simple" de données géographiques. Or la plus value d'une donnée est justement sa mise la possibilité de la faire parler, de dégager une tendance, bref de l'utiliser... 
+Une carte n'est qu'un des nombreux moyens existants (graphique, tableaux....) permettant l'affichage et la mise en forme de données. Pourtant la plupart des librairies cartographiques actuelles se résument à un affichage "simple" de données géographiques. Or la plus value d'une donnée est justement sa mise la possibilité de la faire parler, de dégager une tendance, bref de l'utiliser...
 
 
 C'est pourquoi après avoir consulté le [blog de Bjørn Sandvik](http://blog.thematicmapping.org/) et notamment son [article sur le couplage d'OpenLayers et google Chart](http://blog.thematicmapping.org/2008/04/openlayers-and-google-chart-mashup.html) je me suis lancé le projet d'arriver à un résultat similaire mais en utilisant uniquement des librairies OpenSource : [OpenLayers](http://openlayers.org/) et [Artichow](http://www.artichow.org/).
@@ -67,7 +67,7 @@ Concrétement, lors de l'appel de ma couche WFS j'ai spécifié dans mon protoco
 * Côté client : la partie JavaScript (openLayers)
 
 
-Comme souligné précédemment, c'est une propriété particulière de l'objet style,externalGraphic , qui nous permet d'afficher une image. La portion de script ci-dessous présente succintement la logique utilisée : 
+Comme souligné précédemment, c'est une propriété particulière de l'objet style,externalGraphic , qui nous permet d'afficher une image. La portion de script ci-dessous présente succintement la logique utilisée :
 
 
 `function featureStyle() {  
@@ -145,7 +145,7 @@ require\_once "../lib/php/Artichow/Pie.class.php";
 
 //NewGraph Obj  
 
-$graph = new Graph(300, 300); 
+$graph = new Graph(300, 300);
 
 
 //Value  
@@ -173,7 +173,7 @@ $plot->legend->hide(TRUE);
 
 $plot->label->hide(TRUE);  
 
-$plot->setStartAngle(90); 
+$plot->setStartAngle(90);
 
 
 //Background Transparent  

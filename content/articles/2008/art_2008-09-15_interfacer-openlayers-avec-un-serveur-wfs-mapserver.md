@@ -51,10 +51,10 @@ Ce tutoriel vous permettra d'appréhender au mieux la notion de serveur WFS puis
 Contrairement au format WMS (Web Map Service) orienté image (carte), le format WFS (Web Feature Service) permet au moyen d'une URL formatée d'interroger des serveurs cartographique afin de manipuler des objets géographiques.
 
 
-Ce protocole initié par l'[Open Géospatial Consortium (OGC)](http://www.opengeospatial.org/standards/wfs "OGC") est devenu un standard implémenté par la quasi-totalité des serveurs cartographiques. L'objectif du WFS est de permettre un accès en édition aux données géographiques afin de pouvoir les modifier, les créer ou les supprimer. 
+Ce protocole initié par l'[Open Géospatial Consortium (OGC)](http://www.opengeospatial.org/standards/wfs "OGC") est devenu un standard implémenté par la quasi-totalité des serveurs cartographiques. L'objectif du WFS est de permettre un accès en édition aux données géographiques afin de pouvoir les modifier, les créer ou les supprimer.
 
 
-L'interrogation d'un serveur WFS se fait via une URL envoyée au serveur à laquelle sont passés des arguments bien définis. Ces mots-clés une fois mis bout à bout forment un ensemble compréhensible par le serveur cartographique. 
+L'interrogation d'un serveur WFS se fait via une URL envoyée au serveur à laquelle sont passés des arguments bien définis. Ces mots-clés une fois mis bout à bout forment un ensemble compréhensible par le serveur cartographique.
 
 
 Pour un serveur cartographique le seul paramètre obligatoire est (associé à une opération de type GetFeature) :
@@ -63,7 +63,7 @@ Pour un serveur cartographique le seul paramètre obligatoire est (associé à u
 * **NAME** : nom de la couche à interroger.
 
 
-Mais il en existe d'autres telles que : 
+Mais il en existe d'autres telles que :
 
 
 * **BBOX** : Etendue des données
@@ -72,7 +72,7 @@ Mais il en existe d'autres telles que :
 * **SRS** : Projection utilisée
 
 
-Les différentes opérations qu'il est possible de réaliser sont les suivantes : 
+Les différentes opérations qu'il est possible de réaliser sont les suivantes :
 
 
 * **GetCapabilities** : Description des capacités du serveur WFS. Il indiquera les type de données ainsi que les opérations supportées sur chacune d'entre elles.
@@ -99,7 +99,7 @@ http: //localhost/cgi-bin/mapserv?map=/var/www/html/wms/africa.map&**typename**=
 **REQUEST**=GetFeature&**SRS**=EPSG%3A4326&**BBOX**=-67.851625,-85.0776875,107.929625,108.2816875
 
 
-Une application WFS est composée de 3 parties essentielles : le **serveur cartographique**, les **données** et le **client**. 
+Une application WFS est composée de 3 parties essentielles : le **serveur cartographique**, les **données** et le **client**.
 
 
 Un exemple de requête serait la suivante : une requête de type "GetFeature" est envoyée par le navigateur au serveur cartographique. Celui-ci, en fonction de sa configuration et des données vérifie la validité de cette requête en fonction de sa configuration et des données qu'il possède; ensuite, celui-ci retourne le ou les objets géographiques demandés.
@@ -121,7 +121,7 @@ Un exemple de requête serait la suivante : une requête de type "GetFeature" es
 Cette partie suppose que vous soyez déjà familier de l'environnement MapServer et que vous sachiez comment est constitué un MapFile. Dans le cas contraire, je vous invite à lire auparavant ce tutoriel : [Tutorial MapServer](http://geotribu.net/?q=node/5 "Tutorial MapServer").
 
 
-Pour spécifier à MapServer de fonctionner en tant que serveur WMS, il sera nécessaire d'ajouter différents attributs à votre MapFile. Les blocs à modifier sont les suivants : 
+Pour spécifier à MapServer de fonctionner en tant que serveur WMS, il sera nécessaire d'ajouter différents attributs à votre MapFile. Les blocs à modifier sont les suivants :
 
 
 * Un dans le bloc Web

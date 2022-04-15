@@ -118,7 +118,7 @@ title: 8. Superposer un fichier KML et enrichir les infobulles
 ---
 
 
-**Ce tutoriel décrit les étapes pour ajouter un fichier KML à la carte et pour afficher une mini-carte dans une infobulle. Les possiblités d'utilisation de superposition d'un fichier sont nombreuses - exemple [le projet Inde à vélo](http://www.sigma2008.org/projects)   
+**Ce tutoriel décrit les étapes pour ajouter un fichier KML à la carte et pour afficher une mini-carte dans une infobulle. Les possiblités d'utilisation de superposition d'un fichier sont nombreuses - exemple [le projet Inde à vélo](http://www.sigma2008.org/projects)  
 **Auteur : Fabien - fabien.goblet [ at ] gmail.com****
 
 
