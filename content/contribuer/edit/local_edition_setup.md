@@ -132,7 +132,7 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
     # mettre le dépôt local en conformité avec le dépôt central (notamment en supprimant les branches locales déjà supprimées sur GitHub)
     git remote prune origin
 
-    # supprimer les branches qui ont été fusionnées - sauf master
+    # supprimer les branches qui ont été fusionnées - sauf master et gh-pages
     git branch --merged | grep -i -v -E "master|gh-pages"| xargs git branch -d
 
     # supprimer les branches qui n'existent plus sur GitHub
@@ -146,7 +146,10 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
     # mettre le dépôt local en conformité avec le dépôt central (notamment en supprimant les branches locales déjà supprimées sur GitHub)
     git remote prune origin
 
-    # ouvre une fenêtre de sélection des branches à supprimer
+    # supprimer les branches qui ont été fusionnées - sauf master et gh-pages
+    git branch --merged | Select-String -Pattern '^(?!.*(master|gh-pages)).*$' | ForEach-Object { git branch -d $_.ToString().Trim() }
+
+    # ou en ouvrant une fenêtre de sélection des branches à supprimer
     git branch --format "%(refname:short)" --merged  | Out-GridView -PassThru | % { git branch -d $_ }
     ```
 
