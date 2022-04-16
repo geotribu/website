@@ -72,6 +72,7 @@ plugins:
         "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
         "GeoRDP/20161028.md": "rdp/2016/rdp_2016-10-14.md"
         "node/156.md": "articles/2009/art_2009-09-11_creer-son-propre-plan-de-ville-grace-a-maposmatic.md"
+        "articles/2009/articles/2009/art_2009-09-11.md": "articles/2009/art_2009-09-11_creer-son-propre-plan-de-ville-grace-a-maposmatic.md"
         "node/270.md": "articles/2010/art_2010-06-11.md"
         "node/284.md": "articles/2010/art_2010-09-23.md"
         "node/348.md": "rdp/2011/rdp_2011-02-25.md"
