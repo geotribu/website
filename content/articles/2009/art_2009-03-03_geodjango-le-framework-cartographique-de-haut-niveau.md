@@ -1,0 +1,67 @@
+---
+authors:
+- GeoTribu
+categories:
+- article
+date: 2009-03-03 10:20
+description: '...'
+image: ''
+license: default
+robots: index, follow
+tags: []
+title: GéoDjango LE framework cartographique de haut niveau
+---
+
+# GéoDjango LE framework cartographique de haut niveau
+
+
+:calendar: Date de publication initiale : 03 mars 2009
+
+
+----
+
+![Picture_1_bigger.png](/sites/default/files/Tuto/img/Blog/Django/Picture_1_bigger.png)Cette année et après avoir été bluffé par la quantité de programmes développés en **Python** je me suis décidé à apprendre ce langage. Naturellement, au lieu de ré-inventer la roue j'ai regardé les [frameworks](http://fr.wikipedia.org/wiki/Framework) existants. Je pense que je suis tombé sur LE FRAMEWORK, la killer application qui va me faire veiller tard durant ces prochains jours, [GeoDjango](http://geodjango.org/).
+
+
+
+Basé sur [Django](http://www.django-fr.org/), un **framework python** permettant le développement rapide de site internet, GeoDjango apporte un niveau d'abstraction supplémentaire en autorisant une **gestion complète de toutes les composantes spatiales** d'un projet Cartogaphique Web. Vous pourrez ainsi facilement depuis l'interface d'administration (qui se base entre autre sur la librairie OGR/GDAL) :
+
+
+* manipuler, consulter ou encore importer des données spatiales
+* Dialoguer dans les standards du Web Géogaphique (KML, GML, WKT, WKB, GeoRSS, and GeoJSON)
+* Reprojection, correction géométrique...
+
+
+![description_geodjango.png](/sites/default/files/Tuto/img/Blog/Django/description_geodjango.png)
+
+
+Pas encore convaincu? Sachez alors que GeoDjango possède également un **module de geo-syndication** publiant automatiquement vos données au format (GeoRSS, Atom Feeds ou KML), qu'il devrait prochainement **intégrer directement un moteur cartogaphique** (MapServer ou manik) ou encore qu'il est Multi-plateforme (Linux, Windows, Mac OS X) et multi-database (PostGIS, Oracle, and MySQL). Je vais arrêter là car une page entière ne serait pas suffisante pour lister toutes ses fonctionnalités, néanmoins dans la partie [documentation](http://geodjango.org/presentations/) vous trouverez toutes les informations nécessaires.
+
+
+Voici quelques exemples de sites réalisés avec Django :
+
+
+![image_site.png](/sites/default/files/Tuto/img/Blog/Django/image_site.png)
+
+
+Liens utiles :
+
+
+>> [Site internet GeoDjango](http://geodjango.org/)  
+
+>>  [Documentation de GeoDjango](http://geodjango.org/docs/)  
+
+>> [Présentation de GeoDjango](http://www.geowebguru.com/articles/99-overview-geodjango)  
+
+>> [On n'en parle sur NeoGeo Online](http://www.neogeo-online.net/blog/archives/tag/geodjango/)  
+
+>> [Et également sur GeoInWeb](http://www.geoinweb.com/2008/07/10/geodjangon-un-framework-web-gographique-session-de-la-confrence-where-20-2008-slection-n4/)
+
+
+
+
+----
+
+## Auteur
+
+--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"

@@ -1,0 +1,42 @@
+---
+authors:
+- GeoTribu
+categories:
+- article
+date: 2009-03-24 10:20
+description: '...'
+image: ''
+license: default
+robots: index, follow
+tags:
+- Geospatial Revolution Project
+title: Geospatial Revolution Project, une introduction SIG en vidéo
+---
+
+# Geospatial Revolution Project, une introduction SIG en vidéo
+
+
+:calendar: Date de publication initiale : 24 mars 2009
+
+
+----
+
+![world.png](/sites/default/files/Tuto/img/Blog/world.png)A l'heure où la question "**où suis-je**" devient aussi importante que "**qui suis-je**", il était important de replacer le SIG et les multiples applications qui découlent de cette technologie.
+
+
+En effet, pour beaucoup de personnes, le SIG se résume à ce que je nomme la cartographie du lon/lat ou à une géographie de marqueurs. Or le but avant tout des SIG est d'apporter,en mettant en relation sur un même espace de multiples critères d'analyse, une aide à la décision.
+
+
+C'est à cet objectif que s'est attelé "[Geospatial Revolution Project](http://geospatialrevolution.psu.edu/index.html)", je vous laisse découvrir la vidéo réalisée qui n'est qu'une rapide introduction à un plus long reportage qui devrait prochainement être disponible.
+
+
+![](http://geospatialrevolution.psu.edu/assets/images/asprs.png)
+
+
+
+
+----
+
+## Auteur
+
+--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
