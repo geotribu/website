@@ -42,7 +42,7 @@ La génération du plan se décompose en trois étapes :
 Cet outil, en plus d'être simple d'utilisation, offre un service des plus utiles tout en gardant un rendu cartographique de qualité. Il est possible également d'imaginer des évolutions futures, en créant par exemples des plans de villes touristiques (avec affichage de POIs remarquables) ou sportifs...
 
 !!! info
-    Le projet MapOSMatic semble s'être éteindre depuis 2017. Un fork, renommé MyOSMatic, reste actif et accessible sur :<https://print.get-map.org/>. Pour plus d'informations, voir [le wiki OSM](https://wiki.openstreetmap.org/wiki/FR:MapOSMatic).
+    Le projet MapOSMatic semble s'être éteint depuis 2017. Un fork, renommé MyOSMatic, reste actif et accessible sur :<https://print.get-map.org/>. Pour plus d'informations, voir [le wiki OSM](https://wiki.openstreetmap.org/wiki/FR:MapOSMatic).
 
 ----
 
