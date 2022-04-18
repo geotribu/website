@@ -102,7 +102,7 @@ Voilà qui ne suffit pas à satisfaire notre soif d'exhaustivité !
 Prenons notre courage à `0:n` mains (oui, je reste vague pour n'exclure personne, pas même un/e éventuel/le lecteur/ice manchot/e) et allons à la source : le code sur GitHub :scream_cat:.  
 L'occasion de démystifier ce qui se cache sous QGIS en se répétant ce que Napoléon disait toujours à ses troupes face aux cyber-attaques caractéristiques de la campagne de Russie :
 
-!!! quote "Napoléon - Cyber-campagne de Russie)"
+!!! quote "Napoléon - Cyber-campagne de Russie"
     N'ayez pas peur : les logiciels informatiques ne sont ni plus ni moins que des fichiers textes bien organisés !
 
 Hauts les coeurs ! Si c'est du texte, il doit bien y avoir des traces des mots-clés qui déclenchent les _Easter eggs_ !
