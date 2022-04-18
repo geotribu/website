@@ -25,11 +25,15 @@ tags:
 
 ## Introduction
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![œuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/œuf_globe.webp "œuf globe"){: .img-rdp-news-thumb }
 
 Tradition ~~séculaire~~ technique popularisée avec l'avènement du [Konami Code](https://fr.wikipedia.org/wiki/Code_Konami), les [_easter eggs_](https://fr.wikipedia.org/wiki/Easter_egg) (oeufs de Pâques en bon français) sont des fonctions cachées par des développeurs mutins dans les logiciels, y compris parmi les plus utilisés. Par exemple, sur la distribution Debian (et donc les distributions  de la famille Ubuntu) peuvent entrer `apt moo` :
 
 ```bash
+❯ apt --help
+apt 2.0.6 (amd64)
+[...]
+                                Cet APT a les « Super Cow Powers »
 ❯ apt moo
                  (__)
                  (oo)
@@ -40,7 +44,10 @@ Tradition ~~séculaire~~ technique popularisée avec l'avènement du [Konami Cod
 ..."Have you mooed today?"...
 ```
 
-Il y a même un site dédié à leur inventaire : <https://eeggs.com/>.
+Certaines entreprises comme Google (par exemple cette [chasse aux Pokémons intégrée dans Maps](/rdp/2014/rdp_2014-04-11/?h=pok%C3%A9#le-canular-habituel-du-1er-avril)) s'en sont fait une spécialité et il y a même un [site dédié à leur inventaire](https://eeggs.com/). Dans notre petit écosystème de géographes et géomaticiennes, [l'IGN se prend au jeu comme présenté par Jean-Marc Viglino en 2020](/articles/2020/2020-04-13_chasse_oeufs_paques_cartes_geoportail_minecraft/) ou encore [OSM Data](https://twitter.com/datagistips/status/1379303876747276293).
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 ### Et ailleurs... dans la cartographie par exemple
 
@@ -57,9 +64,6 @@ Mais comment les trouver à coup sûr ? Comment s'assurer de ne pas revenir bred
 Je vous livre ma stratégie de battue :rabbit: !
 
 <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/suOhOAVOQ6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
-{: align=middle }
 
 ### Les Easter eggs et la cartographie papier
 
