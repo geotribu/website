@@ -1,8 +1,11 @@
 ---
 title: "Les easter eggs de QGIS : chasser et être chassé"
-authors: ["Julien MOURA"]
-categories: ["article"]
-date: "2022-04-18 10:20"
+authors:
+    - Delphine MONTAGNE
+    - Julien MOURA
+categories:
+    - article
+date: "2022-04-18 14:20"
 description: "Les easter eggs de QGIS sont connus : contributors, dizzy, hackfests, bored, user groups... Mais comment les dénicher ? Et surtout comment en créer de nouveaux ?"
 image: "https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_316_easteregg_user_groups.png"
 license: default
@@ -14,22 +17,9 @@ tags:
     - QGIS
 ---
 
-# Les _easter eggs_ dans QGIS : chasser et être chassé
+# Quand QGIS nous régale d'_Easter eggs_
 
 :calendar: Date de publication initiale : 18 avril 2022
-
-<https://eeggs.com/tree/154.html>
-
-<https://halshs.archives-ouvertes.fr/halshs-02508252/document>
-
-## NOTES
-
-- préciser la "généalogie" si elle existe avec le jeu vidéo
-- créer du lien social ? appartenance à une commaunauté (réf à une culture commune) ? encourager la relecture du code (cache-cache) ?
-- oeuvre collective :
-    - ajouter sa marque perso ?
-    - être taquin anonyme ?
-- easter egg inédit
 
 ## Introduction
 
@@ -67,7 +57,7 @@ Je vous livre ma stratégie de battue :rabbit: !
 
 ![GRASS loupe](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/grass_mapset_search.svg "Planqué dans l'herbe"){: .img-rdp-news-thumb }
 
-La première tactique est le dogme de la passivité : il suffit d'attendre bien sagement qu'une information sorte sur un easter egg. Au temps des infox[^1], mieux vaut s'appuyer sur les sources officielles : les notes de version visuelles.
+La première tactique est le dogme de la passivité : il suffit d'attendre bien sagement qu'une information sorte sur un easter egg. Au temps des infox, mieux vaut s'appuyer sur les sources officielles : les notes de version visuelles.
 
 Véritable bijou de transparence et de vulgarisation des évolutions techniques d'un logiciel, ces _visual changelogs_ permettent également de faire des recherches à travers les âges de QGIS.
 
@@ -102,56 +92,6 @@ C'est fou la transparence, c'est beau l'open source :heart_eyes: !
 
 ----
 
-## Ajouter un easter egg
-
-![fff](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/plugin-new.svg){: .img-rdp-news-thumb }
-
-Maintenant que l'on sait où sont terrés les fonctions cachées _officielles_, comment résister à la tentation d'y ajouter le nôtre ? :innocent:
-
-```python
-
-
-# PyQGIS
-import PyQt5
-from qgis.core import QgsProjectMetadata, QgsProject
-from qgis.gui import QgsStatusBar
-from qgis.PyQt.QtWidgets import QLineEdit
-
-
-# fonction appelée quand la barre de coordonnées est modifiée
-def on_coords_changed(coords_line_edit: QLineEdit):
-    if coords_line_edit.text() == "geotribu":
-        print("Geotribu mode enabled")
-        coords_line_edit.setEchoMode(QLineEdit.EchoMode.PasswordEchoOnEdit)
-
-        current_project = QgsProject.instance()
-        current_project.setTitle("Geotribu Easter Egg")
-
-        # metadata
-        gt_md = QgsProjectMetadata()
-        gt_md.setAuthor("Geotribu")
-        gt_md.setLanguage("FRE")
-        current_project.setMetadata(gt_md)
-
-# on attrape la barre de statut de QGIS
-qgis_st = iface.mainWindow().statusBar()
-
-# on filtre la barre de statut pour ne garder le widget des coordonnées
-for wdgt in qgis_st.children()[1].children():
-    if wdgt.objectName() == "mCoordsEdit":
-        break
-
-# dans le widget, on ne garde que la ligne de saisie
-le_coords = wdgt.findChild(PyQt5.QtWidgets.QLineEdit)
-```
-
-Si vous voulez voir un exemple d'implémentation, j'ai caché un easter egg dans [notre plugin QTribu](/articles/2021/2021-04-01_qtribu_plugin_qgis_geotribu/) :wink:.
-
-----
-
 ## Auteur
 
 --8<-- "content/team/jmou.md"
-
-<!-- Hyperlinks reference -->
-[^1]: équivalent officiel de _fake news_. Source : [LégiFrance](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037460897).
