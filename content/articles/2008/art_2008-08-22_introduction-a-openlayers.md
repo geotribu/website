@@ -120,7 +120,7 @@ Il existe différents types de marqueurs mais pour des raisons de simplicité no
 ```html
 <script type="text/javascript">
     function init() {
-      var map, layer;     
+      var map, layer;  
       map = new OpenLayers.Map('map', {controls:[new OpenLayers.Control.MouseDefaults()]});
      //Caracteristiques de la carte
       var ol_wms = new OpenLayers.Layer.WMS( "OpenLayers WMS","http://labs.metacarta.com/wms/vmap0?", {layers: 'basic'});
