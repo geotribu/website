@@ -25,7 +25,7 @@ tags:
 
 ## Introduction
 
-![œuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/œuf_globe.webp "œuf globe"){: .img-rdp-news-thumb }
+![œuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/oeuf_globe.webp "œuf globe"){: .img-rdp-news-thumb }
 
 Tradition ~~séculaire~~ technique popularisée avec l'avènement du [Konami Code](https://fr.wikipedia.org/wiki/Code_Konami), les [_easter eggs_](https://fr.wikipedia.org/wiki/Easter_egg) (oeufs de Pâques en bon français) sont des fonctions cachées par des développeurs mutins dans les logiciels, y compris parmi les plus utilisés. Par exemple, sur la distribution Debian (et donc les distributions  de la famille Ubuntu) peuvent entrer `apt moo` :
 

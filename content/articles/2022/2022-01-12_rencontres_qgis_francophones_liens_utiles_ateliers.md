@@ -94,7 +94,7 @@ Au menu : du Git, du fichier `.ini` et du script Python.
 
 ### Les easter eggs de QGIS : chasser et être chassé
 
-![œuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/œuf_globe.webp "œuf globe"){: .img-rdp-news-thumb }
+![œuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/oeuf_globe.webp "œuf globe"){: .img-rdp-news-thumb }
 
 L'idée de cet atelier est d'abord de passer un bon moment tout en apprenant à chasser les fonctions cachées ([*easter eggs*](https://fr.wikipedia.org/wiki/Easter_egg)) dans QGIS et à en ajouter de nouvelles pour voir si les utilisateurs les débusquent.
 
