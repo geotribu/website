@@ -103,7 +103,7 @@ maClasse.prototype =  {
 	}
 	methodeB : function {
 		//code
-	}		
+	}
 }
 ```
 
