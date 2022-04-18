@@ -58,7 +58,7 @@ Revue à 4 mains des oeufs cartographiques et dans QGIS.
 
 ----
 
-## Les Easter eggs et la cartographie papier
+## Les _Easter eggs_ et la cartographie papier
 
 ![icône matière](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "matière"){: .img-rdp-news-thumb }
 
@@ -78,9 +78,9 @@ Incroyable projet collaboratif et créatif, QGIS a bien entendu lui aussi ses pr
 
 <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/suOhOAVOQ6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Ecrire le bon code au bon endroit : un moyen classique d'activer les Easter Eggs ! Mais derrière ces amusantes cartes bonus et les jeux taquins proposés, on note, aussi, un message plus fort. En localisant ses développeurs, QGIS rend discrètement hommage aux personnes, peu visibles, qui l'ont codé. De même, inventorier les hackfests, c'est garder trace de l'histoire des grands événements de code qui rythment le développement du logiciel.
+Ecrire le bon code au bon endroit : un moyen classique d'activer les _Easter eggs_ ! Mais derrière ces amusantes cartes bonus et les jeux taquins proposés, on note, aussi, un message plus fort. En localisant ses développeurs, QGIS rend discrètement hommage aux personnes, peu visibles, qui l'ont codé. De même, inventorier les hackfests, c'est garder trace de l'histoire des grands événements de code qui rythment le développement du logiciel.
 
-Ces Easter Eggs permettent de [mettre en avant un groupe discret](https://gispo.fi/en/blog/how-big-is-the-qgis-community/) ainsi que des événements communautaires de manière élégante. Ils offrent une reconnaissance au précieux travail réalisé. La manière est elle aussi discrète, connue uniquement des personnes qui connaissent bien le SIG, donc au moins sensibilisées. Preuve du consensus de cette action, alors qu'il est possible d'effacer ces fonctionnalités grâce au code libre, cela n'a pas été remis en cause. Un beau cadeau pour les personnes qui développent... Et qui savent chercher ces oeufs sur ce drôle d'oiseau qu'est QGIS.
+Ces _Easter eggs_ permettent de [mettre en avant un groupe discret](https://gispo.fi/en/blog/how-big-is-the-qgis-community/) ainsi que des événements communautaires de manière élégante. Ils offrent une reconnaissance au précieux travail réalisé. La manière est elle aussi discrète, connue uniquement des personnes qui connaissent bien le SIG, donc au moins sensibilisées. Preuve du consensus de cette action, alors qu'il est possible d'effacer ces fonctionnalités grâce au code libre, cela n'a pas été remis en cause. Un beau cadeau pour les personnes qui développent... Et qui savent chercher ces oeufs sur ce drôle d'oiseau qu'est QGIS.
 
 ----
 
@@ -99,7 +99,7 @@ Transformons-la donc en opportunité et dénichons-les tous ! De la documentatio
 
 ![GRASS loupe](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/grass_mapset_search.svg "Planqué dans l'herbe"){: .img-rdp-news-thumb }
 
-La première tactique est l'apanage de la passivité : il suffit d'attendre bien sagement qu'une information sorte sur un Easter egg. Au temps des infox, mieux vaut s'appuyer sur les sources officielles : les notes de version visuelles.
+La première tactique est l'apanage de la passivité : il suffit d'attendre bien sagement qu'une information sorte sur un _Easter eggs_. Au temps des infox, mieux vaut s'appuyer sur les sources officielles : les notes de version visuelles.
 
 Véritable bijou de transparence et de vulgarisation des évolutions techniques d'un logiciel, ces _visual changelogs_ permettent également de faire des recherches à travers les âges de QGIS.
 
