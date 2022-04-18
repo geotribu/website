@@ -137,8 +137,8 @@ C'est fou la transparence, c'est beau l'open source :heart_eyes: !
 
 ## Auteur/es
 
---8<-- "content/team/dmon.md"
-
 --8<-- "content/team/jmou.md"
+
+--8<-- "content/team/dmon.md"
 
 {% include "licenses/cc4_by-sa.md" %}
