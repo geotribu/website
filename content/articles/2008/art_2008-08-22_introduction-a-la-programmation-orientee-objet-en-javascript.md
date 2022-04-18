@@ -45,14 +45,14 @@ Dans notre second exemple nous étendrons l'objet array par une méthode permett
 ```javascript
 String.prototype.endsWith = function(suffix){
   /*
-    verifie si la fin de deux chaines de caractères sont égales				
+    verifie si la fin de deux chaines de caractères sont égales
   */
-  /* 	
+  /*
     lastIndexOf -> méthode est similaire à indexOf(), à la différence que la recherche se fait de droite à gauche :
       Retourne la position d'une sous-chaîne (lettre ou groupe de lettres) dans une chaîne de caractère
    */
   return this.length - suffix.length==this.indexOf(suffix);
-};		
+};
 ```
 
 Exemple :
@@ -64,16 +64,16 @@ Exemple :
 ```javascript
 Array.prototype.sum = function(){
   /*
-    fait la somme des valeurs d'un tableau		
+    fait la somme des valeurs d'un tableau
     et verifie que la valeur est bien un nombre
      Number() convertit un string en number
 
   */
   sum =0;
-  for(var x=0; arraySum.length>x; ++x){		
-    if (!isNaN(Number(this[x]))){		
+  for(var x=0; arraySum.length>x; ++x){
+    if (!isNaN(Number(this[x]))){
       sum = Number(this[x]) + sum;
-    }		
+    }
   }
   return sum;
 };

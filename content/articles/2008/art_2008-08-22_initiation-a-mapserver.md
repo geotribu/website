@@ -51,7 +51,7 @@ Le premier bloc va définir le MapFile d'une manière générale, un peu comme l
   UNITS METERS
   IMAGECOLOR 255 255 255
   SHAPEPATH "C:/ms4w/apps/cartoweb3/htdocs/phpMapScript/data"
-```   
+```  
 
 Ensuite vient le bloc Web, c'est lui qui va gérer où vont être entreposées les images générées par MapServer. Nous ne le verrons pas ici, mais c'est dans ce bloc qu'il va être possible de rajouter des éléments permettant d'enrichir l'interface générale de la page. Cela se passe grâce aux balises header et footer.
 
