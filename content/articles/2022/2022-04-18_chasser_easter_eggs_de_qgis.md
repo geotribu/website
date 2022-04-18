@@ -46,24 +46,13 @@ apt 2.0.6 (amd64)
 
 Certaines entreprises comme Google (par exemple cette [chasse aux Pokémons intégrée dans Maps](/rdp/2014/rdp_2014-04-11/?h=pok%C3%A9#le-canular-habituel-du-1er-avril)) s'en sont fait une spécialité et il y a même un [site dédié à leur inventaire](https://eeggs.com/). Dans notre petit écosystème de géographes et géomaticiennes, [l'IGN se prend au jeu comme présenté par Jean-Marc Viglino en 2020](/articles/2020/2020-04-13_chasse_oeufs_paques_cartes_geoportail_minecraft/) ou encore [OSM Data](https://twitter.com/datagistips/status/1379303876747276293).
 
+La carte est à l'évidence un media idéal pour mettre en jeu cette chasse aux oeufs qui revête d'autres aspects.  
+Revue à 4 mains des oeufs cartographiques et dans QGIS.
+
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
-### Et ailleurs... dans la cartographie par exemple
-
-C'est l'objet de la publication ["A la recherche des œufs de Pâques cartographiques" de Delphine Montagne](https://halshs.archives-ouvertes.fr/halshs-02508252/document) (magazine Carto, le monde en cartes, Areion, 2020, pp.54-55. halshs-02508252) :
-
-[![Easter egg cartographique - Annecy](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_ign_annecy_delphine-montagne.png "Easter Egg - Lac d'Annecy (IGN) - Delphine Montagne HAL/Carto"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_ign_annecy_delphine-montagne.png){: data-mediabox="lightbox-gallery" data-title="Easter Egg - Lac d'Annecy (IGN) - Delphine Montagne HAL/Carto"}
-
-### Dans QGIS
-
-Après avoir pris le temps d'essayer les [easter eggs listés sur Pasq.fr](https://pasq.fr/easter-egg-dans-qgis) et d'en faire [un tweet](https://twitter.com/geojulien/status/1378954806367297538) pour le lundi de Pâques, on m'indique qu'il en manque un : `user groups` ! Damned !
-
-Mais comment les trouver à coup sûr ? Comment s'assurer de ne pas revenir bredouille de la chasse aux géœufs de Pâques ?
-
-Je vous livre ma stratégie de battue :rabbit: !
-
-<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/suOhOAVOQ6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+----
 
 ### Les Easter eggs et la cartographie papier
 
