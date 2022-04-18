@@ -48,10 +48,10 @@ Tradition ~~séculaire~~ technique popularisée avec l'avènement du [Konami Cod
     ```
 <!-- markdownlint-enable MD046 -->
 
-Certaines entreprises comme Google s'en sont fait une spécialité ([carte 8 bits](/rdp/2012/rdp_2012-04-06/#jouez-via-google-maps) ou [chasse aux Pokémons intégrée dans Maps](/rdp/2014/rdp_2014-04-11/?h=pok%C3%A9#le-canular-habituel-du-1er-avril) par exemple) et il y a même un [site dédié à leur inventaire](https://eeggs.com/). Dans notre petit écosystème de géographes et géomaticiennes, [l'IGN se prend au jeu comme présenté par Jean-Marc Viglino en 2020](/articles/2020/2020-04-13_chasse_oeufs_paques_cartes_geoportail_minecraft/) ou encore [OSM Data](https://twitter.com/datagistips/status/1379303876747276293). Et dans un autre registre, [OpenStreetMap évoquait en 2008 son utilisation pour protéger ses données](https://blog.openstreetmap.org/2008/04/01/copyright-easter-eggs/) en créant de faux villages.
+Certaines entreprises comme Google s'en sont fait une spécialité ([carte 8 bits](/rdp/2012/rdp_2012-04-06/#jouez-via-google-maps) ou [chasse aux Pokémons intégrée dans Maps](/rdp/2014/rdp_2014-04-11/?h=pok%C3%A9#le-canular-habituel-du-1er-avril) par exemple) et il y a même un [site dédié à leur inventaire](https://eeggs.com/). Dans notre écosystème de géographes et géomaticiennes, [l'IGN se prend au jeu comme présenté par Jean-Marc Viglino en 2020](/articles/2020/2020-04-13_chasse_oeufs_paques_cartes_geoportail_minecraft/) ou encore [OSM Data](https://twitter.com/datagistips/status/1379303876747276293). Et dans un autre registre, [OpenStreetMap évoquait en 2008 son utilisation pour protéger ses données](https://blog.openstreetmap.org/2008/04/01/copyright-easter-eggs/) en créant de faux villages.
 
 La carte est à l'évidence un media idéal pour mettre en jeu cette chasse aux oeufs qui revête d'autres aspects.  
-Revue à 4 mains des oeufs cartographiques et dans QGIS.
+Revue à 4 mains des oeufs cartographiques, en particulier dans QGIS.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -93,7 +93,7 @@ Après avoir pris le temps d'essayer les [Easter eggs listés sur Pasq.fr](https
 Transformons-la donc en opportunité et dénichons-les tous ! De la documentation au code source, voyage au coeur du terrier de QGIS ! Je vous livre ma stratégie de battue :rabbit: !
 
 !!! info
-    Pour des raisons d'éthique évidentes, nous nous interdisons ici d'avoir recours à des armes de recherche massive qui pourraient mettre en péril le délicat équilibre des fonctions cachées. _Exit_ donc Google et consorts (quoique Qwant pourrait être toléré...)
+    Pour des raisons d'éthique évidentes, nous nous interdisons ici d'avoir recours à des armes de recherche massive qui pourraient mettre en péril le délicat équilibre des fonctions cachées. _Exit_ donc Google et consorts (quoique Qwant pourrait être toléré...).
 
 ### En planque
 
@@ -119,7 +119,7 @@ Prenons notre courage à `0:n` mains (oui, je reste vague pour n'exclure personn
 L'occasion de démystifier ce qui se cache sous QGIS en se répétant ce que Napoléon disait toujours à ses troupes face aux cyber-attaques caractéristiques de la campagne de Russie :
 
 !!! quote "Napoléon - Cyber-campagne de Russie"
-    N'ayez pas peur : les logiciels informatiques ne sont ni plus ni moins que des fichiers textes bien organisés !
+    N'ayez pas peur : les logiciels informatiques ne sont ni plus ni moins que des fichiers textes bien organisés et sacrément empilés !
 
 Hauts les coeurs ! Si c'est du texte, il doit bien y avoir des traces des mots-clés qui déclenchent les _Easter eggs_ !
 
