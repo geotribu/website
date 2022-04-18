@@ -25,7 +25,20 @@ tags:
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
-Tradition ~~séculaire~~ technique, devenue populaire depuis l'avènement du [Konami Code](https://fr.wikipedia.org/wiki/Code_Konami), les [_easter eggs_](https://fr.wikipedia.org/wiki/Easter_egg) sont des fonctions cachées par des développeurs mutins dans les logiciels (sur les Debian, entrer `apt moo`). Il y a même un site dédié à leur inventaire : <https://eeggs.com/>.
+Tradition ~~séculaire~~ technique popularisée avec l'avènement du [Konami Code](https://fr.wikipedia.org/wiki/Code_Konami), les [_easter eggs_](https://fr.wikipedia.org/wiki/Easter_egg) (oeufs de Pâques en bon français) sont des fonctions cachées par des développeurs mutins dans les logiciels, y compris parmi les plus utilisés. Par exemple, sur la distribution Debian (et donc les distributions  de la famille Ubuntu) peuvent entrer `apt moo` :
+
+```bash
+❯ apt moo
+                 (__)
+                 (oo)
+           /------\/
+          / |    ||  
+         *  /\---/\
+            ~~   ~~  
+..."Have you mooed today?"...
+```
+
+Il y a même un site dédié à leur inventaire : <https://eeggs.com/>.
 
 ### Et ailleurs... dans la cartographie par exemple
 
@@ -94,7 +107,8 @@ Voilà qui ne suffit pas à satisfaire notre soif d'exhaustivité !
 Prenons notre courage à `0:n` mains (oui, je reste vague pour n'exclure personne, pas même un/e éventuel/le lecteur/ice manchot/e) et allons à la source : le code sur GitHub :scream_cat:.  
 L'occasion de démystifier ce qui se cache sous QGIS en se répétant ce que Napoléon disait toujours à ses troupes face aux cyber-attaques caratcéristiques de la campagne de Russie :
 
-> N'ayez pas peur : les logiciels informatiques ne sont ni plus ni moins que des fichiers textes bien organisés !
+!!! quote "Napoléon - Cyber-campagne de Russie)
+    N'ayez pas peur : les logiciels informatiques ne sont ni plus ni moins que des fichiers textes bien organisés !
 
 Hauts les coeurs ! Si c'est du texte, il doit bien y avoir des traces des mots-clés qui déclenchent les _easter eggs_ !
 
