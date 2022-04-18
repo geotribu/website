@@ -89,7 +89,7 @@ Véritable bijou de transparence et de vulgarisation des évolutions techniques 
 
 Cherchons donc [_Easter egg_](https://www.qgis.org/en/search.html?q=easter+egg&check_keywords=yes&area=default) :
 
-![Changelog QGIS - Recherche Easter egg](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_changelogs_search_easter_egg.png "Changelog QGIS - Recherche Easter egg"){: .img-center loading=lazy }
+[![Changelog QGIS - Recherche Easter egg](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_changelogs_search_easter_egg.png "Changelog QGIS - Recherche Easter egg"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_changelogs_search_easter_egg.png){: data-mediabox="lightbox-gallery" data-title="Changelog QGIS - Recherche Easter egg"}
 
 Hum, cela nous mène uniquement à [celui apparu dans la 3.16](https://www.qgis.org/fr/site/forusers/visualchangelog316/index.html?highlight=fonction%20cach%C3%A9e#add-user-groups-easter-egg) et le moteur de recherche semble mal gérer les caractères spéciaux (espaces et accents), vu les résultats retournés par une [requête en français sur "fonction cachée"](https://www.qgis.org/fr/search.html?q=fonction+cach%C3%A9e).
 
@@ -109,7 +109,7 @@ Hauts les coeurs ! Si c'est du texte, il doit bien y avoir des traces des mots-c
 
 Une fois infiltré dans le _repository_ (là où les gens qui parlent couramment machine entreposent le code source), on peut lancer [une recherche bien sentie](https://github.com/qgis/QGIS/search?q=%22user+groups%22&type=code) dans la barre en haut à gauche :
 
-![Recherche dans le GitHub de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png "Rechercher dans le code de QGIS sur GitHub"){: .img-center loading=lazy }
+[![Recherche dans le GitHub de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png "Rechercher dans le code de QGIS sur GitHub"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png){: data-mediabox="lightbox-gallery" data-title="Rechercher dans le code de QGIS sur GitHub"}
 
 C'est donc dans la [fonction de validation des coordonnées que se terrent les fonctions cachées](https://github.com/qgis/QGIS/blob/760a436f4f52a02533140b3f24c0828f8fdbd071/src/app/qgsstatusbarcoordinateswidget.cpp#L113-L161) :
 
