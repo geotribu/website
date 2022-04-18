@@ -65,4 +65,4 @@ Et il faut appeler la fonction initialize() lors du chargement de la page :   La
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/toc_nav_ignored/snippets/authors/fgob.md"
+--8<-- "content/team/fgob.md"
