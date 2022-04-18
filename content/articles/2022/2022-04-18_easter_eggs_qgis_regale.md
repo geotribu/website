@@ -127,7 +127,11 @@ Une fois infiltré dans le _repository_ (là où les gens qui parlent couramment
 
 [![Recherche dans le GitHub de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png "Rechercher dans le code de QGIS sur GitHub"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png){: data-mediabox="lightbox-gallery" data-title="Rechercher dans le code de QGIS sur GitHub"}
 
-Bingo ! Au milieu de résultats mentionnant ArcGIS (non les références à Esri ne sont pas des _Easter egg_), en prenant en compte  on repère  Même si on y ne parle pas CPP C'est donc dans la [fonction de validation des coordonnées que se terrent les fonctions cachées](https://github.com/qgis/QGIS/blob/760a436f4f52a02533140b3f24c0828f8fdbd071/src/app/qgsstatusbarcoordinateswidget.cpp#L113-L161) :
+Bingo ! Au milieu de résultats mentionnant ArcGIS (non, les références à Esri ne sont pas des _Easter egg_), pas besoin d'avoir inventé le fil à couper l'eau chaude pour faire l'association entre `qgsstatusbarcoordinateswidget` et la barre de coordonnées en bas de la feneêtre QGIS, celle-la même où les _Easter eggs_ se déclenchent.
+
+Même si on ne pige rien à `class`, `include` ou autre `void`, en parcourant le fichier, on peut en déduire que c'est dans la [fonction de validation des coordonnées](https://github.com/qgis/QGIS/blob/7119976ece18a81f99e9d1c0a6ad1cf53bfcc3cd/src/app/qgsstatusbarcoordinateswidget.cpp#L113-L161) que se terrent les fonctions cachées :
+
+[![QGIS Easter eggs - QgsStatusBarCoordinatesWidget](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_easteregg_github_qgsstatusbarcoordinateswidget.png "QGIS Easter eggs - QgsStatusBarCoordinatesWidget"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_easteregg_github_qgsstatusbarcoordinateswidget.png){: data-mediabox="lightbox-gallery" data-title="QgsStatusBarCoordinatesWidget, le terrier des Easter eggs de QGIS !"}
 
 En poussant plus loin notre avantage, on peut même retrouver [quand et par qui le dernier _Easter egg_ a été proposé puis ajouté](https://github.com/qgis/QGIS/pull/38505) et au passage prendre connaissance du [tableau de suivi des groupes d'utilisateur/ices de QGIS dans le monde](https://docs.google.com/spreadsheets/d/1Wte5pfcpOeZ1bfBUn7KJuYzw31_rtKyGqciBPW3RXwg/edit#gid=678994363).
 
