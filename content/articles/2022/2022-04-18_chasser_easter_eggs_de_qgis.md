@@ -11,7 +11,9 @@ image: "https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_316_easteregg_use
 license: cc4_by-sa
 robots: index, follow
 tags:
+    - cartographie
     - easter egg
+    - jeux vidéo
     - PyQGIS
     - GitHub
     - QGIS
