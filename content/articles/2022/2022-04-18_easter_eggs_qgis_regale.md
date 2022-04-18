@@ -60,7 +60,7 @@ Revue à 4 mains des oeufs cartographiques et dans QGIS.
 
 ## Les _Easter eggs_ et la cartographie papier
 
-![icône matière](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "matière"){: .img-rdp-news-thumb }
+![icône Scan25](https://cdn.geotribu.fr/img/logos-icones/divers/scan25.jpg "Icône Scan25"){: .img-rdp-news-thumb }
 
 Les oeufs de Pâques se trouvent souvent dans un travail créatif et collectif. C'est le cas bien entendu des cartes papier, comme présenté dans un article publié en 2020 dans le magazine [_Carto_](https://halshs.archives-ouvertes.fr/halshs-02508252/document).
 
