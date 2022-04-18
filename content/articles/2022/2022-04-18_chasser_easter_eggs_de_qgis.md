@@ -31,7 +31,7 @@ Tradition ~~séculaire~~ technique, devenue populaire depuis l'avènement du [Ko
 
 C'est l'objet de la publication ["A la recherche des œufs de Pâques cartographiques" de Delphine Montagne](https://halshs.archives-ouvertes.fr/halshs-02508252/document) (magazine Carto, le monde en cartes, Areion, 2020, pp.54-55. halshs-02508252) :
 
-![Easter egg cartographique - Annecy](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_ign_annecy_delphine-montagne.png "Easter Egg - Lac d'Annecy (IGN) - Delphine Montagne HAL/Carto")
+[![Easter egg cartographique - Annecy](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_ign_annecy_delphine-montagne.png "Easter Egg - Lac d'Annecy (IGN) - Delphine Montagne HAL/Carto"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_ign_annecy_delphine-montagne.png){: data-mediabox="lightbox-gallery" data-title="Easter Egg - Lac d'Annecy (IGN) - Delphine Montagne HAL/Carto"}
 
 ### Dans QGIS
 
@@ -48,8 +48,10 @@ Je vous livre ma stratégie de battue :rabbit: !
 
 ### Les Easter eggs et la cartographie papier
 
-Les oeufs de Pâques se trouvent souvent dans un travail créatif et collectif. C'est le cas bien entendu des cartes papiers, comme présenté dans un article publié en 2020 dans le magazine [_Carto_](https://halshs.archives-ouvertes.fr/halshs-02508252/document).  
-![https://bigthink.com/wp-content/uploads/2014/07/18414377.jpg?fit=1200,675](https://bigthink.com/wp-content/uploads/2014/07/18414377.jpg?fit=1200,675)
+Les oeufs de Pâques se trouvent souvent dans un travail créatif et collectif. C'est le cas bien entendu des cartes papiers, comme présenté dans un article publié en 2020 dans le magazine [_Carto_](https://halshs.archives-ouvertes.fr/halshs-02508252/document).
+
+[![Easter egg - Elépahant carte](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_elephant.webp "Easter egg - Elépahant carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_elephant.webp){: data-mediabox="lightbox-gallery" data-title="Easter Egg - Eléphant dans une carte"}
+
 Nouvelle expression : [avoir un éléplant dans la ~~pièce~~](https://fr.wikipedia.org/wiki/Elephant_in_the_room) carte. Cherchez bien, il est ~~en haut à gauche~~ au nord-nord-ouest, formé par un jeu avec les courbes de niveaux entre les chiffres 24 et 25. Cet oeuf de Pâques a été relevé par [Big Think](https://bigthink.com/strange-maps/670-nil-how-to-hide-an-elephant-the-1923-gold-coast-survey/) (mais l'histoire ne dit pas si l'on peut trouver en ce point du Ghana des éléplants).
 
 ### Croquer les oeufs de Pâques de QGIS
