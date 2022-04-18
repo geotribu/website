@@ -46,6 +46,22 @@ Je vous livre ma stratégie de battue :rabbit: !
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
+### Les Easter eggs et la cartographie papier
+
+Les oeufs de Pâques se trouvent souvent dans un travail créatif et collectif. C'est le cas bien entendu des cartes papiers, comme présenté dans un article publié en 2020 dans le magazine [_Carto_](https://halshs.archives-ouvertes.fr/halshs-02508252/document).  
+![https://bigthink.com/wp-content/uploads/2014/07/18414377.jpg?fit=1200,675](https://bigthink.com/wp-content/uploads/2014/07/18414377.jpg?fit=1200,675)
+Nouvelle expression : [avoir un éléplant dans la ~~pièce~~](https://fr.wikipedia.org/wiki/Elephant_in_the_room) carte. Cherchez bien, il est ~~en haut à gauche~~ au nord-nord-ouest, formé par un jeu avec les courbes de niveaux entre les chiffres 24 et 25. Cet oeuf de Pâques a été relevé par [Big Think](https://bigthink.com/strange-maps/670-nil-how-to-hide-an-elephant-the-1923-gold-coast-survey/) (mais l'histoire ne dit pas si l'on peut trouver en ce point du Ghana des éléplants).
+
+### Croquer les oeufs de Pâques de QGIS
+
+Incroyable projet collaboratif et créatif, QGIS a bien entendu lui aussi ses propres oeufs de Pâques, soigneusement dissimulés comme il se doit :
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/suOhOAVOQ6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Ecrire le bon code au bon endroit : un moyen classique d'activer les Easter eggs ! Mais derrière ces amusantes cartes bonus et les jeux taquins proposés, on note, aussi, un message plus fort. En localisant ses développeurs, QGIS rend discrètement hommage aux personnes, peu visibles, qui l'ont codé. De même, inventorier les hackfests, c'est garder trace de l'histoire des grands événements de code qui rythment le développement du logiciel.
+
+Ces Easter Eggs permettent de [mettre en avant un groupe discret](https://planet293.rssing.com/chan-13166735/all_p42.html) ainsi que des événements communautaires de manière élégante. Ils offrent une reconnaissance au précieux travail réalisé. La manière est elle aussi discrète, connue uniquement des personnes qui connaissent bien le SIG, donc au moins sensibilisées. Preuve du consensus de cette action, alors qu'il est possible d'effacer ces fonctionnalités grâce au code libre, cela n'a pas été remis en cause. Un beau cadeau pour les personnes qui développent... Et qui savent chercher ces oeufs sur ce drôle d'oiseau qu'est QGIS.
+
 ----
 
 ## La battue
