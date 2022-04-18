@@ -8,7 +8,7 @@ categories:
 date: "2022-04-18 14:20"
 description: "Les easter eggs de QGIS sont connus : contributors, dizzy, hackfests, bored, user groups... Mais comment les dénicher ? Et surtout comment en créer de nouveaux ?"
 image: "https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_316_easteregg_user_groups.png"
-license: default
+license: cc4_by-sa
 robots: index, follow
 tags:
     - easter egg
@@ -127,3 +127,5 @@ C'est fou la transparence, c'est beau l'open source :heart_eyes: !
 ## Auteur
 
 --8<-- "content/team/jmou.md"
+
+{% include "licenses/cc4_by-sa.md" %}
