@@ -88,7 +88,7 @@ Ces _Easter eggs_ permettent de [mettre en avant un groupe discret](https://gisp
 
 Mais comment les trouver à coup sûr ? Comment s'assurer de ne pas revenir bredouille de la chasse aux géœufs de Pâques ?
 
-Après avoir pris le temps d'essayer les [Easter eggs listés sur Pasq.fr](https://pasq.fr/easter-egg-dans-qgis) et d'en faire [un tweet](https://twitter.com/geojulien/status/1378954806367297538) pour le lundi de Pâques (2020 oui, ce projet d'article a plus d'un an...), on m'indique qu'il en manque un : `user groups` ! Damned ! Quelle frustration de ne pas atteindre l'exhaustivité !
+Après avoir pris le temps d'essayer les [Easter eggs listés sur Pasq.fr](https://pasq.fr/easter-egg-dans-qgis) et d'en faire [un tweet](https://twitter.com/geojulien/status/1378954806367297538) pour le lundi de Pâques (2021 oui, ce projet d'article a plus d'un an...), on m'indique qu'il en manque un : `user groups` ! Damned ! Quelle frustration de ne pas atteindre l'exhaustivité !
 
 Transformons-la donc en opportunité et dénichons-les tous ! De la documentation au code source, voyage au coeur du terrier de QGIS ! Je vous livre ma stratégie de battue :rabbit: !
 
@@ -99,35 +99,35 @@ Transformons-la donc en opportunité et dénichons-les tous ! De la documentatio
 
 ![GRASS loupe](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/grass_mapset_search.svg "Planqué dans l'herbe"){: .img-rdp-news-thumb }
 
-La première tactique est l'apanage de la passivité : il suffit d'attendre bien sagement qu'une information sorte sur un _Easter eggs_. Au temps des infox, mieux vaut s'appuyer sur les sources officielles : les notes de version visuelles.
+La première tactique est l'apanage de la passivité : il suffit d'attendre bien sagement qu'une information sorte sur un _Easter eggs_. Au temps des infox, mieux vaut s'appuyer sur les sources officielles : les [notes de version visuelles](https://qgis.org/en/site/forusers/visualchangelogs.html).
 
-Véritable bijou de transparence et de vulgarisation des évolutions techniques d'un logiciel, ces _visual changelogs_ permettent également de faire des recherches à travers les âges de QGIS.
+Véritable bijou de transparence et de vulgarisation des évolutions techniques du logiciel, ces _visual changelogs_ permettent également de faire des recherches à travers les âges de QGIS.
 
 Cherchons donc [_Easter egg_](https://www.qgis.org/en/search.html?q=easter+egg&check_keywords=yes&area=default) :
 
 [![Changelog QGIS - Recherche Easter egg](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_changelogs_search_easter_egg.png "Changelog QGIS - Recherche Easter egg"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_changelogs_search_easter_egg.png){: data-mediabox="lightbox-gallery" data-title="Changelog QGIS - Recherche Easter egg"}
 
-Hum, cela nous mène uniquement à [celui apparu dans la 3.16](https://www.qgis.org/fr/site/forusers/visualchangelog316/index.html?highlight=fonction%20cach%C3%A9e#add-user-groups-easter-egg) et le moteur de recherche semble mal gérer les caractères spéciaux (espaces et accents), vu les résultats retournés par une [requête en français sur "fonction cachée"](https://www.qgis.org/fr/search.html?q=fonction+cach%C3%A9e).
+Hum, cela nous mène uniquement à [celui apparu dans la 3.16](https://www.qgis.org/fr/site/forusers/visualchangelog316/index.html?highlight=fonction%20cach%C3%A9e#add-user-groups-easter-egg) et le moteur de recherche semble mal gérer les caractères spéciaux, vu les résultats retournés par une [requête en français sur "fonction cachée"](https://www.qgis.org/fr/search.html?q=fonction+cach%C3%A9e).
 
-Voilà qui ne suffit pas à satisfaire notre soif d'exhaustivité !
+C'est un bon début mais voilà qui ne suffit toujours pas à satisfaire notre soif d'exhaustivité !
 
 ### Au coeur du terrier
 
 ![Octocat GitHub détective](https://octodex.github.com/images/inspectocat.jpg "Octocat GitHub détective"){: .img-rdp-news-thumb }
 
-Prenons notre courage à `0:n` mains (oui, je reste vague pour n'exclure personne, pas même un/e éventuel/le lecteur/ice manchot/e) et allons à la source : le code sur GitHub :scream_cat:.  
-L'occasion de démystifier ce qui se cache sous QGIS en se répétant ce que Napoléon disait toujours à ses troupes face aux cyber-attaques caractéristiques de la campagne de Russie :
+Prenons notre courage à `0:n` mains (oui, je reste vague pour n'exclure personne, pas même un/e éventuel/le lecteur/ice manchot/e) et allons à la source : le code sur GitHub. Mais... mais... c'est plein de code d'ingénieurs informaticiens :scream_cat:.  
+Allons, allons, c'est justement l'occasion de démystifier ce qui se cache sous QGIS en se répétant ce que Napoléon disait toujours à ses troupes face aux cyber-attaques caractéristiques de la campagne de Russie :
 
 !!! quote "Napoléon - Cyber-campagne de Russie"
     N'ayez pas peur : les logiciels informatiques ne sont ni plus ni moins que des fichiers textes bien organisés et sacrément empilés !
 
 Hauts les coeurs ! Si c'est du texte, il doit bien y avoir des traces des mots-clés qui déclenchent les _Easter eggs_ !
 
-Une fois infiltré dans le _repository_ (là où les gens qui parlent couramment machine entreposent le code source), on peut lancer [une recherche bien sentie](https://github.com/qgis/QGIS/search?q=%22user+groups%22&type=code) dans la barre en haut à gauche :
+Une fois infiltré dans le _repository_ (là où les gens qui parlent couramment machine entreposent le code source), on peut lancer [une recherche bien sentie sur l'un des mots-clés qui déclenche les _Easter eggs_](https://github.com/qgis/QGIS/search?q=%22user+groups%22&type=code) dans la barre en haut à gauche :
 
 [![Recherche dans le GitHub de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png "Rechercher dans le code de QGIS sur GitHub"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png){: data-mediabox="lightbox-gallery" data-title="Rechercher dans le code de QGIS sur GitHub"}
 
-C'est donc dans la [fonction de validation des coordonnées que se terrent les fonctions cachées](https://github.com/qgis/QGIS/blob/760a436f4f52a02533140b3f24c0828f8fdbd071/src/app/qgsstatusbarcoordinateswidget.cpp#L113-L161) :
+Bingo ! Au milieu de résultats mentionnant ArcGIS (non les références à Esri ne sont pas des _Easter egg_), en prenant en compte  on repère  Même si on y ne parle pas CPP C'est donc dans la [fonction de validation des coordonnées que se terrent les fonctions cachées](https://github.com/qgis/QGIS/blob/760a436f4f52a02533140b3f24c0828f8fdbd071/src/app/qgsstatusbarcoordinateswidget.cpp#L113-L161) :
 
 En poussant plus loin notre avantage, on peut même retrouver [quand et par qui le dernier _Easter egg_ a été proposé puis ajouté](https://github.com/qgis/QGIS/pull/38505) et au passage prendre connaissance du [tableau de suivi des groupes d'utilisateur/ices de QGIS dans le monde](https://docs.google.com/spreadsheets/d/1Wte5pfcpOeZ1bfBUn7KJuYzw31_rtKyGqciBPW3RXwg/edit#gid=678994363).
 
