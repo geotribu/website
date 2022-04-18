@@ -44,7 +44,7 @@ apt 2.0.6 (amd64)
 ..."Have you mooed today?"...
 ```
 
-Certaines entreprises comme Google (par exemple cette [chasse aux Pokémons intégrée dans Maps](/rdp/2014/rdp_2014-04-11/?h=pok%C3%A9#le-canular-habituel-du-1er-avril)) s'en sont fait une spécialité et il y a même un [site dédié à leur inventaire](https://eeggs.com/). Dans notre petit écosystème de géographes et géomaticiennes, [l'IGN se prend au jeu comme présenté par Jean-Marc Viglino en 2020](/articles/2020/2020-04-13_chasse_oeufs_paques_cartes_geoportail_minecraft/) ou encore [OSM Data](https://twitter.com/datagistips/status/1379303876747276293).
+Certaines entreprises comme Google s'en sont fait une spécialité ([carte 8 bits](/rdp/2012/rdp_2012-04-06/#jouez-via-google-maps) ou [chasse aux Pokémons intégrée dans Maps](/rdp/2014/rdp_2014-04-11/?h=pok%C3%A9#le-canular-habituel-du-1er-avril) par exemple) et il y a même un [site dédié à leur inventaire](https://eeggs.com/). Dans notre petit écosystème de géographes et géomaticiennes, [l'IGN se prend au jeu comme présenté par Jean-Marc Viglino en 2020](/articles/2020/2020-04-13_chasse_oeufs_paques_cartes_geoportail_minecraft/) ou encore [OSM Data](https://twitter.com/datagistips/status/1379303876747276293).
 
 La carte est à l'évidence un media idéal pour mettre en jeu cette chasse aux oeufs qui revête d'autres aspects.  
 Revue à 4 mains des oeufs cartographiques et dans QGIS.
@@ -119,7 +119,9 @@ C'est fou la transparence, c'est beau l'open source :heart_eyes: !
 
 ----
 
-## Auteur
+## Auteur/es
+
+--8<-- "content/team/dmon.md"
 
 --8<-- "content/team/jmou.md"
 
