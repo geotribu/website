@@ -172,7 +172,7 @@ theme:
 # Customization
 extra:
     provider: matomo
-    property: !ENV MKDOCS_MATOMO_URL_BASE
+    matomo_url: !ENV [MKDOCS_MATOMO_URL_BASE, "https://matomo.data-wax.com"]
   comments_url: https://comments.geotribu.fr # isso url
   url_contribuer: https://contribuer.geotribu.fr/
   consent:
