@@ -176,6 +176,8 @@ extra:
   comments_url: https://comments.geotribu.fr # isso url
   url_contribuer: https://contribuer.geotribu.fr/
   consent:
+    cookies:
+      analytics: Matomo
     title: Consentement 🍪
     actions:
       - accept
