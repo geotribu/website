@@ -32,7 +32,6 @@ Prenons un exemple concret :
 
 Nous utiliserons ici un point de vue géographique en se basant sur l'[API d'OpenLayers](http://dev.openlayers.org/releases/OpenLayers-2.6/doc/apidocs/files/OpenLayers/Layer-js.html "API OpenLayers") est son concept de couche. Partons donc de la Classe couche. Celle-ci est définie par un certains nombres d'attributs et méthodes comme son nom, son extention, la possibilité d'être affiché ou non... Cette Classe de base est la classe mère de laquelle vont hériter d'autres classes. Ces sous-classes sont donc forcément plus spécialisées à l'exemple de la Classe layers.WMS qui hérite de la classe grid qui hérite elle même de la classe httpRequest.
 
-
 ## Faire hériter une classe en JavaScript
 
 Bon passons sur les choses douloureuses immédiatement, **il n'existe pas de mécanismes spécifique JS permettant de réaliser des héritages de classes**. Partant de là, toutes les solutions proposées (éh oui il existe plusieurs manières de faire), bien que fonctionnelles, ne sont que des enrichissements (~~rustine~~).
@@ -78,8 +77,7 @@ Cette méthode souffre d'un handicap. En effet, si les méthodes de la classe m�
 
 Il existe deux manières, en se basant sur le prototype de la classe mère, de réaliser un héritage.
 
-1. Soit en remplacant la valeur du prototype de la classe fille par celui de la classe mère  
-
+1. Soit en remplaçant la valeur du prototype de la classe fille par celui de la classe mère  
 2. Ou alors en ajoutant les éléments de la classe mère dans celui de la classe fille
 
 Exemple 1 :
