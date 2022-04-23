@@ -32,13 +32,13 @@ NB : Nous utiliserons par la suite toujours la version courante de l'API afin d'
 
 Nous déclarons la fonction initialize() qui sera chargée lors du chargement de la page Web. Cette fonction contient les instructions afin de déclarer la carte Google Maps. La structure conditionnelle 'if then else' permet d'alerter l'utilisateur si son navigateur n'accepte pas le JavaScript grâce à la fonction GBrowserIsCompatible(). Nous déclarons ensuite l'objet map qui sera affiché dans le bloc dont l'identifiant sera 'map_canvas' de la page HTML :
 
-```
+```javascript
 var map = new GMap2(document.getElementById('map'));
 ```
 
 et définissons un centre et un niveau de zoom pour cet objet.
 
-```
+```javascript
 map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
 ```
 
