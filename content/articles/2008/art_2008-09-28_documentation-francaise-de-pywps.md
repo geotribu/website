@@ -292,7 +292,7 @@ Il est possible d'ajouter autant de fonctions et méthodes que vous le désirez.
 **Initialisation du processus buffer et configuration**
 
 ```python
-from pywps.Process.Process import WPSProcess                               
+from pywps.Process.Process import WPSProcess  
 class Process(WPSProcess):
   """Main process class"""
   def __init__(self):  
