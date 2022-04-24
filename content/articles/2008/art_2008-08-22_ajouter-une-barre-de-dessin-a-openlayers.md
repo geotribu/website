@@ -17,6 +17,8 @@ tags:
 
 ## Introduction
 
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+
 Ce tutorial vous permettra d'intégrer une barre d'outil de dessin à votre environnement cartographique offert par OpenLayers. Pour les novices dans ce domaine, je vous conseille auparavant la lecture de cet autre article décrivant de manière détaillée ce qu'est la librairie OpenLayers ainsi que son utilisation. L'exemple présenté ci-dessous s'inspire de Editing Toolbar Example présenté sur les pages d'exemples du site d'OpenLayers.
 
 ## Ajouter un barre d'outil dessin

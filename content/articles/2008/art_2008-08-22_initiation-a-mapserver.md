@@ -16,6 +16,8 @@ tags:
 
 ## Introduction
 
+![logo MapServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapserver.png "logo MapServer"){: .img-rdp-news-thumb }
+
 Dans ce tutoriel vous apprendrez dans un premier temps à construire votre MapFile, nous verrons ensuite comment afficher une carte grâce au langage PhpMapScript, enfin nous verrons les nouveautés apportées par la version de MapServer.
 
 - Qu'est ce que MapServer
@@ -44,13 +46,13 @@ Notre fichier map sera composé de quatre blocs principaux. Chacun d'entre eux o
 Le premier bloc va définir le MapFile d'une manière générale, un peu comme l'en-tête d'un fichier HTML. La balise MAP en haut du MapFile indique le début du fichier. Ensuite vient le nom du fichier, la taille de l'image qui va être générée, l'étendue géographique des données, l'unité utilisée et enfin le répertoire ou sont situées les données.
 
 ```
-  MAP
-  NAME "tutorial"
-  SIZE 1000 500
-  EXTENT 94.0000 -9.0048 131.000 4
-  UNITS METERS
-  IMAGECOLOR 255 255 255
-  SHAPEPATH "C:/ms4w/apps/cartoweb3/htdocs/phpMapScript/data"
+MAP
+NAME "tutorial"
+SIZE 1000 500
+EXTENT 94.0000 -9.0048 131.000 4
+UNITS METERS
+IMAGECOLOR 255 255 255
+SHAPEPATH "C:/ms4w/apps/cartoweb3/htdocs/phpMapScript/data"
 ```  
 
 Ensuite vient le bloc Web, c'est lui qui va gérer où vont être entreposées les images générées par MapServer. Nous ne le verrons pas ici, mais c'est dans ce bloc qu'il va être possible de rajouter des éléments permettant d'enrichir l'interface générale de la page. Cela se passe grâce aux balises header et footer.
@@ -77,7 +79,7 @@ END
 Pour finir nous allons maintenant lister les données à utiliser. Cela se passe grâce au bloc Layer. Il sera nécessaire de créer un bloc par données. A l'intérieur de ce bloc, il existe d'autres sous blocs tel que class, style, metadata etc.
 
 ```
-  LAYER
+LAYER
   NAME Admin_Indonesie
   STATUS ON
   CONNECTIONTYPE OGR

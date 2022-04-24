@@ -19,6 +19,8 @@ tags:
 
 ## Introduction
 
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+
 Les options sont parfois nécessaires pour personnaliser les affichages. Ici nous verrons comment ajouter des options aux polylignes pour simuler les vols d'une compagnie aérienne.
 
 ## Initialisation
@@ -35,7 +37,6 @@ var paris = new GLatLng(48.83993649400669,2.394869685885226);
 
 Puis les icônes - une image est définie par son pictogramme ainsi que par son ombre et un placement en pixel par rapport à sa taille :
 ```javascript
-
 var icon1 = new GIcon();
 icon1.image = "http://localhost/geotribu/icons/marker/green-dot.png";
 icon1.shadow = "http://localhost/geotribu/icons/marker/shadow-dot.png";
@@ -84,116 +85,116 @@ map.addOverlay(marker1)
 
 ```html
 <script type="text/javascript">
-      function initialize() {
-        if (GBrowserIsCompatible()) {
+function initialize() {
+  if (GBrowserIsCompatible()) {
 
-        var map = new GMap2(document.getElementById('map'));
-        map.setCenter(new GLatLng(25,25),3);
-        map.addControl(new GMapTypeControl());
-        map.removeMapType(G_HYBRID_MAP);
-        map.addMapType(G_PHYSICAL_MAP);
-        map.setMapType(G_PHYSICAL_MAP);
-        map.addControl(new GOverviewMapControl());
-        map.addControl(new GScaleControl());
-        map.addControl(new GLargeMapControl());
-        map.enableScrollWheelZoom();
+    var map = new GMap2(document.getElementById('map'));
+    map.setCenter(new GLatLng(25,25),3);
+    map.addControl(new GMapTypeControl());
+    map.removeMapType(G_HYBRID_MAP);
+    map.addMapType(G_PHYSICAL_MAP);
+    map.setMapType(G_PHYSICAL_MAP);
+    map.addControl(new GOverviewMapControl());
+    map.addControl(new GScaleControl());
+    map.addControl(new GLargeMapControl());
+    map.enableScrollWheelZoom();
 
-        var paris = new GLatLng(48.83993649400669,2.394869685885226);
-        var new_york = new GLatLng(40.75693702400098,-73.91742736554059);
-        var los_angeles = new GLatLng(34.17323498103654,-118.0456432876794);
-        var caracas = new GLatLng(10.94798332552648,-66.99024049901435);
-        var rio_de_janeiro = new GLatLng(-23.20937441010468,-43.26000741240553);
-        var le_cap = new GLatLng(-34.04665291730734,18.47867929466687);
-        var dar_es_salam = new GLatLng(-6.382733932167927,40.04620692951011);
-        var moscou = new GLatLng(54.37791252704001,38.60045811883745);
-        var pekin = new GLatLng(39.61254910089286,115.8052418816071);
-        var mumbay = new GLatLng(18.75725955119518,73.74377388950595);
-        var singapour = new GLatLng(0.7880273829689369,103.8933421772066);
-        var sidney = new GLatLng(-33.7027086456762,151.0772458659653);
-        var tokyo = new GLatLng(35.56859494331316,139.9253242874379);
+    var paris = new GLatLng(48.83993649400669,2.394869685885226);
+    var new_york = new GLatLng(40.75693702400098,-73.91742736554059);
+    var los_angeles = new GLatLng(34.17323498103654,-118.0456432876794);
+    var caracas = new GLatLng(10.94798332552648,-66.99024049901435);
+    var rio_de_janeiro = new GLatLng(-23.20937441010468,-43.26000741240553);
+    var le_cap = new GLatLng(-34.04665291730734,18.47867929466687);
+    var dar_es_salam = new GLatLng(-6.382733932167927,40.04620692951011);
+    var moscou = new GLatLng(54.37791252704001,38.60045811883745);
+    var pekin = new GLatLng(39.61254910089286,115.8052418816071);
+    var mumbay = new GLatLng(18.75725955119518,73.74377388950595);
+    var singapour = new GLatLng(0.7880273829689369,103.8933421772066);
+    var sidney = new GLatLng(-33.7027086456762,151.0772458659653);
+    var tokyo = new GLatLng(35.56859494331316,139.9253242874379);
 
-        var icon1 = new GIcon();
-        icon1.image = "http://maps.gstatic.com/mapfiles/markers2/marker_greenA.png";
-        icon1.shadow = "http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/shadow-dot.png";
-        icon1.iconSize = new GSize(20,34);
-        icon1.shadowSize = new GSize(38,34);
-        icon1.iconAnchor = new GPoint(10,32);
-        icon1.infoWindowAnchor = new GPoint(16,16);
+    var icon1 = new GIcon();
+    icon1.image = "http://maps.gstatic.com/mapfiles/markers2/marker_greenA.png";
+    icon1.shadow = "http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/shadow-dot.png";
+    icon1.iconSize = new GSize(20,34);
+    icon1.shadowSize = new GSize(38,34);
+    icon1.iconAnchor = new GPoint(10,32);
+    icon1.infoWindowAnchor = new GPoint(16,16);
 
-        var icon2 = new GIcon();
-        icon2.image = "http://maps.gstatic.com/mapfiles/markers2/marker_greenB.png";
-        icon2.shadow = "http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/shadow-dot.png";
-        icon2.iconSize = new GSize(20,34);
-        icon2.shadowSize = new GSize(38,34);
-        icon2.iconAnchor = new GPoint(10,32);
-        icon2.infoWindowAnchor = new GPoint(16,16);
+    var icon2 = new GIcon();
+    icon2.image = "http://maps.gstatic.com/mapfiles/markers2/marker_greenB.png";
+    icon2.shadow = "http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/shadow-dot.png";
+    icon2.iconSize = new GSize(20,34);
+    icon2.shadowSize = new GSize(38,34);
+    icon2.iconAnchor = new GPoint(10,32);
+    icon2.infoWindowAnchor = new GPoint(16,16);
 
-        var marker1 = new GMarker(paris,icon1);
-        var marker2 = new GMarker(new_york,icon2);
-        var marker3 = new GMarker(los_angeles,icon2);
-        var marker4 = new GMarker(caracas,icon2);
-        var marker5 = new GMarker(rio_de_janeiro,icon2);
-        var marker6 = new GMarker(le_cap,icon2);
-        var marker7 = new GMarker(dar_es_salam,icon2);
-        var marker8 = new GMarker(moscou,icon2);
-        var marker9 = new GMarker(pekin,icon2);
-        var marker10 = new GMarker(mumbay,icon2);
-        var marker11 = new GMarker(singapour,icon2);
-        var marker12 = new GMarker(sidney,icon2);
-        var marker13 = new GMarker(tokyo,icon2);
+    var marker1 = new GMarker(paris,icon1);
+    var marker2 = new GMarker(new_york,icon2);
+    var marker3 = new GMarker(los_angeles,icon2);
+    var marker4 = new GMarker(caracas,icon2);
+    var marker5 = new GMarker(rio_de_janeiro,icon2);
+    var marker6 = new GMarker(le_cap,icon2);
+    var marker7 = new GMarker(dar_es_salam,icon2);
+    var marker8 = new GMarker(moscou,icon2);
+    var marker9 = new GMarker(pekin,icon2);
+    var marker10 = new GMarker(mumbay,icon2);
+    var marker11 = new GMarker(singapour,icon2);
+    var marker12 = new GMarker(sidney,icon2);
+    var marker13 = new GMarker(tokyo,icon2);
 
-        var vol1 = [paris,new_york];
-        var vol2 = [paris,los_angeles];
-        var vol3 = [paris,caracas];
-        var vol4 = [paris,rio_de_janeiro];
-        var vol5 = [paris,le_cap];
-        var vol6 = [paris,dar_es_salam];
-        var vol7 = [paris,moscou];
-        var vol8 = [paris,pekin];
-        var vol9 = [paris,mumbay];
-        var vol10 = [paris,singapour];
-        var vol11 = [paris,sidney];
-        var vol12 = [paris,tokyo];
+    var vol1 = [paris,new_york];
+    var vol2 = [paris,los_angeles];
+    var vol3 = [paris,caracas];
+    var vol4 = [paris,rio_de_janeiro];
+    var vol5 = [paris,le_cap];
+    var vol6 = [paris,dar_es_salam];
+    var vol7 = [paris,moscou];
+    var vol8 = [paris,pekin];
+    var vol9 = [paris,mumbay];
+    var vol10 = [paris,singapour];
+    var vol11 = [paris,sidney];
+    var vol12 = [paris,tokyo];
 
-        var polyOptions = {geodesic:true};
-        map.addOverlay(new GPolyline(vol1, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol2, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol3, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol4, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol5, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol6, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol7, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol8, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol9, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol10, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol11, "#ff0000", 2.5, 0.5, polyOptions));
-        map.addOverlay(new GPolyline(vol12, "#ff0000", 2.5, 0.5, polyOptions));
+    var polyOptions = {geodesic:true};
+    map.addOverlay(new GPolyline(vol1, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol2, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol3, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol4, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol5, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol6, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol7, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol8, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol9, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol10, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol11, "#ff0000", 2.5, 0.5, polyOptions));
+    map.addOverlay(new GPolyline(vol12, "#ff0000", 2.5, 0.5, polyOptions));
 
-        map.addOverlay(marker1);
-        map.addOverlay(marker2);
-        map.addOverlay(marker3);
-        map.addOverlay(marker4);
-        map.addOverlay(marker5);
-        map.addOverlay(marker6);
-        map.addOverlay(marker7);
-        map.addOverlay(marker8);
-        map.addOverlay(marker9);
-        map.addOverlay(marker10);
-        map.addOverlay(marker11);
-        map.addOverlay(marker12);
-        map.addOverlay(marker13);
+    map.addOverlay(marker1);
+    map.addOverlay(marker2);
+    map.addOverlay(marker3);
+    map.addOverlay(marker4);
+    map.addOverlay(marker5);
+    map.addOverlay(marker6);
+    map.addOverlay(marker7);
+    map.addOverlay(marker8);
+    map.addOverlay(marker9);
+    map.addOverlay(marker10);
+    map.addOverlay(marker11);
+    map.addOverlay(marker12);
+    map.addOverlay(marker13);
 
-      }
-      else{
-        alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
-      }
-     }
-    </script>
+  }
+  else{
+    alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
+  }
+}
+</script>
 ```
 
 ## Démonstration
 
-<iframe src="http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/tuto5.html" height="350px" width="550px"></iframe>
+<iframe src="http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/tuto5.html" height="350px" width="100%"></iframe>
 
 ## Remarques
 

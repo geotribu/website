@@ -16,6 +16,8 @@ tags:
 
 ## Introduction
 
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+
 Google propose une version simplifiée de l'API Google Maps : l'[API Google Maps Static](http://code.google.com/intl/fr/apis/maps/documentation/staticmaps/). Cette API est destinée aux développeurs qui ne veulent pas utiliser l'API standard ou pour les développements qui ne nécessitent pas de déplacement dans la carte, de changement de zoom ou de changement de vue.  
 
 ## Carte simple
@@ -38,7 +40,7 @@ L'ajout d'un marqueur sur la carte se fait de la façon suivante :
 
 Qui produit cette carte :
 
-![Carte Google](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&zoom=15&size=400x400&markers=43.57691664771851,1.402451992034912,bluem&AIzaSyCKQink6p5B6ifZ6-vfg0ZneqBp08dWLTk "Carte Google")
+[![Carte Google](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&zoom=15&size=400x400&markers=43.57691664771851,1.402451992034912,bluem&AIzaSyCKQink6p5B6ifZ6-vfg0ZneqBp08dWLTk "Carte Google"){: .img-center loading=lazy }](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&zoom=15&size=400x400&markers=43.57691664771851,1.402451992034912,bluem&AIzaSyCKQink6p5B6ifZ6-vfg0ZneqBp08dWLTk "Carte Google"){: data-mediabox="gallery-lightbox" data-title="Carte Google"}
 
 L'attribut 'marker' permet d'ajouter un marqueurs sur la carte, il prend comme valeur les coordonnées du marqueur ainsi que le cas échéant la couleur du marqueur suivi de la letter 'm' pour lettre un M dans le marqueur.  
 
@@ -52,7 +54,7 @@ Exemple d'une carte centrée sur Toulouse, de taille 640 x 640, de 1° de hauteu
 
 Qui donne la carte ci-dessous :
 
-![Carte Google](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&span=1,1&size=640x640&key=AIzaSyCKQink6p5B6ifZ6-vfg0ZneqBp08dWLTk "Carte Google")
+[![Carte Google](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&span=1,1&size=640x640&key=AIzaSyCKQink6p5B6ifZ6-vfg0ZneqBp08dWLTk "Carte Google"){: .img-center loading=lazy }](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&span=1,1&size=640x640&key=AIzaSyCKQink6p5B6ifZ6-vfg0ZneqBp08dWLTk "Carte Google"){: data-mediabox="gallery-lightbox" data-title="Carte Google"}
 
 ## Conclusion
 

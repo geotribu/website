@@ -19,7 +19,9 @@ tags:
 
 ## Introduction
 
-Suite au [tutoriel d'introduction](http://www.geotribu.net/node/12/) sur l'API Google Maps, il devient nécessaire d'enrichir un peu la carte de boutons de contrôle et de sélecteurs de vue. Nous verrons ici comment utiliser les méthodes de l'API Google Maps pour étoffer la carte.
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+
+Suite au [tutoriel d'introduction](/articles/2008/2008-08-22_1-introduction-a-l-api-google-maps/) sur l'API Google Maps, il devient nécessaire d'enrichir un peu la carte de boutons de contrôle et de sélecteurs de vue. Nous verrons ici comment utiliser les méthodes de l'API Google Maps pour étoffer la carte.
 
 ## Initialisation
 
@@ -82,24 +84,24 @@ map.enableScrollWheelZoom();
 
 ```html
 <script type="text/javascript">
-      function initialize() {
-        if (GBrowserIsCompatible()) {
-          var map = new GMap2(document.getElementById('map'));
-          map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
-          map.addControl(new GMapTypeControl());
-          map.removeMapType(G_HYBRID_MAP);
-          map.addMapType(G_PHYSICAL_MAP);
-          map.setMapType(G_PHYSICAL_MAP);
-          map.addControl(new GOverviewMapControl());
-          map.addControl(new GScaleControl());
-          map.addControl(new GLargeMapControl());
-          map.enableScrollWheelZoom();
-        }
-        else{
-          alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
-        }
-      }
-    </script>
+function initialize() {
+  if (GBrowserIsCompatible()) {
+    var map = new GMap2(document.getElementById('map'));
+    map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
+    map.addControl(new GMapTypeControl());
+    map.removeMapType(G_HYBRID_MAP);
+    map.addMapType(G_PHYSICAL_MAP);
+    map.setMapType(G_PHYSICAL_MAP);
+    map.addControl(new GOverviewMapControl());
+    map.addControl(new GScaleControl());
+    map.addControl(new GLargeMapControl());
+    map.enableScrollWheelZoom();
+  }
+  else{
+    alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
+  }
+}
+</script>
 ```
 
 ## Démonstration

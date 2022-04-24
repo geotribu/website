@@ -18,6 +18,8 @@ tags:
 
 ## Introduction
 
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+
 Ce tutorial vous permettra d'appréhender au mieux la notion de serveur WMS puis de le mettre en application ensuite au moyen de deux exemples concrets en se basant sur MapServer et GéoServer. L'affichage sera ensuite géré par OpenLayers.
 
 - Qu'est-ce que la norme WMS et comment elle fonctionne
@@ -92,7 +94,7 @@ Nous devons tout d'abord spécifier le début de l'URL, ensuite nous lui passons
 
 ```
  // Layer GeoServer
- Alea_volcanisme = new OpenLayers.Layer.WMS&#40;
+ Alea_volcanisme = new OpenLayers.Layer.WMS(
   "Risque Sismique - Untiled", "http://server_path:8080/geoserver/wms,
   {
    srs: 'EPSG:4326',
@@ -111,7 +113,7 @@ Nous devons tout d'abord spécifier le début de l'URL, ensuite nous lui passons
 
 ```
  // Layer MapServer
- Alea_volcanisme = new OpenLayers.Layer.WMS&#40;
+ Alea_volcanisme = new OpenLayers.Layer.WMS(
   "Volcanisme", "http://localhost/cgi-bin/mapserv?map=path_To_MapFile/mFile.map&",
   {
    srs: 'EPSG:4326',

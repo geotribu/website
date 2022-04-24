@@ -14,6 +14,10 @@ tags:
 
 :calendar: Date de publication initiale : 22 août 2008
 
+## Introduction
+
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+
 Ce tutorial est un aperçu rapide des possibilités d'OpenLayers. Il vous permettra de comprendre globalement le fonctionnement de cette bibliothèque Javascript OpenSource tournée vers la cartographie.
 
 - Intégration d'OpenLayers

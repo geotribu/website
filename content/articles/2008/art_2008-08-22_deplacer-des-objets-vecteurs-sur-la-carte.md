@@ -17,8 +17,9 @@ tags:
 
 ## Introduction
 
-Ce tutorial est la suite logique de "[Ajout d'une barre d'outil dessin à OpenLayers](http://ks356007.kimsufi.com/arno/geotribu/?q=node/26)". En effet, nous allons étudier les différentes interactions possibles avec les objets de type vectors. Il s'appuie en grande partie de ressources disponibles sur le net, et notamment : [OpenLayers Drag Feature](http://www.openlayers.org/dev/examples/drag-feature.html).
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
 
+Ce tutorial est la suite logique de "[Ajout d'une barre d'outil dessin à OpenLayers](http://ks356007.kimsufi.com/arno/geotribu/?q=node/26)". En effet, nous allons étudier les différentes interactions possibles avec les objets de type vectors. Il s'appuie en grande partie de ressources disponibles sur le net, et notamment : [OpenLayers Drag Feature](http://www.openlayers.org/dev/examples/drag-feature.html).
 
 ## Déplacer des objets sur la carte
 
@@ -83,22 +84,22 @@ Il suffit ensuite de définir un style à à notre nouvelle outil DragFeature qu
 En effet en fonction que l'outil soit actif ou inactif, OpenLayers ajoute ItemInactive ou ItemActive , ce qui donne :
 
 ```html
-     <style type="text/css">
-        #map {
-        width: 512px;
-        height: 350px;
-        border: 1px solid gray;
-      }
+<style type="text/css">
+#map {
+  width: 512px;
+  height: 350px;
+  border: 1px solid gray;
+}
 
-     .olControlDraggFeatureItemActive {
-        background-image:url("Chemin_vers_Image/drag_on.png");
-        background-repeat: no-repeat;
-     }
-     .olControlDraggFeatureItemInactive {
-        background-image:url("Chemin_vers_Image/drag_off.png");
-        background-repeat: no-repeat;
-     }
-      </style>
+.olControlDraggFeatureItemActive {
+  background-image:url("Chemin_vers_Image/drag_on.png");
+  background-repeat: no-repeat;
+}
+.olControlDraggFeatureItemInactive {
+  background-image:url("Chemin_vers_Image/drag_off.png");
+  background-repeat: no-repeat;
+}
+</style>
 ```
 
 Les deux blocs de code présentés ci-dessus sont visibles sur l'exemple suivant :

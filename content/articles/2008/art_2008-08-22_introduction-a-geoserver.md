@@ -18,6 +18,8 @@ tags:
 
 ## Introduction
 
+![logo GeoServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo GeoServer"){: .img-rdp-news-thumb }
+
 Cette introduction sur GeoServer se décompose en 3 parties. Après avoir retracé l'historique de celui-ci, nous nous attacherons à savoir pour qui ce genre d'outil est utile, et quel sont ces possibilités
 
 ## Qu'est ce que GeoServer

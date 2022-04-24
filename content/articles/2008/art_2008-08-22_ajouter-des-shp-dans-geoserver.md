@@ -17,6 +17,8 @@ tags:
 
 ## Introduction
 
+![logo GeoServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo GeoServer"){: .img-rdp-news-thumb }
+
 Nous apprendrons ici comment ajouter des données de type SHP (esri) dans GeoServer. Il est nécéssaire que vous ayez auparavant GeoServer d'installé et que vous l'ayez démarré.
 
 Ce tutorial s'inspire en grande partie de celui proposé sur le site de GeoServer intitulé User Tutorial ShapeFile. Pour les personnes désireuses d'approfondir leurs connaissance, je ne saurais que vous conseiller d'aller y jeter un oeil.

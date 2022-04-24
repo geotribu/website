@@ -21,6 +21,8 @@ tags:
 
 ## Introduction
 
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+
 De la même manière que le troisième tutoriel sur l'affichage d'un marqueur, il est possible de définir et d'afficher une polyligne sur la carte.
 
 ## Initialisation
@@ -69,43 +71,43 @@ map.addOverlay(poly);
 
 ```html
 <script type="text/javascript">
-      function initialize() {
-        if (GBrowserIsCompatible()) {
-          var map = new GMap2(document.getElementById('map'));
-          map.setCenter(new GLatLng(43.57769664771851, 1.402821992034912),16);
-          map.addControl(new GMapTypeControl());
-          map.removeMapType(G_HYBRID_MAP);
-          map.addMapType(G_PHYSICAL_MAP);
-          map.setMapType(G_SATELLITE_MAP);
-          map.addControl(new GOverviewMapControl());
-          map.addControl(new GScaleControl());
-          map.addControl(new GLargeMapControl());
-          map.enableScrollWheelZoom();
-          var points = [ new GLatLng(43.57776102358721,1.403797022247275),
-                         new GLatLng(43.57774203677786,1.402996671914309),
-                         new GLatLng(43.57770841326447,1.402996671901832),
-                         new GLatLng(43.57769313342543,1.402998782088943),
-                         new GLatLng(43.57767174734567,1.403007224111022),
-                         new GLatLng(43.57781081938519,1.402984013893814),
-                         new GLatLng(43.57776634571197,1.402916553930126),
-                         new GLatLng(43.57775256036395,1.402897600993683),
-                         new GLatLng(43.57773724611339,1.402872341766638),
-                         new GLatLng(43.577723523068,1.402899724384128),
-                         new GLatLng(43.57772504884841,1.402897617553464),
-                         new GLatLng(43.57772047329792,1.402906044132763),
-                         new GLatLng(43.57771286432422,1.402927106716888),
-                         new GLatLng(43.57769459159984,1.402956602400224),
-                         new GLatLng(43.57769612259359,1.402958710172129),
-                         new GLatLng(43.57770981869092,1.402931318866109),
-                         new GLatLng(43.57767479573649,1.403000892396264)];
-          var poly = new GPolyline(points);
-          map.addOverlay(poly);
-        }
-        else{
-          alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
-        }
-      }
-    </script>
+function initialize() {
+  if (GBrowserIsCompatible()) {
+    var map = new GMap2(document.getElementById('map'));
+    map.setCenter(new GLatLng(43.57769664771851, 1.402821992034912),16);
+    map.addControl(new GMapTypeControl());
+    map.removeMapType(G_HYBRID_MAP);
+    map.addMapType(G_PHYSICAL_MAP);
+    map.setMapType(G_SATELLITE_MAP);
+    map.addControl(new GOverviewMapControl());
+    map.addControl(new GScaleControl());
+    map.addControl(new GLargeMapControl());
+    map.enableScrollWheelZoom();
+    var points = [ new GLatLng(43.57776102358721,1.403797022247275),
+      new GLatLng(43.57774203677786,1.402996671914309),
+      new GLatLng(43.57770841326447,1.402996671901832),
+      new GLatLng(43.57769313342543,1.402998782088943),
+      new GLatLng(43.57767174734567,1.403007224111022),
+      new GLatLng(43.57781081938519,1.402984013893814),
+      new GLatLng(43.57776634571197,1.402916553930126),
+      new GLatLng(43.57775256036395,1.402897600993683),
+      new GLatLng(43.57773724611339,1.402872341766638),
+      new GLatLng(43.577723523068,1.402899724384128),
+      new GLatLng(43.57772504884841,1.402897617553464),
+      new GLatLng(43.57772047329792,1.402906044132763),
+      new GLatLng(43.57771286432422,1.402927106716888),
+      new GLatLng(43.57769459159984,1.402956602400224),
+      new GLatLng(43.57769612259359,1.402958710172129),
+      new GLatLng(43.57770981869092,1.402931318866109),
+      new GLatLng(43.57767479573649,1.403000892396264)];
+      var poly = new GPolyline(points);
+      map.addOverlay(poly);
+    }
+    else{
+      alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
+    }
+  }
+</script>
 ```
 ## Démonstration
 
