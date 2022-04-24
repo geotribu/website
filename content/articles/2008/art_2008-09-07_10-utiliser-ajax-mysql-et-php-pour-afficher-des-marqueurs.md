@@ -1,6 +1,6 @@
 ---
 authors:
-- Fabien Goblet
+    - Fabien Goblet
 categories:
 - article
 date: 2008-09-07 10:20

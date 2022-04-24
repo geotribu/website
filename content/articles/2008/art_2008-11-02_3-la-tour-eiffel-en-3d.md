@@ -1,6 +1,6 @@
 ---
 authors:
-- Fabien Goblet
+    - Fabien Goblet
 categories:
 - article
 date: 2008-11-02 10:20
@@ -17,49 +17,27 @@ title: 3. La Tour Eiffel en 3D
 
 # 3. La Tour Eiffel en 3D
 
-
 :calendar: Date de publication initiale : 02 novembre 2008
-
 
 ----
 
-
-
-
-
 ### Introduction
 
-
-
-
 ---
-
 
 Il est possible d'afficher les couches 'bâtiments' présentes dans Google Earth dans l'API et donc dans sa propre page Internet.  
 
 Nous verrons ici comment afficher la tour Eiffel et comment définir par défaut les paramètres de vue.  
 
-
-
 ### Initialisation
 
-
-
-
 ---
-
 
 Reprendre le globe du [tutoriel n°2](http://www.geotribu.net/node/53).  
 
-
-
 ### Processus
 
-
-
-
 ---
-
 
 Ajouter le contrôle de la navigation - en mode automatique :  
 
@@ -81,21 +59,14 @@ Et activons le mode 'Bâtiments en 3D' - les mêmes que dans e logiciel Google E
 
 `ge.getLayerRoot().enableLayerById(ge.LAYER_BUILDINGS, true);`  
 
-
-
 ### Code complet
 
-
-
-
 ---
-
 
 `[Google Earth] 2. Ajoutons quelques contrôles
 
 html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
-
 
 google.load("earth", "1");
 var ge = null;
@@ -116,51 +87,27 @@ ge.getView().setAbstractView(eiffel);
 ge.getLayerRoot().enableLayerById(ge.LAYER\_BUILDINGS, true);
 }`  
 
-
-
 ### Démonstration
 
-
-
-
 ---
-
-
-
-
-
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Earth_tuto3.html)
 
-
 ### Remarques
 
-
-
-
 ---
-
 
 Les bâtiments en France sont encore peu nombreux, mais il y a en aura de plus en plus.
 L'API - <http://code.google.com/apis/earth/documentation/reference/index.html> - est à mettre en relation avec les informations de référence des objets KML - <http://code.google.com/apis/kml/documentation/kmlreference.html> .
 
-
 ### Conclusion
 
-
-
-
 ---
-
 
 Il est possible d'afficher les couches présentes dans Google Earth.
 On peut déclarer une caméra, et agir dessus.
 
-
 **Auteur : Fabien - fabien.goblet [ at ] gmail.com**
-
-
-
 
 ----
 

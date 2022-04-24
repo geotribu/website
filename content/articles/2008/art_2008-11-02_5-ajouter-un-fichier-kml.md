@@ -1,6 +1,6 @@
 ---
 authors:
-- Fabien Goblet
+    - Fabien Goblet
 categories:
 - article
 date: 2008-11-02 10:20
@@ -16,37 +16,32 @@ title: 5. Ajouter un fichier KML
 
 # 5. Ajouter un fichier KML
 
-
 :calendar: Date de publication initiale : 02 novembre 2008
-
 
 ----
 
 **Prérequis :**
-
 
 1. tutoriaux :
 1. [1. Introduction à l'API Google Earth](arno/geotribu/?q=node/49)
 2. [2. Ajoutons quelques contrôles](arno/geotribu/?q=node/53)
 3. [4. Marqueurs et événements](arno/geotribu/?q=node/55)
 2. connaissances
+
 * notions de HTML, notions de JavaScript, notions d'algorithmique
+
 3. liens
+
 * <http://code.google.com/apis/earth/documentation/reference/index.html>
 
-
 **Niveau :** Intermédiaire
-
 
 **Code :**  
 
 `[Google Earth] 5. Ajouter un fichier KML`
 
-
-
 html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
-
 
 google.load("earth", "1");
 var ge = null;
@@ -137,21 +132,7 @@ google.earth.fetchKml(ge, kmlUrl, finished);
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 **Processus :**
-
 
 1. Reprendre la carte du tutoriel sur les marqueurs et les événements : <http://www.geotribu.net/?q=node/55>
 2. Définir une fonction qui vérifie la validité du fichier KML :  
@@ -176,18 +157,12 @@ ge.getFeatures().appendChild(object);
 
 `google.earth.fetchKml(ge, kmlUrl, finished);`
 
-
 **Résultat :**
-
-
-
-
-
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Earth_tuto5.html)
 **Remarques :**
-* Ajouter un fichier KML est très simple. Il suffit de déclarer le fichier, vérifier qu'il soit bien formé, et l'ajouter à la carte.
 
+* Ajouter un fichier KML est très simple. Il suffit de déclarer le fichier, vérifier qu'il soit bien formé, et l'ajouter à la carte.
 
 **Conclusion :**
 
@@ -195,7 +170,6 @@ Si le fichier KML est mal formé, la fonction finished() renverra NULL et donc l
 Cette vérification est nécessaire pour éviter de faire 'planter' la carte.
 
 **Auteur : Fabien - fabien.goblet [ at ] gmail.com**
-
 
 ----
 

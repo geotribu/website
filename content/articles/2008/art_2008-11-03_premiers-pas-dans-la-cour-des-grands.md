@@ -1,6 +1,6 @@
 ---
 authors:
-- GeoTribu
+    - GeoTribu
 categories:
 - article
 date: 2008-11-03 10:20
@@ -14,23 +14,17 @@ title: Premiers pas dans la cour des grands
 
 # Premiers pas dans la cour des grands
 
-
 :calendar: Date de publication initiale : 03 novembre 2008
-
 
 ----
 
 J'ai longtemps été réticent à l'idée de me plonger dans l'univers des blogs qui étaient pour moi réservés à tous ces ados pré-pubères (je ne critique pas je suis passé par là).
 
-
 Mais, le fait est qu'après avoir passé de longues heures sur la toile (comprenez le Web ;) , j'ai pu croiser un certain nombre de personnalités du monde de la géomatique dont les avis et commentaires étaient véhiculés par ce mode de diffusion. J'ai donc appris à mon grand étonnement qu'un blog pouvait être sérieux.
-
 
 Il est vrai que cela permet au contraire des tutoriaux de pouvoir plus facilement suivre l'actualité. C'est donc pourquoi toute l'équipe (bon ok c'est un peu présomptueux pour les deux apôtres du SIG que nous sommes fabien et moi) déclarons officiellement le Blog de Géotribu ouvert.
 
-
 En cadeau (~~bonux~~) mes principales sources d'informations dans le vaste (~~wild~~) univers de l'internet :
-
 
 * [ReLucBlog](http://3liz.com/blog/rldhont/index.php/)
 * [Neogeo](http://www.neogeo-online.net/)
@@ -42,9 +36,6 @@ En cadeau (~~bonux~~) mes principales sources d'informations dans le vaste (~~wi
 * [Baliz Geospatial](http://media.baliz-geospatial.com/)
 * [Google XXL](http://googlexxl.blogspot.com/)
 * [GeoInWeb](http://www.geoinweb.com/)
-
-
-
 
 ----
 

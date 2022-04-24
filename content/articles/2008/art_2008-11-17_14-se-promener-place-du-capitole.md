@@ -1,6 +1,6 @@
 ---
 authors:
-- Fabien Goblet
+    - Fabien Goblet
 categories:
 - article
 date: 2008-11-17 10:20
@@ -16,35 +16,19 @@ title: 14. Se promener place du Capitole
 
 # 14. Se promener place du Capitole
 
-
 :calendar: Date de publication initiale : 17 novembre 2008
-
 
 ----
 
-
-
-
-
 ### Introduction
 
-
-
-
 ---
-
 
 Il est possible grâce à l'API Google Maps de naviguer virtuellement dans les rues, nous verrons ici comment implanter cette fonctionnalité.  
 
-
-
 ### Créer un panorama
 
-
-
-
 ---
-
 
 Construire un panorama en lui indiquant son emplacement :  
 
@@ -82,35 +66,17 @@ return;
 
 Définir l'emplacement de la carte :  
 
-
-
-
-
 ### Code complet
-
-
-
 
 ---
 
-
 `-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
-
-
-
-
-
-
 
 [Google Maps] 14. Se promener place du Capitole  
 
-
-
 html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
-#pano { width:100%; height:100%; }
-
-
+# pano { width:100%; height:100%; }
 
 function initialize() {
 if (GBrowserIsCompatible()) {
@@ -132,51 +98,27 @@ return;
 }
 }`  
 
-
-
 ### Démonstration
 
-
-
-
 ---
-
-
-
-
-
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto14.html)
 
-
 ### Remarques
 
-
-
-
 ---
-
 
 Un panorama StreetView est une image cliquable, 'zoomable' et avec lequel on peut se diriger vers les images mitoyennes.
 L'application est en Flash, ce qui permet la navigation 'demi-sphérique' dans la photographie.
 
-
 ### Conclusion
 
-
-
-
 ---
-
 
 Les panoramas de StreetView sont facilement exploitables grâce à l'API.
 Il faut maintenant coupler la couche des photos sur la carte - <http://geotribu.net/node/65> - et les photographies.
 
-
 **Auteur : Fabien - fabien.goblet [ at ] gmail.com**
-
-
-
 
 ----
 

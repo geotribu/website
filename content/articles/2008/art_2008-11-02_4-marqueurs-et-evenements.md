@@ -1,6 +1,6 @@
 ---
 authors:
-- Fabien Goblet
+    - Fabien Goblet
 categories:
 - article
 date: 2008-11-02 10:20
@@ -16,47 +16,25 @@ title: 4. Marqueurs et événements
 
 # 4. Marqueurs et événements
 
-
 :calendar: Date de publication initiale : 02 novembre 2008
-
 
 ----
 
-
-
-
-
 ### Introduction
 
-
-
-
 ---
-
 
 Il est possible à l'instar de l'API Google Maps de créer des marqueurs sur la carte et gérer des événements avec cette API.  
 
-
-
 ### Initialisation
 
-
-
-
 ---
-
 
 Reprendre le globe du [deuxième tutoriel](http://www.geotribu.net/node/53).  
 
-
-
 ### Processus
 
-
-
-
 ---
-
 
 Ajouter le contrôle de la navigation - en mode automatique :  
 
@@ -81,7 +59,6 @@ iconNormal = ge.createStyle('styleIconNormal');
 
 iconNormal.getIconStyle().setIcon(normal);
 
-
 highlight = ge.createIcon('');  
 
 highlight.setHref('http://maps.google.com/mapfiles/kml/shapes/square.png');  
@@ -89,7 +66,6 @@ highlight.setHref('http://maps.google.com/mapfiles/kml/shapes/square.png');
 iconHighlight = ge.createStyle('styleIconHighlight');  
 
 iconHighlight.getIconStyle().setIcon(highlight);
-
 
 map.setNormalStyleUrl('#styleIconNormal');  
 
@@ -134,21 +110,14 @@ ge.setBalloon(balloon);
 
 });`  
 
-
-
 ### Code complet
 
-
-
-
 ---
-
 
 `[Google Earth] 4. Marqueurs et événements
 
 html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
-
 
 google.load("earth", "1");
 var ge = null;
@@ -227,51 +196,27 @@ camera.set(43.6,1.44949866510018,2860,ge.ALTITUDE\_RELATIVE\_TO\_GROUND,190,75,1
 ge.getView().setAbstractView(camera);
 }`  
 
-
-
 ### Démonstration
 
-
-
-
 ---
-
-
-
-
-
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Earth_tuto4.html)
 
-
 ### Remarques
 
-
-
-
 ---
-
 
 La méthode event.preventDefault(); permet de s'affranchir des événements proposés par défaut par l'API. Ici la création d'un marqueur et de la définition de son nom - object.setName('nom') - instanciait déjà une ouverture d'infobulle lors d'un clic sur le marqueur. On surcharge donc cette propriété.
 Il est possible d'utiliser la classe GEHtmlStringBalloon à la place de la classe GEHtmlDivBalloon utilisée ici.
 
-
 ### Conclusion
 
-
-
-
 ---
-
 
 De la même manière que l'API Google Maps, il est possible de créer des marqueurs, de modifier leurs icônes et de créer des événements lors d'un clic à la souris.
 La gallerie de démonstration - <http://code.google.com/apis/earth/documentation/demogallery.html> - et l'API Reference - <http://code.google.com/apis/earth/documentation/reference/> - sont nécessaires pour bien comprendre les éléments mis en jeu.
 
-
 **Auteur : Fabien - fabien.goblet [ at ] gmail.com**
-
-
-
 
 ----
 
