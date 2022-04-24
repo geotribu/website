@@ -2,7 +2,7 @@
 authors:
     - Arnaud Vandecasteele
 categories:
-- article
+    - article
 date: 2008-10-29 10:20
 description: '...'
 image: ''

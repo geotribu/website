@@ -2,7 +2,7 @@
 authors:
     - Fabien Goblet
 categories:
-- article
+    - article
 date: 2008-10-28 10:20
 description: '...'
 image: ''

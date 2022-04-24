@@ -2,7 +2,7 @@
 authors:
     - GeoTribu
 categories:
-- article
+    - article
 date: 2008-11-05 10:20
 description: '...'
 image: ''
