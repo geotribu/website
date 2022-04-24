@@ -81,7 +81,7 @@ OpenLayers.MarkerLabel = OpenLayers.Class(OpenLayers.Marker, {
   },
 
   onmouseout: function (evt) {  
-    //code    
+    //code  
   },
 
   setLabel: function (label) {  
@@ -93,11 +93,11 @@ OpenLayers.MarkerLabel = OpenLayers.Class(OpenLayers.Marker, {
   },
 
   getTextSize: function(labelSize) {  
-    //code    
+    //code  
   },
 
   getLabelVisibility: function () {  
-    //code    
+    //code  
   },
 
   CLASS\_NAME: "OpenLayers.MarkerLabel"  
