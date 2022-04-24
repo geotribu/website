@@ -9,8 +9,8 @@ image: ''
 license: default
 robots: index, follow
 tags:
-- Google Earth
-- KML
+    - Google Earth
+    - KML
 title: 5. Ajouter un fichier KML
 ---
 

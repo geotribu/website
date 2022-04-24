@@ -9,8 +9,8 @@ image: ''
 license: default
 robots: index, follow
 tags:
-- Google Earth
-- marqueurs
+    - Google Earth
+    - marqueurs
 title: 4. Marqueurs et événements
 ---
 

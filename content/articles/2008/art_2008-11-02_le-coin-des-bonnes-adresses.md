@@ -9,10 +9,10 @@ image: ''
 license: default
 robots: index, follow
 tags:
-- OpenLayers
-- Google Earth
-- Google Maps
-- MapServer
+    - OpenLayers
+    - Google Earth
+    - Google Maps
+    - MapServer
 title: Le coin des bonnes adresses
 ---
 

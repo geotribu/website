@@ -9,9 +9,9 @@ image: ''
 license: default
 robots: index, follow
 tags:
-- OpenLayers
-- graphique
-- artichow
+    - OpenLayers
+    - graphique
+    - artichow
 title: Afficher des graphiques sur une carte - OpenLayers/Artichow
 ---
 

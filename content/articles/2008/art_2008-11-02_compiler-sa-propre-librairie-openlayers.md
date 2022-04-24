@@ -9,8 +9,8 @@ image: ''
 license: default
 robots: index, follow
 tags:
-- OpenLayers
-- compilation
+    - OpenLayers
+    - compilation
 title: Compiler sa propre librairie OpenLayers
 ---
 

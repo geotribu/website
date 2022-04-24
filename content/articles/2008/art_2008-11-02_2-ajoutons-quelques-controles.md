@@ -9,8 +9,8 @@ image: ''
 license: default
 robots: index, follow
 tags:
-- Google Earth
-- contrôles
+    - Google Earth
+    - contrôles
 title: 2. Ajoutons quelques contrôles
 ---
 

@@ -9,9 +9,9 @@ image: ''
 license: default
 robots: index, follow
 tags:
-- Google Earth
-- 3D
-- tour eiffel
+    - Google Earth
+    - 3D
+    - tour eiffel
 title: 3. La Tour Eiffel en 3D
 ---
 

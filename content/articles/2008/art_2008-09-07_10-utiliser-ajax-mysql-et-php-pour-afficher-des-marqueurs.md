@@ -9,11 +9,11 @@ image: ''
 license: default
 robots: index, follow
 tags:
-- Google Maps
-- marqueurs
-- mysql
-- Ajax
-- PHP
+    - Google Maps
+    - marqueurs
+    - mysql
+    - Ajax
+    - PHP
 title: 10. Utiliser Ajax, MySQL et PHP pour afficher des marqueurs
 ---
 

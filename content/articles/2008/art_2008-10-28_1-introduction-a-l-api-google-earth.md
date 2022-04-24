@@ -3,14 +3,14 @@ authors:
     - Fabien Goblet
 categories:
     - article
+    - tutoriel
 date: 2008-10-28 10:20
 description: ""
 image: ''
 license: default
 robots: index, follow
 tags:
-- tutoriel
-- Google Earth
+    - Google Earth
 title: 1. Introduction à l'API Google Earth
 ---
 
