@@ -37,7 +37,7 @@ Un SLD est un fichier XML contenant une liste de balises définie. On y retrouve
         <Name>world</Name>
         <UserStyle>
             <Title>A style for World Population</Title>
-            <FeatureTypeStyle>                
+            <FeatureTypeStyle>  
 		<PolygonSymbolizer>
 			<Fill>
 				<CssParameter name="fill">#FF7171</CssParameter>
