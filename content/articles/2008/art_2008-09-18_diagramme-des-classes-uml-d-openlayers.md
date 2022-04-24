@@ -1,38 +1,29 @@
 ---
+title: "Diagramme des classes (UML) d'OpenLayers"
 authors:
-- Arnaud Vandecasteele
+    - Arnaud Vandecasteele
 categories:
-- article
+    - article
 date: 2008-09-18 10:20
-description: '...'
-image: ''
-license: default
-robots: index, follow
+description: "Diagramme des classes (UML) d'OpenLayers"
 tags:
-- OpenLayers
-- diagramme
-- UML
-title: Diagramme des classes (UML) d'OpenLayers
+    - OpenLayers
+    - diagramme
+    - UML
 ---
 
 # Diagramme des classes (UML) d'OpenLayers
 
-
 :calendar: Date de publication initiale : 18 septembre 2008
 
-
-----
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
 
 Merci à Emanuel Schütze pour ce [diagramme des classes de la librairie OpenLayers](http://trac.openlayers.org/attachment/wiki/UML/ClassDiagram_OL2.7RC2-20080916.pdf?format=raw "diagramme des classes de la librairie OpenLayers") (2.7).
 
-
-![ClassDiagram_OL2.7RC2-20080916.png](/sites/default/files/Tuto/img/OpenLayers/ClassDiagram_OL2.7RC2-20080916.png)
-
-
-
+[![Diagramme des classes (UML) d'OpenLayers](/sites/default/files/Tuto/img/OpenLayers/ClassDiagram_OL2.7RC2-20080916.png) "Diagramme des classes (UML) d'OpenLayers"){: .img-center loading=lazy }](/sites/default/files/Tuto/img/OpenLayers/ClassDiagram_OL2.7RC2-20080916.png "Diagramme des classes (UML) d'OpenLayers"){: data-mediabox="gallery-lightbox" data-title="Diagramme des classes (UML) d'OpenLayers"}
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/avdc.md"

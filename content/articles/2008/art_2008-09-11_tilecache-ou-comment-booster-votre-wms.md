@@ -240,6 +240,6 @@ A noter, que pour les personnes utilisant GéoServer il existe un équivalent no
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/avdc.md"
