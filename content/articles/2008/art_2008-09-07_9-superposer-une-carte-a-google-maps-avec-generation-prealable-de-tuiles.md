@@ -18,6 +18,8 @@ tags:
 
 ## Introduction
 
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+
 Le but de ce tutoriel est de montrer la possibilité de superposer ses propres fonds cartographiques à la carte Google Maps. Pour ceci, il est d'abord nécessaire de 'construire' les tuiles pour ensuite les afficher sur la carte.  
 
 ## Génération des tuiles
@@ -105,6 +107,7 @@ map.enableScrollWheelZoom();
 ### Code complet
 
 ```javascript
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 html { overflow:hidden; height:100%; }
 body { height:100%; margin:0; }
