@@ -1,16 +1,13 @@
 ---
+title: "Documentation française de PyWPS"
 authors:
-- Arnaud
+    - Arnaud Vandecasteele
 categories:
-- article
+    - article
 date: 2008-09-28 10:20
-description: '...'
-image: ''
-license: default
-robots: index, follow
+description: "Documentation française de PyWPS"
 tags:
-- PyWPS
-title: Documentation française de PyWPS
+    - PyWPS
 ---
 
 # Documentation française de PyWPS
