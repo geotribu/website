@@ -4,7 +4,7 @@ authors:
 categories:
     - article
 date: 2008-12-15 10:20
-description: '...'
+description: ""
 image: ''
 license: default
 robots: index, follow
