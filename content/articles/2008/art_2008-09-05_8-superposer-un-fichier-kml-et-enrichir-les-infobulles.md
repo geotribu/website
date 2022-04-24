@@ -45,7 +45,7 @@ Créons tout d'abord un marqueur et ajoutons-le à la carte :  `var marker1 = ne
 
 <iframe src="http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto8.html" height="350px" width="100%"></iframe>
 
-**[Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto8.html)**
+[Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto8.html)
 
 
 ## Remarques
