@@ -21,7 +21,7 @@ Mais, le fait est qu'après avoir passé de longues heures sur la toile (compren
 
 Il est vrai que cela permet, au contraire des tutoriaux, de pouvoir plus facilement suivre l'actualité. C'est donc pourquoi toute l'équipe (bon ok c'est un peu présomptueux pour les deux apôtres du SIG que nous sommes Fabien et moi) déclarons officiellement le Blog de Géotribu ouvert :partying_face:.
 
-En cadeau (bonux) mes principales sources d'informations dans le vaste (*and wild*) univers de l'internet :
+En cadeau (~~bonux~~) mes principales sources d'informations dans le vaste (~~and wild~~) univers de l'internet :
 
 * [ReLucBlog](http://3liz.com/blog/rldhont/index.php/)
 * [Neogeo](http://www.neogeo-online.net/)

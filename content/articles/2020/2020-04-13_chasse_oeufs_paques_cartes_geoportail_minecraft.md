@@ -9,12 +9,10 @@ description: "😷 Confiné chez soi ? Alors embarquez pour une chasse aux œufs
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/oeufs_paques_cartes/easter_egg_geoportail_search_oeuf.png"
 license: default
 tags:
-  - easter eggs
+  - Easter eggs
   - Géoportail
   - IGN
   - Minecraft
-  - œufs
-  - Pâques
   - toponymie
 ---
 

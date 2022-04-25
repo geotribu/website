@@ -12,7 +12,7 @@ license: default
 tags:
     - configuration
     - déploiement
-    - OSGEO4W
+    - OSGeo4W
     - personnalisation
     - QGIS
 ---
