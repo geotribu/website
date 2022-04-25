@@ -127,6 +127,15 @@ theme:
   font: false
   icon:
     repo: fontawesome/brands/github-alt
+    tag:
+      default: fontawesome/solid/tag
+      # -- custom tags icons
+      code: fontawesome/solid/code
+      database: fontawesome/solid/database
+      google: fontawesome/brands/google
+      js: fontawesome/brands/js
+      python: fontawesome/brands/python
+      rstats: fontawesome/brands/r-project
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
@@ -194,6 +203,27 @@ extra:
     - icon: "fontawesome/solid/piggy-bank"
       link: https://fr.tipeee.com/geotribu/
       name: "Le pot commun sur Tipee"
+  tags:
+    D3.js: js
+    ExtJS: js
+    Google: google
+    Google Earth: google
+    Google Maps: google
+    Google Street View: google
+    JavaScript: js
+    pgDay: database
+    PGSession: database
+    PostGIS: database
+    PostgreSQL: database
+    PyCSW: python
+    PyGEOS: python
+    PyQGIS: python
+    PyQt: python
+    PySQL: python
+    Python: python
+    PyWPS: python
+    R: rstats
+    SQL: database
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
