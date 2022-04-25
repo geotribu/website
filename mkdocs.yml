@@ -135,6 +135,7 @@ theme:
       google: fontawesome/brands/google
       js: fontawesome/brands/js
       python: fontawesome/brands/python
+      route: fontawesome/solid/route
       rstats: fontawesome/brands/r-project
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
@@ -210,8 +211,10 @@ extra:
     Google Earth: google
     Google Maps: google
     Google Street View: google
+    GraphHopper: route
     JavaScript: js
     pgDay: database
+    pgRouting: route
     PGSession: database
     PostGIS: database
     PostgreSQL: database
@@ -223,6 +226,8 @@ extra:
     Python: python
     PyWPS: python
     R: rstats
+    route: route
+    routing: route
     SQL: database
 
 extra_css:
