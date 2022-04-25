@@ -130,10 +130,14 @@ theme:
     tag:
       default: fontawesome/solid/tag
       # -- custom tags icons
+      atlas: fontawesome/solid/book-atlas
       code: fontawesome/solid/code
       database: fontawesome/solid/database
+      facebook: fontawesome/brands/facebook
+      globe: fontawesome/solid/earth-europe
       google: fontawesome/brands/google
       js: fontawesome/brands/js
+      meridiens: fontawesome/solid/globe
       python: fontawesome/brands/python
       route: fontawesome/solid/route
       rstats: fontawesome/brands/r-project
@@ -205,19 +209,23 @@ extra:
       link: https://fr.tipeee.com/geotribu/
       name: "Le pot commun sur Tipee"
   tags:
+    atlas: atlas
     D3.js: js
     ExtJS: js
+    Facebook: facebook
     Google: google
     Google Earth: google
     Google Maps: google
     Google Street View: google
     GraphHopper: route
     JavaScript: js
+    livre: atlas
     pgDay: database
     pgRouting: route
     PGSession: database
     PostGIS: database
     PostgreSQL: database
+    projection: meridiens
     PyCSW: python
     PyGEOS: python
     PyQGIS: python
@@ -225,6 +233,7 @@ extra:
     PySQL: python
     Python: python
     PyWPS: python
+    QGIS: globe
     R: rstats
     route: route
     routing: route
