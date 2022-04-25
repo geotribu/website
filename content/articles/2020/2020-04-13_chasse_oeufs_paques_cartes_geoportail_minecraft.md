@@ -13,8 +13,6 @@ tags:
   - Géoportail
   - IGN
   - Minecraft
-  - œufs
-  - Pâques
   - toponymie
 ---
 
