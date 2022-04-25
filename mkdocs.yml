@@ -130,17 +130,25 @@ theme:
     tag:
       default: fontawesome/solid/tag
       # -- custom tags icons
+      ananas: material/fruit-pineapple
       atlas: fontawesome/solid/book-atlas
+      citrouille: material/pumpkin
       code: fontawesome/solid/code
+      conference: fontawesome/solid/person-chalkboard
       database: fontawesome/solid/database
       facebook: fontawesome/brands/facebook
       globe: fontawesome/solid/earth-europe
       google: fontawesome/brands/google
+      html: fontawesome/brands/html5
+      manette: fontawesome/solid/gamepad
       js: fontawesome/brands/js
       meridiens: fontawesome/solid/globe
+      oeuf: fontawesome/solid/egg
+      geoloupe: fontawesome/solid/magnifying-glass-location
       python: fontawesome/brands/python
       route: fontawesome/solid/route
       rstats: fontawesome/brands/r-project
+      windows: fontawesome/brands/windows
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
@@ -210,16 +218,32 @@ extra:
       name: "Le pot commun sur Tipee"
   tags:
     atlas: atlas
+    Bash: code
+    cURL: code
     D3.js: js
+    Easter eggs: oeuf
+    Esri: globe
     ExtJS: js
     Facebook: facebook
+    FIG: conference
+    FOSS4G: conference
+    GéoDataDays: conference
+    GeoGames: manette
+    géo-lecture: atlas
     Google: google
     Google Earth: google
     Google Maps: google
     Google Street View: google
     GraphHopper: route
+    Halloween: citrouille
+    INSPIRE: ananas
     JavaScript: js
+    jeu: manette
+    jeux vidéo: manette
     livre: atlas
+    OpenRouteService: route
+    OpenStreetMap: geoloupe
+    OSRM: route
     pgDay: database
     pgRouting: route
     PGSession: database
@@ -238,6 +262,7 @@ extra:
     route: route
     routing: route
     SQL: database
+    Windows: windows
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
