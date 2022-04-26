@@ -1,17 +1,17 @@
 ---
+title: "5. Ajouter un fichier KML"
 authors:
     - Fabien Goblet
 categories:
     - article
 date: 2008-11-02 10:20
-description: ""
+description: "5. Ajouter un fichier KML"
 image: ''
 license: default
 robots: index, follow
 tags:
     - Google Earth
     - KML
-title: 5. Ajouter un fichier KML
 ---
 
 # 5. Ajouter un fichier KML
@@ -20,29 +20,33 @@ title: 5. Ajouter un fichier KML
 
 ----
 
-**Prérequis :**
+## Prérequis
 
-1. tutoriaux :
-1. [1. Introduction à l'API Google Earth](arno/geotribu/?q=node/49)
-2. [2. Ajoutons quelques contrôles](arno/geotribu/?q=node/53)
-3. [4. Marqueurs et événements](arno/geotribu/?q=node/55)
-2. connaissances
+- Tutoriaux :
+    - [1. Introduction à l'API Google Earth](/articles/2008/art_2008-11-02_2-ajoutons-quelques-controles/)
+    - [2. Ajoutons quelques contrôles](/articles/2008/art_2008-11-02_2-ajoutons-quelques-controles/)
+    - [4. Marqueurs et événements](/articles/2008/art_2008-11-02_4-marqueurs-et-evenements/)
 
-* notions de HTML, notions de JavaScript, notions d'algorithmique
+- Connaissances :
+    - notions de HTML, notions de JavaScript, notions d'algorithmique
 
-3. liens
+- Liens :
+    - <http://code.google.com/apis/earth/documentation/reference/index.html>
 
-* <http://code.google.com/apis/earth/documentation/reference/index.html>
+## Code
 
-**Niveau :** Intermédiaire
-
-**Code :**  
-
-`[Google Earth] 5. Ajouter un fichier KML`
-
-html { overflow:hidden; height:100%; }
-body { height:100%; margin:0; }
-
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>[Google Earth] 4. 5. Ajouter un fichier KML</title>
+  <script src="http://www.google.com/jsapi?key=ABQIAAAAPo34DyTbdo2RpVUvdvK1qxTVkAM76o12Ue_ZZqmwjROaqOyBLhQVBCYY9lnsLXH3mdZLo-PWW8Z1DQ"></script>
+  <style type="text/css">
+  html { overflow:hidden; height:100%; }
+  body { height:100%; margin:0; }
+</style>
+<link rel="icon" type="image/png" href="./favicon.png"/>
+<script>
 google.load("earth", "1");
 var ge = null;
 
@@ -131,48 +135,60 @@ var kmlUrl = 'http://88.191.39.115/fabien/geotribu/kml/route.kml';
 google.earth.fetchKml(ge, kmlUrl, finished);
 
 }
+</script>
+</head>
+<body onload='init()' id='body'>
+  <div id='map3d_container' style='border: 0px solid silver; height: 100%; width: 100%;'>
+    <div id='map3d' style='height: 100%;'></div>
+  </div>
+</body>
+</html>
+```
 
-**Processus :**
+## Processus
 
 1. Reprendre la carte du tutoriel sur les marqueurs et les événements : <http://www.geotribu.net/?q=node/55>
 2. Définir une fonction qui vérifie la validité du fichier KML :  
 
-`function finished(object) {  
+```javascript
+function finished(object) {  
+  if (!object) {  
+    alert('KML mal formé');  
+    return;  
+  }  
+  ge.getFeatures().appendChild(object);  
+}
+```
 
-if (!object) {  
-
-alert('KML mal formé');  
-
-return;  
-
-}  
-
-ge.getFeatures().appendChild(object);  
-
-}`
 3. Définir l'objet géographique KML :  
 
-`var kmlUrl = 'http://88.191.39.115/fabien/geotribu/kml/route.kml';`
+```javascript
+var kmlUrl = 'http://88.191.39.115/fabien/geotribu/kml/route.kml';
+```
+
 4. Et l'appliquer sur la carte :  
 
-`google.earth.fetchKml(ge, kmlUrl, finished);`
+```javascript
+google.earth.fetchKml(ge, kmlUrl, finished);
+```
 
-**Résultat :**
+## Résultat
+
+<iframe src="http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Earth_tuto5.html" width="100%" height="700px"></iframe>
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Earth_tuto5.html)
-**Remarques :**
 
-* Ajouter un fichier KML est très simple. Il suffit de déclarer le fichier, vérifier qu'il soit bien formé, et l'ajouter à la carte.
+## Remarques
 
-**Conclusion :**
+Ajouter un fichier KML est très simple. Il suffit de déclarer le fichier, vérifier qu'il soit bien formé, et l'ajouter à la carte.
+
+## Conclusion
 
 Si le fichier KML est mal formé, la fonction finished() renverra NULL et donc l'API ne chargera pas le fichier.
 Cette vérification est nécessaire pour éviter de faire 'planter' la carte.
 
-**Auteur : Fabien - fabien.goblet [ at ] gmail.com**
-
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/fgob.md"
