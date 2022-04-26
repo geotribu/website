@@ -1,24 +1,22 @@
 ---
+title: "Sortie de la version 3.0.0 de PyWPS"
 authors:
-    - GeoTribu
+    - Geotribu
 categories:
     - article
 date: 2008-11-07 10:20
-description: ""
-image: ''
-license: default
-robots: index, follow
-tags: []
-title: Sortie de la version 3.0.0 de PyWPS
+description: "Sortie de la version 3.0.0 de PyWPS"
+tags:
+    - Python
+    - PyWPS
+    - WPS
 ---
 
 # Sortie de la version 3.0.0 de PyWPS
 
 :calendar: Date de publication initiale : 07 novembre 2008
 
-----
-
-Grâce au fabuleux travail de Jachym Cepicky et de toute son équipe la release 3.0.0 de PyWPS est enfin téléchargeable[1](http://wald.intevation.org/frs/download.php/525/pywps-3.0.0.tar.gz) .
+Grâce au fabuleux travail de Jachym Cepicky et de toute son équipe la release 3.0.0 de PyWPS est enfin [téléchargeable](http://wald.intevation.org/frs/download.php/525/pywps-3.0.0.tar.gz) .
 
 Juste pour rappel, PyWPS est une implémentation du protocole [Web Processing Service](http://www.opengeospatial.org/standards/requests/28) permettant à votre serveur, à partir d'une simple requête (SOAP ou RestFul), d'effectuer des traitements cartographiques (buffer, agrégation...)
 
@@ -32,16 +30,10 @@ Les nouveautés apportées par cette nouvelle version sont :
 * Python-Htmltmpl systéme
 * Ajout de nouveaux exemples
 
-Vous pouvez vous rendre directement sur le site à l'adresse suivante : [PyWPS2](http://pywps.wald.intevation.org/)
-
------------------  
-
-1 - <http://wald.intevation.org/frs/download.php/525/pywps-3.0.0.tar.gz>  
-
-2 - <http://pywps.wald.intevation.org/>
+Vous pouvez vous rendre directement sur le site à l'adresse suivante : [PyWPS](https://pywps.org/)
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"

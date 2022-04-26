@@ -39,7 +39,7 @@ tags:
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-  <title>[Google Earth] 4. 5. Ajouter un fichier KML</title>
+  <title>[Google Earth] 5. Ajouter un fichier KML</title>
   <script src="http://www.google.com/jsapi?key=ABQIAAAAPo34DyTbdo2RpVUvdvK1qxTVkAM76o12Ue_ZZqmwjROaqOyBLhQVBCYY9lnsLXH3mdZLo-PWW8Z1DQ"></script>
   <style type="text/css">
   html { overflow:hidden; height:100%; }
