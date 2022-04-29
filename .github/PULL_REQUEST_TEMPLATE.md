@@ -72,10 +72,26 @@ Exemple de [tweet](https://twitter.com/geotribu/status/1364625815099613185) :
 
 ----
 
-## Diffuser sur Twitter
+## Diffuser
+
+### Twitter
 
 Une fois le déploiement effectué (~ 5 minutes), diffuser a minima sur Twitter :
 
 - avec le hashtag `#GeoRDP`, en citant les contributeur/ices avec leur éventuel compte
 - si possible en intégrant quelques hastags des personne, organisations ou logiciels cités dans la revue de presse
 - de préférence via le compte `@geotribu` en utilisant Tweetdeck.
+
+### LinkedIn
+
+La diffusion sur LinkedIn est à faire avec un compte personnel. Exemple de structure :
+
+```txt
+🗞 La #GeoRDP est en ligne :
+
+
+👥 Contributeur/ices : @XXXX
+
+
+🌍 #Geotribu #veille #géomatique #YYYY @ZZZZ
+```
