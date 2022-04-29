@@ -245,6 +245,7 @@ extra:
     jeux vidéo: manette
     LIDAR: satellite
     livre: atlas
+    Mapillary: streetview
     Minecraft: manette
     OpenPathView: streetview
     OpenRouteService: route
