@@ -17,9 +17,11 @@ tags:
 
 ![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-rdp-news-thumb }
 
-Geotribu est un projet collaboratif et indépendant (voir [Geotribu, c'est quoi ?](/team/#geotribu-cest-quoi)) qui repose sur le bénévolat et des projets libres et, généralement, gratuits. Cependant, certains coûts sont incompressibles (nom de domaine, hébergement) et d'autre part nous avons à coeur de perpétuer le cercle vertueux de l'open source en y contribuant à notre tour, techniquement et/ou financièrement.
+Geotribu est un projet collaboratif et indépendant (voir [Geotribu, c'est quoi ?](/team/#geotribu-cest-quoi)) qui repose sur le bénévolat et des projets libres (et généralement gratuits).
 
-Si l'accès aux contenus à Geotribu est gratuit, leur rédaction, relecture, diffusion ne l'est pas, encore moins la conception et la maintenance du site :wink: !
+Cependant, certains coûts sont incompressibles (nom de domaine, hébergement) et d'autre part nous avons à coeur de perpétuer le cercle vertueux de l'open source en y contribuant à notre tour, techniquement et/ou financièrement.
+
+Enfin, si l'accès aux contenus à Geotribu est gratuit, leur rédaction, relecture, diffusion ne l'est pas, encore moins la conception et la maintenance du site :wink: !
 
 Si vous vous souhaitez nous aider à financer le site et à l'améliorer, nous avons créé des comptes sur les plateformes de don suivantes :
 
@@ -41,7 +43,10 @@ Cela se fait de plusieurs manières :
 - financièrement quand les projets le proposent et le nécessitent
 - techniquement en développant nous-mêmes un outil ou en contribuant à un projet existant
 
-### Projets financés et coûts récurrents
+### Projets financés et coûts
+
+!!! info
+    Les projets grisés sont ceux auxquels nous aimerions pouvoir contribuer avec davantage de budget.
 
 <!-- markdownlint-disable MD033 -->
 <div class="grid cards" markdown>
@@ -60,12 +65,28 @@ Cela se fait de plusieurs manières :
 
     Location du nom de domaine geotribu et des suffixes associés : `.fr`, `.org` et `.net`.
 
-    :money_with_wings: Montant : ~50€/an).
+    :money_with_wings: Montant : ~50€/an.
+
+- > :fontawesome-brands-markdown: __PyMdown extensions__
+
+    Les extensions PyMdown permettent d'étendre considérablement la syntaxe Markdown : emojis, glossaire, etc.
+
+    [:octicons-arrow-right-24: En savoir plus](https://facelessuser.github.io/pymdown-extensions/about/contributing/#become-a-sponsor)
+
+    :money_with_wings: Montant : 2$/mois.
+
+- > :material-git: __Extensions de Tim Vink__
+
+    Gestion des dates de création et modification des contenus, ainsi que l'attribution automatisée des contributeurs.
+
+    [:octicons-arrow-right-24: En savoir plus](https://github.com/sponsors/timvink?editing=false&preview=false&sponsor=geotribu)
+
+    :money_with_wings: Montant : 2$/mois.
 
 </div>
 <!-- markdownlint-enable MD033 -->
 
-### Projets portés
+### Projets en propre et contributions
 
 <!-- markdownlint-disable MD033 -->
 <div class="grid cards" markdown>
@@ -84,8 +105,7 @@ Cela se fait de plusieurs manières :
 
     Une webmap pour faciliter le téléchargement des données ouvertes de l'IGN selon plusieurs échelles administrativres et par produit. Simple, efficace, open source et auto-maintenu.
 
-    [:octicons-arrow-right-24: Voir la carte](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html)
-    [:octicons-arrow-right-24: Les coulisses](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/)
+    [:octicons-arrow-right-24: La carte](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html) - [Les coulisses](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/)
 
 </div>
 <!-- markdownlint-enable MD033 -->
