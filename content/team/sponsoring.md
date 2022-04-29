@@ -1,72 +1,97 @@
 ---
-title: "Soutenir"
-authors: ["Geotribu"]
-categories: ["meta"]
-date: "2021-10-18 10:20"
-description: "L'aventure de Geotribu est rendue possible par le travail et le soutien de personnes et aussi d'outils et ressources libres. Crédits et remerciements."
+title: "Soutenir Geotribu"
+authors:
+    - Geotribu
+categories:
+    - meta
+date: "2022-04-29 10:20"
+description: "Soutenez l'aventure Geotribu en finançant le travail de personnes bénévoles et passionnées !"
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
 license: default
 tags:
     - sponsor
-    - soutien
-    - financement
-    - open source
+    - Geotribu
 ---
 
-# Soutenir Geotribu
+# Contribuer financièrement au projet Geotribu
 
-Comme évoqué avec quelques-uns d'entre vous et aussi avec des contributeurs ponctuels (Romain et Mathieu), je réfléchis à proposer aux lecteurs un moyen de financer Geotribu, ou plutôt les organismes/outils sous-jacents : MkDocs, Material for Mkdocs, GeoRezo, Gandi, etc.
+![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-rdp-news-thumb }
 
-Hébergement mis à part, le site ne coûte presque rien et je m'efforce que cela reste ainsi : mutualisation avec El Geo Paso (d'ailleurs, faudrait vraiment que je trouve le temps de m'y remettre...), développement des outils manquants (RSS, Isso...), travail sur la CI (par exemple pour passer outre les limites payantes de Netlify, etc.).
+Geotribu est un projet collaboratif et indépendant (voir [Geotribu, c'est quoi ?](/team/#geotribu-cest-quoi)) qui repose sur le bénévolat et des projets libres et, généralement, gratuits. Cependant, certains coûts sont incompressibles (nom de domaine, hébergement) et d'autre part nous avons à coeur de perpétuer le cercle vertueux de l'open source en y contribuant à notre tour, techniquement et/ou financièrement.
 
-L'objectif n'est donc pas d'amasser beaucoup d'argent (sinon autant intégrer de la publicité, du remarketing, des contenus sponsos...) mais plutôt de :
+Si l'accès aux contenus à Geotribu est gratuit, leur rédaction, relecture, diffusion ne l'est pas, encore moins la conception et la maintenance du site :wink: !
 
-- ouvrir un cercle vertueux dans lequel Geotribu finance les outils qu'il utilise
-- améliorer l'expérience des utilisateurs finaux (performances, ergonomie, etc.)
-- pérenniser le site tout en brisant le mirage du tout gratuit et donc en impliquant le lectorat
+Si vous vous souhaitez nous aider à financer le site et à l'améliorer, nous avons créé des comptes sur les plateformes de don suivantes :
 
-L'idée ne serait pas de faire un financement participatif mais plutôt d'ouvrir la possibilité de contribuer à un pot commun (du genre Tipee, Patreon, Liberapay, Buy me a coffee, Flattr...) en détaillant les coûts actuels (noms de domaines et hébergement) et ceux qui pourraient être envisagés pour améliorer le site.
+[Tipeee :fontawesome-solid-hand-holding-heart:](https://fr.tipeee.com/geotribu/){: .md-button }
+[Liberapay :fontawesome-solid-gift:](https://liberapay.com/Geotribu/){: .md-button }
+{: align=middle }
 
-Par exemple, si on finance une année de Material for Mkdocs (~120€/an), on pourra :
-
-- intégrer nativement les graphiques Mermaid (ok c'est pas fou mais ça peut être utile et c'est déjà utilisé) : <https://squidfunk.github.io/mkdocs-material/reference/diagrams/>
-- gérer les mots-clés (tags) sur les contenus (<https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/>)
-- améliorer la recherche (intégration ds mots-clés, suggestions de recherche, etc.)
-- autres <https://squidfunk.github.io/mkdocs-material/insiders/#exclusive-features>
-
-On peut aussi imaginer financer : un vrai CDN (CloudFlare), un système de newsletter (on me l'a demandé encore hier...), un système d'export en PDF, un éditeur à façon pour nos contenus, un outillage pour automatiser certaines tâches (création PR, etc.)...
-
-On pourrait proposer plusieurs moyens aux gens :
-
-- une participation ponctuelle (PayPal...)
-- une participation régulière (cf Tipee, Liberapay, etc.)
-- un engagement sur l'honneur à payer un coup (bière, thé, café...) à un contributeur lors d'un prochain salon
-- offrir un goodie à l'équipe (mug QGIS, thsirt GDAL...)
-- un prêt de ressources techniques (genre pour le CDN)
-
-----
-
-## Soutenir le site
-
-<!-- markdownlint-disable MD033 -->
-<script src="https://liberapay.com/Geotribu/widgets/button.js"></script>
-<noscript>
-    <a href="https://liberapay.com/Geotribu/donate">
-        <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
-    </a>
-</noscript>
-
-<script src="https://liberapay.com/Geotribu/widgets/receiving.js"></script>
-<!-- markdownlint-enable MD033 -->
+!!! note
+    Geotribu n'étant adossée à aucune structure administrative, nous ne disposons pas d'un compte partagé. Les dons parviennent sur celui de [Julien](/team/jmou) qui se charge de les répartir et de régler les frais.
 
 ----
 
 ## Projets soutenus
 
-Actuellement, nous contribuons financièrement aux projets suivants.
+Afin de fournir nos contenus dans les meilleures conditions avec une expérience de navigation optimale, nous contribuons à l'écosystème sur lequel le site repose : Mkdocs.
 
-### Material for Mkdocs
+Cela se fait de plusieurs manières :
 
-:money_with_wings: 10$/mois.
+- financièrement quand les projets le proposent et le nécessitent
+- techniquement en développant nous-mêmes un outil ou en contribuant à un projet existant
 
-![Sponsoring - Material for Mkdocs](https://cdn.geotribu.fr/img/internal/sponsoring/sponsoring_material_mkdocs.png "Sponsoring - Material for Mkdocs"){: .img-center loading=lazy }
+### Projets financés et coûts récurrents
+
+<!-- markdownlint-disable MD033 -->
+<div class="grid cards" markdown>
+
+- :material-material-design:{ .lg .middle } __Material for Mkdocs__
+
+    ----
+
+    Permet de soutenir le développement du thème utilisé et profiter des [fonctionnalités "Insiders"](https://squidfunk.github.io/mkdocs-material/insiders/#exclusive-features) (modèle [Sponsorware](https://github.com/sponsorware/docs#sponsorware)).  
+
+    :money_with_wings: Montant : 10$/mois (~120€/an) via [GitHub Sponsor](https://github.com/orgs/geotribu/sponsoring).
+
+- :material-dns:{ .lg .middle } __Nom de domaine__
+
+    ----
+
+    Location du nom de domaine geotribu et des suffixes associés : `.fr`, `.org` et `.net`.
+
+    :money_with_wings: Montant : ~50€/an).
+
+</div>
+<!-- markdownlint-enable MD033 -->
+
+### Projets portés
+
+<!-- markdownlint-disable MD033 -->
+<div class="grid cards" markdown>
+
+- :material-rss:{ .lg .middle } __Plugin RSS pour Mkdocs__
+
+    ----
+
+    Développement et mainteance d'un plugin pour Mkdocs permettant de générer des flux RSS qui servent pour alimenter automatiquement la newsletter et les lecteurs compatibles (Feedly, etc.).
+
+    [:octicons-arrow-right-24: Documentation](https://guts.github.io/mkdocs-rss-plugin/)
+
+- :material-map-marker-down:{ .lg .middle } __ign2map__
+
+    ----
+
+    Une webmap pour faciliter le téléchargement des données ouvertes de l'IGN selon plusieurs échelles administrativres et par produit. Simple, efficace, open source et auto-maintenu.
+
+    [:octicons-arrow-right-24: Voir la carte](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html)
+    [:octicons-arrow-right-24: Les coulisses](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/)
+
+</div>
+<!-- markdownlint-enable MD033 -->
+
+----
+
+## Auteur {: data-search-exclude }
+
+--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
