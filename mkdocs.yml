@@ -148,6 +148,8 @@ theme:
       python: fontawesome/brands/python
       route: fontawesome/solid/route
       rstats: fontawesome/brands/r-project
+      satellite: fontawesome/solid/satellite-dish
+      streetview: fontawesome/solid/street-view
       windows: fontawesome/brands/windows
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
@@ -219,6 +221,7 @@ extra:
   tags:
     atlas: atlas
     Bash: code
+    Centipede: satellite
     cURL: code
     D3.js: js
     Easter eggs: oeuf
@@ -240,10 +243,14 @@ extra:
     JavaScript: js
     jeu: manette
     jeux vidéo: manette
+    LIDAR: satellite
     livre: atlas
+    Minecraft: manette
+    OpenPathView: streetview
     OpenRouteService: route
     OpenStreetMap: geoloupe
     OSRM: route
+    Open Earth View: streetview
     pgDay: database
     pgRouting: route
     PGSession: database
