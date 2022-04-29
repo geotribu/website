@@ -81,7 +81,7 @@ Mais si récupérer des contenus n'est qu'une question technique (on le verra da
 
 Qu'importe, on a retrouvé le plaisir et pourvu que ça dure !
 
-[Page des contributeur/ices :fontawesome-solid-people-carry:](/team/contributors/){: .md-button }
+[Page des contributeur/ices :fontawesome-solid-people-carry-box:](/team/contributors/){: .md-button }
 {: align=middle }
 
 ----
@@ -110,16 +110,14 @@ En racontant notre petite histoire aux auditeur/ices du CQP, je me suis aperçu 
 
 Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent suffisamment en envergure pour animer leur écosystème (ou du moins une partie), voire le structurer dans le cadre de projets plus gros tels [GeoRezo] mais qui restent fragiles. En effet, si le bénévolat garantit une certaine indépendance, il peut aussi être synonyme de faible résilience. A l'instar de nombreux projets, surtout libres et gratuits, Geotribu repose sur quelques individus seulement. Dès lors qu'ils n'ont plus le temps, le goût ou la motivation, l'initiative s'arrête. Aucune fatalité ou amertume à avoir, après tout l'éphémère ça crée des souvenirs !
 
-[Suite : le web-scraping à la rescousse :fontawesome-solid-step-forward:](../2020-09-08_web-scraping_scrapy_geotribu/){: .md-button }
+[Suite : le web-scraping à la rescousse :fontawesome-solid-forward:](../2020-09-08_web-scraping_scrapy_geotribu/){: .md-button }
 {: align=center }
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
---8<--
-content/team/jmou.md
---8<--
+--8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
 [Arnaud]: /team/avdc/

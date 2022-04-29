@@ -1,0 +1,49 @@
+name: "🧹 PR Cleaner"
+
+# See: https://shipit.dev/posts/trigger-github-actions-on-pr-close.html
+
+# only trigger on pull request closed events, that includes both merged and closed (dismissed) PRs
+on:
+  pull_request_target:
+    types: [closed]
+
+# Environment variables
+env:
+  BUILD_DIR: build/
+  NETLIFY_SITE_NAME: geotribu-preprod
+  NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
+
+jobs:
+  clean-preview:
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'geotribu' }}
+
+    steps:
+      - name: Get source code
+        uses: actions/checkout@v3
+
+      - name: Prepare redirection
+        run: |
+          mkdir -p ${{ env.BUILD_DIR }}
+          cp scripts/redirect.html ${{ env.BUILD_DIR }}/index.html
+
+      - name: Deploy preview to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        id: preview
+        timeout-minutes: 1
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          alias: ${{ env.NETLIFY_SITE_PREFIX }}
+          deploy-message: "Clean preview of PR ${{ github.event.pull_request.title }} (PR #${{ env.PR_NUMBER }}"
+          enable-commit-comment: false
+          enable-commit-status: false
+          enable-pull-request-comment: false
+          fails-without-credentials: true
+          github-deployment-environment: pr-previews
+          github-deployment-description: "Preview deploy for PRs"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          overwrites-pull-request-comment: false
+          production-deploy: false
+          publish-dir: ${{ env.BUILD_DIR }}

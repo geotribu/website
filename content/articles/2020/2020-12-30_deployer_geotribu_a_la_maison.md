@@ -159,8 +159,6 @@ Et voilà, vous avez le site Geotribu sur votre ordinateur :smile: !
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
---8<--
-content/team/jmou.md
---8<--
+--8<-- "content/team/jmou.md"

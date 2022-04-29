@@ -173,7 +173,7 @@ Une norme intermédiaire nommée [XLSForm] permet de décrire très simplement l
 
 [XLSForm] est utilisé par de nombreuses solutions ([Enketo](https://enketo.org/), [Kobotoolbox](https://www.kobotoolbox.org/), [ONA](https://company.ona.io/products/ona-data/features/)). La plus connue des géomaticiens sera peut-être [la plateforme Survey123](https://doc.arcgis.com/fr/survey123/desktop/create-surveys/xlsformessentials.htm) d'ESRI.
 
-[XLS Form est détaillé plus bas :fontawesome-solid-arrow-circle-down:](#xlsform){: .md-button }
+[XLS Form est détaillé plus bas :fontawesome-solid-circle-down:](#xlsform){: .md-button }
 {: align=middle }
 
 ### XLSForm Online
@@ -348,7 +348,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - La mise en oeuvre d'ODK avec la présentation détaillée de notre formulaire "généraliste"
 - La récupération des données collectées dans notre base de données PostGIS
 
-[Lire la deuxième partie :fontawesome-solid-step-forward:](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+[Lire la deuxième partie :fontawesome-solid-forward:](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
 {: align=middle }
 
 ----
@@ -364,7 +364,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/mbos.md"
 

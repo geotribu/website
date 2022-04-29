@@ -11,6 +11,7 @@ on:
         type: boolean
         default: true
         description: Notifier l'équipe sur Slack
+        required: false
 
 env:
   LANG: "fr_FR.UTF-8"
@@ -20,6 +21,8 @@ env:
 jobs:
   create_rdp:
     runs-on: ubuntu-latest
+
+    if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
       - name: Install French locale
@@ -31,7 +34,7 @@ jobs:
           echo "::set-output name=date-fr-long::$(date -d ${{ github.event.inputs.date }} '+%-d %B %Y')"
 
       - name: Get source code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Create a new GeoRDP
         shell: bash
@@ -65,7 +68,7 @@ jobs:
 
       - name: Notification Slack
         id: slack
-        uses: slackapi/slack-github-action@v1.16
+        uses: slackapi/slack-github-action@v1.18
         if: "${{ github.event.inputs.notify-slack == 'true' }}"
         with:
           payload: '{"blocks":[{"type":"section","text":{"type":"mrkdwn","text":":newspaper: La GeoRDP du ${{ steps.locale-fr.outputs.date-fr-long }} a été créée et attend vos contributions :writing_hand: !"}},{"type":"section","fields":[{"type":"mrkdwn","text":"Créée par *${{ github.actor }}* via GitHub Action."}]},{"type":"actions","elements":[{"type":"button","text":{"type":"plain_text","emoji":true,"text":":squid: Voir la PR (GitHub)"},"url":"${{ steps.cpr.outputs.pr_url }}"},{"type":"button","text":{"type":"plain_text","emoji":true,"text":":eye: Voir la preview (Netlify)"},"style":"primary","url":"https://preview-pullrequest-${{steps.cpr.outputs.pr_number}}--geotribu-preprod.netlify.app/"}]}]}'

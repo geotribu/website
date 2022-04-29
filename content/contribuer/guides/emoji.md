@@ -53,5 +53,6 @@ Elle est semblable à la plupart des outils de discussion : `:emoji_code:`.
 
 :warning: La liste étant très grande, cela peut-être très long à afficher :warning:
 
-[Consulter le tableau des codes de chaque emoji et leur aperçu :fontawesome-regular-eye:](/toc_nav_ignored/emojis_joypixels_preview/){: .md-button }
+[Tableau des codes de chaque emoji et leur aperçu :fontawesome-regular-eye:](/toc_nav_ignored/emojis_joypixels_preview/){: .md-button }
+[Rechercher dans toutes les icônes (émojis inclus) :fontawesome-solid-magnifying-glass-location:](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search){: .md-button }
 {: align=middle }

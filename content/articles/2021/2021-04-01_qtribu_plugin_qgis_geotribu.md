@@ -81,7 +81,7 @@ Une fois installé, le plugin s'intègre :
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
 

@@ -37,7 +37,7 @@ Allez, cette fois, c'est parti ! L'angoisse de la feuille blanche n'a qu'à bien
 Comme indiqué dans [les prérequis](/contribuer/requirements/), qu'importe le flacon, tant qu'on a l'ivresse de la rédaction  en Markdown : du simple éditeur de texte (oui, même le bloc-notes de Windows !) à l'éditeur lourd (à ce propos voir [le dossier de Next INpact](https://www.nextinpact.com/article/44240/zettlr-prise-en-main-dun-editeur-texte-aux-nombreuses-qualites)), faites votre choix !  
 Mais sachez que nous mettons un éditeur collaboratif ([Hedgedoc](https://hedgedoc.org/)) à disposition des contributeur/ices :
 
-[Utiliser le PAD :fontawesome-solid-feather-alt:](http://pad.geotribu.fr/){: .md-button }
+[Utiliser le PAD :fontawesome-solid-feather-pointed:](http://pad.geotribu.fr/){: .md-button }
 {: align=middle }
 
 Sinon, cela tient en quelques étapes :

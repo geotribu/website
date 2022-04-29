@@ -269,7 +269,7 @@ La solution que je vous propose nécessite un peu de temps de mise en oeuvre et 
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/fbor.md"
 

@@ -11,12 +11,14 @@ jobs:
   lint-markdown-review:
     name: "👓 Vérification de la syntaxe"
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'geotribu' }}
+
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # - name: markdownlint-github-check
-      #   uses: reviewdog/action-markdownlint@v0.3
+      #   uses: reviewdog/action-markdownlint@v0.5
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
       #     filter_mode: added
@@ -24,7 +26,7 @@ jobs:
       #     markdownlint_flags: 'content/**/202*.md'
 
       - name: markdownlint-github-pr-review
-        uses: reviewdog/action-markdownlint@v0.3
+        uses: reviewdog/action-markdownlint@v0.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true

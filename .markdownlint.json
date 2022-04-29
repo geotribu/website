@@ -17,7 +17,7 @@
         "punctuation": ".,;:。，；："
     },
     "MD029": {
-        "style": "ordered"
+        "style": "one_or_ordered"
     },
     "MD035": {
         "style": "----"

@@ -34,8 +34,8 @@ L'aventure de Geotribu est rendue possible par l'existence de ressources et d'ou
 
 Le site repose énormément sur des solutions libres et nous tenons à remercier les personnes mettant ainsi leur travail à la disposition de tout le monde :
 
-- [Mkdocs](https://www.mkdocs.org/) : générateur de site web statique à partir de contenus rédigés en [markdown](https://fr.wikipedia.org/wiki/Markdown). Simple et extensible, c'est un outil puissant. Le fait qu'il soit en [Python](https://www.python.org/) le rend compatible avec notre socle technique interne.
-- [Material for Mkdocs](https://fr.wikipedia.org/wiki/Markdown) : thème pour Mkdocs qui utilise le framework graphique [Material](https://fr.wikipedia.org/wiki/Markdown) conçu et utilisé par Google. C'est propre, moderne (du bon JS webpacké), orienté performances et facilement personnalisable. Mention spéciale à **Martin Donath**, qui maintient presque seul ce projet.
+- [Mkdocs](https://www.mkdocs.org/) : générateur de site web statique à partir de contenus rédigés en [markdown]. Simple et extensible, c'est un outil puissant. Le fait qu'il soit en [Python](https://www.python.org/) le rend compatible avec notre socle technique interne.
+- [Material for Mkdocs] : thème pour Mkdocs qui utilise le framework graphique [Material](https://material.io/) conçu et utilisé par Google. C'est propre, moderne (du bon JS webpacké), orienté performances et facilement personnalisable. Mention spéciale à **Martin Donath**, qui maintient presque seul ce projet.
 - [Tiny File Manager](https://tinyfilemanager.github.io/) : le gestionnaire de fichiers
 petit (1 seul fichier PHP !) mais costaud que nous utilisons pour gérer nos contenus statiques.
 - [Isso](https://posativ.org/isso/) système de commentaires minimaliste et open source
@@ -52,6 +52,18 @@ Afin de couvrir nos besoins, nous sommes parfois amenés à contribuer aux outil
 - Isso : ajout des notifications via web hooks. [Voir l'article sur le sujet](/articles/2021/2021-05-14_commentaires_migration_disqus_isso/).
 - plugin RSS pour MkDocs : génère des flux RSS à partir de l'historique Git et/ou des en-têtes des contenus. [Voir le dépôt du projet](https://github.com/Guts/mkdocs-rss-plugin/).
 - Tiny File Manager : complétion et amélioration de la traduction française ([voir la Pull Request](https://github.com/prasathmani/tinyfilemanager/pull/497)).
+
+### Sponsoring
+
+Afin de soutenir les projets open source sur lequel repose le site et le workflow de contribution, nous finançons certains d'entre eux via [GitHub](https://github.com/orgs/geotribu/sponsoring).
+
+Pour supporter notre travail, vous pouvez donner, ponctuellement ou de manière récurrente, via Liberapy ou Tipee :
+
+[Liberapay :fontawesome-solid-gift:](https://liberapay.com/Geotribu/){: .md-button }
+[Tipee :fontawesome-solid-piggy-bank:](https://fr.tipeee.com/geotribu/){: .md-button }
+{: align=middle }
+
+----
 
 ## Autres
 

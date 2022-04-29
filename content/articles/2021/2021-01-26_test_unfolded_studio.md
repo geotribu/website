@@ -210,7 +210,7 @@ Reste à voir la manière dont cela évoluera dans le futur !
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/acha.md"
 

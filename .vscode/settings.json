@@ -1,7 +1,7 @@
 {
     // Editor
     "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs":"active",
+    "editor.guides.bracketPairs": "active",
     // Python
     "python.pythonPath": ".venv/bin/python",
     "python.formatting.provider": "black",
@@ -9,5 +9,17 @@
     // Git
     "git.ignoreLimitWarning": true,
     // Extensions
-    "cSpell.language": "fr"
+    "cSpell.language": "fr",
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs*.yml",
+        "https://json.schemastore.org/github-workflow.json": ".github/workflows/*.yml",
+        "https://json.schemastore.org/markdownlint.json": ".markdownlint*",
+    },
+    "yaml.customTags": [
+        "!ENV scalar",
+        "!ENV sequence",
+        "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
+        "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+    ]
 }

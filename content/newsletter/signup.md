@@ -32,11 +32,11 @@ Ni plus, ni moins. L'objectif est de faciliter la diffusion et le suivi des nouv
 L'adresse de l'expéditeur est : `facteur [chez] geotribu.fr`.
 
 [S'abonner :fontawesome-brands-mailchimp:](http://eepurl.com/hL0zVr){: .md-button }
-[Consulter les archives :fontawesome-solid-history:](https://us5.campaign-archive.com/home/?u=465e16ce303f65e4f490e8a71&id=6c4efaf092){: .md-button }
+[Consulter les archives :fontawesome-solid-clock-rotate-left:](https://us5.campaign-archive.com/home/?u=465e16ce303f65e4f490e8a71&id=6c4efaf092){: .md-button }
 {: align=middle }
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"

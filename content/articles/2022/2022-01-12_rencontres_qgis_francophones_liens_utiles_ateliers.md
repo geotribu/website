@@ -65,7 +65,7 @@ Elle se pose régulièrement, voire devient incontournable dans ce genre d'évé
 
 Pour avancer sur [le sujet](https://gitlab.com/osgeo-fr/journees_qgis/-/issues/96), Marie Jagaille, partie prenante du collectif [Women in Copernicus](https://womenincopernicus.eu/) a proposé que la problématique gagne en visibilité et qu'on se donne les moyens de comprendre en posant la question à l'occasion de l'événement via ce formulaire qu'on vous invite à remplir soigneusement :
 
-[Répondre au formulaire sur la quête paritaire :fontawesome-solid-people-carry:](https://framaforms.org/rencontres-des-utilisateurs-francophones-de-qgis-et-parite-1642158634){: .md-button }
+[Répondre au formulaire sur la quête paritaire :fontawesome-solid-people-carry-box:](https://framaforms.org/rencontres-des-utilisateurs-francophones-de-qgis-et-parite-1642158634){: .md-button }
 {: align=middle }
 
 ----
@@ -94,7 +94,7 @@ Au menu : du Git, du fichier `.ini` et du script Python.
 
 ### Les easter eggs de QGIS : chasser et être chassé
 
-![Oeuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/oeuf_globe.webp "Oeuf globe"){: .img-rdp-news-thumb }
+![œuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/oeuf_globe.webp "œuf globe"){: .img-rdp-news-thumb }
 
 L'idée de cet atelier est d'abord de passer un bon moment tout en apprenant à chasser les fonctions cachées ([*easter eggs*](https://fr.wikipedia.org/wiki/Easter_egg)) dans QGIS et à en ajouter de nouvelles pour voir si les utilisateurs les débusquent.
 
@@ -135,6 +135,6 @@ J'ai préparé un bloc-notes partagé pour l'occasion :
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"

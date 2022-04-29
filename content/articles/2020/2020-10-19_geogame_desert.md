@@ -28,7 +28,7 @@ Au passage, je suis tombé sur un sixième jeu qui n'avait pas été publié à 
 
 Bon jeu et bonne nostalgie :smile:.
 
-[Ouvrir le jeu en grand :fontawesome-solid-external-link-alt:](https://geotribu.github.io/geogames/sixieme_jeu){: .md-button }
+[Ouvrir le jeu en grand :fontawesome-solid-up-right-from-square:](https://geotribu.github.io/geogames/sixieme_jeu){: .md-button }
 {: align=middle }
 
 <iframe name="geogame6" width="100%" height="500px" src="https://geotribu.github.io/geogames/sixieme_jeu" frameborder="1"></iframe>

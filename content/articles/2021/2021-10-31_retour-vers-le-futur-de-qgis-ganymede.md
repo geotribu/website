@@ -118,7 +118,7 @@ Un participant de la formation a tenu à montrer que MapInfo 1998 tournait égal
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
 

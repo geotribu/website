@@ -56,7 +56,7 @@ Quand on publie, il est important d'indiquer comment le contenu peut être éven
 
 Si vous avez déjà publié sur Geotribu et que vous souhaitez ne pas utiliser la licence par défaut, il vous revient de mettre à jour vos contenus :wink: :
 
-[Comment choisir une licence :fontawesome-solid-balance-scale-right:](/contribuer/guides/licensing/){: .md-button }
+[Comment choisir une licence :fontawesome-solid-scale-balanced:](/contribuer/guides/licensing/){: .md-button }
 {: align=middle }
 
 ----
@@ -73,7 +73,7 @@ Nous vous en reparlerons bientôt mais d'ici là, n'hésitez pas à nous donner 
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
 

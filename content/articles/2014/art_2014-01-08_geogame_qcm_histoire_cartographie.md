@@ -22,13 +22,13 @@ L'équipe de GeoTribu vous propose cette semaine de tester vos connaissances en 
 
 Vous êtes prêt ? c'est parti... Bonne chance !
 
-[Ouvrir le jeu en grand :fontawesome-solid-external-link-alt:](https://geotribu.github.io/geogames/troisieme_jeu){: .md-button }
+[Ouvrir le jeu en grand :fontawesome-solid-up-right-from-square:](https://geotribu.github.io/geogames/troisieme_jeu){: .md-button }
 {: align=middle }
 
 <iframe name="geogame3" width="100%" height="500px" src="https://geotribu.github.io/geogames/troisieme_jeu" frameborder="1"></iframe>
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jory.md"
