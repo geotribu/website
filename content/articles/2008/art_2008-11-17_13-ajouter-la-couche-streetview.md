@@ -70,7 +70,7 @@ function initialize() {
 
 ## Démonstration
 
-<iframe src="https://web.archive.org/web/20140626134207if_/http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto13.html" height="350px" width="100%"></iframe>
+<iframe src="http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto13.html" height="350px" width="100%"></iframe>
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto13.html)
 
