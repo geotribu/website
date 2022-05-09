@@ -48,12 +48,12 @@ Aujourd'hui, je vais vous présenter différentes manières d'accéder aux donn�
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
-Si on épluche la documentation on peut voir que Mapillary propose un service d'accès à ses données basé sur des services de [tuiles vectorielles](https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html) qui ont l'avantage d'offrir une solution assez souple et légère permettant de visualiser de grandes quantités d'informations. Les tuiles vectorielles de Mapillary suivent les spécifications des tuiles Mapbox (MVT) et elles offrent la possbilité : 
+Si on épluche la documentation on peut voir que Mapillary propose un service d'accès à ses données basé sur des services de [tuiles vectorielles](https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html) qui ont l'avantage d'offrir une solution assez souple et légère permettant de visualiser de grandes quantités d'informations. Les tuiles vectorielles de Mapillary suivent les spécifications des tuiles Mapbox (MVT) et elles offrent la possbilité :
 
 - de réaliser des filtrages et des rendus spécifiques
 - d'intérroger la donnée
 
-Il exite trois URL permettant d'accéder aux tuiles vectorielles de Mapillary : 
+Il exite trois URL permettant d'accéder aux tuiles vectorielles de Mapillary :
 
 1. [Tuiles de couverture](https://www.mapillary.com/developer/api-documentation/#coverage-tiles) : qui permettent de visualiser les séquences (traces) et la position des prises de vue
     - ```https://tiles.mapillary.com/maps/vtp/mly1_computed_public/2/{z}/{x}/{y}?access_token=XXX```
@@ -68,19 +68,19 @@ Dans l'explorateur du Gestionnaire de données, ajouter une couche de tuiles vec
 
 [![Explorateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/explorateur.png "Explorateur"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/explorateur.png "Explorateur"){: data-mediabox="gallery-lightbox" data-title="Explorateur" }
 
-Nommer proprement la couche vectorielle à ajouter et renseigner l'URL de la couche vectorielle qui vous intéresse en n'oubliant pas de modifier le jeton Mapillary qui vous permet de vous identifier. 
+Nommer proprement la couche vectorielle à ajouter et renseigner l'URL de la couche vectorielle qui vous intéresse en n'oubliant pas de modifier le jeton Mapillary qui vous permet de vous identifier.
 
-[![Connexion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: data-mediabox="gallery-lightbox" data-title="Connexion" } 
+[![Connexion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: data-mediabox="gallery-lightbox" data-title="Connexion" }
 
 Ajouter la nouvelle couche de tuiles de couverture dans QGIS (Pour visualiser l'information, vous devrez zoomer au niveau 14).
 
-### Interrogation des tuiles vectorielles 
+### Interrogation des tuiles vectorielles
 
 Les tuiles vectorielles sont interrogeables et permettent une consultation des différents champs publiés. Si l'on prend l'exemple du flux lié à la signalisation, il est possible possible d'accéder aux type de panneau detecté ainsi qu'aux dates auxquelles il a été vu pour la première et la dernière fois.
 
 [![Information](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/information.png "Information"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/information.png "Information"){: data-mediabox="gallery-lightbox" data-title="Information" }
 
-### Personnalisation des tuiles vectorielles 
+### Personnalisation des tuiles vectorielles
 
 Par défaut lors de l'ajout, les données présentent dans les tuiles vectorielles sont automatiquement réparties en :
 
@@ -88,14 +88,14 @@ Par défaut lors de l'ajout, les données présentent dans les tuiles vectoriell
 - Lignes
 - Points
 
-[![Symbologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: data-mediabox="gallery-lightbox" data-title="Connexion" } 
+[![Symbologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: data-mediabox="gallery-lightbox" data-title="Connexion" }
 Il est possible d'enrichir ce rendu par défaut en ajoutant de nouveau style, en définissant la couche sur laquelle vous souhaitez travailler, exemple : `traffic_signs` et en jouant avec les filtres, exemple : `(geometry_type($geometry)='Point') AND ("value" IS 'information--general-directions--g1')`
 
 !!! info
     Il y a aussi la possibilité d'importer un style configuré au format QML ou MapBox GL Json.
 
 
-## 2. Extraire les données vectorielles des tuiles vectorielles 
+## 2. Extraire les données vectorielles des tuiles vectorielles
 
 Mainteant qu'on s'est bien amusé sur le tunning des tuiles vectoirelles, il pourrait être intéressant de récupérer l'information vectorielle pour la stocker. Dans cette partie, je vais vous présenter un script qui me permet de :
 
@@ -172,7 +172,7 @@ YMAX=$(lat2ytile $(echo $V_LAT_MAX | sed -e 's/\./,/g') $V_ZOOM)
 echo $XMIN $YMIN $XMAX $YMAX
 ```
 
-### Téléchargement des tuiles et création de GPKG 
+### Téléchargement des tuiles et création de GPKG
 
 Ensuite, à l'aide de `curl` on va pouvoir télécharger chacune des tuiles en local puis extraire l'information pour la fusionner dans un fichier Géopackage que l'on peut archiver.
 
