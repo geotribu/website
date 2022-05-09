@@ -1,12 +1,12 @@
 ---
-title: "Accéder aux données de Mapillary et les intégrer dans son SIG"
+title: "Accéder aux données de Mapillary et les intégrer dans son SIG - 1/2"
 authors:
     - Florian Boret
 categories:
     - article
     - tutoriel
 date: 2022-05-17 14:20
-description: "Accéder aux données de Mapillary et les intégrer dans son SIG"
+description: "Accéder aux données de Mapillary et les intégrer dans son SIG - 1/2"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/mapillary_data.png"
 license: default
 tags:
@@ -15,8 +15,10 @@ tags:
     - data
     - OGR
     - Mapillary
+    - MVT
     - PostGIS
     - PostgreSQL
+    - tuiles vectorielles
 ---
 
 # Accéder aux données de Mapillary et les intégrer dans son SIG - 1/2
@@ -48,7 +50,7 @@ Aujourd'hui, je vais vous présenter différentes manières d'accéder aux donn�
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
-Lorsqu'on épluche la documentation, on peut voir que Mapillary propose un service d'accès à ses données basé sur des services de [tuiles vectorielles](https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html). Ils ont l'avantage d'offrir une solution assez souple et légère permettant de visualiser de grandes quantités d'informations. Les tuiles vectorielles de Mapillary suivent les spécifications des tuiles Mapbox (MVT) et offrent la possbilité :
+Lorsqu'on épluche la documentation, on peut voir que Mapillary propose un service d'accès à ses données basé sur des services de [tuiles vectorielles](https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html). Ils ont l'avantage d'offrir une solution assez souple et légère permettant de visualiser de grandes quantités d'informations. Les tuiles vectorielles de Mapillary suivent les [spécifications des tuiles Mapbox (MVT)](https://docs.mapbox.com/data/tilesets/guides/vector-tiles-standards/) et offrent la possbilité :
 
 - de réaliser des filtrages et des rendus spécifiques
 - d'intérroger la donnée
@@ -57,14 +59,14 @@ Il exite trois URL permettant d'accéder aux tuiles vectorielles de Mapillary :
 
 1. [Tuiles de couverture](https://www.mapillary.com/developer/api-documentation/#coverage-tiles) : qui permettent de visualiser les séquences (traces) et la position des prises de vue
     - ```https://tiles.mapillary.com/maps/vtp/mly1_computed_public/2/{z}/{x}/{y}?access_token=XXX```
-2. [Tuiles de points](https://www.mapillary.com/developer/api-documentation/#point-tiles) : qui permettent de visualiser la position des [objets détectés par les algorithmes de mapillary (autres que des panneaux de signalisation (lien vers la liste)](https://www.mapillary.com/developer/api-documentation/points)
+2. [Tuiles de points](https://www.mapillary.com/developer/api-documentation/#point-tiles) : qui permettent de visualiser la position des [objets détectés par les algorithmes de mapillary (autres que des panneaux de signalisation)](https://www.mapillary.com/developer/api-documentation/points)
     - ```https://tiles.mapillary.com/maps/vtp/mly_map_feature_point/2/{z}/{x}/{y}?access_token=XXX```
-3. [Tuiles de panneaux de signalisation](https://www.mapillary.com/developer/api-documentation/#traffic-sign-tiles) : qui permettent de visualiser la position des [panneaux de signalisation détectés par les algorithmes de Mapillary (lien vers la liste)](https://www.mapillary.com/developer/api-documentation/traffic-signs)
+3. [Tuiles de panneaux de signalisation](https://www.mapillary.com/developer/api-documentation/#traffic-sign-tiles) : qui permettent de visualiser la position des [panneaux de signalisation détectés par les algorithmes de Mapillary](https://www.mapillary.com/developer/api-documentation/traffic-signs)
     - ```https://tiles.mapillary.com/maps/vtp/mly_map_feature_traffic_sign/2/{z}/{x}/{y}?access_token=XXX```
 
 ### Ajout des tuiles vectorielles
 
-Dans l'explorateur du Gestionnaire de données, ajouter une couche de tuiles vectorielles
+Dans l'explorateur du Gestionnaire de données de QGIS, ajouter une couche de tuiles vectorielles.
 
 [![Explorateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/explorateur.png "Explorateur"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/explorateur.png "Explorateur"){: data-mediabox="gallery-lightbox" data-title="Explorateur" }
 
@@ -72,7 +74,7 @@ Nommer proprement la couche vectorielle à ajouter et renseigner l'URL de la cou
 
 [![Connexion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: data-mediabox="gallery-lightbox" data-title="Connexion" }
 
-Ajouter la nouvelle couche de tuiles dans QGIS (Pour visualiser l'information, vous devrez zoomer au niveau 14).
+Ajouter la nouvelle couche de tuiles dans QGIS (Pour visualiser l'information, vous devrez zoomer au niveau 14 ou +).
 
 ### Interrogation des tuiles vectorielles
 
@@ -126,9 +128,6 @@ V_ZOOM='14'
 
 # PERMET DE DEFINIR UNE DATE DE DEBUT
 DATE_DEBUT='2021-01-01T00:00:00-00:00'
-DATE_DEBUT_T='1609459200000'
-
-PAS='0.0075'
 
 # PARAMETRES OGR
 ENCODAGE='UTF-8'
@@ -174,7 +173,7 @@ echo $XMIN $YMIN $XMAX $YMAX
 
 ### Téléchargement des tuiles et création de GPKG
 
-Ensuite, à l'aide de `curl` on va pouvoir télécharger chacune des tuiles en local puis extraire l'information pour la fusionner dans un fichier Géopackage (que l'on peut archiver).
+Ensuite, à l'aide de `curl` on va pouvoir télécharger chacune des tuiles en local et en extraire l'information pour l'intégrer dans un Géopackage (que l'on pourra archiver facilement).
 
 ``` bash
 Z=$V_ZOOM
@@ -223,21 +222,26 @@ ogr2ogr \
     -s_srs 'EPSG:3857' \
     -t_srs 'EPSG:2154' \
     $file 'traffic_sign' \
-    -where "last_seen_at>$DATE_DEBUT_T" \
+    -where "last_seen_at>$DATE_EPOCH" \
     -dialect SQLITE \
     --config OGR_TRUNCATE YES \
     --debug ON \
     --config CPL_LOG './'$REPER_LOGS'/'$DATE_YMD'_mapillary_vt_signalisation.log'
 ```
 
-[Acéder au script complet :fontawesome-regular-file-code:](https://github.com/igeofr/mapillary2pg/blob/main/mapillary_vt2pg.sh){: .md-button }
+[Accéder au script complet :fontawesome-regular-file-code:](https://github.com/igeofr/mapillary2pg/blob/main/mapillary_vt2pg.sh){: .md-button }
 {: align=middle }
 
 ----
 
 ## Conclusion
 
-Grâce aux possibilités de rendu des tuiles vectorielles de QGIS, il est possible de filtrer et customiser les données de Mapillary en fonction des besoins, tout en ayant accès à l'information en quasi temps réel. En parallèle et pour d'autres usages, le script de téléchargement des données va nous permettre de stocker l'information dans votre base de données afin qu'elle puisse bénéficier aux services concernées (services techniques, la voirie,...) pour je l'espère contribuer à améliorer la qualité de vos données.
+Grâce aux possibilités de rendu des tuiles vectorielles de QGIS, il est possible de filtrer et customiser les données de Mapillary en fonction des besoins, tout en ayant accès à l'information en quasi temps réel. 
+
+En parallèle et pour d'autres usages, le script de téléchargement des données va vous permettre de stocker l'information dans votre base de données afin qu'elle puisse : 
+
+1. bénéficier à vos services concernées (services techniques, voirie, ...),
+2. contribuer à améliorer la qualité de vos données.
 
 ----
 
