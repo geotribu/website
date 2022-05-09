@@ -78,7 +78,7 @@ Ajouter la nouvelle couche de tuiles dans QGIS (Pour visualiser l'information, v
 
 ### Interrogation des tuiles vectorielles
 
-Les tuiles vectorielles sont interrogeables et permettent une consultation des différents champs publiés. Si l'on prend l'exemple du flux lié à la signalisation, il est possible possible d'accéder aux type de panneau detecté ainsi qu'aux dates auxquelles il a été vu pour la première et la dernière fois.
+Les tuiles vectorielles sont interrogeables et permettent une consultation des différents champs publiés. Si l'on prend l'exemple du flux lié à la signalisation, il est possible possible d'accéder au type de panneau detecté ainsi qu'aux dates auxquelles il a été vu pour la première et la dernière fois.
 
 [![Information](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/information.png "Information"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/information.png "Information"){: data-mediabox="gallery-lightbox" data-title="Information" }
 
@@ -99,7 +99,7 @@ Il est possible d'enrichir ce rendu par défaut en ajoutant de nouveaux styles, 
 
 ## 2. Extraire les données vectorielles des tuiles vectorielles
 
-Mainteant qu'on s'est bien amusé sur le tunning des tuiles vectoirelles :race_car:, il pourrait être intéressant de récupérer l'information vectorielle pour la stocker. Dans cette partie, je vais vous présenter un script qui me permet :
+Mainteant qu'on s'est bien amusé sur le tunning des tuiles vectorielles :race_car:, il pourrait être intéressant de récupérer l'information vectorielle pour la stocker. Dans cette partie, je vais vous présenter un script qui me permet :
 
 1. de récupérer de données vecteurs à partir des différents flux des tuiles vectorielles,
 2. d'intégrer les données dans une base de données PosgreSQL/PostGIS.
