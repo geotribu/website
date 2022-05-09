@@ -80,6 +80,6 @@ Cela aura pour effet de créer un nouveau fichier OpenLayers compressé contenan
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/team/avdc.md"
