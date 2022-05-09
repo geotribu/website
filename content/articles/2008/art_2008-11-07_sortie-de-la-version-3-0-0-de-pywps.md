@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 07 novembre 2008
 
-Grâce au fabuleux travail de Jachym Cepicky et de toute son équipe la release 3.0.0 de PyWPS est enfin [téléchargeable](http://wald.intevation.org/frs/download.php/525/pywps-3.0.0.tar.gz) .
+Grâce au fabuleux travail de Jachym Cepicky et de toute son équipe la release 3.0.0 de PyWPS est enfin [téléchargeable](http://wald.intevation.org/frs/download.php/525/pywps-3.0.0.tar.gz).
 
 Juste pour rappel, PyWPS est une implémentation du protocole [Web Processing Service](http://www.opengeospatial.org/standards/requests/28) permettant à votre serveur, à partir d'une simple requête (SOAP ou RestFul), d'effectuer des traitements cartographiques (buffer, agrégation...)
 
