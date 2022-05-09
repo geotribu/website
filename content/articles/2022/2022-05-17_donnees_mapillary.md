@@ -30,14 +30,14 @@ tags:
 - l'outil de conversion [ogr2ogr](https://gdal.org/programs/ogr2ogr.html)
 - [cURL](https://curl.se)
 
-!!! Conseil lecture
+!!! Lecture
     Un article de Morgan Hite sur son blog : [QGIS 3 and Vector map tiles](https://wanderingcartographer.wordpress.com/2021/01/09/qgis-3-and-vector-map-tiles/)
 
 ## Intro
 
 ![Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Mapillary"){: .img-rdp-news-thumb }
 
-Aujourd'hui, je vais vous présenter différentes manières d'accéder aux données produites à partir des prises de vue publiées sur Mapillary et qui pourront peut-être vous permettre d'enrichir votre SIG sur certaines thématiques. Pour ce faire nous allons nous appuyer sur les différents services proposés par la [4ème version de l'API](https://www.mapillary.com/developer/api-documentation/).
+Aujourd'hui, je vais vous présenter différentes manières d'accéder aux données identifiées à partir des prises de vue publiées sur Mapillary et qui pourront peut-être vous permettre d'enrichir votre SIG sur certaines thématiques. Pour ce faire nous allons nous appuyer sur les différents services proposés par la [4ème version de l'API](https://www.mapillary.com/developer/api-documentation/).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -48,7 +48,7 @@ Aujourd'hui, je vais vous présenter différentes manières d'accéder aux donn�
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
-Si on épluche la documentation on peut voir que Mapillary propose un service d'accès à ses données basé sur des services de [tuiles vectorielles](https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html) qui ont l'avantage d'offrir une solution assez souple et légère permettant de visualiser de grandes quantités d'informations. Les tuiles vectorielles de Mapillary suivent les spécifications des tuiles Mapbox (MVT) et elles offrent la possbilité :
+Lorsqu'on épluche la documentation, on peut voir que Mapillary propose un service d'accès à ses données basé sur des services de [tuiles vectorielles](https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html). Ils ont l'avantage d'offrir une solution assez souple et légère permettant de visualiser de grandes quantités d'informations. Les tuiles vectorielles de Mapillary suivent les spécifications des tuiles Mapbox (MVT) et offrent la possbilité :
 
 - de réaliser des filtrages et des rendus spécifiques
 - d'intérroger la donnée
@@ -72,7 +72,7 @@ Nommer proprement la couche vectorielle à ajouter et renseigner l'URL de la cou
 
 [![Connexion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: data-mediabox="gallery-lightbox" data-title="Connexion" }
 
-Ajouter la nouvelle couche de tuiles de couverture dans QGIS (Pour visualiser l'information, vous devrez zoomer au niveau 14).
+Ajouter la nouvelle couche de tuiles dans QGIS (Pour visualiser l'information, vous devrez zoomer au niveau 14).
 
 ### Interrogation des tuiles vectorielles
 
@@ -88,19 +88,19 @@ Par défaut lors de l'ajout, les données présentent dans les tuiles vectoriell
 - Lignes
 - Points
 
-[![Symbologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: data-mediabox="gallery-lightbox" data-title="Connexion" }
-Il est possible d'enrichir ce rendu par défaut en ajoutant de nouveau style, en définissant la couche sur laquelle vous souhaitez travailler, exemple : `traffic_signs` et en jouant avec les filtres, exemple : `(geometry_type($geometry)='Point') AND ("value" IS 'information--general-directions--g1')`
+[![Symbologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: data-mediabox="gallery-lightbox" data-title="Symbologie" }
+
+Il est possible d'enrichir ce rendu par défaut en ajoutant de nouveaux styles, en définissant la couche sur laquelle vous souhaitez travailler, exemple : `traffic_signs` et en jouant avec les filtres, exemple : `(geometry_type($geometry)='Point') AND ("value" IS 'information--general-directions--g1')`
 
 !!! info
-    Il y a aussi la possibilité d'importer un style configuré au format QML ou MapBox GL Json.
-
+    Il y a aussi la possibilité d'importer un style déjà configuré au format QML ou MapBox GL Json.
 
 ## 2. Extraire les données vectorielles des tuiles vectorielles
 
-Mainteant qu'on s'est bien amusé sur le tunning des tuiles vectoirelles, il pourrait être intéressant de récupérer l'information vectorielle pour la stocker. Dans cette partie, je vais vous présenter un script qui me permet de :
+Mainteant qu'on s'est bien amusé sur le tunning des tuiles vectoirelles :race_car:, il pourrait être intéressant de récupérer l'information vectorielle pour la stocker. Dans cette partie, je vais vous présenter un script qui me permet :
 
-1. récupérer de données vecteurs à partir des différents flux des tuiles vectorielles
-2. intégrer les données dans une base de données PosgreSQL/PostGIS
+1. de récupérer de données vecteurs à partir des différents flux des tuiles vectorielles,
+2. d'intégrer les données dans une base de données PosgreSQL/PostGIS.
 
 ### Un environnement de travail : config.env
 
@@ -143,7 +143,7 @@ C_SCHEMA='ref_mapillary'
 
 ### Convertir l'emprise lat/long dans le système de numérotation des tuiles
 
-Avant de se lancer dans la récupération des tuiles, il nous faut dans un premier temps identifier les numéros de tuiles qui croisent notre emprise de travail et pour cela, on va s'apppuyer sur une [solution proposée sur le wiki d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Bourne_shell_with_Awk).
+Les tuiles ne sont pas définies par une longitude/latitude mais par une numérotation spécique, il nous faut donc identifier les numéros des tuiles qui croisent notre emprise de travail et pour cela, je me suis appuyé sur une [solution proposée sur le wiki d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Bourne_shell_with_Awk).
 
 ```bash
 # BBOX ET IDENTIFICATION DES TUILES
@@ -174,7 +174,7 @@ echo $XMIN $YMIN $XMAX $YMAX
 
 ### Téléchargement des tuiles et création de GPKG
 
-Ensuite, à l'aide de `curl` on va pouvoir télécharger chacune des tuiles en local puis extraire l'information pour la fusionner dans un fichier Géopackage que l'on peut archiver.
+Ensuite, à l'aide de `curl` on va pouvoir télécharger chacune des tuiles en local puis extraire l'information pour la fusionner dans un fichier Géopackage (que l'on peut archiver).
 
 ``` bash
 Z=$V_ZOOM
@@ -215,7 +215,7 @@ done
 
 Maintenant que nous avons pu extraire les données vectorielles des tuiles vectorielles, il ne nous reste plus qu'à les intégrer dans notre base de données PostgreSQL/PostGIS à l'aide d'`ogr2ogr`.
 
-```
+``` bash
 ogr2ogr \
     -append \
     -f "PostgreSQL" PG:"service='$C_SERVICE' schemas='$C_SCHEMA'" \
@@ -230,7 +230,7 @@ ogr2ogr \
     --config CPL_LOG './'$REPER_LOGS'/'$DATE_YMD'_mapillary_vt_signalisation.log'
 ```
 
-[Acéder au script :fontawesome-regular-file-code:](https://github.com/igeofr/mapillary2pg/blob/main/mapillary_vt2pg.sh){: .md-button }
+[Acéder au script complet :fontawesome-regular-file-code:](https://github.com/igeofr/mapillary2pg/blob/main/mapillary_vt2pg.sh){: .md-button }
 {: align=middle }
 
 ----
