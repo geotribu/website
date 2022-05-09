@@ -42,7 +42,7 @@ Pour ajouter le script il vous suffit simplement, après l'avoir [téléchargé]
 Pour utiliser les tooltips, il faut ensuite ajouter un objet de type controle (Etape 1), puis définir une action de type mouseover (Etape 2) pour les objets sur lesquels vous souhaitez voir les tooltips s'afficher . Enfin pour chacune des actions définir les méthodes show() et hide() de la classe (Etape 3) :  
 
 ```javascript
-ttips = new OpenLayers.Control.ToolTips({shadow:true});		
+ttips = new OpenLayers.Control.ToolTips({shadow:true});
       map.addControl(ttips); // Etape 1
 
       markers.events.register("mouseover", markers, toolTipsOver);
