@@ -7,7 +7,7 @@ categories:
     - tutoriel
 date: 2022-05-17 14:20
 description: "Accéder aux données de Mapillary et les intégrer dans son SIG"
-image: ""
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/mapillary_data.png"
 license: default
 tags:
     - Bash
