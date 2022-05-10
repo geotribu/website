@@ -24,27 +24,27 @@ Pour donner suite à [l’article récent sur Input](https://static.geotribu.fr/
 Tout d’abord, quelques informations factuelles pour illustrer notre expérience avec Qfield  :
 
 - **Utilisation en production depuis 2017**. J’ai pu mettre la main sur notre premier point Qfield créé le 21/12/2017 à Vaison-La-Romaine. On notera l’utilisation de captures annotées qui sont parfois un “entre deux” utiles entre une donnée SIG structurée et des informations complexes à restituer.
-    
+
     ![Untitled](Releve%CC%81%20terrain%20avec%20Qfield%2086dd76c070b2498ebc7cf27b5618ce66/Untitled.png)
-    
+
 - Utilisation dans différents contextes
     - Suivi de travaux,
     - relevé/recensement,
     - audit de site pour implantation d’infrastructure,
 - Utilisation par différents profils utilisateurs, y compris moins technophiles
 - Utilisation sur différentes latitudes. Ici, c'est surtout le retour d’expérience hardware qui est intéressant : très compliqué d’utiliser des tablettes “classiques” en conditions de forte chaleur et ensoleillement.
-    
+
     ![Untitled](Releve%CC%81%20terrain%20avec%20Qfield%2086dd76c070b2498ebc7cf27b5618ce66/Untitled%201.png)
-    
+
 - Supervision d’u**ne vingtaine de tablettes** en utilisation régulière, ce qui nous a demandé d’industrialiser nos méthodes de support et de consolidation de la donnée.
 - **Environ 100 000 points** créés avec Qfield
-    
+
     ![Untitled](Releve%CC%81%20terrain%20avec%20Qfield%2086dd76c070b2498ebc7cf27b5618ce66/Untitled%202.png)
-    
+
 
 ## Alternatives
 
-Input est une alternative qui a été présenté dans le précédent article. 
+Input est une alternative qui a été présenté dans le précédent article.
 
 Il y a aussi plusieurs solutions de collecte de donnée sans interface SIG (KoboCollect et ODK par exemple). Si la collecte de donnée qui ne requiert pas d’affichage de référentiel SIG ces dernières solutions peuvent être plus simple à mettre en œuvre.
 
@@ -52,9 +52,9 @@ La réelle force des applications Input et Qfield est donc
 
 - De pouvoir produire et consulter de la donnée SIG sur le terrain, en s’appuyant sur un référentiel riche.
 - De pouvoir si besoin produire de la donnée SIG complexe (lignes, polygones).
-    
+
     ![Untitled](Releve%CC%81%20terrain%20avec%20Qfield%2086dd76c070b2498ebc7cf27b5618ce66/Untitled%203.png)
-    
+
 
 ## Avantages et inconvénients
 
@@ -141,25 +141,25 @@ Dernièrement, j’utilise GIT pour gérer le partage et la synchronisation de p
 - Un serveur avec un script simple et périodique pour :
     - pull depuis origin
     - passer dans chaque branche et exécuter le script de synchronisation.
-    
+
     Le script de synchronisation peut être très simple et dépend de vos outils de restitution. Par exemple pour une consolidation des données de N tablette vers une table PostGIS + migration des photos vers un serveur web :
-    
+
     ```bash
     # Requiert une variable d'environnement WS_FOLDER correspondant au dossier du serveur web pour les images
     # Le script doit être exécuté à partir du répertoire racine du GIT
     PICTS_FOLDER=$WS_FOLDER/MB/RBAL
-    
+
     # Copie des images
     rsync -av DCIM/* $PICTS_FOLDER
     ogr2ogr --config PG_USE_COPY YES -f PostgreSQL PG:" dbname='$PG_DBNAME' host=$PG_HOST port=$PG_PORT user='$PG_USER' password='$PG_PASSWORD' active_schema=qfield_mb " "controle/mb_controle_rbal.sqlite" controle_rbal -append -skipfailures -nln qfield_mb.mb_controle_rbal -sql "SELECT *, '$branch' AS source FROM controle_rbal"
     ogr2ogr --config PG_USE_COPY YES -f PostgreSQL PG:" dbname='$PG_DBNAME' host=$PG_HOST port=$PG_PORT user='$PG_USER' password='$PG_PASSWORD' active_schema=qfield_mb " "controle/mb_add_rbal.sqlite" t_adresse -append -skipfailures -nln qfield_mb.mb_add_rbal -sql "SELECT *, '$branch' AS source FROM t_adresse"
     ```
-    
+
     <aside>
     ⚠️ Attention à bien mettre une contrainte d’unicité sur l’UUID pour éviter d’importer plusieurs fois les mêmes données. L’importation complète avec -skipfailures (pour les erreurs d’unicité) est un peu bourrin, mais infaillible.
-    
+
     </aside>
-    
+
 
 Côté tablette, j’ai développé un ensemble de scripts bash utilisés avec termux, termux-widget et termux-api pour
 
