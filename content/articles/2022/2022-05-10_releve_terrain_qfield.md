@@ -1,5 +1,5 @@
 ---
-title: "Effectuer un relevé de terrain avec QGIS et Input"
+title: "Effectuer un relevé de terrain avec QGIS et QField"
 authors:
     - Valérian LEBERT
 categories:
@@ -41,7 +41,6 @@ Tout d’abord, quelques informations factuelles pour illustrer notre expérienc
 
     ![Untitled](Releve%CC%81%20terrain%20avec%20Qfield%2086dd76c070b2498ebc7cf27b5618ce66/Untitled%202.png)
 
-
 ## Alternatives
 
 Input est une alternative qui a été présenté dans le précédent article.
@@ -54,7 +53,6 @@ La réelle force des applications Input et Qfield est donc
 - De pouvoir si besoin produire de la donnée SIG complexe (lignes, polygones).
 
     ![Untitled](Releve%CC%81%20terrain%20avec%20Qfield%2086dd76c070b2498ebc7cf27b5618ce66/Untitled%203.png)
-
 
 ## Avantages et inconvénients
 
@@ -99,14 +97,11 @@ Usez et abusez de toutes les fonctionnalités du formulaire d’attributs (ongle
 
 Utiliser le générateur d’UUID pour faire des clés primaires uniques entre vos différents terminaux, ce qui permettra ensuite de consolider l’ensemble plus facilement.
 
-### Gestion de la synchronisation des projets.
+### Gestion de la synchronisation des projets
 
-<aside>
 💡 Notre utilisation de Qfield remonte à bien avant l’ère de Qfield Cloud. C’est pourquoi nous avons développé nos propres solutions de synchronisation pour gérer les flux de données vers et depuis les terminaux.
 Depuis, Qfield Cloud a bien évolué et mériterait probablement un test approfondi et un article. Bientôt peut-être.
 Enfin, depuis la version 2.0.15, Qfield a modifié ses modalités d’accès au système de fichier Android, ce qui rend les solutions ci-dessus inutilisables avec les dernières versions de Qfield ([https://docs.qfield.org/get-started/storage/](https://docs.qfield.org/get-started/storage/)). Heureusement, les APK des anciennes versions restent disponibles ici : [https://github.com/opengisch/QField/releases](https://github.com/opengisch/QField/releases)
-
-</aside>
 
 ### PostGIS
 
@@ -128,7 +123,7 @@ Pour gérer une administration d’utilisateurs (plusieurs utilisateurs, plusieu
 
 ![Untitled](Releve%CC%81%20terrain%20avec%20Qfield%2086dd76c070b2498ebc7cf27b5618ce66/Untitled%2011.png)
 
-L’inconvénient est que cela nécessite tout de maintenir des applications serveur, ce qui est rigolo un temps et source de stress ensuite 🙂
+L’inconvénient est que cela nécessite tout de maintenir des applications serveur, ce qui est rigolo un temps et source de stress ensuite 🙂.
 
 ### GIT
 
@@ -155,11 +150,8 @@ Dernièrement, j’utilise GIT pour gérer le partage et la synchronisation de p
     ogr2ogr --config PG_USE_COPY YES -f PostgreSQL PG:" dbname='$PG_DBNAME' host=$PG_HOST port=$PG_PORT user='$PG_USER' password='$PG_PASSWORD' active_schema=qfield_mb " "controle/mb_add_rbal.sqlite" t_adresse -append -skipfailures -nln qfield_mb.mb_add_rbal -sql "SELECT *, '$branch' AS source FROM t_adresse"
     ```
 
-    <aside>
-    ⚠️ Attention à bien mettre une contrainte d’unicité sur l’UUID pour éviter d’importer plusieurs fois les mêmes données. L’importation complète avec -skipfailures (pour les erreurs d’unicité) est un peu bourrin, mais infaillible.
-
-    </aside>
-
+!!! warning inline end
+    Attention à bien mettre une contrainte d’unicité sur l’UUID pour éviter d’importer plusieurs fois les mêmes données. L’importation complète avec -skipfailures (pour les erreurs d’unicité) est un peu bourrin, mais infaillible.
 
 Côté tablette, j’ai développé un ensemble de scripts bash utilisés avec termux, termux-widget et termux-api pour
 
