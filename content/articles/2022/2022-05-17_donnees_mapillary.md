@@ -243,7 +243,7 @@ ogr2ogr \
 [Accéder au script complet :fontawesome-regular-file-code:](https://github.com/igeofr/mapillary2pg/blob/main/mapillary_vt2pg.sh){: .md-button }
 {: align=middle }
 
-### Exécution 
+### Exécution
 
 Maintenant que le fichier de configuration es complété et que vous avez bien compris le principe du script `mapillary_vt2pg.sh` qui permet de récupérer les données depuis lestuiles vectorielles, vous allez pouvoir lancer le script de cette manière pour récupérer les différentes données qui vous intéressent.
 
