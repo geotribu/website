@@ -1,12 +1,12 @@
 ---
-title: "Accéder aux données de Mapillary et les intégrer dans son SIG - 1/2"
+title: "Accéder aux données de Mapillary et les intégrer dans son SIG"
 authors:
     - Florian Boret
 categories:
     - article
     - tutoriel
 date: 2022-05-17 14:20
-description: "Accéder aux données de Mapillary et les intégrer dans son SIG - 1/2"
+description: "Accéder aux données de Mapillary et les intégrer dans son SIG"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/mapillary_data.png"
 license: default
 tags:
@@ -21,7 +21,7 @@ tags:
     - tuiles vectorielles
 ---
 
-# Accéder aux données de Mapillary et les intégrer dans son SIG - 1/2
+# Accéder aux données de Mapillary et les intégrer dans son SIG
 
 :calendar: Date de publication initiale : 17 Mai 2022
 
@@ -103,6 +103,17 @@ Mainteant qu'on s'est bien amusé sur le tunning des tuiles vectorielles :race_c
 
 1. de récupérer de données vecteurs à partir des différents flux des tuiles vectorielles,
 2. d'intégrer les données dans une base de données PosgreSQL/PostGIS.
+
+### Fonctionnement global
+
+```mermaid
+graph TD;
+    A[Tuiles vectorielles ];
+    A --> |curl| B{Script mapillary_vt2pg};
+    B --> C{config.env};
+    C --> B;
+    B --> |ogr2ogr| E(PostgreSQL/PostGIS);
+```
 
 ### Un environnement de travail : config.env
 
@@ -231,6 +242,16 @@ ogr2ogr \
 
 [Accéder au script complet :fontawesome-regular-file-code:](https://github.com/igeofr/mapillary2pg/blob/main/mapillary_vt2pg.sh){: .md-button }
 {: align=middle }
+
+### Exécution 
+
+Maintenant que le fichier de configuration es complété et que vous avez bien compris le principe du script `mapillary_vt2pg.sh` qui permet de récupérer les données depuis lestuiles vectorielles, vous allez pouvoir lancer le script de cette manière pour récupérer les différentes données qui vous intéressent.
+
+```bash
+sh mapillary_vt2pg.sh image
+sh mapillary_vt2pg.sh point
+sh mapillary_vt2pg.sh signalisation
+```
 
 ----
 
