@@ -245,7 +245,7 @@ ogr2ogr \
 
 ### Exécution
 
-Maintenant que le fichier de configuration es complété et que vous avez bien compris le principe du script `mapillary_vt2pg.sh` qui permet de récupérer les données depuis lestuiles vectorielles, vous allez pouvoir lancer le script de cette manière pour récupérer les différentes données qui vous intéressent.
+Maintenant que le fichier de configuration es complété et que vous avez bien compris le principe du script `mapillary_vt2pg.sh` qui permet de récupérer les données depuis les tuiles vectorielles, vous allez pouvoir lancer le script de cette manière pour récupérer les différentes données qui vous intéressent.
 
 ```bash
 sh mapillary_vt2pg.sh image
