@@ -4,7 +4,7 @@ authors:
     - Valérian LEBERT
 categories:
     - article
-date: "2022-05-10"
+date: "2022-05-24"
 description: "Retour d'expérience de l'utilisation de QField en milieu professionnel. Astuces et méthodes de synchronisation."
 image: "XXX.png"
 license: cc4_by-sa
@@ -17,7 +17,16 @@ tags:
 
 # Relevé terrain avec QField et solutions de synchronisation (hors QField Cloud)
 
-Pour donner suite à [l’article récent sur Input](https://static.geotribu.fr/articles/2022/2022-03-11_releve_terrain_qgis_input/), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de QField ces dernières années avec le cabinet Tactis.
+## Introduction
+
+:calendar: Date de publication initiale : 24 mai 2022
+
+Pour donner suite à [l’article récent sur Input](/articles/2022/2022-03-11_releve_terrain_qgis_input/), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de QField ces dernières années avec le cabinet Tactis.
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
+----
 
 ## Terrain de jeu
 
