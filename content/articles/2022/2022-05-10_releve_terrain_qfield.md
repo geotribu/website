@@ -52,7 +52,7 @@ La réelle force des applications Input et QField est donc
 - De pouvoir produire et consulter de la donnée SIG sur le terrain, en s’appuyant sur un référentiel riche.
 - De pouvoir si besoin produire de la donnée SIG complexe (lignes, polygones).
 
-    [![Qgis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_project.png "Qgis"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_project.png "Qgis"){: data-mediabox="lightbox-gallery" data-title="Qgis"}
+    [![QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_project.png "QGIS"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_project.png "QGIS"){: data-mediabox="lightbox-gallery" data-title="QGIS"}
 
 ## Avantages et inconvénients
 
@@ -71,13 +71,13 @@ La réelle force des applications Input et QField est donc
 
 ## Mise en œuvre
 
-### Montage du projet Qgis + dépendances
+### Montage du projet QGIS + dépendances
 
 J’ai pris l’habitude de monter mes projets avec l’arborescence suivante :
 
 [![Files and folders](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_files_and_folders.png "Files and folders"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_files_and_folders.png "Files and folders"){: data-mediabox="lightbox-gallery" data-title="Files and folders"}
 
-### Astuces à savoir dans le paramétrage Qgis
+### Astuces à savoir dans le paramétrage QGIS
 
 Penser aux échelles de visibilité (symboles et étiquettes) pour alléger au maximum l’affichage en mobilité.
 
