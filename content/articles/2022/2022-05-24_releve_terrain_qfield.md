@@ -179,3 +179,11 @@ Pour la restitution des données et leur vie après l’acquisition sur le terra
 [![Airtable](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_airtable.png "Airtable"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_airtable.png "Airtable"){: data-mediabox="lightbox-gallery" data-title="Airtable"}
 
 [![Lizmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_lizmap.png "Lizmap"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_lizmap.png "Lizmap"){: data-mediabox="lightbox-gallery" data-title="Lizmap"}
+
+----
+
+## Auteur {: data-search-exclude }
+
+--8<-- "content/team/vleb.md"
+
+{% include "licenses/cc4_by-sa.md" %}
