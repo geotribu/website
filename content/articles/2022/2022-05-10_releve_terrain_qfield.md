@@ -183,4 +183,3 @@ Pour la restitution des données et leur vie après l’acquisition sur le terra
 
 
 [![Lizmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_lizmap.png "Lizmap"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_lizmap.png "Lizmap"){: data-mediabox="lightbox-gallery" data-title="Lizmap"}
-
