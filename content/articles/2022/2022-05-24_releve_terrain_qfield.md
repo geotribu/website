@@ -100,7 +100,8 @@ Ne **pas** utiliser les effets d’ombrage qui font vraiment ramer le projet sou
 
 Utiliser les thèmes pour basculer facilement entre différentes vues.
 
-[![Themes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_themes.png "Themes"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_themes.png "Themes"){: data-mediabox="lightbox-gallery" data-title="Themes"}
+[![Themes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_themes.png "Themes"){: loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_themes.png "Themes"){: data-mediabox="lightbox-gallery" data-title="Themes"}
+{: align=middle }
 
 Si certaines données sont particulièrement denses ainsi que pour les zones superposées (ex : zones techniques, parcelles, bâti...), veillez à ne pas mettre toutes les couches en "identifiable", car sinon l’identification des items utiles peut s’avérer polluée en mode tactile. Uniquement laisser les couches qui ont vocation à être interrogées.
 
