@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 date: "2022-05-10"
-description: "Retour d'expérience de l'utilisation de Qfield en milieu professionnel. Astuces et méthodes de synchronisation."
+description: "Retour d'expérience de l'utilisation de QField en milieu professionnel. Astuces et méthodes de synchronisation."
 image: "XXX.png"
 license: cc4_by-sa
 tags:
@@ -15,15 +15,15 @@ tags:
     - Lizmap
 ---
 
-# Relevé terrain avec Qfield et solutions de synchronisation (hors Qfield Cloud)
+# Relevé terrain avec QField et solutions de synchronisation (hors QField Cloud)
 
-Pour donner suite à [l’article récent sur Input](https://static.geotribu.fr/articles/2022/2022-03-11_releve_terrain_qgis_input/), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de Qfield ces dernières années avec le cabinet Tactis.
+Pour donner suite à [l’article récent sur Input](https://static.geotribu.fr/articles/2022/2022-03-11_releve_terrain_qgis_input/), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de QField ces dernières années avec le cabinet Tactis.
 
 ## Terrain de jeu
 
-Tout d’abord, quelques informations factuelles pour illustrer notre expérience avec Qfield  :
+Tout d’abord, quelques informations factuelles pour illustrer notre expérience avec QField  :
 
-- **Utilisation en production depuis 2017**. J’ai pu mettre la main sur notre premier point Qfield créé le 21/12/2017 à Vaison-La-Romaine. On notera l’utilisation de captures annotées qui sont parfois un “entre deux” utiles entre une donnée SIG structurée et des informations complexes à restituer.
+- **Utilisation en production depuis 2017**. J’ai pu mettre la main sur notre premier point QField créé le 21/12/2017 à Vaison-La-Romaine. On notera l’utilisation de captures annotées qui sont parfois un “entre deux” utiles entre une donnée SIG structurée et des informations complexes à restituer.
 
     [![Premier point](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_premier_point.png "Premier point"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_premier_point.png "Premier point"){: data-mediabox="lightbox-gallery" data-title="Premier point"}
 
@@ -37,7 +37,7 @@ Tout d’abord, quelques informations factuelles pour illustrer notre expérienc
     [![Cote d'Ivoire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_cote_ivoire.png "Cote d'Ivoire"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_cote_ivoire.png "Cote d'Ivoire"){: data-mediabox="lightbox-gallery" data-title="Cote d'Ivoire"}
 
 - Supervision d’u**ne vingtaine de tablettes** en utilisation régulière, ce qui nous a demandé d’industrialiser nos méthodes de support et de consolidation de la donnée.
-- **Environ 100 000 points** créés avec Qfield
+- **Environ 100 000 points** créés avec QField
 
     [![Mass points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_mass_point.png "Mass points"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_mass_point.png "Mass points"){: data-mediabox="lightbox-gallery" data-title="Mass points"}
 
@@ -47,7 +47,7 @@ Input est une alternative qui a été présenté dans le précédent article.
 
 Il y a aussi plusieurs solutions de collecte de donnée sans interface SIG (KoboCollect et ODK par exemple). Si la collecte de donnée qui ne requiert pas d’affichage de référentiel SIG ces dernières solutions peuvent être plus simple à mettre en œuvre.
 
-La réelle force des applications Input et Qfield est donc
+La réelle force des applications Input et QField est donc
 
 - De pouvoir produire et consulter de la donnée SIG sur le terrain, en s’appuyant sur un référentiel riche.
 - De pouvoir si besoin produire de la donnée SIG complexe (lignes, polygones).
@@ -91,7 +91,7 @@ Si certaines sonnées sont particulièrement denses ainsi que pour les zones sup
 
 [![Identify](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_identify.png "Identify"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_identify.png "Identify"){: data-mediabox="lightbox-gallery" data-title="Identify"}
 
-Usez et abusez de toutes les fonctionnalités du formulaire d’attributs (onglets, valeurs par défaut, formules, contraintes, non nul, relations, etc.). Presque tout est supporté par Qfield.
+Usez et abusez de toutes les fonctionnalités du formulaire d’attributs (onglets, valeurs par défaut, formules, contraintes, non nul, relations, etc.). Presque tout est supporté par QField.
 
 [![Forms](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_forms.png "Forms"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_forms.png "Forms"){: data-mediabox="lightbox-gallery" data-title="Forms"}
 
@@ -100,9 +100,9 @@ Utiliser le générateur d’UUID pour faire des clés primaires uniques entre v
 ### Gestion de la synchronisation des projets
 
 !!! info
-    Notre utilisation de Qfield remonte à bien avant l’ère de Qfield Cloud. C’est pourquoi nous avons développé nos propres solutions de synchronisation pour gérer les flux de données vers et depuis les terminaux.
-    Depuis, Qfield Cloud a bien évolué et mériterait probablement un test approfondi et un article. Bientôt peut-être.
-    Enfin, depuis la version 2.0.15, Qfield a modifié ses modalités d’accès au système de fichier Android, ce qui rend les solutions ci-dessus inutilisables avec les dernières versions de Qfield ([https://docs.qfield.org/get-started/storage/](https://docs.qfield.org/get-started/storage/)). Heureusement, les APK des anciennes versions restent disponibles ici : [https://github.com/opengisch/QField/releases](https://github.com/opengisch/QField/releases)
+    Notre utilisation de QField remonte à bien avant l’ère de QField Cloud. C’est pourquoi nous avons développé nos propres solutions de synchronisation pour gérer les flux de données vers et depuis les terminaux.
+    Depuis, QField Cloud a bien évolué et mériterait probablement un test approfondi et un article. Bientôt peut-être.
+    Enfin, depuis la version 2.0.15, QField a modifié ses modalités d’accès au système de fichier Android, ce qui rend les solutions ci-dessus inutilisables avec les dernières versions de QField ([https://docs.qfield.org/get-started/storage/](https://docs.qfield.org/get-started/storage/)). Heureusement, les APK des anciennes versions restent disponibles ici : [https://github.com/opengisch/QField/releases](https://github.com/opengisch/QField/releases)
 
 ### PostGIS
 
@@ -128,7 +128,7 @@ L’inconvénient est que cela nécessite tout de maintenir des applications ser
 
 ### GIT
 
-Dernièrement, j’utilise GIT pour gérer le partage et la synchronisation de projets Qfield sur une flotte de tablette. Le principe est le suivant :
+Dernièrement, j’utilise GIT pour gérer le partage et la synchronisation de projets QField sur une flotte de tablette. Le principe est le suivant :
 
 - Hébergement sur Gitlab (10 Go par projet sur un compte gratuit !!)
 - Une branche Master et N branches par tablette utilisatrices
