@@ -126,9 +126,9 @@ Pour gérer une administration d’utilisateurs (plusieurs utilisateurs, plusieu
 
 L’inconvénient est que cela nécessite tout de maintenir des applications serveur, ce qui est rigolo un temps et source de stress ensuite 🙂.
 
-### GIT
+### Git
 
-Dernièrement, j’utilise GIT pour gérer le partage et la synchronisation de projets QField sur une flotte de tablette. Le principe est le suivant :
+Dernièrement, j’utilise [Git] pour gérer le partage et la synchronisation de projets QField sur une flotte de tablette. Le principe est le suivant :
 
 - Hébergement sur Gitlab (10 Go par projet sur un compte gratuit !!)
 - Une branche Master et N branches par tablette utilisatrices
@@ -142,7 +142,7 @@ Dernièrement, j’utilise GIT pour gérer le partage et la synchronisation de p
 
     ```bash
     # Requiert une variable d'environnement WS_FOLDER correspondant au dossier du serveur web pour les images
-    # Le script doit être exécuté à partir du répertoire racine du GIT
+    # Le script doit être exécuté à partir du répertoire racine du [Git]
     PICTS_FOLDER=$WS_FOLDER/MB/RBAL
 
     # Copie des images
@@ -158,10 +158,10 @@ Côté tablette, j’ai développé un ensemble de scripts bash utilisés avec t
 
 - Lister les projets existants
 - Télécharger un nouveau projet
-- Synchroniser un projet (réception des nouvelles données, et push des données + photos collectées). Au passage, on redimensionne les photos pour ne pas faire exploser le GIT et le serveur de stockage.
+- Synchroniser un projet (réception des nouvelles données, et push des données + photos collectées). Au passage, on redimensionne les photos pour ne pas faire exploser le [Git] et le serveur de stockage.
 - Affichage de l’avancement dans une notification.
 
-Grâce à un semblant d’UI minimaliste (termux-widget), j’arrive à faire utiliser cette solution par des techniciens qui n’auront pas à mettre le nez dans la console. Cerise sur le gâteau : je gagne beaucoup de temps pour le paramétrage de nouvelles tablettes (il suffit de télécharger/installer 3 APK puis copier/coller une commande d’installation). Et GIT a ce côté rassurant qu’on ne peut pas perdre de donnée et que la donnée est clonée sur différents terminaux.
+Grâce à un semblant d’UI minimaliste (termux-widget), j’arrive à faire utiliser cette solution par des techniciens qui n’auront pas à mettre le nez dans la console. Cerise sur le gâteau : je gagne beaucoup de temps pour le paramétrage de nouvelles tablettes (il suffit de télécharger/installer 3 APK puis copier/coller une commande d’installation). Et [Git] a ce côté rassurant qu’on ne peut pas perdre de donnée et que la donnée est clonée sur différents terminaux.
 
 ## Restitution
 
