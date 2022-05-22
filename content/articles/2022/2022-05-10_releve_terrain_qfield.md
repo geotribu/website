@@ -108,9 +108,10 @@ Utiliser le générateur d’UUID pour faire des clés primaires uniques entre v
 
 ### Gestion de la synchronisation des projets
 
-💡 Notre utilisation de Qfield remonte à bien avant l’ère de Qfield Cloud. C’est pourquoi nous avons développé nos propres solutions de synchronisation pour gérer les flux de données vers et depuis les terminaux.
-Depuis, Qfield Cloud a bien évolué et mériterait probablement un test approfondi et un article. Bientôt peut-être.
-Enfin, depuis la version 2.0.15, Qfield a modifié ses modalités d’accès au système de fichier Android, ce qui rend les solutions ci-dessus inutilisables avec les dernières versions de Qfield ([https://docs.qfield.org/get-started/storage/](https://docs.qfield.org/get-started/storage/)). Heureusement, les APK des anciennes versions restent disponibles ici : [https://github.com/opengisch/QField/releases](https://github.com/opengisch/QField/releases)
+!!! info
+    Notre utilisation de Qfield remonte à bien avant l’ère de Qfield Cloud. C’est pourquoi nous avons développé nos propres solutions de synchronisation pour gérer les flux de données vers et depuis les terminaux.
+    Depuis, Qfield Cloud a bien évolué et mériterait probablement un test approfondi et un article. Bientôt peut-être.
+    Enfin, depuis la version 2.0.15, Qfield a modifié ses modalités d’accès au système de fichier Android, ce qui rend les solutions ci-dessus inutilisables avec les dernières versions de Qfield ([https://docs.qfield.org/get-started/storage/](https://docs.qfield.org/get-started/storage/)). Heureusement, les APK des anciennes versions restent disponibles ici : [https://github.com/opengisch/QField/releases](https://github.com/opengisch/QField/releases)
 
 ### PostGIS
 
@@ -163,7 +164,7 @@ Dernièrement, j’utilise GIT pour gérer le partage et la synchronisation de p
     ogr2ogr --config PG_USE_COPY YES -f PostgreSQL PG:" dbname='$PG_DBNAME' host=$PG_HOST port=$PG_PORT user='$PG_USER' password='$PG_PASSWORD' active_schema=qfield_mb " "controle/mb_add_rbal.sqlite" t_adresse -append -skipfailures -nln qfield_mb.mb_add_rbal -sql "SELECT *, '$branch' AS source FROM t_adresse"
     ```
 
-!!! warning inline end
+!!! warning
     Attention à bien mettre une contrainte d’unicité sur l’UUID pour éviter d’importer plusieurs fois les mêmes données. L’importation complète avec -skipfailures (pour les erreurs d’unicité) est un peu bourrin, mais infaillible.
 
 Côté tablette, j’ai développé un ensemble de scripts bash utilisés avec termux, termux-widget et termux-api pour
