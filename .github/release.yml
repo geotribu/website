@@ -1,0 +1,24 @@
+changelog:
+  exclude:
+    authors:
+      - dependabot
+      - pre-commit-ci
+  categories:
+    - title: Corrections et Nettoyage 🧹
+      labels:
+        - tipex
+    - title: Articles 📖
+      labels:
+        - articles
+    - title: Revues de presse 📰
+      labels:
+        - rdp
+    - title: Outillage 🔧
+      labels:
+        - ci-cd
+        - dependencies
+        - mkdocs
+        - theme
+    - title: Autres
+      labels:
+        - "*"
