@@ -25,7 +25,9 @@ Tout d’abord, quelques informations factuelles pour illustrer notre expérienc
 
 - **Utilisation en production depuis 2017**. J’ai pu mettre la main sur notre premier point Qfield créé le 21/12/2017 à Vaison-La-Romaine. On notera l’utilisation de captures annotées qui sont parfois un “entre deux” utiles entre une donnée SIG structurée et des informations complexes à restituer.
 
-    ![Premier point](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_premier_point.png)
+    [![Premier point](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_premier_point.png "Premier point"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_premier_point.png "Premier point"){: data-mediabox="lightbox-gallery" data-title="Premier point"}
+
+
 
 - Utilisation dans différents contextes
     - Suivi de travaux,
@@ -34,12 +36,14 @@ Tout d’abord, quelques informations factuelles pour illustrer notre expérienc
 - Utilisation par différents profils utilisateurs, y compris moins technophiles
 - Utilisation sur différentes latitudes. Ici, c'est surtout le retour d’expérience hardware qui est intéressant : très compliqué d’utiliser des tablettes “classiques” en conditions de forte chaleur et ensoleillement.
 
-    ![Cote d'Ivoire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_cote_ivoire.png)
+    [![Cote d'Ivoire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_cote_ivoire.png "Cote d'Ivoire"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_cote_ivoire.png "Cote d'Ivoire"){: data-mediabox="lightbox-gallery" data-title="Cote d'Ivoire"}
+
 
 - Supervision d’u**ne vingtaine de tablettes** en utilisation régulière, ce qui nous a demandé d’industrialiser nos méthodes de support et de consolidation de la donnée.
 - **Environ 100 000 points** créés avec Qfield
 
-    ![Mass points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_mass_point.png)
+    [![Mass points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_mass_point.png "Mass points"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_mass_point.png "Mass points"){: data-mediabox="lightbox-gallery" data-title="Mass points"}
+
 
 ## Alternatives
 
@@ -52,7 +56,8 @@ La réelle force des applications Input et Qfield est donc
 - De pouvoir produire et consulter de la donnée SIG sur le terrain, en s’appuyant sur un référentiel riche.
 - De pouvoir si besoin produire de la donnée SIG complexe (lignes, polygones).
 
-    ![Qgis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_project.png)
+    [![Qgis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_project.png "Qgis"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_project.png "Qgis"){: data-mediabox="lightbox-gallery" data-title="Qgis"}
+
 
 ## Avantages et inconvénients
 
@@ -75,7 +80,8 @@ La réelle force des applications Input et Qfield est donc
 
 J’ai pris l’habitude de monter mes projets avec l’arborescence suivante :
 
-![Files and folders](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_files_and_folders.png)
+[![Files and folders](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_files_and_folders.png "Files and folders"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_files_and_folders.png "Files and folders"){: data-mediabox="lightbox-gallery" data-title="Files and folders"}
+
 
 ### Astuces à savoir dans le paramétrage Qgis
 
@@ -85,15 +91,18 @@ Ne **pas** utiliser les effets d’ombrage qui font vraiment ramer le projet sou
 
 Utiliser les thèmes pour basculer facilement entre différentes vues.
 
-![Themes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_themes.png)
+[![Themes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_themes.png "Themes"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_themes.png "Themes"){: data-mediabox="lightbox-gallery" data-title="Themes"}
+
 
 Si certaines sonnées sont particulièrement denses ainsi que pour les zones superposées (ex : zones techniques, parcelles, bâti...), veillez à ne pas mettre toutes les couches en “identifiable”, car sinon l’identification des items utiles peut s’avérer polluée en mode tactile. Uniquement laisser les couches qui ont vocation à être interrogées.
 
-![Identify](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_identify.png)
+[![Identify](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_identify.png "Identify"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_identify.png "Identify"){: data-mediabox="lightbox-gallery" data-title="Identify"}
+
 
 Usez et abusez de toutes les fonctionnalités du formulaire d’attributs (onglets, valeurs par défaut, formules, contraintes, non nul, relations, etc.). Presque tout est supporté par Qfield.
 
-![Forms](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_forms.png)
+[![Forms](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_forms.png "Forms"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_forms.png "Forms"){: data-mediabox="lightbox-gallery" data-title="Forms"}
+
 
 Utiliser le générateur d’UUID pour faire des clés primaires uniques entre vos différents terminaux, ce qui permettra ensuite de consolider l’ensemble plus facilement.
 
@@ -107,7 +116,8 @@ Enfin, depuis la version 2.0.15, Qfield a modifié ses modalités d’accès au 
 
 Dans le meilleur des mondes (sauf pour les allergiques à la 5G), nous aurions de la connectivité partout et il suffirait de bâtir un projet 100% online, derrière un serveur PostGIS par exemple. Reste à gérer le partage des projets (.qgs), qui peut être fait avec un simple stockage cloud type Gdrive.
 
-![Postgis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_postgis.png)
+[![Postgis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_postgis.png "Postgis"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_postgis.png "Postgis"){: data-mediabox="lightbox-gallery" data-title="Postgis"}
+
 
 ### Syncthing
 
@@ -115,13 +125,16 @@ Dans la vraie vie, on intervient encore sur des zones à faibles connectivités 
 
 Il existe certainement plusieurs outils qui permettent de faire de la synchronisation de dossiers depuis des terminaux Android, mais après en avoir testé beaucoup, seul [Syncthing](https://syncthing.net/) s’est avéré vraiment fiable.
 
-![Syncthing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_syncthing.png)
+[![Syncthing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_syncthing.png "Syncthing"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_syncthing.png "Syncthing"){: data-mediabox="lightbox-gallery" data-title="Syncthing"}
+
 
 Pour gérer une administration d’utilisateurs (plusieurs utilisateurs, plusieurs projets, plusieurs droits) on peut ajouter un cloud personnel type Seafile (qui avait l’avantage jusqu’à la version 2.25 de télécharger les données dans un répertoire facilement accessible sous Android)
 
-![Syncthing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_syncthing_2.png)
+[![Syncthing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_syncthing_2.png "Syncthing"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_syncthing_2.png "Syncthing"){: data-mediabox="lightbox-gallery" data-title="Syncthing"}
 
-![Seafile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_seafile_syncthing.png)
+
+[![Seafile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_seafile_syncthing.png "Seafile"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_seafile_syncthing.png "Seafile"){: data-mediabox="lightbox-gallery" data-title="Seafile"}
+
 
 L’inconvénient est que cela nécessite tout de maintenir des applications serveur, ce qui est rigolo un temps et source de stress ensuite 🙂.
 
@@ -166,6 +179,8 @@ Grâce à un semblant d’UI minimaliste (termux-widget), j’arrive à faire ut
 
 Pour la restitution des données et leur vie après l’acquisition sur le terrain, j’utilise principalement Lizmap pour une vue WebSIG, et Airtable (base de donnée interactive) pour une approche plus “ticketing”. Parfois, les deux solutions peuvent être utilisées en parallèle.
 
-![Airtable](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_airtable.png)
+[![Airtable](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_airtable.png "Airtable"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_airtable.png "Airtable"){: data-mediabox="lightbox-gallery" data-title="Airtable"}
 
-![Lizmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_lizmap.png)
+
+[![Lizmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_lizmap.png "Lizmap"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_lizmap.png "Lizmap"){: data-mediabox="lightbox-gallery" data-title="Lizmap"}
+
