@@ -17,6 +17,7 @@ changelog:
       labels:
         - ci-cd
         - dependencies
+        - enhancement
         - mkdocs
         - theme
     - title: Autres
