@@ -17,9 +17,9 @@ tags:
 
 # Relevé terrain avec QField et solutions de synchronisation (hors QField Cloud)
 
-## Introduction
-
 :calendar: Date de publication initiale : 24 mai 2022
+
+## Introduction
 
 ![logo QField](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qfield.png "logo QField"){: .img-rdp-news-thumb }
 
@@ -95,6 +95,8 @@ J’ai pris l’habitude de monter mes projets avec l’arborescence suivante :
 [![Files and folders](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_files_and_folders.png "Files and folders"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_files_and_folders.png "Files and folders"){: data-mediabox="lightbox-gallery" data-title="Files and folders"}
 
 ### Astuces à savoir dans le paramétrage QGIS
+
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
 Penser aux échelles de visibilité (symboles et étiquettes) pour alléger au maximum l’affichage en mobilité.
 
