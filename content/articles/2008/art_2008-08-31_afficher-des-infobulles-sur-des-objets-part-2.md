@@ -74,7 +74,9 @@ Télécharger le script : Script [ToolTips V2](http://ks356007.kimsufi.com/arno/
 
 **Et un exemple concret :**
 
-<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/tooltips_v2/toolTips_v2.html" width="100%" height="500px"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/tooltips_v2/toolTips_v2.html" width="100%" height="500px"></iframe>`
 
 ----
 

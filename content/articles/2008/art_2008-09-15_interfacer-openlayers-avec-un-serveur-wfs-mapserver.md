@@ -129,7 +129,9 @@ A noter que si vous désirez pouvoir utiliser les données attributaires de la c
 
 ## Exemple avec une carte de l'Afrique
 
-<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/tuto_wms_wfs/wms_wfs/ol_wfs.htm" width="100%" height="700px" frameborder="0"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/tuto_wms_wfs/wms_wfs/ol_wfs.htm" width="100%" height="700px" frameborder="0"></iframe>`
 
 ----
 

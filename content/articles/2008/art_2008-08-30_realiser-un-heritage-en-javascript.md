@@ -170,7 +170,7 @@ function classeFilleExtendsMere() {
 }
 ```
 
-Et voilà comemnt on peut réaliser un héritage en JavaScript... C'est dur et laborieux ! Et d'ici que vous ayez sauté quelques lignes de ce tutoriel je suis persuadé que vous vous sentez un peu perdu. N'ayez crainte [Prototype](http://www.prototypejs.org "site internet prototype") (encore lui ?? :/, nan la bibliothèque :p ), est là pour vous aider.
+Et voilà comment on peut réaliser un héritage en JavaScript... C'est dur et laborieux ! Et d'ici que vous ayez sauté quelques lignes de ce tutoriel je suis persuadé que vous vous sentez un peu perdu. N'ayez crainte [Prototype](http://www.prototypejs.org "site internet prototype") (encore lui ?? :/, nan la bibliothèque :p ), est là pour vous aider.
 
 ## Faire hériter une classe en JavaScript grace à la biblithèque prototype
 

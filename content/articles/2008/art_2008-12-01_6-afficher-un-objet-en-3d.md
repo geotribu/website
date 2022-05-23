@@ -113,7 +113,9 @@ google.earth.fetchKml(ge, kmlUrl, finished);
 
 ### Démonstration
 
-<iframe src="http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Earth_tuto6.html" width="100%" height="700px"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Earth_tuto6.html" width="100%" height="700px"></iframe>`
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Earth_tuto6.html)
 

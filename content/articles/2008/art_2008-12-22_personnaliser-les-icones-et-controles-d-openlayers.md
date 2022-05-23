@@ -49,15 +49,25 @@ Par rapport au code d'origine, outre le fait de pouvoir disposer de nouvelles ic
 
 Ci-dessous voici quelques exemples présentant cette nouvelle classe ainsi que les icônes :
 
-<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/glossy_blue.htm" height="400px" width="100%"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/glossy_blue.htm" height="400px" width="100%"></iframe>`
 
-<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/glossy_red_square.htm" height="400px" width="100%"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/glossy_red_square.htm" height="400px" width="100%"></iframe>`
 
-<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/white_circle.htm" height="400px" width="100%"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/white_circle.htm" height="400px" width="100%"></iframe>`
 
-<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/glossy_green.htm" height="400px" width="100%"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/glossy_green.htm" height="400px" width="100%"></iframe>`
 
-<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/glossy_green_square.htm" height="400px" width="100%"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/customisation/glossy_green_square.htm" height="400px" width="100%"></iframe>`
 
 ----
 

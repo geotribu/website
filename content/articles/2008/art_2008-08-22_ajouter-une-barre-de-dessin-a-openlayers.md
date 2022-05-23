@@ -59,7 +59,9 @@ function init() {
 
 L'exemple correspondant au code ci-dessus est présenté sur cette page : Ajout d'une barre de dessin à OpenLayers
 
-<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/toolbar/toolbar.htm" height="420px" width="100%"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/toolbar/toolbar.htm" height="420px" width="100%"></iframe>`
 
 ## Placer la barre d'outils en dehors de la carte
 

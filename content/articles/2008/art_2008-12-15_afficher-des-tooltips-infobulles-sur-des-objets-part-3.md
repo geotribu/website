@@ -71,7 +71,9 @@ Vous pouvez à loisir customiser l'apparence du tooltips, ses propriétés sont 
 
 Ci-dessous un exemple de ce qu'il est possible de réaliser :
 
-<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/tooltips_v3/toolTips_v3.html" scrolling="no" width="100%" height="600px"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/tooltips_v3/toolTips_v3.html" scrolling="no" width="100%" height="600px"></iframe>`
 
 * La version compressée a été obtenue grâce au formidable outil [Packer](http://dean.edwards.name/packer/)
 

@@ -163,7 +163,9 @@ function initialize() {
 
 ## Démonstration
 
-<iframe src="https://web.archive.org/web/20171110114935if_/http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto9.html" height="350px" width="100%">
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="https://web.archive.org/web/20171110114935if_/http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto9.html" height="350px" width="100%">`
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto9.html)
 

@@ -57,7 +57,9 @@ String.prototype.endsWith = function(suffix){
 
 Exemple :
 
-<iframe src="http://geotribu.net/applications/tutoriaux/tuto_js/objetString_lastIndexOf.htm" width="100%" height="250px"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://geotribu.net/applications/tutoriaux/tuto_js/objetString_lastIndexOf.htm" width="100%" height="250px"></iframe>`
 
 - Calcul de la somme des valeurs d'un tableau
 
@@ -81,7 +83,9 @@ Array.prototype.sum = function(){
 
 Exemple :
 
-<iframe src="http://geotribu.net/applications/tutoriaux/tuto_js/objetArray_lsumValue.htm" width="100%" height="250px"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://geotribu.net/applications/tutoriaux/tuto_js/objetArray_lsumValue.htm" width="100%" height="250px"></iframe>`
 
 ## Tableau récapitulatif
 

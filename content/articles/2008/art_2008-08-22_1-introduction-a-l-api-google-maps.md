@@ -56,12 +56,16 @@ Et il faut appeler la fonction initialize() lors du chargement de la page :   La
 
 ## Code complet
 
-```
-```
+!!! info
+    L'archive du code complet n'a pu être restauré.  
 
 ## Démonstration
 
-<iframe src="http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/tuto1.html" height="350px" width="100%"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/tuto1.html" height="350px" width="100%"></iframe>`
+
+[Résultat pleine page](http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/tuto1.html)
 
 ----
 

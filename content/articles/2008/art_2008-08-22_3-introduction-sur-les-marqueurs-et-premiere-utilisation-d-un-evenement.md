@@ -92,7 +92,11 @@ var html = "Ici vous pouvez insérer des images, du flash, des vidéos ou tout s
 
 ## Démonstration
 
-<iframe src="http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/tuto3.html" height="350px" width="100%"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/tuto3.html" height="350px" width="100%"></iframe>`
+
+[Résultat pleine page](http://88.191.142.86/fabien/geotribu/tuto/gmaps-v2/tuto3.html)
 
 ## Remarque
 

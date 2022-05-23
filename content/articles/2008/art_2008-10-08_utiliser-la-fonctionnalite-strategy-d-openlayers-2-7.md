@@ -141,7 +141,9 @@ wfs = new OpenLayers.Layer.Vector("WFS",
 
 Voici un exemple concret de ce qu'il est possible de réaliser :
 
-<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/random_poi/random_poi.html" width="100%" height="700px"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/random_poi/random_poi.html" width="100%" height="700px"></iframe>`
 
 ----
 

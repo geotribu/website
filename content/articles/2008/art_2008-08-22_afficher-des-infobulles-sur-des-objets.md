@@ -42,7 +42,9 @@ marker1 est obtenu à partir de la méthode createMarker() de l'objet Feature. L
 
 L'exemple ci-dessous très simpliste présente l'utilisation de ce script:
 
-<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/tooltips/toolTips_geotribu.htm" width="100%" height="350px"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/tooltips/toolTips_geotribu.htm" width="100%" height="350px"></iframe>`
 
 ----
 

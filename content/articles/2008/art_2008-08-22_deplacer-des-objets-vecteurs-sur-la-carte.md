@@ -104,7 +104,9 @@ En effet en fonction que l'outil soit actif ou inactif, OpenLayers ajoute ItemIn
 
 Les deux blocs de code présentés ci-dessus sont visibles sur l'exemple suivant :
 
-<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/toolbar/vector_move.htm" height="450px" width="100%"></iframe>
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/toolbar/vector_move.htm" height="450px" width="100%"></iframe>`
 
 ----
 
