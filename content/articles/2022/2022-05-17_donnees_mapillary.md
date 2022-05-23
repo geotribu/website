@@ -55,7 +55,7 @@ Lorsqu'on épluche la documentation, on peut voir que Mapillary propose un servi
 - de réaliser des filtrages et des rendus spécifiques
 - d'interroger la donnée
 
-Il exite trois URL permettant d'accéder aux tuiles vectorielles de Mapillary :
+Il existe trois URL permettant d'accéder aux tuiles vectorielles de Mapillary :
 
 1. [Tuiles de couverture](https://www.mapillary.com/developer/api-documentation/#coverage-tiles) : qui permettent de visualiser les séquences (traces) et la position des prises de vue
     - ```https://tiles.mapillary.com/maps/vtp/mly1_computed_public/2/{z}/{x}/{y}?access_token=XXX```
