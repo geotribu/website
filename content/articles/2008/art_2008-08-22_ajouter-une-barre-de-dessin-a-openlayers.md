@@ -85,7 +85,7 @@ function init() {
       vlayer = new OpenLayers.Layer.Vector( "Editable" );
      // Ajour de la barre d'outil
       var divDessin = document.getElementById("barreDessin");
-      var panel = new OpenLayers.Control.EditingToolbar(vlayer, {div: divDessin});       
+      var panel = new OpenLayers.Control.EditingToolbar(vlayer, {div: divDessin});  
      map.addControl(panel);
      //Ajout du layer à la carte
       map.addLayer(vlayer);
