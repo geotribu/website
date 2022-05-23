@@ -257,7 +257,7 @@ sh mapillary_vt2pg.sh signalisation
 
 ## Conclusion
 
-Grâce aux possibilités de rendu des tuiles vectorielles de QGIS, il est possible de filtrer et customiser les données de Mapillary en fonction des besoins, tout en ayant accès à l'information en quasi temps réel.
+Grâce aux capacités de rendu des tuiles vectorielles de QGIS, il est possible de filtrer et personnaliser les données de Mapillary en fonction des besoins, tout en ayant accès à l'information en quasi temps réel.
 
 En parallèle et pour d'autres usages, le script de téléchargement des données va vous permettre de stocker l'information dans votre base de données afin qu'elle puisse :
 
