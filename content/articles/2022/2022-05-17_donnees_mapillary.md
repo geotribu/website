@@ -74,7 +74,7 @@ Nommer proprement la couche vectorielle à ajouter et renseigner l'URL de la cou
 
 [![Connexion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: data-mediabox="gallery-lightbox" data-title="Connexion" }
 
-Ajouter la nouvelle couche de tuiles dans QGIS (Pour visualiser l'information, vous devrez zoomer au niveau 14 ou +).
+Ajouter la nouvelle couche de tuiles dans QGIS (pour visualiser l'information, vous devrez zoomer au niveau 14 ou +).
 
 ### Interrogation des tuiles vectorielles
 
