@@ -122,6 +122,8 @@ Utilisez le générateur d’UUID pour faire des clés primaires uniques entre v
 
 #### PostGIS
 
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: .img-rdp-news-thumb }
+
 Dans le meilleur des mondes (sauf pour les allergiques à la 5G), nous aurions de la connectivité partout et il suffirait de bâtir un projet 100% online, derrière un serveur PostGIS par exemple. Reste à gérer le partage des projets (.qgs), qui peut être fait avec un simple stockage cloud type Gdrive.
 
 [![Postgis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_postgis.png "Postgis"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_postgis.png "Postgis"){: data-mediabox="lightbox-gallery" data-title="Postgis"}
