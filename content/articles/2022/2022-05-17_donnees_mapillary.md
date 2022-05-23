@@ -78,7 +78,7 @@ Ajouter la nouvelle couche de tuiles dans QGIS (pour visualiser l'information, v
 
 ### Interrogation des tuiles vectorielles
 
-Les tuiles vectorielles sont interrogeables et permettent une consultation des différents champs publiés. Si l'on prend l'exemple du flux lié à la signalisation, il est possible possible d'accéder au type de panneau detecté ainsi qu'aux dates auxquelles il a été vu pour la première et la dernière fois.
+Les tuiles vectorielles sont interrogeables et permettent une consultation des différents champs publiés. Si l'on prend l'exemple du flux lié à la signalisation, il est possible d'accéder au type de panneau detecté ainsi qu'aux dates auxquelles il a été vu pour la première et la dernière fois.
 
 [![Information](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/information.png "Information"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/information.png "Information"){: data-mediabox="gallery-lightbox" data-title="Information" }
 
