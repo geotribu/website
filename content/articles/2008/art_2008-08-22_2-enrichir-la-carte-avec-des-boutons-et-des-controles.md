@@ -26,7 +26,7 @@ Suite au [tutoriel d'introduction](/articles/2008/2008-08-22_1-introduction-a-l-
 ## Initialisation
 
 Nous utiliserons la carte définie dans le tutoriel d'introduction à l'API Google Maps pour l'enrichir.
-Les méthodes ajoutées se feront donc dans la fonction *initialize()* précédemment définie, le reste de la page HTML n'étant pas modifié.
+Les méthodes ajoutées se feront donc dans la fonction `initialize()` précédemment définie, le reste de la page HTML n'étant pas modifié.
 
 ## Control Classes
 
@@ -131,7 +131,7 @@ map.enableScrollWheelZoom();
 
 ## Remarques
 
-Il existe de nombreux autres types de contrôles - API Google Maps (link is external) - à vous de les tester
+Il existe de nombreux autres types de contrôles - [API Google Maps](http://code.google.com/apis/maps/documentation/reference.html) - à vous de les tester
 
 - [GControl](http://code.google.com/apis/maps/documentation/reference.html#GControlImpl)
 - [GMapTypeControl](http://code.google.com/apis/maps/documentation/reference.html#GMapTypeControl)

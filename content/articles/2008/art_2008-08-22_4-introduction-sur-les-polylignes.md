@@ -27,7 +27,7 @@ De la même manière que le troisième tutoriel sur l'affichage d'un marqueur, i
 
 ## Initialisation
 
-Pour ce tutoriel, nous partirons de la carte définie dans le second tutoriel et alimenterons la fonction *initialize()*.
+Pour ce tutoriel, nous partirons de la carte définie dans le second tutoriel et alimenterons la fonction `initialize()`.
 
 ## Création de la polyligne
 

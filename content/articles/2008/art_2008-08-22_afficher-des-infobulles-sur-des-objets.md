@@ -31,14 +31,14 @@ Après avoir téléchargé le script des infobulles il vous suffit de l'inclure 
 
 ## Définir un style pour la barre d'outils
 
-Dans l'exemple qui va suivre, nous allons utiliser le script toolTips.js pour afficher le nom du pays au survol, de la souris
+Dans l'exemple qui va suivre, nous allons utiliser le script `toolTips.js` pour afficher le nom du pays au survol, de la souris
 
 ```javascript
 marker1.events.register("mouseover",{'feature': feature1,'bgColor':'blue','fontColor':'white','opacity':'0.5'}, toolTips);
 marker1.events.register("mouseout", feature1, eraseToolTips);
 ```
 
-marker1 est obtenu à partir de la méthode createMarker() de l'objet Feature. Le nom de chaque pays est en fait l'ID de l'objet feature, enfin, vous avez la possibilité de personnaliser les toolTips en modifiant les valeurs de 'bgColor','fontColor','opacity'.
+marker1 est obtenu à partir de la méthode `createMarker()` de l'objet Feature. Le nom de chaque pays est en fait l'ID de l'objet feature, enfin, vous avez la possibilité de personnaliser les toolTips en modifiant les valeurs de 'bgColor','fontColor','opacity'.
 
 L'exemple ci-dessous très simpliste présente l'utilisation de ce script:
 

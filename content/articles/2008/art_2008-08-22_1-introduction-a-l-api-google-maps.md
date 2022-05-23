@@ -24,15 +24,18 @@ L'[API Google Maps](http://code.google.com/intl/fr/apis/maps/) permet d'intégre
 
 ## Appel à l'API grâce à la clé
 
-Pour utiliser l'API Google Maps, il est nécessaire d'obtenir une clé gratuite à cette adresse (link is external). Et d'écrire cette ligne dans le de la page HTML qui contiendra la carte Google Maps :  
+Pour utiliser l'API Google Maps, il est nécessaire d'obtenir une clé gratuite à cette [adresse](http://code.google.com/intl/fr/apis/maps/signup.html). Et d'écrire cette ligne dans le de la page HTML qui contiendra la carte Google Maps :  
 
-- v=2.x : ici on note la version de l'API utilisée dans notre projet : - 2.x correspond à la dernière version de l'API - 2.s correspond à la dernière version stable de l'API - 2 correspond à la version courante Détail des changements de l'API : [http://mapki.com/wiki/Changelog](http://mapki.com/wiki/Changelog)
+- v=2.x : ici on note la version de l'API utilisée dans notre projet :
+  - 2.x correspond à la dernière version de l'API
+  - 2.s correspond à la dernière version stable de l'API
+  - 2 correspond à la version courante Détail des changements de l'API : [http://mapki.com/wiki/Changelog](http://mapki.com/wiki/Changelog)
 
 NB : Nous utiliserons par la suite toujours la version courante de l'API afin d'éviter les mauvaises surprises.
 
 ## Code Javascript de déclaration de la carte
 
-Nous déclarons la fonction initialize() qui sera chargée lors du chargement de la page Web. Cette fonction contient les instructions afin de déclarer la carte Google Maps. La structure conditionnelle 'if then else' permet d'alerter l'utilisateur si son navigateur n'accepte pas le JavaScript grâce à la fonction GBrowserIsCompatible(). Nous déclarons ensuite l'objet map qui sera affiché dans le bloc dont l'identifiant sera 'map_canvas' de la page HTML :
+Nous déclarons la fonction `initialize()` qui sera chargée lors du chargement de la page Web. Cette fonction contient les instructions afin de déclarer la carte Google Maps. La structure conditionnelle 'if then else' permet d'alerter l'utilisateur si son navigateur n'accepte pas le JavaScript grâce à la fonction `GBrowserIsCompatible()`. Nous déclarons ensuite l'objet map qui sera affiché dans le bloc dont l'identifiant sera 'map_canvas' de la page HTML :
 
 ```javascript
 var map = new GMap2(document.getElementById('map'));
@@ -49,10 +52,16 @@ map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
 Afin d'afficher la carte, il est nécessaire de déclarer un bloc div qui contiendra la carte :
 
 ```html
-<div id="map_canvas"></div>
+<div id="map"></div>
 ```
 
-Et il faut appeler la fonction `initialize()` lors du chargement de la page : La fonction `GUnload()` permet de libérer la mémoire lorsque l'on quitte la page Web.
+Et il faut appeler la fonction `initialize()` lors du chargement de la page :
+
+```html
+<body onload="initialize()" onunload="GUnload()">
+```
+
+La fonction `GUnload()` permet de libérer la mémoire lorsque l'on quitte la page Web.
 
 ## Code complet
 

@@ -30,9 +30,9 @@ Une carte avec l'API Google Maps Static est définie par une URL :
 
 Pour le résultat suivant :
 
-- L'attribut 'center' prend les coordonnées du centre de la carte.
-- L'attribut 'zoom' définit le niveau de zoom.
-- L'attribut 'size' définit la taille en pixel de la carte - la taille maximale possible est de 640 x 640.
+- L'attribut `center` prend les coordonnées du centre de la carte.
+- L'attribut `zoom` définit le niveau de zoom.
+- L'attribut `size` définit la taille en pixel de la carte - la taille maximale possible est de 640 x 640.
 
 ## Carte avec un marqueur
 
@@ -44,11 +44,11 @@ Qui produit cette carte :
 
 [![Carte Google](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/staticmap2-2.gif "Carte Google"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/staticmap2-2.gif "Carte Google"){: data-mediabox="gallery-lightbox" data-title="Carte Google"}
 
-L'attribut 'marker' permet d'ajouter un marqueurs sur la carte, il prend comme valeur les coordonnées du marqueur ainsi que le cas échéant la couleur du marqueur suivi de la letter 'm' pour lettre un M dans le marqueur.  
+L'attribut `marker` permet d'ajouter un marqueurs sur la carte, il prend comme valeur les coordonnées du marqueur ainsi que le cas échéant la couleur du marqueur suivi de la letter 'm' pour lettre un M dans le marqueur.  
 
 ## Laissez faire Google
 
-L'attribut spécial 'span' permet de ne pas spécifier un niveau de zoom mais en précisant une longitude et une latitude en degrés de laisser faire l'API.  
+L'attribut spécial `span` permet de ne pas spécifier un niveau de zoom mais en précisant une longitude et une latitude en degrés de laisser faire l'API.  
 
 Exemple d'une carte centrée sur Toulouse, de taille 640 x 640, de 1° de hauteur et de 1° de largeur :  
 
@@ -64,7 +64,7 @@ La création d'une carte simple sous forme d'image se fait facilement grâce à 
 
 Elle permet de créer une carte très rapidement et de l'enregistrer pour enrichir un document (attention toutefois aux droits d'utilisation).  
 
-La génération d'nue carte nécessite quand même d'un clé Google Maps - [http://code.google.com/apis/maps/signup.html](http://code.google.com/apis/maps/signup.html) - si vous ne possédez pas d'espace sur un serveur Internet, vous pouvez demander une clé avec l'adresse [http://localhost](http://localhost) auquel cas il vous faudra quand même un serveur Web installé en local sur votre ordinateur.  
+La génération d'une carte nécessite quand même d'un clé Google Maps - [http://code.google.com/apis/maps/signup.html](http://code.google.com/apis/maps/signup.html) - si vous ne possédez pas d'espace sur un serveur Internet, vous pouvez demander une clé avec l'adresse [http://localhost](http://localhost) auquel cas il vous faudra quand même un serveur Web installé en local sur votre ordinateur.  
 
 Si vous avez la flemme, vous pouvez générer l'URL directement en ligne - [http://gmaps-samples.googlecode.com/svn/trunk/simplewizard/makestaticmap.html](http://gmaps-samples.googlecode.com/svn/trunk/simplewizard/makestaticmap.html).  
 

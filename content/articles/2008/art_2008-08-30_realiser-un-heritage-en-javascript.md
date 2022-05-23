@@ -30,7 +30,7 @@ Une fois ces barrières misent en place, on peut maintenant faire communiquer le
 
 Prenons un exemple concret :
 
-Nous utiliserons ici un point de vue géographique en se basant sur l'[API d'OpenLayers](http://dev.openlayers.org/releases/OpenLayers-2.6/doc/apidocs/files/OpenLayers/Layer-js.html "API OpenLayers") est son concept de couche. Partons donc de la Classe couche. Celle-ci est définie par un certains nombres d'attributs et méthodes comme son nom, son extention, la possibilité d'être affiché ou non... Cette Classe de base est la classe mère de laquelle vont hériter d'autres classes. Ces sous-classes sont donc forcément plus spécialisées à l'exemple de la Classe layers.WMS qui hérite de la classe grid qui hérite elle même de la classe httpRequest.
+Nous utiliserons ici un point de vue géographique en se basant sur l'[API d'OpenLayers](http://dev.openlayers.org/releases/OpenLayers-2.6/doc/apidocs/files/OpenLayers/Layer-js.html "API OpenLayers") est son concept de couche. Partons donc de la Classe couche. Celle-ci est définie par un certains nombres d'attributs et méthodes comme son nom, son extension, la possibilité d'être affiché ou non... Cette Classe de base est la classe mère de laquelle vont hériter d'autres classes. Ces sous-classes sont donc forcément plus spécialisées à l'exemple de la Classe layers.WMS qui hérite de la classe grid qui hérite elle même de la classe httpRequest.
 
 ## Faire hériter une classe en JavaScript
 
@@ -57,17 +57,11 @@ classeMere.prototype.methodeB() = function() {
 
 function classeFilleExtendsMere() {  
   classeMere.call(this); // Héritage  
-
   /* ***************  
-
   Correspond à :  
-
   this.parent = classeMere; // Héritage  
-
   this.parent();  
-
   *************** */  
-
 }
 ```
 

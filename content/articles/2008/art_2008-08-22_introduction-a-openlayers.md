@@ -104,21 +104,30 @@ map.addControl(new OpenLayers.Control.PanZoomBar());
 L'exemple ci-dessous (visible sur cette page : exemple 2) explique comment changer l'apparence de la carte en utilisant successivement les deux méthodes exposées précédemment. Ainsi dans un premier temps nous annulons la configuration par défaut d'OpenLayers grâce à MouseDefaults, puis nous ajoutons une barre de zoom et la carte d'aperçu.
 
 ```html
-<script type="text/javascript">
-    function init() {
-     var map, ol_wms;     //instanciation du constructeur
-     map = new OpenLayers.Map('map', {controls:[new OpenLayers.Control.MouseDefaults()]});
-         //Ajout des options graph, zoom + apercu
-     map.addControl(new OpenLayers.Control.PanZoomBar());
-     map.addControl(new OpenLayers.Control.OverviewMap());
-         //Choix des couches
-           var ol_wms = new OpenLayers.Layer.WMS( "OpenLayers WMS", "http://labs.metacarta.com/wms/vmap0?", {layers: 'basic'});
-         //ajout des couches a la carte
-          map.addLayers([ol_wms]);
-     //On zoom au max
-     map.zoomToMaxExtent();
-   }
-  </script>
+<html>
+  <head>
+     <script src="./js/OpenLayers/OpenLayers.js" type="text/javascript">
+     <script type="text/javascript">
+      function init() {
+        var map, ol_wms;     //instanciation du constructeur
+       map = new OpenLayers.Map('map', { controls:
+       [new OpenLayers.Control.MouseDefaults()]});
+           //Ajout des options graph, zoom + apercu
+       map.addControl(new OpenLayers.Control.PanZoomBar());
+       map.addControl(new OpenLayers.Control.OverviewMap());
+           //Choix des couches
+             var ol_wms = new OpenLayers.Layer.WMS( "OpenLayers WMS", "http://labs.metacarta.com/wms/vmap0?", {layers: 'basic'});
+           //ajout des couches a la carte
+            map.addLayers([ol_wms]);
+       //On zoom au max
+       map.zoomToMaxExtent();
+     }
+    </script>
+  </head>
+  <body onload="init()" >
+    <div id="map"></div>
+  </body>
+</html>
 ```
 
 ## Ajouter des marqueurs
@@ -130,35 +139,37 @@ La création d'un marqueur se fait grâce au constructeur "OpenLayers. Marker". 
 Il existe différents types de marqueurs mais pour des raisons de simplicité nous n'en verrons ici qu'un seul. L'objectif du code ci-dessous est tout d'abord d'afficher un marqueur à une position géographique définie. Ensuite, nous allons ajouter un peu d'interactivité en spécifiant qu'au click de l'utilisateur sur le marqueur une fenêtre d'information doit s'afficher. Le résultat du code ci-dessous est visible ici : exemple 3.
 
 ```html
-</head>
-  <script src="./js/OpenLayers/OpenLayers.js" type="text/javascript">
-    function init() {
-      var map, layer;  
-      map = new OpenLayers.Map('map', {controls:[new OpenLayers.Control.MouseDefaults()]});
-     //Caracteristiques de la carte
-      var ol_wms = new OpenLayers.Layer.WMS( "OpenLayers WMS","http://labs.metacarta.com/wms/vmap0?", {layers: 'basic'});
-     map.addLayer();
-     map.setCenter(new OpenLayers.LonLat(0, 0), 2);
-     map.addControl(new OpenLayers.Control.LayerSwitcher());
-     //Creation du layer Marker
-     markers = new OpenLayers.Layer.Markers("Marker");
-     map.addLayer(markers);
-    //Creation du Marker
-     feature = new OpenLayers.Feature(ol_wms, new OpenLayers.LonLat(0,45));
-     marker = feature.createMarker();
-     markers.addMarker(marker);
-     marker.events.register("mousedown", marker, mousedown);
-    //Gestion des evenements
-     function mousedown(evt) {
-       popup = feature.createPopup(true);
-          popup.setContentHTML("Exemple de PopUp sur un marqueur");
-            popup.setBackgroundColor("yellow");
-          popup.setOpacity(0.6);
-       markers.map.addPopup(popup);
+<html>
+  <head>
+    <script src="./js/OpenLayers/OpenLayers.js" type="text/javascript">
+    <script type="text/javascript">
+      function init() {
+        var map, layer;  
+        map = new OpenLayers.Map('map', {controls:[new OpenLayers.Control.MouseDefaults()]});
+       //Caracteristiques de la carte
+        var ol_wms = new OpenLayers.Layer.WMS( "OpenLayers WMS","http://labs.metacarta.com/wms/vmap0?", {layers: 'basic'});
+       map.addLayer();
+       map.setCenter(new OpenLayers.LonLat(0, 0), 2);
+       map.addControl(new OpenLayers.Control.LayerSwitcher());
+       //Creation du layer Marker
+       markers = new OpenLayers.Layer.Markers("Marker");
+       map.addLayer(markers);
+      //Creation du Marker
+       feature = new OpenLayers.Feature(ol_wms, new OpenLayers.LonLat(0,45));
+       marker = feature.createMarker();
+       markers.addMarker(marker);
+       marker.events.register("mousedown", marker, mousedown);
+      //Gestion des evenements
+       function mousedown(evt) {
+         popup = feature.createPopup(true);
+            popup.setContentHTML("Exemple de PopUp sur un marqueur");
+              popup.setBackgroundColor("yellow");
+            popup.setOpacity(0.6);
+         markers.map.addPopup(popup);
+       }
      }
-   }
-  </script>
-</head>
+    </script>
+  </head>
   <body onload="init()" >
     <div id="map"></div>
   </body>

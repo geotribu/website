@@ -29,28 +29,29 @@ Il s'agit donc d'ajouter un nouvel objet (OpenLayers.Control.EditingToolbar) ain
 
 ```html
 <html>
-<script>
-function init() {
-      var map, layer;
-    // Création du constructeur Map
-     map = new OpenLayers.Map( 'map', { controls: [] } );
-    // Nouvelle couche layer WMS
-           var layer = new OpenLayers.Layer.WMS( "OpenLayers WMS","http://labs.metacarta.com/wms/vmap0?", {layers: 'basic'});
-    // Ajout de la couche WMS à la carte
-             map.addLayer(layer);
-    // Caractéristiques générales de la carte
-             map.setCenter(new OpenLayers.LonLat(0, 0), 2);
-           map.addControl(new OpenLayers.Control.LayerSwitcher());
-     //Création du layer Editable de type vecteur
-      vlayer = new OpenLayers.Layer.Vector( "Editable" );
-     //Ajout du layer à la carte
-      map.addLayer(vlayer);
-    // Ajout de la barre d'outil de dessin
-     map.addControl(new OpenLayers.Control.EditingToolbar(vlayer));
+  <head>
+    <script>
+      function init() {
+            var map, layer;
+          // Création du constructeur Map
+           map = new OpenLayers.Map( 'map', { controls: [] } );
+          // Nouvelle couche layer WMS
+                 var layer = new OpenLayers.Layer.WMS( "OpenLayers WMS","http://labs.metacarta.com/wms/vmap0?", {layers: 'basic'});
+          // Ajout de la couche WMS à la carte
+                   map.addLayer(layer);
+          // Caractéristiques générales de la carte
+                   map.setCenter(new OpenLayers.LonLat(0, 0), 2);
+                 map.addControl(new OpenLayers.Control.LayerSwitcher());
+           //Création du layer Editable de type vecteur
+            vlayer = new OpenLayers.Layer.Vector( "Editable" );
+           //Ajout du layer à la carte
+            map.addLayer(vlayer);
+          // Ajout de la barre d'outil de dessin
+           map.addControl(new OpenLayers.Control.EditingToolbar(vlayer));
 
- }
-  </script>
-<head>
+       }
+    </script>
+  </head>
   <body onload="init()" >
     <div id="map"</div>
   </body>
@@ -69,30 +70,31 @@ Par rapport au code précédent il y a peu de changements à effectuer pour plac
 
 ```html
 <html>
-<script>
-function init() {
-      var map, layer;
-    // Création du constructeur Map
-     map = new OpenLayers.Map( 'map', { controls: [] } );
-    // Nouvelle couche layer WMS
-           var layer = new OpenLayers.Layer.WMS( "OpenLayers WMS","http://labs.metacarta.com/wms/vmap0?", {layers: 'basic'});
-    // Ajout de la couche WMS à la carte
-             map.addLayer(layer);
-    // Caractéristiques générales de la carte
-             map.setCenter(new OpenLayers.LonLat(0, 0), 2);
-           map.addControl(new OpenLayers.Control.LayerSwitcher());
-     //Création du layer Editable de type vecteur
-      vlayer = new OpenLayers.Layer.Vector( "Editable" );
-     // Ajour de la barre d'outil
-      var divDessin = document.getElementById("barreDessin");
-      var panel = new OpenLayers.Control.EditingToolbar(vlayer, {div: divDessin});  
-     map.addControl(panel);
-     //Ajout du layer à la carte
-      map.addLayer(vlayer);
+  <head>
+    <script>
+    function init() {
+          var map, layer;
+        // Création du constructeur Map
+         map = new OpenLayers.Map( 'map', { controls: [] } );
+        // Nouvelle couche layer WMS
+               var layer = new OpenLayers.Layer.WMS( "OpenLayers WMS","http://labs.metacarta.com/wms/vmap0?", {layers: 'basic'});
+        // Ajout de la couche WMS à la carte
+                 map.addLayer(layer);
+        // Caractéristiques générales de la carte
+                 map.setCenter(new OpenLayers.LonLat(0, 0), 2);
+               map.addControl(new OpenLayers.Control.LayerSwitcher());
+         //Création du layer Editable de type vecteur
+          vlayer = new OpenLayers.Layer.Vector( "Editable" );
+         // Ajour de la barre d'outil
+          var divDessin = document.getElementById("barreDessin");
+          var panel = new OpenLayers.Control.EditingToolbar(vlayer, {div: divDessin});  
+         map.addControl(panel);
+         //Ajout du layer à la carte
+          map.addLayer(vlayer);
 
- }
-  </script>
-</head>
+     }
+    </script>
+  </head>
   <body onload="init()" >
     <div id="map"></div>
     <div id="panel" class="olControlEditingToolbar"></div>

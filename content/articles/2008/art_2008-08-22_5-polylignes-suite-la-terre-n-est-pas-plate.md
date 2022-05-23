@@ -25,7 +25,7 @@ Les options sont parfois nécessaires pour personnaliser les affichages. Ici nou
 
 ## Initialisation
 
-Pour ce tutoriel, nous partirons de la carte définie dans le second tutoriel et alimenterons la fonction *initialize()*.
+Pour ce tutoriel, nous partirons de la carte définie dans le second tutoriel et alimenterons la fonction `initialize()`.
 
 ## Création des points
 

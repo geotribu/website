@@ -108,7 +108,7 @@ Dans ce tutoriel nous verrons simplement l'affichage d'une carte grâce au PhpMa
 
 Pour cela nous aurons besoin tout d'abord d'instancier un nouvel objet Map, cela se fait grâce au constructeur ms_newMapObj auquel nous passons l'adresse où est situé notre MapFile. Ensuite, nous allons lui demander de dessiner la carte correspondante et enfin de la sauvegarder dans le dossier définit dans le bloc Web du MapFile.
 
-```html
+```php
 <?php
    // Éclaration de la bibliothèque PHPMAPSCRIPT
    dl('php_mapscript.dll')

@@ -27,6 +27,7 @@ Le déplacement d'objet (feature) sur la carte est pré-programmé. En effet, l'
 
 ```html
 <html>
+<head>
 <script>
 function init() {
       var map, vectors, panel, controls, maxExtent;
