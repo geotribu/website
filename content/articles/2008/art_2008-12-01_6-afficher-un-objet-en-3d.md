@@ -1,4 +1,5 @@
 ---
+title: 6. Afficher un objet en 3D
 authors:
     - Fabien Goblet
 categories:
@@ -13,7 +14,6 @@ tags:
 - 3D
 - API
 - Sketchup
-title: 6. Afficher un objet en 3D
 ---
 
 # 6. Afficher un objet en 3D
@@ -22,11 +22,13 @@ title: 6. Afficher un objet en 3D
 
 ## Introduction
 
+![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-rdp-news-thumb }
+
 L'API Google Earth propose d'afficher dans son globe des objets en 3D provenant notamment de [Sketchup](http://sketchup.google.com/intl/fr/).  
 
 ## Initialisation
 
-Reprendre la carte du tutoriel sur les marqueurs et les événements : [http://www.geotribu.net/?q=node/55](http://www.geotribu.net/?q=node/55)
+Reprendre la carte du tutoriel sur les marqueurs et les événements : [Tutoriel n°4](/articles/2008/art_2008-11-02_4-marqueurs-et-evenements/)
 
 ## Processus
 

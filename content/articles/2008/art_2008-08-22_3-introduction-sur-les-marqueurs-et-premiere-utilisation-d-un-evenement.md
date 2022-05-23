@@ -100,7 +100,7 @@ Nous verrons par la suite comment ajouter des marqueurs stockés en base de donn
 
 ## Conclusion
 
-La création d'un marqueur est tout aussi facile que l'initialisation de la carte. Il est également possible de personnaliser les icônes des marqueurs grâce à la classe GIcon (http://code.google.com/intl/fr/apis/maps/documentation/reference.html#GIcon).
+La création d'un marqueur est tout aussi facile que l'initialisation de la carte. Il est également possible de personnaliser les icônes des marqueurs grâce à la classe GIcon ([http://code.google.com/intl/fr/apis/maps/documentation/reference.html#GIcon](http://code.google.com/intl/fr/apis/maps/documentation/reference.html#GIcon)).
 
 ----
 

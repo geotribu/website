@@ -19,7 +19,7 @@ tags:
 
 ![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
 
-Ce tutorial est la suite logique de "[Ajout d'une barre d'outil dessin à OpenLayers](http://ks356007.kimsufi.com/arno/geotribu/?q=node/26)". En effet, nous allons étudier les différentes interactions possibles avec les objets de type vectors. Il s'appuie en grande partie de ressources disponibles sur le net, et notamment : [OpenLayers Drag Feature](http://www.openlayers.org/dev/examples/drag-feature.html).
+Ce tutorial est la suite logique de "[Ajout d'une barre d'outil dessin à OpenLayers](/articles/2008/art_2008-08-22_ajouter-une-barre-de-dessin-a-openlayers/)". En effet, nous allons étudier les différentes interactions possibles avec les objets de type vectors. Il s'appuie en grande partie de ressources disponibles sur le net, et notamment : [OpenLayers Drag Feature](http://www.openlayers.org/dev/examples/drag-feature.html).
 
 ## Déplacer des objets sur la carte
 

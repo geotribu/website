@@ -147,7 +147,7 @@ google.earth.fetchKml(ge, kmlUrl, finished);
 
 ## Processus
 
-1. Reprendre la carte du tutoriel sur les marqueurs et les événements : <http://www.geotribu.net/?q=node/55>
+1. Reprendre la carte du [tutoriel sur les marqueurs et les événements](/articles/2008/art_2008-09-15_interfacer-openlayers-avec-un-serveur-wfs-mapserver/)
 2. Définir une fonction qui vérifie la validité du fichier KML :  
 
 ```javascript

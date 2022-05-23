@@ -18,6 +18,8 @@ tags:
 
 ## Introduction
 
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+
 Il est possible grâce à l'API Google Maps de naviguer virtuellement dans les rues, nous verrons ici comment implanter cette fonctionnalité.  
 
 ## Créer un panorama
@@ -117,7 +119,7 @@ Définir l'emplacement de la carte :
 
 ## Démonstration
 
-<iframe src="http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto14.html" height="350px" width="550px"></iframe>
+<iframe src="http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto14.html" height="350px" width="100%"></iframe>
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto14.html)
 

@@ -16,6 +16,8 @@ tags:
 
 :calendar: Date de publication initiale : 07 septembre 2008
 
+:warning: L'API Google Maps v2 est dépréciée depuis le 19 mai 2010.
+
 ## Introduction
 
 ![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }

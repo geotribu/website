@@ -17,7 +17,7 @@ tags:
 
 ## Qu'est ce que FeatureServer ?
 
-Dans un [précédent tutoriel](http://geotribu.net/?q=node/42) nous avions appris que les serveurs WFS, en fonction de leurs capacités, peuvent être regroupés en différentes catégories. Si la plupart permettent l'affichage des objets géographiques sous forme de vecteur, peu d'entre eux permettent de réaliser des opérations de mises à jour, suppression ou création sur ces mêmes objets.  
+Dans un [précédent tutoriel](/articles/2008/art_2008-09-15_interfacer-openlayers-avec-un-serveur-wfs-mapserver/) nous avions appris que les serveurs WFS, en fonction de leurs capacités, peuvent être regroupés en différentes catégories. Si la plupart permettent l'affichage des objets géographiques sous forme de vecteur, peu d'entre eux permettent de réaliser des opérations de mises à jour, suppression ou création sur ces mêmes objets.  
 
 C'est là tout l'intérêt de "Feature Server". En effet, basé sur la même logique que TileCache, il permet au moyen d'un simple fichier de configuration de disposer d'un serveur WFS transactionnel.  
 
