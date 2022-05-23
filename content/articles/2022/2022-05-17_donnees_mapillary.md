@@ -153,7 +153,7 @@ C_SCHEMA='ref_mapillary'
 
 ### Convertir l'emprise lat/long dans le système de numérotation des tuiles
 
-Les tuiles ne sont pas définies par une longitude/latitude mais par une numérotation spécique, il nous faut donc identifier les numéros des tuiles qui croisent notre emprise de travail et pour cela, je me suis appuyé sur une [solution proposée sur le wiki d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Bourne_shell_with_Awk).
+Les tuiles ne sont pas définies par une longitude/latitude mais par une numérotation spécifique, il nous faut donc identifier les numéros des tuiles qui croisent notre emprise de travail et pour cela, je me suis appuyé sur une [solution proposée sur le wiki d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Bourne_shell_with_Awk).
 
 ```bash
 # BBOX ET IDENTIFICATION DES TUILES
