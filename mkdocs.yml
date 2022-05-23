@@ -247,6 +247,7 @@ extra:
     livre: atlas
     Mapillary: streetview
     Minecraft: manette
+    MySQL: database
     OpenPathView: streetview
     OpenRouteService: route
     OpenStreetMap: geoloupe

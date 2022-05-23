@@ -11,7 +11,7 @@ robots: index, follow
 tags:
     - Google Maps
     - marqueurs
-    - mysql
+    - MySQL
     - Ajax
     - PHP
 title: "10. Utiliser Ajax, MySQL et PHP pour afficher des marqueurs"
