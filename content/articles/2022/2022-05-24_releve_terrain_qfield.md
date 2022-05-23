@@ -130,6 +130,8 @@ Dans le meilleur des mondes (sauf pour les allergiques à la 5G), nous aurions d
 
 #### Syncthing
 
+![logo Syncthing](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/syncthing.png "logo Syncthing"){: .img-rdp-news-thumb }
+
 Dans la vraie vie, on intervient encore sur des zones à faibles connectivités (surtout quand on travaille dans le déploiement du réseau télécoms, ce qui était mon cas, mais c’est aussi vrai pour bien d’autres secteurs). De plus, si la collecte implique des photos, PostGIS ne sera pas suffisant pour remonter les fichiers.
 
 Il existe certainement plusieurs outils qui permettent de faire de la synchronisation de dossiers depuis des terminaux Android, mais après en avoir testé beaucoup, seul [Syncthing](https://syncthing.net/) s’est avéré vraiment fiable.
