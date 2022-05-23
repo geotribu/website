@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: 2022-05-17 14:20
+date: 2022-05-31 14:20
 description: "Accéder aux données de Mapillary et les intégrer dans son SIG"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/mapillary_data.png"
 license: default
@@ -23,7 +23,7 @@ tags:
 
 # Accéder aux données de Mapillary et les intégrer dans son SIG
 
-:calendar: Date de publication initiale : 17 Mai 2022
+:calendar: Date de publication initiale : 31 Mai 2022
 
 ## Prérequis
 
@@ -31,9 +31,6 @@ tags:
 - l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)
 - l'outil de conversion [ogr2ogr](https://gdal.org/programs/ogr2ogr.html)
 - [cURL](https://curl.se)
-
-!!! Lecture
-    Un article de Morgan Hite sur son blog : [QGIS 3 and Vector map tiles](https://wanderingcartographer.wordpress.com/2021/01/09/qgis-3-and-vector-map-tiles/)
 
 ## Intro
 
@@ -57,12 +54,9 @@ Lorsqu'on épluche la documentation, on peut voir que Mapillary propose un servi
 
 Il existe trois URL permettant d'accéder aux tuiles vectorielles de Mapillary :
 
-1. [Tuiles de couverture](https://www.mapillary.com/developer/api-documentation/#coverage-tiles) : qui permettent de visualiser les séquences (traces) et la position des prises de vue
-    - ```https://tiles.mapillary.com/maps/vtp/mly1_computed_public/2/{z}/{x}/{y}?access_token=XXX```
-2. [Tuiles de points](https://www.mapillary.com/developer/api-documentation/#point-tiles) : qui permettent de visualiser la position des [objets détectés par les algorithmes de mapillary (autres que des panneaux de signalisation)](https://www.mapillary.com/developer/api-documentation/points)
-    - ```https://tiles.mapillary.com/maps/vtp/mly_map_feature_point/2/{z}/{x}/{y}?access_token=XXX```
-3. [Tuiles de panneaux de signalisation](https://www.mapillary.com/developer/api-documentation/#traffic-sign-tiles) : qui permettent de visualiser la position des [panneaux de signalisation détectés par les algorithmes de Mapillary](https://www.mapillary.com/developer/api-documentation/traffic-signs)
-    - ```https://tiles.mapillary.com/maps/vtp/mly_map_feature_traffic_sign/2/{z}/{x}/{y}?access_token=XXX```
+1. [Tuiles de couverture](https://www.mapillary.com/developer/api-documentation/#coverage-tiles) : qui permettent de visualiser les séquences (traces) et la position des prises de vue :  `https://tiles.mapillary.com/maps/vtp/mly1_computed_public/2/{z}/{x}/{y}?access_token=XXX`
+2. [Tuiles de points](https://www.mapillary.com/developer/api-documentation/#point-tiles) : qui permettent de visualiser la position des [objets détectés par les algorithmes de mapillary (autres que des panneaux de signalisation)](https://www.mapillary.com/developer/api-documentation/points) : `https://tiles.mapillary.com/maps/vtp/mly_map_feature_point/2/{z}/{x}/{y}?access_token=XXX`
+3. [Tuiles de panneaux de signalisation](https://www.mapillary.com/developer/api-documentation/#traffic-sign-tiles) : qui permettent de visualiser la position des [panneaux de signalisation détectés par les algorithmes de Mapillary](https://www.mapillary.com/developer/api-documentation/traffic-signs) : `https://tiles.mapillary.com/maps/vtp/mly_map_feature_traffic_sign/2/{z}/{x}/{y}?access_token=XXX`
 
 ### Ajout des tuiles vectorielles
 
@@ -223,7 +217,7 @@ done
 
 ### Import dans une base de données PostgreSQL/PostGIS
 
-Maintenant que nous avons pu extraire les données vectorielles des tuiles vectorielles, il ne nous reste plus qu'à les intégrer dans notre base de données PostgreSQL/PostGIS à l'aide d'`ogr2ogr`.
+Après avoir extrait les données vectorielles des tuiles vectorielles, il ne nous reste plus qu'à les intégrer dans notre base de données PostgreSQL/PostGIS à l'aide d'`ogr2ogr`.
 
 ``` bash
 ogr2ogr \
@@ -245,13 +239,19 @@ ogr2ogr \
 
 ### Exécution
 
-Maintenant que le fichier de configuration est complété et que vous avez bien compris le principe du script `mapillary_vt2pg.sh`, vous allez pouvoir lancer le script de cette manière pour récupérer les données qui vous intéressent.
+Maintenant que le fichier de configuration est complété et que vous avez bien compris le principe du script `mapillary_vt2pg.sh`, vous allez pouvoir lancer le script de cette manière pour récupérer les données qui vous intéressent dans PostgreSQL/PostGIS.
 
 ```bash
 sh mapillary_vt2pg.sh image
 sh mapillary_vt2pg.sh point
 sh mapillary_vt2pg.sh signalisation
 ```
+
+### Rendu
+
+Pour terminer, on peut charger la donnée dans QGIS et créer un style en s'appuyant sur les [symboles partagés par Mapillary](https://github.com/mapillary/mapillary_sprite_source).
+
+[![Signalisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/signalisation.png "Signalisation"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/signalisation.png "Signalisation"){: data-mediabox="gallery-lightbox" data-title="Signalisation" }
 
 ----
 
@@ -263,6 +263,13 @@ En parallèle et pour d'autres usages, le script de téléchargement des donnée
 
 1. bénéficier à vos services concernés (services techniques, voirie...),
 2. contribuer à améliorer la qualité de vos données.
+
+----
+
+## Références
+
+- Un article de Morgan Hite sur son blog : [QGIS 3 and Vector map tiles](https://wanderingcartographer.wordpress.com/2021/01/09/qgis-3-and-vector-map-tiles/)
+- [De l'intérêt de mettre en place un "streetview" libre](https://prezi.com/p/ufcelyteyqzc/n-street-view-libre_retour_experience_grandmontauban_aitf/) par J. Sidgwick, CA du Grand Montauban
 
 ----
 
