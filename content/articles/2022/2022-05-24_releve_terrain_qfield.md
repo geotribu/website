@@ -148,6 +148,8 @@ L’inconvénient est que cela nécessite tout de maintenir des applications ser
 
 #### Git
 
+![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
+
 Dernièrement, j’utilise [Git] pour gérer le partage et la synchronisation de projets QField sur une flotte de tablette. Le principe est le suivant :
 
 - Hébergement sur Gitlab (10 Go par projet sur un compte gratuit !!)
