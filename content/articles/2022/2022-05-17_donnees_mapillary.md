@@ -117,7 +117,7 @@ graph TD;
 
 ### Un environnement de travail : config.env
 
-Avant de se lancer, il est bon de paramétrer le fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé pour intégrer les données Mapillary dans votre base de données. On y définit les différents répertoires de travail ainsi que les variables permettant d'accéder à la base de données (Connexion par [pg_service.conf](http://archives.postgresql.fr/v2/index9215.html?q=node/1388)).
+Avant de se lancer, il est bon de paramétrer le fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé pour intégrer les données Mapillary dans votre base de données. On y définit les différents répertoires de travail ainsi que les variables permettant d'accéder à la base de données (connexion par [pg_service.conf](http://archives.postgresql.fr/v2/index9215.html?q=node/1388)).
 
 Voici le fichier `config.env` à adapter :
 
