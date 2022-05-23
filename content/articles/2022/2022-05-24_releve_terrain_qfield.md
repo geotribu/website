@@ -21,6 +21,8 @@ tags:
 
 :calendar: Date de publication initiale : 24 mai 2022
 
+![logo QField](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qfield.png "logo QField"){: .img-rdp-news-thumb }
+
 Pour donner suite à [l’article récent sur Input](/articles/2022/2022-03-11_releve_terrain_qgis_input/), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de QField ces dernières années avec le cabinet Tactis.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -122,11 +124,15 @@ Utilisez le générateur d’UUID pour faire des clés primaires uniques entre v
 
 #### PostGIS
 
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: .img-rdp-news-thumb }
+
 Dans le meilleur des mondes (sauf pour les allergiques à la 5G), nous aurions de la connectivité partout et il suffirait de bâtir un projet 100% online, derrière un serveur PostGIS par exemple. Reste à gérer le partage des projets (.qgs), qui peut être fait avec un simple stockage cloud type Gdrive.
 
 [![Postgis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_postgis.png "Postgis"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_postgis.png "Postgis"){: data-mediabox="lightbox-gallery" data-title="Postgis"}
 
 #### Syncthing
+
+![logo Syncthing](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/syncthing.png "logo Syncthing"){: .img-rdp-news-thumb }
 
 Dans la vraie vie, on intervient encore sur des zones à faibles connectivités (surtout quand on travaille dans le déploiement du réseau télécoms, ce qui était mon cas, mais c’est aussi vrai pour bien d’autres secteurs). De plus, si la collecte implique des photos, PostGIS ne sera pas suffisant pour remonter les fichiers.
 
@@ -143,6 +149,8 @@ Pour gérer une administration d’utilisateurs (plusieurs utilisateurs, plusieu
 L’inconvénient est que cela nécessite tout de maintenir des applications serveur, ce qui est rigolo un temps et source de stress ensuite 🙂.
 
 #### Git
+
+![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
 
 Dernièrement, j’utilise [Git] pour gérer le partage et la synchronisation de projets QField sur une flotte de tablette. Le principe est le suivant :
 
