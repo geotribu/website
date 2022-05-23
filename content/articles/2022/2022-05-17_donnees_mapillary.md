@@ -261,7 +261,7 @@ Grâce aux possibilités de rendu des tuiles vectorielles de QGIS, il est possib
 
 En parallèle et pour d'autres usages, le script de téléchargement des données va vous permettre de stocker l'information dans votre base de données afin qu'elle puisse :
 
-1. bénéficier à vos services concernées (services techniques, voirie, ...),
+1. bénéficier à vos services concernés (services techniques, voirie...),
 2. contribuer à améliorer la qualité de vos données.
 
 ----
