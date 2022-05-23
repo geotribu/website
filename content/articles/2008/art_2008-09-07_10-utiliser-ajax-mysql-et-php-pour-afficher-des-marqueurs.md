@@ -14,7 +14,7 @@ tags:
     - mysql
     - Ajax
     - PHP
-title: 10. Utiliser Ajax, MySQL et PHP pour afficher des marqueurs
+title: "10. Utiliser Ajax, MySQL et PHP pour afficher des marqueurs"
 ---
 
 # 10. Utiliser Ajax, MySQL et PHP pour afficher des marqueurs
@@ -48,7 +48,7 @@ function createMarker(point,nom,url) {
 
 ### Ajax
 
-L'API Google Maps possède une méthode permettant une communication Ajax avec un script (ici le fichier ajax\_mysql.php) :  
+L'API Google Maps possède une méthode permettant une communication Ajax avec un script (ici le fichier `ajax_mysql.php`) :  
 
 ```javascript
 var urlstr = "./ajax_mysql.php";  
@@ -68,7 +68,7 @@ Ici nous avons parsé le fichier XML envoyé par le script et nous avons appelé
 
 ## Construction du XML côté serveur
 
-Côté serveur, créer un fichier ajax\_mysql.php qui ouvre une connexion vers la base de données contenant les enregistrements et qui édite un fichier XML grâce aux fonctions du DOM XML :  
+Côté serveur, créer un fichier `ajax_mysql.php` qui ouvre une connexion vers la base de données contenant les enregistrements et qui édite un fichier XML grâce aux fonctions du DOM XML :  
 
 ```php
 <?php
@@ -77,14 +77,14 @@ $password = "*****";
 $host = "******";  
 $bdd = "******";
 
-mysql\_connect($host,$user,$password);  
-mysql\_select\_db($bdd) or die("erreur de connexion à la base de données");  
-$sql = "select * from test\_ajax\_mysql";  
-$res = mysql\_query($sql) or die(mysql\_error());  
+mysql_connect($host,$user,$password);  
+mysql_select_db($bdd) or die("erreur de connexion à la base de données");  
+$sql = "select * from test_ajax_mysql";  
+$res = mysql_query($sql) or die(mysql_error());  
 $dom = new DomDocument('1.0', 'iso-8859-1');  
 $node = $dom->createElement("markers");  
 $parnode = $dom->appendChild($node);  
-while ($result = mysql\_fetch\_array($res)){  
+while ($result = mysql_fetch_array($res)){  
   $node = $dom->createElement("marker");  
   $newnode = $parnode->appendChild($node);  
   $newnode->setAttribute("nom", $result['nom']);  
@@ -122,16 +122,16 @@ function initialize() {
     var map = new GMap2(document.getElementById('map'));
     map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
     map.addControl(new GMapTypeControl());
-    map.removeMapType(G\_HYBRID\_MAP);
-    map.addMapType(G\_PHYSICAL\_MAP);
-    map.setMapType(G\_PHYSICAL\_MAP);
+    map.removeMapType(G_HYBRID_MAP);
+    map.addMapType(G_PHYSICAL_MAP);
+    map.setMapType(G_PHYSICAL_MAP);
     map.addControl(new GOverviewMapControl());
     map.addControl(new GScaleControl());
     map.addControl(new GLargeMapControl());
     map.enableScrollWheelZoom();
 
 
-    var urlstr = "./ajax\_mysql.php";
+    var urlstr = "./`ajax_mysql.php`";
     GDownloadUrl(urlstr, function(data) {
       var xml = GXml.parse(data);
       var markers = xml.documentElement.getElementsByTagName("marker");
@@ -158,14 +158,14 @@ $password = "*****";
 $host = "******";  
 $bdd = "******";
 
-mysql\_connect($host,$user,$password);  
-mysql\_select\_db($bdd) or die("erreur de connexion à la base de données");  
-$sql = "select * from test\_ajax\_mysql";  
-$res = mysql\_query($sql) or die(mysql\_error());  
+mysql_connect($host,$user,$password);  
+mysql_select_db($bdd) or die("erreur de connexion à la base de données");  
+$sql = "select * from test_ajax_mysql";  
+$res = mysql_query($sql) or die(mysql_error());  
 $dom = new DomDocument('1.0', 'iso-8859-1');  
 $node = $dom->createElement("markers");  
 $parnode = $dom->appendChild($node);  
-while ($result = mysql\_fetch\_array($res)){  
+while ($result = mysql_fetch_array($res)){  
 $node = $dom->createElement("marker");  
 $newnode = $parnode->appendChild($node);  
 $newnode->setAttribute("nom", $result['nom']);  
@@ -180,9 +180,11 @@ echo $xmlfile;
 
 ## Démonstration
 
-<iframe src="http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto10.html" height="350px" width="100%">
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://88.191.39.115/fabien/geotribu/geotribu_Google-Maps_tuto10.html" height="350px" width="100%">`
 
-[Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto10.html)
+[Résultat pleine page](http://88.191.39.115/fabien/geotribu/geotribu_Google-Maps_tuto10.html)
 
 ## Remarques
 
