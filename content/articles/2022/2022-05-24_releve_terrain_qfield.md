@@ -21,6 +21,8 @@ tags:
 
 :calendar: Date de publication initiale : 24 mai 2022
 
+![logo QField](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qfield.png "logo QField"){: .img-rdp-news-thumb }
+
 Pour donner suite à [l’article récent sur Input](/articles/2022/2022-03-11_releve_terrain_qgis_input/), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de QField ces dernières années avec le cabinet Tactis.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
