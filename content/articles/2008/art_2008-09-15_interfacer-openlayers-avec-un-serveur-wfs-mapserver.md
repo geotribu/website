@@ -65,7 +65,7 @@ Une application WFS est composée de 3 parties essentielles : le **serveur carto
 
 Un exemple de requête serait la suivante : une requête de type "GetFeature" est envoyée par le navigateur au serveur cartographique. Celui-ci, en fonction de sa configuration et des données vérifie la validité de cette requête en fonction de sa configuration et des données qu'il possède; ensuite, celui-ci retourne le ou les objets géographiques demandés.
 
-[![Image WFS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/wfs.png) "Image WFS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/wfs.png "Image WFS"){: data-mediabox="gallery-lightbox" data-title="Image WFS"}
+[![Image WFS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/wfs.png "Image WFS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/wfs.png "Image WFS"){: data-mediabox="gallery-lightbox" data-title="Image WFS"}
 
 ## Faire de MapServer un serveur WFS
 

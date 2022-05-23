@@ -20,7 +20,7 @@ tags:
 
 Afin que la technologie WMS puisse réellement prendre une ampleur suffisante, il fallait avant tout que soit réglé son principal défaut, sa lenteur. C'est ainsi qu'est né, suite à une réflexion de toute la communauté OpenSource lors du FOSS4G 2006, tileCache. En effet, celui-ci vient s'interfacer entre le serveur cartographique et le client afin de garder en cache toutes les images générées. Si un utilisateur demande à nouveau la même ressource, l'image étant déjà produite l'affichage n'en sera que plus rapide.
 
-[![TileCache](/sites/default/files/Tuto/img/tileCache/tileCache_light2.png "TileCache"){: .img-center loading=lazy }](/sites/default/files/Tuto/img/tileCache/tileCache_light2.png "TileCache"){: data-mediabox="gallery-lightbox" data-title="TileCache"}
+[![TileCache](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/tileCache_light2.png "TileCache"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/tileCache_light2.png "TileCache"){: data-mediabox="gallery-lightbox" data-title="TileCache"}
 
 **En résumé, tileCache est fait pour vous si vous utilisez un serveur WMS et que vous souhaitez augmenter de manière significative (rapport de 1 à 10) le temps de chargement.**
 
