@@ -49,14 +49,6 @@ Calculer un itinéraire lors de l'appel de la carte :
 
 
 ```javascript
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-html { overflow:hidden; height:100%; }
-body { height:100%; margin:0; }
-#map { width:100%; height:100%; }
-
-
-
 var map = null;
 var gdir;
 

@@ -42,7 +42,7 @@ L'ajout d'un marqueur sur la carte se fait de la façon suivante :
 
 Qui produit cette carte :
 
-[![Carte Google](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&zoom=15&size=400x400&markers=43.57691664771851,1.402451992034912,bluem&GOOGLE_MAPS_API_KEY "Carte Google"){: .img-center loading=lazy }](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&zoom=15&size=400x400&markers=43.57691664771851,1.402451992034912,bluem&GOOGLE_MAPS_API_KEY "Carte Google"){: data-mediabox="gallery-lightbox" data-title="Carte Google"}
+[![Carte Google](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/staticmap2-2.gif "Carte Google"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/staticmap2-2.gif "Carte Google"){: data-mediabox="gallery-lightbox" data-title="Carte Google"}
 
 L'attribut 'marker' permet d'ajouter un marqueurs sur la carte, il prend comme valeur les coordonnées du marqueur ainsi que le cas échéant la couleur du marqueur suivi de la letter 'm' pour lettre un M dans le marqueur.  
 
@@ -56,7 +56,7 @@ Exemple d'une carte centrée sur Toulouse, de taille 640 x 640, de 1° de hauteu
 
 Qui donne la carte ci-dessous :
 
-[![Carte Google](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&span=1,1&size=640x640&key=GOOGLE_MAPS_API_KEY "Carte Google"){: .img-center loading=lazy }](http://maps.google.com/staticmap?center=43.57691664771851,1.402451992034912&span=1,1&size=640x640&key=GOOGLE_MAPS_API_KEY "Carte Google"){: data-mediabox="gallery-lightbox" data-title="Carte Google"}
+[![Carte Google](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/staticmap3-2.gif "Carte Google"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/staticmap3-2.gif "Carte Google"){: data-mediabox="gallery-lightbox" data-title="Carte Google"}
 
 ## Conclusion
 

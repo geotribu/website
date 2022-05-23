@@ -51,7 +51,9 @@ L'une des premières étapes est de créer un nouvel objet map grâce au constru
 Le résultat est visible sur cette page : exemple 1.
 
 ```html
-<script type="text/javascript">
+</head>
+   <script src="./js/OpenLayers/OpenLayers.js" type="text/javascript">
+   <script type="text/javascript">
     function init() {
       var map, ol_wms;     // (1) instanciation du constructeur
      map = new OpenLayers.Map('map');
@@ -60,9 +62,14 @@ Le résultat est visible sur cette page : exemple 1.
          // (3) ajout des couches a la carte
           map.addLayers([ol_wms]);
      //On zoom au max
-     map.zoomToMaxExtent();
+     map.zoomToMaxExtent();;
    }
   </script>
+</head>
+  <body onload="init()" >
+    <div id="map"></div>
+  </body>
+</html>
 ```
 
 ## Enrichir l'interface
@@ -71,13 +78,14 @@ Comme vous avez pu le constater dans l'exemple 1, OpenLayers dispose d'une inter
 
 Dans la liste ci-dessous sont définies les boutons de contrôles les plus courants (une liste complète est néanmoins disponible ici) :
 
-Classe	Description
-PanZoomBar	Affiche une barre de zoom (par défaut c'est panZoom qui est utilisé).
-Scale	Affiche l'échelle courante.
-LayerSwitcher	Affiche un sélecteur permettant de choisir la couche désirée.
-EditingToolbar	Affiche la barre d'édition des objets géographiques.
-MousePosition	Affiche la position du curseur.
-OverviewMap	Ajoute une carte de référence.
+|Classe	| Description |
+| :--------------- |:---------------|
+|PanZoomBar	| Affiche une barre de zoom (par défaut c'est panZoom qui est utilisé).|
+|Scale |	Affiche l'échelle courante.|
+|LayerSwitcher |	Affiche un sélecteur permettant de choisir la couche désirée.|
+|EditingToolbar	| Affiche la barre d'édition des objets géographiques.|
+|MousePosition |	Affiche la position du curseur.|
+|OverviewMap |	Ajoute une carte de référence.|
 
 Il existe deux manières pour modifier l'apparence général de la carte :
 
@@ -122,7 +130,8 @@ La création d'un marqueur se fait grâce au constructeur "OpenLayers. Marker". 
 Il existe différents types de marqueurs mais pour des raisons de simplicité nous n'en verrons ici qu'un seul. L'objectif du code ci-dessous est tout d'abord d'afficher un marqueur à une position géographique définie. Ensuite, nous allons ajouter un peu d'interactivité en spécifiant qu'au click de l'utilisateur sur le marqueur une fenêtre d'information doit s'afficher. Le résultat du code ci-dessous est visible ici : exemple 3.
 
 ```html
-<script type="text/javascript">
+</head>
+  <script src="./js/OpenLayers/OpenLayers.js" type="text/javascript">
     function init() {
       var map, layer;  
       map = new OpenLayers.Map('map', {controls:[new OpenLayers.Control.MouseDefaults()]});
@@ -149,6 +158,11 @@ Il existe différents types de marqueurs mais pour des raisons de simplicité no
      }
    }
   </script>
+</head>
+  <body onload="init()" >
+    <div id="map"></div>
+  </body>
+</html>
 ```
 
 ----

@@ -108,21 +108,29 @@ Dans ce tutoriel nous verrons simplement l'affichage d'une carte grâce au PhpMa
 
 Pour cela nous aurons besoin tout d'abord d'instancier un nouvel objet Map, cela se fait grâce au constructeur ms_newMapObj auquel nous passons l'adresse où est situé notre MapFile. Ensuite, nous allons lui demander de dessiner la carte correspondante et enfin de la sauvegarder dans le dossier définit dans le bloc Web du MapFile.
 
-```
+```html
 <?php
-// Éclaration de la bibliothèque PHPMAPSCRIPT
+   // Éclaration de la bibliothèque PHPMAPSCRIPT
    dl('php_mapscript.dll')
    $map_file = "./tutorial.map";
    $map = ms_newMapObj($map_file);
    $image=$map->draw();
    $image_url=$image->saveWebImage(MS_PNG,1,1,0);
 ?>
-<?php echo $image_url?>
+
+<HTML>
+    <HEAD>
+      <TITLE?>Tutorial MapServer</TITLE?>
+         </HEAD>
+         <BODY>
+             <IMG SRC= <?php echo $image_url; ?> >
+          </BODY>
+</HTML>
 ```
 
 Si vous avez tout bien suivi, et que je ne me suis pas trompé (j'espère... :) ), une carte des contours de l'Indonésie devrait s'être dessinée. Une carte comme celle-ci :
 
-[![Indonésie](http://geotribu.net/img_site/tutoriaux/mapserver/indonesie.png "Indonésie"){: .img-center loading=lazy }](http://geotribu.net/img_site/tutoriaux/mapserver/indonesie.png "Indonésie"){: data-mediabox="gallery-lightbox" data-title="Indonésie"}
+[![Indonésie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/indonesie.png "Indonésie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/indonesie.png "Indonésie"){: data-mediabox="gallery-lightbox" data-title="Indonésie"}
 
 ----
 

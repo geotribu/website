@@ -65,7 +65,7 @@ Nous allons spécifier le type de données que nous allons utiliser (dans notre 
 
 [![Data shape](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/data_shape.jpg "Data shape"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/data_shape.jpg "Data shape"){: data-mediabox="gallery-lightbox" data-title="Data shape"}
 
-Nous allons, pour finir, decrire la donnée. Pour cela il faut lui assigner un style :
+Nous allons, pour finir, décrire la donnée. Pour cela il faut lui assigner un style :
 
 [![Style](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/style.jpg "Style"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/style.jpg "Style"){: data-mediabox="gallery-lightbox" data-title="Style"}
 

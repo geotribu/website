@@ -52,12 +52,40 @@ Afin d'afficher la carte, il est nécessaire de déclarer un bloc div qui contie
 <div id="map_canvas"></div>
 ```
 
-Et il faut appeler la fonction initialize() lors du chargement de la page :   La fonction GUnload() permet de libérer la mémoire lorsque l'on quitte la page Web.
+Et il faut appeler la fonction `initialize()` lors du chargement de la page : La fonction `GUnload()` permet de libérer la mémoire lorsque l'on quitte la page Web.
 
 ## Code complet
 
-!!! info
-    L'archive du code complet n'a pu être restauré.  
+```html
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+     [Google Maps] 1. Introduction à Google Maps
+    </title>
+	<style type="text/css">
+	  html { overflow:hidden; height:100%; }
+	  body { height:100%; margin:0; }
+	  #map { width:100%; height:100%; }
+	</style>
+    <script src="http://maps.google.com/maps?file=api&v=2.x&key=votre_clé_ici" type="text/javascript"></script>
+    <script type="text/javascript">
+      function initialize() {
+        if (GBrowserIsCompatible()) {
+          var map = new GMap2(document.getElementById('map'));
+          map.setCenter(new GLatLng(43.57769664771851, 1.402821992034912),16);
+        }
+        else{
+          alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
+        }
+      }
+    </script>
+  </head>
+  <body onload="initialize()" onunload="GUnload()">
+    <div id="map"</div>
+  </body>
+</html>
+```
 
 ## Démonstration
 

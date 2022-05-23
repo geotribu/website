@@ -31,7 +31,7 @@ Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-ca
 
 Définir la fonction showAddress qui géocode l'adresse saisie et créé un marqueur cliquable :  
 
-```JavaScript
+```javascript
 function showAddress(address) {  
   if (geocoder) {  
     geocoder.getLatLng(address,function(point) {  
@@ -68,7 +68,6 @@ Et éditer le formulaire en HTML :
 
 ```javascript
 <script type="text/javascript">
-
 
 var map = null;
 var geocoder = null;

@@ -100,81 +100,75 @@ echo $xmlfile;
 ## Code complet
 
 ```javascript
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-html { overflow:hidden; height:100%; }
-body { height:100%; margin:0; }
-#map { width:100%; height:100%; }
-
-
-
 function createMarker(point,nom,url) {
-  var marker = new GMarker(point);
-  var html = "<b><a href=\""+url+"\">"+nom+"</a></b>";
-  GEvent.addListener(marker, 'click', function() {
-    marker.openInfoWindowHtml(html);
-  });
-  return marker;
+var marker = new GMarker(point);
+var html = "<b><a href=\""+url+"\">"+nom+"</a></b>";
+GEvent.addListener(marker, 'click', function() {
+  marker.openInfoWindowHtml(html);
+});
+return marker;
 }
 
 function initialize() {
-  if (GBrowserIsCompatible()) {
-    var map = new GMap2(document.getElementById('map'));
-    map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
-    map.addControl(new GMapTypeControl());
-    map.removeMapType(G_HYBRID_MAP);
-    map.addMapType(G_PHYSICAL_MAP);
-    map.setMapType(G_PHYSICAL_MAP);
-    map.addControl(new GOverviewMapControl());
-    map.addControl(new GScaleControl());
-    map.addControl(new GLargeMapControl());
-    map.enableScrollWheelZoom();
+if (GBrowserIsCompatible()) {
+  var map = new GMap2(document.getElementById('map'));
+  map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
+  map.addControl(new GMapTypeControl());
+  map.removeMapType(G_HYBRID_MAP);
+  map.addMapType(G_PHYSICAL_MAP);
+  map.setMapType(G_PHYSICAL_MAP);
+  map.addControl(new GOverviewMapControl());
+  map.addControl(new GScaleControl());
+  map.addControl(new GLargeMapControl());
+  map.enableScrollWheelZoom();
 
 
-    var urlstr = "./`ajax_mysql.php`";
-    GDownloadUrl(urlstr, function(data) {
-      var xml = GXml.parse(data);
-      var markers = xml.documentElement.getElementsByTagName("marker");
-      for (var i = 0; i < markers.length; i++) {
-        var nom = markers[i].getAttribute("nom");
-        var url = markers[i].getAttribute("url");
-        var point = new GLatLng(parseFloat(markers[i].getAttribute("lat")),parseFloat(markers[i].getAttribute("long")));
-        var marker = createMarker(point,nom,url);
-        map.addOverlay(marker);
-      }
-    });
+  var urlstr = "./`ajax_mysql.php`";
+  GDownloadUrl(urlstr, function(data) {
+    var xml = GXml.parse(data);
+    var markers = xml.documentElement.getElementsByTagName("marker");
+    for (var i = 0; i < markers.length; i++) {
+      var nom = markers[i].getAttribute("nom");
+      var url = markers[i].getAttribute("url");
+      var point = new GLatLng(parseFloat(markers[i].getAttribute("lat")),parseFloat(markers[i].getAttribute("long")));
+      var marker = createMarker(point,nom,url);
+      map.addOverlay(marker);
+    }
+  });
 
-  }
-  else{
-    alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
-  }
+}
+else{
+  alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
+}
 }
 ```  
 
 ```php
 <?php
-$user = "******";  
-$password = "*****";  
-$host = "******";  
-$bdd = "******";
 
-mysql_connect($host,$user,$password);  
-mysql_select_db($bdd) or die("erreur de connexion à la base de données");  
-$sql = "select * from test_ajax_mysql";  
-$res = mysql_query($sql) or die(mysql_error());  
-$dom = new DomDocument('1.0', 'iso-8859-1');  
-$node = $dom->createElement("markers");  
-$parnode = $dom->appendChild($node);  
-while ($result = mysql_fetch_array($res)){  
-$node = $dom->createElement("marker");  
-$newnode = $parnode->appendChild($node);  
-$newnode->setAttribute("nom", $result['nom']);  
-$newnode->setAttribute("lat", $result['lat']);  
-$newnode->setAttribute("long", $result['long']);  
-$newnode->setAttribute("url", $result['url']);  
-}  
-$xmlfile = $dom->saveXML();  
-echo $xmlfile;
+  $user = "******";
+  $password = "*****";
+  $host = "******";
+  $bdd = "******";
+
+  mysql_connect($host,$user,$password);
+  mysql_select_db($bdd) or die("erreur de connexion à la base de données");
+  $sql = "select * from test_ajax_mysql";
+  $res = mysql_query($sql) or die(mysql_error());
+  $dom = new DomDocument();
+  $node = $dom->createElement("markers");
+  $parnode = $dom->appendChild($node);
+  while ($result = mysql_fetch_array($res)){
+    $node = $dom->createElement("marker");
+    $newnode = $parnode->appendChild($node);
+    $newnode->setAttribute("nom", $result['nom']);
+    $newnode->setAttribute("lat", $result['lat']);
+    $newnode->setAttribute("long", $result['long']);
+    $newnode->setAttribute("url", $result['url']);
+  }
+  $xmlfile = $dom->saveXML();
+  echo $xmlfile;
+
 ?>
 ```  
 

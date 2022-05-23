@@ -108,57 +108,72 @@ map.enableScrollWheelZoom();
 
 ### Code complet
 
-```javascript
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+```html
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>
+    [Google Maps] 9. Superposer une carte à Google Maps
+  </title>
+  <style type="text/css">
+  html { overflow:hidden; height:100%; }
+  body { height:100%; margin:0; }
+  #map { width:100%; height:100%; }
+  </style>
+  <link rel="icon" type="image/png" href="./favicon.png"/>
+  <script src="http://maps.google.com/maps?file=api&v=2.x&key=votre_clé_ici" type="text/javascript"></script>
+  <script type="text/javascript">
 
-html { overflow:hidden; height:100%; }
-body { height:100%; margin:0; }
-#map { width:100%; height:100%; }
-
-function TileToQuadKey (x, y, zoom){
-  var quad = "";
-  for (var i = zoom; i > 0; i--){
-    var mask = 1 << (i - 1);
-    var cell = 0;
-    if ((x & mask) != 0){
-      cell++;
+  function TileToQuadKey (x, y, zoom){
+    var quad = "";
+    for (var i = zoom; i > 0; i--){
+      var mask = 1 << (i - 1);
+      var cell = 0;
+      if ((x & mask) != 0){
+        cell++;
+      }
+      if ((y & mask) != 0){
+        cell += 2;
+      }
+      quad += cell;
     }
-    if ((y & mask) != 0){
-      cell += 2;
+    return quad;
+  }
+
+  function initialize() {
+    if (GBrowserIsCompatible()) {
+      var map = new GMap2(document.getElementById('map'));
+
+      var topoTiles = function (a,b) {
+        var f = "./tile\_files/" + TileToQuadKey(a.x,a.y,b) + ".png";
+        return f;
+      }
+
+      var topoLayer = new GTileLayer(new GCopyrightCollection(''),9,12);
+      topoLayer.getTileUrl = topoTiles;
+      topoLayer.isPng = function() {return true;};
+
+      var topoMap = new GMapType([topoLayer], G\_SATELLITE\_MAP.getProjection(), "Topo",{errorMessage: "Pas de données ici !"});
+
+      map.addMapType(topoMap);
+      map.removeMapType(G\_HYBRID\_MAP);
+      map.removeMapType(G\_SATELLITE\_MAP);
+      map.addControl(new GScaleControl());
+      map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),12);
+      map.setMapType(topoMap);
+      map.enableScrollWheelZoom();
+
     }
-    quad += cell;
-  }
-  return quad;
-}
-
-function initialize() {
-  if (GBrowserIsCompatible()) {
-    var map = new GMap2(document.getElementById('map'));
-
-    var topoTiles = function (a,b) {
-      var f = "./tile\_files/" + TileToQuadKey(a.x,a.y,b) + ".png";
-      return f;
+    else{
+      alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
     }
-
-    var topoLayer = new GTileLayer(new GCopyrightCollection(''),9,12);
-    topoLayer.getTileUrl = topoTiles;
-    topoLayer.isPng = function() {return true;};
-
-    var topoMap = new GMapType([topoLayer], G\_SATELLITE\_MAP.getProjection(), "Topo",{errorMessage: "Pas de données ici !"});
-
-    map.addMapType(topoMap);
-    map.removeMapType(G\_HYBRID\_MAP);
-    map.removeMapType(G\_SATELLITE\_MAP);
-    map.addControl(new GScaleControl());
-    map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),12);
-    map.setMapType(topoMap);
-    map.enableScrollWheelZoom();
-
   }
-  else{
-    alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
-  }
-}
+</script>
+</head>
+<body onload="initialize()" onunload="GUnload()">
+  <div id="map"></div>
+</body>
+</html>
 ```
 
 ## Démonstration

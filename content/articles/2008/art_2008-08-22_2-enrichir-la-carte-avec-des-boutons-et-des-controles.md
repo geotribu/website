@@ -83,25 +83,42 @@ map.enableScrollWheelZoom();
 ##Code complet
 
 ```html
-<script type="text/javascript">
-function initialize() {
-  if (GBrowserIsCompatible()) {
-    var map = new GMap2(document.getElementById('map'));
-    map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
-    map.addControl(new GMapTypeControl());
-    map.removeMapType(G_HYBRID_MAP);
-    map.addMapType(G_PHYSICAL_MAP);
-    map.setMapType(G_PHYSICAL_MAP);
-    map.addControl(new GOverviewMapControl());
-    map.addControl(new GScaleControl());
-    map.addControl(new GLargeMapControl());
-    map.enableScrollWheelZoom();
-  }
-  else{
-    alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
-  }
-}
-</script>
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      [Google Maps] 2. Introduction sur les contrôles
+    </title>
+    <style type="text/css">
+      html { overflow:hidden; height:100%; }
+      body { height:100%; margin:0; }
+      #map { width:100%; height:100%; }
+    </style>
+    <script src="http://maps.google.com/maps?file=api&v=2.x&key=votre_clé_ici" type="text/javascript"></script>
+    <script type="text/javascript">
+      function initialize() {
+        if (GBrowserIsCompatible()) {
+          var map = new GMap2(document.getElementById('map'));
+          map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
+          map.addControl(new GMapTypeControl());
+          map.removeMapType(G_HYBRID_MAP);
+          map.addMapType(G_PHYSICAL_MAP);
+          map.setMapType(G_PHYSICAL_MAP);
+          map.addControl(new GOverviewMapControl());
+          map.addControl(new GScaleControl());
+          map.addControl(new GLargeMapControl());
+          map.enableScrollWheelZoom();
+        }
+        else{
+          alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
+        }
+      }
+    </script>
+  </head>
+  <body onload="initialize()" onunload="GUnload()">
+    <div id="map"></div>
+  </body>
+</html>
 ```
 
 ## Démonstration
