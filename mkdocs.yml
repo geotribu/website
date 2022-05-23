@@ -127,6 +127,30 @@ theme:
   font: false
   icon:
     repo: fontawesome/brands/github-alt
+    tag:
+      default: fontawesome/solid/tag
+      # -- custom tags icons
+      ananas: material/fruit-pineapple
+      atlas: fontawesome/solid/book-atlas
+      citrouille: material/pumpkin
+      code: fontawesome/solid/code
+      conference: fontawesome/solid/person-chalkboard
+      database: fontawesome/solid/database
+      facebook: fontawesome/brands/facebook
+      globe: fontawesome/solid/earth-europe
+      google: fontawesome/brands/google
+      html: fontawesome/brands/html5
+      manette: fontawesome/solid/gamepad
+      js: fontawesome/brands/js
+      meridiens: fontawesome/solid/globe
+      oeuf: fontawesome/solid/egg
+      geoloupe: fontawesome/solid/magnifying-glass-location
+      python: fontawesome/brands/python
+      route: fontawesome/solid/route
+      rstats: fontawesome/brands/r-project
+      satellite: fontawesome/solid/satellite-dish
+      streetview: fontawesome/solid/street-view
+      windows: fontawesome/brands/windows
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
@@ -194,6 +218,59 @@ extra:
     - icon: "fontawesome/solid/piggy-bank"
       link: https://fr.tipeee.com/geotribu/
       name: "Le pot commun sur Tipee"
+  tags:
+    atlas: atlas
+    Bash: code
+    Centipede: satellite
+    cURL: code
+    D3.js: js
+    Easter eggs: oeuf
+    Esri: globe
+    ExtJS: js
+    Facebook: facebook
+    FIG: conference
+    FOSS4G: conference
+    GéoDataDays: conference
+    GeoGames: manette
+    géo-lecture: atlas
+    Google: google
+    Google Earth: google
+    Google Maps: google
+    Google Street View: google
+    GraphHopper: route
+    Halloween: citrouille
+    INSPIRE: ananas
+    JavaScript: js
+    jeu: manette
+    jeux vidéo: manette
+    LIDAR: satellite
+    livre: atlas
+    Mapillary: streetview
+    Minecraft: manette
+    OpenPathView: streetview
+    OpenRouteService: route
+    OpenStreetMap: geoloupe
+    OSRM: route
+    Open Earth View: streetview
+    pgDay: database
+    pgRouting: route
+    PGSession: database
+    PostGIS: database
+    PostgreSQL: database
+    projection: meridiens
+    PyCSW: python
+    PyGEOS: python
+    PyQGIS: python
+    PyQt: python
+    PySQL: python
+    Python: python
+    PyWPS: python
+    QGIS: globe
+    R: rstats
+    route: route
+    routing: route
+    SQL: database
+    Windows: windows
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
@@ -211,6 +288,7 @@ markdown_extensions:
   - attr_list
   # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
   - footnotes
+  - md_in_html
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
