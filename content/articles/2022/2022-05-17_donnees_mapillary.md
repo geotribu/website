@@ -53,7 +53,7 @@ Aujourd'hui, je vais vous présenter différentes manières d'accéder aux donn�
 Lorsqu'on épluche la documentation, on peut voir que Mapillary propose un service d'accès à ses données basé sur des services de [tuiles vectorielles](https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html). Ils ont l'avantage d'offrir une solution assez souple et légère permettant de visualiser de grandes quantités d'informations. Les tuiles vectorielles de Mapillary suivent les [spécifications des tuiles Mapbox (MVT)](https://docs.mapbox.com/data/tilesets/guides/vector-tiles-standards/) et offrent la possbilité :
 
 - de réaliser des filtrages et des rendus spécifiques
-- d'intérroger la donnée
+- d'interroger la donnée
 
 Il exite trois URL permettant d'accéder aux tuiles vectorielles de Mapillary :
 
