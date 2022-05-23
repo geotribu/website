@@ -6,7 +6,7 @@ categories:
     - article
 date: "2022-05-24"
 description: "Retour d'expérience de l'utilisation de QField en milieu professionnel. Astuces et méthodes de synchronisation."
-image: "XXX.png"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield.jpg"
 license: cc4_by-sa
 tags:
     - collecte
