@@ -165,10 +165,10 @@ Ce fichier est divisé en plusieurs sections dont les spécifications sont les s
 
 - Section [grass] - GRASS GIS settings
   - path : variable $PATH (par exemple /usr/lib/grass/bin)
-  - addonPath : $GRASS\_ADDONS addons
+  - addonPath : $GRASS_ADDONS addons
   - version : Version de GRASS
   - gui : Graphical User Interface doit être de type text
-  - gisbase : Chemin vers le répertoire GIS\_BASE de GRASS (/usr/lib/grass)
+  - gisbase : Chemin vers le répertoire GIS_BASE de GRASS (/usr/lib/grass)
   - ldLibraryPath : Chemin vers le répertoire où sont stockées les librairies de grass (/usr/lib/grass/lib)
 
 Voici un exemple de fichier de configuration (pywps.cfg) :
@@ -239,7 +239,7 @@ xmlns:wps="http://www.opengis.net/wps/1.0.0"
 xmlns:ows="http://www.opengis.net/ows/1.1"  
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance  
 xsi:schemaLocation="http://www.opengis.net/wps/1.0.0  
-http://schemas.opengis.net/wps/1.0.0/wpsGetCapabilities\_response.xsd"  
+http://schemas.opengis.net/wps/1.0.0/wpsGetCapabilities_response.xsd"  
 updateSequence="1">  
 
 PyWPS Development Server  
@@ -253,7 +253,7 @@ Par contre si vous obtenez quelque chose comme :
 Traceback (most recent call last):  
 File "/usr/bin/wps.py", line 221, in  
 wps = WPS()  
-File "/usr/bin/wps.py", line 140, in \_\_init\_\_  
+File "/usr/bin/wps.py", line 140, in __init__  
 self.performRequest()  
 File "/usr/bin/wps.py", line 188, in performRequest  
 from pywps.WPS.GetCapabilities import GetCapabilities  

@@ -80,9 +80,9 @@ Concrétement, ma propriété `externalGraphic` pointe vers la fonction `getChar
 Pour chaque objet vecteur dessiné sur la carte, mon navigateur fait appel à un script php qui retourne ensuite le graphique désiré sous forme d'image. Le script utilisé est le suivant :
 
 ```javascript
-getValueUrban = $\_GET["urban"];  
-getValueRural = $\_GET["rural"];  
-require\_once "../lib/php/Artichow/Pie.class.php";  
+getValueUrban = $_GET["urban"];  
+getValueRural = $_GET["rural"];  
+require_once "../lib/php/Artichow/Pie.class.php";  
 
 //NewGraph Obj  
 $graph = new Graph(300, 300);
@@ -104,8 +104,8 @@ $plot->setStartAngle(90);
 
 //Background Transparent  
 $plot->setBackgroundColor(new Color(255,255,255));  
-$color\_gd = imagecolorallocate($graph->getDriver()->resource, 255,255,255);  
-imagecolortransparent($graph->getDriver()->resource, $color\_gd);
+$color_gd = imagecolorallocate($graph->getDriver()->resource, 255,255,255);  
+imagecolortransparent($graph->getDriver()->resource, $color_gd);
 
 //Border  
 $border = new Border();  

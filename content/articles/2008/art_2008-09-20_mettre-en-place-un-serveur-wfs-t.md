@@ -87,7 +87,7 @@ Passons maintenant à l'optimisation. Les lignes qui suivront permettront d'amé
 
 Feature Server est écrit en python, néanmoins le fonctionnement par défaut se fait en mode CGI. Cela entraine pour Apache, à chaque requête, un chargement de l'exécutable python afin de traiter le fichier featureserver.cgi. Il est plus intéressant de charger directement le mode python dans apache.
 
-Différentes étapes sont nécessaires. Tout d'abord activer, dans la liste des modules, le `mod_python` (`LoadModule python_module modules/mod_python.so`). Une fois votre serveur Web redémarré (httpd restart) l'extension python sera alors directement chargée en mémoire. Si votre version d'apache ne propose pas par défaut le mode python celui-ci est téléchargeable [ici](http://httpd.apache.org/modules/python-download.cgi "Téléchargement apache mod_python") ou bien pour les linuxiens directement depuis votre gestionnaire de packages (apache-mod\_python).
+Différentes étapes sont nécessaires. Tout d'abord activer, dans la liste des modules, le `mod_python` (`LoadModule python_module modules/mod_python.so`). Une fois votre serveur Web redémarré (httpd restart) l'extension python sera alors directement chargée en mémoire. Si votre version d'apache ne propose pas par défaut le mode python celui-ci est téléchargeable [ici](http://httpd.apache.org/modules/python-download.cgi "Téléchargement apache mod_python") ou bien pour les linuxiens directement depuis votre gestionnaire de packages (apache-mod_python).
 
 Il ne vous reste plus qu'une petite étape, modifier votre script pour qu'il ne pointe non plus vers featureserver.cgi mais vers featureserver.py. Si vous ne disposez pas de featureserver.py dans votre dossier featureserver, il vous suffit simplement de changer l'extension du .cgi en .py.
 
@@ -149,7 +149,7 @@ Les arguments nécessaires sont :
 [DBM]  
 type=DBM  
 file=/tmp/featureserver.scribble  
-gaping\_security\_hole=yes
+gaping_security_hole=yes
 ```
 
 `file` => l'endroit où sera stockée votre base.

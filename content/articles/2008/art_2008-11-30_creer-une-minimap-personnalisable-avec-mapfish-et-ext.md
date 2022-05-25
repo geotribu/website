@@ -73,7 +73,7 @@ Ext.extend(mapfish.widgets.miniMap, Ext.Window, {
 
 ## Créer la minimap
 
-Nous allons maintenant étudier le code complet. Dans la partie **initComponent**, nous allons créer notre objet window. Nous définissons pour celui une position sur la carte grâce à la méthode **\_\_setPosition**. Enfin celui-ci est appelé par la méthode onrender.
+Nous allons maintenant étudier le code complet. Dans la partie **initComponent**, nous allons créer notre objet window. Nous définissons pour celui une position sur la carte grâce à la méthode **__setPosition**. Enfin celui-ci est appelé par la méthode onrender.
 
 ```javascript
 /**  

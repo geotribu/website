@@ -65,7 +65,7 @@ GML = new OpenLayers.Layer.Vector("GML",
     new OpenLayers.Strategy.Cluster()  
   ],  
   protocol: new OpenLayers.Protocol.HTTP({  
-    url: "../data/poi\_random/gml/random_poi.gml",  
+    url: "../data/poi_random/gml/random_poi.gml",  
     format: new OpenLayers.Format.GML()  
   }),  
   styleMap:new OpenLayers.StyleMap({  
@@ -121,7 +121,7 @@ wfs = new OpenLayers.Layer.Vector("WFS",
       request: "GetFeature",  
       srs: "EPSG:4326",  
       VERSION : "1.0.0",  
-      typename : 'Random\_POI'  
+      typename : 'Random_POI'  
     },  
     format: new OpenLayers.Format.GML()  
   }),  

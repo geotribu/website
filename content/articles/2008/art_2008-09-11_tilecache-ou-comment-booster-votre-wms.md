@@ -44,7 +44,7 @@ Le plus dur est fait et la configuration est presque fini ! Il vous suffit maint
 
 ## Les différents modes d'utilisation de tileCache
 
-TileCache peut être utilisé de plusieurs façons (CGI, FastCGI, Python...). Nous étudierons en particulier le mode CGI qui est le plus simple, ainsi que le mode CGI avec le mod\_python d'activé.
+TileCache peut être utilisé de plusieurs façons (CGI, FastCGI, Python...). Nous étudierons en particulier le mode CGI qui est le plus simple, ainsi que le mode CGI avec le mod_python d'activé.
 
 La première option sera étudiée très rapidement puisque c'est celle proposée par défaut et qui normalement devrait déjà fonctionner. Dans ce mode, le client interrogera tileCache de la manière suivante (exemple utilisant la notation OpenLayers) :
 
@@ -60,11 +60,11 @@ ol_map.addLayer(wms_sigma);
 
 Passons maintenant à l'optimisation. Les lignes qui suivront permettront d'améliorer sensiblement les performances de tileCache.
 
-* **tileCache avec apache en mode mod\_python**
+* **tileCache avec apache en mode mod_python**
 
 TileCache est écrit en python, néanmoins le fonctionnement par défaut se fait en mode CGI. Cela entraine pour Apache, à chaque requête, un chargement de l'exécutable python afin de traiter le fichier tilecache.cgi. Il est plus intéressant de charger directement le mode python dans apache.
 
-Différentes étapes sont nécessaires. Tout d'abord activer, dans la liste des modules, le mod\_python (LoadModule python\_module modules/mod\_python.so). Une fois votre serveur Web redémarré (httpd restart) l'extension python sera alors directement chargée en mémoire. Si votre version d'apache ne propose pas par défaut le mode python celui-ci est téléchargeable [ici](http://httpd.apache.org/modules/python-download.cgi "Téléchargement apache mod_python") ou bien pour les linuxiens directement depuis votre gestionnaire de packages (apache-mod\_python).
+Différentes étapes sont nécessaires. Tout d'abord activer, dans la liste des modules, le mod_python (LoadModule python_module modules/mod_python.so). Une fois votre serveur Web redémarré (httpd restart) l'extension python sera alors directement chargée en mémoire. Si votre version d'apache ne propose pas par défaut le mode python celui-ci est téléchargeable [ici](http://httpd.apache.org/modules/python-download.cgi "Téléchargement apache mod_python") ou bien pour les linuxiens directement depuis votre gestionnaire de packages (apache-mod_python).
 
 Pour cette seconde étape je n'ai trouvé aucune documentation s'y rapportant. Toutes remarques sont les bienvenues. En effet, pour réussir (de mon côté) à activer le mode python j'ai du auparavant compiler le script python ce qui a permis d'initialiser le service TileCache/Service.py. Pour cela taper la commande suivante (dans un shell):
 
@@ -184,11 +184,11 @@ Ce paramètre permet, lors de la création des tuiles, d'ajouter une image défi
 
 Le paramètre watermarkOpacity définit l'opacité à appliquer à l'image qui sera ajoutée. La valeur (flottant) varie entre 0 et 1.
 
-**extent\_type**  
+**extent_type**  
 
 En définissant ce paramètre comme "loose" vous autoriserez TileCache a générer des images en dehors de l'extension géographique préalablement définie (bounding box). Ce paramètre peut être utile pour les personnes ne sachant pas à quelle extension il sera nécessaire d'arrêter la génération des tuiles.
 
-**tms\_type**  
+**tms_type**  
 
 En définissant ce paramètre comme "google" cela intervertira la verticalité (pour utiliser le modèle x/y spécifique de google)
 

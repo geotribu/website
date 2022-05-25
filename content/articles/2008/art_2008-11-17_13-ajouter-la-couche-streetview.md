@@ -52,9 +52,9 @@ function initialize() {
     var map = new GMap2(document.getElementById('map'));
     map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
     map.addControl(new GMapTypeControl());
-    map.removeMapType(G\_HYBRID\_MAP);
-    map.addMapType(G\_PHYSICAL\_MAP);
-    map.setMapType(G\_PHYSICAL\_MAP);
+    map.removeMapType(G_HYBRID_MAP);
+    map.addMapType(G_PHYSICAL_MAP);
+    map.setMapType(G_PHYSICAL_MAP);
     map.addControl(new GOverviewMapControl());
     map.addControl(new GScaleControl());
     map.addControl(new GLargeMapControl());

@@ -65,7 +65,7 @@ map.getContainer().appendChild(document.getElementById("address"));
 Et éditer le formulaire en HTML :  
 
 !!! info
-    Le serveur hébergeant le formulaire n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée est désactivée. 
+    Le serveur hébergeant le formulaire n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée est désactivée.
 
 ## Code complet
 
@@ -85,7 +85,7 @@ function showAddress(address) {
         map.setCenter(point);
         var marker = new GMarker(point);
         map.addOverlay(marker);
-        var html = '<img src="./logos/logo\_geotribu.png">';
+        var html = '<img src="./logos/logo_geotribu.png">';
         GEvent.addListener(marker, 'click', function() {
           marker.openInfoWindowHtml(html);
         });
@@ -100,9 +100,9 @@ function initialize() {
 
     map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
     map.addControl(new GMapTypeControl());
-    map.removeMapType(G\_HYBRID\_MAP);
-    map.addMapType(G\_PHYSICAL\_MAP);
-    map.setMapType(G\_PHYSICAL\_MAP);
+    map.removeMapType(G_HYBRID_MAP);
+    map.addMapType(G_PHYSICAL_MAP);
+    map.setMapType(G_PHYSICAL_MAP);
     map.addControl(new GOverviewMapControl());
     map.addControl(new GScaleControl());
     map.addControl(new GLargeMapControl());
@@ -110,7 +110,7 @@ function initialize() {
 
     geocoder = new GClientGeocoder();
 
-    var address = new GControlPosition(G\_ANCHOR\_TOP\_LEFT, new GSize(60, 10));
+    var address = new GControlPosition(G_ANCHOR_TOP_LEFT, new GSize(60, 10));
     address.apply(document.getElementById("address"));
     map.getContainer().appendChild(document.getElementById("address"));
 

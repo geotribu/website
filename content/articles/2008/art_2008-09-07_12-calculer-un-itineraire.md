@@ -64,9 +64,9 @@ function initialize() {
     map = new GMap2(document.getElementById('map'));
     map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),15);
     map.addControl(new GMapTypeControl());
-    map.removeMapType(G\_HYBRID\_MAP);
-    map.addMapType(G\_PHYSICAL\_MAP);
-    map.setMapType(G\_PHYSICAL\_MAP);
+    map.removeMapType(G_HYBRID_MAP);
+    map.addMapType(G_PHYSICAL_MAP);
+    map.setMapType(G_PHYSICAL_MAP);
     map.addControl(new GOverviewMapControl());
     map.addControl(new GScaleControl());
     map.addControl(new GLargeMapControl());
@@ -77,7 +77,7 @@ function initialize() {
     gdir = new GDirections(map);
     setDirections("Allée Machado, Toulouse, fr", "Avenue de l'agrobiopole, Auzeville-Tolosane, fr", "fr");
 
-    var iti = new GControlPosition(G\_ANCHOR\_TOP\_LEFT, new GSize(60, 10));
+    var iti = new GControlPosition(G_ANCHOR_TOP_LEFT, new GSize(60, 10));
     iti.apply(document.getElementById("iti"));
     map.getContainer().appendChild(document.getElementById("iti"));
 

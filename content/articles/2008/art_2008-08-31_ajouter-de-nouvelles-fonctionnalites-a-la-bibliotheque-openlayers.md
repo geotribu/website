@@ -100,7 +100,7 @@ OpenLayers.MarkerLabel = OpenLayers.Class(OpenLayers.Marker, {
     //code  
   },
 
-  CLASS\_NAME: "OpenLayers.MarkerLabel"  
+  CLASS_NAME: "OpenLayers.MarkerLabel"  
 });
 ```
 

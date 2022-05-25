@@ -45,7 +45,7 @@ function ZoomControl() {}
 
   var container = document.createElement("div");
   var zoomInDiv = document.createElement("div");  
-  this.setButtonStyle\_(zoomInDiv);  
+  this.setButtonStyle_(zoomInDiv);  
   container.appendChild(zoomInDiv);  
   zoomInDiv.appendChild(document.createTextNode("Zoom In"));  
   zoomInDiv.innerHTML = '![](./icons/32x32/1.png)';  
@@ -335,7 +335,7 @@ map.setMapType(G_SATELLITE_MAP);
 
 Je n'ai décrit ici que la personnalisation de la fonction de zoom, les fonctions de déplacement fonctionnent exactement sous le même mécanisme.
 Pour bien appréhender l'objet GControl(), il est nécessaire de se référer à l'API Google Maps - [http://code.google.com/apis/maps/documentation/reference.html#GControlImpl](http://code.google.com/apis/maps/documentation/reference.html#GControlImpl) - et aux articles Google Maps officiels - [http://code.google.com/apis/maps/documentation/controls.html#Custom_Controls](http://code.google.com/apis/maps/documentation/controls.html#Custom_Controls).
-Les constantes G\_ANCHOR\_x\_y correspondent aux coins de la carte.
+Les constantes G_ANCHOR_x_y correspondent aux coins de la carte.
 
 ## Conclusion
 

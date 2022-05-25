@@ -143,7 +143,7 @@ map.enableScrollWheelZoom();
       var map = new GMap2(document.getElementById('map'));
 
       var topoTiles = function (a,b) {
-        var f = "./tile\_files/" + TileToQuadKey(a.x,a.y,b) + ".png";
+        var f = "./tile_files/" + TileToQuadKey(a.x,a.y,b) + ".png";
         return f;
       }
 
@@ -151,11 +151,11 @@ map.enableScrollWheelZoom();
       topoLayer.getTileUrl = topoTiles;
       topoLayer.isPng = function() {return true;};
 
-      var topoMap = new GMapType([topoLayer], G\_SATELLITE\_MAP.getProjection(), "Topo",{errorMessage: "Pas de données ici !"});
+      var topoMap = new GMapType([topoLayer], G_SATELLITE_MAP.getProjection(), "Topo",{errorMessage: "Pas de données ici !"});
 
       map.addMapType(topoMap);
-      map.removeMapType(G\_HYBRID\_MAP);
-      map.removeMapType(G\_SATELLITE\_MAP);
+      map.removeMapType(G_HYBRID_MAP);
+      map.removeMapType(G_SATELLITE_MAP);
       map.addControl(new GScaleControl());
       map.setCenter(new GLatLng(43.57691664771851, 1.402451992034912),12);
       map.setMapType(topoMap);
