@@ -28,7 +28,7 @@ L'API Google Maps propose le service Street View qui permet de naviguer virtuell
 
 ## Initialisation
 
-Reprendre la carte du [tutoriel n°2](/articles/2008/art_2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/).  
+Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/).  
 
 ## Superposition de l'emprise
 

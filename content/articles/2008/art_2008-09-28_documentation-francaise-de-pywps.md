@@ -66,7 +66,7 @@ PyWPS est une application s'interfaçant entre plusieurs clients (Navigateur int
 1. Installer PyWPS
 2. IMPORTANT : Rebaptisez les fichiers originaux (processus, fichiers de configuration) avec le suffixe .py-dist en .py.
 3. Editez les fichiers de configuration localisés dans le répertoire pywps/etc/. Voir la page [*] pour plus de détails.
-4. Créer ou éditer le fichier \_\_ init \_\_.py localisé dans le répertoire pywps/processes. Ajouter le ou les processus disponibles dans le tableau \_\_all\_\_.
+4. Créer ou éditer le fichier `__ init __.py` localisé dans le répertoire pywps/processes. Ajouter le ou les processus disponibles dans le tableau `__all__`.
 5. Ajouter vos processus dans le répertoire pywps/processes. Voir la page [*] pour plus de détails.
 6. Lancez PyWPS avec la commande ./wps.py, voir la page [*] pour plus de détails.
 
@@ -110,16 +110,11 @@ pywps/wps.py
 
 Décompressez l'archive PyWPS : `tar -xzf pywps-VERSION.tar.gz`
 
-
 Lancez l'installation : `python setup.py install`
-
 
 Paramétrez le fichier de configuration : `vim /etc/pywps.cfg`
 
-
-Autorisez les droits en lecture, écriture et exécution sur le répertoire Templates :  
-
-`chmod -R 777 /usr/lib/python2.5/site-packages/pywps/Templates`
+Autorisez les droits en lecture, écriture et exécution sur le répertoire Templates : `chmod -R 777 /usr/lib/python2.5/site-packages/pywps/Templates`
 
 Plusieurs paquets, selon les distributions linux (RPM,DEB), sont également disponibles sur la page de téléchargement de PyWPS.
 
@@ -273,7 +268,7 @@ Cela veut dire qu'une de vos options de configuration n'est pas bonne. Par exemp
 
 ## Écrivez vos propres processus
 
-Tous les processus sont stockés dans le répertoire pywps/processes. Il est possible, grace à la variable d'environnement $PYTHON\_PROCESS de définir un autre chemin que celui par défaut.
+Tous les processus sont stockés dans le répertoire pywps/processes. Il est possible, grace à la variable d'environnement `$PYTHON_PROCESS` de définir un autre chemin que celui par défaut.
 
 Les deux codes ci-dessous présente un processus de type buffer. Plusieurs processus sont livrés avec le code source PyWPS.
 
@@ -281,8 +276,8 @@ Les deux codes ci-dessous présente un processus de type buffer. Plusieurs proce
 
 Chaque processus est un script python pouvant fonctionner seul et possédant une classe ayant deux méhodes :
 
-- \_\_init\_\_
-- execute
+- `__init__`
+- `execute`
 
 Il est possible d'ajouter autant de fonctions et méthodes que vous le désirez.
 
@@ -309,7 +304,7 @@ Nous avons défini un nouveau processus nommé exampleBufferProcess. Ce dernier 
 
 **Définition des metadata**
 
-Celles-ci sont stockées dans le tableau self.Metadata de la méthode \_\_init\_\_. Il est possible de rajouter ses propres métadata en utilisant la méthode `self.AddMetadata() :`
+Celles-ci sont stockées dans le tableau self.Metadata de la méthode `__init__`. Il est possible de rajouter ses propres métadata en utilisant la méthode `self.AddMetadata() :`
 
 ```python
 self.AddMetadata(identifier="point",type="point",  
@@ -348,9 +343,9 @@ Une documentation plus complète présentant des exemples de processus ainsi qu'
 
 Les types de données disponibles une fois le processus exécuté sont les suivantes :
 
-- Literal
-- ComplexValue
-- BoundingBox
+- `Literal`
+- `ComplexValue`
+- `BoundingBox`
 
 ***Exemple d'une donnée en entrée de type ComplexValue Output***
 
@@ -374,7 +369,7 @@ title="just some text")
 
 Le processus doit être défini dans le constructeur de sa méthode. Dans un processus classique, vous voudrez pouvoir définir vos valeurs en entrées et définir un résultat en sortie. Pour cela vous pourrez utiliser les méthodes `getValue(input_identifier)` et `setValue(output_identifier,value)` des objets input et ouput.
 
-Si vous avez besoin d'exécuter une commande shell plutôt que d'utiliser, par exemple, les fonctions os.system() or os.popen() il est préférable d'utiliser la méthode `self.cmd(command,["string for standard input"])`.
+Si vous avez besoin d'exécuter une commande shell plutôt que d'utiliser, par exemple, les fonctions `os.system() or os.popen()` il est préférable d'utiliser la méthode `self.cmd(command,["string for standard input"])`.
 
 Enfin, le temps de calcul restant peut être connu en utilisant la méthode `self.status(string message, number percent)`
 
@@ -473,7 +468,7 @@ pour l'encodage des données utilisant la méthode GET depuis le protocole HTTP 
 
 De nombreux exemples de requêtes XML sont disponibles dans le répertoire doc/examples.
 
-Avant de tester votre WPS via HTTP POST vous devrez définir la variable d'environnement REQUEST\_METHOD. Vous pourrez ensuite rediriger le flux XML d'entrée vers le script into wps.py :
+Avant de tester votre WPS via HTTP POST vous devrez définir la variable d'environnement `REQUEST_METHOD`. Vous pourrez ensuite rediriger le flux XML d'entrée vers le script into `wps.py` :
 
 ```bash
 export REQUEST_METHOD=POST

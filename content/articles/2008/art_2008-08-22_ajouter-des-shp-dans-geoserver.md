@@ -41,13 +41,14 @@ Dans un premier temps vous allez devoir copier vos donné dans le répertoire /d
 **Windows**
 
 Ordinateur->Propriété->Paramètres Systèmes Avancés->Variables d'environnement
-Ajoutez ou modifiez la variable GEOSERVER_DATA_DIR pour qu'elle pointe vers votre entrepôt de donné
+
+Ajoutez ou modifiez la variable `GEOSERVER_DATA_DIR` pour qu'elle pointe vers votre entrepôt de donné
 
 **Linux**
 
-Pour un changement temporaire il faut exporter la variable d'environnement DATA DIR :
-(dans un shell) export GEOSERVER_DATA_DIR=/home/path_to_myData/
-Pour que ce changement soit permanent modifier le fichier .bashrc en conséquence.
+Pour un changement temporaire il faut exporter la variable d'environnement DATA DIR : (dans un shell) `export GEOSERVER_DATA_DIR=/home/path_to_myData/`
+
+Pour que ce changement soit permanent modifier le fichier `.bashrc` en conséquence.
 
 ## Ajout des données à GeoServer
 

@@ -29,7 +29,7 @@ Nous verrons ici comment afficher la tour Eiffel et comment définir par défaut
 
 ## Initialisation
 
-Reprendre le globe du [tutoriel n°2](/articles/2008/art_2008-11-02_2-ajoutons-quelques-controles/).  
+Reprendre le globe du [tutoriel n°2](/articles/2008/2008-11-02_2-ajoutons-quelques-controles/).  
 
 ## Processus
 
@@ -66,44 +66,42 @@ ge.getLayerRoot().enableLayerById(ge.LAYER_BUILDINGS, true);
 ## Code complet
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head>
-  <title>[Google Earth] 2. Ajoutons quelques contrôles</title>
-  <script src="http://www.google.com/jsapi?key=ABQIAAAAPo34DyTbdo2RpVUvdvK1qxTVkAM76o12Ue_ZZqmwjROaqOyBLhQVBCYY9lnsLXH3mdZLo-PWW8Z1DQ"></script>
-  <style type="text/css">
-  html { overflow:hidden; height:100%; }
-  body { height:100%; margin:0; }
-</style>
-<link rel="icon" type="image/png" href="./favicon.png"/>
-<script>
+  <head>
+    <title>[Google Earth] 2. Ajoutons quelques contr&ocirc;les</title>
+    <script src="http://www.google.com/jsapi?key=ABQIAAAAPo34DyTbdo2RpVUvdvK1qxTVkAM76o12Ue_ZZqmwjROaqOyBLhQVBCYY9lnsLXH3mdZLo-PWW8Z1DQ"></script>
+    <style type="text/css">
+	  html { overflow:hidden; height:100%; }
+	  body { height:100%; margin:0; }
+    </style>
+    <link rel="icon" type="image/png" href="./favicon.png"/>
+    <script>
+      google.load("earth", "1");
+      var ge = null;
 
-google.load("earth", "1");
-var ge = null;
+      function init() {
+        google.earth.createInstance("map3d", initCallback);
+      }
 
-function init() {
-  google.earth.createInstance("map3d", initCallback);
-}
+      function initCallback(object) {
+        ge = object;
+        ge.getWindow().setVisibility(true);
+        ge.getOptions().setMouseNavigationEnabled(true);
+        ge.getNavigationControl().setVisibility(ge.VISIBILITY_AUTO);
+        var eiffel = ge.createLookAt('');
+		eiffel.set(48.858521049096, 2.29425080771864, 50, ge.ALTITUDE_RELATIVE_TO_GROUND, 250, 75, 1100);
+		ge.getView().setAbstractView(eiffel);
 
-function initCallback(object) {
-  ge = object;
-  ge.getWindow().setVisibility(true);
-  ge.getOptions().setMouseNavigationEnabled(true);
-  ge.getNavigationControl().setVisibility(ge.VISIBILITY\_AUTO);
-  var eiffel = ge.createLookAt('');
-  eiffel.set(48.858521049096, 2.29425080771864, 50, ge.ALTITUDE\_RELATIVE\_TO\_GROUND, 250, 75, 1100);
-  ge.getView().setAbstractView(eiffel);
-
-  ge.getLayerRoot().enableLayerById(ge.LAYER\_BUILDINGS, true);
-}
-
-</script>
-</head>
-<body onload='init()' id='body'>
-  <div id='map3d_container' style='border: 0px solid silver; height: 100%; width: 100%;'>
-    <div id='map3d' style='height: 100%;'></div>
-  </div>
-</body>
+        ge.getLayerRoot().enableLayerById(ge.LAYER_BUILDINGS, true);
+      }
+    </script>
+  </head>
+  <body onload='init()' id='body'>
+    <div id='map3d_container' style='border: 0px solid silver; height: 100%; width: 100%;'>
+      <div id='map3d' style='height: 100%;'></div>
+    </div>
+   </body>
 </html>
 ```  
 

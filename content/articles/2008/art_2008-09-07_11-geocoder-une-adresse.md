@@ -29,7 +29,7 @@ Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-ca
 
 ## Géocodage
 
-Définir la fonction showAddress qui géocode l'adresse saisie et créé un marqueur cliquable :  
+Définir la fonction `showAddress` qui géocode l'adresse saisie et créé un marqueur cliquable :  
 
 ```javascript
 function showAddress(address) {  
@@ -63,6 +63,9 @@ map.getContainer().appendChild(document.getElementById("address"));
 ```  
 
 Et éditer le formulaire en HTML :  
+
+!!! info
+    Le serveur hébergeant le formulaire n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée est désactivée. 
 
 ## Code complet
 

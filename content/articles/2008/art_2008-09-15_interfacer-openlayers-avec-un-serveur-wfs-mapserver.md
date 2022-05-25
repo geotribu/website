@@ -65,11 +65,12 @@ Une application WFS est composée de 3 parties essentielles : le **serveur carto
 
 Un exemple de requête serait la suivante : une requête de type "GetFeature" est envoyée par le navigateur au serveur cartographique. Celui-ci, en fonction de sa configuration et des données vérifie la validité de cette requête en fonction de sa configuration et des données qu'il possède; ensuite, celui-ci retourne le ou les objets géographiques demandés.
 
-[![Image WFS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/wfs.png "Image WFS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/wfs.png "Image WFS"){: data-mediabox="gallery-lightbox" data-title="Image WFS"}
+[![Image WFS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/wfs.png "Image WFS"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/wfs.png "Image WFS"){: data-mediabox="gallery-lightbox" data-title="Image WFS"}
+{: align=middle }
 
 ## Faire de MapServer un serveur WFS
 
-Cette partie suppose que vous soyez déjà familier de l'environnement MapServer et que vous sachiez comment est constitué un MapFile. Dans le cas contraire, je vous invite à lire auparavant ce tutoriel : [Tutorial MapServer](/articles/2008/art_2008-08-22_initiation-a-mapserver/).
+Cette partie suppose que vous soyez déjà familier de l'environnement MapServer et que vous sachiez comment est constitué un MapFile. Dans le cas contraire, je vous invite à lire auparavant ce tutoriel : [Tutorial MapServer](/articles/2008/2008-08-22_initiation-a-mapserver/).
 
 Pour spécifier à MapServer de fonctionner en tant que serveur WMS, il sera nécessaire d'ajouter différents attributs à votre MapFile. Les blocs à modifier sont les suivants :
 
@@ -79,7 +80,7 @@ Pour spécifier à MapServer de fonctionner en tant que serveur WMS, il sera né
   - Le bloc Projection
   - L'attribut Dump
 
-Pour le bloc **Web** il faut ajouter un sous bloc nommé **METADATA** qui est composé des éléments ci-dessous :
+Pour le bloc **Web** il faut ajouter un sous bloc nommé `METADATA` qui est composé des éléments ci-dessous :
 
 ```
 WEB  
@@ -91,7 +92,7 @@ WEB
 END
 ```
 
-Ensuite pour chaque **couche** il faudra ajouter deux blocs, le premier est obligatoire contrairement au second qui est optionnel mais fortement recommandé ainsi qu'un troisième attribut **DUMP** :
+Ensuite pour chaque **couche** il faudra ajouter deux blocs, le premier est obligatoire contrairement au second qui est optionnel mais fortement recommandé ainsi qu'un troisième attribut `DUMP` :
 
 ```
 LAYER  
@@ -125,7 +126,7 @@ africaWFS = new OpenLayers.Layer.WFS(
 );
 ```
 
-A noter que si vous désirez pouvoir utiliser les données attributaires de la couche vous devrez ajouter la propriété **extractAttributes** (true)
+A noter que si vous désirez pouvoir utiliser les données attributaires de la couche vous devrez ajouter la propriété `extractAttributes` (true).
 
 ## Exemple avec une carte de l'Afrique
 

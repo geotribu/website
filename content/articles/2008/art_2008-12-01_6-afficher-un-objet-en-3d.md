@@ -28,7 +28,7 @@ L'API Google Earth propose d'afficher dans son globe des objets en 3D provenant 
 
 ## Initialisation
 
-Reprendre la carte du tutoriel sur les marqueurs et les événements : [Tutoriel n°4](/articles/2008/art_2008-11-02_4-marqueurs-et-evenements/)
+Reprendre la carte du tutoriel sur les marqueurs et les événements : [Tutoriel n°4](/articles/2008/2008-11-02_4-marqueurs-et-evenements/)
 
 ## Processus
 

@@ -32,7 +32,7 @@ Pour afficher la carte, il est nécessaire de fournir l'url de l'API Google Eart
 <script src="http://www.google.com/jsapi?key=ABQIAAAAPo34DyTbdo2RpVUvdvK1qxTVkAM76o12Ue_ZZqmwjROaqOyBLhQVBCYY9lnsLXH3mdZLo-PWW8Z1DQ"></script>
 ```
 
-Il faut déclarer dans le corps de la page deux blocs div imbriqués où sera placée la carte, on définit les attributs de style pour que la carte prenne toute la taille de la page :  
+Il faut déclarer dans le corps de la page deux blocs `div` imbriqués où sera placée la carte, on définit les attributs de style pour que la carte prenne toute la taille de la page :  
 
 ```html
 <div id='map3d_container' style='border: 0px solid silver; height: 100%; width: 100%;'>
@@ -62,9 +62,9 @@ function initCallback(object) {
 }
 ```
 
-La fonction init() crée l'instance Google Earth.  
+La fonction `init()` crée l'instance Google Earth.  
 
-La fonction initCallback(object) crée l'objet carte et définit ses options.  
+La fonction `initCallback(object)` crée l'objet carte et définit ses options.  
 
 ## Code complet
 

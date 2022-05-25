@@ -26,7 +26,7 @@ Pour illustrer ces propos, l'interface présentée ci-dessous s'appuie sur Featu
 
 ## Feature Server
 
-[FeatureServer](http://featureserver.org/) a déjà fait l'objet d'un [tutoriel sur ce site](/articles/2008/art_2008-09-20_mettre-en-place-un-serveur-wfs-t), nous ne nous attarderons donc pas sur celui-ci.Mais globalement il existe deux types de serveurs wfs d'un côté ceux permettant un accés uniquement en lecture et d'un autre côté ceux autorisant la manipulation et la modifications des objets géographiques. FeatureServer fait partie de ces derniers.
+[FeatureServer](http://featureserver.org/) a déjà fait l'objet d'un [tutoriel sur ce site](/articles/2008/2008-09-20_mettre-en-place-un-serveur-wfs-t), nous ne nous attarderons donc pas sur celui-ci.Mais globalement il existe deux types de serveurs wfs d'un côté ceux permettant un accés uniquement en lecture et d'un autre côté ceux autorisant la manipulation et la modifications des objets géographiques. FeatureServer fait partie de ces derniers.
 
 ## WebProcessingServer
 

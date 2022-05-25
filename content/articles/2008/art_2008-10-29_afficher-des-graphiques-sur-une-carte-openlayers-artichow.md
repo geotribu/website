@@ -32,7 +32,7 @@ La logique du script se base sur trois éléments majeurs :
 
 - Un serveur WFS (ou tout autre format permettant l'affichage d'objet vecteur)
 - Une librairie permettant de générer des graphiques (dans notre cas Artichow)
-- La propriété externalGraphic de l'objet Style associé à ma couche vecteur
+- La propriété `externalGraphic` de l'objet `Style` associé à ma couche vecteur
 
 Concrétement, lors de l'appel de ma couche WFS j'ai spécifié dans mon protocole d'utiliser une image dont l'URL pointe vers mon script générant à la demande une image (grâce à Artichow). Ainsi pour chaque nouvel objet vecteur ajouté, un graphique est généré.
 
@@ -73,7 +73,7 @@ function featureStyle() {
 }
 ```
 
-Concrétement, ma propriété externalGraphic pointe vers la fonction getChartURL. Dans celle-ci j'ai défini une variable charturl dans laquelle est spécifiée le chemin d'accès à mon script générant l'image ainsi que les informations dont j'ai besoin pour le graphique.
+Concrétement, ma propriété `externalGraphic` pointe vers la fonction `getChartURL`. Dans celle-ci j'ai défini une variable `charturl` dans laquelle est spécifiée le chemin d'accès à mon script générant l'image ainsi que les informations dont j'ai besoin pour le graphique.
 
 ### Côté serveur : la partie PHP (Artichow)
 

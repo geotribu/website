@@ -92,7 +92,7 @@ Lorsque l'on fait une recherche grâce à cette GoogleBar, l'API place automatiq
 ## Conclusion
 
 Petit tutorial pour savoir déclarer le service GoogleBar.
-Cette méthode est identique au tutoriel - [11](/articles/2008/art_2008-09-07_11-geocoder-une-adresse/).
+Cette méthode est identique au tutoriel - [11](/articles/2008/2008-09-07_11-geocoder-une-adresse/).
 
 ----
 

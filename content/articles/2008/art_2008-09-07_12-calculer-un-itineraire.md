@@ -41,9 +41,12 @@ Définir un objet GDirections : `gdir = new GDirections(map);`
 
 Calculer un itinéraire lors de l'appel de la carte :
 
-`setDirections("Allée Machado, Toulouse, fr", "Avenue de l'agrobiopole, Auzeville-Tolosane, fr", "fr");  
+`setDirections("Allée Machado, Toulouse, fr", "Avenue de l'agrobiopole, Auzeville-Tolosane, fr", "fr");`
 
-`Et éditer le formulaire en HTML :  
+Et éditer le formulaire en HTML :  
+
+!!! info
+    Le serveur hébergeant le formulaire n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée est désactivée.
 
 ### Code complet
 
@@ -97,11 +100,11 @@ Evidemment le résultat est plus joli en pleine page :-)
 
 ## Remarques
 
-Toujours se référer à l'API Google Maps - [Google Maps API Reference](http://code.google.com/apis/maps/documentation/reference.html) pour les différentes classes, méthodes et options utilisées. Le nombre de requêtes est limité à 15000 par jour et par adresse IP (idem que le géocodage). Il est possible d'afficher l'itinéraire sous forme de texte en définissant un panel dans le constructeur GDirections.
+Toujours se référer à l'API Google Maps - [Google Maps API Reference](http://code.google.com/apis/maps/documentation/reference.html) pour les différentes classes, méthodes et options utilisées. Le nombre de requêtes est limité à 15000 par jour et par adresse IP (idem que le géocodage). Il est possible d'afficher l'itinéraire sous forme de texte en définissant un panel dans le constructeur `GDirections`.
 
 ## Conclusion
 
-De la même manière que le géocodage, le calcul d'un itinéraire se fait de façon très simple grâce à l'API Google Maps. L'affichage de l'itinéraire ainsi que le niveau de zoom approprié est fait de façon automatique par la méthode load() de la classe GDirections.
+De la même manière que le géocodage, le calcul d'un itinéraire se fait de façon très simple grâce à l'API Google Maps. L'affichage de l'itinéraire ainsi que le niveau de zoom approprié est fait de façon automatique par la méthode `load()` de la classe `GDirections`.
 
 ----
 

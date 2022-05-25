@@ -104,7 +104,7 @@ OpenLayers.MarkerLabel = OpenLayers.Class(OpenLayers.Marker, {
 });
 ```
 
-Une méthode particulière vous interpelle peut être ? Oui en effet, qu'est ce donc que cet initialize ? En fait il joue le rôle de constructeur (encore un héritage de [). C'est lui qui va être exécuté lorsque l'on créera un nouvel objet.](http://www.prototypejs.org "site internet prototype")
+Une méthode particulière vous interpelle peut être ? Oui en effet, qu'est ce donc que cet initialize ? En fait il joue le rôle de constructeur (encore un héritage de). [C'est lui qui va être exécuté lorsque l'on créera un nouvel objet.](http://www.prototypejs.org "site internet prototype")
 
 ## Le constructeur : initialize
 

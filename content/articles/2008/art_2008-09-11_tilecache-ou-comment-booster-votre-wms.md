@@ -20,7 +20,8 @@ tags:
 
 Afin que la technologie WMS puisse réellement prendre une ampleur suffisante, il fallait avant tout que soit réglé son principal défaut, sa lenteur. C'est ainsi qu'est né, suite à une réflexion de toute la communauté OpenSource lors du FOSS4G 2006, tileCache. En effet, celui-ci vient s'interfacer entre le serveur cartographique et le client afin de garder en cache toutes les images générées. Si un utilisateur demande à nouveau la même ressource, l'image étant déjà produite l'affichage n'en sera que plus rapide.
 
-[![TileCache](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/tileCache_light2.png "TileCache"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/tileCache_light2.png "TileCache"){: data-mediabox="gallery-lightbox" data-title="TileCache"}
+[![TileCache](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/tileCache_light2.png "TileCache"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/tileCache_light2.png "TileCache"){: data-mediabox="gallery-lightbox" data-title="TileCache"}
+{: align=middle }
 
 **En résumé, tileCache est fait pour vous si vous utilisez un serveur WMS et que vous souhaitez augmenter de manière significative (rapport de 1 à 10) le temps de chargement.**
 
@@ -213,8 +214,7 @@ metaTile=true
 
 - **Pré-remplir le cache**
 
-
-Il peut être agréable d'avoir quelques (ou tout) les niveaux de zoom prégénérés. Pour cela tileCache est livré avec un petit "utilitaire" nommé tilecache\_seed.py. Celui-ci prend trois arguments
+Il peut être agréable d'avoir quelques (ou tout) les niveaux de zoom prégénérés. Pour cela tileCache est livré avec un petit "utilitaire" nommé `tilecache_seed.py`. Celui-ci prend trois arguments
 
 - l'URL du serveur WMS  
 - Le nom de la couche défini dans le fichier de configuration  
@@ -224,9 +224,10 @@ Ce qui donne l'instruction suivante (à exécuter dans un shell) :
 
 `python tilecache_seed.py ‘http://localhost/cgi-bin/mapserv?map=/var/www/html/mapserver/monFichierMap.map’ myOwnLayer 0 3`
 
-Ici, nous allons pré-générés les niveaux de zoom compris entre 0 et 3 (en réalité 0 jusqu'à 2 effectif) pour la couche définie comme myOwnLayer dans le fichier de configuration qui s'appuit sur le mapfile dont l'adresse est http: //localhost/cgi-bin/mapserv?map=/var/www/html/mapserver/monFichierMap.map.
+Ici, nous allons pré-générés les niveaux de zoom compris entre 0 et 3 (en réalité 0 jusqu'à 2 effectif) pour la couche définie comme myOwnLayer dans le fichier de configuration qui s'appuit sur le mapfile dont l'adresse est `http: //localhost/cgi-bin/mapserv?map=/var/www/html/mapserver/monFichierMap.map`.
 
 Il reste deux améliorations possibles :
+
 - **Forcer le cache client** : il peut arriver que même si une image a déjà été générée le client la redemande à nouveau. Cela est dû au fait que le serveur Apache lors du premier appel n'a pas spécifié la durabilité de la "transaction". Cela peut être réglé par l'ajout du paramètre ExpiresActive.
 - **Simuler plusieurs serveurs** : Deuxiémement, il est possible de simuler l'existence de plusieurs serveurs en se basant sur différents noms de domaine. Cela aura pour effet d'augmenter le nombre de requêtes envoyés et donc de diminuer le temps de chargement.
 

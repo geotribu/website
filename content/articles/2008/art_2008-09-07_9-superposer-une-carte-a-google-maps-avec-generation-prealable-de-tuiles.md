@@ -26,8 +26,6 @@ Le but de ce tutoriel est de montrer la possibilité de superposer ses propres f
 
 ## Génération des tuiles
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
-
 Grâce au logiciel [MapCruncher](http://research.microsoft.com/en-us/um/redmond/projects/mapcruncher/) de Microsoft, il est possible de 'découper' une carte scannée selon différents niveaux de zoom.  
 
 L'utilisation de ce logiciel est décrite dans la vidéo suivante :
@@ -38,7 +36,7 @@ Il convient alors de stocker les tuiles générées dans un répertoire sur votr
 
 ## Initialisation de la carte
 
-Reprendre la carte du [tutoriel n°2](/articles/2008/art_2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/) pour initialiser la carte.  
+Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/) pour initialiser la carte.  
 
 ## Définition des fonctions
 

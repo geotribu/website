@@ -28,7 +28,7 @@ Ce tutoriel explique comment ajouter un marqueur sur la carte et comment ouvrir 
 
 ## Initialisation
 
-Pour ce tutoriel, nous partirons de la carte définie dans le second tutoriel et alimenterons la fonction *initialize()*.
+Pour ce tutoriel, nous partirons de la carte définie dans le second tutoriel et alimenterons la fonction `initialize()`.
 
 ## Création du marqueur
 

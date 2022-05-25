@@ -27,7 +27,16 @@ Je dois souligner que le [code original](http://trac.openlayers.org/ticket/751 "
 
 Pour ajouter le script il vous suffit simplement de le déclarer dans le Header de votre page. Cela se fait de la manière suivante :
 
-`OpenLayers exemples`
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+   <title>OpenLayers exemples</title>
+   <script src="./js/OpenLayers/OpenLayers.js" type="text/javascript"></script>
+   <script src="./js/OpenLayers/toolTips.js" type="text/javascript"></script>
+</head>
+```
 
 ## Utiliser le script
 
@@ -60,7 +69,9 @@ Voici les propriétés et méthodes de cette classe :
 | bckColor | String |
 | opacity | String |
 | fontBold | String |
-| Méthodes |
+
+| Méthodes | |
+| :--------------- |:---------------|
 | OpenLayers.Marker.Label | Constructeur |
 | destroy | Supprime le marker et l'infobulle |
 | draw | Dessine le marker et l'infobulle |

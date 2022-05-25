@@ -38,7 +38,7 @@ Déclarons tout d'abord une fonction qui crée un marqueur sur la carte et qui o
 ```javascript
 function createMarker(point,nom,url) {  
   var marker = new GMarker(point);  
-  var html = "**["+nom+"](%5C%22%22+url+%22%5C%22)**";  
+  var html = "["+nom+"]";  
   GEvent.addListener(marker, 'click', function() {  
     marker.openInfoWindowHtml(html);  
   });  

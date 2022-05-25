@@ -23,9 +23,9 @@ tags:
 ## Prérequis
 
 - Tutoriaux :
-    - [1. Introduction à l'API Google Earth](/articles/2008/art_2008-11-02_2-ajoutons-quelques-controles/)
-    - [2. Ajoutons quelques contrôles](/articles/2008/art_2008-11-02_2-ajoutons-quelques-controles/)
-    - [4. Marqueurs et événements](/articles/2008/art_2008-11-02_4-marqueurs-et-evenements/)
+    - [1. Introduction à l'API Google Earth](/articles/2008/2008-11-02_2-ajoutons-quelques-controles/)
+    - [2. Ajoutons quelques contrôles](/articles/2008/2008-11-02_2-ajoutons-quelques-controles/)
+    - [4. Marqueurs et événements](/articles/2008/2008-11-02_4-marqueurs-et-evenements/)
 
 - Connaissances :
     - notions de HTML, notions de JavaScript, notions d'algorithmique
@@ -58,7 +58,7 @@ function initCallback(object) {
 ge = object;
 ge.getWindow().setVisibility(true);
 ge.getOptions().setMouseNavigationEnabled(true);
-ge.getNavigationControl().setVisibility(ge.VISIBILITY\_SHOW);
+ge.getNavigationControl().setVisibility(ge.VISIBILITY_SHOW);
 
 map = ge.createStyleMap('styleMap');
 
@@ -77,11 +77,11 @@ map.setHighlightStyleUrl('#styleIconHighlight');
 
 var mirail = ge.createPlacemark('');
 
-var mirail\_point = ge.createPoint('');
-mirail\_point.setLatitude(43.57825178577821);
-mirail\_point.setLongitude(1.40247810866353);
+var mirail_point = ge.createPoint('');
+mirail_point.setLatitude(43.57825178577821);
+mirail_point.setLongitude(1.40247810866353);
 mirail.setName('Université Toulouse Le Mirail');
-mirail.setGeometry(mirail\_point);
+mirail.setGeometry(mirail_point);
 
 mirail.setStyleSelector(null);
 mirail.setStyleUrl('#styleMap');
@@ -91,17 +91,17 @@ event.preventDefault();
 var balloon = ge.createHtmlDivBalloon('');
 balloon.setFeature(mirail);
 var div = document.createElement('DIV');
-div.innerHTML = '<img src="http://www.univ-tlse2.fr/images/utm/bandeau\_011.jpg" onclick="window.open(\'http://www.univ-tlse2.fr\')">';
+div.innerHTML = '<img src="http://www.univ-tlse2.fr/images/utm/bandeau_011.jpg" onclick="window.open(\'http://www.univ-tlse2.fr\')">';
 balloon.setContentDiv(div);
 ge.setBalloon(balloon);
 });
 
 var ensat = ge.createPlacemark('');
-var ensat\_point = ge.createPoint('');
-ensat\_point.setLatitude(43.53511064424029);
-ensat\_point.setLongitude(1.493182079733259);
+var ensat_point = ge.createPoint('');
+ensat_point.setLatitude(43.53511064424029);
+ensat_point.setLongitude(1.493182079733259);
 ensat.setName('ENSAT');
-ensat.setGeometry(ensat\_point);
+ensat.setGeometry(ensat_point);
 
 ensat.setStyleSelector(null);
 ensat.setStyleUrl('#styleMap');
@@ -111,7 +111,7 @@ event.preventDefault();
 var balloon = ge.createHtmlDivBalloon('');
 balloon.setFeature(ensat);
 var div = document.createElement('DIV');
-div.innerHTML = '<img src="http://www.ensat.fr/images/ensat\_r2\_c3.jpg" onclick="window.open(\'http://www.ensat.fr\')">';
+div.innerHTML = '<img src="http://www.ensat.fr/images/ensat_r2_c3.jpg" onclick="window.open(\'http://www.ensat.fr\')">';
 balloon.setContentDiv(div);
 ge.setBalloon(balloon);
 });
@@ -120,7 +120,7 @@ ge.getFeatures().appendChild(mirail);
 ge.getFeatures().appendChild(ensat);
 
 var camera = ge.createLookAt('');
-camera.set(43.6,1.44949866510018,2860,ge.ALTITUDE\_RELATIVE\_TO\_GROUND,190,75,10000);
+camera.set(43.6,1.44949866510018,2860,ge.ALTITUDE_RELATIVE_TO_GROUND,190,75,10000);
 ge.getView().setAbstractView(camera);
 
 function finished(object) {
@@ -147,7 +147,8 @@ google.earth.fetchKml(ge, kmlUrl, finished);
 
 ## Processus
 
-1. Reprendre la carte du [tutoriel sur les marqueurs et les événements](/articles/2008/art_2008-09-15_interfacer-openlayers-avec-un-serveur-wfs-mapserver/)
+1. Reprendre la carte du [tutoriel sur les marqueurs et les événements](/articles/2008/2008-09-15_interfacer-openlayers-avec-un-serveur-wfs-mapserver/)
+
 2. Définir une fonction qui vérifie la validité du fichier KML :  
 
 ```javascript
