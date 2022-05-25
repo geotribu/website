@@ -65,7 +65,7 @@ map.getContainer().appendChild(document.getElementById("address"));
 Et éditer le formulaire en HTML :  
 
 !!! info
-    Le serveur hébergeant le formulaire n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée est désactivée. 
+    Le serveur hébergeant le formulaire n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée est désactivée.
 
 ## Code complet
 
