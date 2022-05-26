@@ -38,24 +38,24 @@ var GMLstyle = new OpenLayers.Style({
 	strokeColor: "#ff0000",
 	strokeWidth: 2,
 	strokeOpacity: 0.3,
-	externalGraphic: "${getChartURL}"    
+	externalGraphic: "${getChartURL}"  
       }, {
 	context: {
-	  radius: function(feature) {   
+	  radius: function(feature) {  
 	    var minV = 1;
 	    var maxV = 10;
 	    var minR =  5;
 	    var maxR = 50;
 	    surf = Math.round(
                minR+((maxR-minR)*((feature.attributes.count-minV)/(maxV-minV)))
-            );       
+            );  
             return surf;
 	},
           //Fonction qui interroge le script PHP
-	  getChartURL: function(feature) {							
+	  getChartURL: function(feature) {
 	    var charturl = 'http://ks356007.kimsufi.com/arno/geotribu/applications/tutoriaux/openlayers/
                        cluster_count/custom_cluster.php?numCluster='+feature.attributes.count+'&size='+surf;
-	    return charturl;									
+	    return charturl;
 	} // End of function getChartURL
       }
 });
@@ -68,7 +68,7 @@ GML = new OpenLayers.Layer.Vector(
 	],
 	protocol: new OpenLayers.Protocol.HTTP({
 		url: "../random_poi/poi_random/gml/random_poi.gml",
-		format: new OpenLayers.Format.GML()								
+		format: new OpenLayers.Format.GML()
 	}),
 	styleMap:new OpenLayers.StyleMap({
 		"default": GMLstyle,

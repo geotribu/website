@@ -75,12 +75,12 @@ function init() {
      * Some code before
      */
     // Instanciation du control selectFeature
-    options = {       
+    options = {  
          hover: false,
          // Fait reference a la fonction popUp
          onSelect: popUP,
          selectStyle :feature_style
-    };     
+    };  
     sf = new OpenLayers.Control.SelectFeature(africaWFS, options)
     map.addControl(sf);
     sf.activate();
@@ -92,7 +92,7 @@ function popUP(e) {
          popup.destroy();
     }
     //je definis les params de mon popup
-    var htmlContent = "<b>Pays : "+e.attributes.NAME+"</b><br /> <b><i>Region : "+e.attributes.REGION+"</b></i>";       
+    var htmlContent = "<b>Pays : "+e.attributes.NAME+"</b><br /> <b><i>Region : "+e.attributes.REGION+"</b></i>";  
     var size = new OpenLayers.Size(20,34);
     var offset = new OpenLayers.Pixel(-(size.w/2), -size.h);
     //j'instancie mon popup
@@ -106,7 +106,7 @@ function popUP(e) {
           null
     );
     //Je l'ajoute a la carte
-    map.addPopup(popup);                  
+    map.addPopup(popup);  
 }  
 ```
 
