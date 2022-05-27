@@ -34,7 +34,7 @@ Maintenant appelons les différents scripts nécessaires :
     <head>
         <title>OpenLayers map preview</title>
 
-	<!-- Lib Ext -->		
+	<!-- Lib Ext -->
 	<link rel="stylesheet" type="text/css"	href="../../lib/js/ext-2.2/resources/css/ext-all.css" />
 	<script type="text/javascript"	src="../../lib/js/ext-2.2/adapter/ext/ext-base.js"></script>
 	<script type="text/javascript" src="../../lib/js/ext-2.2/ext-all.js"></script>
@@ -42,7 +42,7 @@ Maintenant appelons les différents scripts nécessaires :
 	<script src="../../lib/js/geoext/openlayers/lib/OpenLayers.js" type="text/javascript"></script>
 	<!-- Lib GeoExt -->
     	<script type="text/javascript" src="../../lib/js/geoext/geoext/lib/GeoExt.js"></script>
-        <script type="text/javascript" src="../../lib/js/geoext/geoext/lib/GridPanelFeature.js"></script>		
+        <script type="text/javascript" src="../../lib/js/geoext/geoext/lib/GridPanelFeature.js"></script>
     </head>
 ```
 

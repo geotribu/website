@@ -47,7 +47,7 @@ combo = new GeoExt.form.ComboBoxWMS({
         ProxyHost : "/cgi-bin/proxy.cgi?url=",
 	listeners: {
             select: function(combo, record, index) {  
-        	var layers = record.data.name;             		
+        	var layers = record.data.name;
         	layers = new OpenLayers.Layer.WMS(layers, this.WMSurl,
     	    		    {layers: layers, transparent:true},
                             {buffer: 0, isBaseLayer:false});
