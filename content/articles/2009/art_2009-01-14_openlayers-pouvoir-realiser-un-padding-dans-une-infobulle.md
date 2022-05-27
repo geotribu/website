@@ -23,7 +23,7 @@ Par défaut OpenLayers permet de créer des infobulles ne pouvant afficher qu'un
 
 ## Intégration de la nouvelle classe
 
-Pour intégrer le script proposé, cela n'est pas très compliqué. Il suffit simplement de définir un lien vers la classe [OpenLayers.Popup.FramedCloudPagging](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/lib/OpenLayers/Popup/FramedCloudPagging.js). Enregistrez par exemple le fichier dans OpenLayers/lib/OpenLayers/Popup. Les deux flèches utilisées comme image sont téléchargeables ici : [flèche de gauche](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/img/pagging_left.png) et [flèche de droite](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/img/pagging_right.png). Elles doivent être placées dans le répertoire img d'OpenLayers (OpenLayers/img).
+Pour intégrer le script proposé, cela n'est pas très compliqué. Il suffit simplement de définir un lien vers la classe [OpenLayers.Popup.FramedCloudPagging](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/lib/OpenLayers/Popup/FramedCloudPagging.js). Enregistrez par exemple le fichier dans `OpenLayers/lib/OpenLayers/Popup`. Les deux flèches utilisées comme image sont téléchargeables ici : [flèche de gauche](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/img/pagging_left.png) et [flèche de droite](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/img/pagging_right.png). Elles doivent être placées dans le répertoire `img` d'OpenLayers (`OpenLayers/img`).
 
 Ensuite, vous n'avez plus qu'a appeler cette nouvelle classe de la manière suivante :
 

@@ -1,61 +1,33 @@
 ---
+title: "Le pense bête d'OpenLayers"
 authors:
-- GeoTribu
+    - Geotribu
 categories:
-- article
-date: 2009-03-26 10:20
-description: '...'
-image: ''
-license: default
-robots: index, follow
-tags: []
-title: Toulouse bientôt ville numérique ?
+    - article
+date: 2009-03-23
+description: "Le pense bête d'OpenLayers"
+tags:
+    - OpenLayers
 ---
 
-# Toulouse bientôt ville numérique ?
+# Le pense bête d'OpenLayers
 
+:calendar: Date de publication initiale : 23 mars 2009
 
-:calendar: Date de publication initiale : 26 mars 2009
+![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-rdp-news-thumb }
 
+C'est en parcourant le site [NeoGeo](http://www.neogeo-online.net/) que je suis tombé sur [cette petite merveille](https://selectoid.wordpress.com/2009/03/19/finally-a-cheatsheet-for-openlayers-27/).
 
-----
+Véritable récapitulatif d'OpenLayers, Jansen a réussi l'exploit de condenser sur une simple feuille A4 [toute la logique d'OpenLayers](https://terrestris.de/openlayers_cheatsheet.pdf). Merci pour ce genre d'initiative qui contribue à rendre cette libraire toujours plus populaire.
 
-![world.png](/sites/default/files/Tuto/img/Blog/world.png)Alors qu'une grande partie du Net s'oriente vers le concept de [monde virtuel](http://fr.wikipedia.org/wiki/Monde_virtuel), monde où la réalité est déportée au sein d'univers dont ni l'espace ni le temps n'ont d'existence propre, une nouvelle tendance est en train de naître celle de **ville numérique** (consulter également un [billet précédent](http://geotribu.net/node/95)).
+Ce travail est à mettre en relation avec celui réalisé par Emanuel Schütze qui avait de son côté produit un [diagramme des classes d'OpenLayers 2.7](http://geotribu.net/node/43).
 
+Pense-bête d'OpenLayers :
 
-
-Pour expliquer rapidement les grandes idées qui se cachent derrière ces concepts nous partirons du paradigme suivant :
-
-
-* **Monde virtuel** = du réel dans le virtuel; **Ville numérique** = du virtuel dans le réel
-
-
-![flashcode](http://3.bp.blogspot.com/_zSWTjc-5Zuw/ScoICdH9rNI/AAAAAAAAAnA/WkSlgnaytLE/s320/tag.jpg)  
-
-Les initiatives permettant d'arriver à de véritables réseaux [urb@in](mailto:urb@in) se multiplient. Le dernier projet en date nommé Mobulles et réalisé par Laetitia Gazel-Anthoine a reçu le prix "SFR Jeunes Talents Innovation".
-
-
-Ainsi d'ici quelques mois de multiples petites imagettes (flashcode), sous forme de code-barres bi-dimensionel devraient fleurir à Toulouse. Une fois ces flashcodes photographiés grâce votre téléphone portable vous pourrez avoir **accès depuis internet** à une multitude d'informations sur l'objet identifié.
-
-
-En guise de conclusion je plagierai les propos de Catherine Guien, maire-adjointe en charge de l'Innovation :
-
-
-« Avec ce projet utile, innovant et accessible, nous apportons de l'information, nous créons du lien sans rajouter de bornes interactives ou de mobilier urbain supplémentaire. »
-
-
-Parce que d'autres l'on dit bien mieux que moi, je vous conseille également ces deux billets :
-
-
->> [technomedias](http://technomedias.blogspot.com/2009/03/toulouse-decode-avec-mobulles.html)  
-
->> [touleco](http://www.touleco.fr/innovations-Toulouse-choisit-le-1239.html)
-
-
-
+[![Le pense bête d'OpenLayers](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/openlayers_2-7_cheatsheet.png "Le pense bête d'OpenLayers"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/openlayers_2-7_cheatsheet.png){: data-mediabox="lightbox-gallery" data-title="Le pense bête d'OpenLayers" }
 
 ----
 
-## Auteur
+## Auteur {: data-search-exclude }
 
 --8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"

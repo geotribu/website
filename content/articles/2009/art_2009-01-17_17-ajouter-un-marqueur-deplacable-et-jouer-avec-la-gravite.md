@@ -100,7 +100,7 @@ GEvent.addListener(map,"click", function(overlay,latlng){
 </html>
 ```
 
-### Démonstration
+## Démonstration
 
 !!! info
     Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
