@@ -35,7 +35,7 @@ panel = new OpenLayers.Control.Panel(
 controls = {
 	move : new OpenLayers.Control.Navigation(),
 	select : new OpenLayers.Control.SelectFeature(vectors,
-		{'displayClass': 'olControlSelect'}),		
+		{'displayClass': 'olControlSelect'}),
 	point: new OpenLayers.Control.DrawFeature(vectors,
 		OpenLayers.Handler.Point,
 		{'displayClass': 'olControlDrawFeaturePoint'}),
