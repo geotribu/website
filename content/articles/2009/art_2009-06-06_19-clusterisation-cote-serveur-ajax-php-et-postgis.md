@@ -70,7 +70,7 @@ function createMarker(lat,lng,title,icon,cluster){
 		var point = new GLatLng(lat,lng);
 		if (!cluster){
 			icon.image = "./icon/marker/pic.png";
-			icon.shadow = "./icon/marker/shadow.png";							
+			icon.shadow = "./icon/marker/shadow.png";
 			var mark = new GMarker(point,{icon: icon, title: title});
 			var infowindow = title;
 			GEvent.addListener(mark, 'click', function() {
@@ -80,7 +80,7 @@ function createMarker(lat,lng,title,icon,cluster){
 		}
 		else{
 			icon.image = "./icon/marker/cluster_marker.png";
-			icon.shadow = "./icon/marker/shadow.png";						
+			icon.shadow = "./icon/marker/shadow.png";
 			var mark = new GMarker(point,{icon: icon, title: title});
 			var infowindow = "";
 			GEvent.addListener(mark, 'click', function() {
@@ -150,7 +150,7 @@ Le but de ce tutoriel étant la clusterisation, il est nécessaire de déclarer 
 
 ```javascript
 GEvent.addListener(map, 'zoomend', function() {
-	getMarker();			
+	getMarker();
 });
 ```
 
@@ -373,7 +373,7 @@ echo $xmlfile;
 		var point = new GLatLng(lat,lng);
 		if (!cluster){
 			icon.image = "./icon/marker/pic.png";
-			icon.shadow = "./icon/marker/shadow.png";							
+			icon.shadow = "./icon/marker/shadow.png";
 			var mark = new GMarker(point,{icon: icon, title: title});
 			var infowindow = title;
 			GEvent.addListener(mark, 'click', function() {
@@ -383,7 +383,7 @@ echo $xmlfile;
 		}
 		else{
 			icon.image = "./icon/marker/cluster_marker.png";
-			icon.shadow = "./icon/marker/shadow.png";						
+			icon.shadow = "./icon/marker/shadow.png";
 			var mark = new GMarker(point,{icon: icon, title: title});
 			var infowindow = "";
 			GEvent.addListener(mark, 'click', function() {
@@ -483,7 +483,7 @@ echo $xmlfile;
 			});
 
 			GEvent.addListener(map, 'zoomend', function() {
-				getMarker();			
+				getMarker();
 			});
 		}
 		else{
