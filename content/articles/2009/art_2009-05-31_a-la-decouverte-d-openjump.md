@@ -27,14 +27,14 @@ Première étape, le [téléchargement](http://sourceforge.net/project/showfiles
 
 [![OpenJUMP - Version](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/version.png "OpenJUMP - Version"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/version.png){: data-mediabox="lightbox-gallery" data-title="OpenJUMP - Version" }
 
-### Découverte de l'interface
+## Découverte de l'interface
 
 A première vue l'interface, bien qu'un peu moins soignée que Puzzle Gis, semble beaucoup plus riche en fonctionnalités. De plus, **tout est en français** ! Sélectionnons maintenant notre couche, malheureusement pour les vecteurs seuls les formats Shape et Gml sont disponibles. Néanmoins une fois le plugin [mifmid-driver](http://geo.michaelm.free.fr/spip.php?article10) téléchargé et installé vous pourrez comme son nom l'indique accéder aux données au format mif-mid (mais pas pour les .tab). Petit aparté pour souligner la simplicité d'installation des plugins. Il suffit en effet de les placer dans le répertoire "ext" de votre installation.  
 Parenthèse faite revenons à notre interface qui est présentée ci-dessous dans laquelle j'ai affiché un fichier Shape (1.5 Mo - 209 objets) :
 
 [![OpenJUMP - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/carte.png "OpenJUMP - Carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/carte.png){: data-mediabox="lightbox-gallery" data-title="OpenJUMP - Carte" }
 
-### Modification du style des couches
+## Modification du style des couches
 
 Passons ensuite à la modification du style de ma couche. L'interface proposée est riche, il est possible de modifier la couleur du contour, du fond, de jouer sur l'opacité , la taille des sommets ou encore la largeur des lignes :
 
@@ -52,7 +52,7 @@ Finissons notre "tour d'horizon des styles" par (encore) une fonctionnalité int
 
 [![OpenJUMP - Layer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/layer.png "OpenJUMP - Layer"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/layer.png){: data-mediabox="lightbox-gallery" data-title="OpenJUMP - Layer" }
 
-### interrogation des données
+## Interrogation des données
 
 Autant j'ai longtemps été déçu par l'absence de cette fonctionnalité dans QGis autant là je suis agréablement surpris. En effet, il est possible d'effectuer des requêtes attributaires ou spatiales.
 
@@ -62,17 +62,17 @@ Commençons par les requêtes attributaires. trois modes sont disponibles : "req
 
 pour les requêtes spatiales, différentes relations sont disponibles : intersecte, contient, recouvre, situé à mois de ... Décidément OpenJump me surprend de plus en plus.
 
-[![OpenJUMP - Spatial query](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/pluginsspatial_query.png "OpenJUMP - Spatial query"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/spatial_query.png){: data-mediabox="lightbox-gallery" data-title="OpenJUMP - Spatial query" }
+[![OpenJUMP - Spatial query](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/plugins/spatial_query.png "OpenJUMP - Spatial query"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/spatial_query.png){: data-mediabox="lightbox-gallery" data-title="OpenJUMP - Spatial query" }
 
 En plus de ces deux outils d'interrogations des données de nombreux autres comme la génération de zone tampon, de centroïde ou encore de simplification des objets sont disponibles. Je vous laisse les découvrir.
 
-### Édition et modification des objets
+## Édition et modification des objets
 
 Nous arrivons bientôt à la fin de ce billet, et devant toutes les éloges que j'ai déjà pu faire sur OpenJump, vous ne serez pas surpris si je vous dis que l'outil d'édition topologique est également des plus agréables et plein de fonctionnalités. Il est possible d'ajouter/supprimer un ou un groupe de sommets, de couper les lignes, de modifier la taille des éléments... Pour finir, je soulignerai une dernière fonctionnalité que je n'avais encore jamais rencontré sur aucun logiciel SIG, la possibilité d'ajouter des notes sur la carte. Avouez-que c'est plutôt bien pensé non?
 
 [![OpenJUMP - Topologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/topologie.png "OpenJUMP - Topologie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/topologie.png){: data-mediabox="lightbox-gallery" data-title="OpenJUMP - Topologie" }
 
-### Conclusion
+## Conclusion
 
 C'est sur une note très positive que je finirai ce billet. OpenJump a les moyens de jouer dans la cour des grands, la richesse de ces fonctionnalités est tout simplement impressionnante.
 
