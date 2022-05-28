@@ -19,6 +19,7 @@ title: Tutoriel GeoDjango
 :calendar: Date de publication initiale : 16 mars 2009
 
 ## Préambule
+
 Ce document est une traduction du [tutorial de GeoDjango](http://geodjango.org/docs/tutorial.html). Malgré les efforts réalisés certaines coquilles ou erreurs peuvent s'être glissées. N'hésitez pas à nous contacter pour les corriger.
 
 ## Introduction
@@ -43,7 +44,7 @@ createdb -T template_postgis -O geo geodjango
 exit
 ```
 
-La commande `createdb` doit être effectuée par un super-utilisateur, dans notre cas postgres, qui possède tous les privilèges. L'option -O spécifie que cette nouvelle base appartiendra à l'utilisateur geo. Vous pouvez bien entendu remplacer geo par l'utilisateur de votre choix.
+La commande `createdb` doit être effectuée par un super-utilisateur, dans notre cas postgres, qui possède tous les privilèges. L'option `-O` spécifie que cette nouvelle base appartiendra à l'utilisateur geo. Vous pouvez bien entendu remplacer geo par l'utilisateur de votre choix.
 
 Les bases de données MySQL et Oracle n'ont pas besoin d'effectuer ces étapes ni de créer un template spatial.
 
@@ -371,7 +372,7 @@ POLYGON ((12.415798 43.957954,12.450554 ...
 
 ### LayerMapping
 
-Nous allons maintenant explorer un peu plus en profondeur GeoDjango. Pour cela créons un fichier load.py dans le dossier contenant l'application world et insérons le code suivant :
+Nous allons maintenant explorer un peu plus en profondeur GeoDjango. Pour cela créons un fichier `load.py` dans le dossier contenant l'application world et insérons le code suivant :
 
 ```python
 # -*- coding: utf-8 -*-
