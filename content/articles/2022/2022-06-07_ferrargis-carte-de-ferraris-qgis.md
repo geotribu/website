@@ -96,7 +96,7 @@ sudo apt install postgresql-14 postgresql-client-14 postgresql-14-postgis-3
 ```
 
 Le truc avec le packaging de PostgreSQL sur Debian et Ubuntu c'est que les scripts de post-installation créent par défaut un cluster `main`. C'est sympa de faire une partie du taf mais ce serait plus correct de demander avant quand même, en plus, le cluster est même pas optimisé !  
-Quand je fais installer un four en terre chez moi, j'ai pas envie que l'artisan se fasse une calzone mal cuite juste après la dernière pierre posée ! :pizza:
+Quand je fais installer un four en terre chez moi, je ne m'attends pas à ce que l'artisan me fasse une calzone mal cuite juste après la dernière pierre posée ! :pizza:
 
 #### Création d'un cluster optimisé
 
@@ -126,7 +126,7 @@ Pour cela, on va s'appuyer sur deux éléments :
 
 [![PGTune - Dell XPS 15 7590](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: data-mediabox="lightbox-gallery" data-title="PGTune - Dell XPS 15 7590"}
 
-C'est parti, on crée un cluster `ferrargis` en passant directement les options qui nous intéressent :
+C'est parti, on crée un cluster `ferrargis` en passant directement les options qui nous intéressent. Notez que je réduis certains paramètres pour garder la main sur mon interface graphique et qu'en cas de valeurs différentes entre PGTune et osm2pgsql, j'ai choisi de donner la priorité à ce dernier :
 
 ```bash
 sudo pg_createcluster 14 ferrargis \
@@ -134,58 +134,62 @@ sudo pg_createcluster 14 ferrargis \
 --pgoption autovacuum_work_mem='2GB' \
 --pgoption checkpoint_completion_target='0.9' \
 --pgoption checkpoint_timeout='60min' \
---pgoption default_statistics_target='100' \
+--pgoption default_statistics_target='500' \
 --pgoption effective_cache_size='10GB' \
 --pgoption effective_io_concurrency='200' \
 --pgoption maintenance_work_mem='10GB' \
 --pgoption min_wal_size='4GB' \
---pgoption max_wal_size='2GB' \
+--pgoption max_connections='40' \
+--pgoption max_wal_size='12GB' \
 --pgoption max_worker_processes='10' \
---pgoption max_parallel_workers_per_gather='4' \
+--pgoption max_parallel_workers_per_gather='6' \
 --pgoption max_parallel_workers='10' \
 --pgoption max_parallel_maintenance_workers='4' \
 --pgoption random_page_cost='1.1' \
---pgoption shared_buffers='4GB' \
+--pgoption shared_buffers='1GB' \
 --pgoption wal_buffers='16MB' \
---pgoption wal_level=`minimal` \
---pgoption wal_senders=`0` \
+--pgoption wal_level='minimal' \
+--pgoption wal_senders='0' \
 --pgoption work_mem='50MB' \
 -- --data-checksums --lc-messages=C --auth-host=scram-sha-256 --auth-local=peer
 ```
 
-Ce qui donne :
+<!-- markdownlint-disable MD046 -->
+??? example "Le détail de l'exécution sur ma machine"
 
-```bash
-Les fichiers de ce système de bases de données appartiendront à l'utilisateur « postgres ».
-Le processus serveur doit également lui appartenir.
+    ```bash
+    Creating new PostgreSQL cluster 14/ferrargis ...
+    /usr/lib/postgresql/14/bin/initdb -D /var/lib/postgresql/14/ferrargis --no-instructions --data-checksums --lc-messages=C --data-checksums --lc-messages=C --auth-host=scram-sha-256 --auth-local=peer
+    Les fichiers de ce système de bases de données appartiendront à l'utilisateur « postgres ».
+    Le processus serveur doit également lui appartenir.
 
-L'instance sera initialisée avec les locales
-  COLLATE:  fr_FR.UTF-8
-  CTYPE:    fr_FR.UTF-8
-  MESSAGES: C
-  MONETARY: fr_FR.UTF-8
-  NUMERIC:  fr_FR.UTF-8
-  TIME:     fr_FR.UTF-8
-L'encodage par défaut des bases de données a été configuré en conséquence
-avec « UTF8 ».
-La configuration de la recherche plein texte a été initialisée à « french ».
+    L'instance sera initialisée avec les locales
+    COLLATE:  fr_FR.UTF-8
+    CTYPE:    fr_FR.UTF-8
+    MESSAGES: C
+    MONETARY: fr_FR.UTF-8
+    NUMERIC:  fr_FR.UTF-8
+    TIME:     fr_FR.UTF-8
+    L'encodage par défaut des bases de données a été configuré en conséquence
+    avec « UTF8 ».
+    La configuration de la recherche plein texte a été initialisée à « french ».
 
-Les sommes de contrôle des pages de données sont activées.
+    Les sommes de contrôle des pages de données sont activées.
 
-correction des droits sur le répertoire existant /var/lib/postgresql/14/main... ok
-création du répertoire /var/lib/postgresql/wal/%v/%c/pg_wal... ok
-création des sous-répertoires... ok
-sélection de l'implémentation de la mémoire partagée dynamique...posix
-sélection de la valeur par défaut pour max_connections... 100
-sélection de la valeur par défaut pour shared_buffers... 128MB
-sélection du fuseau horaire par défaut... Europe/Paris
-création des fichiers de configuration... ok
-lancement du script bootstrap...ok
-exécution de l'initialisation après bootstrap... ok
-synchronisation des données sur disque... ok
-Ver Cluster Port Status Owner    Data directory              Log file
-14  main    5434 down   postgres /var/lib/postgresql/14/main /var/log/postgresql/postgresql-14-main.log
-```
+    correction des droits sur le répertoire existant /var/lib/postgresql/14/ferrargis... ok
+    création des sous-répertoires... ok
+    sélection de l'implémentation de la mémoire partagée dynamique...posix
+    sélection de la valeur par défaut pour max_connections... 100
+    sélection de la valeur par défaut pour shared_buffers... 128MB
+    sélection du fuseau horaire par défaut... Europe/Paris
+    création des fichiers de configuration... ok
+    lancement du script bootstrap...ok
+    exécution de l'initialisation après bootstrap... ok
+    synchronisation des données sur disque... ok
+    Ver Cluster   Port Status Owner    Data directory                   Log file
+    14  ferrargis 5434 down   postgres /var/lib/postgresql/14/ferrargis /var/log/postgresql/postgresql-14-ferrargis.log
+    ```
+<!-- markdownlint-enable MD046 -->
 
 Il est évidemment possible de changer les paramètres du cluster par la suite, soit via une instuction sql `ALTER SYSTEM` soit en éditant le `postgresql.conf` :
 
