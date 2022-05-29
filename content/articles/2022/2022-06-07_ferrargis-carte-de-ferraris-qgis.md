@@ -31,7 +31,7 @@ Prérequis :
 
 - QGIS > 3.20
 - des droits d'installation
-- de préférence un PC sous Linux (ou via [WSL](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/)) mais l'ensemble des outils sont aussi disponibles sur Windows et MacOS
+- de préférence un PC sous Linux (ou via [WSL](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/)) mais les outils utilisés sont tous disponibles sur Windows et MacOS
 
 ## Introduction
 
@@ -105,19 +105,19 @@ C'est parti pour la création d'un cluster aux ~~petits oignons~~ petites olives
 ```bash
 > grep -H '^port' /etc/postgresql/*/main/postgresql.conf
 /etc/postgresql/12/main/postgresql.conf:port = 5432  # (change requires restart)
-/etc/postgresql/14/main/postgresql.conf:port = 5434  # (change requires restart)
+/etc/postgresql/14/main/postgresql.conf:port = 54342  # (change requires restart)
 ```
 
-Ou :
+Puis les clusters existants :
 
 ```bash
 > pg_lsclusters
 Ver Cluster Port Status Owner    Data directory              Log file
 12  main    5432 online postgres /var/lib/postgresql/12/main /var/log/postgresql/postgresql-12-main.log
-14  main    5434 online postgres /var/lib/postgresql/14/main /var/log/postgresql/postgresql-14-main.log
+14  main    54342 online postgres /var/lib/postgresql/14/main /var/log/postgresql/postgresql-14-main.log
 ```
 
-L'idée c'est donc de créer un cluster dédié avec des paramètres optimisés pour les tâches souhaitées (import de données OSM) et par rapport à l'ordinateur utilisé (un Dell XPS 15 7590 avec un Intel Core i7-9750H de 9e génération - voir la [fiche technique](https://www.dell.com/support/manuals/fr-fr/xps-15-7590-laptop/xps-15-7590-setup-and-specifications/processeurs?guid=guid-bfa52f40-8ad1-4df0-8d0f-942766bc2118&lang=fr-fr)).
+L'objectif est donc de créer un cluster dédié avec des paramètres optimisés pour les tâches souhaitées (import de données OSM) et par rapport à l'ordinateur utilisé (un Dell XPS 15 7590 avec un Intel Core i7-9750H de 9e génération - voir la [fiche technique](https://www.dell.com/support/manuals/fr-fr/xps-15-7590-laptop/xps-15-7590-setup-and-specifications/processeurs?guid=guid-bfa52f40-8ad1-4df0-8d0f-942766bc2118&lang=fr-fr)).
 
 Pour cela, on va s'appuyer sur deux éléments :
 
@@ -128,9 +128,9 @@ Pour cela, on va s'appuyer sur deux éléments :
 
 C'est parti, on crée un cluster `ferrargis` en passant directement les options qui nous intéressent. Notez que je réduis certains paramètres pour garder la main sur mon interface graphique et qu'en cas de valeurs différentes entre PGTune et osm2pgsql, j'ai choisi de donner la priorité à ce dernier :
 
-```bash
+```bash title="Commande multi-ligne pour créer un cluster PostgreSQL"
 sudo pg_createcluster 14 ferrargis \
---port=5434 \
+--port=54342 \
 --pgoption autovacuum_work_mem='2GB' \
 --pgoption checkpoint_completion_target='0.9' \
 --pgoption checkpoint_timeout='60min' \
@@ -145,14 +145,16 @@ sudo pg_createcluster 14 ferrargis \
 --pgoption max_parallel_workers_per_gather='6' \
 --pgoption max_parallel_workers='10' \
 --pgoption max_parallel_maintenance_workers='4' \
+--pgoption max_wal_senders='0' \
 --pgoption random_page_cost='1.1' \
 --pgoption shared_buffers='1GB' \
 --pgoption wal_buffers='16MB' \
 --pgoption wal_level='minimal' \
---pgoption wal_senders='0' \
 --pgoption work_mem='50MB' \
 -- --data-checksums --lc-messages=C --auth-host=scram-sha-256 --auth-local=peer
 ```
+
+<!-- 1. Le port doit être différent de ceux déjà utilisés par les autres clusters. -->
 
 <!-- markdownlint-disable MD046 -->
 ??? example "Le détail de l'exécution sur ma machine"
@@ -187,24 +189,24 @@ sudo pg_createcluster 14 ferrargis \
     exécution de l'initialisation après bootstrap... ok
     synchronisation des données sur disque... ok
     Ver Cluster   Port Status Owner    Data directory                   Log file
-    14  ferrargis 5434 down   postgres /var/lib/postgresql/14/ferrargis /var/log/postgresql/postgresql-14-ferrargis.log
+    14  ferrargis 54342 down   postgres /var/lib/postgresql/14/ferrargis /var/log/postgresql/postgresql-14-ferrargis.log
     ```
 <!-- markdownlint-enable MD046 -->
 
-Il est évidemment possible de changer les paramètres du cluster par la suite, soit via une instuction sql `ALTER SYSTEM` soit en éditant le `postgresql.conf` :
+Il est évidemment possible de changer les paramètres du cluster par la suite, soit via une instuction SQL `ALTER SYSTEM`, soit en éditant le `postgresql.conf` :
 
 ```bash
-sudo nano /etc/postgresql/14/main/postgresql.conf
+sudo nano /etc/postgresql/14/ferrargis/postgresql.conf
 # puis redémarrer le serveur
-sudo systemctl restart postgresql@14-main
+sudo systemctl restart postgresql@14-ferrargis
 ```
 
 Démarrer l'instance :
 
 ```bash
-sudo systemctl start postgresql@14-main
+sudo systemctl start postgresql@14-ferrargis
 # ou
-sudo pg_ctlcluster 14 main start
+sudo pg_ctlcluster 14 ferrargis start
 ```
 
 !!! tip "Astuce pour avoir une Calzone réussie à chaque installation"
@@ -212,25 +214,28 @@ sudo pg_ctlcluster 14 main start
 
 #### Créer le rôle et gérer l'accès
 
-Création du rôle en base correspondant à l'utilisateur système (trouvable avec la commande `whoami`) de façon à utiliser le mode d'authentification `peer`) :
+Comme on travaille à la maison, on va se faciliter la vie et créer un rôle en base correspondant à l'utilisateur système (trouvable avec la commande `whoami`) de façon à utiliser le mode d'authentification `peer`) :
 
 ```bash
-sudo -u postgres createuser -p 5434 --createdb --pwprompt --superuser "$(whoami)"
+sudo -u postgres createuser -p 54342 --createdb --pwprompt --superuser "$(whoami)"
 ```
 
-Ajout au `.pgpass` pour faciliter le travail :
+De façon à ne pas stocker de mot de passe en clair dans les applications clientes comme QGIS et pour se faciliter la vie, on se crée un fichier `.pgpass` dans le répertoire personnel de l'utilisateur :
 
 ```bash
-echo "localhost:5434:*:$(whoami):motdepasse_assigned_a_mon_utilisateur" >> ~/.pgpass
+echo "localhost:54342:*:$(whoami):motdepasse_assigned_a_mon_utilisateur" >> ~/.pgpass
 ```
 
-Référencer la connexion au `.pg_service.conf` :
+De même, de façon à garder la connexion la plus générique possible dans le but de rendre la suite le plus facilement reproductible possible, on stocke les paramètres de connexion dans le fichier `PGSERVICE` (voir [la doc officielle de PostgreSQL](https://www.postgresql.org/docs/current/libpq-pgservice.html) et [celle de QGIS](https://docs.qgis.org/3.22/fr/docs/user_manual/managing_data_source/opening_data.html#pg-service-file)) :
+
+- emplacement par défaut : `~/.pg_service.conf` (Linux) ou `%APPDATA%/postgresql/.pg_service.conf` (Windows)
+- ou personnalisable via une variable d'environnement `PGSERVICEFILE` pointant sur le fichier directement (nommage libre) ou `PGSYSCONFDIR` pointant sur le répertoire où trouver le fichier (qui doit forcément être nommé `pg_service.conf`)
 
 ```ini
 [local_ferrargis]
 dbname=osm
 host=localhost
-port=5434
+port=54342
 ```
 
 #### Créer la base de données
@@ -240,13 +245,13 @@ port=5434
 Créer la base de données :
 
 ```bash
-createdb --owner $(whoami) --port 5434 --encoding=UTF8 osm
+createdb --owner $(whoami) --port 54342 --encoding=UTF8 osm
 ```
 
 S'y connecter pour tester puis ressortir :
 
 ```bash
-> psql -p 5434 -U $(whoami) osm
+> psql -p 54342 -U $(whoami) osm
 psql (14.3 (Ubuntu 14.3-1.pgdg20.04+1))
 Saisissez « help » pour l'aide.
 
@@ -257,13 +262,13 @@ osm=# \q
 Activer PostGIS :
 
 ```bash
-psql -p 5434 -U $(whoami) osm -c "CREATE EXTENSION postgis;"
+psql -p 54342 -U $(whoami) osm -c "CREATE EXTENSION postgis;"
 ```
 
 Activer HSTore :
 
 ```bash
-psql -p 5434 -U $(whoami) osm -c "CREATE EXTENSION hstore;"
+psql -p 54342 -U $(whoami) osm -c "CREATE EXTENSION hstore;"
 ```
 
 ----
@@ -274,9 +279,9 @@ psql -p 5434 -U $(whoami) osm -c "CREATE EXTENSION hstore;"
 
 ![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
 
-Franchement on va pas se mentir : si Napoléon avait eu les données OpenStreetMap, on aurait moins de [problèmes de bornes](https://www.lavoixdunord.fr/992266/article/2021-04-27/bousignies-sur-roc-il-deplace-une-borne-frontiere-et-viole-le-traite-de-courtrai ) (de frontières, pas de ministre) de nos jours.
+Franchement on va pas se mentir : si Napoléon avait eu les données OpenStreetMap, on aurait moins de [problèmes de bornes](https://www.lavoixdunord.fr/992266/article/2021-04-27/bousignies-sur-roc-il-deplace-une-borne-frontiere-et-viole-le-traite-de-courtrai) (de frontières, pas de ministre) de nos jours ! :smile:
 
-<https://download.geofabrik.de/europe/belgium.html>
+Un petit tour par GeoFabrik pour télécharger les données de la Belgique : <https://download.geofabrik.de/europe/belgium.html>.
 
 On peut également utiliser un outil en ligne de commande, par exemple `wget` avec l'option `-N` qui permet de télécharger uniquement si le fichier distant (ici le serveur GeoFabrik) est plus récent par rapport à la version locale (sur votre machine) :
 
@@ -288,7 +293,7 @@ wget -N https://download.geofabrik.de/europe/belgium-latest.osm.pbf -P /tmp/osmd
 
 ![logo Osmium Tool](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osmium.svg "logo Osmium Tool"){: .img-rdp-news-thumb }
 
-Si on craint de manquer d'espace disque, de puissance ou que vous ciblez une zone en particulier et qu'on ne souhaite pas charger une région ou un département entier pour rien, on peut découper les données avec une emprise avant de les importer avec un outil comme Osmium par exemple.
+Si on craint de manquer d'espace disque, de puissance ou qu'on cible une zone restreinte en particulier, on peut découper les données avec une emprise avant de les importer avec un outil comme Osmium par exemple.
 
 On installe [Osmium](https://osmcode.org/osmium-tool/) :
 
@@ -296,9 +301,9 @@ On installe [Osmium](https://osmcode.org/osmium-tool/) :
 sudo apt install osmium-tool
 ```
 
-Et on découpe sur la zone qui nous intéresse :
+Et on découpe sur la zone qui nous intéresse, par exemple Bruxelles :
 
-```bash
+```sh
 osmium extract -b 4.29,50.815,4.47,50.90 /tmp/osmdata/belgium/belgium-latest.osm.pbf -o /tmp/osmdata/belgium/brussels.osm.pbf
 ```
 
@@ -308,7 +313,9 @@ osmium extract -b 4.29,50.815,4.47,50.90 /tmp/osmdata/belgium/belgium-latest.osm
 ### Import des données
 
 ```bash
-osm2pgsql --create --database osm --port 5434 --cache 1000 --number-processes 4 /tmp/osmdata/belgium/belgium-latest.osm.pbf
+osm2pgsql --create --database osm --port 54342 --cache 1000 --number-processes 4 /tmp/osmdata/belgium/belgium-latest.osm.pbf
+# si vous avez utilisez la commande osmium pour découper les données sur Bruxelles
+# osm2pgsql --create --database osm --port 54342 --cache 1000 --number-processes 4 /tmp/osmdata/belgium/brussels.osm.pbf
 ```
 
 Détail des options :
@@ -317,23 +324,22 @@ Détail des options :
 - `--database` : nom de la base de données
 - `--port` : port de connexion à la base de données
 - `--cache` : gère la taille du cache (en MB) à allouer pour l'import des noeuds OSM. Je pensais au début que la valeur par défaut (800) suffirait mais j'ai eu l'erreur : *Node cache size is too small to fit all nodes. Please increase cache size*. Dépend de la RAM de votre machine.
-- `--hstore-match-only` :
 - `--number-processes` : nom de processus à utiliser pour paralléliser les tâches qui peuvent l'être
 
-Sur mon ordinateur portable (Dell XPS 15 7590 avec un Intel Core i7-9750H de 9e génération - voir [fiche technique](https://www.dell.com/support/manuals/fr-fr/xps-15-7590-laptop/xps-15-7590-setup-and-specifications/processeurs?guid=guid-bfa52f40-8ad1-4df0-8d0f-942766bc2118&lang=fr-fr)) sur batterie, Pour celles et ceux que ça intéresse, dépliez pour voir ce que ça donne en termes de performances :
+Pour celles et ceux que ça intéresse, voici le détail de l'exécution sur mon ordinateur qui a pris 187 secondes :
 
 <!-- markdownlint-disable MD046 -->
 ??? example "Le détail de l'exécution sur ma machine"
 
     ```bash
-    ❯ osm2pgsql --create --database osm --port 5434 -C 2000 -k /tmp/osmdata/belgium/belgium-latest.osm.pbf
+    >  osm2pgsql --create --database osm --port 54342 --cache 1000 --number-processes 4 /tmp/osmdata/belgium/belgium-latest.osm.pbf
     osm2pgsql version 1.2.1 (64 bit id space)
 
     Allocating memory for dense node cache
     Allocating dense node cache in one big chunk
     Allocating memory for sparse node cache
     Sharing dense sparse
-    Node-cache: cache=2000MB, maxblocks=32000*65536, allocation method=3
+    Node-cache: cache=1000MB, maxblocks=16000*65536, allocation method=3
     Using built-in tag processing pipeline
     Using projection SRS 3857 (Spherical Mercator)
     Setting up table: planet_osm_point
@@ -343,37 +349,37 @@ Sur mon ordinateur portable (Dell XPS 15 7590 avec un Intel Core i7-9750H de 9e 
 
     Reading in file: /tmp/osmdata/belgium/belgium-latest.osm.pbf
     Using PBF parser.
-    Processing: Node(53934k 7705.0k/s) Way(8262k 140.05k/s) Relation(79780 11397.14/s)  parse time: 73s
-    Node stats: total(53934689), max(9770554582) in 7s
-    Way stats: total(8262733), max(1063729340) in 59s
-    Relation stats: total(87128), max(14183120) in 7s
-    node cache: stored: 53934689(100.00%), storage efficiency: 50.16% (dense blocks: 170, sparse nodes: 53066475), hit rate: 100.00%
+    Processing: Node(53962k 8993.7k/s) Way(8267k 145.05k/s) Relation(81920 11702.86/s)  parse time: 70s
+    Node stats: total(53962322), max(9777797946) in 6s
+    Way stats: total(8267595), max(1064657400) in 57s
+    Relation stats: total(87197), max(14192617) in 7s
+    node cache: stored: 53962322(100.00%), storage efficiency: 50.16% (dense blocks: 170, sparse nodes: 53094157), hit rate: 100.00%
     Sorting data and creating indexes for planet_osm_point
-    Sorting data and creating indexes for planet_osm_polygon
     Sorting data and creating indexes for planet_osm_line
     Sorting data and creating indexes for planet_osm_roads
+    Sorting data and creating indexes for planet_osm_polygon
     Copying planet_osm_roads to cluster by geometry finished
     Creating geometry index on planet_osm_roads
-    Creating indexes on planet_osm_roads finished
-    All indexes on planet_osm_roads created in 6s
-    Completed planet_osm_roads
     Copying planet_osm_point to cluster by geometry finished
     Creating geometry index on planet_osm_point
+    Creating indexes on planet_osm_roads finished
+    All indexes on planet_osm_roads created in 5s
+    Completed planet_osm_roads
     Creating indexes on planet_osm_point finished
-    All indexes on planet_osm_point created in 16s
+    All indexes on planet_osm_point created in 15s
     Completed planet_osm_point
     Copying planet_osm_line to cluster by geometry finished
     Creating geometry index on planet_osm_line
     Creating indexes on planet_osm_line finished
-    All indexes on planet_osm_line created in 69s
-    Completed planet_osm_line
     Copying planet_osm_polygon to cluster by geometry finished
     Creating geometry index on planet_osm_polygon
+    All indexes on planet_osm_line created in 44s
+    Completed planet_osm_line
     Creating indexes on planet_osm_polygon finished
-    All indexes on planet_osm_polygon created in 145s
+    All indexes on planet_osm_polygon created in 117s
     Completed planet_osm_polygon
 
-    Osm2pgsql took 218s overall
+    Osm2pgsql took 187s overall
     ```
 <!-- markdownlint-enable MD046 -->
 
@@ -404,7 +410,7 @@ wget http://download.geofabrik.de/europe/france/provence-alpes-cote-d-azur-lates
 osmium extract -b 5.347,43.484,5.536,43.565 /tmp/osmdata/osm_data.pbf -o /tmp/osmdata/osm_data_filtered.pbf
 5.347,43.484,5.536,43.565
 # import
-osm2pgsql --slim --database osm --port 5434 --cache 2000 --number-processes 4 /tmp/osmdata/osm_data_filtered.pbf
+osm2pgsql --create --database osm --port 54342 --cache 1000 --number-processes 4 /tmp/osmdata/osm_data_filtered.pbf
 ```
 
 ----
