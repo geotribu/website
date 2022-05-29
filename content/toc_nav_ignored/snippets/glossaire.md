@@ -24,6 +24,7 @@
 *[infox]: équivalent francophone officiel de "fake news". Source : https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037460897.
 *[Pull Request]: étape du workflow de Git où un contributeur propose d'intégrer ses modifications dans le socle principal du projet.
 *[loi 3DS]: loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale.
+*[PGTune]: utilitaire en ligne pour optimiser la configuration d'un cluster PostgreSQL par rapport aux capacités de la machine et de la finalité de la base de données.
 *[TL;DR]: Too long; didn't read (en français : « trop long ; pas lu ») (abrégé en TL;DR ou tl;dr) est une expression anglaise, courante également en français, employée quand on veut indiquer qu'un texte est trop long et que l'on n'a pas l'intention d'investir du temps pour l'assimiler.
 *[W3C]: Le World Wide Web Consortium, abrégé par le sigle W3C, est un organisme de standardisation à but non lucratif chargé de promouvoir la compatibilité des technologies du Web.
 *[WYSIWYG]: une interface utilisateur qui permet de composer visuellement le résultat voulu, typiquement pour un logiciel de mise en page, un traitement de texte ou d’image.
