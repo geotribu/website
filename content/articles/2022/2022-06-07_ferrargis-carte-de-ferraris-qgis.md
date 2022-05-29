@@ -39,6 +39,8 @@ Prérequis :
 
 Au cours de mes pérégrinations de veille pour une revue de presse, je suis tombé sur [cet article](https://manuelclaeysbouuaert.be/projects/ferrargis.html) de [Manuel Claeys Bouuaert](https://manuelclaeysbouuaert.be/). Je ne connaissais pas la [carte [du comte Joseph] de Ferraris](https://fr.wikipedia.org/wiki/Carte_de_Ferraris) du coup j'étais content d'en apprendre davantage et j'ai trouvé que le rendu était très réussi.
 
+[![Comparaison Namur Ferraris vs FerraGIS (2021)](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/compare_namur_1777-2021.png "Comparaison Namur Ferraris vs FerraGIS (2021)"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/compare_namur_1777-2021.png "Comparaison Namur Ferraris vs FerraGIS (2021)"){: data-mediabox="lightbox-gallery" data-title="Comparaison Namur Ferraris vs FerraGIS (2021) - Crédits : Manuel Claeys Bouuaert" }
+
 Voyant que l'auteur [partage ses ressources sur GitHub](https://github.com/mclaeysb/FerrarGIS), j'essaie de voir rapidement ce que ça donne avant d'[écrire ma news](/contribuer/rdp/add_news/) pour la GeoRDP mais je me rends compte que ça ne se fait pas en 3 minutes et que ça mérite de s'y pencher plus en détails.  
 L'occasion d'un petit tutoriel, non pas pour manipuler les styles de QGIS et briller dans les soirées mondaines de cartographes mais pour décrire pas à pas les étapes techniques nécessaires pour reproduire le super travail de l'auteur :
 
@@ -76,7 +78,7 @@ Sur Windows, le [tutoriel de LearnOSM](https://learnosm.org/en/osm-data/osm2pgsq
 [Faites chauffer DeepL et Transifex pour contribuer à LearnOSM :fontawesome-solid-language:](https://learnosm.org/en/contribute/translator/){: .md-button }
 {: align=middle }
 
-### Installer et configurer PostgreSQL et ses extensions
+### Installer et configurer PostgreSQL
 
 ![logo PostgreSQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgresql.png "logo PostgreSQL"){: .img-rdp-news-thumb }
 
@@ -238,7 +240,7 @@ host=localhost
 port=54342
 ```
 
-#### Créer la base de données
+#### Créer et configurer la base de données
 
 ![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: .img-rdp-news-thumb }
 
@@ -279,7 +281,7 @@ psql -p 54342 -U $(whoami) osm -c "CREATE EXTENSION hstore;"
 
 ![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
 
-Franchement on va pas se mentir : si Napoléon avait eu les données OpenStreetMap, on aurait moins de [problèmes de bornes](https://www.lavoixdunord.fr/992266/article/2021-04-27/bousignies-sur-roc-il-deplace-une-borne-frontiere-et-viole-le-traite-de-courtrai) (de frontières, pas de ministre) de nos jours ! :smile:
+Franchement on va pas se mentir : si Napoléon avait eu les données OpenStreetMap, on aurait moins de [problèmes de borne](https://www.lavoixdunord.fr/992266/article/2021-04-27/bousignies-sur-roc-il-deplace-une-borne-frontiere-et-viole-le-traite-de-courtrai) (de frontières, pas de ministre) de nos jours ! :smile:
 
 Un petit tour par GeoFabrik pour télécharger les données de la Belgique : <https://download.geofabrik.de/europe/belgium.html>.
 
@@ -288,6 +290,13 @@ On peut également utiliser un outil en ligne de commande, par exemple `wget` av
 ```bash
 wget -N https://download.geofabrik.de/europe/belgium-latest.osm.pbf -P /tmp/osmdata/belgium
 ```
+
+<video width="100%" controls>
+    <!-- markdownlint-disable MD033 -->
+      <source src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/wget_osm_geofabrik_belgium.webm" type="video/webM">
+      Votre navigateur ne supporte pas la balise video HTML 5.
+      <!-- markdownlint-enable MD033 -->
+</video>
 
 ### Optionnel : découper les données
 
@@ -387,13 +396,36 @@ Pour celles et ceux que ça intéresse, voici le détail de l'exécution sur mon
 
 ## La carto sur QGIS
 
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+
+Maintenant que l'on a chargé les données, en avant pour la représentation sous QGIS !
+
 ```bash
 qgis --profile geotribu_tuto_ferragis --noversioncheck
 ```
 
 ### Installer les polices supplémentaires
 
-> TO DOC
+Pour pouvoir chargf
+
+### Créer la connexion à la base de données
+
+Ouvrir le gestionnaire de sources de données et créer une connexion PostgreSQL en entrant le nom du service (celui entre `[]` dans le fichier `.pg_service.conf`) :
+
+[![QGIS - Connexion à la base via le pg_service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/qgis_connexion_base_osm.png "QGIS - Connexion à la base via le pg_service"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/qgis_connexion_base_osm.png "QGIS - Connexion à la base via le pg_service"){: data-mediabox="lightbox-gallery" data-title="QGIS - Connexion à la base via le pg_service"}
+
+### Désactiver les couches inutiles
+
+Afin de grapiller quelques points de performance d'affichage, j'ai choisi de désactiver les couches qui concernent des objets non présents sur Bruxelles :
+
+- les dunes
+- les frontières
+
+### Visualiser le résultat
+
+On a un pe
+
+[![FerraGIS - Bruxelles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/qgis_ferraris_bruxelles_centre.png "FerraGIS - Bruxelles"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/qgis_ferraris_bruxelles_centre.png "FerraGIS - Bruxelles"){: data-mediabox="lightbox-gallery" data-title="FerraGIS - Bruxelles"}
 
 ----
 
@@ -412,6 +444,9 @@ osmium extract -b 5.347,43.484,5.536,43.565 /tmp/osmdata/osm_data.pbf -o /tmp/os
 # import
 osm2pgsql --create --database osm --port 54342 --cache 1000 --number-processes 4 /tmp/osmdata/osm_data_filtered.pbf
 ```
+
+[![FerrarGIS - Aix-en-Provence](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/qgis_ferraris_aix-en-provence_centre.png "FerrarGIS - Aix-en-Provence"){: width=50% loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/qgis_ferraris_aix-en-provence_centre.png "FerrarGIS - Aix-en-Provence"){: data-mediabox="lightbox-gallery" data-title="FerrarGIS - Aix-en-Provence"}
+[![FerraGIS - Aix-en-Provence - zoom](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/qgis_ferraris_aix-en-provence_centre_zoom.png "FerraGIS - Aix-en-Provence - zoom"){: width=50% loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/qgis_ferraris_aix-en-provence_centre_zoom.png "FerraGIS - Aix-en-Provence - zoom"){: data-mediabox="lightbox-gallery" data-title="FerraGIS - Aix-en-Provence - zoom"}
 
 ----
 
