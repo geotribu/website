@@ -18,6 +18,11 @@ tags:
     - QGIS
 ---
 
+<!-- TRUC UTILES A SUPPRIMER
+
+[![image_title](image_url "image_title"){: .img-center loading=lazy}](image_url "image_title"){: data-mediabox="lightbox-gallery" data-title="image_title"}
+ -->
+
 # FerrarGIS, un style de carte de Ferraris (1777) avec QGIS
 
 :calendar: Date de publication initiale : 7 juin 2022
@@ -75,7 +80,7 @@ Sur Windows, le [tutoriel de LearnOSM](https://learnosm.org/en/osm-data/osm2pgsq
 
 ![logo PostgreSQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgresql.png "logo PostgreSQL"){: .img-rdp-news-thumb }
 
-Installer PostgreSQL n'a rien de sorcier, tant le travail de packaging et de distribution est remarquablement réalisé et documenté, comme en témoigne [la page de téléchargement](https://www.postgresql.org/download/). Mais c'est toujours bon de se noter les commandes à utiliser pour insatller les versions depuis les dépôts communautaires.
+Installer PostgreSQL n'a rien de sorcier, tant le travail de packaging et de distribution est remarquablement réalisé et documenté, comme en témoigne [la page de téléchargement](https://www.postgresql.org/download/). Mais c'est toujours bon de se noter les commandes à utiliser pour installer les versions depuis les dépôts communautaires.
 
 Par exemple, sur les distributions Linux comme Ubuntu :
 
@@ -112,19 +117,16 @@ Ver Cluster Port Status Owner    Data directory              Log file
 14  main    5434 online postgres /var/lib/postgresql/14/main /var/log/postgresql/postgresql-14-main.log
 ```
 
-L'idée c'est de se créer donc un cluster dédié au tutoriel avec des paramètres optimisés pour les tâches souhaitées (import de données OSM) et par rapport à son ordinateur. Ca
+L'idée c'est donc de créer un cluster dédié avec des paramètres optimisés pour les tâches souhaitées (import de données OSM) et par rapport à l'ordinateur utilisé (un Dell XPS 15 7590 avec un Intel Core i7-9750H de 9e génération - voir la [fiche technique](https://www.dell.com/support/manuals/fr-fr/xps-15-7590-laptop/xps-15-7590-setup-and-specifications/processeurs?guid=guid-bfa52f40-8ad1-4df0-8d0f-942766bc2118&lang=fr-fr)).
 
-<!-- markdownlint-disable MD046 -->
-!!! danger "Supprimer le cluster principal"
-    Voici les commandes si vous souhaitez supprimer le cluster créé automatiquement par le packaging de PostgreSQL. Attention, cela supprimera toutes les données donc à n'exécuter que juste après **une nouvelle installation** ou si vous êtes certain/e de ne pas tenir aux données existantes :
+Pour cela, on va s'appuyer sur deux éléments :
 
-    ```bash
-    sudo systemctl stop postgresql@14-main
-    sudo pg_dropcluster 14 main
-    ```
-<!-- markdownlint-enable MD046 -->
+- la [documentation d'osm2pgsql](https://osm2pgsql.org/doc/manual.html#tuning-the-postgresql-server) qui recommande des paramètres de configuration
+- les outils comme [PGTune](https://pgtune.leopard.in.ua/) qui permettent de générer une configuration selon les capacités de la machine et le type d'application
 
-. (cf [PGTune](https://pgtune.leopard.in.ua/)) et [documentation osm2pgsql](https://osm2pgsql.org/doc/manual.html#tuning-the-postgresql-server) :
+[![PGTune - Dell XPS 15 7590](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: data-mediabox="lightbox-gallery" data-title="PGTune - Dell XPS 15 7590"}
+
+C'est parti, on crée un cluster `ferrargis` en passant directement les options qui nous intéressent :
 
 ```bash
 sudo pg_createcluster 14 ferrargis \
@@ -136,7 +138,7 @@ sudo pg_createcluster 14 ferrargis \
 --pgoption effective_cache_size='10GB' \
 --pgoption effective_io_concurrency='200' \
 --pgoption maintenance_work_mem='10GB' \
---pgoption min_wal_size='1GB' \
+--pgoption min_wal_size='4GB' \
 --pgoption max_wal_size='2GB' \
 --pgoption max_worker_processes='10' \
 --pgoption max_parallel_workers_per_gather='4' \
@@ -146,6 +148,7 @@ sudo pg_createcluster 14 ferrargis \
 --pgoption shared_buffers='4GB' \
 --pgoption wal_buffers='16MB' \
 --pgoption wal_level=`minimal` \
+--pgoption wal_senders=`0` \
 --pgoption work_mem='50MB' \
 -- --data-checksums --lc-messages=C --auth-host=scram-sha-256 --auth-local=peer
 ```
@@ -184,7 +187,7 @@ Ver Cluster Port Status Owner    Data directory              Log file
 14  main    5434 down   postgres /var/lib/postgresql/14/main /var/log/postgresql/postgresql-14-main.log
 ```
 
-Pour changer les paramètres de l'instance par la suite, éditer le postgresql.conf :
+Il est évidemment possible de changer les paramètres du cluster par la suite, soit via une instuction sql `ALTER SYSTEM` soit en éditant le `postgresql.conf` :
 
 ```bash
 sudo nano /etc/postgresql/14/main/postgresql.conf
@@ -398,6 +401,17 @@ osmium extract -b 5.347,43.484,5.536,43.565 /tmp/osmdata/osm_data.pbf -o /tmp/os
 5.347,43.484,5.536,43.565
 # import
 osm2pgsql --slim --database osm --port 5434 --cache 2000 --number-processes 4 /tmp/osmdata/osm_data_filtered.pbf
+```
+
+----
+
+## Nettoyage
+
+Voici les commandes si vous souhaitez supprimer le cluster créé pendant le tutoriel. Attention, cela supprimera toutes les données donc à n'exécuter que si vous êtes certain/e de ne pas y tenir :
+
+```bash
+sudo systemctl stop postgresql@14-ferrargis
+sudo pg_dropcluster 14 ferrargis
 ```
 
 ----
