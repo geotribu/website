@@ -104,6 +104,11 @@ plugins:
       tags_file: tags.md
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
+      externals_exclude:
+        - cdn.geotribu.fr/img/*
+        - dev.openstreetmap.org/*
+        - www.portailsig.org/assets/images/*
+        - 88.191.39.115/*
 
 # Theme
 theme:
@@ -116,6 +121,7 @@ theme:
   search_index_only: true
 
   features:
+    - content.code.annotate
     - content.tabs.link
     - navigation.tabs
     - navigation.top
