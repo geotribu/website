@@ -106,6 +106,8 @@ plugins:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       externals_exclude:
         - cdn.geotribu.fr/img/*
+        - raw.githubusercontent.com/qgis/QGIS/master/images/*
+        - twemoji.maxcdn.com/*
         # to remove later:
         - dev.openstreetmap.org/*
         - www.portailsig.org/assets/images/*
