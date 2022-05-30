@@ -101,12 +101,11 @@ Mainteant qu'on s'est bien amusé sur le tunning des tuiles vectorielles :race_c
 ### Fonctionnement global
 
 ```mermaid
-graph TD;
-    A[Tuiles vectorielles ];
-    A --> |curl| B{Script mapillary_vt2pg};
-    B --> C{config.env};
-    C --> B;
-    B --> |ogr2ogr| E(PostgreSQL/PostGIS);
+flowchart TD;
+    A[Tuiles vectorielles ]
+    A <--> |curl| B{Script mapillary_vt2pg}
+    B <--> C{config.env}
+    B --> |ogr2ogr| E(PostgreSQL/PostGIS)
 ```
 
 ### Un environnement de travail : config.env
