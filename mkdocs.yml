@@ -106,9 +106,14 @@ plugins:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       externals_exclude:
         - cdn.geotribu.fr/img/*
+        # to remove later:
         - dev.openstreetmap.org/*
         - www.portailsig.org/assets/images/*
         - 88.191.39.115/*
+        - cdn.theatlanticcities.com/img/*
+        - boundlessgeo.com/*
+        - i3.codeplex.com/*
+        - drfhlmcehrc34.cloudfront.net/*
 
 # Theme
 theme:
