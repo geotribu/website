@@ -132,6 +132,7 @@ theme:
   features:
     - content.code.annotate
     - content.tabs.link
+    - navigation.prune
     - navigation.tabs
     - navigation.top
     - navigation.tracking
