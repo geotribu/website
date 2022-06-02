@@ -162,8 +162,9 @@ theme:
       globe: fontawesome/solid/earth-europe
       google: fontawesome/brands/google
       html: fontawesome/brands/html5
-      manette: fontawesome/solid/gamepad
+      institution: fontawesome/solid/building-columns
       js: fontawesome/brands/js
+      manette: fontawesome/solid/gamepad
       meridiens: fontawesome/solid/globe
       oeuf: fontawesome/solid/egg
       open: fontawesome/solid/lock-open
@@ -248,6 +249,7 @@ extra:
     Bash: code
     Centipede: satellite
     collecte: telephone
+    CNIG: institution
     cURL: code
     D3.js: js
     Easter eggs: oeuf
@@ -274,6 +276,7 @@ extra:
     HTML: html
     HTML5: html
     IA: cerveau
+    IGN: institution
     Input: telephone
     INSPIRE: ananas
     IRC: commentaires
