@@ -11,9 +11,8 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_const
 tags:
     - Geotribu
     - GitHub
-    - serveur web
-    - site statique
-    - static website
+    - serveur
+    - site web
 ---
 
 # Toi aussi, déploie le site Geotribu chez toi
