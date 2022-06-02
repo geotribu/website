@@ -149,6 +149,7 @@ theme:
       ananas: material/fruit-pineapple
       atlas: fontawesome/solid/book-atlas
       brick: material/toy-brick
+      cerveau: material/brain
       citrouille: material/pumpkin
       code: fontawesome/solid/code
       commentaires: fontawesome/solid/comments
@@ -272,6 +273,7 @@ extra:
     Halloween: citrouille
     HTML: html
     HTML5: html
+    IA: cerveau
     Input: telephone
     INSPIRE: ananas
     IRC: commentaires
