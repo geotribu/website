@@ -249,6 +249,7 @@ extra:
     Bash: code
     Centipede: satellite
     collecte: telephone
+    collecte terrain: telephone
     CNIG: institution
     cURL: code
     D3.js: js
@@ -291,6 +292,7 @@ extra:
     Matrix: commentaires
     Minecraft: manette
     ODK: telephone
+    Open Data Kit: telephone
     OpenPathView: streetview
     OpenRouteService: route
     open data: open
@@ -317,6 +319,7 @@ extra:
     route: route
     routing: route
     SQL: database
+    three.js: js
     Windows: windows
 
 extra_css:
