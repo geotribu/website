@@ -104,6 +104,24 @@ plugins:
       tags_file: tags.md
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
+      externals_exclude:
+        - cdn.geotribu.fr/images/*
+        - cdn.geotribu.fr/img/*
+        - geotribu.net/*
+        - www.geotribu.net/*
+        - i.imgur.com/*
+        - raw.githubusercontent.com/*
+        - twemoji.maxcdn.com/*
+        - user-images.githubusercontent.com/**/*.gif
+        - github.com/**/*.gif
+        # to remove later:
+        - dev.openstreetmap.org/*
+        - www.portailsig.org/assets/images/*
+        - 88.191.39.115/*
+        - cdn.theatlanticcities.com/img/*
+        - boundlessgeo.com/*
+        - i3.codeplex.com/*
+        - drfhlmcehrc34.cloudfront.net/*
 
 # Theme
 theme:
@@ -116,7 +134,9 @@ theme:
   search_index_only: true
 
   features:
+    - content.code.annotate
     - content.tabs.link
+    - navigation.prune
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -132,24 +152,34 @@ theme:
       # -- custom tags icons
       ananas: material/fruit-pineapple
       atlas: fontawesome/solid/book-atlas
+      brick: material/toy-brick
+      cerveau: material/brain
       citrouille: material/pumpkin
       code: fontawesome/solid/code
+      commentaires: fontawesome/solid/comments
       conference: fontawesome/solid/person-chalkboard
       database: fontawesome/solid/database
       facebook: fontawesome/brands/facebook
+      feuille: fontawesome/solid/leaf
+      geoloupe: fontawesome/solid/magnifying-glass-location
+      git: fontawesome/brands/git-alt
       globe: fontawesome/solid/earth-europe
       google: fontawesome/brands/google
       html: fontawesome/brands/html5
-      manette: fontawesome/solid/gamepad
+      institution: fontawesome/solid/building-columns
       js: fontawesome/brands/js
+      manette: fontawesome/solid/gamepad
       meridiens: fontawesome/solid/globe
       oeuf: fontawesome/solid/egg
-      geoloupe: fontawesome/solid/magnifying-glass-location
+      open: fontawesome/solid/lock-open
+      opensource: material/open-source-initiative
       python: fontawesome/brands/python
+      roue: material/cog-play
       route: fontawesome/solid/route
       rstats: fontawesome/brands/r-project
       satellite: fontawesome/solid/satellite-dish
       streetview: fontawesome/solid/street-view
+      telephone: material/cellphone-marker
       windows: fontawesome/brands/windows
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
@@ -222,33 +252,55 @@ extra:
     atlas: atlas
     Bash: code
     Centipede: satellite
+    collecte: telephone
+    collecte terrain: telephone
+    CNIG: institution
     cURL: code
     D3.js: js
     Easter eggs: oeuf
     Esri: globe
+    ETL: roue
     ExtJS: js
     Facebook: facebook
     FIG: conference
+    FME: roue
     FOSS4G: conference
     GéoDataDays: conference
     GeoGames: manette
+    GeoKettle: roue
     géo-lecture: atlas
+    Git: git
+    GitHub: git
+    GitLab: git
     Google: google
     Google Earth: google
     Google Maps: google
     Google Street View: google
     GraphHopper: route
     Halloween: citrouille
+    HTML: html
+    HTML5: html
+    IA: cerveau
+    IGN: institution
+    Input: telephone
     INSPIRE: ananas
+    IRC: commentaires
     JavaScript: js
     jeu: manette
     jeux vidéo: manette
+    Leaflet: feuille
+    Lego: brick
     LIDAR: satellite
     livre: atlas
     Mapillary: streetview
+    Matrix: commentaires
     Minecraft: manette
+    ODK: telephone
+    Open Data Kit: telephone
     OpenPathView: streetview
     OpenRouteService: route
+    open data: open
+    open source: opensource
     OpenStreetMap: geoloupe
     OSRM: route
     Open Earth View: streetview
@@ -265,11 +317,13 @@ extra:
     PySQL: python
     Python: python
     PyWPS: python
+    QField: telephone
     QGIS: globe
     R: rstats
     route: route
     routing: route
     SQL: database
+    three.js: js
     Windows: windows
 
 extra_css:
