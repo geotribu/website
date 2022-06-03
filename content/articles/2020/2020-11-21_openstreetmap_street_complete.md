@@ -72,7 +72,7 @@ Pour finir, voici une vidéo de l'utilisation (elle date d'avril donc il y a eu 
 
 ## Télécharger
 
-[![Téléchargement sur Google Play](https://play.google.com/intl/fr_fr/badges/static/images/badges/fr_badge_web_generic.png "Télécharger sur Google Play Store"){: width=200px style="border: none; box-shadow: none;" }](https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete)[![Téléchargement sur F-Droid](https://fdroid.gitlab.io/artwork/badge/get-it-on-fr.png "Télécharger sur F-Droid"){: width=200px style="border: none; box-shadow: none;" }](https://f-droid.org/packages/de.westnordost.streetcomplete/)[![Téléchargement sur GitHub](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/github_button_apk.png "Télécharger l'APK sur GitHub"){: width=200px style="border: none; box-shadow: none;" }](https://github.com/westnordost/StreetComplete/releases/latest)
+[![Téléchargement sur Google Play](https://cdn.geotribu.fr/img/logos-icones/divers/android_play_store_badge.png "Télécharger sur Google Play Store"){: width=200px style="border: none; box-shadow: none;" }](https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete)[![Téléchargement sur F-Droid](https://fdroid.gitlab.io/artwork/badge/get-it-on-fr.png "Télécharger sur F-Droid"){: width=200px style="border: none; box-shadow: none;" }](https://f-droid.org/packages/de.westnordost.streetcomplete/)[![Téléchargement sur GitHub](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/github_button_apk.png "Télécharger l'APK sur GitHub"){: width=200px style="border: none; box-shadow: none;" }](https://github.com/westnordost/StreetComplete/releases/latest)
 {: align=middle }
 
 ----
