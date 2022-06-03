@@ -109,6 +109,7 @@ plugins:
         - cdn.geotribu.fr/img/*
         - geotribu.net/*
         - www.geotribu.net/*
+        - i.imgur.com/*
         - raw.githubusercontent.com/*
         - twemoji.maxcdn.com/*
         # to remove later:
