@@ -108,7 +108,7 @@ plugins:
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*
         - geotribu.net/*
-        - raw.githubusercontent.com/qgis/QGIS/master/images/*
+        - raw.githubusercontent.com/*
         - twemoji.maxcdn.com/*
         # to remove later:
         - dev.openstreetmap.org/*
