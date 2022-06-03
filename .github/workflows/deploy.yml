@@ -37,6 +37,12 @@ jobs:
           python -m pip install --upgrade -r requirements-insiders.txt
           python -m pip install --upgrade ghp-import
 
+      - name: Cache build dependencies (external assets downloaded)
+        uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
       - name: Build static website
         run: |
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
