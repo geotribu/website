@@ -113,7 +113,7 @@ C'est un bon début mais voilà qui ne suffit toujours pas à satisfaire notre s
 
 ### Au coeur du terrier
 
-![Octocat GitHub détective](https://octodex.github.com/images/inspectocat.jpg "Octocat GitHub détective"){: .img-rdp-news-thumb }
+![Octocat GitHub détective](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/inspectocat.jpg "Octocat GitHub détective"){: .img-rdp-news-thumb }
 
 Prenons notre courage à `0:n` mains (oui, je reste vague pour n'exclure personne, pas même un/e éventuel/le lecteur/ice manchot/e) et allons à la source : le code sur GitHub. Mais... mais... c'est plein de code d'ingénieurs informaticiens :scream_cat:.  
 Allons, allons, c'est justement l'occasion de démystifier ce qui se cache sous QGIS en se répétant ce que Napoléon disait toujours à ses troupes face aux cyber-attaques caractéristiques de la campagne de Russie :
