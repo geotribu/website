@@ -112,6 +112,8 @@ plugins:
         - i.imgur.com/*
         - raw.githubusercontent.com/*
         - twemoji.maxcdn.com/*
+        - user-images.githubusercontent.com/**/*.gif
+        - github.com/**/*.gif
         # to remove later:
         - dev.openstreetmap.org/*
         - www.portailsig.org/assets/images/*
