@@ -39,13 +39,13 @@ QGIS est un projet mené de manière volontaire par une équipe dévouée de pro
 
 Si vous désirez faire une donation ou sponsorisez notre projet, veuillez visiter la page <https://www.qgis.org/en/sponsorship.html> . QGIS est un logiciel libre et donc rien ne vous y oblige.
 
-Une rencontre des contributeurs est organisée à Vienne (Autriche) du 05 au 09 septembre 2009, si cela vous intéresse faite un tour à cette page pour plus de détails :[https://www.qgis.org/wiki/2.\_QGIS\_Hackfest\_in\_Vienna\_2009](https://www.qgis.org/wiki/2._QGIS_Hackfest_in_Vienna_2009)
+Une rencontre des contributeurs est organisée à Vienne (Autriche) du 05 au 09 septembre 2009, si cela vous intéresse faite un tour à cette page pour plus de détails :[https://www.qgis.org/wiki/2._QGIS_Hackfest_in_Vienna_2009](https://www.qgis.org/wiki/2._QGIS_Hackfest_in_Vienna_2009)
 
 ================
 
 Voici une courte liste des changements apportés dans la 1.2.0 :
 
-## Édition
+### Édition
 
 Les fonctionnalités d'édition de QGIS ont été améliorées dans cette  
 version, elles incluent de nouveaux outils d'édition vectorielle :  
@@ -66,28 +66,28 @@ De plus, il y a des actions d'annulation/répétition dans le menu d'édition, d
 
 Nous vous recommandons de désactiver les marqueurs de sommets dans les options de QGIS lorsque vous travaillez avec cet outil pour des raisons de performances graphiques.
 
-## Raccourcis clavier
+### Raccourcis clavier
 
 On peut maintenant configurer les raccourcis des actions directement depuis la fenêtre principale de QGIS, en allant dans Préférences->Configurer les raccourcis.
 
-## Composition de cartes
+### Composition de cartes
 
 Il est possible de verrouiller la position des éléments avec un clic droit. La hauteur et la largeur de la carte seront fixées si l'utilisateur spécifie une emprise pour le canevas de la carte. La date peut être affichée dans les étiquettes en saisissant (d 'Juin' yyyy) ou similaires. Les couches actuelles peuvent être conservées dans le compositeur de carte même si d'autres couches sont ajoutées. L'export PDF est disponible.
 
-## Tables attributaires
+### Tables attributaires
 
 Une recherche peut être faite uniquement sur les enregistrements sélectionnés. Les performances générales ont été améliorées. Définir la longueur et la précision d'un champ lors de l'ajout d'attributs est faisable. La prise en compte des attributs d'un service WFS est perfectionnée.
 
 Les alias d'attributs des couches vecteurs sont disponibles, ils sont affichés à la place des noms de champs originaux dans l'outil d'identification et la table attributaire. Il y a une nouvelle interface pour paramétrer les fenêtres d'édition des attributs de couche. Un nouveau dialogue permet de charger une palette de valeur depuis une couche (depuis une table non spatialisée également !).
 
-## Extensions
+### Extensions
 
 — l'ordre des couches dans la liste du dialogue WMS peut être modifié  
-— l'extension eVis, version 1.1.0, a été intégrée au projet QGIS et inclus de manière standard. Plus d'information à [http://biodiversityinformatics.amnh.org/open\_source/evis/documentation.php](http://biodiversityinformatics.amnh.org/open_source/evis/documentation.php)  
+— l'extension eVis, version 1.1.0, a été intégrée au projet QGIS et inclus de manière standard. Plus d'information à [http://biodiversityinformatics.amnh.org/open_source/evis/documentation.php](http://biodiversityinformatics.amnh.org/open_source/evis/documentation.php)  
 — l'extension d'interpolation peut utiliser les couches de lignes comme contraintes pour la triangulation. Vous pouvez aussi enregistrer la triangulation dans un fichier shapefile  
 — un service et une extension OpenStreetMap ont été ajoutés
 
-## Gestion de projet
+### Gestion de projet
 
 QGIS inclut le support optionnel des chemins relatifs pour les sources de fichiers.
 
@@ -95,7 +95,7 @@ Service PostGIS & PostgreSQL :
 
 Vous pouvez sélectionner le mode de connexion SLL quand vous ajoutez une nouvelle base de données. Désactiver le SSL améliore les performances de chargement de données QGIS quand des conditions de sécurité ne sont pas requises. Le support de types natifs et de paramètres a été étendu.
 
-## Amélioration de la symbologie
+### Amélioration de la symbologie
 
 — actualisation des symboles  
 — ajout du support pour les noms symboles définis par les données  
@@ -104,14 +104,14 @@ les données — il n'y a pas encore d'interface)
 — la taille des symboles peut s'exprimer en unité de la carte (ie. les  
 symboles ont une taille indépendante de l'échelle de la carte)
 
-## Options de la ligne de commande
+### Options de la ligne de commande
 
 — support des options de ligne de commande sous Windows  
 — permet de fixer une taille de capture d'écran  
 — suppression possible de l'écran d'accueil  
 — permet de capturer les décorations de fenêtre des extensions
 
-## Grass
+### Grass
 
 Il y a un nouveau terminal GRASS ainsi que beaucoup de nettoyage et d'amélioration de la consistance.
 

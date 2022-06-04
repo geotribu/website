@@ -24,7 +24,18 @@ Si c'est le cas, je vous conseille d'aller faire un tour du côté de [Gisvm](ht
 
 | GISVM **Desktop** | GISVM **Server** |
 | :- | :- |
-| S.O. Linux Ubuntu 8.04 Desktop  Samba PostgreSQL/PostGIS  Java/Tomcat/GeoServer Apache/PHP/MapServer  Quantum GIS gvSIG  KOSMO uDIG  FWTools: OpenEV, GDAL/OGR, Proj4, OGDI OpenOffice  Ainsi que toutes les applications standards d'Ubuntu | S.O. Linux Ubuntu 9.04 Server Edition  Pacote LAMP Server (Linux, Apache, MySQL and PHP) Samba  Tomcat Java Server PostgreSQL/PostGIS, ZigGIS and FDO ready!  Mapserver Geoserver  Deegree  Webmin |
+| S.O. Linux Ubuntu 8.04 Desktop | S.O. Linux Ubuntu 9.04 Server Edition |
+| Samba | Pacote LAMP Server (Linux, Apache, MySQL and PHP) |
+| PostgreSQL/PostGIS | Samba |
+| Java/Tomcat/GeoServer | Tomcat Java Server |
+| Apache/PHP/MapServer | PostgreSQL/PostGIS, ZigGIS and FDO ready! |
+| Quantum GIS | Mapserver |
+| gvSIG | Geoserver |
+| KOSMO | Deegree |
+| uDIG | Webmin |
+| FWTools: OpenEV, GDAL/OGR, Proj4, OGDI | |
+| OpenOffice | |
+| Ainsi que toutes les applications standards d'Ubuntu | |
 
 Au delà d'avoir déjà une grande quantité de programmes préinstallés, les avantages de la virtualisation sont nombreux. En effet et par expérience, je sais qu'il est parfois hasardeux de vouloir faire cohabiter sur une même machine un environnement de travail et un environnement de test. Il m'est déjà arrivé en effet de devoir refaire une installation complète de ma machine suite à des dépendances corrompues. Avec la virtualisation, ce problème ne se pose plus. Vous avez sur une même machine deux environnements complètement séparés.
 

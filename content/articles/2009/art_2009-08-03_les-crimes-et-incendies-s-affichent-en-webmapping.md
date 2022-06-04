@@ -14,7 +14,9 @@ tags:
 
 :calendar: Date de publication initiale : 03 août 2009
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png) J'ai récemment découvert deux applications cartographiques qui m'ont interpellées tant par leur contenu que par le choix de leur architecture. Ainsi, au-delà de la découverte de chacune d'entre elles, j'effectuerai un rapide comparatif en privilégiant une approche technique..
+![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }
+
+J'ai récemment découvert deux applications cartographiques qui m'ont interpellées tant par leur contenu que par le choix de leur architecture. Ainsi, au-delà de la découverte de chacune d'entre elles, j'effectuerai un rapide comparatif en privilégiant une approche technique..
 
 La première, [cartocrime](http://www.cartocrime.net/webigeoagsdb/index.jsf), fait suite à l'initiative de l'Observatoire National de la Délinquance de démocratiser l'accès aux statistiques de délinquance. D'abord sous forme de bulletins mensuels, leur stratégie de communication s'est progressivement orientée vers une représentation cartographique des données.
 

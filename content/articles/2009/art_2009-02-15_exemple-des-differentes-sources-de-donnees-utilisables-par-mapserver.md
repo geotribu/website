@@ -139,10 +139,10 @@ LAYER
     "init=epsg:2249"  
     END  
     METADATA  
-        "wms\_title" "Projects"  
-        "wfs\_title" "Projects"  
-        gml\_include\_items "all"  
-        wms\_include\_items "all"  
+        "wms_title" "Projects"  
+        "wfs_title" "Projects"  
+        gml_include_items "all"  
+        wms_include_items "all"  
     END  
     DUMP TRUE  
     TOLERANCE 10  

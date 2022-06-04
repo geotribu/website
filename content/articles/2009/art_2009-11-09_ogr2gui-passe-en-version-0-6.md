@@ -17,7 +17,7 @@ tags:
 
 ![logo OpenSource](https://cdn.geotribu.fr/img/logos-icones/opensource.png "Logo Open Source Foundation"){: .img-rdp-news-thumb }
 
-{: .img-rdp-news-thumb } [GDAL-OGR](http://www.gdal.org/index.html) est l'une voir **LA** bibliothèque de conversion de formats géographiques. Malheureusement, du fait de son utilisation en ligne de commande, celle-ci peut décourager certains géomaticiens un peu allergiques à l'informatique. Pourtant, à mes débuts, combien de temps ai-je perdu à chercher un utilitaire me permettant de passer d'un format à l'autre, ceux livrés par les éditeurs SIG étant bien souvent très limités.
+[GDAL-OGR](http://www.gdal.org/index.html) est l'une voir **LA** bibliothèque de conversion de formats géographiques. Malheureusement, du fait de son utilisation en ligne de commande, celle-ci peut décourager certains géomaticiens un peu allergiques à l'informatique. Pourtant, à mes débuts, combien de temps ai-je perdu à chercher un utilitaire me permettant de passer d'un format à l'autre, ceux livrés par les éditeurs SIG étant bien souvent très limités.
 
 Avec un accès en lecture et/ou écriture vers plus d'une trentaine de formats vecteurs et une soixantaine de formats rasters, GDAL-OGR peut être considéré comme le véritable couteau suisse de la géomatique. L'expression n'est pas de moi, mais de [Yves Jacolin](http://wiki.osgeo.org/wiki/User:Yjacolin) qui lui a consacré un [très long tutoriel](http://georezo.net/wiki/main:logiciels:gdal:couteau_suisse:start) que je vous recommande. Qui sait peut être un jour regarderez-vous avec plaisir les lignes blanches défiler sur un shell ...
 

@@ -21,13 +21,13 @@ Dans le cadre d'un projet tel que [OpenStreetMap](https://www.openstreetmap.org/
 
 C'est sur cette problématique qu'est basée la plateforme [Walking Papers](http://walking-papers.org/) dont le but est de vous permettre d'imprimer un fond de carte et de le re-importer par la suite. Vous pouvez ainsi, une fois la zone désirée sélectionnée, enregistrer la carte sur votre ordinateur pour ensuite l'imprimer et l'utiliser sur le terrain. Une fois les informations recueillies il suffira de scanner la carte et de l'uploader sur la plateforme afin de faire les mises à jour directement sur l'outil d'OSM (potlach). Vous pouvez également choisir de rendre ce fond de carte public afin de le partager avec la communauté.
 
-![walking_papers_workflow](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/walking_papers_workflow.png)
+[![Walking Papers Workflow](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/walking_papers_workflow.png "Walking Papers Workflow"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/walking_papers_workflow.png){: data-mediabox="lightbox-gallery" data-title="Walking Papers Workflow" }
 
 Néanmoins, derrière cette apparente simplicité, se cache un trésor d'ingéniosité. En effet posons-nous simplement cette question : "comment l'application arrive à géoréférencer l'image et cela même si elle a été tournée ou changée d'échelle ?"
 
 En fait, lors des exemples ci-dessus vous vous êtes peut-être demandé à quoi servaient les symboles placés aux 4 coins de l'image? C'est là tout le secret. En effet, une fois les trois éléments des coins haut-droite, haut-gauche et bas-gauche de la carte identifiés grâce à l'algorithme de [SIFT](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform) (Scale Invariant Feature Transform), l'application est alors capable de décoder le [QR Code](https://en.wikipedia.org/wiki/QR_Code) qui identifie la carte (un peu comme un code-barre).
 
-![paper_map](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/walking_papers_paper_map.png)
+[![Paper Map](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/walking_papers_paper_map.png "Paper Map"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/walking_papers_paper_map.png){: data-mediabox="lightbox-gallery" data-title="Paper Map" }
 
 ![qr_code geotribu](https://cdn.geotribu.fr/img/internal/qrcode/qrcode_geotribu_fr.png "QR Code du site Geotribu"){: .img-rdp-news-thumb }
 

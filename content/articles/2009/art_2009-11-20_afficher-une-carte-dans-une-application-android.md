@@ -103,15 +103,19 @@ Dans Eclipse, créez un nouveau projet Android, et veillez bien à sélectionner
 
 La librairie Google APIs ne fait pas parti du socle standard Android, il faut spécifier cette utilisation dans le manifest AndroidManifest.xml.  
 
-Ajoutez sous la balise <application>  
+Ajoutez sous la balise `<application>`
 
-`<uses-library android:name="com.google.android.maps" />`
+```xml
+<uses-library android:name="com.google.android.maps" />
+```
 
 Les tuiles Google Maps sont téléchargées dynamiquement via Internet, il faut donc donner l'autorisation d'accés à Internet à votre d'application.  
 
-Ajoutez sous la balise <manifest>  
+Ajoutez sous la balise `<manifest>`  
 
-`<uses-permission android:name="android.permission.INTERNET" />`
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
 
 ### Quel Layout pour une carte
 

@@ -34,7 +34,7 @@ Prenons le cas de la BDAlti que vous pouvez facilement remplacer par le MNT de l
 
 La seule donnée qui ait réellement retenu mon attention est le Scan 1000 (image ci-dessous). Celui-ci me permettra d'habiller un peu plus mes cartes à petite échelle.
 
-![SC1000_1000_corse_0.png](https://cdn.geotribu.fr/img/Blog/divers/SC1000_1000_corse_0.png)
+![SC1000_1000_corse_0](https://cdn.geotribu.fr/img/Blog/divers/SC1000_1000_corse_0.png "SC1000_1000_corse_0")
 
 Au final, j'espère que ce premier pas de l'IGN s'enrichira de nouvelles données d'une meilleure précision. Il est dommage de devoir compter sur des initiatives collectives afin de pouvoir disposer de données qui à mon sens sont d'ordre public.
 

@@ -26,8 +26,8 @@ Commençons tout d'abord par spatialite qui permet au moteur [SQLite](http://www
 Ainsi, à l'heure du "tout spatial", il était obligatoire pour une bibliothèque de cette qualité de gérer les objets géographiques. Gestion qui, comme nous l'avons vu précédemment, est assurée par Spatialite. Une nouvelle version (2.3.1) est disponible depuis peu. Les modifications portent notamment sur :
 
 * le support de SQLite en version 3.6.16 et GEOS en version 3.1.1
-* l'ajout de trois nouvelles fonctions d'administration spatialite\_version(),proj4\_version() et geos\_version()
-* l'ajout des fonctions IsTiffBlob() et IsWaveletBlob() (compatibilité avec RasterLite)
+* l'ajout de trois nouvelles fonctions d'administration `spatialite_version()`,`proj4_version()` et `geos_version()`
+* l'ajout des fonctions `IsTiffBlob()` et `IsWaveletBlob()` (compatibilité avec RasterLite)
 * le support du type 'F' (flottant) pour les .DBF (pour les fichiers Shape)
 * la gestion des données raster grâce à RasterLite qui permet notamment le tuilage et la gestion des couches pyramidales
 * Corrections de bugs...
@@ -38,10 +38,10 @@ Si vous souhaitez en connaitre d'avantage sur SpatiaLite et RasterLite, je vous 
 
 Si il est une base de données qui n'est plus à présenter c'est bien [Postgresql](http://www.postgresql.org/) et sa cartouche spatiale [PostGis](http://postgis.refractions.net/). Elle est de par sa puissance et ses capacités l'équivalente libre de [Oracle](https://fr.wikipedia.org/wiki/Oracle_Database) et [Oracle Spatial](http://www.oracle.com/technology/products/spatial/index.html). Une nouvelle version de PostGis (1.4) est disponible, celle-ci apporte notamment :
 
-* l'externalisation des librairies "coeur" (auparavant codées directement dans postgis) dans le fichier liblwgeom
+* l'externalisation des librairies "coeur" (auparavant codées directement dans postgis) dans le fichier `liblwgeom`
 * une amélioration des performances pour toutes les fonctions d'agrégation
 * le support de la prochaine version de postgresql (8.4)
-* l'amélioration de nombreuses fonctions telle que ST\_Union(), ST\_Intersects(), ST\_Contains(), ST\_Within()...
+* l'amélioration de nombreuses fonctions telle que `ST_Union()`, `ST_Intersects()`, `ST_Contains()`, `ST_Within()`...
 * l'enrichissement et amélioration de la documentation
 * des corrections de bugs...
 

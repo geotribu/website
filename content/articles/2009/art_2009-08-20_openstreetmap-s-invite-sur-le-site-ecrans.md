@@ -25,7 +25,7 @@ OpenStreetMap rebaptisé pour l'occasion "les routards du Web" est résumé en 6
 * [Lost in GPS](http://www.ecrans.fr/Les-routards-du-web-2-Lost-in-GPS,7720.html) : Premiers pas et premiers déboires d'un contributeur d'OSM
 * [Sur la route](http://www.ecrans.fr/Les-routards-du-web-3-Sur-la-route,7749.html) : Les périples de l'enregistrement de données
 * [Les traces de son passage](http://www.ecrans.fr/Les-routards-du-web-4-Les-traces,7801.html) : Après l'enregistrement la digitalisation
-* [Taggons les rue](http://www.ecrans.fr/Les-routards-du-web-5-oneway-yes,7823.html)s ! : Après la digitalisation, les informations attributaires
+* [Taggons les rues](http://www.ecrans.fr/Les-routards-du-web-5-oneway-yes,7823.html) ! : Après la digitalisation, les informations attributaires
 * [dessine-moi une maison](http://www.ecrans.fr/Les-routards-du-web-6-dessine-moi,7877.html) : Quelques corrections et de nouveaux horizons
 * [Interview de contributeurs](http://www.ecrans.fr/Les-routards-du-web-Nous,7891.html) : OpenStreetMap c'est vous c'est nous
 
