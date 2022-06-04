@@ -20,7 +20,7 @@ tags:
 
 :calendar: Date de publication initiale : 11 septembre 2009
 
-![OSM_logo.png](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
 
 Il existe de nombreuses manières d'exploiter les données d'OSM! Si [les exemples les plus courants](https://wiki.openstreetmap.org/wiki/Featured_image_proposals) se font sous la forme d'interfaces cartographiques Web, il existe néanmoins d'autres initiatives qui se démarquent par leur originalité et leur utilité.
 
