@@ -47,7 +47,7 @@ L'objet ViewPort, que nous utilisons dans l'exemple ci-dessous, à la particular
 * [4] - Construction de l'objet Ext 'ViewPort" auquel on ajoute l'objet MapPanel
 
 ```javascript
-Ext.onReady(function() {	    
+Ext.onReady(function() {  
     // [1] - layer
 	var bluemarble = new OpenLayers.Layer.WMS(
 		"bluemarble"
@@ -67,11 +67,11 @@ Ext.onReady(function() {
     });
 
      // [3] - Data Panel
-	var dataPanel = new Ext.Panel({        
+	var dataPanel = new Ext.Panel({  
         region : 'west'
         ,layout : 'fit'
-        ,width : 150   
-    });   
+        ,width : 150  
+    });  
 
     // [4] - Final User Interface
     new Ext.Viewport({
@@ -80,7 +80,7 @@ Ext.onReady(function() {
             mapUI
             ,dataPanel
         ]
-    });                
+    });  
 });	//EOF Ext.onReady
 ```
 
@@ -204,8 +204,8 @@ var treeConfig = new OpenLayers.Format.JSON().write([
                 nodeType    : 'gx_layer'
                 ,layer      : 'moutains'
                 ,qtip       : "Montagnes d'Europe"
-                ,icon       : './img/Mountain-16x16.png'                
-            }            
+                ,icon       : './img/Mountain-16x16.png'  
+            }  
         ]
     }
 ], true);
@@ -226,10 +226,10 @@ var accordion = new Ext.Panel({
 
 //Data Panel
 var dataPanel = new Ext.Panel({  
-title   : 'Legend & Data'      
+title   : 'Legend & Data'  
     ,region : 'west'
     ,layout : 'fit'
-    ,width  : 160   
+    ,width  : 160  
     ,items  : [accordion]
 });
 ```
@@ -288,7 +288,7 @@ Ci-dessous le code ayant servi à notre [exemple](/applications/tutoriaux/GeoExt
 
 ```javascript
 city.events.on({
-        featureselected: function(e) {      
+        featureselected: function(e) {  
         if(typeof(popup) != "undefined"){
             popup.destroy();
         }
@@ -303,7 +303,7 @@ city.events.on({
             ,html       : content
             ,collapsible: true
             ,anchored   : true
-        });        
+        });  
         popup.show();
     }
 });

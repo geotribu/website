@@ -49,7 +49,7 @@ popup = new GeoExt.Popup({
     ,resizable : false
     ,width      : 250
     ,height     : 250
-    ,anchored   : true               
+    ,anchored   : true  
     ,layout : 'fit'
     ,items: [ tab ]
 });
