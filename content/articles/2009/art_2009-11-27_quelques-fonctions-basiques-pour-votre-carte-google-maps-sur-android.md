@@ -38,7 +38,7 @@ Pour changer le mode d'affichage pour une vue satellite, il suffit d'appliquer √
 ```javascript
 public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);     
+        setContentView(R.layout.main);  
         MapView mapView = (MapView) findViewById(R.id.mapview);
         mapView.setBuiltInZoomControls(true);
         mapView.setSatellite(true);
@@ -57,7 +57,7 @@ Pour positionner sa carte au bon endroit, il suffit d'utiliser quelques m√©thode
 ```javascript
 public void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
-  setContentView(R.layout.main);     
+  setContentView(R.layout.main);  
 
   MapView mapView = (MapView) findViewById(R.id.mapview);
   mapView.setBuiltInZoomControls(true);
@@ -86,7 +86,7 @@ Pour finir ce tutoriel, on peut ajouter une couche de trafic routier par exemple
 ```javascript
 public void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
-       setContentView(R.layout.main);     
+       setContentView(R.layout.main);  
 
        MapView mapView = (MapView) findViewById(R.id.mapview);
        mapView.setBuiltInZoomControls(true);
