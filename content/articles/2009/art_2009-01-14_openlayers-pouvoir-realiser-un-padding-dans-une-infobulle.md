@@ -1,11 +1,11 @@
 ---
-title: "OpenLayers, pouvoir réaliser un "padding" dans une infobulle"
+title: 'OpenLayers, pouvoir réaliser un "padding" dans une infobulle'
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 date: 2009-01-14 10:20
-description: "OpenLayers, pouvoir réaliser un "padding" dans une infobulle"
+description: 'OpenLayers, pouvoir réaliser un "padding" dans une infobulle'
 tags:
     - infobulle
     - padding

@@ -76,7 +76,7 @@ public void onCreate(Bundle savedInstanceState) {
 
 Il suffit de créer un GeoPoint qui est caractérisé par une latitude et une longitude. Les nombres en format double sont multipliés par 1000000 et castés en int. Ensuite on donne ce point à la méthode setCenter qui s'applique sur le MapController de la mapView. On peut ensuite appliquer un niveau de zoom, suivant ce que l'on souhaite voir. Et voici le résultat:
 
-[![Google Maps - Centrer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_center.jpg "Google Maps - Centrer"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_center.jpg){: data-mediabox="lightbox-gallery" data-title="Google Maps - Centrer" }
+[![Google Maps - Centrer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_center.png "Google Maps - Centrer"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_center.png){: data-mediabox="lightbox-gallery" data-title="Google Maps - Centrer" }
 
 ## Dois-je prendre la route ?
 
@@ -105,7 +105,7 @@ public void onCreate(Bundle savedInstanceState) {
 
 Il suffit d'utiliser la méthode setTraffic avec le paramètre true. Donc, je ne vais pas prendre la voiture :
 
-[![Google Maps - Traffic](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_traffic.jpg "Google Maps - Traffic"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_traffic.jpg){: data-mediabox="lightbox-gallery" data-title="Google Maps - Traffic" }
+[![Google Maps - Traffic](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_traffic.png "Google Maps - Traffic"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_traffic.png){: data-mediabox="lightbox-gallery" data-title="Google Maps - Traffic" }
 
 ## Remarques
 
