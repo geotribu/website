@@ -57,8 +57,8 @@ Passons maintenant au traitement de l'objet `position`.
 L'essentiel de notre traitement se fera dans la fonction passée en premier paramètre. Pour les besoins de notre exemple, nous allons afficher un marqueur ainsi qu'une infobulle en utilisant la position retournée par la géolocalisation.
 
 ```javascript
-function geoPositionSuccess(position){             
-//Feature            
+function geoPositionSuccess(position){  
+//Feature  
 var point = new OpenLayers.Geometry.Point(
                         position.coords.longitude,
                         position.coords.latitude ); //1
@@ -76,12 +76,12 @@ Etudions successivement les différentes étapes :
 Passons maintenant au popup :
 
 ```javascript
-function geoPositionSuccess(position){             
-//Feature            
+function geoPositionSuccess(position){  
+//Feature  
 ...
 popup = new OpenLayers.Popup.FramedCloud(
     "GeoLoc",
-    new OpenLayers.LonLat(point.x, point.y),	            
+    new OpenLayers.LonLat(point.x, point.y),  
     null,
     "lon : "+ position.coords.longitude +"<br /> lat : " + position.coords.latitude,
     null,
