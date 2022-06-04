@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 26 juillet 2009
 
-![logo SOTM](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/sotm.JPG "logo SOTM")
+![logo SOTM](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/sotm.JPG "logo SOTM"){: .img-rdp-news-thumb }
 
 Après les vidéos de l'[OSGis](http://geotribu.net/node/136), c'est au tour de celles du [State Of The Map 2009](http://www.stateofthemap.org/) d'être en ligne (a consulter sur [viadeo](http://www.vimeo.com/sotm09)). Cette conférence qui s'est tenue à Amsterdam a permis de réunir durant 3 jours les utilisateurs et contributeurs d'OpenStreetMap (OSM).
 
