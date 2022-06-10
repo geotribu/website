@@ -82,7 +82,7 @@ Pour spécifier à MapServer de fonctionner en tant que serveur WMS, il sera né
 
 Pour le bloc **Web** il faut ajouter un sous bloc nommé `METADATA` qui est composé des éléments ci-dessous :
 
-```
+```conf
 WEB  
   METADATA  
   "wfs_title" "WFS Demo Server"  
@@ -94,7 +94,7 @@ END
 
 Ensuite pour chaque **couche** il faudra ajouter deux blocs, le premier est obligatoire contrairement au second qui est optionnel mais fortement recommandé ainsi qu'un troisième attribut `DUMP` :
 
-```
+```conf
 LAYER  
   METADATA  
     ### WFS  

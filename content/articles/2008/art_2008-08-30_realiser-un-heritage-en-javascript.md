@@ -74,9 +74,7 @@ Il existe deux manières, en se basant sur le prototype de la classe mère, de r
 1. Soit en remplaçant la valeur du prototype de la classe fille par celui de la classe mère  
 2. Ou alors en ajoutant les éléments de la classe mère dans celui de la classe fille
 
-Exemple 1 :
-
-**Initialisation du prototype "fille" avec une instance de la classe mère**
+### Exemple 1 : Initialisation du prototype "fille" avec une instance de la classe mère
 
 ```javascript
 function classeMere() {  
@@ -97,9 +95,7 @@ classeFilleExtendsMere.prototype = new classeMere();
 
 Le principal inconvénient de cette approche est que si avant la recopie du prototype de la classe mère vers la classe fille des nouvelles méthodes ont été ajoutées (à la classe fille) celles-ci sont alors écrasées. A cela s'ajoute qu'il n'est pas possible de réaliser des héritages multiples via cette méthode.
 
-Exemple 2 :
-
-**Recopie des éléments contenus dans l'attribut prototype de la classe mère vers le prototype de la classe fille**
+### Exemple 2 : Recopie des éléments contenus dans l'attribut prototype de la classe mère vers le prototype de la classe fille
 
 ```javascript
 function classeMere() {  

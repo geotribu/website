@@ -58,7 +58,7 @@ Cette partie suppose que vous soyez déjà familier de l'environnement MapServer
 
 Pour spécifier permettre à MapServer de fonctionner en tant que serveur WMS, il sera nécessaire d'ajouter trois éléments à votre MapFile. Un dans le bloc Web, et deux pour chacune des couches que vous souhaitez rendre disponible. Pour le bloc Web il faut ajouter un sous bloc nommé METADATA qui est composé des éléments ci-dessous :
 
-```
+```conf
 METADATA
   "wms_title" "WMS Demo Server"
   "wms_onlineresource" "localhost/cgi-bin/mapserv?map=path_to_mapfile/demo.map&"
@@ -69,7 +69,7 @@ END
 
 Ensuite pour chaque couche il faudra ajouter deux blocs, le premier est obligatoire contrairement au second qui est optionnel mais fortement recommandé
 
-```
+```conf
 METADATA
   "wms_title" "Commune" ##required
 END
@@ -90,9 +90,9 @@ Il existe différentes classes permettant l'interrogation de serveur WMS via Ope
 
 Nous devons tout d'abord spécifier le début de l'URL, ensuite nous lui passons les différents paramètres souhaités. Cela se fait de la manière suivante :
 
-**Pour GeoServer**
+### Pour GeoServer
 
-```
+```javascript
  // Layer GeoServer
  Alea_volcanisme = new OpenLayers.Layer.WMS(
   "Risque Sismique - Untiled", "http://server_path:8080/geoserver/wms,
@@ -109,9 +109,9 @@ Nous devons tout d'abord spécifier le début de l'URL, ensuite nous lui passons
  );
 ```
 
-**Pour MapServer**
+### Pour MapServer
 
-```
+```javascript
  // Layer MapServer
  Alea_volcanisme = new OpenLayers.Layer.WMS(
   "Volcanisme", "http://localhost/cgi-bin/mapserv?map=path_To_MapFile/mFile.map&",
