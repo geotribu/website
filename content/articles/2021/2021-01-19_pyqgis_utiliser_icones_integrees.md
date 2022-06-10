@@ -77,7 +77,7 @@ C'est déjà plus sympa et intégré non ?
 !!! note
     De la même façon, il est aussi possible d'utiliser les ressources d'un autre plugin en adaptant le chemin avec le préfixe correspondant. Mais il faut pouvoir s'assurer que cet autre plugin soit toujours installé avec le nôtre (en l'indiquant comme dépendance par exemple).
 
-Maintenant, vous n'avez plus aucune excuse pour ne pas mettre de belles icônes dans vos fenêtres et menus ! Avec modération bien sûr :wink:. Merci à [Etienne](https://twitter.com/etrimaille/) pour le rappel sur [_QgsApplication.iconPath_](https://qgis.org/api/classQgsApplication.html#aeb52c5382784b9adbdf0e0328a7ea2ad) dont "l'avantage, c'est que ca gère le thème de QGIS (Dark, Grey or Normal)".
+Maintenant, vous n'avez plus aucune excuse pour ne pas mettre de belles icônes dans vos fenêtres et menus ! Avec modération bien sûr :wink:. Merci à [Etienne](https://twitter.com/etrimaille/) pour le rappel sur [*QgsApplication.iconPath*](https://qgis.org/api/classQgsApplication.html#aeb52c5382784b9adbdf0e0328a7ea2ad) dont "l'avantage, c'est que ca gère le thème de QGIS (Dark, Grey or Normal)".
 
 [Suggestion : prévisualiser les icônes intégrées :fontawesome-solid-forward:](/articles/2021/2021-02-02_pyqgis_previsualiser_images_integrees/){: .md-button }
 {: align=middle }

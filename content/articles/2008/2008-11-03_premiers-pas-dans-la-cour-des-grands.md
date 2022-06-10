@@ -23,16 +23,16 @@ Il est vrai que cela permet, au contraire des tutoriaux, de pouvoir plus facilem
 
 En cadeau (~~bonux~~) mes principales sources d'informations dans le vaste (~~and wild~~) univers de l'internet :
 
-* [ReLucBlog](http://3liz.com/blog/rldhont/index.php/)
-* [Neogeo](http://www.neogeo-online.net/)
-* [Geographie 2.0](http://geographie2point0.blogspot.com/)
-* [GeoAttitude](http://www.geoattitude.com/)
-* [GeoLibre](http://georezo.net/blog/geolibre/)
-* [RenaLID](http://www.renalid.com/)
-* [High Earth Orbit](http://highearthorbit.com/)
-* [Baliz Geospatial](http://media.baliz-geospatial.com/)
-* [Google XXL](http://googlexxl.blogspot.com/)
-* [GeoInWeb](http://www.geoinweb.com/)
+- [ReLucBlog](http://3liz.com/blog/rldhont/index.php/)
+- [Neogeo](http://www.neogeo-online.net/)
+- [Geographie 2.0](http://geographie2point0.blogspot.com/)
+- [GeoAttitude](http://www.geoattitude.com/)
+- [GeoLibre](http://georezo.net/blog/geolibre/)
+- [RenaLID](http://www.renalid.com/)
+- [High Earth Orbit](http://highearthorbit.com/)
+- [Baliz Geospatial](http://media.baliz-geospatial.com/)
+- [Google XXL](http://googlexxl.blogspot.com/)
+- [GeoInWeb](http://www.geoinweb.com/)
 
 ----
 

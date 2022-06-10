@@ -117,7 +117,6 @@ Appuyer sur ok.
 
 [![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette décalage Dashboard" }
 
-
 Pour finir, afin de fixer les étiquettes selon l'emprise de la carte, cocher la case **générateur de géométrie** et inscrire l'expression suivante : start_point( @map_extent )
 
 [![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/last_emprise_carte_expression.png "QGIS - Expression emprise de carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/last_emprise_carte_expression.png "QGIS - Expression emprise de carte"){: data-mediabox="gallery-lightbox" data-title="QGIS - Expression emprise de carte" }

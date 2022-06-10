@@ -31,7 +31,7 @@ C'est parti ! L'IGN lance une consultation publique d'envergure pour  "_dessiner
 
 ## Géo-communs
 
-Un concept cher au nouveau directeur de l'IGN qu'il a décliné dans son essai [*Un avenir pour le service public*](https://www.odilejacob.fr/catalogue/sciences-humaines/sciences-politiques/un-avenir-pour-le-service-public_9782738153722.php), les interventions médiatiques qui ont suivi (voir : [DécryptaGéo](https://decryptageo.fr/geocommuns-ign-interview-soriano/), [Nouvel Obs](https://www.nouvelobs.com/la-politique-en-2049/20210503.OBS43570/en-2049-un-etat-en-symbiose-avec-la-societe.html)) et auprès des équipes de l'Institut depuis janvier.  
+Un concept cher au nouveau directeur de l'IGN qu'il a décliné dans son essai [_Un avenir pour le service public_](https://www.odilejacob.fr/catalogue/sciences-humaines/sciences-politiques/un-avenir-pour-le-service-public_9782738153722.php), les interventions médiatiques qui ont suivi (voir : [DécryptaGéo](https://decryptageo.fr/geocommuns-ign-interview-soriano/), [Nouvel Obs](https://www.nouvelobs.com/la-politique-en-2049/20210503.OBS43570/en-2049-un-etat-en-symbiose-avec-la-societe.html)) et auprès des équipes de l'Institut depuis janvier.  
 4 mois après son arrivée, Sébastien Soriano sera l'invité de notre GéoInterview live pour expliciter la démarche et lancer la dynamique autour de cette consultation.
 
 ![GeoITW GéoCommuns](https://cdn.geotribu.fr/img/articles-blog-rdp/interview/sebastien_soriano/geocommuns_geoitw.png "GeoITW géocommuns"){: .img-center loading=lazy }

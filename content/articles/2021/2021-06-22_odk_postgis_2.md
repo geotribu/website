@@ -68,7 +68,7 @@ Toutes ces données sont géoréférencées (point, lignes ou polygones) et peuv
 
 En 2021, le système de préférences a été amélioré et les attentes évoquées par les collègues à la fin de la saison 2020 ont été satisfaites (navigation dans les données collectées, recherche des taxons dans le référentiel taxonomique).
 
-Aucune de ces évolutions n'a nécessité de développement de notre part, elles ont certes été possibles grace aux évolutions de *Collect*, mais surtout par l'appropriation du standard [XLSForm].
+Aucune de ces évolutions n'a nécessité de développement de notre part, elles ont certes été possibles grace aux évolutions de _Collect_, mais surtout par l'appropriation du standard [XLSForm].
 
 Notre formulaire est constitué de deux boucles imbriquées : aprés avoir renseigné les informations de base du relevé (contexte, observateur...), il nous est proposé de créer une localité (objet géographique), puis d'y renseigner une ou plusieurs observations.
 
@@ -114,10 +114,10 @@ Quels types de géométrie sont susceptibles d'être créés au cours de la sess
 
 Voici l'extrait correspondant de la feuille **survey** (le principe est le même pour l'écran précédent et le 3ème) :
 
-- le groupe (*begin_group* et *end_group*) permet de faire apparaitre les questions dans un même écran
-- les questions sont des *select_one* (une seule option à choisir)
+- le groupe (_begin_group_ et _end_group_) permet de faire apparaitre les questions dans un même écran
+- les questions sont des _select_one_ (une seule option à choisir)
 - la liste utilisée dans la feuille **choices** s'appelle *boolea
-- et par défaut (colonne **default**) la question prend la dernière valeur enregistrée (*${last-saved#utiliser_geopoint}*), sinon *true* :
+- et par défaut (colonne **default**) la question prend la dernière valeur enregistrée (_${last-saved#utiliser_geopoint}_), sinon _true_ :
 
 | **type**           | **name**          | **label** | **required** | **default**                                      |
 | ------------------ | ----------------- | --------- | :----------: | ------------------------------------------------ |
@@ -129,10 +129,10 @@ Voici l'extrait correspondant de la feuille **survey** (le principe est le même
 ### Écran de paramétrage n°3 -->  Types de données (thématiques) et paramétrage de l'autocomplétion
 
 Le dernier écran permet de choisir le nombre de caractères à saisir dans le recherche des espèces pour déclencher l'interrogation du référentiel ("auto-complétion").  
-3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB" pour *Erithacus rubecula* qui est le rouge-gorge) :bird:.
+3 est le minimum, 7 le maximum (pour permettre l'utilisation du "code taxon" par exemple "ERI RUB" pour _Erithacus rubecula_ qui est le rouge-gorge) :bird:.
 Notez que la dernière question n'est pas visible et nécessite de "scroller" l'écran.
 
-L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur" (champ de type *calculate* et fonction *concat* dans la colonne **calculation**).
+L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur" (champ de type _calculate_ et fonction _concat_ dans la colonne **calculation**).
 
 | **type**  | **name**                | **calculation**                                              |
 | --------- | ----------------------- | ------------------------------------------------------------ |
@@ -142,12 +142,12 @@ Une fois les paramétrages vérifiés et/ou modifiés, l'utilisateur peut choisi
 
 ### Choix de l'étude et du protocole
 
-Ces deux référentiels sont gérés dans des fichiers csv externes associés au formulaire. Les fichiers sont mentionnés dans la colonne **appearence** des lignes 2 et 3 de l'extrait ci-dessous (*search('etudes')* et *search('protocole')*).
+Ces deux référentiels sont gérés dans des fichiers csv externes associés au formulaire. Les fichiers sont mentionnés dans la colonne **appearence** des lignes 2 et 3 de l'extrait ci-dessous (_search('etudes')_ et _search('protocole')_).
 Cela permet de les mettre à jour sur le téléphone sans avoir à mettre à jour le formulaire sur le serveur.
 Nous verrons plus tard avec le référentiel taxonomique que le stockage externe de ces référentiels nous offre des possibilités de recherche intéressantes.
 
-L'utilisation combinée de l'apparence *quick* permet de passer automatiquement à la question suivante quand une option est sélectionnée.
-La feuille de calcul **choices** nous renseigne sur la structure de ces fichiers csv. Les colonnes *nom_etude_id* et *libelle_id* contiennent les valeurs à stocker, les colonnes *nom_etude* et *libelle* contiennent les "noms" à afficher dans les listes.
+L'utilisation combinée de l'apparence _quick_ permet de passer automatiquement à la question suivante quand une option est sélectionnée.
+La feuille de calcul **choices** nous renseigne sur la structure de ces fichiers csv. Les colonnes _nom_etude_id_ et _libelle_id_ contiennent les valeurs à stocker, les colonnes _nom_etude_ et _libelle_ contiennent les "noms" à afficher dans les listes.
 
 [![choix de l'étude](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png "choix de l'étude"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png){: data-mediabox="lightbox-gallery" data-title="choix de l'étude"}
 [![métadonnées utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png){: data-mediabox="lightbox-gallery" data-title="métadonnées utilisateur"}
@@ -209,13 +209,13 @@ Le GPS peut nous aider à dessiner automatiquement points, lignes et polygones, 
 | 16 | end group              |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
 | 17 | end repeat             |                           |                               |                                              |              |                     |             |                                             |                                             |                      |                             |
 
-Le *begin repeat* démarre une boucle de création de localités.
+Le _begin repeat_ démarre une boucle de création de localités.
 
-Le groupe qui suit directement ce repeat (ligne n°2) encapsule l'ensemble des éléments contenus dans la boucle et permettra de nommer chaque instance de la boucle, ici avec la valeur du champ calculé *heure_localite* (ligne 4).
+Le groupe qui suit directement ce repeat (ligne n°2) encapsule l'ensemble des éléments contenus dans la boucle et permettra de nommer chaque instance de la boucle, ici avec la valeur du champ calculé _heure_localite_ (ligne 4).
 
 L'observation pourra ainsi être retrouvée dans la navigation du formulaire, avec l’heure de l'emplacement et l’espèce observée.
 
-La colonne **choice_filter**, utilisée pour la question *methode_geo* permet de ne proposer que les options de la feuille **choices** pour lesquelles la valeur **filter** est contenue dans les "préférences utilisateur" calculée plus haut (écrans 2 et 3).
+La colonne **choice_filter**, utilisée pour la question _methode_geo_ permet de ne proposer que les options de la feuille **choices** pour lesquelles la valeur **filter** est contenue dans les "préférences utilisateur" calculée plus haut (écrans 2 et 3).
 
 La colonne **relevant** permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correspondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
 
@@ -262,7 +262,7 @@ Ils ont souhaité que cette liste propose d'abord les noms de référence, class
 
 Nous utilisons ici aussi un référentiel externe (les entrées de la "liste déroulante" ne sont pas stockées dans la feuille **choices** mais dans un fichier csv).
 
-Nous voyons (ligne n°3) que le fichier s'appelle *espece_plante*, et que nous allons y chercher les lignes pour lesquelles les colonnes **code_espece_key** ou **lb_nom_key** commencent (*startswith*) par les caractères tapés dans la question précédente (ligne 2).
+Nous voyons (ligne n°3) que le fichier s'appelle _espece_plante_, et que nous allons y chercher les lignes pour lesquelles les colonnes **code_espece_key** ou **lb_nom_key** commencent (_startswith_) par les caractères tapés dans la question précédente (ligne 2).
 
 ```excel
 quick search('espece_plante', 'startswith', 'code_espece_key,lb_nom_key', ${recherche_plantae})
@@ -273,7 +273,7 @@ Elles seront ordonnées selon la valeur stockée dans la colonne **orderby** du 
 
 Cela nous permet de calculer un ordre a priori, lors de la génération du référentiel, qui tient compte du caractère valide du taxon puis de son niveau taxonomique.
 
-Le suffixe *_key* utilisé dans les noms de colonnes des fichiers csv force la création d'un index lors de leur transformation en base de données sqlite sur le téléphone.
+Le suffixe __key_ utilisé dans les noms de colonnes des fichiers csv force la création d'un index lors de leur transformation en base de données sqlite sur le téléphone.
 C'est trés utile pour interroger efficacement les référentiels taxonomiques (faune et flore) issus de [TAXREF](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref) de l'[INPN](https://inpn.mnhn.fr), qui comptent chacun plusieurs dizaines de milliers de lignes.
 Le lien vers le script SQL de génération du référentiel csv à partir de taxref est proposé dans la section "ressources" de l'article
 
@@ -315,9 +315,9 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 | select_one prendre_image | prendre_image | Prendre une photo ? |                |                        |                 |
 | image                    | prise_image   | Prendre une photo   | annotate       | ${prendre_image}='oui' | max-pixels=2000 |
 
-La question est de type *image*, elle ne sera affichée que si l'utilisateur souhaite prendre une photo (*${prendre_image}='oui'*).
+La question est de type _image_, elle ne sera affichée que si l'utilisateur souhaite prendre une photo (_${prendre_image}='oui'_).
 
-Les photos peuvent être annotées (*annotate*), et leur taille est limitée pour éviter l'envoi d'images trop grandes pour l'usage qui en sera fait (*max-pixels=2000*).
+Les photos peuvent être annotées (_annotate_), et leur taille est limitée pour éviter l'envoi d'images trop grandes pour l'usage qui en sera fait (_max-pixels=2000_).
 
 ### Ajout d'une nouvelle observation ? d'une nouvelle localité ?
 
@@ -366,7 +366,7 @@ Nous verrons dans le prochain article comment les données sont récupérées et
 
 ## Perspectives
 
-Les perspectives sont nombreuses au regard des discussions en cours au sein du TAB (*Technical Advisory Board*) d'ODK.
+Les perspectives sont nombreuses au regard des discussions en cours au sein du TAB (_Technical Advisory Board_) d'ODK.
 
 Notamment celles concernant les "entity based data collection" et les "longitudinal data collection" qui laissent entrevoir des possibilités très intéressantes de suivis récurrents d'objets définis sur le terrain : placettes, ouvrages, parcelles agricoles...
 

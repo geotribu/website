@@ -4,7 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
-date: 2008-11-17
+date: 2008-11-17 10:20
 description: "WorkShop Quantum GIS"
 tags:
     - QGIS

@@ -114,6 +114,7 @@ plugins:
         - twemoji.maxcdn.com/*
         - user-images.githubusercontent.com/**/*.gif
         - github.com/**/*.gif
+        - ks356007.kimsufi.com/*
         # to remove later:
         - dev.openstreetmap.org/*
         - www.portailsig.org/assets/images/*
@@ -210,6 +211,10 @@ extra:
   comments_url: https://comments.geotribu.fr # isso url
   consent:
     title: Consentement 🍪
+    actions:
+      - accept
+      - manage
+      - reject
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
       des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
@@ -295,6 +300,7 @@ extra:
     Mapillary: streetview
     Matrix: commentaires
     Minecraft: manette
+    MySQL: database
     ODK: telephone
     Open Data Kit: telephone
     OpenPathView: streetview

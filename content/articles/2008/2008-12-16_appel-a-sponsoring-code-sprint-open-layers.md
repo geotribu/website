@@ -4,7 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
-date: 2008-12-16
+date: 2008-12-16 10:20
 description: "Appel à sponsoring - Code Sprint Open Layers"
 tags:
     - OpenLayers

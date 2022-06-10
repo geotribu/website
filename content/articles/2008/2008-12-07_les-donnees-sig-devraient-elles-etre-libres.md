@@ -4,7 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
-date: 2008-12-07
+date: 2008-12-07 10:20
 description: "Et si les données SIG étaient libres ?"
 tags:
     - open data

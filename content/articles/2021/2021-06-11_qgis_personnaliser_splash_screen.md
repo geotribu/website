@@ -51,7 +51,7 @@ L'image doit respecter quelques prérequis :
 - format PNG
 - accessible localement
 - dimensions recommandées : 600x300
-- être _fair-play_ et respecter le projet : s'assurer que les éléments graphiques de QGIS (logo, etc.) restent plus importants que les autres éléments ajoutés
+- être *fair-play* et respecter le projet : s'assurer que les éléments graphiques de QGIS (logo, etc.) restent plus importants que les autres éléments ajoutés
 
 Certes, ce dernier point n'est pas vraiment un pré-requis mais vu que la plupart d'entre nous ne payons pas pour ce merveilleux logiciel, on peut bien le créditer correctement !
 
