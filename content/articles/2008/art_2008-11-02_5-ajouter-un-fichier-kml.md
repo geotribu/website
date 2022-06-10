@@ -151,27 +151,27 @@ google.earth.fetchKml(ge, kmlUrl, finished);
 
 2. Définir une fonction qui vérifie la validité du fichier KML :  
 
-```javascript
-function finished(object) {  
-  if (!object) {  
-    alert('KML mal formé');  
-    return;  
-  }  
-  ge.getFeatures().appendChild(object);  
-}
-```
+    ```javascript
+    function finished(object) {  
+        if (!object) {  
+        alert('KML mal formé');  
+        return;  
+        }  
+        ge.getFeatures().appendChild(object);  
+    }
+    ```
 
 3. Définir l'objet géographique KML :  
 
-```javascript
-var kmlUrl = 'http://88.191.39.115/fabien/geotribu/kml/route.kml';
-```
+    ```javascript
+    var kmlUrl = 'http://88.191.39.115/fabien/geotribu/kml/route.kml';
+    ```
 
 4. Et l'appliquer sur la carte :  
 
-```javascript
-google.earth.fetchKml(ge, kmlUrl, finished);
-```
+    ```javascript
+    google.earth.fetchKml(ge, kmlUrl, finished);
+    ```
 
 ## Résultat
 

@@ -14,7 +14,7 @@ tags:
 
 :calendar: Date de publication initiale : 28 septembre 2008
 
-Mise en oeuvre d'OGC WPS norme : PyWPS
+## Mise en oeuvre d'OGC WPS norme : PyWPS
 
 Jachym Cepicky
 
@@ -79,13 +79,13 @@ Si vous rencontrez un nouveau bugs ou une nouvelle limitation n'hésitez pas à 
 
 ## Installation
 
-**Paquets obligatoires :**
+### Paquets obligatoires
 
 - Python
 - Python-xml
 - Python-htmltmpl
 
-**Paquets recommandés :**
+### Paquets recommandés
 
 - Un serveur du Web (par exemple [Apache](http://httpd.apache.org))
 - [GRASS](http://grass.itc.it). Application SIG OpenSource fournissant plus de 350 modules d'analyses de données vecteurs et/ou rasters. PyWPS a été écrit afin de supporter nativement GRASS et ses fonctions.
@@ -93,9 +93,7 @@ Si vous rencontrez un nouveau bugs ou une nouvelle limitation n'hésitez pas à 
 - [GDAL/OGR](http://gdal.org) Bibliothèque de transformation de formats de données(vecteur et raster). Utilisé dans de nombreux projets pour l'importation, l'exportation ou la transformation de données multi-sources.
 - [R](http://www.r-project.org) Langage et environnement pour le calcul statistique et graphique.
 
-- **Installation**
-
-- ***Installation rapide et ~~sale~~ facile :***
+### Installation rapide et ~~sale~~ facile
 
 Décompressez l'archive PyWPS à l'intérieur du répertoire où les scripts cgi s'exécutent (générallement cgi-bin).  
 
@@ -105,7 +103,7 @@ tar xvzf /tmp/pywps-VERSION.tar.gz
 pywps/wps.py
 ```
 
-- ***Installation propre***
+### Installation propre
 
 Décompressez l'archive PyWPS : `tar -xzf pywps-VERSION.tar.gz`
 
@@ -116,6 +114,8 @@ Paramétrez le fichier de configuration : `vim /etc/pywps.cfg`
 Autorisez les droits en lecture, écriture et exécution sur le répertoire Templates : `chmod -R 777 /usr/lib/python2.5/site-packages/pywps/Templates`
 
 Plusieurs paquets, selon les distributions linux (RPM,DEB), sont également disponibles sur la page de téléchargement de PyWPS.
+
+----
 
 ## Configuration
 
@@ -172,7 +172,7 @@ Ce fichier est divisé en plusieurs sections dont les spécifications sont les s
 
 Voici un exemple de fichier de configuration (pywps.cfg) :
 
-```init
+```ini
 [wps]  
 encoding=utf-8  
 title=PyWPS Server  
@@ -184,7 +184,7 @@ serveraddress=http://localhost/cgi-bin/wps
 keywords=GRASS,GIS,WPS  
 lang=eng`
 
-[provider]  
+[provider]
 providerName=Your Company Name  
 individualName=Your Name  
 positionName=Your Position  
@@ -199,7 +199,7 @@ phoneVoice=False
 phoneFacsimile=False  
 administrativeArea=False
 
-[server]  
+[server]
 maxoperations=3  
 maxinputparamlength=1024  
 maxfilesize=3mb  
@@ -208,7 +208,7 @@ outputUrl=http://localhost/wps/wpsoutputs
 outputPath=/var/www/wps/wpsoutputs  
 debug=true
 
-[grass]  
+[grass]
 path=/usr/lib/grass/bin/:/usr/lib/grass/scripts/  
 addonPath=  
 version=6.2.1  
@@ -223,7 +223,7 @@ Afin de tester votre configuration il vous suffit simplement d'envoyer une requ�
 
 Si le résultat est le même que ci-dessous, alors votre configuration est correcte :  
 
-```
+```sh
 NIT DONE  
 LOADING PRECOMPILED  
 TEMPLATE: UPTODATE  
@@ -246,7 +246,7 @@ PyWPS Development Server
 
 Par contre si vous obtenez quelque chose comme :  
 
-```
+```sh
 Traceback (most recent call last):  
 File "/usr/bin/wps.py", line 221, in  
 wps = WPS()  
@@ -278,7 +278,7 @@ Chaque processus est un script python pouvant fonctionner seul et possédant une
 
 Il est possible d'ajouter autant de fonctions et méthodes que vous le désirez.
 
-**Initialisation du processus buffer et configuration**
+### Initialisation du processus buffer et configuration
 
 ```python
 from pywps.Process.Process import WPSProcess  
@@ -299,7 +299,7 @@ class Process(WPSProcess):
 
 Nous avons défini un nouveau processus nommé exampleBufferProcess. Ce dernier est autorisé à conserver les données produites sur le serveur (storeSupported), il est également possible de l'utiliser en mode asynchrone (statusSupported). Enfin, ce processus utilisera comme environnement GRASS (grassLocation = True).
 
-**Définition des metadata**
+### Définition des metadata
 
 Celles-ci sont stockées dans le tableau self.Metadata de la méthode `__init__`. Il est possible de rajouter ses propres métadata en utilisant la méthode `self.AddMetadata() :`
 
@@ -308,7 +308,7 @@ self.AddMetadata(identifier="point",type="point",
 textContent="Click in the map")
 ```
 
-**Données en entrées**
+### Données en entrées
 
 Trois types de données/arguments en entrées sont définis :
 
@@ -316,7 +316,7 @@ Trois types de données/arguments en entrées sont définis :
 - ComplexValue - Cela sera la plus souvent un fichier vectoriel défini à l'intérieur d'une requête XML ou alors pointant vers la ressource elle même via une URL.
 - BoundingBox (Extention géographique) - Coordonnées des coins bas/gauche et haut/droit.
 
-***Exemple d'une donnée en entrée de type complexe :***
+#### Exemple d'une donnée en entrée de type complexe
 
 Une donnée complexe peut être aussi bien un raster qu'un vecteur :
 
@@ -325,7 +325,7 @@ self.dataIn = self.addComplexInput(identifier="data",
 title = "Input data")  
 ```
 
-***Exemple d'une donnée en entrée de type literale :***
+#### Exemple d'une donnée en entrée de type literale
 
 Depuis un argument de type literal il est possible d'obtenir n'importe quel type de chaîne de caractère :  
 
@@ -336,7 +336,7 @@ title = "Width")
 
 Une documentation plus complète présentant des exemples de processus ainsi qu'une aide en ligne (process.html) est distribuée avec le code source de PyWPS.
 
-**Données en sortie**
+### Données en sortie
 
 Les types de données disponibles une fois le processus exécuté sont les suivantes :
 
@@ -344,7 +344,7 @@ Les types de données disponibles une fois le processus exécuté sont les suiva
 - `ComplexValue`
 - `BoundingBox`
 
-***Exemple d'une donnée en entrée de type ComplexValue Output***
+#### Exemple d'une donnée en entrée de type ComplexValue Output
 
 Une valeur de type complexe peut être un fichier vecteur ou raster (ou tout aussi bien un fichier binaire, text...)
 
@@ -353,7 +353,7 @@ self.bufferOut = self.addComplexOutput(identifier="buffer",
 title="Output buffer file")  
 ```
 
-***Exemple d'une donnée en entrée de type Literal Output***
+#### Exemple d'une donnée en entrée de type Literal Output
 
 Si en sortie vous désirez une chaîne de caractère :
 
@@ -362,7 +362,7 @@ self.textOut = self.addLiteralOutput(identifier="text",
 title="just some text")  
 ```
 
-***Processus de programmation***
+### Processus de programmation
 
 Le processus doit être défini dans le constructeur de sa méthode. Dans un processus classique, vous voudrez pouvoir définir vos valeurs en entrées et définir un résultat en sortie. Pour cela vous pourrez utiliser les méthodes `getValue(input_identifier)` et `setValue(output_identifier,value)` des objets input et ouput.
 
@@ -376,39 +376,40 @@ Par exemple :
 
 ```python
 def execute(self):  
-  """Execute process.  
-  Each command will be executed and output values will be set  
-  """  
+    """Execute process.  
+    Each command will be executed and output values will be set  
+    """  
 
-  # run some command from the command line  
-  self.cmd("g.region -d")  
+    # run some command from the command line  
+    self.cmd("g.region -d")  
 
-  # set status value  
-  self.status.set("Importing data",20)  
-  self.cmd("v.in.ogr dsn=%s output=data" %\
-  (self.getInputValue('data')))  
+    # set status value  
+    self.status.set("Importing data",20)  
+    self.cmd("v.in.ogr dsn=%s output=data" %\
+    (self.getInputValue('data')))  
 
-  self.status.set("Buffering",50)  
+    self.status.set("Buffering",50)  
 
-  self.cmd("v.buffer input=data output=data_buff buffer=%s scale=1.0 tolerance=0.01" %\
-  (self.getInputValue('width')))  
+    self.cmd("v.buffer input=data output=data_buff buffer=%s scale=1.0 tolerance=0.01" %\
+    (self.getInputValue('width')))  
 
-  self.status.set("Exporting data",90)  
+    self.status.set("Exporting data",90)  
 
-  self.cmd("v.out.ogr type=area format=GML input=data_buff dsn=out.xml olayer=path.xml")
+    self.cmd("v.out.ogr type=area format=GML input=data_buff dsn=out.xml olayer=path.xml")
 
-  self.bufferOut.setValue("out.xml")  
-  self.textOut.setValue("ahoj, svete")  
-  return
+    self.bufferOut.setValue("out.xml")  
+    self.textOut.setValue("ahoj, svete")  
+    return
 ```
 
-***Traitement des erreurs***
+### Traitement des erreurs
 
 A la fin de l'exécution de la fonction aucune valeur ne devrait, normalement, être retournée. Tout autre résultat signifie qu'une erreur s'est produite durant le processus et qu'une erreur sera renvoyée au client. Par exemple :
 
 ```python
-def execute(self): ...  
-return "Ups, something failed!"
+def execute(self):
+    [...]
+    return "Ups, something failed!"
 ```
 
 ## Utilisation de GRASS
@@ -420,7 +421,7 @@ Si vous désirez utiliser les commandes de GRASS dans vos processus et qu'aucun 
 ```python
 WPSProcess.__init__(self,  
     identifier = "exampleBufferProcess",  
-    ....  
+    [...]  
     grassLocation = True)
 ```
 
@@ -431,7 +432,7 @@ Il est bien sûr possible de travailler depuis un entrepôt existant. Pour cela 
 ```python
 WPSProcess.__init__(self,
     identifier = "exampleBufferProcess",
-    ....
+    [...]
     grassLocation = "/home/grass/grassdata/spearfish60")
 ```
 
@@ -439,23 +440,23 @@ WPSProcess.__init__(self,
 
 Pour tester PyWPS vous pouvez l'utiliser aussi bien depuis un navigateur qui interrogera votre CGI qu'en ligne de commande directement. Commencer par la ligne de commande est toujours une bonne idée vous n'aurez pas ainsi à regarder, en cas d'erreur, dans le fichier error.log de votre serveur web.
 
-**Exemple de requête :**
+### Exemples de requête
 
-***Requête de type GetCapabilities (webserver) :***
+#### Requête de type GetCapabilities (webserver)
 
 ```bash
 ./wps.py "service=wps&request=getcapabilities"
 wget -nv -q -O - "http://localhost/cgi-bin/wps.py?service=Wps&request=getcapabilities"
 ```
 
-***Requête de type DescribeProcess :***
+#### Requête de type DescribeProcess
 
 ```bash
 ./wps.py "version=1.0.0&service=Wps&request=DescribeProcess&Identifier=bufferExampleProcess"
 wget -nv -q -O - "http://localhost/cgi-bin/wps.py?version=0.4.0&service=Wps&request=DescribeProcess&Identifier=exampleBufferProcess"
 ```
 
-***Requête avec données :***
+#### Requête avec données
 
 pour l'encodage des données utilisant la méthode GET depuis le protocole HTTP référez-vous à OGC 05-007r712, page 38 "Execute HTTP GET request KVP encoding"
 
@@ -475,6 +476,7 @@ cat doc/wps_execute_request-responsedocument.xml|./wps.py
 ## A propos de ce document
 
 Implémentation de la norme OGC WPS : PyWPS
+
 Traduction réalisée par Van De Casteele Arnaud le 2009-09-28
 
 ----

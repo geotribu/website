@@ -65,7 +65,7 @@ var jsfiles = new Array(
 
 Sinon vous pouvez simplement, spécifier dans votre fichier "profil" le chemin vers cette nouvelle classe.
 
-```
+```ini
 [include]  
 OpenLayers/Control/ScaleBar.js
 ```
