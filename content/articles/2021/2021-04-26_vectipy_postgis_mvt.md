@@ -64,7 +64,7 @@ Les tuiles sont généralement (mais pas obligatoirement) encodées au format [P
 
 ![tiles pyramid](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/mvt_vector_tiles_schema_pyramides.png "Structure pyramidale de tuiles vectorielles avec niveaux de zoom"){: .img-center loading=lazy }
 
-*Extrait de la [documentation](https://docs.qgis.org/3.16/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html?highlight=tuiles%20vectorielles) de QGIS*
+> Extrait de la [documentation](https://docs.qgis.org/3.16/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html?highlight=tuiles%20vectorielles) de QGIS.
 
 ### Génération des tuiles
 

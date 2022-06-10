@@ -28,7 +28,7 @@ Pourquoi ? Parce que saisir jusqu'à 80 codes couleur à la mains c'était juste
 * le second avait besoin d'un seul champ de couleur RGB ou Hexadécimal : [CSV_RGB_or_HEX_to_categorized_style.py](https://github.com/igeofr/qgis2/blob/master/scripts/CSV_RGB_or_HEX_to_categorized_style.py).
 
 ![Exemple Réunion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/CSV_QGIS_style.gif "Exemple réalisé à partir de la donnée Corine Land Cover de la Réunion."){: loading=lazy }  
-*Exemple réalisé à partir de la donnée Corine Land Cover de la Réunion.*
+_Exemple réalisé à partir de la donnée Corine Land Cover de la Réunion._
 {: align=middle }
 
 ## Aujourd'hui (QGIS3)
@@ -54,7 +54,7 @@ Fin 2020 et après 5 années de bons et loyaux services, il était grand temps d
 Pour compléter ces premiers outils, j'en ai profité pour travailler sur un nouveau script python/processing qui permet cette fois-ci d'exporter les couleurs d'un style QGIS vers un fichier CSV (la boucle est bouclée !) : [Style_to_CSV_algo.py](https://github.com/igeofr/qgis3/blob/master/scripts/style/Style_to_CSV_algo.py).
 
 ![Exemple Lunellois](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif "Exemple réalisé à partir d'une donnée produite sur le territoire du Lunellois."){: loading=lazy }  
-*Exemple réalisé à partir d'une donnée produite sur le territoire du Lunellois*
+_Exemple réalisé à partir d'une donnée produite sur le territoire du Lunellois_
 {: align=middle }
 
 ----

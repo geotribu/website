@@ -161,7 +161,7 @@ En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-
 --8<-- "content/team/jmou.md"
 
 <!-- Footnotes reference -->
-[^1]: traduction de _framework_ recommandée par l'Office québécois de la langue française. Source : [Wikipedia](https://fr.wikipedia.org/wiki/Framework#Traduction_fran%C3%A7aise)
+[^1]: traduction de *framework* recommandée par l'Office québécois de la langue française. Source : [Wikipedia](https://fr.wikipedia.org/wiki/Framework#Traduction_fran%C3%A7aise)
 
 <!-- hyperlinks reference -->
 [Dash]: https://kapeli.com/dash
