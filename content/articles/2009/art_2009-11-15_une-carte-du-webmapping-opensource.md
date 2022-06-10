@@ -17,7 +17,7 @@ tags:
 
 ![logo OpenSource](https://cdn.geotribu.fr/img/logos-icones/opensource.png "Logo Open Source Foundation"){: .img-rdp-news-thumb }
 
-{: .img-rdp-news-thumb } Le monde du GeoWeb regorge d'un nombre important de librairies OpenSource. De ce fait, il peut être parfois difficile de s'y retrouver et surtout de comprendre leur interconnexion. D'autant plus que la tendance est à la spécialisation et ces librairies s'organisent très souvent sous forme de briques qui sont ensuite réimplémentées dans d'autres projets.
+Le monde du GeoWeb regorge d'un nombre important de librairies OpenSource. De ce fait, il peut être parfois difficile de s'y retrouver et surtout de comprendre leur interconnexion. D'autant plus que la tendance est à la spécialisation et ces librairies s'organisent très souvent sous forme de briques qui sont ensuite réimplémentées dans d'autres projets.
 
 Face à ce constat, [Eduardo Patto](http://blogdopatto.webmapit.com.br/2009/11/ferramentas-foss4g-mapa-de-dependencias.html) a eu la merveilleuse idée d'élaborer [une carte](http://anthologis.com/) listant les différents composants ainsi que leurs relations. Au départ, je dois avouer cela ressemble à un gros fouillis. Preuve s'il en faut que la communauté OpenSource n'a pas chômé.
 
