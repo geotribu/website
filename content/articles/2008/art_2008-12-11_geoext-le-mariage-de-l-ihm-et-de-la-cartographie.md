@@ -4,7 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
-date: 2008-12-11
+date: 2008-12-11 10:20
 description: "GeoExt, le mariage de l'IHM et de la cartographie"
 tags:
     - GeoExt
