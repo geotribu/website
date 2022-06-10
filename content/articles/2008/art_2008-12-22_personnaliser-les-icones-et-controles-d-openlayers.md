@@ -34,14 +34,14 @@ Vous devez ensuite appeler cette nouvelle classe dans votre page qui affichera v
 
 ```javascript
 custom = new OpenLayers.Control.PanZoomCustom({
-			imgPanup : "north_blue_square_glossy.png",
-			imgPanleft : "west_blue_square_glossy.png",
-			imgPanright : "east_blue_square_glossy.png",
-			imgPandown : "south_blue_square_glossy.png",
-			imgZoomin : "z_plus_blue_square_glossy.png",
-			imgZoomworld : "z_world.png",
-			imgZoomout : "z_moins_blue_square_glossy.png",
-		});
+   imgPanup : "north_blue_square_glossy.png",
+   imgPanleft : "west_blue_square_glossy.png",
+   imgPanright : "east_blue_square_glossy.png",
+   imgPandown : "south_blue_square_glossy.png",
+   imgZoomin : "z_plus_blue_square_glossy.png",
+   imgZoomworld : "z_world.png",
+   imgZoomout : "z_moins_blue_square_glossy.png",
+  });
 map.addControl(custom);
 ```
 

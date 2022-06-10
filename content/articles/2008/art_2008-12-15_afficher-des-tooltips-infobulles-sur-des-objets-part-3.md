@@ -25,7 +25,6 @@ Je me suis donc lancé, il y a quelques mois, dans la création de ma propre cla
 
 ## Mise en application
 
-
 Pour ajouter le script il vous suffit simplement, après l'avoir [téléchargé](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/lib/OpenLayers/Control/ToolTips.js) (ou la [version compressée*](http://ks356007.kimsufi.com/arno/lib/js/OpenLayers/lib/OpenLayers/Control/ToolTips_optimize.js)), de le déclarer dans le Header de votre page. Cela se fait de la manière suivante :
 
 ```html

@@ -50,7 +50,6 @@ Et éditer le formulaire en HTML :
 
 ### Code complet
 
-
 ```javascript
 var map = null;
 var gdir;

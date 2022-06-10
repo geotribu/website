@@ -35,14 +35,14 @@ Ce protocole est devenu un standard implémenté par la quasi-totalité des serv
 
 Comme nous l'avons rapidement abordé, l'interrogation d'un serveur WMS se fait par l'URL à laquelle est passée des arguments bien définis. Ces mots-clés une fois mis bout à bout forment un ensemble compréhensible par le serveur cartographique. Les différents paramètres possibles sont :
 
-* VERSION : Version du protocole WMS.
-* REQUEST : Types d'opérations possibles -> GetCapabilities, GetMap, GetFeatureInfo.
-* OUTPUTFORMAT : Format de sortie de l'image (exemple : image/png).
-* BBOX : Etendue de la carte.
-* WIDTH : Largeur de l'image.
-* HEIGHT : Hauteur de l'image.
-* LAYERS : Liste des couches désirées.
-* SRS : Système de projection utilisé.
+- VERSION : Version du protocole WMS.
+- REQUEST : Types d'opérations possibles -> GetCapabilities, GetMap, GetFeatureInfo.
+- OUTPUTFORMAT : Format de sortie de l'image (exemple : image/png).
+- BBOX : Etendue de la carte.
+- WIDTH : Largeur de l'image.
+- HEIGHT : Hauteur de l'image.
+- LAYERS : Liste des couches désirées.
+- SRS : Système de projection utilisé.
 
 Voici un exemple d'URL :
 

@@ -38,16 +38,16 @@ Un SLD est un fichier XML contenant une liste de balises définie. On y retrouve
         <UserStyle>
             <Title>A style for World Population</Title>
             <FeatureTypeStyle>  
-		<PolygonSymbolizer>
-			<Fill>
-				<CssParameter name="fill">#FF7171</CssParameter>
-			</Fill>
-			<Stroke>
-				<CssParameter name="stroke">#FF7171</CssParameter>
-				<CssParameter name="stroke-width">2.0</CssParameter>
-			</Stroke>
-		</PolygonSymbolizer>
-	    </FeatureTypeStyle>
+  <PolygonSymbolizer>
+   <Fill>
+    <CssParameter name="fill">#FF7171</CssParameter>
+   </Fill>
+   <Stroke>
+    <CssParameter name="stroke">#FF7171</CssParameter>
+    <CssParameter name="stroke-width">2.0</CssParameter>
+   </Stroke>
+  </PolygonSymbolizer>
+     </FeatureTypeStyle>
         </UserStyle>
     </NamedLayer>
 </StyledLayerDescriptor>

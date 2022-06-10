@@ -37,14 +37,14 @@ Pour faire simple, il est tout à fait possible de définir des classes en se ba
 
 ```javascript
 function maClasse() {
-	this.attribut1;
-	this.attribut2;
-	this.methodeA = function() {
-	   // code
-	}
-	this.methodeB = function() {
-	   // code
-	}
+ this.attribut1;
+ this.attribut2;
+ this.methodeA = function() {
+    // code
+ }
+ this.methodeB = function() {
+    // code
+ }
 }
 ```
 
@@ -52,8 +52,8 @@ Comment faire alors? Mais oui bien sur, en se basant sur l'objet prototype. En e
 
 ```javascript
 function maClasse() {
-	this.attribut1;
-	this.attribut2;
+ this.attribut1;
+ this.attribut2;
 }
 
 maClasse.prototype.methodeA() = function() {
@@ -69,18 +69,18 @@ L'inconvénient de cette procédure est que les méthodes ne sont pas définies 
 
 ```javascript
 function maClasse() {
-	this.attribut1;
-	this.attribut2;
-	if (typeOf maClasse.initialized == "undefined" ) {
-		maClasse.prototype.methodeA() = function() {
-			// code
-		}
+ this.attribut1;
+ this.attribut2;
+ if (typeOf maClasse.initialized == "undefined" ) {
+  maClasse.prototype.methodeA() = function() {
+   // code
+  }
 
-		maClasse.prototype.methodeB() = function() {
-			// code
-		}
-		maClasse.initialized = true;
-	}
+  maClasse.prototype.methodeB() = function() {
+   // code
+  }
+  maClasse.initialized = true;
+ }
 }
 ```
 
@@ -94,16 +94,16 @@ Allé hop, vérifions si je ne vous ai pas menti. Comment faire pour créer une 
 var maClasse = Class.create();
 
 maClasse.prototype =  {
-	initialize : function() {
-		this.attribut1;
-		this.attribut2;
-	}
-	methodeA : function() {
-		//code
-	}
-	methodeB : function {
-		//code
-	}
+ initialize : function() {
+  this.attribut1;
+  this.attribut2;
+ }
+ methodeA : function() {
+  //code
+ }
+ methodeB : function {
+  //code
+ }
 }
 ```
 

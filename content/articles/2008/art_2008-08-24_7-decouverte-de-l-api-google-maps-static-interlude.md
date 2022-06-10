@@ -10,7 +10,7 @@ tags:
     - Google Maps
 ---
 
-# 7. Découverte de l'API Google Maps Static - Interlude ...
+# 7. Découverte de l'API Google Maps Static - Interlude
 
 :calendar: Date de publication initiale : 24 août 2008
 

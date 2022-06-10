@@ -58,7 +58,6 @@ google.earth.fetchKml(ge, kmlUrl, finished);
 
 ## Code complet
 
-
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -66,8 +65,8 @@ google.earth.fetchKml(ge, kmlUrl, finished);
     <title>[Google Earth] 6. Afficher un objet en 3D</title>
     <script src="http://www.google.com/jsapi?key=ABQIAAAAPo34DyTbdo2RpVUvdvK1qxTVkAM76o12Ue_ZZqmwjROaqOyBLhQVBCYY9lnsLXH3mdZLo-PWW8Z1DQ"></script>
     <style type="text/css">
-	  html { overflow:hidden; height:100%; }
-	  body { height:100%; margin:0; }
+   html { overflow:hidden; height:100%; }
+   body { height:100%; margin:0; }
     </style>
     <link rel="icon" type="image/png" href="./favicon.png"/>
     <script>
@@ -89,7 +88,7 @@ google.earth.fetchKml(ge, kmlUrl, finished);
        ge.getView().setAbstractView(camera);
        map = ge.createStyleMap('styleMap');
 
-	   function finished(object) {
+    function finished(object) {
          if (!object) {
            alert('KML mal formé');
            return;

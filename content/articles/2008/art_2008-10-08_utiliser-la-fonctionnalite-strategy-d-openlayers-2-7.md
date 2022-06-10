@@ -24,9 +24,7 @@ L'une des grandes nouveautés d'OpenLayers 2.7 est la possibilité de définir u
 - [Fixed](http://dev.openlayers.org/releases/OpenLayers-2.7/doc/apidocs/files/OpenLayers/Strategy/Fixed-js.htm) - La requête éffectuée vers le serveur ne se fait qu'une seule fois. Il n'y a pas de rechargement de la couche après, par exemple, un déplacement, zoom...
 - [Paging](http://dev.openlayers.org/releases/OpenLayers-2.7/doc/apidocs/files/OpenLayers/Strategy/Paging-js.html) - Les objets vecteur ne sont pas tous affichés mais disponible sous la forme d'un slideshow.
 
-
 Comme à son habitude, les créateurs de cette librairie ont pensé à tout et ont également fourni un certains nombes d'exemples :
-
 
 - [Cluster strategy](http://openlayers.org/dev/examples/strategy-cluster.html)
 - [Paging strategy](http://openlayers.org/dev/examples/strategy-paging.html)
@@ -40,7 +38,6 @@ Ce tutoriel est une mise en application de cette classe strategy. Nous utilisero
 L'exemple ci-dessous s'appuit sur un fichier de points générés aléatoireement puis exporter au format GML et SHP depuis GRASS. Nous allons à partir de là, utiliser la classe strategy.Cluster pour automatiquement regrouper les points adjacents et former un cercle de rayon plus important.
 
 Bien entendu nous allons nous appuyer sur la classe strategy.Cluster pour y arriver, mais l'astuce, pour faire varier la taille des cercles, consiste à utiliser l'attibut **pointRadius** de la classe [Style](http://dev.openlayers.org/releases/OpenLayers-2.6/doc/apidocs/files/OpenLayers/Style-js.html). Dans le cas ci-dessous nous allons simplement utiliser un fichier GML qui contient l'ensemble de nos points :
-
 
 ```javascript
 var GMLstyle = new OpenLayers.Style({  
@@ -89,7 +86,6 @@ strategyCluster.distance = 50;
 ## Mise en application de strategy.Cluster pour une couche WFS
 
 Je pensais au départ pouvoir utiliser strategy.Cluster directement depuis la classe standards layers [WFS](http://dev.openlayers.org/releases/OpenLayers-2.7/doc/apidocs/files/OpenLayers/Layer/WFS-js.html) d'Openlayers qui hérite pourtant de la classe layer [vector](http://dev.openlayers.org/releases/OpenLayers-2.7/doc/apidocs/files/OpenLayers/Layer/Vector-js.html). Malheureusement cela semble impossible. Il faut pour cela "redescendre d'un niveau" et utiliser directement la classe layer vector en spécifiant le protocole corrspondant. Cela se fait de la manière suivante :
-
 
 ```javascript
 var WFSstyle = new OpenLayers.Style({  

@@ -11,7 +11,7 @@ tags:
     - polylignes
 ---
 
-# 5. Polylignes (suite) - La Terre n'est pas plate ...
+# 5. Polylignes (suite) - La Terre n'est pas plate
 
 :calendar: Date de publication initiale : 22 août 2008
 
@@ -36,6 +36,7 @@ var paris = new GLatLng(48.83993649400669,2.394869685885226);
 ```
 
 Puis les icônes - une image est définie par son pictogramme ainsi que par son ombre et un placement en pixel par rapport à sa taille :
+
 ```javascript
 var icon1 = new GIcon();
 icon1.image = "http://localhost/geotribu/icons/marker/green-dot.png";

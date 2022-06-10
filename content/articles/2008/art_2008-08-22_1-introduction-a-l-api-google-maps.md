@@ -72,11 +72,11 @@ La fonction `GUnload()` permet de libérer la mémoire lorsque l'on quitte la pa
     <title>
      [Google Maps] 1. Introduction à Google Maps
     </title>
-	<style type="text/css">
-	  html { overflow:hidden; height:100%; }
-	  body { height:100%; margin:0; }
-	  #map { width:100%; height:100%; }
-	</style>
+ <style type="text/css">
+   html { overflow:hidden; height:100%; }
+   body { height:100%; margin:0; }
+   #map { width:100%; height:100%; }
+ </style>
     <script src="http://maps.google.com/maps?file=api&v=2.x&key=votre_clé_ici" type="text/javascript"></script>
     <script type="text/javascript">
       function initialize() {

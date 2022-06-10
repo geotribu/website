@@ -37,7 +37,7 @@ Après avoir télécharger et dezipper le package MS4W, il faudra le placer à l
 
 ## Définir son MapFile
 
-Pour notre exemple, nous avons utilisé des données libres téléchargeable sur le site internet : http://www.grida.no/ (link is external). Afin d'éviter d'avoir un fichier trop volumineux nous avons extrait la zone géographique correspondant à l'Indonésie. Un fichier zip des données utilisées est disponible ici.
+Pour notre exemple, nous avons utilisé des données libres téléchargeable sur le site internet : <http://www.grida.no/> (link is external). Afin d'éviter d'avoir un fichier trop volumineux nous avons extrait la zone géographique correspondant à l'Indonésie. Un fichier zip des données utilisées est disponible ici.
 
 Nous allons maintenant passer à la création de notre MapFile. C'est la pièce maîtresse de notre application, c'est lui qui est à la source de tous les échanges. Un MapFile se compose de plusieurs blocs. Il est important de comprendre et de bien former chacun d'eux. Sinon cela générera obligatoirement une erreur à l'exécution.
 

@@ -125,6 +125,7 @@ map.addOverlay(poly);
   </body>
 </html>
 ```
+
 ## Démonstration
 
 !!! info

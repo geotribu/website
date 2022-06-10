@@ -72,8 +72,8 @@ ge.getLayerRoot().enableLayerById(ge.LAYER_BUILDINGS, true);
     <title>[Google Earth] 2. Ajoutons quelques contr&ocirc;les</title>
     <script src="http://www.google.com/jsapi?key=ABQIAAAAPo34DyTbdo2RpVUvdvK1qxTVkAM76o12Ue_ZZqmwjROaqOyBLhQVBCYY9lnsLXH3mdZLo-PWW8Z1DQ"></script>
     <style type="text/css">
-	  html { overflow:hidden; height:100%; }
-	  body { height:100%; margin:0; }
+   html { overflow:hidden; height:100%; }
+   body { height:100%; margin:0; }
     </style>
     <link rel="icon" type="image/png" href="./favicon.png"/>
     <script>
@@ -90,8 +90,8 @@ ge.getLayerRoot().enableLayerById(ge.LAYER_BUILDINGS, true);
         ge.getOptions().setMouseNavigationEnabled(true);
         ge.getNavigationControl().setVisibility(ge.VISIBILITY_AUTO);
         var eiffel = ge.createLookAt('');
-		eiffel.set(48.858521049096, 2.29425080771864, 50, ge.ALTITUDE_RELATIVE_TO_GROUND, 250, 75, 1100);
-		ge.getView().setAbstractView(eiffel);
+  eiffel.set(48.858521049096, 2.29425080771864, 50, ge.ALTITUDE_RELATIVE_TO_GROUND, 250, 75, 1100);
+  ge.getView().setAbstractView(eiffel);
 
         ge.getLayerRoot().enableLayerById(ge.LAYER_BUILDINGS, true);
       }

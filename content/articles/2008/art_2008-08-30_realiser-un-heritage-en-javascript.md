@@ -78,7 +78,6 @@ Exemple 1 :
 
 **Initialisation du prototype "fille" avec une instance de la classe mère**
 
-
 ```javascript
 function classeMere() {  
   this.attribut = attribut1;  
@@ -101,7 +100,6 @@ Le principal inconvénient de cette approche est que si avant la recopie du prot
 Exemple 2 :
 
 **Recopie des éléments contenus dans l'attribut prototype de la classe mère vers le prototype de la classe fille**
-
 
 ```javascript
 function classeMere() {  

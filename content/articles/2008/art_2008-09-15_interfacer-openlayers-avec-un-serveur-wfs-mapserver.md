@@ -76,9 +76,9 @@ Pour spécifier à MapServer de fonctionner en tant que serveur WMS, il sera né
 
 - Un dans le bloc Web
 - Trois dans le bloc Layer
-  - Le bloc Metadata
-  - Le bloc Projection
-  - L'attribut Dump
+    - Le bloc Metadata
+    - Le bloc Projection
+    - L'attribut Dump
 
 Pour le bloc **Web** il faut ajouter un sous bloc nommé `METADATA` qui est composé des éléments ci-dessous :
 

@@ -297,11 +297,9 @@ Créons tout d'abord un marqueur et ajoutons-le à la carte :  `var marker1 = ne
 
 [Résultat pleine page](http://88.191.39.115/fabien/geotribu/%5bgeotribu%5d_Google-Maps_tuto8.html)
 
-
 ## Remarques
 
 Toujours se référer à l'API Google Maps - [Google Maps API Reference](http://code.google.com/apis/maps/documentation/reference.html) pour les différentes classes, méthodes et options utilisées. Le fichier XML doit toujours être une URL accessible. Consulter cette [page](http://code.google.com/apis/kml/documentation/kmlreference.html) pour les spécifications des fichiers KML.
-
 
 ## Conclusion
 

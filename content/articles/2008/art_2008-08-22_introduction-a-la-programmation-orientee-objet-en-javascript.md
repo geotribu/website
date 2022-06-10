@@ -89,16 +89,16 @@ Exemple :
 
 ## Tableau récapitulatif
 
-|Concept	|Support par JavaScript|
+|Concept |Support par JavaScript|
 |:--------------- |:---------------|
-|Classe	|Support partiel, aucun élément élément de langage dédié. Mais possibilité d'utilisation via les fonctions/closures/prototype|
-Composition/agrégation	|Ces deux mécanismes sont supportés|
-Encapsulation/visibilité	|Aucun support|
-Héritage	|JS permet de faire de l'héritage mais il n'existe pas de mot-clé extends prévu à cet effet. L'héritage est une recopie compléte des méthodes et attributs|
-Mot-clé super	|Non supporté|
-Mot-clé this	|This est supporté il fait référence à l'objet en cours sur lequel la methode s'applique|
-Polymorphisme	|Concept non supporté|
-Typage	|JS possédant un typage dynamique, le type d'un objet n'est connu que lors de son exécution et peut varier au cours de celle-ci.|
+|Classe |Support partiel, aucun élément élément de langage dédié. Mais possibilité d'utilisation via les fonctions/closures/prototype|
+Composition/agrégation |Ces deux mécanismes sont supportés|
+Encapsulation/visibilité |Aucun support|
+Héritage |JS permet de faire de l'héritage mais il n'existe pas de mot-clé extends prévu à cet effet. L'héritage est une recopie compléte des méthodes et attributs|
+Mot-clé super |Non supporté|
+Mot-clé this |This est supporté il fait référence à l'objet en cours sur lequel la methode s'applique|
+Polymorphisme |Concept non supporté|
+Typage |JS possédant un typage dynamique, le type d'un objet n'est connu que lors de son exécution et peut varier au cours de celle-ci.|
 
 ## Conclusion
 

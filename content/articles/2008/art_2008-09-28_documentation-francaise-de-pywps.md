@@ -31,14 +31,14 @@ PyWPS project has been started on April 2006 with support of DBU - Deutsche Bund
 - Installation rapide
 - Remarques générales
 - Installation
-  - Installation rapide et ~~sale~~ facile
-  - Installation propre
+    - Installation rapide et ~~sale~~ facile
+    - Installation propre
 
 - Configuration
 - Configurer vos propres processus
-  - Processus d'Initialisation et de configuration
-  - Programmation du processus
-  - Utilisater GRASS
+    - Processus d'Initialisation et de configuration
+    - Programmation du processus
+    - Utilisater GRASS
 
 - Testez votre processus
 
@@ -85,7 +85,6 @@ Si vous rencontrez un nouveau bugs ou une nouvelle limitation n'hésitez pas à 
 - Python-xml
 - Python-htmltmpl
 
-
 **Paquets recommandés :**
 
 - Un serveur du Web (par exemple [Apache](http://httpd.apache.org))
@@ -94,7 +93,7 @@ Si vous rencontrez un nouveau bugs ou une nouvelle limitation n'hésitez pas à 
 - [GDAL/OGR](http://gdal.org) Bibliothèque de transformation de formats de données(vecteur et raster). Utilisé dans de nombreux projets pour l'importation, l'exportation ou la transformation de données multi-sources.
 - [R](http://www.r-project.org) Langage et environnement pour le calcul statistique et graphique.
 
-* **Installation**
+- **Installation**
 
 - ***Installation rapide et ~~sale~~ facile :***
 
@@ -131,48 +130,47 @@ Le fichier de configuration par défaut est situé dans le répertoire pywps/def
 Ce fichier est divisé en plusieurs sections dont les spécifications sont les suivantes :
 
 - Section [wps] : Options de configuration WPS :
-  - encoding : Encodage des caractères (utf-8, iso-8859-2, windows-1250...)
-  - title : Nom du serveur
-  - version : Version du protocole WPS
-  - abstract : Description des objectifs du serveur
-  - fees : droits
-  - constraints : Contraintes possible
-  - serveraddress : Adresse du script wps (ex [http://foo/bar/wps.py](http://foo/bar/wps.py))
-  - Mots clé : Liste de mots clé séparée par une virgule
-  - lang : Langue
+    - encoding : Encodage des caractères (utf-8, iso-8859-2, windows-1250...)
+    - title : Nom du serveur
+    - version : Version du protocole WPS
+    - abstract : Description des objectifs du serveur
+    - fees : droits
+    - constraints : Contraintes possible
+    - serveraddress : Adresse du script wps (ex [http://foo/bar/wps.py](http://foo/bar/wps.py))
+    - Mots clé : Liste de mots clé séparée par une virgule
+    - lang : Langue
 
 - Section [provider] : Options de configuration personnelle
-  - providerName : Compagnie
-  - individualName : Nom de l'administrateur
-  - positionName : Role de l'administrateur
-  - deliveryPoint : Rue
-  - city : ville
-  - postalCode : code postal
-  - electronicMailAddress : Adresse mail
-  - providerSite : Site de la compagnie
-  - phoneVoice : Téléphone
-  - phoneFacsimile : Fax
-  - administrativeArea : Département administratif
+    - providerName : Compagnie
+    - individualName : Nom de l'administrateur
+    - positionName : Role de l'administrateur
+    - deliveryPoint : Rue
+    - city : ville
+    - postalCode : code postal
+    - electronicMailAddress : Adresse mail
+    - providerSite : Site de la compagnie
+    - phoneVoice : Téléphone
+    - phoneFacsimile : Fax
+    - administrativeArea : Département administratif
 
 - Section [server]: Options de configuration du serveur
-  - maxoperations : Nombre maximal de processus autorisés à fonctionner en parallèle (0 signifie qu'il n'y a aucune limite)
-  - maxinputparamlength : Taille maximale de la chaîne de caractère entrée en paramètre (Ex nom du fichier)
-  - maxfilesize : Taille maximale du fichier (raster ou vecteur). Les tailles peuvent être déterminées de la manière suivante : 1GB, 5MB, 3kB, 1000b
-  - tempPath : Répertoire temporaire
-  - outputUrl : Adresse (URL) où le résultat des traitements est sauvegardé
-  - outputPath : Répertoire où le résultat des traitements est sauvegardé
-  - debug : true/false
+    - maxoperations : Nombre maximal de processus autorisés à fonctionner en parallèle (0 signifie qu'il n'y a aucune limite)
+    - maxinputparamlength : Taille maximale de la chaîne de caractère entrée en paramètre (Ex nom du fichier)
+    - maxfilesize : Taille maximale du fichier (raster ou vecteur). Les tailles peuvent être déterminées de la manière suivante : 1GB, 5MB, 3kB, 1000b
+    - tempPath : Répertoire temporaire
+    - outputUrl : Adresse (URL) où le résultat des traitements est sauvegardé
+    - outputPath : Répertoire où le résultat des traitements est sauvegardé
+    - debug : true/false
 
 - Section [grass] - GRASS GIS settings
-  - path : variable $PATH (par exemple /usr/lib/grass/bin)
-  - addonPath : $GRASS_ADDONS addons
-  - version : Version de GRASS
-  - gui : Graphical User Interface doit être de type text
-  - gisbase : Chemin vers le répertoire GIS_BASE de GRASS (/usr/lib/grass)
-  - ldLibraryPath : Chemin vers le répertoire où sont stockées les librairies de grass (/usr/lib/grass/lib)
+    - path : variable $PATH (par exemple /usr/lib/grass/bin)
+    - addonPath : $GRASS_ADDONS addons
+    - version : Version de GRASS
+    - gui : Graphical User Interface doit être de type text
+    - gisbase : Chemin vers le répertoire GIS_BASE de GRASS (/usr/lib/grass)
+    - ldLibraryPath : Chemin vers le répertoire où sont stockées les librairies de grass (/usr/lib/grass/lib)
 
 Voici un exemple de fichier de configuration (pywps.cfg) :
-
 
 ```init
 [wps]  
@@ -222,7 +220,6 @@ ldLibraryPath=/usr/lib/grass/lib
 Afin de tester votre configuration il vous suffit simplement d'envoyer une requête à votre serveur. Cela se fait de la manière suivante (en ligne de commande) :  
 
 `. /wps.py "service=wps&request=getcapabilities"`
-
 
 Si le résultat est le même que ci-dessous, alors votre configuration est correcte :  
 

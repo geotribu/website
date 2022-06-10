@@ -24,7 +24,6 @@ Il est possible grâce à l'API Google Maps de naviguer virtuellement dans les r
 
 ## Créer un panorama
 
-
 Construire un panorama en lui indiquant son emplacement :  
 
 ```javascript
@@ -97,16 +96,16 @@ Définir l'emplacement de la carte :
          var myPOV = {yaw:370.64659986187695,pitch:0};
          myPano.setLocationAndPOV(capitole, myPOV);
          GEvent.addListener(myPano, "error", handleNoFlash);
-	   }
-	   else{
-	     alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
-	   }
-	 }
+    }
+    else{
+      alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
+    }
+  }
 
-	 function handleNoFlash(errorCode) {
+  function handleNoFlash(errorCode) {
        if (errorCode == 603) {
-	     alert("Error: Flash doesn't appear to be supported by your browser");
-	     return;
+      alert("Error: Flash doesn't appear to be supported by your browser");
+      return;
        }
      }
   </script>
