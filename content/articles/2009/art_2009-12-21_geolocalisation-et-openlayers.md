@@ -72,7 +72,6 @@ Etudions successivement les différentes étapes :
 2. Ceci étant fait, je créé mon objet feature à partir des renseignements précédents.
 3. Enfin, j'ajoute mon nouvel objet à ma couche.
 
-
 Passons maintenant au popup :
 
 ```javascript

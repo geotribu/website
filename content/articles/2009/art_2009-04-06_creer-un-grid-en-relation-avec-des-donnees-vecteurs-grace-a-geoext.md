@@ -34,14 +34,14 @@ Maintenant appelons les différents scripts nécessaires :
     <head>
         <title>OpenLayers map preview</title>
 
-	<!-- Lib Ext -->
-	<link rel="stylesheet" type="text/css"	href="../../lib/js/ext-2.2/resources/css/ext-all.css" />
-	<script type="text/javascript"	src="../../lib/js/ext-2.2/adapter/ext/ext-base.js"></script>
-	<script type="text/javascript" src="../../lib/js/ext-2.2/ext-all.js"></script>
-	<!-- Lib OL -->
-	<script src="../../lib/js/geoext/openlayers/lib/OpenLayers.js" type="text/javascript"></script>
-	<!-- Lib GeoExt -->
-    	<script type="text/javascript" src="../../lib/js/geoext/geoext/lib/GeoExt.js"></script>
+ <!-- Lib Ext -->
+ <link rel="stylesheet" type="text/css" href="../../lib/js/ext-2.2/resources/css/ext-all.css" />
+ <script type="text/javascript" src="../../lib/js/ext-2.2/adapter/ext/ext-base.js"></script>
+ <script type="text/javascript" src="../../lib/js/ext-2.2/ext-all.js"></script>
+ <!-- Lib OL -->
+ <script src="../../lib/js/geoext/openlayers/lib/OpenLayers.js" type="text/javascript"></script>
+ <!-- Lib GeoExt -->
+     <script type="text/javascript" src="../../lib/js/geoext/geoext/lib/GeoExt.js"></script>
         <script type="text/javascript" src="../../lib/js/geoext/geoext/lib/GridPanelFeature.js"></script>
     </head>
 ```
@@ -77,28 +77,28 @@ Layer = new OpenLayers.Layer.GML('Disaster','./data/YourGMLLayer.gml');
 map.addLayer(Layer);
 
 var featureStore = new GeoExt.data.FeatureStore({
- 	fields: [
- 		{name: 'ID', type: 'int'}
- 		,{name: 'NAME', type: 'string'}
- 		,{name: 'REGION', type: 'string'}
- 		,{name:'idFeature', type:'int'}
- 		,{name: 'Y_2004', type: 'int'}
- 	],
- 	layer : Layer
+  fields: [
+   {name: 'ID', type: 'int'}
+   ,{name: 'NAME', type: 'string'}
+   ,{name: 'REGION', type: 'string'}
+   ,{name:'idFeature', type:'int'}
+   ,{name: 'Y_2004', type: 'int'}
+  ],
+  layer : Layer
 });
 
 var olGrid = new GeoExt.grid.GridPanelFeature({
-	store: featureStore,
-	width:300,
-	columns: [{
-		 header: "Pays",
-		 width:100,
-		 dataIndex: "NAME"
-		},{
-		 header: "Population touchée",
-		 width:170,
-		 dataIndex: "Y_2004"
-	}],//EOF columns
+ store: featureStore,
+ width:300,
+ columns: [{
+   header: "Pays",
+   width:100,
+   dataIndex: "NAME"
+  },{
+   header: "Population touchée",
+   width:170,
+   dataIndex: "Y_2004"
+ }],//EOF columns
 });
 ```
 

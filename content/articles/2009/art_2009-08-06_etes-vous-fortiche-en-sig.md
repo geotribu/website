@@ -22,7 +22,7 @@ Je l'avoue les questions ne volent pas très haut mais j'ai tout de même réuss
 
 Petite égratignure pour les afficionados de GeoCeoncept, à la question 9, j'ai été plus que tenté de sélectionner le choix numéro 2 :)
 
-```
+```txt
 Q9: Parmi ces 3 éditeurs, lequel n'est pas spécialisé dans les SIG ?
 
 1. CartographX  

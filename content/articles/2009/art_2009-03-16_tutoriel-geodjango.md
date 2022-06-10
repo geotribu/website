@@ -30,7 +30,7 @@ Afin de comprendre ce tutoriel une bonne connaissance de la logique de Django es
 
 De plus, l'utilisation de GeoDjango nécessite l'installation de librairies supplémentaires (ex : geos, Gdal...). Pour plus de détails le [tutoriel d'installation de GeoDjango](http://geodjango.org/docs/install.html) est à votre disposition.
 
-Nous aborderons au cours des paragraphes suivants la création de notre premier projet cartographique nous permettant de consulter [les frontières mondiales](http://thematicmapping.org/downloads/world_borders.php)[ 1]. Certaines parties ou codes de ce tutoriel sont directement inspirés et/ou tirés du projet [GeoDjango basic apps](http://code.google.com/p/geodjango-basic-apps/)[^2].
+Nous aborderons au cours des paragraphes suivants la création de notre premier projet cartographique nous permettant de consulter [les frontières mondiales][http://thematicmapping.org/downloads/world_borders.php]( 1). Certaines parties ou codes de ce tutoriel sont directement inspirés et/ou tirés du projet [GeoDjango basic apps](http://code.google.com/p/geodjango-basic-apps/)[^2].
 
 ## Paramétrages généraux
 
@@ -52,16 +52,15 @@ Les bases de données MySQL et Oracle n'ont pas besoin d'effectuer ces étapes n
 
 Comme cela se fait habituellement sous Django et donc sous GeoDjango, commencons par créer notre projet avec la commande `django-admin.py` (plus de détails sur cette commande sur [Django-fr](http://www.django-fr.org/documentation/tutorial01/#cr-ation-d-un-projet)) :
 
-```
+```sh
 django-admin.py startproject geodjango
-
 ```
 
 Une fois ce projet initialisé, nous allons créer une application nommée world (plus de détails sur cette commande sur [Django-fr](http://www.django-fr.org/documentation/tutorial01/#cr-ation-de-mod-les)).
 
-```
-$ cd geodjango
-$ python manage.py startapp world
+```sh
+cd geodjango
+python manage.py startapp world
 ```
 
 ## Configurer le fichier settings.py
@@ -77,7 +76,7 @@ DATABASE_USER = 'geo'
 
 Profitons-en pour ajouter dans `INSTALLED_APPS` les applications `django.contrib.admin`, `django.contrib.gis`, et `geodjango.world` (l'application que nous avons créé):
 
-```
+```python
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -114,11 +113,11 @@ Le jeu de données est au format ESRI Shapefile, l'un des format les plus popula
 
 La commande `ogrinfo` est idéale pour étudier les metadonnées d'une couche :
 
-```
+```sh
 ogrinfo world/data/TM_WORLD_BORDERS-0.3.shp
 ```
 
-```
+```sh
 INFO: Open of `world/data/TM_WORLD_BORDERS-0.3.shp'
 using driver `ESRI Shapefile' successful.
 1: TM_WORLD_BORDERS-0.3 (Polygon)
@@ -126,11 +125,11 @@ using driver `ESRI Shapefile' successful.
 
 Ci-dessus, `ogrinfo` nous informe que le shapefile contient une couche de type polygone. En ajoutant les options `-so` nous obtiendrons des informations plus complètes :
 
-```
+```sh
 ogrinfo -so world/data/TM_WORLD_BORDERS-0.3.shp TM_WORLD_BORDERS-0.3
 ```
 
-```
+```sh
 INFO: Open of `world/data/TM_WORLD_BORDERS-0.3.shp'
 using driver `ESRI Shapefile' successful.
 
@@ -209,9 +208,10 @@ Dans un modèle GeoDjango, lorsque un champ de type géométrique est déclaré 
 
 Une fois votre modèle défini, il est nécessaire de synchroniser votre base de données. Tout d'abord, regardons le code SQL qui sera généré par le modèle WorldBorders. Cela se passe grâce à la commande `sqlall` :
 
-```
+```sh
 python manage.py sqlall world
 ```
+
 Le résultat suivant est alors affiché :
 
 ```sql
@@ -239,7 +239,7 @@ COMMIT;
 
 Si le résultat vous paraît correct, il faut maintenant créer la base en lancant la commande syncdb :
 
-```
+```sh
 python manage.py syncdb
 Creating table world_worldborders
 Installing custom SQL for world.WorldBorders model
@@ -260,7 +260,7 @@ Nous avions précédemment utilisé l'utilitaire ogrinfo pour explorer le conten
 
 Premièrement, ouvrons un nouveau Django Shell :
 
-```
+```sh
 python manage.py shell
 ```
 
@@ -414,7 +414,7 @@ Quelques remarques concernant le code ci-dessus :
 
 Maintenant, appellez le Django Shell depuis votre projet GeoDjango :
 
-```
+```sh
 python manage.py shell
 ```
 
@@ -429,13 +429,13 @@ Ensuite, il ne reste plus qu'à importer le module *load*, appeler la méthode r
 
 Maintenant que nous savons comment définir notre modèle géographique et importer nos données grâce à l'utilitaire *LayerMapping*, nous verrons qu'il est possible d'automatiser cette étape grâce à la commande ogrinspect. En effet cette dernière permet de générer automatiquement le modèle et le dictionnaire LayerMapping associé à la donnée définit en entrée. Cette commande s'utilise de la manière suivante :
 
-```
+```sh
 python manage.py ogrinspect <data_source> <model_name> [options]
 ```
 
 Dans notre exemple, data_source est le chemin d'accès à la donnée et model_bame est le nom qui sera utilisé pour le modèle. Des options supplémentaires, permettant de définir le modèle généré, peuvent également être ajoutées. Ainsi en se basant sur nos données, la commande ci-dessous permettra de produire automatiquement le modèle et le dictionnaire de données WorldBorders :
 
-```
+```sh
 python manage.py ogrinspect world/data/TM_WORLD_BORDERS-0.3.shp WorldBorders --srid=4326 --mapping --multi
 ```
 
@@ -490,13 +490,13 @@ worldborders_mapping = {
 
 GeoDjango étend l'ORM (object-relational mapping) de Django permettant ainsi la réalisation de requêtes spatiales. Prenons un exemple simple où nous souhaiterions connaître l'objet du modèle WorldBorders contenant un point que nous allons créer. Pour cela, commencons par ouvrir notre shell python :
 
-```
+```sh
 python manage.py shell
 ```
 
 Définissons maintenant le point qui nous intéresse [^3] :
 
-```
+```sh
 pnt_wkt = 'POINT(-95.3385 29.7245)'
 ```
 
@@ -517,6 +517,7 @@ Le résultat renvoyé par notre requête est **United States**. Nous aurions pu 
 >>> sm = WorldBorders.objects.get(mpoly__intersects=pnt)
 >>> sm
 ```
+
 Les exemples Contains et Intersects sont juste un aperçu de ce qu'il est possible de réaliser. Vous trouverez une documentation complète en consultant L'[API GeoDjango Database](http://geodjango.org/docs/db-api.html)
 
 ## Reprojection automatique
@@ -565,6 +566,7 @@ MULTIPOLYGON (((12.4157980000000006 43.9579540000000009, 12.4505540000000003 43.
 >>> sm.mpoly.geojson # GeoJSON (requires GDAL)
 '{ "type": "MultiPolygon", "coordinates": [ [ [ [ 12.415798, 43.957954 ], [ 12.450554, 43.979721 ], ...
 ```
+
 Cela inclut également l'accès aux nombreuses opérations géométrique de la librairie GEOS :
 
 ```python
@@ -604,7 +606,6 @@ Démarrons maintenant le serveur de développement :
 
 Enfin, rendons-nous à l'adresse <http://localhost:8000/admin/> et une fois enregistré vous devriez voir apparaître tout les pays de la couche WorldBorders. Leurs frontières peuvent être éditées, modifiées, déplacées...
 
-
 ## OSMGeoAdmin
 
 Avec OSMGeoAdmin, GeoDjango utilise une couche OpenStreetMap comme couche principale offrant ainsi plus de détails que celle utilisée par défaut par GeoModelAdmin ( basé sur le WMS [Vector Map Level 0](http://earth-info.nga.mil/publications/vmap0.html) distribué par [Metacarta](http://metacarta.com/)). Néanmoins, cela entraîne d'importantes limitations :
@@ -613,9 +614,9 @@ Avec OSMGeoAdmin, GeoDjango utilise une couche OpenStreetMap comme couche princi
 * OSMGeoAdmin ne fonctionne pas encore avec les base de données MySQL et Oracle spatial
 * Le fichier PROJ.4 doit être installé (consulter les [instructions d'installations de PROJ.4](http://geodjango.org/docs/install.html#proj4) pour plus de détails)
 
-Une fois ces pré-requis réalisés vous n'aurez plus qu'à remplacer, dans votre fichier admin.py, admin.GeoModelAdmin par admin.OSMGeoAdmin :
+Une fois ces pré-requis réalisés vous n'aurez plus qu'à remplacer, dans votre fichier `admin.py`, `admin.GeoModelAdmin` par `admin.OSMGeoAdmin` :
 
-```
+```python
 admin.site.register(WorldBorders, admin.OSMGeoAdmin)
 ```
 

@@ -20,7 +20,6 @@ tags:
 
 Une des fonctionnalités qui me semble intéressante dans la librairie GoogleMaps et que je n'ai encore trouvé nulle part ailleurs est la possibilité d'afficher des infobulles avec des onglets. Mais avec l'arrivée de GeoExt et de sa classe [Popup](http://www.geoext.org/lib/GeoExt/widgets/Popup.html) hautement personnalisable cela est dorénavant faisable. Regardons comment y arriver.
 
-
 ## Création du popup
 
 L'objet Popup de GeoExt hérite de la classe [Windows](http://extjs.com/deploy/dev/docs/?class=Ext.Window) d'EXT. Dans celle-ci il est possible d'ajouter des éléments supplémentaires via la propriété `items`, dans notre cas nous y ajouterons un objet [tabPanel](http://extjs.com/deploy/dev/docs/?class=Ext.TabPanel).

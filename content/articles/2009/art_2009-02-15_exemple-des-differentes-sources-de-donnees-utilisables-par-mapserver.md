@@ -25,7 +25,7 @@ Ce tutoriel est une traduction d'un [billet](http://www.bostongis.com/?content_n
 
 La localisation des sources de données telles que Esri Shp ou mapInfo tab sont définies dans le MapFile par le paramètre `SHAPEPATH` comme présenté ci-dessous :
 
-```
+```conf
 #
 # Debut du MapFile
 #
@@ -44,7 +44,7 @@ SHAPEPATH "c:\mydata\"
 
 Les données de type **ShapeFile (*.shp)** sont, dans MapServer, **les plus simples à utiliser**. En effet il suffit, dans le bloc LAYER, de spécifier le nom du fichier Shape (il n'est pas obligatoire d'écrire l'extension). Ci-dessous un exemple de déclaration d'un Layer utilisant une couche ShapeFile :
 
-```
+```conf
 LAYER
     NAME buildings
     TYPE POLYGON
@@ -63,7 +63,7 @@ END
 
 Grâce au driver GDAL OGR de nombreuses sources de données sont utilisables par MapServer. Les données de type **MapInfo (*.tab)** font partie de celles-là. L'exemple ci-dessous présente la déclaration d'un LAYER utilisant une donnée Mapinfo. Bien entendu, la donnée doit prendre en compte le chemin spécifié auparavant dans le paramètre `SHAPEPATH`.
 
-```
+```conf
 LAYER  
   NAME buildings  
   STATUS DEFAULT  
@@ -89,7 +89,7 @@ END
 
 MapServer dispose de son propre driver permettant l'accès aux données stockées dans le **[SGBD PostGis](http://postgis.refractions.net/)**. Néanmoins, afin de pouvoir utiliser cette fonctionnalité il est nécessaire que le CGI MapServer ou MapScript soit compilé avec le driver PostGis. Ci-dessous un exemple utilisant une couche PostGis :
 
-```
+```conf
 LAYER  
   CONNECTIONTYPE postgis  
   NAME "buildings"  
@@ -108,7 +108,7 @@ END
 
 Une couche PostGis plus complexe
 
-```
+```conf
 LAYER  
     NAME "projects"  
     CONNECTIONTYPE postgis  
@@ -153,7 +153,7 @@ END
 
 MapServer peut utiliser le protocole **[WMS](http://geotribu.net/node/9)** aussi bien en tant que serveur que client. Ci dessous un exemple de couche WMS utilisant le server WMS Microsoft Terraservices.
 
-```
+```conf
 LAYER  
     NAME "msterraservicedoq"  
     TYPE RASTER  

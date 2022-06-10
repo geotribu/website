@@ -25,32 +25,31 @@ OpenLayers permet, grâce à la classe [EditingToolbar](http://dev.openlayers.or
 
 Créer et enrichir sa propre barre d'outils n'est pas très difficile. Pour cela Openlayers met à notre disposition la classe [Panel](http://dev.openlayers.org/releases/OpenLayers-2.7/doc/apidocs/files/OpenLayers/Control/Panel-js.html) auquel nous ajoutons ensuite les outils que l'on souhaite à partir de la méthode [addControls](http://dev.openlayers.org/releases/OpenLayers-2.7/doc/apidocs/files/OpenLayers/Control/Panel-js.html#OpenLayers.Control.Panel.addControls). Regardons le code ci-dessous pour comprendre :
 
-
 ```javascript
 //Création du l'objet Panel
 panel = new OpenLayers.Control.Panel(
-	{'displayClass': 'olControlEditingToolbar'}
+ {'displayClass': 'olControlEditingToolbar'}
 );
 
 controls = {
-	move : new OpenLayers.Control.Navigation(),
-	select : new OpenLayers.Control.SelectFeature(vectors,
-		{'displayClass': 'olControlSelect'}),
-	point: new OpenLayers.Control.DrawFeature(vectors,
-		OpenLayers.Handler.Point,
-		{'displayClass': 'olControlDrawFeaturePoint'}),
-	line: new OpenLayers.Control.DrawFeature(vectors,
-		OpenLayers.Handler.Path,
-		{'displayClass': 'olControlDrawFeaturePath'}),
-	polygon: new OpenLayers.Control.DrawFeature(vectors,
-		OpenLayers.Handler.Polygon,
-		{'displayClass': 'olControlDrawFeaturePolygon'}),
-	zoomMaxExtent : new OpenLayers.Control.ZoomToMaxExtent
-		({'displayClass': 'olControlMaxExtent'})
+ move : new OpenLayers.Control.Navigation(),
+ select : new OpenLayers.Control.SelectFeature(vectors,
+  {'displayClass': 'olControlSelect'}),
+ point: new OpenLayers.Control.DrawFeature(vectors,
+  OpenLayers.Handler.Point,
+  {'displayClass': 'olControlDrawFeaturePoint'}),
+ line: new OpenLayers.Control.DrawFeature(vectors,
+  OpenLayers.Handler.Path,
+  {'displayClass': 'olControlDrawFeaturePath'}),
+ polygon: new OpenLayers.Control.DrawFeature(vectors,
+  OpenLayers.Handler.Polygon,
+  {'displayClass': 'olControlDrawFeaturePolygon'}),
+ zoomMaxExtent : new OpenLayers.Control.ZoomToMaxExtent
+  ({'displayClass': 'olControlMaxExtent'})
 }
 //Ajout des outils à la barre
 for(var key in controls) {
-	panel.addControls([controls[key]]);
+ panel.addControls([controls[key]]);
 }
 //Ajout de la barre à la carte
 map.addControl(panel);
@@ -58,17 +57,17 @@ map.addControl(panel);
 
 Il est possible d'adapter le css à sa guise avec l'attribut displayClass. Prenons l'exemple de l'icone select :
 
-```
+```javascript
 .olControlEditingToolbar .olControlSelectItemActive {
-	background-image: url(./select_on.png);
-	background-repeat: no-repeat;
-	background-position: 0px 1px;
+    background-image: url(./select_on.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
 }
 
 .olControlEditingToolbar .olControlSelectItemInactive {
- 	background-image: url(./select_off.png);
-	background-repeat: no-repeat;
-	background-position: 0px 1px;
+    background-image: url(./select_off.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
 }
 ```
 

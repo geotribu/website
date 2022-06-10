@@ -29,7 +29,7 @@ Allez dans le répertoire tools de votre sdk 1.5, et tapez la commande :
 
 Vous devriez avoir un résultat semblable à ceci :  
 
-```
+```sh
 Available Android targets:
 id:1
     Name: Android 1.1
@@ -55,17 +55,19 @@ id:3
 
 Vous pouvez alors créer un nouvel AVD (Android Virtual Device)  
 
-```
+```sh
 android create avd -n  -t
+```
 
-par exemple :
+Par exemple :
 
+```sh
 android create avd -n avd3 -t 3
 ```  
 
 Ensuite vous pouvez vérifier la création de votre AVD ciblé pour la cartographie en tapant  
 
-```
+```sh
 android list avds
 
 résultat :
@@ -89,7 +91,6 @@ Available Android Virtual Devices:
 ```
 
 Votre émulateur pouvant afficher des cartes est maintenant créé.
-
 
 ## Créer l'application dans Eclipse
 
@@ -119,7 +120,6 @@ Ajoutez sous la balise `<manifest>`
 
 ### Quel Layout pour une carte
 
-
 Il faut maintenant declarer une MapView dans vote Layout principal.  
 
 Dans `/res/layout/main.xml`, insérer ce code qui déclare qu'une carte cliquable va occuper toute la fenêtre.  
@@ -145,7 +145,6 @@ Dans `/res/layout/main.xml`, insérer ce code qui déclare qu'une carte cliquabl
 
 Il manque donc ici votre Maps API Key qui prouve que vous êtes enregistré auprés de Google pour utiliser son service. Voyons maintenant comment la récupérer.
 
-
 ### Obtenir une Maps API Key
 
 Il faut d'abord obtenir votre empreinte du certificat (MD5) pour votre atelier de développement.  
@@ -156,7 +155,7 @@ Pour cela, il suffit de taper la commande suivante (keytool est disponible dans 
 
 Le fichier `debug.keystore` est stocké dans un répertoire dépendant de votre OS :  
 
-```
+```conf
 Windows Vista: C:\Users\<user>\.android\debug.keystore
 Windows XP: C:\Documents and Settings\<user>\.android\debug.keystore
 OS X and Linux: ~/.android/debug.keystore
@@ -164,7 +163,7 @@ OS X and Linux: ~/.android/debug.keystore
 
 Vous devriez obtenir ceci :  
 
-```
+```sh
 androiddebugkey, 14 mai 2009, PrivateKeyEntry,
 Empreinte du certificat (MD5) : 32:39:0C:F0:2D:48:32:A5:7C:3D:6A:xx:xx:xx:xx:xx
 ```
@@ -175,9 +174,7 @@ Si vous n'avez pas de compte Google , c'est le moment d'en créer un.
 
 Acceptez les conditions et entrez votre empreinte. Vous obtiendrez votre clé Maps API, qu'il suffit de mettre dans votre fichier de Layout.
 
-
 ### Un peu de java, enfin
-
 
 Voici le code le plus simple pour afficher une carte dans votre application.  
 

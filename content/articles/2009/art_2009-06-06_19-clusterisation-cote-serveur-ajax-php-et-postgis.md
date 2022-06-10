@@ -67,28 +67,28 @@ Tout d'abord il faut créer une fonction de création de marqueurs. Celle-ci dif
 
 ```javascript
 function createMarker(lat,lng,title,icon,cluster){
-		var point = new GLatLng(lat,lng);
-		if (!cluster){
-			icon.image = "./icon/marker/pic.png";
-			icon.shadow = "./icon/marker/shadow.png";
-			var mark = new GMarker(point,{icon: icon, title: title});
-			var infowindow = title;
-			GEvent.addListener(mark, 'click', function() {
-				mark.openInfoWindowHtml(infowindow);
-			});
-			map.addOverlay(mark);
-		}
-		else{
-			icon.image = "./icon/marker/cluster_marker.png";
-			icon.shadow = "./icon/marker/shadow.png";
-			var mark = new GMarker(point,{icon: icon, title: title});
-			var infowindow = "";
-			GEvent.addListener(mark, 'click', function() {
-				map.setCenter(mark.getLatLng(),map.getZoom()+1);
-			});
-			map.addOverlay(mark);
-		}
-	}
+  var point = new GLatLng(lat,lng);
+  if (!cluster){
+   icon.image = "./icon/marker/pic.png";
+   icon.shadow = "./icon/marker/shadow.png";
+   var mark = new GMarker(point,{icon: icon, title: title});
+   var infowindow = title;
+   GEvent.addListener(mark, 'click', function() {
+    mark.openInfoWindowHtml(infowindow);
+   });
+   map.addOverlay(mark);
+  }
+  else{
+   icon.image = "./icon/marker/cluster_marker.png";
+   icon.shadow = "./icon/marker/shadow.png";
+   var mark = new GMarker(point,{icon: icon, title: title});
+   var infowindow = "";
+   GEvent.addListener(mark, 'click', function() {
+    map.setCenter(mark.getLatLng(),map.getZoom()+1);
+   });
+   map.addOverlay(mark);
+  }
+ }
 ```
 
 ### Récupération des marqueurs via Ajax
@@ -116,29 +116,29 @@ Enfin la méthode GDownloadUrl qui récupère le XML construit côté serveur en
 
 ```javascript
 GDownloadUrl(urlstr, function(data, responseCode){
-	if (responseCode == 200){
-		var xmlDoc = GXml.parse(data);
-		var markers = xmlDoc.documentElement.getElementsByTagName("marker");
+ if (responseCode == 200){
+  var xmlDoc = GXml.parse(data);
+  var markers = xmlDoc.documentElement.getElementsByTagName("marker");
 
-		var icon = new GIcon();
-		icon.iconSize = new GSize(24.0,38.0);
-		icon.shadowSize = new GSize(44.0,38.0);
-		icon.iconAnchor = new GPoint(12.0,38.0);
-		icon.infoWindowAnchor = new GPoint(12.0,19.0);
+  var icon = new GIcon();
+  icon.iconSize = new GSize(24.0,38.0);
+  icon.shadowSize = new GSize(44.0,38.0);
+  icon.iconAnchor = new GPoint(12.0,38.0);
+  icon.infoWindowAnchor = new GPoint(12.0,19.0);
 
-		for (i=0;i<markers.length;i++){
-			var latMarker = parseFloat(markers[i].getAttribute("lat_object"));
-			var lngMarker = parseFloat(markers[i].getAttribute("lng_object"));
-			if (markers[i].getAttribute("cluster") == 0){
-				var title = markers[i].getAttribute("title_object");
-				createMarker(latMarker,lngMarker,title,icon,false);
-			}
-			else{
-				var title = markers[i].getAttribute("nb_marker")+' items - zoom to view (click on marker)';
-				createMarker(latMarker,lngMarker,title,icon,true);
-			}
-		}
-	}
+  for (i=0;i<markers.length;i++){
+   var latMarker = parseFloat(markers[i].getAttribute("lat_object"));
+   var lngMarker = parseFloat(markers[i].getAttribute("lng_object"));
+   if (markers[i].getAttribute("cluster") == 0){
+    var title = markers[i].getAttribute("title_object");
+    createMarker(latMarker,lngMarker,title,icon,false);
+   }
+   else{
+    var title = markers[i].getAttribute("nb_marker")+' items - zoom to view (click on marker)';
+    createMarker(latMarker,lngMarker,title,icon,true);
+   }
+  }
+ }
 });
 ```
 
@@ -150,7 +150,7 @@ Le but de ce tutoriel étant la clusterisation, il est nécessaire de déclarer 
 
 ```javascript
 GEvent.addListener(map, 'zoomend', function() {
-	getMarker();
+ getMarker();
 });
 ```
 
@@ -169,36 +169,36 @@ var west = map.getBounds().getNorthEast().lng();
 var east = map.getBounds().getSouthWest().lng();
 
 GEvent.addListener(map, 'moveend', function() {
-	var north = map.getBounds().getNorthEast().lat();
-	var south = map.getBounds().getSouthWest().lat();
-	var west = map.getBounds().getNorthEast().lng();
-	var east = map.getBounds().getSouthWest().lng();
+ var north = map.getBounds().getNorthEast().lat();
+ var south = map.getBounds().getSouthWest().lat();
+ var west = map.getBounds().getNorthEast().lng();
+ var east = map.getBounds().getSouthWest().lng();
 
-	var centerMoveLat = map.getCenter().lat();
-	var centerMoveLng = map.getCenter().lng();
+ var centerMoveLat = map.getCenter().lat();
+ var centerMoveLng = map.getCenter().lng();
 
-	var extendY = Math.abs(north - south)*extendPercent;
-	var extendX = Math.abs(west - east)*extendPercent;
+ var extendY = Math.abs(north - south)*extendPercent;
+ var extendX = Math.abs(west - east)*extendPercent;
 
-	if ((centerMoveLng > (centerLng + extendX)) || (centerMoveLng < (centerLng - extendX))){
-		centerLat = map.getCenter().lat();
-		centerLng = map.getCenter().lng();
-		north = map.getBounds().getNorthEast().lat();
-		south = map.getBounds().getSouthWest().lat();
-		west = map.getBounds().getNorthEast().lng();
-		east = map.getBounds().getSouthWest().lng();
-		getMarker();
-	}
+ if ((centerMoveLng > (centerLng + extendX)) || (centerMoveLng < (centerLng - extendX))){
+  centerLat = map.getCenter().lat();
+  centerLng = map.getCenter().lng();
+  north = map.getBounds().getNorthEast().lat();
+  south = map.getBounds().getSouthWest().lat();
+  west = map.getBounds().getNorthEast().lng();
+  east = map.getBounds().getSouthWest().lng();
+  getMarker();
+ }
 
-	if ((centerMoveLat > (centerLat + extendY)) || (centerMoveLat < (centerLat - extendY))){
-		centerLat = map.getCenter().lat();
-		centerLng = map.getCenter().lng();
-		north = map.getBounds().getNorthEast().lat();
-		south = map.getBounds().getSouthWest().lat();
-		west = map.getBounds().getNorthEast().lng();
-		east = map.getBounds().getSouthWest().lng();
-		getMarker();
-	}
+ if ((centerMoveLat > (centerLat + extendY)) || (centerMoveLat < (centerLat - extendY))){
+  centerLat = map.getCenter().lat();
+  centerLng = map.getCenter().lng();
+  north = map.getBounds().getNorthEast().lat();
+  south = map.getBounds().getSouthWest().lat();
+  west = map.getBounds().getNorthEast().lng();
+  east = map.getBounds().getSouthWest().lng();
+  getMarker();
+ }
 });
 ```
 
@@ -243,7 +243,6 @@ Reste la partie un peu délicate de calcul des bornes de la 'grande' carte - tou
 Ainsi nous avons les bornes de la 'grande' carte dans les variables $maxY, $minX, etc.  
 
 La syntaxe un peu particulière - ? : - est juste un opérateur ternaire qui évite de faire des longs if then else - <http://www.phpsources.org/tutoriel-conditionnel-if-else.htm#part_2>. Ici il y en a deux imbriqués.
-
 
 Enfin il reste à calculer le pas en X et en Y - c'est-à-dire la taille d'une petite cellule :  
 
@@ -366,130 +365,130 @@ echo $xmlfile;
    <script src="http://maps.google.com/maps?file=api&v=2&key=votre_clé_ici" type="text/javascript"></script>
    <script type="text/javascript">
 
-	var map;
-	var extendPercent = 50 / 100;
+ var map;
+ var extendPercent = 50 / 100;
 
-	function createMarker(lat,lng,title,icon,cluster){
-		var point = new GLatLng(lat,lng);
-		if (!cluster){
-			icon.image = "./icon/marker/pic.png";
-			icon.shadow = "./icon/marker/shadow.png";
-			var mark = new GMarker(point,{icon: icon, title: title});
-			var infowindow = title;
-			GEvent.addListener(mark, 'click', function() {
-				mark.openInfoWindowHtml(infowindow);
-			});
-			map.addOverlay(mark);
-		}
-		else{
-			icon.image = "./icon/marker/cluster_marker.png";
-			icon.shadow = "./icon/marker/shadow.png";
-			var mark = new GMarker(point,{icon: icon, title: title});
-			var infowindow = "";
-			GEvent.addListener(mark, 'click', function() {
-				map.setCenter(mark.getLatLng(),map.getZoom()+1);
-			});
-			map.addOverlay(mark);
-		}
-	}
+ function createMarker(lat,lng,title,icon,cluster){
+  var point = new GLatLng(lat,lng);
+  if (!cluster){
+   icon.image = "./icon/marker/pic.png";
+   icon.shadow = "./icon/marker/shadow.png";
+   var mark = new GMarker(point,{icon: icon, title: title});
+   var infowindow = title;
+   GEvent.addListener(mark, 'click', function() {
+    mark.openInfoWindowHtml(infowindow);
+   });
+   map.addOverlay(mark);
+  }
+  else{
+   icon.image = "./icon/marker/cluster_marker.png";
+   icon.shadow = "./icon/marker/shadow.png";
+   var mark = new GMarker(point,{icon: icon, title: title});
+   var infowindow = "";
+   GEvent.addListener(mark, 'click', function() {
+    map.setCenter(mark.getLatLng(),map.getZoom()+1);
+   });
+   map.addOverlay(mark);
+  }
+ }
 
-	function getMarker(){
-		map.clearOverlays();
-		var maxY = map.getBounds().getNorthEast().lat();
-		var minY = map.getBounds().getSouthWest().lat();
-		var maxX = map.getBounds().getNorthEast().lng();
-		var minX = map.getBounds().getSouthWest().lng();
-		var zoomLevel = map.getZoom();
-		var urlstr = "./function/getObj.php?maxY="+maxY+"&minY="+minY+"&maxX="+maxX+"&minX="+minX+"&zoomLevel="+zoomLevel;
-		GDownloadUrl(urlstr, function(data, responseCode){
-			if (responseCode == 200){
-				var xmlDoc = GXml.parse(data);
-				var markers = xmlDoc.documentElement.getElementsByTagName("marker");
+ function getMarker(){
+  map.clearOverlays();
+  var maxY = map.getBounds().getNorthEast().lat();
+  var minY = map.getBounds().getSouthWest().lat();
+  var maxX = map.getBounds().getNorthEast().lng();
+  var minX = map.getBounds().getSouthWest().lng();
+  var zoomLevel = map.getZoom();
+  var urlstr = "./function/getObj.php?maxY="+maxY+"&minY="+minY+"&maxX="+maxX+"&minX="+minX+"&zoomLevel="+zoomLevel;
+  GDownloadUrl(urlstr, function(data, responseCode){
+   if (responseCode == 200){
+    var xmlDoc = GXml.parse(data);
+    var markers = xmlDoc.documentElement.getElementsByTagName("marker");
 
-				var icon = new GIcon();
-				icon.iconSize = new GSize(24.0,38.0);
-				icon.shadowSize = new GSize(44.0,38.0);
-				icon.iconAnchor = new GPoint(12.0,38.0);
-				icon.infoWindowAnchor = new GPoint(12.0,19.0);
+    var icon = new GIcon();
+    icon.iconSize = new GSize(24.0,38.0);
+    icon.shadowSize = new GSize(44.0,38.0);
+    icon.iconAnchor = new GPoint(12.0,38.0);
+    icon.infoWindowAnchor = new GPoint(12.0,19.0);
 
-				for (i=0;i<markers.length;i++){
-					var latMarker = parseFloat(markers[i].getAttribute("lat_object"));
-					var lngMarker = parseFloat(markers[i].getAttribute("lng_object"));
-					if (markers[i].getAttribute("cluster") == 0){
-						var title = markers[i].getAttribute("title_object");
-						createMarker(latMarker,lngMarker,title,icon,false);
-					}
-					else{
-						var title = markers[i].getAttribute("nb_marker")+' items - zoom to view (click on marker)';
-						createMarker(latMarker,lngMarker,title,icon,true);
-					}
-				}
-			}
-		});
-	}
+    for (i=0;i<markers.length;i++){
+     var latMarker = parseFloat(markers[i].getAttribute("lat_object"));
+     var lngMarker = parseFloat(markers[i].getAttribute("lng_object"));
+     if (markers[i].getAttribute("cluster") == 0){
+      var title = markers[i].getAttribute("title_object");
+      createMarker(latMarker,lngMarker,title,icon,false);
+     }
+     else{
+      var title = markers[i].getAttribute("nb_marker")+' items - zoom to view (click on marker)';
+      createMarker(latMarker,lngMarker,title,icon,true);
+     }
+    }
+   }
+  });
+ }
 
-	function initialize() {
-		if (GBrowserIsCompatible()) {
-			map = new GMap2(document.getElementById('map'));
-			map.setCenter(new GLatLng(42.57691664771851, 0.402451992034912),9);
-			map.addControl(new GMapTypeControl());
-			map.removeMapType(G_HYBRID_MAP);
-			map.addMapType(G_PHYSICAL_MAP);
-			map.setMapType(G_PHYSICAL_MAP);
-			map.addControl(new GOverviewMapControl());
-			map.addControl(new GScaleControl());
-			map.addControl(new GLargeMapControl());
-			map.enableScrollWheelZoom();
-			getMarker();
+ function initialize() {
+  if (GBrowserIsCompatible()) {
+   map = new GMap2(document.getElementById('map'));
+   map.setCenter(new GLatLng(42.57691664771851, 0.402451992034912),9);
+   map.addControl(new GMapTypeControl());
+   map.removeMapType(G_HYBRID_MAP);
+   map.addMapType(G_PHYSICAL_MAP);
+   map.setMapType(G_PHYSICAL_MAP);
+   map.addControl(new GOverviewMapControl());
+   map.addControl(new GScaleControl());
+   map.addControl(new GLargeMapControl());
+   map.enableScrollWheelZoom();
+   getMarker();
 
-			var centerLat = map.getCenter().lat();
-			var centerLng = map.getCenter().lng();
-			var north = map.getBounds().getNorthEast().lat();
-			var south = map.getBounds().getSouthWest().lat();
-			var west = map.getBounds().getNorthEast().lng();
-			var east = map.getBounds().getSouthWest().lng();
+   var centerLat = map.getCenter().lat();
+   var centerLng = map.getCenter().lng();
+   var north = map.getBounds().getNorthEast().lat();
+   var south = map.getBounds().getSouthWest().lat();
+   var west = map.getBounds().getNorthEast().lng();
+   var east = map.getBounds().getSouthWest().lng();
 
-			GEvent.addListener(map, 'moveend', function() {
-				var north = map.getBounds().getNorthEast().lat();
-				var south = map.getBounds().getSouthWest().lat();
-				var west = map.getBounds().getNorthEast().lng();
-				var east = map.getBounds().getSouthWest().lng();
+   GEvent.addListener(map, 'moveend', function() {
+    var north = map.getBounds().getNorthEast().lat();
+    var south = map.getBounds().getSouthWest().lat();
+    var west = map.getBounds().getNorthEast().lng();
+    var east = map.getBounds().getSouthWest().lng();
 
-				var centerMoveLat = map.getCenter().lat();
-				var centerMoveLng = map.getCenter().lng();
+    var centerMoveLat = map.getCenter().lat();
+    var centerMoveLng = map.getCenter().lng();
 
-				var extendY = Math.abs(north - south)*extendPercent;
-				var extendX = Math.abs(west - east)*extendPercent;
+    var extendY = Math.abs(north - south)*extendPercent;
+    var extendX = Math.abs(west - east)*extendPercent;
 
-				if ((centerMoveLng > (centerLng + extendX)) || (centerMoveLng < (centerLng - extendX))){
-					centerLat = map.getCenter().lat();
-					centerLng = map.getCenter().lng();
-					north = map.getBounds().getNorthEast().lat();
-					south = map.getBounds().getSouthWest().lat();
-					west = map.getBounds().getNorthEast().lng();
-					east = map.getBounds().getSouthWest().lng();
-					getMarker();
-				}
+    if ((centerMoveLng > (centerLng + extendX)) || (centerMoveLng < (centerLng - extendX))){
+     centerLat = map.getCenter().lat();
+     centerLng = map.getCenter().lng();
+     north = map.getBounds().getNorthEast().lat();
+     south = map.getBounds().getSouthWest().lat();
+     west = map.getBounds().getNorthEast().lng();
+     east = map.getBounds().getSouthWest().lng();
+     getMarker();
+    }
 
-				if ((centerMoveLat > (centerLat + extendY)) || (centerMoveLat < (centerLat - extendY))){
-					centerLat = map.getCenter().lat();
-					centerLng = map.getCenter().lng();
-					north = map.getBounds().getNorthEast().lat();
-					south = map.getBounds().getSouthWest().lat();
-					west = map.getBounds().getNorthEast().lng();
-					east = map.getBounds().getSouthWest().lng();
-					getMarker();
-				}
-			});
+    if ((centerMoveLat > (centerLat + extendY)) || (centerMoveLat < (centerLat - extendY))){
+     centerLat = map.getCenter().lat();
+     centerLng = map.getCenter().lng();
+     north = map.getBounds().getNorthEast().lat();
+     south = map.getBounds().getSouthWest().lat();
+     west = map.getBounds().getNorthEast().lng();
+     east = map.getBounds().getSouthWest().lng();
+     getMarker();
+    }
+   });
 
-			GEvent.addListener(map, 'zoomend', function() {
-				getMarker();
-			});
-		}
-		else{
-			alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
-		}
-	}
+   GEvent.addListener(map, 'zoomend', function() {
+    getMarker();
+   });
+  }
+  else{
+   alert('Désolé, mais votre navigateur n\'est pas compatible avec Google Maps');
+  }
+ }
 
   </script>
   </head>
@@ -502,92 +501,92 @@ echo $xmlfile;
 ```php
 <?php
 
-	pg_connect("host=localhost dbname=****** user=****** password=******");
+ pg_connect("host=localhost dbname=****** user=****** password=******");
 
-	$extendPercent = 50 / 100;
+ $extendPercent = 50 / 100;
         $cluster_number = 5;
-       	$pas = 10;
+        $pas = 10;
 
-	$addExtendY = ($_GET['maxY'] - $_GET['minY']) * $extendPercent;
-	$addExtendX = ($_GET['maxX'] - $_GET['minX']) * $extendPercent;
+ $addExtendY = ($_GET['maxY'] - $_GET['minY']) * $extendPercent;
+ $addExtendX = ($_GET['maxX'] - $_GET['minX']) * $extendPercent;
 
-	($_GET['maxY'] > 0 ) ? ((($_GET['maxY'] + $addExtendY) > 90) ? $maxY = 90 : $maxY = $_GET['maxY'] + $addExtendY ) : $maxY = $_GET['maxY'] - $addExtendY ;
-	($_GET['maxX'] > 0 ) ? ((($_GET['maxX'] + $addExtendX) > 180) ? $maxX = 180 : $maxX = $_GET['maxX'] + $addExtendX ) : $maxX = $_GET['maxX'] - $addExtendX ;
-	($_GET['minY'] > 0 ) ? $minY = $_GET['minY'] - $addExtendY : ((($_GET['minY'] - $addExtendY) < -90) ? $minY = -90 : $minY = $_GET['minY'] - $addExtendY) ;
-	($_GET['minX'] > 0 ) ? $minX = $_GET['minX'] - $addExtendX : ((($_GET['minX'] - $addExtendX) < -180) ? $minX = -180 : $minX = $_GET['minX'] - $addExtendX) ;
+ ($_GET['maxY'] > 0 ) ? ((($_GET['maxY'] + $addExtendY) > 90) ? $maxY = 90 : $maxY = $_GET['maxY'] + $addExtendY ) : $maxY = $_GET['maxY'] - $addExtendY ;
+ ($_GET['maxX'] > 0 ) ? ((($_GET['maxX'] + $addExtendX) > 180) ? $maxX = 180 : $maxX = $_GET['maxX'] + $addExtendX ) : $maxX = $_GET['maxX'] - $addExtendX ;
+ ($_GET['minY'] > 0 ) ? $minY = $_GET['minY'] - $addExtendY : ((($_GET['minY'] - $addExtendY) < -90) ? $minY = -90 : $minY = $_GET['minY'] - $addExtendY) ;
+ ($_GET['minX'] > 0 ) ? $minX = $_GET['minX'] - $addExtendX : ((($_GET['minX'] - $addExtendX) < -180) ? $minX = -180 : $minX = $_GET['minX'] - $addExtendX) ;
 
-	$dom = new DomDocument('1.0', 'iso-8859-1');
-	$node = $dom->createElement("markers");
-	$parnode = $dom->appendChild($node);
+ $dom = new DomDocument('1.0', 'iso-8859-1');
+ $node = $dom->createElement("markers");
+ $parnode = $dom->appendChild($node);
 
-	$largeur = $maxX - $minX;
-	$hauteur = $maxY - $minY;
+ $largeur = $maxX - $minX;
+ $hauteur = $maxY - $minY;
 
-	$pas_largeur = $largeur / $pas;
-	$pas_hauteur = $hauteur / $pas;
+ $pas_largeur = $largeur / $pas;
+ $pas_hauteur = $hauteur / $pas;
 
-	for ($i=0;$i<$pas;$i++){
-		for ($j=0;$j<$pas;$j++){
-			$temp1 = $minY + $pas_hauteur * $i;
-			$temp2 = $minX + $pas_largeur * $j;
-			$temp3 = $minY + $pas_hauteur * ($i + 1);
-			$temp4 = $minX + $pas_largeur * ($j + 1);
-			$coord1 = strval($temp2)." ".strval($temp1);
-			$coord2 = strval($temp4)." ".strval($temp1);
-			$coord3 = strval($temp4)." ".strval($temp3);
-			$coord4 = strval($temp2)." ".strval($temp3);
+ for ($i=0;$i<$pas;$i++){
+  for ($j=0;$j<$pas;$j++){
+   $temp1 = $minY + $pas_hauteur * $i;
+   $temp2 = $minX + $pas_largeur * $j;
+   $temp3 = $minY + $pas_hauteur * ($i + 1);
+   $temp4 = $minX + $pas_largeur * ($j + 1);
+   $coord1 = strval($temp2)." ".strval($temp1);
+   $coord2 = strval($temp4)." ".strval($temp1);
+   $coord3 = strval($temp4)." ".strval($temp3);
+   $coord4 = strval($temp2)." ".strval($temp3);
 
-			$sql = "SELECT x(geom_object) as x, y(geom_object) as y, title_object FROM object WHERE ";
+   $sql = "SELECT x(geom_object) as x, y(geom_object) as y, title_object FROM object WHERE ";
                         $sql .= "Contains (GeometryFromText('POLYGON(($coord1,$coord2,$coord3,$coord4,$coord1))',4326),object.geom_object)";
 
-			$res = pg_query($sql) or die(pg_last_error());
-			$nb_object = pg_num_rows($res);
+   $res = pg_query($sql) or die(pg_last_error());
+   $nb_object = pg_num_rows($res);
 
-			if ($nb_object <> 0){
-				if ($nb_object > $cluster_number){
-					$node = $dom->createElement("marker");
-					$newnode = $parnode->appendChild($node);
+   if ($nb_object <> 0){
+    if ($nb_object > $cluster_number){
+     $node = $dom->createElement("marker");
+     $newnode = $parnode->appendChild($node);
 
-					$polygone = "POLYGON((";
-					$a = 0;
-					while ($result = pg_fetch_array($res)){
-						if ($a == 0){
-							$firstPoint = $result['x']." ".$result['y'];
-						}
-						$polygone .= $result['x']." ".$result['y'].",";
-						$a++;
-					}
-					$polygone .= $firstPoint;
-					$polygone .= "))";
+     $polygone = "POLYGON((";
+     $a = 0;
+     while ($result = pg_fetch_array($res)){
+      if ($a == 0){
+       $firstPoint = $result['x']." ".$result['y'];
+      }
+      $polygone .= $result['x']." ".$result['y'].",";
+      $a++;
+     }
+     $polygone .= $firstPoint;
+     $polygone .= "))";
 
-					$sql2 = "select x(Centroid(GeometryFromText('".$polygone."',4326))) as x, y(Centroid(GeometryFromText('".$polygone."',4326))) as y";
-					$res2 = pg_query($sql2) or die(pg_last_error());
-					$result2 = pg_fetch_array($res2);
+     $sql2 = "select x(Centroid(GeometryFromText('".$polygone."',4326))) as x, y(Centroid(GeometryFromText('".$polygone."',4326))) as y";
+     $res2 = pg_query($sql2) or die(pg_last_error());
+     $result2 = pg_fetch_array($res2);
 
-					$lat = $result2['y'];
-					$lng = $result2['x'];
+     $lat = $result2['y'];
+     $lng = $result2['x'];
 
-					$newnode->setAttribute("lat_object", $lat);
-					$newnode->setAttribute("lng_object", $lng);
-					$newnode->setAttribute("nb_marker", $nb_object);
-					$newnode->setAttribute("cluster", 1);
-				}
-				else{
-					while($result = pg_fetch_array($res)){
-						$node = $dom->createElement("marker");
-						$newnode = $parnode->appendChild($node);
-						$newnode->setAttribute("lat_object", $result['y']);
-						$newnode->setAttribute("lng_object", $result['x']);
-						$newnode->setAttribute("title_object", stripslashes($result['title_object']));
-						$newnode->setAttribute("cluster", 0);
-					}
-				}
-			}
-		}
-	}
+     $newnode->setAttribute("lat_object", $lat);
+     $newnode->setAttribute("lng_object", $lng);
+     $newnode->setAttribute("nb_marker", $nb_object);
+     $newnode->setAttribute("cluster", 1);
+    }
+    else{
+     while($result = pg_fetch_array($res)){
+      $node = $dom->createElement("marker");
+      $newnode = $parnode->appendChild($node);
+      $newnode->setAttribute("lat_object", $result['y']);
+      $newnode->setAttribute("lng_object", $result['x']);
+      $newnode->setAttribute("title_object", stripslashes($result['title_object']));
+      $newnode->setAttribute("cluster", 0);
+     }
+    }
+   }
+  }
+ }
 
-	$xmlfile = $dom->saveXML();
-	echo $xmlfile;
+ $xmlfile = $dom->saveXML();
+ echo $xmlfile;
 ?>
 ```
 

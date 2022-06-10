@@ -103,19 +103,19 @@ from django.db import models
 from django.contrib.gis.db import models
 
 class GeoModel(models.Model):
-	fips = models.CharField(max_length=2)
-	iso2 = models.CharField(max_length=2)
-	iso3 = models.CharField(max_length=3)
-	un = models.IntegerField()
-	name = models.CharField(max_length=50)
-	area = models.IntegerField()
-	pop2005 = models.IntegerField()
-	region = models.IntegerField()
-	subregion = models.IntegerField()
-	lon = models.FloatField()
-	lat = models.FloatField()
-	geom = models.MultiPolygonField(srid=4326)
-	objects = models.GeoManager()
+ fips = models.CharField(max_length=2)
+ iso2 = models.CharField(max_length=2)
+ iso3 = models.CharField(max_length=3)
+ un = models.IntegerField()
+ name = models.CharField(max_length=50)
+ area = models.IntegerField()
+ pop2005 = models.IntegerField()
+ region = models.IntegerField()
+ subregion = models.IntegerField()
+ lon = models.FloatField()
+ lat = models.FloatField()
+ geom = models.MultiPolygonField(srid=4326)
+ objects = models.GeoManager()
 ```
 
 Lançons maintenant la commande `sqlall` puis `syncdb` du fichier `manage.py`. La première vous permettra de consulter le code SQL qui sera généré tandis que la seconde va créer concrètement les champs dans la base.
@@ -143,7 +143,7 @@ CREATE INDEX "geoData_geomodel_geom_id" ON "geoData_geomodel" USING GIST ( "geom
 COMMIT;
 ```
 
-```
+```sh
 Creating table geoData_geomodel
 Installing custom SQL for geoData.GeoModel model
 ```
@@ -189,7 +189,7 @@ def run(verbose=True):
 
 Nous retrouvons ci-dessus le dictionnaire de données que nous avons généré précédemment. Il ne reste plus ensuite qu'à instancier la classe [LayerMapping](http://geodjango.org/docs/layermapping.html) et sa méthode `save()`. Revenons à notre console shell et appelons notre fichier `load.py` :
 
-```
+```sh
 $ python manage.py shell
 >>> from world import load
 >>> load.run()

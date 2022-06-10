@@ -65,13 +65,13 @@ Retrouvez également cet [article](http://www.portailsig.org/index.php?id=1176) 
 
 ## Source
 
-- Bédard, Y., Proulx, M.J., Rivest S., (2005) Enrichissement du OLAP pour l'analyse géographique: exemples de réalisations et différentes possibilités technologiques
-- Bédard, Y., Merrett, T., Han, J. (2001) Fundamentals of spatial data warehousing for geographic knowledge discovery. In H. Miller & J. Han (Eds.), Geographic Data Mining and Knowledge Discovery. London: Taylor & Francis
-- Lambert, M. (2006) Développement d’une approche pour l'analyse SOLAP en temps réel: adaptation aux besoins des activités sportives en plein air
-- Laurent, A. et all (2002) Entrepôt de données et OLAP : un aperçu orienté recherche – Groupe de travail GaFOLAP – Action spécifique GaFoDonnées
-- McHugh, R., Roche, S., Bédard , Y. (2007) Vers une solution SOLAP comme outil participatif
-- Pornon, H., (2007) Revue Geomatique expert – Bilan et perspectives de 20 années de Géomatique. Vers des SIG plus collaboratifs, La Géo-collaboration.
-- Rageul, N,. (2007) Vers une optimisation du processus d'analyse en ligne de données 3D : Cas des fouilles archéologiques
+* Bédard, Y., Proulx, M.J., Rivest S., (2005) Enrichissement du OLAP pour l'analyse géographique: exemples de réalisations et différentes possibilités technologiques
+* Bédard, Y., Merrett, T., Han, J. (2001) Fundamentals of spatial data warehousing for geographic knowledge discovery. In H. Miller & J. Han (Eds.), Geographic Data Mining and Knowledge Discovery. London: Taylor & Francis
+* Lambert, M. (2006) Développement d’une approche pour l'analyse SOLAP en temps réel: adaptation aux besoins des activités sportives en plein air
+* Laurent, A. et all (2002) Entrepôt de données et OLAP : un aperçu orienté recherche – Groupe de travail GaFOLAP – Action spécifique GaFoDonnées
+* McHugh, R., Roche, S., Bédard , Y. (2007) Vers une solution SOLAP comme outil participatif
+* Pornon, H., (2007) Revue Geomatique expert – Bilan et perspectives de 20 années de Géomatique. Vers des SIG plus collaboratifs, La Géo-collaboration.
+* Rageul, N,. (2007) Vers une optimisation du processus d'analyse en ligne de données 3D : Cas des fouilles archéologiques
 
 ----
 

@@ -49,14 +49,14 @@ L'objet ViewPort, que nous utilisons dans l'exemple ci-dessous, à la particular
 ```javascript
 Ext.onReady(function() {  
     // [1] - layer
-	var bluemarble = new OpenLayers.Layer.WMS(
-		"bluemarble"
-		,"http://sigma.openplans.org/geoserver/wms?"
-		,{layers: 'bluemarble'}
-	);
+ var bluemarble = new OpenLayers.Layer.WMS(
+  "bluemarble"
+  ,"http://sigma.openplans.org/geoserver/wms?"
+  ,{layers: 'bluemarble'}
+ );
 
     // [2] - MapPanel
-	var mapUI = new GeoExt.MapPanel({
+ var mapUI = new GeoExt.MapPanel({
         map: {
             controls: [new OpenLayers.Control.Navigation()]
         }
@@ -67,7 +67,7 @@ Ext.onReady(function() {
     });
 
      // [3] - Data Panel
-	var dataPanel = new Ext.Panel({  
+ var dataPanel = new Ext.Panel({  
         region : 'west'
         ,layout : 'fit'
         ,width : 150  
@@ -81,11 +81,10 @@ Ext.onReady(function() {
             ,dataPanel
         ]
     });  
-});	//EOF Ext.onReady
+}); //EOF Ext.onReady
 ```
 
 Il est déjà facile de voir l'un des avantages de GeoExt, le prototypage rapide d'interface. En effet, en quelques lignes de code nous avons dors et déjà une application fonctionnelle qui pourra servir ensuite de base à une réflexion plus approfondie.
-
 
 ## Enrichir l'interface
 
@@ -138,12 +137,10 @@ La création initiale de l'arbre de couches se fait via l'objet Ext [TreeNode](h
 
 Étudions en détails l'[exemple](/applications/tutoriaux/GeoExt/tutoriel/tree_layer.html) de création de notre arbre de couches :
 
-
 * [1] - Création de la racine de l'arbre (la base).
 * [2] - Ajout des couches de base.
 * [3] - Ajout des couches Overlay.
 * [4] - Création du panel contenant notre arbre de couche.
-
 
 ```javascript
 //[1] - Tree Layer

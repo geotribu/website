@@ -80,7 +80,6 @@ Il suffit de créer un GeoPoint qui est caractérisé par une latitude et une lo
 
 ## Dois-je prendre la route ?
 
-
 Pour finir ce tutoriel, on peut ajouter une couche de trafic routier par exemple.
 
 ```javascript

@@ -36,7 +36,7 @@ Une fois l'installation faite vous devriez être en mesure d'appeler directement
 
 L'interpréteur python devrait alors se lancer. Il ne nous reste plus qu'à appeler les classes :
 
-```
+```python
 Python 2.4.4 (#2, Oct 22 2008, 19:52:44)  
 [GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2  
 Type "help", "copyright", "credits" or "license" for more information.  
@@ -46,7 +46,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 :warning: L'appel des packages pour la nouvelle version se fait dorénavant avec le préfixe osgeo. Dans les versions antérieures, la notation était de ce type :
 
-```
+```python
 >>> import gdal  
 >>> import ogr
 ```
@@ -67,7 +67,7 @@ Source : [PyGis](http://www.pygis.de/index.php/GDAL)
 
 Passons maintenant au code :
 
-```
+```python
 >>> import ogr  
 >>> driver = ogr.GetDriverByName("ESRI Shapefile")  
 >>> datasource = driver.Open("Documents/gis_data/Port_mondiaux/WPI.shp")  
@@ -86,7 +86,7 @@ La méthodes `dir()` et utilisé en exemple, elle fait partie des classes native
 
 Nous pouvons maintenant accéder aux propriétés de notre fichier ShapeFile. Nous allons ci-dessous afficher successivement le nom du fichier, ainsi que l'extent et le nombre de données :
 
-```
+```python
 >>> print layer.GetName()  
 WPI  
 >>> print layer.GetExtent()  
@@ -99,8 +99,7 @@ WPI
 
 Pour avoir plus d'informations sur notre couche nous allons utiliser la méthode [GetLayerDefn()](http://www.gdal.org/ogr/classOGRLayer.html#80473bcfd11341e70dd35bebe94026cf). Ensuite, pour connaitre le nom des champs, nous utiliserons la méthode [GetFieldDefn()](http://www.gdal.org/ogr/classOGRFeatureDefn.html#43b95ce699bbca73acb453cc959378e7). Celle-ci retourne le champs dont l'index est passé en argument. Au moyen d'une simple boucle, nous allons afficher le nom des 10 premiers champs :
 
-
-```
+```python
 >>> layerDef= layer.GetLayerDefn()  
 >>> i=0  
 >>> while i < 10 :  
@@ -123,7 +122,7 @@ Pour avoir plus d'informations sur notre couche nous allons utiliser la méthode
 
 Maintenant que nous avons accédé à la couche et aux champs, il ne nous reste plus qu'a consulter les données contenues. Pour cela nous utiliserons la méthode `GetFeature()` qui créé un pointeur vers l'objet géographique spécifié en index. Affichons le nom des dix premiers ports :
 
-```
+```python
 >>> for i in range(10) :  
 ... print layer.GetFeature(i).GetFieldAsString("MAIN_PORT_")  
 ...  

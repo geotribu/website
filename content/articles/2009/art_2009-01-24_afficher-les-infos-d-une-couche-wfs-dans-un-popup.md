@@ -26,7 +26,6 @@ L'API d'OpenLayers permet d'afficher une couche WFS ainsi que les données attri
 
 L'affichage d'une couche [WFS depuis OpenLayers](http://dev.openlayers.org/releases/OpenLayers-2.7/doc/apidocs/files/OpenLayers/Layer/WFS-js.html "API OpenLayers WFS") se fait comme n'importe qu'elle autre couche à ceci prêt que nous allons, pour les besoins de ce tutoriel, spécifier un attribut supplémentaire qu'est `extractAttributes`. Celui-ci est optionnel mais il permet de parser le flux WFS afin d'extraire les données attributaires. A noter que cela ralentit le traitement cartographique.
 
-
 ```javascript
 var africaWFS = new OpenLayers.Layer.WFS(
    "Africa WFS",
@@ -38,29 +37,29 @@ var africaWFS = new OpenLayers.Layer.WFS(
 
 Bien entendu il est nécessaire que votre moteur cartographique soit configuré pour envoyer des données attributaires. Dans le cas de MapServer n'oubliez pas de définir pour vos couches les paramètres `DUMP` et `gml_include_items` (voir [MapServer WFS](http://mapserver.org/ogc/wfs_server.html "MapServer WFS"))
 
-```
+```conf
 LAYER
-	NAME Africa
-	STATUS ON
-	METADATA
-		### WMS
-		"wms_title"    "Africa"
-		### WFS
-		"wfs_title"    "Africa"
-    		"gml_featureid" "NAME"
-    		"gml_include_items" "all"
-	END
-	PROJECTION
-		"init=epsg:4326"
-	END
-	DUMP TRUE
-	TYPE POLYGON
-	STATUS ON
-	DATA africa
-	CLASS
-		COLOR 217 217 217
-		OUTLINECOLOR 0 0 0
-	END
+ NAME Africa
+ STATUS ON
+ METADATA
+  ### WMS
+  "wms_title"    "Africa"
+  ### WFS
+  "wfs_title"    "Africa"
+      "gml_featureid" "NAME"
+      "gml_include_items" "all"
+ END
+ PROJECTION
+  "init=epsg:4326"
+ END
+ DUMP TRUE
+ TYPE POLYGON
+ STATUS ON
+ DATA africa
+ CLASS
+  COLOR 217 217 217
+  OUTLINECOLOR 0 0 0
+ END
 ```
 
 ## Extraire les données attributaires

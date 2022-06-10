@@ -25,8 +25,8 @@ tags:
 Pour implémenter la liste déroulante, vous avez juste à télécharger ce fichier [ComboBoxWMS](http://ks356007.kimsufi.com/arno/lib/js/geoext/geoext/lib/GeoExt/form/ComboBoxWMS.js) ([ou sa version packagée](http://ks356007.kimsufi.com/arno/lib/js/geoext/geoext/lib/GeoExt/form/ComboBoxWMS_minify.js)). Il vous faut ensuite déclarer ce script ainsi que les autres librairies (GeoExt, Ext, openLayers) de la manière suivante :
 
 ```html
-<link rel="stylesheet" type="text/css"	href="pathTo/ext-all.css" />
-<script type="text/javascript"	src="pathTo/ext/ext-base.js"></script>
+<link rel="stylesheet" type="text/css" href="pathTo/ext-all.css" />
+<script type="text/javascript" src="pathTo/ext/ext-base.js"></script>
 <script type="text/javascript" src="pathTo/ext-all.js"></script>
 <!-- Lib OL 2.8 -->
 <script src="pathTo/OpenLayers.js" type="text/javascript"></script>
@@ -40,18 +40,18 @@ Ensuite créez une page qui sera chargé au démarrage et ajoutez l'objet ComboB
 ```javascript
 ProxyHost = "/cgi-bin/proxy.cgi?url=";
 combo = new GeoExt.form.ComboBoxWMS({
-	renderTo : 'formCombo',
-	WMSurl : 'http://labs.metacarta.com/wms/vmap0',
-	layerFilter : 'pop',
-	triggerAction : 'all',
+ renderTo : 'formCombo',
+ WMSurl : 'http://labs.metacarta.com/wms/vmap0',
+ layerFilter : 'pop',
+ triggerAction : 'all',
         ProxyHost : "/cgi-bin/proxy.cgi?url=",
-	listeners: {
+ listeners: {
             select: function(combo, record, index) {  
-        	var layers = record.data.name;
-        	layers = new OpenLayers.Layer.WMS(layers, this.WMSurl,
-    	    		    {layers: layers, transparent:true},
+         var layers = record.data.name;
+         layers = new OpenLayers.Layer.WMS(layers, this.WMSurl,
+               {layers: layers, transparent:true},
                             {buffer: 0, isBaseLayer:false});
-		map.addLayer(layers);
+  map.addLayer(layers);
             }//EOF select
         }//EOF listeners
 });//EOF combo

@@ -33,7 +33,6 @@ L'appel à l'API se fait maintenant sans avoir besoin de clé - quel est le deve
 
 Ici nous ne travaillerons pas à le 'sensor' de l'utilisateur.  
 
-
 ## Construction de l'objet 'map'
 
 Une des nouveautés de cette API est le fait qu'il faille initialiser les paramètres de position et de zoom du centre, et les paramètres de type de couche avant de construire l'objet carte, dans un souci de performance, ces options seront des objets 'non construits' et donc littéraux :  
