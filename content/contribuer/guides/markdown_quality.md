@@ -56,7 +56,7 @@ S'il est techniquement possible d'utiliser différents caractères, il est préf
 
 Dans cet exemple, des astérisques (`*`) ont été utilisés après que des tirets (`-`) l'aient déjà été pour le même niveau de puces.
 
-![erreur style puces](https://user-images.githubusercontent.com/1596222/92222985-186a0200-eea0-11ea-9887-21fdbce10080.png "Signalement de l'erreur dans Visual Studio Code"){: .img-center loading=lazy }
+![erreur style puces](https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_error_list_style_lizmap..png "Signalement de l'erreur dans Visual Studio Code"){: .img-center loading=lazy }
 
 > Référence : [MD004 - Unordered list style](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
 
