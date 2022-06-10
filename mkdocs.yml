@@ -114,6 +114,7 @@ plugins:
         - twemoji.maxcdn.com/*
         - user-images.githubusercontent.com/**/*.gif
         - github.com/**/*.gif
+        - ks356007.kimsufi.com/*
         # to remove later:
         - dev.openstreetmap.org/*
         - www.portailsig.org/assets/images/*
