@@ -33,7 +33,7 @@ Ensuite décompressez-la dans un répertoire accessible via un serveur web. Cela
 
 Vous devrez maintenant autoriser l'exécution de CGI pour le répertoire dans lequel tileCache est installé. Pour cela, éditez le fichier de configuration d'Apache (httpd.conf) et rajoutez-y les lignes suivantes :
 
-```
+```conf
 AddHandler cgi-script .cgi  
 Options +ExecCGI
 ```
@@ -60,19 +60,19 @@ ol_map.addLayer(wms_sigma);
 
 Passons maintenant à l'optimisation. Les lignes qui suivront permettront d'améliorer sensiblement les performances de tileCache.
 
-* **tileCache avec apache en mode mod_python**
+### tileCache avec apache en mode mod_python
 
 TileCache est écrit en python, néanmoins le fonctionnement par défaut se fait en mode CGI. Cela entraine pour Apache, à chaque requête, un chargement de l'exécutable python afin de traiter le fichier tilecache.cgi. Il est plus intéressant de charger directement le mode python dans apache.
 
 Différentes étapes sont nécessaires. Tout d'abord activer, dans la liste des modules, le mod_python (LoadModule python_module modules/mod_python.so). Une fois votre serveur Web redémarré (httpd restart) l'extension python sera alors directement chargée en mémoire. Si votre version d'apache ne propose pas par défaut le mode python celui-ci est téléchargeable [ici](http://httpd.apache.org/modules/python-download.cgi "Téléchargement apache mod_python") ou bien pour les linuxiens directement depuis votre gestionnaire de packages (apache-mod_python).
 
-Pour cette seconde étape je n'ai trouvé aucune documentation s'y rapportant. Toutes remarques sont les bienvenues. En effet, pour réussir (de mon côté) à activer le mode python j'ai du auparavant compiler le script python ce qui a permis d'initialiser le service TileCache/Service.py. Pour cela taper la commande suivante (dans un shell):
+Pour cette seconde étape je n'ai trouvé aucune documentation s'y rapportant. Toutes remarques sont les bienvenues. En effet, pour réussir (de mon côté) à activer le mode python j'ai du auparavant compiler le script python ce qui a permis d'initialiser le service `TileCache/Service.py`. Pour cela taper la commande suivante (dans un shell) :
 
 `pathToTileCache>py setup.py install`
 
 Tout comme nous l'avons fait pour notre script cgi, il va falloir autoriser l'exécution par Apache de script python dans notre répertoire tileCache. Pour cela il faut ajouter dans httpd.conf les lignes suivantes :
 
-```
+```conf
 AddHandler python-program .py  
 PythonHandler TileCache.Service  
 PythonOption TileCacheConfig /var/www/html/tilecache/tilecache.cfg
@@ -106,89 +106,90 @@ Bien que simple, le fichier tilecache.cfg respecte une architecture précise.
 
 Tout d'abord, vous devez prendre soin de bien séparer vos blocs de configuration. Ces derniers sont reconnaissables aux deux crochets qui les encadrent ex : [cache]. Chaque couche (ou groupe de couche) devra également être noté de la même manière ex : [macouche1], [monGroupeDeCouche]... Si vous faites l'essai avec une configuration valide vous verrez que tileCache utilise ce nom entre crochet pour créer un dossier du même nom dans le répertoire, définit dans [cache]. C'est dans ce dossier que seront entreposées toutes les tuiles.
 
-**A noté que pour changer le dossier de destination des couches, il vous suffit de modifier le chemin spécifié dans [cache]**
+!!! note
+  A noter que pour changer le dossier de destination des couches, il vous suffit de modifier le chemin spécifié dans [cache].
 
 ### Option de configuration des couches
 
 Il est important de comprendre que dans un même bloc il peut être défini une ou plusieurs couches. Vous pouvez par exemple choisir de les regrouper par thématique. Les options de configuration pour un bloc de couches sont les suivantes :
 
-**bbox**  
+#### bbox
 
 L'extension géographique de la couche. La tableau contenant la liste des résolution par défaut est égal à l'extension de la couche divisée par 512(deux tuiles standards)
 
-**debug**  
+#### debug  
 
 Active ou non l'enregistrement des erreurs dans le fichier error.log (par défaut yes)
 
-**description**  
+#### description
 
 Description de la couche. Par défaut la valeur est nulle.
 
-**extension**  
+#### extension
 
 Format (extension) de l'image générée. Paramètre utilisé lors de l'appel vers les serveurs WMS ainsi que lors de la sauvegarde des images générées.
 
-**layers**  
+#### layers
 
 Chaine de caractère (string) où sont définies la ou les couches à afficher. C'est ce paramètre qui est utilisé lors des appels WMS.
 
-**levels**  
+#### levels
 
 Nombre de niveaux de zoom. Si le paramètre résolution est également défini alors celui-ci est prioritaire.
 
-**mapfile**  
+#### mapfile
 
 Chemin (absolu) ou est le mapFile. Obligatoire pour les couches de type MapServer et Mapnik.
 
-**maxResolution**  
+#### maxResolution
 
 Résolution maximale. Si celle-ci est définie, un tableau de résolutions intermédiaires est automatiquement calculé en se basant sur le nombre de "levels" défini.
 
-**metaTile**  
+#### metaTile
 
 Ce paramètre permet d'améliorer la qualité des images générées. En effet, par cette méthode, lors de l'appel une seule tuile est demandée. Celle-ci est ensuite découpée grâce à la librairie [Python Imaging](http://www.pythonware.com/products/pil/ "Site internet Python Imaging"). Les valeurs possibles sont yes ou no. Attention en cas d'utilisation de ce paramètre l'installation de la librairie Python Imaging est obligatoire.
 
-**metaBuffer**  
+#### metaBuffer
 
 Nombre de pixels supplémentaires qui seront ajoutés lors de la création de la tuile. Par défaut sa valeur est 10.
 
-**metaSize**  
+#### metaSize
 
 Ce paramètre définit combien de (sous)tuiles seront générées lorsque le mode metaTile est activé. La notation se fait de la manière suivante integer,integer. Par défaut les valeurs sont 5,5.
 
-**resolutions**  
+#### resolutions
 
 Liste de résolutions séparées par une virgule.
 
-**size**  
+#### size
 
 Définit la taille des tuiles à générer. La notation se fait de la manière suivante integer,integer. Par défaut les valeurs sont 256,256.
 
-**srs**  
+#### srs
 
 Chaine de caractère (string) définissant la projection utilisée. La valeur par défaut est : "EPSG:4326".
 
-**type**  
+#### type
 
 Type de couche qui sera utilisé. Les options sont : WMSLayer, MapnikLayer, MapServerLayer,ImageLayer
 
-**url**  
+#### url
 
 URL à utiliser quand la requête porte sur un serveur WMS (type WMSLayer). Ce paramètre est obligatoire lorsque la requête est de type WMS.
 
-**watermarkImage**  
+#### watermarkImage
 
 Ce paramètre permet, lors de la création des tuiles, d'ajouter une image définie. Cela pourrait être par exemple une image en philigrame comme le fait [GoogleMap](http://maps.google.fr/maps "Site internet GoogleMap") ou le [GéoPortail](http://www.geoportail.fr/). Ce paramètre prend en attribut le chemin où est entreposée votre image. Il est recommandé d'utiliser une image de la même taille (size) que les tuiles. Si vous n'avez défini aucun paramètre de taille la valeur par défaut est 256x256. A noter qu'il n'est pas possible d'utiliser des [images entrelacées](http://fr.wikipedia.org/wiki/Entrelacement "Définition image entrelacée") (interlaced).
 
-**watermarkOpacity**  
+#### watermarkOpacity
 
 Le paramètre watermarkOpacity définit l'opacité à appliquer à l'image qui sera ajoutée. La valeur (flottant) varie entre 0 et 1.
 
-**extent_type**  
+#### extent_type
 
 En définissant ce paramètre comme "loose" vous autoriserez TileCache a générer des images en dehors de l'extension géographique préalablement définie (bounding box). Ce paramètre peut être utile pour les personnes ne sachant pas à quelle extension il sera nécessaire d'arrêter la génération des tuiles.
 
-**tms_type**  
+#### tms_type
 
 En définissant ce paramètre comme "google" cela intervertira la verticalité (pour utiliser le modèle x/y spécifique de google)
 
@@ -196,7 +197,7 @@ En définissant ce paramètre comme "google" cela intervertira la verticalité (
 
 Comme nous l'avons vu précédemment pour ajouter une nouvelle couche, il suffit de déclarer un bloc entre crochets avec à l'intérieur le nom de la couche. Une déclaration classique utilisant MapServer comme serveur WMS serait la suivante.
 
-```
+```ini
 [myOwnLayer]  
 type=WMSLayer  
 url=http://localhost/cgi-bin/mapserv?map=/var/www/html/mapserver/monFichierMap.map  

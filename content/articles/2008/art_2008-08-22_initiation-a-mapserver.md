@@ -45,7 +45,7 @@ Notre fichier map sera composé de quatre blocs principaux. Chacun d'entre eux o
 
 Le premier bloc va définir le MapFile d'une manière générale, un peu comme l'en-tête d'un fichier HTML. La balise MAP en haut du MapFile indique le début du fichier. Ensuite vient le nom du fichier, la taille de l'image qui va être générée, l'étendue géographique des données, l'unité utilisée et enfin le répertoire ou sont situées les données.
 
-```
+```conf
 MAP
 NAME "tutorial"
 SIZE 1000 500
@@ -57,7 +57,7 @@ SHAPEPATH "C:/ms4w/apps/cartoweb3/htdocs/phpMapScript/data"
 
 Ensuite vient le bloc Web, c'est lui qui va gérer où vont être entreposées les images générées par MapServer. Nous ne le verrons pas ici, mais c'est dans ce bloc qu'il va être possible de rajouter des éléments permettant d'enrichir l'interface générale de la page. Cela se passe grâce aux balises header et footer.
 
-```
+```conf
 WEB
    IMAGEPATH "C:/ms4w/apps/cartoweb3/htdocs/phpMapScript/tmp"
    IMAGEURL "tmp/"
@@ -66,7 +66,7 @@ END
 
 Maitenant nous allons spécifier à MapServer le type de fichier attendu en sortie. Dans notre cas cela sera une image de type png, il est bien sûr possible de définir d'autre type (jpg, gif etc.).
 
-```
+```conf
   OUTPUTFORMAT
   NAME png
   DRIVER "GD/PNG"
@@ -78,7 +78,7 @@ END
 
 Pour finir nous allons maintenant lister les données à utiliser. Cela se passe grâce au bloc Layer. Il sera nécessaire de créer un bloc par données. A l'intérieur de ce bloc, il existe d'autres sous blocs tel que class, style, metadata etc.
 
-```
+```conf
 LAYER
   NAME Admin_Indonesie
   STATUS ON

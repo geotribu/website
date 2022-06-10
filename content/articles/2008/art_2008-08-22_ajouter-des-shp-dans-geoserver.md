@@ -38,13 +38,13 @@ Voici les grandes étapes qui composent ce tutorial. Elles seront ensuite expliq
 
 Dans un premier temps vous allez devoir copier vos donné dans le répertoire /data_dir/data/ du répertoire d'installation de GeoServer. Vous pouvez, si vous le souhaitez, changer le chemin par défaut des data.
 
-**Windows**
+### Windows
 
 Ordinateur->Propriété->Paramètres Systèmes Avancés->Variables d'environnement
 
 Ajoutez ou modifiez la variable `GEOSERVER_DATA_DIR` pour qu'elle pointe vers votre entrepôt de donné
 
-**Linux**
+### Linux
 
 Pour un changement temporaire il faut exporter la variable d'environnement DATA DIR : (dans un shell) `export GEOSERVER_DATA_DIR=/home/path_to_myData/`
 

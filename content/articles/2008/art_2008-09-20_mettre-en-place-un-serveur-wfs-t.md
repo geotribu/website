@@ -50,7 +50,7 @@ Ensuite décompressez-la dans un répertoire accessible via un serveur web. Cela
 
 Vous devrez maintenant autoriser l'exécution de CGI pour le répertoire dans lequel FeatureServer est installé. Pour cela, éditez le fichier de configuration d'Apache (httpd.conf) et rajoutez-y les lignes suivantes :
 
-```
+```conf
 AddHandler cgi-script .cgi  
 Options +ExecCGI
 ```
@@ -145,7 +145,7 @@ C'est le format de stockage par défaut. Si vous avez réussi à configurer corr
 
 Les arguments nécessaires sont :
 
-```
+```ini
 [DBM]  
 type=DBM  
 file=/tmp/featureserver.scribble  
@@ -158,7 +158,7 @@ gaping_security_hole=yes
 
 Permet d'accéder à n'importe quel type de données géré par la librairie OGR (nécessite bien sûr de disposer de la librairie OGR)
 
-```
+```ini
 [myshape]  
 type=OGR  
 dsn=/home/example/myshape.shp  
@@ -172,7 +172,7 @@ layer=myshape
 
 Vous pouvez accéder aux données d'OpenStreetMap directement depuis featureServer.
 
-```
+```ini
 [osm]  
 type=OSM  
 osmxapi=no
@@ -194,17 +194,7 @@ Le protocole WFS permet depuis l'URL d'ajouter certains paramètres qui permettr
 - `queryable` => liste des colonnes attributaires de la couche pouvant être interrogée (Peut êre également défini dans le fichier de configuration)
 - `key` => Nom des attributs sur lequel portera la requête (seuls les attributs dont le numéro est défini dans le paramètre queryable seront interrogeables)
 
-Un exemple d'URL utilisant des filtres serait la suivante :
-
-```
-http://myfeatureserver.com/featureserver.cgi/mylayer/all?  
-maxfeatures=25  
-&bbox=-124.1,47.2,-123.9,47.5  
-&queryable=category,species  
-&category=fun  
-&species=mongoose  
-&color=brown
-```
+Un exemple d'URL utilisant des filtres serait la suivante : `http://myfeatureserver.com/featureserver.cgi/mylayer/all?maxfeatures=25&bbox=-124.1,47.2,-123.9,47.5&queryable=category,species&category=fun&species=mongoose&color=brown`
 
 ## Conclusion
 
