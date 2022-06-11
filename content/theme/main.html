@@ -106,7 +106,9 @@
           "url": "{{ config.site_url }}"
         },
       {% elif author is iterable and (author is not string and author is not mapping) %}
-          "author": [
+        {% if author | length > 1 %}
+        {# multiple authors #}
+        "author": [
         {% for a in author %}
             {% if a != config.site_author %}
               {% set author_split = a.split(' ', 1) %}
@@ -117,7 +119,17 @@
               },
             {% endif %}
         {% endfor %}
-        ],
+        ],        
+        {% else %}
+         {# single author #}
+          {% set author_split = a.split(' ', 1) %}
+
+          "author": {
+            "@type": "Person",
+            "name": "{{ author[0] }}"
+            "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
+          },
+        {% endif %}
       {% else %}
       {# GeoRDP #}
         "author": {
