@@ -15,13 +15,15 @@ tags:
 
 :calendar: Date de publication initiale : 01 juin 2011
 
-![these.png](https://cdn.geotribu.fr/img/logos-icones/divers/these.png)La recherche vous intéresse, vous aimez les SIG et la géovisualisation alors n'hésitez pas, postulez pour l'offre de thèse portant sur la "Contribution de la géovisualisation à la surveillance maritime".
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
 
-**Laboratoire d’accueil**
+La recherche vous intéresse, vous aimez les SIG et la géovisualisation alors n'hésitez pas, postulez pour l'offre de thèse portant sur la "Contribution de la géovisualisation à la surveillance maritime".
+
+## Laboratoire d’accueil
 
 L'organisme d’accueil est le Centre de recherche sur les Risques et les Crises de Mines ParisTech. Celui-ci a pour mission de contribuer à la formalisation et à l’unification des savoirs dans le domaine de la prévention des risques et de la gestion des crises. Il conduit des recherches en étroit partenariat avec des industriels, les pouvoirs publics et l’Union Européenne. Il rassemble une expertise scientifique multidisciplinaire : sciences pour l’ingénieur, gestion, géographie, droit, informatique ...
 
-**Présentation du sujet de thèse**
+## Présentation du sujet de thèse
 
 Dans le cadre de son activité de Recherche, le CRC se propose d’évaluer l’apport de la composante géomatique et en particulier de la géovisualisation, aux systèmes de surveillance en temps réel de l’espace maritime et de situations de navires.
 
@@ -33,16 +35,17 @@ L’objet de cette thèse est d’améliorer la façon de visualiser les donnée
 
 Cet objet sera atteint principalement par la concrétisation de deux objectifs spécifiques.
 
-2. Approfondir les connaissances en géovisualisation pour l’aide à la surveillance maritime. La géovisualisation compte maintenant une communauté scientifique nombreuse et multidisciplinaire. Plusieurs réalisations et méthodes ont été mises en place durant la dernière décennie.
-4. Concevoir une méthode de visualisation géographique des données respectant la philosophie d’exploration interactive des données. Le changement de stratégie de visualisation implique d’enrichir le lien entre la base de données et la visualisation. Une méthode de communication entre les deux composantes devra être élaborée. Cette recherche vise en premier lieu à mieux définir la place et l’impact de la visualisation géographique dans un contexte de surveillance maritime. Il en résultera la mise en place de la nouvelle stratégie et la proposition d’une solution théorique pour la visualisation géographique des données dans un environnement d’aide à la surveillance maritime.
-**Profil de candidature**
+1. Approfondir les connaissances en géovisualisation pour l’aide à la surveillance maritime. La géovisualisation compte maintenant une communauté scientifique nombreuse et multidisciplinaire. Plusieurs réalisations et méthodes ont été mises en place durant la dernière décennie.
+2. Concevoir une méthode de visualisation géographique des données respectant la philosophie d’exploration interactive des données. Le changement de stratégie de visualisation implique d’enrichir le lien entre la base de données et la visualisation. Une méthode de communication entre les deux composantes devra être élaborée. Cette recherche vise en premier lieu à mieux définir la place et l’impact de la visualisation géographique dans un contexte de surveillance maritime. Il en résultera la mise en place de la nouvelle stratégie et la proposition d’une solution théorique pour la visualisation géographique des données dans un environnement d’aide à la surveillance maritime.
+
+## Profil de candidature
 
 Etudiant titulaire d’un MASTER 2 ou équivalent maitrisant les sciences géomatiques et l’informatique.  
 Un profil largement pluridisciplinaire est recherché.  
 Maîtrise de l’anglais.  
 Date limite de soumission des candidatures : 30/06/2011.
 
-**Contact**
+## Contact
 
 Aldo NAPOLI, chargé de recherche au CRC de Mines ParisTech  
 [aldo.napoli@mines-paristech.fr](mailto:aldo.napoli@mines-paristech.fr)
