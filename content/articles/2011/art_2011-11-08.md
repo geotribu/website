@@ -15,9 +15,11 @@ tags:
 
 :calendar: Date de publication initiale : 08 novembre 2011
 
-![FOSS4G-2011-Conference-Website_small.png](http://www.geotribu.net/sites/default/files/Tuto/img/Blog/divers/FOSS4G-2011-Conference-Website_small.png)Depuis peu, [les vidéos du FOSS4G 2011](http://www.fosslc.org/drupal/category/event/foss4g2011) sont en ligne. Malheureusement, celles-ci ne sont pas rangées par thématique ce qui rend la consultation un peu difficile. Mais en informatique rien n'est impossible. Un petit coup de [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/), un soupçon de python et nous nous retrouvons avec une organisation déjà plus sympathique. Bon visionnage :
+![logo FOSS4G-2011](https://cdn.geotribu.fr/img/logos-icones/divers/FOSS4G-2011-Conference-Website_small.png "logo FOSS4G-2011"){: .img-rdp-news-thumb }
 
-#### Python
+Depuis peu, [les vidéos du FOSS4G 2011](http://www.fosslc.org/drupal/category/event/foss4g2011) sont en ligne. Malheureusement, celles-ci ne sont pas rangées par thématique ce qui rend la consultation un peu difficile. Mais en informatique rien n'est impossible. Un petit coup de [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/), un soupçon de python et nous nous retrouvons avec une organisation déjà plus sympathique. Bon visionnage :
+
+## Python
 
 [ Tutorial: GeoServer Scripting with Python and RESTConfig](http://www.fosslc.org/drupal/content/tutorial-geoserver-scripting-python-and-restconfig "Tutorial: GeoServer Scripting with Python and RESTConfig")
 
@@ -25,17 +27,17 @@ tags:
 
 [ PyKML: Python KML Library](http://www.fosslc.org/drupal/content/pykml-python-kml-library "PyKML: Python KML Library")
 
-#### WebGL
+## WebGL
 
 [ Accelerating remote sensing visualization with WebGL](http://www.fosslc.org/drupal/content/accelerating-remote-sensing-visualization-webgl "Accelerating remote sensing visualization with WebGL")
 
-#### JavaScript
+## JavaScript
 
 [ geomap – A new, open-source JavaScript mapping API](http://www.fosslc.org/drupal/content/geomap-%E2%80%93-new-open-source-javascript-mapping-api "geomap – A new, open-source JavaScript mapping API")
 
 [ Raphael.js: javascript vector graphics library for the web](http://www.fosslc.org/drupal/content/raphaeljs-javascript-vector-graphics-library-web "Raphael.js: javascript vector graphics library for the web")
 
-#### PostGIS
+## PostGIS
 
 [ PostGIS 2.0, the new stuff](http://www.fosslc.org/drupal/content/postgis-20-new-stuff "PostGIS 2.0, the new stuff")
 
@@ -47,23 +49,23 @@ tags:
 
 [ State of PostGIS](http://www.fosslc.org/drupal/content/state-postgis "State of PostGIS")
 
-#### Business Intelligence
+## Business Intelligence
 
 [ The Intersection of Geospatial and Business Intelligence](http://www.fosslc.org/drupal/content/intersection-geospatial-and-business-intelligence "The Intersection of Geospatial and Business Intelligence")
 
 [ Open Source Business Intelligence (OSBI): Overview and Geospatial Enablement](http://www.fosslc.org/drupal/content/open-source-business-intelligence-osbi-overview-and-geospatial-enablement "Open Source Business Intelligence (OSBI): Overview and Geospatial Enablement")
 
-#### Openlayers
+## Openlayers
 
 [ Common pitfalls for users of OpenLayers](http://www.fosslc.org/drupal/content/common-pitfalls-users-openlayers "Common pitfalls for users of OpenLayers")
 
 [ Regional Data Sharing with Drupal, Geoserver, and Openlayers](http://www.fosslc.org/drupal/content/regional-data-sharing-drupal-geoserver-and-openlayers "Regional Data Sharing with Drupal, Geoserver, and Openlayers")
 
-#### MapQuery
+## MapQuery
 
 [ MapQuery and SVG charts: a powerful interface for aggregated data](http://www.fosslc.org/drupal/content/mapquery-and-svg-charts-powerful-interface-aggregated-data-0 "MapQuery and SVG charts: a powerful interface for aggregated data")
 
-#### GeoServer
+## GeoServer
 
 [ Tutorial: GeoServer Scripting with Python and RESTConfig](http://www.fosslc.org/drupal/content/tutorial-geoserver-scripting-python-and-restconfig "Tutorial: GeoServer Scripting with Python and RESTConfig")
 
@@ -73,13 +75,13 @@ tags:
 
 [ Regional Data Sharing with Drupal, Geoserver, and Openlayers](http://www.fosslc.org/drupal/content/regional-data-sharing-drupal-geoserver-and-openlayers "Regional Data Sharing with Drupal, Geoserver, and Openlayers")
 
-#### WFS
+## WFS
 
 [ WFS and SQL Injection](http://www.fosslc.org/drupal/content/wfs-and-sql-injection "WFS and SQL Injection")
 
 [ Critical Analysis of the WFS Transactional](http://www.fosslc.org/drupal/content/critical-analysis-wfs-transactional "Critical Analysis of the WFS Transactional")
 
-#### GRASS
+## GRASS
 
 [ Open Source LiDAR Visualization Using GRASS GIS](http://www.fosslc.org/drupal/content/open-source-lidar-visualization-using-grass-gis "Open Source LiDAR Visualization Using GRASS GIS")
 
@@ -89,15 +91,15 @@ tags:
 
 [ Using GRASS and R for Landscape Regionalization through PAM Cluster Analysis](http://www.fosslc.org/drupal/content/using-grass-and-r-landscape-regionalization-through-pam-cluster-analysis "Using GRASS and R for Landscape Regionalization through PAM Cluster Analysis")
 
-#### GDAL
+## GDAL
 
 [ Tuning GDAL Raster Performance](http://www.fosslc.org/drupal/content/tuning-gdal-raster-performance "Tuning GDAL Raster Performance")
 
-#### QGIS
+## QGIS
 
 [ A WPS Based Biogeography Tool for QGIS](http://www.fosslc.org/drupal/content/wps-based-biogeography-tool-qgis "A WPS Based Biogeography Tool for QGIS")
 
-#### Open Data
+## Open Data
 
 [ Open Source, Open Data and Open Standards](http://www.fosslc.org/drupal/content/open-source-open-data-and-open-standards "Open Source, Open Data and Open Standards")
 
@@ -105,29 +107,29 @@ tags:
 
 [ Open Season: Open Standards, Open Source and Open Data in Ordnance Survey](http://www.fosslc.org/drupal/content/open-season-open-standards-open-source-and-open-data-ordnance-survey "Open Season: Open Standards, Open Source and Open Data in Ordnance Survey")
 
-#### WPS
+## WPS
 
 [ A WPS Based Biogeography Tool for QGIS](http://www.fosslc.org/drupal/content/wps-based-biogeography-tool-qgis "A WPS Based Biogeography Tool for QGIS")
 
-#### ETL
+## ETL
 
 [ GeoKettle, the open source spatial ETL tool : overview, new features and roadmap](http://www.fosslc.org/drupal/content/geokettle-open-source-spatial-etl-tool-overview-new-features-and-roadmap "GeoKettle, the open source spatial ETL tool : overview, new features and roadmap")
 
-#### MapFish
+## MapFish
 
 [ MapFish Project: Status and Good Practices](http://www.fosslc.org/drupal/content/mapfish-project-status-and-good-practices "MapFish Project: Status and Good Practices")
 
-#### Node
+## Node
 
 [ Tutorial: Async. and Realtime Geo Applications with Node.js](http://www.fosslc.org/drupal/content/tutorial-async-and-realtime-geo-applications-nodejs "Tutorial: Async. and Realtime Geo Applications with Node.js")
 
-#### MapGuide
+## MapGuide
 
 [ Tutorial: Introduction to MapGuide Open Source - Demo](http://www.fosslc.org/drupal/content/tutorial-introduction-mapguide-open-source-demo "Tutorial: Introduction to MapGuide Open Source - Demo")
 
 [ Tutorial: Introduction to MapGuide Open Source](http://www.fosslc.org/drupal/content/tutorial-introduction-mapguide-open-source "Tutorial: Introduction to MapGuide Open Source")
 
-#### LiDAR
+## LiDAR
 
 [ Open Source LiDAR Visualization Using GRASS GIS](http://www.fosslc.org/drupal/content/open-source-lidar-visualization-using-grass-gis "Open Source LiDAR Visualization Using GRASS GIS")
 
@@ -137,11 +139,11 @@ tags:
 
 [ HydroLiDAR: A open source GIS towards accessing, visualization and modeling of LiDAR](http://www.fosslc.org/drupal/content/hydrolidar-open-source-gis-towards-accessing-visualization-and-modeling-lidar "HydroLiDAR: A open source GIS towards accessing, visualization and modeling of LiDAR")
 
-#### HTML5
+## HTML5
 
 [ HTML5 for Rich Geospatial applications on the web](http://www.fosslc.org/drupal/content/html5-rich-geospatial-applications-web "HTML5 for Rich Geospatial applications on the web")
 
-#### Others
+## Others
 
 [ Turning Data into Beautiful Maps](http://www.fosslc.org/drupal/content/turning-data-beautiful-maps "Turning Data into Beautiful Maps")
 
@@ -275,15 +277,15 @@ tags:
 
 [ FOSS4G2011](http://www.fosslc.org/drupal/content/foss4g2011 "FOSS4G2011")
 
-#### Java
+## Java
 
 [ GeoAPI 3.0, Java interfaces as an OGC standard](http://www.fosslc.org/drupal/content/geoapi-30-java-interfaces-ogc-standard "GeoAPI 3.0, Java interfaces as an OGC standard")
 
-#### NoSQL
+## NoSQL
 
 [ Integration of GeoServer with NoSQL databases](http://www.fosslc.org/drupal/content/integration-geoserver-nosql-databases "Integration of GeoServer with NoSQL databases")
 
-#### PyWPS
+## PyWPS
 
 [ Tutorial: PyWPS](http://www.fosslc.org/drupal/content/tutorial-pywps "Tutorial: PyWPS")
 
