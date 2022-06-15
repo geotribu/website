@@ -101,7 +101,7 @@ plugins:
   - tags:
       tags_file: tags.md
   - privacy:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
       externals_exclude:
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*

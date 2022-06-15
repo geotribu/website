@@ -180,4 +180,4 @@ Il existe différents types de marqueurs mais pour des raisons de simplicité no
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

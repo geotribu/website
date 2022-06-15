@@ -129,6 +129,4 @@ Voilà donc la conclusion de notre enquête : **il est 20 fois plus difficile de
 
 ## Auteur {: data-search-exclude }
 
-### Victor Alexandre
-
-Datajournaliste au Parisien, j'ai une formation de journaliste, de sociologie et de statistiques.
+--8<-- "content/team/vale.md"

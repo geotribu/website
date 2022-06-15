@@ -59,4 +59,4 @@ Les propriétés initiales de l'objet ToolTips n'ont pas été modifiées, réf�
 
 ## Auteur
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

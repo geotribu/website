@@ -72,4 +72,4 @@ Les deux paramètres importants à préciser sont :
 
 ## Auteur
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

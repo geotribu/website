@@ -47,4 +47,4 @@ Sites cartographiques intéressants ou originaux pas leur contenu, leur représe
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"
