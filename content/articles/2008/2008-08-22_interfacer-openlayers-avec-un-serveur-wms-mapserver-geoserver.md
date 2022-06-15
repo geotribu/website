@@ -136,4 +136,4 @@ Ne disposant pas de serveur personnel tous les tests ont été effectués en loc
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

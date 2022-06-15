@@ -624,7 +624,7 @@ admin.site.register(WorldBorders, admin.OSMGeoAdmin)
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"
 
 <!-- Notes de bas de page -->
 [^1]: Un grand merci à Bjørn Sandvik de thematicmapping.org qui propose et entretient ce jeu de données.

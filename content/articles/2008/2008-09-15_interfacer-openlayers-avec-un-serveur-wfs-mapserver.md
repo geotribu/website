@@ -138,4 +138,4 @@ A noter que si vous désirez pouvoir utiliser les données attributaires de la c
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

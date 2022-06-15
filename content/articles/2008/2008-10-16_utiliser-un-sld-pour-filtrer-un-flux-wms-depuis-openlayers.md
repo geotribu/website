@@ -85,4 +85,4 @@ La carte ci-dessous, est une représentation mondiale du nombre d'habitant par K
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

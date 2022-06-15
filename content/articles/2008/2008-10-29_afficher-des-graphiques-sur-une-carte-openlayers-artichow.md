@@ -128,4 +128,4 @@ Les données utilisées proviennent de : [geodata](http://geodata.grid.unep.ch/#
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"
