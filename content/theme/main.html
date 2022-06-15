@@ -107,22 +107,30 @@
         },
       {% elif author is iterable and (author is not string and author is not mapping) %}
         {% if author | length > 1 %}
-        {# multiple authors #}
-        "author": [
-        {% for a in author %}
-            {% if a != config.site_author %}
-              {% set author_split = a.split(' ', 1) %}
-              {
-              "@type": "Person",
-              "name": "{{ a }}",
-              "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
-              },
-            {% endif %}
-        {% endfor %}
-        ],
+          {# plusieurs auteurs #}
+          "author": [
+          {% for a in author %}
+              {% if a != config.site_author %}
+                {% set author_split = a.split(' ', 1) %}
+                {
+                "@type": "Person",
+                "name": "{{ a }}",
+                "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
+                },
+              {% endif %}
+          {% endfor %}
+          ],
+        {% elif author[0] == config.site_author %}
+         {# un seul auteur qui est Geotribu #}
+          "author": {
+            "@type": "Organization",
+            "name": "{{ config.site_author }}",
+            "url": "{{ config.site_url }}"
+          },
         {% else %}
-         {# single author #}
-          {% set author_split = a.split(' ', 1) %}
+
+         {# un seul auteur qui n'est pas Geotribu #}
+          {% set author_split = author[0].split(' ', 1) %}
 
           "author": {
             "@type": "Person",
@@ -131,7 +139,7 @@
           },
         {% endif %}
       {% else %}
-      {# GeoRDP #}
+        {# Par défaut #}
         "author": {
           "@type": "Organization",
           "name": "{{ config.site_author }}",
