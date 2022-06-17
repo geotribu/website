@@ -35,12 +35,12 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
-  - minify:
-      minify_css: true
-      minify_html: true
-      minify_js: false
-      htmlmin_opts:
-        remove_comments: true
+  # - minify:
+  #     minify_css: true
+  #     minify_html: true
+  #     minify_js: false
+  #     htmlmin_opts:
+  #       remove_comments: true
   - rss:
       abstract_chars_count: 500
       categories:
@@ -210,6 +210,7 @@ markdown_extensions:
       linenums: true
       use_pygments: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.smartsymbols
   - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
