@@ -162,7 +162,29 @@
       }
     }
     </script>
-{% endif %}
+  {% elif type == "website" %}
+    <script type='application/ld+json'> 
+      {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Geotribu",
+        "alternateName": "Géotribu",
+        "url": "{{ config.site_url }}",
+        "sameAs": [
+          "http://geotribu.fr",
+          "http://geotribu.net",
+          "https://github.com/geotribu/",
+          "https://facebook.com/geotribu",
+          "https://twitter.com/geotribu"
+        ],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ config.site_url }}?q={search_term}",
+          "query-input": "required name=search_term"
+        }
+      }
+    </script>
+  {% endif %}
 {% endblock %}
 
 {% block libs %}
