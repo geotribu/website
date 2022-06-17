@@ -5,11 +5,10 @@ categories:
     - Geotribu
 date: 2022-06-15 14:20
 description: "Sous le GéoCapot : comment l'en-tête des contenus est utilisé pour générer des données structurées et extraits enrichis."
-image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png"
+image: "https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extrait_enrichi_article_multi-auteurs.png"
 tags:
     - coulisses
     - Jinja2
-    - réseaux sociaux
 # theme customizations
 search:
   exclude: true
@@ -17,13 +16,15 @@ search:
 
 # Utilisation de l'en-tête pour le web sémantique et les extraits enrichis
 
-![logo JSON-LD](https://cdn.geotribu.fr/img/logos-icones/programmation/json-ld.webp "logo JSON-LD"){: .img-rdp-news-thumb }
-
 Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](/contribuer/guides/metadata_yaml_frontmatter/).
 
-Pourquoi ? car c'est ainsi que le site génère des données structurées selon un standard qui sont notamment utilisées pour les extraits enrichis des moteurs de recherche.
+Pourquoi ? car c'est ainsi que le site génère des données structurées standardisées qui sont notamment utilisées pour les extraits enrichis des moteurs de recherche.
+
+[![Google Search - Exemple d'extrait enrichi](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/extrait_enrichi_google_dashboard_qgis.webp "Extrait enrichi sur une recherche Google"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/extrait_enrichi_google_dashboard_qgis.webp "Extrait enrichi sur une recherche Google"){: data-mediabox="lightbox-rich-snippets" data-title="Extrait enrichi sur une recherche Google" }
 
 ## Web sémantique et données structurées
+
+![logo JSON-LD](https://cdn.geotribu.fr/img/logos-icones/programmation/json-ld.webp "logo JSON-LD"){: .img-rdp-news-thumb }
 
 La structuration des données géographiques, ça vous semble important ? Eh bien, c'est la même chose quand il s'agit des pages webs. C'est d'ailleurs le principe fondateur de ce qu'on appelle plus communément le **web sémantique** : intégrer des données structurées dans le contenu des pages de façon à faciliter le travail d'indexation et de mise en relation des contenus.  
 Evidemment les structures répondent à des standards dont l'élaboration est liée aux acteurs de l'industrie mais aussi aux initiatives communautaires. Les schémas de données, qui gèrent le relationnel, sont documentés et regoups sur le site : [schema.org](https://schema.org/). C'est ce site et cette dynamique qui ont inspiré [schema.data.gouv.fr](https://schema.data.gouv.fr/).
@@ -32,15 +33,19 @@ Ces données sont également utilisées par les moteurs de recherche et favorise
 
 Il existe de nombreux schémas décrivant différents types d'objets : _Article_, _WebSite_, _Author_, _Organization_, etc. Les personnes qui travaillent sur les portails de données ouvertes connaissent bien le sujet puisqu'il existe un schéma standardisé pour les [jeux de données](https://schema.org/Dataset) qui permet notamment de faire indexer ses données dans le moteur dédié de Google : [Dataset Search](https://datasetsearch.research.google.com/).
 
+[![Google Dataset Search](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/google_dataset_search_exemple_bornes_elec.webp "Google Dataset Search"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/google_dataset_search_exemple_bornes_elec.webp){: data-mediabox="lightbox-rich-snippets" data-title="Exemple de recherche dans Google Dataset Search" }
+
 ----
 
 ## Processus
 
-Au moment de la [transformation des fichiers markdown en fichiers HTML](/contribuer/internal/markdown_engine/), le site génère des extraits enrichis à partir de plusieurs éléments :
+![logo Jinja](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/jinja.png "logo Jinja"){: .img-rdp-news-thumb }
+
+Au moment de la [transformation des fichiers markdown en fichiers HTML](/contribuer/internal/markdown_engine/), le site génère un objet au format [JSON-LD] (_JSON Linked Data_), intégré à la page HTML, à partir de plusieurs éléments :
 
 - l'en-tête fournit l'essentiel des informations : date, auteur(s), mots-clés, description, image, etc.
 - l'URL : permet d'affiner le type de contenu, notamment pour distinguer un article d'une revue de presse.
-- le respect du nommage des fichiers des contributeurs, stockés sous `team/{pnnn}.md`
+- le fichier de l'auteur s'il respecte le nommage `team/{pnnn}.md`
 
 Les informations sont manipulées avec la syntaxe [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)), utilisée par [Mkdocs], dans le [template `main.html`](https://github.com/geotribu/website/blob/master/content/theme/main.html).
 
@@ -80,7 +85,7 @@ Exemple du bloc permettant de gérer les contenus avec plusieurs auteurs :
 
 ## Exemples de données structurées générées sur Geotribu
 
-Les données structurées sont stockées en [JSON+LD](https://json-ld.org/) (_JSON Linked Data_) sous forme de script intégré dans l'en-tête du fichier HTML (balise `head`). Pour y accéder, il suffit d'ouvrir le fichier source (++ctrl+u++ sur le navigateur) ou d'utiliser un vaidateur ou visualiseur.
+Les données structurées sont stockées en [JSON-LD] (_JSON Linked Data_) sous forme de script intégré dans l'en-tête du fichier HTML (balise `head`). Pour y accéder, il suffit d'ouvrir le fichier source (++ctrl+u++ sur le navigateur) ou d'utiliser un validateur ou visualiseur dédié (il y en a plein sur le net).
 
 ### Page d'accueil
 
@@ -144,6 +149,8 @@ Exemple pour [cet article](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_o
 }
 ```
 
+[![Schéma article validé par schema.org](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extrait_enrichi_article_multi-auteurs.png "Schéma article validé par schema.org"){: loading=lazy.img-center }](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extrait_enrichi_article_multi-auteurs.png){: data-mediabox="lightbox-rich-snippets" data-title="Schéma article repéré et validé par schema.org" }
+
 ### Revue de presse
 
 Exemple pour [cette GeoRDP](/rdp/2022/rdp_2022-06-03/) :
@@ -184,3 +191,6 @@ Exemple pour [cette GeoRDP](/rdp/2022/rdp_2022-06-03/) :
 - le [validateur de schéma](https://validator.schema.org/)
 - [description de l'extrait enrichi de type Article dans la documentation de Google](https://developers.google.com/search/docs/advanced/structured-data/article/)
 - Google propose un [site pour tester les extraits enrichis](https://search.google.com/test/rich-results).
+
+<!-- Liens de référence -->
+[JSON-LD]: https://json-ld.org/
