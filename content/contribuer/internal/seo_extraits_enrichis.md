@@ -1,10 +1,10 @@
 ---
-title: "Extraits enrichis et 'cartes sociales'"
+title: "Web sémantique et extraits enrichis"
 categories:
     - article
     - Geotribu
 date: 2022-06-15 14:20
-description: "Sous le GéoCapot : comment l'en-tête des contenus est utilisé pour générer des extraits enrichis et les 'cartes sociales'."
+description: "Sous le GéoCapot : comment l'en-tête des contenus est utilisé pour générer des données structurées et extraits enrichis."
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png"
 tags:
     - coulisses
@@ -15,29 +15,68 @@ search:
   exclude: true
 ---
 
-# Utilisation de l'en-tête pour le SEO et le partage des contenus
-
-Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](/contribuer/guides/metadata_yaml_frontmatter/).
-
-Pourquoi ? car c'est ainsi que le site génère des extraits enrichis et les 'cartes sociales' (_social cards_) qui appraissent lors du partage d'un contenu sur d'autres media : réseaux sociaux, outils collaboratifs (Teams, Slack, Matrix...) et même emails.
-
-## Extraits enrichis
+# Utilisation de l'en-tête pour le web sémantique et les extraits enrichis
 
 ![logo JSON-LD](https://cdn.geotribu.fr/img/logos-icones/programmation/json-ld.webp "logo JSON-LD"){: .img-rdp-news-thumb }
 
-La structuration des données géographiques, ça vous semble important ? Eh bien, c'est la même chose quand il s'agit des pages webs. C'est d'ailleurs le principe fondateur de ce qu'on appelle plus communément le **web sémantique** : intégrer des données structurées dans le contenu des pages de façon à faciliter le travail d'indexation et de mise en relation des contenus.
+Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](/contribuer/guides/metadata_yaml_frontmatter/).
 
-D'ailleurs, si vous êtes amenés à travailler sur les
+Pourquoi ? car c'est ainsi que le site génère des données structurées selon un standard qui sont notamment utilisées pour les extraits enrichis des moteurs de recherche.
 
- on travaille sur les données structurées  Le référencement des contenus sur les  sont toujours plus complexes. Dans ce sens, en dehors des optimisations classiques et bien connues de tous, arrive la nécessité de décrire des données structurées dans les pages web des sites internet via différentes syntaxes (microdonnées, microformats, RDFa).
+## Web sémantique et données structurées
+
+La structuration des données géographiques, ça vous semble important ? Eh bien, c'est la même chose quand il s'agit des pages webs. C'est d'ailleurs le principe fondateur de ce qu'on appelle plus communément le **web sémantique** : intégrer des données structurées dans le contenu des pages de façon à faciliter le travail d'indexation et de mise en relation des contenus.  
+Evidemment les structures répondent à des standards dont l'élaboration est liée aux acteurs de l'industrie mais aussi aux initiatives communautaires. Les schémas de données, qui gèrent le relationnel, sont documentés et regoups sur le site : [schema.org](https://schema.org/). C'est ce site et cette dynamique qui ont inspiré [schema.data.gouv.fr](https://schema.data.gouv.fr/).
 
 Ces données sont également utilisées par les moteurs de recherche et favorisent le référencement ou plutôt permettent un affichage enrichi dans les pages de résultats, d'où le nom donné par Google : extrait enrichi (_rich snippet_ en anglais).
 
-Connus sous le nom de rich snippets en anglais, ceux-ci ont de nombreux avantages en plus de représenter un pas vers la recherche sémantique : accès rapide à l’information via un affichage dans les SERPS, augmentation du taux de clic, etc.
+Les personnes qui travaillent sur les portails de données ouvertes connaissent bien le sujet puisqu'il existe un schéma standardisé pour les jeux de données
 
-### Données structurées générées
+----
 
-#### Page d'accueil
+## Processus
+
+Au moment de la [transformation des fichiers markdown en fichiers HTML](/contribuer/internal/markdown_engine/), le site génère des extraits enrichis à partir de plusieurs éléments :
+
+- l'en-tête fournit l'essentiel des informations : date, auteur(s), mots-clés, description, image, etc.
+- l'URL : permet d'affiner le type de contenu, notamment pour distinguer un article d'une revue de presse.
+- le respect du nommage des fichiers des contributeurs, stockés sous `team/{pnnn}.md`
+
+Les informations sont manipulées avec la syntaxe [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)), utilisée par [Mkdocs], dans le [template `main.html`](https://github.com/geotribu/website/blob/master/content/theme/main.html).
+
+Exemple du bloc permettant de gérer les contenus avec plusieurs auteurs :
+
+```jinja2
+{% elif author is iterable and (author is not string and author is not mapping) %}
+  {% if author | length > 1 %}
+    {# plusieurs auteurs #}
+    "author": [
+    {% for a in author %}
+        {% if a != config.site_author %}
+          {% set author_split = a.split(' ', 1) %}
+          {
+          "@type": "Person",
+          "name": "{{ a }}",
+          "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
+          {% if a != author|last %}
+          {# Si l'auteur n'est pas le dernier de la liste, on ajoute une virgule #}
+            },
+          {% else %}
+          {# Si c'est le dernier, pas de virgule #}
+            }
+          {% endif %}
+        {% endif %}
+    {% endfor %}
+    ],
+```
+
+----
+
+## Exemples de données structurées générées sur Geotribu
+
+Les données structurées sont stockées en [JSON+LD](https://json-ld.org/) (_JSON Linked Data_) sous forme de script intégré dans l'en-tête du fichier HTML (balise `head`). Pour y accéder, il suffit d'ouvrir le fichier source (++ctrl+u++ sur le navigateur) ou d'utiliser un vaidateur ou visualiseur.
+
+### Page d'accueil
 
 ```jsonld
 {
@@ -61,7 +100,7 @@ Connus sous le nom de rich snippets en anglais, ceux-ci ont de nombreux avantage
 }
 ```
 
-#### Article
+### Article
 
 Exemple pour [cet article](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/) :
 
@@ -99,7 +138,7 @@ Exemple pour [cet article](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_o
 }
 ```
 
-#### Revue de presse
+### Revue de presse
 
 Exemple pour [cette GeoRDP](/rdp/2022/rdp_2022-06-03/) :
 
@@ -131,22 +170,11 @@ Exemple pour [cette GeoRDP](/rdp/2022/rdp_2022-06-03/) :
 }
 ```
 
-### Ressources
+----
+
+## Ressources
 
 - le [schéma d'un article sur schema.org](https://schema.org/Article)
 - le [validateur de schéma](https://validator.schema.org/)
 - [description de l'extrait enrichi de type Article dans la documentation de Google](https://developers.google.com/search/docs/advanced/structured-data/article/)
 - Google propose un [site pour tester les extraits enrichis](https://search.google.com/test/rich-results).
-
-----
-
-## Cartes sociales (_social cards_)
-
-![icône globe social](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globe social"){: .img-rdp-news-thumb }
-
-> TO DOC
-
-### Ressources
-
-- le site officiel du [protocole Open Graph](https://ogp.me/)
-- le [validateur de carte de Twitter](https://cards-dev.twitter.com/validator/)
