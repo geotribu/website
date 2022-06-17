@@ -30,7 +30,7 @@ Evidemment les structures répondent à des standards dont l'élaboration est li
 
 Ces données sont également utilisées par les moteurs de recherche et favorisent le référencement ou plutôt permettent un affichage enrichi dans les pages de résultats, d'où le nom donné par Google : extrait enrichi (_rich snippet_ en anglais).
 
-Les personnes qui travaillent sur les portails de données ouvertes connaissent bien le sujet puisqu'il existe un schéma standardisé pour les jeux de données
+Il existe de nombreux schémas décrivant différents types d'objets : _Article_, _WebSite_, _Author_, _Organization_, etc. Les personnes qui travaillent sur les portails de données ouvertes connaissent bien le sujet puisqu'il existe un schéma standardisé pour les [jeux de données](https://schema.org/Dataset) qui permet notamment de faire indexer ses données dans le moteur dédié de Google : [Dataset Search](https://datasetsearch.research.google.com/).
 
 ----
 
@@ -46,7 +46,10 @@ Les informations sont manipulées avec la syntaxe [Jinja](https://fr.wikipedia.o
 
 Exemple du bloc permettant de gérer les contenus avec plusieurs auteurs :
 
-```jinja2
+{% raw %}
+
+```jinja
+[...]
 {% elif author is iterable and (author is not string and author is not mapping) %}
   {% if author | length > 1 %}
     {# plusieurs auteurs #}
@@ -68,7 +71,10 @@ Exemple du bloc permettant de gérer les contenus avec plusieurs auteurs :
         {% endif %}
     {% endfor %}
     ],
+[...]
 ```
+
+{% endraw %}
 
 ----
 
