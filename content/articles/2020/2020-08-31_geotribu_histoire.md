@@ -120,7 +120,7 @@ Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent
 --8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
-[Arnaud]: /team/avdc/
+[Arnaud]: /team/avan/
 [Fabien]: /team/fgob/
 [Jérémie]: /team/jory/
 [GeoRezo]: https://georezo.net/
