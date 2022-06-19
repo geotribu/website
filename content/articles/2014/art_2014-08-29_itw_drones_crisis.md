@@ -82,7 +82,7 @@ Après l'atterrissage les images et le fichier 'BlackBox' qui contient les donn�
 
 FredM: Oui c'est la partie la plus dur, …. apres il faut le suivre des yeux durant toute la mission.
 
-### 6. (Pix4D) Comment se déroule le traitement des images obtenues ? Quelles sont les informations qu'il est possible d'obtenir (images, MNT, contour, etc.)**
+### 6. (Pix4D) Comment se déroule le traitement des images obtenues ? Quelles sont les informations qu'il est possible d'obtenir (images, MNT, contour, etc.)
 
 Le logiciel développé par Pix4D permet de convertir plusieurs milliers d'images prises par différents drones, avions ou hélicoptères en orthophotographies et modèles 3D géoréfférencés.
 
