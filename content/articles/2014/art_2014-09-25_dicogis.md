@@ -21,7 +21,7 @@ tags:
 Ou comment se créer un Petit Robert de l’information géographique en 5 minutes et 3 clics.  
 Je vous présente un petit utilitaire sans prétention sinon d'être bien pratique pour la gestion de données.
 
-![DicoGIS - Animated demonstration](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_demo_w8.gif "DicoGIS - Animated demonstration"){: loading=lazy }
+[![DicoGIS - Animated demonstration](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_demo_w8.gif "DicoGIS - Animated demonstration"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_demo_w8.gif "DicoGIS - Animated demonstration"){: data-mediabox="lightbox-gallery" data-title="DicoGIS - Animated demonstration" }
 
 ----
 
@@ -85,30 +85,30 @@ En ce qui concerne les performances, cela dépend surtout de la machine sur laqu
 
 2. Dézipper et lancer DicoGIS.exe / le script DicoGIS.py
 
-    ![DicoGIS - Launch](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/00a_DicoGIS_Win32exe.PNG "DicoGIS - Launch"){: loading=lazy }
+    [![DicoGIS - Launch](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/00a_DicoGIS_Win32exe.PNG "DicoGIS - Launch"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/00a_DicoGIS_Win32exe.PNG "DicoGIS - Launch"){: data-mediabox="lightbox-gallery" data-title="DicoGIS - Launch" }
 
 3. Changer la langue au besoin
 
-    ![DicoGIS - Switch language](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/99_DicoGIS_SwitchLanguage.gif "DicoGIS - Switch language"){: loading=lazy }
+    [![DicoGIS - Switch language](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/99_DicoGIS_SwitchLanguage.gif "DicoGIS - Switch language"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/99_DicoGIS_SwitchLanguage.gif "DicoGIS - Switch language"){: data-mediabox="lightbox-gallery" data-title="DicoGIS - Switch language" }
 
 ### Scan de données organisées en fichiers
 
 1. Choisir le dossier parent : l’exploration commence et la barre de progression tourne jusqu’à la fin du listing
 2. Choisir les formats désirés
 
-![DicoGIS- Listing](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/02_DicoGIS_Listing.gif "DicoGIS- Listing"){: loading=lazy }
+[![DicoGIS - Listing](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/02_DicoGIS_Listing.gif "DicoGIS - Listing"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/02_DicoGIS_Listing.gif "DicoGIS - Listing"){: data-mediabox="lightbox-gallery" data-title="DicoGIS - Listing" }
 
 ### Scan d'une base PostGIS
 
 Pour des données stockées dans une base PostgreSQL / PostGIS, c'est le même principe sauf qu'il faut entrer les paramètres de connexion :
 
-![DicoGIS - Processing PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/06_DicoGIS_PostGIS.gif "DicoGIS PostGIS"){: loading=lazy }
+[![DicoGIS - Processing PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/06_DicoGIS_PostGIS.gif "DicoGIS PostGIS"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/06_DicoGIS_PostGIS.gif "DicoGIS - Processing PostGIS"){: data-mediabox="lightbox-gallery" data-title="DicoGIS - Processing PostGIS" }
 
 ### Traitement
 
 Lancer et attendre la fin du traitement : sauvegarder le fichier Excel généré.
 
-![DicoGIS - Processing files](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/05_DicoGIS_Processing.gif "DicoGIS fichiers"){: loading=lazy }
+[![DicoGIS - Processing files](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/05_DicoGIS_Processing.gif "DicoGIS fichiers"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/05_DicoGIS_Processing.gif "DicoGIS fichiers"){: data-mediabox="lightbox-gallery" data-title="DicoGIS fichiers" }
 
 Consulter le fichier en sortie et le fichier `DicoGIS.log` (dans lequel il y a un paquet d'informations ^^).
 
@@ -122,9 +122,9 @@ Voici les quelques évolutions que j'envisage, mais vu que je ne suis pas mère 
 
 * prendre en compte de nouveaux formats : DGN, Spatialite, MXD, QGS, Geoconcept
 * ajouter un onglet de statistiques globales avec de jolis graphiques ;
-* basculer de python-xlwt vers xlsxwriter.
-* un jour sur Python 3.x mais il faudrait déjà que py2exe soit stable de ce côté-là.
-* travailler sur les performances en basculant les traitements en multiprocessing (mais je crois que ça coince avec py2exe).
+* basculer de `python-xlwt` vers `xlsxwriter`.
+* un jour sur Python 3.x mais il faudrait déjà que `py2exe` soit stable de ce côté-là.
+* travailler sur les performances en basculant les traitements en multiprocessing (mais je crois que ça coince avec `py2exe`).
 
 ----
 
