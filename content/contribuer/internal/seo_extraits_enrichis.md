@@ -89,6 +89,8 @@ Les données structurées sont stockées en [JSON-LD] (_JSON Linked Data_) sous 
 
 ### Page d'accueil
 
+On y intègre les métadonnées principales du site, ainsi que des informations fonctionnelles, notamment le moteur de recherche, conformément au [schéma Sitelink](https://developers.google.com/search/docs/advanced/structured-data/sitelinks-searchbox) :
+
 ```jsonld
 {
   "@context": "http://www.schema.org",
