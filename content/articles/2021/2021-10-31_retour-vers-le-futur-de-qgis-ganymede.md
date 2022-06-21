@@ -59,7 +59,7 @@ La première chose que l'on remarque, c'est que comme bon nombre d'entre nous, Q
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
 Mais qu'y avait-il donc dans Quantum GIS avant même sa version 1, seuil conventionnel de stabilisation d'un logiciel ?  
-A l'époque où [Esri investissait près de 20% de son CA en R&D, sortait ArcExplorer, ArcGIS for AutoCAD et amorçait ArcGIS Online](https://www.esri.com/news/arcnews/winter0708articles/arcgis-product-suite.html), que MapInfo, alors principal logiciel SIG dans les institutions françaises, [était racheté par Pitney Bowes](https://www.investorrelations.pitneybowes.com/news-releases/news-release-details/pitney-bowes-completes-acquisition-mapinfo) et que l'open source géospatial proposait entre autres [Puzzle GIS](/articles/2009/art_2009-05-24/), [OpenJump](/articles/2009/art_2009-05-31/), [uDig](/articles/2009/art_2009-06-07/) ?
+A l'époque où [Esri investissait près de 20% de son CA en R&D, sortait ArcExplorer, ArcGIS for AutoCAD et amorçait ArcGIS Online](https://www.esri.com/news/arcnews/winter0708articles/arcgis-product-suite.html), que MapInfo, alors principal logiciel SIG dans les institutions françaises, [était racheté par Pitney Bowes](https://www.investorrelations.pitneybowes.com/news-releases/news-release-details/pitney-bowes-completes-acquisition-mapinfo) et que l'open source géospatial proposait entre autres [Puzzle GIS](/articles/2009/2009-05-24_a-la-decouverte-de-puzzle-gis/), [OpenJump](/articles/2009/2009-05-31_a-la-decouverte-d-openjump/), [uDig](/articles/2009/2009-06-07_a-la-decouverte-de-udig/) ?
 
 Eh bien, voici quelques captures :
 
