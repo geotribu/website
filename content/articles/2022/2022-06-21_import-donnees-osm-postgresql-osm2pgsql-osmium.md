@@ -7,7 +7,7 @@ categories:
     - tutoriel
 date: "2022-06-24 10:20"
 description: "Guide détaillé pour installer et configurer PostgreSQL et PostGIS et importer des données OpenStreetMap."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/export_aix_large.png"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/export_aix_large.png"
 license: default
 tags:
     - OpenStreetMap
@@ -102,7 +102,7 @@ Pour cela, on va s'appuyer sur deux éléments :
 - la [documentation d'osm2pgsql](https://osm2pgsql.org/doc/manual.html#tuning-the-postgresql-server) qui recommande des paramètres de configuration
 - les outils comme [PGTune](https://pgtune.leopard.in.ua/) qui permettent de générer une configuration selon les capacités de la machine et le type d'application
 
-[![PGTune - Dell XPS 15 7590](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: data-mediabox="lightbox-gallery" data-title="PGTune - Dell XPS 15 7590"}
+[![PGTune - Dell XPS 15 7590](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: data-mediabox="lightbox-gallery" data-title="PGTune - Dell XPS 15 7590"}
 
 C'est parti, on crée un cluster `osmdata` en passant directement les options qui nous intéressent. Notez que
 
@@ -261,11 +261,7 @@ C'est dans ces moments-là où on mesure combien le projet est remarquable à pl
 
 ### Installer osm2pgsql
 
-![logo osm2pgsql](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osm2pgsql.png "logo osm2pgsql"){: loading=lazy .img-rdp-news-thumb }
-
-Afin d'importer les données OpenStreetMap dans PostgreSQL, on utilise [osm2pgsql](/?q=osm2pgsql*) qui est un outil en ligne de commande maintenu par la communauté OSM. Pour l'installation, rien de plus simple.
-
-Sur Debian et dérivés comme Ubuntu :
+Afin d'importer les données OpenStreetMap dans PostgreSQL, on utilise [osm2pgsql](/?q=osm2pgsql*) qui est un outil en ligne de commande maintenu par la communauté OSM. Pour l'installation, rien de plus simple pour Debian et dérivés comme Ubuntu :
 
 ```sh
 sudo apt install osm2pgsql
@@ -309,7 +305,7 @@ wget -N https://download.geofabrik.de/europe/belgium-latest.osm.pbf -P /tmp/osmd
 
 <video width="100%" controls>
     <!-- markdownlint-disable MD033 -->
-      <source src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/wget_osm_geofabrik_belgium.webm" type="video/webM">
+      <source src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/wget_osm_geofabrik_belgium.webm" type="video/webM">
       Votre navigateur ne supporte pas la balise video HTML 5.
       <!-- markdownlint-enable MD033 -->
 </video>
@@ -326,7 +322,7 @@ Et on découpe sur la zone qui nous intéresse, par exemple Bruxelles :
 osmium extract -b 4.29,50.815,4.47,50.90 /tmp/osmdata/belgium/belgium-latest.osm.pbf -o /tmp/osmdata/belgium/brussels.osm.pbf
 ```
 
-### Import des données
+### Importer des données
 
 ![logo osm2pgsql](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osm2pgsql.png "logo osm2pgsql"){: loading=lazy .img-rdp-news-thumb }
 
