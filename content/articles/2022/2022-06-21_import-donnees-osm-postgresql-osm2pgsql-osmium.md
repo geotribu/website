@@ -32,11 +32,11 @@ Prérequis :
 
 ## Introduction
 
-![logo Ferrari barré](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_ferraris/ferrari_logo_barre.png "logo Ferrari barré"){: .img-rdp-news-thumb }
+![logo PostgreSQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgresql.svg "logo PostgreSQL"){: .img-rdp-news-thumb }
 
-Dans les tutoriaux d'ici ou d'ailleurs, on part souvent du principe que l'on dispose naturellement d'une base de données PostgreSQL/PostGIS tout bien configurée avec, en prime, des données chargées et prêtes à être manipulées comme il se doit, souvent récupérées depuis la base OpenStreetMap.
+Dans les tutoriaux d'ici ou d'ailleurs, on part souvent du principe que l'on dispose naturellement d'une base de données PostgreSQL/PostGIS tout bien configurée comme il faut avec, en prime, des données chargées et prêtes à être manipulées comme il se doit, souvent issues d'OpenStreetMap.
 
-C'est justement en voulant rédiger un de ces tutoriaux et en constatant que je refaisais systématiquement le même _setup_ que je me suis dit que ça serait intéressant de le partager ici. Comme ça, je pourrai y retrouver mes commandes habituelles et y faire référence dans d'autres articles.
+C'est justement en voulant rédiger un de ces tutoriaux et en constatant que je refaisais systématiquement le même _setup_ que je me suis dit que ça serait intéressant de le consigner ici. Comme ça, je pourrai y retrouver mes commandes habituelles et y faire référence dans d'autres tutoriels.
 
 Au menu :
 
@@ -52,7 +52,7 @@ Au menu :
 
 ## Installer et configurer PostgreSQL
 
-![logo PostgreSQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgresql.png "logo PostgreSQL"){: .img-rdp-news-thumb }
+![icône base de données](https://cdn.geotribu.fr/img/logos-icones/programmation/database.png "icône base de données"){: .img-rdp-news-thumb }
 
 Installer PostgreSQL n'a rien de sorcier, tant le travail de packaging et de distribution est remarquablement réalisé et documenté, comme en témoigne [la page de téléchargement](https://www.postgresql.org/download/). Mais c'est toujours bon de se noter les commandes à utiliser pour installer les versions depuis les dépôts communautaires.
 
@@ -71,6 +71,8 @@ sudo apt install postgresql-14 postgresql-client-14 postgresql-14-postgis-3
 
 Le truc avec le packaging de PostgreSQL sur Debian et Ubuntu c'est que les scripts de post-installation créent par défaut un cluster `main`. C'est sympa de faire une partie du taf mais ce serait plus correct de demander avant quand même, en plus, le cluster est même pas optimisé !  
 Quand je fais installer un four en terre chez moi, je ne m'attends pas à ce que l'artisan me fasse une calzone mal cuite juste après la dernière pierre posée ! :pizza:
+
+[![Pizza dans son four](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/pizza_four.webp "Pizza dans son four"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/pizza_four.webp){: data-mediabox="lightbox-gallery" data-title="Pizza dans son four - Si vous lisez en ayant faim : désolé !"}
 
 ### Création d'un cluster optimisé
 
@@ -186,7 +188,7 @@ sudo pg_ctlcluster 14 ferrargis start
 !!! tip "Astuce pour avoir une Calzone réussie à chaque installation"
     Il est possible de changer le comportement des scripts de post-installation du packaging PostgreSQL en modifiant le fichier `/etc/postgresql-common/createcluster.conf`, soit pour désactiver la création automatisée du cluster `main`, soit pour en modifier les paramètres par défaut (par exemple avec `initdb_options = '--data-checksums --lc-messages=C'`).
 
-#### Créer le rôle et gérer l'accès
+### Créer le rôle et gérer l'accès
 
 Comme on travaille à la maison, on va se faciliter la vie et créer un rôle en base correspondant à l'utilisateur système (trouvable avec la commande `whoami`) de façon à utiliser le mode d'authentification `peer`) :
 
@@ -212,7 +214,7 @@ host=localhost
 port=54342
 ```
 
-#### Créer et configurer la base de données
+### Créer et configurer la base de données
 
 ![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: .img-rdp-news-thumb }
 
@@ -245,7 +247,6 @@ Activer HSTore :
 psql -p 54342 -U $(whoami) osm -c "CREATE EXTENSION hstore;"
 ```
 
-
 ## Les outils liés à OpenStreetMap
 
 Le projet est remarquable à plus d'un titre. Au-delà de la dimension collaborative et de la base de données, c'est aussi tout l'outillage disponible et "naturellement" maintenu qui fait d'OSM une réussite incontournable de notre écosystème.
@@ -272,6 +273,16 @@ Sur Windows, le [tutoriel de LearnOSM](https://learnosm.org/en/osm-data/osm2pgsq
 [Faites chauffer DeepL et Transifex pour contribuer à LearnOSM :fontawesome-solid-language:](https://learnosm.org/en/contribute/translator/){: .md-button }
 {: align=middle }
 
+### Installer osmium
+
+![logo osm2pgsql](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osm2pgsql.png "logo osm2pgsql"){: .img-rdp-news-thumb }
+
+On installe [Osmium](https://osmcode.org/osmium-tool/) :
+
+```sh
+sudo apt install osmium-tool
+```
+
 ----
 
 ## Les données
@@ -297,17 +308,11 @@ wget -N https://download.geofabrik.de/europe/belgium-latest.osm.pbf -P /tmp/osmd
       <!-- markdownlint-enable MD033 -->
 </video>
 
-### Optionnel : découper les données
+### Découper les données
 
 ![logo Osmium Tool](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osmium.svg "logo Osmium Tool"){: .img-rdp-news-thumb }
 
 Si on craint de manquer d'espace disque, de puissance ou qu'on cible une zone restreinte en particulier, on peut découper les données avec une emprise avant de les importer avec un outil comme Osmium par exemple.
-
-On installe [Osmium](https://osmcode.org/osmium-tool/) :
-
-```sh
-sudo apt install osmium-tool
-```
 
 Et on découpe sur la zone qui nous intéresse, par exemple Bruxelles :
 
@@ -315,15 +320,10 @@ Et on découpe sur la zone qui nous intéresse, par exemple Bruxelles :
 osmium extract -b 4.29,50.815,4.47,50.90 /tmp/osmdata/belgium/belgium-latest.osm.pbf -o /tmp/osmdata/belgium/brussels.osm.pbf
 ```
 
-!!! tip "Vigilance"
-    Du coup, le nom de fichier sera différent pour la commande d'import à suivre :wink: !
-
 ### Import des données
 
 ```bash
-osm2pgsql --create --database osm --port 54342 --cache 1000 --number-processes 4 /tmp/osmdata/belgium/belgium-latest.osm.pbf
-# si vous avez utilisez la commande osmium pour découper les données sur Bruxelles
-# osm2pgsql --create --database osm --port 54342 --cache 1000 --number-processes 4 /tmp/osmdata/belgium/brussels.osm.pbf
+osm2pgsql --create --database osm --port 54342 --cache 1000 --number-processes 4 /tmp/osmdata/belgium/brussels.osm.pbf
 ```
 
 Détail des options :
@@ -331,7 +331,7 @@ Détail des options :
 - `--create` : créer les données, quitte à les écraser si elles existent déjà dans la base
 - `--database` : nom de la base de données
 - `--port` : port de connexion à la base de données
-- `--cache` : gère la taille du cache (en MB) à allouer pour l'import des noeuds OSM. Je pensais au début que la valeur par défaut (800) suffirait mais j'ai eu l'erreur : *Node cache size is too small to fit all nodes. Please increase cache size*. Dépend de la RAM de votre machine.
+- `--cache` : gère la taille du cache (en MB) à allouer pour l'import des noeuds OSM. Je pensais au début que la valeur par défaut (800) suffirait mais j'ai eu l'erreur : _Node cache size is too small to fit all nodes. Please increase cache size_. Dépend de la RAM de votre machine.
 - `--number-processes` : nom de processus à utiliser pour paralléliser les tâches qui peuvent l'être
 
 Pour celles et ceux que ça intéresse, voici le détail de l'exécution sur mon ordinateur qui a pris 187 secondes :
