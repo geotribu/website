@@ -65,7 +65,7 @@ sudo apt install postgresql-14 postgresql-client-14 postgresql-14-postgis-3
 ```
 
 En revanche, le packaging de PostgreSQL sur Debian et Ubuntu intègre des scripts de post-installation qui créent par défaut un cluster `main`. C'est sympa de faire une partie du taf mais ce serait plus correct de demander avant quand même, en plus, le cluster n'est même pas optimisé !  
-Quand je fais installer un four en terre chez moi, je ne m'attends pas à ce que l'artisan me fasse une calzone mal cuite juste après la dernière pierre posée ! :pizza:
+Quand je fais installer un four en terre chez moi, je ne m'attends pas à ce que l'artisan me fasse un calzone mal cuite juste après la dernière pierre posée ! :pizza:
 
 [![Pizza dans son four](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/pizza_four.webp "Pizza dans son four"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/pizza_four.webp){: data-mediabox="lightbox-gallery" data-title="Pizza dans son four - Si vous lisez en ayant faim : désolé !"}
 
