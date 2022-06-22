@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: "2022-06-24 10:20"
+date: "2022-06-28 10:20"
 description: "Guide détaillé pour installer et configurer PostgreSQL et PostGIS et importer des données OpenStreetMap."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/export_aix_large.png"
 license: default
@@ -18,7 +18,7 @@ tags:
 
 # Importer les données OpenStreetMap dans PostGIS : un guide détaillé pas à pas
 
-:calendar: Date de publication initiale : 24 juin 2022
+:calendar: Date de publication initiale : 28 juin 2022
 
 Prérequis :
 
