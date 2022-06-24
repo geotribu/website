@@ -92,7 +92,7 @@ Pour cela, on va s'appuyer sur deux éléments :
 
 [![PGTune - Dell XPS 15 7590](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: data-mediabox="lightbox-gallery" data-title="PGTune - Dell XPS 15 7590"}
 
-C'est parti, on crée un cluster `osmdata` en passant directement les options qui nous intéressent. Notez que
+C'est parti, on crée un cluster `osmdata` en passant directement les options qui nous intéressent.
 
 ```bash title="Commande multi-ligne pour créer un cluster PostgreSQL"
 sudo pg_createcluster 14 osmdata \
