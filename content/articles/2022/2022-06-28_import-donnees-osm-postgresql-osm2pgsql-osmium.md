@@ -88,7 +88,7 @@ L'objectif est donc de créer un cluster dédié avec des paramètres optimisés
 Pour cela, on va s'appuyer sur deux éléments :
 
 - la [documentation d'osm2pgsql](https://osm2pgsql.org/doc/manual.html#tuning-the-postgresql-server) qui recommande des paramètres de configuration
-- les outils comme [PGTune](https://pgtune.leopard.in.ua/) qui permettent de générer une configuration selon les capacités de la machine et le type d'application
+- les outils comme [PGTune](https://pgtune.leopard.in.ua/) ou [Cybertec Postgres Configurator](http://pgconfigurator.cybertec.at/) qui permettent de générer une configuration "_good enough_" selon les capacités de la machine et le type d'application
 
 [![PGTune - Dell XPS 15 7590](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: data-mediabox="lightbox-gallery" data-title="PGTune - Dell XPS 15 7590"}
 
