@@ -169,7 +169,7 @@ Il est évidemment possible de changer les paramètres du cluster par la suite, 
 
 ```bash
 sudo nano /etc/postgresql/14/osmdata/postgresql.conf
-# puis redémarrer le serveur
+# puis redémarrer le serveur - généralement un reload peut suffire mais là on joue à domicile donc on doit pouvoir supporter la coupure de service
 sudo systemctl restart postgresql@14-osmdata
 ```
 
