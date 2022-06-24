@@ -75,19 +75,7 @@ Quand je fais installer un four en terre chez moi, je ne m'attends pas à ce que
 
 On prend donc l'habitude de refaire la pâte nous-même. C'est parti pour la création d'un cluster aux ~~petits oignons~~ petites olives !
 
-On commence par lister les versions installées et les ports respectifs.
-
-```sh
-grep -H '^port' /etc/postgresql/*/main/postgresql.conf
-```
-
-Si vous n'avez pas d'autre version installée, ça donne ça :
-
-```sh
-/etc/postgresql/14/main/postgresql.conf:port = 5432  # (change requires restart)
-```
-
-Puis on liste les clusters (grappes en bon français) existants avec l'utilitaire fourni dans le paquet `postgresql-common` :
+On commence par lister les clusters (grappes en bon français) existants avec l'utilitaire fourni dans le paquet `postgresql-common` :
 
 ```bash
 > pg_lsclusters
