@@ -195,7 +195,7 @@ sudo -u postgres createuser -p 54342 --createdb --pwprompt --superuser "$(whoami
 De façon à ne pas stocker de mot de passe en clair dans les applications clientes comme QGIS et pour se faciliter la vie, on se crée un fichier `.pgpass` dans le répertoire personnel de l'utilisateur :
 
 ```bash
-echo "localhost:54342:*:$(whoami):motdepasse_assigned_a_mon_utilisateur" >> ~/.pgpass
+echo "localhost:54342:*:$(whoami):motdepasse_assigne_a_mon_utilisateur" >> ~/.pgpass
 ```
 
 De même, de façon à garder la connexion la plus générique possible dans le but de rendre la suite le plus facilement reproductible possible, on stocke les paramètres de connexion dans le fichier `PGSERVICE` (voir [la doc officielle de PostgreSQL](https://www.postgresql.org/docs/current/libpq-pgservice.html) et [celle de QGIS](https://docs.qgis.org/3.22/fr/docs/user_manual/managing_data_source/opening_data.html#pg-service-file)) :
@@ -209,6 +209,9 @@ dbname=osm
 host=localhost
 port=54342
 ```
+
+!!! note "pg_service_all_inclusive"
+    Il est également possible de stocker directement le mot de passe dans le `.pg_service.conf` pour se simplifier encore plus la vie, mais personnellement j'aime que les mots de passe soient dans un fichier séparé de façon à pouvoir diffuser mon `.pg_service.conf` tranquillement.
 
 ### Créer et configurer la base de données
 
