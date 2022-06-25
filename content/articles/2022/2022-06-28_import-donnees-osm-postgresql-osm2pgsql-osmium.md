@@ -52,7 +52,13 @@ Compagniiiie... en mesure !
 
 ## Installer et configurer PostgreSQL
 
-![icône base de données](https://cdn.geotribu.fr/img/logos-icones/programmation/database.png "icône base de données"){: loading=lazy .img-rdp-news-thumb }
+<!--
+    Syntaxe spéciale pour qu'une seule image ne s'affiche selon le thème clair ou sombre
+    Voir : https://squidfunk.github.io/mkdocs-material/reference/images/#light-and-dark-mode
+  -->
+
+![logo Grand Eléphant des Machines de l'île de Nantes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_icon_white.svg#only-dark "logo Grand Eléphant des Machines de l'île de Nantes"){: loading=lazy .img-rdp-news-thumb }
+![logo Grand Eléphant des Machines de l'île de Nantes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_icon_black.svg#only-light "logo Grand Eléphant des Machines de l'île de Nantes"){: loading=lazy .img-rdp-news-thumb }
 
 Installer PostgreSQL n'a rien de sorcier, tant le travail de packaging et de distribution est remarquablement réalisé et documenté, comme en témoigne [la page de téléchargement](https://www.postgresql.org/download/). Mais c'est toujours bon de se noter les commandes à utiliser pour installer les versions depuis les dépôts communautaires.
 
