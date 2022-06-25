@@ -176,14 +176,6 @@ Si vous êtes curieux/se, vous pouvez dérouler le détail de ce que la commande
     ```
 <!-- markdownlint-enable MD046 -->
 
-Il est évidemment possible de changer les paramètres du cluster par la suite, soit via une instuction SQL `ALTER SYSTEM`, soit en éditant le `postgresql.conf` :
-
-```bash
-sudo nano /etc/postgresql/14/osmdata/postgresql.conf
-# puis redémarrer le serveur - généralement un reload peut suffire mais là on joue à domicile donc on doit pouvoir supporter la coupure de service
-sudo systemctl restart postgresql@14-osmdata
-```
-
 Enfin, on démarre l'instance :
 
 ```bash
@@ -192,8 +184,22 @@ sudo systemctl start postgresql@14-osmdata
 sudo pg_ctlcluster 14 osmdata start
 ```
 
+Et voilà, on a notre PostgreSQL proprement installé et configuré sur notre machine !
+
+[![Croquis du Grand Eléphant des machines de l'île de Nantes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_croquis.webp "Croquis du Grand Eléphant des machines de l'île de Nantes"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_croquis.webp "Croquis du Grand Eléphant des machines de l'île de Nantes"){: data-mediabox="lightbox-gallery" data-title="Croquis du Grand Eléphant des machines de l'île de Nantes - Eléphant, machine... vous l'avez ? ;)"}
+
+#### Changer la configuration du cluster plus tard
+
+Il est évidemment possible de changer les paramètres du cluster par la suite, soit via une instuction SQL `ALTER SYSTEM`, soit en éditant le `postgresql.conf` :
+
+```bash
+sudo nano /etc/postgresql/14/osmdata/postgresql.conf
+# puis redémarrer le serveur - généralement un reload peut suffire mais là on joue à domicile donc on doit pouvoir supporter la coupure de service
+sudo systemctl restart postgresql@14-osmdata
+```
+
 !!! tip "Astuce pour avoir une Calzone réussie à chaque installation"
-    Il est possible de changer le comportement des scripts de post-installation du packaging PostgreSQL en modifiant le fichier `/etc/postgresql-common/createcluster.conf`, soit pour désactiver la création automatisée du cluster `main`, soit pour en modifier les paramètres par défaut (par exemple avec `initdb_options = '--data-checksums --lc-messages=C'`).
+    Il est aussi possible de changer le comportement des scripts de post-installation du packaging PostgreSQL en modifiant le fichier `/etc/postgresql-common/createcluster.conf`, soit pour désactiver la création automatisée du cluster `main`, soit pour en modifier les paramètres par défaut (par exemple avec `initdb_options = '--data-checksums --lc-messages=C'`).
 
 ### Créer le rôle et gérer l'accès
 
