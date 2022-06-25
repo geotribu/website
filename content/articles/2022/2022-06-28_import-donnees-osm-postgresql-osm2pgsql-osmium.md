@@ -6,13 +6,14 @@ categories:
     - article
     - tutoriel
 date: "2022-06-28 10:20"
-description: "Guide détaillé pour installer et configurer PostgreSQL et PostGIS et importer des données OpenStreetMap."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/export_aix_large.png"
+description: "Guide détaillé pour installer et configurer PostgreSQL, PostGIS et importer des données OpenStreetMap à l'aide d'osm2pgsql et Osmium."
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png"
 license: default
 tags:
     - OpenStreetMap
     - osm2pgsql
     - Osmium
+    - PostGIS
     - PostgreSQL
 ---
 
@@ -39,6 +40,10 @@ Au menu :
 1. Installer les outils d'import ([osm2pgsql]) et de pré-traitement ([Osmium]) des données OSM
 1. Découper et importer les données dans la base
 1. Se créer la connexion dans QGIS
+
+Compagniiiie... en mesure !
+
+[![Marche des Eléphants Postgres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png "Marche des Eléphants Postgres"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png){: data-mediabox="lightbox-gallery" data-title="Marche des Eléphants Postgres - PostgreSQL, osm2pgsql et Osmium !"}
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
