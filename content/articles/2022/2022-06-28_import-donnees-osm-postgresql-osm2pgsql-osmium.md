@@ -251,7 +251,7 @@ Activer HSTore :
 psql -p 54342 -U $(whoami) osm -c "CREATE EXTENSION hstore;"
 ```
 
-## Installer les outils lié à OpenStreetMap
+## Installer les outils liés à OpenStreetMap
 
 C'est dans ces moments-là où on mesure combien le projet est remarquable à plus d'un titre. Au-delà de la dimension collaborative et de la base de données, c'est aussi tout l'outillage disponible et "naturellement" maintenu qui fait d'OSM une réussite incontournable de notre écosystème.
 
