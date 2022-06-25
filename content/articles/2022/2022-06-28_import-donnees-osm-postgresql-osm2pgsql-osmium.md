@@ -228,7 +228,7 @@ port=54342
 
 ![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: loading=lazy .img-rdp-news-thumb }
 
-Créer la base de données :
+Créer la base de données que l'on nomme `osm` :
 
 ```bash
 createdb --owner $(whoami) --port 54342 --encoding=UTF8 osm
