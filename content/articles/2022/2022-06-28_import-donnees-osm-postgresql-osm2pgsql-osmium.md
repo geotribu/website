@@ -407,6 +407,41 @@ Pour celles et ceux que ça intéresse, voici le détail de l'exécution sur mon
 
 ----
 
+## Se connecter à la base
+
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+
+Maintenant que nos données sont bien au chaud dans la base, il est temps de s'y connecter et voir ce qu'elle a dans le ventre ! On peut déjà faire un petit listing des tables via la console `psql` :
+
+```sh
+> psql -p 54342 -U $(whoami) osm
+psql (14.4 (Ubuntu 14.4-1.pgdg20.04+1))
+Saisissez « help » pour l'aide.
+
+osm=# \dt
+                Liste des relations
+ Schéma |        Nom         | Type  | Propriétaire
+--------+--------------------+-------+--------------
+ public | planet_osm_line    | table | jmo
+ public | planet_osm_point   | table | jmo
+ public | planet_osm_polygon | table | jmo
+ public | planet_osm_roads   | table | jmo
+ public | spatial_ref_sys    | table | jmo
+(5 lignes)
+
+osm=#
+```
+
+Pour s'y connecter avec QGIS, on va pouvoir tirer parti de notre [configuration d'authentification à l'aide du fichier pg_service.conf](#creer-le-role-et-gerer-lacces). Ainsi, seul le nom du service (= le nom de section entre `[]`) est nécessaire :
+
+[![QGIS - Connexion PostGIS avec service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_connexion_postgis_pg_service.webp "QGIS - Connexion PostGIS avec service"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_connexion_postgis_pg_service.webp "QGIS - Connexion PostGIS avec service"){: data-mediabox="lightbox-gallery" data-title="QGIS - Connexion PostGIS avec service"}
+
+Et voilà notre liste de tables :
+
+[![QGIS - Liste des tables PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_postgis_osm_listing.webp "QGIS - Liste des tables PostGIS"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_postgis_osm_listing.webp "QGIS - Liste des tables PostGIS"){: data-mediabox="lightbox-gallery" data-title="QGIS - Liste des tables PostGIS"}
+
+----
+
 ## Nettoyage
 
 Voici les commandes si vous souhaitez supprimer le cluster créé pendant le tutoriel. Attention, cela supprimera toutes les données donc à n'exécuter que si vous êtes certain/e de ne pas y tenir :
