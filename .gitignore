@@ -219,3 +219,8 @@ markdown-lint-report.txt
 markdown-lint-report-added.txt
 .Rhistory
 linter_markdown_report.txt
+
+scripts
+_to_upload
+rdp*.json
+yarn.lock
