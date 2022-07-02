@@ -183,6 +183,12 @@ theme:
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Basculer en mode clair
+
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -199,7 +205,7 @@ theme:
       accent: "deep orange"
       toggle:
         icon: material/weather-night
-        name: Basculer en mode clair
+        name: Basculer sur le réglage système
 
 # Customization
 extra:
