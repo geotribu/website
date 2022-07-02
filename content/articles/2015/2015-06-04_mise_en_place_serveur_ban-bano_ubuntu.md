@@ -23,6 +23,8 @@ tags:
 
 ## Introduction
 
+![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-rdp-news-thumb }
+
 Le but est de rappeler ce qu'est le géocodage. A quoi généralement, cela sert.
 
 Dans un deuxième temps, nous introduisons la Base Adresse Nationale (BAN) et la Base Adresse Nationale Ouverte (BANO, historique). En effet, dans ce contexte, des outils pour géocoder ont été mis en oeuvre. Nous expliquerons comment les utiliser, comment installer un serveur pour géocoder chez vous si par exemple, vous avez des besoins de géocodage massif ou de personnaliser la recherche d'adresse avec vos critères lors du géocodage.
