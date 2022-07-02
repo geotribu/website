@@ -56,7 +56,7 @@ Bref, au revoir [BBCode](https://fr.wikipedia.org/wiki/BBCode), DokuWiki, [WikiT
 A l'instar de n'importe quelle langue, qui plus est non standardisée, le rendu HTML du Markdown dépend de l'implémentation qui en est faite : technologie, finalité et philosophie du processus de conversion, etc. Ainsi, il y aura des différences à l'affichage ou au traitement.
 
 !!! tip
-    Pour ne pas dupliquer ici du contenu existant, je vous renvoie vers l'article [Comprendre et tester le moteur de rendu du site](/contribuer/build_site/markdown_engine/).
+    Pour ne pas dupliquer ici du contenu existant, je vous renvoie vers l'article [Comprendre et tester le moteur de rendu du site](/contribuer/internal/markdown_engine/).
 
 ----
 
@@ -68,7 +68,7 @@ Revenons à nos géo-moutons.
 
 Une fois le HTML et les ressources liées (images...) récupérés de Geotribu, j'ai opté pour un stockage sous forme de Markdown. Pour cela, j'ai utilisé le package [markdownify](https://github.com/matthewwithanm/python-markdownify) qui permet de transformer du HTML en Markdown.
 
-Vu qu'on a déjà passé un article sur le projet Scrapy utilisé pour récupérer les anciens contenus depuis l'Internet Archive, je ne vais pas de nouveau détailler le [_pipeline_](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) mais plutôt démontrer comment appliquer la même mécanique facilement :
+Vu qu'on a déjà passé un article sur le projet Scrapy utilisé pour récupérer les anciens contenus depuis l'Internet Archive, je ne vais pas de nouveau détailler le [*pipeline*](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) mais plutôt démontrer comment appliquer la même mécanique facilement :
 
 1. aspirer un site web avec du web-scraping
 2. traiter le HTML pour décortiquer le contenu :
@@ -77,12 +77,12 @@ Vu qu'on a déjà passé un article sur le projet Scrapy utilisé pour récupér
 
 ## La conversion par l'exemple : rendre lisible un article du CNIG
 
-L'usage de _markdownify_ est simple. Pour s'en rendre compte, testons cela rapidement avec un petit objectif pour l'occasion : transformer en markdown [le dernier article du site du CNIG](http://cnig.gouv.fr/?p=23807) pour le lire sans saigner des yeux.
+L'usage de *markdownify* est simple. Pour s'en rendre compte, testons cela rapidement avec un petit objectif pour l'occasion : transformer en markdown [le dernier article du site du CNIG](http://cnig.gouv.fr/?p=23807) pour le lire sans saigner des yeux.
 
 Au passage, on en profite pour essayer deux autres bibliothèques pour ce genre de cas de figure :
 
 - [Beautifulsoup](https://www.crummy.com/software/BeautifulSoup/) : pour le parsing du HTML
-- [urllib3](https://urllib3.readthedocs.io/) : pour facilement faire des requêtes HTTP ; _requests_ ou _httpx_ étant surdimensionnés pour notre besoin, mais avec la flemme de gérer les détails (décodage, etc.)
+- [urllib3](https://urllib3.readthedocs.io/) : pour facilement faire des requêtes HTTP ; *requests* ou *httpx* étant surdimensionnés pour notre besoin, mais avec la flemme de gérer les détails (décodage, etc.)
 
 ### Structure
 

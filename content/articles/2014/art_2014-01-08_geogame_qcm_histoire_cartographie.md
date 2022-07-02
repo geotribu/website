@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 date: "2014-01-08 10:20"
-description: "Géogame de Geotribu : testez vos connaissances en histoire de la cartographie avec des questions à choix multiples (QCM). Le principe est simple : une question, une ou plusieurs réponses possibles ; Une fois que vous avez répondu à toutes les questions, vous obtenez votre score !"
+description: "Géogame de Geotribu : testez vos connaissances en histoire de la cartographie avec des questions à choix multiples (QCM)."
 image: "https://cdn.geotribu.fr/img/geogames/geogame1_capture.png"
 tags:
     - cartographie

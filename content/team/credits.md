@@ -43,7 +43,7 @@ petit (1 seul fichier PHP !) mais costaud que nous utilisons pour gérer nos con
 A noter qu'en dépit du fait que GitHub ne soit pas open source, nous tirons énormément parti de la plateforme et en particulier :
 
 - [Github Actions](https://help.github.com/actions) : permet l'automatisation du _workflow_ de publication, réduisant énormément le travail technique à produire.
-- [Github Release](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) et [GitHub CLI](https://cli.github.com/) : permet l'automatisation de la sauvegarde du site. Voir [la page sur la sauvegarde](/contribuer/backup/).
+- [Github Release](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) et [GitHub CLI](https://cli.github.com/) : permet l'automatisation de la sauvegarde du site. Voir [la page sur la sauvegarde](/contribuer/internal/backup/).
 
 ### Nos contributions
 

@@ -14,13 +14,15 @@ tags:
 
 :calendar: Date de publication initiale : 04 février 2015
 
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+
 C'est avec un immense plaisir que nous vous annonçons la sortie de l'ouvrage "[OpenLayers 3: Beginner's Guide](https://www.packtpub.com/web-development/openlayers-3-beginner%E2%80%99s-guide)". Plaisir bien évidemment car cet ouvrage porte sur [OpenLayers](https://openlayers.org/), mais aussi car un des rédacteurs ainsi que l'un des relecteurs sont des membres de GeoTribu !
 
 Cette formidable aventure nous aura tenu en haleine pendant de longs mois ! Ce fut pour nous l'occasion de voir l'envers du décor d'un processus éditorial, mais surtout de s'engager activement dans la diffusion de cette merveilleuse bibliothèque qu'est [OpenLayers](https://openlayers.org/).
 
 ----
 
-![Couverture du livre OpenLayers](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/ol3_book.png)
+[![Couverture du livre OpenLayers](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/ol3_book.png "Couverture du livre OpenLayers"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/ol3_book.png "Couverture du livre OpenLayers"){: data-mediabox="lightbox-gallery" data-title="Couverture du livre OpenLayers" }
 
 En 11 chapitres, ce livre couvre l'essentiel des sujets nécessaires à la prise en main de la toute nouvelle version d'OpenLayers (version 3) :
 

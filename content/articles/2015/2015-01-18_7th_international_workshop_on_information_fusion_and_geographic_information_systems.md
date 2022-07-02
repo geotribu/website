@@ -18,38 +18,29 @@ Du 18 au 20 Mai se tiendra à Grenoble le [7e workshop international sur la fusi
 
 ----
 
-**Voici en détail les thèmes et sous thèmes qui seront abordés  
-**
+Voici en détail les thèmes et sous thèmes qui seront abordés :
 
-**GIS Fundamental Issues** **GIS applications, practical experience reviews and project reports**  
-Data modeling, analysis, integration and fusion in GIS  
-Artificial Intelligence and GIS.  
-Knowledge-based GIS  
-GIS architectures and GIS interfaces  
-GIS algorithms and computational issues  
-Spatial ontologies in GIS  
-Spatial and temporal GIS  
-GIS and real-time monitoring systems.  
-Positioning and analyzing moving information  
-Underwater acoustics and GIS  
-GIS and simulation systems  
-Mobile GIS  
-Data Security and GIS  
-Sensor-based GIS  
-Spatial data quality  
-Cyber GIS  
-Open source GIS Maritime GIS  
-Aerial GIS  
-Transportation GIS  
-Energy GIS  
-Urban and environmental monitoring and management  
-Disaster management  
-Coastal & environment management  
-Arctic and Antarctic applications  
-Data reliability and quality assurance for open data;  
-Crowd-sourcing for widely useable information infrastructures;  
-Digital Humanities  
-Study of the History Using Digital Technology    N'hésitez pas à [proposer votre papier ou à vous y inscire](http://if-gis.com/) !
+|GIS Fundamental Issues | GIS applications, practical experience reviews and project reports |
+| :--------------- |:---------------|
+| Data modeling, analysis, integration and fusion in GIS | Aerial GIS |
+| Artificial Intelligence and GIS. | Transportation GIS |
+| Knowledge-based GIS | Energy GIS |
+| GIS architectures and GIS interfaces | Urban and environmental monitoring and management |
+| GIS algorithms and computational issues | Disaster management |
+| Spatial ontologies in GIS | Coastal & environment management |
+| Spatial and temporal GIS | Arctic and Antarctic applications |
+| GIS and real-time monitoring systems. | Data reliability and quality assurance for open data; |
+| Positioning and analyzing moving information | Crowd-sourcing for widely useable information infrastructures; |
+| Underwater acoustics and GIS | Digital Humanities |
+| GIS and simulation systems | Study of the History Using Digital Technology |
+| Mobile GIS | |
+| Data Security and GIS | |
+| Sensor-based GIS | |
+| Spatial data quality | |
+| Cyber GIS | |
+| Open source GIS Maritime GIS | |
+
+N'hésitez pas à [proposer votre papier ou à vous y inscire](http://if-gis.com/) !
 
 ----
 

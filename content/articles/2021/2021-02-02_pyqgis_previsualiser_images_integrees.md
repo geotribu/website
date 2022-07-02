@@ -249,7 +249,7 @@ with Path("qgis_resources_preview_table.md").open("w") as io_out:
 
 ![icône feature attribute table QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionCalculateField.svg "Icône feature attribute table QGIS"){: .img-rdp-news-thumb }
 
-Nous voici avec notre joli fichier que l'on peut [convertir en HTML par exemple](/contribuer/build_site/markdown_engine/). D'ailleurs, j'en ai profité pour l'intégrer à notre site (cf bouton plus bas). A garder sous le coude pour avoir les images et leurs chemins pour développer des plugins colorés.
+Nous voici avec notre joli fichier que l'on peut [convertir en HTML par exemple](/contribuer/internal/markdown_engine/). D'ailleurs, j'en ai profité pour l'intégrer à notre site (cf bouton plus bas). A garder sous le coude pour avoir les images et leurs chemins pour développer des plugins colorés.
 
 Pour les plus curieux, j'ai stocké le script complet et avec quelques optimisations dans un Gist dont le lien est également en bas de page. Enfin, tout ça m'a aussi permis d'utiliser les icônes de QGIS pour illustrer les parties de ce tutoriel.
 
