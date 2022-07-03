@@ -280,10 +280,9 @@ A vous de jouer !
 
 <iframe src="https://giphy.com/embed/U8RXSRKv8uMPS" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dancing-dance-wtf-U8RXSRKv8uMPS">via GIPHY</a></p>
 
-
 Pas mal de variations sont possibles sur la base de ces lignes. Voici une petite variation avec Blender accomplie par Steven Kay :
 
-https://twitter.com/stevefaeembra/status/1543318675230543874/photo/1
+<blockquote class="twitter-tweet" data-lang="fr" data-dnt="true"><p lang="en" dir="ltr">Manicougan Crater, ridgeplot syle. SRTM DEM, Blender. <a href="https://t.co/KGZQh7j57p">pic.twitter.com/KGZQh7j57p</a></p>&mdash; Steven Kay (@stevefaeembra) <a href="https://twitter.com/stevefaeembra/status/1543318675230543874?ref_src=twsrc%5Etfw">2 juillet 2022</a></blockquote>
 
 ## Crédits
 - Carte de l'Islande par Brian Suda : https://www.flickr.com/photos/suda/5384299394
