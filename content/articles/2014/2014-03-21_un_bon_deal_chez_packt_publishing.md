@@ -27,16 +27,16 @@ En fait, pour son 2000e titre à son catalogue, Packt Publishing a mis en place 
 
 Voici notamment quelques ouvrages qui pourraient vous intéresser:
 
-* [Postgis Cookbook](http://www.packtpub.com/postgis-to-store-organize-manipulate-analyze-spatial-data-cookbook/book)
-* [Programming ArcGIS 10.1 with Python Cookbook](http://www.packtpub.com/programming-arcgis-10-1-with-python-cookbook/book)
-* [Learning Geospatial Analysis with Python](http://www.packtpub.com/learning-geospatial-analysis-with-python/book)
-* [Learning QGIS 2.0](http://www.packtpub.com/learning-qgis-2-0-to-create-maps-and-perform-geoprocessing-tasks/book)
-* [OpenLayers Cookbook](http://www.packtpub.com/openlayers-create-gis-web-applications-cookbook/book)
-* [OpenLayers 3 beginner guide](http://www.packtpub.com/openlayers-3-beginners-guide/book)
-* [Python Geospatial Development - Second Edition](http://www.packtpub.com/python-geospatial-development-second-edition/book)
-* [GeoServer Beginner’s Guide](http://www.packtpub.com/geoserver-share-edit-geospatial-data-beginners-guide/book)
-* [OpenStreetMap](http://www.packtpub.com/openstreetmap/book)
-* [Building Web and Mobile ArcGIS Server Applications with JavaScript](http://www.packtpub.com/building-web-and-mobile-arcgis-server-applications-with-javascript/book)
+- [Postgis Cookbook](http://www.packtpub.com/postgis-to-store-organize-manipulate-analyze-spatial-data-cookbook/book)
+- [Programming ArcGIS 10.1 with Python Cookbook](http://www.packtpub.com/programming-arcgis-10-1-with-python-cookbook/book)
+- [Learning Geospatial Analysis with Python](http://www.packtpub.com/learning-geospatial-analysis-with-python/book)
+- [Learning QGIS 2.0](http://www.packtpub.com/learning-qgis-2-0-to-create-maps-and-perform-geoprocessing-tasks/book)
+- [OpenLayers Cookbook](http://www.packtpub.com/openlayers-create-gis-web-applications-cookbook/book)
+- [OpenLayers 3 beginner guide](http://www.packtpub.com/openlayers-3-beginners-guide/book)
+- [Python Geospatial Development - Second Edition](http://www.packtpub.com/python-geospatial-development-second-edition/book)
+- [GeoServer Beginner’s Guide](http://www.packtpub.com/geoserver-share-edit-geospatial-data-beginners-guide/book)
+- [OpenStreetMap](http://www.packtpub.com/openstreetmap/book)
+- [Building Web and Mobile ArcGIS Server Applications with JavaScript](http://www.packtpub.com/building-web-and-mobile-arcgis-server-applications-with-javascript/book)
 
 Je vous laisse faire le tour de la boutique et trouver votre bonheur. Il ne vous reste plus qu'à en profiter, alors n'hésitez pas :D
 

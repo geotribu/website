@@ -52,9 +52,9 @@ Source du tableau : le [Wiki d'OSM](https://wiki.openstreetmap.org/wiki/Slippy_m
 
 Cette manière de faire a été notamment popularisée par la spécification [Tile Map Service (TMS)](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification) définie par l'OSGEO. Par la suite, de nombreuses applications se sont appuyés sur cette spécification à l'exemple de [TileCache](http://tilecache.org/) ou encore [GeoWebache](http://geowebcache.org/). Si vous pré-générez vos tuiles avec un logiciel implémentant le standard TMS, vous obtiendrez en sortie une architecture de répertoires en 3 niveaux (z, x, y) dont la numérotation correspond à :
 
-* Répertoire 1 = Zoom
-  * Répertoir 1.1 = X (Longitude)
-    * Répertoire 1.1.1 = Y (Latitude)
+- Répertoire 1 = Zoom
+  - Répertoir 1.1 = X (Longitude)
+    - Répertoire 1.1.1 = Y (Latitude)
 
 [![TMS Specification](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2014/Tms.png "TMS Specification"){: .img-center loading=lazy }](http://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)
 

@@ -56,9 +56,9 @@ Aldo NAPOLI, Chargé de recherche à MINES ParisTech - CRC
 
 ## Quelques références des encadrants dans le domaine
 
-* Bouejla A, Chaze X, Guarniéri F, Napoli A, 2014 : A Bayesian network to manage risks of maritime piracy against offshore oil fields ; Safety Science 68 (2014) Pages 222-230.
-* Vatin G, Napoli A, 2013 : Taxonomie des tâches d'analyse géovisuelle de risques ; 26ème Conférence Cartographique Internationale, Dresde, Allemagne.
-* Chaze X, Bouejla A, Guarniéri F, Napoli A, 2013 : Causal Probabilistic Modeling with Bayesian Networks to Combat the Risk of Piracy Against Offshore Oil Platforms ; The Radio Science Bulletin 345, Disaster Management special issue (2013) Pages 21-34.
+- Bouejla A, Chaze X, Guarniéri F, Napoli A, 2014 : A Bayesian network to manage risks of maritime piracy against offshore oil fields ; Safety Science 68 (2014) Pages 222-230.
+- Vatin G, Napoli A, 2013 : Taxonomie des tâches d'analyse géovisuelle de risques ; 26ème Conférence Cartographique Internationale, Dresde, Allemagne.
+- Chaze X, Bouejla A, Guarniéri F, Napoli A, 2013 : Causal Probabilistic Modeling with Bayesian Networks to Combat the Risk of Piracy Against Offshore Oil Platforms ; The Radio Science Bulletin 345, Disaster Management special issue (2013) Pages 21-34.
 
 ----
 

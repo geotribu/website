@@ -29,9 +29,9 @@ Beaucoup de métiers sous-utilisent les possibilités offertes par la cartograph
 
 En effet, l'environnement technique commence à le permettre alors que ce changement est déjà présent chez des éditeurs comme Esri:
 
-* Complémentarité de QGIS avec OpenGeoSuite: un plugin permet de publier facilement depuis QGIS vers GeoServer
-* Publication bureautique via "QGIS RestAPI Plugin" facilitée vers GeoServer et MapServer via les API REST native de GeoServer et pour MapServer avec la [REST API](https://github.com/neogeo-technologies/mra)
-* QGIS server va continuer son développement soit en direct (avec Lizmap) soit via des IHM du type LizMap Web. D'autres besoins vont apparaître malgré le support WMS, WFS-T et WCS. Cela semble déjà se confirmer avec le plugin [qgis2threejs](http://www.portailsig.org/content/plugin-qgis-visualisez-facilement-toutes-vos-couches-en-3d-dans-un-navigateur-avec-qgis2thre)
+- Complémentarité de QGIS avec OpenGeoSuite: un plugin permet de publier facilement depuis QGIS vers GeoServer
+- Publication bureautique via "QGIS RestAPI Plugin" facilitée vers GeoServer et MapServer via les API REST native de GeoServer et pour MapServer avec la [REST API](https://github.com/neogeo-technologies/mra)
+- QGIS server va continuer son développement soit en direct (avec Lizmap) soit via des IHM du type LizMap Web. D'autres besoins vont apparaître malgré le support WMS, WFS-T et WCS. Cela semble déjà se confirmer avec le plugin [qgis2threejs](http://www.portailsig.org/content/plugin-qgis-visualisez-facilement-toutes-vos-couches-en-3d-dans-un-navigateur-avec-qgis2thre)
 
 ## 3) La cartographie en ligne va enfin passer à HTML 5
 
@@ -58,23 +58,23 @@ Des nouveaux venus vont bousculer la donne dans le petit monde des satellites do
 
 Nous avons trouvé trois sources en anglais:
 
-* <http://sensorsandsystems.com/dialog/perspectives/32439-ten-predictions-for-2014.html>
-* <http://geohipster.com/2013/12/31/what-will-be-hot-in-geo-in-2014-predictions-from-the-geohipster-crowd/>
-* <http://boundlessgeo.com/2014/01/paul-ramsey-predictions-2014/>
+- <http://sensorsandsystems.com/dialog/perspectives/32439-ten-predictions-for-2014.html>
+- <http://geohipster.com/2013/12/31/what-will-be-hot-in-geo-in-2014-predictions-from-the-geohipster-crowd/>
+- <http://boundlessgeo.com/2014/01/paul-ramsey-predictions-2014/>
 
 Publié depuis Twitter, on rajoutera les prédictions de [@cedricmoullet](https://twitter.com/cedricmoullet)
 
-2014 Geoweb Prediction #1: Full convergence: mobile, desktop, 2D, 3D, 4D -> all in one geoportal !  
-2014 Geoweb Prediction #2: Web mapping applications will mainly use HTTPS  
-2014 Geoweb Prediction #3: OpenLayers 3 will be very largely used  
-2014 Geoweb Prediction #4: Vector data in web mapping applications will be the rule  
-2014 Geoweb Prediction #5: Foundation, Bootstrap, AngularJS, Ember etc... will be largely used in web mapping applications  
-2014 Geoweb Prediction #6: SEO will be a very hot topic for geoportals  
-2014 Geoweb Prediction #7: MapBox will be bought by one big player
+- 2014 Geoweb Prediction #1: Full convergence: mobile, desktop, 2D, 3D, 4D -> all in one geoportal !  
+- 2014 Geoweb Prediction #2: Web mapping applications will mainly use HTTPS  
+- 2014 Geoweb Prediction #3: OpenLayers 3 will be very largely used  
+- 2014 Geoweb Prediction #4: Vector data in web mapping applications will be the rule  
+- 2014 Geoweb Prediction #5: Foundation, Bootstrap, AngularJS, Ember etc... will be largely used in web mapping applications  
+- 2014 Geoweb Prediction #6: SEO will be a very hot topic for geoportals  
+- 2014 Geoweb Prediction #7: MapBox will be bought by one big player
 
 Enfin, on terminera par une source en français:
 
-* [http://fr.slideshare.net/Esri_France/2014-trends-v5](http://fr.slideshare.net/Esri_France/2014-trends-v5)
+- [http://fr.slideshare.net/Esri_France/2014-trends-v5](http://fr.slideshare.net/Esri_France/2014-trends-v5)
 
 On verra bien en fin d'année qui a gagné à ce petit jeu ;) et si des prophéties auto-réalisatrices ont lieu (voir [cet article](http://www.persee.fr/web/revues/home/prescript/article/spgeo_0046-2497_2000_num_29_2_1981) pour les plus curieux).
 

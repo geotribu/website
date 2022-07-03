@@ -16,7 +16,7 @@ tags:
 
 La fin de l'année est toujours propice à faire le bilan des jours écoulés. Pour Géotribu, celle-ci aura été riche en activités, mais pas question pour autant de nous endormir sur nos lauriers. En effet, 2014 s'annonce tout aussi intense.
 
- Nous vous livrons ci-dessous les différents moments forts et quelques faits marquants. Puis nous présentons nos objectifs pour l'année prochaine. N'hésitez pas à réagir, si vous avez des sujets que vous souhaiteriez voir aborder, de bonnes idées ou des suggestions.
+Nous vous livrons ci-dessous les différents moments forts et quelques faits marquants. Puis nous présentons nos objectifs pour l'année prochaine. N'hésitez pas à réagir, si vous avez des sujets que vous souhaiteriez voir aborder, de bonnes idées ou des suggestions.
 
 ----
 

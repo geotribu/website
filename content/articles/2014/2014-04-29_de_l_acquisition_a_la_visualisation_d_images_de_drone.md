@@ -47,9 +47,10 @@ Contrairement aux techniques d'acquisition classiques par capteurs sophistiqués
 
 Il sera alors nécessaire d'aligner (ou autrement dit de fusionner) ces différentes prises de vue afin d'obtenir une seule image continue. Pour cela, différentes techniques existent, mais globalement l'idée est de rechercher les entités correspondantes (keypoints) entre les différentes photos afin de construire l'image finale. Le code couleur utilisé permet de rapidement identifier les images dont l'alignement n'a pu être réalisé pour cause de mauvaise calibration du capteur ou de mauvais paramétrage de la mission:
 
-* Le rond bleu correspond à la position initiale de l'image obtenue à partir des coordonnées GPS initiales
-* Le rond vert est la position optimisée de l'image calculée par Pix4D Mapper prenant en compte le système de coordonnées géographiques de référence des points de calage
-* Un rond rouge correspond à une caméra non calibrée et elle ne peut donc être utilisée
+- Le rond bleu correspond à la position initiale de l'image obtenue à partir des coordonnées GPS initiales
+- Le rond vert est la position optimisée de l'image calculée par Pix4D Mapper prenant en compte le système de coordonnées géographiques de référence des points de calage
+- Un rond rouge correspond à une caméra non calibrée et elle ne peut donc être utilisée
+
 L'image ci-dessous présente le résultat de cette opération et comme vous pouvez le constater, un grand nombre d'images n'ont pu être alignées du fait d'une erreur de paramétrage lors de la mission. Ce n'est pas le but de ce billet, mais sachez que la nouvelle version de Pix4D permet de spécifier manuellement des points de correspondance afin d'améliorer le résultat final.
 
 [![Alignement d'images](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/alignement-images.png "Alignement d'images"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/alignement-images.png"Alignement d'images"){: data-mediabox="lightbox-gallery" data-title="Alignement d'images" }

@@ -1,5 +1,5 @@
 ---
-title: "Plein flux sur  la géomatique"
+title: "Plein flux sur la géomatique"
 authors:
     - Julien MOURA
 category: ["article"]
@@ -11,7 +11,7 @@ tags:
     - veille
 ---
 
-# Plein flux sur  la géomatique
+# Plein flux sur la géomatique
 
 :calendar: Date de publication initiale : 06 janvier 2014
 
@@ -33,12 +33,9 @@ Les flux concernent les blogs francophones, anglophones et hispanophones dont j'
 Pour importer sous [Feedly](http://feedly.com), si vous avez déjà un compte allez [voir cortex](http://feedly.com/#cortex) ou suivez cette procédure :
 
 1. Télécharger le fichier OPML ci-dessus (clic-droit / Enregistrer la cible du lien sous...)
-2. Sur l'interface de Feedly, allez dans *Organize* via le menu en bas à gauche de l'interface :
-
+2. Sur l'interface de Feedly, allez dans `Organize` via le menu en bas à gauche de l'interface :
 [![Feedly organize](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/flux_rss/Feedly_Organize.jpg "Feedly organize menu"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/flux_rss/Feedly_Organize.jpg "Feedly organize menu"){: data-mediabox="lightbox-gallery" data-title="Feedly organize menu" }
-
-3. Cliquez sur Import et sélectionnez le fichier téléchargé :  
-
+3. Cliquez sur Import et sélectionnez le fichier téléchargé :
 [![Feedly import](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/flux_rss/Feedly_ImportOPML.jpg "Feedly import opml"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/flux_rss/Feedly_ImportOPML.jpg "Feedly import opml"){: data-mediabox="lightbox-gallery" data-title="Feedly import opml" }
 
 Merci à Christophe Rodier pour [la piqûre de rappel](https://twitter.com/leponot/status/419136405424463872) :wink:.
