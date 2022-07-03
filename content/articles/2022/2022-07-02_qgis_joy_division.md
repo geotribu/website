@@ -33,7 +33,7 @@ La couverture, iconique, de l'album Unkown Pleasures du groupe Joy Division, ins
 
 Voici par exemple une carte de l'Islande :
 
-![carte de l'islande](https://www.flickr.com/photos/suda/5384299394 "carte de l'islande"){: loading=lazy .img-center }
+![carte de l'islande](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/islande.jpg "carte de l'islande"){: loading=lazy .img-center }
 
 Dans le monde de la dataviz, on nomme ce type de rendu des [ridgelines](https://www.data-to-viz.com/graph/ridgeline.html).
 
@@ -285,9 +285,9 @@ Pas mal de variations sont possibles sur la base de ces lignes. Voici une petite
 <blockquote class="twitter-tweet" data-lang="fr" data-dnt="true"><p lang="en" dir="ltr">Manicougan Crater, ridgeplot syle. SRTM DEM, Blender. <a href="https://t.co/KGZQh7j57p">pic.twitter.com/KGZQh7j57p</a></p>&mdash; Steven Kay (@stevefaeembra) <a href="https://twitter.com/stevefaeembra/status/1543318675230543874?ref_src=twsrc%5Etfw">2 juillet 2022</a></blockquote>
 
 ## Crédits
-- Carte de l'Islande par Brian Suda : https://www.flickr.com/photos/suda/5384299394
-- Courbe de réponse fréquentielle par Dominic Alves : https://www.flickr.com/photos/dominicspics/27777314569
-- Image originale ayant inspiré la couverture de l'album : https://cococubed.com/images/unknown_pleasures/craft_fig537.jpg
+- [Carte de l'Islande par Brian Suda](https://www.flickr.com/photos/suda/5384299394)
+- [Courbe de réponse fréquentielle par Dominic Alves](https://www.flickr.com/photos/dominicspics/27777314569)
+- [Image originale ayant inspiré la couverture de l'album](https://cococubed.com/images/unknown_pleasures/craft_fig537.jpg)
 
 ----
 
