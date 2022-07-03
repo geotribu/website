@@ -85,7 +85,7 @@ Vous obtiendrez alors :
 La voici, ma chère montagne !
 
 ## Création de la couche d'emprise
-Ensuite, créez une couche selon l'étendue de votre MNT. 
+Ensuite, créez une couche selon l'étendue de votre MNT.
 
 Allez sur 'Extraire l'emprise de la couche' :
 
@@ -123,7 +123,7 @@ Pour ce faire, il faut utiliser le code suivant :
 				'y',
 				@element,
 				make_line(
-					make_point(x_min($geometry), @y), 
+					make_point(x_min($geometry), @y),
 					make_point(x_max($geometry), @y)
 				)
 			)
@@ -131,7 +131,7 @@ Pour ce faire, il faut utiliser le code suivant :
 	)
 
 Ce dernier génère une séries de coordonnées Y
-	
+
 	generate_series(
 		y_min($geometry),
 	 	y_max($geometry),
@@ -139,9 +139,9 @@ Ce dernier génère une séries de coordonnées Y
 	)
 
 Et crée une ligne entre le X min et le X max de l'étendue pour chaque Y
-	
+
 	make_line(
-		make_point(x_min($geometry), @y), 
+		make_point(x_min($geometry), @y),
 		make_point(x_max($geometry), @y)
 	)
 
@@ -164,8 +164,8 @@ Voici le code associé.
 					@element,
 					array_foreach(
 						generate_series(
-							x_min($geometry), 
-							x_max($geometry), 
+							x_min($geometry),
+							x_max($geometry),
 							50), -- Espace horizontal entre les points
 						with_variable(
 							'x',
@@ -178,7 +178,7 @@ Voici le code associé.
 	)
 
 
-Nous utilisons `collect_geometries` deux fois : 
+Nous utilisons `collect_geometries` deux fois :
 
 1. une fois pour agréger les points d'une ligne
 - une autre fois pour agréger toutes les lignes de points
@@ -205,11 +205,11 @@ Voici le code associé à ce rendu :
 					y_max($geometry) - 200,
 					(bounds_height($geometry) - 400) / 100
 				),
-			
+
 				with_variable(
 					'y',
 					@element,
-					
+
 					make_line(
 						array_foreach(
 							generate_series(
@@ -219,7 +219,7 @@ Voici le code associé à ce rendu :
 								with_variable(
 									'x',
 									@element,
-							
+
 									with_variable(
 										'point',
 										make_point(@x, @y),
@@ -234,7 +234,7 @@ Voici le code associé à ce rendu :
 					)
 				)
 			)
-		), 
+		),
 		200 -- Valeur de lissage pour les lignes
 	)
 
@@ -262,7 +262,7 @@ Pour avoir cent lignes, comme les 100 impulsions du pulsar, on utilise l'express
 		(bounds_height($geometry) - 400) / 100
 	)
 
-Si aucune valeur n'est trouvée sur un point, alors aucune géométrie ne sera retournée. On a dû affecter un petit offset aux X pour que les points croisent correctement le MNT. 
+Si aucune valeur n'est trouvée sur un point, alors aucune géométrie ne sera retournée. On a dû affecter un petit offset aux X pour que les points croisent correctement le MNT.
 
 	generate_series(
 		x_min($geometry) + 1, -- offset de 1 m
