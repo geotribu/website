@@ -22,7 +22,7 @@ tags:
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
-Il arrive que, pour différentes raisons, vous receviez une couche de données qui est topologiquement invalide (polygones dont certains arcs se croisent, etc.). Avant d'entrer dans le vif du sujet et si le mot topologie ne vous est pas familier, je vous conseille la lecture de [l'excellent article](http://www.portailsig.org/content/grass-gis-geometries-topologies-et-consequences-pratiques-vecteurs-rasters-volumes) de Martin laloux paru sur le Portail SIG.
+Il arrive que, pour différentes raisons, vous receviez une couche de données qui est topologiquement invalide (polygones dont certains arcs se croisent, etc.). Avant d'entrer dans le vif du sujet et si le mot topologie ne vous est pas familier, je vous conseille la lecture de [l'excellent article](http://www.portailsig.org/content/grass-gis-geometries-topologies-et-consequences-pratiques-vecteurs-rasters-volumes) de Martin Laloux paru sur le Portail SIG.
 
 Bon revenons à nos moutons et à ma couche de données. Donc j'ai reçu des données prises depuis un GPS puis directement exportées au format Shapefiles. En raison de l'imprécision du GPS et du trajet effectué par la personne en charge de l'acquisition des données, la géométrie finale n'était pas toujours topologiquement valide. Ainsi, mes données s'affichaient correctement sur QGIS mais pour autant il m'était impossible de les analyser ou encore de les importer dans PostGIS. En effet, lors de l'import la librairie GEOS se plaignait à juste titre des nombreuses erreurs de topologie.
 
