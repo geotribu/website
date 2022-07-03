@@ -14,13 +14,15 @@ tags:
 
 :calendar: Date de publication initiale : 25 mai 2014
 
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+
 Le Centre de recherche sur les Risques et les Crises (CRC) de MINES ParisTech propose un sujet de thèse sur la géocollaboration. Plus de détails sont disponibles à la suite de ce billet et surtout n'hésitez pas à postuler !
 
 ----
 
 ## Laboratoires d’accueil
 
-#### Centre de recherche sur les Risques et les Crises de MINES ParisTech
+### Centre de recherche sur les Risques et les Crises de MINES ParisTech
 
 Créé en 2008, le CRC conduit des recherches à la croisée des sciences humaines et sociales (SHS) et des sciences pour l'ingénieur (SPI). Les travaux, façonnés par la modélisation et l'ingénierie, visent à formaliser et à unifier des savoirs afin de permettre aux individus, aux organisations (et plus particulièrement aux entreprises) et aux territoires de réduire leurs vulnérabilités et d'accroître leurs capacités de résilience face à des événements particulièrement perturbateurs et dommageables (catastrophe technologique majeure, accident du travail, maladie professionnelle, aléa naturel et environnemental, acte de malveillance, terrorisme, risque de projet, risque opérationnel...).
 
@@ -54,9 +56,9 @@ Aldo NAPOLI, Chargé de recherche à MINES ParisTech - CRC
 
 ## Quelques références des encadrants dans le domaine
 
-* Bouejla A, Chaze X, Guarniéri F, Napoli A, 2014 : A Bayesian network to manage risks of maritime piracy against offshore oil fields ; Safety Science 68 (2014) Pages 222-230.
-* Vatin G, Napoli A, 2013 : Taxonomie des tâches d'analyse géovisuelle de risques ; 26ème Conférence Cartographique Internationale, Dresde, Allemagne.
-* Chaze X, Bouejla A, Guarniéri F, Napoli A, 2013 : Causal Probabilistic Modeling with Bayesian Networks to Combat the Risk of Piracy Against Offshore Oil Platforms ; The Radio Science Bulletin 345, Disaster Management special issue (2013) Pages 21-34.
+- Bouejla A, Chaze X, Guarniéri F, Napoli A, 2014 : A Bayesian network to manage risks of maritime piracy against offshore oil fields ; Safety Science 68 (2014) Pages 222-230.
+- Vatin G, Napoli A, 2013 : Taxonomie des tâches d'analyse géovisuelle de risques ; 26ème Conférence Cartographique Internationale, Dresde, Allemagne.
+- Chaze X, Bouejla A, Guarniéri F, Napoli A, 2013 : Causal Probabilistic Modeling with Bayesian Networks to Combat the Risk of Piracy Against Offshore Oil Platforms ; The Radio Science Bulletin 345, Disaster Management special issue (2013) Pages 21-34.
 
 ----
 
