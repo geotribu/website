@@ -17,11 +17,13 @@ tags:
 
 ***Article invité proposé par Clément Igonet***
 
- Depuis plusieurs années impressionné par les évolutions en terme de cartographie numérique, le projet [OpenStreetMap](https://www.openstreetmap.org/) me fait rêver tous les jours un peu plus à de nouvelles applications à portée de nos mains.  
+![Logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "OpenStreetMap"){: .img-rdp-news-thumb }
 
- Des plans de routes, des contours de bâtiment, leurs hauteurs, nombre d'étages, les types de toiture, les textures, les points d'intérêt, le projet Indoor... Énormément de choses ont déjà été imaginées par des passionnés qui contribuent progressivement au potentiel du projet OpenStreetMap.  
+Depuis plusieurs années impressionné par les évolutions en terme de cartographie numérique, le projet [OpenStreetMap](https://www.openstreetmap.org/) me fait rêver tous les jours un peu plus à de nouvelles applications à portée de nos mains.  
 
- Ajoutons à cela la simplicité d'utilisation du format X3D (successeur de VRML, au format xml) pour la description de graphes de scène 3D et son implémentation WebGL avec la bibliothèque javascript x3dom maintenant supportée par la majorité des navigateurs web... Il ne reste finalement que peu de choses à faire pour une exploitation à grande échelle de la cartographie libre en 3D.  
+Des plans de routes, des contours de bâtiment, leurs hauteurs, nombre d'étages, les types de toiture, les textures, les points d'intérêt, le projet Indoor... Énormément de choses ont déjà été imaginées par des passionnés qui contribuent progressivement au potentiel du projet OpenStreetMap.  
+
+Ajoutons à cela la simplicité d'utilisation du format X3D (successeur de VRML, au format xml) pour la description de graphes de scène 3D et son implémentation WebGL avec la bibliothèque javascript x3dom maintenant supportée par la majorité des navigateurs web... Il ne reste finalement que peu de choses à faire pour une exploitation à grande échelle de la cartographie libre en 3D.  
 
 Aussi, le fait d'initier le projet [osm2X3D](http://web.osm2x3d.net/) m'a semblé être une évidence.
 
@@ -35,21 +37,23 @@ J'ai alors codé en C++ un convertisseur de données, un peu dans le même état
 
 Le squelette du code C++ tient en quelques classes dont le contenu est relativement simple :
 
-* Le monde 3D (world),
-* le sol (ground),
-* les bâtiments (building),
-* les blocs spécifiques de bâtiment (building part),
-* les étages (floor),
-* les toits (roof),
-* un convertisseur (converter)
+- Le monde 3D (world),
+- le sol (ground),
+- les bâtiments (building),
+- les blocs spécifiques de bâtiment (building part),
+- les étages (floor),
+- les toits (roof),
+- un convertisseur (converter)
+
 Je n'ai eu qu'à intégrer tout ça avec la lib js x3dom, secouer tout ça, et ça donne la démo suivante: <http://web.osm2X3D.net>.
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/osm2x3d.png)
+[![osm2X3D](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/osm2x3d.png "osm2X3D"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/osm2x3d.png "osm2X3D"){: data-mediabox="lightbox-gallery" data-title="osm2X3D" }
 
 Bien sûr, il ne s'agit là que d'une première avancée. Pour un meilleur rendu 3D, et à moindres frais, il reste à prendre en charge:
 
-* les différents types de toitures,
-* les textures de bâtiment.
+- les différents types de toitures,
+- les textures de bâtiment.
+
 Ultérieurement, on peut aussi imaginer la prise en compte des élévations de sol par exploitation des données mises à dispositions (CCCOT, IGN, NASA, etc...)
 
 ## Ambitions Indoor et B2B
@@ -62,19 +66,19 @@ La première orientation que je prends, c'est de m'appuyer sur des projets tels 
 
 Une autre orientation, plus "B2B" est de s'appuyer sur une source tierce de données avec des fonds de plans dans un format ouvert et standard (SVG) et des implantations de points (P.O.I.) dans ces plans. Cette orientation convient certainement plus à des applications offline et plus ou moins privées:
 
-* détection incendie,
-* galeries marchandes,
-* agences immobilières,
-* offices HLM,
-* etc...
+- détection incendie,
+- galeries marchandes,
+- agences immobilières,
+- offices HLM,
+- etc...
 
 ## Navigation dynamique
 
 Une autre orientation du projet, à destination du grand public, est de mettre à jour dynamiquement la scène 3D sous forme d'intégration de flux de données OSM. Les spécifications X3D et la mise en œuvre avec x3dom permettent cette gestion dynamique de la scène 3D. Cela concerne notament les données suivantes:
 
-* fonds de plan (tile),
-* infos de bâtiments,
-* élévation de sol.
+- fonds de plan (tile),
+- infos de bâtiments,
+- élévation de sol.
 
 ## Join us
 

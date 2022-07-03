@@ -90,7 +90,7 @@ plugins:
         "node/679.md": "articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md"
         "node/689.md": "articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md"
         "node/680.md": "articles/2014/art_2014-03-19_geogame_pendu_geomatique.md"
-        "node/811.md": "articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md"
+        "node/811.md": "articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md"
         # recent moves
         "acknowledgements.md": "team/index.md"
         "install_webapp.md": "articles/2020/2020-03-20_installer_site_comme_application.md"
@@ -183,6 +183,12 @@ theme:
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Basculer en mode clair
+
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -199,7 +205,7 @@ theme:
       accent: "deep orange"
       toggle:
         icon: material/weather-night
-        name: Basculer en mode clair
+        name: Basculer sur le réglage système
 
 # Customization
 extra:

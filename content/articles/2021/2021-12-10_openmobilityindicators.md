@@ -44,7 +44,7 @@ L'ensemble du projet (code, données, livrables) est un commun librement utilisa
 
 ### Sous le capot
 
-On retrouve des [notebooks](https://gitlab.com/open-mobility-indicators/indicators) essentiellement basés sur [pyrosm](https://pyrosm.readthedocs.io/en/latest/) et [geopandas](geopandas.org/) comme librairies géomatiques.  
+On retrouve des [notebooks](https://gitlab.com/open-mobility-indicators/indicators) essentiellement basés sur [pyrosm](https://pyrosm.readthedocs.io/en/latest/) et [geopandas](https://geopandas.org/) comme librairies géomatiques.  
 L'application web cartographique utilise [SvelteKit](https://kit.svelte.dev/) et [Maplibre](https://maplibre.org/).  
 Les tuiles vecteur sont générées avec [tipecannoe](https://github.com/mapbox/tippecanoe).
 
