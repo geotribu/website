@@ -45,7 +45,7 @@ L'album [Unknow Pleasures](https://fr.wikipedia.org/wiki/Unknown_Pleasures) est 
 
 Quand on regarde la couverture, tous les férus de carto y voient des courbes de niveau, ou un paysage. Personnellement, ça me fait penser à [la vidéo promotionnelle du logiciel GRASS (1987)](https://youtu.be/cZia3ShzTWM?t=558).
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/grass.png){: loading=lazy .img-center }
+[![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/grass.png){: loading=lazy .img-center }](https://youtu.be/cZia3ShzTWM?t=558)
 
 La couverture est en réalité la reproduction d'une image intitulée "100 consecutive pulses from the pulsar CP 1919" qui représente les émissions radio du tout premier pulsar découvert en 1967. Chaque ligne représente une impulsion. C'était donc déjà une dataviz.
 
