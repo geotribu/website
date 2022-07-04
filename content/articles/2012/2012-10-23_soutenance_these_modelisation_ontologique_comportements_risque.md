@@ -16,7 +16,9 @@ tags:
 
 :calendar: Date de publication initiale : 23 octobre 2012
 
-![1349961186_graduation.png](http://geotribu.net/sites/default/files/Tuto/img/Blog/divers/1349961186_graduation.png)Vous êtes dans la région (Sophia Antipolis) le 30 Novembre (14h) et le domaine des ontologies vous intéresse ? Alors, n'hésitez pas à passer pour assister à ma soutenance de thèse. Celle-ci porte sur la modélisation ontologique des connaissances expertes pour l'analyse de comportements à risque. Cette modélisation a été plus spécifiquement appliquée à la surveillance maritime. Je vous laisse découvrir ci-dessous le résumé :
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+
+Vous êtes dans la région (Sophia Antipolis) le 30 Novembre (14h) et le domaine des ontologies vous intéresse ? Alors, n'hésitez pas à passer pour assister à ma soutenance de thèse. Celle-ci porte sur la modélisation ontologique des connaissances expertes pour l'analyse de comportements à risque. Cette modélisation a été plus spécifiquement appliquée à la surveillance maritime. Je vous laisse découvrir ci-dessous le résumé :
 
 Dans nos sociétés où l'information est devenue omniprésente, la capacité à pouvoir capter et exploiter celle-ci est un enjeu majeur pour toute entité amenée à prendre une décision. En effet, de cette capacité dépendent ensuite les actions et les moyens d'interventions qui seront engagés. Mais, face à l'augmentation des données disponibles, au nombre croissant d'acteurs et à la complexification des menaces, l'environnement dans lequel évolue le décideur est marqué par une grande incertitude.
 
@@ -28,28 +30,24 @@ Une fois la connaissance modélisée, il est alors possible de l'intégrer au se
 
 Les travaux présentés dans cette thèse se situent au croisement de la gestion des connaissances et du raisonnement spatial. Il s'agit en effet d'étudier les défis et les avantages qui découlent d'une exploitation maîtrisée des informations spatiales à des fins décisionnelles. Pour cela une modélisation des connaissances expertes ainsi qu'un prototype de système de surveillance maritime ont été proposés. Bien que les tests de performance effectués montrent qu'une utilisation en temps réel est pour le moment prématurée, il est néanmoins possible de s'appuyer sur l'approche présentée lors notamment des phases de retour d'expérience. Au-delà du domaine maritime, ce travail de recherche propose également une formalisation des règles spatiales sous la forme d'une extension du langage SWRL. Des mots clés tels que intersects ou touches sont traités par le moteur d'inférence comme significatif d'une fonction spatiale et utilisés comme paramètre afin d'exprimer des règles de comportements.
 
-**Bibliographie**
+## Bibliographie
 
-*  
-Horrocks, Ian, Peter Patel-Schneider, Harold Boley, Said Tabet, Benjamin Grosof, and Mike Dean. 2004. “SWRL: A Semantic Web Rule Language Combining OWL and RuleML.” <http://www.w3.org/Submission/SWRL/>.*
+- Horrocks, Ian, Peter Patel-Schneider, Harold Boley, Said Tabet, Benjamin Grosof, and Mike Dean. 2004. “SWRL: A Semantic Web Rule Language Combining OWL and RuleML.” <http://www.w3.org/Submission/SWRL/>.
+- Jangal, Florent, Jean-Pierre Georgé, Alain Bonnot, Marie-Annick Giraud, Michel Morel, Aldo Napoli, and Anne Littaye. 2009. “Toward a Complete System for Surveillance of the Whole EEZ: ScanMaris and Associated Projects.” In OCEANS 2009, MTS/IEEE Biloxi - Marine Technology for Our Future: Global and Local Challenges, 1 –4.
+- Jangal, Florent, Marie-Annick Giraud, Anne Littaye, Michel Morel, Jean-Pierre Mano, and Aldo Napoli. 2008. “Extraction of Suspicious Behavior of Vessels in the Exclusive Economic Zone.” In International Symposium on Antennas Et Propagation.
+- Dia Miron, Alina. 2009. “Découverte D’associations Sémantiques Pour Le Web Sémantique Géospatial - Le Framework ONTOAST”. THESE, Université Joseph-Fourier - Grenoble I. <http://tel.archives-ouvertes.fr/tel-00635118>.
+- Morel, Michel, Marie-Pierre Gleizes, Aldo Napoli, Anne Littaye, Valérie Bazin, Bernard Alhadef, Christian Scapel, Bruno Leroy, Jacques Lebrevelec, and Daniel Dejardin. 2007. “Scanmaris: An Adaptative and Integrated Approach for Wide Maritime Zone Surveillance.” In Cognitive Systems with Interactive Sensors (COGIS 2007), 10–14. Stanford University California USA.
+- Spaccapietra, Stefano, Christine Parent, Maria Luisa Damiani, Jose Antonio de Macedo, Fabio Porto, and Christelle Vangenot. 2008. “A Conceptual View on Trajectories.” Data & Knowledge Engineering 65 (1) (April): 126–146.
+- Vandecasteele, Arnaud, and Aldo Napoli. 2012. “Enhancement of Ontology with Spatial Reasoning Capabilities to Support Maritime Anomaly Detection.” In SOSE 2012. Genova, italie.
+- Yan, Zhixian. 2011. “Semantic Trajectories: Computing and Understanding Mobility Data”. Phd, Ecole Polytechnique Fédérale de Lausanne.
 
-Jangal, Florent, Jean-Pierre Georgé, Alain Bonnot, Marie-Annick Giraud, Michel Morel, Aldo Napoli, and Anne Littaye. 2009. “Toward a Complete System for Surveillance of the Whole EEZ: ScanMaris and Associated Projects.” In OCEANS 2009, MTS/IEEE Biloxi - Marine Technology for Our Future: Global and Local Challenges, 1 –4.
+## Localisation de la soutenance
 
-Jangal, Florent, Marie-Annick Giraud, Anne Littaye, Michel Morel, Jean-Pierre Mano, and Aldo Napoli. 2008. “Extraction of Suspicious Behavior of Vessels in the Exclusive Economic Zone.” In International Symposium on Antennas Et Propagation.
+MINES ParisTech salle R017, bâtiment I
 
-Dia Miron, Alina. 2009. “Découverte D’associations Sémantiques Pour Le Web Sémantique Géospatial - Le Framework ONTOAST”. THESE, Université Joseph-Fourier - Grenoble I. <http://tel.archives-ouvertes.fr/tel-00635118>.
-
-Morel, Michel, Marie-Pierre Gleizes, Aldo Napoli, Anne Littaye, Valérie Bazin, Bernard Alhadef, Christian Scapel, Bruno Leroy, Jacques Lebrevelec, and Daniel Dejardin. 2007. “Scanmaris: An Adaptative and Integrated Approach for Wide Maritime Zone Surveillance.” In Cognitive Systems with Interactive Sensors (COGIS 2007), 10–14. Stanford University California USA.
-
-Spaccapietra, Stefano, Christine Parent, Maria Luisa Damiani, Jose Antonio de Macedo, Fabio Porto, and Christelle Vangenot. 2008. “A Conceptual View on Trajectories.” Data & Knowledge Engineering 65 (1) (April): 126–146.
-
-Vandecasteele, Arnaud, and Aldo Napoli. 2012. “Enhancement of Ontology with Spatial Reasoning Capabilities to Support Maritime Anomaly Detection.” In SOSE 2012. Genova, italie.
-
-Yan, Zhixian. 2011. “Semantic Trajectories: Computing and Understanding Mobility Data”. Phd, Ecole Polytechnique Fédérale de Lausanne.
-
-#### Localisation de la soutenance
-
-**MINES ParisTech salle R017, bâtiment I**
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cartosm.eu/map?lon=7.0531001430518&amp;lat=43.615313044755&amp;zoom=17&amp;width=400&amp;height=350&amp;mark=true&amp;nav=true&amp;pan=true&amp;zb=inout&amp;style=default&amp;icon=down"></iframe>`
 
 ----
 

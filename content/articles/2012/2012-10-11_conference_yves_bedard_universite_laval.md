@@ -16,9 +16,11 @@ tags:
 
 :calendar: Date de publication initiale : 11 octobre 2012
 
-![1349961186_graduation.png](http://geotribu.net/sites/default/files/Tuto/img/Blog/divers/1349961186_graduation.png)Si vous êtes dans la région PACA et que vous vous intéressez à la géomatique, alors sortez vos agendas. En effet,le [Professeur Yvan Bédard](http://yvanbedard.scg.ulaval.ca/) de l'[Université Laval](http://www.ulaval.ca/) à Québec donnera une conférence sur le [Spatial OLAP](http://www.spatialbi.org/) et le langage de modélisation PictograF, à [MINES ParisTech, Sophia Antipolis](http://www.sophia.mines-paristech.fr/), le mardi 6 novembre 2012 à 14h. La conférence se déroulera dans l'amphi Mozart et les détails de celle-ci sont détaillés ci-dessous :
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
 
-#### PictograF, langage adaptatif de description des phénomènes spatio-temporels
+Si vous êtes dans la région PACA et que vous vous intéressez à la géomatique, alors sortez vos agendas. En effet,le [Professeur Yvan Bédard](http://yvanbedard.scg.ulaval.ca/) de l'[Université Laval](http://www.ulaval.ca/) à Québec donnera une conférence sur le [Spatial OLAP](http://www.spatialbi.org/) et le langage de modélisation PictograF, à [MINES ParisTech, Sophia Antipolis](http://www.sophia.mines-paristech.fr/), le mardi 6 novembre 2012 à 14h. La conférence se déroulera dans l'amphi Mozart et les détails de celle-ci sont détaillés ci-dessous :
+
+## PictograF, langage adaptatif de description des phénomènes spatio-temporels
 
 Cette première présentation aura pour sujet le langage PictograF, ses possibilités et son utilisation (45 minutes + discussion).
 
@@ -26,11 +28,12 @@ PictograF est un nouveau langage spécialisé résultant de 25 années de R&D et
 
 Le langage PictograF est issu de l'expérience combinée des créateurs, de celles de praticiens d’une quarantaine de pays. Des centaines de géométries, temporalités et évolutions géométriques ont été testées, certaines parmi les plus complexes. La généricité de ce langage fait qu'il peut être intégré à des langages existants afin de les enrichir dans leur capacité d’expression de phénomènes spatio-temporels.
 
-#### Origines, évolution et défis de la technologie SOLAP
+## Origines, évolution et défis de la technologie SOLAP
 
 Les premiers projets faisant appel à l’intégration des concepts OLAP avec les données géospatiales remontent au milieu des années 1990. Principalement sujets de recherche, ces projets furent rapidement suivis par les premières implantations industrielles. Alors que le nombre de projets Spatial OLAP (SOLAP) augmentait dans les premières années de la décennie précédente, c’est au milieu de cette dernière que les premières solutions SOLAP commerciales sont apparues.
 
-![](http://intelli3.com/wp-content/uploads/2012/01/montage_Cartes.png)  
+[![Montage de cartes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/montage_Cartes.png "Montage de cartes"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/montage_Cartes.png "Montage de cartes"){: data-mediabox="lightbox-gallery" data-title="Montage de cartes" }
+
 *Source : [Intelli3](http://www.intelli3.com)*
 
 Cette seconde présentation fera un rappel des origines et de l’évolution de la technologie SOLAP avant de s’attarder sur les défis qui demeurent actuels, tant en R&D que sur le plan pratique (durée 45 minutes +  
@@ -38,13 +41,19 @@ discussion).
 
 Aujourd’hui, cette technologie est offerte par plusieurs compagnies, tant par de petites compagnies innovantes que par les grandes compagnies bien établies. Malgré ce succès récent, un certain nombre de défis persistent.
 
-#### Biographie du professeur Yvan Bédard
+## Biographie du professeur Yvan Bédard
 
-![Yvan_VignetteBlog33.png](http://geotribu.net/sites/default/files/Tuto/img/Blog/divers/Yvan_VignetteBlog33.png)Le Professeur Yvan Bédard est ingénieur professeur en SIG et Bases de données géospatiales à l'Université Laval à Québec. Très actif en recherche depuis 32 ans, il a contribué à plus de 150 publications avec comité de lecture et 350 autres conférences, articles et rapports scientifiques. Directeur-fondateur et encore membre du Centre de Recherche en Géomatique, il a dirigé des projets de R&D pour plus de 12 millions d'euros autant en recherche fondamentale qu'appliquée.  
+![Yvan Bédard](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/bedard-yvan.jpg "Yvan Bédard"){: .img-rdp-news-thumb }
+
+Le Professeur Yvan Bédard est ingénieur professeur en SIG et Bases de données géospatiales à l'Université Laval à Québec. Très actif en recherche depuis 32 ans, il a contribué à plus de 150 publications avec comité de lecture et 350 autres conférences, articles et rapports scientifiques. Directeur-fondateur et encore membre du Centre de Recherche en Géomatique, il a dirigé des projets de R&D pour plus de 12 millions d'euros autant en recherche fondamentale qu'appliquée.  
 Il vient d'ailleurs de compléter une importante Chaire de recherche industrielle avec 9 partenaires privés et gouvernementaux et de créer avec son équipe la compagnie Intelli3 qui commercialise la technologie Map4Decision issue de leurs travaux. En plus de cette technologie qui fut la première technologie géodécisionnelle disponible commercialement, il développa dès 1992 le premier atelier de génie logiciel dédié aux données géospatiales.  
 En plus d'avoir contribué à plusieurs transferts technologiques vers l'industrie, il a reçu d'importants honneurs au Canada et aux USA en géomatique, en génie, en informatique et en arpentage. Ses intérêts de recherche et professionnels gravitent autour de la modélisation des bases de données géospatiales, des technologies géodécisionnelles et de la qualité des données.
 
-#### Localisation de la conférence
+## Localisation de la conférence
+
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://cartosm.eu/map?lon=7.0531001430518&amp;lat=43.615313044755&amp;zoom=17&amp;width=400&amp;height=350&amp;mark=true&amp;nav=true&amp;pan=true&amp;zb=inout&amp;style=default&amp;icon=down"></iframe>`
 
 ----
 

@@ -15,14 +15,15 @@ tags:
 
 :calendar: Date de publication initiale : 12 juillet 2012
 
-![ign_logo.png](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png) C'est l'annonce phare de cette semaine, la sortie du nouveau Géoportail National aussi bien en [version internet classique](https://www.geoportail.gouv.fr/accueil), qu'en [version mobile](http://m.geoportail.fr/). Le travail réalisé par L'Institut National de l'Information Géographique et Forestière (IGN) est conséquent et rien n'a été laissé au hasard.  
+![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }
+
+C'est l'annonce phare de cette semaine, la sortie du nouveau Géoportail National aussi bien en [version internet classique](https://www.geoportail.gouv.fr/accueil), qu'en [version mobile](http://m.geoportail.fr/). Le travail réalisé par L'Institut National de l'Information Géographique et Forestière (IGN) est conséquent et rien n'a été laissé au hasard.  
 
 En réalité, au regard des nombreuses améliorations apportées, je serai presque tenté de dire qu'il s'agit carrément d'une nouvelle application. Un travail conséquent a porté notamment sur l'ergonomie. Celle-ci a été complètement repensée et l'accent est mis sur une interface composée de différents panneaux (Catalogue, Suggestions, Outils, etc.). Il est même possible de complètement replier la carte ce qui à mon sens n'est pas anodin.
 
 En effet, l'objet cartographique n'est plus central comme cela l'était auparavant. Je l’interprète, peut-être à tort, à la fois comme un désir de se démarquer d'applications similaires mais aussi comme une volonté de mettre en avant le catalogue de données que possède l'IGN. Concernant ce dernier, avec près d'une vingtaine de thèmes et de nombreuses données vous pourrez à loisir créer les cartes que vous désirez. Les outils de personnalisation et d'utilisation des données sont nombreux. Sans être exhaustif, il est possible d'enregistrer des lieux favoris, d'importer des données ou encore de partager vos cartes et croquis.
 
-![geoportail.png](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/geoportail_2012.png){: loading=lazy }
-{: align=middle }
+[![Géoportail](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/geoportail_2012.png "Géoportail"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/geoportail_2012.png "Géoportail"){: data-mediabox="lightbox-gallery" data-title="Géoportail" }
 
 D'une manière générale j'avoue avoir été séduit par cette nouvelle version. Mais, eh oui il y a toujours un mais, deux remarques peuvent être signalées :
 

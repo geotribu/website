@@ -14,7 +14,9 @@ tags:
 
 :calendar: Date de publication initiale : 19 juillet 2012
 
-![logo globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "Icône de globe") C'est avec plaisir que nous relayons la Première [Rencontre des Sciences Géomatiques](http://rsg2013.amjgistes.org/) (RSG’ 2013) organisée à Rabat (Maroc). Réalisé à l'initiative de l’Association Marocaine des Jeunes Géomaticiens (l’[AMJG](http://amjgistes.org/)) en collaboration avec de la Faculté des Sciences de Rabat, de l’Université Mohammed V Agdal et de l’Association des jeunes Chercheurs de la Faculté des Sciences de Rabat (AJCFSR), cet événement sera l'occasion de réunir les personnes intéressées par cette discipline.
+![logo globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "Icône de globe"){: .img-rdp-news-thumb }
+
+C'est avec plaisir que nous relayons la Première [Rencontre des Sciences Géomatiques](http://rsg2013.amjgistes.org/) (RSG’ 2013) organisée à Rabat (Maroc). Réalisé à l'initiative de l’Association Marocaine des Jeunes Géomaticiens (l’[AMJG](http://amjgistes.org/)) en collaboration avec de la Faculté des Sciences de Rabat, de l’Université Mohammed V Agdal et de l’Association des jeunes Chercheurs de la Faculté des Sciences de Rabat (AJCFSR), cet événement sera l'occasion de réunir les personnes intéressées par cette discipline.
 
 Pour cela, des professionnels du domaine privé viendront présenter les réponses qu'apporte la Géomatique à leurs problématiques au travers des conférences, des communications affichées, des démonstrations informatisées ou encore d'ateliers thématiques. Des scientifiques montreront aussi comment les sciences géomatiques facilitent de plus en plus la façon du traitement de leurs sujets.
 
