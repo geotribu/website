@@ -26,18 +26,18 @@ Il n'est pas vraiment dans nos habitudes de relayer des informations en dehors d
 
 L'OSGeo-fr organise le 10 juin 2013 la journée Francophone Open Source Géomatique (FROG) à Paris dans les locaux de l'IGN (Saint-Mandé, région parisienne) : <http://frog.osgeo.fr> Le FROG sera une journée de conférences et de rencontres sur les thématiques de l’OSGeo-fr et se veut une occasion de rassembler la communauté des utilisateurs, développeurs, décideurs, ou simples curieux de logiciels libres en géomatique. L'événement devrait rassembler environ 150 personnes. Cette rencontre permettra de partager nos connaissances et notre expérience sous la forme de conférences, d'une durée de 25min (questions incluses), se déroulant en deux sessions parallèles: l'une technique, dédiée au développement et aux logiciels, l'autre sera plus axée sur des cas pratiques d'utilisation. Vous êtes expert sur un domaine lié aux SIG libres? Vous avez utilisé les outils de l'OSGeo dans un contexte spécifique (projet d'envergure, données très volumineuses, client reconnu, projet innovant, etc.)? Vous participez à un projet libre lié à l'OSGeo? Alors n'hésitez à proposer une présentation! Les participants à la journée Francophone Open Source Géomatique (FROG) qui souhaitent présenter leurs projets doivent soumettre un résumé avant le 8 mars 2013. Les résumés doivent être envoyés par mail en texte brut à l’adresse suivante: conferences (at) osgeo.asso.fr en précisant les éléments suivants:
 
-* Votre nom et prénom;
-* Un email de contact;
-* Votre société / employeur;
-* Votre compte twitter (optionnel);
-* Le titre de votre intervention;
-* La durée de votre intervention (25 minutes max. questions comprises);
-* La session de votre intervention (Technique ou Application);
-* Une description courte (200 caractères max.);
-* Une description longue (700 caractères max. + notes biblios);
-* Une photo (200×200 pixels minimum).
+- Votre nom et prénom;
+- Un email de contact;
+- Votre société / employeur;
+- Votre compte twitter (optionnel);
+- Le titre de votre intervention;
+- La durée de votre intervention (25 minutes max. questions comprises);
+- La session de votre intervention (Technique ou Application);
+- Une description courte (200 caractères max.);
+- Une description longue (700 caractères max. + notes biblios);
+- Une photo (200×200 pixels minimum).
 
-Les présentations seront faites en français. Les résumés seront évalués par un comité de programme et les auteurs seront informés de leur acceptation le 30 avril 2013. Les présentations acceptées seront toutes mises à disposition sur [le site de la conférence](http://frog.osgeo.fr/). Un guide des bonnes pratiques est également disponible sur le site. Le choix des sessions sera basé sur la présentation de la soumission, son intérêt pour une audience professionnelle, et la cohérence du programme de la journée. La décision du comité de sélection sera finale et sans appel. Le comité de programme est composé des personnes suivantes: Medhi Semchaoui, Gérald Fenoy, Nicolas Bozon, Vincent Picavet, Pierre André Le Ny, Sidonie Christophe, Pascal Barbier, Etienne DELAY (coordinateur) Les membres du comité s'expriment en leur nom propre. Leurs choix ne reflètent pas la position de leur employeur. Pour toute demande de renseignements, vous pouvez nous adresser un mail à [conferences@osgeo.asso.fr](mailto:conferences@osgeo.asso.fr) L'OSGeo-fr remercie l'IGN pour son support pour l'événement
+Les présentations seront faites en français. Les résumés seront évalués par un comité de programme et les auteurs seront informés de leur acceptation le 30 avril 2013. Les présentations acceptées seront toutes mises à disposition sur [le site de la conférence](http://frog.osgeo.fr/). Un guide des bonnes pratiques est également disponible sur le site. Le choix des sessions sera basé sur la présentation de la soumission, son intérêt pour une audience professionnelle, et la cohérence du programme de la journée. La décision du comité de sélection sera finale et sans appel. Le comité de programme est composé des personnes suivantes: Medhi Semchaoui, Gérald Fenoy, Nicolas Bozon, Vincent Picavet, Pierre André Le Ny, Sidonie Christophe, Pascal Barbier, Etienne DELAY (coordinateur) Les membres du comité s'expriment en leur nom propre. Leurs choix ne reflètent pas la position de leur employeur. Pour toute demande de renseignements, vous pouvez nous adresser un mail à [conferences@osgeo.asso.fr](mailto:conferences@osgeo.asso.fr). L'OSGeo-fr remercie l'IGN pour son support pour l'événement
 
 ## À propos de l'OSGeo-fr
 

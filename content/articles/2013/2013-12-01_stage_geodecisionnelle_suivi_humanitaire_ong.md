@@ -23,10 +23,10 @@ La solution géodécisionnelle sera développée à l’aide de [Map4Decision](h
 
 ## L’objet de ce stage est donc multiple
 
-* Parfaire ses connaissances dans le domaine des actions humanitaires,
-* Se former au géodécisionnel,
-* Se former à la modélisation multidimensionnelle,
-* Maîtriser le logiciel Map4Decision de la société canadienne [Intelli3](http://www.intelli3.com)
+- Parfaire ses connaissances dans le domaine des actions humanitaires,
+- Se former au géodécisionnel,
+- Se former à la modélisation multidimensionnelle,
+- Maîtriser le logiciel Map4Decision de la société canadienne [Intelli3](http://www.intelli3.com)
 
 ## Ce stage se compose de quatre étapes
 

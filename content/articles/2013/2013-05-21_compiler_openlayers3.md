@@ -16,9 +16,9 @@ tags:
 
 [OpenLayers](https://openlayers.org/) 3 s'annonce comme étant la bibliothèque Javascript Open Source la plus avancée dans le domaine de la cartographie. De nombreuses fonctionnalités seront présentes comme des moteurs de rendu aux capacités améliorées (grace a WebGL), mais aussi l'intégration d'environnement 3D avec Cesium.
 
- Pour un avant goût de ses potentialités, le mieux est de consulter les [différents exemples](http://ol3js.org/ol3/master/examples/) ou encore de tester la bibliothèque en ajoutant le lien internet vers le fichier Javascript. C'est cette dernière méthode que j'utilisais habituellement. Mais, récemment quelques soucis de connexions m'ont poussé à télécharger les sources pour l'utiliser en local. Rien de bien méchant me direz-vous, pas la peine d'en faire un billet de blog !
+Pour un avant goût de ses potentialités, le mieux est de consulter les [différents exemples](http://ol3js.org/ol3/master/examples/) ou encore de tester la bibliothèque en ajoutant le lien internet vers le fichier Javascript. C'est cette dernière méthode que j'utilisais habituellement. Mais, récemment quelques soucis de connexions m'ont poussé à télécharger les sources pour l'utiliser en local. Rien de bien méchant me direz-vous, pas la peine d'en faire un billet de blog !
 
- En réalité, c'est un plus compliqué car afin d'optimiser le code, l’équipe en charge du projet a décidé d'utiliser les outils fournis par Google Closure. Il est donc nécessaire dorénavant de compiler cette libraire. Compiler du Javascript ? Oui, c'est bien le cas. Je vous livre ici mon expérience qui sans être compliquée ne fût pas pour autant triviale.
+En réalité, c'est un plus compliqué car afin d'optimiser le code, l’équipe en charge du projet a décidé d'utiliser les outils fournis par Google Closure. Il est donc nécessaire dorénavant de compiler cette libraire. Compiler du Javascript ? Oui, c'est bien le cas. Je vous livre ici mon expérience qui sans être compliquée ne fût pas pour autant triviale.
 
 ## Compiler OpenLayers 3
 
@@ -56,7 +56,7 @@ Maintenant que nous avons les outils nécessaires, nous pouvons passer à la com
 2013-05-17 12:43:22,441 build/ol-whitespace.js: compressed: 237490 bytes
 ```
 
-Si c'est le cas, deux nouveaux fichiers (ol.css et ol.js) ont alors été générés dans le répertoire build. Vous pouvez à présent intégrer OpenLayers 3 en local. Mais qu'en est-il pour la documentation?
+Si c'est le cas, deux nouveaux fichiers (`ol.css` et `ol.js`) ont alors été générés dans le répertoire build. Vous pouvez à présent intégrer OpenLayers 3 en local. Mais qu'en est-il pour la documentation?
 
 ## Compiler la documentation d'OpenLayers 3
 
@@ -72,9 +72,9 @@ Ensuite, il faut ajouter le lien de l'utilitaire dans votre path système:
 export PATH=$PATH:/path_to/jsdoc
 ```
 
-La commande ci-dessus ne permettra d'ajouter jsdoc que le temps de votre session bash. Si vous souhaitez que cela soit permanent, le plus simple est de modifier votre fichier `.bashrc`.
+La commande ci-dessus ne permettra d'ajouter `jsdoc` que le temps de votre session bash. Si vous souhaitez que cela soit permanent, le plus simple est de modifier votre fichier `.bashrc`.
 
-Passons maintenant a la compilation de la documentation. Cela se fait toujours avec le script build.py mais en ajoutant doc comme paramètre:
+Passons maintenant a la compilation de la documentation. Cela se fait toujours avec le script `build.py` mais en ajoutant doc comme paramètre:
 
 ```bash
 ./build.py apidoc

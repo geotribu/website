@@ -28,9 +28,9 @@ Un bloc note, un crayon, arf... c'est un peu *old school* tout ça non? De plus,
 
 Que diriez-vous alors, si je vous annonçais qu'il existe une application spécifiquement dédiée à la collecte de données. Que celle-ci permet notamment d'enregistrer des messages, des notes ou de prendre des photos géoréférencées. Cette perle rare existe et se nomme [OSM Tracker](https://play.google.com/store/apps/details?id=me.guillaumin.android.osmtracker&hl=fr). Honnêtement, autant il m'arrive souvent d’être critique, mais là je ne lui trouve aucun défaut.
 
-* [Site du projet](http://code.google.com/p/osmtracker-android/)
-* [WIKI OSM du projet](https://wiki.openstreetmap.org/wiki/OSMtracker_%28Android%29)
-* [Google Store](https://play.google.com/store/apps/details?id=me.guillaumin.android.osmtracker&hl=fr)
+- [Site du projet](http://code.google.com/p/osmtracker-android/)
+- [WIKI OSM du projet](https://wiki.openstreetmap.org/wiki/OSMtracker_%28Android%29)
+- [Google Store](https://play.google.com/store/apps/details?id=me.guillaumin.android.osmtracker&hl=fr)
 
 [![OSMTracker](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/images.jpeg "OSMTracker"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/images.jpeg "OSMTracker"){: data-mediabox="lightbox-gallery" data-title="OSMTracker" }
 
@@ -42,9 +42,9 @@ Contrairement à [OSM Tracker](https://play.google.com/store/apps/details?id=me.
 
 Par contre, n'oubliez pas que vous êtes sur un environnement aux capacités (mémoire, processeur, etc.) plus limitées. Évitez de télécharger une trop grande zone. De plus, même si l'interface est bien pensée, il est tout de même facile de faire une fausse manipulation. Vérifiez donc bien vos données avant l'envoi.
 
-* [Site du projet](http://code.google.com/p/osmeditor4android/)
-* [WIKI OSM du projet](https://wiki.openstreetmap.org/wiki/Vespucci)
-* [Google Store](https://play.google.com/store/apps/details?id=de.blau.android&hl=fr)
+- [Site du projet](http://code.google.com/p/osmeditor4android/)
+- [WIKI OSM du projet](https://wiki.openstreetmap.org/wiki/Vespucci)
+- [Google Store](https://play.google.com/store/apps/details?id=de.blau.android&hl=fr)
 
 [![Vespucci](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/vespucci.jpeg "Vespucci"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/vespucci.jpeg "Vespucci"){: data-mediabox="lightbox-gallery" data-title="Vespucci" }
 

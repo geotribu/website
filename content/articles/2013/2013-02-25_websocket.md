@@ -90,10 +90,10 @@ On se retrouve avec un nouveau fichier `composer.lock` et un répertoire `vendor
 
 C'est parti ! On crée une nouvelle classe en PHP qui va s'appeler Truc et qui écoutera les 4 événements suivants :
 
-* `onOpen` qui est appelé quand un nouveau client se connecte ;
-* `onMessage` appelé quand un message arrive ;
-* `onClose` appelé quand une connexion se ferme ;
-* `onError` appelé quand y'a un blème.
+- `onOpen` qui est appelé quand un nouveau client se connecte ;
+- `onMessage` appelé quand un message arrive ;
+- `onClose` appelé quand une connexion se ferme ;
+- `onError` appelé quand y'a un blème.
 
 On édite donc un fichier PHP que l'on enregistre ici `/src/MyApp/Truc.php` - qui utilise la classe de [connexion](http://socketo.me/api/class-Ratchet.ConnectionInterface.html) et celle des [messages](http://socketo.me/api/class-Ratchet.MessageComponentInterface.html) :
 
@@ -282,7 +282,7 @@ Si vous êtes seul sur ce tuto mais que vous avez un smartphone sous la main - t
 
 [![Flashouillez le code](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/qrcode_test-websocket.png "Flashouillez le code"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/qrcode_test-websocket.png "Flashouillez le code"){: data-mediabox="lightbox-gallery" data-title="Flashouillez le code" }
 
-Bon il se peut que le serveur de websocket ne fonctionne pas tout le temps - et ouais c'est une démo ! Et il se peut que vous ayez à modifier le port 8080 par autre chose. Souvent il est pris par Tomcat ce port. Et il faut avoir installé php5-curl, ça marchera mieux.
+Bon il se peut que le serveur de websocket ne fonctionne pas tout le temps - et ouais c'est une démo ! Et il se peut que vous ayez à modifier le port 8080 par autre chose. Souvent il est pris par Tomcat ce port. Et il faut avoir installé `php5-curl`, ça marchera mieux.
 
 ## Tips
 
