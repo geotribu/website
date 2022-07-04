@@ -26,4 +26,4 @@ Merci à Emanuel Schütze pour ce [diagramme des classes de la librairie OpenLay
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

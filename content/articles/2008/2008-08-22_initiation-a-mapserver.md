@@ -136,4 +136,4 @@ Si vous avez tout bien suivi, et que je ne me suis pas trompé (j'espère... :) 
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

@@ -48,4 +48,4 @@ Pour un aperçu complet des possibilités je vous invite à consulter [cette pag
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

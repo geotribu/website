@@ -30,7 +30,7 @@ Afin de comprendre ce tutoriel une bonne connaissance de la logique de Django es
 
 De plus, l'utilisation de GeoDjango nécessite l'installation de librairies supplémentaires (ex : geos, Gdal...). Pour plus de détails le [tutoriel d'installation de GeoDjango](http://geodjango.org/docs/install.html) est à votre disposition.
 
-Nous aborderons au cours des paragraphes suivants la création de notre premier projet cartographique nous permettant de consulter [les frontières mondiales][http://thematicmapping.org/downloads/world_borders.php]( 1). Certaines parties ou codes de ce tutoriel sont directement inspirés et/ou tirés du projet [GeoDjango basic apps](http://code.google.com/p/geodjango-basic-apps/)[^2].
+Nous aborderons au cours des paragraphes suivants la création de notre premier projet cartographique nous permettant de consulter [les frontières mondiales](http://thematicmapping.org/downloads/world_borders.php)[^1]. Certaines parties ou codes de ce tutoriel sont directement inspirés et/ou tirés du projet [GeoDjango basic apps](http://code.google.com/p/geodjango-basic-apps/)[^2].
 
 ## Paramétrages généraux
 
@@ -624,7 +624,7 @@ admin.site.register(WorldBorders, admin.OSMGeoAdmin)
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"
 
 <!-- Notes de bas de page -->
 [^1]: Un grand merci à Bjørn Sandvik de thematicmapping.org qui propose et entretient ce jeu de données.

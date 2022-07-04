@@ -68,7 +68,7 @@ Prenons cette vidéo pour exemple : <https://www.youtube.com/watch?v=St8ArwOa3yA
 
     ![Copier le code d'intégration de la vidéo Youtube](https://cdn.geotribu.fr/img/internal/contribution/videos/embed_youtube_copy_annotated.png)
 
-3. Cliquer sur `Copier`et coller le code d'intégration dans le markdown. Attention, les iframes ne doivent jamais être en retrait (tabulation, espace, etc.) pour ne pas être considérés comme du code :
+3. Cliquer sur `Copier`et coller le code d'intégration dans le markdown. Attention, les iframes ne doivent jamais être en retrait (tabulation, espace, etc.) pour ne pas être considérés comme du code. Il est également recommandé de passer la largeur à 100% et la hauteur à 400 :
 
 === "Markdown"
 
@@ -76,7 +76,7 @@ Prenons cette vidéo pour exemple : <https://www.youtube.com/watch?v=St8ArwOa3yA
     Une **vidéo** d'illustration de cette _webmap_ :
 
     <!-- markdownlint-disable MD033 -->
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/St8ArwOa3yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/St8ArwOa3yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- markdownlint-enable MD033 -->
     ```
 
@@ -84,6 +84,6 @@ Prenons cette vidéo pour exemple : <https://www.youtube.com/watch?v=St8ArwOa3yA
 
     Une **vidéo** d'illustration de cette _webmap_ :
 
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/St8ArwOa3yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/St8ArwOa3yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :bellhop_bell: Voilà, c'est prêt ! :tada:
