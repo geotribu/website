@@ -23,15 +23,17 @@ tags:
 ## Introduction
 Dans cet article, nous allons voir comment créer une carte Post-punk à la mode Joy Division en utilisant les générateurs de géométrie de QGIS.
 
+La couverture de l'album 'Unknow Pleasures' du groupe Joy Division est iconique et a inspiré bon nombre de cartographes. Ne vous fait-elle pas penser à des courbes de niveaux ?
+
 ![joy division cover](https://upload.wikimedia.org/wikipedia/commons/5/5f/Radio_joy_division.jpg "joy division cover"){: loading=lazy .img-center }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
 ## Joy Division, Joy Maps et Joy Plots
-La couverture, iconique, de l'album Unkown Pleasures du groupe Joy Division, inspire bon nombre de cartographes.
+La couverture de l'album Unkown Pleasures du groupe Joy Division amuse beaucoup de cartographes. C'est un thème très repris dans la #gistribe
 
-Voici par exemple une carte de l'Islande :
+Voici par exemple une carte de l'Islande réalisée par un utilisateur :
 
 ![carte de l'islande](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/islande.jpg "carte de l'islande"){: loading=lazy .img-center }
 
@@ -61,13 +63,19 @@ Cette image n'est pas sans rappeler la musique, notamment les courbes de répons
 ![courbe de réponse fréquentielle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/yamaha-sound-analyser.jpg "courbe de réponse fréquentielle"){: loading=lazy .img-center }
 
 ## Téléchargement du MNT
-Je ferai la carte Joy Division de la Montagne Sainte-Victoire. Cette montagne qui domine Aix-en-Provence où j'habite a été souvent peinte par Cézanne.
+Je ferai la carte Joy Division de la Montagne Sainte-Victoire. Celle-ci domine Aix-en-Provence où j'habite.
+
+Voici le secteur sur [Géoportail](https://www.geoportail.gouv.fr/carte?c=5.6006081074750975,43.515372159709386&z=13&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&l1=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2::GEOPORTAIL:OGC:WMTS(1)&l2=GEOGRAPHICALGRIDSYSTEMS.MAPS::GEOPORTAIL:OGC:WMTS(1)&l3=ORTHOIMAGERY.ORTHOPHOTOS::GEOPORTAIL:OGC:WMTS(1)&permalink=yes) :
+
+[![Sainte-Victoire sur Géoportail](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/sainte_220704230109.png "Sainte-Victoire  sur Géoportail"){: loading=lazy .img-center }](https://www.geoportail.gouv.fr/carte?c=5.6006081074750975,43.515372159709386&z=13&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&l1=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2::GEOPORTAIL:OGC:WMTS(1)&l2=GEOGRAPHICALGRIDSYSTEMS.MAPS::GEOPORTAIL:OGC:WMTS(1)&l3=ORTHOIMAGERY.ORTHOPHOTOS::GEOPORTAIL:OGC:WMTS(1)&permalink=yes)
+
+Cette montagne a été souvent peinte par Cézanne.
 
 ![La Sainte Victoire peinte par Cézanne](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/La_Montagne_Sainte-Victoire_de_P._C%C3%A9zanne_%28Fondation_Vuitton%2C_Paris%29_%2833539038628%29.jpg/640px-La_Montagne_Sainte-Victoire_de_P._C%C3%A9zanne_%28Fondation_Vuitton%2C_Paris%29_%2833539038628%29.jpg "La Sainte Victoire par Cézanne"){: loading=lazy .img-center }
 
 Le MNT BDALTI de l'IGN à une résolution de 25 mètres sera suffisant pour notre carte.
 
-Téléchargez le MNT sur votre département (j'avoue que j'ai un faible pour le site de Christian Quest). Pour moi, c'est https://data.cquest.org/ign/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D013_2019-10-01.7z
+Téléchargez le MNT sur votre département (j'avoue que j'ai un faible pour le site de Christian Quest). Pour moi, c'est [https://data.cquest.org/ign/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D013_2019-10-01.7z](https://data.cquest.org/ign/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D013_2019-10-01.7z)
 
 ## Découpage du MNT selon votre zone
 Localisez-vous sur votre zone grâce à l'outil de localisation (plugin [French Locator Filter](https://plugins.qgis.org/plugins/french_locator_filter/))
@@ -85,9 +93,9 @@ Vous obtiendrez alors :
 La voici, ma chère montagne !
 
 ## Création de la couche d'emprise
-Ensuite, créez une couche selon l'étendue de votre MNT.
+Ensuite, créez une couche vectorielle selon l'étendue de votre MNT.
 
-Allez sur 'Extraire l'emprise de la couche' :
+Allez sur `Extraire l'emprise de la couche` :
 
 ![Extraction de l'emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/couche.png "Extraction de l'emprise"){: loading=lazy .img-center }
 
@@ -254,6 +262,10 @@ Pour déplacer le point en fonction de l'altitude au point, nous utilisons la fo
 		raster_value('dem', 1, @point)*2
 	)
 
+Pour créer une ligne depuis les points ou noeuds déplacés, on utilise la fonction `make_line`
+
+	make_line([point1, point2, point3, ...])
+
 Pour avoir cent lignes, comme les 100 impulsions du pulsar, on utilise l'expression :
 
 	generate_series(
@@ -270,15 +282,17 @@ Si aucune valeur n'est trouvée sur un point, alors aucune géométrie ne sera r
 		50
 	)
 
-Nous avons ajouté un petit smoothing aux lignes pour un rendu plus doux.
+Enfin, nous avons ajouté un petit smoothing aux lignes pour un rendu plus doux.
 
-	smooth(..., 200)
+	smooth(..., 1000)
 
 Voilà, le tutoriel est fini. On voit qu'il y a pas mal de choses intéressantes et possibles à faire en utilisant seulement les geometry generators. Après le design génératif, voici venue l'ère de la carto générative.
 
 A vous de jouer !
 
 <iframe src="https://giphy.com/embed/U8RXSRKv8uMPS" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dancing-dance-wtf-U8RXSRKv8uMPS">via GIPHY</a></p>
+
+![Mon T-Shirt Joy Division](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-photo.jpeg "Mon T-Shirt Joy Division"){: loading=lazy .img-center }
 
 Pas mal de variations sont possibles sur la base de ces lignes. Voici une petite variation avec Blender accomplie par Steven Kay :
 
