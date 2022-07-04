@@ -20,7 +20,7 @@ tags:
 
 ![logo leafletjs](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/leaflet.png "logo Leaflet"){: .img-rdp-news-thumb }
 
-[Annoncé](http://blog.cloudmade.com/2011/05/13/announcing-leaflet-a-modern-open-source-javascript-library-for-interactive-maps/) il y à quelques semaines, [Leaflet](http://leaflet.cloudmade.com/) est la nouvelle API cartographique en JavaScript de [Cloud Made](http://blog.cloudmade.com). Les conditions d'utilisations sont très souples puisqu'elle a été publiée sous [licence BSD](https://fr.wikipedia.org/wiki/Licence_BSD). Néanmoins, que vaut-elle par rapport aux autres alternatives existantes ? Partons dans ce tutoriel à la découverte de celle-ci.
+[Annoncé](http://blog.cloudmade.com/2011/05/13/announcing-leaflet-a-modern-open-source-javascript-library-for-interactive-maps/) il y a quelques semaines, [Leaflet](http://leaflet.cloudmade.com/) est la nouvelle API cartographique en JavaScript de [Cloud Made](http://blog.cloudmade.com). Les conditions d'utilisations sont très souples puisqu'elle a été publiée sous [licence BSD](https://fr.wikipedia.org/wiki/Licence_BSD). Néanmoins, que vaut-elle par rapport aux autres alternatives existantes ? Partons dans ce tutoriel à la découverte de celle-ci.
 
 ## Téléchargement
 
@@ -169,6 +169,10 @@ function init(){
     marker.bindPopup('Vive le festival de Cannes');  
 }
 ```
+
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://geotribu.net/applications/leaflet/leaflet.html" width="650px" height="450px" frameborder="0" align=""></iframe>`
 
 ## Conclusion
 

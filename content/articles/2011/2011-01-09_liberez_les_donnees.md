@@ -15,20 +15,22 @@ tags:
 
 :calendar: Date de publication initiale : 09 janvier 2011
 
-![1279125268_Database_1.png](http://geotribu.net/sites/default/files/Tuto/img/Blog/divers/1279125268_Database_1.png)Trouver un standard commun, faciliter l'accès aux données ...  
+![icone database](https://cdn.geotribu.fr/img/logos-icones/programmation/database.png "icone database"){: .img-rdp-news-thumb }
+
+Trouver un standard commun, faciliter l'accès aux données ...  
 Ceci pourrait être l'ouverture d'un Powerpoint Inspire. Or aujourd'hui, la question du partage et de l'ouverture des données s'est largement élargie. Wikileaks a amené le débat au grand public par le biais de la presse désormais en ligne. Et pourtant l'Etat français a une vision radicalement différente de ses homologues anglosaxons.
 
 Comment se fait-il par exemple que la France soit encore dépourvue d'un [data.gov](http://geotribu.net/node/119) à l'américaine ? Comment se fait-il qu'en France, il n'y ait pas d'équivalent au [Guardian](http://www.guardian.co.uk/), un grand nom de la presse à la pointe du traitement et de la visualisation de données capable de faire pression pour l'ouverture de ces dernières ? Il nous manque un Nicolas Hulot de l'Open Data ! Une fois que le peuple aura pris conscience de l'utilité des données publiques, le gouvernement suivra, et peut-être amènera-t'il quelques sociétés privées à faire de même. Ceci sera bénéfique pour le gouvernement et pour nous qui aurons matière à travailler : osons le mot - une stratégie win win :wink:.
 
 C'est en tout cas l'une des multiples conclusions de l’excellent *eBook* tiré de la collection de livres pdf libres que nous propose le génialissime site français [OWNI](http://owni.fr/#aujourd-hui) pour bien entamer 2011.
 
-[![OpenData.jpg](http://geotribu.net/sites/default/files/Tuto/img/Blog/OpenData.jpg)](http://owni.fr/files/2010/12/OPENDATA_ebook_2010.pdf "Owni - Open Data")
+[![Owni - Open Data](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/OpenData.jpg "Owni - Open Data"){: .img-center loading=lazy }](http://owni.fr/files/2010/12/OPENDATA_ebook_2010.pdf "Owni - Open Data")
 
 A lire également [les 10 autres livres de la collection](http://owni.fr/2010/12/27/contre-histoire-de-linternet-freepress-on-owni/) qui traitent des sujets liés à l'actualité numérique 2010 comme Hadopi, Wikileaks, Loppsi ou le data journalisme.
 
 **Bonne lecture :-)**
 
-[[Source et page du livre](http://owni.fr/2010/12/27/ebook-opendata/)]
+[Source et page du livre](http://owni.fr/2010/12/27/ebook-opendata/)
 
 ----
 

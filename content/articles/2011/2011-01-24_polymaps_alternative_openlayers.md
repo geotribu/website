@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 24 janvier 2011
 
-![logo polymaps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/polymaps.png)
+![logo polymaps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/polymaps.png){: .img-rdp-news-thumb }
 
 Cela faisait longtemps que j'avais l'onglet du site de [PolyMaps](http://polymaps.org/) ouvert dans mon navigateur. Par manque de temps, je n'avais pas encore eu l'occasion d'explorer cette récente bibliothèque cartographique. Développant principalement sur l'API Google Maps et [OpenLayers](https://openlayers.org/), j'avais envie de tester la capacité de cette bibliothèque et de juger si celle-ci pouvait à terme devenir une réelle alternative.  
 
@@ -29,7 +29,9 @@ Développé en collaboration par [SimpleGeo](http://simplegeo.com/) et [Stamen D
 Pour cela, se rendre sur la page [ah-hoc](http://polymaps.org/download.html) et télécharger le zip de la dernière version - la 2.4 pour ce mois de janvier 2011.  
 Et décompresser cette archive quelque part sur votre serveur.
 
+```bash
 unzip simplegeo-polymaps-v2.4.0-0-g42b145f.zip
+```
 
 ## Initialisation
 
@@ -88,7 +90,7 @@ var map = po.map()
 Nous voyons bien le chaînage mis en place :
 
 * `po.map` : constructeur ;
-* `container(...)` : ajout de la carte dans le conteneur défini dans le HTML, ce conteneur doit être un SVG, on ajoute donc la méthode appendChild(po.svg("svg")) qui est une méthode équivalente à celle-ci : document.createElementNS("<http://www.w3.org/2000/svg>") ;
+* `container(...)` : ajout de la carte dans le conteneur défini dans le HTML, ce conteneur doit être un SVG, on ajoute donc la méthode `appendChild(po.svg("svg"))` qui est une méthode équivalente à celle-ci : `document.createElementNS("<http://www.w3.org/2000/svg>") ;`
 * `add(po.interact())` : ajout des contrôles de carte - déplacement, double-clic, zoom à la molette et 'pilotage' avec les flèches.
 
 Ajoutons ensuite une URL vers une carto jolie :
