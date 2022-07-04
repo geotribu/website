@@ -22,7 +22,7 @@ Cette semaine, nous vous proposons un deuxième Geogame, "questions choix multip
 
 ![citation](https://cdn.geotribu.fr/img/logos-icones/divers/quote_citation.png "icône citation"){: .img-rdp-news-thumb }
 
-"Pour achever ce qui reste à faire, on se propose d'augmenter le nombre des ingénieurs, et de les porter jusqu'à trente-quatre [...] C'est un moyen que l'on juge absolument nécessaire pour donner aux cartes la plus grande perfection ; car quoique l'on ait recommandé aux ingénieurs de s'adresser aux personnes qui seraient sur les lieux, pour l'orthographe des noms, le nombres des hameaux, fermes et autres objets dans l'étendue de chaque paroisse, il est à craindre que nos ordres ne soient bien exécutés."
+> Pour achever ce qui reste à faire, on se propose d'augmenter le nombre des ingénieurs, et de les porter jusqu'à trente-quatre [...] C'est un moyen que l'on juge absolument nécessaire pour donner aux cartes la plus grande perfection ; car quoique l'on ait recommandé aux ingénieurs de s'adresser aux personnes qui seraient sur les lieux, pour l'orthographe des noms, le nombres des hameaux, fermes et autres objets dans l'étendue de chaque paroisse, il est à craindre que nos ordres ne soient bien exécutés.
 
 > Source : Cassini de Thury, "Projet et acte d'association, pour l'entreprise d'une Carte générale de France par M. Cassini de Thury", Description géométrique de la France, 1753, Paris, imprimerie J-Ch Desaint, p194-195
 

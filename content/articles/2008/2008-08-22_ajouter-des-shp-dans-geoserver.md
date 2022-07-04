@@ -25,14 +25,14 @@ Ce tutorial s'inspire en grande partie de celui proposé sur le site de GeoServe
 
 Voici les grandes étapes qui composent ce tutorial. Elles seront ensuite expliquées plus en détails et accompagnées de captures d'écran.
 
-1. Copiez vos shapefiles dans le répertoire /data_dir/data/ situé dans le répertoire d'installation de GeoServer
-2. Créez un nouvel Entrepôt dont la source pointe vers vos donnés file:data/myShapefile.shp
+1. Copiez vos shapefiles dans le répertoire `/data_dir/data/` situé dans le répertoire d'installation de GeoServer
+2. Créez un nouvel Entrepôt dont la source pointe vers vos donnés `file:data/myShapefile.shp`
 3. Créez un nouveau type de données qui pointe sur votre entrepôt
 4. Définissez la valeur SRS de votre shp (soyez sûr que votre shp dispose d'un .prj)
 5. Définissez l'emprise de votre couche
 6. Validez
 7. Visualisez votre couche en vous rendant dans la partie prévisualisation des cartes de la page de démonstration
-8. Visualisez vos données dans GoogleEarth en copiant une url de ce type (mais en changeant myFeatureType), le port 8080 étant le port par défaut pour GéoServer : [http ://localhost:8080/geoserver/wms/kml_reflect?layers=myFeatureType](http ://localhost:8080/geoserver/wms/kml_reflect?layers=myFeatureType)
+8. Visualisez vos données dans GoogleEarth en copiant une url de ce type (mais en changeant myFeatureType), le port 8080 étant le port par défaut pour GéoServer : <http://localhost:8080/geoserver/wms/kml_reflect?layers=myFeatureType>
 
 ## Préparation des données
 
