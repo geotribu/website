@@ -80,13 +80,13 @@ plugins:
         "node/488.md": "rdp/2012/rdp_2012-01-13.md"
         "node/520.md": "articles/2012/art_2012-06-21.md"
         "node/532.md": "articles/2012/art_2012-07-12.md"
-        "node/636.md": "articles/2013/art_2013-09-26.md"
+        "node/636.md": "articles/2013/2013-09-26_installer_python_gdal_sous_windows.md"
         # correction de la structure initiale de la résurrection
         "rdp/rdp_2020-04-30.md": "rdp/2020/rdp_2020-04-30.md"
         # geogames
-        "node/668.md": "articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig.md"
+        "node/668.md": "articles/2013/2013-10-30_geogame_mots_croises_outils_sig.md"
         "node/671.md": "https://geotribu.github.io/geogames/"
-        "node/675.md": "articles/2013/art_2013-11-20_geogame_mots_croises_webmapping.md"
+        "node/675.md": "articles/2013/2013-11-20_geogame_mots_croises_webmapping.md"
         "node/679.md": "articles/2014/2014-01-08_geogame_qcm_histoire_cartographie.md"
         "node/689.md": "articles/2014/2014-01-22_geogame_qcm_cassini_bertin.md"
         "node/680.md": "articles/2014/2014-03-19_geogame_pendu_geomatique.md"

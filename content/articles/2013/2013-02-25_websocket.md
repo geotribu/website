@@ -18,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 février 2013
 
-![websocket](https://cdn.geotribu.fr/img/logos-icones/divers/websocket.png){: .img-rdp-news-thumb }
+![logo websocket](https://cdn.geotribu.fr/img/logos-icones/divers/websocket.png "logo websocket"){: .img-rdp-news-thumb }
 
 Avec un titre pareil je suis pas prêt de me faire référencer... tant pis ce sera pour les initiés :wink:. J'entends souvent parler du temps réel ; la tendance actuelle vers les objects connectés et autres interactions possibles avec des smartphones et/ou des sites web m'a fait (re)découvrir une partie du web que j'avais mise de côté. Et donc l'envie de mettre les mains dans le cambouis et regarder d'un peu plus près comment ça marche ! Et ouais on ne se refait pas.
 
@@ -55,7 +55,7 @@ En cherchant une bibliothèque PHP qui supportait les websockets je suis tombé 
 Donc facile on se rend sur le site web et hop direct à la page d'[installation](http://socketo.me/docs/install)... tiens pas de bouton 'Download'... hum... il faut utiliser [composer](http://getcomposer.org/)... que de trucs nouveaux dans ce tuto :) Donc composer est un installeur de bibliothèques qui gère les dépendances et y'en a besoin pour Ratchet. On ouvre un terminal, on se place à la racine du projet web que l'on vient de créer et hop on attaque :
 
 ```bash
-toto$ curl -s <https://getcomposer.org/installer> | php -d detect\_unicode=Off
+toto$ curl -s <https://getcomposer.org/installer> | php -d detect_unicode=Off
 ```
 
 !!! note
@@ -90,10 +90,10 @@ On se retrouve avec un nouveau fichier `composer.lock` et un répertoire `vendor
 
 C'est parti ! On crée une nouvelle classe en PHP qui va s'appeler Truc et qui écoutera les 4 événements suivants :
 
-* `onOpen` qui est appelé quand un nouveau client se connecte ;
-* `onMessage` appelé quand un message arrive ;
-* `onClose` appelé quand une connexion se ferme ;
-* `onError` appelé quand y'a un blème.
+- `onOpen` qui est appelé quand un nouveau client se connecte ;
+- `onMessage` appelé quand un message arrive ;
+- `onClose` appelé quand une connexion se ferme ;
+- `onError` appelé quand y'a un blème.
 
 On édite donc un fichier PHP que l'on enregistre ici `/src/MyApp/Truc.php` - qui utilise la classe de [connexion](http://socketo.me/api/class-Ratchet.ConnectionInterface.html) et celle des [messages](http://socketo.me/api/class-Ratchet.MessageComponentInterface.html) :
 
@@ -269,6 +269,10 @@ Bonne nouvelle, tous les navigateurs supportent les websocket même sur smartpho
 
 ## La démo
 
+!!! info
+    Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
+    `<iframe src="http://88.191.142.86/labs/websocket/maptruc.html" width="640" height="480" frameborder="0"></iframe>`
+
 !!! tip
     Bon c'est sûr, il faut que plusieurs visiteurs soient sur le tuto en même temps pour voir quelque chose... Au pire ouvrez deux onglets et jouez avec vous-même.
 
@@ -276,9 +280,9 @@ Pour la pleine page c'est par [ici](http://88.191.142.86/labs/websocket/maptruc.
 
 Si vous êtes seul sur ce tuto mais que vous avez un smartphone sous la main - testez la démo avec ! Flashouillez le code et hop cliquez sur la carte.
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/qrcode_test-websocket.png)
+[![Flashouillez le code](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/qrcode_test-websocket.png "Flashouillez le code"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/qrcode_test-websocket.png "Flashouillez le code"){: data-mediabox="lightbox-gallery" data-title="Flashouillez le code" }
 
-Bon il se peut que le serveur de websocket ne fonctionne pas tout le temps - et ouais c'est une démo ! Et il se peut que vous ayez à modifier le port 8080 par autre chose. Souvent il est pris par Tomcat ce port. Et il faut avoir installé php5-curl, ça marchera mieux.
+Bon il se peut que le serveur de websocket ne fonctionne pas tout le temps - et ouais c'est une démo ! Et il se peut que vous ayez à modifier le port 8080 par autre chose. Souvent il est pris par Tomcat ce port. Et il faut avoir installé `php5-curl`, ça marchera mieux.
 
 ## Tips
 

@@ -21,7 +21,7 @@ Nous l'avions déjà annoncé aux privilégiés qui nous suivent sur Twitter mai
 
 ----
 
-Le déroulement se fera de la manière suivante, une semaine avant l'événement nous annoncerons le nom de la personne qui nous a fait l'honneur d'accepter notre invitation. Bien évidemment, nous lui avons déjà préparé un jeu de questions auquel il a répondu. Néanmoins, vous pouvez également influencer directement le contenu de l'interview en intervenant via les hashtahs[**#GeoInterview**](https://twitter.com/search?q=%23GeoInterview&src=typd) (Twitter+) et [**+GeoInterview**](https://plus.google.com/b/101577483589644696143/s/%23GeoInterview) (Google+). Ainsi avant l'interview, vous pouvez nous suggérer des questions à lui poser. Pendant l'interview, vous pourrez directement intervenir en fonction des remarques de notre invité. Et vous pourrez également continuer la discussion une fois l'interview terminée.  
+Le déroulement se fera de la manière suivante, une semaine avant l'événement nous annoncerons le nom de la personne qui nous a fait l'honneur d'accepter notre invitation. Bien évidemment, nous lui avons déjà préparé un jeu de questions auquel il a répondu. Néanmoins, vous pouvez également influencer directement le contenu de l'interview en intervenant via les hashtahs [**#GeoInterview**](https://twitter.com/search?q=%23GeoInterview&src=typd) (Twitter+) et [**+GeoInterview**](https://plus.google.com/b/101577483589644696143/s/%23GeoInterview) (Google+). Ainsi avant l'interview, vous pouvez nous suggérer des questions à lui poser. Pendant l'interview, vous pourrez directement intervenir en fonction des remarques de notre invité. Et vous pourrez également continuer la discussion une fois l'interview terminée.  
 
 Une fois le hangout terminé, le contenu vidéo de celui-ci mais aussi les réponses aux questionnaires que nous lui avons soumis seront publiés sur le site. Nous ne sommes qu'au début du projet, il est donc possible que l'organisation de ce nouveau contenu change en fonction des retours d'expérience et de vos remarques. N'hésitez donc pas à nous faire part des améliorations potentielles que vous pourriez envisager.  
 
@@ -35,6 +35,7 @@ L'evénement est accessible ici : **[GéoInterview de David Jonglez](https://plu
 
 **Suivez l'interview en live :**
 
+<iframe src="http://www.youtube.com/embed/Ft9sCvkZnMs" allowfullscreen="" frameborder="0" height="315" width="100%"></iframe>
 ----
 
 ## Auteur {: data-search-exclude }

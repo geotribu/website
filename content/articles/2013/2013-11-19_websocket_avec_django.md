@@ -43,7 +43,6 @@ Une fois réalisé, mettons les mains dans le cambouis. Enfin, en réalité nous
 Puis nous allons créer (dans le dossier de notre application) un fichier **events.py** qui contiendra à peine une quinzaine de lignes. Pourquoi events.py ? En réalité, vous pouvez créer le fichier que vous voulez du moment que celui-ci est chargé au démarrage de Django. Mais par défaut, django-socketio, cherche un fichier events.py nous allons donc lui faciliter le travail en gardant cette configuration. Détaillons immédiatement ce fichier :
 
 ```python
-
 from django_socketio import events
 
 @events.on_connect()
@@ -192,9 +191,4 @@ Chacun s'occupe de ce dans quoi il est bon. Si vous avez plus d'infos concernant
 
 ## Auteur {: data-search-exclude }
 
-![Portait de Arnaud Vandecasteele](https://cdn.geotribu.fr/img/internal/contributeurs/avdc.jpg){: .img-rdp-news-thumb }
-
-**Arnaud Vandecasteele**
-
-Fervent défenseur de l'Open Source, Arnaud s'est spécialisé dans le développement d'application cartographiques web. OpenLayers, PostGIS ou encore Django sont autant d'outils qu'il manipule au quotidien.  
-S'il n'est pas en face de son ordinateur, vous le retrouverez un GPS à la main en train de cartographier pour OpenStreetMap, de faire voler son drone ou sur un tatami !
+--8<-- "content/team/avan.md"
