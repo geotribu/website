@@ -483,4 +483,4 @@ Traduction réalisée par Van De Casteele Arnaud le 2009-09-28
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avdc.md"
+--8<-- "content/team/avan.md"

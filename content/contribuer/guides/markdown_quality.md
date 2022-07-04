@@ -27,7 +27,7 @@ search:
 
 ## Règles
 
-L'outil markdownlint a défini un ensemble de règles dont nous utilisons une partie et des régales spécifiques :
+L'outil markdownlint a défini un ensemble de règles dont nous utilisons une partie et des règles spécifiques :
 
 - [règles de référence](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
 - [règles configurées dans Géotribu](https://github.com/geotribu/website/blob/master/.markdownlint.json)

@@ -18,7 +18,7 @@ tags:
 
 ## Membres de l'équipe
 
-- [Arnaud](/team/avdc/)
+- [Arnaud](/team/avan/)
 - [Aurélien](/team/acha/)
 - [Etienne](/team/edel/)
 - [Fabien](/team/fgob/)
