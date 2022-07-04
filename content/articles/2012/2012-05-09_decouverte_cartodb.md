@@ -34,9 +34,10 @@ En fonction de vos besoins, [quatre modes d’adhésion](http://cartodb.com/pric
 
 La première étape consiste à importer ou structurer les données que nous allons utiliser. Pour cela cartoDB propose une interface d'administration que je trouve assez bien conçue. Trois options sont proposées :
 
-* la création d'une table vide
-* l'import de données stockées sur votre ordinateur
-* l'import de données accessibles sur le net
+- la création d'une table vide
+- l'import de données stockées sur votre ordinateur
+- l'import de données accessibles sur le net
+
 Pour ces deux dernières options, les formats autorisés sont notamment le CSV, GeoJSOn ou encore le Shapefile. Dans le cas d'un fichier ne contenant pas d'entités géographiques (ex : CSV) vous pourrez par la suite réaliser une opération de géocodage en fonction des informations dont vous disposez (ex : champs longitude/latitude).
 
 [![Create Table](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/2_createTable.png "Create Table"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/2_createTable.png "Create Table"){: data-mediabox="lightbox-gallery" data-title="Create Table" }

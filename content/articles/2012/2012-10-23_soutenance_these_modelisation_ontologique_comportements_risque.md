@@ -32,7 +32,7 @@ Les travaux présentés dans cette thèse se situent au croisement de la gestion
 
 ## Bibliographie
 
-- Horrocks, Ian, Peter Patel-Schneider, Harold Boley, Said Tabet, Benjamin Grosof, and Mike Dean. 2004. “SWRL: A Semantic Web Rule Language Combining OWL and RuleML.” <http://www.w3.org/Submission/SWRL/>.*
+- Horrocks, Ian, Peter Patel-Schneider, Harold Boley, Said Tabet, Benjamin Grosof, and Mike Dean. 2004. “SWRL: A Semantic Web Rule Language Combining OWL and RuleML.” <http://www.w3.org/Submission/SWRL/>.
 - Jangal, Florent, Jean-Pierre Georgé, Alain Bonnot, Marie-Annick Giraud, Michel Morel, Aldo Napoli, and Anne Littaye. 2009. “Toward a Complete System for Surveillance of the Whole EEZ: ScanMaris and Associated Projects.” In OCEANS 2009, MTS/IEEE Biloxi - Marine Technology for Our Future: Global and Local Challenges, 1 –4.
 - Jangal, Florent, Marie-Annick Giraud, Anne Littaye, Michel Morel, Jean-Pierre Mano, and Aldo Napoli. 2008. “Extraction of Suspicious Behavior of Vessels in the Exclusive Economic Zone.” In International Symposium on Antennas Et Propagation.
 - Dia Miron, Alina. 2009. “Découverte D’associations Sémantiques Pour Le Web Sémantique Géospatial - Le Framework ONTOAST”. THESE, Université Joseph-Fourier - Grenoble I. <http://tel.archives-ouvertes.fr/tel-00635118>.

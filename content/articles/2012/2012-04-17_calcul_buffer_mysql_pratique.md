@@ -31,7 +31,7 @@ Créons une base de données sous MySQL :
 CREATE DATABASE IF NOT EXISTS osmtestpoi  
 ```
 
-Puis ajoutons une table contentant un champ de type GEOMETRY :
+Puis ajoutons une table contentant un champ de type `GEOMETRY` :
 
 ```sql
 CREATE TABLE poi (  
@@ -273,9 +273,9 @@ Hum : j'ai testé la carte avec toutes les données contenues en base (un peu pl
 
 Pour afficher les marqueurs contenus dans un cercle, il faut modifier un peu le code côté client ci-dessus :
 
-* mettre les marqueurs dans un tableau de marqueurs ;
-* écrire une fonction qui supprime les marqueurs lorsque l'on bouge le cercle de recherche ;
-* ajouter des événements sur le cercle - quand on le bouge et quand on modifie son rayon.
+- mettre les marqueurs dans un tableau de marqueurs ;
+- écrire une fonction qui supprime les marqueurs lorsque l'on bouge le cercle de recherche ;
+- ajouter des événements sur le cercle - quand on le bouge et quand on modifie son rayon.
 
 Un peu de CSS :
 

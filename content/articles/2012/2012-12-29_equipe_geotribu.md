@@ -18,9 +18,13 @@ tags:
 
 ### Arnaud Vandecasteele
 
+![Arnaud](https://cdn.geotribu.fr/img/internal/contributeurs/avdc.jpg "Arnaud"){: .img-rdp-news-thumb }
+
 Suite à mon [doctorat](http://perso.crc.mines-paristech.fr/~arnaud.van_de_casteele/) en géomatique à l’École des Mines, j'ai tout récemment immigré au Canada afin d'intégrer le [Marine Geomatics Research Lab](http://www.marinegis.com/) de l'[Université de Newfoundland](http://www.mun.ca). Mes principaux thèmes de recherche portent sur le domaine maritime ainsi que sur la cartographie collaborative (VGI). Plus précisément, je m'intéresse à la manière dont les personnes représentent et manipulent la dimension spatiale afin de l'intégrer ensuite dans des systèmes informatiques. Au-delà de mes activités professionnelles, je me passionne pour tout ce qui touche au développement cartographique orienté Web avec une grosse préférence pour l'Open Source. Pendant mon temps libre, vous me trouverez un GPS à la main afin de contribuer à [OpenStreetMap](https://www.openstreetmap.org/) ou sur un tatami en train de travailler mon [Jiu-Jitsu Brésilien](https://fr.wikipedia.org/wiki/Jiu-jitsu_br%C3%A9silien). Si vous êtes intéressés par l'un ou tous ces sujets, n'hésitez pas à me contacter :)
 
 ### Thomas Gratier
+
+![Thomas](https://cdn.geotribu.fr/img/internal/contributeurs/tgra.png "Thomas"){: .img-rdp-news-thumb }
 
 Géographe de formation, je suis maintenant consultant SIG dans une grosse société d'informatique. Je m'intéresse à tout ce qui gravite autour du web et de la cartographie. Pour cette raison, je suis un fan des bibliothèques javascript pour la cartographie et la dataviz, mais j'aime aussi le côté administrateur système pour configurer les serveurs web, les serveurs cartographiques et les serveurs de tuiles. J'utilise plutôt des technologies open source mais je m'intéresse aussi à l'interopérabilité entre les solutions propriétaires et open source. Même si je rédige pas mal au sein de l'équipe, je contribue plutôt à identifier les ressources pour alimenter la revue de presse, étant très rôdé sur la veille géomatique. Pour en savoir plus, suivez-moi sur [Twitter](https://twitter.com/ThomasG77).
 
