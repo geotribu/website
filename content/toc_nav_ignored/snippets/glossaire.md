@@ -8,6 +8,8 @@
 [markdown]: https://fr.wikipedia.org/wiki/Markdown
 [Material for Mkdocs]: https://squidfunk.github.io/mkdocs-material/
 [Mkdocs]: https://www.mkdocs.org/
+[osm2pgsql]: https://osm2pgsql.org/
+[Osmium]: https://osmcode.org/osmium-tool/
 [pre-commit]: https://pre-commit.com/
 [Python]: https://www.python.org/
 [StackEdit]: https://stackedit.io/

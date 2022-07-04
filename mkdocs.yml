@@ -69,7 +69,7 @@ plugins:
         # RSS
         "rss.md": "https://static.geotribu.fr/feed_rss_created.xml"
         # contenus
-        "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
+        "dicogis.md": "articles/2014/2014-09-25_dicogis.md"
         "GeoRDP/20161028.md": "rdp/2016/rdp_2016-10-14.md"
         "node/156.md": "articles/2009/2009-09-11_creer-son-propre-plan-de-ville-grace-a-maposmatic.md"
         "node/270.md": "articles/2010/art_2010-06-11.md"
@@ -80,21 +80,21 @@ plugins:
         "node/488.md": "rdp/2012/rdp_2012-01-13.md"
         "node/520.md": "articles/2012/art_2012-06-21.md"
         "node/532.md": "articles/2012/art_2012-07-12.md"
-        "node/636.md": "articles/2013/art_2013-09-26.md"
+        "node/636.md": "articles/2013/2013-09-26_installer_python_gdal_sous_windows.md"
         # correction de la structure initiale de la résurrection
         "rdp/rdp_2020-04-30.md": "rdp/2020/rdp_2020-04-30.md"
         # geogames
-        "node/668.md": "articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig.md"
+        "node/668.md": "articles/2013/2013-10-30_geogame_mots_croises_outils_sig.md"
         "node/671.md": "https://geotribu.github.io/geogames/"
-        "node/675.md": "articles/2013/art_2013-11-20_geogame_mots_croises_webmapping.md"
-        "node/679.md": "articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md"
-        "node/689.md": "articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md"
-        "node/680.md": "articles/2014/art_2014-03-19_geogame_pendu_geomatique.md"
-        "node/811.md": "articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md"
+        "node/675.md": "articles/2013/2013-11-20_geogame_mots_croises_webmapping.md"
+        "node/679.md": "articles/2014/2014-01-08_geogame_qcm_histoire_cartographie.md"
+        "node/689.md": "articles/2014/2014-01-22_geogame_qcm_cassini_bertin.md"
+        "node/680.md": "articles/2014/2014-03-19_geogame_pendu_geomatique.md"
+        "node/811.md": "articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md"
         # recent moves
         "acknowledgements.md": "team/index.md"
         "install_webapp.md": "articles/2020/2020-03-20_installer_site_comme_application.md"
-        "interviews/itw_drones_crisis.md": "articles/2014/art_2014-08-29_itw_drones_crisis.md"
+        "interviews/itw_drones_crisis.md": "articles/2014/2014-08-29_itw_drones_crisis.md"
         "contribuer/workflow_article.md": "contribuer/articles/workflow.md"
         "contribuer/backup.md": "contribuer/internal/backup.md"
         "contribuer/build_site/markdown_engine.md": "contribuer/internal/markdown_engine.md"
@@ -183,6 +183,12 @@ theme:
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Basculer en mode clair
+
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -199,7 +205,7 @@ theme:
       accent: "deep orange"
       toggle:
         icon: material/weather-night
-        name: Basculer en mode clair
+        name: Basculer sur le réglage système
 
 # Customization
 extra:
