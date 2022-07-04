@@ -20,11 +20,11 @@ Dans le cadre de nos travaux de recherche sur les risques maritime, nous disposo
 
 ## Déroulement du stage
 
-Ce stage bien que technique se propose d'explorer l'utilisation du DataMining dans des configurations et thématiques nouvelles. Même si le planning prévisionnel évoluera très certainement, en fonction des résultats obtenus, trois étapes principales ont été identifiées. Celles-ci suivent globalement le schéma mis en place par (Fayyad, Piatetsky-Shapiro, Smyth, & Uthurusamy, 1996)⁠ :⁠
+Ce stage bien que technique se propose d'explorer l'utilisation du DataMining dans des configurations et thématiques nouvelles. Même si le planning prévisionnel évoluera très certainement, en fonction des résultats obtenus, trois étapes principales ont été identifiées. Celles-ci suivent globalement le schéma mis en place par *Fayyad, Piatetsky-Shapiro, Smyth, & Uthurusamy, 1996* :⁠
 
-* Premièrement, un état de l'art portant à la fois sur le DataMining et sur le DataMining spatial sera effectué par l'étudiant. En plus des aspects théoriques, cela permettra d'identifier les différentes solutions existantes et d'en dresser un comparatif (S-Plus et R, Weka, Tanagra...).
-* En second lieu, il s'agira de procéder à une phase de nettoyage et de préparation des données. En fonction de celles-ci, différentes méthodes d'analyse seront alors sélectionnées (clustering, tendances...)
-* Enfin, une fois les données correctement formatées, nous pourrons passer à l'analyse de celle-ci. Une fois le processus de fouille de données effectué, il s'agira alors d'interpréter et valider les résultats obtenus.
+- Premièrement, un état de l'art portant à la fois sur le DataMining et sur le DataMining spatial sera effectué par l'étudiant. En plus des aspects théoriques, cela permettra d'identifier les différentes solutions existantes et d'en dresser un comparatif (S-Plus et R, Weka, Tanagra...).
+- En second lieu, il s'agira de procéder à une phase de nettoyage et de préparation des données. En fonction de celles-ci, différentes méthodes d'analyse seront alors sélectionnées (clustering, tendances...)
+- Enfin, une fois les données correctement formatées, nous pourrons passer à l'analyse de celle-ci. Une fois le processus de fouille de données effectué, il s'agira alors d'interpréter et valider les résultats obtenus.
 
 Ce travail devra faire l'objet d'un rapport et selon les résultats obtenus les travaux effectués feront l'objet d'une valorisation scientifique.
 

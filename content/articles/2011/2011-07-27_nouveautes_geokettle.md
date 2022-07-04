@@ -65,17 +65,17 @@ Comme le souligne Cedric Darbon d'[atolCd](http://blog.atolcd.com/?p=864), Geoke
 
 Mais, quelques détails mériteraient d'être améliorés. Ces remarques sont très subjectives car résultantes de ma seule opinion. Néanmoins, voici les quelques points que je soulignerai :
 
-* **difficulté à localiser les extensions spatiales** : Pentaho Data Integration dispose d'origine d'un grand nombre de modules. Pour un utilisateur novice il peut être difficile et déroutant de ne pas réussir à identifier facilement ceux utiles aux SIG. Il serait peut-être intéressant de n'afficher que les modules spatiaux quand une recherche portant sur les mots "geo" ou "spatial" est effectuée.
-* **Regroupement des fonctionnalités** : Il pourrait également être intéressant de regrouper les modules en fonction de leurs objectifs par exemple analyses spatiales, modification/création de géométries, etc. Cela permettrait d'identifier plus rapidement l'étape nécessaire.
-* **Release early, release often** : Enfin, entre cette version et la précédente près de deux ans s'étaient écoulés. A l'avenir, espérons que les futures release seront plus régulières. Mais peut-être est-ce prévu dans cette version 2 ?
+- **difficulté à localiser les extensions spatiales** : Pentaho Data Integration dispose d'origine d'un grand nombre de modules. Pour un utilisateur novice il peut être difficile et déroutant de ne pas réussir à identifier facilement ceux utiles aux SIG. Il serait peut-être intéressant de n'afficher que les modules spatiaux quand une recherche portant sur les mots "geo" ou "spatial" est effectuée.
+- **Regroupement des fonctionnalités** : Il pourrait également être intéressant de regrouper les modules en fonction de leurs objectifs par exemple analyses spatiales, modification/création de géométries, etc. Cela permettrait d'identifier plus rapidement l'étape nécessaire.
+- **Release early, release often** : Enfin, entre cette version et la précédente près de deux ans s'étaient écoulés. A l'avenir, espérons que les futures release seront plus régulières. Mais peut-être est-ce prévu dans cette version 2 ?
 
 ## Ressources complémentaires
 
 Pour plus d'informations, n'hésitez pas à consulter :
 
-* l'annonce officielle en [anglais](http://wiki.spatialytics.org/doku.php?id=projects:geokettle:documentation:what_is_new_in_version_2.0) et en [français](http://www.spatialytics.org/fr/blogue/geokettle-2-0%C2%A0-spatialytics-annonce-la-disponibilite-dune-nouvelle-version-de-letl-spatial-open-source/)
-* l'article d'[osbi](http://www.osbi.fr/?p=2679)
-* et celui d'[atolcd](http://blog.atolcd.com/?p=864)
+- l'annonce officielle en [anglais](http://wiki.spatialytics.org/doku.php?id=projects:geokettle:documentation:what_is_new_in_version_2.0) et en [français](http://www.spatialytics.org/fr/blogue/geokettle-2-0%C2%A0-spatialytics-annonce-la-disponibilite-dune-nouvelle-version-de-letl-spatial-open-source/)
+- l'article d'[osbi](http://www.osbi.fr/?p=2679)
+- et celui d'[atolcd](http://blog.atolcd.com/?p=864)
 
 ----
 

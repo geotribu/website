@@ -38,12 +38,8 @@ L'outil étant basé sur Java et Graphviz (une bibliothèque graphique), il faut
 1. Installez GraphViz en allant sur <http://www.graphviz.org/> et en allant dans la section `Download`.  
 Double-cliquez sur le fichier et faites des "suivant-suivant" pour installer  
 Si vous êtes sous Vista, même en étant administrateur, il est conseillé d'ouvrir la fenêtre de commandes, de vous déplacer dans le répertoire contenant votre fichier et faire un `3msiexec /a graphviz-x.xx.msi`
-2. Vérifiez que vous n'avez pas déjà Java en allant sur Démarrer > Tous les Programmes > Accessoires > Invite de commande Tapez
-
-`java -version`
-
+2. Vérifiez que vous n'avez pas déjà Java en allant sur `Démarrer > Tous les Programmes > Accessoires > Invite de commande`, Tapez : `java -version`
 Si vous avez un retour mentionnant java version 1.6.x.x ou 1.5.x.x, vous pouvez sautez l'étape suivante
-
 3. Installez Java en allant le récupérer sur <http://www.java.com/fr/download/manual.jsp>  
 Comme pour GraphViz, double-cliquez sur le fichier reçu, suivez les instructions et c'est OK
 4. En introduction, nous avions fait référence à des drivers JDBC, il faut les récupérer sur <http://jdbc.postgresql.org/download.html>  
@@ -58,14 +54,11 @@ Attention, inutile de faire les étapes 1 et 2 si vous venez du tutoriel de Open
 
 1. Testez la présence de Java : `java -version`
 2. Sinon, faire :
-
 ```bash
 sudo nano /etc/apt/sources.list
 ```
-
 puis coller à la fin :  
-
-```
+```txt
 ###########################################################################  
 
 ## Commercial  
@@ -78,27 +71,21 @@ deb <http://archive.canonical.com/ubuntu> lucid partner
 
 ###########################################################################  
 ```
-
 puis fermer avec `ctrl + O`.
-
 Ensuite, rechargez le gestionnaire de package et installer Java avec :
-
-```
+```bash
 sudo apt-get update  
 sudo apt-get upgrade  
 sudo apt-get install sun-java6-jre  
 ```
-
-6. Installez GraphViz
-
-```
+3. Installez GraphViz
+```bash
 sudo apt-get install graphviz
 ```
-
-8. En introduction, nous avions fait référence à des drivers JDBC, il faut les récupérer sur <http://jdbc.postgresql.org/download.html>  
+4. En introduction, nous avions fait référence à des drivers JDBC, il faut les récupérer sur <http://jdbc.postgresql.org/download.html>  
 Il faut si votre version de java est 1.5.x.x prendre des pilotes de la colonnes JDBC3 correspondant à votre version de PostgreSQL.  
 Si vous avez une version 1.6.x.x (ce qui est le cas avec l'installation de l'étape 3 si vous n'aviez pas déjà java antérieurement), il faudra choisir un pilote JDBC4 correspondant à PostgreSQL
-10. Récupérez enfin `SchemaSpy` en allant sur <http://schemaspy.sourceforge.net/> ou par le [lien direct](http://sourceforge.net/projects/schemaspy/files/schemaspy/SchemaSpy%205.0.0/schemaSpy_5.0.0.jar/download)
+5. Récupérez enfin `SchemaSpy` en allant sur <http://schemaspy.sourceforge.net/> ou par le [lien direct](http://sourceforge.net/projects/schemaspy/files/schemaspy/SchemaSpy%205.0.0/schemaSpy_5.0.0.jar/download)
 
 ## Utilisez l'outil pour faire votre "beau schéma"
 
@@ -106,22 +93,22 @@ Le plus long était l'installation.
 
 Il vous suffit de suivre le modèle ci-dessous et de remplacer les variables encadrées par <...> par vos propres paramètres :...
 
-```
+```bash
 java -jar -cp -t pgsql -db  -host  -u  -p  
 -s  -o  
 ```
 
 Un cas concret avec l'utilisateur de base de données "utilisateurbase" avec son mot de passe "motdepasse" connécté en local sur une base osm et envoyant le résultat dans le répertoire `osm_psql_doc`.
 
-**Sous Windows**
+### Sous Windows
 
-```
+```bash
 java -jar C:/downloads/schemaSpy_5.0.0.jar -cp C:/download/postgresql-9.0-801.jdbc4.jar -t pgsql -db osm -host localhost -u utilisateurbase -p motdepasse -s public -o osm_psql_doc
 ```
 
-**Sous Linux**
+### Sous Linux
 
-```
+```bash
 java -jar /home/monutilisateur/download/schemaSpy_5.0.0.jar -cp /home/monutilisateur/download/postgresql-9.0-801.jdbc4.jar -t pgsql -db osm -host localhost -u utilisateurbase -p motdepasse -s public -o osm_psql_doc  
 ```
 

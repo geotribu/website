@@ -38,10 +38,10 @@ Fondé par Antony Zanetti, [Click2Map](http://www.click2map.com/home) est un ser
 
 Contrairement à CartOSM qui se base sur des iframes, Click2Map génère une application qu'il faudra ensuite ajouter vous même sur votre serveur. Bien que la mise en œuvre soit un poil plus compliqué, cela se traduit par de nombreuses options et une personnalisation poussée :
 
-* Geocodage pour la recherche d'adresse
-* Personnalisation des marqueurs et des infobulles
-* Ajout de données depuis des fichiers CSV, KML, GeoRSS
-* ...
+- Geocodage pour la recherche d'adresse
+- Personnalisation des marqueurs et des infobulles
+- Ajout de données depuis des fichiers CSV, KML, GeoRSS
+- ...
 
 A noter que la [version payante](http://www.click2map.com/business_services) vous permet d'héberger votre application sur les serveurs de Click2Map.
 

@@ -139,8 +139,8 @@ L'utilisation de SQLite et de Spatialite m'a impressionné par sa simplicité. L
 
 ## Ressources complémentaires
 
-* [Portail SIG : Python et les bases de données geospatiales](http://www.portailsig.org/content/python-les-bases-de-donnees-geospatiales-1-traitement-classique-principes-et-problemes)  
-* [Portail SIG : SQLite - Spatialite le pourquoi du comment](http://www.portailsig.org/content/sqlite-spatialite-le-pourquoi-du-comment)
+- [Portail SIG : Python et les bases de données geospatiales](http://www.portailsig.org/content/python-les-bases-de-donnees-geospatiales-1-traitement-classique-principes-et-problemes)  
+- [Portail SIG : SQLite - Spatialite le pourquoi du comment](http://www.portailsig.org/content/sqlite-spatialite-le-pourquoi-du-comment)
 
 ----
 

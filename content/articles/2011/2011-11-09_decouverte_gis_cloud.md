@@ -26,17 +26,17 @@ Je vous livre ci-dessous mes impressions.
 
 Tout d'abord, vous vous demandez certainement qu'est-ce que GIS Cloud ? Il s'agit d'une infrastructure permettant :
 
-* d'une part la création et l'hébergement d'applications cartographiques ;
-* et d'autre part l'accès à ces applications grâce à une une [API Javascript](http://dev.giscloud.com/JavaScriptApi/) et une [API Rest](http://dev.giscloud.com/RestGuide).
+- d'une part la création et l'hébergement d'applications cartographiques ;
+- et d'autre part l'accès à ces applications grâce à une une [API Javascript](http://dev.giscloud.com/JavaScriptApi/) et une [API Rest](http://dev.giscloud.com/RestGuide).
 
 Les [fonctionnalités](http://www.giscloud.com/features/) de GIS Cloud s'orientent en fonction des [six axes majeurs](http://www.giscloud.com/features/) suivants :
 
-* [Outils cartographiques collaboratifs](http://www.giscloud.com/features/collaboration-map-management)
-* [Partage et publication de cartes sur Internet](http://www.giscloud.com/features/share-and-publish-on-web)
-* [Intégration des plate-formes mobiles](http://www.giscloud.com/features/mobile-data-collection)
-* [Cartographies thématiques](http://www.giscloud.com/features/thematic-maps-analysis)
-* [Intégration aux systèmes déjà existants](http://www.giscloud.com/features/integrate-with-existing-systems/)
-* [Cloud personnel](http://www.giscloud.com/features/personal-cloud/)
+- [Outils cartographiques collaboratifs](http://www.giscloud.com/features/collaboration-map-management)
+- [Partage et publication de cartes sur Internet](http://www.giscloud.com/features/share-and-publish-on-web)
+- [Intégration des plate-formes mobiles](http://www.giscloud.com/features/mobile-data-collection)
+- [Cartographies thématiques](http://www.giscloud.com/features/thematic-maps-analysis)
+- [Intégration aux systèmes déjà existants](http://www.giscloud.com/features/integrate-with-existing-systems/)
+- [Cloud personnel](http://www.giscloud.com/features/personal-cloud/)
 
 La [liste complète](http://www.giscloud.com/full-feature-list/) des fonctionnalités est bien trop exhaustive pour que je vous la cite içi. Néanmoins, n'hésitez pas à y jeter un coup d'œil pour avoir plus d'informations.
 
@@ -131,11 +131,11 @@ Notre rapide tour de GisCloud est maintenant terminé et vient donc l'heure des 
 
 Au moment où j'ai effectué mes tests, GisCloud était encore en bêta. Mais, j'ai récemment reçu un mail me signifiant que cette période était terminée tout comme l'usage illimité de ce service. En effet, pour la version gratuite, les conditions d'utilisations seront dorénavant les suivantes :
 
-* Nombre total d'objets sur la carte limité à 1000
-* Pas plus de 100mb pour les données rasters
-* Un seul service WMS
-* Limitations au niveau de l'API
-* Limitations également pour la publication et la collaboration
+- Nombre total d'objets sur la carte limité à 1000
+- Pas plus de 100mb pour les données rasters
+- Un seul service WMS
+- Limitations au niveau de l'API
+- Limitations également pour la publication et la collaboration
 
 Même si je trouve tout à fait normal que cette entreprise développe son business model, les conditions pour la version gratuite sont tout de même très limitées. C'est dommage car à mon avis, ils auraient gagné à s'ouvrir un peu plus. En effet, cela aurait permis d'attirer plus de personnes et donc potentiellement de nouveaux clients. Il suffit de voir la stratégie de Google à ce sujet qui commence également à monétiser ces services. Quoi qu'il en soit, c'est vraiment un bon produit. Mais cela suffira-t-il pour se démarquer de la concurrence face à des projets similaires tels que [GeoCommons](http://geocommons.com) ? Nous tenterons de répondre à cette question dans un prochain billet.
 
@@ -143,8 +143,4 @@ Même si je trouve tout à fait normal que cette entreprise développe son busin
 
 ## Auteur {: data-search-exclude }
 
-### GeoTribu
-
-![Portait de GeoTribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png){: .img-rdp-news-thumb }
-
-Toute l'actualité de la géomatique Open Source ! Mais aussi des tutoriels, des billets de blog, des tests et surtout une bonne humeur géographique !
+--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
