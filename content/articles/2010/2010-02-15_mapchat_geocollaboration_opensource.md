@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 février 2010
 
-![logo MapChat](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/logo_mapchat.jpg "logo MapChat")
+![logo MapChat](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/logo_mapchat.jpg "logo MapChat"){: .img-rdp-news-thumb }
 
 Lors du précédent [billet](http://geotribu.net/node/212), nous avions rapidement abordé la notion de GéoCollaboration. Il est temps de mettre en application cette notion que nous illustrons avec l'application [MapChat](http://mapchat.ca/) dont l'objectif est de fournir, au sein d'une même interface cartographique, les outils nécessaires à une géocollaboration.
 

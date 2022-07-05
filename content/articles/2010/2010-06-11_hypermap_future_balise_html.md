@@ -66,8 +66,8 @@ De la théorie à la pratique, il y a tout de même un monde. C'est pourquoi, j'
     `<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/hypercarte/hypermap_prototype.html" width="600" height="500" scrolling="no" bordure="0px"></iframe>`
 
 
-- [^1] : [http://maps-forum-announcements.blogspot.com/2009/01/juicy-facts-in-goog...](http://maps-forum-announcements.blogspot.com/2009/01/juicy-facts-in-google-maps-world.html)
-- [^2] : [http://www.gpsbusinessnews.com/Google-Earth-over-500-million-downloads_a...](http://www.gpsbusinessnews.com/Google-Earth-over-500-million-downloads_a1307.html)
+[^1]: [http://maps-forum-announcements.blogspot.com/2009/01/juicy-facts-in-goog...](http://maps-forum-announcements.blogspot.com/2009/01/juicy-facts-in-google-maps-world.html)
+[^2]: [http://www.gpsbusinessnews.com/Google-Earth-over-500-million-downloads_a...](http://www.gpsbusinessnews.com/Google-Earth-over-500-million-downloads_a1307.html)
 
 ----
 

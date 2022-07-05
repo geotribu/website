@@ -22,7 +22,7 @@ Deuxième journée de ce colloque [SAGEO 2010](http://sageo10.univ-toulouse.fr/)
 
 ## Fouille de données
 
-[![wpe959373a](https://cdn.geotribu.fr/img/Blog/divers/wpe959373a.png "wpe959373a"){: .img-center loading=lazy }]
+![wpe959373a](https://cdn.geotribu.fr/img/Blog/divers/wpe959373a.png "wpe959373a"){: .img-center loading=lazy }
 
 Le SIG, comme l'informatique en générale, doit aujourd'hui faire face à un nouveau challenge, celui du (très) grand nombre de données. Nous sommes en effet passé, en quelques années, d'environnement où la problématique était essentiellement tournée vers le manque d'information à un environnement où la problématique est d'arriver à trouver les informations importantes dans le flot de données que l'on reçoit.
 
