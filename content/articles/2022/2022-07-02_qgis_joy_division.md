@@ -43,7 +43,7 @@ Dans le monde de la dataviz, on nomme ce type de rendu des [ridgelines](https://
 
 L'album [Unknow Pleasures](https://fr.wikipedia.org/wiki/Unknown_Pleasures) est paru en 1979. Sa couverture est assez bien ancrée dans l'époque des années 80 avec un air assez pixel art, rétro-futuriste. Elle rappelle un peu les écrans de contrôle dans Star Trek ou Star Wars, ou l'esthétique du film Tron.
 
-<iframe src="https://giphy.com/embed/3x4GWhk9YWu2HHZESO" width="480" height="378" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
+<iframe src="https://giphy.com/embed/3x4GWhk9YWu2HHZESO" width="480" height="378" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 Quand on regarde la couverture, tous les férus de carto y voient des courbes de niveau, ou un paysage. Personnellement, ça me fait penser à [la vidéo promotionnelle du logiciel GRASS (1987)](https://youtu.be/cZia3ShzTWM?t=558).
 
@@ -267,7 +267,7 @@ Le rendu sera le suivant :
 
 ![Rendu basique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy.jpeg "Rendu basique"){: loading=lazy .img-center }
 
-<iframe src="https://giphy.com/embed/3o84U6421OOWegpQhq" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
+<iframe src="https://giphy.com/embed/3o84U6421OOWegpQhq" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 Si vous êtes un puriste de l'album, vous pouvez choisir de n'afficher que 100 lignes, comme les 100 impulsions du pulsar, et de conserver les proportions du graphique au maximum en augmentant la marge (ou l'offset) sur les bords droit et gauche (soit en X) :
 
