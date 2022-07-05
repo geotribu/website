@@ -30,7 +30,7 @@ La première des choses à faire est bien évidemment de la télécharger. Cela 
 
 `wget <http://tinyurl.com/osgeolive3-0rc6/Arramagong-LiveGIS-v3-Final.7z>`
 
-Et si le téléchargement est interrompu, il vous suffit de le relancer en précisant à wget l'option -c :
+Et si le téléchargement est interrompu, il vous suffit de le relancer en précisant à wget l'option `-c`:
 
 `wget -c <http://tinyurl.com/osgeolive3-0rc6/Arramagong-LiveGIS-v3-Final.7z>`
 

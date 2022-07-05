@@ -70,7 +70,7 @@ En conclusion, je pense que les mouvements auxquels nous assistons en ce moment 
 [^1]: [Altic](http://www.altic.org/), [CampToCamp](http://www.camptocamp.com/), [Engineering Group](http://www.eng.it/), [Inova](http://www.inovaos.it/), [Spatialytics](http://www.spatialytics.com/)
 [^2]: [Université de Milan](http://sesar.dti.unimi.it/)
 [^3]: [Les ETL spatiaux OpenSource, à pieds joints dans l'informatique GéoDécisionnelle](http://www.geotribu.net/node/222)
-[^4]: [la géomatique décisionnelle, l'avenir du SIG?](http://www.geotribu.net/node/131)
+[^4]: [La géomatique décisionnelle, l'avenir du SIG?](http://www.geotribu.net/node/131)
 [^5]: [Le grand BI](http://www.legrandbi.com/2010/02/gartner-marche-bi-open-source/) et [OSBI](http://www.osbi.fr/?p=777)
 
 ----
