@@ -33,7 +33,7 @@ La couverture de l'album 'Unknow Pleasures' du groupe Joy Division est iconique 
 ## Joy Division, Joy Maps et Joy Plots
 La couverture de l'album Unkown Pleasures du groupe Joy Division amuse beaucoup de cartographes. C'est un thème très repris dans la #gistribe
 
-Voici par exemple une carte de l'Islande réalisée par un utilisateur :
+Voici par exemple une carte de l'Islande :
 
 ![carte de l'islande](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/islande.jpg "carte de l'islande"){: loading=lazy .img-center }
 
