@@ -215,8 +215,8 @@ Voici le code associé :
 					@element,
 					array_foreach(
 						generate_series(
-							x_min($geometry) + 1, 
-							x_max($geometry) - 1, 
+							x_min($geometry) + 1,
+							x_max($geometry) - 1,
 							50), -- Espace horizontal entre les points
 						with_variable(
 							'x',
@@ -283,7 +283,7 @@ Voici le code associé :
 					y_max($geometry) - 200,
 					(bounds_height($geometry) - 400) / 100
 				),
-			
+
 				with_variable(
 					'y',
 					@element,
@@ -298,7 +298,7 @@ Voici le code associé :
 							with_variable(
 								'x',
 								@element,
-						
+
 								with_variable(
 									'point',
 									make_point(@x, @y),
@@ -317,7 +317,7 @@ Voici le code associé :
 					)
 				)
 			)
-		), 
+		),
 		1000 -- Valeur de lissage pour les lignes
 	)
 
