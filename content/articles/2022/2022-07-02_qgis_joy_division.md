@@ -56,7 +56,7 @@ Voici ce que dit [Wikipedia](https://en.wikipedia.org/wiki/Unknown_Pleasures#Art
 
 Voici d'ailleurs à quoi ressemble l'image originale :
 
-![image originale des impulsions](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/cp1919.jpg "image originale des impulsions"){: loading=lazy .img-center }
+[![Image originale des impulsions](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/cp1919.jpg "Image originale des impulsions"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/cp1919.jpg){: data-mediabox="lightbox-gallery" data-title="Image originale des impulsions" }
 
 Cette image n'est pas sans rappeler la musique, notamment les courbes de réponse fréquentielle qui servent aux ingénieurs du son à égaliser dans les basses, médiums et aigus. Voilà si l'on souhaite faire un lien avec le monde de la musique
 
