@@ -279,7 +279,7 @@ Enfin, nous construisons une ligne qui relie chaque point qui a été déplacé.
 
 Le rendu sera le suivant :
 
-![Rendu basique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy.jpeg "Rendu basique"){: loading=lazy .img-center }
+[![Rendu basique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy.jpeg "Rendu basique"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy.jpeg){: data-mediabox="lightbox-gallery" data-title="Rendu basique" }
 
 <iframe src="https://giphy.com/embed/3o84U6421OOWegpQhq" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
