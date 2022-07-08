@@ -112,7 +112,7 @@ Puis, extrayez l'emprise de votre modèle numérique de terrain via `Vecteur > O
 
 Voici l'emprise :
 
-![Emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/1-Carre.jpeg "Emprise"){: loading=lazy .img-center }
+[![Emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/1-Carre.jpeg "Emprise"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/1-Carre.jpeg){: data-mediabox="lightbox-gallery" data-title="Emprise" }
 
 ## QGIS, générateur de joie
 Allez dans les `Propriétés` de la couche Emprise, dans `Style`, et choisissez `Générateur de géométrie`, et dans un premier temps, le rendu `Multiligne / Multi-Polyligne`. Nous allons enfin pouvoir faire joujou !
