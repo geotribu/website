@@ -130,23 +130,25 @@ Nous allons créer des lignes horizontales :
 
 Voici le code associé :
 
-	collect_geometries(
-		array_foreach(
-			generate_series(
-				y_min($geometry),
-				y_max($geometry),
-				200 -- Espace vertical entre les lignes
-			),
-			with_variable(
-				'y',
-				@element,
-				make_line(
-					make_point(x_min($geometry), @y),
-					make_point(x_max($geometry), @y)
-				)
-			)
-		)
-	)
+```sql
+collect_geometries(
+    array_foreach(
+        generate_series(
+            y_min($geometry),
+            y_max($geometry),
+            200 -- Espace vertical entre les lignes
+        ),
+        with_variable(
+            'y',
+            @element,
+            make_line(
+                make_point(x_min($geometry), @y),
+                make_point(x_max($geometry), @y)
+            )
+        )
+    )
+)
+```
 
 Ce dernier génère une séries de coordonnées Y
 
