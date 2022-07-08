@@ -38,7 +38,7 @@ La couverture de l'album Unkown Pleasures du groupe Joy Division amuse beaucoup 
 
 Voici par exemple une carte de l'Islande :
 
-![carte de l'islande](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/islande.jpg "carte de l'islande"){: loading=lazy .img-center }
+[![Carte de l'Islande](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/islande.jpg "Carte de l'Islande"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/islande.jpg){: data-mediabox="lightbox-gallery" data-title="Carte de l'Islande" }
 
 Dans le monde de la dataviz, on nomme ce type de rendu des [ridgelines](https://www.data-to-viz.com/graph/ridgeline.html).
 
