@@ -357,7 +357,7 @@ A vous de jouer !
 
 <iframe src="https://giphy.com/embed/U8RXSRKv8uMPS" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-![Mon T-Shirt Joy Division](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-photo.jpeg "Mon T-Shirt Joy Division"){: loading=lazy .img-center }
+[![Mon T-Shirt Joy Division](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-photo.jpeg "Mon T-Shirt Joy Division"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-photo.jpeg){: data-mediabox="lightbox-gallery" data-title="Mon T-Shirt Joy Division" }
 
 Pas mal de variations sont possibles sur la base de ces lignes. Voici une petite variation avec Blender accomplie par Steven Kay :
 
