@@ -67,6 +67,7 @@ Cette image n'est pas sans rappeler la musique, notamment les courbes de répons
 ![courbe de réponse fréquentielle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/yamaha-sound-analyser.jpg "courbe de réponse fréquentielle"){: loading=lazy .img-center }
 
 ## Téléchargement du MNT
+
 Je ferai la carte Joy Division de la Montagne Sainte-Victoire. Celle-ci domine Aix-en-Provence où j'habite.
 
 Voici le secteur sur [Géoportail](https://www.geoportail.gouv.fr/carte?c=5.6006081074750975,43.515372159709386&z=13&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV::GEOPORTAIL:OGC:WMTS(1)&l1=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2::GEOPORTAIL:OGC:WMTS(1)&l2=GEOGRAPHICALGRIDSYSTEMS.MAPS::GEOPORTAIL:OGC:WMTS(1)&l3=ORTHOIMAGERY.ORTHOPHOTOS::GEOPORTAIL:OGC:WMTS(1)&permalink=yes) :
