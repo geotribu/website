@@ -92,7 +92,7 @@ Localisez-vous sur votre zone grâce à l'outil de localisation (plugin [French 
 
 Découpez le MNT selon votre zone de référence via `Raster > Extraction > Découper un raster selon une emprise` en choisissant le mode dessin :
 
-![Découpe avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/decoupe.png "Découpe avec QGIS"){: loading=lazy .img-center }
+[![Découpe avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/decoupe.png "Découpe avec QGIS"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/decoupe.png){: data-mediabox="lightbox-gallery" data-title="Découpe avec QGIS" }
 
 Vous obtiendrez alors :
 
