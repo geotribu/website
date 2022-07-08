@@ -50,7 +50,8 @@ Dans le monde de la dataviz, on nomme ce type de rendu des [ridgelines](https://
 
 L'album [Unknow Pleasures](https://fr.wikipedia.org/wiki/Unknown_Pleasures) est paru en 1979. Sa couverture est assez bien ancrée dans l'époque des années 80 avec un air assez pixel art, rétro-futuriste. Elle rappelle un peu les écrans de contrôle dans Star Trek ou Star Wars, ou l'esthétique du film Tron.
 
-<iframe src="https://giphy.com/embed/3x4GWhk9YWu2HHZESO" width="480" height="378" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+![Dancing Girl Dance](https://media.giphy.com/media/3x4GWhk9YWu2HHZESO/giphy-downsized-large.gif "Dancing Girl Dance"){: loading=lazy }
+{: align=middle }
 
 Quand on regarde la couverture, tous les férus de carto y voient des courbes de niveau, ou un paysage. Personnellement, ça me fait penser à [la vidéo promotionnelle du logiciel GRASS (1987)](https://youtu.be/cZia3ShzTWM?t=558).
 
@@ -311,7 +312,8 @@ Le rendu sera le suivant :
 
 [![Rendu basique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy.jpeg "Rendu basique"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy.jpeg){: data-mediabox="lightbox-gallery" data-title="Rendu basique" }
 
-<iframe src="https://giphy.com/embed/3o84U6421OOWegpQhq" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+![St Patricks Day Rainbow GIF](https://media.giphy.com/media/3o84U6421OOWegpQhq/giphy.gif "St Patricks Day Rainbow GIF"){: loading=lazy }
+{: align=middle }
 
 Si vous êtes un puriste de l'album, vous pouvez choisir de n'afficher que 100 lignes, comme les 100 impulsions du pulsar, et de conserver les proportions du graphique au maximum en augmentant la marge (ou l'offset) sur les bords droit et gauche (soit en X) :
 
@@ -393,7 +395,8 @@ Voilà, le tutoriel est fini. On voit qu'il y a pas mal de choses intéressantes
 
 A vous de jouer !
 
-<iframe src="https://giphy.com/embed/U8RXSRKv8uMPS" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+![Dance Dancing GIF](https://media.giphy.com/media/U8RXSRKv8uMPS/giphy.gif "Dance Dancing GIF"){: loading=lazy }
+{: align=middle }
 
 [![Mon T-Shirt Joy Division](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-photo.jpeg "Mon T-Shirt Joy Division"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-photo.jpeg){: data-mediabox="lightbox-gallery" data-title="Mon T-Shirt Joy Division" }
 
