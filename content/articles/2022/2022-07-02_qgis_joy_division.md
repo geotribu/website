@@ -88,7 +88,7 @@ Téléchargez le MNT sur votre département (j'avoue que j'ai un faible pour le 
 
 Localisez-vous sur votre zone grâce à l'outil de localisation (plugin [French Locator Filter](https://plugins.qgis.org/plugins/french_locator_filter/))
 
-![Localisation d'Aix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/aix.png "Localisation d'Aix"){: loading=lazy .img-center }
+[![Localisation d'Aix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/aix.png "Localisation d'Aix"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/aix.png){: data-mediabox="lightbox-gallery" data-title="Localisation d'Aix" }
 
 Découpez le MNT selon votre zone de référence via `Raster > Extraction > Découper un raster selon une emprise` en choisissant le mode dessin :
 
