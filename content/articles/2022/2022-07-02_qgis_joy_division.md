@@ -361,7 +361,7 @@ A vous de jouer !
 
 Pas mal de variations sont possibles sur la base de ces lignes. Voici une petite variation avec Blender accomplie par Steven Kay :
 
-<blockquote class="twitter-tweet" data-lang="fr" data-dnt="true"><p lang="en" dir="ltr">Manicougan Crater, ridgeplot syle. SRTM DEM, Blender. <a href="https://t.co/KGZQh7j57p">pic.twitter.com/KGZQh7j57p</a></p>&mdash; Steven Kay (@stevefaeembra) <a href="https://twitter.com/stevefaeembra/status/1543318675230543874?ref_src=twsrc%5Etfw">2 juillet 2022</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="fr" data-dnt="true"><p lang="en" dir="ltr">Manicougan Crater, ridgeplot syle. SRTM DEM, Blender. <a href="https://t.co/KGZQh7j57p">pic.twitter.com/KGZQh7j57p</a></p>&mdash; Steven Kay (@stevefaeembra) <a href="https://twitter.com/stevefaeembra/status/1543318675230543874?ref_src=twsrc%5Etfw">2 juillet 2022</a></blockquote>
 
 ## Petit livret de cuisine
 Pour résumer, voici les ingrédients utilisés pour cette carte :
