@@ -9,11 +9,11 @@ description: "Comment faire des cartes à la mode de Joy Division avec les gén�
 image: ![](images/joy-puriste.jpeg)
 license: default
 tags:
-    - QGIS
-    - Geometry Generators
+    - cartographie
+    - geometry generators
     - Generative Design
-    - Cartography
-    - Post-Punk
+    - post-punk
+    - QGIS
 ---
 
 # Réaliser une carte comme la couverture de l'album Unknow Pleasures de Joy Division
