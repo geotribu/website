@@ -21,6 +21,9 @@ tags:
 :calendar: Date de publication initiale : 2 Juillet 2022
 
 ## Introduction
+
+![icône globe musique note](https://cdn.geotribu.fr/img/internal/icons-rdp-news/musique_note.png "icône globe musique note"){: .img-rdp-news-thumb }
+
 Dans cet article, nous allons voir comment créer une carte Post-punk à la mode Joy Division en utilisant les générateurs de géométrie de QGIS.
 
 La couverture de l'album 'Unknow Pleasures' du groupe Joy Division est iconique et a inspiré bon nombre de cartographes. Ne vous fait-elle pas penser à des courbes de niveaux ?
