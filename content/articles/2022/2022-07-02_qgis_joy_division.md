@@ -104,7 +104,7 @@ Ensuite, créez une couche vectorielle selon l'étendue de votre MNT.
 
 Allez sur `Extraire l'emprise de la couche` :
 
-![Extraction de l'emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/couche.png "Extraction de l'emprise"){: loading=lazy .img-center }
+[![Extraction de l'emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/couche.png "Extraction de l'emprise"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/couche.png){: data-mediabox="lightbox-gallery" data-title="Extraction de l'emprise" }
 
 Puis, extrayez l'emprise de votre modèle numérique de terrain via `Vecteur > Outils de recherche > Extraire l'emprise de la couche`.
 
