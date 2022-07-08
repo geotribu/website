@@ -99,6 +99,7 @@ Vous obtiendrez alors :
 [![MNT découpé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/0-dem.jpeg "MNT découpé"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/0-dem.jpeg){: data-mediabox="lightbox-gallery" data-title="MNT découpé" }
 
 ## Création de la couche d'emprise
+
 Ensuite, créez une couche vectorielle selon l'étendue de votre MNT.
 
 Allez sur `Extraire l'emprise de la couche` :
