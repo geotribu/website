@@ -382,6 +382,7 @@ Les fonctions :
 - `translate`
 
 ## Crédits
+
 - [Carte de l'Islande par Brian Suda](https://www.flickr.com/photos/suda/5384299394)
 - [Courbe de réponse fréquentielle par Dominic Alves](https://www.flickr.com/photos/dominicspics/27777314569)
 - [Image originale ayant inspiré la couverture de l'album](https://cococubed.com/images/unknown_pleasures/craft_fig537.jpg)
