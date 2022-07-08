@@ -108,7 +108,7 @@ Allez sur `Extraire l'emprise de la couche` :
 
 Puis, extrayez l'emprise de votre modèle numérique de terrain via `Vecteur > Outils de recherche > Extraire l'emprise de la couche`.
 
-![Extraire l'emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/extraire.png "Extraire l'emprise"){: loading=lazy .img-center }
+[![Extraire l'emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/extraire.png "Extraire l'emprise"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/extraire.png){: data-mediabox="lightbox-gallery" data-title="Extraire l'emprise" }
 
 Voici l'emprise :
 
