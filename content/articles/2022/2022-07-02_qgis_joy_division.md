@@ -126,7 +126,7 @@ Nous allons procéder pas à pas afin de comprendre les différentes fonctions.
 
 Nous allons créer des lignes horizontales :
 
-![Rendu en lignes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/2-lines.jpeg "Rendu en lignes"){: loading=lazy .img-center }
+[![Rendu en lignes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/2-lines.jpeg "Rendu en lignes"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/2-lines.jpeg){: data-mediabox="lightbox-gallery" data-title="Rendu en lignes" }
 
 Voici le code associé :
 
