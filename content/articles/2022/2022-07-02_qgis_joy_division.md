@@ -46,7 +46,7 @@ Voici par exemple une carte de l'Islande :
 
 Dans le monde de la dataviz, on nomme ce type de rendu des [ridgelines](https://www.data-to-viz.com/graph/ridgeline.html).
 
-[![Ridgeline plots](https://www.data-to-viz.com/graph/ridgeline_files/figure-html/unnamed-chunk-1-1.png "Ridgeline plots"){: loading=lazy .img-center }](https://www.data-to-viz.com/graph/ridgeline_files/figure-html/unnamed-chunk-1-1.png){: data-mediabox="lightbox-gallery" data-title="Ridgeline plots" }
+[![Ridgeline plots](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/ridgelines_exemple_data-to-viz.webp "Ridgeline plots"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/ridgelines_exemple_data-to-viz.webp){: data-mediabox="lightbox-gallery" data-title="Ridgeline plots" }
 
 L'album [Unknow Pleasures](https://fr.wikipedia.org/wiki/Unknown_Pleasures) est paru en 1979. Sa couverture est assez bien ancrée dans l'époque des années 80 avec un air assez pixel art, rétro-futuriste. Elle rappelle un peu les écrans de contrôle dans Star Trek ou Star Wars, ou l'esthétique du film Tron.
 
