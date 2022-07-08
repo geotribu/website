@@ -285,7 +285,7 @@ Le rendu sera le suivant :
 
 Si vous êtes un puriste de l'album, vous pouvez choisir de n'afficher que 100 lignes, comme les 100 impulsions du pulsar, et de conserver les proportions du graphique au maximum en augmentant la marge (ou l'offset) sur les bords droit et gauche (soit en X) :
 
-![Rendu puriste](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-puriste.jpeg "Rendu puriste"){: loading=lazy .img-center }
+[![Rendu puriste](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-puriste.jpeg "Rendu puriste"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-puriste.jpeg){: data-mediabox="lightbox-gallery" data-title="Rendu puriste" }
 
 Voici le code associé :
 
