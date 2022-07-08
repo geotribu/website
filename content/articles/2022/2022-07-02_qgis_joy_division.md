@@ -207,7 +207,7 @@ Si nous ne mettions pas `collect_geometries` et que nous nous arrêtions seuleme
 
 En commentant `collect_geometries`, nous pouvons débugger le code en laissant apparaître l'"ADN géométrique" du rendu :
 
-![Commenter le code](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/comment.png "Commenter le code"){: loading=lazy .img-center }
+[![Commenter le code](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/comment.png "Commenter le code"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/comment.png){: data-mediabox="lightbox-gallery" data-title="Commenter le code" }
 
 Maintenant, ce que l'on va faire, c'est déplacer chaque point vers le haut en fonction de la valeur du MNT qui se situe en dessous.  
 C'est-à-dire ceci :
