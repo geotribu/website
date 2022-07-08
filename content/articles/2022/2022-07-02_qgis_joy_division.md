@@ -120,7 +120,7 @@ Voici l'emprise :
 
 Allez dans les `Propriétés` de la couche Emprise, dans `Style`, et choisissez `Générateur de géométrie`, et dans un premier temps, le rendu `Multiligne / Multi-Polyligne`. Nous allons enfin pouvoir faire joujou !
 
-![Générateur de géométries](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/rendu-ligne.png "Générateur de géométries"){: loading=lazy .img-center }
+[![Générateur de géométries](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/rendu-ligne.png "Générateur de géométries"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/rendu-ligne.png){: data-mediabox="lightbox-gallery" data-title="Générateur de géométries" }
 
 Nous allons procéder pas à pas afin de comprendre les différentes fonctions.
 
