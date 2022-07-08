@@ -35,7 +35,8 @@ La couverture de l'album 'Unknow Pleasures' du groupe Joy Division est iconique 
 {: align=middle }
 
 ## Joy Division, Joy Maps et Joy Plots
-La couverture de l'album Unkown Pleasures du groupe Joy Division amuse beaucoup de cartographes. C'est un thème très repris dans la #gistribe
+
+La couverture de l'album Unkown Pleasures du groupe Joy Division amuse beaucoup de cartographes. C'est un thème très repris dans la #gistribe.
 
 Voici par exemple une carte de l'Islande :
 
@@ -151,20 +152,24 @@ collect_geometries(
 )
 ```
 
-Ce dernier génère une séries de coordonnées Y
+Ce dernier génère une séries de coordonnées Y :
 
-	generate_series(
-		y_min($geometry),
-	 	y_max($geometry),
-		200 -- Espace vertical entre les lignes
-	)
+```sql
+generate_series(
+    y_min($geometry),
+    y_max($geometry),
+    200 -- Espace vertical entre les lignes
+)
+```
 
 Et crée une ligne entre le X min et le X max de l'étendue pour chaque Y
 
-	make_line(
-		make_point(x_min($geometry), @y),
-		make_point(x_max($geometry), @y)
-	)
+```sql
+make_line(
+  make_point(x_min($geometry), @y),
+  make_point(x_max($geometry), @y)
+)
+```
 
 Ensuite, nous densifions les lignes avec des points, ce qui laisse apparaître une grille de points. Ces points constitueront plus tard les noeuds de nos lignes.
 
@@ -172,37 +177,43 @@ Ensuite, nous densifions les lignes avec des points, ce qui laisse apparaître u
 
 Voici le code associé :
 
-	collect_geometries( -- Collecte toutes les lignes de points
-		array_foreach(
-			generate_series(
-				y_min($geometry),
-				y_max($geometry),
-				200 -- Espace vertical entre les lignes
-			),
-			collect_geometries( -- Collecte une ligne de points
-				with_variable(
-					'y',
-					@element,
-					array_foreach(
-						generate_series(
-							x_min($geometry),
-							x_max($geometry),
-							50), -- Espace horizontal entre les points
-						with_variable(
-							'x',
-							@element,
-							make_point(@x, @y))
-					)
-				)
-			)
-		)
-	)
-
+```sql
+collect_geometries(
+    -- Collecte toutes les lignes de points
+    array_foreach(
+        generate_series(
+            y_min($geometry),
+            y_max($geometry),
+            200 -- Espace vertical entre les lignes
+        ),
+        collect_geometries(
+            -- Collecte une ligne de points
+            with_variable(
+                'y',
+                @element,
+                array_foreach(
+                    generate_series(
+                        x_min($geometry),
+                        x_max($geometry),
+                        50
+                    ),
+                    -- Espace horizontal entre les points
+                    with_variable(
+                        'x',
+                        @element,
+                        make_point(@x, @y)
+                    )
+                )
+            )
+        )
+    )
+)
+```
 
 Nous utilisons `collect_geometries` deux fois :
 
 1. une fois pour agréger les points d'une ligne horizontale
-- une autre fois pour agréger toutes les lignes horizontales de points
+1. une autre fois pour agréger toutes les lignes horizontales de points
 
 Si nous ne mettions pas `collect_geometries` et que nous nous arrêtions seulement à `array_foreach`, nous n'obtiendrions pas de rendu graphique.
 
@@ -217,64 +228,74 @@ C'est-à-dire ceci :
 
 Voici le code associé :
 
-	collect_geometries( --Collecte toutes les lignes de points
-		array_foreach(
-			generate_series(
-				y_min($geometry) + 200,
-				y_max($geometry) - 200,
-				200 -- Espace vertical entre les lignes
-			),
-			collect_geometries( -- Collecte une ligne de points
-				with_variable(
-					'y',
-					@element,
-					array_foreach(
-						generate_series(
-							x_min($geometry) + 1,
-							x_max($geometry) - 1,
-							50), -- Espace horizontal entre les points
-						with_variable(
-							'x',
-							@element,
-							with_variable(
-								'point',
-								make_point(@x, @y),
-								with_variable(
-									'shift',
-									raster_value('dem', 1, @point) * 2,
-									translate(@point, 0, @shift)
-								)
-							)
-						)
-					)
-				)
-			)
-		)
-	)
+```sql
+ collect_geometries( --Collecte toutes les lignes de points
+  array_foreach(
+   generate_series(
+    y_min($geometry) + 200,
+    y_max($geometry) - 200,
+    200 -- Espace vertical entre les lignes
+   ),
+   collect_geometries( -- Collecte une ligne de points
+    with_variable(
+     'y',
+     @element,
+     array_foreach(
+      generate_series(
+       x_min($geometry) + 1,
+       x_max($geometry) - 1,
+       50), -- Espace horizontal entre les points
+      with_variable(
+       'x',
+       @element,
+       with_variable(
+        'point',
+        make_point(@x, @y),
+        with_variable(
+         'shift',
+         raster_value('dem', 1, @point) * 2,
+         translate(@point, 0, @shift)
+        )
+       )
+      )
+     )
+    )
+   )
+  )
+ )
+```
 
 Pour trouver la valeur du MNT, nous utilisons la fonction `raster_value` qui permet de croiser un point avec un raster.
 
-	raster_value('dem', 1, @point)
+```sql
+raster_value('dem', 1, @point)
+```
 
 Nous exagérons la hauteur au point, en la doublant, comme ceci :
 
-	raster_value('dem', 1, @point) * 2
+```sql
+raster_value('dem', 1, @point) * 2
+```
 
 Pour déplacer le point en fonction de l'altitude au point, nous utilisons la fonction translate
 
-	translate(
-		@point,
-		0, -- Pas de translation en X
-		raster_value('dem', 1, @point)*2
-	)
+```sql
+translate(
+    @point,
+    0, -- Pas de translation en X
+    raster_value('dem', 1, @point)*2
+)
+```
 
 Si aucune valeur n'est trouvée sur un point, alors aucune géométrie ne sera retournée. On a dû affecter un petit offset aux X pour que les points croisent correctement le MNT.
 
-	generate_series(
-		x_min($geometry) + 1, -- offset de 1 m
-		x_max($geometry) - 1,
-		50
-	)
+```sql
+generate_series(
+    x_min($geometry) + 1, -- offset de 1 m
+    x_max($geometry) - 1,
+    50
+)
+```
 
 Enfin, nous construisons une ligne qui relie chaque point qui a été déplacé.
 
@@ -290,67 +311,72 @@ Si vous êtes un puriste de l'album, vous pouvez choisir de n'afficher que 100 l
 
 Voici le code associé :
 
-	smooth(
-		collect_geometries(
-			array_foreach(
-				generate_series(
-					y_min($geometry) + 200,
-					y_max($geometry) - 200,
-					(bounds_height($geometry) - 400) / 100
-				),
-
-				with_variable(
-					'y',
-					@element,
-					make_line(
-						array_foreach(
-							generate_series(
-								x_min($geometry) + 4000, -- offset de 1 m
-								x_max($geometry) - 4000,
-								50
-							), -- Un point tous les 50 m
-
-							with_variable(
-								'x',
-								@element,
-
-								with_variable(
-									'point',
-									make_point(@x, @y),
-									with_variable(
-										'shift',
-										raster_value('dem', 1, @point) * 2,
-										translate(
-											@point,
-											0, -- Pas de translation en X
-											@shift
-										)
-									)
-								)
-							)
-						)
-					)
-				)
-			)
-		),
-		1000 -- Valeur de lissage pour les lignes
-	)
+```sql
+smooth(
+    collect_geometries(
+        array_foreach(
+            generate_series(
+                y_min($geometry) + 200,
+                y_max($geometry) - 200,
+                (bounds_height($geometry) - 400) / 100
+            ),
+        with_variable(
+            'y',
+            @element,
+            make_line(
+                array_foreach(
+                    generate_series(
+                        x_min($geometry) + 4000, -- offset de 1 m
+                        x_max($geometry) - 4000,
+                        50
+                    ), -- Un point tous les 50 m
+                    with_variable(
+                    'x',
+                    @element,
+                        with_variable(
+                            'point',
+                            make_point(@x, @y),
+                        with_variable(
+          'shift',
+          raster_value('dem', 1, @point) * 2,
+          translate(
+           @point,
+           0, -- Pas de translation en X
+           @shift
+          )
+         )
+        )
+       )
+      )
+     )
+    )
+   )
+  ),
+  1000 -- Valeur de lissage pour les lignes
+ )
+```
 
 Pour créer une ligne depuis les points ou noeuds déplacés, on utilise la fonction `make_line`
 
-	make_line([point1, point2, point3, ...])
+```sql
+make_line([point1, point2, point3, ...])
+```
 
 Pour avoir cent lignes, comme les 100 impulsions du pulsar, on utilise l'expression :
 
-	generate_series(
-		y_min($geometry) + 200,
-		y_max($geometry) - 200,
-		(bounds_height($geometry) - 400) / 100
-	)
+```sql
+generate_series(
+    y_min($geometry) + 200,
+    y_max($geometry) - 200,
+    (bounds_height($geometry) - 400) / 100
+)
+```
 
 Enfin, nous avons ajouté un petit smoothing aux lignes pour un rendu plus doux.
 
-	smooth(..., 1000)
+```sql
+smooth(..., 1000)
+```
 
 Voilà, le tutoriel est fini. On voit qu'il y a pas mal de choses intéressantes et possibles à faire en utilisant seulement les geometry generators. Après le design génératif, voici venue l'ère de la carto générative.
 
@@ -364,7 +390,10 @@ Pas mal de variations sont possibles sur la base de ces lignes. Voici une petite
 
 <blockquote class="twitter-tweet tw-align-center" data-lang="fr" data-dnt="true"><p lang="en" dir="ltr">Manicougan Crater, ridgeplot syle. SRTM DEM, Blender. <a href="https://t.co/KGZQh7j57p">pic.twitter.com/KGZQh7j57p</a></p>&mdash; Steven Kay (@stevefaeembra) <a href="https://twitter.com/stevefaeembra/status/1543318675230543874?ref_src=twsrc%5Etfw">2 juillet 2022</a></blockquote>
 
+----
+
 ## Petit livret de cuisine
+
 Pour résumer, voici les ingrédients utilisés pour cette carte :
 
 - `Raster > Extraction > Découper un raster selon une emprise`
