@@ -212,7 +212,7 @@ En commentant `collect_geometries`, nous pouvons débugger le code en laissant a
 Maintenant, ce que l'on va faire, c'est déplacer chaque point vers le haut en fonction de la valeur du MNT qui se situe en dessous.  
 C'est-à-dire ceci :
 
-![Déplacement des points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/shift-points.jpeg "Déplacement des points"){: loading=lazy .img-center }
+[![Déplacement des points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/shift-points.jpeg "Déplacement des points"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/shift-points.jpeg){: data-mediabox="lightbox-gallery" data-title="Déplacement des points" }
 
 Voici le code associé :
 
