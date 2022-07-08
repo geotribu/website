@@ -82,7 +82,10 @@ Le MNT BDALTI de l'IGN à une résolution de 25 mètres sera suffisant pour notr
 
 Téléchargez le MNT sur votre département (j'avoue que j'ai un faible pour le site de Christian Quest). Mon département étant les Bouches-du-Rhône, le zip à télécharger est <https://data.cquest.org/ign/bdalti/BDALTIV2_2-0_25M_ASC_LAMB93-IGN69_D013_2019-10-01.7z>.
 
+----
+
 ## Découpage du MNT selon votre zone
+
 Localisez-vous sur votre zone grâce à l'outil de localisation (plugin [French Locator Filter](https://plugins.qgis.org/plugins/french_locator_filter/))
 
 ![Localisation d'Aix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/aix.png "Localisation d'Aix"){: loading=lazy .img-center }
