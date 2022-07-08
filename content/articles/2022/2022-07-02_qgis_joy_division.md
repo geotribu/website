@@ -167,7 +167,7 @@ Et crée une ligne entre le X min et le X max de l'étendue pour chaque Y
 
 Ensuite, nous densifions les lignes avec des points, ce qui laisse apparaître une grille de points. Ces points constitueront plus tard les noeuds de nos lignes.
 
-![Rendu en points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/3-points.jpeg "Rendu en points"){: loading=lazy .img-center }
+[![Rendu en points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/3-points.jpeg "Rendu en points"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/3-points.jpeg){: data-mediabox="lightbox-gallery" data-title="Rendu en points" }
 
 Voici le code associé :
 
