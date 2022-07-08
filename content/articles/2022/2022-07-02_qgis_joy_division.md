@@ -55,6 +55,7 @@ Quand on regarde la couverture, tous les férus de carto y voient des courbes de
 La couverture de l'album est en réalité la reproduction d'une image intitulée "100 consecutive pulses from the pulsar CP 1919" qui représente les émissions radio du tout premier pulsar découvert en 1967. Chaque ligne représente une impulsion. C'était donc déjà une dataviz.
 
 Voici ce que dit [Wikipedia](https://en.wikipedia.org/wiki/Unknown_Pleasures#Artwork_and_packaging) sur cette image :
+
 > The image was originally created by radio astronomer Harold Craft at the Arecibo Observatory for his 1970 doctoral dissertation as a way to visualize smaller pulses within larger ones, which might help explain what had been causing the pulses. He was unaware for years that the image was associated with the album cover until a friend told him; afterwards he bought a copy because he felt he should have one as the creator of the image.
 
 Voici d'ailleurs à quoi ressemble l'image originale :
