@@ -29,7 +29,7 @@ Dans cet article, nous allons voir comment créer une carte Post-punk à la mode
 
 La couverture de l'album 'Unknow Pleasures' du groupe Joy Division est iconique et a inspiré bon nombre de cartographes. Ne vous fait-elle pas penser à des courbes de niveaux ?
 
-[![Joy Division cover](https://upload.wikimedia.org/wikipedia/commons/5/5f/Radio_joy_division.jpg "Joy Division cover"){: loading=lazy .img-center }](https://upload.wikimedia.org/wikipedia/commons/5/5f/Radio_joy_division.jpg){: data-mediabox="lightbox-gallery" data-title="Joy Division cover" }
+[![Joy Division cover](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy_division_unknown_pleasures.webp "Joy Division cover"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy_division_unknown_pleasures.webp){: data-mediabox="lightbox-gallery" data-title="Joy Division cover" }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
