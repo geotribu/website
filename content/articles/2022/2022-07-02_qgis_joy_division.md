@@ -209,8 +209,8 @@ En commentant `collect_geometries`, nous pouvons débugger le code en laissant a
 
 ![Commenter le code](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/comment.png "Commenter le code"){: loading=lazy .img-center }
 
-Maintenant, ce que l'on va faire, c'est déplacer chaque point vers le haut en fonction de la valeur du MNT qui se situe en dessous.
-, c'est-à-dire ceci :
+Maintenant, ce que l'on va faire, c'est déplacer chaque point vers le haut en fonction de la valeur du MNT qui se situe en dessous.  
+C'est-à-dire ceci :
 
 ![Déplacement des points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/shift-points.jpeg "Déplacement des points"){: loading=lazy .img-center }
 
