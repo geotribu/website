@@ -34,6 +34,8 @@ La couverture de l'album 'Unknow Pleasures' du groupe Joy Division est iconique 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
+----
+
 ## Joy Division, Joy Maps et Joy Plots
 
 La couverture de l'album Unkown Pleasures du groupe Joy Division amuse beaucoup de cartographes. C'est un thème très repris dans la #gistribe.
@@ -67,6 +69,8 @@ Voici d'ailleurs à quoi ressemble l'image originale :
 Cette image n'est pas sans rappeler la musique, notamment les courbes de réponse fréquentielle qui servent aux ingénieurs du son à égaliser dans les basses, médiums et aigus. Voilà si l'on souhaite faire un lien avec le monde de la musique
 
 ![courbe de réponse fréquentielle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/yamaha-sound-analyser.jpg "courbe de réponse fréquentielle"){: loading=lazy .img-center }
+
+----
 
 ## Téléchargement du MNT
 
@@ -229,40 +233,44 @@ C'est-à-dire ceci :
 Voici le code associé :
 
 ```sql
- collect_geometries( --Collecte toutes les lignes de points
-  array_foreach(
-   generate_series(
-    y_min($geometry) + 200,
-    y_max($geometry) - 200,
-    200 -- Espace vertical entre les lignes
-   ),
-   collect_geometries( -- Collecte une ligne de points
-    with_variable(
-     'y',
-     @element,
-     array_foreach(
-      generate_series(
-       x_min($geometry) + 1,
-       x_max($geometry) - 1,
-       50), -- Espace horizontal entre les points
-      with_variable(
-       'x',
-       @element,
-       with_variable(
-        'point',
-        make_point(@x, @y),
-        with_variable(
-         'shift',
-         raster_value('dem', 1, @point) * 2,
-         translate(@point, 0, @shift)
+collect_geometries(
+    --Collecte toutes les lignes de points
+    array_foreach(
+        generate_series(
+            y_min($ geometry) + 200,
+            y_max($ geometry) - 200,
+            200 -- Espace vertical entre les lignes
+        ),
+        collect_geometries(
+            -- Collecte une ligne de points
+            with_variable(
+                'y',
+                @element,
+                array_foreach(
+                    generate_series(
+                        x_min($ geometry) + 1,
+                        x_max($ geometry) - 1,
+                        50
+                    ),
+                    -- Espace horizontal entre les points
+                    with_variable(
+                        'x',
+                        @element,
+                        with_variable(
+                            'point',
+                            make_point(@x, @y),
+                            with_variable(
+                                'shift',
+                                raster_value('dem', 1, @point) * 2,
+                                translate(@point, 0, @shift)
+                            )
+                        )
+                    )
+                )
+            )
         )
-       )
-      )
-     )
     )
-   )
-  )
- )
+)
 ```
 
 Pour trouver la valeur du MNT, nous utilisons la fonction `raster_value` qui permet de croiser un point avec un raster.
@@ -316,44 +324,47 @@ smooth(
     collect_geometries(
         array_foreach(
             generate_series(
-                y_min($geometry) + 200,
-                y_max($geometry) - 200,
-                (bounds_height($geometry) - 400) / 100
+                y_min($ geometry) + 200,
+                y_max($ geometry) - 200,
+                (bounds_height($ geometry) - 400) / 100
             ),
-        with_variable(
-            'y',
-            @element,
-            make_line(
-                array_foreach(
-                    generate_series(
-                        x_min($geometry) + 4000, -- offset de 1 m
-                        x_max($geometry) - 4000,
-                        50
-                    ), -- Un point tous les 50 m
-                    with_variable(
-                    'x',
-                    @element,
+            with_variable(
+                'y',
+                @element,
+                make_line(
+                    array_foreach(
+                        generate_series(
+                            x_min($ geometry) + 4000,
+                            -- offset de 1 m
+                            x_max($ geometry) - 4000,
+                            50
+                        ),
+                        -- Un point tous les 50 m
                         with_variable(
-                            'point',
-                            make_point(@x, @y),
-                        with_variable(
-          'shift',
-          raster_value('dem', 1, @point) * 2,
-          translate(
-           @point,
-           0, -- Pas de translation en X
-           @shift
-          )
-         )
+                            'x',
+                            @element,
+                            with_variable(
+                                'point',
+                                make_point(@x, @y),
+                                with_variable(
+                                    'shift',
+                                    raster_value('dem', 1, @point) * 2,
+                                    translate(
+                                        @point,
+                                        0,
+                                        -- Pas de translation en X
+                                        @shift
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
         )
-       )
-      )
-     )
-    )
-   )
-  ),
-  1000 -- Valeur de lissage pour les lignes
- )
+    ),
+    1000 -- Valeur de lissage pour les lignes
+)
 ```
 
 Pour créer une ligne depuis les points ou noeuds déplacés, on utilise la fonction `make_line`
