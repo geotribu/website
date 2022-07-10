@@ -1,0 +1,48 @@
+---
+title: "Open Data: Des paroles aux actes"
+authors:
+    - Geotribu
+categories:
+    - article
+date: 2012-07-05
+description: "Open Data: Des paroles aux actes"
+tags:
+    - conférence
+    - open data
+---
+
+# Open Data: Des paroles aux actes
+
+:calendar: Date de publication initiale : 05 juillet 2012
+
+![opendata](https://cdn.geotribu.fr/img/logos-icones/divers/open_data.jpg "Open data"){: .img-rdp-news-thumb }
+
+Organisée par [Telecom Valley](http://www.telecom-valley.fr/), la 3e édition des [SophiaConf](http://www.sophiaconf.fr/sophiaconf2012.html) a porté une attention toute particulière au sujet de l'Open Data. Prévue dans le droit français depuis 1978, son application n'a pas toujours été effective. Mais les choses changent. L'ouverture récente de [data.gouv.fr](http://www.data.gouv.fr/) ou les initiatives des différents acteurs publics sont des exemples concrets de cette évolution. Néanmoins, par sa pluralité d'actions et d'acteurs, l'Open Data peut-être un thème difficile à appréhender. Pour les collectivités et les producteurs de données cela nécessite un plan d'action spécifique dans lequel se mêlent technologie, animation et concepts juridiques. L'objectif réussi de cette journée était de démystifier ce terme en donnant la parole à des intervenants aux compétences diverses. Découpée en deux parties, l'une consacrée aux producteurs et la seconde aux développeurs cet événement fût l'occasion d'aborder les différents aspects et opportunités relatifs à l'Open Data.
+
+![20120704_140119.jpeg](http://geotribu.net/sites/default/files/Tuto/img/Blog/divers/20120704_140119.jpeg "20120704_140119.jpeg")
+
+Tout d'abord, la session fût brillamment ouverte par [Charles Nepote](http://www.sophiaconf.fr/charles-nepote.html) de la [Fing](http://www.fing.org/?lang=fr) qui a réussi l'exploit de répondre en une quinzaine de minutes au triptyque de questions : "Qu'est-ce que l'Open Data", "A quoi ça sert ?", "A quoi ça ressemble ?".
+
+- A la première question, il s'agit simplement d'atomes d'informations structurés et factuels mis à disposition par n'importe quel producteur de données (collectivités, producteur privé, etc.).
+- La réponse de "À quoi ça sert ?", qui peut être couplée à "A qui ça sert ?" est multiple. En effet, quand ce type d'initiative est correctement réalisé, cela se concrétise par un échange gagnant-gagnant. Gagnant car ce partage s'accompagne à la fois d'une valorisation des données initiales (par exemple sous la forme d'application) mais aussi d'un enrichissement de celles-ci.
+- Enfin, concernant à quoi ça ressemble ? Là encore, la réponse est multiforme et dépend de votre profil (producteur, contributeur, utilisateur, etc.). Plus concrètement, cela peut se traduire par la mise à disposition d'un portail tel que celui proposé par le [gouvernement](http://www.data.gouv.fr/) ou simplement par le port d'une [montre verte](http://fing.org/?Montre-verte-City-pulse&lang=fr) pour le contributeur.
+
+Puisque l'on parle d'application de l'Open Data, enchaînons sur l'une des annonces phares de cette conférence, celle de l'ouverture du portail de la ville de Nice. Au-delà de l'événement lui-même, ce que j'ai particulièrement apprécié c'est qu'en plus de la mise à disposition des données, les porteurs du projet ont insisté sur le double rôle d'animateur et de fédérateur nécessaire à la réussite de ce projet. Comme cela a été souligné : "Un projet open Data c'est : Impulser, Animer et Féderer".
+
+Bien évidemment, je ne pourrais parler d'Open Data sans aborder [OpenStreetMap](https://www.openstreetmap.org/) (OSM). Devinez qui a eu le privilège de présenter ce projet de cartographie libre ? Ni plus, ni moins que Gaël Musquet, alias [@RatZillaS](https://twitter.com/#!/RatZillaS), président de l'association [OSM-Fr](http://openstreetmap.fr/). C'est devant un parterre médusé, bon ok j'exagère un peu mais c'est l'enthousiasme qui parle, que Gaël à discuté des différents aspects d'OSM. De la contribution volontaire, à l'aspect communautaire, en passant par les outils de qualité ainsi que l'utilisation des données, tout a été abordé. Les questions et les discussions qui s'en sont suivies ont été de loin les plus riches. Preuve s'il en fallait de l’intérêt porté à ce projet.
+
+Enfin, la dernière intervention qui m'a particulièrement intéressé et qui a clos également cette première session a été réalisée par [Pascal Flamand](http://www.sophiaconf.fr/pascal-flamand.html). L'objectif de celle-ci était tout d'abord d'identifier les futures orientations potentielles de l'Open Data mais aussi de dresser les modèles de développement (business model) qu'il est possible ou nécessaire de créer. Il est vrai qu'en tant que contributeur c'est un aspect auquel je m'intéresse encore assez peu. Mais, comme cela a été souligné en introduction, l'Open Data c'est bien évidemment de l'innovation mais aussi de la valorisation. Sur ce sujet, tout reste encore à définir et les voies sont ouvertes. Néanmoins, Pascal Flamand met tout de même en garde les entrepreneurs qui pensent faire fortune avec ce nouveau buzz word, nous en sommes encore très loin !
+
+Abordons maintenant la seconde partie de cette conférence orientée développeurs. Comme son nom l'indique, celle-ci fût un poil plus technique et a consisté à voir concrètement comment utiliser des données provenant de l'Open Data. Tout d'abord, si vous vous intéressez un peu à ce sujet, vous avez déjà très certainement râlé quand vous êtes en face d'un acteur prônant l'ouverture des données et qui ne propose sur son site portail que des données Pdf. Pour vous en convaincre, rien de mieux que de vous rendre sur le site [OpenDataFail](http://www.opendatafail.fr/), vous y trouverez quelques perles. La question qui se pose alors est comment puis-je publier **efficacement** mes données? Un format existe, le [Data Set Publishing Language](https://developers.google.com/public-data/). Ne soyez pas surpris si le lien vous renvoie vers une page Google, puisque c'est tout simplement ce dernier qui est en est à l'origine. Plus concrètement, il s'agit de proposer vos données sous la forme d'un document Comma Separated Value (CSV) et d'y attacher un fichier XML les décrivant. Ce n'est peut-être pas le seul ou le meilleur mais je dois vous avouer mon absence de connaissance sur ce sujet.
+
+Ce problème de format et d'hétérogénéité me donne une transition parfaite pour parler du projet [DataLift](http://datalift.org/) présenté par [Fabien Gandon](http://www-sop.inria.fr/members/Fabien.Gandon/wakka.php?wiki=FabienGandon) de l'[Inria](http://www.inria.fr/). Si vous n'avez jamais assisté à l'une de ses présentations, sachez que vous ratez quelque chose ! C'est en quelque sorte le Steve Jobs du Web Sémantique. Plus concrètement, le projet qu'il anime est un peu le Saint Graal pour les sources de données hétérogènes. En effet, DataLift, qui est une plate-forme Open Source, permet notamment de transformer des données brutes en informations sémantiques (RDF), de générer automatiquement les URI correspondantes ou encore de proposer des schémas de publication adaptés en fonction du type de vos données. Les fonctionnalités sont riches et nombreuses et si cela fonctionne comme cela nous a été présenté autant vous dire que c'est la future Killer Application ! Ce billet étant déjà bien long, je ne m'y attarderai pas plus mais si vous souhaitez des informations complémentaires je vous renvoie à l'une des [présentations](http://www.inria.fr/content/download/18169/514397/version/1/file/Des+donnees+brutes+au+web+des+donne%CC%81es+liees_Francois-SCHARFFE.pdf) effectuées.
+
+En parlant de Killer Application, la seconde qui m'a laissé bouche bée est le projet présenté par Gaël Musquet (encore lui décidément). Imaginez la scène surréaliste, il arrive armé de sa [pirate box](http://wiki.daviddarts.com/PirateBox), d'un jeu de données [OpenStreetMap](http://openstreetmap.fr/) et vous révolutionne votre manière de concevoir les voyages en train. Contrairement à la chanson, pour une fois cela finit bien, puisque lui et son équipe ont obtenu la troisième place lors du [hack days transilien](http://opendata.transilien.com/hack-days/). Pour cela, ils sont partis d'une idée somme toute assez simple, comment partager du contenu et des services dans les transports en commun ? Tout simplement en proposant de se connecter au réseau wifi de la pirate box afin d'accéder ensuite à un portail captif. De ce fait, vous pouvez accéder aux contenus voir même interagir mais tout cela avec une totale sécurité du fait du caractère captif ! Tout cela donne au final le projet [R2](http://opendata.transilien.com/hack-days/focus-sur-les-projets-6-r2/).
+
+Presque 20h30 et cette conférence s'est achevée par un chaleureux cocktail. Bien que le sujet ne m'était pas inconnu, j'ai appris énormément de choses. Les organisateurs de cette Sophia Conf ont réussi à réunir un panel d'experts aux horizons divers. Les interventions ont été de qualité et c'est avec plaisir que j'ai temporairement abandonné mon travail de rédaction de thèse. Surtout cela m'a permis de conforter mon opinion sur la viabilité, l’intérêt et les potentialités de l'Open Data ! Au final un seul mot d'ordre : Libérons nos données !
+
+----
+
+## Auteur {: data-search-exclude }
+
+--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
