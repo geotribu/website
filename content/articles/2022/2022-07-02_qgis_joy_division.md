@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: "2022-07-10 20:00"
+date: "2022-07-11 20:00"
 description: "Comment faire des cartes à la mode de Joy Division avec les générateurs de géométrie de QGIS"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/cover.jpeg"
 license: default
@@ -19,7 +19,7 @@ tags:
 
 # Réaliser une carte comme la couverture de l'album Unknow Pleasures de Joy Division
 
-:calendar: Date de publication initiale : 2 Juillet 2022
+:calendar: Date de publication initiale : 11 Juillet 2022
 
 ## Introduction
 
