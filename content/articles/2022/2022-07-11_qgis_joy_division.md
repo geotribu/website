@@ -11,7 +11,7 @@ image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-q
 license: default
 tags:
     - cartographie
-    - geometry generators
+    - générateur de géométrie
     - Generative Design
     - post-punk
     - QGIS
@@ -83,7 +83,7 @@ Voici le secteur sur [Géoportail](https://www.geoportail.gouv.fr/carte?c=5.6006
 
 Cette montagne a été souvent peinte par Cézanne.
 
-![La Sainte Victoire peinte par Cézanne](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/La_Montagne_Sainte-Victoire_de_P._C%C3%A9zanne_%28Fondation_Vuitton%2C_Paris%29_%2833539038628%29.jpg/640px-La_Montagne_Sainte-Victoire_de_P._C%C3%A9zanne_%28Fondation_Vuitton%2C_Paris%29_%2833539038628%29.jpg "La Sainte Victoire par Cézanne"){: loading=lazy .img-center }
+[![La Sainte Victoire peinte par Cézanne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/sainte_victoire_cezanne_fondation_vuitton_wikimedia.webp "La Sainte Victoire par Cézanne"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/sainte_victoire_cezanne_fondation_vuitton_wikimedia.webp){: data-mediabox="lightbox-gallery" data-title="La Sainte Victoire par Cézanne - Crédits : Fondation Louis Vuitton, Wikimedia" }
 
 Le MNT BDALTI de l'IGN à une résolution de 25 mètres sera suffisant pour notre carte.
 
