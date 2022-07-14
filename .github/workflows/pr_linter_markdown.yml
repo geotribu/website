@@ -30,6 +30,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
-          filter_mode: diff_context
+          # filter_mode: diff_context
+          filter_mode: added
           reporter: github-pr-review
-          markdownlint_flags: "-c '.markdownlint.json' -i '**/template_*.md' 'content/**/202*.md'"
+          markdownlint_flags: -i '**/template_*.md'
