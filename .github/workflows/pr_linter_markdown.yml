@@ -26,18 +26,18 @@ jobs:
           reporter: github-pr-check
           markdownlint_flags: 'content/**/202*.md'
 
-      - name: markdownlint-github-pr-review-diff
-        uses: reviewdog/action-markdownlint@v0.7.1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
-          filter_mode: diff_context
-          reporter: github-pr-review
-
       - name: markdownlint-github-pr-review-added
         uses: reviewdog/action-markdownlint@v0.7.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
           filter_mode: added
+          reporter: github-pr-review
+
+      - name: markdownlint-github-pr-review-diff
+        uses: reviewdog/action-markdownlint@v0.7.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+          filter_mode: diff_context
           reporter: github-pr-review
