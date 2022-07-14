@@ -17,15 +17,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: markdownlint-github-check-added
-        uses: reviewdog/action-markdownlint@v0.7.1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
-          filter_mode: added
-          reporter: github-pr-check
-          markdownlint_flags: 'content/**/202*.md'
-
+      # Filter results by added/modified lines.
       - name: markdownlint-github-pr-review-added
         uses: reviewdog/action-markdownlint@v0.7.1
         with:
@@ -34,10 +26,13 @@ jobs:
           filter_mode: added
           reporter: github-pr-review
 
-      - name: markdownlint-github-pr-review-diff
+      # Filter results by added/modified file. i.e. reviewdog will report results 
+      # as long as they are in added/modified file even if the results are not in actual diff.
+      - name: markdownlint-github-pr-review-file
         uses: reviewdog/action-markdownlint@v0.7.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
-          filter_mode: diff_context
+          fail_on_error: false
+          filter_mode: file
+          level: warning
           reporter: github-pr-review
