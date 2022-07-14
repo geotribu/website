@@ -41,4 +41,3 @@ jobs:
           fail_on_error: true
           filter_mode: added
           reporter: github-pr-review
-          markdownlint_flags: -i '**/template_*.md'
