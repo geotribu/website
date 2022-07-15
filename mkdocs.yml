@@ -168,6 +168,7 @@ theme:
       institution: fontawesome/solid/building-columns
       js: fontawesome/brands/js
       manette: fontawesome/solid/gamepad
+      markdown: fontawesome/brands/markdown
       meridiens: fontawesome/solid/globe
       oeuf: fontawesome/solid/egg
       open: fontawesome/solid/lock-open
@@ -302,6 +303,7 @@ extra:
     LIDAR: satellite
     livre: atlas
     Mapillary: streetview
+    Markdown: markdown
     Matrix: commentaires
     Minecraft: manette
     MySQL: database
