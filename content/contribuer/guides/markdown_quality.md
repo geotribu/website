@@ -77,7 +77,6 @@ Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier
 
 > Référence : [MD032 - Lists should be surrounded by blank lines](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032---lists-should-be-surrounded-by-blank-lines)
 
-
 ### Déclaration explicite des liens hypertextes
 
 Si la plupart des outils repèrent les liens dans le texte, il est recommandé de les déclarer explicitement, notamment si le document est destiné à être intégré dans un format plus exigeant en termes de formatage (mail, etc.).
