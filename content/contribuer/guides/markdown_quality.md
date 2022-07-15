@@ -1,54 +1,45 @@
 ---
-title: "Rédiger en Markdown : enjeux de qualité et régles"
+title: "Rédiger en Markdown : guide des régles de rédaction applicables à Geotribu."
 categories:
     - article
     - contribution
-    - tutoriel
 date: 2020-09-14 14:20
 description: "Rédiger en Markdown : règles partagées, erreurs fréquentes et mécanismes de validation."
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_quick_exemple_rendu.png"
+robots: index, follow
 tags:
     - contribuer
-    - tutoriel
-    - Markdown
-    - rédaction
     - HTML
-    - lint
+    - Markdown
     - Python
-# theme customizations
-search:
-  exclude: true
+    - rédaction
 ---
 
 # Rédiger en Markdown : règles et enjeux de qualité
 
-!!! note
-    Les règles à appliquer dépendent du moteur de rendu (conversion en HTML) utilisé. Consulter [l'article "Comprendre le rendu Markdown"](/contribuer/build_site/markdown_engine/#specificites) pour en savoir plus.
+Le _[markdown]_ est une syntaxe extensible et son rendu dépend de l'outil utilisé pour l'implémenter et générer le HTML. Il existe donc des différences entre le rendu :
+
+- dans l'onglet `Preview` de [GitLab],
+- celui dans un éditeur de texte ([Visual Studio Code], Sublime Text, HackMD, Hedgedoc, vim...
+- celui de l'outil utilisé pour le rendu final [MkDocs / Material](https://squidfunk.github.io/mkdocs-material/).
+
+C'est **ce dernier qui fait foi**. Cette page recense les principes de la rédaction pour Geotribu.
+
+!!! info "En savoir plus"
+    Consulter [l'article "Comprendre le rendu Markdown"](/contribuer/build_site/markdown_engine/#specificites).
 
 ## Règles
 
-L'outil markdownlint a défini un ensemble de règles dont nous utilisons une partie et des règles spécifiques :
+La syntaxe est encadrée par un ensemble de règles :
 
 - [règles de référence](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
-- [règles configurées dans Géotribu](https://github.com/geotribu/website/blob/master/.markdownlint.json)
+- [règles configurées dans Geotribu]({{ config.repo_url }}/blob/master/.markdownlint.json)
 
-### Vérifier la syntaxe avec markdownlint-cli
+Quelques règles de base sont listées ci-dessous, notamment celles pour lesquelles il ya  fréquemment des erreurs :
 
-On utilise [l'outil en ligne de commande développé en _node_](https://github.com/igorshubovych/markdownlint-cli) :
+### Unicité du titre de niveau 1
 
-```bash
-# installation du package
-yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
-
-# vérification sur les fichiers contenus dans les dossiers commençant par '202'
-yarn markdownlint -i "**/template_*.md" "content/*/202*/**/*.md"
-```
-
-Il est aussi possible d'utiliser markdownlint sous forme d'[extension dans Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint).
-
-----
-
-## Erreurs fréquentes
+Le Markdown étant destiné à être du HTML, il ne peut y avoir qu'un titre de niveau 1 défini par balise `#`. Il peut y avoir un titre alternatif défini dans l'en-tête via la clé `title:`.
 
 ### Cohérence du caractère pour les listes à puces
 
@@ -86,8 +77,60 @@ Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier
 
 > Référence : [MD032 - Lists should be surrounded by blank lines](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032---lists-should-be-surrounded-by-blank-lines)
 
-<!-- Hyperlinks references -->
-[Markdown]: https://daringfireball.net/projects/markdown/
-[syntaxe]: https://daringfireball.net/projects/markdown/syntax
-[StackEdit]: https://stackedit.io/
-[Upmath]: https://upmath.me/
+
+### Déclaration explicite des liens hypertextes
+
+Si la plupart des outils repèrent les liens dans le texte, il est recommandé de les déclarer explicitement, notamment si le document est destiné à être intégré dans un format plus exigeant en termes de formatage (mail, etc.).
+
+> Référence : [régle MD 34](https://github.com/DavidAnson/markdownlint/blob/v0.25.1/doc/Rules.md#md034)
+
+<!-- markdownlint-disable MD034 -->
+=== "Markdown"
+    ```markdown
+    - pas bien : https://oslandia.com/
+    - bien : <https://oslandia.com/>
+    - encore mieux : [texte du lien qui apparaît](https://oslandia.com/)
+    ```
+
+=== "Rendu"
+    - pas bien : https://oslandia.com/
+    - bien : <https://oslandia.com/>
+    - bien : [texte du lien qui apparaît](https://oslandia.com/)
+<!-- markdownlint-enableMD034 -->
+
+----
+
+## Outillage
+
+### Utiliser les git hooks
+
+Afin de garantir un minimum de qualité entre les différentes contributions, une série de _git hooks_ (à travers l'outil [pre-commit](https://pre-commit.com/)) est disponible. Pour les installer, il faut disposer de Python puis :
+
+```bash
+# installer pre-commit
+pip install -U pre-commit
+# installer les git hooks
+pre-commit install
+```
+
+Le vérificateur de la syntaxe Markdown (markdownlint-cli, voir ci-dessous) est d'ailleurs configuré.
+
+!!! tip "Astuce dont il ne faut pas abuser"
+    Pour committer en outre-passant les git hooks ajouter l'option `--no-verify` à la commande `git commit`.
+
+### Vérifier la syntaxe avec markdownlint-cli
+
+On utilise [l'outil en ligne de commande développé en _node_](https://github.com/igorshubovych/markdownlint-cli) :
+
+```bash
+# installation du package
+yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
+
+# vérification des contenus
+yarn markdownlint "content/**/*.md"
+
+# auto-correction des problèmes mineurs
+yarn markdownlint --fix "content/**/*.md"
+```
+
+Il est aussi possible d'utiliser markdownlint sous forme d'[extension dans Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) et probablement dans d'autres IDE.
