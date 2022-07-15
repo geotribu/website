@@ -30,7 +30,7 @@ jobs:
       - name: "Explications sur le linter"
         id: pr-comment
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ failure() && steps.demo.conclusion == 'failure' }}
+        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' }}
         with:
           header: linter-md
           recreate: true
