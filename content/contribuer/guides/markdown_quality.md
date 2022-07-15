@@ -39,7 +39,9 @@ Quelques règles de base sont listées ci-dessous, notamment celles pour lesquel
 
 ### Unicité du titre de niveau 1
 
-Le Markdown étant destiné à être du HTML, il ne peut y avoir qu'un titre de niveau 1 défini par balise `#`. Il peut y avoir un titre alternatif défini dans l'en-tête via la clé `title:`.
+Le Markdown étant destiné à être du HTML, il ne peut y avoir qu'un titre de niveau 1 défini par balise `#`. Il peut cependant y avoir un titre alternatif défini dans [l'en-tête via la clé `title:`](/contribuer/guides/metadata_yaml_frontmatter/).
+
+> Référence : [MD025 - Multiple top-level headings in the same document](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md025)
 
 ### Cohérence du caractère pour les listes à puces
 
@@ -49,7 +51,7 @@ Dans cet exemple, des astérisques (`*`) ont été utilisés après que des tire
 
 ![erreur style puces](https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_error_list_style_lizmap..png "Signalement de l'erreur dans Visual Studio Code"){: .img-center loading=lazy }
 
-> Référence : [MD004 - Unordered list style](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
+> Référence : [MD004 - Unordered list style](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md004)
 
 ### Sauts de ligne et lignes vides
 
@@ -75,7 +77,7 @@ Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier
     ![capture liste à puces](https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_list_broken.png "Rendu de la liste à puces cassé"){: .img-center loading=lazy }
 <!-- markdownlint-enable MD046 -->
 
-> Référence : [MD032 - Lists should be surrounded by blank lines](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032---lists-should-be-surrounded-by-blank-lines)
+> Référence : [MD032 - Lists should be surrounded by blank lines](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032)
 
 ### Déclaration explicite des liens hypertextes
 
@@ -83,7 +85,7 @@ Si la plupart des outils repèrent les liens dans le texte, il est recommandé d
 
 > Référence : [régle MD 34](https://github.com/DavidAnson/markdownlint/blob/v0.25.1/doc/Rules.md#md034)
 
-<!-- markdownlint-disable MD034 -->
+<!-- markdownlint-disable MD034 MD038 -->
 === "Markdown"
     ```markdown
     - pas bien : https://oslandia.com/
@@ -92,9 +94,9 @@ Si la plupart des outils repèrent les liens dans le texte, il est recommandé d
     ```
 
 === "Rendu"
-    - pas bien : https://oslandia.com/
-    - bien : <https://oslandia.com/>
-    - bien : [texte du lien qui apparaît](https://oslandia.com/)
+    - pas bien : https://geotribu.fr/
+    - bien : <https://geotribu.fr/>
+    - bien : [texte du lien qui apparaît](https://geotribu.fr/)
 <!-- markdownlint-enableMD034 -->
 
 ----
