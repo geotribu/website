@@ -14,11 +14,12 @@ jobs:
     if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
-      - name: Check out code
+      - name: "Récupère le code source"
         uses: actions/checkout@v3
 
       # Filter results by added/modified lines.
-      - name: markdownlint-github-pr-review-added
+      - name: "Vérifie la syntaxe des lignes ajoutées ou modifiées"
+        id: markdownlint-github-pr-review-added
         uses: reviewdog/action-markdownlint@v0.7.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -26,9 +27,22 @@ jobs:
           filter_mode: added
           reporter: github-pr-review
 
+      - name: "Explications sur le linter"
+        id: pr-comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: ${{ failure() && steps.demo.conclusion == 'failure' }}
+        with:
+          header: linter-md
+          recreate: true
+          message: |
+            Des erreurs de syntaxe Markdown ont été détectées. Merci de les corriger ou de les marquer comme faux-positif :
+              - [règles de syntaxe Markdown applicables à Geotribu](https://static.geotribu.fr/contribuer/guides/markdown_quality/)
+              - [marquer une erreur de syntaxe comme faux-positif](https://static.geotribu.fr/contribuer/guides/markdown_quality/)
+
       # Filter results by added/modified file. i.e. reviewdog will report results
       # as long as they are in added/modified file even if the results are not in actual diff.
-      - name: markdownlint-github-pr-review-file
+      - name: "Vérifie la syntaxe de tous les fichiers ajoutés ou modifiés"
+        id: markdownlint-github-pr-review-file
         uses: reviewdog/action-markdownlint@v0.7.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
