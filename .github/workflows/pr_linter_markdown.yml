@@ -60,4 +60,4 @@ jobs:
           header: linter-md-success
           recreate: true
           message: |
-            :clap: Le markdown ajouté est impeccable ! Merci :1st_place_medal: 
+            :clap: Le markdown ajouté est impeccable ! Merci :1st_place_medal:
