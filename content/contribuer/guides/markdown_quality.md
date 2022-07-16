@@ -26,7 +26,7 @@ Le _[markdown]_ est une syntaxe extensible et son rendu dépend de l'outil utili
 C'est **ce dernier qui fait foi**. Cette page recense les principes de la rédaction pour Geotribu.
 
 !!! info "En savoir plus"
-    Consulter [l'article "Comprendre le rendu Markdown"](/contribuer/build_site/markdown_engine/#specificites).
+    Consulter [l'article "Comprendre le rendu Markdown"](/contribuer/internal/markdown_engine/#specificites).
 
 ## Règles
 
