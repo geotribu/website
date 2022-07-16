@@ -120,7 +120,6 @@ Toujours dans la fenêtre des variables d'environnement, cliquez sur "Nouvelle" 
 
 ### Répéter pour les modules de GDAL et le dossier des projections
 
-
 [![PATH Windows : dossier d'installation des plugins de GDAL](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_Driver.jpg "PATH Windows : dossier d'installation des plugins de GDAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_Driver.jpg "PATH Windows : dossier d'installation des plugins de GDAL"){: data-mediabox="lightbox-gallery" data-title="PATH Windows : dossier d'installation des plugins de GDAL" }
 
 [![Ajout de la variable PROJ_LIB](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_PROJ_LIB.jpg "Ajout de la variable PROJ_LIB"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_PROJ_LIB.jpg "Ajout de la variable PROJ_LIB"){: data-mediabox="lightbox-gallery" data-title="Ajout de la variable PROJ_LIB" }

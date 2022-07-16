@@ -53,7 +53,7 @@ Il sera alors nécessaire d'aligner (ou autrement dit de fusionner) ces différe
 
 L'image ci-dessous présente le résultat de cette opération et comme vous pouvez le constater, un grand nombre d'images n'ont pu être alignées du fait d'une erreur de paramétrage lors de la mission. Ce n'est pas le but de ce billet, mais sachez que la nouvelle version de Pix4D permet de spécifier manuellement des points de correspondance afin d'améliorer le résultat final.
 
-[![Alignement d'images](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/alignement-images.png "Alignement d'images"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/alignement-images.png"Alignement d'images"){: data-mediabox="lightbox-gallery" data-title="Alignement d'images" }
+[![Alignement d'images](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/alignement-images.png "Alignement d'images"){: .img-center loading=lazy }](<https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/alignement-images.png>"Alignement d'images"){: data-mediabox="lightbox-gallery" data-title="Alignement d'images" }
 
 ### Génération du nuage de points
 

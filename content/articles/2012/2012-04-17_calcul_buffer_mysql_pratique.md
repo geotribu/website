@@ -268,7 +268,6 @@ Hum : j'ai testé la carte avec toutes les données contenues en base (un peu pl
 
 [![Trop de POI](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/tropdepoi.png "Trop de POI"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/tropdepoi.png "Trop de POI"){: data-mediabox="lightbox-gallery" data-title="Trop de POI" }
 
-
 ## Code complet côté client
 
 Pour afficher les marqueurs contenus dans un cercle, il faut modifier un peu le code côté client ci-dessus :
@@ -478,7 +477,6 @@ Ce qui donne :) Attention le rayon maximum de recherche est de 50 km.
 !!! info
     Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
     `<iframe src="http://88.191.142.86/geotribu/blog/buffermysql/index.html" width="800" height="600" frameborder="0"></iframe>`
-
 
 ## Conclusion
 
