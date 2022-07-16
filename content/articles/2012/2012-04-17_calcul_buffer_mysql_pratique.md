@@ -218,7 +218,7 @@ function bindInfoWindow(marker, map, infoWindow, html) {
 }
 ```
 
-#### Le script qui génère le XML avec les marqueurs
+### Le script qui génère le XML avec les marqueurs
 
 Ici pas trop de souci, nous éditons le XML contenant les marqueurs en manipulant le DOM pour gérer la construction du fichier XML : il s'agit dune simple requête SQL - c'est ce script qu'il faudra changer pour prendre en compte le rayon de recherche et le centre.
 
