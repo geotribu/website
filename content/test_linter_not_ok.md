@@ -6,7 +6,7 @@ Une liste à puces non ordonnée :
 - confiance
 - contrôle
 
-# Ah ça commence à se gâter !
+## Ah ça commence à se gâter !
 
 Une liste à puces ordonnée qui fait désordre :
 
