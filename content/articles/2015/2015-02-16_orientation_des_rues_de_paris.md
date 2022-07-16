@@ -32,7 +32,7 @@ C'était le 14 Octobre de l'année dernière. Un informaticien américain du nom
 
 Sur son [billet](http://www.datapointed.net/2014/10/maps-of-street-grids-by-orientation/), l'auteur explique :
 
-[![Explication](https://cdn.geotribu.fr/img/articles-blog-rdp/story/explanation.PNG "Explication"){: .img-center loading=lazy }](<https://cdn.geotribu.fr/img/articles-blog-rdp/story/explanation.PNG> "Explication){: data-mediabox="lightbox-gallery" data-title="Explication" }
+[![Explication](https://cdn.geotribu.fr/img/articles-blog-rdp/story/explanation.PNG "Explication"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/explanation.PNG "Explication"){: data-mediabox="lightbox-gallery" data-title="Explication" }
 
 S'il est vrai que j'apprécie que me soit livré le code, je trouve aussi stimulant de déterminer comment une carte a pu être fabriquée.
 
