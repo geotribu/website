@@ -27,15 +27,16 @@ jobs:
           filter_mode: added
           reporter: github-pr-review
 
-      - name: "Explications sur le linter"
+      - name: "Explications sur les erreurs du linter"
         id: pr-comment
         uses: marocchino/sticky-pull-request-comment@v2
         if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' }}
         with:
-          header: linter-md
+          header: linter-md-error
           recreate: true
           message: |
-            Des erreurs de syntaxe Markdown ont été détectées. Merci de les corriger ou de les marquer comme faux-positif :
+            Des erreurs de syntaxe Markdown ont été détectées dans les lignes ajoutées ou modifiées. Merci de les corriger ou de les marquer comme faux-positif :
+
               - [règles de syntaxe Markdown applicables à Geotribu](https://static.geotribu.fr/contribuer/guides/markdown_quality/)
               - [marquer une erreur de syntaxe comme faux-positif](https://static.geotribu.fr/contribuer/guides/markdown_quality/)
 
@@ -50,3 +51,13 @@ jobs:
           filter_mode: file
           level: warning
           reporter: github-pr-review
+
+      - name: "Félicitations"
+        id: pr-comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: ${{ success() }}
+        with:
+          header: linter-md-success
+          recreate: true
+          message: |
+            :clap: Le markdown ajouté est impeccable ! Merci :1st_place_medal: 
