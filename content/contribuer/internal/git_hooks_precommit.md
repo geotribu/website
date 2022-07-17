@@ -52,7 +52,7 @@ Voici le processus de commit normal :
 ```mermaid
 flowchart TD
     A[Modification du fichier mon_article.md] --> B
-    B(git add) --> |Référence les changements dans le fichier| C
+    B(git add) --> |Référence les changements| C
     C(git commit) --> |Enregistre les changements indexés| D
     D[Modification enregistrée\ndans l'historique Git]
 ```
@@ -64,13 +64,15 @@ Lorsque que les _hooks_ sont activés, ils bloquent le _commit_ jusqu'à tant qu
 ```mermaid
 flowchart TD
     A[Modification du fichier mon_article.md] --> B
-    B(git add) --> |Référence les changements dans le fichier| C
+    B(git add) --> |Référence les changements| C
     C(git commit) --> |Lance les crochets| D
     D(Scripts de vérification) --> |Tout est OK| E[Modification enregistrée\ndans l'historique Git]
-    D --> |Problème détecté| B
+    D --> |Problème détecté\nSANS modification| B
+    D --> |Problème détecté\nAVEC modifications automatiques| A
 
     linkStyle 3 color:green;
     linkStyle 4 stroke:#FF0000,stroke-width:4px,color:red;
+    linkStyle 5 stroke:#EE82EE,stroke-width:4px,color:purple;
 ```
 
 !!! warning "Modifications automatiques"
