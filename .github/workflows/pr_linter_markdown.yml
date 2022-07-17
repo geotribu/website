@@ -43,6 +43,15 @@ jobs:
               - [marquer une erreur de syntaxe comme faux-positif](https://static.geotribu.fr/contribuer/internal/markdown_linter/#gerer-les-faux-positifs-du-linter)
               - [possibilités de rédaction offertes par le moteur Mkdocs + thème Material](https://squidfunk.github.io/mkdocs-material/reference/)
 
+      - name: "Marque le commentaire de félicitations comme résolu"
+        id: pr-comment-good-solve
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: ${{ success() }}
+        with:
+          header: linter-md-success
+          hide: true
+          hide_classify: "RESOLVED"
+
       # # Filter results by added/modified file. i.e. reviewdog will report results
       # # as long as they are in added/modified file even if the results are not in actual diff.
       # - name: "Vérifie la syntaxe de tous les fichiers ajoutés ou modifiés"
@@ -55,7 +64,7 @@ jobs:
       #     level: warning
       #     reporter: github-pr-review
 
-    # SUCCESS
+      # SUCCESS
       - name: "Marque le commentaire d'erreur comme résolu"
         id: pr-comment-error-solve
         uses: marocchino/sticky-pull-request-comment@v2
