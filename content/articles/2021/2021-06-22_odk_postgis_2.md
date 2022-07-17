@@ -420,7 +420,4 @@ Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'�
 {% include "licenses/cc4_by-sa.md" %}
 
 <!-- Hyperlinks reference -->
-[Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
-["blog" géomatique du CEN]: https://si.cen-occitanie.org
-[GetODK]: https://getodk.org/
 [XLSForm]: https://xlsform.org/en/

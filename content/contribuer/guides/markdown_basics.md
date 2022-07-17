@@ -187,4 +187,3 @@ En plus des ressources, à suivre quelques exemples de base.
 
 <!-- Hyperlinks references -->
 [Markdown]: https://daringfireball.net/projects/markdown/
-[syntaxe]: https://daringfireball.net/projects/markdown/syntax

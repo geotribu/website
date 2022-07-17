@@ -130,10 +130,8 @@ Yves Jacolin et Cédric Moullet de CampToCamp en pleine démonstration
 La rencontre avec les experts de Google a fait le plein
 
 [^1]: Michael Goodchild, “Citizens as sensors: the world of volunteered geography,” GeoJournal 69, n°. 4 (2007): 211-221.
-[^2]: Boris Mericskay, “Analyse du processus de démocratisation de la géomatique. Le développement du GéoWeb 2.0 et ses impacts sur la gestion territoriale participative,” 2009. ([projet de recherche](http://ulaval.academia.edu/MericskayBoris/Papers/109436/Projet-de-recherche-de-doctorat--d%C3%A9partement-de-g%C3%A9ographie-Universit%C3%A9-Laval-CA-))
 [^3]: <http://www.certu.fr/download.php?file_url=IMG/pdf/signature41.pdf>
 [^4]: Henri Pornon, “Vers des SIG plus collaboratifs : la géo-collaboration,” Géomatique Expert, n°. 20 (Septembre 2007)
-[^5]: Marc Gervais et al., “Qualité des données géographiques. Obligations juridiques potentielles et modèle du producteur raisonnable,” Revue internationale de géomatique 17, n°. 1 (4, 2007): 33-62.
 
 ----
 

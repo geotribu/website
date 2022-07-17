@@ -109,7 +109,6 @@ Trouver des extensions :
 <!-- Hyperlinks references -->
 [MkDocs]: https://www.mkdocs.org/
 [différences]: https://python-markdown.github.io/#differences
-[extensions]: https://python-markdown.github.io/extensions/
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Python-Markdown]: https://python-markdown.github.io/
 [syntaxe]: https://daringfireball.net/projects/markdown/syntax
