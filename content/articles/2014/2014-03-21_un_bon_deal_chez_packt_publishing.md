@@ -24,7 +24,6 @@ En fait, pour son 2000e titre à son catalogue, Packt Publishing a mis en place 
 
 [![2000e titre à son catalogue](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/2000th-Book-Home-Page-Banner.png "2000e titre à son catalogue"){: .img-center loading=lazy }](http://bit.ly/1j26nPN)
 
-
 Voici notamment quelques ouvrages qui pourraient vous intéresser:
 
 - [Postgis Cookbook](http://www.packtpub.com/postgis-to-store-organize-manipulate-analyze-spatial-data-cookbook/book)

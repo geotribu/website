@@ -26,4 +26,3 @@ tags:
 5. Une fois validée et relue, la branche est fusionnée et la RDP publiée puis diffusée.
 
 <!-- Hyperlinks reference -->
-[Git]: https://fr.wikipedia.org/wiki/Git

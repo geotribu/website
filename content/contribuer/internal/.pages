@@ -2,6 +2,8 @@ title: "&#9881; Outillage interne"
 
 nav:
     - markdown_engine.md
-    - backup.md
+    - markdown_linter.md
+    - git_hooks_precommit.md
     - seo_extraits_enrichis.md
     - social_cards.md
+    - backup.md

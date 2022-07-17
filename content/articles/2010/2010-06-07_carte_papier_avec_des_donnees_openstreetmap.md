@@ -56,7 +56,7 @@ Le premier travail consiste à télécharger les données de la zone désirée, 
 
 [![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm1.png "JOSM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm1.png){: data-mediabox="lightbox-gallery" data-title="JOSM"}
 
-### 1er clic :
+### 1er clic
 
 Télécharger des données depuis le serveur OSM :
 
@@ -85,8 +85,8 @@ Enregistrer le fichier sélectionné - il faut absolument définir **data.osm** 
 Et voilà, nous avons un fichier contenant les données. Par contre, il faut faire attention à ne pas demander une zone trop grande - le serveur rejettera la requête. Pour ma petite ville, le fichier data.osm fait 6.4 Mo - dû principalement je pense à la numérisation (longue ...) des bâtiments. L'étape suivante est donc l'édition de ce fichier en [SVG](https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics). Le fichier data.osm et le SVG étant du XML, une transformation [XSLT](https://fr.wikipedia.org/wiki/Extensible_Stylesheet_Language_Transformations) devrait faire l'affaire. Ici nous utiliserons la [grammaire XSL](https://fr.wikipedia.org/wiki/Extensible_stylesheet_language) [Osmarender](https://wiki.openstreetmap.org/wiki/FR:Osmarender) ainsi que les règles pour un zoom 17. Dans un terminal, se placer dans le répertoire contenant le fichier data.osm et télécharger la grammaire et les règles :  
 
 ```bash
-$ wget <http://svn.openstreetmap.org/applications/rendering/osmarender/stylesheets/osm-map-features-z17.xml>
-$ wget <http://svn.openstreetmap.org/applications/rendering/osmarender/xslt/osmarender.xsl>  
+wget <http://svn.openstreetmap.org/applications/rendering/osmarender/stylesheets/osm-map-features-z17.xml>
+wget <http://svn.openstreetmap.org/applications/rendering/osmarender/xslt/osmarender.xsl>  
 ```
 
 Et lancer la commande de conversion :  

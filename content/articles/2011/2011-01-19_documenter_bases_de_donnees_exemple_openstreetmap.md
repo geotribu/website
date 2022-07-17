@@ -54,10 +54,13 @@ Attention, inutile de faire les étapes 1 et 2 si vous venez du tutoriel de Open
 
 1. Testez la présence de Java : `java -version`
 2. Sinon, faire :
+
 ```bash
 sudo nano /etc/apt/sources.list
 ```
+
 puis coller à la fin :  
+
 ```txt
 ###########################################################################  
 
@@ -71,17 +74,22 @@ deb <http://archive.canonical.com/ubuntu> lucid partner
 
 ###########################################################################  
 ```
+
 puis fermer avec `ctrl + O`.
 Ensuite, rechargez le gestionnaire de package et installer Java avec :
+
 ```bash
 sudo apt-get update  
 sudo apt-get upgrade  
 sudo apt-get install sun-java6-jre  
 ```
+
 3. Installez GraphViz
+
 ```bash
 sudo apt-get install graphviz
 ```
+
 4. En introduction, nous avions fait référence à des drivers JDBC, il faut les récupérer sur <http://jdbc.postgresql.org/download.html>  
 Il faut si votre version de java est 1.5.x.x prendre des pilotes de la colonnes JDBC3 correspondant à votre version de PostgreSQL.  
 Si vous avez une version 1.6.x.x (ce qui est le cas avec l'installation de l'étape 3 si vous n'aviez pas déjà java antérieurement), il faudra choisir un pilote JDBC4 correspondant à PostgreSQL

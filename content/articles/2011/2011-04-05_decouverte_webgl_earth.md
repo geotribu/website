@@ -52,7 +52,6 @@ Ce qui nous donne donc l'application suivante :
     Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
     `<iframe src="http://webglearth.googlecode.com/svn/trunk/api/examples/helloworld.html" width="700px" height="500px"></iframe>`
 
-
 Les habitués d'OpenLayers ou de Google Maps ne seront pas surpris par le code affiché. Rien de bien sorcier. En effet, dans un premier temps nous définissons quelques options et ensuite nous instançons l'objet WebGLEarth. Celui-ci prend en paramètre l'identifiant de la balise div qui contiendra le globe ainsi que les options que nous avons définies auparavant. Vous voyez, je ne vous avais pas menti, 2 lignes de code pour réaliser. Amusez-vous à changer les paramètres définis en entrée pour par exemple centrer votre carte sur Paris : `center: [48.8594, 2.3482]`.
 
 ## Changer la couche par défaut
