@@ -41,6 +41,7 @@ jobs:
 
               - [règles de syntaxe Markdown applicables à Geotribu](https://static.geotribu.fr/contribuer/guides/markdown_quality/)
               - [marquer une erreur de syntaxe comme faux-positif](https://static.geotribu.fr/contribuer/internal/markdown_linter/#gerer-les-faux-positifs-du-linter)
+              - [possibilités de rédaction offertes par le moteur Mkdocs + thème Material](https://squidfunk.github.io/mkdocs-material/reference/)
 
       # # Filter results by added/modified file. i.e. reviewdog will report results
       # # as long as they are in added/modified file even if the results are not in actual diff.
@@ -54,7 +55,8 @@ jobs:
       #     level: warning
       #     reporter: github-pr-review
 
-      - name: "Marque le commentaire précédent comme résolu"
+    # SUCCESS
+      - name: "Marque le commentaire d'erreur comme résolu"
         id: pr-comment-error-solve
         uses: marocchino/sticky-pull-request-comment@v2
         if: ${{ success() }}
@@ -71,4 +73,4 @@ jobs:
           header: linter-md-success
           recreate: true
           message: |
-            :clap: Le markdown ajouté est impeccable ! Merci :1st_place_medal:
+            :clap: Le markdown ajouté ou modifié est impeccable ! Merci :1st_place_medal:
