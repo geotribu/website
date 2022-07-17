@@ -14,14 +14,18 @@ tags:
     - contribuer
     - coulisses
     - Git
-    - pre-commit
 ---
 
 # Git Hooks : garde-fous de l'hétérogénéité de Geotribu
 
-![logo pre-commit](https://cdn.geotribu.fr/img/logos-icones/programmation/precommit.png "logo pre-commit"){: .img-rdp-news-thumb }
+![icône Git Hook](https://cdn.geotribu.fr/img/internal/contribution/git_hooks/git_hooks.webp "icône Git Hook"){: .img-rdp-news-thumb }
 
 Afin de garantir un minimum de qualité et surtout de cohérence entre les différentes contributions (appelées _commits_ dans un contexte Git), une série de _git hooks_ est configurée sur le dépôt du site Geotribu.
+
+Ils sont exécutés lors de chaque contribution (_commit_) :
+
+- soit par l'auteur au moment du _commit_
+- soit par l'intégration continue (CI) sur GitHub
 
 ## Définition
 
@@ -48,26 +52,35 @@ Voici le processus de commit normal :
 ```mermaid
 flowchart TD
     A[Modification du fichier mon_article.md] --> B
-    B(git commit) --> C
-    C[[Enregistrement de la modification\ndans l'historique Git]]
+    B(git add) --> |Référence les changements dans le fichier| C
+    C(git commit) --> |Enregistre les changements indexés| D
+    D[Modification enregistrée\ndans l'historique Git]
 ```
 
 ### Avec les git crochets (_hooks_) activés
 
+Lorsque que les _hooks_ sont activés, ils bloquent le _commit_ jusqu'à tant que le contenu passe les vérifications :
+
 ```mermaid
 flowchart TD
     A[Modification du fichier mon_article.md] --> B
-    B(git commit) --> |Lance les crochets| C
-    C(Scripts de vérification) --> |Tout est OK| D[[Enregistrement de la modification\ndans l'historique Git]]
-    C --> |Problème détecté| B
+    B(git add) --> |Référence les changements dans le fichier| C
+    C(git commit) --> |Lance les crochets| D
+    D(Scripts de vérification) --> |Tout est OK| E[Modification enregistrée\ndans l'historique Git]
+    D --> |Problème détecté| B
 
-    linkStyle 2 color:green;
-    linkStyle 3 stroke:#FF0000,stroke-width:4px,color:red;
+    linkStyle 3 color:green;
+    linkStyle 4 stroke:#FF0000,stroke-width:4px,color:red;
 ```
+
+!!! warning "Modifications automatiques"
+    Certains hooks peuvent directement modifier les fichiers. Ces modifications ne sont pas ajoutées automatiquement à l'index et il faut donc que l'auteur du commit les ajoute manuellement (`git add`).
 
 ----
 
 ## Installation et utilisation en local
+
+![logo pre-commit](https://cdn.geotribu.fr/img/logos-icones/programmation/precommit.png "logo pre-commit"){: .img-rdp-news-thumb }
 
 Pour faciliter la maintenance, nous utilisons l'outil [pre-commit]((https://pre-commit.com/)) qui est une sorte de gestionnaire de _git hooks_. Il est développé en Python mais peut exécuter des _hooks_ dans de nombreux autres langages (NodeJS, shell, etc.).
 
@@ -96,9 +109,6 @@ Voici une liste non exhaustive :
 - supprime les espaces inutiles en fin de ligne
 - vérifie que la syntaxe des fichiers YAML est correcte (utilisée pour Mkdocs, les GitHub Actions...)
 
-!!! important "Modifications automatiques"
-    Certains hooks peuvent directement modifier les fichiers. Ces modifications ne sont pas ajoutées automatiquement
-
 ----
 
 ## Exécution automatisée sur la CI
@@ -107,4 +117,11 @@ Voici une liste non exhaustive :
 
 Etant donné que la très grande majorité des contributeur/ices n'utilisent pas [l'édition locale](/contribuer/edit/local_edition_setup/) ou n'installent pas les git hooks, ces derniers sont automatiquement exécutés dans l'intégration continue, via le service [pre-commit.ci](https://pre-commit.ci/) (du même auteur que l'outil).
 
-![Exemple de résultat sur pre-commit ci](https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_result_master.png "Exemple de résultat sur pre-commit ci"){: .img-center loading=lazy }
+Ainsi, pour chaque _commit_ publié sur le dépôt du site, le service exécute les git crochets sur l'ensemble du contenu du site et non pas seulement sur ce qui a été modifié dans le commit ou dans la Pull Request (ce qui équivaut à un `pre-commit run --all`).  
+Dans l'interface de GitHub, cela se manifeste par un _check_ sur le _commit_, visible en bas d'une Pull Request :
+
+![PR GitHub - Check pre-commit](https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_pr_check.webp "PR GitHub - Check pre-commit"){: .img-center loading=lazy }
+
+Au clic sur `Details`, on accède au détail de l'exécution où l'on peut ce qui a été modifié :
+
+![Exemple de résultat sur pre-commit ci](https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_pr_autofix.png "Exemple de résultat sur pre-commit ci"){: .img-center loading=lazy }
