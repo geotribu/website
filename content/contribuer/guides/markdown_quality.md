@@ -11,7 +11,6 @@ tags:
     - contribuer
     - HTML
     - Markdown
-    - Python
     - rédaction
 ---
 
