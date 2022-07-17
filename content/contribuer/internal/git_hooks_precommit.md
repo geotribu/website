@@ -54,8 +54,6 @@ flowchart TD
 
 ### Avec les git crochets (_hooks_) activés
 
-
-
 ```mermaid
 flowchart TD
     A[Modification du fichier mon_article.md] --> B
@@ -107,6 +105,6 @@ Voici une liste non exhaustive :
 
 ![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
 
-
+Etant donné que la très grande majorité des contributeur/ices n'utilisent pas [l'édition locale](/contribuer/edit/local_edition_setup/) ou n'installent pas les git hooks, ces derniers sont automatiquement exécutés dans l'intégration continue, via le service [pre-commit.ci](https://pre-commit.ci/) (du même auteur que l'outil).
 
 ![Exemple de résultat sur pre-commit ci](https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_result_master.png "Exemple de résultat sur pre-commit ci"){: .img-center loading=lazy }

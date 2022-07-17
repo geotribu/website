@@ -6,7 +6,7 @@ categories:
     - article
     - meta
 date: 2022-07-18 10:20
-description: "Sous le GéoCapot : pour gérer l'hétérogénéité des contributions et garantir une qualité minimale, des git hooks sont à l'oeuvre sur Geotribu. Explication de leur fonctionnement."
+description: "Sous le GéoCapot : comment est utilisé markdownlint, l'outil de vérification de la syntaxe Markdown (linter) sur Geotribu."
 icon : material/check-all
 image: "https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_result_master.png"
 robots: index, follow
@@ -37,7 +37,7 @@ Il est aussi possible d'utiliser markdownlint sous forme d'[extension dans Visua
 
 ## Gérer les faux positifs du linter
 
-Le linter est un simple outil, il peut donc faire des erreurs et signaler des faux-positifs ou se tromper sur des cas particuliers, c'est-à-dire des
+Le linter est un simple outil, il peut donc faire des erreurs et signaler des faux-positifs ou se tromper sur des cas particuliers. On peut alors utiliser un commentaire pour désactiver certains contrôles sur certaines parties d'une page.
 
 Désactiver une ou plusieurs règles avec leur code :
 
