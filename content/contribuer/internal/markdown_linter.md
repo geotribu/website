@@ -1,5 +1,5 @@
 ---
-title: "Linter, vérification automatisée de la syntaxe Markdown"
+title: "Linter Markdown"
 authors:
     - Julien MOURA
 categories:
@@ -16,7 +16,7 @@ tags:
     - Markdown
 ---
 
-# Vérification automatique de la syntaxe Markdown
+# Vérification automatique de la syntaxe Markdown (linter)
 
 On utilise [l'outil en ligne de commande développé en _node_](https://github.com/igorshubovych/markdownlint-cli) :
 

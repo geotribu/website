@@ -1,5 +1,5 @@
 ---
-title: "Git Hooks : les garde-fous automatiques"
+title: "Crochets Git"
 authors:
     - Julien MOURA
 categories:
