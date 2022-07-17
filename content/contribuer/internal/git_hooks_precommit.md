@@ -7,10 +7,11 @@ categories:
     - meta
 date: 2022-07-18 10:20
 description: "Sous le GéoCapot : pour gérer l'hétérogénéité des contributions et garantir une qualité minimale, des git hooks sont à l'oeuvre sur Geotribu. Explication de leur fonctionnement."
+icon: material/hook
 image: "https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_result_master.png"
 robots: index, follow
 tags:
-    - backup
+    - contribuer
     - coulisses
     - Git
     - pre-commit
@@ -36,7 +37,13 @@ Ressources externes sur le sujet :
 
 ## Fonctionnement
 
+Sur Geotribu, les crochets sont configurés pour intervenir au moment du _commit_, c'est-à-dire entre le moment ou la commande `git commit` est lancée et l'inscription du _commit_ (= modification) dans l'historique. On parle donc de _pre-commit_. Cela permet d'effectuer les éventuelles corrections **avant** que les erreurs ne soient enregistrées et d'éviter ainsi un commit correctif.
+
+Ils sont d'abord pensés pour s'utiliser côté client (lors de l'édition par un/e contributeur/ice) mais ils sont également exécutés automatiquement pendant la CI (voir plus bas).
+
 ### Sans les git crochets (_hooks_) activés
+
+Voici le processus de commit normal :
 
 ```mermaid
 flowchart TD
@@ -46,6 +53,8 @@ flowchart TD
 ```
 
 ### Avec les git crochets (_hooks_) activés
+
+
 
 ```mermaid
 flowchart TD
@@ -60,11 +69,11 @@ flowchart TD
 
 ----
 
-## Installation en local
+## Installation et utilisation en local
 
-Pour faciliter la maintenance, nous utilisons l'outil [pre-commit]((https://pre-commit.com/)) qui est une sorte de gestionnaire de git hooks. Il est développé en Python mais peut exécuter des hooks dans de nombreux autres langages (NodeJS, shell, etc.).
+Pour faciliter la maintenance, nous utilisons l'outil [pre-commit]((https://pre-commit.com/)) qui est une sorte de gestionnaire de _git hooks_. Il est développé en Python mais peut exécuter des _hooks_ dans de nombreux autres langages (NodeJS, shell, etc.).
 
-Pour installer les git hooks, il faut donc disposer d'un interpréteur Python puis :
+Pour installer les _git hooks_, il faut donc disposer d'un interpréteur Python puis :
 
 ```bash
 # installer pre-commit
@@ -73,11 +82,31 @@ pip install -U pre-commit
 pre-commit install
 ```
 
-Le vérificateur de la syntaxe Markdown ([markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli), voir ci-dessous) est d'ailleurs configuré.
-
 !!! tip "Astuce dont il ne faut pas abuser"
     Pour committer en outre-passant les git hooks ajouter l'option `--no-verify` à la commande `git commit`.
 
-## Exécution automatisée
+### Git crochets configurés sur Geotribu
+
+Les _git hooks_ sont listés dans le fichier de configuration de pre-commit situé dans le dépôt du site : [.pre-commit-config.yaml]({{ config.repo_url }}/blob/master/.pre-commit-config.yaml).
+
+Voici une liste non exhaustive :
+
+- vérificateur de syntaxe Markdown ([voir la page dédiée](/contribuer/internal/markdown_linter/))
+- correction automatique de l'encodage des fichiers, notamment les fins de ligne
+- vérifie qu'il n'y a pas de conflit sur le nom des fichiers, y compris en gérant la casse des différents systèmes de fichiers
+- empêche l'ajout de fichiers volumineux pour éviter que l'historique Git ne devienne obèse et ingérable
+- supprime les espaces inutiles en fin de ligne
+- vérifie que la syntaxe des fichiers YAML est correcte (utilisée pour Mkdocs, les GitHub Actions...)
+
+!!! important "Modifications automatiques"
+    Certains hooks peuvent directement modifier les fichiers. Ces modifications ne sont pas ajoutées automatiquement 
+
+----
+
+## Exécution automatisée sur la CI
+
+![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
+
+
 
 ![Exemple de résultat sur pre-commit ci](https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_result_master.png "Exemple de résultat sur pre-commit ci"){: .img-center loading=lazy }
