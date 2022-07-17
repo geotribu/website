@@ -11,7 +11,6 @@ icon: material/hook
 image: "https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_result_master.png"
 robots: index, follow
 tags:
-    - contribuer
     - coulisses
     - Git
 ---

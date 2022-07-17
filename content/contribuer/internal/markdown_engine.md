@@ -8,11 +8,10 @@ icon : material/language-markdown
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png"
 tags:
     - contribuer
+    - coulisses
     - HTML
     - Markdown
     - Python
-    - rédaction
-    - tutoriel
 # theme customizations
 search:
   exclude: true

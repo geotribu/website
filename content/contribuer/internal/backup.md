@@ -11,13 +11,9 @@ icon: material/backup-restore
 image: "https://cdn.geotribu.fr/img/internal/workflow/geotribu_backup_result_github_release.png"
 robots: index, follow
 tags:
-    - backup
     - coulisses
     - GitHub
     - sauvegarde
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Sauvegarde du site Geotribu
