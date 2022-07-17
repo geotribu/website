@@ -17,16 +17,22 @@ tags:
 
 # Rédiger en Markdown : règles et enjeux de qualité
 
-Le _[markdown]_ est une syntaxe extensible et son rendu dépend de l'outil utilisé pour l'implémenter et générer le HTML. Il existe donc des différences entre le rendu :
+![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-rdp-news-thumb }
 
-- dans l'onglet `Preview` de [GitLab],
-- celui dans un éditeur de texte ([Visual Studio Code], Sublime Text, HackMD, Hedgedoc, vim...
-- celui de l'outil utilisé pour le rendu final [MkDocs / Material](https://squidfunk.github.io/mkdocs-material/).
+Pour rappel, la syntaxe [Markdown] a vocation à être transformée _in fine_ en HTML. Etant donné que c'est une syntaxe extensible aux multiples implémentations différentes, son rendu dépend donc de l'outil utilisé pour visualiser le résultat :
 
-C'est **ce dernier qui fait foi**. Cette page recense les principes de la rédaction pour Geotribu.
+- l'onglet `Preview` de [GitHub],
+- un éditeur de texte (Visual Studio Code, Sublime Text, HackMD, Hedgedoc, vim...)
+- le générateur de site [MkDocs / Material](https://squidfunk.github.io/mkdocs-material/).
+
+C'est **ce dernier qui fait foi**.
+
+Cette page détaille les principes de la rédaction en [Markdown] pour Geotribu.
 
 !!! info "En savoir plus"
     Consulter [l'article "Comprendre le rendu Markdown"](/contribuer/internal/markdown_engine/#specificites).
+
+----
 
 ## Règles
 
@@ -35,17 +41,47 @@ La syntaxe est encadrée par un ensemble de règles :
 - [règles de référence](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
 - [règles configurées dans Geotribu]({{ config.repo_url }}/blob/master/.markdownlint.json)
 
-Quelques règles de base sont listées ci-dessous, notamment celles pour lesquelles il ya  fréquemment des erreurs :
+Quelques règles de base sont listées ci-dessous, notamment celles pour lesquelles il y a fréquemment des erreurs.
 
 ### Unicité du titre de niveau 1
 
-Le Markdown étant destiné à être du HTML, il ne peut y avoir qu'un titre de niveau 1 défini par balise `#`. Il peut cependant y avoir un titre alternatif défini dans [l'en-tête via la clé `title:`](/contribuer/guides/metadata_yaml_frontmatter/).
+Le Markdown étant destiné à être du HTML, il ne peut y avoir qu'un titre de niveau 1 défini par balise `#`. Il peut cependant y avoir un titre alternatif défini dans [l'en-tête via la clé `title:`](/contribuer/guides/metadata_yaml_frontmatter/) et qui est utilisé dans le menu de navigation.
 
 > Référence : [MD025 - Multiple top-level headings in the same document](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md025)
 
+<!-- markdownlint-disable MD046 -->
+=== "Bien"
+
+    ```markdown
+    ---
+    title: "Titre de ma page dans l'en-tête"
+    ---
+
+    # Je suis l'unique titre de niveau 1
+
+    ## C'est vrai ça, c'est le seul, l'unique
+
+    Woa, quel titre !
+    ```
+
+=== "Pas bien"
+
+    ```markdown
+    ---
+    title: "Titre de ma page dans l'en-tête"
+    ---
+
+    # Je suis l'unique titre de niveau 1
+
+    # Ah ouais ? Eh bah moi aussi je peux être niveau 1 si je veux !
+
+    Pfff, encore une guéguerre pour savoir qui a le plus gros niveau de titre :( !
+    ```
+<!-- markdownlint-enable MD046 -->
+
 ### Cohérence du caractère pour les listes à puces
 
-S'il est techniquement possible d'utiliser différents caractères, il est préférable d'utiliser le même caractère (généralement l'astérisque ou le tiret) et a minima le style doit être cohérent dans une même page.
+S'il est techniquement possible d'utiliser différents caractères, il est préférable d'utiliser le même caractère (généralement l'astérisque ou le tiret). A minima le style doit être cohérent dans une même page.
 
 Dans cet exemple, des astérisques (`*`) ont été utilisés après que des tirets (`-`) l'aient déjà été pour le même niveau de puces.
 
@@ -53,7 +89,7 @@ Dans cet exemple, des astérisques (`*`) ont été utilisés après que des tire
 
 > Référence : [MD004 - Unordered list style](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md004)
 
-### Sauts de ligne et lignes vides
+### Paragraphes
 
 En markdown, selon les implémentations, il est important de laisser des lignes vides entre les différents paragraphes (ou ce qui deviendra une balise HTML différente une fois converti). Par exemple :
 
@@ -61,7 +97,34 @@ En markdown, selon les implémentations, il est important de laisser des lignes 
 - entre un titre et un paragraphe
 - entre une image et un texte
 
-Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier élément d'une liste à puces, le rendu ne fonctionnera pas :
+#### Interligne simple
+
+Pour revenir à la ligne sans créer de nouveau paragraphe, il suffit d'ajouter deux espaces à la fin de la ligne.
+
+<!-- markdownlint-disable MD046 -->
+=== "Markdown"
+
+    ```markdown
+    Je suis la première ligne du paragraphe.
+    Et moi la ligne suivante mais du coup, je suis à la suite !
+
+    Je suis un nouveau paragraphe.  
+    Je suis la deuxième ligne du deuxième paragraphe, séparée de la précédente avec un simple interligne car la ligne précédente a 2 espaces à la fin.  
+    Surligne nous si tu me crois pas !
+    ```
+
+=== "Rendu"
+
+    Je suis la première ligne du paragraphe.
+    Et moi la ligne suivante mais du coup, je suis à la suite !
+
+    Je suis un nouveau paragraphe.  
+    Je suis la deuxième ligne du deuxième paragraphe, séparée de la précédente avec un simple interligne car la ligne précédente a 2 espaces à la fin.
+<!-- markdownlint-enable MD046 -->
+
+#### Listes à puces
+
+Pour les mêmes raisons, le premier élément d'une liste à puces doit être précédé d'une ligne vide (ce n'est pas le cas pour GitHub, où les deux formes sont acceptées). Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier élément d'une liste à puces, le rendu ne fonctionnera pas :
 
 <!-- markdownlint-disable MD046 -->
 === "Markdown"
@@ -83,14 +146,14 @@ Par exemple, si on n'insère pas de ligne vide entre le paragraphe et le premier
 
 Si la plupart des outils repèrent les liens dans le texte, il est recommandé de les déclarer explicitement, notamment si le document est destiné à être intégré dans un format plus exigeant en termes de formatage (mail, etc.).
 
-> Référence : [régle MD 34](https://github.com/DavidAnson/markdownlint/blob/v0.25.1/doc/Rules.md#md034)
+> Référence : [MD034 - Bare URL used](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md034)
 
 <!-- markdownlint-disable MD034 MD038 -->
 === "Markdown"
     ```markdown
-    - pas bien : https://oslandia.com/
-    - bien : <https://oslandia.com/>
-    - encore mieux : [texte du lien qui apparaît](https://oslandia.com/)
+    - pas bien : https://geotribu.fr/
+    - bien : <https://geotribu.fr/>
+    - encore mieux : [texte du lien qui apparaît](https://geotribu.fr/)
     ```
 
 === "Rendu"
@@ -103,35 +166,7 @@ Si la plupart des outils repèrent les liens dans le texte, il est recommandé d
 
 ## Outillage
 
-### Utiliser les git hooks
+Pour favoriser l'adoption de ces règles et contrôler leur application, plusieurs outils sont mis en place dans le processus de contribution :
 
-Afin de garantir un minimum de qualité entre les différentes contributions, une série de _git hooks_ (à travers l'outil [pre-commit](https://pre-commit.com/)) est disponible. Pour les installer, il faut disposer de Python puis :
-
-```bash
-# installer pre-commit
-pip install -U pre-commit
-# installer les git hooks
-pre-commit install
-```
-
-Le vérificateur de la syntaxe Markdown (markdownlint-cli, voir ci-dessous) est d'ailleurs configuré.
-
-!!! tip "Astuce dont il ne faut pas abuser"
-    Pour committer en outre-passant les git hooks ajouter l'option `--no-verify` à la commande `git commit`.
-
-### Vérifier la syntaxe avec markdownlint-cli
-
-On utilise [l'outil en ligne de commande développé en _node_](https://github.com/igorshubovych/markdownlint-cli) :
-
-```bash
-# installation du package
-yarn add markdownlint-cli --dev --non-interactive --no-lockfile --prefer-offline
-
-# vérification des contenus
-yarn markdownlint "content/**/*.md"
-
-# auto-correction des problèmes mineurs
-yarn markdownlint --fix "content/**/*.md"
-```
-
-Il est aussi possible d'utiliser markdownlint sous forme d'[extension dans Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) et probablement dans d'autres IDE.
+- l'outil de vérification de la syntaxe (_linter_) Markdown, [`markdownlint-cli` est configuré (voir la page dédiée)](/contribuer/internal/markdown_linter/)
+- des scripts automatiques au moment des contributions : [les git hooks (voir la page dédiée)](/contribuer/internal/git_hooks_precommit/)
