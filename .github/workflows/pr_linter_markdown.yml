@@ -29,7 +29,7 @@ jobs:
           reporter: github-pr-review
 
       - name: "Explications sur les erreurs du linter"
-        id: pr-comment
+        id: pr-comment-error-create
         uses: marocchino/sticky-pull-request-comment@v2
         if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' }}
         with:
@@ -55,7 +55,7 @@ jobs:
       #     reporter: github-pr-review
 
       - name: "Marque le commentaire précédent comme résolu"
-        id: pr-comment
+        id: pr-comment-error-solve
         uses: marocchino/sticky-pull-request-comment@v2
         if: ${{ success() }}
         with:
@@ -64,7 +64,7 @@ jobs:
           hide_classify: "RESOLVED"
 
       - name: "Félicitations"
-        id: pr-comment
+        id: pr-comment-good
         uses: marocchino/sticky-pull-request-comment@v2
         if: ${{ success() }}
         with:
