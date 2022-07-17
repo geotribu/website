@@ -99,7 +99,7 @@ Voici une liste non exhaustive :
 - vérifie que la syntaxe des fichiers YAML est correcte (utilisée pour Mkdocs, les GitHub Actions...)
 
 !!! important "Modifications automatiques"
-    Certains hooks peuvent directement modifier les fichiers. Ces modifications ne sont pas ajoutées automatiquement 
+    Certains hooks peuvent directement modifier les fichiers. Ces modifications ne sont pas ajoutées automatiquement
 
 ----
 
