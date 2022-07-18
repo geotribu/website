@@ -102,7 +102,6 @@ Ce qui me donne visuellement la carte suivante :
     Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
     `<iframe src="https://geotribu.cartodb.com/tables/world/embed_map?sql=SELECT * FROM world WHERE pop2005&gt;10000000" width="500" height="500"></iframe>`
 
-
 #### API SQL
 
 Bon, cette carte déjà toute pré-paramétrée c'est très bien, mais comment faire si nous souhaitons accéder à directement à nos données ? C'est là qu'intervient [l'API SQL](http://developers.cartodb.com/documentation/cartodb-apis.html#sql_api). Grâce à celle-ci, vous pourrez directement interroger vos données en base au moyen d'un simple appel html. Pour cela, il vous suffit de suivre le modèle ci-dessous :

@@ -165,5 +165,4 @@ En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-
 
 <!-- hyperlinks reference -->
 [Dash]: https://kapeli.com/dash
-[Velocity]: https://velocity.silverlakesoftware.com/
 [Zeal]: https://zealdocs.org/

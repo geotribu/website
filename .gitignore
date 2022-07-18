@@ -224,3 +224,4 @@ scripts
 _to_upload
 rdp*.json
 yarn.lock
+authors.json

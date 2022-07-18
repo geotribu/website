@@ -1,5 +1,16 @@
 {
     "default": true,
+    "no-hard-tabs": true,
+    "no-inline-html": {
+        "allowed_elements": [
+            "a",
+            "blockquote",
+            "iframe",
+            "p",
+            "video"
+        ]
+    },
+    "no-trailing-spaces": true,
     "MD003": {
         "style": "atx"
     },
@@ -25,18 +36,8 @@
     "MD041": {
         "front_matter_title": "^\\s*title\\s*[:=]"
     },
-    "no-hard-tabs": true,
-    "no-inline-html": {
-        "allowed_elements": [
-            "a",
-            "blockquote",
-            "iframe",
-            "p",
-            "video"
-        ]
-    },
     "MD046": {
         "style": "fenced"
     },
-    "no-trailing-spaces": true
+    "MD051": false
 }

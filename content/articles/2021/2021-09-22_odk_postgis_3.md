@@ -279,7 +279,4 @@ ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales s
 * icône [JSON](https://openclipart.org/detail/188447/developers-openclipart-has-a-json-api)
 
 <!-- Hyperlinks reference -->
-[Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
-["blog" géomatique du CEN]: https://si.cen-occitanie.org
-[GetODK]: https://getodk.org/
 [XLSForm]: https://xlsform.org/en/

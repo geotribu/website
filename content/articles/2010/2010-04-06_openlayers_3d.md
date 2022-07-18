@@ -28,7 +28,6 @@ Bon d'accord, il n'y a pas de grande utilité, je vous l'accorde. Mais, j'aime a
     Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
     `<iframe src="http://geotribu.net/applications/tutoriaux/openlayers/cssPaper/cube_maps.html" scrolling="no" bordure="0px" width="100%" height="720"></iframe>`
 
-
 ----
 
 ## Auteur {: data-search-exclude }

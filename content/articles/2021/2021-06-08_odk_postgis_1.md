@@ -372,6 +372,5 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 
 <!-- Hyperlinks reference -->
 [Conservatoire d'Espaces Naturels d'Occitanie]: https://www.cen-occitanie.org
-["blog" géomatique du CEN]: https://si.cen-occitanie.org
 [GetODK]: https://getodk.org/
 [XLSForm]: https://xlsform.org/en/
