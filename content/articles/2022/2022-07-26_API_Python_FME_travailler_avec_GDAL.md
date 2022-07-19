@@ -196,6 +196,8 @@ def close(self):
         """
         pass
 ```
+
 Dans cette dernière partie du code Python, je crée un nouveau raster avec les mêmes propriétés que le raster initial. Je remplis une nouvelle bande avec les données de proximité et je la rattache au raster. La sortie de `PythonCaller` est ensuite générée par la méthode `pyoutput(feature)` et le raster de proximité ainsi produit peut être utilisé par d'autres transformateurs du workflow.
 
-N.B. Une version préliminaire en anglais de cet article a été initialement publiée sur mon [blog](https://blog.fiorino.fr).
+!!! note "Traduction d'un article"
+    Une version préliminaire en anglais de cet article a été initialement publiée sur mon [blog](https://blog.fiorino.fr).
