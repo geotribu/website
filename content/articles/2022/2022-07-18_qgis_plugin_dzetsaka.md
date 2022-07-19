@@ -5,8 +5,8 @@ authors:
 categories:
     - article
 date: "2022-07-18 10:20"
-description: "Description pour le SEO."
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
+description: "Présentation de Dzetsaka, un plugin QGIS pour faire de la classification semi-automatisée."
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/L_Dzetsaka_Resultat4.png
 license: default
 tags:
     - classification
@@ -19,8 +19,10 @@ tags:
 
 ## Introduction
 
-La classification (dans notre exemple d'une image raster) est une tâche permettant d'extraire des classes d'information.
-Initialement, le plugin a été développé pour classifier différents types de végétation mais il peut être utilisé pour différencier différentes structures bien distinctes.
+La classification (dans notre exemple d'une image raster) est une tâche permettant d'extraire des classes d'information à partir de l'analyse du jeu de données.
+
+Je vous propose un guide pour réaliser ce travail en prenant en main le plugin Dzetsaka pour QGIS.  
+Initialement, le plugin a été développé pour classifier différents types de végétation mais il peut être utilisé pour différencier des structures bien distinctes.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
