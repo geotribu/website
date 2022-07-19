@@ -28,9 +28,9 @@ C'est en tout cas l'une des multiples conclusions de l’excellent *eBook* tiré
 
 A lire également [les 10 autres livres de la collection](http://owni.fr/2010/12/27/contre-histoire-de-linternet-freepress-on-owni/) qui traitent des sujets liés à l'actualité numérique 2010 comme Hadopi, Wikileaks, Loppsi ou le data journalisme.
 
-**Bonne lecture :-)**
+Bonne lecture :-)
 
-[Source et page du livre](http://owni.fr/2010/12/27/ebook-opendata/)
+> [Source et page du livre](http://owni.fr/2010/12/27/ebook-opendata/)
 
 ----
 
