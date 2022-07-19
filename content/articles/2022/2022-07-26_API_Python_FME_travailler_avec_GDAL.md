@@ -4,7 +4,7 @@ FME Workbench est un fantastique ETL, très populaire dans la communauté de gé
 
 ![Workspace FME](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_screenshot.png)
 
-L'intérêt de FME est qu'on peut concevoir un workflow structuré, documenté, automatisable et ré-utilisable de transformateurs en mode "plug & play", en ajoutant ou en retirant les transformateurs puis en les interconnectant par des flux de données. Mais, bien que la bibliothèque de transformateurs soit très fournie, il est parfois impossible de trouver son bonheur ! On doit alors faire appel à ses propres librairies ou utiliser des librairies externes open-source. 
+L'intérêt de FME est qu'on peut concevoir un workflow structuré, documenté, automatisable et ré-utilisable de transformateurs en mode "plug & play", en ajoutant ou en retirant les transformateurs puis en les interconnectant par des flux de données. Mais, bien que la bibliothèque de transformateurs soit très fournie, il est parfois impossible de trouver son bonheur ! On doit alors faire appel à ses propres librairies ou utiliser des librairies externes open-source.
 
 Par exemple, il n'y a pas de moyen simple de générer des rasters de proximité dans FME, alors que c'est un jeu d'enfant avec la ligne de commande `gdal_proximity.py` de la librairie GDAL. Dans un raster de proximité, à partir de pixels cibles, par exemple des routes dans l'exemple ci-dessous, on produit des pixels dont les valeurs représentent les distances minimales à ces pixels cibles. Dans le cas des routes, le raster de proximité peut ainsi servir de carte d'exposition aux nuisances engendrées par ces routes (bruit, pollution etc.)
 
@@ -12,7 +12,7 @@ Par exemple, il n'y a pas de moyen simple de générer des rasters de proximité
 
 La question est donc : comment obtenir le même résultat avec FME Workbench ? Une possibilité consiste à utiliser le transformateur `PythonCaller` qui permet de créer son propre transformateur à partir d'un script Python et d'importer la librairie [GDAL](https://gdal.org/tutorials/). J'ai mis en ligne [le "template" FME](http://blog.fiorino.fr/wp-content/uploads/2022/05/TransportationRoads.fmwt) correspondant à cet article.
 
-Dans ce template, les transformateurs sont reliés séquentiellement, à la suite les uns des autres. Tout d'abord, le "lecteur" `TransportationRoads` ouvre un geopackage contenant la couche vectorielle des routes. `FeatureColorSetter` change ensuite la couleur des routes dans une couleur différente du noir. C'est un détail important car la prochaine étape consiste à rasteriser avec `ImageRasterizer` les routes avec des pixels différents de 0 (valeur du noir). 
+Dans ce template, les transformateurs sont reliés séquentiellement, à la suite les uns des autres. Tout d'abord, le "lecteur" `TransportationRoads` ouvre un geopackage contenant la couche vectorielle des routes. `FeatureColorSetter` change ensuite la couleur des routes dans une couleur différente du noir. C'est un détail important car la prochaine étape consiste à rasteriser avec `ImageRasterizer` les routes avec des pixels différents de 0 (valeur du noir).
 
 La partie marrante commence avec `PythonCaller` et l'utilisation de la fonction `ComputeProximity` de l'API Python de GDAL.
 
@@ -68,12 +68,12 @@ class FeatureProcessor(object):
         self.rasterData = []
 
     def input(self, feature):
-        
+
         self.sysRef = feature.getCoordSys()
         raster = feature.getGeometry()
         rp = raster.getProperties()
         band = raster.getBand(0)
-        
+
         bp = band.getProperties()
         print("=== FME Input Raster ===")
         print("Coordinate System = " + self.sysRef)
@@ -90,11 +90,11 @@ class FeatureProcessor(object):
         numCols = rp.getNumCols()
         print("numCols = " + str(numCols))
         print("===")
-        
+
         tile = fmeobjects.FMEGray16Tile(numRows, numCols)
         bandData = band.getTile(0, 0, tile).getData()
         array = np.array(bandData)
-        
+
         driver = gdal.GetDriverByName('GTiff')
         num_of_bands = 1
         print("Creating file raster_transportation_roads.tiff")
@@ -105,22 +105,22 @@ class FeatureProcessor(object):
         srcBand.FlushCache()
         srcBand = None
         srcRaster = None
-        
+
         src_ds = gdal.Open('raster_transportation_roads.tiff')
         geotransform = src_ds.GetGeoTransform()
         srcBand = src_ds.GetRasterBand(1)
         print("Origin = ({}, {})".format(geotransform[0], geotransform[3]))
         print("Pixel Size = ({}, {})".format(geotransform[1], geotransform[5]))
         print("===")
-        
+
         print("Creating file proximity_transportation_roads.tiff with GDAL")
         dst_filename='proximity_transportation_roads.tiff'
         drv = gdal.GetDriverByName('GTiff')
         dst_ds = drv.Create(dst_filename, numCols, numRows, num_of_bands, gdal.GetDataTypeByName('UInt16'))
-        dst_ds.SetGeoTransform(geotransform)   
+        dst_ds.SetGeoTransform(geotransform)  
         dst_ds.SetProjection(src_ds.GetProjectionRef())
         dstBand = dst_ds.GetRasterBand(1)
-            
+
         gdal.ComputeProximity(srcBand, dstBand, ["DISTUNITS=PIXEL"])
         self.rasterData = dstBand.ReadAsArray().tolist()
 
@@ -146,7 +146,7 @@ def close(self):
 
         # creating the raster data and specifying the formatting of the new raster
         rasterData = self.rasterData
-        
+
 
         # specifying all of the properties for the new FMERaster
         numRows, numCols = len(rasterData), len(rasterData[0])
@@ -182,16 +182,16 @@ def close(self):
 
 
     def process_group(self):
-        """When 'Group By' attribute(s) are specified, this method is called 
+        """When 'Group By' attribute(s) are specified, this method is called
         once all the FME Features in a current group have been sent to input().
 
-        FME Features sent to input() should generally be cached for group-by 
-        processing in this method when knowledge of all Features is required. 
-        The resulting Feature(s) from the group-by processing should be emitted 
+        FME Features sent to input() should generally be cached for group-by
+        processing in this method when knowledge of all Features is required.
+        The resulting Feature(s) from the group-by processing should be emitted
         through self.pyoutput().
 
         FME will continue calling input() a number of times followed
-        by process_group() for each 'Group By' attribute, so this 
+        by process_group() for each 'Group By' attribute, so this
         implementation should reset any class members for the next group.
         """
         pass
