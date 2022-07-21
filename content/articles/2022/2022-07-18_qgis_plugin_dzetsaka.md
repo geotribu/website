@@ -19,9 +19,11 @@ tags:
 
 ## Introduction
 
+![logo Dzetsaka](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis_dzetsaka.png "logo Dzetsaka"){: .img-rdp-news-thumb }
+
 La classification (dans notre exemple d'une image raster) est une tâche permettant d'extraire des classes d'information à partir de l'analyse du jeu de données.
 
-Je vous propose un guide pour réaliser ce travail en prenant en main le plugin Dzetsaka pour QGIS.  
+Je vous propose un guide pour réaliser ce travail en prenant en main le [plugin Dzetsaka pour QGIS](https://github.com/nkarasiak/dzetsaka).  
 Initialement, le plugin a été développé pour classifier différents types de végétation mais il peut être utilisé pour différencier des structures bien distinctes.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -35,7 +37,7 @@ L'installation se fait simplement via la gestion des extensions de QGIS (ici en 
 
 [![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/A_QGIS_InstallPlugin.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/A_QGIS_InstallPlugin.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Installation plugin Dzetsaka" }
 
-Puis on effectue une recherche "dzetsaka" :
+Puis on effectue une recherche `dzetsaka` :
 
 [![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/B_QGIS_InstallPlugin_suite.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/B_QGIS_InstallPlugin_suite.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Installation plugin Dzetsaka" }
 
@@ -47,9 +49,13 @@ Une fois installé le plugin est accessible via le menu Extension :
 
 ## Paramétrage
 
+### Bienvenue
+
 La fenêtre de bienvenue permet d'accéder à la documentation et à un jeu d'essai (que nous n'allons pas utiliser dans notre exemple).
 
 [![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/D_Dzetsaka_Welcome.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/D_Dzetsaka_Welcome.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Installation plugin Dzetsaka" }
+
+### Configuration
 
 Avant de s'attaquer à la partie classification, un petit détour par la partie configuration est préférable :
 
@@ -57,19 +63,21 @@ Avant de s'attaquer à la partie classification, un petit détour par la partie 
 
 Cette fenêtre regroupe plusieurs propriétés :
 
-* "Classifier" qui contient 4 types de classification
-    * "Gaussian Mixture Model" pour [modèle de mélange gaussien](https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_m%C3%A9lange_gaussien)
-    * "Random Forest" pour [forêt d'arbre décisionnels](https://fr.wikipedia.org/wiki/For%C3%AAt_d'arbres_d%C3%A9cisionnels)
-    * "Support Vector Machines" pour [machine à vecteurs de support](https://fr.wikipedia.org/wiki/Machine_%C3%A0_vecteurs_de_support)
-    * "k-nearest neighbors" pour [méthode des K plus proches voisins](https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins)
-* "Temp suffix" : suffixe pour les fichiers temporaires
-* "Temp préfixe" : préfixe pour les fichiers temporaires
-* "Mask suffix" : suffixe pour les masques
-* "Providers" qui contient 2 propriétés (standard ou expérimental - l'expérimental étant le dernier code mais non garanti de fonctionnement)
+- `Classifier` qui contient 4 types de classification
+    - `Gaussian Mixture Model` pour [modèle de mélange gaussien](https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_m%C3%A9lange_gaussien)
+    - `Random Forest` pour [forêt d'arbre décisionnels](https://fr.wikipedia.org/wiki/For%C3%AAt_d'arbres_d%C3%A9cisionnels)
+    - `Support Vector Machines` pour [machine à vecteurs de support](https://fr.wikipedia.org/wiki/Machine_%C3%A0_vecteurs_de_support)
+    - `k-nearest neighbors` pour [méthode des K plus proches voisins](https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins)
+- `Temp suffix` : suffixe pour les fichiers temporaires
+- `Temp préfixe` : préfixe pour les fichiers temporaires
+- `Mask suffix` : suffixe pour les masques
+- `Providers` qui contient 2 propriétés (standard ou expérimental - l'expérimental étant le dernier code mais non garanti de fonctionnement)
+
+### Parcelles d'entraînement 
 
 L'utilisation du plugin nécessite de créer une couche d'entraînement avec des données qu'on arrive à identifier facilement sur l'image raster.
-La couche créée sera de type "polygone" et devra être dans le même système de coordonnées que la couche raster.  
-Elle devra comporter a minima un champ de type entier pour identifier les classes
+La couche créée sera de type `polygone` et devra être dans le même système de coordonnées que la couche raster.  
+Elle devra comporter a minima un champ de type entier pour identifier les classes.
 
 Dans notre cas, on crée aussi un champ description :
 
@@ -77,15 +85,17 @@ Dans notre cas, on crée aussi un champ description :
 
 Nous allons ensuite créer différentes entités sur les zones qui nous intéressent :
 
-* la Loire (et la Sèvre nantaise)
-* les prairies
-* les arbres
-* les toits en tuiles
-* les routes
+- la Loire (et la Sèvre nantaise)
+- les prairies
+- les arbres
+- les toits en tuiles
+- les routes
 
 Nous obtenons la couche d'entraînement suivante (les tuiles et routes ne sont pas visibles à cette échelle) :
 
 [![Plugin Dzetsaka - Couche d'entraînement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/G_Train_.png "Plugin Dzetsaka - Couche d'entraînement"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/G_Train_.png){: data-mediabox="lightbox-gallery" data-title="Plugin Dzetsaka - Couche d'entraînement" }
+
+## Classification 
 
 A partir du dock de configuration :
 
