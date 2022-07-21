@@ -73,7 +73,7 @@ Cette fenêtre regroupe plusieurs propriétés :
 - `Mask suffix` : suffixe pour les masques
 - `Providers` qui contient 2 propriétés (standard ou expérimental - l'expérimental étant le dernier code mais non garanti de fonctionnement)
 
-### Parcelles d'entraînement 
+### Parcelles d'entraînement
 
 L'utilisation du plugin nécessite de créer une couche d'entraînement avec des données qu'on arrive à identifier facilement sur l'image raster.
 La couche créée sera de type `polygone` et devra être dans le même système de coordonnées que la couche raster.  
@@ -95,7 +95,7 @@ Nous obtenons la couche d'entraînement suivante (les tuiles et routes ne sont p
 
 [![Plugin Dzetsaka - Couche d'entraînement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/G_Train_.png "Plugin Dzetsaka - Couche d'entraînement"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/G_Train_.png){: data-mediabox="lightbox-gallery" data-title="Plugin Dzetsaka - Couche d'entraînement" }
 
-## Classification 
+## Classification
 
 A partir du dock de configuration :
 
