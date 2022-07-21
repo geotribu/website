@@ -30,10 +30,12 @@ Mongo et node sont deux technologies qui font beaucoup parler d'elles. Beaucoup 
 
 Je ne vais pas m'étendre ici, pour node, rendez vous simplement sur [nodejs.org](http://nodejs.org/ "nodejs.org") et sélectionner votre OS. Si vous utilisez Ubuntu, vous pouvez ouvrir un terminal et entrer:
 
-    sudo apt-get install python-software-properties
-    sudo add-apt-repository ppa:chris-lea/node.js
-    sudo apt-get update
-    sudo apt-get install nodejs
+```sh
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+```
 
 Vous pouvez ensuite lancer un `node --version` pour vérifier que l'instalation s'est bien passée.
 
@@ -43,25 +45,34 @@ Pour MongoDB, c'est la même chose, vous n'avez qu'à suivre le [Guide d'install
 
 Si vous avez suivi le guide mongo, votre serveur de base de données devrait être actif. Si la commande `mongo` retourne `Error: couldn't connect to server 127.0.0.1:27017`... c'est qu'il ne l'est pas. Rien de plus simple:
 
-    mongod ## pour lancer mongodb
-    mongod --repair ## parfois utile après avoir fermé malencontreusement mongod...
+```sh
+mongod  # pour lancer mongodb
+mongod --repair # parfois utile après avoir fermé malencontreusement mongod...
+```
 
 La première chose à faire est de créer une base de données. C'est extrèment simple. Toujours dans le terminal, lancer la commande `mongo` pour ouvrir une connection à la base de données par defaut "test":
 
-    mongo
-    MongoDB shell version: 2.4.9 // Ceci est le résultat de la commande mongo.
-    connecting to: test
-    >
+```sh
+mongo
+MongoDB shell version: 2.4.9 // Ceci est le résultat de la commande mongo.
+connecting to: test
+>
+```
 
-Vous remarquerez que le curseur a changé. A partir de maintenant, mongo n'acceptera plus que du javascript, mais extrèmemnt simple. Commençons par créer une base de données:
+Vous remarquerez que le curseur a changé. A partir de maintenant, mongo n'acceptera plus que du javascript, mais extrêmement simple.  
+Commençons par créer une base de données:
 
-    use surfdb
-    switched to db surfdb // Ceci est le résultat de la commande use [dbname].
-    >
+```sh
+use surfdb
+switched to db surfdb // Ceci est le résultat de la commande use [dbname].
+>
+```
 
 Fermer la connection en pressant `Ctrl + C`.
 
-La base de données est prete.
+La base de données est prête.
+
+----
 
 ## Insertion de données spatiales
 
@@ -69,23 +80,26 @@ Passons à l'étape de l'insertion des données. De base, mongodb propose un out
 
 Au lieu d'utiliser ça:
 
+```json
+{
+  "type": "FeatureCollection",
+  "features":
+  [
     {
-      "type": "FeatureCollection",
-      "features":
-      [
-        {
-          "type": "Feature", "id": 0, "properties": {
-            "Name": "Queensie Mini", "Lat": -33.7857729, "Long": 151.2899673
-          }, "geometry": {
-            "type": "Point",
-            "coordinates": [ 151.2899673, -33.785772899999586 ]
-          }
-        }
-      ]
+      "type": "Feature", "id": 0, "properties": {
+        "Name": "Queensie Mini", "Lat": -33.7857729, "Long": 151.2899673
+      }, "geometry": {
+        "type": "Point",
+        "coordinates": [ 151.2899673, -33.785772899999586 ]
+      }
     }
+  ]
+}
+```
 
 Utiliser ceci:
 
+```json
     [
       {
         "type": "Feature", "id": 0, "properties": {
@@ -96,6 +110,7 @@ Utiliser ceci:
         }
       }
     ]
+```
 
 Nos données étant au bon format, passons à la commande `mongoimport`. Par defaut cette commande se connecte au serveur local, ce qui réduit dans notre cas le nombre d'arguments à passer :
 
@@ -105,26 +120,36 @@ mongoimport -d surfdb -c spot --type json --jsonArray --file data.json
 
 Si tout ce passe bien, vous devriez voir ça:
 
-    connected to: 127.0.0.1
-    Fri Apr  4 00:13:22.965 check 9 32
-    Fri Apr  4 00:13:24.326 imported 32 objects
+```sh
+connected to: 127.0.0.1
+Fri Apr  4 00:13:22.965 check 9 32
+Fri Apr  4 00:13:24.326 imported 32 objects
+```
 
-En ouvrant une connection au serveur avec la commande `mongo`, nous pouvons maintenant accéder à nos données:
+En ouvrant une connexion au serveur avec la commande `mongo`, nous pouvons maintenant accéder à nos données:
 
-    mongo
-    > use surfdb
-    show collections; // affiche les collections dans la base.
-    db.spot.stats(); // retourne les stats de la collection spot, type {Object}.
-    db.spot.findOne(); // retourne un document de la collection, type {Object}.
-    db.spot.find(); // retourne tous les documents de la collection, type [Array].
-    db.spot.find({'properties.Name':'Winki'}) // retourne tous les documents qui ont comme proprieté "properties.Name" = "Winki".
+```sh
+mongo
+> use surfdb
+show collections; // affiche les collections dans la base.
+db.spot.stats(); // retourne les stats de la collection spot, type {Object}.
+db.spot.findOne(); // retourne un document de la collection, type {Object}.
+db.spot.find(); // retourne tous les documents de la collection, type [Array].
+db.spot.find({'properties.Name':'Winki'}) // retourne tous les documents qui ont comme proprieté "properties.Name" = "Winki".
+```
 
 C'est aussi simple que ça !
 
-C'est certes simple, mais à part stocker un pseudo geojson, ça ne sert pas à grand chose. Pour "activer" la fonction spatiale, mongo a besoin d'un index spacial. Toujours dans le terminal, serveur demarré [`mongod`] et connection active [`mongo`]...
+C'est certes simple, mais à part stocker un pseudo geojson, ça ne sert pas à grand chose. Pour "activer" la fonction spatiale, mongo a besoin d'un index spacial. Toujours dans le terminal, serveur demarré [`mongod`] et connexion active [`mongo`]...
 
-    > db.spot.ensureIndex({'geometry':'2dsphere'}); // Explicite non ?
+```sh
+> db.spot.ensureIndex({'geometry':'2dsphere'}); // Explicite non ?
+```
 
 C'est prêt :).
+
+----
+
+## Auteur {: data-search-exclude }
 
 Guillaume
