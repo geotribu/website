@@ -15,7 +15,7 @@ tags:
     - Python
     - raster
 ---
-
+<!-- markdownlint-disable MD025 -->
 # API Python de FME : comment travailler avec des rasters et GDAL
 
 :calendar: Date de publication initiale : 26 juillet 2022
