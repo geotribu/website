@@ -23,7 +23,8 @@ tags:
 
 La classification (dans notre exemple d'une image raster) est une tâche permettant d'extraire des classes d'information à partir de l'analyse du jeu de données.
 
-Je vous propose un guide pour réaliser ce travail en prenant en main le [plugin Dzetsaka pour QGIS](https://github.com/nkarasiak/dzetsaka).  
+Je vous propose un guide pour réaliser ce travail en prenant en main le [plugin Dzetsaka pour QGIS](https://github.com/nkarasiak/dzetsaka). Il est issu d'un premier plugin (Historical Map) développé aussi par Nicolas Karasiak dont le but était d'automatiser la vectorisation des forêts sur des vieilles cartes papiers. Il a été publié en version 1.0 en octobre 2016 suite à une conférence au début de la même année où Nicolas a découvert la possibilité d'ajouter des algorithmes directement dans la toolbox des géotraitements. Depuis 2016 les mises à jour sont très nombreuses jusqu'en 2021 où le plugin peut être considéré comme stable (des mises à jour mineures sur des petits bugs).
+
 Initialement, le plugin a été développé pour classifier différents types de végétation mais il peut être utilisé pour différencier des structures bien distinctes.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -130,6 +131,11 @@ En zoomant un peu plus, on peut analyser un peu plus les résultats :
 
 Les prairies, arbres et rivières/fleuves sont globalement bien identifiés (la turbidité de la Loire génère des résultats un peu complexe à certains endroits).  
 Les toits en tuiles sont globalement bien identifiés aussi tandis que le reste est très difficile à analyser (on retrouve des couleurs globalement identiques entre la route et les bâtiments récents).
+
+## Conclusion
+
+Le plugin offre des résultats très intéressants dans des contextes d'éléments fortement contrastés. Cependant l'utilisation sur du raster dépourvu de bandes infrarouges montre des limites quant à la possibilité de différencier des éléments de même couleur (par exemple routes et bâtiments).  
+A noter qu'il existe aussi d'autres méthodes de calcul (expérimental) du plugin qui pourrait donner d'autres résultats plus précis.
 
 ----
 
