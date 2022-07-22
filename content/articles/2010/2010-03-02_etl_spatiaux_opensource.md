@@ -26,7 +26,9 @@ Au cours de ce billet, nous nous attacherons à présenter succinctement les con
 
 [![ETL/SpatialOLAP](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/spatialOlap_etl2.png "ETL/SpatialOLAP"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/spatialOlap_etl2.png "ETL/SpatialOLAP"){: data-mediabox="gallery-lightbox" data-title="ETL/SpatialOLAP" }
 
-*Fig 1 : Les ETL dans la chaine décisionnelle*
+> Fig 1 : Les ETL dans la chaine décisionnelle
+
+----
 
 ## Une société de l'information
 
