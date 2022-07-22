@@ -4,7 +4,7 @@ authors:
     - Sylvain KERDREUX
 categories:
     - article
-date: "2022-07-18 10:20"
+date: "2022-07-22 10:20"
 description: "Présentation de Dzetsaka, un plugin QGIS pour faire de la classification semi-automatisée."
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/L_Dzetsaka_Resultat4.png
 license: default
@@ -15,7 +15,7 @@ tags:
 
 # Dzetsaka : outil de classification pour QGIS
 
-:calendar: Date de publication initiale : 18 juillet 2022
+:calendar: Date de publication initiale : 22 juillet 2022
 
 ## Introduction
 
