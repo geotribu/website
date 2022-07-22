@@ -1,4 +1,24 @@
+---
+title: "API Python de FME : comment travailler avec des rasters et GDAL"
+authors:
+    - Humbert FIORINO
+categories:
+    - article
+    - tutoriel
+date: "2022-07-26 20:00"
+description: "Comment travailler avec des librairies Python dans FME. Illustration avec GDAL"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/gdal_proximity.png"
+license: default
+tags:
+    - FME
+    - GDAL
+    - Python
+    - raster
+---
+
 # API Python de FME : comment travailler avec des rasters et GDAL
+
+:calendar: Date de publication initiale : 26 juillet 2022
 
 FME Workbench est un fantastique ETL, très populaire dans la communauté de géomatique. Il permet d'assembler par de simples "glisser/déposer" dans une interface graphique des "transformateurs" opérant sur toutes sortes de flux de données (fichiers, bases de données, services web etc.) Avec ces transformateurs, on réalise les opérations classiques d'un SIG, d'une base de données : sélection de données attributaires, jointures spatiales, modification du style d'une couche vectorielle etc.
 
@@ -201,3 +221,11 @@ Dans cette dernière partie du code Python, je crée un nouveau raster avec les 
 
 !!! note "Traduction d'un article"
     Une version préliminaire en anglais de cet article a été initialement publiée sur mon [blog](https://blog.fiorino.fr).
+
+----
+
+## Auteur {: data-search-exclude }
+
+--8<-- "content/team/humf.md"
+
+{% include "licenses/default.md" %}
