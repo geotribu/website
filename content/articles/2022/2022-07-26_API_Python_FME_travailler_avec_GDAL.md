@@ -226,6 +226,6 @@ Dans cette dernière partie du code Python, je crée un nouveau raster avec les 
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/humf.md"
+--8<-- "content/team/hfio.md"
 
 {% include "licenses/default.md" %}
