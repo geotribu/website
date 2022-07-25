@@ -291,7 +291,7 @@ Depuis la rentrée 2021, Geotribu sponsorise le thème [Material for Mkdocs](htt
 | Fichier | Fonctionnalités payantes | Complet | Commentaire |
 | :------ | :-----: | :-----: | :---------- |
 | `mkdocs.yml`         | **X** | **X** | Configuration complète utilisée pour le site en production. Utilisé par défaut. |
-| `mkdocs-free.yml`    |       | **X** | Configuration sans les fonctioannlités payantes (tags, etc.) |
+| `mkdocs-free.yml`    |       | **X** | Configuration sans les fonctionnalités payantes (tags, etc.) |
 | `mkdocs-minimal.yml` |       |       | Configuration minimaliste qui n'active qu'un minimum de plugins et d'extensions pour obtenir de meilleures performances lors de l'édition en local. |
 
 ### Générer le site web
