@@ -200,7 +200,11 @@ def close(self):
         feature.setCoordSys(self.sysRef)
         self.pyoutput(feature)
 
+```
 
+Dans cette dernière partie du code Python, je crée un nouveau raster avec les mêmes propriétés que le raster initial. Je remplis une nouvelle bande avec les données de proximité et je la rattache au raster. La sortie de `PythonCaller` est ensuite générée par la méthode `pyoutput(feature)` et le raster de proximité ainsi produit peut être utilisé par d'autres transformateurs du workflow.
+
+```python
     def process_group(self):
         """When 'Group By' attribute(s) are specified, this method is called
         once all the FME Features in a current group have been sent to input().
@@ -217,7 +221,6 @@ def close(self):
         pass
 ```
 
-Dans cette dernière partie du code Python, je crée un nouveau raster avec les mêmes propriétés que le raster initial. Je remplis une nouvelle bande avec les données de proximité et je la rattache au raster. La sortie de `PythonCaller` est ensuite générée par la méthode `pyoutput(feature)` et le raster de proximité ainsi produit peut être utilisé par d'autres transformateurs du workflow.
 
 !!! note "Traduction d'un article"
     Une version préliminaire en anglais de cet article a été initialement publiée sur mon [blog](https://blog.fiorino.fr).
