@@ -32,6 +32,34 @@
                     "-d"
                 ]
             },
+            "windows": {
+                "command": "git",
+                "args": [
+                    "pull",
+                    "origin",
+                    "|",
+                    "git",
+                    "remote",
+                    "prune",
+                    "origin",
+                    "|",
+                    "git",
+                    "branch",
+                    "--merged",
+                    "|",
+                    "Select-String",
+                    "-Pattern",
+                    "'^(?!.*(master|gh-pages)).*$'",
+                    "|",
+                    "ForEach-Object",
+                    "{",
+                    "git",
+                    "branch",
+                    "-d",
+                    "$_.ToString().Trim()",
+                    "}"
+                ]
+            },
             "problemMatcher": []
         },
         {
