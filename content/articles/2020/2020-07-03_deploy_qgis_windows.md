@@ -16,7 +16,7 @@ tags:
     - Windows
 ---
 
-# Installer QGIS sur Windows en ligne de commande
+# Installer QGIS sur Windows en ligne de commande (OSGeo4W et Powershell)
 
 :calendar: Date de publication initiale : 3 juillet 2020
 
