@@ -15,6 +15,7 @@ tags:
     - OSGeo4W
     - personnalisation
     - QGIS
+    - Windows
 ---
 
 # Préconfigurer QGIS en entreprise avec OSGEO4W
