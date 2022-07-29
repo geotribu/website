@@ -20,7 +20,7 @@ tags:
 
 :calendar: Date de publication initiale : 26 juillet 2022
 
-FME Workbench est un fantastique ETL, très populaire dans la communauté de géomatique. Il permet d'assembler par de simples "glisser/déposer" dans une interface graphique des "transformateurs" opérant sur toutes sortes de flux de données (fichiers, bases de données, services web etc.) Avec ces transformateurs, on réalise les opérations classiques d'un SIG, d'une base de données : sélection de données attributaires, jointures spatiales, modification du style d'une couche vectorielle etc.
+FME Workbench est un fantastique ETL, très populaire dans la communauté de géomatique. Il permet d'assembler par de simples "glisser/déposer" dans une interface graphique des "transformateurs" opérant sur toutes sortes de flux de données (fichiers, bases de données, services web, etc.). Avec ces transformateurs, on réalise les opérations classiques d'un SIG, d'une base de données : sélection de données attributaires, jointures spatiales, modification du style d'une couche vectorielle, etc.
 
 [![Workspace FME](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_screenshot.png "Workspace FME"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_screenshot.png){: data-mediabox="lightbox-gallery" data-title="Workspace FME"}
 
