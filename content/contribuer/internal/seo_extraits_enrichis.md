@@ -5,6 +5,7 @@ categories:
     - Geotribu
 date: 2022-06-15 14:20
 description: "Sous le GéoCapot : comment l'en-tête des contenus est utilisé pour générer des données structurées et extraits enrichis."
+icon : material/semantic-web
 image: "https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extrait_enrichi_article_multi-auteurs.png"
 tags:
     - coulisses

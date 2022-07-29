@@ -5,7 +5,7 @@
 [Git]: https://git-scm.com/
 [GitHub]: https://github.com/
 [GitHub Desktop]: https://desktop.github.com/
-[markdown]: https://fr.wikipedia.org/wiki/Markdown
+[Markdown]: https://fr.wikipedia.org/wiki/Markdown
 [Material for Mkdocs]: https://squidfunk.github.io/mkdocs-material/
 [Mkdocs]: https://www.mkdocs.org/
 [osm2pgsql]: https://osm2pgsql.org/

@@ -54,7 +54,7 @@ arnaud@arnaud:~/App/spatialite_gui-linux-x86-1.4.0/bin$ ./spatialite_gui
 ./spatialite_gui: error while loading shared libraries: libgeos-3.0.0.so: cannot open shared object file: No such file or directory  
 ```
 
-Cela ne semble pas bien méchant, c'est juste un appel à une librairie qui n'existe pas. Je fais un `locate libgeos qui m'indique que la version de geos que j'ai est la 3.2.2. Un simple `ln -s` devrait régler le problème :
+Cela ne semble pas bien méchant, c'est juste un appel à une librairie qui n'existe pas. Je fais un `locate libgeos qui m'indique que la version de geos que j'ai est la 3.2.2. Un simple`ln -s` devrait régler le problème :
 
 `sudo ln -s /usr/lib/libgeos-3.2.2.so /usr/lib/libgeos-3.0.0.so`
 

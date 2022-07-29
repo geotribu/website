@@ -218,7 +218,7 @@ function bindInfoWindow(marker, map, infoWindow, html) {
 }
 ```
 
-#### Le script qui génère le XML avec les marqueurs
+### Le script qui génère le XML avec les marqueurs
 
 Ici pas trop de souci, nous éditons le XML contenant les marqueurs en manipulant le DOM pour gérer la construction du fichier XML : il s'agit dune simple requête SQL - c'est ce script qu'il faudra changer pour prendre en compte le rayon de recherche et le centre.
 
@@ -267,7 +267,6 @@ Exemple sur Toulouse sans buffer - éviter de le faire avec la France - votre na
 Hum : j'ai testé la carte avec toutes les données contenues en base (un peu plus de 47000 restaurants) ; bah le navigateur a un peu de mal, faut vraiment mettre en place ce système de buffer - d'ailleurs on peut remarquer qu'il y a beaucoup plus de restaurants recensés chez nos voisins :
 
 [![Trop de POI](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/tropdepoi.png "Trop de POI"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/tropdepoi.png "Trop de POI"){: data-mediabox="lightbox-gallery" data-title="Trop de POI" }
-
 
 ## Code complet côté client
 
@@ -478,7 +477,6 @@ Ce qui donne :) Attention le rayon maximum de recherche est de 50 km.
 !!! info
     Le serveur hébergeant la démonstration n'étant plus disponible depuis de nombreuses années, la démonstration, autre fois intégrée en iFrame est désactivée.  
     `<iframe src="http://88.191.142.86/geotribu/blog/buffermysql/index.html" width="800" height="600" frameborder="0"></iframe>`
-
 
 ## Conclusion
 

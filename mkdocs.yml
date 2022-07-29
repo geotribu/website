@@ -72,8 +72,8 @@ plugins:
         "dicogis.md": "articles/2014/2014-09-25_dicogis.md"
         "GeoRDP/20161028.md": "rdp/2016/rdp_2016-10-14.md"
         "node/156.md": "articles/2009/2009-09-11_creer-son-propre-plan-de-ville-grace-a-maposmatic.md"
-        "node/270.md": "articles/2010/art_2010-06-11.md"
-        "node/284.md": "articles/2010/art_2010-09-23.md"
+        "node/270.md": "articles/2010/2010-06-11_hypermap_future_balise_html.md"
+        "node/284.md": "articles/2010/2010-09-23_creer_ses_propres_plugin_qgis.md"
         "node/348.md": "rdp/2011/rdp_2011-02-25.md"
         "node/423.md": "articles/2011/2011-06-15_decouverte_leaflet.md"
         "node/462.md": "articles/2011/2011-11-09_decouverte_gis_cloud.md"
@@ -168,6 +168,8 @@ theme:
       institution: fontawesome/solid/building-columns
       js: fontawesome/brands/js
       manette: fontawesome/solid/gamepad
+      markdown: fontawesome/brands/markdown
+      masques: fontawesome/solid/masks-theater
       meridiens: fontawesome/solid/globe
       oeuf: fontawesome/solid/egg
       open: fontawesome/solid/lock-open
@@ -261,9 +263,10 @@ extra:
     atlas: atlas
     Bash: code
     Centipede: satellite
+    CNIG: institution
     collecte: telephone
     collecte terrain: telephone
-    CNIG: institution
+    coulisses: masques
     cURL: code
     D3.js: js
     Easter eggs: oeuf
@@ -302,6 +305,7 @@ extra:
     LIDAR: satellite
     livre: atlas
     Mapillary: streetview
+    Markdown: markdown
     Matrix: commentaires
     Minecraft: manette
     MySQL: database

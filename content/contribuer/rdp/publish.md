@@ -27,4 +27,3 @@ Il est alors temps de lancer la diffusion via le compte Twitter de Geotribu pour
 [^pr]: étape où un contributeur propose d'intégrer ses modifications dans le socle principal du projet. Voir [la documentation de GitHub](https://docs.github.com/fr/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 <!-- Hyperlinks reference -->
-[Git]: https://fr.wikipedia.org/wiki/Git
