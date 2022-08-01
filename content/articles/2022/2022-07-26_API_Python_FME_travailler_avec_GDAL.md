@@ -20,6 +20,10 @@ tags:
 
 :calendar: Date de publication initiale : 26 juillet 2022
 
+## Introduction
+
+![logo FME](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/FME.png "logo FME"){: .img-rdp-news-thumb }
+
 FME Workbench est un fantastique ETL, très populaire dans la communauté de géomatique. Il permet d'assembler par de simples "glisser/déposer" dans une interface graphique des "transformateurs" opérant sur toutes sortes de flux de données (fichiers, bases de données, services web, etc.). Avec ces transformateurs, on réalise les opérations classiques d'un SIG, d'une base de données : sélection de données attributaires, jointures spatiales, modification du style d'une couche vectorielle, etc.
 
 [![Workspace FME](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_screenshot.png "Workspace FME"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_screenshot.png){: data-mediabox="lightbox-gallery" data-title="Workspace FME"}
@@ -30,7 +34,16 @@ Par exemple, il n'y a pas de moyen simple de générer des rasters de proximité
 
 [![Raster de proximité](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/gdal_proximity.png "Raster de proximité"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/gdal_proximity.png){: data-mediabox="lightbox-gallery" data-title="Raster de proximité"}
 
-La question est donc : comment obtenir le même résultat avec FME Workbench ? Une possibilité consiste à utiliser le transformateur `PythonCaller` qui permet de créer son propre transformateur à partir d'un script Python et d'importer la librairie [GDAL](https://gdal.org/tutorials/). J'ai mis en ligne [le "template" FME](http://blog.fiorino.fr/wp-content/uploads/2022/05/TransportationRoads.fmwt) correspondant à cet article.
+La question est donc : comment obtenir le même résultat avec FME Workbench ?
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
+----
+
+## Le transformateur `PythonCaller`
+
+Une possibilité consiste à utiliser le transformateur `PythonCaller` qui permet de créer son propre transformateur à partir d'un script Python et d'importer la librairie [GDAL](https://gdal.org/tutorials/). J'ai mis en ligne [le "template" FME](http://blog.fiorino.fr/wp-content/uploads/2022/05/TransportationRoads.fmwt) correspondant à cet article.
 
 Dans ce template, les transformateurs sont reliés séquentiellement, à la suite les uns des autres. Tout d'abord, le "lecteur" `TransportationRoads` ouvre un geopackage contenant la couche vectorielle des routes. `FeatureColorSetter` change ensuite la couleur des routes dans une couleur différente du noir. C'est un détail important car la prochaine étape consiste à rasteriser avec `ImageRasterizer` les routes avec des pixels différents de 0 (valeur du noir).
 
