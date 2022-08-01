@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: "2022-07-26 20:00"
+date: "2022-08-02 14:00"
 description: "Comment travailler avec des librairies Python dans FME. Illustration avec GDAL"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/gdal_proximity.png"
 license: default
@@ -18,7 +18,7 @@ tags:
 
 # API Python de FME : comment travailler avec des rasters et GDAL
 
-:calendar: Date de publication initiale : 26 juillet 2022
+:calendar: Date de publication initiale : 2 août 2022
 
 ## Introduction
 
