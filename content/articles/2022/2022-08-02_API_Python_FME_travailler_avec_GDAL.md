@@ -6,7 +6,7 @@ categories:
     - article
     - tutoriel
 date: "2022-08-02 14:00"
-description: "Comment travailler avec des librairies Python dans FME. Illustration avec GDAL"
+description: "Comment travailler avec des librairies Python dans FME. Illustration avec GDAL."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_gdal_python.png"
 license: default
 tags:
@@ -43,6 +43,8 @@ La question est donc : comment obtenir le même résultat avec FME Workbench ?
 
 ## Le transformateur `PythonCaller`
 
+![icône Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+
 Une possibilité consiste à utiliser le transformateur `PythonCaller` qui permet de créer son propre transformateur à partir d'un script Python et d'importer la librairie [GDAL](https://gdal.org/tutorials/). J'ai mis en ligne [le "template" FME](http://blog.fiorino.fr/wp-content/uploads/2022/05/TransportationRoads.fmwt) correspondant à cet article.
 
 Dans ce template, les transformateurs sont reliés séquentiellement, à la suite les uns des autres. Tout d'abord, le "lecteur" `TransportationRoads` ouvre un geopackage contenant la couche vectorielle des routes. `FeatureColorSetter` change ensuite la couleur des routes dans une couleur différente du noir. C'est un détail important car la prochaine étape consiste à rasteriser avec `ImageRasterizer` les routes avec des pixels différents de 0 (valeur du noir).
@@ -57,7 +59,14 @@ from osgeo import gdal
 
 Si nécessaire, la [documentation FME](https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_Desktop/Workbench/Installing-Python-Packages.htm) explique comment installer des packages Python, mais `osgeo` et `numpy` sont normalement installés par défaut.
 
-```python
+----
+
+## Stocker les données de la bande raster
+
+La classe Python suivante est principalement un copier/coller de la documentation [Python FME API](http://docs.safe.com/fme/html/fmepython/getting_started.html#working-with-rasters). J'ai juste changé le type de tuile en `FMEUInt16Tile` afin d'être compatible avec l'interprétation du raster dans `ImageRasterize` (Gray16).  
+En ce qui concerne la classe elle-même, la documentation de FME est un peu laconique. Cette classe est utilisée pour stocker les données de la bande raster ainsi que pour caractériser la manière dont ses données peuvent être renvoyées avec la méthode `getTile`.
+
+```python hl_lines="26"
 class MyBandTilePopulator(fmeobjects.FMEBandTilePopulator):
     """
     This is a subclass of the FMEBandTilePopulator superclass.
@@ -93,9 +102,24 @@ class MyBandTilePopulator(fmeobjects.FMEBandTilePopulator):
        return newTile
 ```
 
-Cette classe Python est principalement un copier/coller de la documentation [Python FME API](http://docs.safe.com/fme/html/fmepython/getting_started.html#working-with-rasters). J'ai juste changé le type de tuile en `FMEUInt16Tile` afin d'être compatible avec l'interprétation du raster dans `ImageRasterize` (Gray16). En ce qui concerne la classe elle-même, la documentation de FME est un peu laconique. Cette classe est utilisée pour stocker les données de la bande raster ainsi que pour caractériser la manière dont ses données peuvent être renvoyées avec la méthode `getTile`.
+----
+
+## Passer les données de bande de FME à GDAL pour créer le raster de proximité
+
+![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
+
+L'entrée de `PythonCaller` est le raster à une bande contenu dans l'objet FME `feature` et que s'échangent les transformateurs. Cette bande possède de nombreuses propriétés telles que la taille des pixels (`SpacingX` et `SpacingY`) en mètres dans le système de coordonnées projeté choisi, les coordonnées d'origine de la bande (`originX` et `originY`) et sa taille (`numRows` et `numCols`).
+
+Dans cette partie de code, les lignes suivantes sont très importantes et, à ma connaissance, non documentées dans l'API de FME :
 
 ```python
+tile = fmeobjects.FMEGray16Tile(numRows, numCols)
+bandData = band.getTile(0, 0, tile).getData()
+```
+
+Elles permettent d'obtenir les données de la bande en définissant une tuile ayant la même taille que la bande. Le reste est conforme à la documentation de GDAL. Les données des bandes sont placées dans un tableau `Numpy` (conformément à la documentation GDAL) et deux fichiers, `raster_transportation_roads.tiff` et `proximity_transportation_roads.tiff` sont générés dans le dossier du template de FME. Ceci n'est pas obligatoire mais pratique pour vérifier la transformation des données. Pour calculer le raster de proximité, j'utilise la fonction `ComputeProximity` de GDAL (celle qui est utilisée dans le script `gdal_proximity.py`), et je place les données correspondantes dans la liste Python `rasterData` (`ReadAsArray` retourne un tableau `Numpy`).
+
+```python hl_lines="29 30 59"
 class FeatureProcessor(object):
     def __init__(self):
         self.rasterData = []
@@ -163,16 +187,11 @@ class FeatureProcessor(object):
         print("===")
 ```
 
-L'entrée de `PythonCaller` est le raster à une bande contenu dans l'objet FME `feature` et que s'échangent les transformateurs. Cette bande possède de nombreuses propriétés telles que la taille des pixels (`SpacingX` et `SpacingY`) en mètres dans le système de coordonnées projeté choisi, les coordonnées d'origine de la bande (`originX` et `originY`), et sa taille (`numRows` et `numCols`).
+----
 
-Dans cette partie de code, les lignes suivantes sont très importantes et, à ma connaissance, non documentées dans l'API de FME :
+## Création du raster de sortie à partir du raster de proximité
 
-```python
-tile = fmeobjects.FMEGray16Tile(numRows, numCols)
-bandData = band.getTile(0, 0, tile).getData()
-```
-
-Elles permettent d'obtenir les données de la bande en définissant une tuile ayant la même taille que la bande. Le reste est conforme à la documentation de GDAL. Les données des bandes sont placées dans un tableau `Numpy` (conformément à la documentation GDAL) et deux fichiers, `raster_transportation_roads.tiff` et `proximity_transportation_roads.tiff` sont générés dans le dossier du template de FME. Ceci n'est pas obligatoire mais pratique pour vérifier la transformation des données. Pour calculer le raster de proximité, j'utilise la fonction `ComputeProximity` de GDAL (celle qui est utilisée dans le script `gdal_proximity.py`), et je place les données correspondantes dans la liste Python `rasterData` (`ReadAsArray` retourne un tableau `Numpy`).
+Dans cette dernière partie du code Python, je crée un nouveau raster avec les mêmes propriétés que le raster initial. Je remplis une nouvelle bande avec les données de proximité et je la rattache au raster. La sortie de `PythonCaller` est ensuite générée par la méthode `pyoutput(feature)` et le raster de proximité ainsi produit peut être utilisé par d'autres transformateurs du workflow.
 
 ```python
 def close(self):
@@ -213,11 +232,6 @@ def close(self):
         feature.setCoordSys(self.sysRef)
         self.pyoutput(feature)
 
-```
-
-Dans cette dernière partie du code Python, je crée un nouveau raster avec les mêmes propriétés que le raster initial. Je remplis une nouvelle bande avec les données de proximité et je la rattache au raster. La sortie de `PythonCaller` est ensuite générée par la méthode `pyoutput(feature)` et le raster de proximité ainsi produit peut être utilisé par d'autres transformateurs du workflow.
-
-```python
     def process_group(self):
         """When 'Group By' attribute(s) are specified, this method is called
         once all the FME Features in a current group have been sent to input().
