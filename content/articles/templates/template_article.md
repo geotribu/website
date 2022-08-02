@@ -19,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 9 août 2021
 
-Introduction
+## Introduction
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
