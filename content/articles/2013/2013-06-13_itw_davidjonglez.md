@@ -102,7 +102,6 @@ A ce titre, j'ai trouvé la récente [lettre ouverte](http://cholmes.wordpress.c
 ### 7. Que penses-tu du débat actuel entre l'OGC et l'OSGEO à propos de l'adoption du standard REST pour les services web géographiques ?
 
 !!! info "Pour plus d'informations, consultez les liens suivants :"
-
     - Le [blog](http://cameronshorter.blogspot.fr/2013/05/ogc-heed-community-pressure-regarding.html) de Camron Shorter ainsi que son [billet](http://lisasoft.com/blog/will-ogc%E2%80%99s-standards-meet-government-purchasing-guidelines) sur le site LISAsoft
     - La [pétition](http://wiki.osgeo.org/wiki/Geoservices_REST_API) de l'OSGEO contre l'adoption du standard Geoservices REST API
 
