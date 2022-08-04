@@ -86,11 +86,8 @@ Enfin... Je devrais plutôt dire "join me" pour l'instant. Comme vous l'aurez pe
 
 Je suis par ailleurs activement à la recherche de contributions financières pour faire évoluer le projet dans un cadre pro.
 
------  
-***Article invité proposé par Clément Igonet***
-
 ----
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+Article invité proposé par Clément Igonet.

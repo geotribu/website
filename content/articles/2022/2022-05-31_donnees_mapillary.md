@@ -41,6 +41,7 @@ Aujourd'hui, je vais vous présenter différentes manières d'accéder aux donn�
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
+<!-- markdownlint-disable MD046 -->
 !!! warning
     L'utilisation des données et services de Mapillary sont autorisés dans le respect des [conditions d'utilisation](https://www.mapillary.com/terms) définies par Mapillary notamment aux sections :
 
@@ -48,6 +49,7 @@ Aujourd'hui, je vais vous présenter différentes manières d'accéder aux donn�
     - 11 Conditions supplémentaires pour les développeurs,
     - 12 Utilisation des Services Mapillary à des fins commerciales
     - 13 Informations sur OpenStreetMap.
+<!-- markdownlint-enable MD046 -->
 
 ----
 

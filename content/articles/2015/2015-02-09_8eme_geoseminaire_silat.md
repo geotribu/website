@@ -30,7 +30,7 @@ Cette année, le thème porte sur l'aménagement du territoire avec une attentio
 
 Les grandes lignes du [programme](http://geoseminaire2015.teledetection.fr/index.php/programme.html) de cette journée sont les suivantes :
 
-**Thématique**
+### Thématique
 
 - Conférence introductive : La géomatique dans les projets de territoire, l'exemple du bassin de Thau
 - Gouvernance et intelligence territoriale  
@@ -44,7 +44,9 @@ Les grandes lignes du [programme](http://geoseminaire2015.teledetection.fr/index
 
 Le GéoSéminaire aura lieu au : [**50, place Zeus, quartier Antigone à Montpellier**](https://www.openstreetmap.org/?mlat=43.60798&mlon=3.89069#map=19/43.60798/3.89069)
 
-<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=3.8862097263336186%2C43.606297304012124%2C3.8947820663452153%2C43.60977370035445&amp;layer=mapnik&amp;marker=43.60803552729843%2C3.8904958963394165" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=43.60804&amp;mlon=3.89050#map=18/43.60804/3.89050">Afficher une carte plus grande</a></small>
+<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=3.8862097263336186%2C43.606297304012124%2C3.8947820663452153%2C43.60977370035445&amp;layer=mapnik&amp;marker=43.60803552729843%2C3.8904958963394165" style="border: 1px solid black"></iframe>
+
+> [Afficher la carte en grand](https://www.openstreetmap.org/?mlat=43.60804&amp;mlon=3.89050#map=18/43.60804/3.89050)
 
 ## Tarifs et Inscriptions
 
