@@ -3,7 +3,7 @@ title: "Interview de Drones Crisis"
 authors:
     - Geotribu
 categories:
-    - géointerview
+    - article
 date: 2014-08-20 11:20
 description: "Interview de Drones Crisis"
 tags:
@@ -14,7 +14,7 @@ tags:
 
 # Interview de Drones Crisis
 
-<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/H2sxUHeqB8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/H2sxUHeqB8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Partie 1 - Retour d'experience sur le projet Drone Adventures
 
@@ -39,7 +39,6 @@ En effet l'utilisation d'UAS et de systèmes d'information géographiques Open s
 Open Street Map france a pu héberger ces images aériennes sur leur serveur (jean guilhem, qui avait fait aussi la campagne de points GPS differentiel avec le CNES en 2012) , permettant aux contributeurs OSM et acteurs humanitaires d'utiliser ces données facilement.
 
 !!! tip Ressources complémentaires
-
     - [Rapport de la mission en haiti, en plus de la video](https://drive.google.com/file/d/0B23KlWXOmZhJQVdTQXY5aWNMUVU/edit?usp=sharing)
     - COSMHA et cartographie communautaire grace au images UAV. A la suite des images faites par Drone Adventures/IOM,  il y a eu une cartopartie avec les communautés locales et C-OSM-HA sur la zone de Onaville avec les communautés et OSM Haiti (COSMHA) : [lire le compte rendu](http://ovh.to/QmPf2hC)
 
@@ -119,7 +118,7 @@ La technique utilisée tire parti d'une combinaison experte entre la photogramé
 
 - Video of rayCloud
 
-### 7. (Pix4D) Quelles différences ya t'il entre le traitement d'images qui se fait classiquement (ex avion), et celui par drones.**
+### 7. (Pix4D) Quelles différences ya t'il entre le traitement d'images qui se fait classiquement (ex avion) et celui par drones ?
 
 La photogrammétrie et la vision par ordinateur ont en commun le fait qu'elles effectuent une recherche de mesure 3D à partir d'images permettant la stéréoscopie.
 
@@ -165,7 +164,7 @@ La photogrammétrie traditionnelle tente de produire la meilleure cartographie p
 
 - Proposer un processus plus complet à l'utilisateur lui permettant de mieux tirer parti de la relation entre le nuage de points et des images afin d'affiner les objets 3D et le résultat final. (cf.rayCloud)
 
-### 9. (Fédération française du drone civil) Avez-vous connaissance d'utilisation similaire des drones pour la cartographie d'urgence en France ? Pourriez-vous nous donner des exemples/expériences d'utilisation des drones (surveillance des incendies, foules, etc.)**
+### 9. (Fédération française du drone civil) Avez-vous connaissance d'utilisation similaire des drones pour la cartographie d'urgence en France ? Pourriez-vous nous donner des exemples/expériences d'utilisation des drones (surveillance des incendies, foules, etc.)
 
 (PIX4D)
 
@@ -173,13 +172,13 @@ La photogrammétrie traditionnelle tente de produire la meilleure cartographie p
 
 [http://www.youtube.com/watch?v=lBzdqHGFhBU?rel=0&amp;showinfo=0&amp;controls=1&amp;hd=1&amp;autoplay=1](http://www.youtube.com/watch?v=lBzdqHGFhBU?rel=0&amp;showinfo=0&amp;controls=1&amp;hd=1&amp;autoplay=1)
 
-Contexte:[http://www.pix4d.com/in-terra-ltd/](http://www.pix4d.com/in-terra-ltd/)
+Contexte : <http://www.pix4d.com/in-terra-ltd/>
 
-_Informations techniques:_ [_https://support.pix4d.com/entries/24738312-Landslide-in-Switzerland_](https://support.pix4d.com/entries/24738312-Landslide-in-Switzerland)
+Informations techniques : <https://support.pix4d.com/entries/24738312-Landslide-in-Switzerland>
 
-_- Expertise d'une scène de crimes, accident, prise d'otages_
+- Expertise d'une scène de crimes, accident, prise d'otages_
 
-_Exemples actions menées par ConservationDrones_ [_http://3drobotics.com/2013/11/drones-save-endangered-species-and-forests/_](http://3drobotics.com/2013/11/drones-save-endangered-species-and-forests/)
+Exemples d'actions menées par ConservationDrones <http://3drobotics.com/2013/11/drones-save-endangered-species-and-forests/>
 
 ### 10.  (Drones Adventures/Pix4D) Quelles ont été les limites observées lors de l'utilisation des drones lors de missions de cartographie d'urgence ? Sont-ils le meilleur moyen d'obtenir une carte ? Doivent-ils être combinés à d'autres mode d'acquisition de données ?
 
@@ -199,7 +198,7 @@ De mon point de vue nous pouvons encore travailler sur la vitesse avec laquel le
 
 C'est encore vague. Le consensus international se dirige vers l'utilisation du terme RPAS. La règlementation francaise DGAC utilise d'ailleurs le terme "aéronefs télépilotés". UAS est encore largement utilisé dans l'industrie. "Drones" a une connotation militaire dans le monde anglo-saxon et aux USA. Le même terme "drone" n'a pas cette image négative en France et est largement utilisé par les journalistes notamment car plus court et plus frappant que "RPAS".
 
-### 12. (Fédération Professionnelle du Drone Civil) Afin que les personnes qui nous suivent comprennent, pourriez-vous nous faire une rapide typologie des différents drones (ex: Micro Air Vehicles, LALE, MALE, HALE)**
+### 12. (Fédération Professionnelle du Drone Civil) Afin que les personnes qui nous suivent comprennent, pourriez-vous nous faire une rapide typologie des différents drones (ex: Micro Air Vehicles, LALE, MALE, HALE)
 
 En France la  règlementation a défini différentes classes de drones, de 0 et 150 kg. Les grands seuils sont : de 0 à 2 kg, de 2 à 4 kg, de 4 à 25 kg et de 25 à 150 kg.
 
@@ -207,7 +206,7 @@ Les Micro-drones et/ou mini-drones pèses entre 2 à 25 kg environ, utilisés pa
 
 Les HALE, MALE sont catégorie de drones de longue endurance et moyenne ou haute altitude, réservée aux militaires.
 
-### 13.  (All) Quels sont les autres domaines d'actions possibles pour l'utilisation des drones, pourriez-vous nous donner des exemples**
+### 13. (All) Quels sont les autres domaines d'actions possibles pour l'utilisation des drones, pourriez-vous nous donner des exemples
 
 (Pix4D)
 

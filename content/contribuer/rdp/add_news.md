@@ -59,7 +59,7 @@ Il n'est parfois pas évident de savoir où placer son actualité. Dans ce cas, 
 | Catégorie                     | Description | Exemples |
 | :---------------------------- | :---------- | :------- |
 | Vie du site                   | Précédée du logo rectangulaire du site, il s'agit généralement d'une simple liste à puces dans laquelle on retrouve les derniers contenus publiés ou les récentes évolutions de Geotribu. On a pris l'habitude de préfixer chaque élément par un [emoji](/contribuer/guides/emoji/). |  |
-| Sorties de la semaine         | Pour relayer les nouveautés dans les outils d la géomatique. Attention, il ne s'agit pas de paraphraser les notes de version ou les communiqués de presse, mais d'apporter une valeur ajoutée personnelle. | |
+| Sorties de la semaine         | Pour relayer les nouveautés dans les outils de la géomatique. Attention, il ne s'agit pas de paraphraser les notes de version ou les communiqués de presse, mais d'apporter une valeur ajoutée personnelle. | |
 | Client                        | **section dépréciée, éviter d'utiliser** | |
 | Serveur                       | **section dépréciée, éviter d'utiliser** | |
 | Logiciel                      | Découverte, cas d'usage d'un logiciel pas forcément nouveau mais intéressant.  | |
