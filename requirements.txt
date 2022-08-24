@@ -18,5 +18,5 @@ mkdocs-git-authors-plugin<0.7
 mkdocs-git-revision-date-localized-plugin>=1,<1.2
 mkdocs-macros-plugin>=0.5,<0.8
 mkdocs-minify-plugin<0.6
-mkdocs-redirects<1.1
+mkdocs-redirects<1.2
 mkdocs-rss-plugin>=1,<1.2
