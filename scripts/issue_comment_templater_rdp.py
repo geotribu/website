@@ -20,7 +20,7 @@ data["issue_author"] = getenv("ISSUE_AUTHOR", "Inconnu(e)")
 data["issue_id"] = getenv("ISSUE_ID", "99999")
 
 # handle legacy form keys id (- not supported)
-new_keys=[k.replace("-", "_") for k in data.keys()]
+new_keys = [k.replace("-", "_") for k in data.keys()]
 data = dict(zip(new_keys, data.values()))
 
 # ensure image description and replacement text
@@ -31,7 +31,9 @@ if img_thumbnail_url.startswith("http"):
         img_thumbnail_name = img_thumbnail_path.stem
         img_description = f"vignette {img_thumbnail_name}"
     except Exception as exc:
-        logging.error(f"Failed to extract image name from URL: {img_thumbnail_url}. Trace: {exc}")
+        logging.error(
+            f"Failed to extract image name from URL: {img_thumbnail_url}. Trace: {exc}"
+        )
         img_description = "vignette news"
 else:
     img_description = data.get("in_news_icon")
@@ -52,5 +54,7 @@ env = Environment(
 template = env.get_template(issue_comment_template.name)
 
 # write to the output
-with Path("rdp_news_submitted_comment_output.md").open("w", encoding="UTF8") as out_file:
+with Path("rdp_news_submitted_comment_output.md").open(
+    "w", encoding="UTF8"
+) as out_file:
     out_file.write(template.render(data))
