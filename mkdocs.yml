@@ -103,16 +103,19 @@ plugins:
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
       externals_exclude:
+        # geotribu
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*
         - geotribu.net/*
         - www.geotribu.net/*
+        - ks356007.kimsufi.com/*
+        # external
+        - github.com/**/*.gif
         - i.imgur.com/*
         - raw.githubusercontent.com/*
         - twemoji.maxcdn.com/*
+        - upload.wikimedia.org/*
         - user-images.githubusercontent.com/**/*.gif
-        - github.com/**/*.gif
-        - ks356007.kimsufi.com/*
         # to remove later:
         - dev.openstreetmap.org/*
         - www.portailsig.org/assets/images/*

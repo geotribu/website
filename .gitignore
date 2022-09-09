@@ -220,9 +220,9 @@ markdown-lint-report-added.txt
 .Rhistory
 linter_markdown_report.txt
 
-scripts
+
 _to_upload
-rdp*.json
+
 yarn.lock
 authors.json
 md_linter_report.txt
