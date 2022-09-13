@@ -1,4 +1,4 @@
-name: "Réponse automatique à un ticket de proposition de contenu"
+name: "🤖 Réponse automatique à un ticket de proposition de contenu"
 on:
   issues:
     types:
@@ -29,9 +29,13 @@ jobs:
         with:
           template-path: .github/ISSUE_TEMPLATE/RDP_NEWS.yml
 
-      - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > rdp_news_submitted.json
+      # see: https://github.com/stefanbuck/github-issue-parser/issues/38
+      - name: Export into JSON file using env var
+        run: echo $JSON_STRING > rdp_news_submitted.json
+        env:
+          JSON_STRING: ${{ steps.issue-parser.outputs.jsonString }}
 
-      - name: Save form artifact
+      - name: Save form output as artifact
         uses: actions/upload-artifact@v3.1.0
         with:
           path: "rdp*.json"
