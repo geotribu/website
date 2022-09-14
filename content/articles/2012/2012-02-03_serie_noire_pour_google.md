@@ -14,7 +14,7 @@ tags:
 
 :calendar: Date de publication initiale : 03 février 2012
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.png "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
 
 Après l'histoire controversée et surtout très médiatisée du [piratage d'OSM par Google](/articles/2012/2012-01-19_google_evil_or_not), c'est maintenant au tour de la société [Bottin Cartographe](http://bottincarto.com/pro/home.asp?lang=FR) (BC) d'entrer dans la danse. En effet, cette dernière a réussi à faire condamner Google pour abus de position dominante en France. La base du débat porte sur le fait que Google fausse la concurrence en offrant gratuitement le même service que BC. Même si Google a déjà annoncé qu'elle allait faire appel, le jugement provisoire a condamné la société à 500.000 euros de dommages et intérêts en réparation des préjudices subis et à 15 000 euros d’amende. A vrai dire, je dois avouer que je ne comprends pas cette décision de justice et je vous livre ci-dessous mon analyse qui reste bien évidemment personnelle. Je vous invite à réagir par le biais des commentaires si vous partagez ou au contraire désapprouvez ce point de vue.
 
