@@ -1,21 +1,37 @@
+import argparse
 from pathlib import Path
 
 import yaml
 from yaml_env_tag import construct_env_tag
 
+# GLOBALS
 yaml.Loader.add_constructor("!ENV", construct_env_tag)
 
-cfg_final = Path("mkdocs.yml")
+# CLI
+parser = argparse.ArgumentParser(
+    prog="MkDocsConfigMerger", description="Merge configuration files."
+)
+parser.add_argument(
+    "-o",
+    "--output-file",
+    dest="output_config_file",
+    type=Path,
+    help="Path to the output configuration file.",
+    default="mkdocs.yml",
+)
+args = parser.parse_args()
+
+output_config_file = args.output_config_file
 
 # check files exist
-if not cfg_final.is_file():
-    raise FileNotFoundError(cfg_final)
+if not output_config_file.is_file():
+    raise FileNotFoundError(output_config_file)
 
 # list files to append
 configs_to_merge = Path("config/").glob("*.yml")
 
 # load final config
-with cfg_final.open(mode="r") as in_yaml:
+with output_config_file.open(mode="r") as in_yaml:
     config_to_complete = yaml.load(in_yaml, Loader=yaml.Loader)
 
 for cfg_file in configs_to_merge:
