@@ -25,29 +25,30 @@ redirects:
     node/95.md: articles/2009/2009-03-05_cartogaphier_l_immateriel.md
     node/97.md: articles/2009/2009-03-18_explorer_format_georss.md
     node/98.md: articles/2009/2009-03-23_pense_bete_d_openlayers.md
-    node/99.md: articles/2009/2009-03-24_geospatial_revolution_project_une_introduction_sig_en_video.md
+    node/99.md: articles/2009/2009-03-24_geospatial-revolution-project-une-introduction-sig-en-video.md
     node/101.md: articles/2009/2009-03-31_enfin-une-emission-de-qualite-a-la-television.md
     node/102.md: articles/2009/2009-04-01_coup-de-flippe-et-reflexion-sur-l-api-google-maps.md
     node/103.md: articles/2009/2009-04-02_good-planet-le-site-qui-sent-la-chlorophyle.md
     node/107.md: articles/2009/2009-04-14_openlayers-en-application-et-essor-du-monde-de-l-opensource
+    node/106.md: articles/2009/2009-04-14_geodjango-pas-a-pas.md
     node/108.md: articles/2009/2009-04-16_mscompanion-l-editeur-wysiwyg-de-mapfile.md
-    node/109.md: articles/2009/2009-04-18_wheresthepath_ou_comment_planifier_un_itineraire.md
-    node/112.md: articles/2009/2009-04-22_o3d_ou_comment_integrer_de_3d_votre_navigateur_grace_a_google.md
-    node/114.md: articles/2009/2009-04-26_pachube_vers_un_recensement_mondiale_des_capteurs.md
-    node/115.md: articles/2009/2009-05-05_quand_l_opensource_communautaire_s_invite_a_maison_blanche.md
+    node/109.md: articles/2009/2009-04-18_wheresthepath-ou-comment-planifier-un-itineraire.md
+    node/112.md: articles/2009/2009-04-22_o3d-ou-comment-integrer-de-la-3d-dans-votre-navigateur-grace-a-google.md
+    node/114.md: articles/2009/2009-04-26_pachube-vers-un-recensement-mondiale-des-capteurs.md
+    node/115.md: articles/2009/2009-05-05_quand-l-opensource-communautaire-s-invite-a-la-maison-blanche.md
     node/116.md: articles/2009/2009-05-19_mapnik_moteur_cartographique_pour_les_perfectionnistes_graphisme.md
-    node/117.md: articles/2009/2009-05-24_a_decouverte_de_puzzle_gis.md
-    node/119.md: articles/2009/2009-05-25_partage_de_l_information_publique_vu_par_les_etats_unis.md
-    node/120.md: articles/2009/2009-05-31_a_decouverte_d_openjump.md
-    node/121.md: articles/2009/2009-06-02_php_js_ou_vos_fonctions_php_traduites_en_javascript.md
-    node/122.md: articles/2009/2009-06-04_geoserver_bientot_en_version_2_0.md
-    node/123.md: articles/2009/2009-06-05_annonces_en_pagaille_cote_de_chez_google.md
-    node/126.md: articles/2009/2009-06-07_a_decouverte_d_udig.md
-    node/128.md: articles/2009/2009-06-18_un_nouveau_site_pour_geoext.md
-    node/129.md: articles/2009/2009-06-23_sortie_de_version_2_8_d_openlayers.md
-    node/130.md: articles/2009/2009-06-24_geoext_en_version_0_5.md
-    node/131.md: articles/2009/2009-07-17_geomatique_decisionelle_l_avenir_sig.md
-    node/132.md: articles/2009/2009-07-01_l_ign_met_a_disposition_certaines_de_ces_donnees.md
+    node/117.md: articles/2009/2009-05-24_a-la-decouverte-de-puzzle-gis.md
+    node/119.md: articles/2009/2009-05-25_partage-de-l-information-publique-vu-par-les-etats-unis.md
+    node/120.md: articles/2009/2009-05-31_a-decouverte-d-openjump.md
+    node/121.md: articles/2009/2009-06-02_php-js-ou-vos-fonctions-php-traduites-en-javascript.md
+    node/122.md: articles/2009/2009-06-04_geoserver-bientot-en-version-2-0.md
+    node/123.md: articles/2009/2009-06-05_annonces-en-pagaille-cote-de-chez-google.md
+    node/126.md: articles/2009/2009-06-07_a-decouverte-d-udig.md
+    node/128.md: articles/2009/2009-06-18_un-nouveau-site-pour-geoext.md
+    node/129.md: articles/2009/2009-06-23_sortie-de-version-2-8-d-openlayers.md
+    node/130.md: articles/2009/2009-06-24_geoext-en-version-0-5.md
+    node/131.md: articles/2009/2009-07-17_geomatique-decisionelle-l-avenir-sig.md
+    node/132.md: articles/2009/2009-07-01_l-ign-met-a-disposition-certaines-de-ces-donnees.md
     node/134.md: articles/2009/2009-07-12_introduction_au_libre_selon_president_de_l_osgeo_fr.md
     node/135.md: articles/2009/2009-07-15_quelques_outils_pour_develloper_plus_facilement_en_javascript.md
     node/136.md: articles/2009/2009-07-19_les_videos_de_l_osgis_sont_en_ligne.md
