@@ -12,11 +12,11 @@ parser = argparse.ArgumentParser(
     prog="MkDocsConfigMerger", description="Merge configuration files."
 )
 parser.add_argument(
-    "-o",
-    "--output-file",
+    "-c",
+    "--config-file",
     dest="output_config_file",
     type=Path,
-    help="Path to the output configuration file.",
+    help="Path to the configuration file to complete. Must exist.",
     default="mkdocs.yml",
 )
 args = parser.parse_args()
@@ -44,5 +44,5 @@ for cfg_file in configs_to_merge:
         out_section.append(cfg_data)
 
 # write merged final config file
-with Path("mkdocs-merged.yaml").open("w") as out_file:
+with output_config_file.open("w") as out_file:
     yaml.dump(config_to_complete, out_file, sort_keys=True, default_flow_style=False)
