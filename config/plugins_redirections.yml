@@ -84,36 +84,36 @@ redirects:
     node/188.md: articles/2010/2010-02-15_mapchat_geocollaboration_opensource.md
     node/189.md: articles/2009/2009-12-29_project-52.md
     node/190.md: articles/2009/2009-12-31_une-machine-virtuelle-orientee-sig.md
-    # node/191.md: articles/2010/2010-01-08_mis_a_jour_maposmatic.md
-    # node/192.md: articles/2010/2010-01-12_heatmap.md
-    # node/194.md: articles/2010/2010-01-18_sortie_de_qgis_1_4_0_enceladus.md
-    # node/195.md: articles/2010/2010-02-11_quel_developpement_cartographique_pour_des_plateformes_differentes.md
-    # node/196.md: articles/2010/2010-01-25_imagimap_road.md
-    # node/199.md: articles/2010/2010-02-04_opengeo_suite_en_version_1_0_tests_et_impressions.md
-    # node/201.md: articles/2010/2010-02-02_ski_iphone_et_cartographie.md
-    # node/205.md: articles/2010/2010-02-05_fluster_2.md
-    # node/217.md: articles/2010/2010-02-12_comment_detruire_une_communaute.md
-    # node/222.md: articles/2010/2010-03-02_les_etl_spatiaux_opensource_a_pieds_joints_l_informatique_geodecisionnelle.md
-    # node/225.md: articles/2010/2010-04-15_profil_type_d_un_utilisateur_d_openstreetmap.md
-    # node/228.md: articles/2010/2010-03-11_linux_sans_contrainte_grace_a_virtualbox.md
-    # node/229.md: articles/2010/2010-03-12_geojquery_une_future_alternative_a_geoext.md
-    # node/230.md: articles/2010/2010-03-15_yql_geo_library_localisation_facilement.md
+    node/191.md: articles/2010/2010-01-08_mise_a_jour_maposmatic.md
+    node/192.md: articles/2010/2010-01-12_heatmap.md
+    node/194.md: articles/2010/2010-01-18_sortie_qgis_enceladus.md
+    node/195.md: articles/2010/2010-02-11_quel_developpement_cartographique_plateformes_differentes.md
+    node/196.md: articles/2010/2010-01-25_imagimap_road.md
+    node/199.md: articles/2010/2010-02-04_opengeo_suite_tests_impressions.md
+    node/201.md: articles/2010/2010-02-02_ski_iphone_cartographie.md
+    node/205.md: articles/2010/2010-02-05_fluster2.md
+    node/217.md: articles/2010/2010-02-12_comment_detruire_une_communaute.md
+    node/222.md: articles/2010/2010-03-02_etl_spatiaux_opensource.md
+    node/225.md: articles/2010/2010-04-15_profil_type_utilisateur_openstreetmap.md
+    node/228.md: articles/2010/2010-03-11_linux_sans_contrainte_virtualbox.md
+    node/229.md: articles/2010/2010-03-12_geojquery_alternative_a_geoext.md
+    node/230.md: articles/2010/2010-03-15_yql_geo_library.md
     # node/231.md: articles/2010/2010-03-25_une_machine_virtuelle_orientee_sig_avec_arramagong.md
-    # node/232.md: articles/2010/2010-03-18_vers_un_rapprochement_d_osm_fr_et_de_l_osgeo_fr.md
-    # node/233.md: articles/2010/2010-03-17_l_api_geoportail_passe_en_version_1_0.md
-    # node/234.md: articles/2010/2010-03-25_ca_bouge_chez_geoext.md
+    node/232.md: articles/2010/2010-03-18_rapprochement_osmfr_osgeofr.md
+    node/233.md: articles/2010/2010-03-17_api_geoportail_version1.md
+    node/234.md: articles/2010/2010-03-25_ca_bouge_chez_geoext.md
     # node/239.md: articles/2010/2010-03-31_gestion_des_risques_et_cartographie_communautaire.md
-    # node/240.md: articles/2010/2010-03-31_these_geographie_de_science.md
-    # node/242.md: articles/2010/2010-04-06_openlayers_en_3d.md
-    # node/244.md: articles/2010/2010-04-12_arramagong_en_version_3_0.md
-    # node/247.md: articles/2010/2010-04-08_osgeo_fr_ouverture_des_adhesions.md
-    # node/248.md: articles/2010/2010-07-15_modelisation_d_une_base_de_donnees_avec_sql_power_architect.md
-    # node/252.md: articles/2010/2010-04-23_geoscript.md
-    # node/254.md: articles/2010/2010-04-26_openlayers_en_version_2_9.md
-    # node/256.md: articles/2010/2010-05-04_gvsig_mini_en_version_0_2.md
-    # node/257.md: articles/2010/2010-05-11_les_rencontres_sig_lettre_un_evenement_reussi.md
-    # node/258.md: articles/2010/2010-05-13_geoext_passe_en_version_0_7.md
-    # node/260.md: articles/2010/2010-05-28_xapi_osm.md
+    node/240.md: articles/2010/2010-03-31_these_geographie_science.md
+    node/242.md: articles/2010/2010-04-06_openlayers_3d.md
+    node/244.md: articles/2010/2010-04-12_arramagong_version3.md
+    node/247.md: articles/2010/2010-04-08_osgeofr_ouverture_adhesions.md
+    node/248.md: articles/2010/2010-07-15_modelisation_base_de_donnees_sql_power_architect.md
+    node/252.md: articles/2010/2010-04-23_geoscript.md
+    node/254.md: articles/2010/2010-04-26_openlayers29.md
+    node/256.md: articles/2010/2010-05-04_gvsig_mini.md
+    node/257.md: articles/2010/2010-05-11_rencontres_sig_la_lettre.md
+    node/258.md: articles/2010/2010-05-13_geoext_version07.md
+    node/260.md: articles/2010/2010-05-28_xapi_osm.md
     # node/266.md: articles/2010/2010-06-02_initiation_a_cartographie_collaborative_samedi_26_juin_a_maison_de_teledetection.md
     # node/267.md: articles/2010/2010-06-07_creez_une_carte_papier_avec_des_donnees_openstreetmap.md
     # node/270.md: articles/2010/2010-06-11_hypermap_future_balise_html.md
