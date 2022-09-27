@@ -14,76 +14,76 @@ redirects:
     node/64.md: articles/2008/2008-11-17_workshop-quantum-gis.md
     node/72.md: articles/2008/2008-12-07_les-donnees-sig-devraient-elles-etre-libres.md
     node/77.md: articles/2008/2008-12-16_appel-a-sponsoring-code-sprint-open-layers.md
-    # node/79.md: articles/2009/2009-01-13_generer-des-tuiles-avec-php.md
-    # node/80.md: articles/2009/2009-01-14_android-et-openstreetmap.md
-    # node/84.md: articles/2009/2009-01-21_liste-des-logiciels-opensource-disponible.md
-    # node/85.md: articles/2009/2009-05-15_un-annuaire-oriente-sig.md
-    # node/87.md: articles/2009/2009-01-26_interview-de-david-jonglez-co-fondateur-de-camptocamp.md
-    # node/89.md: articles/2009/2009-02-01_les-plus-grands-mensonges-a-l-encontre-de-l-opensource.md
-    # node/91.md: articles/2009/2009-02-09_sortie-de-qgis-1-0-kore.md
-    # node/94.md: articles/2009/2009-03-03_geodjango-le-framework-cartographique-de-haut-niveau.md
-    # node/95.md: articles/2009/2009-03-05_cartogaphier-l-immateriel.md
-    # node/97.md: articles/2009/2009-03-18_explorer-le-format-georss.md
-    # node/98.md: articles/2009/2009-03-23_le-pense-bete-d-openlayers.md
-    # node/99.md: articles/2009/2009-03-24_geospatial-revolution-project-une-introduction-sig-en-video.md
-    # node/101.md: articles/2009/2009-03-31_enfin-une-emission-de-qualite-a-la-television.md
-    # node/102.md: articles/2009/2009-04-01_coup-de-flippe-et-reflexion-sur-l-api-google-maps.md
-    # node/103.md: articles/2009/2009-04-02_good-planet-le-site-qui-sent-la-chlorophyle.md
-    # node/107.md: articles/2009/2009-04-14_openlayers-en-application-et-essor-du-monde-de-l-opensource
-    # node/106.md: articles/2009/2009-04-14_geodjango-pas-a-pas.md
-    # node/108.md: articles/2009/2009-04-16_mscompanion-l-editeur-wysiwyg-de-mapfile.md
-    # node/109.md: articles/2009/2009-04-18_wheresthepath-ou-comment-planifier-un-itineraire.md
-    # node/112.md: articles/2009/2009-04-22_o3d-ou-comment-integrer-de-la-3d-dans-votre-navigateur-grace-a-google.md
-    # node/114.md: articles/2009/2009-04-26_pachube-vers-un-recensement-mondiale-des-capteurs.md
-    # node/115.md: articles/2009/2009-05-05_quand-l-opensource-communautaire-s-invite-a-la-maison-blanche.md
-    # node/116.md: articles/2009/2009-05-19_mapnik-moteur-cartographique-pour-les-perfectionnistes-graphisme.md
-    # node/117.md: articles/2009/2009-05-24_a-la-decouverte-de-puzzle-gis.md
-    # node/119.md: articles/2009/2009-05-25_partage-de-l-information-publique-vu-par-les-etats-unis.md
-    # node/120.md: articles/2009/2009-05-31_a-decouverte-d-openjump.md
-    # node/121.md: articles/2009/2009-06-02_php-js-ou-vos-fonctions-php-traduites-en-javascript.md
-    # node/122.md: articles/2009/2009-06-04_geoserver-bientot-en-version-2-0.md
-    # node/123.md: articles/2009/2009-06-05_annonces-en-pagaille-cote-de-chez-google.md
-    # node/126.md: articles/2009/2009-06-07_a-decouverte-d-udig.md
-    # node/128.md: articles/2009/2009-06-18_un-nouveau-site-pour-geoext.md
-    # node/129.md: articles/2009/2009-06-23_sortie-de-version-2-8-d-openlayers.md
-    # node/130.md: articles/2009/2009-06-24_geoext-en-version-0-5.md
-    # node/131.md: articles/2009/2009-07-17_geomatique-decisionelle-l-avenir-sig.md
-    # node/132.md: articles/2009/2009-07-01_l-ign-met-a-disposition-certaines-de-ces-donnees.md
-    # node/134.md: articles/2009/2009-07-12_introduction-au-libre-selon-president-de-l-osgeo-fr.md
-    # node/135.md: articles/2009/2009-07-15_quelques-outils-pour-develloper-plus-facilement-en-javascript.md
-    # node/136.md: articles/2009/2009-07-19_les-videos-de-l-osgis-sont-en-ligne.md
-    # node/137.md: articles/2009/2009-07-21_bientot-une-nouvelle-fonctionnalite-pour-openstreetmap-creation-de-cartes-statiques.md
-    # node/138.md: articles/2009/2009-07-26_state-of-the-map-2009-les-videos-sont-en-ligne.md
-    # node/141.md: articles/2009/2009-08-03_les-crimes-et-incendies-s-affichent-en-webmapping.md
-    # node/142.md: articles/2009/2009-08-06_etes-vous-fortiche-en-sig.md
-    # node/143.md: articles/2009/2009-08-10_ca-bouge-monde-des-bases-de-donnees.md
-    # node/146.md: articles/2009/2009-08-17_puzzlegis-en-version-0-4.md
-    # node/147.md: articles/2009/2009-08-19_walking-papers-ou-comment-disposer-d-openstreetmap-sur-papier.md
-    # node/150.md: articles/2009/2009-08-20_openstreetmap-s-invite-sur-site-ecrans.md
-    # node/152.md: articles/2009/2009-08-28_a-decouverte-de-qgis.md
-    # node/153.md: articles/2009/2009-09-02_1er-experience-d-openstreetmap.md
-    # node/154.md: articles/2009/2009-09-04_sortie-de-qgis-1-2-0-daphnis.md
-    # node/155.md: articles/2009/2009-09-09_1er-impressions-de-qgis-1-2-0-daphnis.md
-    # node/156.md: articles/2009/2009-09-11_creer-son-propre-plan-de-ville-grace-a-maposmatic.md
-    # node/157.md: articles/2009/2009-09-15_les-evolutions-web-de-demain-html-5-et-css-3.md
-    # node/158.md: articles/2009/2009-09-25_sortie-manuel-de-qgis-1-0-en-francais.md
-    # node/159.md: articles/2009/2009-09-27_globeracers-un-nouveau-jeu-pour-geomaticien-ecologique.md
-    # node/160.md: articles/2009/2009-09-30_flickr-et-openstreetmap-main-main.md
-    # node/162.md: articles/2009/2009-10-10_les-cartes-d-osm-enrichies-des-donnees-de-corine-land-cover.md
-    # node/163.md: articles/2009/2009-10-16_geoext-en-version-0-6.md
-    # node/166.md: articles/2009/2009-10-28_gvsig-mini-une-application-sig-pour-votre-telephone-portable.md
-    # node/167.md: articles/2009/2009-10-29_geoserver-en-version-2-0-et-benchmarks-des-serveurs-carto.md
-    # node/168.md: articles/2009/2009-10-30_geomap-ou-comment-mettre-en-oeuvre-rapidement-sur-web-des-cartes-choropletes-ou-en-symboles-presque-proportionnels.md
-    # node/170.md: articles/2009/2009-11-04_meilleur-d-openstreetmap-sur-best-of-osm.md
-    # node/172.md: articles/2009/2009-11-09_ogr2gui-passe-en-version-0-6.md
-    # node/173.md: articles/2009/2009-11-11_mapfish-et-geoserver-debutent-leur-processus-d-incubation.md
-    # node/174.md: articles/2009/2009-11-15_une-carte-webmapping-opensource.md
-    # node/175.md: articles/2009/2009-11-23_panel-de-mashups-google-maps.md
-    # node/179.md: articles/2009/2009-11-26_a-decouverte-d-orbisgis.md
-    # node/186.md: articles/2009/2009-12-11_google-gears-est-mort-longue-vie-au-html5.md
-    # node/188.md: articles/2010/2010-02-15_mapchat-ou-geocollaboration-opensource.md
-    # node/189.md: articles/2009/2009-12-29_project-52.md
-    # node/190.md: articles/2009/2009-12-31_une-machine-virtuelle-orientee-sig.md
+    node/79.md: articles/2009/2009-01-13_generer-des-tuiles-avec-php.md
+    node/80.md: articles/2009/2009-01-14_android-et-openstreetmap.md
+    node/84.md: articles/2009/2009-01-21_liste-des-logiciels-opensource-disponible.md
+    node/85.md: articles/2009/2009-05-15_un-annuaire-oriente-sig.md
+    node/87.md: articles/2009/2009-01-26_interview-de-david-jonglez-co-fondateur-de-camptocamp.md
+    node/89.md: articles/2009/2009-02-01_les-plus-grands-mensonges-a-l-encontre-de-l-opensource.md
+    node/91.md: articles/2009/2009-02-09_sortie-de-qgis-1-0-kore.md
+    node/94.md: articles/2009/2009-03-03_geodjango-le-framework-cartographique-de-haut-niveau.md
+    node/95.md: articles/2009/2009-03-05_cartogaphier-l-immateriel.md
+    node/97.md: articles/2009/2009-03-18_explorer-le-format-georss.md
+    node/98.md: articles/2009/2009-03-23_le-pense-bete-d-openlayers.md
+    node/99.md: articles/2009/2009-03-24_geospatial-revolution-project-une-introduction-sig-en-video.md
+    node/101.md: articles/2009/2009-03-31_enfin-une-emission-de-qualite-a-la-television.md
+    node/102.md: articles/2009/2009-04-01_coup-de-flippe-et-reflexion-sur-l-api-google-maps.md
+    node/103.md: articles/2009/2009-04-02_good-planet-le-site-qui-sent-la-chlorophyle.md
+    node/107.md: articles/2009/2009-04-14_openlayers-en-application-et-essor-du-monde-de-l-opensource.md
+    node/106.md: articles/2009/2009-04-14_geodjango-pas-a-pas.md
+    node/108.md: articles/2009/2009-04-16_mscompanion-l-editeur-wysiwyg-de-mapfile.md
+    node/109.md: articles/2009/2009-04-18_wheresthepath-ou-comment-planifier-un-itineraire.md
+    node/112.md: articles/2009/2009-04-22_o3d-ou-comment-integrer-de-la-3d-dans-votre-navigateur-grace-a-google.md
+    node/114.md: articles/2009/2009-04-26_pachube-vers-un-recensement-mondiale-des-capteurs.md
+    node/115.md: articles/2009/2009-05-05_quand-l-opensource-communautaire-s-invite-a-la-maison-blanche.md
+    node/116.md: articles/2009/2009-05-19_mapnik-le-moteur-cartographique-pour-les-perfectionnistes-du-graphisme.md
+    node/117.md: articles/2009/2009-05-24_a-la-decouverte-de-puzzle-gis.md
+    node/119.md: articles/2009/2009-05-25_le-partage-de-l-information-publique-vu-par-les-etats-unis.md
+    node/120.md: articles/2009/2009-05-31_a-la-decouverte-d-openjump.md
+    node/121.md: articles/2009/2009-06-02_php-js-ou-vos-fonctions-php-traduites-en-javascript.md
+    node/122.md: articles/2009/2009-06-04_geoserver-bientot-en-version-2-0.md
+    node/123.md: articles/2009/2009-06-05_annonces-en-pagaille-du-cote-de-chez-google.md
+    node/126.md: articles/2009/2009-06-07_a-la-decouverte-de-udig.md
+    node/128.md: articles/2009/2009-06-18_un-nouveau-site-pour-geoext.md
+    node/129.md: articles/2009/2009-06-23_sortie-de-la-version-2-8-d-openlayers.md
+    node/130.md: articles/2009/2009-06-24_geoext-en-version-0-5.md
+    node/131.md: articles/2009/2009-07-17_la-geomatique-decisionelle-l-avenir-du-sig.md
+    node/132.md: articles/2009/2009-07-01_l-ign-met-a-disposition-certaines-de-ces-donnees.md
+    node/134.md: articles/2009/2009-07-12_introduction-au-libre-selon-le-president-de-l-osgeo-fr.md
+    node/135.md: articles/2009/2009-07-15_quelques-outils-pour-develloper-plus-facilement-en-javascript.md
+    node/136.md: articles/2009/2009-07-19_les-videos-de-l-osgis-sont-en-ligne.md
+    node/137.md: articles/2009/2009-07-21_bientot-une-nouvelle-fonctionnalite-pour-openstreetmap-la-creation-de-cartes-statiques.md
+    node/138.md: articles/2009/2009-07-26_state-of-the-map-2009-les-videos-sont-en-ligne.md
+    node/141.md: articles/2009/2009-08-03_les-crimes-et-incendies-s-affichent-en-webmapping.md
+    node/142.md: articles/2009/2009-08-06_etes-vous-fortiche-en-sig.md
+    node/143.md: articles/2009/2009-08-10_ca-bouge-dans-le-monde-des-bases-de-donnees.md
+    node/146.md: articles/2009/2009-08-17_puzzlegis-en-version-0-4.md
+    node/147.md: articles/2009/2009-08-19_walking-papers-ou-comment-disposer-d-openstreetmap-sur-papier.md
+    node/150.md: articles/2009/2009-08-20_openstreetmap-s-invite-sur-le-site-ecrans.md
+    node/152.md: articles/2009/2009-08-28_a-la-decouverte-de-qgis.md
+    node/153.md: articles/2009/2009-09-02_1er-experience-d-openstreetmap.md
+    node/154.md: articles/2009/2009-09-04_sortie-de-qgis-1-2-0-daphnis.md
+    node/155.md: articles/2009/2009-09-09_1er-impressions-de-qgis-1-2-0-daphnis.md
+    node/156.md: articles/2009/2009-09-11_creer-son-propre-plan-de-ville-grace-a-maposmatic.md
+    node/157.md: articles/2009/2009-09-15_les-evolutions-du-web-de-demain-html-5-et-css-3.md
+    node/158.md: articles/2009/2009-09-25_sortie-du-manuel-de-qgis-1-0-en-francais.md
+    node/159.md: articles/2009/2009-09-27_globeracers-un-nouveau-jeu-pour-geomaticien-ecologique.md
+    node/160.md: articles/2009/2009-09-30_flickr-et-openstreetmap-main-dans-la-main.md
+    node/162.md: articles/2009/2009-10-10_les-cartes-d-osm-enrichies-des-donnees-de-corine-land-cover.md
+    node/163.md: articles/2009/2009-10-16_geoext-en-version-0-6.md
+    node/166.md: articles/2009/2009-10-28_gvsig-mini-une-application-sig-pour-votre-telephone-portable.md
+    node/167.md: articles/2009/2009-10-29_geoserver-en-version-2-0-et-benchmarks-des-serveurs-carto.md
+    node/168.md: articles/2009/2009-10-30_geomap-ou-comment-mettre-en-oeuvre-rapidement-sur-le-web-des-cartes-choropletes-ou-en-symboles-presque-proportionnels.md
+    node/170.md: articles/2009/2009-11-04_le-meilleur-d-openstreetmap-sur-best-of-osm.md
+    node/172.md: articles/2009/2009-11-09_ogr2gui-passe-en-version-0-6.md
+    node/173.md: articles/2009/2009-11-11_mapfish-et-geoserver-debutent-leur-processus-d-incubation.md
+    node/174.md: articles/2009/2009-11-15_une-carte-du-webmapping-opensource.md
+    node/175.md: articles/2009/2009-11-23_panel-de-mashups-google-maps.md
+    node/179.md: articles/2009/2009-11-26_a-la-decouverte-d-orbisgis.md
+    node/186.md: articles/2009/2009-12-11_google-gears-est-mort-longue-vie-au-html5.md
+    node/188.md: articles/2010/2010-02-15_mapchat_geocollaboration_opensource.md
+    node/189.md: articles/2009/2009-12-29_project-52.md
+    node/190.md: articles/2009/2009-12-31_une-machine-virtuelle-orientee-sig.md
     # node/191.md: articles/2010/2010-01-08_mis_a_jour_maposmatic.md
     # node/192.md: articles/2010/2010-01-12_heatmap.md
     # node/194.md: articles/2010/2010-01-18_sortie_de_qgis_1_4_0_enceladus.md
