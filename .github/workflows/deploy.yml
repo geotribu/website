@@ -43,6 +43,10 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
+      - name: Merge configuration files
+        run: |
+          python scripts/mkdocs_config_merger.py -c mkdocs.yml
+
       - name: Build static website
         run: |
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
