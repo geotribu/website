@@ -315,15 +315,15 @@ redirects:
     node/775.md: rdp/2015/rdp_2015-01-02.md
     node/776.md: rdp/2015/rdp_2015-01-16.md
     node/777.md: rdp/2015/rdp_2015-01-23.md
-    # node/778.md: articles/2015/2015-01-18_7th_international_workshop_on_information_fusion_and_geographic_information_systems_deep_virtualization_for_mobile_gis_if_gis_2015.md
+    node/778.md: articles/2015/2015-01-18_7th_international_workshop_on_information_fusion_and_geographic_information_systems.md
     node/779.md: rdp/2015/rdp_2015-01-30.md
-    # node/780.md: articles/2015/2015-02-03_representation_en_3d_des_objets_d_openstreetmap.md
+    node/780.md: articles/2015/2015-02-03_representation_3D_des_objets_openstreetmap.md
     node/781.md: rdp/2015/rdp_2015-02-06.md
-    # node/782.md: articles/2015/2015-02-04_sortie_de_l_ouvrage_openlayers_3_beginner_s_guide.md
-    # node/783.md: articles/2015/2015-02-09_8eme_geoseminaire_mastere_silat_geomatique_et_territioires_intelligents_vers_une_nouvelle_ere_democratic.md
+    node/782.md: articles/2015/2015-02-04_sortie_openlayers3_beginner_s_guide.md
+    node/783.md: articles/2015/2015-02-09_8eme_geoseminaire_silat.md
     node/784.md: rdp/2015/rdp_2015-02-13.md
-    # node/788.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
+    node/788.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
     node/789.md: rdp/2015/rdp_2015-02-20.md
-    # node/811.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
+    node/811.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
     # rss.md: https://static.geotribu.fr/feed_rss_created.xml
