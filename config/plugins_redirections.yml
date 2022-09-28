@@ -13,6 +13,7 @@ redirects:
     node/60.md: articles/2008/2008-11-07_sortie-de-la-version-3-0-0-de-pywps.md
     node/64.md: articles/2008/2008-11-17_workshop-quantum-gis.md
     node/72.md: articles/2008/2008-12-07_les-donnees-sig-devraient-elles-etre-libres.md
+    node/73.md: articles/2008/2008-12-06_comparatif-des-differentes-solutions-cartographiques-open-source.md
     node/75.md: articles/2008/2008-12-11_geoext-le-mariage-de-l-ihm-et-de-la-cartographie.md
     node/77.md: articles/2008/2008-12-16_appel-a-sponsoring-code-sprint-open-layers.md
     node/79.md: articles/2009/2009-01-13_generer-des-tuiles-avec-php.md
@@ -51,7 +52,7 @@ redirects:
     node/131.md: articles/2009/2009-07-17_la-geomatique-decisionelle-l-avenir-du-sig.md
     node/132.md: articles/2009/2009-07-01_l-ign-met-a-disposition-certaines-de-ces-donnees.md
     node/134.md: articles/2009/2009-07-12_introduction-au-libre-selon-le-president-de-l-osgeo-fr.md
-    node/135.md: articles/2009/2009-07-15_quelques-outils-pour-develloper-plus-facilement-en-javascript.md
+    node/135.md: articles/2009/2009-07-15_quelques-outils-pour-developper-plus-facilement-en-javascript.md
     node/136.md: articles/2009/2009-07-19_les-videos-de-l-osgis-sont-en-ligne.md
     node/137.md: articles/2009/2009-07-21_bientot-une-nouvelle-fonctionnalite-pour-openstreetmap-la-creation-de-cartes-statiques.md
     node/138.md: articles/2009/2009-07-26_state-of-the-map-2009-les-videos-sont-en-ligne.md
@@ -276,7 +277,6 @@ redirects:
     node/726.md: rdp/2014/rdp_2014-05-30.md
     # node/727.md: articles/2014/2014-05-25_these_analyse_et_detection_de_comportements_de_navires_a_risques_induits_par_les_falsifications_de_messages_ais.md
     node/728.md: articles/2014/2014-05-25_these_analyse_geocollaborative.md
-    node/73.md: articles/2008/2008-12-06_comparatif-des-differentes-solutions-cartographiques-open-source.md
     node/730.md: rdp/2014/rdp_2014-06-06.md
     node/732.md: rdp/2014/rdp_2014-06-13.md
     node/734.md: rdp/2014/rdp_2014-06-20.md
@@ -327,3 +327,197 @@ redirects:
     node/811.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
     # rss.md: https://static.geotribu.fr/feed_rss_created.xml
+
+    # migration des contenus en 2022
+    articles/2008/art_2008-11-03.md: articles/2008/2008-11-03_premiers-pas-dans-la-cour-des-grands.md
+    articles/2008/art_2008-11-05.md: articles/2008/2008-11-05_workshop-openlayers.md
+    articles/2008/art_2008-11-07.md: articles/2008/2008-11-07_sortie-de-la-version-3-0-0-de-pywps.md
+    articles/2008/art_2008-11-17.md: articles/2008/2008-11-17_workshop-quantum-gis.md
+    articles/2008/art_2008-12-06.md: articles/2008/2008-12-06_comparatif-des-differentes-solutions-cartographiques-open-source.md
+    articles/2008/art_2008-12-07.md: articles/2008/2008-12-07_les-donnees-sig-devraient-elles-etre-libres.md
+    articles/2009/art_2009-01-13.md: articles/2009/2009-01-13_generer-des-tuiles-avec-php.md
+    articles/2009/art_2009-01-14.md: articles/2009/2009-01-14_android-et-openstreetmap.md
+    articles/2009/art_2009-01-21.md: articles/2009/2009-01-21_liste-des-logiciels-opensource-disponible.md
+    articles/2009/art_2009-01-26.md: articles/2009/2009-01-26_interview-de-david-jonglez-co-fondateur-de-camptocamp.md
+    articles/2009/art_2009-02-01.md: articles/2009/2009-02-01_les-plus-grands-mensonges-a-l-encontre-de-l-opensource.md
+    articles/2009/art_2009-02-09.md: articles/2009/2009-02-09_sortie-de-qgis-1-0-kore.md
+    articles/2009/art_2009-03-03.md: articles/2009/2009-03-03_geodjango-le-framework-cartographique-de-haut-niveau.md
+    articles/2009/art_2009-03-05.md: articles/2009/2009-03-05_cartogaphier-l-immateriel.md
+    articles/2009/art_2009-03-18.md: articles/2009/2009-03-18_explorer-le-format-georss.md
+    articles/2009/art_2009-03-23.md: articles/2009/2009-03-23_le-pense-bete-d-openlayers.md
+    articles/2009/art_2009-03-24.md: articles/2009/2009-03-24_geospatial-revolution-project-une-introduction-sig-en-video.md
+    articles/2009/art_2009-03-31.md: articles/2009/2009-03-31_enfin-une-emission-de-qualite-a-la-television.md
+    articles/2009/art_2009-04-01.md: articles/2009/2009-04-01_coup-de-flippe-et-reflexion-sur-l-api-google-maps.md
+    articles/2009/art_2009-04-02.md: articles/2009/2009-04-02_good-planet-le-site-qui-sent-la-chlorophyle.md
+    articles/2009/art_2009-04-14.md: articles/2009/2009-04-14_openlayers-en-application-et-essor-du-monde-de-l-opensource.md
+    articles/2009/art_2009-04-16.md: articles/2009/2009-04-16_mscompanion-l-editeur-wysiwyg-de-mapfile.md
+    articles/2009/art_2009-04-18.md: articles/2009/2009-04-18_wheresthepath-ou-comment-planifier-un-itineraire.md
+    articles/2009/art_2009-04-22.md: articles/2009/2009-04-22_o3d-ou-comment-integrer-de-la-3d-dans-votre-navigateur-grace-a-google.md
+    articles/2009/art_2009-04-26.md: articles/2009/2009-04-26_pachube-vers-un-recensement-mondiale-des-capteurs.md
+    articles/2009/art_2009-05-15.md: articles/2009/2009-05-15_un-annuaire-oriente-sig.md
+    articles/2009/art_2009-05-19.md: articles/2009/2009-05-19_mapnik-le-moteur-cartographique-pour-les-perfectionnistes-du-graphisme.md
+    articles/2009/art_2009-05-24.md: articles/2009/2009-05-24_a-la-decouverte-de-puzzle-gis.md
+    articles/2009/art_2009-05-25.md: articles/2009/2009-05-25_le-partage-de-l-information-publique-vu-par-les-etats-unis.md
+    articles/2009/art_2009-05-31.md: articles/2009/2009-05-31_a-la-decouverte-d-openjump.md
+    articles/2009/art_2009-06-02.md: articles/2009/2009-06-02_php-js-ou-vos-fonctions-php-traduites-en-javascript.md
+    articles/2009/art_2009-06-04.md: articles/2009/2009-06-04_geoserver-bientot-en-version-2-0.md
+    articles/2009/art_2009-06-05.md: articles/2009/2009-06-05_annonces-en-pagaille-du-cote-de-chez-google.md
+    articles/2009/art_2009-06-18.md: articles/2009/2009-06-18_un-nouveau-site-pour-geoext.md
+    articles/2009/art_2009-06-23.md: articles/2009/2009-06-23_sortie-de-la-version-2-8-d-openlayers.md
+    articles/2009/art_2009-06-24.md: articles/2009/2009-06-24_geoext-en-version-0-5.md
+    articles/2009/art_2009-07-01.md: articles/2009/2009-07-01_l-ign-met-a-disposition-certaines-de-ces-donnees.md
+    articles/2009/art_2009-07-12.md: articles/2009/2009-07-12_introduction-au-libre-selon-le-president-de-l-osgeo-fr.md
+    articles/2009/art_2009-07-15.md: articles/2009/2009-07-15_quelques-outils-pour-developper-plus-facilement-en-javascript.md
+    articles/2009/art_2009-07-17.md: articles/2009/2009-07-17_la-geomatique-decisionelle-l-avenir-du-sig.md
+    articles/2009/art_2009-07-19.md: articles/2009/2009-07-19_les-videos-de-l-osgis-sont-en-ligne.md
+    articles/2009/art_2009-07-21.md: articles/2009/2009-07-21_bientot-une-nouvelle-fonctionnalite-pour-openstreetmap-la-creation-de-cartes-statiques.md
+    articles/2009/art_2009-07-26.md: articles/2009/2009-07-26_state-of-the-map-2009-les-videos-sont-en-ligne.md
+    articles/2009/art_2009-08-03.md: articles/2009/2009-08-03_les-crimes-et-incendies-s-affichent-en-webmapping.md
+    articles/2009/art_2009-08-06.md: articles/2009/2009-08-06_etes-vous-fortiche-en-sig.md
+    articles/2009/art_2009-08-10.md: articles/2009/2009-08-10_ca-bouge-dans-le-monde-des-bases-de-donnees.md
+    articles/2009/art_2009-08-17.md: articles/2009/2009-08-17_puzzlegis-en-version-0-4.md
+    articles/2009/art_2009-08-19.md: articles/2009/2009-08-19_walking-papers-ou-comment-disposer-d-openstreetmap-sur-papier.md
+    articles/2009/art_2009-08-28.md: articles/2009/2009-08-28_a-la-decouverte-de-qgis.md
+    articles/2009/art_2009-09-02.md: articles/2009/2009-09-02_1er-experience-d-openstreetmap.md
+    articles/2009/art_2009-09-04.md: articles/2009/2009-09-04_sortie-de-qgis-1-2-0-daphnis.md
+    articles/2009/art_2009-09-11_creer-son-propre-plan-de-ville-grace-a-maposmatic.md: articles/2009/2009-09-11_creer-son-propre-plan-de-ville-grace-a-maposmatic.md
+    articles/2009/art_2009-09-15.md: articles/2009/2009-09-15_les-evolutions-du-web-de-demain-html-5-et-css-3.md
+    articles/2009/art_2009-09-25.md: articles/2009/2009-09-25_sortie-du-manuel-de-qgis-1-0-en-francais.md
+    articles/2009/art_2009-09-27.md: articles/2009/2009-09-27_globeracers-un-nouveau-jeu-pour-geomaticien-ecologique.md
+    articles/2009/art_2009-09-30.md: articles/2009/2009-09-30_flickr-et-openstreetmap-main-dans-la-main.md
+    articles/2009/art_2009-10-10.md: articles/2009/2009-10-10_les-cartes-d-osm-enrichies-des-donnees-de-corine-land-cover.md
+    articles/2009/art_2009-10-16.md: articles/2009/2009-10-16_geoext-en-version-0-6.md
+    articles/2009/art_2009-10-28.md: articles/2009/2009-10-28_gvsig-mini-une-application-sig-pour-votre-telephone-portable.md
+    articles/2009/art_2009-10-29.md: articles/2009/2009-10-29_geoserver-en-version-2-0-et-benchmarks-des-serveurs-carto.md
+    articles/2009/art_2009-10-30.md: articles/2009/2009-10-30_geomap-ou-comment-mettre-en-oeuvre-rapidement-sur-le-web-des-cartes-choropletes-ou-en-symboles-presque-proportionnels.md
+    articles/2009/art_2009-11-04.md: articles/2009/2009-11-04_le-meilleur-d-openstreetmap-sur-best-of-osm.md
+    articles/2009/art_2009-11-09.md: articles/2009/2009-11-09_ogr2gui-passe-en-version-0-6.md
+    articles/2009/art_2009-11-11.md: articles/2009/2009-11-11_mapfish-et-geoserver-debutent-leur-processus-d-incubation.md
+    articles/2009/art_2009-11-15.md: articles/2009/2009-11-15_une-carte-du-webmapping-opensource.md
+    articles/2009/art_2009-11-23.md: articles/2009/2009-11-23_panel-de-mashups-google-maps.md
+    articles/2009/art_2009-11-26.md: articles/2009/2009-11-26_a-la-decouverte-d-orbisgis.md
+    articles/2009/art_2009-12-11.md: articles/2009/2009-12-11_google-gears-est-mort-longue-vie-au-html5.md
+    articles/2009/art_2009-12-29.md: articles/2009/2009-12-29_project-52.md
+    articles/2009/art_2009-12-31.md: articles/2009/2009-12-31_une-machine-virtuelle-orientee-sig.md
+    articles/2010/art_2010-01-08.md: articles/2010/2010-01-08_mise_a_jour_maposmatic.md
+    articles/2010/art_2010-01-12.md: articles/2010/2010-01-12_heatmap.md
+    articles/2010/art_2010-01-18.md: articles/2010/2010-01-18_sortie_qgis_enceladus.md
+    articles/2010/art_2010-01-25.md: articles/2010/2010-01-25_imagimap_road.md
+    articles/2010/art_2010-02-02.md: articles/2010/2010-02-02_ski_iphone_cartographie.md
+    articles/2010/art_2010-02-04.md: articles/2010/2010-02-04_opengeo_suite_tests_impressions.md
+    articles/2010/art_2010-02-05.md: articles/2010/2010-02-05_fluster2.md
+    articles/2010/art_2010-02-11.md: articles/2010/2010-02-11_quel_developpement_cartographique_plateformes_differentes.md
+    articles/2010/art_2010-02-12.md: articles/2010/2010-02-12_comment_detruire_une_communaute.md
+    articles/2010/art_2010-02-15.md: articles/2010/2010-02-15_mapchat_geocollaboration_opensource.md
+    articles/2010/art_2010-03-02.md: articles/2010/2010-03-02_etl_spatiaux_opensource.md
+    articles/2010/art_2010-03-11.md: articles/2010/2010-03-11_linux_sans_contrainte_virtualbox.md
+    articles/2010/art_2010-03-12.md: articles/2010/2010-03-12_geojquery_alternative_a_geoext.md
+    articles/2010/art_2010-03-17.md: articles/2010/2010-03-17_api_geoportail_version1.md
+    articles/2010/art_2010-03-25.md: articles/2010/2010-03-25_ca_bouge_chez_geoext.md
+    articles/2010/art_2010-03-31.md: articles/2010/2010-03-31_these_geographie_science.md
+    articles/2010/art_2010-04-06.md: articles/2010/2010-04-06_openlayers_3d.md
+    articles/2010/art_2010-04-08.md: articles/2010/2010-04-08_osgeofr_ouverture_adhesions.md
+    articles/2010/art_2010-04-12.md: articles/2010/2010-04-12_arramagong_version3.md
+    articles/2010/art_2010-04-15.md: articles/2010/2010-04-15_profil_type_utilisateur_openstreetmap.md
+    articles/2010/art_2010-04-23.md: articles/2010/2010-04-23_geoscript.md
+    articles/2010/art_2010-04-26.md: articles/2010/2010-04-26_openlayers29.md
+    articles/2010/art_2010-05-04.md: articles/2010/2010-05-04_gvsig_mini.md
+    articles/2010/art_2010-05-11.md: articles/2010/2010-05-11_rencontres_sig_la_lettre.md
+    articles/2010/art_2010-05-13.md: articles/2010/2010-05-13_geoext_version07.md
+    articles/2010/art_2010-05-28.md: articles/2010/2010-05-28_xapi_osm.md
+    articles/2010/art_2010-06-02.md: articles/2010/2010-06-02_initiation_cartographie_collaborative.md
+    articles/2010/art_2010-06-07.md: articles/2010/2010-06-07_carte_papier_avec_des_donnees_openstreetmap.md
+    articles/2010/art_2010-06-11.md: articles/2010/2010-06-11_hypermap_future_balise_html.md
+    articles/2010/art_2010-06-22.md: articles/2010/2010-06-22_ca_bouge_dans_le_monde_du_geobi.md
+    articles/2010/art_2010-06-24.md: articles/2010/2010-06-24_these_construction_systeme_geodecisionnel.md
+    articles/2010/art_2010-07-15.md: articles/2010/2010-07-15_modelisation_base_de_donnees_sql_power_architect.md
+    articles/2010/art_2010-07-21.md: articles/2010/2010-07-21_ibiclou_opendata_webmapping_velo.md
+    articles/2010/art_2010-08-25.md: articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gsconfig.md
+    articles/2010/art_2010-09-03.md: articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md
+    articles/2010/art_2010-09-23.md: articles/2010/2010-09-23_creer_ses_propres_plugin_qgis.md
+    articles/2010/art_2010-09-30.md: articles/2010/2010-09-30_allegez_votre_librairie_openlayers_avec_openlayerer.md
+    articles/2010/art_2010-10-18.md: articles/2010/2010-10-18_conference_qualite_des_donnees.md
+    articles/2010/art_2010-11-10.md: articles/2010/2010-11-10_sageo_2010_dans_une_semaine.md
+    articles/2010/art_2010-11-18.md: articles/2010/2010-11-18_sageo_2010_resume_jour1.md
+    articles/2010/art_2010-11-19.md: articles/2010/2010-11-19_sageo_2010_resume_jour2.md
+    articles/2010/art_2010-11-20.md: articles/2010/2010-11-20_sageo_2010_resume_jour3.md
+    articles/2010/art_2010-11-24.md: articles/2010/2010-11-24_hillshading_or_not.md
+    articles/2010/art_2010-11-29.md: articles/2010/2010-11-29_these_geomatique_opensource_cartographie_neogeographie.md
+    articles/2010/art_2010-12-13.md: articles/2010/2010-12-13_imagimap_baselayers_v2.md
+    articles/2010/art_2010-12-20.md: articles/2010/2010-12-20_ios42_carte_accelerometre.md
+    articles/2011/art_2011-01-09.md: articles/2011/2011-01-09_liberez_les_donnees.md
+    articles/2011/art_2011-01-18.md: articles/2011/2011-01-18_data_mining_risques_maritimes.md
+    articles/2011/art_2011-01-19.md: articles/2011/2011-01-19_documenter_bases_de_donnees_exemple_openstreetmap.md
+    articles/2011/art_2011-01-24.md: articles/2011/2011-01-24_polymaps_alternative_openlayers.md
+    # articles/2011/art_2011-02-09.md: articles/2011/2011-02-09
+    # articles/2011/art_2011-03-10.md: articles/2011/2011-03-10
+    # articles/2011/art_2011-03-23.md: articles/2011/2011-03-23
+    # articles/2011/art_2011-04-05.md: articles/2011/2011-04-05
+    # articles/2011/art_2011-04-13.md: articles/2011/2011-04-13
+    # articles/2011/art_2011-06-01.md: articles/2011/2011-06-01
+    # articles/2011/art_2011-06-10.md: articles/2011/2011-06-10
+    # articles/2011/art_2011-06-15.md: articles/2011/2011-06-15
+    # articles/2011/art_2011-07-27.md: articles/2011/2011-07-27
+    # articles/2011/art_2011-11-08.md: articles/2011/2011-11-08
+    # articles/2011/art_2011-11-09.md: articles/2011/2011-11-09
+    # articles/2011/art_2011-12-01.md: articles/2011/2011-12-01
+    # articles/2012/art_2012-01-01.md: articles/2012/2012-01-01
+    # articles/2012/art_2012-01-16.md: articles/2012/2012-01-16
+    # articles/2012/art_2012-02-03.md: articles/2012/2012-02-03
+    # articles/2012/art_2012-03-15.md: articles/2012/2012-03-15
+    # articles/2012/art_2012-04-17.md: articles/2012/2012-04-17
+    # articles/2012/art_2012-05-09.md: articles/2012/2012-05-09
+    # articles/2012/art_2012-06-06.md: articles/2012/2012-06-06
+    # articles/2012/art_2012-06-21.md: articles/2012/2012-06-21
+    # articles/2012/art_2012-06-21.md: articles/2012/2012-06-21
+    # articles/2012/art_2012-07-02.md: articles/2012/2012-07-02
+    # articles/2012/art_2012-07-12.md: articles/2012/2012-07-12
+    # articles/2012/art_2012-09-26.md: articles/2012/2012-09-26
+    # articles/2012/art_2012-10-11.md: articles/2012/2012-10-11
+    # articles/2012/art_2012-10-23.md: articles/2012/2012-10-23
+    # articles/2012/art_2012-12-29.md: articles/2012/2012-12-29
+    # articles/2013/art_2013-02-11.md: articles/2013/2013-02-11
+    # articles/2013/art_2013-02-20.md: articles/2013/2013-02-20
+    # articles/2013/art_2013-02-25.md: articles/2013/2013-02-25
+    # articles/2013/art_2013-05-21.md: articles/2013/2013-05-21
+    # articles/2013/art_2013-05-29.md: articles/2013/2013-05-29
+    # articles/2013/art_2013-06-05_mongo_spatial.md: articles/2013/2013-06-05_mongo_spatial
+    # articles/2013/art_2013-06-13_itw_davidjonglez.md: articles/2013/2013-06-13_itw_davidjonglez
+    # articles/2013/art_2013-07-31.md: articles/2013/2013-07-31
+    # articles/2013/art_2013-08-16.md: articles/2013/2013-08-16
+    # articles/2013/art_2013-09-22.md: articles/2013/2013-09-22
+    # articles/2013/art_2013-09-22.md: articles/2013/2013-09-22
+    # articles/2013/art_2013-09-2.md: articles/2013/2013-09-2
+    # articles/2013/art_2013-09-26.md: articles/2013/2013-09-26
+    # articles/2013/art_2013-10-02.md: articles/2013/2013-10-02
+    # articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig.md: articles/2013/2013-10-30_geogame_mots_croises_outils_sig
+    # articles/2013/art_2013-11-19.md: articles/2013/2013-11-19
+    # articles/2013/art_2013-11-20_geogame_mots_croises_webmappin.md: articles/2013/2013-11-20_geogame_mots_croises_webmappin
+    # articles/2013/art_2013-11-20_geogame_mots_croises_webmapping.md: articles/2013/2013-11-20_geogame_mots_croises_webmapping
+    # articles/2013/art_2013-12-01.md: articles/2013/2013-12-01
+    # articles/2013/art_2013-12-04.md: articles/2013/2013-12-04
+    # articles/2014/art_2014-01-01.md: articles/2014/2014-01-01
+    # articles/2014/art_2014-01-06.md: articles/2014/2014-01-06
+    # articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographi.md: articles/2014/2014-01-08_geogame_qcm_histoire_cartographi
+    # articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md: articles/2014/2014-01-08_geogame_qcm_histoire_cartographie
+    # articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md: articles/2014/2014-01-22_geogame_qcm_cassini_bertin
+    # articles/2014/art_2014-01-27.md: articles/2014/2014-01-27
+    # articles/2014/art_2014-03-19_geogame_pendu_geomatique.md: articles/2014/2014-03-19_geogame_pendu_geomatique
+    # articles/2014/art_2014-03-21.md: articles/2014/2014-03-21
+    # articles/2014/art_2014-03-24.md: articles/2014/2014-03-24
+    # articles/2014/art_2014-04-29.md: articles/2014/2014-04-29
+    # articles/2014/art_2014-04-29/?.md: articles/2014/2014-04-29
+    # articles/2014/art_2014-05-05.md: articles/2014/2014-05-05
+    # articles/2014/art_2014-05-25.md: articles/2014/2014-05-25
+    # articles/2014/art_2014-07-14.md: articles/2014/2014-07-14
+    # articles/2014/art_2014-08-05.md: articles/2014/2014-08-05
+    # articles/2014/art_2014-08-29_itw_drones_crisis.md: articles/2014/2014-08-29_itw_drones_crisis
+    # articles/2014/art_2014-09-01.md: articles/2014/2014-09-01
+    # articles/2014/art_2014-09-25_dicogis.md: articles/2014/2014-09-25_dicogis
+    # articles/2014/art_2014-11-13.md: articles/2014/2014-11-13
+    # articles/2015/art_2015-01-11.md: articles/2015/2015-01-11
+    # articles/2015/art_2015-01-18.md: articles/2015/2015-01-18
+    # articles/2015/art_2015-02-03.md: articles/2015/2015-02-03
+    # articles/2015/art_2015-02-09.md: articles/2015/2015-02-09
+    # articles/2015/art_2015-02-16.md: articles/2015/2015-02-16
+    # articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban
