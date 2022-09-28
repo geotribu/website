@@ -13,6 +13,7 @@ redirects:
     node/60.md: articles/2008/2008-11-07_sortie-de-la-version-3-0-0-de-pywps.md
     node/64.md: articles/2008/2008-11-17_workshop-quantum-gis.md
     node/72.md: articles/2008/2008-12-07_les-donnees-sig-devraient-elles-etre-libres.md
+    node/75.md: articles/2008/2008-12-11_geoext-le-mariage-de-l-ihm-et-de-la-cartographie.md
     node/77.md: articles/2008/2008-12-16_appel-a-sponsoring-code-sprint-open-layers.md
     node/79.md: articles/2009/2009-01-13_generer-des-tuiles-avec-php.md
     node/80.md: articles/2009/2009-01-14_android-et-openstreetmap.md
@@ -114,69 +115,69 @@ redirects:
     node/257.md: articles/2010/2010-05-11_rencontres_sig_la_lettre.md
     node/258.md: articles/2010/2010-05-13_geoext_version07.md
     node/260.md: articles/2010/2010-05-28_xapi_osm.md
-    # node/266.md: articles/2010/2010-06-02_initiation_a_cartographie_collaborative_samedi_26_juin_a_maison_de_teledetection.md
-    # node/267.md: articles/2010/2010-06-07_creez_une_carte_papier_avec_des_donnees_openstreetmap.md
-    # node/270.md: articles/2010/2010-06-11_hypermap_future_balise_html.md
-    # node/273.md: articles/2010/2010-06-22_ca_bouge_monde_geobi.md
-    # node/275.md: articles/2010/2010-06-24_offre_de_these_contribution_dun_systeme_geo_decisionnel_a_sauvegarde_maritime.md
-    # node/276.md: articles/2010/2010-07-21_ibiclou_opendata_webmapping_et_velo.md
-    # node/277.md: articles/2010/2010-07-06_osmtracker_android_ou_comment_disposez_d_openstreetmap_sur_android.md
-    # node/282.md: articles/2010/2010-08-18_cartong_organise_en_septembre_son_second_forum_geong.md
-    # node/284.md: articles/2010/2010-09-23_creer_ses_propres_plugin_qgis.md
-    # node/285.md: articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gsconfig.md
-    # node/286.md: articles/2010/2010-09-03_creer_et_diffuser_des_services_wms_avec_qgis.md
-    # node/293.md: articles/2010/2010-09-30_allegez_votre_librairie_openlayers_avec_openlayerer.md
-    # node/301.md: articles/2010/2010-10-18_conference_qualite_des_donnees_geospatiales_et_geodecisionnel.md
-    # node/309.md: articles/2010/2010-11-10_sageo_2010_c_est_une_semaine_a_toulouse.md
-    # node/312.md: articles/2010/2010-11-18_sageo_2010_resume_de_cette_1er_journee_de_colloque.md
-    # node/313.md: articles/2010/2010-11-19_sageo_2010_resume_de_cette_2eme_journee_de_colloque.md
-    # node/314.md: articles/2010/2010-11-20_sageo_2010_resume_de_cette_3eme_journee_de_colloque.md
-    # node/317.md: articles/2010/2010-11-24_hillshading_or_not.md
-    # node/319.md: articles/2010/2010-11-29_geomatique_open_source_de_cartographie_a_neogeographie.md
-    # node/324.md: articles/2011/2011-01-24_polymaps_une_alternative_a_openlayers.md
-    # node/327.md: articles/2010/2010-12-13_imagimap_baselayers_v2.md
-    # node/331.md: articles/2010/2010-12-20_ios_4_2_carte_et_accelerometre.md
-    # node/333.md: articles/2011/2011-01-09_liberez_les_donnees.md
-    # node/338.md: articles/2011/2011-01-19_documenter_vos_bases_de_donnees_exemple_avec_openstreetmap.md
-    # node/340.md: articles/2011/2011-01-18_data_mining_spatial_applique_aux_risques_maritimes.md
-    # node/342.md: articles/2011/2011-02-09_participez_a_openstreetmap_en_offrant_un_peu_de_puissance_machine.md
-    # node/348.md: rdp/2011/rdp_2011-02-25.md
-    # node/353.md: articles/2011/2011-03-10_potentialites_et_limites_d_osm_pour_les_administrations_territoriales.md
-    # node/356.md: articles/2011/2011-03-23_a_decouverte_de_spatialite.md
-    # node/360.md: articles/2011/2011-04-05_a_decouverte_de_webgl_earth.md
-    # node/364.md: articles/2011/2011-04-13_integrer_facilement_et_rapidement_une_carte_a_votre_site.md
-    # node/423.md: articles/2011/2011-06-15_decouverte_leaflet.md
-    # node/428.md: articles/2011/2011-06-01_offre_de_these_contribution_de_geovisualisation_a_surveillance_maritime.md
-    # node/430.md: articles/2011/2011-06-10_revue_de_l_ouvrage_openlayers_2_10_beginner_s_guide.md
-    # node/439.md: articles/2011/2011-07-27_les_nouveautes_apportees_par_version_2_0_de_geokettle.md
-    # node/462.md: articles/2011/2011-11-09_decouverte_gis_cloud.md
-    # node/474.md: articles/2011/2011-11-08_videos_foss4g_par_theme.md
-    # node/477.md: articles/2011/2011-12-01_cartographier_monde_avec_des_outils_libres.md
-    # node/485.md: articles/2012/2012-01-01_openstreetmap_une_annee_d_edition.md
-    # node/486.md: articles/2012/2012-05-09_a_decouverte_de_cartodb.md
-    # node/488.md: rdp/2012/rdp_2012-01-13.md
-    # node/489.md: articles/2012/2012-01-16_presentation_d_openstreetmap_au_senat.md
-    # node/491.md: articles/2012/2012-01-19_google_evil_or_not.md
-    # node/494.md: articles/2012/2012-02-03_serie_noire_pour_google.md
-    # node/500.md: articles/2012/2012-03-15_openstreetmap_reunion_tout_en_couleur_avec_corine_land_cover.md
+    node/266.md: articles/2010/2010-06-02_initiation_cartographie_collaborative.md
+    node/267.md: articles/2010/2010-06-07_carte_papier_avec_des_donnees_openstreetmap.md
+    node/270.md: articles/2010/2010-06-11_hypermap_future_balise_html.md
+    node/273.md: articles/2010/2010-06-22_ca_bouge_dans_le_monde_du_geobi.md
+    node/275.md: articles/2010/2010-06-24_these_construction_systeme_geodecisionnel.md
+    node/276.md: articles/2010/2010-07-21_ibiclou_opendata_webmapping_velo.md
+    node/277.md: articles/2010/2010-07-06_osmtracker_android_openstreetmap.md
+    node/282.md: articles/2010/2010-08-18_cartong_forum_geong.md
+    node/284.md: articles/2010/2010-09-23_creer_ses_propres_plugin_qgis.md
+    node/285.md: articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gsconfig.md
+    node/286.md: articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md
+    node/293.md: articles/2010/2010-09-30_allegez_votre_librairie_openlayers_avec_openlayerer.md
+    node/301.md: articles/2010/2010-10-18_conference_qualite_des_donnees.md
+    node/309.md: articles/2010/2010-11-10_sageo_2010_dans_une_semaine.md
+    node/312.md: articles/2010/2010-11-18_sageo_2010_resume_jour1.md
+    node/313.md: articles/2010/2010-11-19_sageo_2010_resume_jour2.md
+    node/314.md: articles/2010/2010-11-20_sageo_2010_resume_jour3.md
+    node/317.md: articles/2010/2010-11-24_hillshading_or_not.md
+    node/319.md: articles/2010/2010-11-29_these_geomatique_opensource_cartographie_neogeographie.md
+    node/324.md: articles/2011/2011-01-24_polymaps_alternative_openlayers.md
+    node/327.md: articles/2010/2010-12-13_imagimap_baselayers_v2.md
+    node/331.md: articles/2010/2010-12-20_ios42_carte_accelerometre.md
+    node/333.md: articles/2011/2011-01-09_liberez_les_donnees.md
+    node/338.md: articles/2011/2011-01-19_documenter_bases_de_donnees_exemple_openstreetmap.md
+    node/340.md: articles/2011/2011-01-18_data_mining_risques_maritimes.md
+    node/342.md: articles/2011/2011-02-09_participez_a_openstreetmap_en_puissance_machine.md
+    node/348.md: rdp/2011/rdp_2011-02-25.md
+    node/353.md: articles/2011/2011-03-10_potentialites_limites_openstreetmap_administrations_territoriales.md
+    node/356.md: articles/2011/2011-03-23_decouverte_spatialite.md
+    node/360.md: articles/2011/2011-04-05_decouverte_webgl_earth.md
+    node/364.md: articles/2011/2011-04-13_integrer_carte_site.md
+    node/423.md: articles/2011/2011-06-15_decouverte_leaflet.md
+    node/428.md: articles/2011/2011-06-01_these_geovisualisation_surveillance_maritime.md
+    node/430.md: articles/2011/2011-06-10_openlayers210_beginner_s_guide.md
+    node/439.md: articles/2011/2011-07-27_nouveautes_geokettle.md
+    node/462.md: articles/2011/2011-11-09_decouverte_gis_cloud.md
+    node/474.md: articles/2011/2011-11-08_videos_foss4g.md
+    node/477.md: articles/2011/2011-12-01_cartographier_monde_outils_libres.md
+    node/485.md: articles/2012/2012-01-01_openstreetmap_une_annee_edition.md
+    node/486.md: articles/2012/2012-05-09_decouverte_cartodb.md
+    node/488.md: rdp/2012/rdp_2012-01-13.md
+    node/489.md: articles/2012/2012-01-16_presentation_openstreetmap_senat.md
+    node/491.md: articles/2012/2012-01-19_google_evil_or_not.md
+    node/494.md: articles/2012/2012-02-03_serie_noire_pour_google.md
+    node/500.md: articles/2012/2012-03-15_openstreetmap_reunion_corine_land_cover.md
     # node/504.md: articles/2012/2012-04-17_calcul_de_buffer_sous_mysql_1ere_partie_theorie.md
-    # node/505.md: articles/2012/2012-04-17_calcul_de_buffer_sous_mysql_2eme_partie_pratique.md
-    # node/515.md: articles/2012/2012-07-02_cataloguer_vos_donnees_geographiques_en_net.md
-    # node/520.md: articles/2012/2012-06-21_moteur_itineraires_osrm.md
-    # node/522.md: articles/2012/2012-06-06_des_vacances_tous_frais_payes_offertes_par_tomtom.md
-    # node/530.md: articles/2012/2012-07-05_open_data_des_paroles_aux_actes.md
-    # node/532.md: articles/2012/2012-07-12_nouvelle_version_geoportail.md
-    # node/534.md: articles/2012/2012-07-19_premiere_rencontre_des_sciences_geomatiques_au_maroc.md
-    # node/545.md: articles/2012/2012-09-26_openlayers_cookbook.md
-    # node/548.md: articles/2012/2012-10-11_conference_professeur_yvan_bedard_de_luniversite_laval_a_quebec.md
-    # node/551.md: articles/2012/2012-10-23_soutenance_de_these_modelisation_ontologique_des_connaissances_expertes_pour_l_analyse_de_comportements_a_risque.md
-    # node/563.md: articles/2012/2012-12-29_l_equipe_de_geotribu.md
-    # node/567.md: rdp/2013/rdp_2013-01-11.md
-    # node/572.md: articles/2013/2013-02-11_appel_a_contribution_pour_francophone_open_source_geomatique_frog_2013.md
-    # node/574.md: articles/2013/2013-02-20_contribuer_a_openstreetmap_les_deux_applications_coup_de_coeur_sur_android.md
-    # node/575.md: articles/2013/2013-12-01_developpement_dune_solution_geodecisionnelle_pour_suivi_des_projets_humanitaires_dune_organisation_non_gouvernementale.md
-    # node/576.md: articles/2013/2013-02-25_web_des_socquettes_et_de_carto.md
-    # node/579.md: articles/2013/2013-03-07_7emes_rencontres_des_dynamiques_regionales_en_information_geographique.md
+    node/505.md: articles/2012/2012-04-17_calcul_buffer_mysql_pratique.md
+    node/515.md: articles/2012/2012-07-02_cataloguer_donnees_geographiques.md
+    node/520.md: articles/2012/2012-06-21_moteur_itineraires_osrm.md
+    node/522.md: articles/2012/2012-06-06_vacances_offertes_par_tomtom.md
+    node/530.md: articles/2012/2012-07-05_open_data_paroles_actes.md
+    node/532.md: articles/2012/2012-07-12_nouvelle_version_geoportail.md
+    node/534.md: articles/2012/2012-07-19_premieres_rencontres_sciences_geomatiques_maroc.md
+    node/545.md: articles/2012/2012-09-26_openlayers_cookbook.md
+    node/548.md: articles/2012/2012-10-11_conference_yvan_bedard_universite_laval.md
+    node/551.md: articles/2012/2012-10-23_soutenance_these_modelisation_ontologique_comportements_risque.md
+    node/563.md: articles/2012/2012-12-29_equipe_geotribu.md
+    node/567.md: rdp/2013/rdp_2013-01-11.md
+    node/572.md: articles/2013/2013-02-11_appel_contribution_frog2013.md
+    node/574.md: articles/2013/2013-02-20_contribuer_a_openstreetmap_deux_applications.md
+    node/575.md: articles/2013/2013-12-01_stage_geodecisionnelle_suivi_humanitaire_ong.md
+    node/576.md: articles/2013/2013-02-25_websocket.md
+    node/579.md: articles/2013/2013-03-07_rencontres_dynamiques_regionales_en_information_geographique.md
     node/585.md: rdp/2013/rdp_2013-04-05.md
     node/586.md: rdp/2013/rdp_2013-04-12.md
     node/589.md: rdp/2013/rdp_2013-05-03.md
@@ -199,10 +200,10 @@ redirects:
     node/608.md: rdp/2013/rdp_2013-05-10.md
     node/613.md: rdp/2013/rdp_2013-05-17.md
     node/614.md: rdp/2013/rdp_2013-05-24.md
-    # node/615.md: articles/2013/2013-05-21_compiler_openlayers_3.md
+    node/615.md: articles/2013/2013-05-21_compiler_openlayers3.md
     # node/619.md: articles/2013/2013-05-29_generer_automatiquement_vos_modeles_django_a_partir_d_une_base_de_donnees_existante.md
     node/620.md: rdp/2013/rdp_2013-05-31.md
-    # node/621.md: articles/2013/2013-05-29_les_interviews_de_geotribu.md
+    node/621.md: articles/2013/2013-05-29_interviews_geotribu.md
     node/622.md: rdp/2013/rdp_2013-06-07.md
     node/624.md: rdp/2013/rdp_2013-06-14.md
     node/626.md: rdp/2013/rdp_2013-06-21.md
@@ -210,72 +211,72 @@ redirects:
     node/631.md: rdp/2013/rdp_2013-07-05.md
     node/632.md: rdp/2013/rdp_2013-07-12.md
     node/635.md: rdp/2013/rdp_2013-07-19.md
-    # node/636.md: articles/2013/2013-09-26_installer_python_gdal_sous_windows.md
+    node/636.md: articles/2013/2013-09-26_installer_python_gdal_sous_windows.md
     node/637.md: rdp/2013/rdp_2013-07-26.md
-    # node/638.md: articles/2013/2013-07-31_modele_generique_avec_django.md
+    node/638.md: articles/2013/2013-07-31_modele_generique_django.md
     node/639.md: rdp/2013/rdp_2013-08-02.md
     node/640.md: rdp/2013/rdp_2013-08-09.md
     node/641.md: rdp/2013/rdp_2013-08-23.md
-    # node/642.md: articles/2013/2013-08-16_pont_15_aout_2013.md
+    node/642.md: articles/2013/2013-08-16_pont_15_aout.md
     node/643.md: rdp/2013/rdp_2013-08-30.md
     node/645.md: rdp/2013/rdp_2013-09-06.md
     node/646.md: rdp/2013/rdp_2013-09-13.md
     node/647.md: rdp/2013/rdp_2013-09-20.md
     node/650.md: rdp/2013/rdp_2013-09-27.md
-    # node/651.md: articles/2013/2013-09-22_un_nouveau_membre_tribu.md
+    node/651.md: articles/2013/2013-09-22_nouveau_membre_dans_la_tribu.md
     node/653.md: rdp/2013/rdp_2013-10-04.md
-    # node/654.md: articles/2013/2013-10-02_mobilisons_nous_pour_une_mention_geomatique_en_master_et_licence.md
+    node/654.md: articles/2013/2013-10-02_mention_geomatique_en_master_licence.md
     node/655.md: rdp/2013/rdp_2013-10-11.md
     node/657.md: rdp/2013/rdp_2013-10-18.md
     node/664.md: rdp/2013/rdp_2013-10-25.md
-    # node/668.md: articles/2013/2013-10-30_geogame_mots_croises_outils_sig.md
-    # node/669.md: articles/2013/2013-11-19_un_peu_de_websocket_avec_django.md
+    node/668.md: articles/2013/2013-10-30_geogame_mots_croises_outils_sig.md
+    node/669.md: articles/2013/2013-11-19_websocket_avec_django.md
     node/670.md: rdp/2013/rdp_2013-11-01.md
-    # node/671.md: https://geotribu.github.io/geogames/
+    node/671.md: https://geotribu.github.io/geogames/
     node/672.md: rdp/2013/rdp_2013-11-08.md
-    # node/675.md: articles/2013/2013-11-20_geogame_mots_croises_webmapping.md
+    node/675.md: articles/2013/2013-11-20_geogame_mots_croises_webmapping.md
     node/676.md: rdp/2013/rdp_2013-11-15.md
     node/677.md: rdp/2013/rdp_2013-11-22.md
-    # node/679.md: articles/2014/2014-01-08_geogame_qcm_histoire_cartographie.md
-    # node/680.md: articles/2014/2014-03-19_geogame_pendu_geomatique.md
+    node/679.md: articles/2014/2014-01-08_geogame_qcm_histoire_cartographie.md
+    node/680.md: articles/2014/2014-03-19_geogame_pendu_geomatique.md
     node/681.md: rdp/2013/rdp_2013-11-29.md
-    # node/684.md: articles/2013/2013-12-04_temps_de_reponses_compares_osrm_vs_graphhopper.md
+    node/684.md: articles/2013/2013-12-04_temps_reponses_compares_osrm_graphhopper.md
     node/685.md: rdp/2013/rdp_2013-12-06.md
     node/686.md: rdp/2013/rdp_2013-12-13.md
     node/688.md: rdp/2013/rdp_2013-12-20.md
-    # node/689.md: articles/2014/2014-01-22_geogame_qcm_cassini_bertin.md
-    # node/690.md: articles/2014/2014-01-01_2013_georetro_2014_en_ligne_de_mire.md
+    node/689.md: articles/2014/2014-01-22_geogame_qcm_cassini_bertin.md
+    node/690.md: articles/2014/2014-01-01_2013_dans_le_georetro_2014_en_ligne_de_mire.md
     node/691.md: rdp/2014/rdp_2014-01-17.md
-    # node/692.md: articles/2014/2014-01-13_2014_nos_prospectives_geomatiques.md
-    # node/693.md: articles/2014/2014-01-02_une_tonne_d_ebooks_pour_5.md
+    node/692.md: articles/2014/2014-01-13_2014_nos_perspectives_geomatiques.md
+    node/693.md: articles/2014/2014-01-02_une_tonne_d_ebooks.md
     node/694.md: rdp/2014/rdp_2014-01-10.md
-    # node/695.md: articles/2014/2014-01-06_plein_flux_sur_geomatique.md
-    # node/697.md: articles/2014/2014-03-24_non_mapserver_geoserver_tilecache_co_ne_sont_pas_toujours_necessaires.md
+    node/695.md: articles/2014/2014-01-06_plein_flux_sur_la_geomatique.md
+    node/697.md: articles/2014/2014-03-24_non_mapserver_geoserver_tilecache_ne_sont_pas_toujours_necessaires.md
     node/698.md: rdp/2014/rdp_2014-01-24.md
     node/699.md: rdp/2014/rdp_2014-01-31.md
-    # node/700.md: articles/2014/2014-01-27_geoseminaire_2014.md
+    node/700.md: articles/2014/2014-01-27_geoseminaire_2014.md
     node/701.md: rdp/2014/rdp_2014-02-07.md
     node/702.md: rdp/2014/rdp_2014-02-14.md
-    # node/703.md: articles/2014/2014-03-07_comment_ca_se_passe_geo_tipi.md
+    node/703.md: articles/2014/2014-03-07_dans_le_geotipi.md
     node/704.md: rdp/2014/rdp_2014-02-21.md
     node/707.md: rdp/2014/rdp_2014-02-28.md
     node/709.md: rdp/2014/rdp_2014-03-07.md
     node/710.md: rdp/2014/rdp_2014-03-14.md
     node/713.md: rdp/2014/rdp_2014-03-21.md
     node/714.md: rdp/2014/rdp_2014-04-01.md
-    # node/715.md: articles/2014/2014-03-21_un_bon_deal_chez_packt_publishing.md
-    # node/716.md: articles/2014/2014-04-29_de_l_acquisition_a_visualisation_d_images_prises_a_partir_d_un_drone.md
+    node/715.md: articles/2014/2014-03-21_un_bon_deal_chez_packt_publishing.md
+    node/716.md: articles/2014/2014-04-29_de_l_acquisition_a_la_visualisation_d_images_de_drone.md
     node/717.md: rdp/2014/rdp_2014-04-11.md
     node/718.md: rdp/2014/rdp_2014-04-18.md
     node/720.md: rdp/2014/rdp_2014-04-25.md
     node/721.md: rdp/2014/rdp_2014-05-02.md
     node/722.md: rdp/2014/rdp_2014-05-09.md
-    # node/724.md: articles/2014/2014-05-05_plein_d_ebooks_pour_10_avec_packt_publishing.md
+    node/724.md: articles/2014/2014-05-05_le_plein_d_ebooks_chez_packt_publishing.md
     node/725.md: rdp/2014/rdp_2014-05-16.md
     node/726.md: rdp/2014/rdp_2014-05-30.md
     # node/727.md: articles/2014/2014-05-25_these_analyse_et_detection_de_comportements_de_navires_a_risques_induits_par_les_falsifications_de_messages_ais.md
-    # node/728.md: articles/2014/2014-05-25_these_formalisation_d_un_environnement_d_aide_a_lanalyse_geocollaborative_pour_letude_des_comportements_a_risque_application_a_securite_et_surete_de_maritimisation_de_lenergie.md
-    # node/73.md: articles/2008/2008-12-06_comparatif_des_differentes_solutions_cartographiques_open_source.md
+    node/728.md: articles/2014/2014-05-25_these_analyse_geocollaborative.md
+    node/73.md: articles/2008/2008-12-06_comparatif-des-differentes-solutions-cartographiques-open-source.md
     node/730.md: rdp/2014/rdp_2014-06-06.md
     node/732.md: rdp/2014/rdp_2014-06-13.md
     node/734.md: rdp/2014/rdp_2014-06-20.md
@@ -283,19 +284,18 @@ redirects:
     node/736.md: rdp/2014/rdp_2014-07-04.md
     node/737.md: rdp/2014/rdp_2014-07-11.md
     node/738.md: rdp/2014/rdp_2014-07-18.md
-    # node/739.md: articles/2014/2014-07-14_rencontrons_nous_geoapero_sur_paris_ce_15_juillet.md
+    node/739.md: articles/2014/2014-07-14_geoapero_paris_15_juillet.md
     node/742.md: rdp/2014/rdp_2014-07-18.md
     node/743.md: rdp/2014/rdp_2014-07-25.md
     node/744.md: rdp/2014/rdp_2014-08-08.md
-    # node/745.md: articles/2014/2014-08-05_generalisation_de_niveaux_intermediaires_une_pyramide_dechelles.md
+    node/745.md: articles/2014/2014-08-05_these_generalisation_pyramide_d_echelles.md
     node/746.md: rdp/2014/rdp_2014-08-14.md
     node/747.md: rdp/2014/rdp_2014-08-22.md
     node/749.md: rdp/2014/rdp_2014-08-29.md
-    # node/75.md: articles/2008/2008-12-11_geoext_mariage_de_l_ihm_et_de_cartographie.md
     node/750.md: rdp/2014/rdp_2014-09-05.md
-    # node/751.md: articles/2014/2014-09-01_stage_retour_d_experience_et_geomatique_decisionnelle_chez_grdf.md
+    node/751.md: articles/2014/2014-09-01_stage_retour_experience_geomatique_decisionnelle_chez_grdf.md
     node/752.md: rdp/2014/rdp_2014-09-12.md
-    # node/753.md: articles/2014/2014-09-25_dicogis_dictionnaire_de_donnees_sig.md
+    node/753.md: articles/2014/2014-09-25_dicogis.md
     node/754.md: rdp/2014/rdp_2014-09-19.md
     node/755.md: rdp/2014/rdp_2014-09-26.md
     node/756.md: rdp/2014/rdp_2014-10-03.md
@@ -304,12 +304,12 @@ redirects:
     node/760.md: rdp/2014/rdp_2014-10-24.md
     node/761.md: rdp/2014/rdp_2014-10-31.md
     node/762.md: rdp/2014/rdp_2014-11-07.md
-    # node/763.md: articles/2014/2014-11-13_corriger_automatiquement_des_geometries_topologiquement_invalides_avec_qgis.md
+    node/763.md: articles/2014/2014-11-13_corriger_automatiquement_geometries_invalides_qgis.md
     node/765.md: rdp/2014/rdp_2014-11-14.md
     node/766.md: rdp/2014/rdp_2014-11-21.md
     node/767.md: rdp/2014/rdp_2014-11-28.md
     node/768.md: rdp/2014/rdp_2014-12-05.md
-    # node/769.md: articles/2015/2015-01-11_openstreetmap_ce_n_est_pas_qu_une_carte.md
+    node/769.md: articles/2015/2015-01-11_openstreetmap_pas_qu_une_carte.md
     node/770.md: rdp/2014/rdp_2014-12-12.md
     node/772.md: rdp/2014/rdp_2014-12-24.md
     node/775.md: rdp/2015/rdp_2015-01-02.md
