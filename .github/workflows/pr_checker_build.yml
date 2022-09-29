@@ -78,6 +78,9 @@ jobs:
           sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" ${{steps.dependencies.outputs.config_path}}
           sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" ${{steps.dependencies.outputs.config_path}}
 
+          # merge different configs
+          python scripts/mkdocs_config_merger.py -c ${{steps.dependencies.outputs.config_path}}
+
           # build
           mkdocs build --config-file ${{steps.dependencies.outputs.config_path}} --verbose --strict
 
