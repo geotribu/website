@@ -59,6 +59,7 @@ Mon avis : le mieux reste de tester pour visualiser et enfin comprendre le compo
 J'utilise ici la [BD Topo® de l'IGN](https://geoservices.ign.fr/bdtopo) mais tu peux travailler avec d'autres sources, pourquoi pas te tourner vers [OSMData](https://demo.openstreetmap.fr/map) et chopper 2 - 3 données sympas.
 
 Pour ma part, ce sera un plan basé sur les classes :
+
 * _batiment_
 * _voie_nommee_
 * _zone_de_vegetation_
