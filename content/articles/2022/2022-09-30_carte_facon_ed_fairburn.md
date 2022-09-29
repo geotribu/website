@@ -48,6 +48,7 @@ Classiquement, le mode de fusion est `Normal` de sorte que l'objet au-dessus mas
 En jouant sur les transparences, il est possible de ne pas totalement masquer les autres éléments mais les modes de fusion permettent d'aller plus loin.
 
 La description du comportement de chacun des modes est bien évidemment [disponible dans le documention](https://docs.qgis.org/3.22/fr/docs/user_manual/introduction/general_tools.html#blend-modes). Difficile en quelques lignes de décrire de façon intelligible ces options même si certains s'y sont essayés comme par exemple [dans cet article](https://pasq.fr/united-colors-of-qgis) ou encore [dans celui-ci](http://cours-fad-public.ensg.eu/pluginfile.php/1296/mod_imscp/content/1/co/10_N1_presentation_mode_fusion_1.html).
+
 Mon avis : le mieux reste de tester pour visualiser et enfin comprendre le comportement des différents modes.
 
 ----
@@ -67,8 +68,11 @@ Pour ma part, ce sera un plan basé sur les classes :
 * _surface_hydrographique_
 
 La classe `batiment` est l'élément principal. Je colore cette couche en noir, c'est important pour la suite, et j'ajoute une bordure blanche pour distinguer les constructions les unes des autres.
+
 Les `voie_nommee` sont quant à elles colorées en gris et étiquetées.
+
 Les `zone_de_vegetation` et `surface_hydrographique` sont respectivement vertes et bleues (si si ! c'est vrai !).
+
 La classe `troncon_hydrographique` est simplement utilisée pour l'étiquetage des surfaces hydrographiques.
 
 [![Aperçu du projet QGis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/projet_qgis.png "Aperçu du projet QGis"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/projet_qgis.png){: data-mediabox="gallery-lightbox" data-title="Aperçu du projet QGis" }
