@@ -87,7 +87,7 @@ flowchart TD
 
 ![logo pre-commit](https://cdn.geotribu.fr/img/logos-icones/programmation/precommit.png "logo pre-commit"){: .img-rdp-news-thumb }
 
-Pour faciliter la maintenance, nous utilisons l'outil [pre-commit]((https://pre-commit.com/)) qui est une sorte de gestionnaire de _git hooks_. Il est développé en Python mais peut exécuter des _hooks_ dans de nombreux autres langages (NodeJS, shell, etc.).
+Pour faciliter la maintenance, nous utilisons l'outil [pre-commit](https://pre-commit.com/) qui est une sorte de gestionnaire de _git hooks_. Il est développé en Python mais peut exécuter des _hooks_ dans de nombreux autres langages (NodeJS, shell, etc.).
 
 ### Crochets Git configurés sur Geotribu
 
