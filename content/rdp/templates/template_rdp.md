@@ -37,14 +37,6 @@ tags:
 
 ----
 
-## Client
-
-----
-
-## Serveur
-
-----
-
 ## Logiciel
 
 ----

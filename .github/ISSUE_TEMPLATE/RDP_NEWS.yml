@@ -21,7 +21,7 @@ body:
         # Vous
 
   - type: checkboxes
-    id: cb-author-content-relationship
+    id: cb_author_content_relationship
     attributes:
       label: "Avez-vous un lien avec le contenu proposé ?"
       description: Mise en avant du travail d'un tiers ? Auto-promo ? Publicité ?
@@ -32,7 +32,7 @@ body:
       required: true
 
   - type: input
-    id: in-author-name
+    id: in_author_name
     attributes:
       label: Votre nom
       description: Merci de nous indiquer le Prénom NOM (pseudonyme accepté) sous lequel vous attribuer la contribution (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
@@ -41,7 +41,7 @@ body:
       required: true
 
   - type: input
-    id: in-author-mail
+    id: in_author_mail
     attributes:
       label: Votre adresse email
       description: Merci de nous indiquer votre adresse email afin de pouvoir vous attribuer la contribution (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
@@ -50,7 +50,7 @@ body:
       required: true
 
   - type: checkboxes
-    id: in-author-license
+    id: in_author_license
     attributes:
       label: Licence
       description: Vous acceptez que votre contribution soit publiée sous la licence [CC BY-NC-SA 4.0](https://static.geotribu.fr/contribuer/guides/licensing/#licence-par-defaut).
@@ -65,7 +65,7 @@ body:
         # La news
 
   - type: dropdown
-    id: dr-news-category
+    id: dr_news_category
     attributes:
       label: Section / catégorie
       description: "A quelle [section ou catégorie](https://static.geotribu.fr/contribuer/rdp/add_news/#sections-categories) rattacher la news ?"
@@ -83,7 +83,7 @@ body:
       required: true
 
   - type: input
-    id: in-news-tags
+    id: in_news_tags
     attributes:
       label: Mots-clés
       description: |
@@ -93,7 +93,7 @@ body:
       required: true
 
   - type: input
-    id: in-news-title
+    id: in_news_title
     attributes:
       label: Titre de la news
       description: "Le titre accrocheur de la news. Longeur maximale indicative : 100/120 caractères"
@@ -101,7 +101,7 @@ body:
       required: true
 
   - type: input
-    id: in-news-icon
+    id: in_news_icon
     attributes:
       label: Icône de la news
       description: |
@@ -114,7 +114,7 @@ body:
       required: true
 
   - type: textarea
-    id: tx-news-content
+    id: tx_news_content
     attributes:
       label: Contenu de la news
       description: La syntaxe Markdown est acceptée, mais le rendu final diffèrera de celui de GitHub.
@@ -127,7 +127,7 @@ body:
         ----
 
   - type: textarea
-    id: tx-misc-comment
+    id: tx_misc_comment
     attributes:
       label: Message libre
       description: "Un commentaire ? Une précision à apporter ? Un message pour l'équipe ?"
