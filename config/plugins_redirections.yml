@@ -449,75 +449,69 @@ redirects:
     articles/2011/art_2011-01-18.md: articles/2011/2011-01-18_data_mining_risques_maritimes.md
     articles/2011/art_2011-01-19.md: articles/2011/2011-01-19_documenter_bases_de_donnees_exemple_openstreetmap.md
     articles/2011/art_2011-01-24.md: articles/2011/2011-01-24_polymaps_alternative_openlayers.md
-    # articles/2011/art_2011-02-09.md: articles/2011/2011-02-09
-    # articles/2011/art_2011-03-10.md: articles/2011/2011-03-10
-    # articles/2011/art_2011-03-23.md: articles/2011/2011-03-23
-    # articles/2011/art_2011-04-05.md: articles/2011/2011-04-05
-    # articles/2011/art_2011-04-13.md: articles/2011/2011-04-13
-    # articles/2011/art_2011-06-01.md: articles/2011/2011-06-01
-    # articles/2011/art_2011-06-10.md: articles/2011/2011-06-10
-    # articles/2011/art_2011-06-15.md: articles/2011/2011-06-15
-    # articles/2011/art_2011-07-27.md: articles/2011/2011-07-27
-    # articles/2011/art_2011-11-08.md: articles/2011/2011-11-08
-    # articles/2011/art_2011-11-09.md: articles/2011/2011-11-09
-    # articles/2011/art_2011-12-01.md: articles/2011/2011-12-01
-    # articles/2012/art_2012-01-01.md: articles/2012/2012-01-01
-    # articles/2012/art_2012-01-16.md: articles/2012/2012-01-16
-    # articles/2012/art_2012-02-03.md: articles/2012/2012-02-03
-    # articles/2012/art_2012-03-15.md: articles/2012/2012-03-15
-    # articles/2012/art_2012-04-17.md: articles/2012/2012-04-17
-    # articles/2012/art_2012-05-09.md: articles/2012/2012-05-09
-    # articles/2012/art_2012-06-06.md: articles/2012/2012-06-06
-    # articles/2012/art_2012-06-21.md: articles/2012/2012-06-21
-    # articles/2012/art_2012-06-21.md: articles/2012/2012-06-21
-    # articles/2012/art_2012-07-02.md: articles/2012/2012-07-02
-    # articles/2012/art_2012-07-12.md: articles/2012/2012-07-12
-    # articles/2012/art_2012-09-26.md: articles/2012/2012-09-26
-    # articles/2012/art_2012-10-11.md: articles/2012/2012-10-11
-    # articles/2012/art_2012-10-23.md: articles/2012/2012-10-23
-    # articles/2012/art_2012-12-29.md: articles/2012/2012-12-29
-    # articles/2013/art_2013-02-11.md: articles/2013/2013-02-11
-    # articles/2013/art_2013-02-20.md: articles/2013/2013-02-20
-    # articles/2013/art_2013-02-25.md: articles/2013/2013-02-25
-    # articles/2013/art_2013-05-21.md: articles/2013/2013-05-21
-    # articles/2013/art_2013-05-29.md: articles/2013/2013-05-29
-    # articles/2013/art_2013-06-05_mongo_spatial.md: articles/2013/2013-06-05_mongo_spatial
-    # articles/2013/art_2013-06-13_itw_davidjonglez.md: articles/2013/2013-06-13_itw_davidjonglez
-    # articles/2013/art_2013-07-31.md: articles/2013/2013-07-31
-    # articles/2013/art_2013-08-16.md: articles/2013/2013-08-16
-    # articles/2013/art_2013-09-22.md: articles/2013/2013-09-22
-    # articles/2013/art_2013-09-22.md: articles/2013/2013-09-22
-    # articles/2013/art_2013-09-2.md: articles/2013/2013-09-2
-    # articles/2013/art_2013-09-26.md: articles/2013/2013-09-26
-    # articles/2013/art_2013-10-02.md: articles/2013/2013-10-02
-    # articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig.md: articles/2013/2013-10-30_geogame_mots_croises_outils_sig
-    # articles/2013/art_2013-11-19.md: articles/2013/2013-11-19
-    # articles/2013/art_2013-11-20_geogame_mots_croises_webmappin.md: articles/2013/2013-11-20_geogame_mots_croises_webmappin
-    # articles/2013/art_2013-11-20_geogame_mots_croises_webmapping.md: articles/2013/2013-11-20_geogame_mots_croises_webmapping
-    # articles/2013/art_2013-12-01.md: articles/2013/2013-12-01
-    # articles/2013/art_2013-12-04.md: articles/2013/2013-12-04
-    # articles/2014/art_2014-01-01.md: articles/2014/2014-01-01
-    # articles/2014/art_2014-01-06.md: articles/2014/2014-01-06
-    # articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographi.md: articles/2014/2014-01-08_geogame_qcm_histoire_cartographi
-    # articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md: articles/2014/2014-01-08_geogame_qcm_histoire_cartographie
-    # articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md: articles/2014/2014-01-22_geogame_qcm_cassini_bertin
-    # articles/2014/art_2014-01-27.md: articles/2014/2014-01-27
-    # articles/2014/art_2014-03-19_geogame_pendu_geomatique.md: articles/2014/2014-03-19_geogame_pendu_geomatique
-    # articles/2014/art_2014-03-21.md: articles/2014/2014-03-21
-    # articles/2014/art_2014-03-24.md: articles/2014/2014-03-24
-    # articles/2014/art_2014-04-29.md: articles/2014/2014-04-29
-    # articles/2014/art_2014-04-29/?.md: articles/2014/2014-04-29
-    # articles/2014/art_2014-05-05.md: articles/2014/2014-05-05
-    # articles/2014/art_2014-05-25.md: articles/2014/2014-05-25
-    # articles/2014/art_2014-07-14.md: articles/2014/2014-07-14
-    # articles/2014/art_2014-08-05.md: articles/2014/2014-08-05
-    # articles/2014/art_2014-08-29_itw_drones_crisis.md: articles/2014/2014-08-29_itw_drones_crisis
-    # articles/2014/art_2014-09-01.md: articles/2014/2014-09-01
-    # articles/2014/art_2014-09-25_dicogis.md: articles/2014/2014-09-25_dicogis
-    # articles/2014/art_2014-11-13.md: articles/2014/2014-11-13
-    # articles/2015/art_2015-01-11.md: articles/2015/2015-01-11
-    # articles/2015/art_2015-01-18.md: articles/2015/2015-01-18
-    # articles/2015/art_2015-02-03.md: articles/2015/2015-02-03
-    # articles/2015/art_2015-02-09.md: articles/2015/2015-02-09
-    # articles/2015/art_2015-02-16.md: articles/2015/2015-02-16
-    # articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban
+    articles/2011/art_2011-02-09.md: articles/2011/2011-02-09_participez_a_openstreetmap_en_puissance_machine.md
+    articles/2011/art_2011-03-10.md: articles/2011/2011-03-10_potentialites_limites_openstreetmap_administrations_territoriales.md
+    articles/2011/art_2011-03-23.md: articles/2011/2011-03-23_decouverte_spatialite.md
+    articles/2011/art_2011-04-05.md: articles/2011/2011-04-05_decouverte_webgl_earth.md
+    articles/2011/art_2011-04-13.md: articles/2011/2011-04-13_integrer_carte_site.md
+    articles/2011/art_2011-06-01.md: articles/2011/2011-06-01_these_geovisualisation_surveillance_maritime.md
+    articles/2011/art_2011-06-10.md: articles/2011/2011-06-10_openlayers210_beginner_s_guide.md
+    articles/2011/art_2011-06-15.md: articles/2011/2011-06-15_decouverte_leaflet.md
+    articles/2011/art_2011-07-27.md: articles/2011/2011-07-27_nouveautes_geokettle.md
+    articles/2011/art_2011-11-08.md: articles/2011/2011-11-08_videos_foss4g.md
+    articles/2011/art_2011-11-09.md: articles/2011/2011-11-09_decouverte_gis_cloud.md
+    articles/2011/art_2011-12-01.md: articles/2011/2011-12-01_cartographier_monde_outils_libres.md
+    articles/2012/art_2012-01-01.md: articles/2012/2012-01-01_openstreetmap_une_annee_edition.md
+    articles/2012/art_2012-01-16.md: articles/2012/2012-01-16_presentation_openstreetmap_senat.md
+    articles/2012/art_2012-02-03.md: articles/2012/2012-02-03_serie_noire_pour_google.md
+    articles/2012/art_2012-03-15.md: articles/2012/2012-03-15_openstreetmap_reunion_corine_land_cover.md
+    articles/2012/art_2012-04-17.md: articles/2012/2012-04-17_calcul_buffer_mysql_pratique.md
+    articles/2012/art_2012-05-09.md: articles/2012/2012-05-09_decouverte_cartodb.md
+    articles/2012/art_2012-06-06.md: articles/2012/2012-06-06_vacances_offertes_par_tomtom.md
+    articles/2012/art_2012-06-21.md: articles/2012/2012-06-21_moteur_itineraires_osrm.md
+    articles/2012/art_2012-07-02.md: articles/2012/2012-07-02_cataloguer_donnees_geographiques.md
+    articles/2012/art_2012-07-12.md: articles/2012/2012-07-12_nouvelle_version_geoportail.md
+    articles/2012/art_2012-09-26.md: articles/2012/2012-09-26_openlayers_cookbook.md
+    articles/2012/art_2012-10-11.md: articles/2012/2012-10-11_conference_yvan_bedard_universite_laval.md
+    articles/2012/art_2012-10-23.md: articles/2012/2012-10-23_soutenance_these_modelisation_ontologique_comportements_risque.md
+    articles/2012/art_2012-12-29.md: articles/2012/2012-12-29_equipe_geotribu.md
+    articles/2013/art_2013-02-11.md: articles/2013/2013-02-11_appel_contribution_frog2013.md
+    articles/2013/art_2013-02-20.md: articles/2013/2013-02-20_contribuer_a_openstreetmap_deux_applications.md
+    articles/2013/art_2013-02-25.md: articles/2013/2013-02-25_websocket.md
+    articles/2013/art_2013-05-21.md: articles/2013/2013-05-21_compiler_openlayers3.md
+    articles/2013/art_2013-05-29.md: articles/2013/2013-05-29_interviews_geotribu.md
+    articles/2013/art_2013-06-05_mongo_spatial.md: articles/2013/2013-06-05_mongo_spatial.md
+    articles/2013/art_2013-06-13_itw_davidjonglez.md: articles/2013/2013-06-13_itw_davidjonglez.md
+    articles/2013/art_2013-07-31.md: articles/2013/2013-07-31_modele_generique_django.md
+    articles/2013/art_2013-08-16.md: articles/2013/2013-08-16_pont_15_aout.md
+    articles/2013/art_2013-09-22.md: articles/2013/2013-09-22_nouveau_membre_dans_la_tribu.md
+    articles/2013/art_2013-09-26.md: articles/2013/2013-09-26_installer_python_gdal_sous_windows.md
+    articles/2013/art_2013-10-02.md: articles/2013/2013-10-02_mention_geomatique_en_master_licence.md
+    articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig.md: articles/2013/2013-10-30_geogame_mots_croises_outils_sig.md
+    articles/2013/art_2013-11-19.md: articles/2013/2013-11-19_websocket_avec_django.md
+    articles/2013/art_2013-11-20_geogame_mots_croises_webmapping.md: articles/2013/2013-11-20_geogame_mots_croises_webmapping.md
+    articles/2013/art_2013-12-01.md: articles/2013/2013-12-01_stage_geodecisionnelle_suivi_humanitaire_ong.md
+    articles/2013/art_2013-12-04.md: articles/2013/2013-12-04_temps_reponses_compares_osrm_graphhopper.md
+    articles/2014/art_2014-01-01.md: articles/2014/2014-01-01_2013_dans_le_georetro_2014_en_ligne_de_mire.md
+    articles/2014/art_2014-01-06.md: articles/2014/2014-01-06_plein_flux_sur_la_geomatique.md
+    articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md: articles/2014/2014-01-08_geogame_qcm_histoire_cartographie.md
+    articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md: articles/2014/2014-01-22_geogame_qcm_cassini_bertin.md
+    articles/2014/art_2014-01-27.md: articles/2014/2014-01-27_geoseminaire_2014.md
+    articles/2014/art_2014-03-19_geogame_pendu_geomatique.md: articles/2014/2014-03-19_geogame_pendu_geomatique.md
+    articles/2014/art_2014-03-21.md: articles/2014/2014-03-21_un_bon_deal_chez_packt_publishing.md
+    articles/2014/art_2014-03-24.md: articles/2014/2014-03-24_non_mapserver_geoserver_tilecache_ne_sont_pas_toujours_necessaires.md
+    articles/2014/art_2014-04-29.md: articles/2014/2014-04-29_de_l_acquisition_a_la_visualisation_d_images_de_drone.md
+    articles/2014/art_2014-05-05.md: articles/2014/2014-05-05_le_plein_d_ebooks_chez_packt_publishing.md
+    articles/2014/art_2014-05-25.md: articles/2014/2014-05-25_these_analyse_geocollaborative.md
+    articles/2014/art_2014-07-14.md: articles/2014/2014-07-14_geoapero_paris_15_juillet.md
+    articles/2014/art_2014-08-05.md: articles/2014/2014-08-05_these_generalisation_pyramide_d_echelles.md
+    articles/2014/art_2014-08-29_itw_drones_crisis.md: articles/2014/2014-08-29_itw_drones_crisis.md
+    articles/2014/art_2014-09-01.md: articles/2014/2014-09-01_stage_retour_experience_geomatique_decisionnelle_chez_grdf.md
+    articles/2014/art_2014-09-25_dicogis.md: articles/2014/2014-09-25_dicogis.md
+    articles/2014/art_2014-11-13.md: articles/2014/2014-11-13_corriger_automatiquement_geometries_invalides_qgis.md
+    articles/2015/art_2015-01-11.md: articles/2015/2015-01-11_openstreetmap_pas_qu_une_carte.md
+    articles/2015/art_2015-01-18.md: articles/2015/2015-01-18_7th_international_workshop_on_information_fusion_and_geographic_information_systems.md
+    articles/2015/art_2015-02-03.md: articles/2015/2015-02-03_representation_3D_des_objets_openstreetmap.md
+    articles/2015/art_2015-02-09.md: articles/2015/2015-02-09_8eme_geoseminaire_silat.md
+    articles/2015/art_2015-02-16.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
+    articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
