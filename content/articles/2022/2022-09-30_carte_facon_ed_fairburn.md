@@ -89,6 +89,7 @@ On va essayer de faire une affichcarto, ou cartaffiche si tu préfères, pour le
 Pour cette mise en page carrée de 50 cm de côté, je ne vais pas commencer par l'objet `Carte`.
 
 Je construis à la place une sorte de fond de mise en forme avec :
+
 * une bordure bien épaisse grâce à un objet `Rectangle`,
 * deux objets `Etiquette` en guise de titre et sous-titre,
 * et deux objets `Polygone` placés de sorte à rappeler le premier symbole du Louvre : la Pyramide.
