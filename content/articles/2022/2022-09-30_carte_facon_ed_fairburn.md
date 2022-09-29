@@ -80,11 +80,14 @@ La classe `troncon_hydrographique` est simplement utilisée pour l'étiquetage d
 Tu as probablement reconnu le [Jardin des Tuileries](https://fr.wikipedia.org/wiki/Jardin_des_Tuileries) et le [Louvre](https://www.louvre.fr/) sur l'image précédente.
 On va essayer de faire une affichcarto, ou cartaffiche si tu préfères, pour le plus célèbre des musées parisiens.
 
+<!-- markdownlint-disable MD026 -->
 ### Quand le fond...
+<!-- markdownlint-disable MD026 -->
 
 Pour cette mise en page carrée de 50 cm de côté, je ne vais pas commencer par l'objet `Carte`.
 
 Je construis à la place une sorte de fond de mise en forme avec :
+
 * une bordure bien épaisse grâce à un objet `Rectangle`,
 * deux objets `Etiquette` en guise de titre et sous-titre,
 * et deux objets `Polygone` placés de sorte à rappeler le premier symbole du Louvre : la Pyramide.
