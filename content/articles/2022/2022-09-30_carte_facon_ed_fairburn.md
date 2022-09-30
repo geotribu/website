@@ -140,7 +140,7 @@ Comme pour `Addition`, avec le mode `Éclaircir` couleur + blanc = blanc et coul
 
 [![Comportement du mode de fusion Eclaircir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_eclaircir.png "Comportement du mode de fusion Eclaircir"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_eclaircir.png){: data-mediabox="gallery-lightbox" data-title="Comportement du mode de fusion Eclaircir" }
 
-On voit que le mode _Addition_ tend plus rapidement vers le blanc.
+On voit que le mode `Addition` tend plus rapidement vers le blanc.
 Pour l'ajout du portrait, il donnerait une sensation de brûlage/surexposition de la Joconde.
 
 Le mode `Éclaircir` permet de remplacer le noir des bâtiments par le visage de Mona Lisa et d'avoir un mélange plus fondu sur les zones de végétation, les surfaces hydrographiques et les voies nommées.
