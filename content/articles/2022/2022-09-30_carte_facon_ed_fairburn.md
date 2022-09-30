@@ -61,11 +61,11 @@ J'utilise ici la [BD Topo® de l'IGN](https://geoservices.ign.fr/bdtopo) mais tu
 
 Pour ma part, ce sera un plan basé sur les classes :
 
-* _batiment_
-* _voie_nommee_
-* _zone_de_vegetation_
-* _troncon_hydrographique_
-* _surface_hydrographique_
+* `batiment`
+* `voie_nommee`
+* `zone_de_vegetation_
+* `troncon_hydrographique`
+* `surface_hydrographique`
 
 La classe `batiment` est l'élément principal. Je colore cette couche en noir, c'est important pour la suite, et j'ajoute une bordure blanche pour distinguer les constructions les unes des autres.
 
