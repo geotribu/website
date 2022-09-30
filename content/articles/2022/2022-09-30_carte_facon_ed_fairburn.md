@@ -63,7 +63,7 @@ Pour ma part, ce sera un plan basé sur les classes :
 
 * `batiment`
 * `voie_nommee`
-* `zone_de_vegetation_
+* `zone_de_vegetation`
 * `troncon_hydrographique`
 * `surface_hydrographique`
 
