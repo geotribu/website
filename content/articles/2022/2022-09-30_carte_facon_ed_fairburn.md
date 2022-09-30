@@ -173,7 +173,7 @@ Tiens, et si on demandait à [DALL.E](https://openai.com/dall-e-2/) de nous gén
 
 [![La Joconde par DALL.E - version 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_1.png "La Joconde par DALL.E - version 1"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_1.png){: data-mediabox="gallery-lightbox" data-title="La Joconde par DALL.E - version 1" }
 
-[![La Joconde par DALL.E - version 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_2.png "La Joconde par DALL.E - version 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/E_mona_misa_2.png){: data-mediabox="gallery-lightbox" data-title="La Joconde par DALL.E - version 2" }
+[![La Joconde par DALL.E - version 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_2.png "La Joconde par DALL.E - version 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_2.png){: data-mediabox="gallery-lightbox" data-title="La Joconde par DALL.E - version 2" }
 
 Je ne sais pas toi mais perso je préfère notre version QGis. En vrai, on doit pouvoir faire mieux avec des couleurs moins flashys et peut-être aussi quelques dégradés en lieu et place du noir brut pour les fusions.
 
