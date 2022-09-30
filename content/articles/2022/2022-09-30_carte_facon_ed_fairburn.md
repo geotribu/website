@@ -47,7 +47,7 @@ Le mode de fusion détermine comment un élément graphique se comporte vis à v
 Classiquement, le mode de fusion est `Normal` de sorte que l'objet au-dessus masque ceux qui sont placés en dessous.
 En jouant sur les transparences, il est possible de ne pas totalement masquer les autres éléments mais les modes de fusion permettent d'aller plus loin.
 
-La description du comportement de chacun des modes est bien évidemment [disponible dans le documention](https://docs.qgis.org/3.22/fr/docs/user_manual/introduction/general_tools.html#blend-modes). Difficile en quelques lignes de décrire de façon intelligible ces options même si certains s'y sont essayés comme par exemple [dans cet article](https://pasq.fr/united-colors-of-qgis) ou encore [dans celui-ci](http://cours-fad-public.ensg.eu/pluginfile.php/1296/mod_imscp/content/1/co/10_N1_presentation_mode_fusion_1.html).
+La description du comportement de chacun des modes est bien évidemment [disponible dans le documentation](https://docs.qgis.org/3.22/fr/docs/user_manual/introduction/general_tools.html#blend-modes). Difficile en quelques lignes de décrire de façon intelligible ces options même si certains s'y sont essayés comme par exemple [dans cet article](https://pasq.fr/united-colors-of-qgis) ou encore [dans celui-ci](http://cours-fad-public.ensg.eu/pluginfile.php/1296/mod_imscp/content/1/co/10_N1_presentation_mode_fusion_1.html).
 
 Mon avis : le mieux reste de tester pour visualiser et enfin comprendre le comportement des différents modes.
 
