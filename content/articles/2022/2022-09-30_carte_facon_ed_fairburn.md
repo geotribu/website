@@ -143,7 +143,7 @@ Comme pour `Addition`, avec le mode `Éclaircir` couleur + blanc = blanc et coul
 On voit que le mode _Addition_ tend plus rapidement vers le blanc.
 Pour l'ajout du portrait, il donnerait une sensation de brûlage/surexposition de la Joconde.
 
-Le mode _Éclaircir_ permet de remplacer le noir des bâtiments par le visage de Mona Lisa et d'avoir un mélange plus fondu sur les zones de végétation, les surfaces hydrographiques et les voies nommées.
+Le mode `Éclaircir` permet de remplacer le noir des bâtiments par le visage de Mona Lisa et d'avoir un mélange plus fondu sur les zones de végétation, les surfaces hydrographiques et les voies nommées.
 
 [![La Joconde en mode Eclaircir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/joconde.png "La Joconde en mode Eclaircir"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/joconde.png){: data-mediabox="gallery-lightbox" data-title="La Joconde en mode Eclaircir" }
 
