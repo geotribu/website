@@ -17,6 +17,8 @@ tags:
 
 # Faire une carte façon Ed Fairburn avec QGIS
 
+:calendar: Date de publication initiale : 30 septembre 2022
+
 ## Introduction
 
 Si tu ne connais pas encore le travail d'[Ed Fairburn](https://edfairburn.com/about/), son [portfolio est par là](https://edfairburn.com/full-portfolio/).
