@@ -100,7 +100,7 @@ Je construis à la place une sorte de fond de mise en forme avec :
 
 ### ...fait la forme !
 
-C'est à cette étape qu'on va ajouter l'objet `Carte`, mais avant ça, parlons un peu du mode de fusion _Addition_.
+C'est à cette étape qu'on va ajouter l'objet `Carte`, mais avant ça, parlons un peu du mode de fusion `Addition`.
 
 Comme son nom l'indique, le mode `Addition` additionne les couleurs, et là tu te dis _"Ah ok, donc jaune et bleu ça fait vert !!!"_ et bien pas du tout.
 
