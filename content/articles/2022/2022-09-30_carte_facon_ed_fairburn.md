@@ -171,7 +171,7 @@ Pour le reste, il te faudra tester...
 
 Tiens, et si on demandait à [DALL.E](https://openai.com/dall-e-2/) de nous générer le "portrait de la Joconde dans un plan de Paris en forme de pyramide" ?
 
-[![La Joconde par DALL.E - version 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_1.png "La Joconde par DALL.E - version 1"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/E_mona_misa_1.png){: data-mediabox="gallery-lightbox" data-title="La Joconde par DALL.E - version 1" }
+[![La Joconde par DALL.E - version 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_1.png "La Joconde par DALL.E - version 1"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_1.png){: data-mediabox="gallery-lightbox" data-title="La Joconde par DALL.E - version 1" }
 
 [![La Joconde par DALL.E - version 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_2.png "La Joconde par DALL.E - version 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/E_mona_misa_2.png){: data-mediabox="gallery-lightbox" data-title="La Joconde par DALL.E - version 2" }
 
