@@ -136,7 +136,7 @@ A cette étape, pour faire honneur aux travaux d'Ed Fairburn, on ne va pas utili
 Par contre, on va cette fois opter pour le mode _Éclaircir_ qui conserve sur chacune des composantes RGB celle qui a la plus grande valeur.
 Avec ce rendu, l'assemblage des couleurs `#UUVVWW` et `#XXYYZZ` donne `#max(UU,XX)max(VV,YY)max(WW,ZZ)`
 
-Comme pour _Addition_, avec le mode _Éclaircir_ couleur + blanc = blanc et couleur + noir = couleur, mais le résultat est différent sur les valeurs intermédiaires, la preuve en image.
+Comme pour `Addition`, avec le mode `Éclaircir` couleur + blanc = blanc et couleur + noir = couleur, mais le résultat est différent sur les valeurs intermédiaires, la preuve en image.
 
 [![Comportement du mode de fusion Eclaircir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_eclaircir.png "Comportement du mode de fusion Eclaircir"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_eclaircir.png){: data-mediabox="gallery-lightbox" data-title="Comportement du mode de fusion Eclaircir" }
 
