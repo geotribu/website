@@ -133,7 +133,7 @@ J'ajoute la carte et fixe son rendu à `Addition` et là ... magie ! On vient de
 
 A cette étape, pour faire honneur aux travaux d'Ed Fairburn, on ne va pas utiliser un portrait mais LE portrait, celui de Mona Lisa.
 
-Par contre, on va cette fois opter pour le mode _Éclaircir_ qui conserve sur chacune des composantes RGB celle qui a la plus grande valeur.
+Par contre, on va cette fois opter pour le mode `Éclaircir` qui conserve sur chacune des composantes RGB celle qui a la plus grande valeur.
 Avec ce rendu, l'assemblage des couleurs `#UUVVWW` et `#XXYYZZ` donne `#max(UU,XX)max(VV,YY)max(WW,ZZ)`
 
 Comme pour `Addition`, avec le mode `Éclaircir` couleur + blanc = blanc et couleur + noir = couleur, mais le résultat est différent sur les valeurs intermédiaires, la preuve en image.
