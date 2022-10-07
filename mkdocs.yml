@@ -51,6 +51,8 @@ plugins:
         as_creation: "date"
         as_update: false
         datetime_format: "%Y-%m-%d %H:%M"
+        default_timezone: Europe/Paris
+        default_time: "14:00"
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
