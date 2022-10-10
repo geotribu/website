@@ -30,6 +30,10 @@ plugins:
       exclude:
         - index.md
       show_contribution: true
+  - git-committers:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS, False]
+      repository: geotribu/website
+      branch: master
   - git-revision-date-localized:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, False]
       enable_creation_date: true
