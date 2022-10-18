@@ -83,7 +83,6 @@ Passées ces péripéties matérielles, je me suis penché sur le traitement des
 
 Après mes premiers tests, lorsque je chargeais mes photos dans l'application [Mapillary Desktop Uploader](https://www.mapillary.com/desktop-uploader), je me rendais compte que j'avais une redondance de photos identiques lorsque je marquais un point d'arrêt aux Stop. J'ai donc commencé à me pencher sur une solution permettant de supprimer ces photos "inutiles" qui se retrouveront "inutilement" stockées sur un serveur Mapillary.
 
-
 ### Intégration du logo
 
 [![Intégration du logo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/mapillary_logo.jpeg "Intégration du logo"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/mapillary_logo.jpeg){: data-mediabox="gallery-lightbox" data-title="Intégration du logo" }
