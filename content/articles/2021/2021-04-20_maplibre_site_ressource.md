@@ -678,12 +678,6 @@ Bref, MapLibre c'est une super solution, assez simple de prise en main, donc plu
 
 ## Auteur {: data-search-exclude }
 
-### Boris Mericskay
+--8<-- "content/team/bmer.md"
 
-![boris mericskay](https://cdn.geotribu.fr/img/internal/contributeurs/bmer.png "Boris Mericskay"){: .img-rdp-news-thumb }
-
-Enseignant-chercheur en géographie à [l'Université Rennes 2](https://perso.univ-rennes2.fr/boris.mericskay) et co-responsable du [master en géomatique SIGAT](https://sites-formations.univ-rennes2.fr/mastersigat/), mon travail consiste à enseigner les SIG (en licence et en master) et à faire de la recherche autour des questions des données urbaines, de l'analyse spatiale et de la géovisualisation en ligne.
-
-Passionné par les données spatiales (analyse et représentation), j'utilise essentiellement QGIS, R, Python, MapboxGL et KeplerGL. Je produis régulièrement des cartes et autres géovisualisations que je partage via mon [compte Twitter](https://twitter.com/BorisMericskay).
-
-J'ai créé un [site internet](https://bmericskay.github.io/portfolio/index.html) qui compile certaines de mes réalisations cartographiques, mes publications et quelques cours.
+{% include "licenses/cc4_by-sa.md" %}
