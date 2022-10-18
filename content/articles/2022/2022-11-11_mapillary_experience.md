@@ -42,7 +42,7 @@ Cet article s'inscrit dans la continuité de mon article que j'avais intitulé [
 
 ![logo GoPro](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GoPro.jpg "logo GoPro"){: .img-rdp-news-thumb }
 
-J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes en ces temps d'abstinence! L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en places ailleurs. Je suis donc parti sur : 
+J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes en ces temps d'abstinence! L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en places ailleurs. Je suis donc parti sur :
 
 - une GoPro Max 360° : environ 430 €
 - un support triple ventouse Ram Mount (ref. RAP-B-365-224-202AU) : environ 90€
