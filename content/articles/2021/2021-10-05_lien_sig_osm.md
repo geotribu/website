@@ -104,7 +104,7 @@ C_DBNAME='database'
 
 Afin de restreindre l'extraction des données OpenStreetMap à notre périmètre d'étude, il est préférable d'utiliser un fichier d'emprise que je stocke au format .shp dans mon répertoire de travail.
 
-[![Arborescence](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/arborescence.PNG "Arborescence"){: loading=lazy width=200px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/arborescence.PNG){: data-mediabox="lightbox-gallery" data-title="Arborescence" }
+![Arborescence](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/arborescence.PNG "Arborescence"){: loading=lazy width=200px }
 {: align=middle }
 
 ### 4. Un script par donnée à extraire et à intégrer dans PostgreSQL
@@ -235,7 +235,7 @@ CREATE OR REPLACE VIEW dechet.v_composteurs_comparaison_osm
           WHERE c.id_osm IS NOT NULL) g;
 ```
 
-[![Carte composteurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_composteurs.png "Carte des composteurs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_composteurs.png){: data-mediabox="lightbox-gallery" data-title="Carte composteurs" }
+![Carte composteurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_composteurs.png "Carte des composteurs"){: .img-center loading=lazy }
 
 - Contour vert : la donnée existe à la fois dans OpenStreetMap et dans notre SIG
 - Contour orange : une contribution est nécessaire pour enrichir OpenStreetMap
@@ -243,7 +243,7 @@ CREATE OR REPLACE VIEW dechet.v_composteurs_comparaison_osm
 
 Voici un autre exemple avec des données sur le patrimoine :
 
-[![Carte patrimoine](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_patrimoine.png "Carte du patrimoine"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_patrimoine.png){: data-mediabox="lightbox-gallery" data-title="Carte du patrimoine" }
+![Carte patrimoine](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/carte_patrimoine.png "Carte du patrimoine"){: .img-center loading=lazy }
 
 ### 7. Edition de la donnée et récupération de l'id_osm à travers un trigger
 
