@@ -97,39 +97,35 @@ Pour aligner une image à droite, utiliser : `{: .img-right }`.
 
     La balise `{: .img-right }` permet d'aligner l'image à droite en laissant le texte autour, sans changer les dimensions.
 
-### Lightbox
+### Lightbox (mode galerie)
 
-Le site intègre la bibliothèque [wa-mediabox](https://github.com/jirihybek/wa-mediabox/) afin de pouvoir créer un effet [lightbox], mettre en avant des images ou créer une galerie.
+Grâce au plugin [Mkdocs GLightbox](https://blueswen.github.io/mkdocs-glightbox/), les images sont automatiquement visibles dans un mode galerie (communément appelé _[lightbox]_) sans syntaxe additionnelle (depuis cette [_Pull Request_ d'octobre 2022](https://github.com/geotribu/website/pull/720)).
+
+Par défaut, toutes les images sont concernées sauf :
+
+- les vignettes, donc les images avec la balise `{: .img-rdp-news-thumb }`
+- les emojis
+
+Il est possible de désactiver le mode galerie sur une image en particulier en lui attribuant la balise `{: .off-glb }`.  
+Il est possible de désactiver le mode galerie sur tout une page en ajoutant `glightbox: false` à [l'en-tête du fichier](/contribuer/guides/metadata_yaml_frontmatter/)
 
 === "Markdown"
 
+    Par exemple, dans l'exemple suivant, la première image aura le mode galerie mais pas la seconde :
+
     ```markdown
-    [![Texte de remplacement](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: width=200px }](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: data-mediabox="demo-lightbox" data-title="Titre de l'image utilisé comme légende" }
-    [![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ width="200" }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG){: data-mediabox="demo-lightbox" data-title="Une partie de l'équipe Geotribu au FOSS4G-FR 2016" }
+    ![Texte de remplacement](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: loading=lazy width=200px }
 
-    Pour appliquer une [lightbox](https://en.wikipedia.org/wiki/Lightbox_(JavaScript)) sur une image, il faut :
-
-    - faire un lien vers l'image en entier
-    - appliquer l'attribut `data-mediabox=` avec pour valeur le nom du groupe d'images
-
-    Donc la structure type est :
-
-    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="lightbox-gallery" data-title="Légende image"}`
+    [![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ loading=lazy width="200" .off-glb }
     ```
 
 === "Rendu"
 
-    [![Texte de remplacement](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: width=200px }](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: data-mediabox="demo-lightbox" data-title="Titre de l'image utilisé comme légende" }
-    [![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ width="200" }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG){: data-mediabox="demo-lightbox" data-title="Une partie de l'équipe Geotribu au FOSS4G-FR 2016" }
+    Par exemple, dans l'exemple suivant, la première image aura le mode galerie mais pas la seconde :
 
-    Pour appliquer une [lightbox](https://en.wikipedia.org/wiki/Lightbox_(JavaScript)) sur une image, il faut :
+    ![Texte de remplacement](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: loading=lazy width=200px }
 
-    - faire un lien vers l'image en entier
-    - appliquer l'attribut `data-mediabox=` avec pour valeur le nom du groupe d'images
-
-    Donc la structure type est :
-
-    `[![Texte remplacement](url_image "Titre image")](url_image){: data-mediabox="lightbox-gallery" data-title="Légende image"}`
+    [![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ loading=lazy width="200" .off-glb }
 
 ### Style personnalisé
 
