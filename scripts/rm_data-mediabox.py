@@ -5,6 +5,7 @@
     dans le cadre de https://github.com/geotribu/website/pull/720.
 """
 
+import logging
 from pathlib import Path
 
 # -- REGEX - Solution abandonnée finalement car pas rentable
@@ -28,12 +29,14 @@ from pathlib import Path
 
 # -- SEARCH & REPLACE des familles
 
-for md_filepath in Path("content").glob("articles/2022/*.md"):
+for md_filepath in Path("content").glob("articles/202*/*.md"):
     # on lit le fichier, on le parcourt et on vire les parties liées à la lightbox
     with md_filepath.open(mode="r") as contenu:
         output_lines = []
+        counter_mediabox = 0
         for line in contenu.readlines():
             if "data-mediabox" in line:
+                counter_mediabox += 1
                 # print(line)
                 # on enlève le premier crochet ouvrant qui servait à ouvrir la balise de lien
                 new_line = line[1:]
@@ -51,6 +54,12 @@ for md_filepath in Path("content").glob("articles/2022/*.md"):
             else:
                 output_lines.append(line)
 
-    output_filepath = md_filepath.with_name(f"{md_filepath.stem}_modified.md")
+    if counter_mediabox == 0:
+        print(f"Pas de balise mediabox trouvée dans {md_filepath}")
+        continue
+
+    # réécriture du fichier
+    # output_filepath = md_filepath.with_name(f"{md_filepath.stem}_modified.md")  # test par sécurité
     with md_filepath.open(mode="w") as fichier:
         fichier.writelines(output_lines)
+    print(f"Fichier modifié ({counter_mediabox} balises retirées) : {md_filepath}")
