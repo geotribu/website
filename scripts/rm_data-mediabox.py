@@ -29,7 +29,7 @@ from pathlib import Path
 
 # -- SEARCH & REPLACE des familles
 
-for md_filepath in Path("content").glob("articles/202*/*.md"):
+for md_filepath in Path("content").glob("**/*.md"):
     # on lit le fichier, on le parcourt et on vire les parties liées à la lightbox
     with md_filepath.open(mode="r") as contenu:
         output_lines = []
