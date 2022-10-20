@@ -61,7 +61,7 @@ Le plus dur est fait et la configuration est presque fini ! Pour vérifier que t
 
 Rendez-vous maintenant sur la page d'index de featureServer ([http://localhost/featureserver/](http://localhost/featureserver/)) vous devriez alors voir apparaitre l'interface d'OpenLayers avec la couche vmap0 de MetaCarta affichée avec sur la droite un formulaire permettant le paramétrage des objets géographiques.
 
-[![FeatureServer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/featureServer.png "FeatureServer"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/featureServer.png "FeatureServer"){: data-mediabox="gallery-lightbox" data-title="FeatureServer"}
+![FeatureServer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/featureServer.png "FeatureServer"){: .img-center loading=lazy }
 
 Si vous dessinez un objet sur la carte puis que vous le sauvegarder celui-ci sera enregistré dans la base **featureserver.scribble** située (si vous n'avez pas modifié le fichier de config) dans le répertoire `/tmp/`.  
 
@@ -180,7 +180,7 @@ osmxapi=no
 
 `osmxapi` => Permet d'utiliser l'API étendu d'OpenStreetMap
 
-[![OpenStreetMap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/osm.png "OpenStreetMap"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/osm.png "OpenStreetMap"){: data-mediabox="gallery-lightbox" data-title="OpenStreetMap"}
+![OpenStreetMap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/osm.png "OpenStreetMap"){: .img-center loading=lazy }
 
 A noter que si vous utilisez `featureserver.py` vous ne pourrez pas accéder au stockage OSM. De plus les données ne sont accessibles qu'à un certain niveau d'echelle. N'hésitez donc pas à zoomer.
 

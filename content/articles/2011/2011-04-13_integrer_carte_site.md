@@ -34,7 +34,7 @@ Voilà comment en trois clics de souris vous avez votre propre carte à insérer
 
 Fondé par Antony Zanetti, [Click2Map](http://www.click2map.com/home) est un service complet et hautement paramétrable permettant l'intégration d'une carte sur son site web.
 
-[![Click2Map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/create_map.png "Click2Map"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/create_map.png){: data-mediabox="lightbox-gallery" data-title="Click2Map"}
+![Click2Map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/create_map.png "Click2Map"){: .img-center loading=lazy }
 
 Contrairement à CartOSM qui se base sur des iframes, Click2Map génère une application qu'il faudra ensuite ajouter vous même sur votre serveur. Bien que la mise en œuvre soit un poil plus compliqué, cela se traduit par de nombreuses options et une personnalisation poussée :
 

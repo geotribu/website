@@ -130,7 +130,7 @@ Nous devons tout d'abord spécifier le début de l'URL, ensuite nous lui passons
 
 Ne disposant pas de serveur personnel tous les tests ont été effectués en local. La copie d'écran ci-dessous, qui est une représentation des risques sismiques et volcaniques à La Réunion, vous donnera néanmoins un aperçu de ce qu'il est possible de réaliser. Les données utilisées sont disponibles sur le site Internet de La [Diren de La Réunion](http://www.reunion.ecologie.gouv.fr/).
 
-[![Réunion risque](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/reunion_risque.jpg "Réunion risque"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/reunion_risque.jpg "Réunion risque"){: data-mediabox="gallery-lightbox" data-title="Réunion risque"}
+![Réunion risque](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/reunion_risque.jpg "Réunion risque"){: .img-center loading=lazy }
 
 ----
 

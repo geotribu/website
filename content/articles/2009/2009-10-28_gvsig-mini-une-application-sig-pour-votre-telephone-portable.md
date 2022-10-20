@@ -20,7 +20,7 @@ tags:
 
  Le nom [gvSIG](http://www.gvsig.gva.es/) ne vous est sûrement pas inconnu. En effet, c'est l'un des logiciels phares du monde SIG OpenSource. Celui-ci, jusqu'à récemment, n'était disponible que sous la forme d'une application lourde à installer sur un ordinateur. Mais une nouvelle version nommée [gvSIG Mini](https://confluence.prodevelop.es/display/GVMN/Home) est maintenant disponible pour téléphone portable. Résolument tournée vers le web, cette application permet l'affichage des principaux fournisseurs de données. Voici ci-dessous quelques une de ces caractéristiques :
 
-[![gvSIG - Mini Galaxy](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/gvsig_mini_galaxy.png "gvSIG - Mini Galaxy"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/gvsig_mini_galaxy.png){: data-mediabox="lightbox-gallery" data-title="gvSIG - Mini Galaxy" }
+![gvSIG - Mini Galaxy](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/gvsig_mini_galaxy.png "gvSIG - Mini Galaxy"){: .img-center loading=lazy }
 
 * Affichage des données d'OpenStreetMap, Yahoo Maps, Bing Maps...
 * Recherche d'adresse

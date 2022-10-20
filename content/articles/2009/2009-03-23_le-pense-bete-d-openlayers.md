@@ -24,7 +24,7 @@ Ce travail est à mettre en relation avec celui réalisé par Emanuel Schütze q
 
 Pense-bête d'OpenLayers :
 
-[![Le pense bête d'OpenLayers](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/openlayers_2-7_cheatsheet.png "Le pense bête d'OpenLayers"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/openlayers_2-7_cheatsheet.png){: data-mediabox="lightbox-gallery" data-title="Le pense bête d'OpenLayers" }
+![Le pense bête d'OpenLayers](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/openlayers_2-7_cheatsheet.png "Le pense bête d'OpenLayers"){: .img-center loading=lazy }
 
 ----
 
