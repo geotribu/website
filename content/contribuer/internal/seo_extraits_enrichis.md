@@ -21,7 +21,7 @@ Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse
 
 Pourquoi ? car c'est ainsi que le site génère des données structurées standardisées qui sont notamment utilisées pour les extraits enrichis des moteurs de recherche.
 
-[![Google Search - Exemple d'extrait enrichi](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/extrait_enrichi_google_dashboard_qgis.webp "Extrait enrichi sur une recherche Google"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/extrait_enrichi_google_dashboard_qgis.webp "Extrait enrichi sur une recherche Google"){: data-mediabox="lightbox-rich-snippets" data-title="Extrait enrichi sur une recherche Google" }
+![Google Search - Exemple d'extrait enrichi](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/extrait_enrichi_google_dashboard_qgis.webp "Extrait enrichi sur une recherche Google"){: loading=lazy .img-center }
 
 ## Web sémantique et données structurées
 
@@ -34,7 +34,7 @@ Ces données sont également utilisées par les moteurs de recherche et favorise
 
 Il existe de nombreux schémas décrivant différents types d'objets : _Article_, _WebSite_, _Author_, _Organization_, etc. Les personnes qui travaillent sur les portails de données ouvertes connaissent bien le sujet puisqu'il existe un schéma standardisé pour les [jeux de données](https://schema.org/Dataset) qui permet notamment de faire indexer ses données dans le moteur dédié de Google : [Dataset Search](https://datasetsearch.research.google.com/).
 
-[![Google Dataset Search](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/google_dataset_search_exemple_bornes_elec.webp "Google Dataset Search"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/google_dataset_search_exemple_bornes_elec.webp){: data-mediabox="lightbox-rich-snippets" data-title="Exemple de recherche dans Google Dataset Search" }
+![Google Dataset Search](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/google_dataset_search_exemple_bornes_elec.webp "Google Dataset Search"){: loading=lazy .img-center }
 
 ----
 
@@ -152,7 +152,7 @@ Exemple pour [cet article](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_o
 }
 ```
 
-[![Schéma article validé par schema.org](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extrait_enrichi_article_multi-auteurs.png "Schéma article validé par schema.org"){: loading=lazy.img-center }](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extrait_enrichi_article_multi-auteurs.png){: data-mediabox="lightbox-rich-snippets" data-title="Schéma article repéré et validé par schema.org" }
+![Schéma article validé par schema.org](https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extrait_enrichi_article_multi-auteurs.png "Schéma article validé par schema.org"){: loading=lazy.img-center }
 
 ### Revue de presse
 
