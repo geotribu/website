@@ -116,7 +116,7 @@ Il est possible de désactiver le mode galerie sur tout une page en ajoutant `gl
     ```markdown
     ![Texte de remplacement](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: loading=lazy width=200px }
 
-    [![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ loading=lazy width="200" .off-glb }
+    ![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ loading=lazy width="200" .off-glb }
     ```
 
 === "Rendu"
@@ -125,7 +125,7 @@ Il est possible de désactiver le mode galerie sur tout une page en ajoutant `gl
 
     ![Texte de remplacement](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg){: loading=lazy width=200px }
 
-    [![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ loading=lazy width="200" .off-glb }
+    ![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){ loading=lazy width="200" .off-glb }
 
 ### Style personnalisé
 
