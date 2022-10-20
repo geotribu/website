@@ -44,20 +44,20 @@ Commencez par installer [QGIS](https://qgis.org/fr/site/) (disponible pour Mac, 
 
 Dans QGIS, allez dans le menu `Extensions > Installer / Gérer les extensions`, puis cherchez l’extension `Mergin`, et cliquez sur `Installer le plugin`.
 
-[![Installation du plugin Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/plugin-install.png "Installation du plugin Mergin dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/plugin-install.png "Installation du plugin Mergin dans QGIS"){: data-mediabox="gallery-lightbox" data-title="Installation du plugin Mergin dans QGIS"}
+![Installation du plugin Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/plugin-install.png "Installation du plugin Mergin dans QGIS"){: .img-center loading=lazy }
 
 Allez dans le menu `Extensions > Mergin Plugin > Configure Mergin Plugin` , et connectez-vous avec les identifiants que vous venez de choisir.
 
-[![Connexion au plugin Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/mergin-connect.png "Connexion au plugin Mergin dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/mergin-connect.png "Connexion au plugin Mergin dans QGIS"){: data-mediabox="gallery-lightbox" data-title="Connexion au plugin Mergin dans QGIS"}
+![Connexion au plugin Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/mergin-connect.png "Connexion au plugin Mergin dans QGIS"){: .img-center loading=lazy }
 
 Vous devriez voir s’afficher la barre d’outils suivante :
 
-[![Barre d’outils du plugin Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/input-tb.png "Barre d’outils du plugin Mergin dans QGIS"){: loading=lazy width=250px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/input-tb.png "Barre d’outils du plugin Mergin dans QGIS"){: data-mediabox="lightbox-gallery" data-title="Barre d’outils du plugin Mergin dans QGIS" }
+![Barre d’outils du plugin Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/input-tb.png "Barre d’outils du plugin Mergin dans QGIS"){: loading=lazy width=250px }
 {: align=middle }
 
 Enfin, sur votre appareil mobile, lancez l’application Input, et connectez-vous au service.
 
-[![Connexion au service Mergin dans l’application mobile Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/mergin-connect-phone.png "Connexion au service Mergin dans l’application mobile Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/mergin-connect-phone.png "Connexion au service Mergin dans l’application mobile Input"){: data-mediabox="gallery-lightbox" data-title="Connexion au service Mergin dans l’application mobile Input"}
+![Connexion au service Mergin dans l’application mobile Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/mergin-connect-phone.png "Connexion au service Mergin dans l’application mobile Input"){:loading=lazy width=350px}
 {: align=middle }
 
 ----
@@ -68,19 +68,19 @@ Enfin, sur votre appareil mobile, lancez l’application Input, et connectez-vou
 
 Nous allons tout d’abord ajouter un fond de carte pour pouvoir nous situer. Dans l’explorateur de QGIS, ouvrez `XYZ Tiles` et double-cliquez sur [OpenStreetMap](https://www.openstreetmap.org) pour l’ajouter.
 
-[![L’explorateur de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/add-osm.png "L’explorateur de QGIS"){:loading=lazy width=300px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/add-osm.png "L’explorateur de QGIS"){: data-mediabox="gallery-lightbox" data-title="L’explorateur de QGIS"}
+![L’explorateur de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/add-osm.png "L’explorateur de QGIS"){:loading=lazy width=300px}
 {: align=middle }
 
 La couche OSM devrait apparaitre.
 
-[![Fond de carte OSM dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/osm.png "Fond de carte OSM dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/osm.png "Fond de carte OSM dans QGIS"){: data-mediabox="gallery-lightbox" data-title="Fond de carte OSM dans QGIS"}
+![Fond de carte OSM dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/osm.png "Fond de carte OSM dans QGIS"){: .img-center loading=lazy }
 
 Enregistrez votre projet dans un dossier nommé par exemple `Mon inventaire`.
 
 Il vous faut maintenant créer la couche qui servira à inventorier les arbres.
 Cliquez sur le menu `Couche > Créer une couche > Nouvelle couche Géopackage…`
 
-[![La boite de dialogue « Nouvelle couche Géopackage » dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-layer.png "La boite de dialogue « Nouvelle couche Géopackage » dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-layer.png "La boite de dialogue « Nouvelle couche Géopackage » dans QGIS"){: data-mediabox="gallery-lightbox" data-title="La boite de dialogue « Nouvelle couche Géopackage » dans QGIS"}
+![La boite de dialogue « Nouvelle couche Géopackage » dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-layer.png "La boite de dialogue « Nouvelle couche Géopackage » dans QGIS"){: .img-center loading=lazy }
 
 Dans le champ `Base de données` cliquez sur `…` et naviguez jusqu’à votre dossier `Mon inventaire`, puis tapez `inventaire.gpkg` comme nom de la base de données.
 
@@ -99,7 +99,7 @@ Vous pouvez maintenant choisir les colonnes de la table `Arbres`, par exemple :
 
 Résultat final :
 
-[![Boite de dialogue complétée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-layer.png "Boite de dialogue complétée"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-layer.png "Boite de dialogue complétée"){: data-mediabox="gallery-lightbox" data-title="Boite de dialogue complétée"}
+![Boite de dialogue complétée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-layer.png "Boite de dialogue complétée"){: .img-center loading=lazy }
 
 Vous pouvez aussi décider de saisir directement les données en utilisant le schéma de donnée officiel des [Arbres Urbains](https://schema.data.gouv.fr/NaturalSolutions/schema-arbre/latest/documentation.html), mais il comprend de nombreux champs, et sera moins pratique à remplir sur le terrain. Il pourrait être avantageux de faire la conversion dans un second temps.
 
@@ -110,20 +110,20 @@ Dans les couches de QGIS, faites un clic droit sur votre couche `Arbres` puis cl
 
 - `fid` est un champ auto-incrémenté ; nous pouvons le masquer à l’édition. Cliquez donc sur le champ `fid` , et choisissez `Cachée` comme `Type d’outil`
 
-[![Le formulaire d’attributs dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-form.png "Le formulaire d’attributs dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-form.png "Le formulaire d’attributs dans QGIS"){: data-mediabox="gallery-lightbox" data-title="Le formulaire d’attributs dans QGIS"}
+![Le formulaire d’attributs dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-form.png "Le formulaire d’attributs dans QGIS"){: .img-center loading=lazy }
 
 - Pour `espece`, il est plus simple d’avoir une liste déroulante que de la renseigner à chaque fois. Saisissez `Espèces` dans le champ `Alias`, puis choisissez `Liste de valeurs` comme `Type d’outil`. Vous pouvez alors :
 
 - soit les saisir directement.
 - soit préparer un fichier CSV avec une colonne valeur et une colonne description, et cliquer sur `Charger des données depuis le fichier CSV`.
 
-[![Le formulaire d’attributs complété](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-species.png "Le formulaire d’attributs complété"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-species.png "Le formulaire d’attributs complété"){: data-mediabox="gallery-lightbox" data-title="Le formulaire d’attributs complété"}
+![Le formulaire d’attributs complété](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-species.png "Le formulaire d’attributs complété"){: .img-center loading=lazy }
 
 Vous pouvez également si vous le désirez cliquer sur `Réutiliser la dernière valeur saisie`, ce qui facilitera la saisie pour les inventaires d’espèces relativement homogènes.
 
 - Pour `date`, vous pouvez éventuellement mettre une valeur par défaut en saisissant `to_date(now())` dans le champ `Valeur par défaut`
 
-[![Format du champ « date » dans le formulaire d’attributs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-date.png "Format du champ « date » dans le formulaire d’attributs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-species.png "Format du champ « date » dans le formulaire d’attributs"){: data-mediabox="gallery-lightbox" data-title="Format du champ « date » dans le formulaire d’attributs"}
+![Format du champ « date » dans le formulaire d’attributs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/setup-date.png "Format du champ « date » dans le formulaire d’attributs"){: .img-center loading=lazy }
 
 ### Configurer l’emprise de la carte
 
@@ -134,7 +134,7 @@ Pour cela, zoomez sur la zone qui vous intéresse, puis cliquez sur le menu
 
 Cochez `Définir l’emprise maximale du project` et cliquez sur le bouton `Étendue du canevas de carte`
 
-[![Réglage des paramètres de la vue dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/set-extent.png "Réglage des paramètres de la vue dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/set-extent.png "Réglage des paramètres de la vue dans QGIS"){: data-mediabox="gallery-lightbox" data-title="Réglage des paramètres de la vue dans QGIS"}
+![Réglage des paramètres de la vue dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/set-extent.png "Réglage des paramètres de la vue dans QGIS"){: .img-center loading=lazy }
 
 Sauvegardez enfin votre projet ; il est maintenant prêt à être envoyé sur votre téléphone.
 
@@ -142,16 +142,16 @@ Sauvegardez enfin votre projet ; il est maintenant prêt à être envoyé sur vo
 
 Dans la barre d’outils Mergin
 
-[![Barre d’outils du plugin Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/input-tb.png "Barre d’outils du plugin Mergin dans QGIS"){: loading=lazy width=250px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/input-tb.png "Barre d’outils du plugin Mergin dans QGIS"){: data-mediabox="lightbox-gallery" data-title="Barre d’outils du plugin Mergin dans QGIS" }
+![Barre d’outils du plugin Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/input-tb.png "Barre d’outils du plugin Mergin dans QGIS"){: loading=lazy width=250px }
 {: align=middle }
 
 Cliquez sur la seconde icône : `Create Mergin Project`, puis dans la fenêtre de dialogue qui s’affiche, choisissez `Package current QGIS project`
 
-[![Boite de dialogue de création d’un nouveau projet Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/package-project.png "Boite de dialogue de création d’un nouveau projet Mergin dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/package-project.png "Boite de dialogue de création d’un nouveau projet Mergin dans QGIS"){: data-mediabox="gallery-lightbox" data-title="Boite de dialogue de création d’un nouveau projet Mergin dans QGIS"}
+![Boite de dialogue de création d’un nouveau projet Mergin dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/package-project.png "Boite de dialogue de création d’un nouveau projet Mergin dans QGIS"){: .img-center loading=lazy }
 
 Sélectionnez les couches à synchroniser :
 
-[![Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-mergin-project.png "Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-mergin-project.png "Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »"){: data-mediabox="gallery-lightbox" data-title="Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »"}
+![Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/create-mergin-project.png "Sélection des couches à synchroniser. La couche « Arbres » est selectionnée en temps que « Package » ; la couche « OpenStreetMap » en tant que « Keep as is »"){: .img-center loading=lazy }
 
 Et enfin, nommez votre projet (par exemple `Mon Inventaire`).  
 Votre projet va être envoyé sur le cloud Mergin.
@@ -162,44 +162,44 @@ Votre projet va être envoyé sur le cloud Mergin.
 
 Lancez l’application **Input** sur votre appareil mobile, puis dans l’onglet `Mes Projets`, sélectionnez votre projet.
 
-[![Écran « Projets » de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/open-project-phone.png "Écran « Projets » de l’application Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/open-project-phone.png "Écran « Projets » de l’application Input"){: data-mediabox="gallery-lightbox" data-title="Écran « Projets » de l’application Input"}
+![Écran « Projets » de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/open-project-phone.png "Écran « Projets » de l’application Input"){:loading=lazy width=350px}
 {: align=middle }
 
 Le projet s’ouvre autour de l’emprise que vous avez définie précédemment.
 
-[![Affichage du fond de carte dans l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/project-phone.png "Affichage du fond de carte dans l’application Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/project-phone.png "Affichage du fond de carte dans l’application Input"){: data-mediabox="gallery-lightbox" data-title="Affichage du fond de carte dans l’application Input"}
+![Affichage du fond de carte dans l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/project-phone.png "Affichage du fond de carte dans l’application Input"){:loading=lazy width=350px}
 {: align=middle }
 
 Cliquez sur le bouton `Sauver` ; un curseur va s’afficher à votre position courante. Vous pouvez le déplacer si nécessaire.
 
-[![Curseur de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/add-point-phone.png "Curseur de l’application Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/add-point-phone.png "Curseur de l’application Input"){: data-mediabox="gallery-lightbox" data-title="Curseur de l’application Input"}
+![Curseur de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/add-point-phone.png "Curseur de l’application Input"){:loading=lazy width=350px}
 {: align=middle }
 
 Cliquez sur `Ajouter un point` ; Le formulaire d’ajout s’affiche :
 
-[![Formulaire d’ajout de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/edit-phone.png "Formulaire d’ajout de l’application Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/edit-phone.png "Formulaire d’ajout de l’application Input"){: data-mediabox="gallery-lightbox" data-title="Formulaire d’ajout de l’application Input"}
+![Formulaire d’ajout de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/edit-phone.png "Formulaire d’ajout de l’application Input"){:loading=lazy width=350px}
 {: align=middle }
 
 Choisissez l’espèce dans le menu déroulant :
 
-[![Menu déroulant de choix de l’espèce dans le formulaire d’ajout](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/edit-specie-phone.png "Menu déroulant de choix de l’espèce dans le formulaire d’ajout"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/edit-specie-phone.png "Menu déroulant de choix de l’espèce dans le formulaire d’ajout"){: data-mediabox="gallery-lightbox" data-title="Menu déroulant de choix de l’espèce dans le formulaire d’ajout"}
+![Menu déroulant de choix de l’espèce dans le formulaire d’ajout](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/edit-specie-phone.png "Menu déroulant de choix de l’espèce dans le formulaire d’ajout"){:loading=lazy width=350px}
 {: align=middle }
 
 Puis remplissez le reste des champs :
 
-[![Formulaire d’ajout rempli](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/created-entry-phone.png "Formulaire d’ajout rempli"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/created-entry-phone.png  "Formulaire d’ajout rempli"){: data-mediabox="gallery-lightbox" data-title="Formulaire d’ajout rempli"}
+![Formulaire d’ajout rempli](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/created-entry-phone.png "Formulaire d’ajout rempli"){:loading=lazy width=350px}
 {: align=middle }
 
 Et enfin, cliquez sur `Enregistrer`.
 
 Le point s’affiche sur la carte. Vous pouvez le toucher pour le vérifier ou l’éditer si nécessaire.
 
-[![Affichage du point ajouté par le formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-phone.png "Affichage du point ajouté par le formulaire"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-phone.png "Affichage du point ajouté par le formulaire"){: data-mediabox="gallery-lightbox" data-title="Affichage du point ajouté par le formulaire"}
+![Affichage du point ajouté par le formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-phone.png "Affichage du point ajouté par le formulaire"){:loading=lazy width=350px}
 {: align=middle }
 
 Une fois que vous avez terminé la saisie, cliquez sur l’onglet `Projets`, puis sur l’icône à droite du nom de votre projet pour lancer la synchronisation : vos données sont envoyées dans le cloud Mergin.
 
-[![Synchronisation du projet dans la page « Projets » de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/sync-project-phone.png "Synchronisation du projet dans la page « Projets » de l’application Input"){:loading=lazy width=350px}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/sync-project-phone.png "Synchronisation du projet dans la page « Projets » de l’application Input"){: data-mediabox="gallery-lightbox" data-title="Synchronisation du projet dans la page « Projets » de l’application Input"}
+![Synchronisation du projet dans la page « Projets » de l’application Input](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/sync-project-phone.png "Synchronisation du projet dans la page « Projets » de l’application Input"){:loading=lazy width=350px}
 {: align=middle }
 
 Il est temps de revenir à QGIS pour récupérer les résultats.
@@ -212,7 +212,7 @@ Dans la barre d’outil Mergin, cliquez sur `Synchronise Mergin Project` ![Bouto
 
 La couche Arbres est mise à jour avec les données que vous avez relevées.
 
-[![Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png "Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png "Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"){: data-mediabox="gallery-lightbox" data-title="Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"}
+![Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png "Résultat dans QGIS : le fond de carte initial, avec le point ajouté dans l’application Input, ainsi que ses attributs"){: .img-center loading=lazy }
 
 ----
 

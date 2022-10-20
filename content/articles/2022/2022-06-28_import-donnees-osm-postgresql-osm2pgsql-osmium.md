@@ -43,7 +43,7 @@ Au menu :
 
 Compagniiiie... en mesure !
 
-[![Marche des Eléphants Postgres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png "Marche des Eléphants Postgres"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png){: data-mediabox="lightbox-gallery" data-title="Marche des Eléphants Postgres - PostgreSQL, osm2pgsql et Osmium !"}
+![Marche des Eléphants Postgres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png "Marche des Eléphants Postgres"){: loading=lazy .img-center }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -78,7 +78,7 @@ sudo apt install postgresql-14 postgresql-client-14 postgresql-14-postgis-3
 En revanche, le packaging de PostgreSQL sur Debian et Ubuntu intègre des scripts de post-installation qui créent par défaut un cluster `main`. C'est sympa de faire une partie du taf mais ce serait plus correct de demander avant quand même, en plus, le cluster n'est même pas optimisé !  
 Quand je fais installer un four en terre chez moi, je ne m'attends pas à ce que l'artisan me fasse un calzone mal cuite juste après la dernière pierre posée ! :pizza:
 
-[![Pizza dans son four](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/pizza_four.webp "Pizza dans son four"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/pizza_four.webp){: data-mediabox="lightbox-gallery" data-title="Pizza dans son four - Si vous lisez en ayant faim : désolé !"}
+![Pizza dans son four](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/pizza_four.webp "Pizza dans son four"){: loading=lazy .img-center }
 
 ### Création d'un cluster optimisé
 
@@ -101,7 +101,7 @@ Pour cela, on va s'appuyer sur deux éléments :
 - la [documentation d'osm2pgsql](https://osm2pgsql.org/doc/manual.html#tuning-the-postgresql-server) qui recommande des paramètres de configuration
 - les outils comme [PGTune](https://pgtune.leopard.in.ua/) ou [Cybertec Postgres Configurator](http://pgconfigurator.cybertec.at/) qui permettent de générer une configuration "_good enough_" selon les capacités de la machine et le type d'application
 
-[![PGTune - Dell XPS 15 7590](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: data-mediabox="lightbox-gallery" data-title="PGTune - Dell XPS 15 7590"}
+![PGTune - Dell XPS 15 7590](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/pgtune_dell-xps-15-7590_osm_data.png "PGTune - Dell XPS 15 7590"){: .img-center loading=lazy}
 
 C'est parti, on crée un cluster `osmdata` en passant directement les options qui nous intéressent.
 
@@ -186,7 +186,7 @@ sudo pg_ctlcluster 14 osmdata start
 
 Et voilà, on a notre PostgreSQL proprement installé et configuré sur notre machine !
 
-[![Croquis du Grand Eléphant des machines de l'île de Nantes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_croquis.webp "Croquis du Grand Eléphant des machines de l'île de Nantes"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_croquis.webp "Croquis du Grand Eléphant des machines de l'île de Nantes"){: data-mediabox="lightbox-gallery" data-title="Croquis du Grand Eléphant des machines de l'île de Nantes - Eléphant, machine... vous l'avez ? ;)"}
+![Croquis du Grand Eléphant des machines de l'île de Nantes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_croquis.webp "Croquis du Grand Eléphant des machines de l'île de Nantes"){: .img-center loading=lazy}
 
 #### Changer la configuration du cluster plus tard
 
@@ -434,11 +434,11 @@ osm=#
 
 Pour s'y connecter avec QGIS, on va pouvoir tirer parti de notre [configuration d'authentification à l'aide du fichier pg_service.conf](#creer-le-role-et-gerer-lacces). Ainsi, seul le nom du service (= le nom de section entre `[]`) est nécessaire :
 
-[![QGIS - Connexion PostGIS avec service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_connexion_postgis_pg_service.webp "QGIS - Connexion PostGIS avec service"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_connexion_postgis_pg_service.webp "QGIS - Connexion PostGIS avec service"){: data-mediabox="lightbox-gallery" data-title="QGIS - Connexion PostGIS avec service"}
+![QGIS - Connexion PostGIS avec service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_connexion_postgis_pg_service.webp "QGIS - Connexion PostGIS avec service"){: .img-center loading=lazy}
 
 Et voilà notre liste de tables :
 
-[![QGIS - Liste des tables PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_postgis_osm_listing.webp "QGIS - Liste des tables PostGIS"){: .img-center loading=lazy}](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_postgis_osm_listing.webp "QGIS - Liste des tables PostGIS"){: data-mediabox="lightbox-gallery" data-title="QGIS - Liste des tables PostGIS"}
+![QGIS - Liste des tables PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_postgis_osm_listing.webp "QGIS - Liste des tables PostGIS"){: .img-center loading=lazy}
 
 ----
 
