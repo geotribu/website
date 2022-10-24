@@ -354,6 +354,7 @@ redirects:
     articles/2009/art_2009-04-18.md: articles/2009/2009-04-18_wheresthepath-ou-comment-planifier-un-itineraire.md
     articles/2009/art_2009-04-22.md: articles/2009/2009-04-22_o3d-ou-comment-integrer-de-la-3d-dans-votre-navigateur-grace-a-google.md
     articles/2009/art_2009-04-26.md: articles/2009/2009-04-26_pachube-vers-un-recensement-mondiale-des-capteurs.md
+    articles/2009/art_2009-05-05.md: articles/2009/2009-05-05_quand-l-opensource-communautaire-s-invite-a-la-maison-blanche.md
     articles/2009/art_2009-05-15.md: articles/2009/2009-05-15_un-annuaire-oriente-sig.md
     articles/2009/art_2009-05-19.md: articles/2009/2009-05-19_mapnik-le-moteur-cartographique-pour-les-perfectionnistes-du-graphisme.md
     articles/2009/art_2009-05-24.md: articles/2009/2009-05-24_a-la-decouverte-de-puzzle-gis.md
@@ -515,3 +516,4 @@ redirects:
     articles/2015/art_2015-02-09.md: articles/2015/2015-02-09_8eme_geoseminaire_silat.md
     articles/2015/art_2015-02-16.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
     articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
+    articles/2021/2021-06-17_qgis_personnaliser_splash_screen.md: articles/2021/2021-06-11_qgis_personnaliser_splash_screen.md
