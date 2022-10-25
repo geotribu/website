@@ -111,7 +111,7 @@ Afin de restreindre l'extraction des données OpenStreetMap à notre périmètre
 
 ![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
 
-Pour la suite des opérations, j'utilise [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) pour lire le fichier OpenStreetMap (.pbf) préalablement téléchargé afin d'intégrer une information structurée dans PostgreSQL. Si je reprends l'exemple de mes composteurs, je commence par parcourir le [wiki OpenStreetMap](https://wiki.openstreetmap.org/wiki/Main_Page) pour identifier les tags qui vont me permettre de les extraire facilement et je les ajoute dans le [fichier osmconf.ini](https://github.com/OSGeo/gdal/blob/master/gdal/data/osmconf.ini) utilisé par ogr2ogr.
+Pour la suite des opérations, j'utilise [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) pour lire le fichier OpenStreetMap (.pbf) préalablement téléchargé afin d'intégrer une information structurée dans PostgreSQL. Si je reprends l'exemple de mes composteurs, je commence par parcourir le [wiki OpenStreetMap](https://wiki.openstreetmap.org/wiki/Main_Page) pour identifier les tags qui vont me permettre de les extraire facilement et je les ajoute dans le [fichier osmconf.ini](https://github.com/OSGeo/gdal/blob/master/data/osmconf.ini) utilisé par ogr2ogr.
 
 [Récupérer des données OpenStreetMap via GDAL/OGR :fontawesome-solid-book:](https://portailsig.org/content/recuperer-des-donnees-openstreetmap-gdalogr.html){: .md-button }
 {: align=middle }
@@ -123,7 +123,7 @@ Voici les [tags à ajouter pour les composteurs](https://wiki.openstreetmap.org/
 attributes=amenity,recycling:organic
 ```
 
-[Consulter le fichier osmconf.ini par defaut :fontawesome-regular-file-code:](https://github.com/OSGeo/gdal/blob/master/gdal/data/osmconf.ini){: .md-button }
+[Consulter le fichier osmconf.ini par defaut :fontawesome-regular-file-code:](https://github.com/OSGeo/gdal/blob/master/data/osmconf.ini){: .md-button }
 {: align=middle }
 
 Maintenant que le fichier de configuration est paramétré, on va passer au script qui va nous permettre d'extraire la donnée d'OpenStreetMap pour ensuite le mettre en forme et l'intégrer dans PostgreSQL :
