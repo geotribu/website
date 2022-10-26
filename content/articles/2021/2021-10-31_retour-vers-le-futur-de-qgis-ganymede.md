@@ -39,7 +39,7 @@ Le site officiel indique [où trouver les anciennes versions](https://download.o
 
 Lancer l'installateur en mode administrateur et quelques instants plus tard, c'est bon : Quantum GIS est dans Program Files x86 de Windows 10 :men_with_bunny_ears_partying:.
 
-[![QGIS 0.9 About](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_about.png "QGIS 0.9 About"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_about.png){: data-mediabox="lightbox-gallery" data-title="QGIS 0.9 - A propos"}
+![QGIS 0.9 About](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_about.png "QGIS 0.9 About"){: .img-center loading=lazy }
 
 ### Le poids des ans
 
@@ -63,15 +63,15 @@ A l'époque où [Esri investissait près de 20% de son CA en R&D, sortait ArcExp
 
 Eh bien, voici quelques captures :
 
-[![QGIS 0.9 - Propriétés projet](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_project_properties.png "QGIS 0.9 - Propriétés projet"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_project_properties.png){: data-mediabox="lightbox-gallery" data-title="QGIS 0.9 - Propriétés projet"}
+![QGIS 0.9 - Propriétés projet](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_project_properties.png "QGIS 0.9 - Propriétés projet"){: .img-center loading=lazy }
 
 > Les propriétés d'un projet
 
-[![QGIS 0.9 - Options](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_options.png "QGIS 0.9 - Options"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_options.pn){: data-mediabox="lightbox-gallery" data-title="QGIS 0.9 - Options"}
+![QGIS 0.9 - Options](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_options.png "QGIS 0.9 - Options"){: .img-center loading=lazy }
 
 > Le panneau des options était épuré
 
-[![QGIS 0.9 - Plugins](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_plugins.png "QGIS 0.9 - Plugins"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_plugins.png){: data-mediabox="lightbox-gallery" data-title="QGIS 0.9 - Plugins"}
+![QGIS 0.9 - Plugins](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_plugins.png "QGIS 0.9 - Plugins"){: .img-center loading=lazy }
 
 > La modularité était déjà de la partie avec le gestionnaire de plugins
 
@@ -93,7 +93,7 @@ Un rapide coup d'oeil aux données et je me dis : "Trop cool ! Je vais faire une
 
 :hourglass_flowing_sand: 30 minutes plus tard :
 
-[![Carte QGIS 0.9](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_carte_crematoriums.png "Carte QGIS 0.9"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_carte_crematoriums.png){: data-mediabox="lightbox-gallery" data-title="Carte avec QGIS 0.9 - Fail 2021"}
+![Carte QGIS 0.9](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9-1x_carte_crematoriums.png "Carte QGIS 0.9"){: .img-center loading=lazy }
 
 Oui, un bel échec ! Malgré mon enthousiasme, j'ai juste galéré avec les limites de l'époque :
 
@@ -108,13 +108,13 @@ Oui, un bel échec ! Malgré mon enthousiasme, j'ai juste galéré avec les limi
 
 Bref, avant c'était pas forcément mieux. Je ne sais pas si l'adage des marmites s'applique aux SIG (Soupes d'Information Géographique :thinking: ?), mais une chose est sûre ~~qu'est-ce qu'on rigole bien en formation !~~ le projet QGIS a bien évolué depuis [son premier commit](/rdp/2020/rdp_2020-09-04/#avalanche-de-ressources-sur-qgis), nous avec et rien de mieux qu'un saut dans le temps pour s'en rendre compte !
 
-[![QGIS 0.9 vs 3.16](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_both_versions.png "QGIS 0.9 vs 3.16"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_both_versions.png){: data-mediabox="lightbox-gallery" data-title="QGIS 0.9 vs 3.16"}
+![QGIS 0.9 vs 3.16](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_both_versions.png "QGIS 0.9 vs 3.16"){: .img-center loading=lazy }
 
 ### Bonus
 
 Un participant de la formation a tenu à montrer que MapInfo 1998 tournait également très bien sur Windows 10 :
 
-[![MapInfo 1998 sur Windows 10](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/mapinfo1998.png "MapInfo 1998 sur Windows 10"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/mapinfo1998.png){: data-mediabox="lightbox-gallery" data-title="MapInfo 1998 sur Windows 10"}
+![MapInfo 1998 sur Windows 10](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/mapinfo1998.png "MapInfo 1998 sur Windows 10"){: .img-center loading=lazy }
 
 ----
 

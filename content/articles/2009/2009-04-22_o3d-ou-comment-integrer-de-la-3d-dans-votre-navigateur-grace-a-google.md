@@ -43,7 +43,7 @@ var streamBank = g_pack.createObject('StreamBank');
 
 L'architecture d'O3D est présentée ci-dessous :
 
-[![Google O3D](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/google_o3d_schema_software_stack.png "Google O3D"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/google_o3d_schema_software_stack.png){: data-mediabox="lightbox-gallery" data-title="Google O3D" }
+![Google O3D](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/google_o3d_schema_software_stack.png "Google O3D"){: .img-center loading=lazy }
 
 Google avec O3D a pour objectif de créer un nouveau standard Web. Mais, avec l'arrivée prochaine du HTML 5 et le développement de [Canvas 3D](https://wiki.mozilla.org/Canvas:3D) (et également [3D Canvas JS Library](http://www.c3dl.org/)), lequel de ces standards restera ?
 

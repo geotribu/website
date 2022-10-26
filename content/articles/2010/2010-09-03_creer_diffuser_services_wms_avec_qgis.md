@@ -59,7 +59,7 @@ Alors là rien de plus simple !
 
 Démarrez tout simplement QGIS et créez un projet quelconque. Afin de vous montrer toute l'étendue de cette nouvelle fonctionnalité, j'ai effectué une analyse thématique. Vous verrez qu'au moment de la création du service WMS, le style que nous avons spécifié sera préservé.
 
-[![QGIS WMS analyse](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/analyse_qgis.png "QGIS WMS analyse"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/analyse_qgis.png){: data-mediabox="lightbox-gallery" data-title="QGIS WMS analyse"}
+![QGIS WMS analyse](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/analyse_qgis.png "QGIS WMS analyse"){: .img-center loading=lazy }
 
 ## Création du service WMS
 
@@ -127,7 +127,7 @@ http://localhost/cgi-bin/world-analyse/qgis_mapserv.fcgi?SERVICE=WMS&VERSION=1.3
 
 Et, tada ! Voilà le résultat :
 
-[![QGIS WMS rendu web](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_net.png "QGIS WMS rendu web"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_net.png){: data-mediabox="lightbox-gallery" data-title="QGIS WMS rendu web"}
+![QGIS WMS rendu web](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_net.png "QGIS WMS rendu web"){: .img-center loading=lazy }
 
 Comme vous pouvez le constater, une fois la procédure connue, cela ne prend pas plus de 2 minutes à créer et diffuser un nouveau service WMS. De plus, le fait de pouvoir définir le style des couches directement depuis QGIS apporte une réelle souplesse d'utilisation. Néanmoins, il reste à connaitre maintenant les performances de ce serveur cartographique. Le [benchmark](http://blog.opengeo.org/2010/08/16/wms-benchmarking/) organisé lors du prochain [FOSS4G](http://2010.foss4g.org/) devrait très certainement nous apporter des informations intéressantes.
 

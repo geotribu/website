@@ -29,7 +29,7 @@ La philosopie du site tient en une simple phrase : "**Vos cartes de ville libres
 
 Côté architecture technique, l'orientation est résolument pro python (Django, Mapnik...) avec une bonne dose également de Postgresql/PostGIS pour la base de données.
 
-[![MapOSMatic](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/maposmatic.png "MapOSMatic"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/maposmatic.png){: data-mediabox="lightbox-gallery" data-title="MapOSMatic" }
+![MapOSMatic](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/maposmatic.png "MapOSMatic"){: .img-center loading=lazy }
 
 La génération du plan se décompose en trois étapes :
 
@@ -37,7 +37,7 @@ La génération du plan se décompose en trois étapes :
 1. Validation de la zone. Le plan à générer est alors mis à la suite des autres demandes en attente. L'état d'avancement est consultable depuis l'onglet "Rendus" (Jobs)
 1. Une fois la demande traitée, celle-ci est disponible depuis l'onglet "Cartes" (Maps). Le plan ainsi que son index des rues peuvent être alors librement téléchargés (format PDF, SVG, PNG...).
 
-[![MapOSMatic - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/maposmatic_cartes.png "MapOSMatic - Carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/maposmatic_cartes.png){: data-mediabox="lightbox-gallery" data-title="MapOSMatic - Carte" }
+![MapOSMatic - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/maposmatic_cartes.png "MapOSMatic - Carte"){: .img-center loading=lazy }
 
 Cet outil, en plus d'être simple d'utilisation, offre un service des plus utiles tout en gardant un rendu cartographique de qualité. Il est possible également d'imaginer des évolutions futures, en créant par exemples des plans de villes touristiques (avec affichage de POIs remarquables) ou sportifs...
 

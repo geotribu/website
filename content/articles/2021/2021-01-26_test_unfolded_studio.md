@@ -37,7 +37,7 @@ Si vous avez essayé Unfolded Studio, n'hésitez pas à laisser vos impressions 
 
 ## Carte des logements Airbnb de Bordeaux
 
-[![capture unfolded studio](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png "Capture Unfolded Studio"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png){: data-mediabox="illustrations" data-title="Capture Unfolded Studio" }
+![capture unfolded studio](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png "Capture Unfolded Studio"){: .img-center loading=lazy }
 
 Cette carte représente (à gauche) la densité de logements Airbnb sur l'agglomération bordelaise, comparée (à droite) à une discrétisation par niveaux de prix (plus c'est foncé, plus le logement est cher).
 
@@ -67,53 +67,53 @@ Vous accédez au studio ici <https://studio.unfolded.ai/>, et une fois connecté
 
 On vous propose d'importer des fichiers ou d'en utiliser à partir d'une url.
 
-[![import donnee](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/import_donnees.png "Import données"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/import_donnees.png){: data-mediabox="illustrations" data-title="Import données" }
+![import donnee](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/import_donnees.png "Import données"){: loading=lazy }
 
 Et l'application affiche dans un premier temps ce qu'il lui semble le plus "logique" comme manière de représenter chaque donnée chargée.
 
-[![premiere representation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png "Première représentation"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png){: data-mediabox="illustrations" data-title="Première représentation" }
+![premiere representation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/premiere_representation.png "Première représentation"){: loading=lazy }
 
 Libre à vous ensuite de changer le type de représentation, dont les possibilités sont assez fournies. Vous trouverez ci-dessous la liste complète, avec un accès à la documentation (en cliquant sur le nom de la représentation) et un exemple :
 
 #### [Point](https://docs.unfolded.ai/studio/layer-reference/point)
 
-[![point](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/point.png "Point"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/point.png){: data-mediabox="illustrations" data-title="Point" }
+![point](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/point.png "Point"){: .img-center loading=lazy }
 
 #### [Arc](https://docs.unfolded.ai/studio/layer-reference/arc)
 
-[![arc](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/arc.png "Arc"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/arc.png){: data-mediabox="illustrations" data-title="Arc" }
+![arc](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/arc.png "Arc"){: .img-center loading=lazy }
 
 #### [Ligne](https://docs.unfolded.ai/studio/layer-reference/line)
 
-[![ligne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/ligne.png "Ligne"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/ligne.png){: data-mediabox="illustrations" data-title="Ligne" }
+![ligne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/ligne.png "Ligne"){: .img-center loading=lazy }
 
 #### [Grille](https://docs.unfolded.ai/studio/layer-reference/grid)
 
-[![grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/grille.png "Grille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/grille.png){: data-mediabox="illustrations" data-title="Grille" }
+![grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/grille.png "Grille"){: .img-center loading=lazy }
 
 #### [Polygone](https://docs.unfolded.ai/studio/layer-reference/polygon)
 
-[![polygone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/polygone.png "Polygone"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/polygone.png){: data-mediabox="illustrations" data-title="Polygone" }
+![polygone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/polygone.png "Polygone"){: .img-center loading=lazy }
 
 #### [Cluster](https://docs.unfolded.ai/studio/layer-reference/cluster)
 
-[![cluster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/cluster.png "Cluster"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/cluster.png){: data-mediabox="illustrations" data-title="Cluster" }
+![cluster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/cluster.png "Cluster"){: .img-center loading=lazy }
 
 #### [Icône](https://docs.unfolded.ai/studio/layer-reference/icon)
 
-[![icone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/icone.png "Icône"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/icone.png){: data-mediabox="illustrations" data-title="Icône" }
+![icone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/icone.png "Icône"){: .img-center loading=lazy }
 
 #### [Hexbin](https://docs.unfolded.ai/studio/layer-reference/hexbin)
 
-[![hexbin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/hexbin.png "Hexbin"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/hexbin.png){: data-mediabox="illustrations" data-title="Hexbin" }
+![hexbin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/hexbin.png "Hexbin"){: .img-center loading=lazy }
 
 #### [Heatmap](https://docs.unfolded.ai/studio/layer-reference/heatmap)
 
-[![heatmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/heatmap.png "Heatmap"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/heatmap.png){: data-mediabox="illustrations" data-title="Heatmap" }
+![heatmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/heatmap.png "Heatmap"){: .img-center loading=lazy }
 
 #### [H3](https://docs.unfolded.ai/studio/layer-reference/h3)
 
-[![h3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/h3.png "H3"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/h3.png){: data-mediabox="illustrations" data-title="H3" }
+![h3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/h3.png "H3"){: .img-center loading=lazy }
 
 #### [Trip layer](https://docs.unfolded.ai/studio/layer-reference/trip)
 
@@ -135,7 +135,7 @@ On remarquera qu'il n'est, pour l'instant, pas possible de jouer sur les transpa
 !!! warning
     Passons rapidement sur ce titre imitant très mal le bad side de Smeagol.
 
-[![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: loading=lazy align=right clear=left width=100px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png){: data-mediabox="illustrations" data-title="Manipulation de données" }
+![manipulation donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/columns.png "Manipulation de données"){: loading=lazy align=right clear=left width=100px }
 
 L'onglet Columns permet de faire un peu de manipulation de données.
 
@@ -150,7 +150,7 @@ Déjà pas mal !
 
 ### Fonctionnalités réjouissantes mais peu poussées
 
-[![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy align=left clear=left width=90px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png){: data-mediabox="illustrations" data-title="Filtres" }
+![filtres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/filtres.png "Filtres"){: loading=lazy align=left clear=left width=90px }
 
 D'autres fonctionnalités existent comme des filtres, des options sur les infobulles ou encore un geocoder.
 
@@ -167,7 +167,7 @@ Unfolded va stocker la carte que vous venez de créer dans un dossier de leur c�
 
 Une fois publiée (ce qui peut prendre du temps), vous pourrez la partager directement via une url ou l'embarquer dans un site internet via un iframe.
 
-[![partager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png "Partager"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png){: .img-center data-mediabox="illustrations" data-title="Partager" }
+![partager](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/partager.png "Partager"){: loading=lazy }
 
 Enfin, [plusieurs options d'export](https://docs.unfolded.ai/studio/user-guide/publish-and-export) s'offrent à vous :
 
@@ -179,7 +179,7 @@ Enfin, [plusieurs options d'export](https://docs.unfolded.ai/studio/user-guide/p
 
 Unfolded propose un free tier avec les caractéristiques suivantes :
 
-[![pricing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png "Pricing"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png){: .img-center data-mediabox="illustrations" data-title="Pricing" }
+![pricing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/pricing.png "Pricing"){: loading=lazy }
 
 Clairement, rien n'est gratuit dans ce bas monde, donc si vous souhaitez faire un peu plus que jouer avec Unfolded Studio, il est fort à parier que vous serez obligé de passer par la version payante (dont le prix n'est pour l'instant pas communiqué) ou que vous vous retournerez vers [kepler.gl] ou [deck.gl].
 

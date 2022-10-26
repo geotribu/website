@@ -30,7 +30,7 @@ Après quelques petits ratés réglages, notamment le rythme d'acquisition des d
 
 J'enregistre donc mes premières traces et me félicite d'avoir su anticiper mes besoins en mettant muni d'un carnet et de quoi noter quelques indications (nom des rues, plans...). Je me rends compte que cet accessoire devient rapidement aussi essentiel que mon GPS. Sans lui, je ne pourrais pas renseigner les informations attributaires.
 
-[![Carnet OSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/carnet_OSM.jpg "Carnet OSM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/carnet_OSM.jpg){: data-mediabox="lightbox-gallery" data-title="Carnet OSM" }
+![Carnet OSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/carnet_OSM.jpg "Carnet OSM"){: .img-center loading=lazy }
 
 Néanmoins, si comme moi vous enregistrez vos données en voiture la présence d'un coéquipier s'occupant de la conduite ou des croquis est obligatoire. J'ai eu la chance de voir ma compagne se prendre au jeu et c'est donc elle qui s'est chargée de réaliser tous les jolis dessins et annotations diverses.
 
@@ -44,11 +44,11 @@ Je me tourne alors vers la panoplie des applications disponibles. Une retient al
 
 La prise en main n'est pas instantanée et je reste bien quelques minutes à me demander comment cela fonctionne. A force de tâtonner et parcourir la documentation j'arrive enfin à extraire mon premier fichier .GPX.
 
-[![BT747](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/BT747.png "BT747"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/BT747.png){: data-mediabox="lightbox-gallery" data-title="BT747" }
+![BT747](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/BT747.png "BT747"){: .img-center loading=lazy }
 
 Une fois habitué ce logiciel se révèle être un véritable couteau suisse de la cartographie. En effet en plus d'être capable de se connecter à mon GPS et d'en extraire les données, il permet de convertir ces dernières dans 6 formats (GPX, KML, KMZ, CSV, HTML, NMEA) ou encore de les afficher directement sur un fond cartographique utilisant comme source de données devinez quoi? Ben, OpenStreetMap évidemment !
 
-[![BT747 - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/BT747_map.png "BT747 - Carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/BT747_map.png){: data-mediabox="lightbox-gallery" data-title="BT747 - Carte" }
+![BT747 - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/BT747_map.png "BT747 - Carte"){: .img-center loading=lazy }
 
 Bon, me voilà muni de mon fichier GPX contenant mes traces. J'ai vérifié rapidement leur cohérence en les visualisant sur [QGIS](https://www.qgis.org/). Passons maintenant au coeur de notre projet, mettre à jour les données d'OSM.
 
@@ -56,21 +56,21 @@ Bon, me voilà muni de mon fichier GPX contenant mes traces. J'ai vérifié rapi
 
 Pour mettre à jour les données j'ai besoin pour cela d'un éditeur cartographique. J'aurais pu pour cela utiliser [Potlach](https://wiki.openstreetmap.org/wiki/FR:Potlatch) l'éditeur en ligne, mais celui-ci montre vite ses limites lors de grosses MAJ. En effet, l'ergonomie n'est pas forcément adaptée et il ne bénéficie pas non plus d'aide à la saisie pour les balises. Il est donc avant tout à réserver pour de petits travaux. Bien évidemment, d'autres éditeurs existent et le choix de l'un ou l'autre dépend avant tout de vos affinités. Matt Amos, sur l'un de ces [posts](http://www.asklater.com/matt/wordpress/2009/08/editor-popularity/), a d'ailleurs joliment illustré la répartition de ces éditeurs par pays.
 
-[![OSM Editors](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/created_by_20090826.png "OSM Editors"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/created_by_20090826.png){: data-mediabox="lightbox-gallery" data-title="OSM Editors" }
+![OSM Editors](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/created_by_20090826.png "OSM Editors"){: .img-center loading=lazy }
 
 Je m'oriente donc vers [JOSM](https://wiki.openstreetmap.org/wiki/FR:JOSM) qui au vu des copies d'écrans à l'air plutôt sympa. Je regarde dans mon dépôt s'il existe une version spécifique pour Ubuntu. Celle proposée bien que fonctionnelle est largement dépassée. Je [télécharge](http://josm.openstreetmap.de/josm-tested.jar) donc la dernière version stable, que je lance ensuite par un simple "java -jar josm-tested.jar".
 
-[![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/JOSM.png "JOSM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/JOSM.png){: data-mediabox="lightbox-gallery" data-title="JOSM" }
+![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/JOSM.png "JOSM"){: .img-center loading=lazy }
 
 Je télécharge alors directement depuis JOSM, les données d'OSM correspondant à ma zone de MAJ et ajoute également mon fichier GPX correspondant à mes données.
 
-[![JOSM - Téléchargement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/JOSM_OSM.png "JOSM - Téléchargement"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/JOSM_OSM.png){: data-mediabox="lightbox-gallery" data-title="JOSM - Téléchargement" }
+![JOSM - Téléchargement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/JOSM_OSM.png "JOSM - Téléchargement"){: .img-center loading=lazy }
 
 Je tâtonne un peu avant de comprendre le fonctionnement de JOSM notamment au niveau des options de topologies. Mais la prise en main est beaucoup plus facile que je l'espérais. Un mois avant j'avais dû réaliser un travail similaire sur MapInfo et je dois dire que celui-ci est loin d'atteindre le niveau de JOSM.
 
 Tout est fait pour faciliter le travail de digitalisation. Il est par exemple très facile de créer automatiquement un rond-point, d'aligner automatiquement les noeuds d'un segment, de séparer une rue en deux segments ou au contraire de les fusionner pour ne former qu'un seul élément. Je créé donc rapidement mes premières formes géométriques et grâce à l'aide à la saisie je spécifie les informations attributaires nécessaires (type de route, revêtement...).
 
-[![JOSM - Tag](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/tag.png "JOSM - Tag"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/tag.png){: data-mediabox="lightbox-gallery" data-title="JOSM - Tag" }
+![JOSM - Tag](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/tag.png "JOSM - Tag"){: .img-center loading=lazy }
 
 Bon, tout me semble correct, je décide alors de valider mon travail en l'exportant sur OSM.
 
@@ -78,17 +78,17 @@ Bon, tout me semble correct, je décide alors de valider mon travail en l'export
 
 Aie ! Moi qui pensais que tout était bon, voilà que JOSM m'annonce fièrement qu'il a détecté plusieurs erreurs. Celles-ci sont aussi bien d'ordres géométriques, qu'attributaires. Heureusement pour certaines d'entre elles il arrive à les corriger automatiquement et je m'occupe donc de modifier celles restantes.
 
-[![JOSM - Erreurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/errors_OSM.png "JOSM - Erreurs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/errors_OSM.png){: data-mediabox="lightbox-gallery" data-title="JOSM - Erreurs" }
+![JOSM - Erreurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/errors_OSM.png "JOSM - Erreurs"){: .img-center loading=lazy }
 
 Je valide à nouveau mes données et les envoie sur le serveur d'OSM. Après quelques heures, c'est avec joie que je vois que celles-ci ont été prises en compte.
 
-[![JOSM - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/OSM_carto.png "JOSM - Carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/OSM_carto.png){: data-mediabox="lightbox-gallery" data-title="JOSM - Carte" }
+![JOSM - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/OSM_carto.png "JOSM - Carte"){: .img-center loading=lazy }
 
 Et voilà, j'ai à mon tour participé à ce formidable projet en apportant mes quelques mètres de bitumes virtuels. Le plus drôle, c'est que l'on se prend très vite au jeu et je ne me dépasse plus sans mon GPS. Il m'arrive même de prendre volontairement d'autres itinéraires que ceux que j'utilise habituellement dans le seul but d'enregistrer de nouvelles traces.
 
 Je profite de ce post pour vous annoncer que je quitterai bientôt mon île pour une nouvelle aventure en métropole. Je jette un coup d'œil sur OSM afin de voir l'état d'avancement de collecte des données. A mon grand regret, mais tant mieux pour OSM, une très grosse partie à l'air déjà enregistrée. Une fois sur place je regarderai en détail ce que je peux faire. En attendant saurez-vous trouver grâce à l'image ci-dessous où je me rends?
 
-[![JOSM - Ville](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/new_ville.png "JOSM - Ville"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/new_ville.png){: data-mediabox="lightbox-gallery" data-title="JOSM - Ville" }
+![JOSM - Ville](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/new_ville.png "JOSM - Ville"){: .img-center loading=lazy }
 
 ----
 

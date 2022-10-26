@@ -106,14 +106,14 @@ jmo@jmoslandia:/tmp/website-gh-pages$ du -sh search/
 
 Evidemment, ce dossier ne contient pas les images, hébergées sur un [serveur à part](/contribuer/guides/image/#heberger-une-image-sur-le-cdn-de-geotribu) et sauvegardées mensuellement en tant que release sur GitHub. A titre d'exemple, [la sauvegarde de novembre pèse 422 Mo](https://github.com/geotribu/website/releases/download/2020.11/bkp_cdn_2020-11-11.tar.gz).
 
-[![Fernand Léger - Les constructeurs](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg "Quand je vous disais que c'est Léger !"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg){: data-mediabox="lightbox-gallery" data-title="Quand je vous disais que c'est Léger !"}
+![Fernand Léger - Les constructeurs](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg "Quand je vous disais que c'est Léger !"){: loading=lazy }
 {: align=middle }
 
 ## 2. Servir le site
 
 En ouvrant simplement le fichier `index.html`, on voit déjà apparaître la page d'accueil dans son navigateur par défaut. Mais le site étant configuré pour avoir des URLs correspondant au titre de la page sans l'extension `.html`, la navigation n'est donc pas fonctionnelle, le [navigateur se comportant davantage comme un explorateur de fichiers](https://developer.mozilla.org/fr/docs/Apprendre/Ouvrir_un_fichier_dans_un_navigateur_web#Ouvrir_un_fichier_local).
 
-[![Le site sans serveur web](https://cdn.geotribu.fr/img/tuto/static_web/static_web_browser_as_file_explorer.webp "Consulter le site sur Firefox sans serveur web"){: loading=lazy }](https://cdn.geotribu.fr/img/tuto/static_web/static_web_browser_as_file_explorer.webp){: data-mediabox="lightbox-gallery" data-title="Consulter le site sur Firefox sans serveur web"}
+![Le site sans serveur web](https://cdn.geotribu.fr/img/tuto/static_web/static_web_browser_as_file_explorer.webp "Consulter le site sur Firefox sans serveur web"){: loading=lazy }
 {: align=middle }
 
 Si on veut avoir le site pleinement fonctionnel, il suffit donc de "servir" le dossier par un... serveur web :clap:. Parce-que déployer un serveur web n'est pas du tout le sujet, utilisons les outils minimalistes intégrés à de nombreux langages :

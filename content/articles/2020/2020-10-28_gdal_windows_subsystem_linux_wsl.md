@@ -34,7 +34,7 @@ J'ai à ma disposition un ordinateur puissant sous Windows, mais l'accès à GDA
 
 Alors pourquoi ne pas essayer de mettre à profit WSL que [j'utilise déjà pour le développement ou le test](https://twitter.com/geojulien/status/1139811447414775808) ?
 
-[![Architecture WSL 2](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl2_architecture.png "UArchitecture WSL 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl2_architecture.png){: data-mediabox="lightbox-gallery" data-title="Architecture WSL 2"}
+![Architecture WSL 2](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl2_architecture.png "UArchitecture WSL 2"){: .img-center loading=lazy }
 
 WSL ? Le Windows Subsystem for Linux (dont [le code du noyau est sous GPL-2](https://github.com/microsoft/WSL2-Linux-Kernel)) permet depuis quelques années déjà de faire tourner un terminal bash sous Windows et ainsi bénéficier de l'usage des programmes populaires de l'écosystème Linux. Dans ce tutoriel, nous verrons comment installer et configurer WSL sur Windows 10, puis nous verrons les possibilités que cela ouvre en installant et utilisant GDAL dans le sous-système Linux.
 
@@ -130,7 +130,7 @@ Une fois notre distribution installée, continuons nos opérations sur notre nou
 
 Avant d'aller plus loin, quelques commandes à retenir, qui sont évidemment disponibles (et même traduites !) via l'argument `--help` :
 
-[![Onglets WSL dans Windows Terminal](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_terminal_tabs.png "Titre image"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_terminal_tabs.png){: data-mediabox="lightbox-gallery" data-title="Changer de shell encore plus facilement que de chemise"}
+![Onglets WSL dans Windows Terminal](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_terminal_tabs.png "Titre image"){: .img-center loading=lazy }
 
 ### Lister les distributions installées
 
@@ -218,11 +218,11 @@ A l'instar des autres utilitaires intégrés de base dans Ubuntu, `wget` n'atten
 wsl -d Ubuntu-20.04 -- wget https://www.data.gouv.fr/fr/datasets/r/931cb357-33e6-46d6-8d2c-a17be9038e90 -O test_gdal_wsl.shp.zip
 ```
 
-[![capture wget wsl](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_wget_from_datagouv.png "Une commande wget comme on les aime"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_wget_from_datagouv.png){: data-mediabox="lightbox-gallery" data-title="Une commande wget comme on les aime"}
+![capture wget wsl](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_wget_from_datagouv.png "Une commande wget comme on les aime"){: .img-center loading=lazy }
 
 Et voilà mon fichier dans mon explorateur Windows :
 
-[![capture wget wsl file explorer](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_wget_result_explorer.png "Résultat du téléchargement avec wget dans Windows"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_wget_result_explorer.png){: data-mediabox="lightbox-gallery" data-title="Résultat du téléchargement avec wget dans Windows"}
+![capture wget wsl file explorer](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_wget_result_explorer.png "Résultat du téléchargement avec wget dans Windows"){: .img-center loading=lazy }
 
 #### Un petit ogrinfo des familles
 
@@ -233,7 +233,7 @@ On peut donc regarder de plus près notre fichier téléchargé avec un bon vieu
 wsl -d Ubuntu-20.04 -- ogrinfo -al -so test_gdal_wsl.shp.zip
 ```
 
-[![capture wsl ogrinfo](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogrinfo.png "ogrinfo dans Windows via WSL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogrinfo.png){: data-mediabox="lightbox-gallery" data-title="ogrinfo dans Windows via WSL"}
+![capture wsl ogrinfo](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogrinfo.png "ogrinfo dans Windows via WSL"){: .img-center loading=lazy }
 
 #### Contribuons à la fin du règne du Shapefiles
 
@@ -252,7 +252,7 @@ wsl -d Ubuntu-20.04 -- ogr2ogr -t_srs EPSG:3857 -f GPKG "geotribu_gdal_wsl_gpkg.
 
 Et on ouvre notre couche dans QGIS :
 
-[![capture qgis résultat ogr2ogr](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogr2ogr_result_qgis.png "ogrinfo dans Windows via WSL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogr2ogr_result_qgis.png){: data-mediabox="lightbox-gallery" data-title="La couche du geopackage dans QGIS en sortie d'ogr2ogr via WSL"}
+![capture qgis résultat ogr2ogr](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogr2ogr_result_qgis.png "ogrinfo dans Windows via WSL"){: .img-center loading=lazy }
 
 ----
 

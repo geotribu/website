@@ -29,7 +29,7 @@ public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceSt
 
 `R.id.mapview` fait référence à l'identifiant de votre carte dans son layout, ici dans `/res/layout/main.xml`. Il suffit alors d'appliquer la méthode `setBuiltInZoomControls` avec le paramètre `true`; si vous le passez à `false`, cela permet d'enlever ce contrôleur. Voici le résultat :
 
-[![Google Maps - Zoom](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_zoom.png "Google Maps - Zoom"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_zoom.png){: data-mediabox="lightbox-gallery" data-title="Google Maps - Zoom" }
+![Google Maps - Zoom](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_zoom.png "Google Maps - Zoom"){: .img-center loading=lazy }
 
 ## Une vue satellite
 
@@ -48,7 +48,7 @@ public void onCreate(Bundle savedInstanceState) {
 
 Et voici le résultat:
 
-[![Google Maps - Satellite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_sat.png "Google Maps - Satellite"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_sat.png){: data-mediabox="lightbox-gallery" data-title="Google Maps - Satellite" }
+![Google Maps - Satellite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_sat.png "Google Maps - Satellite"){: .img-center loading=lazy }
 
 ## Centrer la carte sur un point précis
 
@@ -76,7 +76,7 @@ public void onCreate(Bundle savedInstanceState) {
 
 Il suffit de créer un GeoPoint qui est caractérisé par une latitude et une longitude. Les nombres en format double sont multipliés par 1000000 et castés en int. Ensuite on donne ce point à la méthode setCenter qui s'applique sur le MapController de la mapView. On peut ensuite appliquer un niveau de zoom, suivant ce que l'on souhaite voir. Et voici le résultat:
 
-[![Google Maps - Centrer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_center.png "Google Maps - Centrer"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_center.png){: data-mediabox="lightbox-gallery" data-title="Google Maps - Centrer" }
+![Google Maps - Centrer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_center.png "Google Maps - Centrer"){: .img-center loading=lazy }
 
 ## Dois-je prendre la route ?
 
@@ -104,7 +104,7 @@ public void onCreate(Bundle savedInstanceState) {
 
 Il suffit d'utiliser la méthode setTraffic avec le paramètre true. Donc, je ne vais pas prendre la voiture :
 
-[![Google Maps - Traffic](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_traffic.png "Google Maps - Traffic"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_traffic.png){: data-mediabox="lightbox-gallery" data-title="Google Maps - Traffic" }
+![Google Maps - Traffic](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_2_traffic.png "Google Maps - Traffic"){: .img-center loading=lazy }
 
 ## Remarques
 

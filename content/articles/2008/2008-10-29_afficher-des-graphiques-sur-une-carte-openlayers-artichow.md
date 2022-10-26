@@ -120,9 +120,9 @@ Dans mes variables globales GET je récupère les informations envoyées par mon
 
 Les données utilisées proviennent de : [geodata](http://geodata.grid.unep.ch/#)
 
-[![Exemple 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/Capture.png "Exemple 1"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/Capture.png "Exemple 1"){: data-mediabox="gallery-lightbox" data-title="Exemple 1"}
+![Exemple 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/Capture.png "Exemple 1"){: .img-center loading=lazy }
 
-[![Exemple 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/graph_bar.png "Exemple 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/graph_bar.png "Exemple 2"){: data-mediabox="gallery-lightbox" data-title="Exemple 2"}
+![Exemple 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/graph_bar.png "Exemple 2"){: .img-center loading=lazy }
 
 ----
 
