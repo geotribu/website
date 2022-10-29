@@ -31,7 +31,7 @@ Créé par [Dennis Luxen](http://algo2.iti.kit.edu/luxen.php) de l'Institut Tech
 
 Bon c'est bien beau d'implémenter un autre algorithme, mais est-ce pour autant que celui-ci est plus rapide. En tout état de cause OUI ! La comparaison effectuée par [Pascal Neis](http://neis-one.org/) est sans équivoque. En effet, OSRM est 4 à 7 fois plus rapide que les moteur d'itinéraires de MapQuest et de CloudMade. Mieux encore, il se place même devant celui de Google, c'est vous dire.
 
-[![Routing - Comparaison](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/osrm/comparison_routing_times.png "Routing - Comparaison"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/osrm/comparison_routing_times.png "Routing - Comparaison"){: data-mediabox="lightbox-gallery" data-title="Routing - Comparaison" }
+![Routing - Comparaison](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/osrm/comparison_routing_times.png "Routing - Comparaison"){: .img-center loading=lazy }
 
 > Source : [Neis One](https://neis-one.org/2011/07/comparison-routing/)
 

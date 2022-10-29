@@ -22,7 +22,7 @@ Mais en réalité OSM est un projet collaboratif dont le coeur est la base de do
 
 C'est pourquoi l'objectif de ce billet est de clarifier l'architecture générale d'OSM et d'en identifier les principaux composants.
 
-[![OSM - Structural Iceberg](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/Structural-Iceberg.png "OSM - Structural Iceberg"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/Structural-Iceberg.png "OSM - Structural Iceberg"){: data-mediabox="lightbox-gallery" data-title="OSM - Structural Iceberg" }
+![OSM - Structural Iceberg](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/Structural-Iceberg.png "OSM - Structural Iceberg"){: .img-center loading=lazy }
 
 ----
 
@@ -30,7 +30,7 @@ C'est pourquoi l'objectif de ce billet est de clarifier l'architecture général
 
 Quel titre étrange pour commencer ce billet non ? En réalité, celui-ci traduit parfaitement ce que je souhaite vous exposer. En effet, quand au début des années 80 René Magritte peint son fameux tableau intitulé "La Trahison des images", il souhaite montrer qu'une image, même peinte de la manière la plus réaliste qui soit, reste une image.
 
-[![René Magritte - La Trahison des images](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/margritte.jpg "René Magritte - La Trahison des images"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/margritte.jpg "René Magritte - La Trahison des images"){: data-mediabox="lightbox-gallery" data-title="René Magritte - La Trahison des images" }
+![René Magritte - La Trahison des images](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/margritte.jpg "René Magritte - La Trahison des images"){: .img-center loading=lazy }
 
 De la même manière, la carte d'OpenStreetMap que (presque) tout le monde connait n'est pas OpenStreetMap. Ce n'est en réalité qu'un fragment de ce projet. Un des fragments les plus visibles certes, mais un fragment tout de même !
 
@@ -44,7 +44,7 @@ Comme je vous le disais en introduction, OpenStreetMap c'est un système complet
 - Ces données sont également utilisées les cartes, où plutôt devrais-je dire les tuiles, que vous voyez sur les sites utilisant OSM. Il n'y a pas une seule carte mais autant de cartes qu'il existe de style. Ainsi, ne soyez pas surpris si la carte d'[OpenMapQuest](http://open.mapquest.co.uk/) ne ressemble en rien à celle par défaut d'[OSM](https://www.openstreetmap.org/).
 - Enfin, tout en haut, ce sont les logiciels et bibliothèque permettant de visualiser les tuiles dont nous parlions dans le paragraphe précédent.
 
-[![Architecture d'OpenStreetMap](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/OSM_Components.png "Architecture d'OpenStreetMap"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/OSM_Components.png "René Magritte - La Trahison des images"){: data-mediabox="lightbox-gallery" data-title="Architecture d'OpenStreetMap" }
+![Architecture d'OpenStreetMap](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/OSM_Components.png "Architecture d'OpenStreetMap"){: .img-center loading=lazy }
 
 ## En conclusion
 

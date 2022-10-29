@@ -29,7 +29,7 @@ Les technologies employées sont le framework [ExtJS](http://www.extjs.com/), le
 
 ~~Cliquez sur l'image pour lancer l'application :-)~~
 
-[![Imagimap Road](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/imagimap_road.png "Imagimap Road"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/imagimap_road.png "Imagimap Road"){: data-mediabox="gallery-lightbox" data-title="Imagimap Road" }
+![Imagimap Road](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/imagimap_road.png "Imagimap Road"){: .img-center loading=lazy }
 
 Afin d'améliorer ce service, nous vous invitons à poster vos remarques, nous étudierons toutes les demandes de nouvelles fonctionnalités.
 

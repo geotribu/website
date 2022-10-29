@@ -141,7 +141,7 @@ Nous utilisons actuellement une quinzaine de formulaires ODK pour :
 Les outils de la suite ODK sont sollicités en différents points du Système d'information géographiques (SIG) du Cen.
 Le serveur nommé Central est au centre du système. Collect (sur les téléphones) et Enketo sur Firefox proposent les interfaces de collecte de données.
 
-[![place d'odk dans le SIG du Conservatoire d'espaces naturels](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_dans_le_SIG_du_CEN_Occitanie.png "Les outils d'ODK dans le SIG du Cen"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_dans_le_SIG_du_CEN_Occitanie.png){: data-mediabox="lightbox-gallery" data-title="Les outils d'ODK dans le SIG du Cen"}
+![place d'odk dans le SIG du Conservatoire d'espaces naturels](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/odk_dans_le_SIG_du_CEN_Occitanie.png "Les outils d'ODK dans le SIG du Cen"){: .img-center loading=lazy }
 
 ### Collect
 
@@ -151,8 +151,8 @@ C'est l'outil déployé sur les terminaux Android, qui sert les formulaires, per
 
 C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/aggregate-is-no-longer-being-updated/33742). Il assure la gestion et la diffusion des formulaires, des utilisateurs, des droits de ces derniers et la collecte des "soumissions" (données envoyées par Collect).
 
-[![ODK Central : page d'accueil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png "Page d'accueil d'ODK Central"){: loading=lazy width=300 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'accueil d'ODK Central"}
-[![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png "Central, projets et soumissions"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png){: data-mediabox="lightbox-gallery" data-title="Page d'un projet dans ODK Central"}
+![ODK Central : page d'accueil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_odk_central.png "Page d'accueil d'ODK Central"){: loading=lazy width=300 }
+![Page d'un projet dans ODK Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/formulaire_et_soumissions_dans_odk_central.png "Central, projets et soumissions"){: loading=lazy width=300px }
 {: align=middle }
 
 [Documentation ODK Central :fontawesome-solid-book:](https://docs.getodk.org/central-intro/){: .md-button }
@@ -162,7 +162,7 @@ C'est le serveur qui remplace désormais [Aggregate](https://forum.getodk.org/t/
 
 Central embarque [Enketo](https://enketo.org) de sorte que les formulaires réalisés sont désormais aussi utilisables en ligne à travers un navigateur et en mode déconnecté. A noter que depuis la version 1.2 publiée en mai 2021, l’édition des données envoyées au serveur est possible à travers cet outil (à des fins de correction ou révision).
 
-[![Enketo : formulaire d'enquête sur les usagers d'ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png "Enketo : formulaire d'enquête sur les usagers d'ODK"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png){: data-mediabox="lightbox-gallery" data-title="Enketo : formulaire d'enquête sur les usagers d'ODK"}
+![Enketo : formulaire d'enquête sur les usagers d'ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/enketo_usages_odk.png "Enketo : formulaire d'enquête sur les usagers d'ODK"){: .img-center loading=lazy }
 {: align=middle }
 
 ### Tableur / XLSForm
@@ -197,11 +197,11 @@ Il permet de pousser des formulaires sur le serveur, d'y récupérer les donnée
 [Documentation Briefcase :fontawesome-solid-book:](https://docs.getodk.org/briefcase-intro/){: .md-button }
 {: align=middle }
 
-[![ODK Briefcase : récupération des données depuis Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
-[![ODK Briefcase : récupération des données depuis Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : récupération des données depuis Central"}
+![ODK Briefcase : récupération des données depuis Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_le_telephone.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=350px }
+![ODK Briefcase : récupération des données depuis Central](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_recuperation_de_donnees_depuis_central.png "ODK Briefcase : récupération des données depuis Central"){: loading=lazy width=350px }
 {: align=middle }
 
-[![ODK Briefcase : paramétrage de l'export des données récupérées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png "ODK Briefcase : paramétrage de l'export des données récupérées"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png){: data-mediabox="lightbox-gallery" data-title="ODK Briefcase : paramétrage de l'export des données récupérées"}
+![ODK Briefcase : paramétrage de l'export des données récupérées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ODK_briefcase_parametres_d_export_des_donnees_recuperees.png "ODK Briefcase : paramétrage de l'export des données récupérées"){: .img-center loading=lazy }
 
 ### Les outils communautaires
 
@@ -241,7 +241,7 @@ Les colonnes utilisables dans chacune des feuilles sont normalisées, toutes ne 
 
 C'est dans cette feuille que sera décrite la logique du formulaire. Chaque question ou élément de structure (groupe de question, répétition) est typé (colonne *type* : quel *widget* sera utilisé pour afficher la question ? ) et nommé (colonne *name*) et étiquetté (colonne *label*). Ces trois colonnes sont obligatoires.
 
-[![XLS-Form : feuille de calcul survey](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_survey.png "XLS-Form : feuille de calcul survey"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_survey.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul survey"}
+![XLS-Form : feuille de calcul survey](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_survey.png "XLS-Form : feuille de calcul survey"){: .img-center loading=lazy }
 
 Les listes de choix peuvent être filtrées (colonne *choice_filter*)
 
@@ -260,7 +260,7 @@ Dans cet article, nous détaillons plus bas [les *widgets* cartographiques](#foc
 
 Les listes de choix sont nommées (colonne *list_name*) et contiennent pour chaque élément de la liste une valeur (colonne *name*) et une étiquette (colonne *label*). Ces trois colonnes sont obligatoires dans La feuille de calcul *choices*.
 
-[![XLS-Form : feuille de calcul choices](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_choices.png "XLS-Form : feuille de calcul choices"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_choices.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul choices"}
+![XLS-Form : feuille de calcul choices](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_choices.png "XLS-Form : feuille de calcul choices"){: .img-center loading=lazy }
 
 Des colonnes personnelles peuvent être ajoutées et ainsi être utilisées comme critère dans la colonne *choice _filter* de la feuille *survey*. C'est par exemple dans une colonne "groupe" que je préciserai pour l'élément "têtard" la valeur "batracien" afin de ne pas proposer cette valeur à la saisie pour une observation d'oiseau.
 
@@ -268,7 +268,7 @@ Des colonnes personnelles peuvent être ajoutées et ainsi être utilisées comm
 
 Elle contient la version du formulaire ainsi que le nom que l'on souhaite donner à chacune des instances envoyées au serveur. Ce nom peut intégrer des variables issues du formulaire.
 
-[![XLS-Form : feuille de calcul settings](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_settings.png "XLS-Form : feuille de calcul settings"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_settings.png){: data-mediabox="lightbox-gallery" data-title="XLS-Form : feuille de calcul settings"}
+![XLS-Form : feuille de calcul settings](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/xlsform_feuille_de_calcul_settings.png "XLS-Form : feuille de calcul settings"){: .img-center loading=lazy }
 
 ### Focus sur les widgets géographiques
 
@@ -277,8 +277,8 @@ Elle contient la version du formulaire ainsi que le nom que l'on souhaite donner
 Plusieurs interfaces (*widgets*) cartographiques de saisie vont nous être proposées par ODK. Toutes reposent sur l'utilisation d'un fond de carte et d'une librairie géographique. Pour simplifier la chose à l'utilisateur, le distinguo n'est plus fait à ce sujet dans les réglages de l'application.  
 L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce dernier propose plusieurs "styles" (satellite, terrain...) choisir celui qui convient.
 
-[![Choix du fond de carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png "Choix du fond de carte"){: loading=lazy align=left clear=right width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png){: data-mediabox="lightbox-gallery" data-title="ODK XLSForm - Choix du fond de carte : MapBox"}
-[![Choix du style du fond de carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png "Choix du style fond de carte"){: loading=lazy align=left clear=right width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png){: data-mediabox="lightbox-gallery" data-title="ODK XLSForm - Choix du style fond de carte MapBox"}
+![Choix du fond de carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_du_fond_de_carte.png "Choix du fond de carte"){: loading=lazy align=left clear=right width=350px }
+![Choix du style du fond de carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png "Choix du style fond de carte"){: loading=lazy align=left clear=right width=350px }
 {: align=middle }
 
 Ce fond de carte pourra être surchargé par un fond "maison" en (fichier `.mbtiles`) généré avec QGIS par exemple.
@@ -295,8 +295,8 @@ Par défaut le [Geopoint](https://docs.getodk.org/form-question-types/#geopoint)
 Dés que la précision du signal sera inférieure à la tolérance précisée dans le formulaire (5m par défaut), le point sera enregistré. L'utilisateur peut à tout moment outrepasser cette contrainte en enregistrant manuellement le "PointGéo".
 Dans l'exemple ci-dessous, une précision minimale de 10 était requise.
 
-[![Recherche de point GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "Calcul de la position du GPS "Recherche de point GPS"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "ODK Geopoint - Calcul de la position du GPS"){: data-mediabox="lightbox-gallery" data-title="ODK Geopoint - Calcul de la position du GPS"}
-[![Propriétés du point enregistré](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "ODK Geopoint - Affichage des coordonnées enregistrées automatiquement et de la précision du signal"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "ODK Geopoint - Affichage des coordonnées enregistrées automatiquement et de la précision du signal"){: data-mediabox="lightbox-gallery" data-title="ODK Geopoint - Affichage des coordonnées enregistrées automatiquement et de la précision du signal"}
+![Recherche de point GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_point_automatique.png "Calcul de la position du GPS - Recherche de point GPS"){: loading=lazy width=350px }
+![Propriétés du point enregistré](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/point_automatique_sous_precision_minimale.png "ODK Geopoint - Affichage des coordonnées enregistrées automatiquement et de la précision du signal"){: loading=lazy width=350px }
 {: align=middle }
 
 #### Localisation GPS affichée sur une carte
@@ -307,7 +307,7 @@ L'emplacement du GPS est matérialisé par une croix bleue autour de laquelle un
 
 #### Localisation entrée par l'utilisateur, carte centrée sur le GPS
 
-[![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png "Geopoint with placement map"){: loading=lazy align=left clear=right width=150px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png "Carte centrée sur la position du GPS"){: data-mediabox="lightbox-gallery" data-title="ODK Geopoint - Carte centrée sur la position du GPS"}
+![Geopoint with placement map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/localisation_par_defaut_sur_point_gps.png "Geopoint with placement map"){: loading=lazy align=left clear=right width=150px }
 
 Si une [apparence (colonne *appearance*) `placement_maps`](https://docs.getodk.org/form-question-types/#geopoint-with-user-selected-location) est mentionnée alors l'utilisateur pourra cliquer le point sur la carte ou enregistrer l'emplacement courant, matérialisé comme précédemment.
 
@@ -323,10 +323,10 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - l'enregistrement manuel des points constituant la ligne. La localisation du GPS apparaît sur la carte, l'utilisateur peut à tout moment enregistrer la position courante
 - l'enregistrement automatique des points au fil du déplacement de l'utilisateur, avec précision du pas de temps et de la précision requise pour enregistrer le sommet (par exemple ci-dessous 1 point toutes les 20 secondes avec une précision minimale requise de 10 mètres). La précision minimale du GPS requise pour créer le point peut-être spécifiée.
 
-[![ODK Geotrace/Geoshape : options disponibles pour la création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: data-mediabox="lightbox-gallery" data-title="ODK Geotrace/Geoshape : options disponibles pour la création de sommets"}
-[![ODK Geotrace/Geoshape : saisie en tapotant sur la carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: data-mediabox="lightbox-gallery" data-title="ODK Geotrace/Geoshape : saisie en tapotant sur la carte"}
-[![ODK Geotrace/Geoshape : enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: data-mediabox="lightbox-gallery" data-title="ODK Geotrace/Geoshape : enregistrement manuel des points GPS"}
-[![ODK Geotrace/Geoshape : enregistrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: data-mediabox="lightbox-gallery" data-title="ODK Geotrace/Geoshape : enregistrement automatique de la trace"}
+![ODK Geotrace/Geoshape : options disponibles pour la création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: loading=lazy width=175px }
+![ODK Geotrace/Geoshape : saisie en tapotant sur la carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: loading=lazy width=175px }
+![ODK Geotrace/Geoshape : enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: loading=lazy width=175px }
+![ODK Geotrace/Geoshape : enregistrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: loading=lazy width=175px }
 {: align=middle }
 
 #### Geoshape

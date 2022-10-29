@@ -40,13 +40,13 @@ Le plugin GRASS permet de bénéficier des nombreuses fonctionnalités du logici
 
 Cette boite à outils regroupe un ensemble de « géotraitements », mais seul le module vclean de Grass sera utilisé. Ce module dispose de différentes options dont deux qui seront utilisées pour notre démarche à savoir break et rmarea.
 
-[![QGIS Processing Toolbox GRASS vclean](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_processing_toolbox_2-4.png "QGIS Processing Toolbox GRASS vclean"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_processing_toolbox_2-4.png "QGIS Processing Toolbox GRASS vclean"){: data-mediabox="lightbox-gallery" data-title="QGIS Processing Toolbox GRASS vclean" }
+![QGIS Processing Toolbox GRASS vclean](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_processing_toolbox_2-4.png "QGIS Processing Toolbox GRASS vclean"){: .img-center loading=lazy }
 
 ## Démarche
 
 Comme précisé en introduction, la couche de données en entrée possède des entités dont la géométrie est invalide. L'outil de vérification de QGIS révèle d'ailleurs un grand nombre d'erreurs.
 
-[![QGIS GRASS vclean](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_check_geom_validity_start.png "QGIS GRASS vclean"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_check_geom_validity_start.png "QGIS GRASS vclean"){: data-mediabox="lightbox-gallery" data-title="QGIS GRASS vclean" }
+![QGIS GRASS vclean](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_check_geom_validity_start.png "QGIS GRASS vclean"){: .img-center loading=lazy }
 
 La démarche proposée pour corriger ces erreurs s’appuie sur 4 principales étapes.
 
@@ -54,21 +54,21 @@ La démarche proposée pour corriger ces erreurs s’appuie sur 4 principales é
 
 Tout d’abord en utilisant l’option `break` la géométrie initiale de l’objet est découpée lorsqu’une intersection est détectée. Le seuil (*threshold*) peut varier en fonction de vos données. Quelques tests doivent être effectués afin d’obtenir le plus approprié. Dans notre cas, un seuil à 10 était celui donnant les meilleurs résultats.  
 
-[![vclean - Formulaire break](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_geom_step_break_form.png "vclean - Formulaire break"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_geom_step_break_form.png "vclean - Formulaire break"){: data-mediabox="lightbox-gallery" data-title="vclean - Formulaire break" }
+![vclean - Formulaire break](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_geom_step_break_form.png "vclean - Formulaire break"){: .img-center loading=lazy }
 
 À la fin de processus, les polygones ayant des intersections sont alors découpés en deux.  
 
-[![vclean - Résultat break](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_geom_step_break_result.png "vclean - Résultat break"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_geom_step_break_result.png "vclean - Résultat break"){: data-mediabox="lightbox-gallery" data-title="vclean - Résultat break" }
+![vclean - Résultat break](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_geom_step_break_result.png "vclean - Résultat break"){: .img-center loading=lazy }
 
 ### Suppression des reliquats
 
 Une fois, le découpage des intersections réalisé, il faut maintenant supprimer les reliquats de géométrie. Pour cela l’option `rmarea` est utilisée. Celle-ci supprime les géométries dont l’aire est inférieure à un seuil défini. Comme précédemment, ce seuil peut varier est doit être adapté en fonction des données initiales.  
 
-[![vclean - Résultat rmarea break](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_geom_step_rmarea_result.png "vclean - Résultat rmarea break"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_geom_step_rmarea_result.png "vclean - Résultat rmarea break"){: data-mediabox="lightbox-gallery" data-title="vclean - Résultat rmarea break" }
+![vclean - Résultat rmarea break](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_geom_step_rmarea_result.png "vclean - Résultat rmarea break"){: .img-center loading=lazy }
 
 Une ultime vérification me confirme que ma couche est dorénavant topologiquement valide.
 
-[![vclean - Vérification des géométries](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_check_geom_validity_end.png "vclean - Vérification des géométries"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_check_geom_validity_end.png "vclean - Vérification des géométries"){: data-mediabox="lightbox-gallery" data-title="vclean - Vérification des géométries" }
+![vclean - Vérification des géométries](https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_check_geom_validity_end.png "vclean - Vérification des géométries"){: .img-center loading=lazy }
 
 Et voilà, j'ai maintenant ma couche qui est géométriquement valide. Je peux alors l'importer dans PostGIS ou effectuer les traitements que je souhaite.
 

@@ -38,7 +38,7 @@ Dans une démarche d'analyse de faisabilité, nous avons monté un projet pour �
 
 Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres géomaticiens qui souhaitent utiliser ce genre de solution au sein de leur collectivité.
 
-[![Eclairage public - Crédits : PxHere](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png "Éclairage public - Crédits : PxHere"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png){: data-mediabox="lightbox-gallery" data-title="Éclairage public - Crédits : PxHere"}
+![Eclairage public - Crédits : PxHere](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png "Éclairage public - Crédits : PxHere"){: .img-center loading=lazy }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -56,7 +56,7 @@ Dans notre cas, nous nous sommes appuyés sur les travaux du CRIGE PACA, du dép
 
 Voici le modèle de données que nous avons choisi pour notre test représenté grâce à [DBeaver](https://dbeaver.io/) :
 
-[![Diagramme du modèle de données exporté via DBeaver](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/bdd_modele_dbeaver.png "Diagramme du modèle de données exporté via DBeaver"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/bdd_modele_dbeaver.png){: data-mediabox="lightbox-gallery" data-title="Diagramme du modèle de données exporté via DBeaver"}
+![Diagramme du modèle de données exporté via DBeaver](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/bdd_modele_dbeaver.png "Diagramme du modèle de données exporté via DBeaver"){: .img-center loading=lazy }
 
 Le dictionnaire de données avec description de chaque table et de son contenu sous format .csv est disponible via [ce répertoire](https://github.com/stephyritz/ep_structure/tree/main/dictionnaire_donnees).
 
@@ -89,7 +89,7 @@ Dans le cadre de cette étude, nous avons opté pour la création de 2 projets Q
 Le premier projet fait appel aux "vues" précédemment créées grâce au script SQL. Ensuite, grâce à une symbologie particulière dans QGIS, nous pouvons proposer un visuel mettant en avant le type de lampe (led, Ballon fluorescent, Sodium Hate Pression, etc...), le nombre de points lumineux sur le mât ou encore si le réseau est aérien ou souterrain.  
 Voici un exemple de ce que nous pourrions voir à l'écran :
 
-[![Exemple de rendu sur QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_exemple_rendu.png "Exemple de rendu sur QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_exemple_rendu.png){: data-mediabox="lightbox-gallery" data-title="Exemple de rendu sur QGIS"}
+![Exemple de rendu sur QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_exemple_rendu.png "Exemple de rendu sur QGIS"){: .img-center loading=lazy }
 
 Un panel de styles est proposé à l'observateur en fonction de son besoin. Un autre exemple serait de représenter de la même couleur tous les points lumineux qui dépendent d'une même armoire électrique. Nous pouvons ici utiliser toute la puissance de QGIS pour styliser la donnée telle que nous souhaitons la voir apparaître.
 

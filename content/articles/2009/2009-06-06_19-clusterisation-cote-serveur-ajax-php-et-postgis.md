@@ -41,7 +41,7 @@ Pour clusteriser les données, nous allons découper la carte visible à l'écra
 
 Le but étant de charger les marqueurs qui sont proches des bords de la carte, afin de fluidifier l'application.
 
-[![Découpage de la carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/cluster_1.png "Découpage de la carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/cluster_1.png){: data-mediabox="lightbox-gallery" data-title="Découpage de la carte" }
+![Découpage de la carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/cluster_1.png "Découpage de la carte"){: .img-center loading=lazy }
 
 ### Processus
 

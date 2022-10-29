@@ -25,25 +25,25 @@ La version 2.0 est disponible depuis peu en [version bêta](http://blog.geoserve
 
 * Ancienne interface
 
-[![Configuration](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/configuration.jpg "Configuration"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/configuration.jpg){: data-mediabox="lightbox-gallery" data-title="Configuration" }
+![Configuration](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/configuration.jpg "Configuration"){: .img-center loading=lazy }
 
 * Nouvelle interface
 
-[![Board](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/board_geoserver.png "Board"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/board_geoserver.png){: data-mediabox="lightbox-gallery" data-title="Board" }
+![Board](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/board_geoserver.png "Board"){: .img-center loading=lazy }
 
 Personnellement je trouve que ce changement est des plus réussi. Du coup, l'interface est beaucoup plus claire et accessible.
 
 * Groupement des couches
 
-[![Layer group](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/grouing_layer.png "Layer group"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/grouing_layer.png){: data-mediabox="lightbox-gallery" data-title="Layer group" }
+![Layer group](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/grouing_layer.png "Layer group"){: .img-center loading=lazy }
 
 * Choix de l'ESPG
 
-[![EPSG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/EPSG.png "EPSG"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/EPSG.png){: data-mediabox="lightbox-gallery" data-title="EPSG" }
+![EPSG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/EPSG.png "EPSG"){: .img-center loading=lazy }
 
 * Définition du SLD
 
-[![Style](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/style.png "Style"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/style.png){: data-mediabox="lightbox-gallery" data-title="Style" }
+![Style](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/style.png "Style"){: .img-center loading=lazy }
 
 Au final, avec cette nouvelle version toute l'équipe de GeoServer nous offre un produit bien abouti. Les lourdeurs présentes auparavant ont été corrigées et le fait d'avoir, au contraire de MapServer, interface d'administration est vraiment très agréable.
 

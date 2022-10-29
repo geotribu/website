@@ -21,7 +21,7 @@ tags:
 
 Né de la fusion d'[OpenLayers](http://openlayers.org/) et d'[Ext](http://extjs.com/), [GeoExt](http://geoext.org/) est une librairie javascript permettant de créer facilement des d'interfaces cartographiques riches. Bien plus qu'un simple portage des deux librairies mères, GeoExt a complètement repensé les modèles de classes initiaux pour proposer au final de nouveaux objets complètement personnalisés. Néanmoins, celle-ci peut être difficile à appréhender du fait du mélange des genres entre OpenLayers et Ext. De ce fait, il est important de bien comprendre le rôle joué par chacune des composantes.
 
-[![GeoExt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/geo_ext_lib.png "GeoExt"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/geo_ext_lib.png){: data-mediabox="lightbox-gallery" data-title="GeoExt" }
+![GeoExt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/geo_ext_lib.png "GeoExt"){: .img-center loading=lazy }
 
 Nous découvrirons au cours de ce tutoriel les éléments principaux de GeoExt, vous pouvez également vous référez aux tutoriaux [ext-primer](http://geoext.org/primers/ext-primer.html), [openlayers-primer](http://geoext.org/primers/openlayers-primer.html) et [geoext-quickstart](http://geoext.org/tutorials/quickstart.html) réalisés par l'équipe de GeoExt.
 

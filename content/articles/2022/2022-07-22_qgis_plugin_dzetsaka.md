@@ -36,15 +36,15 @@ Initialement, le plugin a été développé pour classifier différents types de
 
 L'installation se fait simplement via la gestion des extensions de QGIS (ici en version 3.22) :
 
-[![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/A_QGIS_InstallPlugin.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/A_QGIS_InstallPlugin.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Installation plugin Dzetsaka" }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/A_QGIS_InstallPlugin.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 Puis on effectue une recherche `dzetsaka` :
 
-[![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/B_QGIS_InstallPlugin_suite.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/B_QGIS_InstallPlugin_suite.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Installation plugin Dzetsaka" }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/B_QGIS_InstallPlugin_suite.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 Une fois installé le plugin est accessible via le menu Extension :
 
-[![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/C_QGIS_InstallPlugin_Fin.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/C_QGIS_InstallPlugin_Fin.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Installation plugin Dzetsaka" }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/C_QGIS_InstallPlugin_Fin.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 ----
 
@@ -54,13 +54,13 @@ Une fois installé le plugin est accessible via le menu Extension :
 
 La fenêtre de bienvenue permet d'accéder à la documentation et à un jeu d'essai (que nous n'allons pas utiliser dans notre exemple).
 
-[![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/D_Dzetsaka_Welcome.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/D_Dzetsaka_Welcome.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Installation plugin Dzetsaka" }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/D_Dzetsaka_Welcome.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 ### Configuration
 
 Avant de s'attaquer à la partie classification, un petit détour par la partie configuration est préférable :
 
-[![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/E_Dzetsaka_Configuration.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/E_Dzetsaka_Configuration.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Installation plugin Dzetsaka" }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/E_Dzetsaka_Configuration.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 Cette fenêtre regroupe plusieurs propriétés :
 
@@ -82,7 +82,7 @@ Elle devra comporter a minima un champ de type entier pour identifier les classe
 
 Dans notre cas, on crée aussi un champ description :
 
-[![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/F_Dzetsaka_Configuration_Train.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/F_Dzetsaka_Configuration_Train.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Installation plugin Dzetsaka" }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/F_Dzetsaka_Configuration_Train.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 Nous allons ensuite créer différentes entités sur les zones qui nous intéressent :
 
@@ -94,13 +94,13 @@ Nous allons ensuite créer différentes entités sur les zones qui nous intéres
 
 Nous obtenons la couche d'entraînement suivante (les tuiles et routes ne sont pas visibles à cette échelle) :
 
-[![Plugin Dzetsaka - Couche d'entraînement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/G_Train_.png "Plugin Dzetsaka - Couche d'entraînement"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/G_Train_.png){: data-mediabox="lightbox-gallery" data-title="Plugin Dzetsaka - Couche d'entraînement" }
+![Plugin Dzetsaka - Couche d'entraînement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/G_Train_.png "Plugin Dzetsaka - Couche d'entraînement"){: .img-center loading=lazy }
 
 ## Classification
 
 A partir du dock de configuration :
 
-[![Plugin Dzetsaka - Dock configuration](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/H_Dzetsaka_Dock.png "Plugin Dzetsaka - Dock configuration"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/H_Dzetsaka_Dock.png){: data-mediabox="lightbox-gallery" data-title="Plugin Dzetsaka - Dock configuration" }
+![Plugin Dzetsaka - Dock configuration](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/H_Dzetsaka_Dock.png "Plugin Dzetsaka - Dock configuration"){: .img-center loading=lazy }
 
 On sélectionne la couche raster, la couche d'entraînement et pour cette dernière l'attribut qui porte l'identification des éléments d'entraînements.
 
@@ -115,19 +115,19 @@ On lance ensuite la classification qui va durer dans notre cas une dizaine de mi
 
 Le résultat obtenu est une image résultat en dégradé de gris :
 
-[![Plugin Dzetsaka - Résultat dégradé gris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/I_Dzetsaka_Resultat1.png "Plugin Dzetsaka - Résultat dégradé gris"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/I_Dzetsaka_Resultat1.png){: data-mediabox="lightbox-gallery" data-title="Plugin Dzetsaka - Résultat dégradé gris" }
+![Plugin Dzetsaka - Résultat dégradé gris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/I_Dzetsaka_Resultat1.png "Plugin Dzetsaka - Résultat dégradé gris"){: .img-center loading=lazy }
 
 En appliquant la symbologie initiale :
 
-[![Plugin Dzetsaka - Symbologie initialee](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/J_Dzetsaka_Resultat2.png "Plugin Dzetsaka - Symbologie initialee"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/J_Dzetsaka_Resultat2.png){: data-mediabox="lightbox-gallery" data-title="Plugin Dzetsaka - Symbologie initialee" }
+![Plugin Dzetsaka - Symbologie initialee](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/J_Dzetsaka_Resultat2.png "Plugin Dzetsaka - Symbologie initialee"){: .img-center loading=lazy }
 
 On obtient l'image suivante :
 
-[![Plugin Dzetsaka - Résultat stylisé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/K_Dzetsaka_Resultat3.png "Plugin Dzetsaka - Résultat stylisé"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/K_Dzetsaka_Resultat3.png){: data-mediabox="lightbox-gallery" data-title="Plugin Dzetsaka - Résultat stylisé" }
+![Plugin Dzetsaka - Résultat stylisé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/K_Dzetsaka_Resultat3.png "Plugin Dzetsaka - Résultat stylisé"){: .img-center loading=lazy }
 
 En zoomant un peu plus, on peut analyser un peu plus les résultats :
 
-[![Plugin Dzetsaka - Résultat zoom](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/L_Dzetsaka_Resultat4.png "Plugin Dzetsaka - Résultat zoom"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/L_Dzetsaka_Resultat4.png){: data-mediabox="lightbox-gallery" data-title="Plugin Dzetsaka - Résultat zoom" }
+![Plugin Dzetsaka - Résultat zoom](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/L_Dzetsaka_Resultat4.png "Plugin Dzetsaka - Résultat zoom"){: .img-center loading=lazy }
 
 Les prairies, arbres et rivières/fleuves sont globalement bien identifiés (la turbidité de la Loire génère des résultats un peu complexe à certains endroits).  
 Les toits en tuiles sont globalement bien identifiés aussi tandis que le reste est très difficile à analyser (on retrouve des couleurs globalement identiques entre la route et les bâtiments récents).

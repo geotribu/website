@@ -29,7 +29,7 @@ tags:
 
 Si l'année aura été éprouvante pour le monde (de la cartograhie surtout :wink:), 2020 signe aussi le retour de Geotribu. Nous voilà à l'aube de 2021 et comme c'est de saison, on fait un premier bilan sur la dynamique de ces 9 derniers mois et on se projette sur l'année qui démarre.
 
-[![Carte de la ville de Phoenix](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_city_maricota.svg "Carte de la ville de Phoenix"){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_city_maricota.svg){: data-mediabox="lightbox-gallery" data-title="Opération GéoPhénix - Crédits Wikimédia"}
+![Carte de la ville de Phoenix](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_city_maricota.svg "Carte de la ville de Phoenix"){: loading=lazy align=middle }
 
 ### Contenus et dynamique de contribution
 
@@ -50,16 +50,16 @@ En tout cas, on est content de retrouver le plaisir de partager notre effort de 
 
 Parce-que c'était plus simple et intégré à MkDocs, nous utilisons Google Analytics pour mesurer la fréquentation du site en mode minimal. Compte-tenu de la typologie de notre audience technophile et sensibilisée aux [bloqueurs de pubs](https://fr.wikipedia.org/wiki/Logiciel_antipub), [opt-outs](https://tools.google.com/dlpage/gaoptout/index.html?hl=fr) et autres [VPNs](https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virtuel), les données sont certainement incomplètes. Mais l'objectif n'étant pas de faire du marketing, cela importe peu. L'idée est surtout de suivre les tendances.
 
-[![Statistiques 2020 - Contenus](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_content.png "Statistiques 2020 - Contenus"){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_content.png){: data-mediabox="lightbox-gallery" data-title="Contenus"}
+![Statistiques 2020 - Contenus](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_content.png "Statistiques 2020 - Contenus"){: loading=lazy align=middle }
 
 Sans surprise, notre fréquentation se mesure en cycles de 14 jours, reflétant le rythme de publication de nos revues de presse. Côté réseaux sociaux, Twitter domine les débats, même si l'effort sur LinkedIn trouve visiblement son public ([pour suivre le flux c'est par ici](https://www.linkedin.com/feed/hashtag/?keywords=geotribu)).
 
 Voici quelques captures complémentaires de Google Analytics :
 
-[![Statistiques 2020 - Systèmes d'exploitation](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_os.png "Statistiques 2020 - Systèmes d'exploitation"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_os.png){: data-mediabox="lightbox-gallery" data-title="Les systèmes d'exploitation"}
-[![Statistiques 2020 - Navigateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_browsers.png "Statistiques 2020 - Navigateurs"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_browsers.png){: data-mediabox="lightbox-gallery" data-title="Navigateurs"}
-[![Statistiques 2020 - Utilisateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_users.png "Statistiques 2020 - Utilisateurs"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_users.png){: data-mediabox="lightbox-gallery" data-title="Utilisateurs"}
-[![Statistiques 2020 - Réseaux sociaux](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_social.png "Statistiques 2020 - Réseaux sociaux"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_social.png){: data-mediabox="lightbox-gallery" data-title="Réseaux sociaux"}
+![Statistiques 2020 - Systèmes d'exploitation](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_os.png "Statistiques 2020 - Systèmes d'exploitation"){: loading=lazy width=175px }
+![Statistiques 2020 - Navigateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_browsers.png "Statistiques 2020 - Navigateurs"){: loading=lazy width=175px }
+![Statistiques 2020 - Utilisateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_users.png "Statistiques 2020 - Utilisateurs"){: loading=lazy width=175px }
+![Statistiques 2020 - Réseaux sociaux](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_social.png "Statistiques 2020 - Réseaux sociaux"){: loading=lazy width=175px }
 {: align=middle }
 
 !!! note
@@ -69,7 +69,7 @@ Voici quelques captures complémentaires de Google Analytics :
 
 Après 3 ans d'absence de la Toile, le changement d'URLs sans redirection et le manque de fraîcheur de la majorité de nos contenus, autant vous dire qu'il faut du temps avant de retrouver grâce aux yeux des moteurs de recherche !
 
-[![Statistiques 2020 - Recherche Google](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_perfs.png "Statistiques 2020 - Recherche Google"){: loading=lazy align=middle }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_perfs.png){: data-mediabox="lightbox-gallery" data-title="Performances dans la recherche Google"}
+![Statistiques 2020 - Recherche Google](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_perfs.png "Statistiques 2020 - Recherche Google"){: loading=lazy align=middle }
 
 Mais, si nous recevons des rapports de la console de recherche Google, l'objectif n'est pas vraiment d'occuper la première place mais de corriger les problèmes de structuration du site : liens morts, performances, images perdues ou trop lourdes, mauvaise structure de la page...
 
@@ -77,11 +77,11 @@ En fait, mon sentiment c'est que faire du *bon* web dans les années 2020s, c'es
 
 Le travail de nettoyage des voies sans issue (images et liens morts), même s'il est loin d'être terminé, ainsi que le retour du [flux RSS](https://static.geotribu.fr/feed_rss_created.xml) (notamment sur [Georezo](https://georezo.net/planet/Toile_g%C3%A9omatique_francophone/)) ont largement contribué à un retour à la normale.
 
-[![Statistiques 2020 - Etat de la couverture de l'indexation](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_cover.png "Statistiques 2020 - Etat de la couverture de l'indexation"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_cover.png){: data-mediabox="lightbox-gallery" data-title="Etat de la couverture de l'indexation"}
+![Statistiques 2020 - Etat de la couverture de l'indexation](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_cover.png "Statistiques 2020 - Etat de la couverture de l'indexation"){: loading=lazy }
 
 L'occasion d'explorer rapidemement les possibilité de Google Data Studio en modifiant à la marge un des modèles clés-en-mains :
 
-[![Statistiques 2020 - Google Data Studio](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search.png "Statistiques 2020 - Google Data Studio"){: loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search.png){: data-mediabox="lightbox-gallery" data-title="Google Data Studio"}
+![Statistiques 2020 - Google Data Studio](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search.png "Statistiques 2020 - Google Data Studio"){: loading=lazy }
 
 [Le rapport interactif :fontawesome-solid-chart-bar:](https://datastudio.google.com/s/poQHpKWzFaE){: .md-button }
 {: align=middle }

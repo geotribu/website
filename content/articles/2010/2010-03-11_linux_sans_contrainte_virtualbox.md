@@ -25,7 +25,7 @@ C'est pourquoi, je préfère maintenant utiliser un [système virtualisé](https
 
 Concrètement comment cela se passe? Pour cela vous avez besoin de deux composantes. Tout d'abord, le logiciel qui va permettre la virtualisation et ensuite l'image virtuel. Côté logiciel, j'utilise [virtualbox](http://doc.ubuntu-fr.org/virtualbox) qui est téléchargeable directement depuis les dépôts d'Ubuntu. Ensuite, il suffit de vous rendre sur le site [virtualboxes](http://virtualboxes.org/) qui propose plus d'une dizaine [d'images](http://virtualboxes.org/images/) de distributions linux. Enfin, une fois les paramètres de votre nouvel environnement définis, il ne reste qu'à émuler l'image. Et voilà, le tour est joué.
 
-[![VirtualBox](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/800px-VirtualBox2.png "VirtualBox"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/800px-VirtualBox2.png "VirtualBox"){: data-mediabox="gallery-lightbox" data-title="VirtualBox" }
+![VirtualBox](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/800px-VirtualBox2.png "VirtualBox"){: .img-center loading=lazy }
 
 Source : [Wikipedia](https://fr.wikipedia.org/wiki/Fichier:VirtualBox2.png)
 

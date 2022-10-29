@@ -40,7 +40,7 @@ La première étape consiste à importer ou structurer les données que nous all
 
 Pour ces deux dernières options, les formats autorisés sont notamment le CSV, GeoJSOn ou encore le Shapefile. Dans le cas d'un fichier ne contenant pas d'entités géographiques (ex : CSV) vous pourrez par la suite réaliser une opération de géocodage en fonction des informations dont vous disposez (ex : champs longitude/latitude).
 
-[![Create Table](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/2_createTable.png "Create Table"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/2_createTable.png "Create Table"){: data-mediabox="lightbox-gallery" data-title="Create Table" }
+![Create Table](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/2_createTable.png "Create Table"){: .img-center loading=lazy }
 
 L'opération est relativement intuitive et ne demande pas de connaissances particulières. Une fois les données importées, vous pouvez les consulter sous la forme d'une table attributaire ou alors d'une carte interactive.
 
@@ -50,7 +50,7 @@ L'opération est relativement intuitive et ne demande pas de connaissances parti
 
 La table attributaire permet de consulter ou modifier les données enregistrées. Vous pouvez également, si vous le souhaitez, effectuer une requête SQL afin de filtrer les résultats, effectuer une opération d’agrégation, ou même encore supprimer des données.
 
-[![Table](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/table_shp.png "Table"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/table_shp.png "Table"){: data-mediabox="lightbox-gallery" data-title="Table" }
+![Table](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/table_shp.png "Table"){: .img-center loading=lazy }
 
 #### Personnalisation des données
 
@@ -58,11 +58,11 @@ Maintenant que nous avons vérifié nos données attributaires, passons au param
 
 Dans le monde du GeoWeb, ce n'est pas encore aujourd'hui que nous arriverons à saisir tous les préceptes et les subtilités de [M. Bertin](https://fr.wikipedia.org/wiki/Jacques_Bertin_%28cartographe%29) (si ce nom vous est inconnu (*honte à vous*), n'hésitez pas à jeter un œil à cet [article](http://cybergeo.revues.org/554?id=554&lang=en&lang=fr)).
 
-[![Carte choroplèthe](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/choropleth_map.png "Carte choroplèthe"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/choropleth_map.png "Carte choroplèthe"){: data-mediabox="lightbox-gallery" data-title="Carte choroplèthe" }
+![Carte choroplèthe](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/choropleth_map.png "Carte choroplèthe"){: .img-center loading=lazy }
 
 La gamme de couleurs proposée par défaut ne vous convient pas ? Sachez qu'il est facile de modifier le style de votre carte en utilisant une syntaxe similaire au [CSS](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade). Dans l'exemple ci-dessous, j'ai spécifié que tous les pays dont la population est supérieure à 1312978855 doivent apparaître en noir.
 
-[![Style](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/style_css.png "Style"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/style_css.png "Style"){: data-mediabox="lightbox-gallery" data-title="Style" }
+![Style](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/style_css.png "Style"){: .img-center loading=lazy }
 
 Comme vous pouvez le constater, l'interface intuitive permet une prise en main rapide. Mais bon, s'amuser avec une carte dans l'administration c'est bien, mais l'objectif est tout de même de publier nos données. Voyons voir immédiatement comment réaliser cela.
 

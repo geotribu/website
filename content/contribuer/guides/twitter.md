@@ -105,8 +105,8 @@ Bizarrement, l'option n'est pas proposée dans le formulaire de Twitter alors qu
 
 Si un utilisateur utilise une protection renforcée contre le pistage et toute forme de tracking publicitaire, Twitter renvoie les tweets dans une forme dégradée (notamment sans les médias). Les tweets intégrés apparaissent alors dans une forme simplifiée avec uniquement le texte :
 
-[![Tweet - Tracking enabled](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_tracking_enabled.png "Tweet - Tracking enabled"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_tracking_enabled.png){: data-mediabox="lightbox-twitter" data-title="Tweet correctement intégré quand la protection contre le pistage est désactivée"}
-[![Tweet - Tracking enabled](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_tracking_fallback.png "Tweet - Tracking enabled"){: loading=lazy width=350px }](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_tracking_fallback.png){: data-mediabox="lightbox-twitter" data-title="Rendu dégradé quand la protection contre le pistage est active"}
+![Tweet - Tracking enabled](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_tracking_enabled.png "Tweet - Tracking enabled"){: loading=lazy width=350px }
+![Tweet - Tracking enabled](https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_tracking_fallback.png "Tweet - Tracking enabled"){: loading=lazy width=350px }
 {: align=middle }
 
 Consulter :

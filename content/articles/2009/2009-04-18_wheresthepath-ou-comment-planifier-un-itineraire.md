@@ -24,7 +24,7 @@ Au départ la prise en main de l'application est assez déroutante avec son inte
 
 La partie Google Maps sert avant tout à afficher des informations complémentaires et c'est dans Openlayers que l'essentiel des outils est disponible. Amusez-vous donc à tracer un itinéraire et à l'exporter ou à en importer un afin de visualiser le parcours que vous avez réalisé.
 
-[![wheresthepath](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/whereisthepath.png "wheresthepath"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/whereisthepath.png){: data-mediabox="lightbox-gallery" data-title="wheresthepath" }
+![wheresthepath](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/whereisthepath.png "wheresthepath"){: .img-center loading=lazy }
 
 Malheureusement cette application n'est disponible que pour l'Angleterre. Mais peut-être qui sait au hasard d'un détour au pays du fish and ships...
 

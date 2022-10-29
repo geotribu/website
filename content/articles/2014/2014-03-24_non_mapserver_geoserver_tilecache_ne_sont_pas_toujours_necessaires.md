@@ -30,7 +30,7 @@ Bon me direz-vous mais comment je fais alors pour mes données. T'inquiètes pau
 
 Il faut savoir que ce système fonctionne de manière pyramidale avec un nombre croissant de tuiles en fonction du niveau de zoom. Ce nombre est exponentiel, au début vous aurez assez peu de variation, mais le nombre de niveaux de zoom augmentant le nombre de tuiles va rapidement devenir très important. Pour un exemple concret, je vous propose de consulter [cet exemple](http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/). A chaque zoom, vous verrez les valeurs (x, y et z) changer.
 
-[![Pyramide de tuiles](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/TilePyramid.jpg "Pyramide de tuiles"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/TilePyramid.jpg "Pyramide de tuiles"){: data-mediabox="lightbox-gallery" data-title="Pyramide de tuiles" }
+![Pyramide de tuiles](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/TilePyramid.jpg "Pyramide de tuiles"){: .img-center loading=lazy }
 
 Source de l'image : [Web Map Tile Services for Spatial Data Infrastructures: Management and Optimization](http://www.intechopen.com/books/cartography-a-tool-for-spatial-analysis/web-map-tile-services-for-spatial-data-infrastructures-management-and-optimization#F1)
 
@@ -62,7 +62,7 @@ Cette manière de faire a été notamment popularisée par la spécification [Ti
 
 Si vous êtes un familier du GeoWeb, vous devez certainement vous dire que cette manière de faire ressemble étrangement à [l'approche XYZ](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames) proposée notamment par Google, OpenStreetMap et compagnie. Et vous aurez raison, en fait il n'y a aucune réelle différence mise à l'origine de Y qui change. Avec TMS cette origine est calculée à partir du coin inférieur droit alors que celle-ci est calculée à partir du coin supérieur droit pour XYZ. Est-ce que ça fait une différence ? Honnêtement je n'en ai aucune idée !
 
-[![TMS/XYZ origine](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/tms_xyz_origine.png "TMS/XYZ origine"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/tms_xyz_origine.png "TMS/XYZ origine"){: data-mediabox="lightbox-gallery" data-title="TMS/XYZ origine" }
+![TMS/XYZ origine](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/tms_xyz_origine.png "TMS/XYZ origine"){: .img-center loading=lazy }
 
 ### Web Map Tile Service
 
@@ -84,7 +84,7 @@ Bon j'entends déjà certains râler du fait que la ligne de commande c'est bien
 
 Au-delà de l'interface graphique, l'intérêt de MapTiler est également de vous laisser le choix entre le format XYZ et TMS. Sauf erreur de ma part, seul le format TMS est disponible avec gdal2tiles.
 
-[![MapTiler](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/MapTiler_2_0.jpg "MapTiler"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/MapTiler_2_0.jpg "MapTiler"){: data-mediabox="lightbox-gallery" data-title="MapTiler" }
+![MapTiler](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/MapTiler_2_0.jpg "MapTiler"){: .img-center loading=lazy }
 
 ### Afficher les tuiles générées sur une carte
 

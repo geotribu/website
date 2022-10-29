@@ -67,6 +67,11 @@ for cfg_file in configs_to_merge:
     out_section = config_to_complete.get(dest_section)
     if isinstance(out_section, list):
         out_section.append(cfg_data)
+    elif isinstance(out_section, dict):
+        out_section.update(cfg_data)
+    else:
+        continue
+
 
 # write merged final config file
 with output_config_file.open("w") as out_file:

@@ -31,7 +31,7 @@ Le laboratoire COGIT (« Cartographique et Géomatique ») est en charge à l'IG
 
 Les cartes produites aujourd’hui, que ce soit par des institutionnels comme l’IGN, des entreprises privées ou par crowdsourcing (OpenStreetMap), n’ont plus comme vocation principale à être utilisées seules, mais plutôt à être intégrées à des géoportails dans lesquels un utilisateur peut faire varier les échelles et de manière générale les représentations. Si l’on souhaite que ces représentations soient cohérentes entre elles, il est indispensable que les processus de cartographie, comme la généralisation, tiennent compte de ces différents niveaux, à plus uniquement des spécifications de contenu de la carte. La généralisation cartographique a pour objectif de simplifier les données d’une carte de manière à diminuer leur niveau de détail tout en conservant leurs caractéristiques initiales, pour pouvoir les afficher à une échelle plus petite (Figure 1). Des travaux de recherche récents sur la généralisation continue (van Oosterom et al. 2014) ou sur la généralisation multi-échelles (Touya & Girres 2013) montrent que les recherches sont mûres pour aborder la problématique de la généralisation dans une pyramide d’échelles. Par ailleurs, le projet MapMuxing, financé par l’Agence Nationale de la Recherche, est une collaboration entre chercheurs du COGIT et chercheurs en interfaces homme-machine de l’INRIA, pour construire des méthodes plus efficace pour naviguer entre autres dans la pyramide d’échelles d’un géoportail. Le projet démarrera à l’automne 2014 et la thèse fera partie de ce projet collaboratif.
 
-[![Généralisation](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/These_mapmuxing.png "Généralisation"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/These_mapmuxing.png "Généralisation"){: data-mediabox="lightbox-gallery" data-title="Généralisation" }
+![Généralisation](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/These_mapmuxing.png "Généralisation"){: .img-center loading=lazy }
 
 ## Sujet
 
@@ -39,7 +39,7 @@ Le sujet de la thèse est la conception d’une méthode de généralisation pou
 
 La question du nombre de niveaux intermédiaires optimal pour une navigation fluide dans un géoportail pourra être abordée via des tests utilisateurs dans le cadre du projet MapMuxing.
 
-[![Généralisation des voies](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/These_mapmuxing2.png "Généralisation des voies"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/These_mapmuxing2.png "Généralisation des voies"){: data-mediabox="lightbox-gallery" data-title="Généralisation des voies" }
+![Généralisation des voies](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/These_mapmuxing2.png "Généralisation des voies"){: .img-center loading=lazy }
 
 ## Profil de candidature
 

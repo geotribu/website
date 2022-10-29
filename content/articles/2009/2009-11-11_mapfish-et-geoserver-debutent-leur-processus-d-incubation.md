@@ -25,7 +25,7 @@ Cette nouvelle étape représente une reconnaissance supplémentaire pour chacun
 
 L'image ci-dessous est un petit clin d'œil pour MapFish en rappel de leur ancien logo. Elle représente l'actuel record du plus gros poisson pané. Il ne reste qu'à espérer que l'équipe de [CampToCamp](http://www.camptocamp.com/) en fasse autant.
 
-[![Giant Fish Finger](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/giantfishfinger_450x516.jpg "Giant Fish Finger"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/giantfishfinger_450x516.jpg){: data-mediabox="lightbox-gallery" data-title="Giant Fish Finger" }
+![Giant Fish Finger](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/giantfishfinger_450x516.jpg "Giant Fish Finger"){: .img-center loading=lazy }
 
 ----
 

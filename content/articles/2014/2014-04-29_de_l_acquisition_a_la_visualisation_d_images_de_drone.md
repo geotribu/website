@@ -43,7 +43,7 @@ D'une manière simplifiée, les phases nécessaires au traitement d'images obten
 
 Contrairement aux techniques d'acquisition classiques par capteurs sophistiqués, les drones utilisent pour la plupart les mêmes appareils photo que vous pouvez trouver dans le commerce. L'altitude de vol et l'angle de prise de vues nécessitent l'acquisition de plusieurs images se chevauchant afin de couvrir une zone.
 
-[![Acquisition d'images](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/superposition-vol-uav.jpg "Acquisition d'images"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/superposition-vol-uav.jpg "Acquisition d'images"){: data-mediabox="lightbox-gallery" data-title="Acquisition d'images" }
+![Acquisition d'images](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/superposition-vol-uav.jpg "Acquisition d'images"){: .img-center loading=lazy }
 
 Il sera alors nécessaire d'aligner (ou autrement dit de fusionner) ces différentes prises de vue afin d'obtenir une seule image continue. Pour cela, différentes techniques existent, mais globalement l'idée est de rechercher les entités correspondantes (keypoints) entre les différentes photos afin de construire l'image finale. Le code couleur utilisé permet de rapidement identifier les images dont l'alignement n'a pu être réalisé pour cause de mauvaise calibration du capteur ou de mauvais paramétrage de la mission:
 
@@ -53,7 +53,7 @@ Il sera alors nécessaire d'aligner (ou autrement dit de fusionner) ces différe
 
 L'image ci-dessous présente le résultat de cette opération et comme vous pouvez le constater, un grand nombre d'images n'ont pu être alignées du fait d'une erreur de paramétrage lors de la mission. Ce n'est pas le but de ce billet, mais sachez que la nouvelle version de Pix4D permet de spécifier manuellement des points de correspondance afin d'améliorer le résultat final.
 
-[![Alignement d'images](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/alignement-images.png "Alignement d'images"){: .img-center loading=lazy }](<https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/alignement-images.png>"Alignement d'images"){: data-mediabox="lightbox-gallery" data-title="Alignement d'images" }
+![Alignement d'images](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/alignement-images.png "Alignement d'images"){: .img-center loading=lazy }
 
 ### Génération du nuage de points
 
@@ -61,7 +61,7 @@ Une fois les images correctement calibrées, il est possible d'en extraire des p
 
 L'image ci-dessous présente la sélection d'un des points dans le nuage de points. Ce point est relié visuellement aux images correspondantes par les différents traits rouges.
 
-[![Nuage de points](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/point_cloud.png "Nuage de points"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/point_cloud.png "Nuage de points"){: data-mediabox="lightbox-gallery" data-title="Nuage de points" }
+![Nuage de points](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/point_cloud.png "Nuage de points"){: .img-center loading=lazy }
 
 ### Export du résultat
 
@@ -69,7 +69,7 @@ Nous arrivons au bout de ce processus et c'est certainement celui qui vous inté
 
 Il ne vous reste plus qu'à importer le résultat dans votre SIG favoris. Ci-dessous, l'image de Tomioka a été importée dans QGIS.
 
-[![QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis.png "QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis.png "QGIS"){: data-mediabox="lightbox-gallery" data-title="QGIS" }
+![QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis.png "QGIS"){: .img-center loading=lazy }
 
 Comme je le mentionnais, il est également possible d'exporter ce résultat sous la forme de tuiles afin de créer une application cartographique sur internet. L'exemple ci-dessous est le résultat de cet export.
 
@@ -81,7 +81,7 @@ Si vous êtes dans le domaine, vous me direz que les fonctionnalités précédem
 
 Imaginez que vous ayez réalisé la prise de vue d'une carrière, à partir du nuage de points, il vous sera alors possible de calculer la volumétrie d'un monticule de pierres, communément appellé "stockpile" dans le domaine. Pour cela, rien de plus simple, vous dessinez sur l'interface 3D la zone désirée et une fois la précision améliorée en remplaçant vos points sur les images de référence 2D, la volumétrie est calculée automatiquement.
 
-[![Mesure de volumétrie](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/calcul-volumetrie.png "Mesure de volumétrie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/calcul-volumetrie.png "Mesure de volumétrie"){: data-mediabox="lightbox-gallery" data-title="Mesure de volumétrie" }
+![Mesure de volumétrie](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/calcul-volumetrie.png "Mesure de volumétrie"){: .img-center loading=lazy }
 
 #### Export 3D
 

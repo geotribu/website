@@ -27,7 +27,7 @@ L'entente entre Flickr (Yahoo) et OpenStreetMap (OSM) ne date pas d'aujourd'hui.
 
 Mais cette entente vient de passer à la vitesse supérieure puisqu'il est dorénavant possible de tagger les photos publiées sur Flickr avec un [identifiant de noeud d'OSM](https://wiki.openstreetmap.org/wiki/FR:Elements) (cf [annonce](http://code.flickr.com/blog/2009/09/28/thats-maybe-a-bit-too-dorky-even-for-us/)). Cela ajoutera ensuite sous la photo un lien conduisant directement à la zone spécifiée par le noeud.
 
-[![OSM - intégration Flickr](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/osm_flickr_integration.jpg "OSM - intégration Flickr"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/osm_flickr_integration.jpg){: data-mediabox="lightbox-gallery" data-title="OSM - intégration Flickr" }
+![OSM - intégration Flickr](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/osm_flickr_integration.jpg "OSM - intégration Flickr"){: .img-center loading=lazy }
 
 > Crédit : [ReadWriteWeb](http://www.readwriteweb.com/archives/flickr_now_supports_openstreetmap_tags.php)
 
