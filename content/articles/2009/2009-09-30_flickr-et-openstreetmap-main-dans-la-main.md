@@ -21,7 +21,7 @@ tags:
 
 L'entente entre Flickr (Yahoo) et OpenStreetMap (OSM) ne date pas d'aujourd'hui. En effet, il y a un peu plus d'un an Flickr avait décidé d'utiliser les fonds d'OSM là ou leur cartographie n'était pas suffisamment précise. C'était pour Yahoo, qui avait laissé les usagers d'OSM utiliser ses propres images aériennes afin d'aider à la digitalisation des routes, un juste retour de chose .
 
-[![OSM - Yahoo](http://baliz-geospatial.com/images/mediatheque/2008-08/yahoo-osm.jpg "OSM - Yahoo"){: .img-center loading=lazy }]
+![OSM - Yahoo](http://baliz-geospatial.com/images/mediatheque/2008-08/yahoo-osm.jpg "OSM - Yahoo"){: .img-center loading=lazy }
 
 > Crédit : [Baliz-Media](http://media.baliz-geospatial.com/fr/blogue/flickr-de-yahoo-fait-appel-aux-donnees-OpenStreetMap)
 
