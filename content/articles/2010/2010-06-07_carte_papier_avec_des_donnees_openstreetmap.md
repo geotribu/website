@@ -54,31 +54,31 @@ Le premier travail consiste à télécharger les données de la zone désirée, 
 
 `$ java -jar /path_to_josm/josm-tested.jar`
 
-[![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm1.png "JOSM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm1.png){: data-mediabox="lightbox-gallery" data-title="JOSM"}
+![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm1.png "JOSM"){: .img-center loading=lazy }
 
 ### 1er clic
 
 Télécharger des données depuis le serveur OSM :
 
-[![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm2.png "JOSM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm2.png){: data-mediabox="lightbox-gallery" data-title="JOSM"}
+![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm2.png "JOSM"){: .img-center loading=lazy }
 
 ### 2ème clic
 
 Sélectionner l'emprise dans l'onglet carte glissante et cliquer sur Télécharger. J'ai choisi ici la ville de [Roye](https://www.openstreetmap.org/?lat=49.6991&lon=2.79143&zoom=15&layers=B000FTF) dans la Somme parce que j'ai mappé cette (ma) ville il y a environ 8 mois avec mon vélo, mon GPS - un [Garmin 60CSx](https://buy.garmin.com/shop/shop.do?cID=145&pID=310) - , un papier, un crayon, et le [plugin Cadastre](https://wiki.openstreetmap.org/wiki/FR:JOSM/Fr:Plugin/Cadastre-fr) (il reste certainement pas mal de coquilles de numérisation ... peut-être les verra-t-on à la fin de la transformation en SVG). Le but étant de tester JOSM et d'avoir une carte libre vectorielle de la ville alternative à la [carte](http://www.roye80.fr/pageLibre000106d4.html) officielle.
 
-[![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm3.png "JOSM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm3.png){: data-mediabox="lightbox-gallery" data-title="JOSM"}
+![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm3.png "JOSM"){: .img-center loading=lazy }
 
 ### 3ème clic
 
 Sauvegarder les données :
 
-[![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm4.png "JOSM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm4.png){: data-mediabox="lightbox-gallery" data-title="JOSM"}
+![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm4.png "JOSM"){: .img-center loading=lazy }
 
 ### 4ème clic
 
 Enregistrer le fichier sélectionné - il faut absolument définir **data.osm** comme nom de fichier :
 
-[![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm5.png "JOSM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm5.png){: data-mediabox="lightbox-gallery" data-title="JOSM"}
+![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm5.png "JOSM"){: .img-center loading=lazy }
 
 ## Transformation en SVG avec Osmarender
 
@@ -95,11 +95,11 @@ Et lancer la commande de conversion :
 
 Et partir se coucher ... enfin c'est ce que j'ai fait, ce processus est un peu gourmand :-) surtout avec un fichier `data.osm` assez volumineux. Du coup, je n'ai pas vu le temps que ça a pris, je suppose une grosse heure, il faudrait que je recommence l'opération en journée. Nous voici donc en présence d'un magnifique fichier SVG de 5.4 Mo :
 
-[![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm6.png "JOSM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm6.png){: data-mediabox="lightbox-gallery" data-title="JOSM"}
+![JOSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/josm6.png "JOSM"){: .img-center loading=lazy }
 
 Que nous allons nous empresser d'ouvrir avec Inkscape : `$ inkscape roye.svg`
 
-[![Inskape](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/inkscape1.png "Inskape"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/inkscape1.png){: data-mediabox="lightbox-gallery" data-title="Inskape"}
+![Inskape](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/inkscape1.png "Inskape"){: .img-center loading=lazy }
 
 **Sympa !**
 

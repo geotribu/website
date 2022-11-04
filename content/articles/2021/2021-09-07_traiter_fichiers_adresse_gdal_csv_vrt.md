@@ -396,7 +396,7 @@ ogr2ogr \
 
 Après tout ce travail, on vérifie le rendu et la structure des données dans notre SIG préféré :
 
-[![QGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "QGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Rendu final des donnés BAN et BAL" }
+![QGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "QGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }
 
 ----
 
@@ -436,13 +436,13 @@ Comme indiqué dans la documentation, le [schéma du format VRT est défini par 
 
 Par exemple, si comme moi vous utilisez Visual Studio Code, vous pouvez profiter de l'auto-complétion et de la validation via une extension comme [XML Complete](https://marketplace.visualstudio.com/items?itemName=rogalmic.vscode-xml-complete) :
 
-[![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png){: data-mediabox="lightbox-gallery" data-title="Visual Studio Code - XML Complete" }
+![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }
 
 ----
 
 ## Conclusion
 
-[![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png){: data-mediabox="lightbox-gallery" data-title="GDAL c'est de la BAL" }
+![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }
 
 Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. On pourrait le suggérer aux équipes Etalab/ANCT et/ou à l'[AITF]. Qu'en pensez-vous ?
 

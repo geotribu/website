@@ -32,7 +32,7 @@ Que diriez-vous alors, si je vous annonçais qu'il existe une application spéci
 - [WIKI OSM du projet](https://wiki.openstreetmap.org/wiki/OSMtracker_%28Android%29)
 - [Google Store](https://play.google.com/store/apps/details?id=me.guillaumin.android.osmtracker&hl=fr)
 
-[![OSMTracker](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/images.jpeg "OSMTracker"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/images.jpeg "OSMTracker"){: data-mediabox="lightbox-gallery" data-title="OSMTracker" }
+![OSMTracker](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/images.jpeg "OSMTracker"){: .img-center loading=lazy }
 
 ## Vespucci
 
@@ -46,7 +46,7 @@ Par contre, n'oubliez pas que vous êtes sur un environnement aux capacités (m�
 - [WIKI OSM du projet](https://wiki.openstreetmap.org/wiki/Vespucci)
 - [Google Store](https://play.google.com/store/apps/details?id=de.blau.android&hl=fr)
 
-[![Vespucci](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/vespucci.jpeg "Vespucci"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/vespucci.jpeg "Vespucci"){: data-mediabox="lightbox-gallery" data-title="Vespucci" }
+![Vespucci](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2013/vespucci.jpeg "Vespucci"){: .img-center loading=lazy }
 
 Notre petit tour des applications [OpenStreetMap](https://www.openstreetmap.org/) indispensables touche à sa fin. Notre sélection n’étant pas exhaustive ni subjective, n’hésitez pas à nous signaler des applications que nous aurions pu manquer !
 

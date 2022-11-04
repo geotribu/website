@@ -32,15 +32,15 @@ C'était le 14 Octobre de l'année dernière. Un informaticien américain du nom
 
 Sur son [billet](http://www.datapointed.net/2014/10/maps-of-street-grids-by-orientation/), l'auteur explique :
 
-[![Explication](https://cdn.geotribu.fr/img/articles-blog-rdp/story/explanation.PNG "Explication"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/explanation.PNG "Explication"){: data-mediabox="lightbox-gallery" data-title="Explication" }
+![Explication](https://cdn.geotribu.fr/img/articles-blog-rdp/story/explanation.PNG "Explication"){: .img-center loading=lazy }
 
 S'il est vrai que j'apprécie que me soit livré le code, je trouve aussi stimulant de déterminer comment une carte a pu être fabriquée.
 
-[![Magie](https://cdn.geotribu.fr/img/articles-blog-rdp/story/magie.jpg "Magie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/magie.jpg "Magie"){: data-mediabox="lightbox-gallery" data-title="Magie" }
+![Magie](https://cdn.geotribu.fr/img/articles-blog-rdp/story/magie.jpg "Magie"){: .img-center loading=lazy }
 
 ## Traduction
 
-[![Voronoï](https://cdn.geotribu.fr/img/articles-blog-rdp/story/voronoi.PNG "Voronoï"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/voronoi.PNG "Voronoï"){: data-mediabox="lightbox-gallery" data-title="Voronoï" }
+![Voronoï](https://cdn.geotribu.fr/img/articles-blog-rdp/story/voronoi.PNG "Voronoï"){: .img-center loading=lazy }
 
 De ce que j'ai pu comprendre, Stephen Von Worley a disposé une grille de points sur l'étendue de ses mégalopoles. Pour chaque point, il a déterminé l'orientation des N segments les plus proches, l'ensemble devant comptabiliser 500 m. Enfin, il a pondéré, pour chaque point, la valeur d'angle assignée à chaque segment par la longueur de ces derniers.
 
@@ -50,13 +50,13 @@ Quelque chose d'intrigant avait trait à la couleur des lignes qui était gradue
 
 ## Fabrication
 
-[![Utilisation de R et QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/story/ninja.jpg "Utilisation de R et QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/ninja.jpg "Utilisation de R et QGIS"){: data-mediabox="lightbox-gallery" data-title="Utilisation de R et QGIS" }
+![Utilisation de R et QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/story/ninja.jpg "Utilisation de R et QGIS"){: .img-center loading=lazy }
 
 La façon dont j'ai conçu ma carte est beaucoup plus simple. J'ai retenu les milieux de tronçons, auxquels j'ai passé directement une fonction d'[interpolation](https://fr.wikipedia.org/wiki/Interpolation_spatiale). Le raster obtenu a été lissé. Niveau outils, je choisis [R](http://cran.r-project.org/web/views/Spatial.html), ma boîte à outils spatiale préférée, bien que python eusse été aussi un choix pertinent. J'ai effectué le rendu sous QGIS.
 
 ## Choix
 
-[![Premier rendu](https://cdn.geotribu.fr/img/articles-blog-rdp/story/cartepremiere.PNG "Premier rendu"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/cartepremiere.PNG "Premier rendu"){: data-mediabox="lightbox-gallery" data-title="Premier rendu" }
+![Premier rendu](https://cdn.geotribu.fr/img/articles-blog-rdp/story/cartepremiere.PNG "Premier rendu"){: .img-center loading=lazy }
 
 Afin de mimer la carte de datapointed, j'appliquai des rampes de couleur avec beaucoup de teintes. Le résultat avait un côté Comics US comme on le voit au-dessus.
 
@@ -64,7 +64,7 @@ Un choix limité à deux teintes me parut plus pertinent car il facilitait la le
 
 Rouge et bleu ? Cela fait trop élections..Vert et Jaune ? Trop alien et geek.
 
-[![Cercle chromatique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2015/10686817_10152617685222815_6967472526011265745_n.jpg "Cercle chromatique"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2015/10686817_10152617685222815_6967472526011265745_n.jpg "Cercle chromatique"){: data-mediabox="lightbox-gallery" data-title="Cercle chromatique" }
+![Cercle chromatique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2015/10686817_10152617685222815_6967472526011265745_n.jpg "Cercle chromatique"){: .img-center loading=lazy }
 
 Je sélectionnai les couleurs jaune orangé ainsi que magenta. Jaune car celle-ci donne un aspect lumineux à la carte qui rappelle la ville vue de l'espace. Magenta car c'est une couleur vive qu'on associe rarement à un élément de terrain ou une thématique. Le violet est en outre presque à l'opposé du jaune sur le cercle chromatique.
 
@@ -74,7 +74,7 @@ L'image obtenue était finalement beaucoup plus simple que celle de datapointed.
 
 Pour la légende, j'aurais pu choisir une forme conventionnelle mais il me semblait qu'un quart de cercle trigonométrique parvenait à résumer le mode de lecture de la carte.
 
-[![Légende](https://cdn.geotribu.fr/img/articles-blog-rdp/story/l%C3%A9gendes.PNG "Légende"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/l%C3%A9gendes.PNG "Légende"){: data-mediabox="lightbox-gallery" data-title="Légende" }
+![Légende](https://cdn.geotribu.fr/img/articles-blog-rdp/story/l%C3%A9gendes.PNG "Légende"){: .img-center loading=lazy }
 
 La carte est volontairement épurée, presque énigmatique. Ainsi, les lecteurs pourraient s'interroger et trouver par eux-mêmes certaines réponses.
 
@@ -82,17 +82,17 @@ Je publiai [la méthode ainsi que le code](http://datagistips.blogspot.fr/2014/1
 
 ## Diffusion
 
-[![Coquillage](https://cdn.geotribu.fr/img/articles-blog-rdp/story/coquillage.jpg "Coquillage"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/coquillage.jpg "Coquillage"){: data-mediabox="lightbox-gallery" data-title="Coquillage" }
+![Coquillage](https://cdn.geotribu.fr/img/articles-blog-rdp/story/coquillage.jpg "Coquillage"){: .img-center loading=lazy }
 
 Je percevais l'intérêt qu'une telle carte pouvait présenter pour un urbaniste ou un historien féru de l'histoire de Paris mais l'absence de narration en faisait en quelque sorte une jolie coquille vide.
 
-[![Narration](https://cdn.geotribu.fr/img/articles-blog-rdp/story/diffusion.jpg "Narration"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/diffusion.jpg "Narration"){: data-mediabox="lightbox-gallery" data-title="Narration" }
+![Narration](https://cdn.geotribu.fr/img/articles-blog-rdp/story/diffusion.jpg "Narration"){: .img-center loading=lazy }
 
 J'espérais qu'en la diffusant sur twitter, elle rebondisse au fil des retweets jusqu'à atterrir dans les mains d'un specialiste.
 
 Finalement, le 18 Novembre, c'est la revue Slate qui m'a contacté en me demandant de réaliser un article.
 
-[![Contact Slate](https://cdn.geotribu.fr/img/articles-blog-rdp/story/datapointed.PNG "Contact Slate"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/datapointed.PNG "Contact Slate"){: data-mediabox="lightbox-gallery" data-title="Contact Slate" }
+![Contact Slate](https://cdn.geotribu.fr/img/articles-blog-rdp/story/datapointed.PNG "Contact Slate"){: .img-center loading=lazy }
 
 Pour appuyer sa requête, elle citait datapointed : "Lots of stories in there: of cities waxed, towns waned, territory absorbed, and terrain negotiated", ce qui veut dire *"Pas mal d'histoires là-dedans : de villes rénovées, de terrains absorbés, de parcelles négociées [...]"*.
 
@@ -100,7 +100,7 @@ Pour appuyer sa requête, elle citait datapointed : "Lots of stories in there: o
 
 La demande de Slate m'a motivé à réaliser un travail d'investigation que je ne m'étais pas accordé le temps de faire. Faire émerger les épisodes du développement de la Cité grâce à au graphisme de ses rues me paraissait une idée séduisante.
 
-[![Paris - Skate](https://cdn.geotribu.fr/img/articles-blog-rdp/story/skate.jpg "Paris - Skate"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/skate.jpg "Paris - Skate"){: data-mediabox="lightbox-gallery" data-title="Paris - Skate" }
+![Paris - Skate](https://cdn.geotribu.fr/img/articles-blog-rdp/story/skate.jpg "Paris - Skate"){: .img-center loading=lazy }
 
 Etudiant, j'en avais seulement apprécié les courbes lors de virées nocturnes en skate. J'ignorais alors ce que ces rues pouvaient dessiner vues de haut et aujourd'hui, je n'habite plus Paris. C'était un drôle de petit défi.
 
@@ -108,7 +108,7 @@ Etudiant, j'en avais seulement apprécié les courbes lors de virées nocturnes 
 
 Un coup de fil passé à une amie urbaniste me mit sur la piste. Elle m'évoqua les travaux initiés par [Georges Eugène Hausmann](https://fr.wikipedia.org/wiki/Georges_Eug%C3%A8ne_Haussmann). La Toile fut par la suite une alliée précieuse.
 
-[![Pérégrination](https://cdn.geotribu.fr/img/articles-blog-rdp/story/p%C3%A9r%C3%A9grination.jpg "Pérégrination"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/p%C3%A9r%C3%A9grination.jpg "Pérégrination"){: data-mediabox="lightbox-gallery" data-title="Pérégrination" }
+![Pérégrination](https://cdn.geotribu.fr/img/articles-blog-rdp/story/p%C3%A9r%C3%A9grination.jpg "Pérégrination"){: .img-center loading=lazy }
 
 Dans un premier temps, j'ai repéré des zones où différentes couleurs se conjuguaient de façon atypique. Au fil de mes pérégrinations sur la Toile, pendant lesquelles je parcourais simultanément l'espace de ma carte, j'ai pu rassembler assez d'éléments pour donner du sens, finalement, à cette carte.
 
@@ -116,7 +116,7 @@ J'ai pu compter sur [des sites de passionnés](http://paris-atlas-historique.fr/
 
 L'articulation de mon article s'appuie, non pas sur un ordre chronologique, mais sur des graphismes distincts sur la carte. J'ai réduit mon nombre d'observation à 10.
 
-[![Observation](https://cdn.geotribu.fr/img/articles-blog-rdp/story/zoom_0.jpg "Observation"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/zoom_0.jpg "Observation"){: data-mediabox="lightbox-gallery" data-title="Observation" }
+![Observation](https://cdn.geotribu.fr/img/articles-blog-rdp/story/zoom_0.jpg "Observation"){: .img-center loading=lazy }
 
 Dans un premier temps, mon article invite à contempler la carte de loin, pour ensuite affiner l'observation sur des amas de voies (groupes de rues de même couleurs) et des discontinuités (percées hausmaniennes, îlots de couleur différente).
 
@@ -146,7 +146,7 @@ Sur Twitter, une personne avouera ne presque avoir rien compris à ma carte mais
 
 ## Audience d'une carte
 
-[![Diagramme de Venn](https://cdn.geotribu.fr/img/articles-blog-rdp/story/sujet%20verbe%20complement.jpg "Diagramme de Venn"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/sujet%20verbe%20complement.jpg "Diagramme de Venn"){: data-mediabox="lightbox-gallery" data-title="Diagramme de Venn" }
+![Diagramme de Venn](https://cdn.geotribu.fr/img/articles-blog-rdp/story/sujet%20verbe%20complement.jpg "Diagramme de Venn"){: .img-center loading=lazy }
 
 L'image ci-dessus est un [diagramme de Venn](https://fr.wikipedia.org/wiki/Diagrammes_d'Euler,_de_Venn_et_de_Carroll). Elle comporte les trois ingrédients qui déterminent, selon moi, l'audience d'une carte.
 
@@ -168,7 +168,7 @@ Enfin, la carte étant une matière à penser qui se suffit peu à elle-même, l
 
 Voici comment, finalement, tout cela s'est déroulé :
 
-[![Genèse](https://cdn.geotribu.fr/img/articles-blog-rdp/story/diagramme.jpg "Genèse"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/diagramme.jpg "Genèse"){: data-mediabox="lightbox-gallery" data-title="Genèse" }
+![Genèse](https://cdn.geotribu.fr/img/articles-blog-rdp/story/diagramme.jpg "Genèse"){: .img-center loading=lazy }
 
 La création du code permettant de générer la carte ne m'a pas pris en soi beaucoup de temps. C'est surtout la rédaction de l'article, étalée sur un mois, qui a été chronophage. Je me rappelle parcourir les pages de Wikipedia dans le bus, sur le chemin de mon travail, pour ensuite les relire à la maison. Je me rappelle certaines soirées d'hiver, occupé à compiler mes différentes observations dans un fichier texte. Le jeu en a valu la chandelle et ce fut une belle aventure.
 
@@ -180,7 +180,7 @@ A noter que d'autres sources de données auraient très bien pu être exploitée
 
 Après publication, un ancien professeur me demandait si j'avais utilisé des indicateurs d'isotropie afin de savoir si les rues suivaient une direction particulière dans l'espace.
 
-[![Nature](https://cdn.geotribu.fr/img/articles-blog-rdp/story/nature.PNG "Nature"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/story/nature.PNG "Nature"){: data-mediabox="lightbox-gallery" data-title="Nature" }
+![Nature](https://cdn.geotribu.fr/img/articles-blog-rdp/story/nature.PNG "Nature"){: .img-center loading=lazy }
 
 Dans la revue [Nature](http://www.nature.com/srep/2013/130708/srep02153/full/srep02153.html), un article datant de 2013 révèle l'histoire de Paris au travers de ses rues en mobilisant, notamment, la théorie des réseaux/graphes. A lire.
 

@@ -22,7 +22,7 @@ Heureux possesseur d'un téléphone équipé de la plateforme Android, je cherch
 
 Mais, rassurez-vous, la perle rare existe. Il s'agit d'[OSMTracker](http://code.google.com/p/osmtracker-android/) développé par Nicolas Guillaumin. Cette application, inspirée par son [homologue](https://wiki.openstreetmap.org/wiki/OSMtracker) disponible sur Windows-Mobile, permet d'enregistrer votre parcours et de renseigner les différents attributs. De plus, vous pouvez associer des photos ou réaliser des enregistrements vocaux. Au final, l'interface s'apprivoise en quelques minutes, et vous vous retrouverez très rapidement à enregistrer tout ce qui peut être cartographié.
 
-[![OSMTracker](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/screenshot-01.png "OSMTracker"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/screenshot-01.png){: data-mediabox="lightbox-gallery" data-title="OSMTracker"}
+![OSMTracker](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/screenshot-01.png "OSMTracker"){: .img-center loading=lazy }
 
 Pour les possesseurs d'un téléphone Android participant à OpenStreetMap, cette application trouvera très rapidement sa place dans votre logithèque. Bravo à Nicolas Guillaumin pour cet excellent outil.
 

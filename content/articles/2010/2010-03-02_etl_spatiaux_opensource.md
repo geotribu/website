@@ -24,7 +24,7 @@ Les outils d'extraction, de transformations et de chargement de données (Extrac
 
 Au cours de ce billet, nous nous attacherons à présenter succinctement les concepts et l'histoire de la géomatique décisionnelle pour approfondir ensuite notre analyse sur les outils ETL OpenSource existants.
 
-[![ETL/SpatialOLAP](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/spatialOlap_etl2.png "ETL/SpatialOLAP"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/spatialOlap_etl2.png "ETL/SpatialOLAP"){: data-mediabox="gallery-lightbox" data-title="ETL/SpatialOLAP" }
+![ETL/SpatialOLAP](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/spatialOlap_etl2.png "ETL/SpatialOLAP"){: .img-center loading=lazy }
 
 > Fig 1 : Les ETL dans la chaine décisionnelle
 
@@ -76,7 +76,7 @@ Je ne vais pas vous faire un cours sur le décisionnel OpenSource mais il faut s
 
 ## Spatial Data Integrator
 
-[![Filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/filter_world_light.png "Filter"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/filter_world_light.png "Filter"){: data-mediabox="gallery-lightbox" data-title="Filter" }
+![Filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/filter_world_light.png "Filter"){: .img-center loading=lazy }
 
 Basé sur l'ETL Talend Open Studio (TOS), Spatial Data Integrator (SDI) est développé par la société [CampToCamp](http://www.camptocamp.com/). Cet ETL est de type générateur de code. C'est-à-dire que pour chaque action que vous réalisez sur l'interface graphique, un code spécifique est généré. En plus de la centaine de connecteurs natifs disponibles dans TOS, SDI ajoute la possibilité de lire et/ou écrire des données au format WFS (r) et GPX (r/w) ainsi que de réaliser des traitements cartographiques (simplification, changement du sens des lignes...). De plus, il peut également être couplé à la bibliothèque [Sextante](http://forge.osor.eu/plugins/wiki/index.php?id=13&type=g) afin de travailler sur du raster. Enfin, la visualisation des données peut se faire directement depuis [Udig](http://udig.refractions.net/).
 
@@ -84,7 +84,7 @@ Le choix pour CampToCamp de proposer un ETL spatial n'est pas surprenant. En eff
 
 ## GeoKettle
 
-[![Schema](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/schema_complet_hook_light.png "Schema"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/schema_complet_hook_light.png "Schema"){: data-mediabox="gallery-lightbox" data-title="Schema" }
+![Schema](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/schema_complet_hook_light.png "Schema"){: .img-center loading=lazy }
 
 Développé par l'équipe du [Dr Badard](http://geosoa.scg.ulaval.ca/fr/index.php) de l'université de Laval (CRG - Canada), GeoKettle est basé sur l'ETL [Pentaho Data Integration](http://www.pentaho.com/products/data_integration/) (PDI). Contrairement à Talend Open Studio qui est un générateur de code, PDI est un moteur de transformation ETL. Dans cette logique, les données et les traitements sont séparés (meta-data driven) (Atol 2008). Avec SDI, il est possible d'accéder en lecture et/ou écriture à plus d'une trentaine de bases de données et de fichiers plats (CSV, XML...). GeoKettle, permet en plus de lire et écrire des données géographiques de bases PostGis, MySQL et de fichiers ShapeFiles.
 

@@ -22,7 +22,7 @@ En effet, pour beaucoup de personnes, le SIG se résume à ce que je nomme la ca
 
 C'est à cet objectif que s'est attelé "[Geospatial Revolution Project](http://geospatialrevolution.psu.edu/index.html)", je vous laisse découvrir la vidéo réalisée qui n'est qu'une rapide introduction à un plus long reportage qui devrait prochainement être disponible.
 
-[![ASPRS Foundation](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/asprs.png "ASPRS Foundation"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/asprs.png){: data-mediabox="lightbox-gallery" data-title="ASPRS Foundation" }
+![ASPRS Foundation](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/asprs.png "ASPRS Foundation"){: .img-center loading=lazy }
 
 ----
 

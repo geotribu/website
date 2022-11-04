@@ -77,7 +77,7 @@ Les `zone_de_vegetation` et `surface_hydrographique` sont respectivement vertes 
 
 La classe `troncon_hydrographique` est simplement utilisée pour l'étiquetage des surfaces hydrographiques.
 
-[![Aperçu du projet QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/projet_qgis.png "Aperçu du projet QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/projet_qgis.png){: data-mediabox="gallery-lightbox" data-title="Aperçu du projet QGIS" }
+![Aperçu du projet QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/projet_qgis.png "Aperçu du projet QGIS"){: .img-center loading=lazy }
 
 ----
 
@@ -98,7 +98,7 @@ Je construis à la place une sorte de fond de mise en forme avec :
 * deux objets `Etiquette` en guise de titre et sous-titre,
 * et deux objets `Polygone` placés de sorte à rappeler le premier symbole du Louvre : la Pyramide.
 
-[![Fond de mise en page](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/fond.png "Fond de mise en page"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/fond.png){: data-mediabox="gallery-lightbox" data-title="Fond de mise en page" }
+![Fond de mise en page](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/fond.png "Fond de mise en page"){: .img-center loading=lazy }
 
 ### ...fait la forme !
 
@@ -114,7 +114,7 @@ La somme de `#FFFF00` et `#0000FF` est égale à `#FFFFFF` soit le blanc.
 
 En image, voilà ce que donne le croisement du rouge (`#FF0000`), du vert (`#00FF00`) et du bleu (`#0000FF`).
 
-[![Comportement du mode de fusion Addition](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_addition.png "Comportement du mode de fusion Addition"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_addition.png){: data-mediabox="gallery-lightbox" data-title="Comportement du mode de fusion Addition" }
+![Comportement du mode de fusion Addition](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_addition.png "Comportement du mode de fusion Addition"){: .img-center loading=lazy }
 
 On retrouve bien le jaune (`#FFFF00`) au croisement du rouge et du vert (`#FF0000` + `#00FF00`).
 Au centre, le croisement des trois couleurs (`#FF0000` + `#00FF00` + `#0000FF`) donne le blanc (`#FFFFFF`).
@@ -124,7 +124,7 @@ Inversement, n'importe quelle couleur avec du noir (`#000000`) donne la couleur 
 
 J'ajoute la carte et fixe son rendu à `Addition` et là ... magie ! On vient de transformer le fond en forme.
 
-[![Plan en mode Addition](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/plan.png "Plan en mode Addition"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/plan.png){: data-mediabox="gallery-lightbox" data-title="Plan en mode Addition" }
+![Plan en mode Addition](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/plan.png "Plan en mode Addition"){: .img-center loading=lazy }
 
 !!! Note
     La police d'écriture de l'étiquette _"- PARIS -"_ est trop fine et illisible si elle s'additionne avec la carte.
@@ -140,14 +140,14 @@ Avec ce rendu, l'assemblage des couleurs `#UUVVWW` et `#XXYYZZ` donne `#max(UU,X
 
 Comme pour `Addition`, avec le mode `Éclaircir` couleur + blanc = blanc et couleur + noir = couleur, mais le résultat est différent sur les valeurs intermédiaires, la preuve en image.
 
-[![Comportement du mode de fusion Eclaircir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_eclaircir.png "Comportement du mode de fusion Eclaircir"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_eclaircir.png){: data-mediabox="gallery-lightbox" data-title="Comportement du mode de fusion Eclaircir" }
+![Comportement du mode de fusion Eclaircir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/mode_fusion_eclaircir.png "Comportement du mode de fusion Eclaircir"){: .img-center loading=lazy }
 
 On voit que le mode `Addition` tend plus rapidement vers le blanc.
 Pour l'ajout du portrait, il donnerait une sensation de brûlage/surexposition de la Joconde.
 
 Le mode `Éclaircir` permet de remplacer le noir des bâtiments par le visage de Mona Lisa et d'avoir un mélange plus fondu sur les zones de végétation, les surfaces hydrographiques et les voies nommées.
 
-[![La Joconde en mode Eclaircir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/joconde.png "La Joconde en mode Eclaircir"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/joconde.png){: data-mediabox="gallery-lightbox" data-title="La Joconde en mode Eclaircir" }
+![La Joconde en mode Eclaircir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/joconde.png "La Joconde en mode Eclaircir"){: .img-center loading=lazy }
 
 ### "Rue de Rivoli" Touch
 
@@ -159,7 +159,7 @@ Par défaut en mode de fusion `Normal`, ces deux nouveaux éléments masquent ce
 
 On voit ici que la superposition des modes est possible à l'infini...enfin l'infini, disons que c'est possible tant que ta machine et QGIS sont capables de calculer les fusions à l'affichage.
 
-[![Mise en avant de la rue de Rivoli](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/final.png "Mise en avant de la rue de Rivoli"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/final.png){: data-mediabox="gallery-lightbox" data-title="Mise en avant de la rue de Rivoli" }
+![Mise en avant de la rue de Rivoli](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/final.png "Mise en avant de la rue de Rivoli"){: .img-center loading=lazy }
 
 ----
 
@@ -173,19 +173,19 @@ Pour le reste, il te faudra tester...
 
 Tiens, et si on demandait à [DALL.E](https://openai.com/dall-e-2/) de nous générer le "portrait de la Joconde dans un plan de Paris en forme de pyramide" ?
 
-[![La Joconde par DALL.E - version 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_1.png "La Joconde par DALL.E - version 1"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_1.png){: data-mediabox="gallery-lightbox" data-title="La Joconde par DALL.E - version 1" }
+![La Joconde par DALL.E - version 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_1.png "La Joconde par DALL.E - version 1"){: .img-center loading=lazy }
 
-[![La Joconde par DALL.E - version 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_2.png "La Joconde par DALL.E - version 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_2.png){: data-mediabox="gallery-lightbox" data-title="La Joconde par DALL.E - version 2" }
+![La Joconde par DALL.E - version 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_2.png "La Joconde par DALL.E - version 2"){: .img-center loading=lazy }
 
 Je ne sais pas toi mais perso je préfère notre version QGIS. En vrai, on doit pouvoir faire mieux avec des couleurs moins flashys et peut-être aussi quelques dégradés en lieu et place du noir brut pour les fusions.
 
 Le but de l'article est surtout de comprendre le principe et de montrer qu'on peut déjà pas mal s'amuser avec le seul composeur d'impression.
 
-[![La Joconde façon Ed Fairburn](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/affiche.png "La Joconde façon Ed Fairburn"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/affiche.png){: data-mediabox="gallery-lightbox" data-title="La Joconde façon Ed Fairburn" }
+![La Joconde façon Ed Fairburn](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/affiche.png "La Joconde façon Ed Fairburn"){: .img-center loading=lazy }
 
 Dans le détail, on voit bien comment le portrait est fusionné avec les zones de végétation et les surfaces hydrographiques.
 
-[![Détails de la fusion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/details.png "Détails de la fusion"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/details.png){: data-mediabox="gallery-lightbox" data-title="Détails de la fusion" }
+![Détails de la fusion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/details.png "Détails de la fusion"){: .img-center loading=lazy }
 
 Et alors que je m'apprête à mettre un point final à cet article, un relecteur que nous nommerons G-DOPenIG pour ne pas briser son anonymat me propose de, je cite, te _"renvoyer à la différence entre synthèse additive (RVB, écran) et soustractive (CMJN, imprimerie)"_, preuve irréfutable qu'il en connait plus que moi sur le sujet. Cet anonyme nous propose [cette page explicative](https://www.colorimetrie.be/chapter/introduction_colorimetrie/synthese-additive-et-soustractive) pour en savoir plus.
 

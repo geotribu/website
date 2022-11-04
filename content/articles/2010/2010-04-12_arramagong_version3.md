@@ -48,7 +48,7 @@ Une fois muni de votre fichier BIN, nous allons maintenant le transformer en VDI
 
 Et voilà ! Quelques longues minutes plus tard, vous êtes en possession d'un nouveau disk dur sur lequel est Arramagong. Il suffit maintenant de l'ajouter depuis le Gestionnaire de Support Virtuel de VirtualBox. Le temps de lancer la machine et vous devriez voire alors apparaitre l'image ci-dessous.
 
-[![Arramagong](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/arramagong_V3.png "Arramagong"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/arramagong_V3.png "Arramagong"){: data-mediabox="gallery-lightbox" data-title="Arramagong" }
+![Arramagong](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/arramagong_V3.png "Arramagong"){: .img-center loading=lazy }
 
 ----
 

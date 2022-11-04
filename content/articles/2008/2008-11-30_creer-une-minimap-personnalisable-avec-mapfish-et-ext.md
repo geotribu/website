@@ -158,7 +158,7 @@ Ext.reg('miniMap', mapfish.widgets.miniMap);
 
 Et enfin, l'exemple illustrant le code ci-dessus :
 
-[![Mini Map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/miniMap.png "Mini Map"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/miniMap.png "Mini Map"){: data-mediabox="gallery-lightbox" data-title="Mini Map" }
+![Mini Map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/miniMap.png "Mini Map"){: .img-center loading=lazy }
 
 ----
 

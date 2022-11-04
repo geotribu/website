@@ -23,7 +23,7 @@ Avec un accès en lecture et/ou écriture vers plus d'une trentaine de formats v
 
 Mais bon là n'est pas le coeur de notre débat, c'est même le contraire. En effet, [Inventis](http://www.inventis.ca/en/home.php), société Canadienne à l'origine du projet [OGR2GUI](http://www.ogr2gui.ca) une interface graphique permettant de piloter la librairie de transformation de données vecteurs [OGR](http://www.gdal.org/ogr/). Une nouvelle version (0.6) vient de paraître. Celle-ci permet dorénavant à OGR2GUI de fonctionner même sur Nokia. De plus de nouveaux formats de données ont été ajoutés avec notamment au niveau des bases de données, Oracle Spatial et PostgreSQL ainsi que de nouveaux formats vecteurs tels que le GPX ou encore le GeoJSON.
 
-[![OGR2GUI](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/ogr2gui.jpg "OGR2GUI"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/ogr2gui.jpg){: data-mediabox="lightbox-gallery" data-title="OGR2GUI" }
+![OGR2GUI](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/ogr2gui.jpg "OGR2GUI"){: .img-center loading=lazy }
 
 Cet utilitaire fait donc partie des indispensables de la boite à outil du géomaticien moderne. Peut-être jour disposerons nous même d'une interface de ce type sur internet.
 

@@ -32,7 +32,7 @@ Le test qui va servir à la mesure consiste à faire un appel de l'API en mode _
 
 Un premier test effectue deux appels, une fois vers GraphHopper et une fois vers OSRM dans la même session, la charge est légère (7,5 req/s au max) étant donné que les deux outils tournent en même temps sur la machine, ceci afin de ne pas perturber les mesures par une éventuelle saturation de ressource.
 
-[![Durée des transactions](https://cdn.geotribu.fr/img/articles-blog-rdp/transaction1_0.png "Durée des transactions"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/transaction1_0.png "Durée des transactions"){: data-mediabox="lightbox-gallery" data-title="Durée des transactions" }
+![Durée des transactions](https://cdn.geotribu.fr/img/articles-blog-rdp/transaction1_0.png "Durée des transactions"){: .img-center loading=lazy }
 
 La courbe verte correspond aux temps de réponses d'OSRM, la bleue ceux de GraphHopper. Tout itinéraire confondu GrahHopper répond avec un temps moyen de 87 ms et OSRM 120 ms avec des percentile 95 respectifs de 120 et 210 ms. Ce premier test donne l'avantage à GraphHopper, lors de ce test le nombre de requête par seconde a varié entre 0,1 et 10 sans pour autant faire varier le temps de réponse (le [détail](http://tsung.quiedeville.org/tsung-reports/20131127-0947/report.html) du test est consultable en ligne). En analysant les résultats fournis nous avons noté que les distances annoncées varient dans 99,93% des cas, avec dans 83% des cas une distance supérieure pour GraphHopper ; ceci s'explique par le fait que GraphHopper ajoute la distance du point demandé au premier point de la way utilisée (il fait de même à l'arrivée) ce que ne fait pas OSRM qui ne compte que les distances sur les ways.
 
@@ -52,7 +52,7 @@ Tous les temps sont exprimés en msec. ([détail](http://tsung.quiedeville.org/t
 
 L'analyse des résultats du tableau ci-dessus montre que si l'on compare les temps de réponses de chacun des outils par jeu de données, on voit que globalement les temps de GraphHopper (Ghp) sont meilleurs que OSRM. Il faut tout de même noter que OSRM reste plus rapide sur les trajets courts (inférieur à 3 km). Enfin pour les deux outils le temps de réponses augmente en fonction de la distance du trajet, ce que montre très nettement le grahique ci dessous.
 
-[![Mesure comparative](https://cdn.geotribu.fr/img/articles-blog-rdp/time-distance.png "Mesure comparative"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/time-distance.png "Mesure comparative"){: data-mediabox="lightbox-gallery" data-title="Mesure comparative" }
+![Mesure comparative](https://cdn.geotribu.fr/img/articles-blog-rdp/time-distance.png "Mesure comparative"){: .img-center loading=lazy }
 
 A ce stade du comparatif GraphHopper semble être plus performant que OSRM, il reste pour parfaire la comparaison à pousser les deux solutions dans leur dernier retranchement.
 
@@ -62,11 +62,11 @@ Nous allons effectuer un test aux limites en injectant de plus en plus d'utilisa
 
 Premier sur le banc OSRM, le détail du test est publié en ligne ([ici)](http://tsung.quiedeville.org/tsung-reports/20131203-0840/graph.html) je me limiterai ici à comparer le taux de requête max par seconde atteint par chacun. Pour OSRM la limite telle que montrée sur le graphique ci-dessous se situe au alentour de 80 requ/sec, avec un temps maximum atteint sur le percentile 99 de 30 secondes.
 
-[![Test OSRM](https://cdn.geotribu.fr/img/articles-blog-rdp/osrm-rqrate.png "Test OSRM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/osrm-rqrate.png "Test OSRM"){: data-mediabox="lightbox-gallery" data-title="Test OSRM" }
+![Test OSRM](https://cdn.geotribu.fr/img/articles-blog-rdp/osrm-rqrate.png "Test OSRM"){: .img-center loading=lazy }
 
 Pour la même charge GraphHopper (voir le graphique ci dessous et le [détail](http://tsung.quiedeville.org/tsung-reports/20131203-1018/report.html)) s'en sort un mieux en dépassant les 250 requ/sec, et un percentile 99 de 140 msec pour un temps moyen de 50 msec.
 
-[![Test GraphHopper](https://cdn.geotribu.fr/img/articles-blog-rdp/graphhopper-rqrate.png "Test GraphHopper"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/graphhopper-rqrate.png "Test GraphHopper"){: data-mediabox="lightbox-gallery" data-title="Test GraphHopper" }
+![Test GraphHopper](https://cdn.geotribu.fr/img/articles-blog-rdp/graphhopper-rqrate.png "Test GraphHopper"){: .img-center loading=lazy }
 
 ## Conclusion
 

@@ -72,11 +72,11 @@ Il existe trois URL permettant d'accéder aux tuiles vectorielles de Mapillary :
 
 Dans l'explorateur du Gestionnaire de données de QGIS, ajouter une couche de tuiles vectorielles.
 
-[![Explorateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/explorateur.png "Explorateur"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/explorateur.png "Explorateur"){: data-mediabox="gallery-lightbox" data-title="Explorateur" }
+![Explorateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/explorateur.png "Explorateur"){: .img-center loading=lazy }
 
 Nommer proprement la couche vectorielle à ajouter et renseigner l'URL de la couche vectorielle qui vous intéresse en n'oubliant pas de modifier le jeton Mapillary qui vous permet de vous identifier.
 
-[![Connexion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: data-mediabox="gallery-lightbox" data-title="Connexion" }
+![Connexion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: .img-center loading=lazy }
 
 Ajouter la nouvelle couche de tuiles dans QGIS (pour visualiser l'information, vous devrez zoomer au niveau 14 ou +).
 
@@ -84,7 +84,7 @@ Ajouter la nouvelle couche de tuiles dans QGIS (pour visualiser l'information, v
 
 Les tuiles vectorielles sont interrogeables et permettent une consultation des différents champs publiés. Si l'on prend l'exemple du flux lié à la signalisation, il est possible d'accéder au type de panneau detecté ainsi qu'aux dates auxquelles il a été vu pour la première et la dernière fois.
 
-[![Information](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/information.png "Information"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/information.png "Information"){: data-mediabox="gallery-lightbox" data-title="Information" }
+![Information](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/information.png "Information"){: .img-center loading=lazy }
 
 ### Personnalisation des tuiles vectorielles
 
@@ -94,7 +94,7 @@ Par défaut lors de l'ajout, les données présentent dans les tuiles vectoriell
 - Lignes
 - Points
 
-[![Symbologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: data-mediabox="gallery-lightbox" data-title="Symbologie" }
+![Symbologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/symbologie.png "Symbologie"){: .img-center loading=lazy }
 
 Il est possible d'enrichir ce rendu par défaut en ajoutant de nouveaux styles, en définissant la couche sur laquelle vous souhaitez travailler, exemple : `traffic_signs` et en jouant avec les filtres, exemple : `(geometry_type($geometry)='Point') AND ("value" IS 'information--general-directions--g1')`
 
@@ -260,7 +260,7 @@ sh mapillary_vt2pg.sh signalisation
 
 Pour terminer, on peut charger la donnée dans QGIS et créer un style en s'appuyant sur les [symboles partagés par Mapillary](https://github.com/mapillary/mapillary_sprite_source).
 
-[![Signalisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/signalisation.png "Signalisation"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/signalisation.png "Signalisation"){: data-mediabox="gallery-lightbox" data-title="Signalisation" }
+![Signalisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/signalisation.png "Signalisation"){: .img-center loading=lazy }
 
 ----
 

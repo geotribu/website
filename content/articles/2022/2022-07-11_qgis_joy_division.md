@@ -29,7 +29,7 @@ Dans cet article, nous allons voir comment créer une carte Post-punk à la mode
 
 La couverture de l'album 'Unknow Pleasures' du groupe Joy Division est iconique et a inspiré bon nombre de cartographes. Ne vous fait-elle pas penser à des courbes de niveaux ?
 
-[![Joy Division cover](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy_division_unknown_pleasures.webp "Joy Division cover"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy_division_unknown_pleasures.webp){: data-mediabox="lightbox-gallery" data-title="Joy Division cover" }
+![Joy Division cover](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy_division_unknown_pleasures.webp "Joy Division cover"){: loading=lazy .img-center }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -42,11 +42,11 @@ La couverture de l'album Unkown Pleasures du groupe Joy Division amuse beaucoup 
 
 Voici par exemple une carte de l'Islande :
 
-[![Carte de l'Islande](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/islande.jpg "Carte de l'Islande"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/islande.jpg){: data-mediabox="lightbox-gallery" data-title="Carte de l'Islande" }
+![Carte de l'Islande](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/islande.jpg "Carte de l'Islande"){: loading=lazy .img-center }
 
 Dans le monde de la dataviz, on nomme ce type de rendu des [ridgelines](https://www.data-to-viz.com/graph/ridgeline.html).
 
-[![Ridgeline plots](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/ridgelines_exemple_data-to-viz.webp "Ridgeline plots"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/ridgelines_exemple_data-to-viz.webp){: data-mediabox="lightbox-gallery" data-title="Ridgeline plots" }
+![Ridgeline plots](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/ridgelines_exemple_data-to-viz.webp "Ridgeline plots"){: loading=lazy .img-center }
 
 L'album [Unknow Pleasures](https://fr.wikipedia.org/wiki/Unknown_Pleasures) est paru en 1979. Sa couverture est assez bien ancrée dans l'époque des années 80 avec un air assez pixel art, rétro-futuriste. Elle rappelle un peu les écrans de contrôle dans Star Trek ou Star Wars, ou l'esthétique du film Tron.
 
@@ -65,7 +65,7 @@ Voici ce que dit [Wikipedia](https://en.wikipedia.org/wiki/Unknown_Pleasures#Art
 
 Voici d'ailleurs à quoi ressemble l'image originale :
 
-[![Image originale des impulsions](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/cp1919.webp "Image originale des impulsions"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/cp1919.webp){: data-mediabox="lightbox-gallery" data-title="Image originale des impulsions" }
+![Image originale des impulsions](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/cp1919.webp "Image originale des impulsions"){: loading=lazy .img-center }
 
 Cette image n'est pas sans rappeler la musique, notamment les courbes de réponse fréquentielle qui servent aux ingénieurs du son à égaliser dans les basses, médiums et aigus. Voilà si l'on souhaite faire un lien avec le monde de la musique
 
@@ -83,7 +83,7 @@ Voici le secteur sur [Géoportail](https://www.geoportail.gouv.fr/carte?c=5.6006
 
 Cette montagne a été souvent peinte par Cézanne.
 
-[![La Sainte Victoire peinte par Cézanne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/sainte_victoire_cezanne_fondation_vuitton_wikimedia.webp "La Sainte Victoire par Cézanne"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/sainte_victoire_cezanne_fondation_vuitton_wikimedia.webp){: data-mediabox="lightbox-gallery" data-title="La Sainte Victoire par Cézanne - Crédits : Fondation Louis Vuitton, Wikimedia" }
+![La Sainte Victoire peinte par Cézanne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/sainte_victoire_cezanne_fondation_vuitton_wikimedia.webp "La Sainte Victoire par Cézanne"){: loading=lazy .img-center }
 
 Le MNT BDALTI de l'IGN à une résolution de 25 mètres sera suffisant pour notre carte.
 
@@ -95,15 +95,15 @@ Téléchargez le MNT sur votre département (j'avoue que j'ai un faible pour le 
 
 Localisez-vous sur votre zone grâce à l'outil de localisation (plugin [French Locator Filter](https://plugins.qgis.org/plugins/french_locator_filter/))
 
-[![Localisation d'Aix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/aix.png "Localisation d'Aix"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/aix.png){: data-mediabox="lightbox-gallery" data-title="Localisation d'Aix" }
+![Localisation d'Aix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/aix.png "Localisation d'Aix"){: loading=lazy .img-center }
 
 Découpez le MNT selon votre zone de référence via `Raster > Extraction > Découper un raster selon une emprise` en choisissant le mode dessin :
 
-[![Découpe avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/decoupe.png "Découpe avec QGIS"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/decoupe.png){: data-mediabox="lightbox-gallery" data-title="Découpe avec QGIS" }
+![Découpe avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/decoupe.png "Découpe avec QGIS"){: loading=lazy .img-center }
 
 Vous obtiendrez alors :
 
-[![MNT découpé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/0-dem.jpeg "MNT découpé"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/0-dem.jpeg){: data-mediabox="lightbox-gallery" data-title="MNT découpé" }
+![MNT découpé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/0-dem.jpeg "MNT découpé"){: loading=lazy .img-center }
 
 ## Création de la couche d'emprise
 
@@ -111,15 +111,15 @@ Ensuite, créez une couche vectorielle selon l'étendue de votre MNT.
 
 Allez sur `Extraire l'emprise de la couche` :
 
-[![Extraction de l'emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/couche.png "Extraction de l'emprise"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/couche.png){: data-mediabox="lightbox-gallery" data-title="Extraction de l'emprise" }
+![Extraction de l'emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/couche.png "Extraction de l'emprise"){: loading=lazy .img-center }
 
 Puis, extrayez l'emprise de votre modèle numérique de terrain via `Vecteur > Outils de recherche > Extraire l'emprise de la couche`.
 
-[![Extraire l'emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/extraire.png "Extraire l'emprise"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/extraire.png){: data-mediabox="lightbox-gallery" data-title="Extraire l'emprise" }
+![Extraire l'emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/extraire.png "Extraire l'emprise"){: loading=lazy .img-center }
 
 Voici l'emprise :
 
-[![Emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/1-Carre.jpeg "Emprise"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/1-Carre.jpeg){: data-mediabox="lightbox-gallery" data-title="Emprise" }
+![Emprise](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/1-Carre.jpeg "Emprise"){: loading=lazy .img-center }
 
 ----
 
@@ -127,13 +127,13 @@ Voici l'emprise :
 
 Allez dans les `Propriétés` de la couche Emprise, dans `Style`, et choisissez `Générateur de géométrie`, et dans un premier temps, le rendu `Multiligne / Multi-Polyligne`. Nous allons enfin pouvoir faire joujou !
 
-[![Générateur de géométries](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/rendu-ligne.png "Générateur de géométries"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/rendu-ligne.png){: data-mediabox="lightbox-gallery" data-title="Générateur de géométries" }
+![Générateur de géométries](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/rendu-ligne.png "Générateur de géométries"){: loading=lazy .img-center }
 
 Nous allons procéder pas à pas afin de comprendre les différentes fonctions.
 
 Nous allons créer des lignes horizontales :
 
-[![Rendu en lignes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/2-lines.jpeg "Rendu en lignes"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/2-lines.jpeg){: data-mediabox="lightbox-gallery" data-title="Rendu en lignes" }
+![Rendu en lignes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/2-lines.jpeg "Rendu en lignes"){: loading=lazy .img-center }
 
 Voici le code associé :
 
@@ -178,7 +178,7 @@ make_line(
 
 Ensuite, nous densifions les lignes avec des points, ce qui laisse apparaître une grille de points. Ces points constitueront plus tard les noeuds de nos lignes.
 
-[![Rendu en points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/3-points.jpeg "Rendu en points"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/3-points.jpeg){: data-mediabox="lightbox-gallery" data-title="Rendu en points" }
+![Rendu en points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/3-points.jpeg "Rendu en points"){: loading=lazy .img-center }
 
 Voici le code associé :
 
@@ -224,12 +224,12 @@ Si nous ne mettions pas `collect_geometries` et que nous nous arrêtions seuleme
 
 En commentant `collect_geometries`, nous pouvons débugger le code en laissant apparaître l'"ADN géométrique" du rendu :
 
-[![Commenter le code](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/comment.png "Commenter le code"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/comment.png){: data-mediabox="lightbox-gallery" data-title="Commenter le code" }
+![Commenter le code](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/comment.png "Commenter le code"){: loading=lazy .img-center }
 
 Maintenant, ce que l'on va faire, c'est déplacer chaque point vers le haut en fonction de la valeur du MNT qui se situe en dessous.  
 C'est-à-dire ceci :
 
-[![Déplacement des points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/shift-points.jpeg "Déplacement des points"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/shift-points.jpeg){: data-mediabox="lightbox-gallery" data-title="Déplacement des points" }
+![Déplacement des points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/shift-points.jpeg "Déplacement des points"){: loading=lazy .img-center }
 
 Voici le code associé :
 
@@ -310,14 +310,14 @@ Enfin, nous construisons une ligne qui relie chaque point qui a été déplacé.
 
 Le rendu sera le suivant :
 
-[![Rendu basique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy.jpeg "Rendu basique"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy.jpeg){: data-mediabox="lightbox-gallery" data-title="Rendu basique" }
+![Rendu basique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy.jpeg "Rendu basique"){: loading=lazy .img-center }
 
 ![St Patricks Day Rainbow GIF](https://media.giphy.com/media/3o84U6421OOWegpQhq/giphy.gif "St Patricks Day Rainbow GIF"){: loading=lazy }
 {: align=middle }
 
 Si vous êtes un puriste de l'album, vous pouvez choisir de n'afficher que 100 lignes, comme les 100 impulsions du pulsar, et de conserver les proportions du graphique au maximum en augmentant la marge (ou l'offset) sur les bords droit et gauche (soit en X) :
 
-[![Rendu puriste](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-puriste.jpeg "Rendu puriste"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-puriste.jpeg){: data-mediabox="lightbox-gallery" data-title="Rendu puriste" }
+![Rendu puriste](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-puriste.jpeg "Rendu puriste"){: loading=lazy .img-center }
 
 Voici le code associé :
 
@@ -398,7 +398,7 @@ A vous de jouer !
 ![Dance Dancing GIF](https://media.giphy.com/media/U8RXSRKv8uMPS/giphy.gif "Dance Dancing GIF"){: loading=lazy }
 {: align=middle }
 
-[![Mon T-Shirt Joy Division](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-photo.jpeg "Mon T-Shirt Joy Division"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-photo.jpeg){: data-mediabox="lightbox-gallery" data-title="Mon T-Shirt Joy Division" }
+![Mon T-Shirt Joy Division](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy-photo.jpeg "Mon T-Shirt Joy Division"){: loading=lazy .img-center }
 
 Pas mal de variations sont possibles sur la base de ces lignes. Voici une petite variation avec Blender accomplie par Steven Kay :
 

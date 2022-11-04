@@ -53,7 +53,7 @@ Bien évidemment, vous n'allez pas répéter cette opération à chaque fois. C'
 
 Cela a pour effet d'effectuer les opérations que nous avons vues précédemment jusqu'à la suspension du programme par l'utilisateur.
 
-[![Tiles at home](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/tiles_at_home.png "Tiles at home"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/tiles_at_home.png){: data-mediabox="lightbox-gallery" data-title="Tiles at home"}
+![Tiles at home](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/tiles_at_home.png "Tiles at home"){: .img-center loading=lazy }
 
 D'ailleurs, si vous souhaitez arrêter le processus Tiles@home alors qu'il est en train de générer les tuiles, vous devez créer un fichier `stopfile.txt` dans le dossier de Tiles@home. Sinon, vous pouvez également lancer la commande :
 

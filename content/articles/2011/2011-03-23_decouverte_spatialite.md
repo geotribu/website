@@ -41,7 +41,7 @@ Erreur de segmentation
 
 Deuxième option, je tente alors un appel direct à spatialite. Là tout semble fonctionner et j'effectue donc ma première requête :
 
-[![Terminal, query Spatialite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/terminal_query_spatialite.png "Terminal, query Spatialite"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/terminal_query_spatialite.png){: data-mediabox="lightbox-gallery" data-title="Terminal, query Spatialite"}
+![Terminal, query Spatialite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/terminal_query_spatialite.png "Terminal, query Spatialite"){: .img-center loading=lazy }
 
 Bon, la ligne de commande c'est bien, mais cela ne serait pas mieux de disposer d'une interface à la [PGAdmin](http://www.pgadmin.org/) ? Rassurez-vous cela existe, abordons cela immédiatement.
 
@@ -60,9 +60,9 @@ Cela ne semble pas bien méchant, c'est juste un appel à une librairie qui n'ex
 
 Je tente une nouvelle fois de lancer le GUI qui s'ouvre cette fois correctement. Je charge alors un fichier Shapefile puis j'ouvre ensuite ma base avec QGIS pour vérifier que cela fonctionne :
 
-[![Interface graphique de spatialite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/spatialite_gui.png "Interface graphique de spatialite"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/spatialite_gui.png){: data-mediabox="lightbox-gallery" data-title="Interface graphique de spatialite"}
+![Interface graphique de spatialite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/spatialite_gui.png "Interface graphique de spatialite"){: .img-center loading=lazy }
 
-[![Visualisation des données dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/qgis_spatialite.png "Visualisation des données dans QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/qgis_spatialite.png){: data-mediabox="lightbox-gallery" data-title="Visualisation des données dans QGIS"}
+![Visualisation des données dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/qgis_spatialite.png "Visualisation des données dans QGIS"){: .img-center loading=lazy }
 
 Tout semble parfait. Mettons maintenant les mains dans le cambouis et voyons comment associer programmation et spatialite.
 
@@ -131,7 +131,7 @@ function init() {
 
 Là aussi rien d’exceptionnel ! L'objet request est chargé d'effectuer la requête vers notre script python. Si tout s'est bien passé c'est la fonction success() qui est alors appelée. Celle-ci affiche ensuite la géométrie de la France comme cela est illustré par la copie d'écran ci-dessous :
 
-[![Spatialite - France](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/france_spatialite.png "Spatialite - France"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/france_spatialite.png){: data-mediabox="lightbox-gallery" data-title="Spatialite - France"}
+![Spatialite - France](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/france_spatialite.png "Spatialite - France"){: .img-center loading=lazy }
 
 ## Conclusion
 

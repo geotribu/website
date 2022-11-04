@@ -34,11 +34,11 @@ De nombreux travaux ayant pour objectif d'améliorer notre vision de l'espace ut
 
 * Importance et sens de circulation du traffic :
 
-[![Importance et sens de circulation du traffic](http://senseable.mit.edu/realtimerome/sketches/images/S3-00_large.jpg "Importance et sens de circulation du traffic"){: .img-center loading=lazy }](http://senseable.mit.edu/realtimerome/sketches/images/S3-00_large.jpg){: data-mediabox="lightbox-gallery" data-title="Importance et sens de circulation du traffic" }
+![Importance et sens de circulation du traffic](http://senseable.mit.edu/realtimerome/sketches/images/S3-00_large.jpg "Importance et sens de circulation du traffic"){: .img-center loading=lazy }
 
 * L'activité des téléphones portables lors de la finale de la coupe du monde de 2006 :
 
-[![Activité des téléphones portables lors de la finale de la coupe du monde de 2006](http://senseable.mit.edu/realtimerome/sketches/images/s6-worldcup_large.jpg "Activité des téléphones portables lors de la finale de la coupe du monde de 2006"){: .img-center loading=lazy }](http://senseable.mit.edu/realtimerome/sketches/images/s6-worldcup_large.jpg){: data-mediabox="lightbox-gallery" data-title="Activité des téléphones portables lors de la finale de la coupe du monde de 2006" }
+![Activité des téléphones portables lors de la finale de la coupe du monde de 2006](http://senseable.mit.edu/realtimerome/sketches/images/s6-worldcup_large.jpg "Activité des téléphones portables lors de la finale de la coupe du monde de 2006"){: .img-center loading=lazy }
 
 D'autres exemples sont disponibles sur la page du projet [Real Time Rome](http://senseable.mit.edu/realtimerome/sketches/index.html).
 

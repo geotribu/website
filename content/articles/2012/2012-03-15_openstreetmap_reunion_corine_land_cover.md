@@ -57,7 +57,7 @@ Et voilà, je me retrouve donc avec autant de fichier OSM que j'ai de thématiqu
 
 Quand je vous disais qu'elle était un peu triste notre carte OSM de la réunion. Ne préférez-vous pas ce joli camaïeu de vert ?
 
-[![Avant-après CLC](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/avant_apres.png "Avant-après CLC"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/avant_apres.png "Avant-après CLC"){: data-mediabox="lightbox-gallery" data-title="Avant-après CLC" }
+![Avant-après CLC](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/avant_apres.png "Avant-après CLC"){: .img-center loading=lazy }
 
 ----
 

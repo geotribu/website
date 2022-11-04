@@ -35,6 +35,19 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
+  - glightbox:
+      touchNavigation: true
+      effect: zoom
+      width: 90%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - img-rdp-news-thumb
+        - emojione
+        - twemoji
+      auto_caption: true
+      caption_position: bottom
   - minify:
       minify_css: true
       minify_html: true
@@ -70,7 +83,7 @@ plugins:
       tags_file: tags.md
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
-      externals_exclude:
+      external_assets_exclude:
         # geotribu
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*
@@ -84,6 +97,7 @@ plugins:
         - twemoji.maxcdn.com/*
         - upload.wikimedia.org/*
         - user-images.githubusercontent.com/**/*.gif
+        - baliz-geospatial.com/images/mediatheque/2008-08/*
         # to remove later:
         - dev.openstreetmap.org/*
         - www.portailsig.org/assets/images/*
@@ -115,44 +129,6 @@ theme:
     - search.suggest
     - toc.follow
   font: false
-  icon:
-    repo: fontawesome/brands/github-alt
-    tag:
-      default: fontawesome/solid/tag
-      # -- custom tags icons
-      ananas: material/fruit-pineapple
-      atlas: fontawesome/solid/book-atlas
-      brick: material/toy-brick
-      cerveau: material/brain
-      citrouille: material/pumpkin
-      code: fontawesome/solid/code
-      commentaires: fontawesome/solid/comments
-      conference: fontawesome/solid/person-chalkboard
-      database: fontawesome/solid/database
-      facebook: fontawesome/brands/facebook
-      feuille: fontawesome/solid/leaf
-      geoloupe: fontawesome/solid/magnifying-glass-location
-      git: fontawesome/brands/git-alt
-      globe: fontawesome/solid/earth-europe
-      google: fontawesome/brands/google
-      html: fontawesome/brands/html5
-      institution: fontawesome/solid/building-columns
-      js: fontawesome/brands/js
-      manette: fontawesome/solid/gamepad
-      markdown: fontawesome/brands/markdown
-      masques: fontawesome/solid/masks-theater
-      meridiens: fontawesome/solid/globe
-      oeuf: fontawesome/solid/egg
-      open: fontawesome/solid/lock-open
-      opensource: material/open-source-initiative
-      python: fontawesome/brands/python
-      roue: material/cog-play
-      route: fontawesome/solid/route
-      rstats: fontawesome/brands/r-project
-      satellite: fontawesome/solid/satellite-dish
-      streetview: fontawesome/solid/street-view
-      telephone: material/cellphone-marker
-      windows: fontawesome/brands/windows
   language: fr
   logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
   palette:
@@ -230,94 +206,12 @@ extra:
     - icon: "fontawesome/solid/piggy-bank"
       link: https://fr.tipeee.com/geotribu/
       name: "Le pot commun sur Tipee"
-  tags:
-    atlas: atlas
-    Bash: code
-    Centipede: satellite
-    CNIG: institution
-    collecte: telephone
-    collecte terrain: telephone
-    coulisses: masques
-    cURL: code
-    D3.js: js
-    Easter eggs: oeuf
-    Esri: globe
-    ETL: roue
-    ExtJS: js
-    Facebook: facebook
-    FIG: conference
-    FME: roue
-    FOSS4G: conference
-    GéoDataDays: conference
-    GeoGames: manette
-    GeoKettle: roue
-    géo-lecture: atlas
-    Git: git
-    GitHub: git
-    GitLab: git
-    Google: google
-    Google Earth: google
-    Google Maps: google
-    Google Street View: google
-    GraphHopper: route
-    Halloween: citrouille
-    HTML: html
-    HTML5: html
-    IA: cerveau
-    IGN: institution
-    Input: telephone
-    INSPIRE: ananas
-    IRC: commentaires
-    JavaScript: js
-    jeu: manette
-    jeux vidéo: manette
-    Leaflet: feuille
-    Lego: brick
-    LIDAR: satellite
-    livre: atlas
-    Mapillary: streetview
-    Markdown: markdown
-    Matrix: commentaires
-    Minecraft: manette
-    MySQL: database
-    ODK: telephone
-    Open Data Kit: telephone
-    OpenPathView: streetview
-    OpenRouteService: route
-    open data: open
-    open source: opensource
-    OpenStreetMap: geoloupe
-    OSRM: route
-    Open Earth View: streetview
-    pgDay: database
-    pgRouting: route
-    PGSession: database
-    PostGIS: database
-    PostgreSQL: database
-    projection: meridiens
-    PyCSW: python
-    PyGEOS: python
-    PyQGIS: python
-    PyQt: python
-    PySQL: python
-    Python: python
-    PyWPS: python
-    QField: telephone
-    QGIS: globe
-    R: rstats
-    route: route
-    routing: route
-    SQL: database
-    three.js: js
-    Windows: windows
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
-  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css"
 
 extra_javascript:
   - "theme/assets/javascripts/extra.js"
-  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js"
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
