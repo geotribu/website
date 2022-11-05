@@ -484,6 +484,7 @@ redirects:
     articles/2013/art_2013-02-11.md: articles/2013/2013-02-11_appel_contribution_frog2013.md
     articles/2013/art_2013-02-20.md: articles/2013/2013-02-20_contribuer_a_openstreetmap_deux_applications.md
     articles/2013/art_2013-02-25.md: articles/2013/2013-02-25_websocket.md
+    articles/2013/art_2013-03-07.md: articles/2013/2013-03-07_rencontres_dynamiques_regionales_en_information_geographique.md
     articles/2013/art_2013-05-21.md: articles/2013/2013-05-21_compiler_openlayers3.md
     articles/2013/art_2013-05-29.md: articles/2013/2013-05-29_interviews_geotribu.md
     articles/2013/art_2013-06-05_mongo_spatial.md: articles/2013/2013-06-05_mongo_spatial.md
@@ -501,6 +502,7 @@ redirects:
     articles/2014/art_2014-01-01.md: articles/2014/2014-01-01_2013_dans_le_georetro_2014_en_ligne_de_mire.md
     articles/2014/art_2014-01-06.md: articles/2014/2014-01-06_plein_flux_sur_la_geomatique.md
     articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md: articles/2014/2014-01-08_geogame_qcm_histoire_cartographie.md
+    articles/2014/art_2014-01-13.md: articles/2014/2014-01-13_2014_nos_perspectives_geomatiques.md
     articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md: articles/2014/2014-01-22_geogame_qcm_cassini_bertin.md
     articles/2014/art_2014-01-27.md: articles/2014/2014-01-27_geoseminaire_2014.md
     articles/2014/art_2014-03-07.md: articles/2014/2014-03-07_dans_le_geotipi.md
@@ -520,6 +522,7 @@ redirects:
     articles/2015/art_2015-01-11.md: articles/2015/2015-01-11_openstreetmap_pas_qu_une_carte.md
     articles/2015/art_2015-01-18.md: articles/2015/2015-01-18_7th_international_workshop_on_information_fusion_and_geographic_information_systems.md
     articles/2015/art_2015-02-03.md: articles/2015/2015-02-03_representation_3D_des_objets_openstreetmap.md
+    articles/2015/art_2015-02-04.md: articles/2015/2015-02-04_sortie_openlayers3_beginner_s_guide.md
     articles/2015/art_2015-02-09.md: articles/2015/2015-02-09_8eme_geoseminaire_silat.md
     articles/2015/art_2015-02-16.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
     articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
