@@ -368,6 +368,7 @@ redirects:
     articles/2009/art_2009-06-24.md: articles/2009/2009-06-24_geoext-en-version-0-5.md
     articles/2009/art_2009-07-01.md: articles/2009/2009-07-01_l-ign-met-a-disposition-certaines-de-ces-donnees.md
     articles/2009/art_2009-07-12.md: articles/2009/2009-07-12_introduction-au-libre-selon-le-president-de-l-osgeo-fr.md
+    articles/2009/2009-07-15_quelques-outils-pour-develloper-plus-facilement-en-javascript.md: articles/2009/2009-07-15_quelques-outils-pour-developper-plus-facilement-en-javascript.md
     articles/2009/art_2009-07-15.md: articles/2009/2009-07-15_quelques-outils-pour-developper-plus-facilement-en-javascript.md
     articles/2009/art_2009-07-17.md: articles/2009/2009-07-17_la-geomatique-decisionelle-l-avenir-du-sig.md
     articles/2009/art_2009-07-19.md: articles/2009/2009-07-19_les-videos-de-l-osgis-sont-en-ligne.md
@@ -378,6 +379,7 @@ redirects:
     articles/2009/art_2009-08-10.md: articles/2009/2009-08-10_ca-bouge-dans-le-monde-des-bases-de-donnees.md
     articles/2009/art_2009-08-17.md: articles/2009/2009-08-17_puzzlegis-en-version-0-4.md
     articles/2009/art_2009-08-19.md: articles/2009/2009-08-19_walking-papers-ou-comment-disposer-d-openstreetmap-sur-papier.md
+    articles/2009/art_2009-08-20.md: articles/2009/2009-08-20_openstreetmap-s-invite-sur-le-site-ecrans.md
     articles/2009/art_2009-08-28.md: articles/2009/2009-08-28_a-la-decouverte-de-qgis.md
     articles/2009/art_2009-09-02.md: articles/2009/2009-09-02_1er-experience-d-openstreetmap.md
     articles/2009/art_2009-09-04.md: articles/2009/2009-09-04_sortie-de-qgis-1-2-0-daphnis.md
@@ -414,6 +416,7 @@ redirects:
     articles/2010/art_2010-03-11.md: articles/2010/2010-03-11_linux_sans_contrainte_virtualbox.md
     articles/2010/art_2010-03-12.md: articles/2010/2010-03-12_geojquery_alternative_a_geoext.md
     articles/2010/art_2010-03-17.md: articles/2010/2010-03-17_api_geoportail_version1.md
+    articles/2010/art_2010-03-18.md: articles/2010/2010-03-18_rapprochement_osmfr_osgeofr.md
     articles/2010/art_2010-03-25.md: articles/2010/2010-03-25_ca_bouge_chez_geoext.md
     articles/2010/art_2010-03-31.md: articles/2010/2010-03-31_these_geographie_science.md
     articles/2010/art_2010-04-06.md: articles/2010/2010-04-06_openlayers_3d.md
@@ -471,7 +474,9 @@ redirects:
     articles/2012/art_2012-06-06.md: articles/2012/2012-06-06_vacances_offertes_par_tomtom.md
     articles/2012/art_2012-06-21.md: articles/2012/2012-06-21_moteur_itineraires_osrm.md
     articles/2012/art_2012-07-02.md: articles/2012/2012-07-02_cataloguer_donnees_geographiques.md
+    articles/2012/art_2012-07-05.md: articles/2012/2012-07-05_open_data_paroles_actes.md
     articles/2012/art_2012-07-12.md: articles/2012/2012-07-12_nouvelle_version_geoportail.md
+    articles/2012/art_2012-07-19.md: articles/2012/2012-07-19_premieres_rencontres_sciences_geomatiques_maroc.md
     articles/2012/art_2012-09-26.md: articles/2012/2012-09-26_openlayers_cookbook.md
     articles/2012/art_2012-10-11.md: articles/2012/2012-10-11_conference_yvan_bedard_universite_laval.md
     articles/2012/art_2012-10-23.md: articles/2012/2012-10-23_soutenance_these_modelisation_ontologique_comportements_risque.md
@@ -479,6 +484,7 @@ redirects:
     articles/2013/art_2013-02-11.md: articles/2013/2013-02-11_appel_contribution_frog2013.md
     articles/2013/art_2013-02-20.md: articles/2013/2013-02-20_contribuer_a_openstreetmap_deux_applications.md
     articles/2013/art_2013-02-25.md: articles/2013/2013-02-25_websocket.md
+    articles/2013/art_2013-03-07.md: articles/2013/2013-03-07_rencontres_dynamiques_regionales_en_information_geographique.md
     articles/2013/art_2013-05-21.md: articles/2013/2013-05-21_compiler_openlayers3.md
     articles/2013/art_2013-05-29.md: articles/2013/2013-05-29_interviews_geotribu.md
     articles/2013/art_2013-06-05_mongo_spatial.md: articles/2013/2013-06-05_mongo_spatial.md
@@ -496,10 +502,13 @@ redirects:
     articles/2014/art_2014-01-01.md: articles/2014/2014-01-01_2013_dans_le_georetro_2014_en_ligne_de_mire.md
     articles/2014/art_2014-01-06.md: articles/2014/2014-01-06_plein_flux_sur_la_geomatique.md
     articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md: articles/2014/2014-01-08_geogame_qcm_histoire_cartographie.md
+    articles/2014/art_2014-01-13.md: articles/2014/2014-01-13_2014_nos_perspectives_geomatiques.md
     articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md: articles/2014/2014-01-22_geogame_qcm_cassini_bertin.md
     articles/2014/art_2014-01-27.md: articles/2014/2014-01-27_geoseminaire_2014.md
+    articles/2014/art_2014-03-07.md: articles/2014/2014-03-07_dans_le_geotipi.md
     articles/2014/art_2014-03-19_geogame_pendu_geomatique.md: articles/2014/2014-03-19_geogame_pendu_geomatique.md
     articles/2014/art_2014-03-21.md: articles/2014/2014-03-21_un_bon_deal_chez_packt_publishing.md
+    articles/2014/2014-03-24_non_maperserver_geoserver_tilecache_ne_sont_pas_toujours_necessaires.md: articles/2014/2014-03-24_non_mapserver_geoserver_tilecache_ne_sont_pas_toujours_necessaires.md
     articles/2014/art_2014-03-24.md: articles/2014/2014-03-24_non_mapserver_geoserver_tilecache_ne_sont_pas_toujours_necessaires.md
     articles/2014/art_2014-04-29.md: articles/2014/2014-04-29_de_l_acquisition_a_la_visualisation_d_images_de_drone.md
     articles/2014/art_2014-05-05.md: articles/2014/2014-05-05_le_plein_d_ebooks_chez_packt_publishing.md
@@ -513,6 +522,7 @@ redirects:
     articles/2015/art_2015-01-11.md: articles/2015/2015-01-11_openstreetmap_pas_qu_une_carte.md
     articles/2015/art_2015-01-18.md: articles/2015/2015-01-18_7th_international_workshop_on_information_fusion_and_geographic_information_systems.md
     articles/2015/art_2015-02-03.md: articles/2015/2015-02-03_representation_3D_des_objets_openstreetmap.md
+    articles/2015/art_2015-02-04.md: articles/2015/2015-02-04_sortie_openlayers3_beginner_s_guide.md
     articles/2015/art_2015-02-09.md: articles/2015/2015-02-09_8eme_geoseminaire_silat.md
     articles/2015/art_2015-02-16.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
     articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md

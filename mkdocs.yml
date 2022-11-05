@@ -91,13 +91,14 @@ plugins:
         - www.geotribu.net/*
         - ks356007.kimsufi.com/*
         # external
+        - baliz-geospatial.com/images/mediatheque/2008-08/*
         - github.com/**/*.gif
         - i.imgur.com/*
         - raw.githubusercontent.com/*
+        - sondekla.com/buid/widget/*
         - twemoji.maxcdn.com/*
         - upload.wikimedia.org/*
         - user-images.githubusercontent.com/**/*.gif
-        - baliz-geospatial.com/images/mediatheque/2008-08/*
         # to remove later:
         - dev.openstreetmap.org/*
         - www.portailsig.org/assets/images/*
