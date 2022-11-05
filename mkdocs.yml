@@ -83,6 +83,8 @@ plugins:
       tags_file: tags.md
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
+      external_links_attr_map:
+        target: _blank
       external_assets_exclude:
         # geotribu
         - cdn.geotribu.fr/images/*
@@ -210,9 +212,6 @@ extra:
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
-
-extra_javascript:
-  - "theme/assets/javascripts/extra.js"
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
