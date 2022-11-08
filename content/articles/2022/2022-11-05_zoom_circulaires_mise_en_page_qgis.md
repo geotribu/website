@@ -28,7 +28,7 @@ tags:
 
 ## Création de zooms circulaires et autres astuces amusantes de mise en page dans QGIS
 
-_Grâce à la récente popularité du «30 Day Map Challenge», le mois de novembre est devenu synonyme de belles cartes et cartographies.  Au cours de ce mois de novembre, nous allons partager un certain nombre de conseils et d'astuces qui utilisent certaines fonctionnalités avancées de QGIS pour aider à créer de belles cartes._
+Grâce à la récente popularité du «30 Day Map Challenge», le mois de novembre est devenu synonyme de belles cartes et cartographies.  Au cours de ce mois de novembre, nous allons partager un certain nombre de conseils et d'astuces qui utilisent certaines fonctionnalités avancées de QGIS pour aider à créer de belles cartes.
 
 Une technique qui peut améliorer considérablement l'apparence des cartes consiste à remplacer les zooms rectangulaires par des formes plus organiques, telles que des cercles ou des ovales.
 
