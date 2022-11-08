@@ -173,14 +173,28 @@ redirects:
     node/548.md: articles/2012/2012-10-11_conference_yvan_bedard_universite_laval.md
     node/551.md: articles/2012/2012-10-23_soutenance_these_modelisation_ontologique_comportements_risque.md
     node/563.md: articles/2012/2012-12-29_equipe_geotribu.md
-    node/567.md: rdp/2013/rdp_2013-01-11.md
+    node/564.md: rdp/2013/rdp_2013-01-04.md
+    node/566.md: rdp/2013/rdp_2013-01-11.md
+    # node/567.md: rdp/2013/rdp_2013-01-18.md
+    node/568.md: rdp/2013/rdp_2013-01-25.md
+    node/569.md: rdp/2013/rdp_2013-02-01.md
+    node/570.md: rdp/2013/rdp_2013-02-08.md
+    node/571.md: rdp/2013/rdp_2013-02-15.md
     node/572.md: articles/2013/2013-02-11_appel_contribution_frog2013.md
+    node/573.md: rdp/2013/rdp_2013-02-22.md
     node/574.md: articles/2013/2013-02-20_contribuer_a_openstreetmap_deux_applications.md
     node/575.md: articles/2013/2013-12-01_stage_geodecisionnelle_suivi_humanitaire_ong.md
     node/576.md: articles/2013/2013-02-25_websocket.md
+    node/577.md: rdp/2013/rdp_2013-03-01.md
+    node/578.md: rdp/2013/rdp_2013-03-08.md
     node/579.md: articles/2013/2013-03-07_rencontres_dynamiques_regionales_en_information_geographique.md
+    node/581.md: rdp/2013/rdp_2013-03-15.md
+    node/583.md: rdp/2013/rdp_2013-03-22.md
+    node/584.md: rdp/2013/rdp_2013-03-29.md
     node/585.md: rdp/2013/rdp_2013-04-05.md
     node/586.md: rdp/2013/rdp_2013-04-12.md
+    node/587.md: rdp/2013/rdp_2013-04-19.md
+    node/588.md: rdp/2013/rdp_2013-04-26.md
     node/589.md: rdp/2013/rdp_2013-05-03.md
     node/591.md: rdp/2013/rdp_2013-04-26.md
     node/592.md: rdp/2013/rdp_2013-04-19.md
