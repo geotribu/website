@@ -124,4 +124,8 @@ Et voilà ! Ces deux techniques peuvent vous aider à pousser plus loin vos cré
 
 ----
 
+## Auteur {: data-search-exclude }
+
+--8<-- "content/team/jpru.md"
+
 {% include "licenses/default.md" %}
