@@ -117,7 +117,8 @@ Pour ajouter l'arrière-plan, créez un autre cadre HTML. Nous allons à nouveau
 </svg>
 ```
 
-(Vous pouvez en savoir plus sur [les courbes et les arcs SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths) sur MDN)
+!!! tip
+    Vous pouvez en savoir plus sur [les courbes et les arcs SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths) sur le site de ressources MDN.
 
 Et voilà ! Ces deux techniques peuvent vous aider à pousser plus loin vos créations de cartes QGIS et à faciliter la création de belles cartographies directement dans QGIS lui-même. Si vous avez trouvé ces conseils utiles, gardez un œil sur ce blog car nous publierons d'autres conseils et astuces au cours du mois de novembre. Et n'oubliez pas de suivre le [30 Day Map Challenge](https://30daymapchallenge.com/) pour découvrir tout un assortiment de cartes absolument époustouflantes.
 
