@@ -48,7 +48,8 @@ Tout d'abord, préparez une mise en page avec une carte principale et un zoom. V
 ![Carte de base et zoom rectangulaire](https://user-images.githubusercontent.com/9571164/200113058-5c6d24a9-8297-4181-b771-9bdbe3314056.png "Carte de base et zoom rectangulaire"){: .img-center loading=lazy }
 
 Dans la barre d'outils de mise en page, cliquez sur le bouton Ajouter Forme, puis sélectionnez Ajouter Ellipse :
-![Capture d'écran du menu QGIS Ajouter Ellipse](https://user-images.githubusercontent.com/9571164/200113152-5de641be-2847-4e7f-bce0-b141daa264e8.PNG "Menu Ajouter Ellipse")
+
+![Capture d'écran du menu QGIS Ajouter Ellipse](https://user-images.githubusercontent.com/9571164/200113152-5de641be-2847-4e7f-bce0-b141daa264e8.PNG "Menu Ajouter Ellipse"){: .img-center loading=lazy }
 
 Dessinez l'ellipse au milieu de votre zoom (astuce : si vous maintenez la touche Maj enfoncée pendant que vous dessinez l'ellipse, vous la forcerez à prendre une forme circulaire !) Si vous n'avez pas réussi à créer un cercle exact, vous pouvez préciser manuellement la largeur et la hauteur dans les propriétés de l'élément de forme. Pour cet exemple, nous avons choisi un cercle de 50 mm x 50 mm :
 ![Capture d'écran des propriétés de l'élément Ellipse](https://user-images.githubusercontent.com/9571164/200113336-52576afd-14b0-4303-827c-4e8927760546.png "Propriétés de l'élément Ellipse")
