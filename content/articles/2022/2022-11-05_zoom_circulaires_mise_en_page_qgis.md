@@ -44,7 +44,8 @@ Les cercles figuraient en bonne place sur les cartes des précédentes candidatu
 ### Guide étape par étape de la création d'un zoom circulaire
 
 Tout d'abord, préparez une mise en page avec une carte principale et un zoom. Veillez à ce que celui-ci soit suffisamment grand pour couvrir le cercle souhaité :
-![Carte de base et zoom rectangulaire](https://user-images.githubusercontent.com/9571164/200113058-5c6d24a9-8297-4181-b771-9bdbe3314056.png "Carte de base et zoom rectangulaire")
+
+![Carte de base et zoom rectangulaire](https://user-images.githubusercontent.com/9571164/200113058-5c6d24a9-8297-4181-b771-9bdbe3314056.png "Carte de base et zoom rectangulaire"){: .img-center loading=lazy }
 
 Dans la barre d'outils de mise en page, cliquez sur le bouton Ajouter Forme, puis sélectionnez Ajouter Ellipse :
 ![Capture d'écran du menu QGIS Ajouter Ellipse](https://user-images.githubusercontent.com/9571164/200113152-5de641be-2847-4e7f-bce0-b141daa264e8.PNG "Menu Ajouter Ellipse")
