@@ -128,15 +128,33 @@ redirects:
     node/285.md: articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gsconfig.md
     node/286.md: articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md
     node/293.md: articles/2010/2010-09-30_allegez_votre_librairie_openlayers_avec_openlayerer.md
+    node/295.md: rdp/2010/rdp_2010-10-01.md
+    node/297.md: rdp/2010/rdp_2010-10-08.md
+    # node/298.md:
+    node/299.md: rdp/2010/rdp_2010-10-15.md
     node/301.md: articles/2010/2010-10-18_conference_qualite_des_donnees.md
+    node/302.md: rdp/2010/rdp_2010-10-22.md
+    node/303.md: rdp/2010/rdp_2010-10-29.md
+    node/305.md: rdp/2010/rdp_2010-11-05.md
+    node/306.md: rdp/2010/rdp_2010-11-12.md
     node/309.md: articles/2010/2010-11-10_sageo_2010_dans_une_semaine.md
+    node/310.md: rdp/2010/rdp_2010-11-19.md
     node/312.md: articles/2010/2010-11-18_sageo_2010_resume_jour1.md
     node/313.md: articles/2010/2010-11-19_sageo_2010_resume_jour2.md
     node/314.md: articles/2010/2010-11-20_sageo_2010_resume_jour3.md
+    node/316.md: rdp/2010/rdp_2010-11-26.md
     node/317.md: articles/2010/2010-11-24_hillshading_or_not.md
+    node/318.md: rdp/2010/rdp_2010-12-03.md
     node/319.md: articles/2010/2010-11-29_these_geomatique_opensource_cartographie_neogeographie.md
+    # node/320.md:
+    # node/321.md:
+    # node/322.md:
     node/324.md: articles/2011/2011-01-24_polymaps_alternative_openlayers.md
+    node/325.md: rdp/2010/rdp_2010-12-10.md
+    node/326.md: rdp/2010/rdp_2010-12-17.md
     node/327.md: articles/2010/2010-12-13_imagimap_baselayers_v2.md
+    node/329.md: rdp/2010/rdp_2010-12-24.md
+    node/330.md: rdp/2010/rdp_2010-12-31.md
     node/331.md: articles/2010/2010-12-20_ios42_carte_accelerometre.md
     node/333.md: articles/2011/2011-01-09_liberez_les_donnees.md
     node/338.md: articles/2011/2011-01-19_documenter_bases_de_donnees_exemple_openstreetmap.md
