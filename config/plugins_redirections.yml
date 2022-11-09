@@ -200,10 +200,36 @@ redirects:
     node/433.md: rdp/2011/rdp_2011-07-01.md
     node/434.md: rdp/2011/rdp_2011-07-08.md
     node/436.md: rdp/2011/rdp_2011-07-15.md
+    node/438.md: rdp/2011/rdp_2011-07-22.md
     node/439.md: articles/2011/2011-07-27_nouveautes_geokettle.md
+    node/440.md: rdp/2011/rdp_2011-07-29.md
+    node/441.md: rdp/2011/rdp_2011-08-05.md
+    node/442.md: rdp/2011/rdp_2011-08-12.md
+    # node/443.md:
+    node/444.md: rdp/2011/rdp_2011-08-19.md
+    node/445.md: rdp/2011/rdp_2011-08-26.md
+    # node/446.md:
+    node/447.md: rdp/2011/rdp_2011-09-02.md
+    node/449.md: rdp/2011/rdp_2011-09-09.md
+    node/456.md: rdp/2011/rdp_2011-09-16.md
+    node/458.md: rdp/2011/rdp_2011-09-23.md
+    node/461.md: rdp/2011/rdp_2011-09-30.md
     node/462.md: articles/2011/2011-11-09_decouverte_gis_cloud.md
+    node/463.md: rdp/2011/rdp_2011-10-07.md
+    node/464.md: rdp/2011/rdp_2011-10-14.md
+    node/465.md: rdp/2011/rdp_2011-10-21.md
+    node/468.md: rdp/2011/rdp_2011-10-28.md
+    node/471.md: rdp/2011/rdp_2011-11-04.md
+    node/472.md: rdp/2011/rdp_2011-11-10.md
     node/474.md: articles/2011/2011-11-08_videos_foss4g.md
+    node/475.md: rdp/2011/rdp_2011-11-18.md
+    node/476.md: rdp/2011/rdp_2011-11-25.md
     node/477.md: articles/2011/2011-12-01_cartographier_monde_outils_libres.md
+    node/478.md: rdp/2011/rdp_2011-12-02.md
+    node/479.md: rdp/2011/rdp_2011-12-09.md
+    node/481.md: rdp/2011/rdp_2011-12-16.md
+    node/483.md: rdp/2011/rdp_2011-12-23.md
+    node/484.md: rdp/2011/rdp_2011-12-30.md
     node/485.md: articles/2012/2012-01-01_openstreetmap_une_annee_edition.md
     node/486.md: articles/2012/2012-05-09_decouverte_cartodb.md
     node/488.md: rdp/2012/rdp_2012-01-13.md
