@@ -35,6 +35,19 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
+  - glightbox:
+      touchNavigation: true
+      effect: zoom
+      width: 90%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - img-rdp-news-thumb
+        - emojione
+        - twemoji
+      auto_caption: true
+      caption_position: bottom
   # - minify:
   #     minify_css: true
   #     minify_html: true
@@ -155,11 +168,9 @@ extra:
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
-  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css"
 
 extra_javascript:
   - "theme/assets/javascripts/extra.js"
-  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js"
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
