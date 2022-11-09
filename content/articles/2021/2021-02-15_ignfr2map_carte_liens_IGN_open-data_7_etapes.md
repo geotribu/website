@@ -181,7 +181,7 @@ On doit avouer :
 
 ## La suite
 
-Un autre article sera publié dans les prochains jours pour vous expliquer la partie sur l'automatisation et le déploiement depuis Github. Restez connectés à [GeoTribu](https://static.geotribu.fr) ([LinkedIn](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) - [RSS](https://static.geotribu.fr/feed_rss_created.xml) - [Twitter](https://twitter.com/geotribu)) :wink:.
+Un autre article sera publié dans les prochains jours pour vous expliquer la partie sur l'automatisation et le déploiement depuis Github. Restez connectés à GeoTribu : [LinkedIn](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) - [RSS](/feed_rss_created.xml) - [Twitter](https://twitter.com/geotribu)) :wink:.
 
 [Suite : automatiser l'exécution et le déploiement :fontawesome-solid-forward:](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/){: .md-button }
 {: align=middle }
