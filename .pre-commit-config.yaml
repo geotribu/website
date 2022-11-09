@@ -19,7 +19,7 @@ repos:
         args: [--markdown-linebreak-ext=md]
 
   - repo: https://github.com/psf/black
-    rev: 22.8.0
+    rev: 22.10.0
     hooks:
       - id: black
 
@@ -62,6 +62,6 @@ ci:
   autoupdate_schedule: monthly
   skip: [
     "check-hooks-apply",
-    "markdownlint"
+    # "markdownlint"
   ]
   submodules: false
