@@ -232,22 +232,73 @@ redirects:
     node/484.md: rdp/2011/rdp_2011-12-30.md
     node/485.md: articles/2012/2012-01-01_openstreetmap_une_annee_edition.md
     node/486.md: articles/2012/2012-05-09_decouverte_cartodb.md
+    node/487.md: rdp/2012/rdp_2012-01-07.md
     node/488.md: rdp/2012/rdp_2012-01-13.md
     node/489.md: articles/2012/2012-01-16_presentation_openstreetmap_senat.md
+    node/490.md: rdp/2012/rdp_2012-01-20.md
     node/491.md: articles/2012/2012-01-19_google_evil_or_not.md
+    node/492.md: rdp/2012/rdp_2012-01-27.md
+    node/493.md: rdp/2012/rdp_2012-02-03.md
     node/494.md: articles/2012/2012-02-03_serie_noire_pour_google.md
+    node/495.md: rdp/2012/rdp_2012-02-10.md
+    node/496.md: rdp/2012/rdp_2012-02-17.md
+    node/497.md: rdp/2012/rdp_2012-02-20.md
+    node/498.md: rdp/2012/rdp_2012-02-27.md
+    node/499.md: rdp/2012/rdp_2012-03-09.md
     node/500.md: articles/2012/2012-03-15_openstreetmap_reunion_corine_land_cover.md
+    node/501.md: rdp/2012/rdp_2012-03-16.md
+    node/502.md: rdp/2012/rdp_2012-03-23.md
+    node/503.md: rdp/2012/rdp_2012-03-30.md
     # node/504.md: articles/2012/2012-04-17_calcul_de_buffer_sous_mysql_1ere_partie_theorie.md
     node/505.md: articles/2012/2012-04-17_calcul_buffer_mysql_pratique.md
+    node/506.md: rdp/2012/rdp_2012-04-06.md
+    node/507.md: rdp/2012/rdp_2012-04-13.md
+    node/508.md: rdp/2012/rdp_2012-04-21.md
+    node/510.md: rdp/2012/rdp_2012-04-27.md
+    # node/512.md:
+    node/513.md: rdp/2012/rdp_2012-05-04.md
+    node/514.md: rdp/2012/rdp_2012-05-11.md
     node/515.md: articles/2012/2012-07-02_cataloguer_donnees_geographiques.md
+    node/516.md: rdp/2012/rdp_2012-05-18.md
+    node/517.md: rdp/2012/rdp_2012-05-25.md
+    node/519.md: rdp/2012/rdp_2012-06-02.md
     node/520.md: articles/2012/2012-06-21_moteur_itineraires_osrm.md
+    node/521.md: rdp/2012/rdp_2012-06-08.md
     node/522.md: articles/2012/2012-06-06_vacances_offertes_par_tomtom.md
+    node/523.md: rdp/2012/rdp_2012-06-15.md
+    node/524.md: rdp/2012/rdp_2012-06-22.md
+    node/527.md: rdp/2012/rdp_2012-06-29.md
+    node/529.md: rdp/2012/rdp_2012-07-02.md
     node/530.md: articles/2012/2012-07-05_open_data_paroles_actes.md
+    node/531.md: rdp/2012/rdp_2012-07-09.md
     node/532.md: articles/2012/2012-07-12_nouvelle_version_geoportail.md
+    node/533.md: rdp/2012/rdp_2012-07-20.md
     node/534.md: articles/2012/2012-07-19_premieres_rencontres_sciences_geomatiques_maroc.md
+    node/535.md: rdp/2012/rdp_2012-07-27.md
+    node/536.md: rdp/2012/rdp_2012-07-30.md
+    node/537.md: rdp/2012/rdp_2012-08-09.md
+    node/538.md: rdp/2012/rdp_2012-08-17.md
+    node/539.md: rdp/2012/rdp_2012-08-24.md
+    node/540.md: rdp/2012/rdp_2012-08-31.md
+    node/541.md: rdp/2012/rdp_2012-09-07.md
+    node/542.md: rdp/2012/rdp_2012-09-14.md
+    node/543.md: rdp/2012/rdp_2012-09-21.md
+    node/544.md: rdp/2012/rdp_2012-09-28.md
     node/545.md: articles/2012/2012-09-26_openlayers_cookbook.md
+    node/546.md: rdp/2012/rdp_2012-10-05.md
+    node/547.md: rdp/2012/rdp_2012-10-12.md
     node/548.md: articles/2012/2012-10-11_conference_yvan_bedard_universite_laval.md
+    node/549.md: rdp/2012/rdp_2012-10-19.md
+    # node/550.md: 
     node/551.md: articles/2012/2012-10-23_soutenance_these_modelisation_ontologique_comportements_risque.md
+    node/552.md: rdp/2012/rdp_2012-11-02.md
+    node/553.md: rdp/2012/rdp_2012-11-09.md
+    node/556.md: rdp/2012/rdp_2012-11-16.md
+    # node/557.md: 
+    # node/558.md: 
+    # node/559.md:
+    # node/561.md:
+    node/562.md: rdp/2012/rdp_2012-12-21.md
     node/563.md: articles/2012/2012-12-29_equipe_geotribu.md
     node/564.md: rdp/2013/rdp_2013-01-04.md
     node/566.md: rdp/2013/rdp_2013-01-11.md
