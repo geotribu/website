@@ -465,7 +465,38 @@ redirects:
     node/784.md: rdp/2015/rdp_2015-02-13.md
     node/788.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
     node/789.md: rdp/2015/rdp_2015-02-20.md
+    node/790.md: rdp/2015/rdp_2015-03-06.md
+    # node/791.md:
+    node/792.md: rdp/2015/rdp_2015-03-13.md
+    node/794.md: rdp/2015/rdp_2015-03-20.md
+    # node/795.md:
+    node/796.md: rdp/2015/rdp_2015-03-27.md
+    node/797.md: rdp/2015/rdp_2015-04-03.md
+    node/798.md: rdp/2015/rdp_2015-04-10.md
+    node/799.md: rdp/2015/rdp_2015-04-17.md
+    node/800.md: rdp/2015/rdp_2015-04-24.md
+    # node/801.md:
+    node/802.md: rdp/2015/rdp_2015-05-01.md
+    # node/803.md:
+    node/804.md: rdp/2015/rdp_2015-05-15.md
+    # node/805.md:
+    node/806.md: rdp/2015/rdp_2015-05-29.md
+    node/808.md: rdp/2015/rdp_2015-06-05.md
     node/811.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
+    node/812.md: rdp/2015/rdp_2015-06-12.md
+    node/813.md: rdp/2015/rdp_2015-06-19.md
+    node/814.md: rdp/2015/rdp_2015-07-03.md
+    # node/815.md:
+    node/816.md: rdp/2015/rdp_2015-07-17.md
+    node/817.md: rdp/2015/rdp_2015-09-01.md
+    node/819.md: rdp/2015/rdp_2015-09-25.md
+    # node/820.md:
+    node/821.md: rdp/2015/rdp_2015-10-02.md
+    node/822.md: rdp/2015/rdp_2015-10-16.md
+    node/823.md: rdp/2015/rdp_2015-11-13.md
+    # node/825.md:
+    node/826.md: rdp/2015/rdp_2015-12-11.md
+    node/827.md: rdp/2015/rdp_2015-12-18.md
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
     # rss.md: https://static.geotribu.fr/feed_rss_created.xml
 
