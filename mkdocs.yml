@@ -118,7 +118,7 @@ plugins:
 theme:
   name: "material"
   custom_dir: "./content/theme/"
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  favicon: "theme/assets/images/geotribu/geotribu_logo_64x64.png"
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
