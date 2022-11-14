@@ -43,7 +43,7 @@ Bienvenue dans mon **super** tutoriel, dans lequel on va apprendre :
     - analyser la répartition spatiale des poules en batterie
     - cartographier les flux de communications entre les membres de Geotribu
 
-> Source : [*Geotribu*](https://static.geotribu.fr)
+> Source : [Geotribu](https://static.geotribu.fr/)
 
 """
 

@@ -75,7 +75,7 @@ Mais, si nous recevons des rapports de la console de recherche Google, l'objecti
 
 En fait, mon sentiment c'est que faire du *bon* web dans les années 2020s, c'est plus dur que dans les 2010s, notamment car les pratiques sont plus "professionnelles" et le poids du monopole de Google, tout simplement écrasant.
 
-Le travail de nettoyage des voies sans issue (images et liens morts), même s'il est loin d'être terminé, ainsi que le retour du [flux RSS](https://static.geotribu.fr/feed_rss_created.xml) (notamment sur [Georezo](https://georezo.net/planet/Toile_g%C3%A9omatique_francophone/)) ont largement contribué à un retour à la normale.
+Le travail de nettoyage des voies sans issue (images et liens morts), même s'il est loin d'être terminé, ainsi que le retour du [flux RSS](/feed_rss_created.xml) (notamment sur [Georezo](https://georezo.net/planet/Toile_g%C3%A9omatique_francophone/)) ont largement contribué à un retour à la normale.
 
 ![Statistiques 2020 - Etat de la couverture de l'indexation](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_cover.png "Statistiques 2020 - Etat de la couverture de l'indexation"){: loading=lazy }
 
