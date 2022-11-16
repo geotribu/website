@@ -110,7 +110,7 @@ ENCODAGE='UTF-8'
 
 ### Nettoyer les photos "inutiles"
 
-Après mes premiers tests, lorsque je chargeais mes photos dans l'application [Mapillary Desktop Uploader](https://www.mapillary.com/desktop-uploader), je me rendais compte que j'avais une redondance de photos "identiques" lorsque je marquais un point d'arrêt, notamment aux Stop. Cette redondance est peu pertinente pour l'utilisateur et d'un point de vue environnemental, elle vient inutilement charger les serveurs de Mapillary. 
+Après mes premiers tests, lorsque je chargeais mes photos dans l'application [Mapillary Desktop Uploader](https://www.mapillary.com/desktop-uploader), je me rendais compte que j'avais une redondance de photos "identiques" lorsque je marquais un point d'arrêt, notamment aux Stop. Cette redondance est peu pertinente pour l'utilisateur et d'un point de vue environnemental, elle vient inutilement charger les serveurs de Mapillary.
 
 #### Extraire la localisation des images
 
@@ -122,7 +122,7 @@ exiftool -filename -gpstimestamp -gpsdatestamp -gpslatitude -gpslongitude -n -cs
 
 #### Créer un fichier SIG à partir de la localisation des images
 
-La deuxième étape a été de créer un fichier SIG à partir des informations extraites des images. 
+La deuxième étape a été de créer un fichier SIG à partir des informations extraites des images.
 
 ```bash
 for csvfile in *.csv;
