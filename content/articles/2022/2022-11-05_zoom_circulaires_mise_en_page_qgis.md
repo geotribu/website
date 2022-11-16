@@ -38,7 +38,7 @@ Commençons par un exemple de carte. Nous vous présentons ci-dessous un extrait
 
 ![Plan d'ensemble des sites pour les Jeux olympiques de 2032](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-05_zoom_circulaires_mise_en_page_qgis/plan_ensemble_2032.png "Plan d'ensemble des sites pour les Jeux olympiques de 2032, évaluation de faisabilité du CIO - Jeux olympiques, Brisbane février 2021"){: .img-center loading=lazy }
 
-Les cercles figuraient en bonne place sur les cartes des précédentes candidatures olympiques (comme celle de Budapest), dont nous nous sommes inspirés. En utilisant le même langage que les destinaires de la carte – pensez aux anneaux olympiques ! – cela peut, ou non, jouer un rôle.
+Les cercles figuraient en bonne place sur les cartes des précédentes candidatures olympiques (comme celle de Budapest), dont nous nous sommes inspirées. En utilisant le même langage que les destinaires de la carte – pensez aux anneaux olympiques ! – cela peut, ou non, jouer un rôle.
 
 ![Plan d'ensemble des Jeux olympiques de Budapest 2024](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-05_zoom_circulaires_mise_en_page_qgis/plan_ensemble_2024.jpg "Plan d'ensemble des Jeux olympiques de Budapest 2024"){: .img-center loading=lazy }
 
