@@ -148,4 +148,4 @@ Et voilà ! Ces deux techniques peuvent vous aider à pousser plus loin vos cré
 
 --8<-- "content/team/jpru.md"
 
-{% include "licenses/default.md" %}
+{% include "licenses/beerware.md" %}
