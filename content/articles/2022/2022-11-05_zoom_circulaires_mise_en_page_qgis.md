@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: "2022-11-05 13:30"
+date: "2022-11-17 13:30"
 description: "Paramétrer la mise en page de QGIS pour afficher des zooms circulaires."
 image: "https://pbs.twimg.com/media/FgsgdNraEAAukhn?format=png&name=small"
 license: default
