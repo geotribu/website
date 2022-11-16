@@ -16,7 +16,7 @@ tags:
 
 # Zooms circulaires dans une mise en page QGIS
 
-:calendar: Date de publication initiale : 8 novembre 2022
+:calendar: Date de publication initiale : 17 novembre 2022
 
 ## Introduction
 
