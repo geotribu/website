@@ -25,6 +25,7 @@ tags:
 {: align=middle }
 
 ## Introduction
+
 Grâce à la récente popularité du «30 Day Map Challenge», le mois de novembre est devenu synonyme de belles cartes et cartographies. Au cours de ce mois de novembre, nous allons partager un certain nombre de conseils et d'astuces qui utilisent certaines fonctionnalités avancées de QGIS pour aider à créer de belles cartes.
 
 Une technique qui peut améliorer considérablement l'apparence des cartes consiste à remplacer les zooms rectangulaires par des formes plus douces, inspirées par la nature, telles que des cercles ou des ovales.
@@ -32,6 +33,7 @@ Une technique qui peut améliorer considérablement l'apparence des cartes consi
 En 2020, nous avons eu l'occasion d'ajouter la possibilité dans les mise en page de QGIS de créer directement des zooms circulaires (grâce au parrainage de la ville de Canning, en Australie !). Bien que cette fonctionnalité facilite la création de zooms non rectangulaires, de nombreux utilisateurs de QGIS ne savent peut-être pas que c'est possible. Nous avons donc voulu mettre en avant cette fonctionnalité pour notre premier post du 30 Day Map Challenge.
 
 ## Zooms circulaires : exemple avec les JO de 2032
+
 Commençons par un exemple de carte. Nous vous présentons ci-dessous un extrait de la [candidature de Brisbane aux Jeux olympiques de 2032](https://stillmed.olympics.com/media/Documents/Olympic-Games/Brisbane-2032/General/IOC-Feasibility-Assessment-Brisbane.pdf?_ga=2.48780838.1295957495.1666960789-1227590087.1665520398) que certains membres de l'équipe de North Road ont contribué à créer (au nom de [SMEC](https://www.smec.com/au/) pour [EKS](https://www.eks.com/)). Cette carte est conçue pour mettre en évidence les sites potentiels dans le sud-est du Queensland et les possibilités de déplacement entre ces régions :
 
 ![Plan d'ensemble des sites pour les Jeux olympiques de 2032](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-05_zoom_circulaires_mise_en_page_qgis/plan_ensemble_2032.png "Plan d'ensemble des sites pour les Jeux olympiques de 2032, évaluation de faisabilité du CIO - Jeux olympiques, Brisbane février 2021"){: .img-center loading=lazy }
