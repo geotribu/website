@@ -7,7 +7,7 @@ categories:
     - tutoriel
 date: "2022-11-17 13:30"
 description: "Paramétrer la mise en page de QGIS pour afficher des zooms circulaires."
-image: "https://pbs.twimg.com/media/FgsgdNraEAAukhn?format=png&name=small"
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis_encastre_circulaire_overview_north_road.png
 license: default
 robots: index, follow
 tags:
@@ -76,7 +76,7 @@ Votre zoom est maintenant lié à l'ellipse !
 
 Encore un peu plus de magie à ajouter à cette carte – dans les propriétés de la carte principale, cliquez sur Aperçus et créez-en un pour le zoom, il affichera alors la zone circulaire visible et non le rectangle !
 
-![Capture d'écran de la mise en page avec la carte principale et le zoom circulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-05_zoom_circulaires_mise_en_page_qgis/qgis_zoom_circulaire_apercu.png "Zoom circulaire et l'aperçu qui se cale sur cette forme"){: .img-center loading=lazy }
+![Capture d'écran de la mise en page avec la carte principale et le zoom circulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis_encastre_circulaire_overview_north_road.png "Zoom circulaire et l'aperçu qui se cale sur cette forme"){: .img-center loading=lazy }
 
 ## Point bonus : un texte de titre circulaire !
 
@@ -140,7 +140,9 @@ Pour ajouter l'arrière-plan, créez un autre cadre HTML. Nous allons à nouveau
 !!! tip
     Vous pouvez en savoir plus sur [les courbes et les arcs SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths) sur le site de ressources MDN.
 
-Et voilà ! Ces deux techniques peuvent vous aider à pousser plus loin vos créations de cartes QGIS et à faciliter la création de belles cartographies directement dans QGIS lui-même. Si vous avez trouvé ces conseils utiles, gardez un œil sur ce blog car nous publierons d'autres conseils et astuces au cours du mois de novembre. Et n'oubliez pas de suivre le [30 Day Map Challenge](https://30daymapchallenge.com/) pour découvrir tout un assortiment de cartes absolument époustouflantes.
+Et voilà ! Ces deux techniques peuvent vous aider à pousser plus loin vos créations de cartes QGIS et à faciliter la création de belles cartographies directement dans QGIS lui-même. Si vous avez trouvé ces conseils utiles, gardez un œil sur ce blog car nous publierons d'autres conseils et astuces au cours du mois de novembre.
+
+Et n'oubliez pas de suivre le [30 Day Map Challenge](https://30daymapchallenge.com/) pour découvrir tout un assortiment de cartes absolument époustouflantes.
 
 ----
 
