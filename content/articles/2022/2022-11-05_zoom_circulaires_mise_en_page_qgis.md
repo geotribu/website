@@ -30,7 +30,7 @@ tags:
 
 Grâce à la récente popularité du «30 Day Map Challenge», le mois de novembre est devenu synonyme de belles cartes et cartographies.  Au cours de ce mois de novembre, nous allons partager un certain nombre de conseils et d'astuces qui utilisent certaines fonctionnalités avancées de QGIS pour aider à créer de belles cartes.
 
-Une technique qui peut améliorer considérablement l'apparence des cartes consiste à remplacer les zooms rectangulaires par des formes plus organiques, telles que des cercles ou des ovales.
+Une technique qui peut améliorer considérablement l'apparence des cartes consiste à remplacer les zooms rectangulaires par des formes plus douces, inspirées par la nature, telles que des cercles ou des ovales.
 
 En 2020, nous avons eu l'occasion d'ajouter la possibilité dans les mise en page de QGIS de créer directement des zooms circulaires (grâce au parrainage de la ville de Canning, en Australie !). Bien que cette fonctionnalité facilite la création de zooms non rectangulaires, de nombreux utilisateurs de QGIS ne savent peut-être pas que c'est possible. Nous avons donc voulu mettre en avant cette fonctionnalité pour notre premier post du 30 Day Map Challenge.
 
