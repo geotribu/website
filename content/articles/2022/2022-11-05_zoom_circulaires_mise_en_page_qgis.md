@@ -74,7 +74,7 @@ Encore un peu plus de magie à ajouter à cette carte – dans les propriétés 
 
 ### Point bonus : un texte de titre circulaire !
 
-Pour les utilisateurs avancés, nous avons une autre astuce amusante... et par amusante nous voulons dire « jouons avec les radians » ! Ici, nous allons créer un titre avec un arrière-plan calé sur le contour de notre zoom circulaire. Cela demande un peu de doigté, mais le résultat final peut être visuellement remarquable ! Nous allons utiliser l'élément HTML de la mise en page de QGIS pour créer un dessin avancé. Une certaine expérience du codage HTML et CSS est donc souhaitable. (Une autre approche serait d'utiliser une application d'illustration vectorielle comme Inkscape, et d'ajouter votre titre et votre fond circulaire en tant qu'élément SVG dans la mise en page d'impression).
+Pour les utilisateurs avancés, nous avons une autre astuce amusante... et par amusante nous voulons dire « jouons avec les courbes » ! Ici, nous allons créer un titre avec un arrière-plan calé sur le contour de notre zoom circulaire. Cela demande un peu de doigté, mais le résultat final peut être visuellement remarquable ! Nous allons utiliser l'élément HTML de la mise en page de QGIS pour créer un dessin avancé. Une certaine expérience du codage HTML et CSS est donc souhaitable. (Une autre approche serait d'utiliser une application d'illustration vectorielle comme Inkscape, et d'ajouter votre titre et votre fond circulaire en tant qu'élément SVG dans la mise en page d'impression).
 
 Nous allons commencer par créer un texte circulaire incurvé :
 
