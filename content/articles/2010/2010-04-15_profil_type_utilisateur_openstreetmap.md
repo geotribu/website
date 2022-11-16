@@ -24,7 +24,7 @@ Bien évidemment, au regard du titre de ce workshop, vous vous doutez que le th�
 
 Mais quel est le profil des personnes qui gravitent autour de ce genre de projet ? Nous essayerons d'y répondre en nous appuyant sur la [présentation](http://cegis.usgs.gov/vgi/Nama_Budhathoki_UIL.ppt) de [Nama Budhathoki](http://budhathoki.wordpress.com/) qui a analysé les différents individus qui participent au projet [OpenStreetMap](https://www.openstreetmap.org/). Les figures qui sont présentées ci-dessous sont toutes issues de sa présentation.
 
-[![General - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/general.png "General - source : Nama Budhathoki"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/general.png "General - source : Nama Budhathoki"){: data-mediabox="gallery-lightbox" data-title="General - source : Nama Budhathoki" }
+![General - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/general.png "General - source : Nama Budhathoki"){: .img-center loading=lazy }
 
 Tout d'abord, commençons par un aperçu général. Nama Budhathoki a, dans un premier temps, comparé le nombre d'inscrits en fonction de leur productivité.
 
@@ -32,17 +32,17 @@ Il en ressort que sur 117 000 mappeurs, seuls 29% (33 452) participent réelleme
 
 Ce constat s'accentue si nous regardons le nombre de créations. En effet, un peu moins de la moitié, soit 44%, ont créé un seul objet. Nous arrivons donc globalement à 15 000 utilisateurs réguliers. Ces chiffres datant d'Avril 2009, je me suis amusé à regarder le nombre d'inscrit en 2010. Bonne nouvelle, en moins d'un an, le nombre d'inscrit à quasiment doublé passant ainsi de 117 000 (04/1999) à 223583 (03/2010).
 
-[![Continent - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/continent.png "Continent - source : Nama Budhathoki"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/continent.png  "Continent - source : Nama Budhathoki"){: data-mediabox="gallery-lightbox" data-title="Continent - source : Nama Budhathoki" }
+![Continent - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/continent.png "Continent - source : Nama Budhathoki"){: .img-center loading=lazy }
 
 Fait intéressant, ce découpage se retrouve quelle que soit l'origine des contributeurs. Comme quoi il n'existe pas de déterminisme spatial. C'est dommage que nous ne disposions pas du nombre de mappeurs par pays. Cela aurait apporté un élément d'information complémentaire. Il est fort probable que nous aurions noté une nette prédominance des pays à fort développement internet .
 
-[![Gender - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/gender_0.png "Gender - source : Nama Budhathoki"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/gender_0.png "Gender - source : Nama Budhathoki"){: data-mediabox="gallery-lightbox" data-title="Gender - source : Nama Budhathoki" }
+![Gender - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/gender_0.png "Gender - source : Nama Budhathoki"){: .img-center loading=lazy }
 
 Concernant la répartition par sexe, je suis au regret de vous dire mesdames que nous (les hommes) sommes en très nette majorité. En effet, sur un panel de 426 personnes, 96% étaient de la gente masculine. Déterminisme technologique ? Plus grand intérêt ? ... Il serait intéressant qu'une étude sociologique se penche sur cette question afin d'analyser les raisons d'une telle différence.
 
 Un parallèle troublant est une même répartition des sexes dans le monde OpenSource : [[Byron] Women in Open Source](http://openwebvancouver.ca/sites/default/files/byron-women_in_open_source.pdf)
 
-[![GIS Experience - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/gis_experience_1.png "GIS Experience - source : Nama Budhathoki"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/gis_experience_1.png "GIS Experience - source : Nama Budhathoki"){: data-mediabox="gallery-lightbox" data-title="GIS Experience - source : Nama Budhathoki" }
+![GIS Experience - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/gis_experience_1.png "GIS Experience - source : Nama Budhathoki"){: .img-center loading=lazy }
 
 Nous abordons maintenant un des graphiques qui me semble le plus intéressant. Celui-ci traduit l'expérience initiale des utilisateurs dans le domaine de la cartographie et des SIG. Pour la moitié, celle-ci est inexistante.
 
@@ -50,15 +50,15 @@ Bien que je de nombreux travaux ont d'ores et déjà démontré que la plupart d
 
 En effet, en 2008 Flanagin et Metzger notent que "information contributed by members of the public who are not geographers or even scientists" (Flanagin & Metzger 2008). Dans la même année, GoodChild arrive également au même constat "in recent years the user base for such products has grown to include large numbers of individuals with little or no training in the geospatial sciences" (Goodchild 2008)
 
-[![Occupation - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/occupation.png "Occupation - source : Nama Budhathoki"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/occupation.png "Occupation - source : Nama Budhathoki"){: data-mediabox="gallery-lightbox" data-title="Occupation - source : Nama Budhathoki" }
+![Occupation - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/occupation.png "Occupation - source : Nama Budhathoki"){: .img-center loading=lazy }
 
 Etudions maintenant l'origine professionnelle de ces volontaires de l'information géographique. Alors que je pensais trouver une forte présence étudiante, celle-ci ne participe qu'à hauteur de 17% loin derrière les 63% que représentent les personnes actives.
 
-[![Employment - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/employment.png  "Employment - source : Nama Budhathoki"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/employment.png  "Employment - source : Nama Budhathoki"){: data-mediabox="gallery-lightbox" data-title="Employment - source : Nama Budhathoki" }
+![Employment - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/employment.png  "Employment - source : Nama Budhathoki"){: .img-center loading=lazy }
 
 Concernant le secteur d'activité dans lequel évoluent ces personnes, il est majoritairement commercial. Le secteur public cumulé représentant tout de même 25%. En lui même ce dernier graphique ne représente pas grand-chose. Il faudrait en effet le comparer à la répartition de la population totale par activité qui doit être au final, je pense, sensiblement la même que les chiffres obtenus précédemment.
 
-[![Eductation - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/education_1.png  "Eductation - source : Nama Budhathoki"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/education_1.png  "Eductation - source : Nama Budhathoki"){: data-mediabox="gallery-lightbox" data-title="Eductation - source : Nama Budhathoki" }
+![Eductation - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/education_1.png  "Eductation - source : Nama Budhathoki"){: .img-center loading=lazy }
 
 Enfin, concernant le niveau d'études des utilisateurs, nous voyons ici beaucoup d'études supérieures :
 

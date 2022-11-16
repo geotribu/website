@@ -61,7 +61,7 @@ La logique de l'API Gdal-OGR se décompose en 3 étapes. Tout d'abord **l'identi
 
 Voici représenté schématiquement l'enchainement des étapes à réaliser :
 
-[![PyGIS - Schéma](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/Pygisde_001.jpg "PyGIS - Schéma"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/Pygisde_001.jpg){: data-mediabox="lightbox-gallery" data-title="PyGIS - Schéma" }
+![PyGIS - Schéma](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/Pygisde_001.jpg "PyGIS - Schéma"){: .img-center loading=lazy }
 
 Source : [PyGis](http://www.pygis.de/index.php/GDAL)
 

@@ -358,7 +358,7 @@ Ce qui nous donne :
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<OGRVRTDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/gdal/data/ogrvrt.xsd">
+<OGRVRTDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/data/ogrvrt.xsd">
     <OGRVRTLayer name="bayonne">
         <SrcDataSource>/vsicurl/https://static.data.gouv.fr/resources/adresses-au-format-bal-bayonne/20210802-091433/20210731-bal-216401026.csv</SrcDataSource>
         <SrcLayer>20210731-bal-216401026</SrcLayer>
@@ -396,7 +396,7 @@ ogr2ogr \
 
 Après tout ce travail, on vérifie le rendu et la structure des données dans notre SIG préféré :
 
-[![QGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "QGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Rendu final des donnés BAN et BAL" }
+![QGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "QGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }
 
 ----
 
@@ -425,24 +425,24 @@ String,String,String,String,String,String,String,String,Integer,String,String,Co
 
 ![icône XML](https://cdn.geotribu.fr/img/logos-icones/divers/xml.png "icône XML - XML File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
 
-Comme indiqué dans la documentation, le [schéma du format VRT est défini par un XSD](https://github.com/OSGeo/gdal/blob/master/gdal/data/ogrvrt.xsd) ([XML Schema Definition](https://fr.wikipedia.org/wiki/XML_Schema)) qu'il peut être utile d'indiquer dans l'espace de nommage :
+Comme indiqué dans la documentation, le [schéma du format VRT est défini par un XSD](https://github.com/OSGeo/gdal/blob/master/data/ogrvrt.xsd) ([XML Schema Definition](https://fr.wikipedia.org/wiki/XML_Schema)) qu'il peut être utile d'indiquer dans l'espace de nommage :
 
 ```xml
 <OGRVRTDataSource
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/gdal/data/ogrvrt.xsd"
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/data/ogrvrt.xsd"
     >
 ```
 
 Par exemple, si comme moi vous utilisez Visual Studio Code, vous pouvez profiter de l'auto-complétion et de la validation via une extension comme [XML Complete](https://marketplace.visualstudio.com/items?itemName=rogalmic.vscode-xml-complete) :
 
-[![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png){: data-mediabox="lightbox-gallery" data-title="Visual Studio Code - XML Complete" }
+![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }
 
 ----
 
 ## Conclusion
 
-[![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png){: data-mediabox="lightbox-gallery" data-title="GDAL c'est de la BAL" }
+![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }
 
 Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. On pourrait le suggérer aux équipes Etalab/ANCT et/ou à l'[AITF]. Qu'en pensez-vous ?
 

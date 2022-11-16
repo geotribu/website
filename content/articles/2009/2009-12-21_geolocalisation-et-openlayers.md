@@ -33,7 +33,7 @@ Premièrement, il est nécessaire de spécifier au navigateur client que nous al
 
 Cette simple instruction aura pour effet d'activer la géolocalisation sur le poste client. Ce dernier aura alors la possibilité d'accepter ou de refuser la connexion. L'image ci-dessous, montre la demande d'activation par Firefox :
 
-[![Géolocalisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/geoloc.png "Géolocalisation"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/geoloc.png){: data-mediabox="lightbox-gallery" data-title="Géolocalisation" }
+![Géolocalisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/geoloc.png "Géolocalisation"){: .img-center loading=lazy }
 
 Si celle-ci est autorisée, un objet "position" contenant notamment la longitude, la latitude et l'altitude est alors construit. L'instruction de géolocalisation peut prendre jusqu'à 3 arguments, ceux-ci sont :
 

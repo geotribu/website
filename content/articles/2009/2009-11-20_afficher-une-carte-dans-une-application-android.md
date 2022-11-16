@@ -98,7 +98,7 @@ Votre émulateur pouvant afficher des cartes est maintenant créé.
 
 Dans Eclipse, créez un nouveau projet Android, et veillez bien à sélectionner Google APIs comme cible :
 
-[![Eclipse](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_1_newproject.png "Eclipse"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_1_newproject.png){: data-mediabox="lightbox-gallery" data-title="Eclipse" }
+![Eclipse](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_1_newproject.png "Eclipse"){: .img-center loading=lazy }
 
 ### Adaptation du manifest
 
@@ -202,7 +202,7 @@ Votre activité est une MapActivity et non une Activity simple. Il faut donc imp
 
 Lancez l'émulateur, vous devriez voir ceci :
 
-[![Google Maps - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_1_run.png "Google Maps - Carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_1_run.png){: data-mediabox="lightbox-gallery" data-title="Google Maps - Carte" }
+![Google Maps - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/android_tuto_1_run.png "Google Maps - Carte"){: .img-center loading=lazy }
 
 ## Remarques
 

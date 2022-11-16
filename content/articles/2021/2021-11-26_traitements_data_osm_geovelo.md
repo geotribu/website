@@ -47,7 +47,7 @@ Pour s’assurer d’avoir les meilleures données cyclables possibles, Geovelo 
 - des **retours utilisateurs**, via notre système intégré de contributions carto sur les apps,  
 - des indices remontés par des failles dans nos calculs d’itinéraires.
 
-[![Suivi OSM chez Geovelo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png "Suivi OSM chez Geovelo"){: loading=lazy .img-center }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png){: data-mediabox="lightbox-gallery" data-title="Suivi OSM chez Geovelo" }
+![Suivi OSM chez Geovelo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/process_traitement_data_cyclables_osm.png "Suivi OSM chez Geovelo"){: loading=lazy .img-center }
 
 Nous allons par la suite nous intéresser aux 2 catégories qui posent le plus de problème de qualité : les contributions et les imports "métier".
 
@@ -55,7 +55,7 @@ Nous allons par la suite nous intéresser aux 2 catégories qui posent le plus d
 
 Geovelo intègre un outil de contribution à son site web et ses applications, permettant aux utilisateurs de contribuer sur 8 thématiques différentes:
 
-[![Signalements possibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg "Signalements possibles sur l'appli Geovelo"){: loading=lazy .img-right width=30% }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg){: data-mediabox="lightbox-gallery" data-title="Signalements possibles sur l'appli Geovelo" }
+![Signalements possibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/exemple_signalements_geovelo.jpg "Signalements possibles sur l'appli Geovelo"){: loading=lazy .img-right width=30% }
 
 - A faire à voir
 - Aménagement Cyclable manquant
@@ -167,7 +167,7 @@ Pour les traitements de réutilisation, on est sur du classique libre : Postgis,
 
 Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre cartographe:
 
-[![station_simon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/station_travail_simon_geovelo.jpg "La station de travail du cartographe"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/station_travail_simon_geovelo.jpg){: data-mediabox="lightbox-gallery" data-title="La station de travail du cartographe" }
+![station_simon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/station_travail_simon_geovelo.jpg "La station de travail du cartographe"){: .img-center loading=lazy }
 
 ----
 

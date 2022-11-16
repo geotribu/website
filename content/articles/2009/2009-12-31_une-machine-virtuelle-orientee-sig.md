@@ -41,7 +41,7 @@ Au delà d'avoir déjà une grande quantité de programmes préinstallés, les a
 
 Essayons d'expliquer le principe de la virtualisation. Pour cela, imaginez que l'on vous fournisse un nouvel environnement déjà installé et paramétré et que vous n'avez plus qu'à appuyer sur start. Eh oui c'est aussi simple que cela et cela fonctionne quel que soit votre système d'exploitation. Vous pouvez ainsi, par exemple, faire fonctionner Ubuntu sur Windows ou inversement Windows sur Ubuntu (*ça me donne des boutons d'écrire cela ...*). De plus, vous pouvez bien évidemment réaliser des modifications, créer ou supprimer des fichiers dans votre environnement virtualisé... Tout fonctionne comme un système d'exploitation normal sauf que celui-ci s'exécute à partir d'un autre système d'exploitation.
 
-[![VMWare](https://cdn.geotribu.fr/img/tuto/gisvm/vmware_server.gif "VMWare"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gisvm/vmware_server.gif){: data-mediabox="lightbox-gallery" data-title="VMWare" }
+![VMWare](https://cdn.geotribu.fr/img/tuto/gisvm/vmware_server.gif "VMWare"){: .img-center loading=lazy }
 
 > source : [GISVM Blog](http://www.gisvm.com/blog/?p=207)
 
@@ -52,7 +52,7 @@ Passons maintenant à la mise en application. Pour cela, deux étapes préalable
 
 Une fois VM Ware player d'installé, il ne vous reste plus alors qu'à sélectionner votre machine virtuelle GISVM (*.vmx) qui une fois lancée affichera un environnement semblable à celui de l'image ci-dessous :
 
-[![GISVM](https://cdn.geotribu.fr/img/tuto/gisvm/739px-Gisvm_startup.jpg "GISVM"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/gisvm/739px-Gisvm_startup.jpg){: data-mediabox="lightbox-gallery" data-title="GISVM" }
+![GISVM](https://cdn.geotribu.fr/img/tuto/gisvm/739px-Gisvm_startup.jpg "GISVM"){: .img-center loading=lazy }
 
 > source : [GISVM Wiki](http://gisvm.com/wiki/index.php?title=GISVM_Desktop)
 

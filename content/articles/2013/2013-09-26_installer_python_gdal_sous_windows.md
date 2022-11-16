@@ -59,7 +59,7 @@ Objectifs :
 
 Assurez-vous donc d’avoir bien `c:\Python27;c:\Python27\Scripts;` à la fin de votre *System PATH*, auquel on accède via : Panneau de Configuration >> Système >> Paramètres systèmes avancés >> Variables d'environnement. Si vous ne savez pas faire, voici [une capture d'écran](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Axx_VariablesEnvironnement_0.jpg) ou un [lien explicatif](http://sametmax.com/ajouter-un-chemin-a-la-variable-denvironnement-path-sous-windows/)).
 
-[![PATH Windows : Python Scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/PATH_Python.jpg "PATH Windows : Python Scripts"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/PATH_Python.jpg "PATH Windows : Python Scripts"){: data-mediabox="lightbox-gallery" data-title="PATH Windows : Python Scripts" }
+![PATH Windows : Python Scripts](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/PATH_Python.jpg "PATH Windows : Python Scripts"){: .img-center loading=lazy }
 
 ### Pour les puristes
 
@@ -77,7 +77,7 @@ Sinon vous pouvez également vous tourner vers les [packages de Christoph Gohlke
 
 La façon la plus simple étant de lancer l'interpréteur fourni avec Python, IDLE de son joli nom :
 
-[![Interpréteur Python](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/MSVC_Version.jpg "Interpréteur Python"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/MSVC_Version.jpg "Interpréteur Python"){: data-mediabox="lightbox-gallery" data-title="Interpréteur Python" }
+![Interpréteur Python](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/MSVC_Version.jpg "Interpréteur Python"){: .img-center loading=lazy }
 
 Sachez que si vous le souhaitez, vous pouvez disposer gratuitement de la dernière version des librairies C#/C++ sur Windows en installant [Visual Studio Express](http://www.microsoft.com/visualstudio/fra/downloads).
 
@@ -100,13 +100,13 @@ Comme sur la capture :
     * l'autre pour les fichiers ECW ou encore les MrSID ([format d'images compressées](http://gdal.gloobe.org/gdal/formats/mrsid.html)).
     * D'autres dépendent de licences propriétaires, comme celui d'Oracle.
 
-[![Capture d'écran de la partie téléchargement des installeurs sur GIS Internals](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/GISInternalsSDK_GDALdownloads_capture.jpg "Capture d'écran de la partie téléchargement des installeurs sur GIS Internals"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/GISInternalsSDK_GDALdownloads_capture.jpg "Capture d'écran de la partie téléchargement des installeurs sur GIS Internals"){: data-mediabox="lightbox-gallery" data-title="Capture d'écran de la partie téléchargement des installeurs sur GIS Internals" }
+![Capture d'écran de la partie téléchargement des installeurs sur GIS Internals](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/GISInternalsSDK_GDALdownloads_capture.jpg "Capture d'écran de la partie téléchargement des installeurs sur GIS Internals"){: .img-center loading=lazy }
 
 ### Ajouter GDAL aux variables d'environnement
 
 Comme expliqué plus haut pour Python, ajouter à la fin du Path (donc après `c:\Python27\Scripts;` normalement) le chemin vers l'installation de GDAL (a priori : `C:\Program Files (x86)\GDAL`) :
 
-[![PATH Windows : dossier d'installation de GDAL](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/PATH_GDAL.jpg "PATH Windows : dossier d'installation de GDAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/PATH_GDAL.jpg "PATH Windows : dossier d'installation de GDAL"){: data-mediabox="lightbox-gallery" data-title="PATH Windows : dossier d'installation de GDAL" }
+![PATH Windows : dossier d'installation de GDAL](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/PATH_GDAL.jpg "PATH Windows : dossier d'installation de GDAL"){: .img-center loading=lazy }
 
 Attention, certains utilisateurs ont fait remonter des erreurs du type `DLL load failed` et [recommandent](https://stackoverflow.com/a/10010835) de placer le chemin vers GDAL au début de la variable `Path`.
 
@@ -116,19 +116,19 @@ Si vous souhaitez également pouvoir utiliser des outils logiciels développés 
 
 Toujours dans la fenêtre des variables d'environnement, cliquez sur "Nouvelle" pour affecter le chemin des données de GDAL, `C:\Program Files (x86)\GDAL\gdal-data` en théorie, à `GDAL_DATA` :
 
-[![PATH Windows : dossier des données GDAL](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_%20GDAL_Data.jpg "PATH Windows : dossier des données GDAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_%20GDAL_Data.jpg "PATH Windows : dossier des données GDAL"){: data-mediabox="lightbox-gallery" data-title="PATH Windows : dossier des données GDAL" }
+![PATH Windows : dossier des données GDAL](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_%20GDAL_Data.jpg "PATH Windows : dossier des données GDAL"){: .img-center loading=lazy }
 
 ### Répéter pour les modules de GDAL et le dossier des projections
 
-[![PATH Windows : dossier d'installation des plugins de GDAL](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_Driver.jpg "PATH Windows : dossier d'installation des plugins de GDAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_Driver.jpg "PATH Windows : dossier d'installation des plugins de GDAL"){: data-mediabox="lightbox-gallery" data-title="PATH Windows : dossier d'installation des plugins de GDAL" }
+![PATH Windows : dossier d'installation des plugins de GDAL](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_Driver.jpg "PATH Windows : dossier d'installation des plugins de GDAL"){: .img-center loading=lazy }
 
-[![Ajout de la variable PROJ_LIB](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_PROJ_LIB.jpg "Ajout de la variable PROJ_LIB"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_PROJ_LIB.jpg "Ajout de la variable PROJ_LIB"){: data-mediabox="lightbox-gallery" data-title="Ajout de la variable PROJ_LIB" }
+![Ajout de la variable PROJ_LIB](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/Variable_GDAL_PROJ_LIB.jpg "Ajout de la variable PROJ_LIB"){: .img-center loading=lazy }
 
 ### Tester et apprécier
 
 Après avoir redémarré (on n'est jamais trop prudent sous Windows...), ouvrez un terminal Windows (Démarrer >> Exécuter >> cmd) et vérifiez que vous obtenez quelque chose qui ressemble à ça :
 
-[![Résultat dans la console Windows](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/ResultatInstallation_PythonGDAL.jpg "Résultat dans la console Windows"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/ResultatInstallation_PythonGDAL.jpg "Résultat dans la console Windows"){: data-mediabox="lightbox-gallery" data-title="Résultat dans la console Windows" }
+![Résultat dans la console Windows](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/Python-GDAL-Windows/ResultatInstallation_PythonGDAL.jpg "Résultat dans la console Windows"){: .img-center loading=lazy }
 
 On peut également tester son installation du côté de l'exécution d'un script et vérifier au passage les pilotes disponibles sur sa machine ([ce script est également sur GitHub](https://github.com/Guts/Metadator/blob/master/test/test_ogr_DriversDispos.py)) :
 

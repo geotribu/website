@@ -35,7 +35,7 @@ Si le nom ne vous dit rien, c'est pourtant une technique qui est largement utili
 
 Le fonctionnement global est schématisé de la façon suivante :
 
-[![web scraping schéma](https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png "Le web-scraping schématisé. Crédits : Web Harvy"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png){: data-mediabox="scraping" data-title="Le web-scraping schématisé. Crédits Web Harvy"}
+![web scraping schéma](https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png "Le web-scraping schématisé. Crédits : Web Harvy"){: .img-center loading=lazy }
 
 ----
 
@@ -57,7 +57,7 @@ Le projet permet bien un accès via des [APIs REST](https://archive.org/services
 
 L'une des difficultés étant que l'archivage (qui utilise lui-même du web-scraping) n'est ni régulier, ni exhaustif ; un contenu étant donc potentiellement absent ou présent selon les dates d'archives. Après quelques manipulations, j'ai donc retenu : [l'archive du 22 février 2017](https://web.archive.org/web/20170222060359/http://www.geotribu.net/).
 
-[![Internet Archive serveurs](https://cdn.geotribu.fr/img/tuto/webscraping/internet_archive_server.jpg "Serveurs de l'Internet Archive "){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/internet_archive_server.jpg){: data-mediabox="scraping" data-title="Serveurs de l'Internet Archive"}
+![Internet Archive serveurs](https://cdn.geotribu.fr/img/tuto/webscraping/internet_archive_server.jpg "Serveurs de l'Internet Archive "){: .img-center loading=lazy }
 
 ### Le logiciel : Scrapy
 
@@ -97,7 +97,7 @@ Si j'ai déjà eu à faire à XPath (ô joie des métadonnées mal formatées...
 
 On garde en tête notre objectif : parcourir la page des revues de presse pour extraire les informations de chaque revue de presse à explorer séparément par la suite. Pour y parvenir, pas de secret : il faut identifier et suffisamment discriminer les styles CSS souhaités. Et Drupal 6 ne nous a pas vraiment préparé à cela...
 
-[![Sources Geotribu Drupal](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_geotribu_css.png "La cascade de styles dans l'ancien site : un passage obligé"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_geotribu_css.png){: data-mediabox="scraping" data-title="La cascade de styles dans l'ancien site : un passage obligé"}
+![Sources Geotribu Drupal](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_geotribu_css.png "La cascade de styles dans l'ancien site : un passage obligé"){: .img-center loading=lazy }
 
 Après quelques litres de collyre en lisant le HTML/CSS et les messages d'erreur de Scrapy, voici ce à quoi on arrive :
 
@@ -151,7 +151,7 @@ Une fois que l'on a démêlé la structure des contenus ciblés, on met tout cel
 - éventuellement jouer avec les couches intermédiaires (_middlewares_) pour gérer des cas particuliers ou personnaliser des comportements : redimensionnement des images, etc.
 - le tout orchestré par un fichier de configuration `settings.py` dont les options sont nombreuses, sans compter les éventuelles extensions.
 
-[![Architecture Scrapy](https://cdn.geotribu.fr/img/tuto/webscraping/scrapy_architecture.png "Schéma d'architecture des modules de Scrapy."){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/scrapy_architecture.png){: data-mediabox="scraping" data-title="Schéma d'architecture des modules de Scrapy." }
+![Architecture Scrapy](https://cdn.geotribu.fr/img/tuto/webscraping/scrapy_architecture.png "Schéma d'architecture des modules de Scrapy."){: .img-center loading=lazy }
 
 Bref, à ce stade, le travail est loin d'être terminé. Soyons réaliste : ça n'est pas très "rentable" lorsqu'il s'agit, comme dans notre cas, de faire tourner notre programme de scraping que quelques fois seulement, le temps en fait de le peaufiner et de gérer les cas particuliers.
 

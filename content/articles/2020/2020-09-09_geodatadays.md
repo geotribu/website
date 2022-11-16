@@ -40,9 +40,9 @@ Afin de joindre l'utile à l'utile, je leur avais proposé d'établir leur progr
 
 J'aurais aimé diffuser ce projet mais je n'ai pas eu le temps pour travailler suffisamment dessus pour que ce soit présentable. Mais voici quand même un petit aperçu :
 
-[![Projet QGIS pour les GéoDataDays](https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_2020_qgis_new_entity.png "Formulaire de saisie du projet QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_2020_qgis_new_entity.png){: data-mediabox="geodatadays-qgis" data-title="Formulaire de saisie du projet QGIS" }
+![Projet QGIS pour les GéoDataDays](https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_2020_qgis_new_entity.png "Formulaire de saisie du projet QGIS"){: .img-center loading=lazy }
 
-[![Projet QGIS pour les GéoDataDays 2](https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_qgis_schedule.gif "Animation temporelle"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_qgis_schedule.gif){: data-mediabox="geodatadays-qgis" data-title="Animation temporelle" }
+![Projet QGIS pour les GéoDataDays 2](https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_qgis_schedule.gif "Animation temporelle"){: .img-center loading=lazy }
 
 Tout ça pour dire qu'on se voit mardi !
 

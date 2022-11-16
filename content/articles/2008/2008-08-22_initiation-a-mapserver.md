@@ -130,7 +130,7 @@ Pour cela nous aurons besoin tout d'abord d'instancier un nouvel objet Map, cela
 
 Si vous avez tout bien suivi, et que je ne me suis pas trompé (j'espère... :) ), une carte des contours de l'Indonésie devrait s'être dessinée. Une carte comme celle-ci :
 
-[![Indonésie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/indonesie.png "Indonésie"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/indonesie.png "Indonésie"){: data-mediabox="gallery-lightbox" data-title="Indonésie"}
+![Indonésie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/indonesie.png "Indonésie"){: .img-center loading=lazy }
 
 ----
 

@@ -58,13 +58,13 @@ Cette méthode permet, en créant une couche spécifique de tableau de bord, de 
 
 Créer une couche « dashboard » de polygone composée des champs suivant :
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/1_champs_dashboard.png "QGIS - Champs table Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/1_champs_dashboard.png "QGIS - Champs table Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Champs table Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/1_champs_dashboard.png "QGIS - Champs table Dashboard"){: .img-center loading=lazy }
 
 ### Etape 2 : créer un polygone
 
 Éditer la couche « dashboard » et créer un polygone suivant l’emprise du projet.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Création polygone Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/2_polygon_dashboard.png "QGIS - Création polygone Dashboard"){: .img-center loading=lazy }
 
 ### Etape 3 : symbologie de la couche
 
@@ -72,39 +72,39 @@ Ouvrir les propriétés de la couche dashboard et dans l’onglet symbologie sé
 
 Le polygone doit disparaître à l’écran.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/3_symbologie_dashboard.png "QGIS - Symbologie couche Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/3_symbologie_dashboard.png "QGIS - Symbologie couche Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Symbologie couche Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/3_symbologie_dashboard.png "QGIS - Symbologie couche Dashboard"){: .img-center loading=lazy }
 
 ### Etape 4 : paramétrer les étiquettes
 
 Sélectionner ‘Etiquettes simples’ dans l’onglet Étiquettes. Dans le sous onglet valeur, faites une sélection par expression et inscrivez le code suivant : `eval( "label_expression")`
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/4_etiquettes_dashboard.png "QGIS - Étiquette simple Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/4_etiquettes_dashboard.png "QGIS - Étiquette simple Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette simple Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/4_etiquettes_dashboard.png "QGIS - Étiquette simple Dashboard"){: .img-center loading=lazy }
 
 Dans le sous-onglet texte cliquer sur l’icône à droite de la police. Aller chercher type de champs et pointer vers le champ **font** de la table « dashboard » créée à l’étape 1.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Étiquette font Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Étiquette font Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette font Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Étiquette font Dashboard"){: .img-center loading=lazy }
 
 Faire de même avec le **style** et pointer sur le champs style.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Étiquette style Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Étiquette style Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette style Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/6_etiquettes_dashboard.png "QGIS - Étiquette style Dashboard"){: .img-center loading=lazy }
 
 Faire de même avec la **couleur** et pointer sur le champ _**font_color**_.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/7_etiquettes_dashboard.png "QGIS - Étiquette couleur Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/7_etiquettes_dashboard.png "QGIS - Étiquette couleur Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette couleur Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/7_etiquettes_dashboard.png "QGIS - Étiquette couleur Dashboard"){: .img-center loading=lazy }
 
 Aller maintenant dans l’onglet **arrière-plan.**
 
 Faire de même que précédemment avec la **taille X** et pointer sur le champ _**width**_.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/8_etiquettes_dashboard.png "QGIS - Étiquette X Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/8_etiquettes_dashboard.png "QGIS - Étiquette X Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette X Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/8_etiquettes_dashboard.png "QGIS - Étiquette X Dashboard"){: .img-center loading=lazy }
 
 Faire de même que précédemment avec la **taille Y** et pointer sur le champ _**height**_.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/9_etiquettes_dashboard.png "QGIS - Étiquette Y Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/9_etiquettes_dashboard.png "QGIS - Étiquette Y Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette Y Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/9_etiquettes_dashboard.png "QGIS - Étiquette Y Dashboard"){: .img-center loading=lazy }
 
 Faire de même avec la **couleur de remplissage** et pointer sur le champ _**bg_colour**_.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/10_etiquettes_dashboard.png "QGIS - Étiquette remplissage Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/10_etiquettes_dashboard.png "QGIS - Étiquette remplissage Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette remplissage Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/10_etiquettes_dashboard.png "QGIS - Étiquette remplissage Dashboard"){: .img-center loading=lazy }
 
 Aller maintenant dans l’onglet **position**.
 
@@ -115,11 +115,11 @@ Cliquer sur l’icône à droite de **décalage X,Y**. Choisissez cette fois ci 
 Dans le constructeur de requête qui s’ouvre, indiquer la variable suivante : `array( "label_offset_x" , "label_offset_y")`  
 Appuyer sur ok.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard"){: data-mediabox="gallery-lightbox" data-title="QGIS - Étiquette décalage Dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/11_etiquettes_dashboard.png "QGIS - Étiquette décalage Dashboard"){: .img-center loading=lazy }
 
 Pour finir, afin de fixer les étiquettes selon l'emprise de la carte, cocher la case **générateur de géométrie** et inscrire l'expression suivante : start_point( @map_extent )
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/last_emprise_carte_expression.png "QGIS - Expression emprise de carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/last_emprise_carte_expression.png "QGIS - Expression emprise de carte"){: data-mediabox="gallery-lightbox" data-title="QGIS - Expression emprise de carte" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/last_emprise_carte_expression.png "QGIS - Expression emprise de carte"){: .img-center loading=lazy }
 
 ### Etape 5 : Remplir les champs de la table attributaire
 
@@ -129,15 +129,15 @@ Donner un nom qui mette en évidence l’action. Ici le titre de la première é
 
 Puis indiquer dans le champs label expression l’expression qui s’affichera dans la première fenêtre dashboard, ici, simplement le titre _***'nbr pt total'**_
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 1"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 1"){: data-mediabox="gallery-lightbox" data-title="QGIS - Paramétrage fenêtre 1" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 1"){: .img-center loading=lazy }
 
 Paramétrer ensuite les champs qui vont déterminer la taille, la position, la couleur de fond et la police de la première fenêtre Dashboard.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_suite_dashboard.png "QGIS - Paramétrage fenêtre 1 suite"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_suite_dashboard.png "QGIS - Paramétrage fenêtre 1 suite"){: data-mediabox="gallery-lightbox" data-title="QGIS - Paramétrage fenêtre 1 suite" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_suite_dashboard.png "QGIS - Paramétrage fenêtre 1 suite"){: .img-center loading=lazy }
 
 Au fur et à mesure des modifications des valeurs de champs, lorsque vous enregistrez, vous devez voir apparaître la 1ere fenêtre Dashboard et les modifications apportées.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_vue.png "QGIS - Rendu fenêtre 1"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_vue.png "QGIS - Rendu fenêtre 1"){: data-mediabox="gallery-lightbox" data-title="QGIS - Rendu fenêtre 1" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/12_1rst_fenetre_vue.png "QGIS - Rendu fenêtre 1"){: .img-center loading=lazy }
 
 Si aucune fenêtre n’apparaît au niveau de votre projet QGIS, jouez avec les différents champs (surtout label_offset x, label_offset y), cela peut être un problème de position de la fenêtre. Si elle n’apparaît toujours pas, reprenez les étapes précédentes.
 
@@ -145,21 +145,21 @@ Si aucune fenêtre n’apparaît au niveau de votre projet QGIS, jouez avec les 
 
 Pour créer une nouvelle fenêtre dashboard, passer la table attributaire en mode édition. Copiez la première ligne et coller la dans la partie blanche de la table attributaire. Une deuxième ligne identique apparaît.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/13_2nd_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/13_2nd_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 2"){: data-mediabox="gallery-lightbox" data-title="QGIS - Paramétrage fenêtre 2" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/13_2nd_fenetre_dashboard.png "QGIS - Paramétrage fenêtre 2"){: .img-center loading=lazy }
 
 ### Etape 7 : Paramétrer des requêtes dans les nouvelles lignes
 
 Une fois la nouvelle entité crée, modifier les valeurs de champs de la seconde pour positionner la deuxième fenêtre sous la première.  Vous pouvez modifier le champs label_expression avec une requête sql qgis qui vous permettra d’afficher la valeur souhaitée dans cette deuxième fenêtre.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/14_2nd_fenetre_vue.png "QGIS - Rendu fenêtre 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/14_2nd_fenetre_vue.png "QGIS - Rendu fenêtre 2"){: data-mediabox="gallery-lightbox" data-title="QGIS - Rendu fenêtre 2" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/14_2nd_fenetre_vue.png "QGIS - Rendu fenêtre 2"){: .img-center loading=lazy }
 
 ### Exemple de table attributaire Dashboard et rendu
 
 Ci-dessous, nous avons organisé la table avec une fenêtre par ligne comme suit : une 1ère fenêtre avec valeur « titre » suivie d'une fenêtre affichant une valeur « expression ».
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/15_ex_table_attrib.png "Table attributaire Dashboard partie 1"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/15_ex_table_attrib.png "Table attributaire Dashboard partie 1"){: data-mediabox="gallery-lightbox" data-title="Table attributaire Dashboard partie 1" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/15_ex_table_attrib.png "Table attributaire Dashboard partie 1"){: .img-center loading=lazy }
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/16_ex_table_attrib_suite.png "Table attributaire Dashboard partie 2"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/16_ex_table_attrib_suite.png "Table attributaire Dashboard partie 2"){: data-mediabox="gallery-lightbox" data-title="Table attributaire Dashboard partie 2" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/16_ex_table_attrib_suite.png "Table attributaire Dashboard partie 2"){: .img-center loading=lazy }
 
 ### Exemple de requêtes utilisées
 
@@ -187,7 +187,7 @@ Le Dashboard est utilisé par le pôle SIG afin de contrôler les erreurs de sai
 
 Ci-dessous, un exemple d'affichage des bilans adresses (en haut à droite) après sélection d'une commune sous QGIS.
 
-[![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/gif_dashboard.gif "Animation dashboard"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/gif_dashboard.gif "Animation dashboard"){: data-mediabox="gallery-lightbox" data-title="Animation dashboard" }
+![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/gif_dashboard.gif "Animation dashboard"){: .img-center loading=lazy }
 
 ----
 

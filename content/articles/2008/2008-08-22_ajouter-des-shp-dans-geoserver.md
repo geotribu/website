@@ -58,39 +58,39 @@ Pour que ce changement soit permanent modifier le fichier `.bashrc` en conséque
 
 Les premières étapes sont assez simples, elles sont résumées par les 4 images ci-dessous. Nous allons spécifier à GéoServer que nous allons ajouter une nouvelle donnée
 
-[![Configuration](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/configuration.jpg "Configuration"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/configuration.jpg "Configuration"){: data-mediabox="gallery-lightbox" data-title="Configuration"}
+![Configuration](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/configuration.jpg "Configuration"){: .img-center loading=lazy }
 
-[![Données](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/donnees.jpg "Données"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/donnees.jpg "Données"){: data-mediabox="gallery-lightbox" data-title="Données"}
+![Données](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/donnees.jpg "Données"){: .img-center loading=lazy }
 
-[![Entrepots](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/entrepots.jpg "Entrepots"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/entrepots.jpg "Entrepots"){: data-mediabox="gallery-lightbox" data-title="Entrepots"}
+![Entrepots](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/entrepots.jpg "Entrepots"){: .img-center loading=lazy }
 
-[![Nouveau entrepot](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/nouveau_entrepot.jpg "Nouveau entrepot"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/nouveau_entrepot.jpg "Nouveau entrepot"){: data-mediabox="gallery-lightbox" data-title="Nouveau entrepot"}
+![Nouveau entrepot](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/nouveau_entrepot.jpg "Nouveau entrepot"){: .img-center loading=lazy }
 
 Nous allons spécifier le type de données que nous allons utiliser (dans notre cas du Shp) :
 
-[![Data shape](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/data_shape.jpg "Data shape"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/data_shape.jpg "Data shape"){: data-mediabox="gallery-lightbox" data-title="Data shape"}
+![Data shape](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/data_shape.jpg "Data shape"){: .img-center loading=lazy }
 
 Nous allons, pour finir, décrire la donnée. Pour cela il faut lui assigner un style :
 
-[![Style](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/style.jpg "Style"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/style.jpg "Style"){: data-mediabox="gallery-lightbox" data-title="Style"}
+![Style](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/style.jpg "Style"){: .img-center loading=lazy }
 
 Et enfin définir son système de projection (Rechercher un SRS) ainsi que son emprise spatiale (Générer) :
 
-[![Edition](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/edition.jpg "Edition"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/edition.jpg "Edition"){: data-mediabox="gallery-lightbox" data-title="Edition"}
+![Edition](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/edition.jpg "Edition"){: .img-center loading=lazy }
 
-[![Entite](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/entite.jpg "Entite"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/entite.jpg "Entite"){: data-mediabox="gallery-lightbox" data-title="Entite"}
+![Entite](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/entite.jpg "Entite"){: .img-center loading=lazy }
 
 Vous devez enfin appliquer puis sauvegarder les modifications
 
-[![Sauvegarde](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/sauvegarde.jpg "Sauvegarde"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/sauvegarde.jpg "Sauvegarde"){: data-mediabox="gallery-lightbox" data-title="Sauvegarde"}
+![Sauvegarde](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/sauvegarde.jpg "Sauvegarde"){: .img-center loading=lazy }
 
 ## Visualisez ses données
 
 La visulation de vos données pourra se faire sous différents formats (pdf, KML, SVG, OpenLayers....). Pour cela vous devez vous rendre dans la partie démonstration puis prévisualisation des cartes :
 
-[![Démo](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/demo.jpg "Démo"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/demo.jpg "Démo"){: data-mediabox="gallery-lightbox" data-title="Démo"}
+![Démo](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/demo.jpg "Démo"){: .img-center loading=lazy }
 
-[![Carte](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/carte.jpg "Carte"){: .img-center loading=lazy }](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/carte.jpg "Carte"){: data-mediabox="gallery-lightbox" data-title="Carte"}
+![Carte](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/carte.jpg "Carte"){: .img-center loading=lazy }
 
 ----
 

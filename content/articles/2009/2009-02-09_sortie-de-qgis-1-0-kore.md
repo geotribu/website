@@ -30,13 +30,13 @@ Les quelques captures d'écran ci-dessous vous donneront je l'espère l'envie de
 
 ## Interface générale
 
-[![Interface générale](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/qgis_kore_global.webp "Interface générale"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/qgis_kore_global.webp){: data-mediabox="lightbox-gallery" data-title="Interface générale" }
+![Interface générale](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/qgis_kore_global.webp "Interface générale"){: .img-center loading=lazy }
 
 ### Analyses thématiques
 
 ![config_analyse_them.png](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/config_analyse_them.png)  
 
-[![Analyse thématique](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/qgis_kore_analyse_thematique.png "Analyse thématique"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/qgis_kore_analyse_thematique.png){: data-mediabox="lightbox-gallery" data-title="Analyse thématique" }
+![Analyse thématique](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/qgis_kore_analyse_thematique.png "Analyse thématique"){: .img-center loading=lazy }
 
 ### Utilisation des fonctionnalités de GRASS
 
