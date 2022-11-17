@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo locale-gen fr_FR.UTF-8
           sudo update-locale LANG=fr_FR.UTF-8
-          echo "::set-output name=date-fr-long::$(date -d ${{ github.event.inputs.date }} '+%-d %B %Y')"
+          echo "date-fr-long=$(date -d ${{ github.event.inputs.date }} '+%-d %B %Y')" >> $GITHUB_OUTPUT
 
       - name: Get source code
         uses: actions/checkout@v3
