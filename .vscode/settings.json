@@ -2,6 +2,13 @@
     // Editor
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
+    "files.associations": {
+        "./requirements*.txt": "pip-requirements"
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
     // Python
     "python.pythonPath": ".venv/bin/python",
     "python.formatting.provider": "black",

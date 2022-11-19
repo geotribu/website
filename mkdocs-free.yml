@@ -18,6 +18,10 @@ edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/master/content"]
 docs_dir: "./content"
 site_dir: "./build/mkdocs/site"
 
+# Scripts pendant le build
+hooks:
+  - hooks/mkdocs/check_hyperlinks.py
+
 # Plugins
 plugins:
   - awesome-pages
@@ -35,6 +39,19 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
+  - glightbox:
+      touchNavigation: true
+      effect: zoom
+      width: 90%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - img-rdp-news-thumb
+        - emojione
+        - twemoji
+      auto_caption: true
+      caption_position: bottom
   # - minify:
   #     minify_css: true
   #     minify_html: true
@@ -124,42 +141,12 @@ extra:
       des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
       l'audience du site.
   manifest: "manifest.webmanifest" # PWA declaration
-  social:
-    - icon: "fontawesome/solid/rss"
-      link: "https://static.geotribu.fr/feed_rss_created.xml"
-      name: "S'abonner aux nouveaux contenus via RSS"
-    - icon: "fontawesome/brands/github-alt"
-      link: "https://github.com/geotribu/"
-      name: "L'organisation Github de Geotribu"
-    - icon: "fontawesome/brands/twitter"
-      link: "https://twitter.com/geotribu"
-      name: "Geotribu sur Twitter"
-    - icon: "fontawesome/brands/linkedin"
-      link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
-      name: "Les contenus de Geotribu sur LinkedIn"
-    - icon: "fontawesome/brands/facebook"
-      link: "https://fr-fr.facebook.com/geotribu/"
-      name: "Page Facebook de Geotribu"
-    - icon: "fontawesome/brands/mailchimp"
-      link: http://eepurl.com/hL0zVr
-      name: "Abonnez-vous à la newsletter"
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:<geotribu@gmail.com>
-      name: "Nous contacter"
-    - icon: "fontawesome/brands/slack"
-      link: "https://geotribu.slack.com"
-      name: "Rejoignez-nous sur Slack"
-    - icon: "fontawesome/solid/feather-pointed"
-      link: http://pad.geotribu.fr/
-      name: "Editeur en ligne"
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
-  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css"
 
 extra_javascript:
   - "theme/assets/javascripts/extra.js"
-  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js"
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:

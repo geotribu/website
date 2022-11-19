@@ -1,5 +1,5 @@
 ---
-ltitle: "Open Data Kit pour la collecte de données géographiques dans PostGIS (3/3)"
+title: "Open Data Kit pour la collecte de données géographiques dans PostGIS (3/3)"
 authors:
     - Mathieu BOSSAERT
 categories:

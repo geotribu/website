@@ -128,59 +128,200 @@ redirects:
     node/285.md: articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gsconfig.md
     node/286.md: articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md
     node/293.md: articles/2010/2010-09-30_allegez_votre_librairie_openlayers_avec_openlayerer.md
+    node/295.md: rdp/2010/rdp_2010-10-01.md
+    node/297.md: rdp/2010/rdp_2010-10-08.md
+    # node/298.md:
+    node/299.md: rdp/2010/rdp_2010-10-15.md
     node/301.md: articles/2010/2010-10-18_conference_qualite_des_donnees.md
+    node/302.md: rdp/2010/rdp_2010-10-22.md
+    node/303.md: rdp/2010/rdp_2010-10-29.md
+    node/305.md: rdp/2010/rdp_2010-11-05.md
+    node/306.md: rdp/2010/rdp_2010-11-12.md
     node/309.md: articles/2010/2010-11-10_sageo_2010_dans_une_semaine.md
+    node/310.md: rdp/2010/rdp_2010-11-19.md
     node/312.md: articles/2010/2010-11-18_sageo_2010_resume_jour1.md
     node/313.md: articles/2010/2010-11-19_sageo_2010_resume_jour2.md
     node/314.md: articles/2010/2010-11-20_sageo_2010_resume_jour3.md
+    node/316.md: rdp/2010/rdp_2010-11-26.md
     node/317.md: articles/2010/2010-11-24_hillshading_or_not.md
+    node/318.md: rdp/2010/rdp_2010-12-03.md
     node/319.md: articles/2010/2010-11-29_these_geomatique_opensource_cartographie_neogeographie.md
+    # node/320.md:
+    # node/321.md:
+    # node/322.md:
     node/324.md: articles/2011/2011-01-24_polymaps_alternative_openlayers.md
+    node/325.md: rdp/2010/rdp_2010-12-10.md
+    node/326.md: rdp/2010/rdp_2010-12-17.md
     node/327.md: articles/2010/2010-12-13_imagimap_baselayers_v2.md
+    node/329.md: rdp/2010/rdp_2010-12-24.md
+    node/330.md: rdp/2010/rdp_2010-12-31.md
     node/331.md: articles/2010/2010-12-20_ios42_carte_accelerometre.md
     node/333.md: articles/2011/2011-01-09_liberez_les_donnees.md
+    node/334.md: rdp/2011/rdp_2011-01-07.md
+    node/337.md: rdp/2011/rdp_2011-01-14.md
     node/338.md: articles/2011/2011-01-19_documenter_bases_de_donnees_exemple_openstreetmap.md
+    node/337.md: rdp/2011/rdp_2011-01-21.md
     node/340.md: articles/2011/2011-01-18_data_mining_risques_maritimes.md
+    node/341.md: rdp/2011/rdp_2011-01-28.md
     node/342.md: articles/2011/2011-02-09_participez_a_openstreetmap_en_puissance_machine.md
+    node/343.md: rdp/2011/rdp_2011-02-04.md
+    node/345.md: rdp/2011/rdp_2011-02-11.md
+    node/346.md: rdp/2011/rdp_2011-02-18.md
     node/348.md: rdp/2011/rdp_2011-02-25.md
+    node/349.md: rdp/2011/rdp_2011-03-04.md
+    node/351.md: rdp/2011/rdp_2011-03-11.md
     node/353.md: articles/2011/2011-03-10_potentialites_limites_openstreetmap_administrations_territoriales.md
+    node/355.md: rdp/2011/rdp_2011-03-18.md
     node/356.md: articles/2011/2011-03-23_decouverte_spatialite.md
+    node/357.md: rdp/2011/rdp_2011-03-25.md
+    node/358.md: rdp/2011/rdp_2011-04-01.md
+    node/359.md: rdp/2011/rdp_2011-04-08.md
     node/360.md: articles/2011/2011-04-05_decouverte_webgl_earth.md
+    node/362.md: rdp/2011/rdp_2011-04-15.md
+    # node/363.md:
     node/364.md: articles/2011/2011-04-13_integrer_carte_site.md
+    node/367.md: rdp/2011/rdp_2011-04-22.md
+    node/368.md: rdp/2011/rdp_2011-04-29.md
+    node/369.md: rdp/2011/rdp_2011-05-06.md
+    # node/371.md:
+    node/385.md: rdp/2011/rdp_2011-05-13.md
+    # node/388.md:
+    # node/389.md:
+    # node/392.md:
+    node/421.md: rdp/2011/rdp_2011-05-21.md
+    node/422.md: rdp/2011/rdp_2011-05-27.md
     node/423.md: articles/2011/2011-06-15_decouverte_leaflet.md
+    node/427.md: rdp/2011/rdp_2011-06-03.md
     node/428.md: articles/2011/2011-06-01_these_geovisualisation_surveillance_maritime.md
+    node/429.md: rdp/2011/rdp_2011-06-10.md
     node/430.md: articles/2011/2011-06-10_openlayers210_beginner_s_guide.md
+    node/431.md: rdp/2011/rdp_2011-06-17.md
+    node/432.md: rdp/2011/rdp_2011-06-24.md
+    node/433.md: rdp/2011/rdp_2011-07-01.md
+    node/434.md: rdp/2011/rdp_2011-07-08.md
+    node/436.md: rdp/2011/rdp_2011-07-15.md
+    node/438.md: rdp/2011/rdp_2011-07-22.md
     node/439.md: articles/2011/2011-07-27_nouveautes_geokettle.md
+    node/440.md: rdp/2011/rdp_2011-07-29.md
+    node/441.md: rdp/2011/rdp_2011-08-05.md
+    node/442.md: rdp/2011/rdp_2011-08-12.md
+    # node/443.md:
+    node/444.md: rdp/2011/rdp_2011-08-19.md
+    node/445.md: rdp/2011/rdp_2011-08-26.md
+    # node/446.md:
+    node/447.md: rdp/2011/rdp_2011-09-02.md
+    node/449.md: rdp/2011/rdp_2011-09-09.md
+    node/456.md: rdp/2011/rdp_2011-09-16.md
+    node/458.md: rdp/2011/rdp_2011-09-23.md
+    node/461.md: rdp/2011/rdp_2011-09-30.md
     node/462.md: articles/2011/2011-11-09_decouverte_gis_cloud.md
+    node/463.md: rdp/2011/rdp_2011-10-07.md
+    node/464.md: rdp/2011/rdp_2011-10-14.md
+    node/465.md: rdp/2011/rdp_2011-10-21.md
+    node/468.md: rdp/2011/rdp_2011-10-28.md
+    node/471.md: rdp/2011/rdp_2011-11-04.md
+    node/472.md: rdp/2011/rdp_2011-11-10.md
     node/474.md: articles/2011/2011-11-08_videos_foss4g.md
+    node/475.md: rdp/2011/rdp_2011-11-18.md
+    node/476.md: rdp/2011/rdp_2011-11-25.md
     node/477.md: articles/2011/2011-12-01_cartographier_monde_outils_libres.md
+    node/478.md: rdp/2011/rdp_2011-12-02.md
+    node/479.md: rdp/2011/rdp_2011-12-09.md
+    node/481.md: rdp/2011/rdp_2011-12-16.md
+    node/483.md: rdp/2011/rdp_2011-12-23.md
+    node/484.md: rdp/2011/rdp_2011-12-30.md
     node/485.md: articles/2012/2012-01-01_openstreetmap_une_annee_edition.md
     node/486.md: articles/2012/2012-05-09_decouverte_cartodb.md
+    node/487.md: rdp/2012/rdp_2012-01-07.md
     node/488.md: rdp/2012/rdp_2012-01-13.md
     node/489.md: articles/2012/2012-01-16_presentation_openstreetmap_senat.md
+    node/490.md: rdp/2012/rdp_2012-01-20.md
     node/491.md: articles/2012/2012-01-19_google_evil_or_not.md
+    node/492.md: rdp/2012/rdp_2012-01-27.md
+    node/493.md: rdp/2012/rdp_2012-02-03.md
     node/494.md: articles/2012/2012-02-03_serie_noire_pour_google.md
+    node/495.md: rdp/2012/rdp_2012-02-10.md
+    node/496.md: rdp/2012/rdp_2012-02-17.md
+    node/497.md: rdp/2012/rdp_2012-02-20.md
+    node/498.md: rdp/2012/rdp_2012-03-02.md
+    node/499.md: rdp/2012/rdp_2012-03-09.md
     node/500.md: articles/2012/2012-03-15_openstreetmap_reunion_corine_land_cover.md
+    node/501.md: rdp/2012/rdp_2012-03-16.md
+    node/502.md: rdp/2012/rdp_2012-03-23.md
+    node/503.md: rdp/2012/rdp_2012-03-30.md
     # node/504.md: articles/2012/2012-04-17_calcul_de_buffer_sous_mysql_1ere_partie_theorie.md
     node/505.md: articles/2012/2012-04-17_calcul_buffer_mysql_pratique.md
+    node/506.md: rdp/2012/rdp_2012-04-06.md
+    node/507.md: rdp/2012/rdp_2012-04-13.md
+    node/508.md: rdp/2012/rdp_2012-04-21.md
+    node/510.md: rdp/2012/rdp_2012-04-27.md
+    # node/512.md:
+    node/513.md: rdp/2012/rdp_2012-05-04.md
+    node/514.md: rdp/2012/rdp_2012-05-11.md
     node/515.md: articles/2012/2012-07-02_cataloguer_donnees_geographiques.md
+    node/516.md: rdp/2012/rdp_2012-05-18.md
+    node/517.md: rdp/2012/rdp_2012-05-25.md
+    node/519.md: rdp/2012/rdp_2012-06-02.md
     node/520.md: articles/2012/2012-06-21_moteur_itineraires_osrm.md
+    node/521.md: rdp/2012/rdp_2012-06-08.md
     node/522.md: articles/2012/2012-06-06_vacances_offertes_par_tomtom.md
+    node/523.md: rdp/2012/rdp_2012-06-15.md
+    node/524.md: rdp/2012/rdp_2012-06-22.md
+    node/527.md: rdp/2012/rdp_2012-06-29.md
+    node/529.md: rdp/2012/rdp_2012-07-06.md
     node/530.md: articles/2012/2012-07-05_open_data_paroles_actes.md
+    node/531.md: rdp/2012/rdp_2012-07-13.md
     node/532.md: articles/2012/2012-07-12_nouvelle_version_geoportail.md
+    node/533.md: rdp/2012/rdp_2012-07-20.md
     node/534.md: articles/2012/2012-07-19_premieres_rencontres_sciences_geomatiques_maroc.md
+    node/535.md: rdp/2012/rdp_2012-07-27.md
+    node/536.md: rdp/2012/rdp_2012-08-03.md
+    node/537.md: rdp/2012/rdp_2012-08-09.md
+    node/538.md: rdp/2012/rdp_2012-08-17.md
+    node/539.md: rdp/2012/rdp_2012-08-24.md
+    node/540.md: rdp/2012/rdp_2012-08-31.md
+    node/541.md: rdp/2012/rdp_2012-09-07.md
+    node/542.md: rdp/2012/rdp_2012-09-14.md
+    node/543.md: rdp/2012/rdp_2012-09-21.md
+    node/544.md: rdp/2012/rdp_2012-09-28.md
     node/545.md: articles/2012/2012-09-26_openlayers_cookbook.md
+    node/546.md: rdp/2012/rdp_2012-10-05.md
+    node/547.md: rdp/2012/rdp_2012-10-12.md
     node/548.md: articles/2012/2012-10-11_conference_yvan_bedard_universite_laval.md
+    node/549.md: rdp/2012/rdp_2012-10-19.md
+    # node/550.md:
     node/551.md: articles/2012/2012-10-23_soutenance_these_modelisation_ontologique_comportements_risque.md
+    node/552.md: rdp/2012/rdp_2012-11-02.md
+    node/553.md: rdp/2012/rdp_2012-11-09.md
+    node/556.md: rdp/2012/rdp_2012-11-16.md
+    # node/557.md:
+    # node/558.md:
+    # node/559.md:
+    # node/561.md:
+    node/562.md: rdp/2012/rdp_2012-12-21.md
     node/563.md: articles/2012/2012-12-29_equipe_geotribu.md
-    node/567.md: rdp/2013/rdp_2013-01-11.md
+    node/564.md: rdp/2013/rdp_2013-01-04.md
+    node/566.md: rdp/2013/rdp_2013-01-11.md
+    # node/567.md: rdp/2013/rdp_2013-01-18.md
+    node/568.md: rdp/2013/rdp_2013-01-25.md
+    node/569.md: rdp/2013/rdp_2013-02-01.md
+    node/570.md: rdp/2013/rdp_2013-02-08.md
+    node/571.md: rdp/2013/rdp_2013-02-15.md
     node/572.md: articles/2013/2013-02-11_appel_contribution_frog2013.md
+    node/573.md: rdp/2013/rdp_2013-02-22.md
     node/574.md: articles/2013/2013-02-20_contribuer_a_openstreetmap_deux_applications.md
     node/575.md: articles/2013/2013-12-01_stage_geodecisionnelle_suivi_humanitaire_ong.md
     node/576.md: articles/2013/2013-02-25_websocket.md
+    node/577.md: rdp/2013/rdp_2013-03-01.md
+    node/578.md: rdp/2013/rdp_2013-03-08.md
     node/579.md: articles/2013/2013-03-07_rencontres_dynamiques_regionales_en_information_geographique.md
+    node/581.md: rdp/2013/rdp_2013-03-15.md
+    node/583.md: rdp/2013/rdp_2013-03-22.md
+    node/584.md: rdp/2013/rdp_2013-03-29.md
     node/585.md: rdp/2013/rdp_2013-04-05.md
     node/586.md: rdp/2013/rdp_2013-04-12.md
+    node/587.md: rdp/2013/rdp_2013-04-19.md
+    node/588.md: rdp/2013/rdp_2013-04-26.md
     node/589.md: rdp/2013/rdp_2013-05-03.md
     node/591.md: rdp/2013/rdp_2013-04-26.md
     node/592.md: rdp/2013/rdp_2013-04-19.md
@@ -324,7 +465,54 @@ redirects:
     node/784.md: rdp/2015/rdp_2015-02-13.md
     node/788.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
     node/789.md: rdp/2015/rdp_2015-02-20.md
+    node/790.md: rdp/2015/rdp_2015-03-06.md
+    # node/791.md:
+    node/792.md: rdp/2015/rdp_2015-03-13.md
+    node/794.md: rdp/2015/rdp_2015-03-20.md
+    # node/795.md:
+    node/796.md: rdp/2015/rdp_2015-03-27.md
+    node/797.md: rdp/2015/rdp_2015-04-03.md
+    node/798.md: rdp/2015/rdp_2015-04-10.md
+    node/799.md: rdp/2015/rdp_2015-04-17.md
+    node/800.md: rdp/2015/rdp_2015-04-24.md
+    # node/801.md:
+    node/802.md: rdp/2015/rdp_2015-05-01.md
+    # node/803.md:
+    node/804.md: rdp/2015/rdp_2015-05-15.md
+    # node/805.md:
+    node/806.md: rdp/2015/rdp_2015-05-29.md
+    node/808.md: rdp/2015/rdp_2015-06-05.md
     node/811.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
+    node/812.md: rdp/2015/rdp_2015-06-12.md
+    node/813.md: rdp/2015/rdp_2015-06-19.md
+    node/814.md: rdp/2015/rdp_2015-07-03.md
+    # node/815.md:
+    node/816.md: rdp/2015/rdp_2015-07-17.md
+    node/817.md: rdp/2015/rdp_2015-09-01.md
+    node/819.md: rdp/2015/rdp_2015-09-25.md
+    # node/820.md:
+    node/821.md: rdp/2015/rdp_2015-10-02.md
+    node/822.md: rdp/2015/rdp_2015-10-16.md
+    node/823.md: rdp/2015/rdp_2015-11-13.md
+    # node/825.md:
+    node/826.md: rdp/2015/rdp_2015-12-11.md
+    node/827.md: rdp/2015/rdp_2015-12-18.md
+    node/828.md: rdp/2016/rdp_2016-01-15.md
+    # node/831.md:
+    node/833.md: rdp/2016/rdp_2016-02-12.md
+    node/834.md: rdp/2016/rdp_2016-02-19.md
+    node/835.md: rdp/2016/rdp_2016-03-04.md
+    # node/836.md:
+    node/839.md: rdp/2016/rdp_2016-03-11.md
+    node/840.md: rdp/2016/rdp_2016-04-22.md
+    # node/841.md:
+    # node/842.md:
+    # node/843.md:
+    node/844.md: rdp/2016/rdp_2016-06-24.md
+    # node/845.md:
+    # node/846.md:
+    node/847.md: rdp/2016/rdp_2016-07-01.md
+    # node/850.md:
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
     # rss.md: https://static.geotribu.fr/feed_rss_created.xml
 
@@ -479,6 +667,7 @@ redirects:
     articles/2012/art_2012-07-19.md: articles/2012/2012-07-19_premieres_rencontres_sciences_geomatiques_maroc.md
     articles/2012/art_2012-09-26.md: articles/2012/2012-09-26_openlayers_cookbook.md
     articles/2012/art_2012-10-11.md: articles/2012/2012-10-11_conference_yvan_bedard_universite_laval.md
+    articles/2012/2012-10-11_conference_yves_bedard_universite_laval.md: articles/2012/2012-10-11_conference_yvan_bedard_universite_laval.md
     articles/2012/art_2012-10-23.md: articles/2012/2012-10-23_soutenance_these_modelisation_ontologique_comportements_risque.md
     articles/2012/art_2012-12-29.md: articles/2012/2012-12-29_equipe_geotribu.md
     articles/2013/art_2013-02-11.md: articles/2013/2013-02-11_appel_contribution_frog2013.md
