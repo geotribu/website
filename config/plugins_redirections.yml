@@ -67,7 +67,7 @@ redirects:
     node/79.md: articles/2009/2009-01-13_generer-des-tuiles-avec-php.md
     node/80.md: articles/2009/2009-01-14_android-et-openstreetmap.md
     node/81.md: articles/2009/2009-01-14_openlayers-pouvoir-realiser-un-padding-dans-une-infobulle.md
-    # node/82.md:
+    node/82.md: articles/2009/2009-01-17_16-7-integrer-la-vue-3d-de-l-api-google-earth-dans-google-maps.md
     node/83.md: articles/2009/2009-01-17_17-ajouter-un-marqueur-deplacable-et-jouer-avec-la-gravite.md
     node/84.md: articles/2009/2009-01-21_liste-des-logiciels-opensource-disponible.md
     node/85.md: articles/2009/2009-05-15_un-annuaire-oriente-sig.md
