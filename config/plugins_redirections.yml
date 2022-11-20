@@ -122,7 +122,7 @@ redirects:
     # node/214.md:
     # node/215.md:
     node/217.md: articles/2010/2010-02-12_comment_detruire_une_communaute.md
-    # node/218.md: 
+    # node/218.md:
     node/222.md: articles/2010/2010-03-02_etl_spatiaux_opensource.md
     node/225.md: articles/2010/2010-04-15_profil_type_utilisateur_openstreetmap.md
     node/228.md: articles/2010/2010-03-11_linux_sans_contrainte_virtualbox.md
