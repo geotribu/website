@@ -8,21 +8,39 @@ redirects:
     dicogis.md: articles/2014/2014-09-25_dicogis.md
     install_webapp.md: articles/2020/2020-03-20_installer_site_comme_application.md
     interviews/itw_drones_crisis.md: articles/2014/2014-08-29_itw_drones_crisis.md
+    node/2.md: articles/2008/2008-08-22_creer-des-classes-en-javascript.md
+    node/5.md: articles/2008/2008-08-22_initiation-a-mapserver.md
+    node/6.md: articles/2008/2008-08-22_introduction-a-geoserver.md
+    node/15.md: articles/2008/2008-08-22_introduction-a-la-programmation-orientee-objet-en-javascript.md
+    node/30.md: articles/2008/2008-08-30_realiser-un-heritage-en-javascript.md
+    node/38.md: articles/2008/2008-09-07_10-utiliser-ajax-mysql-et-php-pour-afficher-des-marqueurs.md
+    node/39.md: articles/2008/2008-09-07_11-geocoder-une-adresse.md
+    node/40.md: articles/2008/2008-09-07_12-calculer-un-itineraire.md
     node/57.md: articles/2008/2008-11-03_premiers-pas-dans-la-cour-des-grands.md
     node/58.md: articles/2008/2008-11-05_workshop-openlayers.md
     node/60.md: articles/2008/2008-11-07_sortie-de-la-version-3-0-0-de-pywps.md
     node/64.md: articles/2008/2008-11-17_workshop-quantum-gis.md
+    node/65.md: articles/2008/2008-11-17_13-ajouter-la-couche-streetview.md
+    node/66.md: articles/2008/2008-11-17_14-se-promener-place-du-capitole.md
+    node/67.md: articles/2008/2008-11-17_15-ajouter-la-googlebar.md
+    node/69.md: articles/2008/2008-11-20_le-webmapping-de-demain-wfs-et-wps.md
     node/72.md: articles/2008/2008-12-07_les-donnees-sig-devraient-elles-etre-libres.md
     node/73.md: articles/2008/2008-12-06_comparatif-des-differentes-solutions-cartographiques-open-source.md
     node/75.md: articles/2008/2008-12-11_geoext-le-mariage-de-l-ihm-et-de-la-cartographie.md
     node/77.md: articles/2008/2008-12-16_appel-a-sponsoring-code-sprint-open-layers.md
     node/79.md: articles/2009/2009-01-13_generer-des-tuiles-avec-php.md
     node/80.md: articles/2009/2009-01-14_android-et-openstreetmap.md
+    node/81.md: articles/2009/2009-01-14_openlayers-pouvoir-realiser-un-padding-dans-une-infobulle.md
+    node/83.md: articles/2009/2009-01-17_17-ajouter-un-marqueur-deplacable-et-jouer-avec-la-gravite.md
     node/84.md: articles/2009/2009-01-21_liste-des-logiciels-opensource-disponible.md
     node/85.md: articles/2009/2009-05-15_un-annuaire-oriente-sig.md
+    node/86.md: articles/2009/2009-01-24_afficher-les-infos-d-une-couche-wfs-dans-un-popup.md
     node/87.md: articles/2009/2009-01-26_interview-de-david-jonglez-co-fondateur-de-camptocamp.md
     node/89.md: articles/2009/2009-02-01_les-plus-grands-mensonges-a-l-encontre-de-l-opensource.md
+    node/90.md: articles/2009/2009-02-07_afficher-le-nombre-d-elements-dans-un-cluster-strategy.md
+    node/92.md: articles/2009/2009-02-15_exemple-des-differentes-sources-de-donnees-utilisables-par-mapserver.md
     node/91.md: articles/2009/2009-02-09_sortie-de-qgis-1-0-kore.md
+    node/93.md: articles/2009/2009-03-01_ajouter-des-infobulles-tooltips-avec-openlayers-et-ext.md
     node/94.md: articles/2009/2009-03-03_geodjango-le-framework-cartographique-de-haut-niveau.md
     node/95.md: articles/2009/2009-03-05_cartogaphier-l-immateriel.md
     node/97.md: articles/2009/2009-03-18_explorer-le-format-georss.md
@@ -31,6 +49,7 @@ redirects:
     node/101.md: articles/2009/2009-03-31_enfin-une-emission-de-qualite-a-la-television.md
     node/102.md: articles/2009/2009-04-01_coup-de-flippe-et-reflexion-sur-l-api-google-maps.md
     node/103.md: articles/2009/2009-04-02_good-planet-le-site-qui-sent-la-chlorophyle.md
+    node/104.md: articles/2009/2009-04-06_creer-un-grid-en-relation-avec-des-donnees-vecteurs-grace-a-geoext.md
     node/107.md: articles/2009/2009-04-14_openlayers-en-application-et-essor-du-monde-de-l-opensource.md
     node/106.md: articles/2009/2009-04-14_geodjango-pas-a-pas.md
     node/108.md: articles/2009/2009-04-16_mscompanion-l-editeur-wysiwyg-de-mapfile.md
@@ -40,11 +59,14 @@ redirects:
     node/115.md: articles/2009/2009-05-05_quand-l-opensource-communautaire-s-invite-a-la-maison-blanche.md
     node/116.md: articles/2009/2009-05-19_mapnik-le-moteur-cartographique-pour-les-perfectionnistes-du-graphisme.md
     node/117.md: articles/2009/2009-05-24_a-la-decouverte-de-puzzle-gis.md
+    node/118.md: articles/2009/2009-05-24_creer-et-enrichir-une-barre-d-outils-avec-openlayers.md
     node/119.md: articles/2009/2009-05-25_le-partage-de-l-information-publique-vu-par-les-etats-unis.md
     node/120.md: articles/2009/2009-05-31_a-la-decouverte-d-openjump.md
     node/121.md: articles/2009/2009-06-02_php-js-ou-vos-fonctions-php-traduites-en-javascript.md
     node/122.md: articles/2009/2009-06-04_geoserver-bientot-en-version-2-0.md
     node/123.md: articles/2009/2009-06-05_annonces-en-pagaille-du-cote-de-chez-google.md
+    node/124.md: articles/2009/2009-06-06_18-introduction-a-l-api-v3.md
+    node/125.md: articles/2009/2009-06-06_19-clusterisation-cote-serveur-ajax-php-et-postgis.md
     node/126.md: articles/2009/2009-06-07_a-la-decouverte-de-udig.md
     node/128.md: articles/2009/2009-06-18_un-nouveau-site-pour-geoext.md
     node/129.md: articles/2009/2009-06-23_sortie-de-la-version-2-8-d-openlayers.md
@@ -83,6 +105,7 @@ redirects:
     node/175.md: articles/2009/2009-11-23_panel-de-mashups-google-maps.md
     node/179.md: articles/2009/2009-11-26_a-la-decouverte-d-orbisgis.md
     node/186.md: articles/2009/2009-12-11_google-gears-est-mort-longue-vie-au-html5.md
+    node/187.md: articles/2009/2009-12-21_geolocalisation-et-openlayers.md
     node/188.md: articles/2010/2010-02-15_mapchat_geocollaboration_opensource.md
     node/189.md: articles/2009/2009-12-29_project-52.md
     node/190.md: articles/2009/2009-12-31_une-machine-virtuelle-orientee-sig.md
@@ -93,8 +116,13 @@ redirects:
     node/196.md: articles/2010/2010-01-25_imagimap_road.md
     node/199.md: articles/2010/2010-02-04_opengeo_suite_tests_impressions.md
     node/201.md: articles/2010/2010-02-02_ski_iphone_cartographie.md
+    # node/204.md:
     node/205.md: articles/2010/2010-02-05_fluster2.md
+    # node/209.md:
+    # node/214.md:
+    # node/215.md:
     node/217.md: articles/2010/2010-02-12_comment_detruire_une_communaute.md
+    # node/218.md: 
     node/222.md: articles/2010/2010-03-02_etl_spatiaux_opensource.md
     node/225.md: articles/2010/2010-04-15_profil_type_utilisateur_openstreetmap.md
     node/228.md: articles/2010/2010-03-11_linux_sans_contrainte_virtualbox.md
@@ -116,6 +144,7 @@ redirects:
     node/257.md: articles/2010/2010-05-11_rencontres_sig_la_lettre.md
     node/258.md: articles/2010/2010-05-13_geoext_version07.md
     node/260.md: articles/2010/2010-05-28_xapi_osm.md
+    # node/264.md:
     node/266.md: articles/2010/2010-06-02_initiation_cartographie_collaborative.md
     node/267.md: articles/2010/2010-06-07_carte_papier_avec_des_donnees_openstreetmap.md
     node/270.md: articles/2010/2010-06-11_hypermap_future_balise_html.md
@@ -124,6 +153,7 @@ redirects:
     node/276.md: articles/2010/2010-07-21_ibiclou_opendata_webmapping_velo.md
     node/277.md: articles/2010/2010-07-06_osmtracker_android_openstreetmap.md
     node/282.md: articles/2010/2010-08-18_cartong_forum_geong.md
+    # node/283.md:
     node/284.md: articles/2010/2010-09-23_creer_ses_propres_plugin_qgis.md
     node/285.md: articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gsconfig.md
     node/286.md: articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md
@@ -350,6 +380,7 @@ redirects:
     node/624.md: rdp/2013/rdp_2013-06-14.md
     node/626.md: rdp/2013/rdp_2013-06-21.md
     node/627.md: rdp/2013/rdp_2013-06-28.md
+    # node/629.md:
     node/631.md: rdp/2013/rdp_2013-07-05.md
     node/632.md: rdp/2013/rdp_2013-07-12.md
     node/635.md: rdp/2013/rdp_2013-07-19.md
@@ -393,6 +424,7 @@ redirects:
     node/693.md: articles/2014/2014-01-02_une_tonne_d_ebooks.md
     node/694.md: rdp/2014/rdp_2014-01-10.md
     node/695.md: articles/2014/2014-01-06_plein_flux_sur_la_geomatique.md
+    # node/696.md:
     node/697.md: articles/2014/2014-03-24_non_mapserver_geoserver_tilecache_ne_sont_pas_toujours_necessaires.md
     node/698.md: rdp/2014/rdp_2014-01-24.md
     node/699.md: rdp/2014/rdp_2014-01-31.md
@@ -410,6 +442,7 @@ redirects:
     node/716.md: articles/2014/2014-04-29_de_l_acquisition_a_la_visualisation_d_images_de_drone.md
     node/717.md: rdp/2014/rdp_2014-04-11.md
     node/718.md: rdp/2014/rdp_2014-04-18.md
+    # node/719.md:
     node/720.md: rdp/2014/rdp_2014-04-25.md
     node/721.md: rdp/2014/rdp_2014-05-02.md
     node/722.md: rdp/2014/rdp_2014-05-09.md
