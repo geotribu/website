@@ -79,6 +79,24 @@ C'est le style appliqué pour les icônes des news des revues de presse : `{: .i
 
     La balise `{: .img-rdp-news-thumb }` permet d'appliquer automatiquement le style vignette à l'image : pas de bordure, taille limitée à 75px, alignement à gauche et texte autour.
 
+### Centrer
+
+C'est le style le plus appliqué pour les images d'illustration des contenus : `{: .img-center }`.
+
+=== "Markdown"
+
+    ```markdown
+    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg){: .img-center }
+
+    La balise `{: .img-center }` centre l'image par rapport au contenu.
+    ```
+
+=== "Rendu"
+
+    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg){: .img-center }
+
+    La balise `{: .img-center }` centre l'image par rapport au contenu.
+
 ### Aligner à droite
 
 Pour aligner une image à droite, utiliser : `{: .img-right }`.
