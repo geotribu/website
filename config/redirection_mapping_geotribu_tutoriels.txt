@@ -20,5 +20,4 @@
 "node/262.md": "/articles/2010/2010-05-29_creez_votre_propre_serveur_openstreetmap_sous_ubuntu_10_04_lucid_lynx.md"
 "node/320.md": "/articles/2010/2010-11-29_mod_geocache_un_cache_wms_directement_apache.md"
 "node/426.md": "/articles/2011/2011-06-15_a_decouverte_de_tilemill.md"
-"node/82.md": "/articles/2009/2009-01-17_16_7_integrer_vue_3d_de_l_api_google_earth_google_maps.md"
 "node/207.md": "/articles/2010/2010-02-05_une_carte_une_webview_avec_google_maps_api_v3.md"
