@@ -27,9 +27,6 @@ Traditionnellement, nous hébergeons les images sur notre propre serveur pour pl
 - ça évite les restrictions liées au "partage de ressources entre origines multiples", enfin le [CORS](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing) quoi
 - ça permet de garantir de toujours disposer des images, même si elles n'existent plus à l'adresse originale (site supprimé, refonte du site, etc.)
 
-!!! important "Fair-use"
-    L'accès au CDN de Geotribu est réservé à l'équipe. Même si nous laissons les liens vers les images en public, merci de ne pas pointer dessus abusivement depuis d'autres sites.
-
 ----
 
 ## Structure
