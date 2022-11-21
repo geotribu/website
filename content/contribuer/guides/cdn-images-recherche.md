@@ -46,7 +46,7 @@ Il est également possible d'effectuer une recherche dans l'arborescence en cliq
 
 ----
 
-## Faire une recherche via un script
+## Faire une recherche en requêtant l'index lunr
 
 ![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
 
