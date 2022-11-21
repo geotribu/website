@@ -30,7 +30,7 @@ plugins:
         - "*/templates/*"
         - "*.yml"
   - git-authors:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, False]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, True]
       exclude:
         - index.md
       show_contribution: true
@@ -40,7 +40,7 @@ plugins:
       branch: master
       docs_path: content/
   - git-revision-date-localized:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, False]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, True]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
