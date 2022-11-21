@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: 2022-11-11 14:20
+date: 2022-11-25 14:20
 description: "Contribution Mapillary et retour d'expérience"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/mapillary_logo.jpeg"
 license: default
@@ -19,7 +19,7 @@ tags:
 
 # Contribution Mapillary et retour d'expérience
 
-:calendar: Date de publication initiale : 11 Novembre 2022
+:calendar: Date de publication initiale : 25 Novembre 2022
 
 ## Prérequis
 
@@ -52,7 +52,7 @@ J'interviens dans une petite Communauté de Communes et comme chacun le sait nos
 - un support triple ventouse Ram Mount (ref. RAP-B-365-224-202AU) : environ 90€
 - un adpatateur GoPro à visser : environ 3€
 
-[![Configuration initiale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_initiale.jpeg "Configuration initiale"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_initiale.jpeg){: data-mediabox="gallery-lightbox" data-title="Configuration initiale" }
+![Configuration initiale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_initiale.jpeg "Configuration initiale"){: .img-center loading=lazy }
 
 ### Une erreur qui aurait pu me coûter une GoPro
 
@@ -60,13 +60,13 @@ J'avais acheté un adapteur GoPro en plastique a 3€ pour limiter les coûts ma
 
 En effet, le lendemain de ma première matinée de test, la caméra était posée sur le bureau quand sans action extérieure, la caméra s'est retrouvée sans prévenir sur le sol, gloups! L'adapteur en plastique avait complètement explosé.
 
-[![Configuration cassée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_break.jpeg "Configuration cassée"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_break.jpeg){: data-mediabox="gallery-lightbox" data-title="Configuration cassée" }
+![Configuration cassée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_break.jpeg "Configuration cassée"){: .img-center loading=lazy }
 
 Un défaut de fabrication, la pièce trop serrée,... je ne sais pas mais toujours est-il que ça m'a bien refroidi!
 
 Après avoir partagé ma mésaventure sur Twitter, [Stéphane Péneau](https://twitter.com/stfmani) de [Carto'Cité](https://cartocite.fr) me conseille d'acheter un adaptateur Ram Mount (ref. RAP-B-202U-GOP1), certes plus cher mais aussi d'une tout autre qualité et 100% compatible avec le support triple ventouse du même fabriquant.
 
-[![Configuration finale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_finale.jpeg "Configuration finale"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_finale.jpeg){: data-mediabox="gallery-lightbox" data-title="Configuration finale" }
+![Configuration finale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_finale.jpeg "Configuration finale"){: .img-center loading=lazy }
 
 ### Sécuriser le système
 
@@ -228,7 +228,7 @@ Pour la partie intégration du logo, je suis reparti d'une solution proposée pa
 python3 nadir-patcher.py $REPER'/tmp' $REPER'/logo.png' 17 $REPER'/out'
 ```
 
-[![Intégration du logo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/mapillary_logo.jpeg "Intégration du logo"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/mapillary_logo.jpeg){: data-mediabox="gallery-lightbox" data-title="Intégration du logo" }
+![Intégration du logo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/mapillary_logo.jpeg "Intégration du logo"){: .img-center loading=lazy }
 
 ----
 
