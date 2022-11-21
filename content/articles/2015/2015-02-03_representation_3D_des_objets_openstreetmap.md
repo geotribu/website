@@ -47,7 +47,7 @@ Le squelette du code C++ tient en quelques classes dont le contenu est relativem
 
 Je n'ai eu qu'à intégrer tout ça avec la lib js x3dom, secouer tout ça, et ça donne la démo suivante: <http://web.osm2X3D.net>.
 
-[![osm2X3D](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/osm2x3d.png "osm2X3D"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/osm2x3d.png "osm2X3D"){: data-mediabox="lightbox-gallery" data-title="osm2X3D" }
+![osm2X3D](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/osm2x3d.png "osm2X3D"){: .img-center loading=lazy }
 
 Bien sûr, il ne s'agit là que d'une première avancée. Pour un meilleur rendu 3D, et à moindres frais, il reste à prendre en charge:
 

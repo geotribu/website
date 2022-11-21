@@ -280,7 +280,7 @@ Pour la pleine page c'est par [ici](http://88.191.142.86/labs/websocket/maptruc.
 
 Si vous êtes seul sur ce tuto mais que vous avez un smartphone sous la main - testez la démo avec ! Flashouillez le code et hop cliquez sur la carte.
 
-[![Flashouillez le code](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/qrcode_test-websocket.png "Flashouillez le code"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/qrcode_test-websocket.png "Flashouillez le code"){: data-mediabox="lightbox-gallery" data-title="Flashouillez le code" }
+![Flashouillez le code](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/qrcode_test-websocket.png "Flashouillez le code"){: .img-center loading=lazy }
 
 Bon il se peut que le serveur de websocket ne fonctionne pas tout le temps - et ouais c'est une démo ! Et il se peut que vous ayez à modifier le port 8080 par autre chose. Souvent il est pris par Tomcat ce port. Et il faut avoir installé `php5-curl`, ça marchera mieux.
 

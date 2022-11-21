@@ -38,7 +38,7 @@ L'inconvénient c'est que, comme son nom l'indique, c'est pensé pour accueillir
 
 Alors maintenant que nous avons du contenu et tout ce qu'il faut pour le rédiger correctement (voir [le guide de contribution](/contribuer/articles/workflow/)), il était temps de prendre le pot de peinture, les pinceaux et de mettre un coup de polish ! Nous voici donc avec une nouvelle page d'accueil qui était clairement le parent pauvre du site. Un petit avant/après pour se souvenir :
 
-[![Capture écran Geotribu juin 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2021-06.png "Ancienne page d'accueil de Geotribu"){: loading=lazy width=350 }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2021-06.png){: data-mediabox="lightbox-gallery" data-title="Ancienne page d'accueil de Geotribu"} [![Capture écran Geotribu mi-juillet 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2021-07-16.png "Nouvelle page d'accueil de Geotribu"){: loading=lazy width=350 }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2021-07-16.png){: data-mediabox="lightbox-gallery" data-title="Nouvelle page d'accueil de Geotribu"}
+![Capture écran Geotribu juin 2021](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2021-06.png "Ancienne page d'accueil de Geotribu"){: loading=lazy width=350 }
 {: align=middle }
 
 N'hésitez pas à nous dire ce que vous en pensez :slight_smile:.

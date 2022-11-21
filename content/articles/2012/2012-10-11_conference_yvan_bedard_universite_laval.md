@@ -32,7 +32,7 @@ Le langage PictograF est issu de l'expérience combinée des créateurs, de cell
 
 Les premiers projets faisant appel à l’intégration des concepts OLAP avec les données géospatiales remontent au milieu des années 1990. Principalement sujets de recherche, ces projets furent rapidement suivis par les premières implantations industrielles. Alors que le nombre de projets Spatial OLAP (SOLAP) augmentait dans les premières années de la décennie précédente, c’est au milieu de cette dernière que les premières solutions SOLAP commerciales sont apparues.
 
-[![Montage de cartes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/montage_Cartes.png "Montage de cartes"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/montage_Cartes.png "Montage de cartes"){: data-mediabox="lightbox-gallery" data-title="Montage de cartes" }
+![Montage de cartes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/montage_Cartes.png "Montage de cartes"){: .img-center loading=lazy }
 
 *Source : [Intelli3](http://www.intelli3.com)*
 

@@ -53,7 +53,7 @@ Les propriétés initiales de l'objet ToolTips n'ont pas été modifiées, réf�
 
 ## Exemple
 
-[![Infobulles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/tooltips_ext.png "Infobulles"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/tooltips_ext.png "Infobulles"){: data-mediabox="gallery-lightbox" data-title="Infobulles"}
+![Infobulles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/tooltips_ext.png "Infobulles"){: .img-center loading=lazy }
 
 ----
 

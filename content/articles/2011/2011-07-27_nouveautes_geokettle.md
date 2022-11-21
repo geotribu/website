@@ -21,7 +21,7 @@ tags:
 
 Les outils d'Extraction, de Transformation et de Chargement, plus connu sous l'acronyme anglais ETL (Extract, Transform and Load), sont utilisés pour gérer les flux informationnels générés par les organismes. Bien que conçus au départ pour l'univers décisionnel, il est désormais possible de les intégrer à votre architecture de données géographiques. Cela se fait grâce à l'utilisation d'ETL capables de gérer la dimension spatiale.
 
-[![GeoKettle - ETL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/ORG_Figure_ETLen.png "GeoKettle - ETL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/articles/2011/ORG_Figure_ETLen.png){: data-mediabox="lightbox-gallery" data-title="GeoKettle - ETL"}
+![GeoKettle - ETL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/ORG_Figure_ETLen.png "GeoKettle - ETL"){: .img-center loading=lazy }
 
 > Source : [Spatialytics](http://www.spatialytics.org/projects/geokettle/)
 
@@ -29,35 +29,35 @@ Historiquement, le premier produit capable de gérer la dimension spatiale étai
 
 Attardons-nous sur cette dernière. En effet, une nouvelle version de Geokettle est disponible depuis la semaine dernière. Attendue depuis longtemps, celle-ci intègre un grand nombre de [nouvelles fonctionnalités](http://wiki.spatialytics.org/doku.php?id=projects:geokettle:documentation:what_is_new_in_version_2.0) grâce notamment à l'intégration de nombreuses librairies Open Source à savoir, [OGR](http://www.gdal.org/ogr), [Sextante](http://sextante.forge.osor.eu/), [JTS](http://www.vividsolutions.com/jts/main.htm), [GeoTools](http://geotools.org/) et [deegree](http://www.deegree.org/). Découvrons ensemble ce que cette nouvelle version apporte.
 
-[![GeoKettle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/geokettle.png "GeoKettle"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/articles/2011/geokettle.png){: data-mediabox="lightbox-gallery" data-title="GeoKettle"}
+![GeoKettle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/geokettle.png "GeoKettle"){: .img-center loading=lazy }
 
 ## Intégration de nouveaux formats de données
 
 Grâce à l'intégration de la librairie OGR, il est désormais possible d'accéder à une soixantaine de formats de formats de données en lecture et/ou en écriture. A cela s'ajoutent également de nouveaux composants permettant le traitement des données GML et KML ainsi que l'intégration des normes OGC Sensor Observation Service (SOS) et Catalog Web Service (CSW)
 
-[![GeoKettle - OGR](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/ogr_geokettle.png "GeoKettle - OGR"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/articles/2011/ogr_geokettle.png){: data-mediabox="lightbox-gallery" data-title="GeoKettle - OGR"}
+![GeoKettle - OGR](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/ogr_geokettle.png "GeoKettle - OGR"){: .img-center loading=lazy }
 
 ## Analyse spatiale
 
 Grâce à l'intégration des librairies JTS et sextante, Geokettle s'est enrichi d'un grand nombre de fonctions spatiales. Ces fonctions sont dépendantes du type de géométrie comme cela est illustré par les deux images ci-dessous.
 
-[![GeoKettle - sextante](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/sextante_1.png "GeoKettle - sextante"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/articles/2011/sextante_1.png){: data-mediabox="lightbox-gallery" data-title="GeoKettle - sextante"}
+![GeoKettle - sextante](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/sextante_1.png "GeoKettle - sextante"){: .img-center loading=lazy }
 
-[![GeoKettle - sextante](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/sextante_2.png "GeoKettle - sextante"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/articles/2011/sextante_2.png){: data-mediabox="lightbox-gallery" data-title="GeoKettle - sextante"}
+![GeoKettle - sextante](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/sextante_2.png "GeoKettle - sextante"){: .img-center loading=lazy }
 
 La réalisation d'opérations géométriques sur les entités est également possible :
 
-[![GeoKettle - analyse spatiale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/spatial_analyse.png "GeoKettle - analyse spatiale"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/articles/2011/spatial_analyse.png){: data-mediabox="lightbox-gallery" data-title="GeoKettle - analyse spatiale"}
+![GeoKettle - analyse spatiale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/spatial_analyse.png "GeoKettle - analyse spatiale"){: .img-center loading=lazy }
 
 Ainsi que des calculs géométriques :
 
-[![GeoKettle - calcul](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/calcul.png "GeoKettle - calcul"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/articles/2011/calcul.png){: data-mediabox="lightbox-gallery" data-title="GeoKettle - calcul"}
+![GeoKettle - calcul](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/calcul.png "GeoKettle - calcul"){: .img-center loading=lazy }
 
 ## Enrichissement de l'interface
 
 Enfin, concluons cette liste non exhaustive par l'ajout d'un module cartographique permettant de pré-visualiser les résultats des opérations. Cela représente à mon sens, l'une des fonctionnalités majeures de cette nouvelle version.
 
-[![GeoKettle - Carto](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/carto.png "GeoKettle - Carto"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/articles/2011/carto.png){: data-mediabox="lightbox-gallery" data-title="GeoKettle - Carto"}
+![GeoKettle - Carto](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/carto.png "GeoKettle - Carto"){: .img-center loading=lazy }
 
 ## Remarques & Conclusion
 

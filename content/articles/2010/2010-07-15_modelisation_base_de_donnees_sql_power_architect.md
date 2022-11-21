@@ -55,7 +55,7 @@ Edité par la compagnie québécoise SQL Power, Architect fait partie de leur ga
 
 Passons maintenant au design proprement dit. Si vous avez bien suivi ce billet, vous vous rappelez que nous avions préalablement créé un schéma de la base Access. Je n'ai plus alors qu'à créer une connexion vers ce schéma et à glisser/déposer les tables qui m'intéressent pour créer l'organisation que je souhaite. Enfin, reste l'étape de l'import vers le SGBD de mon choix. Une fois ma connexion créée, il me suffit de la sélectionner et mon modèle est alors automatiquement généré vers la base cible. Magique non ?
 
-[![SQL Power Architect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/power_architect.png "SQL Power Architect"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/power_architect.png "SQL Power Architect"){: data-mediabox="gallery-lightbox" data-title="SQL Power Architect" }
+![SQL Power Architect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/power_architect.png "SQL Power Architect"){: .img-center loading=lazy }
 
 Comme vous l'avez surement constaté, nous avons été emballés par Architect. Pour toutes les personnes travaillant de près ou de loin dans le milieu des bases de données, ce logiciel fait partie de ceux qu'il est obligatoire de posséder. C'est un vrai plaisir de pouvoir créer graphiquement son schéma sans se soucier des particularités de tel ou tel SGBD.
 

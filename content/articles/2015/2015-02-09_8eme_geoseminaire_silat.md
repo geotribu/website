@@ -38,7 +38,7 @@ Les grandes lignes du [programme](http://geoseminaire2015.teledetection.fr/index
 - Table ronde La géomatique, outil d’intelligence territoriale ?  
 - Conclusion et clôture du séminaire
 
-[![Logo 8ème Géoséminaire](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/geoseminaire/logo_geoseminaire2014_transparent.png "Logo 8ème Géoséminaire"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/geoseminaire/logo_geoseminaire2014_transparent.png){: data-mediabox="lightbox-gallery" data-title="Logo 8ème Géoséminaire" }
+![Logo 8ème Géoséminaire](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/geoseminaire/logo_geoseminaire2014_transparent.png "Logo 8ème Géoséminaire"){: .img-center loading=lazy }
 
 ## Lieu
 

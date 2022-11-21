@@ -49,7 +49,7 @@ Certains services, tels [Markdown Here](https://markdown-here.com/features.html)
 
 Bref, au revoir [BBCode](https://fr.wikipedia.org/wiki/BBCode), DokuWiki, [WikiTexte](https://fr.wikipedia.org/wiki/Wikitexte), etc. Bonjour [Markdown] :
 
-[![markdown exemple](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png "Exemple basique de la syntaxe markdown"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png){: data-mediabox="lightbox-gallery" data-title="Exemple basiques de la syntaxe markdown rendue dans StackEdit."}
+![markdown exemple](https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png "Exemple basique de la syntaxe markdown"){: .img-center loading=lazy }
 
 ### Une syntaxe, des rendus
 
@@ -88,7 +88,7 @@ Au passage, on en profite pour essayer deux autres bibliothèques pour ce genre 
 
 En regardant [les sources de l'article](view-source:http://cnig.gouv.fr/?p=23807), on sait que le contenu intéressant est dans la `div` de class `post-content` :
 
-[![Source HTML CNIG](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png "Les sources de l'article du CNIG "){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png){: data-mediabox="scraping" data-title="Sources d'un article du site du CNIG."}
+![Source HTML CNIG](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png "Les sources de l'article du CNIG "){: .img-center loading=lazy }
 
 ### Prérequis
 

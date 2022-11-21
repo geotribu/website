@@ -17,7 +17,7 @@ tags:
 
 Avec plus d'une dizaine de contributeurs, GéoTribu est une grande famille ! Une famille qui ne rate pas une occasion de faire la fête et de se retrouver autour d'un verre. Bon, il faut bien dire aussi que les occasions sont rares ! Mais qu'importe, nous profitons du retour d'un de nos membres expatriés nous retrouver. Et pourquoi pas en profiter pour organiser un GéoApéro improvisé avec nos lecteurs ?
 
-[![GéoApéro](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/geoapero.png "GéoApéro"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/geoapero.png "GéoApéro"){: data-mediabox="lightbox-gallery" data-title="GéoApéro }
+![GéoApéro](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/geoapero.png "GéoApéro"){: .img-center loading=lazy }
 
 ----
 

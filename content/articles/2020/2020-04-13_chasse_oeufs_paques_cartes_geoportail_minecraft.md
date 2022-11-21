@@ -84,4 +84,4 @@ Chasse ouverte jusqu'au 30 avril et 100% garantie sans crise de foie !
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jemv.md"
+--8<-- "content/team/jvig.md"

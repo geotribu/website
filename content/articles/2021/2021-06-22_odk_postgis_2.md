@@ -76,14 +76,14 @@ Aprés la dernière observation de la localité courante, il est proposé de sai
 
 Voici un schéma illustrant la logique du formulaire :
 
-[![Logique du formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/logique_formulaire.jpeg "Logique du formulaire"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/logique_formulaire.jpeg){: data-mediabox="lightbox-gallery" data-title="Logique du formulaire"}
+![Logique du formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/logique_formulaire.jpeg "Logique du formulaire"){: .img-center loading=lazy }
 
 ## Collecte de données
 
 C'est parti pour la collecte : on lance ODK Collect qui nous propose plusieurs options. On choisit donc de remplir notre formulaire :
 
-[![écran d'accueil de Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_accueil_ODK_Collect.png "Ecran d'accueil d'ODK Collect"){: loading=lazy width=250 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_accueil_ODK_Collect.png){: data-mediabox="lightbox-gallery" data-title="Ecran d'accueil d'ODK Collect"}
-[![Choix du formulaire à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png "Choix du formulaire à renseigner"){: loading=lazy width=250 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png){: data-mediabox="lightbox-gallery" data-title="Choix du formulaire à renseigner"}
+![écran d'accueil de Collect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_accueil_ODK_Collect.png "Ecran d'accueil d'ODK Collect"){: loading=lazy width=250 }
+![Choix du formulaire à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_des_formulaires.png "Choix du formulaire à renseigner"){: loading=lazy width=250 }
 {: align=middle }
 
 ### Choix du formulaire à renseigner --> SICEN
@@ -95,9 +95,9 @@ A la première utilisation du formulaire, les fonctionnalités seront toutes act
 A l'utilisation suivante, chacune des options sera proposée dans l'état d'activation qui était le sien lors de la précédente utilisation du formulaire. Il sera là encore possible de valider ou modifier chacun de ces choix.  
 Les fonctionnalités à cette étape seront masquées pendant l'utilisation du formulaire.
 
-[![Métadonnées relatives à l'utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: data-mediabox="lightbox-gallery" data-title="Métadonnées relatives à l'utilisateur"}
-[![Préférences de l'utilisateur - Choix des possibilités cartographiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: data-mediabox="lightbox-gallery" data-title="Préférences de l'utilisateur - Choix des possibilités cartographiques"}
-[![Préférences de l'utilisateur - Types et thématiques des données à saisir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: loading=lazy width=175 }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: data-mediabox="lightbox-gallery" data-title="Préférences de l'utilisateur - Types et thématiques des données à saisir"}
+![Métadonnées relatives à l'utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/metadonnees_utilisateur.png){: loading=lazy width=175 }
+![Préférences de l'utilisateur - Choix des possibilités cartographiques](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_geo.png){: loading=lazy width=175 }
+![Préférences de l'utilisateur - Types et thématiques des données à saisir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_utilisateur_thematique.png){: loading=lazy width=175 }
 {: align=middle }
 
 !!! info
@@ -149,8 +149,8 @@ Nous verrons plus tard avec le référentiel taxonomique que le stockage externe
 L'utilisation combinée de l'apparence _quick_ permet de passer automatiquement à la question suivante quand une option est sélectionnée.
 La feuille de calcul **choices** nous renseigne sur la structure de ces fichiers csv. Les colonnes _nom_etude_id_ et _libelle_id_ contiennent les valeurs à stocker, les colonnes _nom_etude_ et _libelle_ contiennent les "noms" à afficher dans les listes.
 
-[![choix de l'étude](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png "choix de l'étude"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png){: data-mediabox="lightbox-gallery" data-title="choix de l'étude"}
-[![métadonnées utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png){: data-mediabox="lightbox-gallery" data-title="métadonnées utilisateur"}
+![choix de l'étude](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_etudes.png "choix de l'étude"){: loading=lazy width=175px }
+![métadonnées utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/liste_de_choix_protocole.png "métadonnées utilisateur"){: loading=lazy width=175px }
 {: align=middle }
 
 #### Extrait de la feuille **survey**
@@ -178,13 +178,13 @@ Une fois ces paramètres de "session" renseignés, nous pouvons commencer la sai
 
 Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans [la première partie de cet article](/articles/2021/2021-06-08_odk_postgis_1/).
 
-[![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png){: data-mediabox="lightbox-gallery" data-title="Choix du type de géoréférencement de l'emplacement courant"}
+![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: loading=lazy width=175px }
 {: align=middle }
 
 Le GPS peut nous aider à dessiner automatiquement points, lignes et polygones, que nous pouvons aussi dessiner à la main sur l'écran. L'automatisation peut être paramétrée selon la distance maximale ou le temps de parcours entre deux points. Une précision minimale du GPS peut aussi être configurée dans le formulaire pour interdire des localisations trop peu précises.
 
-[![localisation assistée par le GPS du téléphone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png "localisation assistée par le GPS du téléphone"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png){: data-mediabox="lightbox-gallery" data-title="localisation assistée par le GPS du téléphone"}
-[![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: data-mediabox="lightbox-gallery" data-title="coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement"}
+![localisation assistée par le GPS du téléphone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/cartographie_assistee_par_gps_affichage_precision.png "localisation assistée par le GPS du téléphone"){: loading=lazy width=175px }
+![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: loading=lazy width=175px }
 {: align=middle }
 
 #### Extrait de la feuille **survey**
@@ -237,8 +237,8 @@ La liste des choix proposés pour la méthode de localisation des observations e
 
 Une fois l'emplacement créé, nous allons pouvoir y créer autant d'observations que nous le souhaitons, de chacun des types autorisés dans les paramétrages du formulaire. Ici une observation de plante.
 
-[![choix du type d'observation à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_type_d_observation.png "choix du type d'observation à renseigner"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_type_d_observation.png){: data-mediabox="lightbox-gallery" data-title="choix du type d'observation à renseigner"}
-[![recherche d'une espèce végétale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_autocompletion.png "recherche d'une espèce végétale"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_autocompletion.png){: data-mediabox="lightbox-gallery" data-title="recherche d'une espèce végétale"}
+![choix du type d'observation à renseigner](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_type_d_observation.png "choix du type d'observation à renseigner"){: loading=lazy width=175px }
+![recherche d'une espèce végétale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_autocompletion.png "recherche d'une espèce végétale"){: loading=lazy width=175px }
 {: align=middle }
 
 ### Propositions des taxons de référence et des synonymes qui correspondent aux lettres tapées
@@ -247,7 +247,7 @@ Les collègues ont fait remonter des besoins d'amélioration de cette fonctionna
 
 Ils ont souhaité que cette liste propose d'abord les noms de référence, classés du rang taxonomique le plus élevé (famille, genre) au plus bas (espèce, sous-espèce...).
 
-[![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png){: data-mediabox="lightbox-gallery" data-title="propositions de taxons correspondant à la recherche"}
+![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: loading=lazy width=175px }
 {: align=middle }
 
 #### Extrait de la feuille de calcul **survey**
@@ -285,14 +285,14 @@ Si oui, les écrans suivants (ou leurs homologues pour la Faune sont affichés)
 
 Ici pour les espèces végétales il s'agit d'un effectif par classes d’abondance
 
-[![l'espèce a-t-elle été observée ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/le_taxon_a_t_il_ete_observe.png "l'espèce a-t-elle été observée ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/le_taxon_a_t_il_ete_observe.png){: data-mediabox="lightbox-gallery" data-title="l'espèce a-t-elle été observée ?"}
-[![abondance de l'espèce](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/renseignement_abondance_espece.png "abondance de l'espèce"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/renseignement_abondance_espece.png){: data-mediabox="lightbox-gallery" data-title="abondance de l'espèce"}
+![l'espèce a-t-elle été observée ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/le_taxon_a_t_il_ete_observe.png "l'espèce a-t-elle été observée ?"){: loading=lazy width=175px }
+![abondance de l'espèce](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/renseignement_abondance_espece.png "abondance de l'espèce"){: loading=lazy width=175px }
 {: align=middle }
 
 ### Informations sur la "qualité" de la donnée
 
-[![éléments de qualité de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png "éléments de qualité de la donnée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png){: data-mediabox="lightbox-gallery" data-title="éléments de qualité de la donnée"}
-[![modalité de determination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de determination"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png){: data-mediabox="lightbox-gallery" data-title="modalité de determination"}
+![éléments de qualité de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qualite_donnee_determination_sensibilite_fiabilite.png "éléments de qualité de la donnée"){: loading=lazy width=175px }
+![modalité de determination](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/modalite_de_determination.png "modalité de determination"){: loading=lazy width=175px }
 {: align=middle }
 
 ### Renseignement de détails optionnels, prise de photo :camera:, annotation
@@ -303,9 +303,9 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 
 [Ces photos seront mobilisables par la suite dans QGIS ou dans nos tableaux de bord.](https://si.cen-occitanie.org/?p=191)
 
-[![prendre un photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png "prendre un photo"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png){: data-mediabox="lightbox-gallery" data-title="prendre un photo"}
-[![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png){: data-mediabox="lightbox-gallery" data-title="Annotation de la photo"}
-[![Visualisation de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualisation de l'image annotée"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png){: data-mediabox="lightbox-gallery" data-title="visualisation de l'image annotée"}
+![prendre un photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png "prendre un photo"){: loading=lazy width=175px }
+![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }
+![Visualisation de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualisation de l'image annotée"){: loading=lazy width=175px }
 {: align=middle }
 
 #### Extrait de la feuille de calcul **survey**
@@ -328,14 +328,14 @@ Souhaitons nous ajouter une observation sur l'emplacement courant ?
     - Si nous acceptons nous redémarrons une boucle de localité (point, ligne ou polygone)
     - Si nous refusons nous pouvons finaliser le formulaire aprés avoir renseigné d'éventuels accompagnateurs
 
-[![Ajouter une observation à l'emplacement courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacement courant ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png){: data-mediabox="lightbox-gallery" data-title="Ajouter une observation à l'emplacement courant ?"}
-[![Ajouter un nouvel emplacement au relevé ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png "Ajouter un nouvel emplacement au relevé ?"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un nouvel emplacement au relevé ?"}
-[![Ajouter un ou plusieurs accompagnateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png "Ajouter un ou plusieurs accompagnateurs"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png){: data-mediabox="lightbox-gallery" data-title="Ajouter un ou plusieurs accompagnateurs"}
+![Ajouter une observation à l'emplacement courant ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_observation.png "Ajouter une observation à l'emplacement courant ?"){: loading=lazy width=175px }
+![Ajouter un nouvel emplacement au relevé ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/iteration_boucle_emplacement.png "Ajouter un nouvel emplacement au relevé ?"){: loading=lazy width=175px }
+![Ajouter un ou plusieurs accompagnateurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ajout_accompagnateur.png "Ajouter un ou plusieurs accompagnateurs"){: loading=lazy width=175px }
 {: align=middle }
 
 ### Fin du formulaire, parcours et révision des données collectées
 
-[![Fin du formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin du formulaire"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin du formulaire"}
+![Fin du formulaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin du formulaire"){: loading=lazy width=175px }
 {: align=middle }
 
 L’icône représentant une flèche montrant un point permet de naviguer dans les observations déjà saisies pour les vérifier ou les modifier.
@@ -346,18 +346,18 @@ En cliquant sur l'emplacement désiré, on accède au détail le concernant.
 
 Enfin un clic sur le groupe répétitif "Observations" nous donne accès à la liste des observations rattachées à l'emplacement et au détail de chacune d'elles :
 
-[![Navigation dans les données collectées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_navigation_donnees_collectees.png "Navigation dans les données collectées"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_navigation_donnees_collectees.png){: data-mediabox="lightbox-gallery" data-title="Navigation dans les données collectées"}
-[![Liste des lieux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_emplacements_sessions.png "Liste des lieux"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_emplacements_sessions.png){: data-mediabox="lightbox-gallery" data-title="Liste des lieux"}
-[![Résumé d'un emplacement antérieur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_emplacement_anterieur.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_emplacement_anterieur.png){: data-mediabox="lightbox-gallery" data-title="Résumé d'un emplacement antérieur"}
-[![Observations rattachées à l'emplacement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_observations_emplacement_1.png "Observations rattachées à l'emplacement"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_observations_emplacement_1.png){: data-mediabox="lightbox-gallery" data-title="Observations rattachées à l'emplacement"}
-[![Résumé d'une observation antérieure](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png "métadonnées utilisateur"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png){: data-mediabox="lightbox-gallery" data-title="Résumé d'une observation antérieure"}
+![Navigation dans les données collectées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/accueil_navigation_donnees_collectees.png "Navigation dans les données collectées"){: loading=lazy width=175px }
+![Liste des lieux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_emplacements_sessions.png "Liste des lieux"){: loading=lazy width=175px }
+![Résumé d'un emplacement antérieur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_emplacement_anterieur.png "métadonnées utilisateur"){: loading=lazy width=175px }
+![Observations rattachées à l'emplacement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/navigation_liste_observations_emplacement_1.png "Observations rattachées à l'emplacement"){: loading=lazy width=175px }
+![Résumé d'une observation antérieure](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/resume_observation_anterieure.png "métadonnées utilisateur"){: loading=lazy width=175px }
 {: align=middle }
 
 Une fois ceci fait on peut aller au bout du formulaire et le "finaliser".
 
 ### Finalisation du formulaire
 
-[![Fin de la session](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin de la session"){: loading=lazy width=175px }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png){: data-mediabox="lightbox-gallery" data-title="Fin de la session"}
+![Fin de la session](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/fin_du_formulaire.png "Fin de la session"){: loading=lazy width=175px }
 {: align=middle }
 
 Les données sont alors automatiquement envoyées ("soumises") à Central (c'est le comportement par défaut désormais).

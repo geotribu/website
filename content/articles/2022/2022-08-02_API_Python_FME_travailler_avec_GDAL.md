@@ -26,13 +26,13 @@ tags:
 
 FME Workbench est un fantastique ETL, très populaire dans la communauté de la géomatique. Il permet d'assembler par de simples "glisser/déposer" dans une interface graphique des "transformateurs" opérant sur toutes sortes de flux de données (fichiers, bases de données, services web, etc.). Avec ces transformateurs, on réalise les opérations classiques d'un SIG, d'une base de données : sélection de données attributaires, jointures spatiales, modification du style d'une couche vectorielle, etc.
 
-[![Workspace FME](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_screenshot.png "Workspace FME"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_screenshot.png){: data-mediabox="lightbox-gallery" data-title="Workspace FME"}
+![Workspace FME](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_screenshot.png "Workspace FME"){: .img-center loading=lazy }
 
 L'intérêt de FME est qu'on peut concevoir un workflow structuré, documenté, automatisable et ré-utilisable de transformateurs en mode "plug & play", en ajoutant ou en retirant les transformateurs puis en les interconnectant par des flux de données. Mais, bien que la bibliothèque de transformateurs soit très fournie, il est parfois impossible de trouver son bonheur ! On doit alors faire appel à ses propres librairies ou utiliser des librairies externes open-source.
 
 Par exemple, il n'y a pas de moyen simple de générer des rasters de proximité dans FME, alors que c'est un jeu d'enfant avec la ligne de commande `gdal_proximity.py` de la librairie GDAL. Dans un raster de proximité, à partir de pixels cibles, par exemple des routes dans l'exemple ci-dessous, on produit des pixels dont les valeurs représentent les distances minimales à ces pixels cibles. Dans le cas des routes, le raster de proximité peut ainsi servir de carte d'exposition aux nuisances engendrées par ces routes (bruit, pollution etc.)
 
-[![Raster de proximité](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/gdal_proximity.png "Raster de proximité"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/gdal_proximity.png){: data-mediabox="lightbox-gallery" data-title="Raster de proximité"}
+![Raster de proximité](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/gdal_proximity.png "Raster de proximité"){: .img-center loading=lazy }
 
 La question est donc : comment obtenir le même résultat avec FME Workbench ?
 

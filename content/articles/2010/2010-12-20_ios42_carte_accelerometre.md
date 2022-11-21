@@ -25,7 +25,7 @@ Nous publiions au début de l'année un petit [article](http://www.geotribu.net/
 On pivote à droite, ça bouge la carte vers l'ouest ; on pivote vers le haut, on déplace la carte vers le nord, etc.  
 Les axes pour les accéléromètres sont ceux-ci : l'axe Y pour un déplacement est-ouest, l'axe X pour un déplacement nord-sud.
 
-[![iPhone Axis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/iphone_axis.png "iPhone Axis"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/iphone_axis.png){: data-mediabox="lightbox-gallery" data-title="iPhone Axis"}
+![iPhone Axis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/iphone_axis.png "iPhone Axis"){: .img-center loading=lazy }
 
 Pour cela, nous avons utilisé l'[API Google Maps v3](http://code.google.com/intl/fr-FR/apis/maps/documentation/javascript/) et le framework [Sencha Touch](http://www.sencha.com/products/touch/). Le framework n'est pas nécessaire pour utiliser l'accéléromètre de Safari iOS 4.2.  
 Pardon pour ceux d'entre-vous qui ne possèdent pas d'iPhone et encore moins l'iOS 4.2, je n'ai pas réussi à faire une vidéo avec la gestion de l'accéléromètre dans le Simulateur de XCode.
@@ -34,7 +34,7 @@ Au fait, n'ayant pas d'Android sous la main, il [paraîtrait](http://www.frandro
 
 Flashouillez le QR code pour aller sur la page :-) ou sinon l'adresse c'est <http://goo.gl/hWenP>  
 
-[![iPhone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/iphone_gmaps_accelerometer.png "iPhone"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/iphone_gmaps_accelerometer.png){: data-mediabox="lightbox-gallery" data-title="iPhone"}
+![iPhone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/iphone_gmaps_accelerometer.png "iPhone"){: .img-center loading=lazy }
 
 ----
 

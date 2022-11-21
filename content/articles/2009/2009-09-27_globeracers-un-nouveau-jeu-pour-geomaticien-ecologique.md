@@ -23,7 +23,7 @@ Quand le ludique s'allie au jeu cela forme [globeracers](http://www.globeracers.
 * En haut la vue 2D pour la navigation
 * En bas la vue 3D (nécessite le plugin Google Earth) pour trouver les objets cachés
 
-[![GlobeRacers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/globeracers.png "GlobeRacers"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/globeracers.png){: data-mediabox="lightbox-gallery" data-title="GlobeRacers" }
+![GlobeRacers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/globeracers.png "GlobeRacers"){: .img-center loading=lazy }
 
 Si au début vous devez parcourir le monde à la seule force de vos jambes, très vite votre équipement s'améliorera en fonction des bornes que vous découvrirez.
 
