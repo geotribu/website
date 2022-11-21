@@ -44,7 +44,7 @@ Globalement, voici comment les images sont organisées :
     - icônes créées par Geotribu pour symboliser le sujet d'une news d'une revue de presse
 - logos-icones : entreprises, associations, logiciels, librairies, technologies, etc. Idéales pour l'icône d'une news de revue de presse.
 - projets-geotribu
-- slideshow : images du diaporama sur l'ancien site de Geotribu. Elles étaient pour la plupart pré-découpées en rectangle mais ça peut toujours servir à ds fins d'illustration. :rotating_light: éviter d'ajouter de nouvelles images ici :rotating_light:.
+- slideshow : images du diaporama sur l'ancien site de Geotribu. Elles étaient pour la plupart pré-découpées en rectangle mais ça peut toujours servir à des fins d'illustration. :rotating_light: éviter d'ajouter de nouvelles images ici :rotating_light:.
 - tuto : contenus liés aux tutoriels publiés. Un sous-dossier par tutoriel.
 
 ----
