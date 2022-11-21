@@ -6,6 +6,7 @@ categories:
     - tutoriel
 date: 2020-04-27 10:20
 description: "Guide de contribution à Geotribu : comment intégrer une vidéo dans un contenu en Markdown."
+icon: material/video-plus
 image: "https://cdn.geotribu.fr/img/internal/contribution/videos/embed_youtube_copy_annotated.png"
 tags:
     - contribuer

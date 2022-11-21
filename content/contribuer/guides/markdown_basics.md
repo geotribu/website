@@ -6,6 +6,7 @@ categories:
     - tutoriel
 date: 2020-09-14 14:20
 description: "Maîtriser les bases de la rédaction en Markdown pour contribuer à Geotribu et exemples de mise en forme."
+icon : material/language-markdown
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_quick_exemple_rendu.png"
 tags:
     - contribuer
