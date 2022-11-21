@@ -38,6 +38,7 @@ plugins:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS, True]
       repository: geotribu/website
       branch: master
+      docs_path: content/
   - git-revision-date-localized:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, False]
       enable_creation_date: true
