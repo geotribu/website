@@ -1,6 +1,6 @@
 ---
 title: "Rechercher des images dans le CDN"
-subtitle: Nullam urna elit, malesuada eget finibus ut, ac tortor
+subtitle: Trouver l'image ou le logo souhaité pour éviter d'ajouter un doublon
 authors:
     - Julien MOURA
 categories:
@@ -9,19 +9,18 @@ categories:
 date: 2022-11-26 14:20
 description:
 icon: material/image-search
-image:
+image: https://cdn.geotribu.fr/img/internal/contribution/embed_image/geotribu_cdn_tinyfilemanager_search.png
 robots: index, follow
 tags:
     - cdn
-    - coulisses
     - images
 ---
 
 # Rechercher des images dans le CDN de Geotribu
 
-## Via l'interface web
+## Parcourir le CDN via l'interface web
 
-L'accès en lecture à notre entrepôt d'images (un pseudo-CDN minimaliste) accumulées depuis toutes ces années est ouvert :gift_heart: :
+L'accès en lecture à [notre entrepôt d'images](/contribuer/guides/cdn-images-hebergement/) accumulées depuis toutes ces années est ouvert :gift_heart: et c'est même un passage recommandé pour tout contributeur/rice :
 
 - adresse : <https://cdn.geotribu.fr>
 - identifiant : `invité`
@@ -29,15 +28,32 @@ L'accès en lecture à notre entrepôt d'images (un pseudo-CDN minimaliste) accu
 
 En plus de permettre un petit voyage dans le temps, autant que toutes ces ressources servent en plus de notre site :smiley:. Merci de ne pas en abuser en respectant le _fair-use_. Pensez également à créditer les auteur/es.
 
+### Chercher une image
+
+#### Filtrer le dossier courant
+
+La barre de recherche en haut permet de filtrer sur le nom du fichier parmi ceux du répertoire courant. A noter qu'il faut attendre que l'ensemble des fichiers du répertoire soient listés pour que ce la fonctionne.
+
+![Filtrer le dossier courant dans TinyFileManager](https://cdn.geotribu.fr/img/internal/contribution/embed_image/geotribu_cdn_tinyfilemanager_filter.png){: .img-center loading=lazy }
+
+#### Recherche avancée
+
+Il est également possible d'effectuer une recherche dans l'arborescence en cliquant sur le menu descendant à droite de la barre de filtre et de sélectionner "Recherche avancée" :
+
+![Recherche avancée dans TinyFileManager](https://cdn.geotribu.fr/img/internal/contribution/embed_image/geotribu_cdn_tinyfilemanager_search.png){: .img-center loading=lazy }
+
 ----
 
-## Via un script
+## Faire une recherche via un script
 
 ![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+
+Si l'interface graphique vous semble trop longue ou la recherche assez fine ou que vous n'avez pas les identifiants sous la main, il est possible d'interroger l'index des images stockées généré avec lunr.py toutes les heures et qui est accessible librement.
 
 Pré-requis :
 
 - Python >= 3.9
+- une connexion autorisée vers <https://cdn.geotribu.fr>
 
 ### Créer un environnement virtuel
 
