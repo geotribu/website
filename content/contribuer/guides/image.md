@@ -1,5 +1,6 @@
 ---
 title: "Intégrer une image"
+subtitle: "Gérer l'alignement, le chargement, etc."
 authors:
     - Julien Moura
 categories:
@@ -47,16 +48,15 @@ En `markdown`, intégrer une image se fait via la syntaxe suivante :
 
     ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia)")
 
-!!! tip
-
+!!! tip "Infobulle"
     On note que la légende est ajoutée en infobulle qui apparaît au survol prolongé de la souris sur l'image.
 
 ## Style, position et dimension
 
-Par défaut, les images sont :
+Par défaut, les images sont détourées d'une fine bordure gris foncé mais il est possible d'ajuster ce comportement :
 
-- centrées
-- détourées d'une fine bordure gris foncé
+- soit en utilisant les balises pré-configurées
+- soit de personnaliser les attributs et classes CSS individuellement pour chaque image
 
 Le site utilise l'extension [`Attribute Lists`](https://python-markdown.github.io/extensions/attr_list/) permettant d'affecter dynamiquement des attributs HTML en utilisant la syntaxe Markdown.
 
@@ -153,13 +153,15 @@ Au-delà des styles prédéfinis, il est évidemment possible de personnaliser �
 === "Markdown"
 
     ```markdown
-    ![Bannière Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg "Bannière de Geotribu"){: width=100px loading=lazy align=middle } Par exemple, appliquer une largeur maximum, appliquer un centrage du texte et activer le chargement asynchrone sur une image. Ou centrer tout un paragraphe.
+    ![Bannière Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg "Bannière de Geotribu"){: width=100px loading=lazy align=middle }.
+    Par exemple, appliquer une largeur maximum, appliquer un centrage du texte et activer le chargement asynchrone sur une image. Ou centrer tout un paragraphe.
     {: text-align="center" }
     ```
 
 === "Rendu"
 
-    ![Bannière Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg "Bannière de Geotribu"){: width=100px loading=lazy align=middle } Par exemple, appliquer une largeur maximum, appliquer un centrage du texte et activer le chargement asynchrone sur une image. Ou centrer tout un paragraphe.
+    ![Bannière Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg "Bannière de Geotribu"){: width=100px loading=lazy align=middle }.
+    Par exemple, appliquer une largeur maximum, appliquer un centrage du texte et activer le chargement asynchrone sur une image. Ou centrer tout un paragraphe.
     {: text-align="center" }
 
 ----

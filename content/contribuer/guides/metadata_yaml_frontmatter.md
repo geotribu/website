@@ -1,5 +1,6 @@
 ---
 title: "Rédiger en Markdown : comprendre l'en-tête"
+subtitle: "YAML front-matter"
 categories:
     - article
     - contribution
