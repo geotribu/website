@@ -14,9 +14,7 @@ tags:
     - data
     - OGR
     - Mapillary
-    - PostGIS
-    - PostgreSQL
-    - tuiles vectorielles
+    - SQL
 ---
 
 # Contribution Mapillary et retour d'expérience
@@ -24,6 +22,9 @@ tags:
 :calendar: Date de publication initiale : 11 Novembre 2022
 
 ## Prérequis
+
+- l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)
+- l'outil de conversion [ogr2ogr](https://gdal.org/programs/ogr2ogr.html)
 
 ## Intro
 
@@ -42,7 +43,7 @@ Cet article s'inscrit dans la continuité de mon article que j'avais intitulé [
 
 ![logo GoPro](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GoPro.jpg "logo GoPro"){: .img-rdp-news-thumb }
 
-J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes en ces temps d'abstinence! L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en places ailleurs. Je suis donc parti sur :
+J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes! L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en places ailleurs. Je suis donc parti sur :
 
 - une GoPro Max 360° : environ 430 €
 - un support triple ventouse Ram Mount (ref. RAP-B-365-224-202AU) : environ 90€
@@ -79,7 +80,7 @@ Passées ces péripéties matérielles, je me suis penché sur le traitement des
 
 ### Processus global
 
-On va donc réaliser ce processus en couplant du bash, de l'OGR, du SQL et du python.
+Le processus que je vous présente mélange du bash, de l'OGR, du SQL et du python.
 
 ```mermaid
 flowchart TD;
@@ -110,11 +111,11 @@ ENCODAGE='UTF-8'
 
 ### Nettoyer les photos "inutiles"
 
-Après mes premiers tests, lorsque je chargeais mes photos dans l'application [Mapillary Desktop Uploader](https://www.mapillary.com/desktop-uploader), je me rendais compte que j'avais une redondance de photos "identiques" lorsque je marquais un point d'arrêt, notamment aux Stop. Cette redondance est peu pertinente pour l'utilisateur et d'un point de vue environnemental, elle vient inutilement charger les serveurs de Mapillary.
+Après mes premiers tests, lorsque je chargeais mes photos dans l'application [Mapillary Desktop Uploader](https://www.mapillary.com/desktop-uploader), je me rendais compte que j'avais une redondance de photos "identiques" lorsque je marquais un point d'arrêt, notamment aux Stop. Cette redondance est peu pertinente pour l'utilisateur et d'un point de vue environnemental, elle vient inutilement charger les serveurs de Mapillary. Je vous explique ci-dessous quelle solution a été mise en place réaliser ce "nettoyage".
 
 #### Extraire la localisation des images
 
-Pour la première étape j'ai donc utilisé `exiftool` pour lire chacune des images pour en extraire leur localisation ainsi que la date et l'heure de la prise de vue. En sortie, on obtient un fichier csv listant chacune des images ainsi que les paramètres demandés.
+Pour la première étape, j'ai utilisé `exiftool` pour lire chacune des images afin d'en extraire leur localisation ainsi que la date et l'heure de la prise de vue. En sortie, j'obtiens un fichier csv listant chacune des images ainsi que les paramètres demandés.
 
 ```bash
 exiftool -filename -gpstimestamp -gpsdatestamp -gpslatitude -gpslongitude -n -csv -r $REPER'/tmp' > './list/'$DATE_YMD'_img.csv'
@@ -137,11 +138,11 @@ ogr2ogr \
   ${csvfile%.*}.csv
 ```
 
-### Identification des images inutiles
+#### Identification des images
 
 Vous connaissez mon côté OGR centré! Au départ, j'ai commencé par digérer la localisation des images dans OGR pour supprimer les points des photos dont la distance avec le suivant était inférieure à 2 mètres. C'était un bon début mais perfectible.
 
-Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.com/tetranos), plutôt SQL centré, on est arrivé à une requête récursive sur PostgreSQL permettant de supprimer les photos qui se succèdent si l'écartement est inférieur à X mètres (dans le cas présent 3 mètres).
+Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.com/tetranos), plutôt SQL centré, on est arrivé à une requête récursive sur PostgreSQL permettant de supprimer les photos qui se succèdent si l'écartement entre les photos qui se suivent est inférieur à X mètres (dans le cas présent 3 mètres).
 
 ```bash
 ogr2ogr \
@@ -193,6 +194,8 @@ ogr2ogr \
   ${csvfile%.*}".sqlite"
 ```
 
+#### Suppression des images
+
 Une fois la liste des images à supprimer identifier, il ne nous reste plus qu'à les supprimer.
 
 ```bash
@@ -204,13 +207,15 @@ do
 done
 ```
 
+#### Autre piste à explorer 
+
 En parallèle des échanges avec M. Galien, [Vincent de Château-Thierry](https://twitter.com/_vdct) nous proposait une solution alternative ne s'appuyant pas sur le recursif et qu'il serait interressant de creuser.
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="fr"><p lang="fr" dir="ltr">Une proposition qui oublie le récursif : - composer des lignes avec les points ordonnées via ST_MakeLine(geometrie ORDER BY timestamp) - les simplifier avec ST_RemoveRepeatedPoints en jouant sur la tolérance. En blanc les points supprimés, les rouges restent. A affiner bien sûr <a href="https://t.co/EN8xML4XEt">pic.twitter.com/EN8xML4XEt</a></p>&mdash; user:vincent_95 (@_vdct) <a href="https://twitter.com/_vdct/status/1555122774380879873?ref_src=twsrc%5Etfw">4 août 2022</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-conversation="none" data-lang="fr"><p lang="fr" dir="ltr">Une proposition qui oublie le récursif : - composer des lignes avec les points ordonnées via ST_MakeLine(geometrie ORDER BY timestamp) - les simplifier avec ST_RemoveRepeatedPoints en jouant sur la tolérance. En blanc les points supprimés, les rouges restent. A affiner bien sûr <a href="https://t.co/EN8xML4XEt">pic.twitter.com/EN8xML4XEt</a></p>&mdash; user:vincent_95 (@_vdct) <a href="https://twitter.com/_vdct/status/1555122774380879873?ref_src=twsrc%5Etfw">4 août 2022</a></blockquote>
 
 ### Intégration du logo
 
-Pour la partie intégration du logo, je suis reparti d'une solution proposée par C. Mahé et C. Munoz du SIG de l'Agglomération Val Parisis et partagée au sein du groupe de l'[AITF SIG et topographie](https://www.aitf.fr/groupe-travail/sig-topographie). Cette solution repose sur le projet et le script pyhton `Nadir Patcher` de [David G](https://github.com/himynamesdave) de [Trek View](https://www.trekview.org).
+Pour la partie intégration du logo, je suis reparti d'une solution proposée par Cécile Mahé et Christophe Munoz du SIG de l'[Agglomération Val Parisis](https://portailsig.valparisis.fr) et partagée au sein du groupe de l'[AITF SIG et topographie](https://www.aitf.fr/groupe-travail/sig-topographie). Cette solution repose sur le projet et le script python `Nadir Patcher` de [David G](https://github.com/himynamesdave) de [Trek View](https://www.trekview.org).
 
 [Accéder au projet Nadir Patcher :fontawesome-regular-file-code:](https://github.com/trek-view/nadir-patcher){: .md-button }
 {: align=middle }
@@ -232,10 +237,10 @@ Pour la partie de publication des photos, je ne passe pas par `Mapillary Tools`.
 
 ## Conclusion
 
-Cet article vous illustre mon retour d'expérience matériel concernant la prise de vues immersives et vous détaille l'enchainement des étapes que je réalise entre la prise de vue et la publication sur Mapillary avec pour objectif d'automatiser au maximum de traitements. A noter, que j'ai récemment retravaillé sur une nouvelle version de mon script qui intègre deux nouvelles améliorations :
+Cet article vous illustre mon retour d'expérience matériel concernant la prise de vues immersives et vous détaille l'enchainement des étapes que je réalise entre la prise de vue et la publication sur Mapillary avec pour objectif d'automatiser au maximum de traitements tout en gardant une forme d'indépendance si nous devions changer de solution à l'avenir (ex. [le Géocommun Panoramax  ](https://forum.geocommuns.fr/c/panoramax/6)). A noter, que j'ai récemment retravaillé sur une nouvelle version de mon script qui intègre deux nouvelles améliorations :
 
 - supprimer les images lorsque je suis passé récemment sur une voie,
-- créer des dossiers separés pour chacune des séquences d'images me permettant ainsi de choisir les séquences à publier pour améliorer le maillage sans redondance.
+- créer des dossiers separés pour chacune des séquences d'images me permettant ainsi de choisir les séquences à publier pour améliorer le maillage sans redondance d'images.
 
 Pour ce qui est de la réalisation des prises de vue, cette étape a été confiée à notre équipe de gardes champêtres/ASVP qui sont en permanences sur le terrain et que j'oriente pour capter certaines "zones blanches".
 
