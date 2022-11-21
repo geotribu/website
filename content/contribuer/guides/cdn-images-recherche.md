@@ -1,6 +1,6 @@
 ---
 title: "Rechercher des images"
-subtitle: Trouver l'image ou le logo souhaité pour éviter d'ajouter un doublon
+subtitle: "Trouver la bonne image ou le bon logo"
 authors:
     - Julien MOURA
 categories:
