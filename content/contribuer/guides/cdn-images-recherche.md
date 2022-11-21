@@ -109,7 +109,7 @@ On cherche donc à télécharger le fichier `https://cdn.geotribu.fr/img/search-
 
 Pour télécharger le fichier de l'index, étant donné qu'on n'a pas de cas particulier (VPN, authentification...) on utilise la bibliothèque standard de Python :
 
-```python
+```python title="Téléchargement du fichier JSON distant avec _urllib_"
 #! python3  # noqa: E265
 
 # import
@@ -268,7 +268,7 @@ Il y a donc matière à faire une jointure entre les deux dictionnaires sur le c
 
 On itère donc sur les résultats et on étend chaque résultat avec les métadonnées :
 
-```python
+```python title="Croisement résultat de recherche et métadonnées"
 # on stocke la recherche et le dictionnaire des métadonnées des images dans des variables
 search_results = idx.search("+path:logo +name:qgis")
 images_dict = local_index_data.get("images")
