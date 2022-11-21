@@ -25,6 +25,9 @@ tags:
 
 - l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)
 - l'outil de conversion [ogr2ogr](https://gdal.org/programs/ogr2ogr.html)
+- Python > 3.6
+- [Imagemagick](https://imagemagick.org/index.php)
+- [ffmpeg / ffprobe](https://ffmpeg.org)
 
 ## Intro
 
@@ -111,7 +114,7 @@ ENCODAGE='UTF-8'
 
 ### Nettoyer les photos "inutiles"
 
-Après mes premiers tests, lorsque je chargeais mes photos dans l'application [Mapillary Desktop Uploader](https://www.mapillary.com/desktop-uploader), je me rendais compte que j'avais une redondance de photos "identiques" lorsque je marquais un point d'arrêt, notamment aux Stop. Cette redondance est peu pertinente pour l'utilisateur et d'un point de vue environnemental, elle vient inutilement charger les serveurs de Mapillary. Je vous explique ci-dessous quelle solution a été mise en place réaliser ce "nettoyage".
+Après mes premiers tests, lorsque je chargeais mes photos dans l'application [Mapillary Desktop Uploader](https://www.mapillary.com/desktop-uploader), je me rendais compte que j'avais une redondance de photos "identiques" lorsque je marquais un point d'arrêt, notamment aux Stop. Cette redondance est peu pertinente pour l'utilisateur et d'un point de vue environnemental, elle vient inutilement charger les serveurs de Mapillary. Je vous explique ci-dessous quelle solution a été mise en place pour réaliser ce "nettoyage".
 
 #### Extraire la localisation des images
 
@@ -196,7 +199,7 @@ ogr2ogr \
 
 #### Suppression des images
 
-Une fois la liste des images à supprimer identifier, il ne nous reste plus qu'à les supprimer.
+Une fois la liste des images à supprimer identifiée, il ne nous reste plus qu'à les supprimer.
 
 ```bash
 # SUPPRESSION DES IMAGES INUTILES
@@ -209,7 +212,7 @@ done
 
 #### Autre piste à explorer
 
-En parallèle des échanges avec M. Galien, [Vincent de Château-Thierry](https://twitter.com/_vdct) nous proposait une solution alternative ne s'appuyant pas sur le recursif et qu'il serait interressant de creuser.
+En parallèle des échanges avec M. Galien, [Vincent de Château-Thierry](https://twitter.com/_vdct) nous proposait une solution alternative ne s'appuyant pas sur le recursif et qu'il serait intéressant de creuser :point_down:.
 
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none" data-lang="fr"><p lang="fr" dir="ltr">Une proposition qui oublie le récursif : - composer des lignes avec les points ordonnées via ST_MakeLine(geometrie ORDER BY timestamp) - les simplifier avec ST_RemoveRepeatedPoints en jouant sur la tolérance. En blanc les points supprimés, les rouges restent. A affiner bien sûr <a href="https://t.co/EN8xML4XEt">pic.twitter.com/EN8xML4XEt</a></p>&mdash; user:vincent_95 (@_vdct) <a href="https://twitter.com/_vdct/status/1555122774380879873?ref_src=twsrc%5Etfw">4 août 2022</a></blockquote>
 
@@ -231,16 +234,16 @@ python3 nadir-patcher.py $REPER'/tmp' $REPER'/logo.png' 17 $REPER'/out'
 
 ## Publication des photos
 
-Pour la partie de publication des photos, je ne passe pas par `Mapillary Tools`. Je préfère passer par l'application bureautique car cela me permet de contrôler mon cheminement et éventuellement de supprimer certaines images manuellement avant publication.
+Pour la partie de publication des photos, je ne passe pas par `Mapillary Tools`. Je préfère utiliser l'[application bureautique](https://www.mapillary.com/desktop-uploader) car cela me permet de contrôler mon cheminement et éventuellement de supprimer certaines images manuellement avant publication.
 
 ----
 
 ## Conclusion
 
-Cet article vous illustre mon retour d'expérience matériel concernant la prise de vues immersives et vous détaille l'enchainement des étapes que je réalise entre la prise de vue et la publication sur Mapillary avec pour objectif d'automatiser au maximum de traitements tout en gardant une forme d'indépendance si nous devions changer de solution à l'avenir (ex. [le Géocommun Panoramax](https://forum.geocommuns.fr/c/panoramax/6)). A noter, que j'ai récemment retravaillé sur une nouvelle version de mon script qui intègre deux nouvelles améliorations :
+Cet article vous illustre mon retour d'expérience matériel concernant la prise de vues immersives et vous détaille l'enchainement des étapes que je réalise entre la prise de vue et la publication sur Mapillary avec pour objectif d'automatiser au maximum de traitements tout en gardant une forme d'indépendance si nous devions changer de solution à l'avenir (ex. [le Géocommun Panoramax](https://forum.geocommuns.fr/c/panoramax/6)). A noter, que j'ai récemment retravaillé sur une nouvelle version de mon script qui intègre deux améliorations :
 
 - supprimer les images lorsque je suis passé récemment sur une voie,
-- créer des dossiers separés pour chacune des séquences d'images me permettant ainsi de choisir les séquences à publier pour améliorer le maillage sans redondance d'images.
+- créer des dossiers separés pour chacune des séquences d'images me permettant ainsi de choisir les séquences à publier pour améliorer le maillage sans introduire de redondance d'images.
 
 Pour ce qui est de la réalisation des prises de vue, cette étape a été confiée à notre équipe de gardes champêtres/ASVP qui sont en permanences sur le terrain et que j'oriente pour capter certaines "zones blanches".
 
