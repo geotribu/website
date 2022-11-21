@@ -1,5 +1,5 @@
 ---
-title: "Rechercher des images dans le CDN"
+title: "Rechercher des images"
 subtitle: Trouver l'image ou le logo souhaité pour éviter d'ajouter un doublon
 authors:
     - Julien MOURA
@@ -7,13 +7,15 @@ categories:
     - article
     - meta
 date: 2022-11-26 14:20
-description:
+description: "Guide pour rechercher dans l'entrepôt d'images de Geotribu (https://cdn.geotribu.fr/), via l'interface graphique de TinyFileManager ou bien via un script pour interroger l'index lunr."
 icon: material/image-search
 image: https://cdn.geotribu.fr/img/internal/contribution/embed_image/geotribu_cdn_tinyfilemanager_search.png
 robots: index, follow
 tags:
     - cdn
     - images
+    - script
+    - Python
 ---
 
 # Rechercher des images dans le CDN de Geotribu
@@ -97,9 +99,9 @@ python -m pip install -U "lunr>=0.6,<1"
 Avec notre script, on va :
 
 1. télécharger localement le fichier d'index depuis le CDN
-2. le charger et regarder un peu à quoi il ressemble
-3. faire une recherche
-4. enrichir les résultats
+1. le charger et regarder un peu à quoi il ressemble
+1. faire une recherche
+1. enrichir les résultats
 
 #### Télécharger l'index du CDN
 
@@ -244,7 +246,7 @@ pprint(idx.search("+openstreetmap +logo"))
 - rechercher les images qui contiennent `logo` dans le chemin **et** `qgis` dans le nom du fichier
 
 ```python
-pprint(idx.search("+path:logos +name:qgis"))
+pprint(idx.search("+path:logo +name:qgis"))
 # [{'match_data': <MatchData "logo,qgi">,
 #   'ref': 'logos-icones/logiciels_librairies/qgis.png',
 #   'score': 52.797999999999995},
@@ -255,7 +257,46 @@ pprint(idx.search("+path:logos +name:qgis"))
 
 #### Enrichir la recherche
 
-> TO DO
+C'est déjà pas mal mais on aimerait croiser avec les métadonnées qui sont dans le dictionnaire `images` d'à-côté.
+En regardant de plus près la structure de nos résultats de recherche, on voit qu'il s'agit là d'un dictionnaire contenant 3 clés/valeurs :
+
+- `match_data` donne les termes de correspondance entre la requête et les résultats
+- `ref` contient le chemin du fichier relatif à l'URL de base du CDN
+- `score` donne le score de correspondance
+
+Il y a donc matière à faire une jointure entre les deux dictionnaires sur le chemin du fichier : `ref` d'un côté, clé de l'autre.
+
+On itère donc sur les résultats et on étend chaque résultat avec les métadonnées :
+
+```python
+# on stocke la recherche et le dictionnaire des métadonnées des images dans des variables
+search_results = idx.search("+path:logo +name:qgis")
+images_dict = local_index_data.get("images")
+
+for search_result in search_results:
+    mapped_img = images_dict.get(search_result.get("ref"))
+    search_result.update(
+        {
+            "width": mapped_img[0],
+            "height": mapped_img[1],
+            "full_url": f"https://cdn.geotribu.fr/img/{search_result.get('ref')}",
+        }
+    )
+pprint(search_result)
+
+# [{'full_url': 'https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png',
+#   'height': 339,
+#   'match_data': <MatchData "logo,qgi">,
+#   'ref': 'logos-icones/logiciels_librairies/qgis.png',
+#   'score': 52.797999999999995,
+#   'width': 360},
+#  {'full_url': 'https://cdn.geotribu.fr/img/logos-icones/entreprises_association/qgis-ch.png',
+#   'height': 74,
+#   'match_data': <MatchData "logo,qgi">,
+#   'ref': 'logos-icones/entreprises_association/qgis-ch.png',
+#   'score': 39.056000000000004,
+#   'width': 74}]
+```
 
 ### Aller plus loin
 
