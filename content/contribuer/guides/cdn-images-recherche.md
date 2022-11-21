@@ -109,7 +109,7 @@ On cherche donc à télécharger le fichier `https://cdn.geotribu.fr/img/search-
 
 Pour télécharger le fichier de l'index, étant donné qu'on n'a pas de cas particulier (VPN, authentification...) on utilise la bibliothèque standard de Python :
 
-```python title="Téléchargement du fichier JSON distant avec _urllib_"
+```python title="Téléchargement du fichier JSON distant avec urllib"
 #! python3  # noqa: E265
 
 # import
