@@ -207,7 +207,7 @@ do
 done
 ```
 
-#### Autre piste à explorer 
+#### Autre piste à explorer
 
 En parallèle des échanges avec M. Galien, [Vincent de Château-Thierry](https://twitter.com/_vdct) nous proposait une solution alternative ne s'appuyant pas sur le recursif et qu'il serait interressant de creuser.
 
@@ -237,7 +237,7 @@ Pour la partie de publication des photos, je ne passe pas par `Mapillary Tools`.
 
 ## Conclusion
 
-Cet article vous illustre mon retour d'expérience matériel concernant la prise de vues immersives et vous détaille l'enchainement des étapes que je réalise entre la prise de vue et la publication sur Mapillary avec pour objectif d'automatiser au maximum de traitements tout en gardant une forme d'indépendance si nous devions changer de solution à l'avenir (ex. [le Géocommun Panoramax  ](https://forum.geocommuns.fr/c/panoramax/6)). A noter, que j'ai récemment retravaillé sur une nouvelle version de mon script qui intègre deux nouvelles améliorations :
+Cet article vous illustre mon retour d'expérience matériel concernant la prise de vues immersives et vous détaille l'enchainement des étapes que je réalise entre la prise de vue et la publication sur Mapillary avec pour objectif d'automatiser au maximum de traitements tout en gardant une forme d'indépendance si nous devions changer de solution à l'avenir (ex. [le Géocommun Panoramax](https://forum.geocommuns.fr/c/panoramax/6)). A noter, que j'ai récemment retravaillé sur une nouvelle version de mon script qui intègre deux nouvelles améliorations :
 
 - supprimer les images lorsque je suis passé récemment sur une voie,
 - créer des dossiers separés pour chacune des séquences d'images me permettant ainsi de choisir les séquences à publier pour améliorer le maillage sans redondance d'images.
