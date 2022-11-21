@@ -8,7 +8,7 @@ categories:
     - meta
 date: 2022-11-22 10:20
 description: "Sous le GéoCapot : gérer l'hétérogénéité des contributions et garantir une qualité minimale, des git hooks sont à l'oeuvre sur Geotribu. Explication de leur fonctionnement."
-icon: material/image-search
+icon: material/image-plus
 image: "https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_result_master.png"
 robots: index, follow
 tags:
@@ -91,7 +91,7 @@ Ce n'est évidemment pas exhaustif et il n'y a pas de brigade des images dans l'
 
 6. Cliquer `Retour` et récupérer l'URL de l'image. Par exemple, avec un clic droit sur l'icône de lien ou en cliquant sur l'image puis sur `Ouvrir``
 
-    ![Clic doit copier l'adresse du lien](https://cdn.geotribu.fr/img/internal/contribution/embed_image/cdn_filemanager_get_image_url.png "Clic doit copier l'adresse du lien")
+    ![Clic droit copier l'adresse du lien](https://cdn.geotribu.fr/img/internal/contribution/embed_image/cdn_filemanager_get_image_url.png "Clic droit copier l'adresse du lien")
 
 ----
 
