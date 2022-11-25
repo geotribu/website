@@ -1,11 +1,13 @@
 ---
 title: "Rédiger en Markdown : comprendre l'en-tête"
+subtitle: "YAML front-matter"
 categories:
     - article
     - contribution
     - tutoriel
 date: "2021-01-05 20:20"
 description: "Rédiger en Markdown : de l'importance de l'en-tête (YAML front-matter) pour définir les métadonnées, la navigation et le référencement."
+icon: material/page-layout-header
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_yaml_frontmatter.png"
 tags:
     - contribuer
