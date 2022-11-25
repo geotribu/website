@@ -152,7 +152,7 @@ with index_local_file.open("r") as fd:
     local_index_data = json.loads(fd.read())
 ```
 
-Comme toujours avec des données distantes, on prend le temps de regarde run peu la structure :
+Comme toujours avec des données distantes, on prend le temps de regarder un peu la structure :
 
 ```python
 print(type(local_index_data))
@@ -273,16 +273,16 @@ On itère donc sur les résultats et on étend chaque résultat avec les métado
 search_results = idx.search("+path:logo +name:qgis")
 images_dict = local_index_data.get("images")
 
-for search_result in search_results:
-    mapped_img = images_dict.get(search_result.get("ref"))
-    search_result.update(
+for result in search_results:
+    mapped_img = images_dict.get(result.get("ref"))
+    result.update(
         {
             "width": mapped_img[0],
             "height": mapped_img[1],
-            "full_url": f"https://cdn.geotribu.fr/img/{search_result.get('ref')}",
+            "full_url": f"https://cdn.geotribu.fr/img/{result.get('ref')}",
         }
     )
-pprint(search_result)
+pprint(search_results)
 
 # [{'full_url': 'https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png',
 #   'height': 339,
