@@ -26,6 +26,7 @@ tags:
 - l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)
 - l'outil de conversion [ogr2ogr](https://gdal.org/programs/ogr2ogr.html)
 - Python > 3.6
+- [exiftool](https://exiftool.org)
 - [Imagemagick](https://imagemagick.org/index.php)
 - [ffmpeg / ffprobe](https://ffmpeg.org)
 
@@ -46,7 +47,7 @@ Cet article s'inscrit dans la continuité de mon article que j'avais intitulé [
 
 ![logo GoPro](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GoPro.jpg "logo GoPro"){: .img-rdp-news-thumb }
 
-J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes. L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en places dans différentes structures comme la [CA du Grand Montauban](https://prezi.com/p/ufcelyteyqzc/n-street-view-libre_retour_experience_grandmontauban_aitf/), l'Agglomération Val Parisis et [Carto'Cité](https://peertube.openstreetmap.fr/w/fG36XBt2iYYN5XbkUTtqLR). Je suis donc parti sur :
+J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes. L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en places dans différentes structures comme la [CA du Grand Montauban](https://prezi.com/p/ufcelyteyqzc/n-street-view-libre_retour_experience_grandmontauban_aitf/) ou l'Agglomération Val Parisis. Je suis donc parti sur :
 
 - une GoPro Max 360° livrée avec une batterie : environ 430 €
 - un support triple ventouse Ram Mount (ref. RAP-B-365-224-202AU) : environ 90€
@@ -85,9 +86,11 @@ Avec une batterie neuve, on arrive à faire une demi-journée de prises de vue. 
 
 ### Configuration
 
-La caméra installée et démarrée, j'utilise l'application [GoPro Quik](https://gopro.com/fr/fr/shop/quik-app-video-photo-editor) pour lancer ou stopper les prises de vues tout en étant dans la voiture.
+La caméra installée et démarrée, j'utilise l'application [GoPro Quik](https://gopro.com/fr/fr/shop/quik-app-video-photo-editor) et la connexion bluetooth pour lancer ou stopper les prises de vues tout en étant dans la voiture.
 
 `AJOUTER UNE CAPTURE`
+
+A noter que pour [l'aperçu en direct et la visualisation des médias, vous basculerez sur une connexion Wi-Fi](https://community.gopro.com/s/article/What-is-Bluetooth-Connectivity-How-Does-it-Differ-From-Wi-Fi?language=fr).
 
 ### L'intervalle
 
@@ -96,7 +99,7 @@ La GoPro est paramétrée pour prendre des prises de vue 360° avec un intervall
 - 17 mètres à 30km/h
 - 28 mètres à 50km/h
 
-Dans les secteurs urbains assez dense, il est pertinent de limiter sa vitesse pour obtenir une bonne densité d'images.
+Dans les secteurs urbains assez dense, il est nécessaire de limiter sa vitesse pour obtenir une bonne densité d'images.
 
 ### Une équipe de photographes
 
@@ -105,17 +108,17 @@ La réalisation des prises de vue est réalisée par :
 - notre équipe de gardes champêtres/ASVP qui sont en permanences sur le terrain et que j'oriente pour capter certaines "zones blanches",
 - moi même lors de mes déplacements sur le territoire (réunions, formations, collectes,...).
 
-### Des conditions et quelques chiffres
+### Quelques chiffres
 
-Pour vous donner quelques chiffres, la caméra a été réceptionnée début Août et après la phase de test, nous avons réalisé des prises de vue de manière aléatoire en terme de durée jusqu'à fin Septembre. A ce jour, nous avons publié un peu plus de 14000 images et parcouru près de 160km.
+La caméra a été réceptionnée début Août et après la phase de test, nous avons réalisé des prises de vue de manière aléatoire en terme de durée et ce jusqu'à fin Septembre. A ce jour, nous avons publié un peu plus de 14000 images et parcouru près de 160km.
 
-A partir du mois d'Octobre, le soleil étant plus bas et la luminosité plus faible, les images sont moins nettes et le soleil peut plus facilement éblouir le capteur. Nous avons donc décidé de stopper la campagne de prises de vue jusqu'au printemps privilégiant la qualité des prises de vue.
+### Conditions
+
+A partir du mois d'Octobre, le soleil étant plus bas et la luminosité plus faible, les images sont "moins nettes" et le soleil peut plus facilement éblouir le capteur. Nous avons donc décidé de stopper la campagne de prises de vue jusqu'au printemps privilégiant la qualité des prises de vue à la quantité.
 
 ----
 
 ## Traitement des photos
-
-Passées ces péripéties matérielles, je me suis penché sur le traitement des photos.
 
 ### Processus global
 
@@ -284,20 +287,22 @@ Pour la partie de publication des photos, je ne passe pas par `Mapillary Tools`.
 
 ## Usages
 
-Le territoire n'étant pas encore intégralement couvert, il n'y a pas encore eu de campagne de promotion en interne. Toutefois, l'usage de la GoPro a éveillé la curiosité de certains services ayant l'habitude d'utiliser StreetView et à qui j'ai déjà présenté la démarche :
+Le territoire n'étant pas intégralement couvert, il n'y a pas encore eu de campagne de promotion en interne. Toutefois, l'usage de la GoPro a éveillé la curiosité de certains collègues ayant l'habitude d'utiliser StreetView et à qui j'ai déjà présenté la démarche :
 
 - le service qui instruit les demandes d'urbanisme pour localiser et visualiser les projets,
 - le service déchet pour s'immerger sur site lors d'appels d'usagers,
 - les services techniques pour travailler sur des projets d'aménagement.
 
-Dans notre WebSIG, l'utilisateur peut visualiser les voies couvertes et à l'aide d'un outil métier interroger la localisation d'une photo pour ensuite la visualiser dans Mapillary.
+A terme, l'objectif est de présenter ce projet à l'ensemble des services de l'intercommunalité ainsi qu'aux agents des communes.
+
+Concrètement dans notre WebSIG, l'utilisateur peut visualiser les voies couvertes et à l'aide d'un outil métier, il peut interroger la localisation d'une photo pour ensuite la visualiser dans Mapillary.
 
 !!! Rappel
     Comme expliqué dans l'[article précédent](/articles/2022/2022-05-31_donnees_mapillary/), les données relatives à la couvertures et aux images sont récupérées depuis Mapillary et régulièrement intégrées dans notre base de données.
 
 ![Intégration WebSIG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/integration_websig.png "Intégration WebSIG"){: .img-center loading=lazy }
 
-En dehors de Mapillary, j'ai aussi travaillé avec mon service culture pour photographier une exposition de Street Art dans le but de prolonger l'évènement sous la forme d'une balade immersive en m'appuyant sur l'outil [Pannellum](https://pannellum.org).
+En dehors de Mapillary, j'ai aussi travaillé avec mon service culture pour photographier une exposition de Street Art dans le but de prolonger l'évènement sous la forme d'une visite immersive en m'appuyant sur l'outil [Pannellum](https://pannellum.org). On sort clairement du cadre initial mais cela ouvre d'autres perspectives.
 
 ![Exposition immersive](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/exposition.png "Exposition immersive"){: .img-center loading=lazy }
 
