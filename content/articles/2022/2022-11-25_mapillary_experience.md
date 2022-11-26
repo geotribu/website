@@ -46,9 +46,9 @@ Cet article s'inscrit dans la continuité de mon article que j'avais intitulé [
 
 ![logo GoPro](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GoPro.jpg "logo GoPro"){: .img-rdp-news-thumb }
 
-J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes! L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en places ailleurs. Je suis donc parti sur :
+J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes. L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en places dans différentes structures comme la [CA du Grand Montauban](https://prezi.com/p/ufcelyteyqzc/n-street-view-libre_retour_experience_grandmontauban_aitf/), l'Agglomération Val Parisis et [Carto'Cité](https://peertube.openstreetmap.fr/w/fG36XBt2iYYN5XbkUTtqLR). Je suis donc parti sur :
 
-- une GoPro Max 360° : environ 430 €
+- une GoPro Max 360° livrée avec une batterie : environ 430 €
 - un support triple ventouse Ram Mount (ref. RAP-B-365-224-202AU) : environ 90€
 - un adpatateur GoPro à visser : environ 3€
 
@@ -58,7 +58,7 @@ J'interviens dans une petite Communauté de Communes et comme chacun le sait nos
 
 J'avais acheté un adapteur GoPro en plastique a 3€ pour limiter les coûts mais cette "chinoiserie" a bien failli me coûter la caméra!
 
-En effet, le lendemain de ma première matinée de test, la caméra était posée sur le bureau quand sans action extérieure, la caméra s'est retrouvée sans prévenir sur le sol, gloups! L'adapteur en plastique avait complètement explosé.
+En effet, le lendemain de ma première matinée de test, la caméra était posée sur le bureau quand sans action extérieure, elle s'est retrouvée sans prévenir sur le sol, gloups! L'adapteur en plastique avait complètement explosé.
 
 ![Configuration cassée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_break.jpeg "Configuration cassée"){: .img-center loading=lazy }
 
@@ -70,10 +70,46 @@ Après avoir partagé ma mésaventure sur Twitter, [Stéphane Péneau](https://t
 
 ### Sécuriser le système
 
-Et pour sécuriser encore un peu plus un éventuel décrochement, j'ai ajouté deux éléments basiques pour assurer la caméra et me rassurer :
+Et pour sécuriser encore un peu plus un éventuel décrochement, j'ai ajouté deux éléments "basiques" pour assurer la caméra et me rassurer :
 
 1. une ficelle et un mousqueton que j'ai fixé au support triple ventouse et que je viens attacher à l'intérieur de l'habitacle (poignée ou pare soleil suivant les véhicules).
 2. un bas de ligne acier (normalement utilisé pour la pêche au carnassier) pour relier cette ficelle à la GoPro pour ne pas la perdre en cas de détachement éventuel ou de rupture de l'adaptateur.
+
+### L'autonomie
+
+Avec une batterie neuve, on arrive à faire une demi-journée de prises de vue. Si on veut aller plus loin, il faut faire l'acquisition de plusieurs batteries et d'un chargeur multiple.
+
+----
+
+## Prises de vue
+
+### Configuration
+
+La caméra installée et démarrée, j'utilise l'application [GoPro Quik](https://gopro.com/fr/fr/shop/quik-app-video-photo-editor) pour lancer ou stopper les prises de vues tout en étant dans la voiture.
+
+`AJOUTER UNE CAPTURE`
+
+### L'intervalle
+
+La GoPro est paramétrée pour prendre des prises de vue 360° avec un intervalle de deux secondes (intervalle minimum avec cette caméra) ce qui représente pour vous donner un ordre d'idée, une distance de :
+
+- 17 mètres à 30km/h
+- 28 mètres à 50km/h
+
+Dans les secteurs urbains assez dense, il est pertinent de limiter sa vitesse pour obtenir une bonne densité d'images.
+
+### Une équipe de photographes
+
+La réalisation des prises de vue est réalisée par :
+
+- notre équipe de gardes champêtres/ASVP qui sont en permanences sur le terrain et que j'oriente pour capter certaines "zones blanches",
+- moi même lors de mes déplacements sur le territoire (réunions, formations, collectes,...).
+
+### Des conditions et quelques chiffres
+
+Pour vous donner quelques chiffres, la caméra a été réceptionnée début Août et après la phase de test, nous avons réalisé des prises de vue de manière aléatoire en terme de durée jusqu'à fin Septembre. A ce jour, nous avons publié un peu plus de 14000 images et parcouru près de 160km.
+
+A partir du mois d'Octobre, le soleil étant plus bas et la luminosité plus faible, les images sont moins nettes et le soleil peut plus facilement éblouir le capteur. Nous avons donc décidé de stopper la campagne de prises de vue jusqu'au printemps privilégiant la qualité des prises de vue.
 
 ----
 
@@ -112,9 +148,15 @@ REPER_LOGS='logs'
 ENCODAGE='UTF-8'
 ```
 
+[Consulter le fichier de configuration :fontawesome-regular-file-code:](https://github.com/igeofr/gopromax2mapillary/blob/main/config.env){: .md-button }
+{: align=middle }
+
 ### Nettoyer les photos "inutiles"
 
 Après mes premiers tests, lorsque je chargeais mes photos dans l'application [Mapillary Desktop Uploader](https://www.mapillary.com/desktop-uploader), je me rendais compte que j'avais une redondance de photos "identiques" lorsque je marquais un point d'arrêt, notamment aux Stop. Cette redondance est peu pertinente pour l'utilisateur et d'un point de vue environnemental, elle vient inutilement charger les serveurs de Mapillary. Je vous explique ci-dessous quelle solution a été mise en place pour réaliser ce "nettoyage".
+
+[Accéder au script complet  :fontawesome-regular-file-code:](https://github.com/igeofr/gopromax2mapillary/blob/main/gopromax2mapillary.sh){: .md-button }
+{: align=middle }
 
 #### Extraire la localisation des images
 
@@ -146,6 +188,8 @@ ogr2ogr \
 Vous connaissez mon côté OGR centré! Au départ, j'ai commencé par digérer la localisation des images dans OGR pour supprimer les points des photos dont la distance avec le suivant était inférieure à 2 mètres. C'était un bon début mais perfectible.
 
 Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.com/tetranos), plutôt SQL centré, on est arrivé à une requête récursive sur PostgreSQL permettant de supprimer les photos qui se succèdent si l'écartement entre les photos qui se suivent est inférieur à X mètres (dans le cas présent 3 mètres).
+
+Cette requête a ensuite été adaptée pour tourner avec ogr2ogr de manière autonome (OGR centré, je vous dis!).
 
 ```bash
 ogr2ogr \
@@ -199,7 +243,7 @@ ogr2ogr \
 
 #### Suppression des images
 
-Une fois la liste des images à supprimer identifiée, il ne nous reste plus qu'à les supprimer.
+Une fois la liste des images à supprimer identifiée, il ne nous reste plus qu'à les effacer.
 
 ```bash
 # SUPPRESSION DES IMAGES INUTILES
@@ -238,14 +282,33 @@ Pour la partie de publication des photos, je ne passe pas par `Mapillary Tools`.
 
 ----
 
+## Usages
+
+Le territoire n'étant pas encore intégralement couvert, il n'y a pas encore eu de campagne de promotion en interne. Toutefois, l'usage de la GoPro a éveillé la curiosité de certains services ayant l'habitude d'utiliser StreetView et à qui j'ai déjà présenté la démarche :
+
+- le service qui instruit les demandes d'urbanisme pour localiser et visualiser les projets,
+- le service déchet pour s'immerger sur site lors d'appels d'usagers,
+- les services techniques pour travailler sur des projets d'aménagement.
+
+Dans notre WebSIG, l'utilisateur peut visualiser les voies couvertes et à l'aide d'un outil métier interroger la localisation d'une photo pour ensuite la visualiser dans Mapillary. 
+
+!!! Rappel 
+    Comme expliqué dans l'[article précédent](/articles/2022/2022-05-31_donnees_mapillary/), les données relatives à la couvertures et aux images sont récupérées depuis Mapillary et régulièrement intégrées dans notre base de données.
+
+![Intégration WebSIG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/integration_websig.jpeg "Intégration WebSIG"){: .img-center loading=lazy }
+
+En dehors de Mapillary, j'ai aussi travaillé avec mon service culture pour photographier une exposition de Street Art dans le but de prolonger l'évènement sous la forme d'une balade immersive en m'appuyant sur l'outil [Pannellum](https://pannellum.org).
+
+![Exposition immersive](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/exposition.jpeg "Exposition immersive"){: .img-center loading=lazy }
+
+----
+
 ## Conclusion
 
-Cet article vous illustre mon retour d'expérience matériel concernant la prise de vues immersives et vous détaille l'enchainement des étapes que je réalise entre la prise de vue et la publication sur Mapillary avec pour objectif d'automatiser au maximum de traitements tout en gardant une forme d'indépendance si nous devions changer de solution à l'avenir (ex. [le Géocommun Panoramax](https://forum.geocommuns.fr/c/panoramax/6)). A noter, que j'ai récemment retravaillé sur une nouvelle version de mon script qui intègre deux améliorations :
+Cet article vous illustre mon retour d'expérience matériel concernant la prise de vues immersives et vous détaille l'enchainement des étapes que je réalise entre la prise de vue et la publication sur Mapillary avec pour objectif d'automatiser au maximum de traitements tout en gardant une forme d'indépendance si nous devions changer de solution à l'avenir (ex. [le Géocommun Panoramax](https://forum.geocommuns.fr/c/panoramax/6)). A noter, que j'ai récemment retravaillé sur une nouvelle version de mon script pour intègrer deux possibilités :
 
 - supprimer les images lorsque je suis passé récemment sur une voie,
 - créer des dossiers separés pour chacune des séquences d'images me permettant ainsi de choisir les séquences à publier pour améliorer le maillage sans introduire de redondance d'images.
-
-Pour ce qui est de la réalisation des prises de vue, cette étape a été confiée à notre équipe de gardes champêtres/ASVP qui sont en permanences sur le terrain et que j'oriente pour capter certaines "zones blanches".
 
 ----
 
