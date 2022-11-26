@@ -290,9 +290,9 @@ Le territoire n'étant pas encore intégralement couvert, il n'y a pas encore eu
 - le service déchet pour s'immerger sur site lors d'appels d'usagers,
 - les services techniques pour travailler sur des projets d'aménagement.
 
-Dans notre WebSIG, l'utilisateur peut visualiser les voies couvertes et à l'aide d'un outil métier interroger la localisation d'une photo pour ensuite la visualiser dans Mapillary. 
+Dans notre WebSIG, l'utilisateur peut visualiser les voies couvertes et à l'aide d'un outil métier interroger la localisation d'une photo pour ensuite la visualiser dans Mapillary.
 
-!!! Rappel 
+!!! Rappel
     Comme expliqué dans l'[article précédent](/articles/2022/2022-05-31_donnees_mapillary/), les données relatives à la couvertures et aux images sont récupérées depuis Mapillary et régulièrement intégrées dans notre base de données.
 
 ![Intégration WebSIG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/integration_websig.jpeg "Intégration WebSIG"){: .img-center loading=lazy }
