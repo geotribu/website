@@ -295,11 +295,11 @@ Dans notre WebSIG, l'utilisateur peut visualiser les voies couvertes et à l'aid
 !!! Rappel
     Comme expliqué dans l'[article précédent](/articles/2022/2022-05-31_donnees_mapillary/), les données relatives à la couvertures et aux images sont récupérées depuis Mapillary et régulièrement intégrées dans notre base de données.
 
-![Intégration WebSIG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/integration_websig.jpeg "Intégration WebSIG"){: .img-center loading=lazy }
+![Intégration WebSIG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/integration_websig.png "Intégration WebSIG"){: .img-center loading=lazy }
 
 En dehors de Mapillary, j'ai aussi travaillé avec mon service culture pour photographier une exposition de Street Art dans le but de prolonger l'évènement sous la forme d'une balade immersive en m'appuyant sur l'outil [Pannellum](https://pannellum.org).
 
-![Exposition immersive](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/exposition.jpeg "Exposition immersive"){: .img-center loading=lazy }
+![Exposition immersive](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/exposition.png "Exposition immersive"){: .img-center loading=lazy }
 
 ----
 
