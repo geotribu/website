@@ -195,7 +195,7 @@ La deuxième étape est une étape intermédiaire qui permet de créer un fichie
 ```bash
 ogr2ogr \
   -f "SQLite" \ # FORMAT DE SORTIE
-  -dsco SPATIALITE=YES \ 
+  -dsco SPATIALITE=YES \
   -lco LAUNDER=NO \
   -oo X_POSSIBLE_NAMES=gpslongitude \ # ON DEFINIT LE CHAMP X
   -oo Y_POSSIBLE_NAMES=gpslatitude \ # ON DEFINIT LE CHAMP Y
@@ -214,7 +214,7 @@ Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.c
 Cette requête a ensuite été adaptée pour tourner avec ogr2ogr de manière autonome (OGR centré, je vous dis !).
 
 ```bash
-ogr2ogr \ 
+ogr2ogr \
 -f CSV \ # FORMAT DE SORTIE
 -dialect sqlite \
 -sql 'WITH RECURSIVE clean_sequence as (
