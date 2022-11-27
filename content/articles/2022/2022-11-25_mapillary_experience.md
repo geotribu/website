@@ -23,9 +23,16 @@ tags:
 
 ## Prérequis
 
+### Matériel
+
+- GoPro Max
+- Support ventouse
+
+### Application
+
 - l'interpréteur [Bourne-Again shell](https://fr.wikipedia.org/wiki/Bourne-Again_shell)
 - l'outil de conversion [ogr2ogr](https://gdal.org/programs/ogr2ogr.html)
-- Python > 3.6
+- Python >= 3.6
 - [exiftool](https://exiftool.org)
 - [Imagemagick](https://imagemagick.org/index.php)
 - [ffmpeg / ffprobe](https://ffmpeg.org)
@@ -34,7 +41,7 @@ tags:
 
 ![Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Mapillary"){: .img-rdp-news-thumb }
 
-Cet article s'inscrit dans la continuité de mon article que j'avais intitulé [accéder aux données Mapillary et les intégrer dans son SIG](/articles/2022/2022-05-31_donnees_mapillary/). En effet, au moment où celui-ci avait été rédigé, je n'étais pas encore équipé pour réaliser des vues immersives mais c'est maintenant chose faite et je vous propose un retour d'expérience qui je l'espère permettra d'alimenter discussions et réflexions sur le sujet.
+Cet article s'inscrit dans la continuité de l'article que j'avais intitulé [accéder aux données Mapillary et les intégrer dans son SIG](/articles/2022/2022-05-31_donnees_mapillary/). En effet, au moment où celui-ci avait été rédigé, je n'étais pas encore équipé pour réaliser des vues immersives. C'est maintenant chose faite et je vous propose un retour d'expérience qui je l'espère permettra d'alimenter discussions et réflexions sur le sujet.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -47,9 +54,9 @@ Cet article s'inscrit dans la continuité de mon article que j'avais intitulé [
 
 ![logo GoPro](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GoPro.jpg "logo GoPro"){: .img-rdp-news-thumb }
 
-J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes. L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en places dans différentes structures comme la [CA du Grand Montauban](https://prezi.com/p/ufcelyteyqzc/n-street-view-libre_retour_experience_grandmontauban_aitf/) ou l'Agglomération Val Parisis. Je suis donc parti sur :
+J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes. L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en place dans différentes structures comme la [CA du Grand Montauban](https://prezi.com/p/ufcelyteyqzc/n-street-view-libre_retour_experience_grandmontauban_aitf/) ou l'Agglomération Val Parisis. Je suis donc parti sur :
 
-- une GoPro Max 360° livrée avec une batterie : environ 430 €
+- une GoPro Max 360° livrée avec une batterie et une carte mémoire carte SD de 64 Go : environ 430 €
 - un support triple ventouse Ram Mount (ref. RAP-B-365-224-202AU) : environ 90€
 - un adpatateur GoPro à visser : environ 3€
 
@@ -57,13 +64,13 @@ J'interviens dans une petite Communauté de Communes et comme chacun le sait nos
 
 ### Une erreur qui aurait pu me coûter une GoPro
 
-J'avais acheté un adapteur GoPro en plastique a 3€ pour limiter les coûts mais cette "chinoiserie" a bien failli me coûter la caméra!
+J'avais acheté un adapteur GoPro en plastique à 3€ pour limiter les coûts mais cette "chinoiserie" a bien failli me coûter la caméra !
 
-En effet, le lendemain de ma première matinée de test, la caméra était posée sur le bureau quand sans action extérieure, elle s'est retrouvée sans prévenir sur le sol, gloups! L'adapteur en plastique avait complètement explosé.
+En effet, le lendemain de ma première matinée de test, la caméra était posée sur le bureau quand sans action extérieure, elle s'est retrouvée sans prévenir sur le sol, gloups ! L'adapteur en plastique avait complètement explosé.
 
 ![Configuration cassée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/config_break.jpeg "Configuration cassée"){: .img-center loading=lazy }
 
-Un défaut de fabrication, la pièce trop serrée,... je ne sais pas mais toujours est-il que ça m'a bien refroidi!
+Un défaut de fabrication, la pièce trop serrée,... je ne sais pas mais toujours est-il que ça m'a bien refroidi !
 
 Après avoir partagé ma mésaventure sur Twitter, [Stéphane Péneau](https://twitter.com/stfmani) de [Carto'Cité](https://cartocite.fr) me conseille d'acheter un adaptateur Ram Mount (ref. RAP-B-202U-GOP1), certes plus cher mais aussi d'une tout autre qualité et 100% compatible avec le support triple ventouse du même fabriquant.
 
@@ -73,7 +80,7 @@ Après avoir partagé ma mésaventure sur Twitter, [Stéphane Péneau](https://t
 
 Et pour sécuriser encore un peu plus un éventuel décrochement, j'ai ajouté deux éléments "basiques" pour assurer la caméra et me rassurer :
 
-1. une ficelle et un mousqueton que j'ai fixé au support triple ventouse et que je viens attacher à l'intérieur de l'habitacle (poignée ou pare soleil suivant les véhicules).
+1. une ficelle et un mousqueton que j'ai fixés au support triple ventouse et que je viens attacher à l'intérieur de l'habitacle (poignée ou pare soleil suivant les véhicules).
 2. un bas de ligne acier (normalement utilisé pour la pêche au carnassier) pour relier cette ficelle à la GoPro pour ne pas la perdre en cas de détachement éventuel ou de rupture de l'adaptateur.
 
 ### L'autonomie
@@ -86,11 +93,14 @@ Avec une batterie neuve, on arrive à faire une demi-journée de prises de vue. 
 
 ### Configuration
 
-La caméra installée et démarrée, j'utilise l'application [GoPro Quik](https://gopro.com/fr/fr/shop/quik-app-video-photo-editor) et la connexion bluetooth pour lancer ou stopper les prises de vues tout en étant dans la voiture.
+La caméra installée et démarrée, j'utilise l'application [GoPro Quik](https://gopro.com/fr/fr/shop/quik-app-video-photo-editor) et la connexion bluetooth pour lancer ou stopper les prises de vue tout en étant dans la voiture.
 
 `AJOUTER UNE CAPTURE`
 
-A noter que pour [l'aperçu en direct et la visualisation des médias, vous basculerez sur une connexion Wi-Fi](https://community.gopro.com/s/article/What-is-Bluetooth-Connectivity-How-Does-it-Differ-From-Wi-Fi?language=fr).
+A noter que pour bénéficier de [l'aperçu en direct et la visualisation des médias, vous devrez basculer sur une connexion Wi-Fi entre la caméra et votre mobile](https://community.gopro.com/s/article/What-is-Bluetooth-Connectivity-How-Does-it-Differ-From-Wi-Fi?language=fr).
+
+!!! Info
+    La connexion bluetooth consomme moins d'énergie que la connexion Wi-Fi.
 
 ### L'intervalle
 
@@ -99,22 +109,27 @@ La GoPro est paramétrée pour prendre des prises de vue 360° avec un intervall
 - 17 mètres à 30km/h
 - 28 mètres à 50km/h
 
-Dans les secteurs urbains assez dense, il est nécessaire de limiter sa vitesse pour obtenir une bonne densité d'images.
+Dans les secteurs urbains assez denses, il est nécessaire de limiter sa vitesse pour obtenir une bonne densité d'images.
 
 ### Une équipe de photographes
 
-La réalisation des prises de vue est réalisée par :
+Les prises de vue sont réalisées par :
 
-- notre équipe de gardes champêtres/ASVP qui sont en permanences sur le terrain et que j'oriente pour capter certaines "zones blanches",
-- moi même lors de mes déplacements sur le territoire (réunions, formations, collectes,...).
+- notre équipe de gardes champêtres/ASVP qui sont en permanence sur le terrain et que j'oriente pour capter certaines "zones blanches",
+- moi-même lors de mes déplacements sur le territoire (réunions, formations, collectes,...).
 
 ### Quelques chiffres
 
-La caméra a été réceptionnée début Août et après la phase de test, nous avons réalisé des prises de vue de manière aléatoire en terme de durée et ce jusqu'à fin Septembre. A ce jour, nous avons publié un peu plus de 14000 images et parcouru près de 160km.
+La caméra a été réceptionnée début août et après la phase de test, nous avons réalisé des prises de vue de manière aléatoire en terme de durée et ce jusqu'à fin septembre. A ce jour, nous avons publié un peu plus de 14000 images et parcouru près de 160km.
+
+Ce qui représente environ XXX Go en terme de stockage.
+
+[Voir nos prises de vue :fontawesome-solid-image:](https://www.mapillary.com/app/?lat=43.72760029668447&lng=4.096942011775923&z=11.016156934274354&username%5B%5D=data_wax){: .md-button }
+{: align=middle }
 
 ### Conditions
 
-A partir du mois d'Octobre, le soleil étant plus bas et la luminosité plus faible, les images sont "moins nettes" et le soleil peut plus facilement éblouir le capteur. Nous avons donc décidé de stopper la campagne de prises de vue jusqu'au printemps privilégiant la qualité des prises de vue à la quantité.
+A partir du mois d'octobre, le soleil étant plus bas et la luminosité plus faible, les images sont "moins nettes" et le soleil peut plus facilement éblouir le capteur. Nous avons donc décidé de stopper la campagne de prises de vue jusqu'au printemps privilégiant la qualité des prises de vue à la quantité.
 
 ----
 
@@ -161,9 +176,13 @@ Après mes premiers tests, lorsque je chargeais mes photos dans l'application [M
 [Accéder au script complet  :fontawesome-regular-file-code:](https://github.com/igeofr/gopromax2mapillary/blob/main/gopromax2mapillary.sh){: .md-button }
 {: align=middle }
 
+!!! Info
+    Si vous utiliser la `mapillary_tools`, il existe la commande `--duplicate_distance DUPLICATE_DISTANCE`qui vous permet de faire sensiblement la même chose mais l'idée était bien d'être indépendant pour ne pas s'enfermer dans la solution Mapillary si le projet [Panoramax](https://forum.geocommuns.fr/c/panoramax/6) abouti. A noter, cette option n'est pas présente dans Mapillary Desktop Uploader.
+    `--duplicate_distance DUPLICATE_DISTANCE : The maximum distance that can be considered "too close" between two images. If both images also point in the same direction (see --duplicate_angle), the later image will be marked as duplicate and will not be upload. [default: 0.1]`
+
 #### Extraire la localisation des images
 
-Pour la première étape, j'ai utilisé `exiftool` pour lire chacune des images afin d'en extraire leur localisation ainsi que la date et l'heure de la prise de vue. En sortie, j'obtiens un fichier csv listant chacune des images ainsi que les paramètres demandés.
+Pour la première étape, j'ai utilisé `exiftool` pour lire chacune des images afin d'en extraire leur localisation ainsi que la date et l'heure de la prise de vue. En sortie, j'obtiens un fichier `csv` listant chacune des images ainsi que les paramètres demandés (latitude, longitude, date, nom du fichier, ...).
 
 ```bash
 exiftool -filename -gpstimestamp -gpsdatestamp -gpslatitude -gpslongitude -n -csv -r $REPER'/tmp' > './list/'$DATE_YMD'_img.csv'
@@ -171,32 +190,32 @@ exiftool -filename -gpstimestamp -gpsdatestamp -gpslatitude -gpslongitude -n -cs
 
 #### Créer un fichier SIG à partir de la localisation des images
 
-La deuxième étape a été de créer un fichier SIG à partir des informations extraites des images.
+La deuxième étape est une étape intermédiaire qui permet de créer un fichier SIG à partir des informations extraites précédemment des images. En entrée, on a donc le fichier `csv` que l'on va transformer en une couche ponctuelle localisant les images et intégrant les informations extraites.
 
 ```bash
-for csvfile in *.csv;
-do
 ogr2ogr \
-  -f "SQLite" \
-  -dsco SPATIALITE=YES \
+  -f "SQLite" \ # FORMAT DE SORTIE
+  -dsco SPATIALITE=YES \ 
   -lco LAUNDER=NO \
-  -oo X_POSSIBLE_NAMES=gpslongitude \
-  -oo Y_POSSIBLE_NAMES=gpslatitude \
-  ${csvfile%.*}.sqlite \
-  ${csvfile%.*}.csv
+  -oo X_POSSIBLE_NAMES=gpslongitude \ # ON DEFINIT LE CHAMP X
+  -oo Y_POSSIBLE_NAMES=gpslatitude \ # ON DEFINIT LE CHAMP Y
+  ${csvfile%.*}.sqlite \ # NOM DU FICHIER EN SORTIE
+  ${csvfile%.*}.csv # NOM DU FICHIER EN ENTREE
 ```
 
 #### Identification des images
 
-Vous connaissez mon côté OGR centré! Au départ, j'ai commencé par digérer la localisation des images dans OGR pour supprimer les points des photos dont la distance avec le suivant était inférieure à 2 mètres. C'était un bon début mais perfectible.
+Vous connaissez mon côté OGR centré ! Au départ, j'ai commencé par digérer la localisation des images dans OGR pour supprimer les points des photos dont la distance avec le suivant était inférieure à 2 mètres. C'était un bon début mais perfectible.
+
+`AJOUTER UNE CAPTURE ET DETAILLER`
 
 Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.com/tetranos), plutôt SQL centré, on est arrivé à une requête récursive sur PostgreSQL permettant de supprimer les photos qui se succèdent si l'écartement entre les photos qui se suivent est inférieur à X mètres (dans le cas présent 3 mètres).
 
-Cette requête a ensuite été adaptée pour tourner avec ogr2ogr de manière autonome (OGR centré, je vous dis!).
+Cette requête a ensuite été adaptée pour tourner avec ogr2ogr de manière autonome (OGR centré, je vous dis !).
 
 ```bash
-ogr2ogr \
--f CSV \
+ogr2ogr \ 
+-f CSV \ # FORMAT DE SORTIE
 -dialect sqlite \
 -sql 'WITH RECURSIVE clean_sequence as (
   SELECT g.*,
@@ -240,8 +259,8 @@ ogr2ogr \
   SELECT sourcefile
    FROM clean_sequence WHERE NOT (aproximite IS NULL)
   ' \
-  ${csvfile%.*}"_a_sup.csv" \
-  ${csvfile%.*}".sqlite"
+  ${csvfile%.*}"_a_sup.csv" \ # NOM DU FICHIER EN SORTIE
+  ${csvfile%.*}".sqlite" # NOM DU FICHIER EN ENTREE
 ```
 
 #### Suppression des images
@@ -250,10 +269,10 @@ Une fois la liste des images à supprimer identifiée, il ne nous reste plus qu'
 
 ```bash
 # SUPPRESSION DES IMAGES INUTILES
-for csvfile_sup in *.csv;
+for csvfile_sup in *.csv; # BOUCLE SUR LES FICHIERS CSV
 do
-    sed 1d ${csvfile_sup} | xargs rm -f | bash
-    rm ${csvfile_sup}
+    sed 1d ${csvfile_sup} | xargs rm -f | bash # SUPPRESSION DES IMAGES
+    rm ${csvfile_sup} # SUPPRESSION DU FICHIER CSV A LA FIN
 done
 ```
 
@@ -281,7 +300,7 @@ python3 nadir-patcher.py $REPER'/tmp' $REPER'/logo.png' 17 $REPER'/out'
 
 ## Publication des photos
 
-Pour la partie de publication des photos, je ne passe pas par `Mapillary Tools`. Je préfère utiliser l'[application bureautique](https://www.mapillary.com/desktop-uploader) car cela me permet de contrôler mon cheminement et éventuellement de supprimer certaines images manuellement avant publication.
+Pour la publication des photos, je ne passe pas par `Mapillary Tools`. Je préfère utiliser l'[application bureautique](https://www.mapillary.com/desktop-uploader) car cela me permet de contrôler mon cheminement et éventuellement de supprimer certaines images manuellement avant publication.
 
 ----
 
