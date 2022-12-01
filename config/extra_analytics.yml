@@ -2,15 +2,21 @@ analytics:
   provider: google
   property: !ENV MKDOCS_GOOGLE_ANALYTICS_KEY
   feedback:
-    title: Vous avez apprécié ce contenu ?
+    title: Comment avez-vous trouvé ce contenu ?
     ratings:
-      - icon: material/emoticon-happy-outline
-        name: This page was helpful
+      - icon: material/heart-multiple-outline
+        name: "Génial, ça m'a beaucoup aidé !"
+        data: 2
+        note: >-
+          Merci pour ce retour enthousiaste !
+          Pour pérenniser ce genre de contenus, <a href="{{ config.site_url }}/team/sponsoring/" target="_blank" rel="noopener">pensez à nous soutenir</a> !
+      - icon: material/heart-outline
+        name: "Vraiment cool !"
         data: 1
         note: >-
           Thanks for your feedback!
-      - icon: material/emoticon-sad-outline
-        name: This page could be improved
+      - icon: material/heart-half-outline
+        name: "Sympa !"
         data: 0
         note: >-
           Thanks for your feedback! Help us improve this page by
