@@ -49,6 +49,7 @@ jobs:
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
           MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
+          MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true
           MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
           MKDOCS_ENABLE_PLUGIN_PRIVACY: true
           MKDOCS_ENABLE_PLUGIN_RSS: true

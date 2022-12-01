@@ -30,12 +30,17 @@ plugins:
         - "*/templates/*"
         - "*.yml"
   - git-authors:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, False]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, false]
       exclude:
         - index.md
       show_contribution: true
+  - git-committers:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS, false]
+      repository: geotribu/website
+      branch: master
+      docs_path: content/
   - git-revision-date-localized:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, False]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, false]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
