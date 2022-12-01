@@ -4,20 +4,21 @@ analytics:
   feedback:
     title: Comment avez-vous trouvé ce contenu ?
     ratings:
+      - icon: material/heart-half-outline
+        name: "Sympa."
+        data: 0
+        note: >-
+          Merci d'avoir pris le temps de faire ce retour.
+          N'hésitez pas à contribuer vous-même aux contenus de Geotribu !
+      - icon: material/heart-outline
+        name: "Vraiment cool !"
+        data: 1
+        note: >-
+          Merci pour ce retour positif !
+          Prenez donc le temps de laisser un commentaire ou de partager le contenu !
       - icon: material/heart-multiple-outline
         name: "Génial, ça m'a beaucoup aidé !"
         data: 2
         note: >-
           Merci pour ce retour enthousiaste !
-          Pour pérenniser ce genre de contenus, <a href="{{ config.site_url }}/team/sponsoring/" target="_blank" rel="noopener">pensez à nous soutenir</a> !
-      - icon: material/heart-outline
-        name: "Vraiment cool !"
-        data: 1
-        note: >-
-          Thanks for your feedback!
-      - icon: material/heart-half-outline
-        name: "Sympa !"
-        data: 0
-        note: >-
-          Thanks for your feedback! Help us improve this page by
-          using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+          Pour pérenniser ce genre de contenus, <a href="https://static.geotribu.fr/team/sponsoring/" target="_blank" rel="noopener">pensez à nous soutenir</a> !
