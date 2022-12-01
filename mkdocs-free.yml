@@ -130,9 +130,6 @@ theme:
 
 # Customization
 extra:
-  analytics:
-    provider: google
-    property: !ENV MKDOCS_GOOGLE_ANALYTICS_KEY
   comments_url: https://comments.geotribu.fr # isso url
   consent:
     title: Consentement 🍪
