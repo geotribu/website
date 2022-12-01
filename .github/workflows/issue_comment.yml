@@ -36,7 +36,7 @@ jobs:
           JSON_STRING: ${{ steps.issue-parser.outputs.jsonString }}
 
       - name: Save form output as artifact
-        uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3.1.1
         with:
           path: "rdp*.json"
           retention-days: 15
@@ -54,7 +54,7 @@ jobs:
         run: python scripts/issue_comment_templater_rdp.py
 
       - name: Save comment artifact
-        uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3.1.1
         with:
           path: "rdp*_output.md"
           retention-days: 15
