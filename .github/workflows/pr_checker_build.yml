@@ -46,11 +46,11 @@ jobs:
           if [[ -z "${GH_TOKEN_MATERIAL_INSIDERS}" ]]; then
             echo "::warning:: L'accès aux token est réservé aux comptes avec droits d'écriture sur le dépôt. La version gratuite du thème est donc utilisée sans mots-clés, etc.)"
             python -m pip install -U -r requirements-free.txt
-            echo "::set-output name=config_path::mkdocs-free.yml"
+            echo "MKDOCS_CONFIG_FILENAME=mkdocs-free.yml" >> $GITHUB_ENV
           else
             # install insiders version using token
             python -m pip install -U -r requirements-insiders.txt
-            echo "::set-output name=config_path::mkdocs.yml"
+            echo "MKDOCS_CONFIG_FILENAME=mkdocs.yml" >> $GITHUB_ENV
           fi
 
       - name: Cache build dependencies (external assets downloaded)
@@ -64,28 +64,28 @@ jobs:
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
           # site name
-          sed -i "s|^site_name:.*|site_name: Geotribu PREVIEW |" ${{steps.dependencies.outputs.config_path}}
+          sed -i "s|^site_name:.*|site_name: Geotribu PREVIEW |" ${{ env.MKDOCS_CONFIG_FILENAME }}
 
-          # Adjust ${{steps.dependencies.outputs.config_path}} for preview build
-          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" ${{steps.dependencies.outputs.config_path}}
+          # Adjust ${{ env.MKDOCS_CONFIG_FILENAME }} for preview build
+          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # Insert sponsor branding into page content (Provider OSS plan requirement):
           # Upstream does not provide a nicer maintainable way to do this..
           # Prepends HTML to copyright text and then aligns to the right side.
-          sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" ${{steps.dependencies.outputs.config_path}}
+          sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # set repo and branch
-          sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" ${{steps.dependencies.outputs.config_path}}
-          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" ${{steps.dependencies.outputs.config_path}}
+          sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" ${{ env.MKDOCS_CONFIG_FILENAME }}
+          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # merge different configs
-          python scripts/mkdocs_config_merger.py -c ${{steps.dependencies.outputs.config_path}}
+          python scripts/mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # build
-          mkdocs build --config-file ${{steps.dependencies.outputs.config_path}} --verbose --strict
+          mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --verbose --strict
 
           # save mkdocs.yml for debug
-          cp ${{steps.dependencies.outputs.config_path}} ${{ env.BUILD_DIR }}
+          cp ${{ env.MKDOCS_CONFIG_FILENAME }} ${{ env.BUILD_DIR }}
 
           # remove files reserved for production
           rm ${{ env.BUILD_DIR }}/CNAME
