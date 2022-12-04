@@ -8,17 +8,17 @@ analytics:
         name: "Sympa."
         data: 0
         note: >-
-          Merci d'avoir pris le temps de faire ce retour.
-          N'hésitez pas à contribuer vous-même aux contenus de Geotribu !
+          Merci pour ce retour &#128578;.
+          Contribuer <a href="/contribuer/rdp/add_news/" target="_blank" rel="noopener">revues de presse</a>, aux <a href="/contribuer/articles/workflow/" target="_blank" rel="noopener">articles</a> ou <a href="/team/sponsoring/" target="_blank" rel="noopener">nous soutenir</a> est également facile !
       - icon: material/heart-outline
         name: "Vraiment cool !"
         data: 1
         note: >-
-          Merci pour ce retour positif !
-          Prenez donc le temps de laisser un commentaire ou de partager le contenu !
+          Merci pour ce retour &#x1F600;.
+          Contribuer <a href="/contribuer/rdp/add_news/" target="_blank" rel="noopener">revues de presse</a>, aux <a href="/contribuer/articles/workflow/" target="_blank" rel="noopener">articles</a> ou <a href="/team/sponsoring/" target="_blank" rel="noopener">nous soutenir</a> est également facile !
       - icon: material/heart-multiple-outline
         name: "Génial, ça m'a beaucoup aidé !"
         data: 2
         note: >-
-          Merci pour ce retour enthousiaste !
-          Pour pérenniser ce genre de contenus, <a href="/team/sponsoring/" target="_blank" rel="noopener">pensez à nous soutenir</a> !
+          Merci pour ce retour &#128522; !
+          Contribuer <a href="/contribuer/rdp/add_news/" target="_blank" rel="noopener">revues de presse</a>, aux <a href="/contribuer/articles/workflow/" target="_blank" rel="noopener">articles</a> ou <a href="/team/sponsoring/" target="_blank" rel="noopener">nous soutenir</a> est également facile !
