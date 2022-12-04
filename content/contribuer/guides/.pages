@@ -5,6 +5,8 @@ nav:
     - markdown_quality.md
     - metadata_yaml_frontmatter.md
     - image.md
+    - cdn-images-hebergement.md
+    - cdn-images-recherche.md
     - twitter.md
     - video.md
     - audio.md

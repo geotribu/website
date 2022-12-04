@@ -36,7 +36,7 @@ jobs:
           JSON_STRING: ${{ steps.issue-parser.outputs.jsonString }}
 
       - name: Save form output as artifact
-        uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3.1.1
         with:
           path: "rdp*.json"
           retention-days: 15
@@ -54,7 +54,7 @@ jobs:
         run: python scripts/issue_comment_templater_rdp.py
 
       - name: Save comment artifact
-        uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3.1.1
         with:
           path: "rdp*_output.md"
           retention-days: 15
@@ -66,10 +66,10 @@ jobs:
           body="${body//'%'/'%25'}"
           body="${body//$'\n'/'%0A'}"
           body="${body//$'\r'/'%0D'}"
-          echo "::set-output name=body::$body"
+          echo "BODY_COMMENT=$body" >> $GITHUB_OUTPUT
 
       - name: Create comment
         uses: peter-evans/create-or-update-comment@v2
         with:
           issue-number: ${{ github.event.issue.number }}
-          body: ${{ steps.get-comment-body.outputs.body }}
+          body: ${{ steps.get-comment-body.outputs.BODY_COMMENT }}

@@ -65,7 +65,7 @@ On a finalement opté pour [Isso] pour plusieurs raisons  :
 
 ![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
 
-Vu que GeoRezo nous autorise gracieusement à utiliser le serveur d'[El Géo Paso](https://elgeopaso.georezo.net/) et qu'il s'agit d'une application légère, j'ai décidé de l'installer à côté de [notre pseudo-CDN](/contribuer/guides/image/#heberger-une-image-sur-le-cdn-de-geotribu).
+Vu que GeoRezo nous autorise gracieusement à utiliser le serveur d'[El Géo Paso](https://elgeopaso.georezo.net/) et qu'il s'agit d'une application légère, j'ai décidé de l'installer à côté de [notre pseudo-CDN](/contribuer/guides/cdn-images-hebergement/).
 
 L'occasion de rappeler que soutenir GeoRezo c'est une bonne idée pour l'écosystème et c'est aussi soutenir GeoTribu :hugging_face: :
 

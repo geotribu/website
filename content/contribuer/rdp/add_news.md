@@ -82,7 +82,7 @@ Si aucune image n'est spécifiée, c'est l'icône générique historique qui est
 
 !!! tip "Voir aussi"
     - la [syntaxe pour appliquer le style vignette à une image](/contribuer/guides/image/#vignette)
-    - [héberger une image ou parcourir les images existantes sur le pseudo-CDN](/contribuer/guides/image/#heberger-une-image-sur-le-cdn-de-geotribu)
+    - [héberger une image ou parcourir les images existantes sur le pseudo-CDN](/contribuer/guides/cdn-images-hebergement/)
 
 ### Tableau des icônes génériques { data-search-exclude }
 
