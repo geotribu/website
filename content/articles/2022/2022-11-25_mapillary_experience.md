@@ -95,7 +95,7 @@ Avec une batterie neuve, on arrive à faire une demi-journée de prises de vue. 
 
 La caméra installée et démarrée, j'utilise l'application [GoPro Quik](https://gopro.com/fr/fr/shop/quik-app-video-photo-editor) et la connexion bluetooth pour lancer ou stopper les prises de vue tout en étant dans la voiture.
 
-`AJOUTER UNE CAPTURE`
+![GoPro Quik](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/app_gopro.png "GoPro Quik"){: .img-center loading=lazy }
 
 A noter que pour bénéficier de [l'aperçu en direct et la visualisation des médias, vous devrez basculer sur une connexion Wi-Fi entre la caméra et votre mobile](https://community.gopro.com/s/article/What-is-Bluetooth-Connectivity-How-Does-it-Differ-From-Wi-Fi?language=fr).
 
@@ -122,7 +122,7 @@ Les prises de vue sont réalisées par :
 
 La caméra a été réceptionnée début août et après la phase de test, nous avons réalisé des prises de vue de manière aléatoire en terme de durée et ce jusqu'à fin septembre. A ce jour, nous avons publié un peu plus de 14000 images et parcouru près de 160km.
 
-Ce qui représente environ XXX Go en terme de stockage.
+Ce qui représente autour de 40Go en terme de stockage des fichiers bruts.
 
 [Voir nos prises de vue :fontawesome-solid-image:](https://www.mapillary.com/app/?lat=43.72760029668447&lng=4.096942011775923&z=11.016156934274354&username%5B%5D=data_wax){: .md-button }
 {: align=middle }
@@ -207,9 +207,11 @@ ogr2ogr \
 
 Vous connaissez mon côté OGR centré ! Au départ, j'ai commencé par digérer la localisation des images dans OGR pour supprimer les points des photos dont la distance avec le suivant était inférieure à 2 mètres. C'était un bon début mais perfectible.
 
-`AJOUTER UNE CAPTURE ET DETAILLER`
+![Identification des images à supprimer - version 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/nettoyage_v1.png "Identification des images à supprimer - version 1"){: .img-center loading=lazy }
 
-Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.com/tetranos), plutôt SQL centré, on est arrivé à une requête récursive sur PostgreSQL permettant de supprimer les photos qui se succèdent si l'écartement entre les photos qui se suivent est inférieur à X mètres (dans le cas présent 3 mètres).
+Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.com/tetranos), plutôt SQL centré, on est arrivé à une requête récursive sur PostgreSQL permettant de supprimer les photos qui se succèdent si l'écartement entre les photos qui se suivent est inférieur à X mètres (dans le cas présent 3 mètres). Si on compare visuellement ces deux versions, cette solution permet de conserver une meilleure répartition des photos. C'est notamment lié à la récursivité qui permet d'avancer sur le point qui suit de manière progressive.
+
+![Identification des images à supprimer - version 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/nettoyage_v2.png "Identification des images à supprimer - version 2"){: .img-center loading=lazy }
 
 Cette requête a ensuite été adaptée pour tourner avec ogr2ogr de manière autonome (OGR centré, je vous dis !).
 
@@ -218,12 +220,14 @@ ogr2ogr \
 -f CSV \ # FORMAT DE SORTIE
 -dialect sqlite \
 -sql 'WITH RECURSIVE clean_sequence as (
+  --PERMET DE RECUPERER LA PREMIERE PHOTO
   SELECT g.*,
   cast(null as geometry) as aproximite,
   cast(null as integer) as id_ref,
   cast(null as real) AS distance
   FROM (SELECT * FROM conf LIMIT 1) g
   UNION ALL
+  --REGARDE SI LE POINT SUIVANT SE TROUVE A UNE DISTANCE XX
   SELECT T.*,
     CASE
     WHEN C.aproximite IS NULL AND PtDistWithin(T.geom, C.geom,3) THEN T.geom_prev
@@ -251,10 +255,10 @@ ogr2ogr \
     CAST(gpslatitude AS REAL) AS gpslatitude,
     CAST(gpslongitude AS REAL) AS gpslongitude,
     ST_Transform(SetSRID(MakePoint(CAST(gpslongitude AS REAL), CAST(gpslatitude AS REAL)), 4326),2154)as geom,
-    LEAD(ST_Transform(SetSRID(MakePoint(CAST(gpslongitude AS REAL), CAST(gpslatitude AS REAL)), 4326),2154)) over (order by filename) AS geom_next,
-    LAG(ST_Transform(SetSRID(MakePoint(CAST(gpslongitude AS REAL), CAST(gpslatitude AS REAL)), 4326),2154)) over (order by filename) AS geom_prev,
-    LAG(cast(substr(filename,5,4) AS integer)) OVER (ORDER BY cast(substr(filename,5,4) AS integer)) AS prev_val,
-    LEAD(cast(substr(filename,5,4) AS integer)) OVER (ORDER BY cast(substr(filename,5,4) AS integer)) AS next_val
+    LEAD(ST_Transform(SetSRID(MakePoint(CAST(gpslongitude AS REAL), CAST(gpslatitude AS REAL)), 4326),2154)) over (order by filename) AS geom_next, --GEOMETRY DU POINT SUIVANT
+    LAG(ST_Transform(SetSRID(MakePoint(CAST(gpslongitude AS REAL), CAST(gpslatitude AS REAL)), 4326),2154)) over (order by filename) AS geom_prev, --GEOMETRY DU POINT PRECEDENT
+    LAG(cast(substr(filename,5,4) AS integer)) OVER (ORDER BY cast(substr(filename,5,4) AS integer)) AS prev_val, --NUMERO DU POINT PRECEDENT
+    LEAD(cast(substr(filename,5,4) AS integer)) OVER (ORDER BY cast(substr(filename,5,4) AS integer)) AS next_val --NUMERO DU POINT SUIVANT
   FROM "'${csvfile%.*}'" ORDER BY filename)
   SELECT sourcefile
    FROM clean_sequence WHERE NOT (aproximite IS NULL)
