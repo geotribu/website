@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: 2022-11-25 14:20
+date: 2022-12-09 14:20
 description: "Contribution Mapillary et retour d'expérience"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/mapillary_logo.jpeg"
 license: default
@@ -19,7 +19,7 @@ tags:
 
 # Contribution Mapillary et retour d'expérience
 
-:calendar: Date de publication initiale : 25 Novembre 2022
+:calendar: Date de publication initiale : 09 décembre 2022
 
 ## Prérequis
 
