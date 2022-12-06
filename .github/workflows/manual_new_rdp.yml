@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo locale-gen fr_FR.UTF-8
           sudo update-locale LANG=fr_FR.UTF-8
-          echo "::set-output name=date-fr-long::$(date -d ${{ github.event.inputs.date }} '+%-d %B %Y')"
+          echo "DATE_FR_LONG=$(date -d ${{ github.event.inputs.date }} '+%-d %B %Y')" >> $GITHUB_ENV
 
       - name: Get source code
         uses: actions/checkout@v3
@@ -63,7 +63,7 @@ jobs:
           source_branch: rdp/${{ github.event.inputs.date }}
           destination_branch: "master"
           pr_allow_empty: false
-          pr_title: "🗞 GeoRDP du ${{ steps.locale-fr.outputs.date-fr-long }}"
+          pr_title: "🗞 GeoRDP du ${{ env.DATE_FR_LONG }}"
           pr_template: .github/PULL_REQUEST_TEMPLATE.md
 
       - name: Notification Slack
@@ -71,7 +71,7 @@ jobs:
         uses: slackapi/slack-github-action@v1.23
         if: "${{ github.event.inputs.notify-slack == 'true' }}"
         with:
-          payload: '{"blocks":[{"type":"section","text":{"type":"mrkdwn","text":":newspaper: La GeoRDP du ${{ steps.locale-fr.outputs.date-fr-long }} a été créée et attend vos contributions :writing_hand: !"}},{"type":"section","fields":[{"type":"mrkdwn","text":"Créée par *${{ github.actor }}* via GitHub Action."}]},{"type":"actions","elements":[{"type":"button","text":{"type":"plain_text","emoji":true,"text":":squid: Voir la PR (GitHub)"},"url":"${{ steps.cpr.outputs.pr_url }}"},{"type":"button","text":{"type":"plain_text","emoji":true,"text":":eye: Voir la preview (Netlify)"},"style":"primary","url":"https://preview-pullrequest-${{steps.cpr.outputs.pr_number}}--geotribu-preprod.netlify.app/"}]}]}'
+          payload: '{"blocks":[{"type":"section","text":{"type":"mrkdwn","text":":newspaper: La GeoRDP du ${{ env.DATE_FR_LONG }} a été créée et attend vos contributions :writing_hand: !"}},{"type":"section","fields":[{"type":"mrkdwn","text":"Créée par *${{ github.actor }}* via GitHub Action."}]},{"type":"actions","elements":[{"type":"button","text":{"type":"plain_text","emoji":true,"text":":squid: Voir la PR (GitHub)"},"url":"${{ steps.cpr.outputs.pr_url }}"},{"type":"button","text":{"type":"plain_text","emoji":true,"text":":eye: Voir la preview (Netlify)"},"style":"primary","url":"https://preview-pullrequest-${{steps.cpr.outputs.pr_number}}--geotribu-preprod.netlify.app/"}]}]}'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
