@@ -5,6 +5,7 @@ tags:
   CNIG: institution
   collecte: telephone
   collecte terrain: telephone
+  conférence: conference
   coulisses: masques
   cURL: code
   D3.js: js
@@ -48,8 +49,10 @@ tags:
   Matrix: commentaires
   Minecraft: manette
   MySQL: database
+  NoSQL: database
   ODK: telephone
   Open Data Kit: telephone
+  OpenDroneMap: drone
   OpenPathView: streetview
   OpenRouteService: route
   open data: open
@@ -78,4 +81,5 @@ tags:
   routing: route
   SQL: database
   three.js: js
+  Wikipédia: wikipedia
   Windows: windows
