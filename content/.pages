@@ -1,6 +1,7 @@
 nav:
-    - "&#127968; Accueil" : index.md
+    - "&#127968; Accueil": index.md
     - rdp
     - articles
+    - "&#128278; Tags": tags.md
     - contribuer
     - team
