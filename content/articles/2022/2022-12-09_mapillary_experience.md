@@ -177,7 +177,7 @@ Après mes premiers tests, lorsque je chargeais mes photos dans l'application [M
 {: align=middle }
 
 !!! Info
-    Si vous utiliser la `mapillary_tools`, il existe la commande `--duplicate_distance DUPLICATE_DISTANCE`qui vous permet de faire sensiblement la même chose mais l'idée était bien d'être indépendant pour ne pas s'enfermer dans la solution Mapillary si le projet [Panoramax](https://forum.geocommuns.fr/c/panoramax/6) abouti. A noter, cette option n'est pas présente dans Mapillary Desktop Uploader.
+    Si vous utilisez `mapillary_tools`, il existe la commande `--duplicate_distance DUPLICATE_DISTANCE`qui vous permet de faire sensiblement la même chose mais l'idée était bien d'être indépendant pour ne pas s'enfermer dans la solution Mapillary si le projet [Panoramax](https://forum.geocommuns.fr/c/panoramax/6) aboutit. A noter, cette option n'est pas présente dans Mapillary Desktop Uploader.
     `--duplicate_distance DUPLICATE_DISTANCE : The maximum distance that can be considered "too close" between two images. If both images also point in the same direction (see --duplicate_angle), the later image will be marked as duplicate and will not be upload. [default: 0.1]`
 
 #### Extraire la localisation des images
@@ -209,7 +209,7 @@ Vous connaissez mon côté OGR centré ! Au départ, j'ai commencé par digérer
 
 ![Identification des images à supprimer - version 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/nettoyage_v1.png "Identification des images à supprimer - version 1"){: .img-center loading=lazy }
 
-Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.com/tetranos), plutôt SQL centré, on est arrivé à une requête récursive sur PostgreSQL permettant de supprimer les photos qui se succèdent si l'écartement entre les photos qui se suivent est inférieur à X mètres (dans le cas présent 3 mètres). Si on compare visuellement ces deux versions, cette solution permet de conserver une meilleure répartition des photos. C'est notamment lié à la récursivité qui permet d'avancer sur le point qui suit de manière progressive.
+Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.com/tetranos), plutôt SQL centré, on est arrivé à une requête récursive sur PostgreSQL permettant de supprimer les photos qui se succèdent si leur écartement est inférieur à X mètres (dans le cas présent 3 mètres). Si on compare visuellement ces deux versions, cette solution permet de conserver une meilleure répartition des photos. C'est notamment lié à la récursivité qui permet d'avancer sur le point qui suit de manière progressive.
 
 ![Identification des images à supprimer - version 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/nettoyage_v2.png "Identification des images à supprimer - version 2"){: .img-center loading=lazy }
 
