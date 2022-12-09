@@ -62,7 +62,7 @@ with output_config_file.open(mode="r", encoding="UTF8") as in_yaml:
 for cfg_file in configs_to_merge:
     dest_section = cfg_file.stem.split("_")[0]
     with cfg_file.open(mode="r") as part_config:
-        cfg_data = yaml.safe_load(part_config)
+        cfg_data = yaml_load(part_config)
 
     out_section = config_to_complete.get(dest_section)
     if isinstance(out_section, list):
