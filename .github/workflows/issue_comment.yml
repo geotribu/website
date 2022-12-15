@@ -46,7 +46,7 @@ jobs:
         run: |
           python -m pip install -U pip
           python -m pip install -U setuptools wheel
-          python -m pip install -U jinja2
+          python -m pip install -U "jinja2<4"
 
       - name: Fill comment template with form
         env:
@@ -59,6 +59,12 @@ jobs:
         with:
           path: "rdp*_output.md"
           retention-days: 15
+
+      - name: Create comment from file
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body-file: 'rdp_news_submitted_comment_output.md'
 
       - name: Load comment body from file
         id: get-comment-body
