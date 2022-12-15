@@ -27,6 +27,7 @@ jobs:
         uses: stefanbuck/github-issue-parser@v3
         id: issue-parser
         with:
+          issue-body: ${{ github.event.issue.body }} # required
           template-path: .github/ISSUE_TEMPLATE/RDP_NEWS.yml
 
       # see: https://github.com/stefanbuck/github-issue-parser/issues/38
