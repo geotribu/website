@@ -24,9 +24,10 @@ jobs:
           python-version: 3.11
 
       - name: Parse template form
-        uses: stefanbuck/github-issue-parser@v2
+        uses: stefanbuck/github-issue-parser@v3
         id: issue-parser
         with:
+          issue-body: ${{ github.event.issue.body }} # required
           template-path: .github/ISSUE_TEMPLATE/RDP_NEWS.yml
 
       # see: https://github.com/stefanbuck/github-issue-parser/issues/38
@@ -45,7 +46,7 @@ jobs:
         run: |
           python -m pip install -U pip
           python -m pip install -U setuptools wheel
-          python -m pip install -U jinja2
+          python -m pip install -U "jinja2<4"
 
       - name: Fill comment template with form
         env:
@@ -59,17 +60,8 @@ jobs:
           path: "rdp*_output.md"
           retention-days: 15
 
-      - name: Load comment body from file
-        id: get-comment-body
-        run: |
-          body="$(cat rdp_news_submitted_comment_output.md)"
-          body="${body//'%'/'%25'}"
-          body="${body//$'\n'/'%0A'}"
-          body="${body//$'\r'/'%0D'}"
-          echo "BODY_COMMENT=$body" >> $GITHUB_OUTPUT
-
-      - name: Create comment
+      - name: Create comment from file
         uses: peter-evans/create-or-update-comment@v2
         with:
           issue-number: ${{ github.event.issue.number }}
-          body: ${{ steps.get-comment-body.outputs.BODY_COMMENT }}
+          body-file: 'rdp_news_submitted_comment_output.md'

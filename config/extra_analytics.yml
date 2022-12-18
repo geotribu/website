@@ -1,0 +1,24 @@
+analytics:
+  provider: google
+  property: !ENV MKDOCS_GOOGLE_ANALYTICS_KEY
+  feedback:
+    title: Comment avez-vous trouvé ce contenu ?
+    ratings:
+      - icon: material/heart-half-outline
+        name: "Sympa."
+        data: 0
+        note: >-
+          Merci pour ce retour &#128578;.<br/>
+          Contribuer aux <a href="/contribuer/rdp/add_news/" target="_blank" rel="noopener">revues de presse</a>, aux <a href="/contribuer/articles/workflow/" target="_blank" rel="noopener">articles</a> ou <a href="/team/sponsoring/" target="_blank" rel="noopener">nous soutenir</a>, rien de plus simple !
+      - icon: material/heart-outline
+        name: "Vraiment cool !"
+        data: 1
+        note: >-
+          Merci pour ce retour &#x1F600;.<br/>
+          Contribuer aux <a href="/contribuer/rdp/add_news/" target="_blank" rel="noopener">revues de presse</a>, aux <a href="/contribuer/articles/workflow/" target="_blank" rel="noopener">articles</a> ou <a href="/team/sponsoring/" target="_blank" rel="noopener">nous soutenir</a>, rien de plus simple !
+      - icon: material/heart-multiple-outline
+        name: "Génial, ça m'a beaucoup aidé !"
+        data: 2
+        note: >-
+          Merci pour ce retour &#128522; !<br/>
+          Contribuer aux <a href="/contribuer/rdp/add_news/" target="_blank" rel="noopener">revues de presse</a>, aux <a href="/contribuer/articles/workflow/" target="_blank" rel="noopener">articles</a> ou <a href="/team/sponsoring/" target="_blank" rel="noopener">nous soutenir</a>, rien de plus simple !
