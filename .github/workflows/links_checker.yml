@@ -1,0 +1,46 @@
+name: "🎳 Vérification des liens "
+
+on:
+  schedule:
+    - cron: "0 18 5 */3 *" # tous les trois mois, le 5 du mois à 18h
+  pull_request:
+    branches: [master]
+    paths:
+      - ".github/workflows/links_checker.yml"
+
+jobs:
+  linkchecker:
+    name: "🔗 Check la validité des liens du site"
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'geotribu' }}
+
+    steps:
+      - name: Get source code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+          cache: "pip"
+
+      - name: Install dependencies
+        env:
+          GH_TOKEN_MATERIAL_INSIDERS: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install --upgrade -r requirements-insiders.txt
+          python -m pip install --upgrade "LinkChecker>=10,<11"
+
+      - name: Build static website
+        run: |
+          python scripts/mkdocs_config_merger.py -c mkdocs.yml
+          mkdocs build --clean --config-file mkdocs.yml --quiet --strict
+        env:
+          MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
+          MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true
+          MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
+          MKDOCS_ENABLE_PLUGIN_RSS: true
+
+      - name: Run linkcheckr
+        run: linkchecker build/mkdocs/site/ -f .linkcheckrrc
