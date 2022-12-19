@@ -12,6 +12,7 @@ icon:
     commentaires: fontawesome/solid/comments
     conference: fontawesome/solid/person-chalkboard
     database: fontawesome/solid/database
+    drone: material/drone
     facebook: fontawesome/brands/facebook
     feuille: fontawesome/solid/leaf
     geoloupe: fontawesome/solid/magnifying-glass-location
@@ -35,4 +36,5 @@ icon:
     satellite: fontawesome/solid/satellite-dish
     streetview: fontawesome/solid/street-view
     telephone: material/cellphone-marker
+    wikipedia: material/wikipedia
     windows: fontawesome/brands/windows
