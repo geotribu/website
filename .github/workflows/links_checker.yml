@@ -37,10 +37,7 @@ jobs:
           python scripts/mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --quiet --strict
         env:
-          MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
-          MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true
-          MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
           MKDOCS_ENABLE_PLUGIN_RSS: true
 
       - name: Run linkcheckr
-        run: linkchecker build/mkdocs/site/ -f .linkcheckrrc
+        run: linkchecker build/mkdocs/site/ --config .linkcheckrrc
