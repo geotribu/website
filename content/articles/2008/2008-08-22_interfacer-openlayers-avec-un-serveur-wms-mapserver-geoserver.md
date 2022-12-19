@@ -46,9 +46,9 @@ Comme nous l'avons rapidement abordé, l'interrogation d'un serveur WMS se fait 
 
 Voici un exemple d'URL :
 
-[http: //map.ngdc.noaa.gov/servlet/com.esri.wms.Esrimap?servicename=glacier&WMTVER=1.0&request=GetMAP&SRS=EPSG:4326&BBOX=-100,-90,100,80
-&WIDTH=400&HEIGHT=400&LAYERS=Continents,Rivers,Glaciers%20(all%20sizes)&STYLES=&FORMAT=image/png](http: //map.ngdc.noaa.gov/servlet/com.esri.wms.Esrimap?servicename=glacier&WMTVER=1.0&request=GetMAP&SRS=EPSG:4326&BBOX=-100,-90,100,80
-&WIDTH=400&HEIGHT=400&LAYERS=Continents,Rivers,Glaciers%20(all%20sizes)&STYLES=&FORMAT=image/png)
+```plain
+http://map.ngdc.noaa.gov/servlet/com.esri.wms.Esrimap?servicename=glacier&WMTVER=1.0&request=GetMAP&SRS=EPSG:4326&BBOX=-100,-90,100,80&WIDTH=400&HEIGHT=400&LAYERS=Continents,Rivers,Glaciers%20(all%20sizes)&STYLES=&FORMAT=image/png
+```
 
 Un serveur WMS est composé de 3 parties essentielles : le serveur cartographique, les données et le client. Un exemple de reque serait la suivante : une requête de type "GetMap" est envoyée par le navigateur au serveur cartographique. Celui-ci, en fonction de sa configuration et des données, retourne la carte correspondante.
 
