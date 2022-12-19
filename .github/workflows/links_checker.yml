@@ -1,4 +1,4 @@
-name: "Vérification des liens 🔗"
+name: "🎳 Vérification des liens "
 
 on:
   schedule:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   linkchecker:
-    name: "Check la validité des liens du site"
+    name: "🔗 Check la validité des liens du site"
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'geotribu' }}
 
