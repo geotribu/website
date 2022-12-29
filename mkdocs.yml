@@ -57,6 +57,7 @@ plugins:
         - twemoji
       auto_caption: true
       caption_position: bottom
+  - meta
   - minify:
       minify_css: true
       minify_html: true

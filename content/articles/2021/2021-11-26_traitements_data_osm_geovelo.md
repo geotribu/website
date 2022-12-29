@@ -174,6 +174,3 @@ Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre c
 ## Auteur {: data-search-exclude }
 
 --8<-- "content/team/sdeb.md"
-
-<!-- Intègre le glossaire centralisé -->
---8<-- "content/toc_nav_ignored/snippets/glossaire.md"
