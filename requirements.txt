@@ -7,7 +7,7 @@ wheel
 
 # Development
 # -----------------------
-pre-commit>=2.18,<2.21
+pre-commit>=2.18,<2.22
 
 # Project requirements
 # -----------------------
