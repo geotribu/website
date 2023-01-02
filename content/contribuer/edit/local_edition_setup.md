@@ -23,7 +23,7 @@ search:
 
 # Installation et configuration de l'environnement de travail pour l'édition locale
 
-![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-rdp-news-thumb }
+![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-rdp-news-thumb }
 
 Cette page a pour but de vous guider dans les principales étapes afin de pouvoir gérer le site et ses contenus depuis une machine locale. Il est probable que chacun/e doive ajuster selon son propre environnement de travail (chemins de fichiers, répertoires...).
 
@@ -78,16 +78,21 @@ Cloner le dépôt :
 - soit via [le bouton vert sur le dépôt avec GitHub Desktop](https://github.com/geotribu/website). Dans ce cas-là, ouvrez un terminal Powershell dans le dossier décompressé et passez à l'étape suivante.
 - soit avec les commandes ci-dessous :
 
-```bash
-$ cd ~/git-repos/geotribu/
-$ git clone https://github.com/geotribu/website.git
+```sh
+cd ~/git-repos/geotribu/
+git clone https://github.com/geotribu/website.git
+```
+
+Ce qui donne :
+
+```sh
 Clonage dans 'website'...
-remote: Enumerating objects: 850, done.
-remote: Counting objects: 100% (850/850), done.
-remote: Compressing objects: 100% (780/780), done.
-remote: Total 850 (delta 112), reused 202 (delta 60), pack-reused 0
-Réception d'objets: 100% (850/850), 2.47 Mio | 8.84 Mio/s, fait.
-Résolution des deltas: 100% (112/112), fait.
+remote: Enumerating objects: 46677, done.
+remote: Counting objects: 100% (1754/1754), done.
+remote: Compressing objects: 100% (170/170), done.
+remote: Total 46677 (delta 840), reused 1705 (delta 827), pack-reused 44923
+Réception d'objets: 100% (46677/46677), 59.82 Mio | 10.49 Mio/s, fait.
+Résolution des deltas: 100% (36595/36595), fait.
 ```
 
 !!! question "Et le SSH alors ?!"
@@ -110,7 +115,13 @@ git config user.email "mona.lisa@devinci.com"
 Vérifier que votre dépôt local (sur votre ordinateur) soit à jour par rapport au dépôt central (sur GitHub) :
 
 ```bash
-$ git status
+git fetch --prune
+git status
+```
+
+Ce qui donne :
+
+```sh
 Sur la branche master
 Votre branche est à jour avec 'origin/master'.
 
@@ -120,7 +131,7 @@ rien à valider, la copie de travail est propre
 Si la commande `git status` ne vous renvoie pas le même genre de message qu'au-dessus, cela signifie que vous n'êtes pas à jour. Il faut alors faire :
 
 ```bash
-git pull
+git pull origin --prune
 ```
 
 Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement supprimée sur le dépôt central (hébergé sur [GitHub]) afin de garder un dépôt propre et lisible. Il faut alors mettre à jour le dépôt local sur votre machine :
@@ -159,7 +170,7 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
 
 ![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
 
-Pour éditer localement et visualiser le résultat final avant de publier sur le dépôt, il faut installer [Python] 3.7 ou supérieure et les dépendances du projet.
+Pour éditer localement et visualiser le résultat final avant de publier sur le dépôt, il faut installer [Python] 3.10 ou supérieure et les dépendances du projet.
 
 ### Installation de Python
 
@@ -168,11 +179,11 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
     # lister les versions de Python installées
     ls -1 /usr/bin/python* | grep '[2-3].[0-9]$'
 
-    # si aucune version de Python >= 3.7 n'est installée, installons la 3.8 par exemple
+    # si aucune version de Python >= 3.10 n'est installée, installons la 3.10 par exemple
     sudo apt install software-properties-common
     sudo add-apt-repository ppa:deadsnakes/ppa
     sudo apt update
-    sudo apt install python3.8
+    sudo apt install python3.10
     ```
 
 === "Windows (Powershell)"
@@ -214,7 +225,7 @@ Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'in
     py --list
 
     # créer un environnement virtuel - Attention : ne fonctionne pas avec Python installé depuis le Windows Store
-    py -3.7 -m venv .venv  
+    py -3.10 -m venv .venv  
 
     # activer l'environnement virtuel
     .\.venv\Scripts\activate
@@ -247,6 +258,9 @@ L'installation est optionnelle mais recommandée car l'outil garantit :
 - un socle minimal de qualité des contenus et codes sources
 - une cohérence d'ensemble entre les contributions
 - qu'une fois poussée sur le dépôt central, la contribution passe [les checks exécutés dans la CI](https://results.pre-commit.ci/repo/github/248722492).
+
+[En savoir plus sur les crochets Git :material-hook:](/contribuer/internal/git_hooks_precommit/){: .md-button }
+{: align=middle }
 
 Installer [pre-commit] :
 
