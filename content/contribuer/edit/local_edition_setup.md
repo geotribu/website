@@ -80,7 +80,7 @@ Cloner le dépôt :
 
 ```bash
 $ cd ~/git-repos/geotribu/
-$ git clone --depth=1 https://github.com/geotribu/website.git
+$ git clone https://github.com/geotribu/website.git
 Clonage dans 'website'...
 remote: Enumerating objects: 850, done.
 remote: Counting objects: 100% (850/850), done.
