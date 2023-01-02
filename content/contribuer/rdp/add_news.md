@@ -15,7 +15,7 @@ tags:
     - workflow
 ---
 
-# Ajouter une news à une revue de presse
+# Proposer une news pour une revue de presse
 
 ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
 
@@ -31,101 +31,81 @@ Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
 ----
 
-## Description d'une news
+## Ajouter une news en utilisant son environnement local
 
-Une news est constituée d'éléments obligatoires :
+![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
 
-- une [catégorie](#sections-categories) qui correspond aux sections de la revue de presse
-- un titre
-- une [icône](#icones-de-news)
-- un texte
+Pour les plus aguerri/es d'entre nous, il est évidemment possible de contribuer à une revue de presse en travaillant localement. C'est d'ailleurs beaucoup plus confortable !
 
-Et d'éléments facultatifs :
+On considère ici que la revue de presse existe déjà (sinon [voir ici pour la créer](/contribuer/rdp/create_rdp/)) et que l'on dispose d'un environnement local correctement configuré et **à jour**, en particulier en ce qui concerne les dépendances Python et du dépôt Git :
 
-- d'un media d'illustration (captures d'écran, vidéo, tweet etc.)
-- d'une source
-- d'une note particulière (par exemple pour avertir le lectorat que l'auteur/e de la news est lié/e à son contenu)
+[Configurer son environnement local pour contribuer à Geotribu :octicons-desktop-download-16:](/contribuer/edit/local_edition_setup/){: .md-button .md-button--primary }
+{: align=middle }
 
-----
+### 1. Trouver la branche de la revue de presse active
 
-## Sections (= catégories)
+Pour afficher les différentes branches actives afin de sélectionner celle souhaitée, il suffit de lister les branches locales et distantes en filtrant sur celles des revues de presse `rdp/`.
 
-![icône voronoi](https://cdn.geotribu.fr/img/logos-icones/divers/voronoi.png "icône voronoi"){: .img-rdp-news-thumb }
+Lister les branches locales :
 
-Les news sont ventilées dans des sections (= catégories) qui constituent également les titres de niveau 2 de la page. S'il peut surprendre voire n'avoir pas beaucoup de sens, le découpage est historique et permet de conserver la cohérence de la revue de presse à travers les ~~âges~~ années.
+```sh
+> git branch --list '*rdp/*'
+  rdp/2021-09-17
+  rdp/2022-12-16
+  rdp/2023-01-06
+```
 
-Il n'est parfois pas évident de savoir où placer son actualité. Dans ce cas, l'équipe se chargera (ou pas) de replacer la news au bon endroit.
+Lister les branches distantes :
 
-| Catégorie                     | Description | Exemples |
-| :---------------------------- | :---------- | :------- |
-| Vie du site                   | Précédée du logo rectangulaire du site, il s'agit généralement d'une simple liste à puces dans laquelle on retrouve les derniers contenus publiés ou les récentes évolutions de Geotribu. On a pris l'habitude de préfixer chaque élément par un [emoji](/contribuer/guides/emoji/). |  |
-| Sorties de la semaine         | Pour relayer les nouveautés dans les outils de la géomatique. Attention, il ne s'agit pas de paraphraser les notes de version ou les communiqués de presse, mais d'apporter une valeur ajoutée personnelle. | |
-| Client                        | **section dépréciée, éviter d'utiliser** | |
-| Serveur                       | **section dépréciée, éviter d'utiliser** | |
-| Logiciel                      | Découverte, cas d'usage d'un logiciel pas forcément nouveau mais intéressant.  | |
-| Représentation cartographique | Dataviz, cartographies, art... | "30DayMapChallenge", "[Francepixel (Bâti)](/rdp/2021/rdp_2021-06-18/#francepixel-bati)" |
-| OpenStreetMap                 | Toute news liée au plus grand projet de cartographie collaborative mondiale. | |
-| Google                        | Idem mais pour la plus grande agence de publicité numérique mondiale. :wink: | |
-| Open Data                     | Tout ce qui a trait aux données ouvertes. | "[Ouverture officielle des données de l'IGN](/rdp/2020/rdp_2020-12-11/#open-data)", "Le libre accès aux données implique t'il leur gratuité ?" |
-| Geo-event                     | Evénements et conférences. | SAGEO, GéoDataDays, CartoMob, "[Rencontres des utilisateurs francophones de QGIS](/rdp/2020/rdp_2020-12-11/#rencontres-des-utilisateurs-francophones-de-qgis)"... |
-| Divers                        | Tout ce qui ne rentre pas dans les autres sections. | "[Des globes made in France](/rdp/2020/rdp_2020-12-11/#des-globes-made-in-france)", "[Les villes sont-elles un corps ?](/rdp/2021/rdp_2021-03-26/#les-villes-ont-elles-un-corps)"   |
-| En bref                       | Liste à puces d'informations mineures ou récurrentes.  | Lettre d'informations de la communauté OSM ; version mineure d'un logiciel qui ne nécessite pas un commentaire. |
+```sh
+> git branch --list '*rdp/*' -r
+  origin/rdp/2023-01-06
+```
 
-----
+### 2. Basculer sur la branche de la revue de presse active
 
-## Icônes
+```sh
+> git checkout rdp/2023-01-06
+Switched to a new branch 'rdp/2023-01-06'
+```
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
+!!! important
+    Avant d'ajouter du contenu sur une branche déjà existante, bien penser à récupérer les changements faits par les autres contributeurs avant, en faisant : `git fetch --prune` puis `git pull --prune`
+    ```  
 
-Afin de respecter la cohérence globale des revues de presse, chaque news démarre par une icône carrée dimensionnée sous forme de vignette. L'auteur/e peut évidemment appliquer l'icône de son choix en l'hébergeant sur le [CDN de Geotribu].  
-Si aucune image n'est spécifiée, c'est l'icône générique historique qui est appliquée (celle-la même qui illustre cette section).
+### 3. Ajouter sa news
 
-!!! tip "Voir aussi"
-    - la [syntaxe pour appliquer le style vignette à une image](/contribuer/guides/image/#vignette)
-    - [héberger une image ou parcourir les images existantes sur le pseudo-CDN](/contribuer/guides/cdn-images-hebergement/)
+Le bon moment de se rappeler [la structure d'une news](/contribuer/rdp/structure_news/) et de consulter les guides de rédaction pour écrire du bon Markdown :
 
-### Tableau des icônes génériques { data-search-exclude }
+- les [bases de la syntaxe Markdown](/contribuer/guides/markdown_basics/)
+- les [règles de rédaction de Geotribu](/contribuer/guides/markdown_quality/)
+- [comprendre l'en-tête des fichiers Markdown](/contribuer/guides/metadata_yaml_frontmatter/)
+- comment [intégrer une image](/contribuer/guides/image/) sur Geotribu
 
-Afin de faciliter la saisie, voici le tableau des icônes génériques avec la syntaxe correspondate à copier/coller :
+Il y en a d'autres (intégration Twitter, vidéo, etc.) : ne pas hésiter à les lire et relire !
 
-| Icône | Syntaxe |
-| :---: | :-----: |
-| ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb } | `#!markdown ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }` |
-| ![icône globe retourné](https://cdn.geotribu.fr/img/internal/icons-rdp-news/absurde.png "icône globe retourné"){: .img-rdp-news-thumb } | `#!markdown ![icône globe retourné](https://cdn.geotribu.fr/img/internal/icons-rdp-news/absurde.png "icône globe retourné"){: .img-rdp-news-thumb }` |
-| ![icône globe ancien](https://cdn.geotribu.fr/img/internal/icons-rdp-news/ancien.png "icône globe ancien"){: .img-rdp-news-thumb } | `#!markdown ![icône globe ancien](https://cdn.geotribu.fr/img/internal/icons-rdp-news/ancien.png "icône globe ancien"){: .img-rdp-news-thumb }` |
-| ![icône globe video](https://cdn.geotribu.fr/img/internal/icons-rdp-news/animation_video.png "icône globe video"){: .img-rdp-news-thumb } | `#!markdown ![icône globe video](https://cdn.geotribu.fr/img/internal/icons-rdp-news/animation_video.png "icône globe video"){: .img-rdp-news-thumb }` |
-| ![icône globe flux](https://cdn.geotribu.fr/img/internal/icons-rdp-news/flux.png "icône globe flux"){: .img-rdp-news-thumb } | `#!markdown ![icône globe flux](https://cdn.geotribu.fr/img/internal/icons-rdp-news/flux.png "icône globe flux"){: .img-rdp-news-thumb }` |
-| ![icône globe genre](https://cdn.geotribu.fr/img/internal/icons-rdp-news/genre.png "icône globe genre"){: .img-rdp-news-thumb } | `#!markdown ![icône globe genre](https://cdn.geotribu.fr/img/internal/icons-rdp-news/genre.png "icône globe genre"){: .img-rdp-news-thumb }` |
-| ![icône globe boule cristal divination](https://cdn.geotribu.fr/img/internal/icons-rdp-news/globe_boule_cristal_divination.jpg "icône globe boule cristal divination"){: .img-rdp-news-thumb } | `#!markdown ![icône globe boule_cristal_divination](https://cdn.geotribu.fr/img/internal/icons-rdp-news/globe_boule_cristal_divination.jpg "icône globe boule cristal divination"){: .img-rdp-news-thumb }` |
-| ![icône globe virus masque](https://cdn.geotribu.fr/img/internal/icons-rdp-news/globe_virus_mask.jpg "icône globe virus masque"){: .img-rdp-news-thumb } | `#!markdown ![icône globe boule_cristal_divination](https://cdn.geotribu.fr/img/internal/icons-rdp-news/globe_virus_mask.jpg "icône globe virus masque"){: .img-rdp-news-thumb }` |
-| ![icône globe heatmap](https://cdn.geotribu.fr/img/internal/icons-rdp-news/heatmap.png "icône globe heatmap"){: .img-rdp-news-thumb } | `#!markdown ![icône globe heatmap](https://cdn.geotribu.fr/img/internal/icons-rdp-news/heatmap.png "icône globe heatmap"){: .img-rdp-news-thumb }` |
-| ![icône globe itineraire](https://cdn.geotribu.fr/img/internal/icons-rdp-news/itineraire.png "icône globe itineraire"){: .img-rdp-news-thumb } | `#!markdown ![icône globe itineraire](https://cdn.geotribu.fr/img/internal/icons-rdp-news/itineraire.png "icône globe itineraire"){: .img-rdp-news-thumb }` |
-| ![icône globe journalisme](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône globe journalisme"){: .img-rdp-news-thumb } | `#!markdown ![icône globe journalisme](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône globe journalisme"){: .img-rdp-news-thumb }` |
-| ![icône globe lobby](https://cdn.geotribu.fr/img/internal/icons-rdp-news/lobby.png "icône globe lobby"){: .img-rdp-news-thumb } | `#!markdown ![icône globe lobby](https://cdn.geotribu.fr/img/internal/icons-rdp-news/lobby.png "icône globe lobby"){: .img-rdp-news-thumb }` |
-| ![icône globe matiere](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe matiere"){: .img-rdp-news-thumb } | `#!markdown ![icône globe matiere](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe matiere"){: .img-rdp-news-thumb }` |
-| ![icône globe mentale](https://cdn.geotribu.fr/img/internal/icons-rdp-news/mentale.png "icône globe mentale"){: .img-rdp-news-thumb } | `#!markdown ![icône globe mentale](https://cdn.geotribu.fr/img/internal/icons-rdp-news/mentale.png "icône globe mentale"){: .img-rdp-news-thumb }` |
-| ![icône globe metro](https://cdn.geotribu.fr/img/internal/icons-rdp-news/metro.png "icône globe metro"){: .img-rdp-news-thumb } | `#!markdown ![icône globe metro](https://cdn.geotribu.fr/img/internal/icons-rdp-news/metro.png "icône globe metro"){: .img-rdp-news-thumb }` |
-| ![icône globe microworld](https://cdn.geotribu.fr/img/internal/icons-rdp-news/microworld.png "icône globe microworld"){: .img-rdp-news-thumb } | `#!markdown ![icône globe microworld](https://cdn.geotribu.fr/img/internal/icons-rdp-news/microworld.png "icône globe microworld"){: .img-rdp-news-thumb }` |
-| ![icône globe musique disque](https://cdn.geotribu.fr/img/internal/icons-rdp-news/musique_disque.png "icône globe musique disque"){: .img-rdp-news-thumb } | `#!markdown ![icône globe musique disque](https://cdn.geotribu.fr/img/internal/icons-rdp-news/musique_disque.png "icône globe musique disque"){: .img-rdp-news-thumb }` |
-| ![icône globe musique note](https://cdn.geotribu.fr/img/internal/icons-rdp-news/musique_note.png "icône globe musique note"){: .img-rdp-news-thumb } | `#!markdown ![icône globe musique note](https://cdn.geotribu.fr/img/internal/icons-rdp-news/musique_note.png "icône globe musique note"){: .img-rdp-news-thumb }` |
-| ![icône globe mystique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/mystique.png "icône globe mystique"){: .img-rdp-news-thumb } | `#!markdown ![icône globe mystique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/mystique.png "icône globe mystique"){: .img-rdp-news-thumb }` |
-| ![icône globe night](https://cdn.geotribu.fr/img/internal/icons-rdp-news/night.png "icône globe night"){: .img-rdp-news-thumb } | `#!markdown ![icône globe night](https://cdn.geotribu.fr/img/internal/icons-rdp-news/night.png "icône globe night"){: .img-rdp-news-thumb }` |
-| ![icône globe noel](https://cdn.geotribu.fr/img/internal/icons-rdp-news/noel.png "icône globe noel"){: .img-rdp-news-thumb } | `#!markdown ![icône globe noel](https://cdn.geotribu.fr/img/internal/icons-rdp-news/noel.png "icône globe noel"){: .img-rdp-news-thumb }` |
-| ![icône globe pointillisme](https://cdn.geotribu.fr/img/internal/icons-rdp-news/pointillisme.png "icône globe pointillisme"){: .img-rdp-news-thumb } | `#!markdown ![icône globe pointillisme](https://cdn.geotribu.fr/img/internal/icons-rdp-news/pointillisme.png "icône globe pointillisme"){: .img-rdp-news-thumb }` |
-| ![icône globe social](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globe social"){: .img-rdp-news-thumb } | `#!markdown ![icône globe social](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globe social"){: .img-rdp-news-thumb }` |
-| ![icône globe triste](https://cdn.geotribu.fr/img/internal/icons-rdp-news/triste.png "icône globe triste"){: .img-rdp-news-thumb } | `#!markdown ![icône globe triste](https://cdn.geotribu.fr/img/internal/icons-rdp-news/triste.png "icône globe triste"){: .img-rdp-news-thumb }` |
-| ![icône globe usa](https://cdn.geotribu.fr/img/internal/icons-rdp-news/usa.png "icône globe usa"){: .img-rdp-news-thumb } | `#!markdown ![icône globe usa](https://cdn.geotribu.fr/img/internal/icons-rdp-news/usa.png "icône globe usa"){: .img-rdp-news-thumb }` |
-| ![icône globe générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb } | `#!markdown ![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }` |
+### 4. Enregistrer sa modification
 
-----
+Allez, cette fois, vous avez ajouté votre Markdown, il s'agit désormais de l'enregistrer et de l'envoyer.
 
-## Bonnes pratiques
+Ajouter un message bref qui décrit votre ajout ou modification :
 
-- [x] Ne pas utiliser de balises HTML brutes dans le texte, exception faite des `iframe` et des intégrations tierces (tweets...)
-- [x] Ne pas abuser des mises en évidence (**gras**, *italique*...) afin de garder l'équite de lisibilité entre les contenus
+```sh
+git commit -am "Ajout news sur la carte de la semaine"
+```
 
-----
+### 5. Pousser son contenu avec Git vers le dépôt central
 
-## Crédits
+> ou vers un dépôt de son compte (*fork*) si on n'a pas les droits.
 
-Les icônes génériques ont été créées pour Geotribu par [Mathieu Rajerison](/team/mraj/).
+- si c'est une nouvelle branche
+
+    ```bash
+    git push -u origin "rdp/2023-01-06"
+    ```
+
+- Ou, si c'est une branche déjà existante
+
+    ```bash
+    git push
+    ```
