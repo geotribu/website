@@ -73,7 +73,7 @@ Voici une vidéo illustrant le déroulé :
     - l'URL du webhook de Slack (`SLACK_WEBHOOK_URL`) est bien configurée dans [les secrets du dépôt]({{ config.repo_url }}settings/secrets/actions) (cliquer [ici pour administrer le webhook Slack](https://api.slack.com/apps/A020C9Q93BK/incoming-webhooks/))
 <!-- markdownlint-enable MD046 -->
 
-### Utiliser localement le script intégré localement
+### Utiliser le script intégré
 
 Si vous disposez d'un terminal Bash et disposez du dépôt cloné, il est possible d'utiliser le script intégré :
 

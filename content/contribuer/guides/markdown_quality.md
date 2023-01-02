@@ -162,6 +162,33 @@ Si la plupart des outils repèrent les liens dans le texte, il est recommandé d
     - bien : [texte du lien qui apparaît](https://geotribu.fr/)
 <!-- markdownlint-enableMD034 -->
 
+### Liens internes relatifs
+
+Quand il s'agit de lier les contenus entre eux, par exemple pour pointer sur une précédente revue de presse ou un article, **il ne faut pas utiliser l'URL absolue** vers le contenu mais le chemin relatif.
+
+Cela permet :
+
+- de garder les contenus indépendants de l'URL de publication du site qui a tour à tour été <http://geotribu.net>, <https://geotribu.net> et <https://static.geotribu.fr> et qui pourrait encore être amenée à changer.
+- d'éviter les liens cassés en cas de renommage/déplacement d'un contenu
+
+> Cette règle est spécifique à Geotribu et est contrôlée via un [script exécuté à chaque publication du site](https://github.com/geotribu/website/blob/master/hooks/mkdocs/check_hyperlinks.py)
+
+<!-- markdownlint-disable MD034 MD038 -->
+=== "Markdown"
+    ```markdown
+    - :name_badge: pas bien : <https://static.geotribu.fr/rdp/2022/rdp_2022-12-16/#le-mobiliscope>
+    - :name_badge: pas bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est absolu (argh !)](https://static.geotribu.fr/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
+    - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien part de la racine du site](/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
+    - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est relatif à la page actuelle](../../rdp/2022/rdp_2022-12-16.md#le-mobiliscope)
+    ```
+
+=== "Rendu"
+    - :name_badge: pas bien : <https://static.geotribu.fr/rdp/2022/rdp_2022-12-16/#le-mobiliscope>
+    - :name_badge: pas bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est absolu (argh !)](https://static.geotribu.fr/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
+    - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien part de la racine du site](/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
+    - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est relatif à la page actuelle](../../rdp/2022/rdp_2022-12-16.md#le-mobiliscope)
+<!-- markdownlint-enableMD034 -->
+
 ----
 
 ## Outillage

@@ -4,4 +4,5 @@ nav:
     - workflow.md
     - create_rdp.md
     - add_news.md
+    - structure_news.md
     - publish.md
