@@ -27,6 +27,11 @@ name_regex = "[^]]+"
 url_regex = "http[s]?://[^)]+"
 pattern = "\[({0})]\(\s*({1})\s*\)".format(name_regex, url_regex)
 
+
+exclude_list = [
+    "contribuer/guides/markdown_quality.md",
+]
+
 # ###########################################################################
 # ########## Functions #############
 # ##################################
@@ -35,6 +40,8 @@ pattern = "\[({0})]\(\s*({1})\s*\)".format(name_regex, url_regex)
 @mkdocs.plugins.event_priority(-50)
 def on_page_markdown(markdown, page, **kwargs):
     path = page.file.src_uri
+    if path in exclude_list:
+        return
     # for m in re.finditer(r"\bhttps://static.geotribu.fr/[^) ]+", markdown):
     # for match in pattern.finditer(markdown):
     for match in re.findall(pattern, markdown):
