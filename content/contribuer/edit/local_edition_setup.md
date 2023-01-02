@@ -5,6 +5,7 @@ categories:
     - tutoriel
 date: 2020-07-23 10:20
 description: "Guide de contribution à Geotribu : comment déployer l'environnement local idéal pour contribuer tranquillement."
+icon: octicons/desktop-download-16
 image: "https://cdn.geotribu.fr/img/internal/contribution/geotribu_ide_vscode_local.png"
 tags:
     - contribuer
