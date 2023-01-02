@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:3.11-alpine
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
@@ -12,9 +12,9 @@ ADD requirements*.txt ./
 # Perform build and cleanup artifacts
 RUN \
   apk add --no-cache \
-    git \
-    git-fast-import \
-    openssh \
+  git \
+  git-fast-import \
+  openssh \
   && apk add --no-cache --virtual .build gcc musl-dev \
   && pip install --no-cache-dir -r requirements-free.txt \
   && apk del .build gcc musl-dev \
