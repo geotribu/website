@@ -209,5 +209,9 @@ On aère un peu et on repart sur [le début de la procédure](#dependances).
 
 {% include "licenses/beerware.md" %}
 
+## Crédits {: data-search-exclude }
+
+- l'image d'en-tête est récupérée du site [Instrutor GIS](https://www.instrutorgis.com.br/)
+
 <!-- abbréviations spécifiques -->
 *[PPA]: Les  PPA, pour Personal Package Archive, sont des dépôts de paquets caractéristiques des distributions basées sur Debian et qui permettent d'installer des logiciels qui ne sont pas disponibles dans les dépôts officiels d'une distribution (Ubuntu dans notre cas).
