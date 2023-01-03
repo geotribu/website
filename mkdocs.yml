@@ -60,8 +60,10 @@ plugins:
   - meta
   - minify:
       minify_css: true
+      css_files:
+        - theme/assets/stylesheets/extra.css
+        - theme/assets/stylesheets/homepage.css
       minify_html: true
-      minify_js: false
       htmlmin_opts:
         remove_comments: true
   - rss:
