@@ -72,7 +72,7 @@ Et je peux travailler en tout zénitude sans me demander si la prochaine mise à
 
 On commence par installer le nécessaire pour les différentes étapes d'installation, en considérant que la machine est neuve ou tout comme. Si l'état de votre ordinateur vous évoque d'antiques écuries [faites donc un coup de propre](#nettoyage) avant de continuer.
 
-On met à jour et on installe la trousse à outils de base :
+On met à jour et on installe la trousse à outils de base via le terminal :
 
 ```sh
 sudo apt update
