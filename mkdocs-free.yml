@@ -52,12 +52,11 @@ plugins:
         - twemoji
       auto_caption: true
       caption_position: bottom
-  # - minify:
-  #     minify_css: true
-  #     minify_html: true
-  #     minify_js: false
-  #     htmlmin_opts:
-  #       remove_comments: true
+  - minify:
+      minify_css: true
+      css_files:
+        - theme/assets/stylesheets/extra.css
+        - theme/assets/stylesheets/homepage.css
   - rss:
       abstract_chars_count: 500
       categories:
@@ -74,7 +73,6 @@ plugins:
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
       match_path: "(articles|rdp)/.*"
-      pretty_print: false
       url_parameters:
         utm_source: "rss-feed"
         utm_medium: "RSS"
@@ -84,7 +82,9 @@ plugins:
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - tags:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
+      tags_compare: !!python/name:material.plugins.tags.plugin.casefold
 
 # Theme
 theme:
@@ -104,6 +104,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - toc.follow
   font: false
   icon:
     repo: fontawesome/brands/github-alt
@@ -133,11 +134,14 @@ extra:
   comments_url: https://comments.geotribu.fr # isso url
   consent:
     title: Consentement 🍪
+    actions:
+      - accept
+      - manage
+      - reject
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
       des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
       l'audience du site.
-  manifest: "manifest.webmanifest" # PWA declaration
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
@@ -153,6 +157,7 @@ markdown_extensions:
   - attr_list
   # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
   - footnotes
+  - md_in_html
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
@@ -170,7 +175,8 @@ markdown_extensions:
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
       auto_append: [content/toc_nav_ignored/snippets/glossaire.md]
-      base_path: "."
+      base_path:
+        - "."
       check_paths: true
   - pymdownx.superfences:
       custom_fences:
