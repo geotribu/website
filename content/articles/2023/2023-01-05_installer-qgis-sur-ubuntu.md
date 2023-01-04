@@ -236,7 +236,7 @@ qgis-plugin-grass         qgis-server-bin           qgis-server-wfs3
 
 ![Paquets commençant par qgis disponibles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/ubuntu_apt_install_qgis_autocompletion.webp){: .img-center loading=lazy }
 
-Sauf à avoir des besoins particuliers, il est toujours préférable de n'installer que le minimum utilisé. Dans mon cas, ce sera donc `qgis`... et c'est amplement suffisant, car ça fait du monde déjà :
+Sauf à avoir des besoins particuliers, il est toujours préférable de n'installer que le minimum utilisé. Dans mon cas, ce sera donc `qgis`... et c'est amplement suffisant, car ça fait déjà du monde :
 
 ![Dépendances tirées par une installation de QGIS sur Ubuntu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/ubuntu_apt_install_qgis_dependances.webp){: .img-center loading=lazy }
 
