@@ -29,6 +29,7 @@ icon:
     oeuf: fontawesome/solid/egg
     open: fontawesome/solid/lock-open
     opensource: material/open-source-initiative
+    pingouin: simple/linux
     python: fontawesome/brands/python
     roue: material/cog-play
     route: fontawesome/solid/route
@@ -36,5 +37,6 @@ icon:
     satellite: fontawesome/solid/satellite-dish
     streetview: fontawesome/solid/street-view
     telephone: material/cellphone-marker
+    ubuntu: material/ubuntu
     wikipedia: material/wikipedia
     windows: fontawesome/brands/windows

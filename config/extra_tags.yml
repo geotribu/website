@@ -44,6 +44,7 @@ tags:
   Lego: brick
   LIDAR: satellite
   livre: atlas
+  Linux: pingouin
   Mapillary: streetview
   Markdown: markdown
   Matrix: commentaires
@@ -81,5 +82,6 @@ tags:
   routing: route
   SQL: database
   three.js: js
+  Ubuntu: ubuntu
   Wikipédia: wikipedia
   Windows: windows
