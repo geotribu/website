@@ -20,6 +20,8 @@ tags:
 
 :calendar: Date de publication initiale : 5 janvier 2023
 
+## Introduction
+
 ![logo Ubuntu](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/ubuntu.svg "logo Ubuntu"){: loading=lazy .img-rdp-news-thumb }
 
 Ça peut paraître idiot dit comme ça, mais je trouve qu'installer le logiciel SIG open source le plus utilisé sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des difficultés, y compris à des utilisateurs quotidiens des deux outils.
