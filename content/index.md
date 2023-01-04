@@ -8,7 +8,6 @@ hide:
   - navigation
   - toc
 template: home.html
-ᴴₒᴴₒᴴₒ: true
 # theme customizations
 search:
   exclude: true
