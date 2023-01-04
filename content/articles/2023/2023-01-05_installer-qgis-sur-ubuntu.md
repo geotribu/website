@@ -110,7 +110,7 @@ On référence ensuite le dépôt dans un fichier chargé de lister les sources 
     On vérifie que le fichier a bien été écrit :
 
     ```sh
-    nano /etc/apt/sources.list.d/qgis.list
+    less -F /etc/apt/sources.list.d/qgis.list
     ```
 
     Ce qui donne sur Ubuntu 22.04 :
@@ -130,7 +130,7 @@ On référence ensuite le dépôt dans un fichier chargé de lister les sources 
     On vérifie que le fichier a bien été écrit :
 
     ```sh
-    nano /etc/apt/sources.list.d/qgis.list
+    less -F /etc/apt/sources.list.d/qgis.list
     ```
 
     Ce qui donne sur Ubuntu 22.04 :
@@ -163,7 +163,7 @@ On référence alors dans un fichier `/etc/apt/sources.list.d/qgis.sources` :
     On vérifie que le fichier a bien été écrit :
 
     ```sh
-    nano /etc/apt/sources.list.d/qgis.sources
+    less -F /etc/apt/sources.list.d/qgis.sources
     ```
 
     Ce qui donne sur Ubuntu 22.04 :
@@ -192,7 +192,7 @@ On référence alors dans un fichier `/etc/apt/sources.list.d/qgis.sources` :
     On vérifie que le fichier a bien été écrit :
 
     ```sh
-    nano /etc/apt/sources.list.d/qgis.sources
+    less -F /etc/apt/sources.list.d/qgis.sources
     ```
 
     Ce qui donne sur Ubuntu 22.04 :
