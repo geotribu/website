@@ -1,13 +1,13 @@
 ---
-title: "Installer QGIS sur Ubuntu"
-subtitle: "apt install zen-mode"
+title: "Installer QGIS sur Ubuntu avec apt"
+subtitle: "apt install qgis-zen-mode"
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 date: "2023-01-05 10:20"
-description: "Installer QGIS sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des problèmes. Un petit tutoriel en forme de mémo de la procédure."
+description: "Installer QGIS sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des problèmes. Un tutoriel sur la marche à suivre pour s'en rappeler quand le besoin se fait sentir."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png"
 license: beerware
 tags:
@@ -49,10 +49,20 @@ Vu que c'est un sujet vivant, je tenterai de mettre ce tutoriel à jour de temps
 
 ## Choix
 
-Pour ma part, je cherche à installer QGIS LTR (3.22.14 à date) sur Ubuntu LTS (22.04.1 à date) via le dépôt officiel des paquets du projet QGIS.  
+Avant d'installer, sonne l'heure du choix : quelle version de QGIS ?
+
+Pour ma part, je cherche à installer **QGIS LTR** (3.22.14 à date) sur **Ubuntu LTS** (22.04.1 à date) via **le dépôt officiel** des paquets du projet QGIS.
+
 Oui, j'aime la stabilité.  
-Je n'ai pas les dernières fonctionnalités qui font le buzz sur les sites qui font de la veille, j'ai des versions de GDAL et de PROJ plus vieilles que ma fille...  
-mais chez moi, ça marche(tm) :sunglasses:.
+Oui, le [dépôt `ubuntugis-unstable`](https://wiki.ubuntu.com/UbuntuGIS) porte bien son nom.  
+Non, les versions non LTR ne sont pas suffisamment stables, surtout celles qui ont moins de 6 correctifs (le dernier chiffre dans le numéro de version).  
+Je n'ai pas les dernières fonctionnalités qui font le buzz sur les sites qui font de la veille, j'ai des versions de GDAL et de PROJ plus vieilles que ma fille... mais chez moi, ça marche(tm) :sunglasses:.  
+Et je peux travailler en tout zénitude sans me demander si la prochaine mise à jour va casser quelque chose. :person_in_lotus_position:
+
+![Les gens qui installent QGIS non LTR](https://media.giphy.com/media/nneVpy2YnHZNm/giphy.gif "Les gens qui installent QGIS non LTR"){: .img-center loading=lazy }
+
+> :person_juggling: Les personnes qui installent la version de QGIS non LTR et sans correctif :person_juggling:
+{: align=middle }
 
 ----
 
@@ -88,23 +98,48 @@ sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.or
 
 On référence ensuite le dépôt dans un fichier chargé de lister les sources de paquets et qui sera dédié à QGIS `/etc/apt/sources.list.d/qgis.list` :
 
-```sh
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu-ltr \
-  $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/qgis.list > /dev/null
-```
+<!-- markdownlint-disable MD046 -->
+=== ":person_in_lotus_position: QGIS LTR"
 
-On vérifie que le fichier a bien été écrit :
+    ```sh
+    echo \
+    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu-ltr \
+    $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/qgis.list > /dev/null
+    ```
 
-```sh
-nano /etc/apt/sources.list.d/qgis.list
-```
+    On vérifie que le fichier a bien été écrit :
 
-Ce qui donne sur Ubuntu 22.04 :
+    ```sh
+    nano /etc/apt/sources.list.d/qgis.list
+    ```
 
-```debsources
-deb [arch=amd64 signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu-ltr
-```
+    Ce qui donne sur Ubuntu 22.04 :
+
+    ```debsources
+    deb [arch=amd64 signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu-ltr
+    ```
+
+=== ":person_juggling: QGIS, version 'basique'"
+
+    ```sh
+    echo \
+    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu \
+    $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/qgis.list > /dev/null
+    ```
+
+    On vérifie que le fichier a bien été écrit :
+
+    ```sh
+    nano /etc/apt/sources.list.d/qgis.list
+    ```
+
+    Ce qui donne sur Ubuntu 22.04 :
+
+    ```debsources
+    deb [arch=amd64 signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu
+    ```
+
+<!-- markdownlint-enable MD046 -->
 
 #### Alternative : le fichier `qgis.sources`
 
@@ -112,32 +147,65 @@ Il existe une autre façon de référencer le dépôt dans la liste des sources.
 
 On référence alors dans un fichier `/etc/apt/sources.list.d/qgis.sources` :
 
-```sh
-echo \
-"Types: deb deb-src
-URIs: https://qgis.org/ubuntu-ltr
-Suites: $(lsb_release -cs)
-Architectures: amd64
-Components: main
-Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg" | sudo tee /etc/apt/sources.list.d/qgis.sources > /dev/null
-```
+<!-- markdownlint-disable MD046 -->
+=== ":person_in_lotus_position: QGIS LTR"
 
-On vérifie que le fichier a bien été écrit :
+    ```sh
+    echo \
+    "Types: deb deb-src
+    URIs: https://qgis.org/ubuntu-ltr
+    Suites: $(lsb_release -cs)
+    Architectures: amd64
+    Components: main
+    Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg" | sudo tee /etc/apt/sources.list.d/qgis.sources > /dev/null
+    ```
 
-```sh
-nano /etc/apt/sources.list.d/qgis.sources
-```
+    On vérifie que le fichier a bien été écrit :
 
-Ce qui donne sur Ubuntu 22.04 :
+    ```sh
+    nano /etc/apt/sources.list.d/qgis.sources
+    ```
 
-```debsources
-Types: deb deb-src
-URIs: https://qgis.org/ubuntu-ltr
-Suites: jammy
-Architectures: amd64
-Components: main
-Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
-```
+    Ce qui donne sur Ubuntu 22.04 :
+
+    ```debsources
+    Types: deb deb-src
+    URIs: https://qgis.org/ubuntu-ltr
+    Suites: jammy
+    Architectures: amd64
+    Components: main
+    Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
+    ```
+
+=== ":person_juggling: QGIS, version 'basique'"
+
+    ```sh
+    echo \
+    "Types: deb deb-src
+    URIs: https://qgis.org/ubuntu
+    Suites: $(lsb_release -cs)
+    Architectures: amd64
+    Components: main
+    Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg" | sudo tee /etc/apt/sources.list.d/qgis.sources > /dev/null
+    ```
+
+    On vérifie que le fichier a bien été écrit :
+
+    ```sh
+    nano /etc/apt/sources.list.d/qgis.sources
+    ```
+
+    Ce qui donne sur Ubuntu 22.04 :
+
+    ```debsources
+    Types: deb deb-src
+    URIs: https://qgis.org/ubuntu
+    Suites: jammy
+    Architectures: amd64
+    Components: main
+    Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
+    ```
+<!-- markdownlint-enable MD046 -->
 
 ----
 
@@ -175,6 +243,8 @@ Sauf à avoir des besoins particuliers, il est toujours préférable de n'instal
 ## Nettoyage
 
 Parfois, que ce soit suite à une mise à jour de la distribution, à une mauvaise manip ou en ayant copié/collé une commande depuis un tuto comme celui-ci sans avoir vraiment cherché à comprendre, tout est cassé. Il est alors temps de faire le grand ménage.
+
+![GIF technique terre brûlée](https://media.tenor.com/fQmZ_N0b57kAAAAC/kaamelott-leodagan.gif){: .img-center loading=lazy }
 
 On désinstalle QGIS :
 
