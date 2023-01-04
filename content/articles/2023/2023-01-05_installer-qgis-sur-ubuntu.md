@@ -259,7 +259,7 @@ Pour cela, on ouvre le fichier :
 sudo nano /etc/apt/sources.list
 ```
 
-Et on supprime toutes les lignes qui contiennent une référence à QGIS. Toutes.
+Et on supprime toutes les lignes qui contiennent une référence à QGIS. Toutes. On quitte l'éditeur avec ++ctrl+x++ puis ++o++ pour confirmer.
 
 Puis on finit de lessiver les murs et sols :
 
