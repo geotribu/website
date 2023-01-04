@@ -82,7 +82,7 @@ plugins:
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
       match_path: "(articles|rdp)/.*"
-      pretty_print: true
+      pretty_print: false
       url_parameters:
         utm_source: "rss-feed"
         utm_medium: "RSS"
@@ -216,7 +216,8 @@ markdown_extensions:
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
       auto_append: [content/toc_nav_ignored/snippets/glossaire.md]
-      base_path: "."
+      base_path:
+        - "."
       check_paths: true
   - pymdownx.superfences:
       custom_fences:
