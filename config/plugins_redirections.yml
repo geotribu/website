@@ -2,9 +2,6 @@ redirects:
   redirect_maps:
     GeoRDP/20161028.md: rdp/2016/rdp_2016-10-14.md
     acknowledgements.md: team/index.md
-    contribuer/backup.md: contribuer/internal/backup.md
-    contribuer/build_site/markdown_engine.md: contribuer/internal/markdown_engine.md
-    contribuer/workflow_article.md: contribuer/articles/workflow.md
     dicogis.md: articles/2014/2014-09-25_dicogis.md
     install_webapp.md: articles/2020/2020-03-20_installer_site_comme_application.md
     interviews/itw_drones_crisis.md: articles/2014/2014-08-29_itw_drones_crisis.md
@@ -801,3 +798,8 @@ redirects:
     articles/2015/art_2015-02-16.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
     articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
     articles/2021/2021-06-17_qgis_personnaliser_splash_screen.md: articles/2021/2021-06-11_qgis_personnaliser_splash_screen.md
+
+    # migration du guide de contribution - janvier 2023
+    contribuer/backup.md: https://contribuer.geotribu.fr/internal/backup/
+    contribuer/build_site/markdown_engine.md: https://contribuer.geotribu.fr/internal/markdown_engine/
+    contribuer/workflow_article.md: https://contribuer.geotribu.fr/articles/workflow/
