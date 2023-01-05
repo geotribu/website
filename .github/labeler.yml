@@ -13,8 +13,7 @@ dependencies:
 
 mkdocs:
     - content/**/*.pages
-    - content/manifest.webmanifest
-    - mkdocs.yml
+    - mkdocs*.yml
 
 rdp:
     - content/rdp/**/*.md
