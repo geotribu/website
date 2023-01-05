@@ -803,3 +803,30 @@ redirects:
     contribuer/backup.md: https://contribuer.geotribu.fr/internal/backup/
     contribuer/build_site/markdown_engine.md: https://contribuer.geotribu.fr/internal/markdown_engine/
     contribuer/workflow_article.md: https://contribuer.geotribu.fr/articles/workflow/
+    contribuer/articles/workflow.md: https://contribuer.geotribu.fr/articles/workflow/
+    contribuer/edit/fix_content_from_website.md: https://contribuer.geotribu.fr/edit/fix_content_from_website/
+    contribuer/edit/local_edition_setup.md: https://contribuer.geotribu.fr/edit/local_edition_setup/
+    contribuer/guides/audio.md: https://contribuer.geotribu.fr/guides/audio/
+    contribuer/guides/authoring.md: https://contribuer.geotribu.fr/guides/authoring/
+    contribuer/guides/cdn-images-hebergement.md: https://contribuer.geotribu.fr/guides/cdn/
+    contribuer/guides/cdn-images-recherche.md: https://contribuer.geotribu.fr/guides/cdn/
+    contribuer/guides/diagrams.md: https://contribuer.geotribu.fr/guides/diagrams/
+    contribuer/guides/emoji.md: https://contribuer.geotribu.fr/guides/emoji/
+    contribuer/guides/image.md: https://contribuer.geotribu.fr/guides/image/
+    contribuer/guides/licensing.md: https://contribuer.geotribu.fr/guides/licensing/
+    contribuer/guides/markdown_basics.md: https://contribuer.geotribu.fr/guides/markdown_basics/
+    contribuer/guides/markdown_quality.md: https://contribuer.geotribu.fr/guides/markdown_quality/
+    contribuer/guides/metadata_yaml_frontmatter.md: https://contribuer.geotribu.fr/guides/metadata_yaml_frontmatter/
+    contribuer/guides/twitter.md: https://contribuer.geotribu.fr/guides/twitter/
+    contribuer/guides/video.md: https://contribuer.geotribu.fr/guides/video/
+    contribuer/internal/backup.md: https://contribuer.geotribu.fr/internal/backup/
+    contribuer/internal/git_hooks_precommit.md: https://contribuer.geotribu.fr/internal/git_hooks_precommit/
+    contribuer/internal/markdown_engine.md: https://contribuer.geotribu.fr/internal/markdown_engine/
+    contribuer/internal/markdown_linter.md: https://contribuer.geotribu.fr/internal/markdown_linter/
+    contribuer/internal/seo_extraits_enrichis.md: https://contribuer.geotribu.fr/internal/seo_extraits_enrichis/
+    contribuer/internal/social_cards.md: https://contribuer.geotribu.fr/internal/social_cards/
+    contribuer/rdp/add_news.md: https://contribuer.geotribu.fr/rdp/add_news/
+    contribuer/rdp/create_rdp.md: https://contribuer.geotribu.fr/rdp/create_rdp/
+    contribuer/rdp/publish.md: https://contribuer.geotribu.fr/rdp/publish/
+    contribuer/rdp/structure_news.md: https://contribuer.geotribu.fr/rdp/structure_news/
+    contribuer/rdp/workflow.md: https://contribuer.geotribu.fr/rdp/workflow/
