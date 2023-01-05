@@ -176,6 +176,7 @@ theme:
 # Customization
 extra:
   comments_url: https://comments.geotribu.fr # isso url
+  url_contribuer: https://contribuer.geotribu.fr/
   consent:
     title: Consentement 🍪
     actions:
