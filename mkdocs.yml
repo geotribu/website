@@ -57,10 +57,13 @@ plugins:
         - twemoji
       auto_caption: true
       caption_position: bottom
+  - meta
   - minify:
       minify_css: true
+      css_files:
+        - theme/assets/stylesheets/extra.css
+        - theme/assets/stylesheets/homepage.css
       minify_html: true
-      minify_js: false
       htmlmin_opts:
         remove_comments: true
   - rss:
@@ -79,7 +82,7 @@ plugins:
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
       match_path: "(articles|rdp)/.*"
-      pretty_print: true
+      pretty_print: false
       url_parameters:
         utm_source: "rss-feed"
         utm_medium: "RSS"
@@ -213,7 +216,8 @@ markdown_extensions:
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
       auto_append: [content/toc_nav_ignored/snippets/glossaire.md]
-      base_path: "."
+      base_path:
+        - "."
       check_paths: true
   - pymdownx.superfences:
       custom_fences:
@@ -222,6 +226,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde

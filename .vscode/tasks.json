@@ -99,7 +99,7 @@
                 "-m",
                 "mkdocs",
                 "build",
-                "--stric",
+                "--strict",
                 "--config-file",
                 "mkdocs.yml"
             ],

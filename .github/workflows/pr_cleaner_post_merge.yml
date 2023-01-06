@@ -28,7 +28,7 @@ jobs:
           cp scripts/redirect.html ${{ env.BUILD_DIR }}/index.html
 
       - name: Deploy preview to Netlify
-        uses: nwtgck/actions-netlify@v1.2
+        uses: nwtgck/actions-netlify@v2.0
         id: preview
         timeout-minutes: 1
         env:
