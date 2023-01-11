@@ -19,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 14 octobre 2020
 
-[![oceania forest](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg "exemple aerialod Oceania foret"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg){: data-mediabox="illustrations" data-title="Couverture forestière d'une partie de l'Océanie" }
+![oceania forest](https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg "exemple aerialod Oceania foret"){: .img-center loading=lazy }
 
 ## La cartographie 3D, passage à une autre géo-dimension
 
@@ -32,11 +32,11 @@ Des noms et leurs créations viennent également :
 
 - Sean Conway réalise des cartes visuellement impressionnantes. Il travaille pour Quantum Spatial aux Etats-Unis, en tant que spécialiste orthophoto. Et au vu de ses créations, il a clairement un sacré sens artistique ! Il utilise notamment QGIS et Blender pour ses rendus. Vous pouvez admirer son travail [sur son profil Twitter](https://twitter.com/geo_spatialist?s=20).
 
-[![france geologique](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png "Carte géologique France 3D"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png){: data-mediabox="illustrations" data-title="Carte Géologique de la France, à l'échelle du millionième, Exécutée en utilisant les documents publiés par le Service de la Carte géologique détaillée de la France - Ministère des Travaux Publics - 1905" }
+![france geologique](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png "Carte géologique France 3D"){: .img-center loading=lazy }
 
 - [Alasdair Rae](https://twitter.com/undertheraedar?s=09), anciennement Professeur des étude urbaines et de la planification et qui a fondé récemment [Automatic Knowledge](https://automaticknowledge.co.uk/), a notamment produit des cartes 3D avec la densité de population comme donnée entrante par exemple
 
-[![population mondiale](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png "Population mondiale pics Alasdair Rae"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png){: data-mediabox="illustrations" data-title="Densité de population mondiale" }
+![population mondiale](https://cdn.geotribu.fr/img/tuto/aerialod/alasdair_rae.png "Population mondiale pics Alasdair Rae"){: .img-center loading=lazy }
 
 Il utilise le logiciel gratuit Aerialod, développé par [ephtracy](https://twitter.com/ephtracy?s=09), plus connu pour être le créateur de MagicaVoxel, logiciel de création de voxels (pixels 3D).
 
@@ -51,7 +51,7 @@ Le principe général du logiciel est d'afficher une extrusion s'appuyant sur la
 A la demande générale :drum: (surtout celle de Julien Moura...), cet article a pour but d'expliquer en quoi ce "petit" logiciel est puissant et très simple d'utilisation, grâce à un côté hyper ludique. On peut rapidement passer du temps à jouer avec des angles de caméra, des couleurs, des ouvertures, des zooms et des rendus différents. Je ne prétends pas en être spécialiste, et ne pourrait donc pas apporter des détails poussés sur chaque fonctionnalité.
 En revanche, cet article vous donnera une entrée en matière consistante, permettant de comprendre les principes de fonctionnement généraux de l'application. En espérant que cela vous inspire, et qu'il vous donnera envie, j'en suis sûr, de créer de beaux visuels !
 
-[![oleron 3D](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png "Oleron 3D render"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png){: data-mediabox="illustrations" data-title="Oleron 3D" }
+![oleron 3D](https://cdn.geotribu.fr/img/tuto/aerialod/oleron_v2.png "Oleron 3D render"){: .img-center loading=lazy }
 
 ----
 
@@ -74,21 +74,21 @@ A "petit" logiciel (30 Mo une fois dézippé...), interface hyper simple !
 
 Elle se décompose en 3 parties : Le panneau de gauche gère les options principalement autour de la lumière, le panneau de droite gère plutôt le rendu caméra et le panneau central affiche le résultat.
 
-[![interface ouverture](https://cdn.geotribu.fr/img/tuto/aerialod/interface_aerialod.png "Interface ouverture"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/interface_aerialod.png){: data-mediabox="captures tuto" data-title="Interface ouverture" }
+![interface ouverture](https://cdn.geotribu.fr/img/tuto/aerialod/interface_aerialod.png "Interface ouverture"){: .img-center loading=lazy }
 
 ### Panneau de gauche
 
-[![panneau de gauche](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_gauche_1bis.jpg "Panneau gauche"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_gauche_1bis.jpg){: data-mediabox="captures tuto" data-title="Panneau de gauche" }
+![panneau de gauche](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_gauche_1bis.jpg "Panneau gauche"){: .img-center loading=lazy }
 
 ### Panneau du centre
 
 La partie centrale, en plus d'afficher le rendu, permet d'afficher le nom des options en bas et le paramétrage de la caméra : vue personnelle, freestyle, orthogonale ou isométrique.
 
-[![panneau central](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_centre2.png "Panneau central"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_centre2.png){: data-mediabox="captures tuto" data-title="Panneau central" }
+![panneau central](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_centre2.png "Panneau central"){: .img-center loading=lazy }
 
 ### Panneau de droite
 
-[![panneau de droite](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_droite.jpg "Panneau de droite"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_droite.jpg){: data-mediabox="captures tuto" data-title="Panneau de droite" }
+![panneau de droite](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_droite.jpg "Panneau de droite"){: .img-center loading=lazy }
 
 Une dernière partie encore non évoquée se trouve en haut à droite du logiciel avec 4 boutons.
 
@@ -105,7 +105,7 @@ Si tout ça n'est pour l'instant pas très clair, pas d'inquiétude, ça vient t
 Dans la suite de cet article, lorsque nous parlerons d'une fonctionnalité particulière, il sera indiqué *le nom* qui s'affiche au survol de la souris, en bas du panneau principal.
 De plus, chaque capture d'écran affichera également les paramètres appliqués, afin que vous puissiez suivre et reproduire les manipulations.
 
-[![nom fonction](https://cdn.geotribu.fr/img/tuto/aerialod/nom_fonction.png "Nom fonction"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/nom_fonction.png){: data-mediabox="captures tuto" data-title="Affichage du nom de la fonction en passant la souris" }
+![nom fonction](https://cdn.geotribu.fr/img/tuto/aerialod/nom_fonction.png "Nom fonction"){: .img-center loading=lazy }
 
 !!! check "Où trouver des données ?"
     Il est possible de trouver un certain nombre de MNT en open data sur internet, notamment sur [data.gouv.fr](https://www.data.gouv.fr/fr/search/?q=mnt) pour le territoire français.
@@ -126,7 +126,7 @@ Pour l'afficher, vous pouvez l'ouvrir en cliquant sur le bouton en haut à droit
 
 Aerialod l'ouvre alors (s'il n'est pas trop gros).
 
-[![import aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/import.png "Import aerialod"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/import.png){: data-mediabox="captures tuto" data-title="Affichage du MNT après import" }
+![import aerialod](https://cdn.geotribu.fr/img/tuto/aerialod/import.png "Import aerialod"){: .img-center loading=lazy }
 
 Quelques éléments de base pour la manipulation du rendu :
 
@@ -142,13 +142,13 @@ Dans un premier temps, vous pouvez modifier la couleur du terrain sur la fenêtr
 
 Il est ensuite possible de jouer sur la hauteur de rendu des pixels grâce à l'option *Scale* (panneau de droite), afin d'exagérer un peu le relief. Cela peut donner quelque chose comme ça :
 
-[![couleurs](https://cdn.geotribu.fr/img/tuto/aerialod/couleurs.png "Modification des couleurs"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/couleurs.png){: data-mediabox="captures tuto" data-title="Modification des couleurs" }
+![couleurs](https://cdn.geotribu.fr/img/tuto/aerialod/couleurs.png "Modification des couleurs"){: .img-center loading=lazy }
 
 Nous avons déjà une première idée (exagérée certes, mais c'est quand même beau comme ça :sunglasses:) du relief de Bora Bora.
 
 On peut maintenant jouer sur les angles du soleil pour avoir un premier rendu différent, dans la fenêtre de gauche *Pitch Angle of Sun Light* / *Yaw Angle of Sun Light*.
 
-[![scale](https://cdn.geotribu.fr/img/tuto/aerialod/scale.png "Scale"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/scale.png){: data-mediabox="captures tuto" data-title="Modification du Scale" }
+![scale](https://cdn.geotribu.fr/img/tuto/aerialod/scale.png "Scale"){: .img-center loading=lazy }
 
 Il est possible de changer le mode de vue grâce au bouton en bas à droite du panneau central, pour avoir une idée de l'horizon, en passant par exemple sur la *Perspective camera*.
 
@@ -159,26 +159,26 @@ Si nous souhaitons nous rapprocher un peu de la "réalité", il faudrait que le 
 
 Pour cela, il suffit de modifier l'*Offset* dans le panneau de droite.
 
-[![relief sous marins](https://cdn.geotribu.fr/img/tuto/aerialod/reliefs_sous_marins.png "Reliefs sous-marins"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/reliefs_sous_marins.png){: data-mediabox="captures tuto" data-title="Reliefs sous-marins" }
+![relief sous marins](https://cdn.geotribu.fr/img/tuto/aerialod/reliefs_sous_marins.png "Reliefs sous-marins"){: .img-center loading=lazy }
 
 Bien, fini de jouer ! Diminuons l'*Offset* pour relever le niveau de la mer.
 
 Etant donné que je connais très bien Bora-Bora :laughing: (merci Google Maps...), "-77" apparait comme une valeur d'*Offset* pertinente pour cette représentation.
 
-[![offset](https://cdn.geotribu.fr/img/tuto/aerialod/offset.jpg "Réglage de l'offset"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/offset.jpg){: data-mediabox="captures tuto" data-title="Réglage de l'offset" }
+![offset](https://cdn.geotribu.fr/img/tuto/aerialod/offset.jpg "Réglage de l'offset"){: .img-center loading=lazy }
 
 Pour rappel, en réalisant un clic-droit souris et en la bougeant vers le haut vous devriez voir l'horizon apparaître (si vous êtes bien passés auparavant en vue *Perspective* avec le bouton en bas à droite du panneau central).
 
 Afin de rajouter un peu de réalisme, vous pouvez choisir un autre type de ciel appelé *Atmospheric Scattering*. Cela va jouer sur la lumière ambiante et le rendu, et nous avons maintenant la possibilité de rendre visible le soleil, ce qui peut donner un effet sympa. Pour ce faire, dans le panneau de gauche, activez le bouton rond *Show Sun Disk*.
 
-[![soleil](https://cdn.geotribu.fr/img/tuto/aerialod/sun.jpg "Hou le beau soleil !"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/sun.jpg){: data-mediabox="captures tuto" data-title="Hou le beau soleil !" }
+![soleil](https://cdn.geotribu.fr/img/tuto/aerialod/sun.jpg "Hou le beau soleil !"){: .img-center loading=lazy }
 
 Ici l'azimut du soleil est assez faible, nous permettant de l'apercevoir, tout en créant des ombres dignes d'une aube peu éclairante. 2 solutions pour y voir un peu plus clair :
 
 - vous souhaitez garder visible le soleil et vous modifiez l'exposition (panneau de droite *Exposure*)
 - vous ne voyez pas d'intérêt à garder visible directement le soleil et vous modifiez son azimut. Plus celui-ci sera proche de 90 (degrés) et plus vous imiterez un moment de la journée proche de midi (donc très exposé).
 
-[![midi](https://cdn.geotribu.fr/img/tuto/aerialod/midi.jpg "Une meilleure exposition"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/midi.jpg){: data-mediabox="captures tuto" data-title="Une meilleure exposition" }
+![midi](https://cdn.geotribu.fr/img/tuto/aerialod/midi.jpg "Une meilleure exposition"){: .img-center loading=lazy }
 
 La modification de la valeur *Rayleigh* (panneau de gauche) permet de jouer sur la diffusion de la lumière et certains effets peuvent être intéressants. [Pour en savoir plus sur la diffusion Rayleigh, une Wikipedia-pause s'impose](https://fr.wikipedia.org/wiki/Diffusion_Rayleigh) !
 
@@ -186,34 +186,34 @@ La partie du panneau de gauche appelé *Sample* est un ensemble d'effet permetta
 
 L'option *Grid*" (panneau de gauche) permet l'affichage d'une grille sur le terrain de base ou sur le rendu directement. Vous pouvez sélectionner l'épaisseur du trait ainsi que son espacement.
 
-[![grid](https://cdn.geotribu.fr/img/tuto/aerialod/grid.jpg "Une bien belle grille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/grid.jpg){: data-mediabox="captures tuto" data-title="Une bien belle grille" }
+![grid](https://cdn.geotribu.fr/img/tuto/aerialod/grid.jpg "Une bien belle grille"){: .img-center loading=lazy }
 
 Si on zoome un peu, on peut s'apercevoir que le rendu est très cubique. On peut l'exagérer en modifiant le *Step* et le *Lod* (panneau de droite) par exemple. Mais nous pouvons également tenté de l'aplatir en sélectionnant le rendu *Bilinear Surface Mode* (panneau de droite toujours).
 
-[![cube](https://cdn.geotribu.fr/img/tuto/aerialod/cube.jpg "Cube"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/cube.jpg){: data-mediabox="captures tuto" data-title="Mode cube on" }
+![cube](https://cdn.geotribu.fr/img/tuto/aerialod/cube.jpg "Cube"){: .img-center loading=lazy }
 
-[![cube exagere](https://cdn.geotribu.fr/img/tuto/aerialod/cube_exagere.jpg "Cube exagéré"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/cube_exagere.jpg){: data-mediabox="captures tuto" data-title="Cube exagéré" }
+![cube exagere](https://cdn.geotribu.fr/img/tuto/aerialod/cube_exagere.jpg "Cube exagéré"){: .img-center loading=lazy }
 
-[![mode surface](https://cdn.geotribu.fr/img/tuto/aerialod/surface_mode.png "Mode surface on"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/surface_mode.png){: data-mediabox="captures tuto" data-title="Mode surface on" }
+![mode surface](https://cdn.geotribu.fr/img/tuto/aerialod/surface_mode.png "Mode surface on"){: .img-center loading=lazy }
 
 Tout ça fait partie des multiples paramètres sur lesquels il est possible de jouer, afin d'avoir des rendus relativement différents.
 
 Dernière chose concernant les effets, il est possible de réaliser un focus sur un élément particulier que vous souhaiteriez mettre en valeur (et donc flouter les autres) en cliquant sur cet élément.
 Vous pouvez ensuite paramétrer cet effet grâce à la partie *Lens* (panneau de droite).
 
-[![lens](https://cdn.geotribu.fr/img/tuto/aerialod/lens.jpg "Effet d'ouverture"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/lens.jpg){: data-mediabox="captures tuto" data-title="Effet d'ouverture" }
+![lens](https://cdn.geotribu.fr/img/tuto/aerialod/lens.jpg "Effet d'ouverture"){: .img-center loading=lazy }
 
-[![panorama](https://cdn.geotribu.fr/img/tuto/aerialod/panorama.jpg "Mais quel beau panorama !"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/panorama.jpg){: data-mediabox="captures tuto" data-title="Mais quel beau panorama !" }
+![panorama](https://cdn.geotribu.fr/img/tuto/aerialod/panorama.jpg "Mais quel beau panorama !"){: .img-center loading=lazy }
 
 Enfin, Aerialod offre la possibilité d'exporter vos rendus grâce à la partie Image du panneau de droite. Il ne vous reste qu'à sélectionner la hauteur et la largeur souhaitées, puis cliquez sur *Render* et attendez que le logiciel fasse le reste :ok_hand:.
 
-[![rendu bora bora](https://cdn.geotribu.fr/img/tuto/aerialod/bora_bora.png "Un exemple de rendu de Bora-Bora"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/bora_bora.png){: data-mediabox="captures tuto" data-title="Un exemple de rendu de Bora-Bora" }
+![rendu bora bora](https://cdn.geotribu.fr/img/tuto/aerialod/bora_bora.png "Un exemple de rendu de Bora-Bora"){: .img-center loading=lazy }
 
 Deux autres types de rendu un peu différent :
 
-[![population france](https://cdn.geotribu.fr/img/tuto/aerialod/france_pop.png "Population française"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/france_pop.png){: data-mediabox="illustrations" data-title="Population française" }
+![population france](https://cdn.geotribu.fr/img/tuto/aerialod/france_pop.png "Population française"){: .img-center loading=lazy }
 
-[![forets espagne](https://cdn.geotribu.fr/img/tuto/aerialod/espagne_foret.jpg "Forêts espagnoles"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/aerialod/espagne_foret.jpg){: data-mediabox="illustrations" data-title="Forêts espagnoles" }
+![forets espagne](https://cdn.geotribu.fr/img/tuto/aerialod/espagne_foret.jpg "Forêts espagnoles"){: .img-center loading=lazy }
 
 ----
 

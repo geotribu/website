@@ -1,92 +1,94 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
-  {# SEO Robots #}
-  {% if page and page.meta and page.meta.robots %}
-    <meta property="robots" content="{{ page.meta.robots }}" />
-  {% elif page and "toc_nav_ignored/snippets" in page.canonical_url %}
-    <meta property="robots" content="noindex,nofollow" />
-  {% else %}
-    <meta property="robots" content="index, follow" />
-  {% endif %}
+{# SEO Robots #}
+{% if page and page.meta and page.meta.robots %}
+<meta property="robots" content="{{ page.meta.robots }}" />
+{% elif page and "toc_nav_ignored/snippets" in page.canonical_url %}
+<meta property="robots" content="noindex,nofollow" />
+{% else %}
+<meta property="robots" content="index, follow" />
+{% endif %}
 
-  {# RSS Feed #}
-  <link rel="alternate" type="application/rss+xml" title="RSS feed of created content" href="{{ config.site_url }}feed_rss_created.xml">
-  <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="{{ config.site_url }}feed_rss_updated.xml">
+{# RSS Feed #}
+<link rel="alternate" type="application/rss+xml" title="RSS feed of created content"
+  href="{{ config.site_url }}feed_rss_created.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS feed of updated content"
+  href="{{ config.site_url }}feed_rss_updated.xml">
 
-  {# Meta title #}
-  {% set title = config.site_name %}
-  {% if page and page.meta and page.meta.title %}
-    {% set title = title ~ " - " ~ page.meta.title %}
-  {% elif page and page.title and not page.is_homepage %}
-    {% set title = title ~ " - " ~ page.title | striptags %}
-  {% endif %}
+{# Meta title #}
+{% set title = config.site_name %}
+{% if page and page.meta and page.meta.title %}
+{% set title = title ~ " - " ~ page.meta.title %}
+{% elif page and page.title and not page.is_homepage %}
+{% set title = title ~ " - " ~ page.title | striptags %}
+{% endif %}
 
-  {# Meta date #}
-  {% if page and page.meta and page.meta.date %}
-    {% set date = page.meta.date %}
-  {% endif %}
-  {# Meta description #}
-  {% set description = config.site_description %}
-  {% if page and page.meta and page.meta.description %}
-    {% set description = page.meta.description | striptags %}
-  {% elif page and page.description and not page.is_homepage %}
-    {% set description = page.description | striptags %}
-  {% endif %}
-  {# Meta image #}
-  {% set image = 'https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg' %}
-  {% if page and page.meta and page.meta.image %}
-    {% set image = page.meta.image %}
-  {% endif %}
-  {# Meta author #}
-  {% set author = config.site_author %}
-  {% if page and page.meta and page.meta.authors and not page.is_homepage %}
-    {% set author = page.meta.authors %}
-  {% elif page and page.meta and page.meta.author and not page.is_homepage %}
-    {% set author = page.meta.author %}
-  {% endif %}
+{# Meta date #}
+{% if page and page.meta and page.meta.date %}
+{% set date = page.meta.date %}
+{% endif %}
+{# Meta description #}
+{% set description = config.site_description %}
+{% if page and page.meta and page.meta.description %}
+{% set description = page.meta.description | striptags %}
+{% elif page and page.description and not page.is_homepage %}
+{% set description = page.description | striptags %}
+{% endif %}
+{# Meta image #}
+{% set image = 'https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg' %}
+{% if page and page.meta and page.meta.image %}
+{% set image = page.meta.image %}
+{% endif %}
+{# Meta author #}
+{% set author = config.site_author %}
+{% if page and page.meta and page.meta.authors and not page.is_homepage %}
+{% set author = page.meta.authors %}
+{% elif page and page.meta and page.meta.author and not page.is_homepage %}
+{% set author = page.meta.author %}
+{% endif %}
 
-  {% if author is iterable and (author is not string and author is not mapping) %}
-    {% for a in author %}
-      {% if author != config.site_author %}
-        <meta name="author" content="{{ a }}">
-      {% endif %}
-    {% endfor %}
-  {% elif author is string and author != config.site_author %}
-    <meta name="author" content="{{ author }}">
-  {% endif %}
+{% if author is iterable and (author is not string and author is not mapping) %}
+{% for a in author %}
+{% if author != config.site_author %}
+<meta name="author" content="{{ a }}">
+{% endif %}
+{% endfor %}
+{% elif author is string and author != config.site_author %}
+<meta name="author" content="{{ author }}">
+{% endif %}
 
-  {# Cache-control #}
-  <meta http-equiv="cache-control" content="max-age=14400" />
-  <meta http-equiv="cache-control" content="public">
-  <meta http-equiv="expires" content="43200"/>
+{# Cache-control #}
+<meta http-equiv="cache-control" content="max-age=14400" />
+<meta http-equiv="cache-control" content="public">
+<meta http-equiv="expires" content="43200" />
 
-  {# Meta type #}
-  {% if page.is_homepage %}
-    {% set type = "website" %}
-  {% else %}
-    {% set type = "article" %}
-  {% endif %}
+{# Meta type #}
+{% if page.is_homepage %}
+{% set type = "website" %}
+{% else %}
+{% set type = "article" %}
+{% endif %}
 
-  {# OpenGraph #}
-  <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="{{ image }}">
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:title" content="{{ title }}">
-  <meta property="og:type" content="{{ type }}">
-  <meta property="og:url" content="{{ page.canonical_url }}">
-  {# Twitter #}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:creator" content="@geojulien" />
-  <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:dnt" content="on">
-  <meta name="twitter:image" content="{{ image }}">
-  <meta name="twitter:site" content="@geotribu" />
-  <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:widgets:align" content="center">
-  {# Structured data using schema.org #}
-  {% if type == "article" %}
-    <script type="application/ld+json">
+{# OpenGraph #}
+<meta property="og:description" content="{{ description }}">
+<meta property="og:image" content="{{ image }}">
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:title" content="{{ title }}">
+<meta property="og:type" content="{{ type }}">
+<meta property="og:url" content="{{ page.canonical_url }}">
+{# Twitter #}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@geojulien" />
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:dnt" content="on">
+<meta name="twitter:image" content="{{ image }}">
+<meta name="twitter:site" content="@geotribu" />
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:widgets:align" content="center">
+{# Structured data using schema.org #}
+{% if type == "article" %}
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -98,6 +100,60 @@
       "abstract": "{{ description }}",
       "datePublished": "{{ date }}",
       "image": "{{ image }}",
+      {% if "rdp/" in page.canonical_url %}
+        {# GeoRDP #}
+        "author": {
+          "@type": "Organization",
+          "name": "{{ config.site_author }}",
+          "url": "{{ config.site_url }}"
+        },
+      {% elif author is iterable and (author is not string and author is not mapping) %}
+        {% if author | length > 1 %}
+          {# plusieurs auteurs #}
+          "author": [
+          {% for a in author %}
+              {% if a != config.site_author %}
+                {% set author_split = a.split(' ', 1) %}
+                {
+                "@type": "Person",
+                "name": "{{ a }}",
+                "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
+                {% if a != author|last %}
+                {# Si l'auteur n'est pas le dernier de la liste, on ajoute une virgule #}
+                  },
+                {% else %}
+                {# Si c'est le dernier, pas de virgule #}
+                  }
+                {% endif %}
+              {% endif %}
+          {% endfor %}
+          ],
+        {% elif author[0] == config.site_author %}
+         {# un seul auteur qui est Geotribu #}
+          "author": {
+            "@type": "Organization",
+            "name": "{{ config.site_author }}",
+            "url": "{{ config.site_url }}"
+          },
+        {% else %}
+
+         {# un seul auteur qui n'est pas Geotribu #}
+          {% set author_split = author[0].split(' ', 1) %}
+
+          "author": {
+            "@type": "Person",
+            "name": "{{ author[0] }}",
+            "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
+          },
+        {% endif %}
+      {% else %}
+        {# Par défaut #}
+        "author": {
+          "@type": "Organization",
+          "name": "{{ config.site_author }}",
+          "url": "{{ config.site_url }}"
+        },
+      {% endif %}
       "publisher": {
         "@type": "Organization",
         "name": "Geotribu",
@@ -108,101 +164,101 @@
       }
     }
     </script>
+{% elif type == "website" %}
+<script type='application/ld+json'>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Geotribu",
+        "alternateName": "Géotribu",
+        "url": "{{ config.site_url }}",
+        "sameAs": [
+          "http://geotribu.fr",
+          "http://geotribu.net",
+          "https://github.com/geotribu/",
+          "https://facebook.com/geotribu",
+          "https://twitter.com/geotribu"
+        ],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ config.site_url }}?q={search_term}",
+          "query-input": "required name=search_term"
+        }
+      }
+    </script>
 {% endif %}
 {% endblock %}
 
 {% block libs %}
-  {# Handle Twitter oEmbed - See #54 #}
-  <script charset="utf-8" id="twitter-wjs" type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+{# Handle Twitter oEmbed - See #54 #}
+<script charset="utf-8" id="twitter-wjs" type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
 
 {% endblock %}
 
 {% block content %}
-  {{ super() }}
+{{ super() }}
 
+{# Authoring based on git log #}
+{# note: commenté car plus utilisé depuis l'intégration des avatrs GitHub en bas de page
+{% if git_page_authors %}
+<div class="md-source-date">
+  <small>
+    Contributions à cette page : {{ git_page_authors }}
+  </small>
+</div>
+{% endif %}
+#}
+
+
+{# License #}
+{% if not page.is_homepage and ("license" not in page.meta or page.meta.license == "default") %}
+<hr>
+<div class="md-source-date">
+  <small>
+    <p xmlns:cc="http://creativecommons.org/ns#">
+      Ce contenu est sous licence Creative Commons
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank"
+        rel="license noopener noreferrer">BY-NC-SA 4.0 International
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" class=img-license-picto
+          alt="Pictogramme Creative Commons" longdesc="https://creativecommons.org/licenses/?lang=fr-FR" title="CC" />
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" class=img-license-picto
+          alt="Pictogramme Creative Commons BY" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
+          title="BY" />
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" class=img-license-picto
+          alt="Pictogramme Creative Commons NC" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
+          title="NC" />
+        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" class=img-license-picto
+          alt="Pictogramme Creative Commons SA" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
+          title="SA" />
+      </a>
+    </p>
+  </small>
+</div>
+{% endif %}
+
+<!-- Get setting from mkdocs.yml, but allow page-level overrides -->
+{% set comments = config.extra.comments_url %}
+{% if page and page.meta and page.meta.disqus is string %}
+{% set comments = page.meta.disqus %}
+{% endif %}
+
+{% if not page.is_homepage and comments %}
+{# Comment system (Isso) #}
+<div id="__comments">
+  <script data-isso="{{ config.extra.comments_url }}/" data-isso-feed="true" data-isso-reply-notifications="true"
+    data-isso-reply-to-self="false" data-isso-require-author="true" data-isso-require-email="true" data-isso-vote="true"
+    src="{{ config.extra.comments_url }}/js/embed.min.js">
+    </script>
   <hr>
-  {# Authoring based on git log #}
-  {% if git_page_authors %}
-    <div class="md-source-date">
-      <small>
-        Contributions à cette page : {{ git_page_authors }}
-      </small>
-    </div>
-  {% endif %}
-
-  {# License #}
-  {% if not page.is_homepage  and ("license" not in page.meta or page.meta.license == "default") %}
-    <div class="md-source-date">
-      <small>
-      <p xmlns:cc="http://creativecommons.org/ns#">
-        Ce contenu est sous licence Creative Commons
-        <a
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
-          target="_blank"
-          rel="license noopener noreferrer"
-          >BY-NC-SA 4.0 International
-            <img
-            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
-            class=img-license-picto
-            alt="Pictogramme Creative Commons"
-            longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-            title="CC"
-            />
-          <img
-            src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-            class=img-license-picto
-            alt="Pictogramme Creative Commons BY"
-            longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-            title="BY"
-            />
-          <img
-            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
-            class=img-license-picto
-            alt="Pictogramme Creative Commons NC"
-            longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-            title="NC"
-            />
-          <img
-            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
-            class=img-license-picto
-            alt="Pictogramme Creative Commons SA"
-            longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-            title="SA"
-            />
-        </a>
-      </p>
-      </small>
-    </div>
-  {% endif %}
-
-  <!-- Get setting from mkdocs.yml, but allow page-level overrides -->
-  {% set comments = config.extra.comments_url %}
-  {% if page and page.meta and page.meta.disqus is string %}
-    {% set comments = page.meta.disqus %}
-  {% endif %}
-
-  {% if not page.is_homepage and comments %}
-  {# Comment system (Isso) #}
-    <div id="__comments">
-      <script
-        data-isso="{{ config.extra.comments_url }}/"
-        data-isso-feed="true"
-        data-isso-reply-notifications="true"
-        data-isso-reply-to-self="false"
-        data-isso-require-author="true"
-        data-isso-require-email="true"
-        data-isso-vote="true"
-        src="{{ config.extra.comments_url }}/js/embed.min.js">
-        </script>
-      <hr>
-      <section id="isso-thread">
-        <h2>Commentaires</h2>
-        <small>
-          Une version minimale de la <a href="/contribuer/guides/markdown_basics/" hreflang="fr" target="_blank">syntaxe
-            markdown</a> est
-          acceptée pour la mise en forme des commentaires.<br>Propulsé par <a href="https://posativ.org/isso/" hreflang="en" target="_blank">Isso</a>. </small>
-      </section>
-      <noscript>Please enable JavaScript to view the comments.</noscript>
-    </div>
-  {% endif %}
+  <section id="isso-thread">
+    <h2>Commentaires</h2>
+    <small>
+      Une version minimale de la <a href="/contribuer/guides/markdown_basics/" hreflang="fr" target="_blank">syntaxe
+        markdown</a> est
+      acceptée pour la mise en forme des commentaires.<br>Propulsé par <a href="https://posativ.org/isso/" hreflang="en"
+        target="_blank">Isso</a>. </small>
+  </section>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+</div>
+{% endif %}
 {% endblock %}

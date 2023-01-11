@@ -119,7 +119,7 @@ source_nom_voie: String (0.0)
 
 ![logo GDAL next](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_next_logo.png "logo GDAL next"){: .img-rdp-news-thumb }
 
-En regardant le modèle du [format BAN] et la [documentation GDAL sur les CSV](https://gdal.org/drivers/vector/csv.html#open-options), on peut dès lors améliorer encore un peu les choses :
+En regardant le modèle du [format BAN](https://doc.adresse.data.gouv.fr/utiliser-la-base-adresse-nationale/les-fichiers-de-la-base-adresse-nationale) et la [documentation GDAL sur les CSV](https://gdal.org/drivers/vector/csv.html#open-options), on peut dès lors améliorer encore un peu les choses :
 
 - demander à GDAL de déterminer les types et la longueur des différents champs
 - indiquer que la première ligne est un en-tête
@@ -352,13 +352,13 @@ ogr2ogr \
 
 ![logo BAL](https://cdn.geotribu.fr/img/logos-icones/divers/bal.png "logo BAL"){: .img-rdp-news-thumb }
 
-Pour le [format BAL] qui est bien documenté grâce aux petits soins de l'[AITF] (merci entre autres à Maël Reboux et Chantal Arruti), on retrouve peu ou prou la même logique si ce n'est que les CSV sont stockés sans compression sur le site statique de data.gouv.fr.
+Pour le [format BAL](https://schema.data.gouv.fr/etalab/schema-bal/latest.html) qui est bien documenté grâce aux petits soins de l'[AITF] (merci entre autres à Maël Reboux et Chantal Arruti), on retrouve peu ou prou la même logique si ce n'est que les CSV sont stockés sans compression sur le site statique de data.gouv.fr.
 
 Ce qui nous donne :
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<OGRVRTDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/gdal/data/ogrvrt.xsd">
+<OGRVRTDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/data/ogrvrt.xsd">
     <OGRVRTLayer name="bayonne">
         <SrcDataSource>/vsicurl/https://static.data.gouv.fr/resources/adresses-au-format-bal-bayonne/20210802-091433/20210731-bal-216401026.csv</SrcDataSource>
         <SrcLayer>20210731-bal-216401026</SrcLayer>
@@ -396,7 +396,7 @@ ogr2ogr \
 
 Après tout ce travail, on vérifie le rendu et la structure des données dans notre SIG préféré :
 
-[![QGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "QGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png){: data-mediabox="lightbox-gallery" data-title="QGIS - Rendu final des donnés BAN et BAL" }
+![QGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "QGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }
 
 ----
 
@@ -425,26 +425,26 @@ String,String,String,String,String,String,String,String,Integer,String,String,Co
 
 ![icône XML](https://cdn.geotribu.fr/img/logos-icones/divers/xml.png "icône XML - XML File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
 
-Comme indiqué dans la documentation, le [schéma du format VRT est défini par un XSD](https://github.com/OSGeo/gdal/blob/master/gdal/data/ogrvrt.xsd) ([XML Schema Definition](https://fr.wikipedia.org/wiki/XML_Schema)) qu'il peut être utile d'indiquer dans l'espace de nommage :
+Comme indiqué dans la documentation, le [schéma du format VRT est défini par un XSD](https://github.com/OSGeo/gdal/blob/master/data/ogrvrt.xsd) ([XML Schema Definition](https://fr.wikipedia.org/wiki/XML_Schema)) qu'il peut être utile d'indiquer dans l'espace de nommage :
 
 ```xml
 <OGRVRTDataSource
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/gdal/data/ogrvrt.xsd"
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/OSGeo/gdal/master/data/ogrvrt.xsd"
     >
 ```
 
 Par exemple, si comme moi vous utilisez Visual Studio Code, vous pouvez profiter de l'auto-complétion et de la validation via une extension comme [XML Complete](https://marketplace.visualstudio.com/items?itemName=rogalmic.vscode-xml-complete) :
 
-[![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png){: data-mediabox="lightbox-gallery" data-title="Visual Studio Code - XML Complete" }
+![VS Code XSD GDAL VRT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/vscode_gdal_vrt_help.png "Visual Studio Code - XML Complete"){: .img-center loading=lazy }
 
 ----
 
 ## Conclusion
 
-[![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png){: data-mediabox="lightbox-gallery" data-title="GDAL c'est de la BAL" }
+![GDAL BAL](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png "GDAL c'est de la BAL"){: .img-center loading=lazy }
 
-Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. On pourrait le suggérer aux équipes Etalab/ANCT et/ou à l'AITF. Qu'en pensez-vous ?
+Blague à part, en rédigeant ce tuto, je me dis que ce serait pertinent d'intégrer le CSVT aux côtés des CSV téléchargeables :thinking:. On pourrait le suggérer aux équipes Etalab/ANCT et/ou à l'[AITF]. Qu'en pensez-vous ?
 
 Par ailleurs, n'étant pas non plus un spécialiste des données d'adressage, si vous pensez pouvoir améliorer ces fichiers VRT et/ou CSVT, n'hésitez pas à faire vos remarques en commentaire !
 
@@ -470,5 +470,3 @@ Enfin, si la ligne de commande vous effraie, il y a aussi des outils disponibles
 
 <!-- Hyperlinks reference -->
 [AITF]: https://www.aitf.fr/
-[format BAL]: https://schema.data.gouv.fr/etalab/schema-bal/latest.html
-[format BAN]: https://doc.adresse.data.gouv.fr/utiliser-la-base-adresse-nationale/les-fichiers-de-la-base-adresse-nationale

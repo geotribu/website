@@ -3,7 +3,7 @@
 {% block styles %}
 {{ super() }}
 
-<link rel=stylesheet href=theme/assets/stylesheets/homepage.css>
+<link rel=stylesheet href=theme/assets/stylesheets/homepage.min.css>
 {% endblock %}
 
 <!-- Render hero under tabs -->
@@ -47,14 +47,10 @@
         </div>
         <div class="second-column">
           <div class="image-wrapper">
-            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" >
-              <img
-                src="{{ page.next_page.meta.image }}"
-                alt="lien vers la {{ page.next_page.title | e }}"
-                loading="lazy"
-                draggable="false"
-                title="Illustration de la {{ page.next_page.title | e }}">
-                <div class="image-overlay">{{ page.next_page.meta.description | truncate(100, False) | e }}</div>
+            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}">
+              <img src="{{ page.next_page.meta.image }}" alt="lien vers la {{ page.next_page.title | e }}"
+                loading="lazy" draggable="false" title="Illustration de la {{ page.next_page.title | e }}">
+              <div class="image-overlay">{{ page.next_page.meta.description | truncate(100, False) | e }}</div>
             </a>
           </div>
         </div>
@@ -63,8 +59,7 @@
       <div class="component-wrapper" style="display: block;">
         <h4></h4>
         <div class="responsive-grid">
-          <a class="card-wrapper"
-            href="/contribuer/rdp/add_news/">
+          <a class="card-wrapper" href="/contribuer/rdp/add_news/">
             <div class="card">
               <div class="logo">
                 <span class="twemoji">
@@ -131,14 +126,12 @@
         </div>
         <div class="second-column">
           <div class="image-wrapper">
-            <a href="/articles/2022/2022-04-18_easter_eggs_qgis_regale/" title="Lien vers le dernier article" >
+            <a href="/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/" title="Lien vers le dernier article">
               <img
-                src="https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_ign_annecy_delphine-montagne.png"
-                alt="lien vers le dernier article publié"
-                loading="lazy"
-                draggable="false"
+                src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png"
+                alt="lien vers le dernier article publié" loading="lazy" draggable="false"
                 title="Illustration du dernier article publié">
-                <div class="image-overlay">Easter eggs cartographiques : QGIS sonne les cloches ! par Delphine MONTAGNE et Julien MOURA</div>
+              <div class="image-overlay">Installer QGIS sur Ubuntu, par Julien Moura</div>
             </a>
           </div>
         </div>
@@ -180,7 +173,8 @@
             </div>
           </a>
 
-          <a class="card-wrapper" href="/articles/2021/2021-05-05_geointerview_ign_sebastien_soriano_annonce/#suivre-et-participer">
+          <a class="card-wrapper"
+            href="/articles/2021/2021-05-05_geointerview_ign_sebastien_soriano_annonce/#suivre-et-participer">
             <div class="card">
               <div class="logo">
                 <span class="twemoji">
@@ -215,7 +209,7 @@
       </div>
       <div class="component-wrapper" style="display: block;">
         <div class="responsive-grid">
-          <a class="card-wrapper" href="{{ config.site_url }}feed_rss_created.xml">
+          <a class="card-wrapper" href="{{ config.site_url }}feed_rss_created.xml" target="_blank">
             <div class="card">
               <div class="logo">
                 <span class="twemoji">
@@ -231,7 +225,7 @@
             </div>
           </a>
 
-          <a class="card-wrapper" href="/articles/2021/2021-04-01_qtribu_plugin_qgis_geotribu/#installer-le-plugin">
+          <a class="card-wrapper" href="https://plugins.qgis.org/plugins/qtribu/" target="_blank">
             <div class="card">
               <div class="logo">
                 <span class="twemoji">
@@ -264,7 +258,7 @@
           </a>
 
 
-          <a class="card-wrapper" href="https://twitter.com/geotribu/">
+          <a class="card-wrapper" href="https://twitter.com/geotribu/" target="_blank">
             <div class="card">
               <div class="logo">
                 <span class="twemoji">
@@ -280,7 +274,23 @@
             </div>
           </a>
 
-          <a class="card-wrapper" href="https://www.linkedin.com/feed/hashtag/geotribu/">
+          <a class="card-wrapper" href="https://mapstodon.space/web/@geotribu/" target="_blank">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/mastodon.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Mastodon</h5>
+                <p>
+                  Suivez le compte officiel @geotribu sur l'instance Mapstodon.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper" href="https://www.linkedin.com/feed/hashtag/geotribu/" target="_blank">
             <div class="card">
               <div class="logo">
                 <span class="twemoji">

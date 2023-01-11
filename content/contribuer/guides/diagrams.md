@@ -8,14 +8,13 @@ categories:
     - tutoriel
 date: 2020-07-20 10:20
 description: "Guide de contribution à Geotribu : comment intégrer des diagrammes Mermaid dans un contenu en Markdown."
+icon: material/graph-outline
 tags:
     - contribuer
     - diagramme
+    - Markdown
     - MermaidJS
     - schéma
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Insérer des diagrammes
@@ -35,7 +34,7 @@ Cela consiste en créant une balise de code pointant sur le langage `mermaid`, d
 
 ````markdown
 ```mermaid
-graph TD;
+flowchart TD;
     Z[master]-->A[Création d'une branche]-->B(Pull Request);
     C[Contributeur 1]-->B;
     D[Contributrice 2]-->B;
@@ -51,7 +50,7 @@ graph TD;
 ### Rendu 1
 
 ```mermaid
-graph TD;
+flowchart TD;
     Z[master]-->A[Création d'une branche]-->B(Pull Request);
     C[Contributeur 1]-->B;
     D[Contributrice 2]-->B;
@@ -67,7 +66,7 @@ graph TD;
 
 ````markdown
 ```mermaid
-graph LR
+flowchart LR
   A[Start] --> B{Error?};
   B -->|Yes| C[Hmm...];
   C --> D[Debug];
@@ -79,7 +78,7 @@ graph LR
 ### Rendu 2
 
 ``` mermaid
-graph LR
+flowchart LR
   A[Start] --> B{Error?};
   B -->|Yes| C[Hmm...];
   C --> D[Debug];

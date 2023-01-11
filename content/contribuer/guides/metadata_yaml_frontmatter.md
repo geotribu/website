@@ -1,11 +1,13 @@
 ---
 title: "Rédiger en Markdown : comprendre l'en-tête"
+subtitle: "YAML front-matter"
 categories:
     - article
     - contribution
     - tutoriel
 date: "2021-01-05 20:20"
 description: "Rédiger en Markdown : de l'importance de l'en-tête (YAML front-matter) pour définir les métadonnées, la navigation et le référencement."
+icon: material/page-layout-header
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_yaml_frontmatter.png"
 tags:
     - contribuer
@@ -34,6 +36,7 @@ L'en-tête est défini en haut de la page par un ensemble de clés/valeurs encad
 - `date` : date de création publique de l'article, correspondant à la date de première publication. Utilisée dans le RSS, le SEO et certains moteurs d'affichage.
 - `description` : SEO, recherche interne du site, meta-tag, RSS
 - `image` : RSS et partage des articles dans les réseaux sociaux (c'est ce qui fait qu'on a un jouli rendu quand on partage dans Twitter ou LinkedIn par exemple). Dimensions : entre 300x600 et 400x800.
+- `legacy` : stocke des informations relatives aux anciens sites Geotribu, notamment pour assurer la continuité. Uniquement pour un **usage interne** et pour les contenus créés avant 2020.
 - `license` : détermine si la licence du contenu est celle par défaut (`license: default`) ou non (`license: none`). Si la clé n'est pas renseignée, c'est la licence par défaut qui s'applique. Voir le guide [Choisir sa licence](/contribuer/guides/licensing/).
 - `robots` : détermine si le contenu doit être indexé par les moteurs de recherche ou non. Par défaut: `index, follow`.
 - `tags` : permet un classement des contenus par mots-clés.

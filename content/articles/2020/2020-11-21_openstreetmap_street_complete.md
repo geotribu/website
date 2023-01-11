@@ -37,7 +37,7 @@ Et au milieu du dernier printemps, j'ai fait la connaissance de Street Complete,
 
 ## Présentation
 
-[![La carte de Street Complete](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_carte.jpg "La carte de Street Complete"){: loading=lazy align=left clear=right width=150px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_carte.jpg){: data-mediabox="lightbox-gallery" data-title="Chaque marqueur correspond à une question/quête"}
+![La carte de Street Complete](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_carte.jpg "La carte de Street Complete"){: loading=lazy align=left clear=right width=150px }
 
 Sponsorisée entre autres par le ministère de l'éducation et de la recherche de l'Allemagne et soutenue par la fondation OSM, Street Complete est une [application open source pour smartphone Android](https://github.com/westnordost/StreetComplete) qui propose de contribuer à la base OpenStreetMap au travers d'un système de questions simples sur les éléments environnants.
 
@@ -49,16 +49,16 @@ Je trouve que le design de l'application est soigné et se différencie des inte
 
 Pour rendre le tout attrayant, l'application suit les préceptes de la [ludification]. Les questions sont en fait des "quêtes" et renseigner des informations est récompensé par des "rangs", pour donner l'impression que le/a contributeur/rice est en fait un/e joueur/se. Les quêtes sont catégorisées selon le type d'informations renseigné. La liste des quêtes est documentée dans [le wiki d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/FR:StreetComplete/Quests).
 
-[![Quête : typologie des bâtiments](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_batiment.jpg "Quête : typologie des bâtiments"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_batiment.jpg){: data-mediabox="lightbox-gallery" data-title="Quête : typologie des bâtiments"}
-[![Quête : bornes de recyclage](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_dechets.jpg "Quête : bornes de recyclage"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_dechets.jpg){: data-mediabox="lightbox-gallery" data-title="Quête : bornes de recyclage"}
-[![Street Complete : quête route](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_route.jpg "Street Complete : quête route"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_route.jpg){: data-mediabox="lightbox-gallery" data-title="Ludification : on valorise le 'joueur'"}
-[![Street Complete : rang enquêteur](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_enqueteur.jpg "Street Complete : rang enquêteur"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_enqueteur.jpg){: data-mediabox="lightbox-gallery" data-title="Ludification : en contribuant régulièrement, le joueur obtient des rangs symbolisés par des badges"}
-[![Street Complete : choix des quêtes](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quetes_options.jpg "Street Complete : choix des quêtes"){: loading=lazy width=140px }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quetes_options.jpg){: data-mediabox="lightbox-gallery" data-title="Il est possible de configurer les quêtes auxquelles on souhaite jouer. Pratique si on en a marre de remplir les horaires d'ouverture de commerces fermés..."}
+![Quête : typologie des bâtiments](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_batiment.jpg "Quête : typologie des bâtiments"){: loading=lazy width=140px }
+![Quête : bornes de recyclage](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_dechets.jpg "Quête : bornes de recyclage"){: loading=lazy width=140px }
+![Street Complete : quête route](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_route.jpg "Street Complete : quête route"){: loading=lazy width=140px }
+![Street Complete : rang enquêteur](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_enqueteur.jpg "Street Complete : rang enquêteur"){: loading=lazy width=140px }
+![Street Complete : choix des quêtes](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quetes_options.jpg "Street Complete : choix des quêtes"){: loading=lazy width=140px }
 {: align=middle }
 
 ## Un beau projet en pleine croissance
 
-[![Street Complete : rang habitué](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_habitue.jpg "Street Complete : rang habitué"){: loading=lazy width=150px align=right }](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_habitue.jpg){: data-mediabox="lightbox-gallery" data-title="Street Complete : rang habitué"}
+![Street Complete : rang habitué](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_habitue.jpg "Street Complete : rang habitué"){: loading=lazy width=150px align=right }
 
 En somme, une application bien conçue, bien développée et qui plus est connectée à la communauté et à ses valeurs : ouverte, accueillante, mise en valeur des autres projets et appui sur la base de connaissance centralisée qu'est le sacro-saint wiki.
 
@@ -72,7 +72,7 @@ Pour finir, voici une vidéo de l'utilisation (elle date d'avril donc il y a eu 
 
 ## Télécharger
 
-[![Téléchargement sur Google Play](https://play.google.com/intl/fr_fr/badges/static/images/badges/fr_badge_web_generic.png "Télécharger sur Google Play Store"){: width=200px style="border: none; box-shadow: none;" }](https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete)[![Téléchargement sur F-Droid](https://fdroid.gitlab.io/artwork/badge/get-it-on-fr.png "Télécharger sur F-Droid"){: width=200px style="border: none; box-shadow: none;" }](https://f-droid.org/packages/de.westnordost.streetcomplete/)[![Téléchargement sur GitHub](https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png "Télécharger l'APK sur GitHub"){: width=200px style="border: none; box-shadow: none;" }](https://github.com/westnordost/StreetComplete/releases/latest)
+[![Téléchargement sur Google Play](https://cdn.geotribu.fr/img/logos-icones/divers/android_play_store_badge.png "Télécharger sur Google Play Store"){: width=200px style="border: none; box-shadow: none;" }](https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete)[![Téléchargement sur F-Droid](https://cdn.geotribu.fr/img/logos-icones/divers/fdroid_store_badge.png "Télécharger sur F-Droid"){: width=200px style="border: none; box-shadow: none;" }](https://f-droid.org/packages/de.westnordost.streetcomplete/)[![Téléchargement sur GitHub](https://cdn.geotribu.fr/img/logos-icones/divers/github_get_apk.png "Télécharger l'APK sur GitHub"){: width=200px style="border: none; box-shadow: none;" }](https://github.com/westnordost/StreetComplete/releases/latest)
 {: align=middle }
 
 ----

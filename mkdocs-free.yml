@@ -18,6 +18,10 @@ edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/master/content"]
 docs_dir: "./content"
 site_dir: "./build/mkdocs/site"
 
+# Scripts pendant le build
+hooks:
+  - hooks/mkdocs/check_hyperlinks.py
+
 # Plugins
 plugins:
   - awesome-pages
@@ -35,12 +39,24 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
+  - glightbox:
+      touchNavigation: true
+      effect: zoom
+      width: 90%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - img-rdp-news-thumb
+        - emojione
+        - twemoji
+      auto_caption: true
+      caption_position: bottom
   - minify:
       minify_css: true
-      minify_html: true
-      minify_js: false
-      htmlmin_opts:
-        remove_comments: true
+      css_files:
+        - theme/assets/stylesheets/extra.css
+        - theme/assets/stylesheets/homepage.css
   - rss:
       abstract_chars_count: 500
       categories:
@@ -51,11 +67,12 @@ plugins:
         as_creation: "date"
         as_update: false
         datetime_format: "%Y-%m-%d %H:%M"
+        default_timezone: Europe/Paris
+        default_time: "14:00"
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
       image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
       length: 50
       match_path: "(articles|rdp)/.*"
-      pretty_print: false
       url_parameters:
         utm_source: "rss-feed"
         utm_medium: "RSS"
@@ -64,40 +81,10 @@ plugins:
       lang: fr
   - macros:
       include_dir: content/toc_nav_ignored/snippets
-  - redirects:
-      redirect_maps:
-        # RSS
-        "rss.md": "https://static.geotribu.fr/feed_rss_created.xml"
-        # contenus
-        "dicogis.md": "articles/2014/art_2014-09-25_dicogis.md"
-        "GeoRDP/20161028.md": "rdp/2016/rdp_2016-10-14.md"
-        "node/270.md": "articles/2010/art_2010-06-11.md"
-        "node/284.md": "articles/2010/art_2010-09-23.md"
-        "node/348.md": "rdp/2011/rdp_2011-02-25.md"
-        "node/423.md": "articles/2011/art_2011-06-15.md"
-        "node/462.md": "articles/2011/art_2011-11-09.md"
-        "node/488.md": "rdp/2012/rdp_2012-01-13.md"
-        "node/520.md": "articles/2012/art_2012-06-21.md"
-        "node/532.md": "articles/2012/art_2012-07-12.md"
-        "node/636.md": "articles/2013/art_2013-09-26.md"
-        # correction de la structure initiale de la résurrection
-        "rdp/rdp_2020-04-30.md": "rdp/2020/rdp_2020-04-30.md"
-        # geogames
-        "node/668.md": "articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig.md"
-        "node/671.md": "https://geotribu.github.io/geogames/"
-        "node/675.md": "articles/2013/art_2013-11-20_geogame_mots_croises_webmapping.md"
-        "node/679.md": "articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie.md"
-        "node/689.md": "articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin.md"
-        "node/680.md": "articles/2014/art_2014-03-19_geogame_pendu_geomatique.md"
-        # recent moves
-        "acknowledgements.md": "team/index.md"
-        "install_webapp.md": "articles/2020/2020-03-20_installer_site_comme_application.md"
-        "interviews/itw_drones_crisis.md": "articles/2014/art_2014-08-29_itw_drones_crisis.md"
-        "contribuer/workflow_article.md": "contribuer/articles/workflow.md"
-        "contribuer/backup.md": "contribuer/internal/backup.md"
-        "contribuer/build_site/markdown_engine.md": "contribuer/internal/markdown_engine.md"
   - tags:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
+      tags_compare: !!python/name:material.plugins.tags.plugin.casefold
 
 # Theme
 theme:
@@ -117,6 +104,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - toc.follow
   font: false
   icon:
     repo: fontawesome/brands/github-alt
@@ -143,53 +131,23 @@ theme:
 
 # Customization
 extra:
-  analytics:
-    provider: google
-    property: !ENV MKDOCS_GOOGLE_ANALYTICS_KEY
   comments_url: https://comments.geotribu.fr # isso url
   consent:
     title: Consentement 🍪
+    actions:
+      - accept
+      - manage
+      - reject
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
       des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
       l'audience du site.
-  manifest: "manifest.webmanifest" # PWA declaration
-  social:
-    - icon: "fontawesome/solid/rss"
-      link: "https://static.geotribu.fr/feed_rss_created.xml"
-      name: "S'abonner aux nouveaux contenus via RSS"
-    - icon: "fontawesome/brands/github-alt"
-      link: "https://github.com/geotribu/"
-      name: "L'organisation Github de Geotribu"
-    - icon: "fontawesome/brands/twitter"
-      link: "https://twitter.com/geotribu"
-      name: "Geotribu sur Twitter"
-    - icon: "fontawesome/brands/linkedin"
-      link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
-      name: "Les contenus de Geotribu sur LinkedIn"
-    - icon: "fontawesome/brands/facebook"
-      link: "https://fr-fr.facebook.com/geotribu/"
-      name: "Page Facebook de Geotribu"
-    - icon: "fontawesome/brands/mailchimp"
-      link: http://eepurl.com/hL0zVr
-      name: "Abonnez-vous à la newsletter"
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:<geotribu@gmail.com>
-      name: "Nous contacter"
-    - icon: "fontawesome/brands/slack"
-      link: "https://geotribu.slack.com"
-      name: "Rejoignez-nous sur Slack"
-    - icon: "fontawesome/solid/feather-pointed"
-      link: http://pad.geotribu.fr/
-      name: "Editeur en ligne"
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
-  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.css"
 
 extra_javascript:
   - "theme/assets/javascripts/extra.js"
-  - "https://cdn.jsdelivr.net/npm/wa-mediabox@1.0.1/dist/wa-mediabox.min.js"
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
@@ -199,6 +157,7 @@ markdown_extensions:
   - attr_list
   # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
   - footnotes
+  - md_in_html
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
@@ -210,12 +169,14 @@ markdown_extensions:
       linenums: true
       use_pygments: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.smartsymbols
   - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
       auto_append: [content/toc_nav_ignored/snippets/glossaire.md]
-      base_path: "."
+      base_path:
+        - "."
       check_paths: true
   - pymdownx.superfences:
       custom_fences:

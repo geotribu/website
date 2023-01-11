@@ -5,6 +5,7 @@ on:
   pull_request:
     branches: [master]
     paths:
+      - ".github/workflows/pr_linter_markdown.yml"
       - "content/**/*.md"
 
 jobs:
@@ -14,22 +15,71 @@ jobs:
     if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
-      - name: Check out code
+      - name: "Récupère le code source"
         uses: actions/checkout@v3
 
-      # - name: markdownlint-github-check
-      #   uses: reviewdog/action-markdownlint@v0.7
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     filter_mode: added
-      #     reporter: github-pr-check
-      #     markdownlint_flags: 'content/**/202*.md'
-
-      - name: markdownlint-github-pr-review
-        uses: reviewdog/action-markdownlint@v0.7
+      # Filter results by added/modified lines.
+      - name: "Vérifie la syntaxe des lignes ajoutées ou modifiées"
+        id: markdownlint-github-pr-review-added
+        uses: reviewdog/action-markdownlint@v0.9.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
-          filter_mode: diff_context
+          filter_mode: added
           reporter: github-pr-review
-          markdownlint_flags: "-c '.markdownlint.json' -i '**/template_*.md' 'content/**/202*.md'"
+
+      - name: "Explications sur les erreurs du linter"
+        id: pr-comment-error-create
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' }}
+        with:
+          header: linter-md-error
+          recreate: true
+          message: |
+            Salut @${{ github.actor }}
+            Des erreurs de syntaxe Markdown ont été détectées dans les lignes ajoutées ou modifiées. Merci de les corriger ou de les marquer comme faux-positif :
+
+              - [règles de syntaxe Markdown applicables à Geotribu](https://static.geotribu.fr/contribuer/guides/markdown_quality/)
+              - [marquer une erreur de syntaxe comme faux-positif](https://static.geotribu.fr/contribuer/internal/markdown_linter/#gerer-les-faux-positifs-du-linter)
+              - [possibilités de rédaction offertes par le moteur Mkdocs + thème Material](https://squidfunk.github.io/mkdocs-material/reference/)
+
+      - name: "Marque le commentaire de félicitations comme résolu"
+        id: pr-comment-good-solve
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: ${{ success() }}
+        with:
+          header: linter-md-success
+          hide: true
+          hide_classify: "RESOLVED"
+
+      # # Filter results by added/modified file. i.e. reviewdog will report results
+      # # as long as they are in added/modified file even if the results are not in actual diff.
+      # - name: "Vérifie la syntaxe de tous les fichiers ajoutés ou modifiés"
+      #   id: markdownlint-github-pr-review-file
+      #   uses: reviewdog/action-markdownlint@v0.9.0
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     fail_on_error: false
+      #     filter_mode: file
+      #     level: warning
+      #     reporter: github-pr-review
+
+      # SUCCESS
+      - name: "Marque le commentaire d'erreur comme résolu"
+        id: pr-comment-error-solve
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: ${{ success() }}
+        with:
+          header: linter-md-error
+          hide: true
+          hide_classify: "RESOLVED"
+
+      - name: "Félicitations"
+        id: pr-comment-good
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: ${{ success() }}
+        with:
+          header: linter-md-success
+          recreate: true
+          message: |
+            :clap: Le markdown ajouté ou modifié est impeccable ! Merci :1st_place_medal:

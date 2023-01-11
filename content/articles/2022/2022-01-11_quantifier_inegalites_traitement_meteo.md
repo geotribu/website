@@ -73,7 +73,7 @@ J'ai donc changé mon fusil d'épaule et suis passé sur une sélection à la ma
 - La troisième représente les températures du lendemain matin.
 - La quatrième et dernière représente les températures du lendemain après-midi.
 
-[![Explication des images de références, de début et de fin de séquences](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/montage_images_bases_11012019.jpg "Explication des images de références, de début et de fin de séquences"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/montage_images_bases_11012019.jpg){: data-mediabox="lightbox-gallery" data-title="Explication des images de références, de début et de fin de séquences"}
+![Explication des images de références, de début et de fin de séquences](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/montage_images_bases_11012019.jpg "Explication des images de références, de début et de fin de séquences"){: .img-center loading=lazy }
 
 ### 3. Découpage de la carte de métropole en zones
 
@@ -103,11 +103,11 @@ Inconvénient :
 
 Image par image, on peut voir le calcul : d'une vidéo vers une image (à gauche), et de cette image, on sort une couleur médiane par zone (au centre), et de cette couleur médiane on calcule la distance à la couleur médiane lorsque la carte est dégagée (à droite).
 
-[![Trois phases](https://user-images.githubusercontent.com/1596222/148133096-3c3349ea-f9ff-4d7e-9b73-1a163ad0fda1.gif "Trois phases"){: loading=lazy }](https://user-images.githubusercontent.com/1596222/148133096-3c3349ea-f9ff-4d7e-9b73-1a163ad0fda1.gif){: data-mediabox="lightbox-gallery" data-title="Trois phases"}
+![Trois phases](https://user-images.githubusercontent.com/1596222/148133096-3c3349ea-f9ff-4d7e-9b73-1a163ad0fda1.gif "Trois phases"){: loading=lazy }
 
 Au global, entre les bulletins du 2, 3, 11, 12, 13 et 14 janvier 2019 (c'est dire si l'étude est sérieuse !), on constate un rapport de 1 à 21 entre Vannes et Gap sur les écarts de couleurs affichées.
 
-[![Distance entre la couleur de référence et la couleur observée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/distance_moyenne_toutes_journees_toutes_sequences.jpg "Distance entre la couleur de référence et la couleur observée"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/distance_moyenne_toutes_journees_toutes_sequences.jpg){: data-mediabox="lightbox-gallery" data-title="Distance entre la couleur de référence et la couleur observée"}
+![Distance entre la couleur de référence et la couleur observée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/distance_moyenne_toutes_journees_toutes_sequences.jpg "Distance entre la couleur de référence et la couleur observée"){: .img-center loading=lazy }
 
 Pour la partie qui est le moins soumise à des variations de couleurs, car pas soumise à des animations, i.e. les séquences liées aux températures du lendemain, la zone où la variation est la plus faible connaît une distance de 0,16 à sa référence tandis que celle où la variation est la plus forte présente une distance de 43, soit un ratio de 1 à 268. Même ordre de grandeur pour les températures de l'après-midi avec un ratio de 1 pour 261.
 
@@ -129,6 +129,4 @@ Voilà donc la conclusion de notre enquête : **il est 20 fois plus difficile de
 
 ## Auteur {: data-search-exclude }
 
-### Victor Alexandre
-
-Datajournaliste au Parisien, j'ai une formation de journaliste, de sociologie et de statistiques.
+--8<-- "content/team/vale.md"

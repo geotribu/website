@@ -35,7 +35,7 @@ Avec mon arrivée chez [Oslandia], je me remets au développement de plugins pou
 
 Pour trouver les icônes, je vous renvoyais sur [le fichier de ressources de QGIS](https://github.com/qgis/QGIS/blob/master/images/images.qrc), mais c'est vrai qu'une fois sur le fichier, c'est un peu sec !
 
-[![fichier resources.qrc de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_resources-qrc_github.png "fichier resources.qrc de QGIS"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_resources-qrc_github.png){: data-mediabox="illustrations" data-title="Comment ça, le fichier de ressources c'est pas suffisant ?" }
+![fichier resources.qrc de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_resources-qrc_github.png "fichier resources.qrc de QGIS"){: .img-center loading=lazy }
 *Comment ça, le fichier de ressources c'est pas suffisant ?*
 {: align=middle }
 
@@ -249,7 +249,7 @@ with Path("qgis_resources_preview_table.md").open("w") as io_out:
 
 ![icône feature attribute table QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionCalculateField.svg "Icône feature attribute table QGIS"){: .img-rdp-news-thumb }
 
-Nous voici avec notre joli fichier que l'on peut [convertir en HTML par exemple](/contribuer/build_site/markdown_engine/). D'ailleurs, j'en ai profité pour l'intégrer à notre site (cf bouton plus bas). A garder sous le coude pour avoir les images et leurs chemins pour développer des plugins colorés.
+Nous voici avec notre joli fichier que l'on peut [convertir en HTML par exemple](/contribuer/internal/markdown_engine/). D'ailleurs, j'en ai profité pour l'intégrer à notre site (cf bouton plus bas). A garder sous le coude pour avoir les images et leurs chemins pour développer des plugins colorés.
 
 Pour les plus curieux, j'ai stocké le script complet et avec quelques optimisations dans un Gist dont le lien est également en bas de page. Enfin, tout ça m'a aussi permis d'utiliser les icônes de QGIS pour illustrer les parties de ce tutoriel.
 

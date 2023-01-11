@@ -7,7 +7,7 @@ on:
       - ".github/workflows/deploy.yml"
       - "content/**"
       - "mkdocs.yml"
-      - "requirements.txt"
+      - "requirements*.txt"
 
 jobs:
   deploy:
@@ -24,9 +24,9 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.9
+          python-version: 3.11
           cache: "pip"
 
       - name: Install dependencies
@@ -37,11 +37,19 @@ jobs:
           python -m pip install --upgrade -r requirements-insiders.txt
           python -m pip install --upgrade ghp-import
 
+      - name: Cache build dependencies (external assets downloaded)
+        uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
       - name: Build static website
         run: |
+          python scripts/mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
           MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
+          MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true
           MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
           MKDOCS_ENABLE_PLUGIN_PRIVACY: true
           MKDOCS_ENABLE_PLUGIN_RSS: true

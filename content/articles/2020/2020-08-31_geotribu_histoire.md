@@ -23,7 +23,7 @@ En juillet dernier, j'ai été invité par [IDGEO](https://www.idgeo.fr/) à fai
 
 Autant partager ici notre petite histoire ou du moins ma façon de la raconter : naissance, jeunesse, vie, mort... et renaissance en 2020. Premier opus d'une série d'articles qui nous mènera à la publication de sites statiques en passant par du web-scraping.
 
-[![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){: .img-center width="500" loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG){: data-mediabox="history" data-title="Une partie de l'équipe Geotribu au FOSS4G-FR 2016" }
+![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){: .img-center width="500" loading=lazy }
 
 Souvenirs, souvenirs et avenir !
 
@@ -34,7 +34,7 @@ Souvenirs, souvenirs et avenir !
 ![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-rdp-news-thumb }
 
 D'un point de vue strictement formel, Geotribu c'est un [nom de domaine](https://fr.wikipedia.org/wiki/Nom_de_domaine). Et trois suffixes (.fr, .net et .org, le [.com étant squatté depuis longtemps](https://www.whois.com/whois/geotribu.com) en attendant qu'on devienne [riche](https://www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)).  
-Il n'y a pas de structure : ni entrepreneuriale, ni associative, ni contrat de sang dans un tipi. D'ailleurs, la convention encadrant le prêt du serveur utilisé pour [héberger les images](/contribuer/guides/image/#heberger-une-image-sur-le-cdn-de-geotribu) par [GeoRezo] est à mon nom et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
+Il n'y a pas de structure : ni entrepreneuriale, ni associative, ni contrat de sang dans un tipi. D'ailleurs, la convention encadrant le prêt du serveur utilisé pour [héberger les images](/contribuer/guides/cdn-images-hebergement/) par [GeoRezo] est à mon nom et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
 
 C'est donc un regroupement spontané de personnes autour de leur intérêt pour un dénominateur commun professionnel : la dimension géographique des métiers de chacun/e. Vient ensuite la ligne "éditoriale" imprimée dès les débuts que je présente comme les deux faces d'une même pièce :
 
@@ -58,7 +58,7 @@ L'équipe de contributeur/ices fluctue évidemment, mais va globalement en s'ét
 
 Le serveur et la base de données rendront définitivement l'âme au printemps 2017 :cry:, nous laissant découvrir que le système de sauvegarde avait cessé de fonctionner depuis déjà plusieurs mois :fearful: :scream: :exploding_head:.
 
-[![Frise chronologique](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_frise_chrono_2006-2017.png "Frise chronologique des premières années de Geotribu"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_frise_chrono_2006-2017.png){: data-mediabox="history" data-title="Frise chronologique des premières années de Geotribu" }
+![Frise chronologique](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_frise_chrono_2006-2017.png "Frise chronologique des premières années de Geotribu"){: .img-center loading=lazy }
 
 ----
 
@@ -92,7 +92,7 @@ Pour l'occasion, j'ai regroupé quelques captures d'écran des pages d'accueil :
 
 | 2006 | 2008 | 2010-2012 | 2013-2017 | 2017 | 2017-2020 | 2020 |
 | :--: | :--: | :-------: | :-------: | :--: | :-------: | :--: |
-| [![Toulouse quartiers vides](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/toulouse_quartiers_vide.svg){: width=200px loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/toulouse_quartiers_vide.svg){: data-mediabox="historic-captures" data-title="Geotribu s'appelait alors Catalogue SIG - J'ai pas de capture, alors j'ai mis une carte vide des quartiers de Toulouse. Crédits : Wikimedia Commons." } | [![Lancement du premier site](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2008.png){: width=200px loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2008.png){: data-mediabox="historic-captures" data-title="Lancement du premier site Geotribu. La charte graphique semble ne pas avoir été archivée. Crédits : Internet Archive." } | [![Capture Geotribu 2012](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2012.png){: width=200px loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2012.png){: data-mediabox="historic-captures" data-title="2012 - Le coeur du site : articles et tutoriaux. Crédits : Internet Archive." } | [![Capture Geotribu 2013](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2013.png){: width=200px loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2013.png){: data-mediabox="historic-captures" data-title="2013 - La belle époque : aspect collaboratif central et revues de presse hebdomadaires. Crédits : Internet Archive." } | [![Capture Geotribu 2017](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2017.png){: width=200px loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2017.png){: data-mediabox="historic-captures" data-title="2017 - Le rythme baisse mais les contenus sont encore riches. Le serveur tousse régulièrement. Crédits : Internet Archive." } | [![Capture Geotribu 2018](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2018.png){: width=200px loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2018.png){: data-mediabox="historic-captures" data-title="Eté 2017 --> hiver 2020 : depuis le crash, la page de Geotribu fait honneur à la page par défaut d'Apache. Crédits : Internet Archive." } | [![Capture Geotribu 2020](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2020-04-30.png){: width=200px loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2020-04-30.png){: data-mediabox="historic-captures" data-title="Hiver 2020 : résurrection sous forme d'un site statique de documentation." } |
+ [![Toulouse quartiers vides](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/toulouse_quartiers_vide.svg){: width=200px loading=lazy }
 
 ----
 
@@ -120,7 +120,7 @@ Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent
 --8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
-[Arnaud]: /team/avdc/
+[Arnaud]: /team/avan/
 [Fabien]: /team/fgob/
 [Jérémie]: /team/jory/
 [GeoRezo]: https://georezo.net/

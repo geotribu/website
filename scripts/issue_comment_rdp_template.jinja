@@ -1,0 +1,38 @@
+Merci pour cette proposition de news @{{ issue_author }} !
+
+Ceci est un message automatique pour faciliter l'intégration de la news dans la revue de presse par l'équipe Geotribu.
+
+## Contenu de la news consolidé
+
+A ajouter dans l'en-tête :
+
+```yaml
+{% for tag in in_news_tags %}- {{ tag }}{% endfor %}
+```
+
+```markdown
+## {{ dr_news_category }}
+
+### {{ in_news_title }}
+
+![{{ in_icon_description }}]({{ in_news_icon }} "{{ in_icon_description }}"){: .img-rdp-news-thumb loading=lazy }
+
+{{ tx_news_content}}
+
+!!! info "Contribution externe"
+    Cette news est proposée par {{ in_author_name }} via [le formulaire GitHub renouvelé](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml) : [voir le ticket](https://github.com/geotribu/website/issues/{{ issue_id }}). Merci !
+```
+
+## Ajouter cette news à la RDP
+
+> Volet réservé à un ayant-droit de commit sur le dépôt
+
+- [ ] tenir compte de l'éventuel commentaire libre
+- [ ] téléverser l'eventuelle illustration sur le CDN et l'intégrer dans le corps du texte
+- [ ] peaufiner la description et le texte de remplacement de la vignette
+
+Commande Git pour garantir l'attribution :
+
+```sh
+git commit --author="{{ in_author_name }} <{{ in_author_mail }}>" --message="Ajout news {{ in_news_title }} par @{{ issue_author }}. Close #{{ issue_id }}"
+```

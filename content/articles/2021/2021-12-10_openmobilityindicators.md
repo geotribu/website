@@ -44,7 +44,7 @@ L'ensemble du projet (code, données, livrables) est un commun librement utilisa
 
 ### Sous le capot
 
-On retrouve des [notebooks](https://gitlab.com/open-mobility-indicators/indicators) essentiellement basés sur [pyrosm](https://pyrosm.readthedocs.io/en/latest/) et [geopandas](geopandas.org/) comme librairies géomatiques.  
+On retrouve des [notebooks](https://gitlab.com/open-mobility-indicators/indicators) essentiellement basés sur [pyrosm](https://pyrosm.readthedocs.io/en/latest/) et [geopandas](https://geopandas.org/) comme librairies géomatiques.  
 L'application web cartographique utilise [SvelteKit](https://kit.svelte.dev/) et [Maplibre](https://maplibre.org/).  
 Les tuiles vecteur sont générées avec [tipecannoe](https://github.com/mapbox/tippecanoe).
 
@@ -71,12 +71,6 @@ Toutes vos suggestions, questions, remarques et critiques sont bienvenues, et m�
 
 ## Auteur {: data-search-exclude }
 
-### Patrick Gendre
-
-Je suis consultant en systèmes d'info pour la mobilité, et à ce titre utilisateur de données géo-référencées. Ancien du Cerema, je travaille autant que possible sur des projets open source (notamment avec [la fabrique des mobilités](https://lafabriquedesmobilites.fr/)) et utilisant de l'open data.  
-Je suis porteur du projet Open Mobility Indicators associé à [Jailbreak].
+--8<-- "content/team/pgen.md"
 
 {% include "licenses/default.md" %}
-
-<!-- Hyperlinks reference -->
-[Jailbreak]: https://jailbreak.paris/

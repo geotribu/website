@@ -26,11 +26,11 @@ Lorsque nous avons remis Geotribu en route l'an dernier en optant pour un site s
 
 Mais avec la montée en puissance de [la fréquentation du site](/articles/2021/2021-01-04_bilan_2020_perspectives_2021/#frequentation), notamment suite à [ign2map], Disqus a considéré que Geotribu était éligible pour les publicités.
 
-[![Disqus - Mail de notification](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_mail_notification.webp "Disqus - Mail de notification"){: loading=lazy align=left clear=right width=150px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_mail_notification.webp){: data-mediabox="lightbox-comments" data-title="Le mail de Disqus nous informant que les publicités ont été activées sur le site"}
+![Disqus - Mail de notification](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_mail_notification.webp "Disqus - Mail de notification"){: loading=lazy align=left clear=right width=150px }
 
 On peut comprendre qu'un service n'est jamais gratuit et que la publicité est l'un des moyens de le viabiliser (modèle freemium dans le cas de [Disqus](https://fr.wikipedia.org/wiki/Disqus)). Mais le prix est trop élevé pour un site bénévole comme Geotribu et les publicités (que je ne voyais pas moi-même, utilisant entre autres [le mode strict de Firefox](https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox-ordinateur?cache=no&redirectslug=activer-desactiver-cookies&redirectlocale=fr#w_reglage-stricte-de-la-protection-renforcee-contre-le-pistage) et [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin)) affichées vraiment mal ciblées voire gênantes :
 
-[![Disqus - Publicités affichées](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_activees.webp "Disqus - Publicités affichées"){: loading=lazy align=right clear=left width=150px }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_activees.webp){: data-mediabox="lightbox-comments" data-title="Un exemple des publicités affichées. Pas vraiment ciblées..."}
+![Disqus - Publicités affichées](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_activees.webp "Disqus - Publicités affichées"){: loading=lazy align=right clear=left width=150px }
 
 D'après la [FAQ](https://help.disqus.com/en/articles/1717307-subscription-payments-faq), nous aurions pu prétendre à un forfait gratuit exempt de publicité mais c'était l'occasion de s'affranchir d'un service propriétaire et qui, même gratuit, ajoute des éléments de tracking non désirés.
 
@@ -65,7 +65,7 @@ On a finalement opté pour [Isso] pour plusieurs raisons  :
 
 ![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
 
-Vu que GeoRezo nous autorise gracieusement à utiliser le serveur d'[El Géo Paso](https://elgeopaso.georezo.net/) et qu'il s'agit d'une application légère, j'ai décidé de l'installer à côté de [notre pseudo-CDN](/contribuer/guides/image/#heberger-une-image-sur-le-cdn-de-geotribu).
+Vu que GeoRezo nous autorise gracieusement à utiliser le serveur d'[El Géo Paso](https://elgeopaso.georezo.net/) et qu'il s'agit d'une application légère, j'ai décidé de l'installer à côté de [notre pseudo-CDN](/contribuer/guides/cdn-images-hebergement/).
 
 L'occasion de rappeler que soutenir GeoRezo c'est une bonne idée pour l'écosystème et c'est aussi soutenir GeoTribu :hugging_face: :
 
@@ -91,7 +91,7 @@ En grand amateur de la théorie du camion (ou [facteur autobus](https://fr.wikip
 
 En peu de temps, nous voici avec l'interface d'administration et les commentaires importés depuis Disqus :
 
-[![Isso, interface d'administration](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_comments_isso_backend.png "Isso, interface d'administration"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_comments_isso_backend.png){: data-mediabox="lightbox-comments" data-title="Interface d'administration d'Isso (avec le logo Geotribu en surimpression)"}
+![Isso, interface d'administration](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_comments_isso_backend.png "Isso, interface d'administration"){: .img-center loading=lazy }
 
 ### Intégration au site
 
@@ -132,7 +132,7 @@ extra:
 
 Et voilà tout !
 
-[![Isso, bloc commentaires Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_commentaires_bloc.webp "Isso, bloc commentaires Geotribu"){: .img-center  loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_commentaires_bloc.webp){: data-mediabox="lightbox-comments" data-title="Isso intégré dans un contenu Geotribu"}
+![Isso, bloc commentaires Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_commentaires_bloc.webp "Isso, bloc commentaires Geotribu"){: .img-center  loading=lazy }
 
 ----
 
@@ -159,7 +159,7 @@ Paupières relevées, manches retroussées et c'est parti pour contribuer au pro
 
 En attendant que ce soit éventuellement accepté, on utilise déjà cette version sur Geotribu :
 
-[![Geotribot - Notification Slack](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_comments_geotribot_slack_notification.png "Geotribot - Notification Slack"){: .img-center  loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_comments_geotribot_slack_notification.png){: data-mediabox="lightbox-comments" data-title="Nouveau commentaire notifié dans Slack (oui il y avait un souci d'encodage...)"}
+![Geotribot - Notification Slack](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_comments_geotribot_slack_notification.png "Geotribot - Notification Slack"){: .img-center  loading=lazy }
 
 C'est beau l'open source :smiling_face_with_3_hearts:.
 

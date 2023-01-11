@@ -64,7 +64,7 @@ Revue à 4 mains des oeufs cartographiques, en particulier dans QGIS.
 
 Les oeufs de Pâques se trouvent souvent dans un travail créatif et collectif. C'est le cas bien entendu des cartes papier, comme présenté dans un article publié en 2020 dans le magazine [_Carto_](https://halshs.archives-ouvertes.fr/halshs-02508252/document).
 
-[![Easter egg - Elépahant carte](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_elephant.webp "Easter egg - Elépahant carte"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_elephant.webp){: data-mediabox="lightbox-gallery" data-title="Easter Egg - Eléphant dans une carte"}
+![Easter egg - Elépahant carte](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/easter_egg_carto_elephant.webp "Easter egg - Elépahant carte"){: .img-center loading=lazy }
 
 Nouvelle expression : [avoir un éléphant dans la ~~pièce~~ carte](https://fr.wikipedia.org/wiki/Elephant_in_the_room). Cherchez bien, il est ~~en haut à gauche~~ au nord-nord-ouest, formé par un jeu avec les courbes de niveaux entre les chiffres 24 et 25. Cet oeuf de Pâques a été relevé par [Big Think](https://bigthink.com/strange-maps/670-nil-how-to-hide-an-elephant-the-1923-gold-coast-survey/) (mais l'histoire ne dit pas si l'on peut trouver en ce point du Ghana des éléphants).
 
@@ -105,7 +105,7 @@ Véritable bijou de transparence et de vulgarisation des évolutions techniques 
 
 Cherchons donc [_Easter egg_](https://www.qgis.org/en/search.html?q=easter+egg&check_keywords=yes&area=default) :
 
-[![Changelog QGIS - Recherche Easter egg](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_changelogs_search_easter_egg.png "Changelog QGIS - Recherche Easter egg"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_changelogs_search_easter_egg.png){: data-mediabox="lightbox-gallery" data-title="Changelog QGIS - Recherche Easter egg"}
+![Changelog QGIS - Recherche Easter egg](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_changelogs_search_easter_egg.png "Changelog QGIS - Recherche Easter egg"){: .img-center loading=lazy }
 
 Hum, cela nous mène uniquement à [celui apparu dans la 3.16](https://www.qgis.org/fr/site/forusers/visualchangelog316/index.html?highlight=fonction%20cach%C3%A9e#add-user-groups-easter-egg) et le moteur de recherche semble mal gérer les caractères spéciaux, vu les résultats retournés par une [requête en français sur "fonction cachée"](https://www.qgis.org/fr/search.html?q=fonction+cach%C3%A9e).
 
@@ -113,7 +113,7 @@ C'est un bon début mais voilà qui ne suffit toujours pas à satisfaire notre s
 
 ### Au coeur du terrier
 
-![Octocat GitHub détective](https://octodex.github.com/images/inspectocat.jpg "Octocat GitHub détective"){: .img-rdp-news-thumb }
+![Octocat GitHub détective](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/inspectocat.jpg "Octocat GitHub détective"){: .img-rdp-news-thumb }
 
 Prenons notre courage à `0:n` mains (oui, je reste vague pour n'exclure personne, pas même un/e éventuel/le lecteur/ice manchot/e) et allons à la source : le code sur GitHub. Mais... mais... c'est plein de code d'ingénieurs informaticiens :scream_cat:.  
 Allons, allons, c'est justement l'occasion de démystifier ce qui se cache sous QGIS en se répétant ce que Napoléon disait toujours à ses troupes face aux cyber-attaques caractéristiques de la campagne de Russie :
@@ -125,13 +125,13 @@ Hauts les coeurs ! Si c'est du texte, il doit bien y avoir des traces des mots-c
 
 Une fois infiltré dans le _repository_ (là où les gens qui parlent couramment machine entreposent le code source), on peut lancer [une recherche bien sentie sur l'un des mots-clés qui déclenche les _Easter eggs_](https://github.com/qgis/QGIS/search?q=%22user+groups%22&type=code) dans la barre en haut à gauche :
 
-[![Recherche dans le GitHub de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png "Rechercher dans le code de QGIS sur GitHub"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png){: data-mediabox="lightbox-gallery" data-title="Rechercher dans le code de QGIS sur GitHub"}
+![Recherche dans le GitHub de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_github_search_easteregg.png "Rechercher dans le code de QGIS sur GitHub"){: .img-center loading=lazy }
 
 Bingo ! Au milieu de résultats mentionnant ArcGIS (non, les références à Esri ne sont pas des _Easter egg_), pas besoin d'avoir inventé le fil à couper l'eau chaude pour faire l'association entre `qgsstatusbarcoordinateswidget` et la barre de coordonnées en bas de la feneêtre QGIS, celle-la même où les _Easter eggs_ se déclenchent.
 
 Même si on ne pige rien à `class`, `include` ou autre `void`, en parcourant le fichier, on peut en déduire que c'est dans la [fonction de validation des coordonnées](https://github.com/qgis/QGIS/blob/7119976ece18a81f99e9d1c0a6ad1cf53bfcc3cd/src/app/qgsstatusbarcoordinateswidget.cpp#L113-L161) que se terrent **toutes** les fonctions cachées :
 
-[![QGIS Easter eggs - QgsStatusBarCoordinatesWidget](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_easteregg_github_qgsstatusbarcoordinateswidget.png "QGIS Easter eggs - QgsStatusBarCoordinatesWidget"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_easteregg_github_qgsstatusbarcoordinateswidget.png){: data-mediabox="lightbox-gallery" data-title="QgsStatusBarCoordinatesWidget, le terrier des Easter eggs de QGIS !"}
+![QGIS Easter eggs - QgsStatusBarCoordinatesWidget](https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_easteregg_github_qgsstatusbarcoordinateswidget.png "QGIS Easter eggs - QgsStatusBarCoordinatesWidget"){: .img-center loading=lazy }
 
 En poussant plus loin notre avantage, on peut même retrouver [quand et par qui le dernier _Easter egg_ a été proposé puis ajouté](https://github.com/qgis/QGIS/pull/38505) et au passage prendre connaissance du [tableau de suivi des groupes d'utilisateur/ices de QGIS dans le monde](https://docs.google.com/spreadsheets/d/1Wte5pfcpOeZ1bfBUn7KJuYzw31_rtKyGqciBPW3RXwg/edit#gid=678994363).
 

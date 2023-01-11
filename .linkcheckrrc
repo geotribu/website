@@ -1,0 +1,5 @@
+[filtering]
+ignore=
+  feed_rss_created.xml
+  feed_rss_updated.xml
+  theme/

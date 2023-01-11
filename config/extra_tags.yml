@@ -1,0 +1,87 @@
+tags:
+  atlas: atlas
+  Bash: code
+  Centipede: satellite
+  CNIG: institution
+  collecte: telephone
+  collecte terrain: telephone
+  conférence: conference
+  coulisses: masques
+  cURL: code
+  D3.js: js
+  Easter eggs: oeuf
+  Esri: globe
+  ETL: roue
+  ExtJS: js
+  Facebook: facebook
+  FIG: conference
+  FME: roue
+  FOSS4G: conference
+  GéoDataDays: conference
+  GeoGames: manette
+  GeoKettle: roue
+  géo-lecture: atlas
+  Git: git
+  GitHub: git
+  GitLab: git
+  Google: google
+  Google Earth: google
+  Google Maps: google
+  Google Street View: google
+  GraphHopper: route
+  Halloween: citrouille
+  HTML: html
+  HTML5: html
+  IA: cerveau
+  IGN: institution
+  Input: telephone
+  INSPIRE: ananas
+  IRC: commentaires
+  JavaScript: js
+  jeu: manette
+  jeux vidéo: manette
+  Leaflet: feuille
+  Lego: brick
+  LIDAR: satellite
+  livre: atlas
+  Linux: pingouin
+  Mapillary: streetview
+  Markdown: markdown
+  Matrix: commentaires
+  Minecraft: manette
+  MySQL: database
+  NoSQL: database
+  ODK: telephone
+  Open Data Kit: telephone
+  OpenDroneMap: drone
+  OpenPathView: streetview
+  OpenRouteService: route
+  open data: open
+  open source: opensource
+  OpenStreetMap: geoloupe
+  Ordnance Survey: institution
+  OSRM: route
+  Open Earth View: streetview
+  pgDay: database
+  pgRouting: route
+  PGSession: database
+  PostGIS: database
+  PostgreSQL: database
+  projection: meridiens
+  PyCSW: python
+  PyGEOS: python
+  PyQGIS: python
+  PyQt: python
+  PySQL: python
+  Python: python
+  PyWPS: python
+  QField: telephone
+  QGIS: globe
+  R: rstats
+  route: route
+  routing: route
+  SQL: database
+  three.js: js
+  Ubuntu: ubuntu
+  Wikipédia: wikipedia
+  Windows: windows

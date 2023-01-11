@@ -139,7 +139,7 @@ graph TD;
 
 ![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
 
-A l'instar de la plupart des autres, [GitHub Actions] consiste à décrire le processus (_workflow_ dans la terminologie GitHub) dans la syntaxe [YAML].
+A l'instar de la plupart des autres, [GitHub Actions] consiste à décrire le processus (*workflow* dans la terminologie GitHub) dans la syntaxe [YAML].
 
 Le [fichier complet est dans le dépôt](https://github.com/geotribu/ign-fr-opendata-download-ui/blob/main/.github/workflows/run_n_publish.yml) mais prenons ici le temps de détailler les étapes.  
 

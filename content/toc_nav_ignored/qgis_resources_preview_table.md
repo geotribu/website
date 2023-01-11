@@ -38,7 +38,7 @@ from qgis.PyQt.QtGui import QIcon, QPixmap
 
 Made with :heart: by Julien M. for his own needs.
 
-## images
+## images {: data-search-exclude }
 
 ### composer
 

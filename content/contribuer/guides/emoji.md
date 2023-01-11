@@ -8,6 +8,7 @@ categories:
     - tutoriel
 date: 2020-07-20 10:20
 description: "Guide de contribution à Geotribu : comment insérer des émojis dans un contenu en Markdown."
+icon: material/emoticon-happy-outline
 image: "https://blog.emojipedia.org/content/images/size/w2000/2020/02/Emojipedia-Header-Image-JoyPixels-5.5.jpg"
 tags:
     - contribuer

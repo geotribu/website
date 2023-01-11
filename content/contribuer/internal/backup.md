@@ -4,18 +4,16 @@ authors:
     - Julien MOURA
 categories:
     - article
-    - Geotribu
+    - meta
 date: 2021-06-01 10:20
-description: "Comment fonctionne la sauvegarde automatique du site Geotribu."
+description: "Sous le GéoCapot : comment fonctionne la sauvegarde automatique du site Geotribu."
+icon: material/backup-restore
 image: "https://cdn.geotribu.fr/img/internal/workflow/geotribu_backup_result_github_release.png"
+robots: index, follow
 tags:
-    - backup
     - coulisses
-    - GitHub CLI
+    - GitHub
     - sauvegarde
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Sauvegarde du site Geotribu

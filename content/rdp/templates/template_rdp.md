@@ -1,11 +1,11 @@
 ---
-title: "Revue de presse du 21 août 2021"
+title: "Revue de presse du 21 août 2023"
 authors:
     - Geotribu
 categories:
     - revue de presse
-date: 2021-08-21 14:20
-description: "GeoRDP du 21 août 2021 : "
+date: 2023-08-21 14:20
+description: "GeoRDP du 21 août 2023 : "
 image: "URL de l'image d'illustration de la RDP"
 license: default
 robots: index, follow
@@ -15,13 +15,14 @@ tags:
     - ...
 ---
 
-# Revue de presse du 21 août 2021
+# Revue de presse du 21 août 2023
 
 ## Intro
 
 ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
 
-[Commenter cette revue de presse :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter :fontawesome-solid-comments:](#__comments){: .md-button }
+[Proposer :material-newspaper-plus:](/contribuer/rdp/add_news/){: .md-button }
 {: align=middle }
 
 ----
@@ -34,14 +35,6 @@ tags:
 ----
 
 ## Sorties de la semaine
-
-----
-
-## Client
-
-----
-
-## Serveur
 
 ----
 

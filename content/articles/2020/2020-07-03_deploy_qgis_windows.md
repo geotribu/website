@@ -1,5 +1,5 @@
 ---
-title: "Installer QGIS sur Windows avec Powershell"
+title: "Installer QGIS sur Windows avec OSGeo4W et Powershell"
 authors:
     - Julien MOURA
 categories:
@@ -16,7 +16,7 @@ tags:
     - Windows
 ---
 
-# Installer QGIS sur Windows avec Powershell
+# Installer QGIS sur Windows en ligne de commande (OSGeo4W et Powershell)
 
 :calendar: Date de publication initiale : 3 juillet 2020
 

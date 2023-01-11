@@ -1,0 +1,13 @@
+{
+  "oui": false,
+  "non": true,
+  "in_author_name": "Gérard Dodo",
+  "in_author_mail": "gerard@dodo.com",
+  "jaccepte": true,
+  "dr_news_category": "Représentation Cartographique",
+  "in_news_tags": "demo,test",
+  "in_news_title": "Nouvelle bibliothèque JS de cartographie",
+  "in_news_icon": "https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png",
+  "tx_news_content": "fdfsdf\n\n*dfdqsf*\n\n**sdfdsf** [dfdf](lh)",
+  "tx_misc_comment": ""
+}

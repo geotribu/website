@@ -1,0 +1,67 @@
+name: "🤖 Réponse automatique à un ticket de proposition de contenu"
+on:
+  issues:
+    types:
+      - reopened
+      - opened
+jobs:
+  rdp_form:
+    name: "📰 Proposition de news"
+    runs-on: ubuntu-latest
+    if: contains( github.event.issue.labels.*.name, 'rdp')
+
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          cache: "pip"
+          python-version: 3.11
+
+      - name: Parse template form
+        uses: stefanbuck/github-issue-parser@v3
+        id: issue-parser
+        with:
+          issue-body: ${{ github.event.issue.body }} # required
+          template-path: .github/ISSUE_TEMPLATE/RDP_NEWS.yml
+
+      # see: https://github.com/stefanbuck/github-issue-parser/issues/38
+      - name: Export into JSON file using env var
+        run: echo $JSON_STRING > rdp_news_submitted.json
+        env:
+          JSON_STRING: ${{ steps.issue-parser.outputs.jsonString }}
+
+      - name: Save form output as artifact
+        uses: actions/upload-artifact@v3.1.1
+        with:
+          path: "rdp*.json"
+          retention-days: 15
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install -U pip
+          python -m pip install -U setuptools wheel
+          python -m pip install -U "jinja2<4"
+
+      - name: Fill comment template with form
+        env:
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          ISSUE_ID: ${{ github.event.issue.number }}
+        run: python scripts/issue_comment_templater_rdp.py
+
+      - name: Save comment artifact
+        uses: actions/upload-artifact@v3.1.1
+        with:
+          path: "rdp*_output.md"
+          retention-days: 15
+
+      - name: Create comment from file
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body-file: 'rdp_news_submitted_comment_output.md'
