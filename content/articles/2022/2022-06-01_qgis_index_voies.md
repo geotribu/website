@@ -48,8 +48,8 @@ Sur la couche correspondant à la grille, ajouter un champ virtuel afin de déno
 
 [![Nommage de chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille.png "Nommage de chaque maille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille.png "Nommage de chaque maille"){: data-mediabox="gallery-lightbox" data-title="Nommage de chaque maille" }
 
-```
-source : https://gis.stackexchange.com/questions/330760/create-a-grid-with-all-polygons-labelled-index-style
+```python
+# source : https://gis.stackexchange.com/questions/330760/create-a-grid-with-all-polygons-labelled-index-style
 CASE
   WHEN floor(((maximum("top") - "top" ) / 999) / 26) > 0 --height
   THEN char(floor(((maximum("top") - "top" ) / 999) / 25) + 64) --height
@@ -77,7 +77,7 @@ Sur la couche correspondant aux voies, ajouter un champ virtuel qui va permettre
 
 [![Calcul des mailles qui croisent les voies](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/calcul_liste_mailles.png "Calcul des mailles qui croisent les voies"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/calcul_liste_mailles.png "Calcul des mailles qui croisent les voies"){: data-mediabox="gallery-lightbox" data-title="Calcul des mailles qui croisent les voies" }
 
-```
+```python
 aggregate(
 layer:= 'Grille',
 aggregate:='concatenate',
