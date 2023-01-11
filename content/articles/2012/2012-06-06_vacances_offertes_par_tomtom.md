@@ -18,11 +18,11 @@ tags:
 
 Bon d'accord j'avoue, j'ai un peu menti sur le titre car il ne s'agit pas tout à fait de vacances. Mais bon, quand on voit les destinations proposées, je signe de suite. En effet, TomTom est à la recherche de conducteurs pour relever le réseau routier de cinq îles paradisiaques : Fidji, Sainte-Lucie, l'île Maurice, Cap-Vert et les Seychelles. Vous hésitez encore ? Et si je vous disais qu'en plus de cela TomTom vous offre également la coquette somme de 10 000€. Cela laisse de quoi acheter quelques cocktails les doigts de pied bien calés dans le sable non ?
 
-[![Img Tomtom](http://geotribu.net/sites/default/files/Tuto/img/Blog/divers/tomtom.png 'Img Tomtom')](http://map-paradise.tomtom.com/fr_fr/)
+![Tomtom opération îles de rêves](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/tomtom_iles_de_reve.webp){: .img-center loading=lazy }
 
 Les candidats retenus pour cette aventure pourront emmener avec eux 4 personnes qui les aideront dans ce travail de cartographie. Bien qu'aucune connaissance dans le domaine ne soit nécessaire il vaut mieux tout de même posséder un bon sens de l'orientation et bien évidemment le permis de conduire. Car c'est équipé d'une TomTom Mobile que vous découvrirez ces fabuleux paysages.
 
-![Img Tomtom car](http://geotribu.net/sites/default/files/Tuto/img/Blog/divers/tomtom_car.jpg "Img Tomtom car")
+![Voiture Tomtom](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/tomtom_voiture.webp){: .img-center loading=lazy }
 
 Au-delà de cette offre, c'est l'aspect marketing que j'ai bien aimé. On voit que le concept a été réfléchi et TomTom s'offre avec cette opération [Îles de Rêves](http://map-paradise.tomtom.com/fr_fr/) un joli buzz médiatique. Le seul bémol de communication serait peut-être qu'il n'existe aucun hashtag officiel pour twitter. Il ne vous reste plus maintenant qu'à tenter votre chance. Promis, si nous sommes sélectionnés, nous vous enverrons de belles cartes postales ;)
 
