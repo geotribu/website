@@ -20,7 +20,7 @@ site_dir: "./build/mkdocs/site"
 
 # Scripts pendant le build
 hooks:
-  - hooks/mkdocs/check_hyperlinks.py
+  - hooks/mkdocs/G001_check_hyperlinks_internal.py
 
 # Plugins
 plugins:
