@@ -32,7 +32,7 @@ Nombreuses sont les communes qui disposent d'un plan de ville, qu'elles affichen
 
 ----
 
-## 1. Créer une grille
+## Créer une grille
 
 La première étape consiste à créer une grille carrée à l'aide des outils vectoriels de QGIS : `Vecteur` / `Outils de recherche` / `Créer une grille`.
 
@@ -42,7 +42,7 @@ Pour cet exemple, j'ai créé une grille de 200m de côté (à vous d'ajuster la
 
 ![Grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/grille.png "Grille"){: .img-center loading=lazy }
 
-## 2. Attribuer un identifiant à chacune des mailles
+## Attribuer un identifiant à chacune des mailles
 
 Sur la couche correspondant à la grille, ajouter un champ virtuel afin de dénommer chacune des mailles.
 
@@ -71,7 +71,7 @@ to_string(("right" - minimum("left")) / 999) --width
 !!! info
     Grâce au champ virtuel, la suppression de mailles inutiles entrainera une réattribution dynamique des numéros de maille. :magic_wand:
 
-## 3. Liste des mailles qui croisent une voie
+## Liste des mailles qui croisent une voie
 
 Sur la couche correspondant aux voies, ajouter un champ virtuel qui va permettre de faire le lien entre chacune des voies et les mailles qu'elles croisent.
 
