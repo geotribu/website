@@ -89,7 +89,7 @@ filter:=intersects($geometry,geometry(@parent))
 
 ## Intégrer l'index des voies dans le composeur
 
-Maintenant que la donnée est prête, vous créer une nouvelle mise en page d'impression en ajoutant la table attributaire de vos voies.
+Maintenant que la donnée est prête, vous pouvez créer une nouvelle mise en page d'impression en ajoutant la table attributaire de vos voies.
 
 [![Composeur - Table attibutaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/table_attributaire.png "Composeur - Table attibutaire"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/table_attributaire.png "Composeur - Table attibutaire"){: data-mediabox="gallery-lightbox" data-title="Composeur - Table attibutaire" }
 
