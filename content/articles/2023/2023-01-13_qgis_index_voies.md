@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: 2022-06-01 14:20
+date: 2023-01-13 14:20
 description: "Créer un index des voies dans QGIS"
 image: ""
 license: default
@@ -15,7 +15,7 @@ tags:
 
 # Créer un index des voies dans QGIS
 
-:calendar: Date de publication initiale : 01 Juin 2022
+:calendar: Date de publication initiale : 13 janvier 2023
 
 ## Prérequis
 
