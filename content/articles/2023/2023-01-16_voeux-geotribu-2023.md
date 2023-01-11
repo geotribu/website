@@ -51,17 +51,17 @@ tags:
 - :label: ajout d'icônes aux mots-clés (travail en cours) et légère amélioration du design
 - :factory_worker: des évolutions sous le capot du site notamment liées au thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) dont on contribue à financer la version payante (*Insiders*) via notre [Tipeee](https://fr.tipeee.com/geotribu).
 
-## Architecture 
+## Architecture
 
 - :mirror: pour améliorer notre résilience et réduire notre adhérence à GitHub, on a mis en place [un site miroir](https://fr.wikipedia.org/wiki/Site_miroir#Nom_de_domaine) sur <https://www2.geotribu.fr> (synchronisé quotidiennement).
 - :fontawesome-solid-server: migration de serveur (merci GeoRezo !) : CDN, commentaires et mécanisme de sauvegarde sont déjà sur le nouveau serveur. Au passage, on en profite pour rendre le déploiement de notre infrastructure reproductible avec Ansible. Pour les curieux, ça se passe sur [ce dépôt GitHub](https://github.com/geotribu/infra).
 
 ## Archives
 
-Fin 2021, nous attaquions l'homogénéisation et l'assainissement des contenus anciens. Ce travail de reprise chronophage s'est échelonné tout au long de l'année 2022 avec de nombreux ajustements sur : 
+Fin 2021, nous attaquions l'homogénéisation et l'assainissement des contenus anciens. Ce travail de reprise chronophage s'est échelonné tout au long de l'année 2022 avec de nombreux ajustements sur :
 
 - le markdown : niveau des titres, mise en valeur du code, suppression des anciennes ancres, retraits en début de ligne
-- l'intégration des icônes et images manquantes. 
+- l'intégration des icônes et images manquantes.
 
 ----
 
