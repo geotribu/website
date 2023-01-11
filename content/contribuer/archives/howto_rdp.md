@@ -110,7 +110,7 @@ Evidemment c'est pas fixe comme liste, on peut modifier / ajouter ces types. Pou
 
 ### Icône
 
-Ensuite une brève possède une icône. Par défaut l'icône c'est la fameuse icône connue de tous par son doux nom[world\_2.png](http://geotribu.net/sites/default/public/public_res/default_images/world_2.png). Deux choix du coup, soit on conserve celle-ci ou on en choisit une autre - élémentaire mon cher. Si on choisit d'en mettre une un peu plus en relation avec la news, on peut soit choisir une icône déjà existante - y'en a une bonne pelletée - ou soit on en ajoute une nouvelle. Dans les deux cas, on clique sur `Open file browser` au grand jamais nous ne cliquerons sur `Choisissez un fichier` ... ça bousille toute l'arborescence de stockage des images quand on l'utilise alors autant éviter :
+Ensuite une brève possède une icône. Par défaut l'icône c'est la fameuse icône connue de tous par son doux nom[world\_2.png](https://cdn.geotribu.fr/img/logos-icones/divers/News.png). Deux choix du coup, soit on conserve celle-ci ou on en choisit une autre - élémentaire mon cher. Si on choisit d'en mettre une un peu plus en relation avec la news, on peut soit choisir une icône déjà existante - y'en a une bonne pelletée - ou soit on en ajoute une nouvelle. Dans les deux cas, on clique sur `Open file browser` au grand jamais nous ne cliquerons sur `Choisissez un fichier` ... ça bousille toute l'arborescence de stockage des images quand on l'utilise alors autant éviter :
 
 ![createrdp11](https://cdn.geotribu.fr/img/internal/old_guide/createrdp11.png "createrdp11"){: .img-center loading=lazy }
 
