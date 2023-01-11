@@ -13,7 +13,7 @@ tags:
     - Geotribu
 ---
 
-# Installer QGIS sur Ubuntu, le pense-bête simple et efficace
+# Voeux 2023 et bilan 2022
 
 :calendar: Date de publication initiale : 16 janvier 2023
 
@@ -43,7 +43,7 @@ tags:
 
 ## Fonctionnalités
 
-- les avatars GitHub des principaux contributeur/ices d'une page sont automatiquement ajoutés en bas de page
+- :fontawesome-solid-signature: les avatars GitHub des principaux contributeur/ices d'une page sont automatiquement ajoutés en bas de page
 - :frame_photo: ajout du [plugin mkdocs-glightbox](https://blueswen.github.io/mkdocs-glightbox/) pour appliquer un mode galerie à toutes les images par défaut. Vous savez, quand on clique sur une image et que ça l'agrandit en floutant le site à l'arrière-plan et en permettant de naviguer d'une image à l'autre ? Avant c'était ~~galère~~ exigeant de faire ça dans un contenu Geotribu, maintenant y'a rien à faire. Plus d'information dans [le guide de contribution](/contribuer/guides/image/#lightbox-mode-galerie).
 - :heartpulse: il est désormais possible de montrer son amour d'un contenu sans avoir à écrire de commentaire. Idéal pour les timides qui souhaiteraient quand même remercier les auteur/ices :wink:.
 - :material-puzzle: notre [plugin QGIS](https://plugins.qgis.org/plugins/qtribu/) est désormais publié dans le dépôt officiel des extensions pour que son installation soit plus facile
