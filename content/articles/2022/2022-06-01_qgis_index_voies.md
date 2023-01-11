@@ -36,17 +36,17 @@ Nombreuses sont les communes qui disposent d'un plan de ville, qu'elles affichen
 
 La première étape consiste à créer une grille carrée à l'aide des outils vectoriels de QGIS : `Vecteur` / `Outils de recherche` / `Créer une grille`.
 
-[![Créer une grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/creer_grille.png "Créer une grille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/creer_grille.png "Créer une grille"){: data-mediabox="gallery-lightbox" data-title="Créer une grille" }
+![Créer une grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/creer_grille.png "Créer une grille"){: .img-center loading=lazy }
 
 Pour cet exemple, j'ai créé une grille de 200m de côté (à vous d'ajuster la distance en fonction de votre besoin) correspondant à l'emprise de la commune.
 
-[![Grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/grille.png "Grille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/grille.png "Grille"){: data-mediabox="gallery-lightbox" data-title="Grille" }
+![Grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/grille.png "Grille"){: .img-center loading=lazy }
 
 ## 2. Attribuer un identifiant à chacune des mailles
 
 Sur la couche correspondant à la grille, ajouter un champ virtuel afin de dénommer chacune des mailles.
 
-[![Nommage de chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille.png "Nommage de chaque maille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille.png "Nommage de chaque maille"){: data-mediabox="gallery-lightbox" data-title="Nommage de chaque maille" }
+![Nommage de chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille.png "Nommage de chaque maille"){: .img-center loading=lazy }
 
 ```python
 # source : https://gis.stackexchange.com/questions/330760/create-a-grid-with-all-polygons-labelled-index-style
@@ -64,9 +64,9 @@ to_string(("right" - minimum("left")) / 999) --width
 !!! info
     Remplacer la valeur 999 par la taille par la distance d'espacement de vos mailles.
 
-[![Nom attribué à chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille2.png "Nom attribué à chaque maille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille2.png "Nom attribué à chaque maille"){: data-mediabox="gallery-lightbox" data-title="Nom attribué à chaque maille" }
+![Nom attribué à chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille2.png "Nom attribué à chaque maille"){: .img-center loading=lazy }
 
-[![Nom attribué à chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille3.png "Nom attribué à chaque maille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille3.png "Nom attribué à chaque maille"){: data-mediabox="gallery-lightbox" data-title="Nom attribué à chaque maille" }
+![Nom attribué à chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille3.png "Nom attribué à chaque maille"){: .img-center loading=lazy }
 
 !!! info
     Grâce au champ virtuel, la suppression de mailles inutiles entrainera une réattribution dynamique des numéros de maille. :magic_wand:
@@ -75,7 +75,7 @@ to_string(("right" - minimum("left")) / 999) --width
 
 Sur la couche correspondant aux voies, ajouter un champ virtuel qui va permettre de faire le lien entre chacune des voies et les mailles qu'elles croisent.
 
-[![Calcul des mailles qui croisent les voies](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/calcul_liste_mailles.png "Calcul des mailles qui croisent les voies"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/calcul_liste_mailles.png "Calcul des mailles qui croisent les voies"){: data-mediabox="gallery-lightbox" data-title="Calcul des mailles qui croisent les voies" }
+![Calcul des mailles qui croisent les voies](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/calcul_liste_mailles.png "Calcul des mailles qui croisent les voies"){: .img-center loading=lazy }
 
 ```python
 aggregate(
@@ -91,9 +91,9 @@ filter:=intersects($geometry,geometry(@parent))
 
 Maintenant que la donnée est prête, vous pouvez créer une nouvelle mise en page d'impression en ajoutant la table attributaire de vos voies.
 
-[![Composeur - Table attibutaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/table_attributaire.png "Composeur - Table attibutaire"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/table_attributaire.png "Composeur - Table attibutaire"){: data-mediabox="gallery-lightbox" data-title="Composeur - Table attibutaire" }
+![Composeur - Table attibutaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/table_attributaire.png "Composeur - Table attibutaire"){: .img-center loading=lazy }
 
-[![Plan de ville](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png "Plan de ville"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png "Plan de ville"){: data-mediabox="gallery-lightbox" data-title="Plan de ville" }
+![Plan de ville](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png "Plan de ville"){: .img-center loading=lazy }
 
 ----
 
