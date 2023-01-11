@@ -38,7 +38,7 @@ La première étape consiste à créer une grille carrée à l'aide des outils v
 
 [![Créer une grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/creer_grille.png "Créer une grille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/creer_grille.png "Créer une grille"){: data-mediabox="gallery-lightbox" data-title="Créer une grille" }
 
-Pour cet exemple, j'ai créé une grille de 200m de côté (à vous d'ajuster la distance en fonction de votre besoin) correspondant à l'emprise de de la commune.
+Pour cet exemple, j'ai créé une grille de 200m de côté (à vous d'ajuster la distance en fonction de votre besoin) correspondant à l'emprise de la commune.
 
 [![Grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/grille.png "Grille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/grille.png "Grille"){: data-mediabox="gallery-lightbox" data-title="Grille" }
 
