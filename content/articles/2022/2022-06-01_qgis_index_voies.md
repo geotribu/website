@@ -34,7 +34,7 @@ Nombreuses sont les communes qui disposent d'un plan de ville, qu'elles affichen
 
 ## 1. Créer une grille
 
-La première étape consiste à créer une grille carré à l'aide des outils vectoriels de QGIS : `Vecteur` / `Outils de recherche` / `Créer une grille`.
+La première étape consiste à créer une grille carrée à l'aide des outils vectoriels de QGIS : `Vecteur` / `Outils de recherche` / `Créer une grille`.
 
 [![Créer une grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/creer_grille.png "Créer une grille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/creer_grille.png "Créer une grille"){: data-mediabox="gallery-lightbox" data-title="Créer une grille" }
 
