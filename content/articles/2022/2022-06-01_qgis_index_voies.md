@@ -69,7 +69,7 @@ to_string(("right" - minimum("left")) / 999) --width
 [![Nom attribué à chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille3.png "Nom attribué à chaque maille"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille3.png "Nom attribué à chaque maille"){: data-mediabox="gallery-lightbox" data-title="Nom attribué à chaque maille" }
 
 !!! info
-    Grâce au champ virtuel, la suppression de mailles inutiles entrainera une réattribution dynamque des numéros de maille. :magic_wand:
+    Grâce au champ virtuel, la suppression de mailles inutiles entrainera une réattribution dynamique des numéros de maille. :magic_wand:
 
 ## 3. Liste des mailles qui croisent une voie
 
