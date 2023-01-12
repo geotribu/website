@@ -49,20 +49,20 @@ Sur la couche correspondant à la grille, ajouter un champ virtuel afin de déno
 ![Nommage de chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille.png "Nommage de chaque maille"){: .img-center loading=lazy }
 
 ```sql
-# source : https://gis.stackexchange.com/questions/330760/create-a-grid-with-all-polygons-labelled-index-style
-CASE
-  WHEN floor(((maximum("top") - "top" ) / 999) / 26) > 0 --height
-  THEN char(floor(((maximum("top") - "top" ) / 999) / 25) + 64) --height
-  ELSE ''
-END
-||
-char(((maximum("top") - "top") / 999) % 26 + 65) --height
-||
-to_string(("right" - minimum("left")) / 999) --width
+--Source : https://gis.stackexchange.com/questions/330760/create-a-grid-with-all-polygons-labelled-index-style
+CASE --Condition
+  WHEN floor(((maximum("top") - "top" ) / 999) / 26) > 0 --Sur la hauteur : Compte si plus de 26 lignes et donc plus de 26 lettres qui seront utilisées (A-Z)
+  THEN char(floor(((maximum("top") - "top" ) / 999) / 25) + 64) --Sur la hauteur : Répétition jusqu'à 26 fois de chacune des lettres de A à Z
+  ELSE '' --Si la condition n'est pas vérifiée la valeur est nulle
+END --Fin de la condition
+|| --Concaténer
+char(((maximum("top") - "top") / 999) % 26 + 65) --Sur la hauteur : Répétition des lettres de A à Z sur chacune des lignes - Utilisation du modulo %
+|| --Concaténer
+to_string(("right" - minimum("left")) / 999) --Sur la a largeur : Permet de déterminer le numéro correspondant aux colonnes (nombre illimité)
 ```
 
 !!! info
-    Remplacer la valeur 999 par la taille par la distance d'espacement de vos mailles.
+    Remplacer la valeur 999 par la distance d'espacement de vos mailles (la même qu'à l'étape de création de la grille). Par exemple, si votre maille carrée fait 200m de côté, il faut remplacer 999 par 200.
 
 ![Nom attribué à chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille2.png "Nom attribué à chaque maille"){: .img-center loading=lazy }
 
@@ -79,11 +79,19 @@ Sur la couche correspondant aux voies, ajouter un champ virtuel qui va permettre
 
 ```sql
 aggregate(
-layer:= 'Grille',
-aggregate:='concatenate',
-expression:=grille,
-concatenator:=', ',
-filter:=intersects($geometry,geometry(@parent))
+layer:= 'Grille', --Nom de la couche correspondant à la grille
+aggregate:='concatenate', --Méthode d'agrégation
+expression:=grille, --Nom du champ à agréger
+concatenator:=', ', --Séparateur
+filter:=intersects($geometry,geometry(@parent)), --Filtre : Intersection entre la grille et les voies
+order_by:= --Range les mailles suivant leur codification (Lettre + Numéro)
+    regexp_substr("grille", '[a-zA-Z]+') ||
+    CASE 
+    WHEN length((regexp_substr("grille", '(\\d+)[^\\d]*$')))=1 THEN 
+     regexp_substr("grille", '[a-zA-Z]+') ||'0' ||  to_int(regexp_substr("grille", '(\\d+)[^\\d]*$'))
+     ELSE
+     regexp_substr("grille", '[a-zA-Z]+') || to_int(regexp_substr("grille", '(\\d+)[^\\d]*$'))
+    END
 )
 ```
 
@@ -101,7 +109,7 @@ Maintenant que la donnée est prête, vous pouvez créer une nouvelle mise en pa
 
 Voilà une méthode relativement rapide qui permet de générer un listing des voies et les numéros de carroyage associés, en mode "touché-coulé" à ajouter dans vos cartes.
 
-Il est également possible d'exploiter le fichier index créé pour afficher dans le composeur d'impression les numéros / lettres en tête de lignes / colonnes; ceci moyennant quelques règles d'affichage à mettre en place dans les paramètres d'affichage des étiquettes.
+Il est également possible d'exploiter le fichier index créé pour afficher dans le composeur d'impression les numéros / lettres en tête de lignes / colonnes ; ceci moyennant quelques règles d'affichage à mettre en place dans les paramètres d'affichage des étiquettes.
 
 !!! info "Remerciement"
     Je remercie mon collègue J. Hanke à la ville de Lunel pour avoir expérimenté cette procédure et fait une relecture de l'article.
