@@ -7,7 +7,7 @@ categories:
     - tutoriel
 date: 2023-01-13 14:20
 description: "Créer un index des voies dans QGIS"
-image: ""
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/calcul_liste_mailles.png"
 license: default
 tags:
     - QGIS
@@ -99,7 +99,12 @@ Maintenant que la donnée est prête, vous pouvez créer une nouvelle mise en pa
 
 ## Conclusion
 
-A COMPLETER
+Voilà une méthode relativement rapide qui permet de générer un listing des voies et les numéros de carroyage associés, en mode "touché-coulé" à ajouter dans vos cartes.
+ 
+Il est également possible d'exploiter le fichier index créé pour afficher dans le composeur d'impression les numéros / lettres en tête de lignes / colonnes; ceci moyennant quelques règles d'affichage à mettre en place dans les paramètres d'affichage des étiquettes.
+
+!!! info "Remerciement"
+    J'en profite pour remercier mon collègue J. Hanke à la ville de Lunel pour avoir testé cette procédure et relu cet article.
 
 ----
 
