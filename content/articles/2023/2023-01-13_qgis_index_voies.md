@@ -100,7 +100,7 @@ Maintenant que la donnée est prête, vous pouvez créer une nouvelle mise en pa
 ## Conclusion
 
 Voilà une méthode relativement rapide qui permet de générer un listing des voies et les numéros de carroyage associés, en mode "touché-coulé" à ajouter dans vos cartes.
- 
+
 Il est également possible d'exploiter le fichier index créé pour afficher dans le composeur d'impression les numéros / lettres en tête de lignes / colonnes; ceci moyennant quelques règles d'affichage à mettre en place dans les paramètres d'affichage des étiquettes.
 
 !!! info "Remerciement"
