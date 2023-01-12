@@ -33,7 +33,10 @@ regex_pattern = (
     r"(?:[!]\[(?P<caption>.*?)\])\((?P<image>.*?)(?P<description>\".*?\")?\s*\)"
 )
 
-exclude_list = []
+exclude_list = [
+    "articles/2008/2008-08-22_ajouter-des-shp-dans-geoserver.md",
+    "toc_nav_ignored/qgis_resources_preview_table.md",
+]
 
 max_size: float = 2097152.0
 
@@ -75,10 +78,10 @@ def get_remote_image_length(
     # first, try HEAD request to avoid downloading the image
     try:
         attempt += 1
-        remote_img = request.urlopen(url=req, context=ssl_context, timeout=5)
+        remote_img = request.urlopen(url=req, context=ssl_context, timeout=3)
         img_length = remote_img.getheader("content-length")
     except (HTTPError, URLError) as err:
-        logger.warning(
+        logger.debug(
             f"Image inacessible avec un HEAD: {image_url}. "
             "Trying again with GET and disabling SSL verification. "
             f"Attempt: {attempt}. "
@@ -111,6 +114,7 @@ def get_remote_image_length(
 def on_page_markdown(markdown, page, **kwargs):
     path = page.file.src_uri
     if path in exclude_list:
+        logger.debug("Fichier ignoré car dans la liste d'exclusion.")
         return
 
     for match in re.findall(regex_pattern, markdown):
