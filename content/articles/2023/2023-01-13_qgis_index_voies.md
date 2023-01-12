@@ -104,7 +104,7 @@ Voilà une méthode relativement rapide qui permet de générer un listing des v
 Il est également possible d'exploiter le fichier index créé pour afficher dans le composeur d'impression les numéros / lettres en tête de lignes / colonnes; ceci moyennant quelques règles d'affichage à mettre en place dans les paramètres d'affichage des étiquettes.
 
 !!! info "Remerciement"
-    J'en profite pour remercier mon collègue J. Hanke à la ville de Lunel pour avoir testé cette procédure et relu cet article.
+    Je remercie mon collègue J. Hanke à la ville de Lunel pour avoir mis en application cette procédure et fait une relecture de cet article.
 
 ----
 
