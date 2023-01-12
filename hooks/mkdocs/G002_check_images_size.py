@@ -30,7 +30,7 @@ REMOTE_REQUEST_HEADERS = {
 }
 
 regex_pattern = (
-    r"(?:[!]\[(?P<caption>.*?)\])\((?P<image>.*?)(?P<description>\".*?\")?\)"
+    r"(?:[!]\[(?P<caption>.*?)\])\((?P<image>.*?)(?P<description>\".*?\")?\s*\)"
 )
 
 exclude_list = []
@@ -98,6 +98,12 @@ def get_remote_image_length(
             )
             return None
 
+    except Exception as err:
+        logger.error(
+            f"Erreur fatale. Cause possible : URL d'image mal formatée. Trace: {err}"
+        )
+        return None
+
     return int(img_length)
 
 
@@ -119,6 +125,8 @@ def on_page_markdown(markdown, page, **kwargs):
                     f"de {convert_octets(img_length)}."
                 )
             else:
-                logger.debug("Impossible d'accéder à l'image")
+                logger.debug(
+                    "Impossible d'accéder à l'image {img_url} présente dans le fichier {path}"
+                )
         else:
             logger.debug("Image locale ignorée")
