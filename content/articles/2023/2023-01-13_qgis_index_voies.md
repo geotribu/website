@@ -8,7 +8,7 @@ categories:
 date: 2023-01-13 14:20
 description: "Créer un index des voies dans QGIS"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png"
-license: default
+license: beerware
 tags:
     - QGIS
 ---
@@ -112,4 +112,4 @@ Il est également possible d'exploiter le fichier index créé pour afficher dan
 
 --8<-- "content/team/fbor.md"
 
-{% include "licenses/default.md" %}
+{% include "licenses/beerware.md" %}
