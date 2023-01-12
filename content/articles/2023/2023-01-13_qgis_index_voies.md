@@ -84,7 +84,7 @@ aggregate:='concatenate', --Méthode d'agrégation
 expression:=grille, --Nom du champ à agréger
 concatenator:=', ', --Séparateur
 filter:=intersects($geometry,geometry(@parent)), --Filtre : Intersection entre la grille et les voies
-order_by:= regexp_substr("grille", '[a-zA-Z]+')|| lpad(regexp_substr("grille", '(\\d+)[^\\d]*$'),4,0)--Range les mailles suivant leur codification (Lettre + Numéro)
+order_by:= lpad(regexp_substr("grille", '[a-zA-Z]+'),2,0)|| lpad(regexp_substr("grille", '(\\d+)[^\\d]*$'),4,0)--Range les mailles suivant leur codification (Lettre + Numéro)
 )
 ```
 
