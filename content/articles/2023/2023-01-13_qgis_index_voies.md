@@ -71,7 +71,7 @@ to_string(("right" - minimum("left")) / 999) --Sur la a largeur : Permet de dét
 !!! info
     Grâce au champ virtuel, la suppression de mailles inutiles entrainera une réattribution dynamique des numéros de maille. :magic_wand:
 
-## Liste des mailles qui croisent une voie
+## Liste des mailles traversées par une voie
 
 Sur la couche correspondant aux voies, ajouter un champ virtuel qui va permettre de faire le lien entre chacune des voies et les mailles qu'elles croisent.
 
@@ -84,14 +84,7 @@ aggregate:='concatenate', --Méthode d'agrégation
 expression:=grille, --Nom du champ à agréger
 concatenator:=', ', --Séparateur
 filter:=intersects($geometry,geometry(@parent)), --Filtre : Intersection entre la grille et les voies
-order_by:= --Range les mailles suivant leur codification (Lettre + Numéro)
-    regexp_substr("grille", '[a-zA-Z]+') ||
-    CASE
-    WHEN length((regexp_substr("grille", '(\\d+)[^\\d]*$')))=1 THEN
-     regexp_substr("grille", '[a-zA-Z]+') ||'0' ||  to_int(regexp_substr("grille", '(\\d+)[^\\d]*$'))
-     ELSE
-     regexp_substr("grille", '[a-zA-Z]+') || to_int(regexp_substr("grille", '(\\d+)[^\\d]*$'))
-    END
+order_by:= regexp_substr("grille", '[a-zA-Z]+')|| lpad(regexp_substr("grille", '(\\d+)[^\\d]*$'),4,0)--Range les mailles suivant leur codification (Lettre + Numéro)
 )
 ```
 
@@ -107,12 +100,12 @@ Maintenant que la donnée est prête, vous pouvez créer une nouvelle mise en pa
 
 ## Conclusion
 
-Voilà une méthode relativement rapide qui permet de générer un listing des voies et les numéros de carroyage associés, en mode "touché-coulé" à ajouter dans vos cartes.
+Voilà une méthode relativement rapide qui permet de générer un listing des voies et les numéros de maille associés, en mode "touché-coulé" à ajouter à vos cartes.
 
-Il est également possible d'exploiter le fichier index créé pour afficher dans le composeur d'impression les numéros / lettres en tête de lignes / colonnes ; ceci moyennant quelques règles d'affichage à mettre en place dans les paramètres d'affichage des étiquettes.
+Il est également possible d'exploiter le maillage créé pour afficher dans le composeur d'impression les numéros / lettres en tête de lignes / colonnes ; ceci moyennant quelques règles à mettre en place dans les paramètres d'affichage des étiquettes.
 
 !!! info "Remerciement"
-    Je remercie mon collègue J. Hanke à la ville de Lunel pour avoir expérimenté cette procédure et fait une relecture de l'article.
+    Je remercie mon collègue J. Hanke à la ville de Lunel pour avoir expérimenté cette procédure et proposé une conclusion.
 
 ----
 
