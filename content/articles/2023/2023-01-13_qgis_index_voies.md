@@ -86,8 +86,8 @@ concatenator:=', ', --Séparateur
 filter:=intersects($geometry,geometry(@parent)), --Filtre : Intersection entre la grille et les voies
 order_by:= --Range les mailles suivant leur codification (Lettre + Numéro)
     regexp_substr("grille", '[a-zA-Z]+') ||
-    CASE 
-    WHEN length((regexp_substr("grille", '(\\d+)[^\\d]*$')))=1 THEN 
+    CASE
+    WHEN length((regexp_substr("grille", '(\\d+)[^\\d]*$')))=1 THEN
      regexp_substr("grille", '[a-zA-Z]+') ||'0' ||  to_int(regexp_substr("grille", '(\\d+)[^\\d]*$'))
      ELSE
      regexp_substr("grille", '[a-zA-Z]+') || to_int(regexp_substr("grille", '(\\d+)[^\\d]*$'))
