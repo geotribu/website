@@ -92,6 +92,8 @@ order_by:= lpad(regexp_substr("grille", '[a-zA-Z]+'),2,0)|| lpad(regexp_substr("
 
 Maintenant que la donnée est prête, vous pouvez créer une nouvelle mise en page d'impression en ajoutant la table attributaire de vos voies.
 
+![Composeur - Sélection des attributs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/selection_attributs.png "Composeur - Sélection des attributs"){: .img-center loading=lazy }
+
 ![Composeur - Table attibutaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/table_attributaire.png "Composeur - Table attibutaire"){: .img-center loading=lazy }
 
 ![Plan de ville](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png "Plan de ville"){: .img-center loading=lazy }
@@ -105,7 +107,7 @@ Voilà une méthode relativement rapide qui permet de générer un listing des v
 Il est également possible d'exploiter le maillage créé pour afficher dans le composeur d'impression les numéros / lettres en tête de lignes / colonnes ; ceci moyennant quelques règles à mettre en place dans les paramètres d'affichage des étiquettes.
 
 !!! info "Remerciement"
-    Je remercie mon collègue J. Hanke à la ville de Lunel pour avoir expérimenté cette procédure et proposé une conclusion.
+    Je remercie mon collègue J. Hanke à la ville de Lunel pour avoir expérimenté cette procédure et proposé cette conclusion.
 
 ----
 
