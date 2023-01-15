@@ -26,7 +26,7 @@ tags:
 
 ![30: remix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_00_d30.jpg){: loading=lazy}
 
-:world_map: _J30: Remix - source: https://twitter.com/XemartinLaborde/status/1598096950439858177?s=20_
+:world_map: _J30: Remix - source: <https://twitter.com/XemartinLaborde/status/1598096950439858177?s=20>_
 
 ---
 
@@ -34,7 +34,7 @@ tags:
 
 ![10: a bad map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_01_d10.png){: loading=lazy}
 
-:world_map: _J30: Remix - source: https://github.com/petraduriancikova/30DayMapChallenge
+:world_map: _J30: Remix - source: <https://github.com/petraduriancikova/30DayMapChallenge>
 
 ---
 
@@ -42,13 +42,13 @@ tags:
 
 ![20: My favourite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_02_d20.png){: loading=lazy}
 
-:world_map: _J20: "My favourite..." - source: https://github.com/Pecners/30DayMapChallenge_
+:world_map: _J20: "My favourite..." - source: <https://github.com/Pecners/30DayMapChallenge>_
 
 ---
 
 ![4: green](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_03_d4.jpg){: loading=lazy}
 
-:world_map: _J4: Colour Friday: Green - source: https://github.com/aliciaoberholzer/30DayMapChallenge_
+:world_map: _J4: Colour Friday: Green - source: <https://github.com/aliciaoberholzer/30DayMapChallenge>_
 
 ---
 
@@ -66,7 +66,7 @@ tags:
 
 ![28: 3D](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_05_d28.png){: loading=lazy}
 
-:world_map: _J28: 3D - source: https://github.com/dsollberger/30DayMapChallenge_
+:world_map: _J28: 3D - source: <https://github.com/dsollberger/30DayMapChallenge>_
 
 ---
 
@@ -74,7 +74,7 @@ tags:
 
 ![24: fantasy](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_06_d24.png){: loading=lazy}
 
-:world_map: _J24: Fantasy - source: https://github.com/aliciaoberholzer/30DayMapChallenge_
+:world_map: _J24: Fantasy - source: <https://github.com/aliciaoberholzer/30DayMapChallenge>_
 
 ---
 
@@ -86,7 +86,7 @@ tags:
 
 ![16: minimal](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_07_d16.png){: loading=lazy}
 
-:world_map: _J16: Minimal - source: https://github.com/nrennie/30DayMapChallenge/tree/main/2022_
+:world_map: _J16: Minimal - source: <https://github.com/nrennie/30DayMapChallenge/tree/main/2022>_
 
 ---
 
@@ -104,7 +104,7 @@ _(liste contractuellement non-exhaustive et devant être considérée comme pén
 
 ![10: a bad map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_08_d10.png){: loading=lazy}
 
-:world_map: _J10: A bad map - source: https://github.com/dsollberger/30DayMapChallenge_
+:world_map: _J10: A bad map - source: <https://github.com/dsollberger/30DayMapChallenge>_
 
 ---
 
@@ -118,25 +118,25 @@ _(liste contractuellement non-exhaustive et devant être considérée comme pén
 :large_blue_diamond: deviner notre avenir et [nos fortunes diverses](https://www.youtube.com/watch?v=lzGmpqN9zZc) grâce à l'intuition des nombreu.x.ses et talentuese.x.e.es cartomancien.ne.s qui composent la communauté :mage:
 :large_blue_diamond: rencontrer les cartes  les plus :fire: de ta région
 :large_blue_diamond: lâcher des pouces bleus en masse pour soutenir [les géopotos](https://www.youtube.com/watch?v=zKFqbyDR6M4)
-:large_blue_diamond: s'époumoner au milieu du kop des géo-ultras à chaque geste technique réalisé lors de cette rencontre âpre et engagée, que beaucoup considèrent à juste titre comme le _cartografico_ :soccer: 
+:large_blue_diamond: s'époumoner au milieu du kop des géo-ultras à chaque geste technique réalisé lors de cette rencontre âpre et engagée, que beaucoup considèrent à juste titre comme le _cartografico_ :soccer:
 :large_blue_diamond: te vénérer, Ôh Grand QGIS, Sacré devant l'Éternel, toi le Messie Géospatial Providentiel, pour t'élever [sans sacrifice ni artifice](https://www.youtube.com/watch?v=wr8eVGWUftI) au rang de Dieu des S.I.G. : :dizzy: Séleste :dizzy: Immortel :dizzy: Giga-rédempteur
 :large_blue_diamond: défendre la liberté d'expression cartographique, soit le droit fondamental, universel et inaliénable à vectoriser [haut et fort](https://www.youtube.com/watch?v=qUYZKXis0BU)
-:large_blue_diamond: coordonner la convergence des géoluttes, semer [les graines](https://www.youtube.com/watch?v=x_HhWosCvYc) de la cartorévolte, vectoriser et géoréférencer les barricades puis y monter pour fomenter la QRévolution et instaurer la dictature de l'OpenSourçariat :fist: 
+:large_blue_diamond: coordonner la convergence des géoluttes, semer [les graines](https://www.youtube.com/watch?v=x_HhWosCvYc) de la cartorévolte, vectoriser et géoréférencer les barricades puis y monter pour fomenter la QRévolution et instaurer la dictature de l'OpenSourçariat :fist:
 :large_blue_diamond: pitcher [ta map multichannel](https://www.youtube.com/watch?v=NEQ2C7ppWZg), data-driven et customer-minded avec un géo-powerpoint insightful qui impacte ta growth devant tes investors grâce à tes process drivés par ton KPI carto-oriented :bar_chart:
 :large_blue_diamond: bouter hors de [ta bbox tricolore](https://www.youtube.com/watch?v=B5To8grqmyQ) les gros méchants cartobarbares et géoimmigrés qui viennent jusque dans tes bras s'en prendre à tes fils et tes compagnes :trollface:
-:large_blue_diamond: croiser le fer aux côtés de sigistes tenaces et opiniâtres pour le Beau, le Bon, la Vertu, le Courage, la Vigueur, l'Honneur, la Grandeur, la Noblesse et la Dignité de nos cartes :crossed_swords: 
+:large_blue_diamond: croiser le fer aux côtés de sigistes tenaces et opiniâtres pour le Beau, le Bon, la Vertu, le Courage, la Vigueur, l'Honneur, la Grandeur, la Noblesse et la Dignité de nos cartes :crossed_swords:
 :large_blue_diamond: tartiner tout le pot de Qonfiture sur la tartine spatiale, pour les plus st4rfoull4h d'entre nous :heart_eyes_cat:
 :large_blue_diamond: libérer la créativité, déchaîner l'audace et développer la sensibilité du cartomaniac qui sommeille en chacun de nous, afin de nous élever collectivement dans une transe céleste débouchant sur la lumière d'une totale liberté de pensée géocosmique vers un nouvel âge cartoréminiscent...
 
 ![9: space](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_09_d9.png){: loading=lazy}
 
-:world_map: _J9: Space - source: https://github.com/Pecners/30DayMapChallenge_
+:world_map: _J9: Space - source: <https://github.com/Pecners/30DayMapChallenge>_
 
 ---
 
 ![9: space](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_10_d9.jpg){: loading=lazy}
 
-:world_map: _J9: Space -  source: https://workworkworkwork.work/2022-30-day-map-challenge_
+:world_map: _J9: Space -  source: <https://workworkworkwork.work/2022-30-day-map-challenge>_
 
 ---
 
@@ -144,11 +144,11 @@ Mais aussi partager avec les autres pour nous rassembler, apprendre les uns des 
 
 ![10: a bad map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_11_d10.jpg){: loading=lazy}
 
-:world_map: _J10: A bad map - source: https://bbecquet.net/articles/2022/12/30-day-map-challenge/_
+:world_map: _J10: A bad map - source: <https://bbecquet.net/articles/2022/12/30-day-map-challenge/>_
 
 ---
 
-Ou encore rêvasser, s'évader dans des vapes reprojettées tout au long d'un mois de novembre qu'on aime aussi pour ses feuilles qui se colorent, puis qui tombent lentement, paisiblement, dans la subtile et douce mélodie d'une Qmétéo venteuse, à l'orée de cîmes convexes et brumeuses que le cartographe observe, plongé dans ses polygones volubiles et vaporeux, le curseur de la souris embué dans le vague, l'esprit embrumé dans des nuages de points suaves, peinant à distinguer avec précision les sommets adjacents des Monts du Cigue qui se dressent lentement, sans projection, à la volée, devant son regard perdu au milieu d'un brouillard humide et diffus dont il a du mal à saisir la bbox, préférant rester blotti dans le spleen saisonnier propice à un voyage cartographique intérieur qui l'envoûte, contre lequel il a du mal à résister... :sleeping: ... 
+Ou encore rêvasser, s'évader dans des vapes reprojettées tout au long d'un mois de novembre qu'on aime aussi pour ses feuilles qui se colorent, puis qui tombent lentement, paisiblement, dans la subtile et douce mélodie d'une Qmétéo venteuse, à l'orée de cîmes convexes et brumeuses que le cartographe observe, plongé dans ses polygones volubiles et vaporeux, le curseur de la souris embué dans le vague, l'esprit embrumé dans des nuages de points suaves, peinant à distinguer avec précision les sommets adjacents des Monts du Cigue qui se dressent lentement, sans projection, à la volée, devant son regard perdu au milieu d'un brouillard humide et diffus dont il a du mal à saisir la bbox, préférant rester blotti dans le spleen saisonnier propice à un voyage cartographique intérieur qui l'envoûte, contre lequel il a du mal à résister... :sleeping: ...
 
 :zzz: ...
 
@@ -166,7 +166,7 @@ La nostalgie de ce 30DayMapChallenge passé est en train d'atteindre le rédacte
 
 ![1: points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_13_d1.png){: loading=lazy}
 
-:world_map: _J1: Points - source: https://github.com/YoViajo/30-day-map-challenge/blob/main/2022/README.md_
+:world_map: _J1: Points - source: <https://github.com/YoViajo/30-day-map-challenge/blob/main/2022/README.md>_
 
 ---
 
@@ -174,7 +174,7 @@ Si vous êtes aussi sur le point de :sleeping:, ou si vous commencez à :rage:, 
 
 ![1: points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_14_d1.jpg){: loading=lazy}
 
-:world_map: _J1: Points - source: https://github.com/aliciaoberholzer/30DayMapChallenge_
+:world_map: _J1: Points - source: <https://github.com/aliciaoberholzer/30DayMapChallenge>_
 
 ---
 
@@ -184,7 +184,7 @@ _:plate_with_cutlery: En espérant que vous soyasses rassasiés et que ceux-là 
 
 ![17: A map without a computer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_15_d17.png){: loading=lazy}
 
-:world_map: _J17: A map without a computer - source: https://github.com/dsollberger/30DayMapChallenge_
+:world_map: _J17: A map without a computer - source: <https://github.com/dsollberger/30DayMapChallenge>_
 
 ---
 
@@ -204,7 +204,7 @@ _:plate_with_cutlery: En espérant que vous soyasses rassasiés et que ceux-là 
 
 ![17: a map without a computer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_16_d17.jpg){: loading=lazy}
 
-:world_map: _J17: A map without a computer - source: https://histocarte.fr/30daymapchallenge-2022/_
+:world_map: _J17: A map without a computer - source: <https://histocarte.fr/30daymapchallenge-2022/>_
 
 ---
 
@@ -218,7 +218,7 @@ _:plate_with_cutlery: En espérant que vous soyasses rassasiés et que ceux-là 
 
 ![2: lines](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_17_d2.png){: loading=lazy}
 
-:world_map: _J2: Lines - source: https://github.com/IcaroBernardes/30DayMapChallenge_
+:world_map: _J2: Lines - source: <https://github.com/IcaroBernardes/30DayMapChallenge>_
 
 ---
 
@@ -234,7 +234,7 @@ Et rendez-vous en novembre !
 
 ![30: remix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_18_d30.png){: loading=lazy}
 
-:world_map: _J30: Remix - source: https://github.com/Pecners/30DayMapChallenge_
+:world_map: _J30: Remix - source: <https://github.com/Pecners/30DayMapChallenge>_
 
 ---
 
