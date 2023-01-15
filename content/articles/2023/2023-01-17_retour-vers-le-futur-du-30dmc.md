@@ -242,6 +242,6 @@ Et rendez-vous en novembre !
 
 ![portrait guilhem allaman](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_author_ga.jpg "portrait guilhem allaman"){: .img-rdp-news-thumb loading=lazy}
 
-:confused: Guilhem Allaman: je suis ingénieur développeur, spécialisé dans les SIG : python, PostGreSQL/PostGIS, QGIS. Mais parfois malheureusement siggeur profane et immature, à la volée, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste vindicatif et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
+:confused: Guilhem Allaman: je suis ingénieur développeur, éduqué avec Java, mon langage maternel de programmation, avant d'arriver dans toutes les joies des SIG : python, PostGreSQL/PostGIS, QGIS... Mais parfois malheureusement siggeur profane et immature, à la volée, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste vindicatif et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
 
 {% include "licenses/beerware.md" %}
