@@ -33,7 +33,7 @@ tags:
 
 ![10: a bad map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_01_d10.png){: loading=lazy}
 
-:world_map: _J10: A bad map - source: <https://github.com/petraduriancikova/30DayMapChallenge>
+:world_map: _J10: A bad map - source: <https://github.com/petraduriancikova/30DayMapChallenge>_
 
 ----
 
