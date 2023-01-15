@@ -109,7 +109,7 @@ tags:
 
 :large_blue_diamond: célébrer les cartes et tout ce qu'elles représentent
 :large_blue_diamond: promouvoir la cartographie auprès du plus grand nombre
-:large_blue_diamond: [applaudir]https://youtu.be/qyHmeySM14k) la participation et l'entrain des participants, peu importe leur niveau d'expertise : [novices](https://youtu.be/l6FRh90Xm70), confirmés, [m](https://youtu.be/vSzkfPCTV6w)[a](https://youtu.be/D6KYbpDditU)[e](https://youtu.be/24Jc8rC6S_E)[s](https://youtu.be/HcBhluNg_Q0)[t](https://youtu.be/T0ItqjPFwNM)[r](https://youtu.be/2oyhlad64-s)[o](https://youtu.be/BY_8cHJWtRg)[s](https://youtu.be/SXWSdErCajg)... Tout le monde est chaleureusement bienvenu !
+:large_blue_diamond: [applaudir]<https://youtu.be/qyHmeySM14k>) la participation et l'entrain des participants, peu importe leur niveau d'expertise : [novices](https://youtu.be/l6FRh90Xm70), confirmés, [m](https://youtu.be/vSzkfPCTV6w)[a](https://youtu.be/D6KYbpDditU)[e](https://youtu.be/24Jc8rC6S_E)[s](https://youtu.be/HcBhluNg_Q0)[t](https://youtu.be/T0ItqjPFwNM)[r](https://youtu.be/2oyhlad64-s)[o](https://youtu.be/BY_8cHJWtRg)[s](https://youtu.be/SXWSdErCajg)... Tout le monde est chaleureusement bienvenu !
 :large_blue_diamond: apprendre à manier et maîtriser des nouveaux outils cartographiques (le plus mieux étant [QGIS](https://www.qgis.org/fr/site/) bien sûr)
 :large_blue_diamond: rassembler et explorer [la diversité grandissante](https://youtu.be/X75ce-CAorU) de la communauté
 :large_blue_diamond: s'émerveiller devant l'esthétique que peuvent exprimer les cartes
