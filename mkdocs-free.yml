@@ -82,7 +82,6 @@ plugins:
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
 
 # Theme
@@ -96,6 +95,9 @@ theme:
   search_index_only: true
 
   features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
     - content.tabs.link
     - navigation.tabs
     - navigation.top
