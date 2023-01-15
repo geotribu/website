@@ -135,7 +135,9 @@ theme:
   search_index_only: true
 
   features:
+    - content.action.edit
     - content.code.annotate
+    - content.code.copy
     - content.tabs.link
     - navigation.prune
     - navigation.tabs
