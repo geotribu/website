@@ -5,10 +5,11 @@ authors:
     - Guilhem ALLAMAN
 categories:
     - article
-    - tutoriel
+    - retrospective
+    - billet d'humeur
 date: "2023-01-17 10:00"
 description: "Rétrospective profane et gratuite sur les perles du 30DayMapChallenge de 2022"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_thumbdesc.png"
 license: beerware
 tags:
     - 30DayMapChallenge
@@ -23,10 +24,13 @@ tags:
 
 ---
 
+![30: remix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_00_d30.jpg){: loading=lazy}
+:world_map: _J30: Remix - source: https://twitter.com/XemartinLaborde/status/1598096950439858177?s=20_
+
 :sparkles: En novembre dernier avait lieu le **#30DayMapChallenge** !
 
-![30: remix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_01_d30.jpg){: loading=lazy}
-:world_map: _J30: Remix - source: https://twitter.com/XemartinLaborde/status/1598096950439858177?s=20_
+![10: a bad map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_01_d10.jpg){: loading=lazy}
+:world_map: _J30: Remix - source: https://github.com/petraduriancikova/30DayMapChallenge
 
 À cette occasion, les :two_women_holding_hands: _[géotribuns](https://static.geotribu.fr/team/)_ :two_women_holding_hands: n'avaient d'ailleurs pas manqué d'aborder [en long](/rdp/2022/rdp_2022-10-21/#cest-bientot-le-30daymapchallenge) et [en large](/rdp/2022/rdp_2022-11-18/#30daymapchallenge) la tenue de cet évènement, particulièrement apprécié par la communauté :world_map:. Un évènement décousu et attendu de longue date, mais pas cousu de fil blanc, bien au contraire : découvrons ensemble les décoctions géoréférencées et autres remèdes cartographiques concoctés par les herboristes véhéments qui ont participé au challenge :herb:
 
@@ -60,7 +64,7 @@ tags:
 :underage: pas d'âge légal minimum (ni maximum d'ailleurs)
 :cop: (presque) pas d'[obligations contractuelles](https://30daymapchallenge.com/#code-of-conduct)
 
-:pushpin: _Au demeurant, n'est strictement prévue aucune autre obligation prérogativement et forfaitairement majorée au travers d'un droit de regard et de rétractation ultérieurement rétroactivable, amenant de facto à établir stricto sensu une période ad vitam æternam d'annuités flemmatoires prévues et préétablies au devant de pénalités unilatéralement puis rétro-antérieurement dépénalisantes eu égard, [à fortiori](https://www.youtube.com/watch?v=ZTeqM5gciH8), aux prérogatives duement susmentionnées en alinéa 7 du paragraphe 34 de la troisième annexe des [conditions générales](https://www.bonjour404.fr/post/705324721852563456/kffein) d'un engagement manifestement non-contractuel, au demeurant._
+:pushpin: _Au demeurant, n'est strictement prévue aucune autre obligation prérogativement et forfaitairement majorée au travers d'un droit de regard et de rétractation ultérieurement rétroactivable, amenant de facto à établir stricto sensu une période ad vitam æternam d'annuités flemmatoires prévues et préétablies au devant de pénalités unilatéralement puis rétro-antérieurement dépénalisantes eu égard, [a fortiori](https://www.youtube.com/watch?v=ZTeqM5gciH8), aux prérogatives duement susmentionnées en alinéa 7 du paragraphe 34 de la troisième annexe des [conditions générales](https://www.bonjour404.fr/post/705324721852563456/kffein) d'un engagement manifestement non-contractuel, au demeurant._
 
 ![16: minimal](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_07_d16.png){: loading=lazy}
 :world_map: _J16: Minimal - source: https://github.com/nrennie/30DayMapChallenge/tree/main/2022_
@@ -182,7 +186,7 @@ Et rendez-vous en novembre !
 
 ![portrait guilhem allaman](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_author_ga.jpg "portrait guilhem allaman"){: .img-rdp-news-thumb loading=lazy}
 
-:confused: Guilhem Allaman: je suis ingénieur développeur, spécialisé dans les SIG : python, PostGreSQL/PostGIS, QGIS... patati patata... mais parfois malheureusement siggeur profane et immature, à la volée, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste vindicatif et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
+:confused: Guilhem Allaman: je suis ingénieur développeur, spécialisé dans les SIG : python, PostGreSQL/PostGIS, QGIS. Mais parfois malheureusement siggeur profane et immature, à la volée, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste vindicatif et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
 
 {% include "licenses/beerware.md" %}
 
