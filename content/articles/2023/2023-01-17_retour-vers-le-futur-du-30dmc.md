@@ -109,7 +109,7 @@ tags:
 
 :large_blue_diamond: célébrer les cartes et tout ce qu'elles représentent
 :large_blue_diamond: promouvoir la cartographie auprès du plus grand nombre
-:large_blue_diamond: [applaudir](https://www.youtube.com/watch?v=qyHmeySM14k) la participation et l'entrain des participants, peu importe leur niveau d'expertise : novices, confirmés, [maestros](https://www.youtube.com/watch?v=vSzkfPCTV6w)... Tout le monde est chaleureusement bienvenu !
+:large_blue_diamond: [applaudir](https://www.youtube.com/watch?v=qyHmeySM14k) la participation et l'entrain des participants, peu importe leur niveau d'expertise : [novices](https://youtu.be/l6FRh90Xm70), confirmés, [ma](https://www.youtube.com/watch?v=vSzkfPCTV6w)[es](https://youtu.be/D6KYbpDditU)[tr](https://youtu.be/HcBhluNg_Q0)[os](https://youtu.be/SXWSdErCajg)... Tout le monde est chaleureusement bienvenu !
 :large_blue_diamond: apprendre à manier et maîtriser des nouveaux outils cartographiques (le plus mieux étant [QGIS](https://www.qgis.org/fr/site/) bien sûr)
 :large_blue_diamond: rassembler et explorer [la diversité grandissante](https://www.youtube.com/watch?v=X75ce-CAorU) de la communauté
 :large_blue_diamond: s'émerveiller devant l'esthétique que peuvent exprimer les cartes
