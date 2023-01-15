@@ -51,7 +51,7 @@ tags:
 
 ----
 
-:exclamation: Sous forme de défis ludiques, sur un ton jovial, fédérateur, social, sans souci mais malheureusement sans saucisses à l'ail ni halal inch'Allah, et ce pour la quatrième édition maintenant d'une initiative lancée par [Topi Tjukanov](https://github.com/tjukanovt/30DayMapChallenge) qui fournit les sujets, le 30DayMapChallenge propose un principe plutôt simple :
+:fire: Sous forme de défis ludiques, sur un ton jovial, fédérateur, social, sans souci mais malheureusement sans saucisses à l'ail ni halal inch'Allah, et ce pour la quatrième édition maintenant d'une initiative lancée par [Topi Tjukanov](https://github.com/tjukanovt/30DayMapChallenge) qui fournit les sujets, le 30DayMapChallenge propose un principe plutôt simple :
 
 - :three: :zero: jours, pour réaliser
 - :three: :zero: cartes, en suivant
@@ -99,7 +99,7 @@ tags:
 
 :star2: Les buts et aspirations du #30DayMapChallenge sont multiples :
 
-_Liste contractuellement non-exhaustive et devant être considérée comme pénalement irresponsable devant tout géotribunal_
+:exclamation: _liste contractuellement non-exhaustive et devant être considérée comme pénalement irresponsable devant tout géotribunal_
 
 ![10: a bad map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_08_d10.png){: loading=lazy}
 
@@ -241,6 +241,6 @@ Et rendez-vous en novembre !
 
 ![portrait guilhem allaman](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_author_ga.jpg "portrait guilhem allaman"){: .img-rdp-news-thumb loading=lazy}
 
-:confused: Guilhem Allaman: je suis ingénieur et développeur, éduqué avec Java (mon langage maternel), avant de basculer et de me spécialiser vers les joies des SIG : python, PostGreSQL/PostGIS, QGIS... Mais parfois malheureusement siggeur profane et immature, à la volée, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
+:confused: Guilhem Allaman: je suis ingénieur et développeur, éduqué avec Java (mon langage maternel), avant de basculer et de me spécialiser vers les joies des SIG : python, PostGreSQL/PostGIS, QGIS... Mais parfois malheureusement siggeur profane et immature, à la volée et sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
 
 {% include "licenses/beerware.md" %}
