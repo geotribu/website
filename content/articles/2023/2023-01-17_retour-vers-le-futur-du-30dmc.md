@@ -78,8 +78,11 @@ tags:
 ----
 
 :no_entry: pas de compétition
+
 :underage: pas d'âge légal minimum (ni maximum d'ailleurs)
+
 :cop: (presque) pas d'[obligations contractuelles](https://30daymapchallenge.com/#code-of-conduct)
+
 
 :pushpin: _Au demeurant, n'est strictement prévue aucune autre obligation prérogativement et forfaitairement majorée au travers d'un droit de regard et de rétractation ultérieurement rétroactivable, amenant de facto à établir stricto sensu une période ad vitam æternam d'annuités flemmatoires prévues et préétablies au devant de pénalités unilatéralement puis rétro-antérieurement dépénalisantes eu égard, [a fortiori](https://youtu.be/ZTeqM5gciH8), aux prérogatives duement susmentionnées en alinéa 7 du paragraphe 34 de la troisième annexe des [conditions générales](https://www.bonjour404.fr/post/705324721852563456/kffein) d'un engagement manifestement non-contractuel, [au demeurant](https://youtu.be/hz5xWgjSUlk)._
 
@@ -108,23 +111,41 @@ tags:
 ----
 
 :large_blue_diamond: célébrer les cartes et tout ce qu'elles représentent
+
 :large_blue_diamond: promouvoir la cartographie auprès du plus grand nombre
-:large_blue_diamond: [applaudir]<https://youtu.be/qyHmeySM14k>) la participation et l'entrain des participants, peu importe leur niveau d'expertise : [novices](https://youtu.be/l6FRh90Xm70), confirmés, [m](https://youtu.be/vSzkfPCTV6w)[a](https://youtu.be/D6KYbpDditU)[e](https://youtu.be/24Jc8rC6S_E)[s](https://youtu.be/HcBhluNg_Q0)[t](https://youtu.be/T0ItqjPFwNM)[r](https://youtu.be/2oyhlad64-s)[o](https://youtu.be/BY_8cHJWtRg)[s](https://youtu.be/SXWSdErCajg)... Tout le monde est chaleureusement bienvenu !
+
+:large_blue_diamond: [applaudir](https://youtu.be/qyHmeySM14k>) la participation et l'entrain des participants, peu importe leur niveau d'expertise : [novices](https://youtu.be/l6FRh90Xm70), confirmés, [m](https://youtu.be/vSzkfPCTV6w)[a](https://youtu.be/D6KYbpDditU)[e](https://youtu.be/24Jc8rC6S_E)[s](https://youtu.be/HcBhluNg_Q0)[t](https://youtu.be/T0ItqjPFwNM)[r](https://youtu.be/2oyhlad64-s)[o](https://youtu.be/BY_8cHJWtRg)[s](https://youtu.be/SXWSdErCajg)... Tout le monde est chaleureusement bienvenu !
+
 :large_blue_diamond: apprendre à manier et maîtriser des nouveaux outils cartographiques (le plus mieux étant [QGIS](https://www.qgis.org/fr/site/) bien sûr)
+
 :large_blue_diamond: rassembler et explorer [la diversité grandissante](https://youtu.be/X75ce-CAorU) de la communauté
+
 :large_blue_diamond: s'émerveiller devant l'esthétique que peuvent exprimer les cartes
+
 :large_blue_diamond: pouffer devant l'irrévérence qu'elles peuvent aussi scabreusement afficher
+
 :large_blue_diamond: deviner notre avenir et nos fortunes [diverses](https://youtu.be/lzGmpqN9zZc) grâce à l'intuition des nombreu.x.ses et talentuese.x.e.es cartomancien.ne.s qui composent la communauté :mage:
+
 :large_blue_diamond: rencontrer les cartes  les plus :fire: de ta région
+
 :large_blue_diamond: lâcher des pouces bleus en masse pour soutenir les [géopotos](https://youtu.be/zKFqbyDR6M4)
+
 :large_blue_diamond: s'époumoner au milieu du kop des géo-ultras à chaque geste technique réalisé lors de cette rencontre âpre et engagée, que beaucoup considèrent à juste titre comme le _cartografico_ :soccer:
+
 :large_blue_diamond: te vénérer, Ôh Grand QGIS, Sacré devant l'Éternel, toi le Messie Géospatial Providentiel, pour t'élever [sans sacrifice ni artifice](https://youtu.be/wr8eVGWUftI) au rang de Dieu des S.I.G. : :dizzy: Séleste :dizzy: Immortel :dizzy: Giga-rédempteur
+
 :large_blue_diamond: défendre la liberté d'expression cartographique, soit le droit fondamental, universel et inaliénable à vectoriser haut et fort
+
 :large_blue_diamond: coordonner la convergence des géoluttes, semer les [graines](https://youtu.be/x_HhWosCvYc) de la cartorévolte, vectoriser et géoréférencer les barricades puis y monter pour fomenter la QRévolution et instaurer la dictature de l'OpenSourçariat :fist:
+
 :large_blue_diamond: pitcher ta [map multichannel](https://youtu.be/NEQ2C7ppWZg), data-driven et customer-minded avec un carto-powerpoint insightful qui impacte ta growth devant tes investors grâce à tes process drivés par ton KPI géoriented :bar_chart:
-:large_blue_diamond: expulser hors de [ta bbox tricolore](https://youtu.be/B5To8grqmyQ) les gros méchants cartobarbares et géoétrangers qui viennent jusque dans tes bras s'en prendre à tes fils et tes compagnes
+
+:large_blue_diamond: bouter hors de [ta bbox tricolore](https://youtu.be/B5To8grqmyQ) les gros méchants cartobarbares et géoétrangers qui viennent jusque dans tes bras s'en prendre à tes fils et tes compagnes
+
 :large_blue_diamond: croiser le fer aux côtés de sigistes tenaces et opiniâtres pour le Beau, le Bon, la Vertu, le Courage, la Vigueur, l'Honneur, la Grandeur, la Noblesse et la Dignité de nos cartes :crossed_swords:
+
 :large_blue_diamond: tartiner tout le pot de Qonfiture sur la tartine spatiale, pour les plus st4rfoull4h d'entre nous :heart_eyes_cat:
+
 :large_blue_diamond: libérer la créativité, déchaîner l'audace et développer la sensibilité du cartomaniac qui sommeille en chacun de nous, afin de nous élever collectivement dans une transe céleste débouchant sur la lumière d'une totale liberté de pensée géocosmique vers un nouvel âge cartoréminiscent...
 
 ![9: space](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_09_d9.png){: loading=lazy}
@@ -139,7 +160,7 @@ tags:
 
 ----
 
-Mais aussi partager avec les autres pour nous rassembler, apprendre les uns des autres, découvrir, en connaître un peu plus sur des territoires inconnus et lointains, ou au contraire porter un regard nouveau sur d'autres plus proches et mieux connus...
+Mais aussi rassembler la communauté pour partager, apprendre les uns des autres, découvrir, en connaître un peu plus sur des territoires inconnus et lointains, ou au contraire porter un regard nouveau sur d'autres plus proches et mieux connus...
 
 ![10: a bad map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_11_d10.jpg){: loading=lazy}
 
