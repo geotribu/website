@@ -22,13 +22,13 @@ tags:
 
 :calendar: Date de publication initiale : 17 janvier 2023
 
----
+----
 
 ![30: remix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_00_d30.jpg){: loading=lazy}
 
 :world_map: _J30: Remix - source: <https://twitter.com/XemartinLaborde/status/1598096950439858177?s=20>_
 
----
+----
 
 :sparkles: En novembre dernier avait lieu le **#30DayMapChallenge** !
 
@@ -36,7 +36,7 @@ tags:
 
 :world_map: _J30: Remix - source: <https://github.com/petraduriancikova/30DayMapChallenge>
 
----
+----
 
 À cette occasion, les :two_women_holding_hands: _[géotribuns](https://static.geotribu.fr/team/)_ :two_women_holding_hands: n'avaient d'ailleurs pas manqué d'aborder [en long](/rdp/2022/rdp_2022-10-21/#cest-bientot-le-30daymapchallenge) et [en large](/rdp/2022/rdp_2022-11-18/#30daymapchallenge) la tenue de cet évènement, particulièrement apprécié par la communauté :world_map:. Un évènement décousu et attendu de longue date, mais pas cousu de fil blanc, bien au contraire : découvrons ensemble les décoctions géoréférencées et autres remèdes cartographiques concoctés par les herboristes véhéments qui ont participé au challenge :herb:
 
@@ -44,13 +44,13 @@ tags:
 
 :world_map: _J20: "My favourite..." - source: <https://github.com/Pecners/30DayMapChallenge>_
 
----
+----
 
 ![4: green](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_03_d4.jpg){: loading=lazy}
 
 :world_map: _J4: Colour Friday: Green - source: <https://github.com/aliciaoberholzer/30DayMapChallenge>_
 
----
+----
 
 :exclamation: Sous forme de défis ludiques, sur un ton jovial, fédérateur, social, sans souci mais malheureusement sans saucisses à l'ail ni halal inch'Allah, et ce pour la quatrième édition maintenant d'une initiative lancée par [Topi Tjukanov](https://github.com/tjukanovt/30DayMapChallenge) qui fournit les sujets, le 30DayMapChallenge propose un principe plutôt simple :
 
@@ -68,7 +68,7 @@ tags:
 
 :world_map: _J28: 3D - source: <https://github.com/dsollberger/30DayMapChallenge>_
 
----
+----
 
 :sunglasses: Les sujets sont annoncés quelques semaines à l'avance, et l'idée est de s'amuser, de se détendre, de prendre du plaisir. Le choix des [outils](https://30daymapchallenge.com/resources/#tools) utilisés est libre (mais opensource hein quand même svp : vous êtes assurément libres de choisir à condition que votre choix soit le bon ! (Et opensource !)). Idem pour les [données](https://30daymapchallenge.com/resources/#data), avec cependant une consigne à respecter certains jours. Tout ceci sans [se prendre la tête](https://www.youtube.com/watch?v=GPQEl2qf25w) :
 
@@ -76,7 +76,7 @@ tags:
 
 :world_map: _J24: Fantasy - source: <https://github.com/aliciaoberholzer/30DayMapChallenge>_
 
----
+----
 
 :no_entry: pas de compétition
 :underage: pas d'âge légal minimum (ni maximum d'ailleurs)
@@ -88,7 +88,7 @@ tags:
 
 :world_map: _J16: Minimal - source: <https://github.com/nrennie/30DayMapChallenge/tree/main/2022>_
 
----
+----
 
 :sound: Le _#30DayMapChallenge_, c'est aux géomaniacs ce que le _[#harlemshake](https://www.youtube.com/watch?v=iXCl0fY-HfQ)_ ou le _[#wayawayachallenge](https://www.tiktok.com/@mrgoodvibesonly/video/7141041133483871493)_ sont aux ambianceurs. Cette année, le [bruit](https://www.youtube.com/watch?v=l5ozpoOmvNc) et les [décibels](https://www.youtube.com/watch?v=3ag62f8Vr14) mesurés sur les [fréquences métriques](https://30daymapchallenge.com/statistics/) du mot dièse ont pu s'avérer assourdissants, et ce sans aucune fausse note ni bémol à la clef. Les géochefs d'orchestre ont investi la sphère en masse : ils étaient des dizaines de milliers selon les organisateurs, seulement [4326](https://spatialreference.org/ref/epsg/4326/) selon les [CRS](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_coordonn%C3%A9es_(cartographie)#Les_codes_EPSG) ... On connaît la :notes: !
 
@@ -96,7 +96,7 @@ tags:
 <iframe width="100%" height="360" src="https://www.youtube-nocookie.com/embed/o-aDbQX2J3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <!-- markdownlint-enable MD033 -->
 
----
+----
 
 :star2: Les buts et aspirations du #30DayMapChallenge sont multiples :
 
@@ -106,7 +106,7 @@ _(liste contractuellement non-exhaustive et devant être considérée comme pén
 
 :world_map: _J10: A bad map - source: <https://github.com/dsollberger/30DayMapChallenge>_
 
----
+----
 
 :large_blue_diamond: célébrer les cartes et tout ce qu'elles représentent
 :large_blue_diamond: promouvoir la cartographie auprès du plus grand nombre
@@ -132,13 +132,13 @@ _(liste contractuellement non-exhaustive et devant être considérée comme pén
 
 :world_map: _J9: Space - source: <https://github.com/Pecners/30DayMapChallenge>_
 
----
+----
 
 ![9: space](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_10_d9.jpg){: loading=lazy}
 
 :world_map: _J9: Space -  source: <https://workworkworkwork.work/2022-30-day-map-challenge>_
 
----
+----
 
 Mais aussi partager avec les autres pour nous rassembler, apprendre les uns des autres, découvrir, en connaître un peu plus sur des territoires inconnus et lointains, ou au contraire porter un regard nouveau sur d'autres plus proches et mieux connus...
 
@@ -146,7 +146,7 @@ Mais aussi partager avec les autres pour nous rassembler, apprendre les uns des 
 
 :world_map: _J10: A bad map - source: <https://bbecquet.net/articles/2022/12/30-day-map-challenge/>_
 
----
+----
 
 Ou encore rêvasser, s'évader dans des vapes reprojettées tout au long d'un mois de novembre qu'on aime aussi pour ses feuilles qui se colorent, puis qui tombent lentement, paisiblement, dans la subtile et douce mélodie d'une Qmétéo venteuse, à l'orée de cîmes convexes et brumeuses que le cartographe observe, plongé dans ses polygones volubiles et vaporeux, le curseur de la souris embué dans le vague, l'esprit embrumé dans des nuages de points suaves, peinant à distinguer avec précision les sommets adjacents des Monts du Cigue qui se dressent lentement, sans projection, à la volée, devant son regard perdu au milieu d'un brouillard humide et diffus dont il a du mal à saisir la bbox, préférant rester blotti dans le spleen saisonnier propice à un voyage cartographique intérieur qui l'envoûte, contre lequel il a du mal à résister... :sleeping: ...
 
@@ -156,7 +156,7 @@ Ou encore rêvasser, s'évader dans des vapes reprojettées tout au long d'un mo
 
 _Le Cartographe contemplant une mer de cartes postées lors du #30DayMapChallenge_ - _nov. 2022_ - ig :camera: _[@cspr_dvd_frdrch](https://fr.wikipedia.org/wiki/Caspar_David_Friedrich?wprov=sfla1)_
 
----
+----
 
 La nostalgie de ce 30DayMapChallenge passé est en train d'atteindre le rédacteur de cet article qui finit décidément en roue libre !
 
@@ -168,7 +168,7 @@ La nostalgie de ce 30DayMapChallenge passé est en train d'atteindre le rédacte
 
 :world_map: _J1: Points - source: <https://github.com/YoViajo/30-day-map-challenge/blob/main/2022/README.md>_
 
----
+----
 
 Si vous êtes aussi sur le point de :sleeping:, ou si vous commencez à :rage:, c'est l'heure du :alarm_clock: !
 
@@ -176,7 +176,7 @@ Si vous êtes aussi sur le point de :sleeping:, ou si vous commencez à :rage:, 
 
 :world_map: _J1: Points - source: <https://github.com/aliciaoberholzer/30DayMapChallenge>_
 
----
+----
 
 :cook: Les _géocuistots_ s'activent en cuisine pour stimuler vos papilles, au travers d'un menu certifié ingrédients frais et de saison, qui tente vainement de donner un aperçu des saveurs qu'il a été possible de déguster tout au long de ce challenge succulent et succulé :yum:
 
@@ -186,7 +186,7 @@ _:plate_with_cutlery: En espérant que vous soyasses rassasiés et que ceux-là 
 
 :world_map: _J17: A map without a computer - source: <https://github.com/dsollberger/30DayMapChallenge>_
 
----
+----
 
 :earth_americas: :bento: en entrée, le site du 30dmc apporte [une belle assiette composée](https://30daymapchallenge.com/2022/), avec son émincé finement retwitté et ses hors-d'œuvres cartographiques aux petits oignons
 
@@ -198,7 +198,7 @@ _:plate_with_cutlery: En espérant que vous soyasses rassasiés et que ceux-là 
 <iframe width="100%" height="360" src="https://www.youtube-nocookie.com/embed/IQpPJ8_ks6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <!-- markdownlint-enable MD033 -->
 
----
+----
 
 :pill: N'hésitez pas à vous resservir : y'a du rab ! Et les bienfaits thérapeutiques de la cartographie ne sont dorénavant plus à démontrer. En novembre, évitons de creuser le trou de la sécurité spatiale : pas besoin d'user ni d'abuser de cartomédicaments, pas besoin d'ingurgiter ni de se rouler beaucoup de géomédecines alternatives : **"~~an apple~~ a map a day keeps the doctor away"** :mute: :scientist:
 
@@ -206,7 +206,7 @@ _:plate_with_cutlery: En espérant que vous soyasses rassasiés et que ceux-là 
 
 :world_map: _J17: A map without a computer - source: <https://histocarte.fr/30daymapchallenge-2022/>_
 
----
+----
 
 :wine_glass: [Un digestif](https://les-artisans-cartographes.fr/30daymapchallenge_2022/) ? [Maxime](https://les-artisans-cartographes.fr/author/maxime/) et [Les Artisans Cartographes](https://les-artisans-cartographes.fr/) descendent à la cave vous chercher ça
 
@@ -220,7 +220,7 @@ _:plate_with_cutlery: En espérant que vous soyasses rassasiés et que ceux-là 
 
 :world_map: _J2: Lines - source: <https://github.com/IcaroBernardes/30DayMapChallenge>_
 
----
+----
 
 :clap::clap::clap::clap::clap:
 
@@ -236,9 +236,9 @@ Et rendez-vous en novembre !
 
 :world_map: _J30: Remix - source: <https://github.com/Pecners/30DayMapChallenge>_
 
----
+----
 
-#### Auteur
+## Auteur
 
 ![portrait guilhem allaman](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_author_ga.jpg "portrait guilhem allaman"){: .img-rdp-news-thumb loading=lazy}
 
