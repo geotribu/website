@@ -15,7 +15,6 @@ tags:
     - 30DayMapChallenge
     - QGIS
     - OpenSource
-    - ChristopheLambert
 ---
 
 # Retour vers le futur du #30DayMapChallenge
@@ -34,7 +33,7 @@ tags:
 
 ![10: a bad map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_01_d10.png){: loading=lazy}
 
-:world_map: _J30: Remix - source: <https://github.com/petraduriancikova/30DayMapChallenge>
+:world_map: _J10: A bad map - source: <https://github.com/petraduriancikova/30DayMapChallenge>
 
 ----
 
@@ -100,7 +99,7 @@ tags:
 
 :star2: Les buts et aspirations du #30DayMapChallenge sont multiples :
 
-_(liste contractuellement non-exhaustive et devant être considérée comme pénalement irresponsable devant tout géotribunal)_
+_Liste contractuellement non-exhaustive et devant être considérée comme pénalement irresponsable devant tout géotribunal_
 
 ![10: a bad map](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_08_d10.png){: loading=lazy}
 
@@ -180,7 +179,7 @@ Si vous êtes aussi sur le point de :sleeping:, ou si vous commencez à :rage:, 
 
 :cook: Les _géocuistots_ s'activent en cuisine pour stimuler vos papilles, au travers d'un menu certifié ingrédients frais et de saison, qui tente vainement de donner un aperçu des saveurs qu'il a été possible de déguster tout au long de ce challenge succulent et succulé :yum:
 
-_:plate_with_cutlery: En espérant que vous soyasses rassasiés et que ceux-là vous permette de tenir jusqu'à novembre prochain_
+:plate_with_cutlery: _En espérant que vous soyasses rassasiés et que ceux-là vous permette de tenir jusqu'à novembre prochain_
 
 ![17: A map without a computer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_15_d17.png){: loading=lazy}
 
@@ -242,6 +241,6 @@ Et rendez-vous en novembre !
 
 ![portrait guilhem allaman](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_author_ga.jpg "portrait guilhem allaman"){: .img-rdp-news-thumb loading=lazy}
 
-:confused: Guilhem Allaman: je suis ingénieur développeur, éduqué avec Java, mon langage maternel de programmation, avant d'arriver dans toutes les joies des SIG : python, PostGreSQL/PostGIS, QGIS... Mais parfois malheureusement siggeur profane et immature, à la volée, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste vindicatif et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
+:confused: Guilhem Allaman: je suis ingénieur et développeur, éduqué avec Java (mon langage maternel), avant de basculer et de me spécialiser vers les joies des SIG : python, PostGreSQL/PostGIS, QGIS... Mais parfois malheureusement siggeur profane et immature, à la volée, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
 
 {% include "licenses/beerware.md" %}
