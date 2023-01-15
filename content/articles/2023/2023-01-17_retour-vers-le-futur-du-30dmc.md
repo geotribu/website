@@ -83,7 +83,6 @@ tags:
 
 :cop: (presque) pas d'[obligations contractuelles](https://30daymapchallenge.com/#code-of-conduct)
 
-
 :pushpin: _Au demeurant, n'est strictement prévue aucune autre obligation prérogativement et forfaitairement majorée au travers d'un droit de regard et de rétractation ultérieurement rétroactivable, amenant de facto à établir stricto sensu une période ad vitam æternam d'annuités flemmatoires prévues et préétablies au devant de pénalités unilatéralement puis rétro-antérieurement dépénalisantes eu égard, [a fortiori](https://youtu.be/ZTeqM5gciH8), aux prérogatives duement susmentionnées en alinéa 7 du paragraphe 34 de la troisième annexe des [conditions générales](https://www.bonjour404.fr/post/705324721852563456/kffein) d'un engagement manifestement non-contractuel, [au demeurant](https://youtu.be/hz5xWgjSUlk)._
 
 ![16: minimal](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_07_d16.png){: loading=lazy}
