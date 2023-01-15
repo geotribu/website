@@ -30,7 +30,7 @@ tags:
 
 !!! info
     Carte de voeux réalisée avec [PostgreSQL/PostGIS (fonction ST_Letters)](https://www.crunchydata.com/blog/fun-with-letters-in-postgis-33) et QGIS.
-    
+
 ----
 
 ## Rétrospective 2022
