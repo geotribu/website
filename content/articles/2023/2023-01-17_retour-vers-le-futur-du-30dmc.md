@@ -7,7 +7,7 @@ categories:
     - article
     - retrospective
     - billet d'humeur
-date: "2023-01-17 10:00"
+date: "2023-01-24 10:00"
 description: "Rétrospective profane et gratuite sur les perles du 30DayMapChallenge de 2022"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_thumbdesc.png"
 license: beerware
