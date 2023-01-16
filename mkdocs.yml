@@ -139,6 +139,7 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - navigation.path
     - navigation.prune
     - navigation.tabs
     - navigation.top
