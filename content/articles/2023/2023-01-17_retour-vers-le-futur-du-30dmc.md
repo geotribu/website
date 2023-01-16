@@ -19,7 +19,7 @@ tags:
 
 # Retour vers le futur du #30DayMapChallenge
 
-:calendar: Date de publication initiale : 17 janvier 2023
+:calendar: Date de publication initiale : 24 janvier 2023
 
 ----
 
