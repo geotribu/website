@@ -131,7 +131,7 @@ tags:
 
 :large_blue_diamond: s'époumoner au milieu du kop des géo-ultras à chaque geste technique réalisé lors de cette rencontre âpre et engagée, que beaucoup considèrent à juste titre comme le _cartografico_ :soccer:
 
-:large_blue_diamond: te vénérer, Ôh Grand QGIS, Sacré devant l'Éternel, toi le Messie Géospatial Providentiel, pour t'élever [sans sacrifice ni artifice](https://youtu.be/wr8eVGWUftI) au rang de Dieu des S.I.G. : :dizzy: Séleste :dizzy: Immortel :dizzy: Giga-rédempteur
+:large_blue_diamond: te vénérer, Ôh Grand QGIS, Sacré devant l'Éternel, toi le Messie Géospatial Providentiel, pour t'élever [sans sacrifice ni artifice](https://youtu.be/wr8eVGWUftI) au rang de Dieu des S.I.G. : :dizzy: Séleste :dizzy: Immortel :dizzy: Giga-rédempteur :dizzy:
 
 :large_blue_diamond: défendre la liberté d'expression cartographique, soit le droit fondamental, universel et inaliénable à vectoriser haut et fort
 
@@ -199,7 +199,7 @@ Si vous êtes aussi sur le point de :sleeping:, ou si vous commencez à :rage:, 
 
 :cook: Les _géocuistots_ s'activent en cuisine pour stimuler vos papilles, au travers d'un menu certifié ingrédients frais et de saison, qui tente vainement de donner un aperçu des saveurs qu'il a été possible de déguster tout au long de ce challenge succulent et succulé :yum:
 
-:plate_with_cutlery: _En espérant que vous soyasses rassasiés et que ceux-là vous permette de tenir jusqu'à novembre prochain_
+:fork_and_knife: _En espérant que vous soyasses rassasiés et que ceux-là vous permette de tenir jusqu'à novembre prochain_
 
 ![17: A map without a computer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_15_d17.png){: loading=lazy}
 
@@ -260,6 +260,7 @@ Et rendez-vous en novembre !
 ## Auteur
 
 --8<-- "content/team/gall.md"
+
 Mais parfois aussi malheureusement siggeur profane et immature, à la volée et sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
 
 {% include "licenses/beerware.md" %}
