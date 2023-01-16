@@ -37,7 +37,7 @@ tags:
 
 ----
 
-À cette occasion, les :two_women_holding_hands: _[géotribuns](https://static.geotribu.fr/team/)_ :two_women_holding_hands: n'avaient d'ailleurs pas manqué d'aborder [en long](/rdp/2022/rdp_2022-10-21/#cest-bientot-le-30daymapchallenge) et [en large](/rdp/2022/rdp_2022-11-18/#30daymapchallenge) la tenue de cet évènement, particulièrement apprécié par la communauté :world_map:. Un évènement décousu et attendu de longue date, mais pas cousu de fil blanc, bien au contraire : découvrons ensemble les décoctions géoréférencées et autres remèdes cartographiques concoctés par les herboristes véhéments qui ont participé au challenge :herb:
+À cette occasion, les :two_women_holding_hands: _[géotribuns](/team/)_ :two_women_holding_hands: n'avaient d'ailleurs pas manqué d'aborder [en long](/rdp/2022/rdp_2022-10-21/#cest-bientot-le-30daymapchallenge) et [en large](/rdp/2022/rdp_2022-11-18/#30daymapchallenge) la tenue de cet évènement, particulièrement apprécié par la communauté :world_map:. Un évènement décousu et attendu de longue date, mais pas cousu de fil blanc, bien au contraire : découvrons ensemble les décoctions géoréférencées et autres remèdes cartographiques concoctés par les herboristes véhéments qui ont participé au challenge :herb:
 
 ![20: My favourite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_02_d20.png){: loading=lazy}
 
