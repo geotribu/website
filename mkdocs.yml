@@ -112,7 +112,7 @@ plugins:
         - i.imgur.com/*
         - raw.githubusercontent.com/*
         - sondekla.com/buid/widget/*
-        - cdnjs.cloudflare.com/ajax/libs/twemoji/
+        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
         - twemoji.maxcdn.com/*
         - upload.wikimedia.org/*
         - user-images.githubusercontent.com/**/*.gif
