@@ -61,7 +61,7 @@ tags:
 
 :point_right: Ce qui, au doigt mouillé, revient à environ :one: sujet par jour, one topic for teh day ([one two tri viva la cartographie](https://youtu.be/MQndYND2s9M)), que doivent suivre les cartes postées sur le achetague, et ce tout au long des 30 jours que compte le mois de [novembre](https://fr.wikipedia.org/wiki/Tom_Novembre).
 
-:calendar: _À ce propos, il pourrait être futile de noter que si le 30DayMapChallenge se déroulait en [février](https://fr.wikipedia.org/wiki/Ann%C3%A9e_bissextile#R%C3%A8gle_actuelle) ou en [décembre](https://www.senscritique.com/bd/32_decembre_La_Tetralogie_du_monstre_tome_2/193399), il porterait probablement un nom différent, toutes choses égales par ailleurs. Mais avec des si on mettrait Paris en bouteille , ce qui aurait cependant l'avantage de mettre certain.e.s au sec en ces temps bien arrosés ... enfin, au niveau de la météo du moins_ #DryJaruany
+:calendar: _À ce propos, il pourrait être futile de noter que si le 30DayMapChallenge se déroulait en [février](https://fr.wikipedia.org/wiki/Ann%C3%A9e_bissextile#R%C3%A8gle_actuelle) ou en [décembre](https://www.senscritique.com/bd/32_decembre_La_Tetralogie_du_monstre_tome_2/193399), il porterait probablement un nom différent, toutes choses égales par ailleurs. Mais avec des si on mettrait Paris en bouteille, ce qui aurait cependant l'avantage de mettre certain.e.s au sec en ces temps bien arrosés... enfin, au niveau de la météo du moins_ #DryJaruany
 
 ![28: 3D](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_05_d28.png){: loading=lazy}
 
