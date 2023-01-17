@@ -51,7 +51,7 @@ tags:
 
 ----
 
-:fire: Sous forme de défis ludiques, sur un ton jovial, fédérateur, social, sans souci mais malheureusement sans saucisses à l'ail ni halal inch'Allah. Et ce pour la quatrième édition maintenant d'une initiative lancée par [Topi Tjukanov](https://github.com/tjukanovt/30DayMapChallenge) qui fournit les sujets, le 30DayMapChallenge propose un principe plutôt simple :
+:fire: Ceci sous forme de défis ludiques, sur un ton jovial, fédérateur, social, sans souci mais malheureusement sans saucisses à l'ail ni halal inch'Allah. Et ce pour la quatrième édition maintenant d'une initiative lancée par [Topi Tjukanov](https://github.com/tjukanovt/30DayMapChallenge) qui fournit les sujets, le 30DayMapChallenge propose un principe plutôt simple :
 
 - :three: :zero: jours, pour réaliser
 - :three: :zero: cartes, en suivant
@@ -59,7 +59,7 @@ tags:
 
 ![thèmes 30dmc 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/30dmc-2022.png){: loading=lazy}
 
-:point_right: Ce qui, au doigt mouillé, revient à environ :one: sujet par jour, one topic for teh day ([one two tri viva la cartographie](https://youtu.be/MQndYND2s9M)), que doivent suivre les cartes postées sur le achetague, et ce tout au long des 30 jours que compte le mois de [novembre](https://fr.wikipedia.org/wiki/Tom_Novembre).
+:point_right: Ce qui, au doigt mouillé, revient à environ :one: sujet par jour, one topic for [teh](https://en.wikipedia.org/wiki/Teh) day ([one two tri viva la cartographie](https://youtu.be/MQndYND2s9M)), que doivent suivre les cartes postées sur le achetague, et ce tout au long des 30 jours que compte le mois de [novembre](https://fr.wikipedia.org/wiki/Tom_Novembre).
 
 :calendar: _À ce propos, il pourrait être futile de noter que si le 30DayMapChallenge se déroulait en [février](https://fr.wikipedia.org/wiki/Ann%C3%A9e_bissextile#R%C3%A8gle_actuelle) ou en [décembre](https://www.senscritique.com/bd/32_decembre_La_Tetralogie_du_monstre_tome_2/193399), il porterait probablement un nom différent, toutes choses égales par ailleurs. Mais avec des si on mettrait Paris en bouteille, ce qui aurait cependant l'avantage de mettre certain.e.s au sec en ces temps bien arrosés... enfin, au niveau de la météo du moins_ #DryJaruany
 
@@ -143,9 +143,9 @@ tags:
 
 :large_blue_diamond: croiser le fer aux côtés de sigistes tenaces et opiniâtres pour le Beau, le Bon, la Vertu, le Courage, la Vigueur, l'Honneur, la Grandeur, la Noblesse et la Dignité de nos cartes :crossed_swords:
 
-:large_blue_diamond: tartiner tout le pot de [Qonfiture](https://youtu.be/AIgJenz0ZK4) sur la tartine spatiale, pour les plus st4rfoull4h d'entre nous :heart_eyes_cat:
+:large_blue_diamond: tartiner tout le pot de Qonfiture sur la tartine spatiale, pour les plus st4rfoull4h d'entre nous :heart_eyes_cat:
 
-:large_blue_diamond: libérer la créativité, déchaîner l'audace et développer la sensibilité du cartomaniac qui sommeille en chacun de nous, afin de nous élever collectivement dans une transe céleste débouchant sur la lumière d'une totale liberté de pensée géocosmique vers un nouvel âge cartoréminiscent...
+:large_blue_diamond: libérer la créativité, déchaîner l'audace et développer la sensibilité du carto[maniac](https://youtu.be/AIgJenz0ZK4) qui sommeille en chacun de nous, afin de nous élever collectivement dans une transe céleste débouchant sur la lumière d'une totale liberté de pensée géocosmique vers un nouvel âge cartoréminiscent...
 
 ![9: space](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_09_d9.png){: loading=lazy}
 
