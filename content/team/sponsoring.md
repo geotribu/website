@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - meta
+comments: true
 date: "2022-04-29 10:20"
 description: "Soutenez l'aventure Geotribu en finançant le travail de personnes bénévoles et passionnées !"
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"

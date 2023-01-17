@@ -198,18 +198,6 @@
 {% block content %}
 {{ super() }}
 
-{# Authoring based on git log #}
-{# note: commenté car plus utilisé depuis l'intégration des avatrs GitHub en bas de page
-{% if git_page_authors %}
-<div class="md-source-date">
-  <small>
-    Contributions à cette page : {{ git_page_authors }}
-  </small>
-</div>
-{% endif %}
-#}
-
-
 {# License #}
 {% if not page.is_homepage and ("license" not in page.meta or page.meta.license == "default") %}
 <hr>
@@ -233,33 +221,6 @@
       </a>
     </p>
   </small>
-</div>
-{% endif %}
-
-<!-- Get setting from mkdocs.yml, but allow page-level overrides -->
-{% set comments = config.extra.comments_url %}
-{% if page and page.meta and page.meta.disqus is string %}
-{% set comments = page.meta.disqus %}
-{% endif %}
-
-{% if not page.is_homepage and comments %}
-{# Comment system (Isso) #}
-<div id="__comments">
-  <script data-isso="{{ config.extra.comments_url }}/" data-isso-feed="true" data-isso-reply-notifications="true"
-    data-isso-reply-to-self="false" data-isso-require-author="true" data-isso-require-email="true" data-isso-vote="true"
-    src="{{ config.extra.comments_url }}/js/embed.min.js">
-    </script>
-  <hr>
-  <section id="isso-thread">
-    <h2>Commentaires</h2>
-    <small>
-      Une version minimale de la <a href="{{ config.extra.url_contribuer }}guides/markdown_basics/" hreflang="fr"
-        target="_blank">syntaxe
-        markdown</a> est
-      acceptée pour la mise en forme des commentaires.<br>Propulsé par <a href="https://posativ.org/isso/" hreflang="en"
-        target="_blank">Isso</a>. </small>
-  </section>
-  <noscript>Please enable JavaScript to view the comments.</noscript>
 </div>
 {% endif %}
 {% endblock %}

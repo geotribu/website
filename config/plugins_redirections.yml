@@ -594,6 +594,8 @@ redirects:
     # node/846.md:
     node/847.md: rdp/2016/rdp_2016-07-01.md
     # node/850.md:
+    rdp/2010/rdp_2010-10-14.md: rdp/2010/rdp_2010-10-15.md
+    rdp/2015/rdp_2015-04-07.md: rdp/2015/rdp_2015-04-10.md
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
     # rss.md: https://static.geotribu.fr/feed_rss_created.xml
 
@@ -737,6 +739,7 @@ redirects:
     articles/2011/art_2011-12-01.md: articles/2011/2011-12-01_cartographier_monde_outils_libres.md
     articles/2012/art_2012-01-01.md: articles/2012/2012-01-01_openstreetmap_une_annee_edition.md
     articles/2012/art_2012-01-16.md: articles/2012/2012-01-16_presentation_openstreetmap_senat.md
+    articles/2012/art_2012-01-19.md: articles/2012/2012-01-19_google_evil_or_not.md
     articles/2012/art_2012-02-03.md: articles/2012/2012-02-03_serie_noire_pour_google.md
     articles/2012/art_2012-03-15.md: articles/2012/2012-03-15_openstreetmap_reunion_corine_land_cover.md
     articles/2012/art_2012-04-17.md: articles/2012/2012-04-17_calcul_buffer_mysql_pratique.md
