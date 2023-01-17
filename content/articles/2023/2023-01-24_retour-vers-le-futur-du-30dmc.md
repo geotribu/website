@@ -125,7 +125,7 @@ tags:
 
 :large_blue_diamond: deviner notre avenir et nos fortunes [diverses](https://youtu.be/lzGmpqN9zZc) grâce à l'intuition des nombreu.x.ses et talentuese.x.e.es cartomancien.ne.s qui composent la communauté :mage:
 
-:large_blue_diamond: rencontrer les cartes  les plus :fire: de ta région
+:large_blue_diamond: rencontrer les cartes les plus :fire: de ta région
 
 :large_blue_diamond: lâcher des pouces bleus en masse pour soutenir les [géopotos](https://youtu.be/zKFqbyDR6M4)
 
