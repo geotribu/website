@@ -138,7 +138,7 @@ Il est aussi tout simplement possible de faire un petit signe d'encouragement :k
 
 ## Cadeau : l'accès en lecture à nos images
 
-:gift: En guise d'étrennes, on vous offre l'accès en lecture à [notre entrepôt d'images](/contribuer/guides/cdn-images-recherche/) accumulées depuis toutes ces années :gift_heart: :
+:gift: En guise d'étrennes, on vous offre l'accès en lecture à [notre entrepôt d'images]({{ config.extra.url_contribuer }}guides/cdn-images-recherche/) accumulées depuis toutes ces années :gift_heart: :
 
 - adresse : <https://cdn.geotribu.fr>
 - identifiant : `invité`

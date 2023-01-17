@@ -57,7 +57,7 @@ Mais l'objectif n'étant pas de faire du marketing, cela importe peu. L'idée es
 
 Une partie non négligeable de la veille technologique passe par le réseau social de micro-blogging. Afin de pouvoir intégrer les tweets dans nos pages, nous embarquons le code de la plateforme pour que le rendu soit conforme à ses règles ([voir cette documentation](https://help.twitter.com/fr/using-twitter/how-to-embed-a-tweet)).
 
-A noter que le rendu est complètement différent selon si le navigateur bloque ou non le code Twitter : [voir le guide d'intégration d'un Tweet](/contribuer/guides/twitter/#pistage-blocage-et-fallback).
+A noter que le rendu est complètement différent selon si le navigateur bloque ou non le code Twitter : [voir le guide d'intégration d'un Tweet]({{ config.extra.url_contribuer }}guides/twitter/#pistage-blocage-et-fallback).
 
 ----
 

@@ -19,7 +19,7 @@ tags:
 ![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-rdp-news-thumb }
 
 D'un point de vue strictement formel, Geotribu c'est un [nom de domaine](https://fr.wikipedia.org/wiki/Nom_de_domaine). Et trois suffixes (.fr, .net et .org, le [.com étant squatté depuis longtemps](https://www.whois.com/whois/geotribu.com) en attendant qu'on devienne [riche](https://www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)).  
-Il n'y a pas de structure : ni entrepreneuriale, ni associative, ni contrat de sang dans un tipi. D'ailleurs, la convention encadrant le prêt du serveur utilisé pour [héberger les images](/contribuer/guides/cdn-images-hebergement/) par [GeoRezo] est au nom de Julien et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
+Il n'y a pas de structure : ni entrepreneuriale, ni associative, ni contrat de sang dans un tipi. D'ailleurs, la convention encadrant le prêt du serveur utilisé pour [héberger les images]({{ config.extra.url_contribuer }}guides/cdn-images-hebergement/) par [GeoRezo] est au nom de Julien et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
 
 C'est donc un regroupement spontané de personnes autour de leur intérêt pour un dénominateur commun professionnel : la dimension géographique des métiers de chacun/e. Vient ensuite la ligne "éditoriale" imprimée dès les débuts que je présente comme les deux faces d'une même pièce :
 

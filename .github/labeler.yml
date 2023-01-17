@@ -5,7 +5,6 @@ ci-cd:
     - .github/**/*.yml
 
 contribution:
-    - content/contribuer/**/*.md
     - content/team/**/*.md
 
 dependencies:
@@ -14,8 +13,7 @@ dependencies:
 
 mkdocs:
     - content/**/*.pages
-    - content/manifest.webmanifest
-    - mkdocs.yml
+    - mkdocs*.yml
 
 rdp:
     - content/rdp/**/*.md
