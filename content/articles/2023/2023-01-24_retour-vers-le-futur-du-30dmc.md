@@ -51,7 +51,7 @@ tags:
 
 ----
 
-:fire: Sous forme de défis ludiques, sur un ton jovial, fédérateur, social, sans souci mais malheureusement sans saucisses à l'ail ni halal inch'Allah, et ce pour la quatrième édition maintenant d'une initiative lancée par [Topi Tjukanov](https://github.com/tjukanovt/30DayMapChallenge) qui fournit les sujets, le 30DayMapChallenge propose un principe plutôt simple :
+:fire: Sous forme de défis ludiques, sur un ton jovial, fédérateur, social, sans souci mais malheureusement sans saucisses à l'ail ni halal inch'Allah. Et ce pour la quatrième édition maintenant d'une initiative lancée par [Topi Tjukanov](https://github.com/tjukanovt/30DayMapChallenge) qui fournit les sujets, le 30DayMapChallenge propose un principe plutôt simple :
 
 - :three: :zero: jours, pour réaliser
 - :three: :zero: cartes, en suivant
@@ -143,7 +143,7 @@ tags:
 
 :large_blue_diamond: croiser le fer aux côtés de sigistes tenaces et opiniâtres pour le Beau, le Bon, la Vertu, le Courage, la Vigueur, l'Honneur, la Grandeur, la Noblesse et la Dignité de nos cartes :crossed_swords:
 
-:large_blue_diamond: tartiner tout le pot de Qonfiture sur la tartine spatiale, pour les plus st4rfoull4h d'entre nous :heart_eyes_cat:
+:large_blue_diamond: tartiner tout le pot de [Qonfiture](https://youtu.be/AIgJenz0ZK4) sur la tartine spatiale, pour les plus st4rfoull4h d'entre nous :heart_eyes_cat:
 
 :large_blue_diamond: libérer la créativité, déchaîner l'audace et développer la sensibilité du cartomaniac qui sommeille en chacun de nous, afin de nous élever collectivement dans une transe céleste débouchant sur la lumière d'une totale liberté de pensée géocosmique vers un nouvel âge cartoréminiscent...
 
