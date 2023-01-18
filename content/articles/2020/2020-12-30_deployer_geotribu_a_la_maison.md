@@ -104,7 +104,7 @@ jmo@jmoslandia:/tmp/website-gh-pages$ du -sh search/
 47M search/
 ```
 
-Evidemment, ce dossier ne contient pas les images, hébergées sur un [serveur à part](/contribuer/guides/cdn-images-hebergement/) et sauvegardées mensuellement en tant que release sur GitHub. A titre d'exemple, [la sauvegarde de novembre pèse 422 Mo](https://github.com/geotribu/website/releases/download/2020.11/bkp_cdn_2020-11-11.tar.gz).
+Evidemment, ce dossier ne contient pas les images, hébergées sur un [serveur à part]({{ config.extra.url_contribuer }}guides/cdn-images-hebergement/) et sauvegardées mensuellement en tant que release sur GitHub. A titre d'exemple, [la sauvegarde de novembre pèse 422 Mo](https://github.com/geotribu/website/releases/download/2020.11/bkp_cdn_2020-11-11.tar.gz).
 
 ![Fernand Léger - Les constructeurs](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg "Quand je vous disais que c'est Léger !"){: loading=lazy }
 {: align=middle }

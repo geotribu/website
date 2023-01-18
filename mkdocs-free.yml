@@ -82,9 +82,7 @@ plugins:
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
-      tags_compare: !!python/name:material.plugins.tags.plugin.casefold
 
 # Theme
 theme:
@@ -97,6 +95,9 @@ theme:
   search_index_only: true
 
   features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
     - content.tabs.link
     - navigation.tabs
     - navigation.top
@@ -132,6 +133,7 @@ theme:
 # Customization
 extra:
   comments_url: https://comments.geotribu.fr # isso url
+  url_contribuer: https://contribuer.geotribu.fr/
   consent:
     title: Consentement 🍪
     actions:
