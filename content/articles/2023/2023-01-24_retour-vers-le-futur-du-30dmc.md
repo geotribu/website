@@ -37,7 +37,7 @@ tags:
 
 ----
 
-À cette occasion, les :two_women_holding_hands: _[géotribuns](/team/)_ :two_women_holding_hands: n'avaient d'ailleurs pas manqué d'aborder [en long](/rdp/2022/rdp_2022-10-21/#cest-bientot-le-30daymapchallenge) et [en large](/rdp/2022/rdp_2022-11-18/#30daymapchallenge) la tenue de cet évènement, particulièrement apprécié par la communauté :world_map:. Un évènement décousu et attendu de longue date, mais pas cousu de fil blanc, bien au contraire : découvrons ensemble les décoctions géoréférencées et autres remèdes cartographiques concoctés par les herboristes véhéments qui ont participé au challenge :herb:
+À cette occasion, les :two_women_holding_hands: _[géotribuns](/team/)_ :two_women_holding_hands: n'avaient d'ailleurs pas manqué d'aborder [en long](/rdp/2022/rdp_2022-10-21/#cest-bientot-le-30daymapchallenge) et [en large](/rdp/2022/rdp_2022-11-18/#30daymapchallenge) la tenue de cet évènement, particulièrement apprécié par la communauté :world_map:. Un évènement décousu et attendu de longue date, mais pas cousu de fil blanc, bien au contraire : découvrons ensemble les perles inattendues, les décoctions géoréférencées et autres remèdes cartographiques concoctés par les herboristes véhéments qui ont participé au challenge :herb:
 
 ![20: My favourite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_02_d20.png){: loading=lazy}
 
@@ -127,7 +127,7 @@ tags:
 
 :large_blue_diamond: rencontrer les cartes les plus :fire: de ta région
 
-:large_blue_diamond: lâcher des pouces bleus en masse pour soutenir les [géopotos](https://youtu.be/zKFqbyDR6M4)
+:large_blue_diamond: lâcher des [pouces bleus](https://youtu.be/C--LUzwwoSQ) en masse pour soutenir les [géopotos](https://youtu.be/zKFqbyDR6M4)
 
 :large_blue_diamond: s'époumoner au milieu du kop des géo-ultras à chaque geste technique réalisé lors de cette rencontre âpre et engagée, que beaucoup considèrent à juste titre comme le _cartografico_ :soccer:
 
@@ -261,6 +261,6 @@ Et rendez-vous en novembre !
 
 --8<-- "content/team/gall.md"
 
-Mais parfois aussi malheureusement siggeur profane et immature, à la volée et sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
+Mais parfois aussi malheureusement siggeur profane et immature, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
 
 {% include "licenses/beerware.md" %}
