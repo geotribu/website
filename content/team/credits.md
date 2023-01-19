@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - Geotribu
+comments: true
 date: "2020-04-10 10:20"
 description: "L'aventure de Geotribu est rendue possible par le travail et le soutien de personnes et aussi d'outils et ressources libres. Crédits et remerciements."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
@@ -43,7 +44,7 @@ petit (1 seul fichier PHP !) mais costaud que nous utilisons pour gérer nos con
 A noter qu'en dépit du fait que GitHub ne soit pas open source, nous tirons énormément parti de la plateforme et en particulier :
 
 - [Github Actions](https://help.github.com/actions) : permet l'automatisation du _workflow_ de publication, réduisant énormément le travail technique à produire.
-- [Github Release](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) et [GitHub CLI](https://cli.github.com/) : permet l'automatisation de la sauvegarde du site. Voir [la page sur la sauvegarde](/contribuer/internal/backup/).
+- [Github Release](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) et [GitHub CLI](https://cli.github.com/) : permet l'automatisation de la sauvegarde du site. Voir [la page sur la sauvegarde]({{ config.extra.url_contribuer }}internal/backup/).
 
 ### Nos contributions
 

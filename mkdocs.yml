@@ -112,6 +112,7 @@ plugins:
         - i.imgur.com/*
         - raw.githubusercontent.com/*
         - sondekla.com/buid/widget/*
+        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
         - twemoji.maxcdn.com/*
         - upload.wikimedia.org/*
         - user-images.githubusercontent.com/**/*.gif
@@ -135,8 +136,11 @@ theme:
   search_index_only: true
 
   features:
+    - content.action.edit
     - content.code.annotate
+    - content.code.copy
     - content.tabs.link
+    - navigation.path
     - navigation.prune
     - navigation.tabs
     - navigation.top
@@ -176,6 +180,7 @@ theme:
 # Customization
 extra:
   comments_url: https://comments.geotribu.fr # isso url
+  url_contribuer: https://contribuer.geotribu.fr/
   consent:
     title: Consentement 🍪
     actions:

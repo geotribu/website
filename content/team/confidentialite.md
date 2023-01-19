@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - Geotribu
+comments: true
 date: "2021-05-20 10:20"
 description: "Cette page détaille les dispositifs de traçage que l'utilisateur/ice final/e peut rencontrer sur le site Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
@@ -56,7 +57,7 @@ Mais l'objectif n'étant pas de faire du marketing, cela importe peu. L'idée es
 
 Une partie non négligeable de la veille technologique passe par le réseau social de micro-blogging. Afin de pouvoir intégrer les tweets dans nos pages, nous embarquons le code de la plateforme pour que le rendu soit conforme à ses règles ([voir cette documentation](https://help.twitter.com/fr/using-twitter/how-to-embed-a-tweet)).
 
-A noter que le rendu est complètement différent selon si le navigateur bloque ou non le code Twitter : [voir le guide d'intégration d'un Tweet](/contribuer/guides/twitter/#pistage-blocage-et-fallback).
+A noter que le rendu est complètement différent selon si le navigateur bloque ou non le code Twitter : [voir le guide d'intégration d'un Tweet]({{ config.extra.url_contribuer }}guides/twitter/#pistage-blocage-et-fallback).
 
 ----
 
