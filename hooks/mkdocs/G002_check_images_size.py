@@ -123,7 +123,7 @@ def get_remote_image_length(
 
     except Exception as err:
         logger.error(
-            f"Erreur fatale. Cause possible : URL d'image mal formatée. Trace: {err}."
+            f"Erreur fatale. Cause possible : URL d'image mal formatée: {image_url}. Trace: {err}."
         )
         return None
 
