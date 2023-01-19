@@ -38,9 +38,26 @@ exclude_list_content = (
     "toc_nav_ignored/qgis_resources_preview_table.md",
 )
 
-exclude_list_url = ("http://www.photo-libre.fr/mer/100b.jpg",)
+exclude_list_url = (
+    "http://www.photo-libre.fr/mer/100b.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/b/bb/Dymaxion_2003_animation_small1.gif",
+    "https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/k-trip.gif",
+    "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/1673186-inline-breathingearth-sm.gif",
+    "https://user-images.githubusercontent.com/1596222/148133096-3c3349ea-f9ff-4d7e-9b73-1a163ad0fda1.gif",
+    "https://raw.githubusercontent.com/webgeodatavore/qgis-splash-screens-birthday/master/qgis-splash-screens-no-text.gif",
+    "https://media.tenor.com/fQmZ_N0b57kAAAAC/kaamelott-leodagan.gif",
+    "https://i.imgur.com/3RA1CkC.gif",
+    "http://www.viewsoftheworld.net/wp-content/uploads/2014/12/AnnualPrecipitationAnimation.gif",
+    "https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/google_maps_pacman.gif",
+    "https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/leaflet_compare.gif",
+    "https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/ezgif.com-video-to-gif.gif",
+    "https://www.unfolded.ai/46ae6ae487feaefc145bcccf850b17ba/polygon-layer-vancouver.gif",
+    "https://documents.buzzfeednews.com/_NewsDesign/tech/2020_08XX_Xinjiang/gm_1a_r.gif",
+    "https://user-images.githubusercontent.com/6421175/107518494-5a197a00-6baf-11eb-9ab6-a054ff821cf5.gif",
+)
 
 max_size: float = 2097152.0
+max_size_gif: float = 4194304.0
 
 # ###########################################################################
 # ########## Functions #############
@@ -127,9 +144,15 @@ def on_page_markdown(markdown, page, **kwargs):
 
         if img_url.startswith("http"):
             img_length = get_remote_image_length(image_url=img_url)
-            if img_length and img_length > max_size:
+            if img_url.endswith(".gif") and img_length > max_size_gif:
                 logger.error(
-                    f"G002 || Poids des images maximum : {convert_octets(max_size)}. || "
+                    f"G002 || Poids des images GIF maximum : {convert_octets(max_size_gif)}. || "
+                    f"'{path}' contient une image {img_url} "
+                    f"de {convert_octets(img_length)}."
+                )
+            elif img_length and img_length > max_size:
+                logger.error(
+                    f"G002 || Poids des images (hors GIF) maximum : {convert_octets(max_size)}. || "
                     f"'{path}' contient une image {img_url} "
                     f"de {convert_octets(img_length)}."
                 )
