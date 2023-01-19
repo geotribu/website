@@ -33,10 +33,12 @@ regex_pattern = (
     r"(?:[!]\[(?P<caption>.*?)\])\((?P<image>.*?)(?P<description>\".*?\")?\s*\)"
 )
 
-exclude_list = [
+exclude_list_content = (
     "articles/2008/2008-08-22_ajouter-des-shp-dans-geoserver.md",
     "toc_nav_ignored/qgis_resources_preview_table.md",
-]
+)
+
+exclude_list_url = ("http://www.photo-libre.fr/mer/100b.jpg",)
 
 max_size: float = 2097152.0
 
@@ -95,7 +97,7 @@ def get_remote_image_length(
                 ssl_context=ssl._create_unverified_context(),
             )
         else:
-            logger.warning(
+            logger.debug(
                 f"L'image {image_url} est inaccessible après {attempt} essais. "
                 f"Trace: {err}"
             )
@@ -103,7 +105,7 @@ def get_remote_image_length(
 
     except Exception as err:
         logger.error(
-            f"Erreur fatale. Cause possible : URL d'image mal formatée. Trace: {err}"
+            f"Erreur fatale. Cause possible : URL d'image mal formatée. Trace: {err}."
         )
         return None
 
@@ -113,12 +115,15 @@ def get_remote_image_length(
 @mkdocs.plugins.event_priority(-40)
 def on_page_markdown(markdown, page, **kwargs):
     path = page.file.src_uri
-    if path in exclude_list:
-        logger.debug("Fichier ignoré car dans la liste d'exclusion.")
+    if path in exclude_list_content:
+        logger.debug(f"Fichier ignoré car dans la liste d'exclusion : {path}")
         return
 
     for match in re.findall(regex_pattern, markdown):
         img_url = match[1].strip()
+        if img_url in exclude_list_url:
+            logger.debug(f"Image ignorée car dans la liste d'exclusion : {img_url}")
+            return
 
         if img_url.startswith("http"):
             img_length = get_remote_image_length(image_url=img_url)
@@ -127,6 +132,10 @@ def on_page_markdown(markdown, page, **kwargs):
                     f"G002 || Poids des images maximum : {convert_octets(max_size)}. || "
                     f"'{path}' contient une image {img_url} "
                     f"de {convert_octets(img_length)}."
+                )
+            elif img_length is None:
+                logger.info(
+                    f"L'image {img_url}, présente dans {path} est inaccessible."
                 )
             else:
                 logger.debug(
