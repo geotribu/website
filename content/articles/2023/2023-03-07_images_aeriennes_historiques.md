@@ -38,7 +38,7 @@ Il y a des projets que tu as en tête depuis des mois pour ne pas dire plus. Et 
 
 ### Télécharger les images
 
-### Intégrer la localisation de l'image 
+### Intégrer la localisation de l'image
 
 ### Convertir les images
 
