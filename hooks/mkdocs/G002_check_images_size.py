@@ -144,7 +144,7 @@ def on_page_markdown(markdown, page, **kwargs):
 
         if img_url.startswith("http"):
             img_length = get_remote_image_length(image_url=img_url)
-            if img_url.endswith(".gif") and img_length > max_size_gif:
+            if img_length and img_url.endswith(".gif") and img_length > max_size_gif:
                 logger.error(
                     f"G002 || Poids des images GIF maximum : {convert_octets(max_size_gif)}. || "
                     f"'{path}' contient une image {img_url} "
