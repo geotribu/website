@@ -56,6 +56,7 @@ exclude_list_url = (
     "https://user-images.githubusercontent.com/6421175/107518494-5a197a00-6baf-11eb-9ab6-a054ff821cf5.gif",
     "https://github.com/giswqs/data/raw/main/timelapse/goes.gif",
     "https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/DicoGIS/DicoGIS_demo_w8.gif",
+    "https://github.blog/wp-content/uploads/2020/12/layers-loop.h264.2020-12-21-11_16_56.gif",
 )
 
 max_size: float = 2097152.0
