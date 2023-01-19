@@ -7,7 +7,7 @@ categories:
     - article
 date: "2023-01-16 10:20"
 description: ""
-image: "https://cdn.geotribu.fr/img/internal/bonne_annee/geotribu_2023.png"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/geotribu_2023.png"
 license: default
 tags:
     - Geotribu
@@ -26,7 +26,7 @@ tags:
 
 ## Meilleurs voeux pour 2023 de la part de Geotribu !
 
-![Bonne année 2023](https://cdn.geotribu.fr/img/internal/bonne_annee/geotribu_2023.png "Bonne année 2023"){: .img-center loading=lazy }
+![Bonne année 2023](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/geotribu_2023.png "Bonne année 2023"){: .img-center loading=lazy }
 
 !!! info
     Carte de voeux réalisée avec [PostgreSQL/PostGIS (fonction ST_Letters)](https://www.crunchydata.com/blog/fun-with-letters-in-postgis-33) et QGIS.
