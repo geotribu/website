@@ -58,11 +58,11 @@ Autant j'ai longtemps été déçu par l'absence de cette fonctionnalité dans Q
 
 Commençons par les requêtes attributaires. trois modes sont disponibles : "requête attributaire", "simple requête", "rechercher dans tous les attributs". L'interface de requêtage est simple et soignée son utilisation en est donc facilitée. A noter que vos requêtes peuvent également être faites sous la forme d'expressions régulières.
 
-![OpenJUMP - Query attributaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/query_attributaire.png "OpenJUMP - Query attributaire"){: .img-center loading=lazy }
+![OpenJUMP - Query attributaire](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/openjump/query_attributaire.png "OpenJUMP - Query attributaire"){: .img-center loading=lazy }
 
 pour les requêtes spatiales, différentes relations sont disponibles : intersecte, contient, recouvre, situé à mois de ... Décidément OpenJump me surprend de plus en plus.
 
-![OpenJUMP - Spatial query](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/plugins/spatial_query.png "OpenJUMP - Spatial query"){: .img-center loading=lazy }
+![OpenJUMP - Spatial query](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/openjump/spatial_query.png "OpenJUMP - Spatial query"){: .img-center loading=lazy }
 
 En plus de ces deux outils d'interrogations des données de nombreux autres comme la génération de zone tampon, de centroïde ou encore de simplification des objets sont disponibles. Je vous laisse les découvrir.
 

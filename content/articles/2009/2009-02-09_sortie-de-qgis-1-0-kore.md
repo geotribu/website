@@ -34,29 +34,29 @@ Les quelques captures d'écran ci-dessous vous donneront je l'espère l'envie de
 
 ### Analyses thématiques
 
-![config_analyse_them.png](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/config_analyse_them.png)  
+![config_analyse_them.png](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/config_analyse_them.png){: .img-center loading=lazy }
 
 ![Analyse thématique](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/qgis_kore_analyse_thematique.png "Analyse thématique"){: .img-center loading=lazy }
 
 ### Utilisation des fonctionnalités de GRASS
 
-![grass.png](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/grass.png)
+![grass.png](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/grass.png){: .img-center loading=lazy }
 
 ### Traitement des données vecteurs
 
-![ftools.png](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/ftools.png)
+![ftools.png](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/ftools.png){: .img-center loading=lazy }
 
 ### Implémentation des Protocles OGC
 
-![wfs.png](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/wfs.png)  
+![wfs.png](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/wfs.png){: .img-center loading=lazy }
 
-![wms.png](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/wms.png)
+![wms.png](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/wms.png){: .img-center loading=lazy }
 
 ### Gestion et Installation de nouveau plugin
 
-![qgis_plugn_manager.png](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/qgis_plugn_manager.png)  
+![qgis_plugn_manager.png](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_plugin_manager.png){: .img-center loading=lazy }
 
-![qgis_plugin_installer.png](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis/qgis_plugin_installer.png)
+![qgis_plugin_installer.png](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_plugin_installer.png){: .img-center loading=lazy }
 
 ----
 

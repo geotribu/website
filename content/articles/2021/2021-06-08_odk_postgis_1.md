@@ -74,7 +74,7 @@ Du côté des anecdotes chiffrées  :
 
 Du côté de la gouvernance, [GetODK], la société qui développe ODK, est une [équipe composée de 9 personnes](https://getodk.org/about/team.html) qui s'appuie sur un comité technique, appelé [TAB (Technical Advisory Board)](https://github.com/getodk/governance/blob/master/TAB-GOVERNANCE.md) impliquant des utilisateurs de toute la planète et de différents domaines. Ce TAB se réunit tous les 15 jours [de manière très transparente](https://forum.getodk.org/tag/tab-meeting).
 
-![team ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Equipe_GetODK.png "équipe de GetODK" ){: .img-center loading=lazy }
+![team ODK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Equipe_GetODK.png "équipe de GetODK"){: .img-center loading=lazy }
 
 Le forum est le principal lieu d'échange entre utilisateurs et développeurs. Il compte 14 000 inscrits !  
 La communauté est assez exemplaire en ce sens qu'il y a beaucoup d'interactions entre utilisateurs qui y échangent conseils et bonnes pratiques. Le forum fait remonter les besoins des utilisateurs et les échanges sont riches avec les développeurs, toujours curieux de l'utilisation faite des outils.
@@ -326,7 +326,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 ![ODK Geotrace/Geoshape : options disponibles pour la création de sommets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_manuel.png){: loading=lazy width=175px }
 ![ODK Geotrace/Geoshape : saisie en tapotant sur la carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/dessin_geometrie_en_tapotant.png){: loading=lazy width=175px }
 ![ODK Geotrace/Geoshape : enregistrement manuel des points GPS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/ecran_enregistrement_manuel_de_sommet.png){: loading=lazy width=175px }
-![ODK Geotrace/Geoshape : enregistrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png ){: loading=lazy width=175px }
+![ODK Geotrace/Geoshape : enregistrement automatique de la trace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/choix_enregistrement_auto_avec_precision_mini_et_intervalle_temps.png){: loading=lazy width=175px }
 {: align=middle }
 
 #### Geoshape
