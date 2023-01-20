@@ -117,7 +117,7 @@ tags:
 
 :large_blue_diamond: apprendre à manier et maîtriser des nouveaux outils cartographiques (le plus mieux étant [QGIS](https://www.qgis.org/fr/site/) bien sûr)
 
-:large_blue_diamond: rassembler et explorer [la diversité grandissante](https://youtu.be/X75ce-CAorU) de la communauté
+:large_blue_diamond: rassembler, [soutenir](https://youtu.be/df8SYHs4X94) et explorer [la diversité grandissante](https://youtu.be/X75ce-CAorU) de la communauté
 
 :large_blue_diamond: s'émerveiller devant l'esthétique que peuvent exprimer les cartes
 
@@ -125,7 +125,7 @@ tags:
 
 :large_blue_diamond: deviner notre avenir et nos fortunes [diverses](https://youtu.be/lzGmpqN9zZc) grâce à l'intuition des nombreu.x.ses et talentuese.x.e.es cartomancien.ne.s qui composent la communauté :mage:
 
-:large_blue_diamond: rencontrer les cartes les plus :fire: de ta région
+:large_blue_diamond: rencontrer [les cartes les plus :fire:](https://youtu.be/aDtzvakF2Cc) de ta région
 
 :large_blue_diamond: lâcher des [pouces bleus](https://youtu.be/C--LUzwwoSQ) en masse pour soutenir les [géopotos](https://youtu.be/zKFqbyDR6M4)
 
