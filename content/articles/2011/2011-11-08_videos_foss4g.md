@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 08 novembre 2011
 
-![logo FOSS4G-2011](https://cdn.geotribu.fr/img/logos-icones/divers/FOSS4G-2011-Conference-Website_small.png "logo FOSS4G-2011"){: .img-rdp-news-thumb }
+![logo FOSS4G-2011](https://cdn.geotribu.fr/img/logos-icones/divers/FOSS4G_2011.png "logo FOSS4G-2011"){: .img-rdp-news-thumb }
 
 Depuis peu, [les vidéos du FOSS4G 2011](http://www.fosslc.org/drupal/category/event/foss4g2011) sont en ligne. Malheureusement, celles-ci ne sont pas rangées par thématique ce qui rend la consultation un peu difficile. Mais en informatique rien n'est impossible. Un petit coup de [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/), un soupçon de python et nous nous retrouvons avec une organisation déjà plus sympathique. Bon visionnage :
 
