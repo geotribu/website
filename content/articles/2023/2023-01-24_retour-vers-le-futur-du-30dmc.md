@@ -141,7 +141,7 @@ tags:
 
 :large_blue_diamond: bouter hors de [ta bbox tricolore](https://youtu.be/B5To8grqmyQ) les gros méchants cartobarbares et géoétrangers qui viennent jusque dans tes bras s'en prendre à tes fils et tes compagnes
 
-:large_blue_diamond: [croiser le fer](https://youtu.be/MPlb9HoOCxs) aux côtés de sigistes tenaces et opiniâtres pour le Beau, le Bon, la Vertu, le Courage, la Vigueur, l'Honneur, la Grandeur, la Noblesse et la Dignité de nos cartes :crossed_swords:
+:large_blue_diamond: croiser le fer aux côtés de sigistes [tenaces](https://youtu.be/MPlb9HoOCxs) et opiniâtres pour le Beau, le Bon, la Vertu, le Courage, la Vigueur, la [Justice](https://youtu.be/yCmbv2zHItA), l'Honneur, la Grandeur, la Noblesse et la Dignité de nos cartes :crossed_swords:
 
 :large_blue_diamond: faire [trembler](https://youtu.be/RovrlbSFjEo) QGIS jusqu'à retourner l'[édifice](https://youtu.be/WfD8Dnh2xho)
 
