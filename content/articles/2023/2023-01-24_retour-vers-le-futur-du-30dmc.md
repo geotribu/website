@@ -123,7 +123,7 @@ tags:
 
 :large_blue_diamond: pouffer devant l'irrévérence qu'elles peuvent aussi scabreusement afficher
 
-:large_blue_diamond: deviner notre avenir et nos fortunes [diverses](https://youtu.be/lzGmpqN9zZc) grâce à l'intuition des nombreu.x.ses et talentuese.x.e.es cartomancien.ne.s qui composent la communauté :mage:
+:large_blue_diamond: deviner notre avenir et nos fortunes [diverses](https://youtu.be/lzGmpqN9zZc) grâce à l'intuition des nombreu.x.ses et talentuese.x.e.es [cartomancien.ne.s](https://fr.wikipedia.org/wiki/Paul_B._Preciado) qui composent la communauté :mage:
 
 :large_blue_diamond: rencontrer [les cartes les plus :fire:](https://youtu.be/aDtzvakF2Cc) de ta région
 
