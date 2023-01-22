@@ -46,7 +46,7 @@ Le processus que je vous présente mélange du bash, de l'OGR,...
 
 ### Depuis le site
 
-Les images mises à disposition par l'IGN sur le site Remonter le temps peuvent être consultées par année de prise de vue ce qui dans les faits correspond plutôt aux différentes missions réalisées. 
+Les images mises à disposition par l'IGN sur le site Remonter le temps peuvent être consultées par année de prise de vue ce qui dans les faits correspond plutôt aux différentes missions réalisées.
 
 Pour trouver l'identifiant de la mission, il faut :
 
@@ -171,8 +171,6 @@ exiftool -csv=$folder_mission'/csv_exif/list_exif.csv' $folder_mission'/img_jpg'
 ```
 
 ### Découper le cadre autour des images
-
-
 
 ## Reconstituer une image aérienne
 
