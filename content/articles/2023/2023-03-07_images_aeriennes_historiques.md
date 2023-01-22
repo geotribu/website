@@ -166,7 +166,7 @@ ogr2ogr \
 
 Une fois le fichier des attributs nécessaires à `Exiftool` généré, il faut simplement lancer la commande permettant d'insérer ses attributs dans chacune des images.
 
-```
+```bash
 exiftool -csv=$folder_mission'/csv_exif/list_exif.csv' $folder_mission'/img_jpg' -Overwrite_Original -m
 ```
 
