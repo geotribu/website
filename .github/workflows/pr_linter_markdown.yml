@@ -8,6 +8,9 @@ on:
       - ".github/workflows/pr_linter_markdown.yml"
       - "content/**/*.md"
 
+permissions:
+  pull-requests: write
+
 jobs:
   lint-markdown-review:
     name: "👓 Vérification de la syntaxe"
