@@ -16,7 +16,7 @@ jobs:
   lint-markdown-review:
     name: "👓 Vérification de la syntaxe"
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'geotribu' && github.event.pull_request.head.repo.fork == true }}
+    if: ${{ github.repository_owner == 'geotribu' && github.event.pull_request.head.repo.fork == false }}
 
     steps:
       - name: Dump GitHub context
