@@ -19,6 +19,15 @@ jobs:
     if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: Dump job context
+        env:
+          JOB_CONTEXT: ${{ toJson(job) }}
+        run: echo "$JOB_CONTEXT"
+
       - name: "Récupère le code source"
         uses: actions/checkout@v3
 
