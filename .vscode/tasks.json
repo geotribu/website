@@ -81,20 +81,20 @@
             "label": "Python - Installation et mise à jour des dépendances",
             "type": "shell",
             "osx": {
-                "command": "${config:python.pythonPath} -m pip install -U -r requirements-free.txt"
+                "command": "${config:python.defaultInterpreterPath} -m pip install -U -r requirements-free.txt"
             },
             "windows": {
-                "command": "${config:python.pythonPath} -m pip install -U -r requirements-free.txt"
+                "command": "${config:python.defaultInterpreterPath} -m pip install -U -r requirements-free.txt"
             },
             "linux": {
-                "command": "${config:python.pythonPath} -m pip install -U -r requirements-free.txt"
+                "command": "${config:python.defaultInterpreterPath} -m pip install -U -r requirements-free.txt"
             },
             "problemMatcher": []
         },
         {
             "label": "Mkdocs - Générer le site (config PROD)",
             "group": "build",
-            "command": "${config:python.pythonPath}",
+            "command": "${config:python.defaultInterpreterPath}",
             "args": [
                 "-m",
                 "mkdocs",
@@ -116,7 +116,7 @@
         {
             "label": "Mkdocs - Servir le site localement (config MINIMALE)",
             "group": "test",
-            "command": "${config:python.pythonPath}",
+            "command": "${config:python.defaultInterpreterPath}",
             "args": [
                 "-m",
                 "mkdocs",

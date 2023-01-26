@@ -82,7 +82,7 @@ jobs:
           python scripts/mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # build
-          mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --verbose --strict
+          mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --strict
 
           # save mkdocs.yml for debug
           cp ${{ env.MKDOCS_CONFIG_FILENAME }} ${{ env.BUILD_DIR }}

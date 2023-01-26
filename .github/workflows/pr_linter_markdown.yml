@@ -8,6 +8,11 @@ on:
       - ".github/workflows/pr_linter_markdown.yml"
       - "content/**/*.md"
 
+permissions:
+  contents: read
+  pull-requests: write
+  statuses: write
+
 jobs:
   lint-markdown-review:
     name: "👓 Vérification de la syntaxe"
@@ -31,7 +36,7 @@ jobs:
       - name: "Explications sur les erreurs du linter"
         id: pr-comment-error-create
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' }}
+        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-error
           recreate: true
@@ -46,7 +51,7 @@ jobs:
       - name: "Marque le commentaire de félicitations comme résolu"
         id: pr-comment-good-solve
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ success() }}
+        if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-success
           hide: true
@@ -68,7 +73,7 @@ jobs:
       - name: "Marque le commentaire d'erreur comme résolu"
         id: pr-comment-error-solve
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ success() }}
+        if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-error
           hide: true
@@ -77,7 +82,7 @@ jobs:
       - name: "Félicitations"
         id: pr-comment-good
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ success() }}
+        if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-success
           recreate: true
