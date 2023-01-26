@@ -16,18 +16,9 @@ jobs:
   lint-markdown-review:
     name: "👓 Vérification de la syntaxe"
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'geotribu' && github.event.pull_request.head.repo.fork == false }}
+    if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-      - name: Dump job context
-        env:
-          JOB_CONTEXT: ${{ toJson(job) }}
-        run: echo "$JOB_CONTEXT"
-
       - name: "Récupère le code source"
         uses: actions/checkout@v3
 
@@ -44,7 +35,7 @@ jobs:
       - name: "Explications sur les erreurs du linter"
         id: pr-comment-error-create
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' }}
+        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-error
           recreate: true
@@ -59,7 +50,7 @@ jobs:
       - name: "Marque le commentaire de félicitations comme résolu"
         id: pr-comment-good-solve
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ success() }}
+        if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-success
           hide: true
@@ -81,7 +72,7 @@ jobs:
       - name: "Marque le commentaire d'erreur comme résolu"
         id: pr-comment-error-solve
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ success() }}
+        if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-error
           hide: true
@@ -90,7 +81,7 @@ jobs:
       - name: "Félicitations"
         id: pr-comment-good
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ success() }}
+        if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-success
           recreate: true
