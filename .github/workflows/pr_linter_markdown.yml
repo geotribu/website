@@ -11,6 +11,7 @@ on:
 permissions:
   contents: read
   pull-requests: write
+  statuses: write
 
 jobs:
   lint-markdown-review:
@@ -35,7 +36,7 @@ jobs:
       - name: "Explications sur les erreurs du linter"
         id: pr-comment-error-create
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' }}
+        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-error
           recreate: true
