@@ -30,8 +30,8 @@ des actuels DIAS (**D**ata **I**nformation and **A**cces **S**ervice) pour l'off
 La première version de ce portail, [dataspace.copernicus.eu](https://dataspace.copernicus.eu/), a été lancée cette semaine et devrait évoluer vers sa version définitive jusqu'en juin 2023.
 
 Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu
-sur l'historique du programme sentinel ainsi que les différentes possibilités
-d'accéder aux données open-data sentinel puis de détailler les fonctionnalités
+sur l'historique du programme Sentinel ainsi que les différentes possibilités
+d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités
 prévues pour ce nouveau service.
 En particulier, outre le téléchargement des données Sentinel en Open-data,
 leur accès via différents services "free" de plus haut niveaux est au programme,
@@ -60,7 +60,7 @@ Pour l'aspect observation de la partie surface continentale on peut citer les
 satellites et capteurs suivants :
 
 * [Sentinel-1](https://esamultimedia.esa.int/docs/S1-Data_Sheet.pdf) :
-  satellites équipés de capteur SAR (bande C) avec une revisite de 3 jours.
+  satellites équipés de capteur SAR ([Synthetic Aperture Radar](https://en.wikipedia.org/wiki/Synthetic-aperture_radar))en bande C avec une revisite de 3 jours.
   Capteurs : Sentinel-1A (2014- ), Sentinel-1B (04-2016 /06-2022), Sentinel 1C (prévue
   04/2023)
 * [Sentinel-2](https://esamultimedia.esa.int/docs/S2-Data_Sheet.pdf) :
@@ -82,21 +82,21 @@ surfaces continentales :
 
 * Sentinel-12 / ROSE-L : satellites radar en bande L pour le suivi de la forêt
   et complémentaire de Sentinel-1 (lancement vers 2027). Bande radar utilisée en particulier pour des applications "forestières"
-* Sentinel-10 / CHIME : satellites avec capteur optique hyperspectrale en complément des capteurs mutlispectraux de sentinel-2  (lancement vers 2029)
+* Sentinel-10 / CHIME : satellites avec capteur optique hyperspectrale en complément des capteurs mutlispectraux de Sentinel-2  (lancement vers 2029)
 
 ## Accès aux données Sentinel, "the road so far"
 
 ### Saison 1 : portails open-data européens et nationaux
 
 L'europe a accompagné le lancement et la mise en production des différents
-satellites sentinel par la mise en place de services d'accès aux données
+satellites Sentinel par la mise en place de services d'accès aux données
 diffusées en open data.
 
 Le premier service d'accès aux données a été le Copernicus [Open Access Hub] (<https://scihub.copernicus.eu/>) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, "https://scihub.copernicus.eu/", comme SciHub. Et c'est le nom qui sera utilisé dans le reste de cet article.
 
 !!! warning
     à noter de ne pas confondre Scihub site copernicus d'accès aux données
-    sentinel avec sci-hub le fameux site pirate d'accès aux publications
+    Sentinel avec sci-hub le fameux site pirate d'accès aux publications
     scientifiques.
 
 Le site Scihub offre principalement deux services : recherche de données et téléchargement de données.
@@ -137,7 +137,7 @@ télécharger un certain nombre de données d'observation de la terre dont des
 données Sentinel.
 Les fonctionnalités sont disponibles graphiquement via l'interface web ou bien via une API REST.
 Par rapport à PEPS ou scihub, le site THEIA ne fournit pas d'accès aux données SAR Sentinel-1.
-Mais par contre il propose des données Sentinel-2 avec une meilleure calibration radiométrique (en utilisant la chaine de traitement [MAJA](https://www.cesbio.cnrs.fr/outils/maja/)) pour les données de niveau L2A, ainsi que des données de niveau [L3A](https://labo.obs-mip.fr/multitemp/theias-sentinel-2-l3a-monthly-cloud-free-syntheses/) qui sont des synthèses mensuelles des images sentinel L2A.
+Mais par contre il propose des données Sentinel-2 avec une meilleure calibration radiométrique (en utilisant la chaine de traitement [MAJA](https://www.cesbio.cnrs.fr/outils/maja/)) pour les données de niveau L2A, ainsi que des données de niveau [L3A](https://labo.obs-mip.fr/multitemp/theias-sentinel-2-l3a-monthly-cloud-free-syntheses/) qui sont des synthèses mensuelles des images Sentinel L2A.
 Ces dernières sont pratiques pour avoir des images avec moins de nuages et diminuer le volume de données à traiter.
 En plus des données Sentinel, THEIA donne aussi accès à des produits
 dérivés comme la carte d'occupation des sol [OSO](https://www.theia-land.fr/en/ceslist/land-cover-sec/) ou une carte de couverture
@@ -173,25 +173,25 @@ la taille du pays, traiter un tel volume nécessite donc, sans DIAS, un temps no
 négligeable de récupération des données et un coût d'infrastructure de stockage
 conséquent. Les DIAS offrent une alternative en proposant d'herberger ces données
 et en proposant des ressources de calculs (serveurs clouds) ayant un accès rapide
-à celles-ci. L'accès aux données sentinel étant gratuit depuis les plateformes DIAS
+à celles-ci. L'accès aux données Sentinel étant gratuit depuis les plateformes DIAS
 mais l'accès aux ressources de calcul payant.
 
 Pour détailler, un peu plus, on peut considérer un DIAS comme étant composé de :
 
 * une **infrastructure cloud** : soit un accès à des serveurs de calcul et du stockage de données, etc.. . Donc des services de type OVH/Orange cloud/... ou Google/Amazon.
-* **un stockage et un catalogue de données sentinel**. C'est à dire une gestion d'une
+* **un stockage et un catalogue de données Sentinel**. C'est à dire une gestion d'une
   solution d'ingestion, sauvegarde et accès aux différentes données Sentinel
   produites par Copernicus ainsi que de post-traitement "classiques" de données.
   Cela comprend donc le développement (code) et mise en place d'une architecture
   cloud appropriée ainsi que la gestion opérationnelle du service.
 * Production et **offre d'API pour se connecter aux services et accéder aux données**. Cela comprend aussi les fonctionnalités de gestion utilisateur centralisé et de facturation des services.
-* **une offre de service et applications tierces** sur les données sentinel du catalogue.
+* **une offre de service et applications tierces** sur les données Sentinel du catalogue.
   Services produits par le consortium (défaut du DIAS) ou par un tier sur une
   "place de marché" et via paiement/abonnement au service
 
 Les quatre consortiums choisis pour les DIAS étaient :
 
-* [Creodias](https://creodias.eu/) : Consortium avec Creotech Instrument (Lead, gestion projet), CloudFerro (cloud + données sentinel), Sinergise (accès données) ainsi que WIZIPISI et Geomatys (traitement de données).
+* [Creodias](https://creodias.eu/) : Consortium avec Creotech Instrument (Lead, gestion projet), CloudFerro (cloud + données Sentinel), Sinergise (accès données) ainsi que WIZIPISI et Geomatys (traitement de données).
 * [Mundi](https://mundiwebservices.com/) : Consortium avec T-System pour l'infra (cloud), Atos pour
   l'opérationnel/management de la plateforme et Sinergise pour l'ajout de
   service de visualisation et API sur les données.
@@ -207,7 +207,7 @@ Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://
 
 Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre
 autre, leur utilisation par les différents organismes de contrôles et paiements
-associés à la PAC (Politique Agricole Communes) pour la mise en place d'un
+associés à la PAC (Politique Agricole Commune) pour la mise en place d'un
 "monitoring CAP". En effet l'EU a souhaité faire évoluer les contrôles terrain
 ponctuels associés aux versemment des aides PAC vers un ["monitoring"](https://publications.jrc.ec.europa.eu/repository/handle/JRC112913) exhaustif
 spatiallement et semi-automatique par l'exploitation dees données Sentinel-1
@@ -215,7 +215,7 @@ et 2. Ces dernières devant permettre entre autre de vérifier la présence
 ou non d'activité agricoles (présence de culture annuel, détection de fauche de
 prairie etc..) sur une parcelle donnée.
 
-## Accès aux données sentinel Teaser Saison 3 : "There can be only one"
+## Accès aux données Sentinel Teaser Saison 3 : "There can be only one"
 
 Après quatre ans de retours d'expérience sur le déploiement et l'exploitation des DIAS, leur contrat arrivant à terme, l'Europe à choisi de
 faire évoluer son offre de services (gratuite et payante) d'accès aux données
@@ -243,13 +243,13 @@ Mundi et Creodias : T-Systems, CloudFerro, Sinergise, VITO,  DLR, ACRI-ST et RH
 * CloudFerro : exploitation de l'infra T-System pour y déployer et mettre en
   place une solution de stockage et accès aux données Sentinel
 * Sinergise : développement d'une offre de service sur l'accès aux données
-  sentinel (API de téléchargement, visualisation etc..) et d'un portail de
+  Sentinel (API de téléchargement, visualisation etc..) et d'un portail de
   visualisation accès aux données.
 * VITO : développement d'une offre de service/accès basé sur OpenEo.
 * DLR : expertise archivage, traitement de données satellites (SAR / Sentinel 1
   en particuluer)
-* ACRI-ST : expertise exploitation et traitement de données satellites sentinel
-  (sentinel 2 et 3)
+* ACRI-ST : expertise exploitation et traitement de données satellites Sentinel
+  (Sentinel 2 et 3)
 * RHEA
 
 A noter que la mise en place de ce portail s'inscrit dans la stratégie européennes concernant
@@ -270,7 +270,7 @@ en particulier concernant les interfaces "machine to machine".
 Une première évolution prévue est une diversification des modes d'accès et
 téléchargement à ces données. Aujoud'hui l'accès aux données Sentinel se fait
 par granules (S1) ou dalles (S2) réprésentant des zones géographiques de plusieurs
-centaines de kilomètres ([tuiles de type MGRS](https://labo.obs-mip.fr/multitemp/the-sentinel-2-tiles-how-they-work/) de 110k0*110km pour sentinel-2) dans
+centaines de kilomètres ([tuiles de type MGRS](https://labo.obs-mip.fr/multitemp/the-sentinel-2-tiles-how-they-work/) de 110k0*110km pour Sentinel-2) dans
 le format de l'ESA (JPEG 2000). Le nouveau "dataspace" copernicus offrira en
 plus un accès aux données selon les protocoles et format "cloud ready" [STAC](https://stacspec.org/en)
 (catalogue de données) et [COG (cloud optimised geotiff)](https://www.cogeo.org/) et permettra d'accéder
