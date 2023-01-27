@@ -50,8 +50,8 @@ service et suivi opérationnel d'une constellation de satellites d'observation
 de la terre appelée Sentinel.
 
 Concernant la production de données géographiques issues de Copernicus on peut
-notamment citer [les produits d'occupation du sol](https://land.copernicus.eu) comme Corinne Land Cover, produit
-depuis 1990, Urban Atlas ainsi que les couches HRL (High Resolution Layer). Ces dernières sont produites de façon semi-automatique et se focalisant chacune sur une des thématiques suivantes: zones imperméables, forêts, prairies et les surfaces d'eaux/zones humides, culture.
+notamment citer [les produits d'occupation du sol](https://land.copernicus.eu) comme [Corinne Land Cover](https://land.copernicus.eu/pan-european/corine-land-cover), produit depuis 1990,
+[Urban Atlas](https://land.copernicus.eu/local/urban-atlas) ainsi que les couches HRL ([High Resolution Layers](https://land.copernicus.eu/pan-european/high-resolution-layers)). Ces dernières sont produites de façon semi-automatique et se focalisant chacune sur une des thématiques suivantes: zones imperméables, forêts, prairies et les surfaces d'eaux/zones humides, culture.
 Pour les données brutes d'observation de la terre (imagerie spatiale) leur
 production et mise à disposition est faite par le déploiement des satellites de
 la constellation Sentinel, qui s'est inspirée du [succès des satellites US Landsat](https://www.usgs.gov/news/featured-story/fifty-years-landsat-sharing-earth-information-benefit-all).
@@ -92,8 +92,14 @@ L'europe a accompagné le lancement et la mise en production des différents
 satellites sentinel par la mise en place de services d'accès aux données
 diffusées en open data.
 
-Le premier service d'accès aux données a été [scihub](https://scihub.copernicus.eu/) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A.
-Ce site offre principalement deux services : recherche de données et téléchargement de données.
+Le premier service d'accès aux données a été le Copernicus [Open Access Hub] (<https://scihub.copernicus.eu/>) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, "https://scihub.copernicus.eu/", comme SciHub. Et c'est le nom qui sera utilisé dans le reste de cet article.
+
+!!! warning
+    à noter de ne pas confondre Scihub site copernicus d'accès aux données
+    sentinel avec sci-hub le fameux site pirate d'accès aux publications
+    scientifiques.
+
+Le site Scihub offre principalement deux services : recherche de données et téléchargement de données.
 Ces fonctionnalités sont disponibles soit graphiquement via un site internet
 soit via des [API](https://scihub.copernicus.eu/userguide/APIsOverview). Ces dernières sont adaptées des API REST de type [OpenSearch](https://www.opensearch.org/) ou [OData,(Open Data Protocol)](https://www.odata.org/)
 L'accès aux données est gratuit pour toute personne mais il existe toutefois une
@@ -110,7 +116,7 @@ nationaux (appelés miroirs) sont également venus compléter l'offre de diffusi
 et accès aux données. On peut citer par exemple [le portail autrichien](https://data.sentinel.zamg.ac.at/dhus/#/home), [le portail australien](https://www.copernicus.gov.au/data-access) et bien sur [PEPS un des portails français](https://peps.cnes.fr/rocket/#/home).
 
 En france il existe actuellement deux portails nationaux d'accès aux données Sentinel :
-PEPS et THEIA.
+[PEPS](https://peps.cnes.fr/rocket/#/home) et [THEIA](https://theia.cnes.fr/atdistrib/rocket/#/home).
 
 #### PEPS
 
@@ -130,7 +136,7 @@ Dans ce cadre le site THEIA permet de rechercher et
 télécharger un certain nombre de données d'observation de la terre dont des
 données Sentinel.
 Les fonctionnalités sont disponibles graphiquement via l'interface web ou bien via une API REST.
-Par rapport à PEPS ou scihub ,THEIA, ne fournit pas d'accès aux données SAR Sentinel-1.
+Par rapport à PEPS ou scihub, le site THEIA ne fournit pas d'accès aux données SAR Sentinel-1.
 Mais par contre il propose des données Sentinel-2 avec une meilleure calibration radiométrique (en utilisant la chaine de traitement [MAJA](https://www.cesbio.cnrs.fr/outils/maja/)) pour les données de niveau L2A, ainsi que des données de niveau [L3A](https://labo.obs-mip.fr/multitemp/theias-sentinel-2-l3a-monthly-cloud-free-syntheses/) qui sont des synthèses mensuelles des images sentinel L2A.
 Ces dernières sont pratiques pour avoir des images avec moins de nuages et diminuer le volume de données à traiter.
 En plus des données Sentinel, THEIA donne aussi accès à des produits
@@ -138,11 +144,6 @@ dérivés comme la carte d'occupation des sol [OSO](https://www.theia-land.fr/en
 'neige' et des images SPOT et Landsat.
 
 Certaines infrastructures geo régionales proposent également un accès local aux données Copernicus : [mviewer geobretagne](https://geobretagne.fr/pub/dreal_b/mviewer/?config=../apps/teledetection/config.xml)
-
-!!! warning
-    à noter de ne pas confondre scihub site copernicus d'accès aux données
-    sentinel avec sci-hub le fameux site pirate d'accès aux publications
-    scientifiques.
 
 ### Saison 2 : here comme the dragons, GAFAM et réponse européene
 
@@ -178,7 +179,7 @@ mais l'accès aux ressources de calcul payant.
 Pour détailler, un peu plus, on peut considérer un DIAS comme étant composé de :
 
 * une **infrastructure cloud** : soit un accès à des serveurs de calcul et du stockage de données, etc.. . Donc des services de type OVH/Orange cloud/... ou Google/Amazon.
-* **un stockage et un catalogue de données sentinel**. c.-⁠à-⁠d. une gestion d'une
+* **un stockage et un catalogue de données sentinel**. C'est à dire une gestion d'une
   solution d'ingestion, sauvegarde et accès aux différentes données Sentinel
   produites par Copernicus ainsi que de post-traitement "classiques" de données.
   Cela comprend donc le développement (code) et mise en place d'une architecture
@@ -201,7 +202,7 @@ Les quatre consortiums choisis pour les DIAS étaient :
   Lead par Airbus, Capgemini apporte ses logiciels de traitement des données
   et Orange fournit sa solution cloud grand public Flexible Engine
 
-A ces quatres DIAS s'est ajouté un cinquième, WEKEO, qui est plus dédié sur la communauté météo/océanique.
+A ces quatres DIAS s'est ajouté un cinquième, [WEKEO](https://www.wekeo.eu/), qui est plus dédié sur la communauté météo/océanique.
 Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://gitlab.com/idgeo_public/etude-dias)
 
 Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre
@@ -233,8 +234,7 @@ progressivement de nouveaux services (plutôt issus des offres DIAS actuelles)
 jusqu'a juin 2023 où le service devra avoir atteint sa phase opérationnelle
 complète et date à laquelle l'ancien service scihub devrait être arrêté.
 Le premier contrat d'exploitation de ce nouveau service est d'une durée de
-6 ans avec une extension possible de 10 ans, soit possiblement une continuité
-de service sur 16 ans.
+six ans avec une extension possible de dix ans, soit possiblement une continuité de service sur seize ans.
 
 Le consortium qui a été retenu est consituté d'industriels participant aux DIAS
 Mundi et Creodias : T-Systems, CloudFerro, Sinergise, VITO,  DLR, ACRI-ST et RHEA
@@ -285,7 +285,7 @@ via les outils de l'entreprise Sinergise, de flux de visualisation de données
 respectant les normes OCG WMS, WMTS (tuile raster).
 Cela sera accompagné à la fois par un portail de visualisation/récupération
 des données basée sur l'offre [EOBrowser](https://apps.sentinel-hub.com/eo-browser/) de Sinergise (aka geoportail) et par
-la mise à disposition de service JupyterLab pour l'accès aux données de façon
+la mise à disposition de service [JupyterLab](https://jupyter.org/) pour l'accès aux données de façon
 intéractive dans des environnements de codes (python a priori). On pense ici
 plutôt à un équivalent google colab et à ce que les DIAS offrent déjà comme service d'exploration de données.
 
@@ -294,9 +294,7 @@ plutôt à un équivalent google colab et à ce que les DIAS offrent déjà comm
 Le nouveau portail devrait offrir un accès à l'ensemble des données Sentinel :
 Sentinel-1 SLC et GRD  L2 OCN, Sentinel-2 L1C and L2A, Sentinel-3 and
 Sentinel-5P L1 et L2.
-À cela, doit s'ajouter un accès aux "Copernicus Contributing Missions data"
-soit par exemple les données servant à la production des données Corinne
-Land Cover.
+À cela, doit s'ajouter un accès aux "Copernicus Contributing Missions data". Un exemple de ce type de données est la couverture satellites de l'Europe pour 2018 ayant servie à la production des données Corinne Land Cover millésime 2018.
 Et enfin, de la même façon que le portail PEPS en france, un ensemble de
 fonctionnalités de post-traitements à la demande devrait être disponible. En
 particulier cela devrait couvrir la possibilité d'effectuer des corrections
