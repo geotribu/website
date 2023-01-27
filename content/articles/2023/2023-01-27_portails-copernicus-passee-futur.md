@@ -188,7 +188,7 @@ Pour détailler un peu plus on peut considérer un DIAS comme étant composé de
   Services produits par le consortium (défaut du DIAS) ou par un tier sur une
   "place de marché" et via paiement/abonnement au service
 
-Les 4 consortiums choisis pour les DIAS étaient :
+Les quatre consortiums choisis pour les DIAS étaient :
 
 * [Creodias](https://creodias.eu/) : Consortium avec Creotech Instrument (Lead, gestion projet), CloudFerro (cloud + données sentinel), Sinergise (accès données) ainsi que WIZIPISI et Geomatys (traitement de données).
 * [Mundi](https://mundiwebservices.com/) : Consortium avec T-System pour l'infra (cloud), Atos pour
