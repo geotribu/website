@@ -25,7 +25,7 @@ tags:
 L'europe fait évoluer, en 2023, les possibilités d'accès aux différentes données
 des satellites de la constellation Sentinel via la création du "Copernicus
 Data Space Ecosytem".
-Il s'agit d'un nouveau portail d'accès aux données qui prendra la suite du portail actuel [scihub.copernicus.eu](https://scihub.copernicus.eu) (données open-data) et prendra la suite de certains
+Il s'agit d'un nouveau portail d'accès aux données qui prendra la suite du portail actuel [scihub.copernicus.eu](https://scihub.copernicus.eu) (données open-data) ainsi que de certains
 des actuels DIAS (**D**ata **I**nformation and **A**cces **S**ervice) pour l'offre de service payante associée.
 La première version de ce portail, [dataspace.copernicus.eu](https://dataspace.copernicus.eu/), a été lancée cette semaine et devrait évoluer vers sa version définitive jusqu'en juin 2023.
 
@@ -36,7 +36,7 @@ prévues pour ce nouveau service.
 En particulier, outre le téléchargement des données Sentinel en Open-data,
 leur accès via différents services "free" de plus haut niveaux est au programme,
 soit : visualisation des données via des flux, accès facilité aux données
-anciennes, utilisation des techno "cloud ready"  etc.
+anciennes, utilisation des technologies dites "cloud ready"  etc.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -52,6 +52,7 @@ de la terre appelée Sentinel.
 Concernant la production de données géographiques issues de Copernicus on peut
 notamment citer [les produits d'occupation du sol](https://land.copernicus.eu) comme [Corinne Land Cover](https://land.copernicus.eu/pan-european/corine-land-cover), produit depuis 1990,
 [Urban Atlas](https://land.copernicus.eu/local/urban-atlas) ainsi que les couches HRL ([High Resolution Layers](https://land.copernicus.eu/pan-european/high-resolution-layers)). Ces dernières sont produites de façon semi-automatique et se focalisant chacune sur une des thématiques suivantes: zones imperméables, forêts, prairies et les surfaces d'eaux/zones humides, culture.
+
 Pour les données brutes d'observation de la terre (imagerie spatiale) leur
 production et mise à disposition est faite par le déploiement des satellites de
 la constellation Sentinel, qui s'est inspirée du [succès des satellites US Landsat](https://www.usgs.gov/news/featured-story/fifty-years-landsat-sharing-earth-information-benefit-all).
@@ -60,12 +61,11 @@ Pour l'aspect observation de la partie surface continentale on peut citer les
 satellites et capteurs suivants :
 
 * [Sentinel-1](https://esamultimedia.esa.int/docs/S1-Data_Sheet.pdf) :
-  satellites équipés de capteur SAR ([Synthetic Aperture Radar](https://en.wikipedia.org/wiki/Synthetic-aperture_radar))en bande C avec une revisite de 3 jours.
-  Capteurs : Sentinel-1A (2014- ), Sentinel-1B (04-2016 /06-2022), Sentinel 1C (prévue
-  04/2023)
+  satellites équipés de capteur SAR ([Synthetic Aperture Radar](https://en.wikipedia.org/wiki/Synthetic-aperture_radar)) en bande C avec une revisite de 3 jours.
+  Capteurs : Sentinel-1A (2014- ), Sentinel-1B (04-2016 /06-2022), Sentinel 1C (prévu 04/2023)
 * [Sentinel-2](https://esamultimedia.esa.int/docs/S2-Data_Sheet.pdf) :
-  satellites avec capteur optique multispectrale à 10/20/60m
-  de résolutions sur 12 bandes spectrales. revisite de 5 jours. Les données
+  satellites avec capteur optique multispectral à 10/20/60m
+  de résolutions sur 12 bandes spectrales avec une revisite de 5 jours. Les données
   utilisées sont principalement les données de niveau 2A orthorectifiées et
   calibrées radiométriquemeent.
   Capteurs : Sentinel-2A (06/2015- ) , Sentinel-2B (03/2017 - ) , Sentinel-2C (prévu 2024)
@@ -77,18 +77,17 @@ satellites et capteurs suivants :
   satellites pour le suivi de l'atmosphère
 
 [D'autres satellites Sentinel](https://www.esa.int/ESA_Multimedia/Images/2022/01/Copernicus_Sentinel_Expansion_missions) sont prévus dans le futur pour augmenter encore les capacités
-d'observation de la constellation avec en particulier en télédétection pour les
-surfaces continentales :
+d'observation de la constellation avec en particulier en télédétection pour les surfaces continentales :
 
 * Sentinel-12 / ROSE-L : satellites radar en bande L pour le suivi de la forêt
   et complémentaire de Sentinel-1 (lancement vers 2027). Bande radar utilisée en particulier pour des applications "forestières"
-* Sentinel-10 / CHIME : satellites avec capteur optique hyperspectrale en complément des capteurs mutlispectraux de Sentinel-2  (lancement vers 2029)
+* Sentinel-10 / CHIME : satellites avec capteur optique hyperspectral en complément des capteurs mutlispectraux de Sentinel-2  (lancement vers 2029)
 
 ## Accès aux données Sentinel, "the road so far"
 
 ### Saison 1 : portails open-data européens et nationaux
 
-L'europe a accompagné le lancement et la mise en production des différents
+L'Europe a accompagné le lancement et la mise en production des différents
 satellites Sentinel par la mise en place de services d'accès aux données
 diffusées en open data.
 
@@ -115,7 +114,7 @@ Afin de faciliter la diffusion large des données Sentinel, différents portails
 nationaux (appelés miroirs) sont également venus compléter l'offre de diffusion
 et accès aux données. On peut citer par exemple [le portail autrichien](https://data.sentinel.zamg.ac.at/dhus/#/home), [le portail australien](https://www.copernicus.gov.au/data-access) et bien sur [PEPS un des portails français](https://peps.cnes.fr/rocket/#/home).
 
-En france il existe actuellement deux portails nationaux d'accès aux données Sentinel :
+En France il existe actuellement deux portails nationaux d'accès aux données Sentinel :
 [PEPS](https://peps.cnes.fr/rocket/#/home) et [THEIA](https://theia.cnes.fr/atdistrib/rocket/#/home).
 
 #### PEPS
@@ -143,7 +142,7 @@ En plus des données Sentinel, THEIA donne aussi accès à des produits
 dérivés comme la carte d'occupation des sol [OSO](https://www.theia-land.fr/en/ceslist/land-cover-sec/) ou une carte de couverture
 'neige' et des images SPOT et Landsat.
 
-Certaines infrastructures geo régionales proposent également un accès local aux données Copernicus : [mviewer geobretagne](https://geobretagne.fr/pub/dreal_b/mviewer/?config=../apps/teledetection/config.xml)
+Certaines infrastructures géographiques régionales proposent également un accès local aux données Copernicus : [mviewer geobretagne](https://geobretagne.fr/pub/dreal_b/mviewer/?config=../apps/teledetection/config.xml)
 
 ### Saison 2 : here comme the dragons, GAFAM et réponse européene
 
@@ -158,11 +157,12 @@ cela facilitant entre autre leur exploitation dans l'offre de service Amazon.
 Il faut noter que les données Landsat diffusées en open-data avaient déjà ouvert
 la voie pour ces modes de diffusion de données satellites par les GAFAM.
 
-En 2018, un peu en réponse aux GAFAM, l'europe a lancé un appel à candidature
+En 2018, un peu en réponse aux GAFAM, l'Europe a lancé un appel à candidature
 pour la mise en place de plateformes "cloud" proposant un accès simplifié et
 efficace aux données Sentinel afin d'aider aux développements de nouveaux
 services. Quatre DIAS (Data and Information Access Service) ont alors été retenus
-pour une période 4 ans.
+pour une période de quatre ans.
+
 Par rapport aux plateformes Scihub et PEPS/THEIA l'objectif des DIAS était de
 fournir des services payants permettant aux entreprises et acteurs publiques de
 développer plus facilement des applications et services utilisant les données Sentinel.
@@ -171,20 +171,20 @@ Le volume des données Sentinel pour un an d'acquisition sur un
 pays en Europe étant de l'ordre d'une dizaine à quelques centaines de To selon
 la taille du pays, traiter un tel volume nécessite donc, sans DIAS, un temps non
 négligeable de récupération des données et un coût d'infrastructure de stockage
-conséquent. Les DIAS offrent une alternative en proposant d'herberger ces données
+conséquent. Les DIAS offrent une alternative en hébergeant ces données
 et en proposant des ressources de calculs (serveurs clouds) ayant un accès rapide
 à celles-ci. L'accès aux données Sentinel étant gratuit depuis les plateformes DIAS
 mais l'accès aux ressources de calcul payant.
 
 Pour détailler, un peu plus, on peut considérer un DIAS comme étant composé de :
 
-* une **infrastructure cloud** : soit un accès à des serveurs de calcul et du stockage de données, etc.. . Donc des services de type OVH/Orange cloud/... ou Google/Amazon.
+* une **infrastructure cloud** : soit un accès à des serveurs de calcul et du stockage de données, etc. . Donc des services de type OVH/Orange cloud/Google/Amazon.
 * **un stockage et un catalogue de données Sentinel**. C'est à dire une gestion d'une
   solution d'ingestion, sauvegarde et accès aux différentes données Sentinel
-  produites par Copernicus ainsi que de post-traitement "classiques" de données.
+  produites par Copernicus ainsi que des post-traitement "classiques" de données.
   Cela comprend donc le développement (code) et mise en place d'une architecture
   cloud appropriée ainsi que la gestion opérationnelle du service.
-* Production et **offre d'API pour se connecter aux services et accéder aux données**. Cela comprend aussi les fonctionnalités de gestion utilisateur centralisé et de facturation des services.
+* Production et **offre d'API d'accès aux données** pour se connecter aux services et accéder aux données. Cela comprend aussi les fonctionnalités de gestion utilisateur centralisé et de facturation des services.
 * **une offre de service et applications tierces** sur les données Sentinel du catalogue.
   Services produits par le consortium (défaut du DIAS) ou par un tier sur une
   "place de marché" et via paiement/abonnement au service
@@ -205,14 +205,14 @@ Les quatre consortiums choisis pour les DIAS étaient :
 A ces quatres DIAS s'est ajouté un cinquième, [WEKEO](https://www.wekeo.eu/), qui est plus dédié sur la communauté météo/océanique.
 Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://gitlab.com/idgeo_public/etude-dias)
 
-Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre
-autre, leur utilisation par les différents organismes de contrôles et paiements
+Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre,
+leur utilisation par les différents organismes de contrôles et paiements
 associés à la PAC (Politique Agricole Commune) pour la mise en place d'un
-"monitoring CAP". En effet l'EU a souhaité faire évoluer les contrôles terrain
+"monitoring CAP". En effet l'Europe a souhaité faire évoluer les contrôles terrain
 ponctuels associés aux versemment des aides PAC vers un ["monitoring"](https://publications.jrc.ec.europa.eu/repository/handle/JRC112913) exhaustif
-spatiallement et semi-automatique par l'exploitation dees données Sentinel-1
+spatiallement et réalisé de manière semi-automatique par l'exploitation des données Sentinel-1
 et 2. Ces dernières devant permettre entre autre de vérifier la présence
-ou non d'activité agricoles (présence de culture annuel, détection de fauche de
+ou non d'activité agricoles (présence de culture annuelle, détection de fauche de
 prairie etc..) sur une parcelle donnée.
 
 ## Accès aux données Sentinel Teaser Saison 3 : "There can be only one"
@@ -223,16 +223,16 @@ Sentinel.
 
 Concrètement l'évolution consiste à selectionner un consortium (décembre 2022)
 afin d'opérer d'une part une nouvelle version du portail open-data européen
-scihub qui offrira des fonctionnalités similaires aux DIAS mais en une version
+Scihub qui offrira des fonctionnalités similaires aux DIAS mais en une version
 gratuite, avec toutefois une limitation de quota, et d'autre part à offrir une
 version payante de ce service permettant aux chercheurs, organismes publiques et
 industriels qui le souhaitent. Cette version "non free" permet de disposer de ressources de stockage/calcul et d'accès aux services non limités moyennant finance.
 
 Le deploiement de ce nouveau service commencera fin janvier 2023 avec la mise
-en place de service dans la continuité de ceux offerts par scihub et s'étoffera
+en place de service dans la continuité de ceux offerts par Scihub et s'étoffera
 progressivement de nouveaux services (plutôt issus des offres DIAS actuelles)
 jusqu'a juin 2023 où le service devra avoir atteint sa phase opérationnelle
-complète et date à laquelle l'ancien service scihub devrait être arrêté.
+complète et date à laquelle l'ancien service Scihub devrait être arrêté.
 Le premier contrat d'exploitation de ce nouveau service est d'une durée de
 six ans avec une extension possible de dix ans, soit possiblement une continuité de service sur seize ans.
 
@@ -263,7 +263,7 @@ D'un point de vue communication le nom associé à l'offre de service devrait
 La nouvelle offre de service va offir une continuité par rapport à l'ancienne
 et devrait donc conserver les services existants de recherche et téléchargement
 des données Sentinel. Mais elle doit aussi proposer plusieurs nouveautés
-en particulier concernant les interfaces "machine to machine".
+en particulier concernant les interfaces *"machine to machine"*.
 
 ### Arrivé de STAC et COG
 
@@ -286,7 +286,7 @@ respectant les normes OCG WMS, WMTS (tuile raster).
 Cela sera accompagné à la fois par un portail de visualisation/récupération
 des données basée sur l'offre [EOBrowser](https://apps.sentinel-hub.com/eo-browser/) de Sinergise (aka geoportail) et par
 la mise à disposition de service [JupyterLab](https://jupyter.org/) pour l'accès aux données de façon
-intéractive dans des environnements de codes (python a priori). On pense ici
+intéractive dans des environnements de codes (plutôt basés python a priori). On pense ici
 plutôt à un équivalent google colab et à ce que les DIAS offrent déjà comme service d'exploration de données.
 
 ### Offre de données Sentinel
@@ -300,7 +300,7 @@ fonctionnalités de post-traitements à la demande devrait être disponible. En
 particulier cela devrait couvrir la possibilité d'effectuer des corrections
 atmosphérique avec le processeur MAJA et la production de produits dérivés
 Sentinel-1 comme la cohérence entre 2 dates (produit utilisé par exemple dans les algorithmes pour le suivi des cultures)
-À noter qu'a priori il ne devrait plus y avoir de notions de donnés online/offline
+À noter, qu'a priori, il ne devrait plus y avoir de notions de donnés online/offline
 dépendant de la date d'acquisition des données. Les données offline étant les données datant de plus de X mois et donc l'accès se fait en différé avec une demande de désarchivage puis un téléchargement. Toutes les données produites
 depuis 2014 devrait donc être accesibles via un accès rapide, cela pour faciliter
 les traitements demandant un accès à des données sur un interval de temps long.
@@ -308,13 +308,12 @@ les traitements demandant un accès à des données sur un interval de temps lon
 ### Accès aux données via WCS et OpenEO
 
 En plus de l'accès "simple" aux données le nouveaux service devrait aussi
-offrir deux nouveau types d'accès permettant des post-traitement à la volé des
-données.
+offrir deux nouveaux types d'accès permettant des post-traitement à la volé des données.
 D'une part, on devrait rerouver une offre d'API selon la norme [WCS](http://opengeospatial.github.io/e-learning/wcs/text/basic-main.html) de
 l'OGC (via Sinergise) qui permet par exemple des calculs simples entre bandes
 raster (de type calculatrice raster, cela permet par exemple de calculer à la
-volé un couche NDVI (indice de végétation) à partir des bandes rouges et
-infrarouges Sentinel-2.  
+volé une couche NDVI (indice de végétation) à partir des bandes spectrales rouge et
+infrarouge Sentinel-2.  
 D'autre part, un service [OpenEO](https://openeo.org/) devrait aussi être déployer (via VITO). L'API
 OpenEO propose des fonctionnalités de type Google Earth Engine (GEE) ou
 datacube mais avec une API normalisée et pouvant être proposée par différents
