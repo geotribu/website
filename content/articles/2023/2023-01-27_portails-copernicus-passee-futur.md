@@ -178,7 +178,7 @@ mais l'accès aux ressources de calcul payant.
 
 Pour détailler, un peu plus, on peut considérer un DIAS comme étant composé de :
 
-* une **infrastructure cloud** : soit un accès à des serveurs de calcul et du stockage de données, etc. . Donc des services de type OVH/Orange cloud/Google/Amazon.
+* une **infrastructure cloud** : soit un accès à des serveurs de calcul et du stockage de données, etc. Donc des services de type OVH/Orange cloud/Google/Amazon.
 * **un stockage et un catalogue de données Sentinel**. C'est à dire une gestion d'une
   solution d'ingestion, sauvegarde et accès aux différentes données Sentinel
   produites par Copernicus ainsi que des post-traitement "classiques" de données.
@@ -295,11 +295,13 @@ Le nouveau portail devrait offrir un accès à l'ensemble des données Sentinel 
 Sentinel-1 SLC et GRD  L2 OCN, Sentinel-2 L1C and L2A, Sentinel-3 and
 Sentinel-5P L1 et L2.
 À cela, doit s'ajouter un accès aux "Copernicus Contributing Missions data". Un exemple de ce type de données est la couverture satellites de l'Europe pour 2018 ayant servie à la production des données Corinne Land Cover millésime 2018.
+
 Et enfin, de la même façon que le portail PEPS en france, un ensemble de
 fonctionnalités de post-traitements à la demande devrait être disponible. En
 particulier cela devrait couvrir la possibilité d'effectuer des corrections
 atmosphérique avec le processeur MAJA et la production de produits dérivés
 Sentinel-1 comme la cohérence entre 2 dates (produit utilisé par exemple dans les algorithmes pour le suivi des cultures)
+
 À noter, qu'a priori, il ne devrait plus y avoir de notions de donnés online/offline
 dépendant de la date d'acquisition des données. Les données offline étant les données datant de plus de X mois et donc l'accès se fait en différé avec une demande de désarchivage puis un téléchargement. Toutes les données produites
 depuis 2014 devrait donc être accesibles via un accès rapide, cela pour faciliter
