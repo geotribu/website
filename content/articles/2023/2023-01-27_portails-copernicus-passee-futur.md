@@ -91,7 +91,7 @@ L'Europe a accompagné le lancement et la mise en production des différents
 satellites Sentinel par la mise en place de services d'accès aux données
 diffusées en open data.
 
-Le premier service d'accès aux données a été le Copernicus [Open Access Hub] (<https://scihub.copernicus.eu/>) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, "https://scihub.copernicus.eu/", comme SciHub. Et c'est le nom qui sera utilisé dans le reste de cet article.
+Le premier service d'accès aux données a été le Copernicus [Open Access Hub](<https://scihub.copernicus.eu/>) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, "https://scihub.copernicus.eu/", comme SciHub. Et c'est le nom qui sera utilisé dans le reste de cet article.
 
 !!! warning
     à noter de ne pas confondre Scihub site copernicus d'accès aux données
