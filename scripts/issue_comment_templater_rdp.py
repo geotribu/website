@@ -10,6 +10,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 # variables
 submitted_form_data: Path = Path("rdp_news_submitted.json")
 issue_comment_template: Path = Path("issue_comment_rdp_template.jinja")
+logging.basicConfig(encoding="utf-8", level=logging.INFO)
 
 # load JSON from issue form
 with submitted_form_data.open("r", encoding="UTF8") as in_json:
