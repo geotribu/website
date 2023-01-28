@@ -31,8 +31,28 @@ A ajouter dans l'en-tête :
 - [ ] téléverser l'eventuelle illustration sur le CDN et l'intégrer dans le corps du texte
 - [ ] peaufiner la description et le texte de remplacement de la vignette
 
-Commande Git pour garantir l'attribution :
+### Commande Git pour garantir l'attribution
 
 ```sh
 git commit --author="{{ in_author_name }} <{{ in_author_mail }}>" --message="Ajout news {{ in_news_title }} par @{{ issue_author }}. Close #{{ issue_id }}"
+```
+
+### Diffusion
+
+#### LinkedIn
+
+```txt
+{{ in_author_linkedin }}
+```
+
+#### Mastodon
+
+```txt
+{{ in_author_mastodon }}
+```
+
+#### Twitter
+
+```txt
+{{ in_author_twitter }}
 ```
