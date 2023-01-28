@@ -1,5 +1,5 @@
 ---
-title: "Retour vers le futur du #30DayMapChallenge"
+title: "Retour vers le futur du #30DayMapChallenge 2022"
 subtitle: "Mangez des cartes"
 authors:
     - Guilhem ALLAMAN
@@ -17,7 +17,7 @@ tags:
     - OpenSource
 ---
 
-# Retour vers le futur du #30DayMapChallenge
+# Retour vers le futur du #30DayMapChallenge 2022
 
 :calendar: Date de publication initiale : 31 janvier 2023
 
@@ -51,7 +51,7 @@ tags:
 
 ----
 
-## Mais qu'est-ce c'est que c'est ça ?
+## Mais qu'est-ce c'est que ça ?
 
 :fire: Ceci sous forme de défis ludiques, sur un ton jovial, fédérateur, social, sans souci mais malheureusement sans saucisses à l'ail ni halal inch'Allah. Et ce pour la quatrième édition maintenant d'une initiative lancée par [Topi Tjukanov](https://github.com/tjukanovt/30DayMapChallenge) qui fournit les sujets, le 30DayMapChallenge propose un principe plutôt simple :
 
@@ -133,7 +133,7 @@ tags:
 
 :large_blue_diamond: deviner notre avenir et nos [fortunes diverses](https://www.youtube.com/watch?v=lzGmpqN9zZc&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=34) grâce à l'intuition obscure et inspirée des nombreu.x.ses et talentuese.x.e.es [cartomancien.ne.s cybernétiques](https://fr.wikipedia.org/wiki/Paul_B._Preciado) :mage:
 
-:large_blue_diamond: s'époumoner au milieu du kop des géoultras à chaque geste technique réalisé lors de cette rencontre âpre et engagée, que beaucoup considèrent à juste titre comme le _Cartografico_. Pour cette rencontre au sommet, le Qoach aligne la Qomposition des grands soirs. On retrouve à la pointe de l'attaque le nº9 titulaire : QGIS, le renard des surfaces géométriques, le Ballon d'Or du peuple géospatial :soccer:
+:large_blue_diamond: s'époumoner au milieu du kop des géoultras à chaque geste technique réalisé lors de cette rencontre âpre et engagée, que beaucoup considèrent à juste titre comme le _Cartografico_. Comme il est de coutume dans une rencontre qui tutoie les sommets, le Qoach aligne la Qomposition des grands soirs. On retrouve à la pointe de l'attaque le célèbre nº9 titulaire : QGIS, le renard des surfaces géométriques, le géoGOAT, le Ballon d'Or du peuple géospatial :soccer:
 
 :large_blue_diamond: rencontrer les cartes [les plus :fire: de ta région](https://www.youtube.com/watch?v=aDtzvakF2Cc&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=35)
 
@@ -259,7 +259,7 @@ Si vous êtes aussi sur le point de :sleeping:, ou si vous commencez à :rage:, 
 
 ## Ciao toubib !
 
-:pill: N'hésitez pas à vous resservir : y'a du rab ! Et les bienfaits thérapeutiques de la cartographie ne sont dorénavant plus à démontrer. En novembre, évitons de creuser le trou de la sécurité spatiale : pas besoin d'user ni d'abuser de cartomédicaments, pas besoin d'ingurgiter ni de se rouler beaucoup de géomédecines alternatives : _"~~an apple~~ **a map** a day keeps the doctor away"_ :mute: :scientist:
+:pill: N'hésitez pas à vous resservir : y'a du rab ! Et les bienfaits thérapeutiques de la cartographie ne sont dorénavant plus à démontrer. En novembre, évitons de creuser le trou de la sécurité spatiale : pas besoin d'user [ni d'abuser](https://www.youtube.com/watch?v=f3Fzh4JWdWU&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=48) de cartomédicaments, pas besoin d'ingurgiter ni de se rouler beaucoup de géomédecines alternatives : _"~~an apple~~ **a map** a day keeps the doctor away"_ :mute: :scientist:
 
 ![17: a map without a computer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_16_d17.jpg){: .img-center loading=lazy }
 
@@ -283,7 +283,7 @@ Si vous êtes aussi sur le point de :sleeping:, ou si vous commencez à :rage:, 
 
 ----
 
-## Et maintenant ? Une petite sieste ?
+## Et maintenant ? Une sieste ?
 
 Non, désolé, même si la digestion peut nécessiter un petit temps calme, les cartomaniacs appliqués et consciencieux sont demandés à la réception !
 
@@ -291,7 +291,7 @@ Le [#MapFailbruaryChallenge](https://github.com/datagistips/MapFailbruaryChallen
 
 ![thèmes MapFailbruaryChallenge 2023](https://cdn.geotribu.fr/img/articles-blog-rdp/mapfailbruarychallenge_topics_2022.jpg){: .img-center loading=lazy }
 
-Vous avez une nouvelle occasion d'exprimer tout votre sérieux, votre sagesse et votre clairvoyance au long de ce challenge initié par [Datagistips](https://datagistips.hypotheses.org/). C'est ce qu'on appelle de la carto érudite et de haute volée !
+Vous avez à nouveau l'occasion d'exprimer tout votre sérieux, votre sagesse et votre clairvoyance au long de ce challenge initié par [Datagistips](https://datagistips.hypotheses.org/). _Bison futé_ prévoit déjà une circulation érudite et savante sur les routes de la cartographie !
 
 ## Un grand merci et un grand bravo à tous les participants du #30DayMapChallenge 2022 !
 
@@ -317,6 +317,6 @@ Rendez-vous en novembre pour la prochaine édition !
 
 --8<-- "content/team/gall.md"
 
-Mais parfois aussi malheureusement siggeur profane et immature, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant celui de 2024 avec impatience !
+Mais parfois aussi malheureusement siggeur profane et immature, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant le #MapFailbruaryChallenge et celui de 2024 avec impatience !
 
 {% include "licenses/beerware.md" %}
