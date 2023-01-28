@@ -5,7 +5,7 @@ authors:
     - Geotribu
 categories:
     - article
-date: "2023-01-16 10:20"
+date: "2023-01-30 10:20"
 description: ""
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/geotribu_2023.png"
 license: default
@@ -15,7 +15,7 @@ tags:
 
 # Voeux 2023 et bilan 2022
 
-:calendar: Date de publication initiale : 16 janvier 2023
+:calendar: Date de publication initiale : 30 janvier 2023
 
 ## Introduction
 
@@ -35,6 +35,8 @@ tags:
 
 ## Rétrospective 2022
 
+Découvrez la rétrospective des contributions réalisée à partir de l'historique Git du dépôt Geotribu :
+
 <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/mbDAz9aAVW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Contenus
@@ -45,6 +47,8 @@ tags:
 ## Audience
 
 - :incoming_envelope: on a passé la barre des XXX inscrits à [la newsletter](/newsletter/signup/)
+
+![Seuil des 1500 clics par mois dans les résultats Google Search](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_google_search_1500_mois.webp){: .img-center loading=lazy }
 
 ## Fonctionnalités
 
@@ -61,12 +65,14 @@ tags:
 - :mirror: pour améliorer notre résilience et réduire notre adhérence à GitHub, on a mis en place [un site miroir](https://fr.wikipedia.org/wiki/Site_miroir#Nom_de_domaine) sur <https://www2.geotribu.fr> (synchronisé quotidiennement).
 - :fontawesome-solid-server: migration de serveur (merci GeoRezo !) : CDN, commentaires et mécanisme de sauvegarde sont déjà sur le nouveau serveur. Au passage, on en profite pour rendre le déploiement de notre infrastructure reproductible avec Ansible. Pour les curieux, ça se passe sur [ce dépôt GitHub](https://github.com/geotribu/infra).
 
-## Archives
+## Nettoyage et historique
 
 Fin 2021, nous attaquions l'homogénéisation et l'assainissement des contenus anciens. Ce travail de reprise chronophage s'est échelonné tout au long de l'année 2022 avec de nombreux ajustements sur :
 
 - le markdown : niveau des titres, mise en valeur du code, suppression des anciennes ancres, retraits en début de ligne
 - l'intégration des icônes et images manquantes.
+
+![Réduction des erreurs 404 sur le dernier trimestre 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_404_nettoyage_2023.webp){: .img-center loading=lazy }
 
 ----
 
