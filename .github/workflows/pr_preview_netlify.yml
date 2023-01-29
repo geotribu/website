@@ -8,6 +8,11 @@ on:
     types:
       - completed
 
+env:
+  LANG: "fr_FR.UTF-8"
+  LC_ALL: "fr_FR.UTF-8"
+  LC_TIME: "fr_FR.UTF-8"
+
 jobs:
   preview-netlify:
     name: "⌛ Site temporaire sur Netlify"

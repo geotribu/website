@@ -9,6 +9,11 @@ on:
       - "mkdocs.yml"
       - "requirements*.txt"
 
+env:
+  LANG: "fr_FR.UTF-8"
+  LC_ALL: "fr_FR.UTF-8"
+  LC_TIME: "fr_FR.UTF-8"
+
 jobs:
   deploy:
     name: "📤 GitHub Pages"
