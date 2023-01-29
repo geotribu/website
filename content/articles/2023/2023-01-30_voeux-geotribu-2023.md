@@ -1,6 +1,6 @@
 ---
 title: "Voeux 2023 et bilan 2022"
-subtitle: "Calmement, se remémorant chaque news"
+subtitle: "Calmement, se remémorant chaque changement"
 authors:
     - Geotribu
 categories:
@@ -60,6 +60,7 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 - :robot: un robot pré-mâche le travail d'intégration des news proposées via le formulaire GitHub ([voir cet exemple](https://github.com/geotribu/website/issues/703#issuecomment-1256246426))
 - :label: ajout d'icônes aux mots-clés (travail en cours) et légère amélioration du design
 - :factory_worker: des évolutions sous le capot du site notamment liées au thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) dont on contribue à financer la version payante (*Insiders*) via notre [Tipeee](https://fr.tipeee.com/geotribu).
+- les prévisualisations générées automatiquement pour chaque nouveau contenu sont désormais supprimées dès que le contenu est publié.
 
 ----
 
