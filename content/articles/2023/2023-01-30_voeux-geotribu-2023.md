@@ -46,10 +46,12 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 
 ## Audience
 
-- :incoming_envelope: on a passé la barre des XXX inscrits à [la newsletter](/newsletter/signup/)
--
+- :incoming_envelope: on a passé la barre des 250 inscrits à [la newsletter](/newsletter/signup/) dont 215 à l'envoi hebdomadaire. Pour rappel :
+    - si vous vous êtes abonné/e et que vous ne lisez plus, ne cliquez jamais ou n'êtes plus intéressé/e : prenez 5 minutes pour vous [désabonner](https://geotribu.us5.list-manage.com/unsubscribe/post). Sérieusement, ça fera des mails perdus en moins :pray:.
+    - si vous pensez que vos collègues pourraient être intéressé/es, faites tourner :wink:
 
-![Seuil des 1500 clics par mois dans les résultats Google Search](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_google_search_1500_mois.webp){: .img-center loading=lazy }
+![Seuil des 1500 clics par mois dans les résultats Google Search](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_google_search_1500_mois.webp){: .img-center loading=lazy max-width=300 }
+![Evolution abonnés à la newsletter Geotribu sur 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/newsletter_mailchimp_1_an_apres.webp){: .img-center loading=lazy max-width=300 }
 
 ## Fonctionnalités
 
