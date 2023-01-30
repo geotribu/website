@@ -43,13 +43,13 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 
 ### Contenus
 
+![Top 10 des contenus 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_contenus_1.webp){: .img-right loading=lazy width=40% }
+
 - 16 articles publiés de 13 auteurs différents, mais dont 1 seule autrice
 - 23 revues de presse publiées, conformément à notre rythme d'une toutes les 2 semaines modulo les vacances
 - 43 news proposées par des personnes externes via [le formulaire](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml). Un remerciement chaleureux et particulier à Delphine Montagne qui s'est tellement emparée de cet outil qu'elle a plus de news à son actif que des membres "internes" !
 - tous les nouveaux contenus liés au guide de contribution et à l'outillage interne (série "[sous le #GéoCapot](https://twitter.com/hashtag/G%C3%A9oCapot?src=hashtag_click&f=live)")
 - tous les contenus historiques republiés et qu'on a tenté de valoriser via [la série #GéoSouvenir](https://twitter.com/hashtag/G%C3%A9oSouvenir?src=hashtag_click&f=live) sur Twitter
-
-![Top 10 des contenus 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_contenus_1.webp){: .img-center loading=lazy }
 
 ### Audience
 
@@ -60,7 +60,8 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 ![Seuil des 1500 clics par mois dans les résultats Google Search](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_google_search_1500_mois.webp){: loading=lazy width="30%" } ![Evolution abonnés à la newsletter Geotribu sur 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/newsletter_mailchimp_1_an_apres.webp){: loading=lazy width="30%" } ![Nombre de visiteurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_audience.webp){: loading=lazy width="30%" }
 {: align=middle }
 
-![Sources des visites Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_sources_acquisitions.webp){: .img-center loading=lazy }
+![Sources des visites Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_sources_acquisitions.webp){: loading=lazy width=40% } ![Pages vues Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_contenus_2.webp){: loading=lazy width=40% }
+{: align=middle }
 
 ### Fonctionnalités
 
@@ -72,6 +73,7 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 - :label: ajout d'icônes aux mots-clés (travail en cours) et légère amélioration du design
 - :factory_worker: des évolutions sous le capot du site notamment liées au thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) dont on contribue à financer la version payante (*Insiders*) via notre [Tipeee](https://fr.tipeee.com/geotribu).
 - les prévisualisations générées automatiquement pour chaque nouveau contenu sont désormais supprimées dès que le contenu est publié.
+- :carousel_horse: Julien a également travaillé sur la compatibilité des contenus Géotribu avec le web sémantique en générant automatiquement des données structurées au format JSON-LD dans les pages HTML. Pour en savoir plus sur [ce qui se passe sous le géocapot c'est par ici]({{ config.extra.url_contribuer }}internal/seo_extraits_enrichis/).
 
 ![Widget en bas d'article pour soutenir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/widget_feedback.webp){: .img-center loading=lazy }
 
@@ -96,7 +98,9 @@ Fin 2021, nous attaquions l'homogénéisation et l'assainissement des contenus a
 - le markdown : niveau des titres, mise en valeur du code, suppression des anciennes ancres, retraits en début de ligne
 - l'intégration des icônes et images manquantes.
 
-![Réduction des erreurs 404 sur le dernier trimestre 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_404_nettoyage_2023.webp){: .img-center loading=lazy }
+![Réduction des erreurs 404 sur le dernier trimestre 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_404_nettoyage_2023.webp){: loading=lazy width=30% }
+![Ergonomie mobile Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/ergonomie_mobile_2022.webp){: loading=lazy width=30% } ![Ergonomie ordinateur Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/ergonomie_ordinateur_2022.webp){: loading=lazy width=30% }
+{: align=middle }
 
 ----
 
