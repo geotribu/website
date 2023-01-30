@@ -95,6 +95,9 @@ Fin 2021, nous attaquions l'homogénéisation et l'assainissement des contenus a
 ### Objectifs
 
 - [ ] tenir le rythme d'une revue de presse toutes les 2 semaines (hors déserts vacanciers français)
+- [ ] trouver des autrices d'articles
+- [ ] diversifier les auteurs
+- [ ] publier plus d'un article par mois
 - [ ] intégrer les derniers contenus historiques manquants
 - [ ] harmoniser les tags et les textes de remplacement sur les icônes
 
