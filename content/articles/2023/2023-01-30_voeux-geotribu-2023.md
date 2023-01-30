@@ -49,13 +49,15 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 - tous les nouveaux contenus liés au guide de contribution et à l'outillage interne (série "[sous le #GéoCapot](https://twitter.com/hashtag/G%C3%A9oCapot?src=hashtag_click&f=live)")
 - tous les contenus historiques republiés et qu'on a tenté de valoriser via [la série #GéoSouvenir](https://twitter.com/hashtag/G%C3%A9oSouvenir?src=hashtag_click&f=live) sur Twitter
 
+![Top 10 des contenus 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_contenus_1.webp){: .img-center loading=lazy }
+
 ### Audience
 
 - :incoming_envelope: on a passé la barre des 250 inscrits à [la newsletter](/newsletter/signup/) dont 215 à l'envoi hebdomadaire. Pour rappel :
     - si vous vous êtes abonné/e et que vous ne lisez plus, ne cliquez jamais ou n'êtes plus intéressé/e : prenez 5 minutes pour vous [désabonner](https://geotribu.us5.list-manage.com/unsubscribe/post). Sérieusement, ça fera des mails perdus en moins :pray:.
     - si vous pensez que vos collègues pourraient être intéressé/es, faites tourner :wink:
 
-![Seuil des 1500 clics par mois dans les résultats Google Search](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_google_search_1500_mois.webp){: loading=lazy width="30%" } ![Evolution abonnés à la newsletter Geotribu sur 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/newsletter_mailchimp_1_an_apres.webp){: loading=lazy width="30%" }
+![Seuil des 1500 clics par mois dans les résultats Google Search](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_google_search_1500_mois.webp){: loading=lazy width="30%" } ![Evolution abonnés à la newsletter Geotribu sur 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/newsletter_mailchimp_1_an_apres.webp){: loading=lazy width="30%" } ![Nombre de visiteurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_audience.webp){: loading=lazy width="30%" }
 {: align=middle }
 
 ### Fonctionnalités
@@ -81,7 +83,9 @@ Pour rappel, une grande partie de nos ressources informatiques est fournie par l
 
 Vous pouvez également nous soutenir directement, ponctuellement ou de façon récurrente :
 
-<a href="https://fr.tipeee.com/geotribu" class="tipeee-project-cart-iframe" data-orientation="grid" data-rewards="1">Soutenez Geotribu sur Tipeee</a>
+<a href="https://fr.tipeee.com/geotribu" class="tipeee-project-cart-simple" data-orientation="line" data-rewards="1">Soutenez Geotribu sur Tipeee</a>
+
+[![Contreparties Tipeee Geotribu](https://cdn.geotribu.fr/img/internal/sponsoring/tipeee_contreparties.webp){: .img-center .off-glb loading=lazy }](https://fr.tipeee.com/geotribu/)
 
 ### Nettoyage et historique
 
