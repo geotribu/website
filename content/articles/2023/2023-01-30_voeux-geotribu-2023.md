@@ -5,7 +5,7 @@ authors:
     - Geotribu
 categories:
     - article
-date: "2023-01-30 10:20"
+date: "2023-01-30 22:20"
 description: "La tribu vous adresse ses meilleurs voeux à toutes et tous les visiteurs du géotipi. Petit retour sur 2022 pour attaquer au mieux 2023."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/geotribu_2023.png"
 license: default
@@ -21,12 +21,16 @@ tags:
 
 ![logo tipi Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.png){: .img-rdp-news-thumb }
 
+On peut aussi voir dans nos contenus et dans leur audience comme un miroir des tendances notre géo-époque, où les outils de saisie terrain, les vues immersives et les tableaux de bord (_dashboard_) occupent les esprits.
+
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
 ----
 
 ## Meilleurs voeux pour 2023 de la part de Geotribu !
+
+Merci à toustes de nous suivre et en particulier à toutes les personnes qui prennent le temps de saluer le travail bénévole qui est fait ici, à travers les commentaires ou autres moyens. Ca fait plaisir aussi de voir autant de personne venir contribuer ou simplement consulter et partager nos contenus !
 
 ![Bonne année 2023](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/geotribu_2023.png "Bonne année 2023"){: .img-center loading=lazy }
 
@@ -71,7 +75,7 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 - :material-puzzle: notre [plugin QGIS](https://plugins.qgis.org/plugins/qtribu/) est désormais publié dans le dépôt officiel des extensions pour que son installation soit plus facile
 - :robot: un robot pré-mâche le travail d'intégration des news proposées via le formulaire GitHub ([voir cet exemple](https://github.com/geotribu/website/issues/703#issuecomment-1256246426))
 - :label: ajout d'icônes aux mots-clés (travail en cours) et légère amélioration du design
-- :factory_worker: des évolutions sous le capot du site notamment liées au thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) dont on contribue à financer la version payante (*Insiders*) via notre [Tipeee](https://fr.tipeee.com/geotribu).
+- :factory_worker: des évolutions sous le capot du site notamment liées au thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) dont on contribue à financer la version payante (_Insiders_) via notre [Tipeee](https://fr.tipeee.com/geotribu).
 - les prévisualisations générées automatiquement pour chaque nouveau contenu sont désormais supprimées dès que le contenu est publié.
 - :carousel_horse: Julien a également travaillé sur la compatibilité des contenus Géotribu avec le web sémantique en générant automatiquement des données structurées au format JSON-LD dans les pages HTML. Pour en savoir plus sur [ce qui se passe sous le géocapot c'est par ici]({{ config.extra.url_contribuer }}internal/seo_extraits_enrichis/).
 
