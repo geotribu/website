@@ -60,6 +60,8 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 ![Seuil des 1500 clics par mois dans les résultats Google Search](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_google_search_1500_mois.webp){: loading=lazy width="30%" } ![Evolution abonnés à la newsletter Geotribu sur 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/newsletter_mailchimp_1_an_apres.webp){: loading=lazy width="30%" } ![Nombre de visiteurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_audience.webp){: loading=lazy width="30%" }
 {: align=middle }
 
+![Sources des visites Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_sources_acquisitions.webp){: .img-center loading=lazy }
+
 ### Fonctionnalités
 
 - :fontawesome-solid-signature: les avatars GitHub des principaux contributeur/ices d'une page sont automatiquement ajoutés en bas de page
@@ -71,6 +73,8 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 - :factory_worker: des évolutions sous le capot du site notamment liées au thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) dont on contribue à financer la version payante (*Insiders*) via notre [Tipeee](https://fr.tipeee.com/geotribu).
 - les prévisualisations générées automatiquement pour chaque nouveau contenu sont désormais supprimées dès que le contenu est publié.
 
+![Widget en bas d'article pour soutenir](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/widget_feedback.webp){: .img-center loading=lazy }
+
 ### Architecture et coûts de fonctionnement
 
 - :mirror: pour améliorer notre résilience et réduire notre adhérence à GitHub, on a mis en place [un site miroir](https://fr.wikipedia.org/wiki/Site_miroir#Nom_de_domaine) sur <https://www2.geotribu.fr> (synchronisé quotidiennement), hébergé sur le serveur prêté par GeoRezo
@@ -81,9 +85,7 @@ Pour rappel, une grande partie de nos ressources informatiques est fournie par l
 [Faire un don à GeoRezo :fontawesome-solid-hand-holding-heart:](https://www.helloasso.com/associations/georezo-le-portail-geomatique/formulaires/1/widget){: .md-button }
 {: align=middle }
 
-Vous pouvez également nous soutenir directement, ponctuellement ou de façon récurrente :
-
-<a href="https://fr.tipeee.com/geotribu" class="tipeee-project-cart-simple" data-orientation="line" data-rewards="1">Soutenez Geotribu sur Tipeee</a>
+Vous pouvez également [nous soutenir directement, ponctuellement ou de façon récurrente](https://fr.tipeee.com/geotribu/) ou [sur Liberapay](https://liberapay.com/Geotribu/) :
 
 [![Contreparties Tipeee Geotribu](https://cdn.geotribu.fr/img/internal/sponsoring/tipeee_contreparties.webp){: .img-center .off-glb loading=lazy }](https://fr.tipeee.com/geotribu/)
 
@@ -115,7 +117,7 @@ On a d'ores et déjà quelques annonces à faire :
 
 - le site changera d'adresse d'ici le printemps : fin du sous-domaine `static`, le site retourne à la racine `https://geotribu.fr/` ou peut-être sur le sous-domaine `www`. Préparez vos favoris, marque-pages, etc.
 - la section dédiée à la contribution a désormais son propre site web : <https://contribuer.geotribu.fr/>
-- optimiser automatiquement les images hébergées
+- optimiser automatiquement les images hébergées (redimensionnement et compression) pour réduire la friction lors de la contribution
 
 ----
 
