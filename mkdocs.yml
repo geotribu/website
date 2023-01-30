@@ -196,6 +196,9 @@ extra:
 extra_css:
   - "theme/assets/stylesheets/extra.css"
 
+extra_javascript:
+  - https://plugin.tipeee.com/widget.js
+
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
   - abbr

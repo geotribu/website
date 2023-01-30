@@ -69,7 +69,7 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 - :factory_worker: des évolutions sous le capot du site notamment liées au thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) dont on contribue à financer la version payante (*Insiders*) via notre [Tipeee](https://fr.tipeee.com/geotribu).
 - les prévisualisations générées automatiquement pour chaque nouveau contenu sont désormais supprimées dès que le contenu est publié.
 
-### Architecture
+### Architecture et coûts de fonctionnement
 
 - :mirror: pour améliorer notre résilience et réduire notre adhérence à GitHub, on a mis en place [un site miroir](https://fr.wikipedia.org/wiki/Site_miroir#Nom_de_domaine) sur <https://www2.geotribu.fr> (synchronisé quotidiennement), hébergé sur le serveur prêté par GeoRezo
 - :fontawesome-solid-server: migration de serveur (merci GeoRezo !) : CDN, commentaires et mécanisme de sauvegarde sont déjà sur le nouveau serveur. Au passage, on en profite pour rendre le déploiement de notre infrastructure reproductible avec Ansible. Pour les curieux, ça se passe sur [ce dépôt GitHub](https://github.com/geotribu/infra).
@@ -78,6 +78,10 @@ Pour rappel, une grande partie de nos ressources informatiques est fournie par l
 
 [Faire un don à GeoRezo :fontawesome-solid-hand-holding-heart:](https://www.helloasso.com/associations/georezo-le-portail-geomatique/formulaires/1/widget){: .md-button }
 {: align=middle }
+
+Vous pouvez également nous soutenir directement, ponctuellement ou de façon récurrente :
+
+<a href="https://fr.tipeee.com/geotribu" class="tipeee-project-cart-iframe" data-orientation="grid" data-rewards="1">Soutenez Geotribu sur Tipeee</a>
 
 ### Nettoyage et historique
 
