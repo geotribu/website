@@ -105,7 +105,7 @@ Fin 2021, nous attaquions l'homogénéisation et l'assainissement des contenus a
 
 On a d'ores et déjà quelques annonces à faire :
 
-- le site changera d'adresse d'ici le printemps : fin du sous-domaine `static`, le site retourne à la racine `https://geotribu.fr/`. Préparez vos favoris, marque-pages, etc.
+- le site changera d'adresse d'ici le printemps : fin du sous-domaine `static`, le site retourne à la racine `https://geotribu.fr/` ou peut-être sur le sous-domaine `www`. Préparez vos favoris, marque-pages, etc.
 - la section dédiée à la contribution a désormais son propre site web : <https://contribuer.geotribu.fr/>
 - optimiser automatiquement les images hébergées
 
