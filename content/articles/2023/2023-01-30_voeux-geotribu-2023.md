@@ -21,7 +21,15 @@ tags:
 
 ![logo tipi Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.png){: .img-rdp-news-thumb }
 
-On peut aussi voir dans nos contenus et dans leur audience comme un miroir des tendances notre géo-époque, où les outils de saisie terrain, les vues immersives et les tableaux de bord (_dashboard_) occupent les esprits.
+Bienvenue sur le traditionnel, mais non moins irrégulier (du moins à Geotribu), billet de bilan de l'année passée et de projection sur l'année qui s'amorce.
+
+On continue notre petit bonhomme de chemin, à coups de veille sur notre écosystème, d'articles plus ou moins légers sur des sujets plus ou moins lourds, mais souvent techniques. On aime à croire que nous documentons ici une partie, certes partiale, émergée et infime, de ce qu'est la géomatique aujourd'hui en regardant vers ce qu'elle sera demain.
+
+On peut ainsi voir dans nos contenus et dans leur audience comme un miroir des tendances notre géo-époque, où les outils de saisie terrain, les vues immersives et les tableaux de bord (_dashboard_) occupent les esprits. Les thématiques sociétales impactent également comme toujours un secteur d'activité au plus proche du réel : environnement, intelligence artificielle... mais aussi la guerre en Europe avec les répliques qu'elle a occasionnées jusque dans les communautés open source (Leaflet) et open data (OpenStreetMap).  
+
+Malgré tout, le flux continu apporte son lot de projets excitants et pour certains attendus depuis longtemps (coucou la Géoplateforme) et on aborde donc 2023 plein d'entrain et d'envie, en route vers nos 15 ans d'existence... Putain. 15 ans.
+
+Merci à toustes de nous suivre et en particulier à celles et ceux qui prennent le temps de saluer le travail bénévole qui est fait ici, à travers les commentaires ou autres moyens. Cela fait toujours plaisir aussi de voir autant de personne venir contribuer ou simplement consulter et partager nos contenus !
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -29,8 +37,6 @@ On peut aussi voir dans nos contenus et dans leur audience comme un miroir des t
 ----
 
 ## Meilleurs voeux pour 2023 de la part de Geotribu !
-
-Merci à toustes de nous suivre et en particulier à toutes les personnes qui prennent le temps de saluer le travail bénévole qui est fait ici, à travers les commentaires ou autres moyens. Ca fait plaisir aussi de voir autant de personne venir contribuer ou simplement consulter et partager nos contenus !
 
 ![Bonne année 2023](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/geotribu_2023.png "Bonne année 2023"){: .img-center loading=lazy }
 
@@ -57,15 +63,21 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 
 ### Audience
 
+![Seuil des 1500 clics par mois dans les résultats Google Search](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_google_search_1500_mois.webp){: .img-left loading=lazy width="30%" }
+
+- même tronquées par les bloqueurs de pubs/trackers (oui on utilise toujours Google Analytics), les statistiques de fréquentation sont en légère hausse +/- constante et vont en stabilisant
+- grosse progression du côté du référencement, notamment grâce à la correction des contenus et à leur mise en conformité avec les standards actuels
+- à noter que les contenus sont de moins en moins repartagés au moment de la diffusion sur les réseaux sociaux. En gros, les gens cliquent sur le lien mais ne repartagent que plus rarement. L'éclatement de la bulle Twitter au profit de Mapstodon a également réduit la portée des mesures.
+
+![Sources des visites Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_sources_acquisitions.webp){: .img-center loading=lazy }
+![Nombre de visiteurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_audience.webp){: loading=lazy width="30%" } ![Pages vues Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_contenus_2.webp){: loading=lazy width=30% }
+{: align=middle }
+
+![Evolution abonnés à la newsletter Geotribu sur 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/newsletter_mailchimp_1_an_apres.webp){: .img-right loading=lazy width="30%" }
+
 - :incoming_envelope: on a passé la barre des 250 inscrits à [la newsletter](/newsletter/signup/) dont 215 à l'envoi hebdomadaire. Pour rappel :
     - si vous vous êtes abonné/e et que vous ne lisez plus, ne cliquez jamais ou n'êtes plus intéressé/e : prenez 5 minutes pour vous [désabonner](https://geotribu.us5.list-manage.com/unsubscribe/post). Sérieusement, ça fera des mails perdus en moins :pray:.
     - si vous pensez que vos collègues pourraient être intéressé/es, faites tourner :wink:
-
-![Seuil des 1500 clics par mois dans les résultats Google Search](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/seo_google_search_1500_mois.webp){: loading=lazy width="30%" } ![Evolution abonnés à la newsletter Geotribu sur 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/newsletter_mailchimp_1_an_apres.webp){: loading=lazy width="30%" } ![Nombre de visiteurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_audience.webp){: loading=lazy width="30%" }
-{: align=middle }
-
-![Sources des visites Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_sources_acquisitions.webp){: loading=lazy width=40% } ![Pages vues Geotribu 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/analytics_2022_contenus_2.webp){: loading=lazy width=40% }
-{: align=middle }
 
 ### Fonctionnalités
 
