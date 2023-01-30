@@ -22,6 +22,8 @@ tags:
 
 ## Introduction
 
+![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-rdp-news-thumb }
+
 L'europe fait évoluer, en 2023, les possibilités d'accès aux différentes données
 des satellites de la constellation Sentinel via la création du "Copernicus
 Data Space Ecosytem".
@@ -94,9 +96,7 @@ diffusées en open data.
 Le premier service d'accès aux données a été le Copernicus [Open Access Hub](<https://scihub.copernicus.eu/>) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, "https://scihub.copernicus.eu/", comme SciHub. Et c'est le nom qui sera utilisé dans le reste de cet article.
 
 !!! warning
-    à noter de ne pas confondre Scihub site copernicus d'accès aux données
-    Sentinel avec sci-hub le fameux site pirate d'accès aux publications
-    scientifiques.
+    Ne pas confondre Scihub site copernicus d'accès aux données Sentinel avec sci-hub le fameux site pirate d'accès aux publications scientifiques.
 
 Le site Scihub offre principalement deux services : recherche de données et téléchargement de données.
 Ces fonctionnalités sont disponibles soit graphiquement via un site internet
@@ -105,10 +105,10 @@ L'accès aux données est gratuit pour toute personne mais il existe toutefois u
 limitation de débit et du nombre de téléchargement en parallèle possible par utilisateur.
 La communauté d'utilisateur a développé différents outils open-source permettant
 de faciliter l'utilisation des ces API dans votre langage de programmation
-préféré, par exemple en python l'outil [SentinelSat](https://sentinelsat.readthedocs.io/en/stable/)
+préféré, par exemple en python l'outil [SentinelSat](https://sentinelsat.readthedocs.io/en/stable/).
 
 !!! note
-    le code du portail scihub est lui même opensource via le projet **sentineldatahub**. Liens pour la [documentation](https://sentineldatahub.github.io/DataHubSystem/index.html) et le [github](https://github.com/SentinelDataHub/DataHubSystem)
+    Le code du portail scihub est lui même opensource via le projet **sentineldatahub**. Liens pour la [documentation](https://sentineldatahub.github.io/DataHubSystem/index.html) et le [github](https://github.com/SentinelDataHub/DataHubSystem)
 
 Afin de faciliter la diffusion large des données Sentinel, différents portails
 nationaux (appelés miroirs) sont également venus compléter l'offre de diffusion
@@ -119,15 +119,19 @@ En France il existe actuellement deux portails nationaux d'accès aux données S
 
 #### PEPS
 
+![logo PEPS](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/peps.png "Logo PEPS"){: .img-rdp-news-thumb }
+
 [PEPS](https://peps.cnes.fr/rocket/#/home) (Plateforme d’Exploitation des Produits Sentinels) est un portail développé
 et maintenu par le CNES qui offre la recherche et le téléchargement des données
 Sentinel-1 et Sentinel-2. Par rapport à l'offre de base Scihub, PEPS permet un
 accès un peu plus rapide aux données en France (meilleur débit) mais aussi des
 post-traitements de données supplémentaires comme l'extraction de bande ou
 l'orthorectification des données SAR Sentinel-1 sur la géométrie "grille" de
-diffusion des données Sentinel-2 via [S1-tiling](https://gitlab.orfeo-toolbox.org/s1-tiling/s1tiling)
+diffusion des données Sentinel-2 via [S1-tiling](https://gitlab.orfeo-toolbox.org/s1-tiling/s1tiling).
 
 #### THEIA
+
+![logo Theia](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/theia.jpg "Logo Theia"){: .img-rdp-news-thumb }
 
 [THEIA](https://theia.cnes.fr/atdistrib/rocket/#/home) est une composante de l'infrastructure de recherche [Data-Terra](https://www.data-terra.org/) centrée sur l'étude des surfaces continentales.
 Elle a, en particulier, pour objectif de faciliter l'accès aux données nécessaires pour la recherche et les études pour l'observation de la terre.
@@ -258,7 +262,7 @@ A noter que la mise en place de ce portail s'inscrit dans la stratégie europée
 ## Détails de la nouvelle offre d'accès Sentinel
 
 D'un point de vue communication le nom associé à l'offre de service devrait
-évoluer et être maintenant "Copernicus Data Space Ecosystem" associé à l'url dataspace.copernicus.eu.
+évoluer et être maintenant "Copernicus Data Space Ecosystem" associé à l'url [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 
 La nouvelle offre de service va offir une continuité par rapport à l'ancienne
 et devrait donc conserver les services existants de recherche et téléchargement
