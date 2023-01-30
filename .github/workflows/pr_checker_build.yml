@@ -9,6 +9,9 @@ on:
 # Environment variables
 env:
   BUILD_DIR: build/mkdocs/site
+  LANG: "fr_FR.UTF-8"
+  LC_ALL: "fr_FR.UTF-8"
+  LC_TIME: "fr_FR.UTF-8"
   NETLIFY_SITE_NAME: geotribu-preprod
   NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
 
@@ -82,7 +85,7 @@ jobs:
           python scripts/mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # build
-          mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --verbose --strict
+          mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --strict
 
           # save mkdocs.yml for debug
           cp ${{ env.MKDOCS_CONFIG_FILENAME }} ${{ env.BUILD_DIR }}
