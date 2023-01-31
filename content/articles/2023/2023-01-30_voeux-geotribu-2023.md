@@ -103,7 +103,7 @@ Pour rappel, une grande partie de nos ressources informatiques est fournie par l
 [Faire un don à GeoRezo :fontawesome-solid-hand-holding-heart:](https://www.helloasso.com/associations/georezo-le-portail-geomatique/formulaires/1/widget){: .md-button }
 {: align=middle }
 
-Vous pouvez également [nous soutenir directement, ponctuellement ou de façon récurrente](https://fr.tipeee.com/geotribu/) ou [sur Liberapay](https://liberapay.com/Geotribu/) :
+Vous pouvez également [nous soutenir directement, ponctuellement ou de façon récurrente](https://fr.tipeee.com/geotribu/) ou [sur Liberapay](https://liberapay.com/Geotribu/). L'an passé, principalement grâce à Arnaud, Gabriel, Florian et Julien, nous avons récolté à peine plus que nos frais de fonctionnement :
 
 [![Contreparties Tipeee Geotribu](https://cdn.geotribu.fr/img/internal/sponsoring/tipeee_contreparties.webp){: .img-center .off-glb loading=lazy }](https://fr.tipeee.com/geotribu/)
 
