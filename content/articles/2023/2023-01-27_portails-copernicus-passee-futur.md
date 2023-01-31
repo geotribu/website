@@ -156,13 +156,13 @@ Le premier contrat d'exploitation de ce nouveau service est d'une durée de six 
 
 Le consortium qui a été retenu est consituté d'industriels participant aux DIAS Mundi et Creodias : T-Systems, CloudFerro, Sinergise, VITO,  DLR, ACRI-ST et RHEA
 
-* T-System : fournisseur de service et infra cloud
-* CloudFerro : exploitation de l'infra T-System pour y déployer et mettre en place une solution de stockage et accès aux données Sentinel
-* Sinergise : développement d'une offre de service sur l'accès aux données Sentinel (API de téléchargement, visualisation etc..) et d'un portail de visualisation accès aux données.
-* VITO : développement d'une offre de service/accès basé sur OpenEo.
-* DLR : expertise archivage, traitement de données satellites (SAR / Sentinel 1 en particuluer)
-* ACRI-ST : expertise exploitation et traitement de données satellites Sentinel (Sentinel 2 et 3)
-* RHEA
+* [T-System](https://www.t-systems.com/de/en) : fournisseur de service et infra cloud
+* [CloudFerro](https://cloudferro.com/en/) : exploitation de l'infra T-System pour y déployer et mettre en place une solution de stockage et accès aux données Sentinel
+* [Sinergise](https://www.sinergise.com/) : développement d'une offre de service sur l'accès aux données Sentinel (API de téléchargement, visualisation etc..) et d'un portail de visualisation accès aux données.
+* [VITO](https://vito.be/en) : développement d'une offre de service/accès basé sur OpenEo.
+* [DLR](https://www.dlr.de/EN/Home/home_node.html) : expertise archivage, traitement de données satellites (SAR / Sentinel 1 en particuluer)
+* [ACRI-ST](https://www.acri-st.fr/) : expertise exploitation et traitement de données satellites Sentinel (Sentinel 2 et 3)
+* [RHEA](https://www.rheagroup.com/)
 
 A noter que la mise en place de ce portail s'inscrit dans la stratégie européennes concernant [destination earth](https://digital-strategy.ec.europa.eu/en/policies/destination-earth) un projet européens sur la création de "#Digitial Twins"
 
