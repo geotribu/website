@@ -803,6 +803,8 @@ redirects:
     articles/2021/2021-06-17_qgis_personnaliser_splash_screen.md: articles/2021/2021-06-11_qgis_personnaliser_splash_screen.md
 
     # migration du guide de contribution - janvier 2023
+    contribuer/archives/howto_rdp.md: https://contribuer.geotribu.fr/rdp/add_news/
+    contribuer/archives/howto_tutorials.md: https://contribuer.geotribu.fr/articles/workflow/
     contribuer/backup.md: https://contribuer.geotribu.fr/internal/backup/
     contribuer/build_site/markdown_engine.md: https://contribuer.geotribu.fr/internal/markdown_engine/
     contribuer/workflow_article.md: https://contribuer.geotribu.fr/articles/workflow/
@@ -833,3 +835,5 @@ redirects:
     contribuer/rdp/publish.md: https://contribuer.geotribu.fr/rdp/publish/
     contribuer/rdp/structure_news.md: https://contribuer.geotribu.fr/rdp/structure_news/
     contribuer/rdp/workflow.md: https://contribuer.geotribu.fr/rdp/workflow/
+    contribuer/contribution_guide.md: https://contribuer.geotribu.fr/
+    toc_nav_ignored/emojis_joypixels_preview.md: https://contribuer.geotribu.fr/toc_nav_ignored/emojis_joypixels_preview/
