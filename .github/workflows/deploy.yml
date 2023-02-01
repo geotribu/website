@@ -8,6 +8,7 @@ on:
       - "content/**"
       - "mkdocs.yml"
       - "requirements*.txt"
+  workflow_dispatch:
 
 env:
   LANG: "fr_FR.UTF-8"
