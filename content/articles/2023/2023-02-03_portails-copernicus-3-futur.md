@@ -24,11 +24,14 @@ tags:
 
 ![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-rdp-news-thumb }
 
-L'europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem".
-Il s'agit d'un nouveau portail d'accès aux données qui prendra la suite du portail actuel [scihub.copernicus.eu](https://scihub.copernicus.eu) (données open-data) ainsi que de certains des actuels DIAS (**D**ata **I**nformation and **A**cces **S**ervice) pour l'offre de service payante associée.
-La première version de ce portail, [dataspace.copernicus.eu](https://dataspace.copernicus.eu/), a été lancée cette semaine et devrait évoluer vers sa version définitive jusqu'en juin 2023.
+L'europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem" : [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
+Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service au cours de trois articles, chacun dédié à une partie pour faciliter la lecture et le "picorage" d'information à ceux qui connaissent déjà le sujet.
 
-Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service.
+* [Accès aux données Copernicus/Sentinel, partie 1 : données Copernicus et Sentinel](2023-02-03_portails-copernicus-1-donnees.md).
+* [Accès aux données Copernicus/Sentinel, partie 2 : portails d'accès saisons 1&2, 'the road so far'](2023-02-03_portails-copernicus-2-passe.md).
+* [Accès aux données Copernicus/Sentinel, partie 3 : évolution de l'accès aux données Copernicus/Sentinel](2023-02-03_portails-copernicus-3-futur.md).
+
+Ce troisième article se propose de détailler les fonctionnalités prévues pour ce nouveau service.
 En particulier, outre le téléchargement des données Sentinel en Open-data, leur accès via différents services "free" de plus haut niveaux est au programme, soit : visualisation des données via des flux, accès facilité aux données anciennes, utilisation des technologies dites "cloud ready"  etc.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }

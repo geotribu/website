@@ -16,7 +16,7 @@ tags:
     - Télédétection
 ---
 
-# Accès aux données Copernicus/Sentinel partie 2 : portails d'accès saisons 1&2, 'the road so far'
+# Accès aux données Copernicus/Sentinel, partie 2 : portails d'accès saisons 1&2, 'the road so far'
 
 :calendar: Date de publication initiale : 27 janvier 2023
 
@@ -24,13 +24,16 @@ tags:
 
 ![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-rdp-news-thumb }
 
-L'europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem".
-Il s'agit d'un nouveau portail d'accès aux données qui prendra la suite du portail actuel [scihub.copernicus.eu](https://scihub.copernicus.eu) (données open-data) ainsi que de certains des actuels DIAS (**D**ata **I**nformation and **A**cces **S**ervice) pour l'offre de service payante associée.
-La première version de ce portail, [dataspace.copernicus.eu](https://dataspace.copernicus.eu/), a été lancée cette semaine et devrait évoluer vers sa version définitive jusqu'en juin 2023.
+L'europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem" : [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
+Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service au cours de trois articles, chacun dédié à une partie pour faciliter la lecture et le "picorage" d'information à ceux qui connaissent déjà le sujet.
 
-Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service.
-En particulier, outre le téléchargement des données Sentinel en Open-data,
-leur accès via différents services "free" de plus haut niveaux est au programme, soit : visualisation des données via des flux, accès facilité aux données anciennes, utilisation des technologies dites "cloud ready"  etc.
+* [Accès aux données Copernicus/Sentinel, partie 1 : données Copernicus et Sentinel](2023-02-03_portails-copernicus-1-donnees.md).
+* [Accès aux données Copernicus/Sentinel, partie 2 : portails d'accès saisons 1&2, 'the road so far'](2023-02-03_portails-copernicus-2-passe.md).
+* [Accès aux données Copernicus/Sentinel, partie 3 : évolution de l'accès aux données Copernicus/Sentinel](2023-02-03_portails-copernicus-3-futur.md).
+
+Ce nouveau portail doit prendre la suite du portail actuel [scihub.copernicus.eu](https://scihub.copernicus.eu) d'accès aux données open-data Sentinel ainsi que de certains des actuels DIAS (**D**ata **I**nformation and **A**cces **S**ervice) pour l'offre de service payante associée.
+Dans ce deuxième article nous revenons donc sur l'historique des différents portails d'accès aux données Sentinels et des fonctionnalités qu'ils ont offertes.
+Pour un rappel sur les données Sentinel voir le [premier article](2023-02-03_portails-copernicus-1-donnees.md) et pour les personnes intéressés par le nouveau portail aller directement au [troisième article] (2023-02-03_portails-copernicus-3-futur.md).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -40,6 +43,8 @@ leur accès via différents services "free" de plus haut niveaux est au programm
 L'Europe a accompagné le lancement et la mise en production des différents satellites Sentinel par la mise en place de services d'accès aux données diffusées en open data.
 
 Le premier service d'accès aux données a été le Copernicus [Open Access Hub](<https://scihub.copernicus.eu/>) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, "https://scihub.copernicus.eu/", comme SciHub. Et c'est le nom qui sera utilisé dans le reste de cet article.
+
+![Portail scihub illustration](copernicus_data/scihub_copernicus_access_hub_1.jpg "Portail scihub example page - Crédits : ESA"){: .img-center loading=lazy }
 
 !!! warning
     Ne pas confondre Scihub site copernicus d'accès aux données Sentinel avec sci-hub le fameux site pirate d'accès aux publications scientifiques.
