@@ -6,7 +6,7 @@ social:
     link: "https://github.com/geotribu/"
     name: "L'organisation Github de Geotribu"
   - icon: "fontawesome/brands/mastodon"
-    link: https://mapstodon.space/web/@geotribu
+    link: https://mapstodon.space/@geotribu
     name: "Geotribu sur Mapstodon"
   - icon: "fontawesome/brands/twitter"
     link: "https://twitter.com/geotribu"

@@ -8,6 +8,12 @@ on:
       - "content/**"
       - "mkdocs.yml"
       - "requirements*.txt"
+  workflow_dispatch:
+
+env:
+  LANG: "fr_FR.UTF-8"
+  LC_ALL: "fr_FR.UTF-8"
+  LC_TIME: "fr_FR.UTF-8"
 
 jobs:
   deploy:
