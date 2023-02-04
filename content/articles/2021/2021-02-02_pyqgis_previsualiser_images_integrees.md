@@ -253,7 +253,7 @@ Nous voici avec notre joli fichier que l'on peut [convertir en HTML par exemple]
 
 Pour les plus curieux, j'ai stocké le script complet et avec quelques optimisations dans un Gist dont le lien est également en bas de page. Enfin, tout ça m'a aussi permis d'utiliser les icônes de QGIS pour illustrer les parties de ce tutoriel.
 
-[Afficher le rendu final :fontawesome-regular-eye:](/toc_nav_ignored/qgis_resources_preview_table/){: .md-button }
+[Afficher le rendu final :fontawesome-regular-eye:](https://geotribu.github.io/pyqgis-icons-cheatsheet/){: .md-button }
 [Consulter le script finalisé :fontawesome-brands-github-alt:](https://gist.github.com/Guts/47448dd1c112f5afe28adedd047caf61#file-qrc_preview_in_md-py){: .md-button }
 {: align=middle }
 
