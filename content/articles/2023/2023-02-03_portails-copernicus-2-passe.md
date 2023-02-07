@@ -16,7 +16,7 @@ tags:
     - Télédétection
 ---
 
-# Accès aux données Copernicus/Sentinel, partie 2 : portails d'accès saisons 1&2, 'the road so far'
+# Accès aux données Copernicus, partie 2 : portails d'accès 'the road so far'
 
 :calendar: Date de publication initiale : 27 janvier 2023
 
@@ -27,13 +27,15 @@ tags:
 L'europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem" : [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service au cours de trois articles, chacun dédié à une partie pour faciliter la lecture et le "picorage" d'information à ceux qui connaissent déjà le sujet.
 
-* [Accès aux données Copernicus/Sentinel, partie 1 : données Copernicus et Sentinel](2023-02-03_portails-copernicus-1-donnees.md).
-* [Accès aux données Copernicus/Sentinel, partie 2 : portails d'accès saisons 1&2, 'the road so far'](2023-02-03_portails-copernicus-2-passe.md).
-* [Accès aux données Copernicus/Sentinel, partie 3 : évolution de l'accès aux données Copernicus/Sentinel](2023-02-03_portails-copernicus-3-futur.md).
-
 Ce nouveau portail doit prendre la suite du portail actuel [scihub.copernicus.eu](https://scihub.copernicus.eu) d'accès aux données open-data Sentinel ainsi que de certains des actuels DIAS (**D**ata **I**nformation and **A**cces **S**ervice) pour l'offre de service payante associée.
 Dans ce deuxième article nous revenons donc sur l'historique des différents portails d'accès aux données Sentinels et des fonctionnalités qu'ils ont offertes.
-Pour un rappel sur les données Sentinel voir le [premier article](2023-02-03_portails-copernicus-1-donnees.md) et pour les personnes intéressés par le nouveau portail aller directement au [troisième article] (2023-02-03_portails-copernicus-3-futur.md).
+
+Pour un rappel sur les données Sentinel voir le [premier article](2023-02-03_portails-copernicus-1-donnees.md) et pour les personnes intéressés par le nouveau portail aller directement au [troisième article](2023-02-03_portails-copernicus-3-futur.md).
+Série **Accès aux données Copernicus/Sentinel** :
+
+* [Partie 1 : données OCS et Sentinel](2023-02-03_portails-copernicus-1-donnees.md).
+* [Partie 2 : portails d'accès, 'the road so far'](2023-02-03_portails-copernicus-2-passe.md).
+* [Partie 3 : évolution de l'accès aux données Copernicus](2023-02-03_portails-copernicus-3-futur.md).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -41,6 +43,8 @@ Pour un rappel sur les données Sentinel voir le [premier article](2023-02-03_po
 ## Saison 1 : portails open-data européens et nationaux
 
 L'Europe a accompagné le lancement et la mise en production des différents satellites Sentinel par la mise en place de services d'accès aux données diffusées en open data.
+
+### Copernicus Open Access Hub : SciHub
 
 Le premier service d'accès aux données a été le Copernicus [Open Access Hub](<https://scihub.copernicus.eu/>) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, "https://scihub.copernicus.eu/", comme SciHub. Et c'est le nom qui sera utilisé dans le reste de cet article.
 
@@ -53,24 +57,56 @@ Le site Scihub offre principalement deux services : recherche de données et té
 Ces fonctionnalités sont disponibles soit graphiquement via un site internet soit via des [API](https://scihub.copernicus.eu/userguide/APIsOverview).
 Ces dernières sont adaptées des API REST de type [OpenSearch](https://www.opensearch.org/) ou [OData,(Open Data Protocol)](https://www.odata.org/).
 L'accès aux données est gratuit pour toute personne mais il existe toutefois une limitation de débit et du nombre de téléchargement en parallèle possible par utilisateur.
-La communauté d'utilisateur a développé différents outils open-source permettant de faciliter l'utilisation des ces API dans votre langage de programmation préféré, par exemple en python l'outil [SentinelSat](https://sentinelsat.readthedocs.io/en/stable/).
+
+```bash
+wget --no-check-certificate --user={USERNAME} --password={PASSWORD}  "https://scihub.copernicus.eu/dhus/search?q=footprint:'Intersects(POLYGON((3.0 47.4, 3.1 47.4,3.1 47.5,3.0 47.5,3.0 47.4)))' AND producttype:S2MSI2A cloudcoverpercentage:[0 TO 50] AND beginposition:[2023-01-01T00:00:00.000Z TO 2023-02-14T00:00:00.000Z]"
+```
 
 !!! note
     Le code du portail scihub est lui même opensource via le projet **sentineldatahub**. Liens pour la [documentation](https://sentineldatahub.github.io/DataHubSystem/index.html) et le [github](https://github.com/SentinelDataHub/DataHubSystem)
 
+La communauté d'utilisateur a développé différents outils open-source permettant de faciliter l'utilisation des ces API dans votre langage de programmation préféré.
+
+Ici un exemple d'utilistion en python de l'outil [SentinelSat](https://sentinelsat.readthedocs.io/en/stable/), pour télécharger des données Sentinel-2 du début d'années vers Clermont.
+
+``` py
+# connect to the API
+from sentinelsat import SentinelAPI
+from datetime import date
+
+api = SentinelAPI('user', 'password', 'https://apihub.copernicus.eu/apihub')
+
+# recherche par polygone, date et type de données
+# qq part à Clermont
+footprint = "POLYGON((3.0 47.4, 3.1 47.4, 3.1 47.5, 3.0 47.5, 3.0 47.4))"
+products = api.query(
+    footprint,
+    # entre janvier et mi fevrier 2023
+    date=('20230101', date(2023, 2, 14)),
+    # données sentinel 2
+    platformname='Sentinel-2',
+    # de niveau L2A (sentinel 2, sensor MSI niveau 2A)
+    producttype='S2MSI2A',
+    # avec un maximum de 50% de couverture nuageuse
+    cloudcoverpercentage=(0, 50))
+
+# download all results from the search
+api.download_all(products)
+```
+
 Afin de faciliter la diffusion large des données Sentinel, différents portails nationaux (appelés miroirs) sont également venus compléter l'offre de diffusion et accès aux données.
-On peut citer par exemple [le portail autrichien](https://data.sentinel.zamg.ac.at/dhus/#/home), [le portail australien](https://www.copernicus.gov.au/data-access) et bien sur [PEPS un des portails français](https://peps.cnes.fr/rocket/#/home).
+On peut citer par exemple [le portail autrichien](https://data.sentinel.zamg.ac.at/dhus/#/home), [le portail australien](https://www.copernicus.gov.au/data-access) et bien sur [PEPS un des portails français](https://peps.cnes.fr/rocket/#/home). Chacun facilitant l'accès aux données couvrant son territoire géographique.
+
+### Portails français PEPS et THEIA
 
 En France il existe actuellement deux portails nationaux d'accès aux données Sentinel : [PEPS](https://peps.cnes.fr/rocket/#/home) et [THEIA](https://theia.cnes.fr/atdistrib/rocket/#/home).
-
-### PEPS
 
 ![logo PEPS](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/peps.png "Logo PEPS"){: .img-rdp-news-thumb }
 
 [PEPS](https://peps.cnes.fr/rocket/#/home) (Plateforme d’Exploitation des Produits Sentinels) est un portail développé et maintenu par le CNES qui offre la recherche et le téléchargement des données Sentinel-1 et Sentinel-2.
 Par rapport à l'offre de base Scihub, PEPS permet un accès un peu plus rapide aux données en France (meilleur débit) mais aussi des post-traitements de données supplémentaires comme l'extraction de bande ou l'orthorectification des données SAR Sentinel-1 sur la géométrie "grille" de diffusion des données Sentinel-2 via [S1-tiling](https://gitlab.orfeo-toolbox.org/s1-tiling/s1tiling).
 
-### THEIA
+![Portail PEPS CNES](copernicus_data/PEPS_CNES_captrue_site.png "Portail PEPS CNES - Crédits : PEPS"){: .img-center loading=lazy }
 
 ![logo Theia](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/theia.jpg "Logo Theia"){: .img-rdp-news-thumb }
 
@@ -83,14 +119,23 @@ Mais par contre il propose des données Sentinel-2 avec une meilleure calibratio
 Ces dernières sont pratiques pour avoir des images avec moins de nuages et diminuer le volume de données à traiter.
 En plus des données Sentinel, THEIA donne aussi accès à des produits dérivés comme la carte d'occupation des sol [OSO](https://www.theia-land.fr/en/ceslist/land-cover-sec/) ou une carte de couverture 'neige' et des images SPOT et Landsat.
 
+![Portail THEIA land](copernicus_data/theia_land_page.jpg "Portail THEIA Land - Crédits : THEIA"){: .img-center loading=lazy }
+
 Certaines infrastructures géographiques régionales proposent également un accès local aux données Copernicus : [mviewer geobretagne](https://geobretagne.fr/pub/dreal_b/mviewer/?config=../apps/teledetection/config.xml)
 
+!!! note
+    Les portails PEPS et THEIA utilisent l'outil [RESTO](https://github.com/jjrom/resto) donc le code est aussi disponible sur github
+
 ## Saison 2 : here comme the dragons, GAFAM et réponse européene
+
+### Google Earth Engine et Open Data AWS
 
 Assez rapidement après la mise à disposition des données Sentinel-2 en open-data Amazon et Google ont aussi récupéré ces donnés afin de les intégrer dans leurs plateformes respectives.
 Pour Google cela s'est fait via leur mise à disposition dans Google Earth Engine (GEE) qui est accessible de façon gratuite pour les étudiants et chercheurs.
 Et du côté d'Amazon, ces données ont été mises à disposition dans un [répertoire de données open-data](https://registry.opendata.aws/sentinel-2/) hebergé sur les services Amazon (bucket S3), cela facilitant entre autre leur exploitation dans l'offre de service Amazon.
 Il faut noter que les données Landsat diffusées en open-data avaient déjà ouvert la voie pour ces modes de diffusion de données satellites par les GAFAM.
+
+### DIAS : Data and Information Access Service
 
 En 2018, un peu en réponse aux GAFAM, l'Europe a lancé un appel à candidature pour la mise en place de plateformes "cloud" proposant un accès simplifié et efficace aux données Sentinel afin d'aider aux développements de nouveaux services.
 Quatre DIAS (Data and Information Access Service) ont alors été retenus pour une période de quatre ans.
@@ -116,6 +161,10 @@ Les quatre consortiums choisis pour les DIAS étaient :
 
 A ces quatres DIAS s'est ajouté un cinquième, [WEKEO](https://www.wekeo.eu/), qui est plus dédié sur la communauté météo/océanique.
 Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://gitlab.com/idgeo_public/etude-dias).
+
+<https://github.com/kr-stn/awesome-sentinel>
+
+## Un exemple d'utilisation : le monitoring PAC
 
 Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre, leur utilisation par les différents organismes de contrôles et paiements associés à la PAC (Politique Agricole Commune) pour la mise en place d'un "monitoring CAP".
 En effet l'Europe a souhaité faire évoluer les contrôles terrain ponctuels associés aux versemment des aides PAC vers un ["monitoring"](https://publications.jrc.ec.europa.eu/repository/handle/JRC112913) exhaustif spatiallement et réalisé de manière semi-automatique par l'exploitation des données Sentinel-1 et 2.

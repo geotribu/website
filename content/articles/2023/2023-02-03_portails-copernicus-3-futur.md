@@ -16,7 +16,7 @@ tags:
     - Télédétection
 ---
 
-# Evolution de l'accès aux données Copernicus/Sentinel
+# Accès aux données Copernicus, partie 3 : évolution de l'accès aux données Copernicus
 
 :calendar: Date de publication initiale : 27 janvier 2023
 
@@ -27,12 +27,14 @@ tags:
 L'europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem" : [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service au cours de trois articles, chacun dédié à une partie pour faciliter la lecture et le "picorage" d'information à ceux qui connaissent déjà le sujet.
 
-* [Accès aux données Copernicus/Sentinel, partie 1 : données Copernicus et Sentinel](2023-02-03_portails-copernicus-1-donnees.md).
-* [Accès aux données Copernicus/Sentinel, partie 2 : portails d'accès saisons 1&2, 'the road so far'](2023-02-03_portails-copernicus-2-passe.md).
-* [Accès aux données Copernicus/Sentinel, partie 3 : évolution de l'accès aux données Copernicus/Sentinel](2023-02-03_portails-copernicus-3-futur.md).
-
 Ce troisième article se propose de détailler les fonctionnalités prévues pour ce nouveau service.
 En particulier, outre le téléchargement des données Sentinel en Open-data, leur accès via différents services "free" de plus haut niveaux est au programme, soit : visualisation des données via des flux, accès facilité aux données anciennes, utilisation des technologies dites "cloud ready"  etc.
+
+Série **Accès aux données Copernicus/Sentinel** :
+
+* [Partie 1 : données OCS et Sentinel](2023-02-03_portails-copernicus-1-donnees.md).
+* [Partie 2 : portails d'accès, 'the road so far'](2023-02-03_portails-copernicus-2-passe.md).
+* [Partie 3 : évolution de l'accès aux données Copernicus](2023-02-03_portails-copernicus-3-futur.md).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
