@@ -1,5 +1,5 @@
 ---
-title: "Évolution de l'accès aux données Copernicus/Sentinel"
+title: "Accès aux données Copernicus, partie 3 : évolution de l'accès aux données Copernicus"
 authors:
     - Nicolas DAVID
 categories:
@@ -43,21 +43,26 @@ Série **Accès aux données Copernicus/Sentinel** :
 
 Après quatre ans de retours d'expérience sur le déploiement et l'exploitation des DIAS, leur contrat arrivant à terme, l'Europe à choisi de faire évoluer son offre de services (gratuite et payante) d'accès aux données Sentinel.
 
-Concrètement l'évolution consiste à selectionner un consortium (décembre 2022) afin d'opérer d'une part une nouvelle version du portail open-data européen Scihub qui offrira des fonctionnalités similaires aux DIAS mais en une version gratuite, avec toutefois une limitation de quota, et d'autre part à offrir une version payante de ce service permettant aux chercheurs, organismes publiques et industriels qui le souhaitent.
-Cette version "non free" permet de disposer de ressources de stockage/calcul et d'accès aux services non limités moyennant finance.
+![Portail dataspace](copernicus_data/dataspace_accueil.png "Portail dataspace - Crédits : ESA"){: .img-center loading=lazy }
 
-Le deploiement de ce nouveau service commencera fin janvier 2023 avec la mise en place de service dans la continuité de ceux offerts par Scihub et s'étoffera progressivement de nouveaux services (plutôt issus des offres DIAS actuelles) jusqu'a juin 2023 où le service devra avoir atteint sa phase opérationnelle complète et date à laquelle l'ancien service Scihub devrait être arrêté.
+Concrètement l'évolution consiste à selectionner un consortium (décembre 2022) afin d'opérer d'une part une nouvelle version du portail open-data européen Scihub qui offrira des fonctionnalités similaires aux DIAS mais en une version gratuite, avec toutefois une limitation de quota, et d'autre part à offrir une version payante de ce service aux chercheurs, organismes publiques et industriels qui le souhaitent.
+Cette version "non free" doit permettre de disposer de ressources de stockage/calcul et d'accès aux services non limités moyennant finance.
+
+Le déploiement de ce nouveau service a commencé depuis fin janvier 2023 avec la mise en place de service dans la continuité de ceux offerts par Scihub et s'étoffera progressivement de nouveaux services (plutôt issus des offres DIAS actuelles) jusqu'a juin 2023 où le service devra avoir atteint sa phase opérationnelle complète et date à laquelle l'ancien service Scihub devrait être arrêté.
+
+![Portail dataspace service](copernicus_data/dataspace_service_description.png "Portail dataspace service- Crédits : ESA"){: .img-center loading=lazy }
+
 Le premier contrat d'exploitation de ce nouveau service est d'une durée de six ans avec une extension possible de dix ans, soit possiblement une continuité de service sur seize ans.
 
 Le consortium qui a été retenu est consituté d'industriels participant aux DIAS Mundi et Creodias : T-Systems, CloudFerro, Sinergise, VITO,  DLR, ACRI-ST et RHEA
 
-* T-System : fournisseur de service et infra cloud
-* CloudFerro : exploitation de l'infra T-System pour y déployer et mettre en place une solution de stockage et accès aux données Sentinel
-* Sinergise : développement d'une offre de service sur l'accès aux données Sentinel (API de téléchargement, visualisation etc..) et d'un portail de visualisation accès aux données.
+* [T-System](https://www.telekom.com/en/media/media-information/archive/copernicus-data-space-1024098) : fournisseur de service et infra cloud
+* [CloudFerro](https://cloudferro.com/en/news/cloudferro-and-its-partners-are-building-copernicus-data-access-service/) : exploitation de l'infra T-System pour y déployer et mettre en place une solution de stockage et accès aux données Sentinel
+* [Sinergise](https://sinergise.com/en/news/copernicus-data-access-service-delivers-first-results) : développement d'une offre de service sur l'accès aux données Sentinel (API de téléchargement, visualisation etc..) et d'un portail de visualisation accès aux données.
 * VITO : développement d'une offre de service/accès basé sur OpenEo.
-* DLR : expertise archivage, traitement de données satellites (SAR / Sentinel 1 en particuluer)
+* [DLR](https://www.dlr.de/content/en/articles/news/2023/01/20230124_new-data-platform-to-host-copernicus-earth-observation-data.html) : expertise archivage, traitement de données satellites (SAR / Sentinel 1 en particuluer)
 * ACRI-ST : expertise exploitation et traitement de données satellites Sentinel (Sentinel 2 et 3)
-* RHEA
+* [RHEA](https://www.rheagroup.com/fr/rhea-accompagne-le-deploiement-du-nouvel-ecosysteme-de-donnees-spatiales-copernicus/) apport et traitement des données des "mission contributives" Copernicus (CCM) ainsi que le contrôle de leur accès. Ces données n'étant pas toutes open-data/open-access.
 
 A noter que la mise en place de ce portail s'inscrit dans la stratégie européennes concernant [destination earth](https://digital-strategy.ec.europa.eu/en/policies/destination-earth) un projet européens sur la création de "#Digitial Twins"
 
@@ -66,7 +71,22 @@ A noter que la mise en place de ce portail s'inscrit dans la stratégie europée
 D'un point de vue communication le nom associé à l'offre de service devrait évoluer et être maintenant "Copernicus Data Space Ecosystem" associé à l'url [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 
 La nouvelle offre de service va offir une continuité par rapport à l'ancienne et devrait donc conserver les services existants de recherche et téléchargement des données Sentinel.
-Mais elle doit aussi proposer plusieurs nouveautés en particulier concernant les interfaces *"machine to machine"*.
+Mais elle doit aussi proposer plusieurs nouveautés en particulier concernant les interfaces *"machine to machine"*. Une première description de ces service est [disponible](https://documentation.dataspace.copernicus.eu/_docs/CDSE-SDE-TSY_Service%20Description%20and%20Evolution.pdf).
+
+![dataspace roadmap](copernicus_data/dataspace_RoadmapSummary.png "dataspace roadmap - Crédits : ESA"){: .img-center loading=lazy }
+
+### Service de visualisation et accès interactif
+
+Une première nouveauté de service devrait être l'arrivée de la mise à disposition, via les outils de l'entreprise Sinergise, de flux de visualisation de données respectant les normes OCG WMS, WMTS (tuile raster).
+Cela sera accompagné d'un portail de visualisation/récupération des données basée sur l'offre [EOBrowser](https://apps.sentinel-hub.com/eo-browser/) de Sinergise.
+
+Une illustration de ce visualisateur pour des données Sentinel-2 récente en fausse couleur infrarouges sur Clermont-Ferrand :
+![dataspace browser clermont](copernicus_data/dataspace_browser_clermont_ir.png "dataspace browser clermont - Crédits : IGN"){: .img-center loading=lazy }
+
+De plus une mise à disposition de service [JupyterLab](https://jupyter.org/) est prévue pour faciliter l'accès aux données de façon intéractive dans des environnements de codes (plutôt basés python a priori).
+On pense ici plutôt à un équivalent google colab et à ce que les DIAS offrent déjà comme service d'exploration de données.
+
+![creodias jupyterhub](copernicus_data/creodias_jupyterlab.jpg "creodias jupyterhub- Crédits : ESA"){: .img-center loading=lazy }
 
 ### Arrivé de STAC et COG
 
@@ -74,12 +94,6 @@ Une première évolution prévue est une diversification des modes d'accès et t
 Aujoud'hui l'accès aux données Sentinel se fait par granules (S1) ou dalles (S2) réprésentant des zones géographiques de plusieurs centaines de kilomètres ([tuiles de type MGRS](https://labo.obs-mip.fr/multitemp/the-sentinel-2-tiles-how-they-work/) de 110k0*110km pour Sentinel-2) dans le format de l'ESA (JPEG 2000).
 Le nouveau "dataspace" copernicus offrira en plus un accès aux données selon les protocoles et format "cloud ready" [STAC](https://stacspec.org/en) (catalogue de données) et [COG (cloud optimised geotiff)](https://www.cogeo.org/) et permettra d'accéder seulement à la partie des données souhaitée, que cela soit au niveau des bandes spectrales ou de l'emprises géographiques.
 Cela sera probablement effectué via un accès à un bucket S3 comme l'offre actuelle d'Amazon.
-
-### Service de visualisation et accès interactif
-
-Une première nouveauté de service devrait être l'arrivée de la mise à disposition, via les outils de l'entreprise Sinergise, de flux de visualisation de données respectant les normes OCG WMS, WMTS (tuile raster).
-Cela sera accompagné à la fois par un portail de visualisation/récupération des données basée sur l'offre [EOBrowser](https://apps.sentinel-hub.com/eo-browser/) de Sinergise (aka geoportail) et par la mise à disposition de service [JupyterLab](https://jupyter.org/) pour l'accès aux données de façon intéractive dans des environnements de codes (plutôt basés python a priori).
-On pense ici plutôt à un équivalent google colab et à ce que les DIAS offrent déjà comme service d'exploration de données.
 
 ### Offre de données Sentinel
 

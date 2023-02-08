@@ -58,8 +58,17 @@ Ces fonctionnalités sont disponibles soit graphiquement via un site internet so
 Ces dernières sont adaptées des API REST de type [OpenSearch](https://www.opensearch.org/) ou [OData,(Open Data Protocol)](https://www.odata.org/).
 L'accès aux données est gratuit pour toute personne mais il existe toutefois une limitation de débit et du nombre de téléchargement en parallèle possible par utilisateur.
 
+Conrètement un appel à l'API OpenSearch pour chercher les images Sentinel-2 disponible aux alentours de Clermont-Ferrand depuis le début de l'année ressemble alors à :
+
 ```bash
-wget --no-check-certificate --user={USERNAME} --password={PASSWORD}  "https://scihub.copernicus.eu/dhus/search?q=footprint:'Intersects(POLYGON((3.0 47.4, 3.1 47.4,3.1 47.5,3.0 47.5,3.0 47.4)))' AND producttype:S2MSI2A cloudcoverpercentage:[0 TO 50] AND beginposition:[2023-01-01T00:00:00.000Z TO 2023-02-14T00:00:00.000Z]"
+URL="https://scihub.copernicus.eu/dhus/search?q="
+BBOX="footprint:'Intersects(POLYGON((3.0 47.4, 3.1 47.4,3.1 47.5,3.0 47.5,3.0 47.4)))'"
+DATES="beginposition:[2023-01-01T00:00:00.000Z TO 2023-02-14T00:00:00.000Z]"
+IMG_TYPE="producttype:S2MSI2A AND cloudcoverpercentage:[0 TO 50]"
+
+QUERY="${URL}${BBOX} AND ${DATES} AND {IMG_TYPE}"
+
+wget --no-check-certificate --user={USERNAME} --password={PASSWORD} ${QUERY}
 ```
 
 !!! note
@@ -135,6 +144,8 @@ Pour Google cela s'est fait via leur mise à disposition dans Google Earth Engin
 Et du côté d'Amazon, ces données ont été mises à disposition dans un [répertoire de données open-data](https://registry.opendata.aws/sentinel-2/) hebergé sur les services Amazon (bucket S3), cela facilitant entre autre leur exploitation dans l'offre de service Amazon.
 Il faut noter que les données Landsat diffusées en open-data avaient déjà ouvert la voie pour ces modes de diffusion de données satellites par les GAFAM.
 
+![Exemple open data AWS](copernicus_data/aws-odr-s2-1024x702.png "Exemple open data AWS - Crédits: Elements84"){: .img-center loading=lazy }
+
 ### DIAS : Data and Information Access Service
 
 En 2018, un peu en réponse aux GAFAM, l'Europe a lancé un appel à candidature pour la mise en place de plateformes "cloud" proposant un accès simplifié et efficace aux données Sentinel afin d'aider aux développements de nouveaux services.
@@ -152,6 +163,8 @@ Pour détailler, un peu plus, on peut considérer un DIAS comme étant composé 
 * Production et **offre d'API d'accès aux données** pour se connecter aux services et accéder aux données. Cela comprend aussi les fonctionnalités de gestion utilisateur centralisé et de facturation des services.
 * **une offre de service et applications tierces** sur les données Sentinel du catalogue. Services produits par le consortium (défaut du DIAS) ou par un tier sur une "place de marché" et via paiement/abonnement au service
 
+![Creodias components](copernicus_data/creodias_components.jpg "Creodias components - Crédits : CREODIAS"){: .img-center loading=lazy }
+
 Les quatre consortiums choisis pour les DIAS étaient :
 
 * [Creodias](https://creodias.eu/) : Consortium avec Creotech Instrument (Lead, gestion projet), CloudFerro (cloud + données Sentinel), Sinergise (accès données) ainsi que WIZIPISI et Geomatys (traitement de données).
@@ -159,13 +172,27 @@ Les quatre consortiums choisis pour les DIAS étaient :
 * [Onda](https://www.onda-dias.eu/cms/) : Serco (Lead) OVH (cloud infra), GAEL Sytem (data access solution), Sinergise (web spatial data applications /API)
 * [Sobloo](https://sobloo.eu/index.html) : Orange Business Services (cloud), Airbus (data provider)  Capgemini. Lead par Airbus, Capgemini apporte ses logiciels de traitement des données et Orange fournit sa solution cloud grand public Flexible Engine
 
+![Icones DIAS](copernicus_data/DIAS_0.jpg "Icones DIAS - Crédits : JRC"){: .img-center loading=lazy }
+
 A ces quatres DIAS s'est ajouté un cinquième, [WEKEO](https://www.wekeo.eu/), qui est plus dédié sur la communauté météo/océanique.
 Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://gitlab.com/idgeo_public/etude-dias).
-
-<https://github.com/kr-stn/awesome-sentinel>
 
 ## Un exemple d'utilisation : le monitoring PAC
 
 Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre, leur utilisation par les différents organismes de contrôles et paiements associés à la PAC (Politique Agricole Commune) pour la mise en place d'un "monitoring CAP".
 En effet l'Europe a souhaité faire évoluer les contrôles terrain ponctuels associés aux versemment des aides PAC vers un ["monitoring"](https://publications.jrc.ec.europa.eu/repository/handle/JRC112913) exhaustif spatiallement et réalisé de manière semi-automatique par l'exploitation des données Sentinel-1 et 2.
 Ces dernières devant permettre entre autre de vérifier la présence ou non d'activité agricoles (présence de culture annuelle, détection de fauche de prairie etc..) sur une parcelle donnée.
+
+Pour cela il peut être en particulier intéressant de calculer et extraire des profils temporels optique ou radar sur chacune des parcelles agricoles à "monitorer".  Pour les détails voir aussi les différentes présentations du projet [Sen4CAP](http://esa-sen4cap.org/)
+
+![Profil temporel S2](copernicus_data/sen4cap_example_profil_s2_b.png "Profil temporel S2] - Crédits : SEN4CAP"){: .img-center loading=lazy }
+
+Le JRC diffuse une documentation possible d'une architecture permettant de calculer ces profils et autres opérations utiles au monitoring sur une infrastructure de l'un des DIAS. Voir [DIAS for CAP Checks by Monitoring](https://jrc-cbm.readthedocs.io/en/latest/dias4cbm_intro.html)
+
+![JRC CBM DIAS](copernicus_data/cbm_dias_software.png "JRC CBM DIAS - Crédits : JRC"){: .img-center loading=lazy }
+
+## Quelques liens supplémentaires
+
+Pour avoir une liste plus exhaustive des différents portails et des outils d'accès associés vous pouvez vous reporter par exemple à la page github : [awesome-sentinel](https://github.com/kr-stn/awesome-sentinel)
+
+Et si vous vous demandez si cela est vraiment bien raisonnable de devoir avoir 42 outils différents de téléchargement de données selon les portails d'accès utilisés alors vous serez surement intéresser par l'outils [EODAG](https://eodag.readthedocs.io/en/stable/) développé en open-source par la société C.S Group
