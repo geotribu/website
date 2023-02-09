@@ -44,13 +44,13 @@ Série **Accès aux données Copernicus/Sentinel** :
 Il est responsable d'une part de la production de différentes couches de données géographiques et d'autre part de la mise en service et du suivi opérationnel d'une constellation de satellites d'observation de la terre appelée Sentinel.
 
 Concernant la production de données géographiques issues de Copernicus on peut notamment citer [les produits d'occupation du sol](https://land.copernicus.eu) comme [Corinne Land Cover](https://land.copernicus.eu/pan-european/corine-land-cover), existant depuis 1990 et [Urban Atlas](https://land.copernicus.eu/local/urban-atlas) qui sont produits par photointerprétation manuelle.
-Ci-dessous un exemple de ces deux données sur une zone de Clermont-Ferrand :
+Ci-dessous un exemple de ces deux données sur une zone de Clermont-Ferrand, la surface minimale des polygone pour Corinne Land Cover est de 25 hectares et entre 0.25 et 1 hectare pour Urban Atlas :
 
 ![Orthophotographie RVB sur Clermont-Ferrand](copernicus_data/clermont_ferrand_ortho_a.jpg "Orthophotographie RVB sur Clermont-Ferrand - Crédits : IGN"){: .img-center loading=lazy }
 ![Corinne land Cover sur Clermont-Ferrand](copernicus_data/clermont_ferrand_CLC18_a.jpg "Données Corinne Land Cover 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
 ![Urban Atlas sur Clermont-Ferrand](copernicus_data/clermont_ferrand_UA18_a.jpg "Données Urban Atlas 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
 
-A cela s'ajoute les couches HRL, [High Resolution Layers](https://land.copernicus.eu/pan-european/high-resolution-layers), produites de façon semi-automatique et se focalisant chacune sur une des thématiques suivantes: zones imperméables, forêts, prairies et les surfaces d'eaux/zones humides, culture.
+A cela s'ajoute les couches HRL, [High Resolution Layers](https://land.copernicus.eu/pan-european/high-resolution-layers), produites de façon semi-automatique, de résolution 10m, et se focalisant chacune sur une des thématiques suivantes: zones imperméables, forêts, prairies et les surfaces d'eaux/zones humides, culture.
 Ci-desssous les exemples pour les couches *imperviousness* et *tree cover density* sur la même zone que précédement :
 
 ![Couche HRL imperviousness sur Clermont-Ferrand](copernicus_data/clermont_ferrand_HRL18_impervious_a.jpg "Données Copernicus HRL imperviousness 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
@@ -88,19 +88,19 @@ Les données sont disponibles dans plusieurs [niveaux de traitements](https://se
 
 * **Niveau L1B** : granules mises en forme radiométriquement dans la géométrie d’acquisition capteur (non orthorectifiées). Les informations radiométriques sont de type radiance TOA ([Top Of Atmosphère](https://www.un-spider.org/node/10958)) donc non corrigées des effets comme le voile atmosphérique (aspect bleuté des images)
 * **Niveau L1C** : données mises en forme radiométriquement sous forme de tuiles orthorectifées. Même radiométrie TOA que le niveau L1B seule la géométrie des données change. La résolution spatiale des différentes bandes est 10m, 20m, 60m.
-* **Niveau L2A** : données en radiométrie BOA (Bottom Of Atmosphère) sous forme de tuiles orthorectifiées et obtenues à partir des données L1C. En plus des données radiométriques cette étape ajoute le plus souvent des images supplémentaires contenant des masques pour définirles pixels valides : masques de nuages et ombres (avec différents types possibles), masque d’occupation du sol (détection de neige, eau), pixels saturés et pixels non compris dans l’emprise d’acquisition.
-* **Niveau L3A** : Synthèse temporelle d’acquisition L2A sans présence denuages. Il s’agit d’interpolations temporelles entre plusieurs images L2Aavec présence éventuelle de nuages. Le plus généralement il y a uneimage par mois.
+* **Niveau L2A** : données en radiométrie BOA (Bottom Of Atmosphère) sous forme de tuiles orthorectifiées et obtenues à partir des données L1C. En plus des données radiométriques cette étape ajoute le plus souvent des images supplémentaires contenant des masques pour définir les pixels valides : masques de nuages et ombres (avec différents types possibles), masque d’occupation du sol (détection de neige, eau), pixels saturés et pixels non compris dans l’emprise d’acquisition.
+* **Niveau L3A** : Synthèse temporelle d’acquisition L2A sans présence denuages. Il s’agit d’interpolations temporelles entre plusieurs images L2A avec présence éventuelle de nuages. Le plus généralement il y a une image par mois. Par exemple produites avec [WASP](https://labo.obs-mip.fr/multitemp/theias-sentinel-2-l3a-monthly-cloud-free-syntheses/)
 * **Niveau L4A** : Indices dérivés des données L2A ou L3A comme une occupation du sol au pixel, comme [OSO](https://www.theia-land.fr/ceslist/ces-occupation-des-sols/) ou bien une image d’indice [NDVI](https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/) (rapport entre les bandes rouges/infrarouges) ou indices LAI (Leaf Area Index) dérivés des différentes bandes spectrales.
 
 !!! note
     Les tuiles Sentinel suivent le carroyage MGRS, [Military Grid Reference System](https://en.wikipedia.org/wiki/Military_Grid_Reference_System), ce qui explique que vous pouvez entendre des petits noms comme "T30UXV" pour une tuiles sur le Calvados par les personnes faisant de la télédétection sur des données Sentinel.
 
-La fréquence élévée de revisite des données Sentinel-2 permet de suivre l'évolution temporelle d'un paysage. Ci dessous une image en composition colorée basée sur ces informations temporelle.
+La fréquence élévée de revisite des données Sentinel-2 permet de suivre l'évolution temporelle d'un paysage. Ci dessous une image en composition colorée basée sur ces informations temporelles.
 
 ![Composition colorée temporelle NDVI Sentinel 2](copernicus_data/composition_ndvi_3dates_nov_jan_avr.png "Composition colorée temporelle NDVI Sentinel 2 - Crédits : IGN"){: .img-center loading=lazy }
 
 Cette image est obtenue en calculant un indice de présence de végétation (NDVI) à trois dates différentes de l'années et en les composant en une image RVB de telle sorte que les canaux bleu, vert et rouge correspondant respectivement aux dates de novembre 2018, janvier 2019 et avril 2019.
-On peut alors représenter le cycle phénologique de la végétation et distinguer différente espèces de plantes dans les parcelles agricoles. On distingue en violet léger les forêts de feuillus, dont l’indice varie selon les saisons, en blancs les conifères dont la valeur reste la même, en noir les zones sans végétalisation…
+On peut alors représenter le cycle phénologique de la végétation et distinguer différente espèces de plantes dans les parcelles agricoles. On observe en violet léger les forêts de feuillus, dont l’indice varie selon les saisons, en blancs les conifères dont la valeur reste la même, en noir les zones sans végétalisation…
 
 ### Données radar Sentinel 1
 
@@ -110,7 +110,7 @@ Le radar présente un grand intérêt pour le suivi de culture et n’est pas so
 !!! note
     Pour en savoir plus sur les données SAR vous pouvez vous référer notamment au livre [The SAR handbook](https://ntrs.nasa.gov/api/citations/20190002563/downloads/20190002563.pdf) en open access
 
-La résolution des détails observables sur une image radar est annoncée à 20 mètres. A noter que les images SAR sont affectées par un bruit multiplicatif appelé chatoiement. Le plus courant pour traiter ce bruit est d'appliquer un filtre de convolution moyen sur l'image.
+La résolution des détails observables sur une image Sentinel-1 est annoncée à 20 mètres. A noter que les images SAR sont affectées par un bruit multiplicatif appelé chatoiement. Le plus courant pour traiter ce bruit est d'appliquer un filtre de convolution moyen sur l'image.
 On peut appliquer au données SAR Sentinel-1 des niveaux de traitements similaires aux données optiques Sentinel-2 même si de façon générale elles sont
 disponibles seulement à des niveaux assez bruts et donc possèdent moins de niveaux de traitement disponibles
 

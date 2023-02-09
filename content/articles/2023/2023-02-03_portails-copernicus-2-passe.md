@@ -74,7 +74,7 @@ wget --no-check-certificate --user={USERNAME} --password={PASSWORD} ${QUERY}
 !!! note
     Le code du portail scihub est lui même opensource via le projet **sentineldatahub**. Liens pour la [documentation](https://sentineldatahub.github.io/DataHubSystem/index.html) et le [github](https://github.com/SentinelDataHub/DataHubSystem)
 
-La communauté d'utilisateur a développé différents outils open-source permettant de faciliter l'utilisation des ces API dans votre langage de programmation préféré.
+La communauté d'utilisateur a développé différents outils open-source permettant de faciliter l'utilisation de ces API dans votre langage de programmation préféré.
 
 Ici un exemple d'utilistion en python de l'outil [SentinelSat](https://sentinelsat.readthedocs.io/en/stable/), pour télécharger des données Sentinel-2 du début d'années vers Clermont.
 
@@ -152,7 +152,7 @@ En 2018, un peu en réponse aux GAFAM, l'Europe a lancé un appel à candidature
 Quatre DIAS (Data and Information Access Service) ont alors été retenus pour une période de quatre ans.
 
 Par rapport aux plateformes Scihub et PEPS/THEIA l'objectif des DIAS était de fournir des services payants permettant aux entreprises et acteurs publiques de développer plus facilement des applications et services utilisant les données Sentinel.
-Le but était par exemple d'éviter qu'un organisme ait à télécharger et stocker l'intégralité des données Sentinel-2 afin de lancer un calcul automatique de carte d'occupation des sols ou autres produit dérivé.
+Le but était par exemple d'éviter qu'un organisme ait à télécharger et stocker l'intégralité des données Sentinel-2 afin de lancer un calcul automatique de carte d'occupation des sols ou autre produit dérivé.
 Le volume des données Sentinel pour un an d'acquisition sur un pays en Europe étant de l'ordre d'une dizaine à quelques centaines de To selon la taille du pays, traiter un tel volume nécessite donc, sans DIAS, un temps non négligeable de récupération des données et un coût d'infrastructure de stockage conséquent.
 Les DIAS offrent une alternative en hébergeant ces données et en proposant des ressources de calculs (serveurs clouds) ayant un accès rapide à celles-ci. L'accès aux données Sentinel étant gratuit depuis les plateformes DIAS mais l'accès aux ressources de calcul payant.
 
@@ -180,10 +180,10 @@ Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://
 ## Un exemple d'utilisation : le monitoring PAC
 
 Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre, leur utilisation par les différents organismes de contrôles et paiements associés à la PAC (Politique Agricole Commune) pour la mise en place d'un "monitoring CAP".
-En effet l'Europe a souhaité faire évoluer les contrôles terrain ponctuels associés aux versemment des aides PAC vers un ["monitoring"](https://publications.jrc.ec.europa.eu/repository/handle/JRC112913) exhaustif spatiallement et réalisé de manière semi-automatique par l'exploitation des données Sentinel-1 et 2.
+En effet l'Europe a souhaité faire évoluer les contrôles terrain ponctuels associés aux versemment des aides PAC vers un ["monitoring"](https://publications.jrc.ec.europa.eu/repository/handle/JRC112913), exhaustif spatiallement, et réalisé de manière semi-automatique via l'exploitation des données Sentinel-1 et 2.
 Ces dernières devant permettre entre autre de vérifier la présence ou non d'activité agricoles (présence de culture annuelle, détection de fauche de prairie etc..) sur une parcelle donnée.
 
-Pour cela il peut être en particulier intéressant de calculer et extraire des profils temporels optique ou radar sur chacune des parcelles agricoles à "monitorer".  Pour les détails voir aussi les différentes présentations du projet [Sen4CAP](http://esa-sen4cap.org/)
+Pour cela il peut être en particulier intéressant de calculer et extraire des profils temporels optiques ou radar sur chacune des parcelles agricoles à "monitorer".  Pour les détails techniques voir par exemple les différentes présentations du projet [Sen4CAP](http://esa-sen4cap.org/)
 
 ![Profil temporel S2](copernicus_data/sen4cap_example_profil_s2_b.png "Profil temporel S2] - Crédits : SEN4CAP"){: .img-center loading=lazy }
 

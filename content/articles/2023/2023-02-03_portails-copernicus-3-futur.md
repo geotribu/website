@@ -59,18 +59,18 @@ Le consortium qui a été retenu est consituté d'industriels participant aux DI
 * [T-System](https://www.telekom.com/en/media/media-information/archive/copernicus-data-space-1024098) : fournisseur de service et infra cloud
 * [CloudFerro](https://cloudferro.com/en/news/cloudferro-and-its-partners-are-building-copernicus-data-access-service/) : exploitation de l'infra T-System pour y déployer et mettre en place une solution de stockage et accès aux données Sentinel
 * [Sinergise](https://sinergise.com/en/news/copernicus-data-access-service-delivers-first-results) : développement d'une offre de service sur l'accès aux données Sentinel (API de téléchargement, visualisation etc..) et d'un portail de visualisation accès aux données.
-* VITO : développement d'une offre de service/accès basé sur OpenEo.
+* [VITO](https://remotesensing.vito.be/new-copernicus-data-access-service-kicked) : développement d'une offre de service/accès basé sur OpenEo.
 * [DLR](https://www.dlr.de/content/en/articles/news/2023/01/20230124_new-data-platform-to-host-copernicus-earth-observation-data.html) : expertise archivage, traitement de données satellites (SAR / Sentinel 1 en particuluer)
-* ACRI-ST : expertise exploitation et traitement de données satellites Sentinel (Sentinel 2 et 3)
+* [ACRI-ST](https://www.acri-st.fr/fr/portfolio) : expertise exploitation et traitement de données satellites Sentinel (Sentinel 2 et 3)
 * [RHEA](https://www.rheagroup.com/fr/rhea-accompagne-le-deploiement-du-nouvel-ecosysteme-de-donnees-spatiales-copernicus/) apport et traitement des données des "mission contributives" Copernicus (CCM) ainsi que le contrôle de leur accès. Ces données n'étant pas toutes open-data/open-access.
 
 A noter que la mise en place de ce portail s'inscrit dans la stratégie européennes concernant [destination earth](https://digital-strategy.ec.europa.eu/en/policies/destination-earth) un projet européens sur la création de "#Digitial Twins"
 
 ## Détails de la nouvelle offre d'accès Sentinel
 
-D'un point de vue communication le nom associé à l'offre de service devrait évoluer et être maintenant "Copernicus Data Space Ecosystem" associé à l'url [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
+D'un point de vue communication le nom associé à l'offre de service européenne a donc évoluée et est devenue "Copernicus Data Space Ecosystem" associé à l'url [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 
-La nouvelle offre de service va offir une continuité par rapport à l'ancienne et devrait donc conserver les services existants de recherche et téléchargement des données Sentinel.
+La nouvelle offre de service va offir une continuité par rapport à l'ancienne et devrait conserver les services existants de recherche et téléchargement des données Sentinel.
 Mais elle doit aussi proposer plusieurs nouveautés en particulier concernant les interfaces *"machine to machine"*. Une première description de ces service est [disponible](https://documentation.dataspace.copernicus.eu/_docs/CDSE-SDE-TSY_Service%20Description%20and%20Evolution.pdf).
 
 ![dataspace roadmap](copernicus_data/dataspace_RoadmapSummary.png "dataspace roadmap - Crédits : ESA"){: .img-center loading=lazy }
@@ -90,20 +90,54 @@ On pense ici plutôt à un équivalent google colab et à ce que les DIAS offren
 
 ### Arrivé de STAC et COG
 
+![logo COG](copernicus_data/COG_logo.png "Logo COG"){: .img-rdp-news-thumb }
 Une première évolution prévue est une diversification des modes d'accès et téléchargement à ces données.
 Aujoud'hui l'accès aux données Sentinel se fait par granules (S1) ou dalles (S2) réprésentant des zones géographiques de plusieurs centaines de kilomètres ([tuiles de type MGRS](https://labo.obs-mip.fr/multitemp/the-sentinel-2-tiles-how-they-work/) de 110k0*110km pour Sentinel-2) dans le format de l'ESA (JPEG 2000).
 Le nouveau "dataspace" copernicus offrira en plus un accès aux données selon les protocoles et format "cloud ready" [STAC](https://stacspec.org/en) (catalogue de données) et [COG (cloud optimised geotiff)](https://www.cogeo.org/) et permettra d'accéder seulement à la partie des données souhaitée, que cela soit au niveau des bandes spectrales ou de l'emprises géographiques.
-Cela sera probablement effectué via un accès à un bucket S3 comme l'offre actuelle d'Amazon.
+
+Cela sera probablement effectué via un accès à un bucket S3 comme l'offre actuelle d'Amazon et une utilisation de ces services dans un script python devrait ressembler à :
+
+``` py
+# recherche de données sur catalogues STAC
+import satsearch
+import rasterio
+
+bbox = [35.48, -3.24, 35.58, -3.14] # (min lon, min lat, max lon, max lat)
+dates = '2020-07-01/2020-08-15'
+
+URL='https://earth-search.aws.element84.com/v0' # changer par url officielle dataspace
+results = satsearch.Search.search(
+    url=URL,
+    collections=['sentinel-s2-l2a-cogs'], # note collection='sentinel-s2-l2a-cogs' fictive
+    datetime=dates,
+    bbox=bbox,  
+    sort=['<datetime'])
+
+# lecture des données COG directement à partir de l'url
+# eventuellement lecture d'une sous partie de l'image
+window = rasterio.windows.Window(1024, 1024, 1280, 2560)
+band = 1
+
+with rasterio.open(fp) as src:
+    subset = src.read(band, window=window)
+
+```
 
 ### Offre de données Sentinel
 
 Le nouveau portail devrait offrir un accès à l'ensemble des données Sentinel :
 Sentinel-1 SLC et GRD  L2 OCN, Sentinel-2 L1C and L2A, Sentinel-3 and Sentinel-5P L1 et L2.
 À cela, doit s'ajouter un accès aux "Copernicus Contributing Missions data".
-Un exemple de ce type de données est la couverture satellites de l'Europe pour 2018 ayant servie à la production des données Corinne Land Cover millésime 2018.
+Un exemple de ce type de données est la [couverture satellite de l'Europe pour 2018](https://land.copernicus.eu/imagery-in-situ/european-image-mosaics/very-high-resolution/very-high-resolution-image-mosaic-2018-true-colour-2m) ayant servie à la production des données Corinne Land Cover millésime 2018.
+
+![VHR_IMAGES_2018 COPERNICUS](copernicus_data/VHR_IMAGES_2018_COPERNICUS.png "VHR_IMAGES_2018 COPERNICUS - Crédits : ESA"){: .img-center loading=lazy }
+
+!!! note
+    Par contre les données d'apprentissage utilisées pour la production semi-automatique des couches HRL ne semblent pas au programme. Donc on ne peut pas encore considérer ces couches comme étant très reproductible et suivant les principes F.A.I.R.
 
 Et enfin, de la même façon que le portail PEPS en france, un ensemble de fonctionnalités de post-traitements à la demande devrait être disponible.
-En particulier cela devrait couvrir la possibilité d'effectuer des corrections atmosphérique avec le processeur MAJA et la production de produits dérivés Sentinel-1 comme la cohérence entre 2 dates (produit utilisé par exemple dans les algorithmes pour le suivi des cultures)
+Entre autre cela devrait couvrir la possibilité d'effectuer des corrections atmosphérique avec le processeur MAJA et la production de produits dérivés Sentinel-1 comme la cohérence entre 2 dates (produit utilisé par exemple dans les algorithmes pour le suivi des cultures).
+Ces offres de traitements de données devraient aussi suivre les recommandations pour les produits CARD4L, [CEOS Analysis Ready Data for Land](https://ceos.org/ard/)
 
 À noter, qu'a priori, il ne devrait plus y avoir de notions de donnés online/offline dépendant de la date d'acquisition des données.
 Les données offline étant les données datant de plus de X mois et donc l'accès se fait en différé avec une demande de désarchivage puis un téléchargement.
