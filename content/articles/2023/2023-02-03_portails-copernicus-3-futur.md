@@ -146,11 +146,87 @@ Toutes les données produites depuis 2014 devrait donc être accesibles via un a
 ### Accès aux données via WCS et OpenEO
 
 En plus de l'accès "simple" aux données le nouveaux service devrait aussi offrir deux nouveaux types d'accès permettant des post-traitement à la volé des données.
+
+![illustration WCS](copernicus_data/200px-OGC_WCS,_trim_and_slice_operations.png "illustration WCS - Crédits Wikipedia"){align=right }
 D'une part, on devrait rerouver une offre d'API selon la norme [WCS](http://opengeospatial.github.io/e-learning/wcs/text/basic-main.html) de
-l'OGC (via Sinergise) qui permet par exemple des calculs simples entre bandes raster (de type calculatrice raster, cela permet par exemple de calculer à la volé une couche NDVI (indice de végétation) à partir des bandes spectrales rouge et infrarouge Sentinel-2.  
+l'OGC (via Sinergise) qui permet d'affiner la récupération des données Sentinels au strict nécessaire.
+Cela est utile notamment pour des calculs simples, à la volée, entre bandes raster (de type calculatrice raster), un exemple possible étant le calcul d'une couche NDVI (indice de végétation) à partir des bandes spectrales rouge et infrarouge Sentinel-2 et donc de ne récupérer que deux bandes spectrales en WCS sur les treizes bandes possibles.  
+
+![logo OPENEO](copernicus_data/openeo_logo.png "Logo OPENEO"){: .img-rdp-news-thumb }
 D'autre part, un service [OpenEO](https://openeo.org/) devrait aussi être déployer (via VITO).
 L'API OpenEO propose des fonctionnalités de type Google Earth Engine (GEE) ou datacube mais avec une API normalisée et pouvant être proposée par différents backend/fournisseurs.
+
+![schema openeo](copernicus_data/openeo_schema.png "schema openeo - Crédits : OPENEO"){: .img-center loading=lazy }
+
 Le but étant à la fois de proposer une alternative à GEE mais aussi d'assurer un certain niveau d'intéropérabilité entre fournisseurs de services/données spatiales.
+
+Pour illustrer voici un exemple d'utilisaiton avec un client javascript (pour changer des exemples python) tirer de la [documentation officielle](https://openeo.org/documentation/1.0/javascript/#full-example)
+
+``` js
+// Make the client available to the Node.js script
+// Also include the Formula library for simple math expressions
+const { OpenEO, Formula } = require('@openeo/js-client');
+
+async function example() {
+  // Connect to the back-end
+  var con = await OpenEO.connect("https://earthengine.openeo.org");
+  // Authenticate ourselves via Basic authentication
+  await con.authenticateBasic("group11", "test123");
+  // Create a process builder
+  var builder = await con.buildProcess();
+  // We are now loading the Sentinel-1 data over the Area of Interest
+  var datacube = builder.load_collection(
+    "COPERNICUS/S1_GRD",
+    {west: 16.06, south: 48.06, east: 16.65, north: 48.35},
+    ["2017-03-01", "2017-06-01"],
+    ["VV"]
+  );
+
+  // Since we are creating a monthly RGB composite, we need three separated time ranges (March aas R, April as G and May as G).
+  // Therefore, we split the datacube into three datacubes using a temporal filter.
+  var march = builder.filter_temporal(datacube, ["2017-03-01", "2017-04-01"]);
+  var april = builder.filter_temporal(datacube, ["2017-04-01", "2017-05-01"]);
+  var may = builder.filter_temporal(datacube, ["2017-05-01", "2017-06-01"]);
+
+  // We aggregate the timeseries values into a single image by reducing the time dimension using a mean reducer.
+  var mean = function(data) {
+    return this.mean(data);
+  };
+  march = builder.reduce_dimension(march, mean, "t");
+  april = builder.reduce_dimension(april, mean, "t");
+  may = builder.reduce_dimension(may, mean, "t");
+
+  // Now the three images will be combined into the temporal composite.
+  // We rename the bands to R, G and B as otherwise the bands are overlapping and the merge process would fail.
+  march = builder.rename_labels(march, "bands", ["R"], ["VV"]);
+  april = builder.rename_labels(april, "bands", ["G"], ["VV"]);
+  may = builder.rename_labels(may, "bands", ["B"], ["VV"]);
+
+  datacube = builder.merge_cubes(march, april);
+  datacube = builder.merge_cubes(datacube, may);
+
+  // To make the values match the RGB values from 0 to 255 in a PNG file, we need to scale them.
+  // We can simplify expressing math formulas using the openEO Formula parser.
+  datacube = builder.apply(datacube, new Formula("linear_scale_range(x, -20, -5, 0, 255)"));
+
+  // Finally, save the result as PNG file.
+  // In the options we specify which band should be used for "red", "green" and "blue" color.
+  datacube = builder.save_result(datacube, "PNG", {
+    red: "R",
+    green: "G",
+    blue: "B"
+  });
+
+  // Now send the processing instructions to the back-end for (synchronous) execution and save the file as result.png
+  await con.downloadResult(datacube, "result.png");
+}
+
+// Run the example, write errors to the console.
+example().catch(error => console.error(error));
+```
+
+Ce code devant permettre d'arriver à l'image ci-dessous :
+![resultat exemple openeo js](copernicus_data/openeo-getting-started-result-example-7820ee84.jpg "resultat exemple openeo js- Crédits : OPENEO"){: .img-center loading=lazy }
 
 !!! note
     Beaucoup de ces nouveaux services sont en partie issus de travaux
