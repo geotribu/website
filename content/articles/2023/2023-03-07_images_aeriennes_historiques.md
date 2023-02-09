@@ -215,7 +215,7 @@ exiftool -csv=$folder_mission'/csv_exif/list_exif.csv' $folder_mission'/img_jpg'
 
 Maintenant que toutes nos images ont été téléchargées, converties, et que leur localisation a été récupérée, il nous faut supprimer le cadre noir périphérique pour ne garder que la partie photographiée.
 
-Pour ce faire, il est possible d'utiliser `ImageMagick` en définissant le nombre de pixels à enlever sur chacun des côtés : 
+Pour ce faire, il est possible d'utiliser `ImageMagick` en définissant le nombre de pixels à enlever sur chacun des côtés :
 
 ```bash
 # DECOUPER UNE IMAGE
