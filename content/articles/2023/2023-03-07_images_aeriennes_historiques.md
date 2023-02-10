@@ -288,15 +288,16 @@ Les étapes à suivre :
 
 1. Créer un projet
 2. Sélectionner les images et le fichier GCP
-3. Choisir les Options de traitement. Mes recommandations à adapter en fonction des images :
+3. Choisir les Options de traitement. 
+4. Valider les spécifications
+5. Lancer le traitement
+6. Surveiller les logs et patienter le temps du traitement.
+
+Mes Options de traitement à adapter en fonction des images :
 
 - `min-num-features: 30000` : Nombre de points de correspondances entre les images,
 - `orthophoto-resolution: 50` : Resolution minimale de l'image en sortie,
 - `skip-3dmodel: true` : Ne pas générer le modèle 3D complet.
-
-4. Valider les spécifications
-5. Lancer le traitement
-6. Surveiller les logs et patienter le temps du traitement.
 
 ![Tableau de bord](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_tableau_bord.png){: .img-center loading=lazy }
 
@@ -313,7 +314,7 @@ Pour les fans de la ligne de commande sur Windows, vous pouvez utiliser le packa
 3. Dans le répertoire du projet, créer un nouveau répertoire `images` qui contiendra les images et le fichier GCP
 4. Adapter et lancer la commande :
 
-```bash
+```powershell
 run --project-path C:\XXXXXX\ODM YY_PROJET_YY --min-num-features 30000 --skip-3dmodel --feature-quality high --orthophoto-resolution 50 --gcp "C:\XXXX\ODM\YY_PROJET_YY\images\gcp_list.txt"
 ```
 
