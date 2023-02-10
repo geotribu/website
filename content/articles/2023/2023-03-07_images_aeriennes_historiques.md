@@ -253,7 +253,7 @@ Nos images sont maintenant prêtes, il nous reste une étape manuelle mais néan
 
 Dans notre cas comme il s'agit d'images aériennes anciennes, il n'est pas possible de faire le lien direct entre le terrain et l'image. On va donc s'appuyer un référentiel image existant pour positionner des GCP dans l'espace.
 
-Pour ce faire, je recommande d'utiliser WebODM qui est pleinement compatible avec les [spécifications d'OpenDroneMap](https://docs.opendronemap.org/gcp/). Quand vous lancez WebODM sur votre navigateur, vous avez l'onglet `Interface GCP` sur la droite. 
+Pour ce faire, je recommande d'utiliser WebODM qui est pleinement compatible avec les [spécifications d'OpenDroneMap](https://docs.opendronemap.org/gcp/). Quand vous lancez WebODM sur votre navigateur, vous avez l'onglet `Interface GCP` sur la droite.
 
 ![Image découpée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_gcp.png){: .img-center loading=lazy }
 
@@ -263,9 +263,9 @@ Pour ce faire, je recommande d'utiliser WebODM qui est pleinement compatible ave
 4. positionner un GCP sur votre image ancienne et sur le fond image de droite en utilisant le symbole `+`
 5. répéter l'opération pour toutes vos images historiques
 
-Plusieurs recommandations sur la saisie des GCP : 
+Plusieurs recommandations sur la saisie des GCP :
 
-- un GCP sur l'image historique est déclaré valide lorsqu'il est associé à l'image de référence et qu'il apparait en vert 
+- un GCP sur l'image historique est déclaré valide lorsqu'il est associé à l'image de référence et qu'il apparait en vert
 - une fois un GCP saisie l'image de référence (à droite), il faut essayer de l'associer à plusieurs images historiques
 - il faut que le point de référence soit associé à au moins 3 images historiques
 - positionner au moins 5 GCP par images bien répartis
@@ -282,17 +282,17 @@ Pour la partie reconstitution d'images et en fonction de vos envies, il est poss
 
 WebODM a l'avantage de proposer une interface qui guide relativement bien l'utilisateur et qui permet de visualiser les données générées une fois le processus de recontruction terminé.
 
-Les étapes à suivre : 
+Les étapes à suivre :
 
 1. Créer un projet
 2. Sélectionner les images et le fichier GCP
 3. Choisir les Options de traitement. Mes recommandations à adapter en fonction des images :
 
- - `min-num-features: 30000` : Nombre de points de correspondances entre les images,
- - `orthophoto-resolution: 50` : Resolution minimale de l'image en sortie,
- - `skip-3dmodel: true` : Ne pas générer le modèle 3D complet.
+- `min-num-features: 30000` : Nombre de points de correspondances entre les images,
+- `orthophoto-resolution: 50` : Resolution minimale de l'image en sortie,
+- `skip-3dmodel: true` : Ne pas générer le modèle 3D complet.
 
-4. Valider les spécifications 
+4. Valider les spécifications
 5. Lancer le traitement
 6. Surveiller les logs et patienter le temps du traitement
 
