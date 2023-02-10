@@ -24,7 +24,7 @@ tags:
 
 ![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-rdp-news-thumb }
 
-L'europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem" : [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
+L'Europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem" : [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service au cours de trois articles, chacun dédié à une partie pour faciliter la lecture et le "picorage" d'information à ceux qui connaissent déjà le sujet.
 
 Ce troisième article se propose de détailler les fonctionnalités prévues pour ce nouveau service.
@@ -41,61 +41,61 @@ Série **Accès aux données Copernicus/Sentinel** :
 
 ## Accès aux données Sentinel Teaser Saison 3 : "There can be only one"
 
-Après quatre ans de retours d'expérience sur le déploiement et l'exploitation des DIAS, leur contrat arrivant à terme, l'Europe à choisi de faire évoluer son offre de services (gratuite et payante) d'accès aux données Sentinel.
+Après quatre ans de retours d'expériences sur le déploiement et l'exploitation des DIAS, leur contrat arrivant à terme, l'Europe à choisi de faire évoluer son offre de services (gratuite et payante) d'accès aux données Sentinel.
 
 ![Portail dataspace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_accueil.png "Portail dataspace - Crédits : ESA"){: .img-center loading=lazy }
 
-Concrètement l'évolution consiste à selectionner un consortium (décembre 2022) afin d'opérer d'une part une nouvelle version du portail open-data européen Scihub qui offrira des fonctionnalités similaires aux DIAS mais en une version gratuite, avec toutefois une limitation de quota, et d'autre part à offrir une version payante de ce service aux chercheurs, organismes publiques et industriels qui le souhaitent.
+Concrètement l'évolution consiste à sélectionner un consortium (décembre 2022) afin d'opérer d'une part une nouvelle version du portail open-data européen Scihub qui offrira des fonctionnalités similaires aux DIAS mais en une version gratuite, avec toutefois une limitation de quota, et d'autre part à offrir une version payante de ce service aux chercheurs, organismes publiques et industriels qui le souhaitent.
 Cette version "non free" doit permettre de disposer de ressources de stockage/calcul et d'accès aux services non limités moyennant finance.
 
-Le déploiement de ce nouveau service a commencé depuis fin janvier 2023 avec la mise en place de service dans la continuité de ceux offerts par Scihub et s'étoffera progressivement de nouveaux services (plutôt issus des offres DIAS actuelles) jusqu'a juin 2023 où le service devra avoir atteint sa phase opérationnelle complète et date à laquelle l'ancien service Scihub devrait être arrêté.
+Le déploiement de ce nouveau service a commencé depuis fin janvier 2023 avec la mise en place de service dans la continuité de ceux offerts par Scihub et s'étoffera progressivement de nouveaux services (plutôt issus des offres DIAS actuelles) jusqu'à juin 2023 où le service devra avoir atteint sa phase opérationnelle complète et date à laquelle l'ancien service Scihub devrait être arrêté.
 
 ![Portail dataspace service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_service_description.png "Portail dataspace service- Crédits : ESA"){: .img-center loading=lazy }
 
 Le premier contrat d'exploitation de ce nouveau service est d'une durée de six ans avec une extension possible de dix ans, soit possiblement une continuité de service sur seize ans.
 
-Le consortium qui a été retenu est consituté d'industriels participant aux DIAS Mundi et Creodias : T-Systems, CloudFerro, Sinergise, VITO,  DLR, ACRI-ST et RHEA
+Le consortium qui a été retenu est constitué d'industriels participant aux DIAS Mundi et Creodias : T-Systems, CloudFerro, Sinergise, VITO,  DLR, ACRI-ST et RHEA
 
 * [T-System](https://www.telekom.com/en/media/media-information/archive/copernicus-data-space-1024098) : fournisseur de service et infra cloud
 * [CloudFerro](https://cloudferro.com/en/news/cloudferro-and-its-partners-are-building-copernicus-data-access-service/) : exploitation de l'infra T-System pour y déployer et mettre en place une solution de stockage et accès aux données Sentinel
-* [Sinergise](https://sinergise.com/en/news/copernicus-data-access-service-delivers-first-results) : développement d'une offre de service sur l'accès aux données Sentinel (API de téléchargement, visualisation etc..) et d'un portail de visualisation accès aux données.
+* [Sinergise](https://sinergise.com/en/news/copernicus-data-access-service-delivers-first-results) : développement d'une offre de service sur l'accès aux données Sentinel (API de téléchargement, visualisation etc..) et d'un portail de visualisation et d'accès aux données.
 * [VITO](https://remotesensing.vito.be/new-copernicus-data-access-service-kicked) : développement d'une offre de service/accès basé sur OpenEo.
-* [DLR](https://www.dlr.de/content/en/articles/news/2023/01/20230124_new-data-platform-to-host-copernicus-earth-observation-data.html) : expertise archivage, traitement de données satellites (SAR / Sentinel 1 en particuluer)
+* [DLR](https://www.dlr.de/content/en/articles/news/2023/01/20230124_new-data-platform-to-host-copernicus-earth-observation-data.html) : expertise archivage, traitement de données satellites (SAR / Sentinel 1 en particulier)
 * [ACRI-ST](https://www.acri-st.fr/fr/portfolio) : expertise exploitation et traitement de données satellites Sentinel (Sentinel 2 et 3)
 * [RHEA](https://www.rheagroup.com/fr/rhea-accompagne-le-deploiement-du-nouvel-ecosysteme-de-donnees-spatiales-copernicus/) apport et traitement des données des "mission contributives" Copernicus (CCM) ainsi que le contrôle de leur accès. Ces données n'étant pas toutes open-data/open-access.
 
-A noter que la mise en place de ce portail s'inscrit dans la stratégie européennes concernant [destination earth](https://digital-strategy.ec.europa.eu/en/policies/destination-earth) un projet européens sur la création de "#Digitial Twins"
+A noter que la mise en place de ce portail s'inscrit dans la stratégie européenne concernant [destination earth](https://digital-strategy.ec.europa.eu/en/policies/destination-earth) un projet européen sur la création de "#Digitial Twins"
 
 ## Détails de la nouvelle offre d'accès Sentinel
 
-D'un point de vue communication le nom associé à l'offre de service européenne a donc évoluée et est devenue "Copernicus Data Space Ecosystem" associé à l'url [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
+D'un point de vue communication le nom associé à l'offre de service européenne a donc évolué et est devenu "Copernicus Data Space Ecosystem" associé à l'url [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 
-La nouvelle offre de service va offir une continuité par rapport à l'ancienne et devrait conserver les services existants de recherche et téléchargement des données Sentinel.
-Mais elle doit aussi proposer plusieurs nouveautés en particulier concernant les interfaces *"machine to machine"*. Une première description de ces service est [disponible](https://documentation.dataspace.copernicus.eu/_docs/CDSE-SDE-TSY_Service%20Description%20and%20Evolution.pdf).
+La nouvelle offre de service offrira une continuité par rapport à l'ancienne et devrait conserver les services existants de recherche et téléchargement des données Sentinel.
+Mais elle doit aussi proposer plusieurs nouveautés en particulier concernant les interfaces *"machine to machine"*. Une première description de ces services est [disponible](https://documentation.dataspace.copernicus.eu/_docs/CDSE-SDE-TSY_Service%20Description%20and%20Evolution.pdf).
 
 ![dataspace roadmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_RoadmapSummary.png "dataspace roadmap - Crédits : ESA"){: .img-center loading=lazy }
 
 ### Service de visualisation et accès interactif
 
 Une première nouveauté de service devrait être l'arrivée de la mise à disposition, via les outils de l'entreprise Sinergise, de flux de visualisation de données respectant les normes OCG WMS, WMTS (tuile raster).
-Cela sera accompagné d'un portail de visualisation/récupération des données basée sur l'offre [EOBrowser](https://apps.sentinel-hub.com/eo-browser/) de Sinergise.
+Cela sera accompagné d'un portail de visualisation/récupération des données basé sur l'offre [EOBrowser](https://apps.sentinel-hub.com/eo-browser/) de Sinergise.
 
-Une illustration de ce visualisateur pour des données Sentinel-2 récente en fausse couleur infrarouges sur Clermont-Ferrand :
+Une illustration de ce visualisateur pour des données Sentinel-2 récentes en fausse couleur infrarouge sur Clermont-Ferrand :
 
 ![dataspace browser clermont](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_browser_clermont_ir.png "dataspace browser clermont - Crédits : IGN"){: .img-center loading=lazy }
 
-De plus une mise à disposition de service [JupyterLab](https://jupyter.org/) est prévue pour faciliter l'accès aux données de façon intéractive dans des environnements de codes (plutôt basés python a priori).
+De plus une mise à disposition de service [JupyterLab](https://jupyter.org/) est prévue pour faciliter l'accès aux données de façon interactive dans des environnements de codes (plutôt basés python a priori).
 On pense ici plutôt à un équivalent google colab et à ce que les DIAS offrent déjà comme service d'exploration de données.
 
 ![creodias jupyterhub](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/creodias_jupyterlab.jpg "creodias jupyterhub- Crédits : ESA"){: .img-center loading=lazy }
 
-### Arrivé de STAC et COG
+### Arrivée de STAC et COG
 
 ![logo COG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/COG_logo.png "Logo COG"){: .img-rdp-news-thumb }
 
 Une première évolution prévue est une diversification des modes d'accès et téléchargement à ces données.
-Aujoud'hui l'accès aux données Sentinel se fait par granules (S1) ou dalles (S2) réprésentant des zones géographiques de plusieurs centaines de kilomètres ([tuiles de type MGRS](https://labo.obs-mip.fr/multitemp/the-sentinel-2-tiles-how-they-work/) de 110k0*110km pour Sentinel-2) dans le format de l'ESA (JPEG 2000).
-Le nouveau "dataspace" copernicus offrira en plus un accès aux données selon les protocoles et format "cloud ready" [STAC](https://stacspec.org/en) (catalogue de données) et [COG (cloud optimised geotiff)](https://www.cogeo.org/) et permettra d'accéder seulement à la partie des données souhaitée, que cela soit au niveau des bandes spectrales ou de l'emprises géographiques.
+Aujourd'hui l'accès aux données Sentinel se fait par granules (S1) ou dalles (S2) représentant des zones géographiques de plusieurs centaines de kilomètres ([tuiles de type MGRS](https://labo.obs-mip.fr/multitemp/the-sentinel-2-tiles-how-they-work/) de 110km*110km pour Sentinel-2) dans le format de l'ESA (JPEG 2000).
+Le nouveau "dataspace" Copernicus offrira en plus un accès aux données selon les protocoles et formats "cloud ready" [STAC](https://stacspec.org/en) (catalogue de données) et [COG (cloud optimised geotiff)](https://www.cogeo.org/) et permettra d'accéder seulement à la partie des données souhaitée, que cela soit au niveau des bandes spectrales ou de l'emprise géographiques.
 
 Cela sera probablement effectué via un accès à un bucket S3 comme l'offre actuelle d'Amazon et une utilisation de ces services dans un script python devrait ressembler à :
 
@@ -130,40 +130,40 @@ with rasterio.open(fp) as src:
 Le nouveau portail devrait offrir un accès à l'ensemble des données Sentinel :
 Sentinel-1 SLC et GRD  L2 OCN, Sentinel-2 L1C and L2A, Sentinel-3 and Sentinel-5P L1 et L2.
 À cela, doit s'ajouter un accès aux "Copernicus Contributing Missions data".
-Un exemple de ce type de données est la [couverture satellite de l'Europe pour 2018](https://land.copernicus.eu/imagery-in-situ/european-image-mosaics/very-high-resolution/very-high-resolution-image-mosaic-2018-true-colour-2m) ayant servie à la production des données Corinne Land Cover millésime 2018.
+Un exemple de ce type de données est la [couverture satellite de l'Europe pour 2018](https://land.copernicus.eu/imagery-in-situ/european-image-mosaics/very-high-resolution/very-high-resolution-image-mosaic-2018-true-colour-2m) ayant servi à la production des données Corinne Land Cover millésime 2018.
 
 ![VHR_IMAGES_2018 COPERNICUS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/VHR_IMAGES_2018_COPERNICUS.png "VHR_IMAGES_2018 COPERNICUS - Crédits : ESA"){: .img-center loading=lazy }
 
 !!! note
-    Par contre les données d'apprentissage utilisées pour la production semi-automatique des couches HRL ne semblent pas au programme. Donc on ne peut pas encore considérer ces couches comme étant très reproductible et suivant les principes F.A.I.R.
+    Par contre les données d'apprentissage utilisées pour la production semi-automatique des couches HRL ne semblent pas au programme. Donc on ne peut pas encore considérer ces couches comme étant très reproductibles et suivant les principes F.A.I.R.
 
-Et enfin, de la même façon que le portail PEPS en france, un ensemble de fonctionnalités de post-traitements à la demande devrait être disponible.
-Entre autre cela devrait couvrir la possibilité d'effectuer des corrections atmosphérique avec le processeur MAJA et la production de produits dérivés Sentinel-1 comme la cohérence entre 2 dates (produit utilisé par exemple dans les algorithmes pour le suivi des cultures).
+Et enfin, de la même façon que le portail PEPS en France, un ensemble de fonctionnalités de post-traitements à la demande devrait être disponible.
+Entre autre cela devrait couvrir la possibilité d'effectuer des corrections atmosphériques avec le processeur MAJA et la production de produits dérivés Sentinel-1 comme la cohérence entre 2 dates (produit utilisé par exemple dans les algorithmes pour le suivi des cultures).
 Ces offres de traitements de données devraient aussi suivre les recommandations pour les produits CARD4L, [CEOS Analysis Ready Data for Land](https://ceos.org/ard/)
 
-À noter, qu'a priori, il ne devrait plus y avoir de notions de donnés online/offline dépendant de la date d'acquisition des données.
+À noter, qu'a priori, il ne devrait plus y avoir de notions de données online/offline dépendant de la date d'acquisition des données.
 Les données offline étant les données datant de plus de X mois et donc l'accès se fait en différé avec une demande de désarchivage puis un téléchargement.
-Toutes les données produites depuis 2014 devrait donc être accesibles via un accès rapide, cela pour faciliter les traitements demandant un accès à des données sur un interval de temps long.
+Toutes les données produites depuis 2014 devraient donc être accessibles via un accès rapide, cela pour faciliter les traitements demandant un accès à des données sur un intervalle de temps long.
 
 ### Accès aux données via WCS et OpenEO
 
-En plus de l'accès "simple" aux données le nouveaux service devrait aussi offrir deux nouveaux types d'accès permettant des post-traitement à la volé des données.
+En plus de l'accès "simple" aux données le nouveau service devrait aussi offrir deux nouveaux types d'accès permettant des post-traitements à la volée des données.
 
 ![illustration WCS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/200px-OGC_WCS,_trim_and_slice_operations.png "illustration WCS - Crédits Wikipedia"){align=right }
-D'une part, on devrait rerouver une offre d'API selon la norme [WCS](http://opengeospatial.github.io/e-learning/wcs/text/basic-main.html) de
-l'OGC (via Sinergise) qui permet d'affiner la récupération des données Sentinels au strict nécessaire.
-Cela est utile notamment pour des calculs simples, à la volée, entre bandes raster (de type calculatrice raster), un exemple possible étant le calcul d'une couche NDVI (indice de végétation) à partir des bandes spectrales rouge et infrarouge Sentinel-2 et donc de ne récupérer que deux bandes spectrales en WCS sur les treizes bandes possibles.  
+D'une part, on devrait retrouver une offre d'API selon la norme [WCS](http://opengeospatial.github.io/e-learning/wcs/text/basic-main.html) de
+l'OGC (via Sinergise) qui permet d'affiner la récupération des données Sentinel au strict nécessaire.
+Cela est utile notamment pour des calculs simples, à la volée, entre bandes raster (de type calculatrice raster), un exemple possible étant le calcul d'une couche NDVI (indice de végétation) à partir des bandes spectrales rouge et infrarouge Sentinel-2 et donc de ne récupérer que deux bandes spectrales en WCS sur les treize bandes possibles.  
 
 ![logo OPENEO](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo_logo.png "Logo OPENEO"){: .img-rdp-news-thumb }
 
-D'autre part, un service [OpenEO](https://openeo.org/) devrait aussi être déployer (via VITO).
+D'autre part, un service [OpenEO](https://openeo.org/) devrait aussi être déployé (via VITO).
 L'API OpenEO propose des fonctionnalités de type Google Earth Engine (GEE) ou datacube mais avec une API normalisée et pouvant être proposée par différents backend/fournisseurs.
 
 ![schema openeo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo_schema.png "schema openeo - Crédits : OPENEO"){: .img-center loading=lazy }
 
-Le but étant à la fois de proposer une alternative à GEE mais aussi d'assurer un certain niveau d'intéropérabilité entre fournisseurs de services/données spatiales.
+Le but étant à la fois de proposer une alternative à GEE mais aussi d'assurer un certain niveau d'interopérabilité entre fournisseurs de services/données spatiales.
 
-Pour illustrer voici un exemple d'utilisaiton avec un client javascript (pour changer des exemples python) tirer de la [documentation officielle](https://openeo.org/documentation/1.0/javascript/#full-example)
+Pour illustrer voici un exemple d'utilisation avec un client javascript (pour changer des exemples python) tirer de la [documentation officielle](https://openeo.org/documentation/1.0/javascript/#full-example)
 
 ``` js
 // Make the client available to the Node.js script
