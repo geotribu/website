@@ -59,7 +59,7 @@ Avant de se lancer, il est bon de vous parler du fichier de configuration que vo
 
 !!! info
     Les scripts présentés ci-après ont été testés sur Linux et MacOS.
-    
+
 Voici le fichier `config.env` à adapter :
 
 ```ini
