@@ -58,7 +58,7 @@ Pour que ce changement soit permanent modifier le fichier `.bashrc` en conséque
 
 Les premières étapes sont assez simples, elles sont résumées par les 4 images ci-dessous. Nous allons spécifier à GéoServer que nous allons ajouter une nouvelle donnée
 
-![Configuration](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/configuration.jpg "Configuration"){: .img-center loading=lazy }
+![Configuration](https://cdn.geotribu.fr/img/articles-blog-rdp/serveur/geoserver/configuration.jpg "Configuration"){: .img-center loading=lazy }
 
 ![Données](http://ks356007.kimsufi.com/arno/geotribu/img_site/tutoriaux/geoserver/donnees.jpg "Données"){: .img-center loading=lazy }
 

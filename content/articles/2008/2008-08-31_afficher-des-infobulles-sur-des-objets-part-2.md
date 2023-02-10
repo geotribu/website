@@ -42,7 +42,7 @@ Pour ajouter le script il vous suffit simplement de le déclarer dans le Header 
 
 La classe OpenLayers.Marker.Label hérite de OpenLayers.Marker en lui ajoutant des spécifiés supplémentaires. Le seul paramètre obligatoire est Label. C'est lui qui définit le texte à afficher :
 
-``` javascript
+```javascript
 var ll = new OpenLayers.LonLat(0,10);  
 var myLabel = "![](http://www.photo-libre.fr/mer/100b.jpg)Mer";  
 fcolor="red";  

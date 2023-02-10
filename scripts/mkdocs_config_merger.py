@@ -74,7 +74,7 @@ for cfg_file in configs_to_merge:
 
 
 # write merged final config file
-with output_config_file.open("w") as out_file:
+with output_config_file.open("w", encoding="UTF-8") as out_file:
     yaml.dump(
         config_to_complete,
         out_file,

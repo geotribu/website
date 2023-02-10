@@ -32,15 +32,15 @@ La liste complète des fonctionnalités est disponible sur le [site intenet de M
 
 Tout d'abord la vue cartographique :
 
-![MSCompanion - vue carto](https://cdn.geotribu.fr/img/Blog/MSCompanion/screenshot1.jpg "MSCompanion - vue carto"){: .img-center loading=lazy }
+![MSCompanion - vue carto](https://cdn.geotribu.fr/img/articles-blog-rdp/serveur/MSCompanion/screenshot1.jpg  "MSCompanion - vue carto"){: .img-center loading=lazy }
 
 Ensuite la vue de l'éditeur de Mapfile :
 
-![MSCompanion - éditeur MapFile](https://cdn.geotribu.fr/img/Blog/MSCompanion/screenshot2.jpg "MSCompanion - éditeur MapFile"){: .img-center loading=lazy }
+![MSCompanion - éditeur MapFile](https://cdn.geotribu.fr/img/articles-blog-rdp/serveur/MSCompanion/screenshot2.jpg  "MSCompanion - éditeur MapFile"){: .img-center loading=lazy }
 
 Et enfin l'éditeur de style :
 
-![MSCompanion - éditeur styles](https://cdn.geotribu.fr/img/Blog/MSCompanion/style.jpg "MSCompanion - éditeur styles"){: .img-center loading=lazy }
+![MSCompanion - éditeur styles](https://cdn.geotribu.fr/img/articles-blog-rdp/serveur/MSCompanion/style.jpg   "MSCompanion - éditeur styles"){: .img-center loading=lazy }
 
 Malheureusement pour nos amis linuxiens et moi-même, cet outil n'est disponible que pour Windows. J'ai tout de même essayé de le faire fonctionner avec [Wine](http://www.winehq.org/) mais sans succès. Néanmoins, il nous restera toujours la [coloration syntaxique sous Vim](http://mapserver.org/development/editing/vim.html) ou bien le plugin de création de mapfile de [QGIS](https://www.qgis.org/) pour nous consoler
 
