@@ -8,10 +8,13 @@ categories:
     - tutoriel
 date: 2023-03-07 14:20
 description: "Reconstitution d'images aériennes historiques"
-image: ""
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/remonterletemps_img.png"
 license: beerware
 tags:
+    - IGN
+    - OGR
     - OpenDroneMap
+    - orthophotographies
 ---
 
 # Reconstitution d'images aériennes historiques
