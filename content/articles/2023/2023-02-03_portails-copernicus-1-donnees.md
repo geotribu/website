@@ -135,3 +135,7 @@ Les données SLC sont en particulier utilisées en mode "différentiel" entre de
 ## je veux plus d'images !!
 
 Si tout cela n'a pas encore suffit à satisfaire vos mirettes, ou que vous souhaitez changer votre fond d'écran, je ne peux que vous conseillez d'aller par exemple sur le site [Image of the day Copernicus]( https://www.copernicus.eu/en/media/image-day) pour y trouver d'autres images Sentinel selectionnées en fonction de l'actualités ou de leur esthétisme.
+
+## Auteur {: data-search-exclude }
+
+--8<-- "content/team/ndavid.md"

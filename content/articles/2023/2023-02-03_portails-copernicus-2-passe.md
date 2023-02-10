@@ -196,3 +196,7 @@ Le JRC diffuse une documentation possible d'une architecture permettant de calcu
 Pour avoir une liste plus exhaustive des différents portails et des outils d'accès associés vous pouvez vous reporter par exemple à la page github : [awesome-sentinel](https://github.com/kr-stn/awesome-sentinel)
 
 Et si vous vous demandez si cela est vraiment bien raisonnable de devoir avoir 42 outils différents de téléchargement de données selon les portails d'accès utilisés alors vous serez surement intéresser par l'outils [EODAG](https://eodag.readthedocs.io/en/stable/) développé en open-source par la société C.S Group
+
+## Auteur {: data-search-exclude }
+
+--8<-- "content/team/ndavid.md"

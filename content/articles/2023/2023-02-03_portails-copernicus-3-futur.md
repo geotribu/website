@@ -229,9 +229,13 @@ example().catch(error => console.error(error));
 ```
 
 Ce code devant permettre d'arriver à l'image ci-dessous :
-![resultat exemple openeo js](copernicus_data/openeo-getting-started-result-example-7820ee84.jpg "resultat exemple openeo js- Crédits : OPENEO"){: .img-center loading=lazy }
+![resultat exemple openeo js](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo-getting-started-result-example-7820ee84.jpg "resultat exemple openeo js- Crédits : OPENEO"){: .img-center loading=lazy }
 
 !!! note
     Beaucoup de ces nouveaux services sont en partie issus de travaux
     menés dans différents projets européens lors des dernières années :
     [OPENEO](https://openeo.org/)
+
+## Auteur {: data-search-exclude }
+
+--8<-- "content/team/ndavid.md"
