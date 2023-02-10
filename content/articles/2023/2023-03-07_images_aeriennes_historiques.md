@@ -289,9 +289,11 @@ Les étapes à suivre :
 1. Créer un projet
 2. Sélectionner les images et le fichier GCP
 3. Choisir les Options de traitement. Mes recommandations à adapter en fonction des images :
-  - `min-num-features: 30000` : Nombre de points de correspondances entre les images,
-  - `orthophoto-resolution: 50` : Resolution minimale de l'image en sortie,
-  - `skip-3dmodel: true` : Ne pas générer le modèle 3D complet.
+
+- `min-num-features: 30000` : Nombre de points de correspondances entre les images,
+- `orthophoto-resolution: 50` : Resolution minimale de l'image en sortie,
+- `skip-3dmodel: true` : Ne pas générer le modèle 3D complet.
+
 4. Valider les spécifications
 5. Lancer le traitement
 6. Surveiller les logs et patienter le temps du traitement.
