@@ -1,5 +1,6 @@
 ---
 title: "Reconstitution d'images aériennes historiques"
+subtitle: "Marty, la DeLorean"
 authors:
     - Florian Boret
 categories:
@@ -15,7 +16,7 @@ tags:
 
 # Reconstitution d'images aériennes historiques
 
-:calendar: Date de publication initiale : 13 janvier 2023
+:calendar: Date de publication initiale : 7 mars 2023
 
 ## Prérequis
 
@@ -42,7 +43,7 @@ Voici un schéma récapitulatif de la procédure mise en place.
 
 ```mermaid
 graph TD
-    A[Remonter le temps] -->|Téléchargement| B(Image .jp2)
+    A[Remonter le temps] -->|Télécharger| B(Image .jp2)
     B -->|Convertir| C(Image .jpg)
     A -->|Localiser| C
     C -->|Découper| R(Image crop)
@@ -90,7 +91,7 @@ ENCODAGE='UTF-8'
 
 ![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "icône IGN"){: .img-rdp-news-thumb }
 
-Les images mises à disposition par l'IGN sur le site Remonter le temps peuvent être consultées par année de prise de vue ce qui dans les faits correspond plutôt aux différentes missions réalisées.
+Les images mises à disposition par l'IGN sur le site [Remonter le temps](https://remonterletemps.ign.fr) peuvent être consultées par année de prise de vue ce qui dans les faits correspond plutôt aux différentes missions réalisées.
 
 Pour trouver l'identifiant de la mission, il faut :
 
@@ -150,7 +151,9 @@ L'identifiant des missions correspond à la colonne `kml_layer_id`.
 
 ## Identifier, télécharger et mettre en forme les images d'une mission
 
-On ne peut pas dire que l'IGN nous facilite la tâche sur l'identification et le téléchargement en lot d'images mais on finit toujours par trouver une alternative!
+![icône outils](https://cdn.geotribu.fr/img/logos-icones/divers/outils.png "icône outils"){: .img-rdp-news-thumb }
+
+On ne peut pas dire que l'IGN nous facilite la tâche sur l'identification et le téléchargement en lot d'images mais on finit toujours par trouver une alternative.
 
 ### Identifier les images
 
@@ -164,7 +167,7 @@ curl "https://wxs.ign.fr/$key/dematkml/DEMAT.PVA/$id_mission/t.kml" > $folder_mi
 [Consulter le script complet :fontawesome-regular-file-code:](https://github.com/igeofr/remonterletemps2img/blob/main/2_mission_kml.sh){: .md-button }
 {: align=middle }
 
-Après avoir télécharger nos `X` fichiers `kml`, on va pouvoir les assembler pour recréer la mosaïque des prises de vue au format `shapefile` pour faciliter la visualisation dans QGIS.
+Après avoir télécharger nos `X` fichiers `kml`, on va pouvoir les assembler pour visualiser le tuilage des prises de vue au format `shapefile` afin de faciliter la visualisation dans QGIS.
 
 ![Emprise des images identifiées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/images_emprises.png){: .img-center loading=lazy }
 
@@ -172,7 +175,7 @@ Après avoir télécharger nos `X` fichiers `kml`, on va pouvoir les assembler p
 
 Maintenant que l'on a récupéré l'emprise et la liste de toutes les images de la mission, on va devoir :
 
-1. faire encore quelques opérations d'extraction et de mise en forme qui vont nous servir à filtrer les images qui se trouvent dans une BBOX qui aura été préalablement définie dans le fichier de configuration `config.env`,
+1. faire quelques opérations d'extraction et de mise en forme qui vont nous servir à filtrer les images qui se trouvent dans une BBOX qui aura été préalablement définie dans le fichier de configuration `config.env`,
 2. télécharger les images,
 3. convertir les images en `jp2` vers `jpg` pour pouvoir les exploiter dans OpenDroneMap par la suite.
 
@@ -192,7 +195,7 @@ Maintenant que l'on a récupéré l'emprise et la liste de toutes les images de 
 
 ![icône EXIF](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/exif.png "icône EXIF"){: .img-rdp-news-thumb }
 
-Ensuite à partir des données des fichiers `kml`, on va calculer le centroïde de toutes les images qui se trouvent dans notre BBOX et récupérer les informations sur la date de la prise de vue afin de créer un fichier `.csv`. Toutes ces informations vont nous permettre de compléter les données [EXIF](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format) des images.
+Ensuite à partir de l'emprise des images contenue dans les fichiers `kml`, on va calculer le centroïde de toutes celles qui se trouvent dans notre BBOX et récupérer les informations sur la date de la prise de vue afin de créer un fichier `.csv`. Toutes ces informations vont nous permettre de compléter les données [EXIF](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format) des images.
 
 ```bash
 # PERMET D'EXTRAIRE LE CENTROIDE ET LES INFORMATIONS DE L'IMAGE
@@ -249,11 +252,11 @@ Les spécifications minimums pour couvrir mon territoire : 64Go de Ram et 128Go 
 
 ![icône opendronemap GCP](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/open_drone_map_gcp.png "OpenDroneMap GCP"){: .img-rdp-news-thumb }
 
-Nos images sont maintenant prêtes, il nous reste une étape manuelle mais néanmoins importante le positionnnement des points de calage qui permet ensuite à OpenDroneMap d'ajuster la reconstitution dans l'espace.
+Nos images sont maintenant prêtes, il nous reste une étape manuelle mais néanmoins importante le positionnnement des points de calage qui permettent à OpenDroneMap d'ajuster la reconstitution dans l'espace.
 
 Dans notre cas comme il s'agit d'images aériennes anciennes, il n'est pas possible de faire le lien direct entre le terrain et l'image. On va donc s'appuyer un référentiel image existant pour positionner des GCP dans l'espace.
 
-Pour ce faire, je recommande d'utiliser WebODM qui est pleinement compatible avec les [spécifications d'OpenDroneMap](https://docs.opendronemap.org/gcp/). Quand vous lancez WebODM sur votre navigateur, vous avez l'onglet `Interface GCP` sur la droite.
+Pour ce faire, je recommande d'utiliser WebODM et le plugin intégré `Ground Control Point Interface` qui est pleinement compatible avec les [spécifications d'OpenDroneMap](https://docs.opendronemap.org/gcp/). Quand vous lancez WebODM sur votre navigateur, vous avez l'onglet `Interface GCP` sur la droite.
 
 ![Image découpée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_gcp.png){: .img-center loading=lazy }
 
@@ -266,17 +269,16 @@ Pour ce faire, je recommande d'utiliser WebODM qui est pleinement compatible ave
 Plusieurs recommandations sur la saisie des GCP :
 
 - un GCP sur l'image historique est déclaré valide lorsqu'il est associé à l'image de référence et qu'il apparait en vert
-- une fois un GCP saisie l'image de référence (à droite), il faut essayer de l'associer à plusieurs images historiques
-- il faut que le point de référence soit associé à au moins 3 images historiques
+- une fois un GCP saisie l'image de référence (à droite), il faut essayer de l'associer à plusieurs images historiques (au moins 3)
 - positionner au moins 5 GCP par images bien répartis
 
 <iframe width="100%" height="415" src="https://www.youtube-nocookie.com/embed/5CEiyAn2J2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Une fois la saisie terminée, ce qui peut prendre du temps en fonction du nombre d'images, il vous faut simplement exprter le fichier (en haut à droite) et le renommer `gcp_list.txt`.
+Une fois la saisie terminée, ce qui peut prendre du temps en fonction du nombre d'images, il vous faut exporter le fichier (en haut à droite) et le renommer `gcp_list.txt` ([le nom du fichier est normé](https://docs.opendronemap.org/gcp/)) et le placer dans le répertoire de vos images.
 
 ### La reconstitution avec OpenDroneMap
 
-Pour la partie reconstitution d'images et en fonction de vos envies, il est possible d'utiliser [WebODM](https://github.com/OpenDroneMap/WebODM) ou [ODM en ligne de commande](https://github.com/OpenDroneMap/ODM).
+Pour la partie reconstitution d'image et en fonction de vos envies, il est possible d'utiliser [WebODM](https://github.com/OpenDroneMap/WebODM) ou [ODM en ligne de commande](https://github.com/OpenDroneMap/ODM).
 
 #### Via WebODM
 
@@ -287,24 +289,22 @@ Les étapes à suivre :
 1. Créer un projet
 2. Sélectionner les images et le fichier GCP
 3. Choisir les Options de traitement. Mes recommandations à adapter en fonction des images :
-
-- `min-num-features: 30000` : Nombre de points de correspondances entre les images,
-- `orthophoto-resolution: 50` : Resolution minimale de l'image en sortie,
-- `skip-3dmodel: true` : Ne pas générer le modèle 3D complet.
-
+  - `min-num-features: 30000` : Nombre de points de correspondances entre les images,
+  - `orthophoto-resolution: 50` : Resolution minimale de l'image en sortie,
+  - `skip-3dmodel: true` : Ne pas générer le modèle 3D complet.
 4. Valider les spécifications
 5. Lancer le traitement
-6. Surveiller les logs et patienter le temps du traitement
+6. Surveiller les logs et patienter le temps du traitement.
 
 ![Tableau de bord](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_tableau_bord.png){: .img-center loading=lazy }
 
-A la fin du traitement, vous allez pouvoir visualiser les données et télécharger les différentes ressources
+A la fin du traitement, vous allez pouvoir visualiser les données et télécharger les différentes ressources.
 
 ![Tableau de bord](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_fin.png){: .img-center loading=lazy }
 
 #### Via ODM
 
-Pour les fans de la ligne de commande, vous pouvez passer par ODM en suivant les étapes suivantes :
+Pour les fans de la ligne de commande sur Windows, vous pouvez utiliser le package ODM ([disponible sur Github pour les dernières Release](https://github.com/OpenDroneMap/ODM/releases)) en suivant les étapes suivantes :
 
 1. Créer un répertoire de travail : `C:\XXXXXX\ODM`
 2. Créer un sous répertoire correspondant au projet : `YY_PROJET_YY`
@@ -324,13 +324,15 @@ Aujourd'hui, j'ai pu recréer une petite dizaine d'images aériennes de 1937 à 
 
 A noter qu'il peut persister des décalages par rapport aux images actuelles et pour les réduire, il me faut simplement ajouter des GCP et relancer OpenDroneMap.
 
+Pour vous donner un ordre d'idée, pour générer l'image complète ci-dessous à 60cm de résolution il a fallu 3h de traitement.
+
 ![Tableau de bord](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/ccpl_historique.png){: .img-center loading=lazy }
 
 ----
 
 ## Conclusion
 
-La méthode mise en place nous a permis à moindre coup et de manière autonome de régénérer des images aériennes anciennes en s'appuyant sur le patrimoine de l'IGN disponible sur le site [Remonter le temps](https://remonterletemps.ign.fr). Il y a sans doute des améliorations à faire sur les scripts proposés ici mais en l'état ils répondent à nos besoins internes et vous êtes libre de proposer des améliorations via [Github](https://github.com/igeofr/remonterletemps2img).
+La méthode mise en place nous a permis à moindre coup et de manière autonome de régénérer des images aériennes anciennes en s'appuyant sur le patrimoine de l'IGN disponible sur le site [Remonter le temps](https://remonterletemps.ign.fr). Il y a sans doute des améliorations à faire sur les scripts proposés ici mais vous êtes libre de proposer des améliorations via [Github](https://github.com/igeofr/remonterletemps2img).
 
 ----
 
