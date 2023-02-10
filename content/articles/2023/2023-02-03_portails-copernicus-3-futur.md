@@ -43,14 +43,14 @@ Série **Accès aux données Copernicus/Sentinel** :
 
 Après quatre ans de retours d'expérience sur le déploiement et l'exploitation des DIAS, leur contrat arrivant à terme, l'Europe à choisi de faire évoluer son offre de services (gratuite et payante) d'accès aux données Sentinel.
 
-![Portail dataspace](copernicus_data/dataspace_accueil.png "Portail dataspace - Crédits : ESA"){: .img-center loading=lazy }
+![Portail dataspace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_accueil.png "Portail dataspace - Crédits : ESA"){: .img-center loading=lazy }
 
 Concrètement l'évolution consiste à selectionner un consortium (décembre 2022) afin d'opérer d'une part une nouvelle version du portail open-data européen Scihub qui offrira des fonctionnalités similaires aux DIAS mais en une version gratuite, avec toutefois une limitation de quota, et d'autre part à offrir une version payante de ce service aux chercheurs, organismes publiques et industriels qui le souhaitent.
 Cette version "non free" doit permettre de disposer de ressources de stockage/calcul et d'accès aux services non limités moyennant finance.
 
 Le déploiement de ce nouveau service a commencé depuis fin janvier 2023 avec la mise en place de service dans la continuité de ceux offerts par Scihub et s'étoffera progressivement de nouveaux services (plutôt issus des offres DIAS actuelles) jusqu'a juin 2023 où le service devra avoir atteint sa phase opérationnelle complète et date à laquelle l'ancien service Scihub devrait être arrêté.
 
-![Portail dataspace service](copernicus_data/dataspace_service_description.png "Portail dataspace service- Crédits : ESA"){: .img-center loading=lazy }
+![Portail dataspace service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_service_description.png "Portail dataspace service- Crédits : ESA"){: .img-center loading=lazy }
 
 Le premier contrat d'exploitation de ce nouveau service est d'une durée de six ans avec une extension possible de dix ans, soit possiblement une continuité de service sur seize ans.
 
@@ -73,7 +73,7 @@ D'un point de vue communication le nom associé à l'offre de service européenn
 La nouvelle offre de service va offir une continuité par rapport à l'ancienne et devrait conserver les services existants de recherche et téléchargement des données Sentinel.
 Mais elle doit aussi proposer plusieurs nouveautés en particulier concernant les interfaces *"machine to machine"*. Une première description de ces service est [disponible](https://documentation.dataspace.copernicus.eu/_docs/CDSE-SDE-TSY_Service%20Description%20and%20Evolution.pdf).
 
-![dataspace roadmap](copernicus_data/dataspace_RoadmapSummary.png "dataspace roadmap - Crédits : ESA"){: .img-center loading=lazy }
+![dataspace roadmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_RoadmapSummary.png "dataspace roadmap - Crédits : ESA"){: .img-center loading=lazy }
 
 ### Service de visualisation et accès interactif
 
@@ -81,16 +81,18 @@ Une première nouveauté de service devrait être l'arrivée de la mise à dispo
 Cela sera accompagné d'un portail de visualisation/récupération des données basée sur l'offre [EOBrowser](https://apps.sentinel-hub.com/eo-browser/) de Sinergise.
 
 Une illustration de ce visualisateur pour des données Sentinel-2 récente en fausse couleur infrarouges sur Clermont-Ferrand :
-![dataspace browser clermont](copernicus_data/dataspace_browser_clermont_ir.png "dataspace browser clermont - Crédits : IGN"){: .img-center loading=lazy }
+
+![dataspace browser clermont](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_browser_clermont_ir.png "dataspace browser clermont - Crédits : IGN"){: .img-center loading=lazy }
 
 De plus une mise à disposition de service [JupyterLab](https://jupyter.org/) est prévue pour faciliter l'accès aux données de façon intéractive dans des environnements de codes (plutôt basés python a priori).
 On pense ici plutôt à un équivalent google colab et à ce que les DIAS offrent déjà comme service d'exploration de données.
 
-![creodias jupyterhub](copernicus_data/creodias_jupyterlab.jpg "creodias jupyterhub- Crédits : ESA"){: .img-center loading=lazy }
+![creodias jupyterhub](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/creodias_jupyterlab.jpg "creodias jupyterhub- Crédits : ESA"){: .img-center loading=lazy }
 
 ### Arrivé de STAC et COG
 
-![logo COG](copernicus_data/COG_logo.png "Logo COG"){: .img-rdp-news-thumb }
+![logo COG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/COG_logo.png "Logo COG"){: .img-rdp-news-thumb }
+
 Une première évolution prévue est une diversification des modes d'accès et téléchargement à ces données.
 Aujoud'hui l'accès aux données Sentinel se fait par granules (S1) ou dalles (S2) réprésentant des zones géographiques de plusieurs centaines de kilomètres ([tuiles de type MGRS](https://labo.obs-mip.fr/multitemp/the-sentinel-2-tiles-how-they-work/) de 110k0*110km pour Sentinel-2) dans le format de l'ESA (JPEG 2000).
 Le nouveau "dataspace" copernicus offrira en plus un accès aux données selon les protocoles et format "cloud ready" [STAC](https://stacspec.org/en) (catalogue de données) et [COG (cloud optimised geotiff)](https://www.cogeo.org/) et permettra d'accéder seulement à la partie des données souhaitée, que cela soit au niveau des bandes spectrales ou de l'emprises géographiques.
@@ -130,7 +132,7 @@ Sentinel-1 SLC et GRD  L2 OCN, Sentinel-2 L1C and L2A, Sentinel-3 and Sentinel-5
 À cela, doit s'ajouter un accès aux "Copernicus Contributing Missions data".
 Un exemple de ce type de données est la [couverture satellite de l'Europe pour 2018](https://land.copernicus.eu/imagery-in-situ/european-image-mosaics/very-high-resolution/very-high-resolution-image-mosaic-2018-true-colour-2m) ayant servie à la production des données Corinne Land Cover millésime 2018.
 
-![VHR_IMAGES_2018 COPERNICUS](copernicus_data/VHR_IMAGES_2018_COPERNICUS.png "VHR_IMAGES_2018 COPERNICUS - Crédits : ESA"){: .img-center loading=lazy }
+![VHR_IMAGES_2018 COPERNICUS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/VHR_IMAGES_2018_COPERNICUS.png "VHR_IMAGES_2018 COPERNICUS - Crédits : ESA"){: .img-center loading=lazy }
 
 !!! note
     Par contre les données d'apprentissage utilisées pour la production semi-automatique des couches HRL ne semblent pas au programme. Donc on ne peut pas encore considérer ces couches comme étant très reproductible et suivant les principes F.A.I.R.
@@ -147,16 +149,17 @@ Toutes les données produites depuis 2014 devrait donc être accesibles via un a
 
 En plus de l'accès "simple" aux données le nouveaux service devrait aussi offrir deux nouveaux types d'accès permettant des post-traitement à la volé des données.
 
-![illustration WCS](copernicus_data/200px-OGC_WCS,_trim_and_slice_operations.png "illustration WCS - Crédits Wikipedia"){align=right }
+![illustration WCS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/200px-OGC_WCS,_trim_and_slice_operations.png "illustration WCS - Crédits Wikipedia"){align=right }
 D'une part, on devrait rerouver une offre d'API selon la norme [WCS](http://opengeospatial.github.io/e-learning/wcs/text/basic-main.html) de
 l'OGC (via Sinergise) qui permet d'affiner la récupération des données Sentinels au strict nécessaire.
 Cela est utile notamment pour des calculs simples, à la volée, entre bandes raster (de type calculatrice raster), un exemple possible étant le calcul d'une couche NDVI (indice de végétation) à partir des bandes spectrales rouge et infrarouge Sentinel-2 et donc de ne récupérer que deux bandes spectrales en WCS sur les treizes bandes possibles.  
 
-![logo OPENEO](copernicus_data/openeo_logo.png "Logo OPENEO"){: .img-rdp-news-thumb }
+![logo OPENEO](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo_logo.png "Logo OPENEO"){: .img-rdp-news-thumb }
+
 D'autre part, un service [OpenEO](https://openeo.org/) devrait aussi être déployer (via VITO).
 L'API OpenEO propose des fonctionnalités de type Google Earth Engine (GEE) ou datacube mais avec une API normalisée et pouvant être proposée par différents backend/fournisseurs.
 
-![schema openeo](copernicus_data/openeo_schema.png "schema openeo - Crédits : OPENEO"){: .img-center loading=lazy }
+![schema openeo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo_schema.png "schema openeo - Crédits : OPENEO"){: .img-center loading=lazy }
 
 Le but étant à la fois de proposer une alternative à GEE mais aussi d'assurer un certain niveau d'intéropérabilité entre fournisseurs de services/données spatiales.
 

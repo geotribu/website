@@ -48,7 +48,7 @@ L'Europe a accompagné le lancement et la mise en production des différents sat
 
 Le premier service d'accès aux données a été le Copernicus [Open Access Hub](<https://scihub.copernicus.eu/>) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, "https://scihub.copernicus.eu/", comme SciHub. Et c'est le nom qui sera utilisé dans le reste de cet article.
 
-![Portail scihub illustration](copernicus_data/scihub_copernicus_access_hub_1.jpg "Portail scihub example page - Crédits : ESA"){: .img-center loading=lazy }
+![Portail scihub illustration](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/scihub_copernicus_access_hub_1.jpg "Portail scihub example page - Crédits : ESA"){: .img-center loading=lazy }
 
 !!! warning
     Ne pas confondre Scihub site copernicus d'accès aux données Sentinel avec sci-hub le fameux site pirate d'accès aux publications scientifiques.
@@ -115,7 +115,7 @@ En France il existe actuellement deux portails nationaux d'accès aux données S
 [PEPS](https://peps.cnes.fr/rocket/#/home) (Plateforme d’Exploitation des Produits Sentinels) est un portail développé et maintenu par le CNES qui offre la recherche et le téléchargement des données Sentinel-1 et Sentinel-2.
 Par rapport à l'offre de base Scihub, PEPS permet un accès un peu plus rapide aux données en France (meilleur débit) mais aussi des post-traitements de données supplémentaires comme l'extraction de bande ou l'orthorectification des données SAR Sentinel-1 sur la géométrie "grille" de diffusion des données Sentinel-2 via [S1-tiling](https://gitlab.orfeo-toolbox.org/s1-tiling/s1tiling).
 
-![Portail PEPS CNES](copernicus_data/PEPS_CNES_captrue_site.png "Portail PEPS CNES - Crédits : PEPS"){: .img-center loading=lazy }
+![Portail PEPS CNES](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/PEPS_CNES_captrue_site.png "Portail PEPS CNES - Crédits : PEPS"){: .img-center loading=lazy }
 
 ![logo Theia](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/theia.jpg "Logo Theia"){: .img-rdp-news-thumb }
 
@@ -128,7 +128,7 @@ Mais par contre il propose des données Sentinel-2 avec une meilleure calibratio
 Ces dernières sont pratiques pour avoir des images avec moins de nuages et diminuer le volume de données à traiter.
 En plus des données Sentinel, THEIA donne aussi accès à des produits dérivés comme la carte d'occupation des sol [OSO](https://www.theia-land.fr/en/ceslist/land-cover-sec/) ou une carte de couverture 'neige' et des images SPOT et Landsat.
 
-![Portail THEIA land](copernicus_data/theia_land_page.jpg "Portail THEIA Land - Crédits : THEIA"){: .img-center loading=lazy }
+![Portail THEIA land](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/theia_land_page.jpg "Portail THEIA Land - Crédits : THEIA"){: .img-center loading=lazy }
 
 Certaines infrastructures géographiques régionales proposent également un accès local aux données Copernicus : [mviewer geobretagne](https://geobretagne.fr/pub/dreal_b/mviewer/?config=../apps/teledetection/config.xml)
 
@@ -144,7 +144,7 @@ Pour Google cela s'est fait via leur mise à disposition dans Google Earth Engin
 Et du côté d'Amazon, ces données ont été mises à disposition dans un [répertoire de données open-data](https://registry.opendata.aws/sentinel-2/) hebergé sur les services Amazon (bucket S3), cela facilitant entre autre leur exploitation dans l'offre de service Amazon.
 Il faut noter que les données Landsat diffusées en open-data avaient déjà ouvert la voie pour ces modes de diffusion de données satellites par les GAFAM.
 
-![Exemple open data AWS](copernicus_data/aws-odr-s2-1024x702.png "Exemple open data AWS - Crédits: Elements84"){: .img-center loading=lazy }
+![Exemple open data AWS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/aws-odr-s2-1024x702.png "Exemple open data AWS - Crédits: Elements84"){: .img-center loading=lazy }
 
 ### DIAS : Data and Information Access Service
 
@@ -163,7 +163,7 @@ Pour détailler, un peu plus, on peut considérer un DIAS comme étant composé 
 * Production et **offre d'API d'accès aux données** pour se connecter aux services et accéder aux données. Cela comprend aussi les fonctionnalités de gestion utilisateur centralisé et de facturation des services.
 * **une offre de service et applications tierces** sur les données Sentinel du catalogue. Services produits par le consortium (défaut du DIAS) ou par un tier sur une "place de marché" et via paiement/abonnement au service
 
-![Creodias components](copernicus_data/creodias_components.jpg "Creodias components - Crédits : CREODIAS"){: .img-center loading=lazy }
+![Creodias components](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/creodias_components.jpg "Creodias components - Crédits : CREODIAS"){: .img-center loading=lazy }
 
 Les quatre consortiums choisis pour les DIAS étaient :
 
@@ -172,7 +172,7 @@ Les quatre consortiums choisis pour les DIAS étaient :
 * [Onda](https://www.onda-dias.eu/cms/) : Serco (Lead) OVH (cloud infra), GAEL Sytem (data access solution), Sinergise (web spatial data applications /API)
 * [Sobloo](https://sobloo.eu/index.html) : Orange Business Services (cloud), Airbus (data provider)  Capgemini. Lead par Airbus, Capgemini apporte ses logiciels de traitement des données et Orange fournit sa solution cloud grand public Flexible Engine
 
-![Icones DIAS](copernicus_data/DIAS_0.jpg "Icones DIAS - Crédits : JRC"){: .img-center loading=lazy }
+![Icones DIAS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/DIAS_0.jpg "Icones DIAS - Crédits : JRC"){: .img-center loading=lazy }
 
 A ces quatres DIAS s'est ajouté un cinquième, [WEKEO](https://www.wekeo.eu/), qui est plus dédié sur la communauté météo/océanique.
 Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://gitlab.com/idgeo_public/etude-dias).
@@ -185,11 +185,11 @@ Ces dernières devant permettre entre autre de vérifier la présence ou non d'a
 
 Pour cela il peut être en particulier intéressant de calculer et extraire des profils temporels optiques ou radar sur chacune des parcelles agricoles à "monitorer".  Pour les détails techniques voir par exemple les différentes présentations du projet [Sen4CAP](http://esa-sen4cap.org/)
 
-![Profil temporel S2](copernicus_data/sen4cap_example_profil_s2_b.png "Profil temporel S2] - Crédits : SEN4CAP"){: .img-center loading=lazy }
+![Profil temporel S2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/sen4cap_example_profil_s2_b.png "Profil temporel S2] - Crédits : SEN4CAP"){: .img-center loading=lazy }
 
 Le JRC diffuse une documentation possible d'une architecture permettant de calculer ces profils et autres opérations utiles au monitoring sur une infrastructure de l'un des DIAS. Voir [DIAS for CAP Checks by Monitoring](https://jrc-cbm.readthedocs.io/en/latest/dias4cbm_intro.html)
 
-![JRC CBM DIAS](copernicus_data/cbm_dias_software.png "JRC CBM DIAS - Crédits : JRC"){: .img-center loading=lazy }
+![JRC CBM DIAS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/cbm_dias_software.png "JRC CBM DIAS - Crédits : JRC"){: .img-center loading=lazy }
 
 ## Quelques liens supplémentaires
 
