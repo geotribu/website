@@ -57,6 +57,9 @@ graph TD
 
 Avant de se lancer, il est bon de vous parler du fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé par la suite pour télécharger et traiter les images. On y définit le répertoire de travail et différentes variables nécessaires à la bonne éxécution des scripts.
 
+!!! info
+    Les scripts présentés ci-après ont été testés sur Linux et MacOS.
+    
 Voici le fichier `config.env` à adapter :
 
 ```ini
@@ -258,7 +261,7 @@ Dans notre cas comme il s'agit d'images aériennes anciennes, il n'est pas possi
 
 Pour ce faire, je recommande d'utiliser WebODM et le plugin intégré `Ground Control Point Interface` qui est pleinement compatible avec les [spécifications d'OpenDroneMap](https://docs.opendronemap.org/gcp/). Quand vous lancez WebODM sur votre navigateur, vous avez l'onglet `Interface GCP` sur la droite.
 
-![Image découpée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_gcp.png){: .img-center loading=lazy }
+![Ground Control Point Interface](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_gcp.png){: .img-center loading=lazy }
 
 1. charger toutes vos images
 2. sélectionner une image en cliquant dessus
@@ -303,7 +306,7 @@ Mes Options de traitement à adapter en fonction des images :
 
 A la fin du traitement, vous allez pouvoir visualiser les données et télécharger les différentes ressources.
 
-![Tableau de bord](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_fin.png){: .img-center loading=lazy }
+![Visualisation et téléchargement des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_fin.png){: .img-center loading=lazy }
 
 #### Via ODM
 
@@ -314,7 +317,7 @@ Pour les fans de la ligne de commande sur Windows, vous pouvez utiliser le packa
 3. Dans le répertoire du projet, créer un nouveau répertoire `images` qui contiendra les images et le fichier GCP
 4. Adapter et lancer la commande :
 
-```powershell
+```bash
 run --project-path C:\XXXXXX\ODM YY_PROJET_YY --min-num-features 30000 --skip-3dmodel --feature-quality high --orthophoto-resolution 50 --gcp "C:\XXXX\ODM\YY_PROJET_YY\images\gcp_list.txt"
 ```
 
@@ -327,9 +330,9 @@ Aujourd'hui, j'ai pu recréer une petite dizaine d'images aériennes de 1937 à 
 
 A noter qu'il peut persister des décalages par rapport aux images actuelles et pour les réduire, il me faut simplement ajouter des GCP et relancer OpenDroneMap.
 
-Pour vous donner un ordre d'idée, pour générer l'image complète ci-dessous à 60cm de résolution il a fallu 3h de traitement.
+Pour vous donner un ordre d'idée, pour générer l'image complète ci-dessous à 60cm de résolution il a fallu environ 3h de traitement et 45 images en entrée.
 
-![Tableau de bord](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/ccpl_historique.png){: .img-center loading=lazy }
+![Lunel en 1996](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/ccpl_historique.png){: .img-center loading=lazy }
 
 ----
 
