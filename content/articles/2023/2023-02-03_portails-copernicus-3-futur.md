@@ -48,14 +48,14 @@ Série **Accès aux données Copernicus/Sentinel** :
 
 Après quatre ans de retours d'expériences sur le déploiement et l'exploitation des DIAS, leur contrat arrivant à terme, l'Europe à choisi de faire évoluer son offre de services (gratuite et payante) d'accès aux données Sentinel.
 
-![Portail dataspace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_accueil.png "Portail dataspace - Crédits : ESA"){: .img-center loading=lazy }
+![Portail dataspace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_accueil.png "Portail dataspace - Crédits ESA"){: .img-center loading=lazy }
 
 Concrètement l'évolution consiste à sélectionner un consortium (décembre 2022) afin d'opérer d'une part une nouvelle version du portail open-data européen Scihub qui offrira des fonctionnalités similaires aux DIAS mais en une version gratuite, avec toutefois une limitation de quota, et d'autre part à offrir une version payante de ce service aux chercheurs, organismes publiques et industriels qui le souhaitent.
 Cette version "non free" doit permettre de disposer de ressources de stockage/calcul et d'accès aux services non limités moyennant finance.
 
 Le déploiement de ce nouveau service a commencé depuis fin janvier 2023 avec la mise en place de service dans la continuité de ceux offerts par Scihub et s'étoffera progressivement de nouveaux services (plutôt issus des offres DIAS actuelles) jusqu'à juin 2023 où le service devra avoir atteint sa phase opérationnelle complète et date à laquelle l'ancien service Scihub devrait être arrêté.
 
-![Portail dataspace service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_service_description.png "Portail dataspace service- Crédits : ESA"){: .img-center loading=lazy }
+![Portail dataspace service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_service_description.png "Portail dataspace service- Crédits ESA"){: .img-center loading=lazy }
 
 Le premier contrat d'exploitation de ce nouveau service est d'une durée de six ans avec une extension possible de dix ans, soit possiblement une continuité de service sur seize ans.
 
@@ -78,7 +78,7 @@ D'un point de vue communication le nom associé à l'offre de service européenn
 La nouvelle offre de service offrira une continuité par rapport à l'ancienne et devrait conserver les services existants de recherche et téléchargement des données Sentinel.
 Mais elle doit aussi proposer plusieurs nouveautés en particulier concernant les interfaces *"machine to machine"*. Une première description de ces services est [disponible](https://documentation.dataspace.copernicus.eu/_docs/CDSE-SDE-TSY_Service%20Description%20and%20Evolution.pdf).
 
-![dataspace roadmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_RoadmapSummary.png "dataspace roadmap - Crédits : ESA"){: .img-center loading=lazy }
+![dataspace roadmap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_RoadmapSummary.png "dataspace roadmap - Crédits ESA"){: .img-center loading=lazy }
 
 ### Service de visualisation et accès interactif
 
@@ -87,12 +87,12 @@ Cela sera accompagné d'un portail de visualisation/récupération des données 
 
 Une illustration de ce visualisateur pour des données Sentinel-2 récentes en fausse couleur infrarouge sur Clermont-Ferrand :
 
-![dataspace browser clermont](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_browser_clermont_ir.png "dataspace browser clermont - Crédits : IGN"){: .img-center loading=lazy }
+![dataspace browser clermont](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_browser_clermont_ir.png "dataspace browser clermont - Crédits IGN"){: .img-center loading=lazy }
 
 De plus une mise à disposition de service [JupyterLab](https://jupyter.org/) est prévue pour faciliter l'accès aux données de façon interactive dans des environnements de codes (plutôt basés python a priori).
 On pense ici plutôt à un équivalent google colab et à ce que les DIAS offrent déjà comme service d'exploration de données.
 
-![creodias jupyterhub](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/creodias_jupyterlab.jpg "creodias jupyterhub- Crédits : ESA"){: .img-center loading=lazy }
+![creodias jupyterhub](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/creodias_jupyterlab.jpg "creodias jupyterhub - Crédits ESA"){: .img-center loading=lazy }
 
 ### Arrivée de STAC et COG
 
@@ -137,7 +137,7 @@ Sentinel-1 SLC et GRD  L2 OCN, Sentinel-2 L1C and L2A, Sentinel-3 and Sentinel-5
 À cela, doit s'ajouter un accès aux "Copernicus Contributing Missions data".
 Un exemple de ce type de données est la [couverture satellite de l'Europe pour 2018](https://land.copernicus.eu/imagery-in-situ/european-image-mosaics/very-high-resolution/very-high-resolution-image-mosaic-2018-true-colour-2m) ayant servi à la production des données Corinne Land Cover millésime 2018.
 
-![VHR_IMAGES_2018 COPERNICUS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/VHR_IMAGES_2018_COPERNICUS.png "VHR_IMAGES_2018 COPERNICUS - Crédits : ESA"){: .img-center loading=lazy }
+![VHR_IMAGES_2018 COPERNICUS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/VHR_IMAGES_2018_COPERNICUS.png "VHR_IMAGES_2018 COPERNICUS - Crédits ESA"){: .img-center loading=lazy }
 
 !!! note
     Par contre les données d'apprentissage utilisées pour la production semi-automatique des couches HRL ne semblent pas au programme. Donc on ne peut pas encore considérer ces couches comme étant très reproductibles et suivant les principes F.A.I.R.
@@ -164,7 +164,7 @@ Cela est utile notamment pour des calculs simples, à la volée, entre bandes ra
 D'autre part, un service [OpenEO](https://openeo.org/) devrait aussi être déployé (via VITO).
 L'API OpenEO propose des fonctionnalités de type Google Earth Engine (GEE) ou datacube mais avec une API normalisée et pouvant être proposée par différents backend/fournisseurs.
 
-![schema openeo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo_schema.png "schema openeo - Crédits : OPENEO"){: .img-center loading=lazy }
+![schema openeo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo_schema.png "schema openeo - Crédits OPENEO"){: .img-center loading=lazy }
 
 Le but étant à la fois de proposer une alternative à GEE mais aussi d'assurer un certain niveau d'interopérabilité entre fournisseurs de services/données spatiales.
 
@@ -234,7 +234,7 @@ example().catch(error => console.error(error));
 ```
 
 Ce code devant permettre d'arriver à l'image ci-dessous :
-![resultat exemple openeo js](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo-getting-started-result-example-7820ee84.jpg "resultat exemple openeo js- Crédits : OPENEO"){: .img-center loading=lazy }
+![resultat exemple openeo js](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo-getting-started-result-example-7820ee84.jpg "resultat exemple openeo js- Crédits OPENEO"){: .img-center loading=lazy }
 
 !!! note
     Beaucoup de ces nouveaux services sont en partie issus de travaux

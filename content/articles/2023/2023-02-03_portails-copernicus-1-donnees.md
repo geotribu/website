@@ -50,18 +50,18 @@ Il est responsable d'une part de la production de différentes couches de donné
 Concernant la production de données géographiques issues de Copernicus on peut notamment citer [les produits d'occupation du sol](https://land.copernicus.eu) comme [Corinne Land Cover](https://land.copernicus.eu/pan-european/corine-land-cover), existant depuis 1990 et [Urban Atlas](https://land.copernicus.eu/local/urban-atlas) qui sont produits par photointerprétation manuelle.
 Ci-dessous un exemple de ces deux données sur une zone de Clermont-Ferrand, la surface minimale des polygone pour Corinne Land Cover est de 25 hectares et entre 0.25 et 1 hectare pour Urban Atlas :
 
-![Orthophotographie RVB sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_ortho_a.jpg "Orthophotographie RVB sur Clermont-Ferrand - Crédits : IGN"){: .img-center loading=lazy }
+![Orthophotographie RVB sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_ortho_a.jpg "Orthophotographie RVB sur Clermont-Ferrand - Crédits IGN"){: .img-center loading=lazy }
 
-![Corinne land Cover sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_CLC18_a.jpg "Données Corinne Land Cover 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
+![Corinne land Cover sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_CLC18_a.jpg "Données Corinne Land Cover 2018 sur Clermont-Ferrand - Crédits IGN  et Copernicus"){: .img-center loading=lazy }
 
-![Urban Atlas sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_UA18_a.jpg "Données Urban Atlas 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
+![Urban Atlas sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_UA18_a.jpg "Données Urban Atlas 2018 sur Clermont-Ferrand - Crédits IGN  et Copernicus"){: .img-center loading=lazy }
 
 A cela s'ajoute les couches HRL, [High Resolution Layers](https://land.copernicus.eu/pan-european/high-resolution-layers), produites de façon semi-automatique, de résolution 10m, et se focalisant chacune sur une des thématiques suivantes : zones imperméables, forêts, prairies et les surfaces d'eaux/zones humides, cultures.
 Ci-dessous les exemples pour les couches *imperviousness* et *tree cover density* sur la même zone que précédemment :
 
-![Couche HRL imperviousness sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_HRL18_impervious_a.jpg "Données Copernicus HRL imperviousness 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
+![Couche HRL imperviousness sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_HRL18_impervious_a.jpg "Données Copernicus HRL imperviousness 2018 sur Clermont-Ferrand - Crédits IGN et Copernicus"){: .img-center loading=lazy }
 
-![Couche HRL Forest sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_HRL18_tree_density_a.jpg "Données Copernicus HRL Tree Cover Density 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
+![Couche HRL Forest sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_HRL18_tree_density_a.jpg "Données Copernicus HRL Tree Cover Density 2018 sur Clermont-Ferrand - Crédits IGN et Copernicus"){: .img-center loading=lazy }
 
 ## Données satellites Sentinel d'observation de la terre
 
@@ -69,7 +69,7 @@ Pour les données brutes d'observation de la terre (imagerie spatiale) leur prod
 
 ### Satellites de la constellation Sentinel
 
-![Constellation sentinel 1 slide](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_sentinel_esa_mission.jpg "Satellites constellation Sentinel une diapo ESA - Crédits : ESA"){: .img-center loading=lazy }
+![Constellation sentinel 1 slide](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_sentinel_esa_mission.jpg "Satellites constellation Sentinel une diapo ESA - Crédits ESA"){: .img-center loading=lazy }
 
 Pour l'aspect observation de la partie surface continentale on peut citer les satellites et capteurs suivants :
 
@@ -87,7 +87,7 @@ Pour l'aspect observation de la partie surface continentale on peut citer les sa
 
 Les données Sentinel-2 sont des données optiques à [13 bandes spectrales](https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/resolutions/spatial) avec trois bandes dédiées à la partie atmosphérique pour les masques de nuages/aérosol et dix bandes spectrales “utiles” pour la télédétection. Parmi ces dernières, 4 ont une résolution de 10m et la plupart des autres sont à 20m de résolution. Les deux satellites Sentinel-2 permettent que chaque portion du territoire français soit volée tous les 5 jours.
 
-![Images Sentinel 2 RVB](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/Sentinel_2_L2A_with_or_without_cloud.jpg "Images Sentinel 2 RVB- Crédits : IGN"){: .img-center loading=lazy }
+![Images Sentinel 2 RVB](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/Sentinel_2_L2A_with_or_without_cloud.jpg "Images Sentinel 2 RVB - Crédits IGN"){: .img-center loading=lazy }
 
 Ci-dessus exemples de données Sentinel 2, visualisation des trois canaux RVB sur une même zone à deux dates : avec et sans nuages
 
@@ -104,7 +104,7 @@ Les données sont disponibles dans plusieurs [niveaux de traitements](https://se
 
 La fréquence élevée de revisite des données Sentinel-2 permet de suivre l'évolution temporelle d'un paysage. Ci dessous une image en composition colorée basée sur ces informations temporelles.
 
-![Composition colorée temporelle NDVI Sentinel 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/composition_ndvi_3dates_nov_jan_avr.png "Composition colorée temporelle NDVI Sentinel 2 - Crédits : IGN"){: .img-center loading=lazy }
+![Composition colorée temporelle NDVI Sentinel 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/composition_ndvi_3dates_nov_jan_avr.png "Composition colorée temporelle NDVI Sentinel 2 - Crédits IGN"){: .img-center loading=lazy }
 
 Cette image est obtenue en calculant un indice de présence de végétation (NDVI) à trois dates différentes de l'année et en les composant en une image RVB de telle sorte que les canaux bleu, vert et rouge correspondant respectivement aux dates de novembre 2018, janvier 2019 et avril 2019.
 On peut alors représenter le cycle phénologique de la végétation et distinguer différente espèces de plantes dans les parcelles agricoles. On observe en violet léger les forêts de feuillus, dont l’indice varie selon les saisons, en blancs les conifères dont la valeur reste la même, en noir les zones sans végétalisation…
@@ -130,20 +130,20 @@ disponibles seulement à des niveaux assez bruts et donc possèdent moins de niv
 
 Parmi les formats d'image fournis par l'ESA à partir de données de Sentinel 1 on retrouve les formats SLC et GRD.
 
-![Image Sentinel 1 SLC](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/Sentinel_1_SLC.jpg "Image Sentinel 1 SLC - Crédits : ESA"){: .img-center loading=lazy }
+![Image Sentinel 1 SLC](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/Sentinel_1_SLC.jpg "Image Sentinel 1 SLC - Crédits ESA"){: .img-center loading=lazy }
 
 !!! note
     La fréquence de revisite plus élevée par rapport aux données optiques Sentinel-2 s’explique par le fait que les données SAR sont acquises par un capteur actif et peuvent acquérir des données de nuit donc 2 fois plus que pour des données optiques qui n’acquièrent des données que sur la partie éclairée de leurs orbites.
 
 Les données SLC sont en particulier utilisées en mode "différentiel" entre deux observations successives pour observer les changements géométriques du terrain. Cela peut être pour l'observation de mouvement de terrain (interférométrie radar) mais aussi pour observer des évolutions dans les cultures, pousse des plantes ou inversement récolte d'une culture. Dans ce dernier cas un type d'image dérivée des données SLC sont les [images de cohérence](https://proceedings.esa.int/files/89.pdf) à 6 ou 12 jours (voir illustration ci-dessous), celles-ci permettent de voir si des changements, de l'ordre de la longueur d'onde radar (5 cm), ont eu lieu sur l'intervalle de temps observé. Une forte cohérence indique un non-changement et une faible cohérence du changement.  
 
-![Cohérence radar Sentinel-1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/sentinel_1_esa.png "Images de cohérence sentinel-1 6 jours - Crédits : ESA"){: .img-center loading=lazy }
+![Cohérence radar Sentinel-1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/sentinel_1_esa.png "Images de cohérence sentinel-1 6 jours - Crédits ESA"){: .img-center loading=lazy }
 
 ----
 
 ## Je veux plus d'images !
 
-Si tout cela n'a pas encore suffi à satisfaire vos mirettes, ou que vous souhaitez changer votre fond d'écran, je ne peux que vous conseillez d'aller par exemple sur le site [Image of the day Copernicus]( https://www.copernicus.eu/en/media/image-day) pour y trouver d'autres images Sentinel sélectionnées en fonction de l'actualité ou de leur esthétisme.
+Si tout cela n'a pas encore suffi à satisfaire vos mirettes, ou que vous souhaitez changer votre fond d'écran, je ne peux que vous conseiller d'aller par exemple sur le site [Image of the day Copernicus]( https://www.copernicus.eu/en/media/image-day) pour y trouver d'autres images Sentinel sélectionnées en fonction de l'actualité ou de leur esthétisme.
 
 ## Auteur {: data-search-exclude }
 
