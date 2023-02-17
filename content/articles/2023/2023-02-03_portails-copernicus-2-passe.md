@@ -37,9 +37,8 @@ Dans ce deuxième article nous revenons donc sur l'historique des différents po
 Pour un rappel sur les données Sentinel voir le [premier article](2023-02-03_portails-copernicus-1-donnees.md) et pour les personnes intéressés par le nouveau portail aller directement au [troisième article](2023-02-03_portails-copernicus-3-futur.md).
 Série **Accès aux données Copernicus/Sentinel** :
 
-* [Partie 1 : données OCS et Sentinel](/articles/2023/2023-02-03_portails-copernicus-1-donnees.md).
-* [Partie 2 : portails d'accès, 'the road so far'](/articles/2023/2023-02-03_portails-copernicus-2-passe.md).
-* [Partie 3 : évolution de l'accès aux données Copernicus](/articles/2023/2023-02-03_portails-copernicus-3-futur.md).
+* [Partie 1 : données OCS et Sentinel](/articles/2023/2023-02-03_portails-copernicus-1-donnees/).
+* [Partie 3 : évolution de l'accès aux données Copernicus](/articles/2023/2023-02-03_portails-copernicus-3-futur/).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
