@@ -59,7 +59,7 @@ Le déploiement de ce nouveau service a commencé depuis fin janvier 2023 avec l
 
 Le premier contrat d'exploitation de ce nouveau service est d'une durée de six ans avec une extension possible de dix ans, soit possiblement une continuité de service sur seize ans.
 
-Le consortium qui a été retenu est constitué d'industriels participant aux DIAS Mundi et Creodias : T-Systems, CloudFerro, Sinergise, VITO,  DLR, ACRI-ST et RHEA
+Le consortium qui a été retenu est constitué d'industriels participants aux DIAS Mundi et Creodias : T-Systems, CloudFerro, Sinergise, VITO,  DLR, ACRI-ST et RHEA
 
 * [T-System](https://www.telekom.com/en/media/media-information/archive/copernicus-data-space-1024098) : fournisseur de service et infra cloud
 * [CloudFerro](https://cloudferro.com/en/news/cloudferro-and-its-partners-are-building-copernicus-data-access-service/) : exploitation de l'infra T-System pour y déployer et mettre en place une solution de stockage et accès aux données Sentinel
@@ -168,7 +168,7 @@ L'API OpenEO propose des fonctionnalités de type Google Earth Engine (GEE) ou d
 
 Le but étant à la fois de proposer une alternative à GEE mais aussi d'assurer un certain niveau d'interopérabilité entre fournisseurs de services/données spatiales.
 
-Pour illustrer voici un exemple d'utilisation avec un client javascript (pour changer des exemples python) tirer de la [documentation officielle](https://openeo.org/documentation/1.0/javascript/#full-example)
+Pour illustrer voici un exemple d'utilisation avec un client javascript (pour changer des exemples python) tiré de la [documentation officielle](https://openeo.org/documentation/1.0/javascript/#full-example)
 
 ``` js
 // Make the client available to the Node.js script

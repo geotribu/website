@@ -48,7 +48,7 @@ Série **Accès aux données Copernicus/Sentinel** :
 Il est responsable d'une part de la production de différentes couches de données géographiques et d'autre part de la mise en service et du suivi opérationnel d'une constellation de satellites d'observation de la terre appelée Sentinel.
 
 Concernant la production de données géographiques issues de Copernicus on peut notamment citer [les produits d'occupation du sol](https://land.copernicus.eu) comme [Corinne Land Cover](https://land.copernicus.eu/pan-european/corine-land-cover), existant depuis 1990 et [Urban Atlas](https://land.copernicus.eu/local/urban-atlas) qui sont produits par photointerprétation manuelle.
-Ci-dessous un exemple de ces deux données sur une zone de Clermont-Ferrand, la surface minimale des polygone pour Corinne Land Cover est de 25 hectares et entre 0.25 et 1 hectare pour Urban Atlas :
+Ci-dessous un exemple de ces deux données sur une zone de Clermont-Ferrand, la surface minimale des polygones pour Corinne Land Cover est de 25 hectares et entre 0.25 et 1 hectare pour Urban Atlas :
 
 ![Orthophotographie RVB sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_ortho_a.jpg "Orthophotographie RVB sur Clermont-Ferrand - Crédits IGN"){: .img-center loading=lazy }
 
@@ -74,7 +74,7 @@ Pour les données brutes d'observation de la terre (imagerie spatiale) leur prod
 Pour l'aspect observation de la partie surface continentale on peut citer les satellites et capteurs suivants :
 
 * [Sentinel-1](https://esamultimedia.esa.int/docs/S1-Data_Sheet.pdf) : satellites équipés de capteur SAR ([Synthetic Aperture Radar](https://en.wikipedia.org/wiki/Synthetic-aperture_radar)) en bande C avec une revisite de 3 jours. Capteurs : Sentinel-1A (2014- ), Sentinel-1B (04-2016 /06-2022), Sentinel 1C (prévu 04/2023)
-* [Sentinel-2](https://esamultimedia.esa.int/docs/S2-Data_Sheet.pdf) : satellites avec capteur optique multispectral à 10/20/60m de résolutions sur 12 bandes spectrales avec une revisite de 5 jours. Les données utilisées sont principalement les données de niveau 2A orthorectifiées et calibrées radiométriquemeent. Capteurs : Sentinel-2A (06/2015- ), Sentinel-2B (03/2017 - ), Sentinel-2C (prévu 2024)
+* [Sentinel-2](https://esamultimedia.esa.int/docs/S2-Data_Sheet.pdf) : satellites avec capteur optique multispectral à 10/20/60m de résolutions sur 12 bandes spectrales avec une revisite de 5 jours. Les données utilisées sont principalement les données de niveau 2A orthorectifiées et calibrées radiométriquement. Capteurs : Sentinel-2A (06/2015- ), Sentinel-2B (03/2017 - ), Sentinel-2C (prévu 2024)
 * [Sentinel-3](https://esamultimedia.esa.int/docs/S3-Data_Sheet.pdf) : satellites altimétriques et observation océan/atmosphère (notamment température) Capteurs : Sentinel-3A (02/2016- ), Sentinel-3B (04/2018 - )
 * [Sentinel-5](https://esamultimedia.esa.int/docs/S5-prec_Data_Sheet.pdf) : satellites pour le suivi de l'atmosphère
 
@@ -100,14 +100,14 @@ Les données sont disponibles dans plusieurs [niveaux de traitements](https://se
 * **Niveau L4A** : Indices dérivés des données L2A ou L3A comme une occupation du sol au pixel, comme [OSO](https://www.theia-land.fr/ceslist/ces-occupation-des-sols/) ou bien une image d’indice [NDVI](https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/) (rapport entre les bandes rouges/infrarouges) ou indices LAI (Leaf Area Index) dérivés des différentes bandes spectrales.
 
 !!! note
-    Les tuiles Sentinel suivent le carroyage MGRS, [Military Grid Reference System](https://en.wikipedia.org/wiki/Military_Grid_Reference_System), ce qui explique que vous pouvez entendre des petits noms comme "T30UXV" pour une tuiles sur le Calvados par les personnes faisant de la télédétection sur des données Sentinel.
+    Les tuiles Sentinel suivent le carroyage MGRS, [Military Grid Reference System](https://en.wikipedia.org/wiki/Military_Grid_Reference_System), ce qui explique que vous pouvez entendre des petits noms comme "T30UXV" pour une tuile sur le Calvados par les personnes faisant de la télédétection sur des données Sentinel.
 
 La fréquence élevée de revisite des données Sentinel-2 permet de suivre l'évolution temporelle d'un paysage. Ci dessous une image en composition colorée basée sur ces informations temporelles.
 
 ![Composition colorée temporelle NDVI Sentinel 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/composition_ndvi_3dates_nov_jan_avr.png "Composition colorée temporelle NDVI Sentinel 2 - Crédits IGN"){: .img-center loading=lazy }
 
 Cette image est obtenue en calculant un indice de présence de végétation (NDVI) à trois dates différentes de l'année et en les composant en une image RVB de telle sorte que les canaux bleu, vert et rouge correspondant respectivement aux dates de novembre 2018, janvier 2019 et avril 2019.
-On peut alors représenter le cycle phénologique de la végétation et distinguer différente espèces de plantes dans les parcelles agricoles. On observe en violet léger les forêts de feuillus, dont l’indice varie selon les saisons, en blancs les conifères dont la valeur reste la même, en noir les zones sans végétalisation…
+On peut alors représenter le cycle phénologique de la végétation et distinguer différentes espèces de plantes dans les parcelles agricoles. On observe en violet léger les forêts de feuillus, dont l’indice varie selon les saisons, en blancs les conifères dont la valeur reste la même, en noir les zones sans végétalisation…
 
 ### Données radar Sentinel 1
 
