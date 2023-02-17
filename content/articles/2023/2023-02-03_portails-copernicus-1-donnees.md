@@ -1,24 +1,26 @@
 ---
-title: "Accès aux données Copernicus/Sentinel partie 1 : données Copernicus et Sentinel"
+title: "Données Copernicus et Sentinel"
+subtitle: "Accès aux données Copernicus et Sentinel"
 authors:
     - Nicolas DAVID
 categories:
     - article
 date: "2023-02-03 10:20"
 description: "Introduction et description des données d'observation de la terre produite dans le cadre du progamme européen Copernicus"
-image: "https://cdn.geotribu.fr/img/logos-icones/copernicus_logo.50f4fc3b.png"
-license: default
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.50f4fc3b.png"
+license: beerware
 robots: index, follow
 tags:
-    - Copernicus
-    - Sentinel
-    - Open-data
-    - Télédétection
+    - satellite
+    - Sentinel-2
+    - Corine Land Cover
+    - open data
+    - télédétection
 ---
 
 # Accès aux données Copernicus, partie 1 : données OCS et Sentinel
 
-:calendar: Date de publication initiale : 27 janvier 2023
+:calendar: Date de publication initiale : 17 février 2023
 
 ## Introduction
 
@@ -31,12 +33,14 @@ Dans cette première partie nous revenons sur le programme Copernicus et surtout
 
 Série **Accès aux données Copernicus/Sentinel** :
 
-* [Partie 1 : données OCS et Sentinel](2023-02-03_portails-copernicus-1-donnees.md).
-* [Partie 2 : portails d'accès, 'the road so far'](2023-02-03_portails-copernicus-2-passe.md).
-* [Partie 3 : évolution de l'accès aux données Copernicus](2023-02-03_portails-copernicus-3-futur.md).
+* [Partie 1 : données OCS et Sentinel](/articles/2023/2023-02-03_portails-copernicus-1-donnees.md).
+* [Partie 2 : portails d'accès, 'the road so far'](/articles/2023/2023-02-03_portails-copernicus-2-passe.md).
+* [Partie 3 : évolution de l'accès aux données Copernicus](/articles/2023/2023-02-03_portails-copernicus-3-futur.md).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
+
+----
 
 ## Programme Copernicus et données d'occupation du sol
 
@@ -47,13 +51,16 @@ Concernant la production de données géographiques issues de Copernicus on peut
 Ci-dessous un exemple de ces deux données sur une zone de Clermont-Ferrand, la surface minimale des polygone pour Corinne Land Cover est de 25 hectares et entre 0.25 et 1 hectare pour Urban Atlas :
 
 ![Orthophotographie RVB sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_ortho_a.jpg "Orthophotographie RVB sur Clermont-Ferrand - Crédits : IGN"){: .img-center loading=lazy }
+
 ![Corinne land Cover sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_CLC18_a.jpg "Données Corinne Land Cover 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
+
 ![Urban Atlas sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_UA18_a.jpg "Données Urban Atlas 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
 
 A cela s'ajoute les couches HRL, [High Resolution Layers](https://land.copernicus.eu/pan-european/high-resolution-layers), produites de façon semi-automatique, de résolution 10m, et se focalisant chacune sur une des thématiques suivantes : zones imperméables, forêts, prairies et les surfaces d'eaux/zones humides, cultures.
 Ci-dessous les exemples pour les couches *imperviousness* et *tree cover density* sur la même zone que précédemment :
 
 ![Couche HRL imperviousness sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_HRL18_impervious_a.jpg "Données Copernicus HRL imperviousness 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
+
 ![Couche HRL Forest sur Clermont-Ferrand](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/clermont_ferrand_HRL18_tree_density_a.jpg "Données Copernicus HRL Tree Cover Density 2018 sur Clermont-Ferrand - Crédits : IGN / Copernicus"){: .img-center loading=lazy }
 
 ## Données satellites Sentinel d'observation de la terre
@@ -116,8 +123,8 @@ disponibles seulement à des niveaux assez bruts et donc possèdent moins de niv
 
 * **Niveau L0** : données brutes
 * **Niveau L1/L1C** : produits géo-référencés en géométrie capteur par slice (intervalle d’une orbite)
-      - GRD : Ground Range Detected, amplitude du signal retour SAR (selon les deux polarités VV et VH)
-      - SLC : Single Look Complex , amplitude et phase du signal retour SAR
+    * GRD : Ground Range Detected, amplitude du signal retour SAR (selon les deux polarités VV et VH)
+    * SLC : Single Look Complex , amplitude et phase du signal retour SAR
 * **Niveau L2A** : produit ortho-rectifié et tuilée selon grille MGRS
 * **Niveau L3A** : produit moyenne temporelle.
 
@@ -132,7 +139,9 @@ Les données SLC sont en particulier utilisées en mode "différentiel" entre de
 
 ![Cohérence radar Sentinel-1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/sentinel_1_esa.png "Images de cohérence sentinel-1 6 jours - Crédits : ESA"){: .img-center loading=lazy }
 
-## je veux plus d'images !!
+----
+
+## Je veux plus d'images !
 
 Si tout cela n'a pas encore suffi à satisfaire vos mirettes, ou que vous souhaitez changer votre fond d'écran, je ne peux que vous conseillez d'aller par exemple sur le site [Image of the day Copernicus]( https://www.copernicus.eu/en/media/image-day) pour y trouver d'autres images Sentinel sélectionnées en fonction de l'actualité ou de leur esthétisme.
 

@@ -1,24 +1,28 @@
 ---
-title: "Accès aux données Copernicus/Sentinel partie 2 : portails d'accès saisons 1&2, 'the road so far'"
+title: "Portails d'accès aux données Sentinel, 'the road so far'"
+subtitle: "Accès aux données Copernicus et Sentinel"
 authors:
     - Nicolas DAVID
 categories:
     - article
 date: "2023-02-03 10:20"
 description: "Historique des portails d'accès aux données Sentinel en Europe et en France et description de leur grandes fonctionnalités"
-image: "https://cdn.geotribu.fr/img/logos-icones/copernicus_logo.50f4fc3b.png"
-license: default
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.50f4fc3b.png"
+license: beerware
 robots: index, follow
 tags:
-    - Copernicus
-    - Sentinel
-    - Open-data
-    - Télédétection
+    - satellite
+    - Sentinel-2
+    - OSO
+    - PEPS
+    - Theia
+    - open data
+    - télédétection
 ---
 
-# Accès aux données Copernicus, partie 2 : portails d'accès 'the road so far'
+# Accès aux données Copernicus, partie 2 : portails d'accès aux données Sentinel, 'the road so far'
 
-:calendar: Date de publication initiale : 27 janvier 2023
+:calendar: Date de publication initiale : 17 février 2023
 
 ## Introduction
 
@@ -33,12 +37,14 @@ Dans ce deuxième article nous revenons donc sur l'historique des différents po
 Pour un rappel sur les données Sentinel voir le [premier article](2023-02-03_portails-copernicus-1-donnees.md) et pour les personnes intéressés par le nouveau portail aller directement au [troisième article](2023-02-03_portails-copernicus-3-futur.md).
 Série **Accès aux données Copernicus/Sentinel** :
 
-* [Partie 1 : données OCS et Sentinel](2023-02-03_portails-copernicus-1-donnees.md).
-* [Partie 2 : portails d'accès, 'the road so far'](2023-02-03_portails-copernicus-2-passe.md).
-* [Partie 3 : évolution de l'accès aux données Copernicus](2023-02-03_portails-copernicus-3-futur.md).
+* [Partie 1 : données OCS et Sentinel](/articles/2023/2023-02-03_portails-copernicus-1-donnees.md).
+* [Partie 2 : portails d'accès, 'the road so far'](/articles/2023/2023-02-03_portails-copernicus-2-passe.md).
+* [Partie 3 : évolution de l'accès aux données Copernicus](/articles/2023/2023-02-03_portails-copernicus-3-futur.md).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
+
+----
 
 ## Saison 1 : portails open-data européens et nationaux
 
@@ -190,6 +196,8 @@ Pour cela il peut être en particulier intéressant de calculer et extraire des 
 Le JRC diffuse une documentation possible d'une architecture permettant de calculer ces profils et autres opérations utiles au monitoring sur une infrastructure de l'un des DIAS. Voir [DIAS for CAP Checks by Monitoring](https://jrc-cbm.readthedocs.io/en/latest/dias4cbm_intro.html)
 
 ![JRC CBM DIAS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/cbm_dias_software.png "JRC CBM DIAS - Crédits : JRC"){: .img-center loading=lazy }
+
+----
 
 ## Quelques liens supplémentaires
 

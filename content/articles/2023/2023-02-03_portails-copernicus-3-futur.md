@@ -1,24 +1,27 @@
 ---
-title: "Accès aux données Copernicus, partie 3 : évolution de l'accès aux données Copernicus"
+title: "Évolution de l'accès aux données Copernicus"
+subtitle: "Accès aux données Copernicus et Sentinel"
 authors:
     - Nicolas DAVID
 categories:
     - article
 date: "2023-01-27 10:20"
 description: "Évolution des portails d'accès aux données europénnes de la constellation satellites Sentinel : des début en 2015 aux évolutions prévues en 2023"
-image: "https://cdn.geotribu.fr/img/logos-icones/copernicus_logo.50f4fc3b.png"
-license: default
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.50f4fc3b.png"
+license: beerware
 robots: index, follow
 tags:
-    - Copernicus
-    - Sentinel
-    - Open-data
-    - Télédétection
+    - satellite
+    - COG
+    - WMS
+    - Sentinel-2
+    - open data
+    - télédétection
 ---
 
 # Accès aux données Copernicus, partie 3 : évolution de l'accès aux données Copernicus
 
-:calendar: Date de publication initiale : 27 janvier 2023
+:calendar: Date de publication initiale : 17 février 2023
 
 ## Introduction
 
@@ -32,12 +35,14 @@ En particulier, outre le téléchargement des données Sentinel en Open-data, le
 
 Série **Accès aux données Copernicus/Sentinel** :
 
-* [Partie 1 : données OCS et Sentinel](2023-02-03_portails-copernicus-1-donnees.md).
-* [Partie 2 : portails d'accès, 'the road so far'](2023-02-03_portails-copernicus-2-passe.md).
-* [Partie 3 : évolution de l'accès aux données Copernicus](2023-02-03_portails-copernicus-3-futur.md).
+* [Partie 1 : données OCS et Sentinel](/articles/2023/2023-02-03_portails-copernicus-1-donnees.md).
+* [Partie 2 : portails d'accès, 'the road so far'](/articles/2023/2023-02-03_portails-copernicus-2-passe.md).
+* [Partie 3 : évolution de l'accès aux données Copernicus](/articles/2023/2023-02-03_portails-copernicus-3-futur.md).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
+
+----
 
 ## Accès aux données Sentinel Teaser Saison 3 : "There can be only one"
 
