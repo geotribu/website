@@ -11,7 +11,7 @@ body:
     attributes:
       value: |
         Merci de prendre le temps de contribuer à Geotribu !
-        Le guide de soumission et la structure d'une news [sont ici](https://static.geotribu.fr/contribuer/rdp/add_news/#structure-de-la-news).
+        Le guide de soumission et la structure d'une news [sont ici](https://contribuer.geotribu.fr/rdp/structure_news/).
 
   - type: markdown
     attributes:
@@ -26,7 +26,7 @@ body:
       label: "Avez-vous un lien avec le contenu proposé ?"
       description: Mise en avant du travail d'un tiers ? Auto-promo ? Publicité ?
       options:
-        - label: Oui
+        - label: Oui et je détaille dans quelle mesure dans la partie commentaire libre
         - label: Non
     validations:
       required: true
@@ -53,9 +53,30 @@ body:
     id: in_author_license
     attributes:
       label: Licence
-      description: Vous acceptez que votre contribution soit publiée sous la licence [CC BY-NC-SA 4.0](https://static.geotribu.fr/contribuer/guides/licensing/#licence-par-defaut).
+      description: Vous acceptez que votre contribution soit publiée sous la licence [CC BY-NC-SA 4.0](https://contribuer.geotribu.fr/guides/licensing/#licence-par-defaut).
       options:
         - label: J'accepte
+
+  - type: input
+    id: in_author_linkedin
+    attributes:
+      label: Compte LinkedIn
+      description: Qui citer au moment de la diffusion sur LinkedIn
+      placeholder: https://www.linkedin.com/in/identifiant-compte/
+
+  - type: input
+    id: in_author_mastodon
+    attributes:
+      label: Compte Mastodon
+      description: Qui citer au moment de la diffusion sur Mapstodon
+      placeholder: "@geotribu@mapstodon.space"
+
+  - type: input
+    id: in_author_twitter
+    attributes:
+      label: Compte Twitter
+      description: Qui citer au moment de la diffusion sur Twitter
+      placeholder: "@geotribu"
 
   - type: markdown
     attributes:
@@ -68,7 +89,7 @@ body:
     id: dr_news_category
     attributes:
       label: Section / catégorie
-      description: "A quelle [section ou catégorie](https://static.geotribu.fr/contribuer/rdp/add_news/#sections-categories) rattacher la news ?"
+      description: "A quelle [section ou catégorie](https://contribuer.geotribu.fr/rdp/structure_news/#sections-categories) rattacher la news ?"
       options:
         - Sorties de la semaine
         - Logiciel
@@ -88,7 +109,7 @@ body:
       label: Mots-clés
       description: |
         Liste de mots-clés séparés par une virgule.
-        De préférence, choisir parmi les [mots-clés existants](https://static.geotribu.fr/tags/).
+        De préférence, choisir parmi les [mots-clés existants](https://static.geotribu.fr/tags/), en respectant la casse.
     validations:
       required: true
 
@@ -96,7 +117,7 @@ body:
     id: in_news_title
     attributes:
       label: Titre de la news
-      description: "Le titre accrocheur de la news. Longeur maximale indicative : 100/120 caractères"
+      description: "Le titre accrocheur de la news. Longeur maximale indicative : 100/120 caractères."
     validations:
       required: true
 
@@ -106,8 +127,8 @@ body:
       label: Icône de la news
       description: |
         L'icône de la news. Au choix :
-          - l'une des icônes génériques proposées par le site : choisir dans [ce tableau](https://static.geotribu.fr/contribuer/rdp/add_news/#tableau-des-icones-generiques)
-          - l'une des icônes déjà présentes dans le dossier `logos-icones` du [CDN](https://cdn.geotribu.fr/tinyfilemanager.php?p=logos-icones). Pour l'accès invité (lecture seule), [voir par ici](https://static.geotribu.fr/contribuer/guides/image/#parcourir-les-images-sur-le-cdn-de-geotribu).
+          - l'une des icônes génériques proposées par le site : choisir dans [ce tableau](https://contribuer.geotribu.fr/rdp/structure_news/#tableau-des-icones-generiques)
+          - l'une des icônes déjà présentes dans le dossier `logos-icones` du [CDN](https://cdn.geotribu.fr/tinyfilemanager.php?p=logos-icones). Pour l'accès invité (lecture seule), [voir par ici](https://contribuer.geotribu.fr/guides/cdn-images-recherche/).
           - une icône personnalisée : utiliser ce champ pour donner la description de l'icône et glisser/déposer l'image en description plus bas
       value: "https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png"
     validations:

@@ -800,9 +800,13 @@ redirects:
     articles/2015/art_2015-02-09.md: articles/2015/2015-02-09_8eme_geoseminaire_silat.md
     articles/2015/art_2015-02-16.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
     articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
+    articles/2021/2021-06-08_odk_postgis_2.md: articles/2021/2021-06-22_odk_postgis_2.md
     articles/2021/2021-06-17_qgis_personnaliser_splash_screen.md: articles/2021/2021-06-11_qgis_personnaliser_splash_screen.md
 
     # migration du guide de contribution - janvier 2023
+    contribuer/introduction.md: https://contribuer.geotribu.fr/
+    contribuer/archives/howto_rdp.md: https://contribuer.geotribu.fr/rdp/add_news/
+    contribuer/archives/howto_tutorials.md: https://contribuer.geotribu.fr/articles/workflow/
     contribuer/backup.md: https://contribuer.geotribu.fr/internal/backup/
     contribuer/build_site/markdown_engine.md: https://contribuer.geotribu.fr/internal/markdown_engine/
     contribuer/workflow_article.md: https://contribuer.geotribu.fr/articles/workflow/
@@ -811,8 +815,8 @@ redirects:
     contribuer/edit/local_edition_setup.md: https://contribuer.geotribu.fr/edit/local_edition_setup/
     contribuer/guides/audio.md: https://contribuer.geotribu.fr/guides/audio/
     contribuer/guides/authoring.md: https://contribuer.geotribu.fr/guides/authoring/
-    contribuer/guides/cdn-images-hebergement.md: https://contribuer.geotribu.fr/guides/cdn/
-    contribuer/guides/cdn-images-recherche.md: https://contribuer.geotribu.fr/guides/cdn/
+    contribuer/guides/cdn-images-hebergement.md: https://contribuer.geotribu.fr/guides/cdn-images-hebergement/
+    contribuer/guides/cdn-images-recherche.md: https://contribuer.geotribu.fr/guides/cdn-images-recherche/
     contribuer/guides/diagrams.md: https://contribuer.geotribu.fr/guides/diagrams/
     contribuer/guides/emoji.md: https://contribuer.geotribu.fr/guides/emoji/
     contribuer/guides/image.md: https://contribuer.geotribu.fr/guides/image/
@@ -833,3 +837,12 @@ redirects:
     contribuer/rdp/publish.md: https://contribuer.geotribu.fr/rdp/publish/
     contribuer/rdp/structure_news.md: https://contribuer.geotribu.fr/rdp/structure_news/
     contribuer/rdp/workflow.md: https://contribuer.geotribu.fr/rdp/workflow/
+    contribuer/contribution_guide.md: https://contribuer.geotribu.fr/
+    contribuer/requirements.md: https://contribuer.geotribu.fr/requirements/
+    toc_nav_ignored/emojis_joypixels_preview.md: https://contribuer.geotribu.fr/toc_nav_ignored/emojis_joypixels_preview/
+
+    # migration
+    toc_nav_ignored/qgis_resources_preview_table.md: https://geotribu.github.io/pyqgis-icons-cheatsheet/
+
+    # divers
+    team/jemv.md: team/jvig.md

@@ -86,7 +86,7 @@ Au passage, on en profite pour essayer deux autres bibliothèques pour ce genre 
 
 ### Structure
 
-En regardant [les sources de l'article](view-source:http://cnig.gouv.fr/?p=23807), on sait que le contenu intéressant est dans la `div` de class `post-content` :
+En regardant [les sources de l'article](view-source:<http://cnig.gouv.fr/?p=23807)>, on sait que le contenu intéressant est dans la `div` de class `post-content` :
 
 ![Source HTML CNIG](https://cdn.geotribu.fr/img/tuto/webscraping/scraping_cnig_art_source.png "Les sources de l'article du CNIG "){: .img-center loading=lazy }
 

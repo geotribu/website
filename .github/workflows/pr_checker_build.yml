@@ -9,6 +9,9 @@ on:
 # Environment variables
 env:
   BUILD_DIR: build/mkdocs/site
+  LANG: "fr_FR.UTF-8"
+  LC_ALL: "fr_FR.UTF-8"
+  LC_TIME: "fr_FR.UTF-8"
   NETLIFY_SITE_NAME: geotribu-preprod
   NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
 
@@ -111,7 +114,7 @@ jobs:
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
 
       - name: Save build website as artifact
-        uses: actions/upload-artifact@v3.1.1
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: pr-build-website
           path: artifact.tar.zst
