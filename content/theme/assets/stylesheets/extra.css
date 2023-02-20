@@ -42,6 +42,11 @@ img {
   border: none;
 }
 
+.md-header__button.md-logo img {
+  box-shadow: none;
+  border: none;
+}
+
 .img-left {
   /* left align with text float on the right */
   float: left;
