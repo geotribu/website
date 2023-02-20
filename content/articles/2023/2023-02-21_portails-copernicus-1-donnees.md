@@ -5,7 +5,7 @@ authors:
     - Nicolas DAVID
 categories:
     - article
-date: "2023-02-03 10:20"
+date: "2023-02-21 09:00"
 description: "Introduction et description des données d'observation de la terre produite dans le cadre du progamme européen Copernicus"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.50f4fc3b.png"
 license: beerware
@@ -20,7 +20,7 @@ tags:
 
 # Accès aux données Copernicus, partie 1 : données OCS et Sentinel
 
-:calendar: Date de publication initiale : 17 février 2023
+:calendar: Date de publication initiale : 21 février 2023
 
 ## Introduction
 
@@ -33,8 +33,8 @@ Dans cette première partie nous revenons sur le programme Copernicus et surtout
 
 Série **Accès aux données Copernicus/Sentinel** :
 
-* [Partie 2 : portails d'accès, 'the road so far'](/articles/2023/2023-02-03_portails-copernicus-2-passe/).
-* [Partie 3 : évolution de l'accès aux données Copernicus](/articles/2023/2023-02-03_portails-copernicus-3-futur/).
+* Partie 2 : portails d'accès, 'the road so far' (publication le 28 février).
+* Partie 3 : évolution de l'accès aux données Copernicus (publication le 7 mars).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
