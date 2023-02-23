@@ -33,7 +33,7 @@ Dans cette première partie nous revenons sur le programme Copernicus et surtout
 
 Série **Accès aux données Copernicus/Sentinel** :
 
-* Partie 2 : portails d'accès, 'the road so far' (publication prévue le 28 février).
+* [Partie 2 : portails d'accès, 'the road so far'](/articles/2023/2023-02-28_portails-copernicus-1-passe/).
 * Partie 3 : évolution de l'accès aux données Copernicus (publication prévue le 7 mars).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
