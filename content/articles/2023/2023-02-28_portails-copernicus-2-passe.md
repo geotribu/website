@@ -145,7 +145,7 @@ Certaines infrastructures géographiques régionales proposent également un acc
 
 ----
 
-## Saison 2 : here com the dragons, GAFAM et réponse européenne
+## Saison 2 : here come the dragons, GAFAM et réponse européenne
 
 ### Google Earth Engine et Open Data AWS
 

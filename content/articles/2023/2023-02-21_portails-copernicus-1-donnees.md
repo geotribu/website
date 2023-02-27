@@ -7,14 +7,14 @@ categories:
     - article
 date: "2023-02-21 09:00"
 description: "Introduction et description des données d'observation de la terre produite dans le cadre du progamme européen Copernicus"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.50f4fc3b.png"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"
 license: beerware
 robots: index, follow
 tags:
-    - satellite
-    - Sentinel-2
     - Corine Land Cover
     - open data
+    - satellite
+    - Sentinel-2
     - télédétection
 ---
 
