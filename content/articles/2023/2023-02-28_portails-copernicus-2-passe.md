@@ -7,17 +7,17 @@ categories:
     - article
 date: "2023-02-28 09:00"
 description: "Historique des portails d'accès aux données Sentinel en Europe et en France et description de leur grandes fonctionnalités"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.50f4fc3b.png"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"
 license: beerware
 robots: index, follow
 tags:
+    - open data
+    - OSO
+    - PEPS    
     - satellite
     - Sentinel-2
-    - OSO
-    - PEPS
-    - Theia
-    - open data
     - télédétection
+    - Theia
 ---
 
 # Accès aux données Copernicus, partie 2 : portails d'accès aux données Sentinel, 'the road so far'
@@ -51,21 +51,22 @@ L'Europe a accompagné le lancement et la mise en production des différents sat
 
 ### Copernicus Open Access Hub : SciHub
 
-Le premier service d'accès aux données a été le Copernicus [Open Access Hub](<https://scihub.copernicus.eu/>) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, "https://scihub.copernicus.eu/", comme SciHub. Et c'est le nom qui sera utilisé dans le reste de cet article.
+Le premier service d'accès aux données a été le Copernicus [Open Access Hub](https://scihub.copernicus.eu/) ouvert en 2014 pour la diffusion des données du premier satellite Sentinel-1A. Toutefois ce portail est souvent désigné d'après son url d'accès, <https://scihub.copernicus.eu/>, comme "SciHub".  
+Et c'est le nom qui sera utilisé dans le reste de cet article.
 
 ![Portail scihub illustration](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/scihub_copernicus_access_hub_1.jpg "Portail scihub example page - Crédits ESA"){: .img-center loading=lazy }
 
-!!! warning
+!!! warning "Attention, risque de confusion"
     Ne pas confondre Scihub site copernicus d'accès aux données Sentinel avec sci-hub le fameux site pirate d'accès aux publications scientifiques.
 
-Le site Scihub offre principalement deux services : recherche de données et téléchargement de données.
+Le site Scihub offre principalement deux services : recherche de données et téléchargement de données.  
 Ces fonctionnalités sont disponibles soit graphiquement via un site internet soit via des [API](https://scihub.copernicus.eu/userguide/APIsOverview).
-Ces dernières sont adaptées des API REST de type [OpenSearch](https://www.opensearch.org/) ou [OData,(Open Data Protocol)](https://www.odata.org/).
+Ces dernières sont adaptées des API REST de type [OpenSearch](https://www.opensearch.org/) ou [OData (_Open Data Protocol_)](https://www.odata.org/).
 L'accès aux données est gratuit pour toute personne mais il existe toutefois une limitation de débit et du nombre de téléchargement en parallèle possible par utilisateur.
 
 Concrètement un appel à l'API OpenSearch pour chercher les images Sentinel-2 disponibles aux alentours de Clermont-Ferrand depuis le début de l'année ressemble alors à :
 
-```bash
+```sh
 URL="https://scihub.copernicus.eu/dhus/search?q="
 BBOX="footprint:'Intersects(POLYGON((3.0 47.4, 3.1 47.4,3.1 47.5,3.0 47.5,3.0 47.4)))'"
 DATES="beginposition:[2023-01-01T00:00:00.000Z TO 2023-02-14T00:00:00.000Z]"
@@ -77,17 +78,19 @@ wget --no-check-certificate --user={USERNAME} --password={PASSWORD} ${QUERY}
 ```
 
 !!! note
-    Le code du portail scihub est lui même opensource via le projet **sentineldatahub**. Liens pour la [documentation](https://sentineldatahub.github.io/DataHubSystem/index.html) et le [github](https://github.com/SentinelDataHub/DataHubSystem)
+    Le code du portail scihub est lui même opensource via le projet **sentineldatahub**. Liens pour la [documentation](https://sentineldatahub.github.io/DataHubSystem/index.html) et le [github](https://github.com/SentinelDataHub/DataHubSystem).
 
 La communauté d'utilisateurs a développé différents outils open-source permettant de faciliter l'utilisation de ces API dans votre langage de programmation préféré.
 
 Ici un exemple d'utilisation en python de l'outil [SentinelSat](https://sentinelsat.readthedocs.io/en/stable/), pour télécharger des données Sentinel-2 du début d'année vers Clermont.
 
 ``` py
-# connect to the API
-from sentinelsat import SentinelAPI
+# imports
 from datetime import date
+from sentinelsat import SentinelAPI
 
+
+# connect to the API
 api = SentinelAPI('user', 'password', 'https://apihub.copernicus.eu/apihub')
 
 # recherche par polygone, date et type de données
@@ -113,9 +116,9 @@ On peut citer par exemple [le portail autrichien](https://data.sentinel.zamg.ac.
 
 ### Portails français PEPS et THEIA
 
-En France il existe actuellement deux portails nationaux d'accès aux données Sentinel : [PEPS](https://peps.cnes.fr/rocket/#/home) et [THEIA](https://theia.cnes.fr/atdistrib/rocket/#/home).
-
 ![logo PEPS](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/peps.png "Logo PEPS"){: .img-rdp-news-thumb }
+
+En France il existe actuellement deux portails nationaux d'accès aux données Sentinel : [PEPS](https://peps.cnes.fr/rocket/#/home) et [THEIA](https://theia.cnes.fr/atdistrib/rocket/#/home).
 
 [PEPS](https://peps.cnes.fr/rocket/#/home) (Plateforme d’Exploitation des Produits Sentinel) est un portail développé et maintenu par le CNES qui offre la recherche et le téléchargement des données Sentinel-1 et Sentinel-2.
 Par rapport à l'offre de base Scihub, PEPS permet un accès un peu plus rapide aux données en France (meilleur débit) mais aussi des post-traitements de données supplémentaires comme l'extraction de bande ou l'orthorectification des données SAR Sentinel-1 sur la géométrie "grille" de diffusion des données Sentinel-2 via [S1-tiling](https://gitlab.orfeo-toolbox.org/s1-tiling/s1tiling).
@@ -138,9 +141,11 @@ En plus des données Sentinel, THEIA donne aussi accès à des produits dérivé
 Certaines infrastructures géographiques régionales proposent également un accès local aux données Copernicus : [mviewer geobretagne](https://geobretagne.fr/pub/dreal_b/mviewer/?config=../apps/teledetection/config.xml)
 
 !!! note
-    Les portails PEPS et THEIA utilisent l'outil [RESTO](https://github.com/jjrom/resto) donc le code est aussi disponible sur github
+    Les portails PEPS et THEIA utilisent l'outil [RESTO](https://github.com/jjrom/resto) dont le code est aussi disponible sur GitHub.
 
-## Saison 2 : here comme the dragons, GAFAM et réponse européenne
+----
+
+## Saison 2 : here com the dragons, GAFAM et réponse européenne
 
 ### Google Earth Engine et Open Data AWS
 
