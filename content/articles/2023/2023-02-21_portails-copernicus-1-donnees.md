@@ -7,14 +7,14 @@ categories:
     - article
 date: "2023-02-21 09:00"
 description: "Introduction et description des données d'observation de la terre produite dans le cadre du progamme européen Copernicus"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.50f4fc3b.png"
+image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"
 license: beerware
 robots: index, follow
 tags:
-    - satellite
-    - Sentinel-2
     - Corine Land Cover
     - open data
+    - satellite
+    - Sentinel-2
     - télédétection
 ---
 
@@ -33,7 +33,7 @@ Dans cette première partie nous revenons sur le programme Copernicus et surtout
 
 Série **Accès aux données Copernicus/Sentinel** :
 
-* Partie 2 : portails d'accès, 'the road so far' (publication prévue le 28 février).
+* [Partie 2 : portails d'accès, 'the road so far'](/articles/2023/2023-02-28_portails-copernicus-2-passe/).
 * Partie 3 : évolution de l'accès aux données Copernicus (publication prévue le 7 mars).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -146,4 +146,4 @@ Si tout cela n'a pas encore suffi à satisfaire vos mirettes, ou que vous souhai
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/ndavid.md"
+--8<-- "content/team/ndav.md"
