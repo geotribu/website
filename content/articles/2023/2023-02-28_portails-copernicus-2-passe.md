@@ -211,4 +211,4 @@ Et si vous vous demandez si cela est vraiment bien raisonnable de devoir avoir 4
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/ndavid.md"
+--8<-- "content/team/ndav.md"
