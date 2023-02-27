@@ -13,7 +13,7 @@ robots: index, follow
 tags:
     - open data
     - OSO
-    - PEPS    
+    - PEPS  
     - satellite
     - Sentinel-2
     - télédétection
