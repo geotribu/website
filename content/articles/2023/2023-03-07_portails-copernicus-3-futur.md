@@ -53,23 +53,24 @@ Après quatre ans de retours d'expériences sur le déploiement et l'exploitatio
 Concrètement l'évolution consiste à sélectionner un consortium (décembre 2022) afin d'opérer d'une part une nouvelle version du portail open-data européen Scihub qui offrira des fonctionnalités similaires aux DIAS mais en une version gratuite, avec toutefois une limitation de quota, et d'autre part à offrir une version payante de ce service aux chercheurs, organismes publiques et industriels qui le souhaitent.
 Cette version "non free" doit permettre de disposer de ressources de stockage/calcul et d'accès aux services non limités moyennant finance.
 
-Le déploiement de ce nouveau service a commencé depuis fin janvier 2023 avec la mise en place de service dans la continuité de ceux offerts par Scihub et s'étoffera progressivement de nouveaux services (plutôt issus des offres DIAS actuelles) jusqu'à juin 2023 où le service devra avoir atteint sa phase opérationnelle complète et date à laquelle l'ancien service Scihub devrait être arrêté.
+Le déploiement de ce nouveau service a commencé depuis fin janvier 2023 avec la mise en place de service dans la continuité de ceux offerts par Scihub et s'étoffera progressivement de nouveaux services (plutôt issus des offres DIAS actuelles) jusqu'à juin 2023 où le service devra avoir atteint sa phase opérationnelle complète, et date à laquelle l'ancien service Scihub devrait être arrêté.
 
 ![Portail dataspace service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/dataspace_service_description.png "Portail dataspace service- Crédits ESA"){: .img-center loading=lazy }
 
-Le premier contrat d'exploitation de ce nouveau service est d'une durée de six ans avec une extension possible de dix ans, soit possiblement une continuité de service sur seize ans.
-
+Le premier contrat d'exploitation de ce nouveau service est d'une durée de six ans avec une extension possible de dix ans, soit possiblement une continuité de service sur seize ans.  
 Le consortium qui a été retenu est constitué d'industriels participants aux DIAS Mundi et Creodias : T-Systems, CloudFerro, Sinergise, VITO,  DLR, ACRI-ST et RHEA
 
-* [T-System](https://www.telekom.com/en/media/media-information/archive/copernicus-data-space-1024098) : fournisseur de service et infra cloud
-* [CloudFerro](https://cloudferro.com/en/news/cloudferro-and-its-partners-are-building-copernicus-data-access-service/) : exploitation de l'infra T-System pour y déployer et mettre en place une solution de stockage et accès aux données Sentinel
+* [T-System](https://www.telekom.com/en/media/media-information/archive/copernicus-data-space-1024098) : fournisseur de service et infra cloud.
+* [CloudFerro](https://cloudferro.com/en/news/cloudferro-and-its-partners-are-building-copernicus-data-access-service/) : exploitation de l'infra T-System pour y déployer et mettre en place une solution de stockage et accès aux données Sentinel.
 * [Sinergise](https://sinergise.com/en/news/copernicus-data-access-service-delivers-first-results) : développement d'une offre de service sur l'accès aux données Sentinel (API de téléchargement, visualisation etc..) et d'un portail de visualisation et d'accès aux données.
 * [VITO](https://remotesensing.vito.be/new-copernicus-data-access-service-kicked) : développement d'une offre de service/accès basé sur OpenEo.
-* [DLR](https://www.dlr.de/content/en/articles/news/2023/01/20230124_new-data-platform-to-host-copernicus-earth-observation-data.html) : expertise archivage, traitement de données satellites (SAR / Sentinel 1 en particulier)
-* [ACRI-ST](https://www.acri-st.fr/fr/portfolio) : expertise exploitation et traitement de données satellites Sentinel (Sentinel 2 et 3)
+* [DLR](https://www.dlr.de/content/en/articles/news/2023/01/20230124_new-data-platform-to-host-copernicus-earth-observation-data.html) : expertise archivage, traitement de données satellites (SAR / Sentinel 1 en particulier).
+* [ACRI-ST](https://www.acri-st.fr/fr/portfolio) : expertise exploitation et traitement de données satellites Sentinel (Sentinel 2 et 3).
 * [RHEA](https://www.rheagroup.com/fr/rhea-accompagne-le-deploiement-du-nouvel-ecosysteme-de-donnees-spatiales-copernicus/) apport et traitement des données des "mission contributives" Copernicus (CCM) ainsi que le contrôle de leur accès. Ces données n'étant pas toutes open-data/open-access.
 
-A noter que la mise en place de ce portail s'inscrit dans la stratégie européenne concernant [destination earth](https://digital-strategy.ec.europa.eu/en/policies/destination-earth) un projet européen sur la création de "#Digitial Twins"
+A noter que la mise en place de ce portail s'inscrit dans la stratégie européenne concernant [destination earth](https://digital-strategy.ec.europa.eu/en/policies/destination-earth) un projet européen sur la création de "#Digitial Twins".
+
+----
 
 ## Détails de la nouvelle offre d'accès Sentinel
 
@@ -143,7 +144,7 @@ Un exemple de ce type de données est la [couverture satellite de l'Europe pour 
     Par contre les données d'apprentissage utilisées pour la production semi-automatique des couches HRL ne semblent pas au programme. Donc on ne peut pas encore considérer ces couches comme étant très reproductibles et suivant les principes F.A.I.R.
 
 Et enfin, de la même façon que le portail PEPS en France, un ensemble de fonctionnalités de post-traitements à la demande devrait être disponible.
-Entre autre cela devrait couvrir la possibilité d'effectuer des corrections atmosphériques avec le processeur MAJA et la production de produits dérivés Sentinel-1 comme la cohérence entre 2 dates (produit utilisé par exemple dans les algorithmes pour le suivi des cultures).
+Entre autre cela devrait couvrir la possibilité d'effectuer des corrections atmosphériques avec le processeur MAJA et la production de produits dérivés Sentinel-1 comme la cohérence entre 2 dates (produit utilisé par exemple dans les algorithmes pour le suivi des cultures).  
 Ces offres de traitements de données devraient aussi suivre les recommandations pour les produits CARD4L, [CEOS Analysis Ready Data for Land](https://ceos.org/ard/)
 
 À noter, qu'a priori, il ne devrait plus y avoir de notions de données online/offline dépendant de la date d'acquisition des données.
@@ -243,4 +244,4 @@ Ce code devant permettre d'arriver à l'image ci-dessous :
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/ndavid.md"
+--8<-- "content/team/ndav.md"
