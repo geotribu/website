@@ -3,8 +3,16 @@
 {% block styles %}
 {{ super() }}
 
-<link rel=stylesheet href=theme/assets/stylesheets/homepage.min.css>
+<link rel="stylesheet" type="text/css" href="theme/assets/stylesheets/homepage.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
 {% endblock %}
+
+{% block scripts %}
+<!-- Add scripts that need to run before here -->
+{{ super() }}
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+{% endblock %}
+
 
 <!-- Render hero under tabs -->
 {% block tabs %}
@@ -26,6 +34,19 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="glider-contain">
+  <div class="glider">
+    <div>your content here</div>
+    <div>your content here</div>
+    <div>your content here</div>
+    <div>your content here</div>
+  </div>
+
+  <button aria-label="Previous" class="glider-prev">«</button>
+  <button aria-label="Next" class="glider-next">»</button>
+  <div role="tablist" class="dots"></div>
 </div>
 
 <!-- Content -->

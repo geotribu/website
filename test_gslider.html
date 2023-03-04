@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" type="text/css" href="titi.css" />
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="demo persp">
+        <h2>Perspective View</h2>
+        <div data-name="Perspective View" class="glider-contain multiple">
+            <div class="glider glider-persp" id="glider-persp">
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>1</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>2</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>3</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>4</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>5</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>6</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>7</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>8</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>9</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>11</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>12</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>13</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>14</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gradient-border-bottom">
+                        <div class="gradient-border">
+                            <h1>15</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-per"><i
+                    class="fa fa-chevron-left"></i></i></button>
+            <button role="button" aria-label="Next" class="glider-next" id="glider-next-per"><i
+                    class="fa fa-chevron-right"></i></i></button>
+            <div id="dots-per"></div>
+        </div>
+        <script>
+            window.addEventListener('load', function () {
+                window.glides = new Glider(document.getElementById('glider-persp'), {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    draggable: true,
+                    dots: '#dots-per',
+                    arrows: {
+                        prev: '#glider-prev-per',
+                        next: '#glider-next-per'
+                    }
+                })
+            });
+        </script>
+    </div>
+</body>
+
+</html>
