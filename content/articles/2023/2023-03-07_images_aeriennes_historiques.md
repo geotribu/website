@@ -307,7 +307,7 @@ Mes Options de traitement à adapter en fonction des images :
 
 ![Tableau de bord](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_tableau_bord.png){: .img-center loading=lazy }
 
-A la fin du traitement, vous allez pouvoir visualiser les données et télécharger les différentes ressources.
+À la fin du traitement, vous allez pouvoir visualiser les données et télécharger les différentes ressources.
 
 ![Visualisation et téléchargement des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/webodm_fin.png){: .img-center loading=lazy }
 
