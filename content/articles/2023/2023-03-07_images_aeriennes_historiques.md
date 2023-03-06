@@ -113,7 +113,7 @@ Pour trouver l'identifiant de la mission, il faut :
 Si vous préférez une méthode plus automatique pour identifier toutes les missions qui ont été réalisées sur votre territoire, vous pouvez opter pour ce script qui permet après avoir paramétré son environnement de travail de télécharger un fichier `json` des missions et de le convertir au format `csv`.
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 
 # LECTURE DU FICHIER DE CONFIGURATION
 . './config.env'
