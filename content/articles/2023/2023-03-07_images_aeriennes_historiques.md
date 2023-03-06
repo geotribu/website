@@ -108,7 +108,7 @@ Pour trouver l'identifiant de la mission, il faut :
 
 ![Remonter le temps](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/remonterletemps_img.png){: .img-center loading=lazy }
 
-### A travers un script
+### À travers un script
 
 Si vous préférez une méthode plus automatique pour identifier toutes les missions qui ont été réalisées sur votre territoire, vous pouvez opter pour ce script qui permet après avoir paramétré son environnement de travail de télécharger un fichier `json` des missions et de le convertir au format `csv`.
 
