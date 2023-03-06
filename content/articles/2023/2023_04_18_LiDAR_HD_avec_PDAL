@@ -31,7 +31,6 @@ tags:
 
 ![logo ign](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }
 
-
 A ce jour le programme [LiDAR HD](https://geoservices.ign.fr/lidarhd) a permis de fournir des données d'une très grande précision sur une partie du territoire mais en attendant la production des données classifiées (des échantillons de test sont disponibles) seul les données "brutes" sont disponibles. Je vous propose donc un retour d'expérience sur la distinction du sol et du sursol à l'aide de PDAL.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
