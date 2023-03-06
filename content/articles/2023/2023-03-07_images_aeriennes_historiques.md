@@ -294,7 +294,7 @@ Les étapes à suivre :
 
 1. Créer un projet
 2. Sélectionner les images et le fichier GCP
-3. Choisir les Options de traitement.
+3. Choisir les Options de traitement
 4. Valider les spécifications
 5. Lancer le traitement
 6. Surveiller les logs et patienter le temps du traitement.
