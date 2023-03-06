@@ -199,7 +199,7 @@ ENCODAGE='UTF-8'
 [Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/4_non_ground.json){: .md-button }
 {: align=middle }
 
-#### Fusionner les dalles 
+#### Fusionner les dalles
 
 ```json
 {
