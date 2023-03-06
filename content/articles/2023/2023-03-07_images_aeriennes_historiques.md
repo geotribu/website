@@ -97,7 +97,7 @@ ENCODAGE='UTF-8'
 
 ![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "icône IGN"){: .img-rdp-news-thumb }
 
-Les images mises à disposition par l'IGN sur le site [Remonter le temps](https://remonterletemps.ign.fr) peuvent être consultées par année de prise de vue ce qui dans les faits correspond plutôt aux différentes missions réalisées.
+Les images mises à disposition par l'IGN sur le site [Remonter le temps](https://remonterletemps.ign.fr) peuvent être consultées par année de prise de vue, ce qui dans les faits, correspond plutôt aux différentes missions réalisées.
 
 Pour trouver l'identifiant de la mission, il faut :
 
