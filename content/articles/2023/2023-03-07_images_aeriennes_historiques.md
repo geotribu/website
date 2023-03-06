@@ -166,7 +166,7 @@ On ne peut pas dire que l'IGN nous facilite la tâche sur l'identification et le
 Pour identifier les images d'une mission, il faut télécharger un premier fichier `kml` qui sert de point de départ pour chercher une filiation et trouver des enfants, petits enfants et arrières petits enfants de `kml`. Je ne sais pas pour quelle raison l'IGN a procédé ainsi mais pour une mission, les informations sur les images (leur description et leur emprise) sont réparties dans différents fichiers `kml` qu'il faut parcourir.
 
 ```bash
-# TELECHARGER LE FICHIER DE DEPART DE LA MISSION
+# TÉLÉCHARGER LE FICHIER DE DÉPART DE LA MISSION
 curl "https://wxs.ign.fr/$key/dematkml/DEMAT.PVA/$id_mission/t.kml" > $folder_mission'/kml/'$id_mission'.kml'
 ```
 
