@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 date: "2023-03-07 09:00"
-description: "Évolution des portails d'accès aux données europénnes de la constellation satellites Sentinel : des début en 2015 aux évolutions prévues en 2023"
+description: "Évolution des portails d'accès aux données europénnes de la constellation satellites Sentinel : des débuts en 2015 aux évolutions prévues en 2023"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"
 license: beerware
 robots: index, follow
@@ -17,7 +17,6 @@ tags:
     - Sentinel-2
     - télédétection
     - WMS
-
 ---
 
 # Accès aux données Copernicus, partie 3 : évolution de l'accès aux données Copernicus
@@ -32,7 +31,7 @@ L'Europe fait évoluer, en 2023, les possibilités d'accès aux différentes don
 Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service au cours de trois articles, chacun dédié à une partie pour faciliter la lecture et le "picorage" d'information à ceux qui connaissent déjà le sujet.
 
 Ce troisième article se propose de détailler les fonctionnalités prévues pour ce nouveau service.
-En particulier, outre le téléchargement des données Sentinel en Open-data, leur accès via différents services "free" de plus haut niveaux est au programme, soit : visualisation des données via des flux, accès facilité aux données anciennes, utilisation des technologies dites "cloud ready"  etc.
+En particulier, outre le téléchargement des données Sentinel en Open-data, leur accès via différents services "free" de plus hauts niveaux est au programme, soit : visualisation des données via des flux, accès facilité aux données anciennes, utilisation des technologies dites "cloud ready", etc.
 
 Série **Accès aux données Copernicus/Sentinel** :
 
@@ -241,6 +240,8 @@ Ce code devant permettre d'arriver à l'image ci-dessous :
     Beaucoup de ces nouveaux services sont en partie issus de travaux
     menés dans différents projets européens lors des dernières années :
     [OPENEO](https://openeo.org/)
+
+## Conclusion
 
 ## Auteur {: data-search-exclude }
 
