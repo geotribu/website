@@ -189,7 +189,7 @@ Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://
 
 ## Un exemple d'utilisation : le monitoring PAC
 
-Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre, leur utilisation par les différents organismes de contrôles et paiements associés à la PAC (Politique Agricole Commune) pour la mise en place d'un "monitoring CAP".
+Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre, leur utilisation par les différents organismes de contrôles et paiements associés à la PAC (Politique Agricole Commune) pour la mise en place d'un "monitoring PAC".
 En effet l'Europe a souhaité faire évoluer les contrôles terrain ponctuels associés au versement des aides PAC vers un ["monitoring"](https://publications.jrc.ec.europa.eu/repository/handle/JRC112913), exhaustif spatialement, et réalisé de manière semi-automatique via l'exploitation des données Sentinel-1 et 2.
 Ces dernières devant permettre entre autre de vérifier la présence ou non d'activités agricoles (présence de culture annuelle, détection de fauche de prairie etc..) sur une parcelle donnée.
 
