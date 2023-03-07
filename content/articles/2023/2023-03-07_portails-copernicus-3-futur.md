@@ -243,10 +243,10 @@ Ce code devant permettre d'arriver à l'image ci-dessous :
 
 ## Conclusion
 
-J'espère que cette série d'articles vous aura plu et donné l'envie d'utiliser un peu les données du programme Copernicus, qui offrent déjà de très belles opportunités pour l'observation des territoires et promettent d'en offrir encore plus dans l'avenir, que cela soit au niveau de données disponibles ou bien des différents outils de l'écosystème Copernicus.  
+J'espère que cette série d'articles vous aura plu et donné l'envie d'utiliser les données du programme Copernicus, qui offrent déjà de très belles opportunités pour l'observation des territoires et promettent d'en offrir encore plus dans l'avenir, que cela soit au niveau de données disponibles ou bien des différents outils de l'écosystème Copernicus.  
 Pour commencer à prendre en main ces données et comme je trouve que juste leur visualisation est déjà jolie je ne peux que vous conseiller d'aller jouer un peu avec le nouvel outil de génération de "timelaps animation" disponible sur le nouveau [visualisateur du dataspace copernicus](https://dataspace.copernicus.eu/browser). Voir quelques exemples et un [petit tutoriel](https://medium.com/sentinel-hub/timelapse-in-eo-browser-962a78e3ee53) sur le blog sentinel-hub.
 
-Et bien sur n'hésitez pas à revenir partager ici vos exemples d'utilisation ou vos plus jolies visualisations de données !
+Et bien sûr, n'hésitez pas à revenir partager ici vos exemples d'utilisation ou vos plus jolies visualisations de données !
 
 ## Auteur {: data-search-exclude }
 
