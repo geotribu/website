@@ -17,7 +17,7 @@ tags:
 
 # Qualité des données : un voyage sur la plateforme humanitaire d'OpenStreetMap
 
-:calendar: Date de publication initiale : 24 février 2023
+:calendar: Date de publication initiale : 24 mars 2023
 
 ## Introduction
 
