@@ -10,9 +10,9 @@ image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant
 license: default
 robots: index, follow
 tags:
-    - OpenStreetMap
-    - JOSM
     - HOT OSM
+    - JOSM
+    - OpenStreetMap
 ---
 
 # Qualité des données : un voyage sur la plateforme humanitaire d'OpenStreetMap
