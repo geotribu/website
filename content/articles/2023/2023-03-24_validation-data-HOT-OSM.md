@@ -29,7 +29,7 @@ Pour moi, c’est le signal que [HOT](https://tasks.hotosm.org/explore), la plat
 
 Car très vite en effet, la plateforme propose différents projets afin de cartographier, grâce aux images aériennes, une zone découpée en petits carrés.
 
-![Début de validation d'une zone avec des carrés plus ou moins carrés](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/00_hot_grille_travail.webp)
+![Début de validation d'une zone avec des carrés plus ou moins carrés](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/00_hot_grille_travail.webp){: .img-center loading=lazy }
 
 > Plus ou moins carrés : en bleu cartographié, cadenas pour le travail en cours, en vert validé, en gris mauvaise imagerie
 
