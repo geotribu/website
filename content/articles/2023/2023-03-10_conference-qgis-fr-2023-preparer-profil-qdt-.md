@@ -32,7 +32,6 @@ Prérequis :
 - tout au clic sur des interfaces graphiques
 - tout à la ligne de commande
 
-
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
@@ -41,9 +40,6 @@ Prérequis :
 ## J'aime le son du clic
 
 ![Pour l'amour de la souris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/souris_old_school.gif){: .img-center loading=lazy }
-
-
-
 
 ----
 
@@ -56,8 +52,6 @@ Prérequis complémentaires :
 ![Pour l'amour du clavier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/clavier_joie.gif){: .img-center loading=lazy }
 
 ### Installer
-
-
 
 <!-- markdownlint-disable MD046 -->
 === ":fontawesome-brands-linux: Linux"
