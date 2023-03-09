@@ -1,5 +1,6 @@
 ---
-title: "Préparez la conférence QGIS FR avec le profil QGIS"
+title: "Préparez la conférence QGIS FR avec QDT"
+subtitle: Venez avec votre meilleur profil
 authors:
     - Julien MOURA
 categories:
@@ -10,13 +11,13 @@ image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant
 license: beerware
 robots: index, follow
 tags:
-    - OSGeo FR
+    - OSGeo-fr
     - QDT
     - QGIS Deployment Toolbelt
     - QGIS
 ---
 
-# La conférence QGIS FR approche : préparez votre environnement avec QDT !
+# La conférence QGIS FR approche : préparez votre environnement avec QDT
 
 :calendar: Date de publication initiale : 10 mars 2023
 
@@ -27,10 +28,10 @@ Prérequis :
 
 ## Introduction
 
-2 modes d'installation et d'utilisation au choix détaillés dans cet article :
+2 modes d'installation et d'utilisation au choix dans cet article :
 
-- tout au clic sur des interfaces graphiques
-- tout à la ligne de commande
+- [tout au clic sur des interfaces graphiques](#jaime-le-son-du-clic)
+- [tout à la ligne de commande](#jaime-le-bruit-des-touches)
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -40,6 +41,11 @@ Prérequis :
 ## J'aime le son du clic
 
 ![Pour l'amour de la souris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/souris_old_school.gif){: .img-center loading=lazy }
+
+1. [Télécharger l'exécutable de QDT pour votre système d'exploitation depuis la page de documentation](https://guts.github.io/qgis-deployment-cli/usage/installation.html)
+1. S'assurer qu'il soit autorisé à s'exécuter
+1. Télécharger le fichier du scénario dans le même dossier que l'exécutable
+1. Double-cliquer sur l'exécutable
 
 ----
 
@@ -54,7 +60,7 @@ Prérequis complémentaires :
 ### Installer
 
 <!-- markdownlint-disable MD046 -->
-=== ":fontawesome-brands-linux: Linux"
+=== ":fontawesome-brands-linux: Linux et assimilés"
 
     Exemple sur Ubuntu LTS (22.04 à date) :
 
@@ -70,7 +76,7 @@ Prérequis complémentaires :
 
 ### Exécuter
 
-=== ":fontawesome-brands-linux: Linux"
+=== ":fontawesome-brands-linux: Linux et assimilés"
 
     Exemple sur Ubuntu LTS (22.04 à date) :
 
