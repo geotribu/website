@@ -74,6 +74,27 @@ Prérequis complémentaires :
     py -3 -m pip install --user --upgrade qgis-deployment-toolbelt
     ```
 
+### Configurer
+
+<!-- markdownlint-disable MD046 -->
+=== ":fontawesome-brands-linux: Linux et assimilés"
+
+    Si QGIS est installé "normalement" avec les paquets officiels ([voir cet article](/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/)) et donc accessible sur `/usr/bin/qgis`, il n'y a rien à faire.  
+
+    Sinon, par exemple dans le cas où plusieurs versions de QGIS sont installées sur la machine, il est possible de spécifier le chemin vers l'exécutable de la version à utiliser :
+
+    ```sh
+    export QDT_QGIS_EXE_PATH=/path/to/bin/qgis-custom
+    ```
+
+=== ":window: Windows"
+
+    Par défaut QDT va
+
+    ```powershell
+    $env:QDT_QGIS_EXE_PATH="C:\\path\\to\\qgis-ltr-bin.exe"
+    ```
+
 ### Exécuter
 
 === ":fontawesome-brands-linux: Linux et assimilés"
@@ -81,13 +102,13 @@ Prérequis complémentaires :
     Exemple sur Ubuntu LTS (22.04 à date) :
 
     ```sh
-    qdt --scenario-path https://gitlab.com/Oslandia/qgis/profils_qgis_fr_2022/-/raw/main/qdt_scenarii/scenario.qdt.yml
+    qdt --scenario-path https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
     ```
 
 === ":window: Windows"
 
     ```powershell
-    qdt --scenario-path https://gitlab.com/Oslandia/qgis/profils_qgis_fr_2022/-/raw/main/qdt_scenarii/scenario.qdt.yml
+    qdt --scenario-path https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
     ```
 
 ----
