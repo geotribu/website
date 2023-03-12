@@ -5,9 +5,9 @@ authors:
     - Julien MOURA
 categories:
     - article
-date: "2023-03-10 10:20"
-description: "Description pour le SEO."
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
+date: "2023-03-12 18:20"
+description: "Afin de suivre au mieux les rencontres 2023 des utilisateurs francophones de QGIS, on vous propose de déployer facilement un profil QGIS avec tout ce qu'il faut dedans pour suivre les ateliers et présentations. Bonne conférence !"
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qgis_ecran_demarrage_conf_qgis_fr_2023.png
 license: beerware
 robots: index, follow
 tags:
@@ -19,14 +19,16 @@ tags:
 
 # La conférence QGIS FR approche : préparez votre environnement avec QDT !
 
-:calendar: Date de publication initiale : 10 mars 2023
+:calendar: Date de publication initiale : 12 mars 2023
 
 Prérequis :
 
 - QGIS
-- une connexion internet autorisée vers pypi.org et github.com
+- une connexion internet autorisée vers <https://github.com>
 
 ## Introduction
+
+![logo conf QGIS FR 2023](https://cdn.geotribu.fr/img/external/salons_conferences/qgis_fr/qgis_journees_francophones_2023_logo.svg){: .img-rdp-news-thumb }
 
 2 modes d'installation et d'utilisation au choix dans cet article :
 
@@ -54,6 +56,7 @@ Prérequis :
 Prérequis complémentaires :
 
 - Python 3.10 ou supérieur - si vous êtes sur Windows, [voir notre article dédié](/articles/2020/2020-06-19_setup_python/)
+- une connexion internet autorisée vers <https://pypi.org>
 
 ![Pour l'amour du clavier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/clavier_joie.gif){: .img-center loading=lazy }
 
@@ -89,7 +92,7 @@ Prérequis complémentaires :
 
 === ":window: Windows"
 
-    Par défaut QDT va
+    Si QGIS 3.28.4 est installé avec l'installateur officiel sans personnalisation du chemin d'installation (ne pas [voir cet article](/articles/2020/2020-07-03_deploy_qgis_windows/ "Installer QGIS avec PowerShell et l'OSGeo4W")) et donc accessible sur `C:\Program Files\QGIS 3.28.4\bin\qgis-ltr-bin.exe`, il n'y a rien à faire.
 
     ```powershell
     $env:QDT_QGIS_EXE_PATH="C:\\path\\to\\qgis-ltr-bin.exe"
@@ -110,6 +113,19 @@ Prérequis complémentaires :
     ```powershell
     qdt --scenario-path https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
     ```
+
+----
+
+## Résulat
+
+![Ecran de démarrage du profil conf QGIS FR 2023](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qgis_ecran_demarrage_conf_qgis_fr_2023.png){: .img-center loading=lazy }
+
+----
+
+## Crédits
+
+- le logo du profil est réalisé par Sylvain Beorchia pour l'OSGeo-FR avec l'accord du projet QGIS
+- l'image utilisée pour le splash screen réutilise la montgolfière avec l'accord de son auter (Sylvain Beorchia) et une carte libre de droits de la cartothèque de la BNF
 
 ----
 
