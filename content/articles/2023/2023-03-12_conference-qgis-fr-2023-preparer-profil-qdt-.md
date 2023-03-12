@@ -125,6 +125,8 @@ Prérequis complémentaires :
 
     Un raccourci permettant de lancer QGIS avec le profil est créé dans le menu des Appications et sur le bureau. Pour que ce dernier soit fonctionnel, il faut faire un clic-droit et sélectionner `Autoriser l'exécution` :
 
+    ![Autoriser l'exécution d'un raccourci sur le bureau GNOME](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/gnome_autoriser_racourci_bureau.webp){: .img-center loading=lazy }
+
 === ":window: Windows"
 
     ```powershell
