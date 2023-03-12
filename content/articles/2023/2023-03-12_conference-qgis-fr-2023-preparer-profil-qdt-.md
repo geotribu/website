@@ -30,6 +30,19 @@ Prérequis :
 
 ![logo conf QGIS FR 2023](https://cdn.geotribu.fr/img/external/salons_conferences/qgis_fr/qgis_journees_francophones_2023_logo.svg){: .img-rdp-news-thumb }
 
+Organisées par l'OSGeo-FR, les rencontres des utilisateurs francophones de QGIS sont clairement l'événement annuel à ne pas rater quand on travaille avec ce logiciel SIG, qu'on parle français ou qu'on peut difficilement envisager des déplacements à l'étranger (le prochain [QGIS User meeeting se tiendra en avril aux Pays-Bas](https://uc2023.qgis.nl/)).
+
+Cette année encore, malgré toute ma bonne volonté, je n'ai pas réussi à dégager suffisamment de temps pour m'impliquer réellement dans l'organisation amont (je serai présent pour aider). Pour me rattraper, je me suis dit que j'allais faire un petit article, [à l'instar de celui de l'an dernier](/articles/2022/2022-01-12_rencontres_qgis_francophones_liens_utiles_ateliers/). Je profite de ce billet pour tirer mon chapeau au gros gros travail des bénévoles et du CRAIG :clap:. Un événement comme celui-ci mobilise beaucoup d'énergie, d'idées, d'initiative et de temps. Sur la base du seul bénévolat, c'est remarquable.
+
+Prenez donc aussi le temps d'aller les remercier, que ce soit par un toot/[tweet](https://twitter.com/JourneesQgis/), un [message sur le GitLab](https://gitlab.com/osgeo-fr/journees_qgis/-/issues), un mail ou un mot gentil en privé ou en live. Je vous attends ici pour la suite :wink:.
+
+C'est bon ? bien, je reprends.  
+Une conférence QGIS donne à voir l'hétérogénéité des usages, fonctionnalités et outils de l'écosystème QGIS. Il y a donc beaucoup de plugins et autres configurations qui sont présentés et évoqués. Je vous propose donc de déployer facilement un profil QGIS dédié qui contient tout ce qui va être évoqué durant les ateliers et les présentations.
+
+![Un profil QGIS tout compris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/all_inclusive_qgis.webp){: .img-center loading=lazy }
+
+C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.github.io/qgis-deployment-cli/) (QDT pour les intimes), un projet sur lequel je travaille depuis un an à Oslandia et qui fera justement l'objet d'une présentation par Emilie Bigorne (EPT Loire) mardi.
+
 2 modes d'installation et d'utilisation au choix dans cet article :
 
 - [tout au clic sur des interfaces graphiques](#jaime-le-son-du-clic)
@@ -110,6 +123,8 @@ Prérequis complémentaires :
     qdt --scenario https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
     ```
 
+    Un raccourci permettant de lancer QGIS avec le profil est créé dans le menu des Appications et sur le bureau. Pour que ce dernier soit fonctionnel, il faut faire un clic-droit et sélectionner `Autoriser l'exécution` :
+
 === ":window: Windows"
 
     ```powershell
@@ -127,7 +142,7 @@ Prérequis complémentaires :
 ## Crédits
 
 - le logo du profil est réalisé par Sylvain Beorchia pour l'OSGeo-FR avec l'accord du projet QGIS
-- l'image utilisée pour le splash screen réutilise la montgolfière avec l'accord de son auter (Sylvain Beorchia) et une carte libre de droits de la cartothèque de la BNF
+- l'image utilisée pour le splash screen réutilise la montgolfière avec l'accord de son auteur (Sylvain Beorchia) et une carte libre de droits de la cartothèque de la BNF
 
 ----
 
