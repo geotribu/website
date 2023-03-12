@@ -55,7 +55,7 @@ Prérequis :
 
 Prérequis complémentaires :
 
-- Python 3.10 ou supérieur - si vous êtes sur Windows, [voir notre article dédié](/articles/2020/2020-06-19_setup_python/)
+- Python 3.10 ou supérieur - si vous êtes sur Windows, [voir notre article dédié](/articles/2020/2020-06-19_setup_python/ "Installer et configurer Python sur Windows")
 - une connexion internet autorisée vers <https://pypi.org>
 
 ![Pour l'amour du clavier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/clavier_joie.gif){: .img-center loading=lazy }
@@ -82,7 +82,7 @@ Prérequis complémentaires :
 <!-- markdownlint-disable MD046 -->
 === ":fontawesome-brands-linux: Linux et assimilés"
 
-    Si QGIS est installé "normalement" avec les paquets officiels ([voir cet article](/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/)) et donc accessible sur `/usr/bin/qgis`, il n'y a rien à faire.  
+    Si QGIS est installé "normalement" avec les paquets officiels ([voir cet article](/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/ "Installer QGIS sur Ubuntu avec apt")) et donc accessible sur `/usr/bin/qgis`, il n'y a rien à faire.  
 
     Sinon, par exemple dans le cas où plusieurs versions de QGIS sont installées sur la machine, il est possible de spécifier le chemin vers l'exécutable de la version à utiliser :
 
