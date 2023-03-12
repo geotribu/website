@@ -55,7 +55,9 @@ Prérequis :
 
 Prérequis complémentaires :
 
-- Python 3.10 ou supérieur - si vous êtes sur Windows, [voir notre article dédié](/articles/2020/2020-06-19_setup_python/ "Installer et configurer Python sur Windows")
+- Python 3.10 ou supérieur: avec pip
+    - si vous êtes sur Windows, [voir notre article dédié](/articles/2020/2020-06-19_setup_python/ "Installer et configurer Python sur Windows")
+    - si vous êtes sur Ubuntu il faut installer pip `sudo apt install python3-pip`
 - une connexion internet autorisée vers <https://pypi.org>
 
 ![Pour l'amour du clavier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/clavier_joie.gif){: .img-center loading=lazy }
@@ -105,13 +107,13 @@ Prérequis complémentaires :
     Exemple sur Ubuntu LTS (22.04 à date) :
 
     ```sh
-    qdt --scenario-path https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
+    qdt --scenario https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
     ```
 
 === ":window: Windows"
 
     ```powershell
-    qdt --scenario-path https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
+    qdt --scenario https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
     ```
 
 ----
