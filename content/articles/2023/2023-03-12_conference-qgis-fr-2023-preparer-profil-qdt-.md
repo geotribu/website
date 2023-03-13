@@ -30,16 +30,17 @@ Prérequis :
 
 ![logo conf QGIS FR 2023](https://cdn.geotribu.fr/img/external/salons_conferences/qgis_fr/qgis_journees_francophones_2023_logo.svg){: .img-rdp-news-thumb }
 
-Organisées par l'OSGeo-FR, les rencontres des utilisateurs francophones de QGIS sont clairement l'événement annuel à ne pas rater quand on travaille avec ce logiciel SIG, qu'on parle français ou qu'on peut difficilement envisager des déplacements à l'étranger (le prochain [QGIS User meeeting se tiendra en avril aux Pays-Bas](https://uc2023.qgis.nl/)).
+Organisées par l'OSGeo-FR, les rencontres des utilisateurs francophones de QGIS sont clairement l'événement annuel à ne pas rater quand on travaille avec ce logiciel SIG, qu'on parle principalement français ou qu'on peut difficilement envisager des déplacements à l'étranger (le prochain [QGIS User meeeting se tiendra en avril aux Pays-Bas](https://uc2023.qgis.nl/)).
 
-Cette année encore, malgré toute ma bonne volonté, je n'ai pas réussi à dégager suffisamment de temps pour m'impliquer réellement dans l'organisation amont (je serai présent pour aider). Pour me rattraper, je me suis dit que j'allais faire un petit article, [à l'instar de celui de l'an dernier](/articles/2022/2022-01-12_rencontres_qgis_francophones_liens_utiles_ateliers/). Je profite de ce billet pour tirer mon chapeau au gros gros travail des bénévoles et du CRAIG :clap:. Un événement comme celui-ci mobilise beaucoup d'énergie, d'idées, d'initiative et de temps. Sur la base du seul bénévolat, c'est remarquable.
+Cette année encore, malgré toute ma bonne volonté, je n'ai pas réussi à dégager suffisamment de temps pour m'impliquer réellement dans l'organisation en amont, même si je serai présent pour aider. Pour me rattraper, je me suis dit que j'allais faire un petit article, [à l'instar de celui de l'an dernier](/articles/2022/2022-01-12_rencontres_qgis_francophones_liens_utiles_ateliers/). Je profite de ce billet pour tirer mon chapeau aux bénévoles et au CRAIG pour le gros gros travail founi :clap:. Un événement comme celui-ci mobilise beaucoup d'énergie, d'idées, d'initiatives et de temps. Sur la base du seul bénévolat ou presque, c'est remarquable.
 
-Prenez donc aussi le temps d'aller les remercier, que ce soit par un toot/[tweet](https://twitter.com/JourneesQgis/), un [message sur le GitLab](https://gitlab.com/osgeo-fr/journees_qgis/-/issues), un mail ou un mot gentil en privé ou en live. Je vous attends ici pour la suite :wink:.
+Prenez donc aussi le temps d'aller les remercier, que ce soit par un [toot](https://mapstodon.space/@JourneesQgis), [tweet](https://twitter.com/JourneesQgis/), [message sur le GitLab](https://gitlab.com/osgeo-fr/journees_qgis/-/issues), un mail ou un mot gentil en privé ou en live. Je vous attends ici pour la suite :wink:.
 
-C'est bon ? bien, je reprends.  
+C'est bon ? bien, je reprends.
+
 Une conférence QGIS donne à voir l'hétérogénéité des usages, fonctionnalités et outils de l'écosystème QGIS. Il y a donc beaucoup de plugins et autres configurations qui sont présentés et évoqués. Je vous propose donc de déployer facilement un profil QGIS dédié qui contient tout ce qui va être évoqué durant les ateliers et les présentations.
 
-![Un profil QGIS tout compris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/all_inclusive_qgis.webp){: .img-center loading=lazy }
+![Un profil QGIS tout en un](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/all_inclusive_qgis.webp){: .img-center loading=lazy }
 
 C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.github.io/qgis-deployment-cli/) (QDT pour les intimes), un projet sur lequel je travaille depuis un an à Oslandia et qui fera justement l'objet d'une présentation par Emilie Bigorne (EPT Loire) mardi.
 
@@ -59,14 +60,15 @@ C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.gith
 
 1. [Télécharger l'exécutable de QDT pour votre système d'exploitation depuis la page de documentation](https://guts.github.io/qgis-deployment-cli/usage/installation.html)
 1. S'assurer qu'il soit autorisé à s'exécuter:
-    - sur Linux : clic droit sur l'exécutable > Propriétés > onglet Permissions > Cocher la case `Autoriser l'exécution du fichier comme un programme`
+    - sur Linux : clic droit sur l'exécutable > `Propriétés` > onglet `Permissions` > Cocher la case `Autoriser l'exécution du fichier comme un programme`
 
     ![AUtoriser l'exécution sur Linux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qdt_linux_authorize_executable.webp){: .img-center loading=lazy }
 
-    - sur Windows : un dialogue s'ouvre prévenant que l'exécutable est non signé (normal) écran bleu
+    - sur Windows : un dialogue s'ouvre avec un message anxiogène indiquant que Windows a protégé votre ordinateur. C'est le moment où il faut nous faire confiance, cliquer sur `Informations complémentaires` > `Exécuter quand même`.
 
 1. Télécharger le [fichier du scénario](https://raw.githubusercontent.com/geotribu/profils-qgis/main/qdt/scenario.qdt.yml) (clic droit -> `Enregistrer sous...`) dans le même dossier que l'exécutable
 1. Double-cliquer sur l'exécutable
+1. Chercher une icône avec le logo de l'événement sur le bureau ou `Conf QGIS` dans le menu Démarrer
 
 <iframe width="100%" height="430" src="https://www.youtube-nocookie.com/embed/DgdfAf1GRa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
