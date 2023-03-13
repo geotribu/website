@@ -68,6 +68,8 @@ C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.gith
 1. Télécharger le [fichier du scénario](https://raw.githubusercontent.com/geotribu/profils-qgis/main/qdt/scenario.qdt.yml) (clic droit -> `Enregistrer sous...`) dans le même dossier que l'exécutable
 1. Double-cliquer sur l'exécutable
 
+<iframe width="100%" height="430" src="https://www.youtube-nocookie.com/embed/DgdfAf1GRa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ----
 
 ## J'aime le bruit des touches
@@ -100,6 +102,17 @@ Prérequis complémentaires :
     py -3 -m pip install --user --upgrade qgis-deployment-toolbelt
     ```
 
+    Si un message d'avertissement comme celui-ci s'affiche :
+
+    > WARNING: The scripts qdeploy-toolbelt.exe, qdt.exe and qgis-deployment-toolbelt.exe are installed in 'C:\Users\risor\AppData\Roaming\Python\Python310\Scripts' which is not on PATH.  
+    > Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
+    Il s'agit ajouter le chemin vers le dossier des scripts Python à la variable `PATH` qui liste les dossiers contenant des exécutables. Cela se fait toujours avec PowerShell (adapter avec le chemin de votre installation Python) :
+
+    ```powershell
+    $Env:PATH += ";$Env:APPDATA\Python\Python310\Scripts"
+    ```
+
 ### Configurer
 
 <!-- markdownlint-disable MD046 -->
@@ -116,6 +129,8 @@ Prérequis complémentaires :
 === ":window: Windows"
 
     Si QGIS 3.28.4 est installé avec l'installateur officiel sans personnalisation du chemin d'installation (ne pas [voir cet article](/articles/2020/2020-07-03_deploy_qgis_windows/ "Installer QGIS avec PowerShell et l'OSGeo4W")) et donc accessible sur `C:\Program Files\QGIS 3.28.4\bin\qgis-ltr-bin.exe`, il n'y a rien à faire.
+
+    Sinon, ouvrir une console PowerShell (++shift++ + clic droit) dans le même dossier et spécifier le chemin vers l'exécutable de QGIS à utiliser :
 
     ```powershell
     $env:QDT_QGIS_EXE_PATH="C:\\path\\to\\qgis-ltr-bin.exe"
@@ -136,6 +151,8 @@ Prérequis complémentaires :
     ![Autoriser l'exécution d'un raccourci sur le bureau GNOME](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/gnome_autoriser_racourci_bureau.webp){: .img-center loading=lazy }
 
 === ":window: Windows"
+
+    Ouvrir une console PowerShell et taper :
 
     ```powershell
     qdt --scenario https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
