@@ -67,6 +67,16 @@ C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.gith
     - sur Windows : un dialogue s'ouvre avec un message anxiogène indiquant que Windows a protégé votre ordinateur. C'est le moment où il faut nous faire confiance, cliquer sur `Informations complémentaires` > `Exécuter quand même`.
 
 1. Télécharger le [fichier du scénario](https://raw.githubusercontent.com/geotribu/profils-qgis/main/qdt/scenario.qdt.yml) (clic droit -> `Enregistrer sous...`) dans le même dossier que l'exécutable
+1. Si QGIS 3.28.4 est installé avec les paquets (Linux) ou l'installateur (*.msi) officiels sans personnalisation du chemin d'installation et donc accessible sur `C:\Program Files\QGIS 3.28.4\bin\qgis-ltr-bin.exe` sur Windows et `/usr/bin/qgis/` sur Linux Debian, il n'y a rien à faire. Sinon il faut spécifier le chemin vers l'exécutable de QGIS avec la variable d'environnement `QDT_QGIS_EXE_PATH`. Par exemple sur Windows :
+
+    1. chercher `variable` dans le menu de recherche du système et cliquer sur `Modifier les variables d'environnement pour votre compte` :
+
+        ![Windows ouvrir les variables d'environnement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/windows_variable_environnement.webp){: .img-center loading=lazy }
+
+    1. Dans la partie haute, cliquer sur `Nouvelle` > indiquer `QDT_QGIS_EXE_PATH` comme nom > Cliquer sur parcourir le fichier et sélectionner l'exécutable de QGIS sur votre ordinateur :
+
+        ![QDT - variable d'environnement QDT_QGIS_EXE_PATH](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/windows_variable_environnement_qdt_qgis_exe_path.webp){: .img-center loading=lazy }
+
 1. Double-cliquer sur l'exécutable
 1. Chercher une icône avec le logo de l'événement sur le bureau ou `Conf QGIS` dans le menu Démarrer
 
