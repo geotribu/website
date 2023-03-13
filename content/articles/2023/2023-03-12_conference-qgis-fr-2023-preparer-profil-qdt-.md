@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 date: "2023-03-12 18:20"
-description: "Afin de suivre au mieux les rencontres 2023 des utilisateurs francophones de QGIS, on vous propose de déployer facilement un profil QGIS avec tout ce qu'il faut dedans pour suivre les ateliers et présentations. Bonne conférence !"
+description: "Afin de suivre au mieux les rencontres 2023 des utilisateurs francophones de QGIS, je vous propose de déployer facilement un profil QGIS avec tout ce qu'il faut dedans pour suivre les ateliers et présentations. Bonne conférence !"
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qgis_ecran_demarrage_conf_qgis_fr_2023.png
 license: beerware
 robots: index, follow
@@ -58,8 +58,14 @@ C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.gith
 ![Pour l'amour de la souris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/souris_old_school.gif){: .img-center loading=lazy }
 
 1. [Télécharger l'exécutable de QDT pour votre système d'exploitation depuis la page de documentation](https://guts.github.io/qgis-deployment-cli/usage/installation.html)
-1. S'assurer qu'il soit autorisé à s'exécuter
-1. Télécharger le fichier du scénario dans le même dossier que l'exécutable
+1. S'assurer qu'il soit autorisé à s'exécuter:
+    - sur Linux : clic droit sur l'exécutable > Propriétés > onglet Permissions > Cocher la case `Autoriser l'exécution du fichier comme un programme`
+
+    ![AUtoriser l'exécution sur Linux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qdt_linux_authorize_executable.webp){: .img-center loading=lazy }
+
+    - sur Windows : un dialogue s'ouvre prévenant que l'exécutable est non signé (normal) écran bleu
+
+1. Télécharger le [fichier du scénario](https://raw.githubusercontent.com/geotribu/profils-qgis/main/qdt/scenario.qdt.yml) (clic droit -> `Enregistrer sous...`) dans le même dossier que l'exécutable
 1. Double-cliquer sur l'exécutable
 
 ----
@@ -83,10 +89,12 @@ Prérequis complémentaires :
     Exemple sur Ubuntu LTS (22.04 à date) :
 
     ```sh
-    python3 -m pip install --user --upgrade qgis-deployment-toolbelt
+    pip install --user --upgrade qgis-deployment-toolbelt
     ```
 
 === ":window: Windows"
+
+    Dans une fenêtre PowerShell :
 
     ```powershell
     py -3 -m pip install --user --upgrade qgis-deployment-toolbelt
@@ -97,7 +105,7 @@ Prérequis complémentaires :
 <!-- markdownlint-disable MD046 -->
 === ":fontawesome-brands-linux: Linux et assimilés"
 
-    Si QGIS est installé "normalement" avec les paquets officiels ([voir cet article](/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/ "Installer QGIS sur Ubuntu avec apt")) et donc accessible sur `/usr/bin/qgis`, il n'y a rien à faire.  
+    Si QGIS est installé avec les paquets officiels ([voir cet article](/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/ "Installer QGIS sur Ubuntu avec apt")) et donc accessible sur `/usr/bin/qgis`, il n'y a rien à faire.  
 
     Sinon, par exemple dans le cas où plusieurs versions de QGIS sont installées sur la machine, il est possible de spécifier le chemin vers l'exécutable de la version à utiliser :
 
@@ -113,7 +121,7 @@ Prérequis complémentaires :
     $env:QDT_QGIS_EXE_PATH="C:\\path\\to\\qgis-ltr-bin.exe"
     ```
 
-### Exécuter
+### Exécuter QDT
 
 === ":fontawesome-brands-linux: Linux et assimilés"
 
@@ -138,6 +146,28 @@ Prérequis complémentaires :
 ## Résulat
 
 ![Ecran de démarrage du profil conf QGIS FR 2023](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qgis_ecran_demarrage_conf_qgis_fr_2023.png){: .img-center loading=lazy }
+
+### Personnalisations intégrées
+
+#### Interface
+
+- un raccourci bureau et dans le menu Démarrer/Application
+- un splash screen personnalisé
+- les barres d'outils sont réorganisées
+
+#### Plugins installés
+
+- CRAIG
+- Geotuileur
+- ICEtool (désactivé par défaut pour cause de dépendances non présentes par défaut)
+Land Survey Codes Import
+- LizMap
+- Mergin
+- QField Sync
+- QompliGIS
+- QTribu :innocent:
+
+Manquent à l'appel les plugins fermés (Espace Collaboratif de l'IGN...), ceux non déployés sur un dépôt accessible (AL4EO, PLU(i) Versioning, Topaze), ceux qui ne sont pas mentionnés explicitement et bien sûr ceux que j'ai zappés !
 
 ----
 
