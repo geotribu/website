@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 date: "2023-03-24 18:20"
-description: "Article revenant sur la validation des données de mapathon"
+description: "OpenStreetMap, JOSM, HOT OSM, CartONG, qualité"
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
 license: default
 robots: index, follow
