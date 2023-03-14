@@ -147,7 +147,7 @@ Toutes les personnes qui valident ajoutent-elles ce que j'appelle des « éléme
 
 ## Pour conclure
 
-La validation sur HOT OSM est exhaustive : grâce au nombre de personnes mobilisé, chaque carré cartographié est validé. Toutefois il m'est arrivé de regarder les contributions d'un maximum de personnes différentes afin de pouvoir invalider les carrés des personnes faisant trop d'erreurs et redonner rapidement ces carrés maltraités au statut de "à cartographier". 
+La validation sur HOT OSM est exhaustive : grâce au nombre de personnes mobilisé, chaque carré cartographié est validé. Toutefois il m'est arrivé de regarder les contributions d'un maximum de personnes différentes afin de pouvoir invalider les carrés des personnes faisant trop d'erreurs et redonner rapidement ces carrés maltraités au statut de "à cartographier".
 Si cet article parle beaucoup des erreurs et du fouillis que je dois démêler, il arrive aussi que l’ouverture d’un carré provoque un ravissement devant la qualité du minutieux travail réalisé. On notera dans les exemples combien, derrière des règles simples, plusieurs analyses, et donc plusieurs cartographies, plusieurs validations sont possibles.
 
 ![Erreur de jonction entre hiver et été sur une image aérienne](https://pad.oslandia.net/uploads/5884072d-f60f-4201-9a28-5d1a3b30326a.png)
