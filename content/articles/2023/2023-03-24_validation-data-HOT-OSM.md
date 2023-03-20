@@ -153,7 +153,7 @@ Si cet article parle beaucoup des erreurs et du fouillis que je dois démêler, 
 ![Erreur de jonction entre hiver et été sur une image aérienne](https://pad.oslandia.net/uploads/5884072d-f60f-4201-9a28-5d1a3b30326a.png)
 > Si vous ne savez pas ce qu'est une fractale, en voici un bel exemple. Avec la fée des saisons à l'œuvre. Ou [Perséphone](https://www.webtoons.com/fr/romance/lore-olympus/episode-1/viewer?title_no=1825&episode_no=1), au choix.
 
-Quant aux statistiques elles sont formelles : on passe beaucoup moins de temps à valider qu’à cartographier. Nous sommes  parfaitement complémentaires pour obtenir notre résultat : [une carte de qualité](https://hal.science/hal-02157229) destinée aux personnes sur le terrain. Vous vous joignez au mouvement ?
+Quant aux statistiques elles sont formelles : on passe beaucoup moins de temps à valider qu’à cartographier. Nous sommes  parfaitement complémentaires pour obtenir notre résultat : [une carte de qualité](https://hal.science/hal-02157229) destinée aux personnes sur le terrain et [aux multiples utilisations](https://www.openstreetmap.org/user/pedrito1414/diary/401009). Vous vous joignez au mouvement ?
 
 ----
 
