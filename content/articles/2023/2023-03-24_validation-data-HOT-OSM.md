@@ -10,9 +10,11 @@ image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant
 license: default
 robots: index, follow
 tags:
+    - CartONG
     - HOT OSM
     - JOSM
     - OpenStreetMap
+    - qualité
 ---
 
 # Qualité des données : un voyage sur la plateforme humanitaire d'OpenStreetMap
