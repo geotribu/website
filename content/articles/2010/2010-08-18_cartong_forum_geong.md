@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 18 août 2010
 
-![logo CartONG](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/cartONG.jpg "logo CartONG"){: .img-rdp-news-thumb }
+![logo CartONG](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/cartONG.webp "logo CartONG"){: .img-rdp-news-thumb }
 
 "La cartographie au service de l'humanitaire", c'est en quelques mots le résumé des activités de l'Organisation non gouvernementale CartONG. Présent lors du tremblement de terre d'Haïti ou encore en Ouganda, CartONG milite pour pour l'usage des technologies SIG dans le cadre d'actions humanitaires. Fort de son expérience dans ce domaine, elle organise pour la seconde fois le colloque [GeoONG](http://www.cartong.org/index.php?option=com_content&task=section&id=18&Itemid=137) dont le thème est "Du terrain à l'écran - Comment faire pour collecter les données et traiter vos informations plus rapidement".
 
