@@ -28,7 +28,7 @@ tags:
 En janvier 2021, je publiais un article pour encourager les développeurs de plugins pour QGIS à utiliser les icônes déjà intégrées à QGIS pour enrichir leurs interfaces graphiques sans effort (ni talent graphique): [Utiliser les icônes intégrées de QGIS pour égayer ses plugins](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/).  
 Un mois plus tard, je donnais une recette technique pour extraire automatiquement les icônes depuis le fichier de ressource directement depuis les sources du projet : [Récupérer et prévisualiser les icônes intégrées à QGIS](/articles/2021/2021-02-02_pyqgis_previsualiser_images_integrees/).
 
-Cette année, dans le même élan que le nettoyage des contenus de Geotribu, j'ai pris le temps d'extraire le tableau des icônes pour en faire un site dédié et surtout d'en automatiser complètement la mise à jour histoire qu'il reste à jour avec le projet QGIS sans que cela ne me coûte en maintenance (bénévolat tout ça...).
+Cette année, dans le même élan que [le nettoyage des contenus de Geotribu](/articles/2023/2023-01-30_voeux-geotribu-2023/#nettoyage-et-historique), j'ai pris le temps d'extraire le tableau des icônes pour en faire un site dédié et surtout d'en automatiser complètement la (re)génération histoire qu'il reste à jour avec le projet QGIS sans que cela ne me coûte en maintenance (bénévolat tout ça...).
 
 Je vous présente donc PyQGIS Icons Cheatsheet :
 
