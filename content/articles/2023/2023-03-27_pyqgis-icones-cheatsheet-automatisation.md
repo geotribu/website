@@ -30,7 +30,7 @@ Un mois plus tard, je donnais une recette technique pour extraire automatiquemen
 
 Cette année, dans le même élan que le nettoyage des contenus de Geotribu, j'ai pris le temps d'extraire le tableau des icônes pour en faire un site dédié et surtout d'en automatiser complètement la mise à jour histoire qu'il reste à jour avec le projet QGIS sans que cela ne me coûte en maintenance (bénévolat tout ça...).
 
-Je vous présente donc PyQGIS Icons Cheatsheet:
+Je vous présente donc PyQGIS Icons Cheatsheet :
 
 ![PyQGIS Icons Cheatsheet](https://pyqgis-icons-cheatsheet.geotribu.fr/assets/images/social/index.png){: .img-center loading=lazy }
 
