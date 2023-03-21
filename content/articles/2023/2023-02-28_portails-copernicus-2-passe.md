@@ -34,11 +34,11 @@ Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu
 Ce nouveau portail doit prendre la suite du portail actuel [scihub.copernicus.eu](https://scihub.copernicus.eu) d'accès aux données open-data Sentinel ainsi que de certains des actuels DIAS (**D**ata **I**nformation and **A**cces **S**ervice) pour l'offre de service payante associée.
 Dans ce deuxième article nous revenons donc sur l'historique des différents portails d'accès aux données Sentinel et des fonctionnalités qu'ils ont offertes.
 
-Pour un rappel sur les données Sentinel voir le [premier article](2023-02-21_portails-copernicus-1-donnees/) et pour les personnes intéressés par le nouveau portail aller directement au troisième article.
+Pour un rappel sur les données Sentinel voir le [premier article](2023-02-21_portails-copernicus-1-donnees/) et pour les personnes intéressés par le nouveau portail aller directement au [troisième article](/articles/2023/2023-03-07_portails-copernicus-3-futur/).
 Série **Accès aux données Copernicus/Sentinel** :
 
 * [Partie 1 : données OCS et Sentinel](/articles/2023/2023-02-21_portails-copernicus-1-donnees/).
-* Partie 3 : évolution de l'accès aux données Copernicus (publication prévue le 7 mars).
+* [Partie 3 : évolution de l'accès aux données Copernicus](/articles/2023/2023-03-07_portails-copernicus-3-futur/).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -189,7 +189,7 @@ Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://
 
 ## Un exemple d'utilisation : le monitoring PAC
 
-Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre, leur utilisation par les différents organismes de contrôles et paiements associés à la PAC (Politique Agricole Commune) pour la mise en place d'un "monitoring CAP".
+Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre, leur utilisation par les différents organismes de contrôles et paiements associés à la PAC (Politique Agricole Commune) pour la mise en place d'un "monitoring PAC".
 En effet l'Europe a souhaité faire évoluer les contrôles terrain ponctuels associés au versement des aides PAC vers un ["monitoring"](https://publications.jrc.ec.europa.eu/repository/handle/JRC112913), exhaustif spatialement, et réalisé de manière semi-automatique via l'exploitation des données Sentinel-1 et 2.
 Ces dernières devant permettre entre autre de vérifier la présence ou non d'activités agricoles (présence de culture annuelle, détection de fauche de prairie etc..) sur une parcelle donnée.
 
