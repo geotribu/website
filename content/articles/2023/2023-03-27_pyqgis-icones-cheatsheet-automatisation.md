@@ -47,7 +47,7 @@ C'est sous le capot que les choses ont changé : tout est automatisé via [un wo
 1. le site est généré avec Mkdocs et le thème Material, les mêmes outils que pour le site de Geotribu
 1. le site est publié sur GitHub Pages
 
-A noter que les images sont toutes téléchargées depuis le dépôt de QGIS puis compressées, de façon à ne pas avoir de souci de lien cassé et d'avoir un minimum d'indépendance en termes techniques.
+À noter que les images sont toutes téléchargées depuis le dépôt de QGIS puis compressées, de façon à ne pas avoir de souci de lien cassé et d'avoir un minimum d'indépendance en termes techniques.
 
 ----
 
