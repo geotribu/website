@@ -59,7 +59,7 @@ Suite à mon mail de présentation du site sur la liste QGIS-Dév, j'ai eu quelq
 
 C'est vraiment cool et ça va bien plus loin que mon petit site. Mais c'est intégré à un plugin dont le champ fonctionnel est juste énorme ! I y a même une interface graphique minimaliste à pip, le gestionnaire de packages Python, pour pouvoir installer des dépendances externes dans QGIS.
 
-Je lui ai proposé mon aide pour en faire un plugin dédié indépendant. A suivre !
+Je lui ai proposé mon aide pour en faire un plugin dédié indépendant. À suivre !
 
 ----
 
