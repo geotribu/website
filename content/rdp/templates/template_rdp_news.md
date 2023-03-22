@@ -2,7 +2,7 @@
 
 ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb loading=lazy }
 
-**Ou choisir une autre icône depuis le CDN : <https://cdn.geotribu.fr/img/internal/icons-rdp-news/>**
+**Ou choisir une autre icône depuis le CDN : <https://contribuer.geotribu.fr/rdp/structure_news/#tableau-des-icones-generiques/>**
 
 **Texte en gras**
 
@@ -21,4 +21,4 @@ Image :
 
 Exemple pour une vidéo youtube via iframe (obligatoirement en https) :
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G_oUBeLLjKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/G_oUBeLLjKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

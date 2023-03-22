@@ -815,8 +815,8 @@ redirects:
     contribuer/edit/local_edition_setup.md: https://contribuer.geotribu.fr/edit/local_edition_setup/
     contribuer/guides/audio.md: https://contribuer.geotribu.fr/guides/audio/
     contribuer/guides/authoring.md: https://contribuer.geotribu.fr/guides/authoring/
-    contribuer/guides/cdn-images-hebergement.md: https://contribuer.geotribu.fr/guides/cdn/
-    contribuer/guides/cdn-images-recherche.md: https://contribuer.geotribu.fr/guides/cdn/
+    contribuer/guides/cdn-images-hebergement.md: https://contribuer.geotribu.fr/guides/cdn-images-hebergement/
+    contribuer/guides/cdn-images-recherche.md: https://contribuer.geotribu.fr/guides/cdn-images-recherche/
     contribuer/guides/diagrams.md: https://contribuer.geotribu.fr/guides/diagrams/
     contribuer/guides/emoji.md: https://contribuer.geotribu.fr/guides/emoji/
     contribuer/guides/image.md: https://contribuer.geotribu.fr/guides/image/
@@ -838,6 +838,7 @@ redirects:
     contribuer/rdp/structure_news.md: https://contribuer.geotribu.fr/rdp/structure_news/
     contribuer/rdp/workflow.md: https://contribuer.geotribu.fr/rdp/workflow/
     contribuer/contribution_guide.md: https://contribuer.geotribu.fr/
+    contribuer/requirements.md: https://contribuer.geotribu.fr/requirements/
     toc_nav_ignored/emojis_joypixels_preview.md: https://contribuer.geotribu.fr/toc_nav_ignored/emojis_joypixels_preview/
 
     # migration

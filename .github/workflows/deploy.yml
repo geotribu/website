@@ -5,6 +5,7 @@ on:
     branches: [master]
     paths:
       - ".github/workflows/deploy.yml"
+      - "config/*.yml"
       - "content/**"
       - "mkdocs.yml"
       - "requirements*.txt"
