@@ -56,12 +56,12 @@ graph TD
     E -->|Générer| F(Image aérienne)
 ```
 
+!!! info
+    Les scripts présentés ci-après ont été testés sur Linux et MacOS.
+    
 ## Un environnement de travail : config.env
 
 Avant de se lancer, il est bon de vous parler du fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé par la suite pour télécharger et traiter les images. On y définit le répertoire de travail et différentes variables nécessaires à la bonne éxécution des scripts.
-
-!!! info
-    Les scripts présentés ci-après ont été testés sur Linux et MacOS.
 
 Voici le fichier `config.env` à adapter :
 
@@ -176,7 +176,7 @@ curl "https://wxs.ign.fr/$key/dematkml/DEMAT.PVA/$id_mission/t.kml" > $folder_mi
 [Consulter le script complet :fontawesome-regular-file-code:](https://github.com/igeofr/remonterletemps2img/blob/main/2_mission_kml.sh){: .md-button }
 {: align=middle }
 
-Après avoir télécharger nos `X` fichiers `kml`, on va pouvoir les assembler pour visualiser le tuilage des prises de vue au format `shapefile` afin de faciliter la visualisation dans QGIS.
+Après avoir téléchargé nos `X` fichiers `kml`, on va pouvoir les assembler pour visualiser le tuilage des prises de vue au format `shapefile` afin de faciliter la visualisation dans QGIS.
 
 ![Emprise des images identifiées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/images_emprises.png){: .img-center loading=lazy }
 
@@ -344,7 +344,7 @@ Pour vous donner un ordre d'idée, pour générer l'image complète ci-dessous �
 
 ## Conclusion
 
-La méthode mise en place nous a permis à moindre coup et de manière autonome de régénérer des images aériennes anciennes en s'appuyant sur le patrimoine de l'IGN disponible sur le site [Remonter le temps](https://remonterletemps.ign.fr). Il y a sans doute des améliorations à faire sur les scripts proposés ici mais vous êtes libre de proposer des améliorations via [Github](https://github.com/igeofr/remonterletemps2img).
+La méthode mise en place nous a permis à moindre coup et de manière autonome de régénérer des images aériennes anciennes en s'appuyant sur le patrimoine de l'IGN disponible sur le site [Remonter le temps](https://remonterletemps.ign.fr). Il y a sans doute des améliorations à faire sur les scripts proposés ici, sentez-vous libre de soumettre vos propositions via [Github](https://github.com/igeofr/remonterletemps2img).
 
 ----
 
