@@ -58,7 +58,7 @@ graph TD
 
 !!! info
     Les scripts présentés ci-après ont été testés sur Linux et MacOS.
-    
+
 ## Un environnement de travail : config.env
 
 Avant de se lancer, il est bon de vous parler du fichier de configuration que vous devrez adapter à votre organisation et qui sera utilisé par la suite pour télécharger et traiter les images. On y définit le répertoire de travail et différentes variables nécessaires à la bonne éxécution des scripts.
