@@ -6,7 +6,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: 2023-03-07 14:20
+date: 2023-03-22 14:20
 description: "Reconstitution d'images aériennes historiques"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/remonterletemps_img.png"
 license: beerware
@@ -19,7 +19,7 @@ tags:
 
 # Reconstitution d'images aériennes historiques
 
-:calendar: Date de publication initiale : 7 mars 2023
+:calendar: Date de publication initiale : 22 mars 2023
 
 ## Prérequis
 
@@ -97,7 +97,7 @@ ENCODAGE='UTF-8'
 
 ![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "icône IGN"){: .img-rdp-news-thumb }
 
-Les images mises à disposition par l'IGN sur le site [Remonter le temps](https://remonterletemps.ign.fr) peuvent être consultées par année de prise de vue, ce qui dans les faits, correspond plutôt aux différentes missions réalisées.
+Les images mises à disposition par l'IGN sur le site [Remonter le temps](https://remonterletemps.ign.fr) peuvent être consultées par année de prises de vue, ce qui dans les faits, correspond plutôt aux différentes missions réalisées.
 
 Pour trouver l'identifiant de la mission, il faut :
 
@@ -166,6 +166,7 @@ On ne peut pas dire que l'IGN nous facilite la tâche sur l'identification et le
 Pour identifier les images d'une mission, il faut télécharger un premier fichier `kml` qui sert de point de départ pour chercher une filiation et trouver des enfants, petits enfants et arrières petits enfants de `kml`. Je ne sais pas pour quelle raison l'IGN a procédé ainsi mais pour une mission, les informations sur les images (leur description et leur emprise) sont réparties dans différents fichiers `kml` qu'il faut parcourir.
 
 ```bash
+# EXTRAIT - CONSULTER LE SCRIPT COMPLET POUR PLUS DE DÉTAILS
 # TÉLÉCHARGER LE FICHIER DE DÉPART DE LA MISSION
 curl "https://wxs.ign.fr/$key/dematkml/DEMAT.PVA/$id_mission/t.kml" > $folder_mission'/kml/'$id_mission'.kml'
 ```
@@ -181,7 +182,7 @@ Après avoir télécharger nos `X` fichiers `kml`, on va pouvoir les assembler p
 
 Maintenant que l'on a récupéré l'emprise et la liste de toutes les images de la mission, on va devoir :
 
-1. faire quelques opérations d'extraction et de mise en forme qui vont nous servir à filtrer les images qui se trouvent dans une BBOX qui aura été préalablement définie dans le fichier de configuration `config.env`,
+1. faire quelques opérations d'extraction et de mise en forme qui vont nous servir à filtrer les images qui se trouvent dans une BBOX qui aura été préalablement définie dans le fichier de configuration `config.env` (étapes avant le `curl` dans le code complet),
 2. télécharger les images,
 3. convertir les images en `jp2` vers `jpg` pour pouvoir les exploiter dans OpenDroneMap par la suite.
 
@@ -258,9 +259,9 @@ Les spécifications minimums pour couvrir mon territoire : 64Go de Ram et 128Go 
 
 ![icône opendronemap GCP](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/open_drone_map_gcp.png "OpenDroneMap GCP"){: .img-rdp-news-thumb }
 
-Nos images sont maintenant prêtes, il nous reste une étape manuelle mais néanmoins importante le positionnnement des points de calage qui permettent à OpenDroneMap d'ajuster la reconstitution dans l'espace.
+Nos images sont maintenant prêtes, il nous reste une étape manuelle importante : le positionnnement des points de calage qui permettent à OpenDroneMap d'ajuster la reconstitution dans l'espace.
 
-Dans notre cas comme il s'agit d'images aériennes anciennes, il n'est pas possible de faire le lien direct entre le terrain et l'image. On va donc s'appuyer un référentiel image existant pour positionner des GCP dans l'espace.
+Dans notre cas comme il s'agit d'images aériennes anciennes, il n'est pas possible de faire le lien direct entre le terrain et l'image. On va donc s'appuyer sur un référentiel d'images existant pour positionner des GCP dans l'espace.
 
 Pour ce faire, je recommande d'utiliser WebODM et le plugin intégré `Ground Control Point Interface` qui est pleinement compatible avec les [spécifications d'OpenDroneMap](https://docs.opendronemap.org/gcp/). Quand vous lancez WebODM sur votre navigateur, vous avez l'onglet `Interface GCP` sur la droite.
 
@@ -275,7 +276,7 @@ Pour ce faire, je recommande d'utiliser WebODM et le plugin intégré `Ground Co
 Plusieurs recommandations sur la saisie des GCP :
 
 - un GCP sur l'image historique est déclaré valide lorsqu'il est associé à l'image de référence et qu'il apparait en vert
-- une fois un GCP saisie l'image de référence (à droite), il faut essayer de l'associer à plusieurs images historiques (au moins 3)
+- une fois un GCP saisi l'image de référence (à droite), il faut essayer de l'associer à plusieurs images historiques (au moins 3)
 - positionner au moins 5 GCP par images bien répartis
 
 <iframe width="100%" height="415" src="https://www.youtube-nocookie.com/embed/5CEiyAn2J2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -294,12 +295,12 @@ Les étapes à suivre :
 
 1. Créer un projet
 2. Sélectionner les images et le fichier GCP
-3. Choisir les Options de traitement
+3. Choisir les options de traitement
 4. Valider les spécifications
 5. Lancer le traitement
 6. Surveiller les logs et patienter le temps du traitement.
 
-Mes Options de traitement à adapter en fonction des images :
+Mes options de traitement à adapter en fonction des images :
 
 - `min-num-features: 30000` : Nombre de points de correspondances entre les images,
 - `orthophoto-resolution: 50` : Resolution minimale de l'image en sortie,
