@@ -66,16 +66,18 @@ Avant de se lancer, il est bon de vous parler du fichier de configuration que vo
 Voici le fichier `config.env` à adapter :
 
 ```ini
-# CLEF IGN
+# CLEF IGN PUBLIQUE (VISIBLE DANS L'URL DE TELECHARGEMENT)
 key='x7yv499pbcguxhhxh8syehwe'
 
 # REPERTOIRE DE TRAVAIL
 REPER='XXXXXXXX'
 
 # BBOX OGR
+# CETTE BBOX EST VOLONTAIREMENT RESTREINTE POUR CORRESPONDRE A L'EMPRISE AU TERRITOIRE
 bbox_ogr='3.9744519949411927 43.5849775862067048 4.1945462811239604 43.8129227238279171'
 
 # BBOX IGN
+# CETTE BBOX EST VOLONTAIREMENT PLUS LARGE POUR CAPTER DES IMAGES EN BORDURE DE TERRITOIRE
 bbox_ign='BBOX(the_geom,43.66882,4.12714,43.6801,4.1434)'
 
 # URL MISSIONS
@@ -334,7 +336,7 @@ Aujourd'hui, j'ai pu recréer une petite dizaine d'images aériennes de 1937 à 
 
 A noter qu'il peut persister des décalages par rapport aux images actuelles et pour les réduire, il me faut simplement ajouter des GCP et relancer OpenDroneMap.
 
-Pour vous donner un ordre d'idée, pour générer l'image complète ci-dessous à 60cm de résolution il a fallu environ 3h de traitement et 45 images en entrée.
+Pour vous donner un ordre d'idée, pour générer l'image complète ci-dessous à 60cm de résolution sur 160km² il a fallu environ 3h de traitement et 45 images en entrée.
 
 ![Lunel en 1996](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/ccpl_historique.png){: .img-center loading=lazy }
 
