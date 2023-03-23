@@ -25,7 +25,7 @@ pattern = re.compile(r"\[([^][]+)\](\(((?:[^()]+|(\?2))+)\))")
 name_regex = "[^]]+"
 # http:// or https:// followed by anything but a closing parenthesis
 url_regex = "http[s]?://[^)]+"
-pattern = "\[({0})]\(\s*({1})\s*\)".format(name_regex, url_regex)
+pattern = rf"\[({name_regex})]\(\s*({url_regex})\s*\)"
 
 
 exclude_list = [
