@@ -126,14 +126,12 @@
         </div>
         <div class="second-column">
           <div class="image-wrapper">
-            <a href="/articles/2023/2023-03-12_conference-qgis-fr-2023-profil-qdt-qgis-deployment-toolbelt/"
-              title="Lien vers le dernier article">
-              <img
-                src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/all_inclusive_qgis.webp"
-                alt="lien vers le dernier article publié" loading="lazy" draggable="false"
-                title="Illustration du dernier article publié">
-              <div class="image-overlay">Déployer le profil QGIS tout-en-un pour les rencontres des utilisateurs
-                francophones de QGIS, par Julien Moura</div>
+            <a href="/{{ config.extra.latest.articles[0].url_rel }}" hreflang={{
+              config.extra.latest.articles[0].language | default('fr') }} title="Lien vers le dernier article">
+              <img src="{{ config.extra.latest.articles[0].image }}" alt="Illustration du dernier article publié"
+                decoding="async" loading="lazy" draggable="false">
+              <div class="image-overlay">{{ config.extra.latest.articles[0].title }}, par {{
+                config.extra.latest.articles[0].authors[0] }}</div>
             </a>
           </div>
         </div>
