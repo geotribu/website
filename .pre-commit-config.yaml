@@ -18,6 +18,19 @@ repos:
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
 
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.3.1
+    hooks:
+      - id: pyupgrade
+        args:
+          - "--py38-plus"
+
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: "v0.0.254"
+    hooks:
+      - id: ruff
+        args: ["--fix-only"]
+
   - repo: https://github.com/psf/black
     rev: 23.1.0
     hooks:
@@ -47,7 +60,7 @@ repos:
             ".markdownlint.json",
             "--ignore-path",
             ".markdownlintignore",
-            "--fix"
+            "--fix",
           ]
         language: node
         # language_version: "14.17.6"
@@ -60,8 +73,6 @@ ci:
   autofix_prs: true
   autoupdate_commit_msg: "[pre-commit.ci] Mise à jour des git hooks."
   autoupdate_schedule: monthly
-  skip: [
-    "check-hooks-apply",
-    # "markdownlint"
-  ]
+  skip: ["check-hooks-apply"]
+  # "markdownlint"
   submodules: false
