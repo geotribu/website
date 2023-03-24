@@ -190,6 +190,9 @@ Si cet article parle beaucoup des erreurs et du fouillis que je dois démêler, 
 
 Quant aux statistiques elles sont formelles : on passe beaucoup moins de temps à valider qu’à cartographier. Nous sommes parfaitement complémentaires pour obtenir notre résultat : [une carte de qualité](https://hal.science/hal-02157229) destinée aux personnes sur le terrain et [aux multiples utilisations](https://www.openstreetmap.org/user/pedrito1414/diary/401009). Vous vous joignez au mouvement ?
 
+[Rejoindre l'aventure pour cartographier :map:](https://tasks.hotosm.org/explore){: .md-button }
+{: align=middle }
+
 ----
 
 ## Auteur {: data-search-exclude }
