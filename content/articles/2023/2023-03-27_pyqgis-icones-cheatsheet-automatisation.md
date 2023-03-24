@@ -5,8 +5,8 @@ authors:
     - Julien MOURA
 categories:
     - article
-date: "2023-03-27 10:20"
-description: "Pour faciliter le travail d'intégration des icônes de QGIS par les développeurs de plugins, j'ai automatisé la génération d'un petit site web qui se met à jour automatiquement tous les mois."
+date: "2023-03-24 18:20"
+description: "Pour faciliter le travail d'intégration des icônes de QGIS par les développeurs de plugins, j'ai automatisé la génération et la mise à jour d'un site web : PyQGIS Icons Cheatsheet."
 image: https://pyqgis-icons-cheatsheet.geotribu.fr/assets/images/social/index.png
 license: beerware
 robots: index, follow
@@ -21,7 +21,7 @@ tags:
 
 # Geotribu vous présente le site PyQGIS Icons Cheatsheet
 
-:calendar: Date de publication initiale : 27 mars 2023
+:calendar: Date de publication initiale : 24 mars 2023
 
 ![logo PyQGIS](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-rdp-news-thumb }
 
@@ -47,17 +47,17 @@ C'est sous le capot que les choses ont changé : tout est automatisé via [un wo
 1. le site est généré avec Mkdocs et le thème Material, les mêmes outils que pour le site de Geotribu
 1. le site est publié sur GitHub Pages
 
-À noter que les images sont toutes téléchargées depuis le dépôt de QGIS puis compressées, de façon à ne pas avoir de souci de lien cassé et d'avoir un minimum d'indépendance en termes techniques.
+À noter que les images sont toutes téléchargées depuis le dépôt de QGIS puis compressées, de façon à ne pas avoir de souci de lien cassé et d'avoir une certaine indépendance en termes techniques.
 
 ----
 
 ## Un navigateur intégré au plugin ENMap-Box
 
-Suite à mon mail de présentation du site sur la liste QGIS-Dév, j'ai eu quelques retours et notamment de la part de Benjamin Jakimow, développeur du plugin ENMap-Box dans lequel il a intégré un navigateur de toutes les ressources accessibles en PyQt, y compris celles de QGIS donc :
+Suite à mon mail de présentation de ce site sur la liste QGIS-Dév, j'ai eu quelques retours et notamment de la part de Benjamin Jakimow, développeur du plugin ENMap-Box dans lequel il a intégré un navigateur de toutes les ressources accessibles en PyQt, y compris celles de QGIS donc :
 
 ![plugin ENMap-Box - Resource Browser](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_enmap-box_resource_browser.webp){: .img-center loading=lazy }
 
-C'est vraiment cool et ça va bien plus loin que mon petit site. Mais c'est intégré à un plugin dont le champ fonctionnel est juste énorme !
+C'est vraiment cool et ça va bien plus loin que mon petit site. Mais c'est un perdu dans un plugin dont le champ fonctionnel est juste énorme !
 
 Je lui ai proposé mon aide pour en faire un plugin dédié indépendant. À suivre !
 
