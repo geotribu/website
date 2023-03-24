@@ -53,7 +53,7 @@ C'est sous le capot que les choses ont changé : tout est automatisé via [un wo
 
 ## Un navigateur intégré au plugin ENMap-Box
 
-Suite à mon mail de présentation de ce site sur la liste QGIS-Dév, j'ai eu quelques retours et notamment de la part de Benjamin Jakimow, développeur du plugin ENMap-Box dans lequel il a intégré un navigateur de toutes les ressources accessibles en PyQt, y compris celles de QGIS donc :
+Suite à mon mail de présentation de ce site sur la liste QGIS-Dév, j'ai eu quelques retours et notamment de la part de Benjamin Jakimow, développeur du [plugin ENMap-Box](https://enmap-box.readthedocs.io/en/latest/) dans lequel il a intégré un navigateur de toutes les ressources accessibles en PyQt, y compris celles de QGIS donc :
 
 ![plugin ENMap-Box - Resource Browser](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_enmap-box_resource_browser.webp){: .img-center loading=lazy }
 
