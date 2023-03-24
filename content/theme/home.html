@@ -126,13 +126,15 @@
         </div>
         <div class="second-column">
           <div class="image-wrapper">
-            <a href="/{{ config.extra.latest.articles[0].url_rel }}" hreflang={{
+            {% if config.extra.latest %}
+            <a href="/{{ config.extra.latest.articles[0].url_rel | default('/') }}" hreflang={{
               config.extra.latest.articles[0].language | default('fr') }} title="Lien vers le dernier article">
-              <img src="{{ config.extra.latest.articles[0].image }}" alt="Illustration du dernier article publié"
-                decoding="async" loading="lazy" draggable="false">
-              <div class="image-overlay">{{ config.extra.latest.articles[0].title }}, par {{
-                config.extra.latest.articles[0].authors[0] }}</div>
+              <img src="{{ config.extra.latest.articles[0].image | default('fr') }}"
+                alt="Illustration du dernier article publié" decoding="async" loading="lazy" draggable="false">
+              <div class="image-overlay">{{ config.extra.latest.articles[0].title | default('Placeholder') }}, par {{
+                config.extra.latest.articles[0].authors[0] | default('Valeur par défaut') }}</div>
             </a>
+            {% endif %}
           </div>
         </div>
       </div>
