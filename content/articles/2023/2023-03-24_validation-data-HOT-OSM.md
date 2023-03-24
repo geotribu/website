@@ -23,6 +23,8 @@ tags:
 
 ## Introduction
 
+![logo HOT OSM](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/hot_osm.png){: .img-rdp-news-thumb }
+
 Le 6 février 2023, la Turquie et la Syrie ont été touchées par [l’un des plus importants tremblements de terre de la région](https://fr.wikipedia.org/wiki/S%C3%A9ismes_de_2023_en_Turquie_et_Syrie). À la radio, à la télévision, sur les réseaux sociaux s’égrène le nombre de victimes et le coût des dégâts, des chiffres froids pour tenter d’exprimer l’ampleur de la catastrophe.
 
 Pour moi, c’est le signal que [HOT](https://tasks.hotosm.org/explore), la plateforme humanitaire d’OpenStreetMap, va bientôt déclencher une mission urgente et que mon aide sera nécessaire.
@@ -48,7 +50,7 @@ Mais comment s’assurer que ces multiples contributions de personnes de niveaux
 
 Selon la logique que plusieurs regards sont complémentaires, mon travail de validatrice commence par la vérification des consignes du projet. Le plus souvent, il est demandé de cartographier des bâtiments, complétés généralement par le réseau routier, parfois les cours d’eau, plus rarement l’occupation du sol.
 
-### Faire habiter la carte : la validation des bâtiments
+### Bâtir une carte valide : la validation des bâtiments
 
 En premier, je regarde les oublis. Toutes les maisons ont-elles été cartographiées ? Si en zone rurale l’opération ressemble à une chasse aux trésors, au contraire en zone urbaine un bâtiment peut en cacher un autre. Sont-ils bien dessinées un par un ? Avec la bonne forme ? La norme étant le carré, le rectangle et le rond, tout ce qui en dévie doit être vérifié.
 
@@ -111,6 +113,8 @@ En faisant le choix de les faire apparaître sur la carte, ma traduction de l’
 
 ## Parlons outil : JOSM, le secret d’une bonne validation
 
+![logo JOSM](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/josm.png){: .img-rdp-news-thumb }
+
 Très vite, un logiciel est indispensable pour valider : [JOSM](https://josm.openstreetmap.de/). La marche est haute pour le configurer, mais une fois adopté, on ne peut plus se passer de la qualité de son travail. Tout ce qui a été décrit plus haut tient beaucoup de la logique ; JOSM joue un rôle de fidèle assistant. Il détecte un nombre incalculable d'incohérences qu’il pointe automatiquement. Par exemple la classique intersection de cours d’eau et de route, un peu technique : c’est donc moi qui construis les ponts et creuse les tunnels.
 
 ![Image aérienne d'un petit village](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/10_JOSM_zone_residentielle.webp){: .img-center loading=lazy }
@@ -159,6 +163,8 @@ La beauté des images est rarement abordée. Pourtant, le premier contact est à
 
 ## Valider : une question de personnes
 
+![logo cartONG](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/cartONG.webp){: .img-rdp-news-thumb }
+
 Si je suis validatrice aujourd’hui, c’est que j’ai été formée il y a cinq ans par l’association de cartographie humanitaire [CartONG](https://www.cartong.org/fr) (merci Violaine, Jean-Yves, Jean-Paul et Michel !). Faire partie d’un groupe de validation permet de poser des questions de manière conviviale, de [découvrir des ouvrages](https://presses-universitaires.univ-amu.fr/signatures-sahariennes) pour nous aider dans notre lecture des images, de demander des avis sur une donnée et de partager ses devinettes, sa chasse aux trésors et son enquête généalogique de [POI](https://wiki.openstreetmap.org/wiki/FR:Points_d%27int%C3%A9r%C3%AAt).
 
 ![Défaut d'imagerie sur un lac en saison humide et sèche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/17_lac_Ihotry_double_face.webp){: .img-center loading=lazy }
@@ -182,7 +188,7 @@ Si cet article parle beaucoup des erreurs et du fouillis que je dois démêler, 
 
 > Si vous ne savez pas ce qu'est une fractale, en voici un bel exemple. Avec la fée des saisons à l'œuvre. Ou [Perséphone](https://www.webtoons.com/fr/romance/lore-olympus/episode-1/viewer?title_no=1825&episode_no=1), au choix.
 
-Quant aux statistiques elles sont formelles : on passe beaucoup moins de temps à valider qu’à cartographier. Nous sommes  parfaitement complémentaires pour obtenir notre résultat : [une carte de qualité](https://hal.science/hal-02157229) destinée aux personnes sur le terrain et [aux multiples utilisations](https://www.openstreetmap.org/user/pedrito1414/diary/401009). Vous vous joignez au mouvement ?
+Quant aux statistiques elles sont formelles : on passe beaucoup moins de temps à valider qu’à cartographier. Nous sommes parfaitement complémentaires pour obtenir notre résultat : [une carte de qualité](https://hal.science/hal-02157229) destinée aux personnes sur le terrain et [aux multiples utilisations](https://www.openstreetmap.org/user/pedrito1414/diary/401009). Vous vous joignez au mouvement ?
 
 ----
 
