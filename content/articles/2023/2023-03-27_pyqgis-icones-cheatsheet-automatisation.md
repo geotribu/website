@@ -55,11 +55,11 @@ C'est sous le capot que les choses ont changé : tout est automatisé via [un wo
 
 Suite à mon mail de présentation de ce site sur la liste QGIS-Dév, j'ai eu quelques retours et notamment de la part de Benjamin Jakimow, développeur du [plugin ENMap-Box](https://enmap-box.readthedocs.io/en/latest/) dans lequel il a intégré un navigateur de toutes les ressources accessibles en PyQt, y compris celles de QGIS donc :
 
-![plugin ENMap-Box - Resource Browser](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_enmap-box_resource_browser.webp){: .img-center loading=lazy }
+![Plugin ENMap-Box - Resource Browser](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_enmap-box_resource_browser.webp){: .img-center loading=lazy }
 
-C'est vraiment cool et ça va bien plus loin que mon petit site. Mais c'est un perdu dans un plugin dont le champ fonctionnel est juste énorme !
+C'est vraiment cool d'avoir ce genre d'outils directement dans QGIS, mais c'est un perdu dans un plugin dont le champ fonctionnel est juste énorme !
 
-Je lui ai proposé mon aide pour en faire un plugin dédié indépendant. À suivre !
+Je lui ai donc proposé mon aide pour en faire un plugin dédié indépendant. À suivre !
 
 ----
 
