@@ -32,7 +32,7 @@ Cette année, dans le même élan que [le nettoyage des contenus de Geotribu](/a
 
 Je vous présente donc PyQGIS Icons Cheatsheet :
 
-![PyQGIS Icons Cheatsheet](https://pyqgis-icons-cheatsheet.geotribu.fr/assets/images/social/index.png){: .img-center loading=lazy }
+[![PyQGIS Icons Cheatsheet](https://pyqgis-icons-cheatsheet.geotribu.fr/assets/images/social/index.png){: .img-center .off-glb loading=lazy }](https://pyqgis-icons-cheatsheet.geotribu.fr/)
 
 ----
 
