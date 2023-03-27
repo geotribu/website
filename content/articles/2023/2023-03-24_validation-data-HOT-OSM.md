@@ -39,7 +39,7 @@ Très vite en effet, la plateforme propose différents projets sur l'évenement.
 
 Le découpage renseigne sur l'état d'avancement avec en bleu la zone cartographiée, un cadenas quand le travail est en cours, du vert pour la zone validée quand le gris signale une mauvaise imagerie.
 
-Des bénévoles de tous niveaux (dont vous peut-être ?) choisissent une tâche qu’ils et elles complètent en ajoutant les informations sur OpenStreetMap. Quand tous les carrés sont terminés, la zone est cartographiée, et les données ouvertes produites serviront immédiatement aux différentes équipes sur place. Une partition parfaitement maîtrisée depuis le [séisme d’Haïti de 2010](https://fr.wikipedia.org/wiki/S%C3%A9isme_de_2010_en_Ha%C3%AFti), jouée de jour comme de nuit grâce à un relais entre les différents fuseaux horaires : [OpenStreetMap ne dort jamais](https://live.openstreetmap.fr/).
+Des bénévoles de tous niveaux (dont vous peut-être ?) choisissent une tâche qu’ils et elles complètent en ajoutant les informations sur OpenStreetMap. Quand tous les carrés sont terminés, la zone est cartographiée et les données ouvertes produites serviront immédiatement aux différentes équipes sur place. Une partition parfaitement maîtrisée depuis le [séisme d’Haïti de 2010](https://fr.wikipedia.org/wiki/S%C3%A9isme_de_2010_en_Ha%C3%AFti), jouée de jour comme de nuit grâce à un relais entre les différents fuseaux horaires : [OpenStreetMap ne dort jamais](https://live.openstreetmap.fr/).
 
 Mais comment s’assurer que ces multiples contributions de personnes de niveaux et d’expériences différentes permettront d’obtenir des données homogènes à utiliser sur place, sans oubli ou erreur ? C’est là qu’intervient l’équipe de validation, dont je fais partie.
 
@@ -88,7 +88,7 @@ Cartographier des routes, c’est penser réseau : une route mène forcément qu
 J’ajoute des points d’intersection entre deux lignes (la topologie, une passion) et je connecte des routes qui paraissent si proches que l’on a oublié de les relier. En fonction des consignes, je vérifie qu’elles sont de la bonne catégorie, c’est rarement le cas des routes résidentielles. J’harmonise, je complète, je répare, j’ajuste : tout pour rendre une appli de routing heureuse !
 
 ![Voiture blanche sur une route vue d'une image aérienne. Le tracé de la cartographie semble courir derrière le véhicule](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/07_hot_validation_routes_vehicule.webp){: .img-center loading=lazy }  
-> Parfois, trouver une route, ainsi que sa classification en route pratiquable pour un véhicule, est simple.
+> Parfois, trouver une route, ainsi que sa classification en route pratiquable pour un véhicule, est intuitive.
 
 La gestion d’un réseau est une opération tellement minutieuse que dans les zones avec beaucoup de travail, je m’occupe d’abord uniquement des bâtiments, ensuite des routes et enfin des deux. Mon objectif est de me mettre mentalement dans la tête des personnes qui auront besoin des données. Car paradoxalement, la qualité est invisible, ce sont les erreurs qui font en prendre conscience.
 
