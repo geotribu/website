@@ -6,7 +6,7 @@ categories:
     - article
 date: "2023-03-31 16:30"
 description: "Offrir des données de qualité quand elles sont produites par des centaines de personnes de niveaux différents est un défi. Focus sur les méthodes en cartographie humanitaire avec HOT OSM."
-image: "![image](https://user-images.githubusercontent.com/17273438/227956441-f7bb991f-a3e3-480e-98b2-cc6c49435ae9.png)"
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/hot_validation_qualite_donnees.png
 license: default
 robots: index, follow
 tags:
