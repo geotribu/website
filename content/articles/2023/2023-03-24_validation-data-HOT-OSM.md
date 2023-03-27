@@ -4,9 +4,9 @@ authors:
     - Delphine Montagne
 categories:
     - article
-date: "2023-03-24 18:20"
-description: "OpenStreetMap, JOSM, HOT OSM, CartONG, qualité"
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS..."
+date: "2023-03-31 16:30"
+description: "Offrir des données de qualité quand elles sont produites par des centaines de personnes de niveaux différents est un défi. Focus sur les méthodes en cartographie humanitaire avec HOT OSM."
+image: "![image](https://user-images.githubusercontent.com/17273438/227956441-f7bb991f-a3e3-480e-98b2-cc6c49435ae9.png)"
 license: default
 robots: index, follow
 tags:
@@ -36,6 +36,7 @@ Très vite en effet, la plateforme propose différents projets sur l'évenement.
 ![Début de validation d'une zone avec des carrés plus ou moins carrés](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/00_hot_grille_travail.webp){: .img-center loading=lazy }
 
 > Un découpage plus ou moins carré
+
 Le découpage renseigne sur l'état d'avancement avec en bleu la zone cartographiée, un cadenas quand le travail est en cours, du vert pour la zone validée quand le gris signale une mauvaise imagerie.
 
 Des bénévoles de tous niveaux (dont vous peut-être ?) choisissent une tâche qu’ils et elles complètent en ajoutant les informations sur OpenStreetMap. Quand tous les carrés sont terminés, la zone est cartographiée, et les données ouvertes produites serviront immédiatement aux différentes équipes sur place. Une partition parfaitement maîtrisée depuis le [séisme d’Haïti de 2010](https://fr.wikipedia.org/wiki/S%C3%A9isme_de_2010_en_Ha%C3%AFti), jouée de jour comme de nuit grâce à un relais entre les différents fuseaux horaires : [OpenStreetMap ne dort jamais](https://live.openstreetmap.fr/).
@@ -181,7 +182,8 @@ Toutes les personnes qui valident ajoutent-elles ce que j'appelle des « éléme
 
 ## Pour conclure
 
-La validation sur HOT OSM est exhaustive : grâce au nombre de personnes mobilisé, chaque carré cartographié est validé. Toutefois il m'est arrivé de regarder les contributions d'un maximum de personnes différentes afin de pouvoir invalider les carrés des personnes faisant trop d'erreurs et redonner rapidement ces carrés maltraités au statut de "à cartographier".
+La validation sur HOT OSM est exhaustive : grâce au nombre de personnes mobilisé, chaque carré cartographié est validé un à un. Toutefois il m'est arrivé de regarder les contributions d'un maximum de personnes différentes. L'objectif : invalider les carrés des personnes faisant trop d'erreurs et ainsi redonner rapidement à ces carrés maltraités le statut de « à cartographier ».
+
 Si cet article parle beaucoup des erreurs et du fouillis que je dois démêler, il arrive aussi que l’ouverture d’un carré provoque un ravissement devant la qualité du minutieux travail réalisé. On notera dans les exemples combien, derrière des règles simples, plusieurs analyses, et donc plusieurs cartographies, plusieurs validations sont possibles.
 
 ![Erreur de jonction entre hiver et été sur une image aérienne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/19_fractale_saisonniere.webp){: .img-center loading=lazy }
