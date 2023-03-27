@@ -4,7 +4,7 @@ authors:
     - Delphine Montagne
 categories:
     - article
-date: "2023-03-31 16:30"
+date: "2023-03-27 16:30"
 description: "Offrir des données de qualité quand elles sont produites par des centaines de personnes de niveaux différents est un défi. Focus sur les méthodes en cartographie humanitaire avec HOT OSM."
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/hot_validation_qualite_donnees.png
 license: default
@@ -19,7 +19,7 @@ tags:
 
 # Qualité des données : un voyage sur la plateforme humanitaire d'OpenStreetMap
 
-:calendar: Date de publication initiale : 24 mars 2023
+:calendar: Date de publication initiale : 27 mars 2023
 
 ## Introduction
 
