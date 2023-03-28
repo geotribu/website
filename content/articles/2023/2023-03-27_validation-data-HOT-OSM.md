@@ -197,7 +197,7 @@ Quant aux statistiques elles sont formelles : on passe beaucoup moins de temps Ã
 
 ----
 
-## Auteur {: data-search-exclude }
+## Autrice {: data-search-exclude }
 
 --8<-- "content/team/dmon.md"
 
