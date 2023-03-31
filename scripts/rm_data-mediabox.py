@@ -5,7 +5,6 @@
     dans le cadre de https://github.com/geotribu/website/pull/720.
 """
 
-import logging
 from pathlib import Path
 
 # -- REGEX - Solution abandonnée finalement car pas rentable

@@ -82,6 +82,7 @@ jobs:
           sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # merge different configs
+          python scripts/mkdocs_populate_latest.py
           python scripts/mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # build

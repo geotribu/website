@@ -2,9 +2,9 @@
 <html lang="fr">
 
 <head>
-    <link rel="canonical" href="https://static.geotribu.fr/">
+    <!-- <link rel="canonical" href="https://static.geotribu.fr/"> -->
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url='https://static.geotribu.fr/'" />
+    <!-- <meta http-equiv="refresh" content="0; url='https://static.geotribu.fr/'" /> -->
     <meta name="robots" content="noindex">
     <title>Redirection Geotribu</title>
 </head>
@@ -12,6 +12,19 @@
 <body>
     <p>Site de prévisualisation fermé. Merci de vous rendre sur <a href="https://static.geotribu.fr/">le site
             principal</a>.</p>
+    <!-- Javascript -->
+    <script defer>
+        const url_base = window.location;
+        if (url_base.host.includes("preview-pullrequest-")) {
+            const new_url = "https://static.geotribu.fr" + url_base.pathname;
+            console.log("Redirected to:", new_url);
+            window.location.replace(new_url);
+        }
+        else {
+            let new_url = "https://static.geotribu.fr/";
+            window.location.replace(new_url);
+        }
+    </script>
 </body>
 
 </html>
