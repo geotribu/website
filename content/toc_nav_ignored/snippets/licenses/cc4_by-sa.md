@@ -13,6 +13,6 @@ Les médias d'illustration sont potentiellement soumis à d'autres conditions d'
 
     Citer cet article :
 
-    > "*{{ page.title }}*" publié par {{ page.meta.authors | join(",") }} sur **{{ config.site_name }}** - Source : <{{ page.canonical_url }}>
+    > "*{{ page.title }}*" publié par {{ page.meta.authors | join(", ") }} sur **{{ config.site_name }}** - Source : <{{ page.canonical_url }}>
 
 <!-- markdownlint-enable MD026 MD041 MD046 -->
