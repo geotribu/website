@@ -10,7 +10,7 @@ description: "Les 18 et 19 janvier prochains se tiendront les journées QGIS en 
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/evenement/2022_01_rencontres_QGIS.jpg"
 license: default
 tags:
-    - OSGeo France
+    - OSGeo-fr
     - QGIS
 ---
 

@@ -14,7 +14,7 @@ robots: index, follow
 tags:
     - GeoInterview
     - GeoITW
-    - OSGeo France
+    - OSGeo-fr
     - QGIS
 ---
 
