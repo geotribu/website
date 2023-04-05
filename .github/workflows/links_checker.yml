@@ -43,11 +43,12 @@ jobs:
 
       - name: Run linkcheckr
         run: |
-          linkchecker \
-          --config .linkcheckrrc
+          linkchecker build/mkdocs/site/ \
+          --config .linkcheckrrc \
+          --no-warnings \
           --output html \
           --threads 100 \
-          build/mkdocs/site/ > linkchecker_report.html
+          > linkchecker_report.html
 
       - name: Save report output as artifact
         uses: actions/upload-artifact@v3
