@@ -132,7 +132,7 @@
               <img src="{{ config.extra.latest.articles[0].image | default('fr') }}"
                 alt="Illustration du dernier article publié" decoding="async" loading="lazy" draggable="false">
               <div class="image-overlay">{{ config.extra.latest.articles[0].title | default('Placeholder') }}, par {{
-                config.extra.latest.articles[0].authors[0] | default('Valeur par défaut') }}</div>
+                config.extra.latest.articles[0].authors | default('Valeur par défaut') | join(", ") }}</div>
             </a>
             {% endif %}
           </div>
