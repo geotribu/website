@@ -34,6 +34,7 @@ jobs:
 
       - name: Build static website
         run: |
+          python scripts/mkdocs_populate_latest.py
           python scripts/mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --quiet --strict
         env:
