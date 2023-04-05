@@ -1,4 +1,4 @@
-name: "🎳 Vérification des liens "
+name: "🎳 Vérification des liens"
 
 on:
   schedule:
@@ -42,4 +42,17 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_RSS: true
 
       - name: Run linkcheckr
-        run: linkchecker build/mkdocs/site/ --config .linkcheckrrc
+        run: |
+          linkchecker \
+          --config .linkcheckrrc
+          --output html \
+          --threads 100 \
+          build/mkdocs/site/ > linkchecker_report.html
+
+      - name: Save report output as artifact
+        uses: actions/upload-artifact@v3
+        if: ${{ always() }}
+        continue-on-error: true
+        with:
+          path: linkchecker_report.html
+          retention-days: 30
