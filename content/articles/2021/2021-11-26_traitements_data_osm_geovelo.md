@@ -173,4 +173,4 @@ Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre c
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/sdeb.md"
+--8<-- "content/team/sdes.md"
