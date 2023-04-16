@@ -3,7 +3,8 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "files.associations": {
-        "./requirements*.txt": "pip-requirements"
+        "./requirements*.txt": "pip-requirements",
+        ".linkcheckrrc": "ini"
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
