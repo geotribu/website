@@ -34,7 +34,7 @@ Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu
 Ce nouveau portail doit prendre la suite du portail actuel [scihub.copernicus.eu](https://scihub.copernicus.eu) d'accès aux données open-data Sentinel ainsi que de certains des actuels DIAS (**D**ata **I**nformation and **A**cces **S**ervice) pour l'offre de service payante associée.
 Dans ce deuxième article nous revenons donc sur l'historique des différents portails d'accès aux données Sentinel et des fonctionnalités qu'ils ont offertes.
 
-Pour un rappel sur les données Sentinel voir le [premier article](2023-02-21_portails-copernicus-1-donnees/) et pour les personnes intéressés par le nouveau portail aller directement au [troisième article](/articles/2023/2023-03-07_portails-copernicus-3-futur/).
+Pour un rappel sur les données Sentinel voir le [premier article](/articles/2023/2023-02-21_portails-copernicus-1-donnees/) et pour les personnes intéressées par le nouveau portail aller directement au [troisième article](/articles/2023/2023-03-07_portails-copernicus-3-futur/).
 Série **Accès aux données Copernicus/Sentinel** :
 
 * [Partie 1 : données OCS et Sentinel](/articles/2023/2023-02-21_portails-copernicus-1-donnees/).

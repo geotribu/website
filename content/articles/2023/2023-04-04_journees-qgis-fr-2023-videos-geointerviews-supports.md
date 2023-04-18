@@ -28,7 +28,7 @@ La Geotribu était bien présente aux journées QGIS. En plus d'assurer l'animat
 
 On a filmé quelques participant/es pour recueillir leurs impressions sur la conférence mais aussi la façon dont ils utilisent, financent ou contribuent à QGIS.
 
-L'idée était d'avoir un format proche de ce qu'on connaît désormais très bien au travers de médias tels que Brut ou Konbini, toutes proportions de moyens gardées. Nnous publions ces courtes capsules vidéos sur notre chaîne YouTube à raison de 2 par semaine depuis jeudi dernier.
+L'idée était d'avoir un format proche de ce qu'on connaît désormais très bien au travers de médias tels que Brut ou Konbini, toutes proportions de moyens gardées. Nous publions ces courtes capsules vidéos sur notre chaîne YouTube à raison de 2 par semaine depuis jeudi dernier.
 
 Merci à celles et ceux qui nous ont fait confiance spontanément en acceptant de se prêter au jeu. Répondre face caméra sans préparation est loin d'être un exercice facile et les conditions n'étaient pas vraiment idéales (:wave:coucou la police du bruit :woman_police_officer:).
 
