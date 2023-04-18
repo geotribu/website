@@ -67,7 +67,7 @@ Et je peux travailler en tout zénitude sans me demander si la prochaine mise à
 {: align=middle }
 
 !!! note "Disponibilité des versions"
-    Notez que la version de votre distribution est également importante puisque toutes les versions de QGIS ne sont pas packagées et dsitribuées pour toutes les versions des distributions, notamment pour des questions de dépendances incompatibles ou manquantes. Par exemple, sur une base Ubuntu 20.04, on ne trouve pas de version de QGIS au-delà de la 3.22. Voir [ce commentaire](https://static.geotribu.fr/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/#isso-239) et sa réponse.
+    Notez que la version de votre distribution est également importante puisque toutes les versions de QGIS ne sont pas packagées et dsitribuées pour toutes les versions des distributions, notamment pour des questions de dépendances incompatibles ou manquantes. Par exemple, sur une base Ubuntu 20.04, on ne trouve pas de version de QGIS au-delà de la 3.22. Voir [ce commentaire](/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/#isso-239) et sa réponse.
 
 ----
 
