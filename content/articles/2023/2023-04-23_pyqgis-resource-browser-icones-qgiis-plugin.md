@@ -1,13 +1,12 @@
 ---
 title: "PyQGIS Resource Browser : un plugin pour parcourir les icônes de QGIS"
-subtitle: "Et tout totomatique svp !"
 authors:
     - Julien MOURA
 categories:
     - article
 date: "2023-04-23 18:20"
-description: "Pour faciliter le travail d'intégration des icônes de QGIS par les développeurs de plugins, j'ai automatisé la génération et la mise à jour d'un site web : PyQGIS Icons Cheatsheet."
-mage: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/pyqgis_resources_browser/plugin_pyqgis_resource_browser.png
+description: "Après le tutoriel et le site, voici le plugin QGIS : PyQGIS Resource Browser ! Idéal pour parcourir les icônes et copier la syntaxe d'intégration."
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/pyqgis_resources_browser/plugin_pyqgis_resource_browser.png
 license: beerware index, f
 tags:
     - icônes
