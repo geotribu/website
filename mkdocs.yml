@@ -98,9 +98,9 @@ plugins:
       tags_compare: !!python/name:material.plugins.tags.plugin.casefold
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
-      external_links_attr_map:
+      links_attr_map:
         target: _blank
-      external_assets_exclude:
+      assets_exclude:
         # geotribu
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*
