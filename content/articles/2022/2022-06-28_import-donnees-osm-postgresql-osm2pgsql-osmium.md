@@ -1,6 +1,6 @@
 ---
 title: "Importer des données OSM dans PostgreSQL"
-subtitle: "Installation, configuration, import" 
+subtitle: "Installation, configuration, import"
 authors:
     - Julien MOURA
 categories:
