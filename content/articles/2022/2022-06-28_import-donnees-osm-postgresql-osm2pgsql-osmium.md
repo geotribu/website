@@ -1,5 +1,6 @@
 ---
 title: "Importer des données OSM dans PostgreSQL"
+subtitle: "Installation, configuration, import"
 authors:
     - Julien MOURA
 categories:
@@ -9,6 +10,7 @@ date: "2022-06-28 10:20"
 description: "Guide détaillé pour installer et configurer PostgreSQL, PostGIS et importer des données OpenStreetMap à l'aide d'osm2pgsql et Osmium."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png"
 license: default
+robots: index, follow
 tags:
     - OpenStreetMap
     - osm2pgsql
@@ -213,6 +215,12 @@ De façon à ne pas stocker de mot de passe en clair dans les applications clien
 
 ```bash
 echo "localhost:54342:*:$(whoami):motdepasse_assigne_a_mon_utilisateur" >> ~/.pgpass
+```
+
+Dans la foulée, on change les permissions de ce fichier `.pgpass` pour en [limiter les accès en lecture et écriture à l'utilisateur](https://chmodcommand.com/chmod-0600/) - sans quoi le fichier sera ignoré :
+
+```bash
+chmod 0600 ~/.pgpass
 ```
 
 De même, de façon à garder la connexion la plus générique possible dans le but de rendre la suite le plus facilement reproductible possible, on stocke les paramètres de connexion dans le fichier `PGSERVICE` (voir [la doc officielle de PostgreSQL](https://www.postgresql.org/docs/current/libpq-pgservice.html) et [celle de QGIS](https://docs.qgis.org/3.22/fr/docs/user_manual/managing_data_source/opening_data.html#pg-service-file)) :
