@@ -36,6 +36,9 @@
       <div class="component-wrapper">
         <div class="first-column">
           <h3>{{ contenu.title | default('Placeholder') }}</h3>
+          <h5>{{ "Publié le {} {} {} à {}h{}".format(contenu.date[8:10], contenu.date[5:7], contenu.date[:4],
+            contenu.date[11:13],contenu.date[14:]) |
+            default('1985-08-09 03:45') }}</h5>
           <p>{{ contenu.description | default('Placeholder') }}</p>
           <a href="/{{ contenu.url_rel | default('/') }}" class="md-button">Lire cet article...</a>
         </div>
