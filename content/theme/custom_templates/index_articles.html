@@ -3,7 +3,7 @@
 {% block styles %}
 {{ super() }}
 
-<link rel=stylesheet href=theme/assets/stylesheets/homepage.min.css>
+<link rel=stylesheet href=../theme/assets/stylesheets/homepage.min.css>
 {% endblock %}
 
 <!-- Render hero under tabs -->
@@ -37,12 +37,14 @@
         <div class="first-column">
           <h3>{{ contenu.title | default('Placeholder') }}</h3>
           <p>{{ contenu.description | default('Placeholder') }}</p>
+          <a href="/{{ contenu.url_rel | default('/') }}" class="md-button">Lire cet article...</a>
         </div>
         <div class="second-column">
           <div class="image-wrapper">
-            <a href="/{{ contenu.url_rel | default('/') }}" hreflang={{
-              contenu.language | default('fr') }} title="Lien vers le dernier article">
-              <img src="{{ contenu.image | default('https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png') }}"
+            <a href="/{{ contenu.url_rel | default('/') }}" hreflang={{ contenu.language | default('fr') }}
+              title="Lien vers le dernier article">
+              <img
+                src="{{ contenu.image | default('https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png') }}"
                 alt="Illustration du dernier article publié" decoding="async" loading="lazy" draggable="false">
               <div class="image-overlay">{{ contenu.title | default('Placeholder') }}, par {{
                 contenu.authors | default('Prénom NOM') | join(", ") }}</div>
