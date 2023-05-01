@@ -287,7 +287,7 @@ On aère un peu et on repart sur [le début de la procédure](#dependances).
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/julien-moura.md"
+--8<-- "content/team/julien-moura.md:author"
 
 {% include "licenses/beerware.md" %}
 
