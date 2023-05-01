@@ -1,0 +1,89 @@
+{% extends "main.html" %}
+
+{% block styles %}
+{{ super() }}
+
+<link rel=stylesheet href=theme/assets/stylesheets/homepage.min.css>
+{% endblock %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+{{ super() }}
+
+<!-- Hero for landing page -->
+<div class="tx-container">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero">
+      <div class="tx-hero__title">
+        <h1 style="visibility: hidden">Geotribu</h1>
+      </div>
+      <div class="tx-hero__image">
+        <img src="https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png"
+          alt="Bannière Geotribu" draggable="false" title="logo Geotribu">
+      </div>
+      <div class="tx-hero__content">
+        <p>Site collaboratif sur la géomatique <span class="em">libre</span> et <span class="em">ouverte</span>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="md-container secondary-section">
+  <div class="g">
+    {% if config.extra.latest %}{% for contenu in config.extra.latest.articles %}
+    <div class="section" id="revues-de-presse">
+      <div class="component-wrapper">
+        <div class="first-column">
+          <h3>{{ contenu.title | default('Placeholder') }}</h3>
+          <p>{{ contenu.description | default('Placeholder') }}</p>
+        </div>
+        <div class="second-column">
+          <div class="image-wrapper">
+            <a href="/{{ contenu.url_rel | default('/') }}" hreflang={{
+              contenu.language | default('fr') }} title="Lien vers le dernier article">
+              <img src="{{ contenu.image | default('https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png') }}"
+                alt="Illustration du dernier article publié" decoding="async" loading="lazy" draggable="false">
+              <div class="image-overlay">{{ contenu.title | default('Placeholder') }}, par {{
+                contenu.authors | default('Prénom NOM') | join(", ") }}</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}{% endif %}
+
+  </div>
+</div>
+
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
+{% endblock %}
+
+<!-- Light footer -->
+{% block footer %}
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        {% if config.copyright %}
+        <div class="md-footer-copyright__highlight">
+          {{ config.copyright }}
+        </div>
+        {% endif %}
+        Généré avec
+        <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        et le thème
+        <a href="https://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      {% block social %}
+      {% include "partials/social.html" %}
+      {% endblock %}
+    </div>
+  </div>
+</footer>
+{% endblock %}

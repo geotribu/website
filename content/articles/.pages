@@ -1,6 +1,7 @@
 title: "&#128214; Articles"
 
 nav:
+    - "Derniers articles": index.md
     - "2025"
     - "2024"
     - "2023"
