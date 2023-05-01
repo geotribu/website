@@ -96,7 +96,7 @@ Quand un contenu est modifié, le site est automatiquement rechargé.
 
 ## Contribuer
 
-Pour la procédure détaillée, consulter [la section dédiée sur le site](https://static.geotribu.fr/contribuer/introduction/).
+Pour la procédure détaillée, consulter [le site dédié](https://contribuer.geotribu.fr/).
 
 ## Soutenir
 
