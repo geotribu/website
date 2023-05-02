@@ -46,9 +46,12 @@ Ce qui affichera :
 
 Vous trouverez de nombreux autres exemples sur le site. En tout cas, je dois avouer que [YQL Geo Library](http://isithackday.com/hacks/geo/yql-geo-library/) est un véritable concentré de simplicité et d'efficacité.
 
-----  
-Sources : [Ajaxian](http://ajaxian.com/archives/yql-geo-library-all-your-geo-needs-in-pure-javascript)  
-[Et encore chez Benjamin Chartier](http://benjamin.chartier.free.fr/pro/?p=1694)
+----
+
+## Sources
+
+- [Ajaxian](http://ajaxian.com/archives/yql-geo-library-all-your-geo-needs-in-pure-javascript)  
+- [Et encore chez Benjamin Chartier](http://benjamin.chartier.free.fr/pro/?p=1694)
 
 ----
 

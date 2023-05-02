@@ -102,7 +102,9 @@ Si vous ne souhaitez pas nous rejoindre (la peur de l'engagement tout ça), plus
 
 Aujourd'hui, pour contribuer à la revue de presse, il y a déjà plusieurs moyens adaptés à l'appétence technique de chacun/e :
 
-[Proposer une news par email :fontawesome-solid-paper-plane:](mailto:<geotribu+rdp@gmail.com>?subject=Contribution à la GeoRDP){: .md-button }
+<!-- markdownlint-disable MD034 -->
+[Proposer une news par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution à la GeoRDP){: .md-button }
+<!-- markdownlint-enable MD034 -->
 [Proposer une news via GitHub :fontawesome-solid-ticket:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml){: .md-button }
 {: align=middle }
 
