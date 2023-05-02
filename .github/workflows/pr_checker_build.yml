@@ -41,6 +41,9 @@ jobs:
         uses: actions/checkout@v4
 
 
+      - name: Install locales
+        run: sudo dpkg-reconfigure locales
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
