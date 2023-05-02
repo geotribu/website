@@ -1,4 +1,4 @@
-{% extends "main.html" %}
+{% extends "base.html" %}
 
 {% block styles %}
 {{ super() }}
@@ -35,16 +35,19 @@
     <div class="section" id="revues-de-presse">
       <div class="component-wrapper">
         <div class="first-column">
-          <h3>{{ contenu.title | default('Placeholder') }}</h3>
-          <h5>{{ "Publié le {} {} {} à {}h{}".format(contenu.date[8:10], contenu.date[5:7], contenu.date[:4],
-            contenu.date[11:13],contenu.date[14:]) |
-            default('1985-08-09 03:45') }}</h5>
-          <p>{{ contenu.description | default('Placeholder') }}</p>
+          <h3>{{ contenu.title | default('Titre') }}</h3>
+          {% if contenu.subtitle %}<blockquote>{{ contenu.subtitle | default('Sous-titre') }}</blockquote>{% endif %}
+          <h4>
+            {{ contenu.tags | default('mots-clés') | join(", ") }}
+          </h4>
+          <h5>{{ "Publié le {}".format(contenu.date_txt_full) |
+            default('vendredi 9 août 1985') }} par {{ contenu.authors | default('Prénom NOM') | join(", ") }}</h5>
+          <p>{{ contenu.description | default('Description') }}</p>
           <a href="/{{ contenu.url_rel | default('/') }}" class="md-button">Lire cet article...</a>
         </div>
         <div class="second-column">
           <div class="image-wrapper">
-            <a href="/{{ contenu.url_rel | default('/') }}" hreflang={{ contenu.language | default('fr') }}
+            <a href="/{{ contenu.url_rel | default('/') }}" hreflang="{{ contenu.language | default('fr') }}"
               title="Lien vers le dernier article">
               <img
                 src="{{ contenu.image | default('https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png') }}"
