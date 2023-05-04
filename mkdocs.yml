@@ -138,12 +138,17 @@ plugins:
         - boundlessgeo.com/*
         - i3.codeplex.com/*
         - drfhlmcehrc34.cloudfront.net/*
+  - social:
+      cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, true]
+      cards_color:
+        fill: "#3e93a7"
+      cards_font: Ubuntu
 
 # Theme
 theme:
   name: "material"
   custom_dir: "./content/theme/"
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  favicon: theme/assets/images/geotribu/logo_geotribu.png
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -166,7 +171,7 @@ theme:
     - toc.follow
   font: false
   language: fr
-  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
