@@ -59,7 +59,7 @@ Sans oublier le site miroir sur un autre serveur, quand les services de GitHub t
 
 ----
 
-## Changements
+## Date effective du changement
 
 Le changement sera effectif **aux alentours du 1er août**. Rien de mieux qu'une canicule et qu'un désert de consultation pour tout péter !
 
