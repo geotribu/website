@@ -7,7 +7,7 @@ categories:
     - article
 date: "2023-05-05 10:20"
 description: Après 3 ans sur un sous-domaine, le site va revenir sur son domaine principal. Attachez vos ceintures de favoris !
-image:
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/changement_url_geotribu/demenagement_globe_terrestre.png
 license: default
 robots: index, follow
 tags:
@@ -38,8 +38,8 @@ https://geotribu.fr/
 
 ## Toutes ces routes mènent au site Geotribu
 
-On parle bien ici de l'URL principale, celle de référence notamment pour les moteurs d'indexation et qui l'adresse finale qui s'affiche dans la barre de votre navigateur web.
-Mais différentes adresses mènent à cette URL :
+On parle bien ici de l'URL principale, celle de référence notamment pour les moteurs d'indexation et qui s'affiche dans la barre de votre navigateur web.
+Mais différentes adresses mènent (ou mèneront) à cette URL :
 
 ```mermaid
 flowchart TB
@@ -47,9 +47,11 @@ flowchart TB
     B(https://www.geotribu.fr) -->|Redirection DNS| U
     C(http://geotribu.fr) -->|https| U
     D(http://www.geotribu.net) -->|https| E
-    E(https://www.geotribu.net) -->|Redirection https| U
+    E(https://www.geotribu.net) -->|Redirection DNS| U
     F(http://www.geotribu.net) -->|https| G
     G(https://www.geotribu.net) -->|Redirection DNS| U
+    H(http://static.geotribu.fr) -->|https| I
+    I(https://static.geotribu.fr) -->|Redirection DNS| U
     U{"https://geotribu.fr/ <br /> (Apex)"}
 ```
 
@@ -59,7 +61,7 @@ Sans oublier le site miroir sur un autre serveur, quand les services de GitHub t
 
 ## Changements
 
-Le changement sera effectif **aux alentours du 1er août**.
+Le changement sera effectif **aux alentours du 1er août**. Rien de mieux qu'une canicule et qu'un désert de consultation pour tout péter !
 
 ### Check-list pour que tout se passe bien
 
@@ -67,6 +69,8 @@ Le changement sera effectif **aux alentours du 1er août**.
     - les nouveaux contenus : <https://geotribu.fr/feed_rss_created.xml>
     - les contenus mis à jour : <https://geotribu.fr/feed_rss_updated.xml>
 - [ ] mettre à jour ses favoris (ou marque-pages) de navigateur
+
+Merci de nous lire !
 
 ----
 
