@@ -48,10 +48,8 @@ flowchart TB
     C(http://geotribu.fr) -->|https| U
     D(http://www.geotribu.net) -->|https| E
     E(https://www.geotribu.net) -->|Redirection DNS| U
-    F(http://www.geotribu.net) -->|https| G
-    G(https://www.geotribu.net) -->|Redirection DNS| U
-    H(http://static.geotribu.fr) -->|https| I
-    I(https://static.geotribu.fr) -->|Redirection DNS| U
+    F(http://static.geotribu.fr) -->|https| G
+    G(https://static.geotribu.fr) -->|Redirection DNS| U
     U{"https://geotribu.fr/ <br /> (Apex)"}
 ```
 
