@@ -40,6 +40,11 @@ plugins:
       repository: geotribu/website
       branch: master
       docs_path: content/
+      cache_dir:
+        !ENV [
+          MKDOCS_PLUGIN_GIT_COMMITTERS_CACHE_DIR,
+          .cache/plugin/git-committers/,
+        ]
   - git-revision-date-localized:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, false]
       enable_creation_date: true
@@ -99,7 +104,7 @@ plugins:
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       external_assets_dir:
-        !ENV [MKDOCS_PLUGIN_PRIVACY_EXTERNAL_ASSETS_DIR, assets/external]
+        !ENV [MKDOCS_PLUGIN_PRIVACY_EXTERNAL_ASSETS_DIR, .cache/plugin/privacy]
       links_attr_map:
         target: _blank
       assets_exclude:
