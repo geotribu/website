@@ -21,6 +21,9 @@ tags:
 
 Pré-requis : une connexion internet.
 
+!!! info "Trop tard !"
+    La méthode présentée ici ne fonctionne plus depuis cette [PR de mai 2023](https://github.com/geotribu/website/pull/923) qui a basculé le déploiement du site sur les GitHub Pages hors de la branche `gh-pages`.
+
 ## Intro
 
 ![icône matière](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "matière"){: .img-rdp-news-thumb }
