@@ -64,23 +64,12 @@ jobs:
 
       - name: Build in strict mode
         env:
+          MKDOCS_EDIT_URI: edit/$GITHUB_HEAD_REF/content
+          MKDOCS_SITE_COPYRIGHT: ${NETLIFY_BRANDING}
+          MKDOCS_SITE_NAME: Geotribu PREVIEW
+          MKDOCS_SITE_URL: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
-          # site name
-          sed -i "s|^site_name:.*|site_name: Geotribu PREVIEW |" ${{ env.MKDOCS_CONFIG_FILENAME }}
-
-          # Adjust ${{ env.MKDOCS_CONFIG_FILENAME }} for preview build
-          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" ${{ env.MKDOCS_CONFIG_FILENAME }}
-
-          # Insert sponsor branding into page content (Provider OSS plan requirement):
-          # Upstream does not provide a nicer maintainable way to do this..
-          # Prepends HTML to copyright text and then aligns to the right side.
-          sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" ${{ env.MKDOCS_CONFIG_FILENAME }}
-
-          # set repo and branch
-          sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" ${{ env.MKDOCS_CONFIG_FILENAME }}
-          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" ${{ env.MKDOCS_CONFIG_FILENAME }}
-
           # merge different configs
           python scripts/mkdocs_populate_latest.py
           python scripts/mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
