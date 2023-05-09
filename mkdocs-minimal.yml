@@ -1,17 +1,18 @@
 # Project information
-site_name: Geotribu
+site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu"]
 site_description: >-
   Site indépendant de veille sur la géomatique libre et open source.
   Articles, tutoriels et revues de presse (#GeoRDP) sur
   l'information géographique, les SIG, la cartographie, la représentation des données...
 
-site_author: Geotribu
-site_url: https://static.geotribu.fr/
-copyright: '<span class="copyleft">&copy;</span> Geotribu'
+site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
+site_url: !ENV [MKDOCS_SITE_URL, "https://static.geotribu.fr/"]
+copyright:
+  !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
 
 # Custom folder structure
-docs_dir: "./content"
-site_dir: "./build/mkdocs/site"
+docs_dir: !ENV [MKDOCS_SOURCE_DIR, "./content"]
+site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
 # Plugins
 plugins:
