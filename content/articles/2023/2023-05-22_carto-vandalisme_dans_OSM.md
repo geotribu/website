@@ -51,7 +51,8 @@ OpenStreetMap étant devenue une référence pour de nombreux secteurs de métie
 
 ![Carto-vandalisme : graffiti à partir des routes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_graffiti.webp){: .img-center loading=lazy }
 
-*Ci-dessus: carto-vandalisme "graffiti" à partir des routes dans OSM*
+> Ci-dessus: carto-vandalisme "graffiti" à partir des routes dans OSM
+{: align=middle }
 
 ----
 
