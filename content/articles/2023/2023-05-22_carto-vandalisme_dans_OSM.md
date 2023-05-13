@@ -156,14 +156,6 @@ Si vous souhaitez en savoir plus sur la détection automatique du carto-vandalis
 
 ## Autrice
 
-<!--
-
-Ce bloc sera ensuite stocké dans un fichier dédié : content/team/qtru.md
-Il sera appelé via la balise suivante : --8<-- "content/team/qtru.md"
-
-Voir https://contribuer.geotribu.fr/guides/authoring/#bloc-auteur
-
--->
 
 --8<-- "content/team/qtru.md"
 
