@@ -5,7 +5,7 @@ authors:
     - Quy Thy TRUONG
 categories:
     - article
-date: "2023-05-16 10:20"
+date: "2023-05-22 10:20"
 description: "Détection du vandalisme cartographique dans OSM grâce à de l'apprentissage automatique"
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
 license: default
@@ -17,7 +17,7 @@ tags:
 
 # Carto-vandalisme dans OpenStreetMap : mythe ou réalité ?
 
-:calendar: Date de publication initiale : 16 mai 2023
+:calendar: Date de publication initiale : 22 mai 2023
 
 ## Introduction
 
