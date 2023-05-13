@@ -11,7 +11,7 @@ body:
     attributes:
       value: |
         Merci de prendre le temps de contribuer à Geotribu !
-        Le guide de soumission et la structure d'un article [sont ici](https://static.geotribu.fr/contribuer/articles/workflow/).
+        Le guide de soumission et la structure d'un article [sont ici](https://contribuer.geotribu.fr/articles/workflow/).
 
   - type: markdown
     attributes:
@@ -35,7 +35,7 @@ body:
     id: in-author-name
     attributes:
       label: Votre nom
-      description: Merci de nous indiquer le Prénom NOM (pseudonyme accepté) sous lequel vous signez l'article (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
+      description: Merci de nous indiquer le Prénom NOM (pseudonyme accepté) sous lequel vous signez l'article (voir [signer ses contributions](https://contribuer.geotribu.fr/guides/authoring/#signer-pour-quelquun-dautre)).
       placeholder: ex. "Jean DUPONT"
     validations:
       required: true
@@ -44,7 +44,7 @@ body:
     id: in-author-mail
     attributes:
       label: Votre adresse email
-      description: Merci de nous indiquer votre adresse email afin de pouvoir vous signez l'article (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
+      description: Merci de nous indiquer votre adresse email afin de pouvoir vous signez l'article (voir [signer ses contributions](https://contribuer.geotribu.fr/guides/authoring/#signer-pour-quelquun-dautre)).
       placeholder: ex. pseudo.nyme [à] mon-organisation.fr
     validations:
       required: true
@@ -54,9 +54,9 @@ body:
     attributes:
       label: Licence
       description: |
-        Choisissez la licence qui vous convient le mieux. Voir [le guide](https://static.geotribu.fr/contribuer/guides/licensing/).
+        Choisissez la licence qui vous convient le mieux. Voir [le guide](https://contribuer.geotribu.fr/guides/licensing/).
       options:
-        - "[Creative Commons International BY-NC-SA 4.0](https://static.geotribu.fr/contribuer/guides/licensing/#licence-par-defaut) **licence par défaut**"
+        - "[Creative Commons International BY-NC-SA 4.0](https://contribuer.geotribu.fr/guides/licensing/#licence-par-defaut) **licence par défaut**"
         - "[Creative Commons International BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
         - "[Beerware (Révision 42)](https://fr.wikipedia.org/wiki/Beerware)"
         - "autre - merci de préciser dans le champ libre en fin de formulaire"

@@ -1,13 +1,14 @@
 # Project information
-site_name: Geotribu
+site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu"]
 site_description: >-
   Site indépendant de veille sur la géomatique libre et open source.
   Articles, tutoriels et revues de presse (#GeoRDP) sur
   l'information géographique, les SIG, la cartographie, la représentation des données...
 
-site_author: Geotribu
-site_url: https://static.geotribu.fr/
-copyright: '<span class="copyleft">&copy;</span> Geotribu'
+site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
+site_url: !ENV [MKDOCS_SITE_URL, "https://static.geotribu.fr/"]
+copyright:
+  !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
 
 # Repository
 repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/website"]
@@ -15,8 +16,8 @@ repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/website"]
 edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/master/content"]
 
 # Custom folder structure
-docs_dir: "./content"
-site_dir: "./build/mkdocs/site"
+docs_dir: !ENV [MKDOCS_SOURCE_DIR, "./content"]
+site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
 # Scripts pendant le build
 hooks:
@@ -40,6 +41,11 @@ plugins:
       repository: geotribu/website
       branch: master
       docs_path: content/
+      cache_dir:
+        !ENV [
+          MKDOCS_PLUGIN_GIT_COMMITTERS_CACHE_DIR,
+          .cache/plugin/git-committers/,
+        ]
   - git-revision-date-localized:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, false]
       enable_creation_date: true
@@ -97,10 +103,12 @@ plugins:
       tags_file: tags.md
       tags_compare: !!python/name:material.plugins.tags.plugin.casefold
   - privacy:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
-      external_links_attr_map:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
+      assets_fetch_dir:
+        !ENV [MKDOCS_PLUGIN_PRIVACY_EXTERNAL_CACHE_DIR, .cache/plugin/privacy]
+      links_attr_map:
         target: _blank
-      external_assets_exclude:
+      assets_exclude:
         # geotribu
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*

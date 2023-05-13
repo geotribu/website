@@ -35,7 +35,7 @@ body:
     id: in_author_name
     attributes:
       label: Votre nom
-      description: Merci de nous indiquer le Prénom NOM (pseudonyme accepté) sous lequel vous attribuer la contribution (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
+      description: Merci de nous indiquer le Prénom NOM (pseudonyme accepté) sous lequel vous attribuer la contribution (voir [signer ses contributions](https://contribuer.geotribu.fr/guides/authoring/#signer-pour-quelquun-dautre)).
       placeholder: ex. "Jean DUPONT"
     validations:
       required: true
@@ -44,7 +44,7 @@ body:
     id: in_author_mail
     attributes:
       label: Votre adresse email
-      description: Merci de nous indiquer votre adresse email afin de pouvoir vous attribuer la contribution (voir [signer ses contributions](https://static.geotribu.fr/contribuer/guides/authoring/#signer-pour-quelquun-dautre)).
+      description: Merci de nous indiquer votre adresse email afin de pouvoir vous attribuer la contribution (voir [signer ses contributions](https://contribuer.geotribu.fr/guides/authoring/#signer-pour-quelquun-dautre)).
       placeholder: ex. pseudo.nyme [à] mon-organisation.fr
     validations:
       required: true

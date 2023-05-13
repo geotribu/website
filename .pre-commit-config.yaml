@@ -19,14 +19,14 @@ repos:
         args: [--markdown-linebreak-ext=md]
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.3.1
+    rev: v3.3.2
     hooks:
       - id: pyupgrade
         args:
           - "--py38-plus"
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: "v0.0.260"
+    rev: "v0.0.263"
     hooks:
       - id: ruff
         args: ["--fix-only"]
@@ -51,7 +51,7 @@ repos:
         args: ["--select=E9,F63,F7,F82"]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.33.0
+    rev: v0.34.0
     hooks:
       - id: markdownlint
         args:

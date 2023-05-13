@@ -12,7 +12,10 @@
     },
     // Python
     "python.defaultInterpreterPath": ".venv/bin/python",
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "none",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
     "python.linting.enabled": false,
     // Git
     "git.ignoreLimitWarning": true,
@@ -29,5 +32,5 @@
         "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
         "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
         "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
-    ]
+    ],
 }

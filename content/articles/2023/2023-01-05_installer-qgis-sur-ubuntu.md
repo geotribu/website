@@ -66,6 +66,9 @@ Et je peux travailler en tout zénitude sans me demander si la prochaine mise à
 > :person_juggling: Les personnes qui installent la version de QGIS non LTR et sans correctif :person_juggling:
 {: align=middle }
 
+!!! note "Disponibilité des versions"
+    Notez que la version de votre distribution est également importante puisque toutes les versions de QGIS ne sont pas packagées et dsitribuées pour toutes les versions des distributions, notamment pour des questions de dépendances incompatibles ou manquantes. Par exemple, sur une base Ubuntu 20.04, on ne trouve pas de version de QGIS au-delà de la 3.22. Voir [ce commentaire](/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/#isso-239) et sa réponse.
+
 ----
 
 ## Dépendances
@@ -252,6 +255,12 @@ On désinstalle QGIS :
 
 ```sh
 sudo apt --purge remove qgis*
+```
+
+Si jamais vous avez joué à un moment avec un dépôt exotique tel `ubuntugis`, il est aussi recommandé de désinstaller toute dépendance liée à QGIS, notamment GDAL et PROJ dont les conflits de versions peuvent jouer des tours au détours de certains traitements spatiaux :
+
+```sh
+sudo apt --purge remove gdal-* proj-*
 ```
 
 On supprime ensuite les références au dépôt de QGIS qui peuvent encore traîner dans le fichier des sources principales.  
