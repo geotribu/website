@@ -38,11 +38,11 @@ Le vandalisme cartographique (ou carto-vandalisme) consiste à dégrader **inten
 
 Quelques exemples notables :
 
-* Des plans d'eau imaginaires introduits par des joueurs de Pokémon GO dans le but de favoriser des nids de pokémons à attraper (comme ci-dessous)
+* Des plans d'eau imaginaires introduits par des joueurs de Pokémon GO dans le but de favoriser des nids de pokémons à attraper (comme ci-dessous).
 
 ![Carto-vandalisme : faux plans d'eau](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_pokemon_go.webp){: width=48% loading=lazy } ![Carto-vandalisme : échanges lunaires sur les changesets](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_changeset_lunaire_poisson.webp){: width=50% loading=lazy }
 
-* Des employés de Google qui ont été surpris à  [supprimer des données et inverser des routes à sens unique dans OSM](https://www.wired.com/2012/01/osm-google-accusation/)
+* Des employés de Google qui ont été surpris à  [supprimer des données et inverser des routes à sens unique dans OSM](https://www.wired.com/2012/01/osm-google-accusation/).
 * La ville de New-York a été renommée temporairement ["Jewtropolis"](https://time.com/5382801/new-york-city-jewtropolis-snapchat/), bien que l'auteur de ces contributions prétende avoir agi de la sorte pour [démontrer les failles du système de sécurité d'OSM](https://www.reddit.com/r/openstreetmap/comments/9brqx4/this_is_medwedianpresident1_talking_what_i_did/).
 
 OpenStreetMap étant devenue une référence pour de nombreux secteurs de métier, les dégradations causées peuvent être très graves et nécessitent d'être détectées au plus vite.
@@ -143,8 +143,8 @@ En parallèle de cette expérience, j'ai voulu interroger l'intérêt des descri
 
 En résumé, ce travail a permis :
 
-* d'identifier et de définir le carto-vandalisme
-* de mettre en lumière les éléments nécessaires pour permettre de le détecter automatiquement dans OSM
+* d'identifier et de définir le carto-vandalisme ;
+* de mettre en lumière les éléments nécessaires pour permettre de le détecter automatiquement dans OSM.
 
 Ces résultats incitent à chercher comment améliorer la performance des systèmes d'apprentissage pour détecter le carto-vandalisme. Cela passera par la constitution d'un meilleur jeu de données d'entraînement, couplé à un meilleur paramétrage du modèle d'apprentissage choisi. Mais en l'état, ce genre de système pourrait déjà servir d'outil d'alerte pour filtrer les contributions douteuses.
 
