@@ -67,7 +67,7 @@ L'erreur étant humaine, il peut bien sûr y avoir des contributions de données
 Un échange a eu lieu entre un autre contributeur OSM et l'auteur de ce changeset révèle une erreur de manipulation :
 
 > Juste pour être clair, vous avez importé des bâtiments à Denver (aux États-Unis) pour <http://tasks.hotosm.org/project/1318>
-
+> 
 > Bonjour, merci pour les retours, au fait je ne suis pas un débutant dans OpenStreetMap. Je ne sais pas ce qui s’est passé (…) Je vais essayer de comprendre le bug et le corriger la prochaine fois. Merci pour le retour à plus
 
 Mais alors, pourquoi chercher à détecter uniquement le carto-vandalisme, puisque le résultat dans les deux cas est le même ?
