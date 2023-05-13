@@ -40,7 +40,7 @@ Quelques exemples notables :
 
 * Des plans d'eau imaginaires introduits par des joueurs de Pokémon GO dans le but de favoriser des nids de pokémons à attraper (comme ci-dessous)
 
-![](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_pokemon_go.webp){: .img-center loading=lazy }
+![Carto-vandalisme : faux plans d'eau](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_pokemon_go.webp){: .img-center loading=lazy }
 
 ![](https://pad.oslandia.net/uploads/0b3e6ced-1972-4309-8057-e8a52f6492bd.png){: .img-center loading=lazy }
 
