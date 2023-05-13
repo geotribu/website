@@ -21,7 +21,7 @@ tags:
 
 ## Introduction
 
-L'enrichissement des bases de données ouvertes a fait de certains projets collaboratifs de vraies références pour les consommateurs de données, tels que l'encyclopédie libre Wikipédia ou encore le projet OpenStreetMap (OSM), dans un domaine cartographique. OSM est même devenu une [base de référence pour les forces de l'ordre](/rdp/2011/rdp_2011-12-09#openstreetmap-et-les-forces-de-lordre).
+L'enrichissement des bases de données ouvertes a fait de certains projets collaboratifs de vraies références pour les consommateurs de données, tels que l'encyclopédie libre [Wikipédia](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal) ou encore le projet [OpenStreetMap](https://www.openstreetmap.org) (OSM), dans un domaine cartographique. OSM est même devenu une [base de référence pour les forces de l'ordre](/rdp/2011/rdp_2011-12-09#openstreetmap-et-les-forces-de-lordre).
 
 La qualité de ces nouveaux référentiels repose sur une forte participation de la communauté de contributeurs. Mais comment s'assurer que, dans ce nouvel espace commun, il n'y ait pas de dégradation sur les données introduites ?
 
