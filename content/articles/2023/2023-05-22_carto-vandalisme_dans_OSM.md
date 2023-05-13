@@ -42,7 +42,7 @@ Quelques exemples notables :
 
 ![Carto-vandalisme : faux plans d'eau](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_pokemon_go.webp){: .img-center loading=lazy }
 
-![](https://pad.oslandia.net/uploads/0b3e6ced-1972-4309-8057-e8a52f6492bd.png){: .img-center loading=lazy }
+![Carto-vandalisme : échanges lunaires sur les changesets](https://pad.oslandia.net/uploads/0b3e6ced-1972-4309-8057-e8a52f6492bd.png){: .img-center loading=lazy }
 
 * Des employés de Google qui ont été surpris à  [supprimer des données et inverser des routes à sens unique dans OSM](https://www.wired.com/2012/01/osm-google-accusation/)
 * La ville de New-York a été renommée temporairement ["Jewtropolis"](https://time.com/5382801/new-york-city-jewtropolis-snapchat/), bien que l'auteur de ces contributions prétende avoir agi de la sorte pour [démontrer les failles du système de sécurité d'OSM](https://www.reddit.com/r/openstreetmap/comments/9brqx4/this_is_medwedianpresident1_talking_what_i_did/).
