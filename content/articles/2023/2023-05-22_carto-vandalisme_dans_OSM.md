@@ -45,7 +45,7 @@ Quelques exemples notables :
 * Des employés de Google qui ont été surpris à  [supprimer des données et inverser des routes à sens unique dans OSM](https://www.wired.com/2012/01/osm-google-accusation/).
 * La ville de New-York a été renommée temporairement ["Jewtropolis"](https://time.com/5382801/new-york-city-jewtropolis-snapchat/), bien que l'auteur de ces contributions prétende avoir agi de la sorte pour [démontrer les failles du système de sécurité d'OSM](https://www.reddit.com/r/openstreetmap/comments/9brqx4/this_is_medwedianpresident1_talking_what_i_did/).
 
-OpenStreetMap étant devenue une référence pour de nombreux secteurs de métier, les dégradations causées peuvent être très graves et nécessitent d'être détectées au plus vite.
+OpenStreetMap étant devenue une référence pour de nombreux secteurs de métiers, les dégradations causées peuvent être très graves et nécessitent d'être détectées au plus vite.
 
 ![Carto-vandalisme : graffiti à partir des routes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_graffiti.webp){: .img-center loading=lazy }
 
