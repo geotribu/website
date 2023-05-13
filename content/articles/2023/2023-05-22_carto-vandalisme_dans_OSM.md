@@ -21,11 +21,11 @@ tags:
 
 ## Introduction
 
-L'enrichissement des bases de données ouvertes a fait de certains projets collaboratifs de vraies références pour les consommateurs de données, tels que l'encyclopédie libre Wikipédia ou encore le projet OpenStreetMap (OSM), dans un domaine cartographique. OSM est même devenu une [base de référence pour les forces de l'ordre](/content/rdp/2011/rdp_2011-12-09.md#opendata-et-osm).
+L'enrichissement des bases de données ouvertes a fait de certains projets collaboratifs de vraies références pour les consommateurs de données, tels que l'encyclopédie libre Wikipédia ou encore le projet OpenStreetMap (OSM), dans un domaine cartographique. OSM est même devenu une [base de référence pour les forces de l'ordre](/rdp/2011/rdp_2011-12-09.md#opendata-et-osm).
 
 La qualité de ces nouveaux référentiels repose sur une forte participation de la communauté de contributeurs. Mais comment s'assurer que, dans ce nouvel espace commun, il n'y ait pas de dégradation sur les données introduites ?
 
-C'est sur le sujet du carto-vandalisme dans OSM que j'ai axé mes recherches durant quelques années de thèse à l'IGN (coucou à mes anciens collègues du LASTIG !). Et pour éviter que mon [mémoire](https://www.researchgate.net/publication/344121146_Le_vandalisme_de_l'information_geographique_volontaire_analyse_exploratoire_et_proposition_d'une_methodologie_de_detection_automatique) ne prenne la poussière, je profite qu'on me laisse la parole au micro de GeoTribu pour partager un des fruits de mes recherches :)
+C'est sur le sujet du carto-vandalisme dans OSM que j'ai axé mes recherches durant quelques années de thèse à l'IGN (coucou à mes anciens collègues du LASTIG !). Et pour éviter que mon [mémoire](https://www.researchgate.net/publication/344121146_Le_vandalisme_de_l'information_geographique_volontaire_analyse_exploratoire_et_proposition_d'une_methodologie_de_detection_automatique) ne prenne la poussière, je profite qu'on me laisse la parole au micro de GeoTribu pour partager un des fruits de mes recherches :smile:.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
