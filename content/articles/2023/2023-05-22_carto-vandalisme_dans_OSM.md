@@ -89,7 +89,7 @@ En réalité, le carto-vandalisme est plutôt rare, et c'est ce qui le rend diff
 
 ![Débat qualification : parc ou forêt ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_debat_foret_ou_parc.webp){: .img-center loading=lazy }
 
-*Ci-dessus : parc ou forêt ? Cet objet OSM a été le lieu d'un débat, comme le montre [son historique](https://osmlab.github.io/osm-deep-history/#/way/87406131). Les tags ont oscillé à plusieurs reprises entre ces deux libellés. Le contributeur OSM qui a voulu remettre en cause la description a été temporairement bloqué.*
+*Ci-dessus : parc ou forêt ? Cet objet OSM a donné lieu à un débat, comme le montre [son historique](https://osmlab.github.io/osm-deep-history/#/way/87406131). Les tags ont oscillé à plusieurs reprises entre ces deux libellés. Le contributeur OSM qui a voulu remettre en cause la description a été temporairement bloqué.*
 
 ### Comment on a fait ?
 
