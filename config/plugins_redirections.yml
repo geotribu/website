@@ -802,6 +802,7 @@ redirects:
     articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
     articles/2021/2021-06-08_odk_postgis_2.md: articles/2021/2021-06-22_odk_postgis_2.md
     articles/2021/2021-06-17_qgis_personnaliser_splash_screen.md: articles/2021/2021-06-11_qgis_personnaliser_splash_screen.md
+    articles/2023/2023-03-12_conference-qgis-fr-2023-preparer-profil-qdt-.md: articles/2023/2023-03-12_conference-qgis-fr-2023-profil-qdt-qgis-deployment-toolbelt.md
 
     # migration du guide de contribution - janvier 2023
     contribuer/introduction.md: https://contribuer.geotribu.fr/
@@ -847,4 +848,5 @@ redirects:
 
     # divers
     team/jemv.md: team/jvig.md
+    team/ndavid.md: team/ndav.md
     team/sdeb.md: team/sdes.md
