@@ -57,15 +57,15 @@ OpenStreetMap étant devenue une référence pour de nombreux secteurs de métie
 
 > To be or not to be, that is the question !
 
-L'erreur étant humaine, il peut bien sûr y avoir des contributions de données OSM erronnées mais non-intentionnelles. Par exemple, sur ce *changeset* de contributions :
+L'erreur étant humaine, il peut bien sûr y avoir des contributions de données OSM erronnées mais non-intentionnelles. Par exemple, sur ce [*changeset*](https://www.openstreetmap.org/changeset/56598546) qui comporte des tags indiquant des contributions pour le projet HOT OSM au Togo, l'étendue affichée dépasse largement les frontières du pays :
 
 ![Erreur de bonne foi au moment de la saisie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_erreur_bonne_foi_batiments_denver.webp){: .img-center loading=lazy }
 
-Un échange a eu lieu entre un autre contributeur OSM et l'auteur de ce changeset révèle une erreur de manipulation :
+Les échanges sur le fil de discussion du *changeset* entre son auteur et les autres contributeurs OSM révèlent une erreur de manipulation :
 
 > Juste pour être clair, vous avez importé des bâtiments à Denver (aux États-Unis) pour <http://tasks.hotosm.org/project/1318>
 >
-> Bonjour, merci pour les retours, au fait je ne suis pas un débutant dans OpenStreetMap. Je ne sais pas ce qui s’est passé (…) Je vais essayer de comprendre le bug et le corriger la prochaine fois. Merci pour le retour à plus
+> Bonjour, merci pour les retours, au fait je ne suis pas un débutant dans OpenStreetMap. Je ne sais pas ce qui s’est passé (…) Je vais essayer de comprendre le bug et le corriger la prochaine fois. Merci pour le retour à plus ++
 
 Mais alors, pourquoi chercher à détecter uniquement le carto-vandalisme, puisque le résultat dans les deux cas est le même ?
 
