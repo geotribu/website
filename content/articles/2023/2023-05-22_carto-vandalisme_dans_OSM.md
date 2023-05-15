@@ -67,6 +67,8 @@ Les échanges sur le fil de discussion du *changeset* entre son auteur et les au
 >
 > Bonjour, merci pour les retours, au fait je ne suis pas un débutant dans OpenStreetMap. Je ne sais pas ce qui s’est passé (…) Je vais essayer de comprendre le bug et le corriger la prochaine fois. Merci pour le retour à plus ++
 
+Il est à noter qu'[une équipe de validation existe pour pallier les erreurs et les oublis](/articles/2023/2023-03-27_validation-data-HOT-OSM) dans les projets [HOT OSM](https://www.hotosm.org/).
+
 Mais alors, pourquoi chercher à détecter uniquement le carto-vandalisme, puisque le résultat dans les deux cas est le même ?
 
 Comme évoqué au début de cet article, la force de la communauté est primordiale pour assurer la qualité des données OSM. Or, des utilisateurs inexpérimentés méritent d'être formés afin de devenir des contributeurs fiables, tandis que les carto-vandales s'écartent de l'objectif commun de ce type de projet. L'intérêt de détecter le carto-vandalisme est, d'une part, de corriger les contributions erronnées, et d'autre part, de bannir ces contributeurs mal-intentionnés.
