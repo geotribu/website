@@ -153,6 +153,6 @@ Si vous souhaitez en savoir plus sur la détection automatique du carto-vandalis
 
 ## Autrice
 
---8<-- "content/team/qtru.md"
+--8<-- "content/team/qthy.md"
 
 {% include "licenses/default.md" %}
