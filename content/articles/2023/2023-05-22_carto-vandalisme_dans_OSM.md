@@ -75,7 +75,7 @@ Comme évoqué au début de cet article, la force de la communauté est primordi
 
 ## Détecter automatiquement le carto-vandalisme
 
-Bien que la communauté OSM soit fournie en contributeurs (ré-)actifs et alertes pour détecter les erreurs de contribution, les outils à leur disposition - comme [Osmose](https://osmose.openstreetmap.fr/fr/map/#zoom=18&lat=48.001199&lon=0.214941&item=xxxx&level=3&issue_uuid=985f8dc6-cd02-b9a5-4621-07080d69a164) par exemple - ne tiennent pas compte de la composante "intentionnalité" qui différencie le carto-vandalisme de l'erreur.
+Bien que la communauté OSM soit riche de contributeurs (ré-)actifs et alertes pour détecter les erreurs de contribution, les outils à leur disposition - comme [Osmose](https://osmose.openstreetmap.fr/fr/map/#zoom=18&lat=48.001199&lon=0.214941&item=xxxx&level=3&issue_uuid=985f8dc6-cd02-b9a5-4621-07080d69a164) par exemple - ne tiennent pas compte de la composante "intentionnalité" qui différencie le carto-vandalisme de l'erreur.
 
 Mon objectif était donc d'étudier dans quelles mesures on pouvait détecter le carto-vandalisme dans OSM à partir de systèmes d'apprentissage automatique (*machine learning*).
 
