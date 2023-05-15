@@ -79,7 +79,7 @@ Bien que la communauté OSM soit riche de contributeurs (ré-)actifs et alertes 
 
 Mon objectif était donc d'étudier dans quelles mesures on pouvait détecter le carto-vandalisme dans OSM à partir de systèmes d'apprentissage automatique (*machine learning*).
 
-### Pourquoi c'est si dur
+### Pourquoi c'est si dur ?
 
 Dans OSM, un comité a été mis en place pour bloquer certains utilisateurs. Ce comité s'appelle le [*Data Working Group*](https://wiki.openstreetmap.org/wiki/Data_working_group), et il existe une [page dédiée](https://www.openstreetmap.org/user_blocks) où sont listés les contributeurs bloqués pour une durée plus ou moins longue (pouvant aller jusqu'à 100 ans de blocage !)
 
@@ -91,7 +91,7 @@ En réalité, le carto-vandalisme est plutôt rare, et c'est ce qui le rend diff
 
 *Ci-dessus : parc ou forêt ? Cet objet OSM a été le lieu d'un débat, comme le montre [son historique](https://osmlab.github.io/osm-deep-history/#/way/87406131). Les tags ont oscillé à plusieurs reprises entre ces deux libellés. Le contributeur OSM qui a voulu remettre en cause la description a été temporairement bloqué.*
 
-### Comment on a fait
+### Comment on a fait ?
 
 Puisque le succès d'un système d'apprentissage automatique repose sur le jeu de données avec lequel l'entraîner, il a fallu constituer un corpus de données de carto-vandalisme.
 
