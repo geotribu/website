@@ -1,6 +1,5 @@
 ---
 title: "Carto-vandalisme dans OpenStreetMap : mythe ou réalité ?"
-subtitle: "sous-titre qui s'affiche dans le menu de navigation"
 authors:
     - Quy Thy TRUONG
 categories:
