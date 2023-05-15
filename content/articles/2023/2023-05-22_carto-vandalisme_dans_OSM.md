@@ -97,7 +97,7 @@ Puisque le succès d'un système d'apprentissage automatique repose sur le jeu d
 
 #### Le corpus d'entraînement
 
-Pour faire ce corpus de carto-vandalisme OSM, j'ai sélectionné quatre zones géographiques (deux en France, et deux en Allemagne) à partir desquelles j'ai introduit des contributions de carto-vandalisme "artificielles" en traçant de faux bâtiments, ou en modifiant les attribut de bâtiments existants. Pas d'inquiétude, tout ceci a été fait sur un export en local d'un extrait de la base d'OSM !
+Pour faire ce corpus de carto-vandalisme OSM, j'ai sélectionné quatre zones géographiques (deux en France, et deux en Allemagne) à partir desquelles j'ai introduit des contributions de carto-vandalisme "artificielles" en traçant de faux bâtiments, ou en modifiant les attributs de bâtiments existants. Pas d'inquiétude, tout ceci a été fait sur un export en local d'un extrait de la base d'OSM !
 
 #### Définir des descripteurs
 
@@ -113,8 +113,7 @@ Au niveau de la géométrie de la donnée spatiale, l'idée était de faire ress
 
 Les bonnes données OSM pouvant être riches en attributs, des indicateurs sur le nombre de tags, ou sur le taux maximal de caractères spéciaux dans les tags permettent potentiellement de relever du carto-vandalisme qui n'a pas d'attribut ou au contraire, qui contient des tags inappropriés (smiley, site internet commercial, etc.).
 
-Pour s'assurer de la cohérence des contributions (ici des bâtiments) avec le reste de l'environnement cartographique, j'ai aussi considéré des indicateurs topologiques qui vérifient l'inclusion ou l'intersection du bâti avec des
-des éléments géographiques naturels (eau, forêt, prairie, etc.)
+Pour s'assurer de la cohérence des contributions (ici des bâtiments) avec le reste de l'environnement cartographique, j'ai aussi considéré des indicateurs topologiques qui vérifient l'inclusion ou l'intersection du bâti avec des éléments géographiques naturels (eau, forêt, prairie, etc.)
 
 ![Carto-vandalisme : des bâtiments ajoutés dans un canal pour un message de bienvenue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_batiments_canal.webp){: .img-center loading=lazy }
 
@@ -134,7 +133,7 @@ On observe entre 97% et 100% de bonne classification sur des contributions qui s
 
 Ces résultats montrent que l'apprentissage ne se transfère pas d'une zone à une autre, notamment à cause des différences géographiques qui peuvent exister entre deux villes d'un même pays. Le carto-vandalisme est donc fortement lié au contexte spatial et temporel dans lequel il se produit.
 
-En parallèle de cette expérience, j'ai voulu interroger l'intérêt des descripteurs centrés sur les contributeurs. Une autre expérience similaire a été réalisée en entraînant un modèle sans ces variables utilisateurs. Globalement, le taux de bonnes prédictions est plus faible avec ce modèle, ce qui montre que les variables utilisateurs sont pertinents pour caractériser le carto-vandalisme.
+En parallèle de cette expérience, j'ai voulu interroger l'intérêt des descripteurs centrés sur les contributeurs. Une autre expérience similaire a été réalisée en entraînant un modèle sans ces variables utilisateurs. Globalement, le taux de bonnes prédictions est plus faible avec ce modèle, ce qui montre que les variables utilisateurs sont pertinentes pour caractériser le carto-vandalisme.
 
 ----
 
