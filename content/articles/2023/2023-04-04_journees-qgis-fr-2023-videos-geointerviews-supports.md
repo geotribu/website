@@ -51,10 +51,9 @@ Vivement la prochaine édition !
 
 - [supports et vidéos des présentations du mardi aux journées QGIS FR 2023](https://conf.qgis.osgeo.fr/2023/03/24/retrouver_les_presentations_2023.html)
 - les ateliers du lundi n'étaient pas filmés et le choix de diffuser des supports de présentation appartient aux animateur/ices de chaque atelier. C'est par exemple le cas de :
-
-- [Créer un outil de saisie avec des expressions](https://docs.3liz.org/formation-qgis-expressions/tp_outil_saisie/), par Michaël Douchin (3Liz)
-- [QGIS & PostGIS : trucs et astuces](https://troopa81.github.io/presentations/qgisuserfr_ws_postgis_qgis/ws_postgis_qgis.html), par Julien Cabièces (Oslandia)
-- [Associer vos documents et vos données avec QGIS](https://troopa81.github.io/presentations/qgisuserfr_ws_qgisdocs/ws_qgisdocs.html#/), par Julien Cabièces et Jacky Volpes (Oslandia)
+    - [Créer un outil de saisie avec des expressions](https://docs.3liz.org/formation-qgis-expressions/tp_outil_saisie/), par Michaël Douchin (3Liz)
+    - [QGIS & PostGIS : trucs et astuces](https://troopa81.github.io/presentations/qgisuserfr_ws_postgis_qgis/ws_postgis_qgis.html), par Julien Cabièces (Oslandia)
+    - [Associer vos documents et vos données avec QGIS](https://troopa81.github.io/presentations/qgisuserfr_ws_qgisdocs/ws_qgisdocs.html#/), par Julien Cabièces et Jacky Volpes (Oslandia)
 
 N'hésitez pas à compléter cette liste avec le lien vers un support diffusé, soit en [commentaire](#__comments), soit via l'icône :material-file-edit-outline: en regard du titre de cette page en haut.
 
