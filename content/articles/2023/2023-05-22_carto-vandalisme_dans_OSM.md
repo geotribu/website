@@ -67,10 +67,12 @@ L'erreur étant humaine, il peut bien sûr y avoir des contributions de données
 
 ![Erreur de bonne foi au moment de la saisie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_erreur_bonne_foi_batiments_denver.webp){: .img-center loading=lazy }
 
-Les échanges sur le fil de discussion du *changeset* entre son auteur et les autres contributeurs OSM révèlent une erreur de manipulation :
+En réaction à ces contributions douteuses, des contributeurs OSM ont écrit sur le fil de discussion du *changeset* de cette contribution, comme par exemple ce message d'un membre du *Data Working Group* :
 
 > Juste pour être clair, vous avez importé des bâtiments à Denver (aux États-Unis) pour <http://tasks.hotosm.org/project/1318>
->
+
+En réponse à ces remarques, le message de l'auteur de ce changeset révèle une erreur de manipulation :
+
 > Bonjour, merci pour les retours, au fait je ne suis pas un débutant dans OpenStreetMap. Je ne sais pas ce qui s’est passé (…) Je vais essayer de comprendre le bug et le corriger la prochaine fois. Merci pour le retour à plus ++
 
 Il est à noter qu'[une équipe de validation existe pour pallier les erreurs et les oublis](/articles/2023/2023-03-27_validation-data-HOT-OSM) dans les projets [HOT OSM](https://www.hotosm.org/).
