@@ -20,6 +20,9 @@ tags:
 
 ## Introduction
 
+![OSM-Notes_logo](https://github.com/quythytruong/geotribu-website/assets/23528521/3aa31e89-42e9-49f7-aeb3-9fee192b274c){: .img-rdp-news-thumb }
+
+
 L'enrichissement des bases de données ouvertes a fait de certains projets collaboratifs de vraies références pour les consommateurs de données, tels que l'encyclopédie libre [Wikipédia](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal) ou encore le projet [OpenStreetMap](https://www.openstreetmap.org) (OSM), dans un domaine cartographique. OSM est même devenu une [base de référence pour les forces de l'ordre](/rdp/2011/rdp_2011-12-09#openstreetmap-et-les-forces-de-lordre).
 
 La qualité de ces nouveaux référentiels repose sur une forte participation de la communauté de contributeurs. Mais comment s'assurer que, dans ce nouvel espace commun, il n'y ait pas de dégradation sur les données introduites ?
@@ -32,6 +35,8 @@ C'est sur le sujet du carto-vandalisme dans OSM que j'ai axé mes recherches dur
 ----
 
 ## Le carto-vandalisme, c'est quoi ?
+
+![vandalism](https://github.com/quythytruong/geotribu-website/assets/23528521/b994ef12-9a12-432c-8a4e-32fee6b294a2){: .img-rdp-news-thumb }
 
 Le vandalisme cartographique (ou carto-vandalisme) consiste à dégrader **intentionnellement** le contenu d'une plateforme collaborative cartographique, comme OpenStreetMap par exemple.
 
@@ -54,6 +59,7 @@ OpenStreetMap étant devenue une référence pour de nombreux secteurs de métie
 ----
 
 ## Carto-vandalisme *versus* erreur de saisie
+![error_illustation](https://github.com/quythytruong/geotribu-website/assets/23528521/a74657ce-2814-4d1d-a65c-dee9516c1823){: .img-rdp-news-thumb }
 
 > To be or not to be, that is the question !
 
@@ -76,6 +82,8 @@ Comme évoqué au début de cet article, la force de la communauté est primordi
 ----
 
 ## Détecter automatiquement le carto-vandalisme
+
+![robot](https://github.com/quythytruong/geotribu-website/assets/23528521/82718bea-4fff-46df-9aaa-e6f4cabbfe72){: .img-rdp-news-thumb }
 
 Bien que la communauté OSM soit riche de contributeurs (ré-)actifs et alertes pour détecter les erreurs de contribution, les outils à leur disposition - comme [Osmose](https://osmose.openstreetmap.fr/fr/map/#zoom=18&lat=48.001199&lon=0.214941&item=xxxx&level=3&issue_uuid=985f8dc6-cd02-b9a5-4621-07080d69a164) par exemple - ne tiennent pas compte de la composante "intentionnalité" qui différencie le carto-vandalisme de l'erreur.
 
