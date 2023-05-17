@@ -150,6 +150,9 @@ Ces résultats incitent à chercher comment améliorer la performance des systè
 
 Si vous souhaitez en savoir plus sur la détection automatique du carto-vandalisme par les *random forests*, je vous invite à consulter [cet article](https://www.researchgate.net/publication/343828305_OSMWatchman_Learning_How_to_Detect_Vandalized_Contributions_in_OSM_Using_a_Random_Forest_Classifier) qui détaille les expériences menées et les résultats obtenus.
 
+[Consulter le dépôt du code :fontawesome-regular-file-code:](https://github.com/umrlastig/OSMWatchman/tree/master){: .md-button }
+{: align=middle }
+
 ----
 
 ## Autrice
