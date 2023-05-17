@@ -91,9 +91,7 @@ Bien que la communauté OSM soit riche de contributeurs (ré-)actifs et alertes 
 
 Mon objectif était donc d'étudier dans quelles mesures on pouvait détecter le carto-vandalisme dans OSM à partir de systèmes d'apprentissage automatique (*machine learning*).
 
-
 ![andrea-de-santis-zwd435-ewb4-unsplash-redim](https://github.com/quythytruong/geotribu-website/assets/23528521/b4f10bc9-cc41-41e3-a01d-412d4bdd4d59){: .img-center loading=lazy }
-
 
 ### Pourquoi c'est si dur ?
 
