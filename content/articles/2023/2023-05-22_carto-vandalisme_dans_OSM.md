@@ -6,7 +6,7 @@ categories:
     - article
 date: "2023-05-22 10:20"
 description: "Détection du vandalisme cartographique dans OSM grâce à de l'apprentissage automatique"
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_en-tete.png
 license: default
 robots: index, follow
 tags:
