@@ -91,6 +91,10 @@ Bien que la communauté OSM soit riche de contributeurs (ré-)actifs et alertes 
 
 Mon objectif était donc d'étudier dans quelles mesures on pouvait détecter le carto-vandalisme dans OSM à partir de systèmes d'apprentissage automatique (*machine learning*).
 
+
+![andrea-de-santis-zwd435-ewb4-unsplash-redim](https://github.com/quythytruong/geotribu-website/assets/23528521/b4f10bc9-cc41-41e3-a01d-412d4bdd4d59){: .img-center loading=lazy }
+
+
 ### Pourquoi c'est si dur ?
 
 Dans OSM, un comité a été mis en place pour bloquer certains utilisateurs. Ce comité s'appelle le [*Data Working Group*](https://wiki.openstreetmap.org/wiki/Data_working_group), et il existe une [page dédiée](https://www.openstreetmap.org/user_blocks) où sont listés les contributeurs bloqués pour une durée plus ou moins longue (pouvant aller jusqu'à 100 ans de blocage !)
