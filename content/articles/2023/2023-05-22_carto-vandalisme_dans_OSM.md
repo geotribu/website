@@ -83,7 +83,7 @@ Comme évoqué au début de cet article, la force de la communauté est primordi
 
 ## Détecter automatiquement le carto-vandalisme
 
-![robot](https://github.com/quythytruong/geotribu-website/assets/23528521/82718bea-4fff-46df-9aaa-e6f4cabbfe72){: .img-rdp-news-thumb }
+![icône robot futurama](https://cdn.geotribu.fr/img/logos-icones/divers/robot_futurama.webp){: .img-rdp-news-thumb }
 
 Bien que la communauté OSM soit riche de contributeurs (ré-)actifs et alertes pour détecter les erreurs de contribution, les outils à leur disposition - comme [Osmose](https://osmose.openstreetmap.fr/fr/map/#zoom=18&lat=48.001199&lon=0.214941&item=xxxx&level=3&issue_uuid=985f8dc6-cd02-b9a5-4621-07080d69a164) par exemple - ne tiennent pas compte de la composante "intentionnalité" qui différencie le carto-vandalisme de l'erreur.
 
