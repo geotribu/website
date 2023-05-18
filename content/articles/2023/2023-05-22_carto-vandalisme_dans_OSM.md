@@ -20,7 +20,7 @@ tags:
 
 ## Introduction
 
-![OSM-Notes_logo](https://github.com/quythytruong/geotribu-website/assets/23528521/3aa31e89-42e9-49f7-aeb3-9fee192b274c){: .img-rdp-news-thumb }
+![logo OpenStreetMap notes et validation](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/openstreetmap_validation.webp){: .img-rdp-news-thumb }
 
 L'enrichissement des bases de données ouvertes a fait de certains projets collaboratifs de vraies références pour les consommateurs de données, tels que l'encyclopédie libre [Wikipédia](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal) ou encore le projet [OpenStreetMap](https://www.openstreetmap.org) (OSM), dans un domaine cartographique. OSM est même devenu une [base de référence pour les forces de l'ordre](/rdp/2011/rdp_2011-12-09#openstreetmap-et-les-forces-de-lordre).
 
@@ -35,7 +35,7 @@ C'est sur le sujet du carto-vandalisme dans OSM que j'ai axé mes recherches dur
 
 ## Le carto-vandalisme, c'est quoi ?
 
-![vandalism](https://github.com/quythytruong/geotribu-website/assets/23528521/b994ef12-9a12-432c-8a4e-32fee6b294a2){: .img-rdp-news-thumb }
+![Vignette vandalisme et anarchie](https://cdn.geotribu.fr/img/logos-icones/divers/vandalisme_destruction_delinquance_anarchie.webp){: .img-rdp-news-thumb }
 
 Le vandalisme cartographique (ou carto-vandalisme) consiste à dégrader **intentionnellement** le contenu d'une plateforme collaborative cartographique, comme OpenStreetMap par exemple.
 
@@ -59,7 +59,7 @@ OpenStreetMap étant devenue une référence pour de nombreux secteurs de métie
 
 ## Carto-vandalisme *versus* erreur de saisie
 
-![error_illustation](https://github.com/quythytruong/geotribu-website/assets/23528521/a74657ce-2814-4d1d-a65c-dee9516c1823){: .img-rdp-news-thumb }
+![Vignette l'erreur est humaine](https://cdn.geotribu.fr/img/logos-icones/divers/ordinateur_informatique_bug_probleme_erreur.webp){: .img-rdp-news-thumb }
 
 > To be or not to be, that is the question !
 
@@ -91,7 +91,7 @@ Bien que la communauté OSM soit riche de contributeurs (ré-)actifs et alertes 
 
 Mon objectif était donc d'étudier dans quelles mesures on pouvait détecter le carto-vandalisme dans OSM à partir de systèmes d'apprentissage automatique (*machine learning*).
 
-![andrea-de-santis-zwd435-ewb4-unsplash-redim](https://github.com/quythytruong/geotribu-website/assets/23528521/b4f10bc9-cc41-41e3-a01d-412d4bdd4d59){: .img-center loading=lazy }
+![Robot tapant à l'ordinateur sur un banc - Andrea de Santis (unsplash)](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/robot_banc.webp){: .img-center loading=lazy }
 
 ### Pourquoi c'est si dur ?
 
