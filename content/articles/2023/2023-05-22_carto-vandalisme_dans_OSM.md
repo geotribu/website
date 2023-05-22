@@ -67,7 +67,7 @@ L'erreur étant humaine, il peut bien sûr y avoir des contributions de données
 
 ![Erreur de bonne foi au moment de la saisie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_erreur_bonne_foi_batiments_denver.webp){: .img-center loading=lazy }
 
-En réaction à ces contributions douteuses, des contributeurs OSM ont écrit sur le fil de discussion du *changeset* de cette contribution, comme par exemple ce message d'un membre du *Data Working Group* :
+En réaction à ces contributions douteuses, des contributeurs OSM ont écrit sur le fil de discussion du *changeset* de cette contribution, comme par exemple ci-dessous :
 
 > Juste pour être clair, vous avez importé des bâtiments à Denver (aux États-Unis) pour <http://tasks.hotosm.org/project/1318>
 
