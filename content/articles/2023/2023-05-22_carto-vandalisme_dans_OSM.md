@@ -65,7 +65,7 @@ OpenStreetMap étant devenue une référence pour de nombreux secteurs de métie
 
 > To be or not to be, that is the question !
 
-L'erreur étant humaine, il peut bien sûr y avoir des contributions de données OSM erronnées mais non-intentionnelles. Par exemple, sur ce [*changeset*](https://www.openstreetmap.org/changeset/56598546) qui comporte des tags indiquant des contributions pour le projet HOT OSM au Togo, l'étendue affichée dépasse largement les frontières du pays :
+L'erreur étant humaine, il peut bien sûr y avoir des contributions de données OSM erronées mais non-intentionnelles. Par exemple, sur ce [*changeset*](https://www.openstreetmap.org/changeset/56598546) qui comporte des tags indiquant des contributions pour le projet HOT OSM au Togo, l'étendue affichée dépasse largement les frontières du pays :
 
 ![Erreur de bonne foi au moment de la saisie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_erreur_bonne_foi_batiments_denver.webp){: .img-center loading=lazy }
 
@@ -81,7 +81,7 @@ Il est à noter qu'[une équipe de validation existe pour pallier les erreurs et
 
 Mais alors, pourquoi chercher à détecter uniquement le carto-vandalisme, puisque le résultat dans les deux cas est le même ?
 
-Comme évoqué au début de cet article, la force de la communauté est primordiale pour assurer la qualité des données OSM. Or, des utilisateurs inexpérimentés méritent d'être formés afin de devenir des contributeurs fiables, tandis que les carto-vandales s'écartent de l'objectif commun de ce type de projet. L'intérêt de détecter le carto-vandalisme est, d'une part, de corriger les contributions erronnées, et d'autre part, de bannir ces contributeurs mal-intentionnés.
+Comme évoqué au début de cet article, la force de la communauté est primordiale pour assurer la qualité des données OSM. Or, des utilisateurs inexpérimentés méritent d'être formés afin de devenir des contributeurs fiables, tandis que les carto-vandales s'écartent de l'objectif commun de ce type de projet. L'intérêt de détecter le carto-vandalisme est, d'une part, de corriger les contributions erronées, et d'autre part, de bannir ces contributeurs malintentionnés.
 
 ----
 
