@@ -99,7 +99,7 @@ Mon objectif était donc d'étudier dans quelles mesures on pouvait détecter le
 
 Dans OSM, un comité a été mis en place pour bloquer certains utilisateurs. Ce comité s'appelle le [*Data Working Group*](https://wiki.openstreetmap.org/wiki/Data_working_group), et il existe une [page dédiée](https://www.openstreetmap.org/user_blocks) où sont listés les contributeurs bloqués pour une durée plus ou moins longue (pouvant aller jusqu'à 100 ans de blocage !)
 
-Toutefois, la définition du [vandalisme par OSM](https://wiki.openstreetmap.org/wiki/Vandalism) est plus large que celle que nous nous étions fixée, puisque les blocages d'utilisateurs pouvaient concerner de grosses erreurs *involontaires*, et également des [guerres d'éditions](https://wiki.openstreetmap.org/wiki/FR:Disputes) qui brisent la règle de consensus fixée par OSM. 
+Toutefois, la définition du [vandalisme par OSM](https://wiki.openstreetmap.org/wiki/Vandalism) est plus large que celle que nous nous étions fixée, puisque les blocages d'utilisateurs pouvaient concerner de grosses erreurs *involontaires*, et également des [guerres d'éditions](https://wiki.openstreetmap.org/wiki/FR:Disputes) qui brisent la règle de consensus fixée par OSM.
 
 En réalité, le carto-vandalisme est plutôt rare, et c'est ce qui le rend difficilement détectable.
 
