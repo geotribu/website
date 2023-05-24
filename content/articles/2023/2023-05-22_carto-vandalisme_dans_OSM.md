@@ -143,6 +143,8 @@ Pour les contributions artificielles insérées dans le corpus, j'ai dû y assoc
 
 Lorsque toutes les variables ont été calculées sur ce corpus d'entraînement, le résultat est donné en entrée du modèle d'apprentissage.
 
+![Schéma forêts aléatoires](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/forets_aleatoires_machine_learning.svg){: .img-center loading=lazy }
+
 Avec un modèle de [forêts aléatoires](https://datascientest.com/random-forest-definition), j'utilise 80% des données du corpus pour l'entraîner. Les 20% restants sont utilisées pour vérifier comment le modèle entraîné classifie des données labélisées.
 
 On observe entre 97% et 100% de bonne classification sur des contributions qui se situent dans la zone d'entraînement du système d'apprentissage. En revanche, le système produit entre 99% à 100% de mauvaises prédictions sur les contributions d'une ville différente de celle avec laquelle il s'est entraîné.
