@@ -16,7 +16,7 @@ tags:
 
 # Carto-vandalisme dans OpenStreetMap : mythe ou réalité ?
 
-:calendar: Date de publication initiale : 22 mai 2023
+:calendar: Date de publication initiale : 24 mai 2023
 
 ## Introduction
 
