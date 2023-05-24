@@ -117,9 +117,7 @@ Pour faire ce corpus de carto-vandalisme OSM, j'ai sélectionné quatre zones g�
 
 #### Définir des descripteurs
 
-Les descripteurs, aussi appelés variables ou *features* en anglais, sont les indicateurs qui vont être calculés sur toutes les contributions OSM, et à partir desquelles le système d'apprentissage va réaliser sa classification (carto-vandalisme ou pas).
-
-Pour détecter le carto-vandalisme, il a fallu définir des descripteurs pertinents. J'ai donc choisi des variables qui décrivent une contribution à plusieurs niveaux.
+Les descripteurs, aussi appelés variables ou *features* en anglais, sont les indicateurs chiffrés qui vont être calculés sur toutes les contributions OSM. Le système va donc apprendre à détecter le carto-vandalisme à partir des valeurs de chaque indicateur choisi, d'où l'intérêt de choisir des descripteurs qui servent de critères pour discriminer les contributions relevant du carto-vandalisme ou non. J'ai donc choisi des variables qui décrivent une contribution sous différents angles.
 
 Au niveau de la géométrie de la donnée spatiale, l'idée était de faire ressortir les géométries les plus fantaisistes en calculant des indicateurs spatiaux comme le périmètre, l'élongation ou la compacité.
 
