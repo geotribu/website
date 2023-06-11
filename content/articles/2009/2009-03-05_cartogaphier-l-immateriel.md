@@ -34,7 +34,7 @@ De nombreux travaux ayant pour objectif d'améliorer notre vision de l'espace ut
 
 * Importance et sens de circulation du traffic :
 
-![Importance et sens de circulation du traffic](http://senseable.mit.edu/realtimerome/sketches/images/S3-00_large.jpg "Importance et sens de circulation du traffic"){: .img-center loading=lazy }
+![Importance et sens de circulation du traffic](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/S3-00_large.jpg "Importance et sens de circulation du traffic"){: .img-center loading=lazy }
 
 * L'activité des téléphones portables lors de la finale de la coupe du monde de 2006 :
 
