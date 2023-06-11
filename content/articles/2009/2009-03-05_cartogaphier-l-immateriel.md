@@ -38,7 +38,7 @@ De nombreux travaux ayant pour objectif d'améliorer notre vision de l'espace ut
 
 * L'activité des téléphones portables lors de la finale de la coupe du monde de 2006 :
 
-![Activité des téléphones portables lors de la finale de la coupe du monde de 2006](http://senseable.mit.edu/realtimerome/sketches/images/s6-worldcup_large.jpg "Activité des téléphones portables lors de la finale de la coupe du monde de 2006"){: .img-center loading=lazy }
+![Activité des téléphones portables lors de la finale de la coupe du monde de 2006](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/s6-worldcup_large.jpg "Activité des téléphones portables lors de la finale de la coupe du monde de 2006"){: .img-center loading=lazy }
 
 D'autres exemples sont disponibles sur la page du projet [Real Time Rome](http://senseable.mit.edu/realtimerome/sketches/index.html).
 
