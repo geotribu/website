@@ -48,7 +48,7 @@ On assiste à un développement croissant de capteurs installés par exemple pou
 
 ## 6) Des nouveaux périphériques de manipulation (Leap Motion, ...) comme d'acquisition (drones ou Google Glasses par exemple) vont pousser des usages différents en cartographie
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lACxJrXBJOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/lACxJrXBJOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## 7) Le domaine satellitaire va prendre son envol dans tous les sens du terme
 
