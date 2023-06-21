@@ -102,6 +102,7 @@ plugins:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
       tags_compare: !!python/name:material.plugins.tags.plugin.casefold
+  - termynal
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       assets_fetch_dir:

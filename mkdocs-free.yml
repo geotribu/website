@@ -84,6 +84,7 @@ plugins:
       include_dir: content/toc_nav_ignored/snippets
   - tags:
       tags_file: tags.md
+  - termynal
 
 # Theme
 theme:
