@@ -30,7 +30,9 @@ Alors pourquoi pas pour Geotribu ? Comme ça je peux expérimenter sans contrain
 <!-- termynal -->
 
 ```sh
-pip install geotribu
+$ pip install geotribu
+---> 100%
+Accès au GeoTipi ajouté à votre terminal.
 ```
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
