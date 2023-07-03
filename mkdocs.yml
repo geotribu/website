@@ -109,6 +109,9 @@ plugins:
       links_attr_map:
         target: _blank
       assets_exclude:
+        # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
+        - cdn.jsdelivr.net/npm/mathjax@3/*
+        - giscus.app/*
         # geotribu
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*
@@ -117,6 +120,8 @@ plugins:
         - ks356007.kimsufi.com/*
         # external
         - baliz-geospatial.com/images/mediatheque/2008-08/*
+        - cdn.jsdelivr.net/**/*/twemoji*
+        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
         - github.com/**/*.gif
         - i.imgur.com/*
         - raw.githubusercontent.com/*
