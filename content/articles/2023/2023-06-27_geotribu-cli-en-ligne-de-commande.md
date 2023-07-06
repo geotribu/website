@@ -27,13 +27,16 @@ Que ce soit pour [Isogeo](https://help.isogeo.com/scan/isogeo-scan-offline), en 
 
 Alors pourquoi pas pour Geotribu ? Comme ça je peux expérimenter sans contrainte, proposer un nouveau moyen de consulter les contenus et surtout automatiser certaines tâches plus ou moins récurrentes.
 
+<!-- markdownlint-disable MD040 -->
 <!-- termynal -->
 
-```sh
+```
 $ pip install geotribu
 ---> 100%
 Accès au GeoTipi ajouté à votre terminal.
 ```
+
+<!-- markdownlint-enable MD040 -->
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -161,7 +164,7 @@ Inutile donc de dupliquer ici avec une obsolescence programmée ce qui est autom
     geotribu si postgis -f logo
     ```
 
-- [x] optimiser une ou plusieurs images pour la publication (dimensions, format, nom...)
+- [x] optimiser une ou plusieurs images pour la publication (dimensions, format, nom...)*
 
     ```sh
     # depuis un chemin local ou une URL distante
@@ -176,7 +179,7 @@ Inutile donc de dupliquer ici avec une obsolescence programmée ce qui est autom
     geotribu comments latest
     ```
 
-- [x] poster le dernier commentaire publié sur Mastodon (instance Mapstodon)
+- [x] poster le dernier commentaire publié sur Mastodon (instance Mapstodon)[^1]
 
     ```sh
     geotribu comments broadcast -t mastodon
@@ -189,3 +192,6 @@ Inutile donc de dupliquer ici avec une obsolescence programmée ce qui est autom
 --8<-- "content/team/jmou.md"
 
 {% include "licenses/beerware.md" %}
+
+<!-- Notes de bas de page -->
+[^1]: commandes nécessitant un jeton d'authentification à l'API
