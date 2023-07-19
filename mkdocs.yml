@@ -140,9 +140,10 @@ plugins:
         - drfhlmcehrc34.cloudfront.net/*
   - social:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, true]
-      cards_color:
-        fill: "#3e93a7"
-      cards_font: Ubuntu
+      cards_layout_options:
+        cards_color:
+          fill: "#3e93a7"
+        cards_font: Ubuntu
 
 # Theme
 theme:
