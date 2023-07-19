@@ -32,7 +32,7 @@ Je me note donc ça ici, histoire de pas oublier et que ça puisse resservir.
 
 ## Avec pyproj
 
-[logo PyProj](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/pyproj.png){: .img-rdp-news-thumb }
+![logo PyProj](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/pyproj.png){: .img-rdp-news-thumb }
 
 Si pyproj est installé :
 
@@ -40,7 +40,7 @@ Si pyproj est installé :
 pip install pyproj
 ```
 
-Alors tout est par-fait :
+Alors tout est presque trop facile :
 
 ```python
 import pyproj
@@ -50,7 +50,7 @@ print(pyproj.__proj_version__)
 
 ## Avec les bindings GDAL
 
-[logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png){: .img-rdp-news-thumb }
+![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png){: .img-rdp-news-thumb }
 
 Si GDAL est installée, ainsi que ses bindings Python :
 
@@ -72,7 +72,7 @@ print(
 
 ## Avec le binaire proj et une regex
 
-[logo PROJ](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/proj.png){: .img-rdp-news-thumb }
+![logo PROJ](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/proj.png){: .img-rdp-news-thumb }
 
 Mais si on ne peut compter sur aucune des couches d'asbtraction précédentes, alors ça se corse. Il faut appeler l'exécutable de proj et se débrouiller avec la sortie par défaut puisqu'il n'y a pas d'option `--version` :
 
