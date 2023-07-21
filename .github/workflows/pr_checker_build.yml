@@ -63,14 +63,12 @@ jobs:
           path: .cache
 
       - name: Build in strict mode
-        env:
-          MKDOCS_EDIT_URI: edit/${GITHUB_HEAD_REF}/content
-          MKDOCS_SITE_COPYRIGHT: ${NETLIFY_BRANDING}
-          MKDOCS_SITE_NAME: Geotribu PREVIEW
-          MKDOCS_SITE_URL: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/
-          NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
+          # store custom env vars that need resolution
           MKDOCS_EDIT_URI="edit/${GITHUB_HEAD_REF}/content"
+          MKDOCS_SITE_COPYRIGHT="'<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'"
+          MKDOCS_SITE_NAME: "Geotribu PREVIEW ${{ github.event.pull_request.number }}"
+          MKDOCS_SITE_URL="https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
 
           # merge different configs
           python scripts/mkdocs_populate_latest.py
