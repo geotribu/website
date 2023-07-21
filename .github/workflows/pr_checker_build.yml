@@ -86,6 +86,11 @@ jobs:
           rm ${{ env.BUILD_DIR }}/sitemap.xml
           rm ${{ env.BUILD_DIR }}/sitemap.xml.gz
 
+          # store specific env vars
+          echo "MKDOCS_EDIT_URI=$MKDOCS_EDIT_URI"                   >> pr.env
+          echo "MKDOCS_SITE_COPYRIGHT=$MKDOCS_SITE_COPYRIGHT"       >> pr.env
+          echo "MKDOCS_SITE_URL=$MKDOCS_SITE_URL"                   >> pr.env
+
         # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
         # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
       - name: "Prepare artifact for transfer"
@@ -93,7 +98,6 @@ jobs:
           # Save ENV for transfer
           echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"                 >> pr.env
           echo "GITHUB_HEAD_REF=$GITHUB_HEAD_REF"                     >> pr.env
-          echo "MKDOCS_EDIT_URI=$MKDOCS_EDIT_URI"                     >> pr.env
           echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
           echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
           echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
