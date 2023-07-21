@@ -14,6 +14,7 @@ env:
   LC_TIME: "fr_FR.UTF-8"
   NETLIFY_SITE_NAME: geotribu-preprod
   NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
+  PR_NUMBER: ${{ github.event.pull_request.number }}
 
 # If the workflow for a PR is triggered multiple times, previous existing runs will be canceled.
 # eg: Applying multiple suggestions from a review directly via the Github UI.
@@ -66,7 +67,7 @@ jobs:
         run: |
           # store custom env vars that need resolution
           MKDOCS_EDIT_URI="edit/${GITHUB_HEAD_REF}/content"
-          MKDOCS_SITE_NAME=Geotribu PREVIEW ${{ github.event.pull_request.number }}
+          MKDOCS_SITE_NAME="Geotribu PREVIEW ${PR_NUMBER}"
           MKDOCS_SITE_URL="https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
 
           # merge different configs
