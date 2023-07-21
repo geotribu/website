@@ -64,7 +64,7 @@ jobs:
 
       - name: Build in strict mode
         env:
-          MKDOCS_EDIT_URI: edit/$GITHUB_HEAD_REF/content
+          MKDOCS_EDIT_URI: edit/${GITHUB_HEAD_REF}/content
           MKDOCS_SITE_COPYRIGHT: ${NETLIFY_BRANDING}
           MKDOCS_SITE_NAME: Geotribu PREVIEW
           MKDOCS_SITE_URL: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/
@@ -93,6 +93,7 @@ jobs:
           # Save ENV for transfer
           echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"                 >> pr.env
           echo "GITHUB_HEAD_REF=$GITHUB_HEAD_REF"                     >> pr.env
+          echo "MKDOCS_EDIT_URI=$MKDOCS_EDIT_URI"                     >> pr.env
           echo "PR_HEADSHA=${{ github.event.pull_request.head.sha }}" >> pr.env
           echo "PR_NUMBER=${{ github.event.pull_request.number }}"    >> pr.env
           echo "PR_TITLE=${{ github.event.pull_request.title }}"      >> pr.env
