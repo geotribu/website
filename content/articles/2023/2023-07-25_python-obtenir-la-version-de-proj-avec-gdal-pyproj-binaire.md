@@ -101,7 +101,7 @@ if version_match:
 
 ![logo open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png){: .img-rdp-news-thumb }
 
-En tout cas, ça valait le coup de demander autour de moi et auprès de mes collègues puisque Loïc Bartoletti a proposé d'inétgrer l'option `--version` à proj ! C'est dans cette [Pull Request]({: .img-rdp-news-thumb }) que ça se passe et on y apprend plein de choses :
+En tout cas, ça valait le coup de demander autour de moi et auprès de mes collègues puisque Loïc Bartoletti a proposé d'inétgrer l'option `--version` à proj ! C'est dans cette [Pull Request](https://github.com/OSGeo/PROJ/pull/3836) que ça se passe et on y apprend plein de choses :
 
 - que certains des [utilitaires packagés avec proj](https://proj.org/en/9.2/apps/index.html) disposent eux d'une option `--version` : `cct --version` et `gie --version`. Il y a donc une inchérence entre les différents CLI qu'il fait bon de mettre en lumière et résoudre.
 - que la [demande ne date pas d'hier](https://github.com/OSGeo/PROJ/issues/2640) (mais qu'un malheureux bot avait occulté)
