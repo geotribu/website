@@ -228,9 +228,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
-      anchor_linenums: true
       linenums: true
-      line_spans: __span
       pygments_lang_class: true
       use_pygments: true
   - pymdownx.inlinehilite
