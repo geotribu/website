@@ -1,5 +1,7 @@
 ---
 title: Obtenir la version de PROJ installée en Python
+subtitle: "EPSG:8.2.1"
+icon: material/spotlight
 authors:
     - Julien MOURA
 categories:
