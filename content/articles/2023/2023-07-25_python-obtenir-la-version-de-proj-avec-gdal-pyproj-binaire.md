@@ -77,7 +77,7 @@ print(
 
 ![logo PROJ](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/proj.png){: .img-rdp-news-thumb }
 
-Mais si on ne peut compter sur aucune des couches d'asbtraction précédentes, alors ça se corse. Il faut appeler l'exécutable de proj et se débrouiller avec la sortie par défaut puisqu'il n'y a pas d'option `--version` :
+Mais si on ne peut compter sur aucune des couches d'abstraction précédentes, alors ça se corse. Il faut appeler l'exécutable de proj et se débrouiller avec la sortie par défaut puisqu'il n'y a pas d'option `--version` :
 
 ```sh
 > proj
@@ -101,9 +101,9 @@ if version_match:
 
 ![logo open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png){: .img-rdp-news-thumb }
 
-En tout cas, ça valait le coup de demander autour de moi et auprès de mes collègues puisque Loïc Bartoletti a proposé d'inétgrer l'option `--version` à proj ! C'est dans cette [Pull Request](https://github.com/OSGeo/PROJ/pull/3836) que ça se passe et on y apprend plein de choses :
+En tout cas, ça valait le coup de demander autour de moi et auprès de mes collègues puisque Loïc Bartoletti a proposé d'intégrer l'option `--version` à proj ! C'est dans cette [Pull Request](https://github.com/OSGeo/PROJ/pull/3836) que ça se passe et on y apprend plein de choses :
 
-- que certains des [utilitaires packagés avec proj](https://proj.org/en/9.2/apps/index.html) disposent eux d'une option `--version` : `cct --version` et `gie --version`. Il y a donc une inchérence entre les différents CLI qu'il fait bon de mettre en lumière et résoudre.
+- que certains des [utilitaires packagés avec proj](https://proj.org/en/9.2/apps/index.html) disposent eux d'une option `--version` : `cct --version` et `gie --version`. Il y a donc une incohérence entre les différents CLI qu'il fait bon de mettre en lumière et résoudre.
 - que la [demande ne date pas d'hier](https://github.com/OSGeo/PROJ/issues/2640) (mais qu'un malheureux bot avait occulté)
 - que j'aurais pu creuser davantage quand j'ai regardé [comment pyproj se débrouille pour déterminer la version de PROJ](https://github.com/pyproj4/pyproj/blob/1452ba404be58c14a6b64d4551c320022f5aafcf/setup.py#L33-L53)
 
