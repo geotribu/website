@@ -26,6 +26,7 @@ Objectifs :
 
 # standard library
 import logging
+from pathlib import Path
 from typing import Optional
 
 # Mkdocs
@@ -40,6 +41,7 @@ from mkdocs.structure.pages import Page
 # ##################################
 
 logger = logging.getLogger("mkdocs")
+hook_name = Path(__file__).stem
 
 # ###########################################################################
 # ########## Functions #############
@@ -81,9 +83,24 @@ def on_page_markdown(
         logger.debug(
             f"{page.abs_url} n'a pas d'image. Une 'social card' sera automatiquement générée : {social_card_url}"
         )
+
+        # si la page a une icône, on adapte le template de l'image
+        # ref : https://squidfunk.github.io/mkdocs-material/reference#setting-the-page-icon
+        if page.meta.get("icon"):
+            cards_layout = "default/variant"
+            logger.info(
+                f"[{hook_name}] La page {page.abs_url} a une icône définie "
+                f"({page.meta.get('icon')}). Dans ce cas, le modèle de social "
+                f"card est : {cards_layout}"
+            )
+        else:
+            cards_layout = social_plugin.config.cards_layout
+
+        #
         page.meta["image"] = social_card_url
         page.meta["social"] = {
             "cards": True,
+            "cards_layout": cards_layout,
             "cards_layout_options": {
                 "background_color": social_plugin.config.cards_layout_options.get(
                     "background_color"
