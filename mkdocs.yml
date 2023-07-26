@@ -23,6 +23,7 @@ site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 hooks:
   - hooks/mkdocs/G001_check_hyperlinks_internal.py
   # - hooks/mkdocs/G002_check_images_size.py
+  - hooks/mkdocs/G003_social_cards_adapter.py
 
 # Plugins
 plugins:
