@@ -29,9 +29,9 @@ import logging
 from typing import Optional
 
 # Mkdocs
-import mkdocs.plugins
 from material.plugins.social.plugin import SocialPlugin
 from mkdocs.config.defaults import MkDocsConfig
+from mkdocs.plugins import event_priority
 from mkdocs.structure.files import Files
 from mkdocs.structure.pages import Page
 
@@ -46,7 +46,7 @@ logger = logging.getLogger("mkdocs")
 # ##################################
 
 
-@mkdocs.plugins.event_priority(50)
+@event_priority(50)
 def on_page_markdown(
     markdown: str, *, page: Page, config: MkDocsConfig, files: Files
 ) -> Optional[str]:
@@ -64,6 +64,10 @@ def on_page_markdown(
     Returns:
         Markdown source text of page as string
     """
+    # exclude homepage
+    if page.is_homepage:
+        return
+
     if not config.plugins.get("material/social"):
         logger.warning("Le plugin social du thème Material n'est pas présent")
         return
@@ -74,7 +78,7 @@ def on_page_markdown(
         social_card_url = (
             f"{config.site_url}assets/images/social{page.abs_url[:-1]}.png"
         )
-        logger.info(
+        logger.debug(
             f"{page.abs_url} n'a pas d'image. Une 'social card' sera automatiquement générée : {social_card_url}"
         )
         page.meta["image"] = social_card_url
@@ -93,4 +97,16 @@ def on_page_markdown(
                     "font_family"
                 ),
             },
+        }
+    else:
+        logger.debug(
+            f"{page.abs_url} a une image paramétrée. Désactivation du plugin social sur la page."
+        )
+        page.meta["social"] = {
+            "cards": False,
+            # TODO: les lignes suivantes pourront être réactivées quand le plugin social gèrera les images distantes
+            # "cards_layout": "default/only/image",
+            # "cards_layout_options": {
+            #     "background_image": page.meta.get("image"),
+            # },
         }
