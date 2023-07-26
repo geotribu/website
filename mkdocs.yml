@@ -141,9 +141,10 @@ plugins:
   - social:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, true]
       cards_layout_options:
-        cards_color:
-          fill: "#3e93a7"
-        cards_font: Ubuntu
+        background_color: "#00000000"
+        background_image: content/theme/assets/images/geotribu/background_geotribu.png
+        color: "#3e93a7"
+        font_family: Ubuntu
 
 # Theme
 theme:
