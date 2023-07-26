@@ -70,12 +70,23 @@ def on_page_markdown(
     if page.is_homepage:
         return
 
+    # vérifie que le plugin social est bien installé et configuré
     if not config.plugins.get("material/social"):
-        logger.warning("Le plugin social du thème Material n'est pas présent")
+        logger.warning(
+            f"[{hook_name}] Le plugin social du thème Material n'est pas présent. Ce hook est donc inutile."
+        )
         return
 
     social_plugin: SocialPlugin = config.plugins.get("material/social")
 
+    # vérifie que le plugin est activé
+    if not social_plugin.config.enabled or not social_plugin.config.cards:
+        logger.debug(
+            f"[{hook_name}] Le plugin social du thème Material est présent mais désactivé. Ce hook est donc inutile."
+        )
+        return
+
+    # Cas de figure où une image n'est pas définie
     if page.meta.get("image") is None or page.meta.get("image") == "":
         social_card_url = (
             f"{config.site_url}assets/images/social{page.abs_url[:-1]}.png"
@@ -117,7 +128,7 @@ def on_page_markdown(
         }
     else:
         logger.debug(
-            f"{page.abs_url} a une image paramétrée. Désactivation du plugin social sur la page."
+            f"[{hook_name}] {page.abs_url} a une image paramétrée. Désactivation du plugin social sur la page."
         )
         page.meta["social"] = {
             "cards": False,
