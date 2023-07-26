@@ -140,7 +140,8 @@ plugins:
         - i3.codeplex.com/*
         - drfhlmcehrc34.cloudfront.net/*
   - social:
-      cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, true]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
+      cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, true]
       cards_layout_options:
         background_color: "#00000000"
         background_image: content/theme/assets/images/geotribu/background_geotribu.png
