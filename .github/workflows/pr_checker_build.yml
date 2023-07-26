@@ -79,8 +79,8 @@ jobs:
           MKDOCS_SITE_URL="https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
 
           # merge different configs
-          python scripts/mkdocs_populate_latest.py
-          python scripts/mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
+          python scripts/050_mkdocs_populate_latest.py
+          python scripts/100_mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # build
           mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --strict
