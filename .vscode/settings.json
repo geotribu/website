@@ -4,7 +4,8 @@
     "editor.guides.bracketPairs": "active",
     "files.associations": {
         "./requirements*.txt": "pip-requirements",
-        ".linkcheckrrc": "ini"
+        ".linkcheckrrc": "ini",
+        "*.html": "jinja"
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
