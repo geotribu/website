@@ -192,29 +192,5 @@
 {% block content %}
 {{ super() }}
 
-{# License #}
-{% if not page.is_homepage and ("license" not in page.meta or page.meta.license == "default") %}
-<hr>
-<div class="md-source-date">
-  <small>
-    <p xmlns:cc="http://creativecommons.org/ns#">
-      Ce contenu est sous licence Creative Commons
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank"
-        rel="license noopener noreferrer">BY-NC-SA 4.0 International
-        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" class=img-license-picto
-          alt="Pictogramme Creative Commons" longdesc="https://creativecommons.org/licenses/?lang=fr-FR" title="CC" />
-        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" class=img-license-picto
-          alt="Pictogramme Creative Commons BY" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-          title="BY" />
-        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" class=img-license-picto
-          alt="Pictogramme Creative Commons NC" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-          title="NC" />
-        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" class=img-license-picto
-          alt="Pictogramme Creative Commons SA" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-          title="SA" />
-      </a>
-    </p>
-  </small>
-</div>
-{% endif %}
+{% include "partials/license.html" %}
 {% endblock %}
