@@ -69,18 +69,13 @@ jobs:
           MKDOCS_SITE_NAME: "Geotribu PREVIEW - PR ${{ github.event.pull_request.number }}"
           MKDOCS_SITE_COPYRIGHT: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
-          echo $PR_NUMBER
-          echo $GITHUB_HEAD_REF
-          echo $MKDOCS_EDIT_URI
-          echo $MKDOCS_SITE_NAME
           # store custom env vars that need resolution
           export MKDOCS_EDIT_URI="edit/${GITHUB_HEAD_REF}/content"
-          echo $MKDOCS_EDIT_URI
-          MKDOCS_SITE_URL="https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
+          export MKDOCS_SITE_URL="https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
 
           # merge different configs
-          python scripts/mkdocs_populate_latest.py
-          python scripts/mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
+          python scripts/050_mkdocs_populate_latest.py
+          python scripts/100_mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # build
           mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --strict

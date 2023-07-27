@@ -23,6 +23,7 @@ site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 hooks:
   - hooks/mkdocs/G001_check_hyperlinks_internal.py
   # - hooks/mkdocs/G002_check_images_size.py
+  - hooks/mkdocs/G003_social_cards_adapter.py
 
 # Plugins
 plugins:
@@ -138,12 +139,23 @@ plugins:
         - boundlessgeo.com/*
         - i3.codeplex.com/*
         - drfhlmcehrc34.cloudfront.net/*
+  - social:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
+      cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, true]
+      cards_exclude:
+        - index.md
+        - toc_nav_ignored/*.md
+      cards_layout_options:
+        background_color: "#00000000"
+        background_image: content/theme/assets/images/geotribu/background_geotribu.png
+        color: "#3e93a7"
+        font_family: Ubuntu
 
 # Theme
 theme:
   name: "material"
   custom_dir: "./content/theme/"
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  favicon: theme/assets/images/geotribu/logo_geotribu.png
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -166,7 +178,7 @@ theme:
     - toc.follow
   font: false
   language: fr
-  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
