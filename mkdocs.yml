@@ -103,6 +103,7 @@ plugins:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
       tags_compare: !!python/name:material.plugins.tags.plugin.casefold
+      tags_pages_compare: !!python/name:material.plugins.tags.page_url
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       assets_fetch_dir:
@@ -156,10 +157,6 @@ theme:
   name: "material"
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/logo_geotribu.png
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
 
   features:
     - content.action.edit
