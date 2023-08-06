@@ -1,0 +1,8 @@
+links:
+  omitted_files: warn
+  not_found: warn
+  absolute_links: warn
+nav:
+  omitted_files: info
+  not_found: warn
+  absolute_links: ignore
