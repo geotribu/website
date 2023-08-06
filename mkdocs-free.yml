@@ -6,7 +6,7 @@ site_description: >-
   l'information géographique, les SIG, la cartographie, la représentation des données...
 
 site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
-site_url: !ENV [MKDOCS_SITE_URL, "https://static.geotribu.fr/"]
+site_url: !ENV [MKDOCS_SITE_URL, "https://geotribu.fr/"]
 copyright:
   !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
 

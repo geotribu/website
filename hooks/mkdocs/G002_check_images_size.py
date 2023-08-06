@@ -23,7 +23,7 @@ from geotribu_cli.utils.formatters import convert_octets
 
 logger = logging.getLogger("mkdocs")
 
-base_url: str = "https://static.geotribu.fr/"
+base_url: str = "https://geotribu.fr/"
 
 REMOTE_REQUEST_HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
