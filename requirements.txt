@@ -25,4 +25,4 @@ mkdocs-rss-plugin>=1.4,<1.8
 
 # social plugin requirements
 CairoSVG>=2.5,<3
-Pillow>=9.4,<9.6
+Pillow>=9.4,<10.1
