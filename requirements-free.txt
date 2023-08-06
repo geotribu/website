@@ -1,6 +1,6 @@
 # No Material Insiders
 # --------------------
 
-mkdocs-material>=9,<10
+mkdocs-material>=9,<9.2
 
 -r requirements.txt
