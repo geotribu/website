@@ -597,7 +597,7 @@ redirects:
     rdp/2010/rdp_2010-10-14.md: rdp/2010/rdp_2010-10-15.md
     rdp/2015/rdp_2015-04-07.md: rdp/2015/rdp_2015-04-10.md
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
-    # rss.md: https://static.geotribu.fr/feed_rss_created.xml
+    # rss.md: https://geotribu.fr/feed_rss_created.xml
 
     # migration des contenus en 2022
     articles/2008/art_2008-11-03.md: articles/2008/2008-11-03_premiers-pas-dans-la-cour-des-grands.md

@@ -24,7 +24,7 @@ Voilà 3 ans que Geotribu est de retour après une [coupure de service de... 3 a
 
 3 ans que ce nouveau site est en place.  
 3 ans à en améliorer l'ergonomie, les fonctionnalités et surtout à réintégrer et nettoyer les anciens contenus.  
-3 ans qu'il est accessible sur <https://static.geotribu.fr>
+3 ans qu'il est accessible sur <https://geotribu.fr>
 
 Il est temps de rebasculer le site sur l'adresse principale.
 
@@ -48,8 +48,8 @@ flowchart TB
     C(http://geotribu.fr) -->|https| U
     D(http://www.geotribu.net) -->|https| E
     E(https://www.geotribu.net) -->|Redirection DNS| U
-    F(http://static.geotribu.fr) -->|https| G
-    G(https://static.geotribu.fr) -->|Redirection DNS| U
+    F(http://geotribu.fr) -->|https| G
+    G(https://geotribu.fr) -->|Redirection DNS| U
     U{"https://geotribu.fr/ <br /> (Apex)"}
 ```
 
