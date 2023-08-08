@@ -142,6 +142,7 @@ plugins:
         - drfhlmcehrc34.cloudfront.net/*
   - social:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
+      cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, true]
       cards_exclude:
         - index.md
