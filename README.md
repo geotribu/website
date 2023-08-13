@@ -8,7 +8,7 @@
 
 Sources et contenus du site de Geotribu, accessible via les URLs suivantes :
 
-- <https://static.geotribu.fr>
+- <https://geotribu.fr>
 - <http://geotribu.fr>
 - <http://geotribu.net>
 

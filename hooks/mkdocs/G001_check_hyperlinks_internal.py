@@ -18,7 +18,7 @@ import mkdocs.plugins
 
 logger = logging.getLogger("mkdocs")
 
-base_url: str = "https://static.geotribu.fr/"
+base_url: str = "https://geotribu.fr/"
 
 pattern = re.compile(r"\[([^][]+)\](\(((?:[^()]+|(\?2))+)\))")
 # Anything that isn't a square closing bracket
@@ -42,7 +42,7 @@ def on_page_markdown(markdown, page, **kwargs):
     path = page.file.src_uri
     if path in exclude_list:
         return
-    # for m in re.finditer(r"\bhttps://static.geotribu.fr/[^) ]+", markdown):
+    # for m in re.finditer(r"\bhttps://geotribu.fr/[^) ]+", markdown):
     # for match in pattern.finditer(markdown):
     for match in re.findall(pattern, markdown):
         # print(path, match)

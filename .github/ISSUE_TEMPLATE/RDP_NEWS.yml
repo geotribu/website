@@ -109,7 +109,7 @@ body:
       label: Mots-clés
       description: |
         Liste de mots-clés séparés par une virgule.
-        De préférence, choisir parmi les [mots-clés existants](https://static.geotribu.fr/tags/), en respectant la casse.
+        De préférence, choisir parmi les [mots-clés existants](https://geotribu.fr/tags/), en respectant la casse.
     validations:
       required: true
 

@@ -4,7 +4,8 @@
     "editor.guides.bracketPairs": "active",
     "files.associations": {
         "./requirements*.txt": "pip-requirements",
-        ".linkcheckrrc": "ini"
+        ".linkcheckrrc": "ini",
+        "*.html": "jinja"
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -31,6 +32,8 @@
         "!ENV sequence",
         "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
         "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
-        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.plugin.casefold",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.page_url"
     ],
 }
