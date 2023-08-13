@@ -6,7 +6,7 @@ authors:
 categories:
     - article
     - meta
-date: "2023-06-27 10:20"
+date: "2023-08-22 10:20"
 description: Consultez Geotribu en ligne de commande
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
 license: beerware
@@ -19,7 +19,7 @@ tags:
 
 # Le CLI Geotribu : cherchez dans nos contenus et images en ligne de commande
 
-:calendar: Date de publication initiale : 27 juin 2023
+:calendar: Date de publication initiale : 22 août 2023
 
 ## Introduction
 
