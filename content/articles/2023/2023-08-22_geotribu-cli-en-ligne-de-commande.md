@@ -8,7 +8,7 @@ categories:
     - meta
 date: "2023-08-22 10:20"
 description: Consultez Geotribu en ligne de commande
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
+image:
 license: beerware
 robots: index, follow
 tags:
