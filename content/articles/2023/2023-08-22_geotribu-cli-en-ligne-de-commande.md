@@ -8,6 +8,7 @@ categories:
     - meta
 date: "2023-08-22 10:20"
 description: Consultez Geotribu en ligne de commande
+icon: octicons/terminal-24
 image:
 license: beerware
 robots: index, follow
