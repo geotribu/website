@@ -83,23 +83,21 @@ plugins:
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - tags:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
 
 # Theme
 theme:
   name: "material"
   custom_dir: "./content/theme/"
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
+  favicon: theme/assets/images/geotribu/logo_geotribu.png
 
   features:
     - content.action.edit
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - navigation.prune
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -107,11 +105,13 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-  font: false
+  font:
+    code: Ubuntu Mono
+    text: Ubuntu
   icon:
     repo: fontawesome/brands/github-alt
   language: fr
-  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -188,6 +188,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
