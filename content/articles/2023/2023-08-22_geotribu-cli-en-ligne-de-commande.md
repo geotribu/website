@@ -26,11 +26,13 @@ Prérequis :
 
 - Python 3.9+
 - un terminal gérant les hyperliens : Bash, PowerShell 5+, etc.
-- une
+- une appétence pour la ligne de commande
 
 ## Introduction
 
-Que ce soit pour concevoir un (éphémère) scan [Isogeo](https://help.isogeo.com/scan/isogeo-scan-offline/) hors-ligne, en tant qu'indépendant (notamment pour Tactis) et ces derniers mois pour la Géoplateforme de l'IGN ou [QDT](https://github.com/Guts/qgis-deployment-cli/) en tant qu'Oslandien, j'ai eu l'occasion de développer pas mal d'outils en ligne de commande ([CLI](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande) pour les intimes).
+![logo Geotribu CLI](https://cdn.geotribu.fr/img/internal/charte/geotribu_cli_logo.webp){: .img-rdp-news-thumb }
+
+Que ce soit pour concevoir un (éphémère) [scan Isogeo hors-ligne](https://help.isogeo.com/scan/isogeo-scan-offline/), en tant qu'indépendant (notamment pour Tactis et des traitements liés à GraceTHD) et ces derniers mois pour la Géoplateforme de l'IGN ou [QDT](https://guts.github.io/qgis-deployment-cli/) en tant qu'Oslandien, j'ai eu l'occasion de développer pas mal d'outils en ligne de commande ([CLI](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande) pour les intimes).
 
 Alors pourquoi pas pour Geotribu ? Comme ça, je peux expérimenter sans contrainte, proposer un nouveau moyen de consulter les contenus et surtout automatiser certaines tâches plus ou moins récurrentes.
 
@@ -43,7 +45,7 @@ Petite présentation pour les lecteur/ices qui considèrent qu'un terminal est u
 $ pip install geotribu
 ---> 100%
 Bienvenue dans le GeoTipi !
-Pour démarrer, taper : geotribu --help ou geotribu rss
+Pour démarrer, taper : 'geotribu --help' ou 'geotribu rss'.
 ```
 
 <!-- markdownlint-enable MD040 -->
@@ -64,7 +66,7 @@ Le plus simple reste avec un terminal où l'interpréteur Python est installé a
     Exemple sur Ubuntu LTS (22.04 à date) :
 
     ```sh
-    python3 -m pip install --user --upgrade geotribu
+    python3 -m pip install --upgrade geotribu
     ```
 
 === ":window: Windows"
@@ -72,19 +74,21 @@ Le plus simple reste avec un terminal où l'interpréteur Python est installé a
     Dans une fenêtre PowerShell :
 
     ```powershell
-    py -3 -m pip install --user --upgrade geotribu
+    py -3 -m pip install --upgrade geotribu
     ```
 
     Si un message d'avertissement comme celui-ci s'affiche :
 
-    > WARNING: The scripts qdeploy-toolbelt.exe, qdt.exe and qgis-deployment-toolbelt.exe are installed in 'C:\Users\risor\AppData\Roaming\Python\Python310\Scripts' which is not on PATH.  
+    > WARNING: The scripts geotribu.exe are installed in 'C:\Users\username\AppData\Roaming\Python\Python310\Scripts' which is not on PATH.  
     > Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 
-    Il s'agit ajouter le chemin vers le dossier des scripts Python à la variable `PATH` qui liste les dossiers contenant des exécutables. Cela se fait toujours avec PowerShell (adapter avec le chemin de votre installation Python) :
+    Il s'agit d'ajouter le chemin vers le dossier des scripts Python à la variable `PATH`` qui liste les dossiers contenant des exécutables. Cela se fait toujours avec PowerShell (adapter avec le chemin de votre installation Python) :
 
     ```powershell
     $Env:PATH += ";$Env:APPDATA\Python\Python310\Scripts"
     ```
+
+    Puis allez lire [cet article](../2020/2020-06-19_setup_python.md#ajouter-python-au-path) :wink: !
 <!-- markdownlint-enable MD046 -->
 
 [Documentation d'installation détaillée :material-book-plus:](https://cli.geotribu.fr/usage/installation.html){: .md-button }
@@ -96,18 +100,13 @@ Le plus simple reste avec un terminal où l'interpréteur Python est installé a
 
 Comme pour tout autre outil, pour vérifier que l'installation s'est déroulée correctement, il est de bon ton d'exécuter les commandes de base : `--version` et `--help` (sorties non contractuelles :wink:) :
 
-```sh
-geotribu --version
-0.15.0
-```
-
-Et l'aide :
+Par exemple, la commande :
 
 ```sh
 geotribu --help
 ```
 
-Ce qui donne :
+Donne quelque chose comme :
 
 ```sh
 {% include "code/geotribu_cli_help.txt" %}
@@ -128,18 +127,20 @@ Inutile donc de dupliquer ici avec une obsolescence programmée ce qui est autom
 [Voir les exemples :material-book-cog:](https://cli.geotribu.fr/usage/examples.html){: .md-button }
 {: align=middle }
 
+Dans les grandes lignes :
+
 - [x] lister les derniers contenus publiés (à partir du flux RSS) :
 
     ```sh
     geotribu rss
-    # en spécifiant le nombre et le type de contenus (article ou rdp)
+    # en spécifiant le nombre et le type de contenus (`article` ou `rdp`)
     geotribu rss -f rdp -n 10
     ```
 
 - [x] chercher dans les articles et revues de presse
 
     ```sh
-    geotribu sc orfeo
+    geotribu sc orfeo*
     # en spécifiant la présence d’un mot dans le titre et lister les 5 premiers résultats
     geotribu sc -n 5 "+title:openstreetmap postgis"
     ```
@@ -162,7 +163,7 @@ Inutile donc de dupliquer ici avec une obsolescence programmée ce qui est autom
     geotribu si postgis -f logo
     ```
 
-- [x] optimiser une ou plusieurs images pour la publication (dimensions, format, nom...)*
+- [x] optimiser une ou plusieurs images pour la publication (dimensions, format, nom...)[^1]
 
     ```sh
     # depuis un chemin local ou une URL distante
@@ -183,6 +184,18 @@ Inutile donc de dupliquer ici avec une obsolescence programmée ce qui est autom
     geotribu comments broadcast -t mastodon
     ```
 
+## Un outil déjà utilisé et ouvert
+
+AU départ un projet d'à côté et perso, l'outil est finalement déjà en "production", utilisé à plusieurs étapes du cycle de vie de Geotribu :
+
+- comme dépendance du site, pour la vérification de la structure des contenus et bientôt leur amorce
+- pour [republier les commentaires sur Mastodon](https://mapstodon.space/tags/Geotribot)
+
+C'est évidemment open source et libre (licence MIT) donc si cela vous intéresse, si vous rencontrez un bug ou si vous souhaitez ajouter une fonctionnalité, n'hésitez pas à faire un tour sur le GitHub :
+
+[Consulter le dépôt du code :fontawesome-regular-file-code:](https://github.com/geotribu/cli/){: .md-button }
+{: align=middle }
+
 ----
 
 ## Auteur {: data-search-exclude }
@@ -192,4 +205,4 @@ Inutile donc de dupliquer ici avec une obsolescence programmée ce qui est autom
 {% include "licenses/beerware.md" %}
 
 <!-- Notes de bas de page -->
-[^1]: commandes nécessitant un jeton d'authentification à l'API
+[^1]: commandes nécessitant un jeton d'authentification à une API
