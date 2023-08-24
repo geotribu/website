@@ -82,7 +82,7 @@ Le plus simple reste avec un terminal où l'interpréteur Python est installé a
     > WARNING: The scripts geotribu.exe are installed in 'C:\Users\username\AppData\Roaming\Python\Python310\Scripts' which is not on PATH.  
     > Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 
-    Il s'agit d'ajouter le chemin vers le dossier des scripts Python à la variable `PATH`` qui liste les dossiers contenant des exécutables. Cela se fait toujours avec PowerShell (adapter avec le chemin de votre installation Python) :
+    Il s'agit d'ajouter le chemin vers le dossier des scripts Python à la variable `PATH`` qui liste les dossiers contenant des exécutables. Cela se fait toujours avec PowerShell (adapter le chemin en fonction de la version de votre installation Python) :
 
     ```powershell
     $Env:PATH += ";$Env:APPDATA\Python\Python310\Scripts"
