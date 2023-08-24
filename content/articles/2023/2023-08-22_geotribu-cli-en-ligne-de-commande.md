@@ -6,7 +6,7 @@ authors:
 categories:
     - article
     - meta
-date: "2023-08-22 10:20"
+date: "2023-08-25 10:20"
 description: Consultez Geotribu en ligne de commande
 icon: octicons/terminal-24
 image:
@@ -20,11 +20,11 @@ tags:
 
 # Le CLI Geotribu : cherchez dans nos contenus et images en ligne de commande
 
-:calendar: Date de publication initiale : 22 août 2023
+:calendar: Date de publication initiale : 25 août 2023
 
 ## Introduction
 
-Que ce soit pour [Isogeo](https://help.isogeo.com/scan/isogeo-scan-offline), en tant qu'indépendant (notamment pour Tactis) et ces derniers mois pour la Géoplateforme de l'IGN ou [QDT](https://github.com/Guts/qgis-deployment-cli/) en tant qu'Oslandien, j'ai eu l'occasion de développer pas mal d'outils en ligne de commande.
+Que ce soit pour concevoir un (éphémère) scan [Isogeo](https://help.isogeo.com/scan/isogeo-scan-offline/) hors-ligne, en tant qu'indépendant (notamment pour Tactis) et ces derniers mois pour la Géoplateforme de l'IGN ou [QDT](https://github.com/Guts/qgis-deployment-cli/) en tant qu'Oslandien, j'ai eu l'occasion de développer pas mal d'outils en ligne de commande ([CLI](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande) pour les intimes).
 
 Alors pourquoi pas pour Geotribu ? Comme ça, je peux expérimenter sans contrainte, proposer un nouveau moyen de consulter les contenus et surtout automatiser certaines tâches plus ou moins récurrentes.
 
