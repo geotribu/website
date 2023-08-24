@@ -22,6 +22,12 @@ tags:
 
 :calendar: Date de publication initiale : 25 août 2023
 
+Prérequis :
+
+- Python 3.9+
+- un terminal gérant les hyperliens : Bash, PowerShell 5+, etc.
+- une
+
 ## Introduction
 
 Que ce soit pour concevoir un (éphémère) scan [Isogeo](https://help.isogeo.com/scan/isogeo-scan-offline/) hors-ligne, en tant qu'indépendant (notamment pour Tactis) et ces derniers mois pour la Géoplateforme de l'IGN ou [QDT](https://github.com/Guts/qgis-deployment-cli/) en tant qu'Oslandien, j'ai eu l'occasion de développer pas mal d'outils en ligne de commande ([CLI](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande) pour les intimes).
@@ -36,7 +42,8 @@ Petite présentation pour les lecteur/ices qui considèrent qu'un terminal est u
 ```
 $ pip install geotribu
 ---> 100%
-Accès au GeoTipi ajouté à votre terminal.
+Bienvenue dans le GeoTipi !
+Pour démarrer, taper : geotribu --help ou geotribu rss
 ```
 
 <!-- markdownlint-enable MD040 -->
@@ -90,33 +97,20 @@ Le plus simple reste avec un terminal où l'interpréteur Python est installé a
 Comme pour tout autre outil, pour vérifier que l'installation s'est déroulée correctement, il est de bon ton d'exécuter les commandes de base : `--version` et `--help` (sorties non contractuelles :wink:) :
 
 ```sh
-> geotribu --version
+geotribu --version
 0.15.0
-> geotribu --help
-USAGE: geotribu [-v] [-h] [--version] {read-latest,récents,latest,rl,rss,search-content,contenus,sc,search-image,images,img,si,upgrade,auto-update,maj,update} ...
+```
 
-Geotribu Toolbelt 0.15.0 - Des outils pour faciliter les tâches récurrentes des contributeur/ices de Geotribu.
+Et l'aide :
 
-OPTIONS:
-  -v, --verbose         Niveau de verbosité : None = WARNING, -v = INFO, -vv = DEBUG. Réglable avec la variable d'environnement GEOTRIBU_LOGS_LEVEL.
-  -h, --help            Affiche l'aide et s'arrête là.
-  --version             Affiche la version du CLI et s'arrête là.
+```sh
+geotribu --help
+```
 
-SOUS-COMMANDES:
-  {read-latest,récents,latest,rl,rss,search-content,contenus,sc,search-image,images,img,si,upgrade,auto-update,maj,update}
-    read-latest (récents, latest, rl, rss)
-                        Consulter les derniers contenus du site
-    search-content (contenus, sc)
-                        Rechercher dans les contenus du site
-    search-image (images, img, si)
-                        Rechercher dans les images de Geotribu
-    upgrade (auto-update, maj, update)
-                        Mettre à jour Geotribu CLI.
+Ce qui donne :
 
-Des outils pour les administrateur/ices, contributeur/ices ou les lecteur/ices de Geotribu.
-
-Développé par Julien Moura (Geotribu)
-Documentation : https://cli.geotribu.fr/
+```sh
+{% include "code/geotribu_cli_help.txt" %}
 ```
 
 La plupart des options sont configurables en variable d'environnement :
