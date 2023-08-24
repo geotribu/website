@@ -28,6 +28,8 @@ Que ce soit pour concevoir un (éphémère) scan [Isogeo](https://help.isogeo.co
 
 Alors pourquoi pas pour Geotribu ? Comme ça, je peux expérimenter sans contrainte, proposer un nouveau moyen de consulter les contenus et surtout automatiser certaines tâches plus ou moins récurrentes.
 
+Petite présentation pour les lecteur/ices qui considèrent qu'un terminal est une interface agréable ou pour celles/eux qui aimeraient se mettre à la ligne de commande pour briller en société de géogeeks !
+
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
 
@@ -46,6 +48,7 @@ Accès au GeoTipi ajouté à votre terminal.
 
 ## Prérequis et installation
 
+Le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, il suffit de lancer la commande adaptée à votre système.
 Le plus simple reste avec un terminal où l'interpréteur Python est installé avec le gestionnaire de packages `pip` :
 
 <!-- markdownlint-disable MD046 -->
