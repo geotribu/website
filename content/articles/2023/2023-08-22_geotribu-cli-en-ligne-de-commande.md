@@ -7,7 +7,7 @@ categories:
     - article
     - meta
 date: "2023-08-25 10:20"
-description: Consultez Geotribu en ligne de commande
+description: "Consultez Geotribu en ligne de commande : rechercher et afficher nos contenus directement dans votre terminal."
 icon: octicons/terminal-24
 image:
 license: beerware
@@ -147,12 +147,10 @@ Dans les grandes lignes :
 
 - [x] ouvrir un contenu (soit dans le terminal, soit dans l'application par défaut)
 
-    Après chaque commande de recherche, il est proposé d'ouvrir un contenu parmi les résultats.
+    Après chaque commande de recherche, il est proposé d'ouvrir un contenu parmi les résultats. Mais il est également possible d'ouvrir un résultat depuis une commande passée.
 
     ```sh
-    geotribu sc orfeo
-    # en spécifiant la présence d’un mot dans le titre et lister les 5 premiers résultats
-    geotribu sc -n 5 "+title:openstreetmap postgis"
+    geotribu open 0
     ```
 
 - [x] chercher une image parmi celles hébergées sur Geotribu
