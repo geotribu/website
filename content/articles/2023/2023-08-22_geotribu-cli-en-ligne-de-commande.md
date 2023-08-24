@@ -131,7 +131,7 @@ La plupart des options sont configurables en variable d'environnement :
 Cette trousse à outils est destinée à évoluer au gré des besoins et surtout de mon temps disponible ou de celui que des contributeur/ices voudront bien y investir. Le champ fonctionnel n'est donc pas figé et c'est pour cela que la documentation est configurée pour être générée à la volée à partir du code et des commandes/sous-commandes disponibles.
 Inutile donc de dupliquer ici avec une obsolescence programmée ce qui est automatiquement à jour ailleurs.
 
-[Voir les exemples :material-book-cog:](https://cli.geotribu.fr/usage/exemples.html){: .md-button }
+[Voir les exemples :material-book-cog:](https://cli.geotribu.fr/usage/examples.html){: .md-button }
 {: align=middle }
 
 - [x] lister les derniers contenus publiés (à partir du flux RSS) :
