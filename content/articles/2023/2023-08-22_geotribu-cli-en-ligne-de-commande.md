@@ -26,7 +26,7 @@ tags:
 
 Que ce soit pour [Isogeo](https://help.isogeo.com/scan/isogeo-scan-offline), en tant qu'indépendant (notamment pour Tactis) et ces derniers mois pour la Géoplateforme de l'IGN ou [QDT](https://github.com/Guts/qgis-deployment-cli/) en tant qu'Oslandien, j'ai eu l'occasion de développer pas mal d'outils en ligne de commande.
 
-Alors pourquoi pas pour Geotribu ? Comme ça je peux expérimenter sans contrainte, proposer un nouveau moyen de consulter les contenus et surtout automatiser certaines tâches plus ou moins récurrentes.
+Alors pourquoi pas pour Geotribu ? Comme ça, je peux expérimenter sans contrainte, proposer un nouveau moyen de consulter les contenus et surtout automatiser certaines tâches plus ou moins récurrentes.
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
