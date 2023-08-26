@@ -52,6 +52,7 @@ plugins:
   - tags:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
+  - termynal
 
 # Theme
 theme:

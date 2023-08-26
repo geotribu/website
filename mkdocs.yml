@@ -70,6 +70,7 @@ plugins:
       tags_file: tags.md
       tags_compare: !!python/name:material.plugins.tags.casefold
       tags_pages_compare: !!python/name:material.plugins.tags.page_url
+  - termynal
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       assets_fetch_dir:
