@@ -182,6 +182,10 @@ Dans les grandes lignes :
     geotribu comments broadcast -t mastodon
     ```
 
+Sinon consulter la vidéo de présentation :
+
+<iframe width="100%" height="415" src="https://www.youtube-nocookie.com/embed/eWNBpUVYakY?si=ridPSohVCs5232Gd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Un outil déjà utilisé et ouvert
 
 AU départ un projet d'à côté et perso, l'outil est finalement déjà en "production", utilisé à plusieurs étapes du cycle de vie de Geotribu :
