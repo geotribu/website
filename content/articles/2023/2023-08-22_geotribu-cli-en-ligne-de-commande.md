@@ -58,7 +58,6 @@ Pour démarrer, taper : 'geotribu --help' ou 'geotribu rss'.
 ## Prérequis et installation
 
 Le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, il suffit de lancer la commande adaptée à votre système.
-Le plus simple reste avec un terminal où l'interpréteur Python est installé avec le gestionnaire de packages `pip` :
 
 <!-- markdownlint-disable MD046 -->
 === ":fontawesome-brands-linux: Linux et assimilés"
@@ -188,9 +187,10 @@ Sinon consulter la vidéo de présentation :
 
 ## Un outil déjà utilisé et ouvert
 
-AU départ un projet d'à côté et perso, l'outil est finalement déjà en "production", utilisé à plusieurs étapes du cycle de vie de Geotribu :
+AU départ un _side-project_ perso, l'outil est finalement déjà en "production", utilisé à plusieurs étapes du cycle de vie de Geotribu :
 
-- comme dépendance du site, pour la vérification de la structure des contenus et bientôt leur amorce
+- comme dépendance du site, pour la vérification de la structure des contenus
+- bientôt pour amorcer la structure d'un nouveau contenu
 - pour [republier les commentaires sur Mastodon](https://mapstodon.space/tags/Geotribot)
 
 C'est évidemment open source et libre (licence MIT) donc si cela vous intéresse, si vous rencontrez un bug ou si vous souhaitez ajouter une fonctionnalité, n'hésitez pas à faire un tour sur le GitHub :
