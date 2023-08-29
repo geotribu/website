@@ -133,6 +133,45 @@ Exemple de réseau ouvert [centipede](https://docs.centipede.fr/docs/centipede/3
 - Identifiant et mot de passe : laisser vide ou centipede pour les 2 champs
 - Choisir un [point de montage](https://centipede.fr/index.php/view/map/?repository=cent&project=centipede) proche de votre lieu de collecte en consultant la carte des antennes disponibles sur: <https://centipede.fr/index.php/view/map/?repository=cent&project=centipede>.
 
+----
+
+## Conclusion
+
+Votre équipement, assemblé et configuré, est prêt pour la collecte de données. Cet ensemble offre une très bonne précision dans les meilleures conditions de récéption.
+
+Des contraintes sont toutefois à prendre en compte pour avoir une qualité de géopositionnement la plus précise possible :
+
+- il est nécessaire d'être dans une zone de récéption de data via le téléphone mobile, et d'être le plus proche possible d'une base de correction NTRIP.
+- Les limitations habituelles de récéption des signaux satellites provoqué par le bati et le couvert végétal s'appliquent également.
+
+En dehors des conditions optimales d'utilisation, l'ensemble offre tout de même une précison supérieure à la puce GPS d'un téléphone portable.
+
+Ce type de dispositif est vendu comme capable d'obtenir une précision centimétrique. Je n'utilise volontairement pas les termes de précison centimétrique/ décimétrique/submétrique pour qualifier la précision des données collectées.
+
+Suite à quelques tests effectués sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise d'une dizaine de centimètre en latitude et longitude, et une vingtaine de centimètre en altimètrie. Une campagne de tests plus rigoureux et de comparatifs avec des points relevés par un géomètre permettrait d'affiner les qualificatifs à employer!
+
+![GPS Ardusimple](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple.jpg){: .img-center loading=lazy }
+
+Je vous invite également à consulter [le site du réseau Centipede](https://docs.centipede.fr) pour comprendre l'excellente démarche initiée par l'[INRAE](https://www.inrae.fr/) et les contributeurs. Vous y trouverez des informations pour comprendre le principe de fonctionnement de la géolocalisation RTK, des informations pour créer votre propre station de diffusion de correction NTRIP pour permettre d'augmenter la couverture sur votre territoire et comment créer votre rover de façon plus économique si vous souhaitez davantage "mettre les mains dans le cambouis".
+
+Contributions qui pourraient être intéressantes :
+
+- A récépteur et conditions identiques, quelles sont les incidences sur la précision du relevé et les capacités de récéption des signaux avec d'autres antennes ?
+- A antenne et conditions identiques, quels résultats sur la précision du relevé  avec un autre fabricant de récepteur à bas coût ZED F9P ( Drotek, Sparkfun) ?
+
+L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
+
+## Sources
+
+- [Centipede](https://docs.centipede.fr/)
+- [Ardusimple](https://www.ardusimple.com/documentation/)
+- [Université de Brest](https://www-iuem.univ-brest.fr/pops/attachments/2512)
+- [Institut Geographique National](https://geodesie.ign.fr/index.php?page=grilles)
+- [Parc naturel régional du golfe du Morbihan](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.parc-golfe-morbihan.bzh/medias/2023/02/UBO_notice_Centipede-RTKsurveyor-2.pdf&ved=2ahUKEwjTo8nL2u__AhXsVaQEHSYeB3wQFnoECA0QAQ&usg=AOvVaw1WYPlWQZnnqtvwUNTzsix_)
+- [U-Blox](https://www.u-blox.com/en/product/ann-mb-series)
+
+----
+
 ## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jhan.md"
