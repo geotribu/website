@@ -45,7 +45,7 @@ A noter que je n'ai pas de préférence pour tel ou tel produit / marque / reven
 
 ### Pour la partie géolocalisation à haute précision
 
-- [Kit pré-configuré comprenant le Récepteur RTK ZED F9P avec bluetooth d' Ardusimple  et l'antenne u-blox ANN-MB-00](https://www.ardusimple.com/product/simplertk2blite-bt-case-kit/)
+- [Kit préconfiguré comprenant le Récepteur RTK ZED F9P avec Bluetooth d'Ardusimple et l'antenne u-blox ANN-MB-00](https://www.ardusimple.com/product/simplertk2blite-bt-case-kit/)
 - [Batterie](https://fr.shopping.rakuten.com/offer/buy/8745966944/batterie-de-secours-5000-mah-1-usb-a-max-series-noire-bleue.html?fbbaid=10776957204&t=180177&gclid=EAIaIQobChMIwPSJ37Tv_wIV1pJoCR2QkAP6EAQYAyABEgKZ5fD_BwE) externe, type recharge pour smartphone, pas trop encombrante pour une alimentation dédiée du récepteur.
 - [Interrupteur](https://m.fr.aliexpress.com/item/1005004055554570.html?pdp_npi=2%40dis%21EUR%215%2C28%E2%82%AC%213%2C59%E2%82%AC%21%21%21%21%21%40211b612816882797560523189ea16c%2112000027880087678%21btf&_t=pvid%3A00fec2bb-2b37-44a1-9765-1ec9059854d9&afTraceInfo=1005004055554570__msite__c_ppc_item_bridge__xxxxxx__1688279756&spm=a2g0n.ppclist.product.0&gatewayAdapt=gloPc2fraMsite) USB avec diode, pour le confort d'utilisation.
 
