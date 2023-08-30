@@ -26,61 +26,52 @@ tags:
 
 ![icône GPS](https://cdn.geotribu.fr/img/logos-icones/gps.png "icône GPS"){: .img-rdp-news-thumb }
 
-Ce tutoriel rassemble les informations pour obtenir un kit de géolocalisation (Rover) à haute précision mais à coût limité et le configurer avec son smartphone Android.
+Ce tutoriel rassemble les informations pour obtenir un kit de géolocalisation (Rover[^1]) à haute précision mais à coût limité et le configurer avec son smartphone Android.
 
-Il s'agit d'une alternative au [projet de création de rover initié par l'INRAE et ses contributeurs](https://docs.centipede.fr/docs/make_rover/), sans avoir à faire de soudure, et sans production de pièces sur mesure, juste à brancher.
+Il s'agit d'une alternative au [projet de création de rover[^1] initié par l'INRAE et ses contributeurs](https://docs.centipede.fr/docs/make_rover/), sans avoir à faire de soudure, et sans production de pièces sur mesure, juste à brancher.
 
-A noter que je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et que j'ignore la fiabilité des solutions matérielles ou logicielles choisies.
+:warning: A noter que je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et que j'ignore la fiabilité des solutions matérielles ou logicielles choisies.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
 ----
 
-## Matériel
+## Le matériel
 
-### Prérequis
+Pour une configuration "minimale" :
 
-- smartphone fonctionnant sous Android avec un forfait data
-
-### Pour la partie géolocalisation à haute précision
-
+- smartphone fonctionnant sous Android avec un forfait internet qui permet de télécharger un volume de données (3G/4G/5G).
 - [Kit préconfiguré comprenant le Récepteur RTK ZED F9P avec Bluetooth d'Ardusimple et l'antenne u-blox ANN-MB-00](https://www.ardusimple.com/product/simplertk2blite-bt-case-kit/)
 - [Batterie](https://fr.shopping.rakuten.com/offer/buy/8745966944/batterie-de-secours-5000-mah-1-usb-a-max-series-noire-bleue.html?fbbaid=10776957204&t=180177&gclid=EAIaIQobChMIwPSJ37Tv_wIV1pJoCR2QkAP6EAQYAyABEgKZ5fD_BwE) externe, type recharge pour smartphone, pas trop encombrante pour une alimentation dédiée du récepteur.
 - [Interrupteur](https://m.fr.aliexpress.com/item/1005004055554570.html?pdp_npi=2%40dis%21EUR%215%2C28%E2%82%AC%213%2C59%E2%82%AC%21%21%21%21%21%40211b612816882797560523189ea16c%2112000027880087678%21btf&_t=pvid%3A00fec2bb-2b37-44a1-9765-1ec9059854d9&afTraceInfo=1005004055554570__msite__c_ppc_item_bridge__xxxxxx__1688279756&spm=a2g0n.ppclist.product.0&gatewayAdapt=gloPc2fraMsite) USB avec diode, pour le confort d'utilisation.
 
-### Pour un montage sur une canne
+Pour une configuration "avancée" avec une canne, ajouter :
 
 - [Canne](https://m.fr.aliexpress.com/item/1005004495311018.html?spm=a2g0n.productlist.0.0.60dd6d69RZXJqt&browser_id=16a1a524c6bc47239b3a0e6ec13b3b69&aff_platform=msite&m_page_id=ktanhewysycavbsl18914796bd4b1eeb581d8baa08&gclid=&pdp_npi=3%40dis%21EUR%2135.35%2126.87%21%21%21%21%21%402100bbf516882656491165512d0745%2112000029359608806%21sea%21FR%210&isseo=y&algo_pvid=fccc553b-4c66-483a-80d1-02e03b135c41) télescopique ou à assembler.
 - [Platine](https://www.sparkfun.com/products/17519) servant de masse et de support pour l'antenne aimantée.
 - [Réducteur](https://www.amazon.fr/dp/B07QGZHY9Q/ref=sspa_mw_detail_0?ie=UTF8&psc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9waG9uZV9kZXRhaWwp13NParams&th=1) 5/8-20 à 1/4-11 pour pouvoir visser la platine sur la canne.
 
-### Coût global
+## Le coût global
 
 Pour l'ensemble de géolocalisation, en juin 2023, la dépense est inférieure à 400€ TTC frais de port inclus.  
 Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ en allant chercher les pièces à pied... ou 450€ frais de port compris.
 
 ![GPS Ardusimple - Matériel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple_materiel.jpg){: .img-center loading=lazy }
 
-### Assemblage et configuration
+## Les grandes étapes
 
-Rien de plus simple :
-
-- Assembler
-- Brancher le matériel
-- puis le mettre sous tension !
-- Activer le bluetooth sur le smartphone et associer le récepteur à votre smartphone.
+1. Assembler,
+1. Brancher le matériel,
+1. Mettre sous tension,
+1. Activer le bluetooth sur le smartphone,
+1. Associer le récepteur à votre smartphone.
 
 ----
 
-## Utilisation
+## Utilisation du GPS RTK : Deux principes pour gérer les corrections en temps réel
 
-Deux principes pour l'utilisation du gps RTK avec correction en temps réel :
-
-- A : utilisation d'applications de saisie de données contenant une interface pour gérer les corrections en temps réel NTRIP. Par exemple : [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (non payant) ou Map-it  ( add-on NTRIP payant).
-- B : utilisation d'applications de saisie ou de consultation ne prenant pas en charge les corrections en temps réel ([Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), Map-it sans l'add-on, navigateur web...). Dans ce cas, on utilise une application qui va gérer uniquement les corrections NTRIP sans interface cartographique + configuration d'Android pour utiliser le GPS externe avec la correction en temps réel.
-
-### Cas d'utilisation A : Utilisation de l'application SW Maps
+### A. Option avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (non payant) ou Map-it  ( add-on NTRIP payant).
 
 ![icône SW Maps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sw_maps.webp){: .img-rdp-news-thumb }
 
@@ -100,7 +91,9 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
 1. Sélection de votre équipement de géolocalisation dans la liste des appareils bluetooth disponibles. Ex: GNSS-RTK.
 1. Connexion à un réseau de correction NTRIP : voir plus bas.
 
-### Cas d'utilisation B : Utilisation de la localisation simulée
+### Option avec application tierce et utilisation de la localisation simulée
+
+Utilisation d'applications de saisie ou de consultation ne prenant pas en charge les corrections en temps réel ([Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), Map-it sans l'add-on, navigateur web...). Dans ce cas, on utilise une application qui va gérer uniquement les corrections NTRIP sans interface cartographique + configuration d'Android pour utiliser le GPS externe avec la correction en temps réel.
 
 Le mieux est de disposer d'un smartphone sous Android 11+.
 
@@ -120,7 +113,7 @@ Le mieux est de disposer d'un smartphone sous Android 11+.
 1. Configurer avec les informations disponibles sur l'item NTRIP précédent et cocher la case "Mock location"  pour les applications NTRIP client le proposant (pas nécessaire dans SW Maps).
 1. Mettre en route votre application de consultation ou de saisie de données ( [Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), navigateur web ...).
 
-!!! Info "A noter pour la méthode B uniquement"
+!!! Info "A noter pour l'option avec application tierce et utilisation de la localisation simulée uniquement"
     Si l'application vous propose d'utiliser le GPS interne ou le GPS externe, choisir interne puisqu'il s'agit en réalité de votre GPS Bluetooth + la correction NTRIP. D'où la notion de localisation simulée. Si vous choisissez le GPS bluetooth, vous utiliserez le GPS externe sans la correction NTRIP.
 
 ----
@@ -152,7 +145,7 @@ Suite à quelques tests effectués sur plusieurs jours de collecte, en étant si
 
 ![GPS Ardusimple](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple.jpg){: .img-center loading=lazy }
 
-Je vous invite également à consulter [le site du réseau Centipede](https://docs.centipede.fr) pour comprendre l'excellente démarche initiée par l'[INRAE](https://www.inrae.fr/) et les contributeurs. Vous y trouverez des informations pour comprendre le principe de fonctionnement de la géolocalisation RTK, des informations pour créer votre propre station de diffusion de correction NTRIP pour permettre d'augmenter la couverture sur votre territoire et comment créer votre rover de façon plus économique si vous souhaitez davantage "mettre les mains dans le cambouis".
+Je vous invite également à consulter [le site du réseau Centipede](https://docs.centipede.fr) pour comprendre l'excellente démarche initiée par l'[INRAE](https://www.inrae.fr/) et les contributeurs. Vous y trouverez des informations pour comprendre le principe de fonctionnement de la géolocalisation RTK, des informations pour créer votre propre station de diffusion de correction NTRIP pour permettre d'augmenter la couverture sur votre territoire et comment créer votre rover[^1] de façon plus économique si vous souhaitez davantage "mettre les mains dans le cambouis".
 
 Contributions qui pourraient être intéressantes :
 
@@ -169,6 +162,8 @@ L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
 - [Institut Geographique National](https://geodesie.ign.fr/index.php?page=grilles)
 - [Parc naturel régional du golfe du Morbihan](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.parc-golfe-morbihan.bzh/medias/2023/02/UBO_notice_Centipede-RTKsurveyor-2.pdf&ved=2ahUKEwjTo8nL2u__AhXsVaQEHSYeB3wQFnoECA0QAQ&usg=AOvVaw1WYPlWQZnnqtvwUNTzsix_)
 - [U-Blox](https://www.u-blox.com/en/product/ann-mb-series)
+
+[^1]: antenne de réception du signal RTK qualifiée aussi de mobile
 
 ----
 
