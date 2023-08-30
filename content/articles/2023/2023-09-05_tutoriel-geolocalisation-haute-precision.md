@@ -75,7 +75,7 @@ Rien de plus simple :
 
 ## Utilisation
 
-Deux principes pour l'utilisation du gps RTK avec correction en temps réel :
+Deux principes pour l'utilisation du GNSS RTK avec correction en temps réel :
 
 - A : utilisation d'applications de saisie de données contenant une interface pour gérer les corrections en temps réel NTRIP. Par exemple : [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (non payant) ou Map-it  ( add-on NTRIP payant).
 - B : utilisation d'applications de saisie ou de consultation ne prenant pas en charge les corrections en temps réel ([Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), Map-it sans l'add-on, navigateur web...). Dans ce cas, on utilise une application qui va gérer uniquement les corrections NTRIP sans interface cartographique + configuration d'Android pour utiliser le GPS externe avec la correction en temps réel.
