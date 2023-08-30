@@ -104,7 +104,7 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
 
 Le mieux est de disposer d'un smartphone sous Android 11+.
 
-1. Installer une application de géolocalisation prenant en charge les corrections NTRIP. Par exemple : [Lefebure Ntrip client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). A noter que SW Maps est également capable de gérer la localisation simulée.
+1. Installer une application de géolocalisation prenant en charge les corrections NTRIP. Par exemple : [Lefebure Ntrip client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). À noter que SW Maps est également capable de gérer la localisation simulée.
 1. Activer la consommation de données en [arrière plan](https://www.ardusimple.com/question/rtk-fix-location-obtained-in-lefebure-ntrip-client-mock-app-disconnects-when-switching-over-to-mapit-gis-app/) de l'application qui va produire l'information de localisation (NTRIP client, SW Maps). Ceci afin de ne pas avoir le flux de géolocalisation coupé lorsque vous allez switcher sur votre application de saisie ou de consultation.
 1. Activer le mode developpeur de votre smartphone. Pour cela, il faut rechercher sur internet comment activer le mode dévéloppeur pour le modèle de votre appareil. En effet, il peut y avoir quelques différences entre modèles. Généralement, cela consiste simplement en un appui repeté (~ 7 fois) sur un item numéro de build ou de version situé dans les paramètres du téléphone que l'on trouve :
     - Avec Android 10 sans surcouche fabricant : `Paramètres` > `A propos du téléphone` > `Numéro de build`
