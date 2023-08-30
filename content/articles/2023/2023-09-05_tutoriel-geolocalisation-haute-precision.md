@@ -109,7 +109,7 @@ Le mieux est de disposer d'un smartphone sous Android 11+.
 1. Activer le mode developpeur de votre smartphone. Pour cela, il faut rechercher sur internet comment activer le mode dévéloppeur pour le modèle de votre appareil. En effet, il peut y avoir quelques différences entre modèles. Généralement, cela consiste simplement en un appui repeté (~ 7 fois) sur un item numéro de build ou de version situé dans les paramètres du téléphone que l'on trouve :
     - Avec Android 10 sans surcouche fabricant : `Paramètres` > `A propos du téléphone` > `Numéro de build`
     - Avec Android 11 avec surcouche Color OS 11 : `Paramètres` > `A propos du téléphone` > `Version` > `Numéro de version`
-1. Activer la position simulée : l'intitulé est variable selon la version d'Android ( Sélectionner l'application de postion fictive ou encore Enable Mock location) dans le menu " Options développeurs" ( *Paramètres/ Paramètres avancés/ Systeme sous Android 10* ) et choisir l'application que vous aller utiliser pour gérer le geo-positionnement corrigé ( Ntrip client, Swmaps...).
+1. Activer la position simulée : l'intitulé est variable selon la version d'Android (Sélectionner l'application de positon fictive ou encore Enable Mock location) dans le menu " Options développeurs" ( *Paramètres/ Paramètres avancés/ Systeme sous Android 10* ) et choisir l'application que vous aller utiliser pour gérer le geo-positionnement corrigé (Ntrip client, Swmaps...).
 1. Mettre en route le GPS de votre smartphone.
 1. Désactiver, dans les options de contrôle de positionnement d'Android, la recherche wifi et la recherche bluetooth.
 1. Désactiver "améliorer la précision de la localisation" dans l'item précision de la localisation de Google.
