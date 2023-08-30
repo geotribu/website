@@ -117,7 +117,7 @@ Le mieux est de disposer d'un smartphone sous Android 11+.
     sélection de votre équipement de géolocalisation dans la liste des appareils bluetooth disponibles. Ex: GNSS-RTK.
 1. Mettre en route votre application de gestion des corrections NTRIP.
 1. Connecter votre recepteur GPS Bluetooth à l'application de gestion des corrections NTRIP.
-1. Configurer avec les informations disponibles sur l'item NTRIP précédent et cocher la case "Mock location"  pour les applications NTRIP client le proposant (pas nécessaire dans SW Maps).
+1. Configurer avec les informations disponibles sur l'item NTRIP précédent et cocher la case "Mock location" pour les applications NTRIP client le proposant (pas nécessaire dans SW Maps).
 1. Mettre en route votre application de consultation ou de saisie de données ( [Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), navigateur web ...).
 
 !!! Info "A noter pour la méthode B uniquement"
