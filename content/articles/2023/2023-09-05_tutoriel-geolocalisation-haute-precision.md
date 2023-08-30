@@ -146,7 +146,7 @@ Des contraintes sont toutefois à prendre en compte pour avoir une qualité de g
 
 En dehors des conditions optimales d'utilisation, l'ensemble offre tout de même une précison supérieure à la puce GPS d'un téléphone portable.
 
-Ce type de dispositif est vendu comme capable d'obtenir une précision centimétrique. Je n'utilise volontairement pas les termes de précison centimétrique/ décimétrique/submétrique pour qualifier la précision des données collectées.
+Ce type de dispositif est vendu comme capable d'obtenir une précision centimétrique. Je n'utilise volontairement pas les termes de précision centimétrique/décimétrique/submétrique pour qualifier la précision des données collectées.
 
 Suite à quelques tests effectués sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise d'une dizaine de centimètre en latitude et longitude, et une vingtaine de centimètre en altimètrie. Une campagne de tests plus rigoureux et de comparatifs avec des points relevés par un géomètre permettrait d'affiner les qualificatifs à employer!
 
