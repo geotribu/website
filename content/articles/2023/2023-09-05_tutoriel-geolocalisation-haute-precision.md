@@ -71,7 +71,7 @@ Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ e
 
 ## Utilisation du GPS RTK : Deux principes pour gérer les corrections en temps réel
 
-### A. Option avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (non payant) ou Map-it  ( add-on NTRIP payant).
+### A. Option avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (non payant) ou Map-it  ( add-on NTRIP payant)
 
 ![icône SW Maps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sw_maps.webp){: .img-rdp-news-thumb }
 
