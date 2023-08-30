@@ -96,7 +96,7 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
 1. Sélection du fichier `raf20.gtx` dans `Settings/Geoids`.
 1. Renseigner la hauteur d'antenne.
 1. Mesurer au prélable la hauteur de l'ensemble matériel : hauteur de canne + réducteur + platine + [décalage](https://portal.u-blox.com/s/question/0D52p00009AYzYjCAL/difference-between-cfgtmodeecefz-and-cfgtmodeecefzhp) ARP de [l'antenne](https://www.u-blox.com/sites/default/files/documents/ANN-MB_DataSheet_UBX-18049862.pdf)
-1. Connexion du récepteur à l'application:
+1. Connexion du récepteur à l'application :
 1. Sélection de votre équipement de géolocalisation dans la liste des appareils bluetooth disponibles. Ex: GNSS-RTK.
 1. Connexion à un réseau de correction NTRIP : voir plus bas.
 
