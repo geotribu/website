@@ -156,7 +156,7 @@ Je vous invite également à consulter [le site du réseau Centipede](https://do
 
 Contributions qui pourraient être intéressantes :
 
-- A récépteur et conditions identiques, quelles sont les incidences sur la précision du relevé et les capacités de récéption des signaux avec d'autres antennes ?
+- À récepteur et conditions identiques, quelles sont les incidences sur la précision du relevé et les capacités de réception des signaux avec d'autres antennes ?
 - A antenne et conditions identiques, quels résultats sur la précision du relevé  avec un autre fabricant de récepteur à bas coût ZED F9P ( Drotek, Sparkfun) ?
 
 L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
