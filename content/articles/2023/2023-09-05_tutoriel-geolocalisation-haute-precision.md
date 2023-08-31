@@ -26,7 +26,7 @@ tags:
 
 ![icône GPS](https://cdn.geotribu.fr/img/logos-icones/gps.png "icône GPS"){: .img-rdp-news-thumb }
 
-Ce tutoriel rassemble les informations pour obtenir un kit de géolocalisation (Rover[^1]) à haute précision mais à coût limité et le configurer avec son smartphone Android.
+Ce tutoriel rassemble les informations pour obtenir un kit de géolocalisation (Rover[^1]) à haute précision, mais à coût limité et le configurer avec son smartphone Android.
 
 Il s'agit d'une alternative au [projet de création de rover[^1] initié par l'INRAE et ses contributeurs](https://docs.centipede.fr/docs/make_rover/), sans avoir à faire de soudure, et sans production de pièces sur mesure, juste à brancher.
 
@@ -64,7 +64,7 @@ Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ e
 1. Assembler,
 1. Brancher le matériel,
 1. Mettre sous tension,
-1. Activer le bluetooth sur le smartphone,
+1. Activer le Bluetooth sur le smartphone,
 1. Associer le récepteur à votre smartphone.
 
 ----
@@ -86,9 +86,9 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
 1. Installer et démarrer SW Maps
 1. Sélection du fichier `raf20.gtx` dans `Settings/Geoids`.
 1. Renseigner la hauteur d'antenne.
-1. Mesurer au prélable la hauteur de l'ensemble matériel : hauteur de canne + réducteur + platine + [décalage](https://portal.u-blox.com/s/question/0D52p00009AYzYjCAL/difference-between-cfgtmodeecefz-and-cfgtmodeecefzhp) ARP de [l'antenne](https://www.u-blox.com/sites/default/files/documents/ANN-MB_DataSheet_UBX-18049862.pdf)
+1. Mesurer au préalable la hauteur de l'ensemble matériel : hauteur de canne + réducteur + platine + [décalage](https://portal.u-blox.com/s/question/0D52p00009AYzYjCAL/difference-between-cfgtmodeecefz-and-cfgtmodeecefzhp) ARP de [l'antenne](https://www.u-blox.com/sites/default/files/documents/ANN-MB_DataSheet_UBX-18049862.pdf)
 1. Connexion du récepteur à l'application :
-1. Sélection de votre équipement de géolocalisation dans la liste des appareils bluetooth disponibles. Ex: GNSS-RTK.
+1. Sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
 1. Connexion à un réseau de correction NTRIP : voir plus bas.
 
 ### Option avec application tierce et utilisation de la localisation simulée
@@ -104,17 +104,17 @@ Le mieux est de disposer d'un smartphone sous Android 11+.
     - Avec Android 11 avec surcouche Color OS 11 : `Paramètres` > `A propos du téléphone` > `Version` > `Numéro de version`
 1. Activer la position simulée : l'intitulé est variable selon la version d'Android (Sélectionner l'application de positon fictive ou encore Enable Mock location) dans le menu " Options développeurs" ( *Paramètres/ Paramètres avancés/ Systeme sous Android 10* ) et choisir l'application que vous aller utiliser pour gérer le geo-positionnement corrigé (Ntrip client, Swmaps...).
 1. Mettre en route le GPS de votre smartphone.
-1. Désactiver, dans les options de contrôle de positionnement d'Android, la recherche wifi et la recherche bluetooth.
+1. Désactiver, dans les options de contrôle de positionnement d'Android, la recherche wifi et la recherche Bluetooth.
 1. Désactiver "améliorer la précision de la localisation" dans l'item précision de la localisation de Google.
 1. Connexion du récepteur à l'application :
-    sélection de votre équipement de géolocalisation dans la liste des appareils bluetooth disponibles. Ex: GNSS-RTK.
+    sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
 1. Mettre en route votre application de gestion des corrections NTRIP.
-1. Connecter votre recepteur GPS Bluetooth à l'application de gestion des corrections NTRIP.
+1. Connecter votre récepteur GPS Bluetooth à l'application de gestion des corrections NTRIP.
 1. Configurer avec les informations disponibles sur l'item NTRIP précédent et cocher la case "Mock location" pour les applications NTRIP client le proposant (pas nécessaire dans SW Maps).
 1. Mettre en route votre application de consultation ou de saisie de données ( [Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), navigateur web ...).
 
 !!! Info "A noter pour l'option avec application tierce et utilisation de la localisation simulée uniquement"
-    Si l'application vous propose d'utiliser le GPS interne ou le GPS externe, choisir interne puisqu'il s'agit en réalité de votre GPS Bluetooth + la correction NTRIP. D'où la notion de localisation simulée. Si vous choisissez le GPS bluetooth, vous utiliserez le GPS externe sans la correction NTRIP.
+    Si l'application vous propose d'utiliser le GPS interne ou le GPS externe, choisir interne puisqu'il s'agit en réalité de votre GPS Bluetooth + la correction NTRIP. D'où la notion de localisation simulée. Si vous choisissez le GPS Bluetooth, vous utiliserez le GPS externe sans la correction NTRIP.
 
 ----
 
@@ -130,18 +130,18 @@ Exemple de réseau ouvert [centipede](https://docs.centipede.fr/docs/centipede/3
 
 ## Conclusion
 
-Votre équipement, assemblé et configuré, est prêt pour la collecte de données. Cet ensemble offre une très bonne précision dans les meilleures conditions de récéption.
+Votre équipement, assemblé et configuré, est prêt pour la collecte de données. Cet ensemble offre une très bonne précision dans les meilleures conditions de réception.
 
 Des contraintes sont toutefois à prendre en compte pour avoir une qualité de géopositionnement la plus précise possible :
 
-- il est nécessaire d'être dans une zone de récéption de data via le téléphone mobile, et d'être le plus proche possible d'une base de correction NTRIP.
-- Les limitations habituelles de récéption des signaux satellites provoqué par le bati et le couvert végétal s'appliquent également.
+- il est nécessaire d'être dans une zone de réception de data via le téléphone mobile, et d'être le plus proche possible d'une base de correction NTRIP.
+- Les limitations habituelles de réception des signaux satellites provoquées par le bâti et le couvert végétal s'appliquent également.
 
-En dehors des conditions optimales d'utilisation, l'ensemble offre tout de même une précison supérieure à la puce GPS d'un téléphone portable.
+En dehors des conditions optimales d'utilisation, l'ensemble offre tout de même une précision supérieure à la puce GPS d'un téléphone portable.
 
 Ce type de dispositif est vendu comme capable d'obtenir une précision centimétrique. Je n'utilise volontairement pas les termes de précision centimétrique/décimétrique/submétrique pour qualifier la précision des données collectées.
 
-Suite à quelques tests effectués sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise d'une dizaine de centimètre en latitude et longitude, et une vingtaine de centimètre en altimétrie. Une campagne de tests plus rigoureux et de comparatifs avec des points relevés par un géomètre permettrait d'affiner les qualificatifs à employer !
+Suite à quelques tests effectués sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise d'une dizaine de centimètres en latitude et longitude, et une vingtaine de centimètres en altimétrie. Une campagne de tests plus rigoureux et de comparatifs avec des points relevés par un géomètre permettrait d'affiner les qualificatifs à employer !
 
 ![GPS Ardusimple](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple.jpg){: .img-center loading=lazy }
 
@@ -150,7 +150,7 @@ Je vous invite également à consulter [le site du réseau Centipede](https://do
 Contributions qui pourraient être intéressantes :
 
 - À récepteur et conditions identiques, quelles sont les incidences sur la précision du relevé et les capacités de réception des signaux avec d'autres antennes ?
-- À antenne et conditions identiques, quels résultats sur la précision du relevé avec un autre fabricant de récepteur à bas coût ZED F9P ( Drotek, Sparkfun) ?
+- À antenne et conditions identiques, quels résultats sur la précision du relevé avec un autre fabricant de récepteurs à bas coût ZED F9P ( Drotek, Sparkfun) ?
 
 L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
 
