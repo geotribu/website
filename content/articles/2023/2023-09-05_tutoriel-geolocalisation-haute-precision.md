@@ -106,7 +106,7 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
     ```
 
 !!! info "RAF20"
-[Le fichier RAF20 est une grille de conversion altimétrique](https://geodesie.ign.fr/index.php?page=grilles) qui permet de convertir les hauteurs ellipsoïdales en altitudes pour la France continentale.
+    [Le fichier RAF20 est une grille de conversion altimétrique](https://geodesie.ign.fr/index.php?page=grilles) qui permet de convertir les hauteurs ellipsoïdales en altitudes pour la France continentale.
 
 1. Installer et démarrer SW Maps
 1. Sélection du fichier `raf20.gtx` dans `Settings/Geoids`.
