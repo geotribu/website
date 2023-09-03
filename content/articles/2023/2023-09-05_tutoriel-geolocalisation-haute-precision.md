@@ -22,15 +22,34 @@ tags:
 
 :calendar: Date de publication initiale : 5 septembre 2023
 
+## Contexte : Le RTK quésaco ?
+
+> **La cinématique temps réel (Real Time Kinematic, en anglais ou RTK) est une technique de positionnement par satellite** basée sur l'utilisation de mesures de la phase des ondes porteuses des signaux émis par les systèmes GPS, GLONASS ou Galileo. Une station de référence fournit des corrections en temps réel permettant d'atteindre une précision de l'ordre du centimètre. [...]
+
+Elle se distingue des méthodes suivantes moins précises mais adaptées à d'autres usages et notamment la navigation :
+
+- GNSS :  Global Navigation Satellite System, la précision est de l’ordre de 5 m.
+- DGNSS : Differential GNSS, la précision est de l’ordre de 50 cm .
+
+![Schéma RTK Centipede](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/rtk_centipede.jpg){: .img-center loading=lazy }
+
+> [...] Les systèmes RTK utilisent un récepteur fixe (station de base dont la position est connue précisément) et un certain nombre de récepteurs mobiles (aussi appelés rover[^1]). La station de base compare la position calculée à partir du signal GPS et la position réelle, puis réémet les corrections à apporter vers les récepteurs mobiles. Cela permet aux unités mobiles de calculer leur position relative avec une précision de quelques millimètres, bien que leur position absolue soit aussi précise que la position de la station de base. La précision nominale typique pour ces systèmes est de 1 cm horizontalement et 2 cm verticalement. [...]
+
+Extraits [Wikipédia](https://fr.wikipedia.org/wiki/Cinématique_temps_réel)
+
+L'utilisation du RTK est une technique parfaitement adaptée à des applications telles que le guidage de précision (travaux publics, agriculture) ou encore la topographie.
+
+----
+
 ## Introduction
 
 ![icône GPS](https://cdn.geotribu.fr/img/logos-icones/gps.png "icône GPS"){: .img-rdp-news-thumb }
 
-Ce tutoriel rassemble les informations pour obtenir un kit de géolocalisation (Rover[^1]) à haute précision, mais à coût limité et le configurer avec son smartphone Android.
+Dans ce tutoriel, je vous présente un kit de géolocalisation qui m'a permis de créer mobile RTK (ou Rover[^1]), mais à coût limité. Et je vous explique comment le configurer avec un smartphone Android.
 
 Il s'agit d'une alternative au [projet de création de rover[^1] initié par l'INRAE et ses contributeurs](https://docs.centipede.fr/docs/make_rover/), sans avoir à faire de soudure, et sans production de pièces sur mesure, juste à brancher.
 
-A noter que je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et que j'ignore la fiabilité des solutions matérielles ou logicielles choisies.
+:warning: Je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et que j'ignore la fiabilité des solutions matérielles ou logicielles choisies. Cette article a pour seul but de présenter la solution retenue et d'alimenter la réflexion collective sur le sujet.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -42,22 +61,22 @@ A noter que je n'ai pas de préférence pour tel ou tel produit / marque / reven
 Pour une configuration "minimale" :
 
 - smartphone fonctionnant sous Android avec un forfait internet qui permet de télécharger un volume de données (3G/4G/5G).
-- [Kit préconfiguré comprenant le Récepteur RTK ZED F9P avec Bluetooth d'Ardusimple et l'antenne u-blox ANN-MB-00](https://www.ardusimple.com/product/simplertk2blite-bt-case-kit/)
-- [Batterie externe](https://fr.shopping.rakuten.com/offer/buy/8745966944/batterie-de-secours-5000-mah-1-usb-a-max-series-noire-bleue.html?fbbaid=10776957204&t=180177&gclid=EAIaIQobChMIwPSJ37Tv_wIV1pJoCR2QkAP6EAQYAyABEgKZ5fD_BwE) , type recharge pour smartphone, pas trop encombrante pour une alimentation dédiée du récepteur.
-- [Interrupteur](https://m.fr.aliexpress.com/item/1005004055554570.html?pdp_npi=2%40dis%21EUR%215%2C28%E2%82%AC%213%2C59%E2%82%AC%21%21%21%21%21%40211b612816882797560523189ea16c%2112000027880087678%21btf&_t=pvid%3A00fec2bb-2b37-44a1-9765-1ec9059854d9&afTraceInfo=1005004055554570__msite__c_ppc_item_bridge__xxxxxx__1688279756&spm=a2g0n.ppclist.product.0&gatewayAdapt=gloPc2fraMsite) USB avec diode, pour le confort d'utilisation.
+- [Kit préconfiguré comprenant le Récepteur RTK ZED F9P avec Bluetooth d'Ardusimple et l'antenne u-blox ANN-MB-00](https://www.ardusimple.com/product/simplertk2blite-bt-case-kit/). Le kit est prêt à l'emploi, les composants (GPS, Bluetooth,...) ont été packagés pour fonctionner ensemble et faciliter leur utilisation.
+- [Batterie externe de 5000 mAh 1 USB-A](https://fr.shopping.rakuten.com/offer/buy/8745966944/batterie-de-secours-5000-mah-1-usb-a-max-series-noire-bleue.html?fbbaid=10776957204&t=180177&gclid=EAIaIQobChMIwPSJ37Tv_wIV1pJoCR2QkAP6EAQYAyABEgKZ5fD_BwE), type recharge pour smartphone, pas trop encombrante pour une alimentation dédiée du récepteur.
+- [Interrupteur](https://m.fr.aliexpress.com/item/1005004055554570.html?pdp_npi=2%40dis%21EUR%215%2C28%E2%82%AC%213%2C59%E2%82%AC%21%21%21%21%21%40211b612816882797560523189ea16c%2112000027880087678%21btf&_t=pvid%3A00fec2bb-2b37-44a1-9765-1ec9059854d9&afTraceInfo=1005004055554570__msite__c_ppc_item_bridge__xxxxxx__1688279756&spm=a2g0n.ppclist.product.0&gatewayAdapt=gloPc2fraMsite) USB avec diode qui a pour but de permettre l'allumage ou l'extinction du kit.
 
 Pour une configuration "avancée" avec une canne, ajouter :
 
-- [Canne](https://m.fr.aliexpress.com/item/1005004495311018.html?spm=a2g0n.productlist.0.0.60dd6d69RZXJqt&browser_id=16a1a524c6bc47239b3a0e6ec13b3b69&aff_platform=msite&m_page_id=ktanhewysycavbsl18914796bd4b1eeb581d8baa08&gclid=&pdp_npi=3%40dis%21EUR%2135.35%2126.87%21%21%21%21%21%402100bbf516882656491165512d0745%2112000029359608806%21sea%21FR%210&isseo=y&algo_pvid=fccc553b-4c66-483a-80d1-02e03b135c41) télescopique ou à assembler.
+- [Canne](https://m.fr.aliexpress.com/item/1005004495311018.html?spm=a2g0n.productlist.0.0.60dd6d69RZXJqt&browser_id=16a1a524c6bc47239b3a0e6ec13b3b69&aff_platform=msite&m_page_id=ktanhewysycavbsl18914796bd4b1eeb581d8baa08&gclid=&pdp_npi=3%40dis%21EUR%2135.35%2126.87%21%21%21%21%21%402100bbf516882656491165512d0745%2112000029359608806%21sea%21FR%210&isseo=y&algo_pvid=fccc553b-4c66-483a-80d1-02e03b135c41) télescopique ou à assembler qui permet de prendre un point au sol de manière plus précise.
 - [Platine](https://www.sparkfun.com/products/17519) servant de masse et de support pour l'antenne aimantée.
 - [Réducteur](https://www.amazon.fr/dp/B07QGZHY9Q/ref=sspa_mw_detail_0?ie=UTF8&psc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9waG9uZV9kZXRhaWwp13NParams&th=1) 5/8-20 à 1/4-11 pour pouvoir visser la platine sur la canne.
 
-### Le coût global
-
-Pour l'ensemble de géolocalisation, en juin 2023, la dépense est inférieure à 400€ TTC frais de port inclus.  
-Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ en allant chercher les pièces à pied... ou 450€ frais de port compris.
-
 ![GPS Ardusimple - Matériel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple_materiel.jpg){: .img-center loading=lazy }
+
+## Le coût global
+
+Pour l'ensemble de la configuration minimale, en juin 2023, la dépense est inférieure à 400€ TTC frais de port inclus.  
+Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ en allant chercher les pièces à pied... ou 450€ frais de port compris.
 
 ## Les grandes étapes
 
@@ -69,13 +88,16 @@ Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ e
 
 ----
 
-## Utilisation du GPS RTK : Deux principes pour gérer les corrections en temps réel
+## Utilisation du GPS RTK : Deux principes pour gérer les corrections de géopositionnement en temps réel
 
-### A. Option avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (non payant) ou Map-it  ( add-on NTRIP payant)
+### Option avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (gratuit) ou Map-it ( add-on NTRIP payant)
 
 ![icône SW Maps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sw_maps.webp){: .img-rdp-news-thumb }
 
-SW Maps présente l'avantage d'être gratuite et de gérer les corrections en temps réel NTRIP.
+SW Maps présente l'avantage d'être gratuite et de gérer les corrections en temps réel du serveur NTRIP.
+
+!!! info "NTRIP"
+    Un serveur NTRIP est un serveur de diffusion Internet qui effectue la gestion du contrôle d’authentification et mot de passe pour des sources de corrections différentielles [...]. Source [Trimble](https://help.trimblegeospatial.com/TrimbleAccess/latest/fr/GNSS-RTK-NTRIP-server.htm)
 
 1. Ajout du fichier [Raf20](https://www-iuem.univ-brest.fr/pops/attachments/2512) dans le smartphone, dans le répertoire :
 
@@ -120,11 +142,17 @@ Le mieux est de disposer d'un smartphone sous Android 11+.
 
 ## NTRIP : connexion à un réseau de correction
 
-Exemple de réseau ouvert [centipede](https://docs.centipede.fr/docs/centipede/3_connect_caster.html) :
+> Centipède est un réseau collaboratif de bases GNSS RTK. Il vise à fournir un signal de correction RTK libre et ouvert afin de disposer d'une précision centimétrique sur un territoire continu.
+
+Source [Centipede](https://centipede.fr).
+
+Exemple de paramétrage NTRIP pour se connecter au réseau [centipede](https://docs.centipede.fr/docs/centipede/3_connect_caster.html) :
 
 - Nom du réseau : `caster.centipede.fr`
 - Identifiant et mot de passe : laisser vide ou centipede pour les 2 champs
 - Choisir un [point de montage](https://centipede.fr/index.php/view/map/?repository=cent&project=centipede) proche de votre lieu de collecte en consultant la carte des antennes disponibles sur: <https://centipede.fr/index.php/view/map/?repository=cent&project=centipede>.
+
+A noter qu'en France, il existe d'autres réseaux de correction propriétaires qui nécessitent un abonnement payant comme le réseau [Orphéon](https://reseau-orpheon.fr) ou encore [Téria](https://www.reseau-teria.com).
 
 ----
 
@@ -162,8 +190,7 @@ L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
 - [Institut Geographique National](https://geodesie.ign.fr/index.php?page=grilles)
 - [Parc naturel régional du golfe du Morbihan](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.parc-golfe-morbihan.bzh/medias/2023/02/UBO_notice_Centipede-RTKsurveyor-2.pdf&ved=2ahUKEwjTo8nL2u__AhXsVaQEHSYeB3wQFnoECA0QAQ&usg=AOvVaw1WYPlWQZnnqtvwUNTzsix_)
 - [U-Blox](https://www.u-blox.com/en/product/ann-mb-series)
-
-----
+- [Lexique GNSS pour le positionnement - Commission GEOPOS - Groupe de travail GNSS](https://www.aftopo.org/wp-content/uploads/2019/06/ouvrage19.pdf)
 
 [^1]: antenne de réception du signal RTK qualifiée aussi de mobile
 
