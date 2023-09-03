@@ -99,11 +99,14 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
 !!! info "NTRIP"
     Un serveur NTRIP est un serveur de diffusion Internet qui effectue la gestion du contrôle d’authentification et mot de passe pour des sources de corrections différentielles [...]. Source [Trimble](https://help.trimblegeospatial.com/TrimbleAccess/latest/fr/GNSS-RTK-NTRIP-server.htm)
 
-1. Ajout du fichier [Raf20](https://www-iuem.univ-brest.fr/pops/attachments/2512) dans le smartphone, dans le répertoire :
+1. Ajout du fichier [RAF20](https://www-iuem.univ-brest.fr/pops/attachments/2512) dans le smartphone, dans le répertoire :
 
     ```txt
     Stockage du téléphone/Android/media/np.com.softwel.swmaps/geoids
     ```
+
+!!! info "RAF20"
+[Le fichier RAF20 est une grille de conversion altimétrique](https://geodesie.ign.fr/index.php?page=grilles) qui permet de convertir les hauteurs ellipsoïdales en altitudes pour la France continentale.
 
 1. Installer et démarrer SW Maps
 1. Sélection du fichier `raf20.gtx` dans `Settings/Geoids`.
@@ -111,11 +114,11 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
 1. Mesurer au préalable la hauteur de l'ensemble matériel : hauteur de canne + réducteur + platine + [décalage](https://portal.u-blox.com/s/question/0D52p00009AYzYjCAL/difference-between-cfgtmodeecefz-and-cfgtmodeecefzhp) ARP de [l'antenne](https://www.u-blox.com/sites/default/files/documents/ANN-MB_DataSheet_UBX-18049862.pdf)
 1. Connexion du récepteur à l'application :
 1. Sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
-1. Connexion à un réseau de correction NTRIP : voir plus bas.
+1. Connexion à un réseau de correction NTRIP : [voir plus bas](#ntrip-connexion-a-un-reseau-de-correction).
 
 ### Option avec application tierce et utilisation de la localisation simulée
 
-Utilisation d'applications de saisie ou de consultation ne prenant pas en charge les corrections en temps réel ([Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), Map-it sans l'add-on, navigateur web...). Dans ce cas, on utilise une application qui va gérer uniquement les corrections NTRIP sans interface cartographique + configuration d'Android pour utiliser le GPS externe avec la correction en temps réel.
+Utilisation d'applications de saisie ou de consultation ne prenant pas en charge les corrections en temps réel ([Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), Map-it sans l'add-on, navigateur web...). Dans ce cas, on utilise une application qui va gérer uniquement les corrections NTRIP sans interface cartographique ainsi que la configuration d'Android pour utiliser le GPS externe avec la correction en temps réel.
 
 Le mieux est de disposer d'un smartphone sous Android 11+.
 
@@ -142,11 +145,7 @@ Le mieux est de disposer d'un smartphone sous Android 11+.
 
 ## NTRIP : connexion à un réseau de correction
 
-> Centipède est un réseau collaboratif de bases GNSS RTK. Il vise à fournir un signal de correction RTK libre et ouvert afin de disposer d'une précision centimétrique sur un territoire continu.
-
-Source [Centipede](https://centipede.fr).
-
-Exemple de paramétrage NTRIP pour se connecter au réseau [centipede](https://docs.centipede.fr/docs/centipede/3_connect_caster.html) :
+Exemple de [paramétrage NTRIP pour se connecter au réseau collaboratif de bases GNSS RTK centipede]((https://docs.centipede.fr/docs/centipede/3_connect_caster.html) qui vise à fournir un signal de correction RTK libre et ouvert afin de disposer d'une précision centimétrique sur un territoire continu :
 
 - Nom du réseau : `caster.centipede.fr`
 - Identifiant et mot de passe : laisser vide ou centipede pour les 2 champs
