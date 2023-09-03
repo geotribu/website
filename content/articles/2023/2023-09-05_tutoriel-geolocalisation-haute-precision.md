@@ -145,7 +145,7 @@ Le mieux est de disposer d'un smartphone sous Android 11+.
 
 ## NTRIP : connexion à un réseau de correction
 
-Exemple de [paramétrage NTRIP pour se connecter au réseau collaboratif de bases GNSS RTK centipede]((<https://docs.centipede.fr/docs/centipede/3_connect_caster.html>) qui vise à fournir un signal de correction RTK libre et ouvert afin de disposer d'une précision centimétrique sur un territoire continu :
+Exemple de [paramétrage NTRIP pour se connecter au réseau collaboratif de bases GNSS RTK centipede](https://docs.centipede.fr/docs/centipede/3_connect_caster.html) qui vise à fournir un signal de correction RTK libre et ouvert afin de disposer d'une précision centimétrique sur un territoire continu :
 
 - Nom du réseau : `caster.centipede.fr`
 - Identifiant et mot de passe : laisser vide ou centipede pour les 2 champs
