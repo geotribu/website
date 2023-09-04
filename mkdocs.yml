@@ -179,7 +179,6 @@ extra:
     title: Consentement 🍪
     actions:
       - accept
-      - manage
       - reject
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
