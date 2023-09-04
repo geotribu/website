@@ -4,7 +4,8 @@
 # ########## Libraries #############
 # ##################################
 
-# standard library
+# standard lib
+import argparse
 import logging
 from pathlib import Path
 from typing import Literal
@@ -23,6 +24,40 @@ from mkdocs.utils.meta import get_data
 logger = logging.getLogger("mkdocs")
 
 
+# -- CLI --
+parser = argparse.ArgumentParser(
+    prog="MkDocsConfigMerger", description="Merge configuration files.", add_help=True
+)
+parser.add_argument(
+    "-c",
+    "--config-file",
+    dest="output_config_file",
+    type=Path,
+    help="Path to the configuration file to complete. Must exist.",
+    default="mkdocs.yml",
+)
+parser.add_argument(
+    "-i",
+    "--input-folder",
+    dest="input_config_folder",
+    type=Path,
+    help="Path to the folder where to load configurations files to merge. Must exist.",
+    default="./config",
+)
+
+args = parser.parse_args()
+
+output_config_file = args.output_config_file
+input_config_folder = args.input_config_folder
+
+# -- CHECKS --
+
+if not output_config_file.is_file():
+    raise FileNotFoundError(output_config_file)
+if not input_config_folder.is_dir():
+    raise FileNotFoundError(input_config_folder)
+
+
 # ###########################################################################
 # ########## Functions #############
 # ##################################
@@ -31,7 +66,7 @@ logger = logging.getLogger("mkdocs")
 def get_latest_content(
     content_type: Literal["articles", "rdp"],
     count: int = 10,
-    social_card_image_base: str = "https://static.geotribu.fr/assets/images/social/",
+    social_card_image_base: str = "https://geotribu.fr/assets/images/social/",
 ):
     output_contents_list: list[Page] = []
 
@@ -62,7 +97,7 @@ def get_latest_content(
 
 
 # charge la configuration
-with Path("mkdocs.yml").open(mode="r", encoding="UTF8") as in_yaml:
+with output_config_file.open(mode="r", encoding="UTF8") as in_yaml:
     mkdocs_config = yaml_load(in_yaml)
 
 output_dict = {"latest": {"articles": [], "rdp": []}}
@@ -75,7 +110,9 @@ for k in output_dict.get("latest"):
         social_card_image_base=f"{mkdocs_config.get('site_url')}assets/images/social/",
     )
 
-with Path("config/extra_latest.yml").open("w", encoding="UTF-8") as out_file:
+with input_config_folder.joinpath("extra_latest.yml").open(
+    "w", encoding="UTF-8"
+) as out_file:
     yaml.safe_dump(
         output_dict,
         out_file,

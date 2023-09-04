@@ -38,7 +38,7 @@ Je vous présente donc PyQGIS Icons Cheatsheet :
 
 ## Un site tout totomatique
 
-En soi, le site n'est pas bien différent de la page que j'avais publiée ici suite à mon deuxième article ([voir dans Web Archive](https://web.archive.org/web/20211024083001/https://static.geotribu.fr/toc_nav_ignored/qgis_resources_preview_table/)), sinon que les icônes sont à jour par rapport à celles présentes réellement dans QGIS.
+En soi, le site n'est pas bien différent de la page que j'avais publiée ici suite à mon deuxième article ([voir dans Web Archive](https://web.archive.org/web/20211024083001/https://geotribu.fr/toc_nav_ignored/qgis_resources_preview_table/)), sinon que les icônes sont à jour par rapport à celles présentes réellement dans QGIS.
 
 C'est sous le capot que les choses ont changé : tout est automatisé via [un workflow GitHub](https://github.com/geotribu/pyqgis-icons-cheatsheet/blob/main/.github/workflows/deploy.yml), programmé pour s'exécuter tous les mois, déroulant alors le scénario suivant :
 

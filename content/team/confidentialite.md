@@ -106,6 +106,6 @@ Afin de favoriser les échanges constructifs, merci de préférer le [pseudonyma
 {: align=middle }
 
 <!-- Hyperlinks reference -->
-[flux RSS]: https://static.geotribu.fr/feed_rss_created.xml
+[flux RSS]: https://geotribu.fr/feed_rss_created.xml
 [Isso]: https://posativ.org/isso/
 [UTM]: https://fr.wikipedia.org/wiki/Param%C3%A8tres_UTM

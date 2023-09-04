@@ -1,0 +1,13 @@
+glightbox:
+  auto_caption: true
+  caption_position: bottom
+  draggable: true
+  effect: zoom
+  height: auto
+  skip_classes:
+    - img-rdp-news-thumb
+    - emojione
+    - twemoji
+  touchNavigation: true
+  width: 90%
+  zoomable: true

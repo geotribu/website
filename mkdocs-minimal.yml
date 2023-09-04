@@ -6,7 +6,7 @@ site_description: >-
   l'information géographique, les SIG, la cartographie, la représentation des données...
 
 site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
-site_url: !ENV [MKDOCS_SITE_URL, "https://static.geotribu.fr/"]
+site_url: !ENV [MKDOCS_SITE_URL, "https://geotribu.fr/"]
 copyright:
   !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
 
@@ -33,7 +33,7 @@ plugins:
 theme:
   name: "material"
   custom_dir: "./content/theme/"
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  favicon: theme/assets/images/geotribu/logo_geotribu.png
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -43,11 +43,13 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
-  font: false
+  font:
+    code: Ubuntu Mono
+    text: Ubuntu
   icon:
     repo: fontawesome/brands/github-alt
   language: "fr"
-  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"

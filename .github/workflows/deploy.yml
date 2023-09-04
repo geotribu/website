@@ -62,7 +62,8 @@ jobs:
 
       - name: Build static website
         run: |
-          python scripts/050_mkdocs_populate_latest.py
+          geotribu --help > content/toc_nav_ignored/snippets/code/geotribu_cli_help.txt
+          python scripts/050_mkdocs_populate_latest.py -c mkdocs.yml
           python scripts/100_mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
@@ -77,7 +78,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
           path: "build/mkdocs/site"

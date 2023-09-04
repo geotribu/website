@@ -6,7 +6,7 @@ site_description: >-
   l'information géographique, les SIG, la cartographie, la représentation des données...
 
 site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
-site_url: !ENV [MKDOCS_SITE_URL, "https://static.geotribu.fr/"]
+site_url: !ENV [MKDOCS_SITE_URL, "https://geotribu.fr/"]
 copyright:
   !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
 
@@ -40,66 +40,32 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
-  - glightbox:
-      touchNavigation: true
-      effect: zoom
-      width: 90%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - img-rdp-news-thumb
-        - emojione
-        - twemoji
-      auto_caption: true
-      caption_position: bottom
   - minify:
       minify_css: true
       css_files:
         - theme/assets/stylesheets/extra.css
         - theme/assets/stylesheets/homepage.css
-  - rss:
-      abstract_chars_count: 500
-      categories:
-        - categories
-        - tags
-      comments_path: "#__comments"
-      date_from_meta:
-        as_creation: "date"
-        as_update: false
-        datetime_format: "%Y-%m-%d %H:%M"
-        default_timezone: Europe/Paris
-        default_time: "14:00"
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
-      image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-      length: 50
-      match_path: "(articles|rdp)/.*"
-      url_parameters:
-        utm_source: "rss-feed"
-        utm_medium: "RSS"
-        utm_campaign: "feed-syndication"
   - search:
       lang: fr
   - macros:
       include_dir: content/toc_nav_ignored/snippets
   - tags:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
+  - termynal
 
 # Theme
 theme:
   name: "material"
   custom_dir: "./content/theme/"
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
+  favicon: theme/assets/images/geotribu/logo_geotribu.png
 
   features:
     - content.action.edit
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - navigation.prune
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -107,11 +73,13 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-  font: false
+  font:
+    code: Ubuntu Mono
+    text: Ubuntu
   icon:
     repo: fontawesome/brands/github-alt
   language: fr
-  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -188,6 +156,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde

@@ -50,9 +50,7 @@ Ensuite, la commande pour lancer MapSCII dans le terminal sous Linux ou MacOS es
 telnet mapscii.me
 ```
 
-<!-- markdownlint-disable MD033 -->
-<script id="asciicast-117813" src="https://asciinema.org/a/117813.js" async></script>
-<!-- markdownlint-enable MD033 -->
+[![asciicast](https://asciinema.org/a/117813.svg)](https://asciinema.org/a/117813)
 
 ### Windows
 
