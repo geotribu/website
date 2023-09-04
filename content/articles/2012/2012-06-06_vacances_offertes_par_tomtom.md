@@ -14,7 +14,7 @@ tags:
 
 :calendar: Date de publication initiale : 06 juin 2012
 
-![Logo TomTom](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/logo_tomtom.png "TomTom"){: .img-rdp-news-thumb }
+![Logo TomTom](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/tomtom.webp "TomTom"){: .img-rdp-news-thumb }
 
 Bon d'accord j'avoue, j'ai un peu menti sur le titre car il ne s'agit pas tout à fait de vacances. Mais bon, quand on voit les destinations proposées, je signe de suite. En effet, TomTom est à la recherche de conducteurs pour relever le réseau routier de cinq îles paradisiaques : Fidji, Sainte-Lucie, l'île Maurice, Cap-Vert et les Seychelles. Vous hésitez encore ? Et si je vous disais qu'en plus de cela TomTom vous offre également la coquette somme de 10 000€. Cela laisse de quoi acheter quelques cocktails les doigts de pied bien calés dans le sable non ?
 
