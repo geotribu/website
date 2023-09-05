@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: "2023-09-05 10:20"
+date: "2023-09-07 10:20"
 description: Tutoriel de montage d'un kit de géolocalisation à haute précision (rover RTK) à coût limité, sans avoir à faire de soudure ni production de pièces sur mesure, juste à brancher. Variante du tutoriel de l'INRAE (projet Centipede).
 icon: material/satellite-uplink
 image:
@@ -18,9 +18,9 @@ tags:
     - RTK
 ---
 
-# Tutoriel : monter un kit de géolocalisation à haute précision (rover RTK)
+# Tutoriel : monter un kit de géolocalisation à haute précision (mobile/rover RTK)
 
-:calendar: Date de publication initiale : 5 septembre 2023
+:calendar: Date de publication initiale : 7 septembre 2023
 
 ## Contexte : Le RTK quésaco ?
 
@@ -97,7 +97,7 @@ Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ e
 SW Maps présente l'avantage d'être gratuite et de gérer les corrections en temps réel du serveur NTRIP.
 
 !!! info "NTRIP"
-    Un serveur NTRIP est un serveur de diffusion Internet qui effectue la gestion du contrôle d’authentification et mot de passe pour des sources de corrections différentielles [...]. Source [Trimble](https://help.trimblegeospatial.com/TrimbleAccess/latest/fr/GNSS-RTK-NTRIP-server.htm)
+    Un serveur NTRIP est un serveur de diffusion Internet qui effectue la gestion du contrôle d’authentification et un mot de passe pour des sources de corrections différentielles [...]. Source [Trimble](https://help.trimblegeospatial.com/TrimbleAccess/latest/fr/GNSS-RTK-NTRIP-server.htm)
 
 1. Ajout du fichier [RAF20](https://www-iuem.univ-brest.fr/pops/attachments/2512) dans le smartphone, dans le répertoire :
 
@@ -129,7 +129,7 @@ Le mieux est de disposer d'un smartphone sous Android 11+.
     - Avec Android 11 avec surcouche Color OS 11 : `Paramètres` > `A propos du téléphone` > `Version` > `Numéro de version`
 1. Activer la position simulée : l'intitulé est variable selon la version d'Android (Sélectionner l'application de positon fictive ou encore Enable Mock location) dans le menu " Options développeurs" ( *Paramètres/ Paramètres avancés/ Systeme sous Android 10* ) et choisir l'application que vous aller utiliser pour gérer le geo-positionnement corrigé (Ntrip client, Swmaps...).
 1. Mettre en route le GPS de votre smartphone.
-1. Désactiver, dans les options de contrôle de positionnement d'Android, la recherche wifi et la recherche Bluetooth.
+1. Dans les options de contrôle de positionnement d'Android, désactiver la recherche wifi et la recherche Bluetooth.
 1. Désactiver "améliorer la précision de la localisation" dans l'item précision de la localisation de Google.
 1. Connexion du récepteur à l'application :
     sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
@@ -180,6 +180,9 @@ Contributions qui pourraient être intéressantes :
 - À antenne et conditions identiques, quels résultats sur la précision du relevé avec un autre fabricant de récepteurs à bas coût ZED F9P ( Drotek, Sparkfun) ?
 
 L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
+
+!!! info "Remerciement"
+    Merci à [Florian](/team/fbor/), pour la contextualisation du tutoriel.
 
 ## Sources
 
