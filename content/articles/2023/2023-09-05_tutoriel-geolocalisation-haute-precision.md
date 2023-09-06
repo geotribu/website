@@ -90,7 +90,18 @@ Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ e
 
 ## Utilisation du GPS RTK : Deux principes pour gérer les corrections de géopositionnement en temps réel
 
-### Option avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (gratuit) ou Map-it ( add-on NTRIP payant)
+```mermaid
+graph TD
+    A[GPS RTK] <--> |Communication<br>Bluetooh| R(Téléphone)
+    R --> |Demande<br>les corrections| D[Serveur NTRIP]<-->J[Station fixe]
+    D --> |Transmet<br>les corrections| R
+    R --- T{Corrections}
+    T --> B(Option1:<br>App. avec gestion <br>des corrections RTK)-->Z(Géo-potisionnement centimétrique temps réel)
+    T --> C(Option2:<br>App. de simulation GPS <br>avec gestion des corrections RTK)
+    C --> |Lecture des coordonnées RTK| G(App. carto)-->Z
+```
+
+### Option 1 avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (gratuit) ou Map-it ( add-on NTRIP payant)
 
 ![icône SW Maps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sw_maps.webp){: .img-rdp-news-thumb }
 
@@ -116,7 +127,7 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
 1. Sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
 1. Connexion à un réseau de correction NTRIP : [voir plus bas](#ntrip-connexion-a-un-reseau-de-correction).
 
-### Option avec application tierce et utilisation de la localisation simulée
+### Option 2 avec application tierce et utilisation de la localisation simulée
 
 Utilisation d'applications de saisie ou de consultation ne prenant pas en charge les corrections en temps réel ([Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), Map-it sans l'add-on, navigateur web...). Dans ce cas, on utilise une application qui va gérer uniquement les corrections NTRIP sans interface cartographique ainsi que la configuration d'Android pour utiliser le GPS externe avec la correction en temps réel.
 
@@ -127,7 +138,11 @@ Le mieux est de disposer d'un smartphone sous Android 11+.
 1. Activer le mode développeur de votre smartphone. Pour cela, il faut rechercher sur internet comment activer le mode développeur pour le modèle de votre appareil. En effet, il peut y avoir quelques différences entre modèles. Généralement, cela consiste simplement en un appui répété (~ 7 fois) sur un item numéro de build ou de version situé dans les paramètres du téléphone que l'on trouve :
     - Avec Android 10 sans surcouche fabricant : `Paramètres` > `A propos du téléphone` > `Numéro de build`
     - Avec Android 11 avec surcouche Color OS 11 : `Paramètres` > `A propos du téléphone` > `Version` > `Numéro de version`
-1. Activer la position simulée : l'intitulé est variable selon la version d'Android (Sélectionner l'application de positon fictive ou encore Enable Mock location) dans le menu " Options développeurs" ( *Paramètres/ Paramètres avancés/ Systeme sous Android 10* ) et choisir l'application que vous aller utiliser pour gérer le geo-positionnement corrigé (Ntrip client, Swmaps...).
+
+!!! Info "Mode développeur"
+    Le mode développeur permet d'accéder à certains paramètres avancés généralement dissimulés sur la plupart des appareils mobiles car plutôt orientés pour les développeurs. Il n'y a pas de risque particulier à activer ce mode.
+
+1. Activer la position simulée : l'intitulé est variable selon la version d'Android (Sélectionner l'application de positon fictive ou encore Enable Mock location) dans le menu "Options développeurs" ( *Paramètres/ Paramètres avancés/ Systeme sous Android 10* ) et choisir l'application que vous aller utiliser pour gérer le geo-positionnement corrigé (Ntrip client, Swmaps...).
 1. Mettre en route le GPS de votre smartphone.
 1. Dans les options de contrôle de positionnement d'Android, désactiver la recherche wifi et la recherche Bluetooth.
 1. Désactiver "améliorer la précision de la localisation" dans l'item précision de la localisation de Google.
