@@ -45,11 +45,11 @@ L'utilisation du RTK est une technique parfaitement adaptée à des applications
 
 ![icône GPS](https://cdn.geotribu.fr/img/logos-icones/gps.png "icône GPS"){: .img-rdp-news-thumb }
 
-Dans ce tutoriel, je vous présente un kit de géolocalisation qui m'a permis de créer mobile RTK (ou Rover[^1]), mais à coût limité. Et je vous explique comment le configurer avec un smartphone Android.
+Ce tutoriel présente un kit de géolocalisation permettant de créer un mobile RTK (ou Rover[^1]), mais à coût limité. Il est également expliqué comment le configurer avec un smartphone fonctionnant avec Android.
 
 Il s'agit d'une alternative au [projet de création de rover[^1] initié par l'INRAE et ses contributeurs](https://docs.centipede.fr/docs/make_rover/), sans avoir à faire de soudure, et sans production de pièces sur mesure, juste à brancher.
 
-:warning: Je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et que j'ignore la fiabilité des solutions matérielles ou logicielles choisies. Cette article a pour seul but de présenter la solution retenue et d'alimenter la réflexion collective sur le sujet.
+:warning: Je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et j'ignore la fiabilité des solutions matérielles ou logicielles choisies. Cet article a simplement pour but de partager une démarche et eventuellement d'alimenter la réflexion collective sur le sujet.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -168,7 +168,7 @@ En dehors des conditions optimales d'utilisation, l'ensemble offre tout de même
 
 Ce type de dispositif est vendu comme capable d'obtenir une précision centimétrique. Je n'utilise volontairement pas les termes de précision centimétrique/décimétrique/submétrique pour qualifier la précision des données collectées.
 
-Suite à quelques tests effectués sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise d'une dizaine de centimètres en latitude et longitude, et une vingtaine de centimètres en altimétrie. Une campagne de tests plus rigoureux et de comparatifs avec des points relevés par un géomètre permettrait d'affiner les qualificatifs à employer !
+Suite à une serie de relevés d'un unique point sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise de 6 centimètres en latitude et de 3 cm en longitude, et de 10 centimètres en altimétrie. Une campagne de tests plus rigoureux et de comparatifs avec des points relevés par un géomètre permettrait d'affiner les qualificatifs à employer !
 
 ![GPS Ardusimple](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple.jpg){: .img-center loading=lazy }
 
