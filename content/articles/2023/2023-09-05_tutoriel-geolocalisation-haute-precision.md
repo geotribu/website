@@ -96,7 +96,7 @@ graph TD
     R --> |Demande<br>les corrections| D[Serveur NTRIP]<-->J[Station fixe]
     D --> |Transmet<br>les corrections| R
     R --- T{Corrections}
-    T --> B(Option1:<br>App. avec gestion <br>des corrections RTK)-->Z(Géo-potisionnement centimétrique temps réel)
+    T --> B(Option1:<br>App. carto avec gestion <br>des corrections RTK)-->Z(Géopositionnement centimétrique temps réel)
     T --> C(Option2:<br>App. de simulation GPS <br>avec gestion des corrections RTK)
     C --> |Lecture des coordonnées RTK| G(App. carto)-->Z
 ```
