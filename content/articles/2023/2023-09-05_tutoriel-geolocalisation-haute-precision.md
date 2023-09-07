@@ -92,7 +92,7 @@ Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ e
 
 ```mermaid
 graph TD
-    A[GPS RTK] <--> |Communication<br>Bluetooh| R(Téléphone)
+    A[GPS RTK] <--> |Communication<br>Bluetooth| R(Téléphone)
     R --> |Demande<br>les corrections| D[Serveur NTRIP]<-->J[Station fixe]
     D --> |Transmet<br>les corrections| R
     R --- T{Corrections}
@@ -183,7 +183,9 @@ En dehors des conditions optimales d'utilisation, l'ensemble offre tout de même
 
 Ce type de dispositif est vendu comme capable d'obtenir une précision centimétrique. Je n'utilise volontairement pas les termes de précision centimétrique/décimétrique/submétrique pour qualifier la précision des données collectées.
 
-Suite à une serie de relevés d'un unique point sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise de 6 centimètres en latitude et de 3 cm en longitude, et de 10 centimètres en altimétrie. Une campagne de tests plus rigoureux et de comparatifs avec des points relevés par un géomètre permettrait d'affiner les qualificatifs à employer !
+Une évaluation de la qualité du RTK Centipède a été réalisée par la Chambre d'agricultures de la Somme, estimant les résultats similaires à ceux du réseau de correction Oprhéon. ([Lien vers l'article](https://hautsdefrance.chambre-agriculture.fr/fileadmin/user_upload/Hauts-de-France/171_Inst-Hauts-de-France/10-Actualites/2021/Rapport_qualite_Centipede_CA80.pdf))
+
+Suite à une série de relevés d'un unique point sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise de 6 centimètres en latitude et de 3 cm en longitude, et de 10 centimètres en altimétrie. Une campagne de tests plus rigoureux et de comparatifs avec des points relevés par un géomètre permettrait d'affiner les qualificatifs à employer.
 
 ![GPS Ardusimple](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple.jpg){: .img-center loading=lazy }
 
