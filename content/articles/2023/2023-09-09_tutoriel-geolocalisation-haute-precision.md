@@ -95,7 +95,8 @@ Pour exploiter les corrections de géopositionnement, 2 options sont envisageabl
 ```mermaid
 graph TD
     A[GPS RTK] --> |Communication<br>Bluetooth| R(Téléphone)
-    R --> |Demande<br>les corrections| D[Serveur NTRIP] <-- J[Station fixe]
+    R --> |Demande<br>les corrections| D[Serveur NTRIP] --> J[Station fixe]
+    J[Station fixe] --> D
     D --> |Transmet<br>les corrections| R
     R --> |Corrections| B(Option1:<br>App. carto avec gestion <br>des corrections RTK) --> Z(Géopositionnement centimétrique temps réel)
     R --> |Corrections| C(Option2:<br>App. de simulation GPS <br>avec gestion des corrections RTK)
