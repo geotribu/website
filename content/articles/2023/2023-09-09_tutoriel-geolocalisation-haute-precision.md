@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: "2023-09-07 10:20"
+date: "2023-09-09 10:20"
 description: Tutoriel de montage d'un kit de géolocalisation à haute précision (rover RTK) à coût limité, sans avoir à faire de soudure ni production de pièces sur mesure, juste à brancher. Variante du tutoriel de l'INRAE (projet Centipede).
 icon: material/satellite-uplink
 image:
@@ -20,7 +20,7 @@ tags:
 
 # Tutoriel : monter un kit de géolocalisation à haute précision (mobile/rover RTK)
 
-:calendar: Date de publication initiale : 7 septembre 2023
+:calendar: Date de publication initiale : 9 septembre 2023
 
 ## Contexte : Le RTK quésaco ?
 
@@ -58,7 +58,7 @@ Il s'agit d'une alternative au [projet de création de rover initié par l'INRAE
 
 ## Le matériel
 
-Pour une configuration "complète" avec une canne :
+Pour une configuration "complète" :
 
 1. Smartphone fonctionnant sous Android avec un forfait Internet qui permet de télécharger un volume de données (3G/4G/5G).
 1. [Kit préconfiguré comprenant le Récepteur RTK ZED F9P avec Bluetooth d'Ardusimple et l'antenne u-blox ANN-MB-00](https://www.ardusimple.com/product/simplertk2blite-bt-case-kit/). Le kit est prêt à l'emploi, les composants (GPS, Bluetooth,...) ont été packagés pour fonctionner ensemble et faciliter leur utilisation.
@@ -71,7 +71,7 @@ Pour une configuration "complète" avec une canne :
 ![GPS Ardusimple - Matériel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple_materiel.jpg){: .img-center loading=lazy }
 
 !!! info "Configuration minimale"
-    Une configuration "minimale" est possible en ne faisant l'acquisition en faisant l'impasse sur les trois derniers éléments : canne, platine et réducteur.
+    Une configuration "minimale" est possible en faisant l'impasse sur les trois derniers éléments : canne, platine et réducteur.
 
 ## Le coût global
 
@@ -151,7 +151,7 @@ L'idéal est de disposer d'une version d'Android relativement récente.
 1. Connexion du récepteur à l'application : sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
 1. Mettre en route votre application de gestion des corrections NTRIP.
 1. Connecter votre récepteur GPS Bluetooth à l'application de gestion des corrections NTRIP.
-1. Configurer avec les informations disponibles dans la partie NTRIP détaillée plus bas et cocher la case "Mock location" pour les applications NTRIP client le proposant (pas nécessaire dans SW Maps).
+1. Configurer avec les informations disponibles dans la partie NTRIP détaillée [plus bas](#ntrip-connexion-a-un-reseau-de-correction) et cocher la case `Mock location` pour les applications NTRIP client le proposant (pas nécessaire dans SW Maps).
 1. Mettre en route votre application de consultation ou de saisie de données ( [Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), navigateur web ...).
 
 !!! Info "A noter pour l'option avec application tierce et utilisation de la localisation simulée uniquement"
@@ -161,11 +161,11 @@ L'idéal est de disposer d'une version d'Android relativement récente.
 
 ## NTRIP : connexion à un réseau de correction
 
-Exemple de [paramétrage NTRIP pour se connecter au réseau collaboratif de bases GNSS RTK centipede](https://docs.centipede.fr/docs/centipede/3_connect_caster.html) qui vise à fournir un signal de correction RTK libre et ouvert afin de disposer d'une précision centimétrique sur un territoire continu :
+On vous propose un exemple de [paramétrage NTRIP pour se connecter au réseau collaboratif de bases GNSS RTK centipede](https://docs.centipede.fr/docs/centipede/3_connect_caster.html) qui vise à fournir un signal de correction RTK libre et ouvert afin de disposer d'une précision centimétrique sur un territoire continu :
 
 - Nom du réseau : `caster.centipede.fr`
-- Identifiant et mot de passe : laisser vide ou centipede pour les 2 champs
-- Choisir un [point de montage](https://centipede.fr/index.php/view/map/?repository=cent&project=centipede) proche de votre lieu de collecte en consultant la carte des antennes disponibles sur: <https://centipede.fr/index.php/view/map/?repository=cent&project=centipede>.
+- Identifiant et mot de passe : laisser vide ou `centipede` pour les 2 champs
+- Choisir un [point de montage](https://centipede.fr/index.php/view/map/?repository=cent&project=centipede) proche de votre lieu de collecte en consultant la [carte des antennes disponibles](https://centipede.fr/index.php/view/map/?repository=cent&project=centipede).
 
 A noter qu'en France, il existe d'autres réseaux de correction propriétaires qui nécessitent un abonnement payant comme le réseau [Orphéon](https://reseau-orpheon.fr) ou encore [Téria](https://www.reseau-teria.com).
 
