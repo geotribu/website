@@ -58,20 +58,20 @@ Il s'agit d'une alternative au [projet de création de rover initié par l'INRAE
 
 ## Le matériel
 
-Pour une configuration "minimale" :
+Pour une configuration "complète" avec une canne :
 
 1. Smartphone fonctionnant sous Android avec un forfait Internet qui permet de télécharger un volume de données (3G/4G/5G).
 1. [Kit préconfiguré comprenant le Récepteur RTK ZED F9P avec Bluetooth d'Ardusimple et l'antenne u-blox ANN-MB-00](https://www.ardusimple.com/product/simplertk2blite-bt-case-kit/). Le kit est prêt à l'emploi, les composants (GPS, Bluetooth,...) ont été packagés pour fonctionner ensemble et faciliter leur utilisation.
 1. [Batterie externe de 5000 mAh 1 USB-A](https://fr.shopping.rakuten.com/offer/buy/8745966944/batterie-de-secours-5000-mah-1-usb-a-max-series-noire-bleue.html?fbbaid=10776957204&t=180177&gclid=EAIaIQobChMIwPSJ37Tv_wIV1pJoCR2QkAP6EAQYAyABEgKZ5fD_BwE), type recharge pour smartphone, pas trop encombrante pour une alimentation dédiée du récepteur.
 1. [Interrupteur](https://m.fr.aliexpress.com/item/1005004055554570.html?pdp_npi=2%40dis%21EUR%215%2C28%E2%82%AC%213%2C59%E2%82%AC%21%21%21%21%21%40211b612816882797560523189ea16c%2112000027880087678%21btf&_t=pvid%3A00fec2bb-2b37-44a1-9765-1ec9059854d9&afTraceInfo=1005004055554570__msite__c_ppc_item_bridge__xxxxxx__1688279756&spm=a2g0n.ppclist.product.0&gatewayAdapt=gloPc2fraMsite) USB avec diode qui a pour but de permettre l'allumage ou l'extinction du kit.
-
-    Pour une configuration "avancée" avec une canne, ajouter :
-
 1. [Canne](https://m.fr.aliexpress.com/item/1005004495311018.html?spm=a2g0n.productlist.0.0.60dd6d69RZXJqt&browser_id=16a1a524c6bc47239b3a0e6ec13b3b69&aff_platform=msite&m_page_id=ktanhewysycavbsl18914796bd4b1eeb581d8baa08&gclid=&pdp_npi=3%40dis%21EUR%2135.35%2126.87%21%21%21%21%21%402100bbf516882656491165512d0745%2112000029359608806%21sea%21FR%210&isseo=y&algo_pvid=fccc553b-4c66-483a-80d1-02e03b135c41) télescopique ou à assembler qui permet de prendre un point au sol de manière plus précise.
 1. [Platine](https://www.sparkfun.com/products/17519) servant de masse et de support pour l'antenne aimantée.
 1. [Réducteur](https://www.amazon.fr/dp/B07QGZHY9Q/ref=sspa_mw_detail_0?ie=UTF8&psc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9waG9uZV9kZXRhaWwp13NParams&th=1) 5/8-20 à 1/4-11 pour pouvoir visser la platine sur la canne.
 
 ![GPS Ardusimple - Matériel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple_materiel.jpg){: .img-center loading=lazy }
+
+!!! info "Configuration minimale"
+    Une configuration "minimale" est possible en ne faisant l'acquisition en faisant l'impasse sur les trois derniers éléments : canne, platine et réducteur.
 
 ## Le coût global
 
@@ -113,11 +113,11 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
 
 1. Ajout du fichier [RAF20](https://www-iuem.univ-brest.fr/pops/attachments/2512) dans le smartphone, dans le répertoire :
 
-    :information_source: [Le fichier RAF20 est une grille de conversion altimétrique](https://geodesie.ign.fr/index.php?page=grilles) qui permet de convertir les hauteurs ellipsoïdales en altitudes pour la France continentale.
-
     ```txt
     Stockage du téléphone/Android/media/np.com.softwel.swmaps/geoids
     ```
+
+    :information_source: [Le fichier RAF20 est une grille de conversion altimétrique](https://geodesie.ign.fr/index.php?page=grilles) qui permet de convertir les hauteurs ellipsoïdales en altitudes pour la France continentale.
 
 1. Installer et démarrer SW Maps
 1. Sélectionner du fichier `raf20.gtx` dans `Settings/Geoids`.
