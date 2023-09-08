@@ -31,7 +31,7 @@ Elle se distingue des méthodes suivantes moins précises mais adaptées à d'au
 - GNSS :  Global Navigation Satellite System, la précision est de l’ordre de 5 m.
 - DGNSS : Differential GNSS, la précision est de l’ordre de 50 cm .
 
-![Schéma RTK Centipede](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/rtk_centipede.jpg){: .img-center loading=lazy }
+![Schéma RTK Centipede](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/rtk.jpg){: .img-center loading=lazy }
 
 > [...] Les systèmes RTK utilisent un récepteur fixe (station de base dont la position est connue précisément) et un certain nombre de récepteurs mobiles (aussi appelés rover[^1]). La station de base compare la position calculée à partir du signal GPS et la position réelle, puis réémet les corrections à apporter vers les récepteurs mobiles. Cela permet aux unités mobiles de calculer leur position relative avec une précision de quelques millimètres, bien que leur position absolue soit aussi précise que la position de la station de base. La précision nominale typique pour ces systèmes est de 1 cm horizontalement et 2 cm verticalement. [...]
 
@@ -45,9 +45,9 @@ L'utilisation du RTK est une technique parfaitement adaptée à des applications
 
 ![icône GPS](https://cdn.geotribu.fr/img/logos-icones/gps.png "icône GPS"){: .img-rdp-news-thumb }
 
-Ce tutoriel présente un kit de géolocalisation permettant de créer un mobile RTK (ou Rover[^1]), mais à coût limité. Il est également expliqué comment le configurer avec un smartphone fonctionnant avec Android.
+Ce tutoriel présente un kit de géolocalisation permettant de créer un mobile RTK (ou rover[^1]) à coût limité. Il est également expliqué comment le configurer avec un smartphone fonctionnant avec Android.
 
-Il s'agit d'une alternative au [projet de création de rover[^1] initié par l'INRAE et ses contributeurs](https://docs.centipede.fr/docs/make_rover/), sans avoir à faire de soudure, et sans production de pièces sur mesure, juste à brancher.
+Il s'agit d'une alternative au [projet de création de rover initié par l'INRAE et ses contributeurs](https://docs.centipede.fr/docs/make_rover/), sans avoir à faire de soudure, et sans production de pièces sur mesure, juste à brancher.
 
 :warning: Je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et j'ignore la fiabilité des solutions matérielles ou logicielles choisies. Cet article a simplement pour but de partager une démarche et eventuellement d'alimenter la réflexion collective sur le sujet.
 
@@ -60,16 +60,16 @@ Il s'agit d'une alternative au [projet de création de rover[^1] initié par l'I
 
 Pour une configuration "minimale" :
 
-- smartphone fonctionnant sous Android avec un forfait internet qui permet de télécharger un volume de données (3G/4G/5G).
-- [Kit préconfiguré comprenant le Récepteur RTK ZED F9P avec Bluetooth d'Ardusimple et l'antenne u-blox ANN-MB-00](https://www.ardusimple.com/product/simplertk2blite-bt-case-kit/). Le kit est prêt à l'emploi, les composants (GPS, Bluetooth,...) ont été packagés pour fonctionner ensemble et faciliter leur utilisation.
-- [Batterie externe de 5000 mAh 1 USB-A](https://fr.shopping.rakuten.com/offer/buy/8745966944/batterie-de-secours-5000-mah-1-usb-a-max-series-noire-bleue.html?fbbaid=10776957204&t=180177&gclid=EAIaIQobChMIwPSJ37Tv_wIV1pJoCR2QkAP6EAQYAyABEgKZ5fD_BwE), type recharge pour smartphone, pas trop encombrante pour une alimentation dédiée du récepteur.
-- [Interrupteur](https://m.fr.aliexpress.com/item/1005004055554570.html?pdp_npi=2%40dis%21EUR%215%2C28%E2%82%AC%213%2C59%E2%82%AC%21%21%21%21%21%40211b612816882797560523189ea16c%2112000027880087678%21btf&_t=pvid%3A00fec2bb-2b37-44a1-9765-1ec9059854d9&afTraceInfo=1005004055554570__msite__c_ppc_item_bridge__xxxxxx__1688279756&spm=a2g0n.ppclist.product.0&gatewayAdapt=gloPc2fraMsite) USB avec diode qui a pour but de permettre l'allumage ou l'extinction du kit.
+1. Smartphone fonctionnant sous Android avec un forfait Internet qui permet de télécharger un volume de données (3G/4G/5G).
+1. [Kit préconfiguré comprenant le Récepteur RTK ZED F9P avec Bluetooth d'Ardusimple et l'antenne u-blox ANN-MB-00](https://www.ardusimple.com/product/simplertk2blite-bt-case-kit/). Le kit est prêt à l'emploi, les composants (GPS, Bluetooth,...) ont été packagés pour fonctionner ensemble et faciliter leur utilisation.
+1. [Batterie externe de 5000 mAh 1 USB-A](https://fr.shopping.rakuten.com/offer/buy/8745966944/batterie-de-secours-5000-mah-1-usb-a-max-series-noire-bleue.html?fbbaid=10776957204&t=180177&gclid=EAIaIQobChMIwPSJ37Tv_wIV1pJoCR2QkAP6EAQYAyABEgKZ5fD_BwE), type recharge pour smartphone, pas trop encombrante pour une alimentation dédiée du récepteur.
+1. [Interrupteur](https://m.fr.aliexpress.com/item/1005004055554570.html?pdp_npi=2%40dis%21EUR%215%2C28%E2%82%AC%213%2C59%E2%82%AC%21%21%21%21%21%40211b612816882797560523189ea16c%2112000027880087678%21btf&_t=pvid%3A00fec2bb-2b37-44a1-9765-1ec9059854d9&afTraceInfo=1005004055554570__msite__c_ppc_item_bridge__xxxxxx__1688279756&spm=a2g0n.ppclist.product.0&gatewayAdapt=gloPc2fraMsite) USB avec diode qui a pour but de permettre l'allumage ou l'extinction du kit.
 
 Pour une configuration "avancée" avec une canne, ajouter :
 
-- [Canne](https://m.fr.aliexpress.com/item/1005004495311018.html?spm=a2g0n.productlist.0.0.60dd6d69RZXJqt&browser_id=16a1a524c6bc47239b3a0e6ec13b3b69&aff_platform=msite&m_page_id=ktanhewysycavbsl18914796bd4b1eeb581d8baa08&gclid=&pdp_npi=3%40dis%21EUR%2135.35%2126.87%21%21%21%21%21%402100bbf516882656491165512d0745%2112000029359608806%21sea%21FR%210&isseo=y&algo_pvid=fccc553b-4c66-483a-80d1-02e03b135c41) télescopique ou à assembler qui permet de prendre un point au sol de manière plus précise.
-- [Platine](https://www.sparkfun.com/products/17519) servant de masse et de support pour l'antenne aimantée.
-- [Réducteur](https://www.amazon.fr/dp/B07QGZHY9Q/ref=sspa_mw_detail_0?ie=UTF8&psc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9waG9uZV9kZXRhaWwp13NParams&th=1) 5/8-20 à 1/4-11 pour pouvoir visser la platine sur la canne.
+5. [Canne](https://m.fr.aliexpress.com/item/1005004495311018.html?spm=a2g0n.productlist.0.0.60dd6d69RZXJqt&browser_id=16a1a524c6bc47239b3a0e6ec13b3b69&aff_platform=msite&m_page_id=ktanhewysycavbsl18914796bd4b1eeb581d8baa08&gclid=&pdp_npi=3%40dis%21EUR%2135.35%2126.87%21%21%21%21%21%402100bbf516882656491165512d0745%2112000029359608806%21sea%21FR%210&isseo=y&algo_pvid=fccc553b-4c66-483a-80d1-02e03b135c41) télescopique ou à assembler qui permet de prendre un point au sol de manière plus précise.
+1. [Platine](https://www.sparkfun.com/products/17519) servant de masse et de support pour l'antenne aimantée.
+1. [Réducteur](https://www.amazon.fr/dp/B07QGZHY9Q/ref=sspa_mw_detail_0?ie=UTF8&psc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9waG9uZV9kZXRhaWwp13NParams&th=1) 5/8-20 à 1/4-11 pour pouvoir visser la platine sur la canne.
 
 ![GPS Ardusimple - Matériel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple_materiel.jpg){: .img-center loading=lazy }
 
@@ -81,23 +81,24 @@ Si on ajoute le matériel pour créer une "canne d'arpentage", toujours 400€ e
 ## Les grandes étapes
 
 1. Assembler,
-1. Brancher le matériel,
-1. Mettre sous tension,
-1. Activer le Bluetooth sur le smartphone,
-1. Associer le récepteur à votre smartphone.
+1. brancher le matériel,
+1. mettre sous tension,
+1. activer le Bluetooth sur le smartphone,
+1. associer le récepteur à votre smartphone.
 
 ----
 
 ## Utilisation du GPS RTK : Deux principes pour gérer les corrections de géopositionnement en temps réel
+
+Pour exploiter les corrections de géopositionnement, 2 options sont envisageables.
 
 ```mermaid
 graph TD
     A[GPS RTK] <--> |Communication<br>Bluetooth| R(Téléphone)
     R --> |Demande<br>les corrections| D[Serveur NTRIP]<-->J[Station fixe]
     D --> |Transmet<br>les corrections| R
-    R --- T{Corrections}
-    T --> B(Option1:<br>App. carto avec gestion <br>des corrections RTK)-->Z(Géopositionnement centimétrique temps réel)
-    T --> C(Option2:<br>App. de simulation GPS <br>avec gestion des corrections RTK)
+    R --> |Corrections| B(Option1:<br>App. carto avec gestion <br>des corrections RTK)-->Z(Géopositionnement centimétrique temps réel)
+    R --> |Corrections| C(Option2:<br>App. de simulation GPS <br>avec gestion des corrections RTK)
     C --> |Lecture des coordonnées RTK| G(App. carto)-->Z
 ```
 
@@ -108,7 +109,7 @@ graph TD
 SW Maps présente l'avantage d'être gratuite et de gérer les corrections en temps réel du serveur NTRIP.
 
 !!! info "NTRIP"
-    Un serveur NTRIP est un serveur de diffusion Internet qui effectue la gestion du contrôle d’authentification et un mot de passe pour des sources de corrections différentielles [...]. Source [Trimble](https://help.trimblegeospatial.com/TrimbleAccess/latest/fr/GNSS-RTK-NTRIP-server.htm)
+    Un serveur NTRIP est un serveur qui permet d'accéder aux données de correction à apporter aux récepteurs mobiles.
 
 1. Ajout du fichier [RAF20](https://www-iuem.univ-brest.fr/pops/attachments/2512) dans le smartphone, dans le répertoire :
 
@@ -119,42 +120,46 @@ SW Maps présente l'avantage d'être gratuite et de gérer les corrections en te
 !!! info "RAF20"
     [Le fichier RAF20 est une grille de conversion altimétrique](https://geodesie.ign.fr/index.php?page=grilles) qui permet de convertir les hauteurs ellipsoïdales en altitudes pour la France continentale.
 
-1. Installer et démarrer SW Maps
-1. Sélection du fichier `raf20.gtx` dans `Settings/Geoids`.
-1. Renseigner la hauteur d'antenne.
+2. Installer et démarrer SW Maps
+1. Sélectionner du fichier `raf20.gtx` dans `Settings/Geoids`.
 1. Mesurer au préalable la hauteur de l'ensemble matériel : hauteur de canne + réducteur + platine + [décalage](https://portal.u-blox.com/s/question/0D52p00009AYzYjCAL/difference-between-cfgtmodeecefz-and-cfgtmodeecefzhp) ARP de [l'antenne](https://www.u-blox.com/sites/default/files/documents/ANN-MB_DataSheet_UBX-18049862.pdf)
-1. Connexion du récepteur à l'application :
-1. Sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
-1. Connexion à un réseau de correction NTRIP : [voir plus bas](#ntrip-connexion-a-un-reseau-de-correction).
+1. Renseigner la hauteur d'antenne.
+1. Connecter le récepteur à l'application.
+1. Sélectionner votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
+1. Se connecter à un réseau de correction NTRIP : [voir plus bas](#ntrip-connexion-a-un-reseau-de-correction).
 
 ### Option 2 avec application tierce et utilisation de la localisation simulée
 
-Utilisation d'applications de saisie ou de consultation ne prenant pas en charge les corrections en temps réel ([Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), Map-it sans l'add-on, navigateur web...). Dans ce cas, on utilise une application qui va gérer uniquement les corrections NTRIP sans interface cartographique ainsi que la configuration d'Android pour utiliser le GPS externe avec la correction en temps réel.
+Pour ce deuxième point nous allons vous présenter l'utilisation d'applications de saisie ou de consultation ne prenant pas en charge les corrections en temps réel ([Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), Map-it sans l'add-on, navigateur web...). Dans ce cas, on utilise une application qui va gérer uniquement les corrections NTRIP sans interface cartographique ainsi que la configuration d'Android pour utiliser le GPS externe avec la correction en temps réel.
 
-Le mieux est de disposer d'un smartphone sous Android 11+.
+L'idéal est de disposer d'une version d'Android relativement récente.
 
-1. Installer une application de géolocalisation prenant en charge les corrections NTRIP. Par exemple : [Lefebure Ntrip client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). À noter que SW Maps est également capable de gérer la localisation simulée.
+1. Installer une application de géolocalisation prenant en charge les corrections NTRIP. Par exemple : [Lefebure NTRIP client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). À noter que SW Maps est également capable de gérer la localisation simulée.
 1. Activer la consommation de données en [arrière-plan](https://www.ardusimple.com/question/rtk-fix-location-obtained-in-lefebure-ntrip-client-mock-app-disconnects-when-switching-over-to-mapit-gis-app/) de l'application qui va produire l'information de localisation (NTRIP client, SW Maps). Ceci afin de ne pas avoir le flux de géolocalisation coupé lorsque vous allez basculer sur votre application de saisie ou de consultation.
-1. Activer le mode développeur de votre smartphone. Pour cela, il faut rechercher sur internet comment activer le mode développeur pour le modèle de votre appareil. En effet, il peut y avoir quelques différences entre modèles. Généralement, cela consiste simplement en un appui répété (~ 7 fois) sur un item numéro de build ou de version situé dans les paramètres du téléphone que l'on trouve :
+
+1. Activer le mode développeur de votre smartphone. Pour cela, il faut rechercher sur Internet comment activer le mode développeur pour le modèle de votre appareil. En effet, il peut y avoir quelques différences entre modèles. Généralement, cela consiste simplement en un appui répété (~ 7 fois) sur un item numéro de build ou de version situé dans les paramètres du téléphone que l'on trouve :
     - Avec Android 10 sans surcouche fabricant : `Paramètres` > `A propos du téléphone` > `Numéro de build`
     - Avec Android 11 avec surcouche Color OS 11 : `Paramètres` > `A propos du téléphone` > `Version` > `Numéro de version`
 
 !!! Info "Mode développeur"
     Le mode développeur permet d'accéder à certains paramètres avancés généralement dissimulés sur la plupart des appareils mobiles car plutôt orientés pour les développeurs. Il n'y a pas de risque particulier à activer ce mode.
 
-1. Activer la position simulée : l'intitulé est variable selon la version d'Android (Sélectionner l'application de positon fictive ou encore Enable Mock location) dans le menu "Options développeurs" ( *Paramètres/ Paramètres avancés/ Systeme sous Android 10* ) et choisir l'application que vous aller utiliser pour gérer le geo-positionnement corrigé (Ntrip client, Swmaps...).
-1. Mettre en route le GPS de votre smartphone.
+4. Activer la position simulée : l'intitulé est variable selon la version d'Android (Sélectionner l'application de positon fictive ou encore Enable Mock location) dans le menu "Options développeurs" ( *Paramètres/ Paramètres avancés/ Systeme sous Android 10* ) et choisir l'application que vous allez utiliser pour gérer le geo-positionnement corrigé (NTRIP client, Swmaps...).
+
+![Configuration](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/config_android.jpg){: .img-center loading=lazy }
+
+5. Mettre en route le GPS de votre smartphone.
 1. Dans les options de contrôle de positionnement d'Android, désactiver la recherche wifi et la recherche Bluetooth.
 1. Désactiver "améliorer la précision de la localisation" dans l'item précision de la localisation de Google.
 1. Connexion du récepteur à l'application :
     sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
 1. Mettre en route votre application de gestion des corrections NTRIP.
 1. Connecter votre récepteur GPS Bluetooth à l'application de gestion des corrections NTRIP.
-1. Configurer avec les informations disponibles sur l'item NTRIP précédent et cocher la case "Mock location" pour les applications NTRIP client le proposant (pas nécessaire dans SW Maps).
+1. Configurer avec les informations disponibles dans la partie NTRIP détaillée plus bas et cocher la case "Mock location" pour les applications NTRIP client le proposant (pas nécessaire dans SW Maps).
 1. Mettre en route votre application de consultation ou de saisie de données ( [Qfield](https://qfield.org/), [Locus](https://www.locusgis.com/), navigateur web ...).
 
 !!! Info "A noter pour l'option avec application tierce et utilisation de la localisation simulée uniquement"
-    Si l'application vous propose d'utiliser le GPS interne ou le GPS externe, choisir interne puisqu'il s'agit en réalité de votre GPS Bluetooth + la correction NTRIP. D'où la notion de localisation simulée. Si vous choisissez le GPS Bluetooth, vous utiliserez le GPS externe sans la correction NTRIP.
+    Si l'application vous propose d'utiliser le GPS interne ou le GPS externe, choisissez interne puisqu'il s'agit en réalité de votre GPS Bluetooth + la correction NTRIP. D'où la notion de localisation simulée. Si vous choisissez le GPS Bluetooth, vous utiliserez le GPS externe sans la correction NTRIP.
 
 ----
 
@@ -174,7 +179,7 @@ A noter qu'en France, il existe d'autres réseaux de correction propriétaires q
 
 Votre équipement, assemblé et configuré, est prêt pour la collecte de données. Cet ensemble offre une très bonne précision dans les meilleures conditions de réception.
 
-Des contraintes sont toutefois à prendre en compte pour avoir une qualité de géopositionnement la plus précise possible :
+Des contraintes sont toutefois à prendre en compte pour avoir un géopositionnement le plus précis possible :
 
 - il est nécessaire d'être dans une zone de réception de data via le téléphone mobile, et d'être le plus proche possible d'une base de correction NTRIP.
 - Les limitations habituelles de réception des signaux satellites provoquées par le bâti et le couvert végétal s'appliquent également.
@@ -185,7 +190,7 @@ Ce type de dispositif est vendu comme capable d'obtenir une précision centimét
 
 Une évaluation de la qualité du RTK Centipède a été réalisée par la Chambre d'agricultures de la Somme, estimant les résultats similaires à ceux du réseau de correction Oprhéon. ([Lien vers l'article](https://hautsdefrance.chambre-agriculture.fr/fileadmin/user_upload/Hauts-de-France/171_Inst-Hauts-de-France/10-Actualites/2021/Rapport_qualite_Centipede_CA80.pdf))
 
-Suite à une série de relevés d'un unique point sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise de 6 centimètres en latitude et de 3 cm en longitude, et de 10 centimètres en altimétrie. Une campagne de tests plus rigoureux et de comparatifs avec des points relevés par un géomètre permettrait d'affiner les qualificatifs à employer.
+Suite à une série de relevés d'un unique point sur plusieurs jours de collecte, en étant situé à une dizaine de kilomètres d'une base, je constate une distribution des points relevés sur une emprise de 6 centimètres en latitude et de 3 cm en longitude, et de 10 centimètres en altimétrie. Une campagne de tests plus rigoureux et des comparatifs avec des points relevés par un géomètre permettraient d'affiner les qualificatifs à employer.
 
 ![GPS Ardusimple](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/GPS_ardusimple.jpg){: .img-center loading=lazy }
 
