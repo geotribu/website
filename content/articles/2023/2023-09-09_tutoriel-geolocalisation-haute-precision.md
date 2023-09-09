@@ -142,7 +142,7 @@ L'idéal est de disposer d'une version d'Android relativement récente.
 
     :information_source: Le mode développeur permet d'accéder à certains paramètres avancés généralement dissimulés sur la plupart des appareils mobiles car plutôt orientés pour les développeurs. Il n'y a pas de risque particulier à activer ce mode.
 
-1. Activer la position simulée : l'intitulé est variable selon la version d'Android (Sélectionner l'application de positon fictive ou encore Enable Mock location) dans le menu "Options développeurs" ( *Paramètres/ Paramètres avancés/ Systeme sous Android 10* ) et choisir l'application que vous allez utiliser pour gérer le geo-positionnement corrigé (NTRIP client, Swmaps...).
+1. Activer la position simulée : l'intitulé est variable selon la version d'Android (Sélectionner l'application de positon fictive ou encore `Enable Mock location`) dans le menu `Options développeurs` ( `Paramètres` > `Paramètres avancés` > `Systeme sous Android 10` ) et choisir l'application que vous allez utiliser pour gérer le geo-positionnement corrigé (NTRIP client, Swmaps...).
 
     ![Configuration](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/config_android.jpg){: .img-center loading=lazy }
 
@@ -151,7 +151,7 @@ L'idéal est de disposer d'une version d'Android relativement récente.
 
     ![Configuration de la localisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/config_localisation.jpeg){: .img-center loading=lazy }
 
-1. Désactiver "améliorer la précision de la localisation" dans l'item précision de la localisation de Google.
+1. Désactiver `Améliorer la précision de la localisation` dans l'item `Précision de la localisation de Google`.
 1. Connexion du récepteur à l'application : sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
 1. Mettre en route votre application de gestion des corrections NTRIP.
 1. Connecter votre récepteur GPS Bluetooth à l'application de gestion des corrections NTRIP.
