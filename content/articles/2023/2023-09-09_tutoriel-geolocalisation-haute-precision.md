@@ -148,10 +148,10 @@ L'idéal est de disposer d'une version d'Android relativement récente.
 
 1. Mettre en route le GPS de votre smartphone.
 1. Dans les options de contrôle de positionnement d'Android, désactiver la recherche wifi et la recherche Bluetooth.
-1. Désactiver "améliorer la précision de la localisation" dans l'item précision de la localisation de Google.
 
     ![Configuration de la localisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/config_localisation.jpeg){: .img-center loading=lazy }
 
+1. Désactiver "améliorer la précision de la localisation" dans l'item précision de la localisation de Google.
 1. Connexion du récepteur à l'application : sélection de votre équipement de géolocalisation dans la liste des appareils Bluetooth disponibles. Ex: GNSS-RTK.
 1. Mettre en route votre application de gestion des corrections NTRIP.
 1. Connecter votre récepteur GPS Bluetooth à l'application de gestion des corrections NTRIP.
