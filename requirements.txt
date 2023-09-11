@@ -7,7 +7,7 @@ wheel
 
 # Development
 # -----------------------
-geotribu>=0.25,<1
+geotribu>=0.29,<1
 pre-commit>=3,<3.4
 
 # Project requirements
@@ -27,5 +27,3 @@ termynal>=0.10,<1
 # social plugin requirements
 CairoSVG>=2.5,<3
 Pillow>=9.4,<10.1
-
-lxml>=4.9.3 # TEMPORAIRE, voir https://github.com/ojacques/mkdocs-git-committers-plugin-2/issues/32
