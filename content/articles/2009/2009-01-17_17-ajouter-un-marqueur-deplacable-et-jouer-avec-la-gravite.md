@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2009-01-17 10:20
 description: "17. Ajouter un marqueur déplaçable et jouer avec la gravité"
 tags:

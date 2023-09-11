@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-06-04
 description: "GeoServer bientôt en version 2.0"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-01
 description: "Coup de flippe et réflexion sur l'API Google Maps"
 tags:

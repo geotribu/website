@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-12-01
 description: "Cartographier le monde avec des outils libres"
 tags:

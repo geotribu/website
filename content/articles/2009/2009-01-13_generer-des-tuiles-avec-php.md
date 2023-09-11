@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-01-13
 description: "Générer des tuiles avec PHP"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-10-28
 description: "gvSIG Mini, une application SIG pour votre téléphone portable"
 tags:

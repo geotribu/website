@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2009-02-15 10:20
 description: "Exemple des différentes sources de données utilisables par MapServer"
 tags:

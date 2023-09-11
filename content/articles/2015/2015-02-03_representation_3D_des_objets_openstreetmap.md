@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2015-02-03
 description: "Représentation en 3D des objets d'OpenStreetMap"
 tags:

@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: "2022-07-11 20:00"
 description: "Comment faire des cartes à la mode de Joy Division avec les générateurs de géométrie de QGIS"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/cover.jpeg"

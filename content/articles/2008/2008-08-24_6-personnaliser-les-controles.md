@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-08-24
 description: "6. Personnaliser les contrôles"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-08-18
 description: "CartONG organise en Septembre son second forum GeONG"
 tags:

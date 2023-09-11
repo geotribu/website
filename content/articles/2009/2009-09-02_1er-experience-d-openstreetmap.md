@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-02
 description: "1er experience d'OpenStreetMap"
 tags:

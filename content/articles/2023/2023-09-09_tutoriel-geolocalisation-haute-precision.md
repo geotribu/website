@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: "2023-09-09 10:20"
 description: Tutoriel de montage d'un kit de géolocalisation à haute précision (rover RTK) à coût limité, sans avoir à faire de soudure ni production de pièces sur mesure, juste à brancher. Variante du tutoriel de l'INRAE (projet Centipede).
 icon: material/satellite-uplink

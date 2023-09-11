@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-16
 description: "MSCompanion, l'éditeur WYSIWYG de MapFile"
 tags:

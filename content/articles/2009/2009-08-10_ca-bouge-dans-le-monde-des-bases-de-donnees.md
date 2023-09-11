@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-10
 description: "Ça bouge dans le monde des bases de données"
 tags:

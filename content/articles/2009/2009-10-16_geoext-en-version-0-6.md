@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-10-16
 description: "GeoExt en version 0.6"
 tags:

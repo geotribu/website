@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2013-02-25
 description: "Du web, des socquettes et de la carto"
 tags:

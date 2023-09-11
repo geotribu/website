@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2010-09-03
 description: "Créer et diffuser des services WMS avec QGIS"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_net.png"

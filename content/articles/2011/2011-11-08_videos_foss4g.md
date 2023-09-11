@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-11-08
 description: "Videos du FOSS4G par thème"
 tags:

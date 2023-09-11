@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: "2021-05-28 15:00"
 description: "Un rendu carte topographique avec QGIS et la BD TOPO®"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_carte_topo_bdtopo/export_carte_topo_saussines.png"

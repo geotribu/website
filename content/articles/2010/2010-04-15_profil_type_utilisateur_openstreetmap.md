@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-04-15
 description: "Profil type d'un utilisateur d'OpenStreetMap"
 tags:

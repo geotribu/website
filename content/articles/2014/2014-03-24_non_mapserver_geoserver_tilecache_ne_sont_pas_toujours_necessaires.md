@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2014-03-24
 description: "Non, MapServer, GeoServer, TileCache & co ne sont pas toujours nécessaires"
 tags:

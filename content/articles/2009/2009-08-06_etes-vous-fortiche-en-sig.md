@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-06
 description: "Êtes-vous fortiche en SIG ?"
 tags:

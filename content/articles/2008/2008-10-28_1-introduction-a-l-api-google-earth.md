@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2008-10-28 10:20
 description: "1. Introduction à l'API Google Earth"
 image: ''

@@ -4,6 +4,7 @@ authors:
   - Jean-Marc Viglino
 categories:
   - article
+comments: true
 date: 2020-04-13 10:30
 description: "😷 Confiné chez soi ? Alors embarquez pour une chasse aux œufs de Pâques virtuels sur le Géoportail de l'IGN et Minecraft 🥚🎀🐓."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/oeufs_paques_cartes/easter_egg_geoportail_search_oeuf.png"

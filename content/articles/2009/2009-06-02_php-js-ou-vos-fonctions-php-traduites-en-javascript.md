@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-06-02
 description: "PHP.JS ou vos fonctions PHP traduites en JavaScript"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-05-13
 description: "GeoExt passe en version 0.7"
 tags:

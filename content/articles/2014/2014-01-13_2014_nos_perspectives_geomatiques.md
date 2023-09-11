@@ -4,6 +4,7 @@ authors:
     - Thomas GRATIER
 categories:
     - article
+comments: true
 date: 2014-01-13
 description: "2014, nos prospectives géomatiques"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-11
 description: "Linux sans contrainte grace à VirtualBox"
 tags:

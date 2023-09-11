@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-06-15
 description: "A la découverte de Leaflet, une nouvelle librairie cartographique en Javascript."
 image: "https://leafletjs.com/docs/images/logo.png"

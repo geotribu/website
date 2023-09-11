@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-11-20 10:20
 description: "Le WebMapping de demain : WFS et WPS"
 image: ''

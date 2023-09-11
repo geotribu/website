@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-05-25
 description: "Le partage de l'information publique vu par les Etats-unis"
 tags:

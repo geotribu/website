@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2014-04-29
 description: "De l'acquisition à la visualisation d'images prises à partir d'un drone"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-08-25
 description: "Interroger GeoServer en Python grâce à gsconfig"
 tags:

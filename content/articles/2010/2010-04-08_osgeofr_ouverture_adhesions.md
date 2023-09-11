@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-04-08
 description: "OSGEO-fr ouverture des adhésions"
 tags:

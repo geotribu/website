@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-08-22
 description: "4. Introduction sur les polylignes"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-14
 description: "OpenLayers en application et essor du monde de l'OpenSource"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-11-29
 description: "La Géomatique Open Source : de la cartographie à la néogéographie"
 tags:

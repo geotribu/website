@@ -5,6 +5,7 @@ authors:
     - Julien MOURA
 categories:
     - article
+comments: true
 date: "2023-03-24 18:20"
 description: "Pour faciliter le travail d'intégration des icônes de QGIS par les développeurs de plugins, j'ai automatisé la génération et la mise à jour d'un site web : PyQGIS Icons Cheatsheet."
 image: https://pyqgis-icons-cheatsheet.geotribu.fr/assets/images/social/index.png

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-12-20
 description: "iOS 4.2 - carte et accéléromètre"
 tags:

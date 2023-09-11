@@ -4,6 +4,7 @@ authors:
     - Jérémie ORY
 categories:
     - article
+comments: true
 date: 2014-08-05
 description: "Généralisation de niveaux intermédiaires dans une pyramide d’échelles"
 license: default

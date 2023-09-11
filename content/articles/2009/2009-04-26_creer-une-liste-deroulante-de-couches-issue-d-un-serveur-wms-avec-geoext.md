@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2009-04-26 10:20
 description: "Créer une liste déroulante de couches issue d'un serveur WMS avec GeoExt"
 tags:

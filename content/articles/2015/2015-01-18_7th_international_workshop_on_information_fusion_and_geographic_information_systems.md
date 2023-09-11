@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2015-01-18
 description: "7th International Workshop on Information Fusion and Geographic Information Systems: Deep Virtualization for Mobile GIS  (IF&GIS’ 2015)"
 tags:

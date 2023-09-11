@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-11-17 10:20
 description: "13. Ajouter la couche StreetView"
 image: ''

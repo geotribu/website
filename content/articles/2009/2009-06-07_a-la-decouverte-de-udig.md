@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-06-07
 description: "A la découverte d'uDig"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/udig/udig_splash_screen.png"

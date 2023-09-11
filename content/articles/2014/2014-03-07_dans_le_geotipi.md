@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2014-03-07
 description: "Comment ça se passe dans le (Geo)Tipi ?"
 tags:

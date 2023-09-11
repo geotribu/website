@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-07-21
 description: "iBiclou : OpenData, webmapping et vélo"
 tags:

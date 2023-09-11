@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2015-01-11
 description: "OpenStreetMap ce n'est pas (qu') une carte"
 tags:

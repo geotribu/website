@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-15
 description: "YQL Geo Library, la localisation facilement"
 tags:

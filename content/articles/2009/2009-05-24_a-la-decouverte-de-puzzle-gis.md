@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-05-24
 description: "A la découverte de Puzzle GIS"
 tags:

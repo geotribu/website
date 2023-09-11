@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-03-23
 description: "A la découverte de Spatialite"
 tags:

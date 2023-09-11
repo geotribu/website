@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2010-07-15
 description: "Modélisation d'une base de données avec SQL Power Architect"
 tags:

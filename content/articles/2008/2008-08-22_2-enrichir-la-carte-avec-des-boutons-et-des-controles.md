@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-08-22
 description: "2. Enrichir la carte avec des boutons et des contrôles"
 tags:

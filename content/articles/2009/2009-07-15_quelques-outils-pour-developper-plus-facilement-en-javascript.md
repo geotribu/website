@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-15
 description: "Quelques outils pour développer plus facilement en JavaScript"
 tags:

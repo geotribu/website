@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-01-24
 description: "PolyMaps une alternative à OpenLayers"
 tags:

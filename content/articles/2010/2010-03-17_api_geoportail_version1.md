@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-17
 description: "L'API du GéoPortail passe en version 1.0"
 tags:

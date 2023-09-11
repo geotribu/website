@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-02
 description: "Les ETL spatiaux OpenSource, à pieds joints dans l'informatique GéoDécisionnelle "
 tags:

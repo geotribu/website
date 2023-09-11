@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-12-15 10:20
 description: "Afficher des tooltips (infobulles) sur des objets [part 3]"
 image: ''

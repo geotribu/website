@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-12-29
 description: "L'équipe de GéoTribu"
 tags:

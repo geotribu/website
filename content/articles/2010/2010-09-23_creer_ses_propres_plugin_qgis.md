@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-09-23
 description: "Créer ses propres plugins pour QGIS"
 tags:

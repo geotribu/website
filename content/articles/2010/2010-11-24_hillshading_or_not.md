@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-11-24
 description: "Hillshading or not ..."
 tags:

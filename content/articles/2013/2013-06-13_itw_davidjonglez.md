@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2013-06-13 10:20
 description: "Interview de David JONGLEZ"
 tags:

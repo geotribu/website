@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-04
 description: "Sortie de QGIS 1.2.0 'Daphnis'"
 tags:

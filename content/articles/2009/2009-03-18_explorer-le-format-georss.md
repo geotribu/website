@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-18
 description: "Explorer le format GeoRSS"
 tags:

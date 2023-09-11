@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2009-05-24 10:20
 description: "Créer et enrichir une barre d'outils avec OpenLayers"
 tags:

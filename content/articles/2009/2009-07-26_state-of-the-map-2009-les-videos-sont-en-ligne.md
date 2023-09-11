@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-26
 description: "State Of The Map 2009, les vidéos sont en ligne"
 tags:

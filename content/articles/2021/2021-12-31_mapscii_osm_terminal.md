@@ -4,6 +4,7 @@ authors:
     - Jérémy Garniaux
 categories:
     - article
+comments: true
 date: "2021-12-31 13:00"
 description: "Présentation de MapSCII, une application Node.js permettant de naviguer dans un version ASCII d'OpenStreetMap depuis le terminal."
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_0.png

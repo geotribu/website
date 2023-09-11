@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2015-02-04
 description: "Sortie du livre 'OpenLayers 3: beginner&apos;s guide' auquel deux membres de Geotribu ont contribué à rédiger et relire"
 tags:

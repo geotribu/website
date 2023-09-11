@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-07-05
 description: "Open Data: Des paroles aux actes"
 tags:

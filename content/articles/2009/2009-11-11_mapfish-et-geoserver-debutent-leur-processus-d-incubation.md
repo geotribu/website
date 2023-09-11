@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-11
 description: "MapFish et GeoServer débutent leur processus d'incubation"
 tags:

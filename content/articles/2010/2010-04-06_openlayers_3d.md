@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-04-06
 description: "OpenLayers en 3D"
 tags:

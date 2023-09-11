@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-06-06
 description: "Des vacances tous frais payés offertes par TomTom"
 tags:

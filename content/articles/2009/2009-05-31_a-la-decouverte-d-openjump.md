@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-05-31
 description: "A la découverte d'OpenJump"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-15
 description: "Les évolutions du Web de demain, HTML 5 et CSS 3"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Julien MOURA
 categories:
     - article
+comments: true
 date: 2013-09-26
 description: "Installer Python et GDAL sous Windows"
 tags:
