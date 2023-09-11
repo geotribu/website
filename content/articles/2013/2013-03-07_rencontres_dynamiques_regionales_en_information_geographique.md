@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2013-03-07
 description: "7èmes Rencontres des dynamiques régionales en Information Géographique"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-26
 description: "A la découverte d'OrbisGIS"
 tags:

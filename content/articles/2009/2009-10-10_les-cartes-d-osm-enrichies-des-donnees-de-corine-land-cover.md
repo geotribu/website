@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-10-10
 description: "Les cartes d'OSM enrichies des données de Corine Land Cover"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-12-11
 description: "Google Gears est mort longue vie au HTML5"
 tags:

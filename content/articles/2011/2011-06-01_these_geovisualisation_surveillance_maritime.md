@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-06-01
 description: "Offre de thèse : Contribution de la géovisualisation à la surveillance maritime"
 tags:

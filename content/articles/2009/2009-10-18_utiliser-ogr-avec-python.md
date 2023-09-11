@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2009-10-18 10:20
 description: "Utiliser OGR avec python"
 tags:

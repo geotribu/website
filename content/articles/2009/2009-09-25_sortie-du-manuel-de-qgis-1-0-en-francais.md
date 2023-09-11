@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-25
 description: "Sortie du manuel de QGis 1.0 en français"
 tags:

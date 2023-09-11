@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-02-02
 description: "Ski, iPhone et cartographie"
 tags:

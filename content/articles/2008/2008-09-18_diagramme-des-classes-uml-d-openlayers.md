@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-09-18 10:20
 description: "Diagramme des classes (UML) d'OpenLayers"
 tags:

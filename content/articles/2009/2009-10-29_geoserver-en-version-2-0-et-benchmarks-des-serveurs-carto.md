@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-10-29
 description: "GeoServer en version 2.0 et Benchmarks des serveurs carto"
 tags:

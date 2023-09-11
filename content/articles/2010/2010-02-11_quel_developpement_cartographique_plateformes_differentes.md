@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-02-11
 description: "Quel développement cartographique pour des plateformes différentes ?"
 tags:

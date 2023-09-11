@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-04-17
 description: "Calcul de buffer sous MySQL - 2ème partie - la pratique"
 tags:

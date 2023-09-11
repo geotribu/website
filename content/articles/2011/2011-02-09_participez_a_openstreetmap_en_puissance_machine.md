@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-02-09
 description: "Participez à OpenStreetMap en offrant un peu de puissance machine"
 tags:

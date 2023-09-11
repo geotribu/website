@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2014-01-01
 description: "2013 dans le GéoRétro, 2014 en ligne de mire."
 tags:

@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2014-05-05
 description: "Le plein d'eBooks pour 10$ avec Packt Publishing"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-01-26
 description: "Interview de David Jonglez, co-fondateur de Camptocamp"
 tags:

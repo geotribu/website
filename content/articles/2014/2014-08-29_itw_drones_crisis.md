@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2014-08-20 11:20
 description: "Interview de Drones Crisis"
 tags:

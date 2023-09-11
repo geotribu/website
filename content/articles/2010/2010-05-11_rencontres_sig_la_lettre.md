@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-05-11
 description: "Les rencontres SIG la lettre, un événement réussi"
 tags:

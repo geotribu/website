@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-06-10
 description: "Revue de l'ouvrage OpenLayers 2.10 Beginner's Guide"
 tags:

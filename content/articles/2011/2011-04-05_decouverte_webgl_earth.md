@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-04-05
 description: "A la découverte de WebGL Earth"
 tags:

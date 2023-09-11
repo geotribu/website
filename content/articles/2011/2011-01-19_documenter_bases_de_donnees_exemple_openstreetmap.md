@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-01-19
 description: "Documenter vos bases de données : exemple avec OpenStreetMap"
 tags:

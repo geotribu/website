@@ -6,6 +6,7 @@ authors:
     - Julien MOURA
 categories:
     - article
+comments: true
 date: 2023-07-25 10:20
 description: "Mémo technique : comment récupérer la version de PROJ installée depuis un script Python, avec GDAL, PyProj ou le binaire proj."
 image:

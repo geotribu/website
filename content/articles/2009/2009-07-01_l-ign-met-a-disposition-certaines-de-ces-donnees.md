@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-01
 description: "L'IGN met à disposition certaines de ces données"
 tags:

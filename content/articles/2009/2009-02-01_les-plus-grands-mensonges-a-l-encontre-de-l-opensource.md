@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-02-01
 description: "Les plus grands mensonges à l'encontre de l'open source"
 tags:

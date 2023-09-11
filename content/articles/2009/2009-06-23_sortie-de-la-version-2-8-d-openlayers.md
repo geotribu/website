@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-06-23
 description: "Sortie de la version 2.8 d'OpenLayers"
 tags:

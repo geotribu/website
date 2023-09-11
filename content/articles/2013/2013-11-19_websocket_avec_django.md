@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2013-11-19
 description: "Un peu de websocket avec Django"
 tags:

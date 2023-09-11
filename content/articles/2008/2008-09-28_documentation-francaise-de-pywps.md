@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-09-28 10:20
 description: "Documentation française de PyWPS"
 tags:

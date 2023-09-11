@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-06-05
 description: "Annonces en pagaille du côté de chez Google"
 tags:

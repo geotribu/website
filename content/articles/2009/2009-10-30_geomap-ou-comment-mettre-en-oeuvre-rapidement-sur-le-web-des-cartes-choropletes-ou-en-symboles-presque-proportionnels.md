@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-10-30
 description: "Geomap ou comment mettre en œuvre rapidement sur le web des cartes choroplètes ou en symboles (presque) proportionnels"
 tags:

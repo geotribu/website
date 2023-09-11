@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2014-03-21
 description: "Un bon deal chez Packt Publishing"
 tags:

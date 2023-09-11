@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-27
 description: "GlobeRacers, un nouveau jeu pour geomaticien écologique"
 tags:

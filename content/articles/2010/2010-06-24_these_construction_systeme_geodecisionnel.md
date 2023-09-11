@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-06-24
 description: "Offre de thèse : Contribution d’un système géo-décisionnel à la sauvegarde maritime"
 tags:

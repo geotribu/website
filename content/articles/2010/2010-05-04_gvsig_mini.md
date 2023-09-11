@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-05-04
 description: "gvSIG Mini en version 0.2"
 tags:

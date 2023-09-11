@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2013-06-05 10:20
 description: "Mongo Spatial"
 tags:

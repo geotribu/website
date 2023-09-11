@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-30
 description: "Flickr et OpenStreetMap main dans la main"
 tags:

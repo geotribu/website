@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-03-10
 description: "Potentialités et limites d'OSM pour les administrations territoriales"
 tags:

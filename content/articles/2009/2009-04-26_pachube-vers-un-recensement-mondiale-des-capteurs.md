@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-26
 description: "Pachube vers un recensement mondiale des capteurs?"
 tags:

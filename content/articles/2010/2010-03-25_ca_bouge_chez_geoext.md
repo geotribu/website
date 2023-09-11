@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-25
 description: "Ca bouge chez GeoExt"
 tags:

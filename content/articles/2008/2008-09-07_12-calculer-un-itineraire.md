@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-09-07 10:20
 description: "12. Calculer un itinéraire"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-01-16
 description: "Présentation d'OpenStreetMap au Sénat"
 tags:

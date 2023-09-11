@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-05-09
 description: "A la découverte de CartoDB"
 tags:

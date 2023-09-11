@@ -5,6 +5,7 @@ authors:
 categories:
   - article
   - tutoriel
+comments: true
 date: 2021-11-11 08:00
 description: "Réalisez facilement une carte en relief du Parc National des Écrins avec des données IGN et QGIS. #30DayMapChallenge 2021."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/0-head.jpg"

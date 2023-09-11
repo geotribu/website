@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-19
 description: "Walking papers, ou comment disposer d'OpenStreetMap sur papier"
 tags:

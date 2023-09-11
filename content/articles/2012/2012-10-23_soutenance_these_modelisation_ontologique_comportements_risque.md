@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-10-23
 description: "Soutenance de thèse : Modélisation ontologique des connaissances expertes pour l'analyse de comportements à risque"
 tags:

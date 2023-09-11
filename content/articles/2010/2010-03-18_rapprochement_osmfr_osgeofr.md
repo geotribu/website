@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-18
 description: "Vers un rapprochement d'OSM-fr et de l'OSGEO-fr ?"
 tags:

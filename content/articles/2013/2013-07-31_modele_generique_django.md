@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2013-07-31
 description: "Modèle générique avec Django"
 tags:

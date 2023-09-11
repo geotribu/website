@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-10-18
 description: "Conférence Qualité des données géospatiales et géodécisionnel"
 tags:

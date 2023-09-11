@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-09-15 10:20
 description: "Interfacer OpenLayers avec un serveur WFS (MapServer)"
 tags:

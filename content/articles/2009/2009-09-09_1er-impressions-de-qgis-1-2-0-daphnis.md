@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-09
 description: "Premières impressions de QGIS 1.2.0 - Daphnis"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_1-2_daphnis_splash_screen.png"

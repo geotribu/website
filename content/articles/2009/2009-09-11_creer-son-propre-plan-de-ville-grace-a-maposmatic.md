@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-11
 description: "Créer son propre plan de ville grace à MapOSMatic"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/maposmatic.png"

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-03-15
 description: "OpenStreetMap, la Réunion tout en couleur avec Corine Land Cover"
 tags:

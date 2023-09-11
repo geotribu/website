@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-17
 description: "Puzzle GIS en version 0.4"
 tags:

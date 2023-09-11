@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-12
 description: "Introduction au libre selon le président de l'OSGEO-fr"
 tags:

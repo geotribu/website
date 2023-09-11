@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-05-05
 description: "Quand l'OpenSource communautaire s'invite à la maison blanche"
 tags:

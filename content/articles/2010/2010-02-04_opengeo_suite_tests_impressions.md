@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-02-04
 description: "OpenGeo Suite en version 1.0, tests et impressions"
 tags:

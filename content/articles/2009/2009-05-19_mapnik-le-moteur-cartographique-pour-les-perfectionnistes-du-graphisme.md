@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-05-19
 description: "Mapnik, le moteur cartographique pour les perfectionnistes du graphisme"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2013-02-11
 description: "Appel à contribution pour le FRancophone Open source Géomatique (FROG) 2013"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Jérémie ORY
 categories:
     - article
+comments: true
 date: "2014-01-08 10:20"
 description: "Géogame de Geotribu : testez vos connaissances en histoire de la cartographie avec des questions à choix multiples (QCM)."
 image: "https://cdn.geotribu.fr/img/geogames/geogame1_capture.png"

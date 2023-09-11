@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2009-01-14 10:20
 description: "OpenLayers, pouvoir réaliser un 'padding' dans une infobulle"
 tags:

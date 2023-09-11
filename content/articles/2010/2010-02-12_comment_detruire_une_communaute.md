@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-02-12
 description: "Comment détruire une communauté"
 tags:

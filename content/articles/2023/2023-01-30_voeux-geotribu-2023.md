@@ -5,6 +5,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: "2023-01-30 22:20"
 description: "La tribu vous adresse ses meilleurs voeux à toutes et tous les visiteurs du géotipi. Petit retour sur 2022 pour attaquer au mieux 2023."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/geotribu_2023.png"

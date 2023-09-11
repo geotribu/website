@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-26
 description: "Toulouse bientôt ville numérique ?"
 tags:

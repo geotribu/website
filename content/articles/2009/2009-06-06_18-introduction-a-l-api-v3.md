@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2009-06-06 10:20
 description: "18. Introduction à l'API v3"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2013-02-20
 description: "Contribuer à OpenStreetMap, les deux applications coup de coeur sur Android"
 image : "https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/images.jpeg"

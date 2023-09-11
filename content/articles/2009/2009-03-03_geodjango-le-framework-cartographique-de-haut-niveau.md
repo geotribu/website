@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-03
 description: "GéoDjango LE framework cartographique de haut niveau"
 tags:

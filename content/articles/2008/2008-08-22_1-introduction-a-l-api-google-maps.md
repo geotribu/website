@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-08-22
 description: "1. Introduction à l'API Google Maps"
 tags:

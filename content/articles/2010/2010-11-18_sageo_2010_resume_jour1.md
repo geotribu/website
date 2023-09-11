@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-11-18
 description: "SAGEO 2010, résumé de la première journée de colloque"
 tags:
