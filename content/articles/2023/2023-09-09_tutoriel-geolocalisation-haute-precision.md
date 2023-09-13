@@ -78,8 +78,8 @@ Pour une configuration "complète" :
     Pour une utilisation plus nomade et légère, une [antenne courte ( hélicoïdale)](https://www.ardusimple.com/product/helical-antenna/) permettra un gain de place. L'antenne se fixant directement au récepteur sans câble.
 
 !!! info "Configuration luxe pour l'arpentage"
-    Pour l'arpentage, l'acquisition d'une [antenne survey](https://www.ardusimple.com/product/survey-gnss-multiband-antenna/) permettra de fiabiliser l'acquisition de données notamment dans des conditions plus difficile de réception. Dans ce cas, la platine et le réducteur ne sont plus nécessaires. 
-    
+    Pour l'arpentage, l'acquisition d'une [antenne survey](https://www.ardusimple.com/product/survey-gnss-multiband-antenna/) permettra de fiabiliser l'acquisition de données notamment dans des conditions plus difficile de réception. Dans ce cas, la platine et le réducteur ne sont plus nécessaires.
+
 ## Le coût global
 
 Pour l'ensemble de la configuration minimale, en juin 2023, la dépense est inférieure à 400€ TTC frais de port inclus.  
