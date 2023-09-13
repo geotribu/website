@@ -32,7 +32,7 @@ Elle se distingue des méthodes suivantes moins précises mais adaptées à d'au
 - GNSS :  Global Navigation Satellite System, la précision est de l’ordre de 5 m.
 - DGNSS : Differential GNSS, la précision est de l’ordre de 50 cm .
 
-![Schéma RTK Centipede](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/rtk.jpg){: .img-center loading=lazy }
+![Schéma RTK](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/ardusimple/rtk.jpg){: .img-center loading=lazy }
 
 > [...] Les systèmes RTK utilisent un récepteur fixe (station de base dont la position est connue précisément) et un certain nombre de récepteurs mobiles (aussi appelés rover[^1]). La station de base compare la position calculée à partir du signal GPS et la position réelle, puis réémet les corrections à apporter vers les récepteurs mobiles. Cela permet aux unités mobiles de calculer leur position relative avec une précision de quelques millimètres, bien que leur position absolue soit aussi précise que la position de la station de base. La précision nominale typique pour ces systèmes est de 1 cm horizontalement et 2 cm verticalement. [...]
 
@@ -74,6 +74,12 @@ Pour une configuration "complète" :
 !!! info "Configuration minimale"
     Une configuration "minimale" est possible en faisant l'impasse sur les trois derniers éléments : canne, platine et réducteur.
 
+!!! info "Configuration légère"
+    Pour une utilisation plus nomade et légère, une [antenne courte ( hélicoïdale)](https://www.ardusimple.com/product/helical-antenna/) permettra un gain de place. L'antenne se fixant directement au récepteur sans câble.
+
+!!! info "Configuration luxe pour l'arpentage"
+    Pour l'arpentage, l'acquisition d'une [antenne survey](https://www.ardusimple.com/product/survey-gnss-multiband-antenna/) permettra de fiabiliser l'acquisition de données notamment dans des conditions plus difficile de réception. Dans ce cas, la platine et le réducteur ne sont plus nécessaires. 
+    
 ## Le coût global
 
 Pour l'ensemble de la configuration minimale, en juin 2023, la dépense est inférieure à 400€ TTC frais de port inclus.  
