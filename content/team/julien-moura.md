@@ -7,7 +7,7 @@ social:
     - github: guts
     - gitlab: geojulien
     - linkedin: julienmoura
-    - mail: julien@ingeoveritas.com 
+    - mail: julien@ingeoveritas.com
     - mastodon:
         - instance: mapstodon.space
         - username: geojulien
