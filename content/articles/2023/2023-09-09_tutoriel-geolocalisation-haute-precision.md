@@ -21,7 +21,7 @@ tags:
 
 # Tutoriel : monter un kit de géolocalisation à haute précision (mobile/rover RTK)
 
-:calendar: Date de publication initiale : 9 septembre 2023
+:calendar: Date de publication initiale : {{ page.meta.date.strftime('%d %B %Y')}}
 
 ## Contexte : Le RTK quésaco ?
 
