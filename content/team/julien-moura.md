@@ -3,6 +3,15 @@ title: "Page auteur Geotribu - Julien Moura"
 categories:
     - contributeur
 description: "Installer QGIS sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des problèmes. Un tutoriel sur la marche à suivre pour s'en rappeler quand le besoin se fait sentir."
+social:
+    - github: guts
+    - gitlab: geojulien
+    - linkedin: julienmoura
+    - mail: julien@ingeoveritas.com 
+    - mastodon:
+        - instance: mapstodon.space
+        - username: geojulien
+    - twitter: geojulien
 ---
 
 --8<-- [start:author]
