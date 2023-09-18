@@ -27,7 +27,7 @@ tags:
 Prérequis :
 
 - des droits d'installation
-- de préférence un PC sous Linux Debian/Ubuntu (ou via [WSL](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/)). Les outils utilisés sont tous disponibles sur Windows, MacOS et même FreeBSD, c'est vous dire !
+- de préférence un PC sous Linux Debian/Ubuntu (ou via [WSL](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md)). Les outils utilisés sont tous disponibles sur Windows, MacOS et même FreeBSD, c'est vous dire !
 
 ## Introduction
 
@@ -278,7 +278,7 @@ C'est dans ces moments-là où on mesure combien le projet est remarquable à pl
 
 ### Installer osm2pgsql
 
-Afin d'importer les données OpenStreetMap dans PostgreSQL, on utilise [osm2pgsql](/?q=osm2pgsql*) qui est un outil en ligne de commande maintenu par la communauté OSM. Pour l'installation, rien de plus simple pour Debian et dérivés comme Ubuntu :
+Afin d'importer les données OpenStreetMap dans PostgreSQL, on utilise [osm2pgsql](?q=osm2pgsql*) qui est un outil en ligne de commande maintenu par la communauté OSM. Pour l'installation, rien de plus simple pour Debian et dérivés comme Ubuntu :
 
 ```sh
 sudo apt install osm2pgsql

@@ -32,7 +32,7 @@ Pré-requis :
 
 ![icône Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
 
-Avec mon arrivée chez [Oslandia], je me remets au développement de plugins pour QGIS alors autant partager de temps en temps quelques cas d’usage :slightly_smiling_face:. Dans [l'article précédent](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees), on vous invitait à utiliser les images embarquées dans le "coeur" de QGIS pour égayer l'interface graphique de vos plugins.
+Avec mon arrivée chez [Oslandia], je me remets au développement de plugins pour QGIS alors autant partager de temps en temps quelques cas d’usage :slightly_smiling_face:. Dans [l'article précédent](2021-01-19_pyqgis_utiliser_icones_integrees.md), on vous invitait à utiliser les images embarquées dans le "coeur" de QGIS pour égayer l'interface graphique de vos plugins.
 
 Pour trouver les icônes, je vous renvoyais sur [le fichier de ressources de QGIS](https://github.com/qgis/QGIS/blob/master/images/images.qrc), mais c'est vrai qu'une fois sur le fichier, c'est un peu sec !
 

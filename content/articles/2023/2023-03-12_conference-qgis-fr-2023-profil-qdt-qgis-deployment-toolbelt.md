@@ -33,7 +33,7 @@ Prérequis :
 
 Organisées par l'OSGeo-FR, les rencontres des utilisateurs francophones de QGIS sont clairement l'événement annuel à ne pas rater quand on travaille avec ce logiciel SIG, qu'on parle principalement français ou qu'on peut difficilement envisager des déplacements à l'étranger (le prochain [QGIS User meeeting se tiendra en avril aux Pays-Bas](https://uc2023.qgis.nl/)).
 
-Cette année encore, malgré toute ma bonne volonté, je n'ai pas réussi à dégager suffisamment de temps pour m'impliquer réellement dans l'organisation en amont, même si je serai présent pour aider. Pour me rattraper, je me suis dit que j'allais faire un petit article, [à l'instar de celui de l'an dernier](/articles/2022/2022-01-12_rencontres_qgis_francophones_liens_utiles_ateliers/). Je profite de ce billet pour tirer mon chapeau aux bénévoles et au CRAIG pour le gros gros travail founi :clap:. Un événement comme celui-ci mobilise beaucoup d'énergie, d'idées, d'initiatives et de temps. Sur la base du seul bénévolat ou presque, c'est remarquable.
+Cette année encore, malgré toute ma bonne volonté, je n'ai pas réussi à dégager suffisamment de temps pour m'impliquer réellement dans l'organisation en amont, même si je serai présent pour aider. Pour me rattraper, je me suis dit que j'allais faire un petit article, [à l'instar de celui de l'an dernier](../2022/2022-01-12_rencontres_qgis_francophones_liens_utiles_ateliers.md). Je profite de ce billet pour tirer mon chapeau aux bénévoles et au CRAIG pour le gros gros travail founi :clap:. Un événement comme celui-ci mobilise beaucoup d'énergie, d'idées, d'initiatives et de temps. Sur la base du seul bénévolat ou presque, c'est remarquable.
 
 Prenez donc aussi le temps d'aller les remercier, que ce soit par un [toot](https://mapstodon.space/@JourneesQgis), [tweet](https://twitter.com/JourneesQgis/), [message sur le GitLab](https://gitlab.com/osgeo-fr/journees_qgis/-/issues), un mail ou un mot gentil en privé ou en live. Je vous attends ici pour la suite :wink:.
 
@@ -90,7 +90,7 @@ C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.gith
 Prérequis complémentaires :
 
 - Python 3.10 ou supérieur: avec pip
-    - si vous êtes sur Windows, [voir notre article dédié](/articles/2020/2020-06-19_setup_python/ "Installer et configurer Python sur Windows")
+    - si vous êtes sur Windows, [voir notre article dédié](../2020/2020-06-19_setup_python.md "Installer et configurer Python sur Windows")
     - si vous êtes sur Ubuntu il faut installer pip `sudo apt install python3-pip`
 - une connexion internet autorisée vers <https://pypi.org>
 
@@ -131,7 +131,7 @@ Prérequis complémentaires :
 <!-- markdownlint-disable MD046 -->
 === ":fontawesome-brands-linux: Linux et assimilés"
 
-    Si QGIS est installé avec les paquets officiels ([voir cet article](/articles/2023/2023-01-05_installer-qgis-sur-ubuntu/ "Installer QGIS sur Ubuntu avec apt")) et donc accessible sur `/usr/bin/qgis`, il n'y a rien à faire.  
+    Si QGIS est installé avec les paquets officiels ([voir cet article](2023-01-05_installer-qgis-sur-ubuntu.md "Installer QGIS sur Ubuntu avec apt")) et donc accessible sur `/usr/bin/qgis`, il n'y a rien à faire.  
 
     Sinon, par exemple dans le cas où plusieurs versions de QGIS sont installées sur la machine, il est possible de spécifier le chemin vers l'exécutable de la version à utiliser :
 
@@ -141,7 +141,7 @@ Prérequis complémentaires :
 
 === ":window: Windows"
 
-    Si QGIS 3.28.4 est installé avec l'installateur officiel sans personnalisation du chemin d'installation (ne pas [voir cet article](/articles/2020/2020-07-03_deploy_qgis_windows/ "Installer QGIS avec PowerShell et l'OSGeo4W")) et donc accessible sur `C:\Program Files\QGIS 3.28.4\bin\qgis-ltr-bin.exe`, il n'y a rien à faire.
+    Si QGIS 3.28.4 est installé avec l'installateur officiel sans personnalisation du chemin d'installation (ne pas [voir cet article](../2020/2020-07-03_deploy_qgis_windows.md "Installer QGIS avec PowerShell et l'OSGeo4W")) et donc accessible sur `C:\Program Files\QGIS 3.28.4\bin\qgis-ltr-bin.exe`, il n'y a rien à faire.
 
     Sinon, ouvrir une console PowerShell (++shift++ + clic droit) dans le même dossier et spécifier le chemin vers l'exécutable de QGIS à utiliser :
 

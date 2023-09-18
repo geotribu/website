@@ -27,7 +27,7 @@ Il est possible à l'instar de l'API Google Maps de créer des marqueurs sur la 
 
 ## Initialisation
 
-Reprendre le globe du [deuxième tutoriel](/articles/2008/2008-11-02_2-ajoutons-quelques-controles/).  
+Reprendre le globe du [deuxième tutoriel](2008-11-02_2-ajoutons-quelques-controles.md).  
 
 ## Processus
 

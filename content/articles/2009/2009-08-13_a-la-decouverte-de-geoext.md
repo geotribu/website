@@ -40,7 +40,7 @@ L'objet [Map](http://dev.openlayers.org/releases/OpenLayers-2.8/doc/apidocs/file
 
 L'objet ViewPort, que nous utilisons dans l'exemple ci-dessous, à la particularité de prendre automatiquement tout l'espace disponible. C'est à l'intérieur de celui-ci que nous allons construire les différents éléments de notre application. Pour cela nous spécifions que la propriété `layout` de l'objet Viewport est de type `border`. Cela signifie que son espace interne sera divisé en 5 zones (north, east, south, west et center). La zone "center" prenant automatiquement tout le reste d'espace disponible en fonction des dimensions des autres panels.
 
-Étudions en détail l'[exemple](/applications/tutoriaux/GeoExt/tutoriel/mapPanel.html) ci-dessous :
+Étudions en détail l'exemple ci-dessous :
 
 * [1] - Liste des couches qui sera ajoutée ensuite à l'objet MapPanel
 * [2] - Construction de l'objet MapPanel.
@@ -89,9 +89,9 @@ Il est déjà facile de voir l'un des avantages de GeoExt, le prototypage rapide
 
 ## Enrichir l'interface
 
-Nous allons maintenant habiller notre interface pour cela GeoExt propose plusieurs classes regroupées au sein de la classe parent Widgets. Celle que nous allons utiliser est [ZoomSlider](http://geoext.org/lib/GeoExt/widgets/ZoomSlider.html) qui permet de disposer d'un outil de zoom par niveaux. De plus nous allons en profiter pour améliorer un peu le design de notre application en modifiant notre fichier [CSS](/applications/tutoriaux/GeoExt/tutoriel/css/ext-carto.css).
+Nous allons maintenant habiller notre interface pour cela GeoExt propose plusieurs classes regroupées au sein de la classe parent Widgets. Celle que nous allons utiliser est [ZoomSlider](http://geoext.org/lib/GeoExt/widgets/ZoomSlider.html) qui permet de disposer d'un outil de zoom par niveaux. De plus nous allons en profiter pour améliorer un peu le design de notre application en modifiant notre fichier CSS.
 
-Regardons en détail notre [exemple](/applications/tutoriaux/GeoExt/tutoriel/customInterface.html) d'enrichissement de l'interface :
+Regardons en détail notre exemple d'enrichissement de l'interface :
 
 * [1] - Nous construisons notre objet ZoomSlider dont le but est d'offrir un outil de zoom avant et arrière.
 * [2] - Par rapport à l'exemple précédent l'attribut items a été ajouté à l'objet mapPanel. Il référence notre objet ZoomSlider.
@@ -136,7 +136,7 @@ Il existe différentes façons de créer notre arbre de couche. Soit en instanci
 
 La création initiale de l'arbre de couches se fait via l'objet Ext [TreeNode](http://extjs.com/deploy/dev/docs/?class=Ext.tree.TreeNode) auquel nous ajoutons ensuite des "feuilles" via la méthode appendChild. GeoExt permet grâce aux méthodes [GeoExt.tree.BaseLayerContainer](http://www.geoext.org/lib/GeoExt/widgets/tree/BaseLayerContainer.html) et [GeoExt.tree.OverlayLayerContainer](http://www.geoext.org/lib/GeoExt/widgets/tree/OverlayLayerContainer.html) de créer plus facilement les "feuilles" de cet arbre en se basant sur l'organisation des couches d'OpenLayers
 
-Étudions en détails l'[exemple](/applications/tutoriaux/GeoExt/tutoriel/tree_layer.html) de création de notre arbre de couches :
+Étudions en détails l'exemple de création de notre arbre de couches :
 
 * [1] - Création de la racine de l'arbre (la base).
 * [2] - Ajout des couches de base.
@@ -176,7 +176,7 @@ var layerTree = new Ext.tree.TreePanel({
 });
 ```
 
-Plutôt sympa comme résultat non? Et tout ça en à peine une vingtaine de ligne de code. Néanmoins, cela fait beaucoup d'objet à créer non? Ne serait-il pas plus facile d'utiliser un fichier de configuration? Comme cela est visible sur cet [exemple](/applications/tutoriaux/GeoExt/tutoriel/tree_layer_complex.html), cela est tout à fait possible, testons-le immédiatement :
+Plutôt sympa comme résultat non? Et tout ça en à peine une vingtaine de ligne de code. Néanmoins, cela fait beaucoup d'objet à créer non? Ne serait-il pas plus facile d'utiliser un fichier de configuration? Comme cela est visible sur cet exemple, cela est tout à fait possible, testons-le immédiatement :
 
 ```javascript
 var treeConfig = new OpenLayers.Format.JSON().write([
@@ -238,7 +238,7 @@ Passons maintenant à notre tableau de données.
 
 Si vous n'avez pas encore été convaincu par GeoExt, l'objet [FeatureStore](http://www.geoext.org/lib/GeoExt/data/FeatureStore.html) de la classe data vous fera certainement basculer définitivement. Imaginez simplement que vous puissiez, à partir d'un simple objet, créer un tableau de données ainsi que les données cartographiques associées et qu'en plus ces deux éléments soient liés entre eux. C'est ce que permet FeatureStore auquel nous avons ajouté dans l'exemple ci-dessous l'objet FeatureSelectionModel dont le but est de gérer les interactions entre les deux éléments.
 
-Étudions en détails notre [exemple](/applications/tutoriaux/GeoExt/tutoriel/data.html) :
+Étudions en détails notre exemple :
 
 * [1] - Creation de l'objet FeatureStore (entrepôt de données) dans lequel nous définissons la structure des données (fields).
 * [2] - Creation de l'objet Grid (tableau) contenant l'entrepôt de données. Nous spécifions également que la propriété sm (selection model) prend pour valeur FeatureSelectionModel
@@ -282,7 +282,7 @@ var grid = new Ext.Panel({
 
 La création d'une infobulle se fait via la classe [GeoExt.Popup](http://www.geoext.org/lib/GeoExt/widgets/Popup.html). Sa création n'a rien de compliqué et se passe je pense de commentaire :
 
-Ci-dessous le code ayant servi à notre [exemple](/applications/tutoriaux/GeoExt/tutoriel/popup.html) :
+Ci-dessous le code ayant servi à notre exemple :
 
 ```javascript
 city.events.on({

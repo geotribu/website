@@ -1,7 +1,7 @@
 # Insiders
 # --------
 
-git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-insiders.git@9.2.8-insiders-4.40.4#egg=mkdocs-material
+git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-insiders.git@9.3.1-insiders-4.41.0#egg=mkdocs-material
 # git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-insiders.git
 
 mkdocs-git-committers-plugin-2>=1.2,<2

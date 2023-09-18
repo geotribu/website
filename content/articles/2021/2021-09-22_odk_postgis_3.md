@@ -58,7 +58,7 @@ Une fois les données centralisés, différentes solutions d'exploitation, d'ana
 
 *Previously on ODK PostGIS* :
 
-[1 : Introduction à ODK](/articles/2021/2021-06-08_odk_postgis_1/){: .md-button } [2 : Exemple de mise en œuvre au CEN](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+[1 : Introduction à ODK](2021-06-08_odk_postgis_1.md){: .md-button } [2 : Exemple de mise en œuvre au CEN](2021-06-22_odk_postgis_2.md){: .md-button }
 {: align=middle }
 
 ----
@@ -231,7 +231,7 @@ Les premiers retours de la communauté sur [central2pg](https://github.com/mathi
 
 ### Concernant ODK Collect, les formulaires et les "workflow"
 
-La gestion de campagnes d'enquêtes complexes, non "linéaires" et l'amélioration des fonctionnalités cartographiques sont des sujets discutés actuellement au sein du [TAB et de l'équipe](/articles/2021/2021-06-08_odk_postgis_1/#gouvernance-et-communaute).
+La gestion de campagnes d'enquêtes complexes, non "linéaires" et l'amélioration des fonctionnalités cartographiques sont des sujets discutés actuellement au sein du [TAB et de l'équipe](2021-06-08_odk_postgis_1.md#gouvernance-et-communaute).
 
 Nous n'entrons pas dans les détails ici mais voici quelques discussions sur le forum d'ODK :
 

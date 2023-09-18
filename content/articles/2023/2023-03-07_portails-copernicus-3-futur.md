@@ -36,8 +36,8 @@ En particulier, outre le téléchargement des données Sentinel en Open-data, le
 
 Série **Accès aux données Copernicus/Sentinel** :
 
-* [Partie 1 : données OCS et Sentinel](/articles/2023/2023-02-21_portails-copernicus-1-donnees/).
-* [Partie 2 : portails d'accès, 'the road so far'](/articles/2023/2023-02-28_portails-copernicus-2-passe/).
+* [Partie 1 : données OCS et Sentinel](2023-02-21_portails-copernicus-1-donnees.md).
+* [Partie 2 : portails d'accès, 'the road so far'](2023-02-28_portails-copernicus-2-passe.md).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }

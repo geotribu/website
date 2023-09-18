@@ -23,7 +23,7 @@ tags:
 
 Comme évoqué dans la dernière GeoRDP, pas de revue de presse aujourd'hui mais une revue des nouveautés que vous pouvez trouver sur notre site.
 
-A noter tout de même la parution d'un article vous proposant de [préconfigurer QGIS en entreprise avec OSGeo4W](/articles/2021/2021-07-06_qgis_personnaliser_package_osgeo4w/) par Régis Haubourg.
+A noter tout de même la parution d'un article vous proposant de [préconfigurer QGIS en entreprise avec OSGeo4W](2021-07-06_qgis_personnaliser_package_osgeo4w.md) par Régis Haubourg.
 
 Vous souhaitant un bel été :sun_with_face: !
 
@@ -32,7 +32,7 @@ Vous souhaitant un bel été :sun_with_face: !
 
 ## Une nouvelle page d'accueil
 
-Lors de la renaissance du site en avril 2020 (voir [l'article sur l'histoire de Geotribu](/articles/2020/2020-08-31_geotribu_histoire/#la-difficile-renaissance)), nous avions opté pour le générateur de site statique MkDocs avec le thème Material for MkDocs et quelques plugins (voir [la page des crédits](/team/credits/)).
+Lors de la renaissance du site en avril 2020 (voir [l'article sur l'histoire de Geotribu](../2020/2020-08-31_geotribu_histoire.md#la-difficile-renaissance)), nous avions opté pour le générateur de site statique MkDocs avec le thème Material for MkDocs et quelques plugins (voir [la page des crédits](../../team/credits.md)).
 
 L'avantage est que nous connaissions l'outil (pour l'avoir utilisé à Isogeo), le langage sur lequel il est basé (Python), la syntaxe Markdown et que le rendu fait la part belle au contenu.  
 L'inconvénient c'est que, comme son nom l'indique, c'est pensé pour accueillir de la documentation technique. Un type de contenu pour lequel on investit pas vraiment dans l'esthétique. De notre point de vue, il est alors plus important que Geotribu soit un site simple, efficace et qui mette en avant le contenu plutôt que joli. Notez que l'un n'empeche pas l'autre, mais dans le bénévolat plus qu'ailleurs, les choix sont affaire de moyens et de priorités.

@@ -115,7 +115,7 @@ from qgis.PyQt.QtGui import QIcon
 from qgis.utils import showPluginHelp
 ```
 
-Quelque part dans la définition du [menu défini dans un précédent tuto](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/#recycler-les-icones-de-linterface-de-qgis) :
+Quelque part dans la définition du [menu défini dans un précédent tuto](2021-01-19_pyqgis_utiliser_icones_integrees.md#recycler-les-icones-de-linterface-de-qgis) :
 
 ```python hl_lines="23 24 25"
 [...]

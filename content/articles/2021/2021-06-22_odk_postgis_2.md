@@ -36,8 +36,8 @@ Vous pourrez ensuite récupérer les données collectées avec [Briefcase](https
 
 Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans l'article précédent.
 
-[1 : Introduction à ODK](/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
-[3 : Récupération des données dans notre SI](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
+[1 : Introduction à ODK](2021-06-08_odk_postgis_1.md){: .md-button }
+[3 : Récupération des données dans notre SI](2021-09-22_odk_postgis_3.md){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -177,7 +177,7 @@ Une fois ces paramètres de "session" renseignés, nous pouvons commencer la sai
 
 ### Création d'une localité
 
-Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans [la première partie de cet article](/articles/2021/2021-06-08_odk_postgis_1/).
+Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans [la première partie de cet article](2021-06-08_odk_postgis_1.md).
 
 ![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: loading=lazy width=175px }
 {: align=middle }
@@ -398,7 +398,7 @@ Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'�
 
 ## A suivre
 
-[Lire la troisième partie :fontawesome-solid-forward:](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
+[Lire la troisième partie :fontawesome-solid-forward:](2021-09-22_odk_postgis_3.md){: .md-button }
 {: align=middle }
 
 ----

@@ -27,7 +27,7 @@ L'API Google Maps permet de superposer des fichiers KML sur une carte. Et d'affi
 
 ## Initialisation
 
-Reprendre la carte du [deuxième tutoriel](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/).
+Reprendre la carte du [deuxième tutoriel](2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles.md).
 
 ## Appel d'un fichier KML et affichage sur la carte
 

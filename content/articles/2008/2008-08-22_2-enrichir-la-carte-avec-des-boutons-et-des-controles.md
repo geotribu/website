@@ -22,7 +22,7 @@ tags:
 
 ![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
 
-Suite au [tutoriel d'introduction](/articles/2008/2008-08-22_1-introduction-a-l-api-google-maps/) sur l'API Google Maps, il devient nécessaire d'enrichir un peu la carte de boutons de contrôle et de sélecteurs de vue. Nous verrons ici comment utiliser les méthodes de l'API Google Maps pour étoffer la carte.
+Suite au [tutoriel d'introduction](2008-08-22_1-introduction-a-l-api-google-maps.md) sur l'API Google Maps, il devient nécessaire d'enrichir un peu la carte de boutons de contrôle et de sélecteurs de vue. Nous verrons ici comment utiliser les méthodes de l'API Google Maps pour étoffer la carte.
 
 ## Initialisation
 

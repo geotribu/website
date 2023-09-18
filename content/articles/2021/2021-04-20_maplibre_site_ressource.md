@@ -100,7 +100,7 @@ map.addSource("Nomdelasource", {
 });
 ```
 
-Pour en savoir plus sur le principe voir ce [tutoriel introductif sur MapLibreGL](/articles/2021/2021-02-23_carte_ligne_libre/) réalisé en février 2021 sur Géotribu :wink:.
+Pour en savoir plus sur le principe voir ce [tutoriel introductif sur MapLibreGL](2021-02-23_carte_ligne_libre.md) réalisé en février 2021 sur Géotribu :wink:.
 
 ----
 

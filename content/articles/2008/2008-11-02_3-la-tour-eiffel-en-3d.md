@@ -30,7 +30,7 @@ Nous verrons ici comment afficher la tour Eiffel et comment définir par défaut
 
 ## Initialisation
 
-Reprendre le globe du [tutoriel n°2](/articles/2008/2008-11-02_2-ajoutons-quelques-controles/).  
+Reprendre le globe du [tutoriel n°2](2008-11-02_2-ajoutons-quelques-controles.md).  
 
 ## Processus
 

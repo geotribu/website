@@ -11,11 +11,15 @@
 
 # standard lib
 import argparse
+import logging
 from pathlib import Path
 
 # 3rd party
 import yaml
 from mkdocs.utils import yaml_load
+
+# -- GLOBALS --
+logging.basicConfig(level=logging.INFO)
 
 # -- CLI --
 parser = argparse.ArgumentParser(
@@ -63,14 +67,16 @@ for cfg_file in configs_to_merge:
     dest_section = cfg_file.stem.split("_")[0]
     with cfg_file.open(mode="r") as part_config:
         cfg_data = yaml_load(part_config)
-
     out_section = config_to_complete.get(dest_section)
     if isinstance(out_section, list):
         out_section.append(cfg_data)
     elif isinstance(out_section, dict):
         out_section.update(cfg_data)
     else:
-        continue
+        logging.info(
+            f"La section '{cfg_file.stem}' n'existe pas et va donc être ajoutée."
+        )
+        config_to_complete[cfg_file.stem] = cfg_data
 
 
 # write merged final config file

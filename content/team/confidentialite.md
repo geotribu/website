@@ -31,8 +31,8 @@ C'est pas faux ! Mais Geotribu se veut le fruit d'un travail bénévole, passion
 Pas grand chose d'utile et rien de mercantile ! On s'en sert pour :
 
 - avoir une idée globale de la fréquentation, principale source de reconnaissance après les commentaires
-- agrémenter les [bilans annuels publics](/articles/2021/2021-01-04_bilan_2020_perspectives_2021/)
-- avoir du matériau pour des [articles d'analyse statistique](/articles/2021/2021-02-09_statistiques_twitter/)
+- agrémenter les [bilans annuels publics](../articles/2021/2021-01-04_bilan_2020_perspectives_2021.md)
+- avoir du matériau pour des [articles d'analyse statistique](../articles/2021/2021-02-09_statistiques_twitter.md)
 
 Question ? Souci ? Angoisse ? Si vous souhaitez en savoir plus sur les données collectées, merci de [nous contacter par email](mailto:geotribu+rgpd@gmail.com).
 
@@ -102,7 +102,7 @@ Néanmoins, les commentaires sont publics et certaines données sont enregistré
 
 Afin de favoriser les échanges constructifs, merci de préférer le [pseudonymat](https://fr.wikipedia.org/wiki/Pseudonymat) à l'anonymat, en renseignant a minima une de vos adresses emails valable.
 
-[Consulter l'article sur la migration vers Isso](/articles/2021/2021-05-14_commentaires_migration_disqus_isso/){: .md-button }
+[Consulter l'article sur la migration vers Isso](../articles/2021/2021-05-14_commentaires_migration_disqus_isso.md){: .md-button }
 {: align=middle }
 
 <!-- Hyperlinks reference -->

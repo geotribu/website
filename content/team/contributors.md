@@ -19,14 +19,14 @@ tags:
 
 ## Membres de l'équipe
 
-- [Arnaud](/team/avan/)
-- [Aurélien](/team/acha/)
-- [Etienne](/team/edel/)
-- [Fabien](/team/fgob/)
-- [Florian](/team/fbor/)
-- [Jérémie O.](/team/jory/)
-- [Julien](/team/jmou/)
-- [Mathieu R.](/team/mraj/)
+- [Arnaud](avan.md)
+- [Aurélien](acha.md)
+- [Etienne](edel.md)
+- [Fabien](fgob.md)
+- [Florian](fbor.md)
+- [Jérémie O.](jory.md)
+- [Julien](jmou.md)
+- [Mathieu R.](mraj.md)
 
 ----
 
@@ -40,10 +40,10 @@ La liste ci-après est générée automatiquement à partir de l'historique de [
 
 ## Membres historiques
 
-- [Adrien](/team/avha/)
-- [Guillaume](/team/gdbo/)
-- [Julie](/team/jpie/)
-- [Pierre](/team/pver/)
-- [Rémi](/team/rbov/)
-- [Rodolphe](/team/rqui/)
-- [Thomas](/team/tgra/)
+- [Adrien](avha.md)
+- [Guillaume](gdbo.md)
+- [Julie](jpie.md)
+- [Pierre](pver.md)
+- [Rémi](rbov.md)
+- [Rodolphe](rqui.md)
+- [Thomas](tgra.md)

@@ -8,7 +8,7 @@ categories:
 comments: true
 date: "2021-09-07 10:20"
 description: "Travailler les données de la Base Adresse Nationale (BAN) avec GDAL/OGR, en tirant parti de l'abstraction sur les systèmes de fichiers virtuels (VSI) et de la lecture (VRT)."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png"
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png
 license: beerware
 tags:
     - adresse
@@ -25,15 +25,15 @@ tags:
 
 Prérequis :
 
-- GDAL > 3 - sur [Windows 10+, il est possible d'utiliser WSL](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/)
+- GDAL > 3 - sur [Windows 10+, il est possible d'utiliser WSL](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md)
 
 ## Introduction
 
 ![logo GDAL tshirt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_logo_tshirt.webp "logo GDAL tshirt"){: .img-rdp-news-thumb }
 
-On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années et plus récemment des Bases Adresses Locales (BAL). Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressé avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](/?q=adress).
+On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années et plus récemment des Bases Adresses Locales (BAL). Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressé avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](?q=adress).
 
-Après que [Michaël Galien ait proposé une méthode avec sa bibliothèque PowerShell](/articles/2021/2021-05-25_biblio_powershell_si3p0/#cas-dusage-traitement-automatise-de-la-ban), je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes :
+Après que [Michaël Galien ait proposé une méthode avec sa bibliothèque PowerShell](2021-05-25_biblio_powershell_si3p0.md#cas-dusage-traitement-automatise-de-la-ban), je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes :
 
 1. télécharger les données
 2. les décompresser

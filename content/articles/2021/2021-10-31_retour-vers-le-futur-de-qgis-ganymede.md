@@ -25,7 +25,7 @@ Ces jours-ci je formais quelques éminents membres des [CEN](https://fr.wikipedi
 
 ![QGIS 0.9.1 Ganymede - Splash](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9_ganymede_splash.png "QGIS 0.9.1 Ganymede - Splash"){: .img-center loading=lazy }
 
-Alors, plus de 12 ans après [notre article "A la découverte de Quantum GIS 1.0.0"](/articles/2009/art_2009-08-28/), pour fêter la Toussaint / Halloween, je vous propose d'exhumer Quantum GIS 0.x et de voir si le cadavre bouge encore :skull: :headstone:.
+Alors, plus de 12 ans après [notre article "A la découverte de Quantum GIS 1.0.0"](../2009/2009-08-28_a-la-decouverte-de-qgis.md), pour fêter la Toussaint / Halloween, je vous propose d'exhumer Quantum GIS 0.x et de voir si le cadavre bouge encore :skull: :headstone:.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -60,7 +60,7 @@ La première chose que l'on remarque, c'est que comme bon nombre d'entre nous, Q
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
 Mais qu'y avait-il donc dans Quantum GIS avant même sa version 1, seuil conventionnel de stabilisation d'un logiciel ?  
-A l'époque où [Esri investissait près de 20% de son CA en R&D, sortait ArcExplorer, ArcGIS for AutoCAD et amorçait ArcGIS Online](https://www.esri.com/news/arcnews/winter0708articles/arcgis-product-suite.html), que MapInfo, alors principal logiciel SIG dans les institutions françaises, [était racheté par Pitney Bowes](https://www.investorrelations.pitneybowes.com/news-releases/news-release-details/pitney-bowes-completes-acquisition-mapinfo) et que l'open source géospatial proposait entre autres [Puzzle GIS](/articles/2009/2009-05-24_a-la-decouverte-de-puzzle-gis/), [OpenJump](/articles/2009/2009-05-31_a-la-decouverte-d-openjump/), [uDig](/articles/2009/2009-06-07_a-la-decouverte-de-udig/) ?
+A l'époque où [Esri investissait près de 20% de son CA en R&D, sortait ArcExplorer, ArcGIS for AutoCAD et amorçait ArcGIS Online](https://www.esri.com/news/arcnews/winter0708articles/arcgis-product-suite.html), que MapInfo, alors principal logiciel SIG dans les institutions françaises, [était racheté par Pitney Bowes](https://www.investorrelations.pitneybowes.com/news-releases/news-release-details/pitney-bowes-completes-acquisition-mapinfo) et que l'open source géospatial proposait entre autres [Puzzle GIS](../2009/2009-05-24_a-la-decouverte-de-puzzle-gis.md), [OpenJump](../2009/2009-05-31_a-la-decouverte-d-openjump.md), [uDig](../2009/2009-06-07_a-la-decouverte-de-udig.md) ?
 
 Eh bien, voici quelques captures :
 
@@ -107,7 +107,7 @@ Oui, un bel échec ! Malgré mon enthousiasme, j'ai juste galéré avec les limi
 
 ## Conclusion
 
-Bref, avant c'était pas forcément mieux. Je ne sais pas si l'adage des marmites s'applique aux SIG (Soupes d'Information Géographique :thinking: ?), mais une chose est sûre ~~qu'est-ce qu'on rigole bien en formation !~~ le projet QGIS a bien évolué depuis [son premier commit](/rdp/2020/rdp_2020-09-04/#avalanche-de-ressources-sur-qgis), nous avec et rien de mieux qu'un saut dans le temps pour s'en rendre compte !
+Bref, avant c'était pas forcément mieux. Je ne sais pas si l'adage des marmites s'applique aux SIG (Soupes d'Information Géographique :thinking: ?), mais une chose est sûre ~~qu'est-ce qu'on rigole bien en formation !~~ le projet QGIS a bien évolué depuis [son premier commit](../../rdp/2020/rdp_2020-09-04.md#avalanche-de-ressources-sur-qgis), nous avec et rien de mieux qu'un saut dans le temps pour s'en rendre compte !
 
 ![QGIS 0.9 vs 3.16](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_both_versions.png "QGIS 0.9 vs 3.16"){: .img-center loading=lazy }
 

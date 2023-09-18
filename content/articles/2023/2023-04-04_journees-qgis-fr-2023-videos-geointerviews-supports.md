@@ -48,7 +48,7 @@ Vivement la prochaine édition !
 
 ## Supports et vidéos des présentations
 
-> On remet ici ce qui a été publié dans [la dernière revue de presse](/rdp/2023/rdp_2023-03-31/#videos-et-supports-des-rencontres-des-utilisateurs-francophones-de-qgis-2023) histoire que tout soit au même endroit
+> On remet ici ce qui a été publié dans [la dernière revue de presse](../../rdp/2023/rdp_2023-03-31.md#videos-et-supports-des-rencontres-des-utilisateurs-francophones-de-qgis-2023) histoire que tout soit au même endroit
 
 - [supports et vidéos des présentations du mardi aux journées QGIS FR 2023](https://conf.qgis.osgeo.fr/2023/03/24/retrouver_les_presentations_2023.html)
 - les ateliers du lundi n'étaient pas filmés et le choix de diffuser des supports de présentation appartient aux animateur/ices de chaque atelier. C'est par exemple le cas de :

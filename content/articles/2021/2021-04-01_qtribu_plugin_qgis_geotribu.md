@@ -36,7 +36,7 @@ Pour l'instant, le plugin permet de consulter Geotribu sans quitter QGIS. D'autr
 
 ![QTribu - Dernier article dans le navigateur intégré de QGIS](https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png "QTribu - Dernier article dans le navigateur intégré de QGIS"){: .img-center loading=lazy }
 
-C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemple concret de ce que je considère comme étant de bonnes pratiques et que je présente en partie sur ce site : le [raccourci vers l'aide en ligne](/articles/2021/2021-03-09_pyqgis_astuce_aide_plugin/), l'utilisation des [icônes intégrées de QGIS](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/), l'intégration des options du plugin dans le menu des préférences de QGIS, la gestion centralisée des logs et messages à l'utilisateur/ice final/e, etc.
+C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemple concret de ce que je considère comme étant de bonnes pratiques et que je présente en partie sur ce site : le [raccourci vers l'aide en ligne](2021-03-09_pyqgis_astuce_aide_plugin.md), l'utilisation des [icônes intégrées de QGIS](2021-01-19_pyqgis_utiliser_icones_integrees.md), l'intégration des options du plugin dans le menu des préférences de QGIS, la gestion centralisée des logs et messages à l'utilisateur/ice final/e, etc.
 
 [Documentation du plugin :fontawesome-solid-book:](https://geotribu.github.io/qtribu/){: .md-button }
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }

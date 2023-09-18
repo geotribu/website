@@ -37,7 +37,7 @@ Il convient alors de stocker les tuiles générées dans un répertoire sur votr
 
 ## Initialisation de la carte
 
-Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/) pour initialiser la carte.  
+Reprendre la carte du [tutoriel n°2](2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles.md) pour initialiser la carte.  
 
 ## Définition des fonctions
 

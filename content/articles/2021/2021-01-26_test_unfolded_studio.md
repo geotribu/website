@@ -25,7 +25,7 @@ Ils se sont rencontrés lorsqu'ils travaillaient pour Uber et ont monté en 2019
 
 Ils parlent de cette plateforme comme de la nouvelle génération d'outils d'analyse et de visualisation web de données géographiques.
 
-Après l'avoir évoqué dans [la dernière GeoRDP](/rdp/2021/rdp_2021-01-15/#unfolded-studio), j'ai donc voulu tester un peu tout ça !
+Après l'avoir évoqué dans [la dernière GeoRDP](../../rdp/2021/rdp_2021-01-15.md#unfolded-studio), j'ai donc voulu tester un peu tout ça !
 
 ----
 

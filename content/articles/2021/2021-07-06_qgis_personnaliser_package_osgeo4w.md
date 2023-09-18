@@ -34,7 +34,7 @@ Pré-requis :
 
 Vous aimez que tout soit bien paramétré pour vos utilisateurs ? Vous avez ce coté psychorigide de l'admin SIG perfectionniste ? Vous voulez déployer de manière transparente un jeu de plugins obligatoires ? Ou vous aimeriez tout simplement que les connexions aux bases de données dans les projets QGIS soient toutes les mêmes ?
 
-Dans la lignée des articles parlant de l'installeur [OSGeo4W en ligne de commande](/articles/2020/2020-07-03_deploy_qgis_windows/), ou de la personnalisation du [splashscreen](/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
+Dans la lignée des articles parlant de l'installeur [OSGeo4W en ligne de commande](../2020/2020-07-03_deploy_qgis_windows.md), ou de la personnalisation du [splashscreen](2021-06-11_qgis_personnaliser_splash_screen.md), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -173,7 +173,7 @@ qgis-yourorganizationname/
 ```
 
 Il est possible d'embarquer des extensions, des symboles, du code, des ressources fichiers diverses, et d'ajouter de la logique applicative à l'installation et la désinstallation du paquet.
-Il est même possible de changer l'[écran de démarrage](/articles/2021/2021-06-11_qgis_personnaliser_splash_screen/), ou de forcer l'utilisation de versions très simplifiées de l'interface de QGIS.
+Il est même possible de changer l'[écran de démarrage](2021-06-11_qgis_personnaliser_splash_screen.md), ou de forcer l'utilisation de versions très simplifiées de l'interface de QGIS.
 
 Si vous combinez cela avec les [options de démarrage](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#running-qgis-with-advanced-settings) :
 
@@ -218,7 +218,7 @@ Si vous souhaitez **contraindre** certains de ces paramètres, par exemple en fo
 
 Ici, on travaille sous Windows, mais on a besoin d'une ligne de commande linux (shell bash).
 
-Vous pouvez utiliser [WSL](https://fr.wikipedia.org/wiki/Windows_Subsystem_for_Linux) (cf. [l'article GDAL sous Windows avec WSL](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/)), la console [MSYS](https://trac.osgeo.org/osgeo4w/wiki/pkg-msys)  disponible dans OSGEO4W, une machine virtuelle, un pc dédié... Cet environnement doit disposer des utilitaires classiques mais puissants `sed`, `md5`, `rsync`.
+Vous pouvez utiliser [WSL](https://fr.wikipedia.org/wiki/Windows_Subsystem_for_Linux) (cf. [l'article GDAL sous Windows avec WSL](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md)), la console [MSYS](https://trac.osgeo.org/osgeo4w/wiki/pkg-msys)  disponible dans OSGEO4W, une machine virtuelle, un pc dédié... Cet environnement doit disposer des utilitaires classiques mais puissants `sed`, `md5`, `rsync`.
 
 Bref, je recommande chaudement un vrai système Linux. WSL2 fait parfaitement le job, puisque vous pourrez avoir un environnement complétement intégré depuis VS Code + un terminal Linux + un terminal PowerShell au même endroit, tout en pouvant versionner tout cela dans Git. Dans notepad++, ce sera plus pénible, mais vous être libre de votre configuration.
 

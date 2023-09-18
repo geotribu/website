@@ -171,7 +171,7 @@ fi
 
 ### 3. Intégrer le script d'extraction dans le script parent : pg2datagouv.sh
 
-Afin d'appeler le script enfant préalablement créé vous devez l'ajouter au script parent qui sera exécuté ([*un script pour les gouverner tous*](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script enfant vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
+Afin d'appeler le script enfant préalablement créé vous devez l'ajouter au script parent qui sera exécuté ([*un script pour les gouverner tous*](2021-02-19_ignfr2map_automatisation_deploiement.md#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script enfant vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
 
 !!! info
     Nota les fichiers annexes sont rangés dans le répertoire *attachment*.
