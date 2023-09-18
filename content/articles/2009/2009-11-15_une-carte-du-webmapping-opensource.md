@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-15
 description: "Une carte du WebMapping OpenSource"
 tags:

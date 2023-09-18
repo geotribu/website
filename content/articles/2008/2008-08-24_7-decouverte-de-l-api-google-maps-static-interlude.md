@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-08-24
 description: "7. Découverte de l'API Google Maps Static - Interlude ..."
 tags:

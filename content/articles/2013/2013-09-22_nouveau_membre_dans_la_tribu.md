@@ -4,6 +4,7 @@ authors:
     - Etienne DELAY
 categories:
     - article
+comments: true
 date: 2013-09-22
 description: "Un nouveau membre dans la tribu"
 tags:

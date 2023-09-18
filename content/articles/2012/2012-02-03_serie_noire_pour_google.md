@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-02-03
 description: "Série noire pour Google"
 tags:

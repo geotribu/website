@@ -6,6 +6,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2023-03-22 14:20
 description: "Reconstitution d'images aériennes historiques"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/remonterletemps_img.png"

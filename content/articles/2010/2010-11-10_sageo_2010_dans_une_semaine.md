@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-11-10
 description: "Le SAGEO 2010, c'est dans une semaine à Toulouse"
 tags:

@@ -5,6 +5,7 @@ authors:
     - Nicolas DAVID
 categories:
     - article
+comments: true
 date: "2023-03-07 09:00"
 description: "Évolution des portails d'accès aux données europénnes de la constellation satellites Sentinel en 2023"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"

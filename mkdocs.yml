@@ -52,7 +52,8 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
-  - meta
+  - meta:
+      meta_file: "content/**/.meta.yml"
   - minify:
       minify_css: true
       css_files:

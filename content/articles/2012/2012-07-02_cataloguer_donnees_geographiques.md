@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-07-02
 description: "Catalogue vos données géographiques avec Isogeo (GeoSIK)"
 tags:

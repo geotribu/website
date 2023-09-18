@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-21
 description: "Bientôt une nouvelle fonctionnalité pour OpenStreetMap, la création de cartes statiques"
 tags:

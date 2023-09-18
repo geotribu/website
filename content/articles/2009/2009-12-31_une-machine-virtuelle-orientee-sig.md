@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-12-31
 description: "Présentation de GIS VM, une machine virtuelle orientée SIG"
 image: "https://cdn.geotribu.fr/img/tuto/gisvm/739px-Gisvm_startup.jpg"

@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - événement
+comments: true
 date: 2015-02-09
 description: "Organisé chaque année depuis 2007 par les auditeurs du mastère SILAT, le Géoséminaire est un événement qui se penche sur l'une des grandes thématiques qui agite l'écosystème de la géomatique."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/geoseminaire/logo_geoseminaire2014_transparent.png"

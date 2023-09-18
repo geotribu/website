@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-04-13
 description: "Intégrer facilement et rapidement une carte à votre site"
 tags:

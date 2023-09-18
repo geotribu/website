@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-01-01
 description: "OpenStreetMap, une année d'édition"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-01-19
 description: "Google, Evil or not ?"
 tags:

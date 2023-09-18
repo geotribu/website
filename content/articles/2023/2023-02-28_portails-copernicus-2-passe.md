@@ -5,6 +5,7 @@ authors:
     - Nicolas DAVID
 categories:
     - article
+comments: true
 date: "2023-02-28 09:00"
 description: "Historique des portails d'accès aux données Sentinel en Europe et en France et description de leur grandes fonctionnalités"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"

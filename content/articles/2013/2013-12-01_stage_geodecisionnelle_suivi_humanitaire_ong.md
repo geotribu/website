@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2013-12-01
 description: "Développement d’une solution géodécisionnelle pour le suivi des projets humanitaires d’une Organisation Non Gouvernementale"
 tags:

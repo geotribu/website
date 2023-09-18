@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-08-22
 description: "3. Introduction sur les marqueurs et première utilisation d'un événement"
 tags:

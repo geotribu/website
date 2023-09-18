@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-01-21
 description: "Liste des logiciels OpenSource disponible"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-11-02 10:20
 description: "5. Ajouter un fichier KML"
 image: ''

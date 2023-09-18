@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-03
 description: "Les crimes et incendies s'affichent en WebMapping"
 tags:

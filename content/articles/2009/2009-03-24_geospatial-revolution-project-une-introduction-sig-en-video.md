@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-24
 description: "Geospatial Revolution Project, une introduction SIG en vidéo"
 tags:

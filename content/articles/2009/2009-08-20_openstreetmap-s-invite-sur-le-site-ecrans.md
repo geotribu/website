@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-20
 description: "OpenStreetMap s'invite sur le site écrans"
 tags:

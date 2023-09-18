@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-06-22
 description: "Ça bouge dans le monde du GeoBI"
 tags:

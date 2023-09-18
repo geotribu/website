@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2014-09-01
 description: "Stage : Retour d'Expérience et Géomatique Décisionnelle chez GrDF"
 tags:

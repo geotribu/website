@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - événement
+comments: true
 date: "2021-05-09 20:00"
 description: "L'IGN lance une consultation publique inédite pour co-construire son avenir autour du concept fort des géo-communs. Rendez-vous lundi 10 mai sur Geotribu pour la GeoInterview (#GeoITW) de Sébastien Soriano."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/interview/sebastien_soriano/geocommuns_geoitw.png"

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-12
 description: "GeoJQuery, une future alternative à GeoExt"
 tags:

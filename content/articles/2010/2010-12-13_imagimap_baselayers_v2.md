@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-12-13
 description: "Imagimap Baselayers v2"
 tags:

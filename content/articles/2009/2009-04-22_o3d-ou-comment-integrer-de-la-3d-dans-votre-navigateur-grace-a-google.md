@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-22
 description: "O3D, ou comment intégrer de la 3D dans votre navigateur grâce à Google"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-05
 description: "Cartographier l'immatériel"
 tags:

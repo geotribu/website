@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-04-12
 description: "Arramagong en version 3.0"
 tags:

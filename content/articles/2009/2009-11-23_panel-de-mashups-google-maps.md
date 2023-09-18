@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-23
 description: "Panel de mashups Google Maps"
 tags:

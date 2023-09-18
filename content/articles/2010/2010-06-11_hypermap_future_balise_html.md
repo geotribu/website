@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-06-11
 description: "hypermap, future balise HTML ?"
 tags:

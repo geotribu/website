@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-18
 description: "wheresthepath ou comment planifier un itinéraire"
 tags:

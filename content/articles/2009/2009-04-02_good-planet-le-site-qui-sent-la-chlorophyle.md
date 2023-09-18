@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-02
 description: "Good Planet, le site qui sent la chlorophyle"
 tags:

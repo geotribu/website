@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-11-30 10:20
 description: "Créer une MiniMap personnalisable avec mapFish et Ext"
 image: ''

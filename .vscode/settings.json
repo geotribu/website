@@ -5,7 +5,7 @@
     "files.associations": {
         "./requirements*.txt": "pip-requirements",
         ".linkcheckrrc": "ini",
-        "*.html": "jinja"
+        "content/**/*.html": "jinja"
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {

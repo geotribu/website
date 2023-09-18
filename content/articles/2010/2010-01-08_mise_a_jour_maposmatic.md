@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-01-08
 description: "Mise à jour de MapOSMatic"
 tags:

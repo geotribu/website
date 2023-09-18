@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-06-02
 description: "Initiation à la cartographie collaborative le Samedi 26 Juin à la Maison de la Télédétection"
 tags:

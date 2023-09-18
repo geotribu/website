@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-07-12
 description: "Nouvelle version du Géoportail"
 tags:

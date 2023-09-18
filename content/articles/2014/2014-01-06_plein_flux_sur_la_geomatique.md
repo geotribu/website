@@ -3,6 +3,7 @@ title: "Plein flux sur la géomatique"
 authors:
     - Julien MOURA
 category: ["article"]
+comments: true
 date: 2014-01-06
 description: "Pour faire son travail de veille en géomatique, identifier les sources interéssantes peut être fastidieux voire décourageant. Je partage mes sources sous forme d'un fichier d'échanges de flux (OPML)."
 tags:

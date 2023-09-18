@@ -5,6 +5,7 @@ authors:
     - Julien MOURA
 categories:
     - article
+comments: true
 date: "2023-03-12 18:20"
 description: "Afin de suivre au mieux les rencontres 2023 des utilisateurs francophones de QGIS, je vous propose de déployer facilement un profil QGIS avec tout ce qu'il faut dedans pour suivre les ateliers et présentations. Bonne conférence !"
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qgis_ecran_demarrage_conf_qgis_fr_2023.png

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-17
 description: "La géomatique décisionnelle, l'avenir du SIG?"
 tags:

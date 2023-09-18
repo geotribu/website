@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-10-16 10:20
 description: "Utiliser un SLD pour filtrer un flux WMS depuis OpenLayers"
 tags:

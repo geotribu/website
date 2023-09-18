@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2014-05-25
 description: "Thèse : Formalisation d'un environnement d'aide à l’analyse géocollaborative pour l’étude des comportements à risque - Application à la sécurité et sûreté de la maritimisation de l’énergie"
 tags:

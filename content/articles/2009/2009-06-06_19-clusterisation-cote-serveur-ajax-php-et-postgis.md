@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2009-06-06 10:20
 description: "19. Clusterisation côté serveur - Ajax, PHP et PostGIS"
 tags:

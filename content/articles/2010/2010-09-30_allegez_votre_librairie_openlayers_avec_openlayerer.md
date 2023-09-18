@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-09-30
 description: "Allégez votre librairie OpenLayers avec openlayerer"
 tags:

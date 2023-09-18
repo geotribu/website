@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-07-19
 description: "Première Rencontre des Sciences Géomatiques au Maroc"
 tags:

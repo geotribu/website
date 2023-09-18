@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2020-12-30 11:11
 description: "A l'instar de nombreux autres sites web, celui de Geotribu est un site statique. So what ? Pour comprendre, le mieux c'est encore de le déployer à la maison."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg"

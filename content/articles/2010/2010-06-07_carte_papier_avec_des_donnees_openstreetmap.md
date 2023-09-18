@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-06-07
 description: "Créez une carte papier avec des données OpenStreetMap"
 tags:

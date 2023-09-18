@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-19
 description: "Les vidéos de l'OSGis sont en ligne"
 tags:

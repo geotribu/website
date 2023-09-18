@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-08-30 10:20
 description: "Réaliser un héritage en JavaScript"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-07-06
 description: "osmtracker-android où comment disposez d'OpenStreetMap sur Android"
 tags:

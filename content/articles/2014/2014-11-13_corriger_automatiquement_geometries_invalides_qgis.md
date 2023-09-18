@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2014-11-13
 description: "Vous avez reçu des données dont les géométries ne sont pas valides ? Pas de panique, voici comment les corriger en utilisant les traitements GRASS intégrées à QGIS."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_check_geom_validity_start.png"

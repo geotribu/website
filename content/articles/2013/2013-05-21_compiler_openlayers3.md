@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2013-05-21
 description: "Compiler OpenLayers 3"
 tags:

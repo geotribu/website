@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2012-06-21
 description: "Le calcul d'itinéraires est un enjeu courant dans les métiers ed l'information géographique. Découvrez comment créer un moteur de calcul d'itinéraires avec Open Source Routing Machine (OSRM)."
 tags:

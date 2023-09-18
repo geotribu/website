@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2013-10-02
 description: "Mobilisons nous pour une mention Géomatique en master et licence"
 tags:

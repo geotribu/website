@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-23
 description: "Le pense bête d'OpenLayers"
 tags:

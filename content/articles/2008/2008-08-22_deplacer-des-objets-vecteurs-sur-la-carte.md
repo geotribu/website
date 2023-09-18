@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-08-22
 description: "Déplacer des objets vecteurs sur la carte"
 tags:

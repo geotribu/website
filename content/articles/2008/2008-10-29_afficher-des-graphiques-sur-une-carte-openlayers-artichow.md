@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-10-29 10:20
 description: "Afficher des graphiques sur une carte - OpenLayers/Artichow"
 image: ''

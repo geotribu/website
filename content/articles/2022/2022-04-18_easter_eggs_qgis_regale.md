@@ -5,6 +5,7 @@ authors:
     - Julien MOURA
 categories:
     - article
+comments: true
 date: "2022-04-18 14:20"
 description: "Easter egg, une tradition technique qui se marie bien à la cartographie. Certains des Easter eggs de QGIS sont connus : dizzy, contributors.... Mais comment les dénicher à coup sûr ? Suivez le lapin blanc dans le voyage au coeur du terrier de QGIS !"
 image: "https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_316_easteregg_user_groups.png"

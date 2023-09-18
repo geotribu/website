@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-02-15
 description: "MapChat, ou la Géocollaboration OpenSource"
 tags:

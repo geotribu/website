@@ -4,6 +4,7 @@ authors:
     - Rodolphe Quiédeville
 categories:
     - article
+comments: true
 date: 2013-12-04
 description: "Temps de réponses comparés OSRM vs GraphHopper"
 tags:

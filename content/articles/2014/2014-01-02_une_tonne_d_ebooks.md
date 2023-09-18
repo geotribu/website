@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2014-01-02
 description: "Une tonne d'Ebooks pour 5$"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-10-11
 description: "Conférence du Professeur Yvan BEDARD de l’Université Laval à Québec"
 tags:

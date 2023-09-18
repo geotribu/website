@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-28
 description: "A la découverte de Quantum GIS"
 tags:

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-11-09
 description: "Découverte de GIS Cloud, plateforme de création de contenu web-cartographique dont on entend beaucoup parler ces derniers temps. Bien décidé à voir de quoi il en retourne, je me suis inscrit et j'en ai profité pour faire quelques tests. Je vous livre ci-dessous mes impressions."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/serveur/giscloud/giscloud_interface.png"

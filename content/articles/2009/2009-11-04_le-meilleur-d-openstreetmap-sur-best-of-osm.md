@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-04
 description: "Le meilleur d'OpenStreetMap sur Best Of OSM"
 tags:

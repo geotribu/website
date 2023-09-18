@@ -4,6 +4,7 @@ authors:
     - Prénom NOM
 categories:
     - article
+comments: true
 date: "2021-08-09 10:20"
 description: "Description de 160 caractères maximum qui résume l'article qui est présente dans le flux RSS, la newsletter, les moteurs de recherche, en page d'accueil... "
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"

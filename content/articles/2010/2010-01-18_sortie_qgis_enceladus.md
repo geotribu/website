@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-01-18
 description: "Sortie de QGIS 1.4.0 'Enceladus'"
 tags:

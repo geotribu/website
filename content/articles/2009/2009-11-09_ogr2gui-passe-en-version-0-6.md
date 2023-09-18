@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-09
 description: "OGR2GUI passe en version 0.6"
 tags:

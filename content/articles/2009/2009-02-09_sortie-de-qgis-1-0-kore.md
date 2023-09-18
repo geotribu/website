@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-02-09
 description: "Sortie de QGIS 1.0 - KORE"
 tags:

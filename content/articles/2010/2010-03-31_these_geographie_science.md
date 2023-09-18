@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-31
 description: "Thèse : Géographie de la Science"
 tags:

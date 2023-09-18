@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-01-18
 description: "Data mining spatial appliqué aux risques maritimes"
 tags:

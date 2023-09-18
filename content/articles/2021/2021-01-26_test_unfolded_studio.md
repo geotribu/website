@@ -4,6 +4,7 @@ authors:
     - Aurélien CHAUMET
 categories:
     - article
+comments: true
 date: 2021-01-26 11:11
 description: "Prise en main d'Unfolded Studio, une plateforme clé en mains de dataviz, via la représentation de données AirBNB de Bordeaux."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/unfolded_capture.png"

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-05-15
 description: "Un annuaire orienté SIG"
 tags:

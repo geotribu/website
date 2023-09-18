@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-01-25
 description: "Imagimap Road"
 tags:
