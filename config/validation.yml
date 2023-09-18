@@ -1,8 +1,8 @@
 links:
   absolute_links: warn
   not_found: warn
-  unrecognized_links: info
+  unrecognized_links: warn
 nav:
-  absolute_links: ignore
+  absolute_links: warn
   not_found: warn
-  omitted_files: info
+  omitted_files: warn
