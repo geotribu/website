@@ -11,6 +11,13 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
+    // Markdown
+    "markdown.validate.enabled": true,
+    "markdown.validate.fileLinks.markdownFragmentLinks": "warning",
+    "markdown.validate.fragmentLinks.enabled": "warning",
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false,
+    },
     // Python
     "python.defaultInterpreterPath": ".venv/bin/python",
     "python.formatting.provider": "none",
