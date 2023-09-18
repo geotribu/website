@@ -31,7 +31,7 @@ Pré-requis :
 
 Récemment, j'ai eu à traiter des données particulièrement lourdes (millions d'objets) et imparfaites (mauvaises géométries dans un shapefiles) et mes outils habituels étaient tenus en échec : QGIS prend des plombes puis plante presque systématiquement lors des traitements de nettoyage et de restructuration, le GDAL sur mon ordinateur ou sur mon Google Colab sont cantonnés à la version 3.0.* liée au socle Ubuntu 18.04 alors que j'ai bien besoin des options de la branche 3.1 (`-nlt`, `-makevalid`...).
 
-J'ai à ma disposition un ordinateur puissant sous Windows, mais l'accès à GDAL via l'[OSGeo4W](2020-07-03_deploy_qgis_windows.md) n'est pas idéal et complexe (cmd, proxy, politique de sécurité...), j'ai pas le coeur à [l'installer au niveau du système](/articles/2013/art_2013-09-26/#installer-gdalogr) (effets de bord, conflits...) et utiliser conda revient à télécharger la moitié du Web (troll).
+J'ai à ma disposition un ordinateur puissant sous Windows, mais l'accès à GDAL via l'[OSGeo4W](2020-07-03_deploy_qgis_windows.md) n'est pas idéal et complexe (cmd, proxy, politique de sécurité...), j'ai pas le coeur à [l'installer au niveau du système](../2013/2013-09-26_installer_python_gdal_sous_windows.md#installer-gdalogr) (effets de bord, conflits...) et utiliser conda revient à télécharger la moitié du Web (troll).
 
 Alors pourquoi ne pas essayer de mettre à profit WSL que [j'utilise déjà pour le développement ou le test](https://twitter.com/geojulien/status/1139811447414775808) ?
 

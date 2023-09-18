@@ -278,7 +278,7 @@ C'est dans ces moments-là où on mesure combien le projet est remarquable à pl
 
 ### Installer osm2pgsql
 
-Afin d'importer les données OpenStreetMap dans PostgreSQL, on utilise [osm2pgsql](/?q=osm2pgsql*) qui est un outil en ligne de commande maintenu par la communauté OSM. Pour l'installation, rien de plus simple pour Debian et dérivés comme Ubuntu :
+Afin d'importer les données OpenStreetMap dans PostgreSQL, on utilise [osm2pgsql](?q=osm2pgsql*) qui est un outil en ligne de commande maintenu par la communauté OSM. Pour l'installation, rien de plus simple pour Debian et dérivés comme Ubuntu :
 
 ```sh
 sudo apt install osm2pgsql
