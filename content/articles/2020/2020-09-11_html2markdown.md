@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-Dans le cadre de la série d'articles sur la renaissance de Geotribu (lire la [petite histoire de Geotribu](../2020-08-31_geotribu_histoire/)), on a vu comment [utiliser le web-scraping pour récupérer les anciens contenus](../2020-09-08_web-scraping_scrapy_geotribu/) depuis une sauvegarde locale ou l'[Internet Archive].
+Dans le cadre de la série d'articles sur la renaissance de Geotribu (lire la [petite histoire de Geotribu](./2020-08-31_geotribu_histoire.md)), on a vu comment [utiliser le web-scraping pour récupérer les anciens contenus](./2020-09-08_web-scraping_scrapy_geotribu.md) depuis une sauvegarde locale ou l'[Internet Archive].
 
 Après cela, on a donc un beau cocktail *Web on The Beach* : HTML + CSS + JavaScript :cocktail:.
 
