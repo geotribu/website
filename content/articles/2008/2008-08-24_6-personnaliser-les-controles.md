@@ -27,7 +27,7 @@ Il est parfois frustrant lorsqu'on utilise des API de ne pas pouvoir personnalis
 
 ### Initialisation
 
-Reprendre la carte du [tutoriel n°1](/articles/2008/2008-08-22_1-introduction-a-l-api-google-maps/).  
+Reprendre la carte du [tutoriel n°1](2008-08-22_1-introduction-a-l-api-google-maps.md).  
 
 ### Création de la fonction zoom
 

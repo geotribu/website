@@ -24,7 +24,7 @@ license: cc4_by-sa
 Pré-requis :
 
 - Avoir une une base de données PostGIS >= 2.4 fonctionnelle
-- Savoir créer un environnement virtuel Python (voir [Python : configuration sur Windows et outillage](/articles/2020/2020-06-19_setup_python/))
+- Savoir créer un environnement virtuel Python (voir [Python : configuration sur Windows et outillage](../2020/2020-06-19_setup_python.md))
 - Avoir des notions d'administration d'un serveur web
 
 ## Introduction
@@ -77,7 +77,7 @@ QGIS permet également de prégénérer des tuiles à partir de n'importe quel f
 
 Les flux ainsi publiés sont utilisables par une interface web avec [MapLibre GL](https://github.com/maplibre/maplibre-gl-js), [Leaflet](https://github.com/Leaflet/Leaflet) (avec plugin), mais aussi [supportées nativement par QGIS](https://makina-corpus.com/blog/metier/2020/qgis-nouveau-support-tuiles-rasters-vectorielles) depuis la version 3.14.
 
-[Cet article](/articles/2021/2021-02-23_carte_ligne_libre/) vous explique comment styliser un fichier GeoJSON sur carte MapLibre. Le fonctionnement avec un flux MVT est rigoureusement identique, la seule différence se faisant au moment de la définition de la source de données :
+[Cet article](2021-02-23_carte_ligne_libre.md) vous explique comment styliser un fichier GeoJSON sur carte MapLibre. Le fonctionnement avec un flux MVT est rigoureusement identique, la seule différence se faisant au moment de la définition de la source de données :
 
 ```javascript
 map.addSource("my-data", {
@@ -176,8 +176,8 @@ Il s'agit de mon premier projet ce genre, aussi je serais ravi d'avoir votre ret
 
 Voir aussi :
 
-- [Publier une carte avec mapLibre](/articles/2021/2021-02-23_carte_ligne_libre/)
-- [Installation python](/articles/2020/2020-06-19_setup_python/)
+- [Publier une carte avec mapLibre](2021-02-23_carte_ligne_libre.md)
+- [Installation python](../2020/2020-06-19_setup_python.md)
 - [Les tuiles vectorielles](https://docs.mapbox.com/vector-tiles/specification/)
 - [PostGIS : ST_AsMVT](https://postgis.net/docs/ST_AsMVT.html)
 

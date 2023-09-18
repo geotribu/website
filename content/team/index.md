@@ -27,16 +27,16 @@ C'est donc un regroupement spontané de personnes autour de leur intérêt pour 
 
 - face, le libre : une philosophie en cohérence naturelle avec la démarche de partage inhérente au site (avez-vous noté le [copyleft](https://fr.wikipedia.org/wiki/Copyleft) qui orne le pied de page ?). Au-delà de nos propres convictions que le libre, l'_open_ et les communs sont des leviers vertueux, il ne s'agit pas de dire que nous n'utilisons jamais de logiciels propriétaires ou que nous les dénigrons ; mais nous considérons que les éditeurs de briques propriétaires ont généralement les moyens d'assurer leur propre publicité.
 
-[Article complet sur la petite histoire de Geotribu :fontawesome-solid-clock-rotate-left:](/articles/2020/2020-08-31_geotribu_histoire/){: .md-button }
+[Article complet sur la petite histoire de Geotribu :fontawesome-solid-clock-rotate-left:](../articles/2020/2020-08-31_geotribu_histoire.md){: .md-button }
 {: align=middle }
 
-[Florian](/team/fbor/) a présenté Geotribu dans [l'émission Twitch Les Reclus aux Confins](https://www.twitch.tv/confins), début 2021 :
+[Florian](fbor.md) a présenté Geotribu dans [l'émission Twitch Les Reclus aux Confins](https://www.twitch.tv/confins), début 2021 :
 
 <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/fB1dVOVbkME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Geotribu c'est qui ?
 
-[Page des contributeur/ices :fontawesome-solid-people-carry-box:](/team/contributors/){: .md-button }
+[Page des contributeur/ices :fontawesome-solid-people-carry-box:](contributors.md){: .md-button }
 {: align=middle }
 
 <!-- Hyperlinks reference -->

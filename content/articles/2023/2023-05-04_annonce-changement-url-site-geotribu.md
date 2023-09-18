@@ -21,7 +21,7 @@ tags:
 
 ![logo GeoTribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp){: .img-rdp-news-thumb loading=lazy }
 
-Voilà 3 ans que Geotribu est de retour après une [coupure de service de... 3 ans](/articles/2020/2020-08-31_geotribu_histoire/).  
+Voilà 3 ans que Geotribu est de retour après une [coupure de service de... 3 ans](../2020/2020-08-31_geotribu_histoire.md).  
 
 3 ans que ce nouveau site est en place.  
 3 ans à en améliorer l'ergonomie, les fonctionnalités et surtout à réintégrer et nettoyer les anciens contenus.  

@@ -25,7 +25,7 @@ tags:
 
 ![logo PyQGIS](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-rdp-news-thumb }
 
-Le mois dernier, je [publicisais ici un site permettant de lister les ressources graphiques présentes dans QGIS](/articles/2023/2023-03-24_pyqgis-icones-cheatsheet-automatisation/) et réutilisables dans le développement de plugins, comme démontré dans [ce tutoriel de 2021](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/).
+Le mois dernier, je [publicisais ici un site permettant de lister les ressources graphiques présentes dans QGIS](2023-03-24_pyqgis-icones-cheatsheet-automatisation.md) et réutilisables dans le développement de plugins, comme démontré dans [ce tutoriel de 2021](../2021/2021-01-19_pyqgis_utiliser_icones_integrees.md).
 
 Je disais avoir été contacté par Benjamin Jakimow et avoir proposé de mutualiser nos forces pour faire un plugin dédié :
 

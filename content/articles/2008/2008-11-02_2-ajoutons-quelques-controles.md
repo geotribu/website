@@ -23,11 +23,11 @@ tags:
 
 ![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-rdp-news-thumb }
 
-Ce deuxième tutoriel reprend le globe défini dans le [premier tutoriel](/articles/2008/2008-10-28_1-introduction-a-l-api-google-earth/) en lui ajoutant des éléments de contrôle.  
+Ce deuxième tutoriel reprend le globe défini dans le [premier tutoriel](2008-10-28_1-introduction-a-l-api-google-earth.md) en lui ajoutant des éléments de contrôle.  
 
 ## Initialisation
 
-Reprendre le globe défini dans le [premier tutoriel](/articles/2008/2008-10-28_1-introduction-a-l-api-google-earth/).  
+Reprendre le globe défini dans le [premier tutoriel](2008-10-28_1-introduction-a-l-api-google-earth.md).  
 
 ## Processus
 

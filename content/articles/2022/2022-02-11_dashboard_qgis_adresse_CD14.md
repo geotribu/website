@@ -198,4 +198,4 @@ Ci-dessous, un exemple d'affichage des bilans adresses (en haut à droite) aprè
 
 {% include "licenses/default.md" %}
 
-[^1]: loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale. Voir sur [Legifrance](https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000043496065/) et les [contenus liés sur Geotribu](/tags/#loi-3ds).
+[^1]: loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale. Voir sur [Legifrance](https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000043496065/) et les [contenus liés sur Geotribu](../../tags.md#loi-3ds).

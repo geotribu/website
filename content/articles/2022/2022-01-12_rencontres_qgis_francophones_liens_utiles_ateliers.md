@@ -23,9 +23,9 @@ tags:
 
 ![logo OSGeo](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osgeo.png "logo OSGeo"){: .img-rdp-news-thumb }
 
-Comme chaque année où il n'y a pas de pandémie mondiale, l'OSGeo France (dont [on vous présentait le 3615 à l'automne dernier](/articles/2021/2021-10-15_irc_osgeo/)) organise donc les [Rencontres des Utilisateurs Francophones de QGIS](https://conf.qgis.osgeo.fr/).
+Comme chaque année où il n'y a pas de pandémie mondiale, l'OSGeo France (dont [on vous présentait le 3615 à l'automne dernier](../2021/2021-10-15_irc_osgeo.md)) organise donc les [Rencontres des Utilisateurs Francophones de QGIS](https://conf.qgis.osgeo.fr/).
 
-Et comme chaque année où il y a une vague épidémique (et non une vague épidémie), l'événement se fera finalement en distanciel, contrairement à [ce qui avait d'abord été annoncé début novembre](/rdp/2021/rdp_2021-11-05/#rencontres-des-utilisateurs-francophones-de-qgis-edition-2022). A nous les caméras figées, les "Vous m'entendez ?" solitaires et autres coupures ! Je plains les animateurs de la journée... Hahaha on va bien se marrer dans le *métaQGISvers* !
+Et comme chaque année où il y a une vague épidémique (et non une vague épidémie), l'événement se fera finalement en distanciel, contrairement à [ce qui avait d'abord été annoncé début novembre](../../rdp/2021/rdp_2021-11-05.md#rencontres-des-utilisateurs-francophones-de-qgis-edition-2022). A nous les caméras figées, les "Vous m'entendez ?" solitaires et autres coupures ! Je plains les animateurs de la journée... Hahaha on va bien se marrer dans le *métaQGISvers* !
 
 ![Yes! Oh wait...](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/yes-wait-wtf.gif "Je sens qu'on va bien s'amuser"){: .img-center loading=lazy }
 *oh wait...*
@@ -54,7 +54,7 @@ Cette année, c'est la solution de la [société k-prod](https://k-prod.fr/) qui
 {: align=middle }
 
 !!! tip "Le bon plan de 14h25"
-    Ne manquez pas la présentation de Florian sur la carte topo à partir des données IGN ou OSM (voir aussi [cet article](/articles/2021/2021-05-28_carte_topo_qgis/)).
+    Ne manquez pas la présentation de Florian sur la carte topo à partir des données IGN ou OSM (voir aussi [cet article](../2021/2021-05-28_carte_topo_qgis.md)).
 
 ### Objectif parité
 
@@ -77,7 +77,7 @@ Pour avancer sur [le sujet](https://gitlab.com/osgeo-fr/journees_qgis/-/issues/9
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
 
-Dans la même veine que [le packaging basé sur l'OSGeo4W présenté l'été dernier par Régis Haubourg](/articles/2021/2021-07-06_qgis_personnaliser_package_osgeo4w/), mon collègue Benoît Ducarouge (le personnage principal) et moi-même (l'assistant) proposons une méthodologie pour tirer parti des profils QGIS et dont le postulat de départ est la séparation ~~des pouvoirs~~ du logiciel, de la configuration et de la personnalisation.
+Dans la même veine que [le packaging basé sur l'OSGeo4W présenté l'été dernier par Régis Haubourg](../2021/2021-07-06_qgis_personnaliser_package_osgeo4w.md), mon collègue Benoît Ducarouge (le personnage principal) et moi-même (l'assistant) proposons une méthodologie pour tirer parti des profils QGIS et dont le postulat de départ est la séparation ~~des pouvoirs~~ du logiciel, de la configuration et de la personnalisation.
 
 Au menu : du Git, du fichier `.ini` et du script Python.
 

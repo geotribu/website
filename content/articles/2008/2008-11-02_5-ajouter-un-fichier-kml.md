@@ -24,9 +24,9 @@ tags:
 ## Prérequis
 
 - Tutoriaux :
-    - [1. Introduction à l'API Google Earth](/articles/2008/2008-11-02_2-ajoutons-quelques-controles/)
-    - [2. Ajoutons quelques contrôles](/articles/2008/2008-11-02_2-ajoutons-quelques-controles/)
-    - [4. Marqueurs et événements](/articles/2008/2008-11-02_4-marqueurs-et-evenements/)
+    - [1. Introduction à l'API Google Earth](2008-11-02_2-ajoutons-quelques-controles.md)
+    - [2. Ajoutons quelques contrôles](2008-11-02_2-ajoutons-quelques-controles.md)
+    - [4. Marqueurs et événements](2008-11-02_4-marqueurs-et-evenements.md)
 
 - Connaissances :
     - notions de HTML, notions de JavaScript, notions d'algorithmique
@@ -148,7 +148,7 @@ google.earth.fetchKml(ge, kmlUrl, finished);
 
 ## Processus
 
-1. Reprendre la carte du [tutoriel sur les marqueurs et les événements](/articles/2008/2008-09-15_interfacer-openlayers-avec-un-serveur-wfs-mapserver/)
+1. Reprendre la carte du [tutoriel sur les marqueurs et les événements](2008-09-15_interfacer-openlayers-avec-un-serveur-wfs-mapserver.md)
 
 2. Définir une fonction qui vérifie la validité du fichier KML :  
 

@@ -26,7 +26,7 @@ tags:
 
 ## 2020
 
-:hourglass_flowing_sand: Vous connaissez l'histoire, déjà relatée dans nos articles ([ici](/articles/2020/2020-08-31_geotribu_histoire/), [là](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) et encore [là](/articles/2020/2020-09-11_html2markdown/)), le site renaît doucement de ses cendres depuis l'opération géophénix du printemps dernier.
+:hourglass_flowing_sand: Vous connaissez l'histoire, déjà relatée dans nos articles ([ici](../2020/2020-08-31_geotribu_histoire.md), [là](../2020/2020-09-08_web-scraping_scrapy_geotribu.md) et encore [là](../2020/2020-09-11_html2markdown.md)), le site renaît doucement de ses cendres depuis l'opération géophénix du printemps dernier.
 
 Si l'année aura été éprouvante pour le monde (de la cartograhie surtout :wink:), 2020 signe aussi le retour de Geotribu. Nous voilà à l'aube de 2021 et comme c'est de saison, on fait un premier bilan sur la dynamique de ces 9 derniers mois et on se projette sur l'année qui démarre.
 
@@ -45,7 +45,7 @@ En y regardant de plus près, ce sont 4 contributeurs réguliers qui rédigent l
 
 En somme, une dynamique progressive mais réelle qu'il s'agira de consolider dans les mois à venir pour éviter [le syndrôme du SPOF](https://fr.wikipedia.org/wiki/Point_de_d%C3%A9faillance_unique).
 
-En tout cas, on est content de retrouver le plaisir de partager notre effort de veille et notre passion. [**Encore merci à tout le monde !**](/team/) Régulier, irrégulier, ponctuel ou "simple" tipex numérique, toute contribution est vraiment la bienvenue et comme on ne le dit jamais assez : il n'y a aucune obligation. Ni de contribution, ni de résultat.
+En tout cas, on est content de retrouver le plaisir de partager notre effort de veille et notre passion. [**Encore merci à tout le monde !**](../../team/index.md) Régulier, irrégulier, ponctuel ou "simple" tipex numérique, toute contribution est vraiment la bienvenue et comme on ne le dit jamais assez : il n'y a aucune obligation. Ni de contribution, ni de résultat.
 
 ### Fréquentation
 
@@ -111,7 +111,7 @@ Aujourd'hui, pour contribuer à la revue de presse, il y a déjà plusieurs moye
 
 ### 2. Rédiger un article
 
-Si vous préférez le format libre et écrire un article comme [celui-ici](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/), [celui-là](/articles/2020/2020-09-20_tutorial_aerialod/), [celui-ci](/articles/2015/art_2015-02-03/), [celui-là](/articles/2015/art_2015-02-16/) ou d'autres moins techniques, moins gros n'hésitez pas à nous contacter.
+Si vous préférez le format libre et écrire un article comme [celui-ici](../2020/2020-12-30_deployer_geotribu_a_la_maison.md), [celui-là](../2020/2020-09-20_tutorial_aerialod.md), [celui-ci](/articles/2015/art_2015-02-03/), [celui-là](/articles/2015/art_2015-02-16/) ou d'autres moins techniques, moins gros n'hésitez pas à nous contacter.
 
 Que ce soit pour proposer un tutoriel sur un outil que vous maîtrisez ou sur une application que vous avez développée, un billet d'humeur, une idée, une présentation d'un sujet de mémoire ou de thèse ou sur tout autre chose concernant la géomatique, venez participer à la communauté Geotribu en agrandissant les ressources disponibles !
 

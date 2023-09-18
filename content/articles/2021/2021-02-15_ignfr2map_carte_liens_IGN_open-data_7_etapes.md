@@ -26,7 +26,7 @@ tags:
 
 ![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }
 
-A la surprise de tous, [l'IGN annonçait l'ouverture de ses données fin 2020 pour une libération au 1er Janvier 2021](/rdp/2020/rdp_2020-12-11/#ouverture-officielle-des-donnees-de-lign).  
+A la surprise de tous, [l'IGN annonçait l'ouverture de ses données fin 2020 pour une libération au 1er Janvier 2021](../../rdp/2020/rdp_2020-12-11.md#ouverture-officielle-des-donnees-de-lign).  
 Après des mois à attendre la refonte de l'espace professionnel, nous étions nombreux à penser que cette dynamique d'ouverture allait s'accompagner du lancement d'une plateforme ergonomique de téléchargement des données mais *que nenni*! Les liens ont continué à [s'accumuler sur une page unique](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html).
 
 Dans ce contexte, on s’interrogeait en coulisses sur une manière de rendre cette masse d'informations plus lisible par tous :point_down:.
@@ -41,8 +41,8 @@ La solution proposée par Julien ne paraissait pas trop complexe à mettre en oe
 
 - De travailler en Bash
 - De se répartir les tâches de la manière suivante :
-    - [@Flo](/team/fbor/) sur la construction des scripts
-    - [@Ju](/team/jmou/) l’enchainement des scripts et sur le déploiement
+    - [@Flo](../../team/fbor.md) sur la construction des scripts
+    - [@Ju](../../team/jmou.md) l’enchainement des scripts et sur le déploiement
 
 Et c'est parti pour une aventure en 7 étapes :rocket: !
 
@@ -50,7 +50,7 @@ Et c'est parti pour une aventure en 7 étapes :rocket: !
 
 ## 1. Scraping du site de l'IGN
 
-[Le scraping](https://fr.wikipedia.org/wiki/Web_scraping) est une technique qui permet de récupérer le contenu d'une page web en vue de le réutiliser (voir aussi [cet article](/articles/2021/2021-02-09_statistiques_twitter/) ou [celui-ci](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/)).  
+[Le scraping](https://fr.wikipedia.org/wiki/Web_scraping) est une technique qui permet de récupérer le contenu d'une page web en vue de le réutiliser (voir aussi [cet article](2021-02-09_statistiques_twitter.md) ou [celui-ci](../2020/2020-09-08_web-scraping_scrapy_geotribu.md)).  
 On a donc scrapé le site de l'[IGN](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html) pour en extraire tous les liens qui s'y trouvaient (ftp, https et http) et on les a ensuite stockés dans un fichier texte.
 
 Solutions utilisées :
@@ -184,7 +184,7 @@ On doit avouer :
 
 Un autre article sera publié dans les prochains jours pour vous expliquer la partie sur l'automatisation et le déploiement depuis Github. Restez connectés à GeoTribu : [LinkedIn](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) - [RSS](/feed_rss_created.xml) - [Twitter](https://twitter.com/geotribu)) :wink:.
 
-[Suite : automatiser l'exécution et le déploiement :fontawesome-solid-forward:](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/){: .md-button }
+[Suite : automatiser l'exécution et le déploiement :fontawesome-solid-forward:](2021-02-19_ignfr2map_automatisation_deploiement.md){: .md-button }
 {: align=middle }
 
 ----

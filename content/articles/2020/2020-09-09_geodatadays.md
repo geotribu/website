@@ -37,7 +37,7 @@ A titre personnel, je n'aurai évidemment pas de stand mais si vous lisez régul
 
 En juillet dernier, pour les besoins d'une journée sur le réseautage auprès des participant/es du [CQP GEOM](https://www.idgeo.fr/formation/cqp-geom-geomaticien-developpeur-dapplications-spatiales/) d'[IDGEO](https://www.idgeo.fr/), je les encourageais à participer à l'événement.
 
-Afin de joindre l'utile à l'utile, je leur avais proposé d'établir leur programme au travers d'un projet QGIS, en tirant partie des [nouvelles fonctionnalités temporelles](/rdp/2020/rdp_2020-06-26/#qgis-314-pi).
+Afin de joindre l'utile à l'utile, je leur avais proposé d'établir leur programme au travers d'un projet QGIS, en tirant partie des [nouvelles fonctionnalités temporelles](../../rdp/2020/rdp_2020-06-26.md#qgis-314-pi).
 
 J'aurais aimé diffuser ce projet mais je n'ai pas eu le temps pour travailler suffisamment dessus pour que ce soit présentable. Mais voici quand même un petit aperçu :
 

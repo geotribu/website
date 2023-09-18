@@ -80,7 +80,7 @@ C'est déjà plus sympa et intégré non ?
 
 Maintenant, vous n'avez plus aucune excuse pour ne pas mettre de belles icônes dans vos fenêtres et menus ! Avec modération bien sûr :wink:. Merci à [Etienne](https://twitter.com/etrimaille/) pour le rappel sur [*QgsApplication.iconPath*](https://qgis.org/api/classQgsApplication.html#aeb52c5382784b9adbdf0e0328a7ea2ad) dont "l'avantage, c'est que ca gère le thème de QGIS (Dark, Grey or Normal)".
 
-[Suggestion : prévisualiser les icônes intégrées :fontawesome-solid-forward:](/articles/2021/2021-02-02_pyqgis_previsualiser_images_integrees/){: .md-button }
+[Suggestion : prévisualiser les icônes intégrées :fontawesome-solid-forward:](2021-02-02_pyqgis_previsualiser_images_integrees.md){: .md-button }
 {: align=middle }
 
 ----

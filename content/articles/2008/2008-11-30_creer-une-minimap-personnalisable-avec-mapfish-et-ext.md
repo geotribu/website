@@ -33,7 +33,7 @@ Il existe deux étapes primordiales pour réaliser un héritage de classe avec M
 
 Cet objet qui héritera de la classe windows d'ext permettra d'afficher dans une fenêtre flottante une mini carte. Nous y ajouterons une méthode qui permettra le placement automatique de cette mini-map dans le bloc center.
 
-Commencons par créer notre nouvel objet. La méthode mapfish.widgets.miniMap est le [constructeur de la classe](/articles/2008/2008-08-22_creer-des-classes-en-javascript/). La méthode apply permet d'appeler une fonction Javascrit pour l'objet spécifié en lui passant les paramètres dans un tableau. Ainsi chacune de options de configuration que vous aurez défini deviendra des propriétés de l'objet lui même.
+Commencons par créer notre nouvel objet. La méthode mapfish.widgets.miniMap est le [constructeur de la classe](2008-08-22_creer-des-classes-en-javascript.md). La méthode apply permet d'appeler une fonction Javascrit pour l'objet spécifié en lui passant les paramètres dans un tableau. Ainsi chacune de options de configuration que vous aurez défini deviendra des propriétés de l'objet lui même.
 
 ```javascript
 mapfish.widgets.miniMap = function(config) {  

@@ -32,7 +32,7 @@ En fait, lors des exemples ci-dessus vous vous êtes peut-être demandé à quoi
 
 ![qr_code geotribu](https://cdn.geotribu.fr/img/internal/qrcode/qrcode_geotribu_fr.png "QR Code du site Geotribu"){: .img-rdp-news-thumb }
 
-La technologie du QR Code peine à percer en Europe, mais il faut savoir qu'au Japon celle-ci est quotidiennement utilisée ([video dailymotion](https://www.dailymotion.com/video/xemuk_japon-qr-code_tech)). Néanmoins, certains projets tentent de démocratiser son utilisation comme c'est le cas de [Mobulles](/articles/2009/2009-03-26_toulouse_ville_numerique.md) que nous avions déjà présenté.
+La technologie du QR Code peine à percer en Europe, mais il faut savoir qu'au Japon celle-ci est quotidiennement utilisée ([video dailymotion](https://www.dailymotion.com/video/xemuk_japon-qr-code_tech)). Néanmoins, certains projets tentent de démocratiser son utilisation comme c'est le cas de [Mobulles](2009-03-26_toulouse_ville_numerique.md) que nous avions déjà présenté.
 
 <iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/xemuk" width="100%" height="400" allowfullscreen title="Dailymotion Video Player" > </iframe>
 

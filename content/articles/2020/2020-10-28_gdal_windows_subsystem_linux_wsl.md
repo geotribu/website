@@ -31,7 +31,7 @@ Pré-requis :
 
 Récemment, j'ai eu à traiter des données particulièrement lourdes (millions d'objets) et imparfaites (mauvaises géométries dans un shapefiles) et mes outils habituels étaient tenus en échec : QGIS prend des plombes puis plante presque systématiquement lors des traitements de nettoyage et de restructuration, le GDAL sur mon ordinateur ou sur mon Google Colab sont cantonnés à la version 3.0.* liée au socle Ubuntu 18.04 alors que j'ai bien besoin des options de la branche 3.1 (`-nlt`, `-makevalid`...).
 
-J'ai à ma disposition un ordinateur puissant sous Windows, mais l'accès à GDAL via l'[OSGeo4W](/articles/2020/2020-07-03_deploy_qgis_windows/) n'est pas idéal et complexe (cmd, proxy, politique de sécurité...), j'ai pas le coeur à [l'installer au niveau du système](/articles/2013/art_2013-09-26/#installer-gdalogr) (effets de bord, conflits...) et utiliser conda revient à télécharger la moitié du Web (troll).
+J'ai à ma disposition un ordinateur puissant sous Windows, mais l'accès à GDAL via l'[OSGeo4W](2020-07-03_deploy_qgis_windows.md) n'est pas idéal et complexe (cmd, proxy, politique de sécurité...), j'ai pas le coeur à [l'installer au niveau du système](/articles/2013/art_2013-09-26/#installer-gdalogr) (effets de bord, conflits...) et utiliser conda revient à télécharger la moitié du Web (troll).
 
 Alors pourquoi ne pas essayer de mettre à profit WSL que [j'utilise déjà pour le développement ou le test](https://twitter.com/geojulien/status/1139811447414775808) ?
 
@@ -72,7 +72,7 @@ Si le numéro du build est supérieur ou égal à `18362` (ou `19041` pour les s
 
 #### Un terminal moderne
 
-Comme déjà évoqué dans [l'article sur l'environnement de travail Python sur Windows](/articles/2020/2020-06-19_setup_python/#utiliser-powershell), utiliser `cmd` n'est pas une option et il va falloir entrer quelques commandes Powershell pour ensuite profiter joyeusement de bash :partying_face:.
+Comme déjà évoqué dans [l'article sur l'environnement de travail Python sur Windows](2020-06-19_setup_python.md#utiliser-powershell), utiliser `cmd` n'est pas une option et il va falloir entrer quelques commandes Powershell pour ensuite profiter joyeusement de bash :partying_face:.
 
 Avec WSL, les choses se compliquent car il devient nécessaire de pouvoir switcher d'un terminal à l'autre, par exemple d'un Powershell sur le Windows hôte vers le bash de l'une des distributions installées avec WSL. Le terminal intégré de Powershell en étant incapable, il nous faut donc installer le **nouveau terminal** :
 
@@ -335,7 +335,7 @@ Et j'ai commenté la partie correspondant au shell Azure.
 
 ## Conclusion
 
-Il arrive souvent que l'on rencontre des soucis à utiliser l'outillage géomatique libre sous Windows et les solutions existantes peuvent ne pas être adaptées au besoin (lire notre [article sur les possibilités d'automatisation de l'installateur OSGeo4W](/articles/2020/2020-07-03_deploy_qgis_windows/)). S'il ne faut pas oublier que WSL est pensé pour le développement et le test, on a pu voir que c'est une alternative souple et solide à la fois ((c) [Les Inconnus](https://www.youtube.com/watch?v=TpRNInscPdE)).
+Il arrive souvent que l'on rencontre des soucis à utiliser l'outillage géomatique libre sous Windows et les solutions existantes peuvent ne pas être adaptées au besoin (lire notre [article sur les possibilités d'automatisation de l'installateur OSGeo4W](2020-07-03_deploy_qgis_windows.md)). S'il ne faut pas oublier que WSL est pensé pour le développement et le test, on a pu voir que c'est une alternative souple et solide à la fois ((c) [Les Inconnus](https://www.youtube.com/watch?v=TpRNInscPdE)).
 
 Pourquoi alors ne pas imaginer déployer [une distribution personnalisée](https://docs.microsoft.com/fr-fr/windows/wsl/build-custom-distro) comme l'[OSGeo Live](https://live.osgeo.org/) via le Windows Store ?
 

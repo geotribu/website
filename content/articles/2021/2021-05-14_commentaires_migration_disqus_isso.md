@@ -25,7 +25,7 @@ tags:
 
 Lorsque nous avons remis Geotribu en route l'an dernier en optant pour un site statique et que la question des commentaires s'est posée, je suis allé au plus simple : [Disqus], notammant parce-que son intégration est mise en avant dans [la documentation](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/#disqus) du thème retenu.
 
-Mais avec la montée en puissance de [la fréquentation du site](/articles/2021/2021-01-04_bilan_2020_perspectives_2021/#frequentation), notamment suite à [ign2map], Disqus a considéré que Geotribu était éligible pour les publicités.
+Mais avec la montée en puissance de [la fréquentation du site](2021-01-04_bilan_2020_perspectives_2021.md#frequentation), notamment suite à [ign2map], Disqus a considéré que Geotribu était éligible pour les publicités.
 
 ![Disqus - Mail de notification](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_mail_notification.webp "Disqus - Mail de notification"){: loading=lazy align=left clear=right width=150px }
 
@@ -35,7 +35,7 @@ On peut comprendre qu'un service n'est jamais gratuit et que la publicité est l
 
 D'après la [FAQ](https://help.disqus.com/en/articles/1717307-subscription-payments-faq), nous aurions pu prétendre à un forfait gratuit exempt de publicité mais c'était l'occasion de s'affranchir d'un service propriétaire et qui, même gratuit, ajoute des éléments de tracking non désirés.
 
-Comme évoqué dans l'introduction de [la GeoRDP du 12 mars](/rdp/2021/rdp_2021-03-12/), nous avons donc décidé de couper le service en attendant de trouver mieux... ou de ne pas mettre de système de commentaires du tout.
+Comme évoqué dans l'introduction de [la GeoRDP du 12 mars](../../rdp/2021/rdp_2021-03-12.md), nous avons donc décidé de couper le service en attendant de trouver mieux... ou de ne pas mettre de système de commentaires du tout.
 
 Finalement, on a mis en place [Isso] et après un mois d'utilisation, il est temps de faire un retour d'expérience.
 
@@ -172,5 +172,5 @@ C'est beau l'open source :smiling_face_with_3_hearts:.
 
 <!-- Hyperlinks reference -->
 [Disqus]: https://disqus.com/
-[ign2map]: /articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/
+[ign2map]: 2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes.md
 [Isso]: https://posativ.org/isso/

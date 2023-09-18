@@ -69,7 +69,7 @@ Revenons à nos géo-moutons.
 
 Une fois le HTML et les ressources liées (images...) récupérés de Geotribu, j'ai opté pour un stockage sous forme de Markdown. Pour cela, j'ai utilisé le package [markdownify](https://github.com/matthewwithanm/python-markdownify) qui permet de transformer du HTML en Markdown.
 
-Vu qu'on a déjà passé un article sur le projet [Scrapy] utilisé pour récupérer les anciens contenus depuis l'Internet Archive, je ne vais pas de nouveau détailler le [*pipeline*](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) mais plutôt démontrer comment appliquer la même mécanique facilement :
+Vu qu'on a déjà passé un article sur le projet [Scrapy] utilisé pour récupérer les anciens contenus depuis l'Internet Archive, je ne vais pas de nouveau détailler le [*pipeline*](2020-09-08_web-scraping_scrapy_geotribu.md) mais plutôt démontrer comment appliquer la même mécanique facilement :
 
 1. aspirer un site web avec du web-scraping
 2. traiter le HTML pour décortiquer le contenu :
@@ -160,7 +160,7 @@ graph TD
     D --> F[CDN];
 ```
 
-[Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-forward:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
+[Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-forward:](2020-12-30_deployer_geotribu_a_la_maison.md){: .md-button }
 {: align=middle }
 
 ----

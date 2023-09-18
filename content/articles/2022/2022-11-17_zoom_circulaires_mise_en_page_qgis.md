@@ -22,7 +22,7 @@ tags:
 :calendar: Date de publication initiale : 17 novembre 2022
 
 !!! info "Traduction"
-    Suite à l'appel de Julien [dans la GeoRDP du 4 novembre](/rdp/2022/rdp_2022-11-04/#trucs-et-astuces-sur-le-composeur-dimpression-de-qgis), j'ai tenté de traduire au plus juste le [billet de blog](https://north-road.com/2022/11/04/creating-circular-insets-and-other-fun-qgis-layout-tricks/) publié le 4 novembre 2022 par North Road à l'occasion du [30 Day Map Challenge](https://twitter.com/hashtag/30DayMapChallenge) concernant la création de zooms circulaires dans les mises en page de QGIS. Dans la suite de cet article c'est donc North Road qui donne les explications.
+    Suite à l'appel de Julien [dans la GeoRDP du 4 novembre](../../rdp/2022/rdp_2022-11-04.md#trucs-et-astuces-sur-le-composeur-dimpression-de-qgis), j'ai tenté de traduire au plus juste le [billet de blog](https://north-road.com/2022/11/04/creating-circular-insets-and-other-fun-qgis-layout-tricks/) publié le 4 novembre 2022 par North Road à l'occasion du [30 Day Map Challenge](https://twitter.com/hashtag/30DayMapChallenge) concernant la création de zooms circulaires dans les mises en page de QGIS. Dans la suite de cet article c'est donc North Road qui donne les explications.
 
 ## Introduction
 

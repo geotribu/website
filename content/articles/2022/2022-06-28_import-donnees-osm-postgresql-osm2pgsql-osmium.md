@@ -27,7 +27,7 @@ tags:
 Prérequis :
 
 - des droits d'installation
-- de préférence un PC sous Linux Debian/Ubuntu (ou via [WSL](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/)). Les outils utilisés sont tous disponibles sur Windows, MacOS et même FreeBSD, c'est vous dire !
+- de préférence un PC sous Linux Debian/Ubuntu (ou via [WSL](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md)). Les outils utilisés sont tous disponibles sur Windows, MacOS et même FreeBSD, c'est vous dire !
 
 ## Introduction
 

@@ -24,7 +24,7 @@ tags:
 
 ![logo QField](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qfield.png "logo QField"){: .img-rdp-news-thumb }
 
-Pour donner suite à [l’article récent sur Input](/articles/2022/2022-03-11_releve_terrain_qgis_input/), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de QField ces dernières années avec le cabinet Tactis.
+Pour donner suite à [l’article récent sur Input](2022-03-11_releve_terrain_qgis_input.md), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de QField ces dernières années avec le cabinet Tactis.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -57,9 +57,9 @@ Tout d’abord, quelques informations factuelles pour illustrer notre expérienc
 
 ## Alternatives
 
-Input est une alternative qui a été présentée dans [le précédent article](/articles/2022/2022-03-11_releve_terrain_qgis_input/).
+Input est une alternative qui a été présentée dans [le précédent article](2022-03-11_releve_terrain_qgis_input.md).
 
-Il y a aussi plusieurs solutions de collecte de donnée sans interface SIG (KoboCollect et ODK [aussi présenté ici même l'an dernier](/articles/2021/2021-06-08_odk_postgis_1/), par exemple). Si la collecte de donnée ne requiert pas d’affichage de référentiel SIG, ces dernières solutions peuvent être plus simple à mettre en œuvre.
+Il y a aussi plusieurs solutions de collecte de donnée sans interface SIG (KoboCollect et ODK [aussi présenté ici même l'an dernier](../2021/2021-06-08_odk_postgis_1.md), par exemple). Si la collecte de donnée ne requiert pas d’affichage de référentiel SIG, ces dernières solutions peuvent être plus simple à mettre en œuvre.
 
 La réelle force des applications Input et QField est donc
 

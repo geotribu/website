@@ -24,7 +24,7 @@ De la même manière que le géocodage à l'adresse, l'API Google Maps permet de
 
 ## Initialisation
 
-Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/).
+Reprendre la carte du [tutoriel n°2](2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles.md).
 
 ## Calcul de l'itinéraire
 

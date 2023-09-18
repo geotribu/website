@@ -71,7 +71,7 @@ Un exemple de requête serait la suivante : une requête de type "GetFeature" es
 
 ## Faire de MapServer un serveur WFS
 
-Cette partie suppose que vous soyez déjà familier de l'environnement MapServer et que vous sachiez comment est constitué un MapFile. Dans le cas contraire, je vous invite à lire auparavant ce tutoriel : [Tutorial MapServer](/articles/2008/2008-08-22_initiation-a-mapserver/).
+Cette partie suppose que vous soyez déjà familier de l'environnement MapServer et que vous sachiez comment est constitué un MapFile. Dans le cas contraire, je vous invite à lire auparavant ce tutoriel : [Tutorial MapServer](2008-08-22_initiation-a-mapserver.md).
 
 Pour spécifier à MapServer de fonctionner en tant que serveur WMS, il sera nécessaire d'ajouter différents attributs à votre MapFile. Les blocs à modifier sont les suivants :
 
