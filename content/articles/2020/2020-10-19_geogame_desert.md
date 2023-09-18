@@ -23,7 +23,7 @@ tags:
 
 [![icône Geogames Geotribu](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette_200x200.png "Géogames Geotribu"){: .img-rdp-news-thumb }](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette.png)
 
-Ecartés lors de la phase de résurrection de Geotribu, les Géogames sont désormais de nouveau en ligne. Basés sur une petite [bibliothèque JavaScript Quiz Script](https://www.felix-riesterer.de/main/seiten/quiz-script.html) et conçus par [Jérémie](/team/jory/), les jeux sont construits autour de la thématique de la cartographie et de la géomatique (évidemment). A part faire en sorte qu'ils soient de nouveau jouables, je n'ai rien touché, donc ambiance vintage assurée :wink: !
+Ecartés lors de la phase de résurrection de Geotribu, les Géogames sont désormais de nouveau en ligne. Basés sur une petite [bibliothèque JavaScript Quiz Script](https://www.felix-riesterer.de/main/seiten/quiz-script.html) et conçus par [Jérémie](../../team/jory.md), les jeux sont construits autour de la thématique de la cartographie et de la géomatique (évidemment). A part faire en sorte qu'ils soient de nouveau jouables, je n'ai rien touché, donc ambiance vintage assurée :wink: !
 
 Au passage, je suis tombé sur un sixième jeu qui n'avait pas été publié à l'époque. Un inédit ! Il s'agit ici d'associer les différents déserts au bon continent.
 
@@ -36,11 +36,11 @@ Bon jeu et bonne nostalgie :smile:.
 
 ## Retrouver les autres géogames
 
-- [Mots-croisés : les outils SIG](/articles/2013/art_2013-10-30_geogame_mots_croises_outils_sig)
-- [Mots-croisés : webmapping](/articles/2013/art_2013-11-20_geogame_mots_croises_webmapping)
-- [QCM culture cartographique](/articles/2014/art_2014-01-08_geogame_qcm_histoire_cartographie)
-- [QCM de Cassini à Bertin](/articles/2014/art_2014-01-22_geogame_qcm_cassini_bertin)
-- [Le pendu de la géomatique](/articles/2014/art_2014-03-19_geogame_pendu_geomatique)
+- [Mots-croisés : les outils SIG](../2013/2013-10-30_geogame_mots_croises_outils_sig.md)
+- [Mots-croisés : webmapping](../2013/2013-11-20_geogame_mots_croises_webmapping.md)
+- [QCM culture cartographique](../2014/2014-01-08_geogame_qcm_histoire_cartographie.md)
+- [QCM de Cassini à Bertin](../2014/2014-01-22_geogame_qcm_cassini_bertin.md)
+- [Le pendu de la géomatique](../2014/2014-03-19_geogame_pendu_geomatique.md)
 - le projet sur Github : <https://github.com/geotribu/geogames/>
 
 ----
