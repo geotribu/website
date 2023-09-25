@@ -11,7 +11,7 @@ date: "2023-09-29 10:20"
 description: Prise en main du package Python 'prettymaps' qui permet de générer des cartes artistiques et illustratives à partir d'une simple adresse, en utilisant les données OpenStreetMap et les bibliothèques osmnx, GeoPandas et matplotlib.
 icon: material/palette-outline
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_banner.png
-license: default
+license: beerware
 robots: index, follow
 tags:
     - OpenStreetMap
@@ -35,12 +35,14 @@ A l'occasion des cours que je donne à l'[Ecole Urbaine de Sciences Po Paris](ht
 Cette bibliothèque Python est l'oeuvre de [Marcelo de Oliveira Rosa Prates](https://marceloprates.github.io/), un Brésilien docteur en Computer Science et machine learning qui :
 
 - :heartbeat: aime partager son travail et jouer avec les intelligences artificielles pour créer des visualisations intéressantes qu'il expose sur son [portfolio](https://marceloprates.github.io/generative-art/)
-- :broken_heart: n'aime pas les NFT ou tout autre technologie dont le but est principalement vénal sans considération pour l'environnement.
+- :broken_heart: n'aime pas les NFT ou tout autre technologie purement vénalé sans considération pour l'environnement. Merci de respecter ses valeurs.
 
-Il y a déjà de nombreuses ressources et posts ([notamment sur LinkedIn](https://www.linkedin.com/search/results/content/?keywords=prettymaps&origin=FACETED_SEARCH&sid=jXj&sortBy=%22date_posted%22)) mais je n'ai rien trouvé en français ni rien qui ne détaille vraiment le fonctionnement. Alors c'est parti !
+Il y a déjà de nombreuses ressources et posts ([notamment sur LinkedIn](https://www.linkedin.com/search/results/content/?keywords=prettymaps&origin=FACETED_SEARCH&sid=jXj&sortBy=%22date_posted%22)) sur [prettymaps](https://github.com/marceloprates/prettymaps/) mais je n'ai rien trouvé en français ni rien qui ne détaille vraiment le fonctionnement. Alors c'est parti !
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
+
+----
 
 ## Prérequis logiciels
 
@@ -48,9 +50,23 @@ Il y a déjà de nombreuses ressources et posts ([notamment sur LinkedIn](https:
 - une connexion internet
 - un terminal. Sur Windows, privilégier [Windows Terminal](https://aka.ms/terminal)
 
+----
+
 ## Installation
 
-Le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, il suffit de lancer la commande adaptée à votre système.
+Le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, de préférence dans un environnement virtuel en lançant la commande adaptée à votre système.
+
+<!-- markdownlint-disable MD040 -->
+<!-- termynal -->
+
+```
+$ pip install prettymaps
+---> 100%
+Installing collected packages: prettymaps
+Successfully installed prettymaps-1.0.0
+```
+
+<!-- markdownlint-enable MD040 -->
 
 <!-- markdownlint-disable MD046 -->
 === ":fontawesome-brands-linux: Linux et assimilés"
@@ -69,19 +85,10 @@ Le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis u
     py -3 -m pip install --upgrade prettymaps
     ```
 
-    Si un message d'avertissement comme celui-ci s'affiche :
-
-    > WARNING: The scripts geotribu.exe are installed in 'C:\Users\username\AppData\Roaming\Python\Python310\Scripts' which is not on PATH.  
-    > Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
-
-    Il s'agit d'ajouter le chemin vers le dossier des scripts Python à la variable `PATH`` qui liste les dossiers contenant des exécutables. Cela se fait toujours avec PowerShell (adapter le chemin en fonction de la version de votre installation Python) :
-
-    ```powershell
-    $Env:PATH += ";$Env:APPDATA\Python\Python310\Scripts"
-    ```
-
-    Puis allez lire [cet article](../2020/2020-06-19_setup_python.md#ajouter-python-au-path) :wink: !
+    Si un message d'avertissement s'affiche, allez lire [cet article](../2020/2020-06-19_setup_python.md#ajouter-python-au-path) :wink: !
 <!-- markdownlint-enable MD046 -->
+
+----
 
 ## Une simple adresse suffit
 
@@ -114,9 +121,11 @@ Ouvrir le fichier `sciencespo_paris.png` :
 
 ![prettymaps - Sciences Po Paris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_sciences_po_paris.webp){: .img-center loading=lazy }
 
-### Jouer avec les préréglages par défaut
+----
 
-De nouveau, l'auteur a intégré dans la bibliothèque des préréglages de styles (_preset_) que l'on peut obtenir avec une simple commande :
+## Jouer avec les préréglages par défaut
+
+Si le rendu par défaut est déjà sympa, la richesse de prettymaps se trouve dans sa capacité à personnaliser les styles des différents objets issus d'OpenStreetMap. L'auteur a intégré dans la bibliothèque des préréglages de styles (_preset_) que l'on peut obtenir avec une simple commande :
 
 ```python
 >>> import prettymaps
@@ -178,18 +187,14 @@ Voilà les 7 résultast (le style `barcelona-plotter` génère une erreur chez m
     Saurez-vous identifier l'adresse que j'ai donnée pour générer les images ci-dessus ?  
     Réponse en commentaire. Vous avez environ 1 an pour donner la réponse :wink:.
 
-### Let's script again : jouer avec les paramètres
+----
+
+## Let's script again : jouer avec les paramètres
 
 ```python linenums="1" title="tuto_prettymaps.py"
-# import des bibliothèques utilisées dans le script
-import prettymaps
-
-# adresse sur laquelle centrer la requête
-query = "13 rue de l'Université, Paris, France"
-
 # paramètres appliqués à la carte
 plot: prettymaps.draw.Plot = prettymaps.plot(
-    query=query,
+    query=adresse,
     circle=True,
     radius=1100,
     layers={
@@ -267,9 +272,22 @@ plot: prettymaps.draw.Plot = prettymaps.plot(
     },
 )
 
-
-plot.fig.savefig("sciencespo.png")
 ```
+
+----
+
+## prettymapp : l'alternative web optimisée
+
+![icône souris clic gauche](https://cdn.geotribu.fr/img/logos-icones/divers/souris_mouse_left-click.webp){: .img-rdp-news-thumb }
+
+Bon, ok, j'aurais pu vous en parler plus tôt mais si j'avais commencé par là, vous n'auriez pas mis les mains dans le cambouis, ni ressenti ce soulagement à l'idée de pouvoir cliquer sur une interface web pour faire les réglages de style :smile:.
+
+L'énorme succès de _prettymaps_ a inspiré de nombreux dérivés, certains (comme [Aeterna Civitas](https://magiceden.io/marketplace/aeterna_civitas)) allant à l'encontre du souhait de l'auteur. Et d'autres plus heureux comme _prettymapp_ (oui sans `s` mais avec 2 `p`), le projet de [Christoph Rieke](https://chrieke.com/) qui permet de faciliter l'utilisation en proposant une interface graphique pour les principaux paramètres, le tout dans une application web dont l'instance de démo est publique :
+
+[:frame_photo: Utiliser prettymapp](https://prettymapp.streamlit.app/){: .md-button .md-button--primary }
+{: align=middle }
+
+![prettymapp - démo](https://github.com/chrieke/prettymapp/raw/main/streamlit-prettymapp/example_prints/demo.gif){: .img-center loading=lazy }
 
 ----
 
@@ -277,4 +295,4 @@ plot.fig.savefig("sciencespo.png")
 
 --8<-- "content/team/jmou.md"
 
-{% include "licenses/default.md" %}
+{% include "licenses/beerware.md" %}
