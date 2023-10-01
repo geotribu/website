@@ -8,7 +8,7 @@ wheel
 # Development
 # -----------------------
 geotribu>=0.29,<1
-pre-commit>=3,<3.4
+pre-commit>=3,<3.5
 
 # Project requirements
 # -----------------------
