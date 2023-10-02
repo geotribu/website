@@ -199,6 +199,9 @@ C'est évidemment open source et libre (licence MIT) donc si cela vous intéress
 [Consulter le dépôt du code :fontawesome-regular-file-code:](https://github.com/geotribu/cli/){: .md-button }
 {: align=middle }
 
+<iframe src="https://mapstodon.space/@jeremy/109378742289307030/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600" allowfullscreen="allowfullscreen"></iframe>
+{: align=middle }
+
 ----
 
 ## Auteur {: data-search-exclude }
