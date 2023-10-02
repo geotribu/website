@@ -32,21 +32,21 @@ Le projet tient-il ses promesses et les contributeurs sont-ils bien au rendez-vo
 
 ----
 
-## Quelques chiffres 
+## Quelques chiffres
 
 Fin septembre 2023, Panoramax c'est :
 
 * 2 instances publiques (IGN + OSM-FR)
 * Plus de 8 millions de photos
-* Plus de 20.000 séquences 
-* Une cinquantaine de contributeurs 
+* Plus de 20.000 séquences
+* Une cinquantaine de contributeurs
 * Un début d’intégration QGIS (avec Oslandia)
 
 ----
 
-## Que propose Panoramax aujourd'hui? 
+## Que propose Panoramax aujourd'hui?
 
-Panoramax, c'est avant tout un géo-commun construit sur des principes fondateurs : 
+Panoramax, c'est avant tout un géo-commun construit sur des principes fondateurs :
 
 * Partager ses photos pour qu'un même cliché géolocalisé soit utilisable par tous
 * Une multiplicité d’acteurs tant pour les prises de vues que pour les réutilisations
@@ -80,7 +80,7 @@ En quelques mois, ce sont plus de 8 millions de photos qui ont ainsi été vers�
 
 ----
 
-##  Un viewer de référence 
+##  Un viewer de référence
 
 Stocker et cataloguer c'est bien, mais permettre la visualisation des photos est bien sûr une nécessité !
 
@@ -92,7 +92,7 @@ Elle permet de naviguer sur un fond de carte, de visualiser les séquences de ph
 
 ----
 
-## Les outils de versement 
+## Les outils de versement
 
 Le premier outil de version proposé par la startup Panoramax a visé les versements en masse de prises de vues existantes. C'est un outil en ligne de commande (écrit en python) qui permet de verser des dossiers entiers d'images.
 
@@ -104,7 +104,7 @@ Les versements ne sont pas anonymes, un compte utilisateur est nécessaire, pour
 
 ----
 
-## Une API de floutage 
+## Une API de floutage
 
 Le floutage des plaques d'immatriculation et des visages est un pré-requis à la diffusion publique des photos de terrain.
 
@@ -112,13 +112,13 @@ Celui-ci se fait à l'aide d'un modèle de machine-learning qui a été entraîn
 
 ![Panoramax - API de floutage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_05_floutage.webp){: .img-center loading=lazy }
 
-Le floutage a donné de suite des bons résultats sur les photos "planes" mais était un peu décevant sur les photosphères (360°) en partie à cause de leur dimensions. Un changement de paramètre permet désormais de bien meilleurs résultats et le modèle a été à nouveau entrâiné pour encore améliorer les résultats. 
+Le floutage a donné de suite des bons résultats sur les photos "planes" mais était un peu décevant sur les photosphères (360°) en partie à cause de leur dimensions. Un changement de paramètre permet désormais de bien meilleurs résultats et le modèle a été à nouveau entrâiné pour encore améliorer les résultats.
 
 Les annotations et le modèle couvrent un troisième type d'objet: les panneaux de signalisation. Ceci a permis de démarrer une expérimentation pour les détecter et les classer automatiquement.
 
 ----
 
-## La gestion des séquences 
+## La gestion des séquences
 
 Une fois les séquences de photos versées sur une instance, quelques outils sont disponibles pour masquer ou supprimer si besoin des photos ou des séquences entières.
 
@@ -128,22 +128,22 @@ De premiers outils de filtrage ont été mis en place dans la visionneuse pour s
 
 ----
 
-## Quelles sont les perspectives de réutilisation? 
+## Quelles sont les perspectives de réutilisation?
 
-La contribution est la clé du succès du géocommun. Mais la réussite du projet tient aussi à ses réutilisations, et les possibilités sont infinies. Voici quelques exemples : 
+La contribution est la clé du succès du géocommun. Mais la réussite du projet tient aussi à ses réutilisations, et les possibilités sont infinies. Voici quelques exemples :
 
 - Base de données Panneaux : référencement et identification automatisée des panneaux routiers
-- Usages non routiers : référentiel des rivières (ex. dans le Lot Dordou), chemins de randonnée. 
+- Usages non routiers : référentiel des rivières (ex. dans le Lot Dordou), chemins de randonnée.
 
 ![Panoramax - Usage non routier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_07_canal.webp){: .img-center loading=lazy }
 
-- Enseignes publicitaires : détection par les collectivités locales 
+- Enseignes publicitaires : détection par les collectivités locales
 - Boitiers Fibre : repérages avant intervention
-- Etat des fossés : repérages pour intervention 
+- Etat des fossés : repérages pour intervention
 - végétation : identifier les tailles nécessaires - état (taille nécessaire)
 - cimetières : vérifier l'état des sépultures
 - accessibilité : préparer un déplacement, vérifier les cheminements
-- arboretum - tourisme : se répérer avant la visite 
-- arrêts de bus : repérages, état 
+- arboretum - tourisme : se répérer avant la visite
+- arrêts de bus : repérages, état
 
 Et beaucoup d'autres encore à inventer. À suivre !
