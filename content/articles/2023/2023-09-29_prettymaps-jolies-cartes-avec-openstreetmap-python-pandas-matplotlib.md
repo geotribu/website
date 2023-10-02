@@ -54,7 +54,9 @@ Il y a déjà de nombreuses ressources et posts ([notamment sur LinkedIn](https:
 
 ## Installation
 
-Le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, de préférence dans un environnement virtuel en lançant la commande adaptée à votre système.
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+
+Dans ses premières versions, le projet était difficilement installable à cause d'un packaging foireux (dépendances non déclarées ou non épinglées, police d'écriture manquante...). Depuis, Marcelo a clairement corrigé le tir et le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, de préférence dans un environnement virtuel en lançant la commande adaptée à votre système.
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
@@ -92,9 +94,9 @@ Successfully installed prettymaps-1.0.0
 
 ## Une simple adresse suffit
 
-Louons ici les efforts de l'auteur pour rendre sa bibliothèque facilement utilisable par l'utilisateur final que nous sommes :
+C'est l'un des éléments qui a rendu prettymaps aussi populaire : la simplicité d'utilisation. On sent que l'auteur a fait des efforts pour rendre la vie plus facile à l'utilisateur final que nous sommes, du moins au début :
 
-- une adresse suffit
+- une adresse suffit. A noter qu'on peut aussi passer une paire de coordonnées bien sûr ou encore un objet [GeoDataFrame.boundary](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.boundary.html)
 - la bibliothèque propose une série de préréglages pour les paramètres de symbologie
 
 ```python linenums="1" title="tuto_prettymaps.py"
@@ -125,7 +127,7 @@ Ouvrir le fichier `sciencespo_paris.png` :
 
 ## Jouer avec les préréglages par défaut
 
-Si le rendu par défaut est déjà sympa, la richesse de prettymaps se trouve dans sa capacité à personnaliser les styles des différents objets issus d'OpenStreetMap. L'auteur a intégré dans la bibliothèque des préréglages de styles (_preset_) que l'on peut obtenir avec une simple commande :
+Si le rendu par défaut est déjà sympa, la richesse de _prettymaps_ se trouve dans sa capacité à personnaliser les styles des différents objets issus d'OpenStreetMap. L'auteur a intégré dans la bibliothèque des préréglages de styles (_preset_) que l'on peut obtenir avec une simple commande :
 
 ```python
 >>> import prettymaps
@@ -172,7 +174,7 @@ for p in presets:
         continue
 ```
 
-Voilà les 7 résultast (le style `barcelona-plotter` génère une erreur chez moi) :
+On exécute de nouveau le script et voilà les 7 résultats (le style `barcelona-plotter` génère une erreur chez moi) :
 
 ![prettymaps - Ville mystère preset barcelona](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_ville_to_guess_barcelona.webp){: width=20% loading=lazy }
 ![prettymaps - Ville mystère preset cb-bf-f](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_ville_to_guess_cb-bf-f.webp){: width=20% loading=lazy }
@@ -191,7 +193,19 @@ Voilà les 7 résultast (le style `barcelona-plotter` génère une erreur chez m
 
 ## Let's script again : jouer avec les paramètres
 
+![logo OpenStreetMap Python](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/osm_python.png){: .img-rdp-news-thumb }
+
+Maintenant qu'on a bien joué avec les préréglages par défaut, creusons un peu plus loin car prettymaps permet de paramétrer plutôt finement la façon dont les objets OpenStreetMap sont stylisés ainsi que comment la figure (au sens de Matplotlib) est construite :
+
+- `layers` permet de spécifier les objets à récupérer depuis OpenStreetMap, en fait les requêtes à l'API Overpass
+- `style` permet de régler le mode de représentation des objets dans Maplotlib : la couleur de fond (`fc`), de bordure (`ec`), la largeur de celle-ci (`lw`), le motif (`hatch`), etc.
+
+Prenons un lieu qui se prête bien à l'exercice : Saint-Malo.
+
 ```python linenums="1" title="tuto_prettymaps.py"
+# adresse (on peut aussi passer une paire de coordonnées)
+adresse = "Saint-Malo, France"
+
 # paramètres appliqués à la carte
 plot: prettymaps.draw.Plot = prettymaps.plot(
     query=adresse,
@@ -276,13 +290,21 @@ plot: prettymaps.draw.Plot = prettymaps.plot(
 
 ----
 
+## Sous le capot
+
+```mermaid
+
+```
+
+----
+
 ## prettymapp : l'alternative web optimisée
 
 ![icône souris clic gauche](https://cdn.geotribu.fr/img/logos-icones/divers/souris_mouse_left-click.webp){: .img-rdp-news-thumb }
 
 Bon, ok, j'aurais pu vous en parler plus tôt mais si j'avais commencé par là, vous n'auriez pas mis les mains dans le cambouis, ni ressenti ce soulagement à l'idée de pouvoir cliquer sur une interface web pour faire les réglages de style :smile:.
 
-L'énorme succès de _prettymaps_ a inspiré de nombreux dérivés, certains (comme [Aeterna Civitas](https://magiceden.io/marketplace/aeterna_civitas)) allant à l'encontre du souhait de l'auteur. Et d'autres plus heureux comme _prettymapp_ (oui sans `s` mais avec 2 `p`), le projet de [Christoph Rieke](https://chrieke.com/) qui permet de faciliter l'utilisation en proposant une interface graphique pour les principaux paramètres, le tout dans une application web dont l'instance de démo est publique :
+L'énorme succès de _prettymaps_ a inspiré de nombreux dérivés, certains comme le méprisable [Aeterna Civitas](https://magiceden.io/marketplace/aeterna_civitas) allant à l'encontre du souhait de l'auteur, le poussant à ne plus publier ses outils en open source... Et d'autres plus heureux comme [_prettymapp_](https://github.com/chrieke/prettymapp/) (oui sans `s` mais avec 2 `p`), le projet de [Christoph Rieke](https://chrieke.com/) qui facilite l'utilisation en proposant une interface graphique pour les principaux paramètres, le tout dans une application web dont l'instance de démo est publique :
 
 [:frame_photo: Utiliser prettymapp](https://prettymapp.streamlit.app/){: .md-button .md-button--primary }
 {: align=middle }
