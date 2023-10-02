@@ -193,6 +193,9 @@ extra_javascript:
   - path: https://mastodon.social/embed.js
     async: true
     defer: true
+  - path: https://platform.twitter.com/widgets.js
+    async: true
+    defer: true
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
