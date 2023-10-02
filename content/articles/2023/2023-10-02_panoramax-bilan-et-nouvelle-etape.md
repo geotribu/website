@@ -146,3 +146,9 @@ La contribution est la clé du succès du géocommun. Mais la réussite du proje
 * arrêts de bus : repérages, état
 
 Et beaucoup d'autres encore à inventer. À suivre !
+
+----
+
+## Autrice
+
+--8<-- "content/team/mfer.md"
