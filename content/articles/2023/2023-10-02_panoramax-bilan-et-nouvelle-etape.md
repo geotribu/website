@@ -65,7 +65,6 @@ Tous ces développements sont libres et open-source, publiés sur <https://gitla
 
 Partager des photos c'est avant tout une question de stockage et de catalogage de celles-ci.
 
-
 ![Panoramax - Carte des contributions](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_02_carte.webp){: .img-center loading=lazy }
 
 Une API permet de verser des images, de les cataloguer, puis de les rechercher pour une diffusion à destination de différents outils (visionneuse mais pas uniquement). Elle s'appuie sur un espace de stockage et une base de données (PostgreSQL). Cette API se conforme au standard [STAC](https://stacspec.org/) (_Spatio Temporal Assets Catalog_) pour assurer l'intéropérabilité avec des outils existants.
@@ -80,7 +79,7 @@ En quelques mois, ce sont plus de 8 millions de photos qui ont ainsi été vers�
 
 ----
 
-##  Un viewer de référence
+## Un viewer de référence
 
 Stocker et cataloguer c'est bien, mais permettre la visualisation des photos est bien sûr une nécessité !
 
@@ -132,18 +131,18 @@ De premiers outils de filtrage ont été mis en place dans la visionneuse pour s
 
 La contribution est la clé du succès du géocommun. Mais la réussite du projet tient aussi à ses réutilisations, et les possibilités sont infinies. Voici quelques exemples :
 
-- Base de données Panneaux : référencement et identification automatisée des panneaux routiers
-- Usages non routiers : référentiel des rivières (ex. dans le Lot Dordou), chemins de randonnée.
+* Base de données Panneaux : référencement et identification automatisée des panneaux routiers
+* Usages non routiers : référentiel des rivières (ex. dans le Lot Dordou), chemins de randonnée.
 
 ![Panoramax - Usage non routier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_07_canal.webp){: .img-center loading=lazy }
 
-- Enseignes publicitaires : détection par les collectivités locales
-- Boitiers Fibre : repérages avant intervention
-- Etat des fossés : repérages pour intervention
-- végétation : identifier les tailles nécessaires - état (taille nécessaire)
-- cimetières : vérifier l'état des sépultures
-- accessibilité : préparer un déplacement, vérifier les cheminements
-- arboretum - tourisme : se répérer avant la visite
-- arrêts de bus : repérages, état
+* Enseignes publicitaires : détection par les collectivités locales
+* Boitiers Fibre : repérages avant intervention
+* Etat des fossés : repérages pour intervention
+* végétation : identifier les tailles nécessaires - état (taille nécessaire)
+* cimetières : vérifier l'état des sépultures
+* accessibilité : préparer un déplacement, vérifier les cheminements
+* arboretum - tourisme : se répérer avant la visite
+* arrêts de bus : repérages, état
 
 Et beaucoup d'autres encore à inventer. À suivre !
