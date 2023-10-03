@@ -23,7 +23,7 @@ tags:
 
 :calendar: Date de publication initiale : 3 octobre 2023
 
-C'était il y a un an... l'IGN répondait à la proposition d'OpenStreetMap France et se lançait dans une phase d'investigation pour la création d'un street-view libre. Aujourd'hui, où en est-on ?
+C'était il y a un an... l'IGN répondait à la proposition d'OpenStreetMap France et se lançait dans une phase d'investigation pour la création d'un Street-View libre nommé Panoramax. Aujourd'hui, où en est-on ?
 
 Le projet tient-il ses promesses et les contributeurs sont-ils bien au rendez-vous ?
 
@@ -55,7 +55,7 @@ Panoramax, c'est avant tout un géo-commun construit sur des principes fondateur
 ![Panoramax - Projet décentralisé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_01_projet_decentralise.webp){: .img-center loading=lazy }
 
 Depuis le mois de mai dernier, un prototype développé au sein de la Fabrique des Géocommuns de l'IGN évolue au gré des tests et des retours des premiers utilisateurs.
-La version beta actuelle propose les premières briques essentielles que sont l'API et la visionneuse ainsi que deux outils de versement de photos sans oublier le moteur de floutage.
+La version bêta actuelle propose les premières briques essentielles que sont l'API et la visionneuse ainsi que deux outils de versement de photos sans oublier le moteur de floutage.
 
 Tous ces développements sont libres et open-source, publiés sur <https://gitlab.com/geovisio> pour permettre aussi un retour direct avec des issues ou de la documentation.
 
@@ -75,7 +75,7 @@ Actuellement deux instances publiques ont été mises en place, l'une par l'IGN 
 
 Les instances de stockage telles que celles de l'IGN ou d'OSM permettent à ceux qui n'ont pas la capacité de créer leur propre instance d'y stocker et partager leurs photos.
 
-En quelques mois, ce sont plus de 8 millions de photos qui ont ainsi été versé sur ces deux instances.
+En quelques mois, ce sont plus de 8 millions de photos qui ont ainsi été versées sur ces deux instances.
 
 ----
 
@@ -107,11 +107,11 @@ Les versements ne sont pas anonymes, un compte utilisateur est nécessaire, pour
 
 Le floutage des plaques d'immatriculation et des visages est un pré-requis à la diffusion publique des photos de terrain.
 
-Celui-ci se fait à l'aide d'un modèle de machine-learning qui a été entraîné pour l'occasion, collaborativement. Quelques milliers de photos on été annotées par une vingtaine de contributeurs à l'aide du logiciel libre label-studio qui ont été utilisées pour entraîner un modèle avec YOLOv8.
+Celui-ci se fait à l'aide d'un modèle de machine-learning qui a été entraîné collaborativement. Pour cela, quelques milliers de photos ont été annotées par une vingtaine de contributeurs à l'aide du logiciel libre label-studio. Par la suite, les images classifiées ont été utilisées pour entraîner un modèle avec YOLOv8.
 
 ![Panoramax - API de floutage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_05_floutage.webp){: .img-center loading=lazy }
 
-Le floutage a donné de suite des bons résultats sur les photos "planes" mais était un peu décevant sur les photosphères (360°) en partie à cause de leur dimensions. Un changement de paramètre permet désormais de bien meilleurs résultats et le modèle a été à nouveau entrâiné pour encore améliorer les résultats.
+Le floutage a donné de suite de bons résultats sur les photos "planes" mais était un peu décevant sur les photosphères (360°) en partie à cause de leurs dimensions. Un changement de paramètre permet désormais de bien meilleurs résultats et le modèle a été à nouveau entrainé pour encore améliorer les résultats.
 
 Les annotations et le modèle couvrent un troisième type d'objet: les panneaux de signalisation. Ceci a permis de démarrer une expérimentation pour les détecter et les classer automatiquement.
 
