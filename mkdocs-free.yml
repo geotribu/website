@@ -107,7 +107,6 @@ extra:
     title: Consentement 🍪
     actions:
       - accept
-      - manage
       - reject
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
@@ -119,6 +118,10 @@ extra_css:
 
 extra_javascript:
   - "theme/assets/javascripts/extra.js"
+  - path: https://mastodon.social/embed.js
+    defer: true
+  - path: https://platform.twitter.com/widgets.js
+    defer: true
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
