@@ -57,7 +57,7 @@ Panoramax, c'est avant tout un géo-commun construit sur des principes fondateur
 
 ![Panoramax - Projet décentralisé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_01_projet_decentralise.webp){: .img-center loading=lazy }
 
-Depuis le mois de mai dernier, un prototype développé au sein de [la Fabrique des Géocommuns de l'IGN] (<https://ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-communs-lign>) évolue au gré des tests et des retours des premiers utilisateurs.
+Depuis le mois de mai dernier, un prototype développé au sein de [la Fabrique des Géocommuns de l'IGN](<https://ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-communs-lign>) évolue au gré des tests et des retours des premiers utilisateurs.
 La version bêta actuelle propose les premières briques essentielles que sont [l'API](https://panoramax.ign.fr/api/docs/swagger) et la visionneuse ainsi que deux outils de versement de photos sans oublier le moteur de floutage.
 
 Tous ces développements sont libres et open-source, publiés sur <https://gitlab.com/geovisio> pour permettre aussi un retour direct avec des "issues" ou de la documentation.
@@ -96,9 +96,9 @@ Elle permet de naviguer sur un fond de carte, de visualiser les séquences de ph
 
 ## Les outils de versement
 
-Le premier outil proposé par [la start-up d'état de Panoramax] (<https://beta.gouv.fr/startups/vues-immersives-libres.html>) a visé les versements en masse de prises de vue existantes. C'est [un outil en ligne de commande] (<https://gitlab.com/geovisio/cli>) (écrit en python) qui permet de verser des dossiers entiers d'images.
+Le premier outil proposé par [la start-up d'état de Panoramax](<https://beta.gouv.fr/startups/vues-immersives-libres.html>) a visé les versements en masse de prises de vue existantes. C'est [un outil en ligne de commande](<https://gitlab.com/geovisio/cli>) (écrit en python) qui permet de verser des dossiers entiers d'images.
 
-Depuis début septembre, un second outil de versement est disponible sous la forme d'[une interface web] (<https://panoramax.ign.fr/envoyer#focus=map&map=5.7/47/3&speed=250>) utilisable avec un simple navigateur. On peut y glisser-déposer les photos à verser, qui sont ensuite envoyées par le navigateur vers l'instance Panoramax.
+Depuis début septembre, un second outil de versement est disponible sous la forme d'[une interface web](<https://panoramax.ign.fr/envoyer#focus=map&map=5.7/47/3&speed=250>) utilisable avec un simple navigateur. On peut y glisser-déposer les photos à verser, qui sont ensuite envoyées par le navigateur vers l'instance Panoramax.
 
 ![Panoramax - Téléversement via l'application web](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_04_upload.webp){: .img-center loading=lazy }
 
