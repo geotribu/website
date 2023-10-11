@@ -43,7 +43,7 @@ Fin septembre 2023, Panoramax c'est :
 * Plus de 8 millions de photos
 * Plus de 20.000 séquences
 * Une cinquantaine de contributeurs
-* Un début d’intégration QGIS (avec Oslandia)
+* Un début d’intégration [QGIS](https://www.qgis.org/) (avec [Oslandia](https://oslandia.com))
 
 ----
 
