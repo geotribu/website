@@ -47,7 +47,7 @@ Fin septembre 2023, Panoramax c'est :
 
 ----
 
-## Que propose Panoramax aujourd'hui?
+## Que propose Panoramax aujourd'hui ?
 
 Panoramax, c'est avant tout un géo-commun construit sur des principes fondateurs :
 
@@ -57,10 +57,10 @@ Panoramax, c'est avant tout un géo-commun construit sur des principes fondateur
 
 ![Panoramax - Projet décentralisé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_01_projet_decentralise.webp){: .img-center loading=lazy }
 
-Depuis le mois de mai dernier, un prototype développé au sein de la Fabrique des Géocommuns de l'IGN évolue au gré des tests et des retours des premiers utilisateurs.
-La version bêta actuelle propose les premières briques essentielles que sont l'API et la visionneuse ainsi que deux outils de versement de photos sans oublier le moteur de floutage.
+Depuis le mois de mai dernier, un prototype développé au sein de [la Fabrique des Géocommuns de l'IGN] (https://ign.fr/institut/la-fabrique-des-geocommuns-incubateur-de-communs-lign) évolue au gré des tests et des retours des premiers utilisateurs.
+La version bêta actuelle propose les premières briques essentielles que sont [l'API](https://panoramax.ign.fr/api/docs/swagger) et la visionneuse ainsi que deux outils de versement de photos sans oublier le moteur de floutage.
 
-Tous ces développements sont libres et open-source, publiés sur <https://gitlab.com/geovisio> pour permettre aussi un retour direct avec des issues ou de la documentation.
+Tous ces développements sont libres et open-source, publiés sur <https://gitlab.com/geovisio> pour permettre aussi un retour direct avec des "issues" ou de la documentation.
 
 ----
 
@@ -86,7 +86,7 @@ En quelques mois, ce sont plus de 8 millions de photos qui ont ainsi été vers�
 
 Stocker et cataloguer c'est bien, mais permettre la visualisation des photos est bien sûr une nécessité !
 
-La visionneuse de référence actuelle est issue de Geovisio, un développement initié entre autre par Géovélo et largement amélioré ces derniers mois pour Panoramax.
+La visionneuse de référence actuelle est issue de [Geovisio](https://geovisio.fr/), un développement initié entre autre par [Géovélo](https://geovelo.app/fr/) et largement amélioré ces derniers mois pour Panoramax.
 
 Elle permet de naviguer sur un fond de carte, de visualiser les séquences de photos et les photos qu'elles soient classiques ou sphériques (vues sphériques immersives à 360°).
 
@@ -96,13 +96,13 @@ Elle permet de naviguer sur un fond de carte, de visualiser les séquences de ph
 
 ## Les outils de versement
 
-Le premier outil de version proposé par la startup Panoramax a visé les versements en masse de prises de vue existantes. C'est un outil en ligne de commande (écrit en python) qui permet de verser des dossiers entiers d'images.
+Le premier outil proposé par [la start-up d'état de Panoramax] (https://beta.gouv.fr/startups/vues-immersives-libres.html) a visé les versements en masse de prises de vue existantes. C'est [un outil en ligne de commande] (https://gitlab.com/geovisio/cli) (écrit en python) qui permet de verser des dossiers entiers d'images.
 
-Depuis début septembre, un second outil de versement est disponible sous la forme d'une interface web utilisable avec un simple navigateur. On peut y glisser-déposer les photos à verser, qui sont ensuite envoyées par le navigateur vers l'instance Panoramax.
+Depuis début septembre, un second outil de versement est disponible sous la forme d'[une interface web] (https://panoramax.ign.fr/envoyer#focus=map&map=5.7/47/3&speed=250) utilisable avec un simple navigateur. On peut y glisser-déposer les photos à verser, qui sont ensuite envoyées par le navigateur vers l'instance Panoramax.
 
 ![Panoramax - Téléversement via l'application web](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_04_upload.webp){: .img-center loading=lazy }
 
-Les versements ne sont pas anonymes, un compte utilisateur est nécessaire, pour l'instance OpenStreetMap France, c'est tout simplement le compte OSM qui est utilisé pour s'identifier.
+Les versements ne sont pas anonymes : pour l'instance IGN, la création d'un compte utilisateur est nécessaire, et pour l'instance OpenStreetMap France, c'est tout simplement le compte OSM qui est utilisé pour s'identifier.
 
 ----
 
@@ -110,13 +110,13 @@ Les versements ne sont pas anonymes, un compte utilisateur est nécessaire, pour
 
 Le floutage des plaques d'immatriculation et des visages est un pré-requis à la diffusion publique des photos de terrain.
 
-Celui-ci se fait à l'aide d'un modèle de machine-learning qui a été entraîné collaborativement. Pour cela, quelques milliers de photos ont été annotées par une vingtaine de contributeurs à l'aide du logiciel libre label-studio. Par la suite, les images classifiées ont été utilisées pour entraîner un modèle avec YOLOv8.
+Celui-ci se fait à l'aide d'un modèle de machine-learning qui a été entraîné collaborativement. Pour cela, quelques milliers de photos ont été annotées par une vingtaine de contributeurs à l'aide du logiciel libre [label-studio](https://labelstud.io/). Par la suite, les images classifiées ont été utilisées pour entraîner un modèle avec [YOLOv8](https://yolov8.com/).
 
 ![Panoramax - API de floutage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_05_floutage.webp){: .img-center loading=lazy }
 
-Le floutage a donné de suite de bons résultats sur les photos "planes" mais était un peu décevant sur les photosphères (360°) en partie à cause de leurs dimensions. Un changement de paramètre permet désormais de bien meilleurs résultats et le modèle a été à nouveau entrainé pour encore améliorer les résultats.
+Le floutage a donné de suite de bons résultats sur les photos "planes" mais était un peu décevant sur les photosphères (360°) en partie à cause de leurs dimensions. Un changement de paramètre donne désormais de bien meilleurs résultats et le modèle a été à nouveau entrainé pour encore améliorer la qualité de détection.
 
-Les annotations et le modèle couvrent un troisième type d'objet: les panneaux de signalisation. Ceci a permis de démarrer une expérimentation pour les détecter et les classer automatiquement.
+Les annotations et le modèle couvrent un troisième type d'objet : les panneaux de signalisation. Ceci a permis de démarrer une expérimentation pour les détecter et les classer automatiquement.
 
 ----
 
@@ -130,23 +130,23 @@ De premiers outils de filtrage ont été mis en place dans la visionneuse pour s
 
 ----
 
-## Quelles sont les perspectives de réutilisation?
+## Quelles sont les perspectives de réutilisation ?
 
 La contribution est la clé du succès du géocommun. Mais la réussite du projet tient aussi à ses réutilisations, et les possibilités sont infinies. Voici quelques exemples :
 
 * Base de données Panneaux : référencement et identification automatisée des panneaux routiers
-* Usages non routiers : référentiel des rivières (ex. dans le Lot Dordou), chemins de randonnée.
+* Usages non routiers : référentiel des rivières (ex. dans le [Lot Lozérien](https://lot-dourdou.fr/nos-cours-deau-en-vues-immersives/) mis en place par le [SMLD](https://lot-dourdou.fr/le-syndicat/)), chemins de randonnée.
 
 ![Panoramax - Usage non routier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_07_canal.webp){: .img-center loading=lazy }
 
 * Enseignes publicitaires : détection par les collectivités locales
 * Boitiers Fibre : repérages avant intervention
 * Etat des fossés : repérages pour intervention
-* végétation : identifier les tailles nécessaires - état (taille nécessaire)
-* cimetières : vérifier l'état des sépultures
-* accessibilité : préparer un déplacement, vérifier les cheminements
-* arboretum - tourisme : se répérer avant la visite
-* arrêts de bus : repérages, état
+* Végétation : identifier les tailles nécessaires - état (taille nécessaire)
+* Cimetières : vérifier l'état des sépultures
+* Accessibilité : préparer un déplacement, vérifier les cheminements
+* Arboretum - tourisme : se répérer avant la visite
+* Arrêts de bus : repérages, état
 
 Et beaucoup d'autres encore à inventer. À suivre !
 
