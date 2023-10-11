@@ -1,5 +1,5 @@
 ---
-title: "Panoramax franchit une nouvelle étape"
+title: "Panoramax, quel bilan tirer de la phase de construction? "
 subtitle: Photo-cartographions librement le monde
 authors:
     - Mathilde FERREY
@@ -19,11 +19,11 @@ tags:
 ---
 
 
-# Panoramax, l'alternative libre pour photo-cartographier les territoires, franchit une nouvelle étape
+# Panoramax, quel bilan tirer de la phase de construction?
 
 :calendar: Date de publication initiale : 3 octobre 2023
 
-C'était il y a un an... l'IGN répondait à la proposition d'OpenStreetMap France et se lançait dans une phase d'investigation pour la création d'un Street-View libre nommé Panoramax. Aujourd'hui, où en est-on ?
+C'était il y a un an... l'[IGN](https://www.ign.fr/) répondait à la proposition d'[OpenStreetMap France](https://www.openstreetmap.fr/) et se lançait dans une phase d'investigation pour la création d'un Street-View libre nommé Panoramax. Aujourd'hui, où en est-on ?
 
 Le projet tient-il ses promesses et les contributeurs sont-ils bien au rendez-vous ?
 
@@ -36,7 +36,7 @@ Le projet tient-il ses promesses et les contributeurs sont-ils bien au rendez-vo
 
 Fin septembre 2023, Panoramax c'est :
 
-* 2 instances publiques (IGN + OSM-FR)
+* 2 instances publiques ([IGN](https://panoramax.ign.fr/) et [OSM-FR](https://panoramax.openstreetmap.fr/#focus=map&map=2.01/12.45/31.69&speed=250))
 * Plus de 8 millions de photos
 * Plus de 20.000 séquences
 * Une cinquantaine de contributeurs
@@ -49,7 +49,7 @@ Fin septembre 2023, Panoramax c'est :
 Panoramax, c'est avant tout un géo-commun construit sur des principes fondateurs :
 
 * Partager ses photos pour qu'un même cliché géolocalisé soit utilisable par tous
-* Une multiplicité d’acteurs tant pour les prises de vues que pour les réutilisations
+* Une multiplicité d’acteurs tant pour les prises de vue que pour les réutilisations
 * Un projet décentralisé soutenu par une communauté élargie
 
 ![Panoramax - Projet décentralisé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_01_projet_decentralise.webp){: .img-center loading=lazy }
@@ -69,9 +69,9 @@ Partager des photos c'est avant tout une question de stockage et de catalogage d
 
 Une API permet de verser des images, de les cataloguer, puis de les rechercher pour une diffusion à destination de différents outils (visionneuse mais pas uniquement). Elle s'appuie sur un espace de stockage et une base de données (PostgreSQL). Cette API se conforme au standard [STAC](https://stacspec.org/) (_Spatio Temporal Assets Catalog_) pour assurer l'intéropérabilité avec des outils existants.
 
-Toute personne ou entité peut déployer sa propre "instance" Panoramax. Ceci permet par exemple à une collectivité de diffuser ses prises de vues en toute autonomie.
+Toute personne ou entité peut déployer sa propre "instance" Panoramax. Ceci permet par exemple à une collectivité de diffuser ses prises de vue en toute autonomie.
 
-Actuellement deux instances publiques ont été mises en place, l'une par l'IGN et l'autre par OpenStreetMap France. Le versement d'images y est ouvert à tous.
+Actuellement deux instances publiques ont été mises en place, l'une par l'[IGN](https://panoramax.ign.fr/) et l'autre par [OpenStreetMap France](https://panoramax.openstreetmap.fr/#focus=map&map=2.01/12.45/31.69&speed=250). Le versement d'images y est ouvert à tous.
 
 Les instances de stockage telles que celles de l'IGN ou d'OSM permettent à ceux qui n'ont pas la capacité de créer leur propre instance d'y stocker et partager leurs photos.
 
@@ -93,7 +93,7 @@ Elle permet de naviguer sur un fond de carte, de visualiser les séquences de ph
 
 ## Les outils de versement
 
-Le premier outil de version proposé par la startup Panoramax a visé les versements en masse de prises de vues existantes. C'est un outil en ligne de commande (écrit en python) qui permet de verser des dossiers entiers d'images.
+Le premier outil de version proposé par la startup Panoramax a visé les versements en masse de prises de vue existantes. C'est un outil en ligne de commande (écrit en python) qui permet de verser des dossiers entiers d'images.
 
 Depuis début septembre, un second outil de versement est disponible sous la forme d'une interface web utilisable avec un simple navigateur. On peut y glisser-déposer les photos à verser, qui sont ensuite envoyées par le navigateur vers l'instance Panoramax.
 
