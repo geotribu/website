@@ -1,5 +1,5 @@
 ---
-title: "Panoramax, quel bilan tirer de la phase de construction? "
+title: "Panoramax, quel bilan tirer de la phase de construction ?"
 subtitle: Photo-cartographions librement le monde
 authors:
     - Mathilde FERREY
@@ -70,7 +70,7 @@ Partager des photos c'est avant tout une question de stockage et de catalogage d
 
 ![Panoramax - Carte des contributions](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_02_carte.webp){: .img-center loading=lazy }
 
-Une API permet de verser des images, de les cataloguer, puis de les rechercher pour une diffusion à destination de différents outils (visionneuse mais pas uniquement). Elle s'appuie sur un espace de stockage et une base de données (PostgreSQL). Cette API se conforme au standard [STAC](https://stacspec.org/) (_Spatio Temporal Assets Catalog_) pour assurer l'intéropérabilité avec des outils existants.
+Une [API](https://panoramax.ign.fr/api/docs/swagger) permet de verser des images, de les cataloguer, puis de les rechercher pour une diffusion à destination de différents outils (visionneuse mais pas uniquement). Elle s'appuie sur un espace de stockage et une base de données (PostgreSQL). Cette API se conforme au standard [STAC](https://stacspec.org/) (_Spatio Temporal Assets Catalog_) pour assurer l'intéropérabilité avec des outils existants.
 
 Toute personne ou entité peut déployer sa propre "instance" Panoramax. Ceci permet par exemple à une collectivité de diffuser ses prises de vue en toute autonomie.
 
