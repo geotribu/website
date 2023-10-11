@@ -15,6 +15,8 @@ license: default
 robots: index, follow
 tags:
     - Geovisio
+    - IGN
+    - OpenStreetMap
     - Panoramax
     - vues immersives
 ---
