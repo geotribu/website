@@ -10,7 +10,7 @@ comments: true
 date: "2023-10-16 10:20"
 description: "C'était il y a un an... l'IGN répondait à la proposition d'OpenStreetMap France et se lançait dans une phase d'investigation pour la création d'un street-view libre. Aujourd'hui, où en est-on ?"
 icon: material/panorama-variant
-image:
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_grand_lyon.png
 license: default
 robots: index, follow
 tags:
