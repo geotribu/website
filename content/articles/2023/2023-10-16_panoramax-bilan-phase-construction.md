@@ -7,10 +7,10 @@ authors:
 categories:
     - article
 comments: true
-date: "2023-10-03 10:20"
+date: "2023-10-16 10:20"
 description: "C'était il y a un an... l'IGN répondait à la proposition d'OpenStreetMap France et se lançait dans une phase d'investigation pour la création d'un street-view libre. Aujourd'hui, où en est-on ?"
 icon: material/panorama-variant
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
+image:
 license: default
 robots: index, follow
 tags:
@@ -156,3 +156,5 @@ Et beaucoup d'autres encore à inventer. À suivre !
 
 --8<-- "content/team/mfer.md"
 --8<-- "content/team/cque.md"
+
+{% include "licenses/default.md" %}
