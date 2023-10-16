@@ -22,9 +22,9 @@ tags:
 ---
 
 
-# Panoramax, quel bilan tirer de la phase de construction?
+# Panoramax, quel bilan tirer de la phase de construction ?
 
-:calendar: Date de publication initiale : 3 octobre 2023
+:calendar: Date de publication initiale : 16 octobre 2023
 
 C'était il y a un an... l'[IGN](https://www.ign.fr/) répondait à la proposition d'[OpenStreetMap France](https://www.openstreetmap.fr/) et se lançait dans une phase d'investigation pour la création d'un Street-View libre nommé Panoramax. Aujourd'hui, où en est-on ?
 
@@ -96,7 +96,7 @@ Elle permet de naviguer sur un fond de carte, de visualiser les séquences de ph
 
 ## Les outils de versement
 
-Le premier outil proposé par [la start-up d'état de Panoramax](<https://beta.gouv.fr/startups/vues-immersives-libres.html>) a visé les versements en masse de prises de vue existantes. C'est [un outil en ligne de commande](<https://gitlab.com/geovisio/cli>) (écrit en python) qui permet de verser des dossiers entiers d'images.
+Le premier outil proposé par [la start-up d'Etat de Panoramax](<https://beta.gouv.fr/startups/vues-immersives-libres.html>) a visé les versements en masse de prises de vue existantes. C'est [un outil en ligne de commande](<https://gitlab.com/geovisio/cli>) (écrit en python) qui permet de verser des dossiers entiers d'images.
 
 Depuis début septembre, un second outil de versement est disponible sous la forme d'[une interface web](<https://panoramax.ign.fr/envoyer#focus=map&map=5.7/47/3&speed=250>) utilisable avec un simple navigateur. On peut y glisser-déposer les photos à verser, qui sont ensuite envoyées par le navigateur vers l'instance Panoramax.
 
