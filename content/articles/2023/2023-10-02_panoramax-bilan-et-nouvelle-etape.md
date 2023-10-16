@@ -152,6 +152,7 @@ Et beaucoup d'autres encore à inventer. À suivre !
 
 ----
 
-## Autrice
+## Auteurs
 
---8<-- "content/team/mfer.md"
+--8<-- "content/team/mfer.md"  
+--8<-- "content/team/cque.md"
