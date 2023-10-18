@@ -1,0 +1,102 @@
+{# Structured data using schema.org #}
+{% if type == "article" %}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.canonical_url }}"
+      },
+      "headline": "{{ title }}",
+      "abstract": "{{ description }}",
+      "datePublished": "{{ date }}",
+      "image": "{{ image }}",
+      {% if "rdp/" in page.canonical_url %}
+        {# GeoRDP #}
+        "author": {
+          "@type": "Organization",
+          "name": "{{ config.site_author }}",
+          "url": "{{ config.site_url }}"
+        },
+      {% elif author is iterable and (author is not string and author is not mapping) %}
+        {% if author | length > 1 %}
+          {# plusieurs auteurs #}
+          "author": [
+          {% for a in author %}
+              {% if a != config.site_author %}
+                {% set author_split = a.split(' ', 1) %}
+                {
+                "@type": "Person",
+                "name": "{{ a }}",
+                "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
+                {% if a != author|last %}
+                {# Si l'auteur n'est pas le dernier de la liste, on ajoute une virgule #}
+                  },
+                {% else %}
+                {# Si c'est le dernier, pas de virgule #}
+                  }
+                {% endif %}
+              {% endif %}
+          {% endfor %}
+          ],
+        {% elif author[0] == config.site_author %}
+         {# un seul auteur qui est Geotribu #}
+          "author": {
+            "@type": "Organization",
+            "name": "{{ config.site_author }}",
+            "url": "{{ config.site_url }}"
+          },
+        {% else %}
+
+         {# un seul auteur qui n'est pas Geotribu #}
+          {% set author_split = author[0].split(' ', 1) %}
+
+          "author": {
+            "@type": "Person",
+            "name": "{{ author[0] }}",
+            "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
+          },
+        {% endif %}
+      {% else %}
+        {# Par défaut #}
+        "author": {
+          "@type": "Organization",
+          "name": "{{ config.site_author }}",
+          "url": "{{ config.site_url }}"
+        },
+      {% endif %}
+      "publisher": {
+        "@type": "Organization",
+        "name": "Geotribu",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+        }
+      }
+    }
+    </script>
+{% elif type == "website" %}
+<script type='application/ld+json'>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Geotribu",
+        "alternateName": "Géotribu",
+        "url": "{{ config.site_url }}",
+        "sameAs": [
+          "http://geotribu.fr",
+          "http://geotribu.net",
+          "https://github.com/geotribu/",
+          "https://facebook.com/geotribu",
+          "https://mapsoton.space/geotribu",
+          "https://twitter.com/geotribu"
+        ],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ config.site_url }}?q={search_term}",
+          "query-input": "required name=search_term"
+        }
+      }
+  </script>
+{% endif %}
