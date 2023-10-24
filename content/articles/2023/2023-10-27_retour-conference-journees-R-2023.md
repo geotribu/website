@@ -167,7 +167,7 @@ Il a rappelé que ggplot2, a été en 2007 une révolution en faisant passer R d
 
 ![Logo de happign](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/happign.webp){: .img-rdp-news-thumb }
 
-L'[IGN a présenté LE package](https://www.youtube.com/watch?v=Ha44VTGhOVo) qui permet d'accéder à toutes ses données, Lidar compris : ⭐ happign ⭐. C'est un des éléments qui me fait aimer R et me pousse à m'y former : la facilité d'accès aux données avec le logiciel.
+L'[IGN a présenté LE package](https://www.youtube.com/watch?v=Ha44VTGhOVo) qui permet d'accéder à toutes ses données, Lidar compris : :star: happign :star:. C'est un des éléments qui me fait aimer R et me pousse à m'y former : la facilité d'accès aux données avec le logiciel.
 
 ----
 
@@ -177,7 +177,7 @@ L'[IGN a présenté LE package](https://www.youtube.com/watch?v=Ha44VTGhOVo) qui
 
 On l'a indiqué, ces journées R portaient spécialement sur le spatial. Timothée Giraud (UAR RIATE) est donc venu [présenter le travail autour de ce package phare](https://www.youtube.com/watch?v=rzARlulrVgQ).
 
-Il a commencé par un historique rappelant la généalogie des différents packages qui intègrent la géographie et qui petit à petit permis l'émergence de ⭐mapsf⭐ .
+Il a commencé par un historique rappelant la généalogie des différents packages qui intègrent la géographie et qui petit à petit permis l'émergence de :star: mapsf :star: .
 
 On l'a dit plus haut, mapsf s'appuie sur le standard *simple feature* (aussi mobilisé par PostGIS) pour importer, exporter et faire les géotraitements de données géographiques. Il est également revenu sur la mise à la retraite d'un package, exemplaire selon lui de ce qu'il faut bien faire dans la communauté (ne négligez donc pas les stages de préparation à la retraite).
 
