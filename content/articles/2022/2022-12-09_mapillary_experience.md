@@ -40,7 +40,7 @@ tags:
 
 ## Intro
 
-![Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Mapillary"){: .img-rdp-news-thumb }
+![Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Mapillary"){: .img-thumbnail-left }
 
 Cet article s'inscrit dans la continuité de l'article que j'avais intitulé [accéder aux données Mapillary et les intégrer dans son SIG](2022-05-31_donnees_mapillary.md). En effet, au moment où celui-ci avait été rédigé, je n'étais pas encore équipé pour réaliser des vues immersives. C'est maintenant chose faite et je vous propose un retour d'expérience qui je l'espère permettra d'alimenter discussions et réflexions sur le sujet.
 
@@ -53,7 +53,7 @@ Cet article s'inscrit dans la continuité de l'article que j'avais intitulé [ac
 
 ### Le point de départ
 
-![logo GoPro](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GoPro.jpg "logo GoPro"){: .img-rdp-news-thumb }
+![logo GoPro](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GoPro.jpg "logo GoPro"){: .img-thumbnail-left }
 
 J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes. L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en place dans différentes structures comme la [CA du Grand Montauban](https://prezi.com/p/ufcelyteyqzc/n-street-view-libre_retour_experience_grandmontauban_aitf/) ou l'Agglomération Val Parisis. Je suis donc parti sur :
 

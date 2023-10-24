@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 29 octobre 2009
 
-![logo GeoServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo GeoServer"){: .img-rdp-news-thumb }
+![logo GeoServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo GeoServer"){: .img-thumbnail-left }
 
 Lors d'un précédent [billet](http://geotribu.net/node/122) nous avions déjà annoncé la disponibilité de GeoServer 2.0, néanmoins à l'époque cette version n'était encore qu'une release candidate. Depuis, plusieurs mois sont passés mais c'était le temps nécessaire aux développeurs pour corriger les derniers bugs et de nous offrir une version stable.  
 Plusieurs modifications importantes dont les plus visibles portent sur l'interface utilisateur et administrateur ont été apportées ce qui fait de l'aveu même de l'équipe de GeoServer, une version majeure (pour plus de détails consultez ce [billet](http://blog.geoserver.org/2009/10/26/geoserver-2-0-released/)). GeoServer 2.0 est donc disponible en [téléchargement](http://geoserver.org/display/GEOS/GeoServer+2.0.0) depuis quelques jours, pour les personnes que les fichiers mapfile rebutent je vous conseille fortement ce moteur cartographique très user friendly.

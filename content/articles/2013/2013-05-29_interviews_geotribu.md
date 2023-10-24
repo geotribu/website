@@ -26,7 +26,7 @@ Le déroulement se fera de la manière suivante, une semaine avant l'événement
 
 Une fois le hangout terminé, le contenu vidéo de celui-ci mais aussi les réponses aux questionnaires que nous lui avons soumis seront publiés sur le site. Nous ne sommes qu'au début du projet, il est donc possible que l'organisation de ce nouveau contenu change en fonction des retours d'expérience et de vos remarques. N'hésitez donc pas à nous faire part des améliorations potentielles que vous pourriez envisager.  
 
-![Portrait David Jonglez](https://cdn.geotribu.fr/img/articles-blog-rdp/interview/IMG_1300-256.jpg "Portrait David Jonglez"){: .img-rdp-news-thumb }
+![Portrait David Jonglez](https://cdn.geotribu.fr/img/articles-blog-rdp/interview/IMG_1300-256.jpg "Portrait David Jonglez"){: .img-thumbnail-left }
 
 Il est temps maintenant de vous annoncer le nom de celui qui a bien voulu s'essayer à cet exercice. C'est à la fois pour nous un grand plaisir, mais aussi un véritable honneur d'accueillir notre premier invité : **David Jonglez**. Ce choix a été guidé par une double actualité. Premièrement, sa récente évolution professionnelle qui l'a vu quitter le centre d'excellence GIS de Cap Gemini dont il était le responsable, pour intégrer l'équipe d'ESRI au sein du pôle Business Development. Deuxièmement les récentes discussions autour de la vision Open Source d'ESRI et notamment les discussions entre l'OSGEO et l'OGC à propos du standard REST. Pour avoir déjà lu une partie du contenu de l'interview, je vous assure que cela est passionnant ! Exceptionnellement les delais de ce hangout seront un peu raccourci. En effet, nous accueillerons David Jeudi 30 Mai et demain sera publié le texte de son interview. Réservez donc votre place et rejoignez-nous pour le hangout.
 

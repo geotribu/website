@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 19 janvier 2011
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Dans un précédent tutoriel portant sur OpenStreetMap [Créez votre propre serveur OpenStreetMap sous Ubuntu 10.04 Lucid Lynx](http://www.geotribu.net/node/262), nous vous faisions importer des données dans la base de données PostgreSQL mais sans vous apprendre à les explorer rapidement.  
 

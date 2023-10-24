@@ -22,7 +22,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 De la même manière que le troisième tutoriel sur l'affichage d'un marqueur, il est possible de définir et d'afficher une polyligne sur la carte.
 

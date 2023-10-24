@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 avril 2010
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Il y a quelques semaines en parcourant les différents flux rss auxquels je suis abonné, j'étais tombé sur un billet du site [kelsocartography](http://kelsocartography.com/blog/?p=3476) listant les différentes interventions présentées lors du [Volunteered Geographic Information Workshop](http://cegis.usgs.gov/vgi/results.html) organisé par le [CEGIS](http://cegis.usgs.gov/).
 

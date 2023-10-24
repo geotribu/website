@@ -19,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 08 janvier 2010
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Rappelez-vous il y a quelques temps (cf [billet](http://geotribu.net/node/156)) nous vous avions parlé de [MapOSMatic](http://www.maposmatic.org/) dont l'objectif est de pouvoir créer son propre plan de ville (carte + index) à partir des données d'[OpenStreetMap](https://www.openstreetmap.org/). L'accueil que lui avait alors réservé toute la communauté était à la hauteur de la qualité de l'application. J'avais, pour ma part, été impressionné par l'utilité, la beauté et l'expertise technique de MapOSMatic.
 

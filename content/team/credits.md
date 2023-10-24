@@ -31,7 +31,7 @@ L'aventure de Geotribu est rendue possible par l'existence de ressources et d'ou
 
 ## Outils libres
 
-![icône open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "icône open source"){: .img-rdp-news-thumb }
+![icône open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "icône open source"){: .img-thumbnail-left }
 
 Le site repose énormément sur des solutions libres et nous tenons à remercier les personnes mettant ainsi leur travail à la disposition de tout le monde :
 

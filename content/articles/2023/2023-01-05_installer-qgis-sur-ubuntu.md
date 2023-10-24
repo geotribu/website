@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-![logo Ubuntu](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/ubuntu.svg "logo Ubuntu"){: loading=lazy .img-rdp-news-thumb }
+![logo Ubuntu](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/ubuntu.svg "logo Ubuntu"){: loading=lazy .img-thumbnail-left }
 
 Ça peut paraître idiot dit comme ça, mais je trouve qu'installer le logiciel SIG open source le plus utilisé sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des difficultés, y compris à des utilisateurs quotidiens des deux outils.
 
@@ -217,7 +217,7 @@ On référence alors dans un fichier `/etc/apt/sources.list.d/qgis.sources` :
 
 ## Installation de QGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Allez, tout est désormais fin prêt, on passe à l'installation !  
 On met à jour la liste des paquets accessibles depuis qu'on a ajouté le dépôt :

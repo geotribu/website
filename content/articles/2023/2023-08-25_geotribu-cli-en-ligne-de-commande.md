@@ -31,7 +31,7 @@ Prérequis :
 
 ## Introduction
 
-![logo Geotribu CLI](https://cdn.geotribu.fr/img/internal/charte/geotribu_cli_logo.webp){: .img-rdp-news-thumb }
+![logo Geotribu CLI](https://cdn.geotribu.fr/img/internal/charte/geotribu_cli_logo.webp){: .img-thumbnail-left }
 
 Que ce soit pour concevoir un (éphémère) [scan Isogeo hors-ligne](https://help.isogeo.com/scan/isogeo-scan-offline/), en tant qu'indépendant (notamment pour Tactis et des traitements liés à GraceTHD) et ces derniers mois pour la Géoplateforme de l'IGN ou [QDT](https://guts.github.io/qgis-deployment-cli/) en tant qu'Oslandien, j'ai eu l'occasion de développer pas mal d'outils en ligne de commande ([CLI](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande) pour les intimes).
 
@@ -96,7 +96,7 @@ Le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis u
 
 ### Tester l'installation
 
-![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-rdp-news-thumb }
+![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-thumbnail-left }
 
 Comme pour tout autre outil, pour vérifier que l'installation s'est déroulée correctement, il est de bon ton d'exécuter les commandes de base : `--version` et `--help` (sorties non contractuelles :wink:) :
 

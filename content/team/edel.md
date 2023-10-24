@@ -1,6 +1,6 @@
 # Etienne Delay  {: data-search-exclude }
 
-![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/edel.jpg "portrait"){: .img-rdp-news-thumb }
+![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/edel.jpg "portrait"){: .img-thumbnail-left }
 
 Je suis géographe avec une entrée en géographie sociale par la modélisation et la simulation informatique à base d'agents. Je mène des recherches sur les manifestations géographiques (spatiale) de l'entraide et de la coopération. J'ai développé une méthodologie de recherche basée sur le travail de terrain et la modélisation d'accompagnement.
 

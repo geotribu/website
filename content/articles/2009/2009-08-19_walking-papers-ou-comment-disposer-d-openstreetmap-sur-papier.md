@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 19 août 2009
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Dans le cadre d'un projet tel que [OpenStreetMap](https://www.openstreetmap.org/) (OSM) le GPS est l'outil idéal pour enregistrer précisément un parcours. Mais qu'en est-il des informations qu'il est possible de lui rattacher, comment saisir par exemple les numéros des maisons ou encore la position des feux tricolores? Dans ce cas rien ne remplace une bonne feuille de papier et un fond de carte. Néanmoins reste le problème de la (re)-saisie de ces informations afin de les intégrer ensuite dans la base d'OSM.
 
@@ -30,7 +30,7 @@ En fait, lors des exemples ci-dessus vous vous êtes peut-être demandé à quoi
 
 ![Paper Map](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/walking_papers_paper_map.png "Paper Map"){: .img-center loading=lazy }
 
-![qr_code geotribu](https://cdn.geotribu.fr/img/internal/qrcode/qrcode_geotribu_fr.png "QR Code du site Geotribu"){: .img-rdp-news-thumb }
+![qr_code geotribu](https://cdn.geotribu.fr/img/internal/qrcode/qrcode_geotribu_fr.png "QR Code du site Geotribu"){: .img-thumbnail-left }
 
 La technologie du QR Code peine à percer en Europe, mais il faut savoir qu'au Japon celle-ci est quotidiennement utilisée ([video dailymotion](https://www.dailymotion.com/video/xemuk_japon-qr-code_tech)). Néanmoins, certains projets tentent de démocratiser son utilisation comme c'est le cas de [Mobulles](2009-03-26_toulouse_ville_numerique.md) que nous avions déjà présenté.
 

@@ -19,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 17 juillet 2009
 
-![SOLAP](https://cdn.geotribu.fr/img/logos-icones/divers/solap.png "SOLAP"){: .img-rdp-news-thumb }
+![SOLAP](https://cdn.geotribu.fr/img/logos-icones/divers/solap.png "SOLAP"){: .img-thumbnail-left }
 
 Empruntés au monde de la **B**usiness **I**ntelligence (BI), les **S**ystèmes d'**A**ide à la **D**écision (SAD) apportent aux décideurs un haut degré d'abstraction facilitant ainsi le processus décisionnel. Néanmoins alors que l'on assiste à une véritable explosion de la spatialisation de l'information (environ 80% des données ont une composante spatiale ) peu de ces systèmes intègrent ce nouvel élément. A contrario les Systèmes d'Informations Géographiques (SIG) basés sur l'utilisation de cette dimension spatiale sont difficilement exploitables en tant qu'outil d'aide à la décision.  
 

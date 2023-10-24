@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 mars 2010
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 Les librairies javascript orientées cartographie et localisation fleurissent sur le web. Mais, si cette richesse est bénéfique, passer de l'une à l'autre nécessite toujours un temps d'adaptation. En effet, il faut se réhabituer à l'API, aux différents objets et méthodes, à l'architecture...  
 Imaginez maintenant, une librairie de plus haut au niveau qui aurait à charge d'unifier ([wrapper](https://en.wikipedia.org/wiki/Wrapper_library)) tout cela au sein d'une même API? C'est ce que fait [YQL Geo Library](http://isithackday.com/hacks/geo/yql-geo-library/).

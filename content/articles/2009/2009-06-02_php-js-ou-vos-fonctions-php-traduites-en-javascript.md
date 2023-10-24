@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 02 juin 2009
 
-![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-rdp-news-thumb }
+![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-thumbnail-left }
 
 Passer d'un langage à l'autre est toujours contraignant, les syntaxes ou encore la manière de nommer les variables sont différentes, les fonctions que vous utilisez dans l'un ne sont pas présentes dans l'autre etc...
 

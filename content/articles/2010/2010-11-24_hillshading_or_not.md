@@ -18,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 24 novembre 2010
 
-![Imagimap Hillshading](https://cdn.geotribu.fr/img/logos-icones/divers/imagimap.png){: .img-rdp-news-thumb }
+![Imagimap Hillshading](https://cdn.geotribu.fr/img/logos-icones/divers/imagimap.png){: .img-thumbnail-left }
 
 Vous reprendrez bien un peu d'ombrage ... Je trouve les rendus OSM ou Google Maps un peu trop lisse à mon goût.  
 Par contre, j'aime bien le relief que propose la vue TERRAIN de Google ; alors comment concilier les rendus Mapnik et Google Maps normal avec de l'ombrage ?

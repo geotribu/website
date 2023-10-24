@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 09 février 2011
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Participer au projet OpenStreetMap peut revêtir différentes formes. Si pour la plus grande majorité des contributeurs, cela consiste à uploader des fichiers GPX ou à digitaliser les données, sachez qu'il existe d'autres moyens de s'investir.  
 L'un d'entre eux consiste à offrir un peu des ressources de votre ordinateur. En effet, la production des cartes requiert d'importants besoins en terme de calcul. Il s'agit alors de distribuer ces opérations sur des ordinateurs hôtes. L'idée n'est pas nouvelle, le projet [SETI@home](http://setiathome.ssl.berkeley.edu/) se proposait déjà de faire de même afin de rechercher l'existence d'une vie extraterrestre. Mais revenons à nos moutons et voyons comment adopter cela à notre problématique cartographique.

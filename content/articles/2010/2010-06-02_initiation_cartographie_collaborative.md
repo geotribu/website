@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 02 juin 2010
 
-![logo OSM/OSGEO](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osm_osgeo.png "logo OSM/OSGEO"){: .img-rdp-news-thumb }
+![logo OSM/OSGEO](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osm_osgeo.png "logo OSM/OSGEO"){: .img-thumbnail-left }
 
 Suite au rapprochement probable (je l'espère) d'OSM-fr et de de l'OSGEO une réunion d'information aura lieu à la maison de la télédétection le Samedi 26 Juin.  
 Celle-ci sera également l'occasion, pour les personnes désireuse de connaitre plus en détail ce projet, de participer à une journée d'initiation.

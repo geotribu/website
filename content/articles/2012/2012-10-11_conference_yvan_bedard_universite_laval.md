@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 11 octobre 2012
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 Si vous êtes dans la région PACA et que vous vous intéressez à la géomatique, alors sortez vos agendas. En effet,le [Professeur Yvan Bédard](http://yvanbedard.scg.ulaval.ca/) de l'[Université Laval](http://www.ulaval.ca/) à Québec donnera une conférence sur le [Spatial OLAP](http://www.spatialbi.org/) et le langage de modélisation PictograF, à [MINES ParisTech, Sophia Antipolis](http://www.sophia.mines-paristech.fr/), le mardi 6 novembre 2012 à 14h. La conférence se déroulera dans l'amphi Mozart et les détails de celle-ci sont détaillés ci-dessous :
 
@@ -44,7 +44,7 @@ Aujourd’hui, cette technologie est offerte par plusieurs compagnies, tant par 
 
 ## Biographie du professeur Yvan Bédard
 
-![Yvan Bédard](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/bedard-yvan.jpg "Yvan Bédard"){: .img-rdp-news-thumb }
+![Yvan Bédard](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2012/bedard-yvan.jpg "Yvan Bédard"){: .img-thumbnail-left }
 
 Le Professeur Yvan Bédard est ingénieur professeur en SIG et Bases de données géospatiales à l'Université Laval à Québec. Très actif en recherche depuis 32 ans, il a contribué à plus de 150 publications avec comité de lecture et 350 autres conférences, articles et rapports scientifiques. Directeur-fondateur et encore membre du Centre de Recherche en Géomatique, il a dirigé des projets de R&D pour plus de 12 millions d'euros autant en recherche fondamentale qu'appliquée.  
 Il vient d'ailleurs de compléter une importante Chaire de recherche industrielle avec 9 partenaires privés et gouvernementaux et de créer avec son équipe la compagnie Intelli3 qui commercialise la technologie Map4Decision issue de leurs travaux. En plus de cette technologie qui fut la première technologie géodécisionnelle disponible commercialement, il développa dès 1992 le premier atelier de génie logiciel dédié aux données géospatiales.  

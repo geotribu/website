@@ -19,7 +19,7 @@ tags:
 
 ## Introduction
 
-![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-rdp-news-thumb}
+![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-thumbnail-left}
 
 L'API Google Maps peut se coupler également avec l'API Google Earth Plugin (cf. les [tutoriaux](http://www.geotribu.net/node/23)) en ajoutant un bouton permettant de switcher entre les deux vues 2D et 3D.  
 

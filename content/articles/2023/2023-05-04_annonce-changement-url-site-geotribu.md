@@ -19,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 5 mai 2023
 
-![logo GeoTribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp){: .img-rdp-news-thumb loading=lazy }
+![logo GeoTribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp){: .img-thumbnail-left loading=lazy }
 
 Voilà 3 ans que Geotribu est de retour après une [coupure de service de... 3 ans](../2020/2020-08-31_geotribu_histoire.md).  
 

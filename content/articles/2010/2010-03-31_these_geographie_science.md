@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 31 mars 2010
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 Le Laboratoire Interdisciplinaire Solidarités, Sociétés, Territoires (LISST), équipe CIEU (UMR5193), à l'Université du Mirail Toulouse propose un contrat doctoral Géographie de la Science.  
 

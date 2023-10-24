@@ -17,13 +17,13 @@ tags:
 
 :calendar: Date de publication initiale : 02 septembre 2009
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Cela faisait longtemps que l'envie de m'impliquer dans le projet **O**pen**S**treet**M**ap (OSM) me titillait. Profitant donc de mes congés, j'ai pu faire mes 1ers pas de "mappeur de la route". Sur les aspects théoriques, le fait que je vienne du monde de la géomatique ainsi que mon expérience dans les bases de données routières a grandement facilité mon initiation. Il ne me restait alors qu'a régler les problèmes d'ordres techniques, c'est à dire le GPS, le logiciel qui me permettrait d'extraire mes données GPS et enfin comprendre JOSM l'une des applications permettant de travailler sur les données d'OSM tout en prenant en compte le fait que je travaille sur Ubuntu.
 
 ## Le GPS
 
-![logo Holux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/holux_GPSport.jpg "logo Holux"){: .img-rdp-news-thumb }
+![logo Holux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/holux_GPSport.jpg "logo Holux"){: .img-thumbnail-left }
 
 Première difficulté trouver un GPS "tracker". Après avoir consulté [la liste](https://wiki.openstreetmap.org/wiki/GPS_Reviews) des GPS déjà testés par les équipes d'OSM, je me suis orienté vers le modèle GPSport 245 d'Holux.
 

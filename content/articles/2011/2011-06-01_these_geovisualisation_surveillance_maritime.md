@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 01 juin 2011
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 La recherche vous intéresse, vous aimez les SIG et la géovisualisation alors n'hésitez pas, postulez pour l'offre de thèse portant sur la "Contribution de la géovisualisation à la surveillance maritime".
 

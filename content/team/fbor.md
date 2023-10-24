@@ -1,6 +1,6 @@
 # Florian Boret  {: data-search-exclude }
 
-![Portrait Florian Boret](https://cdn.geotribu.fr/img/internal/contributeurs/fbor.png "Portrait Florian Boret"){: .img-rdp-news-thumb }
+![Portrait Florian Boret](https://cdn.geotribu.fr/img/internal/contributeurs/fbor.png "Portrait Florian Boret"){: .img-thumbnail-left }
 
 Géomaticien/cartographe, je suis arrivé dans le monde de la géomatique en suivant un cursus « professionnalisant » (BTS Géomètre-Topographe, Licence pro GGAT, Master SIGAT). J’ai ensuite travaillé dans un bureau d’études spécialisé dans la production de données d’occupation du sol et puis pour des raisons personnelles je me suis expatrié quelques années au Sénégal où je me suis lancé comme géomaticien indépendant ([DATA\WAX](https://www.data-wax.com/)).
 

@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-![logo MapServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapserver.png "logo MapServer"){: .img-rdp-news-thumb }
+![logo MapServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapserver.png "logo MapServer"){: .img-thumbnail-left }
 
 Ce tutoriel est une traduction d'un [billet](http://www.bostongis.com/?content_name=umn_datasources#19) parut sur l'excellent site [BostonGis](http://www.bostongis.com/). Au cours de celui-ci, nous apprendrons à utiliser l'une des fonctionnalités les plus intéressantes de MapServer qu'est la possibilité d'accéder à de multiples sources de données. Même si les exemples présentés ont été réalisés avec la version 4.6 de MapServer ils restent applicables pour les versions antérieures.
 

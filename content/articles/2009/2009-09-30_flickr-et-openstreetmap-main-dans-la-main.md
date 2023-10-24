@@ -18,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 30 septembre 2009
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 L'entente entre Flickr (Yahoo) et OpenStreetMap (OSM) ne date pas d'aujourd'hui. En effet, il y a un peu plus d'un an Flickr avait décidé d'utiliser les fonds d'OSM là ou leur cartographie n'était pas suffisamment précise. C'était pour Yahoo, qui avait laissé les usagers d'OSM utiliser ses propres images aériennes afin d'aider à la digitalisation des routes, un juste retour de chose .
 

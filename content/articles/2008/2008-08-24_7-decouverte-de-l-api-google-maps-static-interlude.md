@@ -19,7 +19,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 Google propose une version simplifiée de l'API Google Maps : l'[API Google Maps Static](http://code.google.com/intl/fr/apis/maps/documentation/staticmaps/). Cette API est destinée aux développeurs qui ne veulent pas utiliser l'API standard ou pour les développements qui ne nécessitent pas de déplacement dans la carte, de changement de zoom ou de changement de vue.  
 

@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 mai 2009
 
-![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-rdp-news-thumb }
+![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-thumbnail-left }
 
 Les initiatives et les travaux de synthèse liés à la géomatique fleurissent en ce moment sur le net. Le dernier en date? [L'Annuaire SIG](http://annuairesig.org/). Fruit d'un travail commun entre le [ForumSIG](http://www.forumsig.org/), [GéoRézo](http://georezo.net/) et [le Petit Bazar Cartographique](http://w3.geoprdc.univ-tlse2.fr/bazarcarto/index.php) ce nouveau service regroupe l'essentiel des ressources accumulées depuis l'existence de ces trois sites.
 

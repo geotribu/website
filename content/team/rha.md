@@ -1,6 +1,6 @@
 # Régis Haubourg {: data-search-exclude }
 
-![Portrait Régis Haubourg](https://cdn.geotribu.fr/img/internal/contributeurs/rha.jpg "Portrait Régis Haubourg"){: .img-rdp-news-thumb }
+![Portrait Régis Haubourg](https://cdn.geotribu.fr/img/internal/contributeurs/rha.jpg "Portrait Régis Haubourg"){: .img-thumbnail-left }
 
 Ingénieur agronome puis géomaticien, j'ai découvert la géomatique en 2000 (ça commence à dater) et mes mauvaises fréquentations des débuts m'ont fait tomber dans la potion magique de l'open source en 2005.
 

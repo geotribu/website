@@ -23,7 +23,7 @@ tags:
 
 :calendar: Date de publication initiale : 13 décembre 2010
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 L'annonce de [Microsoft](http://www.bing.com/community/site_blogs/b/maps/archive/2010/11/23/bing-engages-open-maps-community.aspx) en fin d'année et celle de [MapQuest](http://blog.mapquest.com/) durant l'été auront des répercussions sur OpenStreetMap. Une des plus visibles est la mise à disposition des images aériennes et satellites de Bing à des fins de numérisation.
 

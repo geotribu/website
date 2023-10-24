@@ -27,7 +27,7 @@ Pré-requis : une connexion internet.
 
 ## Intro
 
-![icône matière](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "matière"){: .img-rdp-news-thumb }
+![icône matière](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "matière"){: .img-thumbnail-left }
 
 A l'instar de nombreux sites webs, Geotribu est un site statique, cela signifie :
 

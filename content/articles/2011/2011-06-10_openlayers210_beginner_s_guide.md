@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 10 juin 2011
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Il y a quelques mois nous vous avions annoncé la disponibilité de l'ouvrage [OpenLayers 2.10 Beginner's Guide](https://www.packtpub.com/openlayers-2-1-javascript-web-mapping-library-beginners-guide/book). Ecrit par Eric Hazzard et édité par pakt publishing, ce livre couvre sur près de 300 pages l'ensemble des concepts de la fameuse librairie cartographique [Openlayers](https://openlayers.org/).
 

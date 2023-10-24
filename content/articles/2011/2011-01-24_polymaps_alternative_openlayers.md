@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 24 janvier 2011
 
-![logo polymaps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/polymaps.png){: .img-rdp-news-thumb }
+![logo polymaps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/polymaps.png){: .img-thumbnail-left }
 
 Cela faisait longtemps que j'avais l'onglet du site de [PolyMaps](http://polymaps.org/) ouvert dans mon navigateur. Par manque de temps, je n'avais pas encore eu l'occasion d'explorer cette récente bibliothèque cartographique. Développant principalement sur l'API Google Maps et [OpenLayers](https://openlayers.org/), j'avais envie de tester la capacité de cette bibliothèque et de juger si celle-ci pouvait à terme devenir une réelle alternative.  
 

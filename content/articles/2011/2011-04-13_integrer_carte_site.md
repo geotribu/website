@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 13 avril 2011
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 Même si des API de plus en plus puissantes et faciles d'utilisation sont disponibles, l'intégration d'une carte au sein d'un site Internet requiert quelques compétences. Paradoxalement, les besoins des utilisateurs sont souvent limités à l'affichage de points et d'infobulles. De ce constat, sont nés différents services permettant d'ajouter facilement et rapidement une carte à votre site. Notre objectif n'est pas de présenter toutes les solutions possibles, néanmoins si vous en connaissez d'autres, les commentaires sont les bienvenus. Dans ce billet nous nous attacherons à présenter CartOsm qui utilise les données OpenStreetMap et Click2Map qui s'appuie sur les données de Google Maps.
 

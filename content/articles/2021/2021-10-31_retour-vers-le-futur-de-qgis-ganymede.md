@@ -19,7 +19,7 @@ tags:
 
 ## Introduction
 
-![icône citrouille](https://cdn.geotribu.fr/img/logos-icones/divers/citrouille.png "icône citrouille"){: .img-rdp-news-thumb }
+![icône citrouille](https://cdn.geotribu.fr/img/logos-icones/divers/citrouille.png "icône citrouille"){: .img-thumbnail-left }
 
 Ces jours-ci je formais quelques éminents membres des [CEN](https://fr.wikipedia.org/wiki/Conservatoire_d%27espaces_naturels) sur [le déploiement de QGIS sur un parc informatique](https://oslandia.com/formations/qgis9-administration-dun-parc-qgis/) (principalement Windows) et, lors d'une de mes rares digressions, j'ai eu l'inspiration de télécharger la version la plus ancienne de QGIS encore disponible au téléchargement.
 
@@ -34,7 +34,7 @@ Alors, plus de 12 ans après [notre article "A la découverte de Quantum GIS 1.0
 
 ## Installation
 
-![Ancien logo de QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis_old.png "Ancien logo de QGIS"){: .img-rdp-news-thumb }
+![Ancien logo de QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis_old.png "Ancien logo de QGIS"){: .img-thumbnail-left }
 
 Le site officiel indique [où trouver les anciennes versions](https://download.osgeo.org/qgis/), y'a plus qu'à se servir. J'ai opté pour la plus vieille : la [0.9.1 Ganymède, mise en ligne le 18 décembre 2007](https://download.osgeo.org/qgis/windows/qgis_setup0.9.1.18_12_2007.exe).
 
@@ -57,7 +57,7 @@ La première chose que l'on remarque, c'est que comme bon nombre d'entre nous, Q
 
 ## Retour aux sources
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Mais qu'y avait-il donc dans Quantum GIS avant même sa version 1, seuil conventionnel de stabilisation d'un logiciel ?  
 A l'époque où [Esri investissait près de 20% de son CA en R&D, sortait ArcExplorer, ArcGIS for AutoCAD et amorçait ArcGIS Online](https://www.esri.com/news/arcnews/winter0708articles/arcgis-product-suite.html), que MapInfo, alors principal logiciel SIG dans les institutions françaises, [était racheté par Pitney Bowes](https://www.investorrelations.pitneybowes.com/news-releases/news-release-details/pitney-bowes-completes-acquisition-mapinfo) et que l'open source géospatial proposait entre autres [Puzzle GIS](../2009/2009-05-24_a-la-decouverte-de-puzzle-gis.md), [OpenJump](../2009/2009-05-31_a-la-decouverte-d-openjump.md), [uDig](../2009/2009-06-07_a-la-decouverte-de-udig.md) ?
@@ -80,7 +80,7 @@ Eh bien, voici quelques captures :
 
 ## Challenge : une carte avec un logiciel de 2007
 
-![icône accident](https://cdn.geotribu.fr/img/logos-icones/divers/accident.png "icône accident"){: .img-rdp-news-thumb }
+![icône accident](https://cdn.geotribu.fr/img/logos-icones/divers/accident.png "icône accident"){: .img-thumbnail-left }
 
 Chaud comme j'étais, je me suis dit : et si je faisais une carte avec QGIS 0.9 en utilisant des données d'aujourd'hui ?
 

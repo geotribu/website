@@ -28,7 +28,7 @@ Pré-requis :
 
 ## Intro
 
-![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }
+![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-thumbnail-left }
 
 Après avoir présenté la génèse et détaillé la démarche de notre petit projet de carte des liens IGN, voici venir le second volet consacré à l'exécution complètement automatisée et paramétrable des scripts puis du déploiement tout aussi automatique.
 
@@ -49,7 +49,7 @@ L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticip
 
 ### Variables d'environnement et fichier de configuration
 
-![logo Ministère de l'Environnement d'Haïti](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/environnement_ministere_haiti.webp "L'environnement, des politiques variables"){: .img-rdp-news-thumb }
+![logo Ministère de l'Environnement d'Haïti](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/environnement_ministere_haiti.webp "L'environnement, des politiques variables"){: .img-thumbnail-left }
 
 Avant de pouvoir automatiser toute la chaîne d'exécution sur une plateforme d'intégration et de déploiement continus (CI/CD pour les intimes), il s'agit de rendre nos scripts paramétrables et indépendants de nos machines individuelles.
 
@@ -138,7 +138,7 @@ graph TD;
 
 ## Le déploiement
 
-![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
+![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-thumbnail-left }
 
 A l'instar de la plupart des autres, [GitHub Actions] consiste à décrire le processus (*workflow* dans la terminologie GitHub) dans la syntaxe [YAML].
 

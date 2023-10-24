@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 L'API Google Maps possède des fonctions de géocodage à l'adresse qui permettent d'obtenir la longitude et la latitude à partir d'une adresse.  
 

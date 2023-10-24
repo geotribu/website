@@ -19,7 +19,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 L'[API Google Maps](http://code.google.com/intl/fr/apis/maps/) permet d'intégrer une carte semblable à [celle de Google](http://maps.google.fr/maps?hl=fr&tab=wl) dans ses pages Web en utilisant un peu de Javascript.
 

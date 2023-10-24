@@ -17,7 +17,7 @@ tags:
 
 ## Etendre l'API d'OpenLayers
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Une fonctionnalité qui , à mon sens, manque à [OpenLayers](http://openlayers.org/ "Site internet <a href=") est la possibilité d'ajouter des "toolTips" sur un marqueur au passage de la souris. J'avais à l'époque réalisé un script, et même si il fonctionnait, il restait trés éloigné des standards de dévellopements. En effet, [OpenLayers](http://openlayers.org/ "Site internet OpenLayers") propose des moyens simples permettant facilement d'étendre l'API actuelle.
 

@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "logo IGN"){: .img-rdp-news-thumb }
+![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "logo IGN"){: .img-thumbnail-left }
 
 C'est parti ! L'IGN lance une consultation publique d'envergure pour  "_dessiner avec les producteurs et utilisateurs de l'information géographique un nouvel horizon, celui des géo-communs_".
 
@@ -43,7 +43,7 @@ Rendez-vous **lundi 10 mai, à 19h** (l'heure du géoapéro :wine_glass:) pour u
 
 ## Suivre et participer
 
-![icône vidéo map](https://cdn.geotribu.fr/img/logos-icones/animation_video.png "icône vidéo map"){: .img-rdp-news-thumb }
+![icône vidéo map](https://cdn.geotribu.fr/img/logos-icones/animation_video.png "icône vidéo map"){: .img-thumbnail-left }
 
 L'interview se fera sous la forme d'une réunion Zoom (merci à [Oslandia](https://oslandia.com/) pour le prêt du compte Pro :wink:) diffusée en direct sur [notre chaîne YouTube](https://www.youtube.com/channel/UCfpO6BcaqxxykBOWJzP_9jg), moyennant une latence variable de 30 à 60 secondes.
 

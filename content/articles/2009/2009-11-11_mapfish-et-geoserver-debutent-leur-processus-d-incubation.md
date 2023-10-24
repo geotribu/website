@@ -18,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 11 novembre 2009
 
-![logo OSGEO](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osgeo.png "logo OSGEO"){: .img-rdp-news-thumb }
+![logo OSGEO](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osgeo.png "logo OSGEO"){: .img-thumbnail-left }
 
 Bien qu'en discussion depuis longtemps, [MapFish](http://www.mapfish.org/) et [GeoServer](http://geoserver.org/display/GEOS/Welcome) débutent officiellement leur processus d'incubation. Cela leur permettra d'être labellisés [OSGEO](http://www.osgeo.org/) et ainsi se placer au même niveau que des poids lourds du GéoSpatial tels que MapServer ou OpenLayers. L'annonce s'est faite sur chacun des blogs respectifs de [MapFish](http://mapfishblog.blogspot.com/2009/11/mapfish-starts-osgeo-incubation-process.html) et [GeoServer](http://blog.geoserver.org/2009/11/09/geoserver-accepted-to-osgeo-incubation/).
 

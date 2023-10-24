@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 14 avril 2009
 
-![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-rdp-news-thumb }
+![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-thumbnail-left }
 
 Alors que la sortie de la version 2.8 d'OpenLayers s'annonce imminente (plus que quelques jours dur dur d'attendre, pour les impatients y'a le SVN), il me parait intéressant d'identifier quelques exemples de mise en application de cette librairie.
 
