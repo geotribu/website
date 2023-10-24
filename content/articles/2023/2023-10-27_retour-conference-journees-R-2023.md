@@ -103,7 +103,7 @@ Ce qui m'a intéressée, [c'est leur méthode](https://www.youtube.com/watch?v=N
 
 ## L'INSEE passe à R
 
-![logo INSEE](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/insee.jpg){: .img-rdp-news-thumb }
+![logo INSEE](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/INSEE.svg){: .img-rdp-news-thumb }
 
 C'est *LA* grande annonce du colloque. L'institution publique de la statistique française passe sur *LE* logiciel libre des statistiques. Un changement pareil ne se fait pas naturellement dans une institution aussi ancienne. Alors comment a-t-elle fait ?
 
