@@ -7,7 +7,7 @@ categories:
 date: "2023-10-27 10:30"
 description: "Formation, astuces, bonnes pratiques et trouvailles. Compte-rendu des rencontres R d'Avignon 2023"
 icon: fontawesome/solid/bridge-water
-image:
+image: https://rr2023.sciencesconf.org/data/header/Banner_Rencontres_R_Avignon_2023_logo_980.png
 license: default
 robots: index, follow
 tags:
