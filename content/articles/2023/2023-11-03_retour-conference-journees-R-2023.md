@@ -40,10 +40,11 @@ Le premier jour des rencontres commence officiellement l'après-midi, le temps q
 
 ![Adorable image d'un hérisson frileux tricotant HTML, Word, PDF, LATEX, sites internet etc... Comme le fait Quarto](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/02_quarto_herisson_frileux_tricote.webp){: .img-center loading=lazy }
 
-> Illustration par Alison Hill and Allison Horst, pour RStudio, tirée de la présentation de Christophe Dervieux.
+> Illustration par Alison Hill and Allison Horst, pour RStudio, tirée de la présentation de Christophe Dervieux.  
+> La [session Quarto](https://cderv.quarto.pub/tuto-quarto-rr2023/) avait l'air ~~piquante~~ très chouette.
 > {: align=middle }
 
-La [session Quarto](https://cderv.quarto.pub/tuto-quarto-rr2023/) avait l'air ~~piquante~~ très chouette.
+
 
 ... j'étais bien évidemment inscrite à l'atelier d'[analyse spatiale avec R](https://github.com/antuki/RR2023_tuto_statspatiale) proposé par Kim Antunez (INSEE) et Etienne Côme (Université Gustave Eiffel). Au programme, carte statistiques, cartes interactives et analyse spatiale avec les deux.
 D'abord on parle des cartes statiques, avec la révolution de "sf" et sa déclinaison spatiale "sfg", soit [*simple feature geometry*](https://r-spatial.github.io/sf/articles/sf1.html), qui a l'avantage d'être composé d'autre chose que de `0` et `1`, ce qui le rend compréhensible par un être humain.
@@ -197,7 +198,7 @@ Ingénieure agronome, elle a été recrutée au CNRS après sa thèse en écolog
 
 C'est de cette expérience de terrain qu'est né son [blog Ratique](https://perso.ens-lyon.fr/lise.vaudor/) et la création de contenus visant à démocratiser R. Un contenu qu'elle a voulu illustré, avec ses propres dessins (tant qu'à faire), avec des couleurs pastels, des ~~GlitteR~~ paillettes et des blagues. Elle propose des [antisèche illustrées](https://perso.ens-lyon.fr/lise.vaudor/utiliser-un-package/) et soignées (devinez les couleurs ? pastels, bravo) et des métaphores visuelles accessibles qui piochent dans la dataviz. Du contenu créé *sur son temps de travail* (et valorisé comme tel par le CNRS).
 
-![Grimoire étrange et poussiéreux dont s'échappent des paillettes - Crédits : Lise Vaudor](https://cdn.geotribu.fr/img/logos-icones/divers/geomaRgie.webp){: .img-rdp-news-thumb loading=lazy }
+![Grimoire étrange et poussiéreux dont s'échappent des paillettes - Crédits : Lise Vaudor](https://cdn.geotribu.fr/img/logos-icones/divers/geomaRgie.webp){: .img-center loading=lazy }
 
 Qui n'a pas envie de faire ~~des paillettes~~ de la géomaRgie ?
 
