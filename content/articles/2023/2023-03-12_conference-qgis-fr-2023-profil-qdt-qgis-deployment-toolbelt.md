@@ -120,7 +120,7 @@ Prérequis complémentaires :
     > WARNING: The scripts qdeploy-toolbelt.exe, qdt.exe and qgis-deployment-toolbelt.exe are installed in 'C:\Users\risor\AppData\Roaming\Python\Python310\Scripts' which is not on PATH.  
     > Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 
-    Il s'agit ajouter le chemin vers le dossier des scripts Python à la variable `PATH` qui liste les dossiers contenant des exécutables. Cela se fait toujours avec PowerShell (adapter avec le chemin de votre installation Python) :
+    Il s'agit d'ajouter le chemin vers le dossier des scripts Python à la variable `PATH` qui liste les dossiers contenant des exécutables. Cela se fait toujours avec PowerShell (adapter avec le chemin de votre installation Python) :
 
     ```powershell
     $Env:PATH += ";$Env:APPDATA\Python\Python310\Scripts"
@@ -173,7 +173,7 @@ Prérequis complémentaires :
 
 ----
 
-## Résulat
+## Résultat
 
 ![Ecran de démarrage du profil conf QGIS FR 2023](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qgis_ecran_demarrage_conf_qgis_fr_2023.png){: .img-center loading=lazy }
 
