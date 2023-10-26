@@ -44,8 +44,6 @@ Le premier jour des rencontres commence officiellement l'après-midi, le temps q
 > La [session Quarto](https://cderv.quarto.pub/tuto-quarto-rr2023/) avait l'air ~~piquante~~ très chouette.
 > {: align=middle }
 
-
-
 ... j'étais bien évidemment inscrite à l'atelier d'[analyse spatiale avec R](https://github.com/antuki/RR2023_tuto_statspatiale) proposé par Kim Antunez (INSEE) et Etienne Côme (Université Gustave Eiffel). Au programme, carte statistiques, cartes interactives et analyse spatiale avec les deux.
 D'abord on parle des cartes statiques, avec la révolution de "sf" et sa déclinaison spatiale "sfg", soit [*simple feature geometry*](https://r-spatial.github.io/sf/articles/sf1.html), qui a l'avantage d'être composé d'autre chose que de `0` et `1`, ce qui le rend compréhensible par un être humain.
 
