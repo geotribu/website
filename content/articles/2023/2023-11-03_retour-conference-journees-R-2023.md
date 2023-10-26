@@ -7,7 +7,7 @@ categories:
 date: "2023-11-3 10:30"
 description: "Formation, astuces, bonnes pratiques et trouvailles. Compte-rendu des rencontres R d'Avignon 2023"
 icon: fontawesome/solid/bridge-water
-image: 
+image:
 license: default
 robots: index, follow
 tags:
@@ -27,7 +27,7 @@ tags:
 
 En juin dernier, Avignon a accueilli les [Rencontres R](https://rr2023.sciencesconf.org/), le plus grand événement français dédié au célèbre logiciel libre de statistiques. Il y avait un invité spécial : le spatial. Ce qui tombe bien, car si je ne suis plus débutante sur ce logiciel, j'ai encore des marches de progression à passer.
 
-C'est de ce point de vue que je propose ce retour sur trois jours de présentations et de discussions. 
+C'est de ce point de vue que je propose ce retour sur trois jours de présentations et de discussions.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -43,14 +43,14 @@ Le premier jour des rencontres commence officiellement l'après-midi, le temps q
 > Illustration par Alison Hill and Allison Horst, pour RStudio, tirée de la présentation de Christophe Dervieux.
 > {: align=middle }
 
-La [session Quarto](https://cderv.quarto.pub/tuto-quarto-rr2023/) avait l'air ~~piquante~~ très chouette. 
+La [session Quarto](https://cderv.quarto.pub/tuto-quarto-rr2023/) avait l'air ~~piquante~~ très chouette.
 
 ... j'étais bien évidemment inscrite à l'atelier d'[analyse spatiale avec R](https://github.com/antuki/RR2023_tuto_statspatiale) proposé par Kim Antunez (INSEE) et Etienne Côme (Université Gustave Eiffel). Au programme, carte statistiques, cartes interactives et analyse spatiale avec les deux.
-D'abord on parle des cartes statiques, avec la révolution de "sf" et sa déclinaison spatiale "sfg", soit [*simple feature geometry*](https://r-spatial.github.io/sf/articles/sf1.html), qui a l'avantage d'être composé d'autre chose que de `0` et `1`, ce qui le rend compréhensible par un être humain. 
+D'abord on parle des cartes statiques, avec la révolution de "sf" et sa déclinaison spatiale "sfg", soit [*simple feature geometry*](https://r-spatial.github.io/sf/articles/sf1.html), qui a l'avantage d'être composé d'autre chose que de `0` et `1`, ce qui le rend compréhensible par un être humain.
 
 ![Tableau de données avec des exemples de simple feature](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/03_simple_feature_geometry_tableau.webp){: .img-center loading=lazy }
 
-Le package [mapsf](https://riatelab.github.io/mapsf/) a pris le pas sur d'autres, comme cartography. J'y ai notamment appris l'existence du [geoparquet](https://geoparquet.org/) pour traiter les gros volumes de données spatiales... Et que différentes versions de R peuvent bloquer dans des exercices sans que l'on n'est aucun message d'erreur (sinon ce n'est pas drôle). 
+Le package [mapsf](https://riatelab.github.io/mapsf/) a pris le pas sur d'autres, comme cartography. J'y ai notamment appris l'existence du [geoparquet](https://geoparquet.org/) pour traiter les gros volumes de données spatiales... Et que différentes versions de R peuvent bloquer dans des exercices sans que l'on n'est aucun message d'erreur (sinon ce n'est pas drôle).
 Je n'ai pas eu le temps de tout explorer pour la partie carte interactive, les deux heures étant très denses pour tout le programme prévu. C'est donc un atelier parfait pour les géographes, mais les personnes extérieures à cette thématique sont restées bloquées sur les tenants et aboutissants de termes comme les zones tampons ou polygones de Voronoï.
 
 ----
@@ -71,7 +71,7 @@ Après avoir rappelé que c'est un problème de comparaison, que l'on trouve don
 6. Face aux haters, s'appuyer sur ses personnes proches (cercle amical, famille, collègues de confiance) ;
 7. Demander des retours et non pas de la validation.
 
-Au passage, elle a égratigné avec un mordant libérateur l'obligation d'avoir le bon cursus, voire la passion des recrutements avec obligatoirement LE diplôme de LA bonne école. 
+Au passage, elle a égratigné avec un mordant libérateur l'obligation d'avoir le bon cursus, voire la passion des recrutements avec obligatoirement LE diplôme de LA bonne école.
 
 Elle a rappelé le [validisme](https://fr.wikipedia.org/wiki/Capacitisme) ambiant, dont nos milieux ne sont pas épargnés, avec le talent de quelqu'un capable de présenter avec humour des horreurs. Bonne nouvelle, pour la voir changer de la boue en or, sa présentation a été filmée et je ne peux que vous la conseiller.
 
@@ -145,14 +145,14 @@ Face à la dispersion des ressources sur R en sciences humaines et sociales, Hug
 ## L'informatique partage ses bonnes pratiques pour R
 
 C'est une présentation si dense et riche qu'il vaut mieux renvoyer à [la vidéo](https://www.youtube.com/watch?v=4uXaRx4USnI) pour en prendre tous les (nombreux) éléments intéressants en fonction de son niveau.  
-Mais pour une non-informaticienne comme moi, en voici quelques uns : 
+Mais pour une non-informaticienne comme moi, en voici quelques uns :
 
-* Documenter sur quoi tourne le code (Windows, version de R...) ;
-* Documenter à quoi sert le code, comment l'utiliser, les pistes abandonnées et les expérimentations ;
-* La configuration (URL externes, coefficients etc.) doit être écrite dans un fichier annexe ;
-* Utiliser des *styles guides* qui listent toutes les erreurs et tous les bugs les plus courants (ex : nommer ses variables autrement que a1 et a2) ;
-* Utiliser Git (encore un motif récurrent) ;
-* Les correctifs de données **font partie** des sources de données. On ne corrige pas les données après les avoir importées, on importe des correctifs comme des sources de données.
+- Documenter sur quoi tourne le code (Windows, version de R...) ;
+- Documenter à quoi sert le code, comment l'utiliser, les pistes abandonnées et les expérimentations ;
+- La configuration (URL externes, coefficients etc.) doit être écrite dans un fichier annexe ;
+- Utiliser des *styles guides* qui listent toutes les erreurs et tous les bugs les plus courants (ex : nommer ses variables autrement que a1 et a2) ;
+- Utiliser Git (encore un motif récurrent) ;
+- Les correctifs de données **font partie** des sources de données. On ne corrige pas les données après les avoir importées, on importe des correctifs comme des sources de données.
 
 ----
 
@@ -205,9 +205,9 @@ Comment parler à tout le monde quel que soit la discipline ? Lise Vaudor transp
 
 Car elle est revenue sur son parcours personnel, notamment sa double maternité a quelque peu chamboulé sa vie. Elle a donc rejoint les RLadies, "seulement maintenant" car elle n'en ressentait pas le besoin. Elle indique ne pas avoir eu à souffrir de sexisme dans la communauté R.
 
-Les raisons ? 
+Les raisons ?
 
-Pour elle, c'est l'ouverture de la communauté. Une ouverture qui se retrouve aussi dans l'équipe du programme de ces journées, qui a voulu mettre à égalité les différents genres, mélanger secteur privé/public, universitaire et non-universitaire etc. 
+Pour elle, c'est l'ouverture de la communauté. Une ouverture qui se retrouve aussi dans l'équipe du programme de ces journées, qui a voulu mettre à égalité les différents genres, mélanger secteur privé/public, universitaire et non-universitaire etc.
 
 C'est une communauté capable de valoriser ses paillettes, ses dessins, ses couleurs pastels et tout le contenu de ses formations, par cette invitation à une intervention dans une plénière. Une intervention au même niveau que celle présentant un gros package, comme celui de Timothée Giraud. A titre personnel, ce point de l'intervention m'a beaucoup marquée.
 
@@ -227,9 +227,9 @@ L'engagement était aussi écologique : les goodies venaient des environs. La bi
 
 Plusieurs sessions étaient en parallèle : ce billet présente seulement la moitié des interventions. Il y en a bien d'autres, que vous pouvez aller découvrir ici :
 
-* [Le programme détaillé](https://rr2023.sciencesconf.org/program)
-* [Toutes les vidéos des journées](https://www.youtube.com/@RencontresR)
-* [Le GitHub des présentations et des ateliers](https://github.com/Rencontres-R/Rencontres_R_2023)
+- [Le programme détaillé](https://rr2023.sciencesconf.org/program)
+- [Toutes les vidéos des journées](https://www.youtube.com/@RencontresR)
+- [Le GitHub des présentations et des ateliers](https://github.com/Rencontres-R/Rencontres_R_2023)
 
 Merci à l'organisation pour ces journées !
 
