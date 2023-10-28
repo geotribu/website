@@ -24,7 +24,7 @@ tags:
 
 ## Introduction
 
-![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-rdp-news-thumb }
+![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-thumbnail-left }
 
 Le but est de rappeler ce qu'est le géocodage. A quoi généralement, cela sert.
 

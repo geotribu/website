@@ -30,7 +30,7 @@ Pré-requis :
 
 ## Intro
 
-![icône Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+![icône Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
 Avec mon arrivée chez [Oslandia], je me remets au développement de plugins pour QGIS alors autant partager de temps en temps quelques cas d’usage :slightly_smiling_face:. Dans [l'article précédent](2021-01-19_pyqgis_utiliser_icones_integrees.md), on vous invitait à utiliser les images embarquées dans le "coeur" de QGIS pour égayer l'interface graphique de vos plugins.
 
@@ -61,7 +61,7 @@ On se donne quelques contraintes pour pimenter un peu :
 
 ### Télécharger le fichier
 
-![icône browser QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/icons/qbrowser_icon.svg "Icône browser QGIS"){: .img-rdp-news-thumb }
+![icône browser QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/icons/qbrowser_icon.svg "Icône browser QGIS"){: .img-thumbnail-left }
 
 Pour cette étape, on démarre sereinement : le fichier est sur GitHub qui supporte parfaitement les requêtes anonymes et il n'y a pas vraiment de difficulté.
 
@@ -102,7 +102,7 @@ Voilà, on a donc notre fichier `qgis_resources.qrc` :
 
 ### Lire le fichier QRC
 
-![icône overview QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionAddAllToOverview.svg "Icône overview QGIS"){: .img-rdp-news-thumb }
+![icône overview QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionAddAllToOverview.svg "Icône overview QGIS"){: .img-thumbnail-left }
 
 En y regardant plus attentivement, on comprend qu'il s'agit d'un XML qui ne dit pas son nom. On a donc tout ce qu'il nous faut :
 
@@ -139,7 +139,7 @@ On a donc une structure très simple :
 
 ### Extraire le chemin des images
 
-![icône filter QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionFilter2.svg "Icône filter QGIS"){: .img-rdp-news-thumb }
+![icône filter QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionFilter2.svg "Icône filter QGIS"){: .img-thumbnail-left }
 
 Maintenant qu'on a une idée de la structure, on doit se débrouiller pour reconstituer l'URL complète vers les images, elles-aussi stockées dans le dépôt GitHub de QGIS.
 
@@ -209,7 +209,7 @@ C'est beaucoup mieux ! Maintenant, mettons cela en forme dans du Markdown.
 
 ### Mise en forme Markdown
 
-![icône digitizing QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/digitizing.svg "Icône digitizing QGIS"){: .img-rdp-news-thumb }
+![icône digitizing QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/digitizing.svg "Icône digitizing QGIS"){: .img-thumbnail-left }
 
 Pour cette étape, on va stocker le texte dans une variable qu'on incrémentera avec les liens formatés au fur et à mesure de nos boucles, avant d'enregistrer le tout dans un fichier. Histoire d'avoir quelque chose de lisible, on met ça dans un tableau de 2 colonnes : nom du fichier et prévisualiation.
 
@@ -248,7 +248,7 @@ with Path("qgis_resources_preview_table.md").open("w") as io_out:
 
 ## Conclusion
 
-![icône feature attribute table QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionCalculateField.svg "Icône feature attribute table QGIS"){: .img-rdp-news-thumb }
+![icône feature attribute table QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionCalculateField.svg "Icône feature attribute table QGIS"){: .img-thumbnail-left }
 
 Nous voici avec notre joli fichier que l'on peut [convertir en HTML par exemple]({{ config.extra.url_contribuer }}internal/markdown_engine/). D'ailleurs, j'en ai profité pour l'intégrer à notre site (cf bouton plus bas). A garder sous le coude pour avoir les images et leurs chemins pour développer des plugins colorés.
 

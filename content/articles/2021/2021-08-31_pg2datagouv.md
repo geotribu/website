@@ -34,7 +34,7 @@ tags:
 
 ## Intro
 
-![Logo opendata](https://cdn.geotribu.fr/img/logos-icones/divers/opendata_logo.png "OpenData"){: .img-rdp-news-thumb }
+![Logo opendata](https://cdn.geotribu.fr/img/logos-icones/divers/opendata_logo.png "OpenData"){: .img-thumbnail-left }
 
 Être géomaticien dans un petit EPCI c'est souvent être multitâche et cela implique également d'intervenir sur une diversité de sujets. D'ailleurs celui qui va nous intéresser aujourd'hui, c'est l'Open Data !
 

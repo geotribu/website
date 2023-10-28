@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 08 avril 2010
 
-![Logo OSGEO-fr](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osgeo_fr.png "logo OSGEO-fr"){: .img-rdp-news-thumb }
+![Logo OSGEO-fr](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osgeo_fr.png "logo OSGEO-fr"){: .img-thumbnail-left }
 
 Les [adhésions à l'OSGEO-fr](http://osgeo.gloobe.org/drupal/node/8), pour l'année 2010, sont officiellement ouvertes.
 

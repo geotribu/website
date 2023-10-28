@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 19 juillet 2009
 
-![logo OSGIS](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/OSGIS.jpg "logo OSGIS"){: .img-rdp-news-thumb }
+![logo OSGIS](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/OSGIS.jpg "logo OSGIS"){: .img-thumbnail-left }
 
  Il y a à peine un mois s'est tenue à Nottingham au [Centre for Geospatial Science](http://www.nottingham.ac.uk/cgs/) la 1ère conférence [OSGIS](http://www.opensourcegis.org.uk/). Comparable au FOSS4G ce fût l'occasion pour tous les acteurs participant au développement de l'OpenSource Geospatial de se retrouver autour de [présentations et d'ateliers](http://cgs.nottingham.ac.uk/~osgis/OSGIS%20Provisional%20Agenda.pdf). Au total, près de 150 délégations de 17 pays ont participé à cet évènement. Certains noms très connus tels que Tyler Mitchell, Directeur exécutif de l'OSGEO, étaient d'ailleurs présents.
 

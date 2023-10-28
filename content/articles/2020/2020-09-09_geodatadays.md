@@ -33,7 +33,7 @@ A titre personnel, je n'aurai évidemment pas de stand mais si vous lisez régul
 
 ## Planifier son GéoDataDays avec QGIS 3.14
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
 
 En juillet dernier, pour les besoins d'une journée sur le réseautage auprès des participant/es du [CQP GEOM](https://www.idgeo.fr/formation/cqp-geom-geomaticien-developpeur-dapplications-spatiales/) d'[IDGEO](https://www.idgeo.fr/), je les encourageais à participer à l'événement.
 

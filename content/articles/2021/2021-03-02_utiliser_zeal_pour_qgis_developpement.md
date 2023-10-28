@@ -20,7 +20,7 @@ tags:
 
 :calendar: Date de publication initiale : 2 mars 2021
 
-![logo Zeal Docs](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/zeal.png "logo Zeal Docs"){: .img-rdp-news-thumb }
+![logo Zeal Docs](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/zeal.png "logo Zeal Docs"){: .img-thumbnail-left }
 
 Quand on développe sur QGIS (un plugin, un traitement ou carrément dans le coeur), la documentation technique est souvent ouverte quelque part dans le navigateur web.  
 Mais il est justement fastidieux de naviguer dans une documentation et on a tôt fait de se retrouver avec beaucoup (trop) d'onglets, occasionnant de la confusion voire ~~du troll~~ des soucis de RAM  :innocent:.
@@ -41,7 +41,7 @@ C'est un autre collègue qui m'en a reparlé récemment (coucou [Loïc](https://
 
 ### Historique
 
-![logo Dash](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/dash_docs.png "logo Dash"){: .img-rdp-news-thumb }
+![logo Dash](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/dash_docs.png "logo Dash"){: .img-thumbnail-left }
 
 A la base, [Zeal] est une imitation open-source assumée de [Dash], un logiciel pour MacOS uniquement développé par (Maître) Kapeli (en fait un développeur indépendant, Bogdan Popescu) et vendu 30$. Notons que l'éditeur de Dash connaît et tolère bien Zeal et que ce dernier a un accès aux documentations (*docsets*) du premier.
 
@@ -51,7 +51,7 @@ Zeal est donc un équivalent open-source (GPL 3, [dépôt GitHub](https://github
 
 ### Principes
 
-![logo lessive Dash](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/dash_lessive.jpg "logo lessive Dash"){: .img-rdp-news-thumb }
+![logo lessive Dash](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/dash_lessive.jpg "logo lessive Dash"){: .img-thumbnail-left }
 
 C'est simple, l'application se compose de deux ingrédients :
 
@@ -82,7 +82,7 @@ Une fois Zeal installé, il s'agit de télécharger les documentations qui nous 
 
 ### Docsets intégrés
 
-![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
 Soit la documentation est maintenue par [Dash] et elle est donc directement intégrée. C'est le cas de nombreux langages de programmation.  
 Il suffit alors de la charger via le menu `Tools > Docsets...`, dans l'onglet `Available`. Par exemple pour Python 3 :
@@ -91,7 +91,7 @@ Il suffit alors de la charger via le menu `Tools > Docsets...`, dans l'onglet `A
 
 ### Docsets de la communauté
 
-![logo Open Source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source"){: .img-rdp-news-thumb }
+![logo Open Source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source"){: .img-thumbnail-left }
 
 Soit il s'agit d'une documentation propre à un projet ou à un cadriciel[^1] (*framework*) moins généraliste. Il faut alors de nouveau s'émerveiller devant la force des dynamiques de contribution communautaire et utiliser les documentations publiées sur <https://zealusercontributions.now.sh/>.
 
@@ -130,7 +130,7 @@ L'utilisation est simple mais voici quelques astuces histoire de fluidifier l'ex
 
 ### Recherche filtrée
 
-![Filtre QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionFilter2.svg "Filtre QGIS"){: .img-rdp-news-thumb }
+![Filtre QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionFilter2.svg "Filtre QGIS"){: .img-thumbnail-left }
 
 Il est possible de filtrer sa recherche sur l'une des documentations en utilisant son préfixe (un peu à la manière du [localisateur de QGIS](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#locator-settings)). Par exemple pour chercher dans PyQGIS, on préfixe avec `pyqgis_3:` :
 

@@ -30,7 +30,7 @@ tags:
 
 ## Introduction
 
-![logo R stats](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/r.png){: .img-rdp-news-thumb }
+![logo R stats](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/r.png){: .img-thumbnail-left }
 
 Autant l'avouer d'emblée, je suis quand même un petit peu un traumatisé du point-virgule ; inversement je suis un grand amoureux d'R : mon jugement est donc biaisé, mais je l'assume totalement. :smirk:
 
@@ -161,7 +161,7 @@ Sur notre jeu de données, on a ajouté des attributs spécifiques à titre d'ex
 
 ## La carte
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 Bon, les données sont disponibles, mais concrètement, maintenant, comment on passe de cette carte statique à la carte interactive, personnalisée et partageable promise ?
 
@@ -597,7 +597,7 @@ Bon courage !
 
 ### Romain Lacroix
 
-![Portrait Romain Lacroix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/rl_225.jpg "Portrait Romain Lacroix"){: .img-rdp-news-thumb }
+![Portrait Romain Lacroix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/rl_225.jpg "Portrait Romain Lacroix"){: .img-thumbnail-left }
 
 Ingénieur SIG mutualisé entre différents organismes vitivinicoles de la Vallée du Rhône, mon travail consiste à simplifier le travail administratif d'une petite dizaine de milliers d'exploitations agricoles à travers des technologies SIG et d'assister les études techniques et expérimentations réalisées en viticulture et oenologie.
 

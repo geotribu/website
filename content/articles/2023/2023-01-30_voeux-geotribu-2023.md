@@ -20,7 +20,7 @@ tags:
 
 ## Introduction
 
-![logo tipi Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.png){: .img-rdp-news-thumb }
+![logo tipi Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.png){: .img-thumbnail-left }
 
 Bienvenue sur le traditionnel, mais non moins irrégulier (du moins à Geotribu), billet de bilan de l'année passée et de projection sur l'année qui s'amorce.
 

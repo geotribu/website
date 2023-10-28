@@ -21,7 +21,7 @@ tags:
 
 :calendar: Date de publication initiale : 05 juin 2009
 
-![logo.png](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp){: .img-rdp-news-thumb }
+![logo.png](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp){: .img-thumbnail-left }
 
 Pas moins de six nouveautés nous concernant au plus haut point chez Google durant ce mois de mai et le début du mois de juin.  
 Entre le Where 2.0 et le Google IO, que de nouvelles choses à apprendre.

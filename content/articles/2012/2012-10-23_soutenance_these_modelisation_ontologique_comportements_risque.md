@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 23 octobre 2012
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 Vous êtes dans la région (Sophia Antipolis) le 30 Novembre (14h) et le domaine des ontologies vous intéresse ? Alors, n'hésitez pas à passer pour assister à ma soutenance de thèse. Celle-ci porte sur la modélisation ontologique des connaissances expertes pour l'analyse de comportements à risque. Cette modélisation a été plus spécifiquement appliquée à la surveillance maritime. Je vous laisse découvrir ci-dessous le résumé :
 

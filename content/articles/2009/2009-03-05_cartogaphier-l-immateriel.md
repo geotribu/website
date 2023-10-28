@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 05 mars 2009
 
-![icône globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe news"){: .img-rdp-news-thumb }
+![icône globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe news"){: .img-thumbnail-left }
 
 La géographie de par sa définition est une "tentative d'interprétation de l'écriture de la surface de la Terre par les sociétés qui l'occupent[^1]". De cette première approche sont nés deux courants de pensées, **l'espace perçu[^2]** et **l'espace vécu[^3]**.
 

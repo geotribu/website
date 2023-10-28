@@ -1,6 +1,6 @@
 # Loïc Bartoletti {: data-search-exclude }
 
-![Portrait Loïc Bartoletti](https://cdn.geotribu.fr/img/internal/contributeurs/lbar.png "Portrait Loïc Bartoletti"){: .img-rdp-news-thumb }
+![Portrait Loïc Bartoletti](https://cdn.geotribu.fr/img/internal/contributeurs/lbar.png "Portrait Loïc Bartoletti"){: .img-thumbnail-left }
 
 Après un cursus en Histoire, je me suis orienté vers l'urbanisme sur l'aménagement des territoires.
 

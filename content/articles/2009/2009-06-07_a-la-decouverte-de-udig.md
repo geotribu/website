@@ -18,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 07 juin 2009
 
-![udig_logo.png](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/uDig.png){: .img-rdp-news-thumb }
+![udig_logo.png](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/uDig.png){: .img-thumbnail-left }
 
 Nous continuons notre tour d'horizon des logiciels SIG OpenSource en abordant cette fois-ci UDIG. Développé par [Refraction research](http://www.refractions.net/), il est basé sur l'IDE [Eclipse](http://www.eclipse.org/). Ce dernier, bien que principalement utilisé dans le monde de la programmation a été habilement détourné pour offrir une plateforme SIG complète.
 

@@ -22,7 +22,7 @@ tags:
 
 :calendar: Date de publication initiale : 22 juin 2021
 
-![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
+![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-thumbnail-left }
 
 Aprés vous avoir présenté les outils proposés par ODK et la place qu'ils occupent dans notre SI centré sur PostGIS, ce second article illustre à travers notre formulaire généraliste l'utilisation des différents "widgets" à notre disposition.
 Des extraits du "XLSForm" du formulaire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "survey" et de la feuille de calcul "choices".
@@ -57,7 +57,7 @@ La présentation ci-dessous faite au [FOSS4G-fr de 2018](https://www.osgeo.asso.
 
 ## Logique du formulaire
 
-![icône collecte smartphone](https://cdn.geotribu.fr/img/logos-icones/divers/smartphone_mobile_map.svg "icône collecte smartphone - Crédits The Noun Project"){: .img-rdp-news-thumb }
+![icône collecte smartphone](https://cdn.geotribu.fr/img/logos-icones/divers/smartphone_mobile_map.svg "icône collecte smartphone - Crédits The Noun Project"){: .img-thumbnail-left }
 
 Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Elle résultait d'un atelier (_workshop_) organisé avec les collègues du CEN Rhône-Alpes (Rémy Clément, Laurent Poulin et Guillaume Costes) qui maitrisaient la création de formulaire. Je m'étais alors occupé de la récupération des données collectées dans PostGIS.
 

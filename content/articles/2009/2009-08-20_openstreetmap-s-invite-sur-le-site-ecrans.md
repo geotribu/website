@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 20 août 2009
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Décidément, OpenStreetMap (OSM) a le vent en poupe en ce moment. En effet, c'est un dossier complet regroupant non moins de [six articles et une interview](http://www.ecrans.fr/+-les-routards-du-web-+.html) qui lui est réservé sur le site internet [écrans](http://www.ecrans.fr/).
 

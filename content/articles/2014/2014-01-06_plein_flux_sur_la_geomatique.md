@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 06 janvier 2014
 
-![logo RSS](https://cdn.geotribu.fr/img/logos-icones/rss.png){: .img-rdp-news-thumb }
+![logo RSS](https://cdn.geotribu.fr/img/logos-icones/rss.png){: .img-thumbnail-left }
 
 Jusqu'à ce que Google mette fin au règne de son propre service Reader, je maintenais une agrégation de flux RSS de sites de géomatique. On m'a récemment demandé de fournir le fichier [OPML](https://fr.wikipedia.org/wiki/Outline_Processor_Markup_Language) de l'ensemble des flux. J'ai pensé que ça pouvait intéresser d'autres personnes, alors je mets le tout à disposition.
 

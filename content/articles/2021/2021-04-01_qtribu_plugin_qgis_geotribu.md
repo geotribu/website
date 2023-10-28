@@ -22,7 +22,7 @@ tags:
 
 ## Un plugin sérieux pour ne pas se prendre au sérieux
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Au détour d'un travail sur la négociation de contenu pour un plugin QGIS dans le cadre de mes fonctions à [Oslandia](https://oslandia.com/fr/), je me suis dit :
 
@@ -44,7 +44,7 @@ C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemp
 
 ## Installer le plugin
 
-![QGIS icône plugins](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/plugins.svg "QGIS icône plugins"){: .img-rdp-news-thumb }
+![QGIS icône plugins](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/plugins.svg "QGIS icône plugins"){: .img-thumbnail-left }
 
 !!!note
     Compte-tenu du périmètre fonctionnel particulier de ce plugin et pour ne pas ajouter du bruit supplémentaire au dépôt officiel des extensions de QGIS, QTribu est uniquement disponible en ajoutant un dépôt personnalisé.

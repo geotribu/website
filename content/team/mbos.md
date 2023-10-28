@@ -1,6 +1,6 @@
 # Mathieu Bossaert {: data-search-exclude }
 
-![Portrait Mathieu Bossaert](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/mb.jpeg "Portrait Mathieu Bossaert"){: .img-rdp-news-thumb }
+![Portrait Mathieu Bossaert](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/mb.jpeg "Portrait Mathieu Bossaert"){: .img-thumbnail-left }
 
 Aprés des études de biologie, d'écologie, et d'informatique, j'ai intégré le CEN en 2003 pour y occuper le poste de gestionnaire de bases de données, et suis devenu "géomaticien" par extension.
 

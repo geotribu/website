@@ -1,6 +1,6 @@
 # Boris Mericskay {: data-search-exclude }
 
-![boris mericskay](https://cdn.geotribu.fr/img/internal/contributeurs/bmer.png "Boris Mericskay"){: .img-rdp-news-thumb }
+![boris mericskay](https://cdn.geotribu.fr/img/internal/contributeurs/bmer.png "Boris Mericskay"){: .img-thumbnail-left }
 
 Enseignant-chercheur en géographie à [l'Université Rennes 2](https://perso.univ-rennes2.fr/boris.mericskay) et co-responsable du [master en géomatique SIGAT](https://sites-formations.univ-rennes2.fr/mastersigat/), mon travail consiste à enseigner les SIG (en licence et en master) et à faire de la recherche autour des questions des données urbaines, de l'analyse spatiale et de la géovisualisation en ligne.
 

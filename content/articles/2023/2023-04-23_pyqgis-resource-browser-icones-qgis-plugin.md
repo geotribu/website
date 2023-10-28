@@ -23,7 +23,7 @@ tags:
 
 :calendar: Date de publication initiale : 23 avril 2023
 
-![logo PyQGIS](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-rdp-news-thumb }
+![logo PyQGIS](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-thumbnail-left }
 
 Le mois dernier, je [publicisais ici un site permettant de lister les ressources graphiques présentes dans QGIS](2023-03-24_pyqgis-icones-cheatsheet-automatisation.md) et réutilisables dans le développement de plugins, comme démontré dans [ce tutoriel de 2021](../2021/2021-01-19_pyqgis_utiliser_icones_integrees.md).
 

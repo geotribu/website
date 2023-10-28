@@ -18,7 +18,7 @@ tags:
 
 # Unfolded Studio, une nouvelle plateforme de visualisation de géodonnées
 
-![logo unfolded studio](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png "Logo Unfolded Studio"){: .img-rdp-news-thumb loading=lazy }
+![logo unfolded studio](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/unfolded-logo-black.png "Logo Unfolded Studio"){: .img-thumbnail-left loading=lazy }
 
 [Unfolded Studio](https://studio.unfolded.ai/) est un tout nouvel outil créé par l'équipe derrière [kepler.gl], [deck.gl] ou [H3].  
 Ils se sont rencontrés lorsqu'ils travaillaient pour Uber et ont monté en 2019 la société [Unfolded.ai](https://www.unfolded.ai/).

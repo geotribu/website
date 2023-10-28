@@ -43,7 +43,7 @@ Question ? Souci ? Angoisse ? Si vous souhaitez en savoir plus sur les données 
 
 ## Google Analytics
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 Parce-que c'était plus simple et intégré à MkDocs, nous utilisons Google Analytics pour mesurer la fréquentation du site en mode minimal. Compte-tenu de la typologie de notre audience technophile et sensibilisée aux [bloqueurs de pubs](https://fr.wikipedia.org/wiki/Logiciel_antipub), [opt-outs](https://tools.google.com/dlpage/gaoptout/index.html?hl=fr) et autres [VPNs](https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virtuel), les données sont certainement incomplètes voire faussées.
 
@@ -53,7 +53,7 @@ Mais l'objectif n'étant pas de faire du marketing, cela importe peu. L'idée es
 
 ## Twitter
 
-![logo Twitter](https://cdn.geotribu.fr/img/logos-icones/social/twitter.png "logo Twitter"){: .img-rdp-news-thumb }
+![logo Twitter](https://cdn.geotribu.fr/img/logos-icones/social/twitter.png "logo Twitter"){: .img-thumbnail-left }
 
 Une partie non négligeable de la veille technologique passe par le réseau social de micro-blogging. Afin de pouvoir intégrer les tweets dans nos pages, nous embarquons le code de la plateforme pour que le rendu soit conforme à ses règles ([voir cette documentation](https://help.twitter.com/fr/using-twitter/how-to-embed-a-tweet)).
 
@@ -63,7 +63,7 @@ A noter que le rendu est complètement différent selon si le navigateur bloque 
 
 ## Flux RSS
 
-![icône RSS](https://cdn.geotribu.fr/img/logos-icones/rss.png "icône RSS"){: .img-rdp-news-thumb }
+![icône RSS](https://cdn.geotribu.fr/img/logos-icones/rss.png "icône RSS"){: .img-thumbnail-left }
 
 Dans le but d'identifier la part des visites liée aux abonnés à notre [flux RSS] sans recourir à des dispositifs de traçage supplémentaires (tels [feedburner](https://feedburner.google.com/)), nous ajoutons des paramètres *Urchin Tracking Module* ([UTM]).
 
@@ -77,7 +77,7 @@ Les paramètres utilisés sont :
 
 ## Newsletter
 
-![icône newsletter](https://cdn.geotribu.fr/img/logos-icones/divers/newsletter.webp "icône newsletter"){: .img-rdp-news-thumb }
+![icône newsletter](https://cdn.geotribu.fr/img/logos-icones/divers/newsletter.webp "icône newsletter"){: .img-thumbnail-left }
 
 Pour gérer les abonnements (inscription, désinscription, etc.) ainsi que les envois de la newsletter, nous utilisons la [plateforme Mailchimp](https://mailchimp.com/fr/). Aucun code spécifique issu de cette plateforme n'est intégré au site.
 Les informations requises pour l'inscription sont :
@@ -89,7 +89,7 @@ Les informations requises pour l'inscription sont :
 
 ## Commentaires
 
-![icône commentaire](https://cdn.geotribu.fr/img/logos-icones/astuce.png "icône commentaire"){: .img-rdp-news-thumb }
+![icône commentaire](https://cdn.geotribu.fr/img/logos-icones/astuce.png "icône commentaire"){: .img-thumbnail-left }
 
 Les commentaires sont gérés avec [Isso], une solution libre, gratuite et auto-hébergée sur le même serveur où sont stockées les images. Aucun dispositif de traçage n'est associé.
 

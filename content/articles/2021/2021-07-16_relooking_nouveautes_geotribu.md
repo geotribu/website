@@ -19,7 +19,7 @@ tags:
 
 ## Introduction
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
 
 Comme évoqué dans la dernière GeoRDP, pas de revue de presse aujourd'hui mais une revue des nouveautés que vous pouvez trouver sur notre site.
 
@@ -48,7 +48,7 @@ N'hésitez pas à nous dire ce que vous en pensez :slight_smile:.
 
 ## Gestion des licences
 
-![icône poignée de main](https://cdn.geotribu.fr/img/internal/icons-rdp-news/lobby.png "icône poignée de main"){: .img-rdp-news-thumb }
+![icône poignée de main](https://cdn.geotribu.fr/img/internal/icons-rdp-news/lobby.png "icône poignée de main"){: .img-thumbnail-left }
 
 Quand on publie, il est important d'indiquer comment le contenu peut être éventullement réutilisé. Jusqu'à présent, le flou régnait (comme sur une bonne partie de la Toile) sur ce qui est diffusé sur Geotribu. C'est un manque désormais comblé :
 

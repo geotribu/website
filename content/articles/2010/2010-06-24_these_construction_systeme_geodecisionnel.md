@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 24 juin 2010
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 L'Ecole des Mines de Paris, propose une [thèse](http://www.abg.asso.fr/offre_voir.php?offre=84266&lg=fr) portant sur la Contribution d’un système géo-décisionnel à la sauvegarde maritime. N'hésitez pas à postuler si ce domaine vous intéresse. En plus vous aurez, la joie (ou pas) de me subir au quotidien :) ! Le résumé de cette offre est présenté ci-dessous :
 

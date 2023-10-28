@@ -21,7 +21,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 L'API Google Maps permet de superposer des fichiers KML sur une carte. Et d'afficher une mini-carte dans une infobulle (ce qui n'a rien à voir avec l'affichage du KML mais qui peut être intéressant).
 

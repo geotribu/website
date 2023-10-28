@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 19 juillet 2012
 
-![logo globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "Icône de globe"){: .img-rdp-news-thumb }
+![logo globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "Icône de globe"){: .img-thumbnail-left }
 
 C'est avec plaisir que nous relayons la Première [Rencontre des Sciences Géomatiques](http://rsg2013.amjgistes.org/) (RSG’ 2013) organisée à Rabat (Maroc). Réalisé à l'initiative de l’Association Marocaine des Jeunes Géomaticiens (l’[AMJG](http://amjgistes.org/)) en collaboration avec de la Faculté des Sciences de Rabat, de l’Université Mohammed V Agdal et de l’Association des jeunes Chercheurs de la Faculté des Sciences de Rabat (AJCFSR), cet événement sera l'occasion de réunir les personnes intéressées par cette discipline.
 

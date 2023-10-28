@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 16 octobre 2009
 
-![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-rdp-news-thumb }
+![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-thumbnail-left }
 
 Ca y'est, la [version 0.6](http://geoext.blogspot.com/2009/10/geoext-06-released.html) de [GeoExt](http://geoext.blogspot.com/) est officiellement sortie. Cette dernière conclue 4 mois de travail qui ont permis la fermeture de 51 tickets dont 34 apportant de nouvelles fonctionnalités.
 

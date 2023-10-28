@@ -21,7 +21,7 @@ tags:
 
 ## Introduction
 
-![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-rdp-news-thumb }
+![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-thumbnail-left }
 
 Il est possible à l'instar de l'API Google Maps de créer des marqueurs sur la carte et gérer des événements avec cette API.  
 

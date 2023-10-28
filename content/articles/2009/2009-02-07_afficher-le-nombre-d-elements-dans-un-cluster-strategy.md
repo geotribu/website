@@ -19,7 +19,7 @@ tags:
 
 ## Introduction
 
-![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-rdp-news-thumb }
+![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-thumbnail-left }
 
 Une des grandes améliorations de la version 2.7 d'OpenLayers était la possibilité de pouvoir "jouer" avec les données vecteurs avant même leur affichage. Cette fonctionnalité nommée Strategy propose 4 types d'actions : BBOX, Cluster, Fixed, pagging. Pour un aperçu rapide vous pouvez consulter ce [précédent tutoriel](http://geotribu.net/node/47) dont les bases sont d'ailleurs reprises dans celui-ci.
 

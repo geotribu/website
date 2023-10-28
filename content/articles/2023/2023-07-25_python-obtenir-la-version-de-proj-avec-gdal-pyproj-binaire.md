@@ -22,7 +22,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 juillet 2023
 
-![icône projection](https://cdn.geotribu.fr/img/logos-icones/divers/projection.png){: .img-rdp-news-thumb }
+![icône projection](https://cdn.geotribu.fr/img/logos-icones/divers/projection.png){: .img-thumbnail-left }
 
 En butant sur un souci de reconnaissance de SRS lié aux [choix éclairés de l'IGN en matière de registre spécifique](https://twitter.com/EvenRouault/status/1437818895604269059), j'ai eu besoin de vérifier la version de PROJ installée de façon à pouvoir adapter le comportement du script.  
 Formulé comme ça, mon candide moi s'est dit :
@@ -38,7 +38,7 @@ Je me note donc ça ici, histoire de pas oublier et que ça puisse resservir.
 
 ## Avec pyproj
 
-![logo PyProj](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/pyproj.png){: .img-rdp-news-thumb }
+![logo PyProj](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/pyproj.png){: .img-thumbnail-left }
 
 Si pyproj est installé :
 
@@ -56,7 +56,7 @@ print(pyproj.__proj_version__)
 
 ## Avec les bindings GDAL
 
-![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png){: .img-rdp-news-thumb }
+![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png){: .img-thumbnail-left }
 
 Si GDAL est installée, ainsi que ses bindings Python :
 
@@ -78,7 +78,7 @@ print(
 
 ## Avec le binaire proj et une regex
 
-![logo PROJ](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/proj.png){: .img-rdp-news-thumb }
+![logo PROJ](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/proj.png){: .img-thumbnail-left }
 
 Mais si on ne peut compter sur aucune des couches d'abstraction précédentes, alors ça se corse. Il faut appeler l'exécutable de proj et se débrouiller avec la sortie par défaut puisqu'il n'y a pas d'option `--version` :
 
@@ -102,7 +102,7 @@ if version_match:
 
 ## Mais ça, c'était aujourd'hui
 
-![logo open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png){: .img-rdp-news-thumb }
+![logo open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png){: .img-thumbnail-left }
 
 En tout cas, ça valait le coup de demander autour de moi et auprès de mes collègues puisque Loïc Bartoletti a proposé d'intégrer l'option `--version` à proj ! C'est dans cette [Pull Request](https://github.com/OSGeo/PROJ/pull/3836) que ça se passe et on y apprend plein de choses :
 

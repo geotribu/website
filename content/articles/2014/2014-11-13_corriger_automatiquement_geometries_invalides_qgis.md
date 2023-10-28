@@ -21,7 +21,7 @@ tags:
 
 :calendar: Date de publication initiale : 13 novembre 2014
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Il arrive que, pour différentes raisons, vous receviez une couche de données qui est topologiquement invalide (polygones dont certains arcs se croisent, etc.). Avant d'entrer dans le vif du sujet et si le mot topologie ne vous est pas familier, je vous conseille la lecture de [l'excellent article](http://www.portailsig.org/content/grass-gis-geometries-topologies-et-consequences-pratiques-vecteurs-rasters-volumes) de Martin Laloux paru sur le Portail SIG.
 

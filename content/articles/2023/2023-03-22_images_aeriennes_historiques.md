@@ -32,7 +32,7 @@ tags:
 
 ## Intro
 
-![icône globe ancien](https://cdn.geotribu.fr/img/internal/icons-rdp-news/ancien.png "icône globe ancien"){: .img-rdp-news-thumb }
+![icône globe ancien](https://cdn.geotribu.fr/img/internal/icons-rdp-news/ancien.png "icône globe ancien"){: .img-thumbnail-left }
 
 Il y a des projets que tu as en tête depuis des mois pour ne pas dire plus. Et puis un jour, c’est le bon moment, un créneau s’ouvre, tu t’engouffres dans la brèche happé par l’envie. Je vous propose donc de découvrir comment j’ai reconstitué des images aériennes historiques sur mon territoire à partir des imagettes disponibles sur le site : [Remonter le temps](https://remonterletemps.ign.fr) de l’IGN.
 
@@ -98,7 +98,7 @@ ENCODAGE='UTF-8'
 
 ### Depuis le site
 
-![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "icône IGN"){: .img-rdp-news-thumb }
+![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "icône IGN"){: .img-thumbnail-left }
 
 Les images mises à disposition par l'IGN sur le site [Remonter le temps](https://remonterletemps.ign.fr) peuvent être consultées par année de prises de vue, ce qui dans les faits, correspond plutôt aux différentes missions réalisées.
 
@@ -160,7 +160,7 @@ L'identifiant des missions correspond à la colonne `kml_layer_id`.
 
 ## Identifier, télécharger et mettre en forme les images d'une mission
 
-![icône outils](https://cdn.geotribu.fr/img/logos-icones/divers/outils.png "icône outils"){: .img-rdp-news-thumb }
+![icône outils](https://cdn.geotribu.fr/img/logos-icones/divers/outils.png "icône outils"){: .img-thumbnail-left }
 
 On ne peut pas dire que l'IGN nous facilite la tâche sur l'identification et le téléchargement en lot d'images mais on finit toujours par trouver une alternative.
 
@@ -203,7 +203,7 @@ Maintenant que l'on a récupéré l'emprise et la liste de toutes les images de 
 
 ### Intégrer la localisation de l'image dans les données EXIF
 
-![icône EXIF](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/exif.png "icône EXIF"){: .img-rdp-news-thumb }
+![icône EXIF](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/exif.png "icône EXIF"){: .img-thumbnail-left }
 
 Ensuite à partir de l'emprise des images contenue dans les fichiers `kml`, on va calculer le centroïde de toutes celles qui se trouvent dans notre BBOX et récupérer les informations sur la date de la prise de vue afin de créer un fichier `.csv`. Toutes ces informations vont nous permettre de compléter les données [EXIF](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format) des images.
 
@@ -233,7 +233,7 @@ exiftool -csv=$folder_mission'/csv_exif/list_exif.csv' $folder_mission'/img_jpg'
 
 ### Découper le cadre autour des images
 
-![icône ImageMagick](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/ImageMagick.png "icône ImageMagick"){: .img-rdp-news-thumb }
+![icône ImageMagick](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/ImageMagick.png "icône ImageMagick"){: .img-thumbnail-left }
 
 Maintenant que toutes nos images ont été téléchargées, converties, et que leur localisation a été récupérée, il nous faut supprimer le cadre noir périphérique pour ne garder que la partie photographiée.
 
@@ -252,7 +252,7 @@ convert $folder_mission'/img_jpg/'$file'.jpg' -crop +350+1100 -crop -350-375 -co
 
 ## Reconstituer une image aérienne
 
-![icône opendronemap](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/open_drone_map_odm.png "OpenDroneMap"){: .img-rdp-news-thumb }
+![icône opendronemap](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/open_drone_map_odm.png "OpenDroneMap"){: .img-thumbnail-left }
 
 Pour reconstituer une image aérienne historique, j'utilise l'application [WebODM (l'interface web d'OpenDroneMap) installée via Docker sur un serveur Linux](https://docs.opendronemap.org/fr/installation/#linux) que m'a mis à dispostion mon service informatique.
 
@@ -260,7 +260,7 @@ Les spécifications minimums pour couvrir mon territoire : 64Go de Ram et 128Go 
 
 ### Identifier des GCP
 
-![icône opendronemap GCP](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/open_drone_map_gcp.png "OpenDroneMap GCP"){: .img-rdp-news-thumb }
+![icône opendronemap GCP](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/open_drone_map_gcp.png "OpenDroneMap GCP"){: .img-thumbnail-left }
 
 Nos images sont maintenant prêtes, il nous reste une étape manuelle importante : le positionnnement des points de calage qui permettent à OpenDroneMap d'ajuster la reconstitution dans l'espace.
 

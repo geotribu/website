@@ -17,13 +17,13 @@ tags:
 
 :calendar: Date de publication initiale : 11 février 2013
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
 
 Il n'est pas vraiment dans nos habitudes de relayer des informations en dehors des revues de presse et d'articles à vocation technique. Néanmoins comme un grand nombre de nos lecteurs s'intéresse aux domaines de la Géomatique libre (et que par ailleurs un de nos rédacteurs est impliqué dans l'organisation...), nous vous invitons à répondre à l'appel à publications de ce premier rendez-vous SIG opensource français. Nous reproduisons ci-dessous le communiqué officiel.
 
 ## Appel à contribution pour le FRancophone Open source Géomatique (FROG) 2013
 
-![logo OSGEO](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osgeo.png "logo OSGEO"){: .img-rdp-news-thumb }
+![logo OSGEO](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osgeo.png "logo OSGEO"){: .img-thumbnail-left }
 
 L'OSGeo-fr organise le 10 juin 2013 la journée Francophone Open Source Géomatique (FROG) à Paris dans les locaux de l'IGN (Saint-Mandé, région parisienne) : <http://frog.osgeo.fr> Le FROG sera une journée de conférences et de rencontres sur les thématiques de l’OSGeo-fr et se veut une occasion de rassembler la communauté des utilisateurs, développeurs, décideurs, ou simples curieux de logiciels libres en géomatique. L'événement devrait rassembler environ 150 personnes. Cette rencontre permettra de partager nos connaissances et notre expérience sous la forme de conférences, d'une durée de 25min (questions incluses), se déroulant en deux sessions parallèles: l'une technique, dédiée au développement et aux logiciels, l'autre sera plus axée sur des cas pratiques d'utilisation. Vous êtes expert sur un domaine lié aux SIG libres? Vous avez utilisé les outils de l'OSGeo dans un contexte spécifique (projet d'envergure, données très volumineuses, client reconnu, projet innovant, etc.)? Vous participez à un projet libre lié à l'OSGeo? Alors n'hésitez à proposer une présentation! Les participants à la journée Francophone Open Source Géomatique (FROG) qui souhaitent présenter leurs projets doivent soumettre un résumé avant le 8 mars 2013. Les résumés doivent être envoyés par mail en texte brut à l’adresse suivante: conferences (at) osgeo.asso.fr en précisant les éléments suivants:
 

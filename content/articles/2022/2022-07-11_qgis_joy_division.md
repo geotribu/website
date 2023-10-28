@@ -24,7 +24,7 @@ tags:
 
 ## Introduction
 
-![icône globe musique note](https://cdn.geotribu.fr/img/internal/icons-rdp-news/musique_note.png "icône globe musique note"){: .img-rdp-news-thumb }
+![icône globe musique note](https://cdn.geotribu.fr/img/internal/icons-rdp-news/musique_note.png "icône globe musique note"){: .img-thumbnail-left }
 
 Dans cet article, nous allons voir comment créer une carte Post-punk à la mode Joy Division en utilisant les générateurs de géométrie de QGIS.
 

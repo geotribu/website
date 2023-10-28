@@ -1,6 +1,6 @@
 # Thomas Gratier {: data-search-exclude }
 
-![portrait Thomas Gratier](https://cdn.geotribu.fr/img/internal/contributeurs/tgra.png "portrait Thomas Gratier"){: .img-rdp-news-thumb }
+![portrait Thomas Gratier](https://cdn.geotribu.fr/img/internal/contributeurs/tgra.png "portrait Thomas Gratier"){: .img-thumbnail-left }
 
 Géographe de formation, après quelques années tant côté gestion de projet , que côté développement Géomatique, je suis maintenant consultant SIG indépendant basé sur Nantes. Je m'intéresse à tout ce qui gravite autour du web et de la cartographie. Pour cette raison, je suis un fan des bibliothèques javascript pour la cartographie et la dataviz, mais j'aime aussi le côté administrateur système pour configurer les serveurs web, les serveurs cartographiques et les serveurs de tuiles.
 

@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 17 août 2009
 
-![logo Puzzle GIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/puzzle_gis.gif "logo Puzzle GIS"){: .img-rdp-news-thumb }
+![logo Puzzle GIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/puzzle_gis.gif "logo Puzzle GIS"){: .img-thumbnail-left }
 
 Nous avions déjà eu précédemment l'occasion de découvrir (cf [billet](http://geotribu.net/node/117) du 05/24/2009) le logiciel SIG [Puzzle-GIS](http://puzzle-gis.codehaus.org/). Une nouvelle version (0.4) est depuis peu disponible et apporte son lot de [nouveautés](http://docs.codehaus.org/display/PUZZLEGIS/2009/07/08/v0.4+is+Out).
 

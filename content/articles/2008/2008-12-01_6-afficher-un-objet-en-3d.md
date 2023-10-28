@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-rdp-news-thumb }
+![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-thumbnail-left }
 
 L'API Google Earth propose d'afficher dans son globe des objets en 3D provenant notamment de [Sketchup](http://sketchup.google.com/intl/fr/).  
 

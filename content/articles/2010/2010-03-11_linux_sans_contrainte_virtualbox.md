@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 11 mars 2010
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 Il peut être agréable, quand vous testez de nouvelles applications, de ne pas avoir à les installer sur votre environnement de travail. En effet, il peut arriver que celles-ci ne soient pas encore complètement stables ou bien qu'il soit nécessaire de les compiler.  
 De ce fait, cela peut rendre votre environnement instable et conduire à une réinstallation complète de votre système.

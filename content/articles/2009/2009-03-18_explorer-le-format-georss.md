@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 18 mars 2009
 
-![icône globe RSS](https://cdn.geotribu.fr/img/logos-icones/divers/worldRSS.png "icône globe RSS"){: .img-rdp-news-thumb }
+![icône globe RSS](https://cdn.geotribu.fr/img/logos-icones/divers/worldRSS.png "icône globe RSS"){: .img-thumbnail-left }
 
 Si vous êtes comme moi parfois perdu au sein du vaste monde de la cartographie numérique et de sa multitude de formats, je vous conseille de consulter le site [GeoWeb Guru](http://www.geowebguru.com/) et notamment son dernier [article sur le GeoRss](http://www.geowebguru.com/articles/108-technical-overview-georss).
 

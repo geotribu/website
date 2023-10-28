@@ -21,7 +21,7 @@ tags:
 
 ## Intro
 
-![logo Twitch](https://cdn.geotribu.fr/img/logos-icones/divers/twitch.png "Twitch"){: .img-rdp-news-thumb }
+![logo Twitch](https://cdn.geotribu.fr/img/logos-icones/divers/twitch.png "Twitch"){: .img-thumbnail-left }
 
 On revient avec un format moins formel, plus Twitch mais tout aussi carto-centré :wink: !
 

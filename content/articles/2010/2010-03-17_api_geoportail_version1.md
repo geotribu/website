@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 17 mars 2010
 
-![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign_old.png "logo IGN"){: .img-rdp-news-thumb }
+![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign_old.png "logo IGN"){: .img-thumbnail-left }
 
 L'API cartographique de l'Institut Géographique National (IGN) passe du statut de bêta au statut de release officielle. La version 1.0 a en effet été [annoncée](https://api.ign.fr/geoportail/document.do?doc=6133116) aujourd'hui (16 Mars 2010).
 

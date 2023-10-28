@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 20 février 2013
 
-![Logo Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-rdp-news-thumb }
+![Logo Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-thumbnail-left }
 
 Auparavant, l'essentiel de mes contributions se faisait a l'aide d'un récepteur GPS et d'un bloc note. Mais, l'invasion des smartphones et surtout le développement d'applications dédiées à OpenStreetMap m'ont fait changer mes habitudes. Néanmoins, toutes les applications ne se valent pas, tant en termes de qualité, que de fonctionnalités. Ce billet présente 2 applications incontournables que j'installe systématiquement.
 

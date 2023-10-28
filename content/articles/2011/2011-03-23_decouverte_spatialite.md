@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 23 mars 2011
 
-![logo SpatiaLite](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/spatialite.png "logo SpatiaLite"){: .img-rdp-news-thumb }
+![logo SpatiaLite](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/spatialite.png "logo SpatiaLite"){: .img-thumbnail-left }
 
 Cela fait plusieurs mois que j'avais envie de jouer un peu avec [spatialite](http://www.gaia-gis.it/spatialite/). Malheureusement, les impératifs et les architectures des projets sur lesquels je travaille ne me laissaient pas forcément beaucoup de temps pour découvrir de nouveaux horizons. C'est pourquoi, profitant d'un peu de temps libre, j'ai décidé de me pencher sur cette base de données.
 

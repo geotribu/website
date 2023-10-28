@@ -17,7 +17,7 @@ tags:
 
 ## Introduction
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Lors d'un précédent tutoriel nous avions appris comment afficher des infobulles sur un marker. Bon me direz-vous mais à quoi sert ce nouveau tuto ? Tout simplement l'ancien script était trop artisanal. En effet, la librairie OpenLayers offre des mécanismes simples d'enrichissement de classes qui n'ont pas été exploités.
 Ce [nouveau script](http://ks356007.kimsufi.com/arno/geotribu/applications/js/toolTips_ol.js "script toolTips V2") pallie à ce manque en ajoutant une spécification supplémentaire à la classe marker. Cette façon de faire permet une plus grande souplesse de travail et une meilleur portabilité à long terme.

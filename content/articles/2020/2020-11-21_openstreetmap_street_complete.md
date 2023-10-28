@@ -22,7 +22,7 @@ tags:
 
 ## Introduction
 
-![icône Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-rdp-news-thumb }
+![icône Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-thumbnail-left }
 
 Je dois vous avouer quelque-chose : cela fait quelques années déjà que je ne contribue plus de façon assidue à OpenStreetMap. Le principal frein est le manque de temps, notamment dû à la complexité que revêt la contribution quand on veut faire cela "proprement".
 

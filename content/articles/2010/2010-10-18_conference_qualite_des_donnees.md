@@ -18,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 18 octobre 2010
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 Le Vendredi 29 octobre 2010 à 14h le Pr. Yvan Bédard, de l'Université Laval (Département des Sciences Géomatiques - Québec), animera une Conférence ouverte à tous portant sur la "Qualité des données géospatiales et géodécisionnel". Celle-ci aura lieu à Mines ParisTech (Ecole des Mines de Paris) sur le site de Sophia Antipolis (Amphi Léonard de Vinci, Bât A Rue Claude Daunesse).
 

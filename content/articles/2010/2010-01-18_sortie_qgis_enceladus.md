@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 18 janvier 2010
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 [Annoncée officiellement](http://blog.qgis.org/node/142) il y a quelques jours, la nouvelle version de QGIS, dénommée 'Enceladus', est disponible en [téléchargement](http://download.qgis.org/). Les efforts de développement continuent à être portés sur l'amélioration de l'interface afin d'offir une meilleure ergonomie et une plus grande simplicité d'utilisation.
 

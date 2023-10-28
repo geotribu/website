@@ -16,7 +16,7 @@ tags:
 
 # Contribuer financièrement au projet Geotribu
 
-![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-rdp-news-thumb }
+![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-thumbnail-left }
 
 Geotribu est un projet collaboratif et indépendant (voir [Geotribu, c'est quoi ?](index.md#geotribu-cest-quoi)) qui repose sur le bénévolat et des projets libres (et généralement gratuits).
 

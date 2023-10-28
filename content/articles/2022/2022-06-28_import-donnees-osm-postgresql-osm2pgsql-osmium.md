@@ -31,7 +31,7 @@ Prérequis :
 
 ## Introduction
 
-![logo PostgreSQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgresql.svg "logo PostgreSQL"){: loading=lazy .img-rdp-news-thumb }
+![logo PostgreSQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgresql.svg "logo PostgreSQL"){: loading=lazy .img-thumbnail-left }
 
 Dans les tutoriaux d'ici ou d'ailleurs, on part souvent du principe que l'on dispose naturellement d'une base de données PostgreSQL/PostGIS tout bien configurée comme il faut avec, en prime, des données chargées et prêtes à être manipulées comme il se doit, souvent issues d'OpenStreetMap.
 
@@ -60,8 +60,8 @@ Compagniiiie... en mesure !
     Voir : https://squidfunk.github.io/mkdocs-material/reference/images/#light-and-dark-mode
   -->
 
-![logo Grand Eléphant des Machines de l'île de Nantes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_icon_white.svg#only-dark "logo Grand Eléphant des Machines de l'île de Nantes"){: loading=lazy .img-rdp-news-thumb }
-![logo Grand Eléphant des Machines de l'île de Nantes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_icon_black.svg#only-light "logo Grand Eléphant des Machines de l'île de Nantes"){: loading=lazy .img-rdp-news-thumb }
+![logo Grand Eléphant des Machines de l'île de Nantes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_icon_white.svg#only-dark "logo Grand Eléphant des Machines de l'île de Nantes"){: loading=lazy .img-thumbnail-left }
+![logo Grand Eléphant des Machines de l'île de Nantes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/machines_nantes_grand_elephant_icon_black.svg#only-light "logo Grand Eléphant des Machines de l'île de Nantes"){: loading=lazy .img-thumbnail-left }
 
 Installer PostgreSQL n'a rien de sorcier, tant le travail de packaging et de distribution est remarquablement réalisé et documenté, comme en témoigne [la page de téléchargement](https://www.postgresql.org/download/). Mais c'est toujours bon de se noter les commandes à utiliser pour installer les versions depuis les dépôts communautaires.
 
@@ -85,7 +85,7 @@ Quand je fais installer un four en terre chez moi, je ne m'attends pas à ce que
 
 ### Création d'un cluster optimisé
 
-![Grappe de Chanaan](https://cdn.geotribu.fr/img/logos-icones/divers/grappe_raisin_chanaan.webp "Grappe de Chanaan"){: loading=lazy .img-rdp-news-thumb }
+![Grappe de Chanaan](https://cdn.geotribu.fr/img/logos-icones/divers/grappe_raisin_chanaan.webp "Grappe de Chanaan"){: loading=lazy .img-thumbnail-left }
 
 On prend donc l'habitude de refaire la pâte nous-même. C'est parti pour la création d'un cluster aux ~~petits oignons~~ petites olives !
 
@@ -241,7 +241,7 @@ port=54342
 
 ### Créer et configurer la base de données
 
-![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: loading=lazy .img-rdp-news-thumb }
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: loading=lazy .img-thumbnail-left }
 
 Créer la base de données que l'on nomme `osm` :
 
@@ -308,7 +308,7 @@ sudo apt install osmium-tool
 
 ### Télécharger OSM sur la Belgique
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: loading=lazy .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: loading=lazy .img-thumbnail-left }
 
 Franchement on va pas se mentir : si Napoléon avait eu les données OpenStreetMap, on aurait moins de [problèmes de borne](https://www.lavoixdunord.fr/992266/article/2021-04-27/bousignies-sur-roc-il-deplace-une-borne-frontiere-et-viole-le-traite-de-courtrai) (de frontières, pas de ministre) de nos jours ! :smile:
 
@@ -329,7 +329,7 @@ wget -N https://download.geofabrik.de/europe/belgium-latest.osm.pbf -P /tmp/osmd
 
 ### Découper les données
 
-![logo Osmium Tool](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osmium.svg "logo Osmium Tool"){: loading=lazy .img-rdp-news-thumb }
+![logo Osmium Tool](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osmium.svg "logo Osmium Tool"){: loading=lazy .img-thumbnail-left }
 
 Si on craint de manquer d'espace disque, de puissance ou qu'on cible une zone restreinte en particulier, on peut découper les données avec une emprise avant de les importer avec un outil comme Osmium par exemple.
 
@@ -341,7 +341,7 @@ osmium extract -b 4.29,50.815,4.47,50.90 /tmp/osmdata/belgium/belgium-latest.osm
 
 ### Importer des données
 
-![logo osm2pgsql](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osm2pgsql.png "logo osm2pgsql"){: loading=lazy .img-rdp-news-thumb }
+![logo osm2pgsql](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osm2pgsql.png "logo osm2pgsql"){: loading=lazy .img-thumbnail-left }
 
 La commande osm2pgsql semble facile mais il faut bien régler les options pour ne pas avoir d'erreur :
 
@@ -418,7 +418,7 @@ Pour celles et ceux que ça intéresse, voici le détail de l'exécution sur mon
 
 ## Se connecter à la base
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Maintenant que nos données sont bien au chaud dans la base, il est temps de s'y connecter et voir ce qu'elle a dans le ventre ! On peut déjà faire un petit listing des tables via la console `psql` :
 
