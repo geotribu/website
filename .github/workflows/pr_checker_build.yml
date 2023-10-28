@@ -50,11 +50,13 @@ jobs:
           if [[ -z "${GH_TOKEN_MATERIAL_INSIDERS}" ]]; then
             echo "::warning:: L'accès aux token est réservé aux comptes avec droits d'écriture sur le dépôt. La version gratuite du thème est donc utilisée sans mots-clés, etc.)"
             python -m pip install -U -r requirements-free.txt
-            echo "MKDOCS_CONFIG_FILENAME=mkdocs-free.yml" >> $GITHUB_ENV
+            echo "MKDOCS_CONFIG_FILENAME=mkdocs.yml" >> $GITHUB_ENV
+            echo "MKDOCS_ENABLE_THEME_INSIDERS=false" >> $GITHUB_ENV
           else
             # install insiders version using token
             python -m pip install -U -r requirements-insiders.txt
             echo "MKDOCS_CONFIG_FILENAME=mkdocs.yml" >> $GITHUB_ENV
+            echo "MKDOCS_ENABLE_THEME_INSIDERS=true" >> $GITHUB_ENV
           fi
 
       - name: Cache build dependencies (external assets downloaded)

@@ -74,6 +74,7 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
           MKDOCS_ENABLE_PLUGIN_PRIVACY: true
           MKDOCS_ENABLE_PLUGIN_RSS: true
+          MKDOCS_ENABLE_THEME_INSIDERS: true
           MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
 
       - name: Setup Pages
