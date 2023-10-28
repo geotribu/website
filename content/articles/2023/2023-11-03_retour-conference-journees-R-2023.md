@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-![Pastille hexagonale de R aux couleurs jaune coquille d'oeuf et bleu azur d'Avignon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/01_logo_hexagonal_rencontres_R_Avignon_2023.webp){: .img-rdp-news-thumb }
+![Pastille hexagonale de R aux couleurs jaune coquille d'oeuf et bleu azur d'Avignon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/01_logo_hexagonal_rencontres_R_Avignon_2023.webp){: .img-thumbnail-left }
 
 En juin dernier, Avignon a accueilli les [Rencontres R](https://rr2023.sciencesconf.org/), le plus grand événement français dédié au célèbre logiciel libre de statistiques. Il y avait un invité spécial : le spatial. Ce qui tombe bien, car si je ne suis plus débutante sur ce logiciel, j'ai encore des marches de progression à passer.
 
@@ -78,7 +78,7 @@ Elle a rappelé le [validisme](https://fr.wikipedia.org/wiki/Capacitisme) ambian
 
 ## Les paillettes de Lise Vaudor (épisode 1)
 
-![logo glitteR](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/glitteR.webp){: .img-rdp-news-thumb }
+![logo glitteR](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/glitteR.webp){: .img-thumbnail-left }
 
 Le [package GlitteR](https://www.youtube.com/watch?v=JW_gKrNX-OU) explore le web sémantique, comprenez des données qui sont elles-mêmes reliées à d'autres données, ce qui donne par exemple Wikidata. J'ai appris que l'on y accède grâce à des points d'accès, les *endpoint*. Lise Vaudor (CNRS) rappelle fort justement que l'inconvénient des graphes de connaissance, c'est que l'on ne peut pas avoir une vision d'ensemble comme avec un tableau... D'où l'importance de connaître son terrain ou de partir d'un terrain connu afin de pouvoir couper les branches inutiles du graphe. Et GLitteR dans tout cela ? Il permet d'accéder aux données de Wikidata avec R, sans avoir à passer par le SPARQL. Une grosse avancée pour les personnes pas du tout à l'aise avec ce langage. Il est vrai que tout le monde n'a pas encore eu de [wikimédien ou wikimédienne en résidence](https://fr.wikipedia.org/wiki/Projet:Wikifier_la_science) (patience).
 
@@ -102,7 +102,7 @@ Ce qui m'a intéressée, [c'est leur méthode](https://www.youtube.com/watch?v=N
 
 ## L'INSEE passe à R
 
-![logo INSEE](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/INSEE.svg){: .img-rdp-news-thumb }
+![logo INSEE](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/INSEE.svg){: .img-thumbnail-left }
 
 C'est *LA* grande annonce du colloque. L'institution publique de la statistique française passe sur *LE* logiciel libre des statistiques. Un changement pareil ne se fait pas naturellement dans une institution aussi ancienne. Alors comment a-t-elle fait ?
 
@@ -123,7 +123,7 @@ Comment impulser de bonnes pratiques de codage, comme la documentation ? L'INSEE
 
 ## Les RLadies françaises
 
-![logo RLadies](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/R_Ladies.webp){: .img-rdp-news-thumb }
+![logo RLadies](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/R_Ladies.webp){: .img-thumbnail-left }
 
 Depuis 2016, il existe un [groupe des Rladies en France](https://www.youtube.com/watch?v=MIcMzFtTAuw) qui regroupe plus de 500 personnes. Beaucoup de leurs événements parisiens sont aussi disponibles en ligne, [comme les rediffusions](https://www.youtube.com/@rladiesparis) de leurs réunions.
 
@@ -133,7 +133,7 @@ Depuis 2016, il existe un [groupe des Rladies en France](https://www.youtube.com
 
 ## Publier ses réalisations sur R
 
-![Logo de Rzine](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/Rzine.webp){: .img-rdp-news-thumb }
+![Logo de Rzine](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/Rzine.webp){: .img-thumbnail-left }
 
 Faire du code R, ui. Faire de magnifique réalisations, ui à nouveau. Les documenter (un motif récurrent de ces conférences, vous l'aurez noté), c'est mieux.
 
@@ -166,7 +166,7 @@ Il a rappelé que ggplot2 a été en 2007 une révolution en faisant passer R d'
 
 ## L'IGN en mode happi
 
-![Logo de happign](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/happign.webp){: .img-rdp-news-thumb }
+![Logo de happign](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/happign.webp){: .img-thumbnail-left }
 
 L'[IGN a présenté LE package](https://www.youtube.com/watch?v=Ha44VTGhOVo) qui permet d'accéder à toutes ses données, Lidar compris : :star: happign :star:. C'est un des éléments qui me fait aimer R et me pousse à m'y former : la facilité d'accès aux données avec le logiciel.
 
@@ -174,7 +174,7 @@ L'[IGN a présenté LE package](https://www.youtube.com/watch?v=Ha44VTGhOVo) qui
 
 ## Un package spatial : Timothée Giraud et mapsf
 
-![Logo de mapsf](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapsf.webp){: .img-rdp-news-thumb }
+![Logo de mapsf](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapsf.webp){: .img-thumbnail-left }
 
 On l'a indiqué, ces journées R portaient spécialement sur le spatial. Timothée Giraud (UAR RIATE) est donc venu [présenter le travail autour de ce package phare](https://www.youtube.com/watch?v=rzARlulrVgQ).
 
