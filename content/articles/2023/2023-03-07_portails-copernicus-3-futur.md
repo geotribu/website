@@ -26,7 +26,7 @@ tags:
 
 ## Introduction
 
-![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-rdp-news-thumb }
+![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-thumbnail-left }
 
 L'Europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem" : [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service au cours de trois articles, chacun dédié à une partie pour faciliter la lecture et le "picorage" d'information à ceux qui connaissent déjà le sujet.
@@ -97,7 +97,7 @@ On pense ici plutôt à un équivalent google colab et à ce que les DIAS offren
 
 ### Arrivée de STAC et COG
 
-![logo COG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/COG_logo.png "Logo COG"){: .img-rdp-news-thumb }
+![logo COG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/COG_logo.png "Logo COG"){: .img-thumbnail-left }
 
 Une première évolution prévue est une diversification des modes d'accès et téléchargement à ces données.
 Aujourd'hui l'accès aux données Sentinel se fait par granules (S1) ou dalles (S2) représentant des zones géographiques de plusieurs centaines de kilomètres ([tuiles de type MGRS](https://labo.obs-mip.fr/multitemp/the-sentinel-2-tiles-how-they-work/) de 110km*110km pour Sentinel-2) dans le format de l'ESA (JPEG 2000).
@@ -160,7 +160,7 @@ D'une part, on devrait retrouver une offre d'API selon la norme [WCS](http://ope
 l'OGC (via Sinergise) qui permet d'affiner la récupération des données Sentinel au strict nécessaire.
 Cela est utile notamment pour des calculs simples, à la volée, entre bandes raster (de type calculatrice raster), un exemple possible étant le calcul d'une couche NDVI (indice de végétation) à partir des bandes spectrales rouge et infrarouge Sentinel-2 et donc de ne récupérer que deux bandes spectrales en WCS sur les treize bandes possibles.  
 
-![logo OPENEO](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo_logo.png "Logo OPENEO"){: .img-rdp-news-thumb }
+![logo OPENEO](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/openeo_logo.png "Logo OPENEO"){: .img-thumbnail-left }
 
 D'autre part, un service [OpenEO](https://openeo.org/) devrait aussi être déployé (via VITO).
 L'API OpenEO propose des fonctionnalités de type Google Earth Engine (GEE) ou datacube mais avec une API normalisée et pouvant être proposée par différents backend/fournisseurs.

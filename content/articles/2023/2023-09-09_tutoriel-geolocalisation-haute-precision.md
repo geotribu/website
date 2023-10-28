@@ -44,7 +44,7 @@ L'utilisation du RTK est une technique parfaitement adaptée à des applications
 
 ## Introduction
 
-![icône GPS](https://cdn.geotribu.fr/img/logos-icones/gps.png "icône GPS"){: .img-rdp-news-thumb }
+![icône GPS](https://cdn.geotribu.fr/img/logos-icones/gps.png "icône GPS"){: .img-thumbnail-left }
 
 Ce tutoriel présente un kit de géolocalisation permettant de créer un mobile RTK (ou rover[^1]) à coût limité. Il est également expliqué comment le configurer avec un smartphone fonctionnant avec Android.
 
@@ -112,7 +112,7 @@ graph TD
 
 ### Option 1 avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (gratuit) ou Map-it ( add-on NTRIP payant)
 
-![icône SW Maps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sw_maps.webp){: .img-rdp-news-thumb }
+![icône SW Maps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sw_maps.webp){: .img-thumbnail-left }
 
 SW Maps présente l'avantage d'être gratuite et de gérer les corrections en temps réel du serveur NTRIP.
 

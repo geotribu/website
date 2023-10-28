@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 17 novembre 2008
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 [QGis](https://www.qgis.org/) est un des logiciels phare du SIG OpenSource. Un des aspects qui a fait sa popularité est la possibilité d'ajouter ses plugins personnels ou ceux développés par la communauté. Mais ces plugins écrits en python peuvent, pour les néophytes, paraîtrent déroutants. En effet, par où commencer, que faut-il faire exactement ?
 

@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 juillet 2010
 
-![icone database](https://cdn.geotribu.fr/img/logos-icones/programmation/database.png "icone database"){: .img-rdp-news-thumb }
+![icone database](https://cdn.geotribu.fr/img/logos-icones/programmation/database.png "icone database"){: .img-thumbnail-left }
 
 Dans le cadre de mon activité professionnelle, j'avais besoin de modéliser une base de données et d'importer des données d'une base access ([base gaspar](http://macommune.prim.net/gaspar/)) vers une base PostgreSQL. Plutôt que de faire tout cela à la main, j'ai cherché à optimiser et surtout automatiser au maximum les différentes opérations. Je me suis donc penché sur les différentes solutions existantes et je vous livre mes impressions. Il existe très certainement des équivalents propriétaires aux différentes applications que nous allons présenter ci-dessous, mais nous avons fait le choix de privilégier au maximum (intégralement) les logiciels OpenSource.
 

@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 19 mai 2009
 
-![logo Mapnik](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapnik.png "logo Mapnik"){: .img-rdp-news-thumb }
+![logo Mapnik](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapnik.png "logo Mapnik"){: .img-thumbnail-left }
 
 J'avoue avoir été longtemps frustré par la piètre qualité des images générées par [MapServer](http://mapserver.org/). Difficile de laisser parler sa créativité cartographique quand le rendu n'est pas à la hauteur de ses espérances. C'est pourquoi je me suis récemment tourné vers [Mapnik](http://mapnik.org/). Ce dernier doit la qualité de ses graphiques à l'utilisation de la librairie [AGG](http://antigrain.com/). Même si Mapnik a été le premier à tirer partie des potentialités de cette librairie, celle-ci est dorénavant implémentée par MapServer et [MapGuide](http://mapguide.osgeo.org/).
 

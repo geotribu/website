@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 18 avril 2009
 
-![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-rdp-news-thumb }
+![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-thumbnail-left }
 
 [wheresthepath](http://wheresthepath.googlepages.com/wheresthepath.htm) est une interface cartographique, mêlant habilement OpenLayers et Google Maps, dont le but est de pouvoir planifier un itinéraire ou alors d'importer un fichier [KML](https://fr.wikipedia.org/wiki/Keyhole_Markup_Language)/[GPX](https://fr.wikipedia.org/wiki/GPX_(format_de_fichier)).
 

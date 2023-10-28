@@ -23,7 +23,7 @@ tags:
 
 :calendar: Date de publication initiale : 4 avril 2023
 
-![logo conf QGIS FR 2023](https://cdn.geotribu.fr/img/external/salons_conferences/qgis_fr/qgis_journees_francophones_2023_logo.svg){: .img-rdp-news-thumb loading=lazy }
+![logo conf QGIS FR 2023](https://cdn.geotribu.fr/img/external/salons_conferences/qgis_fr/qgis_journees_francophones_2023_logo.svg){: .img-thumbnail-left loading=lazy }
 
 La Geotribu était bien présente aux journées QGIS. En plus d'assurer l'animation de la journée de conférences (plutôt au titre de membre de l'OSGeo-FR et grâce au soutien d'[Oslandia](https://oslandia.com/)), Florian et moi avons eu l'idée d'improviser des mini-interviews !
 

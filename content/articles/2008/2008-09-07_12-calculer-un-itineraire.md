@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 De la même manière que le géocodage à l'adresse, l'API Google Maps permet de calculer un itinéraire en utilisant la classe [GDirections](http://code.google.com/intl/fr/apis/maps/documentation/reference.html#GDirections).  
 

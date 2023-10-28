@@ -38,7 +38,7 @@ Dans cet article, on va voir pourquoi et comment on a choisi de passer sur une r
 
 ## Markdown, lingua franca du contenu éditorial en ligne
 
-![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-rdp-news-thumb }
+![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-thumbnail-left }
 
 Inspiré par le *plain-text email* ([texte brut dans un courriel en bon français](https://fr.wikipedia.org/wiki/Texte_brut#Texte_brut_dans_un_courriel)) ou encore le [ReStructuredText](https://fr.wikipedia.org/wiki/) (RST), la syntaxe [Markdown] est conçue pour être facile à lire, à écrire et à convertir, tout en prenant soin de ne pas casser les balises du HTML.
 
@@ -63,7 +63,7 @@ A l'instar de n'importe quelle langue, qui plus est non standardisée, le rendu 
 
 ## Du HTML au Markdown
 
-![mouton](https://cdn.geotribu.fr/img/logos-icones/divers/mouton.jpg "Bêêêêê"){: .img-rdp-news-thumb }
+![mouton](https://cdn.geotribu.fr/img/logos-icones/divers/mouton.jpg "Bêêêêê"){: .img-thumbnail-left }
 
 Revenons à nos géo-moutons.
 

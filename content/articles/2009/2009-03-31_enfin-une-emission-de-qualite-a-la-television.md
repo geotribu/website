@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 31 mars 2009
 
-![logo bbc one](https://cdn.geotribu.fr/img/logos-icones/divers/bbc.png "logo bbc one"){: .img-rdp-news-thumb }
+![logo bbc one](https://cdn.geotribu.fr/img/logos-icones/divers/bbc.png "logo bbc one"){: .img-thumbnail-left }
 
 En me baladant sur le blog [TerrImago](http://terrimago.blogspot.com/) je suis tombé sur une véritable [perle](http://terrimago.blogspot.com/2009/03/britain-from-above-la-terre-vue-du-ciel.html).
 

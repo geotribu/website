@@ -20,7 +20,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 janvier 2010
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 A force de publier des tutoriaux et des articles sur des technologies qui nous tiennent à coeur, nous avons voulu les mettre en application : c'est ainsi que nous sortons Imagimap Road. Il s'agit d'un comparateur des données 'route' des différents fournisseurs de données : OpenStreetMap, Google, Yahoo.
 

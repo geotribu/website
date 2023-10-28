@@ -19,7 +19,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 L'API Google Maps permet de définir une barre de géolocalisation et d'afficher le résultat sur la carte.  
 

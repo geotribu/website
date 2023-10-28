@@ -24,7 +24,7 @@ title: "10. Utiliser Ajax, MySQL et PHP pour afficher des marqueurs"
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 Ce tutoriel va nous permettre d'afficher des marqueurs stockés en base de données sur la carte Google Maps. Nous verrons donc comment ouvrir une liaison Ajax avec notre serveur, comment interpréter la réponse envoyée par le serveur et comment construire cette réponse en PHP.  
 

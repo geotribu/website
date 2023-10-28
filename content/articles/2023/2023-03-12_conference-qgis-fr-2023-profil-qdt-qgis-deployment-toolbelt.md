@@ -29,7 +29,7 @@ Prérequis :
 
 ## Introduction
 
-![logo conf QGIS FR 2023](https://cdn.geotribu.fr/img/external/salons_conferences/qgis_fr/qgis_journees_francophones_2023_logo.svg){: .img-rdp-news-thumb }
+![logo conf QGIS FR 2023](https://cdn.geotribu.fr/img/external/salons_conferences/qgis_fr/qgis_journees_francophones_2023_logo.svg){: .img-thumbnail-left }
 
 Organisées par l'OSGeo-FR, les rencontres des utilisateurs francophones de QGIS sont clairement l'événement annuel à ne pas rater quand on travaille avec ce logiciel SIG, qu'on parle principalement français ou qu'on peut difficilement envisager des déplacements à l'étranger (le prochain [QGIS User meeeting se tiendra en avril aux Pays-Bas](https://uc2023.qgis.nl/)).
 

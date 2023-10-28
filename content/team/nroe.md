@@ -1,6 +1,6 @@
 # Nicolas Roelandt {: data-search-exclude }
 
-![Bouletmaton Nicolas Roelandt](https://cdn.geotribu.fr/img/internal/contributeurs/nroe.jpg "Bouletmaton Nicolas Roelandt"){: .img-rdp-news-thumb }
+![Bouletmaton Nicolas Roelandt](https://cdn.geotribu.fr/img/internal/contributeurs/nroe.jpg "Bouletmaton Nicolas Roelandt"){: .img-thumbnail-left }
 
 Géomaticien au sein de l'[Université Gustave Eiffel](https://www.univ-gustave-eiffel.fr/) depuis 2018 suite à une reconversion.
 J'avais goûté à la topographie et aux SIG durant ma formation de forestier.

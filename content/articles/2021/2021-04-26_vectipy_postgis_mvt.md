@@ -29,7 +29,7 @@ Pré-requis :
 
 ## Introduction
 
-![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
 Le serveur de tuiles [vectipy](https://github.com/jbdesbas/vectipy) peut vous interesser si :
 
@@ -189,7 +189,7 @@ Autres serveurs de tuiles vectorielles sur le [Github de Mapbox](https://github.
 
 ### Jean-Baptiste Desbas
 
-![Portrait Jean-Baptiste Desbas](https://cdn.geotribu.fr/img/internal/contributeurs/jdes.png "Portrait Jean-Baptiste Desbas"){: .img-rdp-news-thumb }
+![Portrait Jean-Baptiste Desbas](https://cdn.geotribu.fr/img/internal/contributeurs/jdes.png "Portrait Jean-Baptiste Desbas"){: .img-thumbnail-left }
 
 Géomaticien avec une forte appétence pour les thématiques environnement, biodiersité et urbanisme. Je travaille en tant que gestionnaire de base de données à l'association [Picardie Nature](http://picardie-nature.org), où j'ai la chance de pouvoir insuffler une logique _open data_ au sein de la communauté naturaliste.
 

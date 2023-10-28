@@ -21,7 +21,7 @@ tags:
 
 :calendar: Date de publication initiale : 31 décembre 2021
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 [Publié sur Github](https://github.com/rastapasta/mapscii) en 2017 par le développeur allemand Michael Straßburger, MapSCII est une application Node.js qui propose de naviguer dans la carte mondiale d'OpenStreetMap... depuis un [terminal](https://fr.wikipedia.org/wiki/Terminal), avec un style cartographique détonnant construit en braille et en [ASCII](https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) !  
 Le projet, qui nous avait échappé jusqu'ici, dispose d'une démo rapidement consultable, mais peut aussi être téléchargé et personnalisé.

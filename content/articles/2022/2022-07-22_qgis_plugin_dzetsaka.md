@@ -20,7 +20,7 @@ tags:
 
 ## Introduction
 
-![logo Dzetsaka](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis_dzetsaka.png "logo Dzetsaka"){: .img-rdp-news-thumb }
+![logo Dzetsaka](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis_dzetsaka.png "logo Dzetsaka"){: .img-thumbnail-left }
 
 La classification (dans notre exemple d'une image raster) est une tâche permettant d'extraire des classes d'information à partir de l'analyse du jeu de données.
 

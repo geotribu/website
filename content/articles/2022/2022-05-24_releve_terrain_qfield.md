@@ -22,7 +22,7 @@ tags:
 
 ## Introduction
 
-![logo QField](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qfield.png "logo QField"){: .img-rdp-news-thumb }
+![logo QField](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qfield.png "logo QField"){: .img-thumbnail-left }
 
 Pour donner suite à [l’article récent sur Input](2022-03-11_releve_terrain_qgis_input.md), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de QField ces dernières années avec le cabinet Tactis.
 
@@ -97,7 +97,7 @@ J’ai pris l’habitude de monter mes projets avec l’arborescence suivante :
 
 ### Astuces à savoir dans le paramétrage QGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Penser aux échelles de visibilité (symboles et étiquettes) pour alléger au maximum l’affichage en mobilité.
 
@@ -127,7 +127,7 @@ Utilisez le générateur d’UUID pour faire des clés primaires uniques entre v
 
 #### PostGIS
 
-![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: .img-rdp-news-thumb }
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: .img-thumbnail-left }
 
 Dans le meilleur des mondes (sauf pour les allergiques à la 5G), nous aurions de la connectivité partout et il suffirait de bâtir un projet 100% online, derrière un serveur PostGIS par exemple. Reste à gérer le partage des projets (.qgs), qui peut être fait avec un simple stockage cloud type Gdrive.
 
@@ -135,7 +135,7 @@ Dans le meilleur des mondes (sauf pour les allergiques à la 5G), nous aurions d
 
 #### Syncthing
 
-![logo Syncthing](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/syncthing.png "logo Syncthing"){: .img-rdp-news-thumb }
+![logo Syncthing](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/syncthing.png "logo Syncthing"){: .img-thumbnail-left }
 
 Dans la vraie vie, on intervient encore sur des zones à faibles connectivités (surtout quand on travaille dans le déploiement du réseau télécoms, ce qui était mon cas, mais c’est aussi vrai pour bien d’autres secteurs). De plus, si la collecte implique des photos, PostGIS ne sera pas suffisant pour remonter les fichiers.
 
@@ -153,7 +153,7 @@ L’inconvénient est que cela nécessite tout de maintenir des applications ser
 
 #### Git
 
-![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
+![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-thumbnail-left }
 
 Dernièrement, j’utilise [Git] pour gérer le partage et la synchronisation de projets QField sur une flotte de tablette. Le principe est le suivant :
 

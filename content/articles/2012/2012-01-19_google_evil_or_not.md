@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 19 janvier 2012
 
-![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-rdp-news-thumb }
+![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-thumbnail-left }
 
 Nous avons longtemps hésité avant de relayer les accusations émises à l'encontre de Google tant celles-ci nous semblent démesurées et hors de propos. Mais, des sites à grande audience ([clubic](https://www.clubic.com/application-web/actualite-470152-openstreet-maps-mit-mal-google.html), [numerama](https://www.numerama.com/magazine/21297-google-le-sabotage-d-openstreetmap-et-l-enjeu-du-web-local.html) ou encore [slashdot](https://tech.slashdot.org/story/12/01/17/1429201/openstreetmap-reports-data-vandalism-from-google-owned-ips)) n'ont pas eu ce genre de scrupules. Au regard du déchainement de commentaires qui fustigent google, il nous a semblé important de clarifier cette situation rocambolesque et de nuancer les différentes allégations. Bien évidemment, cela n'est que notre avis et si vous avez des arguments contraires n’hésitez pas à nous les signaler dans vos commentaires.
 

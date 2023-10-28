@@ -19,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 juin 2011
 
-![logo leafletjs](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/leaflet.png "logo Leaflet"){: .img-rdp-news-thumb }
+![logo leafletjs](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/leaflet.png "logo Leaflet"){: .img-thumbnail-left }
 
 [Annoncé](http://blog.cloudmade.com/2011/05/13/announcing-leaflet-a-modern-open-source-javascript-library-for-interactive-maps/) il y a quelques semaines, [Leaflet](http://leaflet.cloudmade.com/) est la nouvelle API cartographique en JavaScript de [Cloud Made](http://blog.cloudmade.com). Les conditions d'utilisations sont très souples puisqu'elle a été publiée sous [licence BSD](https://fr.wikipedia.org/wiki/Licence_BSD). Néanmoins, que vaut-elle par rapport aux autres alternatives existantes ? Partons dans ce tutoriel à la découverte de celle-ci.
 

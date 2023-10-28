@@ -27,7 +27,7 @@ Pré-requis :
 
 ## Introduction
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
 
 Le *splash screen* est l'image qui apparaît au lancement de QGIS. Une image que vous pouvez voir plus ou moins longtemps, la durée étant inversement proportionnelle aux caractéristiques techniques de votre ordinateur et au nombre de plugins installés.
 
@@ -101,7 +101,7 @@ Redémarrer QGIS. Si vous trouvez que votre magnifique image disparaît trop vit
 
 ## Besoin de ne rien faire, envie d'essayer
 
-![logo QGIS](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette_200x200.png){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette_200x200.png){: .img-thumbnail-left }
 
 La flemme de suivre les étapes du tutoriel ? Fatigué/e à l'idée de devoir modifier un fichier à la mimine ?  Mais envie d'essayer ce que ça peut donner ?
 

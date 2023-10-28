@@ -20,7 +20,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 Les options sont parfois nécessaires pour personnaliser les affichages. Ici nous verrons comment ajouter des options aux polylignes pour simuler les vols d'une compagnie aérienne.
 

@@ -22,7 +22,7 @@ tags:
 
 :calendar: Date de publication initiale : 08 juin 2021
 
-![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
+![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-thumbnail-left }
 
 Cette série de 3 articles vise à présenter Open Data Kit, qui est une solution de recueil de données sur téléphone Android, utilisée par le [Conservatoire d'Espaces Naturels d'Occitanie], pour la collecte de données spatialisées de biodiversité, et leur intégration à une base de données PostGIS.
 
@@ -71,7 +71,7 @@ Du côté des anecdotes chiffrées  :
 
 ### Gouvernance et communauté
 
-![logo Open Data Kit (ODK)](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/odk_open_data_kit.png "logo Open Data Kit (ODK)"){: .img-rdp-news-thumb }
+![logo Open Data Kit (ODK)](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/odk_open_data_kit.png "logo Open Data Kit (ODK)"){: .img-thumbnail-left }
 
 Du côté de la gouvernance, [GetODK], la société qui développe ODK, est une [équipe composée de 9 personnes](https://getodk.org/about/team.html) qui s'appuie sur un comité technique, appelé [TAB (Technical Advisory Board)](https://github.com/getodk/governance/blob/master/TAB-GOVERNANCE.md) impliquant des utilisateurs de toute la planète et de différents domaines. Ce TAB se réunit tous les 15 jours [de manière très transparente](https://forum.getodk.org/tag/tab-meeting).
 
@@ -88,7 +88,7 @@ C'est un lieu de discussion mondial, où il n'est pas rare d'échanger avec des 
 
 ### Le SI du CEN
 
-![Cen Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/logo_CEN_Occitanie.jpg "Cen Occitanie"){: .img-rdp-news-thumb }
+![Cen Occitanie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/logo_CEN_Occitanie.jpg "Cen Occitanie"){: .img-thumbnail-left }
 
 Les conservatoires d'espaces naturels sont des structures associatives composées d'équipe pluri-disciplinaires (Ecologie, Botanique, Faunistique, Phytosociologie, Agriculture, Gestion administrative et financière, Informatique et Systèmes d'information). L'action des Cen se décline selon 5 axes : Connaître, Protéger, Gérer, Valoriser, Accompagner. La connaissance est la base de notre action.
 
@@ -210,7 +210,7 @@ Voici deux outils qui ne sont pas développés par l'équipe d'ODK, mais par des
 
 #### QReal Time
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 L'extension [QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), développée par Shiva Reddy Koti et Prabhakar Alok Verma, permet d’afficher directement les données collectées dans QGIS depuis Central et aussi de créer des formulaires vierges à partir d'une couche. Elle est disponible directement depuis le gestionnaire d'extensions de QGIS.
 
@@ -218,7 +218,7 @@ L'extension [QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), 
 
 #### ruODK
 
-![logo R](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/r.png "logo R"){: .img-rdp-news-thumb }
+![logo R](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/r.png "logo R"){: .img-thumbnail-left }
 
 [ruODK](https://docs.ropensci.org/ruODK/) est un client R pour l'API d'ODK Central, developpé par un membre du TAB ([Florian Mayer](https://forum.getodk.org/u/florian_may/summary)), qui permet de mobiliser directement les données collectées dans R. Il est utilisé depuis peu dans la structure dans le cadre d'un travail de recherche  mené sur les vieilles forêts.
 
@@ -226,7 +226,7 @@ L'extension [QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), 
 
 ## XLSForm
 
-![logo Excel](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/excel_2013.png "logo Excel"){: .img-rdp-news-thumb }
+![logo Excel](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/excel_2013.png "logo Excel"){: .img-thumbnail-left }
 
 Un fichier [XLSForm] est un tableur enregistré au format XLS ou XLSX, respectant le standard [XLSForm].
 
@@ -273,7 +273,7 @@ Elle contient la version du formulaire ainsi que le nom que l'on souhaite donner
 
 ### Focus sur les widgets géographiques
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 Plusieurs interfaces (*widgets*) cartographiques de saisie vont nous être proposées par ODK. Toutes reposent sur l'utilisation d'un fond de carte et d'une librairie géographique. Pour simplifier la chose à l'utilisateur, le distinguo n'est plus fait à ce sujet dans les réglages de l'application.  
 L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce dernier propose plusieurs "styles" (satellite, terrain...) choisir celui qui convient.

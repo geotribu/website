@@ -1,6 +1,6 @@
 ### TITRE DE LA NEWS
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb loading=lazy }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left loading=lazy }
 
 **Ou choisir une autre icône depuis le CDN : <https://contribuer.geotribu.fr/rdp/structure_news/#tableau-des-icones-generiques/>**
 

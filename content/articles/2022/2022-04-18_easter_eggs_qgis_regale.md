@@ -26,7 +26,7 @@ tags:
 
 ## Introduction
 
-![œuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/oeuf_globe.webp "œuf globe"){: .img-rdp-news-thumb }
+![œuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/oeuf_globe.webp "œuf globe"){: .img-thumbnail-left }
 
 Tradition ~~séculaire~~ technique popularisée avec l'avènement du [Konami Code](https://fr.wikipedia.org/wiki/Code_Konami), les [_Easter eggs_](https://fr.wikipedia.org/wiki/Easter_egg) (oeufs de Pâques en bon français) sont des fonctions cachées par des développeurs mutins dans les logiciels, y compris parmi les plus utilisés. Par exemple, sur la distribution Linux Debian (et donc les distributions  de la famille Ubuntu) entrer `apt moo` :
 
@@ -61,7 +61,7 @@ Revue à 4 mains des oeufs cartographiques, en particulier dans QGIS.
 
 ## Les _Easter eggs_ et la cartographie papier
 
-![icône Scan25](https://cdn.geotribu.fr/img/logos-icones/divers/scan25.jpg "Icône Scan25"){: .img-rdp-news-thumb }
+![icône Scan25](https://cdn.geotribu.fr/img/logos-icones/divers/scan25.jpg "Icône Scan25"){: .img-thumbnail-left }
 
 Les oeufs de Pâques se trouvent souvent dans un travail créatif et collectif. C'est le cas bien entendu des cartes papier, comme présenté dans un article publié en 2020 dans le magazine [_Carto_](https://halshs.archives-ouvertes.fr/halshs-02508252/document).
 
@@ -73,7 +73,7 @@ Nouvelle expression : [avoir un éléphant dans la ~~pièce~~ carte](https://fr.
 
 ## Croquer les oeufs de Pâques de QGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Incroyable projet collaboratif et créatif, QGIS a bien entendu lui aussi ses propres oeufs de Pâques, soigneusement dissimulés comme il se doit :
 
@@ -98,7 +98,7 @@ Transformons-la donc en opportunité et dénichons-les tous ! De la documentatio
 
 ### En planque
 
-![GRASS loupe](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/grass_mapset_search.svg "Planqué dans l'herbe"){: .img-rdp-news-thumb }
+![GRASS loupe](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/grass_mapset_search.svg "Planqué dans l'herbe"){: .img-thumbnail-left }
 
 La première tactique est l'apanage de la passivité : il suffit d'attendre bien sagement qu'une information sorte sur un _Easter eggs_. Au temps des infox, mieux vaut s'appuyer sur les sources officielles : les [notes de version visuelles](https://qgis.org/en/site/forusers/visualchangelogs.html).
 
@@ -114,7 +114,7 @@ C'est un bon début mais voilà qui ne suffit toujours pas à satisfaire notre s
 
 ### Au coeur du terrier
 
-![Octocat GitHub détective](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/inspectocat.jpg "Octocat GitHub détective"){: .img-rdp-news-thumb }
+![Octocat GitHub détective](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/inspectocat.jpg "Octocat GitHub détective"){: .img-thumbnail-left }
 
 Prenons notre courage à `0:n` mains (oui, je reste vague pour n'exclure personne, pas même un/e éventuel/le lecteur/ice manchot/e) et allons à la source : le code sur GitHub. Mais... mais... c'est plein de code d'ingénieurs informaticiens :scream_cat:.  
 Allons, allons, c'est justement l'occasion de démystifier ce qui se cache sous QGIS en se répétant ce que Napoléon disait toujours à ses troupes face aux cyber-attaques caractéristiques de la campagne de Russie :

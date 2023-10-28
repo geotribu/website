@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 18 septembre 2008
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Merci à Emanuel Schütze pour ce [diagramme des classes de la librairie OpenLayers](http://trac.openlayers.org/attachment/wiki/UML/ClassDiagram_OL2.7RC2-20080916.pdf?format=raw "diagramme des classes de la librairie OpenLayers") (2.7).
 

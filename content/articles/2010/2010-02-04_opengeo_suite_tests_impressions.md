@@ -18,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 04 février 2010
 
-![logo OpenGeo](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/opengeosuite.png "logo OpenGeo"){: .img-rdp-news-thumb }
+![logo OpenGeo](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/opengeosuite.png "logo OpenGeo"){: .img-thumbnail-left }
 
 Que de chemin parcouru depuis 2001, date du lancement du projet [GeoServer](http://geoserver.org/display/GEOS/Welcome), par l'équipe d'[OpenGeo](http://opengeo.org). En effet, il y a à peine quelques jours cette dernière annonce la sortie officielle d'[OpenGeo Suite](http://opengeo.org/products/suite/), un environnement complet (serveur et client cartographique) permettant de mettre en ligne des projets cartographiques et cela de manière complètement assistée. [CampToCamp](http://www.camptocamp.com/fr), avec le framework [MapFish](http://www.mapfish.org/), avait déjà à l'époque (Octobre 2008 - V1.0) fait sensation en offrant des fonctionnalités similaires sans toutefois atteindre la facilité d'administration que j'ai pu voir dans OpenGeo Suite. Profitant d'une [version d'essai](http://opengeo.org/products/suite/register/) de 30 jours j'ai donc installé cette version 1.0 afin de faire quelques tests.
 

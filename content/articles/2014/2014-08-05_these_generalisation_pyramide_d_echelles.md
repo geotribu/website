@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 05 août 2014
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 Le [laboratoire COGIT](http://recherche.ign.fr/labos/cogit/accueilCOGIT.php) propose un sujet de thèse sur la généralisation de niveaux intérmédiaires dans une pyramide d’échelles. Cette thèse est proposée par [Guillaume Touya](http://recherche.ign.fr/labos/cogit/cv.php?prenom=Guillaume&nom=Touya). Plus de détails sont disponibles à la suite de ce billet et surtout n'hésitez pas à postuler !
 

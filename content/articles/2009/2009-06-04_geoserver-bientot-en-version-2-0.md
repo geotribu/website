@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 04 juin 2009
 
-![logo GeoServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo GeoServer"){: .img-rdp-news-thumb }
+![logo GeoServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo GeoServer"){: .img-thumbnail-left }
 
 GeoServer est, comme son nom l'indique, un serveur cartographique OpenSource sous licence GPL 2.0. Son développement initié par l'association " The Open Planning Project (TOPP)" avait au départ pour objectif d'offrir une suite d'outils permettant de rendre la gestion de projets urbain plus transparente pour les citoyens. La philosophie principale étant de l'aveu même des créateurs de s'orienter vers une "Open Democraty".
 

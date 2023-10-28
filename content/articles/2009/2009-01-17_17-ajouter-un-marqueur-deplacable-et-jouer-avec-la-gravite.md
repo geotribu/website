@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-rdp-news-thumb}
+![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-thumbnail-left}
 
 Il est possible grâce à l'API Google Maps de créer des marqueurs déplaçables. Nous verrons ici comment l'implémenter.  
 

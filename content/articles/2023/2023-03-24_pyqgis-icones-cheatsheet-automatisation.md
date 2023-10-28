@@ -24,7 +24,7 @@ tags:
 
 :calendar: Date de publication initiale : 24 mars 2023
 
-![logo PyQGIS](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-rdp-news-thumb }
+![logo PyQGIS](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-thumbnail-left }
 
 En janvier 2021, je publiais un article pour encourager les développeurs de plugins QGIS à (ré)utiliser les icônes intégrées pour enrichir leurs interfaces graphiques sans effort (ni talent): [Utiliser les icônes intégrées de QGIS pour égayer ses plugins](../2021/2021-01-19_pyqgis_utiliser_icones_integrees.md).  
 Un mois plus tard, je donnais une recette technique pour extraire automatiquement les icônes depuis le fichier de ressource directement depuis les sources du projet : [Récupérer et prévisualiser les icônes intégrées à QGIS](../2021/2021-02-02_pyqgis_previsualiser_images_integrees.md).

@@ -1,6 +1,6 @@
 # Aurélien Chaumet {: data-search-exclude }
 
-![Portrait Aurélien Chaumet](https://cdn.geotribu.fr/img/internal/contributeurs/achaumet.webp "Portrait Aurélien Chaumet"){: .img-rdp-news-thumb }
+![Portrait Aurélien Chaumet](https://cdn.geotribu.fr/img/internal/contributeurs/achaumet.webp "Portrait Aurélien Chaumet"){: .img-thumbnail-left }
 
 Ingénieur en Aménagement du territoire, je suis arrivé à la géomatique par un hasard de parcours professionnel en 2016, suite à mon admission au concours d'ingénieur territorial.
 

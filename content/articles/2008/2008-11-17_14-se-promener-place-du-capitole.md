@@ -19,7 +19,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 Il est possible grâce à l'API Google Maps de naviguer virtuellement dans les rues, nous verrons ici comment implanter cette fonctionnalité.  
 

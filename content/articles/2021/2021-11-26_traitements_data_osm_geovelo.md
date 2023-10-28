@@ -20,7 +20,7 @@ tags:
 
 ## Présentation
 
-![logo Geovelo](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/geovelo.png "logo Geovelo"){: .img-rdp-news-thumb }
+![logo Geovelo](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/geovelo.png "logo Geovelo"){: .img-thumbnail-left }
 
 [Geovelo](https://geovelo.fr) est une application gratuite qui permet de **trouver facilement l'itinéraire à vélo le plus adapté** selon plusieurs critères. Plusieurs options sont proposées, de la plus rapide à la plus sécurisée. En complément, l'application intègre aussi d'autres fonctionnalités telles que le **suivi de ses statistiques**, l'accès à des **itinéraires touristiques** ou encore un **outil de contributions cartographiques**.
 
@@ -28,7 +28,7 @@ Geovelo accompagne les collectivités dans le but de **favoriser la pratique du 
 
 ## Geovelo & OpenStreetMap
 
-![logo Geovelo/OSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/logo_geovelo_osm.jpg "logo Geovelo/OSM"){: .img-rdp-news-thumb }
+![logo Geovelo/OSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/logo_geovelo_osm.jpg "logo Geovelo/OSM"){: .img-thumbnail-left }
 
 Les données cyclables d’OSM sont l’un des fondements de l’activité même de Geovelo. Elles alimentent non seulement nos calculateurs d’itinéraires pour construire le réseau cyclable, mais servent également de référentiel pour de multiples traitements, des statistiques d’aménagements jusqu’aux informations de déplacements.
 La validité, la qualité, la cohérence et la complétude de ces données sont donc des rouages essentiels de la valeur ajoutée des produits Geovelo.  
@@ -144,7 +144,7 @@ Nous utilisons les données OpenStreetMap pour différents usages, par exemple :
 
 ## Nos outils pratiques
 
-![icône outils](https://cdn.geotribu.fr/img/logos-icones/divers/outils.png "icône outils"){: .img-rdp-news-thumb }
+![icône outils](https://cdn.geotribu.fr/img/logos-icones/divers/outils.png "icône outils"){: .img-thumbnail-left }
 
 Pour l'intégration et le traitement des notes :
 

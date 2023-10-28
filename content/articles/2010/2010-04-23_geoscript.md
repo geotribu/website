@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 23 avril 2010
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 [GeoScript](http://geoscript.org/) a pour objectif de faciliter les manipulations géographiques dans des environnements de script. L'objectif est le support de 4 langages : Javascript, Python, Scala et Groovy. Cette bibliothèque permet de manipuler facilement des objets géométriques - création et manipulation d'objets ainsi que la création et manipulation de projections.  
 GeoScript est fondé sur la librairie Java [GeoTools](http://geotools.org/).  

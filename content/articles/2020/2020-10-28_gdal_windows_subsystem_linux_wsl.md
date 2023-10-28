@@ -27,7 +27,7 @@ Pré-requis :
 
 ## Introduction
 
-![icône GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
+![icône GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-thumbnail-left }
 
 Récemment, j'ai eu à traiter des données particulièrement lourdes (millions d'objets) et imparfaites (mauvaises géométries dans un shapefiles) et mes outils habituels étaient tenus en échec : QGIS prend des plombes puis plante presque systématiquement lors des traitements de nettoyage et de restructuration, le GDAL sur mon ordinateur ou sur mon Google Colab sont cantonnés à la version 3.0.* liée au socle Ubuntu 18.04 alors que j'ai bien besoin des options de la branche 3.1 (`-nlt`, `-makevalid`...).
 

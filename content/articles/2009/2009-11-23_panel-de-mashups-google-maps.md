@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 23 novembre 2009
 
-![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-rdp-news-thumb}
+![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-thumbnail-left}
 
 Est-il encore besoin de préciser ce que permet l'API Google Maps? Comme vous avez pu le découvrir au travers de nos [tutoriels](http://geotribu.net/node/22), cette dernière permet d'intégrer rapidement et facilement des cartes dans une page Internet. Néanmoins si habituellement les cartes réalisées restent très banales, le panel non exhaustif que nous avons sélectionné prouve qu'avec un peu d'imagination et de savoir-faire, il est possible de créer des applications originales et techniquement intéressantes.
 

@@ -17,7 +17,7 @@ tags:
 
 ## Introduction
 
-![logo MapServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapserver.png "logo MapServer"){: .img-rdp-news-thumb }
+![logo MapServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapserver.png "logo MapServer"){: .img-thumbnail-left }
 
 Dans ce tutoriel vous apprendrez dans un premier temps à construire votre MapFile, nous verrons ensuite comment afficher une carte grâce au langage PhpMapScript, enfin nous verrons les nouveautés apportées par la version de MapServer.
 

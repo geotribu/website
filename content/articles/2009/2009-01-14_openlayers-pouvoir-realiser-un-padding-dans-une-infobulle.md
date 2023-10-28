@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-rdp-news-thumb }
+![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-thumbnail-left }
 
 Par défaut OpenLayers permet de créer des infobulles ne pouvant afficher qu'une seule et unique zone de texte ([Popup](http://openlayers.org/dev/examples/)). La nouvelle classe présentée ci-dessous étant `OpenLayers.Popup.FramedCloud` afin de proposer des infobulles similaires à celle du site [EveryBlock](http://miami.everyblock.com/).
 

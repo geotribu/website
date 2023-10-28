@@ -1,6 +1,6 @@
 # Jean-Marc Viglino {: data-search-exclude }
 
-![Portrait Jean-Marc Viglino](https://cdn.geotribu.fr/img/internal/contributeurs/jemv.jpg "Portrait Jean-Marc Viglino"){: .img-rdp-news-thumb }
+![Portrait Jean-Marc Viglino](https://cdn.geotribu.fr/img/internal/contributeurs/jemv.jpg "Portrait Jean-Marc Viglino"){: .img-thumbnail-left }
 
 Ingénieur à l'[IGN](https://www.ign.fr/), je travaille au développement d'outils dans le domaine de web, de l'Opensource et du Mobile.
 J'entretiens une bibliothèque JS d'extensions pour Openlayers [ol-ext](https://viglino.github.io/ol-ext/) disponible en Opensource sur Github.

@@ -22,7 +22,7 @@ tags:
 
 ## Introduction
 
-![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-rdp-news-thumb }
+![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-thumbnail-left }
 
 Il est possible d'afficher les couches 'bâtiments' présentes dans Google Earth dans l'API et donc dans sa propre page Internet.  
 

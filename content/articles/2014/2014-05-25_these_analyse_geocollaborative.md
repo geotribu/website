@@ -15,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 mai 2014
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 Le Centre de recherche sur les Risques et les Crises (CRC) de MINES ParisTech propose un sujet de thèse sur la géocollaboration. Plus de détails sont disponibles à la suite de ce billet et surtout n'hésitez pas à postuler !
 

@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-rdp-news-thumb}
+![logo Google Maps](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google_maps.png "logo Google Maps"){: .img-thumbnail-left}
 
 La nouvelle API de Google Maps est sensiblement identique à la version 2. Pour les développeurs connaissant l'API v2, ce ne devrait pas être trop déroutant, juste un peu plus simple et logique - selon moi.  
 

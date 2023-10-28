@@ -16,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 01 février 2009
 
-![logo Open Source Initiative](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source Initiative"){: .img-rdp-news-thumb }
+![logo Open Source Initiative](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source Initiative"){: .img-thumbnail-left }
 
 Petit clin d'œil pour une fois avec ce billet plein d'humour inspiré d'un [blog](http://gfoss.it/drupal/node/201) sur lequel je suis tombé il y a quelques jours. Dans celui-ci étaient énumérées les plus grandes fausses vérités qu'il est habituel d'entendre sur le monde de l'OpenSource. Fausses vérités qui sont très souvent l'œuvre de personne ayant peu ou pas de connaissance des règles, codes et usages qui régissent ce milieu.
 

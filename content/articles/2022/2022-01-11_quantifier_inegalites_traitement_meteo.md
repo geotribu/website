@@ -25,7 +25,7 @@ tags:
 
 ## Introduction (Epic version)
 
-![logo Epic Games](https://cdn.geotribu.fr/img/logos-icones/divers/epic-games.png "logo Epic Games"){: .img-rdp-news-thumb }
+![logo Epic Games](https://cdn.geotribu.fr/img/logos-icones/divers/epic-games.png "logo Epic Games"){: .img-thumbnail-left }
 
 Normand de naissance et de coeur, je n'ai jamais accordé une place très importante aux différents bulletins météo, ne sachant que trop bien ce dont allait être faite la journée. Ayant eu le privilège de connaître des personnes venant d'autres horizons, notamment de la lointaine et exotique Bretagne, j'ai réalisé que, dans d'autres lieux, les informations météorologiques pouvaient apporter autre chose que "Bah demain, y r'pleut". Avec plusieurs expériences de bulletins météo télévisés et une formation de datajournaliste derrière moi, je me suis retrouvé un soir sur un canapé devant un constat et un défi : pourquoi la dame de la météo (ça a toujours été une dame quand j'ai regardé) commente les températures des villes orientales en se plaçant au dessus de la Bretagne, laissant ainsi aux intéressés d'autant moins de temps pour voir et lire les informations par elle obstruées et ne pourrait-on pas mesurer cette inégalité d'accès à l'information ?
 
@@ -49,7 +49,7 @@ Ce projet, complètement con sur le fond, consiste à tenter de mesurer les vari
 
 ### Principe du bulletin météo
 
-![logo météo](https://cdn.geotribu.fr/img/logos-icones/divers/weather_app.png "logo météo"){: .img-rdp-news-thumb }
+![logo météo](https://cdn.geotribu.fr/img/logos-icones/divers/weather_app.png "logo météo"){: .img-thumbnail-left }
 
 Une dame rentre dans le champ de la caméra sur un fond vert, des images ou des cartes défilant dans le fond. On ne va s'intéresser ici qu'aux séquences relatives l'allure du ciel : nuages, pluie, ciel bleu, etc (que j'appelle prévisions ici) pour le matin et pour l'après-midi et aux températures pour le matin et pour l'après-midi. Le niveau de zoom sur la métropole est le même tous les jours; la surface n'est donc pas modifiée d'un jour sur l'autre.
 
@@ -100,7 +100,7 @@ Inconvénient :
 
 ## Résultats
 
-![logo OpenWeatherMap](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/openweathermap.png "logo OpenWeatherMap"){: .img-rdp-news-thumb }
+![logo OpenWeatherMap](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/openweathermap.png "logo OpenWeatherMap"){: .img-thumbnail-left }
 
 Image par image, on peut voir le calcul : d'une vidéo vers une image (à gauche), et de cette image, on sort une couleur médiane par zone (au centre), et de cette couleur médiane on calcule la distance à la couleur médiane lorsque la carte est dégagée (à droite).
 

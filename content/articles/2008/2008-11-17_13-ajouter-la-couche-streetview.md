@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 L'API Google Maps propose le service Street View qui permet de naviguer virtuellement dans les rues. Avant de voir comment faire dans le prochain tutoriel, nous allons voir ici quelle est l'emprise des images.  
 
