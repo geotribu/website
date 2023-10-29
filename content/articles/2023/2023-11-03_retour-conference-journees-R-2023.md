@@ -199,7 +199,8 @@ C'est de cette expérience de terrain qu'est né son [blog Ratique](https://pers
 
 ![Grimoire étrange et poussiéreux dont s'échappent des paillettes - Crédits : Lise Vaudor](https://cdn.geotribu.fr/img/logos-icones/divers/geomaRgie.webp){: .img-center loading=lazy }
 
->Qui n'a pas envie de faire ~~des paillettes~~ de la géomaRgie ?{: align=middle }
+> Qui n'a pas envie de faire ~~des paillettes~~ de la géomaRgie ?
+{: align=middle }
 
 Comment parler à tout le monde quelle que soit la discipline ? Lise Vaudor transporte son public dans le monde de la magie grâce à ses "grimoires".
 Mais elle travaille moins sur ce contenu ces temps-ci.
