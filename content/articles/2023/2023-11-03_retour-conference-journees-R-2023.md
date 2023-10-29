@@ -90,7 +90,8 @@ Chez Enedis, l'application Shiny est traitée de manière très originale : comm
 
 ![Copie d'écran d'une carte modélisant une nouvelle borne et ses conséquences sur l'approvisionnement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/05_application_shiny_Enedis.webp){: .img-center loading=lazy }
 
-> Les données sont factices.> {: align=middle }
+> Les données sont factices
+{: align=middle }
 
 Ce qui m'a intéressée, [c'est leur méthode](https://www.youtube.com/watch?v=NzruKscUUdE) : Shiny est pensé pour avoir des retours et des améliorations continues durant 3 ans.
 
