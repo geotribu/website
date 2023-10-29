@@ -40,8 +40,8 @@ Le premier jour des rencontres commence officiellement l'après-midi, le temps q
 
 ![Adorable image d'un hérisson frileux tricotant HTML, Word, PDF, LATEX, sites internet etc... Comme le fait Quarto](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/02_quarto_herisson_frileux_tricote.webp){: .img-center loading=lazy }
 
-> Illustration par Alison Hill and Allison Horst, pour RStudio, tirée de la présentation de Christophe Dervieux.  
-> La [session Quarto](https://cderv.quarto.pub/tuto-quarto-rr2023/) avait l'air ~~piquante~~ très chouette.
+> <i>Illustration par Alison Hill and Allison Horst, pour RStudio, tirée de la présentation de Christophe Dervieux.</i>
+> La [session Quarto](https://cderv.quarto.pub/tuto-quarto-rr2023/) avait l'air très chouette.
 > {: align=middle }
 
 ... j'étais bien évidemment inscrite à l'atelier d'[analyse spatiale avec R](https://github.com/antuki/RR2023_tuto_statspatiale) proposé par Kim Antunez (INSEE) et Etienne Côme (Université Gustave Eiffel). Au programme, carte statistiques, cartes interactives et analyse spatiale avec les deux.
@@ -50,7 +50,7 @@ D'abord on parle des cartes statiques, avec la révolution de "sf" et sa déclin
 ![Tableau de données avec des exemples de simple feature](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/03_simple_feature_geometry_tableau.webp){: .img-center loading=lazy }
 
 Le package [mapsf](https://riatelab.github.io/mapsf/) a pris le pas sur d'autres, comme cartography. J'y ai notamment appris l'existence du [geoparquet](https://geoparquet.org/) pour traiter les gros volumes de données spatiales... Et que différentes versions de R peuvent bloquer dans des exercices sans que l'on n'est aucun message d'erreur (sinon ce n'est pas drôle).
-Je n'ai pas eu le temps de tout explorer pour la partie carte interactive, les deux heures étant très denses pour tout le programme prévu. C'est donc un atelier parfait pour les géographes, mais les personnes extérieures à cette thématique sont restées bloquées sur les tenants et aboutissants de termes comme les zones tampons ou polygones de Voronoï.
+Je n'ai pas eu le temps de tout explorer pour la partie carte interactive, les deux heures étant très denses pour tout le programme prévu. C'est  un atelier parfait pour les géographes, mais les personnes extérieures à cette thématique sont restées bloquées sur les tenants et aboutissants de termes comme les zones tampons ou polygones de Voronoï.
 
 ----
 
@@ -90,7 +90,7 @@ Chez Enedis, l'application Shiny est traitée de manière très originale : comm
 
 ![Copie d'écran d'une carte modélisant une nouvelle borne et ses conséquences sur l'approvisionnement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/05_application_shiny_Enedis.webp){: .img-center loading=lazy }
 
-> Les données sont factices.
+> Les données sont factices.> {: align=middle }
 
 Ce qui m'a intéressée, [c'est leur méthode](https://www.youtube.com/watch?v=NzruKscUUdE) : Shiny est pensé pour avoir des retours et des améliorations continues durant 3 ans.
 
@@ -104,9 +104,9 @@ Ce qui m'a intéressée, [c'est leur méthode](https://www.youtube.com/watch?v=N
 
 ![logo INSEE](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/INSEE.svg){: .img-thumbnail-left }
 
-C'est *LA* grande annonce du colloque. L'institution publique de la statistique française passe sur *LE* logiciel libre des statistiques. Un changement pareil ne se fait pas naturellement dans une institution aussi ancienne. Alors comment a-t-elle fait ?
+C'est *LA* grande annonce du colloque. L'institution publique de la statistique française passe sur *LE* logiciel libre des statistiques. Un changement pareil ne se fait pas naturellement dans une institution aussi ancienne. Alors comment a-t-elle procédé ?
 
-1. Un choix institutionnel, et donc impulsé en tant que tel ;
+1. C'est un choix institutionnel, et donc impulsé en tant que tel ;
 1. Montrer ce que l'on peut faire de plus avec R par rapport à SAS ;
 1. Beaucoup de formations et de supports partagés en interne ;
 1. Mobilisation de Quarto et de RMarkdown.
@@ -135,7 +135,7 @@ Depuis 2016, il existe un [groupe des Rladies en France](https://www.youtube.com
 
 ![Logo de Rzine](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/Rzine.webp){: .img-thumbnail-left }
 
-Faire du code R, ui. Faire de magnifique réalisations, ui à nouveau. Les documenter (un motif récurrent de ces conférences, vous l'aurez noté), c'est mieux.
+Faire du code R, ui. Faire de magnifique réalisations, ui à nouveau. Les documenter (un motif récurrent de ces conférences, vous l'aurez noté), c'est encore mieux.
 
 Face à la dispersion des ressources sur R en sciences humaines et sociales, Hugues Pecout (Géographie-cités) nous a fait la présentation de [Rzine](https://rzine.fr/). Ce site internet centralise la documentation existante, mais aussi et surtout, il permet de *publier* des fiches techniques inédites. Avec un DOI bien sûr ! Idéal pour [valoriser son travail](https://www.youtube.com/watch?v=NSaWyh6ROlM), notamment dans les environnements de recherche.
 
@@ -143,7 +143,7 @@ Face à la dispersion des ressources sur R en sciences humaines et sociales, Hug
 
 ## L'informatique partage ses bonnes pratiques pour R
 
-C'est une présentation si dense et riche qu'il vaut mieux renvoyer à [la vidéo](https://www.youtube.com/watch?v=4uXaRx4USnI) pour en prendre tous les (nombreux) éléments intéressants en fonction de son niveau.  
+C'est une présentation si dense et riche qu'il vaut mieux renvoyer à [la vidéo](https://www.youtube.com/watch?v=4uXaRx4USnI) pour en picorer tous les (nombreux) éléments intéressants relatifs à son niveau.  
 Mais pour une non-informaticienne comme moi, en voici quelques uns :
 
 - Documenter sur quoi tourne le code (Windows, version de R...) ;
@@ -180,7 +180,7 @@ On l'a indiqué, ces journées R portaient spécialement sur le spatial. Timoth�
 
 Il a commencé par un historique rappelant la généalogie des différents packages qui intègrent la géographie et qui petit à petit a permis l'émergence de :star: mapsf :star:.
 
-On l'a dit plus haut, mapsf s'appuie sur le standard *simple feature* (aussi mobilisé par PostGIS) pour importer, exporter et faire les géotraitements de données géographiques. Il est également revenu sur la mise à la retraite d'un package, exemplaire selon lui de ce qu'il faut bien faire dans la communauté (ne négligez donc pas les stages de préparation à la retraite).
+On l'a dit plus haut, mapsf s'appuie sur le standard *simple feature* (aussi mobilisé par PostGIS) pour importer, exporter et faire les géotraitements de données géographiques. Il est également revenu sur la mise à la retraite d'un package, exemplaire selon lui de ce qu'il faut bien faire dans la communauté.
 
 Il est revenu sur les possibilités de package, avec des exemples avignonnais évidemment.
 
@@ -198,17 +198,18 @@ C'est de cette expérience de terrain qu'est né son [blog Ratique](https://pers
 
 ![Grimoire étrange et poussiéreux dont s'échappent des paillettes - Crédits : Lise Vaudor](https://cdn.geotribu.fr/img/logos-icones/divers/geomaRgie.webp){: .img-center loading=lazy }
 
-Qui n'a pas envie de faire ~~des paillettes~~ de la géomaRgie ?
+>Qui n'a pas envie de faire ~~des paillettes~~ de la géomaRgie ?{: align=middle }
 
-Comment parler à tout le monde quel que soit la discipline ? Lise Vaudor transporte son public dans le monde de la magie grâce à ses "grimoires". Mais elle travaille moins sur ce contenu ces temps-ci.
+Comment parler à tout le monde quelle que soit la discipline ? Lise Vaudor transporte son public dans le monde de la magie grâce à ses "grimoires". 
+Mais elle travaille moins sur ce contenu ces temps-ci.
 
-Car elle est revenue sur son parcours personnel, notamment sa double maternité a quelque peu chamboulé sa vie. Elle a donc rejoint les RLadies, "seulement maintenant" car elle n'en ressentait pas le besoin. Elle indique ne pas avoir eu à souffrir de sexisme dans la communauté R.
+Car elle est revenue sur son parcours personnel, notamment sa double maternité qui a quelque peu chamboulé sa vie. Elle a donc rejoint les RLadies, "seulement maintenant" car elle n'en ressentait pas le besoin. Elle indique ne pas avoir eu à souffrir de sexisme dans la communauté R.
 
 Les raisons ?
 
 Pour elle, c'est l'ouverture de la communauté. Une ouverture qui se retrouve aussi dans l'équipe du programme de ces journées, qui a voulu mettre à égalité les différents genres, mélanger secteur privé/public, universitaire et non-universitaire etc.
 
-C'est une communauté capable de valoriser ses paillettes, ses dessins, ses couleurs pastels et tout le contenu de ses formations, par cette invitation à une intervention dans une plénière. Une intervention au même niveau que celle présentant un gros package, comme celui de Timothée Giraud. A titre personnel, ce point de l'intervention m'a beaucoup marquée.
+C'est une communauté capable de valoriser ses paillettes, ses dessins, ses couleurs pastels et tout le contenu de ses formations, par exemple par cette invitation à une intervention dans une plénière. Une intervention au même niveau que celle présentant un gros package, comme celui de Timothée Giraud.
 
 ----
 
@@ -216,7 +217,7 @@ C'est une communauté capable de valoriser ses paillettes, ses dessins, ses coul
 
 Ce n'est bien entendu pas visible dans ce compte-rendu : les Rencontres R étaient mûrement réfléchies en termes d'inclusion et d'environnement. C'est la première fois que je viens à un événement professionnel avec un [code de conduite](https://rr2023.sciencesconf.org/resource/page/id/10). Cette charte est à signer lors de l'inscription, rappelée en plénière, à chaque moment collectif et nous avons eu une présentation des personnes à qui s'adresser en cas de problème. C'était bienvenu.
 
-L'engagement était aussi écologique : les goodies venaient des environs. La bière, brassée spécialement pour l'occasion, était locale, tout comme le jus de fruit. Nous avions de la verrerie, produite elle aussi tout proche, aux couleurs des rencontres et que l'on utilisait donc pour les pauses cafés. Le tour de cou, avec un clin d'oeil malin à R, rappelait toutes les informatiques pratiques, dont le programme numérique, le programme papier étant limité aux rares personnes sans téléphone. Enfin, pour garder un ultime souvenir de ces journées, le tour de cou peut se planter afin d'obtenir de délicieuses plantes aromatiques.
+L'engagement était aussi écologique : les goodies venaient des environs. La bière, brassée spécialement pour l'occasion, était locale, tout comme le jus de fruit. Nous avions de la verrerie aux couleurs des rencontres, produite elle aussi tout proche, et que l'on utilisait donc pour les pauses cafés. Le tour de cou, avec un clin d'oeil malin à R, rappelait toutes les informatiques pratiques, dont le programme numérique, le programme papier étant limité aux rares personnes sans téléphone. Enfin, pour garder un ultime souvenir de ces journées, le tour de cou ensemencé peut se planter afin d'obtenir de délicieuses plantes aromatiques.
 
 ![Tour de cou en carton, aux couleurs de R avec une invite de commande indiquant le nom et prénom de la personne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/06_badge_plantation.webp){: .img-center loading=lazy }
 
@@ -224,7 +225,7 @@ L'engagement était aussi écologique : les goodies venaient des environs. La bi
 
 ## En savoir plus
 
-Plusieurs sessions étaient en parallèle : ce billet présente seulement la moitié des interventions. Il y en a bien d'autres, que vous pouvez aller découvrir ici :
+Plusieurs sessions étaient en parallèle : ce billet présente à peine la moitié des interventions. Il y en a bien d'autres, que vous pouvez aller découvrir ici :
 
 - [Le programme détaillé](https://rr2023.sciencesconf.org/program)
 - [Toutes les vidéos des journées](https://www.youtube.com/@RencontresR)
