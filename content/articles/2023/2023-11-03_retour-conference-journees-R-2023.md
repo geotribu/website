@@ -200,7 +200,7 @@ C'est de cette expérience de terrain qu'est né son [blog Ratique](https://pers
 
 >Qui n'a pas envie de faire ~~des paillettes~~ de la géomaRgie ?{: align=middle }
 
-Comment parler à tout le monde quelle que soit la discipline ? Lise Vaudor transporte son public dans le monde de la magie grâce à ses "grimoires". 
+Comment parler à tout le monde quelle que soit la discipline ? Lise Vaudor transporte son public dans le monde de la magie grâce à ses "grimoires".
 Mais elle travaille moins sur ce contenu ces temps-ci.
 
 Car elle est revenue sur son parcours personnel, notamment sa double maternité qui a quelque peu chamboulé sa vie. Elle a donc rejoint les RLadies, "seulement maintenant" car elle n'en ressentait pas le besoin. Elle indique ne pas avoir eu à souffrir de sexisme dans la communauté R.
