@@ -40,9 +40,9 @@ Le premier jour des rencontres commence officiellement l'après-midi, le temps q
 
 ![Adorable image d'un hérisson frileux tricotant HTML, Word, PDF, LATEX, sites internet etc... Comme le fait Quarto](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/02_quarto_herisson_frileux_tricote.webp){: .img-center loading=lazy }
 
-> <i>Illustration par Alison Hill and Allison Horst, pour RStudio, tirée de la présentation de Christophe Dervieux.</i>
+> Illustration par Alison Hill and Allison Horst, pour RStudio, tirée de la présentation de Christophe Dervieux.  
 > La [session Quarto](https://cderv.quarto.pub/tuto-quarto-rr2023/) avait l'air très chouette.
-> {: align=middle }
+{: align=middle }
 
 ... j'étais bien évidemment inscrite à l'atelier d'[analyse spatiale avec R](https://github.com/antuki/RR2023_tuto_statspatiale) proposé par Kim Antunez (INSEE) et Etienne Côme (Université Gustave Eiffel). Au programme, carte statistiques, cartes interactives et analyse spatiale avec les deux.
 D'abord on parle des cartes statiques, avec la révolution de "sf" et sa déclinaison spatiale "sfg", soit [*simple feature geometry*](https://r-spatial.github.io/sf/articles/sf1.html), qui a l'avantage d'être composé d'autre chose que de `0` et `1`, ce qui le rend compréhensible par un être humain.
