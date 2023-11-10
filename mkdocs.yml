@@ -130,6 +130,7 @@ theme:
 
   features:
     - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.code.select
@@ -146,6 +147,9 @@ theme:
   font:
     code: Ubuntu Mono
     text: Ubuntu
+  icon:
+    edit: material/pencil
+    view: material/eye
   language: fr
   logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
