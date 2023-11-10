@@ -8,7 +8,7 @@ wheel
 # Development
 # -----------------------
 geotribu>=0.29,<1
-pre-commit>=3,<3.5
+pre-commit>=3,<3.6
 
 # Project requirements
 # -----------------------
@@ -26,4 +26,4 @@ termynal>=0.10,<1
 
 # social plugin requirements
 CairoSVG>=2.5,<3
-Pillow>=9.4,<10.1
+Pillow>=9.4,<10.2

@@ -1,5 +1,7 @@
 icon:
+  edit: material/pencil
   repo: fontawesome/brands/github-alt
+  view: material/eye
   tag:
     default: fontawesome/solid/tag
     # -- custom tags icons

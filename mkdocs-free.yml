@@ -70,6 +70,7 @@ theme:
 
   features:
     - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
@@ -84,8 +85,6 @@ theme:
   font:
     code: Ubuntu Mono
     text: Ubuntu
-  icon:
-    repo: fontawesome/brands/github-alt
   language: fr
   logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
