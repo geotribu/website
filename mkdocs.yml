@@ -149,6 +149,7 @@ theme:
     text: Ubuntu
   icon:
     edit: material/pencil
+    repo: fontawesome/brands/github-alt
     view: material/eye
   language: fr
   logo: theme/assets/images/geotribu/logo_geotribu.png
