@@ -19,7 +19,7 @@ tags:
 
 # Spatial, R, code et communauté : retour sur les rencontres R
 
-:calendar: Date de publication initiale : 3 novembre 2023
+:calendar: Date de publication initiale : 10 novembre 2023
 
 ## Introduction
 
