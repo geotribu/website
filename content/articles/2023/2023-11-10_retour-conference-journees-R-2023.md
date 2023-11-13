@@ -4,6 +4,7 @@ authors:
     - Delphine Montagne
 categories:
     - article
+comments: true
 date: "2023-11-10 14:30"
 description: "Formation, astuces, bonnes pratiques et trouvailles. Compte-rendu des rencontres R d'Avignon 2023"
 icon: fontawesome/solid/bridge-water
@@ -169,7 +170,7 @@ Il a rappelé que ggplot2 a été en 2007 une révolution en faisant passer R d'
 
 ![Logo de happign](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/happign.webp){: .img-thumbnail-left }
 
-L'[IGN a présenté LE package](https://www.youtube.com/watch?v=Ha44VTGhOVo) qui permet d'accéder à toutes ses données, Lidar compris : :star: happign :star:. C'est un des éléments qui me fait aimer R et me pousse à m'y former : la facilité d'accès aux données avec le logiciel.
+[Paul CARTERON[(https://github.com/paul-carteron) a présenté [LE package](https://www.youtube.com/watch?v=Ha44VTGhOVo) qui permet d'accéder à toutes ses données, Lidar compris : :star: happign :star:. C'est un des éléments qui me fait aimer R et me pousse à m'y former : la facilité d'accès aux données avec le logiciel.
 
 ----
 
