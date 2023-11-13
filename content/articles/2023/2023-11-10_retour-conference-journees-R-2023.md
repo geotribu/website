@@ -4,6 +4,7 @@ authors:
     - Delphine Montagne
 categories:
     - article
+comments: true
 date: "2023-11-10 14:30"
 description: "Formation, astuces, bonnes pratiques et trouvailles. Compte-rendu des rencontres R d'Avignon 2023"
 icon: fontawesome/solid/bridge-water
@@ -169,7 +170,9 @@ Il a rappelé que ggplot2 a été en 2007 une révolution en faisant passer R d'
 
 ![Logo de happign](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/happign.webp){: .img-thumbnail-left }
 
-L'[IGN a présenté LE package](https://www.youtube.com/watch?v=Ha44VTGhOVo) qui permet d'accéder à toutes ses données, Lidar compris : :star: happign :star:. C'est un des éléments qui me fait aimer R et me pousse à m'y former : la facilité d'accès aux données avec le logiciel.
+[Paul CARTERON](https://github.com/paul-carteron) a présenté [LE package](https://github.com/paul-carteron) qui permet d'accéder à toutes ses données, Lidar compris : :star: happign :star:. C'est un des éléments qui me fait aimer R et me pousse à m'y former : la facilité d'accès aux données avec le logiciel.
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/Ha44VTGhOVo?si=tsFEicsuSyIKw2_6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ----
 
@@ -217,11 +220,11 @@ C'est une communauté capable de valoriser ses paillettes, ses dessins, ses coul
 
 ## Quelles bonnes idées à piquer à l'organisation ?
 
+![Tour de cou en carton, aux couleurs de R avec une invite de commande indiquant le nom et prénom de la personne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/06_badge_plantation.webp){: .img-right loading=lazy }
+
 Ce n'est bien entendu pas visible dans ce compte-rendu : les Rencontres R étaient mûrement réfléchies en termes d'inclusion et d'environnement. C'est la première fois que je viens à un événement professionnel avec un [code de conduite](https://rr2023.sciencesconf.org/resource/page/id/10). Cette charte est à signer lors de l'inscription, rappelée en plénière, à chaque moment collectif et nous avons eu une présentation des personnes à qui s'adresser en cas de problème. C'était bienvenu.
 
 L'engagement était aussi écologique : les goodies venaient des environs. La bière, brassée spécialement pour l'occasion, était locale, tout comme le jus de fruit. Nous avions de la verrerie aux couleurs des rencontres, produite elle aussi tout proche, et que l'on utilisait donc pour les pauses cafés. Le tour de cou, avec un clin d'oeil malin à R, rappelait toutes les informatiques pratiques, dont le programme numérique, le programme papier étant limité aux rares personnes sans téléphone. Enfin, pour garder un ultime souvenir de ces journées, le tour de cou ensemencé peut se planter afin d'obtenir de délicieuses plantes aromatiques.
-
-![Tour de cou en carton, aux couleurs de R avec une invite de commande indiquant le nom et prénom de la personne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_r_2023_avignon_spatial/06_badge_plantation.webp){: .img-center loading=lazy }
 
 ----
 
