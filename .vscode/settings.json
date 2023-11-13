@@ -12,6 +12,8 @@
         "source.organizeImports": true
     },
     // Markdown
+    "markdown.updateLinksOnFileMove.enabled": "prompt",
+    "markdown.updateLinksOnFileMove.enableForDirectories": true,
     "markdown.validate.enabled": true,
     "markdown.validate.fileLinks.markdownFragmentLinks": "warning",
     "markdown.validate.fragmentLinks.enabled": "warning",
@@ -20,14 +22,33 @@
     },
     // Python
     "python.defaultInterpreterPath": ".venv/bin/python",
-    "python.formatting.provider": "none",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.guides.bracketPairs": "active",
+        "editor.rulers": [
+            88
+        ],
+        "editor.wordWrapColumn": 88,
     },
-    "python.linting.enabled": false,
+    "flake8.args": [
+        "--config=setup.cfg",
+        "--verbose"
+    ],
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "isort.check": true,
     // Git
     "git.ignoreLimitWarning": true,
-    // Extensions
+    // extensions
+    "autoDocstring.guessTypes": true,
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.generateDocstringOnEnter": false,
     "cSpell.language": "fr",
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs*.yml",
