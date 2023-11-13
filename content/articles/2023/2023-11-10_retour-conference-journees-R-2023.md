@@ -170,7 +170,9 @@ Il a rappelé que ggplot2 a été en 2007 une révolution en faisant passer R d'
 
 ![Logo de happign](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/happign.webp){: .img-thumbnail-left }
 
-[Paul CARTERON[(https://github.com/paul-carteron) a présenté [LE package](https://www.youtube.com/watch?v=Ha44VTGhOVo) qui permet d'accéder à toutes ses données, Lidar compris : :star: happign :star:. C'est un des éléments qui me fait aimer R et me pousse à m'y former : la facilité d'accès aux données avec le logiciel.
+[Paul CARTERON](https://github.com/paul-carteron) a présenté [LE package](https://github.com/paul-carteron) qui permet d'accéder à toutes ses données, Lidar compris : :star: happign :star:. C'est un des éléments qui me fait aimer R et me pousse à m'y former : la facilité d'accès aux données avec le logiciel.
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/Ha44VTGhOVo?si=tsFEicsuSyIKw2_6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ----
 
