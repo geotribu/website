@@ -224,8 +224,6 @@ Ce n'est bien entendu pas visible dans ce compte-rendu : les Rencontres R étaie
 
 L'engagement était aussi écologique : les goodies venaient des environs. La bière, brassée spécialement pour l'occasion, était locale, tout comme le jus de fruit. Nous avions de la verrerie aux couleurs des rencontres, produite elle aussi tout proche, et que l'on utilisait donc pour les pauses cafés. Le tour de cou, avec un clin d'oeil malin à R, rappelait toutes les informatiques pratiques, dont le programme numérique, le programme papier étant limité aux rares personnes sans téléphone. Enfin, pour garder un ultime souvenir de ces journées, le tour de cou ensemencé peut se planter afin d'obtenir de délicieuses plantes aromatiques.
 
-
-
 ----
 
 ## En savoir plus
