@@ -8,9 +8,19 @@
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
     "image": "mcr.microsoft.com/devcontainers/python:0-3.11",
     // Features to add to the dev container. More info: https://containers.dev/features.
-    // "features": {
-    //     "ghcr.io/devcontainers/features/python:1": {}
-    // },
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
+            "packages": [
+                "libcairo2-dev",
+                "libfreetype6-dev",
+                "libffi-dev",
+                "libjpeg-dev",
+                "libpng-dev",
+                "libz-dev",
+                "pngquant"
+            ]
+        }
+    },
     // Configure tool-specific properties.
     "customizations": {
         // Configure properties specific to VS Code.
@@ -51,17 +61,6 @@
                     ],
                     "editor.wordWrapColumn": 88,
                 },
-                "flake8.args": [
-                    "--config=setup.cfg",
-                    "--verbose"
-                ],
-                "isort.args": [
-                    "--profile",
-                    "black"
-                ],
-                "isort.check": true,
-                // Git
-                "git.ignoreLimitWarning": true,
                 // extensions
                 "autoDocstring.guessTypes": true,
                 "autoDocstring.docstringFormat": "google",
@@ -85,9 +84,7 @@
             "extensions": [
                 "bierner.markdown-mermaid",
                 "davidanson.vscode-markdownlint",
-                "eamodio.gitlens",
                 "github.vscode-pull-request-github",
-                "mdickin.markdown-shortcuts",
                 "ms-python.python",
                 "ms-ceintl.vscode-language-pack-fr",
                 "redhat.vscode-yaml",
@@ -96,5 +93,7 @@
         }
     },
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "pip3 install -U -r requirements-free.txt"
+    "postCreateCommand": [
+        "python -m pip install --user -U -r requirements-free.txt"
+    ]
 }
