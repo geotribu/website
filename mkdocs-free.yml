@@ -21,7 +21,6 @@ site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
 # Scripts pendant le build
 hooks:
-  #   - hooks/mkdocs/G001_check_hyperlinks_internal.py
   - hooks/mkdocs/G003_social_cards_adapter.py
 
 # Plugins
