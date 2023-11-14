@@ -26,44 +26,92 @@ hooks:
 
 # Plugins
 plugins:
+  # -- MINIMAL --
+  - group:
+      enabled: true
+      plugins:
+        - awesome-pages
+        - exclude:
+            glob:
+              - "*/templates/*"
+              - "*.yml"
+        - macros:
+            include_dir: content/toc_nav_ignored/snippets
+
   # -- COMMON --
-  - awesome-pages
-  - exclude:
-      glob:
-        - "*/templates/*"
-        - "*.yml"
-  - git-authors:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, false]
-      exclude:
-        - index.md
-      show_contribution: true
-  - git-revision-date-localized:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, false]
-      enable_creation_date: true
-      fallback_to_build_date: true
-      locale: fr
-  - macros:
-      include_dir: content/toc_nav_ignored/snippets
-  - minify:
-      minify_css: true
-      css_files:
-        - theme/assets/stylesheets/extra.css
-        - theme/assets/stylesheets/homepage.css
-      minify_html: true
-      htmlmin_opts:
-        remove_comments: true
-  - search:
-      lang: fr
-  - social:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
-      cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
-      cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, true]
-      cards_layout_options:
-        font_family: Ubuntu
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_file: tags.md
-  - termynal
+  - group:
+      enabled: !ENV [MKDOCS_ENABLE_THEME_COMMON, true]
+      plugins:
+        - git-authors:
+            enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, false]
+            exclude:
+              - index.md
+            show_contribution: true
+        - git-revision-date-localized:
+            enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, false]
+            enable_creation_date: true
+            fallback_to_build_date: true
+            locale: fr
+        - glightbox:
+            auto_caption: true
+            caption_position: bottom
+            draggable: true
+            effect: zoom
+            height: auto
+            skip_classes:
+              - img-rdp-news-thumb
+              - emojione
+              - twemoji
+            touchNavigation: true
+            width: 90%
+            zoomable: true
+        - minify:
+            minify_css: true
+            css_files:
+              - theme/assets/stylesheets/extra.css
+              - theme/assets/stylesheets/homepage.css
+            minify_html: true
+            htmlmin_opts:
+              remove_comments: true
+        - rss:
+            abstract_chars_count: 500
+            categories:
+              - categories
+              - tags
+            comments_path: "#__comments"
+            date_from_meta:
+              as_creation: "date"
+              as_update: false
+              datetime_format: "%Y-%m-%d %H:%M"
+              default_timezone: Europe/Paris
+              default_time: "14:00"
+            enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
+            image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+            length: 50
+            match_path: "(articles|rdp)/.*"
+            pretty_print: false
+            url_parameters:
+              utm_source: "rss-feed"
+              utm_medium: "RSS"
+              utm_campaign: "feed-syndication"
+        - search:
+            lang: fr
+        - termynal
+
+  # -- FREE --
+  - group:
+      enabled: !ENV [MKDOCS_ENABLE_THEME_FREE, false]
+      plugins:
+        - social:
+            enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
+            cache_dir:
+              !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
+            cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, true]
+            cards_layout_options:
+              font_family: Ubuntu
+        - tags:
+            enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
+            tags_file: tags.md
 
   # -- INSIDERS --
   - group:
