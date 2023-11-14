@@ -26,8 +26,11 @@ Objectifs :
 
 # standard library
 import logging
+from os import getenv
 from pathlib import Path
 from typing import Optional
+
+from geotribu_cli.utils.str2bool import str2bool
 
 # Mkdocs
 from material.plugins.social.plugin import SocialPlugin
@@ -71,7 +74,9 @@ def on_page_markdown(
         return
 
     # check si c'est la version Insiders (payante) ou la version Communauté (gratuite) du thème
-    is_insiders = config.theme.get("insiders_flavor")
+    is_insiders = config.theme.get(
+        "insiders_flavor", str2bool(getenv("MKDOCS_ENABLE_THEME_INSIDERS", False))
+    )
 
     # vérifie que le plugin social est bien installé et configuré
     if not config.plugins.get("material/social"):
