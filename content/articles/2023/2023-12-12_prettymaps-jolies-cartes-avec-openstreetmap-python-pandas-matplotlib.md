@@ -436,7 +436,7 @@ Voilà une présentation finalement assez rapide de prettymaps et de son princip
 
 Si jamais vous vous lancez, partagez donc vos styles ici en commentaire, sur [le reddit](https://www.reddit.com/r/prettymaps_/) ou sur Mapstodon :wink:.
 
-Oh et j'ai fait pas mal d'essais avec les libs que j'ai stocké en vrac dans un projet GitHub :
+Ah j'oubliais. J'ai fait pas mal d'essais avec les 2 bibliothèques que j'ai stockés en vrac dans un projet GitHub :
 
 [Consulter le projet GitHub des exemples :fontawesome-regular-file-code:](https://github.com/geotribu/tuto-prettymaps){: .md-button }
 {: align=middle }
