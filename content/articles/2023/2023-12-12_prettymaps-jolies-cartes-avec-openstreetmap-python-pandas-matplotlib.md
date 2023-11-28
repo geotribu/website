@@ -27,9 +27,9 @@ tags:
 
 ## Introduction
 
-![logo ArtSIG](https://cdn.geotribu.fr/img/logos-icones/divers/artsig.png){: .img-rdp-news-thumb }
+![logo ArtSIG](https://cdn.geotribu.fr/img/logos-icones/divers/artsig.png){: .img-thumbnail-left }
 
-A l'occasion des cours que je donne à l'[Ecole Urbaine de Sciences Po Paris](https://www.sciencespo.fr/ecole-urbaine/fr/), j'aime à proposer aux étudiant/es d'autres outils que le seul logiciel SIG . C'est ainsi qu'aux côtés de [Khartis](https://www.sciencespo.fr/cartographie/khartis/app/) et [kepler.gl](https://kepler.gl/) notamment, je leur ai présenté la [pépité dénichée par Nicolas Rochard](https://github.com/geotribu/website/pull/563) dans la [revue de presse du 18 mars 2022](../../rdp/2022/rdp_2022-03-18.md#prettymaps--une-libraire-python-pour-des-cartographies-osm-stylées) : prettymaps.
+A l'occasion des cours que je donne à l'[Ecole Urbaine de Sciences Po Paris](https://www.sciencespo.fr/ecole-urbaine/fr/), j'aime à proposer aux étudiant/es d'autres outils que le seul logiciel SIG. C'est ainsi qu'aux côtés de [Khartis](https://www.sciencespo.fr/cartographie/khartis/app/) et [kepler.gl](https://kepler.gl/) notamment, je leur ai présenté la [pépité dénichée par Nicolas Rochard](https://github.com/geotribu/website/pull/563) dans la [revue de presse du 18 mars 2022](../../rdp/2022/rdp_2022-03-18.md#prettymaps--une-libraire-python-pour-des-cartographies-osm-stylées) : prettymaps.
 
 ![prettymaps - Heerhugowaard](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/heerhugowaard.png "prettymaps - Heerhugowaard"){: .img-center loading=lazy }
 
@@ -47,7 +47,7 @@ Il y a déjà de nombreuses ressources et posts ([notamment sur LinkedIn](https:
 
 ## Prérequis logiciels
 
-- Python 3.9+, correctement configuré dans le `PATH`. Pour Windows, voir cet article.
+- Python 3.9+, correctement configuré dans le `PATH`. Pour Windows, [voir cet article](../2020/2020-06-19_setup_python.md#ajouter-python-au-path).
 - une connexion internet
 - un terminal. Sur Windows, privilégier [Windows Terminal](https://aka.ms/terminal)
 
@@ -55,15 +55,15 @@ Il y a déjà de nombreuses ressources et posts ([notamment sur LinkedIn](https:
 
 ## Installation
 
-![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
-Dans ses premières versions, le projet était difficilement installable à cause d'un packaging foireux (dépendances non déclarées ou non épinglées, police d'écriture manquante...). Depuis, Marcelo a clairement corrigé le tir et le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, de préférence dans un environnement virtuel en lançant la commande adaptée à votre système.
+Dans ses premières versions, le projet était difficilement installable à cause d'un packaging foireux (dépendances non déclarées ou non épinglées, police d'écriture manquante...). Depuis, Marcelo a clairement corrigé le tir et le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, de **préférence dans un environnement virtuel** en lançant la commande adaptée à votre système.
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
 
 ```
-$ pip install prettymaps
+> pip install prettymaps
 ---> 100%
 Installing collected packages: prettymaps
 Successfully installed prettymaps-1.0.0
@@ -95,10 +95,12 @@ Successfully installed prettymaps-1.0.0
 
 ## Une simple adresse suffit
 
-C'est l'un des éléments qui a rendu prettymaps aussi populaire : la simplicité d'utilisation. On sent que l'auteur a fait des efforts pour rendre la vie plus facile à l'utilisateur final que nous sommes, du moins au début :
+![icône cadeau carto](https://cdn.geotribu.fr/img/logos-icones/divers/cadeau.png){: .img-thumbnail-left }
+
+C'est l'un des éléments qui a rendu prettymaps aussi populaire : la simplicité d'utilisation. On sent que l'auteur a fait des efforts pour rendre la vie plus facile possible à l'utilisateur final que nous sommes, du moins au début :
 
 - une adresse suffit. A noter qu'on peut aussi passer une paire de coordonnées bien sûr ou encore un objet [GeoDataFrame.boundary](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.boundary.html)
-- la bibliothèque propose une série de préréglages pour les paramètres de symbologie
+- la bibliothèque propose une série de préréglages (_preset_) pour les paramètres de symbologie
 
 ```python linenums="1" title="tuto_prettymaps.py"
 # import des bibliothèques utilisées dans le script
@@ -120,7 +122,7 @@ Il suffit ensuite d'exécuter le script :
 python tuto_prettymaps.py
 ```
 
-Ouvrir le fichier `sciencespo_paris.png` :
+Et voici le fichier `sciencespo_paris.png` :
 
 ![prettymaps - Sciences Po Paris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_sciences_po_paris.webp){: .img-center loading=lazy }
 
@@ -194,7 +196,7 @@ On exécute de nouveau le script et voilà les 7 résultats (le style `barcelona
 
 ## Let's script again : jouer avec les paramètres
 
-![logo OpenStreetMap Python](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/osm_python.png){: .img-rdp-news-thumb }
+![logo OpenStreetMap Python](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/osm_python.png){: .img-thumbnail-left }
 
 Maintenant qu'on a bien joué avec les préréglages par défaut, creusons un peu plus loin car prettymaps permet de paramétrer plutôt finement la façon dont les objets OpenStreetMap sont stylisés ainsi que comment la figure (au sens de Matplotlib) est construite :
 
@@ -203,97 +205,172 @@ Maintenant qu'on a bien joué avec les préréglages par défaut, creusons un pe
 
 Prenons un lieu qui se prête bien à l'exercice : Saint-Malo.
 
+Vu que Noël approche, essayons d'utiliser les couleurs associées : vert sapin, rouge et blanc. Pour faciliter la lisibilité du script, stockons les paramètres de style dans un fichier JSON à part, que je replie ici pour vous éviter de scroller de trop.
+
+<!-- markdownlint-disable MD046 -->
+??? "Fichier de style personnalisé Noël"
+
+    ```json title="preset_christmas.json"
+    {
+        "layers": {
+            "perimeter": {},
+            "streets": {
+                "width": {
+                    "motorway": 5,
+                    "trunk": 5,
+                    "primary": 4.5,
+                    "secondary": 4,
+                    "tertiary": 3.5,
+                    "cycleway": 3.5,
+                    "residential": 3,
+                    "service": 2,
+                    "unclassified": 2,
+                    "pedestrian": 2,
+                    "footway": 1
+                }
+            },
+            "building": {
+                "tags": {
+                    "building": true,
+                    "landuse": "construction"
+                }
+            },
+            "water": {
+                "tags": {
+                    "natural": [
+                        "water",
+                        "bay"
+                    ]
+                }
+            },
+            "forest": {
+                "tags": {
+                    "landuse": "forest"
+                }
+            },
+            "green": {
+                "tags": {
+                    "landuse": [
+                        "grass",
+                        "orchard"
+                    ],
+                    "natural": [
+                        "island",
+                        "wood"
+                    ],
+                    "leisure": "park"
+                }
+            },
+            "beach": {
+                "tags": {
+                    "natural": "beach"
+                }
+            },
+            "parking": {
+                "tags": {
+                    "amenity": "parking",
+                    "highway": "pedestrian",
+                    "man_made": "pier"
+                }
+            }
+        },
+        "style": {
+            "perimeter": {
+                "fill": false,
+                "lw": 0,
+                "zorder": 0
+            },
+            "background": {
+                "fc": "#FFFFFF",
+                "zorder": -1
+            },
+            "green": {
+                "fc": "#008000",
+                "ec": "#2F3737",
+                "lw": 1,
+                "zorder": 1
+            },
+            "forest": {
+                "fc": "#06470C",
+                "ec": "#2F3737",
+                "lw": 1,
+                "zorder": 2
+            },
+            "water": {
+                "fc": "#4C9A2A",
+                "ec": "#2F3737",
+                "lw": 1,
+                "zorder": 3
+            },
+            "beach": {
+                "fc": "#FFD700",
+                "ec": "#2F3737",
+                "lw": 1,
+                "zorder": 3
+            },
+            "parking": {
+                "fc": "#FFFFFF",
+                "ec": "#2F3737",
+                "lw": 1,
+                "zorder": 3
+            },
+            "streets": {
+                "fc": "#FF0000",
+                "ec": "#800000",
+                "alpha": 1,
+                "lw": 0,
+                "zorder": 4
+            },
+            "building": {
+                "palette": [
+                    "#FF0000",
+                    "#FFFFFF"
+                ],
+                "ec": "#2F3737",
+                "lw": 0.5,
+                "zorder": 5
+            }
+        },
+        "circle": null,
+        "radius": 800,
+        "dilate": 100
+    }
+    ```
+<!-- markdownlint-enable MD046 -->
+
+On ajoute alors le chargement du fichier JSON à notre script :
+
 ```python linenums="1" title="tuto_prettymaps.py"
+import json
+from pathlib import Path
+
+import prettymaps
+
+# charge les préréglages depuis un JSON
+preset_christmas_file = Path(__file__).parent.joinpath("preset_christmas.json")
+with preset_christmas_file.open(mode="r", encoding="UTF-8") as file:
+    christmas_preset = json.load(file)
+
+# enregistre le préréglage
+prettymaps.create_preset("christmas", **christmas_preset)
+
 # adresse (on peut aussi passer une paire de coordonnées)
 adresse = "Saint-Malo, France"
 
-# paramètres appliqués à la carte
+# génération de la carte
 plot: prettymaps.draw.Plot = prettymaps.plot(
     query=adresse,
-    circle=True,
-    radius=1100,
-    layers={
-        "green": {
-            "tags": {
-                "landuse": "grass",
-                "natural": ["island", "wood"],
-                "leisure": "park",
-            }
-        },
-        "forest": {"tags": {"landuse": "forest"}},
-        "water": {"tags": {"natural": ["water", "bay"]}},
-        "parking": {
-            "tags": {"amenity": "parking", "highway": "pedestrian", "man_made": "pier"}
-        },
-        "streets": {
-            "width": {
-                "motorway": 5,
-                "trunk": 5,
-                "primary": 4.5,
-                "secondary": 4,
-                "tertiary": 3.5,
-                "residential": 3,
-            }
-        },
-        "building": {
-            "tags": {"building": True},
-        },
-    },
-    style={
-        "background": {
-            "fc": "#F2F4CB",
-            "ec": "#dadbc1",
-            "hatch": "ooo...",
-        },
-        "perimeter": {
-            "fc": "#F2F4CB",
-            "ec": "#dadbc1",
-            "lw": 0,
-            "hatch": "ooo...",
-        },
-        "green": {
-            "fc": "#D0F1BF",
-            "ec": "#2F3737",
-            "lw": 1,
-        },
-        "forest": {
-            "fc": "#64B96A",
-            "ec": "#2F3737",
-            "lw": 1,
-        },
-        "water": {
-            "fc": "#a1e3ff",
-            "ec": "#2F3737",
-            "hatch": "ooo...",
-            "hatch_c": "#85c9e6",
-            "lw": 1,
-        },
-        "parking": {
-            "fc": "#F2F4CB",
-            "ec": "#2F3737",
-            "lw": 1,
-        },
-        "streets": {
-            "fc": "#2F3737",
-            "ec": "#475657",
-            "alpha": 1,
-            "lw": 0,
-        },
-        "building": {
-            "palette": ["#FFC857", "#E9724C", "#C5283D"],
-            "ec": "#2F3737",
-            "lw": 0.5,
-        },
-    },
+    preset="christmas",
 )
-
 ```
+
+Bon, c'est pas forcément une grande réussite ce projet de style de Noël mais disons que c'est une première ébauche :sweat_smile:.
 
 ----
 
 ## prettymapp : l'alternative web optimisée
 
-![icône souris clic gauche](https://cdn.geotribu.fr/img/logos-icones/divers/souris_mouse_left-click.webp){: .img-rdp-news-thumb }
+![icône souris clic gauche](https://cdn.geotribu.fr/img/logos-icones/divers/souris_mouse_left-click.webp){: .img-thumbnail-left }
 
 Bon, ok, j'aurais pu vous en parler plus tôt mais si j'avais commencé par là, vous n'auriez pas mis les mains dans le cambouis, ni ressenti ce soulagement à l'idée de pouvoir cliquer sur une interface web pour faire les réglages de style :smile:.
 
@@ -339,10 +416,29 @@ fig = Plot(
 
 # sauvegarde du fichier de sortie
 fig.savefig(
-    "Fort-de-Gravelines_France_prettymapp.pndg",
+    "Fort-de-Gravelines_France_prettymapp.png",
     metadata={"Author": "Geotribu", "Software": "prettymapp"},
 )
 ```
+
+Voilà le rendu :
+
+![prettymapp - Fort de Gravelines](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymapp_gravelines_peach.webp){: .img-center loading=lazy }
+
+Bien sûr, il est aussi possible de personnaliser le style des objets et de la carte. Le plus simple étant probablement d'utiliser l'interface web pour faire les premiers réglages avant de l'exporter pour l'affiner.
+
+----
+
+## Conclusion
+
+Voilà une présentation finalement assez rapide de prettymaps et de son principal dérivé qui j'espère vous aura donné envie de l'utiliser si ça n'est pas déjà fait.
+
+Si jamais vous vous lancez, partagez donc vos styles ici en commentaire, sur [le reddit](https://www.reddit.com/r/prettymaps_/) ou sur Mapstodon :wink:.
+
+Oh et j'ai fait pas mal d'essais avec les libs que j'ai stocké en vrac dans un projet GitHub :
+
+[Consulter le projet GitHub des exemples :fontawesome-regular-file-code:](https://github.com/geotribu/tuto-prettymaps){: .md-button }
+{: align=middle }
 
 ----
 
