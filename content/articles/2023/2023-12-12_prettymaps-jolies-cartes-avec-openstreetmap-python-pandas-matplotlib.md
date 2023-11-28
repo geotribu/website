@@ -63,7 +63,7 @@ Dans ses premières versions, le projet était difficilement installable à caus
 <!-- termynal -->
 
 ```
-> pip install prettymaps
+$ pip install prettymaps
 ---> 100%
 Installing collected packages: prettymaps
 Successfully installed prettymaps-1.0.0
@@ -101,6 +101,8 @@ C'est l'un des éléments qui a rendu prettymaps aussi populaire : la simplicit�
 
 - une adresse suffit. A noter qu'on peut aussi passer une paire de coordonnées bien sûr ou encore un objet [GeoDataFrame.boundary](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.boundary.html)
 - la bibliothèque propose une série de préréglages (_preset_) pour les paramètres de symbologie
+
+On peut donc entamer notre script de la manière suivante :
 
 ```python linenums="1" title="tuto_prettymaps.py"
 # import des bibliothèques utilisées dans le script
