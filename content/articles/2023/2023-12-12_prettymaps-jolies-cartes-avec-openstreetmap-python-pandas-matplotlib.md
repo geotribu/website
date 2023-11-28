@@ -212,7 +212,7 @@ Vu que Noël approche, essayons d'utiliser les couleurs associées : vert sapin,
 <!-- markdownlint-disable MD046 -->
 ??? "Fichier de style personnalisé Noël"
 
-    ```json title="preset_christmas.json"
+    ```json linenums="1" title="preset_christmas.json"
     {
         "layers": {
             "perimeter": {},
@@ -387,7 +387,7 @@ L'énorme succès de _prettymaps_ a inspiré de nombreux dérivés, certains com
 
 À l'instar de son projet parent, `prettymapp` est d'abord un package Python qu'il est donc possible d'utiliser dans un script pour personnaliser son usage au besoin. Voici un rapide exemple :
 
-```python
+```python linenums="1" title="tuto_prettymapp.py"
 # import des bibliothèques utilisées dans le script
 from prettymapp.geo import get_aoi
 from prettymapp.osm import get_osm_geometries
