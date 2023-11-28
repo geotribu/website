@@ -14,6 +14,7 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/pr
 license: beerware
 robots: index, follow
 tags:
+    - cartographie
     - OpenStreetMap
     - Matplotlib
     - prettymapp
@@ -21,7 +22,7 @@ tags:
     - Python
 ---
 
-# Faire de jolies cartes avec prettymaps sans SIG
+# À la découverte de prettymaps
 
 :calendar: Date de publication initiale : 12 décembre 2023
 
