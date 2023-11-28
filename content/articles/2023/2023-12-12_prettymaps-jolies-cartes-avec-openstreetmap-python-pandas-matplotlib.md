@@ -7,7 +7,7 @@ categories:
     - article
     - tutoriel
 comments: true
-date: "2023-09-29 10:20"
+date: "2023-12-12 10:20"
 description: Prise en main du package Python 'prettymaps', un générateur de cartes artistiques et illustratives à partir d'une simple adresse, en utilisant les données OpenStreetMap et les bibliothèques osmnx, GeoPandas et matplotlib.
 icon: material/palette-outline
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_banner.png
@@ -23,7 +23,7 @@ tags:
 
 # Faire de jolies cartes avec prettymaps sans SIG
 
-:calendar: Date de publication initiale : 29 septembre 2023
+:calendar: Date de publication initiale : 12 décembre 2023
 
 ## Introduction
 
