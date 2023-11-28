@@ -311,6 +311,46 @@ L'énorme succès de _prettymaps_ a inspiré de nombreux dérivés, certains com
 
 ![prettymapp - démo](https://github.com/chrieke/prettymapp/raw/main/streamlit-prettymapp/example_prints/demo.gif){: .img-center loading=lazy }
 
+### Utiliser `prettymapp` en Python
+
+À l'instar de son projet parent, `prettymapp` est d'abord un package Python qu'il est donc possible d'utiliser dans un script pour personnaliser son usage au besoin. Voici un rapide exemple :
+
+```python
+# import des bibliothèques utilisées dans le script
+from prettymapp.geo import get_aoi
+from prettymapp.osm import get_osm_geometries
+from prettymapp.plotting import Plot
+from prettymapp.settings import STYLES
+
+# variables
+adresse = 50.98682, 2.12736
+style_name = "PEACH"
+
+# récupère le polygone (rectangle ou rond) dans un rayon en mètres autour des coordonnées transmises
+aoi = get_aoi(coordinates=adresse, radius=600, rectangular=False)
+
+# récupérer les objets OSM pour les stocker dans un GeoDataFrame (un objet GeoPandas)
+df = get_osm_geometries(aoi=aoi)
+
+# génération de la carte
+fig = Plot(
+    df=df,
+    aoi_bounds=aoi.bounds,
+    draw_settings=STYLES[style_name.title()],
+    name_on=True,
+    name="Fort de Gravelines",
+    text_x=-35,
+    text_y=40,
+    text_rotation=-25,
+).plot_all()
+
+# sauvegarde du fichier de sortie
+fig.savefig(
+    "Fort-de-Gravelines_France_prettymapp.pndg",
+    metadata={"Author": "Geotribu", "Software": "prettymapp"},
+)
+```
+
 ----
 
 ## Auteur {: data-search-exclude }
