@@ -8,7 +8,7 @@ categories:
     - tutoriel
 comments: true
 date: "2023-09-29 10:20"
-description: Prise en main du package Python 'prettymaps' qui permet de générer des cartes artistiques et illustratives à partir d'une simple adresse, en utilisant les données OpenStreetMap et les bibliothèques osmnx, GeoPandas et matplotlib.
+description: Prise en main du package Python 'prettymaps', un générateur de cartes artistiques et illustratives à partir d'une simple adresse, en utilisant les données OpenStreetMap et les bibliothèques osmnx, GeoPandas et matplotlib.
 icon: material/palette-outline
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_banner.png
 license: beerware
@@ -16,6 +16,7 @@ robots: index, follow
 tags:
     - OpenStreetMap
     - Matplotlib
+    - prettymapp
     - prettymaps
     - Python
 ---
@@ -285,14 +286,6 @@ plot: prettymaps.draw.Plot = prettymaps.plot(
         },
     },
 )
-
-```
-
-----
-
-## Sous le capot
-
-```mermaid
 
 ```
 
