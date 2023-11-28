@@ -9,6 +9,7 @@ comments: true
 date: 2014-01-06
 description: "Pour faire son travail de veille en géomatique, identifier les sources interéssantes peut être fastidieux voire décourageant. Je partage mes sources sous forme d'un fichier d'échanges de flux (OPML)."
 icon: material/rss
+license: beerware
 tags:
     - flux
     - RSS
@@ -29,17 +30,18 @@ Jusqu'à ce que Google mette fin au règne de son propre service Reader, je main
 
 Les flux concernent les blogs francophones, anglophones et hispanophones dont j'ai jugé les contenus pertinents. Je ne maintiens pas régulièrement la liste des flux donc la qualité n'est pas garantie (doublons, flux obsolètes, etc.).
 
-[Télécharger le fichier OPML :fontawesome-solid-download:](https://gist.githubusercontent.com/Guts/cb0ce648d6dd10d02434835be7b38865/raw/dbcfa5e75e8ea6cf1aef53b102efabc81e8df42c/geojulien_feeds_subscriptions.opml){: .md-button download }s
+[Télécharger le fichier OPML :fontawesome-solid-download:](https://gist.github.com/Guts/cb0ce648d6dd10d02434835be7b38865/archive/dbcfa5e75e8ea6cf1aef53b102efabc81e8df42c.zip){: target="_blank" download=geojulien_rss_opml.zip .md-button }
 {: align=middle }
 
 ## Importer dans Feedly
 
 Pour importer sous [Feedly](http://feedly.com), si vous avez déjà un compte allez [voir cortex](http://feedly.com/#cortex) ou suivez cette procédure :
 
-1. Télécharger le fichier OPML ci-dessus (clic-droit / Enregistrer la cible du lien sous...)
-2. Sur l'interface de Feedly, allez dans `Organize` via le menu en bas à gauche de l'interface :
+1. Télécharger le fichier OPML ci-dessus
+1. Dézipper
+1. Sur l'interface de Feedly, allez dans `Organize` via le menu en bas à gauche de l'interface :
 ![Feedly organize](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/flux_rss/Feedly_Organize.jpg "Feedly organize menu"){: .img-center loading=lazy }
-3. Cliquez sur Import et sélectionnez le fichier téléchargé :
+1. Cliquez sur Import et sélectionnez le fichier téléchargé :
 ![Feedly import](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/flux_rss/Feedly_ImportOPML.jpg "Feedly import opml"){: .img-center loading=lazy }
 
 Merci à Christophe Rodier pour [la piqûre de rappel](https://twitter.com/leponot/status/419136405424463872) :wink:.
@@ -49,3 +51,5 @@ Merci à Christophe Rodier pour [la piqûre de rappel](https://twitter.com/lepon
 ## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
+
+{% include "licenses/beerware.md" %}
