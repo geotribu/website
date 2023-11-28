@@ -93,7 +93,9 @@ Successfully installed prettymaps-1.0.0
 
 ----
 
-## Une simple adresse suffit
+## Prise en main de prettymaps
+
+### Une simple adresse suffit
 
 ![icône cadeau carto](https://cdn.geotribu.fr/img/logos-icones/divers/cadeau.png){: .img-thumbnail-left }
 
@@ -128,9 +130,7 @@ Et voici le fichier `sciencespo_paris.png` :
 
 ![prettymaps - Sciences Po Paris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_sciences_po_paris.webp){: .img-center loading=lazy }
 
-----
-
-## Jouer avec les préréglages par défaut
+### Jouer avec les préréglages par défaut
 
 Si le rendu par défaut est déjà sympa, la richesse de _prettymaps_ se trouve dans sa capacité à personnaliser les styles des différents objets issus d'OpenStreetMap. L'auteur a intégré dans la bibliothèque des préréglages de styles (_preset_) que l'on peut obtenir avec une simple commande :
 
@@ -194,9 +194,7 @@ On exécute de nouveau le script et voilà les 7 résultats (le style `barcelona
     Saurez-vous identifier l'adresse que j'ai donnée pour générer les images ci-dessus ?  
     Réponse en commentaire. Vous avez environ 1 an pour donner la réponse :wink:.
 
-----
-
-## Let's script again : jouer avec les paramètres
+### Let's script again : jouer avec les paramètres
 
 ![logo OpenStreetMap Python](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/osm_python.png){: .img-thumbnail-left }
 
