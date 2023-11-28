@@ -1,11 +1,14 @@
 ---
 title: "Plein flux sur la géomatique"
+subtitle: Veilleuse RSS
 authors:
     - Julien MOURA
-category: ["article"]
+category:
+    - article
 comments: true
 date: 2014-01-06
 description: "Pour faire son travail de veille en géomatique, identifier les sources interéssantes peut être fastidieux voire décourageant. Je partage mes sources sous forme d'un fichier d'échanges de flux (OPML)."
+icon: material/rss
 tags:
     - flux
     - RSS
@@ -26,7 +29,7 @@ Jusqu'à ce que Google mette fin au règne de son propre service Reader, je main
 
 Les flux concernent les blogs francophones, anglophones et hispanophones dont j'ai jugé les contenus pertinents. Je ne maintiens pas régulièrement la liste des flux donc la qualité n'est pas garantie (doublons, flux obsolètes, etc.).
 
-[Télécharger le fichier OPML :fontawesome-solid-download:](https://gist.githubusercontent.com/Guts/cb0ce648d6dd10d02434835be7b38865/raw/ca3cfb3ec0dbeb0a9b385fc73425235254cb7dd8/geojulien_feeds_subscriptions.opml){: .md-button }
+[Télécharger le fichier OPML :fontawesome-solid-download:](https://gist.githubusercontent.com/Guts/cb0ce648d6dd10d02434835be7b38865/raw/dbcfa5e75e8ea6cf1aef53b102efabc81e8df42c/geojulien_feeds_subscriptions.opml){: .md-button download }s
 {: align=middle }
 
 ## Importer dans Feedly
