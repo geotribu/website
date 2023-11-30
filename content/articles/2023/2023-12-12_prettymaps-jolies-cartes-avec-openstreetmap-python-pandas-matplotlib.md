@@ -34,7 +34,7 @@ tags:
 
 ![prettymaps - Heerhugowaard](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/heerhugowaard.png "prettymaps - Heerhugowaard"){: .img-center loading=lazy }
 
-Cette bibliothèque Python est l'oeuvre de [Marcelo de Oliveira Rosa Prates](https://marceloprates.github.io/), un Brésilien docteur en Computer Science et machine learning qui :
+Cette bibliothèque Python est un générateur de cartes statiques stylisées à partir d'une simple adresse, en utilisant les données OpenStreetMap et les bibliothèques [osmnx](https://osmnx.readthedocs.io/), [GeoPandas](https://geopandas.org/) et [Matplotlib](https://matplotlib.org/). Elle  est l'oeuvre de [Marcelo de Oliveira Rosa Prates](https://marceloprates.github.io/), un Brésilien docteur en Computer Science et machine learning qui :
 
 - :heartbeat: aime partager son travail et jouer avec les intelligences artificielles pour créer des visualisations intéressantes qu'il expose sur son [portfolio](https://marceloprates.github.io/generative-art/)
 - :broken_heart: n'aime pas les NFT ou toute autre technologie purement vénale sans considération pour l'environnement. Merci de respecter ses valeurs.
@@ -100,7 +100,7 @@ Successfully installed prettymaps-1.0.0
 
 ![icône cadeau carto](https://cdn.geotribu.fr/img/logos-icones/divers/cadeau.png){: .img-thumbnail-left }
 
-C'est l'un des éléments qui a rendu prettymaps aussi populaire : la simplicité d'utilisation. On sent que l'auteur a fait des efforts pour rendre la vie plus facile possible à l'utilisateur final que nous sommes, du moins au début :
+C'est l'un des éléments qui a rendu prettymaps aussi populaire : la simplicité d'utilisation. On sent que l'auteur a fait des efforts pour nous rendre la vie facile, du moins au début :
 
 - une adresse suffit ; à noter qu'on peut aussi passer une paire de coordonnées bien sûr ou encore un objet [GeoDataFrame.boundary](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.boundary.html),
 - la bibliothèque propose une série de préréglages (_preset_) pour les paramètres de symbologie.
@@ -131,7 +131,7 @@ Et voici le fichier `sciencespo_paris.png` :
 
 ![prettymaps - Sciences Po Paris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_sciences_po_paris.webp){: .img-center loading=lazy }
 
-### Jouer avec les préréglages par défaut
+### Jouer avec les préréglages intégrés
 
 Si le rendu par défaut est déjà sympa, la richesse de _prettymaps_ se trouve dans sa capacité à personnaliser les styles des différents objets issus d'OpenStreetMap. L'auteur a intégré dans la bibliothèque des préréglages de styles (_preset_) que l'on peut obtenir avec une simple commande :
 
@@ -199,7 +199,7 @@ On exécute de nouveau le script et voilà les 7 résultats (le style `barcelona
 
 ![logo OpenStreetMap Python](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/osm_python.png){: .img-thumbnail-left }
 
-Maintenant qu'on a bien joué avec les préréglages par défaut, creusons un peu plus loin car prettymaps permet de paramétrer plutôt finement la façon dont les objets OpenStreetMap sont stylisés ainsi que comment la figure (au sens de Matplotlib) est construite :
+Maintenant qu'on a bien joué avec les préréglages intégrés, creusons un peu plus loin car _prettymaps_ permet de paramétrer plutôt finement la façon dont les objets OpenStreetMap sont stylisés ainsi que comment la figure (au sens de Matplotlib) est construite :
 
 - `layers` permet de spécifier les objets à récupérer depuis OpenStreetMap, en fait les requêtes à l'API Overpass,
 - `style` permet de régler le mode de représentation des objets dans [Maplotlib](https://matplotlib.org/) : la couleur de fond (`fc`), de bordure (`ec`), la largeur de celle-ci (`lw`), le motif (`hatch`), etc.
@@ -432,7 +432,7 @@ Bien sûr, il est aussi possible de personnaliser le style des objets et de la c
 
 ## Conclusion
 
-Voilà une présentation finalement assez rapide de prettymaps et de son principal dérivé qui j'espère vous aura donné envie de l'utiliser si ça n'est pas déjà fait.
+Voilà une présentation finalement assez rapide de _prettymaps_ et de _prettymapp_, son principal dérivé, qui, je l'espère, vous aura donné envie de l'utiliser si ça n'est pas déjà fait.
 
 Si jamais vous vous lancez, partagez donc vos styles ici en commentaire, sur [le reddit](https://www.reddit.com/r/prettymaps_/) ou sur Mapstodon :wink:.
 
