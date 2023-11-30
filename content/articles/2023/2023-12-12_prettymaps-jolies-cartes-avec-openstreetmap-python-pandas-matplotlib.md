@@ -58,7 +58,7 @@ Il y a déjà de nombreuses ressources et posts ([notamment sur LinkedIn](https:
 
 ![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
-Dans ses premières versions, le projet était difficilement installable à cause d'un packaging foireux (dépendances non déclarées ou non épinglées, police d'écriture manquante...). Depuis, Marcelo a clairement corrigé le tir et le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, de **préférence dans un environnement virtuel** en lançant la commande adaptée à votre système.
+Dans ses premières versions, le projet était difficilement installable à cause d'un packaging foireux (dépendances non déclarées ou non épinglées, police d'écriture manquante...). Depuis, Marcelo a clairement corrigé le tir. Le plus simple est d'utiliser le gestionnaire de paquets Python (`pip`) depuis un terminal, de **préférence dans un environnement virtuel** en lançant la commande adaptée à votre système.
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
@@ -102,8 +102,8 @@ Successfully installed prettymaps-1.0.0
 
 C'est l'un des éléments qui a rendu prettymaps aussi populaire : la simplicité d'utilisation. On sent que l'auteur a fait des efforts pour rendre la vie plus facile possible à l'utilisateur final que nous sommes, du moins au début :
 
-- une adresse suffit. A noter qu'on peut aussi passer une paire de coordonnées bien sûr ou encore un objet [GeoDataFrame.boundary](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.boundary.html)
-- la bibliothèque propose une série de préréglages (_preset_) pour les paramètres de symbologie
+- une adresse suffit ; à noter qu'on peut aussi passer une paire de coordonnées bien sûr ou encore un objet [GeoDataFrame.boundary](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.boundary.html),
+- la bibliothèque propose une série de préréglages (_preset_) pour les paramètres de symbologie.
 
 On peut donc entamer notre script de la manière suivante :
 
@@ -201,8 +201,8 @@ On exécute de nouveau le script et voilà les 7 résultats (le style `barcelona
 
 Maintenant qu'on a bien joué avec les préréglages par défaut, creusons un peu plus loin car prettymaps permet de paramétrer plutôt finement la façon dont les objets OpenStreetMap sont stylisés ainsi que comment la figure (au sens de Matplotlib) est construite :
 
-- `layers` permet de spécifier les objets à récupérer depuis OpenStreetMap, en fait les requêtes à l'API Overpass
-- `style` permet de régler le mode de représentation des objets dans Maplotlib : la couleur de fond (`fc`), de bordure (`ec`), la largeur de celle-ci (`lw`), le motif (`hatch`), etc.
+- `layers` permet de spécifier les objets à récupérer depuis OpenStreetMap, en fait les requêtes à l'API Overpass,
+- `style` permet de régler le mode de représentation des objets dans [Maplotlib](https://matplotlib.org/) : la couleur de fond (`fc`), de bordure (`ec`), la largeur de celle-ci (`lw`), le motif (`hatch`), etc.
 
 Prenons un lieu qui se prête bien à l'exercice : Saint-Malo.
 
