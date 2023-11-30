@@ -30,14 +30,14 @@ tags:
 
 ![logo ArtSIG](https://cdn.geotribu.fr/img/logos-icones/divers/artsig.png){: .img-thumbnail-left }
 
-A l'occasion des cours que je donne à l'[Ecole Urbaine de Sciences Po Paris](https://www.sciencespo.fr/ecole-urbaine/fr/), j'aime à proposer aux étudiant/es d'autres outils que le seul logiciel SIG. C'est ainsi qu'aux côtés de [Khartis](https://www.sciencespo.fr/cartographie/khartis/app/) et [kepler.gl](https://kepler.gl/) notamment, je leur ai présenté la [pépité dénichée par Nicolas Rochard](https://github.com/geotribu/website/pull/563) dans la [revue de presse du 18 mars 2022](../../rdp/2022/rdp_2022-03-18.md#prettymaps--une-libraire-python-pour-des-cartographies-osm-stylées) : prettymaps.
+À l'occasion des cours que je donne à l'[École Urbaine de Sciences Po Paris](https://www.sciencespo.fr/ecole-urbaine/fr/), j'aime à proposer aux étudiants/es d'autres outils que le seul logiciel SIG. C'est ainsi qu'aux côtés de [Khartis](https://www.sciencespo.fr/cartographie/khartis/app/) et [kepler.gl](https://kepler.gl/) notamment, je leur ai présenté la [pépité dénichée par Nicolas Rochard](https://github.com/geotribu/website/pull/563) dans la [revue de presse du 18 mars 2022](../../rdp/2022/rdp_2022-03-18.md#prettymaps--une-libraire-python-pour-des-cartographies-osm-stylées) : prettymaps.
 
 ![prettymaps - Heerhugowaard](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/heerhugowaard.png "prettymaps - Heerhugowaard"){: .img-center loading=lazy }
 
 Cette bibliothèque Python est l'oeuvre de [Marcelo de Oliveira Rosa Prates](https://marceloprates.github.io/), un Brésilien docteur en Computer Science et machine learning qui :
 
 - :heartbeat: aime partager son travail et jouer avec les intelligences artificielles pour créer des visualisations intéressantes qu'il expose sur son [portfolio](https://marceloprates.github.io/generative-art/)
-- :broken_heart: n'aime pas les NFT ou tout autre technologie purement vénalé sans considération pour l'environnement. Merci de respecter ses valeurs.
+- :broken_heart: n'aime pas les NFT ou toute autre technologie purement vénale sans considération pour l'environnement. Merci de respecter ses valeurs.
 
 Il y a déjà de nombreuses ressources et posts ([notamment sur LinkedIn](https://www.linkedin.com/search/results/content/?keywords=prettymaps&origin=FACETED_SEARCH&sid=jXj&sortBy=%22date_posted%22)) sur [prettymaps](https://github.com/marceloprates/prettymaps/) mais je n'ai rien trouvé en français ni rien qui ne détaille vraiment le fonctionnement. Alors c'est parti !
 
@@ -373,9 +373,9 @@ Bon, c'est pas forcément une grande réussite ce projet de style de Noël mais 
 
 ![icône souris clic gauche](https://cdn.geotribu.fr/img/logos-icones/divers/souris_mouse_left-click.webp){: .img-thumbnail-left }
 
-Bon, ok, j'aurais pu vous en parler plus tôt mais si j'avais commencé par là, vous n'auriez pas mis les mains dans le cambouis, ni ressenti ce soulagement à l'idée de pouvoir cliquer sur une interface web pour faire les réglages de style :smile:.
+Bon, ok, j'aurais pu vous en parler plus tôt, mais si j'avais commencé par là, vous n'auriez pas mis les mains dans le cambouis, ni ressenti ce soulagement à l'idée de pouvoir cliquer sur une interface web pour faire les réglages de style :smile:.
 
-L'énorme succès de _prettymaps_ a inspiré de nombreux dérivés, certains comme le méprisable [Aeterna Civitas](https://magiceden.io/marketplace/aeterna_civitas) allant à l'encontre du souhait de l'auteur, le poussant à ne plus publier ses outils en open source... Et d'autres plus heureux comme [_prettymapp_](https://github.com/chrieke/prettymapp/) (oui sans `s` mais avec 2 `p`), le projet de [Christoph Rieke](https://chrieke.com/) qui facilite l'utilisation en proposant une interface graphique pour les principaux paramètres, le tout dans une application web dont l'instance de démo est publique :
+L'énorme succès de _prettymaps_ a inspiré de nombreux dérivés, certains comme le méprisable [Aeterna Civitas](https://magiceden.io/marketplace/aeterna_civitas) allant à l'encontre du souhait de l'auteur, le poussant à ne plus publier ses outils en open source... Et d'autres, plus heureux, comme [_prettymapp_](https://github.com/chrieke/prettymapp/) (oui sans `s` mais avec 2 `p`), le projet de [Christoph Rieke](https://chrieke.com/) qui facilite l'utilisation en proposant une interface graphique pour les principaux paramètres, le tout dans une application web dont l'instance de démo est publique :
 
 [:frame_photo: Utiliser prettymapp](https://prettymapp.streamlit.app/){: .md-button .md-button--primary }
 {: align=middle }
