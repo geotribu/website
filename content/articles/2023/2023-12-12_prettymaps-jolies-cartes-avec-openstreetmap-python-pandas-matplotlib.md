@@ -34,7 +34,7 @@ tags:
 
 ![prettymaps - Heerhugowaard](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/reupload/heerhugowaard.png "prettymaps - Heerhugowaard"){: .img-center loading=lazy }
 
-Cette bibliothèque Python est un générateur de cartes statiques stylisées à partir d'une simple adresse, en utilisant les données OpenStreetMap et les bibliothèques [osmnx](https://osmnx.readthedocs.io/), [GeoPandas](https://geopandas.org/) et [Matplotlib](https://matplotlib.org/). Elle  est l'oeuvre de [Marcelo de Oliveira Rosa Prates](https://marceloprates.github.io/), un Brésilien docteur en Computer Science et machine learning qui :
+Cette bibliothèque Python est un générateur de cartes statiques stylisées à partir d'une simple adresse, en utilisant les données OpenStreetMap et les bibliothèques [osmnx](https://osmnx.readthedocs.io/), [GeoPandas](https://geopandas.org/) et [Matplotlib](https://matplotlib.org/). Elle  est l'oeuvre de [Marcelo de Oliveira Rosa Prates](https://marceloprates.github.io/), un Brésilien docteur en Computer Science et Machine Learning qui :
 
 - :heartbeat: aime partager son travail et jouer avec les intelligences artificielles pour créer des visualisations intéressantes qu'il expose sur son [portfolio](https://marceloprates.github.io/generative-art/)
 - :broken_heart: n'aime pas les NFT ou toute autre technologie purement vénale sans considération pour l'environnement. Merci de respecter ses valeurs.
