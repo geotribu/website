@@ -245,6 +245,8 @@ plot: prettymaps.draw.Plot = prettymaps.plot(
 
 Bon, c'est pas forcément une grande réussite ce projet de style de Noël mais disons que c'est une première ébauche :sweat_smile:.
 
+![prettymaps - Saint-Malo - Style personnalisé Noël](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/prettymaps/prettymaps_saint-malo_style_personnalise_noel.webp){: .img-center loading=lazy }
+
 ----
 
 ## prettymapp : l'alternative web optimisée
