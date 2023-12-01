@@ -204,7 +204,7 @@ Maintenant qu'on a bien joué avec les préréglages intégrés, creusons un peu
 - `layers` permet de spécifier les objets à récupérer depuis OpenStreetMap, en fait les requêtes à l'API Overpass,
 - `style` permet de régler le mode de représentation des objets dans [Maplotlib](https://matplotlib.org/) : la couleur de fond (`fc`), de bordure (`ec`), la largeur de celle-ci (`lw`), le motif (`hatch`), etc.
 
-Prenons un lieu qui se prête bien à l'exercice : Saint-Malo.
+Prenons un lieu qui se prête bien à l'exercice : Saint-Malo. Plus exactement [le bassin Jacques Cartier](https://www.openstreetmap.org/#map=15/48.6470/-2.0205&layers=O) car il y a de la vieille ville, de l'eau, de la plage, des bâtiments, des routes... bref, de la diversité !
 
 Vu que Noël approche, essayons d'utiliser [les couleurs associées](https://www.schemecolor.com/christmas-hex-color-codes.php) : vert pomme, vert sapin, jaune dorée, orange rouge, rouge et blanc. Pour faciliter la lisibilité du script, stockons les paramètres de style dans un fichier JSON à part, que je replie ici pour vous éviter de scroller de trop.
 
