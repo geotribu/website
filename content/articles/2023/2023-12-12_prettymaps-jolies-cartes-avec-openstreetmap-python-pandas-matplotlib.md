@@ -206,7 +206,7 @@ Maintenant qu'on a bien joué avec les préréglages intégrés, creusons un peu
 
 Prenons un lieu qui se prête bien à l'exercice : Saint-Malo.
 
-Vu que Noël approche, essayons d'utiliser les couleurs associées : vert sapin, rouge et blanc. Pour faciliter la lisibilité du script, stockons les paramètres de style dans un fichier JSON à part, que je replie ici pour vous éviter de scroller de trop.
+Vu que Noël approche, essayons d'utiliser [les couleurs associées](https://www.schemecolor.com/christmas-hex-color-codes.php) : vert pomme, vert sapin, jaune dorée, orange rouge, rouge et blanc. Pour faciliter la lisibilité du script, stockons les paramètres de style dans un fichier JSON à part, que je replie ici pour vous éviter de scroller de trop.
 
 <!-- markdownlint-disable MD046 -->
 ??? "Fichier de style personnalisé Noël"
