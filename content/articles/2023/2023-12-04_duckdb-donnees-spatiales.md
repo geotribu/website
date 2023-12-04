@@ -148,7 +148,7 @@ D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ; ****
 
 Les données d’Ouverture Maps sont fournies sous forme de fichier parquet ([décrites ici](https://github.com/OvertureMaps/data#data-release-feedback)), nous allons donc importer ces données dans une base pour les consulter.
 
-**Importer les données dans la base**
+#### Importer les données dans la base
 
 Dans cet exemple on récupère 100 bâtiments aléatoirement (environ 1 minute de traitement chez moi)
 
@@ -176,7 +176,7 @@ D. CREATE TABLE buildings AS (
  LIMIT 1 );
 ```
 
-**Importer les données dans la base**
+#### Importer les données dans la base
 
 Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan en indiquant les coordonnées d’un rectangle (attention requête assez longue)
 
@@ -210,14 +210,12 @@ D. CREATE TABLE buildings AS (
  AND bbox.maxy < 40.7373325 );
 ```
 
-**Visualiser les données dans QGIS**
+#### Visualiser les données dans QGIS
 
 Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qduckdb/).
 :warning: Attention cette extension est encore expérimentales, il faut donc bien cocher ce paramètres dans le gestionnaire des extensions de QGIS.
 
-:# TODO capture d'écran
-
-**Convertir les données en un GeoJSON en utilisant DuckDB**
+#### Convertir les données en un GeoJSON en utilisant DuckDB
 
 Un des atouts de DuckDB n'est pas seulement d’intégrer des données pour les traiter dans la base. Mais cela peut servir d’outils de conversion pour des données parquets. Exemple, on me donne des données en parquet, mais je souhaite les avoirs en GeoJSON, on peut les convertir sans créer de table ni de base.
 
