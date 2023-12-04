@@ -97,7 +97,7 @@ ou
 === ":snake: Python”
 
 ```python
-import duckdb 
+import duckdb
 
 con = duckdb.connect("./ouverture_maps-transportation.db")
 ```
@@ -119,14 +119,14 @@ con.sql("INSTALL spatial; LOAD spatial ; LOAD httpfs ;")
 === "▶️ CLI”
 
 ```bash
-D INSTALL spatial ; 
+D INSTALL spatial ;
 D LOAD spatial ;
 D LOAD httpfs ;****
 ```
 
 ### Importer un CSV et créer la géométrie
 
-La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à créer la table au préalable, cette fonction détecte automatiquement la structure du CSV. 
+La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à créer la table au préalable, cette fonction détecte automatiquement la structure du CSV.
 
 === ":snake: Python”
 
@@ -168,12 +168,12 @@ con.sql(query_admins)
 === "▶️ CLI”
 
 ```bash
-D. CREATE TABLE buildings AS (   
-	SELECT type, version, CAST(updatetime as varchar) as updateTime,
-	height, numfloors as numFloors, level, class,
-	ST_GeomFromWKB(geometry) as geometry
-	FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
-	LIMIT 1 );
+D. CREATE TABLE buildings AS (  
+ SELECT type, version, CAST(updatetime as varchar) as updateTime,
+ height, numfloors as numFloors, level, class,
+ ST_GeomFromWKB(geometry) as geometry
+ FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+ LIMIT 1 );
 ```
 
 **Importer les données dans la base**
@@ -199,20 +199,20 @@ con.sql(query_admins)
 === "▶️ CLI”
 
 ```bash
-D. CREATE TABLE buildings AS (   
-	SELECT type, version, CAST(updatetime as varchar) as updateTime,
-	height, numfloors as numFloors, level, class,
-	ST_GeomFromWKB(geometry) as geometry
-	FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
-	WHERE bbox.minx > -73.9967900
-	AND bbox.maxx < -73.9967900
-	AND bbox.miny > 40.7373325
-	AND bbox.maxy < 40.7373325 );
+D. CREATE TABLE buildings AS (  
+ SELECT type, version, CAST(updatetime as varchar) as updateTime,
+ height, numfloors as numFloors, level, class,
+ ST_GeomFromWKB(geometry) as geometry
+ FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+ WHERE bbox.minx > -73.9967900
+ AND bbox.maxx < -73.9967900
+ AND bbox.miny > 40.7373325
+ AND bbox.maxy < 40.7373325 );
 ```
 
 **Visualiser les données dans QGIS**
 
-Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qduckdb/). 
+Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qduckdb/).
 :warning: Attention cette extension est encore expérimentales, il faut donc bien cocher ce paramètres dans le gestionnaire des extensions de QGIS.
 
 :# TODO capture d'écran
@@ -243,19 +243,19 @@ con.sql(query_export_buildings)
 
 ```bash
 D. COPY (
-	SELECT type, version, CAST(updatetime as varchar) as updateTime,
-	height, numfloors as numFloors, level, class,
-	ST_GeomFromWKB(geometry) as geometry
-	FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
-	WHERE bbox.minx > -73.9967900 
-	AND bbox.maxx < -73.9967900 
-	AND bbox.miny > 40.7373325 
-	AND bbox.maxy < 40.7373325 )  
-	TO 'new_york_buildings.geojson' 
-	WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326'); 
+ SELECT type, version, CAST(updatetime as varchar) as updateTime,
+ height, numfloors as numFloors, level, class,
+ ST_GeomFromWKB(geometry) as geometry
+ FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+ WHERE bbox.minx > -73.9967900
+ AND bbox.maxx < -73.9967900
+ AND bbox.miny > 40.7373325
+ AND bbox.maxy < 40.7373325 )  
+ TO 'new_york_buildings.geojson'
+ WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
 ```
 
-:bulb: Également possible d'exporter en Shapefile, pour cela il faut remplacer les deux dernières lignes par celles-ci : 
+:bulb: Également possible d'exporter en Shapefile, pour cela il faut remplacer les deux dernières lignes par celles-ci :
 
 ```sql
  ) TO 'new_york_buildings.shp'
