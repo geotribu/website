@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: "2021-06-08 10:20"
+date: "2021-06-08 10:20:00"
 description: "Premier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/open_data_kit_postgresql.png"
 license: "CC-BY-SA"

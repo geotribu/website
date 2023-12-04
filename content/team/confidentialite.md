@@ -5,7 +5,7 @@ authors:
 categories:
     - Geotribu
 comments: true
-date: "2021-05-20 10:20"
+date: "2021-05-20 10:20:00"
 description: "Cette page détaille les dispositifs de traçage que l'utilisateur/ice final/e peut rencontrer sur le site Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_banner_600x300.png"
 tags:

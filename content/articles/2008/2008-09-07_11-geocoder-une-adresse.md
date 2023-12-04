@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-08-22 10:20
+date: 2008-08-22 10:20:00
 description: "11. Géocoder une adresse"
 tags:
     - géocodage

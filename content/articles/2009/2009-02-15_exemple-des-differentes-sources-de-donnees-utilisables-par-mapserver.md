@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-02-15 10:20
+date: 2009-02-15 10:20:00
 description: "Exemple des différentes sources de données utilisables par MapServer"
 tags:
     - data

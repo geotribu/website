@@ -6,7 +6,7 @@ categories:
     - article
     - tutoriel
 comments: true
-date: "2020-10-28 10:20"
+date: "2020-10-28 10:20:00"
 description: "WSL ? Le Windows Subsystem for Linux permet depuis quelques années déjà de faire tourner un terminal bash sous Windows et ainsi bénéficier de l'usage des programmes populaires de l'écosystème Linux. Dans ce tutoriel, nous verrons comment installer et configurer WSL sur Windows 10, puis nous verrons les possibilités que cela ouvre en installant et utilisant GDAL dans le sous-système Linux."
 image: "https://cdn.geotribu.fr/img/tuto/gdal_wsl/ubuntu_wsl_landing_page.png"
 tags:

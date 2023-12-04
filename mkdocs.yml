@@ -119,6 +119,11 @@ plugins:
         background_image: content/theme/assets/images/geotribu/background_geotribu.png
         color: "#3e93a7"
         font_family: Ubuntu
+  - blog:
+      enabled: true
+      blog_dir: articles
+      post_dir: "{blog}/."
+      authors: false
 
 # Theme
 theme:

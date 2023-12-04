@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-08-31 10:20
+date: 2008-08-31 10:20:00
 description: "Ajouter de nouvelles fonctionnalités à la bibliothèque OpenLayers"
 tags:
     - OpenLayers

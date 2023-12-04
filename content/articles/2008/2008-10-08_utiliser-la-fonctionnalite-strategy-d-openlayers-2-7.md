@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-10-08 10:20
+date: 2008-10-08 10:20:00
 description: "Utiliser la fonctionnalité Strategy d'OpenLayers 2.7"
 tags:
     - OpenLayers

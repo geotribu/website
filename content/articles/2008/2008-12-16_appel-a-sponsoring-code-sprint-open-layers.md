@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-12-16 10:20
+date: 2008-12-16 10:20:00
 description: "Appel à sponsoring - Code Sprint Open Layers"
 tags:
     - OpenLayers

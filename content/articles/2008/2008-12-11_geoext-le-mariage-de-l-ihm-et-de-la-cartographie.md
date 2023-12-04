@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-12-11 10:20
+date: 2008-12-11 10:20:00
 description: "GeoExt, le mariage de l'IHM et de la cartographie"
 tags:
     - GeoExt

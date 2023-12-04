@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-06-06 10:20
+date: 2009-06-06 10:20:00
 description: "19. Clusterisation côté serveur - Ajax, PHP et PostGIS"
 tags:
     - Ajax

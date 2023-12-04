@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-01-17 10:20
+date: 2009-01-17 10:20:00
 description: "7. Intégrer la vue 3D de l'API Google Earth dans Google Maps"
 tags:
     - Google Earth

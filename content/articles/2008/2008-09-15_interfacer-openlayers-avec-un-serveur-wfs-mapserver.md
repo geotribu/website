@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-09-15 10:20
+date: 2008-09-15 10:20:00
 description: "Interfacer OpenLayers avec un serveur WFS (MapServer)"
 tags:
   - WFS

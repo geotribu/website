@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-09-07 10:20
+date: 2008-09-07 10:20:00
 description: "9. Superposer une carte à Google Maps avec génération préalable de tuiles"
 tags:
     - Google Maps

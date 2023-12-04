@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-09-11 10:20
+date: 2008-09-11 10:20:00
 description: "TileCache ou comment booster votre WMS"
 tags:
     - GeoServer

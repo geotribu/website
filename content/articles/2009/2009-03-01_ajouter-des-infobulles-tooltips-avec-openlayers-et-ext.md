@@ -5,7 +5,7 @@ authors:
 categories:
 - article
 comments: true
-date: 2009-03-01 10:20
+date: 2009-03-01 10:20:00
 description: "Ajouter des infobulles (tooltips) avec OpenLayers et Ext"
 tags:
     - OpenLayers

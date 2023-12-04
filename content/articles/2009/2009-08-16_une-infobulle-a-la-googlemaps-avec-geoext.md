@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-08-16 10:20
+date: 2009-08-16 10:20:00
 description: "Une infobulle à la GoogleMaps avec GeoExt"
 tags:
     - GeoExt

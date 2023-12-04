@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: "2021-10-31 10:20"
+date: "2021-10-31 10:20:00"
 description: "Tiens et si on installait QGIS 0.9 Ganymède en 2021 et qu'on essayait de faire une carte ? Petit voyage dans le temps."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9_ganymede_splash.png"
 tags:

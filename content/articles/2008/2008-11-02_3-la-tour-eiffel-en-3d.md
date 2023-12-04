@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-11-02 10:20
+date: 2008-11-02 10:20:00
 description: "3. La Tour Eiffel en 3D"
 image: ''
 license: default

@@ -6,7 +6,7 @@ categories:
     - article
     - événement
 comments: true
-date: "2022-01-12 10:20"
+date: "2022-01-12 10:20:00"
 description: "Les 18 et 19 janvier prochains se tiendront les journées QGIS en distanciel : liens utiles et liste d'inventaire pour mes ateliers (rattrapage)."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/evenement/2022_01_rencontres_QGIS.jpg"
 license: default

@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-10-29 10:20
+date: 2008-10-29 10:20:00
 description: "Afficher des graphiques sur une carte - OpenLayers/Artichow"
 image: ''
 license: default

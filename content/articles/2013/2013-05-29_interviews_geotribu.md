@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2013-05-29 14:20
+date: 2013-05-29 14:20:00
 description: "Avec le nouveau site, nouveau format sur Geotribu : les GeoInterviews."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/interview/interview_panneau.png"
 tags:

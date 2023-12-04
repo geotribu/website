@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2013-06-05 10:20
+date: 2013-06-05 10:20:00
 description: "Mongo Spatial"
 tags:
   - Mongo

@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-09-05 10:20
+date: 2008-09-05 10:20:00
 description: "8. Superposer un fichier KML et enrichir les infobulles"
 tags:
     - Google Maps

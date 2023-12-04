@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-11-17 10:20
+date: 2008-11-17 10:20:00
 description: "15. Ajouter la GoogleBar"
 image: ''
 tags:

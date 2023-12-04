@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-06-06 10:20
+date: 2009-06-06 10:20:00
 description: "18. Introduction à l'API v3"
 tags:
     - API

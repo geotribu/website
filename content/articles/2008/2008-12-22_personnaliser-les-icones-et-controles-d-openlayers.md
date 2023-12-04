@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-12-22 10:20
+date: 2008-12-22 10:20:00
 description: "Personnaliser les icônes et controles d'OpenLayers"
 image: ''
 tags:

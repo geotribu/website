@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-10-18 10:20
+date: 2009-10-18 10:20:00
 description: "Utiliser OGR avec python"
 tags:
     - Python

@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: "2022-07-22 10:20"
+date: "2022-07-22 10:20:00"
 description: "Présentation de Dzetsaka, un plugin QGIS pour faire de la classification semi-automatisée."
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/L_Dzetsaka_Resultat4.png
 license: default

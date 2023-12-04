@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-08-31 10:20
+date: 2008-08-31 10:20:00
 description: "Afficher des infobulles sur des objets [Part 2]"
 tags:
     - OpenLayers

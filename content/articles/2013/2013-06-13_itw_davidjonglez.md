@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2013-06-13 10:20
+date: 2013-06-13 10:20:00
 description: "Interview de David JONGLEZ"
 tags:
     - Esri

@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: "2013-11-20 10:20"
+date: 2013-11-20 10:20:00
 description: "Deuxième géogame proposé par Geotribu : des mots-croisés sur les solutions de webmapping. Bon jeu !"
 image: "https://cdn.geotribu.fr/img/geogames/geogame1_capture.png"
 tags:

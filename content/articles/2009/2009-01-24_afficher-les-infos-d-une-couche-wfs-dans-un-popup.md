@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-01-24 10:20
+date: 2009-01-24 10:20:00
 description: "Afficher les infos d'une couche WFS dans un popup"
 tags:
     - OpenLayers

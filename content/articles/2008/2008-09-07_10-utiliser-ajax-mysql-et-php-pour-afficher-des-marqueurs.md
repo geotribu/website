@@ -4,7 +4,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-09-07 10:20
+date: 2008-09-07 10:20:00
 description: ""
 image: ''
 license: default

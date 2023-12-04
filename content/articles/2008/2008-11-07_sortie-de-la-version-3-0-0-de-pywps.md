@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-11-07 10:20
+date: 2008-11-07 10:20:00
 description: "Sortie de la version 3.0.0 de PyWPS"
 tags:
     - Python

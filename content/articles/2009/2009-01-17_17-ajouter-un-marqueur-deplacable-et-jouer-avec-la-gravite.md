@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-01-17 10:20
+date: 2009-01-17 10:20:00
 description: "17. Ajouter un marqueur déplaçable et jouer avec la gravité"
 tags:
     - Google Maps

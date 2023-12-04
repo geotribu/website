@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-01-14 10:20
+date: 2009-01-14 10:20:00
 description: "OpenLayers, pouvoir réaliser un 'padding' dans une infobulle"
 tags:
     - infobulle

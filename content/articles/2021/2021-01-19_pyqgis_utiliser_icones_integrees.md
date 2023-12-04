@@ -6,7 +6,7 @@ categories:
     - article
     - tutoriel
 comments: true
-date: "2021-01-19 14:20"
+date: "2021-01-19 14:20:00"
 description: "Pour le développement d'un plugin pour QGIS, soigner l'interface graphique peut être fastidieux, notamment de concevoir ou trouver les éléments graphiques. Pourquoi ne pas utiliser les icônes déjà embarquées dans QGIS ?."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_file-explorer.png"
 license: beerware

@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-11-20 10:20
+date: 2008-11-20 10:20:00
 description: "Le WebMapping de demain : WFS et WPS"
 image: ''
 license: default

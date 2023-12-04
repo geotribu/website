@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: "2015-06-04 10:20"
+date: "2015-06-04 10:20:00"
 description: "Tutoriel d'installation et de déploiement d'addok, le servur de géocodage lié à la BAN/BANO."
 license: default
 robots: index, follow

@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-11-30 10:20
+date: 2008-11-30 10:20:00
 description: "Créer une MiniMap personnalisable avec mapFish et Ext"
 image: ''
 tags:

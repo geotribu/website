@@ -5,7 +5,7 @@ authors:
 categories:
     - article
     - meta
-date: 2021-11-02 10:20
+date: 2021-11-02 10:20:00
 description: "Abonnez-vous à la newsletter de Geotribu pour ne rien manquer des contenus publiés."
 image: "https://cdn.geotribu.fr/img/internal/workflow/newsletter_monthly_cut.png"
 tags:

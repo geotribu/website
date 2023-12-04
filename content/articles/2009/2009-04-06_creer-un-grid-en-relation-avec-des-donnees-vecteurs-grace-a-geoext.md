@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-04-06 10:20
+date: 2009-04-06 10:20:00
 description: "Créer un grid en relation avec des données vecteurs grâce à GeoExt"
 tags:
     - ExtJS

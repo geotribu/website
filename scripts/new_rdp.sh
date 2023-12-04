@@ -79,7 +79,7 @@ cp -v $RDP_TEMPLATE_PATH "$RDP_PATH"
 
 # replace default values
 sed -i "s|^title:.*|title: Revue de presse du $(date -d "${date_formatted}" '+%-d %B %Y')|" "$RDP_PATH"
-sed -i "s|^date:.*|date: $(date -d "${date_formatted}" '+%Y-%m-%d') 14:20|" "$RDP_PATH"
+sed -i "s|^date:.*|date: $(date -d "${date_formatted}" '+%Y-%m-%d') 14:20:00|" "$RDP_PATH"
 sed -i "s|^description:.*|description: \"\"|" "$RDP_PATH"
 sed -i "s|^# Revue de presse du.*|# Revue de presse du $(date -d "${date_formatted}" '+%-d %B %Y')|" "$RDP_PATH"
 echo -e "\e[32mValeurs par défaut remplacées."

@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-12-07 10:20
+date: 2008-12-07 10:20:00
 description: "Et si les données SIG étaient libres ?"
 tags:
     - open data

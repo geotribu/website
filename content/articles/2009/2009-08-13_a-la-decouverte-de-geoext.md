@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-08-13 10:20
+date: 2009-08-13 10:20:00
 description: "A la découverte de GeoExt"
 tags:
     - ExtJS

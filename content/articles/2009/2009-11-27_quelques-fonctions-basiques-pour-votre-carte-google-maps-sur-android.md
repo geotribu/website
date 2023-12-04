@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-11-27 10:20
+date: 2009-11-27 10:20:00
 description: "Quelques fonctions basiques pour votre carte Google Maps sur Android"
 tags:
     - Android

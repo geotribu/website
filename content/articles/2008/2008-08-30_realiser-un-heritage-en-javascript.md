@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-08-30 10:20
+date: 2008-08-30 10:20:00
 description: "Réaliser un héritage en JavaScript"
 tags:
     - heritage

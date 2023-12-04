@@ -6,7 +6,7 @@ categories:
     - article
     - tutoriel
 comments: true
-date: "2021-06-25 10:20"
+date: "2021-06-25 10:20:00"
 description: "Comment réaliser des cartes interactives personnalisées simplement à l'aide de R et quelques packages"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/exempletitre.png"
 tags:

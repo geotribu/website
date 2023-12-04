@@ -6,7 +6,7 @@ categories:
     - article
     - tutoriel
 comments: true
-date: "2020-09-14 10:20"
+date: "2020-09-14 10:20:00"
 description: "Convertir les contenus récupérés de l'ancien site de Geotribu en Markdown (via markdownify) : lingua franca du contenu web 2020."
 image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
 tags:

@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2009-02-07 10:20
+date: 2009-02-07 10:20:00
 description: "Afficher le nombre d'éléments dans un Cluster Strategy"
 tags:
     - cluster
