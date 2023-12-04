@@ -175,6 +175,7 @@ D. CREATE TABLE buildings AS (
  FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
  LIMIT 1 );
 ```
+
 Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan en indiquant les coordonnées d’un rectangle (attention requête assez longue)
 
 === ":snake: Python”
