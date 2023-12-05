@@ -53,9 +53,9 @@
 {% endif %}
 
 {# Social card enabled #}
-{% set social_card = true %}
+{% set social_card = false %}
 {% if page and not page.is_homepage and page.meta and page.meta.social and page.meta.social.cards %}
-{% set social_card = page.meta.social.cards %}
+{% set social_card = true %}
 {% endif %}
 
 {# Cache-control #}
