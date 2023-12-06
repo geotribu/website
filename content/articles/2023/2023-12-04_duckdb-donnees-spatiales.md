@@ -28,6 +28,8 @@ tags:
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
 
+![logo DuckDB](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/DuckDB_Logo.png){: .img-thumbnail-left }
+
 Si depuis quelques semaines, vous voyez passer beaucoup de chose sur des sujets comme DuckDB, les fichiers parquet ou encore les données d’Ouverture Maps, mais sans trop comprendre de quoi il s’agit, vous êtes au bon endroit !
 
 ## DuckDB c’est quoi ?
@@ -78,9 +80,9 @@ De nombreux outils existent pour traiter et requêter ce type de fichier, parmi 
 
 ## Pour aller plus loin
 
-Sur ce [répertoire Github](https://github.com/davidgasquez/awesome-duckdb) est maintenu une liste de projets, outils, ou ressource développée autour de DuckDB. Petit coup de ❤️ pour [Harlequin](https://harlequin.sh/), qui est un IDE pour terminal destiné à l’utilisation de DuckDB.
+Sur ce [répertoire Github](https://github.com/davidgasquez/awesome-duckdb) est maintenu une liste de projets, outils, ou ressource développée autour de DuckDB. Petit coup de ❤️ pour [Harlequin](https://harlequin.sh/), qui est un IDE pour terminal destiné à l’utilisation de DuckDB et simple d'installation.
 
-![Untitled](Article%20Ge%CC%81otribu%20DuckDB%20992c170df8544e3f9bc3f8e389072694/Untitled.png)
+![screenshort harlequin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/harlequin.png)
 
 ## Exemple pratique
 
@@ -88,9 +90,38 @@ Sur ce [répertoire Github](https://github.com/davidgasquez/awesome-duckdb) est 
 
 - L’exécutable DuckDB pour utiliser le CLI
 
+<!-- markdownlint-disable MD040 -->
+<!-- termynal -->
+
+```
+v0.9.2 3c695d7ba9
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+D 
+```
+
+<!-- markdownlint-enable MD040 -->
+
+<!-- markdownlint-disable MD046 -->
+
 ou
 
 - Un environnement Python avec le [paquet duckdb](https://pypi.org/project/duckdb/) d’installer (DuckDB utilise de nombreuses dépendances, il est donc conseiller d’utiliser un environnement virtuel pour éviter les conflits de dépendances)
+
+<!-- markdownlint-disable MD040 -->
+<!-- termynal -->
+
+```
+$ pip install duckdb
+---> 100%
+Installing collected packages: duckdb
+Successfully installed duckdb-0.9.2
+```
+
+<!-- markdownlint-enable MD040 -->
+
+<!-- markdownlint-disable MD046 -->
 
 ### Création d’une de données (ou l’ouvrir si elle existe déjà)
 
@@ -212,6 +243,8 @@ D. CREATE TABLE buildings AS (
 
 Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qduckdb/).
 :warning: Attention cette extension est encore expérimentales, il faut donc bien cocher ce paramètres dans le gestionnaire des extensions de QGIS.
+
+![qduckdb](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/qduckdb.png)
 
 #### Convertir les données en un GeoJSON en utilisant DuckDB
 
