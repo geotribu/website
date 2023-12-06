@@ -164,7 +164,7 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
 ```python
 con.sql("CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;")
 con.sql("ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;")
-con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;") 
+con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;")
 ```
 
 === "▶ CLI”
@@ -172,7 +172,7 @@ con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;"
 ```bash
 D CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;
 D ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;
-D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ; 
+D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;
 ```
 
 ### Traiter des données parquet d'Ouverture Maps avec DuckDB
