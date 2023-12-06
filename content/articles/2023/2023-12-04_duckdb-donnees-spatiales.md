@@ -98,7 +98,7 @@ v0.9.2 3c695d7ba9
 Enter ".help" for usage hints.
 Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
-D 
+D
 ```
 
 <!-- markdownlint-enable MD040 -->
