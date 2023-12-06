@@ -136,7 +136,7 @@ con = duckdb.connect("./ouverture_maps-transportation.db")
 === "▶️ CLI”
 
 ```bash
-D .open ouverture_maps-transportation.db****
+D .open ouverture_maps-transportation.db
 ```
 
 ### Installer puis charger l’extension spatiale
@@ -152,7 +152,7 @@ con.sql("INSTALL spatial; LOAD spatial ; LOAD httpfs ;")
 ```bash
 D INSTALL spatial ;
 D LOAD spatial ;
-D LOAD httpfs ;****
+D LOAD httpfs ;
 ```
 
 ### Importer un CSV et créer la géométrie
@@ -164,7 +164,7 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
 ```python
 con.sql("CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;")
 con.sql("ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;")
-con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;") ****
+con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;") 
 ```
 
 === "▶ CLI”
@@ -172,7 +172,7 @@ con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;"
 ```bash
 D CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;
 D ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;
-D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ; ****
+D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ; 
 ```
 
 ### Traiter des données parquet d'Ouverture Maps avec DuckDB
