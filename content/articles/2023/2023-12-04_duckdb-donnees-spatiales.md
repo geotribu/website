@@ -295,6 +295,6 @@ WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile');
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/ffou.md"
 
 {% include "licenses/default.md" %}
