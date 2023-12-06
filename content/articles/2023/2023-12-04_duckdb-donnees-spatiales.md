@@ -7,7 +7,7 @@ categories:
 comments: true
 date: "2023-12-06 14:20"
 description: "Présentation de DuckDB et surtout de ses fonctions spatiales. Comment les exploiter et les mettres en liens avec des données parquet."
-image: 
+image:
 license: default
 robots: index, follow
 tags:
