@@ -5,28 +5,25 @@ authors:
 categories:
     - article
 comments: true
-date: "2023-12-06 14:20"
+date: "2023-12-19 14:20"
 description: "Présentation de DuckDB et surtout de ses fonctions spatiales. Comment les exploiter et les mettres en liens avec des données parquet."
 image:
 license: default
 robots: index, follow
 tags:
-    - duckdb
-    - spatial
     - database
+    - duckdb
+    - geoparquet
     - geos
     - parquet
-    - geoparquet
+    - spatial
 ---
 
 # DuckDB et les données spatiales
 
-:calendar: Date de publication initiale : 29 nomvembre 2021
+:calendar: Date de publication initiale : 19 décembre 2023
 
 ## Introduction
-
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
-{: align=middle }
 
 ![logo DuckDB](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/DuckDB_Logo.png){: .img-thumbnail-left }
 
@@ -82,7 +79,7 @@ De nombreux outils existent pour traiter et requêter ce type de fichier, parmi 
 
 Sur ce [répertoire Github](https://github.com/davidgasquez/awesome-duckdb) est maintenu une liste de projets, outils, ou ressource développée autour de DuckDB. Petit coup de ❤️ pour [Harlequin](https://harlequin.sh/), qui est un IDE pour terminal destiné à l’utilisation de DuckDB et simple d'installation.
 
-![screenshort harlequin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/harlequin.png)
+![screenshort harlequin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/harlequin.png){: .img-center }
 
 ## Exemple pratique
 
@@ -93,7 +90,7 @@ Sur ce [répertoire Github](https://github.com/davidgasquez/awesome-duckdb) est 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
 
-```
+```sh
 v0.9.2 3c695d7ba9
 Enter ".help" for usage hints.
 Connected to a transient in-memory database.
@@ -112,7 +109,7 @@ ou
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
 
-```
+```sh
 $ pip install duckdb
 ---> 100%
 Installing collected packages: duckdb
@@ -290,6 +287,9 @@ D. COPY (
  ) TO 'new_york_buildings.shp'
 WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile');
 ```
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 ----
 
