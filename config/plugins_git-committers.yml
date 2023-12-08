@@ -1,0 +1,10 @@
+git-committers:
+  enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS, false]
+  repository: geotribu/website
+  branch: master
+  docs_path: content/
+  cache_dir:
+    !ENV [
+      MKDOCS_PLUGIN_GIT_COMMITTERS_CACHE_DIR,
+      .cache/plugins/git-committers/,
+    ]
