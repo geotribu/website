@@ -61,42 +61,6 @@ plugins:
       tags_compare: !!python/name:material.plugins.tags.casefold
       tags_pages_compare: !!python/name:material.plugins.tags.page_url
   - termynal
-  - privacy:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
-      cache_dir:
-        !ENV [MKDOCS_PLUGIN_PRIVACY_EXTERNAL_CACHE_DIR, .cache/plugins/privacy]
-      links_attr_map:
-        target: _blank
-      assets_exclude:
-        # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
-        - cdn.jsdelivr.net/npm/mathjax@3/*
-        - giscus.app/*
-        # geotribu
-        - cdn.geotribu.fr/images/*
-        - cdn.geotribu.fr/img/*
-        - geotribu.net/*
-        - www.geotribu.net/*
-        - ks356007.kimsufi.com/*
-        # external
-        - baliz-geospatial.com/images/mediatheque/2008-08/*
-        - cdn.jsdelivr.net/**/*/twemoji*
-        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
-        - github.com/**/*.gif
-        - i.imgur.com/*
-        - raw.githubusercontent.com/*
-        - sondekla.com/buid/widget/*
-        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
-        - twemoji.maxcdn.com/*
-        - upload.wikimedia.org/*
-        - user-images.githubusercontent.com/**/*.gif
-        # to remove later:
-        - dev.openstreetmap.org/*
-        - www.portailsig.org/assets/images/*
-        - 88.191.39.115/*
-        - cdn.theatlanticcities.com/img/*
-        - boundlessgeo.com/*
-        - i3.codeplex.com/*
-        - drfhlmcehrc34.cloudfront.net/*
   - social:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
       cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
