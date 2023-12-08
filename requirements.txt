@@ -1,14 +1,9 @@
 -i https://pypi.org/simple
 
-# Common requirements
-# -----------------------
-setuptools
-wheel
-
 # Development
 # -----------------------
 geotribu>=0.29,<1
-pre-commit>=3,<3.6
+pre-commit>=3,<4
 
 # Project requirements
 # -----------------------
