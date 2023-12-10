@@ -29,6 +29,11 @@ tags:
 
 Si depuis quelques semaines, vous voyez passer beaucoup de chose sur des sujets comme DuckDB, les fichiers parquet ou encore les données d’Ouverture Maps, mais sans trop comprendre de quoi il s’agit, vous êtes au bon endroit !
 
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
+----
+
 ## DuckDB c’est quoi ?
 
 [DuckDB](https://duckdb.org/) est un SGBD (système de gestion de base de données) relationnel principalement écrit en C++ et [open source](https://github.com/duckdb/duckdb) publiée sous licence MIT. Le projet est assez récent, il a débuté en 2018, mais le projet vit beaucoup et les releases sont fréquentes, notamment grâce à une communauté très active (12 800 étoiles sur Github). Actuellement le projet est en version 0.9.1.
