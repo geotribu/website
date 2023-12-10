@@ -283,7 +283,7 @@ D. COPY (
  WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
 ```
 
-:bulb: Également possible d'exporter en Shapefile, pour cela il faut remplacer les deux dernières lignes par celles-ci :
+:bulb: Également possible d'exporter en Shapefile, pour cela, il faut remplacer les deux dernières lignes par celles-ci :
 
 ```sql
  ) TO 'new_york_buildings.shp'
