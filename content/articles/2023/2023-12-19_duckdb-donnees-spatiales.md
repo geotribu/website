@@ -115,9 +115,10 @@ Successfully installed duckdb-0.9.2
 
 <!-- markdownlint-enable MD040 -->
 
-<!-- markdownlint-disable MD046 -->
 
 ### Création d’une de données (ou l’ouvrir si elle existe déjà)
+
+<!-- markdownlint-disable MD046 -->
 
 === ":snake: Python”
 
