@@ -120,7 +120,6 @@ Successfully installed duckdb-0.9.2
 
 <!-- markdownlint-enable MD040 -->
 
-
 ### Création d’une de données (ou l’ouvrir si elle existe déjà)
 
 <!-- markdownlint-disable MD046 -->
