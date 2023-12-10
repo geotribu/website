@@ -241,7 +241,7 @@ D. CREATE TABLE buildings AS (
 #### Visualiser les données dans QGIS
 
 Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qduckdb/).
-:warning: Attention cette extension est encore expérimentales, il faut donc bien cocher ce paramètres dans le gestionnaire des extensions de QGIS.
+:warning: Attention, cette extension est encore expérimentale, il faut donc bien cocher ce paramètre dans le gestionnaire des extensions de QGIS.
 
 ![qduckdb](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/qduckdb.png)
 
