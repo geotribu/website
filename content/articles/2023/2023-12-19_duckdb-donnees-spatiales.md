@@ -99,9 +99,6 @@ D
 ```
 
 <!-- markdownlint-enable MD040 -->
-
-<!-- markdownlint-disable MD046 -->
-
 ou
 
 - Un environnement Python avec le [paquet duckdb](https://pypi.org/project/duckdb/) d’installer (DuckDB utilise de nombreuses dépendances, il est donc conseiller d’utiliser un environnement virtuel pour éviter les conflits de dépendances)
