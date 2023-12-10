@@ -289,6 +289,7 @@ D. COPY (
  ) TO 'new_york_buildings.shp'
 WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile');
 ```
+
 ----
 
 ## Auteur {: data-search-exclude }
