@@ -1,7 +1,7 @@
 ---
 title: "DuckDB et les données spatiales"
 authors:
-    - Florent FOUGERES
+    - Florent FOUGÈRES
 categories:
     - article
 comments: true
