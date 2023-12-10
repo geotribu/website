@@ -285,10 +285,6 @@ D. COPY (
  ) TO 'new_york_buildings.shp'
 WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile');
 ```
-
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
-{: align=middle }
-
 ----
 
 ## Auteur {: data-search-exclude }
