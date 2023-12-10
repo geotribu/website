@@ -27,7 +27,7 @@ tags:
 
 ![logo DuckDB](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/DuckDB_Logo.png){: .img-thumbnail-left }
 
-Si depuis quelques semaines, vous voyez passer beaucoup de chose sur des sujets comme DuckDB, les fichiers parquet ou encore les données d’Ouverture Maps, mais sans trop comprendre de quoi il s’agit, vous êtes au bon endroit !
+Si depuis quelques semaines, vous voyez passer beaucoup de choses sur des sujets comme DuckDB, les fichiers parquet ou encore les données d’Ouverture Maps, mais sans trop comprendre de quoi il s’agit, vous êtes au bon endroit !
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
