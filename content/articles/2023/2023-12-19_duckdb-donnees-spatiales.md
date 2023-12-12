@@ -142,17 +142,17 @@ Successfully installed duckdb-0.9.2
 
 === ":snake: Python”
 
-```python
-con.sql("INSTALL spatial; LOAD spatial ; LOAD httpfs ;")
-```
+    ```python
+    con.sql("INSTALL spatial; LOAD spatial ; LOAD httpfs ;")
+    ```
 
 === "▶️ CLI”
 
-```bash
-D INSTALL spatial ;
-D LOAD spatial ;
-D LOAD httpfs ;
-```
+    ```sh
+    D INSTALL spatial ;
+    D LOAD spatial ;
+    D LOAD httpfs ;
+    ```
 
 ### Importer un CSV et créer la géométrie
 
