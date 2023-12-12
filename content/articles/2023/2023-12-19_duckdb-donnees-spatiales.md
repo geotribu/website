@@ -134,9 +134,9 @@ Successfully installed duckdb-0.9.2
 
 === "▶️ CLI”
 
-```bash
-D .open ouverture_maps-transportation.db
-```
+    ```sh
+    D .open ouverture_maps-transportation.db
+    ```
 
 ### Installer puis charger l’extension spatiale
 
