@@ -7,7 +7,7 @@ categories:
 comments: true
 date: "2023-12-19 14:20"
 description: "Présentation de DuckDB et surtout de ses fonctions spatiales. Comment les exploiter et les mettres en liens avec des données parquet."
-image:
+image: https://cdn.icon-icons.com/icons2/3914/PNG/512/duckdb_logo_icon_248992.png
 license: default
 robots: index, follow
 tags:
@@ -36,9 +36,9 @@ Si depuis quelques semaines, vous voyez passer beaucoup de choses sur des sujets
 
 ## DuckDB c’est quoi ?
 
-[DuckDB](https://duckdb.org/) est un SGBD (système de gestion de base de données) relationnel principalement écrit en C++ et [open source](https://github.com/duckdb/duckdb) publié sous licence MIT. Le projet est assez récent, il a débuté en 2018, mais le projet vit beaucoup et les releases sont fréquentes, notamment grâce à une communauté très active (12 800 étoiles sur Github). Actuellement le projet est en version 0.9.1.
+[DuckDB](https://duckdb.org/) est un SGBD (système de gestion de base de données) relationnel principalement écrit en C++ et [open source](https://github.com/duckdb/duckdb) publié sous licence MIT. Le projet est assez récent, il a débuté en 2018, mais le projet vit beaucoup et les releases sont fréquentes, notamment grâce à une communauté très active (13 300 étoiles sur Github en date du 09/12/2023). Actuellement, le projet est en version 0.9.2.
 
-La particularité de ce système de base de données est qu'à l’instar des bases SQLite ou GeoPackage, les bases de données sont des fichiers portables. Ce qui permet un échange simplifié. Cependant, un des inconvénients à ce jour est le non-support de la rétrocompatibilité des bases entre les versions de DuckDB. Exemple, si quelqu’un me donne une base construite avec DuckDB 0.8.0 et que je dispose des outils de la dernière version, à savoir 0.9.1, je ne pourrais pas lire et utiliser cette base de données.
+La particularité de ce système de base de données est qu'à l’instar des bases GeoPackage, File GeoDatabe d'ESRI ou encore Access MDB, les bases de données sont des fichiers portables. Ce qui permet un échange simplifié. Cependant, un des inconvénients à ce jour est le non-support de la rétrocompatibilité des bases entre les versions de DuckDB. Exemple, si quelqu’un me donne une base construite avec DuckDB 0.8.0 et que je dispose des outils de la dernière version, à savoir 0.9.2, je ne pourrais pas lire et utiliser cette base de données.
 
 ## Les performances
 
