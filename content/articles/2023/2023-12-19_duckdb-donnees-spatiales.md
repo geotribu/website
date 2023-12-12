@@ -126,11 +126,11 @@ Successfully installed duckdb-0.9.2
 
 === ":snake: Python”
 
-```python
-import duckdb
-
-con = duckdb.connect("./ouverture_maps-transportation.db")
-```
+    ```python
+    import duckdb
+    
+    con = duckdb.connect("./ouverture_maps-transportation.db")
+    ```
 
 === "▶️ CLI”
 
