@@ -42,7 +42,7 @@ La particularité de ce système de base de données est qu'à l’instar des ba
 
 ## Les performances
 
-Au niveau des performances, DuckDB est particulièrement adapté pour traiter avec une grande efficacité les gros volumes de données. La ou DuckDB se démarque, c’est que contrairement au système de base de données connu comme PostgreSQL ou MySQL qui ont un système de traitement par ligne, DuckDB utilise un système d’architecture en colonne et donc selon [le site officiel de DuckDB](https://duckdb.org/why_duckdb.html#duckdbisfast) :
+Au niveau des performances, DuckDB est particulièrement adapté pour traiter avec une grande efficacité les gros volumes de données. Au niveau des performances, DuckDB est particulièrement adapté pour traiter avec une grande efficacité les gros volumes de données. DuckDB se distingue par son approche différente : contrairement à des systèmes de base de données tels que PostgreSQL ou MySQL qui adoptent un traitement par ligne, DuckDB repose sur une architecture en colonne. Selon [le site officiel de DuckDB](https://duckdb.org/why_duckdb.html#duckdbisfast) :
 
 > “Un grand lot de valeurs est traité en une seule opération”
 
