@@ -27,7 +27,7 @@ tags:
 
 ![logo DuckDB](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/DuckDB_Logo.png){: .img-thumbnail-left }
 
-Si depuis quelques semaines, vous voyez passer beaucoup de choses sur des sujets comme DuckDB, les fichiers parquet ou encore les données d’Ouverture Maps, mais sans trop comprendre de quoi il s’agit, vous êtes au bon endroit !
+Si depuis quelques semaines, vous voyez passer beaucoup de choses sur des sujets comme DuckDB, les fichiers parquet ou encore les données d’Overture Maps, mais sans trop comprendre de quoi il s’agit, vous êtes au bon endroit !
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -129,13 +129,13 @@ Successfully installed duckdb-0.9.2
     ```python
     import duckdb
 
-    con = duckdb.connect("./ouverture_maps-transportation.db")
+    con = duckdb.connect("./overture_maps-transportation.db")
     ```
 
 === ":material-console: CLI”
 
     ```sh
-    D .open ouverture_maps-transportation.db
+    D .open overture_maps-transportation.db
     ```
 
 ### Installer puis charger l’extension spatiale
@@ -174,9 +174,9 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
     D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;
     ```
 
-### Traiter des données parquet d'Ouverture Maps avec DuckDB
+### Traiter des données parquet d'Overture Maps avec DuckDB
 
-Les données d’Ouverture Maps sont fournies sous forme de fichier parquet ([décrites ici](https://github.com/OvertureMaps/data#data-release-feedback)), nous allons donc importer ces données dans une base pour les consulter.
+Les données d’Overture Maps sont fournies sous forme de fichier parquet ([décrites ici](https://github.com/OvertureMaps/data#data-release-feedback)), nous allons donc importer ces données dans une base pour les consulter.
 
 #### Importer les données dans la base
 
