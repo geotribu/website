@@ -44,7 +44,7 @@ La particularité de ce système de base de données est qu'à l’instar des ba
 
 Au niveau des performances, DuckDB est particulièrement adapté pour traiter avec une grande efficacité les gros volumes de données. Au niveau des performances, DuckDB est particulièrement adapté pour traiter avec une grande efficacité les gros volumes de données. DuckDB se distingue par son approche différente : contrairement à des systèmes de base de données tels que PostgreSQL ou MySQL qui adoptent un traitement par ligne, DuckDB repose sur une architecture en colonne. Selon [le site officiel de DuckDB](https://duckdb.org/why_duckdb.html#duckdbisfast) :
 
-> “Un grand lot de valeurs est traité en une seule opération”
+> “Un grand lot de valeurs est traité en une seule opération"
 
 Concrètement, cela permet donc de traiter uniquement les colonnes utiles à la requête, et ainsi accélérer le temps de réponse.
 
@@ -126,7 +126,7 @@ Successfully installed duckdb-0.9.2
 
 <!-- markdownlint-disable MD046 -->
 
-=== ":snake: Python”
+=== ":snake: Python"
 
     ```python
     import duckdb
@@ -134,7 +134,7 @@ Successfully installed duckdb-0.9.2
     con = duckdb.connect("./overture_maps-transportation.db")
     ```
 
-=== ":material-console: CLI”
+=== ":material-console: CLI"
 
     ```sh
     D .open overture_maps-transportation.db
@@ -142,13 +142,13 @@ Successfully installed duckdb-0.9.2
 
 ### Installer puis charger l’extension spatiale
 
-=== ":snake: Python”
+=== ":snake: Python"
 
     ```python
     con.sql("INSTALL spatial; LOAD spatial ; LOAD httpfs ;")
     ```
 
-=== ":material-console: CLI”
+=== ":material-console: CLI"
 
     ```sh
     D INSTALL spatial ;
@@ -160,7 +160,7 @@ Successfully installed duckdb-0.9.2
 
 La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à créer la table au préalable. Cette fonction détecte automatiquement la structure du CSV.
 
-=== ":snake: Python”
+=== ":snake: Python"
 
     ```python
     con.sql("CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;")
@@ -168,7 +168,7 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
     con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;")
     ```
 
-=== ":material-console: CLI”
+=== ":material-console: CLI"
 
     ```sh
     D CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;
@@ -184,7 +184,7 @@ Les données d’Overture Maps sont fournies sous forme de fichier parquet ([dé
 
 Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minute de traitement chez moi.
 
-=== ":snake: Python”
+=== ":snake: Python"
 
     ```python
     query_buildings = ("CREATE TABLE buildings AS ( "  
@@ -197,7 +197,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
     con.sql(query_admins)
     ```
 
-=== ":material-console: CLI”
+=== ":material-console: CLI"
 
     ```sh
     D. CREATE TABLE buildings AS (  
@@ -211,7 +211,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
 
 Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan en indiquant les coordonnées d’un rectangle (attention requête assez longue)
 
-=== ":snake: Python”
+=== ":snake: Python"
 
     ```python
     query_buildings = ("CREATE TABLE buildings AS ( "  
@@ -227,7 +227,7 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan
     con.sql(query_admins)
     ```
 
-=== ":material-console: CLI”
+=== ":material-console: CLI"
 
     ```sh
     D. CREATE TABLE buildings AS (  
@@ -252,7 +252,7 @@ Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qd
 
 Un des atouts de DuckDB n'est pas seulement d’intégrer des données pour les traiter dans la base. Mais, cela peut servir d’outils de conversion pour des données parquets. Exemple, on me donne des données en parquet. Pourtant, je souhaite les avoir en GeoJSON. Grâce à DuckDB, on peut les convertir sans créer de table ni de base.
 
-=== ":snake: Python”
+=== ":snake: Python"
 
     ```python
     query_export_buildings = ("COPY ( "  
@@ -270,7 +270,7 @@ Un des atouts de DuckDB n'est pas seulement d’intégrer des données pour les 
     con.sql(query_export_buildings)
     ```
 
-=== ":material-console: CLI”
+=== ":material-console: CLI"
 
     ```sh
     D. COPY (
