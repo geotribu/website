@@ -1,23 +1,22 @@
 ---
-title: "DuckDB et les données spatiales"
+title: DuckDB et les données spatiales
 authors:
     - Florent FOUGÈRES
 categories:
     - article
 comments: true
 date: "2023-12-19 14:20"
-description: "Présentation de DuckDB et surtout de ses fonctions spatiales. Comment les exploiter et les mettres en liens avec des données parquet."
+description: Présentation de DuckDB et surtout de ses fonctions spatiales. Comment les exploiter et les mettre en lien avec des données (géo)parquet.
 icon: simple/duckdb
 image:
 license: default
 robots: index, follow
 tags:
-    - database
-    - duckdb
+    - base de données
+    - DuckDB
     - geoparquet
     - geos
     - parquet
-    - spatial
 ---
 
 # DuckDB et les données spatiales
@@ -133,7 +132,7 @@ Successfully installed duckdb-0.9.2
     con = duckdb.connect("./ouverture_maps-transportation.db")
     ```
 
-=== "▶️ CLI”
+=== ":material-console: CLI”
 
     ```sh
     D .open ouverture_maps-transportation.db
@@ -147,7 +146,7 @@ Successfully installed duckdb-0.9.2
     con.sql("INSTALL spatial; LOAD spatial ; LOAD httpfs ;")
     ```
 
-=== "▶️ CLI”
+=== ":material-console: CLI”
 
     ```sh
     D INSTALL spatial ;
@@ -167,7 +166,7 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
     con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;")
     ```
 
-=== "▶ CLI”
+=== ":material-console: CLI”
 
     ```sh
     D CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;
@@ -196,7 +195,7 @@ query_buildings = ("CREATE TABLE buildings AS ( "
 con.sql(query_admins)
 ```
 
-=== "▶️ CLI”
+=== ":material-console: CLI”
 
 ```bash
 D. CREATE TABLE buildings AS (  
@@ -225,7 +224,7 @@ query_buildings = ("CREATE TABLE buildings AS ( "
 con.sql(query_admins)
 ```
 
-=== "▶️ CLI”
+=== ":material-console: CLI”
 
 ```bash
 D. CREATE TABLE buildings AS (  
@@ -268,7 +267,7 @@ query_export_buildings = ("COPY ( "
 con.sql(query_export_buildings)
 ```
 
-=== "▶️ CLI”
+=== ":material-console: CLI”
 
 ```bash
 D. COPY (
