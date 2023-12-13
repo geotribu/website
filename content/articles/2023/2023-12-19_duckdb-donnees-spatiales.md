@@ -46,19 +46,19 @@ Au niveau des performances, DuckDB est particulièrement adapté pour traiter av
 
 > “Un grand lot de valeurs est traité en une seule opération”
 
-Concrètement, cela permet donc de traiter uniquement les colonnes utiles à la requête et donc d’accélérer le temps de réponse.
+Concrètement, cela permet donc de traiter uniquement les colonnes utiles à la requête, et ainsi accélérer le temps de réponse.
 
 ## Comment l’utiliser
 
 Tout d’abord le support est multi-plateforme, ce que je vais dire est valable pour Windows, Linux et MacOS. DuckDB est utilisable de plusieurs façons et [les installations sont bien documentées](https://duckdb.org/docs/installation/). Il y a tout d’abord un CLI si vous êtes un adepte du terminal. Mais également de nombreux langages parmi lesquelles Python, C++, R, Node.js ou encore Rust. Si vous n’êtes pas très familier avec ces environnements et que vous êtes plus à l’aise avec les gestionnaires de base de données avec interface graphique, [DBeaver](https://dbeaver.io/) propose le [support](https://duckdb.org/docs/guides/sql_editors/dbeaver.html) des bases de données DuckDB.
 
-Bien sûr, au-delà de la manière donc vous utilisez DuckDB, le langage pour utiliser DuckDB est le SQL. Dans la suite dans cet article, lors des exemples pratiques, je détaillerais les commandes en utilisant le CLI ou bien le paquet Python.
+Bien sûr, au-delà de la manière dont vous utilisez DuckDB, le langage pour utiliser DuckDB est le SQL. Dans la suite de cet article, lors des exemples pratiques, je détaillerais les commandes en utilisant le CLI ou bien le paquet Python.
 
 ## Les fonctions spatiales
 
 Les fonctions spatiales de DuckDB sont une [extension](https://duckdb.org/docs/extensions/spatial.html). La plupart des fonctions spatiales sont issues de la librairie [GEOS](https://libgeos.org/). Néanmoins, toutes ne sont pas implémentées nativement dans le cœur de DuckDB. Si vous êtes un habitué des fonctions spatiales de PostGIS vous ne serez pas dépaysé en utilisant les fonctions spatiales du canard, la syntaxe et le nom des fonctions est extrêmement proche.
 
-Une bonne soixantaine de fonctions spatiales sont disponibles parmi par exemple la star de la jointure spatiale `ST_Intersects(GEOMETRY, GEOMETRY)`
+Une bonne soixantaine de fonctions spatiales sont disponibles, parmi, par exemple, la star de la jointure spatiale `ST_Intersects(GEOMETRY, GEOMETRY)`
 
 Ces fonctions spatiales ne sont donc pas nativement présentes. Il faut donc la première fois faire un `INSTALL spatial` pour installer cette extension. Pour faire une analogie assez connue du monde de la géomatique (ou des sigistes à votre guise) c’est un peu l’équivalent d’un `CREATE EXTENSION postgis`dans PostgreSQL pour obtenir l’extension spatial PostGIS.
 
@@ -76,9 +76,9 @@ Il y a quand même un hic à tout ça, à l’heure où j’écris ces lignes (p
 
 ## Les fichiers parquet, c'est quoi ?
 
-[Parquet](https://parquet.apache.org/) est un format de fichier open source poussé par la fondation Apache créé en juillet 2013. Et qui a la particularité de pouvoir stocker avec une grande efficacité des données en utilisant une architecture en colonne (tiens tiens cette histoire de colonne, ça ne vous dit pas quelque chose ?). Il est notamment utilisé pour des données “big data” … Les “parquet file” comme ils sont souvent nommés sur la toile ne sont que des fichiers utilisés pour s’échanger des données, ce n’est pas sûr lequel on va travailler.
+[Parquet](https://parquet.apache.org/) est un format de fichier open source poussé par la fondation Apache, créé en juillet 2013, qui a la particularité de pouvoir stocker avec une grande efficacité des données. Il utilise… une architecture en colonne. Tiens, tiens, cette histoire de colonne, ça ne vous dit pas quelque chose ? Il est notamment utilisé pour des données « big data »… Les « parquet files », comme ils sont souvent nommés sur la toile, sont uniquement des fichiers utilisés pour s’échanger des données et non pour travailler dessus.
 
-De nombreux outils existent pour traiter et requêter ce type de fichier, parmi un est particulièrement performant, et devinez quoi, il s’agit de DuckDB (quelle surprise hein ?)
+De nombreux outils existent pour traiter et requêter ce type de fichier, parmi lesquels un est particulièrement performant, et devinez quoi, il s’agit de DuckDB (quelle surprise hein ?)
 
 ## Pour aller plus loin
 
@@ -90,7 +90,7 @@ Sur ce [répertoire Github](https://github.com/davidgasquez/awesome-duckdb) est 
 
 ### Pré requis
 
-- L’exécutable DuckDB pour utiliser le CLI
+- L’exécutable DuckDB pour utiliser la CLI :
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
@@ -120,7 +120,7 @@ Successfully installed duckdb-0.9.2
 
 <!-- markdownlint-enable MD040 -->
 
-### Création d’une de données (ou l’ouvrir si elle existe déjà)
+### Création d’une de données, ou l’ouvrir si elle existe déjà
 
 <!-- markdownlint-disable MD046 -->
 
@@ -156,7 +156,7 @@ Successfully installed duckdb-0.9.2
 
 ### Importer un CSV et créer la géométrie
 
-La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à créer la table au préalable, cette fonction détecte automatiquement la structure du CSV.
+La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à créer la table au préalable. Cette fonction détecte automatiquement la structure du CSV.
 
 === ":snake: Python”
 
@@ -180,7 +180,7 @@ Les données d’Ouverture Maps sont fournies sous forme de fichier parquet ([d�
 
 #### Importer les données dans la base
 
-Dans cet exemple on récupère 100 bâtiments aléatoirement (environ 1 minute de traitement chez moi)
+Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minute de traitement chez moi.
 
 === ":snake: Python”
 
@@ -247,7 +247,7 @@ Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qd
 
 #### Convertir les données en un GeoJSON en utilisant DuckDB
 
-Un des atouts de DuckDB n'est pas seulement d’intégrer des données pour les traiter dans la base. Mais cela peut servir d’outils de conversion pour des données parquets. Exemple, on me donne des données en parquet, mais je souhaite les avoirs en GeoJSON, on peut les convertir sans créer de table ni de base.
+Un des atouts de DuckDB n'est pas seulement d’intégrer des données pour les traiter dans la base. Mais, cela peut servir d’outils de conversion pour des données parquets. Exemple, on me donne des données en parquet. Pourtant, je souhaite les avoir en GeoJSON. Grâce à DuckDB, on peut les convertir sans créer de table ni de base.
 
 === ":snake: Python”
 
