@@ -120,7 +120,7 @@ Successfully installed duckdb-0.9.2
 
 <!-- markdownlint-enable MD040 -->
 
-### Création d’une de données, ou l’ouvrir si elle existe déjà
+### Création d’une base de données, ou l’ouvrir si elle existe déjà
 
 <!-- markdownlint-disable MD046 -->
 
@@ -197,7 +197,7 @@ con.sql(query_admins)
 
 === ":material-console: CLI”
 
-```bash
+```sh
 D. CREATE TABLE buildings AS (  
  SELECT type, version, CAST(updatetime as varchar) as updateTime,
  height, numfloors as numFloors, level, class,
@@ -226,7 +226,7 @@ con.sql(query_admins)
 
 === ":material-console: CLI”
 
-```bash
+```sh
 D. CREATE TABLE buildings AS (  
  SELECT type, version, CAST(updatetime as varchar) as updateTime,
  height, numfloors as numFloors, level, class,
@@ -269,7 +269,7 @@ con.sql(query_export_buildings)
 
 === ":material-console: CLI”
 
-```bash
+```sh
 D. COPY (
  SELECT type, version, CAST(updatetime as varchar) as updateTime,
  height, numfloors as numFloors, level, class,
