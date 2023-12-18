@@ -76,7 +76,9 @@ Il faut définir manuellement (et avec rigueur) vos projections en dehors de Duc
 
 ## Les fichiers parquet, c'est quoi ?
 
-[Parquet](https://parquet.apache.org/) est un format de fichier open source poussé par la fondation Apache, créé en juillet 2013, qui a la particularité de pouvoir stocker avec une grande efficacité des données. Il utilise… une architecture en colonne. Tiens, tiens, cette histoire de colonne, ça ne vous dit pas quelque chose ? Il est notamment utilisé pour des données « big data »… Les « parquet files », comme ils sont souvent nommés sur la toile, sont uniquement des fichiers utilisés pour s’échanger des données et non pour travailler dessus.
+![logo Parquet](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/parquet.png){: .img-thumbnail-left }
+
+[Parquet](https://parquet.apache.org/) est un format de fichier open source poussé par la fondation Apache depuis 2013, qui a la particularité de stocker des données avec efficacité... via une architecture en colonne 😉. Il est notamment utilisé pour le big data. À la base, ces « parquet files » étaient utilisés pour l'échange de données et non pour travailler dessus mais les schémas de compression et de codage de données qu'ils mobilisent les rendent très performants pour la gestion massive de données complexes.
 
 ## Pour aller plus loin
 
