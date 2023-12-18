@@ -36,15 +36,13 @@ Si depuis quelques semaines, vous voyez passer beaucoup de choses sur des sujets
 
 ## DuckDB c’est quoi ?
 
-[DuckDB](https://duckdb.org/) est un SGBD (système de gestion de base de données) relationnel principalement écrit en C++ et [open source](https://github.com/duckdb/duckdb) publié sous[ licence MIT](https://fr.wikipedia.org/wiki/Licence_MIT). Le projet a débuté en 2018 et vit beaucoup. Il fait l'objet de releases fréquentes (13 300 étoiles sur GitHub le 09/12/23) et en est à la version 0.9.2.
+[DuckDB](https://duckdb.org/) est un SGBD (système de gestion de base de données) relationnel principalement écrit en C++ et [open source](https://github.com/duckdb/duckdb) publié sous[licence MIT](https://fr.wikipedia.org/wiki/Licence_MIT). Le projet a débuté en 2018 et vit beaucoup. Il fait l'objet de releases fréquentes (13 300 étoiles sur GitHub le 09/12/23) et en est à la version 0.9.2.
 
 Ce SGBD a la particularité d'être sous forme de fichier portable (comme les bases GeoPackage, File GeoDatabase d'ESRI ou encore Access MDB) ce qui simplifie les échanges. Cette portabilité présente cependant un défaut : la non rétrocompatibilité entre les différentes versions de DuckDB : un fichiers produit avec une version de DuckDB ne peut actuellement pas être lu avec une autre version de DuckDB.
 
 ## Les performances
 
 Au niveau des performances, DuckDB est particulièrement adapté au traitement des gros volumes de données. Son architecture diffère d'ailleurs sensiblement de SGBDs comme PostgreSQL ou MySQL qui attaquent majoritairement les données par ligne, car DuckDB traite les données en colonnes. La finalité permise : un grand lot de valeurs est traité en une seule opération rapporte le [le site officiel de DuckDB](https://duckdb.org/why_duckdb.html#duckdbisfast) : on traite seulement les colonnes utiles à la requête et cela optimise et accélère le temps de réponse.
-
-
 
 ## Comment l’utiliser
 
@@ -60,7 +58,6 @@ On retrouve ainsi une bonne soixantaine de fonctions dont la star de la jointure
 
 Ces fonctions ne sont donc pas natives mais s'implémentent avec un simple INSTALL spatial, qui équivaut (coucou les géomaticien.ne.s) à un CREATE EXTENSION postgis pour obtenir l’extension spatial PostGIS dans PostgreSQL. À chaque utilisation, cette extension s'appelle par la commande LOAD spatial.
 
-
 ## Les formats de données spatiales pris en charge
 
 Au niveau des formats de données spatiales, beaucoup de choix également. Une cinquantaine sont supportés en lecture ou import dont les classiques Shapefile, GeoJSON, GPX ou encore KML, ainsi quedes formats de base de données spatiales comme Spatialite ou GeoPackage. Enfin, pour les OSM addicts, en mode expérimental, DuckDB est capable de lire et intégrer des fichiers [PBF](https://wiki.openstreetmap.org/wiki/PBF_Format) (.osm.pbf) via une fonction nommée ST_ReadOSM().
@@ -69,9 +66,10 @@ Au niveau des formats de données spatiales, beaucoup de choix également. Une c
 
 Une des particularités des colonnes de géométrie sur DuckDB spatial est l'absence de définition du type de géométrie (contrairement à PostGIS par exemple). Une même colonne de géométrie contiendra aussi bien des points, des lignes, des polygones, etc.
 
-Il y a quand même un hic dans tout ça : les projections ne sont pas gérables dans la version actuelle de DuckDB, donc : 
-- pas de définition de projection comme contrainte pour une colonne 
-- pas de fonction de reprojection 
+Il y a quand même un hic dans tout ça : les projections ne sont pas gérables dans la version actuelle de DuckDB, donc :
+
+- pas de définition de projection comme contrainte pour une colonne
+- pas de fonction de reprojection
 - pas d'attribution d'une projection lors d'un export
 
 Il faut définir manuellement (et avec rigueur) vos projections en dehors de DuckDB car il ne les différencie pas. Si cette réflexion tombe sous le sens du point de vue "administrateur de données", les utilisateurs moins avertis peuvent avoir quelques surprises en mélangeant des projections.
@@ -79,7 +77,6 @@ Il faut définir manuellement (et avec rigueur) vos projections en dehors de Duc
 ## Les fichiers parquet, c'est quoi ?
 
 [Parquet](https://parquet.apache.org/) est un format de fichier open source poussé par la fondation Apache, créé en juillet 2013, qui a la particularité de pouvoir stocker avec une grande efficacité des données. Il utilise… une architecture en colonne. Tiens, tiens, cette histoire de colonne, ça ne vous dit pas quelque chose ? Il est notamment utilisé pour des données « big data »… Les « parquet files », comme ils sont souvent nommés sur la toile, sont uniquement des fichiers utilisés pour s’échanger des données et non pour travailler dessus.
-
 
 ## Pour aller plus loin
 
