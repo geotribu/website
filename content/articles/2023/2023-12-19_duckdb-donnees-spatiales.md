@@ -25,7 +25,7 @@ tags:
 
 ## Introduction
 
-![logo DuckDB](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/DuckDB_Logo.png){: .img-thumbnail-left }
+![logo DuckDB](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/duckdb.png){: .img-thumbnail-left }
 
 Si depuis quelques semaines, vous voyez passer beaucoup de choses sur des sujets comme DuckDB, les fichiers parquet ou encore les données d’Overture Maps, mais sans trop comprendre de quoi il s’agit, vous êtes au bon endroit !
 
@@ -36,49 +36,50 @@ Si depuis quelques semaines, vous voyez passer beaucoup de choses sur des sujets
 
 ## DuckDB c’est quoi ?
 
-[DuckDB](https://duckdb.org/) est un SGBD (système de gestion de base de données) relationnel principalement écrit en C++ et [open source](https://github.com/duckdb/duckdb) publié sous licence MIT. Le projet est assez récent, il a débuté en 2018, mais le projet vit beaucoup et les releases sont fréquentes, notamment grâce à une communauté très active (13 300 étoiles sur Github en date du 09/12/2023). Actuellement, le projet est en version 0.9.2.
+[DuckDB](https://duckdb.org/) est un SGBD (système de gestion de base de données) relationnel principalement écrit en C++ et [open source](https://github.com/duckdb/duckdb) publié sous[ licence MIT](https://fr.wikipedia.org/wiki/Licence_MIT). Le projet a débuté en 2018 et vit beaucoup. Il fait l'objet de releases fréquentes (13 300 étoiles sur GitHub le 09/12/23) et en est à la version 0.9.2.
 
-La particularité de ce système de base de données est qu'à l’instar des bases GeoPackage, File GeoDatabe d'ESRI ou encore Access MDB, les bases de données sont des fichiers portables. Ce qui permet un échange simplifié. Cependant, un des inconvénients à ce jour est le non-support de la rétrocompatibilité des bases entre les versions de DuckDB. Exemple, si quelqu’un me donne une base construite avec DuckDB 0.8.0 et que je dispose des outils de la dernière version, à savoir 0.9.2, je ne pourrais pas lire et utiliser cette base de données.
+Ce SGBD a la particularité d'être sous forme de fichier portable (comme les bases GeoPackage, File GeoDatabase d'ESRI ou encore Access MDB) ce qui simplifie les échanges. Cette portabilité présente cependant un défaut : la non rétrocompatibilité entre les différentes versions de DuckDB : un fichiers produit avec une version de DuckDB ne peut actuellement pas être lu avec une autre version de DuckDB.
 
 ## Les performances
 
-Au niveau des performances, DuckDB est particulièrement adapté pour traiter avec une grande efficacité les gros volumes de données. Au niveau des performances, DuckDB est particulièrement adapté pour traiter avec une grande efficacité les gros volumes de données. DuckDB se distingue par son approche différente : contrairement à des systèmes de base de données tels que PostgreSQL ou MySQL qui adoptent un traitement par ligne, DuckDB repose sur une architecture en colonne. Selon [le site officiel de DuckDB](https://duckdb.org/why_duckdb.html#duckdbisfast) :
+Au niveau des performances, DuckDB est particulièrement adapté au traitement des gros volumes de données. Son architecture diffère d'ailleurs sensiblement de SGBDs comme PostgreSQL ou MySQL qui attaquent majoritairement les données par ligne, car DuckDB traite les données en colonnes. La finalité permise : un grand lot de valeurs est traité en une seule opération rapporte le [le site officiel de DuckDB](https://duckdb.org/why_duckdb.html#duckdbisfast) : on traite seulement les colonnes utiles à la requête et cela optimise et accélère le temps de réponse.
 
-> “Un grand lot de valeurs est traité en une seule opération"
 
-Concrètement, cela permet donc de traiter uniquement les colonnes utiles à la requête, et ainsi accélérer le temps de réponse.
 
 ## Comment l’utiliser
 
-Tout d’abord le support est multi-plateforme, ce que je vais dire est valable pour Windows, Linux et MacOS. DuckDB est utilisable de plusieurs façons et [les installations sont bien documentées](https://duckdb.org/docs/installation/). Il y a tout d’abord un CLI si vous êtes un adepte du terminal. Mais également de nombreux langages parmi lesquelles Python, C++, R, Node.js ou encore Rust. Si vous n’êtes pas très familier avec ces environnements et que vous êtes plus à l’aise avec les gestionnaires de base de données avec interface graphique, [DBeaver](https://dbeaver.io/) propose le [support](https://duckdb.org/docs/guides/sql_editors/dbeaver.html) des bases de données DuckDB.
+Le support est multi-plateforme (Windows, Linux et MacOS) et DuckDB est utilisable de plusieurs façons via [des installations bien documentées](https://duckdb.org/docs/installation/). Il y a un CLI si vous êtes un adepte du terminal, et de nombreux langages peuvent l'utiliser (parmi lesquels Python, C++, R, Node.js ou encore Rust). Si vous êtes plus à l’aise avec les gestionnaires de base de données avec interface graphique, [DBeaver](https://dbeaver.io/) propose lui aussi le [support](https://duckdb.org/docs/guides/sql_editors/dbeaver.html) des bases de données DuckDB.
 
-Bien sûr, au-delà de la manière dont vous utilisez DuckDB, le langage pour utiliser DuckDB est le SQL. Dans la suite de cet article, lors des exemples pratiques, je détaillerais les commandes en utilisant le CLI ou bien le paquet Python.
+Enfin, indépendamment du client de votre choix, DuckDB fonctionne en SQL. Dans la suite de cet article, mes exemples reposeront sur des commandes en utilisant le CLI ou le paquet Python.
 
 ## Les fonctions spatiales
 
-Les fonctions spatiales de DuckDB sont une [extension](https://duckdb.org/docs/extensions/spatial.html). La plupart des fonctions spatiales sont issues de la librairie [GEOS](https://libgeos.org/). Néanmoins, toutes ne sont pas implémentées nativement dans le cœur de DuckDB. Si vous êtes un habitué des fonctions spatiales de PostGIS vous ne serez pas dépaysé en utilisant les fonctions spatiales du canard, la syntaxe et le nom des fonctions est extrêmement proche.
+Les fonctions spatiales de DuckDB sont rassemblées dans une [extension](https://duckdb.org/docs/extensions/spatial.html), et sont pour la plupart issues de la librairie [GEOS](https://libgeos.org/). Néanmoins, toutes ne sont pas implémentées nativement dans le cœur de DuckDB. Si vous êtes un habitué des fonctions spatiales de PostGIS vous ne serez pas dépaysé en utilisant les fonctions spatiales du canard, la syntaxe et le nom des fonctions est extrêmement proche.
 
-Une bonne soixantaine de fonctions spatiales sont disponibles, parmi, par exemple, la star de la jointure spatiale `ST_Intersects(GEOMETRY, GEOMETRY)`
+On retrouve ainsi une bonne soixantaine de fonctions dont la star de la jointure spatiale ST_Intersects(GEOMETRY, GEOMETRY)
 
-Ces fonctions spatiales ne sont donc pas nativement présentes. Il faut donc la première fois faire un `INSTALL spatial` pour installer cette extension. Pour faire une analogie assez connue du monde de la géomatique (ou des sigistes à votre guise) c’est un peu l’équivalent d’un `CREATE EXTENSION postgis`dans PostgreSQL pour obtenir l’extension spatial PostGIS.
+Ces fonctions ne sont donc pas natives mais s'implémentent avec un simple INSTALL spatial, qui équivaut (coucou les géomaticien.ne.s) à un CREATE EXTENSION postgis pour obtenir l’extension spatial PostGIS dans PostgreSQL. À chaque utilisation, cette extension s'appelle par la commande LOAD spatial.
 
-Puis lors de chaque utilisation sur une base de données, il faut charger cette extension via un `LOAD spatial`
 
 ## Les formats de données spatiales pris en charge
 
-Au niveau des formats, là aussi, il y a du choix. Une cinquantaine de formats sont supportés pour lire ou importer des données spatiales. On trouve par exemple les classiques Shapefile, GeoJSON, GPX ou encore KML. Mais aussi des formats de base de données spatiales comme Spatialite ou GeoPackage. Pour finir sur les formats, si vous êtes un OSM addict, le support est encore en mode expérimental, mais DuckDB est capable de lire et intégrer des fichiers [PBF](https://wiki.openstreetmap.org/wiki/PBF_Format) (`.osm.pbf`) via une fonction nommée `ST_ReadOSM()`.
+Au niveau des formats de données spatiales, beaucoup de choix également. Une cinquantaine sont supportés en lecture ou import dont les classiques Shapefile, GeoJSON, GPX ou encore KML, ainsi quedes formats de base de données spatiales comme Spatialite ou GeoPackage. Enfin, pour les OSM addicts, en mode expérimental, DuckDB est capable de lire et intégrer des fichiers [PBF](https://wiki.openstreetmap.org/wiki/PBF_Format) (.osm.pbf) via une fonction nommée ST_ReadOSM().
 
-## Les colonnes de géométries
+## Les colonnes de géométries et la non prise en charge des projections
 
-Une des particularités de colonne de géométrie sur DuckDB spatial, est qu’une colonne n’a pas de type de géométrie défini (comme sur PostGIS par exemple). Une même colonne de géométrie peut contenir aussi bien des points, des lignes, des polygones, etc..
+Une des particularités des colonnes de géométrie sur DuckDB spatial est l'absence de définition du type de géométrie (contrairement à PostGIS par exemple). Une même colonne de géométrie contiendra aussi bien des points, des lignes, des polygones, etc.
 
-Il y a quand même un hic à tout ça, à l’heure où j’écris ces lignes (peut-être que cela sera prochainement implémenté), il n'est pas possible de définir une projection comme contrainte pour une colonne. Il n’y a donc pas de fonction de reprojection. Et lors de l’export d’une couche géographique, cette couche ne portera pas de projection. Lors d’une lecture dans un SIG, QGIS par exemple, il faudra définir manuellement la projection de votre couche. Cela implique une certaine rigueur, car toutes vos données de la table devront donc être dans la même projection. Même si cette réflexion tombe sous le sens du point de vue "administrateur de données", les utilisateurs moins avertis peuvent avoir quelques surprises en mélangeant des projections.
+Il y a quand même un hic dans tout ça : les projections ne sont pas gérables dans la version actuelle de DuckDB, donc : 
+- pas de définition de projection comme contrainte pour une colonne 
+- pas de fonction de reprojection 
+- pas d'attribution d'une projection lors d'un export
+
+Il faut définir manuellement (et avec rigueur) vos projections en dehors de DuckDB car il ne les différencie pas. Si cette réflexion tombe sous le sens du point de vue "administrateur de données", les utilisateurs moins avertis peuvent avoir quelques surprises en mélangeant des projections.
 
 ## Les fichiers parquet, c'est quoi ?
 
 [Parquet](https://parquet.apache.org/) est un format de fichier open source poussé par la fondation Apache, créé en juillet 2013, qui a la particularité de pouvoir stocker avec une grande efficacité des données. Il utilise… une architecture en colonne. Tiens, tiens, cette histoire de colonne, ça ne vous dit pas quelque chose ? Il est notamment utilisé pour des données « big data »… Les « parquet files », comme ils sont souvent nommés sur la toile, sont uniquement des fichiers utilisés pour s’échanger des données et non pour travailler dessus.
 
-De nombreux outils existent pour traiter et requêter ce type de fichier, parmi lesquels un est particulièrement performant, et devinez quoi, il s’agit de DuckDB (quelle surprise hein ?)
 
 ## Pour aller plus loin
 
@@ -108,7 +109,7 @@ D
 <!-- markdownlint-enable MD040 -->
 ou
 
-- Un environnement Python avec le [paquet duckdb](https://pypi.org/project/duckdb/) d’installer (DuckDB utilise de nombreuses dépendances, il est donc conseillé d’utiliser un environnement virtuel pour éviter les conflits de dépendances)
+- Un environnement Python intégrant le [paquet duckdb](https://pypi.org/project/duckdb/). DuckDB utilisant de nombreuses dépendances, il est fortement conseillé d’utiliser un environnement virtuel pour éviter les conflits de dépendances.
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
@@ -250,7 +251,7 @@ Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qd
 
 #### Convertir les données en un GeoJSON en utilisant DuckDB
 
-Un des atouts de DuckDB n'est pas seulement d’intégrer des données pour les traiter dans la base. Mais, cela peut servir d’outils de conversion pour des données parquets. Exemple, on me donne des données en parquet. Pourtant, je souhaite les avoir en GeoJSON. Grâce à DuckDB, on peut les convertir sans créer de table ni de base.
+Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les traiter en base, il peut servir d’outil de conversion pour des données parquets. Exemple : Si on me donne des données en parquet et je souhaite des GeoJSON, DuckDB peut les convertir sans créer de table ni de base !
 
 === ":snake: Python"
 
