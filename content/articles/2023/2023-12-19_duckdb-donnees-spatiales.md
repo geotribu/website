@@ -42,11 +42,11 @@ Ce SGBD a la particularité d'être sous forme de fichier portable (comme les ba
 
 ## Les performances
 
-Au niveau des performances, DuckDB est particulièrement adapté au traitement des gros volumes de données. Son architecture diffère d'ailleurs sensiblement de SGBDs comme PostgreSQL ou MySQL qui attaquent majoritairement les données par ligne, car DuckDB traite les données en colonnes. La finalité permise : un grand lot de valeurs est traité en une seule opération rapporte le [le site officiel de DuckDB](https://duckdb.org/why_duckdb.html#duckdbisfast) : on traite seulement les colonnes utiles à la requête et cela optimise et accélère le temps de réponse.
+Au niveau des performances, DuckDB est particulièrement adapté au traitement des gros volumes de données. Son architecture diffère d'ailleurs sensiblement de SGBDs comme PostgreSQL ou MySQL qui attaquent majoritairement les données par ligne, car DuckDB traite les données en colonnes. La finalité permise : un grand lot de valeurs est traité en une seule opération rapporte le [le site officiel de DuckDB](https://duckdb.org/why_duckdb.html#duckdbisfast) : on traite seulement les colonnes utiles à la requête et cela optimise et accélère le temps de réponse. Alors qu'avec une architecture plus traditionnelle, on va venir traiter l'intégralité des données de chaque ligne pour éxécuter la requête.
 
 ## Comment l’utiliser
 
-Le support est multi-plateforme (Windows, Linux et MacOS) et DuckDB est utilisable de plusieurs façons via [des installations bien documentées](https://duckdb.org/docs/installation/). Il y a un CLI si vous êtes un adepte du terminal, et de nombreux langages peuvent l'utiliser (parmi lesquels Python, C++, R, Node.js ou encore Rust). Si vous êtes plus à l’aise avec les gestionnaires de base de données avec interface graphique, [DBeaver](https://dbeaver.io/) propose lui aussi le [support](https://duckdb.org/docs/guides/sql_editors/dbeaver.html) des bases de données DuckDB.
+Le support est multi-plateforme (Windows, Linux et MacOS) et DuckDB est utilisable de plusieurs façons via [des installations bien documentées](https://duckdb.org/docs/installation/). Il y a un CLI si vous êtes un adepte du terminal, et de nombreux langages peuvent l'utiliser (parmi lesquels Python, C++, R, Node.js ou encore Rust). Si vous êtes plus à l’aise avec les gestionnaires de base de données avec interface graphique, [DBeaver](https://dbeaver.io/) ou [DataGrip](https://www.jetbrains.com/fr-fr/datagrip/) proposent eux aussi le [support](https://duckdb.org/docs/guides/sql_editors/dbeaver.html) des bases de données DuckDB.
 
 Enfin, indépendamment du client de votre choix, DuckDB fonctionne en SQL. Dans la suite de cet article, mes exemples reposeront sur des commandes en utilisant le CLI ou le paquet Python.
 
@@ -85,6 +85,14 @@ Il faut définir manuellement (et avec rigueur) vos projections en dehors de Duc
 Sur ce [répertoire Github](https://github.com/davidgasquez/awesome-duckdb) est maintenue une liste de projets, outils, ou ressource développée autour de DuckDB. Petit coup de :heart: pour [Harlequin](https://harlequin.sh/), qui est un IDE pour terminal destiné à l’utilisation de DuckDB et simple d'installation.
 
 ![Screenshot Harlequin DuckDB](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/harlequin.png){: .img-center loading=lazy }
+
+## Ailleurs sur DuckDB et le spatial
+
+Une série d'articles de Éric Mauvière sur le même sujet : [Interroger des fichiers distants](https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/) et  [Butiner des API JSON](https://www.icem7.fr/pedagogie/3-explorations-bluffantes-avec-duckdb-butiner-des-api-json-2-3/).
+
+Mark Litwintschik utilise DuckDB et ses fonctions spatiales dans ces articles, on peut en trouver un sur l'exploration du [suivi des vols à l'échelle mondiale](https://tech.marksblogg.com/global-flight-tracking-adsb.html) ou encore les données de [](https://tech.marksblogg.com/natural-earth-free-gis-data.html).
+
+Enfin un [article](https://dev.to/savo/spatial-data-analysis-with-duckdb-40j9) sur le même thème que l'exemple pratique qui va suivre, l'exploration des données de Overture Maps Foundation avec DuckDB.
 
 ----
 
@@ -251,6 +259,10 @@ Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qd
 #### Convertir les données en un GeoJSON en utilisant DuckDB
 
 Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les traiter en base, il peut servir d’outil de conversion pour des données parquets. Exemple : Si on me donne des données en parquet et je souhaite des GeoJSON, DuckDB peut les convertir sans créer de table ni de base !
+
+???+ note
+
+    Attention, cette extension est encore expérimentale (je suis bien placé pour le savoir puisque j'en suis l'un des principaux développeurs :wink:). J'en profite pour préciser que cet article est une initiative personnelle de ma part, et en aucun cas cet article est rédigé ou financé dans le cadre de mes activités chez Oslandia en tant que développeurs du plugin.
 
 === ":snake: Python"
 
