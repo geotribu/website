@@ -52,7 +52,7 @@ Enfin, indépendamment du client de votre choix, DuckDB fonctionne en SQL. Dans 
 
 ## Les fonctions spatiales
 
-Les fonctions spatiales de DuckDB sont rassemblées dans une [extension](https://duckdb.org/docs/extensions/spatial.html), et sont pour la plupart issues de la librairie [GEOS](https://libgeos.org/). Néanmoins, toutes ne sont pas implémentées nativement dans le cœur de DuckDB. Si vous êtes un habitué des fonctions spatiales de PostGIS vous ne serez pas dépaysé en utilisant les fonctions spatiales du canard, la syntaxe et le nom des fonctions est extrêmement proche.
+Les fonctions spatiales de DuckDB sont rassemblées dans une [extension](https://duckdb.org/docs/extensions/spatial.html), et sont pour la plupart issues de la librairie [GEOS](https://libgeos.org/). Néanmoins, toutes ne sont pas implémentées nativement dans le cœur de DuckDB. Si vous êtes un habitué des fonctions spatiales de PostGIS vous ne serez pas dépaysé en utilisant les fonctions spatiales du canard : la syntaxe et le nom des fonctions est extrêmement proche.
 
 On retrouve ainsi une bonne soixantaine de fonctions dont la star de la jointure spatiale ST_Intersects(GEOMETRY, GEOMETRY)
 
@@ -82,7 +82,7 @@ Il faut définir manuellement (et avec rigueur) vos projections en dehors de Duc
 
 ## Pour aller plus loin
 
-Sur ce [répertoire Github](https://github.com/davidgasquez/awesome-duckdb) est maintenue une liste de projets, outils, ou ressource développée autour de DuckDB. Petit coup de :heart: pour [Harlequin](https://harlequin.sh/), qui est un IDE pour terminal destiné à l’utilisation de DuckDB et simple d'installation.
+Sur ce [répertoire Github](https://github.com/davidgasquez/awesome-duckdb) est maintenue une liste de projets, outils, ou ressource développées autour de DuckDB. Petit coup de :heart: pour [Harlequin](https://harlequin.sh/), qui est un IDE pour terminal destiné à l’utilisation de DuckDB et simple d'installation.
 
 ![Screenshot Harlequin DuckDB](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/harlequin.png){: .img-center loading=lazy }
 
