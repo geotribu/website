@@ -1,5 +1,6 @@
 tags:
   atlas: atlas
+  base de données: database
   Bash: code
   Centipede: satellite
   CNIG: institution
@@ -9,6 +10,7 @@ tags:
   coulisses: masques
   cURL: code
   D3.js: js
+  DuckDB: database
   Easter eggs: oeuf
   Esri: globe
   ETL: roue
@@ -63,6 +65,7 @@ tags:
   Ordnance Survey: institution
   OSRM: route
   Open Earth View: streetview
+  Parquet: parquet
   pgDay: database
   pgRouting: route
   PGSession: database
