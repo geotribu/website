@@ -9,7 +9,7 @@
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
     },
     // Markdown
     "markdown.updateLinksOnFileMove.enabled": "prompt",
@@ -24,7 +24,7 @@
     "python.defaultInterpreterPath": ".venv/bin/python",
     "[python]": {
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "explicit"
         },
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true,
