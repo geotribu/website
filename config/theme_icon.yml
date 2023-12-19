@@ -31,6 +31,7 @@ icon:
     oeuf: fontawesome/solid/egg
     open: fontawesome/solid/lock-open
     opensource: material/open-source-initiative
+    parquet: simple/apacheparquet
     pingouin: simple/linux
     python: fontawesome/brands/python
     roue: material/cog-play
