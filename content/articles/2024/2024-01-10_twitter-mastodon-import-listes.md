@@ -30,7 +30,8 @@ Peur de sauter par-dessus bord ? Je comprends.
 Voici un guide pour atterrir en douceur sur le réseau décentralisé Mastodon.  
 Peur d'un énième guide ? Je comprends.  
 Ce guide est fait sur-mesure pour les cartographes, géomaticiennes, géomaticiens et même pour les sigistes ! Oui, même pour les sigistes.
-Impressionné/e ? Je comprends.
+Impressionné/e ?  
+Je comprends.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
