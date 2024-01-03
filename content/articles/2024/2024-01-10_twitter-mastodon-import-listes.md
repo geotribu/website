@@ -1,5 +1,6 @@
 ---
-title: De Twitter à Mastodon, guide de migration
+title: "De X Twitter à Mastodon, guide de migration pour les géomaticien/nes"
+subtitle: En attendant l'avènement du Y
 authors:
     - Julien Moura
 categories:
@@ -15,7 +16,7 @@ tags:
     - Twitter
 ---
 
-# Titre principal
+# Embarquer dans Mastodon : guide pour les géo*
 
 :calendar: Date de publication initiale : 10 janvier 2024
 
@@ -44,7 +45,7 @@ Donc 3 options disais-je :
 - [fosstodon.org](https://fosstodon.org/) : si vous êtes sous licence GPL2+.
 - [mastodon.social](https://mastodon.social/) : l'instance principale, si vous voulez un max de liberté et un facteur de dispersion élevé.
 
-![:material-sign-direction: Créer sont compte sur Mapstodon.space](https://mapstodon.space/auth/sign_up){: md-button--primary }
+![:material-sign-direction: Créer son compte sur Mapstodon.space](https://mapstodon.space/auth/sign_up){: .md-button .md-button--primary }
 {: align=middle }
 
 Pour la suite, c'est du très classique :
