@@ -38,7 +38,7 @@ Je comprends.
 
 ## Choisir où créer son compte
 
-Vous avez 3 options. Seulement 3 ? Oui, vous n'êtes pa là pour avoir trop de choix, vous éparpiller ou perdre du temps à tout piger le fediverse et tous les mots-clés qui nous excitent nous autres geeks de l'hyperespace !
+Vous avez 3 options. Seulement 3 ? Oui, vous n'êtes pas là pour avoir trop de choix, vous éparpiller ou perdre du temps à tout piger le fediverse et tous les mots-clés qui nous excitent nous autres geeks de l'hyperespace !
 
 Donc 3 options disais-je :
 
@@ -46,7 +46,7 @@ Donc 3 options disais-je :
 - [fosstodon.org](https://fosstodon.org/) : si vous êtes sous licence GPL2+.
 - [mastodon.social](https://mastodon.social/) : l'instance principale, si vous voulez un max de liberté et un facteur de dispersion élevé.
 
-![:material-sign-direction: Créer son compte sur Mapstodon.space](https://mapstodon.space/auth/sign_up){: .md-button .md-button--primary }
+[:material-sign-direction: Créer son compte sur Mapstodon.space](https://mapstodon.space/auth/sign_up){: .md-button .md-button--primary }
 {: align=middle }
 
 Pour la suite, c'est du très classique :
@@ -71,7 +71,7 @@ Pour la suite, c'est du très classique :
 
 ## Premiers pas
 
-S'abonner à geotribu.
+S'abonner à geotribu. haha
 
 ----
 
