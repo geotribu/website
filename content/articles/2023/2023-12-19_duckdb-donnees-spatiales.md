@@ -67,11 +67,12 @@ Au niveau des formats de données spatiales, beaucoup de choix également. Une c
 
 Une des particularités des colonnes de géométrie sur DuckDB spatial est l'absence de définition du type de géométrie (contrairement à PostGIS par exemple). Une même colonne de géométrie contiendra aussi bien des points, des lignes, des polygones, etc.
 
-Il y a quand même un hic dans tout ça : les projections ne sont pas gérables dans la version actuelle de DuckDB ! Conséquences, il n'y a :
+Il y a quand même un hic dans tout ça : une colonne de géométrie n'a pas de système de projection dans sa définition ! Conséquences, il n'y a :
 
 - pas de définition de projection comme contrainte pour une colonne
-- pas de fonction de reprojection
 - pas d'attribution d'une projection lors d'un export
+
+Il est bien possible de projeter une géométrie (fonction `ST_Transform`) mais cela nécessite de connaître l'EPSG de la géométrie source, celle-ci ne sera pas détectée automatiquement et l'information n'est pas portée dans la définition de la colonne.
 
 Il faut définir manuellement (et avec rigueur) vos projections en dehors de DuckDB car il ne les différencie pas. Si cette réflexion tombe sous le sens du point de vue "administrateur de données", les utilisateurs moins avertis peuvent avoir quelques surprises en mélangeant des projections.
 
