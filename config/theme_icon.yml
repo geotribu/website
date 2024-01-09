@@ -25,6 +25,7 @@ icon:
     institution: fontawesome/solid/building-columns
     js: fontawesome/brands/js
     manette: fontawesome/solid/gamepad
+    maplibre: simple/maplibre
     markdown: fontawesome/brands/markdown
     masques: fontawesome/solid/masks-theater
     meridiens: fontawesome/solid/globe
