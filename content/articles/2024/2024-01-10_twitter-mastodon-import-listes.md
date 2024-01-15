@@ -8,6 +8,7 @@ categories:
 comments: true
 date: 2024-01-10 10:20:00
 description: En 2024, faire de la veille en géomatique sur Twitter/X devient pénible voire malaisant. Guide à destination des géo* qui veulent embarquer dans l'aventure Mastodon.
+icon: material/mastodon
 image:
 license: default
 robots: index, follow
@@ -18,7 +19,7 @@ tags:
 
 # Embarquer dans Mastodon : guide pour les géo*
 
-:calendar: Date de publication initiale : 10 janvier 2024
+:calendar: Date de publication initiale : 31 janvier 2024
 
 ## Introduction
 
@@ -71,11 +72,40 @@ Pour la suite, c'est du très classique :
 
 ## Premiers pas
 
-S'abonner à geotribu. haha
+Quelques grandes étapes à suivre aveuglément (même si je ne suis pas borgne) pour bien démarrer dans votre nouvelle vie sociale.
 
-----
+### Définir la langue d'affichage et les paramètres généraux
 
-## Importer des listes de comptes à suivre
+1. Se rendre dans les préférences d'apparence ([raccourci Mapstodon](https://mapstodon.space/settings/preferences/appearance))
+1. Boum, c'est juste là :
+
+![Mastodon - Changer les paramètres d'affichage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mastodon_langue_interface.webp){: .img-center loading=lazy }
+
+### Filtrer sur les langues des posts
+
+1. Se rendre dans les préférences dites "autres" ([raccourci Mapstodon](https://mapstodon.space/settings/preferences/other))
+1. Cocher les cases des langues que vous souhaitez voir affichées (oui je sais, c'est la fête du scroll) :
+
+![Mastodon - Filtrer les posts selon les langues](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mastodon_langues_posts.webp){: .img-center loading=lazy }
+
+### Suivre des mots-clés
+
+Par exemple, pour voir les posts qui intègrent le hashtag mot-dièse `#cartographie` :
+
+1. Se rendre sur <https://mapstodon.space/tags/cartographie>
+1. Cliquer sur le bouton `Suivre le hashtag`
+
+![Mastodon -Suivre un hashtag](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mastodon_hashtags_suivre_cartographie.webp){: .img-center loading=lazy }
+
+Renouveler l'opération avec d'autres hashtags. Par exemple :
+
+- [géographie](https://mapstodon.space/tags/g%C3%A9ographie)
+- [GIS](https://mapstodon.space/tags/GIS)
+- [SIG](https://mapstodon.space/tags/SIG)
+- [géomatique](https://mapstodon.space/tags/g%C3%A9omatique)
+- [saucisse](https://mapstodon.space/tags/saucisse), mais non il ne fallait pas cliquer sur celui-là ! Enfin bref, vous avez compris l'idée quoi.,
+
+### Importer des listes de comptes à suivre
 
 Pour éviter le sentiment de vide et remise à zéro de son réseau, il est recommandé d'importer des listes de comptes.  Pour cela, l'écosystème propose un générateur de micro site web, [Mastodon Sociologists](https://github.com/trutzig89182/Mastodon-Sociologists), qui permet d'exporter des listes de comptes. C'est minimaliste, ça prend littéralement 5 minutes et ça permet d'avoir un "kit de démarrage" sur le réseau.
 
