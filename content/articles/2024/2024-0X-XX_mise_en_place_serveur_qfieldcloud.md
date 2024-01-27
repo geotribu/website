@@ -190,7 +190,8 @@ Cette commande va télécharger et/ou construire les _images docker_ utilisées 
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
-```bash
+
+```sh
  ✔ Container qfieldcloud-mkcert-1                       Started
  ✔ Container qfieldcloud-memcached-1                    Running
  ✔ Container qfieldcloud-nginx-1                        Running
@@ -205,6 +206,7 @@ Cette commande va télécharger et/ou construire les _images docker_ utilisées 
  ✔ Container qfieldcloud-minio-1                        Healthy
  ✔ Container qfieldcloud-createbuckets-1                Started
  ```
+
  <!-- markdownlint-enable MD040 -->
 
 Une fois la commande terminée et tous les _containers_ dans le :white_check_mark:, nos services sont actifs et on peut passer à l'initialisation :
