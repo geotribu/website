@@ -318,6 +318,4 @@ Rendez-vous en novembre pour la prochaine édition !
 
 --8<-- "content/team/gall.md"
 
-Mais parfois aussi malheureusement siggeur profane et immature, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant le #MapFailbruaryChallenge et celui de 2024 avec impatience !
-
 {% include "licenses/beerware.md" %}
