@@ -47,7 +47,7 @@ Ce contenu est sous licence [`PV`](https://poudreverte.org/?page=clients).
 
 <!-- markdownlint-enable MD026 MD041 MD046 -->
 
----
+----
 
 NAN NAN ATTENDEZ !! PARTEZ PAS C4EST PAS FINI !
 
@@ -314,8 +314,6 @@ Puis en SQL, changer le statut des subscriptions :
 ```sql
 update subscription_subscription set status = 'active_paid';
 ```
-
----
 
 ## Et maintenant ?
 
