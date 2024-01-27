@@ -32,14 +32,14 @@ Voilà, au revoir, merci, bon week-end et Joyeuses Pâques ! :beers: :dancers:
 
 ### Jean-Marc Gisse {: data-search-exclude }
 
-![Portrait Jean-Marc Gisse](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/jmg.webp "Portrait Jean-Marc Gisse"){: .img-rdp-news-thumb}
+![Portrait Jean-Marc Gisse](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/jmg.webp "Portrait Jean-Marc Gisse"){: .img-thumbnail-left}
 
 Je m'appelle Jean-Marc Gisse, je suis le cousin un peu _tech_ de Jean-Claude Dusse, je dois mettre à jour mes refs, j'aime le jardinage et j'adore le bricolage !
 
 <!-- markdownlint-disable MD026 MD041 -->
 ### Licence :fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-nc-eu: :fontawesome-brands-creative-commons-sa: {: id="license" data-search-exclude }
 
-Ce contenu est sous licence [`PV`](https://poudreverte.org/?page=clients).
+Ce contenu est sous licence [`PV`](https://poudreverte.org).
 
 <!-- markdownlint-disable MD046 -->
 ??? quote "Détails"
@@ -289,15 +289,15 @@ Le projet apparaît maintenant dans la liste, et même dans les signets "QFieldC
 
 Dans l'application mobile QField, même chose: on clique sur l'abeille ya 2 fois pour pouvoir rentrer l'URL de l'instance et le login / mot de passe :
 
-![Écran connexion QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfield_login.webp)
+![Écran connexion QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfield_login.webp){: .img-center loading=lazy }
 
 Une fois le projet téléchargé dans la liste puis ouvert, c'est parti pour la saisie !
 
-![Écran projet QFieldCloud dans QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qfield_qfc_project.webp)
+![Écran projet QFieldCloud dans QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qfield_qfc_project.webp){: .img-center loading=lazy }
 
 :sparkles: Magie magie ! :sparkles:
 
-![David CopperQField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/david_copperqfield.webp)
+![David CopperQField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/david_copperqfield.webp){: .img-center loading=lazy }
 
 :sleepy: N.B. : il est possible que lors du téléchargement sur le mobile, un message d'erreur comportant la mention "subscription inactive" apparaisse, empêchant par là la possibilité de récupérer le projet. Pour régler celà, il faut se connecter au serveur et rentrer les commandes suivantes de sorte à corriger le statut des souscriptions :
 
