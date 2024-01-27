@@ -30,14 +30,14 @@ Voilà, au revoir, merci, bon week-end et Joyeuses Pâques ! :beers: :dancers:
 
 ## Auteur {: data-search-exclude }
 
-# Jean-Marc Gisse {: data-search-exclude }
+### Jean-Marc Gisse {: data-search-exclude }
 
 ![Portrait Jean-Marc Gisse](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/jmg.webp "Portrait Jean-Marc Gisse"){: .img-rdp-news-thumb}
 
 Je m'appelle Jean-Marc Gisse, je suis le cousin un peu _tech_ de Jean-Claude Dusse, je dois mettre à jour mes refs, j'aime le jardinage et j'adore le bricolage !
 
 <!-- markdownlint-disable MD026 MD041 -->
-## Licence :fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-nc-eu: :fontawesome-brands-creative-commons-sa: {: id="license" data-search-exclude }
+### Licence :fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-nc-eu: :fontawesome-brands-creative-commons-sa: {: id="license" data-search-exclude }
 
 Ce contenu est sous licence [`PV`](https://poudreverte.org/?page=clients).
 
@@ -55,7 +55,7 @@ NAN NAN ATTENDEZ !! PARTEZ PAS C4EST PAS FINI !
 
 Bon allez, on reprend.
 
-# Mise en place d'une instance QFieldCloud
+## Mise en place d'une instance QFieldCloud
 
 Connaissez-vous [QField](https://qfield.org/) ? C'est comme David Copperfield le magicien, sauf que c'est pas de la magie ... enfin, si ! C'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
 
@@ -66,7 +66,7 @@ Maintenant, connaissez-vous Claude QField, la cousine un peu éloignée de Jean-
 !!! info
     À ce moment de l'article, il est important de noter qu'il existe [ici](https://qfield.cloud/) une instance QFieldCloud "officielle" hébergée par OpenGIS. Qui propose une offre gratuite jusqu'à 100 MO de stockage. Ce qui peut s'avérer limité dès lors que les projets peuvent embarquer beaucoup de photos, et dont les projets privés ne permettent pas forcément la saisie par équipe/organisation ou par plusieurs utilisateur/rices. Pour celà il y a [les offres Pro et Organization](https://qfield.cloud/pricing.html) qui offrent plus de stockage et plus d'autres trucs. Voire la version "Private Cloud", soit l'hébergement custom d'une instance de serveur QFieldCloud, dont la mise en place, rendue possible grâce à l'ouverture du logiciel, est au coeur de cet article. Mais il faut savoir que mettre en place une propre instance suppose la charge d'un tas d'autres contraintes liées à l'hébergement: maintenance, montées de versions, backups ... Alors si vous aimez porter ceinture et bretelles, il vaut mieux privilégier l'instance officielle de QFieldCloud, ce qui aura en plus l'avantage de soutenir la boîte et pousser le développement de la solution. Sans oublier qu'une instance on-premise de QFieldCloud ne propose pas la belle page de configuration qu'on retrouve sur [app.qfield.cloud](https://app.qfield.cloud)...
 
-# Infrastructure
+## Infrastructure
 
 Si vous êtes toujours là, c'est donc que vous n'aimez pas les ceintures et les bretelles. Un traumatisme survenu lors de la Fête de la Bière peut-être ? N'hésitez pas à partager vos aventures dans la partie commentaires.
 
@@ -80,7 +80,7 @@ Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article. Des fois qu'un jour vous passiez par le centre Finistère, on sait jamais :wink:
 
-# Installations
+## Installations
 
 Une fois l'accès à la VM effectif, on s'y connecte via une [session ssh](https://fr.wikipedia.org/wiki/Secure_Shell). Commençons par créer un utilisateur pour gérer l'installation et le déploiement, auquel on donne le [sudo](https://www.sudo.ws/):
 
@@ -121,7 +121,7 @@ usermod -aG docker qfc
 
 Puis on lance une session avec cet utilisateur via `su qfc`.
 
-# Un zeste de RTFM
+## Un zeste de RTFM
 
 Suivons maintenant les instructions sur [le dépôt GitHub de QFieldCloud](https://github.com/opengisch/qfieldcloud) :
 
@@ -148,7 +148,7 @@ git checkout -b v0.23.2
 cp .env.example .env
 ```
 
-# Paramétrage
+## Paramétrage
 
 Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gros de la configuration du serveur. Il s'agit d'une liste de variables d'environnement 2CRITES EN MAJUSCULES dont il nous faut adapter certaines :
 
@@ -166,7 +166,7 @@ Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gr
 
 - `COMPOSE_FILE=docker-compose.yml:docker-compose.override.standalone.yml`: il s'agit des fichiers "compose" qui déclarent les services en question de notre instance QFieldCloud. Zieutons-y un petit coup !
 
-# Déploiement
+## Déploiement
 
 Ces différents fichiers `docker-compose.*.yml` déclarent donc les différents services nécessaires à notre instance QFieldCloud. On remarque qu'il y en a plusieurs : le principal `docker-compose.yml`, qui contient les services "vitaux", qui vont être enrichis ("surchargés") par d'autres selon l'environnement que l'on souhaite : `dev`, `local`, `prod`, `test` ... et `standalone`, soit celui qu'on va mettre en place ici. Il s'agit d'un environnement autonome, qui offre tous les services (stockage, BD postgres ...) nécessaires au bon fonctionnement de l'instance.
 
@@ -178,7 +178,7 @@ cat > docker-compose.override.standalone.yml
 
 Puis un bon CTRL+C / CTRL+V des familles avec le contenu de <https://github.com/opengisch/qfieldcloud/pull/844/files#diff-32a4168a7b1fcd63e4c0b12368085fea9e1aec07a103211409ad8538a27487b5>
 
-# C'est parti :rocket:
+## C'est parti :rocket:
 
 Pour démarrer la musique et donner le signe à l'orchestre, un coup de baguette avec la commande suivante :
 
@@ -230,7 +230,7 @@ docker compose exec app python manage.py status
 
 Normalement.
 
-# Certificats SSL
+## Certificats SSL
 
 Afin de pouvoir nous connecter à notre instance QFieldCloud en HTTPS, un certificat SSL il nous faut. Il est possible d'en récupérer un grâce à [Let's Encrypt](https://letsencrypt.org/) et son utilitaire en ligne de commande `certbot` :
 
@@ -263,7 +263,7 @@ En tappant l'URL de votre nom de domaine en HTTPS dans un navigateur, l'interfac
 
 ![Écran de connexion à l'interface d'admin web](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldcloud_admin_login.webp){: .img-center loading=lazy }
 
-# Configuration dans l'interface web
+## Configuration dans l'interface web
 
 C'est dans cette interface - l'interface d'admin de [Django](https://www.djangoproject.com/) soit le framework utilisé par QFieldCloud - que nous allons créer les utilisateurs, les organisations, les équipes, et assigner les droits sur les projets. Les projets sont eux créés directement dans QGIS grâce au plugin QFieldSync.
 
@@ -275,7 +275,7 @@ Voyons maintenant comment créer notre première utilisatrice : il faut nous ren
 
 P.S. : _le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores :eyes:. Si vous avez trouvé vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login) :wink:_
 
-# Création d'un projet QGIS
+## Création d'un projet QGIS
 
 Créons maintenant un projet pour tester un tant soit peu notre setup. Il faudra d'abord se connecter à notre instance QFC dans le plugin QFieldSync. Pour celà, cliquer deux fois sur l'abeille cool dans l'interface de connexion et renseigner l'URL de l'instance de même que login / mot de passe :
 
@@ -317,7 +317,7 @@ update subscription_subscription set status = 'active_paid';
 
 ---
 
-# Et maintenant ?
+## Et maintenant ?
 
 Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldCloud fonctionnelle sur un serveur linux, nous permettant de synchroniser aisément les données entre QGIS et QField. Mais ... vous vous souvenez ? Les traumatismes de la Fête de la Bière ? La ceinture et les bretelles ?
 
