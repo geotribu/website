@@ -1,5 +1,5 @@
 ---
-title: Mise en place d'un serveur QFieldCloud custom
+title: Mise en place d'un QFieldCloud custom
 subtitle: Du QField pour les gows et les gars sûr·e·s
 authors:
     - Guilhem Allaman
@@ -8,7 +8,7 @@ categories:
 comments: true
 date: "2024-0X-XX 16:20"
 description: QFieldCloud, l'abeille cool
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfc.jpeg
+icon: octicons/terminal-24
 license: beerware
 robots: index, follow
 tags:
@@ -18,7 +18,7 @@ tags:
     - Q-ops
 ---
 
-# Mise en place d'un serveur QFieldCloud
+# Mise en place d'une instance QFieldCloud
 
 :calendar: Date de publication initiale : _à déterminer_
 
@@ -55,7 +55,7 @@ NAN NAN ATTENDEZ !! PARTEZ PAS C4EST PAS FINI !
 
 Bon allez, on reprend.
 
-# Mise en place d'un serveur QFieldCloud
+# Mise en place d'une instance QFieldCloud
 
 Connaissez-vous [QField](https://qfield.org/) ? C'est comme David Copperfield le magicien, sauf que c'est pas de la magie ... enfin, si ! C'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
 
