@@ -8,7 +8,7 @@ categories:
 comments: true
 date: "2024-0X-XX 16:20"
 description: QFieldCloud, l'abeille cool
-icon: octicons/terminal-24
+icon: octicons/server-16
 license: beerware
 robots: index, follow
 tags:
@@ -168,7 +168,7 @@ Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gr
 
 ## Déploiement
 
-Ces différents fichiers `docker-compose.*.yml` déclarent donc les différents services nécessaires à notre instance QFieldCloud. On remarque qu'il y en a plusieurs : le principal `docker-compose.yml`, qui contient les services "vitaux", qui vont être enrichis ("surchargés") par d'autres selon l'environnement que l'on souhaite : `dev`, `local`, `prod`, `test` ... et `standalone`, soit celui qu'on va mettre en place ici. Il s'agit d'un environnement autonome, qui offre tous les services (stockage, BD postgres ...) nécessaires au bon fonctionnement de l'instance.
+Ces différents fichiers `docker-compose.*.yml` déclarent donc les différents services nécessaires à notre instance QFieldCloud. On remarque qu'il y en a plusieurs : le principal `docker-compose.yml`, qui contient les services "vitaux", qui vont être enrichis ("surchargés") par d'autres selon l'environnement que l'on souhaite : `dev`, `local`, `prod`, `test` ... et `standalone`, soit celui qu'on va mettre en place ici. Il s'agit d'un environnement autonome, qui offre tous les services nécessaires au bon fonctionnement de l'instance : stockage, BD postgres ...
 
 **TODO** : adapter le paragraphe ci-dessous à l'évolution de [la PR d'override standalone](https://github.com/opengisch/qfieldcloud/pull/844)
 
