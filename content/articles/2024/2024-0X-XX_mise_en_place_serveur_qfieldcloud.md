@@ -30,11 +30,11 @@ Voilà, au revoir, merci, bon week-end et Joyeuses Pâques ! :beers: :dancers:
 
 ## Auteur {: data-search-exclude }
 
-### Jean-Marc Gisse {: data-search-exclude }
+### Jean-Marc Jisse {: data-search-exclude }
 
-![Portrait Jean-Marc Gisse](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/jmg.webp "Portrait Jean-Marc Gisse"){: .img-thumbnail-left}
+![Portrait de Jean-Marc Jisse](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/jmg.webp){: .img-thumbnail-left}
 
-Je m'appelle Jean-Marc Gisse, je suis le cousin un peu _tech_ de Jean-Claude Dusse, je dois mettre à jour mes refs, j'aime le jardinage et j'adore le bricolage !
+Je m'appelle Jean-Marc Jisse, je suis le cousin un peu _tech_ de Jean-Claude Dusse, je dois mettre à jour mes refs, j'adore le jardinage et je déteste le bricolage !
 
 <!-- markdownlint-disable MD026 MD041 -->
 ### Licence :fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-nc-eu: :fontawesome-brands-creative-commons-sa: {: id="license" data-search-exclude }
@@ -51,7 +51,7 @@ Ce contenu est sous licence [`PV`](https://poudreverte.org).
 
 NAN NAN ATTENDEZ !! PARTEZ PAS C4EST PAS FINI !
 
-![gif bob l'éponge](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/bob_et_patrick.gif){: .img-center loading=lazy }
+![gif de bob l'éponge et patrick en panique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/bob_et_patrick.gif){: .img-center loading=lazy }
 
 Bon allez, on reprend.
 
@@ -78,7 +78,7 @@ Concernant les specs, pas forcément besoin de beaucoup de ressources, enfin tou
 
 Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de GO. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets QGIS (geopackages, photos ...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
 
-Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article. Des fois qu'un jour vous passiez par le centre Finistère, on sait jamais :wink:
+Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
 
 ## Installations
 
@@ -208,14 +208,13 @@ Cette commande va télécharger et/ou construire les _images docker_ utilisées 
  ```
 
  <!-- markdownlint-enable MD040 -->
-
 Une fois la commande terminée et tous les _containers_ dans le :white_check_mark:, nos services sont actifs et on peut passer à l'initialisation :
 
 ```bash
 # appliquer les migrations pour créer la base de données interne
 docker compose exec app python manage.py migrate
 
-# créer l'interface web d'admin
+# collecter les fichiers web statiques
 docker compose run app python manage.py collectstatic --noinput3
 
 # créer le compte admin pour l'interface web, en remplaçant avec le nom d'utilisateur et le mél adéquat
@@ -271,31 +270,31 @@ C'est dans cette interface - l'interface d'admin de [Django](https://www.djangop
 
 Voyons maintenant comment créer notre première utilisatrice : il faut nous rendre dans la partie people :notes: people have the power :notes: puis cliquer sur "Add person" en-haut à droite :
 
-![Écran création utilisateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldcloud_create_user.webp){: .img-center loading=lazy }
+![Écran de création d'un utilisateur dans l'interface web d'admin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldcloud_create_user.webp){: .img-center loading=lazy }
 
 À noter que la case "Staff status" permet à ce/tte people de pouvoir se connecter à l'interface d'admin web. Combiné à une gestion des droits d'admin via la partie "Groups", celà peut permettre de créer des groupes d'admins avec des droits spécifiques et ce sans avoir à utiliser le super user principal.
 
-P.S. : _le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores :eyes:. Si vous avez trouvé vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login) :wink:_
+P.S. : _le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores :eyes:. Si vous avez trouvé vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login).
 
 ## Création d'un projet QGIS
 
 Créons maintenant un projet pour tester un tant soit peu notre setup. Il faudra d'abord se connecter à notre instance QFC dans le plugin QFieldSync. Pour celà, cliquer deux fois sur l'abeille cool dans l'interface de connexion et renseigner l'URL de l'instance de même que login / mot de passe :
 
-![Écran connexion qfieldsync](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldsync_login.webp){: .img-center loading=lazy }
+![Écran de connexion du plugin QFieldSync](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldsync_login.webp){: .img-center loading=lazy }
 
 Ensuite créer un projet bateau puis le téléverser grâce au bouton "Create new project"
 
-![Écran projet QFieldCloud dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qgis_qfc_project.webp){: .img-center loading=lazy }
+![Écran d'un projet QFieldCloud dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qgis_qfc_project.webp){: .img-center loading=lazy }
 
 Le projet apparaît maintenant dans la liste, et même dans les signets "QFieldCloud" de l'explorateur QGIS !
 
 Dans l'application mobile QField, même chose: on clique sur l'abeille ya 2 fois pour pouvoir rentrer l'URL de l'instance et le login / mot de passe :
 
-![Écran connexion QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfield_login.webp){: .img-center loading=lazy }
+![Écran de connexion de l'appli QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfield_login.webp){: .img-center loading=lazy }
 
 Une fois le projet téléchargé dans la liste puis ouvert, c'est parti pour la saisie !
 
-![Écran projet QFieldCloud dans QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qfield_qfc_project.webp){: .img-center loading=lazy }
+![Écran d'un projet QFieldCloud dans QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qfield_qfc_project.webp){: .img-center loading=lazy }
 
 :sparkles: Magie magie ! :sparkles:
 
@@ -314,14 +313,14 @@ psql -U qfieldcloud_db_admin qfieldcloud_db
 Puis en SQL, changer le statut des subscriptions :
 
 ```sql
-update subscription_subscription set status = 'active_paid';
+UPDATE subscription_subscription SET status = 'active_paid';
 ```
 
 ## Et maintenant ?
 
-Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldCloud fonctionnelle sur un serveur linux, nous permettant de synchroniser aisément les données entre QGIS et QField. Mais ... vous vous souvenez ? Les traumatismes de la Fête de la Bière ? La ceinture et les bretelles ?
+Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldCloud fonctionnelle sur un serveur linux, nous permettant de synchroniser aisément les données entre QGIS et QField. Mais ... vous vous souvenez ? La Fête de la Bière ? La ceinture et les bretelles ?
 
-![gif bob l'éponge](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/bob_et_patrick.gif){: .img-center loading=lazy }
+![gif de bob l'éponge et patrick en panique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/bob_et_patrick.gif){: .img-center loading=lazy }
 
 Les backups, les maintenances, les montées de version ... ne font pas l'objet de cet article. Pourquoi ne pas s'entourer de vrai/es expert/es sur ce domaine purement IT ? Il y a des boîtes qui proposent ces services et qui permettent de se soulager de ces contraintes. Car après tout, qui de mieux que _votre partenaire QField_ pour s'occuper de _votre QField_ ?
 
