@@ -271,7 +271,7 @@ En tappant l'URL de votre nom de domaine en HTTPS dans un navigateur, l'interfac
 
 C'est dans cette interface - l'interface d'admin de [Django](https://www.djangoproject.com/) soit le framework utilisé par QFieldCloud - que nous allons créer les utilisateurs, les organisations, les équipes, et assigner les droits sur les projets. Les projets sont eux créés directement dans QGIS grâce au plugin QFieldSync.
 
-Voyons maintenant comment créer notre première utilisatrice : il faut nous rendre dans la partie people :notes: people have the power :notes: puis cliquer sur "Add person" en-haut à droite :
+Voyons maintenant comment créer notre première utilisatrice : il faut nous rendre dans la [party people](https://yewtu.be/watch?v=D1gl46hh3sQ) :notes: people have the power :notes: puis cliquer sur "Add person" en-haut à droite :
 
 ![Écran de création d'un utilisateur dans l'interface web d'admin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldcloud_create_user.webp){: .img-center loading=lazy }
 
