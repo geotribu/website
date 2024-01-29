@@ -20,7 +20,7 @@ tags:
 
 # Mise en place d'une instance QFieldCloud
 
-:calendar: Date de publication initiale : _à déterminer_
+:calendar: Date de publication initiale : 6 février 2024
 
 Dans cet article, nous allons voir comment mettre en place un serveur QFieldCloud custom, qui permettra pour vos enquêtes et relevés terrain de synchroniser vos données entre `QGIS`, graĉe au plugin `QFieldSync`, et l'application `QField`, et ce sans avoir à brancher ni péter des câbles.
 
@@ -79,6 +79,8 @@ Concernant les specs, pas forcément besoin de beaucoup de ressources, enfin tou
 Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de GO. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets QGIS (geopackages, photos...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
+
+_Pennarmenez_ c'est le nom d'une ferme qui fait du fromage bio et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Chateaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
 
 ## Installations
 
