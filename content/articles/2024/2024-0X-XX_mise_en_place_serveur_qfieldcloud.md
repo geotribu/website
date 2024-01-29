@@ -70,7 +70,7 @@ Maintenant, connaissez-vous Claude QField, la cousine un peu éloignée de Jean-
 
 Si vous êtes toujours là, c'est donc que vous n'aimez pas les ceintures et les bretelles. Un traumatisme survenu lors de la Fête de la Bière peut-être ? N'hésitez pas à partager vos aventures dans la partie commentaires.
 
-À moins que ce soit des ****** de la cybersécurité qui vous aient dit "gnagnagna c'est nous qu'on doit héberger les données"... Bon, _toute ressemblance avec des situations existantes ou ayant existé serait purement fortuite_.
+À moins que ce soit des gusses de la cybersécurité qui vous aient dit "gnagnagna c'est nous qu'on doit héberger les données"... Bon, _toute ressemblance avec des situations existantes ou ayant existé serait purement fortuite_.
 
 Pour le déploiement, on aura besoin d'un système Linux. On va partir sur une VM sous [debian 12](https://www.debian.org/releases/bookworm/). Si vous avez un gentil Service Informatique capable de vous fournir ça, vous pouvez gentiment leur demander. Ou alors en commander une chez votre hébergeur préféré, ce qui va être fait ici pour la suite, chez [un hébergeur bavarois](https://contabo.com/en/). Eh oui, vive la bière ! Vive les traumatismes !
 
@@ -170,13 +170,13 @@ Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gr
 
 Ces différents fichiers `docker-compose.*.yml` déclarent donc les différents services nécessaires à notre instance QFieldCloud. On remarque qu'il y en a plusieurs : le principal `docker-compose.yml`, qui contient les services "vitaux", qui vont être enrichis ("surchargés") par d'autres selon l'environnement que l'on souhaite : `dev`, `local`, `prod`, `test` ... et `standalone`, soit celui qu'on va mettre en place ici. Il s'agit d'un environnement autonome, qui offre tous les services nécessaires au bon fonctionnement de l'instance : stockage, BD postgres ...
 
-**TODO** : adapter le paragraphe ci-dessous à l'évolution de [la PR d'override standalone](https://github.com/opengisch/qfieldcloud/pull/844)
+Si un fichier `docker-compose.override.standalone.yml` n'existe pas déjà dans le dépôt, créons-le :
 
 ```sh
 cat > docker-compose.override.standalone.yml
 ```
 
-Puis un bon CTRL+C / CTRL+V des familles avec le contenu de <https://github.com/opengisch/qfieldcloud/pull/844/files#diff-32a4168a7b1fcd63e4c0b12368085fea9e1aec07a103211409ad8538a27487b5>
+Puis remplissons-le via un bon CTRL+C / CTRL+V des familles avec le contenu de [ce fichier](https://github.com/opengisch/qfieldcloud/pull/844/files#diff-32a4168a7b1fcd63e4c0b12368085fea9e1aec07a103211409ad8538a27487b5), en terminant la saisie avec un CTRL+D.
 
 ## C'est parti :rocket:
 
@@ -242,7 +242,7 @@ source .env
 certbot certonly --standalone -d ${QFIELDCLOUD_HOST}
 ```
 
-:warning: à noter que pour pouvoir récupérer un certificat avec la commande ci-dessus, il est nécessaire que le port 80 soit libre, et donc que nos services QFieldCloud soient éteints. Pour celà, voici l'interrupteur :
+:warning: à noter que pour pouvoir récupérer un certificat avec la commande ci-dessus, il est nécessaire que le port 80 soit libre, et donc que nos services QFieldCloud soient éteints, enfin le service "nginx" surtout. Pour celà, voici l'interrupteur :
 
 ```sh
 # nuit
@@ -321,7 +321,7 @@ UPDATE subscription_subscription SET status = 'active_paid';
 
 ## Et maintenant ?
 
-Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldCloud fonctionnelle sur un serveur linux, nous permettant de synchroniser aisément les données entre QGIS et QField. Mais ... vous vous souvenez ? La Fête de la Bière ? La ceinture et les bretelles ?
+Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldCloud fonctionnelle sur un serveur linux, nous permettant de synchroniser aisément les données entre QGIS et QField. Mais ... vous vous souvenez ? La Fête de la Bière ? La ceinture ? Les bretelles ?
 
 ![gif de bob l'éponge et patrick en panique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/bob_et_patrick.gif){: .img-center loading=lazy }
 
