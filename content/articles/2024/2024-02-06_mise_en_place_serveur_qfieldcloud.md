@@ -80,7 +80,7 @@ Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
 
-_Pennarmenez_ c'est le nom d'une ferme qui fait du fromage bio et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Chateaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
+_Penn ar Menez_ c'est le nom d'une ferme qui fait du fromage bio et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Chateaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
 
 ## Installations
 
