@@ -84,7 +84,7 @@ Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une
 
 Une fois l'accès à la VM effectif, on s'y connecte via une [session ssh](https://fr.wikipedia.org/wiki/Secure_Shell). Commençons par créer un utilisateur pour gérer l'installation et le déploiement, auquel on donne le [sudo](https://www.sudo.ws/):
 
-```bash
+```sh
 adduser --shell /bin/bash qfc
 apt install -y sudo
 usermod -aG sudo qfc
@@ -92,13 +92,13 @@ usermod -aG sudo qfc
 
 Il nous faudra ensuite installer [git](https://git-scm.com/), de sorte à pouvoir récupérer le dépôt QFieldCloud par la suite :
 
-```bash
+```sh
 apt install -y git
 ```
 
 Maintenant, il est nécessaire d'installer [docker](https://www.docker.com/), en suivant les instructions de [la doc officielle](https://docs.docker.com/engine/install/debian/) dont voici les commandes résumées, que vous pouvez copier-coller (le savoir-faire numero uno de tout/e développeur/se qui se respecte):
 
-```bash
+```sh
 sudo apt-get install ca-certificates curl gnupg
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
@@ -115,7 +115,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 Docker (et [`compose`](https://docs.docker.com/compose/)) sont les outils de containerisation qui nous permettront de lancer les différents services nécessaires pour notre instance QFieldCloud, qu'il n'est pas recommandé de lancer en tant que `root`. C'est pourquoi on peut ajouter l'utilisateur `qfc` précédemment créé au groupe `docker` :
 
-```bash
+```sh
 usermod -aG docker qfc
 ```
 
@@ -172,7 +172,7 @@ Ces différents fichiers `docker-compose.*.yml` déclarent donc les différents 
 
 **TODO** : adapter le paragraphe ci-dessous à l'évolution de [la PR d'override standalone](https://github.com/opengisch/qfieldcloud/pull/844)
 
-```bash
+```sh
 cat > docker-compose.override.standalone.yml
 ```
 
@@ -182,14 +182,11 @@ Puis un bon CTRL+C / CTRL+V des familles avec le contenu de <https://github.com/
 
 Pour démarrer la musique et donner le signe à l'orchestre, un coup de baguette avec la commande suivante :
 
-```bash
+```sh
 docker compose up -d --build
 ```
 
 Cette commande va télécharger et/ou construire les _images docker_ utilisées pour les services, ce qui peut prendre quelques minutes et consommer de la bande passante (~10 GO).
-
-<!-- markdownlint-disable MD040 -->
-<!-- termynal -->
 
 ```sh
  ✔ Container qfieldcloud-mkcert-1                       Started
@@ -207,10 +204,9 @@ Cette commande va télécharger et/ou construire les _images docker_ utilisées 
  ✔ Container qfieldcloud-createbuckets-1                Started
  ```
 
- <!-- markdownlint-enable MD040 -->
 Une fois la commande terminée et tous les _containers_ dans le :white_check_mark:, nos services sont actifs et on peut passer à l'initialisation :
 
-```bash
+```sh
 # appliquer les migrations pour créer la base de données interne
 docker compose exec app python manage.py migrate
 
@@ -225,7 +221,7 @@ docker compose run app python manage.py createsuperuser --username admin --email
 
 Pour vérifier l'état des composantes du serveur, la commande suivante doit normalement renvoyer des "ok" :
 
-```bash
+```sh
 docker compose exec app python manage.py status
 ```
 
@@ -235,7 +231,7 @@ Normalement.
 
 Afin de pouvoir nous connecter à notre instance QFieldCloud en HTTPS, un certificat SSL il nous faut. Il est possible d'en récupérer un grâce à [Let's Encrypt](https://letsencrypt.org/) et son utilitaire en ligne de commande `certbot` :
 
-```bash
+```sh
 apt install certbot
 source .env
 certbot certonly --standalone -d ${QFIELDCLOUD_HOST}
@@ -243,7 +239,7 @@ certbot certonly --standalone -d ${QFIELDCLOUD_HOST}
 
 :warning: à noter que pour pouvoir récupérer un certificat avec la commande ci-dessus, il est nécessaire que le port 80 soit libre, et donc que nos services QFieldCloud soient éteints. Pour celà, voici l'interrupteur :
 
-```bash
+```sh
 # nuit
 docker compose down --remove-orphans
 
@@ -253,7 +249,7 @@ docker compose up -d --build
 
 Une fois le certificat généré, il nous faut à présent le copier dans la config de QFieldCloud :
 
-```bash
+```sh
 sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/privkey.pem ./conf/nginx/certs/${QFIELDCLOUD_HOST}-key.pem
 sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/fullchain.pem ./conf/nginx/certs/${QFIELDCLOUD_HOST}.pem
 ```
@@ -304,7 +300,7 @@ Une fois le projet téléchargé dans la liste puis ouvert, c'est parti pour la 
 
 :sleepy: N.B. : il est possible que lors du téléchargement sur le mobile, un message d'erreur comportant la mention "subscription inactive" apparaisse, empêchant par là la possibilité de récupérer le projet. Pour régler celà, il faut se connecter au serveur et rentrer les commandes suivantes de sorte à corriger le statut des souscriptions :
 
-```bash
+```sh
 # se connecter en bash dans le container de la base de données interne
 docker exec -it qfieldcloud-db-1 /bin/bash
 
