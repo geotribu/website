@@ -76,7 +76,7 @@ Pour le déploiement, on aura besoin d'un système Linux. On va partir sur une V
 
 Concernant les specs, pas forcément besoin de beaucoup de ressources, enfin tout dépend du nombre d'utilisateur/rices simultané/es que vous souhaitez pouvoir supporter. Ceci dit le côté asynchrone de QFieldCloud et le fonctionnement de la synchronisation en semi-offline le rend peu gourmand en ressources. Ici 4 CPU et 6GB de RAM nous suffiront.
 
-Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de GO. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets QGIS (geopackages, photos ...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
+Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de GO. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets QGIS (geopackages, photos...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
 
@@ -188,23 +188,28 @@ docker compose up -d --build
 
 Cette commande va télécharger et/ou construire les _images docker_ utilisées pour les services, ce qui peut prendre quelques minutes et consommer de la bande passante (~10 GO).
 
-```sh
- ✔ Container qfieldcloud-mkcert-1                       Started
- ✔ Container qfieldcloud-memcached-1                    Running
- ✔ Container qfieldcloud-nginx-1                        Running
- ✔ Container qfieldcloud-mirror_transformation_grids-1  Started
- ✔ Container qfieldcloud-qgis-1                         Started
- ✔ Container qfieldcloud-app-1                          Running
- ✔ Container qfieldcloud-ofelia-1                       Running
- ✔ Container qfieldcloud-worker_wrapper-1               Running
- ✔ Container qfieldcloud-certbot-1                      Running
- ✔ Container qfieldcloud-geodb-1                        Running
- ✔ Container qfieldcloud-db-1                           Running
- ✔ Container qfieldcloud-minio-1                        Healthy
- ✔ Container qfieldcloud-createbuckets-1                Started
- ```
+<!-- markdownlint-disable MD040 -->
+<!-- termynal -->
 
-Une fois la commande terminée et tous les _containers_ dans le :white_check_mark:, nos services sont actifs et on peut passer à l'initialisation :
+```sh
+✔ Container qfieldcloud-mkcert-1                       Started
+✔ Container qfieldcloud-memcached-1                    Running
+✔ Container qfieldcloud-nginx-1                        Running
+✔ Container qfieldcloud-mirror_transformation_grids-1  Started
+✔ Container qfieldcloud-qgis-1                         Started
+✔ Container qfieldcloud-app-1                          Running
+✔ Container qfieldcloud-ofelia-1                       Running
+✔ Container qfieldcloud-worker_wrapper-1               Running
+✔ Container qfieldcloud-certbot-1                      Running
+✔ Container qfieldcloud-geodb-1                        Running
+✔ Container qfieldcloud-db-1                           Running
+✔ Container qfieldcloud-minio-1                        Healthy
+✔ Container qfieldcloud-createbuckets-1                Started
+```
+
+<!-- markdownlint-enable MD040 -->
+
+Une fois la commande arrivée à son terme et tous les _containers_ dans le :white_check_mark:, nos services sont actifs, on peut passer à l'initialisation :
 
 ```sh
 # appliquer les migrations pour créer la base de données interne
@@ -229,7 +234,7 @@ Normalement.
 
 ## Certificats SSL
 
-Afin de pouvoir nous connecter à notre instance QFieldCloud en HTTPS, un certificat SSL il nous faut. Il est possible d'en récupérer un grâce à [Let's Encrypt](https://letsencrypt.org/) et son utilitaire en ligne de commande `certbot` :
+Afin d'être en capacité nous connecter à notre instance QFieldCloud en HTTPS, un certificat SSL il nous faut. Il est possible d'en récupérer un grâce à [Let's Encrypt](https://letsencrypt.org/) et son utilitaire en ligne de commande `certbot` :
 
 ```sh
 apt install certbot
@@ -247,7 +252,7 @@ docker compose down --remove-orphans
 docker compose up -d --build
 ```
 
-Une fois le certificat généré, il nous faut à présent le copier dans la config de QFieldCloud :
+Une fois le certificat généré, valable 3 mois, il nous faut à présent le copier dans la config de QFieldCloud :
 
 ```sh
 sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/privkey.pem ./conf/nginx/certs/${QFIELDCLOUD_HOST}-key.pem
@@ -268,7 +273,7 @@ Voyons maintenant comment créer notre première utilisatrice : il faut nous ren
 
 ![Écran de création d'un utilisateur dans l'interface web d'admin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldcloud_create_user.webp){: .img-center loading=lazy }
 
-À noter que la case "Staff status" permet à ce/tte people de pouvoir se connecter à l'interface d'admin web. Combiné à une gestion des droits d'admin via la partie "Groups", celà peut permettre de créer des groupes d'admins avec des droits spécifiques et ce sans avoir à utiliser le super user principal.
+À noter que la case "Staff status" permet à ce/tte people de se connecter à l'interface d'admin web. Combiné à une gestion des droits d'admin via la partie "Groups", celà peut permettre de créer des groupes d'admins avec des droits spécifiques et ce sans avoir à utiliser le super user principal.
 
 _P.S. : le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores :eyes:. Si vous avez trouvé vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login)._
 
@@ -278,13 +283,13 @@ Créons maintenant un projet pour tester un tant soit peu notre setup. Il faudra
 
 ![Écran de connexion du plugin QFieldSync](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldsync_login.webp){: .img-center loading=lazy }
 
-Ensuite créer un projet bateau puis le téléverser grâce au bouton "Create new project"
+Ensuite créer un projet bateau puis le téléverser grâce au bouton "Create new project".
 
 ![Écran d'un projet QFieldCloud dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qgis_qfc_project.webp){: .img-center loading=lazy }
 
 Le projet apparaît maintenant dans la liste, et même dans les signets "QFieldCloud" de l'explorateur QGIS !
 
-_:round_pushpin: Reconnaissez-vous l'emplacement du :heart: ? Ce sera l'endroit où se dérouleront [les prochaines Journées Utilisateurs QGIS](https://conf.qgis.osgeo.fr/z20_programme.html), les 27 et 28 mars prochains. S'y tiendra d'ailleurs un atelier sur le sujet :eyes:._
+_:round_pushpin: Reconnaissez-vous l'emplacement du :heart: ? Indice : c'est l'endroit où se dérouleront [les Journées QGIS](https://conf.qgis.osgeo.fr/z20_programme.html), les 27 et 28 mars prochains. D'ailleurs, il s'y tiendra un atelier pratique sur le sujet... :eyes:_
 
 Dans l'application mobile QField, même chose: on clique sur l'abeille ya 2 fois pour pouvoir rentrer l'URL de l'instance et le login / mot de passe :
 
