@@ -59,7 +59,7 @@ Bon allez, on reprend.
 
 Connaissez-vous [QField](https://qfield.org/) ? C'est comme David Copperfield le magicien, sauf que c'est pas de la magie ... enfin, si ! C'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
 
-Plus concrètement, il s'agit d'une application mobile de saisie et relevé terrain, hautement compatible avec QGIS, permettant de reproduire les paramétrages de saisie et formulaires des couches quasi à l'identique, poussée par [OPENGIS.ch](https://www.opengis.ch/) qu'on remercie pour tout le développement made with :love:. [Un précédent article](https://geotribu.fr/articles/2022/2022-05-24_releve_terrain_qfield/) explique plus en détail un processus de relevé grâce à l'appli QField qu'on ne présente dorénavant plus.
+Plus concrètement, il s'agit d'une application mobile de saisie et relevé terrain, hautement compatible avec QGIS, permettant de reproduire les paramétrages de saisie et formulaires des couches quasi à l'identique, poussée par [OPENGIS.ch](https://www.opengis.ch/) qu'on remercie pour tout le développement made with :heart:. [Un précédent article](https://geotribu.fr/articles/2022/2022-05-24_releve_terrain_qfield/) explique plus en détail un processus de relevé grâce à l'appli QField qu'on ne présente dorénavant plus.
 
 Maintenant, connaissez-vous Claude QField, la cousine un peu éloignée de Jean-Marc ? Euh non, pardon, "le cloud QField", ["QFieldCloud"](https://qfield.cloud/), _QFC_ pour les intimes. Aucun rapport avec _Quantum Fried Chicken_, même si on va voir qu'il est parfois question de _buckets_. QfieldCloud c'est LA brique qui permet de faire la liaison cloud entre QGIS et QField, faisant ainsi de ce tryptique un système robuste et complet d'enquête terrain. QFieldCloud offre entre autres la possibilité de synchroniser les données saisies dans QField directement dans l'application, grâce à un mode semi-offline bien articulé, qui permet de se libérer de pas mal de contraintes concernant le transfert de données PC - smartphone/tablette initialement filaire. Ainsi qu'un système de droits et d'accès aux projets qui permet de gérer finement la configuration et les permissions de plusieurs utilisateur/rices en lecture-écriture.
 
@@ -274,7 +274,7 @@ Voyons maintenant comment créer notre première utilisatrice : il faut nous ren
 
 À noter que la case "Staff status" permet à ce/tte people de pouvoir se connecter à l'interface d'admin web. Combiné à une gestion des droits d'admin via la partie "Groups", celà peut permettre de créer des groupes d'admins avec des droits spécifiques et ce sans avoir à utiliser le super user principal.
 
-P.S. : _le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores :eyes:. Si vous avez trouvé vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login).
+_P.S. : le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores :eyes:. Si vous avez trouvé vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login)._
 
 ## Création d'un projet QGIS
 
@@ -287,6 +287,8 @@ Ensuite créer un projet bateau puis le téléverser grâce au bouton "Create ne
 ![Écran d'un projet QFieldCloud dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qgis_qfc_project.webp){: .img-center loading=lazy }
 
 Le projet apparaît maintenant dans la liste, et même dans les signets "QFieldCloud" de l'explorateur QGIS !
+
+_:round_pushpin: Reconnaissez-vous l'emplacement du :heart: ? Ce sera l'endroit où se dérouleront [les prochaines Journées Utilisateurs QGIS](https://conf.qgis.osgeo.fr/z20_programme.html), les 27 et 28 mars prochains. S'y tiendra d'ailleurs un atelier sur le sujet :eyes:._
 
 Dans l'application mobile QField, même chose: on clique sur l'abeille ya 2 fois pour pouvoir rentrer l'URL de l'instance et le login / mot de passe :
 
