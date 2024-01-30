@@ -80,7 +80,7 @@ Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
 
-_Penn ar Menez_ c'est le nom d'une ferme qui fait du fromage bio et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Chateaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
+_Penn ar Menez_ c'est le nom d'une ferme bio qui fait du fromage et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Chateaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
 
 ## Installations
 
@@ -271,7 +271,7 @@ En tappant l'URL de votre nom de domaine en HTTPS dans un navigateur, l'interfac
 
 C'est dans cette interface - l'interface d'admin de [Django](https://www.djangoproject.com/) soit le framework utilisé par QFieldCloud - que nous allons créer les utilisateurs, les organisations, les équipes, et assigner les droits sur les projets. Les projets sont eux créés directement dans QGIS grâce au plugin QFieldSync.
 
-Voyons maintenant comment créer notre première utilisatrice : il faut nous rendre dans la [party people](https://yewtu.be/watch?v=D1gl46hh3sQ) :notes: people have the power :notes: puis cliquer sur "Add person" en-haut à droite :
+Voyons maintenant comment créer notre première utilisatrice : il faut nous rendre dans la partie people :notes: people have the power :notes: puis cliquer sur "Add person" en-haut à droite :
 
 ![Écran de création d'un utilisateur dans l'interface web d'admin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldcloud_create_user.webp){: .img-center loading=lazy }
 
