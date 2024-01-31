@@ -76,7 +76,7 @@ Pour le déploiement, on aura besoin d'un système Linux. On va partir sur une V
 
 Concernant les specs, pas forcément besoin de beaucoup de ressources, enfin tout dépend du nombre d'utilisateur/rices simultané/es que vous souhaitez pouvoir supporter. Ceci dit le côté asynchrone de QFieldCloud et le fonctionnement de la synchronisation en semi-offline le rend peu gourmand en ressources. Ici 4 CPU et 6GB de RAM nous suffiront.
 
-Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de GO. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets QGIS (geopackages, photos...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
+Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de Go. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets QGIS (geopackages, photos...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
 
