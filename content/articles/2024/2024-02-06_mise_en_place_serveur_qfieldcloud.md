@@ -49,7 +49,7 @@ Ce contenu est sous licence [`PV`](https://poudreverte.org).
 
 ----
 
-NAN NAN ATTENDEZ !! PARTEZ PAS C4EST PAS FINI !
+NAN NAN ATTENDEZ !! PARTEZ PAS C'EST PAS FINI !
 
 ![gif de bob l'éponge et patrick en panique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/bob_et_patrick.gif){: .img-center loading=lazy }
 
