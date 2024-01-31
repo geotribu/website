@@ -293,7 +293,7 @@ Le projet apparaît maintenant dans la liste, et même dans les signets "QFieldC
 
 _:round_pushpin: Reconnaissez-vous l'emplacement du :heart: ? Indice : c'est l'endroit où se dérouleront [les Journées QGIS](https://conf.qgis.osgeo.fr/z20_programme.html), les 27 et 28 mars prochains. D'ailleurs, il s'y tiendra un atelier pratique sur le sujet... :eyes:_
 
-Dans l'application mobile QField, même chose: on clique sur l'abeille ya 2 fois pour pouvoir rentrer l'URL de l'instance et le login / mot de passe :
+Dans l'application mobile QField, même chose: on clique sur l'abeille 2 fois pour pouvoir rentrer l'URL de l'instance et le login / mot de passe :
 
 ![Écran de connexion de l'appli QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfield_login.webp){: .img-center loading=lazy }
 
