@@ -137,11 +137,11 @@ git clone --recurse-submodules git@github.com:opengisch/qfieldcloud.git
 git clone --recurse-submodules https://github.com/opengisch/qfieldcloud.git
 ```
 
-- basculer sur la branche de la dernière version, [`0.23.2`](https://github.com/opengisch/qfieldcloud/releases/tag/v0.23.2) à l'heure où sont écrites ces lignes :
+- basculer sur la branche de la dernière version, [`0.24.0`](https://github.com/opengisch/qfieldcloud/releases/tag/v0.24.0) à l'heure où sont écrites ces lignes :
 
 ```sh
 cd qfieldcloud
-git checkout -b v0.23.2
+git checkout -b v0.24.0
 ```
 
 - copier le fichier `.env.local` vers un fichier `.env` qui va contenir toute la configuration du serveur :
