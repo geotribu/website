@@ -152,7 +152,7 @@ cp .env.example .env
 
 ## Paramétrage
 
-Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gros de la configuration du serveur. Il s'agit d'une liste de variables d'environnement 2CRITES EN MAJUSCULES dont il nous faut adapter certaines :
+Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gros de la configuration du serveur. Il s'agit d'une liste de variables d'environnement ÉCRITES EN MAJUSCULES dont il nous faut adapter certaines :
 
 - `ENVIRONMENT=production` : on passe en prod direct :metal: tester c'est douter
 
