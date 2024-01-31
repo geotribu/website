@@ -24,7 +24,7 @@ tags:
 
 Dans cet article, nous allons voir comment mettre en place un serveur QFieldCloud custom, qui permettra pour vos enquêtes et relevés terrain de synchroniser vos données entre `QGIS`, graĉe au plugin `QFieldSync`, et l'application `QField`, et ce sans avoir à brancher ni péter des câbles.
 
-La doc se trouve :point_right: [ici](https://docs.qfield.org/zh/reference/qfieldcloud/concepts/) :point_left: et le dépôt :point_right: [ici](https://github.com/opengisch/qfieldcloud) :point_left:, merci de lire le `README` et d'y suivre les instructions #RTFM
+Les informations se trouvent :point_right: [ici](https://docs.qfield.org/zh/reference/qfieldcloud/concepts/) :point_left:, merci de lire et suivre les instructions #RTFM.
 
 Voilà, au revoir, merci, bon week-end et Joyeuses Pâques ! :beers: :dancers:
 
