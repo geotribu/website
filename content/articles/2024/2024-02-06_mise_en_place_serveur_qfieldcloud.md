@@ -324,7 +324,8 @@ Ensuite créer un projet bateau puis le téléverser grâce au bouton "Create ne
 
 Le projet apparaît maintenant dans la liste, et même dans les signets "QFieldCloud" de l'explorateur QGIS !
 
-_:round_pushpin: Reconnaissez-vous l'emplacement du :heart: ? Indice : c'est l'endroit où se dérouleront [les Journées QGIS](https://conf.qgis.osgeo.fr/z20_programme.html), les 27 et 28 mars prochains. D'ailleurs, il s'y tiendra un atelier pratique sur le sujet... :eyes:_
+!!! question
+    _:round_pushpin: Reconnaissez-vous l'emplacement du :heart: ? Indice : c'est l'endroit où se dérouleront [les Journées QGIS](https://conf.qgis.osgeo.fr/z20_programme.html), les 27 et 28 mars prochains. D'ailleurs, il s'y tiendra un atelier pratique sur le sujet :eyes:, de même qu'une présentation d'un retour d'expérience._
 
 Dans l'application mobile QField, même chose: on clique sur l'abeille 2 fois pour pouvoir rentrer l'URL de l'instance et le login / mot de passe :
 
