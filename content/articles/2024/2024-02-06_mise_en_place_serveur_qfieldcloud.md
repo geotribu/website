@@ -59,16 +59,16 @@ Bon allez, on reprend.
 
 ![logo QField cloud](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qfield_cloud.png "logo QField cloud"){: .img-thumbnail-left }
 
-Connaissez-vous [QField](https://qfield.org/) ? C'est comme [David Copperfield](https://fr.wikipedia.org/wiki/David_Copperfield_(illusionniste)) le magicien, sauf que c'est pas de la magie ... enfin, si ! C'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
+Connaissez-vous [QField](https://qfield.org/) ? C'est comme [David Copperfield](https://fr.wikipedia.org/wiki/David_Copperfield_(illusionniste)) le magicien, sauf que c'est pas de la magie... enfin, si ! C'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
 
 Plus concrètement, il s'agit d'une application mobile de saisie et relevé terrain, hautement compatible avec [QGIS](https://www.qgis.org), permettant de reproduire les paramétrages de saisie et formulaires des couches quasi à l'identique, poussée par [OPENGIS.ch](https://www.opengis.ch/) qu'on remercie pour tout le développement made with :heart:. [Un précédent article](https://geotribu.fr/articles/2022/2022-05-24_releve_terrain_qfield/) explique plus en détail un processus de relevé grâce à l'appli QField qu'on ne présente dorénavant plus.
 
-Maintenant, connaissez-vous Claude QField, la cousine un peu éloignée de Jean-Marc ? Euh non, pardon, "le cloud QField", ["QFieldCloud"](https://qfield.cloud/), _QFC_ pour les intimes. Aucun rapport avec _Quantum Fried Chicken_, même si on va voir qu'il est parfois question de _buckets_. QfieldCloud c'est LA brique qui permet de faire la liaison cloud entre QGIS et QField, faisant ainsi de ce tryptique un système robuste et complet d'enquête terrain. QFieldCloud offre entre autres la possibilité de synchroniser les données saisies dans QField directement dans l'application, grâce à un mode semi-offline bien articulé, qui permet de se libérer de pas mal de contraintes concernant le transfert de données PC - smartphone/tablette initialement filaire. Ainsi qu'un système de droits et d'accès aux projets qui permet de gérer finement la configuration et les permissions de plusieurs utilisateur/rices en lecture-écriture.
+Maintenant, connaissez-vous Claude QField, la cousine un peu éloignée de Jean-Marc ? Euh non, pardon, "le cloud QField", ["QFieldCloud"](https://qfield.cloud/), _QFC_ pour les intimes. Aucun rapport avec _Quantum Fried Chicken_, même si on va voir qu'il est parfois question de _buckets_. QfieldCloud c'est LA brique qui permet de faire la liaison cloud entre QGIS et QField, faisant ainsi de ce triptyque un système robuste et complet d'enquête terrain. QFieldCloud offre entre autres la possibilité de synchroniser les données saisies dans QField directement dans l'application, grâce à un mode semi-offline bien articulé, qui permet de se libérer de pas mal de contraintes concernant le transfert de données PC - smartphone/tablette initialement filaire. Ainsi qu'un système de droits et d'accès aux projets qui permet de gérer finement la configuration et les permissions de plusieurs utilisateur/rices en lecture-écriture.
 
 !!! info
     À ce moment de l'article, il est important de noter qu'il existe [ici](https://qfield.cloud/) une instance QFieldCloud "officielle" hébergée par OpenGIS. Qui propose une offre gratuite jusqu'à 100 MO de stockage. Ce qui peut s'avérer limité dès lors que les projets peuvent embarquer beaucoup de photos, et dont les projets privés ne permettent pas forcément la saisie par équipe/organisation ou par plusieurs utilisateur/rices. Pour celà, il y a [les offres Pro et Organization](https://qfield.cloud/pricing.html) qui offrent plus de stockage et plus d'autres trucs. Voire la version "Private Cloud", soit l'hébergement custom d'une instance de serveur QFieldCloud, dont la mise en place, rendue possible grâce à l'ouverture du logiciel, est au cœur de cet article. Mais, il faut savoir que mettre en place une propre instance suppose la charge d'un tas d'autres contraintes liées à l'hébergement : maintenance, montées de versions, backups ... Alors si vous aimez porter ceinture et bretelles, il vaut mieux privilégier l'instance officielle de QFieldCloud, ce qui aura en plus l'avantage de soutenir la boîte et pousser le développement de la solution. Sans oublier qu'une instance on-premise de QFieldCloud ne propose pas la belle page de configuration qu'on retrouve sur [app.qfield.cloud](https://app.qfield.cloud)...
 
-## Infrastructure
+### Infrastructure
 
 Si vous êtes toujours là, c'est donc que vous n'aimez pas les ceintures et les bretelles. Un traumatisme survenu lors de la Fête de la Bière peut-être ? N'hésitez pas à partager vos aventures dans la partie commentaires.
 
@@ -84,7 +84,7 @@ Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une
 
 _Penn ar Menez_ c'est le nom d'une ferme bio qui fait du fromage et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Chateaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
 
-## Installations
+### Installations
 
 ![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.png "logo Docker"){: .img-thumbnail-left }
 
@@ -127,7 +127,7 @@ usermod -aG docker qfc
 
 Puis on lance une session avec cet utilisateur via `su qfc`.
 
-## Un zeste de RTFM
+### Un zeste de RTFM
 
 ![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-thumbnail-left }
 
@@ -156,7 +156,7 @@ git checkout -b v0.24.0
 cp .env.example .env
 ```
 
-## Paramétrage
+### Paramétrage
 
 Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gros de la configuration du serveur. Il s'agit d'une liste de variables d'environnement ÉCRITES EN MAJUSCULES dont il nous faut adapter certaines :
 
@@ -174,7 +174,7 @@ Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gr
 
 - `COMPOSE_FILE=docker-compose.yml:docker-compose.override.standalone.yml`: il s'agit des fichiers "compose" qui déclarent les services en question de notre instance QFieldCloud. Zieutons-y un petit coup !
 
-## Déploiement
+### Déploiement
 
 Ces différents fichiers `docker-compose.*.yml` déclarent donc les différents services nécessaires à notre instance QFieldCloud. On remarque qu'il y en a plusieurs : le principal `docker-compose.yml`, qui contient les services "vitaux", qui vont être enrichis ("surchargés") par d'autres selon l'environnement que l'on souhaite : `dev`, `local`, `prod`, `test` ... et `standalone`, soit celui qu'on va mettre en place ici. Il s'agit d'un environnement autonome, qui offre tous les services nécessaires au bon fonctionnement de l'instance : stockage, BD postgres ...
 
@@ -186,7 +186,7 @@ cat > docker-compose.override.standalone.yml
 
 Puis remplissons-le via un bon CTRL+C / CTRL+V des familles avec le contenu de [ce fichier](https://github.com/opengisch/qfieldcloud/pull/844/files#diff-32a4168a7b1fcd63e4c0b12368085fea9e1aec07a103211409ad8538a27487b5), en terminant la saisie avec un CTRL+D.
 
-## C'est parti :rocket:
+### C'est parti :rocket:
 
 Pour démarrer la musique et donner le signe à l'orchestre, un coup de baguette avec la commande suivante :
 
@@ -241,7 +241,7 @@ docker compose exec app python manage.py status
 
 Normalement.
 
-## Certificats SSL
+### Certificats SSL
 
 Afin d'être en capacité nous connecter à notre instance QFieldCloud en HTTPS, un certificat SSL il nous faut. Il est possible d'en récupérer un grâce à [Let's Encrypt](https://letsencrypt.org/) et son utilitaire en ligne de commande `certbot` :
 
@@ -274,7 +274,10 @@ En tappant l'URL de votre nom de domaine en HTTPS dans un navigateur, l'interfac
 
 ![Écran de connexion à l'interface d'admin web](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldcloud_admin_login.webp){: .img-center loading=lazy }
 
-## Configuration dans l'interface web
+!!! info
+    L'utilisateur "admin" est celui créé un peu plus tôt avec la commande `docker compose run app python manage.py createsuperuser --username admin --email admin@mon.domain`. Il pourrait être judicieux de ressortir le post-it pour se connecter, et si nécessaire changer le mot de passe de l'admin dans l'interface web.
+
+### Configuration dans l'interface web
 
 C'est dans cette interface - l'interface d'admin de [Django](https://www.djangoproject.com/) soit le framework utilisé par QFieldCloud - que nous allons créer les utilisateurs, les organisations, les équipes, et assigner les droits sur les projets. Les projets sont eux créés directement dans QGIS grâce au plugin QFieldSync.
 
@@ -286,7 +289,7 @@ Voyons maintenant comment créer notre première utilisatrice : il faut nous ren
 
 _P.S. : le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores :eyes:. Si vous avez trouvé vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login)._
 
-## Création d'un projet QGIS
+### Création d'un projet QGIS
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
