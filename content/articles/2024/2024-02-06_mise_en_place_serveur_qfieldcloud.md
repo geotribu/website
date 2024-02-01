@@ -230,7 +230,8 @@ docker compose run app python manage.py collectstatic --noinput3
 docker compose run app python manage.py createsuperuser --username admin --email admin@mon.domain
 ```
 
-:warning: la dernière commande ci-dessus va demander un mot de passe pour le compte super-utilisateur de notre instance QFieldCloud. Il pourrait être judicieux de noter quelque part ce mot de passe, par exemple sur un post-it, ou encore mieux sur votre poignet avec un feutre.
+!!! warning
+    La dernière commande ci-dessus va demander un mot de passe pour le compte super-utilisateur de notre instance QFieldCloud. Il pourrait être judicieux de noter quelque part ce mot de passe, par exemple sur un post-it, ou encore mieux sur votre poignet avec un feutre.
 
 Pour vérifier l'état des composantes du serveur, la commande suivante doit normalement renvoyer des "ok" :
 
