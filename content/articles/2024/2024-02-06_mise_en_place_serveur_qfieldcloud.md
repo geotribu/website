@@ -66,7 +66,7 @@ Plus concrètement, il s'agit d'une application mobile de saisie et relevé terr
 Maintenant, connaissez-vous Claude QField, la cousine un peu éloignée de Jean-Marc ? Euh non, pardon, "le cloud QField", ["QFieldCloud"](https://qfield.cloud/), _QFC_ pour les intimes. Aucun rapport avec _Quantum Fried Chicken_, même si on va voir qu'il est parfois question de _buckets_. QfieldCloud c'est LA brique qui permet de faire la liaison cloud entre QGIS et QField, faisant ainsi de ce triptyque un système robuste et complet d'enquête terrain. QFieldCloud offre entre autres la possibilité de synchroniser les données saisies dans QField directement dans l'application, grâce à un mode semi-offline bien articulé, qui permet de se libérer de pas mal de contraintes concernant le transfert de données PC - smartphone/tablette initialement filaire. Ainsi qu'un système de droits et d'accès aux projets qui permet de gérer finement la configuration et les permissions de plusieurs utilisateur/rices en lecture-écriture.
 
 !!! info
-    À ce moment de l'article, il est important de noter qu'il existe [ici](https://qfield.cloud/) une instance QFieldCloud "officielle" hébergée par OpenGIS. Qui propose une offre gratuite jusqu'à 100 MO de stockage. Ce qui peut s'avérer limité dès lors que les projets peuvent embarquer beaucoup de photos, et dont les projets privés ne permettent pas forcément la saisie par équipe/organisation ou par plusieurs utilisateur/rices. Pour celà, il y a [les offres Pro et Organization](https://qfield.cloud/pricing.html) qui offrent plus de stockage et plus d'autres trucs. Voire la version "Private Cloud", soit l'hébergement custom d'une instance de serveur QFieldCloud, dont la mise en place, rendue possible grâce à l'ouverture du logiciel, est au cœur de cet article. Mais, il faut savoir que mettre en place une propre instance suppose la charge d'un tas d'autres contraintes liées à l'hébergement : maintenance, montées de versions, backups ... Alors si vous aimez porter ceinture et bretelles, il vaut mieux privilégier l'instance officielle de QFieldCloud, ce qui aura en plus l'avantage de soutenir la boîte et pousser le développement de la solution. Sans oublier qu'une instance on-premise de QFieldCloud ne propose pas la belle page de configuration qu'on retrouve sur [app.qfield.cloud](https://app.qfield.cloud)...
+    À ce moment de l'article, il est important de noter qu'il existe [ici](https://qfield.cloud/) une instance QFieldCloud "officielle" hébergée par OpenGIS. Qui propose une offre gratuite jusqu'à 100 MO de stockage. Ce qui peut s'avérer limité dès lors que les projets peuvent embarquer beaucoup de photos, et dont les projets privés ne permettent pas forcément la saisie par équipe/organisation ou par plusieurs utilisateur/rices. Pour cela, il y a [les offres Pro et Organization](https://qfield.cloud/pricing.html) qui offrent plus de stockage et plus d'autres trucs. Voire la version "Private Cloud", soit l'hébergement custom d'une instance de serveur QFieldCloud, dont la mise en place, rendue possible grâce à l'ouverture du logiciel, est au cœur de cet article. Mais, il faut savoir que mettre en place une propre instance suppose la charge d'un tas d'autres contraintes liées à l'hébergement : maintenance, montées de versions, backups ... Alors si vous aimez porter ceinture et bretelles, il vaut mieux privilégier l'instance officielle de QFieldCloud, ce qui aura en plus l'avantage de soutenir la boîte et pousser le développement de la solution. Sans oublier qu'une instance on-premise de QFieldCloud ne propose pas la belle page de configuration qu'on retrouve sur [app.qfield.cloud](https://app.qfield.cloud)...
 
 ### Infrastructure
 
@@ -82,7 +82,8 @@ Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
 
-_Penn ar Menez_ c'est le nom d'une ferme bio qui fait du fromage et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Chateaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
+!!! info
+    _Penn ar Menez_ c'est le nom d'une ferme bio qui fait du fromage et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Châteaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
 
 ### Installations
 
@@ -181,10 +182,10 @@ Ces différents fichiers `docker-compose.*.yml` déclarent donc les différents 
 Si un fichier `docker-compose.override.standalone.yml` n'existe pas déjà dans le dépôt, créons-le :
 
 ```sh
-cat > docker-compose.override.standalone.yml
+touch docker-compose.override.standalone.yml
 ```
 
-Puis remplissons-le via un bon CTRL+C / CTRL+V des familles avec le contenu de [ce fichier](https://github.com/opengisch/qfieldcloud/pull/844/files#diff-32a4168a7b1fcd63e4c0b12368085fea9e1aec07a103211409ad8538a27487b5), en terminant la saisie avec un CTRL+D.
+Puis remplissons-le via un bon CTRL+C / CTRL+V des familles avec le contenu de [ce fichier](https://github.com/opengisch/qfieldcloud/pull/844/files#diff-32a4168a7b1fcd63e4c0b12368085fea9e1aec07a103211409ad8538a27487b5).
 
 ### C'est parti :rocket:
 
@@ -251,7 +252,10 @@ source .env
 certbot certonly --standalone -d ${QFIELDCLOUD_HOST}
 ```
 
-:warning: à noter que pour pouvoir récupérer un certificat avec la commande ci-dessus, il est nécessaire que le port 80 soit libre, et donc que nos services QFieldCloud soient éteints, enfin le service "nginx" surtout. Pour celà, voici l'interrupteur :
+!!! warning
+    À noter que pour pouvoir récupérer un certificat avec la commande ci-dessus, il est nécessaire que le port 80 soit libre, et donc que nos services QFieldCloud soient éteints, enfin le service "nginx" surtout.
+
+Pour cela, voici l'interrupteur :
 
 ```sh
 # nuit
@@ -285,15 +289,33 @@ Voyons maintenant comment créer notre première utilisatrice : il faut nous ren
 
 ![Écran de création d'un utilisateur dans l'interface web d'admin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldcloud_create_user.webp){: .img-center loading=lazy }
 
-À noter que la case "Staff status" permet à ce/tte people de se connecter à l'interface d'admin web. Combiné à une gestion des droits d'admin via la partie "Groups", celà peut permettre de créer des groupes d'admins avec des droits spécifiques et ce sans avoir à utiliser le super user principal.
+À noter que la case "Staff status" permet à ce/tte people de se connecter à l'interface d'admin web. Combiné à une gestion des droits d'admin via la partie "Groups", cela peut permettre de créer des groupes d'admins avec des droits spécifiques et ce sans avoir à utiliser le super user principal.
 
-_P.S. : le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores :eyes:. Si vous avez trouvé vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login)._
+!!! question "Jane Doe"
+    Le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores :eyes:. Si vous avez pensez avoir trouvé, vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login)._
+
+!!! info
+    Au cours de la vie du QFieldCloud, il est possible que dans QGIS / QField, un message d'erreur comportant la mention "subscription inactive" apparaisse, empêchant par là la possibilité de récupérer ou synchroniser les projets. Pour régler cela, il faut se connecter au serveur et rentrer les commandes suivantes de sorte à corriger le statut des souscriptions (qui deviennent inactives après un mois généralement) :
+
+```sh
+# se connecter en bash dans le container de la base de données interne
+docker exec -it qfieldcloud-db-1 /bin/bash
+
+# se connecter à la base de données avec psql en rentrant le mot de passe renseigné dans le fichier .env
+psql -U qfieldcloud_db_admin qfieldcloud_db
+```
+
+Puis en SQL, changer le statut des subscriptions :
+
+```sql
+UPDATE subscription_subscription SET status = 'active_paid';
+```
 
 ### Création d'un projet QGIS
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Créons maintenant un projet pour tester un tant soit peu notre setup. Il faudra d'abord se connecter à notre instance QFC dans le plugin QFieldSync. Pour celà, cliquer deux fois sur l'abeille cool dans l'interface de connexion et renseigner l'URL de l'instance de même que login / mot de passe :
+Créons maintenant un projet pour tester un tant soit peu notre setup. Il faudra d'abord se connecter à notre instance QFC dans le plugin QFieldSync. Pour cela, cliquer deux fois sur l'abeille cool dans l'interface de connexion et renseigner l'URL de l'instance de même que login / mot de passe :
 
 ![Écran de connexion du plugin QFieldSync](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldsync_login.webp){: .img-center loading=lazy }
 
@@ -316,22 +338,6 @@ Une fois le projet téléchargé dans la liste puis ouvert, c'est parti pour la 
 :sparkles: Magie magie ! :sparkles:
 
 ![David CopperQField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/david_copperqfield.webp){: .img-center loading=lazy }
-
-:sleepy: N.B. : il est possible que lors du téléchargement sur le mobile, un message d'erreur comportant la mention "subscription inactive" apparaisse, empêchant par là la possibilité de récupérer le projet. Pour régler celà, il faut se connecter au serveur et rentrer les commandes suivantes de sorte à corriger le statut des souscriptions :
-
-```sh
-# se connecter en bash dans le container de la base de données interne
-docker exec -it qfieldcloud-db-1 /bin/bash
-
-# se connecter à la base de données avec psql en rentrant le mot de passe renseigné dans le fichier .env
-psql -U qfieldcloud_db_admin qfieldcloud_db
-```
-
-Puis en SQL, changer le statut des subscriptions :
-
-```sql
-UPDATE subscription_subscription SET status = 'active_paid';
-```
 
 ## Et maintenant ?
 
