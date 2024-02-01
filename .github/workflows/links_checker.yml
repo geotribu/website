@@ -51,7 +51,7 @@ jobs:
           > linkchecker_report.html
 
       - name: Save report output as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: ${{ always() }}
         continue-on-error: true
         with:
