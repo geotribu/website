@@ -86,6 +86,8 @@ _Penn ar Menez_ c'est le nom d'une ferme bio qui fait du fromage et qui place se
 
 ## Installations
 
+![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.png "logo Docker"){: .img-thumbnail-left }
+
 Une fois l'accès à la VM effectif, on s'y connecte via une [session ssh](https://fr.wikipedia.org/wiki/Secure_Shell). Commençons par créer un utilisateur pour gérer l'installation et le déploiement, auquel on donne le [sudo](https://www.sudo.ws/):
 
 ```sh
