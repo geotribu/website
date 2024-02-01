@@ -129,6 +129,8 @@ Puis on lance une session avec cet utilisateur via `su qfc`.
 
 ## Un zeste de RTFM
 
+![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-thumbnail-left }
+
 Suivons maintenant les instructions sur [le dépôt GitHub de QFieldCloud](https://github.com/opengisch/qfieldcloud) :
 
 - récupérer le code du dépôt avec git :
