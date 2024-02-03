@@ -244,7 +244,7 @@ Normalement.
 
 ### Certificats SSL
 
-Afin d'être en capacité nous connecter à notre instance QFieldCloud en HTTPS, un certificat SSL il nous faut. Il est possible d'en récupérer un grâce à [Let's Encrypt](https://letsencrypt.org/) et son utilitaire en ligne de commande `certbot` :
+Afin d'être en capacité de nous connecter à notre instance QFieldCloud en HTTPS, un certificat SSL il nous faut. Il est possible d'en récupérer un grâce à [Let's Encrypt](https://letsencrypt.org/) et son utilitaire en ligne de commande `certbot` :
 
 ```sh
 apt install certbot
@@ -253,7 +253,7 @@ certbot certonly --standalone -d ${QFIELDCLOUD_HOST}
 ```
 
 !!! warning
-    À noter que pour pouvoir récupérer un certificat avec la commande ci-dessus, il est nécessaire que le port 80 soit libre, et donc que nos services QFieldCloud soient éteints, enfin le service "nginx" surtout.
+    À noter que pour pouvoir récupérer un certificat avec la commande ci-dessus, il est nécessaire que le port 80 soit libre, et donc que nos services QFieldCloud soient éteints, le service "nginx" surtout.
 
 Voici l'interrupteur :
 
@@ -292,7 +292,7 @@ Voyons maintenant comment créer notre première utilisatrice : il faut nous ren
 À noter que la case "Staff status" permet à ce/tte people de se connecter à l'interface d'admin web. Combiné à une gestion des droits d'admin via la partie "Groups", cela peut permettre de créer des groupes d'admins avec des droits spécifiques et ce sans avoir à utiliser le super user principal.
 
 !!! question "Jane Doe"
-    _Le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores. Si vous avez pensez avoir trouvé, vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login) :eyes:._
+    _Le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores. Si vous pensez avoir trouvé, vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login) :eyes:._
 
 N.B. : Au cours de la vie du QFieldCloud, il est possible que dans QGIS / QField, un message d'erreur comportant la mention "subscription inactive" apparaisse, empêchant par là la possibilité de récupérer ou synchroniser les projets. Pour régler cela, il faut se connecter au serveur et rentrer les commandes suivantes de sorte à corriger le statut des souscriptions (qui deviennent inactives après un mois généralement) :
 
