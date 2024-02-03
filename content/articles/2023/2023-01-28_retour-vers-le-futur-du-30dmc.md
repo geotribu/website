@@ -101,7 +101,7 @@ tags:
 :sound: Le _#30DayMapChallenge_, c'est aux géomaniacs ce que le _#harlemshake_ ou le _#wayawayachallenge_ sont aux ambianceurs. Cette année, le bruit et les décibelsmesurés sur les [fréquences métriques](https://30daymapchallenge.com/statistics/) du mot dièse ont pu s'avérer assourdissants, et ce sans aucune fausse note ni bémol à la clef. Les géochef/fes d'orchestre ont investi la sphère en masse : ils étaient des dizaines de milliers selon les organisateurs, seulement 4326 selon les [CRS](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_coordonn%C3%A9es_(cartographie)#Les_codes_EPSG)... On connaît la :notes: !
 
 <!-- markdownlint-disable MD033 -->
-<iframe width="100%" height="360" src="https://www.youtube-nocookie.com/embed/o-aDbQX2J3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="360" src="https://www.youtube-nocookie.com/embed/amfAAzhjC0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <!-- markdownlint-enable MD033 -->
 
 ----
