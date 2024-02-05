@@ -103,11 +103,13 @@ Renouveler l'opération avec d'autres hashtags. Par exemple :
 - [GIS](https://mapstodon.space/tags/GIS)
 - [SIG](https://mapstodon.space/tags/SIG)
 - [géomatique](https://mapstodon.space/tags/g%C3%A9omatique)
-- [saucisse](https://mapstodon.space/tags/saucisse), mais non il ne fallait pas cliquer sur celui-là ! Enfin bref, vous avez compris l'idée quoi.,
+- [saucisse](https://mapstodon.space/tags/saucisse), mais non il ne fallait pas cliquer sur celui-là !
+
+Enfin bref, vous avez compris l'idée quoi.
 
 ----
 
-## Importer des comptes et listes à suivre
+## Remplir la vacuité : importer des comptes et listes à suivre
 
 ![icône globe social](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globe social"){: .img-thumbnail-left }
 
