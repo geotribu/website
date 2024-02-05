@@ -72,7 +72,7 @@ Pour la suite, c'est du très classique :
 
     ```txt
     Je viens de la part de Julien, le gars qui écrit sur Geotribu.  
-    Vu que je travaille et/ou m'intéresse à la géomatique, il semble que cette instance soit la meilleure option.
+    Vu que je travaille ou m'intéresse à la géomatique, il semble que cette instance soit la meilleure option.
     ```
 
 ----
