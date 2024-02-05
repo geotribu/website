@@ -108,6 +108,8 @@ plugins:
         background_image: content/theme/assets/images/geotribu/background_geotribu.png
         color: "#3e93a7"
         font_family: Ubuntu
+  - typeset:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TYPESET, true]
 
 # Theme
 theme:
