@@ -209,7 +209,6 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
-      linenums: true
       line_spans: __span
       pygments_lang_class: true
       use_pygments: true
