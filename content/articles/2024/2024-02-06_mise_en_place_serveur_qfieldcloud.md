@@ -14,6 +14,9 @@ robots: index, follow
 tags:
     - QField
     - QFieldCloud
+    - infra
+    - docker
+    - déploiement
     - debian
     - Q-ops
 ---
