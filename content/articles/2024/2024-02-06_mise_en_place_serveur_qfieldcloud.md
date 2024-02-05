@@ -274,7 +274,7 @@ sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/fullchain.pem ./conf/nginx/cer
 
 Après avoir relancé les services, normalement le serveur doit maintenant être fonctionnel et prêt à l'emploi. Normalement.
 
-En tappant l'URL de votre nom de domaine en HTTPS dans un navigateur, l'interface web d'admin est maintenant disponible :
+En tapant l'URL de votre nom de domaine en HTTPS dans un navigateur, l'interface web d'admin est maintenant disponible :
 
 ![Écran de connexion à l'interface d'admin web](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldcloud_admin_login.webp){: .img-center loading=lazy }
 
