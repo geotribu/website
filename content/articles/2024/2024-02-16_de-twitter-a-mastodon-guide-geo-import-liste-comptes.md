@@ -193,7 +193,7 @@ Le mieux est encore de consulter [l'article de son blog](https://anitagraser.com
 
 ## Soutenir l'instance Mapstodon
 
-Enfin, si vous pensez utiliser le, sachez que [Mapstodon] a été créé par l'ami [Jérémy](https://mapper.fr/) et qu'à ce titre c'est son compte en banque qui est débité à chaque message posté, requête envoyée etc. Si vous en avez les moyens, donnez donc 1€/mois pour contribuer à la viabilité de cet espace qui ne se finance ni tout seul, ni en revendant nos données personnelles ou de l'espace publicitaire.
+Enfin, si vous pensez l'utiliser, sachez que [Mapstodon] a été créé par l'ami [Jérémy](https://mapper.fr/) et qu'à ce titre c'est son compte en banque qui est débité à chaque message posté, requête envoyée etc. Si vous en avez les moyens, donnez donc 1€/mois pour contribuer à la viabilité de cet espace qui ne se finance ni tout seul, ni en revendant nos données personnelles ou de l'espace publicitaire.
 
 ![Page Patreon pour l'instance Mapstodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mapstodon_patreon.webp){: .img-center loading=lazy }
 
