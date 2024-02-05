@@ -44,7 +44,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11
           cache: "pip"
@@ -57,7 +57,7 @@ jobs:
           python -m pip install --upgrade -r requirements-insiders.txt
 
       - name: Cache build dependencies (external assets downloaded)
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: ${{ github.ref }}
           path: .cache

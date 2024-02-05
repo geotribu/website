@@ -34,7 +34,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11
           cache: "pip"
@@ -58,7 +58,7 @@ jobs:
           fi
 
       - name: Cache build dependencies (external assets downloaded)
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: ${{ github.ref }}
           path: .cache
@@ -113,7 +113,7 @@ jobs:
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
 
       - name: Save build website as artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         with:
           name: pr-build-website
           path: artifact.tar.zst
