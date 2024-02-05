@@ -52,6 +52,12 @@
 <meta name="author" content="{{ author }}">
 {% endif %}
 
+{# Social card enabled #}
+{% set social_card = false %}
+{% if page and not page.is_homepage and page.meta and page.meta.social and page.meta.social.cards %}
+{% set social_card = true %}
+{% endif %}
+
 {# Cache-control #}
 <meta http-equiv="cache-control" content="max-age=14400" />
 <meta http-equiv="cache-control" content="public">
@@ -73,8 +79,14 @@
 <meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:widgets:align" content="center">
 
+<meta name="social:card" content="{{ social_card }}">
 {# Semantic web - schemas.org #}
 {% include "partials/schemas.html" %}
+{# Social cards - OpenGraph #}
+{% include "partials/cards_opengraph.html" %}
+{# Social cards - Twitter #}
+{% include "partials/cards_twitter.html" %}
+
 {% endblock %}
 
 

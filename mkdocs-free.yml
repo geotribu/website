@@ -21,7 +21,6 @@ site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
 # Scripts pendant le build
 hooks:
-  #   - hooks/mkdocs/G001_check_hyperlinks_internal.py
   - hooks/mkdocs/G003_social_cards_adapter.py
 
 # Plugins
@@ -74,6 +73,7 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
     - navigation.prune
     - navigation.tabs
     - navigation.top
@@ -88,6 +88,12 @@ theme:
   language: fr
   logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Basculer en mode clair
+
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -104,7 +110,7 @@ theme:
       accent: "deep orange"
       toggle:
         icon: material/weather-night
-        name: Basculer en mode clair
+        name: Basculer sur le réglage système
 
 # Customization
 extra:
@@ -147,7 +153,6 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
-      linenums: true
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -159,6 +164,7 @@ markdown_extensions:
       base_path:
         - "."
       check_paths: true
+      url_download: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

@@ -84,7 +84,7 @@ with output_config_file.open("w", encoding="UTF-8") as out_file:
     yaml.dump(
         config_to_complete,
         out_file,
-        sort_keys=True,
+        sort_keys=False,
         default_flow_style=False,
         encoding="UTF8",
     )

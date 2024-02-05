@@ -1,0 +1,9 @@
+{# Manual Social Cards - OpenGraph #}
+{% if social_card == false %}
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="{{ image }}">
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:type" content="{{ type }}">
+    <meta property="og:url" content="{{ page.canonical_url }}">
+{% endif %}

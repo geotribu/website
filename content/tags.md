@@ -12,4 +12,4 @@ search:
 
 # Contenus par mots-clés
 
-[TAGS]
+<!-- material/tags -->
