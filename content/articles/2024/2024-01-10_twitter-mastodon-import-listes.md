@@ -105,9 +105,19 @@ Renouveler l'opération avec d'autres hashtags. Par exemple :
 - [géomatique](https://mapstodon.space/tags/g%C3%A9omatique)
 - [saucisse](https://mapstodon.space/tags/saucisse), mais non il ne fallait pas cliquer sur celui-là ! Enfin bref, vous avez compris l'idée quoi.,
 
-### Importer des listes de comptes à suivre
+### Importer des comptes et listes à suivre
 
-Pour éviter le sentiment de vide et remise à zéro de son réseau, il est recommandé d'importer des listes de comptes.  Pour cela, l'écosystème propose un générateur de micro site web, [Mastodon Sociologists](https://github.com/trutzig89182/Mastodon-Sociologists), qui permet d'exporter des listes de comptes. C'est minimaliste, ça prend littéralement 5 minutes et ça permet d'avoir un "kit de démarrage" sur le réseau.
+Pour éviter le sentiment de vide et remise à zéro de son réseau, il est recommandé d'importer des listes de comptes. Pour cela, plusieurs solutions.
+
+#### Listes et comptes _curated_ par Geotribu
+
+[:material-account-eye: Télécharger le fichier des comptes suivis par Geotribu](https://cdn.geotribu.fr/img/download/mastodon_comptes_suivis_geotribu.csv){: target="_blank" download=mastodon_comptes_suivis_geotribu.csv .md-button }
+[:material-format-list-bulleted-type: Télécharger les listes de comptes de Geotribu](https://cdn.geotribu.fr/img/download/mastodon_listes_geotribu.csv){: target="_blank" download=mastodon_listes_geotribu.csv .md-button }
+{: align=middle }
+
+#### Listes de comptes
+
+Si vous préférez L'écosystème propose un générateur de micro site web, [Mastodon Sociologists](https://github.com/trutzig89182/Mastodon-Sociologists), qui permet d'exporter des listes de comptes. C'est minimaliste, ça prend littéralement 5 minutes et ça permet d'avoir un "kit de démarrage" sur le réseau.
 
 Allez, petit tutoriel rapide pour les moins aventureux/ses :
 
@@ -116,7 +126,8 @@ Allez, petit tutoriel rapide pour les moins aventureux/ses :
 
     ![Listes de comptes à suivre - Florian Ledermann](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mastodon_listes_Florian_Ledermann.webp){: .img-center loading=lazy }
 
-1. Sur votre instance Mastodon, se rendre dans votre profil et dans le menu `Import et export` > `Import` ou directement <https://mapstodon.space/settings/imports> si vous êtes sur l'instance [Mapstodon]. Choisir `Liste de comptes suivis` en haut, sélectionner le fichier CSV téléchargé précédemment (a priori `cartography_on_mastodon.csv`) :
+1. Sur votre instance Mastodon, se rendre dans votre profil et dans le menu `Import et export` > `Import` ou directement <https://mapstodon.space/settings/imports> si vous êtes sur l'instance [Mapstodon].
+1. Choisir `Listes de comptes suivis` en haut, sélectionner le fichier CSV téléchargé précédemment (a priori `cartography_on_mastodon.csv`) :
 
     ![Mastodon - Interface d'import des listes de comptes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mastodon_listes_import.webp){: .img-center loading=lazy }
 
