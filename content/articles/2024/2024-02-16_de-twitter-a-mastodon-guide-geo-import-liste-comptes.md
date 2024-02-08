@@ -68,7 +68,7 @@ Pour la suite, c'est du très classique :
     ```
 
 1. Si vous avez cliqué sur le bouton copier juste au-dessus, revenir sur vos pas, souffler et utiliser le générateur de mot de passe de votre navigateur ou gestionnaire idoine.
-1. Mettre un court texte pour les modérateur/ices. Comme je suis sympa, copier le suivant :
+1. Mettre un court texte pour l'équipe de modération. Comme je suis sympa, copier le suivant :
 
     ```txt
     Je viens de la part de Julien, le gars qui écrit sur Geotribu.  
