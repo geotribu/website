@@ -21,7 +21,7 @@ Sources et contenus du site de Geotribu, accessible via les URLs suivantes :
 
 ## Démarrage rapide
 
-> **Note**
+> [!IMPORTANT]  
 > Les instructions données ici se veulent succinctes et ne sont donc pas complètes. Pour un vrai guide de contribution en local, consulter le guide détaillé : [Installation et configuration de l'environnement de travail pour l'édition locale](https://contribuer.geotribu.fr/).
 
 ### Prérequis
