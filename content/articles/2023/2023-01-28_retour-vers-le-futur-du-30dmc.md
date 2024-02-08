@@ -101,7 +101,7 @@ tags:
 :sound: Le _#30DayMapChallenge_, c'est aux géomaniacs ce que le _[#harlemshake](https://www.youtube.com/watch?v=iXCl0fY-HfQ&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=5)_ ou le _[#wayawayachallenge](https://www.tiktok.com/@mrgoodvibesonly/video/7141041133483871493)_ sont aux ambianceurs. Cette année, le [bruit](https://www.youtube.com/watch?v=l5ozpoOmvNc&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=7) et les [décibels](https://www.youtube.com/watch?v=3ag62f8Vr14&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=8) mesurés sur les [fréquences métriques](https://30daymapchallenge.com/statistics/) du mot dièse ont pu s'avérer assourdissants, et ce sans aucune fausse note ni bémol à la clef. Les [géochefs d'orchestre](https://www.allocine.fr/film/fichefilm_gen_cfilm=291967.html) ont investi la sphère en masse : ils étaient des dizaines de milliers selon les organisateurs, seulement [4326](https://spatialreference.org/ref/epsg/4326/) selon les [CRS](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_coordonn%C3%A9es_(cartographie)#Les_codes_EPSG)... On connaît la :notes: !
 
 <!-- markdownlint-disable MD033 -->
-<iframe width="100%" height="360" src="https://www.youtube-nocookie.com/embed/o-aDbQX2J3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="360" src="https://www.youtube-nocookie.com/embed/amfAAzhjC0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <!-- markdownlint-enable MD033 -->
 
 ----
@@ -276,7 +276,7 @@ Si vous êtes aussi sur le point de :sleeping:, ou si vous commencez à :rage:, 
 
 :rice: [Du sucre](https://neocarto.hypotheses.org/12028) ? [Nicolas Lambert](https://neocarto.hypotheses.org/author/neocarto) de [Néocarto](https://neocarto.hypotheses.org/pourquoi-ce-blog) vous montre où se trouve le sucrier
 
-:page_with_curl: [L'addition](https://30daymapchallenge.com/statistics/) ? Vous réglez comment ? En espèce ? Sans contact ? Allez, c'est bon... c'est offert par [la maison](https://twitter.com/geojulien) :wink:
+:page_with_curl: [L'addition](https://30daymapchallenge.com/statistics/) ? Vous réglez comment ? En espèce ? Sans contact ? Allez, c'est bon... c'est offert par [la maison](https://mapstodon.space/@geotribu) :wink:
 
 ![2: lines](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_17_d2.png){: .img-center loading=lazy }
 
@@ -317,7 +317,5 @@ Rendez-vous en novembre pour la prochaine édition !
 ## Auteur
 
 --8<-- "content/team/gall.md"
-
-Mais parfois aussi malheureusement siggeur profane et immature, sans projection fixe, mélomane mégalomaniac et [mets l'ammoniac](https://youtube.com/playlist?list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4), sophiste narquois et surtout de mauvaise foi, ambiancé mais pas rassasié par ce #30DayMapChallenge, en attendant le #MapFailbruaryChallenge et celui de 2024 avec impatience !
 
 {% include "licenses/beerware.md" %}
