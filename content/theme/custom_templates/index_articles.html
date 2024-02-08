@@ -42,7 +42,7 @@
           {% if contenu.subtitle %}<h4>{{ contenu.subtitle | default('Sous-titre') }}</h4>{%
           endif
           %}
-          <nav class="md-tags">
+          Mots-clés : <nav class="md-tags">
             {% for tag in contenu.tags %}
             <a class="md-tag md-tag-icon" href="/tags/#tag:{{ tag | lower }}">{{ tag }}</a> {% endfor %}
           </nav>
