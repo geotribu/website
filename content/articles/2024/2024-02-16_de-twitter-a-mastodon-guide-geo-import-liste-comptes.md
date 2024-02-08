@@ -67,7 +67,7 @@ Pour la suite, c'est du très classique :
     12345678motdepass
     ```
 
-1. Si vous avez cliqué sur le bouton copier juste au-dessus, revenir sur vos pas, souffler et utiliser le générateur de mot de passe de votre navigateur ou gestionnaire idoine.
+1. Si vous avez cliqué sur le bouton :material-content-copy: ou vraiment copié le texte ci-dessus, voici les étapes à suivre calmement : revenir sur vos pas, souffler et utiliser le générateur de mot de passe de votre navigateur ou gestionnaire idoine.
 1. Mettre un court texte pour l'équipe de modération. Comme je suis sympa, copier le suivant :
 
     ```txt
