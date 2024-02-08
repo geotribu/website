@@ -19,7 +19,7 @@ tags:
 
 # Embarquer dans Mastodon : guide pour les géo*
 
-:calendar: Date de publication initiale : 31 janvier 2024
+:calendar: Date de publication initiale : 16 février 2024
 
 ## Introduction
 
