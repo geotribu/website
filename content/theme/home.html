@@ -31,88 +31,6 @@
 <!-- Content -->
 <div class="md-container secondary-section">
   <div class="g">
-    <!-- Revues de presse -->
-    <div class="section" id="revues-de-presse">
-      <div class="component-wrapper">
-        <div class="first-column">
-          <h3>Revues de presse</h3>
-          <p>
-            Un vendredi sur deux, c'est GeoRDP ! Un condensé d'actualités
-            sur l'écosystème de l'information géographique, concocté à plusieurs mains.
-          </p>
-          <p>
-            Nouveautés des logiciels, clients cartographiques, serveurs géographiques, applications mobiles,
-            modes de représentation graphique, Open Data, événements, OpenStreetMap... C'est ouvert !
-          </p>
-        </div>
-        <div class="second-column">
-          <div class="image-wrapper">
-            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}">
-              <img src="{{ page.next_page.meta.image }}" alt="lien vers la {{ page.next_page.title | e }}"
-                loading="lazy" draggable="false" title="Illustration de la {{ page.next_page.title | e }}">
-              <div class="image-overlay">{{ page.next_page.meta.description | truncate(100, False) | e }}</div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="component-wrapper" style="display: block;">
-        <h4></h4>
-        <div class="responsive-grid">
-          <a class="card-wrapper" href="{{ config.extra.url_contribuer }}rdp/add_news/">
-            <div class="card">
-              <div class="logo">
-                <span class="twemoji">
-                  {% include ".icons/fontawesome/brands/github-alt.svg" %}
-                </span>
-              </div>
-              <div class="card-content">
-                <h5>Proposer une news</h5>
-                <p>
-                  Créez un ticket (<i>issue</i>) ou une <i>Pull Request</i>.<br>
-                  Pas de compte GitHub ? Envoyez un mail à <em>geotribu+rdp [at] gmail.com</em>.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a class="card-wrapper" href="/team/">
-            <div class="card">
-              <div class="logo">
-                <span class="twemoji">
-                  {% include ".icons/fontawesome/brands/ubuntu.svg" %}
-                </span>
-              </div>
-              <div class="card-content">
-                <h5>Indépendance</h5>
-                <p>
-                  La Geotribu n'est liée à aucune structure. La parole y est donc
-                  libre de toute démarche publicitaire ou mercantile.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <!-- Customize -->
-          <a class="card-wrapper" href="{{ config.extra.url_contribuer }}guides/licensing/#licence-par-defaut">
-            <div class="card">
-              <div class="logo">
-                <span class="twemoji">
-                  {% include ".icons/fontawesome/brands/creative-commons.svg" %}
-                </span>
-              </div>
-              <div class="card-content">
-                <h5>Une veille libre et ouverte</h5>
-                <p>
-                  Les contenus sont publiés sous licence Creative Commons BY-NC-SA et le site est open-source.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
     <!-- Articles -->
     <div class="section follow" id="articles">
       <div class="component-wrapper">
@@ -193,6 +111,88 @@
             </div>
           </a>
 
+        </div>
+      </div>
+    </div>
+
+    <!-- Revues de presse -->
+    <div class="section" id="revues-de-presse">
+      <div class="component-wrapper">
+        <div class="first-column">
+          <h3>Revues de presse</h3>
+          <p>
+            Un vendredi sur deux, c'est GeoRDP ! Un condensé d'actualités
+            sur l'écosystème de l'information géographique, concocté à plusieurs mains.
+          </p>
+          <p>
+            Nouveautés des logiciels, clients cartographiques, serveurs géographiques, applications mobiles,
+            modes de représentation graphique, Open Data, événements, OpenStreetMap... C'est ouvert !
+          </p>
+        </div>
+        <div class="second-column">
+          <div class="image-wrapper">
+            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}">
+              <img src="{{ page.next_page.meta.image }}" alt="lien vers la {{ page.next_page.title | e }}"
+                loading="lazy" draggable="false" title="Illustration de la {{ page.next_page.title | e }}">
+              <div class="image-overlay">{{ page.next_page.meta.description | truncate(100, False) | e }}</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="component-wrapper" style="display: block;">
+        <h4></h4>
+        <div class="responsive-grid">
+          <a class="card-wrapper" href="{{ config.extra.url_contribuer }}rdp/add_news/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/github-alt.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Proposer une news</h5>
+                <p>
+                  Créez un ticket (<i>issue</i>) ou une <i>Pull Request</i>.<br>
+                  Pas de compte GitHub ? Envoyez un mail à <em>geotribu+rdp [at] gmail.com</em>.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper" href="/team/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/ubuntu.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Indépendance</h5>
+                <p>
+                  La Geotribu n'est liée à aucune structure. La parole y est donc
+                  libre de toute démarche publicitaire ou mercantile.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Customize -->
+          <a class="card-wrapper" href="{{ config.extra.url_contribuer }}guides/licensing/#licence-par-defaut">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/creative-commons.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Une veille libre et ouverte</h5>
+                <p>
+                  Les contenus sont publiés sous licence Creative Commons BY-NC-SA et le site est open-source.
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -353,26 +353,5 @@
 
 <!-- Light footer -->
 {% block footer %}
-<footer class="md-footer">
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <!-- Copyright and theme information -->
-      <div class="md-footer-copyright">
-        {% if config.copyright %}
-        <div class="md-footer-copyright__highlight">
-          {{ config.copyright }}
-        </div>
-        {% endif %}
-        Généré avec
-        <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
-        et le thème
-        <a href="https://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
-          Material for MkDocs</a>
-      </div>
-      {% block social %}
-      {% include "partials/social.html" %}
-      {% endblock %}
-    </div>
-  </div>
-</footer>
+{{ super() }}
 {% endblock %}
