@@ -127,6 +127,7 @@ theme:
     - content.footnote.tooltips
     - content.tabs.link
     - content.tooltips
+    - navigation.instant.preview
     - navigation.path
     - navigation.prune
     - navigation.tabs

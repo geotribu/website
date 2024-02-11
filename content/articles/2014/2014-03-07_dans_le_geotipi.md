@@ -25,7 +25,7 @@ Nous aurions aimé vous dire que nous sommes une [équipe](../../team/contributo
 
 En plus de l'aspect humain, nous discutons également au préalable sur notre mailing list des thématiques qui seront abordées. Cela a d'ailleurs donné lieu à des discussions enflammées. C'est d'ailleurs de là que vient l'origine de ce billet et surtout de la super image que Jérémie nous a créée pour l'occasion !
 
-[![Réunion d'équipe](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/g3022.png "Réunion d'équipe"){: .img-center loading=lazy }](https://geotribu.fr../../team/contributors.md)
+![Réunion d'équipe](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/g3022.png "Réunion d'équipe"){: .img-center loading=lazy }
 
 Notre implication quotidienne nous forge une expérience riche d'enseignement ! Pendant ce temps, Geotribu grandit et désormais un travail de management d'équipe est nécessaire !
 
