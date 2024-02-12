@@ -78,6 +78,7 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_RSS: true
           MKDOCS_ENABLE_PLUGIN_TAGS: true
           MKDOCS_ENABLE_PLUGIN_TYPESET: true
+          MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
           MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
 
       - name: Setup Pages
