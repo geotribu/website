@@ -156,7 +156,7 @@ Avant de se lancer, il est bon de paramétrer le fichier de configuration que vo
 
 Voici le fichier `config.env` à adapter :
 
-```ini
+```ini title="Environnement de travail" linenums="1"
 # REPERTOIRE DE TRAVAIL
 REPER='/mapillary_traitement_images'
 
@@ -185,7 +185,7 @@ Après mes premiers tests, lorsque je chargeais mes photos dans l'application [M
 
 Pour la première étape, j'ai utilisé `exiftool` pour lire chacune des images afin d'en extraire leur localisation ainsi que la date et l'heure de la prise de vue. En sortie, j'obtiens un fichier `csv` listant chacune des images ainsi que les paramètres demandés (latitude, longitude, date, nom du fichier, ...).
 
-```bash
+```bash title="Extraction de la localisation des images" linenums="1"
 exiftool -filename -gpstimestamp -gpsdatestamp -gpslatitude -gpslongitude -n -csv -r $REPER'/tmp' > './list/'$DATE_YMD'_img.csv'
 ```
 
@@ -193,7 +193,7 @@ exiftool -filename -gpstimestamp -gpsdatestamp -gpslatitude -gpslongitude -n -cs
 
 La deuxième étape est une étape intermédiaire qui permet de créer un fichier SIG à partir des informations extraites précédemment des images. En entrée, on a donc le fichier `csv` que l'on va transformer en une couche ponctuelle localisant les images et intégrant les informations extraites.
 
-```bash
+```bash title="Création du fichier au format SIG" linenums="1"
 ogr2ogr \
   -f "SQLite" \ # FORMAT DE SORTIE
   -dsco SPATIALITE=YES \
@@ -216,7 +216,7 @@ Finalement après de nombreux échanges avec [Michaël Galien](https://twitter.c
 
 Cette requête a ensuite été adaptée pour tourner avec ogr2ogr de manière autonome (OGR centré, je vous dis !).
 
-```bash
+```bash title="Identification des images" linenums="1"
 ogr2ogr \
 -f CSV \ # FORMAT DE SORTIE
 -dialect sqlite \
@@ -272,7 +272,7 @@ ogr2ogr \
 
 Une fois la liste des images à supprimer identifiée, il ne nous reste plus qu'à les effacer.
 
-```bash
+```bash title="Suppression des images" linenums="1"
 # SUPPRESSION DES IMAGES INUTILES
 for csvfile_sup in *.csv; # BOUCLE SUR LES FICHIERS CSV
 do
@@ -294,7 +294,7 @@ Pour la partie intégration du logo, je suis reparti d'une solution proposée pa
 [Accéder au projet Nadir Patcher :fontawesome-regular-file-code:](https://github.com/trek-view/nadir-patcher){: .md-button }
 {: align=middle }
 
-```bash
+```bash title="Intégration du logo" linenums="1"
 # Exemple : permet d'intéger un logo couvrant 17% de l'image panoramique
 python3 nadir-patcher.py $REPER'/tmp' $REPER'/logo.png' 17 $REPER'/out'
 ```
