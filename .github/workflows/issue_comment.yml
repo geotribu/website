@@ -57,6 +57,7 @@ jobs:
       - name: Save comment artifact
         uses: actions/upload-artifact@v4
         with:
+          overwrite: true
           path: "rdp*_output.md"
           retention-days: 15
 
