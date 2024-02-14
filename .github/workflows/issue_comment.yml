@@ -39,6 +39,7 @@ jobs:
       - name: Save form output as artifact
         uses: actions/upload-artifact@v4
         with:
+          name: input_form.json
           path: "rdp*.json"
           retention-days: 15
 
@@ -57,6 +58,7 @@ jobs:
       - name: Save comment artifact
         uses: actions/upload-artifact@v4
         with:
+          name: output_comment.md
           overwrite: true
           path: "rdp*_output.md"
           retention-days: 15
