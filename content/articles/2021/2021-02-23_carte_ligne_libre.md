@@ -150,6 +150,7 @@ https://openmaptiles.geo.data.gouv.fr/data/cadastre.json
 
 L'IGN met à disposition sans restriction un [flux de tuiles vectorielles de fond carte](https://geoservices.ign.fr/documentation/services_betas/vecteur-tuile.html) basé sur ses propres données ce qui peux contituer une alternative intéressante aux données OSM dans certains cas.
 
+<!-- markdownlint-disable MD024 -->
 #### Fond de carte (Style)
 
 ```javascript
