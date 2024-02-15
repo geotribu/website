@@ -44,7 +44,7 @@ Deux étapes dans ce tutoriel :
 - [installer et configurer le sous-système](#installer-wsl) Windows pour Linux
 - [utiliser GDAL 3.1.* dans Ubuntu 20.04](#utiliser-gdal-dans-le-sous-systeme-linux-de-windows) sans quitter son terminal Windows, ni déployer une grosse VM ou autre
 
-## Installer WSL
+## Installer ou activer WSL
 
 Même si [la documentation](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10) est très bien faite et même traduite en français, il me semble intéressant de paraphraser la documentation, me permettant d'y apporter quelques précisions au passage.
 

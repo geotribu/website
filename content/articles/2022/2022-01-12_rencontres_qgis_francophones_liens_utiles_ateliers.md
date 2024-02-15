@@ -99,12 +99,16 @@ Au menu : du Git, du fichier `.ini` et du script Python.
 
 L'idée de cet atelier est d'abord de passer un bon moment tout en apprenant à chasser les fonctions cachées ([*easter eggs*](https://fr.wikipedia.org/wiki/Easter_egg)) dans QGIS et à en ajouter de nouvelles pour voir si les utilisateurs les débusquent.
 
+<!-- markdownlint-disable MD024 -->
 #### Pré-requis logiciels
+<!-- markdownlint-enable MD024 -->
 
 - QGIS (LTR de préférence, la 3.16 à date donc)
 - un éditeur de code qui soit un poil spécialisé Python : ~~bloc-notes~~, Notepad++, Sublime Text, Visual Studio Code, vim, emacs, etc.
 
+<!-- markdownlint-disable MD024 -->
 #### Notions et compétences
+<!-- markdownlint-enable MD024 -->
 
 - vous savez que le sens de l'humour est le meilleur atout pour ne pas balancer son ordi par la fenêtre quand QGIS affiche "Crash dumped - minidump written..."
 - vous êtes abonné/e à Geotribu d'une façon ou d'une autre

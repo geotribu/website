@@ -125,6 +125,7 @@ Prérequis complémentaires :
     ```powershell
     $Env:PATH += ";$Env:APPDATA\Python\Python310\Scripts"
     ```
+<!-- markdownlint-enable MD046 -->
 
 ### Configurer
 
@@ -148,9 +149,11 @@ Prérequis complémentaires :
     ```powershell
     $env:QDT_QGIS_EXE_PATH="C:\\path\\to\\qgis-ltr-bin.exe"
     ```
+<!-- markdownlint-enable MD046 -->
 
 ### Exécuter QDT
 
+<!-- markdownlint-disable MD046 -->
 === ":fontawesome-brands-linux: Linux et assimilés"
 
     Exemple sur Ubuntu LTS (22.04 à date) :
@@ -170,6 +173,7 @@ Prérequis complémentaires :
     ```powershell
     qdt --scenario https://github.com/geotribu/profils-qgis/raw/main/qdt/scenario.qdt.yml
     ```
+<!-- markdownlint-enable MD046 -->
 
 ----
 

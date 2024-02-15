@@ -21,7 +21,7 @@ tags:
     - Q-ops
 ---
 
-# Mise en place d'une instance QFieldCloud
+# Déploiement et configuration d'un serveur QFieldCloud
 
 :calendar: Date de publication initiale : 6 février 2024
 
