@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-02-16 10:20:00
+date: 2024-02-16
 description: En 2024, faire de la veille en géomatique sur Twitter/X devient pénible voire malaisant. Guide à destination des géo* qui veulent embarquer dans l'aventure Mastodon.
 icon: material/mastodon
 image:
