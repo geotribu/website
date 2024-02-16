@@ -34,9 +34,16 @@ Peur d'un énième guide ? Je comprends.
 Ce guide est fait sur-mesure pour les cartographes, géomaticiennes, géomaticiens et même pour les sigistes ! Oui, même pour les sigistes.
 Impressionné/e ? Je comprends.
 
-Je comprends sincèrement que l'inertie est forte, que sortir de sa zone de confort avec les habitudes et followers acquis ces dernières années est contre-nature, que maintenir une présence sur les réseaux sociaux est déjà suffisamment chronophage pour ne pas s'en rajouter, que l'émiettement des plateformes est douloureux, qu'il est tentant de faire de LinkedIn sa page d'accueil malgré la part toujours plus importante de contenus _bullshités_ à l'IA, que les concepts sous-jacents à Mastodon et tous ces machins de Fediverse font plus penser à un kif de geeks qui ont transposé leurs fantasmes des univers de super-héros dans leurs outils du quotidien mais qu'on n'a pas que ça à faire de configurer ceci, paramétrer cela, lancer telle commande, etc.
+Je comprends sincèrement que :
 
-Je comprends. Vraiment. Oui, même si c'est contre ma propre nature de géogeek justement :wink:.  
+- l'inertie est forte,
+- que sortir de sa zone de confort avec les habitudes et followers acquis ces dernières années est contre-nature,
+- que maintenir une présence sur les réseaux sociaux est déjà suffisamment chronophage pour ne pas s'en rajouter,
+- que l'émiettement des plateformes est douloureux et également chronophage,
+- qu'il est tentant de faire de LinkedIn sa page d'accueil malgré la part toujours plus importante de contenus _bullshités_ à l'IA,
+- que les concepts sous-jacents à Mastodon et tous ces machins de Fediverse font plus penser à un kif de geeks qui ont transposé leurs fantasmes des univers de super-héros dans leurs outils du quotidien mais qu'on n'a pas que ça à faire de configurer ceci, paramétrer cela, lancer telle commande, etc.
+
+Je comprends. Vraiment. Oui, même si c'est contre ma propre nature de géogeek justement. :wink:  
 Mais je suis persuadé qu'il y a un intérêt à peupler ce réseau social de gens plus diversifiés que ceux qui vont presque naturellement sur Mastodon au risque d'en faire justement une bulle d'écho entre technophiles plutôt de gauche ; comme BlueSky semble l'être pour le monde universitaire / CSP+... et t**X**itter celle des réactionnaires.
 
 Essayez. Ça n'engage à rien. Vraiment.  
