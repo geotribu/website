@@ -1,5 +1,5 @@
 ---
-title: "De Twitter à Mastodon : guide pour les géomaticien/nes"
+title: "De Twitter (X) à Mastodon : guide pour les géomaticien/nes"
 subtitle: En attendant l'avènement du Y
 authors:
     - Julien Moura
@@ -74,7 +74,7 @@ Pour la suite, c'est du très classique :
 1. Mettre un court texte pour l'équipe de modération. Comme je suis sympa, copier le suivant :
 
     ```txt
-    Je viens de la part de Julien (@geojulien@mapstodon.space), un gars qui écrit sur Geotribu (@geotribu@mapstodon.space).  
+    Je viens de la part de Julien (@geojulien@mapstodon.space), une des personnes qui écrit sur Geotribu (@geotribu@mapstodon.space).  
     Vu que je travaille ou m'intéresse à la géomatique, il semble que cette instance soit la meilleure option.
     ```
 
