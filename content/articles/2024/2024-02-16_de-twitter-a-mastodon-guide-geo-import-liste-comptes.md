@@ -1,5 +1,5 @@
 ---
-title: "De X Twitter à Mastodon, guide de migration pour les géomaticien/nes"
+title: "De Twitter à Mastodon : guide pour les géomaticien/nes"
 subtitle: En attendant l'avènement du Y
 authors:
     - Julien Moura
