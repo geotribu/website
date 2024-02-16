@@ -60,7 +60,7 @@ Vous avez 3 options. Seulement 3 ? Oui, vous n'êtes pas là pour avoir trop de 
 
 Donc 3 options disais-je :
 
-- [**mapstodon.space**](https://mapstodon.space/) : celle qu'il vous faut. Vous pouvez ignorer les deux suivantes si vous avez geo ou carto quelque part en haut de votre CV.
+- [**mapstodon.space**](https://mapstodon.space/) : celle qu'il vous faut (dont nous parlions dès [novembre 2022](../../rdp/2022/rdp_2022-11-18.md#mapstodonspace)). Vous pouvez ignorer les deux suivantes si vous avez geo ou carto quelque part en haut de votre CV.
 - [fosstodon.org](https://fosstodon.org/) : si vous êtes sous licence GPL2+.
 - [mastodon.social](https://mastodon.social/) : l'instance principale, si vous voulez un max de liberté et un facteur de dispersion élevé.
 
