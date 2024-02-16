@@ -239,6 +239,9 @@ J'espère que ces quelques étapes vous auront aidé à franchir les premières 
 
 Si l'article vous a intéressé et aidé à embarquer, venez donc le dire en réponse au post sur Mapstodon qui le diffusera. Si vous êtes assez actif/ve et publiez principalement sur la géo ou la carto, on vous ajoutera à nos listes de comptes :wink:.
 
+<iframe src="https://mapstodon.space/@geotribu/111940866730305818/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600" allowfullscreen="allowfullscreen"></iframe>
+{: align=middle }
+
 ----
 
 ## Auteur {: data-search-exclude }
