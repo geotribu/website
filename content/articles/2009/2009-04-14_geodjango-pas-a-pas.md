@@ -39,7 +39,7 @@ Avant d'aller plus loin, il est nécessaire que nous renseignons un peu notre fi
 
 La création d'une application se déroule en plusieures étapes. Il sera nécessaire tout d'abord d'initialiser celle-çi à partir de Django, pour ensuite définir le modèle correspondant à nos données pour enfin les importer dans notre base.
 
-### Création de l'application
+### Amorce de la structure
 
 Pour créer notre application django dispose d'un utilitaire disponible à partir du fichier manage.py. La commande à réaliser dans un shell est la suivante :
 

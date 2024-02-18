@@ -25,14 +25,10 @@ Sites cartographiques intéressants ou originaux pas leur contenu, leur représe
 
 ## GoogleMaps
 
-### WebMapping
-
 - [Liste et présentation des Eclipses Solaires](http://xjubier.free.fr/en/site_pages/SolarEclipsesGoogleMaps.html)
 - [Suivre des satellites en temps réel](http://www.n2yo.com/)
 
 ## OpenLayers
-
-### WebMapping
 
 - [Comprendre et visualiser ce qu'est une fractale](http://gis.ibbeck.de/apps/Mandelbrot/htdocs/wms_mandelbrot_frames.html)
 - [Distance entre deux points](http://gis.ibbeck.de/ginfo/apps/OLExamples/OL26/examples/gc_example.html)

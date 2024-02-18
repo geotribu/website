@@ -1,8 +1,8 @@
 Usage: geotribu [-v] [-h] [--version]
-                {read-latest,récents,latest,rl,rss,search-content,contenus,sc,search-image,si,ouvrir,lire,open,or,read,upgrade,auto-update,maj,update,creer,new,nouveau,comments,commentaires,coms,images,img}
+                {read-latest,récents,latest,rl,rss,search-content,contenus,sc,search-image,si,ouvrir,lire,open,or,read,upgrade,auto-update,maj,update,creer,new,nouveau,comments,commentaires,coms,images,img,social,rezosocio}
                 ...
 
-Geotribu Toolbelt 0.26.0 - Une ligne de commande pour Geotribu qui offre des outils pour rechercher et consulter les contenus et images, et faciliter les tâches récurrentes des contributeur/ices.
+Geotribu Toolbelt 0.32.0 - Une ligne de commande pour Geotribu qui offre des outils pour rechercher et consulter les contenus et images, et faciliter les tâches récurrentes des contributeur/ices.
 
 Options:
   -v, --verbose         Niveau de verbosité : None = WARNING, -v = INFO, -vv =
@@ -12,7 +12,7 @@ Options:
   --version             Affiche la version du CLI et s'arrête là.
 
 Sous-Commandes:
-  {read-latest,récents,latest,rl,rss,search-content,contenus,sc,search-image,si,ouvrir,lire,open,or,read,upgrade,auto-update,maj,update,creer,new,nouveau,comments,commentaires,coms,images,img}
+  {read-latest,récents,latest,rl,rss,search-content,contenus,sc,search-image,si,ouvrir,lire,open,or,read,upgrade,auto-update,maj,update,creer,new,nouveau,comments,commentaires,coms,images,img,social,rezosocio}
     read-latest (récents, latest, rl, rss)
                         Consulter les derniers contenus du site
     search-content (contenus, sc)
@@ -29,6 +29,8 @@ Sous-Commandes:
     comments (commentaires, coms)
                         Consulter et gérer les commentaires.
     images (img)        Chercher, gérer et optimiser les images.
+    social (rezosocio, social)
+                        Commandes liées aux réseaux sociaux.
 
 Geotribu en ligne de commande pour rechercher dans les contenus et les images, consulter les derniers contenus sans quitter son terminal.
 Encore meilleur avec les terminaux gérant les hyperliens : Bash, PowerShell 5+, etc.

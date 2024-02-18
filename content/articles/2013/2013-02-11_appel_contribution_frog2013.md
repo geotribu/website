@@ -7,6 +7,7 @@ categories:
 comments: true
 date: 2013-02-11
 description: "Appel à contribution pour le FRancophone Open source Géomatique (FROG) 2013"
+icon: simple/osgeo
 tags:
     - FOSS4G
     - FROG
@@ -20,8 +21,6 @@ tags:
 ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
 
 Il n'est pas vraiment dans nos habitudes de relayer des informations en dehors des revues de presse et d'articles à vocation technique. Néanmoins comme un grand nombre de nos lecteurs s'intéresse aux domaines de la Géomatique libre (et que par ailleurs un de nos rédacteurs est impliqué dans l'organisation...), nous vous invitons à répondre à l'appel à publications de ce premier rendez-vous SIG opensource français. Nous reproduisons ci-dessous le communiqué officiel.
-
-## Appel à contribution pour le FRancophone Open source Géomatique (FROG) 2013
 
 ![logo OSGEO](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osgeo.png "logo OSGEO"){: .img-thumbnail-left }
 

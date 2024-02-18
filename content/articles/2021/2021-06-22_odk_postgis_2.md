@@ -188,7 +188,9 @@ Le GPS peut nous aider à dessiner automatiquement points, lignes et polygones, 
 ![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: loading=lazy width=175px }
 {: align=middle }
 
+<!-- markdownlint-disable MD024 -->
 #### Extrait de la feuille **survey**
+<!-- markdownlint-enable MD024 -->
 
 | -- | **type**               | **name**                  | **label**                     | **calculation**                              | **required** | **appearance**      | **default** | **relevant**                                | **choice_filter**                           | **bind::odk:length** | **body::accuracyThreshold** |
 | -- | ---------------------- | ------------------------- | ----------------------------- | -------------------------------------------- | ------------ | ------------------- | ----------- | ------------------------------------------- | ------------------------------------------- | -------------------- | --------------------------- |
@@ -221,9 +223,9 @@ La colonne **choice_filter**, utilisée pour la question _methode_geo_ permet de
 La colonne **relevant** permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correspondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
 
 Des fonctions, appelées dans la colonne **calculation** permettent de réaliser des calculs pendant la saisie, ici l'heure courante, la longueur d'un ligne et la surface d'un polygone.
-
+<!-- markdownlint-disable MD024 -->
 #### Extrait de la feuille choices
-
+<!-- markdownlint-enable MD024 -->
 La liste des choix proposés pour la méthode de localisation des observations est décrite comme ceci :
 
 | **list_name** | **name**   | **label**             | **filter** |
@@ -308,9 +310,9 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 ![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }
 ![Visualisation de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualisation de l'image annotée"){: loading=lazy width=175px }
 {: align=middle }
-
+<!-- markdownlint-disable MD024 -->
 #### Extrait de la feuille de calcul **survey**
-
+<!-- markdownlint-enable MD024 -->
 | **type**                 | **name**      | **label**           | **appearance** | **relevant**           | **parameters**  |
 | ------------------------ | ------------- | ------------------- | -------------- | ---------------------- | --------------- |
 | select_one prendre_image | prendre_image | Prendre une photo ? |                |                        |                 |

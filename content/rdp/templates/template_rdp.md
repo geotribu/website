@@ -5,7 +5,7 @@ authors:
 categories:
     - revue de presse
 comments: true
-date: 2023-08-21 14:20
+date: 2023-08-21
 description: "Description de 160 caractères maximum qui résume la RDP. Cette description est présente dans le flux RSS, la newsletter, les moteurs de recherche, en page d'accueil... "
 image: "Image d'illustration de la RDP qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
 license: default

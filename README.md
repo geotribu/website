@@ -1,10 +1,15 @@
 # Site web de Geotribu
 
-![Deploy to Github Pages](https://github.com/geotribu/website/workflows/Deploy%20to%20Github%20Pages/badge.svg)
-![Pull Request Checker](https://github.com/geotribu/website/workflows/Pull%20Request%20Checker/badge.svg)
+[![🚀 Déploiement](https://github.com/geotribu/website/actions/workflows/deploy.yml/badge.svg)](https://github.com/geotribu/website/actions/workflows/deploy.yml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/geotribu/website/master.svg)](https://results.pre-commit.ci/latest/github/geotribu/website/master)
+[![Pull Request Checker 🛃](https://github.com/geotribu/website/actions/workflows/pr_checker_build.yml/badge.svg)](https://github.com/geotribu/website/actions/workflows/pr_checker_build.yml)
+[![🎳 Markdown Linter](https://github.com/geotribu/website/actions/workflows/pr_linter_markdown.yml/badge.svg)](https://github.com/geotribu/website/actions/workflows/pr_linter_markdown.yml)
+[![🎳 Vérification des liens](https://github.com/geotribu/website/actions/workflows/links_checker.yml/badge.svg)](https://github.com/geotribu/website/actions/workflows/links_checker.yml)
+[![🤖 Réponse automatique à un ticket de proposition de contenu](https://github.com/geotribu/website/actions/workflows/issue_comment.yml/badge.svg)](https://github.com/geotribu/website/actions/workflows/issue_comment.yml)
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/geotribu/website)
+[![Ouvrir dans l'éditeur en ligne](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/geotribu/website)
+
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
 Sources et contenus du site de Geotribu, accessible via les URLs suivantes :
 
@@ -16,13 +21,15 @@ Sources et contenus du site de Geotribu, accessible via les URLs suivantes :
 
 ## Démarrage rapide
 
+> [!IMPORTANT]  
+> Les instructions données ici se veulent succinctes et ne sont donc pas complètes. Pour un vrai guide de contribution en local, consulter le guide détaillé : [Installation et configuration de l'environnement de travail pour l'édition locale](https://contribuer.geotribu.fr/).
+
 ### Prérequis
 
-- Python >= 3.7
+- Python >= 3.9
 
 #### Recommandés
 
-- NodeJS LTS (pour l'index)
 - Visual Studio Code
 
 ### Installation
@@ -60,7 +67,7 @@ mkdocs build
 Version complète gratuite :
 
 ```bash
-mkdocs build -f mkdocs-free.yml --dirtyreload
+mkdocs build -f mkdocs-free.yml
 ```
 
 Version minimale (seulement certains plugins) :

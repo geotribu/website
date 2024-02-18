@@ -22,6 +22,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 juin 2021
 
+<!-- markdownlint-disable MD024 -->
 ## Prérequis
 
 * une machine avec [R](https://www.r-project.org) 4.0 et [RStudio](https://www.rstudio.com)
