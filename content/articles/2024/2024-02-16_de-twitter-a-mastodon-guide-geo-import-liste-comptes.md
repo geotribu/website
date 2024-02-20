@@ -31,7 +31,7 @@ Nous sommes en 2024 et il est temps de faire de [X (Twitter)](https://x.com/geot
 Peur de sauter par-dessus bord ? Je comprends.  
 Voici un guide pour atterrir en douceur sur le réseau décentralisé Mastodon.  
 Peur d'un énième guide ? Je comprends.  
-Ce guide est fait sur-mesure pour les cartographes, géomaticiennes, géomaticiens et même pour les sigistes ! Oui, même pour les sigistes.
+Ce guide est fait sur mesure pour les cartographes, géomaticiennes, géomaticiens et même pour les sigistes ! Oui, même pour les sigistes.
 Impressionné/e ? Je comprends.
 
 Je comprends sincèrement que :
@@ -180,7 +180,7 @@ L'écosystème propose un générateur de micro site web, [Mastodon Sociologists
 Allez, petit tutoriel rapide pour les moins aventureux/ses :
 <!-- markdownlint-disable MD051 -->
 1. Se rendre sur [le site de Florian Ledermann](https://cartolab.at/cartography-on-mastodon/)
-1. Sélectionner les catégories qui vous intéressent. Il est aussi possible de sélectionner compte par compte mais si vous êtes rendus là c'est que vous n'êtes pas ce genre de forçat :grin:. Personnellement, je commence par tout déselectionner (`Select none`) puis je clique sur les `Select all` en regard des catégories `Cartography, geovisualization and visual aspects of GIS`, `GIS, geodata and geography` et `General information visualization & data science` ce qui, à date, représente 208 des 245 comptes répertoriés :
+1. Sélectionner les catégories qui vous intéressent. Il est aussi possible de sélectionner compte par compte, mais si vous êtes rendus là c'est que vous n'êtes pas ce genre de forçat :grin:. Personnellement, je commence par tout désélectionner (`Select none`) puis je clique sur les `Select all` en regard des catégories `Cartography, geovisualization and visual aspects of GIS`, `GIS, geodata and geography` et `General information visualization & data science` ce qui, à date, représente 208 des 245 comptes répertoriés :
 
     ![Listes de comptes à suivre - Florian Ledermann](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mastodon_listes_Florian_Ledermann.webp){: .img-center loading=lazy }
 
@@ -224,7 +224,7 @@ Enfin bref, vous avez compris l'idée quoi.
 
 ## Soutenir l'initiative Mapstodon
 
-Enfin, si vous pensez l'utiliser, sachez que [Mapstodon] a été créé par l'ami [Jérémy](https://mapper.fr/) et qu'à ce titre c'est son compte en banque qui est débité à chaque message posté, requête envoyée etc. Si vous en avez les moyens, donnez donc 1€/mois pour contribuer à la viabilité de cet espace qui ne se finance ni tout seul, ni en revendant nos données personnelles ou de l'espace publicitaire.
+Enfin, si vous pensez l'utiliser, sachez que [Mapstodon] a été créé par l'ami [Jérémy](https://mapper.fr/) et qu'à ce titre c'est son compte en banque qui est débité à chaque message posté, requête envoyée, etc. Si vous en avez les moyens, donnez donc 1€/mois pour contribuer à la viabilité de cet espace qui ne se finance ni tout seul, ni en revendant nos données personnelles ou de l'espace publicitaire.
 
 ![Page Patreon pour l'instance Mapstodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mapstodon_patreon.webp){: .img-center loading=lazy }
 
