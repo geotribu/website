@@ -43,6 +43,7 @@ plugins:
       locale: fr
   - macros:
       include_dir: content/toc_nav_ignored/snippets
+      module_name: hooks/macros/custom_jinja
   - minify:
       minify_css: true
       css_files:
