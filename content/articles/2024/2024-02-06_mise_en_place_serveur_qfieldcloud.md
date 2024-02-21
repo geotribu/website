@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-02-05 16:20:00
+date: 2024-02-05
 description: QFieldCloud, l'abeille cool. QField c'est bien. QFieldCloud c'est très bien. Mais avoir son propre serveur QFieldCloud, c'est parfois encore mieux ! Guide de déploiement et de configuration.
 icon: octicons/server-16
 license: beerware
