@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-07-05
 description: "Open Data: Des paroles aux actes"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 05 juillet 2012
 
-![opendata](https://cdn.geotribu.fr/img/logos-icones/divers/open_data.jpg "Open data"){: .img-rdp-news-thumb }
+![opendata](https://cdn.geotribu.fr/img/logos-icones/divers/open_data.jpg "Open data"){: .img-thumbnail-left }
 
 Organisée par [Telecom Valley](http://www.telecom-valley.fr/), la 3e édition des [SophiaConf](http://www.sophiaconf.fr/sophiaconf2012.html) a porté une attention toute particulière au sujet de l'Open Data. Prévue dans le droit français depuis 1978, son application n'a pas toujours été effective. Mais les choses changent. L'ouverture récente de [data.gouv.fr](http://www.data.gouv.fr/) ou les initiatives des différents acteurs publics sont des exemples concrets de cette évolution. Néanmoins, par sa pluralité d'actions et d'acteurs, l'Open Data peut-être un thème difficile à appréhender. Pour les collectivités et les producteurs de données cela nécessite un plan d'action spécifique dans lequel se mêlent technologie, animation et concepts juridiques. L'objectif réussi de cette journée était de démystifier ce terme en donnant la parole à des intervenants aux compétences diverses. Découpée en deux parties, l'une consacrée aux producteurs et la seconde aux développeurs cet événement fût l'occasion d'aborder les différents aspects et opportunités relatifs à l'Open Data.
 

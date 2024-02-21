@@ -4,6 +4,7 @@ authors:
     - Thomas Gratier
 categories:
     - article
+comments: true
 date: "2015-06-04 10:20"
 description: "Tutoriel d'installation et de déploiement d'addok, le servur de géocodage lié à la BAN/BANO."
 license: default
@@ -23,7 +24,7 @@ tags:
 
 ## Introduction
 
-![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-rdp-news-thumb }
+![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-thumbnail-left }
 
 Le but est de rappeler ce qu'est le géocodage. A quoi généralement, cela sert.
 

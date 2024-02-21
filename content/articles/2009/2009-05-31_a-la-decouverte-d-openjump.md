@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-05-31
 description: "A la découverte d'OpenJump"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 31 mai 2009
 
-![logo OpenJump](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openjump.png "logo OpenJump"){: .img-rdp-news-thumb }
+![logo OpenJump](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openjump.png "logo OpenJump"){: .img-thumbnail-left }
 
 Ce billet fait suite à la réflexion commencée lors de la présentation du logiciel [Puzzle-Gis](http://geotribu.net/node/117) dont le but est de découvrir et comparer l'offre de logiciel SIG Open Source disponible. Nous allons cette fois aborder Open Jump. A l'instar de [Skyjump](http://skyjumpgis.org/), [DeeJump](http://www.lat-lon.de/latlon/portal/media-type/html/user/anon/page/default.psml/js_pane/produkte%2Csub_produkte_deeJUMP) ou encore [OpenJUMP-The merge](http://www.projet-sigle.org/), OpenJump est né d'un fork de [Jump](http://www.jump-project.org/) qui était à l'origine développé par [vividsolutions](http://www.vividsolutions.com/). De [nombreuses autres distributions](http://openjump.org/wiki/show/OpenJUMPs+Family) sont également disponibles, attention néanmoins à vérifier qu'elles soient toujours en développement. Avant même de commencer la présentation, une question me vient à l'esprit : cet éparpillement des distributions, des ressources et contributions ne sont-elles pas préjudiciables à OpenJump? En effet, même si celui-ci est basé sur un maximum de modularité les versions et plugins ne sont pas toujours compatibles entre eux. De plus on se sent parfois un peu perdu ne sachant pas trop quelle distribution sera la plus adaptée. Néanmoins, laissons de côté ce détail et passons aux choses sérieuses.
 

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-02-09
 description: "Sortie de QGIS 1.0 - KORE"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 09 février 2009
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Sortie début janvier, la première version stable de QGIS (1.0) nommée **KORE** est disponible pour la grande **majorité des plateformes**.
 

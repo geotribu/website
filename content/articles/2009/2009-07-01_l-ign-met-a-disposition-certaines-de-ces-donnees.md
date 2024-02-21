@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-01
 description: "L'IGN met à disposition certaines de ces données"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 01 juillet 2009
 
-![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }
+![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-thumbnail-left }
 
 J'ai souvent critiqué la politique commerciale de l'IGN notamment sur le sujet de la mise à disposition gratuite et sans condition de données que je juge d'ordre public (limites administratives...). C'est pourquoi lorsque j'ai appris par l'intermédiaire du site [PortailSIG](http://www.portailsig.org/) la mise à disposition par l'IGN de certaines de ces [données](http://professionnels.ign.fr/42/produits-gratuits/produits-gratuits-a-telecharger.htm) j'ai été agréablement surpris.
 

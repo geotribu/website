@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-04-12
 description: "Arramagong en version 3.0"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 12 avril 2010
 
-![Logo Arramagong](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/arramagong.png "logo Arramagong"){: .img-rdp-news-thumb }
+![Logo Arramagong](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/arramagong.png "logo Arramagong"){: .img-thumbnail-left }
 
 Il y a peu, nous vous avions présenté [Arramagong](http://www.arramagong.com/Arramagong/home.html) qui permet de disposer d'un environnement virtuel complètement orienté SIG (cf [billet](http://geotribu.net/node/231)). Cette [initiative](http://wiki.osgeo.org/wiki/Live_GIS_Disc_GSoC_2010) de l'[OSGEO](http://www.osgeo.org/) vise à regrouper, au sein d'une distribution [Xubuntu 9.10](http://www.xubuntu.org/), l'ensemble des applications dont pourrait avoir besoin le géomaticien moderne. Une nouvelle version (v3) est désormais disponible, les nouveautés portent notamment sur :
 

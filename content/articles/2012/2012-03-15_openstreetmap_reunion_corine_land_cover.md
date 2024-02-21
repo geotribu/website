@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-03-15
 description: "OpenStreetMap, la Réunion tout en couleur avec Corine Land Cover"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 mars 2012
 
-![Logo Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-rdp-news-thumb }
+![Logo Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-thumbnail-left }
 
 Cela fait maintenant un peu plus de trois ans que mon activité de contributeur d'OpenStreetMap se concentre sur une zone particulière de l'Océan Indien : l'Ile de la Réunion. Originaire de ce petit coin de paradis, j'avais à coeur de faire avancer ce projet de cartographie libre. Étant sur place au départ, je pouvais compter sur mon fidèle GPS. Mais en raison de mon expatriation professionnelle, il m'a fallu composer avec d'autres ressources. Heureusement, la possibilité d'accéder au cadastre me permet de continuer à enregistrer de nouvelles routes. Si le réseau commence à prendre forme, cela n'était pas le cas pour ce qui concerne l'occupation du territoire. La carte apparaissait donc un peu vide et cela ne représentait pas, à mon sens, la luxuriante végétation et les paysages changeants de l'île. De ce fait, comme cela avait [déjà été fait pour la métropole](https://wiki.openstreetmap.org/wiki/FR:Corine_Land_Cover), je me suis attelé à importer les données [Corine Land Cover](https://fr.wikipedia.org/wiki/Corine_Land_Cover) (CLC). Je vous livre ici la méthode ainsi que les outils utilisés.
 

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-07-21
 description: "iBiclou : OpenData, webmapping et vélo"
 tags:
@@ -18,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 21 juillet 2010
 
-![logo iBiclou](https://cdn.geotribu.fr/img/logos-icones/divers/ibiclou_geotribu_logo.png "logo iBiclou"){: .img-rdp-news-thumb }
+![logo iBiclou](https://cdn.geotribu.fr/img/logos-icones/divers/ibiclou_geotribu_logo.png "logo iBiclou"){: .img-thumbnail-left }
 
 L'[OpenData](https://en.wikipedia.org/wiki/Open_science_data) est à l'honneur en ce moment. Il s'agit d'un mouvement de libération des données de toutes formes pour les rendre accessibles à tout le monde, sans contrainte ni restriction. On peut assimiler ce mouvement à celui de l'[OpenSource](https://fr.wikipedia.org/wiki/Open_source) mais ici pour les données. Comment utiliser ces données dans des environnements WebMapping, où les trouver ?
 

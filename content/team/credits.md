@@ -31,7 +31,7 @@ L'aventure de Geotribu est rendue possible par l'existence de ressources et d'ou
 
 ## Outils libres
 
-![icône open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "icône open source"){: .img-rdp-news-thumb }
+![icône open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "icône open source"){: .img-thumbnail-left }
 
 Le site repose énormément sur des solutions libres et nous tenons à remercier les personnes mettant ainsi leur travail à la disposition de tout le monde :
 
@@ -50,7 +50,7 @@ A noter qu'en dépit du fait que GitHub ne soit pas open source, nous tirons én
 
 Afin de couvrir nos besoins, nous sommes parfois amenés à contribuer aux outils cités plus haut :
 
-- Isso : ajout des notifications via web hooks. [Voir l'article sur le sujet](/articles/2021/2021-05-14_commentaires_migration_disqus_isso/).
+- Isso : ajout des notifications via web hooks. [Voir l'article sur le sujet](../articles/2021/2021-05-14_commentaires_migration_disqus_isso.md).
 - plugin RSS pour MkDocs : génère des flux RSS à partir de l'historique Git et/ou des en-têtes des contenus. [Voir le dépôt du projet](https://github.com/Guts/mkdocs-rss-plugin/).
 - Tiny File Manager : complétion et amélioration de la traduction française ([voir la Pull Request](https://github.com/prasathmani/tinyfilemanager/pull/497)).
 

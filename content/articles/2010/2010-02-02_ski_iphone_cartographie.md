@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-02-02
 description: "Ski, iPhone et cartographie"
 tags:
@@ -18,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 02 février 2010
 
-![icône ski](https://cdn.geotribu.fr/img/logos-icones/divers/ski.png "icône ski"){: .img-rdp-news-thumb }
+![icône ski](https://cdn.geotribu.fr/img/logos-icones/divers/ski.png "icône ski"){: .img-thumbnail-left }
 
 Bon je ne vais pas vous raconter mes vacances, ce n'est pas le but de ce site - bonne neige ceci dit :-) , mais en tant qu'utilisateur d'iPhone je me suis décidé à tester des applications carto gratuites pour le ski. En effet, l'iPhone possède un récepteur GPS et on peut se servir dans l'AppleStore pour essayer différents produits.
 

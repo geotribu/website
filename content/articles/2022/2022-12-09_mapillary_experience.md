@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2022-12-09 14:20
 description: "Contribution Mapillary et retour d'expérience"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/mapillary_logo.jpeg"
@@ -39,9 +40,9 @@ tags:
 
 ## Intro
 
-![Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Mapillary"){: .img-rdp-news-thumb }
+![Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Mapillary"){: .img-thumbnail-left }
 
-Cet article s'inscrit dans la continuité de l'article que j'avais intitulé [accéder aux données Mapillary et les intégrer dans son SIG](/articles/2022/2022-05-31_donnees_mapillary/). En effet, au moment où celui-ci avait été rédigé, je n'étais pas encore équipé pour réaliser des vues immersives. C'est maintenant chose faite et je vous propose un retour d'expérience qui je l'espère permettra d'alimenter discussions et réflexions sur le sujet.
+Cet article s'inscrit dans la continuité de l'article que j'avais intitulé [accéder aux données Mapillary et les intégrer dans son SIG](2022-05-31_donnees_mapillary.md). En effet, au moment où celui-ci avait été rédigé, je n'étais pas encore équipé pour réaliser des vues immersives. C'est maintenant chose faite et je vous propose un retour d'expérience qui je l'espère permettra d'alimenter discussions et réflexions sur le sujet.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -52,7 +53,7 @@ Cet article s'inscrit dans la continuité de l'article que j'avais intitulé [ac
 
 ### Le point de départ
 
-![logo GoPro](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GoPro.jpg "logo GoPro"){: .img-rdp-news-thumb }
+![logo GoPro](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GoPro.jpg "logo GoPro"){: .img-thumbnail-left }
 
 J'interviens dans une petite Communauté de Communes et comme chacun le sait nos finances sont particulièrement contraintes. L'idée n'était donc pas de réinventer la poudre mais de s'appuyer sur des solutions éprouvées et mises en place dans différentes structures comme la [CA du Grand Montauban](https://prezi.com/p/ufcelyteyqzc/n-street-view-libre_retour_experience_grandmontauban_aitf/) ou l'Agglomération Val Parisis. Je suis donc parti sur :
 
@@ -321,7 +322,7 @@ A terme, l'objectif est de présenter ce projet à l'ensemble des services de l'
 Concrètement dans notre WebSIG, l'utilisateur peut visualiser les voies couvertes et à l'aide d'un outil métier, il peut interroger la localisation d'une photo pour ensuite la visualiser dans Mapillary.
 
 !!! Rappel
-    Comme expliqué dans l'[article précédent](/articles/2022/2022-05-31_donnees_mapillary/), les données relatives à la couvertures et aux images sont récupérées depuis Mapillary et régulièrement intégrées dans notre base de données.
+    Comme expliqué dans l'[article précédent](2022-05-31_donnees_mapillary.md), les données relatives à la couvertures et aux images sont récupérées depuis Mapillary et régulièrement intégrées dans notre base de données.
 
 ![Intégration WebSIG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-11-mapillary_experience/integration_websig.png "Intégration WebSIG"){: .img-center loading=lazy }
 

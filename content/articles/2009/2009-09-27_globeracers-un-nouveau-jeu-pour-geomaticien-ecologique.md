@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-27
 description: "GlobeRacers, un nouveau jeu pour geomaticien écologique"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 27 septembre 2009
 
-![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }
+![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-thumbnail-left }
 
 Quand le ludique s'allie au jeu cela forme [globeracers](http://www.globeracers.net/index.php?option=com_frontpage&Itemid=1). Le but de ce dernier est de parcourir le monde, le plus rapidement possible, afin de récupérer des statuettes disposées dans 10 métropole de la région. L'aspect développement durable n'est pas oublié puisqu'il faudra également réussir "vos missions" en émettant le moins de CO2 possible. Plus votre empreinte écologique est faible et meilleur est votre score. Les données et l'API utilisées sont celle de Google. L'écran de jeu est divisé en 3 zones :
 

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-04-06
 description: "OpenLayers en 3D"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 06 avril 2010
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 C'est fou ce qu'il est possible de faire maintenant avec un peu de JavaScript. Le cube en 3D, présenté ci-dessous, a été réalisé avec [OpenLayers](https://openlayers.org/) et [cssSandPaper](http://www.useragentman.com/blog/2010/03/09/cross-browser-css-transforms-even-in-ie/) et tout ça en moins d'une quarantaine de lignes de code.
 

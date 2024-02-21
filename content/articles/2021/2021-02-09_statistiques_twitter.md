@@ -4,6 +4,7 @@ authors:
     - Aurélien CHAUMET
 categories:
     - article
+comments: true
 date: "2021-02-09 10:20"
 description: "Récupérer des données sociales de Twitter, les préparer et les représenter est assez simple, grâce à trois bibliothèques Python : Twint, Pandas et Plolty. L'exemple développé ici s'appuie sur les statistiques autour des GeoRDP et articles parus dans GeoTribu en 2020"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png"
@@ -28,11 +29,11 @@ Prérequis :
 
 ## Introduction
 
-Nous avions déjà parlé statistiques GeoTribu dans [l'article rétrospectivo-bonne-annesque 2021](/articles/2021/2021-01-04_bilan_2020_perspectives_2021/).
+Nous avions déjà parlé statistiques GeoTribu dans [l'article rétrospectivo-bonne-annesque 2021](2021-01-04_bilan_2020_perspectives_2021.md).
 
 Pas que les statistiques de fréquentation soient un objectif en soi, mais nous souhaitions creuser un peu plus certaines de ces statistiques et principalement celles provenant de Twitter, dans un principe d'exploration et de compréhension.
 
-Et puis c'est aussi l'occasion de faire un article sur le forage de données ([une fois n'est pas coutume](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) :smile:), avec des metadonnées autour de l'activité GeoTribu !
+Et puis c'est aussi l'occasion de faire un article sur le forage de données ([une fois n'est pas coutume](../2020/2020-09-08_web-scraping_scrapy_geotribu.md) :smile:), avec des metadonnées autour de l'activité GeoTribu !
 
 ![banner geotribu stats twitter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png "Geotribu stats Twitter"){: .img-center loading=lazy }
 
@@ -193,7 +194,7 @@ Un champ `article` est ajouté en le peuplant de 'oui' lorsque cela est nécessa
 
 Afin de tenter de comprendre si le partage des GeoRDP et articles sur Twitter ont une influence sur l'affluence du site GeoTribu, nous avons besoin de données d'utilisation du site.
 
-Pour ce faire, on utilise Google Analytics [comme précédemment expliqué ici](/articles/2021/2021-01-04_bilan_2020_perspectives_2021/#frequentation).
+Pour ce faire, on utilise Google Analytics [comme précédemment expliqué ici](2021-01-04_bilan_2020_perspectives_2021.md#frequentation).
 
 En exportant les données du nombre d'utilisateurs quotidiens, on devrait avoir de quoi représenter un peu les choses.
 
@@ -260,7 +261,7 @@ Les données de partage des articles ont été ramenées à l'échelle de celles
 Bingo, comme disent les amateurs de loto !
 
 On voit bien que la hausse de fréquentation observée mi-octobre et de manière continue jusqu'aux vacances de Noël est sans doute liée aux articles et à leur partage.  
-Le pic de fin juin peut également s'expliquer grâce au partage [d'un article](/articles/2020/2020-07-03_deploy_qgis_windows/).
+Le pic de fin juin peut également s'expliquer grâce au partage [d'un article](../2020/2020-07-03_deploy_qgis_windows.md).
 
 ## Conclusion
 

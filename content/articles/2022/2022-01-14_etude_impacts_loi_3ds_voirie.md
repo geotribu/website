@@ -4,6 +4,7 @@ authors:
     - Michaël GALIEN
 categories:
     - article
+comments: true
 date: "2022-01-14 10:00"
 description: "Etude d'impacts du déclassement de la voirie nationale aux Départements dans le cadre de la loi 3DS ; loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png"
@@ -43,7 +44,7 @@ Let's go !
 
 ## Données sources
 
-![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "logo IGN"){: .img-rdp-news-thumb }
+![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "logo IGN"){: .img-thumbnail-left }
 
 J'utilise pour cette analyse la [BD Topo® de l'IGN](https://geoservices.ign.fr/bdtopo) et plus précisément la classe _troncon_de_route_ du thème _transport_ que j'ai importée dans une table nommée `bdtopo_troncon_de_route`.
 
@@ -294,7 +295,7 @@ Le requête s'exécute, sur mon infra, pendant plus de 2 minutes avant de donner
 
 ## Bilan
 
-![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: .img-rdp-news-thumb }
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.png "logo PostGIS"){: .img-thumbnail-left }
 
 En conclusion, le couple PostgreSQL/PostGIS a permis d'évaluer assez rapidement l'impact de la loi 3DS en mesurant quelques indicateurs routiers à partir des données présentes dans la BD Topo® de l'IGN.
 

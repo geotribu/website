@@ -1,13 +1,14 @@
 # Project information
-site_name: Geotribu
+site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu"]
 site_description: >-
   Site indépendant de veille sur la géomatique libre et open source.
   Articles, tutoriels et revues de presse (#GeoRDP) sur
   l'information géographique, les SIG, la cartographie, la représentation des données...
 
-site_author: Geotribu
-site_url: https://static.geotribu.fr/
-copyright: '<span class="copyleft">&copy;</span> Geotribu'
+site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
+site_url: !ENV [MKDOCS_SITE_URL, "https://geotribu.fr/"]
+copyright:
+  !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
 
 # Repository
 repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/website"]
@@ -15,12 +16,12 @@ repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/website"]
 edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/master/content"]
 
 # Custom folder structure
-docs_dir: "./content"
-site_dir: "./build/mkdocs/site"
+docs_dir: !ENV [MKDOCS_SOURCE_DIR, "./content"]
+site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
 # Scripts pendant le build
 hooks:
-  - hooks/mkdocs/G001_check_hyperlinks_internal.py
+  - hooks/mkdocs/G003_social_cards_adapter.py
 
 # Plugins
 plugins:
@@ -34,71 +35,48 @@ plugins:
       exclude:
         - index.md
       show_contribution: true
+      show_email_address: false
   - git-revision-date-localized:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, False]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
-  - glightbox:
-      touchNavigation: true
-      effect: zoom
-      width: 90%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - img-rdp-news-thumb
-        - emojione
-        - twemoji
-      auto_caption: true
-      caption_position: bottom
+  - macros:
+      include_dir: content/toc_nav_ignored/snippets
+      module_name: hooks/macros/custom_jinja
   - minify:
       minify_css: true
       css_files:
         - theme/assets/stylesheets/extra.css
         - theme/assets/stylesheets/homepage.css
-  - rss:
-      abstract_chars_count: 500
-      categories:
-        - categories
-        - tags
-      comments_path: "#__comments"
-      date_from_meta:
-        as_creation: "date"
-        as_update: false
-        datetime_format: "%Y-%m-%d %H:%M"
-        default_timezone: Europe/Paris
-        default_time: "14:00"
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
-      image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-      length: 50
-      match_path: "(articles|rdp)/.*"
-      url_parameters:
-        utm_source: "rss-feed"
-        utm_medium: "RSS"
-        utm_campaign: "feed-syndication"
   - search:
       lang: fr
-  - macros:
-      include_dir: content/toc_nav_ignored/snippets
+  - social:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
+      cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
+      cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, true]
+      cards_layout_options:
+        font_family: Ubuntu
   - tags:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md
+  - termynal
 
 # Theme
 theme:
   name: "material"
+  insiders_flavor: false
   custom_dir: "./content/theme/"
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
+  favicon: theme/assets/images/geotribu/logo_geotribu.png
 
   features:
     - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
+    - navigation.prune
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -106,12 +84,18 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-  font: false
-  icon:
-    repo: fontawesome/brands/github-alt
+  font:
+    code: Ubuntu Mono
+    text: Ubuntu
   language: fr
-  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Basculer en mode clair
+
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -128,7 +112,7 @@ theme:
       accent: "deep orange"
       toggle:
         icon: material/weather-night
-        name: Basculer en mode clair
+        name: Basculer sur le réglage système
 
 # Customization
 extra:
@@ -138,7 +122,6 @@ extra:
     title: Consentement 🍪
     actions:
       - accept
-      - manage
       - reject
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
@@ -150,6 +133,10 @@ extra_css:
 
 extra_javascript:
   - "theme/assets/javascripts/extra.js"
+  - path: https://mastodon.social/embed.js
+    defer: true
+  - path: https://platform.twitter.com/widgets.js
+    defer: true
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
@@ -165,10 +152,9 @@ markdown_extensions:
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
-      linenums: true
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -180,6 +166,7 @@ markdown_extensions:
       base_path:
         - "."
       check_paths: true
+      url_download: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -187,6 +174,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde

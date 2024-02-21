@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2023-01-13 14:20
 description: "Créer un index des voies dans QGIS"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png"
@@ -23,7 +24,7 @@ tags:
 
 ## Intro
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Nombreuses sont les communes qui disposent d'un plan de ville, qu'elles affichent dans la rue ou qu'elles mettent à disposition sous la forme d'un dépliant, je vous partage ici la manière dont j'ai créé un listing des voies sur une expérimentation de plan de ville. Il y a sans aucun doute des choses à améliorer alors n'hésitez pas à laisser vos propositions ou vos remarques en commentaire.
 

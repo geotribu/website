@@ -4,6 +4,7 @@ authors:
     - Julien MOURA
 categories:
     - article
+comments: true
 date: "2021-04-01 13:20"
 description: "Présentation du plugin de Geotribu pour QGIS : QTribu. Inutile donc forcément indispensable."
 image: "https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png"
@@ -21,7 +22,7 @@ tags:
 
 ## Un plugin sérieux pour ne pas se prendre au sérieux
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Au détour d'un travail sur la négociation de contenu pour un plugin QGIS dans le cadre de mes fonctions à [Oslandia](https://oslandia.com/fr/), je me suis dit :
 
@@ -35,7 +36,7 @@ Pour l'instant, le plugin permet de consulter Geotribu sans quitter QGIS. D'autr
 
 ![QTribu - Dernier article dans le navigateur intégré de QGIS](https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png "QTribu - Dernier article dans le navigateur intégré de QGIS"){: .img-center loading=lazy }
 
-C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemple concret de ce que je considère comme étant de bonnes pratiques et que je présente en partie sur ce site : le [raccourci vers l'aide en ligne](/articles/2021/2021-03-09_pyqgis_astuce_aide_plugin/), l'utilisation des [icônes intégrées de QGIS](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/), l'intégration des options du plugin dans le menu des préférences de QGIS, la gestion centralisée des logs et messages à l'utilisateur/ice final/e, etc.
+C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemple concret de ce que je considère comme étant de bonnes pratiques et que je présente en partie sur ce site : le [raccourci vers l'aide en ligne](2021-03-09_pyqgis_astuce_aide_plugin.md), l'utilisation des [icônes intégrées de QGIS](2021-01-19_pyqgis_utiliser_icones_integrees.md), l'intégration des options du plugin dans le menu des préférences de QGIS, la gestion centralisée des logs et messages à l'utilisateur/ice final/e, etc.
 
 [Documentation du plugin :fontawesome-solid-book:](https://geotribu.github.io/qtribu/){: .md-button }
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -43,7 +44,7 @@ C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemp
 
 ## Installer le plugin
 
-![QGIS icône plugins](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/plugins.svg "QGIS icône plugins"){: .img-rdp-news-thumb }
+![QGIS icône plugins](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/plugins.svg "QGIS icône plugins"){: .img-thumbnail-left }
 
 !!!note
     Compte-tenu du périmètre fonctionnel particulier de ce plugin et pour ne pas ajouter du bruit supplémentaire au dépôt officiel des extensions de QGIS, QTribu est uniquement disponible en ajoutant un dépôt personnalisé.

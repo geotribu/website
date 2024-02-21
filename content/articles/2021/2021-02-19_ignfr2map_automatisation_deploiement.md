@@ -6,6 +6,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2021-02-19 14:14
 description: "Suite du projet ign2map : automatisation de l'exécution des scripts et du déploiement de la carte interactive des liens de téléchargement des données ouvertes de l'IGN, en tirant profit de GitHub Actions et Pages."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/github_action_workflow_result.png"
@@ -27,11 +28,11 @@ Pré-requis :
 
 ## Intro
 
-![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }
+![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-thumbnail-left }
 
 Après avoir présenté la génèse et détaillé la démarche de notre petit projet de carte des liens IGN, voici venir le second volet consacré à l'exécution complètement automatisée et paramétrable des scripts puis du déploiement tout aussi automatique.
 
-[Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button } [Consulter l'article détaillant la démarche :fontawesome-solid-backward:](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/){: .md-button }
+[Accéder à la carte :earth_africa:](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html){: .md-button } [Consulter l'article détaillant la démarche :fontawesome-solid-backward:](2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes.md){: .md-button }
 {: align=middle }
 
 L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticipe que la page soit donc appelée à s'agrandir (*sic*). Pour que le projet ne soit pas un symbole d'obsolescence programmée (même s'il est certainement éphémère), on choisit donc d'automatiser le processus via [Github Actions] et la publication sur [Github Pages]. Une chaîne de valeurs que l'on connaît bien puisque déjà utilisée pour générer et publier le site actuel de Geotribu à partir des fichiers Markdown.
@@ -41,14 +42,14 @@ L'IGN ayant annoncé que l'ouverture des données serait progressive, on anticip
     Vous êtes sur un système Windows et vous vous sentez frustré(e) de ne pas pouvoir expérimenter ce tutoriel ? Deux solutions s'offrent à vous :
 
     - [adopter un pingouin](https://youtu.be/DRBVUZjrT0k?t=76) et batifoler joyeusement sur la banquise du libre :penguin:
-    - utiliser [WSL, le sous-système Linux intégré à Windows 10 en suivant notre article sur le sujet](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/) :wink:
+    - utiliser [WSL, le sous-système Linux intégré à Windows 10 en suivant notre article sur le sujet](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md) :wink:
 <!-- markdownlint-enable MD046 -->
 
 ## Travaux préliminaires
 
 ### Variables d'environnement et fichier de configuration
 
-![logo Ministère de l'Environnement d'Haïti](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/environnement_ministere_haiti.webp "L'environnement, des politiques variables"){: .img-rdp-news-thumb }
+![logo Ministère de l'Environnement d'Haïti](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/environnement_ministere_haiti.webp "L'environnement, des politiques variables"){: .img-thumbnail-left }
 
 Avant de pouvoir automatiser toute la chaîne d'exécution sur une plateforme d'intégration et de déploiement continus (CI/CD pour les intimes), il s'agit de rendre nos scripts paramétrables et indépendants de nos machines individuelles.
 
@@ -137,7 +138,7 @@ graph TD;
 
 ## Le déploiement
 
-![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
+![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-thumbnail-left }
 
 A l'instar de la plupart des autres, [GitHub Actions] consiste à décrire le processus (*workflow* dans la terminologie GitHub) dans la syntaxe [YAML].
 

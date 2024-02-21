@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-11-19
 description: "SAGEO 2010, résumé de cette 2éme journée de colloque"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 19 novembre 2010
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 Deuxième journée de ce colloque [SAGEO 2010](http://sageo10.univ-toulouse.fr/). La matinée était réservée à la question de la fouille de données et l'après-midi était composée de plusieurs ateliers thématiques.
 

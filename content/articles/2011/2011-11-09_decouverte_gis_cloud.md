@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-11-09
 description: "Découverte de GIS Cloud, plateforme de création de contenu web-cartographique dont on entend beaucoup parler ces derniers temps. Bien décidé à voir de quoi il en retourne, je me suis inscrit et j'en ai profité pour faire quelques tests. Je vous livre ci-dessous mes impressions."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/serveur/giscloud/giscloud_interface.png"
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 09 novembre 2011
 
-![logo GIS Cloud](https://cdn.geotribu.fr/img/articles-blog-rdp/serveur/giscloud/giscloud_logo.jpg "logo GIS Cloud"){: .img-rdp-news-thumb }
+![logo GIS Cloud](https://cdn.geotribu.fr/img/articles-blog-rdp/serveur/giscloud/giscloud_logo.jpg "logo GIS Cloud"){: .img-thumbnail-left }
 
 Cela faisait plusieurs semaines que ma [timeline twitter](http://twitter.com/#!/geotribu) s'ornait de hashtag [GisCloud](http://www.giscloud.com). C'est vrai que les différentes [démos](http://www.giscloud.com/blog/gis-cloud-starts-html5-mapping-revolution) proposées sont tout de même impressionnantes. J'entends déjà les amoureux de la sémiologie graphique me dire que c'est une hérésie d'afficher 1 million de points sur une carte. Sur ce point, je suis tout à fait d'accord. Néanmoins, la prouesse technique est tout de même bluffante ! Du coup, bien décidé à voir de quoi il en retourne, je me suis inscrit et j'en ai profité pour faire quelques tests.
 

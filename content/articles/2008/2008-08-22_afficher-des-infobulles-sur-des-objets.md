@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-08-22
 description: "Afficher des infobulles sur des objets"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 ## Introduction
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Pour la réalisation de la page des DCP de La Réunion j'avais besoin de pouvoir au survol de la souris d'afficher une infobulle contenant le nom de l'objet. Pour cela j'ai mis au point un petit script que je vous présenterai ci-dessous.
 

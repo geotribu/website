@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-26
 description: "A la découverte d'OrbisGIS"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 26 novembre 2009
 
-![logo OrbisGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/orbigis.jpg "logo OrbisGIS"){: .img-rdp-news-thumb}
+![logo OrbisGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/orbigis.jpg "logo OrbisGIS"){: .img-thumbnail-left}
 
 Après avoir successivement exploré [PuzzleGis](http://geotribu.net/node/117), [OpenJump](http://geotribu.net/node/120), [UDIG](http://geotribu.net/node/126) et enfin [QGIS](http://geotribu.net/node/152) nous découvrirons au cours de ce billet [OrbisGis](http://brehat.ec-nantes.fr/orbisgis/doku.php). Ce dernier développé par l'[Institute on Urban Sciences and Technics](http://www.irstv.cnrs.fr/) (CNRS) est l'œuvre de trois géomaticiens Erwan BOCHER, Thomas LEDUC, Fernando GONZALES-CORTES. N'ayant jamais entendu parlé de ce logiciel, je m'attendais à une "petite application maison" sans grande particularité. Cet a priori ne fut que temporaire et j'avoue avoir été très agréablement surpris. De plus OrbisGIS dispose d'une [documentation](http://brehat.ec-nantes.fr/orbisgis/doku.php?id=support:doc) riche et interactive ce qui permet de ne jamais se sentir pris au dépourvu. Découvrons ensemble ce logiciel.
 

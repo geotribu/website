@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2010-09-03
 description: "Créer et diffuser des services WMS avec QGIS"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_net.png"
@@ -21,7 +22,7 @@ tags:
 
 :calendar: Date de publication initiale : 03 septembre 2010
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 [QGIS](https://www.qgis.org/) est l'un des, voir même à mon sens, le meilleur logiciel SIG Open Source existant actuellement. Ses possibilités ainsi que les plugins dont il dispose font qu'il offre toutes les fonctionnalités dont a besoin un géomaticien pour son travail quotidien.
 

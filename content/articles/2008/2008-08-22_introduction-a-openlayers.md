@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-08-22
 description: "Introduction à OpenLayers"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 ## Introduction
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Ce tutorial est un aperçu rapide des possibilités d'OpenLayers. Il vous permettra de comprendre globalement le fonctionnement de cette bibliothèque Javascript OpenSource tournée vers la cartographie.
 

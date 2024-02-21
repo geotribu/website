@@ -4,16 +4,16 @@ authors:
     - Boris MERICSKAY
 categories:
     - article
+comments: true
 date: "2021-04-20 10:20"
 description: "Fork open source de MapboxGL, MapLibreGL représente l’une des solutions actuelles de cartographie en ligne les plus intéressantes. Afin de documenter et de partager une série d’expérimentations autour de la cartographie thématique sur le Web, la mise en place d’un site Web apparait comme une bonne solution pour donner à voir les possibilités de cartographie thématiques permises par MapLibreGL."
+icon: simple/maplibre
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/maplibre_site_ressource/accueil_site.png"
 tags:
-    - libre
     - MapLibre
     - MapboxGL
     - ressource
     - sémiologie
-    - site
     - webmapping
 ---
 
@@ -99,7 +99,7 @@ map.addSource("Nomdelasource", {
 });
 ```
 
-Pour en savoir plus sur le principe voir ce [tutoriel introductif sur MapLibreGL](/articles/2021/2021-02-23_carte_ligne_libre/) réalisé en février 2021 sur Géotribu :wink:.
+Pour en savoir plus sur le principe voir ce [tutoriel introductif sur MapLibreGL](2021-02-23_carte_ligne_libre.md) réalisé en février 2021 sur Géotribu :wink:.
 
 ----
 

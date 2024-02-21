@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-06-22
 description: "Ça bouge dans le monde du GeoBI"
 tags:
@@ -18,13 +19,13 @@ tags:
 
 :calendar: Date de publication initiale : 22 juin 2010
 
-![logo SOLAP](https://cdn.geotribu.fr/img/logos-icones/divers/solap.png "logo SOLAP"){: .img-rdp-news-thumb }
+![logo SOLAP](https://cdn.geotribu.fr/img/logos-icones/divers/solap.png "logo SOLAP"){: .img-thumbnail-left }
 
 Le monde du GeoBI OpenSource a été, ces derniers jours, particulièrement actif. En effet, entre la sortie de nouvelles versions de logiciels et la création de nouveaux partenariats ce sont au total quatres nouvelles qui seront présentées dans ce billet. Tout d'abord, nous commencerons par le projet GeoBi initiative. Ensuite, nous aborderons les évolutions des deux ETLs spatiaux Geokettle et Spatial Data Integrator.
 
 ## GeoBI Initiative
 
-![logo GeoBI](https://cdn.geotribu.fr/img/logos-icones/divers/GeoBI.png "logo GeoBI"){: .img-rdp-news-thumb }
+![logo GeoBI](https://cdn.geotribu.fr/img/logos-icones/divers/GeoBI.png "logo GeoBI"){: .img-thumbnail-left }
 
 Initié par cinq compagnies[^1] et une université[^2], l'initiative GeoBI vise à regrouper l'ensemble des personnes évoluant dans le monde du géodécisionnel OpenSource. Ce projet est d'autant plus important qu'il allie recherche appliquée et partenariat industriel. Cette information a été largement commentée aussi bien sur les [blogs francophones](http://www.osbi.fr/) qu'[internationaux](http://fabiodovidio.blogspot.com/2010/06/geobi-initiative-has-been-launched.html).
 

@@ -5,6 +5,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: "2023-01-30 22:20"
 description: "La tribu vous adresse ses meilleurs voeux à toutes et tous les visiteurs du géotipi. Petit retour sur 2022 pour attaquer au mieux 2023."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/geotribu_2023.png"
@@ -19,7 +20,7 @@ tags:
 
 ## Introduction
 
-![logo tipi Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.png){: .img-rdp-news-thumb }
+![logo tipi Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.png){: .img-thumbnail-left }
 
 Bienvenue sur le traditionnel, mais non moins irrégulier (du moins à Geotribu), billet de bilan de l'année passée et de projection sur l'année qui s'amorce.
 
@@ -75,7 +76,7 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 
 ![Evolution abonnés à la newsletter Geotribu sur 2022](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/newsletter_mailchimp_1_an_apres.webp){: .img-right loading=lazy width="30%" }
 
-- :incoming_envelope: on a passé la barre des 250 inscrits à [la newsletter](/newsletter/signup/) dont 215 à l'envoi hebdomadaire. Pour rappel :
+- :incoming_envelope: on a passé la barre des 250 inscrits à [la newsletter](../../newsletter/signup.md) dont 215 à l'envoi hebdomadaire. Pour rappel :
     - si vous vous êtes abonné/e et que vous ne lisez plus, ne cliquez jamais ou n'êtes plus intéressé/e : prenez 5 minutes pour vous [désabonner](https://geotribu.us5.list-manage.com/unsubscribe/post). Sérieusement, ça fera des mails perdus en moins :pray:.
     - si vous pensez que vos collègues pourraient être intéressé/es, faites tourner :wink:
 

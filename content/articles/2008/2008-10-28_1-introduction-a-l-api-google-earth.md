@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2008-10-28 10:20
 description: "1. Introduction à l'API Google Earth"
 image: ''
@@ -20,7 +21,7 @@ tags:
 
 ## Introduction
 
-![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-rdp-news-thumb }
+![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-thumbnail-left }
 
 A l'instar de l'API Google Maps, Google propose également une API pour manipuler Google Earth dans une page Internet.  
 

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-26
 description: "Toulouse bientôt ville numérique ?"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 26 mars 2009
 
-![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }
+![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-thumbnail-left }
 
 Alors qu'une grande partie du Net s'oriente vers le concept de monde virtuel, monde où la réalité est déportée au sein d'univers dont ni l'espace ni le temps n'ont d'existence propre, une nouvelle tendance est en train de naître celle de ville numérique (consulter également un billet précédent).
 

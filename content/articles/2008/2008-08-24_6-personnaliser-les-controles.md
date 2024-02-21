@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-08-24
 description: "6. Personnaliser les contrôles"
 tags:
@@ -20,13 +21,13 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 Il est parfois frustrant lorsqu'on utilise des API de ne pas pouvoir personnaliser complètement les contrôles et les événements. L'API Google Maps permet cette fonctionnalité. Nous verrons ici comment personnaliser ses propres contrôles de zoom, de déplacement et de sélection de couches.  
 
 ### Initialisation
 
-Reprendre la carte du [tutoriel n°1](/articles/2008/2008-08-22_1-introduction-a-l-api-google-maps/).  
+Reprendre la carte du [tutoriel n°1](2008-08-22_1-introduction-a-l-api-google-maps.md).  
 
 ### Création de la fonction zoom
 

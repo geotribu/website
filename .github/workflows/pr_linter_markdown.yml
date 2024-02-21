@@ -21,12 +21,12 @@ jobs:
 
     steps:
       - name: "Récupère le code source"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Filter results by added/modified lines.
       - name: "Vérifie la syntaxe des lignes ajoutées ou modifiées"
         id: markdownlint-github-pr-review-added
-        uses: reviewdog/action-markdownlint@v0.9.0
+        uses: reviewdog/action-markdownlint@v0.14.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -44,8 +44,8 @@ jobs:
             Salut @${{ github.actor }}
             Des erreurs de syntaxe Markdown ont été détectées dans les lignes ajoutées ou modifiées. Merci de les corriger ou de les marquer comme faux-positif :
 
-              - [règles de syntaxe Markdown applicables à Geotribu](https://static.geotribu.fr/contribuer/guides/markdown_quality/)
-              - [marquer une erreur de syntaxe comme faux-positif](https://static.geotribu.fr/contribuer/internal/markdown_linter/#gerer-les-faux-positifs-du-linter)
+              - [règles de syntaxe Markdown applicables à Geotribu](https://contribuer.geotribu.fr/guides/markdown_quality/)
+              - [marquer une erreur de syntaxe comme faux-positif](https://contribuer.geotribu.fr/internal/markdown_linter/#gerer-les-faux-positifs-du-linter)
               - [possibilités de rédaction offertes par le moteur Mkdocs + thème Material](https://squidfunk.github.io/mkdocs-material/reference/)
 
       - name: "Marque le commentaire de félicitations comme résolu"
@@ -61,7 +61,7 @@ jobs:
       # # as long as they are in added/modified file even if the results are not in actual diff.
       # - name: "Vérifie la syntaxe de tous les fichiers ajoutés ou modifiés"
       #   id: markdownlint-github-pr-review-file
-      #   uses: reviewdog/action-markdownlint@v0.9.0
+      #   uses: reviewdog/action-markdownlint@v0.14.0
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
       #     fail_on_error: false

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-02-12
 description: "Comment détruire une communauté"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 12 février 2010
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 Je suis tombé ce matin sur un [billet](http://www.framablog.org/index.php/post/2010/02/08/comment-detruire-votre-communaute) satyrique et volontairement insolent qui expose en 10 points comment détruire la communauté qui gravite autour de votre/vos projet(s) OpenSource. Je ne résiste pas à l'envie de vous le faire partager tant il m'a fait sourire.
 

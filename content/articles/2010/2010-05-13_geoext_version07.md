@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-05-13
 description: "GeoExt passe en version 0.7"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 13 mai 2010
 
-![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-rdp-news-thumb }
+![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-thumbnail-left }
 
 La librairie javascript née de la fusion d'Ext JS et d'OpenLayers est maintenant disponible en version 0.7 ([dl](http://trac.geoext.org/attachment/wiki/Download/GeoExt-release-0.7.zip)).  
 Celle-ci inclut de nouveaux composants tels que :

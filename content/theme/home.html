@@ -31,6 +31,90 @@
 <!-- Content -->
 <div class="md-container secondary-section">
   <div class="g">
+    <!-- Articles -->
+    <div class="section follow" id="articles">
+      <div class="component-wrapper">
+        <div class="first-column">
+          <h3>Articles</h3>
+          <p>
+            En plus des revues de presse, le site héberge des tutoriels, dossiers, billets d'humeur, blog-note, retours
+            d'expérience,
+            présentations d'un outil, d'une méthodologie... Mutualisons la connaissance en géomatique !
+          </p>
+        </div>
+        <div class="second-column">
+          <div class="image-wrapper">
+            {% if config.extra.latest %}
+            <a href="/{{ config.extra.latest.articles[0].url_rel | default('/') }}" hreflang={{
+              config.extra.latest.articles[0].language | default('fr') }} title="Lien vers le dernier article">
+              <img src="{{ config.extra.latest.articles[0].image | default('fr') }}"
+                alt="Illustration du dernier article publié" decoding="async" loading="lazy" draggable="false">
+              <div class="image-overlay">{{ config.extra.latest.articles[0].title | default('Placeholder') }}, par {{
+                config.extra.latest.articles[0].authors | default('Valeur par défaut') | join(", ") }}</div>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="component-wrapper" style="display: block;">
+        <h4></h4>
+        <div class="responsive-grid">
+          <a class="card-wrapper" href="{{ config.extra.url_contribuer }}articles/workflow/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/solid/feather-pointed.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Proposer un article</h5>
+                <p>
+                  Pourquoi pas vous ?
+                  Apportez votre pierre à l'édifice de la connaissance partagée en géomatique.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper" href="{{ config.extra.url_contribuer }}guides/markdown_basics/">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/brands/markdown.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Rédigez en Markdown</h5>
+                <p>
+                  Tout le site est entièrement rédigé en Markdown, la <i>lingua franca</i> du web.
+                  Découvrez nos guides de rédaction pour un rendu soigné.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card-wrapper"
+            href="/articles/2021/2021-05-05_geointerview_ign_sebastien_soriano_annonce/#suivre-et-participer">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/solid/people-carry-box.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>Pas le goût ou le temps d'écrire ?</h5>
+                <p>
+                  Pourquoi ne pas proposer un autre type de contenu :
+                  une interview ? un podcast ? autre chose ?
+                </p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
     <!-- Revues de presse -->
     <div class="section" id="revues-de-presse">
       <div class="component-wrapper">
@@ -113,89 +197,6 @@
       </div>
     </div>
 
-    <!-- Articles -->
-    <div class="section follow" id="articles">
-      <div class="component-wrapper">
-        <div class="first-column">
-          <h3>Articles</h3>
-          <p>
-            En plus des revues de presse, le site héberge des tutoriels, dossiers, billets d'humeur, blog-note, retours
-            d'expérience,
-            présentations d'un outil, d'une méthodologie... Mutualisons la connaissance en géomatique !
-          </p>
-        </div>
-        <div class="second-column">
-          <div class="image-wrapper">
-            <a href="/articles/2023/2023-02-21_portails-copernicus-1-donnees/" title="Lien vers le dernier article">
-              <img
-                src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/scihub_copernicus_access_hub_1.jpg"
-                alt="lien vers le dernier article publié" loading="lazy" draggable="false"
-                title="Illustration du dernier article publié">
-              <div class="image-overlay">Trilogie d'articles sur le programme Sentinel et l'accès aux données
-                Copernicus, par Nicolas David</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="component-wrapper" style="display: block;">
-        <h4></h4>
-        <div class="responsive-grid">
-          <a class="card-wrapper" href="{{ config.extra.url_contribuer }}articles/workflow/">
-            <div class="card">
-              <div class="logo">
-                <span class="twemoji">
-                  {% include ".icons/fontawesome/solid/feather-pointed.svg" %}
-                </span>
-              </div>
-              <div class="card-content">
-                <h5>Proposer un article</h5>
-                <p>
-                  Pourquoi pas vous ?
-                  Apportez votre pierre à l'édifice de la connaissance partagée en géomatique.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a class="card-wrapper" href="{{ config.extra.url_contribuer }}guides/markdown_basics/">
-            <div class="card">
-              <div class="logo">
-                <span class="twemoji">
-                  {% include ".icons/fontawesome/brands/markdown.svg" %}
-                </span>
-              </div>
-              <div class="card-content">
-                <h5>Rédigez en Markdown</h5>
-                <p>
-                  Tout le site est entièrement rédigé en Markdown, la <i>lingua franca</i> du web.
-                  Découvrez nos guides de rédaction pour un rendu soigné.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a class="card-wrapper"
-            href="/articles/2021/2021-05-05_geointerview_ign_sebastien_soriano_annonce/#suivre-et-participer">
-            <div class="card">
-              <div class="logo">
-                <span class="twemoji">
-                  {% include ".icons/fontawesome/solid/people-carry-box.svg" %}
-                </span>
-              </div>
-              <div class="card-content">
-                <h5>Pas le goût ou le temps d'écrire ?</h5>
-                <p>
-                  Pourquoi ne pas proposer un autre type de contenu :
-                  une interview ? un podcast ? autre chose ?
-                </p>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </div>
-
   </div>
 </div>
 
@@ -258,6 +259,22 @@
             </div>
           </a>
 
+
+          <a class="card-wrapper" href="https://cli.geotribu.fr/" target="_blank">
+            <div class="card">
+              <div class="logo">
+                <span class="twemoji">
+                  {% include ".icons/fontawesome/solid/terminal.svg" %}
+                </span>
+              </div>
+              <div class="card-content">
+                <h5>CLI</h5>
+                <p>
+                  Rechercher et consulter les contenus directement depuis votre terminal !
+                </p>
+              </div>
+            </div>
+          </a>
 
           <a class="card-wrapper" href="https://twitter.com/geotribu/" target="_blank">
             <div class="card">
@@ -336,26 +353,5 @@
 
 <!-- Light footer -->
 {% block footer %}
-<footer class="md-footer">
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <!-- Copyright and theme information -->
-      <div class="md-footer-copyright">
-        {% if config.copyright %}
-        <div class="md-footer-copyright__highlight">
-          {{ config.copyright }}
-        </div>
-        {% endif %}
-        Généré avec
-        <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
-        et le thème
-        <a href="https://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
-          Material for MkDocs</a>
-      </div>
-      {% block social %}
-      {% include "partials/social.html" %}
-      {% endblock %}
-    </div>
-  </div>
-</footer>
+{{ super() }}
 {% endblock %}

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2015-02-03
 description: "Représentation en 3D des objets d'OpenStreetMap"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 ***Article invité proposé par Clément Igonet***
 
-![Logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "OpenStreetMap"){: .img-rdp-news-thumb }
+![Logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "OpenStreetMap"){: .img-thumbnail-left }
 
 Depuis plusieurs années impressionné par les évolutions en terme de cartographie numérique, le projet [OpenStreetMap](https://www.openstreetmap.org/) me fait rêver tous les jours un peu plus à de nouvelles applications à portée de nos mains.  
 

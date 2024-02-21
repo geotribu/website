@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-09-23
 description: "Créer ses propres plugins pour QGIS"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 23 septembre 2010
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Ce billet s'inspire de l'article [a simple qgis python tutorial](http://linfiniti.com/2010/08/a-simple-qgis-python-tutorial/) paru sur le blog [linfinite](http://linfiniti.com/). En effet, [QGIS](https://www.qgis.org/) offre, depuis la version 1.0, la possibilité de réaliser vos propres extensions en utilisant l'[API](http://qgis.org/api/2.4/modules.html) du logiciel. Mais avant de pouvoir réaliser cela, il est nécessaire de comprendre le rôle des différents éléments.
 

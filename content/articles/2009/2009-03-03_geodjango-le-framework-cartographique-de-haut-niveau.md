@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-03
 description: "GéoDjango LE framework cartographique de haut niveau"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 03 mars 2009
 
-![logo GeoDjango](https://cdn.geotribu.fr/img/logos-icones/programmation/geodjango.png){: .img-rdp-news-thumb }
+![logo GeoDjango](https://cdn.geotribu.fr/img/logos-icones/programmation/geodjango.png){: .img-thumbnail-left }
 
 Cette année et après avoir été bluffé par la quantité de programmes développés en **Python** je me suis décidé à apprendre ce langage. Naturellement, au lieu de ré-inventer la roue j'ai regardé les [frameworks](https://fr.wikipedia.org/wiki/Framework) existants. Je pense que je suis tombé sur LE FRAMEWORK, la killer application qui va me faire veiller tard durant ces prochains jours, [GeoDjango](http://geodjango.org/).
 

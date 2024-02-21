@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-02-11
 description: "Quel développement cartographique pour des plateformes différentes ?"
 tags:
@@ -19,7 +20,7 @@ tags:
 
 :calendar: Date de publication initiale : 11 février 2010
 
-![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-rdp-news-thumb }
+![icône globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe"){: .img-thumbnail-left }
 
 En tant que développeur d'applications cartographiques, je suis souvent confronté au problème de portage sur différentes plateformes. Le succès actuel des smartphones - iPhone et Android en tête - oblige à revoir les développements. Doit-on privilégier une approche 'native', concevoir l'application pour qu'elle fonctionne sur tous les 'devices' ou faire un développement pour chacun ? Nous essaierons dans ce billet de faire un état des lieux des différentes API cartographiques grand public usuelles sur les principales plateformes : smartphones et ordinateurs de bureau.
 

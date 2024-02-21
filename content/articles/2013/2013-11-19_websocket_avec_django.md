@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2013-11-19
 description: "Un peu de websocket avec Django"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 19 novembre 2013
 
-Dans son billet intitulé ["Du web, des socquettes et de la carto](/articles/2013/2013-02-25_websocket.md)", Fabien nous avait gratifié d'un super tuto sur les potentialités du Web "temps réel". Par temps réel, j'entends le fait d'avoir une communication bi-directionnelle persistante entre le client et le serveur. En effet, à l'heure actuelle, la grande majorité du web fonctionne en mode pull. C'est-à-dire que c'est le client qui va interroger le serveur à intervalle régulier. En plus d’être une approximation d'un fonctionnement temps-réel, cette approche entraine une utilisation inutile de ressources informatiques d'autant plus qu'il peut arriver qu'il n'y ait eu aucun changement.
+Dans son billet intitulé ["Du web, des socquettes et de la carto](2013-02-25_websocket.md)", Fabien nous avait gratifié d'un super tuto sur les potentialités du Web "temps réel". Par temps réel, j'entends le fait d'avoir une communication bi-directionnelle persistante entre le client et le serveur. En effet, à l'heure actuelle, la grande majorité du web fonctionne en mode pull. C'est-à-dire que c'est le client qui va interroger le serveur à intervalle régulier. En plus d’être une approximation d'un fonctionnement temps-réel, cette approche entraine une utilisation inutile de ressources informatiques d'autant plus qu'il peut arriver qu'il n'y ait eu aucun changement.
 
 C'est pourquoi il serait beaucoup plus intéressant que cela soit le serveur qui contacte directement le client en cas de changement. C'est ce que l'on nomme le mode push. Jusqu'à l'arrivée du HTML 5, cela n'était pas nativement prévu. Il était donc nécessaire de passer par [différentes alternatives](https://en.wikipedia.org/wiki/Comet_%28programming%29) comme le long polling, le Ajax Push, les forever iframes ou encore les [adobe Flash socket](http://help.adobe.com/en_US/as3/dev/WSb2ba3b1aad8a27b0-181c51321220efd9d1c-8000.html). Ne rentrons pas dans les détails de ces alternatives, l'important est de retenir que si techniquement cela était possible ce n'était tout d'abord pas standardisé et pas toujours très propre. En gros chacun faisait un peu à sa sauce dans son coin, on fait mieux en terme de réutilisabilité !
 

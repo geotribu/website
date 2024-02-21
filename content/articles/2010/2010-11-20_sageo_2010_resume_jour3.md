@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-11-20
 description: "SAGEO 2010, résumé de cette 3éme journée de colloque"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 20 novembre 2010
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 Dernière journée du [Sageo2010](http://sageo10.univ-toulouse.fr/). La présentation étant programmée un peu plus tôt, associée à la soirée de gala de la veille et la fatigue de ces trois jours font que j'arrive un peu ensommeillé au colloque.
 

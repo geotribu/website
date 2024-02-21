@@ -5,13 +5,12 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2020-06-19 10:20
-description: "Configuration et outillage de base pour développer en Python en 2020, avec un focus sur le travail sous Windows."
+description: "Installer Python sous Windows. Configuration et outillage de base pour développer en Python en 2020, avec un focus sur le travail sous Windows."
 image: "https://cdn.geotribu.fr/img/tuto/python_windows/python_windows_installer_path_length.jpg"
 tags:
     - Python
-    - tooling
-    - setup
     - Windows
 ---
 
@@ -23,6 +22,9 @@ Je travaille beaucoup avec Python sur Windows depuis quelques années. En compar
 Avec le changement de braquet de la firme de Redmond par rapport à l'open source, les choses se sont grandement améliorées ces dernières années.
 
 Ceci dit, cela fait toujours du bien de se noter quelque part les méthodes et étapes à ne pas oublier pour être rapidement confortable et efficace. Et, qui sait, en partageant, ça servira peut-être à quelqu'un et j'apprendrai des éventuels retours :slightly_smiling_face:.
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 ## Installation et configuration
 
@@ -187,8 +189,9 @@ Il existe de [nombreuses listes de packages recommandés](https://encrypted.goog
 
 ### Seconds rôles
 
+* [pre-commit](https://pre-commit.com/) : automatisation de certaines tâches liées à des étapes du processus git. Par exemple : lancer le formatage du code avec `black` au moment de `git commit`.
 * [peewee](https://peewee.readthedocs.io/) : [ORM](https://fr.wikipedia.org/wiki/Mapping_objet-relationnel) SQL très léger et efficace (utilisé par [Flask](https://www.palletsprojects.com/p/flask/) par exemple)
-* [pipenv](https://pipenv.kennethreitz.org/en/latest/) : gestion du workflow de développement (environnements virtuels, dépendances…). Optionnel, sans besoin spécifique, se contenter de `pip`. Envisager aussi [poetry](https://python-poetry.org/)
+* [pipenv](https://pipenv.pypa.io/) : gestion du workflow de développement (environnements virtuels, dépendances…). **Optionnel**, sans besoin spécifique, se contenter de `pip`. Envisager aussi [poetry](https://python-poetry.org/)
 * [PyInstaller](https://github.com/pyinstaller/pyinstaller/) : transforme les projets Python en exécutable (compatible avec la plateforme sur lequel il est utilisé)
 * [PyQt](https://www.riverbankcomputing.com/software/pyqt/intro) : bindings Python du framework d'interface graphique et tout le reste (réseau, _threads_, etc.)
 * [pytest](https://docs.pytest.org/) : framework de tests.
@@ -201,10 +204,11 @@ Il existe de [nombreuses listes de packages recommandés](https://encrypted.goog
 * [docx-tpl](https://docxtpl.readthedocs.io/en/latest/) : écriture de fichiers Word à l'aide de templates Jinja2
 * [LXML](https://lxml.de/) : outillage complet pour le XML et autres langages balisés (HTML...)
 * [OpenPyXl](https://openpyxl.readthedocs.io/) : lecture/écriture de fichiers Excel
-* [pre-commit](https://pre-commit.com/) : automatisation de certaines tâches liées à des étapes du processus git. Par exemple : lancer le formatage du code avec `black` au moment de `git commit`.
 
 ----
 
 ## Auteur {: data-search-exclude }
 
 --8<-- "content/team/jmou.md"
+
+{% include "licenses/default.md" %}

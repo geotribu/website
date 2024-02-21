@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2008-12-11 10:20
 description: "GeoExt, le mariage de l'IHM et de la cartographie"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 11 décembre 2008
 
-![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-rdp-news-thumb }
+![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-thumbnail-left }
 
 Hier a été lancé un [appel à la participation](http://www.geoext.org/trac/geoext/wiki/CallParticipation) pour le projet [GeoExt](https://www.geoext.org/ "GeoExt") dont la réflexion a été initiée lors du dernier [FOSS4G](http://conference.osgeo.org/index.php/foss4g/2008 "FOSS4G 2008").
 

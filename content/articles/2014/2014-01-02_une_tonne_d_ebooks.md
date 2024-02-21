@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2014-01-02
 description: "Une tonne d'Ebooks pour 5$"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 02 janvier 2014
 
-![icône livre](https://cdn.geotribu.fr/img/logos-icones/divers/livre.png "Logo livre"){: .img-rdp-news-thumb }
+![icône livre](https://cdn.geotribu.fr/img/logos-icones/divers/livre.png "Logo livre"){: .img-thumbnail-left }
 
 Chez Géotribu, il n'est pas dans notre habitude de faire de la publicité. Mais il faut avouer que [le deal](https://www.packtpub.com/ebookbonanza) proposé par Packt Publishing vaut le coup d'être relayé. Tous les livres de l'éditeur sont proposés au prix unique de 5$ !
 

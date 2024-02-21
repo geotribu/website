@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-09
 description: "Premières impressions de QGIS 1.2.0 - Daphnis"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_1-2_daphnis_splash_screen.png"
@@ -18,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 09 septembre 2009
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Suite à [l'annonce](http://geotribu.net/node/154) de la nouvelle version de QGIS (1.2.0) et après avoir installé celle-ci, j'ai réalisé quelques rapides tests et vous livre ici mes impressions.
 

@@ -5,6 +5,7 @@ authors:
     - Nicolas DAVID
 categories:
     - article
+comments: true
 date: "2023-02-28 09:00"
 description: "Historique des portails d'accès aux données Sentinel en Europe et en France et description de leur grandes fonctionnalités"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"
@@ -26,7 +27,7 @@ tags:
 
 ## Introduction
 
-![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-rdp-news-thumb }
+![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-thumbnail-left }
 
 L'Europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem" : [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service au cours de trois articles, chacun dédié à une partie pour faciliter la lecture et le "picorage" d'information à ceux qui connaissent déjà le sujet.
@@ -34,11 +35,11 @@ Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu
 Ce nouveau portail doit prendre la suite du portail actuel [scihub.copernicus.eu](https://scihub.copernicus.eu) d'accès aux données open-data Sentinel ainsi que de certains des actuels DIAS (**D**ata **I**nformation and **A**cces **S**ervice) pour l'offre de service payante associée.
 Dans ce deuxième article nous revenons donc sur l'historique des différents portails d'accès aux données Sentinel et des fonctionnalités qu'ils ont offertes.
 
-Pour un rappel sur les données Sentinel voir le [premier article](2023-02-21_portails-copernicus-1-donnees/) et pour les personnes intéressés par le nouveau portail aller directement au troisième article.
+Pour un rappel sur les données Sentinel voir le [premier article](2023-02-21_portails-copernicus-1-donnees.md) et pour les personnes intéressées par le nouveau portail aller directement au [troisième article](2023-03-07_portails-copernicus-3-futur.md).
 Série **Accès aux données Copernicus/Sentinel** :
 
-* [Partie 1 : données OCS et Sentinel](/articles/2023/2023-02-21_portails-copernicus-1-donnees/).
-* Partie 3 : évolution de l'accès aux données Copernicus (publication prévue le 7 mars).
+* [Partie 1 : données OCS et Sentinel](2023-02-21_portails-copernicus-1-donnees.md).
+* [Partie 3 : évolution de l'accès aux données Copernicus](2023-03-07_portails-copernicus-3-futur.md).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -116,7 +117,7 @@ On peut citer par exemple [le portail autrichien](https://data.sentinel.zamg.ac.
 
 ### Portails français PEPS et THEIA
 
-![logo PEPS](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/peps.png "Logo PEPS"){: .img-rdp-news-thumb }
+![logo PEPS](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/peps.png "Logo PEPS"){: .img-thumbnail-left }
 
 En France il existe actuellement deux portails nationaux d'accès aux données Sentinel : [PEPS](https://peps.cnes.fr/rocket/#/home) et [THEIA](https://theia.cnes.fr/atdistrib/rocket/#/home).
 
@@ -125,7 +126,7 @@ Par rapport à l'offre de base Scihub, PEPS permet un accès un peu plus rapide 
 
 ![Portail PEPS CNES](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/PEPS_CNES_captrue_site.png "Portail PEPS CNES - Crédits PEPS"){: .img-center loading=lazy }
 
-![logo Theia](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/theia.jpg "Logo Theia"){: .img-rdp-news-thumb }
+![logo Theia](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/theia.jpg "Logo Theia"){: .img-thumbnail-left }
 
 [THEIA](https://theia.cnes.fr/atdistrib/rocket/#/home) est une composante de l'infrastructure de recherche [Data-Terra](https://www.data-terra.org/) centrée sur l'étude des surfaces continentales.
 Elle a, en particulier, pour objectif de faciliter l'accès aux données nécessaires pour la recherche et les études pour l'observation de la Terre.
@@ -189,7 +190,7 @@ Une étude comparative de ces DIAS est disponible sur le [gitlab IDGEO](https://
 
 ## Un exemple d'utilisation : le monitoring PAC
 
-Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre, leur utilisation par les différents organismes de contrôles et paiements associés à la PAC (Politique Agricole Commune) pour la mise en place d'un "monitoring CAP".
+Au niveau européen, un cas d'application (clients) de ces offres DIAS a été, entre autre, leur utilisation par les différents organismes de contrôles et paiements associés à la PAC (Politique Agricole Commune) pour la mise en place d'un "monitoring PAC".
 En effet l'Europe a souhaité faire évoluer les contrôles terrain ponctuels associés au versement des aides PAC vers un ["monitoring"](https://publications.jrc.ec.europa.eu/repository/handle/JRC112913), exhaustif spatialement, et réalisé de manière semi-automatique via l'exploitation des données Sentinel-1 et 2.
 Ces dernières devant permettre entre autre de vérifier la présence ou non d'activités agricoles (présence de culture annuelle, détection de fauche de prairie etc..) sur une parcelle donnée.
 

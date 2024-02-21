@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-06
 description: "Êtes-vous fortiche en SIG ?"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 06 août 2009
 
-![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }
+![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-thumbnail-left }
 
 Vous êtes incollable sur les SIG? Vous connaissez par coeur les différents formats et programmes? Alors venez tester votre niveau de connaissance en remplissant le [quizz](http://www.journaldunet.com/solutions/questionnaire/fiche/10343/d/f/1/) proposé par le [Journal du Net](http://www.journaldunet.com/).
 

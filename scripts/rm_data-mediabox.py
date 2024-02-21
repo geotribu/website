@@ -5,15 +5,14 @@
     dans le cadre de https://github.com/geotribu/website/pull/720.
 """
 
-import logging
 from pathlib import Path
 
 # -- REGEX - Solution abandonnée finalement car pas rentable
 # regex_mediabox = r"^(.*data-mediabox.*$)"
 
 # test_str = ("[![Explication des images de références, de début et de fin de séquences](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/montage_images_bases_11012019.jpg \"Explication des images de références, de début et de fin de séquences\"){: .img-center loading=lazy }](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/montage_images_bases_11012019.jpg){: data-mediabox=\"lightbox-gallery\" data-title=\"Explication des images de références, de début et de fin de séquences\"}\n"
-# 	"![logo météo](https://cdn.geotribu.fr/img/logos-icones/divers/weather_app.png \"logo météo\"){: .img-rdp-news-thumb }\n"
-# 	"[![logo météo](https://cdn.geotribu.fr/img/logos-icones/divers/weather_app.png \"logo météo\"){: .img-rdp-news-thumb }](https://cdn.geotribu.fr/img/logos-icones/divers/weather_app.png)")
+# 	"![logo météo](https://cdn.geotribu.fr/img/logos-icones/divers/weather_app.png \"logo météo\"){: .img-thumbnail-left }\n"
+# 	"[![logo météo](https://cdn.geotribu.fr/img/logos-icones/divers/weather_app.png \"logo météo\"){: .img-thumbnail-left }](https://cdn.geotribu.fr/img/logos-icones/divers/weather_app.png)")
 
 # matches = re.finditer(regex, test_str, re.MULTILINE)
 

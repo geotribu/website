@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2014-08-20 11:20
 description: "Interview de Drones Crisis"
 tags:
@@ -97,7 +98,7 @@ La technique utilisée tire parti d'une combinaison experte entre la photogramé
 3. Le Processus est lancé en un seul clic
     - Calibration, Optimisation, Génération du rapport de qualité...
     - Densification du nuage de points
-    - Génération du Modèle Numérique d'Elévation et de Ortophotographie (1-3 pixels d'exactitude GSD=2 cm \&gt; 2 à 6 cm de précision)
+    - Génération du Modèle Numérique d'Elévation et de Ortophotographie (1-3 pixels d'exactitude GSD=2 cm > 2 à 6 cm de précision)
 
 !!! info
     Consulter [la documentation officielle sur la précisionle support](https://support.pix4d.com/entries/27021968-Accuracy-of-Pix4uav-outputs)
@@ -160,7 +161,7 @@ La photogrammétrie traditionnelle tente de produire la meilleure cartographie p
 
 - Diversité des drones et des caméras associées : RGB, NIR,  IR, FishEye, tetracam, GoPro… avec lesquels nos clients peuvent aujourd'hui travailler.
 
-- Etre à l'écoute d'une diverssité d'utilisateurs composé de professionnels géomaticiens experts ou naissants, à travers le monde, s'intéressant à la cartographie par le biais des UAV. (eg. ESA et monsieur tout le monde \&gt; autrefois inaccessible)
+- Etre à l'écoute d'une diverssité d'utilisateurs composé de professionnels géomaticiens experts ou naissants, à travers le monde, s'intéressant à la cartographie par le biais des UAV. (eg. ESA et monsieur tout le monde ; autrefois inaccessible)
 
 - Proposer un processus plus complet à l'utilisateur lui permettant de mieux tirer parti de la relation entre le nuage de points et des images afin d'affiner les objets 3D et le résultat final. (cf.rayCloud)
 

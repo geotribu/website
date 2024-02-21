@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-11-02 10:20
 description: "3. La Tour Eiffel en 3D"
 image: ''
@@ -21,7 +22,7 @@ tags:
 
 ## Introduction
 
-![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-rdp-news-thumb }
+![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-thumbnail-left }
 
 Il est possible d'afficher les couches 'bâtiments' présentes dans Google Earth dans l'API et donc dans sa propre page Internet.  
 
@@ -29,7 +30,7 @@ Nous verrons ici comment afficher la tour Eiffel et comment définir par défaut
 
 ## Initialisation
 
-Reprendre le globe du [tutoriel n°2](/articles/2008/2008-11-02_2-ajoutons-quelques-controles/).  
+Reprendre le globe du [tutoriel n°2](2008-11-02_2-ajoutons-quelques-controles.md).  
 
 ## Processus
 

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-20 10:20
 description: "Afficher une carte dans une application Android"
 tags:

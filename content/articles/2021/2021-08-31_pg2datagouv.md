@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2021-08-31 14:20
 description: "Automatiser la publication et la mise à jour de données entre PostgreSQL et Data.gouv.fr en utilisant OGR et l'API data.gouv."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/pg2datagouv_illustration.png"
@@ -33,7 +34,7 @@ tags:
 
 ## Intro
 
-![Logo opendata](https://cdn.geotribu.fr/img/logos-icones/divers/opendata_logo.png "OpenData"){: .img-rdp-news-thumb }
+![Logo opendata](https://cdn.geotribu.fr/img/logos-icones/divers/opendata_logo.png "OpenData"){: .img-thumbnail-left }
 
 Être géomaticien dans un petit EPCI c'est souvent être multitâche et cela implique également d'intervenir sur une diversité de sujets. D'ailleurs celui qui va nous intéresser aujourd'hui, c'est l'Open Data !
 
@@ -170,7 +171,7 @@ fi
 
 ### 3. Intégrer le script d'extraction dans le script parent : pg2datagouv.sh
 
-Afin d'appeler le script enfant préalablement créé vous devez l'ajouter au script parent qui sera exécuté ([*un script pour les gouverner tous*](/articles/2021/2021-02-19_ignfr2map_automatisation_deploiement/#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script enfant vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
+Afin d'appeler le script enfant préalablement créé vous devez l'ajouter au script parent qui sera exécuté ([*un script pour les gouverner tous*](2021-02-19_ignfr2map_automatisation_deploiement.md#un-script-pour-les-gouverner-tous)). De plus, en ajoutant le script enfant vous pouvez également décider d'ajouter un fichier associé comme par exemple une licence qui sera intégrée dans le zip final publié.
 
 !!! info
     Nota les fichiers annexes sont rangés dans le répertoire *attachment*.

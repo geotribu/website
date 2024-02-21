@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-09-05 10:20
 description: "8. Superposer un fichier KML et enrichir les infobulles"
 tags:
@@ -20,13 +21,13 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 L'API Google Maps permet de superposer des fichiers KML sur une carte. Et d'afficher une mini-carte dans une infobulle (ce qui n'a rien à voir avec l'affichage du KML mais qui peut être intéressant).
 
 ## Initialisation
 
-Reprendre la carte du [deuxième tutoriel](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/).
+Reprendre la carte du [deuxième tutoriel](2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles.md).
 
 ## Appel d'un fichier KML et affichage sur la carte
 

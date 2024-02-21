@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-11-17 10:20
 description: "13. Ajouter la couche StreetView"
 image: ''
@@ -22,13 +23,13 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 L'API Google Maps propose le service Street View qui permet de naviguer virtuellement dans les rues. Avant de voir comment faire dans le prochain tutoriel, nous allons voir ici quelle est l'emprise des images.  
 
 ## Initialisation
 
-Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/).  
+Reprendre la carte du [tutoriel n°2](2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles.md).  
 
 ## Superposition de l'emprise
 

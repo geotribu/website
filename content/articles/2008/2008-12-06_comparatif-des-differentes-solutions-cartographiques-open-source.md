@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2008-12-06 10:20
 description: "Comparatif des différentes solutions cartographiques Open-Source"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 06 décembre 2008
 
-![logo Open Source Initiative](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source Initiative"){: .img-rdp-news-thumb }
+![logo Open Source Initiative](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source Initiative"){: .img-thumbnail-left }
 
 Les offres d'applications, de logiciels, ou de solutions Open-Source sont de plus en plus vastes, au point qu'il est parfois difficile de pouvoir les comparer.
 

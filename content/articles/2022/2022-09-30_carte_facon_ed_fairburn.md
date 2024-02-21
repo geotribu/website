@@ -4,6 +4,7 @@ authors:
     - Michaël GALIEN
 categories:
     - article
+comments: true
 date: "2022-09-30 10:00"
 description: "Utiliser les modes de fusion pour produire avec QGIS une carte inspirée des dessins d'Ed Fairburn."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/carte_facon_ed_fairburn.png"
@@ -57,7 +58,7 @@ Mon avis : le mieux reste de tester pour visualiser et enfin comprendre le compo
 
 ## Projet QGIS
 
-![Logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo QGIS"){: .img-rdp-news-thumb }
+![Logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo QGIS"){: .img-thumbnail-left }
 
 J'utilise ici la [BD Topo® de l'IGN](https://geoservices.ign.fr/bdtopo) mais tu peux travailler avec d'autres sources, pourquoi pas te tourner vers [OSMData](https://demo.openstreetmap.fr/map) et chopper 2 - 3 données sympas.
 

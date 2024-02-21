@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-09-26
 description: "OpenLayers Cookbook"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 26 septembre 2012
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Décidément, [OpenLayers](https://openlayers.org/), la fameuse bibliothèque cartographique Open Source, a le vent en poupe chez [Packt Publishing](http://www.packtpub.com/). En effet, après un [premier ouvrage](http://www.packtpub.com/openlayers-2-1-javascript-web-mapping-library-beginners-guide/book) dont nous avions déjà fait [l'analyse](http://geotribu.net/node/430), un second, nommé [OpenLayers Cookbook](http://www.packtpub.com/openlayers-create-gis-web-applications-cookbook/book), est désormais disponible. Comment fonctionnent les contrôles, est-il possible de modifier le thème d'une carte ? Ces questions et bien d'autres trouveront leurs réponses dans cet ouvrage. Détaillons immédiatement son contenu.
 

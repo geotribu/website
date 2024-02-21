@@ -4,6 +4,7 @@ authors:
 - Arnaud Vandecasteele
 categories:
 - article
+comments: true
 date: 2009-03-01 10:20
 description: "Ajouter des infobulles (tooltips) avec OpenLayers et Ext"
 tags:

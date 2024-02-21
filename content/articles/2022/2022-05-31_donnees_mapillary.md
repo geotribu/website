@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2022-05-31 14:20
 description: "Accéder aux données de Mapillary et les intégrer dans son SIG"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/mapillary_data.png"
@@ -34,7 +35,7 @@ tags:
 
 ## Intro
 
-![Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Mapillary"){: .img-rdp-news-thumb }
+![Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Mapillary"){: .img-thumbnail-left }
 
 Aujourd'hui, je vais vous présenter différentes manières d'accéder aux données identifiées à partir des prises de vue publiées sur Mapillary et qui pourront peut-être vous permettre d'enrichir votre SIG sur certaines thématiques. Pour ce faire nous allons nous appuyer sur les différents services proposés par la [4ème version de l'API](https://www.mapillary.com/developer/api-documentation/).
 
@@ -55,7 +56,7 @@ Aujourd'hui, je vais vous présenter différentes manières d'accéder aux donn�
 
 ## 1. Les tuiles vectorielles Mapillary dans QGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Lorsqu'on épluche la documentation, on peut voir que Mapillary propose un service d'accès à ses données basé sur des services de [tuiles vectorielles](https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html). Ils ont l'avantage d'offrir une solution assez souple et légère permettant de visualiser de grandes quantités d'informations. Les tuiles vectorielles de Mapillary suivent les [spécifications des tuiles Mapbox (MVT)](https://docs.mapbox.com/data/tilesets/guides/vector-tiles-standards/) et offrent la possbilité :
 

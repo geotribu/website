@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-10-30
 description: "Geomap ou comment mettre en œuvre rapidement sur le web des cartes choroplètes ou en symboles (presque) proportionnels"
 tags:
@@ -18,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 30 octobre 2009
 
-![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }
+![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-thumbnail-left }
 
 Si comme nous vous utilisez régulièrement Google Analytics, la carte qui est présentée ci-dessous, ne vous est pas inconnue. Mais saviez-vous qu'il est possible également d'utiliser cette technologie de Google afin de produire une carte personnalisée et analytique. La représentation des données pouvant se faire sous la forme d'aplats de couleurs (carte choroplète) ou de symboles pseudo-proportionnels. Nous allons tout au long de ce tutoriel découvrir les possibilités de [GeoMap](http://code.google.com/intl/fr/apis/visualization/documentation/gallery/geomap.html) et de son API.
 

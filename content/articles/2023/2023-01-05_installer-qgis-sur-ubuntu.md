@@ -6,6 +6,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: "2023-01-05 10:20"
 description: "Installer QGIS sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des problèmes. Un tutoriel sur la marche à suivre pour s'en rappeler quand le besoin se fait sentir."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png"
@@ -22,7 +23,7 @@ tags:
 
 ## Introduction
 
-![logo Ubuntu](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/ubuntu.svg "logo Ubuntu"){: loading=lazy .img-rdp-news-thumb }
+![logo Ubuntu](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/ubuntu.svg "logo Ubuntu"){: loading=lazy .img-thumbnail-left }
 
 Ça peut paraître idiot dit comme ça, mais je trouve qu'installer le logiciel SIG open source le plus utilisé sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des difficultés, y compris à des utilisateurs quotidiens des deux outils.
 
@@ -65,6 +66,9 @@ Et je peux travailler en tout zénitude sans me demander si la prochaine mise à
 
 > :person_juggling: Les personnes qui installent la version de QGIS non LTR et sans correctif :person_juggling:
 {: align=middle }
+
+!!! note "Disponibilité des versions"
+    Notez que la version de votre distribution est également importante puisque toutes les versions de QGIS ne sont pas packagées et dsitribuées pour toutes les versions des distributions, notamment pour des questions de dépendances incompatibles ou manquantes. Par exemple, sur une base Ubuntu 20.04, on ne trouve pas de version de QGIS au-delà de la 3.22. Voir [ce commentaire](#isso-239) et sa réponse.
 
 ----
 
@@ -213,7 +217,7 @@ On référence alors dans un fichier `/etc/apt/sources.list.d/qgis.sources` :
 
 ## Installation de QGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Allez, tout est désormais fin prêt, on passe à l'installation !  
 On met à jour la liste des paquets accessibles depuis qu'on a ajouté le dépôt :
@@ -252,6 +256,12 @@ On désinstalle QGIS :
 
 ```sh
 sudo apt --purge remove qgis*
+```
+
+Si jamais vous avez joué à un moment avec un dépôt exotique tel `ubuntugis`, il est aussi recommandé de désinstaller toute dépendance liée à QGIS, notamment GDAL et PROJ dont les conflits de versions peuvent jouer des tours au détours de certains traitements spatiaux :
+
+```sh
+sudo apt --purge remove gdal-* proj-*
 ```
 
 On supprime ensuite les références au dépôt de QGIS qui peuvent encore traîner dans le fichier des sources principales.  

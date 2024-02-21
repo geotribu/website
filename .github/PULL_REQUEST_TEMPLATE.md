@@ -2,7 +2,7 @@
 
 MERCI DE SUPPRIMER OU ADAPTER POUR LES AUTRES TYPES DE CONTENUS (principe du `benevol time fair-use`).
 
-Pour les articles, voir : https://static.geotribu.fr/contribuer/articles/workflow/#soumettre
+Pour les articles, voir : https://contribuer.geotribu.fr/articles/workflow/#soumettre
 
  -->
 
@@ -11,8 +11,8 @@ Pour les articles, voir : https://static.geotribu.fr/contribuer/articles/workflo
 - [ ] nommer cette _Pull Request_ de façon claire et lisible. Exemple : `GeoRDP du JJ MM AAAA`
 - [ ] partir du modèle disponible (copier/coller) [sur Github](https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp.md?plain=1) ou [sur le pad](https://geotripad.herokuapp.com/DCBQirjYSp6sqxPd5JYqLg?both)
 - [ ] changer la date dans les métadonnées :
-  - [ ] `date` : au format `AAAA-MM-JJ HH-MM` - mais laisser l'heure sur 14h20 c'est historique
-  - [ ] `title` : correspond à ce qui est affiché dans le menu de navigation, l'onglet du navigateur et le SEO. Bien **indiquer l'année** pour améliorer le référencement et en prévision d'une refonte du moteur de rendu.
+    - [ ] `date` : au format `AAAA-MM-JJ HH-MM` - mais laisser l'heure sur 14h20 c'est historique
+    - [ ] `title` : correspond à ce qui est affiché dans le menu de navigation, l'onglet du navigateur et le SEO. Bien **indiquer l'année** pour améliorer le référencement et en prévision d'une refonte du moteur de rendu.
 - [ ] changer la date du titre principal (en début de contenu). Idem, **indiquer l'année**.
 
 ## Encourager les contributions
@@ -55,7 +55,7 @@ Exemple de [tweet](https://twitter.com/geotribu/status/1364625815099613185) :
 - [ ] les images sont hébergées sur des sites sécurisés (HTTPS)
 - [ ] chaque news a une vignette
 - [ ] les images (sauf les vignettes) ont l'attribut `loading` défini sur `lazy` (cf. [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading) et [guide material-mkdocs](https://squidfunk.github.io/mkdocs-material/reference/images/#image-lazy-loading))
-- [ ] accessibilité : chaque image a un texte de remplacement (entre les crochets) et un titre lisible par les outils d'assistance. Bref, qui respecte la [syntaxe générale](https://static.geotribu.fr/contribuer/guides/image/#syntaxe-generale)
+- [ ] accessibilité : chaque image a un texte de remplacement (entre les crochets) et un titre lisible par les outils d'assistance. Bref, qui respecte la [syntaxe générale](https://contribuer.geotribu.fr/guides/image/#syntaxe-generale)
 
 ### SEO
 

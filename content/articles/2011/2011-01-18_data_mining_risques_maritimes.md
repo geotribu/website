@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-01-18
 description: "Data mining spatial appliqué aux risques maritimes"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 18 janvier 2011
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 Dans le cadre de nos travaux de recherche sur les risques maritime, nous disposons d'une importante base de données spatio-temporelle recensant la position des bateaux à travers le monde. L'objectif de ce stage est, à partir de cette base, d'utiliser les différents outils et méthodes issus du Data Mining Spatial afin dans un premier temps d'évaluer la pertinence de ce type d'approche et dans un second temps, si cela est nécessaire, de définir des modèles spécifiques adaptés à notre thématique d'étude.
 

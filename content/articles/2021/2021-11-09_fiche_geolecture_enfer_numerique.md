@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - lecture
+comments: true
 date: "2021-11-09 10:20"
 description: "Quelques éléments de lecture et de réflexions autour du livre de Guillaume Pitron : l'enfer du numérique - Voyage au bout d'un clic. L'auteur souhaite que nous nous questionnions sur l'impact physique et matériel de nos actes numériques"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geolecture_enfer_numerique/enfer_numerique.png"
@@ -21,7 +22,7 @@ tags:
 
 :calendar: Date de publication initiale : 9 novembre 2021
 
-![icône livre](https://cdn.geotribu.fr/img/logos-icones/divers/livre.png "Logo livre"){: .img-rdp-news-thumb }
+![icône livre](https://cdn.geotribu.fr/img/logos-icones/divers/livre.png "Logo livre"){: .img-thumbnail-left }
 
 Sur Geotribu, on parle d'outils libres et de géomatique. C’est un fait partagé par nous tous, rédacteurs et lecteurs de ce site. L'ouvrage dont je m'apprête à vous parler n'est pas directement lié aux SIG. En revanche, il questionne pas mal de choses sur nos pratiques quotidiennes professionnelles (et pas que !). C'est pourquoi je me permets de vous en parler ici.
 

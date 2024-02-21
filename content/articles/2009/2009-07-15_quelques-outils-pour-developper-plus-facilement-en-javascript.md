@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-15
 description: "Quelques outils pour développer plus facilement en JavaScript"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 juillet 2009
 
-![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-rdp-news-thumb }
+![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-thumbnail-left }
 
 Tous ceux qui ont déjà développé en JavaScript savent comment ce langage peut se montrer capricieux d'une plateforme à une autre, d'un navigateur à l'autre.  
 Combien ont déjà passé toute une journée à coder en utilisant Firefox pour tester son programme pour au final se rendre compte que cela ne fonctionne pas sur Internet Explorer? A force de chercher des outils me permettant de m'aider dans mes développements je me suis constitué une petite liste d'outils que j'utilise régulièrement.

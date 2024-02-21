@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-02
 description: "Les ETL spatiaux OpenSource, à pieds joints dans l'informatique GéoDécisionnelle "
 tags:
@@ -18,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 02 mars 2010
 
-![logo SOLAP](https://cdn.geotribu.fr/img/logos-icones/divers/solap.png "logo SOLAP"){: .img-rdp-news-thumb }
+![logo SOLAP](https://cdn.geotribu.fr/img/logos-icones/divers/solap.png "logo SOLAP"){: .img-thumbnail-left }
 
 Les outils d'extraction, de transformations et de chargement de données (Extract, transform and load - ETL) constituent le premier maillon (fig 1) de la chaine décisionnelle également nommée Business intelligence (BI). Longtemps réservés au monde de l'entreprise, ces outils s'ouvrent aujourd'hui à tous les secteurs nécessitant une prise de décision rapide se basant sur l'analyse d'un grand nombre de données. Leur objectif est de capter les flux de données formelles (interne à l'entité) ou informelles (crowdsourcing) afin de les intégrer ensuite au sein du système informatique de l'entité (entreprise, association, administration...).
 

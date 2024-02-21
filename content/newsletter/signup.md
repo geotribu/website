@@ -16,7 +16,7 @@ tags:
 
 # La newsletter Geotribu
 
-![icône newsletter](https://cdn.geotribu.fr/img/logos-icones/divers/newsletter.webp "icône newsletter"){: .img-rdp-news-thumb }
+![icône newsletter](https://cdn.geotribu.fr/img/logos-icones/divers/newsletter.webp "icône newsletter"){: .img-thumbnail-left }
 
 La newsletter existe suite à différents constats.
 

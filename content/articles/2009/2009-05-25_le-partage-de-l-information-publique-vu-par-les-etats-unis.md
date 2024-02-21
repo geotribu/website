@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-05-25
 description: "Le partage de l'information publique vu par les Etats-unis"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 mai 2009
 
-![icône world flag US](https://cdn.geotribu.fr/img/logos-icones/divers/world_flag_US.png "icône world flag US"){: .img-rdp-news-thumb }
+![icône world flag US](https://cdn.geotribu.fr/img/logos-icones/divers/world_flag_US.png "icône world flag US"){: .img-thumbnail-left }
 
  Monsieur Obama (avec un grand **M** svp) avait fait de la **diffusion** et du **partage** de l'information publique une de ses **priorités**. Le sujet avait d'ailleurs été [brièvement abordé](http://geotribu.net/node/115) lors d'un précédent billet dont l'élément principal à retenir était : "**l'information maintenue par le gouvernement fédéral est un élément d'actif national**" (dixit M. Obama et traduit par [BalizMedia](http://media.baliz-geospatial.com/fr/blogue/l-information-comme-bien-public-l-exemple-d-openstreetmap-aux-etats-unis)).
 

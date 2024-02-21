@@ -16,22 +16,35 @@ env:
   LC_ALL: "fr_FR.UTF-8"
   LC_TIME: "fr_FR.UTF-8"
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   deploy:
     name: "📤 GitHub Pages"
-
     runs-on: ubuntu-latest
-
     if: ${{ github.repository_owner == 'geotribu' }}
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Get source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11
           cache: "pip"
@@ -42,28 +55,41 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install --upgrade -r requirements-insiders.txt
-          python -m pip install --upgrade ghp-import
 
       - name: Cache build dependencies (external assets downloaded)
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: ${{ github.ref }}
           path: .cache
 
       - name: Build static website
         run: |
-          python scripts/mkdocs_config_merger.py -c mkdocs.yml
+          geotribu --help > content/toc_nav_ignored/snippets/code/geotribu_cli_help.txt
+          python scripts/050_mkdocs_populate_latest.py -c mkdocs.yml
+          python scripts/100_mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
           MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
           MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true
           MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
           MKDOCS_ENABLE_PLUGIN_PRIVACY: true
+          MKDOCS_ENABLE_PLUGIN_SOCIAL: true
+          MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS: true
           MKDOCS_ENABLE_PLUGIN_RSS: true
+          MKDOCS_ENABLE_PLUGIN_TAGS: true
+          MKDOCS_ENABLE_PLUGIN_TYPESET: true
+          MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
           MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
 
-      - name: Deploy to Github Pages
-        run: |
-          git config --global user.name "Geotribu (Github Action)"
-          git config --global user.email "geotribu@gmail.com"
-          ghp-import --force --message="Site Geotribu déployé" --no-jekyll --no-history --push build/mkdocs/site
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: "build/mkdocs/site"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

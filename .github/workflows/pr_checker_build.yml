@@ -14,6 +14,7 @@ env:
   LC_TIME: "fr_FR.UTF-8"
   NETLIFY_SITE_NAME: geotribu-preprod
   NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
+  PR_NUMBER: ${{ github.event.pull_request.number }}
 
 # If the workflow for a PR is triggered multiple times, previous existing runs will be canceled.
 # eg: Applying multiple suggestions from a review directly via the Github UI.
@@ -30,10 +31,10 @@ jobs:
 
     steps:
       - name: Get source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11
           cache: "pip"
@@ -57,32 +58,24 @@ jobs:
           fi
 
       - name: Cache build dependencies (external assets downloaded)
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: ${{ github.ref }}
           path: .cache
 
       - name: Build in strict mode
         env:
-          NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
+          MKDOCS_EDIT_URI: "edit/$GITHUB_HEAD_REF/content"
+          MKDOCS_SITE_NAME: "Geotribu PREVIEW - PR ${{ github.event.pull_request.number }}"
+          MKDOCS_SITE_COPYRIGHT: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
-          # site name
-          sed -i "s|^site_name:.*|site_name: Geotribu PREVIEW |" ${{ env.MKDOCS_CONFIG_FILENAME }}
-
-          # Adjust ${{ env.MKDOCS_CONFIG_FILENAME }} for preview build
-          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" ${{ env.MKDOCS_CONFIG_FILENAME }}
-
-          # Insert sponsor branding into page content (Provider OSS plan requirement):
-          # Upstream does not provide a nicer maintainable way to do this..
-          # Prepends HTML to copyright text and then aligns to the right side.
-          sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" ${{ env.MKDOCS_CONFIG_FILENAME }}
-
-          # set repo and branch
-          sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" ${{ env.MKDOCS_CONFIG_FILENAME }}
-          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" ${{ env.MKDOCS_CONFIG_FILENAME }}
+          # store custom env vars that need resolution
+          export MKDOCS_EDIT_URI="edit/${GITHUB_HEAD_REF}/content"
+          export MKDOCS_SITE_URL="https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
 
           # merge different configs
-          python scripts/mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
+          python scripts/050_mkdocs_populate_latest.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
+          python scripts/100_mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # build
           mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --strict
@@ -95,6 +88,12 @@ jobs:
           rm ${{ env.BUILD_DIR }}/robots.txt
           rm ${{ env.BUILD_DIR }}/sitemap.xml
           rm ${{ env.BUILD_DIR }}/sitemap.xml.gz
+
+          # store specific env vars
+          echo "MKDOCS_EDIT_URI=$MKDOCS_EDIT_URI"                   >> pr.env
+          echo "MKDOCS_SITE_COPYRIGHT=$MKDOCS_SITE_COPYRIGHT"       >> pr.env
+          echo "MKDOCS_SITE_NAME=$MKDOCS_SITE_NAME"                 >> pr.env
+          echo "MKDOCS_SITE_URL=$MKDOCS_SITE_URL"                   >> pr.env
 
         # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
         # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
@@ -114,7 +113,7 @@ jobs:
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
 
       - name: Save build website as artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         with:
           name: pr-build-website
           path: artifact.tar.zst

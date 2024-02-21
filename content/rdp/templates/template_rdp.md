@@ -4,9 +4,10 @@ authors:
     - Geotribu
 categories:
     - revue de presse
-date: 2023-08-21 14:20
-description: "GeoRDP du 21 août 2023 : "
-image: "URL de l'image d'illustration de la RDP"
+comments: true
+date: 2023-08-21
+description: "Description de 160 caractères maximum qui résume la RDP. Cette description est présente dans le flux RSS, la newsletter, les moteurs de recherche, en page d'accueil... "
+image: "Image d'illustration de la RDP qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
 license: default
 robots: index, follow
 tags:
@@ -19,7 +20,7 @@ tags:
 
 ## Intro
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
 
 [Commenter :fontawesome-solid-comments:](#__comments){: .md-button }
 [Proposer :material-newspaper-plus:]({{ config.extra.url_contribuer }}rdp/add_news/){: .md-button }

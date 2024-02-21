@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-09-30
 description: "Allégez votre librairie OpenLayers avec openlayerer"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 30 septembre 2010
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "Logo OpenLayers"){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "Logo OpenLayers"){: .img-thumbnail-left }
 
 Bien qu'[OpenLayers](https://openlayers.org/) ne fasse pas partie des librairies les plus lourdes, ce n'est pas une raison pour ne pas faire la chasse au kilos octets ! N'oubliez pas que tout le monde ne dispose pas encore forcément d'une bande passante suffisante. C'est pourquoi, il est préférable de ne charger que les fichiers nécessaires. Lors d'un [précédent tutoriel](http://geotribu.net/node/52), nous avions expliqué comment utiliser l'outil builder.py fourni avec OpenLayers. Ce dernier vous permet de créer votre propre librairie en spécifiant les classes que vous utiliserez. Néanmoins, bien que son utilisation soit très simple, une interface graphique serait tout de même plus agréable non ? Si vous partagez cet avis, je vous propose de vous rendre sur le site [openlayerer](http://openlayerer.appspot.com/)
 

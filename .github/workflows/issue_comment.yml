@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           cache: "pip"
           python-version: 3.11
@@ -37,8 +37,9 @@ jobs:
           JSON_STRING: ${{ steps.issue-parser.outputs.jsonString }}
 
       - name: Save form output as artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         with:
+          name: input_form.json
           path: "rdp*.json"
           retention-days: 15
 
@@ -55,13 +56,15 @@ jobs:
         run: python scripts/issue_comment_templater_rdp.py
 
       - name: Save comment artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         with:
+          name: output_comment.md
+          overwrite: true
           path: "rdp*_output.md"
           retention-days: 15
 
       - name: Create comment from file
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.issue.number }}
           body-file: 'rdp_news_submitted_comment_output.md'

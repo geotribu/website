@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2020-12-30 11:11
 description: "A l'instar de nombreux autres sites web, celui de Geotribu est un site statique. So what ? Pour comprendre, le mieux c'est encore de le déployer à la maison."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg"
@@ -21,9 +22,12 @@ tags:
 
 Pré-requis : une connexion internet.
 
+!!! info "Trop tard !"
+    La méthode présentée ici ne fonctionne plus depuis cette [PR de mai 2023](https://github.com/geotribu/website/pull/923) qui a basculé le déploiement du site sur les GitHub Pages hors de la branche `gh-pages`.
+
 ## Intro
 
-![icône matière](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "matière"){: .img-rdp-news-thumb }
+![icône matière](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "matière"){: .img-thumbnail-left }
 
 A l'instar de nombreux sites webs, Geotribu est un site statique, cela signifie :
 

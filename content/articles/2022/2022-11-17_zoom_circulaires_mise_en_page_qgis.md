@@ -6,6 +6,7 @@ categories:
     - article
     - traduction
     - tutoriel
+comments: true
 date: "2022-11-17 13:30"
 description: "Paramétrer la mise en page de QGIS pour afficher des zooms circulaires. Traduction d'un article de North Road."
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis_encastre_circulaire_overview_north_road.png
@@ -21,11 +22,11 @@ tags:
 :calendar: Date de publication initiale : 17 novembre 2022
 
 !!! info "Traduction"
-    Suite à l'appel de Julien [dans la GeoRDP du 4 novembre](/rdp/2022/rdp_2022-11-04/#trucs-et-astuces-sur-le-composeur-dimpression-de-qgis), j'ai tenté de traduire au plus juste le [billet de blog](https://north-road.com/2022/11/04/creating-circular-insets-and-other-fun-qgis-layout-tricks/) publié le 4 novembre 2022 par North Road à l'occasion du [30 Day Map Challenge](https://twitter.com/hashtag/30DayMapChallenge) concernant la création de zooms circulaires dans les mises en page de QGIS. Dans la suite de cet article c'est donc North Road qui donne les explications.
+    Suite à l'appel de Julien [dans la GeoRDP du 4 novembre](../../rdp/2022/rdp_2022-11-04.md#trucs-et-astuces-sur-le-composeur-dimpression-de-qgis), j'ai tenté de traduire au plus juste le [billet de blog](https://north-road.com/2022/11/04/creating-circular-insets-and-other-fun-qgis-layout-tricks/) publié le 4 novembre 2022 par North Road à l'occasion du [30 Day Map Challenge](https://twitter.com/hashtag/30DayMapChallenge) concernant la création de zooms circulaires dans les mises en page de QGIS. Dans la suite de cet article c'est donc North Road qui donne les explications.
 
 ## Introduction
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Grâce à la récente popularité du «30 Day Map Challenge», le mois de novembre est devenu synonyme de belles cartes et cartographies. Au cours de ce mois de novembre, nous allons partager un certain nombre de conseils et d'astuces qui utilisent certaines fonctionnalités avancées de QGIS pour aider à créer de belles cartes.
 

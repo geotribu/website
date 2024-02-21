@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-01-09
 description: "Libérez les données !"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 09 janvier 2011
 
-![icone database](https://cdn.geotribu.fr/img/logos-icones/programmation/database.png "icone database"){: .img-rdp-news-thumb }
+![icone database](https://cdn.geotribu.fr/img/logos-icones/programmation/database.png "icone database"){: .img-thumbnail-left }
 
 Trouver un standard commun, faciliter l'accès aux données ...  
 Ceci pourrait être l'ouverture d'un Powerpoint Inspire. Or aujourd'hui, la question du partage et de l'ouverture des données s'est largement élargie. Wikileaks a amené le débat au grand public par le biais de la presse désormais en ligne. Et pourtant l'Etat français a une vision radicalement différente de ses homologues anglosaxons.

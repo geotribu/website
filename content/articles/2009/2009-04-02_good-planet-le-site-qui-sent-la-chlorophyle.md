@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-02
 description: "Good Planet, le site qui sent la chlorophyle"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 02 avril 2009
 
-![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-rdp-news-thumb }
+![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-thumbnail-left }
 
 Alors que la semaine du développement durable bat son plein, en bon géographe que nous sommes, nous ne pouvions laisser passer cette occasion sans vous présenter [goodplanet](http://www.goodplanet.org/), un site (et association) résolument engagé.
 

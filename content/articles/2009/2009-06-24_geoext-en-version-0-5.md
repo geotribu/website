@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-06-24
 description: "GeoExt en version 0.5"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 24 juin 2009
 
-![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-rdp-news-thumb }
+![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-thumbnail-left }
 
 Décidément, cela bouge dans le petit monde du GeoWeb. Après la sortie d'[OpenLayers en version 2.8](http://geotribu.net/node/129) c'est au tour de [GeoExt](http://www.geoext.org/) de nous offrir une nouvelle release. Quelques bugs ont été corrigés mais c'est surtout plus d'une quarantaine de nouvelles fonctionnalités qui ont été ajoutées. Une liste complète des modifications est disponible sur la page des [notes de version](http://www.geoext.org/trac/geoext/wiki/Release/0.5/Notes).
 

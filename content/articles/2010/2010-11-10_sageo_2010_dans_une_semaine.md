@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-11-10
 description: "Le SAGEO 2010, c'est dans une semaine à Toulouse"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 10 novembre 2010
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 La sixième édition du [SAGEO](http://sageo10.univ-toulouse.fr/) se tiendra à Toulouse du 17 au 19 Novembre. Trois jours durant lesquels le [programme](http://sageo10.univ-toulouse.fr/spip.php?rubrique11) prévoit notamment 4 sessions et 3 ateliers. Les sujets abordent des thèmes divers liés aux problématiques actuelles que l'on rencontre en Géomatique comme l'analyse spatiale 2D et 3D, la fouille de données et la classification automatique ou encore le Geoweb et la cartographie collaborative.
 

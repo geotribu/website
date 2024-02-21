@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2014-03-21
 description: "Un bon deal chez Packt Publishing"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 21 mars 2014
 
-![icône livre](https://cdn.geotribu.fr/img/logos-icones/divers/livre.png "Logo livre"){: .img-rdp-news-thumb }
+![icône livre](https://cdn.geotribu.fr/img/logos-icones/divers/livre.png "Logo livre"){: .img-thumbnail-left }
 
 Packt Publishing est l'un des rares éditeurs à avoir de nombreux ouvrages sur les SIG et le WebMapping. Je me fournis réguliérement chez eux du fait de la qualité des bouquins. Néanmoins, cela rerésente tout de même un certain budget. C'est pourquoi, quand un bon deal pointe le bout de son nez je n'hésite pas à le faire partager.
 

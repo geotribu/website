@@ -4,6 +4,7 @@ authors:
     - Mathieu BOSSAERT
 categories:
     - article
+comments: true
 date: "2021-06-22 22:50"
 description: "Second article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/open_data_kit_postgresql.png"
@@ -21,7 +22,7 @@ tags:
 
 :calendar: Date de publication initiale : 22 juin 2021
 
-![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
+![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-thumbnail-left }
 
 Aprés vous avoir présenté les outils proposés par ODK et la place qu'ils occupent dans notre SI centré sur PostGIS, ce second article illustre à travers notre formulaire généraliste l'utilisation des différents "widgets" à notre disposition.
 Des extraits du "XLSForm" du formulaire complètent les captures d'écrans pour montrer l'utilisation des différentes colonnes de la feuille de calcul "survey" et de la feuille de calcul "choices".
@@ -35,8 +36,8 @@ Vous pourrez ensuite récupérer les données collectées avec [Briefcase](https
 
 Dans un dernier article, nous verrons comment les données collectées sur les téléphones grâce à ce formulaire intègrent notre base de données PostGIS et sont ainsi mises à disposition de l'ensemble de l'équipe, à travers les différents outils présentés dans l'article précédent.
 
-[1 : Introduction à ODK](/articles/2021/2021-06-08_odk_postgis_1/){: .md-button }
-[3 : Récupération des données dans notre SI](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
+[1 : Introduction à ODK](2021-06-08_odk_postgis_1.md){: .md-button }
+[3 : Récupération des données dans notre SI](2021-09-22_odk_postgis_3.md){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
@@ -56,7 +57,7 @@ La présentation ci-dessous faite au [FOSS4G-fr de 2018](https://www.osgeo.asso.
 
 ## Logique du formulaire
 
-![icône collecte smartphone](https://cdn.geotribu.fr/img/logos-icones/divers/smartphone_mobile_map.svg "icône collecte smartphone - Crédits The Noun Project"){: .img-rdp-news-thumb }
+![icône collecte smartphone](https://cdn.geotribu.fr/img/logos-icones/divers/smartphone_mobile_map.svg "icône collecte smartphone - Crédits The Noun Project"){: .img-thumbnail-left }
 
 Le formulaire décrit ici est notre formulaire principal, initié en 2016. La version initiale permettait de collecter des informations basiques sur les espèces et les habitats. Elle résultait d'un atelier (_workshop_) organisé avec les collègues du CEN Rhône-Alpes (Rémy Clément, Laurent Poulin et Guillaume Costes) qui maitrisaient la création de formulaire. Je m'étais alors occupé de la récupération des données collectées dans PostGIS.
 
@@ -176,7 +177,7 @@ Une fois ces paramètres de "session" renseignés, nous pouvons commencer la sai
 
 ### Création d'une localité
 
-Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans [la première partie de cet article](/articles/2021/2021-06-08_odk_postgis_1/).
+Il s'agira d'un point, d'une ligne ou d'un polygone. Cette fonctionnalité "géographique" du formulaire a été décrite dans [la première partie de cet article](2021-06-08_odk_postgis_1.md).
 
 ![Choix du type de géoréférencement de l'emplacement courant](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/georeferencement_choix_du_point.png "Choix du type de géoréférencement de l'emplacement courant"){: loading=lazy width=175px }
 {: align=middle }
@@ -187,7 +188,9 @@ Le GPS peut nous aider à dessiner automatiquement points, lignes et polygones, 
 ![coordonnées du point GPS collecté et précision du capteur lors de l'enregistrement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/affichage_coordonnees_point_enregistre.png){: loading=lazy width=175px }
 {: align=middle }
 
+<!-- markdownlint-disable MD024 -->
 #### Extrait de la feuille **survey**
+<!-- markdownlint-enable MD024 -->
 
 | -- | **type**               | **name**                  | **label**                     | **calculation**                              | **required** | **appearance**      | **default** | **relevant**                                | **choice_filter**                           | **bind::odk:length** | **body::accuracyThreshold** |
 | -- | ---------------------- | ------------------------- | ----------------------------- | -------------------------------------------- | ------------ | ------------------- | ----------- | ------------------------------------------- | ------------------------------------------- | -------------------- | --------------------------- |
@@ -220,9 +223,9 @@ La colonne **choice_filter**, utilisée pour la question _methode_geo_ permet de
 La colonne **relevant** permet de mentionner si la question est pertinente (à afficher), et dans quel contexte. Un test peut-être utilisé pour déterminer sa valeur (qui est 'true' par défaut). Ici donc seul le widget carto correspondant à la réponse donnée à la question "methode_geo" (ligne 5) sera affiché.
 
 Des fonctions, appelées dans la colonne **calculation** permettent de réaliser des calculs pendant la saisie, ici l'heure courante, la longueur d'un ligne et la surface d'un polygone.
-
+<!-- markdownlint-disable MD024 -->
 #### Extrait de la feuille choices
-
+<!-- markdownlint-enable MD024 -->
 La liste des choix proposés pour la méthode de localisation des observations est décrite comme ceci :
 
 | **list_name** | **name**   | **label**             | **filter** |
@@ -307,9 +310,9 @@ L'annotation de la photo peut être utile par exemple pour les observations de t
 ![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }
 ![Visualisation de l'image annotée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/visualisation_image_finale.png "Visualisation de l'image annotée"){: loading=lazy width=175px }
 {: align=middle }
-
+<!-- markdownlint-disable MD024 -->
 #### Extrait de la feuille de calcul **survey**
-
+<!-- markdownlint-enable MD024 -->
 | **type**                 | **name**      | **label**           | **appearance** | **relevant**           | **parameters**  |
 | ------------------------ | ------------- | ------------------- | -------------- | ---------------------- | --------------- |
 | select_one prendre_image | prendre_image | Prendre une photo ? |                |                        |                 |
@@ -397,7 +400,7 @@ Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'�
 
 ## A suivre
 
-[Lire la troisième partie :fontawesome-solid-forward:](/articles/2021/2021-09-22_odk_postgis_3/){: .md-button }
+[Lire la troisième partie :fontawesome-solid-forward:](2021-09-22_odk_postgis_3.md){: .md-button }
 {: align=middle }
 
 ----

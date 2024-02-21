@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-12
 description: "Introduction au libre selon le président de l'OSGEO-fr"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 12 juillet 2009
 
-![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-rdp-news-thumb }
+![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-thumbnail-left }
 
 Pour tous ceux qui souhaiteraient savoir ce qu'est la philosophie du libre et ce qui se cache derrière, je vous invite à consulter l'[article](http://media.baliz-geospatial.com/fr/article/des-logiciels-libres-aux-donnees-libres) de Yves Jacolin, président de l'[OSGEO-fr](http://wiki.osgeo.org/wiki/Francophone). Ce travail est un condensé de 3 [billets](http://georezo.net/blog/geolibre/) qu'il avait publié précédemment.
 

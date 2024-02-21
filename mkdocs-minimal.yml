@@ -1,17 +1,18 @@
 # Project information
-site_name: Geotribu
+site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu"]
 site_description: >-
   Site indépendant de veille sur la géomatique libre et open source.
   Articles, tutoriels et revues de presse (#GeoRDP) sur
   l'information géographique, les SIG, la cartographie, la représentation des données...
 
-site_author: Geotribu
-site_url: https://static.geotribu.fr/
-copyright: '<span class="copyleft">&copy;</span> Geotribu'
+site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
+site_url: !ENV [MKDOCS_SITE_URL, "https://geotribu.fr/"]
+copyright:
+  !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
 
 # Custom folder structure
-docs_dir: "./content"
-site_dir: "./build/mkdocs/site"
+docs_dir: !ENV [MKDOCS_SOURCE_DIR, "./content"]
+site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
 # Plugins
 plugins:
@@ -22,6 +23,7 @@ plugins:
         - "*.yml"
   - macros:
       include_dir: content/toc_nav_ignored/snippets
+      module_name: hooks/macros/custom_jinja
   - minify:
       minify_css: true
       css_files:
@@ -31,8 +33,9 @@ plugins:
 # Theme
 theme:
   name: "material"
+  insiders_flavor: false
   custom_dir: "./content/theme/"
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  favicon: theme/assets/images/geotribu/logo_geotribu.png
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -42,11 +45,11 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
-  font: false
-  icon:
-    repo: fontawesome/brands/github-alt
+  font:
+    code: Ubuntu Mono
+    text: Ubuntu
   language: "fr"
-  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -86,10 +89,9 @@ markdown_extensions:
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
-      linenums: true
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -100,6 +102,7 @@ markdown_extensions:
       base_path:
         - "."
       check_paths: true
+      url_download: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

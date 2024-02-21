@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-08-22
 description: "Interfacer OpenLayers avec un serveur WMS (MapServer/Geoserver)"
 tags:
@@ -18,7 +19,7 @@ tags:
 
 ## Introduction
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Ce tutorial vous permettra d'appréhender au mieux la notion de serveur WMS puis de le mettre en application ensuite au moyen de deux exemples concrets en se basant sur MapServer et GéoServer. L'affichage sera ensuite géré par OpenLayers.
 

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-07-02
 description: "Catalogue vos données géographiques avec Isogeo (GeoSIK)"
 tags:
@@ -19,7 +20,7 @@ tags:
 
 :calendar: Date de publication initiale : 02 juillet 2012
 
-![logo globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "Icône de globe"){: .img-rdp-news-thumb }
+![logo globe](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "Icône de globe"){: .img-thumbnail-left }
 
 Dans le domaine du GeoWeb peu de solutions existent pour Windows et encore moins proposent une API .Net compatible. Cela peut donc rapidement devenir un véritable casse-tête si l'essentiel de votre architecture est construit autour de la marque aux quatre losanges. Mais, tout n'est pas perdu pour autant ! En effet, si vous souhaitez implémenter un service de cataloguage de données géographique alors le serveur Open Source [GeoSIK](http://geosik.codeplex.com/) pourrait très certainement vous intéresser. Développé par [Isogeo](http://www.isogeo.fr/), celui-ci est l'une des pièces majeures d'une solution plus globale de recensement, de documentation et de valorisation de l'information géographique.
 

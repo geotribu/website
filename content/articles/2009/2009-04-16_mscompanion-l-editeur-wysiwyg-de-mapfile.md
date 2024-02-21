@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-16
 description: "MSCompanion, l'éditeur WYSIWYG de MapFile"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 16 avril 2009
 
-![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-rdp-news-thumb }
+![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-thumbnail-left }
 
 [MSCompanion](http://code.google.com/p/mscompanion/) est un **éditeur WYSIWYG de mapfile** disponible pour Windows. Les fonctionnalités qu'il propose screenshot à l'appui sont des plus intéressantes. Vous pourrez en effet directement depuis l'interface de MSCompanion :
 

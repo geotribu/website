@@ -4,6 +4,7 @@ authors:
     - Michaël GALIEN
 categories:
     - article
+comments: true
 date: "2021-05-25 16:00"
 description: "Petit aperçu de la bibliothèque PowerShell SI3P0 développée par le département du Gard pour la gestion de son SIg routes et bâtiments."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-logo.png"
@@ -33,7 +34,7 @@ Les versions mentionnées sont celles que nous utilisons au [département du Gar
 
 ## Introduction
 
-![Logo du département du Gard](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/gard.jpg "Logo du département du Gard"){: .img-rdp-news-thumb }
+![Logo du département du Gard](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/gard.jpg "Logo du département du Gard"){: .img-thumbnail-left }
 
 Le [département du Gard] gère environ 4600 km de routes. Auparavant, le référentiel géographique de ces routes était tenu à jour manuellement sur la base de plans de récolement mais plus souvent suite à des remontées d'informations du terrain. De fait, la qualité du tracé, dépendante d'une ortho parfois ancienne, n'était pas toujours au rendez-vous.
 
@@ -50,7 +51,7 @@ Pour faire la promotion de ces travaux au sein de la collectivité, nous avons d
 
 ## Utilisation de la bibliothèque
 
-![logo PowerShell](https://cdn.geotribu.fr/img/logos-icones/programmation/powershell.png "logo PowerShell"){: .img-rdp-news-thumb }
+![logo PowerShell](https://cdn.geotribu.fr/img/logos-icones/programmation/powershell.png "logo PowerShell"){: .img-thumbnail-left }
 
 La bibliothèque est constituée de fichiers de scripts (extension `.ps1`). Autrement dit, nous n'avons pas construit de module PowerShell (extension `.psm1`).
 

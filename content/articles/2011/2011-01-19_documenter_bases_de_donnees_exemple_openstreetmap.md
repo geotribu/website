@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-01-19
 description: "Documenter vos bases de données : exemple avec OpenStreetMap"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 19 janvier 2011
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Dans un précédent tutoriel portant sur OpenStreetMap [Créez votre propre serveur OpenStreetMap sous Ubuntu 10.04 Lucid Lynx](http://www.geotribu.net/node/262), nous vous faisions importer des données dans la base de données PostgreSQL mais sans vous apprendre à les explorer rapidement.  
 
@@ -106,17 +107,19 @@ java -jar -cp -t pgsql -db  -host  -u  -p
 
 Un cas concret avec l'utilisateur de base de données "utilisateurbase" avec son mot de passe "motdepasse" connécté en local sur une base osm et envoyant le résultat dans le répertoire `osm_psql_doc`.
 
-### Sous Windows
+<!-- markdownlint-disable MD046 -->
+=== ":window: Windows"
 
-```bash
-java -jar C:/downloads/schemaSpy_5.0.0.jar -cp C:/download/postgresql-9.0-801.jdbc4.jar -t pgsql -db osm -host localhost -u utilisateurbase -p motdepasse -s public -o osm_psql_doc
-```
+    ```cmd
+    java -jar C:/downloads/schemaSpy_5.0.0.jar -cp C:/download/postgresql-9.0-801.jdbc4.jar -t pgsql -db osm -host localhost -u utilisateurbase -p motdepasse -s public -o osm_psql_doc
+    ```
 
-### Sous Linux
+=== ":fontawesome-brands-linux: Linux et assimilés"
 
-```bash
-java -jar /home/monutilisateur/download/schemaSpy_5.0.0.jar -cp /home/monutilisateur/download/postgresql-9.0-801.jdbc4.jar -t pgsql -db osm -host localhost -u utilisateurbase -p motdepasse -s public -o osm_psql_doc  
-```
+    ```bash
+    java -jar /home/monutilisateur/download/schemaSpy_5.0.0.jar -cp /home/monutilisateur/download/postgresql-9.0-801.jdbc4.jar -t pgsql -db osm -host localhost -u utilisateurbase -p motdepasse -s public -o osm_psql_doc  
+    ```
+<!-- markdownlint-enable MD046 -->
 
 Ouvrir avec votre navigateur le fichier index.html du répertoire `osm_psql_doc` et vous avez ainsi documenté la structure de la base OSM importée dans PostgreSQL.  
 

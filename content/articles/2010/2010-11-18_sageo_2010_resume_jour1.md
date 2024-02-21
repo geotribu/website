@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-11-18
 description: "SAGEO 2010, résumé de la première journée de colloque"
 tags:
@@ -20,7 +21,7 @@ tags:
 
 :calendar: Date de publication initiale : 18 novembre 2010
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 Le [SAGEO 2010](http://sageo10.univ-toulouse.fr/) a officiellement ouvert ses portes aujourd'hui. Cette cinquième édition, de ce rendez-vous désormais devenu incontournable, se propose d'aborder les différentes problématiques liées à la Géomatique et l'analyse spatiale. Après le traditionnel mot de bienvenue, cette première journée d'ouverture s'est divisée en deux sessions :
 

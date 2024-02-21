@@ -1,6 +1,6 @@
 # Michaël GALIEN {: data-search-exclude }
 
-![Portrait Michaël GALIEN](https://cdn.geotribu.fr/img/internal/contributeurs/mgal.png "Portrait Michaël GALIEN"){: .img-rdp-news-thumb }
+![Portrait Michaël GALIEN](https://cdn.geotribu.fr/img/internal/contributeurs/mgal.png "Portrait Michaël GALIEN"){: .img-thumbnail-left }
 
 Diplômé de [Polytech'Montpellier, spécialité Informatique & Gestion](https://www.polytech.umontpellier.fr/formation/cycle-ingenieur/informatique-et-gestion), je débute ma carrière dans l'édition de logiciels. En qualité d'ingénieur-développement, je travaille sur différents projets en .NET pour le compte d'un éditeur spécialisé en Lecture et Reconnaissance Automatique de Documents (LAD/RAD).
 

@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: "2022-08-02 14:00"
 description: "Comment travailler avec des librairies Python dans FME. Illustration avec GDAL."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_gdal_python.png"
@@ -22,7 +23,7 @@ tags:
 
 ## Introduction
 
-![logo FME](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/FME.png "logo FME"){: .img-rdp-news-thumb }
+![logo FME](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/FME.png "logo FME"){: .img-thumbnail-left }
 
 FME Workbench est un fantastique ETL, très populaire dans la communauté de la géomatique. Il permet d'assembler par de simples "glisser/déposer" dans une interface graphique des "transformateurs" opérant sur toutes sortes de flux de données (fichiers, bases de données, services web, etc.). Avec ces transformateurs, on réalise les opérations classiques d'un SIG, d'une base de données : sélection de données attributaires, jointures spatiales, modification du style d'une couche vectorielle, etc.
 
@@ -43,7 +44,7 @@ La question est donc : comment obtenir le même résultat avec FME Workbench ?
 
 ## Le transformateur `PythonCaller`
 
-![icône Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+![icône Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
 Une possibilité consiste à utiliser le transformateur `PythonCaller` qui permet de créer son propre transformateur à partir d'un script Python et d'importer la librairie [GDAL](https://gdal.org/tutorials/). J'ai mis en ligne [le "template" FME](http://blog.fiorino.fr/wp-content/uploads/2022/05/TransportationRoads.fmwt) correspondant à cet article.
 
@@ -106,7 +107,7 @@ class MyBandTilePopulator(fmeobjects.FMEBandTilePopulator):
 
 ## Passer les données de bande de FME à GDAL pour créer le raster de proximité
 
-![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
+![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-thumbnail-left }
 
 L'entrée de `PythonCaller` est le raster à une bande contenu dans l'objet FME `feature` et que s'échangent les transformateurs. Cette bande possède de nombreuses propriétés telles que la taille des pixels (`SpacingX` et `SpacingY`) en mètres dans le système de coordonnées projeté choisi, les coordonnées d'origine de la bande (`originX` et `originY`) et sa taille (`numRows` et `numCols`).
 

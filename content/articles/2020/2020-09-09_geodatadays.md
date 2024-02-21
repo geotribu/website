@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: "2020-09-09 10:20"
 description: "On vous donne rendez-vous aux GéoDataDays 2020, les 15 et 16 septembre à Montpellier, l'événement indépendant de la géomatique francophone."
 image: "https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_2020_banniere.jpg"
@@ -32,11 +33,11 @@ A titre personnel, je n'aurai évidemment pas de stand mais si vous lisez régul
 
 ## Planifier son GéoDataDays avec QGIS 3.14
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
 
 En juillet dernier, pour les besoins d'une journée sur le réseautage auprès des participant/es du [CQP GEOM](https://www.idgeo.fr/formation/cqp-geom-geomaticien-developpeur-dapplications-spatiales/) d'[IDGEO](https://www.idgeo.fr/), je les encourageais à participer à l'événement.
 
-Afin de joindre l'utile à l'utile, je leur avais proposé d'établir leur programme au travers d'un projet QGIS, en tirant partie des [nouvelles fonctionnalités temporelles](/rdp/2020/rdp_2020-06-26/#qgis-314-pi).
+Afin de joindre l'utile à l'utile, je leur avais proposé d'établir leur programme au travers d'un projet QGIS, en tirant partie des [nouvelles fonctionnalités temporelles](../../rdp/2020/rdp_2020-06-26.md#qgis-314-pi).
 
 J'aurais aimé diffuser ce projet mais je n'ai pas eu le temps pour travailler suffisamment dessus pour que ce soit présentable. Mais voici quand même un petit aperçu :
 

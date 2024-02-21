@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-04
 description: "Sortie de QGIS 1.2.0 'Daphnis'"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 04 septembre 2009
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Il y a quelques jours sur la liste OSGEO-fr j'ai eu le bonheur d'apprendre la sortie de la version 1.2.0 de QGIS. Je me fais donc l'écho Jean Roc Morreale et reprends ci-dessous son annonce :
 

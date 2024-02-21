@@ -4,6 +4,7 @@ authors:
     - Mathieu BOSSAERT
 categories:
     - article
+comments: true
 date: "2021-09-22 10:30"
 description: "Troisième et dernier article de présentation de la suite Open Data Kit (ODK) et son intégration au SI du CEN d'Occitanie et dans les processus métiers."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/open_data_kit_postgresql.png"
@@ -26,7 +27,7 @@ tags:
 
 ## Troisième partie - Récupération des données dans notre SI
 
-![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-rdp-news-thumb }
+![ODK PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/Central2PG.png "ODK + PostGIS"){: .img-thumbnail-left }
 
 Les données collectées avec les formulaires peuvent être envoyées à différents outils :
 
@@ -57,7 +58,7 @@ Une fois les données centralisés, différentes solutions d'exploitation, d'ana
 
 *Previously on ODK PostGIS* :
 
-[1 : Introduction à ODK](/articles/2021/2021-06-08_odk_postgis_1/){: .md-button } [2 : Exemple de mise en œuvre au CEN](/articles/2021/2021-06-22_odk_postgis_2/){: .md-button }
+[1 : Introduction à ODK](2021-06-08_odk_postgis_1.md){: .md-button } [2 : Exemple de mise en œuvre au CEN](2021-06-22_odk_postgis_2.md){: .md-button }
 {: align=middle }
 
 ----
@@ -84,7 +85,7 @@ L'accès aux données stockées dans Central nécessite donc de revoir notre app
 
 ## Intégration des données au SI(G) du CEN (BDD PostGIS)
 
-![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.jpg "logo PostGIS"){: .img-rdp-news-thumb }
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.jpg "logo PostGIS"){: .img-thumbnail-left }
 
 Diverses pistes d'exploitation des données ont été explorées pour conserver la fluidité que nous connaissions dans le cheminement de l'information, depuis ODK Collect vers nos outils métiers.  
 Elles ont été présentées [ici](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102?u=mathieubossaert) sur le forum d'ODK.
@@ -94,7 +95,7 @@ Ne souhaitant pas passer par un outil tiers, de type ETL (*Extract, Transform an
 
 ### Utilisation des fonctions XML de PostgreSQL
 
-![icône XML](https://cdn.geotribu.fr/img/logos-icones/divers/xml.png "icône XML - XML File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
+![icône XML](https://cdn.geotribu.fr/img/logos-icones/divers/xml.png "icône XML - XML File by Eucalyp from the Noun Project"){: .img-thumbnail-left }
 
 La première idée explorée a consisté à exploiter les données XML de la table submission_defs avec les fonctions intégrées de PostgreSQL.
 
@@ -130,7 +131,7 @@ L'extension permet de faire des appels à des ressources web et donc à l'API de
 
 On réalise un appel à l'API pour chaque "table" du formulaire et le tour est presque joué.
 
-![icône JSON](https://cdn.geotribu.fr/img/logos-icones/programmation/json.png "icône JSON"){: .img-rdp-news-thumb }
+![icône JSON](https://cdn.geotribu.fr/img/logos-icones/programmation/json.png "icône JSON"){: .img-thumbnail-left }
 
 Il ne reste qu'à exploiter le JSON avec les [fonctions JSON proposées par PostgreSQL](https://www.postgresql.org/docs/13/functions-json.html). Avec le recul, la requête pourrait être simplifiée. Il est en effet inutile de tester l'existence d'un élément avant de tenter d'y accéder. S'il n'existe pas, une valeur nulle est renvoyée.
 
@@ -230,7 +231,7 @@ Les premiers retours de la communauté sur [central2pg](https://github.com/mathi
 
 ### Concernant ODK Collect, les formulaires et les "workflow"
 
-La gestion de campagnes d'enquêtes complexes, non "linéaires" et l'amélioration des fonctionnalités cartographiques sont des sujets discutés actuellement au sein du [TAB et de l'équipe](/articles/2021/2021-06-08_odk_postgis_1/#gouvernance-et-communaute).
+La gestion de campagnes d'enquêtes complexes, non "linéaires" et l'amélioration des fonctionnalités cartographiques sont des sujets discutés actuellement au sein du [TAB et de l'équipe](2021-06-08_odk_postgis_1.md#gouvernance-et-communaute).
 
 Nous n'entrons pas dans les détails ici mais voici quelques discussions sur le forum d'ODK :
 

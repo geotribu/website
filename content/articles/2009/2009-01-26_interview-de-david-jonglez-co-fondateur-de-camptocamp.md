@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-01-26
 description: "Interview de David Jonglez, co-fondateur de Camptocamp"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 26 janvier 2009
 
-![logo camptocamp](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/camptocamp.png "logo camptocamp"){: .img-rdp-news-thumb }
+![logo camptocamp](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/camptocamp.png "logo camptocamp"){: .img-thumbnail-left }
 
 David Jonglez co-Fondateur de CampToCamp, dans [une interview](http://www.cedricmoullet.com/download/CamptocampDavidJonglez.pdf) accordée à la revue [Géomatique Expert](http://www.geomag.fr/), fait un tour d'horizon du marché géospatial et particulièrement les orientations futures que prendra la société CampToCamp.
 

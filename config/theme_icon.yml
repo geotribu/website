@@ -1,5 +1,7 @@
 icon:
+  edit: material/pencil
   repo: fontawesome/brands/github-alt
+  view: material/eye
   tag:
     default: fontawesome/solid/tag
     # -- custom tags icons
@@ -23,12 +25,14 @@ icon:
     institution: fontawesome/solid/building-columns
     js: fontawesome/brands/js
     manette: fontawesome/solid/gamepad
+    maplibre: simple/maplibre
     markdown: fontawesome/brands/markdown
     masques: fontawesome/solid/masks-theater
     meridiens: fontawesome/solid/globe
     oeuf: fontawesome/solid/egg
     open: fontawesome/solid/lock-open
     opensource: material/open-source-initiative
+    parquet: simple/apacheparquet
     pingouin: simple/linux
     python: fontawesome/brands/python
     roue: material/cog-play

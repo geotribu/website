@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2014-11-13
 description: "Vous avez reçu des données dont les géométries ne sont pas valides ? Pas de panique, voici comment les corriger en utilisant les traitements GRASS intégrées à QGIS."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_fix_geometry/qgis_check_geom_validity_start.png"
@@ -20,7 +21,7 @@ tags:
 
 :calendar: Date de publication initiale : 13 novembre 2014
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Il arrive que, pour différentes raisons, vous receviez une couche de données qui est topologiquement invalide (polygones dont certains arcs se croisent, etc.). Avant d'entrer dans le vif du sujet et si le mot topologie ne vous est pas familier, je vous conseille la lecture de [l'excellent article](http://www.portailsig.org/content/grass-gis-geometries-topologies-et-consequences-pratiques-vecteurs-rasters-volumes) de Martin Laloux paru sur le Portail SIG.
 

@@ -5,10 +5,14 @@ authors:
 categories:
     - article
     - tutoriel
-date: "2021-02-23 10:20"
+comments: true
+date: 2021-02-23 10:20
 description: "En réaction au changement de licence de MapBox, de nombreuses initiatives ont émergé, dont une très intéressante : MapLibre. Voici un tutoriel complet pour l'utiliser pour créer une carte web interactive 100% libre, en continuant à utiliser les fonctionnalités de MapboxGL sans dépendance aux jetons d'accès."
+icon: simple/maplibre
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/finalisation.JPG"
 tags:
+    - MapBox
+    - MapLibre
     - tuiles vectorielles
     - WebGL
     - webmapping
@@ -31,6 +35,9 @@ Ce projet est très intéressant car MapLibre conserve la syntaxe de [MapboxGL.J
 Nous proposons dans ce billet de **construire étape par étape une [carte Web 100% libre](https://bl.ocks.org/mastersigat/30898810b41783ffde93330b7edb3124) en mobilisant une série de services ouverts** pour construire rapidement une petite carte Web basée sur les tuiles vectorielles et le WebGL.
 
 ![carte presentation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/carte_presentation.JPG "Carte de presentation"){: .img-center loading=lazy }
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
 
 ----
 
@@ -143,6 +150,7 @@ https://openmaptiles.geo.data.gouv.fr/data/cadastre.json
 
 L'IGN met à disposition sans restriction un [flux de tuiles vectorielles de fond carte](https://geoservices.ign.fr/documentation/services_betas/vecteur-tuile.html) basé sur ses propres données ce qui peux contituer une alternative intéressante aux données OSM dans certains cas.
 
+<!-- markdownlint-disable MD024 -->
 #### Fond de carte (Style)
 
 ```javascript

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2008-11-03
 description: "Lancement du blog de Geotribu"
 tags:

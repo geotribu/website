@@ -1,13 +1,16 @@
 ---
 title: "Utiliser GDAL pour traiter les fichiers de la Base Adresse Nationale et Locales"
+subtitle: "GDAL c'est de la BAL"
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
+comments: true
 date: "2021-09-07 10:20"
 description: "Travailler les données de la Base Adresse Nationale (BAN) avec GDAL/OGR, en tirant parti de l'abstraction sur les systèmes de fichiers virtuels (VSI) et de la lecture (VRT)."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png"
+icon: material/tennis-ball
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png
 license: beerware
 tags:
     - adresse
@@ -24,15 +27,15 @@ tags:
 
 Prérequis :
 
-- GDAL > 3 - sur [Windows 10+, il est possible d'utiliser WSL](/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/)
+- GDAL > 3 - sur [Windows 10+, il est possible d'utiliser WSL](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md)
 
 ## Introduction
 
-![logo GDAL tshirt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_logo_tshirt.webp "logo GDAL tshirt"){: .img-rdp-news-thumb }
+![logo GDAL tshirt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_logo_tshirt.webp "logo GDAL tshirt"){: .img-thumbnail-left }
 
-On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années et plus récemment des Bases Adresses Locales (BAL). Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressé avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](/?q=adress).
+On parle beaucoup des données de la Base Adresse Nationale (BAN) ces dernières années et plus récemment des Bases Adresses Locales (BAL). Peu complexes et facilement accessibles [ici](https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/) au format CSV (compressé avec GZIP), elles bénéficient d'un bon outillage et d'un usage largement diffusé. D'ailleurs, on en parle régulièrement [ici même sur Geotribu](?q=adress).
 
-Après que [Michaël Galien ait proposé une méthode avec sa bibliothèque PowerShell](/articles/2021/2021-05-25_biblio_powershell_si3p0/#cas-dusage-traitement-automatise-de-la-ban), je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes :
+Après que [Michaël Galien ait proposé une méthode avec sa bibliothèque PowerShell](2021-05-25_biblio_powershell_si3p0.md#cas-dusage-traitement-automatise-de-la-ban), je vous propose de tirer parti de fonctionnalités de GDAL parfois méconnues pour automatiser les différentes étapes :
 
 1. télécharger les données
 2. les décompresser
@@ -50,7 +53,7 @@ Pour les besoins de ce tutoriel, on va utiliser les données du plus grand dépa
 
 ## La magie du système virtuel de GDAL (VSI)
 
-![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
+![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-thumbnail-left }
 
 Voilà bien 2 étapes répétitives qu'il est facile d'automatiser en tirant parti de la gestion des [systèmes de fichiers virtuels](https://gdal.org/user/virtual_file_systems.html) intégré à GDAL (VSI).  
 Le couteau-suisse de la géomatique intègre en effet des outils comme cURL et permet donc de gérer l'accès à des fichiers stockés ailleurs que sur un disque local, dans différents protocoles (HTTP, FTP...), formats de compression (ZIP, GZIP, TAR...) et mécanismes d'abstraction (APIs, stockage objet...). Très pratique pour qui n'a pas le temps d'apprendre à utiliser de multiples outils et surtout à les articuler.
@@ -117,7 +120,7 @@ source_nom_voie: String (0.0)
 
 ### Le bal des options
 
-![logo GDAL next](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_next_logo.png "logo GDAL next"){: .img-rdp-news-thumb }
+![logo GDAL next](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_next_logo.png "logo GDAL next"){: .img-thumbnail-left }
 
 En regardant le modèle du [format BAN](https://doc.adresse.data.gouv.fr/utiliser-la-base-adresse-nationale/les-fichiers-de-la-base-adresse-nationale) et la [documentation GDAL sur les CSV](https://gdal.org/drivers/vector/csv.html#open-options), on peut dès lors améliorer encore un peu les choses :
 
@@ -199,7 +202,7 @@ Mais on est là pour automatiser et ce serait quand même BALlot de se rajouter 
 
 ## Le tout-en-un du format virtuel de GDAL (VRT)
 
-![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-rdp-news-thumb }
+![logo BAN](https://cdn.geotribu.fr/img/logos-icones/divers/ban.png "logo BAN"){: .img-thumbnail-left }
 
 Bien connu des habitués de GDAL, le format virtuel (les fichiers `*.vrt`), présent dès les premières versions, sert notamment pour le mosaïquage de rasters mais aussi la définition d'un jeu de données à partir de plusieurs sources et paramètres. C'est cet aspect qui nous intéresse ici.
 
@@ -316,7 +319,7 @@ Si on veut combiner les données d'un autre département, il suffit de dupliquer
 
 #### Indiquer la reprojection dans le VRT
 
-![logo projection](https://cdn.geotribu.fr/img/logos-icones/divers/projection.png "logo projection"){: .img-rdp-news-thumb }
+![logo projection](https://cdn.geotribu.fr/img/logos-icones/divers/projection.png "logo projection"){: .img-thumbnail-left }
 
 Comme dit plus haut, j'ai voulu que mes fichiers VRT soient le plus génériques possibles et j'ai donc opté pour utiliser les champs `lat` et `lon` qui référencent les coordonnées en WGS 84. Ainsi, pour adapter les fichiers à d'autres départements, il suffit juste de changer le nom et la source.
 
@@ -350,7 +353,7 @@ ogr2ogr \
 
 ### BALance ton fichier VRT
 
-![logo BAL](https://cdn.geotribu.fr/img/logos-icones/divers/bal.png "logo BAL"){: .img-rdp-news-thumb }
+![logo BAL](https://cdn.geotribu.fr/img/logos-icones/divers/bal.png "logo BAL"){: .img-thumbnail-left }
 
 Pour le [format BAL](https://schema.data.gouv.fr/etalab/schema-bal/latest.html) qui est bien documenté grâce aux petits soins de l'[AITF] (merci entre autres à Maël Reboux et Chantal Arruti), on retrouve peu ou prou la même logique si ce n'est que les CSV sont stockés sans compression sur le site statique de data.gouv.fr.
 
@@ -404,7 +407,7 @@ Après tout ce travail, on vérifie le rendu et la structure des données dans n
 
 ### Un petit CSVT pour la route
 
-![icône CSV](https://cdn.geotribu.fr/img/logos-icones/divers/csv.png "icône CSV - CSV File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
+![icône CSV](https://cdn.geotribu.fr/img/logos-icones/divers/csv.png "icône CSV - CSV File by Eucalyp from the Noun Project"){: .img-thumbnail-left }
 
 Tant qu'on y est, autant capitaliser sur ce travail pour faciliter les choses aux outils qui tirent parti des fichiers de définition des types de champs : les fichiers CSVT.  
 C'est en tout cas utilisé par QGIS (voir [la doc officielle](https://docs.qgis.org/3.16/fr/docs/user_manual/managing_data_source/supported_data.html#using-csvt-file-to-control-field-formatting) et [ce billet de blog d'Anita Graser](https://anitagraser.com/2011/03/07/how-to-specify-data-types-of-csv-columns-for-use-in-qgis/)).
@@ -423,7 +426,7 @@ String,String,String,String,String,String,String,String,Integer,String,String,Co
 
 ### Utiliser le XSD pour valider le schéma
 
-![icône XML](https://cdn.geotribu.fr/img/logos-icones/divers/xml.png "icône XML - XML File by Eucalyp from the Noun Project"){: .img-rdp-news-thumb }
+![icône XML](https://cdn.geotribu.fr/img/logos-icones/divers/xml.png "icône XML - XML File by Eucalyp from the Noun Project"){: .img-thumbnail-left }
 
 Comme indiqué dans la documentation, le [schéma du format VRT est défini par un XSD](https://github.com/OSGeo/gdal/blob/master/data/ogrvrt.xsd) ([XML Schema Definition](https://fr.wikipedia.org/wiki/XML_Schema)) qu'il peut être utile d'indiquer dans l'espace de nommage :
 

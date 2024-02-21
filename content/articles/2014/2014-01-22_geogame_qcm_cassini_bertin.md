@@ -4,6 +4,7 @@ authors:
     - Jérémie ORY
 categories:
     - article
+comments: true
 date: "2014-01-22 10:20"
 description: "Géogame de Geotribu : QCM (questions à choix multiples) sur l'histoire contemporaine française de la cartographie. De Cassini à Jacques Bertin, dix questions pour tester vos connaissances."
 image: "https://cdn.geotribu.fr/img/geogames/geogame1_capture.png"
@@ -20,7 +21,7 @@ tags:
 
 Cette semaine, nous vous proposons un deuxième Geogame, "questions choix multiples", sur l'histoire contemporaine française de la cartographie. De Cassini à Jacques Bertin, dix questions pour tester vos connaissances.
 
-![citation](https://cdn.geotribu.fr/img/logos-icones/divers/quote_citation.png "icône citation"){: .img-rdp-news-thumb }
+![citation](https://cdn.geotribu.fr/img/logos-icones/divers/quote_citation.png "icône citation"){: .img-thumbnail-left }
 
 Pour achever ce qui reste à faire, on se propose d'augmenter le nombre des ingénieurs, et de les porter jusqu'à trente-quatre [...] C'est un moyen que l'on juge absolument nécessaire pour donner aux cartes la plus grande perfection ; car quoique l'on ait recommandé aux ingénieurs de s'adresser aux personnes qui seraient sur les lieux, pour l'orthographe des noms, le nombres des hameaux, fermes et autres objets dans l'étendue de chaque paroisse, il est à craindre que nos ordres ne soient bien exécutés.  
 

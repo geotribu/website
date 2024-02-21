@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-05-24
 description: "A la découverte de Puzzle GIS"
 tags:
@@ -19,7 +20,7 @@ tags:
 
 ## introduction
 
-![logo Puzzle GIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/puzzle_gis.gif "logo Puzzle GIS"){: .img-rdp-news-thumb }
+![logo Puzzle GIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/puzzle_gis.gif "logo Puzzle GIS"){: .img-thumbnail-left }
 
 D'habitude j'utilise principalement QGis, sa souplesse d'utilisation et ses fonctionnalités me conviennent parfaitement. Mais voilà, il y a quelques semaines, suite à une mise à jour de Fedora je me suis retrouvé avec un message d'erreur : "Segmentation Fault" au lancement de mon application.  
 

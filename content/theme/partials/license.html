@@ -1,0 +1,59 @@
+{# License #}
+{% if not page.is_homepage %}
+  <hr>
+  {% if ("license" not in page.meta or page.meta.license == "default" or page.meta.license == "cc4_by-nc-sa") %}
+  <div class="md-source-date">
+    <small>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        Ce contenu est sous licence Creative Commons
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank"
+          rel="license noopener noreferrer">BY-NC-SA 4.0 International
+          <img src="https://cdn.geotribu.fr/img/internal/licences/cc.svg" class=img-license-picto
+            alt="Pictogramme Creative Commons" longdesc="https://creativecommons.org/licenses/?lang=fr-FR" title="CC" />
+          <img src="https://cdn.geotribu.fr/img/internal/licences/by.svg" class=img-license-picto
+            alt="Pictogramme Creative Commons BY" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
+            title="BY" />
+          <img src="https://cdn.geotribu.fr/img/internal/licences/nc.svg" class=img-license-picto
+            alt="Pictogramme Creative Commons NC" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
+            title="NC" />
+          <img src="https://cdn.geotribu.fr/img/internal/licences/sa.svg" class=img-license-picto
+            alt="Pictogramme Creative Commons SA" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
+            title="SA" />
+        </a>
+      </p>
+    </small>
+  </div>
+  {% elif page.meta.license == "cc4_by-sa" %}
+  <div class="md-source-date">
+    <small>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        Ce contenu est sous licence Creative Commons
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank"
+          rel="license noopener noreferrer">BY-SA 4.0 International
+          <img src="https://cdn.geotribu.fr/img/internal/licences/cc.svg" class=img-license-picto
+            alt="Pictogramme Creative Commons" longdesc="https://creativecommons.org/licenses/?lang=fr-FR" title="CC" />
+          <img src="https://cdn.geotribu.fr/img/internal/licences/by.svg" class=img-license-picto
+            alt="Pictogramme Creative Commons BY" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
+            title="BY" />
+          <img src="https://cdn.geotribu.fr/img/internal/licences/sa.svg" class=img-license-picto
+            alt="Pictogramme Creative Commons SA" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
+            title="SA" />
+        </a>
+      </p>
+    </small>
+  </div>
+  {% elif page.meta.license == "beerware" %}
+  <div class="md-source-date"></div>
+  <small>
+    <p xmlns:license="https://fr.wikipedia.org/wiki/Beerware">
+      Ce contenu est sous licence
+      <a href="https://fr.wikipedia.org/wiki/Beerware" target="_blank" rel="license noopener noreferrer"
+        title="Licence très permissive qui confère à l'utilisateur final le droit d'utiliser le contenu, sans conditions sauf paternité. Si l'utilisateur rencontre l'auteur, il est encouragé à lui offrir une bière ou autre en retour.">Beerware
+        <img src="https://cdn.geotribu.fr/img/internal/licences/BeerWare.svg" class=img-license-picto
+          alt="Pictogramme BeerWare" title="Beerware - Kita59, CC BY-SA 3.0, via Wikimedia Commons" />
+      </a>
+    </p>
+  </small>
+  </div>
+  {% endif %}
+{% endif %}

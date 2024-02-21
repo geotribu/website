@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-18
 description: "Vers un rapprochement d'OSM-fr et de l'OSGEO-fr ?"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 18 mars 2010
 
-![logo OSM/OSGEO](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osm_osgeo.png "logo OSM/OSGEO"){: .img-rdp-news-thumb }
+![logo OSM/OSGEO](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osm_osgeo.png "logo OSM/OSGEO"){: .img-thumbnail-left }
 
 L'idée de créer une association OSM-fr n'est pas nouvelle. Elle fait partie de ces vieux dossiers qui ressortent régulièrement du placard mais sans trouver, au final, de consensus. Il y a quelques semaines cette [discussion](http://www.mail-archive.com/talk-fr@openstreetmap.org/msg18397.html) a été une nouvelle fois relancée par Frédéric Rodrigo. Il s'en est suivi une trentaine de réactions où chacun exposait, avec plus ou moins de véhémence, les pour, les contre ou les situations alternatives possible.
 

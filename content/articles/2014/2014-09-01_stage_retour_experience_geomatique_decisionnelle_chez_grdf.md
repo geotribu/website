@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2014-09-01
 description: "Stage : Retour d'Expérience et Géomatique Décisionnelle chez GrDF"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 01 septembre 2014
 
-![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-rdp-news-thumb }
+![icône thèse](https://cdn.geotribu.fr/img/logos-icones/divers/these.png "icône thèse"){: .img-thumbnail-left }
 
 Vous êtes à la recherche d'un stage et le domaine de la géomatique décisionnelle vous intéresse alors cette offre devrait retenir toute votre attention ? En effet, GrDF (filiale du groupe GDF Suez) est à la recherche à partir de Janvier d'un candidat pour un stage à Paris d'une durée de 6 mois .
 

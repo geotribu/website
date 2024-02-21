@@ -4,6 +4,7 @@ authors:
     - Patrick GENDRE
 categories:
     - article
+comments: true
 date: "2021-12-10 14:20"
 description: "Open Mobility Indicators est un ensemble d’outils logiciels libres et collaboratifs qui traite les données ouvertes pour créer des indicateurs de mobilité durable."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/open_mobility_indicators/OpenMobilityIndicators_apercu.png"
@@ -20,7 +21,7 @@ tags:
 
 ## Introduction
 
-![icône globe flux](https://cdn.geotribu.fr/img/internal/icons-rdp-news/flux.png "icône globe flux"){: .img-rdp-news-thumb }
+![icône globe flux](https://cdn.geotribu.fr/img/internal/icons-rdp-news/flux.png "icône globe flux"){: .img-thumbnail-left }
 
 Après un démonstrateur couvrant la région Sud PACA l'an dernier avec le soutien du Conseil Régional et de l'Ademe,
 la nouvelle version de l'application web "Mon quartier à pied" dans le cadre du [projet OpenMobilityIndicators](https://openmobilityindicators.org/) couvre désormais la France métropolitaine. Elle a été développée grâce au travail de l'équipe de [Jailbreak](https://jailbreak.paris/fr-fr/) et au soutien du [programme "Résilience des territoires" de l'Ademe](https://wiki.resilience-territoire.ademe.fr/wiki/Mon_quartier_%C3%A0_pied).
@@ -52,7 +53,7 @@ Les tuiles vecteur sont générées avec [tipecannoe](https://github.com/mapbox/
 
 ## Un premier cas d’usage possible
 
-![panneau C13d](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/open_mobility_indicators/panneau_C13d.png "panneau C13d"){: .img-rdp-news-thumb }
+![panneau C13d](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/open_mobility_indicators/panneau_C13d.png "panneau C13d"){: .img-thumbnail-left }
 
 "[Libérez vos impasses](https://www.tousapied.be/nos-projets/liberez-vos-impasses/)" est une initiative lancée en 2015 par l’association belge « Tous à pied », qui consiste à transformer les panneaux "impasse" en y ajoutant des autocollants représentant un piéton et un cycliste ([pour en faire un panneau « C13d »](https://fr.wikipedia.org/wiki/Panneau_d%27indication_d%27une_impasse_en_France) - F45b en Belgique), lorsque la voie est en impasse.
 

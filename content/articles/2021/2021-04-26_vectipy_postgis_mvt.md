@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: "2021-04-26 15:00"
 description: "Présentation de vectipy, un serveur léger de tuiles vectorielles (MVT)"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_logo.png"
@@ -23,12 +24,12 @@ license: cc4_by-sa
 Pré-requis :
 
 - Avoir une une base de données PostGIS >= 2.4 fonctionnelle
-- Savoir créer un environnement virtuel Python (voir [Python : configuration sur Windows et outillage](/articles/2020/2020-06-19_setup_python/))
+- Savoir créer un environnement virtuel Python (voir [Python : configuration sur Windows et outillage](../2020/2020-06-19_setup_python.md))
 - Avoir des notions d'administration d'un serveur web
 
 ## Introduction
 
-![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
 Le serveur de tuiles [vectipy](https://github.com/jbdesbas/vectipy) peut vous interesser si :
 
@@ -76,7 +77,7 @@ QGIS permet également de prégénérer des tuiles à partir de n'importe quel f
 
 Les flux ainsi publiés sont utilisables par une interface web avec [MapLibre GL](https://github.com/maplibre/maplibre-gl-js), [Leaflet](https://github.com/Leaflet/Leaflet) (avec plugin), mais aussi [supportées nativement par QGIS](https://makina-corpus.com/blog/metier/2020/qgis-nouveau-support-tuiles-rasters-vectorielles) depuis la version 3.14.
 
-[Cet article](/articles/2021/2021-02-23_carte_ligne_libre/) vous explique comment styliser un fichier GeoJSON sur carte MapLibre. Le fonctionnement avec un flux MVT est rigoureusement identique, la seule différence se faisant au moment de la définition de la source de données :
+[Cet article](2021-02-23_carte_ligne_libre.md) vous explique comment styliser un fichier GeoJSON sur carte MapLibre. Le fonctionnement avec un flux MVT est rigoureusement identique, la seule différence se faisant au moment de la définition de la source de données :
 
 ```javascript
 map.addSource("my-data", {
@@ -175,8 +176,8 @@ Il s'agit de mon premier projet ce genre, aussi je serais ravi d'avoir votre ret
 
 Voir aussi :
 
-- [Publier une carte avec mapLibre](/articles/2021/2021-02-23_carte_ligne_libre/)
-- [Installation python](/articles/2020/2020-06-19_setup_python/)
+- [Publier une carte avec mapLibre](2021-02-23_carte_ligne_libre.md)
+- [Installation python](../2020/2020-06-19_setup_python.md)
 - [Les tuiles vectorielles](https://docs.mapbox.com/vector-tiles/specification/)
 - [PostGIS : ST_AsMVT](https://postgis.net/docs/ST_AsMVT.html)
 
@@ -188,7 +189,7 @@ Autres serveurs de tuiles vectorielles sur le [Github de Mapbox](https://github.
 
 ### Jean-Baptiste Desbas
 
-![Portrait Jean-Baptiste Desbas](https://cdn.geotribu.fr/img/internal/contributeurs/jdes.png "Portrait Jean-Baptiste Desbas"){: .img-rdp-news-thumb }
+![Portrait Jean-Baptiste Desbas](https://cdn.geotribu.fr/img/internal/contributeurs/jdes.png "Portrait Jean-Baptiste Desbas"){: .img-thumbnail-left }
 
 Géomaticien avec une forte appétence pour les thématiques environnement, biodiersité et urbanisme. Je travaille en tant que gestionnaire de base de données à l'association [Picardie Nature](http://picardie-nature.org), où j'ai la chance de pouvoir insuffler une logique _open data_ au sein de la communauté naturaliste.
 

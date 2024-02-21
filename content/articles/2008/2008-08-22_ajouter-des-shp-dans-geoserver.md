@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-08-22
 description: "Ajouter des SHP dans GeoServer"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 ## Introduction
 
-![logo GeoServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo GeoServer"){: .img-rdp-news-thumb }
+![logo GeoServer](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo GeoServer"){: .img-thumbnail-left }
 
 Nous apprendrons ici comment ajouter des données de type SHP (esri) dans GeoServer. Il est nécéssaire que vous ayez auparavant GeoServer d'installé et que vous l'ayez démarré.
 

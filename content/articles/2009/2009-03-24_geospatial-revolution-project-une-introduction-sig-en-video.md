@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-24
 description: "Geospatial Revolution Project, une introduction SIG en vidéo"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 24 mars 2009
 
-![icône globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe news"){: .img-rdp-news-thumb }
+![icône globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe news"){: .img-thumbnail-left }
 
 A l'heure où la question "**où suis-je**" devient aussi importante que "**qui suis-je**", il était important de replacer le SIG et les multiples applications qui découlent de cette technologie.
 

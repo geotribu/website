@@ -237,7 +237,7 @@ redirects:
     node/334.md: rdp/2011/rdp_2011-01-07.md
     node/337.md: rdp/2011/rdp_2011-01-14.md
     node/338.md: articles/2011/2011-01-19_documenter_bases_de_donnees_exemple_openstreetmap.md
-    node/337.md: rdp/2011/rdp_2011-01-21.md
+    node/339.md: rdp/2011/rdp_2011-01-21.md
     node/340.md: articles/2011/2011-01-18_data_mining_risques_maritimes.md
     node/341.md: rdp/2011/rdp_2011-01-28.md
     node/342.md: articles/2011/2011-02-09_participez_a_openstreetmap_en_puissance_machine.md
@@ -597,7 +597,7 @@ redirects:
     rdp/2010/rdp_2010-10-14.md: rdp/2010/rdp_2010-10-15.md
     rdp/2015/rdp_2015-04-07.md: rdp/2015/rdp_2015-04-10.md
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
-    # rss.md: https://static.geotribu.fr/feed_rss_created.xml
+    # rss.md: https://geotribu.fr/feed_rss_created.xml
 
     # migration des contenus en 2022
     articles/2008/art_2008-11-03.md: articles/2008/2008-11-03_premiers-pas-dans-la-cour-des-grands.md
@@ -802,6 +802,7 @@ redirects:
     articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
     articles/2021/2021-06-08_odk_postgis_2.md: articles/2021/2021-06-22_odk_postgis_2.md
     articles/2021/2021-06-17_qgis_personnaliser_splash_screen.md: articles/2021/2021-06-11_qgis_personnaliser_splash_screen.md
+    articles/2023/2023-03-12_conference-qgis-fr-2023-preparer-profil-qdt-.md: articles/2023/2023-03-12_conference-qgis-fr-2023-profil-qdt-qgis-deployment-toolbelt.md
 
     # migration du guide de contribution - janvier 2023
     contribuer/introduction.md: https://contribuer.geotribu.fr/
@@ -843,6 +844,9 @@ redirects:
 
     # migration
     toc_nav_ignored/qgis_resources_preview_table.md: https://geotribu.github.io/pyqgis-icons-cheatsheet/
+    team/statistiques.md: index.md
 
     # divers
     team/jemv.md: team/jvig.md
+    team/ndavid.md: team/ndav.md
+    team/sdeb.md: team/sdes.md

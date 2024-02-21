@@ -1,13 +1,14 @@
 # Project information
-site_name: Geotribu
+site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu"]
 site_description: >-
   Site indépendant de veille sur la géomatique libre et open source.
   Articles, tutoriels et revues de presse (#GeoRDP) sur
   l'information géographique, les SIG, la cartographie, la représentation des données...
 
-site_author: Geotribu
-site_url: https://static.geotribu.fr/
-copyright: '<span class="copyleft">&copy;</span> Geotribu'
+site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
+site_url: !ENV [MKDOCS_SITE_URL, "https://geotribu.fr/"]
+copyright:
+  !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
 
 # Repository
 repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/website"]
@@ -15,13 +16,13 @@ repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/website"]
 edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/master/content"]
 
 # Custom folder structure
-docs_dir: "./content"
-site_dir: "./build/mkdocs/site"
+docs_dir: !ENV [MKDOCS_SOURCE_DIR, "./content"]
+site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
 # Scripts pendant le build
 hooks:
-  - hooks/mkdocs/G001_check_hyperlinks_internal.py
   # - hooks/mkdocs/G002_check_images_size.py
+  - hooks/mkdocs/G003_social_cards_adapter.py
 
 # Plugins
 plugins:
@@ -35,30 +36,14 @@ plugins:
       exclude:
         - index.md
       show_contribution: true
-  - git-committers:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS, false]
-      repository: geotribu/website
-      branch: master
-      docs_path: content/
+      show_email_address: false
   - git-revision-date-localized:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, false]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
-  - glightbox:
-      touchNavigation: true
-      effect: zoom
-      width: 90%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - img-rdp-news-thumb
-        - emojione
-        - twemoji
-      auto_caption: true
-      caption_position: bottom
-  - meta
+  - meta:
+      meta_file: "content/**/.meta.yml"
   - minify:
       minify_css: true
       css_files:
@@ -67,40 +52,26 @@ plugins:
       minify_html: true
       htmlmin_opts:
         remove_comments: true
-  - rss:
-      abstract_chars_count: 500
-      categories:
-        - categories
-        - tags
-      comments_path: "#__comments"
-      date_from_meta:
-        as_creation: "date"
-        as_update: false
-        datetime_format: "%Y-%m-%d %H:%M"
-        default_timezone: Europe/Paris
-        default_time: "14:00"
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
-      image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-      length: 50
-      match_path: "(articles|rdp)/.*"
-      pretty_print: false
-      url_parameters:
-        utm_source: "rss-feed"
-        utm_medium: "RSS"
-        utm_campaign: "feed-syndication"
   - search:
       lang: fr
   - macros:
       include_dir: content/toc_nav_ignored/snippets
+      module_name: hooks/macros/custom_jinja
   - tags:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_file: tags.md
-      tags_compare: !!python/name:material.plugins.tags.plugin.casefold
+      tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
+      listings_sort_by: !!python/name:material.plugins.tags.item_url
+  - termynal
   - privacy:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
-      external_links_attr_map:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
+      cache_dir:
+        !ENV [MKDOCS_PLUGIN_PRIVACY_EXTERNAL_CACHE_DIR, .cache/plugins/privacy]
+      links_attr_map:
         target: _blank
-      external_assets_exclude:
+      assets_exclude:
+        # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
+        - cdn.jsdelivr.net/npm/mathjax@3/*
+        - giscus.app/*
         # geotribu
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*
@@ -109,6 +80,8 @@ plugins:
         - ks356007.kimsufi.com/*
         # external
         - baliz-geospatial.com/images/mediatheque/2008-08/*
+        - cdn.jsdelivr.net/**/*/twemoji*
+        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
         - github.com/**/*.gif
         - i.imgur.com/*
         - raw.githubusercontent.com/*
@@ -125,22 +98,38 @@ plugins:
         - boundlessgeo.com/*
         - i3.codeplex.com/*
         - drfhlmcehrc34.cloudfront.net/*
+  - social:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
+      cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
+      cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, true]
+      cards_exclude:
+        - index.md
+        - toc_nav_ignored/*.md
+      cards_layout_options:
+        background_color: "#00000000"
+        background_image: content/theme/assets/images/geotribu/background_geotribu.png
+        color: "#3e93a7"
+        font_family: Ubuntu
+  - typeset:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TYPESET, true]
 
 # Theme
 theme:
   name: "material"
+  insiders_flavor: true
   custom_dir: "./content/theme/"
-  favicon: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
+  favicon: theme/assets/images/geotribu/logo_geotribu.png
 
   features:
     - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
     - content.tabs.link
+    - content.tooltips
+    - navigation.instant.preview
     - navigation.path
     - navigation.prune
     - navigation.tabs
@@ -150,9 +139,11 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-  font: false
+  font:
+    code: Ubuntu Mono
+    text: Ubuntu
   language: fr
-  logo: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+  logo: theme/assets/images/geotribu/logo_geotribu.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -186,7 +177,6 @@ extra:
     title: Consentement 🍪
     actions:
       - accept
-      - manage
       - reject
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
@@ -195,6 +185,14 @@ extra:
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
+
+extra_javascript:
+  - path: https://mastodon.social/embed.js
+    async: true
+    defer: true
+  - path: https://platform.twitter.com/widgets.js
+    async: true
+    defer: true
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
@@ -210,10 +208,12 @@ markdown_extensions:
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
-      linenums: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -225,6 +225,7 @@ markdown_extensions:
       base_path:
         - "."
       check_paths: true
+      url_download: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

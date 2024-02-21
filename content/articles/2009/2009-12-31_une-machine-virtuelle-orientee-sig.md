@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-12-31
 description: "Présentation de GIS VM, une machine virtuelle orientée SIG"
 image: "https://cdn.geotribu.fr/img/tuto/gisvm/739px-Gisvm_startup.jpg"
@@ -17,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 31 décembre 2009
 
-![logo GISVM](https://cdn.geotribu.fr/img/tuto/gisvm/gisvm_logo.png "logo GISVM"){: .img-rdp-news-thumb }
+![logo GISVM](https://cdn.geotribu.fr/img/tuto/gisvm/gisvm_logo.png "logo GISVM"){: .img-thumbnail-left }
 
 Le Père Noël ne vous a pas suffisamment gâté pour les fêtes? Vous rêviez de recevoir un ordinateur pour geek géomaticien mais là sous le sapin rien...  
 Si c'est le cas, je vous conseille d'aller faire un tour du côté de [Gisvm](http://gisvm.com/) qui propose en téléchargement une machine virtuelle complètement orientée SIG. Celle-ci, en fonction de vos besoins, se décline en deux versions, une serveur l'autre desktop. Les principales caractéristiques sont présentées dans le tableau ci-dessous :

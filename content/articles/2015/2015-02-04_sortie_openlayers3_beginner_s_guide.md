@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2015-02-04
 description: "Sortie du livre 'OpenLayers 3: beginner&apos;s guide' auquel deux membres de Geotribu ont contribué à rédiger et relire"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 04 février 2015
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 C'est avec un immense plaisir que nous vous annonçons la sortie de l'ouvrage "[OpenLayers 3: Beginner's Guide](https://www.packtpub.com/web-development/openlayers-3-beginner%E2%80%99s-guide)". Plaisir bien évidemment car cet ouvrage porte sur [OpenLayers](https://openlayers.org/), mais aussi car un des rédacteurs ainsi que l'un des relecteurs sont des membres de GeoTribu !
 

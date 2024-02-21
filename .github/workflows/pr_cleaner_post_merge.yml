@@ -20,15 +20,16 @@ jobs:
 
     steps:
       - name: Get source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Prepare redirection
         run: |
           mkdir -p ${{ env.BUILD_DIR }}
           cp scripts/redirect.html ${{ env.BUILD_DIR }}/index.html
+          cp scripts/redirect.html ${{ env.BUILD_DIR }}/404.html
 
       - name: Deploy preview to Netlify
-        uses: nwtgck/actions-netlify@v2.0
+        uses: nwtgck/actions-netlify@v2.1
         id: preview
         timeout-minutes: 1
         env:

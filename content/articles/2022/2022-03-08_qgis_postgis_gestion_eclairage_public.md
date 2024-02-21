@@ -4,6 +4,7 @@ authors:
     - Stéphane RITZENTHALER
 categories:
     - article
+comments: true
 date: "2022-03-08 10:30"
 description: "Création d'une base de données PostgreSQL/PostGIS pour la visualisation et la gestion du réseau d'éclairage public sur QGIS par une collectivité."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png"
@@ -47,7 +48,7 @@ Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres
 
 ## La base de données relationnelle, un élément incontournable peu importe la solution future
 
-![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.jpg "logo PostGIS"){: .img-rdp-news-thumb }
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.jpg "logo PostGIS"){: .img-thumbnail-left }
 
 La gestion de réseau ne peut se faire de manière efficace que si elle repose sur une base de données relationnelle solide. Le premier défi de cette étude fut de trouver la formule la plus adéquate pour nos besoins.
 
@@ -76,7 +77,7 @@ Cette démarche est propre à chaque organisme et dépend de l'organisation init
 
 ## Exploitation dans QGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Une fois la partie la plus complexe réalisée, à savoir l'organisation du stockage des données et transformation, place à un peu plus de fun avec notre logiciel SIG favori !  
 A noter qu'il a été important, vu la complexité des premières phases, d'automatiser les traitements dans la mesure du possible. En effet, il est alors beaucoup plus facile de revenir sur certains points, d'appliquer des mises à jour ou des modifications. C'est pourquoi nous avons par exemple utilisé des scripts SQL et des jobs FME afin de rendre le processus aisément reproductible. Le but est maintenant d'exploiter les données au sein de QGIS et de proposer des interfaces plaisantes aux utilisateurs pour interroger, créer ou modifier les données liées à l'éclairage public.

@@ -4,9 +4,10 @@ authors:
     - Théo GRONDIN
 categories:
     - article
+comments: true
 date: "2022-02-11 10:20"
 description: "Mise en place d'un tableau de bord QGIS par manipulation d'étiquettes de couches dans le cadre du suivi de projet adressage - Pôle SIG du Département du Calvados."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro.png "
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro.png
 license: default
 robots: index, follow
 tags:
@@ -197,4 +198,4 @@ Ci-dessous, un exemple d'affichage des bilans adresses (en haut à droite) aprè
 
 {% include "licenses/default.md" %}
 
-[^1]: loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale. Voir sur [Legifrance](https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000043496065/) et les [contenus liés sur Geotribu](/tags/#loi-3ds).
+[^1]: loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale. Voir sur [Legifrance](https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000043496065/) et les [contenus liés sur Geotribu](../../tags.md#loi-3ds).

@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-08-22 10:20
 description: "11. Géocoder une adresse"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 L'API Google Maps possède des fonctions de géocodage à l'adresse qui permettent d'obtenir la longitude et la latitude à partir d'une adresse.  
 
@@ -25,7 +26,7 @@ Nous allons voir dans ce tutoriel comment utiliser cette fonctionnalité et comm
 
 ## Initialisation
 
-Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/).  
+Reprendre la carte du [tutoriel n°2](2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles.md).  
 
 ## Géocodage
 

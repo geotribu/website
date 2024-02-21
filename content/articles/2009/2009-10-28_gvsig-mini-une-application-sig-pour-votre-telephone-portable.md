@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-10-28
 description: "gvSIG Mini, une application SIG pour votre téléphone portable"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 28 octobre 2009
 
-![logo gvSIG](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gvsig.png "logo gvSIG"){: .img-rdp-news-thumb }
+![logo gvSIG](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gvsig.png "logo gvSIG"){: .img-thumbnail-left }
 
  Le nom [gvSIG](http://www.gvsig.gva.es/) ne vous est sûrement pas inconnu. En effet, c'est l'un des logiciels phares du monde SIG OpenSource. Celui-ci, jusqu'à récemment, n'était disponible que sous la forme d'une application lourde à installer sur un ordinateur. Mais une nouvelle version nommée [gvSIG Mini](https://confluence.prodevelop.es/display/GVMN/Home) est maintenant disponible pour téléphone portable. Résolument tournée vers le web, cette application permet l'affichage des principaux fournisseurs de données. Voici ci-dessous quelques une de ces caractéristiques :
 

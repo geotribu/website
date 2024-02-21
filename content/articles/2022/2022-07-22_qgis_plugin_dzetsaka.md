@@ -4,6 +4,7 @@ authors:
     - Sylvain KERDREUX
 categories:
     - article
+comments: true
 date: "2022-07-22 10:20"
 description: "Présentation de Dzetsaka, un plugin QGIS pour faire de la classification semi-automatisée."
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/L_Dzetsaka_Resultat4.png
@@ -19,7 +20,7 @@ tags:
 
 ## Introduction
 
-![logo Dzetsaka](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis_dzetsaka.png "logo Dzetsaka"){: .img-rdp-news-thumb }
+![logo Dzetsaka](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis_dzetsaka.png "logo Dzetsaka"){: .img-thumbnail-left }
 
 La classification (dans notre exemple d'une image raster) est une tâche permettant d'extraire des classes d'information à partir de l'analyse du jeu de données.
 

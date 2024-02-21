@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-12-20
 description: "iOS 4.2 - carte et accéléromètre"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 20 décembre 2010
 
-![icône iPhone](https://cdn.geotribu.fr/img/logos-icones/divers/iphone_logo.png "icône iPhone"){: .img-rdp-news-thumb }
+![icône iPhone](https://cdn.geotribu.fr/img/logos-icones/divers/iphone_logo.png "icône iPhone"){: .img-thumbnail-left }
 
 Le développement sur smartphone devient incontournable. [CampToCamp](http://www.camptocamp.com/fr/blog/2010/12/mobile-web-gis/) accélère le développement d'une version compatible smartphone ou tablette d'OpenLayers, en gérant les interactions avec l'écran tactile. Le W3C a publié récemment les [bonnes pratiques](http://www.w3.org/TR/mwabp/) de développement de web applications pour les smartphones : en effet, devant l'extrême hétérogénéité des OS smartphones, il devient quasiment impossible pour les développeurs de déployer une application pour tout le monde. C'est là qu'intervient les web applications au travers du HTML5 : le navigateur devenant l'entrée applicative, celui-ci pouvant interagir avec des composants de plus en nombreux du smartphone - GPS, gyroscope, HTML storage, ...
 

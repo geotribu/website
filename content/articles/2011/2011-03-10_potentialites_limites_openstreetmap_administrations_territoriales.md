@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-03-10
 description: "Potentialités et limites d'OSM pour les administrations territoriales"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 10 mars 2011
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Cette année, je me suis offert le luxe de prendre 3 semaines de vacances à la Réunion. Mais ce n'est pas pour autant que je reste les doigts de pieds en éventail à siroter un ti-punch. Preuve en est, mon tout premier jour de repos a été consacré à une présentation d'[OpenStreetMap](https://www.openstreetmap.org/) dans le cadre d'une réunion du [Club Géomatique de la Réunion](http://clubgeomatique.agorah.com/clubgeomatique/index.php).
 

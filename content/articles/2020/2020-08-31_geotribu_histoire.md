@@ -4,6 +4,7 @@ authors:
     - Julien MOURA
 categories:
     - article
+comments: true
 date: "2020-08-31 10:20"
 description: "Invité à faire un retour d'expérience sur l'aventure Geotribu, voici une petite histoire du site : naissance, jeunesse, vie, mort... et renaissance en 2020. Souvenirs, souvenirs et avenir !"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_frise_chrono_2006-2017.png"
@@ -23,7 +24,7 @@ En juillet dernier, j'ai été invité par [IDGEO](https://www.idgeo.fr/) à fai
 
 Autant partager ici notre petite histoire ou du moins ma façon de la raconter : naissance, jeunesse, vie, mort... et renaissance en 2020. Premier opus d'une série d'articles qui nous mènera à la publication de sites statiques en passant par du web-scraping.
 
-![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){: .img-center width="500" loading=lazy }
+![FOSS4G-FR 2016](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/foss4g-geotribu.JPG "Une partie de l'équipe Geotribu au FOSS4G-FR 2016"){: .img-center loading=lazy }
 
 Souvenirs, souvenirs et avenir !
 
@@ -31,7 +32,7 @@ Souvenirs, souvenirs et avenir !
 
 ## Geotribu, c'est quoi ?
 
-![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-rdp-news-thumb }
+![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-thumbnail-left }
 
 D'un point de vue strictement formel, Geotribu c'est un [nom de domaine](https://fr.wikipedia.org/wiki/Nom_de_domaine). Et trois suffixes (.fr, .net et .org, le [.com étant squatté depuis longtemps](https://www.whois.com/whois/geotribu.com) en attendant qu'on devienne [riche](https://www.hugedomains.com/domain_profile.cfm?d=Geotribu&e=com)).  
 Il n'y a pas de structure : ni entrepreneuriale, ni associative, ni contrat de sang dans un tipi. D'ailleurs, la convention encadrant le prêt du serveur utilisé pour [héberger les images]({{ config.extra.url_contribuer }}guides/cdn-images-hebergement/) par [GeoRezo] est à mon nom et le [domaine appartient à Fabien](https://www.whois.com/whois/geotribu.net).
@@ -44,7 +45,7 @@ C'est donc un regroupement spontané de personnes autour de leur intérêt pour 
 
 Bref, on vit le site [à pile ou face](https://fr.wikipedia.org/wiki/Pile_ou_face_(chanson)) ! L'occasion d'un petit intermède musical dans un article fleuve :
 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/-l70OKXjg98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/-l70OKXjg98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > ou la [version d'Emmanuelle Béart dans 8 Femmes](https://www.youtube.com/watch?v=rTL1FSv9ldw)
 
@@ -54,7 +55,7 @@ Bref, on vit le site [à pile ou face](https://fr.wikipedia.org/wiki/Pile_ou_fac
 
 Avant de s'appeler Geotribu, [Arnaud] et [Fabien] publient d'abord Catalogue SIG (dont on n'a pas retrouvé trace). Avec le soutien de leur professeur [Laurent Jégou](https://www.linkedin.com/in/laurentjegou/), ils aboutissent à une première version de Geotribu en 2008. D'abord presqu'entièrement consacré à des tutoriels guidés par leurs découvertes, le site s'étoffe progressivement avec des dossiers complets et bientôt des billets de blog collaboratifs.
 
-L'équipe de contributeur/ices fluctue évidemment, mais va globalement en s'étoffant, surtout avec l'avènement des revues de presse hebdomadaires et la publication de nouveaux contenus (GeoGames, interviews...) : de [5 membres en 2012](/team/archives/art_2012-12-29_lequipe/), on passe à [8 en 2013](/articles/2014/art_2014-01-01/), puis près de 12 en 2017 (mais dont la plupart sont peu actifs). Dans le même temps, si le socle technique reste basé sur Drupal (6 puis 7), la charte graphique et la structure des contenus évolue de manière significative. Quand le serveur commence à tousser, les statistiques de consultation tournent autour des 400 visites uniques par jour.
+L'équipe de contributeur/ices fluctue évidemment, mais va globalement en s'étoffant, surtout avec l'avènement des revues de presse hebdomadaires et la publication de nouveaux contenus (GeoGames, interviews...) : de [5 membres en 2012](../../team/archives/art_2012-12-29_lequipe.md), on passe à [8 en 2013](../2014/2014-01-01_2013_dans_le_georetro_2014_en_ligne_de_mire.md), puis près de 12 en 2017 (mais dont la plupart sont peu actifs). Dans le même temps, si le socle technique reste basé sur Drupal (6 puis 7), la charte graphique et la structure des contenus évolue de manière significative. Quand le serveur commence à tousser, les statistiques de consultation tournent autour des 400 visites uniques par jour.
 
 Le serveur et la base de données rendront définitivement l'âme au printemps 2017 :cry:, nous laissant découvrir que le système de sauvegarde avait cessé de fonctionner depuis déjà plusieurs mois :fearful: :scream: :exploding_head:.
 
@@ -81,7 +82,7 @@ Mais si récupérer des contenus n'est qu'une question technique (on le verra da
 
 Qu'importe, on a retrouvé le plaisir et pourvu que ça dure !
 
-[Page des contributeur/ices :fontawesome-solid-people-carry-box:](/team/contributors/){: .md-button }
+[Page des contributeur/ices :fontawesome-solid-people-carry-box:](../../team/contributors.md){: .md-button }
 {: align=middle }
 
 ----
@@ -92,7 +93,7 @@ Pour l'occasion, j'ai regroupé quelques captures d'écran des pages d'accueil :
 
 | 2006 | 2008 | 2010-2012 | 2013-2017 | 2017 | 2017-2020 | 2020 |
 | :--: | :--: | :-------: | :-------: | :--: | :-------: | :--: |
- [![Toulouse quartiers vides](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/toulouse_quartiers_vide.svg){: width=200px loading=lazy }
+| ![Toulouse quartiers vides](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/toulouse_quartiers_vide.svg "Geotribu s'appelait alors Catalogue SIG - J'ai pas de capture, alors j'ai mis une carte vide des quartiers de Toulouse. Crédits : Wikimedia Commons."){: width=200px loading=lazy } | ![Lancement du premier site](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2008.png "Lancement du premier site Geotribu. La charte graphique semble ne pas avoir été archivée. Crédits : Internet Archive."){: width=200px loading=lazy } | ![Capture Geotribu 2012](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2012.png "2012 - Le coeur du site : articles et tutoriaux. Crédits : Internet Archive."){: width=200px loading=lazy } | ![Capture Geotribu 2013](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2013.png "2013 - La belle époque : aspect collaboratif central et revues de presse hebdomadaires. Crédits : Internet Archive."){: width=200px loading=lazy } | ![Capture Geotribu 2017](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2017.png "2017 - Le rythme baisse mais les contenus sont encore riches. Le serveur tousse régulièrement. Crédits : Internet Archive."){: width=200px loading=lazy } | ![Capture Geotribu 2018](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/web_timemachine_geotribu_2018.png "Eté 2017 - hiver 2020 : depuis le crash, la page de Geotribu fait honneur à la page par défaut d'Apache. Crédits : Internet Archive."){: width=200px loading=lazy } | ![Capture Geotribu 2020](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_2020-04-30.png "Hiver 2020 : résurrection sous forme d'un site statique de documentation."){: width=200px loading=lazy } |
 
 ----
 
@@ -110,7 +111,7 @@ En racontant notre petite histoire aux auditeur/ices du CQP, je me suis aperçu 
 
 Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent suffisamment en envergure pour animer leur écosystème (ou du moins une partie), voire le structurer dans le cadre de projets plus gros tels [GeoRezo] mais qui restent fragiles. En effet, si le bénévolat garantit une certaine indépendance, il peut aussi être synonyme de faible résilience. A l'instar de nombreux projets, surtout libres et gratuits, Geotribu repose sur quelques individus seulement. Dès lors qu'ils n'ont plus le temps, le goût ou la motivation, l'initiative s'arrête. Aucune fatalité ou amertume à avoir, après tout l'éphémère ça crée des souvenirs !
 
-[Suite : le web-scraping à la rescousse :fontawesome-solid-forward:](../2020-09-08_web-scraping_scrapy_geotribu/){: .md-button }
+[Suite : le web-scraping à la rescousse :fontawesome-solid-forward:](./2020-09-08_web-scraping_scrapy_geotribu.md){: .md-button }
 {: align=center }
 
 ----
@@ -120,7 +121,7 @@ Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent
 --8<-- "content/team/jmou.md"
 
 <!-- Hyperlinks reference -->
-[Arnaud]: /team/avan/
-[Fabien]: /team/fgob/
-[Jérémie]: /team/jory/
+[Arnaud]: ../../team/avan.md
+[Fabien]: ../../team/fgob.md
+[Jérémie]: ../../team/jory.md
 [GeoRezo]: https://georezo.net/

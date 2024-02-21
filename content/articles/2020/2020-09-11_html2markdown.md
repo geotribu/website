@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: "2020-09-14 10:20"
 description: "Convertir les contenus récupérés de l'ancien site de Geotribu en Markdown (via markdownify) : lingua franca du contenu web 2020."
 image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
@@ -22,7 +23,7 @@ tags:
 
 ## Introduction
 
-Dans le cadre de la série d'articles sur la renaissance de Geotribu (lire la [petite histoire de Geotribu](../2020-08-31_geotribu_histoire/)), on a vu comment [utiliser le web-scraping pour récupérer les anciens contenus](../2020-09-08_web-scraping_scrapy_geotribu/) depuis une sauvegarde locale ou l'[Internet Archive].
+Dans le cadre de la série d'articles sur la renaissance de Geotribu (lire la [petite histoire de Geotribu](./2020-08-31_geotribu_histoire.md)), on a vu comment [utiliser le web-scraping pour récupérer les anciens contenus](./2020-09-08_web-scraping_scrapy_geotribu.md) depuis une sauvegarde locale ou l'[Internet Archive].
 
 Après cela, on a donc un beau cocktail *Web on The Beach* : HTML + CSS + JavaScript :cocktail:.
 
@@ -37,7 +38,7 @@ Dans cet article, on va voir pourquoi et comment on a choisi de passer sur une r
 
 ## Markdown, lingua franca du contenu éditorial en ligne
 
-![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-rdp-news-thumb }
+![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-thumbnail-left }
 
 Inspiré par le *plain-text email* ([texte brut dans un courriel en bon français](https://fr.wikipedia.org/wiki/Texte_brut#Texte_brut_dans_un_courriel)) ou encore le [ReStructuredText](https://fr.wikipedia.org/wiki/) (RST), la syntaxe [Markdown] est conçue pour être facile à lire, à écrire et à convertir, tout en prenant soin de ne pas casser les balises du HTML.
 
@@ -62,13 +63,13 @@ A l'instar de n'importe quelle langue, qui plus est non standardisée, le rendu 
 
 ## Du HTML au Markdown
 
-![mouton](https://cdn.geotribu.fr/img/logos-icones/divers/mouton.jpg "Bêêêêê"){: .img-rdp-news-thumb }
+![mouton](https://cdn.geotribu.fr/img/logos-icones/divers/mouton.jpg "Bêêêêê"){: .img-thumbnail-left }
 
 Revenons à nos géo-moutons.
 
 Une fois le HTML et les ressources liées (images...) récupérés de Geotribu, j'ai opté pour un stockage sous forme de Markdown. Pour cela, j'ai utilisé le package [markdownify](https://github.com/matthewwithanm/python-markdownify) qui permet de transformer du HTML en Markdown.
 
-Vu qu'on a déjà passé un article sur le projet [Scrapy] utilisé pour récupérer les anciens contenus depuis l'Internet Archive, je ne vais pas de nouveau détailler le [*pipeline*](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) mais plutôt démontrer comment appliquer la même mécanique facilement :
+Vu qu'on a déjà passé un article sur le projet [Scrapy] utilisé pour récupérer les anciens contenus depuis l'Internet Archive, je ne vais pas de nouveau détailler le [*pipeline*](2020-09-08_web-scraping_scrapy_geotribu.md) mais plutôt démontrer comment appliquer la même mécanique facilement :
 
 1. aspirer un site web avec du web-scraping
 2. traiter le HTML pour décortiquer le contenu :
@@ -159,7 +160,7 @@ graph TD
     D --> F[CDN];
 ```
 
-[Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-forward:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
+[Suite : déployer le site de Geotribu sur son ordinateur :fontawesome-solid-forward:](2020-12-30_deployer_geotribu_a_la_maison.md){: .md-button }
 {: align=middle }
 
 ----

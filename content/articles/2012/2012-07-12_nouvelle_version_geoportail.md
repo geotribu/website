@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-07-12
 description: "Nouvelle version du Géoportail"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 12 juillet 2012
 
-![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-rdp-news-thumb }
+![icône IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png "IGN"){: .img-thumbnail-left }
 
 C'est l'annonce phare de cette semaine, la sortie du nouveau Géoportail National aussi bien en [version internet classique](https://www.geoportail.gouv.fr/accueil), qu'en [version mobile](http://m.geoportail.fr/). Le travail réalisé par L'Institut National de l'Information Géographique et Forestière (IGN) est conséquent et rien n'a été laissé au hasard.  
 

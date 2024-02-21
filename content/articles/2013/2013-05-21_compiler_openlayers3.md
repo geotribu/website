@@ -4,13 +4,14 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2013-05-21
 description: "Compiler OpenLayers 3"
 tags:
     - OpenLayers
 ---
 
-# Compiler OpenLayers 3
+# Comment compiler OpenLayers 3
 
 :calendar: Date de publication initiale : 21 mai 2013
 
@@ -29,7 +30,7 @@ Première étape, bien lire le [guide du développeur](https://github.com/openla
 Cela peu paraître bizarre, mais pour que la compilation fonctionne il ne faut pas télécharger l'archive de la bibliothèque mais cloner le dépôt Git. Sans cela vous obtenez une erreur à la compilation du fait que votre dossier n'est pas reconnu comme un projet Git. Il y a peut-être un moyen d’éviter cela mais je ne l'ai pas trouvé. Donc, clonons le dépôt:
 
 ```bash
-git clone <https://github.com/openlayers/ol3.git
+git clone https://github.com/openlayers/ol3.git
 ```
 
 Maintenant, installons les différents outils nécessaires. Tout d'abord, commençons par Google Closure. Un simple `easy_install` a suffi pour télécharger la bibliothèque et à l'ajouter à mon [path système](http://www.commentcamarche.net/faq/3585-bash-la-variable-d-environnement-path). Aucune difficulté particulière.

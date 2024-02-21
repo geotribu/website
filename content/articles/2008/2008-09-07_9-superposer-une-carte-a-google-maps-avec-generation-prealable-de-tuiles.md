@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-09-07 10:20
 description: "9. Superposer une carte à Google Maps avec génération préalable de tuiles"
 tags:
@@ -20,7 +21,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 Le but de ce tutoriel est de montrer la possibilité de superposer ses propres fonds cartographiques à la carte Google Maps. Pour ceci, il est d'abord nécessaire de 'construire' les tuiles pour ensuite les afficher sur la carte.  
 
@@ -36,7 +37,7 @@ Il convient alors de stocker les tuiles générées dans un répertoire sur votr
 
 ## Initialisation de la carte
 
-Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/) pour initialiser la carte.  
+Reprendre la carte du [tutoriel n°2](2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles.md) pour initialiser la carte.  
 
 ## Définition des fonctions
 

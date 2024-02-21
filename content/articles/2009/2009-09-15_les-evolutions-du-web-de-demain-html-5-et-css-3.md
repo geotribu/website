@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-09-15
 description: "Les évolutions du Web de demain, HTML 5 et CSS 3"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 septembre 2009
 
-![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }
+![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-thumbnail-left }
 
 Il est impossible de s'intéresser au WebMapping, sans suivre de prés les évolutions du Web. Ce dernier avec l'arrivée du HTML 5 et du CSS 3 risque de subir, dans les années à venir, de profondes modifications.
 

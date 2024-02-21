@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-15
 description: "Une carte du WebMapping OpenSource"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 novembre 2009
 
-![logo OpenSource](https://cdn.geotribu.fr/img/logos-icones/opensource.png "Logo Open Source Foundation"){: .img-rdp-news-thumb }
+![logo OpenSource](https://cdn.geotribu.fr/img/logos-icones/opensource.png "Logo Open Source Foundation"){: .img-thumbnail-left }
 
 Le monde du GeoWeb regorge d'un nombre important de librairies OpenSource. De ce fait, il peut être parfois difficile de s'y retrouver et surtout de comprendre leur interconnexion. D'autant plus que la tendance est à la spécialisation et ces librairies s'organisent très souvent sous forme de briques qui sont ensuite réimplémentées dans d'autres projets.
 

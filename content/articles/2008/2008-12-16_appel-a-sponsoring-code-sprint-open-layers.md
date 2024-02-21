@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2008-12-16 10:20
 description: "Appel à sponsoring - Code Sprint Open Layers"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 16 décembre 2008
 
-![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-rdp-news-thumb }
+![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-thumbnail-left }
 
 En prévision de la sortie prochaine de la version 3.0 d'OpenLayers un **appel à sponsoring** est lancé.
 

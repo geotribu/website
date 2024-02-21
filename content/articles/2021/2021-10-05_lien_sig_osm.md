@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2021-10-05 14:20
 description: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/osm_sig.png"
@@ -33,7 +34,7 @@ tags:
 
 ## Intro
 
-![Logo OSM](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Logo OSM"){: .img-rdp-news-thumb }
+![Logo OSM](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Logo OSM"){: .img-thumbnail-left }
 
 Après cette première année bien remplie à la Communauté de Communes, j'ai profité du calme estival pour travailler sur la possibilité de créer des liens entre les informations renseignées dans OpenStreetMap et les données que nous produisons en interne avec pour objectif de consolider les deux bases de données de manière réciproque. Pour l'instant, la solution proposée a été uniquement utilisée pour valider nos données ponctuelles mais n'hésitez pas à partager vos expériences avec d'autres types de données ainsi que vos adaptations éventuelles.
 
@@ -109,7 +110,7 @@ Afin de restreindre l'extraction des données OpenStreetMap à notre périmètre
 
 ### 4. Un script par donnée à extraire et à intégrer dans PostgreSQL
 
-![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-rdp-news-thumb }
+![logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-thumbnail-left }
 
 Pour la suite des opérations, j'utilise [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) pour lire le fichier OpenStreetMap (.pbf) préalablement téléchargé afin d'intégrer une information structurée dans PostgreSQL. Si je reprends l'exemple de mes composteurs, je commence par parcourir le [wiki OpenStreetMap](https://wiki.openstreetmap.org/wiki/Main_Page) pour identifier les tags qui vont me permettre de les extraire facilement et je les ajoute dans le [fichier osmconf.ini](https://github.com/OSGeo/gdal/blob/master/data/osmconf.ini) utilisé par ogr2ogr.
 

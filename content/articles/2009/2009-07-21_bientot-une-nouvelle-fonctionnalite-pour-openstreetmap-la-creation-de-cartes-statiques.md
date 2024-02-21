@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-07-21
 description: "Bientôt une nouvelle fonctionnalité pour OpenStreetMap, la création de cartes statiques"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 21 juillet 2009
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Le [Google Summer of Code](https://fr.wikipedia.org/wiki/Google_Summer_of_Code) (GSoC) est un programme annuel, fondé sur une logique de mécénat, visant à promouvoir le développement du logiciel libre. Pour cela différents projets sont sélectionnés par Google afin d'être développés durant la période estivale.
 

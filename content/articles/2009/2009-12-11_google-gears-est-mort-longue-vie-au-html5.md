@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-12-11
 description: "Google Gears est mort longue vie au HTML5"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 11 décembre 2009
 
-![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }
+![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-thumbnail-left }
 
 N'enterrons pas trop vite Google Gears (que nous abrégerons par GGears) mais il semble bien que la firme du même nom ait décidé de lui préférer le futur standard HTML 5. Cette information abondamment relayée ([clubic](http://www.clubic.com/actualite-313674-google-abandonne-gears-html.html), [01net](http://pro.01net.com/editorial/509349/google-delaisse-gears-au-profit-d-html-5/)... ) s'explique logiquement du fait que la plupart des fonctionnalités apportées par le plugin GGears seront fournies nativement par le nouveau moteur HTML 5 (gestion du Drag & Drop, du mode déconnectée...). Ce choix est une décision importante pour l' interopérabilité et pour le respect des standards.
 

@@ -10,12 +10,6 @@
 <meta property="robots" content="index, follow" />
 {% endif %}
 
-{# RSS Feed #}
-<link rel="alternate" type="application/rss+xml" title="RSS feed of created content"
-  href="{{ config.site_url }}feed_rss_created.xml">
-<link rel="alternate" type="application/rss+xml" title="RSS feed of updated content"
-  href="{{ config.site_url }}feed_rss_updated.xml">
-
 {# Meta title #}
 {% set title = config.site_name %}
 {% if page and page.meta and page.meta.title %}
@@ -58,6 +52,12 @@
 <meta name="author" content="{{ author }}">
 {% endif %}
 
+{# Social card enabled #}
+{% set social_card = false %}
+{% if page and not page.is_homepage and page.meta and page.meta.social and page.meta.social.cards %}
+{% set social_card = true %}
+{% endif %}
+
 {# Cache-control #}
 <meta http-equiv="cache-control" content="max-age=14400" />
 <meta http-equiv="cache-control" content="public">
@@ -70,157 +70,28 @@
 {% set type = "article" %}
 {% endif %}
 
-{# OpenGraph #}
-<meta property="og:description" content="{{ description }}">
-<meta property="og:image" content="{{ image }}">
-<meta property="og:locale" content="fr_FR" />
-<meta property="og:title" content="{{ title }}">
-<meta property="og:type" content="{{ type }}">
-<meta property="og:url" content="{{ page.canonical_url }}">
 {# Twitter #}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="@geojulien" />
 <meta name="twitter:description" content="{{ description }}">
 <meta name="twitter:dnt" content="on">
-<meta name="twitter:image" content="{{ image }}">
 <meta name="twitter:site" content="@geotribu" />
 <meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:widgets:align" content="center">
-{# Structured data using schema.org #}
-{% if type == "article" %}
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ page.canonical_url }}"
-      },
-      "headline": "{{ title }}",
-      "abstract": "{{ description }}",
-      "datePublished": "{{ date }}",
-      "image": "{{ image }}",
-      {% if "rdp/" in page.canonical_url %}
-        {# GeoRDP #}
-        "author": {
-          "@type": "Organization",
-          "name": "{{ config.site_author }}",
-          "url": "{{ config.site_url }}"
-        },
-      {% elif author is iterable and (author is not string and author is not mapping) %}
-        {% if author | length > 1 %}
-          {# plusieurs auteurs #}
-          "author": [
-          {% for a in author %}
-              {% if a != config.site_author %}
-                {% set author_split = a.split(' ', 1) %}
-                {
-                "@type": "Person",
-                "name": "{{ a }}",
-                "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
-                {% if a != author|last %}
-                {# Si l'auteur n'est pas le dernier de la liste, on ajoute une virgule #}
-                  },
-                {% else %}
-                {# Si c'est le dernier, pas de virgule #}
-                  }
-                {% endif %}
-              {% endif %}
-          {% endfor %}
-          ],
-        {% elif author[0] == config.site_author %}
-         {# un seul auteur qui est Geotribu #}
-          "author": {
-            "@type": "Organization",
-            "name": "{{ config.site_author }}",
-            "url": "{{ config.site_url }}"
-          },
-        {% else %}
 
-         {# un seul auteur qui n'est pas Geotribu #}
-          {% set author_split = author[0].split(' ', 1) %}
-
-          "author": {
-            "@type": "Person",
-            "name": "{{ author[0] }}",
-            "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
-          },
-        {% endif %}
-      {% else %}
-        {# Par défaut #}
-        "author": {
-          "@type": "Organization",
-          "name": "{{ config.site_author }}",
-          "url": "{{ config.site_url }}"
-        },
-      {% endif %}
-      "publisher": {
-        "@type": "Organization",
-        "name": "Geotribu",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
-        }
-      }
-    }
-    </script>
-{% elif type == "website" %}
-<script type='application/ld+json'>
-      {
-        "@context": "http://www.schema.org",
-        "@type": "WebSite",
-        "name": "Geotribu",
-        "alternateName": "Géotribu",
-        "url": "{{ config.site_url }}",
-        "sameAs": [
-          "http://geotribu.fr",
-          "http://geotribu.net",
-          "https://github.com/geotribu/",
-          "https://facebook.com/geotribu",
-          "https://twitter.com/geotribu"
-        ],
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "{{ config.site_url }}?q={search_term}",
-          "query-input": "required name=search_term"
-        }
-      }
-    </script>
-{% endif %}
-{% endblock %}
-
-{% block libs %}
-{# Handle Twitter oEmbed - See #54 #}
-<script charset="utf-8" id="twitter-wjs" type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+<meta name="social:card" content="{{ social_card }}">
+{# Semantic web - schemas.org #}
+{% include "partials/schemas.html" %}
+{# Social cards - OpenGraph #}
+{% include "partials/cards_opengraph.html" %}
+{# Social cards - Twitter #}
+{% include "partials/cards_twitter.html" %}
 
 {% endblock %}
+
 
 {% block content %}
 {{ super() }}
 
-{# License #}
-{% if not page.is_homepage and ("license" not in page.meta or page.meta.license == "default") %}
-<hr>
-<div class="md-source-date">
-  <small>
-    <p xmlns:cc="http://creativecommons.org/ns#">
-      Ce contenu est sous licence Creative Commons
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank"
-        rel="license noopener noreferrer">BY-NC-SA 4.0 International
-        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" class=img-license-picto
-          alt="Pictogramme Creative Commons" longdesc="https://creativecommons.org/licenses/?lang=fr-FR" title="CC" />
-        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" class=img-license-picto
-          alt="Pictogramme Creative Commons BY" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-          title="BY" />
-        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" class=img-license-picto
-          alt="Pictogramme Creative Commons NC" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-          title="NC" />
-        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" class=img-license-picto
-          alt="Pictogramme Creative Commons SA" longdesc="https://creativecommons.org/licenses/?lang=fr-FR"
-          title="SA" />
-      </a>
-    </p>
-  </small>
-</div>
-{% endif %}
+{% include "partials/license.html" %}
 {% endblock %}

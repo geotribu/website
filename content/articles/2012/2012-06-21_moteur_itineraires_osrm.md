@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2012-06-21
 description: "Le calcul d'itinéraires est un enjeu courant dans les métiers ed l'information géographique. Découvrez comment créer un moteur de calcul d'itinéraires avec Open Source Routing Machine (OSRM)."
 tags:
@@ -19,7 +20,7 @@ tags:
 
 ## Introduction
 
-![logo OSRM](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osrm.png "logo OSRM"){: .img-rdp-news-thumb loading=lazy }
+![logo OSRM](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osrm.png "logo OSRM"){: .img-thumbnail-left loading=lazy }
 
 Souvent, quand je parle d'OpenStreetMap (OSM), on me répond : "ah oui c'est un peu comme Google Maps mais en libre". Bien que cela ne soit pas totalement faux, c'est réduire le projet OSM à sa simple utilisation comme fond de carte. Or les possibilités et les potentialités de celui-ci sont bien plus grandes. Mais, et je trouve cela dommage, il existe encore trop peu d'applications permettant une exploitation de ces données Open Source. Néanmoins, trop peu ne veut pas dire aucune. Preuve en est, je vous présenterai dans ce billet [Open Source Routing Machine](http://project-osrm.org/), un moteur d'itinéraire Open Source. Fini le simple affichage de données sur un fond de carte, nous allons maintenant exploiter le plein potentiel de celles-ci !
 

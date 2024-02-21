@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-05-04
 description: "gvSIG Mini en version 0.2"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 04 mai 2010
 
-![logo gvSIG](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gvsig.png "logo gvSIG"){: .img-rdp-news-thumb }
+![logo gvSIG](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gvsig.png "logo gvSIG"){: .img-thumbnail-left }
 
 Il y a 6 mois ([post](http://geotribu.net/node/166/edit)) nous vous avions présenté la toute première mouture de l'application [gvSIG Mini](https://confluence.prodevelop.es/display/GVMN). Cette application, récemment passée en [version 0.2](https://confluence.prodevelop.es/display/GVMN/Download), permet notamment de se connecter aux principaux fournisseurs de données cartographiques (OpenStreetMap, YahooMaps, Microsoft Bing, ...), d'effectuer des recherches par POI, par adresse...
 

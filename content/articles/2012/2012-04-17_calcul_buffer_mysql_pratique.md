@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-04-17
 description: "Calcul de buffer sous MySQL - 2ème partie - la pratique"
 tags:
@@ -19,7 +20,7 @@ tags:
 
 :calendar: Date de publication initiale : 17 avril 2012
 
-![Logo MySQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mysql.png "MySQL"){: .img-rdp-news-thumb }
+![Logo MySQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mysql.png "MySQL"){: .img-thumbnail-left }
 
 Pour mettre en application le [premier article](http://www.geotribu.net/node/504) sur le calcul de buffer dans MySQL, nous allons développer une petite démo. Tout d'abord il nous faudra initialiser une base de données qui contiendra pas mal d'enregistrements, puis nous alimenterons cette base avec des points d'intérêts provenant d'OpenStreetMap et enfin nous développerons une carto avec l'API Google Maps pour tester la formule Haversine.
 

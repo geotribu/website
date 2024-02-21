@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-28
 description: "A la découverte de Quantum GIS"
 tags:
@@ -16,9 +17,9 @@ tags:
 
 :calendar: Date de publication initiale : 28 août 2009
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-rdp-news-thumb }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Après avoir successivement découvert [PuzzleGis](/articles/2009/2009-05-24_a-la-decouverte-de-puzzle-gis/), [OpenJump](/articles/2009/2009-05-31_a-la-decouverte-d-openjump/) et [UDIG](/articles/2009/2009-06-07_a-la-decouverte-de-udig/) nous allons nous attaquer à un des poids lourds du monde de la géomatique OpenSource, [Quantum GIS](https://www.qgis.org/). Son histoire commence en 2002 sous l'impulsion de Gary Sherman qui souhaitait pouvoir disposer d'un viewer SIG sur Linux. Cinq ans plus tard, ce projet désormais soutenu par l'[OSGEO](https://www.osgeo.org/projects/qgis/) a considérablement évolué et propose des fonctionnalités proches des SIG commerciaux tout en étant utilisable sur la grande majorité des plates-formes (Windows, Mac, Linux...).
+Après avoir successivement découvert [PuzzleGis](2009-05-24_a-la-decouverte-de-puzzle-gis.md), [OpenJump](2009-05-31_a-la-decouverte-d-openjump.md) et [UDIG](2009-06-07_a-la-decouverte-de-udig.md) nous allons nous attaquer à un des poids lourds du monde de la géomatique OpenSource, [Quantum GIS](https://www.qgis.org/). Son histoire commence en 2002 sous l'impulsion de Gary Sherman qui souhaitait pouvoir disposer d'un viewer SIG sur Linux. Cinq ans plus tard, ce projet désormais soutenu par l'[OSGEO](https://www.osgeo.org/projects/qgis/) a considérablement évolué et propose des fonctionnalités proches des SIG commerciaux tout en étant utilisable sur la grande majorité des plates-formes (Windows, Mac, Linux...).
 
 ## Téléchargement et installation
 

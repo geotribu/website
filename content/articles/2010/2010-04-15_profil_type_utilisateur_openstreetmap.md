@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-04-15
 description: "Profil type d'un utilisateur d'OpenStreetMap"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 15 avril 2010
 
-![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-rdp-news-thumb }
+![logo OpenStreetMap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "logo OpenStreetMap"){: .img-thumbnail-left }
 
 Il y a quelques semaines en parcourant les différents flux rss auxquels je suis abonné, j'étais tombé sur un billet du site [kelsocartography](http://kelsocartography.com/blog/?p=3476) listant les différentes interventions présentées lors du [Volunteered Geographic Information Workshop](http://cegis.usgs.gov/vgi/results.html) organisé par le [CEGIS](http://cegis.usgs.gov/).
 
@@ -40,7 +41,7 @@ Fait intéressant, ce découpage se retrouve quelle que soit l'origine des contr
 
 Concernant la répartition par sexe, je suis au regret de vous dire mesdames que nous (les hommes) sommes en très nette majorité. En effet, sur un panel de 426 personnes, 96% étaient de la gente masculine. Déterminisme technologique ? Plus grand intérêt ? ... Il serait intéressant qu'une étude sociologique se penche sur cette question afin d'analyser les raisons d'une telle différence.
 
-Un parallèle troublant est une même répartition des sexes dans le monde OpenSource : [[Byron] Women in Open Source](http://openwebvancouver.ca/sites/default/files/byron-women_in_open_source.pdf)
+Un parallèle troublant est une même répartition des sexes dans le monde OpenSource : [Women in Open Source](http://openwebvancouver.ca/sites/default/files/byron-women_in_open_source.pdf)
 
 ![GIS Experience - source : Nama Budhathoki](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2010/gis_experience_1.png "GIS Experience - source : Nama Budhathoki"){: .img-center loading=lazy }
 

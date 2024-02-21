@@ -4,6 +4,7 @@ authors:
     - Mathieu RAJERISON
 categories:
     - article
+comments: true
 date: 2015-02-16
 description: "Making-of la carte publiée dans Slate : 'Ce que l'orientation des rues de Paris nous dit de son histoire'"
 tags:

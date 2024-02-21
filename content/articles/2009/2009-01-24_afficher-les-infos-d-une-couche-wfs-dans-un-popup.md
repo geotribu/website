@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2009-01-24 10:20
 description: "Afficher les infos d'une couche WFS dans un popup"
 tags:
@@ -18,7 +19,7 @@ tags:
 
 ## Introduction
 
-![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-rdp-news-thumb }
+![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-thumbnail-left }
 
 L'API d'OpenLayers permet d'afficher une couche WFS ainsi que les données attributaires qui lui sont rattachées. Même si cela n'est pas très compliqué à réaliser il existe certaines subtilités.
 

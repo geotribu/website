@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2013-03-07
 description: "7èmes Rencontres des dynamiques régionales en Information Géographique"
 tags:
@@ -15,11 +16,11 @@ tags:
 
 :calendar: Date de publication initiale : 07 mars 2013
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
 
 Dans un peu moins d'un mois se dérouleront les 4 et 5 avril à Bordeaux les 7èmes Rencontres des dynamiques régionales en Information Géographique organisées par l’[AFIGÉO](http://www.afigeo.asso.fr/) (Association Française pour l’Information Géographique) et [PIGMA](https://www.pigma.org/) (Plateforme de l’information géographique mutualisée en Aquitaine). Pendant deux jours alterneront sessions plénières, témoignages, ateliers thématiques, débats, échanges et exposition sur le thème de **« la coproduction de données géographiques pour la mise en œuvre et l’évaluation des politiques publiques »**.
 
-![Image Pigma](https://www.pigma.org/image/image_gallery?uuid=6dc45ccc-9c3c-4e6b-9fbf-1c77cfcdcc81&groupId=10157&t=1359726360353 "Image Pigma")
+![Affiche 7èmes Rencontres des Dynamiques Régionales en Information Géographique](https://cdn.geotribu.fr/img/external/salons_conferences/7emes_Rencontres_Dynamiques_Regionales_Information_Geographique_AFIGeo_PIGMA.webp){: .img-center loading=lazy }
 
 Les technologies de l’information géographique jouent un rôle stratégique dans de nombreux domaines (aménagement du territoire, gestion des risques, logistique) et une panoplie de nouveaux outils se développe autour de la production et l’échange de données. Mais la coproduction est un exercice bien difficile qui soulève de nombreuses questions. Ces 7èmes rencontres seront l'occasion de faire un état des lieux sur ces différentes pratiques avec une attention plus particulières sur comment :
 

@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2014-05-05
 description: "Le plein d'eBooks pour 10$ avec Packt Publishing"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 05 mai 2014
 
-![icône livre](https://cdn.geotribu.fr/img/logos-icones/divers/livre.png "Logo livre"){: .img-rdp-news-thumb }
+![icône livre](https://cdn.geotribu.fr/img/logos-icones/divers/livre.png "Logo livre"){: .img-thumbnail-left }
 
 Ce n'est pas la première fois que nous parlons de Packt Publishing dans nos colonnes. Mais il faut l'avouer que l'éditeur propose régulièrement des offres particulièrement intéressantes. Cette fois-ci, [le deal proposé](http://bit.ly/1q6bpha) est de 10$ par eBook. Plutôt intéressant non quand l'on sait qu'en moyenne chacun coûte environ 30$ !
 

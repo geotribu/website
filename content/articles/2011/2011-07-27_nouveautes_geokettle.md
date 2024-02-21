@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-07-27
 description: "Les nouveautés apportées par la version 2.0 de GeoKettle"
 tags:

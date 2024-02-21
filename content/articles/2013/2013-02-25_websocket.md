@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: 2013-02-25
 description: "Du web, des socquettes et de la carto"
 tags:
@@ -18,7 +19,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 février 2013
 
-![logo websocket](https://cdn.geotribu.fr/img/logos-icones/divers/websocket.png "logo websocket"){: .img-rdp-news-thumb }
+![logo websocket](https://cdn.geotribu.fr/img/logos-icones/divers/websocket.png "logo websocket"){: .img-thumbnail-left }
 
 Avec un titre pareil je suis pas prêt de me faire référencer... tant pis ce sera pour les initiés :wink:. J'entends souvent parler du temps réel ; la tendance actuelle vers les objects connectés et autres interactions possibles avec des smartphones et/ou des sites web m'a fait (re)découvrir une partie du web que j'avais mise de côté. Et donc l'envie de mettre les mains dans le cambouis et regarder d'un peu plus près comment ça marche ! Et ouais on ne se refait pas.
 

@@ -1,6 +1,6 @@
 social:
   - icon: "fontawesome/solid/rss"
-    link: "https://static.geotribu.fr/feed_rss_created.xml"
+    link: "https://geotribu.fr/feed_rss_created.xml"
     name: "S'abonner aux nouveaux contenus via RSS"
   - icon: "fontawesome/brands/github-alt"
     link: "https://github.com/geotribu/"

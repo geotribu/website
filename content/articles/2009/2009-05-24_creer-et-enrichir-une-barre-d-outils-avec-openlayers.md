@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2009-05-24 10:20
 description: "Créer et enrichir une barre d'outils avec OpenLayers"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 ## Introduction
 
-![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-rdp-news-thumb }
+![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-thumbnail-left }
 
 OpenLayers permet, grâce à la classe [EditingToolbar](http://dev.openlayers.org/releases/OpenLayers-2.7/doc/apidocs/files/OpenLayers/Control/EditingToolbar-js.html), de créer facilement une barre d'outils de dessin. Nous verrons au cours de ce tutoriel comment créer notre propre barre d'outils afin d'y ajouter de nouvelles fonctionnalités.
 

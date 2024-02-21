@@ -4,9 +4,10 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2021-01-06 11:11
 description: "L'équipe de Geotribu vous souhaite ses meilleurs voeux pour 2021, avec quelques statistiques sur l'année 2020 et une feuille de route 2021."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_constellation_map_fr.png"
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_constellation_map_fr.png
 tags:
     - collaboratif
     - contribution
@@ -16,7 +17,6 @@ tags:
     - SIG
     - statistiques
     - voeux
-
 ---
 
 # 2020 dans le rétro, 2021 en ligne de mire
@@ -25,7 +25,7 @@ tags:
 
 ## 2020
 
-:hourglass_flowing_sand: Vous connaissez l'histoire, déjà relatée dans nos articles ([ici](/articles/2020/2020-08-31_geotribu_histoire/), [là](/articles/2020/2020-09-08_web-scraping_scrapy_geotribu/) et encore [là](/articles/2020/2020-09-11_html2markdown/)), le site renaît doucement de ses cendres depuis l'opération géophénix du printemps dernier.
+:hourglass_flowing_sand: Vous connaissez l'histoire, déjà relatée dans nos articles ([ici](../2020/2020-08-31_geotribu_histoire.md), [là](../2020/2020-09-08_web-scraping_scrapy_geotribu.md) et encore [là](../2020/2020-09-11_html2markdown.md)), le site renaît doucement de ses cendres depuis l'opération géophénix du printemps dernier.
 
 Si l'année aura été éprouvante pour le monde (de la cartograhie surtout :wink:), 2020 signe aussi le retour de Geotribu. Nous voilà à l'aube de 2021 et comme c'est de saison, on fait un premier bilan sur la dynamique de ces 9 derniers mois et on se projette sur l'année qui démarre.
 
@@ -44,7 +44,7 @@ En y regardant de plus près, ce sont 4 contributeurs réguliers qui rédigent l
 
 En somme, une dynamique progressive mais réelle qu'il s'agira de consolider dans les mois à venir pour éviter [le syndrôme du SPOF](https://fr.wikipedia.org/wiki/Point_de_d%C3%A9faillance_unique).
 
-En tout cas, on est content de retrouver le plaisir de partager notre effort de veille et notre passion. [**Encore merci à tout le monde !**](/team/) Régulier, irrégulier, ponctuel ou "simple" tipex numérique, toute contribution est vraiment la bienvenue et comme on ne le dit jamais assez : il n'y a aucune obligation. Ni de contribution, ni de résultat.
+En tout cas, on est content de retrouver le plaisir de partager notre effort de veille et notre passion. [**Encore merci à tout le monde !**](../../team/index.md) Régulier, irrégulier, ponctuel ou "simple" tipex numérique, toute contribution est vraiment la bienvenue et comme on ne le dit jamais assez : il n'y a aucune obligation. Ni de contribution, ni de résultat.
 
 ### Fréquentation
 
@@ -75,7 +75,7 @@ Mais, si nous recevons des rapports de la console de recherche Google, l'objecti
 
 En fait, mon sentiment c'est que faire du *bon* web dans les années 2020s, c'est plus dur que dans les 2010s, notamment car les pratiques sont plus "professionnelles" et le poids du monopole de Google, tout simplement écrasant.
 
-Le travail de nettoyage des voies sans issue (images et liens morts), même s'il est loin d'être terminé, ainsi que le retour du [flux RSS](/feed_rss_created.xml) (notamment sur [Georezo](https://georezo.net/planet/Toile_g%C3%A9omatique_francophone/)) ont largement contribué à un retour à la normale.
+Le travail de nettoyage des voies sans issue (images et liens morts), même s'il est loin d'être terminé, ainsi que le retour du [flux RSS]({{ config.site_url }}feed_rss_created.xml) (notamment sur [Georezo](https://georezo.net/planet/Toile_g%C3%A9omatique_francophone/)) ont largement contribué à un retour à la normale.
 
 ![Statistiques 2020 - Etat de la couverture de l'indexation](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/stats/geotribu_analytics_2020_search_cover.png "Statistiques 2020 - Etat de la couverture de l'indexation"){: loading=lazy }
 
@@ -102,19 +102,21 @@ Si vous ne souhaitez pas nous rejoindre (la peur de l'engagement tout ça), plus
 
 Aujourd'hui, pour contribuer à la revue de presse, il y a déjà plusieurs moyens adaptés à l'appétence technique de chacun/e :
 
+<!-- markdownlint-disable MD034 -->
 [Proposer une news par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution à la GeoRDP){: .md-button }
+<!-- markdownlint-enable MD034 -->
 [Proposer une news via GitHub :fontawesome-solid-ticket:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml){: .md-button }
 {: align=middle }
 
 ### 2. Rédiger un article
 
-Si vous préférez le format libre et écrire un article comme [celui-ici](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/), [celui-là](/articles/2020/2020-09-20_tutorial_aerialod/), [celui-ci](/articles/2015/art_2015-02-03/), [celui-là](/articles/2015/art_2015-02-16/) ou d'autres moins techniques, moins gros n'hésitez pas à nous contacter.
+Si vous préférez le format libre et écrire un article comme [celui-ici](../2020/2020-12-30_deployer_geotribu_a_la_maison.md), [celui-là](../2020/2020-09-20_tutorial_aerialod.md), [celui-ci](../2015/2015-02-03_representation_3D_des_objets_openstreetmap.md), [celui-là](../2015/2015-02-16_orientation_des_rues_de_paris.md) ou d'autres moins techniques, moins gros n'hésitez pas à nous contacter.
 
 Que ce soit pour proposer un tutoriel sur un outil que vous maîtrisez ou sur une application que vous avez développée, un billet d'humeur, une idée, une présentation d'un sujet de mémoire ou de thèse ou sur tout autre chose concernant la géomatique, venez participer à la communauté Geotribu en agrandissant les ressources disponibles !
 
 Il faut aussi ajouter que Geotribu peut facilement vous permettre de partager vos articles sans pour autant devoir vous lancer dans la création d'un blog personnel (temps d'administration, peur du manque de contenu,...), alors lâchez-vous.
 
-[Proposer un article par email :fontawesome-solid-paper-plane:](mailto:geotribu+article@gmail.com?subject=Proposition d'article){: .md-button }
+[Proposer un article par email :fontawesome-solid-paper-plane:](mailto:<geotribu+article@gmail.com>?subject=Proposition d'article){: .md-button }
 [Proposer un article :fontawesome-solid-ticket:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Carticle%2Ctriage&template=ARTICLE.yml){: .md-button }
 {: align=middle }
 

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-01-21
 description: "Liste des logiciels OpenSource disponible"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 21 janvier 2009
 
-![logo Open Source Initiative](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source Initiative"){: .img-rdp-news-thumb }
+![logo Open Source Initiative](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo Open Source Initiative"){: .img-thumbnail-left }
 
 Le phénomène OpenSource a pris tant d'importance qu'il est parfois difficile de **choisir le logiciel qui nous convient**. Lequel prendre en fonction de tel ou tel critère, ce logiciel sera-t-il adapté si je souhaite faire telle carte ou analyse ? Autant de questions qu'un géomaticien doit se poser avant de sélectionner son futur outil de travail.
 

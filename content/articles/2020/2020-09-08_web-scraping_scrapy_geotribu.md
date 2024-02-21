@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: "2020-09-08 10:20"
 description: "Utiliser le web-scraping (Scrapy) pour récupérer les anciens contenus de Geotribu depuis l'Internet Archive."
 image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
@@ -21,7 +22,7 @@ tags:
 
 ## Introduction
 
-Après avoir disserté sur [la petite histoire de Geotribu](../2020-08-31_geotribu_histoire/), il est désormais temps de se pencher sur la méthode retenue pour récupérer les anciens contenus.
+Après avoir disserté sur [la petite histoire de Geotribu](2020-08-31_geotribu_histoire.md), il est désormais temps de se pencher sur la méthode retenue pour récupérer les anciens contenus.
 
 Pendant un temps, on a eu l'espoir de remonter le site depuis une ancienne sauvegarde, quitte à faire le deuil des contenus les plus récents. Techniquement faisable, l'idée de repartir sur un Drupal vieillot et difficile à maintenir n'a pas séduit grand monde.
 
@@ -185,7 +186,7 @@ Ensuite, cela fatigue les serveurs de l'[Internet Archive] : c'est pas très fai
 
 Maintenant on sait comment moissonner un site web, en l'occurence l'ancien Geotribu. Dans le prochain article, on verra quoi faire de tous cette soupe de HTML/CSS/Javascript/Images.
 
-[Suite : convertir des fichiers HTML en Markdown :fontawesome-solid-forward:](../2020-09-11_html2markdown){: .md-button }
+[Suite : convertir des fichiers HTML en Markdown :fontawesome-solid-forward:](2020-09-11_html2markdown.md){: .md-button }
 {: align=middle }
 
 ----

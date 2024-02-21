@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2011-06-10
 description: "Revue de l'ouvrage OpenLayers 2.10 Beginner's Guide"
 tags:
@@ -15,11 +16,11 @@ tags:
 
 :calendar: Date de publication initiale : 10 juin 2011
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Il y a quelques mois nous vous avions annoncé la disponibilité de l'ouvrage [OpenLayers 2.10 Beginner's Guide](https://www.packtpub.com/openlayers-2-1-javascript-web-mapping-library-beginners-guide/book). Ecrit par Eric Hazzard et édité par pakt publishing, ce livre couvre sur près de 300 pages l'ensemble des concepts de la fameuse librairie cartographique [Openlayers](https://openlayers.org/).
 
-![OpenLayers 2.10 Beginners](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/4125OS_OpenLayers%202.10%20Beginner's%20Guidecov_big.jpg "OpenLayers 2.10 Beginners"){: .img-center loading=lazy }
+![OpenLayers 2.10 Beginner's guide](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/OpenLayers_2-10_Beginner-s-Guide_cov.jpg){: .img-center loading=lazy }
 
 Découpé en [11 chapitres](https://www.packtpub.com/toc/openlayers-210-beginners-guide-table-contents), vous apprendrez tout d'abord à construire votre première carte. Ensuite les concepts de Map, de Layers ou encore de Controls sont approfondis. Puis l'accent est mis sur la personnalisation des données et de la carte. Enfin, l'auteur conclut en présentant un exemple d'application utilisant l'API Flickr.
 

@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-03-23
 description: "Le pense bête d'OpenLayers"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 23 mars 2009
 
-![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-rdp-news-thumb }
+![logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png "logo OpenLayers"){: .img-thumbnail-left }
 
 C'est en parcourant le site [NeoGeo](http://www.neogeo-online.net/) que je suis tombé sur [cette petite merveille](https://selectoid.wordpress.com/2009/03/19/finally-a-cheatsheet-for-openlayers-27/).
 

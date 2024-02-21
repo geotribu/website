@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-08-25
 description: "Interroger GeoServer en Python grâce à gsconfig"
 tags:
@@ -17,7 +18,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 août 2010
 
-![logo Geoserver](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo Geoserver"){: .img-rdp-news-thumb }
+![logo Geoserver](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoserver.png "logo Geoserver"){: .img-thumbnail-left }
 
 Comme vous l'avez surement remarqué, je ne suis pas un grand fan de Java. Le fait est que je trouve ce langage trop verbeux et vraiment compliqué à prendre en main. C'est pourquoi quand je suis tombé sur, [gsconfig](http://wiki.github.com/dwins/gsconfig.py/), une librairie python permettant via le protocole [REST](https://fr.wikipedia.org/wiki/Representational_State_Transfer) de dialoguer avec GeoServer, j'ai de suite été emballé.
 

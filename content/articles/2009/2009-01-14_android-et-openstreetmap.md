@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-01-14
 description: "Android et OpenStreetMap"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 14 janvier 2009
 
-![logo Android](https://cdn.geotribu.fr/img/logos-icones/android.jpg "logo Android"){: .img-rdp-news-thumb }
+![logo Android](https://cdn.geotribu.fr/img/logos-icones/android.jpg "logo Android"){: .img-thumbnail-left }
 
 [**Android**](http://code.google.com/android/) la nouvelle plateforme de Google pour téléphone portable propose depuis peu un nouveau service de navigation s'appuyant sur les données d'**OpenStreetMap**. Ce service baptisé [AndNav2](http://www.andnav.org/) est disponible actuellement pour l'Angleterre, l'Allemagne, l'Ireland, le Danemark, L'Espagne, la Suisse, l'Italie, l'Autriche et la France.
 

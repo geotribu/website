@@ -4,6 +4,7 @@ authors:
     - Arnaud VANDECASTEELE
 categories:
     - article
+comments: true
 date: 2015-01-11
 description: "OpenStreetMap ce n'est pas (qu') une carte"
 tags:
@@ -14,7 +15,7 @@ tags:
 
 :calendar: Date de publication initiale : 11 janvier 2015
 
-![Logo Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-rdp-news-thumb }
+![Logo Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-thumbnail-left }
 
 Lorsque je discute d'OpenStreetMap, je me rends souvent compte qu'il y a une méconnaissance de l'étendue réelle de ce projet. En effet, pour beaucoup de personnes, OpenStreetMap (OSM) se résume à une carte. Il est vrai que c'est souvent la première illustration concrète de ce projet !
 

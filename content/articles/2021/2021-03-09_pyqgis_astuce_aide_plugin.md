@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - tutoriel
+comments: true
 date: "2021-03-09 10:20"
 description: "Petite astuce dans le développement de plugins QGIS : rediriger facilement l'utilisateur final vers la documentation en ligne."
 image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_show_help/documentation_le-chat.jpg"
@@ -26,7 +27,7 @@ Pré-requis :
 
 ## Introduction
 
-![icône PyQT](https://cdn.geotribu.fr/img/logos-icones/programmation/python_and_qt.svg "Python + Qt = PyQt"){: .img-rdp-news-thumb }
+![icône PyQT](https://cdn.geotribu.fr/img/logos-icones/programmation/python_and_qt.svg "Python + Qt = PyQt"){: .img-thumbnail-left }
 
 Plutôt que de stocker toute la documentation au format HTML et les fichiers associés (CSS, JS, images...) dans le plugin QGIS qui est téléchargé par vos millions d'utilisateur/ices, je vous propose une méthode plus simple que j'ai utilisée dans différents plugins comme [GMLAS Toolbox], [Menu Layers from Project] ou [Land Survey Codes Import].
 
@@ -51,7 +52,7 @@ Pour la suite de ce tutoriel, considérons que l'aide en ligne de notre plugin e
 
 ## Créer la redirection 301
 
-![icône HTML5](https://cdn.geotribu.fr/img/logos-icones/programmation/html5.png "icône HTML5"){: .img-rdp-news-thumb }
+![icône HTML5](https://cdn.geotribu.fr/img/logos-icones/programmation/html5.png "icône HTML5"){: .img-thumbnail-left }
 
 Le multilinguisme est géré en utilisant le code de langue (*locale*), renvoyé par l'application Qt (en l'occurrencee QGIS) comme suffixe. Par exemple : `index-fr.html` sera ouvert en priorité si QGIS est défini en français. En dernier recours, si présent, c'est le fichier sans suffixe qui est ouvert `index.html`.
 
@@ -101,7 +102,7 @@ Et un fichier `doc/index-en.html` :
 
 ## Appeler la page depuis le plugin
 
-![icône Edit Help Content - QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionEditHelpContent.svg "icône Edit Help Content - QGIS"){: .img-rdp-news-thumb }
+![icône Edit Help Content - QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionEditHelpContent.svg "icône Edit Help Content - QGIS"){: .img-thumbnail-left }
 
 Une fois que tout cela est en place, il reste à brancher notre menu d'aide sur cette redirection. Pour cela, on utilise [la fonction showPluginHelp](https://github.com/qgis/QGIS/blob/ltr-3_16/python/utils.py#L502-L530).
 
@@ -114,7 +115,7 @@ from qgis.PyQt.QtGui import QIcon
 from qgis.utils import showPluginHelp
 ```
 
-Quelque part dans la définition du [menu défini dans un précédent tuto](/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/#recycler-les-icones-de-linterface-de-qgis) :
+Quelque part dans la définition du [menu défini dans un précédent tuto](2021-01-19_pyqgis_utiliser_icones_integrees.md#recycler-les-icones-de-linterface-de-qgis) :
 
 ```python hl_lines="23 24 25"
 [...]

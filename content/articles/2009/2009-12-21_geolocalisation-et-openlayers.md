@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2009-12-21 10:20
 description: "Géolocalisation et OpenLayers"
 tags:

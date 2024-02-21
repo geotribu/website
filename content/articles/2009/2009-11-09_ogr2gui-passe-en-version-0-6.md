@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-11-09
 description: "OGR2GUI passe en version 0.6"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 09 novembre 2009
 
-![logo OpenSource](https://cdn.geotribu.fr/img/logos-icones/opensource.png "Logo Open Source Foundation"){: .img-rdp-news-thumb }
+![logo OpenSource](https://cdn.geotribu.fr/img/logos-icones/opensource.png "Logo Open Source Foundation"){: .img-thumbnail-left }
 
 [GDAL-OGR](http://www.gdal.org/index.html) est l'une voir **LA** bibliothèque de conversion de formats géographiques. Malheureusement, du fait de son utilisation en ligne de commande, celle-ci peut décourager certains géomaticiens un peu allergiques à l'informatique. Pourtant, à mes débuts, combien de temps ai-je perdu à chercher un utilitaire me permettant de passer d'un format à l'autre, ceux livrés par les éditeurs SIG étant bien souvent très limités.
 

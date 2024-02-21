@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-07-06
 description: "osmtracker-android où comment disposez d'OpenStreetMap sur Android"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 06 juillet 2010
 
-![logo Android](https://cdn.geotribu.fr/img/logos-icones/android.jpg){: .img-rdp-news-thumb }
+![logo Android](https://cdn.geotribu.fr/img/logos-icones/android.jpg){: .img-thumbnail-left }
 
 Heureux possesseur d'un téléphone équipé de la plateforme Android, je cherchais, depuis longtemps, une application me permettant d'utiliser ce périphérique comme outil de saisie de données pour [OpenStreetMap](https://www.openstreetmap.org/). Néanmoins, les différents programmes que j'avais jusqu'alors testés étaient soit inadaptés ou alors buggués.
 

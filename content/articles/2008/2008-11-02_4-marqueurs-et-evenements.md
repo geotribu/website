@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-11-02 10:20
 description: "4. Marqueurs et événements"
 image: ''
@@ -20,13 +21,13 @@ tags:
 
 ## Introduction
 
-![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-rdp-news-thumb }
+![logo Google Earth](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/googleearth.png "logo Google Earth"){: .img-thumbnail-left }
 
 Il est possible à l'instar de l'API Google Maps de créer des marqueurs sur la carte et gérer des événements avec cette API.  
 
 ## Initialisation
 
-Reprendre le globe du [deuxième tutoriel](/articles/2008/2008-11-02_2-ajoutons-quelques-controles/).  
+Reprendre le globe du [deuxième tutoriel](2008-11-02_2-ajoutons-quelques-controles.md).  
 
 ## Processus
 

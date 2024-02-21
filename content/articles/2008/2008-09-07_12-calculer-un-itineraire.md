@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-09-07 10:20
 description: "12. Calculer un itinéraire"
 tags:
@@ -17,13 +18,13 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 De la même manière que le géocodage à l'adresse, l'API Google Maps permet de calculer un itinéraire en utilisant la classe [GDirections](http://code.google.com/intl/fr/apis/maps/documentation/reference.html#GDirections).  
 
 ## Initialisation
 
-Reprendre la carte du [tutoriel n°2](/articles/2008/2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles/).
+Reprendre la carte du [tutoriel n°2](2008-08-22_2-enrichir-la-carte-avec-des-boutons-et-des-controles.md).
 
 ## Calcul de l'itinéraire
 

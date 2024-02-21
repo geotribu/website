@@ -1,0 +1,99 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+    "name": "Édition en ligne",
+    // "build": {
+    //     "dockerfile": "Dockerfile"
+    // },
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
+            "packages": [
+                "libcairo2-dev",
+                "libfreetype6-dev",
+                "libffi-dev",
+                "libjpeg-dev",
+                "libpng-dev",
+                "libz-dev",
+                "pngquant"
+            ]
+        }
+    },
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            "settings": {
+                // Editor
+                "editor.bracketPairColorization.enabled": true,
+                "editor.guides.bracketPairs": "active",
+                "files.associations": {
+                    "./requirements*.txt": "pip-requirements",
+                    ".linkcheckrrc": "ini",
+                    "content/**/*.html": "jinja"
+                },
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave": {
+                    "source.organizeImports": true
+                },
+                // Markdown
+                "markdown.updateLinksOnFileMove.enabled": "prompt",
+                "markdown.updateLinksOnFileMove.enableForDirectories": true,
+                "markdown.validate.enabled": true,
+                "markdown.validate.fileLinks.markdownFragmentLinks": "warning",
+                "markdown.validate.fragmentLinks.enabled": "warning",
+                "[markdown]": {
+                    "files.trimTrailingWhitespace": false,
+                },
+                // Python
+                "python.defaultInterpreterPath": ".venv/bin/python",
+                "[python]": {
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": true
+                    },
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true,
+                    "editor.guides.bracketPairs": "active",
+                    "editor.rulers": [
+                        88
+                    ],
+                    "editor.wordWrapColumn": 88,
+                },
+                // extensions
+                "autoDocstring.guessTypes": true,
+                "autoDocstring.docstringFormat": "google",
+                "autoDocstring.generateDocstringOnEnter": false,
+                "cSpell.language": "fr",
+                "yaml.schemas": {
+                    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs*.yml",
+                    "https://json.schemastore.org/github-workflow.json": ".github/workflows/*.yml",
+                    "https://json.schemastore.org/markdownlint.json": ".markdownlint*",
+                },
+                "yaml.customTags": [
+                    "!ENV scalar",
+                    "!ENV sequence",
+                    "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+                    "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+                    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
+                    "tag:yaml.org,2002:python/name:material.plugins.tags.casefold",
+                    "tag:yaml.org,2002:python/name:material.plugins.tags.page_url"
+                ],
+            },
+            "extensions": [
+                "bierner.markdown-mermaid",
+                "davidanson.vscode-markdownlint",
+                "github.vscode-pull-request-github",
+                "ms-python.python",
+                "ms-ceintl.vscode-language-pack-fr",
+                "redhat.vscode-yaml",
+                "streetsidesoftware.code-spell-checker-french"
+            ]
+        }
+    },
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": [
+        "python -m pip install --user -U -r requirements-free.txt"
+    ]
+}

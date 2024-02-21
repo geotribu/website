@@ -4,6 +4,7 @@ authors:
     - Fabien Goblet
 categories:
     - article
+comments: true
 date: 2008-11-17 10:20
 description: "15. Ajouter la GoogleBar"
 image: ''
@@ -18,7 +19,7 @@ tags:
 
 ## Introduction
 
-![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-rdp-news-thumb }
+![logo Google](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/google.webp "logo Google"){: .img-thumbnail-left }
 
 L'API Google Maps permet de définir une barre de géolocalisation et d'afficher le résultat sur la carte.  
 
@@ -92,7 +93,7 @@ Lorsque l'on fait une recherche grâce à cette GoogleBar, l'API place automatiq
 ## Conclusion
 
 Petit tutorial pour savoir déclarer le service GoogleBar.
-Cette méthode est identique au tutoriel - [11](/articles/2008/2008-09-07_11-geocoder-une-adresse/).
+Cette méthode est identique au tutoriel - [11](2008-09-07_11-geocoder-une-adresse.md).
 
 ----
 

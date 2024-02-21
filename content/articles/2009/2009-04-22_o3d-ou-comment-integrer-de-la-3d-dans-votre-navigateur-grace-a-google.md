@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-04-22
 description: "O3D, ou comment intégrer de la 3D dans votre navigateur grâce à Google"
 tags:
@@ -15,7 +16,7 @@ tags:
 
 :calendar: Date de publication initiale : 22 avril 2009
 
-![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-rdp-news-thumb }
+![globe news](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png){: .img-thumbnail-left }
 
 Google vient juste de finaliser [O3D](http://code.google.com/apis/o3d/), à la fois plugin (en C++) et [API javascript](http://code.google.com/apis/o3d/docs/utilitylist.html) permettant la création d'environnement 3D au sein d'un navigateur. Les exemples et vidéos disponibles en [démo](http://code.google.com/apis/o3d/docs/samplesdirectory.html) sont des plus intéressantes Il est facile d'imaginer les applications WEB et SIG/WEB qu'il serait possible de réaliser.
 

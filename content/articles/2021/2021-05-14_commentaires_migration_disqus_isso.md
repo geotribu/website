@@ -4,6 +4,7 @@ authors:
     - Julien MOURA
 categories:
     - article
+comments: true
 date: "2021-05-14 10:20"
 description: "Rien à voir avec la Géo, mais tout à voir avec la Tribu : nous avons migré notre système de commentaires de Disqus vers Isso. Partage d'expérience et contribution open source."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/geotribu_comments_isso_backend.png"
@@ -20,11 +21,11 @@ tags:
 
 ## Introduction
 
-![icône commentaire](https://cdn.geotribu.fr/img/logos-icones/astuce.png "icône commentaire"){: .img-rdp-news-thumb }
+![icône commentaire](https://cdn.geotribu.fr/img/logos-icones/astuce.png "icône commentaire"){: .img-thumbnail-left }
 
 Lorsque nous avons remis Geotribu en route l'an dernier en optant pour un site statique et que la question des commentaires s'est posée, je suis allé au plus simple : [Disqus], notammant parce-que son intégration est mise en avant dans [la documentation](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/#disqus) du thème retenu.
 
-Mais avec la montée en puissance de [la fréquentation du site](/articles/2021/2021-01-04_bilan_2020_perspectives_2021/#frequentation), notamment suite à [ign2map], Disqus a considéré que Geotribu était éligible pour les publicités.
+Mais avec la montée en puissance de [la fréquentation du site](2021-01-04_bilan_2020_perspectives_2021.md#frequentation), notamment suite à [ign2map], Disqus a considéré que Geotribu était éligible pour les publicités.
 
 ![Disqus - Mail de notification](https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/disqus_to_isso/disqus_publicites_mail_notification.webp "Disqus - Mail de notification"){: loading=lazy align=left clear=right width=150px }
 
@@ -34,7 +35,7 @@ On peut comprendre qu'un service n'est jamais gratuit et que la publicité est l
 
 D'après la [FAQ](https://help.disqus.com/en/articles/1717307-subscription-payments-faq), nous aurions pu prétendre à un forfait gratuit exempt de publicité mais c'était l'occasion de s'affranchir d'un service propriétaire et qui, même gratuit, ajoute des éléments de tracking non désirés.
 
-Comme évoqué dans l'introduction de [la GeoRDP du 12 mars](/rdp/2021/rdp_2021-03-12/), nous avons donc décidé de couper le service en attendant de trouver mieux... ou de ne pas mettre de système de commentaires du tout.
+Comme évoqué dans l'introduction de [la GeoRDP du 12 mars](../../rdp/2021/rdp_2021-03-12.md), nous avons donc décidé de couper le service en attendant de trouver mieux... ou de ne pas mettre de système de commentaires du tout.
 
 Finalement, on a mis en place [Isso] et après un mois d'utilisation, il est temps de faire un retour d'expérience.
 
@@ -45,7 +46,7 @@ Finalement, on a mis en place [Isso] et après un mois d'utilisation, il est tem
 
 ## Isso
 
-![logo Isso](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/isso.svg "logo Isso"){: .img-rdp-news-thumb }
+![logo Isso](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/isso.svg "logo Isso"){: .img-thumbnail-left }
 
 Les systèmes de commentaires sont nombreux : [Juvia](https://phusion.github.io/juvia/), [GitMent](https://imsun.github.io/gitment/), [GitTalk](https://gitalk.github.io/), [Schnack](https://github.com/schn4ck/schnack), etc.
 
@@ -63,7 +64,7 @@ On a finalement opté pour [Isso] pour plusieurs raisons  :
 
 ### Installation du serveur
 
-![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
 Vu que GeoRezo nous autorise gracieusement à utiliser le serveur d'[El Géo Paso](https://elgeopaso.georezo.net/) et qu'il s'agit d'une application légère, j'ai décidé de l'installer à côté de [notre pseudo-CDN]({{ config.extra.url_contribuer }}guides/cdn-images-hebergement/).
 
@@ -95,7 +96,7 @@ En peu de temps, nous voici avec l'interface d'administration et les commentaire
 
 ### Intégration au site
 
-![logo HTML5](https://cdn.geotribu.fr/img/logos-icones/programmation/html5.png "logo HTML5"){: .img-rdp-news-thumb }
+![logo HTML5](https://cdn.geotribu.fr/img/logos-icones/programmation/html5.png "logo HTML5"){: .img-thumbnail-left }
 
 Comme indiqué (voir la [doc](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/) et [ticket GitHub](https://github.com/squidfunk/mkdocs-material/issues/1466#issuecomment-588049898)) par l'auteur du thème Material pour MkDocs que l'on utilise pour le site, si Disqus bénéficie d'une facilité d'intégration, il reste possible d'intégrer n'importe quel système.  
 Saluons une fois de plus la qualité de ce thème, dont le développement prévoit des personnalisations totales ou partielles de chaque partie du site.
@@ -138,7 +139,7 @@ Et voilà tout !
 
 ## Contribuer au cercle vertueux de l'open-source
 
-![logo open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo open source"){: .img-rdp-news-thumb }
+![logo open source](https://cdn.geotribu.fr/img/logos-icones/opensource.png "logo open source"){: .img-thumbnail-left }
 
 Le service rendu est à la hauteur des attentes et voilà la Geotribu dotée d'un nouveau module de commentaires :partying_face:.
 
@@ -171,5 +172,5 @@ C'est beau l'open source :smiling_face_with_3_hearts:.
 
 <!-- Hyperlinks reference -->
 [Disqus]: https://disqus.com/
-[ign2map]: /articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/
+[ign2map]: 2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes.md
 [Isso]: https://posativ.org/isso/

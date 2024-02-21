@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2009-08-10
 description: "Ça bouge dans le monde des bases de données"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 10 août 2009
 
-![icone database](https://cdn.geotribu.fr/img/logos-icones/programmation/database.png "icone database"){: .img-rdp-news-thumb }
+![icone database](https://cdn.geotribu.fr/img/logos-icones/programmation/database.png "icone database"){: .img-thumbnail-left }
 
 Plus qu'une véritable news, ce billet retrace les différentes évolutions qui ont eu lieu dans le monde des bases de données spatiales ces dernières semaines. En effet, en un laps de temps très court, plusieurs informations majeures ont été annoncées. Nous aborderons succesivement spatialite, la nouvelle version de postgis et enfin Rasdaman.
 

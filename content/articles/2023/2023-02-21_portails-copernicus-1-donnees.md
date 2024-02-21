@@ -5,6 +5,7 @@ authors:
     - Nicolas DAVID
 categories:
     - article
+comments: true
 date: "2023-02-21 09:00"
 description: "Introduction et description des données d'observation de la terre produite dans le cadre du progamme européen Copernicus"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"
@@ -24,7 +25,7 @@ tags:
 
 ## Introduction
 
-![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-rdp-news-thumb }
+![icône satellite](https://cdn.geotribu.fr/img/logos-icones/divers/satellite.png "icône satellite"){: .img-thumbnail-left }
 
 L'Europe fait évoluer, en 2023, les possibilités d'accès aux différentes données des satellites de la constellation Sentinel via la création du "Copernicus Data Space Ecosytem" : [dataspace.copernicus.eu](https://dataspace.copernicus.eu/).
 Le lancement de ce nouveau portail est donc une bonne occasion de revenir un peu sur l'historique du programme Sentinel ainsi que les différentes possibilités d'accéder aux données open-data Sentinel puis de détailler les fonctionnalités prévues pour ce nouveau service au cours de trois articles, chacun dédié à une partie pour faciliter la lecture et le "picorage" d'information à ceux qui connaissent déjà le sujet.
@@ -33,8 +34,8 @@ Dans cette première partie nous revenons sur le programme Copernicus et surtout
 
 Série **Accès aux données Copernicus/Sentinel** :
 
-* [Partie 2 : portails d'accès, 'the road so far'](/articles/2023/2023-02-28_portails-copernicus-2-passe/).
-* Partie 3 : évolution de l'accès aux données Copernicus (publication prévue le 7 mars).
+* [Partie 2 : portails d'accès, 'the road so far'](2023-02-28_portails-copernicus-2-passe.md).
+* [Partie 3 : évolution de l'accès aux données Copernicus](2023-03-07_portails-copernicus-3-futur.md).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }

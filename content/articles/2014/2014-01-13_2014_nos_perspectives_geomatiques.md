@@ -4,6 +4,7 @@ authors:
     - Thomas GRATIER
 categories:
     - article
+comments: true
 date: 2014-01-13
 description: "2014, nos prospectives géomatiques"
 tags:
@@ -48,7 +49,7 @@ On assiste à un développement croissant de capteurs installés par exemple pou
 
 ## 6) Des nouveaux périphériques de manipulation (Leap Motion, ...) comme d'acquisition (drones ou Google Glasses par exemple) vont pousser des usages différents en cartographie
 
-<iframe src="http://www.youtube.com/embed/h5CYeESsTko" allowfullscreen="" frameborder="0" height="315" width="100%"></iframe>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/lACxJrXBJOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## 7) Le domaine satellitaire va prendre son envol dans tous les sens du terme
 

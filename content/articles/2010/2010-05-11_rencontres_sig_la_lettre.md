@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-05-11
 description: "Les rencontres SIG la lettre, un événement réussi"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 11 mai 2010
 
-![30575541:avatar_medium.jpg](https://cdn.geotribu.fr/img/Blog/divers/30575541%3Aavatar_medium.jpg){: .img-rdp-news-thumb }
+![30575541:avatar_medium.jpg](https://cdn.geotribu.fr/img/Blog/divers/30575541%3Aavatar_medium.jpg){: .img-thumbnail-left }
 
 C'est dans les locaux de l'[Ecole Nationale des Sciences Géographiques](http://www.ensg.eu/) (ENSG) que s'est tenue la seconde édition des [rencontres SIG la Lettre](http://www.rencontres-sig-la-lettre.fr/). Cet événement, unique sur le territoire français, a permis de regrouper pendant 3 jours (4-5-6 Mai) les principaux acteurs de la géomatique.
 

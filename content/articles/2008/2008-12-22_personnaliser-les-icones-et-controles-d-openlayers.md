@@ -4,6 +4,7 @@ authors:
     - Arnaud Vandecasteele
 categories:
     - article
+comments: true
 date: 2008-12-22 10:20
 description: "Personnaliser les icônes et controles d'OpenLayers"
 image: ''
@@ -18,7 +19,7 @@ tags:
 
 ## Introduction
 
-![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-rdp-news-thumb }
+![Logo OpenLayers](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/openlayers.png){: .img-thumbnail-left }
 
 Même si la librairie OpenLayers se veut la plus souple et la plus ouverte possible, certaines parties sont encore codées en dures. C'est le cas notamment pour tout ce qui traite de la customisation.
 

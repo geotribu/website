@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2012-05-09
 description: "A la découverte de CartoDB"
 tags:
@@ -19,7 +20,7 @@ tags:
 
 ## Introduction
 
-![logo CartoDB](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/cartodb.png "logo CartoDB"){: .img-rdp-news-thumb loading=lazy }
+![logo CartoDB](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/cartodb.png "logo CartoDB"){: .img-thumbnail-left loading=lazy }
 
 Il y a plusieurs semaines, j'avais reçu mon précieux sésame me permettant d'accéder au service [CartoDB](http://cartodb.com/). Malheureusement, le manque de temps ne m'a pas permis de vous faire un retour immédiat. Je profite donc de ce Week-End pour revenir sur ce service créé par [Vizzuality](http://vizzuality.com/) qui vous permet :
 

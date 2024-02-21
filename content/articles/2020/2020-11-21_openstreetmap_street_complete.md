@@ -4,6 +4,7 @@ authors:
     - Julien MOURA
 categories:
     - article
+comments: true
 date: "2020-11-21 10:20"
 description: "Présentation de Street Complete, l'application Android qui permet de contribuer facilement et de façon ludique à OpenStreetMap."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/streetcomplete_banner.png"
@@ -21,7 +22,7 @@ tags:
 
 ## Introduction
 
-![icône Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-rdp-news-thumb }
+![icône Openstreetmap](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/Openstreetmap.png "Openstreetmap"){: .img-thumbnail-left }
 
 Je dois vous avouer quelque-chose : cela fait quelques années déjà que je ne contribue plus de façon assidue à OpenStreetMap. Le principal frein est le manque de temps, notamment dû à la complexité que revêt la contribution quand on veut faire cela "proprement".
 

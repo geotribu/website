@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - article
+comments: true
 date: 2010-03-25
 description: "Ca bouge chez GeoExt"
 tags:
@@ -16,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 mars 2010
 
-![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-rdp-news-thumb }
+![logo GeoExt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geoext.png "logo GeoExt"){: .img-thumbnail-left }
 
 Cela faisait longtemps que nous n'avions pas discuté de [GeoExt](http://www.geoext.org/lib/index.html). C'est pourquoi je reviens avec non pas une, mais deux grandes nouvelles. Tout d'abord, la sortie de la [version 0.7](http://trac.geoext.org/wiki/Release/0.7/Notes) ([dl](http://www.geoext.org/downloads.html)) et ensuite la mise en place de l'outil [custom build tool](http://geoext.org/builder/v0.6.html)
 

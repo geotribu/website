@@ -3,19 +3,52 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "files.associations": {
-        "./requirements*.txt": "pip-requirements"
+        "./requirements*.txt": "pip-requirements",
+        ".linkcheckrrc": "ini",
+        "content/**/*.html": "jinja"
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
+    },
+    // Markdown
+    "markdown.updateLinksOnFileMove.enabled": "prompt",
+    "markdown.updateLinksOnFileMove.enableForDirectories": true,
+    "markdown.validate.enabled": true,
+    "markdown.validate.fileLinks.markdownFragmentLinks": "warning",
+    "markdown.validate.fragmentLinks.enabled": "warning",
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false,
     },
     // Python
     "python.defaultInterpreterPath": ".venv/bin/python",
-    "python.formatting.provider": "black",
-    "python.linting.enabled": false,
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.guides.bracketPairs": "active",
+        "editor.rulers": [
+            88
+        ],
+        "editor.wordWrapColumn": 88,
+    },
+    "flake8.args": [
+        "--config=setup.cfg",
+        "--verbose"
+    ],
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "isort.check": true,
     // Git
     "git.ignoreLimitWarning": true,
-    // Extensions
+    // extensions
+    "autoDocstring.guessTypes": true,
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.generateDocstringOnEnter": false,
     "cSpell.language": "fr",
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs*.yml",
@@ -25,8 +58,12 @@
     "yaml.customTags": [
         "!ENV scalar",
         "!ENV sequence",
-        "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
-        "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
-        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
-    ]
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.casefold",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.page_url",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.tag_name_casefold",
+        "tag:yaml.org,2002:python/name:material.plugins.tags.item_url"
+    ],
 }
