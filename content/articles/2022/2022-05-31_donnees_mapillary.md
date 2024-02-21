@@ -125,7 +125,7 @@ Avant de se lancer, il est bon de paramétrer le fichier de configuration que vo
 
 Voici le fichier `config.env` à adapter :
 
-```ini
+```ini title="Environnement de travail" linenums="1"
 # REPERTOIRE DE TRAVAIL
 REPER='/mapillary'
 
@@ -159,7 +159,7 @@ C_SCHEMA='ref_mapillary'
 
 Les tuiles ne sont pas définies par une longitude/latitude mais par une numérotation spécifique, il nous faut donc identifier les numéros des tuiles qui croisent notre emprise de travail et pour cela, je me suis appuyé sur une [solution proposée sur le wiki d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Bourne_shell_with_Awk).
 
-```bash
+```bash title="Identification des tuiles" linenums="1"
 # BBOX ET IDENTIFICATION DES TUILES
 long2xtile(){
  long=$1
@@ -190,7 +190,7 @@ echo $XMIN $YMIN $XMAX $YMAX
 
 Ensuite, à l'aide de `curl` on va pouvoir télécharger chacune des tuiles en local et en extraire l'information pour l'intégrer dans un Géopackage (que l'on pourra archiver facilement).
 
-``` bash
+``` bash title="Téléchargement des tuiles et création de GPKG" linenums="1"
 Z=$V_ZOOM
 for X in $(seq $XMIN $XMAX);do
    for Y in $(seq $YMAX $YMIN);do
@@ -229,7 +229,7 @@ done
 
 Après avoir extrait les données vectorielles des tuiles vectorielles, il ne nous reste plus qu'à les intégrer dans notre base de données PostgreSQL/PostGIS à l'aide d'`ogr2ogr`.
 
-``` bash
+``` bash title="Import PostgreSQL/PostGIS" linenums="1"
 ogr2ogr \
     -append \
     -f "PostgreSQL" PG:"service='$C_SERVICE' schemas='$C_SCHEMA'" \
@@ -251,7 +251,7 @@ ogr2ogr \
 
 Maintenant que le fichier de configuration est complété et que vous avez bien compris le principe du script `mapillary_vt2pg.sh`, vous allez pouvoir lancer le script de cette manière pour récupérer les données qui vous intéressent dans PostgreSQL/PostGIS.
 
-```bash
+```bash title="Exécution" linenums="1"
 sh mapillary_vt2pg.sh image
 sh mapillary_vt2pg.sh point
 sh mapillary_vt2pg.sh signalisation

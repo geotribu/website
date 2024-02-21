@@ -83,7 +83,7 @@ Avant de se lancer, il est bon de paramétrer le fichier de configuration que vo
 
 Voici le fichier `config.env` à adapter :
 
-```ini
+```ini title="Environnement de travail" linenums="1"
 # REPERTOIRE DE TRAVAIL
 REPER='/Users/'
 
@@ -124,7 +124,7 @@ Dans le répertoire *scripts*, vous devez y placer un script Bash pour chaque do
 
 Voici un exemple d'extraction des informations liées aux composteurs au format shapefile.
 
-```bash
+```bash title="Extraction des données" linenums="1"
 # Lecture du fichier de configuration
 . ./config.env
 # ------------------------------------------------------------------------------------------------------------
@@ -180,7 +180,7 @@ Voici un exemple correspondant toujours à la donnée des composteurs.
 
 Premièrement, ajouter la variable correspondant à la donnée définie
 
-```bash
+```bash title="Ajout de la variable" linenums="1"
 if [ "$#" -ge 1 ]; then
   if [ "$1" = "COMPOSTEURS" ];
   then
@@ -209,7 +209,7 @@ fi
 
 Deuxièmement, définir le script d'extraction de la donnée ainsi que les actions associées.
 
-```bash
+```bash title="Définir les actions" linenums="1"
 if [ "$DONNEE" = "COMPOSTEURS" ]; then
   # LANCEMENT DE L'EXTRACTION
   sh scripts/dechets_composteurs.sh | tee $REPER_TEMP'/'$DONNEE'/'$OUT_EPSG'/dechets_composteurs.txt'
@@ -224,7 +224,7 @@ if [ "$DONNEE" = "COMPOSTEURS" ]; then
 
 Comme pour le script d'extraction des données, il faut créer un fichier définissant les paramètres de chaque jeu de données publié (titre, licence, description, tags,...) et qui seront utilisés par le site data.gouv.fr pour générer la fiche associée au jeu de données.
 
-```ini
+```ini title="Métadonnées" linenums="1"
 TITLE='Composteurs collectifs'
 DESCRIPTION='Points localisant les sites de compostage partagé. Ces aires de compostage partagé sont mises en place par Communauté de Communes du ... dans le cadre de sa politique de réduction des déchets.'
 TAG='dechet,composteurs,compostage,compost,CCPL'
@@ -241,7 +241,7 @@ TEMPORAL_COVERAGE=''
 
 Une fois que tout est configuré, il est possible de lancer manuellement la publication d'une donnée en passant les paramètres `nom_table` `code_ EPSG` `format` :
 
-```bash
+```bash title="Exécution" linenums="1"
 pg2datagouv.sh COMPOSTEURS 2154 CSV
 ```
 
