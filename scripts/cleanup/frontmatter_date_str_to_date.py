@@ -56,7 +56,9 @@ for md_filepath in Path("content").glob("**/*.md"):
             # write new version
             with md_filepath.open(mode="w", encoding="UTF-8") as out_file:
                 # frontmatter.dump(content, out_file) # not working
-                out_file.write(frontmatter.dumps(content, sort_keys=False, indent=4))
+                out_file.write(
+                    frontmatter.dumps(content, sort_keys=False, **{"indent": 4})
+                )
         else:
             logging.warning(
                 f"File {md_filepath} has a date in YAML frontmatters but it's not a "
