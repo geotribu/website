@@ -66,13 +66,13 @@ REPER='/home/....'
 REPER_LOGS='logs'
 
 # REPERTOIRE D ENTREE
-REPER_LOGS='data_in'
+REPER_IN='data_in'
 
 # REPERTOIRE TEMPORAIRE
-REPER_LOGS='data_tmp'
+REPER_TMP='data_tmp'
 
 # REPERTOIRE DE SORTIE
-REPER_LOGS='data_out'
+REPER_OUT='data_out'
 
 # PARAMETRES OGR
 ENCODAGE='UTF-8'
