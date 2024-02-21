@@ -1,15 +1,15 @@
 ---
-title: "Installer QGIS sur Ubuntu avec apt"
-subtitle: "apt install qgis-zen-mode"
+title: Installer QGIS sur Ubuntu avec apt
+subtitle: apt install qgis-zen-mode
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 comments: true
-date: "2023-01-05 10:20"
-description: "Installer QGIS sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des problèmes. Un tutoriel sur la marche à suivre pour s'en rappeler quand le besoin se fait sentir."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png"
+date: 2023-01-05
+description: Installer QGIS sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des problèmes. Un tutoriel sur la marche à suivre pour s'en rappeler quand le besoin se fait sentir.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png
 license: beerware
 tags:
     - Linux

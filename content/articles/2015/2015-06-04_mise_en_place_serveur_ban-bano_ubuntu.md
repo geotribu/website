@@ -1,12 +1,12 @@
 ---
-title: "Mise en place et utilisation d'un serveur BAN/BANO pour un usage personnalisé sous Ubuntu 14.04"
+title: Mise en place et utilisation d'un serveur BAN/BANO pour un usage personnalisé sous Ubuntu 14.04
 authors:
     - Thomas Gratier
 categories:
     - article
 comments: true
-date: "2015-06-04 10:20"
-description: "Tutoriel d'installation et de déploiement d'addok, le servur de géocodage lié à la BAN/BANO."
+date: 2015-06-04
+description: Tutoriel d'installation et de déploiement d'addok, le servur de géocodage lié à la BAN/BANO.
 license: default
 robots: index, follow
 tags:

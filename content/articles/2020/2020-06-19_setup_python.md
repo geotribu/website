@@ -1,14 +1,14 @@
 ---
-title: "Python - Configuration sur Windows et outillage"
+title: Python - Configuration sur Windows et outillage
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 comments: true
-date: 2020-06-19 10:20
-description: "Installer Python sous Windows. Configuration et outillage de base pour développer en Python en 2020, avec un focus sur le travail sous Windows."
-image: "https://cdn.geotribu.fr/img/tuto/python_windows/python_windows_installer_path_length.jpg"
+date: 2020-06-19
+description: Installer Python sous Windows. Configuration et outillage de base pour développer en Python en 2020, avec un focus sur le travail sous Windows.
+image: https://cdn.geotribu.fr/img/tuto/python_windows/python_windows_installer_path_length.jpg
 tags:
     - Python
     - Windows

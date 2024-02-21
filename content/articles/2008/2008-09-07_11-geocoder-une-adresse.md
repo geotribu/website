@@ -1,12 +1,12 @@
 ---
-title: "11. Géocoder une adresse"
+title: 11. Géocoder une adresse
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-08-22 10:20
-description: "11. Géocoder une adresse"
+date: 2008-08-22
+description: 11. Géocoder une adresse
 tags:
     - géocodage
     - Google Maps

@@ -1,14 +1,14 @@
 ---
-title: "Accéder aux données de Mapillary et les intégrer dans son SIG"
+title: Accéder aux données de Mapillary et les intégrer dans son SIG
 authors:
     - Florian Boret
 categories:
     - article
     - tutoriel
 comments: true
-date: 2022-05-31 14:20
-description: "Accéder aux données de Mapillary et les intégrer dans son SIG"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/mapillary_data.png"
+date: 2022-05-31
+description: Accéder aux données de Mapillary et les intégrer dans son SIG
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/mapillary_data.png
 license: default
 tags:
     - Bash

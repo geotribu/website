@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: "2023-12-19 14:20"
+date: 2023-12-19
 description: Présentation de DuckDB et surtout de ses fonctions spatiales. Comment les exploiter et les mettre en lien avec des données (géo)parquet.
 icon: simple/duckdb
 image:

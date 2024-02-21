@@ -1,14 +1,14 @@
 ---
-title: "Installer QGIS sur Windows avec OSGeo4W et Powershell"
+title: Installer QGIS sur Windows avec OSGeo4W et Powershell
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 comments: true
-date: 2020-07-03 10:20
-description: "Comment déployer automatiquement (téléchargement et installation) QGIS sur Windows avec un script Powershell (ou via chocolatey), en tirant parti des capacités de l'installeur OSGeo4W."
-image: "https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/qgis_deploy_win_prog_postinstall.png"
+date: 2020-07-03
+description: Comment déployer automatiquement (téléchargement et installation) QGIS sur Windows avec un script Powershell (ou via chocolatey), en tirant parti des capacités de l'installeur OSGeo4W.
+image: https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/qgis_deploy_win_prog_postinstall.png
 tags:
     - déploiement
     - OSGeo4W

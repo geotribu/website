@@ -1,12 +1,12 @@
 ---
-title: "3. La Tour Eiffel en 3D"
+title: 3. La Tour Eiffel en 3D
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-11-02 10:20
-description: "3. La Tour Eiffel en 3D"
+date: 2008-11-02
+description: 3. La Tour Eiffel en 3D
 image: ''
 license: default
 robots: index, follow

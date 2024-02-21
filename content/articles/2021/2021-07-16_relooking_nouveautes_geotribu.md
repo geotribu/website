@@ -1,13 +1,13 @@
 ---
-title: "Mise à jour estivale 2021"
+title: Mise à jour estivale 2021
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: "2021-07-16 15:20"
-description: "Ce vendredi, pas de revue de presse mais une revue des nouveautés du site récentes : licences, page d'accueil et sponsoring à venir."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_homepage_dark_2021-07-16.png"
+date: 2021-07-16
+description: 'Ce vendredi, pas de revue de presse mais une revue des nouveautés du site récentes : licences, page d''accueil et sponsoring à venir.'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_homepage_dark_2021-07-16.png
 license: default
 tags:
     - Geotribu

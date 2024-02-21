@@ -1,15 +1,15 @@
 ---
-title: "Importer des données OSM dans PostgreSQL"
-subtitle: "Installation, configuration, import"
+title: Importer des données OSM dans PostgreSQL
+subtitle: Installation, configuration, import
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 comments: true
-date: "2022-06-28 10:20"
-description: "Guide détaillé pour installer et configurer PostgreSQL, PostGIS et importer des données OpenStreetMap à l'aide d'osm2pgsql et Osmium."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png"
+date: 2022-06-28
+description: Guide détaillé pour installer et configurer PostgreSQL, PostGIS et importer des données OpenStreetMap à l'aide d'osm2pgsql et Osmium.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png
 license: default
 robots: index, follow
 tags:

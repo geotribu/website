@@ -1,12 +1,12 @@
 ---
-title: "Afficher des graphiques sur une carte - OpenLayers/Artichow"
+title: Afficher des graphiques sur une carte - OpenLayers/Artichow
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-10-29 10:20
-description: "Afficher des graphiques sur une carte - OpenLayers/Artichow"
+date: 2008-10-29
+description: Afficher des graphiques sur une carte - OpenLayers/Artichow
 image: ''
 license: default
 robots: index, follow
@@ -14,7 +14,6 @@ tags:
     - artichow
     - graphique
     - OpenLayers
-
 ---
 
 # Afficher des graphiques sur une carte - OpenLayers/Artichow

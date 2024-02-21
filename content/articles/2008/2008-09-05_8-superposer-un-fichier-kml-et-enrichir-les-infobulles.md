@@ -1,12 +1,12 @@
 ---
-title: "8. Superposer un fichier KML et enrichir les infobulles"
+title: 8. Superposer un fichier KML et enrichir les infobulles
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-09-05 10:20
-description: "8. Superposer un fichier KML et enrichir les infobulles"
+date: 2008-09-05
+description: 8. Superposer un fichier KML et enrichir les infobulles
 tags:
     - Google Maps
     - infobulle

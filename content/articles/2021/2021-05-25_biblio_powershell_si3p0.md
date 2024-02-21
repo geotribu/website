@@ -1,13 +1,13 @@
 ---
-title: "Aperçu de la bibliothèque PowerShell SI3P0"
+title: Aperçu de la bibliothèque PowerShell SI3P0
 authors:
     - Michaël GALIEN
 categories:
     - article
 comments: true
-date: "2021-05-25 16:00"
-description: "Petit aperçu de la bibliothèque PowerShell SI3P0 développée par le département du Gard pour la gestion de son SIg routes et bâtiments."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-logo.png"
+date: 2021-05-25
+description: Petit aperçu de la bibliothèque PowerShell SI3P0 développée par le département du Gard pour la gestion de son SIg routes et bâtiments.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-logo.png
 tags:
     - adresse
     - BAN

@@ -1,20 +1,20 @@
 ---
-title: "Portails d'accès aux données Sentinel, 'the road so far'"
-subtitle: "Accès aux données Copernicus et Sentinel"
+title: Portails d'accès aux données Sentinel, 'the road so far'
+subtitle: Accès aux données Copernicus et Sentinel
 authors:
     - Nicolas DAVID
 categories:
     - article
 comments: true
-date: "2023-02-28 09:00"
-description: "Historique des portails d'accès aux données Sentinel en Europe et en France et description de leur grandes fonctionnalités"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"
+date: 2023-02-28
+description: Historique des portails d'accès aux données Sentinel en Europe et en France et description de leur grandes fonctionnalités
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png
 license: beerware
 robots: index, follow
 tags:
     - open data
     - OSO
-    - PEPS  
+    - PEPS
     - satellite
     - Sentinel-2
     - télédétection

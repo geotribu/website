@@ -4,8 +4,8 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-09-07 10:20
-description: ""
+date: 2008-09-07
+description: ''
 image: ''
 license: default
 robots: index, follow
@@ -15,7 +15,7 @@ tags:
     - MySQL
     - Ajax
     - PHP
-title: "10. Utiliser Ajax, MySQL et PHP pour afficher des marqueurs"
+title: 10. Utiliser Ajax, MySQL et PHP pour afficher des marqueurs
 ---
 
 # 10. Utiliser Ajax, MySQL et PHP pour afficher des marqueurs

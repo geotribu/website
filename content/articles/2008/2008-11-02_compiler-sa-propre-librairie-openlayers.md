@@ -1,12 +1,12 @@
 ---
-title: "Compiler sa propre librairie OpenLayers"
+title: Compiler sa propre librairie OpenLayers
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-11-02 10:20
-description: "Compiler sa propre librairie OpenLayers"
+date: 2008-11-02
+description: Compiler sa propre librairie OpenLayers
 image: ''
 license: default
 robots: index, follow
