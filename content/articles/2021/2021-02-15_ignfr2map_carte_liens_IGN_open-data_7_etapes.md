@@ -1,14 +1,14 @@
 ---
-title: "ign2map : Du site à la carte en 7 étapes"
+title: 'ign2map : Du site à la carte en 7 étapes'
 authors:
     - Florian Boret
     - Julien Moura
 categories:
     - article
 comments: true
-date: 2021-02-15 11:11
-description: "ign2map : le petit projet de Geotribu pour rendre l’expérience de téléchargement des données ouvertes de l'IGN plus interactive."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html_rendu.png"
+date: 2021-02-15
+description: 'ign2map : le petit projet de Geotribu pour rendre l’expérience de téléchargement des données ouvertes de l''IGN plus interactive.'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/ign_opendata_map_html_rendu.png
 tags:
     - awk
     - Bash
@@ -58,7 +58,7 @@ Solutions utilisées :
 - [curl](https://fr.wikipedia.org/wiki/CURL) pour le téléchargement de la page.
 - [grep](https://fr.wikipedia.org/wiki/Grep) pour extraire les liens.
 
-```bash
+```bash title="Scraping du site de l'IGN" linenums="1"
 curl "$SOURCE_URL" | \
   grep -oE '\b(https?|ftp|file)://[-A-Za-z0-9+&@# /%?=~_|!:,.;]*[-A-Za-z0-9+&@# /%=~_|]' > "$OUTPUT_FILE"
 ```
@@ -80,7 +80,7 @@ Une fois tous les liens extraits, on a :
 
 *Cette étape a été répétée pour les régions et pour la France.*
 
-```bash
+```bash title="Extraction des fichiers" linenums="1"
 grep -E "D$val|DEP_$val" $SOURCE_FILE | awk '{ printf("%s,D'$val_t'\n", $0); }' > "$OUTPUT_DIR/D$val_t.csv"
 ```
 
@@ -96,7 +96,7 @@ grep -E "D$val|DEP_$val" $SOURCE_FILE | awk '{ printf("%s,D'$val_t'\n", $0); }' 
 
 Comme on peut le voir sur la capture précédente, il y a de nombreux doublons liés notamment à la structure de la page html puisque l'IGN affiche le lien complet sur sa page :
 
-```html
+```html title="Lien linenums="1"
 <a href="https://url.com">https://url.com</a>
 ```
 
@@ -105,7 +105,7 @@ On a donc utilisé :
 - [sort](https://fr.wikipedia.org/wiki/Sort_(Unix)) pour trier les liens et ne conserver qu'un seul lien unique.
 - [grep](https://fr.wikipedia.org/wiki/Grep) pour ne garder que les liens ayant une extension .7z (extension utilisée par l'IGN pour compresser ses fichiers).
 
-```bash
+```bash title="Nettoyer les liens" linenums="1"
 cat "$INPUT_DIR"/2_departements/*csv | sort -u | grep -F '.7z' > "$OUTPUT_DIR/3_liens_par_dep_clean_ext.csv"
 ```
 

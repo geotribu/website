@@ -1,12 +1,12 @@
 ---
-title: "Mettre en place un serveur WFS-T"
+title: Mettre en place un serveur WFS-T
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-09-20 10:20
-description: "Mettre en place un serveur WFS-T"
+date: 2008-09-20
+description: Mettre en place un serveur WFS-T
 tags:
     - MapServer
     - WFS-T

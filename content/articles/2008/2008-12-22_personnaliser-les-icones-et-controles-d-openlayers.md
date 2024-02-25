@@ -1,12 +1,12 @@
 ---
-title: "Personnaliser les icônes et controles d'OpenLayers"
+title: Personnaliser les icônes et controles d'OpenLayers
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-12-22 10:20
-description: "Personnaliser les icônes et controles d'OpenLayers"
+date: 2008-12-22
+description: Personnaliser les icônes et controles d'OpenLayers
 image: ''
 tags:
     - OpenLayers

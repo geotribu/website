@@ -1,12 +1,12 @@
 ---
-title: "Créer un grid en relation avec des données vecteurs grâce à GeoExt"
+title: Créer un grid en relation avec des données vecteurs grâce à GeoExt
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-04-06 10:20
-description: "Créer un grid en relation avec des données vecteurs grâce à GeoExt"
+date: 2009-04-06
+description: Créer un grid en relation avec des données vecteurs grâce à GeoExt
 tags:
     - ExtJS
     - GeoExt

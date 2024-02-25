@@ -1,14 +1,14 @@
 ---
-title: "Tutoriel de prise en main du logiciel de rendu 3D Aerialod"
+title: Tutoriel de prise en main du logiciel de rendu 3D Aerialod
 authors:
     - Aurélien CHAUMET
 categories:
     - article
     - tutoriel
 comments: true
-date: "2020-10-14 10:20"
-description: "Concepts de base et exemples de paramétrage et de rendu sur aerialod (cartographie 3D)."
-image : "https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg"
+date: 2020-10-14
+description: Concepts de base et exemples de paramétrage et de rendu sur aerialod (cartographie 3D).
+image: https://cdn.geotribu.fr/img/tuto/aerialod/oceania_aerialod.jpg
 tags:
     - 3D
     - Aerialod

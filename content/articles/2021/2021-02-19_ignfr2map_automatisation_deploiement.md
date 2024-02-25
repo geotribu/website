@@ -1,5 +1,5 @@
 ---
-title: "ign2map : automatisation et déploiement"
+title: 'ign2map : automatisation et déploiement'
 authors:
     - Julien Moura
     - Florian Boret
@@ -7,9 +7,9 @@ categories:
     - article
     - tutoriel
 comments: true
-date: 2021-02-19 14:14
-description: "Suite du projet ign2map : automatisation de l'exécution des scripts et du déploiement de la carte interactive des liens de téléchargement des données ouvertes de l'IGN, en tirant profit de GitHub Actions et Pages."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/github_action_workflow_result.png"
+date: 2021-02-19
+description: 'Suite du projet ign2map : automatisation de l''exécution des scripts et du déploiement de la carte interactive des liens de téléchargement des données ouvertes de l''IGN, en tirant profit de GitHub Actions et Pages.'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/github_action_workflow_result.png
 tags:
     - Bash
     - IGN

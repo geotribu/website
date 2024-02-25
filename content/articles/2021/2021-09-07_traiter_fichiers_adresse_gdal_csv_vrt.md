@@ -1,14 +1,14 @@
 ---
-title: "Utiliser GDAL pour traiter les fichiers de la Base Adresse Nationale et Locales"
-subtitle: "GDAL c'est de la BAL"
+title: Utiliser GDAL pour traiter les fichiers de la Base Adresse Nationale et Locales
+subtitle: GDAL c'est de la BAL
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 comments: true
-date: "2021-09-07 10:20"
-description: "Travailler les données de la Base Adresse Nationale (BAN) avec GDAL/OGR, en tirant parti de l'abstraction sur les systèmes de fichiers virtuels (VSI) et de la lecture (VRT)."
+date: 2021-09-07
+description: Travailler les données de la Base Adresse Nationale (BAN) avec GDAL/OGR, en tirant parti de l'abstraction sur les systèmes de fichiers virtuels (VSI) et de la lecture (VRT).
 icon: material/tennis-ball
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/gdal_bal.png
 license: beerware

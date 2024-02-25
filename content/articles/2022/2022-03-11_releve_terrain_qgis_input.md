@@ -1,13 +1,13 @@
 ---
-title: "Effectuer un relevé de terrain avec QGIS et Input"
+title: Effectuer un relevé de terrain avec QGIS et Input
 authors:
     - Cedric ROSSI
 categories:
     - article
 comments: true
-date: "2022-03-11 10:20"
-description: "Comment relever des données SIG sur le terrain avec l'application mobile Input, et les synchroniser avec QGIS. Exemple d'un inventaire d'arbres urbains"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png"
+date: 2022-03-11
+description: Comment relever des données SIG sur le terrain avec l'application mobile Input, et les synchroniser avec QGIS. Exemple d'un inventaire d'arbres urbains
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_input_inventaire_arbres_urbains/result-qgis.png
 license: cc4_by-sa
 tags:
     - collecte

@@ -1,13 +1,13 @@
 ---
-title: "CSV - Import/export d'un style catégorisé QGIS"
+title: CSV - Import/export d'un style catégorisé QGIS
 authors:
     - Florian BORET
 categories:
     - article
 comments: true
-date: 2021-01-22 11:11
-description: "CSV - Import/export d'un style catégorisé QGIS"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif"
+date: 2021-01-22
+description: CSV - Import/export d'un style catégorisé QGIS
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/QGIS_style_CSV.gif
 tags:
     - CSV
     - Processing

@@ -1,16 +1,15 @@
 ---
-title: "Utiliser OGR avec python"
+title: Utiliser OGR avec python
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-10-18 10:20
-description: "Utiliser OGR avec python"
+date: 2009-10-18
+description: Utiliser OGR avec python
 tags:
     - Python
     - OGR
-
 ---
 
 # Utiliser OGR avec python

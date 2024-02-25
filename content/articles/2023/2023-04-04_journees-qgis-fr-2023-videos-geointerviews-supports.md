@@ -1,15 +1,15 @@
 ---
-title: "Vidéos, présentations et interviews des journées QGIS FR 2023"
-subtitle: "QNews 24"
+title: Vidéos, présentations et interviews des journées QGIS FR 2023
+subtitle: QNews 24
 authors:
     - Florian BORET
     - Julien MOURA
 categories:
     - article
 comments: true
-date: 2023-04-05 10:20
-description: "La Geotribu était bien présente aux journées QGIS FR 2023. En plus d'assurer l'animation de la journée de conférences, Florian et moi avons eu l'idée d'improviser des mini-interviews."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_videos/journees_qgis_2023_transition.png"
+date: 2023-04-05
+description: La Geotribu était bien présente aux journées QGIS FR 2023. En plus d'assurer l'animation de la journée de conférences, Florian et moi avons eu l'idée d'improviser des mini-interviews.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_videos/journees_qgis_2023_transition.png
 license: beerware
 robots: index, follow
 tags:

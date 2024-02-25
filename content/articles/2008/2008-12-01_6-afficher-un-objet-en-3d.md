@@ -5,16 +5,16 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-12-01 10:20
-description: ""
+date: 2008-12-01
+description: ''
 image: ''
 license: default
 robots: index, follow
 tags:
-- Google Earth
-- 3D
-- API
-- Sketchup
+    - Google Earth
+    - 3D
+    - API
+    - Sketchup
 ---
 
 # 6. Afficher un objet en 3D

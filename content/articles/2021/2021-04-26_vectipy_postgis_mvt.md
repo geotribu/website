@@ -1,14 +1,14 @@
 ---
-title: "Vectipy, un serveur minimaliste de tuiles vectorielles (MVT)"
+title: Vectipy, un serveur minimaliste de tuiles vectorielles (MVT)
 authors:
     - Jean-Baptiste DESBAS
 categories:
     - article
     - tutoriel
 comments: true
-date: "2021-04-26 15:00"
-description: "Présentation de vectipy, un serveur léger de tuiles vectorielles (MVT)"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_logo.png"
+date: 2021-04-26
+description: Présentation de vectipy, un serveur léger de tuiles vectorielles (MVT)
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_logo.png
 tags:
     - MVT
     - Python

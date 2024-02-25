@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: "2023-05-05 10:20"
+date: 2023-05-05
 description: Après 3 ans sur un sous-domaine, le site va revenir sur son domaine principal. Attachez vos ceintures de favoris !
 icon: fontawesome/solid/box-open
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/changement_url_geotribu/demenagement_globe_terrestre.png

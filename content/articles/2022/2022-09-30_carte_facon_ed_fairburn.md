@@ -1,13 +1,13 @@
 ---
-title: "Faire une carte façon Ed Fairburn avec QGIS"
+title: Faire une carte façon Ed Fairburn avec QGIS
 authors:
     - Michaël GALIEN
 categories:
     - article
 comments: true
-date: "2022-09-30 10:00"
-description: "Utiliser les modes de fusion pour produire avec QGIS une carte inspirée des dessins d'Ed Fairburn."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/carte_facon_ed_fairburn.png"
+date: 2022-09-30
+description: Utiliser les modes de fusion pour produire avec QGIS une carte inspirée des dessins d'Ed Fairburn.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/carte_facon_ed_fairburn.png
 tags:
     - QGIS
     - carte

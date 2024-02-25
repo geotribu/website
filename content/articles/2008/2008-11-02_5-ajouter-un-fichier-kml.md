@@ -1,12 +1,12 @@
 ---
-title: "5. Ajouter un fichier KML"
+title: 5. Ajouter un fichier KML
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-11-02 10:20
-description: "5. Ajouter un fichier KML"
+date: 2008-11-02
+description: 5. Ajouter un fichier KML
 image: ''
 license: default
 robots: index, follow

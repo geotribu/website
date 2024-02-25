@@ -1,13 +1,13 @@
 ---
-title: "1. Introduction à l'API Google Earth"
+title: 1. Introduction à l'API Google Earth
 authors:
     - Fabien Goblet
 categories:
     - article
     - tutoriel
 comments: true
-date: 2008-10-28 10:20
-description: "1. Introduction à l'API Google Earth"
+date: 2008-10-28
+description: 1. Introduction à l'API Google Earth
 image: ''
 license: default
 robots: index, follow

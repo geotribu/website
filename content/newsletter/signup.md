@@ -1,13 +1,13 @@
 ---
-title: "Newsletter"
+title: Newsletter
 authors:
     - Geotribu
 categories:
     - article
     - meta
-date: 2021-11-02 10:20
-description: "Abonnez-vous à la newsletter de Geotribu pour ne rien manquer des contenus publiés."
-image: "https://cdn.geotribu.fr/img/internal/workflow/newsletter_monthly_cut.png"
+date: 2021-11-02
+description: Abonnez-vous à la newsletter de Geotribu pour ne rien manquer des contenus publiés.
+image: https://cdn.geotribu.fr/img/internal/workflow/newsletter_monthly_cut.png
 tags:
     - coulisses
     - Mailchimp

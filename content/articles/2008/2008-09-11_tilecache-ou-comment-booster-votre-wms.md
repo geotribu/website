@@ -1,12 +1,12 @@
 ---
-title: "TileCache ou comment booster votre WMS"
+title: TileCache ou comment booster votre WMS
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-09-11 10:20
-description: "TileCache ou comment booster votre WMS"
+date: 2008-09-11
+description: TileCache ou comment booster votre WMS
 tags:
     - GeoServer
     - TileCache

@@ -1,12 +1,12 @@
 ---
-title: "Afficher des infobulles sur des objets [Part 2]"
+title: Afficher des infobulles sur des objets [Part 2]
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-08-31 10:20
-description: "Afficher des infobulles sur des objets [Part 2]"
+date: 2008-08-31
+description: Afficher des infobulles sur des objets [Part 2]
 tags:
     - OpenLayers
 ---

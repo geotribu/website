@@ -1,12 +1,12 @@
 ---
-title: "GeoDjango pas à pas"
+title: GeoDjango pas à pas
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-04-14 10:20
-description: "Ce tutoriel fait suite à une [première présentation de GeoDjango](http://geotribu.net/node/96). Il se veut plus concis et vous permettra d'appréhender ce framew..."
+date: 2009-04-14
+description: Ce tutoriel fait suite à une [première présentation de GeoDjango](http://geotribu.net/node/96). Il se veut plus concis et vous permettra d'appréhender ce framew...
 tags:
     - GeoDjango
     - tutoriel

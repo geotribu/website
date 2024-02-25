@@ -1,12 +1,12 @@
 ---
-title: "Dashboard QGIS : suivi des indicateurs adresse du Département du Calvados"
+title: 'Dashboard QGIS : suivi des indicateurs adresse du Département du Calvados'
 authors:
     - Théo GRONDIN
 categories:
     - article
 comments: true
-date: "2022-02-11 10:20"
-description: "Mise en place d'un tableau de bord QGIS par manipulation d'étiquettes de couches dans le cadre du suivi de projet adressage - Pôle SIG du Département du Calvados."
+date: 2022-02-11
+description: Mise en place d'un tableau de bord QGIS par manipulation d'étiquettes de couches dans le cadre du suivi de projet adressage - Pôle SIG du Département du Calvados.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro.png
 license: default
 robots: index, follow

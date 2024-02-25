@@ -1,12 +1,12 @@
 ---
-title: "Carto-vandalisme dans OpenStreetMap : mythe ou réalité ?"
+title: 'Carto-vandalisme dans OpenStreetMap : mythe ou réalité ?'
 authors:
     - Quy Thy TRUONG
 categories:
     - article
 comments: true
-date: "2023-05-24 10:20"
-description: "Détection du vandalisme cartographique dans OSM grâce à de l'apprentissage automatique"
+date: 2023-05-24
+description: Détection du vandalisme cartographique dans OSM grâce à de l'apprentissage automatique
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_en-tete.png
 license: default
 robots: index, follow

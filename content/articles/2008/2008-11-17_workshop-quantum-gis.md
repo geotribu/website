@@ -1,12 +1,12 @@
 ---
-title: "WorkShop Quantum GIS"
+title: WorkShop Quantum GIS
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2008-11-17 10:20
-description: "WorkShop Quantum GIS"
+date: 2008-11-17
+description: WorkShop Quantum GIS
 tags:
     - QGIS
 ---
