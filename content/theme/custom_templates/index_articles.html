@@ -46,7 +46,7 @@
             {% for tag in contenu.tags %}
             <a class="md-tag md-tag-icon" href="/tags/#tag:{{ tag | lower }}">{{ tag }}</a> {% endfor %}
           </nav>
-          <h5>{{ "Publié le {}".format(contenu.date_txt_full) |
+          <h5>{{ "Publié le {}".format(contenu.date_txt_long) |
             default('vendredi 9 août 1985') }} par {{ contenu.authors | default('Prénom NOM') | join(", ") }}</h5>
           <p>{{ contenu.description | default('Description') }}</p>
           <a href="/{{ contenu.url_rel | default('/') }}" class="md-button">Lire cet article...</a>
