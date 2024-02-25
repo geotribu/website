@@ -1,12 +1,12 @@
 ---
-title: "WorkShop OpenLayers"
+title: WorkShop OpenLayers
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2008-11-05 10:20
-description: "WorkShop OpenLayers"
+date: 2008-11-05
+description: WorkShop OpenLayers
 tags:
     - OpenLayers
 ---

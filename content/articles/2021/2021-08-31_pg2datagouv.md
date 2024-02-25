@@ -1,14 +1,14 @@
 ---
-title: "Automatiser la publication et la mise à jour de données de PostgreSQL vers Data.gouv.fr"
+title: Automatiser la publication et la mise à jour de données de PostgreSQL vers Data.gouv.fr
 authors:
     - Florian BORET
 categories:
     - article
     - tutoriel
 comments: true
-date: 2021-08-31 14:20
-description: "Automatiser la publication et la mise à jour de données entre PostgreSQL et Data.gouv.fr en utilisant OGR et l'API data.gouv."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/pg2datagouv_illustration.png"
+date: 2021-08-31
+description: Automatiser la publication et la mise à jour de données entre PostgreSQL et Data.gouv.fr en utilisant OGR et l'API data.gouv.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/pg2datagouv/pg2datagouv_illustration.png
 license: default
 tags:
     - API

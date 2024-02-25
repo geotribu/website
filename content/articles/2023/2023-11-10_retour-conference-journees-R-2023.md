@@ -1,12 +1,12 @@
 ---
-title: "Retour sur les Rencontres R d'Avignon"
+title: Retour sur les Rencontres R d'Avignon
 authors:
     - Delphine Montagne
 categories:
     - article
 comments: true
-date: "2023-11-10 14:30"
-description: "Formation, astuces, bonnes pratiques et trouvailles. Compte-rendu des rencontres R d'Avignon 2023"
+date: 2023-11-10
+description: Formation, astuces, bonnes pratiques et trouvailles. Compte-rendu des rencontres R d'Avignon 2023
 icon: fontawesome/solid/bridge-water
 image:
 license: default

@@ -1,20 +1,20 @@
 ---
-title: "Chasse aux œufs de Pâques sur les cartes du Géoportail et de Minecraft"
+title: Chasse aux œufs de Pâques sur les cartes du Géoportail et de Minecraft
 authors:
-  - Jean-Marc Viglino
+    - Jean-Marc Viglino
 categories:
-  - article
+    - article
 comments: true
-date: 2020-04-13 10:30
-description: "😷 Confiné chez soi ? Alors embarquez pour une chasse aux œufs de Pâques virtuels sur le Géoportail de l'IGN et Minecraft 🥚🎀🐓."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/oeufs_paques_cartes/easter_egg_geoportail_search_oeuf.png"
+date: 2020-04-13
+description: 😷 Confiné chez soi ? Alors embarquez pour une chasse aux œufs de Pâques virtuels sur le Géoportail de l'IGN et Minecraft 🥚🎀🐓.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/oeufs_paques_cartes/easter_egg_geoportail_search_oeuf.png
 license: default
 tags:
-  - Easter eggs
-  - Géoportail
-  - IGN
-  - Minecraft
-  - toponymie
+    - Easter eggs
+    - Géoportail
+    - IGN
+    - Minecraft
+    - toponymie
 ---
 
 # Chasse aux œufs sur les cartes du Géoportail et de Minecraft !

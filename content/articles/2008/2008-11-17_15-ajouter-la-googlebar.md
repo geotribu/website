@@ -1,12 +1,12 @@
 ---
-title: "15. Ajouter la GoogleBar"
+title: 15. Ajouter la GoogleBar
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-11-17 10:20
-description: "15. Ajouter la GoogleBar"
+date: 2008-11-17
+description: 15. Ajouter la GoogleBar
 image: ''
 tags:
     - Google Maps

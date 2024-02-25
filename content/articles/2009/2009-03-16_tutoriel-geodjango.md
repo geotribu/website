@@ -1,17 +1,17 @@
 ---
 authors:
-- Arnaud Vandecasteele
+    - Arnaud Vandecasteele
 categories:
-- article
+    - article
 comments: true
-date: 2009-03-16 10:20
+date: 2009-03-16
 description: GeoDjango est une brique supplémentaire du FrameWork Django lui permettant d'étendre les possibilités de ce dernier en autorisant la gestion de champs géométriq...
 image: ''
 license: default
 robots: index, follow
 tags:
-- GeoDjango
-- tutoriel
+    - GeoDjango
+    - tutoriel
 title: Tutoriel GeoDjango
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: "Réaliser un héritage en JavaScript"
+title: Réaliser un héritage en JavaScript
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-08-30 10:20
-description: "Réaliser un héritage en JavaScript"
+date: 2008-08-30
+description: Réaliser un héritage en JavaScript
 tags:
     - heritage
     - JavaScript

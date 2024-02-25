@@ -1,12 +1,12 @@
 ---
-title: "2. Ajoutons quelques contrôles"
+title: 2. Ajoutons quelques contrôles
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-11-02 10:20
-description: "2. Ajoutons quelques contrôles"
+date: 2008-11-02
+description: 2. Ajoutons quelques contrôles
 image: ''
 license: default
 robots: index, follow

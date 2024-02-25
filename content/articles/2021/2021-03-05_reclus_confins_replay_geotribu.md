@@ -1,13 +1,13 @@
 ---
-title: "Présentation de Geotribu sur les Reclus aux Confins"
+title: Présentation de Geotribu sur les Reclus aux Confins
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2021-03-05 14:00
-description: "Les Reclus aux Confins : Découvrir ou redécouvrir la présentation de GeoTribu - Contributions ouvertes à tous"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/presentation_reclus_confins/geotribu_slide_contributions_ouvertes.png"
+date: 2021-03-05
+description: 'Les Reclus aux Confins : Découvrir ou redécouvrir la présentation de GeoTribu - Contributions ouvertes à tous'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/presentation_reclus_confins/geotribu_slide_contributions_ouvertes.png
 tags:
     - communauté
     - Geotribu

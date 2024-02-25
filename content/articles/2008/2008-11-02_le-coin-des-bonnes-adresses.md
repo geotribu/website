@@ -1,12 +1,12 @@
 ---
-title: "Le coin des bonnes adresses"
+title: Le coin des bonnes adresses
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-11-02 10:20
-description: "Le coin des bonnes adresses"
+date: 2008-11-02
+description: Le coin des bonnes adresses
 image: ''
 license: default
 robots: index, follow

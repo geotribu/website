@@ -1,14 +1,14 @@
 ---
-title: "Créer un index des voies dans QGIS"
+title: Créer un index des voies dans QGIS
 authors:
     - Florian Boret
 categories:
     - article
     - tutoriel
 comments: true
-date: 2023-01-13 14:20
-description: "Créer un index des voies dans QGIS"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png"
+date: 2023-01-13
+description: Créer un index des voies dans QGIS
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png
 license: beerware
 tags:
     - QGIS

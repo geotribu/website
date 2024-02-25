@@ -1,12 +1,12 @@
 ---
-title: "17. Ajouter un marqueur déplaçable et jouer avec la gravité"
+title: 17. Ajouter un marqueur déplaçable et jouer avec la gravité
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2009-01-17 10:20
-description: "17. Ajouter un marqueur déplaçable et jouer avec la gravité"
+date: 2009-01-17
+description: 17. Ajouter un marqueur déplaçable et jouer avec la gravité
 tags:
     - Google Maps
     - marqueur
