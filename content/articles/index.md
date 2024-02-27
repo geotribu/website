@@ -2,6 +2,10 @@
 title: "Liste des derniers articles parus"
 template: custom_templates/index_articles.html
 # theme customizations
+hide:
+  - footer
+  - navigation
+  - toc
 search:
   exclude: true
 ---
