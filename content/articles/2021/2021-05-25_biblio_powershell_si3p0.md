@@ -7,20 +7,22 @@ categories:
 comments: true
 date: 2021-05-25
 description: Petit aperçu de la bibliothèque PowerShell SI3P0 développée par le département du Gard pour la gestion de son SIg routes et bâtiments.
+icon: material/powershell
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-logo.png
 tags:
     - adresse
     - BAN
-    - SIG
     - open source
     - PostGIS
     - PostgreSQL
     - PowerShell
+    - SIG
+    - SQL
 ---
 
 # Aperçu de la bibliothèque PowerShell SI3P0
 
-:calendar: Date de publication initiale : 25 mai 2021
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 Pré-requis :
 
