@@ -123,4 +123,8 @@ Nous espérons avoir démontré comment cocarto permet de très rapidement faire
 - aucune application à installer pour faire des remontées: un lien suffit ;
 - les données remontées sont correctement qualifiées et il n’y a pas besoin de les retravailler pour les utiliser dans un SIG.
 
+## Auteur
+
+--8<-- "content/team/tgram.md"
+
 {% include "licenses/default.md" %}
