@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-04-04
-description: Un brin d'astroturfing géopulmonaire, sur le Fédivers, pour avertir des épisodes de pollution et de qualité de l'air en Île-de-France
+description: Des cartes automatiques et géopulmonaires, sur le Fédivers, pour avertir des épisodes de pollution et de qualité de l'air en Île-de-France
 icon: material/air-conditioner
 license: beerware
 robots: index, follow
@@ -61,8 +61,6 @@ Une page de réclame donc, qui pourrait vous intéresser si jamais votre qarosse
 On est de retour sur Geotribu, et à ce stade de la dénomination de notre bot, la short list est composée de 4 propositions : `Patrick`, `Patricia`, `Patrice`, et `air_bot`, avec ceci dit une légère préférence pour la dernière.
 
 À ce moment-là, bon, il y sûrement quelque chose qui doit vous sauter aux yeux. AirParif ? Genre à Paris ?? Attends, y'a encore des gens qui habitent à Paris ? Sérieux ?!? Après tout ce qu'il s'est passé récemment : la grève des éboueurs, la réélection d'Annie, l'épidémie de CoDir19, l'élimination habituelle de l'EPSG en Ligue des Champions... Nan sérieux il y a toujours des gens qui habitent à Paris ? Nan mais réveillez-vous wesh ! Nan mais allô quoi.
-
-_Bon, si au village des irréductibles, il y a bien deux gaulois réfractaires qu'on souhaite pas voir s'évader, c'est Patrickbalkanix et Isabellebalkanix, les époux traficants influenceurs du village. Déjà, plus prosaïquement, il faut avouer qu'il y a moins d'open-data disponible autour de la villa à Marrakech ou à Saint-Martin. Et puis bon, à Fleury-MéroGIS, il y a quand même plein de trucs à faire. Et s'il faut bien reconnaître une qualité au service Finances de Levallois, c'est notamment au niveau de la playlist qui résonne en boucle : c'est les copains d'abord. C'est Fluctuat Nec Mergitur, c'était pas de la littérature, n'en déplaise aux jeteurs de sort._
 
 ## Gestion de l'environnement virtuel
 
