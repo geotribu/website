@@ -62,11 +62,11 @@ Une page de réclame donc, qui pourrait vous intéresser si jamais votre qarosse
 
 On est de retour sur Geotribu, et à ce stade de la dénomination de notre bot, la *short list* est composée de 4 propositions : `Patrick`, `Patricia`, `Patrice`, et `air_bot`, avec ceci dit une légère préférence pour la dernière.
 
-À ce moment-là, bon, il y sûrement quelque chose qui doit vous sauter aux yeux. AirParif ? Genre à *Paris* ?? Attends, y'a encore des gens qui habitent à Paris ? Sérieux ?!? Après tout ce qu'il s'est passé récemment : la grève des éboueurs, la réélection d'Annie, l'épidémie de CoDir19, l'élimination habituelle de l'EPSG en Ligue des Champions... Nan sérieux il y a toujours des gens qui habitent à Paris ? Nan mais réveillez-vous wesh ! Nan mais allô quoi ! Et puis les parigots qui s'envoient un paquet par jour dans les poumons et qui viennent râler dans l'air pur à la campagne, nan mais c'est bon quoi.
+À ce moment-là, bon, il y a sûrement quelque chose qui doit vous sauter aux yeux. AirParif ? Genre à *Paris* ?? Attends, y'a encore des gens qui habitent à Paris ? Sérieux ?!? Après tout ce qu'il s'est passé récemment : la grève des éboueurs, la réélection d'Annie, l'épidémie de CoDir19, l'élimination habituelle de l'EPSG en Ligue des Champions... Nan sérieux il y a toujours des gens qui habitent à Paris ? Nan mais réveillez-vous wesh ! Nan mais allô quoi ! Et puis les parigots qui s'envoient un paquet par jour dans les poumons et qui viennent râler dans l'air pur à la campagne, nan mais c'est bon quoi.
 
 Bon, si au village des irréductibles, il y a bien deux gaulois réfractaires qu'on souhaite pas voir s'évader, c'est Patrickbalkanix et Isabellebalkanix, les époux traficants influenceurs du village. Déjà, plus prosaïquement, il faut avouer qu'il y a moins d'open-data disponible autour de la villa à Marrakech ou à Saint-Martin. Et puis bon, à Fleury-MéroGIS, il y a quand même plein de trucs à faire. Et s'il faut bien reconnaître une qualité au service Finances de Levallois, c'est notamment au niveau de la playlist qui résonne en boucle : c'est les copains d'abord. *C'est Fluctuat Nec Mergitur, c'était pas de la littérature.* N'en déplaise aux jeteurs de sort, aux jeteurs de sort.
 
-D'autant plus qu'il n'y a pas que Paname dans la vie (il y a aussi la petite couronne). Et le nom `air_bot` est assez générique, car le [nouvel indice ATMO](https://www.atmo-france.org/) a vocation à normaliser les données de qualité de l'air en Europe, et est implémenté notamment [dans le Grand Est](https://www.atmo-grandest.eu/) yop yop, [en Bretagne](https://www.airbreizh.asso.fr/) ou [dans le Sud](https://www.atmosud.org/air-commune/Ville/13055/previsions) peuchère. Le reste, désolé, on s'en fiche un peu... Ah si ! Il y a peut-être [la région là dans les montagnes là](https://www.atmo-auvergnerhonealpes.fr/), c'est toujours sympa pour les parigots de respirer du bon air au ski... Mais les vrai.e.s sachent que [les Pyrénées](https://www.atmo-occitanie.org/occitanie#forecast_map) c'est aussi stylé ! Et pas qu'en hiver ou au [Tour de France](https://data.opendatasoft.com/explore/dataset/parcours-tour-de-france-a-montpellier-mediterranee-metropole%40occitanie/map/?flg=fr-fr&location=11,43.6354,3.87337&basemap=jawg.streets) !
+D'autant plus qu'il n'y a pas que Paname dans la vie (il y a aussi la petite couronne). Et le nom `air_bot` est assez générique, car le [nouvel indice ATMO](https://www.atmo-france.org/) a vocation à normaliser les données de qualité de l'air en Europe, et est implémenté notamment [dans le Grand Est](https://www.atmo-grandest.eu/) yop yop, [en Bretagne](https://www.airbreizh.asso.fr/) ou [dans le Sud](https://www.atmosud.org/air-commune/Ville/13055/previsions) peuchère. [Le reste](#viendez), désolé, on s'en fiche un peu... Ah si ! Il y a peut-être [la région là dans les montagnes là](https://www.atmo-auvergnerhonealpes.fr/), c'est toujours sympa pour les parigots de respirer du bon air au ski... Mais les vrai.e.s sachent que [les Pyrénées](https://www.atmo-occitanie.org/occitanie#forecast_map) c'est aussi stylé ! Et pas qu'en hiver ou au [Tour de France](https://data.opendatasoft.com/explore/dataset/parcours-tour-de-france-a-montpellier-mediterranee-metropole%40occitanie/map/?flg=fr-fr&location=11,43.6354,3.87337&basemap=jawg.streets) !
 
 ## Gestion de l'environnement virtuel
 
@@ -105,7 +105,7 @@ Il y a [un swagger](https://api.airparif.asso.fr/docs) qui liste les interaction
 
 L'authentification pour un appel à l'API REST se fait grâce à une clé d'API, dont il faut faire [la demande à AirParif](https://www.airparif.fr/interface-de-programmation-applicative), ou bien via mél à <api@airparif.com>. Et [les prérogatives de la demande de duplicata](https://www.youtube.com/watch?v=2NiPaR0wjQY&pp=ygUgRnJhbsOnb2lzIGwnZW1icm91aWxsZSBkdXBsaWNhdGE%3D) sont plutôt rapides et la demande vite traitée, ce qui a été mon cas.
 
-Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qu'on peut effectuer comme ceci en python. Qui fournit un texte écrit par le prévionniste d'AirParif, tout comme les valeurs des 4 polluants en µg/m³ : NO2, O3, PM10 et PM25.
+Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévionniste d'AirParif, tout comme les valeurs des 4 polluants en µg/m³ : NO2, O3, PM10 et PM25. On peut effectuer cet appel comme ceci en python :
 
 ```python
 import requests
@@ -168,7 +168,7 @@ with open(f"airparif_idf_{datetime.now().strftime('%Y%m%d%H%M%S')}.png", "wb") a
     shutil.copyfileobj(r.raw, f)
 ```
 
-Une fois le code ci-dessus effectué, on se retrouve avec l'image de la carte de la qualité de l'air du moment enregistrée sur le disque dur :
+Une fois le code ci-dessus exécuté, on se retrouve avec l'image de la carte de la qualité de l'air du moment enregistrée sur le disque dur :
 
 ![Carte de la qualité de l'air du moment](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/airparif_idf_20240304120032.webp)
 
@@ -294,7 +294,7 @@ Les posts automatiques du bot sont configurés de la manière suivante, tous les
 
 <iframe src="https://mapstodon.space/@air_bot/112038076253185494/embed" class="mastodon-embed" loading="lazy" style="max-width: 100%; border: 0; display: block" width="600" allowfullscreen="allowfullscreen"></iframe>
 
-Nous venons de voir comment publier sur Mastodon les données d'AirParif. Or ce ne sont pas les seules données de qualité de l'air disponibles et ouvertes ! Les autres régions proposent également leurs services ATMO :
+Nous venons de voir comment publier sur Mastodon les données d'AirParif. Or ce ne sont pas les seules données de qualité de l'air disponibles et ouvertes ! Les autres régions proposent également leurs services de données ouvertes ATMO :
 
 - [Auvergne-Rhône-Alpes](https://www.atmo-auvergnerhonealpes.fr/)
 - [Bourgogne-Franche-Comté](https://www.atmo-bfc.org/accueil)
@@ -325,7 +325,7 @@ Et aussi !
 
 - la [carte](https://aqicn.org/map/belgium/fr/) de pollution de l'air en [Belgique une fois](https://www.wallonair.be/fr/mesures/mesures-en-direct.html)
 
-Alors n'hésitez pas à contribuer à ce bot, où à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier via ce bot [air_bot@mapstodon.space](https://mapstodon.space/home) !
+Alors n'hésitez pas à contribuer à ce bot, où à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier les données via ce bot [air_bot@mapstodon.space](https://mapstodon.space/@air_bot) !
 
 ## Auteur
 
