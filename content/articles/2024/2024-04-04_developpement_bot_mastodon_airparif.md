@@ -207,7 +207,7 @@ La première chose à faire est de cocher la case `This is an automated account`
 
 Ensuite, il nous faudra créer une "Application" dans la partie `Development`, qu'on appelle ~~"Patrick"~~ "air_bot", en vérifiant que le scope `write` soit coché (pas besoin pour le moment des autres scopes). Tout ceci va nous permettre de récupérer un `access_token` permettant de nous connecter en python à l'API :
 
-![Ecran application Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_application.webp)
+![Ecran application Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_application_airbot.webp)
 
 !!! warning
     Il est conseillé de noter quelque part ce token, sur un post-it idéalement.
