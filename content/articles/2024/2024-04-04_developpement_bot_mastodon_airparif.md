@@ -319,7 +319,7 @@ Et enfin ...
 
 Et aussi !
 
-- la [carte](https://aqicn.org/map/belgium/fr/) de pollution de l'air en [Belqique une fois](https://www.wallonair.be/fr/mesures/mesures-en-direct.html)
+- la [carte](https://aqicn.org/map/belgium/fr/) de pollution de l'air en [Belgique une fois](https://www.wallonair.be/fr/mesures/mesures-en-direct.html)
 
 Alors n'hésitez pas à contribuer à ce bot, où à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier via ce bot [air_bot@mapstodon.space](https://mapstodon.space/home) !
 
