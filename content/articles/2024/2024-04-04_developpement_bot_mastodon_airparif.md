@@ -38,17 +38,17 @@ Dans cet article, vous l'aurez compris, on va donc :
 
 Mais pas seulement ! On va aussi, accessoirement, entre les lignes :
 
-🦶 Découvrir et utiliser l'API d'AirParif pour récupérer les données de qualité de l'air et d'épisodes de pollution
+🦶 Découvrir (un peu) et utiliser l'API d'AirParif pour récupérer les données de qualité de l'air et d'épisodes de pollution
 
 🦶 Développer un programme en python qui récupère et traite ces données
 
-🦶 Découvrir et utiliser l'API de Mastodon pour publier des posts totomatiques
+🦶 Découvrir (un peu) et utiliser l'API de Mastodon pour publier des toots automatiques
 
 ---
 
 La première chose à faire, c'est de trouver un nom à notre bot. Eh oui, le nommage c'est important pour ne pas s'emmêler les pinceaux.
 
-Mais tout ça, après une page de pub ! Eh oui, rien n'est gratuit... enfin si !
+Mais tout ça, après une page de pub !
 
 ----
 
@@ -105,7 +105,7 @@ Il y a [un swagger](https://api.airparif.asso.fr/docs) qui liste les interaction
 
 L'authentification pour un appel à l'API REST se fait grâce à une clé d'API, dont il faut faire [la demande à AirParif](https://www.airparif.fr/interface-de-programmation-applicative), ou bien via mél à <api@airparif.com>. Et [les prérogatives de la demande de duplicata](https://www.youtube.com/watch?v=2NiPaR0wjQY&pp=ygUgRnJhbsOnb2lzIGwnZW1icm91aWxsZSBkdXBsaWNhdGE%3D) sont plutôt rapides et la demande vite traitée, ce qui a été mon cas.
 
-Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qu'on peut effectuer comme ceci en python :
+Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qu'on peut effectuer comme ceci en python. Qui fournit un texte écrit par le prévionniste d'AirParif, tout comme les valeurs des 4 polluants en µg/m³ : NO2, O3, PM10 et PM25.
 
 ```python
 import requests
@@ -212,6 +212,10 @@ Ensuite, il nous faudra créer une "Application" dans la partie `Development`, q
 !!! warning
     Il est conseillé de noter quelque part ce token, sur un post-it idéalement.
 
+On programme aussi une suppression automatisée des posts, dans l'onglet "Automated post deletion", pour ne pas surcharger l'instance. On peut par exemple supprimer les toots postés il y a plus d'1 mois :
+
+![Écran suppression automatique des posts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_auto_delete.webp)
+
 ### API Mastodon
 
 Mastodon permet d'automatiser des posts, et ce dans plusieurs langages de programmation. Nous allons donc utiliser l'API en python, dont la doc est disponible :point_right: [ici](https://mastodonpy.readthedocs.io/en/stable/) :point_left:
@@ -255,7 +259,7 @@ mastodon.status_post(
 ```
 
 !!! info
-    Ici on publie les posts avec la visibilité "unlisted", ce qui signifie que les toots seront visibles pour les followers, sur le profile du bot mais pas dans les flux "Explore" et "Live feeds". On évite de trop spammer les gens quoi.
+    Ici on publie les posts en langue française et avec la visibilité "unlisted", ce qui signifie que les toots seront visibles pour les followers et sur le page de profil du bot, mais pas dans les "Live feeds" du serveur [mapstodon.space](https://mapstodon.space/public/local) ou [fédéré](https://mapstodon.space/public/remote). On évite de trop spammer les gens quoi.
 
 ## Et maintenant ?
 
@@ -288,7 +292,9 @@ Les posts automatiques du bot sont configurés de la manière suivante, tous les
 
 ### Viendez !
 
-Nous venons de voir comment publier sur Mastodon les données d'AirParif. Or ce ne sont pas les seules disponibles ! Les autres régions proposent également leurs services ATMO :
+<iframe src="https://mapstodon.space/@air_bot/112038076253185494/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://mapstodon.space/embed.js" async="async"></script>
+
+Nous venons de voir comment publier sur Mastodon les données d'AirParif. Or ce ne sont pas les seules données de qualité de l'air disponibles et ouvertes ! Les autres régions proposent également leurs services ATMO :
 
 - [Auvergne-Rhône-Alpes](https://www.atmo-auvergnerhonealpes.fr/)
 - [Bourgogne-Franche-Comté](https://www.atmo-bfc.org/accueil)
