@@ -44,7 +44,7 @@ Mais pas seulement ! On va aussi, accessoirement, entre les lignes :
 
 🦶 Découvrir (un peu) et utiliser l'API de Mastodon pour publier des toots automatiques
 
----
+----
 
 La première chose à faire, c'est de trouver un nom à notre bot. Eh oui, le nommage c'est important pour ne pas s'emmêler les pinceaux.
 
@@ -292,7 +292,7 @@ Les posts automatiques du bot sont configurés de la manière suivante, tous les
 
 ### Viendez !
 
-<iframe src="https://mapstodon.space/@air_bot/112038076253185494/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://mapstodon.space/embed.js" async="async"></script>
+<iframe src="https://mapstodon.space/@air_bot/112038076253185494/embed" class="mastodon-embed" loading="lazy" style="max-width: 100%; border: 0; display: block" width="600" allowfullscreen="allowfullscreen"></iframe>
 
 Nous venons de voir comment publier sur Mastodon les données d'AirParif. Or ce ne sont pas les seules données de qualité de l'air disponibles et ouvertes ! Les autres régions proposent également leurs services ATMO :
 
