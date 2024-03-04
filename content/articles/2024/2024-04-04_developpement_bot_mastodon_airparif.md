@@ -292,13 +292,36 @@ Les posts automatiques du bot sont configurés de la manière suivante, tous les
 
 Nous venons de voir comment publier sur Mastodon les données d'AirParif. Or ce ne sont pas les seules disponibles ! Les autres régions proposent également leurs services ATMO :
 
-- [Auvergne Rhône-Alpes](https://www.atmo-auvergnerhonealpes.fr/)
+- [Auvergne-Rhône-Alpes](https://www.atmo-auvergnerhonealpes.fr/)
+- [Bourgogne-Franche-Comté](https://www.atmo-bfc.org/accueil)
 - [Bretagne](https://www.airbreizh.asso.fr/)
+- [Centre-Val de Loire](https://www.ligair.fr/)
+- [Grand-Est](https://www.atmo-grandest.eu/)
+- [Nouvelle-Aquitaine](https://www.atmo-nouvelleaquitaine.org/)
 - [Normandie](https://www.atmonormandie.fr/)
 - [Occitanie](https://www.atmo-occitanie.org/occitanie#forecast_map)
+- [Pays de la Loire](https://www.airpl.org/)
 - [Provence Alpes Côte d'Azur](https://www.atmosud.org/air-commune/Ville/13055/previsions)
 
-N'hésite pas à contribuer à ce bot, où en créer d'autres pour diffuser les données de ta région ! Je suis disponible pour fournir des `access_token` pour ce bot [air_bot@mapstodon.space](https://mapstodon.space/home) !
+Et ...
+
+- [Corse](https://www.qualitaircorse.org/)
+
+Et ...
+
+- [Guyane](https://www.atmo-guyane.org/)
+- [Antilles](https://www.gwadair.fr/)
+- [La Réunion](https://atmo-reunion.net/)
+
+Et enfin ...
+
+- [ATMO France](https://www.atmo-france.org/)
+
+Et aussi !
+
+- la [carte](https://aqicn.org/map/belgium/fr/) de pollution de l'air en [Belqique une fois](https://www.wallonair.be/fr/mesures/mesures-en-direct.html)
+
+Alors n'hésitez pas à contribuer à ce bot, où à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier via ce bot [air_bot@mapstodon.space](https://mapstodon.space/home) !
 
 ## Auteur
 
