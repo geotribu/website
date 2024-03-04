@@ -286,9 +286,7 @@ Les posts automatiques du bot sont configurés de la manière suivante, tous les
 - le bulletin du lendemain à 18h
 - les épisodes potentiels de pollution du lendemain à 19h
 
-- embarquer un toot du compte mastodon du bot en prod
-
-### Oyez oyez
+### Viendez !
 
 Nous venons de voir comment publier sur Mastodon les données d'AirParif. Or ce ne sont pas les seules disponibles ! Les autres régions proposent également leurs services ATMO :
 
