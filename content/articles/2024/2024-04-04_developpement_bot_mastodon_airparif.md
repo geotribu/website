@@ -247,14 +247,14 @@ mastodon = Mastodon(
     access_token=MASTODON_ACCESS_TOKEN
 )
 
-# création et postage d'un toot automatique
+# création et postage d'un toot automatique avec une image
 mastodon.status_post(
     "Bonjour 👋, le vrai sens de la vie réside dans le fromage 🧀💟",
     media_ids=[
         mastodon.media_post(
             "/chemin/vers/image/de/fromage.png",
             mime_type="image/png",
-            description=f"Image du paradis",
+            description="Image du paradis",
         )
     ],
     visibility="unlisted",
@@ -263,7 +263,7 @@ mastodon.status_post(
 ```
 
 !!! info
-    Ici on publie les posts en langue française et avec la visibilité "unlisted", ce qui signifie que les toots seront visibles pour les followers et sur le page de profil du bot, mais pas dans les "Live feeds" du serveur [mapstodon.space](https://mapstodon.space/public/local) ou [fédéré](https://mapstodon.space/public/remote). On évite de trop spammer les gens quoi.
+    Ici on publie les posts en langue française et avec la visibilité "unlisted", ce qui signifie que les toots seront visibles pour les followers et sur la page de profil du bot, mais pas dans les "Live feeds" du serveur [mapstodon.space](https://mapstodon.space/public/local) ou [fédéré](https://mapstodon.space/public/remote). On évite de trop spammer les gens quoi.
 
 ## Et maintenant ?
 
