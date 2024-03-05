@@ -22,7 +22,11 @@ tags:
 
 :calendar: Date de publication initiale : 4 avril 2024
 
+![logo AirParif](https://cdn.geotribu.fr/img/logos-icones/airparif.png){: .img-thumbnail-left }
+
 Connaissez-vous [AirParif](https://www.airparif.fr/) ? Il s'agit de l'observatoire de la qualité de l'air en Île-de-France, qui publie données, prévention et alertes sur les épisodes de pollution. Les données de l'association sont ouvertes, et il y a une API tout comme des flux OGC pour les récupérer.
+
+![logo Mastodon](https://cdn.geotribu.fr/img/logos-icones/social/mastodon.png){: .img-thumbnail-left }
 
 Connaissez-vous [Mastodon](https://fr.wikipedia.org/wiki/Mastodon_(r%C3%A9seau_social)) ? [Présenté par Julien récemment](./2024-02-16_de-twitter-a-mastodon-guide-geo-import-liste-comptes.md), il s'agit d'un réseau social décentralisé et ouvert (le Fédivers), pour les non-geeks tout comme les geeks, qui propose notamment une API permettant d'automatiser des posts.
 
