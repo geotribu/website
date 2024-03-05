@@ -122,7 +122,7 @@ r: Response = requests.get(
 
 # vérification du code de retour de l'appel
 if r.status_code != 200:
-    print("Mayday !")
+    raise Exception("Mayday !")
 
 # récupération des données JSON dans un dictionnaire
 data = r.json()
@@ -160,7 +160,7 @@ r: Response = requests.get(
 
 # vérification du code de retour de l'appel (toujours !)
 if r.status_code != 200:
-    print("Mayday !")
+    raise Exception("Mayday !")
 
 # enregistrement de l'image récupérée vers un fichier png, qui porte le nom de la date et l'heure
 with open(f"airparif_idf_{datetime.now().strftime('%Y%m%d%H%M%S')}.png", "wb") as f:
