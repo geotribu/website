@@ -71,9 +71,7 @@ Les données d'OpenStreetMap peuvent ensuite être exportées via le bouton __Ex
 
 [L'API de Panoramax](https://panoramax.ign.fr/api/docs/swagger#/Pictures/get_api_search) propose une _route_ pour trouver les photos pointant sur une localisation précise. Vous pouvez l'appeler avec une requête _HTTP GET_:
 
-```
-https://panoramax.ign.fr/api/search?place_distance=2-10&place_position=4.8444928,45.7719378
-```
+`https://panoramax.ign.fr/api/search?place_distance=2-10&place_position=4.8444928,45.7719378`
 
 Vous obtiendrez ainsi la liste des images montrant la position en question (longitude, latitude), au format GeoJSON. La première image listée est la plus proche.
 
