@@ -249,7 +249,7 @@ mastodon = Mastodon(
 
 # création et postage d'un toot automatique avec une image
 mastodon.status_post(
-    "Bonjour 👋, le vrai sens de la vie réside dans le fromage 🧀💟",
+    status="Bonjour 👋, le vrai sens de la vie réside dans le fromage 🧀💟",
     media_ids=[
         mastodon.media_post(
             "/chemin/vers/image/de/fromage.png",
