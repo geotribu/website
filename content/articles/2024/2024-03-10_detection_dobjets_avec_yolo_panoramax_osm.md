@@ -13,10 +13,10 @@ license: cc4_by-sa
 robots: index, follow
 tags:
     - Panoramax
-	- OpenStreetMap
-	- Python
-	- vues immersives
-	- IA
+    - OpenStreetMap
+    - Python
+    - vues immersives
+    - IA
 ---
 
 # 🖼️🤖 Tutoriel : détection automatique d'objets avec YOLO et Panoramax !
