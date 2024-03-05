@@ -26,7 +26,7 @@ Connaissez-vous [AirParif](https://www.airparif.fr/) ? Il s'agit de l'observatoi
 
 Connaissez-vous [Mastodon](https://fr.wikipedia.org/wiki/Mastodon_(r%C3%A9seau_social)) ? [Présenté par Julien récemment](./2024-02-16_de-twitter-a-mastodon-guide-geo-import-liste-comptes.md), il s'agit d'un réseau social décentralisé et ouvert (le Fédivers), pour les non-geeks tout comme les geeks, qui propose notamment une API permettant d'automatiser des posts.
 
-Et si on conciliait les deux ? Et si on développait un bot mastodon, qui publierait sur le réseau social les données et épisodes de pollution de l'air fournis par l'API d'AirParif ? Est-ce que ça servirait à quelque chose ? Pas sûr, ça reste à voir, personnellement j'en suis pas forcément convaincu. En plus il y a [l'application mobile](https://www.airparif.fr/actualite/2023/nouvelle-application-mobile-airparif) avec les notofications qui vont bien. Bon en tout cas c'est plus ou moins l'objet de cet article. Après tout, un brin d'astroturfing ne fait jamais de mal, alors pourquoi pas nous ? *Why not oui* ?
+Et si on conciliait les deux ? Et si on développait un bot mastodon, qui publierait sur le réseau social les données et épisodes de pollution de l'air fournis par l'API d'AirParif ? Est-ce que ça servirait à quelque chose ? Pas sûr, ça reste à voir, personnellement j'en suis pas forcément convaincu. En plus il y a [l'application mobile](https://www.airparif.fr/actualite/2023/nouvelle-application-mobile-airparif) avec les notifications qui vont bien. Bon en tout cas c'est plus ou moins l'objet de cet article. Après tout, un brin d'astroturfing ne fait jamais de mal, alors pourquoi pas nous ? *Why not oui* ?
 
 Dans cet article, vous l'aurez compris, on va donc :
 
@@ -62,26 +62,26 @@ Une page de réclame donc, qui pourrait vous intéresser si jamais votre qarosse
 
 On est de retour sur Geotribu, et à ce stade de la dénomination de notre bot, la *short list* est composée de 4 propositions : `Patrick`, `Patricia`, `Patrice`, et `air_bot`, avec ceci dit une légère préférence pour la dernière.
 
-À ce moment-là, bon, il y a sûrement quelque chose qui doit vous sauter aux yeux. AirParif ? Genre à *Paris* ?? Attends, y'a encore des gens qui habitent à Paris ? Sérieux ?!? Après tout ce qu'il s'est passé récemment : la grève des éboueurs, la réélection d'Annie, l'épidémie de CoDir19, l'élimination habituelle de l'EPSG en Ligue des Champions... Nan sérieux il y a toujours des gens qui habitent à Paris ? Nan mais réveillez-vous wesh ! Nan mais allô quoi ! Et puis les parigots qui s'envoient un paquet par jour dans les poumons et qui viennent râler dans l'air pur à la campagne, nan mais c'est bon quoi.
+À ce moment-là, bon, il y a sûrement quelque chose qui doit vous sauter aux yeux. AirParif ? Genre à *Paris* ?? Attends, y'a encore des gens qui habitent à Paris ? Sérieux ?!? Après tout ce qu'il s'est passé récemment : la grève des éboueurs, la réélection d'Annie, l'épidémie de CoViD19, l'élimination habituelle de l'EPSG en Ligue des Champions... Nan sérieux il y a toujours des gens qui habitent à Paris ? Nan mais réveillez-vous wesh ! Nan mais allô quoi ! Et puis les parigots qui s'envoient un paquet par jour dans les poumons et qui viennent râler dans l'air pur à la campagne, nan mais c'est bon quoi.
 
-Bon, si au village des irréductibles, il y a bien deux gaulois réfractaires qu'on souhaite pas voir s'évader, c'est Patrickbalkanix et Isabellebalkanix, les époux traficants influenceurs du village. Déjà, plus prosaïquement, il faut avouer qu'il y a moins d'open-data disponible autour de la villa à Marrakech ou à Saint-Martin. Et puis bon, à Fleury-MéroGIS, il y a quand même plein de trucs à faire. Et s'il faut bien reconnaître une qualité au service Finances de Levallois, c'est notamment au niveau de la playlist qui résonne en boucle : c'est les copains d'abord. *C'est Fluctuat Nec Mergitur, c'était pas de la littérature.* N'en déplaise aux jeteurs de sort, aux jeteurs de sort.
+Bon, si au village des irréductibles, il y a bien deux gaulois réfractaires qu'on souhaite pas voir s'évader, c'est Patrickbalkanix et Isabellebalkanix, les époux traficants influenceurs du village. Déjà, plus prosaïquement, il faut avouer qu'il y a moins d'open-data disponible autour de la villa à Marrakech ou à Saint-Martin. Et puis bon, à Fleury-MéroGIS, il y a quand même plein de trucs à faire. Et s'il faut bien reconnaître une qualité au service Finances de Levallois, c'est notamment au niveau de la playlist qui résonne en boucle : c'est *les copains d'abord*. C'est Fluctuat Nec Mergitur, c'était pas de la littérature, n'en déplaise aux jeteurs de sort, aux jeteurs de sort.
 
-D'autant plus qu'il n'y a pas que Paname dans la vie (il y a aussi la petite couronne). Et le nom `air_bot` est assez générique, car le [nouvel indice ATMO](https://www.atmo-france.org/) a vocation à normaliser les données de qualité de l'air en Europe, et est implémenté notamment [dans le Grand Est](https://www.atmo-grandest.eu/) yop yop, [en Bretagne](https://www.airbreizh.asso.fr/) ou [dans le Sud](https://www.atmosud.org/air-commune/Ville/13055/previsions) peuchère. [Le reste](#viendez), désolé, on s'en fiche un peu... Ah si ! Il y a peut-être [la région là dans les montagnes là](https://www.atmo-auvergnerhonealpes.fr/), c'est toujours sympa pour les parigots de respirer du bon air au ski... Mais les vrai.e.s sachent que [les Pyrénées](https://www.atmo-occitanie.org/occitanie#forecast_map) c'est aussi stylé ! Et pas qu'en hiver ou au [Tour de France](https://data.opendatasoft.com/explore/dataset/parcours-tour-de-france-a-montpellier-mediterranee-metropole%40occitanie/map/?flg=fr-fr&location=11,43.6354,3.87337&basemap=jawg.streets) !
+D'autant plus qu'il n'y a pas que Paname dans la vie (il y a aussi la petite couronne). Et le nom `air_bot` est assez générique, car le [nouvel indice ATMO](https://www.atmo-france.org/) a vocation à normaliser les données de qualité de l'air en Europe, et est implémenté notamment [au Bassin](https://www.atmo-nouvelleaquitaine.org/) et [sur la Côte d'Azur](https://www.atmosud.org/air-commune/Ville/13055/previsions) peuchère. [Le reste](#viendez), désolé, on s'en fiche un peu... Ah si ! Il y a peut-être [la région là dans les montagnes là](https://www.atmo-auvergnerhonealpes.fr/), c'est toujours sympa pour les parigots de respirer du bon air au ski... Mais les vrai.e.s sachent que [les Pyrénées](https://www.atmo-occitanie.org/occitanie#forecast_map) c'est aussi stylé ! Et pas qu'en hiver ou au [Tour de France](https://data.opendatasoft.com/explore/dataset/parcours-tour-de-france-a-montpellier-mediterranee-metropole%40occitanie/map/?flg=fr-fr&location=11,43.6354,3.87337&basemap=jawg.streets) !
 
 ## Gestion de l'environnement virtuel
 
-Qui dit programme en python ("programme en python !") dit "gestion de l'environnement virtuel". Ici on va partir sur [poetry](https://python-poetry.org/), parce que quand même, un truc de geek qui s'appelle "poésie" ça claque ! *Where are thou, my dear `virtual_environment` ?* Et quand on vient du Java comme moi, c'est toujours sympa d'avoir un endroit où tout est déclaré, ça rappelle des bons souvenirs, n'est-ce pas Rémi F.
+Qui dit programme en python ("programme en python !") dit "gestion de l'environnement virtuel". Ici on va partir sur [poetry](https://python-poetry.org/), parce que quand même, un truc de geek qui s'appelle "poésie" ça claque ! *Where are thou, my dear `virtual_environment` ?* Et quand on vient du Java comme moi, c'est toujours sympa d'avoir un endroit où tout est déclaré, ça rappelle toujours des bons souvenirs, n'est-ce pas Rémi F.
 
 On peut utiliser `poetry` comme ceci :
 
 ```sh
-# initialiser un nouveau projet :
+# initialiser un nouveau projet
 poetry init
 
-# ajouter un paquet dans nos dépendances, en l'occurence le paquet mastodon python :
+# ajouter un paquet dans nos dépendances, en l'occurence le paquet mastodon python
 poetry add mastodon-py
 
-# lancer une commande dans notre environnement virtuel, exemple :
+# lancer une commande dans notre environnement virtuel, exemple
 poetry run python script_claqué_au_sol --help
 ```
 
@@ -268,12 +268,10 @@ Le code du bot implémenté avec AirParif est [disponible sur GitHub](https://gi
 Pour lancer un post toot automatique, on utilise la commande suivante (qu'il est possible de renseigner dans une tâche [cron](https://crontab.guru/#20_*/16_*_*_*)) :
 
 ```sh
-source .env
-
 # action pour publier le bulletin de la journée avec une carte
 poetry run airparif today
 
-# action pour publier le bulletin du lendemain avec une carte
+# action pour publier le bulletin du lendemain
 poetry run airparif tomorrow
 
 # action pour publier la carte du moment
@@ -285,7 +283,7 @@ poetry run airparif episode
 
 Les posts automatiques du bot sont configurés de la manière suivante, tous les jours :
 
-- le bulletin de la journée à 8h
+- le bulletin de la journée à 8h, avec une carte
 - la carte de la qualité de l'air du moment à 12h
 - le bulletin du lendemain à 18h
 - les épisodes potentiels de pollution du lendemain à 19h
@@ -301,6 +299,7 @@ Nous venons de voir comment publier sur Mastodon les données d'AirParif. Or ce 
 - [Bretagne](https://www.airbreizh.asso.fr/)
 - [Centre-Val de Loire](https://www.ligair.fr/)
 - [Grand-Est](https://www.atmo-grandest.eu/)
+- [Hauts-de-France](https://www.atmo-hdf.fr/)
 - [Nouvelle-Aquitaine](https://www.atmo-nouvelleaquitaine.org/)
 - [Normandie](https://www.atmonormandie.fr/)
 - [Occitanie](https://www.atmo-occitanie.org/occitanie#forecast_map)
@@ -316,6 +315,7 @@ Et ...
 - [Guyane](https://www.atmo-guyane.org/)
 - [Antilles](https://www.gwadair.fr/)
 - [La Réunion](https://atmo-reunion.net/)
+- [Mayotte](https://www.hawa-mayotte.fr/)
 
 Et enfin ...
 
@@ -325,7 +325,7 @@ Et aussi !
 
 - la [carte](https://aqicn.org/map/belgium/fr/) de pollution de l'air en [Belgique une fois](https://www.wallonair.be/fr/mesures/mesures-en-direct.html)
 
-Alors n'hésitez pas à contribuer à ce bot, où à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier les données via ce bot [air_bot@mapstodon.space](https://mapstodon.space/@air_bot) !
+:loudspeaker: N'hésitez pas à contribuer à ce bot, où à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier les données via ce bot [air_bot@mapstodon.space](https://mapstodon.space/@air_bot) !
 
 ## Auteur
 
