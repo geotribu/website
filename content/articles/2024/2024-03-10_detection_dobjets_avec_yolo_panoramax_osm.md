@@ -7,7 +7,7 @@ categories:
 comments: true
 date: 2024-03-10
 description: Apprenez à utiliser YOLO pour détecter vos propres objets dans des photos Panoramax pour mieux répondre à vos besoins SIG !
-icon: robot
+icon: material/robot
 image: https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/labelstudio_annotation.jpg
 license: cc4_by-sa
 robots: index, follow
