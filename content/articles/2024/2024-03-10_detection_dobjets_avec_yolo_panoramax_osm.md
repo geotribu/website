@@ -187,13 +187,13 @@ Avant de commencer l'entraînement, nous devons diviser le jeu de données tél�
 Pour avoir un entraînement optimal, il faut avoir environ 80% d'images d'entraînement et 20% d'images de validation. Pour diviser notre jeu de données, vous pouvez faire ce qui suit :
 
 - Extrayez une première fois le fichier ZIP exporté et nommez-le `hydrants_data_v1`. Ce sera notre jeu de données __d'entraînement__.
-  - Allez dans le répertoire extrait.
-  - Supprimez 20% des images du dossier `pictures` (assurez-vous qu'elles sont triées par nom de fichier).
-  - Supprimez le même nombre de fichiers texte dans le dossier `labels` (mêmes noms que les images supprimées).
+    - Allez dans le répertoire extrait.
+    - Supprimez 20% des images du dossier `pictures` (assurez-vous qu'elles sont triées par nom de fichier).
+    - Supprimez le même nombre de fichiers texte dans le dossier `labels` (mêmes noms que les images supprimées).
 - Extrayez une deuxième fois le fichier ZIP exporté et nommez-le `hydrants_data_validation`. Ce sera notre jeu de données de __validation__.
-  - Allez dans le répertoire extrait.
-  - Supprimez 80% des images du dossier `pictures` (assurez-vous qu'elles sont triées par nom de fichier).
-  - Supprimez le même nombre de fichiers texte dans le dossier `labels` (mêmes noms que les images supprimées).
+    - Allez dans le répertoire extrait.
+    - Supprimez 80% des images du dossier `pictures` (assurez-vous qu'elles sont triées par nom de fichier).
+    - Supprimez le même nombre de fichiers texte dans le dossier `labels` (mêmes noms que les images supprimées).
 
 Notre jeu de données initial est prêt. Il est temps pour nous d'entraîner le modèle YOLO.
 
@@ -236,10 +236,10 @@ Maintenant, nous sommes prêts à lancer l'entraînement ! Notez que la carte gr
 
 ```bash
 yolo detect train \
-	data=./hydrants_data_v1/data.yaml \
-	model=yolov8n.pt \
-	project=hydrants_model_v1 \
-	epochs=100 imgsz=2048 batch=-1
+ data=./hydrants_data_v1/data.yaml \
+ model=yolov8n.pt \
+ project=hydrants_model_v1 \
+ epochs=100 imgsz=2048 batch=-1
 ```
 
 Nous utilisons ici le modèle de base `yolov8n.pt` ([voir tous les modèles disponibles dans la documentation](https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes)), bien sûr cela peut être modifié pour améliorer la précision ou la performance du modèle produit.
@@ -367,9 +367,9 @@ nc: 5
 names: ['cone', 'pillar', 'rearlight', 'redclothes', 'redsign']
 ```
 
-* `train` et `val` : pointant vers le dossier contenant vos images du deuxième ensemble de données
-* `nc` : nombre de classes
-* `names` : la liste des noms de classes, dans le même ordre que dans le fichier `hydrants_data_v2/classes.txt`
+- `train` et `val` : pointant vers le dossier contenant vos images du deuxième ensemble de données
+- `nc` : nombre de classes
+- `names` : la liste des noms de classes, dans le même ordre que dans le fichier `hydrants_data_v2/classes.txt`
 
 Une fois que le fichier de configuration est prêt, nous pouvons relancer l'entraînement YOLO :
 
@@ -407,11 +407,11 @@ Vous pouvez ré-exécuter votre nouveau modèle manuellement avec la commande su
 
 ```bash
 yolo predict \
-	project=hydrants_model_v2 \
-	model=./hydrants_model_v2/train/weights/best.pt \
-	source=https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/pic_with_hydrant.jpg \
-	classes=1 \
-	imgsz=2048 save_txt=True
+ project=hydrants_model_v2 \
+ model=./hydrants_model_v2/train/weights/best.pt \
+ source=https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/pic_with_hydrant.jpg \
+ classes=1 \
+ imgsz=2048 save_txt=True
 ```
 
 __Notez bien__ le nouveau paramètre `classes=1`, qui indique que vous souhaitez uniquement détecter des objets correspondant à l'étiquette avec l'ID 1. Cela correspond à la __deuxième__ entrée de la liste des classes du fichier `classes.txt` (les identifiants commencent à zéro). Ici, l'ID 1 correspond donc à `pillar`, notre étiquette de borne d'incendie.
