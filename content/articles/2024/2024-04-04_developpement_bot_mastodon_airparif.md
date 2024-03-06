@@ -30,7 +30,7 @@ Connaissez-vous [AirParif](https://www.airparif.fr/) ? Il s'agit de l'observatoi
 
 Connaissez-vous [Mastodon](https://fr.wikipedia.org/wiki/Mastodon_(r%C3%A9seau_social)) ? [Présenté par Julien récemment](./2024-02-16_de-twitter-a-mastodon-guide-geo-import-liste-comptes.md), il s'agit d'un réseau social décentralisé et ouvert (le Fédivers), pour les non-geeks tout comme les geeks, qui propose notamment une API permettant d'automatiser des posts.
 
-Et si on conciliait les deux ? Et si on développait un bot mastodon, qui publierait sur le réseau social les données et épisodes de pollution de l'air fournis par l'API d'AirParif ? Est-ce que ça servirait à quelque chose ? Pas sûr, ça reste à voir, personnellement j'en suis pas forcément convaincu. En plus il y a [l'application mobile](https://www.airparif.fr/actualite/2023/nouvelle-application-mobile-airparif) avec les notifications qui vont bien. Bon en tout cas c'est plus ou moins l'objet de cet article. Après tout, un brin d'astroturfing ne fait jamais de mal, alors pourquoi pas nous ? *Why not oui* ?
+Et si on conciliait les deux ? Et si on développait un bot mastodon, qui publierait sur le réseau social les données et épisodes de pollution de l'air fournis par l'API d'AirParif ? Est-ce que ça servirait à quelque chose ? Pas sûr, ça reste à voir, personnellement j'en suis pas forcément convaincu. En plus il y a [l'application mobile](https://www.airparif.fr/actualite/2023/nouvelle-application-mobile-airparif) avec les notifications qui vont bien. Bon en tout cas c'est plus ou moins l'objet de cet article.
 
 Dans cet article, vous l'aurez compris, on va donc :
 
@@ -52,11 +52,9 @@ Mais pas seulement ! On va aussi, accessoirement, entre les lignes :
 
 La première chose à faire, c'est de trouver un nom à notre bot. Eh oui, le nommage c'est important pour ne pas s'emmêler les pinceaux.
 
-Mais tout ça, après une page de pub !
+Mais tout ça, c'est après une page de pub ! Qui pourrait vous intéresser si jamais votre qarosserie ou votre data a subi un impact...
 
 ----
-
-Une page de réclame donc, qui pourrait vous intéresser si jamais votre qarosserie ou votre data a subi un impact...
 
 ![Qargrass répare, Qargrass remplace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/qargrass_repare_qargrass_remplace.webp)
 
@@ -66,11 +64,11 @@ Une page de réclame donc, qui pourrait vous intéresser si jamais votre qarosse
 
 On est de retour sur Geotribu, et à ce stade de la dénomination de notre bot, la *short list* est composée de 4 propositions : `Patrick`, `Patricia`, `Patrice`, et `air_bot`, avec ceci dit une légère préférence pour la dernière.
 
-À ce moment-là, bon, il y a sûrement quelque chose qui doit vous sauter aux yeux. AirParif ? Genre à *Paris* ?? Attends, y'a encore des gens qui habitent à Paris ? Sérieux ?!? Après tout ce qu'il s'est passé récemment : la grève des éboueurs, la réélection d'Annie, l'épidémie de CoViD19, l'élimination habituelle de l'EPSG en Ligue des Champions... Nan sérieux il y a toujours des gens qui habitent à Paris ? Nan mais réveillez-vous wesh ! Nan mais allô quoi ! Et puis les parigots qui s'envoient un paquet par jour dans les poumons et qui viennent râler dans l'air pur à la campagne, nan mais c'est bon quoi.
+À ce moment-là, bon, il y a sûrement quelque chose qui doit vous sauter aux yeux. AirParif ? Genre à *Paris* ?? Attends, y'a encore des gens qui habitent à Paris ? Sérieux ?!? Après tout ce qu'il s'est passé récemment : la grève des éboueurs, l'épidémie de CoViD19, l'élimination habituelle de l'EPSG en Ligue des Champions... Nan sérieux il y a toujours des gens qui habitent à Paris ? Nan mais réveillez-vous wesh ! Nan mais allô quoi ! Et puis les parigots qui s'envoient un paquet par jour dans les poumons et qui viennent râler dans l'air pur à la campagne, nan mais c'est bon quoi.
 
-Bon, si au village des irréductibles, il y a bien deux gaulois réfractaires qu'on souhaite pas voir s'évader, c'est Patrickbalkanix et Isabellebalkanix, les époux traficants influenceurs du village. Déjà, plus prosaïquement, il faut avouer qu'il y a moins d'open-data disponible autour de la villa à Marrakech ou à Saint-Martin. Et puis bon, à Fleury-MéroGIS, il y a quand même plein de trucs à faire. Et s'il faut bien reconnaître une qualité au service Finances de Levallois, c'est notamment au niveau de la playlist qui résonne en boucle : c'est *les copains d'abord*. C'est Fluctuat Nec Mergitur, c'était pas de la littérature, n'en déplaise aux jeteurs de sort, aux jeteurs de sort.
+Bon, si au village des irréductibles, il y a bien deux gaulois réfractaires qu'on souhaite pas voir s'évader, c'est Patrickbalkanix et Isabellebalkanix, les époux traficants influenceurs du village. Déjà, plus prosaïquement, il faut avouer qu'il y a moins d'open-data disponible autour de la villa à Marrakech ou à Saint-Martin. Et puis bon, à Fleury-MéroGIS, il y a quand même plein de trucs à faire. Et s'il faut bien reconnaître une qualité à la ville de Levallois, c'est notamment au niveau de la playlist qui résonne en boucle : c'est *les copains d'abord*. C'est Fluctuat Nec Mergitur, c'était pas de la littérature, n'en déplaise aux jeteurs de sort, aux jeteurs de sort.
 
-D'autant plus qu'il n'y a pas que Paname dans la vie (il y a aussi la petite couronne). Et le nom `air_bot` est assez générique, car le [nouvel indice ATMO](https://www.atmo-france.org/) a vocation à normaliser les données de qualité de l'air en Europe, et est implémenté notamment [au Bassin](https://www.atmo-nouvelleaquitaine.org/) et [sur la Côte d'Azur](https://www.atmosud.org/air-commune/Ville/13055/previsions) peuchère. [Le reste](#viendez), désolé, on s'en fiche un peu... Ah si ! Il y a peut-être [la région là dans les montagnes là](https://www.atmo-auvergnerhonealpes.fr/), c'est toujours sympa pour les parigots de respirer du bon air au ski... Mais les vrai.e.s sachent que [les Pyrénées](https://www.atmo-occitanie.org/occitanie#forecast_map) c'est aussi stylé ! Et pas qu'en hiver ou au [Tour de France](https://data.opendatasoft.com/explore/dataset/parcours-tour-de-france-a-montpellier-mediterranee-metropole%40occitanie/map/?flg=fr-fr&location=11,43.6354,3.87337&basemap=jawg.streets) !
+D'autant plus qu'il n'y a pas que Paname dans la vie (il y a aussi la petite couronne). Et le nom `air_bot` est assez générique, car le [nouvel indice ATMO](https://www.atmo-france.org/) a vocation à normaliser les données de qualité de l'air, et est implémenté notamment [au Bassin](https://www.atmo-nouvelleaquitaine.org/) et [sur la Côte d'Azur](https://www.atmosud.org/air-commune/Ville/13055/previsions). [Le reste](#viendez), désolé, on s'en fiche un peu... Ah si ! Il y a peut-être [la région là dans les montagnes là](https://www.atmo-auvergnerhonealpes.fr/), c'est toujours sympa pour les parigots de respirer du bon air au ski... Mais les vrai.e.s sachent que [les Pyrénées](https://www.atmo-occitanie.org/occitanie#forecast_map) c'est aussi stylé ! Et pas qu'en hiver ou au [Tour de France](https://data.opendatasoft.com/explore/dataset/parcours-tour-de-france-a-montpellier-mediterranee-metropole%40occitanie/map/?flg=fr-fr&location=11,43.6354,3.87337&basemap=jawg.streets) !
 
 ## Gestion de l'environnement virtuel
 
@@ -82,7 +80,7 @@ On peut utiliser `poetry` comme ceci :
 # initialiser un nouveau projet
 poetry init
 
-# ajouter un paquet dans nos dépendances, en l'occurence le paquet mastodon python
+# ajouter un paquet dans nos dépendances, en l'occurrence la lib mastodon python
 poetry add mastodon-py
 
 # lancer une commande dans notre environnement virtuel, exemple
@@ -109,7 +107,7 @@ Il y a [un swagger](https://api.airparif.asso.fr/docs) qui liste les interaction
 
 L'authentification pour un appel à l'API REST se fait grâce à une clé d'API, dont il faut faire [la demande à AirParif](https://www.airparif.fr/interface-de-programmation-applicative), ou bien via mél à <api@airparif.com>. Et [les prérogatives de la demande de duplicata](https://www.youtube.com/watch?v=2NiPaR0wjQY&pp=ygUgRnJhbsOnb2lzIGwnZW1icm91aWxsZSBkdXBsaWNhdGE%3D) sont plutôt rapides et la demande vite traitée, ce qui a été mon cas.
 
-Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévionniste d'AirParif, tout comme les valeurs des 4 polluants en µg/m³ : NO2, O3, PM10 et PM25. On peut effectuer cet appel comme ceci en python :
+Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévisionniste d'AirParif, tout comme les valeurs des 4 polluants en µg/m³ : NO2, O3, PM10 et PM25. On peut effectuer cet appel comme ceci en python :
 
 ```python
 import requests
