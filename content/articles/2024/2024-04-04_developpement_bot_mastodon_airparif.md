@@ -174,7 +174,7 @@ Une fois le code ci-dessus exécuté, on se retrouve avec l'image de la carte de
 
 ![Carte de la qualité de l'air du moment](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/airparif_idf_20240304120032.webp)
 
-## API de mastodon
+## Mastodon automatique
 
 Découvrons maintenant l'automatisation de posts sur le réseau social Mastodon, au travers de son API.
 
@@ -209,7 +209,7 @@ La première chose à faire est de cocher la case `This is an automated account`
 
 Ensuite, il nous faudra créer une "Application" dans la partie `Development`, qu'on appelle ~~"Patrick"~~ "air_bot", en vérifiant que le scope `write` soit coché (pas besoin pour le moment des autres scopes). Tout ceci va nous permettre de récupérer un `access_token` permettant de nous connecter en python à l'API :
 
-![Ecran application Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_application_airbot.webp)
+![Ecran application Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_application_air_bot.webp)
 
 !!! warning
     Il est conseillé de noter quelque part ce token, sur un post-it idéalement.
@@ -290,9 +290,9 @@ Les posts automatiques du bot sont configurés de la manière suivante, tous les
 - le bulletin du lendemain à 18h
 - les épisodes potentiels de pollution du lendemain à 19h
 
-### Viendez !
-
 <iframe src="https://mapstodon.space/@air_bot/112038076253185494/embed" class="mastodon-embed" loading="lazy" style="max-width: 100%; border: 0; display: block" width="600" allowfullscreen="allowfullscreen"></iframe>
+
+### Viendez !
 
 Nous venons de voir comment publier sur Mastodon les données d'AirParif. Or ce ne sont pas les seules données de qualité de l'air disponibles et ouvertes ! Les autres régions proposent également leurs services de données ouvertes ATMO :
 
