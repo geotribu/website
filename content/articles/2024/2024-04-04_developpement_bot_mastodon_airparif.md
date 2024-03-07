@@ -172,6 +172,9 @@ Une fois le code ci-dessus exécuté, on se retrouve avec l'image de la carte de
 
 ![Carte de la qualité de l'air du moment](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/airparif_idf_20240304120032.webp)
 
+!!! info
+    La couche WMS appelée `siteweb:vue_indice_atmo_2020_com_jp1` permet de récupérer la carte du lendemain quand elle est disponible (à partir de 11h généralement).
+
 ## Mastodon automatique
 
 Découvrons maintenant l'automatisation de posts sur le réseau social Mastodon, au travers de son API.
@@ -265,30 +268,13 @@ mastodon.status_post(
 
 Le code du bot implémenté avec AirParif est [disponible sur GitHub](https://github.com/gounux/air_bot).
 
-Pour lancer un post toot automatique, on utilise la commande suivante (qu'il est possible de renseigner dans une tâche [cron](https://crontab.guru/#20_*/16_*_*_*)) :
-
-```sh
-# action pour publier le bulletin de la journée avec une carte
-poetry run airparif today
-
-# action pour publier le bulletin du lendemain
-poetry run airparif tomorrow
-
-# action pour publier la carte du moment
-poetry run airparif now
-
-# action pour publier un épisode de pollution (si c'est le cas)
-poetry run airparif episode
-```
-
 Les posts automatiques du bot sont configurés de la manière suivante, tous les jours :
 
-- le bulletin de la journée à 8h, avec une carte
-- la carte de la qualité de l'air du moment à 12h
-- le bulletin du lendemain à 18h
+- le bulletin de la journée à 8h, avec la carte de la journée
+- le bulletin du lendemain à 18h, avec la carte du lendemain
 - les épisodes potentiels de pollution du lendemain à 19h
 
-<iframe src="https://mapstodon.space/@air_bot/112038076253185494/embed" class="mastodon-embed" loading="lazy" style="max-width: 100%; border: 0; display: block" width="600" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://mapstodon.space/@air_bot/112054702321965996/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
 
 ### Viendez !
 
@@ -325,7 +311,7 @@ Et aussi !
 
 - la [carte](https://aqicn.org/map/belgium/fr/) de pollution de l'air en [Belgique une fois](https://www.wallonair.be/fr/mesures/mesures-en-direct.html)
 
-:loudspeaker: N'hésitez pas à contribuer à ce bot, où à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier les données via ce bot [air_bot@mapstodon.space](https://mapstodon.space/@air_bot) !
+:loudspeaker: N'hésitez pas à contribuer à ce bot, où à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier les données via ce bot [air_bot@mapstodon.space](https://mapstodon.space/@air_bot).
 
 ## Auteur
 
