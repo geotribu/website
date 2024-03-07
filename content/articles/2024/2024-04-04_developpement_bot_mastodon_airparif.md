@@ -274,7 +274,7 @@ Les posts automatiques du bot sont configurés de la manière suivante, tous les
 - le bulletin du lendemain à 18h, avec la carte du lendemain
 - les épisodes potentiels de pollution du lendemain à 19h
 
-<iframe src="https://mapstodon.space/@air_bot/112054702321965996/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://mapstodon.space/@air_bot/112055472229879411/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
 
 ### Viendez !
 
