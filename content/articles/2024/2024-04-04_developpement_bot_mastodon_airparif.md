@@ -188,12 +188,12 @@ On est de retour sur Geotribu, et on va aborder la partie Mastodon, le réseau s
 
 ### Choix de l'instance
 
-![Morpheus et les 2 pillules disponibles - Matrix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/morpheus.webp)
+Il nous faut à présent choisir une instance pour créer le compte de notre bot. Il y a deux options possibles à mes yeux :
 
-- la pillule [botsin.space](https://botsin.space/about) ?
-- la pillule [mapstodon.space](https://mapstodon.space/about) ?
+- l'instance [botsin.space](https://botsin.space/about), "une instance pour les bots et les alliés des bots", qui est parfois instable du fait du zbeul qui règne dessus
+- l'instance [mapstodon.space](https://mapstodon.space/about), mise en place pour les géo* grâce à [Jérémy](https://mapstodon.space/@jeremy) et les admins
 
-Ça part sur la deuxième option, merci [Jérémy](https://mapstodon.space/@jeremy) !
+Ça part sur la deuxième option, merci Jérémy !
 
 On peut suivre [l'article de Julien](./2024-02-16_de-twitter-a-mastodon-guide-geo-import-liste-comptes.md) pour dérouler la création d'un compte.
 
