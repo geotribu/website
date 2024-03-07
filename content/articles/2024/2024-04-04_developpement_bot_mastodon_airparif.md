@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-04-04
-description: Des cartes automatiques et géopulmonaires, sur le Fédivers, pour avertir des épisodes de pollution et de qualité de l'air en Île-de-France
+description: Des cartes automatiques et géopulmonaires, sur le Fédivers, pour avertir des épisodes de pollution et de qualité de l'air en Ile-de-France
 icon: material/air-conditioner
 license: beerware
 robots: index, follow
@@ -24,7 +24,7 @@ tags:
 
 ![logo AirParif](https://cdn.geotribu.fr/img/logos-icones/airparif.png){: .img-thumbnail-left }
 
-Connaissez-vous [AirParif](https://www.airparif.fr/) ? Il s'agit de l'observatoire de la qualité de l'air en Île-de-France, qui publie données, prévention et alertes sur les épisodes de pollution. Les données de l'association sont ouvertes, et il y a une API tout comme des flux OGC pour les récupérer.
+Connaissez-vous [AirParif](https://www.airparif.fr/) ? Il s'agit de l'observatoire de la qualité de l'air en Ile-de-France, qui publie données, prévention et alertes sur les épisodes de pollution. Les données de l'association sont ouvertes, et il y a une API tout comme des flux OGC pour les récupérer.
 
 ![logo Mastodon](https://cdn.geotribu.fr/img/logos-icones/social/mastodon.png){: .img-thumbnail-left }
 
