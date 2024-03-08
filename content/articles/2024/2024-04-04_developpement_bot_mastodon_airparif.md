@@ -56,7 +56,7 @@ Mais tout ça, c'est après une page de pub ! Qui pourrait vous intéresser si j
 
 ----
 
-![Qargrass répare, Qargrass remplace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/qargrass_repare_qargrass_remplace.webp)
+![Qargrass répare, Qargrass remplace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/qargrass_repare_qargrass_remplace.webp){: .img-center loading=lazy }
 
 ----
 
@@ -93,7 +93,7 @@ Mais tout ça, c'est après une page de pub, qui pourrait intéresser les vianda
 
 ----
 
-![Qing of the grid, Queen of the fid](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/qing_of_the_grid_queen_of_the_fid.webp)
+![Qing of the grid, Queen of the fid](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/qing_of_the_grid_queen_of_the_fid.webp){: .img-center loading=lazy }
 
 ----
 
@@ -170,7 +170,7 @@ with open(f"airparif_idf_{datetime.now().strftime('%Y%m%d%H%M%S')}.png", "wb") a
 
 Une fois le code ci-dessus exécuté, on se retrouve avec l'image de la carte de la qualité de l'air du moment enregistrée sur le disque dur :
 
-![Carte de la qualité de l'air du moment](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/airparif_idf_20240304120032.webp)
+![Carte de la qualité de l'air du moment](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/airparif_idf_20240304120032.webp){: .img-center loading=lazy }
 
 !!! info
     La couche WMS appelée `siteweb:vue_indice_atmo_2020_com_jp1` permet de récupérer la carte du lendemain quand elle est disponible (à partir de 11h généralement).
@@ -183,7 +183,7 @@ Mais tout ça, c'est après une page de pub, qui pourrait intéresser les mélom
 
 ----
 
-![La Qompile des tubes pour l'été, les meilleurs hits par DJ FranGIS Qabrel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/qompile_frangis_qabrel.webp)
+![La Qompile des tubes pour l'été, les meilleurs hits par DJ Frangis Qabrel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/qompile_frangis_qabrel.webp){: .img-center loading=lazy }
 
 ----
 
@@ -206,18 +206,18 @@ Configurons à présent le bot pour poster de manière automatique.
 
 La première chose à faire est de cocher la case `This is an automated account` dans `Préférences` > `Public profile` :
 
-![Écran case compte automatique dans les paramètres Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_automated_account.webp)
+![Écran case compte automatique dans les paramètres Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_automated_account.webp){: .img-center loading=lazy }
 
 Ensuite, il nous faudra créer une "Application" dans la partie `Development`, qu'on appelle ~~"Patrick"~~ "air_bot", en vérifiant que le scope `write` soit coché (pas besoin pour le moment des autres scopes). Tout ceci va nous permettre de récupérer un `access_token` permettant de nous connecter en python à l'API :
 
-![Ecran application Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_application_air_bot.webp)
+![Ecran application Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_application_air_bot.webp){: .img-center loading=lazy }
 
 !!! warning "Le token qui fout les j'tons"
     Il est conseillé de noter quelque part ce token, sur un post-it idéalement.
 
 On programme aussi une suppression automatisée des posts, dans l'onglet "Automated post deletion", pour ne pas surcharger l'instance. On peut par exemple supprimer les toots postés il y a plus d'1 mois :
 
-![Écran suppression automatique des posts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_auto_delete.webp)
+![Écran suppression automatique des posts](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_auto_delete.webp){: .img-center loading=lazy }
 
 ### API Mastodon
 
@@ -225,7 +225,7 @@ Mastodon permet d'automatiser des posts, et ce dans plusieurs langages de progra
 
 Pour notre besoin du moment, on pourra simplement utiliser la méthode [`status_post`](https://mastodonpy.readthedocs.io/en/stable/05_statuses.html#writing), qui permet de poster automatiquement des toots avec notre compte nouvellement créé :
 
-![Ecran doc Mastodon méthode status_post](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_doc_mastodon.webp)
+![Ecran doc Mastodon méthode status_post](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_doc_mastodon.webp){: .img-center loading=lazy }
 
 !!! warning
     Selon les instances utilisées, la longueur max des posts est variables. Sur mapstodon.space la limite est de 500 caractères, émojis compris :heart: !
