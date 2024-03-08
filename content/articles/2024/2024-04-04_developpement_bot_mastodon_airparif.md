@@ -212,7 +212,7 @@ Ensuite, il nous faudra créer une "Application" dans la partie `Development`, q
 
 ![Ecran application Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_application_air_bot.webp)
 
-!!! warning
+!!! warning "Le token qui fout les j'tons"
     Il est conseillé de noter quelque part ce token, sur un post-it idéalement.
 
 On programme aussi une suppression automatisée des posts, dans l'onglet "Automated post deletion", pour ne pas surcharger l'instance. On peut par exemple supprimer les toots postés il y a plus d'1 mois :
