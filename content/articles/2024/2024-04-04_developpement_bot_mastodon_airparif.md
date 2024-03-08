@@ -107,7 +107,7 @@ L'authentification pour un appel à l'API REST se fait grâce à une clé d'API,
 
 Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévisionniste d'AirParif, tout comme les valeurs des 4 polluants en µg/m³ : NO2, O3, PM10 et PM25. On peut effectuer cet appel comme ceci en python :
 
-```python
+```python linenums="1" title="API AirParif - requête bulletin"
 import requests
 from requests import Response
 
@@ -132,7 +132,7 @@ data = r.json()
 
 Pour récupérer l'image carto de la qualité de l'air du moment, ça peut être fait via un appel au service WMS d'AirParif, comme ceci :
 
-```python
+```python linenums="1" title="API AirParif - requête WMS"
 from datetime import datetime
 import requests
 from requests import Response
@@ -234,7 +234,7 @@ Pour notre besoin du moment, on pourra simplement utiliser la méthode [`status_
 
 Utilisons maintenant l'API mastodon en python, comme ceci :
 
-```python
+```python linenums="1" title="API Mastodon - post automatique"
 from mastodon import Mastodon
 
 MASTODON_INSTANCE = "https://mapstodon.space"
