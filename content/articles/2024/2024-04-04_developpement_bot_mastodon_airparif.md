@@ -107,7 +107,7 @@ Il y a [un swagger](https://fr.wikipedia.org/wiki/Swagger_(logiciel)) qui liste 
 
 L'authentification pour un appel à l'API REST se fait grâce à une clé d'API, dont il faut faire [la demande à AirParif](https://www.airparif.fr/interface-de-programmation-applicative). Et [les prérogatives de la demande de duplicata](https://www.youtube.com/watch?v=2NiPaR0wjQY&pp=ygUgRnJhbsOnb2lzIGwnZW1icm91aWxsZSBkdXBsaWNhdGE%3D) sont plutôt rapides et la demande vite traitée, ce qui a été mon cas.
 
-Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévisionniste d'AirParif, tout comme les valeurs des 4 polluants surveillés en µg/m³ : NO2, O3, PM10 et PM25, décrits [ici](https://www.airparif.fr/surveiller-la-pollution/les-polluants-surveilles). On peut effectuer cet appel comme ceci en python :
+Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévisionniste d'AirParif, tout comme les valeurs [des 4 polluants réglementés et surveillés](https://www.airparif.fr/surveiller-la-pollution/les-polluants-surveilles), en µg/m³ : NO2, O3, PM10 et PM25 décrits. On peut effectuer cet appel comme ceci en python :
 
 ```python linenums="1" title="API AirParif - requête bulletin"
 import requests
