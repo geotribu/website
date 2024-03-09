@@ -1,5 +1,5 @@
 ---
-title: Développement d'un bot Mastodon avec les données AirParif
+title: Automatisation de publication des données de qualité de l'air sur Mastodon
 subtitle: Brassons de l'air !
 authors:
     - Guilhem Allaman
@@ -18,7 +18,7 @@ tags:
     - python
 ---
 
-# Développement d'un bot Mastodon avec les données AirParif
+# Automatisation de publication des données de qualité de l'air sur Mastodon
 
 :calendar: Date de publication initiale : 4 avril 2024
 
@@ -30,7 +30,7 @@ Connaissez-vous [AirParif](https://www.airparif.fr/) ? Il s'agit de l'observatoi
 
 Connaissez-vous [Mastodon](https://fr.wikipedia.org/wiki/Mastodon_(r%C3%A9seau_social)) ? [Présenté par Julien récemment](./2024-02-16_de-twitter-a-mastodon-guide-geo-import-liste-comptes.md), il s'agit d'un réseau social décentralisé et ouvert (le Fédivers), pour les non-geeks tout comme les geeks, qui propose notamment une API permettant d'automatiser des posts.
 
-Et si on conciliait les deux ? Et si on développait un bot mastodon, qui publierait sur le réseau social les données et épisodes de pollution de l'air fournis par l'API d'AirParif ? Est-ce que ça servirait à quelque chose ? Pas sûr, ça reste à voir, personnellement j'en suis pas forcément convaincu. En plus il y a [l'application mobile](https://www.airparif.fr/actualite/2023/nouvelle-application-mobile-airparif) avec les notifications qui vont bien. Bon en tout cas c'est plus ou moins l'objet de cet article.
+Et si on combinait les deux ? Et si on développait un bot mastodon, qui publierait sur le réseau social les données et épisodes de pollution de l'air fournis par l'API d'AirParif ? Est-ce que ça servirait à quelque chose ? Pas sûr, ça reste à voir, personnellement j'en suis pas forcément convaincu. En plus il y a [l'application mobile](https://www.airparif.fr/actualite/2023/nouvelle-application-mobile-airparif) avec les notifications qui vont bien. Bon en tout cas c'est plus ou moins l'objet de cet article.
 
 Dans cet article, vous l'aurez compris, on va donc :
 
@@ -58,6 +58,8 @@ Mais tout ça, c'est après une page de pub ! Qui pourrait vous intéresser si j
 
 ![Qargrass répare, Qargrass remplace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/qargrass_repare_qargrass_remplace.webp){: .img-center loading=lazy }
 
+:point_right: [OsGeo](https://www.osgeo.org/) :point_left:
+
 ----
 
 ## Dénomination
@@ -70,7 +72,7 @@ D'autant plus qu'il n'y a pas que Paname dans la vie (il y a aussi la petite cou
 
 ## Gestion de l'environnement virtuel
 
-Qui dit programme en python ("programme en python !") dit "gestion de l'environnement virtuel". Ici on va partir sur [poetry](https://python-poetry.org/), parce que quand même, un truc de geek qui s'appelle "poésie" ça claque ! *Where are thou, my dear `virtual_environment` ?* Et quand on vient du Java comme moi, c'est toujours sympa d'avoir un endroit où tout est déclaré, ça rappelle toujours des bons souvenirs, n'est-ce pas Rémi F.
+Qui dit programme en Python ("programme en Python !") dit "gestion de l'environnement virtuel". Ici on va partir sur [poetry](https://python-poetry.org/), parce que quand même, un truc de geek qui s'appelle "poésie" ça claque ! *Where are thou, my dear `virtual_environment` ?* Et quand on vient du Java comme moi, c'est toujours sympa d'avoir un endroit où tout est déclaré, ça rappelle toujours des bons souvenirs, n'est-ce pas Rémi F.
 
 On peut utiliser `poetry` comme ceci :
 
@@ -82,7 +84,7 @@ poetry init
 poetry add mastodon-py
 
 # lancer une commande dans notre environnement virtuel, exemple
-poetry run python script_claqué_au_sol --help
+poetry run python script_claque_au_sol.py --help
 ```
 
 ## API d'AirParif
@@ -99,13 +101,13 @@ Mais tout ça, c'est après une page de pub, qui pourrait intéresser les vianda
 
 On est de retour sur Geotribu, et on va maintenant aborder l'API d'AirParif.
 
-Il y a [un swagger](https://api.airparif.asso.fr/docs) qui liste les interactions possibles via appel HTTP. Tout comme un flux [WMS](https://www.ogc.org/standard/wms/) sur les données en direct à l'adresse suivante : [https://magellan.airparif.asso.fr/geoserver/siteweb/wms](https://magellan.airparif.asso.fr/geoserver/siteweb/wms?request=GetCapabilities).
+Il y a [un swagger](https://fr.wikipedia.org/wiki/Swagger_(logiciel)) qui liste [les interactions possibles](https://api.airparif.asso.fr/docs) via appel HTTP. Tout comme un flux [WMS](https://www.ogc.org/standard/wms/) sur les données en direct à l'adresse suivante : [https://magellan.airparif.asso.fr/geoserver/siteweb/wms](https://magellan.airparif.asso.fr/geoserver/siteweb/wms?request=GetCapabilities).
 
 ### Demande de duplicata
 
-L'authentification pour un appel à l'API REST se fait grâce à une clé d'API, dont il faut faire [la demande à AirParif](https://www.airparif.fr/interface-de-programmation-applicative), ou bien via mél à <api@airparif.com>. Et [les prérogatives de la demande de duplicata](https://www.youtube.com/watch?v=2NiPaR0wjQY&pp=ygUgRnJhbsOnb2lzIGwnZW1icm91aWxsZSBkdXBsaWNhdGE%3D) sont plutôt rapides et la demande vite traitée, ce qui a été mon cas.
+L'authentification pour un appel à l'API REST se fait grâce à une clé d'API, dont il faut faire [la demande à AirParif](https://www.airparif.fr/interface-de-programmation-applicative). Et [les prérogatives de la demande de duplicata](https://www.youtube.com/watch?v=2NiPaR0wjQY&pp=ygUgRnJhbsOnb2lzIGwnZW1icm91aWxsZSBkdXBsaWNhdGE%3D) sont plutôt rapides et la demande vite traitée, ce qui a été mon cas.
 
-Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévisionniste d'AirParif, tout comme les valeurs des 4 polluants en µg/m³ : NO2, O3, PM10 et PM25. On peut effectuer cet appel comme ceci en python :
+Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévisionniste d'AirParif, tout comme les valeurs des 4 polluants surveillés en µg/m³ : NO2, O3, PM10 et PM25, décrits [ici](https://www.airparif.fr/surveiller-la-pollution/les-polluants-surveilles). On peut effectuer cet appel comme ceci en python :
 
 ```python linenums="1" title="API AirParif - requête bulletin"
 import requests
@@ -121,8 +123,7 @@ r: Response = requests.get(
 )
 
 # vérification du code de retour de l'appel
-if r.status_code != 200:
-    raise Exception("Mayday !")
+r.raise_for_status()
 
 # récupération des données JSON dans un dictionnaire
 data = r.json()
@@ -159,8 +160,7 @@ r: Response = requests.get(
 )
 
 # vérification du code de retour de l'appel (toujours !)
-if r.status_code != 200:
-    raise Exception("Mayday !")
+r.raise_for_status()
 
 # enregistrement de l'image récupérée vers un fichier png, qui porte le nom de la date et l'heure
 with open(f"airparif_idf_{datetime.now().strftime('%Y%m%d%H%M%S')}.png", "wb") as f:
@@ -204,7 +204,7 @@ On peut suivre [l'article de Julien](./2024-02-16_de-twitter-a-mastodon-guide-ge
 
 Configurons à présent le bot pour poster de manière automatique.
 
-La première chose à faire est de cocher la case `This is an automated account` dans `Préférences` > `Public profile` :
+La première chose à faire est de cocher la case `This is an automated account` dans `Preferences` > `Public profile` :
 
 ![Écran case compte automatique dans les paramètres Mastodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_mastodon_automated_account.webp){: .img-center loading=lazy }
 
@@ -228,7 +228,7 @@ Pour notre besoin du moment, on pourra simplement utiliser la méthode [`status_
 ![Ecran doc Mastodon méthode status_post](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/ecran_doc_mastodon.webp){: .img-center loading=lazy }
 
 !!! warning
-    Selon les instances utilisées, la longueur max des posts est variables. Sur mapstodon.space la limite est de 500 caractères, émojis compris :heart: !
+    Selon les instances utilisées, la longueur max des posts est variable. Sur mapstodon.space la limite est de 500 caractères, émojis compris :heart: !
 
 ### Posts totomatiques
 
@@ -311,7 +311,7 @@ Et aussi !
 
 - la [carte](https://aqicn.org/map/belgium/fr/) de pollution de l'air en [Belgique une fois](https://www.wallonair.be/fr/mesures/mesures-en-direct.html)
 
-:loudspeaker: N'hésitez pas à contribuer à ce bot, où à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier les données via ce bot [air_bot@mapstodon.space](https://mapstodon.space/@air_bot).
+:loudspeaker: N'hésitez pas à contribuer à ce bot, ou à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier les données via ce bot [air_bot@mapstodon.space](https://mapstodon.space/@air_bot).
 
 ## Auteur
 
