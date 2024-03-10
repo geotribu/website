@@ -88,9 +88,6 @@ Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une
 !!! info
     _Penn ar Menez_ c'est le nom d'une ferme bio qui fait du fromage et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Châteaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
 
-<!-- markdownlint-disable MD040 -->
-<!-- termynal -->
-
 ```sh
 echo "QFieldCloud meeeeuh" | cowsay
 
@@ -103,8 +100,6 @@ echo "QFieldCloud meeeeuh" | cowsay
                 ||----w |
                 ||     ||
 ```
-
-<!-- markdownlint-enable MD040 -->
 
 ### Installations
 
