@@ -136,7 +136,7 @@ Si en plus des comptes, vous avez envie d'importer les listes, c'est-à-dire com
 
 1. Télécharger le fichier des listes :
 
-    [:material-format-list-bulleted-type: Télécharger les listes de comptes de Geotribu](https://cdn.geotribu.fr/img/download/mastodon_listes_geotribu.csv){: target="_blank" download=mastodon_listes_geotribu.csv .md-button }
+    [:material-format-list-bulleted-type: Télécharger les listes de comptes de Geotribu](https://geotribu.github.io/geo-mastodon-comptes-listes/mastodon_listes_geotribu.csv){: target="_blank" download=mastodon_listes_geotribu.csv .md-button }
     {: align=middle }
 
 1. Sur votre instance Mastodon, se rendre dans votre profil et dans le menu `Import et export` > `Import` ou directement <https://mapstodon.space/settings/imports> si vous êtes sur l'instance [Mapstodon].
@@ -154,7 +154,7 @@ Si vous voulez seulement suivre les comptes sans récupérer les listes, suivez 
 
 1. Télécharger le fichier des comptes suivis par Geotribu et ajoutés aux listes :
 
-    [:material-account-eye: :material-format-list-bulleted-type: Télécharger les comptes sélectionnés dans les listes Geotribu](https://cdn.geotribu.fr/img/download/mastodon_comptes_des_listes_geotribu.csv){: target="_blank" download=mastodon_comptes_des_listes_geotribu.csv .md-button }
+    [:material-account-eye: :material-format-list-bulleted-type: Télécharger les comptes sélectionnés dans les listes Geotribu](https://geotribu.github.io/geo-mastodon-comptes-listes/mastodon_comptes_des_listes_geotribu.csv){: target="_blank" download=mastodon_comptes_des_listes_geotribu.csv .md-button }
     {: align=middle }
 
 1. Sur votre instance Mastodon, se rendre dans votre profil et dans le menu `Import et export` > `Import` ou directement <https://mapstodon.space/settings/imports> si vous êtes sur l'instance [Mapstodon].
@@ -168,7 +168,7 @@ Si vous voulez seulement suivre les comptes sans récupérer les listes, suivez 
 
 Si vous êtes du genre sans filtre ou que notre sélection vous semble trop restreinte, vous pouvez aussi importer la liste de **tous les comptes** suivis par Geotribu avec la même procédure :
 
-[:material-account-eye: Télécharger tous les comptes suivis par Geotribu](https://cdn.geotribu.fr/img/download/mastodon_comptes_suivis_geotribu.csv){: target="_blank" download=mastodon_comptes_suivis_geotribu.csv .md-button }
+[:material-account-eye: Télécharger tous les comptes suivis par Geotribu](https://geotribu.github.io/geo-mastodon-comptes-listes/mastodon_comptes_suivis_geotribu.csv){: target="_blank" download=mastodon_comptes_suivis_geotribu.csv .md-button }
 {: align=middle }
 
 ### Comptes internationaux
