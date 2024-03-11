@@ -88,6 +88,19 @@ Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une
 !!! info
     _Penn ar Menez_ c'est le nom d'une ferme bio qui fait du fromage et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Châteaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
 
+```sh
+echo "QFieldCloud meeeeuh" | cowsay
+
+ _____________________
+< QFieldCloud meeeeuh >
+ ---------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
 ### Installations
 
 ![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.png "logo Docker"){: .img-thumbnail-left }
@@ -348,7 +361,7 @@ Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldC
 
 ![gif de bob l'éponge et patrick en panique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/bob_et_patrick.gif){: .img-center loading=lazy }
 
-Les backups, les maintenances, les montées de version ... ne font pas l'objet de cet article. Pourquoi ne pas s'entourer de vrai/es expert/es sur ce domaine purement IT ? Il y a des boîtes qui proposent ces services et qui permettent de se soulager de ces contraintes. Car après tout, qui de mieux que _votre partenaire QField_ pour s'occuper de _votre QField_ ?
+Les backups, les maintenances, les montées de version ... ne font pas l'objet de cet article. Pourquoi ne pas s'entourer de vrai/es expert/es sur ce domaine purement IT ? Il y a des boîtes qui proposent ces services et qui permettent de se soulager de ces contraintes, tout en discutant de la stratégie la plus adéquate à adopter. Car après tout, qui de mieux que _votre partenaire QField_ pour s'occuper de _votre QField_ ?
 
 ## Auteur
 
