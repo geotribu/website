@@ -19,7 +19,7 @@ tags:
     - IA
 ---
 
-# 🖼️🤖 Tutoriel : détection automatique d'objets avec YOLO et Panoramax !
+# 🖼️🤖 Tutoriel : détection automatique d'objets avec YOLO, Panoramax & OpenStreetMap !
 
 ![Logos des logiciels](https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/logos.png)
 
@@ -34,6 +34,9 @@ Bienvenue sur ce tutoriel ! Ce tutoriel vous guidera dans la création d'un mod�
 Nous explorerons également le processus de ré-entraînement basé sur les faux positifs afin d'affiner le modèle. Le but est de vous rendre autonome sur la détection d'objets, de A à Z.
 
 Les fichiers d'exemple ou de configuration utilisés dans cet article sont disponible sur [le dépôt Git où le tutoriel a été initialement publié](https://github.com/panoramax-project/DetectionTutorial).
+
+!!! info "Publication"
+    Cet article est une re-publication du tutoriel du même nom [disponible sur GitHub](https://github.com/panoramax-project/DetectionTutorial). La source originale est disponible en anglais et français, et peut faire l'objet de mises à jour régulières. Il a également été annoncé [sur le forum des Géocommuns](https://forum.geocommuns.fr/t/tuto-detection-dobjets-avec-yolo-panoramax-et-osm/1413), des discussions complémentaires s'y tiennent et pourraient vous intéresser.
 
 ## 🌐 Vue d'ensemble
 
