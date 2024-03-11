@@ -92,12 +92,12 @@ En allant sur le menu de partage, en haut à droite de l’écran, nous allons c
 
 ![Écran de création de liens de partage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/lien_partage.webp){: .img-center loading=lazy }
 
-Le premier lien permet d’accèder à la carte et au tableau de données sur un ordinateur. Le deuxième lien est tout particulièrement adapté pour de la saisie sur téléphone portable.
+Le premier lien permet d’accèder à la carte et au tableau de données sur un ordinateur. Le deuxième lien est tout particulièrement adapté pour la saisie sur téléphone portable.
 C’est ce lien que nous allons partager à toutes les personnes qui seront sur le terrain. Elles n’ont pas besoin de se créer de compte sur cocarto.
 
-Le droit _contributeur_ veut dire qu’une personne peut uniquement ajouter des points, mais ne pourra modifier les données des autres utilisateurs.
+Le droit _contributeur_ veut dire qu’une personne peut uniquement ajouter des points, mais ne pourra pas modifier les données des autres utilisateurs.
 
-Si vous souhaitez controller au plus près les droits d’accès, il est également possible d’inviter des personnes par email ; dans ce cas elles seront invitées à crééer un compte.
+Si vous souhaitez contrôler au plus près les droits d’accès, il est également possible d’inviter des personnes par email ; dans ce cas elles devront créer un compte.
 
 ## Saisie de données
 
