@@ -14,6 +14,7 @@ robots: index, follow
 tags:
     - cocarto
     - contribution
+    - collecte
     - collecte terrain
     - smartphone
 ---
@@ -35,7 +36,7 @@ Par exemple :
 - Faire remonter un dépôt sauvage d’encombrants
 - Partager des photographies d’observation d’un animal sauvage
 
-Pour des besoins plus poussés, [QField](https://www.qfield.org/) est plus complet. Le [guide d’installationdu serveur](2024-02-06_mise_en_place_serveur_qfieldcloud.md) vous mettra le pied à l’étrier.
+Pour des besoins plus poussés, [QField](https://www.qfield.org/) est plus complet. Le [guide d’installation du serveur](2024-02-06_mise_en_place_serveur_qfieldcloud.md) vous mettra le pied à l’étrier.
 
 Voici le scénario proposé :
 
@@ -57,7 +58,7 @@ Cependant, pour ne pas complexifier l'article, dans ce guide, on vous propose d'
 
 Une fois connecté, créez une nouvelle carte, avec une couche de type _points_. Il est également possible de créer d’avoir des couches de type lignes ou polygones ; mais il n’y aura de formulaire simplifié pour la saisie sur téléphone portable.
 
-![Écran de création d’une nouvelle couche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/nouvelle_couche.webp)
+![Écran de création d’une nouvelle couche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/nouvelle_couche.webp){: .img-center loading=lazy }
 
 ### Création des colonnes/données attributaires
 
@@ -69,21 +70,21 @@ Nous allons créer trois colonnes. Il n’y a pas besoin de définir de colonne 
 
 #### Nature du problème
 
-Un choix parmi une liste finie d’options
+Un choix parmi une liste finie d’options :
 
-![Écran d’ajout d’une colonne menu local](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/menu_local.webp)
+![Écran d’ajout d’une colonne menu local](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/menu_local.webp){: .img-center loading=lazy }
 
 #### Photo du lieu
 
-Donnée de type fichier
+Donnée de type fichier :
 
-![Écran d’ajout d’une colonne fichier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/fichier.webp)
+![Écran d’ajout d’une colonne fichier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/fichier.webp){: .img-center loading=lazy }
 
 #### Commentaire
 
 Du texte libre, au format long :
 
-![Écran d’ajout d’une colonne texte long](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/texte_long.webp)
+![Écran d’ajout d’une colonne texte long](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/texte_long.webp){: .img-center loading=lazy }
 
 ### Création d’un lien de partage anonyme
 
@@ -106,13 +107,13 @@ En déplaçant la carte, il est possible d’indiquer avec précision où placer
 
 Il ne reste plus qu’à compléter les champs, prendre une ou plusieurs photos et ajouter le point.
 
-![Écran de saisie depuis le téléphone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/vue_mobile.webp)
+![Écran de saisie depuis le téléphone](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/vue_mobile.webp){: .img-center loading=lazy }
 
 ## Export
 
 L’admin verra apparaitre tous les points dès leur signalement et pourra les corriger, les compléter ou encore supprimer les doublons.
 
-![Écran du tableau de données et du boutton exporter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/tableau_exporter.webp)
+![Écran du tableau de données et du boutton exporter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/tableau_exporter.webp){: .img-center loading=lazy }
 
 Afin de collaborer avec des cartographes, il suffira de cliquer sur le bouton télécharger pour obtenir un GeoJSON qui sera très simple à exploiter, avec [QGIS](https://qgis.org/fr/) par exemple.
 
