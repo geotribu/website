@@ -81,7 +81,8 @@ Donnée de type fichier
 
 #### Commentaire
 
-Du texte libre, au format long
+Du texte libre, au format long :
+
 ![Écran d’ajout d’une colonne texte long](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/texte_long.webp)
 
 ### Création d’un lien de partage anonyme
