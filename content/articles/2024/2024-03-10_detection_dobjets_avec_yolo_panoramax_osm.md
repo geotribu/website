@@ -40,7 +40,7 @@ Les fichiers d'exemple ou de configuration utilisés dans cet article sont dispo
 
 ## 🌐 Vue d'ensemble
 
-[YOLOv8](https://docs.ultralytics.com/), ou _You Only Look Once (version 8)_, est un algorithme de détection d'objets puissant, massivement utilisé dans le domaine de la _vision par ordinateur_ (_computer vision_). Il offre une précision et une performance accrues dans les tâches de détection d'objets en temps réel. YOLOv8 est particulièrement apprécié pour sa capacité à détecter et à classer rapidement des objets dans des images ou vidéos. YOLOv8 utilise un unique réseau neuronal pour prédire plusieurs classes d'objets et leur emplacement dans l'image.
+[YOLOv8](https://docs.ultralytics.com/), ou _You Only Look Once (version 8)_, est un algorithme de détection d'objets puissant, massivement utilisé dans le domaine de la _vision par ordinateur_ (_computer vision_). Il est particulièrement apprécié pour sa capacité à détecter et à classer rapidement des objets dans des images ou vidéos. YOLOv8 utilise un unique réseau neuronal pour prédire plusieurs classes d'objets et leur emplacement dans l'image.
 
 L'annotation des images sera une étape clé pour bien détecter les objets. Le but est d'apprendre à l'algorithme à quoi ressemblent les objets recherchés. Nous devons expliquer à l'aide de nombreux exemples, que tel objet est par exemple une voiture, et qu'elle est à cet endroit de l'image. Pour ce faire, nous allons dessiner sur l'image des rectangles pour délimiter les objets, et nous attribuerons à chacun d'entre eux une étiquette (ou classe) pour distinguer les différents objets.
 
@@ -48,7 +48,7 @@ Mais pour pouvoir annoter les images, encore faut-il avoir un stock de photos av
 
 Avec ce stock d'images exemples, nous allons pouvoir commencer l'annotation. [Label Studio](https://labelstud.io/) est un logiciel libre conçu pour les tâches d'étiquetage et d'annotation de données. Il s'agit d'un outil complet permettant d'étiqueter efficacement divers jeux de données (images, textes, fichiers audio) pour les modèles d'apprentissage automatique. Les données annotées seront ensuite exportées pour entraîner un modèle YOLO.
 
-Avec le modèle entraîné par YOLO, nous pourrons effectuer des détections d'objets à grande échelle, en utilisant les photos de Panoramax. Nous nous appuierons sur un script Python pour parcourir le catalogue, faire travailler le modèle YOLO, puis exporter les images intéressantes et un fichier GeoJSON listant les positions des images montrant les objets détectés.
+Avec le modèle entraîné par YOLO, nous pourrons effectuer des détections d'objets sur un grand nombre d'images, en utilisant les photos de Panoramax. Nous nous appuierons sur un script Python pour parcourir le catalogue, faire travailler le modèle YOLO, puis exporter les images intéressantes et un fichier GeoJSON listant les positions des images montrant les objets détectés.
 
 Maintenant que vous avez une bonne vue d'ensemble, mettons les mains dans le cambouis !
 
@@ -56,7 +56,7 @@ Maintenant que vous avez une bonne vue d'ensemble, mettons les mains dans le cam
 
 ### Localiser les objets recherchés avec OpenStreetMap
 
-La première étape est de trouver des images avec les objets à rechercher, afin de pouvoir entraîner notre modèle. Dans ce tutoriel, nous allons chercher des __bornes incendies__ (_fire hydrants_) 🔥💧. Pour récupérer des localisations exemples de ces objets, nous nous appuierons sur les données d'OpenStreetMap. En particulier, nous utiliserons ici un outil nommé [Overpass Turbo](https://overpass-turbo.eu/), qui est un explorateur thématique de données OSM, facile à utiliser.
+La première étape est de trouver des images avec les objets à rechercher, afin de pouvoir entraîner notre modèle. Dans ce tutoriel, nous allons chercher des __bornes incendie__ (_fire hydrants_) 🔥💧. Pour récupérer des localisations exemples de ces objets, nous nous appuierons sur les données d'OpenStreetMap. En particulier, nous utiliserons ici un outil nommé [Overpass Turbo](https://overpass-turbo.eu/), qui est un explorateur thématique de données OSM, facile à utiliser.
 
 Le moyen le plus rapide d'obtenir les données souhaitées est d'utiliser le bouton __Assistant__. Dans la pop-up, tapez en anglais le type d'objet que vous recherchez, par exemple ici :
 
@@ -66,7 +66,7 @@ Le moyen le plus rapide d'obtenir les données souhaitées est d'utiliser le bou
 
 Puis, cliquez sur _Construire et exécuter_. Les données vont appraître sur la carte :
 
-![Bornes incendies d'OSM sur Lyon dans Overpass Turbo](https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/overpass_data.png)
+![Bornes incendie d'OSM sur Lyon dans Overpass Turbo](https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/overpass_data.png)
 
 Les données d'OpenStreetMap peuvent ensuite être exportées via le bouton __Exporter__. Enregistrez-les au format __GeoJSON__. Si vous avez le moindre souci pendant cette étape, un fichier exemple [`osm_hydrants_lyon.geojson`](https://github.com/panoramax-project/DetectionTutorial/blob/main/osm_hydrants_lyon.geojson) est également fourni avec le tutoriel.
 
@@ -118,7 +118,7 @@ Il va interroger Panoramax pour voir si une photo existe pour chaque borne incen
 
 ![Photos téléchargées depuis Panoramax](https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/python_downloaded_pics.png)
 
-Si vous consultez les images, la majorité d'entre elles doivent laisser apparaître une borne incendie. Avec tout ça, vous êtes prêts pour l'annotation !
+Si vous consultez les images, la plupart d'entre elles devraient montrer une borne incendie. Avec tout cela, vous êtes prêts pour l'annotation !
 
 ## 🏷️ Annotation des photos avec Label Studio
 
@@ -138,7 +138,7 @@ Au premier démarrage, l'outil vous demandera de vous enregistrer avec un email 
 
 ![Accueil de Label Studio](https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/labelstudio_home.png)
 
-On va créer un nouveau projet, que l'on appellera par exemple _Bornes incendies_.
+On va créer un nouveau projet, que l'on appellera par exemple _Bornes incendie_.
 
 ![Configuration d'un projet Label Studio](https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/labelstudio_setup1.png)
 
@@ -426,7 +426,7 @@ Vous pouvez également relancer le script `predict_pano.py` pour détecter des o
 CLASS_ID=1
 ```
 
-Vous allez ainsi obtenir un nouvel ensemble de bornes incendies détectées depuis Panoramax, avec un niveau de qualité meilleur.
+Vous allez ainsi obtenir un nouvel ensemble de bornes incendie détectées depuis Panoramax, avec un niveau de qualité meilleur.
 
 ### Amélioration continue du modèle
 
