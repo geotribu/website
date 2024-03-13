@@ -23,12 +23,12 @@ tags:
 
 ![Logos des logiciels](https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/logos.png)
 
-Bienvenue sur ce tutoriel ! Ce tutoriel vous guidera dans la création d'un modèle sur-mesure de détection d'objets à l'aide des photos de rues provenant de Panoramax, et en utilisant YOLOv8 et Label Studio. Nous découvrirons ensemble comment :
+Bienvenue sur ce tutoriel ! Celui-ci vous guidera dans la création d'un modèle sur-mesure de détection d'objets à l'aide des photos de rues provenant de Panoramax, et en utilisant YOLOv8 et Label Studio. Nous découvrirons ensemble comment :
 
-- Trouver des localisations d'objets à détecter via __OpenStreetMap__
-- Récupérer des images exemples depuis __Panoramax__
-- Annoter les images en utilisant __Label Studio__
-- Entraîner un modèle de détection avec __YOLOv8__
+- Trouver des localisations d'objets à détecter via [__OpenStreetMap__](https://www.openstreetmap.fr/)
+- Récupérer des images exemples depuis [__Panoramax__](https://panoramax.fr)
+- Annoter les images en utilisant [__Label Studio__](https://labelstud.io/)
+- Entraîner un modèle de détection avec [__YOLOv8__](https://docs.ultralytics.com/fr)
 - Détecter des objets dans les images Panoramax
 
 Nous explorerons également le processus de ré-entraînement basé sur les faux positifs afin d'affiner le modèle. Le but est de vous rendre autonome sur la détection d'objets, de A à Z.
