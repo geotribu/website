@@ -23,7 +23,7 @@ tags:
 
 ![Logos des logiciels](https://raw.githubusercontent.com/panoramax-project/DetectionTutorial/main/Images/logos.png)
 
-Bienvenue sur ce tutoriel ! Ce tutoriel vous guidera dans la création d'un modèle sur-mesure de détection d'objets à l'aide des photos de rues provenant de Panoramax, et en utilisant YOLOv8 et Label Studio. Nous découvrirons ensemble comment :
+Bienvenue sur ce tutoriel ! Celui-ci vous guidera dans la création d'un modèle sur-mesure de détection d'objets à l'aide des photos de rues provenant de Panoramax, et en utilisant YOLOv8 et Label Studio. Nous découvrirons ensemble comment :
 
 - Trouver des localisations d'objets à détecter via __OpenStreetMap__
 - Récupérer des images exemples depuis __Panoramax__
