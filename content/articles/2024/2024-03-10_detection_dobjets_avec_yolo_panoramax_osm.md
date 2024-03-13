@@ -28,7 +28,7 @@ Bienvenue sur ce tutoriel ! Celui-ci vous guidera dans la création d'un modèle
 - Trouver des localisations d'objets à détecter via [__OpenStreetMap__](https://www.openstreetmap.fr/)
 - Récupérer des images exemples depuis [__Panoramax__](https://panoramax.fr)
 - Annoter les images en utilisant [__Label Studio__](https://labelstud.io/)
-- Entraîner un modèle de détection avec __YOLOv8__
+- Entraîner un modèle de détection avec [__YOLOv8__](https://docs.ultralytics.com/fr)
 - Détecter des objets dans les images Panoramax
 
 Nous explorerons également le processus de ré-entraînement basé sur les faux positifs afin d'affiner le modèle. Le but est de vous rendre autonome sur la détection d'objets, de A à Z.
