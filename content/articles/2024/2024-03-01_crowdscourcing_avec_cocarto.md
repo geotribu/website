@@ -53,6 +53,8 @@ Voici le scénario proposé :
  
 ## Côté adminstrateur de données
 
+![icône admin](https://cdn.geotribu.fr/img/logos-icones/divers/admin.png "icône admin"){: .img-thumbnail-left }
+
 cocarto est un [logiciel libre](https://gitlab.com/CodeursEnLiberte/cocarto/) et vous pouvez l’installer sur votre infrastructure.
 
 Cependant, pour ne pas complexifier l'article, dans ce guide, on vous propose d'utiliser l’instance publique [cocarto.com](https://cocarto.com) après y avoir créé un compte.
