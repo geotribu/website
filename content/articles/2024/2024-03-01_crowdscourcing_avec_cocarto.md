@@ -1,6 +1,6 @@
 ---
 title: "Le crowdsourcing avec cocarto"
-subtitle: 
+subtitle:
 authors:
     - Tristram Gräbener
 categories:
