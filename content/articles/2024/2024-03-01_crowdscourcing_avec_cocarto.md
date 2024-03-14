@@ -1,12 +1,12 @@
 ---
 title: "Le crowdsourcing avec cocarto"
-subtitle:
+subtitle: "Faire participer des non-sigistes depuis sur téléphone avec un simple lien"
 authors:
     - Tristram Gräbener
 categories:
     - article
 comments: true
-date: 2024-03-01
+date: 2024-03-15
 description: "Comment utiliser cocarto pour permettre à des non-sigistes de collecter des données sur le terrain avec uniquement un smartphone"
 icon: "material/table-plus"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/banner.webp"
@@ -23,9 +23,6 @@ tags:
 # Le crowdsourcing avec cocarto
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
-
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
-{: align=middle }
 
 [cocarto](https://cocarto.com/) est un outil pour faciliter la saisie collaborative et en temps réel de données géoréférencées. C’est un [logiciel libre](https://gitlab.com/CodeursEnLiberte/cocarto/), mais il existe un support payant.
 
@@ -82,7 +79,7 @@ Un choix parmi une liste finie d’options :
 
 #### Photo du lieu
 
-Donnée de type fichier :
+Donnée de type fichiers. Il sera possible de déposer plusieurs pièces jointes et de prendre des photos directement depuis le téléphone :
 
 ![Écran d’ajout d’une colonne fichier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/fichier.webp){: .img-center loading=lazy }
 
