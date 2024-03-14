@@ -51,7 +51,7 @@ Voici le scénario proposé :
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
  {: align=middle }
- 
+
 ## Côté adminstrateur de données
 
 ![icône admin](https://cdn.geotribu.fr/img/logos-icones/divers/admin.png "icône admin"){: .img-thumbnail-left }
