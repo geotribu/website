@@ -111,6 +111,8 @@ Il ne reste plus qu’à compléter les champs, prendre une ou plusieurs photos 
 
 ## Export
 
+![icône geojson](https://cdn.geotribu.fr/img/logos-icones/divers/geojson.png "icône GeoJSON - GeoJSON File by andrewcaliber from the Noun Project"){: .img-thumbnail-left }
+
 L’admin verra apparaitre tous les points dès leur signalement et pourra les corriger, les compléter ou encore supprimer les doublons.
 
 ![Écran du tableau de données et du boutton exporter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/tableau_exporter.webp){: .img-center loading=lazy }
