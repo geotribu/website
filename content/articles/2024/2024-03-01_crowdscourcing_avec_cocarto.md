@@ -59,7 +59,7 @@ Cependant, pour ne pas complexifier l'article, dans ce guide, on vous propose d'
 
 ### Création de la carte et de la couche
 
-Une fois connecté, créez une nouvelle carte, avec une couche de type _points_. Il est également possible de créer d’avoir des couches de type lignes ou polygones ; mais il n’y aura de formulaire simplifié pour la saisie sur téléphone portable.
+Une fois connecté, créez une nouvelle carte, avec une couche de type _points_. Il est également possible de créer des couches de type lignes ou polygones ; mais il n’y aura pas de formulaire simplifié pour la saisie sur téléphone portable.
 
 ![Écran de création d’une nouvelle couche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/nouvelle_couche.webp){: .img-center loading=lazy }
 
