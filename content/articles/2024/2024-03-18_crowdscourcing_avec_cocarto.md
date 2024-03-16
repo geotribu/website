@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-03-15
+date: 2024-03-18
 description: "Comment utiliser cocarto pour permettre à des non-sigistes de collecter des données sur le terrain avec uniquement un smartphone"
 icon: "material/table-plus"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/banner.webp"
