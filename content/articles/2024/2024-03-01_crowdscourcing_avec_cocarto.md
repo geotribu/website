@@ -104,7 +104,7 @@ Si vous souhaitez contrôler au plus près les droits d’accès, il est égalem
 
 ## Saisie de données
 
-Toute personne ayant le lien pourra l’ouvrir sur son téléphone mobile. L’utilisateur peut accepter de partager sa position GPS : la carte sera alors centrée sur sa position courante pour facilitée la saisie. La position GPS ne sera jamais remontée sur cocarto ; seulement le point du signalement validé par l’utilisateur.
+Toute personne ayant le lien pourra l’ouvrir sur son téléphone mobile. L’utilisateur peut accepter de partager sa position GPS : la carte sera alors centrée sur sa position courante pour faciliter la saisie. La position GPS ne sera jamais remontée sur cocarto ; seulement le point du signalement validé par l’utilisateur.
 
 En déplaçant la carte, il est possible d’indiquer avec précision où placer le point.
 
