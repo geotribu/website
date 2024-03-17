@@ -1,15 +1,15 @@
 ---
 title: "Le crowdsourcing avec cocarto"
-subtitle: "Faire participer des non-sigistes depuis sur téléphone avec un simple lien"
+subtitle: Faire participer des non-sigistes depuis leur téléphone avec un simple lien
 authors:
     - Tristram Gräbener
 categories:
     - article
 comments: true
 date: 2024-03-18
-description: "Comment utiliser cocarto pour permettre à des non-sigistes de collecter des données sur le terrain avec uniquement un smartphone"
-icon: "material/table-plus"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/banner.webp"
+description: Comment utiliser cocarto pour permettre à des non-sigistes de collecter des données sur le terrain avec uniquement un smartphone
+icon: material/table-plus
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/banner.png
 license: default
 robots: index, follow
 tags:
