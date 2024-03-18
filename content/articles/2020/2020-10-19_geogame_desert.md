@@ -49,7 +49,7 @@ Bon jeu et bonne nostalgie :smile:.
 
 ### Conception initiale
 
---8<-- "content/team/jeremy-ory.md"
+--8<-- "content/team/jeremie-ory.md"
 
 ### Restauration
 

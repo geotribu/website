@@ -90,6 +90,6 @@ Ces aspects de personnalisation dépassent un peu, pour le moment, les compéten
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jeremie-garniaux.md"
+--8<-- "content/team/jeremy-garniaux.md"
 
 {% include "licenses/default.md" %}

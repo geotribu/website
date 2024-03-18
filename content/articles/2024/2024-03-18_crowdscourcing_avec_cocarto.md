@@ -133,6 +133,6 @@ Nous espérons avoir démontré comment cocarto permet de faire le lien très ra
 
 ## Auteur
 
---8<-- "content/team/tgram.md"
+--8<-- "content/team/tristram-grabener.md"
 
 {% include "licenses/default.md" %}

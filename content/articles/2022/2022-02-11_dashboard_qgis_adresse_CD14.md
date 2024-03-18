@@ -194,7 +194,7 @@ Ci-dessous, un exemple d'affichage des bilans adresses (en haut à droite) aprè
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/tgro.md"
+--8<-- "content/team/theo-grondin.md"
 
 {% include "licenses/default.md" %}
 

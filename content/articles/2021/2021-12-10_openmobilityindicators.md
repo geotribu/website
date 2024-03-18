@@ -72,6 +72,6 @@ Toutes vos suggestions, questions, remarques et critiques sont bienvenues, et m√
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/pgen.md"
+--8<-- "content/team/patrick-gendre.md"
 
 {% include "licenses/default.md" %}
