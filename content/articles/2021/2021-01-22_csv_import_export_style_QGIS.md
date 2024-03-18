@@ -98,4 +98,4 @@ Je vous laisse maintenant assaisonner vos cartes de couleurs :yum:!
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fbor.md"
+--8<-- "content/team/florian-boret.md"

@@ -143,4 +143,4 @@ L'affichage d'une polyligne sur une carte Google Maps est tout aussi simple que 
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

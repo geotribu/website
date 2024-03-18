@@ -367,7 +367,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/mbos.md"
+--8<-- "content/team/mathieu-bossaert.md"
 
 {% include "licenses/cc4_by-sa.md" %}
 

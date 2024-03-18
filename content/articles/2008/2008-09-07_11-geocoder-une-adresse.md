@@ -146,4 +146,4 @@ Le géocodage à l'adresse est très simple à mettre en place grâce à l'API G
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

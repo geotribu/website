@@ -44,4 +44,4 @@ Je vous laisse faire le tour de la boutique et trouver votre bonheur. Il ne vous
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

@@ -213,7 +213,7 @@ Reste à voir la manière dont cela évoluera dans le futur !
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/acha.md"
+--8<-- "content/team/aurelien-chaumet.md"
 
 <!-- hyperlinks reference -->
 [deck.gl]: https://deck.gl/

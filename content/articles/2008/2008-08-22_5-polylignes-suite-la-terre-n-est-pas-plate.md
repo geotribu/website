@@ -231,4 +231,4 @@ Il existe de nombreuses options sur les marqueurs et les polylignes - ici commen
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

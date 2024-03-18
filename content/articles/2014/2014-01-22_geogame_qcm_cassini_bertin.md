@@ -36,4 +36,4 @@ Pour achever ce qui reste √† faire, on se propose d'augmenter le nombre des ing√
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jory.md"
+--8<-- "content/team/jeremie-ory.md"

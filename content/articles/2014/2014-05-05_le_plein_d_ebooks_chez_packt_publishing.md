@@ -38,4 +38,4 @@ Ne tardez pas trop car [cette offre](http://www.packtpub.com/?utm_source=referra
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

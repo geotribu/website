@@ -5,6 +5,3 @@
 Site officiel : <https://adrienvh.fr/>
 
 Twitter : <https://twitter.com/sigomatique>
-
-!!! info
-    :moyai: Ce contributeur n'est plus actif. :wave:

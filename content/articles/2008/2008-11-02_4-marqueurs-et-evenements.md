@@ -221,4 +221,4 @@ La gallerie de démonstration - [http://code.google.com/apis/earth/documentation
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

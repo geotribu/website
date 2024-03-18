@@ -97,4 +97,4 @@ La visulation de vos données pourra se faire sous différents formats (pdf, KML
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

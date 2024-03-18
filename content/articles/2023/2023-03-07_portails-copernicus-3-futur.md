@@ -251,4 +251,4 @@ Et bien sûr, n'hésitez pas à revenir partager ici vos exemples d'utilisation 
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/ndav.md"
+--8<-- "content/team/nicolas-david.md"

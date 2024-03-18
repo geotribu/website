@@ -139,4 +139,4 @@ Il faut maintenant coupler la couche des photos sur la carte - <http://geotribu.
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

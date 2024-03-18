@@ -311,7 +311,7 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/ffou.md"
+--8<-- "content/team/florent-fougeres.md"
 
 {% include "licenses/default.md" %}
 

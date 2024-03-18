@@ -99,4 +99,4 @@ Cette méthode est identique au tutoriel - [11](2008-09-07_11-geocoder-une-adres
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

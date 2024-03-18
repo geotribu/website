@@ -83,4 +83,4 @@ Cela aura pour effet de créer un nouveau fichier OpenLayers compressé contenan
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

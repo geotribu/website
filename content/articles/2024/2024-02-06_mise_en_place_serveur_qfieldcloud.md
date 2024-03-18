@@ -365,6 +365,6 @@ Les backups, les maintenances, les montées de version ... ne font pas l'objet d
 
 ## Auteur
 
---8<-- "content/team/gall.md"
+--8<-- "content/team/guilhem-allaman.md"
 
 {% include "licenses/beerware.md" %}

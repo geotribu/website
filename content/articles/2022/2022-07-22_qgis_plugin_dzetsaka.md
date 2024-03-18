@@ -142,6 +142,6 @@ A noter qu'il existe aussi d'autres méthodes de calcul (expérimental) du plugi
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/sker.md"
+--8<-- "content/team/sylvain-kerdreux.md"
 
 {% include "licenses/default.md" %}

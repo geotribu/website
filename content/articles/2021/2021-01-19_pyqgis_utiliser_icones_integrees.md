@@ -87,7 +87,7 @@ Maintenant, vous n'avez plus aucune excuse pour ne pas mettre de belles icônes 
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/beerware.md" %}
 

@@ -53,4 +53,4 @@ Plutôt simple non ? Vous noterez que contrairement à `gridGenericView` qui hé
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

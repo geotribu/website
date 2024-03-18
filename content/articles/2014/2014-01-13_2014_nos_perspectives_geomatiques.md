@@ -85,4 +85,4 @@ Si vous avez d'autres sources ou bien voulez échanger sur le sujet, n'hésitez 
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/tgra.md"
+--8<-- "content/team/thomas-gratier.md"

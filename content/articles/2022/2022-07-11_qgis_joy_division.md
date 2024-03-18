@@ -436,6 +436,6 @@ Les fonctions :
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/mraj.md"
+--8<-- "content/team/mathieu-rajerison.md"
 
 {% include "licenses/default.md" %}

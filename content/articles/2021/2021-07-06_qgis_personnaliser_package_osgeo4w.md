@@ -326,6 +326,6 @@ Maintenant, à vous de jouer, et pensez à remonter toute anomalie ou améliorat
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/rha.md"
+--8<-- "content/team/regis-haubourg.md"
 
 {% include "licenses/default.md" %}

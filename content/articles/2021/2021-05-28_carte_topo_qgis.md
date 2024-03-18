@@ -70,4 +70,4 @@ Ce projet QGIS est une première proposition de rendu mais n'hésitez pas à l'a
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fbor.md"
+--8<-- "content/team/florian-boret.md"

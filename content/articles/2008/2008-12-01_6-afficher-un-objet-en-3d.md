@@ -133,4 +133,4 @@ Sketchup est un logiciel de création d'objets 3D, voir le [site officiel](http:
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"
