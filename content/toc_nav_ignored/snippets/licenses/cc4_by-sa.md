@@ -5,7 +5,7 @@ Ce contenu est sous licence [Creative Commons International 4.0 BY-SA](https://c
 Les médias d'illustration sont potentiellement soumis à d'autres conditions d'utilisation.
 
 <!-- markdownlint-disable MD046 -->
-??? quote "Détails"
+??? quote "Réutiliser, citer l'article"
     Vous êtes autorisé(e) à :
 
     - **Partager** : copier, distribuer et communiquer le matériel par tous moyens et sous tous formats
