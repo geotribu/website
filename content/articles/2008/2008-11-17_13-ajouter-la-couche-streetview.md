@@ -92,4 +92,4 @@ Les méthodes relatives à StreetView commencent ici : [http://code.google.com/a
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

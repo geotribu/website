@@ -232,6 +232,6 @@ La documentation de l’application Input est extrêmement complète ; vous pouv
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/cros.md"
+--8<-- "content/team/cedric-rossi.md"
 
 {% include "licenses/cc4_by-sa.md" %}

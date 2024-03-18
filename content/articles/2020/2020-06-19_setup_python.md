@@ -209,6 +209,6 @@ Il existe de [nombreuses listes de packages recommandés](https://encrypted.goog
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/default.md" %}

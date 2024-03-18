@@ -262,7 +262,7 @@ Pour les plus curieux, j'ai stocké le script complet et avec quelques optimisat
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/beerware.md" %}
 

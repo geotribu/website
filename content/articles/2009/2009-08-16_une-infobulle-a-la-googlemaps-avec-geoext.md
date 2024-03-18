@@ -64,4 +64,4 @@ Comme vous pouvez le constater cela n'a rien de compliqué, juste une simple uti
 
 ## Auteur
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

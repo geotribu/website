@@ -49,8 +49,8 @@ Bon jeu et bonne nostalgie :smile:.
 
 ### Conception initiale
 
---8<-- "content/team/jory.md"
+--8<-- "content/team/jeremy-ory.md"
 
 ### Restauration
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"

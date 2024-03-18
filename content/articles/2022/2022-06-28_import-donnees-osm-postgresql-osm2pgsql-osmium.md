@@ -464,6 +464,6 @@ sudo pg_dropcluster 14 osmdata
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/default.md" %}

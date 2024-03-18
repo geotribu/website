@@ -245,7 +245,7 @@ Si l'article vous a intéressé et aidé à embarquer, venez donc le dire en ré
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/beerware.md" %}
 

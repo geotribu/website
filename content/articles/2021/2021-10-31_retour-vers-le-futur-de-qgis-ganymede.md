@@ -121,6 +121,6 @@ Un participant de la formation a tenu à montrer que MapInfo 1998 tournait égal
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/beerware.md" %}

@@ -167,7 +167,7 @@ graph TD
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 <!-- Hyperlinks reference -->
 [Markdown]: https://fr.wikipedia.org/wiki/Markdown

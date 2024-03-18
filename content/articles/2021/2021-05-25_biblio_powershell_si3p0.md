@@ -263,7 +263,7 @@ Comme indiqué plus haut, si tu souhaites récupérer les sources (sous licence 
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/mgal.md"
+--8<-- "content/team/michael-galien.md"
 
 !!! note "Pourquoi est-ce que j'écris SIg et pas SIG ?"
     Je traite au quotidien différentes données dont une partie est géographique. A ce titre, je considère que je participe à la construction du SI de la collectivité. Ce "G", s'il précise la composante géographique des travaux, apporte je trouve, un côté réducteur à la matière. J'ai donc opté pour ce compromis d'écriture.

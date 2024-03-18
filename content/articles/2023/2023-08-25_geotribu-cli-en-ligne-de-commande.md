@@ -203,7 +203,7 @@ C'est évidemment open source et libre (licence MIT) donc si cela vous intéress
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/beerware.md" %}
 

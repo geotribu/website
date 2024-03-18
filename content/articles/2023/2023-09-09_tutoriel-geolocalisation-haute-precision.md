@@ -229,6 +229,6 @@ L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jhan.md"
+--8<-- "content/team/jeremie-hanke.md"
 
 {% include "licenses/default.md" %}

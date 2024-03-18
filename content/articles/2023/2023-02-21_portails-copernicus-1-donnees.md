@@ -147,4 +147,4 @@ Si tout cela n'a pas encore suffi à satisfaire vos mirettes, ou que vous souhai
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/ndav.md"
+--8<-- "content/team/nicolas-david.md"

@@ -245,4 +245,4 @@ A noter, que pour les personnes utilisant GéoServer il existe un équivalent no
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"
