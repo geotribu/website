@@ -7,6 +7,3 @@ Géographe de formation, après quelques années tant côté gestion de projet ,
 J'utilise plutôt des technologies open source mais je m'intéresse aussi à l'interopérabilité entre les solutions propriétaires et open source. Même si je rédige pas mal au sein de l'équipe, je contribue plutôt à identifier les ressources pour alimenter la revue de presse, étant très rôdé sur la veille géomatique.
 
 Pour en savoir plus, [suivez-moi sur Twitter](https://twitter.com/ThomasG77).
-
-!!! info
-    :moyai: Ce contributeur n'est plus actif. :wave:

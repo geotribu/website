@@ -19,14 +19,14 @@ tags:
 
 ## Membres de l'équipe
 
-- [Arnaud](avan.md)
-- [Aurélien](acha.md)
-- [Etienne](edel.md)
-- [Fabien](fgob.md)
-- [Florian](fbor.md)
-- [Jérémie O.](jory.md)
-- [Julien](jmou.md)
-- [Mathieu R.](mraj.md)
+- [Arnaud](arnaud-vandecasteele.md)
+- [Aurélien](aurelien-chaumet.md)
+- [Etienne](etienne-delay.md)
+- [Fabien](fabien-goblet.md)
+- [Florian](florian-boret.md)
+- [Jérémie O.](jeremie-ory.md)
+- [Julien](julien-moura.md)
+- [Mathieu R.](mathieu-rajerison.md)
 
 ----
 
@@ -40,10 +40,10 @@ La liste ci-après est générée automatiquement à partir de l'historique de [
 
 ## Membres historiques
 
-- [Adrien](avha.md)
-- [Guillaume](gdbo.md)
-- [Julie](jpie.md)
-- [Pierre](pver.md)
-- [Rémi](rbov.md)
-- [Rodolphe](rqui.md)
-- [Thomas](tgra.md)
+- [Adrien](adrien-van-hamme.md)
+- [Guillaume](guillaume-de-boyer.md)
+- [Julie](julie-pierson.md)
+- [Pierre](pierre-vernier.md)
+- [Rémi](remi-bovard.md)
+- [Rodolphe](rodolphe-quiedeville.md)
+- [Thomas](thomas-gratier.md)

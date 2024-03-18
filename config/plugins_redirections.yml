@@ -846,7 +846,50 @@ redirects:
     toc_nav_ignored/qgis_resources_preview_table.md: https://geotribu.github.io/pyqgis-icons-cheatsheet/
     team/statistiques.md: index.md
 
-    # divers
-    team/jemv.md: team/jvig.md
-    team/ndavid.md: team/ndav.md
-    team/sdeb.md: team/sdes.md
+    # page auteurices
+    team/acha.md: team/aurelien-chaumet.md
+    team/avha.md: team/adrien-van-hamme.md
+    team/avan.md: team/arnaud-vandecasteele.md
+    team/bmer.md: team/boris-mericksay.md
+    team/cros.md: team/cedric-rossi.md
+    team/cque.md: team/chistrian-quest.md
+    team/dmon.md: team/delphine-montagne.md
+    team/edel.md: team/etienne-delay.md
+    team/fbor.md: team/florian-boret.md
+    team/ffou.md: team/florent-fougeres.md
+    team/fgob.md: team/fabien-goblet.md
+    team/ggal.md: team/guilhem-allaman.md
+    team/gdbo.md: team/guillaume-de-boyer.md
+    team/hfio.md: team/humbert-fiorino.md
+    team/jemv.md: team/jean-marc-viglino.md
+    team/jgar.md: team/jeremie-garniaux.md
+    team/jhan.md: team/jeremie-hanke.md
+    team/jmou.md: team/julien-moura.md
+    team/jory.md: team/jeremie-ory.md
+    team/jpie.md: team/julie-pierson.md
+    team/jpru.md: team/jeremie-prudhomme.md
+    team/jvig.md: team/jean-marc-viglino.md
+    team/lbar.md: team/loic-bartoletti.md
+    team/mbos.md: team/mathieu-bossaert.md
+    team/mfer.md: team/mathilde-ferrey.md
+    team/mgal.md: team/michael-galien.md
+    team/mraj.md: team/mathieu-rajerison.md
+    team/ndav.md: team/nicolas-david.md
+    team/ndavid.md: team/nicolas-david.md
+    team/nroe.md: team/nicolas-roelandt.md
+    team/pgen.md: team/patrick-gendre.md
+    team/pver.md: team/pierre-vernier.md
+    team/qthy.md: team/quy-thy-truong.md
+    team/rbov.md: team/remi-bovard.md
+    team/rha.md: team/regis-haubourg.md
+    team/rhau.md: team/regis-haubourg.md
+    team/rqui.md: team/rodolphe-quiedeville.md
+    team/sker.md: team/sylvain-kerdreux.md
+    team/srit.md: team/stephane-ritzenthaler.md
+    team/tgra.md: team/thomas-gratier.md
+    team/tgram.md: team/tristram-grabener.md
+    team/tgro.md: team/theo-grondin.md
+    team/sdeb.md: team/samuel-deschamps-berger.md
+    team/sdes.md: team/samuel-deschamps-berger.md
+    team/vleb.md: team/valerian-lebert.md
+    team/vale.md: team/victor-alexandre.md
