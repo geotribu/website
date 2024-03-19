@@ -22,7 +22,7 @@ tags:
 
 # DuckDB et les données spatiales
 
-:calendar: Date de publication initiale : 19 décembre 2023
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
 
@@ -155,7 +155,7 @@ Successfully installed duckdb-0.9.2
 === ":snake: Python"
 
     ```python
-    con.sql("INSTALL spatial; LOAD spatial ; LOAD httpfs ;")
+    con.sql("INSTALL spatial; LOAD spatial; INSTALL httpfs; LOAD httpfs;")
     ```
 
 === ":material-console: CLI"
@@ -163,6 +163,7 @@ Successfully installed duckdb-0.9.2
     ```sh
     D INSTALL spatial ;
     D LOAD spatial ;
+    D INSTALL httpfs ;
     D LOAD httpfs ;
     ```
 
@@ -204,7 +205,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
     "FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
     "LIMIT 1 ); ")
 
-    con.sql(query_admins)
+    con.sql(query_buildings)
     ```
 
 === ":material-console: CLI"
@@ -234,7 +235,7 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan
     "AND bbox.miny > 40.7373325 "
     "AND bbox.maxy < 40.7373325 ); ")
 
-    con.sql(query_admins)
+    con.sql(query_buildings)
     ```
 
 === ":material-console: CLI"
@@ -258,7 +259,6 @@ Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qd
 ![qduckdb](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/qduckdb.png){: .img-center loading=lazy }
 
 !!! info "Transparence"
-
     Attention, cette extension est encore expérimentale (je suis bien placé pour le savoir puisque j'en suis l'un des principaux développeurs :wink:). N'hésitez pas à la tester et à nous faire des retours !  
     J'en profite pour préciser que cet article est une initiative personnelle de ma part. En aucun cas cet article est rédigé ou financé dans le cadre de mes activités chez Oslandia en tant que développeur du plugin.
 
@@ -303,7 +303,7 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
     :bulb: Également possible d'exporter en Shapefile, pour cela, il faut remplacer les deux dernières lignes par celles-ci :
 
     ```sql
-    ) TO 'new_york_buildings.shp'
+    TO 'new_york_buildings.shp'
     WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile');
     ```
 
