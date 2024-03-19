@@ -179,12 +179,79 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
     con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;")
     ```
 
+    Avec `DESCRIBE` il est facile d'afficher la structure de la table :
+
+    ```python
+    print(con.sql("DESCRIBE airports;"))
+    ┌───────────────────┬─────────────┬─────────┬─────────┬─────────┬─────────┐
+    │    column_name    │ column_type │  null   │   key   │ default │  extra  │
+    │      varchar      │   varchar   │ varchar │ varchar │ varchar │ varchar │
+    ├───────────────────┼─────────────┼─────────┼─────────┼─────────┼─────────┤
+    │ id                │ BIGINT      │ YES     │ NULL    │ NULL    │ NULL    │
+    │ ident             │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ type              │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ name              │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ latitude_deg      │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+    │ longitude_deg     │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+    │ elevation_ft      │ BIGINT      │ YES     │ NULL    │ NULL    │ NULL    │
+    │ continent         │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ iso_country       │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ iso_region        │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ municipality      │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ scheduled_service │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ gps_code          │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ iata_code         │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ local_code        │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ home_link         │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ wikipedia_link    │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ keywords          │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ the_geom          │ GEOMETRY    │ YES     │ NULL    │ NULL    │ NULL    │
+    ├───────────────────┴─────────────┴─────────┴─────────┴─────────┴─────────┤
+    │ 19 rows                                                       6 columns │
+    └─────────────────────────────────────────────────────────────────────────┘
+
+    # et on n'oublie pas de fermer proprement la connexion
+    con.close()
+    ```
+
 === ":material-console: CLI"
 
     ```sh
     D CREATE TABLE airports AS FROM read_csv_auto('https://davidmegginson.github.io/ourairports-data/airports.csv', HEADER=True, DELIM=',') ;
     D ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;
     D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;
+    ```
+
+    Avec `DESCRIBE` il est facile d'afficher la structure de la table :
+
+    ```sh
+    DESCRIBE airports;
+    ┌───────────────────┬─────────────┬─────────┬─────────┬─────────┬─────────┐
+    │    column_name    │ column_type │  null   │   key   │ default │  extra  │
+    │      varchar      │   varchar   │ varchar │ varchar │ varchar │ varchar │
+    ├───────────────────┼─────────────┼─────────┼─────────┼─────────┼─────────┤
+    │ id                │ BIGINT      │ YES     │         │         │         │
+    │ ident             │ VARCHAR     │ YES     │         │         │         │
+    │ type              │ VARCHAR     │ YES     │         │         │         │
+    │ name              │ VARCHAR     │ YES     │         │         │         │
+    │ latitude_deg      │ DOUBLE      │ YES     │         │         │         │
+    │ longitude_deg     │ DOUBLE      │ YES     │         │         │         │
+    │ elevation_ft      │ BIGINT      │ YES     │         │         │         │
+    │ continent         │ VARCHAR     │ YES     │         │         │         │
+    │ iso_country       │ VARCHAR     │ YES     │         │         │         │
+    │ iso_region        │ VARCHAR     │ YES     │         │         │         │
+    │ municipality      │ VARCHAR     │ YES     │         │         │         │
+    │ scheduled_service │ VARCHAR     │ YES     │         │         │         │
+    │ gps_code          │ VARCHAR     │ YES     │         │         │         │
+    │ iata_code         │ VARCHAR     │ YES     │         │         │         │
+    │ local_code        │ VARCHAR     │ YES     │         │         │         │
+    │ home_link         │ VARCHAR     │ YES     │         │         │         │
+    │ wikipedia_link    │ VARCHAR     │ YES     │         │         │         │
+    │ keywords          │ VARCHAR     │ YES     │         │         │         │
+    │ the_geom          │ GEOMETRY    │ YES     │         │         │         │
+    ├───────────────────┴─────────────┴─────────┴─────────┴─────────┴─────────┤
+    │ 19 rows                                                       6 columns │
+    └─────────────────────────────────────────────────────────────────────────┘
     ```
 
 ### Traiter des données parquet d'Overture Maps avec DuckDB
