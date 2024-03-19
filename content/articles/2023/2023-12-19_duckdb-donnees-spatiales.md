@@ -174,7 +174,7 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
 === ":snake: Python"
 
     ```python
-    con.sql("CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;")
+    con.sql("CREATE TABLE airports AS FROM read_csv_auto('https://davidmegginson.github.io/ourairports-data/airports.csv', HEADER=True, DELIM=',') ;")
     con.sql("ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;")
     con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;")
     ```
@@ -182,7 +182,7 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
 === ":material-console: CLI"
 
     ```sh
-    D CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;
+    D CREATE TABLE airports AS FROM read_csv_auto('https://davidmegginson.github.io/ourairports-data/airports.csv', HEADER=True, DELIM=',') ;
     D ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;
     D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;
     ```
