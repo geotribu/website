@@ -269,7 +269,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
     "SELECT type, version, CAST(update_time as varchar) as updateTime, "
     "height, num_floors as numFloors, level, class, "
     "ST_GeomFromWKB(geometry) as geometry "
-    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
+    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true) "
     "LIMIT 100 ); ")
 
     con.sql(query_buildings)
@@ -282,7 +282,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
         SELECT type, version, CAST(update_time as varchar) as updateTime,
         height, num_floors as numFloors, level, class,
         ST_GeomFromWKB(geometry) as geometry
-        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true)
         LIMIT 100
     );
     ```
@@ -296,7 +296,7 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan
     "SELECT type, version, CAST(update_time as varchar) as updateTime, "
     "height, num_floors as numFloors, level, class, "
     "ST_GeomFromWKB(geometry) as geometry "
-    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
+    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true) "
     "WHERE bbox.minx > -73.9967900 "
     "AND bbox.maxx < -73.9967900 "
     "AND bbox.miny > 40.7373325 "
@@ -312,7 +312,7 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan
         SELECT type, version, CAST(update_time as varchar) as updateTime,
             height, num_floors as numFloors, level, class,
         ST_GeomFromWKB(geometry) as geometry
-        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true)
         WHERE bbox.minx > -73.9967900
             AND bbox.maxx < -73.9967900
             AND bbox.miny > 40.7373325
@@ -340,7 +340,7 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
     "SELECT type, version, CAST(updatetime as varchar) as updateTime, "
     "height, numfloors as numFloors, level, class, "
     "ST_GeomFromWKB(geometry) as geometry "
-    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
+    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true) "
     "WHERE bbox.minx > -73.9967900 "
     "AND bbox.maxx < -73.9967900 "
     "AND bbox.miny > 40.7373325 "
@@ -358,7 +358,7 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
         SELECT type, version, CAST(updatetime as varchar) as updateTime,
             height, numfloors as numFloors, level, class,
             ST_GeomFromWKB(geometry) as geometry
-        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true)
         WHERE bbox.minx > -73.9967900
             AND bbox.maxx < -73.9967900
             AND bbox.miny > 40.7373325
