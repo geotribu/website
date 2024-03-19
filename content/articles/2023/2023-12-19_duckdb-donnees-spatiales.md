@@ -104,7 +104,7 @@ Enfin un [article](https://dev.to/savo/spatial-data-analysis-with-duckdb-40j9) s
 
 Pour suivre la suite de ce tutoriel, il vous faut donc avoir installé DucKDB. Deux possibilités :
 
-- :material-console: Soit l’exécutable DuckDB pour utiliser la CLI :
+- :material-console: Soit l’exécutable DuckDB pour utiliser l'interface en ligne de commande (CLI) dont l'invite change pour un `D` (que nous ignorerons dans les blocs de code suivants) :
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
@@ -147,7 +147,7 @@ Successfully installed duckdb-0.9.2
 === ":material-console: CLI"
 
     ```sh
-    D .open overture_maps-transportation.db
+    .open overture_maps-transportation.db
     ```
 
 ### Installer puis charger l’extension spatiale
@@ -161,10 +161,10 @@ Successfully installed duckdb-0.9.2
 === ":material-console: CLI"
 
     ```sh
-    D INSTALL spatial ;
-    D LOAD spatial ;
-    D INSTALL httpfs ;
-    D LOAD httpfs ;
+    INSTALL spatial ;
+    LOAD spatial ;
+    INSTALL httpfs ;
+    LOAD httpfs ;
     ```
 
 ### Importer un CSV et créer la géométrie
@@ -217,9 +217,9 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
 === ":material-console: CLI"
 
     ```sh
-    D CREATE TABLE airports AS FROM read_csv_auto('https://davidmegginson.github.io/ourairports-data/airports.csv', HEADER=True, DELIM=',') ;
-    D ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;
-    D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;
+    CREATE TABLE airports AS FROM read_csv_auto('https://davidmegginson.github.io/ourairports-data/airports.csv', HEADER=True, DELIM=',') ;
+    ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;
+    UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;
     ```
 
     Avec `DESCRIBE` il est facile d'afficher la structure de la table :
@@ -278,7 +278,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
 === ":material-console: CLI"
 
     ```sh
-    D. CREATE TABLE buildings AS (  
+    CREATE TABLE buildings AS (  
         SELECT type, version, CAST(update_time as varchar) as updateTime,
         height, num_floors as numFloors, level, class,
         ST_GeomFromWKB(geometry) as geometry
@@ -308,7 +308,7 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan
 === ":material-console: CLI"
 
     ```sh
-    D. CREATE TABLE buildings AS (  
+    CREATE TABLE buildings AS (  
         SELECT type, version, CAST(update_time as varchar) as updateTime,
             height, num_floors as numFloors, level, class,
         ST_GeomFromWKB(geometry) as geometry
@@ -354,7 +354,7 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
 === ":material-console: CLI"
 
     ```sh
-    D. COPY (
+    COPY (
         SELECT type, version, CAST(updatetime as varchar) as updateTime,
             height, numfloors as numFloors, level, class,
             ST_GeomFromWKB(geometry) as geometry
@@ -362,16 +362,16 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
         WHERE bbox.minx > -73.9967900
             AND bbox.maxx < -73.9967900
             AND bbox.miny > 40.7373325
-            AND bbox.maxy < 40.7373325 )  
-            TO 'new_york_buildings.geojson'
-            WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
+            AND bbox.maxy < 40.7373325 )
+    TO 'new_york_buildings.geojson'
+    WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
     ```
 
     :bulb: Il est également possible d'exporter en Shapefile, pour cela, il faut remplacer les deux dernières lignes par celles-ci :
 
     ```sql
     TO 'new_york_buildings.shp'
-    WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile');
+    WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile', SRS 'EPSG:4326');
     ```
 
 ----
