@@ -102,23 +102,24 @@ Enfin un [article](https://dev.to/savo/spatial-data-analysis-with-duckdb-40j9) s
 
 ### Pré requis
 
-- L’exécutable DuckDB pour utiliser la CLI :
+Pour suivre la suite de ce tutoriel, il vous faut donc avoir installé DucKDB. Deux possibilités :
+
+- :material-console: Soit l’exécutable DuckDB pour utiliser la CLI :
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
 
 ```sh
+$ duckdb
 v0.9.2 3c695d7ba9
 Enter ".help" for usage hints.
 Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
 D
 ```
-
 <!-- markdownlint-enable MD040 -->
-ou
 
-- Un environnement Python intégrant le [paquet duckdb](https://pypi.org/project/duckdb/). DuckDB utilisant de nombreuses dépendances, il est fortement conseillé d’utiliser un environnement virtuel pour éviter les conflits de dépendances.
+- :snake: Soit un environnement Python intégrant le [paquet duckdb](https://pypi.org/project/duckdb/). DuckDB utilisant de nombreuses dépendances, il est fortement conseillé d’utiliser un environnement virtuel pour éviter les conflits de dépendances.
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
@@ -129,7 +130,6 @@ $ pip install duckdb
 Installing collected packages: duckdb
 Successfully installed duckdb-0.9.2
 ```
-
 <!-- markdownlint-enable MD040 -->
 
 ### Création d’une base de données, ou l’ouvrir si elle existe déjà
@@ -300,7 +300,7 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
             WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
     ```
 
-    :bulb: Également possible d'exporter en Shapefile, pour cela, il faut remplacer les deux dernières lignes par celles-ci :
+    :bulb: Il est également possible d'exporter en Shapefile, pour cela, il faut remplacer les deux dernières lignes par celles-ci :
 
     ```sql
     TO 'new_york_buildings.shp'
