@@ -189,7 +189,7 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
 
 ### Traiter des données parquet d'Overture Maps avec DuckDB
 
-Les données d’Overture Maps sont fournies sous forme de fichier Parquet ([décrites ici](https://github.com/OvertureMaps/data#data-release-feedback)), nous allons donc importer ces données dans une base pour les consulter.
+Les données d’Overture Maps sont fournies sous forme de fichier Parquet ([décrites ici](https://docs.overturemaps.org/overview/feature-model/)), nous allons donc importer ces données dans une base pour les consulter.
 
 #### Importer les données dans la base
 
@@ -199,8 +199,8 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
 
     ```python
     query_buildings = ("CREATE TABLE buildings AS ( "  
-    "SELECT type, version, CAST(updatetime as varchar) as updateTime, "
-    "height, numfloors as numFloors, level, class, "
+    "SELECT type, version, CAST(update_time as varchar) as updateTime, "
+    "height, num_floors as numFloors, level, class, "
     "ST_GeomFromWKB(geometry) as geometry "
     "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
     "LIMIT 100 ); ")
@@ -212,15 +212,15 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
 
     ```sh
     D. CREATE TABLE buildings AS (  
-        SELECT type, version, CAST(updatetime as varchar) as updateTime,
-        height, numfloors as numFloors, level, class,
+        SELECT type, version, CAST(update_time as varchar) as updateTime,
+        height, num_floors as numFloors, level, class,
         ST_GeomFromWKB(geometry) as geometry
         FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
         LIMIT 100
     );
     ```
 
-Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan en indiquant les coordonnées d’un rectangle (attention requête assez longue)
+Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan en indiquant les coordonnées d’un rectangle (attention requête assez longue) :
 
 === ":snake: Python"
 
