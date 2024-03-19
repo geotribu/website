@@ -203,7 +203,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
     "height, numfloors as numFloors, level, class, "
     "ST_GeomFromWKB(geometry) as geometry "
     "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
-    "LIMIT 1 ); ")
+    "LIMIT 100 ); ")
 
     con.sql(query_buildings)
     ```
@@ -216,7 +216,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
         height, numfloors as numFloors, level, class,
         ST_GeomFromWKB(geometry) as geometry
         FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
-        LIMIT 1
+        LIMIT 100
     );
     ```
 
