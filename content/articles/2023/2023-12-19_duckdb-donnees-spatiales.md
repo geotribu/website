@@ -226,8 +226,8 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan
 
     ```python
     query_buildings = ("CREATE TABLE buildings AS ( "  
-    "SELECT type, version, CAST(updatetime as varchar) as updateTime, "
-    "height, numfloors as numFloors, level, class, "
+    "SELECT type, version, CAST(update_time as varchar) as updateTime, "
+    "height, num_floors as numFloors, level, class, "
     "ST_GeomFromWKB(geometry) as geometry "
     "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
     "WHERE bbox.minx > -73.9967900 "
@@ -242,8 +242,8 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan
 
     ```sh
     D. CREATE TABLE buildings AS (  
-        SELECT type, version, CAST(updatetime as varchar) as updateTime,
-            height, numfloors as numFloors, level, class,
+        SELECT type, version, CAST(update_time as varchar) as updateTime,
+            height, num_floors as numFloors, level, class,
         ST_GeomFromWKB(geometry) as geometry
         FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
         WHERE bbox.minx > -73.9967900
