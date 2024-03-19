@@ -22,7 +22,7 @@ tags:
 
 # DuckDB et les données spatiales
 
-:calendar: Date de publication initiale : 19 décembre 2023
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
 
@@ -102,23 +102,24 @@ Enfin un [article](https://dev.to/savo/spatial-data-analysis-with-duckdb-40j9) s
 
 ### Pré requis
 
-- L’exécutable DuckDB pour utiliser la CLI :
+Pour suivre la suite de ce tutoriel, il vous faut donc avoir installé DucKDB. Deux possibilités :
+
+- :material-console: Soit l’exécutable DuckDB pour utiliser l'interface en ligne de commande (CLI) dont l'invite change pour un `D` (que nous ignorerons dans les blocs de code suivants) :
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
 
 ```sh
+$ duckdb
 v0.9.2 3c695d7ba9
 Enter ".help" for usage hints.
 Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
 D
 ```
-
 <!-- markdownlint-enable MD040 -->
-ou
 
-- Un environnement Python intégrant le [paquet duckdb](https://pypi.org/project/duckdb/). DuckDB utilisant de nombreuses dépendances, il est fortement conseillé d’utiliser un environnement virtuel pour éviter les conflits de dépendances.
+- :snake: Soit un environnement Python intégrant le [paquet duckdb](https://pypi.org/project/duckdb/). DuckDB utilisant de nombreuses dépendances, il est fortement conseillé d’utiliser un environnement virtuel pour éviter les conflits de dépendances.
 
 <!-- markdownlint-disable MD040 -->
 <!-- termynal -->
@@ -129,7 +130,6 @@ $ pip install duckdb
 Installing collected packages: duckdb
 Successfully installed duckdb-0.9.2
 ```
-
 <!-- markdownlint-enable MD040 -->
 
 ### Création d’une base de données, ou l’ouvrir si elle existe déjà
@@ -147,7 +147,7 @@ Successfully installed duckdb-0.9.2
 === ":material-console: CLI"
 
     ```sh
-    D .open overture_maps-transportation.db
+    .open overture_maps-transportation.db
     ```
 
 ### Installer puis charger l’extension spatiale
@@ -155,15 +155,16 @@ Successfully installed duckdb-0.9.2
 === ":snake: Python"
 
     ```python
-    con.sql("INSTALL spatial; LOAD spatial ; LOAD httpfs ;")
+    con.sql("INSTALL spatial; LOAD spatial; INSTALL httpfs; LOAD httpfs;")
     ```
 
 === ":material-console: CLI"
 
     ```sh
-    D INSTALL spatial ;
-    D LOAD spatial ;
-    D LOAD httpfs ;
+    INSTALL spatial ;
+    LOAD spatial ;
+    INSTALL httpfs ;
+    LOAD httpfs ;
     ```
 
 ### Importer un CSV et créer la géométrie
@@ -173,22 +174,89 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
 === ":snake: Python"
 
     ```python
-    con.sql("CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;")
+    con.sql("CREATE TABLE airports AS FROM read_csv_auto('https://davidmegginson.github.io/ourairports-data/airports.csv', HEADER=True, DELIM=',') ;")
     con.sql("ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;")
     con.sql("UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;")
+    ```
+
+    Avec `DESCRIBE` il est facile d'afficher la structure de la table :
+
+    ```python
+    print(con.sql("DESCRIBE airports;"))
+    ┌───────────────────┬─────────────┬─────────┬─────────┬─────────┬─────────┐
+    │    column_name    │ column_type │  null   │   key   │ default │  extra  │
+    │      varchar      │   varchar   │ varchar │ varchar │ varchar │ varchar │
+    ├───────────────────┼─────────────┼─────────┼─────────┼─────────┼─────────┤
+    │ id                │ BIGINT      │ YES     │ NULL    │ NULL    │ NULL    │
+    │ ident             │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ type              │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ name              │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ latitude_deg      │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+    │ longitude_deg     │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+    │ elevation_ft      │ BIGINT      │ YES     │ NULL    │ NULL    │ NULL    │
+    │ continent         │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ iso_country       │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ iso_region        │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ municipality      │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ scheduled_service │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ gps_code          │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ iata_code         │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ local_code        │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ home_link         │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ wikipedia_link    │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ keywords          │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+    │ the_geom          │ GEOMETRY    │ YES     │ NULL    │ NULL    │ NULL    │
+    ├───────────────────┴─────────────┴─────────┴─────────┴─────────┴─────────┤
+    │ 19 rows                                                       6 columns │
+    └─────────────────────────────────────────────────────────────────────────┘
+
+    # et on n'oublie pas de fermer proprement la connexion
+    con.close()
     ```
 
 === ":material-console: CLI"
 
     ```sh
-    D CREATE TABLE airports AS FROM read_csv_auto('[https://davidmegginson.github.io/ourairports-data/airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv)', HEADER=True, DELIM=',') ;
-    D ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;
-    D UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;
+    CREATE TABLE airports AS FROM read_csv_auto('https://davidmegginson.github.io/ourairports-data/airports.csv', HEADER=True, DELIM=',') ;
+    ALTER TABLE airports ADD COLUMN the_geom GEOMETRY ;
+    UPDATE airports SET the_geom = ST_POINT(longitude_deg, latitude_deg) ;
+    ```
+
+    Avec `DESCRIBE` il est facile d'afficher la structure de la table :
+
+    ```sh
+    DESCRIBE airports;
+    ┌───────────────────┬─────────────┬─────────┬─────────┬─────────┬─────────┐
+    │    column_name    │ column_type │  null   │   key   │ default │  extra  │
+    │      varchar      │   varchar   │ varchar │ varchar │ varchar │ varchar │
+    ├───────────────────┼─────────────┼─────────┼─────────┼─────────┼─────────┤
+    │ id                │ BIGINT      │ YES     │         │         │         │
+    │ ident             │ VARCHAR     │ YES     │         │         │         │
+    │ type              │ VARCHAR     │ YES     │         │         │         │
+    │ name              │ VARCHAR     │ YES     │         │         │         │
+    │ latitude_deg      │ DOUBLE      │ YES     │         │         │         │
+    │ longitude_deg     │ DOUBLE      │ YES     │         │         │         │
+    │ elevation_ft      │ BIGINT      │ YES     │         │         │         │
+    │ continent         │ VARCHAR     │ YES     │         │         │         │
+    │ iso_country       │ VARCHAR     │ YES     │         │         │         │
+    │ iso_region        │ VARCHAR     │ YES     │         │         │         │
+    │ municipality      │ VARCHAR     │ YES     │         │         │         │
+    │ scheduled_service │ VARCHAR     │ YES     │         │         │         │
+    │ gps_code          │ VARCHAR     │ YES     │         │         │         │
+    │ iata_code         │ VARCHAR     │ YES     │         │         │         │
+    │ local_code        │ VARCHAR     │ YES     │         │         │         │
+    │ home_link         │ VARCHAR     │ YES     │         │         │         │
+    │ wikipedia_link    │ VARCHAR     │ YES     │         │         │         │
+    │ keywords          │ VARCHAR     │ YES     │         │         │         │
+    │ the_geom          │ GEOMETRY    │ YES     │         │         │         │
+    ├───────────────────┴─────────────┴─────────┴─────────┴─────────┴─────────┤
+    │ 19 rows                                                       6 columns │
+    └─────────────────────────────────────────────────────────────────────────┘
     ```
 
 ### Traiter des données parquet d'Overture Maps avec DuckDB
 
-Les données d’Overture Maps sont fournies sous forme de fichier Parquet ([décrites ici](https://github.com/OvertureMaps/data#data-release-feedback)), nous allons donc importer ces données dans une base pour les consulter.
+Les données d’Overture Maps sont fournies sous forme de fichier Parquet ([décrites ici](https://docs.overturemaps.org/overview/feature-model/)), nous allons donc importer ces données dans une base pour les consulter.
 
 #### Importer les données dans la base
 
@@ -198,53 +266,53 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
 
     ```python
     query_buildings = ("CREATE TABLE buildings AS ( "  
-    "SELECT type, version, CAST(updatetime as varchar) as updateTime, "
-    "height, numfloors as numFloors, level, class, "
+    "SELECT type, version, CAST(update_time as varchar) as updateTime, "
+    "height, num_floors as numFloors, level, class, "
     "ST_GeomFromWKB(geometry) as geometry "
-    "FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
-    "LIMIT 1 ); ")
+    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true) "
+    "LIMIT 100 ); ")
 
-    con.sql(query_admins)
+    con.sql(query_buildings)
     ```
 
 === ":material-console: CLI"
 
     ```sh
-    D. CREATE TABLE buildings AS (  
-        SELECT type, version, CAST(updatetime as varchar) as updateTime,
-        height, numfloors as numFloors, level, class,
+    CREATE TABLE buildings AS (  
+        SELECT type, version, CAST(update_time as varchar) as updateTime,
+        height, num_floors as numFloors, level, class,
         ST_GeomFromWKB(geometry) as geometry
-        FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
-        LIMIT 1
+        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true)
+        LIMIT 100
     );
     ```
 
-Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan en indiquant les coordonnées d’un rectangle (attention requête assez longue)
+Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan en indiquant les coordonnées d’un rectangle (attention requête assez longue) :
 
 === ":snake: Python"
 
     ```python
     query_buildings = ("CREATE TABLE buildings AS ( "  
-    "SELECT type, version, CAST(updatetime as varchar) as updateTime, "
-    "height, numfloors as numFloors, level, class, "
+    "SELECT type, version, CAST(update_time as varchar) as updateTime, "
+    "height, num_floors as numFloors, level, class, "
     "ST_GeomFromWKB(geometry) as geometry "
-    "FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
+    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true) "
     "WHERE bbox.minx > -73.9967900 "
     "AND bbox.maxx < -73.9967900 "
     "AND bbox.miny > 40.7373325 "
     "AND bbox.maxy < 40.7373325 ); ")
 
-    con.sql(query_admins)
+    con.sql(query_buildings)
     ```
 
 === ":material-console: CLI"
 
     ```sh
-    D. CREATE TABLE buildings AS (  
-        SELECT type, version, CAST(updatetime as varchar) as updateTime,
-            height, numfloors as numFloors, level, class,
+    CREATE TABLE buildings AS (  
+        SELECT type, version, CAST(update_time as varchar) as updateTime,
+            height, num_floors as numFloors, level, class,
         ST_GeomFromWKB(geometry) as geometry
-        FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true)
         WHERE bbox.minx > -73.9967900
             AND bbox.maxx < -73.9967900
             AND bbox.miny > 40.7373325
@@ -258,7 +326,6 @@ Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qd
 ![qduckdb](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/qduckdb.png){: .img-center loading=lazy }
 
 !!! info "Transparence"
-
     Attention, cette extension est encore expérimentale (je suis bien placé pour le savoir puisque j'en suis l'un des principaux développeurs :wink:). N'hésitez pas à la tester et à nous faire des retours !  
     J'en profite pour préciser que cet article est une initiative personnelle de ma part. En aucun cas cet article est rédigé ou financé dans le cadre de mes activités chez Oslandia en tant que développeur du plugin.
 
@@ -273,7 +340,7 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
     "SELECT type, version, CAST(updatetime as varchar) as updateTime, "
     "height, numfloors as numFloors, level, class, "
     "ST_GeomFromWKB(geometry) as geometry "
-    "FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1) "
+    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true) "
     "WHERE bbox.minx > -73.9967900 "
     "AND bbox.maxx < -73.9967900 "
     "AND bbox.miny > 40.7373325 "
@@ -287,24 +354,24 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
 === ":material-console: CLI"
 
     ```sh
-    D. COPY (
+    COPY (
         SELECT type, version, CAST(updatetime as varchar) as updateTime,
             height, numfloors as numFloors, level, class,
             ST_GeomFromWKB(geometry) as geometry
-        FROM read_parquet('s3://overturemaps-us-west-2/release/2023-11-14-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true)
         WHERE bbox.minx > -73.9967900
             AND bbox.maxx < -73.9967900
             AND bbox.miny > 40.7373325
-            AND bbox.maxy < 40.7373325 )  
-            TO 'new_york_buildings.geojson'
-            WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
+            AND bbox.maxy < 40.7373325 )
+    TO 'new_york_buildings.geojson'
+    WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
     ```
 
-    :bulb: Également possible d'exporter en Shapefile, pour cela, il faut remplacer les deux dernières lignes par celles-ci :
+    :bulb: Il est également possible d'exporter en Shapefile, pour cela, il faut remplacer les deux dernières lignes par celles-ci :
 
     ```sql
-    ) TO 'new_york_buildings.shp'
-    WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile');
+    TO 'new_york_buildings.shp'
+    WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile', SRS 'EPSG:4326');
     ```
 
 ----
