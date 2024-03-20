@@ -10,7 +10,7 @@
       },
       "headline": "{{ title }}",
       "abstract": "{{ description }}",
-      "datePublished": "{{ date }}",
+      "datePublished": "{{ date }}T13:00:00Z",
       "image": "{{ image }}",
       {% if "rdp/" in page.canonical_url %}
         {# GeoRDP #}
@@ -28,7 +28,7 @@
                 {
                 "@type": "Person",
                 "name": "{{ a }}",
-                "url": "{{ config.site_url }}team/{{ author[0] | slugger }}.html"
+                "url": "{{ config.site_url }}team/{{ author[0] | slugger }}/"
                 {% if a != author|last %}
                 {# Si l'auteur n'est pas le dernier de la liste, on ajoute une virgule #}
                   },
@@ -52,7 +52,7 @@
           "author": {
             "@type": "Person",
             "name": "{{ author[0] }}",
-            "url": "{{ config.site_url }}team/{{ author[0] | slugger }}.html"
+            "url": "{{ config.site_url }}team/{{ author[0] | slugger }}/"
           },
         {% endif %}
       {% else %}
