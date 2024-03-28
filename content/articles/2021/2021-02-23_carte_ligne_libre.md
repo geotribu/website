@@ -465,6 +465,6 @@ Le code complet [se trouve ici](https://bl.ocks.org/mastersigat/30898810b41783ff
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/bmer.md"
+--8<-- "content/team/boris-mericskay.md"
 
 {% include "licenses/cc4_by-sa.md" %}

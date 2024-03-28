@@ -70,22 +70,15 @@
 {% set type = "article" %}
 {% endif %}
 
-{# Twitter #}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:creator" content="@geojulien" />
-<meta name="twitter:description" content="{{ description }}">
-<meta name="twitter:dnt" content="on">
-<meta name="twitter:site" content="@geotribu" />
-<meta name="twitter:title" content="{{ title }}">
-<meta name="twitter:widgets:align" content="center">
-
 <meta name="social:card" content="{{ social_card }}">
+{# JSON Feed #}
+{% include "partials/json_feed.html.jinja2" %}
 {# Semantic web - schemas.org #}
-{% include "partials/schemas.html" %}
+{% include "partials/schemas.html.jinja2" %}
 {# Social cards - OpenGraph #}
-{% include "partials/cards_opengraph.html" %}
+{% include "partials/cards_opengraph.html.jinja2" %}
 {# Social cards - Twitter #}
-{% include "partials/cards_twitter.html" %}
+{% include "partials/cards_twitter.html.jinja2" %}
 
 {% endblock %}
 
@@ -93,5 +86,5 @@
 {% block content %}
 {{ super() }}
 
-{% include "partials/license.html" %}
+{% include "partials/license.html.jinja2" %}
 {% endblock %}

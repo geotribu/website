@@ -678,6 +678,6 @@ Bref, MapLibre c'est une super solution, assez simple de prise en main, donc plu
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/bmer.md"
+--8<-- "content/team/boris-mericskay.md"
 
 {% include "licenses/cc4_by-sa.md" %}

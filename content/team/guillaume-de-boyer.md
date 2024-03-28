@@ -7,6 +7,3 @@ Géomaticien de formation, j’ai rejoint l’Australie en décembre 2011 avec u
 J’aime aussi beaucoup la visualisation de données, l’open-data, le crowdsourcing et tout les concepts qui naissent de l’internet et qui nous aident à définir et réinventer notre corps de métier.
 
 > Twitter : <https://twitter.com/_Geopan>
-
-!!! info
-    :moyai: Ce contributeur n'est plus actif. :wave:

@@ -113,4 +113,4 @@ Comme souligné précédemment, le store inclut dans le `GridPanelfeature` est u
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

@@ -285,6 +285,6 @@ En parallèle et pour d'autres usages, le script de téléchargement des donnée
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fbor.md"
+--8<-- "content/team/florian-boret.md"
 
 {% include "licenses/default.md" %}

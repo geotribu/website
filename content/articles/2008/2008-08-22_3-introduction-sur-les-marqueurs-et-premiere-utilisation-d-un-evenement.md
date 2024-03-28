@@ -128,4 +128,4 @@ La création d'un marqueur est tout aussi facile que l'initialisation de la cart
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

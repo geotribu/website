@@ -256,6 +256,6 @@ def close(self):
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/hfio.md"
+--8<-- "content/team/humbert-fiorino.md"
 
 {% include "licenses/default.md" %}

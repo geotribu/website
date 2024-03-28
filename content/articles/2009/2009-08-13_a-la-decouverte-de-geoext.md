@@ -315,4 +315,4 @@ J'espère que ce petit tour d'horizon de GeoExt vous donnera envie de continuer 
 
 ## Auteur
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

@@ -272,6 +272,6 @@ La solution que je vous propose nécessite un peu de temps de mise en oeuvre et 
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fbor.md"
+--8<-- "content/team/florian-boret.md"
 
 {% include "licenses/default.md" %}

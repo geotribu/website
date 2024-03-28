@@ -316,6 +316,6 @@ Rendez-vous en novembre pour la prochaine édition !
 
 ## Auteur
 
---8<-- "content/team/gall.md"
+--8<-- "content/team/guilhem-allaman.md"
 
 {% include "licenses/beerware.md" %}

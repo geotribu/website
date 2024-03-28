@@ -146,4 +146,4 @@ Voici un exemple concret de ce qu'il est possible de réaliser :
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

@@ -193,4 +193,4 @@ Ce tutoriel décrit les étapes pour afficher des marqueurs via Ajax depuis un s
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

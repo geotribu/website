@@ -196,4 +196,4 @@ Allé, à toi de jouer maintenant !
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/mgal.md"
+--8<-- "content/team/michael-galien.md"

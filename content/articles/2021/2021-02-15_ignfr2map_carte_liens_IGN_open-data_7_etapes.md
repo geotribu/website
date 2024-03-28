@@ -41,8 +41,8 @@ La solution proposée par Julien ne paraissait pas trop complexe à mettre en oe
 
 - De travailler en Bash
 - De se répartir les tâches de la manière suivante :
-    - [@Flo](../../team/fbor.md) sur la construction des scripts
-    - [@Ju](../../team/jmou.md) l’enchainement des scripts et sur le déploiement
+    - [@Flo](../../team/florian-boret.md) sur la construction des scripts
+    - [@Ju](../../team/julien-moura.md) l’enchainement des scripts et sur le déploiement
 
 Et c'est parti pour une aventure en 7 étapes :rocket: !
 
@@ -191,9 +191,9 @@ Un autre article sera publié dans les prochains jours pour vous expliquer la pa
 
 ## Auteurs
 
---8<-- "content/team/fbor.md"
+--8<-- "content/team/florian-boret.md"
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 <!-- Hyperlinks reference -->
 [sed]: https://fr.wikipedia.org/wiki/Stream_Editor

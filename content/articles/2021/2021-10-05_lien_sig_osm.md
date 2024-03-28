@@ -285,6 +285,6 @@ Après la phase de mise en œuvre et d'état des lieux sur le territoire, nous a
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fbor.md"
+--8<-- "content/team/florian-boret.md"
 
 {% include "licenses/default.md" %}

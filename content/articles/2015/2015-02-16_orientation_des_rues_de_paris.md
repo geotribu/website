@@ -227,4 +227,4 @@ Sinon, le cercle chromatique a été réalisé par [sylveno](https://fr.wikipedi
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/mraj.md"
+--8<-- "content/team/mathieu-rajerison.md"

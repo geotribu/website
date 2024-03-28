@@ -130,4 +130,4 @@ Voilà donc la conclusion de notre enquête : **il est 20 fois plus difficile de
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/vale.md"
+--8<-- "content/team/victor-alexandre.md"

@@ -204,6 +204,6 @@ Pour la restitution des données et leur vie après l’acquisition sur le terra
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/vleb.md"
+--8<-- "content/team/valerian-lebert.md"
 
 {% include "licenses/cc4_by-sa.md" %}

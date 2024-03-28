@@ -84,6 +84,6 @@ Une fois installé, le plugin s'intègre :
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/default.md" %}

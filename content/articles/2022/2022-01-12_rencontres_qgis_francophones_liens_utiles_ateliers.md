@@ -142,4 +142,4 @@ J'ai préparé un bloc-notes partagé pour l'occasion :
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"

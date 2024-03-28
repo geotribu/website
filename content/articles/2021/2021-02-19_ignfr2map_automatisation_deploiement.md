@@ -254,9 +254,9 @@ Ce travail semble long mais c'est surtout que j'ai tenu à le détailler car en 
 
 ## Auteurs
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
---8<-- "content/team/fbor.md"
+--8<-- "content/team/florian-boret.md"
 
 <!-- Footnotes -->
 [^1]: oui, j'ai osé ce jeu de mots avec le titre du paragraphe :wink:

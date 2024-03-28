@@ -3,6 +3,7 @@ import datetime
 
 # 3rd party
 from babel.dates import format_date
+from geotribu_cli.utils.slugger import sluggy
 
 
 def define_env(env):
@@ -20,3 +21,8 @@ def define_env(env):
     def date_localized(in_date: datetime.date):
         "Localize a date using babel."
         return format_date(date=in_date, format="long", locale="fr_FR")
+
+    @env.filter
+    def slugger(in_str: str, replacer: str = "-"):
+        "Text slugifier."
+        return sluggy(text_to_slugify=in_str, replacer="-")

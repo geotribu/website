@@ -130,4 +130,4 @@ Et voilà, rien de plus compliqué. Le résultat de ces deux scripts est visible
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

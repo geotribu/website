@@ -153,7 +153,7 @@ Et beaucoup d'autres encore à inventer. À suivre !
 
 ## Auteurs
 
---8<-- "content/team/mfer.md"
---8<-- "content/team/cque.md"
+--8<-- "content/team/mathilde-ferrey.md"
+--8<-- "content/team/christian-quest.md"
 
 {% include "licenses/default.md" %}

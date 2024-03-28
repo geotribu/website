@@ -164,4 +164,4 @@ Et voilà, vous avez le site Geotribu sur votre ordinateur :smile: !
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"

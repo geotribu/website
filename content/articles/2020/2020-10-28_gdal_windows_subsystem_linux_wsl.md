@@ -345,7 +345,7 @@ Pourquoi alors ne pas imaginer déployer [une distribution personnalisée](https
 
 ## Auteurs
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 <!-- Hyperlinks reference -->
 [ogr2ogr]: https://gdal.org/programs/ogr2ogr.html

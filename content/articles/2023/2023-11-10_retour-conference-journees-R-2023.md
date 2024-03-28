@@ -242,6 +242,6 @@ Merci à l'organisation pour ces journées !
 
 ## Autrice
 
---8<-- "content/team/dmon.md"
+--8<-- "content/team/delphine-montagne.md"
 
 {% include "licenses/default.md" %}

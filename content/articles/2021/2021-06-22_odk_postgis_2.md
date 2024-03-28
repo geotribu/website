@@ -418,7 +418,7 @@ Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'�
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/mbos.md"
+--8<-- "content/team/mathieu-bossaert.md"
 
 {% include "licenses/cc4_by-sa.md" %}
 

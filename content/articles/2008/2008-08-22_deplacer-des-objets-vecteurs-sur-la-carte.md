@@ -114,4 +114,4 @@ Les deux blocs de code présentés ci-dessus sont visibles sur l'exemple suivant
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/avan.md"
+--8<-- "content/team/arnaud-vandecasteele.md"

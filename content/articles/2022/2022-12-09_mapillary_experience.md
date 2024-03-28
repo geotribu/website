@@ -343,6 +343,6 @@ Cet article vous illustre mon retour d'expérience matériel concernant la prise
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fbor.md"
+--8<-- "content/team/florian-boret.md"
 
 {% include "licenses/default.md" %}

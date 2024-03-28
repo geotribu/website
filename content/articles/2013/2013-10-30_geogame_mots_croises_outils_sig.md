@@ -32,4 +32,4 @@ Bonne chance !
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jory.md"
+--8<-- "content/team/jeremie-ory.md"

@@ -117,6 +117,6 @@ Merci à la Communauté de Communes Thann-Cernay grâce à qui nous avons pu fai
 
 ## Auteur
 
---8<-- "content/team/srit.md"
+--8<-- "content/team/stephane-ritzenthaler.md"
 
 {% include "licenses/cc4_by-sa.md" %}

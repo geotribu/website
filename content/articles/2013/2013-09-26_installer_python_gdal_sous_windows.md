@@ -288,4 +288,4 @@ Comme [GitHub for Windows](https://windows.github.com/) par exemple.
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"

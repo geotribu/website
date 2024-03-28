@@ -49,6 +49,6 @@ C'est beau l'open source et le travail communautaire, n'est-il pas ?
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/beerware.md" %}

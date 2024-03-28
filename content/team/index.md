@@ -30,7 +30,7 @@ C'est donc un regroupement spontané de personnes autour de leur intérêt pour 
 [Article complet sur la petite histoire de Geotribu :fontawesome-solid-clock-rotate-left:](../articles/2020/2020-08-31_geotribu_histoire.md){: .md-button }
 {: align=middle }
 
-[Florian](fbor.md) a présenté Geotribu dans [l'émission Twitch Les Reclus aux Confins](https://www.twitch.tv/confins), début 2021 :
+[Florian](florian-boret.md) a présenté Geotribu dans [l'émission Twitch Les Reclus aux Confins](https://www.twitch.tv/confins), début 2021 :
 
 <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/fB1dVOVbkME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

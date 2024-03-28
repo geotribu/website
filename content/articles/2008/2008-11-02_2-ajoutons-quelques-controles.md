@@ -107,4 +107,4 @@ L'utilisation des boutons de navigation est exactement la même que le logiciel 
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/fgob.md"
+--8<-- "content/team/fabien-goblet.md"

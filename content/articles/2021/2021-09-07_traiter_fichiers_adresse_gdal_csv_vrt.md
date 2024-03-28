@@ -460,7 +460,7 @@ Enfin, si la ligne de commande vous effraie, il y a aussi des outils disponibles
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/jmou.md"
+--8<-- "content/team/julien-moura.md"
 
 {% include "licenses/beerware.md" %}
 

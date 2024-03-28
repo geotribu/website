@@ -197,6 +197,6 @@ Encore une fois, j'espère sincèrement vous avoir donné l'envie de lire ce liv
 
 ## Auteur {: data-search-exclude }
 
---8<-- "content/team/acha.md"
+--8<-- "content/team/aurelien-chaumet.md"
 
 {% include "licenses/default.md" %}
