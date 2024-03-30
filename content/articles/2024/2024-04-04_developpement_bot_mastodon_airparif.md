@@ -50,6 +50,8 @@ Mais pas seulement ! On va aussi, accessoirement, entre les lignes :
 
 ----
 
+## Dénomination
+
 La première chose à faire, c'est de trouver un nom à notre bot. Eh oui, le nommage c'est important pour ne pas s'emmêler les pinceaux.
 
 Mais tout ça, c'est après une page de pub ! Qui pourrait vous intéresser si jamais votre qarosserie ou votre data a subi un impact...
@@ -58,19 +60,17 @@ Mais tout ça, c'est après une page de pub ! Qui pourrait vous intéresser si j
 
 ![Qargrass répare, Qargrass remplace](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/airbot_mastodon_airparif/qargrass_repare_qargrass_remplace.webp){: .img-center loading=lazy }
 
-:point_right: [OsGeo](https://www.osgeo.org/) :point_left:
+ _Powered by :point_right: [OsGeo](https://www.osgeo.org/) :point_left: pour votre santé et vos trajets courts, veuillez privilégier 5 trajets à pied avec fruizélégumes ou en vélo par jour_
 
 ----
 
-## Dénomination
+On est de retour sur Geotribu, et à ce stade de la dénomination de notre bot, la _short list_ est composée de 4 propositions : `Patrick`, `Patricia`, `Patrice`, et `air_bot`, avec ceci dit une légère préférence pour la dernière.
 
-On est de retour sur Geotribu, et à ce stade de la dénomination de notre bot, la *short list* est composée de 4 propositions : `Patrick`, `Patricia`, `Patrice`, et `air_bot`, avec ceci dit une légère préférence pour la dernière.
-
-Et il n'y a pas que Paname dans la vie (il y a aussi la petite couronne). Et le nom `air_bot` est assez générique, car le [nouvel indice ATMO](https://www.atmo-france.org/) a vocation à normaliser les données de qualité de l'air, et est implémenté notamment [au Bassin](https://www.atmo-nouvelleaquitaine.org/) et [sur la Côte d'Azur](https://www.atmosud.org/air-commune/Ville/13055/previsions). [Le reste](#viendez), désolé, on s'en fiche un peu... Ah si ! Il y a peut-être [la région dans les montagnes là](https://www.atmo-auvergnerhonealpes.fr/), c'est toujours sympa pour les parigots de respirer du bon air au ski... Mais les vrai.e.s sachent que [les Pyrénées](https://www.atmo-occitanie.org/occitanie#forecast_map) c'est aussi stylé ! Et pas qu'en hiver ou au [Tour de France](https://data.opendatasoft.com/explore/dataset/parcours-tour-de-france-a-montpellier-mediterranee-metropole%40occitanie/map/?flg=fr-fr&location=11,43.6354,3.87337&basemap=jawg.streets) !
+Et il n'y a pas que Paname dans la vie (il y a aussi la petite couronne), le nom `air_bot` est générique car le [nouvel indice ATMO](https://www.atmo-france.org/) a vocation à normaliser les données de qualité de l'air, et est implémenté notamment [au Bassin](https://www.atmo-nouvelleaquitaine.org/) et [sur la Côte d'Azur](https://www.atmosud.org/air-commune/Ville/13055/previsions). [Le reste](#viendez), désolé, on s'en fiche un peu... Ah si ! Il y a peut-être [la région dans les montagnes là](https://www.atmo-auvergnerhonealpes.fr/), c'est toujours sympa pour les parigots de respirer du bon air au ski... Mais les vrai.e.s sachent que [les Pyrénées](https://www.atmo-occitanie.org/occitanie#forecast_map) c'est aussi stylé ! Et pas qu'en hiver ou au [Tour de France](https://data.opendatasoft.com/explore/dataset/parcours-tour-de-france-a-montpellier-mediterranee-metropole%40occitanie/map/?flg=fr-fr&location=11,43.6354,3.87337&basemap=jawg.streets) !
 
 ## Gestion de l'environnement virtuel
 
-Qui dit programme en Python ("programme en Python !") dit "gestion de l'environnement virtuel". Ici on va partir sur [poetry](https://python-poetry.org/), parce que quand même, un truc de geek qui s'appelle "poésie" ça claque ! *Where are thou, my dear `virtual_environment` ?* Et quand on vient du Java comme moi, c'est toujours sympa d'avoir un endroit où tout est déclaré, ça rappelle toujours des bons souvenirs, n'est-ce pas Rémi F.
+Qui dit programme en Python ("programme en Python !") dit "gestion de l'environnement virtuel". Ici on va partir sur [poetry](https://python-poetry.org/), parce que quand même, un truc de geek qui s'appelle "poésie" ça claque ! _Where are thou, my dear `virtual_environment` ?_ Et quand on vient du Java comme moi, c'est toujours sympa d'avoir un endroit où tout est déclaré, ça rappelle toujours des bons souvenirs, n'est-ce pas Rémi F.
 
 On peut utiliser `poetry` comme ceci :
 
@@ -105,7 +105,7 @@ Il y a [un swagger](https://fr.wikipedia.org/wiki/Swagger_(logiciel)) qui liste 
 
 L'authentification pour un appel à l'API REST se fait grâce à une clé d'API, dont il faut faire [la demande à AirParif](https://www.airparif.fr/interface-de-programmation-applicative). Et [les prérogatives de la demande de duplicata](https://www.youtube.com/watch?v=2NiPaR0wjQY&pp=ygUgRnJhbsOnb2lzIGwnZW1icm91aWxsZSBkdXBsaWNhdGE%3D) sont plutôt rapides et la demande vite traitée, ce qui a été mon cas.
 
-Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévisionniste d'AirParif, tout comme les valeurs [des 4 polluants réglementés et surveillés](https://www.airparif.fr/surveiller-la-pollution/les-polluants-surveilles), en µg/m³ : NO2, O3, PM10 et PM25 décrits. On peut effectuer cet appel comme ceci en python :
+Pour le développement de ce bot, on aura besoin des données bulletin et prévisions, soit l'appel à [cette route](https://api.airparif.asso.fr/docs#/Indices/get_bulletin_indices_prevision_bulletin_get), qui fournit un texte écrit par le prévisionniste d'AirParif, tout comme les valeurs [des 4 polluants réglementés et surveillés](https://www.airparif.fr/surveiller-la-pollution/les-polluants-surveilles), en µg/m³ : NO2, O3, PM10 et PM25. On peut effectuer cet appel comme ceci en python :
 
 ```python linenums="1" title="API AirParif - requête bulletin"
 import requests
@@ -246,7 +246,7 @@ mastodon = Mastodon(
 
 # création et postage d'un toot automatique avec une image
 mastodon.status_post(
-    status="Bonjour 👋, le vrai sens de la vie réside dans le fromage 🧀💟",
+    status="Bonjour 👋 le vrai sens de la vie réside dans le fromage 🧀💟",
     media_ids=[
         mastodon.media_post(
             "/chemin/vers/image/de/fromage.png",
