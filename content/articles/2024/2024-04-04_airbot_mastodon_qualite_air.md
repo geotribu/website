@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-04-04
-description: Des cartes automatiques et géopulmonaires, sur le Fédivers, pour avertir des épisodes de pollution et de qualité de l'air en Ile-de-France
+description: Des cartes automatiques et géopulmonaires, sur le Fédivers, pour avertir des épisodes de pollution et de qualité de l'air en Ile-de-France et pas que
 icon: material/air-conditioner
 license: beerware
 robots: index, follow
@@ -192,8 +192,7 @@ On est de retour sur Geotribu, et on va aborder la partie Mastodon, le réseau s
 Il nous faut à présent choisir une instance pour créer le compte de notre bot. Il y a deux options possibles à mes yeux :
 
 - l'instance [botsin.space](https://botsin.space/about), "une instance pour les bots et les alliés des bots", qui est parfois instable du fait du zbeul qui règne dessus
-- l'instance [mapstodon.space](https://mapstodon.space/about), mise en place pour les géo* grâce à [Jérémy](https://mapstodon.space/@jeremy) et les admins
-
+- l'instance [mapstodon.space](https://mapstodon.space/about), mise en place pour les géo* grâce à [Jérémy](https://mapstodon.space/@jeremy) et les admins  
 Ça part sur la deuxième option, merci Jérémy !
 
 On peut suivre [l'article de Julien](./2024-02-16_de-twitter-a-mastodon-guide-geo-import-liste-comptes.md) pour dérouler la création d'un compte.
