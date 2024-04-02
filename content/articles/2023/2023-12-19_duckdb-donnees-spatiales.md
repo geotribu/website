@@ -104,21 +104,6 @@ Enfin un [article](https://dev.to/savo/spatial-data-analysis-with-duckdb-40j9) s
 
 Pour suivre la suite de ce tutoriel, il vous faut donc avoir installé DucKDB. Deux possibilités :
 
-- :material-console: Soit l’exécutable DuckDB pour utiliser l'interface en ligne de commande (CLI) dont l'invite change pour un `D` (que nous ignorerons dans les blocs de code suivants) :
-
-<!-- markdownlint-disable MD040 -->
-<!-- termynal -->
-
-```sh
-$ duckdb
-v0.9.2 3c695d7ba9
-Enter ".help" for usage hints.
-Connected to a transient in-memory database.
-Use ".open FILENAME" to reopen on a persistent database.
-D
-```
-<!-- markdownlint-enable MD040 -->
-
 - :snake: Soit un environnement Python intégrant le [paquet duckdb](https://pypi.org/project/duckdb/). DuckDB utilisant de nombreuses dépendances, il est fortement conseillé d’utiliser un environnement virtuel pour éviter les conflits de dépendances.
 
 <!-- markdownlint-disable MD040 -->
@@ -130,6 +115,24 @@ $ pip install duckdb
 Installing collected packages: duckdb
 Successfully installed duckdb-0.9.2
 ```
+
+<!-- markdownlint-enable MD040 -->
+
+ou
+
+- :material-console: Soit l’exécutable DuckDB pour utiliser l'interface en ligne de commande (CLI) dont l'invite change pour un `D` (que nous ignorerons dans les blocs de code suivants) :
+
+<!-- markdownlint-disable MD040 -->
+<!-- termynal -->
+
+```sh
+v0.9.2 3c695d7ba9
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+D
+```
+
 <!-- markdownlint-enable MD040 -->
 
 ### Création d’une base de données, ou l’ouvrir si elle existe déjà
@@ -265,12 +268,19 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
 === ":snake: Python"
 
     ```python
-    query_buildings = ("CREATE TABLE buildings AS ( "  
-    "SELECT type, version, CAST(update_time as varchar) as updateTime, "
-    "height, num_floors as numFloors, level, class, "
-    "ST_GeomFromWKB(geometry) as geometry "
-    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true) "
-    "LIMIT 100 ); ")
+    query_buildings = ("create table buildings as ( SELECT"
+        "type,"
+        "version,"
+        "height,"
+        "level,"
+        "class,"
+        "JSON(names) as names,"
+        "JSON(sources) as sources,"
+        "ST_GeomFromWKB(geometry) as geometry"
+        "FROM"
+        "read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)"
+        "LIMIT 100);"
+    )
 
     con.sql(query_buildings)
     ```
@@ -278,45 +288,61 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
 === ":material-console: CLI"
 
     ```sh
-    CREATE TABLE buildings AS (  
-        SELECT type, version, CAST(update_time as varchar) as updateTime,
-        height, num_floors as numFloors, level, class,
-        ST_GeomFromWKB(geometry) as geometry
-        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true)
-        LIMIT 100
-    );
+    create table buildings as ( SELECT
+    type,
+    version,
+    height,
+    level,
+    class,
+    JSON(names) as names,
+    JSON(sources) as sources,
+    ST_GeomFromWKB(geometry) as geometry
+    FROM
+    read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+    LIMIT 100);
     ```
 
-Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan en indiquant les coordonnées d’un rectangle (attention requête assez longue) :
+Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville de Laval en indiquant les coordonnées d’un rectangle (attention requête assez longue)
 
 === ":snake: Python"
 
     ```python
-    query_buildings = ("CREATE TABLE buildings AS ( "  
-    "SELECT type, version, CAST(update_time as varchar) as updateTime, "
-    "height, num_floors as numFloors, level, class, "
-    "ST_GeomFromWKB(geometry) as geometry "
-    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true) "
-    "WHERE bbox.minx > -73.9967900 "
-    "AND bbox.maxx < -73.9967900 "
-    "AND bbox.miny > 40.7373325 "
-    "AND bbox.maxy < 40.7373325 ); ")
+    query_buildings = ("create table laval_buildings as ( SELECT "
+    "type,"
+    "version,"
+    "height,"
+    "level,"
+    "class,"
+    "JSON(names) as names,"
+    "JSON(sources) as sources,"
+    "ST_GeomFromWKB(geometry) as geometry"
+    "FROM"
+    "read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)"
+    "WHERE bbox.minx > -0.7948129589175504"
+    "AND bbox.maxx < -0.7472280816538276"
+    "AND bbox.miny > 48.069335046027035"
+    "AND bbox.maxy < 48.073450034830316 );")
 
-    con.sql(query_buildings)
+    con.sql(query_admins)
     ```
 
 === ":material-console: CLI"
 
     ```sh
-    CREATE TABLE buildings AS (  
-        SELECT type, version, CAST(update_time as varchar) as updateTime,
-            height, num_floors as numFloors, level, class,
-        ST_GeomFromWKB(geometry) as geometry
-        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true)
-        WHERE bbox.minx > -73.9967900
-            AND bbox.maxx < -73.9967900
-            AND bbox.miny > 40.7373325
-            AND bbox.maxy < 40.7373325 );
+    create table laval_buildings as ( SELECT
+    type,
+    version,
+    height,
+    level,
+    JSON(names) as names,
+    JSON(sources) as sources,
+    ST_GeomFromWKB(geometry) as geometry
+    FROM
+    read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+    WHERE bbox.minx > -0.7948129589175504
+    AND bbox.maxx < -0.7472280816538276
+    AND bbox.miny > 48.069335046027035
+    AND bbox.maxy < 48.073450034830316);
     ```
 
 #### Visualiser les données dans QGIS
@@ -324,6 +350,10 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de Manhattan
 Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qduckdb/), en cochant la case `Afficher les extensions expérimentales` dans l'onglet `Paramètres` du gestionnaire d'extensions.
 
 ![qduckdb](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/qduckdb.png){: .img-center loading=lazy }
+
+Puis charger la couche avec le plugin.
+
+![qgis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/overtures_maps.png){: .img-center loading=lazy }
 
 !!! info "Transparence"
     Attention, cette extension est encore expérimentale (je suis bien placé pour le savoir puisque j'en suis l'un des principaux développeurs :wink:). N'hésitez pas à la tester et à nous faire des retours !  
@@ -337,15 +367,22 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
 
     ```python
     query_export_buildings = ("COPY ( "  
-    "SELECT type, version, CAST(updatetime as varchar) as updateTime, "
-    "height, numfloors as numFloors, level, class, "
-    "ST_GeomFromWKB(geometry) as geometry "
-    "FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true) "
-    "WHERE bbox.minx > -73.9967900 "
-    "AND bbox.maxx < -73.9967900 "
-    "AND bbox.miny > 40.7373325 "
-    "AND bbox.maxy < 40.7373325 )  "
-    "TO 'new_york_buildings.geojson' "
+    "SELECT "
+    "type,"
+    "version,"
+    "height,"
+    "level,"
+    "class,"
+    "JSON(names) as names,"
+    "JSON(sources) as sources,"
+    "ST_GeomFromWKB(geometry) as geometry"
+    "FROM"
+    "read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)"
+    "WHERE bbox.minx > -0.7948129589175504"
+    "AND bbox.maxx < -0.7472280816538276"
+    "AND bbox.miny > 48.069335046027035"
+    "AND bbox.maxy < 48.0842516213572821)  "
+    "TO 'laval_buildings.geojson' "
     " WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326'); ")
 
     con.sql(query_export_buildings)
@@ -355,22 +392,28 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
 
     ```sh
     COPY (
-        SELECT type, version, CAST(updatetime as varchar) as updateTime,
-            height, numfloors as numFloors, level, class,
-            ST_GeomFromWKB(geometry) as geometry
-        FROM read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1, union_by_name=true)
-        WHERE bbox.minx > -73.9967900
-            AND bbox.maxx < -73.9967900
-            AND bbox.miny > 40.7373325
-            AND bbox.maxy < 40.7373325 )
-    TO 'new_york_buildings.geojson'
+    SELECT
+    type,
+    version,
+    height,
+    level,
+    JSON(names) as names,
+    JSON(sources) as sources,
+    ST_GeomFromWKB(geometry) as geometry
+    FROM
+    read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+    WHERE bbox.minx > -0.7948129589175504
+    AND bbox.maxx < -0.7472280816538276
+    AND bbox.miny > 48.069335046027035
+    AND bbox.maxy < 48.073450034830316)
+    TO 'laval_buildings.geojson'
     WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
     ```
 
     :bulb: Il est également possible d'exporter en Shapefile, pour cela, il faut remplacer les deux dernières lignes par celles-ci :
 
     ```sql
-    TO 'new_york_buildings.shp'
+    TO 'laval_buildings.shp'
     WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile', SRS 'EPSG:4326');
     ```
 
