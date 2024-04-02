@@ -307,7 +307,7 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville 
 === ":snake: Python"
 
     ```python
-    query_buildings = ("create table buildings_emprise as ( SELECT "
+    query_buildings = ("create table laval_buildings as ( SELECT "
     "type,"
     "version,"
     "height,"
@@ -318,10 +318,10 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville 
     "ST_GeomFromWKB(geometry) as geometry"
     "FROM"
     "read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)"
-    "WHERE bbox.minx > -0.7563972089844927"
-    "AND bbox.maxx < -0.75077968352670021"
-    "AND bbox.miny > 48.08421116079705371"
-    "AND bbox.maxy < 48.08425162135728215 );")
+    "WHERE bbox.minx > -0.7948129589175504"
+    "AND bbox.maxx < -0.7472280816538276"
+    "AND bbox.miny > 48.069335046027035"
+    "AND bbox.maxy < 48.073450034830316 );")
 
     con.sql(query_admins)
     ```
@@ -329,7 +329,7 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville 
 === ":material-console: CLI"
 
     ```sh
-    create table buildings_emprise as ( SELECT
+    create table laval_buildings as ( SELECT
     type,
     version,
     height,
@@ -339,10 +339,10 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville 
     ST_GeomFromWKB(geometry) as geometry
     FROM
     read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
-    WHERE bbox.minx > -0.7563972089844927
-    AND bbox.maxx < -0.75077968352670021
-    AND bbox.miny > 48.08421116079705371
-    AND bbox.maxy < 48.08425162135728215);
+    WHERE bbox.minx > -0.7948129589175504
+    AND bbox.maxx < -0.7472280816538276
+    AND bbox.miny > 48.069335046027035
+    AND bbox.maxy < 48.073450034830316);
     ```
 
 #### Visualiser les données dans QGIS
@@ -378,11 +378,11 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
     "ST_GeomFromWKB(geometry) as geometry"
     "FROM"
     "read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)"
-    "WHERE bbox.minx > -73.9967900 "
-    "AND bbox.maxx < -73.9967900 "
-    "AND bbox.miny > 40.7373325 "
-    "AND bbox.maxy < 40.7373325 )  "
-    "TO 'new_york_buildings.geojson' "
+    "WHERE bbox.minx > -0.7948129589175504"
+    "AND bbox.maxx < -0.7472280816538276"
+    "AND bbox.miny > 48.069335046027035"
+    "AND bbox.maxy < 48.0842516213572821)  "
+    "TO 'laval_buildings.geojson' "
     " WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326'); ")
 
     con.sql(query_export_buildings)
@@ -391,7 +391,7 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
 === ":material-console: CLI"
 
     ```sh
-    D. COPY (
+    COPY (
     SELECT
     type,
     version,
@@ -402,18 +402,18 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
     ST_GeomFromWKB(geometry) as geometry
     FROM
     read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
-    WHERE bbox.minx > -73.9967900
-    AND bbox.maxx < -73.9967900
-    AND bbox.miny > 40.7373325
-    AND bbox.maxy < 40.7373325 )  
-    TO 'new_york_buildings.geojson'
+    WHERE bbox.minx > -0.7948129589175504
+    AND bbox.maxx < -0.7472280816538276
+    AND bbox.miny > 48.069335046027035
+    AND bbox.maxy < 48.073450034830316)
+    TO 'laval_buildings.geojson'
     WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
     ```
 
     :bulb: Il est également possible d'exporter en Shapefile, pour cela, il faut remplacer les deux dernières lignes par celles-ci :
 
     ```sql
-    TO 'new_york_buildings.shp'
+    TO 'laval_buildings.shp'
     WITH (FORMAT GDAL, DRIVER 'ESRI Shapefile', SRS 'EPSG:4326');
     ```
 
