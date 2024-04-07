@@ -21,7 +21,7 @@ tags:
 
 (et aussi un petit tuto gdal en lignes de commandes)
 
-Cet article se base sur celui initialement paru en anglais sur [somethingaboutmaps](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/), dont on remerciera l'auteur pour l'article initial et l'aimable autorisation d'écrire celui-ci. 
+Cet article se base sur celui initialement paru en anglais sur [somethingaboutmaps](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/), dont on remerciera l'auteur pour l'article initial et l'aimable autorisation d'écrire celui-ci.
 
 Ou comment faire des cartes qui ont la classe. Grossièrement, la technique consiste à déformer un plan avec un raster d'élévation.
 
@@ -43,19 +43,19 @@ Sur ces considérations on chargera plutôt la couche "dalles" [dans le format d
 
 On va ici créer un fichier qui nous permettra de fusionner les dalles voulues pour notre carte.
 
-- Dans Qgis, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format csv qu'on nommera select.csv. 
-- On ouvre ce fichier dans LibreOfficeCalc (ou logiciels propriétaires équivalents) et on supprime toutes les colonnes sauf celle contenant le nom des tuiles ansi que l'entête des colonnes. 
+- Dans Qgis, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format csv qu'on nommera select.csv.
+- On ouvre ce fichier dans LibreOfficeCalc (ou logiciels propriétaires équivalents) et on supprime toutes les colonnes sauf celle contenant le nom des tuiles ansi que l'entête des colonnes.
 - Dans la colonne adjacente on écrit cette formule :
 
 ```
 # Libre office
-=CONCAT(A1;".asc") 
+=CONCAT(A1;".asc")
 # Excel
 =CONCATENER(A1;".asc")
 ```
 
 - On tire la formule et on remplace par les valeurs "en dur " avec un collage spécial
-- Puis on supprime la colonne d'origine. 
+- Puis on supprime la colonne d'origine.
 - Enfin on change à la brutasse l'extension du fichier en .txt ce qui nous donne une fois ouvert :
 
 ![exemple fichier tuile](https://github.com/thomas-szczurek/images/blob/main/img2_tuiles.png)
@@ -91,7 +91,7 @@ Et maitenant on va utiliser [gdal_merge.py](https://gdal.org/programs/gdal_merge
 gdal_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
 ```
 
-L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière gdal donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension. 
+L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière gdal donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension.
 
 `-co` correspond aux options spécifiques non pas du programme mais du driver du type de fichier (ici geotiff). BIGTIFF permet de faire des tif de plus de 4gb. Ce n'est pas mon cas ici mais ça ne coute rien de passer la commande par sécurité.
 
@@ -197,7 +197,7 @@ En cliquant là :
 
 ![La](https://github.com/thomas-szczurek/images/blob/main/img8_engine.png)
 
-Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute. 
+Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute.
 
 En fonction de votre carte graphique, vous pouvez aussi faire un tour par le menu edit -> preferences -> system et choisir en fonction de votre crémerie ce qui sera utilisé par Cycles. Choisir [OptiX](https://fr.wikipedia.org/wiki/OptiX) chez Nvidia / [HIP](https://rocm.docs.amd.com/projects/HIP/en/latest/index.html) chez AMD si votre configuration matérielle le supporte (hey, vous venez sur un tuto 3d, il faut s'attendre à ce genre de phrases !).
 
@@ -370,7 +370,7 @@ On retourne dans le 3D view port. La caméra, c'est ce machin :
 
 Elle determine la position de la vue lors des rendus. En appuyant sur la touche 0 du pavé numérique de votre clavier vous pouvez "voir" ce que voit la caméra (réaappuyer sur 0 pour sortir). Si l'idée saugrenue d'utiliser Blender sur un pc portable vous est venue, il faudra à chaque fois passer par le menu View -> Cameras -> active Camera pour obtenir le même effet.
 
-On veut que notre caméra soit située juste au dessus de notre plan, et avec un angle de 0 degrés. 
+On veut que notre caméra soit située juste au dessus de notre plan, et avec un angle de 0 degrés.
 
 - On la selection (elle devient orange)
 - On va dans le paneau des propriétés de l'objet.
@@ -408,7 +408,7 @@ Pour passer la caméra en vue orthographique, on la sélectionne, puis dans ses 
 
 ![ortho](https://github.com/thomas-szczurek/images/blob/main/img30_ortho2.png)
 
-Vous verrez par contre que maintenant votre caméra prends une zone beaucoup plus grande que votre plan. Pour remedier  à ça, il faut paramétrer la valeur d'`orthographic scale` de ce même panneau. Pour trouver la bonne valeur, il faut multiplier par deux la plus grande dimension de votre plan. Ainsi, j'avais créé un plan de 0,8 * 0,7, donc dans mon cas 0,8 * 2 = 1,6. J'ai réussi ça de tête.
+Vous verrez par contre que maintenant votre caméra prends une zone beaucoup plus grande que votre plan. Pour remedier  à ça, il faut paramétrer la valeur d'`orthographic scale` de ce même panneau. Pour trouver la bonne valeur, il faut multiplier par deux la plus grande dimension de votre plan. Ainsi, j'avais créé un plan de 0,8 *0,7, donc dans mon cas 0,8* 2 = 1,6. J'ai réussi ça de tête.
 
 ![rendu 3 ou 4 je sais plus](https://github.com/thomas-szczurek/images/blob/main/img31_render3.png)
 
@@ -422,7 +422,7 @@ On va maintenant régler la source de lumière qui éclaire notre sène. La sour
 
 ![lumière](https://github.com/thomas-szczurek/images/blob/main/img32_light.png)
 
-Après l'avoir selectionnée, cliquez sur l'icone en forme de bulbe d'ampoule pour accéder à ses propriétés. 
+Après l'avoir selectionnée, cliquez sur l'icone en forme de bulbe d'ampoule pour accéder à ses propriétés.
 
 ![réglages lumière](https://github.com/thomas-szczurek/images/blob/main/img33_light2.png)
 
@@ -436,7 +436,7 @@ Une ampoule près de vous envera ses rayons dans toutes les directions, dans le 
 
 Avec ce type de lumière, la position de l'objet la générant dans la scène n'est pas importante. Si vous effectuez un rendu maintenant vous vous rendrez compte que tout est très surexposé car nous n'avons pas réglé sa force (strength). Passons ce paramètre de 1000 à ... 5.
 
-Pour définir l'angle d'incidence des rayons lumineux il faut se rendre dans les propriétés de l'objet (attention à bien le sélectionner) et changer sa rotation (pour les sources de lumière de type soleil). 
+Pour définir l'angle d'incidence des rayons lumineux il faut se rendre dans les propriétés de l'objet (attention à bien le sélectionner) et changer sa rotation (pour les sources de lumière de type soleil).
 
 Indiquer 0 pour x, 45 pour y et 135 pour z.
 
