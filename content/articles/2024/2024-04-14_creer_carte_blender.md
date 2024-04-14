@@ -29,7 +29,7 @@ Je vais ici utiliser le  MNT à 1 mètre issus du [RGE ALTI](https://geoservices
 
 Il y a plusieurs étapes de préparation des données et l'une d'entre elle nécessite obligatoirement l'utilisation de gdal en lignes de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tout les pré-traitmements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec Qgis).
 
-Ceci implique d'avoir accès à gdal. Sur windows ça passe en se rendant dans votre répertoire d'installation de Qgis et ensuite en démarrant OSGeo4W.bat dans le répertoire d'installation. Je considère que les linuxiens sont assez aguéris pour se débrouiller (au pire faites vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux appeliens (sauf à ma cheffe de service car je suis bien obligé).
+Ceci implique d'avoir accès à gdal. Sur windows ça passe en se rendant dans votre répertoire d'installation de Qgis et ensuite en démarrant OSGeo4W.bat. Je considère que les linuxiens sont assez aguéris pour se débrouiller (au pire faites vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux appeliens (sauf à ma cheffe de service car je suis bien obligé).
 
 ## Préparation des données
 
