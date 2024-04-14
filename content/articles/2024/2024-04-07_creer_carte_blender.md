@@ -8,7 +8,7 @@ comments: true
 date: 2024-04-07
 description: "Technique permettant de réaliser des cartes de relief avec le logiciel libre 3d Blender, ainsi qu'un petit tutoriel gdal"
 icon: simple/blender
-image: title.png
+image: https://github.com/thomas-szczurek/images/blob/main/title.png
 license: default
 robots: index, follow
 tags:
@@ -21,19 +21,19 @@ tags:
 
 (et aussi un petit tuto gdal en lignes de commandes)
 
-Cet article se base sur celui initialement paru en anglais sur [somethingaboutmaps](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/), dont on remerciera l'auteur pour l'article initial et l'aimable autorisation d'écrire celui-ci.
+Cet article se base sur celui initialement paru en anglais sur [somethingaboutmaps](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/), dont on remerciera l'auteur pour l'article initial et l'aimable autorisation d'écrire celui-ci. 
 
 Ou comment faire des cartes qui ont la classe. Grossièrement, la technique consiste à déformer un plan avec un raster d'élévation.
 
 Je vais ici utiliser le  MNT à 1 mètre issus du [RGE ALTI](https://geoservices.ign.fr/rgealti) de l'IGN sur le département des Pyrennées Atlantiques, ce qui permettra d'avoir et du relief (ce qui rend bien avec cette technique) et de la mer (sacro-sainte règle des effets de manche pour avoir la classe : mettez de la flotte).
 
-Il y a plusieurs étapes de préparation des données et l'une d'entre elle necessite obligatoirement l'utilisation de gdal en lignes de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cette article pour essayer de faire tout les pré-traitmements raster en ligne de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec Qgis).
+Il y a plusieurs étapes de préparation des données et l'une d'entre elle nécessite obligatoirement l'utilisation de gdal en lignes de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tout les pré-traitmements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec Qgis).
 
-Ceci implique d'avoir accès à gdal. Sur windows ça passe par une installation de qgis via [l'installateur osgeo](https://qgis.org/en/site/forusers/alldownloads.html#osgeo4w-installer) (faites juste une express install) et ensuite en démarrant osgeo_shell.bat dans le répertoire d'installation. Je considère que les linuxiens sont assez agéris pour se débrouiller (au pire faites vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux appeliens (sauf à ma cheffe de service car je suis bien obligé).
+Ceci implique d'avoir accès à gdal. Sur windows ça passe en se rendant dans votre répertoire d'installation de Qgis et ensuite en démarrant OSGeo4W.bat dans le répertoire d'installation. Je considère que les linuxiens sont assez aguéris pour se débrouiller (au pire faites vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux appeliens (sauf à ma cheffe de service car je suis bien obligé).
 
 ## Préparation des données
 
-Après récupération du jeu de données, chargez une des dalles au format asc dans qgis. Le format asc ne gère pas les projections et Qgis essayera par défaut de les positionner en WGS 84 (ne vous inquitez pas, les coordonnées sont les bonnes). Vous pouvez repositionner l'image en cliquant sur la petite icone de l'image ci-dessous et en spécifiant ce bon vieux Lambert 93.
+Après récupération du jeu de données, chargez une des dalles au format asc dans qgis. Le format asc ne gère pas les projections et Qgis essayera par défaut de les positionner en WGS 84 (ne vous inquietez pas, les coordonnées sont les bonnes). Vous pouvez repositionner l'image en cliquant sur la petite icône de l'image ci-dessous et en spécifiant ce bon vieux Lambert 93.
 
 ![Ca arrive même aux meilleurs](https://github.com/thomas-szczurek/images/blob/main/img1_lign.png)
 
@@ -43,19 +43,19 @@ Sur ces considérations on chargera plutôt la couche "dalles" [dans le format d
 
 On va ici créer un fichier qui nous permettra de fusionner les dalles voulues pour notre carte.
 
-- Dans Qgis, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format csv qu'on nommera select.csv.
-- On ouvre ce fichier dans LibreOfficeCalc (ou logiciels propriétaires équivalents) et on supprime toutes les colonnes sauf celle contenant le nom des tuiles ansi que l'entête des colonnes.
+- Dans Qgis, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format csv qu'on nommera select.csv. 
+- On ouvre ce fichier dans LibreOfficeCalc (ou logiciel propriétaire équivalent) et on supprime l'entête des colonnes ainsi que toutes les colonnes sauf celle contenant le nom des tuiles. 
 - Dans la colonne adjacente on écrit cette formule :
 
 ```
 # Libre office
-=CONCAT(A1;".asc")
+=CONCAT(A1;".asc") 
 # Excel
 =CONCATENER(A1;".asc")
 ```
 
 - On tire la formule et on remplace par les valeurs "en dur " avec un collage spécial
-- Puis on supprime la colonne d'origine.
+- Puis on supprime la colonne d'origine. 
 - Enfin on change à la brutasse l'extension du fichier en .txt ce qui nous donne une fois ouvert :
 
 ![exemple fichier tuile](https://github.com/thomas-szczurek/images/blob/main/img2_tuiles.png)
@@ -91,7 +91,7 @@ Et maitenant on va utiliser [gdal_merge.py](https://gdal.org/programs/gdal_merge
 gdal_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
 ```
 
-L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière gdal donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension.
+L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière gdal donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension. 
 
 `-co` correspond aux options spécifiques non pas du programme mais du driver du type de fichier (ici geotiff). BIGTIFF permet de faire des tif de plus de 4gb. Ce n'est pas mon cas ici mais ça ne coute rien de passer la commande par sécurité.
 
@@ -108,19 +108,19 @@ On va maintenant reprojeter (vous vous souvenez des fichiers asc ?) notre image 
 Se déplacer dans le répertoire où vous avez placé l'image et :
 
 ```bash
-gdalwarp -t_srs EPSG:2154 -r cubic -co BIGTIFF=YES mosaic.tif mosaicl93.tif
+gdalwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
 ```
 
 - L'option `-t_srs` sert à indiquer le srid de sortie.
-- `-r` permet de spécifier la méthode de rééchantillonage. Le choix dépasse le cadre de cet article mais sachez que des methodes avancées comme cubicspline ou lanczos peuvent donner des résultats "floutés" ce qui ne correspond pas à notre cas d'usage. Par défaut la méthode est nearest neighbour mais j'utilise du cubique pour aller quand même un peu plus loin :)
+- `-r` permet de spécifier la méthode de rééchantillonage. Le choix dépasse le cadre de cet article mais sachez que des methodes avancées comme cubicspline ou lanczos peuvent donner des résultats "floutés" car modifiant la valeur des pixels selon des courbes. On va rester sur la méthode par défaut : nearest neighbour (plus proche voisin) pour ne pas modifier la valeur de nos pixels, simplement les "déplacer".
 
-Pour celles et ceux à l'aise avec gdal, **ne pas** compresser les images pour que blender puisse les lire (pour les autres, ça se fait avec `-co COMPRESS=methode`, la plus courrament utilisée étant `-co COMPRESS=DEFLATE` pour s'assurer de la compatibilité avec tous les systèmes).
+Pour celles et ceux à l'aise avec gdal, vous pouvez compresser les images pour réduire la taille des fichiers de sortie au moins en deflate (pour les autres, ça se fait en passant une seconde option pour le driver de type de fichier : `-co COMPRESS=methode`, la plus courrament utilisée étant `-co COMPRESS=DEFLATE` pour s'assurer de la compatibilité avec tous les systèmes / logiciels).
 
 Sinon, ça se fait avec raster -> Projection -> Assigner une projection dans Qgis.
 
 ### Fausser les données
 
-Oui. Nous allons commettre ceci. Ne sortez pas les bidons d'essence tout de suite s'il vous plait. Pour ce que nous allons en faire, Blender n'accepte que les images en entiers 16 bits non signés (UInt16, on y reviendra), donc une plage de valeur pour les pixels comprise entre 0 et 65 535. Mais sans virgules, ce que contient notre raster initial donc on perdrait du détail. L'idée est donc de réattribuer aux pixels de notre image des valeurs sur l'ensemble de cette plage, ceci pour bénéficier de l'entièreté de cette finesse.
+Oui. Nous allons commettre ceci. Ne sortez pas les bidons d'essence tout de suite s'il vous plait. Pour ce que nous allons en faire, Blender n'accepte que les images en entier 16 bits non signés (UInt16, on y reviendra), donc une plage de valeur pour les pixels comprise entre 0 et 65 535. Mais sans virgules, ce que contient notre raster initial donc on perdrait du détail. L'idée est donc de réattribuer aux pixels de notre image des valeurs sur l'ensemble de cette plage, ceci pour bénéficier de l'entièreté de cette finesse.
 
 On fait ça avec [gdal_calc.py](https://gdal.org/programs/gdal_calc.html) mais on peut aussi rester simple et faire ça avec la calculatrice raster de Qgis.
 
@@ -158,7 +158,7 @@ Le calcul à faire pour réaffecter nos pixels est le suivant :
 Dans mon cas celà donne :
 
 ```bash
-gdal_calc.py -A mosaic_cut.tif --oufile=mosaic_rescale.tif --calc="(A - 0) / (196.8 - 0) * 65535"
+gdal_calc.py -A mosaic_cut.tif --outfile=mosaic_rescale.tif --calc="(A - 0) / (196.8 - 0) * 65535"
 ```
 
 Dans la calculatrice raster de Qgis celà donnerai :
@@ -197,7 +197,7 @@ En cliquant là :
 
 ![La](https://github.com/thomas-szczurek/images/blob/main/img8_engine.png)
 
-Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute.
+Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute. 
 
 En fonction de votre carte graphique, vous pouvez aussi faire un tour par le menu edit -> preferences -> system et choisir en fonction de votre crémerie ce qui sera utilisé par Cycles. Choisir [OptiX](https://fr.wikipedia.org/wiki/OptiX) chez Nvidia / [HIP](https://rocm.docs.amd.com/projects/HIP/en/latest/index.html) chez AMD si votre configuration matérielle le supporte (hey, vous venez sur un tuto 3d, il faut s'attendre à ce genre de phrases !).
 
@@ -213,7 +213,7 @@ Pour se déplacer, appuyez sur le bouton central de votre souris (le clic de la 
 
 ## Modéliser le relief
 
-Tout d'abord, on retire cube par défaut en cliquant dessus pour le sélectionner puis en appuyant sur `suppr` de votre clavier et on ajoute un plan à notre scène. `shift + A` -> mesh -> plane. Ne pas supprimer la caméra et la source de lumière.
+Tout d'abord, on retire cube par défaut en cliquant dessus pour le sélectionner puis en appuyant sur `suppr` de votre clavier et on ajoute un plan à notre scène. `shift + A` -> mesh -> plane. Ne pas supprimer la caméra et la source de lumière (les autres trucs présents dans la scène par défaut).
 
 Par défaut les objets apparaissent sous le "curseur 3D" mais on va déplacer notre plan pour le mettre aux coordonnées x 0 y 0 z 0 pour se simplifier la vie si ce n'est pas le cas.
 
@@ -235,9 +235,9 @@ Je ne répeterai pas cette information mais pensez à sauvegarder ! File -> save
 
 ### Déformer le plan
 
-C'est ici qu'on va commencer à faire des trucs un peu compliqués.
+C'est ici qu'on va commencer a faire des trucs un peu compliqués.
 
-Dans le monde réel, les substances tlles que le bois, la roche, le verre ... semblent différentes les unes des autres car elles ont des couleurs, des textures, une rugosité différentes. Blender est conçu pour simuler ces variations en permettant d'attribuer des propriétés reflétant ceci aux `materiaux` attribués aux objets. Les moteurs de rendus calculent ensuite l'apparence des objets ainsi que la dispersion et les rebonds de la lumière en fonction de ces `matériaux`.
+Dans le monde réel, les substances telles que le bois, la roche, le verre ... semblent différentes les unes des autres car elles ont des couleurs, des textures, une rugosité différentes. Blender est conçu pour simuler ces variations en permettant d'attribuer des propriétés reflétant ceci aux `materiaux` attribués aux objets. Les moteurs de rendus calculent ensuite l'apparence des objets ainsi que la dispersion et les rebonds de la lumière en fonction de ces `matériaux`.
 
 Pour l'instant, notre plan ne possèque aucun matériau, ce pourquoi il apparait gris mat. Si vous effectuez un rendu en cliquant sur render -> render image, ou en choissant le mode de visualisation "rendu" dans le 3d view port, vous vous en rendrez compte.
 
@@ -249,7 +249,7 @@ Puis cliquez sur `New`. Blendez créera alors un nouveau materiau nommé Materia
 
 Pour l'instant nous ne modifierons rien mais voici quelques explications :
 
-- L'option `Surface` indique "Principled BSDF". Ce n'est pas référence à une pratique étrange du yoga mais à un `shader` utilisant une ["Bidirectional Scattering Distribution Function"](https://en.wikipedia.org/wiki/Bidirectional_scattering_distribution_function). Les `shaders` indiquent à Blender la manière dont la lumière rebondi sur les objets. Chaque `shader` présent dans cette liste représente un modèle mathématique d'interaction de la lumière avec l'objet. Utiliser un autre que Principled BSDF permet de faire des objets qui ressemblerons à du verre, du coton... mais ce n'est pas ce que nous voulons ici donc on va laisser ce paramètre tranquille.
+- L'option `Surface` indique "Principled BSDF". Ce n'est pas référence à une pratique étrange du yoga mais à un `shader` utilisant une ["Bidirectional Scattering Distribution Function"](https://en.wikipedia.org/wiki/Bidirectional_scattering_distribution_function). Les `shaders` indiquent à Blender la manière dont la lumière rebondi sur les objets. Chaque `shader` présent dans cette liste représente un modèle mathématique d'interaction de la lumière avec l'objet. Utiliser autre chose que Principled BSDF permet de faire des objets qui ressemblerons à du verre, du coton... mais ce n'est pas ce que nous voulons ici donc on va laisser ce paramètre tranquille.
 
 - Il y a beaucoup d'options pour ce `shader` : la rugosité, l'incide de refraction, la couleur ... mais pour le moment nous voulons un plan plat et réaliste, donc on touche à rien. On y reviendra plus tard.
 
@@ -263,13 +263,13 @@ Cette interface permet de régler les paramètres du `matériau` comme précéde
 
 La manière dont est rendu votre matériau est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boites pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3d View Port.
 
-Chaque boite est un `node` et vous verrez une ligne reliant Principle BSDF à la "Surface" de notre matériau final, indiquant qu'il est utilié pour déterminer son apparence. Vous verrez que vous pouvez aussi relier quelque chose qui donnera a la surface un `displacement`.
+Chaque boite est un `node` et vous verrez une ligne reliant Principle BSDF à la "Surface" de notre `matériau` final, indiquant qu'il est utilié pour déterminer son apparence. Vous verrez que vous pouvez aussi relier quelque chose qui donnera a la surface un `displacement`.
 
 Depuis la barre de menu située au dessus de l'écran, choisissez Add -> Texture -> Image texture.
 
 ![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img14_addtexture.png)
 
-Une nouvelle boite apparait, positionnez la où bon vous semble. Dans le language de Blender une `texture` est une image ou un motif qui sera appliqué aux matériaux pour changer leur apparence. On pourrait ainsi charger une image de grain de bois pour faire ressembler notre plan à du bois. Mais ces texture peuvent aussi être utilisées pour générer un `displacement`.
+Une nouvelle boite apparait, positionnez la où bon vous semble. Dans le language de Blender une `texture` est une image ou un motif qui sera appliqué aux `matériaux` pour changer leur apparence. On pourrait ainsi charger une image de grain de bois pour faire ressembler notre plan à du bois. Mais ces texture peuvent aussi être utilisées pour générer un `displacement`.
 
 - Cliquez sur `Open` dans cette boite et indiquez votre mnt.tif.
 - Cliquez sur le petit cercle à côté de `Color` en maintenant le bouton gauche de la souris appuyé.
@@ -298,11 +298,11 @@ Pour l'instant ces derniers ne sont pas utilsés, Blender n'a fait que *peindre*
 - Toujours bien penser à sélectionner le plan et cliquez sur l'icone en forme de clef à molette.
 ![modifiers](https://github.com/thomas-szczurek/images/blob/main/img17_modifiers.png)
 - Et maintenant cliquez sur "Add modifier"
-- L'apparence de ce menu a été modifiée dans la toute dernière version de Blender mais l'idée est de choisir le groupe "Generate" puis "Subdivision Surface".
+- L'apparence de ce menu a été modifiée dans la toute dernière version de Blender mais l'idée est de choisir le groupe "Generate" puis ["Subdivision Surface"](https://docs.blender.org/manual/fr/4.1/modeling/modifiers/generate/subdivision_surface.html).
 
-Apparemant la communauté surnomme ce modificateur "subsurf". Ne me demandez pas. Il est très utilisé et permet de dire à Blender d'ajouter du détail à un objet (ainsi il permet de faire des objets très arrondis en travaillant avec des `mesh` simples).
+Apparemant la communauté Blender surnomme ce modificateur "subsurf" ou "subdiv". Ne me demandez pas. Il est très utilisé et permet de dire à Blender d'ajouter du détail à un objet (ainsi il permet de faire des objets très arrondis en travaillant avec des `mesh` simples).
 
-Dans notre cas on va l'utilier pour faire croire à Blender que notre objet est composé de très nombreaux morceaux afin de simuler beaucoup de `vertices`.
+Dans notre cas on va l'utilier pour faire croire à Blender que notre objet est composé de très nombreux morceaux afin de simuler beaucoup de `vertices`.
 
 - Deux algorithmes sont possibles et celui que nous voulons ici est `simple`.
 - Si vous avez bien écouté au fond de la salle, vous verrez un bouton "adaptive subdivision" qu'il faut activer, sinon retournez sur la partie de présentation / configuration de Blender pour passez le feature set de Cycles à expérimental. Vous savez, celle ou j'avais indiqué "important". En gras.
@@ -312,7 +312,7 @@ Dans notre cas on va l'utilier pour faire croire à Blender que notre objet est 
 ### Déplacement réel
 
 - On retourne dans le "shader editor".
-- Add -> vector -> displacement
+- Add -> vector -> [displacement](https://docs.blender.org/manual/fr/dev/render/shader_nodes/vector/vector_displacement.html)
 
 ![true displacement](https://github.com/thomas-szczurek/images/blob/main/img18_t_displacement.png)
 
@@ -324,7 +324,7 @@ Color vers height and displacement vers displacement. Ceci dit à Blender "regar
 
 **important**
 
-Tant que nous y sommes, changez le `color space` de votre texture mnt de **sRGB** à  **non-color**. Dans la majorité des cas, les textures sont utilisée pour appliquer une image sur des objets, mais ce n'est pas notre cas. Si on laisse en sRGB, Blender va appliquer une courbe de correction sur notre couleur de mnt au lieu d'attribuer une hauteur de relief de façon linéaire en fonction du niveau de gris.
+Tant que nous y sommes, changez le `color space` de votre texture mnt de **sRGB** à  **non-color**. Dans la majorité des cas, les textures sont utilisées pour appliquer une image sur des objets, mais ce n'est pas notre cas. Si on laisse en sRGB, Blender va appliquer une courbe de correction sur notre couleur de mnt au lieu d'attribuer une hauteur de relief de façon linéaire en fonction du niveau de gris.
 
 Si vous effectuez un rendu maintenant vous constaterez que pas grand chose n'a changé. En effet il faut demander à Blender d'arrêter de bump mapper et de modifier réellement steuplé.
 
@@ -368,9 +368,9 @@ On retourne dans le 3D view port. La caméra, c'est ce machin :
 
 ![la caméra](https://github.com/thomas-szczurek/images/blob/main/img25_camera.png)
 
-Elle determine la position de la vue lors des rendus. En appuyant sur la touche 0 du pavé numérique de votre clavier vous pouvez "voir" ce que voit la caméra (réaappuyer sur 0 pour sortir). Si l'idée saugrenue d'utiliser Blender sur un pc portable vous est venue, il faudra à chaque fois passer par le menu View -> Cameras -> active Camera pour obtenir le même effet.
+Elle determine la position de la vue lors des rendus. En appuyant sur la touche 0 du pavé numérique de votre clavier vous pouvez "voir" ce que voit la caméra (réaappuyer sur 0 pour sortir). Si l'idée saugrenue d'utiliser Blender sur un pc portable sans pavé numérique vous est venue, il faudra à chaque fois passer par le menu View -> Cameras -> active Camera pour obtenir le même effet.
 
-On veut que notre caméra soit située juste au dessus de notre plan, et avec un angle de 0 degrés.
+On veut que notre caméra soit située juste au dessus de notre plan, et avec un angle de 0 degrés. 
 
 - On la selection (elle devient orange)
 - On va dans le paneau des propriétés de l'objet.
@@ -404,17 +404,17 @@ Bon allez.
 
 Mais je ne ferrai pas plus d'efforts.
 
-Pour passer la caméra en vue orthographique, on la sélectionne, puis dans ses propriétés `data` on change son type en "orthographic".
+Pour passer la caméra en vue orthographique, on la sélectionne, puis dans ses propriétés on change son type en "orthographic".
 
 ![ortho](https://github.com/thomas-szczurek/images/blob/main/img30_ortho2.png)
 
-Vous verrez par contre que maintenant votre caméra prends une zone beaucoup plus grande que votre plan. Pour remedier  à ça, il faut paramétrer la valeur d'`orthographic scale` de ce même panneau. Pour trouver la bonne valeur, il faut multiplier par deux la plus grande dimension de votre plan. Ainsi, j'avais créé un plan de 0,8 *0,7, donc dans mon cas 0,8* 2 = 1,6. J'ai réussi ça de tête.
+Vous verrez par contre que maintenant votre caméra prends une zone beaucoup plus grande que votre plan. Pour remedier  à ça, il faut paramétrer la valeur d'`orthographic scale` de ce même panneau. Pour trouver la bonne valeur, il faut multiplier par deux la plus grande dimension de votre plan. Ainsi, j'avais créé un plan de 0,8 * 0,7, donc dans mon cas 0,8 * 2 = 1,6. J'ai réussi ça de tête.
 
 ![rendu 3 ou 4 je sais plus](https://github.com/thomas-szczurek/images/blob/main/img31_render3.png)
 
 C'est beaucoup mieux !
 
-Maintenant, on peut s'interesser à l'exagération du relief. On retourne dans le shader editor, et sous le `node` `displacement`, on règle la valeur de `scale`. Vous pouvez faire des rendus pour voir ce qui vous convient le mieux. Personnelement je vais mettre cette valeur à 0,5.
+Maintenant, on peut s'interesser à l'exagération du relief. On retourne dans le shader editor, et sous le `node` `displacement`, on règle la valeur de `scale`. Vous pouvez faire des rendus pour voir ce qui vous convient le mieux. Personnellement je vais mettre cette valeur à 0,5.
 
 ## La lumière
 
@@ -422,7 +422,7 @@ On va maintenant régler la source de lumière qui éclaire notre sène. La sour
 
 ![lumière](https://github.com/thomas-szczurek/images/blob/main/img32_light.png)
 
-Après l'avoir selectionnée, cliquez sur l'icone en forme de bulbe d'ampoule pour accéder à ses propriétés.
+Après l'avoir selectionnée, cliquez sur l'icone en forme de bulbe d'ampoule pour accéder à ses propriétés. 
 
 ![réglages lumière](https://github.com/thomas-szczurek/images/blob/main/img33_light2.png)
 
@@ -432,11 +432,11 @@ Ou bien juste sun (ça veut dire [soleil](https://fr.wikipedia.org/wiki/Soleil))
 
 Pour celles et ceux qui préfèrent la première version je vous conseille [ceci](https://www.youtube.com/watch?v=zjIC6jIQRKQ) (avec un type qui a des patchs sur les coudes de ses vestes). Il a aussi écrit [ça](https://www.dunod.com/sciences-techniques/univers-multiples-nouveaux-horizons-cosmiques) si vous voulez vous retourner la tête. Si vraiment vous êtes hardcore il y a aussi [ceci](https://www.odilejacob.fr/catalogue/sciences/astronomie-astrophysique-cosmologie/ecume-de-l-espace-temps_9782738139719.php). Promis j'arrête.
 
-Une ampoule près de vous envera ses rayons dans toutes les directions, dans le cas du soleil, il est sufisamment éloigné (et gros) pour que ses rayons arrivent à nous orientés tous selon le même angle (rapellez vous vos cours de pourquoi qu'il fait chaud à l'équateur et froid aux pôles). C'est ce que simulera Blender en douchant notre scène de lumière provenant d'une unique direction.
+Une ampoule près de vous envera ses rayons dans toutes les directions. Dans le cas du soleil, il est sufisamment éloigné (et gros) pour que ses rayons arrivent à nous orientés tous selon le même angle (rapellez vous vos cours de pourquoi qu'il fait chaud à l'équateur et froid aux pôles). C'est ce que simulera Blender en douchant notre scène de lumière provenant d'une unique direction.
 
 Avec ce type de lumière, la position de l'objet la générant dans la scène n'est pas importante. Si vous effectuez un rendu maintenant vous vous rendrez compte que tout est très surexposé car nous n'avons pas réglé sa force (strength). Passons ce paramètre de 1000 à ... 5.
 
-Pour définir l'angle d'incidence des rayons lumineux il faut se rendre dans les propriétés de l'objet (attention à bien le sélectionner) et changer sa rotation (pour les sources de lumière de type soleil).
+Pour définir l'angle d'incidence des rayons lumineux il faut se rendre dans les propriétés de l'objet (attention à bien le sélectionner) et changer sa rotation (pour les sources de lumière de type soleil). 
 
 Indiquer 0 pour x, 45 pour y et 135 pour z.
 
@@ -444,7 +444,7 @@ Indiquer 0 pour x, 45 pour y et 135 pour z.
 
 La valeur de y contrôle l'angle par rapport à l'horizon, et celle de z la direction de provenance. Une valeur de 135 vous donne une lumière qui arrive du Nord Ouest (en haut à gauche quoi), ce à quoi l'oeil humain est habitué pour une carte. Mettre 225 donnerai l'impression que notre relief est inversé.
 
-Le tout dernier réglage à faire est de régler la taille de notre soleil. On reclique sur la petite ampoule verte et on regarde la paramètre Angle, mal nommé puisqu'il correspond au [diamètre angulaire](https://fr.wikipedia.org/wiki/Taille_apparente). Changer sa valeur régle la *douceur* de la lumière. Avec une valeur basse par défault, notre lumière nous donne un relief lunaire, essayer plutôt une valeur de 90 pour quelque chose de plus doux.
+Le tout dernier réglage à faire est de régler la taille de notre soleil. On reclique sur la petite ampoule verte et on regarde le paramètre Angle, mal nommé puisqu'il correspond au [diamètre angulaire](https://fr.wikipedia.org/wiki/Taille_apparente). Changer sa valeur régle la *douceur* de la lumière. Avec une valeur basse par défault, notre lumière nous donne un relief lunaire, essayez plutôt une valeur de 90 pour quelque chose de plus doux.
 
 ![réglages lumière](https://github.com/thomas-szczurek/images/blob/main//img35_light4.png)
 
@@ -460,13 +460,13 @@ Pour ça, je vais vous laissez vous reposer et ne pas ressortir gdal, mais réou
 
 Si vous avez de l'eau :
 
-On ouvre la calculatrice raster (raster -> calculatrice) et on tape juste cette formule `mnt@1 <= 0`. On enregistre sur le disque le résultat plutôt que de faire un raster virtuel car l'alogrithme suivant veut un fichier (par exemple eau.tif). (le chiffre derriere le @ désigne le numéro de bande de l'image à utiliser).
+On ouvre la calculatrice raster (raster -> calculatrice) et on tape juste cette formule `mnt@1 <= 0`. On enregistre sur le disque le résultat plutôt que de faire un raster virtuel car l'algorithme suivant veut un fichier (par exemple eau.tif). (le chiffre derriere le @ désigne le numéro de bande de l'image à utiliser).
 
-Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés ([gdal_sieve.py](https://gdal.org/programs/gdal_sieve.html)). Ce se passe avec raster -> Analyse -> Tamiser.
+Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés et rendre le résultat pluus propre([gdal_sieve.py](https://gdal.org/programs/gdal_sieve.html)). Ce se passe avec raster -> Analyse -> Tamiser.
 
 - On sélectionne notre raster eau.
 - l'option `seuil` détermine la taille limite des polygones qui devront êtres fusionnés avec leur voisin le plus proche
-- `use 8-connectedness` permet de spécifier si on veut que les pixels en diagonales soient considérés ou non pour déterminer l'isolation d'un pixel.
+- `use 8-connectedness` permet de spécifier si on veut que les pixels en diagonale soient considérés ou non pour déterminer l'isolation d'un pixel.
 
 Personnellement je choisi un seuil de 75 et je n'utilise pas 8-connectedness ici pour vraiment nettoyer.
 
@@ -483,8 +483,8 @@ Pour le reste :
 ![catalogue cpt city](https://github.com/thomas-szczurek/images/blob/main/img37_cptcity.png)
 
 - Descendre dans la section "Topography" et par exemple choisir "DEM_screen"
-- une fois validé cliquez sur "classer"
-- Pour bien il faudrai rectifier la palette en fonction de vos hauteurs maximum mais comme je commence à vraiment aimer pouvoir finir, j'aurai des hauteurs de 198 mètres qui paraitrons couvertes de neiges eternelles.
+- Une fois validé cliquez sur "classer"
+- Pour bien il faudrai rectifier la palette en fonction de vos hauteurs maximum mais comme je commence à vraiment aimer pouvoir finir (autre manière de dire : j'ai la grosse flemme), j'aurai des hauteurs de 198 mètres qui paraitrons couvertes de neiges eternelles.
 
 ![menteur](https://github.com/thomas-szczurek/images/blob/main/img38_menteur.png)
 
@@ -505,3 +505,5 @@ On pourrait bien sur jouer un peu plus avec les réglages (je trouve par exemple
 Voici par exemple ce que ça donne lors d'un essai precédent où j'ai passé un peu plus de temps à tout régler
 
 ![render final](https://github.com/thomas-szczurek/images/blob/main/img41_pyrennees_render.png)
+
+--8<-- "content/team/thomas-szczurek-gayant.md"
