@@ -462,7 +462,7 @@ Si vous avez de l'eau :
 
 On ouvre la calculatrice raster (raster -> calculatrice) et on tape juste cette formule `mnt@1 <= 0`. On enregistre sur le disque le résultat plutôt que de faire un raster virtuel car l'algorithme suivant veut un fichier (par exemple eau.tif). (le chiffre derriere le @ désigne le numéro de bande de l'image à utiliser).
 
-Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés et rendre le résultat plus propre ( [gdal_sieve.py](https://gdal.org/programs/gdal_sieve.html) ). Ce se passe avec raster -> Analyse -> Tamiser.
+Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés et rendre le résultat plus propre ( [gdal_sieve.py](https://gdal.org/programs/gdal_sieve.html) ). Ca se passe avec raster -> Analyse -> Tamiser.
 
 - On sélectionne notre raster eau.
 - l'option `seuil` détermine la taille limite des polygones qui devront êtres fusionnés avec leur voisin le plus proche
