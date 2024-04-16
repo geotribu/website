@@ -408,7 +408,7 @@ Pour passer la caméra en vue orthographique, on la sélectionne, puis dans ses 
 
 ![ortho](https://github.com/thomas-szczurek/images/blob/main/img30_ortho2.png)
 
-Vous verrez par contre que maintenant votre caméra prends une zone beaucoup plus grande que votre plan. Pour remedier  à ça, il faut paramétrer la valeur d'`orthographic scale` de ce même panneau. Pour trouver la bonne valeur, il faut multiplier par deux la plus grande dimension de votre plan. Ainsi, j'avais créé un plan de 0,8 *0,7, donc dans mon cas 0,8* 2 = 1,6. J'ai réussi ça de tête.
+Vous verrez par contre que maintenant votre caméra prends une zone beaucoup plus grande que votre plan. Pour remedier  à ça, il faut paramétrer la valeur d'`orthographic scale` de ce même panneau. Pour trouver la bonne valeur, il faut multiplier par deux la plus grande dimension de votre plan. Ainsi, j'avais créé un plan de 0,8 x 0,7, donc dans mon cas 0,8 x 2 = 1,6. J'ai réussi ça de tête.
 
 ![rendu 3 ou 4 je sais plus](https://github.com/thomas-szczurek/images/blob/main/img31_render3.png)
 
