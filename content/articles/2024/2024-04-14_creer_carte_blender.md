@@ -381,9 +381,9 @@ On veut que notre caméra soit située juste au dessus de notre plan, et avec un
 
 Si vous passez en vue caméra vous verrez qu'on commence à avoir quelque chose qui ressemblera a une carte.
 
-Il nous faut encore régler le ratio de la prise de vue pour le faire correspondre à celui de notre mnt/plan. Ca se fait dans les `output properties`. Dans Format (ou Dimensions dans d'anciennes versions de Blender), indiquez les dimensions en pixels de votre raster que vous aviez otenus avec gdalinfo. Ce paramètre modifie la résolution de sortie des rendus et vous verrez la caméra changer en fonction pour presque d'adapter aux dimensions de votre plan.
+Il nous faut encore régler le ratio de la prise de vue pour le faire correspondre à celui de notre mnt/plan. Ca se fait dans les `output properties`. Dans Format (ou Dimensions dans d'anciennes versions de Blender), indiquez les dimensions en pixels de votre raster que vous aviez otenus avec gdalinfo. Ce paramètre modifie la résolution de sortie des rendus et vous verrez la caméra changer en fonction pour presque s'adapter aux dimensions de votre plan.
 
-En dessous se trouve le symbole `%` qui adaptera la réolution indiquée par ce pourcentage lors des rendus. Celà peut être interessant lors de rendus intermédiaires pour accélerer le processus, ou si comme moi votre raster est très grand et que vous avez des petits problèmes de mémoire lors des rendus.
+En dessous se trouve le symbole `%` qui adaptera la résolution indiquée par ce pourcentage lors des rendus. Celà peut être interessant lors de rendus intermédiaires pour accélerer le processus, ou si comme moi votre raster est très grand et que vous avez des petits problèmes de mémoire lors des rendus.
 
 ![réglages caméra](https://github.com/thomas-szczurek/images/blob/main/img27_camera_settings2.png)
 
