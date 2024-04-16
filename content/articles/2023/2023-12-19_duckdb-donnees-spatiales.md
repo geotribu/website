@@ -113,7 +113,7 @@ Pour suivre la suite de ce tutoriel, il vous faut donc avoir installé DucKDB. D
 $ pip install duckdb
 ---> 100%
 Installing collected packages: duckdb
-Successfully installed duckdb-0.9.2
+Successfully installed duckdb-0.10.1
 ```
 
 <!-- markdownlint-enable MD040 -->
@@ -126,7 +126,7 @@ ou
 <!-- termynal -->
 
 ```sh
-v0.9.2 3c695d7ba9
+v0.10.1 3c695d7ba9
 Enter ".help" for usage hints.
 Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
