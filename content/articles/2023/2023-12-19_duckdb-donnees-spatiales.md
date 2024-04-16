@@ -113,7 +113,7 @@ Pour suivre la suite de ce tutoriel, il vous faut donc avoir installé DucKDB. D
 $ pip install duckdb
 ---> 100%
 Installing collected packages: duckdb
-Successfully installed duckdb-0.9.2
+Successfully installed duckdb-0.10.1
 ```
 
 <!-- markdownlint-enable MD040 -->
@@ -126,7 +126,7 @@ ou
 <!-- termynal -->
 
 ```sh
-v0.9.2 3c695d7ba9
+v0.10.1 3c695d7ba9
 Enter ".help" for usage hints.
 Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
@@ -278,7 +278,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
         "JSON(sources) as sources,"
         "ST_GeomFromWKB(geometry) as geometry"
         "FROM"
-        "read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)"
+        "read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)"
         "LIMIT 100);"
     )
 
@@ -298,7 +298,7 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
     JSON(sources) as sources,
     ST_GeomFromWKB(geometry) as geometry
     FROM
-    read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
+    read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)
     LIMIT 100);
     ```
 
@@ -317,11 +317,11 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville 
     "JSON(sources) as sources,"
     "ST_GeomFromWKB(geometry) as geometry"
     "FROM"
-    "read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)"
-    "WHERE bbox.minx > -0.7948129589175504"
-    "AND bbox.maxx < -0.7472280816538276"
-    "AND bbox.miny > 48.069335046027035"
-    "AND bbox.maxy < 48.073450034830316 );")
+    "read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)"
+    "WHERE bbox.xmin > -0.7948129589175504"
+    "AND bbox.xmax < -0.7472280816538276"
+    "AND bbox.ymin > 48.069335046027035"
+    "AND bbox.ymax < 48.073450034830316 );")
 
     con.sql(query_admins)
     ```
@@ -338,11 +338,11 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville 
     JSON(sources) as sources,
     ST_GeomFromWKB(geometry) as geometry
     FROM
-    read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
-    WHERE bbox.minx > -0.7948129589175504
-    AND bbox.maxx < -0.7472280816538276
-    AND bbox.miny > 48.069335046027035
-    AND bbox.maxy < 48.073450034830316);
+    read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)
+    WHERE bbox.xmin > -0.7948129589175504
+    AND bbox.xmax < -0.7472280816538276
+    AND bbox.ymin > 48.069335046027035
+    AND bbox.ymax < 48.073450034830316);
     ```
 
 #### Visualiser les données dans QGIS
@@ -377,11 +377,11 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
     "JSON(sources) as sources,"
     "ST_GeomFromWKB(geometry) as geometry"
     "FROM"
-    "read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)"
-    "WHERE bbox.minx > -0.7948129589175504"
-    "AND bbox.maxx < -0.7472280816538276"
-    "AND bbox.miny > 48.069335046027035"
-    "AND bbox.maxy < 48.0842516213572821)  "
+    "read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)"
+    "WHERE bbox.xmin > -0.7948129589175504"
+    "AND bbox.xmax < -0.7472280816538276"
+    "AND bbox.ymin > 48.069335046027035"
+    "AND bbox.ymax < 48.0842516213572821)  "
     "TO 'laval_buildings.geojson' "
     " WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326'); ")
 
@@ -401,11 +401,11 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
     JSON(sources) as sources,
     ST_GeomFromWKB(geometry) as geometry
     FROM
-    read_parquet('s3://overturemaps-us-west-2/release/2024-03-12-alpha.0/theme=buildings/type=*/*', hive_partitioning=1)
-    WHERE bbox.minx > -0.7948129589175504
-    AND bbox.maxx < -0.7472280816538276
-    AND bbox.miny > 48.069335046027035
-    AND bbox.maxy < 48.073450034830316)
+    read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)
+    WHERE bbox.xmin > -0.7948129589175504
+    AND bbox.xmax < -0.7472280816538276
+    AND bbox.ymin > 48.069335046027035
+    AND bbox.ymax < 48.073450034830316)
     TO 'laval_buildings.geojson'
     WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
     ```
