@@ -68,8 +68,9 @@ Et maintenant GDAL coeuravélesdoigts.
 Pour les non initiés à la ligne de commande, on se déplace dans un répertoire avec la commande cd (pour change directory). On peut soit passer un repertoire situé dans le repertoire courant, soit une adresse complète.
 
 Ex :
-cd /home/nabuchodonosor/Documents (Linux)
-cd C:\\\Users\nabuchodonosor\Documents (Windows)
+
+- sur Linux : `cd /home/nabuchodonosor/Documents`
+- sur Windows : `cd C:\\\Users\nabuchodonosor\Documents`
 
 Sur windows pour changer de lecteur juste indiquer la lettre et les deux points, sans cd (exemple `D:`).
 
