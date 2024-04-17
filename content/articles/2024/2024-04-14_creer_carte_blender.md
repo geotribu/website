@@ -1,5 +1,6 @@
 ---
 title: "Réaliser des cartes avec Blender"
+subtitle: 
 authors:
     - Thomas Szczurek-Gayant
 categories:
