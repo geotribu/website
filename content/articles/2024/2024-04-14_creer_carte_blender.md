@@ -36,7 +36,7 @@ Ceci implique d'avoir accès à gdal. Sur windows ça passe en se rendant dans v
 
 Après récupération du jeu de données, chargez une des dalles au format asc dans qgis. Le format asc ne gère pas les projections et Qgis essayera par défaut de les positionner en WGS 84 (ne vous inquietez pas, les coordonnées sont les bonnes). Vous pouvez repositionner l'image en cliquant sur la petite icône de l'image ci-dessous et en spécifiant ce bon vieux Lambert 93.
 
-![Ca arrive même aux meilleurs](https://github.com/thomas-szczurek/images/blob/main/img1_lign.png)
+![Ca arrive même aux meilleurs](https://github.com/thomas-szczurek/images/blob/main/img1_lign.png){: .img-center loading=lazy }
 
 Sur ces considérations on chargera plutôt la couche "dalles" [dans le format dont il ne faut pas prononcer le nom](http://switchfromshapefile.org/) située dans le dossier "3_SUPPLEMENTS_LIVRAISON" de l'archive et on active un fond de plan open street map sous "xyz tiles" de l'explorateur de Qgis histoire de se repérer.
 
@@ -59,7 +59,7 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
 - Puis on supprime la colonne d'origine.
 - Enfin on change à la brutasse l'extension du fichier en .txt ce qui nous donne une fois ouvert :
 
-![exemple fichier tuile](https://github.com/thomas-szczurek/images/blob/main/img2_tuiles.png)
+![exemple fichier tuile](https://github.com/thomas-szczurek/images/blob/main/img2_tuiles.png){: .img-center loading=lazy }
 
 - On déplace ce fichier directement dans le répertoire contenant les tuilles asc téléchargées.
 
@@ -85,7 +85,7 @@ Les commandes gdal sont accompagnées de `-` ou `--` et de lettres, ceci corresp
 
 On se déplace dans le dossier contenant les images ex :
 
-![exemple fichier tuile](https://github.com/thomas-szczurek/images/blob/main/img3_cd.png)
+![exemple fichier tuile](https://github.com/thomas-szczurek/images/blob/main/img3_cd.png){: .img-center loading=lazy }
 
 Et maitenant on va utiliser [gdal_merge.py](https://gdal.org/programs/gdal_merge.html), le programme de gdal permettant de fusionner des images.
 
@@ -152,7 +152,7 @@ gdalinfo -mm mosaic_cut.tif
 
 - l'option `-mm` permet de forcer le calcul des valeurs min/max qui n'est pas donné par défaut par gdalinfo. Elles apparaitrons tout en bas (dans mon cas, 0 et 196,8).
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img5_minmax.png)
+![La](https://github.com/thomas-szczurek/images/blob/main/img5_minmax.png){: .img-center loading=lazy }
 
 Le calcul à faire pour réaffecter nos pixels est le suivant :
 (Valeur pixel – min) ÷ (max – min) * 65535
@@ -183,13 +183,13 @@ Faire le tour de Blender serait bien sur beaucoup trop ambiteux ici, mais voici 
 
 Blender fonctionne sur un principe d'environnement en fonction de la tache que vous êtes en train de réaliser (modéliser, travailler sur les textures ...). Pour passer de l'un à l'autre, on clique ici :
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img6_viewports.png)
+![La](https://github.com/thomas-szczurek/images/blob/main/img6_viewports.png){: .img-center loading=lazy }
 
 3D Viewport est la vue 3d par défaut.
 
 Les boutons situés ici permettent de changer le mode d'affichage des objets 3d (fil de fer, materiaux, rendu ...).
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img7_render.png)
+![La](https://github.com/thomas-szczurek/images/blob/main/img7_render.png){: .img-center loading=lazy }
 
 (vous pouvez essayer avec le cube présent par défaut).
 
@@ -197,7 +197,7 @@ Les boutons situés ici permettent de changer le mode d'affichage des objets 3d 
 
 En cliquant là :
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img8_engine.png)
+![La](https://github.com/thomas-szczurek/images/blob/main/img8_engine.png){: .img-center loading=lazy }
 
 Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute.
 
@@ -205,7 +205,7 @@ En fonction de votre carte graphique, vous pouvez aussi faire un tour par le men
 
 Toujours là :
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img9_sampling.png)
+![La](https://github.com/thomas-szczurek/images/blob/main/img9_sampling.png){: .img-center loading=lazy }
 
 En descendant vous verez Sampling. Ces options permettent de configurer le nombre de passages qu'effectuera le moteur de rendu en changeant la valeur max samples. Je vous conseille de configurer Viewport (quand vous serez en train de travailler mais en affichant quelque chose proche du rendu) avec une valeur basse pour gagner du temps, et Render avec une valeur haute pour avoir un beau rendu final. Activer l'option Denoise dans les deux cas qui permet d'enlever du "bruit" sur les rendus. Sur l'image vous verez ma proposition de paramètrage.
 
@@ -221,13 +221,13 @@ Par défaut les objets apparaissent sous le "curseur 3D" mais on va déplacer no
 
 On clique sur notre plan pour le sélectionner (il se détoure alors en orange) et on se rend là :
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img10_loc.png)
+![La](https://github.com/thomas-szczurek/images/blob/main/img10_loc.png){: .img-center loading=lazy }
 
 On modifie ensuite les valeurs de `Location` x y et z à 0 si ce n'est pas le cas.
 
 Je vous ai déjà parlé de mon amour de gdal ? Et bien on ve le ressortir avec encore une fois la commande `gdalinfo`. En effet maintenant on va donner à notre plan les dimensions de notre raster d'elevation.
 
-![taille raster](https://github.com/thomas-szczurek/images/blob/main/img11_size.png)
+![taille raster](https://github.com/thomas-szczurek/images/blob/main/img11_size.png){: .img-center loading=lazy }
 
 La ligne Size vous donne la taille en pixels de votre mnt.
 
@@ -245,7 +245,7 @@ Pour l'instant, notre plan ne possèque aucun matériau, ce pourquoi il apparait
 
 Pour affecter un matériau au plan, selectionnez le puis cliquez sur cette icone :
 
-![setup materials](https://github.com/thomas-szczurek/images/blob/main/img12_material.png)
+![setup materials](https://github.com/thomas-szczurek/images/blob/main/img12_material.png){: .img-center loading=lazy }
 
 Puis cliquez sur `New`. Blendez créera alors un nouveau materiau nommé Material.001. Vous pouvez le renommer si vous le désirez.
 
@@ -261,7 +261,7 @@ Changez l'environnement de travail pour passer de "3D View port" à "Shader edit
 
 Cette interface permet de régler les paramètres du `matériau` comme précédemment, mais bien plus encore. Faites bien attention à bien sélectionner votre plan en cliquant là :
 
-![selectionner le plan](https://github.com/thomas-szczurek/images/blob/main/img13_explorer.png)
+![selectionner le plan](https://github.com/thomas-szczurek/images/blob/main/img13_explorer.png){: .img-center loading=lazy }
 
 La manière dont est rendu votre matériau est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boites pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3d View Port.
 
@@ -269,7 +269,7 @@ Chaque boite est un `node` et vous verrez une ligne reliant Principle BSDF à la
 
 Depuis la barre de menu située au dessus de l'écran, choisissez Add -> Texture -> Image texture.
 
-![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img14_addtexture.png)
+![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img14_addtexture.png){: .img-center loading=lazy }
 
 Une nouvelle boite apparait, positionnez la où bon vous semble. Dans le language de Blender une `texture` est une image ou un motif qui sera appliqué aux `matériaux` pour changer leur apparence. On pourrait ainsi charger une image de grain de bois pour faire ressembler notre plan à du bois. Mais ces texture peuvent aussi être utilisées pour générer un `displacement`.
 
@@ -278,11 +278,11 @@ Une nouvelle boite apparait, positionnez la où bon vous semble. Dans le languag
 - Et relier à `Displacement`
 - Tant que nous y sommes, changez l'option `Linear` pour `Smart`. Ceci change l'interpolation de la texture pour être un peu plus jolie.
 
-![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img15_displacement.png)
+![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img15_displacement.png){: .img-center loading=lazy }
 
 Vous pouvez faire un essai de rendu en cliquant sur Render -> render image dans le menu tout en haut.
 
-![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img16_1strender.png)
+![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img16_1strender.png){: .img-center loading=lazy }
 
 Pour repprendre les mots de l'auteur originel "Tout ceci est bâti sur un mensonge". Pour le moment Blender ne fait que **simuler** la déformation en utilisant une technique nommée *bump mapping*. C'est plus rapide à calculer mais pas aussi réaliste. Cette technique ne fait que donner une *apparence* de profondeur, mais elle n'est pas réelle : aucune ombre n'est projetée et la lumière n'interagit pas avec.
 
@@ -298,7 +298,7 @@ Pour l'instant ces derniers ne sont pas utilsés, Blender n'a fait que *peindre*
 
 - Retournez dans le 3d View Port
 - Toujours bien penser à sélectionner le plan et cliquez sur l'icone en forme de clef à molette.
-![modifiers](https://github.com/thomas-szczurek/images/blob/main/img17_modifiers.png)
+![modifiers](https://github.com/thomas-szczurek/images/blob/main/img17_modifiers.png){: .img-center loading=lazy }
 - Et maintenant cliquez sur "Add modifier"
 - L'apparence de ce menu a été modifiée dans la toute dernière version de Blender mais l'idée est de choisir le groupe "Generate" puis ["Subdivision Surface"](https://docs.blender.org/manual/fr/4.1/modeling/modifiers/generate/subdivision_surface.html).
 
@@ -316,11 +316,11 @@ Dans notre cas on va l'utilier pour faire croire à Blender que notre objet est 
 - On retourne dans le "shader editor".
 - Add -> vector -> [displacement](https://docs.blender.org/manual/fr/dev/render/shader_nodes/vector/vector_displacement.html)
 
-![true displacement](https://github.com/thomas-szczurek/images/blob/main/img18_t_displacement.png)
+![true displacement](https://github.com/thomas-szczurek/images/blob/main/img18_t_displacement.png){: .img-center loading=lazy }
 
 Et on modifie notre diagramme pour qu'il ressemble à ceci :
 
-![true displacement 2](https://github.com/thomas-szczurek/images/blob/main/img19_t_displacement2.png)
+![true displacement 2](https://github.com/thomas-szczurek/images/blob/main/img19_t_displacement2.png){: .img-center loading=lazy }
 
 Color vers height and displacement vers displacement. Ceci dit à Blender "regarde la couleur (clair ou sombre) et transforme ça en déplacement".
 
@@ -332,11 +332,11 @@ Si vous effectuez un rendu maintenant vous constaterez que pas grand chose n'a c
 
 Dans les paramètres de notre matériau, sous la section `Settings`-> `Surface` réglez displacement à "displacement only".
 
-![true displacement 3](https://github.com/thomas-szczurek/images/blob/main/img20_t_displacement3.png)
+![true displacement 3](https://github.com/thomas-szczurek/images/blob/main/img20_t_displacement3.png){: .img-center loading=lazy }
 
 Vous pouvez tester un render et sous vos yeux emerveillés vous auto congratuler. Vous êtes beaux/belles et fort/es. (j'ai rien contre le point médian mais on devine que ce choix a été fait par des gens qui ne tapent pas sur un clavier d'ordinateur (c'est alt + 0183 mais sous ghostwritter ça marche pas)).
 
-![true displacement 3](https://github.com/thomas-szczurek/images/blob/main/img21_t_displacement4.png)
+![true displacement 3](https://github.com/thomas-szczurek/images/blob/main/img21_t_displacement4.png){: .img-center loading=lazy }
 
 Vous remarquez cependant trois choses :
 
@@ -348,17 +348,17 @@ En changeant le paramètre `scale` du `node` displacement du shader editor, vous
 
 Pour ce qui est des bords ce qui se passe c'est que pour le moment, Blender essaye de répéter votre image sur les bords. Dans le shader editor, sur le `node` de votre image, changez *Repeat* pour *Extend* pour corriger ça.
 
-![extend](https://github.com/thomas-szczurek/images/blob/main/img22_extend.png)
+![extend](https://github.com/thomas-szczurek/images/blob/main/img22_extend.png){: .img-center loading=lazy }
 
 C'est déjà mieux !
 
-![render2](https://github.com/thomas-szczurek/images/blob/main/img23_render2.png)
+![render2](https://github.com/thomas-szczurek/images/blob/main/img23_render2.png){: .img-center loading=lazy }
 
 Pour améliorer nos temps de rendu, nous avons déjà modifié le nombre de passages. Mais il est aussi possible de diminuer la taille des tiles (ce qui permet d'avoir un aperçu plus rapide du résultat et de stopper le rendu si celà ne nous convient pas)
 
 Ca se passe ici :
 
-![tiles_size](https://github.com/thomas-szczurek/images/blob/main/img24_tiles.png)
+![tiles_size](https://github.com/thomas-szczurek/images/blob/main/img24_tiles.png){: .img-center loading=lazy }
 
 Et vous pouvez par exemple diminuer à 512.
 
@@ -368,7 +368,7 @@ Comme dans l'article original, je vous incite à explorer les matériaux. Sauveg
 
 On retourne dans le 3D view port. La caméra, c'est ce machin :
 
-![la caméra](https://github.com/thomas-szczurek/images/blob/main/img25_camera.png)
+![la caméra](https://github.com/thomas-szczurek/images/blob/main/img25_camera.png){: .img-center loading=lazy }
 
 Elle determine la position de la vue lors des rendus. En appuyant sur la touche 0 du pavé numérique de votre clavier vous pouvez "voir" ce que voit la caméra (réaappuyer sur 0 pour sortir). Si l'idée saugrenue d'utiliser Blender sur un pc portable sans pavé numérique vous est venue, il faudra à chaque fois passer par le menu View -> Cameras -> active Camera pour obtenir le même effet.
 
@@ -379,7 +379,7 @@ On veut que notre caméra soit située juste au dessus de notre plan, et avec un
 - Et dans Transform, on passe les valeurs de location x et y = 0, et z = 3 (la valeur de z n'a pas trop d'importance a part d'être supérieure à 0, voir plus bas)
 - Toujours dans transform, on passe toutes les valeurs de rotation à 0
 
-![réglages caméra](https://github.com/thomas-szczurek/images/blob/main/img26_camera_settings.png)
+![réglages caméra](https://github.com/thomas-szczurek/images/blob/main/img26_camera_settings.png){: .img-center loading=lazy }
 
 Si vous passez en vue caméra vous verrez qu'on commence à avoir quelque chose qui ressemblera a une carte.
 
@@ -387,11 +387,11 @@ Il nous faut encore régler le ratio de la prise de vue pour le faire correspond
 
 En dessous se trouve le symbole `%` qui adaptera la résolution indiquée par ce pourcentage lors des rendus. Celà peut être interessant lors de rendus intermédiaires pour accélerer le processus, ou si comme moi votre raster est très grand et que vous avez des petits problèmes de mémoire lors des rendus.
 
-![réglages caméra](https://github.com/thomas-szczurek/images/blob/main/img27_camera_settings2.png)
+![réglages caméra](https://github.com/thomas-szczurek/images/blob/main/img27_camera_settings2.png){: .img-center loading=lazy }
 
 Faisons maintenant un rendu pour voir.
 
-![rendu3](https://github.com/thomas-szczurek/images/blob/main/img28_render3.png)
+![rendu3](https://github.com/thomas-szczurek/images/blob/main/img28_render3.png){: .img-center loading=lazy }
 
 Deux conclusions s'imposent.
 
@@ -402,17 +402,17 @@ Je considère que nous sommes entre géomaticien/nes ou personnes interessées p
 
 Bon allez.
 
-![diff ortho perspective](https://github.com/thomas-szczurek/images/blob/main/img29_ortho.jpg)
+![diff ortho perspective](https://github.com/thomas-szczurek/images/blob/main/img29_ortho.jpg){: .img-center loading=lazy }
 
 Mais je ne ferrai pas plus d'efforts.
 
 Pour passer la caméra en vue orthographique, on la sélectionne, puis dans ses propriétés on change son type en "orthographic".
 
-![ortho](https://github.com/thomas-szczurek/images/blob/main/img30_ortho2.png)
+![ortho](https://github.com/thomas-szczurek/images/blob/main/img30_ortho2.png){: .img-center loading=lazy }
 
 Vous verrez par contre que maintenant votre caméra prends une zone beaucoup plus grande que votre plan. Pour remedier  à ça, il faut paramétrer la valeur d'`orthographic scale` de ce même panneau. Pour trouver la bonne valeur, il faut multiplier par deux la plus grande dimension de votre plan. Ainsi, j'avais créé un plan de 0,8 x 0,7, donc dans mon cas 0,8 x 2 = 1,6. J'ai réussi ça de tête.
 
-![rendu 3 ou 4 je sais plus](https://github.com/thomas-szczurek/images/blob/main/img31_render3.png)
+![rendu 3 ou 4 je sais plus](https://github.com/thomas-szczurek/images/blob/main/img31_render3.png){: .img-center loading=lazy }
 
 C'est beaucoup mieux !
 
@@ -422,11 +422,11 @@ Maintenant, on peut s'interesser à l'exagération du relief. On retourne dans l
 
 On va maintenant régler la source de lumière qui éclaire notre sène. La source de lumière c'est ce truc :
 
-![lumière](https://github.com/thomas-szczurek/images/blob/main/img32_light.png)
+![lumière](https://github.com/thomas-szczurek/images/blob/main/img32_light.png){: .img-center loading=lazy }
 
 Après l'avoir selectionnée, cliquez sur l'icone en forme de bulbe d'ampoule pour accéder à ses propriétés.
 
-![réglages lumière](https://github.com/thomas-szczurek/images/blob/main/img33_light2.png)
+![réglages lumière](https://github.com/thomas-szczurek/images/blob/main/img33_light2.png){: .img-center loading=lazy }
 
 Plusieurs types de source sont possible (ampoule, spot...). Mais dans notre cas on veut une lumière naturelle. Choisir donc "boule de feu géante abritant en son coeur des réactions de fusion nucléaire qui se transformera en [naine blanche](https://fr.wikipedia.org/wiki/Naine_blanche) à sa mort mais pas avant d'avoir enflé jusqu'aux limites de la terre la carbonisant au passage mais qui si elle était plus massive finirai en [étoile à neutrons](https://fr.wikipedia.org/wiki/%C3%89toile_%C3%A0_neutrons) voir en [trou noir stellaire](https://fr.wikipedia.org/wiki/Trou_noir_stellaire) dont notre physique n'arrive pas à expliquer les singularités centrales sans unifier la relativité générale et la quantique et ça fait 100 ans qu'on cherche, prend ça dans ta face la science."
 
@@ -442,17 +442,17 @@ Pour définir l'angle d'incidence des rayons lumineux il faut se rendre dans les
 
 Indiquer 0 pour x, 45 pour y et 135 pour z.
 
-![réglages lumière](https://github.com/thomas-szczurek/images/blob/main/img34_light3.png)
+![réglages lumière](https://github.com/thomas-szczurek/images/blob/main/img34_light3.png){: .img-center loading=lazy }
 
 La valeur de y contrôle l'angle par rapport à l'horizon, et celle de z la direction de provenance. Une valeur de 135 vous donne une lumière qui arrive du Nord Ouest (en haut à gauche quoi), ce à quoi l'oeil humain est habitué pour une carte. Mettre 225 donnerai l'impression que notre relief est inversé.
 
 Le tout dernier réglage à faire est de régler la taille de notre soleil. On reclique sur la petite ampoule verte et on regarde le paramètre Angle, mal nommé puisqu'il correspond au [diamètre angulaire](https://fr.wikipedia.org/wiki/Taille_apparente). Changer sa valeur régle la *douceur* de la lumière. Avec une valeur basse par défault, notre lumière nous donne un relief lunaire, essayez plutôt une valeur de 90 pour quelque chose de plus doux.
 
-![réglages lumière](https://github.com/thomas-szczurek/images/blob/main//img35_light4.png)
+![réglages lumière](https://github.com/thomas-szczurek/images/blob/main//img35_light4.png){: .img-center loading=lazy }
 
 Un petit rendu pour la route ?
 
-![rendu 5](https://github.com/thomas-szczurek/images/blob/main/img36_render6.png)
+![rendu 5](https://github.com/thomas-szczurek/images/blob/main/img36_render6.png){: .img-center loading=lazy }
 
 Waoohh !!!
 
@@ -482,13 +482,13 @@ Pour le reste :
 - On selectionne notre raster de mnt, et dans son style on change bande grise unique pour Pseudo-couleur à bande unique.
 - Dans palette de couleur, on choisi "créer une nouvelle palette" puis "catalogue cpt-city"
 
-![catalogue cpt city](https://github.com/thomas-szczurek/images/blob/main/img37_cptcity.png)
+![catalogue cpt city](https://github.com/thomas-szczurek/images/blob/main/img37_cptcity.png){: .img-center loading=lazy }
 
 - Descendre dans la section "Topography" et par exemple choisir "DEM_screen"
 - Une fois validé cliquez sur "classer"
 - Pour bien il faudrai rectifier la palette en fonction de vos hauteurs maximum mais comme je commence à vraiment aimer pouvoir finir (autre manière de dire : j'ai la grosse flemme), j'aurai des hauteurs de 198 mètres qui paraitrons couvertes de neiges eternelles.
 
-![menteur](https://github.com/thomas-szczurek/images/blob/main/img38_menteur.png)
+![menteur](https://github.com/thomas-szczurek/images/blob/main/img38_menteur.png){: .img-center loading=lazy }
 
 Maintenant, essayez de zoomer sur la carte  pour l'avoir la plus grande possible, mais complète sur votre écran. Puis choisir dans le menu Projet -> Importer/Exporter -> Exporter la carte au format image (ça permet d'exporter le contenu de votre canevas de carte sans passer par le composeur). Changez la résolution en 300 dpi et exporter au format png.
 
@@ -496,16 +496,16 @@ Maintenant ouvrez cette image dans [The Gimp](https://www.gimp.org/), un éditeu
 
 On revient maintenant dans le `shader editor` de Blender. Comme pour ajouter notre mnt, on passe par le menu Add -> Texture -> Image texture. On selectionne notre image de couleur, on oublie pas de passer l'interpolation en smart et l'extension en extend, mais on laisse le color space en sRGB. Puis on relie `color` à `Base color` de principled BSDF.
 
-![coloriser](https://github.com/thomas-szczurek/images/blob/main/img39_coloriser.png)
+![coloriser](https://github.com/thomas-szczurek/images/blob/main/img39_coloriser.png){: .img-center loading=lazy }
 
 Et on effectue le rendu final !!!
 
-![render final](https://github.com/thomas-szczurek/images/blob/main/img40_renderfinal.png)
+![render final](https://github.com/thomas-szczurek/images/blob/main/img40_renderfinal.png){: .img-center loading=lazy }
 
 On pourrait bien sur jouer un peu plus avec les réglages (je trouve par exemple mes ombres encore un peu trop profondes et pourrai passer du temps sur le paramètre angle de ma lumière soleil), ou les couleurs (je trouve ce vert bouteille assez moche), ou encore sur le tamisage de notre couche d'eau,  mais vous avez maintenant la base de la technique !
 
 Voici par exemple ce que ça donne lors d'un essai precédent où j'ai passé un peu plus de temps à tout régler
 
-![render final](https://github.com/thomas-szczurek/images/blob/main/img41_pyrennees_render.png)
+![render final](https://github.com/thomas-szczurek/images/blob/main/img41_pyrennees_render.png){: .img-center loading=lazy }
 
 --8<-- "content/team/thomas-szczurek-gayant.md"
