@@ -8,7 +8,7 @@ comments: true
 date: 2024-04-07
 description: "Technique permettant de réaliser des cartes de relief avec le logiciel libre 3d Blender, ainsi qu'un petit tutoriel gdal"
 icon: simple/blender
-image: https://github.com/thomas-szczurek/images/blob/main/title.png
+image:
 license: default
 robots: index, follow
 tags:
