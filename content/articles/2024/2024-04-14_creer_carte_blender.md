@@ -405,7 +405,7 @@ Bon allez.
 
 ![diff ortho perspective](https://github.com/thomas-szczurek/images/blob/main/img29_ortho.jpg){: .img-center loading=lazy }
 
-Mais je ne ferrai pas plus d'efforts.
+Mais je ne ferai pas plus d'efforts.
 
 Pour passer la caméra en vue orthographique, on la sélectionne, puis dans ses propriétés on change son type en "orthographic".
 
