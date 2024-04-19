@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-04-07
-description: "Technique permettant de réaliser des cartes de relief avec le logiciel libre 3d Blender, ainsi qu'un petit tutoriel gdal"
+description: "Technique permettant de réaliser des cartes de relief avec le logiciel libre 3d Blender, ainsi qu'un petit tutoriel GDAL"
 icon: simple/blender
 image:
 license: default
@@ -21,7 +21,7 @@ tags:
 
 # Réaliser des cartes avec Blender
 
-(et aussi un petit tuto gdal en lignes de commandes)
+(et aussi un petit tuto GDAL en lignes de commandes)
 
 Cet article se base sur celui initialement paru en anglais sur [somethingaboutmaps](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/), dont on remerciera l'auteur pour l'article initial et l'aimable autorisation d'écrire celui-ci.
 
@@ -29,15 +29,15 @@ Ou comment faire des cartes qui ont la classe. Grossièrement, la technique cons
 
 Je vais ici utiliser le  MNT à 1 mètre issus du [RGE ALTI](https://geoservices.ign.fr/rgealti) de l'IGN sur le département des Pyrennées Atlantiques, ce qui permettra d'avoir et du relief (ce qui rend bien avec cette technique) et de la mer (sacro-sainte règle des effets de manche pour avoir la classe : mettez de la flotte).
 
-Il y a plusieurs étapes de préparation des données et l'une d'entre elle nécessite obligatoirement l'utilisation de gdal en lignes de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tout les pré-traitmements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec Qgis).
+Il y a plusieurs étapes de préparation des données et l'une d'entre elle nécessite obligatoirement l'utilisation de GDAL en lignes de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tout les pré-traitmements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec Qgis).
 
-Ceci implique d'avoir accès à gdal. Sur windows ça passe en se rendant dans votre répertoire d'installation de Qgis et ensuite en démarrant OSGeo4W.bat. Je considère que les linuxiens sont assez aguéris pour se débrouiller (au pire faites vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux appeliens (sauf à ma cheffe de service car je suis bien obligé).
+Ceci implique d'avoir accès à GDAL. Sur windows ça passe en se rendant dans votre répertoire d'installation de Qgis et ensuite en démarrant OSGeo4W.bat. Je considère que les linuxiens sont assez aguéris pour se débrouiller (au pire faites vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux appeliens (sauf à ma cheffe de service car je suis bien obligé).
 
 ## Préparation des données
 
 Après récupération du jeu de données, chargez une des dalles au format asc dans qgis. Le format asc ne gère pas les projections et Qgis essayera par défaut de les positionner en WGS 84 (ne vous inquietez pas, les coordonnées sont les bonnes). Vous pouvez repositionner l'image en cliquant sur la petite icône de l'image ci-dessous et en spécifiant ce bon vieux Lambert 93.
 
-![Ca arrive même aux meilleurs](https://github.com/thomas-szczurek/images/blob/main/img1_lign.png){: .img-center loading=lazy }
+![Ca arrive même aux meilleurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img1_lign.png){: .img-center loading=lazy }
 
 Sur ces considérations on chargera plutôt la couche "dalles" [dans le format dont il ne faut pas prononcer le nom](http://switchfromshapefile.org/) située dans le dossier "3_SUPPLEMENTS_LIVRAISON" de l'archive et on active un fond de plan open street map sous "xyz tiles" de l'explorateur de Qgis histoire de se repérer.
 
@@ -60,7 +60,7 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
 - Puis on supprime la colonne d'origine.
 - Enfin on change à la brutasse l'extension du fichier en .txt ce qui nous donne une fois ouvert :
 
-![exemple fichier tuile](https://github.com/thomas-szczurek/images/blob/main/img2_tuiles.png){: .img-center loading=lazy }
+![exemple fichier tuile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img2_tuiles.png){: .img-center loading=lazy }
 
 - On déplace ce fichier directement dans le répertoire contenant les tuilles asc téléchargées.
 
@@ -82,19 +82,19 @@ Pour remonter d'un cran dans l'arboresence :
 
 Vous vous souvenez de ces gens relous qui vous demandent des noms de dossiers/fichiers juste en alphanumériques et sans espaces mais avec des _ ? C'est pour ça.
 
-Les commandes gdal sont accompagnées de `-` ou `--` et de lettres, ceci correspond aux options spécifiques du programme.
+Les commandes GDAL sont accompagnées de `-` ou `--` et de lettres, ceci correspond aux options spécifiques du programme.
 
 On se déplace dans le dossier contenant les images ex :
 
-![exemple fichier tuile](https://github.com/thomas-szczurek/images/blob/main/img3_cd.png){: .img-center loading=lazy }
+![exemple fichier tuile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img3_cd.png){: .img-center loading=lazy }
 
-Et maitenant on va utiliser [gdal_merge.py](https://gdal.org/programs/gdal_merge.html), le programme de gdal permettant de fusionner des images.
+Et maitenant on va utiliser [GDAL_merge.py](https://GDAL.org/programs/GDAL_merge.html), le programme de GDAL permettant de fusionner des images.
 
 ```bash
-gdal_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
+GDAL_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
 ```
 
-L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière gdal donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension.
+L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière GDAL donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension.
 
 `-co` correspond aux options spécifiques non pas du programme mais du driver du type de fichier (ici geotiff). BIGTIFF permet de faire des tif de plus de 4gb. Ce n'est pas mon cas ici mais ça ne coute rien de passer la commande par sécurité.
 
@@ -102,22 +102,22 @@ Il faut ensuite normalement spécifier un par un les noms de fichiers à fusionn
 
 Dans le repertoire vous trouverez votre geotiff mosaic.tif que je vous encourage à déplacer ailleurs pour s'y retrouver.
 
-Dans ~~l'interface graphique de gdal~~ Qgis cette étape est faisable via le menu raster -> Divers -> fusion (il faut au préalable charger l'ensemble des tuiles voulues dans qgis).
+Dans ~~l'interface graphique de GDAL~~ Qgis cette étape est faisable via le menu raster -> Divers -> fusion (il faut au préalable charger l'ensemble des tuiles voulues dans qgis).
 
 ### Reprojection
 
-On va maintenant reprojeter (vous vous souvenez des fichiers asc ?) notre image avec [gdalwarp](https://gdal.org/programs/gdalwarp.html) le programme servant à ... reprojeter.
+On va maintenant reprojeter (vous vous souvenez des fichiers asc ?) notre image avec [GDALwarp](https://GDAL.org/programs/GDALwarp.html) le programme servant à ... reprojeter.
 
 Se déplacer dans le répertoire où vous avez placé l'image et :
 
 ```bash
-gdalwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
+GDALwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
 ```
 
 - L'option `-t_srs` sert à indiquer le srid de sortie.
 - `-r` permet de spécifier la méthode de rééchantillonage. Le choix dépasse le cadre de cet article mais sachez que des methodes avancées comme cubicspline ou lanczos peuvent donner des résultats "floutés" car modifiant la valeur des pixels selon des courbes. On va donc rester sur la méthode par défaut : nearest neighbour (plus proche voisin) pour éviter ceci.
 
-Pour celles et ceux à l'aise avec gdal, vous pouvez compresser les images pour réduire la taille des fichiers de sortie au moins en deflate (pour les autres, ça se fait en passant une seconde option pour le driver de type de fichier : `-co COMPRESS=methode`, la plus courrament utilisée étant `-co COMPRESS=DEFLATE` pour s'assurer de la compatibilité avec tous les systèmes / logiciels).
+Pour celles et ceux à l'aise avec GDAL, vous pouvez compresser les images pour réduire la taille des fichiers de sortie au moins en deflate (pour les autres, ça se fait en passant une seconde option pour le driver de type de fichier : `-co COMPRESS=methode`, la plus courrament utilisée étant `-co COMPRESS=DEFLATE` pour s'assurer de la compatibilité avec tous les systèmes / logiciels).
 
 Sinon, ça se fait avec raster -> Projection -> Assigner une projection dans Qgis.
 
@@ -125,35 +125,35 @@ Sinon, ça se fait avec raster -> Projection -> Assigner une projection dans Qgi
 
 Oui. Nous allons commettre ceci. Ne sortez pas les bidons d'essence tout de suite s'il vous plait. Pour ce que nous allons en faire, Blender n'accepte que les images en entier 16 bits non signés (UInt16, on y reviendra), donc une plage de valeur pour les pixels comprise entre 0 et 65 535. Mais sans virgules, ce que contient notre raster initial donc on perdrait du détail. L'idée est donc de réattribuer aux pixels de notre image des valeurs sur l'ensemble de cette plage, ceci pour bénéficier de l'entièreté de cette finesse.
 
-On fait ça avec [gdal_calc.py](https://gdal.org/programs/gdal_calc.html) mais on peut aussi rester simple et faire ça avec la calculatrice raster de Qgis.
+On fait ça avec [GDAL_calc.py](https://GDAL.org/programs/GDAL_calc.html) mais on peut aussi rester simple et faire ça avec la calculatrice raster de Qgis.
 
 Tout d'abord, on normalise notre raster car certaines valeurs peuvent êtres en dessous de 0 (notamment quand il y a de l'eau). On va donc les mettres à 0.
 
 ```bash
-gdal_calc.py -A moasicl93.tif --outfile=mosaic_cut.tif --calc="A*(A>=0)"
+GDAL_calc.py -A moasicl93.tif --outfile=mosaic_cut.tif --calc="A*(A>=0)"
 ```
 
-Avec gdal_calc.py les maths doivent être "[numpy](https://numpy.org/) style".
+Avec GDAL_calc.py les maths doivent être "[numpy](https://numpy.org/) style".
 
 - `-A` permet d'attribuer un raster à une lettre qui sera ensuite utilisée dans la formule.
-- `--outfile` le nom du fichier de sortie (ça dépend des programmes gdal, souvent c'est la position du nom qui fait foi dans la commande).
+- `--outfile` le nom du fichier de sortie (ça dépend des programmes GDAL, souvent c'est la position du nom qui fait foi dans la commande).
 - `--calc` la formule de calcul, entourée de "".
 
 Ou dans qgis : raster -> calculatrice raster puis
 
-![calc_raster](https://github.com/thomas-szczurek/images/blob/main/img4_calc.png)
+![calc_raster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img4_calc.png)
 
 if (condition, valeur si vrai, valeur si faux)
 
-On regarde les valeurs minimum et maximum de notre raster. Soit dans les propriétés de la couche qgis, soit avec [gdalinfo](https://gdal.org/programs/gdalinfo.html).
+On regarde les valeurs minimum et maximum de notre raster. Soit dans les propriétés de la couche qgis, soit avec [GDALinfo](https://GDAL.org/programs/GDALinfo.html).
 
 ```bash
-gdalinfo -mm mosaic_cut.tif
+GDALinfo -mm mosaic_cut.tif
 ```
 
-- l'option `-mm` permet de forcer le calcul des valeurs min/max qui n'est pas donné par défaut par gdalinfo. Elles apparaitrons tout en bas (dans mon cas, 0 et 196,8).
+- l'option `-mm` permet de forcer le calcul des valeurs min/max qui n'est pas donné par défaut par GDALinfo. Elles apparaitrons tout en bas (dans mon cas, 0 et 196,8).
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img5_minmax.png){: .img-center loading=lazy }
+![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img5_minmax.png){: .img-center loading=lazy }
 
 Le calcul à faire pour réaffecter nos pixels est le suivant :
 (Valeur pixel – min) ÷ (max – min) * 65535
@@ -161,20 +161,20 @@ Le calcul à faire pour réaffecter nos pixels est le suivant :
 Dans mon cas celà donne :
 
 ```bash
-gdal_calc.py -A mosaic_cut.tif --outfile=mosaic_rescale.tif --calc="(A - 0) / (196.8 - 0) * 65535"
+GDAL_calc.py -A mosaic_cut.tif --outfile=mosaic_rescale.tif --calc="(A - 0) / (196.8 - 0) * 65535"
 ```
 
 Dans la calculatrice raster de Qgis celà donnerai :
 ("mosaic_cut@1" - 0) / (196.8 - 0) * 65535.
 
-Enfin, on va convertir notre raster en UInt16 pour l'import dans Blender. C'est cette opération qui n'est pas réalisable dans Qgis sans circonvolutions. Donc on sort [gdal_translate](https://gdal.org/programs/gdal_translate.html), le programme qui sert à faire des conversions.
+Enfin, on va convertir notre raster en UInt16 pour l'import dans Blender. C'est cette opération qui n'est pas réalisable dans Qgis sans circonvolutions. Donc on sort [GDAL_translate](https://GDAL.org/programs/GDAL_translate.html), le programme qui sert à faire des conversions.
 
 ```bash
-gdal_translate -ot UInt16 mosaic_rescale.tif mnt.tif
+GDAL_translate -ot UInt16 mosaic_rescale.tif mnt.tif
 ```
 
 - `-ot` est l'option qui permet de forcer le type de données de sortie.
-- les fichiers d'entrée et de sortie se précisent par leur position dans la commande comme précisé dans la [**documentation**](https://gdal.org/index.html) très complète de gdal que je m'efforce de vous inciter à consulter depuis le début en vous en spammant le lien le plus de fois possible.
+- les fichiers d'entrée et de sortie se précisent par leur position dans la commande comme précisé dans la [**documentation**](https://GDAL.org/index.html) très complète de GDAL que je m'efforce de vous inciter à consulter depuis le début en vous en spammant le lien le plus de fois possible.
 
 ## Petite présentation de Blender et configuration
 
@@ -184,13 +184,13 @@ Faire le tour de Blender serait bien sur beaucoup trop ambiteux ici, mais voici 
 
 Blender fonctionne sur un principe d'environnement en fonction de la tache que vous êtes en train de réaliser (modéliser, travailler sur les textures ...). Pour passer de l'un à l'autre, on clique ici :
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img6_viewports.png){: .img-center loading=lazy }
+![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img6_viewports.png){: .img-center loading=lazy }
 
 3D Viewport est la vue 3d par défaut.
 
 Les boutons situés ici permettent de changer le mode d'affichage des objets 3d (fil de fer, materiaux, rendu ...).
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img7_render.png){: .img-center loading=lazy }
+![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img7_render.png){: .img-center loading=lazy }
 
 (vous pouvez essayer avec le cube présent par défaut).
 
@@ -198,7 +198,7 @@ Les boutons situés ici permettent de changer le mode d'affichage des objets 3d 
 
 En cliquant là :
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img8_engine.png){: .img-center loading=lazy }
+![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img8_engine.png){: .img-center loading=lazy }
 
 Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute.
 
@@ -206,7 +206,7 @@ En fonction de votre carte graphique, vous pouvez aussi faire un tour par le men
 
 Toujours là :
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img9_sampling.png){: .img-center loading=lazy }
+![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img9_sampling.png){: .img-center loading=lazy }
 
 En descendant vous verez Sampling. Ces options permettent de configurer le nombre de passages qu'effectuera le moteur de rendu en changeant la valeur max samples. Je vous conseille de configurer Viewport (quand vous serez en train de travailler mais en affichant quelque chose proche du rendu) avec une valeur basse pour gagner du temps, et Render avec une valeur haute pour avoir un beau rendu final. Activer l'option Denoise dans les deux cas qui permet d'enlever du "bruit" sur les rendus. Sur l'image vous verez ma proposition de paramètrage.
 
@@ -222,13 +222,13 @@ Par défaut les objets apparaissent sous le "curseur 3D" mais on va déplacer no
 
 On clique sur notre plan pour le sélectionner (il se détoure alors en orange) et on se rend là :
 
-![La](https://github.com/thomas-szczurek/images/blob/main/img10_loc.png){: .img-center loading=lazy }
+![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img10_loc.png){: .img-center loading=lazy }
 
 On modifie ensuite les valeurs de `Location` x y et z à 0 si ce n'est pas le cas.
 
-Je vous ai déjà parlé de mon amour de gdal ? Et bien on ve le ressortir avec encore une fois la commande `gdalinfo`. En effet maintenant on va donner à notre plan les dimensions de notre raster d'elevation.
+Je vous ai déjà parlé de mon amour de GDAL ? Et bien on ve le ressortir avec encore une fois la commande `GDALinfo`. En effet maintenant on va donner à notre plan les dimensions de notre raster d'elevation.
 
-![taille raster](https://github.com/thomas-szczurek/images/blob/main/img11_size.png){: .img-center loading=lazy }
+![taille raster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img11_size.png){: .img-center loading=lazy }
 
 La ligne Size vous donne la taille en pixels de votre mnt.
 
@@ -246,7 +246,7 @@ Pour l'instant, notre plan ne possèque aucun matériau, ce pourquoi il apparait
 
 Pour affecter un matériau au plan, selectionnez le puis cliquez sur cette icone :
 
-![setup materials](https://github.com/thomas-szczurek/images/blob/main/img12_material.png){: .img-center loading=lazy }
+![setup materials](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img12_material.png){: .img-center loading=lazy }
 
 Puis cliquez sur `New`. Blendez créera alors un nouveau materiau nommé Material.001. Vous pouvez le renommer si vous le désirez.
 
@@ -262,7 +262,7 @@ Changez l'environnement de travail pour passer de "3D View port" à "Shader edit
 
 Cette interface permet de régler les paramètres du `matériau` comme précédemment, mais bien plus encore. Faites bien attention à bien sélectionner votre plan en cliquant là :
 
-![selectionner le plan](https://github.com/thomas-szczurek/images/blob/main/img13_explorer.png){: .img-center loading=lazy }
+![selectionner le plan](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img13_explorer.png){: .img-center loading=lazy }
 
 La manière dont est rendu votre matériau est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boites pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3d View Port.
 
@@ -270,7 +270,7 @@ Chaque boite est un `node` et vous verrez une ligne reliant Principle BSDF à la
 
 Depuis la barre de menu située au dessus de l'écran, choisissez Add -> Texture -> Image texture.
 
-![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img14_addtexture.png){: .img-center loading=lazy }
+![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img14_addtexture.png){: .img-center loading=lazy }
 
 Une nouvelle boite apparait, positionnez la où bon vous semble. Dans le language de Blender une `texture` est une image ou un motif qui sera appliqué aux `matériaux` pour changer leur apparence. On pourrait ainsi charger une image de grain de bois pour faire ressembler notre plan à du bois. Mais ces texture peuvent aussi être utilisées pour générer un `displacement`.
 
@@ -279,11 +279,11 @@ Une nouvelle boite apparait, positionnez la où bon vous semble. Dans le languag
 - Et relier à `Displacement`
 - Tant que nous y sommes, changez l'option `Linear` pour `Smart`. Ceci change l'interpolation de la texture pour être un peu plus jolie.
 
-![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img15_displacement.png){: .img-center loading=lazy }
+![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img15_displacement.png){: .img-center loading=lazy }
 
 Vous pouvez faire un essai de rendu en cliquant sur Render -> render image dans le menu tout en haut.
 
-![ajouter texture](https://github.com/thomas-szczurek/images/blob/main/img16_1strender.png){: .img-center loading=lazy }
+![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img16_1strender.png){: .img-center loading=lazy }
 
 Pour repprendre les mots de l'auteur originel "Tout ceci est bâti sur un mensonge". Pour le moment Blender ne fait que **simuler** la déformation en utilisant une technique nommée *bump mapping*. C'est plus rapide à calculer mais pas aussi réaliste. Cette technique ne fait que donner une *apparence* de profondeur, mais elle n'est pas réelle : aucune ombre n'est projetée et la lumière n'interagit pas avec.
 
@@ -299,7 +299,7 @@ Pour l'instant ces derniers ne sont pas utilsés, Blender n'a fait que *peindre*
 
 - Retournez dans le 3d View Port
 - Toujours bien penser à sélectionner le plan et cliquez sur l'icone en forme de clef à molette.
-![modifiers](https://github.com/thomas-szczurek/images/blob/main/img17_modifiers.png){: .img-center loading=lazy }
+![modifiers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img17_modifiers.png){: .img-center loading=lazy }
 - Et maintenant cliquez sur "Add modifier"
 - L'apparence de ce menu a été modifiée dans la toute dernière version de Blender mais l'idée est de choisir le groupe "Generate" puis ["Subdivision Surface"](https://docs.blender.org/manual/fr/4.1/modeling/modifiers/generate/subdivision_surface.html).
 
@@ -317,11 +317,11 @@ Dans notre cas on va l'utilier pour faire croire à Blender que notre objet est 
 - On retourne dans le "shader editor".
 - Add -> vector -> [displacement](https://docs.blender.org/manual/fr/dev/render/shader_nodes/vector/vector_displacement.html)
 
-![true displacement](https://github.com/thomas-szczurek/images/blob/main/img18_t_displacement.png){: .img-center loading=lazy }
+![true displacement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img18_t_displacement.png){: .img-center loading=lazy }
 
 Et on modifie notre diagramme pour qu'il ressemble à ceci :
 
-![true displacement 2](https://github.com/thomas-szczurek/images/blob/main/img19_t_displacement2.png){: .img-center loading=lazy }
+![true displacement 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img19_t_displacement2.png){: .img-center loading=lazy }
 
 Color vers height and displacement vers displacement. Ceci dit à Blender "regarde la couleur (clair ou sombre) et transforme ça en déplacement".
 
@@ -333,11 +333,11 @@ Si vous effectuez un rendu maintenant vous constaterez que pas grand chose n'a c
 
 Dans les paramètres de notre matériau, sous la section `Settings`-> `Surface` réglez displacement à "displacement only".
 
-![true displacement 3](https://github.com/thomas-szczurek/images/blob/main/img20_t_displacement3.png){: .img-center loading=lazy }
+![true displacement 3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img20_t_displacement3.png){: .img-center loading=lazy }
 
 Vous pouvez tester un render et sous vos yeux emerveillés vous auto congratuler. Vous êtes beaux/belles et fort/es. (j'ai rien contre le point médian mais on devine que ce choix a été fait par des gens qui ne tapent pas sur un clavier d'ordinateur (c'est alt + 0183 mais sous ghostwritter ça marche pas)).
 
-![true displacement 3](https://github.com/thomas-szczurek/images/blob/main/img21_t_displacement4.png){: .img-center loading=lazy }
+![true displacement 3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img21_t_displacement4.png){: .img-center loading=lazy }
 
 Vous remarquez cependant trois choses :
 
@@ -349,17 +349,17 @@ En changeant le paramètre `scale` du `node` displacement du shader editor, vous
 
 Pour ce qui est des bords ce qui se passe c'est que pour le moment, Blender essaye de répéter votre image sur les bords. Dans le shader editor, sur le `node` de votre image, changez *Repeat* pour *Extend* pour corriger ça.
 
-![extend](https://github.com/thomas-szczurek/images/blob/main/img22_extend.png){: .img-center loading=lazy }
+![extend](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img22_extend.png){: .img-center loading=lazy }
 
 C'est déjà mieux !
 
-![render2](https://github.com/thomas-szczurek/images/blob/main/img23_render2.png){: .img-center loading=lazy }
+![render2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img23_render2.png){: .img-center loading=lazy }
 
 Pour améliorer nos temps de rendu, nous avons déjà modifié le nombre de passages. Mais il est aussi possible de diminuer la taille des tiles (ce qui permet d'avoir un aperçu plus rapide du résultat et de stopper le rendu si celà ne nous convient pas)
 
 Ca se passe ici :
 
-![tiles_size](https://github.com/thomas-szczurek/images/blob/main/img24_tiles.png){: .img-center loading=lazy }
+![tiles_size](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img24_tiles.png){: .img-center loading=lazy }
 
 Et vous pouvez par exemple diminuer à 512.
 
@@ -369,7 +369,7 @@ Comme dans l'article original, je vous incite à explorer les matériaux. Sauveg
 
 On retourne dans le 3D view port. La caméra, c'est ce machin :
 
-![la caméra](https://github.com/thomas-szczurek/images/blob/main/img25_camera.png){: .img-center loading=lazy }
+![la caméra](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img25_camera.png){: .img-center loading=lazy }
 
 Elle determine la position de la vue lors des rendus. En appuyant sur la touche 0 du pavé numérique de votre clavier vous pouvez "voir" ce que voit la caméra (réaappuyer sur 0 pour sortir). Si l'idée saugrenue d'utiliser Blender sur un pc portable sans pavé numérique vous est venue, il faudra à chaque fois passer par le menu View -> Cameras -> active Camera pour obtenir le même effet.
 
@@ -380,19 +380,19 @@ On veut que notre caméra soit située juste au dessus de notre plan, et avec un
 - Et dans Transform, on passe les valeurs de location x et y = 0, et z = 3 (la valeur de z n'a pas trop d'importance a part d'être supérieure à 0, voir plus bas)
 - Toujours dans transform, on passe toutes les valeurs de rotation à 0
 
-![réglages caméra](https://github.com/thomas-szczurek/images/blob/main/img26_camera_settings.png){: .img-center loading=lazy }
+![réglages caméra](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img26_camera_settings.png){: .img-center loading=lazy }
 
 Si vous passez en vue caméra vous verrez qu'on commence à avoir quelque chose qui ressemblera a une carte.
 
-Il nous faut encore régler le ratio de la prise de vue pour le faire correspondre à celui de notre mnt/plan. Ca se fait dans les `output properties`. Dans Format (ou Dimensions dans d'anciennes versions de Blender), indiquez les dimensions en pixels de votre raster que vous aviez otenus avec gdalinfo. Ce paramètre modifie la résolution de sortie des rendus et vous verrez la caméra changer en fonction pour presque s'adapter aux dimensions de votre plan.
+Il nous faut encore régler le ratio de la prise de vue pour le faire correspondre à celui de notre mnt/plan. Ca se fait dans les `output properties`. Dans Format (ou Dimensions dans d'anciennes versions de Blender), indiquez les dimensions en pixels de votre raster que vous aviez otenus avec GDALinfo. Ce paramètre modifie la résolution de sortie des rendus et vous verrez la caméra changer en fonction pour presque s'adapter aux dimensions de votre plan.
 
 En dessous se trouve le symbole `%` qui adaptera la résolution indiquée par ce pourcentage lors des rendus. Celà peut être interessant lors de rendus intermédiaires pour accélerer le processus, ou si comme moi votre raster est très grand et que vous avez des petits problèmes de mémoire lors des rendus.
 
-![réglages caméra](https://github.com/thomas-szczurek/images/blob/main/img27_camera_settings2.png){: .img-center loading=lazy }
+![réglages caméra](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img27_camera_settings2.png){: .img-center loading=lazy }
 
 Faisons maintenant un rendu pour voir.
 
-![rendu3](https://github.com/thomas-szczurek/images/blob/main/img28_render3.png){: .img-center loading=lazy }
+![rendu3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img28_render3.png){: .img-center loading=lazy }
 
 Deux conclusions s'imposent.
 
@@ -403,17 +403,17 @@ Je considère que nous sommes entre géomaticien/nes ou personnes interessées p
 
 Bon allez.
 
-![diff ortho perspective](https://github.com/thomas-szczurek/images/blob/main/img29_ortho.jpg){: .img-center loading=lazy }
+![diff ortho perspective](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img29_ortho.jpg){: .img-center loading=lazy }
 
 Mais je ne ferai pas plus d'efforts.
 
 Pour passer la caméra en vue orthographique, on la sélectionne, puis dans ses propriétés on change son type en "orthographic".
 
-![ortho](https://github.com/thomas-szczurek/images/blob/main/img30_ortho2.png){: .img-center loading=lazy }
+![ortho](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img30_ortho2.png){: .img-center loading=lazy }
 
 Vous verrez par contre que maintenant votre caméra prends une zone beaucoup plus grande que votre plan. Pour remedier  à ça, il faut paramétrer la valeur d'`orthographic scale` de ce même panneau. Pour trouver la bonne valeur, il faut multiplier par deux la plus grande dimension de votre plan. Ainsi, j'avais créé un plan de 0,8 x 0,7, donc dans mon cas 0,8 x 2 = 1,6. J'ai réussi ça de tête.
 
-![rendu 3 ou 4 je sais plus](https://github.com/thomas-szczurek/images/blob/main/img31_render3.png){: .img-center loading=lazy }
+![rendu 3 ou 4 je sais plus](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img31_render3.png){: .img-center loading=lazy }
 
 C'est beaucoup mieux !
 
@@ -423,11 +423,11 @@ Maintenant, on peut s'interesser à l'exagération du relief. On retourne dans l
 
 On va maintenant régler la source de lumière qui éclaire notre sène. La source de lumière c'est ce truc :
 
-![lumière](https://github.com/thomas-szczurek/images/blob/main/img32_light.png){: .img-center loading=lazy }
+![lumière](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img32_light.png){: .img-center loading=lazy }
 
 Après l'avoir selectionnée, cliquez sur l'icone en forme de bulbe d'ampoule pour accéder à ses propriétés.
 
-![réglages lumière](https://github.com/thomas-szczurek/images/blob/main/img33_light2.png){: .img-center loading=lazy }
+![réglages lumière](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img33_light2.png){: .img-center loading=lazy }
 
 Plusieurs types de source sont possible (ampoule, spot...). Mais dans notre cas on veut une lumière naturelle. Choisir donc "boule de feu géante abritant en son coeur des réactions de fusion nucléaire qui se transformera en [naine blanche](https://fr.wikipedia.org/wiki/Naine_blanche) à sa mort mais pas avant d'avoir enflé jusqu'aux limites de la terre la carbonisant au passage mais qui si elle était plus massive finirai en [étoile à neutrons](https://fr.wikipedia.org/wiki/%C3%89toile_%C3%A0_neutrons) voir en [trou noir stellaire](https://fr.wikipedia.org/wiki/Trou_noir_stellaire) dont notre physique n'arrive pas à expliquer les singularités centrales sans unifier la relativité générale et la quantique et ça fait 100 ans qu'on cherche, prend ça dans ta face la science."
 
@@ -443,29 +443,29 @@ Pour définir l'angle d'incidence des rayons lumineux il faut se rendre dans les
 
 Indiquer 0 pour x, 45 pour y et 135 pour z.
 
-![réglages lumière](https://github.com/thomas-szczurek/images/blob/main/img34_light3.png){: .img-center loading=lazy }
+![réglages lumière](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img34_light3.png){: .img-center loading=lazy }
 
 La valeur de y contrôle l'angle par rapport à l'horizon, et celle de z la direction de provenance. Une valeur de 135 vous donne une lumière qui arrive du Nord Ouest (en haut à gauche quoi), ce à quoi l'oeil humain est habitué pour une carte. Mettre 225 donnerai l'impression que notre relief est inversé.
 
 Le tout dernier réglage à faire est de régler la taille de notre soleil. On reclique sur la petite ampoule verte et on regarde le paramètre Angle, mal nommé puisqu'il correspond au [diamètre angulaire](https://fr.wikipedia.org/wiki/Taille_apparente). Changer sa valeur régle la *douceur* de la lumière. Avec une valeur basse par défault, notre lumière nous donne un relief lunaire, essayez plutôt une valeur de 90 pour quelque chose de plus doux.
 
-![réglages lumière](https://github.com/thomas-szczurek/images/blob/main//img35_light4.png){: .img-center loading=lazy }
+![réglages lumière](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender//img35_light4.png){: .img-center loading=lazy }
 
 Un petit rendu pour la route ?
 
-![rendu 5](https://github.com/thomas-szczurek/images/blob/main/img36_render6.png){: .img-center loading=lazy }
+![rendu 5](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img36_render6.png){: .img-center loading=lazy }
 
 Waoohh !!!
 
 ## Coloriser
 
-Pour ça, je vais vous laissez vous reposer et ne pas ressortir gdal, mais réouvrir un logiciel obscur nommé Qgis dans lequel on va charger notre raster d'élévation. L'idée va être de générer une image colorée qu'on appliquera ensuite dans Blender comme texture.
+Pour ça, je vais vous laissez vous reposer et ne pas ressortir GDAL, mais réouvrir un logiciel obscur nommé Qgis dans lequel on va charger notre raster d'élévation. L'idée va être de générer une image colorée qu'on appliquera ensuite dans Blender comme texture.
 
 Si vous avez de l'eau :
 
 On ouvre la calculatrice raster (raster -> calculatrice) et on tape juste cette formule `mnt@1 <= 0`. On enregistre sur le disque le résultat plutôt que de faire un raster virtuel car l'algorithme suivant veut un fichier (par exemple eau.tif). (le chiffre derriere le @ désigne le numéro de bande de l'image à utiliser).
 
-Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés et rendre le résultat plus propre ( [gdal_sieve.py](https://gdal.org/programs/gdal_sieve.html) ). Ca se passe avec raster -> Analyse -> Tamiser.
+Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés et rendre le résultat plus propre ( [GDAL_sieve.py](https://GDAL.org/programs/GDAL_sieve.html) ). Ca se passe avec raster -> Analyse -> Tamiser.
 
 - On sélectionne notre raster eau.
 - l'option `seuil` détermine la taille limite des polygones qui devront êtres fusionnés avec leur voisin le plus proche
@@ -483,13 +483,13 @@ Pour le reste :
 - On selectionne notre raster de mnt, et dans son style on change bande grise unique pour Pseudo-couleur à bande unique.
 - Dans palette de couleur, on choisi "créer une nouvelle palette" puis "catalogue cpt-city"
 
-![catalogue cpt city](https://github.com/thomas-szczurek/images/blob/main/img37_cptcity.png){: .img-center loading=lazy }
+![catalogue cpt city](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img37_cptcity.png){: .img-center loading=lazy }
 
 - Descendre dans la section "Topography" et par exemple choisir "DEM_screen"
 - Une fois validé cliquez sur "classer"
 - Pour bien il faudrai rectifier la palette en fonction de vos hauteurs maximum mais comme je commence à vraiment aimer pouvoir finir (autre manière de dire : j'ai la grosse flemme), j'aurai des hauteurs de 198 mètres qui paraitrons couvertes de neiges eternelles.
 
-![menteur](https://github.com/thomas-szczurek/images/blob/main/img38_menteur.png){: .img-center loading=lazy }
+![menteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img38_menteur.png){: .img-center loading=lazy }
 
 Maintenant, essayez de zoomer sur la carte  pour l'avoir la plus grande possible, mais complète sur votre écran. Puis choisir dans le menu Projet -> Importer/Exporter -> Exporter la carte au format image (ça permet d'exporter le contenu de votre canevas de carte sans passer par le composeur). Changez la résolution en 300 dpi et exporter au format png.
 
@@ -497,16 +497,16 @@ Maintenant ouvrez cette image dans [The Gimp](https://www.gimp.org/), un éditeu
 
 On revient maintenant dans le `shader editor` de Blender. Comme pour ajouter notre mnt, on passe par le menu Add -> Texture -> Image texture. On selectionne notre image de couleur, on oublie pas de passer l'interpolation en smart et l'extension en extend, mais on laisse le color space en sRGB. Puis on relie `color` à `Base color` de principled BSDF.
 
-![coloriser](https://github.com/thomas-szczurek/images/blob/main/img39_coloriser.png){: .img-center loading=lazy }
+![coloriser](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img39_coloriser.png){: .img-center loading=lazy }
 
 Et on effectue le rendu final !!!
 
-![render final](https://github.com/thomas-szczurek/images/blob/main/img40_renderfinal.png){: .img-center loading=lazy }
+![render final](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img40_renderfinal.png){: .img-center loading=lazy }
 
 On pourrait bien sur jouer un peu plus avec les réglages (je trouve par exemple mes ombres encore un peu trop profondes et pourrai passer du temps sur le paramètre angle de ma lumière soleil), ou les couleurs (je trouve ce vert bouteille assez moche), ou encore sur le tamisage de notre couche d'eau,  mais vous avez maintenant la base de la technique !
 
 Voici par exemple ce que ça donne lors d'un essai precédent où j'ai passé un peu plus de temps à tout régler
 
-![render final](https://github.com/thomas-szczurek/images/blob/main/img41_pyrennees_render.png){: .img-center loading=lazy }
+![render final](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img41_pyrennees_render.png){: .img-center loading=lazy }
 
 --8<-- "content/team/thomas-szczurek-gayant.md"
