@@ -396,8 +396,8 @@ Faisons maintenant un rendu pour voir.
 
 Deux conclusions s'imposent.
 
-- Ca commence a avoir de la tronche
-- Houston nous avons un problème
+1. Ca commence à avoir de la tronche
+1. Houston nous avons un problème
 
 Je considère que nous sommes entre géomaticien/nes ou personnes interessées par le sujet. Le terme d'**ortho**photographie ne vous est pas inconnu et je n'ai pas à expliquer le concept de vue en perspective/orthographique.
 
