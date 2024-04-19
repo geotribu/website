@@ -325,9 +325,9 @@ Et on modifie notre diagramme pour qu'il ressemble à ceci :
 
 Color vers height and displacement vers displacement. Ceci dit à Blender "regarde la couleur (clair ou sombre) et transforme ça en déplacement".
 
-**important**
-
-Tant que nous y sommes, changez le `color space` de votre texture mnt de **sRGB** à  **non-color**. Dans la majorité des cas, les textures sont utilisées pour appliquer une image sur des objets, mais ce n'est pas notre cas. Si on laisse en sRGB, Blender va appliquer une courbe de correction sur notre couleur de mnt au lieu d'attribuer une hauteur de relief de façon linéaire en fonction du niveau de gris.
+!!! tip "Changer l'espace colorimétrique"
+    Tant que nous y sommes, changez le `color space` de votre texture MNT de `sRGB` à  `non-color`.  
+    Dans la majorité des cas, les textures sont utilisées pour appliquer une image sur des objets, mais ce n'est pas notre cas. Si on laisse en `sRGB`, Blender va appliquer une courbe de correction sur notre couleur de MNT au lieu d'attribuer une hauteur de relief de façon linéaire en fonction du niveau de gris.
 
 Si vous effectuez un rendu maintenant vous constaterez que pas grand chose n'a changé. En effet il faut demander à Blender d'arrêter de bump mapper et de modifier réellement steuplé.
 
