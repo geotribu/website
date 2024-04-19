@@ -1,6 +1,6 @@
 ---
 title: "Réaliser des cartes avec Blender"
-subtitle:
+subtitle: Blindé jusqu’au relief
 authors:
     - Thomas Szczurek-Gayant
 categories:
