@@ -194,7 +194,7 @@ Les boutons situés ici permettent de changer le mode d'affichage des objets 3d 
 
 (vous pouvez essayer avec le cube présent par défaut).
 
-**Important**
+### Réglages préalables (moteur de rendu et carte graphique)
 
 En cliquant là :
 
