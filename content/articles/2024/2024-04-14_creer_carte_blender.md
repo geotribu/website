@@ -13,9 +13,10 @@ image:
 license: default
 robots: index, follow
 tags:
-    - cartographie
+    - 3D
     - Blender
-    - gdal
+    - cartographie
+    - GDAL
 ---
 
 # Réaliser des cartes avec Blender
