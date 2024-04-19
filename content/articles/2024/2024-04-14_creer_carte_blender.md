@@ -48,10 +48,10 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
 - Dans Qgis, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format csv qu'on nommera select.csv.
 - On ouvre ce fichier dans LibreOfficeCalc (ou logiciel propriétaire équivalent) et on supprime l'entête des colonnes ainsi que toutes les colonnes sauf celle contenant le nom des tuiles.
 - Dans la colonne adjacente on écrit cette formule :
-  - - Libre office :
-  - - =CONCAT(A1;".asc")
-  - - Excel :
-  - - =CONCATENER(A1;".asc")
+    - Libre office :
+    - =CONCAT(A1;".asc")
+    - Excel :
+    - =CONCATENER(A1;".asc")
 - On tire la formule et on remplace par les valeurs "en dur " avec un collage spécial
 - Puis on supprime la colonne d'origine.
 - Enfin on change à la brutasse l'extension du fichier en .txt ce qui nous donne une fois ouvert :
