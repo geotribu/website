@@ -90,7 +90,7 @@ Et maitenant on va utiliser [GDAL_merge.py](https://GDAL.org/programs/GDAL_merge
 GDAL_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
 ```
 
-L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière GDAL donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension.
+- L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière GDAL donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension.
 
 `-co` correspond aux options spécifiques non pas du programme mais du driver du type de fichier (ici geotiff). BIGTIFF permet de faire des tif de plus de 4gb. Ce n'est pas mon cas ici mais ça ne coute rien de passer la commande par sécurité.
 
