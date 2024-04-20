@@ -54,7 +54,7 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
     - =CONCATENER(A1;".asc")
 - On tire la formule et on remplace par les valeurs "en dur " avec un collage spécial
 - Puis on supprime la colonne d'origine.
-- Enfin on change à la brutasse l'extension du fichier en .txt ce qui nous donne une fois ouvert :
+- Enfin on change à la brutasse l'extension du fichier en TXT ce qui nous donne une fois ouvert :
 
 ![exemple fichier tuile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img2_tuiles.png){: .img-center loading=lazy }
 
