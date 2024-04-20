@@ -80,7 +80,7 @@ Vous vous souvenez de ces gens relous qui vous demandent des noms de dossiers/fi
 
 Les commandes GDAL sont accompagnées de `-` ou `--` et de lettres, ceci correspond aux options spécifiques du programme.
 
-On se déplace dans le dossier contenant les images ex :
+On se déplace dans le dossier contenant les images. Exemple :
 
 ![exemple fichier tuile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img3_cd.png){: .img-center loading=lazy }
 
