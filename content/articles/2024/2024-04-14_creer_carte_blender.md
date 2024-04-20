@@ -23,7 +23,7 @@ tags:
 
 (et aussi un petit tuto GDAL en lignes de commandes)
 
-Cet article se base sur celui initialement paru en anglais sur [somethingaboutmaps](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/), dont on remerciera l'auteur pour l'article initial et l'aimable autorisation d'écrire celui-ci.
+Cet article se base sur celui initialement paru en anglais sur [somethingaboutmaps](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/), dont on remerciera l'auteur Daniel Huffman pour l'article initial et l'aimable autorisation d'écrire celui-ci.
 
 Ou comment faire des cartes qui ont la classe. Grossièrement, la technique consiste à déformer un plan avec un raster d'élévation.
 
@@ -41,7 +41,7 @@ Après récupération du jeu de données, chargez une des dalles au format ASC d
 
 Sur ces considérations on chargera plutôt la couche "dalles" [dans le format dont il ne faut pas prononcer le nom](http://switchfromshapefile.org/) située dans le dossier "3_SUPPLEMENTS_LIVRAISON" de l'archive. On active ensuite un fond de plan OpenStreetMap sous "xyz tiles" de l'explorateur de QGIS histoire de se repérer.
 
-### Mosaïquage
+### Liste des tuiles et bases de la ligne de commandes
 
 On va ici créer un fichier qui nous permettra de fusionner les dalles voulues pour notre carte.
 
@@ -52,7 +52,7 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
     - =CONCAT(A1;".asc")
     - Excel :
     - =CONCATENER(A1;".asc")
-- On tire la formule et on remplace par les valeurs "en dur " avec un collage spécial
+- On applique la formule sur l'ensemble de la colonne et on remplace par les valeurs "en dur " avec un collage spécial
 - Puis on supprime la colonne d'origine.
 - Enfin on change à la brutasse l'extension du fichier en TXT ce qui nous donne une fois ouvert :
 
@@ -76,18 +76,21 @@ Sur Windows, pour changer de lecteur, juste indiquer la lettre et les deux point
 Pour remonter d'un cran dans l'arboresence :
 `cd ..`
 
-Vous vous souvenez de ces gens relous qui vous demandent des noms de dossiers/fichiers juste en alphanumériques et sans espaces mais avec des _ ? C'est pour ça.
+!!! tip "le nommage des fichiers et dossiers"
+    Vous vous souvenez de ces gens relous qui vous demandent des noms de dossiers/fichiers juste en alphanumériques et sans espaces mais avec des _ ? C'est pour ça.
 
 Les commandes GDAL sont accompagnées de `-` ou `--` et de lettres, ceci correspond aux options spécifiques du programme.
+
+### Mosaïquage
 
 On se déplace dans le dossier contenant les images. Exemple :
 
 ![exemple fichier tuile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img3_cd.png){: .img-center loading=lazy }
 
-Et maitenant on va utiliser [GDAL_merge.py](https://GDAL.org/programs/GDAL_merge.html), le programme de GDAL permettant de fusionner des images.
+On va ensuite utiliser [GDAL_merge.py](https://GDAL.org/programs/GDAL_merge.html), le programme de GDAL permettant de fusionner des images.
 
 ```bash
-GDAL_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
+gdal_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
 ```
 
 - L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière GDAL donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension.
@@ -107,7 +110,7 @@ On va maintenant reprojeter (vous vous souvenez des fichiers ASC ?) notre image 
 Se déplacer dans le répertoire où vous avez placé l'image et :
 
 ```bash
-GDALwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
+gdalwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
 ```
 
 - L'option `-t_srs` sert à indiquer le [SRID](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_coordonn%C3%A9es_(cartographie)) de sortie.
@@ -126,7 +129,7 @@ On fait ça avec [GDAL_calc.py](https://GDAL.org/programs/GDAL_calc.html) mais o
 Tout d'abord, on normalise notre raster car certaines valeurs peuvent êtres en dessous de 0 (notamment quand il y a de l'eau). On va donc les mettre à 0.
 
 ```bash
-GDAL_calc.py -A moasicl93.tif --outfile=mosaic_cut.tif --calc="A*(A>=0)"
+gdal_calc.py -A moasicl93.tif --outfile=mosaic_cut.tif --calc="A*(A>=0)"
 ```
 
 Avec `GDAL_calc.py`, les maths doivent être "[numpy](https://numpy.org/) style".
@@ -144,7 +147,7 @@ if (condition, valeur si vrai, valeur si faux)
 On regarde les valeurs minimum et maximum de notre raster, soit dans les propriétés de la couche QGIS, soit avec [GDALinfo](https://GDAL.org/programs/GDALinfo.html).
 
 ```bash
-GDALinfo -mm mosaic_cut.tif
+gdalinfo -mm mosaic_cut.tif
 ```
 
 - l'option `-mm` permet de forcer le calcul des valeurs min/max qui n'est pas donné par défaut par `gdalinfo`. Elles apparaitrons tout en bas (dans mon cas, 0 et 196,8).
@@ -157,16 +160,16 @@ Le calcul à faire pour réaffecter nos pixels est le suivant :
 Dans mon cas cela donne :
 
 ```bash
-GDAL_calc.py -A mosaic_cut.tif --outfile=mosaic_rescale.tif --calc="(A - 0) / (196.8 - 0) * 65535"
+gdal_calc.py -A mosaic_cut.tif --outfile=mosaic_rescale.tif --calc="(A - 0) / (196.8 - 0) * 65535"
 ```
 
 Dans la calculatrice raster de QGIS, cela donnerait :
 ("mosaic_cut@1" - 0) / (196.8 - 0) * 65535.
 
-Enfin, on va convertir notre raster en UInt16 pour l'importer dans Blender. C'est cette opération qui n'est pas réalisable dans QGIS sans circonvolutions. Donc on sort [gdal_translate](https://GDAL.org/programs/GDAL_translate.html), le programme qui sert à faire des conversions.
+Enfin, on va convertir notre raster en UInt16 pour l'importer dans Blender. C'est cette opération qui n'est pas réalisable dans QGIS sans circonvolutions. Donc on sort [GDAL_translate](https://GDAL.org/programs/GDAL_translate.html), le programme qui sert à faire des conversions.
 
 ```bash
-GDAL_translate -ot UInt16 mosaic_rescale.tif mnt.tif
+gdal_translate -ot UInt16 mosaic_rescale.tif mnt.tif
 ```
 
 - `-ot` est l'option qui permet de forcer le type de données de sortie.
@@ -260,7 +263,7 @@ Cette interface permet de régler les paramètres du `matériau` comme précéde
 
 ![selectionner le plan](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img13_explorer.png){: .img-center loading=lazy }
 
-La manière dont est rendu votre matériau est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boites pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3d View Port.
+La manière dont est rendu votre matériau est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boites pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3D View Port.
 
 Chaque boite est un `node` et vous verrez une ligne reliant Principle BSDF à la "Surface" de notre `matériau` final, indiquant qu'il est utilisé pour déterminer son apparence. Vous verrez que vous pouvez aussi relier quelque chose qui donnera a la surface un `displacement`.
 
@@ -293,7 +296,7 @@ Ces `vertices` sont ce que Blender utilise pour déformer le terrain et pour le 
 
 Pour l'instant ces derniers ne sont pas utilsés, Blender n'a fait que _peindre_ le relief sur le plan avec des nuances de gris. On pourrait ajouter des `vertices` à la main mais on va utiliser une autre astuce. Les `modificateurs`.
 
-- Retournez dans le 3d View Port
+- Retournez dans le 3D View Port
 - Toujours bien penser à sélectionner le plan et cliquez sur l'icone en forme de clef à molette.
 ![modifiers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img17_modifiers.png){: .img-center loading=lazy }
 - Et maintenant cliquez sur "Add modifier"
@@ -455,7 +458,7 @@ Waoohh !!!
 
 ## Coloriser
 
-Pour ça, je vais vous laissez vous reposer et ne pas ressortir GDAL, mais réouvrir un logiciel obscur nommé Qgis dans lequel on va charger notre raster d'élévation. L'idée va être de générer une image colorée qu'on appliquera ensuite dans Blender comme texture.
+Pour ça, je vais vous laissez vous reposer et ne pas ressortir GDAL, mais réouvrir un logiciel obscur nommé QGIS dans lequel on va charger notre raster d'élévation. L'idée va être de générer une image colorée qu'on appliquera ensuite dans Blender comme texture.
 
 Si vous avez de l'eau :
 
@@ -487,7 +490,7 @@ Pour le reste :
 
 ![menteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img38_menteur.png){: .img-center loading=lazy }
 
-Maintenant, essayez de zoomer sur la carte  pour l'avoir la plus grande possible, mais complète sur votre écran. Puis choisir dans le menu Projet -> Importer/Exporter -> Exporter la carte au format image (ça permet d'exporter le contenu de votre canevas de carte sans passer par le composeur). Changez la résolution en 300 dpi et exporter au format png.
+Maintenant, essayez de zoomer sur la carte  pour l'avoir la plus grande possible, mais complète sur votre écran. Puis choisir dans le menu Projet -> Importer/Exporter -> Exporter la carte au format image (ça permet d'exporter le contenu de votre canevas de carte sans passer par le composeur). Changez la résolution en 300 dpi et exporter au format PNG.
 
 Maintenant ouvrez cette image dans [The Gimp](https://www.gimp.org/), un éditeur d'image libre et open source. La seule et unique manipulation est de passer par le menu image -> rogner selon le contenu. Celà supprimera tout le blanc qui restait visible et d'obtenir une image avec le même ratio que notre mnt. Puis fichier -> écraser couleur.png (le nom de mon image).
 
