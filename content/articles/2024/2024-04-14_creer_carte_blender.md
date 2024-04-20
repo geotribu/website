@@ -62,7 +62,7 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
 
 Et maintenant GDAL coeuravélesdoigts.
 
-Pour les non initiés à la ligne de commande, on se déplace dans un répertoire avec la commande cd (pour change directory). On peut soit passer un repertoire situé dans le repertoire courant, soit une adresse complète.
+Pour les non-initiés à la ligne de commande, on se déplace dans un répertoire avec la commande cd (pour _change directory_). On peut soit passer un répertoire situé dans le repertoire courant, soit une adresse complète.
 
 Ex :
 
