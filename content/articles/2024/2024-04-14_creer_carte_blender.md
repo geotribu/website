@@ -27,7 +27,7 @@ Cet article se base sur celui initialement paru en anglais sur [somethingaboutma
 
 Ou comment faire des cartes qui ont la classe. Grossièrement, la technique consiste à déformer un plan avec un raster d'élévation.
 
-Je vais ici utiliser le  MNT à 1 mètre issus du [RGE ALTI](https://geoservices.ign.fr/rgealti) de l'IGN sur le département des Pyrennées Atlantiques, ce qui permettra d'avoir et du relief (ce qui rend bien avec cette technique) et de la mer (sacro-sainte règle des effets de manche pour avoir la classe : mettez de la flotte).
+Je vais ici utiliser le  MNT à 1 mètre issus du [RGE ALTI](https://geoservices.ign.fr/rgealti) de l'IGN sur le département des Pyrénées-Atlantiques, ce qui permettra d'avoir du relief (ce qui rend bien avec cette technique) et de la mer (sacro-sainte règle des effets de manche pour avoir la classe : mettez de la flotte).
 
 Il y a plusieurs étapes de préparation des données et l'une d'entre elle nécessite obligatoirement l'utilisation de GDAL en lignes de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tout les pré-traitmements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec Qgis).
 
