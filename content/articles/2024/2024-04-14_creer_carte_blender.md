@@ -281,7 +281,7 @@ Vous pouvez faire un essai de rendu en cliquant sur Render -> render image dans 
 
 ![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img16_1strender.png){: .img-center loading=lazy }
 
-Pour repprendre les mots de l'auteur originel "Tout ceci est bâti sur un mensonge". Pour le moment Blender ne fait que **simuler** la déformation en utilisant une technique nommée *bump mapping*. C'est plus rapide à calculer mais pas aussi réaliste. Cette technique ne fait que donner une *apparence* de profondeur, mais elle n'est pas réelle : aucune ombre n'est projetée et la lumière n'interagit pas avec.
+Pour repprendre les mots de l'auteur originel "Tout ceci est bâti sur un mensonge". Pour le moment Blender ne fait que **simuler** la déformation en utilisant une technique nommée _bump mapping_. C'est plus rapide à calculer mais pas aussi réaliste. Cette technique ne fait que donner une _apparence_ de profondeur, mais elle n'est pas réelle : aucune ombre n'est projetée et la lumière n'interagit pas avec.
 
 On va faire beaucoup mieux.
 
@@ -291,7 +291,7 @@ Pour l'instant notre plan est trop simpliste, car uniquement composé de 4 `vert
 
 Ces `vertices` sont ce que Blender utilise pour déformer le terrain et pour le moment Blender ne pourrait utiliser que les quatre coins de l'image.
 
-Pour l'instant ces derniers ne sont pas utilsés, Blender n'a fait que *peindre* le relief sur le plan avec des nuances de gris. On pourrait ajouter des `vertices` à la main mais on va utiliser une autre astuce. Les `modificateurs`.
+Pour l'instant ces derniers ne sont pas utilsés, Blender n'a fait que _peindre_ le relief sur le plan avec des nuances de gris. On pourrait ajouter des `vertices` à la main mais on va utiliser une autre astuce. Les `modificateurs`.
 
 - Retournez dans le 3d View Port
 - Toujours bien penser à sélectionner le plan et cliquez sur l'icone en forme de clef à molette.
@@ -305,8 +305,8 @@ Dans notre cas on va l'utilier pour faire croire à Blender que notre objet est 
 
 - Deux algorithmes sont possibles et celui que nous voulons ici est `simple`.
 - Si vous avez bien écouté au fond de la salle, vous verrez un bouton "adaptive subdivision" qu'il faut activer, sinon retournez sur la partie de présentation / configuration de Blender pour passez le feature set de Cycles à expérimental. Vous savez, celle ou j'avais indiqué "important". En gras.
-- Cette option indique à Blender de ne pas subdiviser la surface par un nombre défini mais là où *le plus de détail est necessaire* en fontion de la taille de votre image et de la position de la caméra.
-- Ce `modificateur` est non destructif, il ne modifie par réellement l'objet. C'est une pile qui s'ajoute *par dessus* alors qu'il est toujours constitué de quatre `vertices`. Blender ne subdivisera le plan que temporairement lors du rendu.
+- Cette option indique à Blender de ne pas subdiviser la surface par un nombre défini mais là où _le plus de détail est necessaire_ en fontion de la taille de votre image et de la position de la caméra.
+- Ce `modificateur` est non destructif, il ne modifie par réellement l'objet. C'est une pile qui s'ajoute _par dessus_ alors qu'il est toujours constitué de quatre `vertices`. Blender ne subdivisera le plan que temporairement lors du rendu.
 
 ### Déplacement réel
 
@@ -343,7 +343,7 @@ Vous remarquez cependant trois choses :
 
 En changeant le paramètre `scale` du `node` displacement du shader editor, vous pouvez réduire l'exagération (on est ici dans l'artistique et plus dans le technique, donc pas de recommandation à part votre feeling). Comme notre éclairage et notre caméra ne sont pas encore configurés il est trop tôt pour s'en préoccuper.
 
-Pour ce qui est des bords ce qui se passe c'est que pour le moment, Blender essaye de répéter votre image sur les bords. Dans le shader editor, sur le `node` de votre image, changez *Repeat* pour *Extend* pour corriger ça.
+Pour ce qui est des bords ce qui se passe c'est que pour le moment, Blender essaye de répéter votre image sur les bords. Dans le shader editor, sur le `node` de votre image, changez _Repeat_ pour _Extend_ pour corriger ça.
 
 ![extend](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img22_extend.png){: .img-center loading=lazy }
 
@@ -443,7 +443,7 @@ Indiquer 0 pour x, 45 pour y et 135 pour z.
 
 La valeur de y contrôle l'angle par rapport à l'horizon, et celle de z la direction de provenance. Une valeur de 135 vous donne une lumière qui arrive du Nord Ouest (en haut à gauche quoi), ce à quoi l'oeil humain est habitué pour une carte. Mettre 225 donnerai l'impression que notre relief est inversé.
 
-Le tout dernier réglage à faire est de régler la taille de notre soleil. On reclique sur la petite ampoule verte et on regarde le paramètre Angle, mal nommé puisqu'il correspond au [diamètre angulaire](https://fr.wikipedia.org/wiki/Taille_apparente). Changer sa valeur régle la *douceur* de la lumière. Avec une valeur basse par défault, notre lumière nous donne un relief lunaire, essayez plutôt une valeur de 90 pour quelque chose de plus doux.
+Le tout dernier réglage à faire est de régler la taille de notre soleil. On reclique sur la petite ampoule verte et on regarde le paramètre Angle, mal nommé puisqu'il correspond au [diamètre angulaire](https://fr.wikipedia.org/wiki/Taille_apparente). Changer sa valeur régle la _douceur_ de la lumière. Avec une valeur basse par défault, notre lumière nous donne un relief lunaire, essayez plutôt une valeur de 90 pour quelque chose de plus doux.
 
 ![réglages lumière](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender//img35_light4.png){: .img-center loading=lazy }
 
