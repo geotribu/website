@@ -96,7 +96,7 @@ GDAL_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
 
 Il faut ensuite normalement spécifier un par un les noms de fichiers à fusionner, ce qui serait fastidieux, mais l'option `--optfile` nous permet de passer un fichier contenant une liste, d'où les étapes précédentes !
 
-Dans le repertoire vous trouverez votre geotiff mosaic.tif que je vous encourage à déplacer ailleurs pour s'y retrouver.
+Dans le répertoire, vous trouverez votre geotiff mosaic.tif que je vous encourage à déplacer ailleurs pour vous y retrouver.
 
 Dans ~~l'interface graphique de GDAL~~ Qgis cette étape est faisable via le menu raster -> Divers -> fusion (il faut au préalable charger l'ensemble des tuiles voulues dans qgis).
 
