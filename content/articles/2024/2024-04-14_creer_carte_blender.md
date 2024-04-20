@@ -39,7 +39,7 @@ Après récupération du jeu de données, chargez une des dalles au format ASC d
 
 ![Ça arrive même aux meilleurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img1_lign.png){: .img-center loading=lazy }
 
-Sur ces considérations on chargera plutôt la couche "dalles" [dans le format dont il ne faut pas prononcer le nom](http://switchfromshapefile.org/) située dans le dossier "3_SUPPLEMENTS_LIVRAISON" de l'archive et on active un fond de plan open street map sous "xyz tiles" de l'explorateur de Qgis histoire de se repérer.
+Sur ces considérations on chargera plutôt la couche "dalles" [dans le format dont il ne faut pas prononcer le nom](http://switchfromshapefile.org/) située dans le dossier "3_SUPPLEMENTS_LIVRAISON" de l'archive. On active ensuite un fond de plan OpenStreetMap sous "xyz tiles" de l'explorateur de QGIS histoire de se repérer.
 
 ### Mosaïquage
 
