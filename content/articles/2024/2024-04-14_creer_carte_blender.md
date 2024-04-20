@@ -113,7 +113,7 @@ GDALwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
 - L'option `-t_srs` sert à indiquer le srid de sortie.
 - `-r` permet de spécifier la méthode de rééchantillonnage. Le choix dépasse le cadre de cet article mais sachez que des methodes avancées comme `cubicspline` ou `lanczos` peuvent donner des résultats "floutés" car modifiant la valeur des pixels selon des courbes. On va donc rester sur la méthode par défaut : `nearest neighbour` (plus proche voisin) pour éviter ceci.
 
-Pour celles et ceux à l'aise avec GDAL, vous pouvez compresser les images pour réduire la taille des fichiers de sortie au moins en deflate (pour les autres, ça se fait en passant une seconde option pour le driver de type de fichier : `-co COMPRESS=methode`, la plus courrament utilisée étant `-co COMPRESS=DEFLATE` pour s'assurer de la compatibilité avec tous les systèmes / logiciels).
+Pour celles et ceux à l'aise avec GDAL, vous pouvez compresser les images pour réduire la taille des fichiers de sortie au moins en `deflate` (pour les autres, ça se fait en passant une seconde option pour le driver de type de fichier : `-co COMPRESS=methode`, la plus couramment utilisée étant `-co COMPRESS=DEFLATE` pour s'assurer de la compatibilité avec tous les systèmes/logiciels).
 
 Sinon, ça se fait avec raster -> Projection -> Assigner une projection dans Qgis.
 
