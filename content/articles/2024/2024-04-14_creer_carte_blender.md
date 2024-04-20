@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-04-07
-description: "Technique permettant de réaliser des cartes de relief avec le logiciel libre 3d Blender, ainsi qu'un petit tutoriel GDAL"
+description: "Technique permettant de réaliser des cartes de relief avec le logiciel libre 3D Blender, ainsi qu'un petit tutoriel GDAL"
 icon: simple/blender
 image:
 license: default
