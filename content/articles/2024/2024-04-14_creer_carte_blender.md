@@ -35,7 +35,7 @@ Ceci implique d'avoir accès à GDAL. Sur Windows, ça se passe en se rendant da
 
 ## Préparation des données
 
-Après récupération du jeu de données, chargez une des dalles au format asc dans qgis. Le format asc ne gère pas les projections et Qgis essayera par défaut de les positionner en WGS 84 (ne vous inquietez pas, les coordonnées sont les bonnes). Vous pouvez repositionner l'image en cliquant sur la petite icône de l'image ci-dessous et en spécifiant ce bon vieux Lambert 93.
+Après récupération du jeu de données, chargez une des dalles au format ASC dans qgis. Le format ASC ne gère pas les projections et QGIS essayera par défaut de les positionner en WGS84 (ne vous inquiétez pas, les coordonnées sont les bonnes). Vous pouvez repositionner l'image en cliquant sur la petite icône de l'image ci-dessous et en spécifiant ce bon vieux Lambert 93.
 
 ![Ca arrive même aux meilleurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img1_lign.png){: .img-center loading=lazy }
 
