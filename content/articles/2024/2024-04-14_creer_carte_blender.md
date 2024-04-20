@@ -98,7 +98,7 @@ Il faut ensuite normalement spécifier un par un les noms de fichiers à fusionn
 
 Dans le répertoire, vous trouverez votre geotiff mosaic.tif que je vous encourage à déplacer ailleurs pour vous y retrouver.
 
-Dans ~~l'interface graphique de GDAL~~ Qgis cette étape est faisable via le menu raster -> Divers -> fusion (il faut au préalable charger l'ensemble des tuiles voulues dans qgis).
+Dans ~~l'interface graphique de GDAL~~ QGIS cette étape est faisable via le menu raster -> Divers -> fusion (il faut au préalable charger l'ensemble des tuiles voulues dans QGIS).
 
 ### Reprojection
 
