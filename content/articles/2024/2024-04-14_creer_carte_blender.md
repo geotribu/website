@@ -119,7 +119,7 @@ Sinon, ça se fait avec raster -> Projection -> Assigner une projection dans Qgi
 
 ### Fausser les données
 
-Oui. Nous allons commettre ceci. Ne sortez pas les bidons d'essence tout de suite s'il vous plait. Pour ce que nous allons en faire, Blender n'accepte que les images en entier 16 bits non signés (UInt16, on y reviendra), donc une plage de valeur pour les pixels comprise entre 0 et 65 535. Mais sans virgules, ce que contient notre raster initial donc on perdrait du détail. L'idée est donc de réattribuer aux pixels de notre image des valeurs sur l'ensemble de cette plage, ceci pour bénéficier de l'entièreté de cette finesse.
+Oui. Nous allons commettre ceci. Ne sortez pas les bidons d'essence tout de suite s'il vous plaît. Pour ce que nous allons en faire, Blender n'accepte que les images en entier 16 bits non signés (UInt16, on y reviendra), donc une plage de valeur pour les pixels comprise entre 0 et 65 535. Mais sans virgules, ce que contient notre raster initial donc on perdrait du détail. L'idée est donc de réattribuer aux pixels de notre image des valeurs sur l'ensemble de cette plage, ceci pour bénéficier de l'entièreté de cette finesse.
 
 On fait ça avec [GDAL_calc.py](https://GDAL.org/programs/GDAL_calc.html) mais on peut aussi rester simple et faire ça avec la calculatrice raster de Qgis.
 
