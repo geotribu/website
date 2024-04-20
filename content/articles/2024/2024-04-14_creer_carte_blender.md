@@ -102,7 +102,7 @@ Dans ~~l'interface graphique de GDAL~~ QGIS cette étape est faisable via le men
 
 ### Reprojection
 
-On va maintenant reprojeter (vous vous souvenez des fichiers asc ?) notre image avec [GDALwarp](https://GDAL.org/programs/GDALwarp.html) le programme servant à ... reprojeter.
+On va maintenant reprojeter (vous vous souvenez des fichiers ASC ?) notre image avec [GDALwarp](https://GDAL.org/programs/GDALwarp.html) le programme servant à... reprojeter.
 
 Se déplacer dans le répertoire où vous avez placé l'image et :
 
