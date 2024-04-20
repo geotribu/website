@@ -58,7 +58,7 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
 
 ![exemple fichier tuile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img2_tuiles.png){: .img-center loading=lazy }
 
-- On déplace ce fichier directement dans le répertoire contenant les tuilles asc téléchargées.
+- On déplace ce fichier directement dans le répertoire contenant les tuiles ASC téléchargées.
 
 Et maintenant GDAL coeuravélesdoigts.
 
