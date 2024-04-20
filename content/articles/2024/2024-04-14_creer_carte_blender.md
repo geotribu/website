@@ -69,7 +69,7 @@ Ex :
 - sur Linux : `cd /home/nabuchodonosor/Documents`
 - sur Windows : `cd C:\\\Users\nabuchodonosor\Documents`
 
-Sur windows pour changer de lecteur juste indiquer la lettre et les deux points, sans cd (exemple `D:`).
+Sur Windows, pour changer de lecteur, juste indiquer la lettre et les deux points, sans cd (exemple `D:`).
 
 (on peut copier l'adresse dans l'explorateur et la coller pour se simplifier la vie)
 
