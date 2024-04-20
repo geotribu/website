@@ -45,7 +45,7 @@ Sur ces considérations on chargera plutôt la couche "dalles" [dans le format d
 
 On va ici créer un fichier qui nous permettra de fusionner les dalles voulues pour notre carte.
 
-- Dans Qgis, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format csv qu'on nommera select.csv.
+- Dans QGIS, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format CSV qu'on nommera select.csv.
 - On ouvre ce fichier dans LibreOfficeCalc (ou logiciel propriétaire équivalent) et on supprime l'entête des colonnes ainsi que toutes les colonnes sauf celle contenant le nom des tuiles.
 - Dans la colonne adjacente on écrit cette formule :
     - Libre office :
