@@ -29,7 +29,7 @@ Ou comment faire des cartes qui ont la classe. Grossièrement, la technique cons
 
 Je vais ici utiliser le  MNT à 1 mètre issus du [RGE ALTI](https://geoservices.ign.fr/rgealti) de l'IGN sur le département des Pyrénées-Atlantiques, ce qui permettra d'avoir du relief (ce qui rend bien avec cette technique) et de la mer (sacro-sainte règle des effets de manche pour avoir la classe : mettez de la flotte).
 
-Il y a plusieurs étapes de préparation des données et l'une d'entre elle nécessite obligatoirement l'utilisation de GDAL en lignes de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tout les pré-traitmements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec Qgis).
+Il y a plusieurs étapes de préparation des données et l'une d'entre elles nécessite obligatoirement l'utilisation de GDAL en ligne de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tout les pré-traitements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec QGIS).
 
 Ceci implique d'avoir accès à GDAL. Sur windows ça passe en se rendant dans votre répertoire d'installation de Qgis et ensuite en démarrant OSGeo4W.bat. Je considère que les linuxiens sont assez aguéris pour se débrouiller (au pire faites vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux appeliens (sauf à ma cheffe de service car je suis bien obligé).
 
