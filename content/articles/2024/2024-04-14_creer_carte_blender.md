@@ -110,60 +110,60 @@ Se déplacer dans le répertoire où vous avez placé l'image et :
 GDALwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
 ```
 
-- L'option `-t_srs` sert à indiquer le srid de sortie.
+- L'option `-t_srs` sert à indiquer le [SRID](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_coordonn%C3%A9es_(cartographie)) de sortie.
 - `-r` permet de spécifier la méthode de rééchantillonnage. Le choix dépasse le cadre de cet article mais sachez que des methodes avancées comme `cubicspline` ou `lanczos` peuvent donner des résultats "floutés" car modifiant la valeur des pixels selon des courbes. On va donc rester sur la méthode par défaut : `nearest neighbour` (plus proche voisin) pour éviter ceci.
 
 Pour celles et ceux à l'aise avec GDAL, vous pouvez compresser les images pour réduire la taille des fichiers de sortie au moins en `deflate` (pour les autres, ça se fait en passant une seconde option pour le driver de type de fichier : `-co COMPRESS=methode`, la plus couramment utilisée étant `-co COMPRESS=DEFLATE` pour s'assurer de la compatibilité avec tous les systèmes/logiciels).
 
-Sinon, ça se fait avec raster -> Projection -> Assigner une projection dans Qgis.
+Sinon, dans QGIS, ça se fait avec Raster -> Projection -> Assigner une projection.
 
 ### Fausser les données
 
 Oui. Nous allons commettre ceci. Ne sortez pas les bidons d'essence tout de suite s'il vous plaît. Pour ce que nous allons en faire, Blender n'accepte que les images en entier 16 bits non signés (UInt16, on y reviendra), donc une plage de valeur pour les pixels comprise entre 0 et 65 535. Mais sans virgules, ce que contient notre raster initial donc on perdrait du détail. L'idée est donc de réattribuer aux pixels de notre image des valeurs sur l'ensemble de cette plage, ceci pour bénéficier de l'entièreté de cette finesse.
 
-On fait ça avec [GDAL_calc.py](https://GDAL.org/programs/GDAL_calc.html) mais on peut aussi rester simple et faire ça avec la calculatrice raster de Qgis.
+On fait ça avec [GDAL_calc.py](https://GDAL.org/programs/GDAL_calc.html) mais on peut aussi rester simple et faire ça avec la calculatrice raster de QGIS.
 
-Tout d'abord, on normalise notre raster car certaines valeurs peuvent êtres en dessous de 0 (notamment quand il y a de l'eau). On va donc les mettres à 0.
+Tout d'abord, on normalise notre raster car certaines valeurs peuvent êtres en dessous de 0 (notamment quand il y a de l'eau). On va donc les mettre à 0.
 
 ```bash
 GDAL_calc.py -A moasicl93.tif --outfile=mosaic_cut.tif --calc="A*(A>=0)"
 ```
 
-Avec GDAL_calc.py les maths doivent être "[numpy](https://numpy.org/) style".
+Avec `GDAL_calc.py`, les maths doivent être "[numpy](https://numpy.org/) style".
 
 - `-A` permet d'attribuer un raster à une lettre qui sera ensuite utilisée dans la formule.
 - `--outfile` le nom du fichier de sortie (ça dépend des programmes GDAL, souvent c'est la position du nom qui fait foi dans la commande).
-- `--calc` la formule de calcul, entourée de "".
+- `--calc` la formule de calcul, entourée de `""`.
 
-Ou dans qgis : raster -> calculatrice raster puis
+Ou dans QGIS : raster -> calculatrice raster puis
 
 ![calc_raster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img4_calc.png)
 
 if (condition, valeur si vrai, valeur si faux)
 
-On regarde les valeurs minimum et maximum de notre raster. Soit dans les propriétés de la couche qgis, soit avec [GDALinfo](https://GDAL.org/programs/GDALinfo.html).
+On regarde les valeurs minimum et maximum de notre raster, soit dans les propriétés de la couche QGIS, soit avec [GDALinfo](https://GDAL.org/programs/GDALinfo.html).
 
 ```bash
 GDALinfo -mm mosaic_cut.tif
 ```
 
-- l'option `-mm` permet de forcer le calcul des valeurs min/max qui n'est pas donné par défaut par GDALinfo. Elles apparaitrons tout en bas (dans mon cas, 0 et 196,8).
+- l'option `-mm` permet de forcer le calcul des valeurs min/max qui n'est pas donné par défaut par `gdalinfo`. Elles apparaitrons tout en bas (dans mon cas, 0 et 196,8).
 
-![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img5_minmax.png){: .img-center loading=lazy }
+![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img5_minmax.png){: .img-center loading=lazy }
 
 Le calcul à faire pour réaffecter nos pixels est le suivant :
 (Valeur pixel – min) ÷ (max – min) * 65535
 
-Dans mon cas celà donne :
+Dans mon cas cela donne :
 
 ```bash
 GDAL_calc.py -A mosaic_cut.tif --outfile=mosaic_rescale.tif --calc="(A - 0) / (196.8 - 0) * 65535"
 ```
 
-Dans la calculatrice raster de Qgis celà donnerai :
+Dans la calculatrice raster de QGIS, cela donnerait :
 ("mosaic_cut@1" - 0) / (196.8 - 0) * 65535.
 
-Enfin, on va convertir notre raster en UInt16 pour l'import dans Blender. C'est cette opération qui n'est pas réalisable dans Qgis sans circonvolutions. Donc on sort [GDAL_translate](https://GDAL.org/programs/GDAL_translate.html), le programme qui sert à faire des conversions.
+Enfin, on va convertir notre raster en UInt16 pour l'importer dans Blender. C'est cette opération qui n'est pas réalisable dans QGIS sans circonvolutions. Donc on sort [gdal_translate](https://GDAL.org/programs/GDAL_translate.html), le programme qui sert à faire des conversions.
 
 ```bash
 GDAL_translate -ot UInt16 mosaic_rescale.tif mnt.tif
@@ -176,37 +176,37 @@ GDAL_translate -ot UInt16 mosaic_rescale.tif mnt.tif
 
 Pour télécharger Blender ça se passe [ici](https://www.blender.org/download/). C'est un logiciel libre donc pas d'inquiétudes. (sur Linux il est aussi présent sur [Flatpak](https://flathub.org/apps/org.blender.Blender)).
 
-Faire le tour de Blender serait bien sur beaucoup trop ambiteux ici, mais voici quelques indications de base pour celles et ceux qui n'ont jamais ouvert le logiciel.
+Faire le tour de Blender serait bien sûr beaucoup trop ambiteux ici, mais voici quelques indications de base pour celles et ceux qui n'ont jamais ouvert le logiciel.
 
-Blender fonctionne sur un principe d'environnement en fonction de la tache que vous êtes en train de réaliser (modéliser, travailler sur les textures ...). Pour passer de l'un à l'autre, on clique ici :
+Blender fonctionne sur un principe d'environnement en fonction de la tâche que vous êtes en train de réaliser (modéliser, travailler sur les textures ...). Pour passer de l'un à l'autre, on clique ici :
 
-![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img6_viewports.png){: .img-center loading=lazy }
+![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img6_viewports.png){: .img-center loading=lazy }
 
-3D Viewport est la vue 3d par défaut.
+3D Viewport est la vue 3D par défaut.
 
-Les boutons situés ici permettent de changer le mode d'affichage des objets 3d (fil de fer, materiaux, rendu ...).
+Les boutons situés ici permettent de changer le mode d'affichage des objets 3D (fil de fer, materiaux, rendu...).
 
-![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img7_render.png){: .img-center loading=lazy }
+![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img7_render.png){: .img-center loading=lazy }
 
-(vous pouvez essayer avec le cube présent par défaut).
+(Vous pouvez essayer avec le cube présent par défaut).
 
 ### Réglages préalables (moteur de rendu et carte graphique)
 
 En cliquant là :
 
-![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img8_engine.png){: .img-center loading=lazy }
+![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img8_engine.png){: .img-center loading=lazy }
 
 Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. **Important :** Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute.
 
-En fonction de votre carte graphique, vous pouvez aussi faire un tour par le menu edit -> preferences -> system et choisir en fonction de votre crémerie ce qui sera utilisé par Cycles. Choisir [OptiX](https://fr.wikipedia.org/wiki/OptiX) chez Nvidia / [HIP](https://rocm.docs.amd.com/projects/HIP/en/latest/index.html) chez AMD si votre configuration matérielle le supporte (hey, vous venez sur un tuto 3d, il faut s'attendre à ce genre de phrases !).
+En fonction de votre carte graphique, vous pouvez aussi faire un tour par le menu edit -> preferences -> system et choisir en fonction de votre crémerie ce qui sera utilisé par Cycles. Choisir [OptiX](https://fr.wikipedia.org/wiki/OptiX) chez Nvidia / [HIP](https://rocm.docs.amd.com/projects/HIP/en/latest/index.html) chez AMD si votre configuration matérielle le supporte (hey, vous venez sur un tuto 3D, il faut s'attendre à ce genre de phrases !).
 
 Toujours là :
 
-![La](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img9_sampling.png){: .img-center loading=lazy }
+![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img9_sampling.png){: .img-center loading=lazy }
 
-En descendant vous verez Sampling. Ces options permettent de configurer le nombre de passages qu'effectuera le moteur de rendu en changeant la valeur max samples. Je vous conseille de configurer Viewport (quand vous serez en train de travailler mais en affichant quelque chose proche du rendu) avec une valeur basse pour gagner du temps, et Render avec une valeur haute pour avoir un beau rendu final. Activer l'option Denoise dans les deux cas qui permet d'enlever du "bruit" sur les rendus. Sur l'image vous verez ma proposition de paramètrage.
+En descendant vous verrez "Sampling". Ces options permettent de configurer le nombre de passages qu'effectuera le moteur de rendu en changeant la valeur `max samples`. Je vous conseille de configurer Viewport (quand vous serez en train de travailler mais en affichant quelque chose proche du rendu) avec une valeur basse pour gagner du temps, et Render avec une valeur haute pour avoir un beau rendu final. Activer l'option Denoise dans les deux cas qui permet d'enlever du "bruit" sur les rendus. Sur l'image vous verrez ma proposition de paramétrage.
 
-Enfin la chose la plus importante, Blender fonctionne beaucoup avec les raccourcis clavier. Pour ajouter un objet : `shift + A`.
+Enfin la chose la plus importante, Blender fonctionne beaucoup avec les raccourcis clavier. Pour ajouter un objet : `Shift + A`.
 
 Pour se déplacer, appuyez sur le bouton central de votre souris (le clic de la molette) pour tourner, maintenez shift en plus pour translater ou ctrl pour zoomer.
 
