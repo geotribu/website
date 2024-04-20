@@ -94,7 +94,7 @@ GDAL_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
 
 `-co` correspond aux options spécifiques non pas du programme mais du driver du type de fichier (ici geotiff). BIGTIFF permet de faire des tif de plus de 4gb. Ce n'est pas mon cas ici mais ça ne coute rien de passer la commande par sécurité.
 
-Il faut ensuite normalement spécifier un par un les noms de fichiers à fusionner ce qui serait fastidieux, mais l'option `--optfile` nous permet de passer un fichier contenant une liste, d'où les étapes précedantes !
+Il faut ensuite normalement spécifier un par un les noms de fichiers à fusionner, ce qui serait fastidieux, mais l'option `--optfile` nous permet de passer un fichier contenant une liste, d'où les étapes précédentes !
 
 Dans le repertoire vous trouverez votre geotiff mosaic.tif que je vous encourage à déplacer ailleurs pour s'y retrouver.
 
