@@ -265,7 +265,7 @@ Cette interface permet de régler les paramètres du `matériau` comme précéde
 
 La manière dont est rendu votre matériau est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boîtes pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3D View Port.
 
-Chaque boite est un `node` et vous verrez une ligne reliant Principle BSDF à la "Surface" de notre `matériau` final, indiquant qu'il est utilisé pour déterminer son apparence. Vous verrez que vous pouvez aussi relier quelque chose qui donnera a la surface un `displacement`.
+Chaque boîte est un `node` et vous verrez une ligne reliant "Principle BSDF" à la "Surface" de notre `matériau` final, indiquant qu'il est utilisé pour déterminer son apparence. Vous verrez que vous pouvez aussi relier quelque chose qui donnera à la surface un `displacement`.
 
 Depuis la barre de menu située au dessus de l'écran, choisissez Add -> Texture -> Image texture.
 
