@@ -299,7 +299,7 @@ Pour l'instant ces derniers ne sont pas utilisés, Blender n'a fait que _peindre
 - Retournez dans le `3D Viewport`
 - Toujours bien penser à sélectionner le plan et cliquer sur l'icône en forme de clef à molette.
 ![modifiers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img17_modifiers.png){: .img-center loading=lazy }
-- Et maintenant cliquez sur "Add modifier"
+- Et maintenant, cliquer sur "Add Modifier"
 - L'apparence de ce menu a été modifiée dans la toute dernière version de Blender mais l'idée est de choisir le groupe "Generate" puis ["Subdivision Surface"](https://docs.blender.org/manual/fr/4.1/modeling/modifiers/generate/subdivision_surface.html).
 
 Apparemant la communauté Blender surnomme ce modificateur "subsurf" ou "subdiv". Ne me demandez pas. Il est très utilisé et permet de dire à Blender d'ajouter du détail à un objet (ainsi il permet de faire des objets très arrondis en travaillant avec des `mesh` simples).
