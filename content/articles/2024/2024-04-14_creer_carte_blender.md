@@ -263,7 +263,7 @@ Cette interface permet de régler les paramètres du `matériau` comme précéde
 
 ![selectionner le plan](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img13_explorer.png){: .img-center loading=lazy }
 
-La manière dont est rendu votre matériau est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boites pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3D View Port.
+La manière dont est rendu votre matériau est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boîtes pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3D View Port.
 
 Chaque boite est un `node` et vous verrez une ligne reliant Principle BSDF à la "Surface" de notre `matériau` final, indiquant qu'il est utilisé pour déterminer son apparence. Vous verrez que vous pouvez aussi relier quelque chose qui donnera a la surface un `displacement`.
 
