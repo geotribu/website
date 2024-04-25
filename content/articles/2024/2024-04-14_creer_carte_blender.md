@@ -280,7 +280,7 @@ Une nouvelle boite apparait. Positionnez-la où bon vous semble. Dans le languag
 
 ![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img15_displacement.png){: .img-center loading=lazy }
 
-Vous pouvez faire un essai de rendu en cliquant sur Render -> render image dans le menu tout en haut.
+Vous pouvez faire un essai de rendu en cliquant sur `Render -> Render Image` dans le menu tout en haut.
 
 ![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img16_1strender.png){: .img-center loading=lazy }
 
