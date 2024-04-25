@@ -284,7 +284,7 @@ Vous pouvez faire un essai de rendu en cliquant sur `Render -> Render Image` dan
 
 ![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img16_1strender.png){: .img-center loading=lazy }
 
-Pour repprendre les mots de l'auteur originel "Tout ceci est bâti sur un mensonge". Pour le moment Blender ne fait que **simuler** la déformation en utilisant une technique nommée _bump mapping_. C'est plus rapide à calculer mais pas aussi réaliste. Cette technique ne fait que donner une _apparence_ de profondeur, mais elle n'est pas réelle : aucune ombre n'est projetée et la lumière n'interagit pas avec.
+Pour reprendre les mots de l'auteur originel : "Tout ceci est bâti sur un mensonge". Pour le moment Blender ne fait que **simuler** la déformation en utilisant une technique nommée _bump mapping_. C'est plus rapide à calculer mais pas aussi réaliste. Cette technique ne fait que donner une _apparence_ de profondeur, mais elle n'est pas réelle : aucune ombre n'est projetée et la lumière n'interagit pas avec.
 
 On va faire beaucoup mieux.
 
