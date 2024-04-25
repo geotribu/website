@@ -296,7 +296,7 @@ Ces `vertices` sont ce que Blender utilise pour déformer le terrain, et pour le
 
 Pour l'instant ces derniers ne sont pas utilisés, Blender n'a fait que _peindre_ le relief sur le plan avec des nuances de gris. On pourrait ajouter des `vertices` à la main, mais on va utiliser une autre astuce. Les `modificateurs`.
 
-- Retournez dans le 3D View Port
+- Retournez dans le `3D Viewport`
 - Toujours bien penser à sélectionner le plan et cliquez sur l'icone en forme de clef à molette.
 ![modifiers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img17_modifiers.png){: .img-center loading=lazy }
 - Et maintenant cliquez sur "Add modifier"
