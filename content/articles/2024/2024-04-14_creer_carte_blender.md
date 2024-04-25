@@ -259,7 +259,7 @@ Les `matériaux` ne servent pas qu'à assigner une couleur ou une interaction av
 
 Changez l'environnement de travail pour passer de "3D Viewport" à "Shader Editor" (voir la petite présentation de Blender plus haut pour voir comment faire).
 
-Cette interface permet de régler les paramètres du `matériau` comme précédemment, mais bien plus encore. Faites bien attention à bien sélectionner votre plan en cliquant là :
+Cette interface permet de régler les paramètres du `matériau` comme précédemment, mais bien plus encore. Faîtes bien attention à bien sélectionner votre plan en cliquant là :
 
 ![selectionner le plan](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img13_explorer.png){: .img-center loading=lazy }
 
