@@ -307,7 +307,7 @@ Apparemment, la communauté Blender surnomme ce modificateur `subsurf` ou `subdi
 Dans notre cas on va l'utilier pour faire croire à Blender que notre objet est composé de très nombreux morceaux afin de simuler beaucoup de `vertices`.
 
 - Deux algorithmes sont possibles et celui que nous voulons ici est `simple`.
-- Si vous avez bien écouté au fond de la salle, vous verrez un bouton "adaptive subdivision" qu'il faut activer, sinon retournez sur la partie de présentation / configuration de Blender pour passez le feature set de Cycles à expérimental. Vous savez, celle ou j'avais indiqué "important". En gras.
+- Si vous avez bien écouté au fond de la salle, vous verrez un bouton "adaptive subdivision" qu'il faut activer, sinon retournez sur la partie de présentation / configuration de Blender pour passez le feature set de `Cycles` à `Expérimental`. Vous savez, celle ou j'avais indiqué "important". En gras.
 - Cette option indique à Blender de ne pas subdiviser la surface par un nombre défini mais là où _le plus de détail est necessaire_ en fontion de la taille de votre image et de la position de la caméra.
 - Ce `modificateur` est non destructif, il ne modifie par réellement l'objet. C'est une pile qui s'ajoute _par dessus_ alors qu'il est toujours constitué de quatre `vertices`. Blender ne subdivisera le plan que temporairement lors du rendu.
 
