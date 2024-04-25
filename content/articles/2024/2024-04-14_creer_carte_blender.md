@@ -267,7 +267,7 @@ La manière dont est rendu votre matériau est présentée sous forme d'un diagr
 
 Chaque boîte est un `node` et vous verrez une ligne reliant "Principle BSDF" à la "Surface" de notre `matériau` final, indiquant qu'il est utilisé pour déterminer son apparence. Vous verrez que vous pouvez aussi relier quelque chose qui donnera à la surface un `displacement`.
 
-Depuis la barre de menu située au dessus de l'écran, choisissez Add -> Texture -> Image texture.
+Depuis la barre de menu située au dessus de l'écran, choisissez `Add > Texture > Image Texture`.
 
 ![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img14_addtexture.png){: .img-center loading=lazy }
 
