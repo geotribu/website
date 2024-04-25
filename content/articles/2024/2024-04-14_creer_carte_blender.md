@@ -255,7 +255,7 @@ Pour l'instant nous ne modifierons rien mais voici quelques explications :
 
 - Il y a beaucoup d'options pour ce `shader` : la rugosité, l'incide de refraction, la couleur ... mais pour le moment nous voulons un plan plat et réaliste, donc on ne touche à rien. On y reviendra plus tard.
 
-Les `matériaux` ne servent pas qu'à assigner une couleur ou une interaction avec la lumière. Ils peuvent aussi posséder un `displacement` / `déplacement`. Soit une déformation de leur surface. Et c'est comme ça que nous allons transformer notre plan en un modèle de relief réaliste.
+Les `matériaux` ne servent pas qu'à assigner une couleur ou une interaction avec la lumière. Ils peuvent aussi posséder un `displacement` / `déplacement`, soit une déformation de leur surface. C'est comme ça que nous allons transformer notre plan en un modèle de relief réaliste.
 
 Changez l'environnement de travail pour passer de "3D View port" à "Shader editor" (voir la petite présentation de Blender plus haut pour voir comment faire).
 
