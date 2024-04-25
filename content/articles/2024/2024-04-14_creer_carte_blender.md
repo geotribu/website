@@ -271,7 +271,7 @@ Depuis la barre de menu située au dessus de l'écran, choisissez `Add > Texture
 
 ![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img14_addtexture.png){: .img-center loading=lazy }
 
-Une nouvelle boite apparait, positionnez la où bon vous semble. Dans le language de Blender une `texture` est une image ou un motif qui sera appliqué aux `matériaux` pour changer leur apparence. On pourrait ainsi charger une image de grain de bois pour faire ressembler notre plan à du bois. Mais ces texture peuvent aussi être utilisées pour générer un `displacement`.
+Une nouvelle boite apparait. Positionnez-la où bon vous semble. Dans le language de Blender, une `texture` est une image ou une motif qui sera appliquée aux `matériaux` pour changer leur apparence. On pourrait ainsi charger une image de grain de bois pour faire ressembler notre plan à du bois. Mais ces texture peuvent aussi être utilisées pour générer un `displacement`.
 
 - Cliquez sur `Open` dans cette boite et indiquez votre mnt.tif.
 - Cliquez sur le petit cercle à côté de `Color` en maintenant le bouton gauche de la souris appuyé.
