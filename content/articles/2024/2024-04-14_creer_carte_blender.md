@@ -292,7 +292,7 @@ On va faire beaucoup mieux.
 
 Pour l'instant notre plan est trop simpliste, car uniquement composé de 4 `vertices`/`vertex`/`noeud`/whatever  -vous voyez de quoi je parle.
 
-Ces `vertices` sont ce que Blender utilise pour déformer le terrain et pour le moment Blender ne pourrait utiliser que les quatre coins de l'image.
+Ces `vertices` sont ce que Blender utilise pour déformer le terrain, et pour le moment, Blender ne pourrait utiliser que les quatre coins de l'image.
 
 Pour l'instant ces derniers ne sont pas utilsés, Blender n'a fait que _peindre_ le relief sur le plan avec des nuances de gris. On pourrait ajouter des `vertices` à la main mais on va utiliser une autre astuce. Les `modificateurs`.
 
