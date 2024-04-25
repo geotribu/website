@@ -253,7 +253,7 @@ Pour l'instant nous ne modifierons rien mais voici quelques explications :
 
 - L'option `Surface` indique "Principled BSDF". Ce n'est pas référence à une pratique étrange du yoga mais à un `shader` utilisant une ["Bidirectional Scattering Distribution Function"](https://en.wikipedia.org/wiki/Bidirectional_scattering_distribution_function). Les `shaders` indiquent à Blender la manière dont la lumière rebondi sur les objets. Chaque `shader` présent dans cette liste représente un modèle mathématique d'interaction de la lumière avec l'objet. Utiliser autre chose que Principled BSDF permet de faire des objets qui ressemblerons à du verre, du coton... mais ce n'est pas ce que nous voulons ici donc on va laisser ce paramètre tranquille.
 
-- Il y a beaucoup d'options pour ce `shader` : la rugosité, l'incide de refraction, la couleur ... mais pour le moment nous voulons un plan plat et réaliste, donc on touche à rien. On y reviendra plus tard.
+- Il y a beaucoup d'options pour ce `shader` : la rugosité, l'incide de refraction, la couleur ... mais pour le moment nous voulons un plan plat et réaliste, donc on ne touche à rien. On y reviendra plus tard.
 
 Les `matériaux` ne servent pas qu'à assigner une couleur ou une interaction avec la lumière. Ils peuvent aussi posséder un `displacement` / `déplacement`. Soit une déformation de leur surface. Et c'est comme ça que nous allons transformer notre plan en un modèle de relief réaliste.
 
