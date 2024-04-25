@@ -302,7 +302,7 @@ Pour l'instant ces derniers ne sont pas utilisés, Blender n'a fait que _peindre
 - Et maintenant, cliquer sur "Add Modifier"
 - L'apparence de ce menu a été modifiée dans la toute dernière version de Blender mais l'idée est de choisir le groupe "Generate" puis ["Subdivision Surface"](https://docs.blender.org/manual/fr/4.1/modeling/modifiers/generate/subdivision_surface.html).
 
-Apparemant la communauté Blender surnomme ce modificateur "subsurf" ou "subdiv". Ne me demandez pas. Il est très utilisé et permet de dire à Blender d'ajouter du détail à un objet (ainsi il permet de faire des objets très arrondis en travaillant avec des `mesh` simples).
+Apparemment, la communauté Blender surnomme ce modificateur `subsurf` ou `subdiv`. Ne me demandez pas. Il est très utilisé et permet de dire à Blender d'ajouter du détail à un objet (ainsi il permet de faire des objets très arrondies en travaillant avec des `mesh` simples).
 
 Dans notre cas on va l'utilier pour faire croire à Blender que notre objet est composé de très nombreux morceaux afin de simuler beaucoup de `vertices`.
 
