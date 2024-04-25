@@ -231,7 +231,7 @@ Je vous ai déjà parlé de mon amour de GDAL ? Et bien on ve le ressortir avec 
 
 La ligne Size vous donne la taille en pixels de votre mnt.
 
-Toujours dans ce panneau de Blender, on modifie `scale` pour faire correspondre. Indiquer x 8000 / y 7000 (mon cas) donnerai un plan beaucoup trop grand, l'important est de garder le ratio. J'indique donc x 0.8 et y 0.7 comme valeur pour scale.
+Toujours dans ce panneau de Blender, on modifie `scale` pour faire correspondre. Indiquer x 8000 / y 7000 (mon cas) donnerait un plan beaucoup trop grand, l'important est de garder le ratio. J'indique donc x 0.8 et y 0.7 comme valeur pour scale.
 
 Je ne répeterai pas cette information mais pensez à sauvegarder ! File -> save as et enregistrez votre espace de travail au format `.blend.`
 
