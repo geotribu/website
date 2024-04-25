@@ -290,7 +290,7 @@ On va faire beaucoup mieux.
 
 ### Subdiviser la surface
 
-Pour l'instant notre plan est trop simpliste, car uniquement composé de 4 `vertices`/`vertex`/`noeud` whatever vous voyez de quoi je parle.
+Pour l'instant notre plan est trop simpliste, car uniquement composé de 4 `vertices`/`vertex`/`noeud`/whatever  -vous voyez de quoi je parle.
 
 Ces `vertices` sont ce que Blender utilise pour déformer le terrain et pour le moment Blender ne pourrait utiliser que les quatre coins de l'image.
 
