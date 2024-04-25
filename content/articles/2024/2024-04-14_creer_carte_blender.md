@@ -243,7 +243,7 @@ Dans le monde réel, les substances telles que le bois, la roche, le verre ... s
 
 Pour l'instant, notre plan ne possèque aucun matériau, ce pourquoi il apparaît gris mat. Si vous effectuez un rendu en cliquant sur `Render -> Render image`, ou en choissant le mode de visualisation "Rendu" dans le 3D view port, vous vous en rendrez compte.
 
-Pour affecter un matériau au plan, selectionnez le puis cliquez sur cette icone :
+Pour affecter un matériau au plan, selectionnez-le puis cliquez sur cette icone :
 
 ![setup materials](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img12_material.png){: .img-center loading=lazy }
 
