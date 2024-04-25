@@ -247,7 +247,7 @@ Pour affecter un matériau au plan, selectionnez-le puis cliquez sur cette icone
 
 ![setup materials](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img12_material.png){: .img-center loading=lazy }
 
-Puis cliquez sur `New`. Blendez créera alors un nouveau materiau nommé Material.001. Vous pouvez le renommer si vous le désirez.
+Puis cliquez sur `New`. Blendez créera alors un nouveau matériau nommé `Material.001`. Vous pouvez le renommer si vous le désirez.
 
 Pour l'instant nous ne modifierons rien mais voici quelques explications :
 
