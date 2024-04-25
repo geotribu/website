@@ -225,7 +225,7 @@ On clique sur notre plan pour le sélectionner (il se détoure alors en orange) 
 
 On modifie ensuite les valeurs de `Location` x y et z à 0 si ce n'est pas le cas.
 
-Je vous ai déjà parlé de mon amour de GDAL ? Et bien on ve le ressortir avec encore une fois la commande `GDALinfo`. En effet maintenant on va donner à notre plan les dimensions de notre raster d'elevation.
+Je vous ai déjà parlé de mon amour de GDAL ? Et bien on ve le ressortir avec encore une fois la commande `gdalinfo`. En effet maintenant on va donner à notre plan les dimensions de notre raster d'elevation.
 
 ![taille raster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img11_size.png){: .img-center loading=lazy }
 
