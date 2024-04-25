@@ -241,7 +241,7 @@ C'est ici qu'on va commencer a faire des trucs un peu compliqués.
 
 Dans le monde réel, les substances telles que le bois, la roche, le verre ... semblent différentes les unes des autres car elles ont des couleurs, des textures, une rugosité différentes. Blender est conçu pour simuler ces variations en permettant d'attribuer des propriétés reflétant ceci aux `matériaux` attribués aux objets. Les moteurs de rendus calculent ensuite l'apparence des objets ainsi que la dispersion et les rebonds de la lumière en fonction de ces `matériaux`.
 
-Pour l'instant, notre plan ne possèque aucun matériau, ce pourquoi il apparait gris mat. Si vous effectuez un rendu en cliquant sur render -> render image, ou en choissant le mode de visualisation "rendu" dans le 3d view port, vous vous en rendrez compte.
+Pour l'instant, notre plan ne possèque aucun matériau, ce pourquoi il apparaît gris mat. Si vous effectuez un rendu en cliquant sur `Render -> Render image`, ou en choissant le mode de visualisation "Rendu" dans le 3D view port, vous vous en rendrez compte.
 
 Pour affecter un matériau au plan, selectionnez le puis cliquez sur cette icone :
 
