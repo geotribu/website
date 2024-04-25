@@ -273,7 +273,7 @@ Depuis la barre de menu située au dessus de l'écran, choisissez `Add > Texture
 
 Une nouvelle boite apparait. Positionnez-la où bon vous semble. Dans le language de Blender, une `texture` est une image ou une motif qui sera appliquée aux `matériaux` pour changer leur apparence. On pourrait ainsi charger une image de grain de bois pour faire ressembler notre plan à du bois. Mais ces texture peuvent aussi être utilisées pour générer un `displacement`.
 
-- Cliquez sur `Open` dans cette boite et indiquez votre mnt.tif.
+- Cliquez sur `Open` dans cette boite et indiquez votre `mnt.TIF`.
 - Cliquez sur le petit cercle à côté de `Color` en maintenant le bouton gauche de la souris appuyé.
 - Et relier à `Displacement`
 - Tant que nous y sommes, changez l'option `Linear` pour `Smart`. Ceci change l'interpolation de la texture pour être un peu plus jolie.
