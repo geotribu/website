@@ -13,9 +13,11 @@ license: beerware
 robots: index, follow
 tags:
     - AirParif
-    - bot
-    - mastodon
-    - python
+    - API
+    - Mastodon
+    - Python
+    - qualité de l'air
+    - WMS
 ---
 
 # Automatisation de publication des données de qualité de l'air sur Mastodon
