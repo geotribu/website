@@ -56,9 +56,9 @@ body:
       description: |
         Choisissez la licence qui vous convient le mieux. Voir [le guide](https://contribuer.geotribu.fr/guides/licensing/).
       options:
-        - "[Creative Commons International BY-NC-SA 4.0](https://contribuer.geotribu.fr/guides/licensing/#licence-par-defaut) **licence par défaut**"
-        - "[Creative Commons International BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
-        - "[Beerware (Révision 42)](https://fr.wikipedia.org/wiki/Beerware)"
+        - "Creative Commons International BY-NC-SA 4.0"
+        - "Creative Commons International BY-SA 4.0"
+        - "Beerware (Révision 42)"
         - "autre - merci de préciser dans le champ libre en fin de formulaire"
     validations:
       required: true
@@ -79,6 +79,14 @@ body:
       required: true
 
   - type: input
+    id: in-art-description
+    attributes:
+      label: Description courte
+      description: "Description de 160 caractères maximum qui résume l'article et qui est présente dans le [flux RSS](https://geotribu.fr/feed_rss_created.xml), la [newsletter](https://us5.campaign-archive.com/home/?u=465e16ce303f65e4f490e8a71&id=6c4efaf092), les moteurs de recherche, en page d'accueil... Pensez en termes de SEO !"
+    validations:
+      required: true
+
+  - type: input
     id: in-art-tags
     attributes:
       label: Mots-clés
@@ -93,7 +101,7 @@ body:
     attributes:
       label: Date de publication envisagée
       description: |
-        Pour information, nous avons pour habitude de publier les mardis ou les vendredis sans RDP.
+        Pour information, nous avons pour habitude de publier les articles les mardis ou les vendredis sans RDP.
         Afin d'assurer une bonne ventilation des publications, l'équipe se réserve le droit de changer la date.
     validations:
       required: true
@@ -103,9 +111,10 @@ body:
     attributes:
       label: Contenu de l'article
       description: |
-        La syntaxe Markdown est acceptée, mais le rendu final diffèrera de celui de GitHub.
+        Si vous avez déjà votre contenu, collez le ici.
+        La syntaxe Markdown est acceptée, mais rappelez-vous que le rendu final est celui de Material for Mkdocs et diffèrera donc de celui de GitHub. Voici [le guide de rédaction avec les principales différences de syntaxe](https://contribuer.geotribu.fr/guides/markdown_quality/#interligne-simple).
     validations:
-      required: true
+      required: false
 
   - type: markdown
     attributes:
