@@ -19,14 +19,15 @@ tags:
 
 ## Membres de l'équipe
 
+> Personnes actives sur la dernière année écoulée et qui acceptent d'être contactée au titre de Geotribu
+
 - [Arnaud](./arnaud-vandecasteele.md)
 - [Aurélien](./aurelien-chaumet.md)
-- [Etienne](./etienne-delay.md)
 - [Fabien](./fabien-goblet.md)
 - [Florian](./florian-boret.md)
-- [Jérémie O.](./jeremie-ory.md)
+- [Guilhem](./guilhem-allaman.md)
 - [Julien](./julien-moura.md)
-- [Mathieu R.](./mathieu-rajerison.md)
+- [Michaël Galien](./michael-galien.md)
 
 ----
 
@@ -41,8 +42,11 @@ La liste ci-après est générée automatiquement à partir de l'historique de [
 ## Membres historiques
 
 - [Adrien](./adrien-van-hamme.md)
+- [Etienne](./etienne-delay.md)
 - [Guillaume](./guillaume-de-boyer.md)
+- [Jérémie O.](./jeremie-ory.md)
 - [Julie](./julie-pierson.md)
+- [Mathieu R.](./mathieu-rajerison.md)
 - [Pierre](./pierre-vernier.md)
 - [Rémi](./remi-bovard.md)
 - [Rodolphe](./rodolphe-quiedeville.md)

@@ -1,4 +1,22 @@
-# Florian Boret  {: data-search-exclude }
+---
+title: Florian Boret
+categories:
+    - contributeur
+social:
+    - bluesky:
+    - github:
+    - gitlab:
+    - linkedin:
+    - mail:
+    - mastodon:
+        - instance:
+        - username:
+    - twitter:
+---
+
+# Florian Boret
+
+<!-- --8<-- [start:author-sign-block] -->
 
 ![Portrait Florian Boret](https://cdn.geotribu.fr/img/internal/contributeurs/fbor.png "Portrait Florian Boret"){: .img-thumbnail-left }
 
@@ -7,3 +25,5 @@ Géomaticien/cartographe, je suis arrivé dans le monde de la géomatique en sui
 Depuis mon retour en France, je suis en charge du SIG de la communauté de communes du Pays de Lunel.
 
 En dehors de ces expériences, j'ai aussi régulièrement initié de petits projets personnels [iGeo-Topo](https://www.igeo-topo.fr), GIS-Blog.fr, [osm2igeo](https://github.com/igeofr/osm2igeo), [osm2igeotopo](https://github.com/igeofr/osm2igeotopo). Aujourd'hui, c’est avec plaisir que j’interviens également comme contributeur de GeoTribu.
+
+<!-- --8<-- [end:author-sign-block] -->

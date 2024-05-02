@@ -1,8 +1,8 @@
 ---
-title: "Page auteur Geotribu - Julien Moura"
+title: Julien Moura
+subtitle: GeoJulien
 categories:
     - contributeur
-description: "Installer QGIS sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des problèmes. Un tutoriel sur la marche à suivre pour s'en rappeler quand le besoin se fait sentir."
 social:
     - github: guts
     - gitlab: geojulien
@@ -14,9 +14,9 @@ social:
     - twitter: geojulien
 ---
 
---8<-- [start:author]
+# Julien Moura
 
-### Julien Moura
+<!-- --8<-- [start:author-sign-block] -->
 
 ![Portrait Julien Moura](https://cdn.geotribu.fr/img/internal/contributeurs/jmou.jfif "Portrait Julien Moura"){: .img-thumbnail-left }
 
@@ -25,4 +25,4 @@ Géographe "sigiste" de formation, j'ai travaillé sur différentes thématiques
 Je travaille désormais à [Oslandia](https://oslandia.com/).  
 Féru des dynamiques de contributions, je participe activement à Geotribu depuis fin 2011.
 
---8<-- [end:author]
+<!-- --8<-- [end:author-sign-block] -->
