@@ -141,10 +141,6 @@ C'est fou la transparence, c'est beau l'open source :heart_eyes: !
 
 ----
 
-## Auteur/es
-
---8<-- "content/team/julien-moura.md"
-
---8<-- "content/team/delphine-montagne.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

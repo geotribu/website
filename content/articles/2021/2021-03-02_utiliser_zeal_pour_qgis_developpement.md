@@ -158,9 +158,7 @@ En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Footnotes reference -->
 [^1]: traduction de *framework* recommandée par l'Office québécois de la langue française. Source : [Wikipedia](https://fr.wikipedia.org/wiki/Framework#Traduction_fran%C3%A7aise)

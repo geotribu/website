@@ -364,10 +364,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - Les vidéos de <https://www.humanitariandatasolutions.com/>
 
 ----
-
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mathieu-bossaert.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}
 

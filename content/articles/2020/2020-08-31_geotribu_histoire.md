@@ -116,9 +116,7 @@ Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [Arnaud]: ../../team/arnaud-vandecasteele.md

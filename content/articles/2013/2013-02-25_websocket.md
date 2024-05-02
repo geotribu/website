@@ -299,6 +299,4 @@ Bon évidemment c'est un petit tuto pour voir comment tout ça fonctionne, mais 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

@@ -143,6 +143,4 @@ Il ne vous reste plus qu'a rajouter les divers attributs et méthodes que vous s
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

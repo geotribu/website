@@ -76,6 +76,4 @@ Enfin, reste la question du [prix](http://opengeo.org/products/suite/buy/#price)
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

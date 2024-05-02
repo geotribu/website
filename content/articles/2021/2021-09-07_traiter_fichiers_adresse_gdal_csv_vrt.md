@@ -458,9 +458,7 @@ Enfin, si la ligne de commande vous effraie, il y a aussi des outils disponibles
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
 

@@ -363,8 +363,6 @@ Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldC
 
 Les backups, les maintenances, les montées de version ... ne font pas l'objet de cet article. Pourquoi ne pas s'entourer de vrai/es expert/es sur ce domaine purement IT ? Il y a des boîtes qui proposent ces services et qui permettent de se soulager de ces contraintes, tout en discutant de la stratégie la plus adéquate à adopter. Car après tout, qui de mieux que _votre partenaire QField_ pour s'occuper de _votre QField_ ?
 
-## Auteur
-
---8<-- "content/team/guilhem-allaman.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

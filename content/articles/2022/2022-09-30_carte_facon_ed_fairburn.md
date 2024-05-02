@@ -194,6 +194,4 @@ Allé, à toi de jouer maintenant !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/michael-galien.md"
+<!-- geotribu:authors-block -->

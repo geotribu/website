@@ -254,8 +254,6 @@ def close(self):
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/humbert-fiorino.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

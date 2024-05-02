@@ -434,8 +434,6 @@ Les fonctions :
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mathieu-rajerison.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

@@ -151,8 +151,6 @@ Et n'oubliez pas de suivre le [30 Day Map Challenge](https://30daymapchallenge.c
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jeremie-prudhomme.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

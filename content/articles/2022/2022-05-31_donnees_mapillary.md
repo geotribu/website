@@ -283,8 +283,6 @@ En parallèle et pour d'autres usages, le script de téléchargement des donnée
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

@@ -324,8 +324,6 @@ Maintenant, à vous de jouer, et pensez à remonter toute anomalie ou améliorat
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/regis-haubourg.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

@@ -314,8 +314,6 @@ Rendez-vous en novembre pour la prochaine édition !
 
 ----
 
-## Auteur
-
---8<-- "content/team/guilhem-allaman.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

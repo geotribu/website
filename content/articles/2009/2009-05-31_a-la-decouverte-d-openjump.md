@@ -81,6 +81,4 @@ Le seul point négatif est la pauvreté des formats qu'il est possible d'ouvrir 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -33,6 +33,4 @@ Ce colloque se termine, et il est temps de retourner dans le Sud. En tout cas, j
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

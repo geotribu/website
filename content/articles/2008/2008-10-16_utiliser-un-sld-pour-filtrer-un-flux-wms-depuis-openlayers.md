@@ -82,6 +82,4 @@ La carte ci-dessous, est une représentation mondiale du nombre d'habitant par K
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

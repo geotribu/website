@@ -249,6 +249,4 @@ Pour commencer à prendre en main ces données et comme je trouve que juste leur
 
 Et bien sûr, n'hésitez pas à revenir partager ici vos exemples d'utilisation ou vos plus jolies visualisations de données !
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/nicolas-david.md"
+<!-- geotribu:authors-block -->

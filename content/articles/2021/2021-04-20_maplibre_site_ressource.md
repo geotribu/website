@@ -676,8 +676,6 @@ Bref, MapLibre c'est une super solution, assez simple de prise en main, donc plu
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/boris-mericskay.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

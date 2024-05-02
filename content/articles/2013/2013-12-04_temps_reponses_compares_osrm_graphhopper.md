@@ -75,6 +75,4 @@ Dans un contexte d'installation "out of the box" on peut conclure après ces que
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/rodolphe-quiedeville.md"
+<!-- geotribu:authors-block -->

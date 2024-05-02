@@ -24,6 +24,7 @@ hooks:
   # - hooks/mkdocs/G002_check_images_size.py
   - hooks/mkdocs/G003_social_cards_adapter.py
   - hooks/mkdocs/G005_jinja_filters.py
+  - hooks/mkdocs/G006_authors_block.py
 
 # Plugins
 plugins:

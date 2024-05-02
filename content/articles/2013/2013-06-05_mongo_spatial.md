@@ -151,6 +151,4 @@ C'est prêt :).
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/guillaume-de-boyer.md"
+<!-- geotribu:authors-block -->

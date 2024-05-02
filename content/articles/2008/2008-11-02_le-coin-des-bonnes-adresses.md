@@ -42,6 +42,4 @@ Sites cartographiques intéressants ou originaux pas leur contenu, leur représe
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

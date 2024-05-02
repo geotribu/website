@@ -194,6 +194,4 @@ Clair, propre et conçis que demander de plus ? Un point de plus encore pour cet
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

@@ -45,12 +45,4 @@ Bon jeu et bonne nostalgie :smile:.
 
 ----
 
-## Auteurs
-
-### Conception initiale
-
---8<-- "content/team/jeremie-ory.md"
-
-### Restauration
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->

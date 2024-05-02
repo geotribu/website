@@ -131,8 +131,6 @@ Nous espérons avoir démontré comment cocarto permet de faire le lien très ra
 - aucune application à installer pour faire des remontées : un lien suffit ;
 - les données remontées sont correctement formatées et il n’y a pas besoin de les retravailler pour les utiliser dans un SIG.
 
-## Auteur
-
---8<-- "content/team/tristram-grabener.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

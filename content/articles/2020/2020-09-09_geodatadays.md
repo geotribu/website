@@ -49,6 +49,4 @@ Tout ça pour dire qu'on se voit mardi !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
