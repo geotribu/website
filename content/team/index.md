@@ -27,7 +27,7 @@ tags:
 - [Florian](./florian-boret.md)
 - [Guilhem](./guilhem-allaman.md)
 - [Julien](./julien-moura.md)
-- [Michaël Galien](./michael-galien.md)
+- [Michaël](./michael-galien.md)
 
 ----
 
