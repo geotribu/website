@@ -66,10 +66,6 @@ def on_page_markdown(
     Returns:
         Markdown source text of page as string
     """
-    # exclude homepage
-    if page.is_homepage:
-        return
-
     # check si c'est la version Insiders (payante) ou la version Communauté (gratuite) du thème
     is_insiders = config.theme.get("insiders_flavor")
 
