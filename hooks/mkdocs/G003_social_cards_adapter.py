@@ -91,9 +91,7 @@ def on_page_markdown(
 
     # Cas de figure où une image n'est pas définie
     if page.meta.get("image") is None or page.meta.get("image") == "":
-        social_card_url = (
-            f"{config.site_url}assets/images/social{page.abs_url[:-1]}.png"
-        )
+        social_card_url = f"{config.site_url}assets/images/social/{Path(page.file.abs_src_path).stem}.png"
         logger.debug(
             f"{page.abs_url} n'a pas d'image. Une 'social card' sera automatiquement générée : {social_card_url}"
         )
