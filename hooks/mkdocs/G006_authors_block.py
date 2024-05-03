@@ -82,7 +82,7 @@ def on_page_markdown(
             if author == "Geotribu":
                 author_block += '### L\'équipe Geotribu\n\n--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md:author-sign-block"\n\n'
             else:
-                author_block += f'### [{author}](/team/{sluggy(author)})\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
+                author_block += f'### [{author}](../../team/{sluggy(author)}.md)\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
 
         # Find and replace all external asset URLs in current page
         return re.sub(
