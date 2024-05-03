@@ -19,7 +19,7 @@ tags:
 
 ## Membres de l'équipe
 
-> Personnes actives sur la dernière année écoulée et qui acceptent d'être contactée au titre de Geotribu
+> Personnes actives sur la dernière année écoulée et qui acceptent d'être contactées au titre de Geotribu
 
 - [Arnaud](./arnaud-vandecasteele.md)
 - [Aurélien](./aurelien-chaumet.md)
