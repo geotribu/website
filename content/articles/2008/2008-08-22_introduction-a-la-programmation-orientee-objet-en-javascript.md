@@ -111,6 +111,4 @@ Néanmoins 'avantage indéniable de JS est sa fléxibilité (ex changement en co
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

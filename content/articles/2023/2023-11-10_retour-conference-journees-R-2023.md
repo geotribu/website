@@ -240,8 +240,6 @@ Merci à l'organisation pour ces journées !
 
 ----
 
-## Autrice
-
---8<-- "content/team/delphine-montagne.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

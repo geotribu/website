@@ -31,6 +31,4 @@ Malheureusement cette application n'est disponible que pour l'Angleterre. Mais p
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -81,6 +81,4 @@ La démarche proposée est essentiellement manuelle. Bien évidemment rien ne vo
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

@@ -268,9 +268,7 @@ ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales s
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mathieu-bossaert.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}
 

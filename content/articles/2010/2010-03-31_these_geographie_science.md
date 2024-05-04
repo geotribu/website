@@ -51,6 +51,4 @@ Denis ECKERT (DR CNRS) [eckert@univ-tlse2.fr](mailto:eckert@univ-tlse2.fr)
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

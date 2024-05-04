@@ -202,8 +202,6 @@ Pour la restitution des données et leur vie après l’acquisition sur le terra
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/valerian-lebert.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

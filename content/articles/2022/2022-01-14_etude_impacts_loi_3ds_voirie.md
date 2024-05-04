@@ -307,6 +307,4 @@ A noter que les requêtes peuvent facilement être adaptées pour les autres Dé
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/michael-galien.md"
+<!-- geotribu:authors-block -->

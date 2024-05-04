@@ -171,8 +171,6 @@ Si vous souhaitez en savoir plus sur la détection automatique du carto-vandalis
 
 ----
 
-## Autrice
-
---8<-- "content/team/quy-thy-truong.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

@@ -41,6 +41,4 @@ Au final, la découverte de ces deux applications à quelques jours d'intervalle
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

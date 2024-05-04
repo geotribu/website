@@ -191,9 +191,7 @@ Maintenant on sait comment moissonner un site web, en l'occurence l'ancien Geotr
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [Scrapy]: https://scrapy.org/

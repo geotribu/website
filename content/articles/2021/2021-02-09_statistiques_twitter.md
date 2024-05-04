@@ -271,6 +271,4 @@ N'hésitez pas à nous faire des retours dans les commentaires, si vous avez ég
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/aurelien-chaumet.md"
+<!-- geotribu:authors-block -->

@@ -27,6 +27,4 @@ Ma vidéo préférée ? J'hésite entre les deux ci-dessous ? Et vous laquelle e
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -9,6 +9,7 @@ categories:
 comments: true
 date: 2023-01-05
 description: Installer QGIS sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des problèmes. Un tutoriel sur la marche à suivre pour s'en rappeler quand le besoin se fait sentir.
+icon: fontawesome/brands/ubuntu
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png
 license: beerware
 tags:
@@ -285,9 +286,7 @@ On aère un peu et on repart sur [le début de la procédure](#dependances).
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
 

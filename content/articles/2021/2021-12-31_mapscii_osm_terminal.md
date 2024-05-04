@@ -88,8 +88,6 @@ Ces aspects de personnalisation dépassent un peu, pour le moment, les compéten
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jeremy-garniaux.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

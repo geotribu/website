@@ -283,8 +283,6 @@ Après la phase de mise en œuvre et d'état des lieux sur le territoire, nous a
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

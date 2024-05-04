@@ -212,8 +212,6 @@ Manquent à l'appel les plugins fermés (Espace Collaboratif de l'IGN...), ceux 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

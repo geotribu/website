@@ -53,6 +53,4 @@ J'espère avoir réussi à clarifier ce qu'est OpenStreetMap sans pour autant tr
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

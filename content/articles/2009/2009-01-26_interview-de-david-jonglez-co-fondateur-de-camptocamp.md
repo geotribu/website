@@ -25,6 +25,4 @@ Un interview à lire absolument surtout qu'il est donné par un des Monsieur du 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->
