@@ -72,7 +72,7 @@ def on_page_markdown(
             logger.warning(
                 f"L'entrée 'authors' de l'en-tête de la page '{page.file.abs_src_path}' est incorrecte."
             )
-            continue
+            return
 
         if len(page_authors) > 1:
             author_block = "\n## Auteur·ices {: data-search-exclude }\n"
