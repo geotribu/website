@@ -15,9 +15,6 @@ from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.structure.files import Files
 from mkdocs.structure.pages import Page
 
-# Mkdocs
-
-
 # ###########################################################################
 # ########## Global ################
 # ##################################
@@ -83,6 +80,12 @@ def on_page_markdown(
             if author == "Geotribu":
                 author_block += '### L\'équipe Geotribu\n\n--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md:author-sign-block"\n\n'
             else:
+                if sluggy(author) not in dico_contributors:
+                    logger.warning(
+                        f"L'auteur/ice '{author}' du contenu '{page.file.abs_src_path}' "
+                        f"n'a pas de page correspondante : {sluggy(author)}"
+                    )
+                    continue
                 author_block += f'### [{author}](../../team/{sluggy(author)}.md)\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
 
         # Find and replace all external asset URLs in current page
