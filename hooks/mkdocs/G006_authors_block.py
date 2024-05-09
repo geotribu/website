@@ -10,6 +10,7 @@ import re
 from pathlib import Path
 
 # 3rd party
+from babel.dates import format_date
 from geotribu_cli.utils.slugger import sluggy
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.structure.files import Files
@@ -86,7 +87,37 @@ def on_page_markdown(
                         f"n'a pas de page correspondante : {sluggy(author)}"
                     )
                     continue
-                author_block += f'### [{author}](../../team/{sluggy(author)}.md)\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
+                author_block += f'### [{author}](../../team/{sluggy(author)}.md "Voir la page complète de l\'auteur·ice avec la liste de ses articles")\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
+
+                # -- Ajoute la page à la liste des articles dans la page auteur
+
+                # date
+                item_date = format_date(
+                    date=page.meta.get("date"), format="long", locale="fr_FR"
+                )
+
+                # icône
+                item_icon = ""
+                if page.meta.get("icon"):
+                    item_icon = f":{page.meta.get('icon').replace('/', '-')}:"
+
+                # hyperlink data
+                list_item_link_data = ""
+                if page.meta.get("description"):
+                    list_item_link_data += page.meta.get("description")
+                if page.meta.get("tags"):
+                    if page.meta.get("description"):
+                        list_item_link_data += "<br/><br/>"
+                    list_item_link_data += (
+                        f"<i>Mots-clés : {' , '.join(page.meta.get('tags'))}</i>"
+                    )
+
+                with Path(f"content/team/{sluggy(author)}.md").open(
+                    "a", encoding="UTF-8"
+                ) as author_file:
+                    author_file.write(
+                        f"\n- {item_icon} [{page.title}](../{page.file.src_uri} '{list_item_link_data}') - _publié le {item_date}_"
+                    )
 
         # on cherche et remplace la balise de bloc de signature en ignorant la casse
         # (re.I) et en gérant le multi-ligne (re.M)
