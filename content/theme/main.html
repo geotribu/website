@@ -19,8 +19,9 @@
 {% endif %}
 
 {# Meta date #}
+{% set page_date = build_date_utc.date() %}
 {% if page and page.meta and page.meta.date %}
-{% set date = page.meta.date %}
+{% set page_date = page.meta.date %}
 {% endif %}
 {# Meta description #}
 {% set description = config.site_description %}
