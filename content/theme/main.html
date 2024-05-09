@@ -19,6 +19,7 @@
 {% endif %}
 
 {# Meta date #}
+{% set date = build_date_utc.date() %}
 {% if page and page.meta and page.meta.date %}
 {% set date = page.meta.date %}
 {% endif %}
