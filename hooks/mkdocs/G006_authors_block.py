@@ -51,7 +51,7 @@ def on_files(files: Files, config: MkDocsConfig):
             and filepath.suffix == ".md"
             and Path(f.abs_src_path).name not in exclude_files
         ):
-            dico_contributors[Path(f.abs_src_path).stem] = None
+            dico_contributors[Path(f.abs_src_path).stem] = 0
 
 
 # @mkdocs.plugins.event_priority(-100)
@@ -90,6 +90,12 @@ def on_page_markdown(
                 author_block += f'### [{author}](../../team/{sluggy(author)}.md "Voir la page complète de l\'auteur·ice avec la liste de ses articles")\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
 
                 # -- Ajoute la page à la liste des articles dans la page auteur
+                articles_headers = ""
+                if dico_contributors.get(sluggy(author)) == 0:
+                    articles_headers = "\n\n## Liste de mes articles"
+                dico_contributors[sluggy(author)] = (
+                    dico_contributors.get(sluggy(author)) + 1
+                )
 
                 # date
                 item_date = format_date(
@@ -115,6 +121,7 @@ def on_page_markdown(
                 with Path(f"content/team/{sluggy(author)}.md").open(
                     "a", encoding="UTF-8"
                 ) as author_file:
+                    author_file.write(articles_headers)
                     author_file.write(
                         f"\n- {item_icon} [{page.title}](../{page.file.src_uri} '{list_item_link_data}') - _publié le {item_date}_"
                     )
