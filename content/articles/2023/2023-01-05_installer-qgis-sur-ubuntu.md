@@ -20,7 +20,7 @@ tags:
 
 # Installer QGIS sur Ubuntu, le pense-bête simple et efficace
 
-:calendar: Date de publication initiale : 5 janvier 2023
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
 
