@@ -60,7 +60,10 @@ def on_page_markdown(
     config: MkDocsConfig,
     files: Files,
 ):
-    if "article" in page.file.abs_src_path:
+    if (
+        "articles" in page.file.abs_src_path
+        and "templates" not in page.file.abs_src_path
+    ):
         page_authors = page.meta.get("authors")
         if not isinstance(page_authors, list):
             logger.warning(
