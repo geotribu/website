@@ -1,5 +1,5 @@
 {# Structured data using schema.org #}
-{% if type == "article" %}
+{% if page_type in ("article", "geordp") %}
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -73,7 +73,21 @@
       }
     }
     </script>
-{% elif type == "website" %}
+{% elif page_type == "author_profile" %}
+<script type='application/ld+json'>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "ProfilePage",
+        "dateCreated": "{{ page_date }}T13:00:00Z",
+        "dateModified": "{{ build_date_utc.isoformat() }}",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "{{ page.title }}",
+          {% if page.meta.subtitle %}"alternateName": "{{ page.meta.subtitle }}",{% endif %}
+        }
+      }
+  </script>
+{% elif page_type == "website" %}
 <script type='application/ld+json'>
       {
         "@context": "http://www.schema.org",

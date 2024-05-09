@@ -65,13 +65,17 @@
 <meta http-equiv="expires" content="43200" />
 
 {# Meta type #}
+{% set page_type = "article" %}
 {% if page.is_homepage or page.abs_url == "/" %}
-{% set type = "website" %}
+{% set page_type = "website" %}
+{% elif "rdp/" in page.url %}
+{% set page_type = "geordp" %}
+{% elif "team/" in page.url %}
+{% set page_type = "author_profile" %}
 {% else %}
-{% set type = "article" %}
+{% set page_type = "article" %}
 {% endif %}
 
-<meta name="social:card" content="{{ social_card }}">
 {# JSON Feed #}
 {% include "partials/json_feed.html.jinja2" %}
 {# Semantic web - schemas.org #}
@@ -80,6 +84,10 @@
 {% include "partials/cards_opengraph.html.jinja2" %}
 {# Social cards - Twitter #}
 {% include "partials/cards_twitter.html.jinja2" %}
+
+{# Store custom Geotribu tags #}
+<meta name="geotribu:page_type" content="{{ page_type }}">
+<meta name="social:card" content="{{ social_card }}">
 
 {% endblock %}
 
