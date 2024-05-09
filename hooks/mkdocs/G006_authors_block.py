@@ -92,7 +92,7 @@ def on_page_markdown(
                 # -- Ajoute la page à la liste des articles dans la page auteur
                 articles_headers = ""
                 if dico_contributors.get(sluggy(author)) == 0:
-                    articles_headers = "\n\n## Liste de mes articles"
+                    articles_headers = "\n\n## Liste de mes articles\n"
                 dico_contributors[sluggy(author)] = (
                     dico_contributors.get(sluggy(author)) + 1
                 )
