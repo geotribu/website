@@ -10,6 +10,7 @@ import re
 from pathlib import Path
 
 # 3rd party
+from babel.dates import format_date
 from geotribu_cli.utils.slugger import sluggy
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.structure.files import Files
@@ -31,13 +32,10 @@ exclude_files = [
     "sponsoring.md",
 ]
 
-author_block = """{% for author in page.meta.authors %}
-
-### {{ author }}
-
---8<-- "content/team/julien-moura.md:author-sign-block"
-
-{% endfor %}"""
+regex_pattern = re.compile(
+    pattern="<!-- geotribu:authors-block -->",
+    flags=re.I | re.M,
+)
 
 # ###########################################################################
 # ########## Functions #############
@@ -53,7 +51,7 @@ def on_files(files: Files, config: MkDocsConfig):
             and filepath.suffix == ".md"
             and Path(f.abs_src_path).name not in exclude_files
         ):
-            dico_contributors[Path(f.abs_src_path).stem] = None
+            dico_contributors[Path(f.abs_src_path).stem] = 0
 
 
 # @mkdocs.plugins.event_priority(-100)
@@ -63,7 +61,10 @@ def on_page_markdown(
     config: MkDocsConfig,
     files: Files,
 ):
-    if "article" in page.file.abs_src_path:
+    if (
+        "articles" in page.file.abs_src_path
+        and "templates" not in page.file.abs_src_path
+    ):
         page_authors = page.meta.get("authors")
         if not isinstance(page_authors, list):
             logger.warning(
@@ -86,12 +87,48 @@ def on_page_markdown(
                         f"n'a pas de page correspondante : {sluggy(author)}"
                     )
                     continue
-                author_block += f'### [{author}](../../team/{sluggy(author)}.md)\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
+                author_block += f'### [{author}](../../team/{sluggy(author)}.md "Voir la page complète de l\'auteur·ice avec la liste de ses articles")\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
 
-        # Find and replace all external asset URLs in current page
-        return re.sub(
-            r"<!-- geotribu:authors-block -->",
+                # -- Ajoute la page à la liste des articles dans la page auteur
+                articles_headers = ""
+                if dico_contributors.get(sluggy(author)) == 0:
+                    articles_headers = "\n\n## Liste de mes articles"
+                dico_contributors[sluggy(author)] = (
+                    dico_contributors.get(sluggy(author)) + 1
+                )
+
+                # date
+                item_date = format_date(
+                    date=page.meta.get("date"), format="long", locale="fr_FR"
+                )
+
+                # icône
+                item_icon = ""
+                if page.meta.get("icon"):
+                    item_icon = f":{page.meta.get('icon').replace('/', '-')}:"
+
+                # hyperlink data
+                list_item_link_data = ""
+                if page.meta.get("description"):
+                    list_item_link_data += page.meta.get("description")
+                if page.meta.get("tags"):
+                    if page.meta.get("description"):
+                        list_item_link_data += "<br/><br/>"
+                    list_item_link_data += (
+                        f"<i>Mots-clés : {' , '.join(page.meta.get('tags'))}</i>"
+                    )
+
+                with Path(f"content/team/{sluggy(author)}.md").open(
+                    "a", encoding="UTF-8"
+                ) as author_file:
+                    author_file.write(articles_headers)
+                    author_file.write(
+                        f"\n- {item_icon} [{page.title}](../{page.file.src_uri} '{list_item_link_data}') - _publié le {item_date}_"
+                    )
+
+        # on cherche et remplace la balise de bloc de signature en ignorant la casse
+        # (re.I) et en gérant le multi-ligne (re.M)
+        return regex_pattern.sub(
             author_block,
             markdown,
-            flags=re.I | re.M,
         )
