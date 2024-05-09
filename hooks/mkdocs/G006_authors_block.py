@@ -31,13 +31,10 @@ exclude_files = [
     "sponsoring.md",
 ]
 
-author_block = """{% for author in page.meta.authors %}
-
-### {{ author }}
-
---8<-- "content/team/julien-moura.md:author-sign-block"
-
-{% endfor %}"""
+regex_pattern = re.compile(
+    pattern="<!-- geotribu:authors-block -->",
+    flags=re.I | re.M,
+)
 
 # ###########################################################################
 # ########## Functions #############
@@ -88,10 +85,9 @@ def on_page_markdown(
                     continue
                 author_block += f'### [{author}](../../team/{sluggy(author)}.md)\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
 
-        # Find and replace all external asset URLs in current page
-        return re.sub(
-            r"<!-- geotribu:authors-block -->",
+        # on cherche et remplace la balise de bloc de signature en ignorant la casse
+        # (re.I) et en gérant le multi-ligne (re.M)
+        return regex_pattern.sub(
             author_block,
             markdown,
-            flags=re.I | re.M,
         )
