@@ -12,6 +12,7 @@ social:
         - instance:
         - username:
     - twitter:
+    - openstreetmap: https://www.openstreetmap.org/user/QualiThyAssessment
 ---
 
 # Quy Thy Truong
