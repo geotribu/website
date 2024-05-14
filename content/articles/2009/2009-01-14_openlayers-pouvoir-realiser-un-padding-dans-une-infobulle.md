@@ -57,6 +57,4 @@ Ce qu'il est possible de remarquer immédiatement c'est que par rapport a une ut
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

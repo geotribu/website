@@ -124,6 +124,4 @@ Il est nécessaire de télécharger un plugin pour faire fonctionner cette API -
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

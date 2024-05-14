@@ -55,6 +55,4 @@ Pour les [GéoInterviews](http://geotribu.net/geointerview), nous avions au dép
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

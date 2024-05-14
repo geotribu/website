@@ -135,6 +135,4 @@ Si vous avez tout bien suivi, et que je ne me suis pas trompé (j'espère... :) 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

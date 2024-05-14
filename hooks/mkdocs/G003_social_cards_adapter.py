@@ -66,10 +66,6 @@ def on_page_markdown(
     Returns:
         Markdown source text of page as string
     """
-    # exclude homepage
-    if page.is_homepage:
-        return
-
     # check si c'est la version Insiders (payante) ou la version Communauté (gratuite) du thème
     is_insiders = config.theme.get("insiders_flavor")
 
@@ -91,11 +87,17 @@ def on_page_markdown(
 
     # Cas de figure où une image n'est pas définie
     if page.meta.get("image") is None or page.meta.get("image") == "":
-        social_card_url = (
-            f"{config.site_url}assets/images/social{page.abs_url[:-1]}.png"
-        )
+        if not page.is_index:
+            social_card_url = (
+                f"{config.site_url}assets/images/social{page.abs_url[:-1]}.png"
+            )
+        else:
+            social_card_url = (
+                f"{config.site_url}assets/images/social{page.abs_url[:-1]}/index.png"
+            )
+
         logger.debug(
-            f"{page.abs_url} n'a pas d'image. Une 'social card' sera automatiquement générée : {social_card_url}"
+            f"{page.file.abs_src_path} n'a pas d'image. Une 'social card' sera automatiquement générée : {social_card_url}"
         )
 
         # si la page a une icône, on adapte le template de l'image (disponible que pour Insiders)

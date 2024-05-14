@@ -108,6 +108,4 @@ De la même manière que le géocodage, le calcul d'un itinéraire se fait de fa
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

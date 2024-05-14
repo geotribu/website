@@ -13,9 +13,11 @@ license: beerware
 robots: index, follow
 tags:
     - AirParif
-    - bot
-    - mastodon
-    - python
+    - API
+    - Mastodon
+    - Python
+    - qualité de l'air
+    - WMS
 ---
 
 # Automatisation de publication des données de qualité de l'air sur Mastodon
@@ -310,8 +312,6 @@ Et aussi !
 
 :loudspeaker: N'hésitez pas à contribuer à ce bot, ou à en créer d'autres pour diffuser les données de votre région / pays ! Je suis disponible pour fournir des `access_token` et publier les données via ce bot [air_bot@mapstodon.space](https://mapstodon.space/@air_bot).
 
-## Auteur
-
---8<-- "content/team/guilhem-allaman.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

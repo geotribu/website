@@ -227,8 +227,6 @@ L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jeremie-hanke.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

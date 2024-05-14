@@ -243,9 +243,7 @@ Si l'article vous a intéressé et aidé à embarquer, venez donc le dire en ré
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
 

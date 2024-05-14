@@ -207,8 +207,6 @@ Il existe de [nombreuses listes de packages recommandés](https://encrypted.goog
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

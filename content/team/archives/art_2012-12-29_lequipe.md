@@ -14,7 +14,7 @@ search:
   exclude: true
 ---
 
-# L'équipe de GéoTribu
+# L'équipe de GéoTribu en 2012
 
 :calendar: Date de publication initiale : 29 décembre 2012
 
@@ -43,6 +43,8 @@ Informaticien et géographe de formation, je suis indépendant en base de donné
 ![Julien](https://cdn.geotribu.fr/img/internal/contributeurs/jmou.jfif){: .img-thumbnail-left }
 
 Géographe "sigiste" de formation, je suis en poste auprès de l'IRD à Lima depuis bientôt deux ans, après avoir commencé à travailler dans la zone Océan Indien (Madagascar et surtout La Réunion où j'ai notamment animé le [club géomatique](http://clubgeomatique.agorah.com/clubgeomatique/index.php)) et fait un petit tour sac au dos en Amérique du Sud. Plutôt formé aux solutions propriétaires bureautiques classiques, ma curiosité et mes postes m'amènent vers de nombreux autres domaines, notamment le monde du libre en géomatique et le développement en python, avec lequel j'accouche de petits outils, comme [Metadator](http://www.portailsig.org/content/metadator-creation-automatisee-de-metadonnees). J'exerce une veille technologique élargie à la géographie et à la cartographie, notamment via une [agrégation des principaux flux](https://www.google.com/reader/bundle/user%2F03705632004351862828%2Fbundle%2FLes%20SIG%20sur%20la%20toile) (en [anglais](http://www.google.fr/reader/bundle/user%2F03705632004351862828%2Fbundle%2FGIS%20%28en%29) et [espagnol](http://www.google.fr/reader/bundle/user%2F03705632004351862828%2Fbundle%2FGIS%20%28es%29) également), un [twitter](https://twitter.com/geojulien) et [Google+](https://plus.google.com/101577483589644696143) qui servent les intérêts de GéoTribu depuis un peu plus d'un an.
+
+----
 
 Cette présentation terminée, nous souhaiterions conclure en remerciant les différentes personnes/organismes qui nous motivent et nous aident. Tout d'abord, d'une manière générale, la communauté Open Source qui met à disposition les formidables applications que nous vous présentons. Mais aussi, les associations qui visent à la promotion du logiciel libre comme l'[OSGEO Fr](http://osgeo.asso.fr/) ainsi que celles comme [OSM-Fr](http://openstreetmap.fr/) œuvrant pour l'ouverture des données. Enfin, cette aventure ne serait possible sans le soutien de Laurent Jégou qui nous offre et s'occupe de l'infrastructure informatique nécessaire au fonctionnement de Géotribu. Merci Laurent et surtout nous te souhaitons tout le meilleur pour cette dernière ligne droite d'avant soutenance !
 

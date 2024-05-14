@@ -111,8 +111,6 @@ Pas de souci, j'ai intégré la possibilité de le faire en un clic sur [notre p
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

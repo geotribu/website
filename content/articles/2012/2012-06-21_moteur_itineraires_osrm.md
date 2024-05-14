@@ -125,9 +125,7 @@ Félicitations à toute l'équipe de l'Institut Technologique de Karlsruhe !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->
 
 <!-- Footnotes -->
 [^1]: Geisberger, R., Sanders, P., Schultes, D. and Delling, D. (2008). Contraction hierarchies : Faster and simpler hierarchical routing in road networks. Experimental Algorithms, pp. 319–333. (<http://algo2.iti.kit.edu/schultes/hwy/contract.pdf>)

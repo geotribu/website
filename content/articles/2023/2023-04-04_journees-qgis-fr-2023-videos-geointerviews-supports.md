@@ -68,10 +68,6 @@ S'il y a une chose à retenir c'est que l'organisation de l'événement représe
 
 ----
 
-## Auteurs {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

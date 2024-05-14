@@ -323,8 +323,6 @@ Ah j'oubliais. J'ai fait pas mal d'essais avec les 2 bibliothèques que j'ai sto
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

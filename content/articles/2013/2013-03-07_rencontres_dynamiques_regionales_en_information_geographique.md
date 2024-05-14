@@ -34,6 +34,4 @@ La précédente édition des Rencontres, en juin 2011, avait réuni près de 300
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

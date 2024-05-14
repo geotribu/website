@@ -82,6 +82,4 @@ Au fait, le site dans sa version PC, ça fonctionne bien mieux sur des navigateu
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

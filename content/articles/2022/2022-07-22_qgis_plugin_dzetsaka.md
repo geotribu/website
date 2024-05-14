@@ -140,8 +140,6 @@ A noter qu'il existe aussi d'autres méthodes de calcul (expérimental) du plugi
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/sylvain-kerdreux.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

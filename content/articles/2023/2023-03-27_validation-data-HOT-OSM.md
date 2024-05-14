@@ -198,8 +198,6 @@ Quant aux statistiques elles sont formelles : on passe beaucoup moins de temps Ã
 
 ----
 
-## Autrice
-
---8<-- "content/team/delphine-montagne.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

@@ -112,8 +112,6 @@ Il est également possible d'exploiter le maillage créé pour afficher dans le 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

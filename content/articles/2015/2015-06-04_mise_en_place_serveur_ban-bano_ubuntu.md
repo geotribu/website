@@ -336,6 +336,4 @@ Nous espérons que vous avez apprécié ce contenu. N'hésitez pas à commenter 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/thomas-gratier.md"
+<!-- geotribu:authors-block -->

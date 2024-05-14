@@ -260,6 +260,4 @@ A noter, que j'envisage de suivre la même démarche pour représenter nos itin�
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->

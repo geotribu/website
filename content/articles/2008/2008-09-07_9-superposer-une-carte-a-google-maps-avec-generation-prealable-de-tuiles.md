@@ -194,6 +194,4 @@ Ce tutoriel décrit les étapes pour superposer un fond de carte dans Google Map
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

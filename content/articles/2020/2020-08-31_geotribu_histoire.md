@@ -82,7 +82,7 @@ Mais si récupérer des contenus n'est qu'une question technique (on le verra da
 
 Qu'importe, on a retrouvé le plaisir et pourvu que ça dure !
 
-[Page des contributeur/ices :fontawesome-solid-people-carry-box:](../../team/contributors.md){: .md-button }
+[Page des contributeur/ices :fontawesome-solid-people-carry-box:](../../team/index.md){: .md-button }
 {: align=middle }
 
 ----
@@ -116,9 +116,7 @@ Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [Arnaud]: ../../team/arnaud-vandecasteele.md

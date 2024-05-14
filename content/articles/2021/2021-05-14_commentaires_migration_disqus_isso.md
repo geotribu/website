@@ -166,9 +166,7 @@ C'est beau l'open source :smiling_face_with_3_hearts:.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [Disqus]: https://disqus.com/

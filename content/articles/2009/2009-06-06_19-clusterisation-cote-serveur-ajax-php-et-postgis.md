@@ -614,6 +614,4 @@ Ce tutoriel n'est qu'une méthode parmi d'autres et ne se veut pas la plus optim
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

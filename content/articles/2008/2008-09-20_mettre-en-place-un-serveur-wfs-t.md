@@ -205,6 +205,4 @@ Si vous vous limitez à de l'affichage de données vecteur, GéoServer et MapSer
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

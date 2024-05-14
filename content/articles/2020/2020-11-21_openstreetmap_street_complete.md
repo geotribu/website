@@ -77,9 +77,7 @@ Pour finir, voici une vidéo de l'utilisation (elle date d'avril donc il y a eu 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [ludification]: https://fr.wikipedia.org/wiki/Ludification
