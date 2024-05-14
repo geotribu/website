@@ -71,6 +71,8 @@ Deux méthodes :
 
 En cliquant dessus, le site s'ouvre dans sa propre fenêtre et se comporte comme une application, avec notamment l'accès hors-ligne aux pages déjà consultées avec une connexion.
 
+<!-- geotribu:authors-block -->
+
 <!-- Hyperlinks -->
 
 [application web progressive]: https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps
