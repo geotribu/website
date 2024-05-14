@@ -1,5 +1,5 @@
 ---
-title: "Réaliser des cartes avec Blender"
+title: Réaliser des cartes avec Blender
 subtitle: Blindé jusqu’au relief
 authors:
     - Thomas Szczurek-Gayant
@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-04-07
-description: "Technique permettant de réaliser des cartes de relief avec le logiciel libre 3D Blender, ainsi qu'un petit tutoriel GDAL"
+description: Technique permettant de réaliser des cartes de relief avec le logiciel libre 3D Blender, ainsi qu'un petit tutoriel GDAL.
 icon: simple/blender
 image:
 license: default
@@ -508,4 +508,4 @@ Voici par exemple ce que ça donne lors d'un essai precédent où j'ai passé un
 
 ![render final](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img41_pyrennees_render.png){: .img-center loading=lazy }
 
---8<-- "content/team/thomas-szczurek-gayant.md"
+<!-- geotribu:authors-block -->
