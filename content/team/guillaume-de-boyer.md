@@ -11,9 +11,11 @@ social:
     - mastodon:
         - instance:
         - username:
+    - openstreetmap:
+    - osgeo:
     - twitter:
+    - website:
 ---
-
 
 # Guillaume de Boyer
 

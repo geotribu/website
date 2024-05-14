@@ -11,7 +11,10 @@ social:
     - mastodon:
         - instance:
         - username:
+    - openstreetmap:
+    - osgeo:
     - twitter:
+    - website:
 ---
 
 # Étienne Delay
