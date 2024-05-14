@@ -4,14 +4,17 @@ categories:
     - contributeur
 social:
     - bluesky:
-    - github: https://github.com/jbdesbas
+    - github: jbdesbas
     - gitlab:
     - linkedin:
     - mail: jb.desbas@gmail.com
     - mastodon:
         - instance:
         - username:
+    - openstreetmap:
+    - osgeo:
     - twitter:
+    - website:
 ---
 
 # Jean-Baptiste Desbas

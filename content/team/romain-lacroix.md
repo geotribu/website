@@ -4,14 +4,17 @@ categories:
     - contributeur
 social:
     - bluesky:
-    - github: https://github.com/rxlacroix
+    - github: rxlacroix
     - gitlab:
     - linkedin:
     - mail: romain.lacroix@free.fr
     - mastodon:
         - instance:
         - username:
-    - twitter: https://twitter.com/lacxrx
+    - openstreetmap:
+    - osgeo:
+    - twitter: lacxrx
+    - website:
 ---
 
 # Romain Lacroix

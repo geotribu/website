@@ -11,9 +11,12 @@ social:
     - mastodon:
         - instance:
         - username:
-    - openstreetmap: https://www.openstreetmap.org/user/QualiThyAssessment
+    - openstreetmap: QualiThyAssessment
+    - osgeo:
+    - openstreetmap:
     - osgeo:
     - twitter:
+    - website:
 ---
 
 # Quy Thy Truong
