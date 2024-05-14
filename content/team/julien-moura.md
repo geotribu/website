@@ -11,7 +11,10 @@ social:
     - mastodon:
         - instance: mapstodon.space
         - username: geojulien
+    - openstreetmap: GutsJM
+    - osgeo: geojulien
     - twitter: geojulien
+    - website:
 ---
 
 # Julien Moura
