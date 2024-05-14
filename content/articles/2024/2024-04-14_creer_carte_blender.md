@@ -509,3 +509,5 @@ Voici par exemple ce que ça donne lors d'un essai precédent où j'ai passé un
 ![render final](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img41_pyrennees_render.png){: .img-center loading=lazy }
 
 <!-- geotribu:authors-block -->
+
+{% include "licenses/cc4_by-nc-sa.md" %}
