@@ -106,7 +106,7 @@ def on_page_markdown(
                 # icône
                 item_icon = ""
                 if page.meta.get("icon"):
-                    item_icon = f" :{page.meta.get('icon').replace('/', '-')}: "
+                    item_icon = f" :{page.meta.get('icon').replace('/', '-')}:"
 
                 # hyperlink data
                 list_item_link_data = ""
@@ -122,7 +122,7 @@ def on_page_markdown(
                         list_item_link_data += "<br/><br/>"
                     list_item_link_data += (
                         "<i>Mots-clés : "
-                        f"{' , '.join(escape(page.meta.get('tags'), quote=True))}</i>"
+                        f"{escape(', ', quote=True).join(page.meta.get('tags'))}</i>"
                     )
 
                 with Path(f"content/team/{sluggy(author)}.md").open(
@@ -130,7 +130,7 @@ def on_page_markdown(
                 ) as author_file:
                     author_file.write(articles_headers)
                     author_file.write(
-                        f"\n-{item_icon}[{escape(page.title, quote=True)}](../{page.file.src_uri} '{list_item_link_data}') - _publié le {item_date}_"
+                        f"\n-{item_icon} [{escape(page.title, quote=True)}](../{page.file.src_uri} '{list_item_link_data}') - _publié le {item_date}_"
                     )
 
         # on cherche et remplace la balise de bloc de signature en ignorant la casse
