@@ -6,7 +6,7 @@ categories:
     - article
 comments: true
 date: 2015-01-11
-description: "Lorsque je discute d'OpenStreetMap, pour beaucoup c'est une carte, alors qu'en réalité OSM est un projet collaboratif dont le coeur est la base de données géographiques. La carte résultante n’étant qu'un des nombreux dérivés de cette base."
+description: "Lorsque je discute d'OpenStreetMap, pour beaucoup c'est une carte, rien de plus. Alors qu'en réalité OSM est un projet collaboratif dont le coeur est la base de données géographiques. La carte résultante n’étant qu'un des nombreux dérivés de cette base."
 icon: material/database-marker
 tags:
     - OpenStreetMap
