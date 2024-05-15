@@ -118,7 +118,10 @@ def on_page_markdown(
                         page.meta.get("description"), quote=True
                     )
                 if page.meta.get("tags"):
-                    if page.meta.get("description"):
+                    if (
+                        page.meta.get("description")
+                        and page.meta.get("description") != page.title
+                    ):
                         list_item_link_data += "<br/><br/>"
                     list_item_link_data += (
                         "<i>Mots-clés : "
