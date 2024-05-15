@@ -243,3 +243,6 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
+
+exclude_docs: |
+  toc_nav_ignored/*
