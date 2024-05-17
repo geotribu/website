@@ -62,7 +62,7 @@ Bon allez, on reprend.
 
 ![logo QField cloud](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qfield_cloud.png "logo QField cloud"){: .img-thumbnail-left }
 
-Connaissez-vous [QField](https://qfield.org/) ? C'est comme [David Copperfield](https://fr.wikipedia.org/wiki/David_Copperfield_(illusionniste)) le magicien, sauf que c'est pas de la magie... enfin, si ! C'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
+Connaissez-vous [QField](https://qfield.org/) ? QField c'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
 
 Plus concrètement, il s'agit d'une application mobile de saisie et relevé terrain, hautement compatible avec [QGIS](https://www.qgis.org), permettant de reproduire les paramétrages de saisie et formulaires des couches quasi à l'identique, poussée par [OPENGIS.ch](https://www.opengis.ch/) qu'on remercie pour tout le développement made with :heart:. [Un précédent article](../2022/2022-05-24_releve_terrain_qfield.md) explique plus en détail un processus de relevé grâce à l'appli QField qu'on ne présente dorénavant plus.
 
@@ -352,8 +352,6 @@ Une fois le projet téléchargé dans la liste puis ouvert, c'est parti pour la 
 ![Écran d'un projet QFieldCloud dans QField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qfield_qfc_project.webp){: .img-center loading=lazy }
 
 :sparkles: Magie magie ! :sparkles:
-
-![David CopperQField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/david_copperqfield.webp){: .img-center loading=lazy }
 
 ## Et maintenant ?
 
