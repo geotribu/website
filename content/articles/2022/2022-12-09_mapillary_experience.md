@@ -13,8 +13,8 @@ license: default
 tags:
     - Bash
     - data
-    - OGR
     - Mapillary
+    - OGR
     - SQL
 ---
 

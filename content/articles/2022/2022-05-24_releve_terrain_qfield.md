@@ -11,9 +11,9 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchr
 license: cc4_by-sa
 tags:
     - collecte
+    - Lizmap
     - QField
     - QGIS
-    - Lizmap
 ---
 
 # Relevé terrain avec QField et solutions de synchronisation (hors QField Cloud)

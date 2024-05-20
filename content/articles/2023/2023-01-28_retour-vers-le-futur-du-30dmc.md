@@ -14,8 +14,8 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective
 license: beerware
 tags:
     - 30DayMapChallenge
-    - QGIS
     - OpenSource
+    - QGIS
 ---
 
 # Retour vers le futur du #30DayMapChallenge 2022

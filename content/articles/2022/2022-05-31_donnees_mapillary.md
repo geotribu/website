@@ -14,9 +14,9 @@ tags:
     - Bash
     - cURL
     - data
-    - OGR
     - Mapillary
     - MVT
+    - OGR
     - PostGIS
     - PostgreSQL
     - tuiles vectorielles
