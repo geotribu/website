@@ -85,22 +85,6 @@ Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
 
-!!! info
-    _Penn ar Menez_ c'est le nom d'une ferme bio qui fait du fromage et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Châteaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
-
-```sh
-echo "QFieldCloud meeeeuh" | cowsay
-
- _____________________
-< QFieldCloud meeeeuh >
- ---------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
-
 ### Installations
 
 ![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.png "logo Docker"){: .img-thumbnail-left }
@@ -164,7 +148,7 @@ git clone --recurse-submodules https://github.com/opengisch/qfieldcloud.git
 
 ```sh
 cd qfieldcloud
-git checkout -b v0.24.0
+git checkout v0.26.4
 ```
 
 - copier le fichier `.env.local` vers un fichier `.env` qui va contenir toute la configuration du serveur :
@@ -284,8 +268,8 @@ docker compose up -d --build
 Une fois le certificat généré, valable 3 mois, il nous faut à présent le copier dans la config de QFieldCloud :
 
 ```sh
-sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/privkey.pem ./conf/nginx/certs/${QFIELDCLOUD_HOST}-key.pem
-sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/fullchain.pem ./conf/nginx/certs/${QFIELDCLOUD_HOST}.pem
+sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/privkey.pem ./docker-nginx/certs/${QFIELDCLOUD_HOST}-key.pem
+sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/fullchain.pem ./docker-nginx/certs/${QFIELDCLOUD_HOST}.pem
 ```
 
 Après avoir relancé les services, normalement le serveur doit maintenant être fonctionnel et prêt à l'emploi. Normalement.
