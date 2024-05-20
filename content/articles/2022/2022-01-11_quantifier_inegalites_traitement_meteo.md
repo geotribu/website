@@ -12,8 +12,8 @@ license: default
 robots: index, follow
 tags:
     - météo
-    - télévision
     - R
+    - télévision
 ---
 
 # Comment j'ai quantifié les inégalités de traitement météorologiques entre Brest et Dijon
