@@ -48,10 +48,10 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
 - Dans QGIS, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format CSV qu'on nommera select.csv.
 - On ouvre ce fichier dans LibreOffice Calc (ou logiciel propriétaire équivalent) et on supprime l'entête des colonnes ainsi que toutes les colonnes sauf celle contenant le nom des tuiles.
 - Dans la colonne adjacente on écrit cette formule :
-  - Libre office :
-  - =CONCAT(A1;".asc")
-  - Excel :
-  - =CONCATENER(A1;".asc")
+    - Libre office :
+    - =CONCAT(A1;".asc")
+    - Excel :
+    - =CONCATENER(A1;".asc")
 - On applique la formule sur l'ensemble de la colonne et on remplace par les valeurs "en dur " avec un collage spécial
 - Puis on supprime la colonne d'origine.
 - Enfin on change à la brutasse l'extension du fichier en TXT ce qui nous donne une fois ouvert :
@@ -325,7 +325,7 @@ Et on modifie notre diagramme pour qu'il ressemble à ceci :
 Color vers height and displacement vers displacement. Ceci dit à Blender "regarde la couleur (clair ou sombre) et transforme ça en déplacement".
 
 !!! tip "Changer l'espace colorimétrique"
-  Tant que nous y sommes, changez le `color space` de votre texture MNT de `sRGB` à `non-color`. 
+  Tant que nous y sommes, changez le `color space` de votre texture MNT de `sRGB` à `non-color`.
   Dans la majorité des cas, les textures sont utilisées pour appliquer une image sur des objets, mais ce n'est pas notre cas. Si on laisse en `sRGB`, Blender va appliquer une courbe de correction sur notre couleur de MNT au lieu d'attribuer une hauteur de relief de façon linéaire en fonction du niveau de gris.
 
 Si vous effectuez un rendu maintenant vous constaterez que pas grand-chose n'a changé. En effet il faut demander à Blender d'arrêter de bump mapper et de modifier réellement steuplé.
