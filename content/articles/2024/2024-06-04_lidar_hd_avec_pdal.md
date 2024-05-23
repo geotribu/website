@@ -34,7 +34,8 @@ tags:
 
 Le relevé LiDAR (Light Detection and Ranging) est une technique de plus en plus utilisée pour la création de modèles numériques de précision. Cependant, les données LiDAR de part leur volumétrie et leurs spécificités, peuvent être difficiles à manipuler et à interpréter, en particulier lorsqu'il s'agit de distinguer le sol et le sursol.
 
-Heureusement, des outils tels que [pdal](https://pdal.io/en/2.7-maintenance/) (Point Data Abstraction Library) et [gdal](https://gdal.org/index.html) (Geospatial Data Abstraction Library) peuvent aider à traiter et à analyser les données LiDAR pour créer des MNT ou des MNS. Dans cet article, je vais vous expliquer comment j'ai utilisé pdal et gdal pour distinguer le sol et le sursol à partir des données LiDAR brutes de l'IGN, et fournir des exemples de code pour vous aider à démarrer dans la manipulation de ces données.
+Heureusement, des outils tels que [PDAL](https://pdal.io/) (_Point Data Abstraction Library_) et [GDAL](https://gdal.org/) (_Geospatial Data Abstraction Library_) aident à traiter et à analyser les données LiDAR pour créer des MNT ou des MNS.  
+Dans cet article, je vais vous expliquer comment j'ai utilisé ces deux outils pour distinguer le sol et le sursol à partir des données LiDAR brutes de l'IGN, et fournir des exemples de code pour vous aider à démarrer dans la manipulation de ces données.
 
 !!! info
     La rédaction de cette article a été réalisée avant la livraison des données [LiDAR HD](https://geoservices.ign.fr/lidarhd) classifiées par l'IGN.
