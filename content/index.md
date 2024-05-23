@@ -1,16 +1,16 @@
 ---
-title: "Page d'accueil"
-date: 2020-03-20 10:20
-description: "Page d'accueil de Geotribu, site indépendant de veille sur la géomatique libre. Articles, tutoriels et revues de presse (#GeoRDP) sur l'information géographique."
+title: Page d'accueil
+date: 2020-03-20
+description: Page d'accueil de Geotribu, site indépendant de veille sur la géomatique libre. Articles, tutoriels et revues de presse (#GeoRDP) sur l'information géographique.
+image: https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg
 tags:
-  - Geotribu
+    - Geotribu
 hide:
-  - navigation
-  - toc
+    - navigation
+    - toc
 template: home.html
-# theme customizations
 search:
-  exclude: true
+    exclude: true
 ---
 
 # Bienvenue

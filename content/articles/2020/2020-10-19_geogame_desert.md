@@ -1,14 +1,14 @@
 ---
-title: "Privé de désert : le géogame inédit"
+title: 'Privé de désert : le géogame inédit'
 authors:
     - Jérémie ORY
     - Julien MOURA
 categories:
     - article
 comments: true
-date: "2020-10-22 10:20"
-description: "En restaurant les géogames de Geotribu, des mini-jeux sur la culture générale en cartographie et géomatique, j'ai trouvé un jeu qui n'avait jamais été publié qui consiste à associer les déserts à leurs continents. Saurez-vous ne pas finir privé/e de désert ?"
-image: "https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette.png"
+date: 2020-10-22
+description: En restaurant les géogames de Geotribu, des mini-jeux sur la culture générale en cartographie et géomatique, j'ai trouvé un jeu qui n'avait jamais été publié qui consiste à associer les déserts à leurs continents. Saurez-vous ne pas finir privé/e de désert ?
+image: https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette.png
 tags:
     - continents
     - déserts
@@ -23,7 +23,7 @@ tags:
 
 [![icône Geogames Geotribu](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette_200x200.png "Géogames Geotribu"){: .img-thumbnail-left }](https://cdn.geotribu.fr/img/geogames/globe_jeu_video_manette.png)
 
-Ecartés lors de la phase de résurrection de Geotribu, les Géogames sont désormais de nouveau en ligne. Basés sur une petite [bibliothèque JavaScript Quiz Script](https://www.felix-riesterer.de/main/seiten/quiz-script.html) et conçus par [Jérémie](../../team/jory.md), les jeux sont construits autour de la thématique de la cartographie et de la géomatique (évidemment). A part faire en sorte qu'ils soient de nouveau jouables, je n'ai rien touché, donc ambiance vintage assurée :wink: !
+Ecartés lors de la phase de résurrection de Geotribu, les Géogames sont désormais de nouveau en ligne. Basés sur une petite [bibliothèque JavaScript Quiz Script](https://www.felix-riesterer.de/main/seiten/quiz-script.html) et conçus par [Jérémie](../../team/jeremie-ory.md), les jeux sont construits autour de la thématique de la cartographie et de la géomatique (évidemment). A part faire en sorte qu'ils soient de nouveau jouables, je n'ai rien touché, donc ambiance vintage assurée :wink: !
 
 Au passage, je suis tombé sur un sixième jeu qui n'avait pas été publié à l'époque. Un inédit ! Il s'agit ici d'associer les différents déserts au bon continent.
 
@@ -45,12 +45,4 @@ Bon jeu et bonne nostalgie :smile:.
 
 ----
 
-## Auteurs
-
-### Conception initiale
-
---8<-- "content/team/jory.md"
-
-### Restauration
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->

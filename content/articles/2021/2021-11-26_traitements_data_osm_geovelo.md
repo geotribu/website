@@ -1,17 +1,17 @@
 ---
-title: "Le traitement des données OSM chez Geovelo"
+title: Le traitement des données OSM chez Geovelo
 authors:
-  - Samuel Deschamps-Berger
+    - Samuel Deschamps-Berger
 categories:
-  - article
+    - article
 comments: true
-date: 2021-11-26 08:00
-description: "Etat des lieux des traitements OSM de geovelo"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/visuels_app_geovelo.jpg"
+date: 2021-11-26
+description: Etat des lieux des traitements OSM de geovelo
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/geovelo_traitements_data_osm/visuels_app_geovelo.jpg
 license: default
 tags:
-  - Geovelo
-  - OpenStreetMap
+    - Geovelo
+    - OpenStreetMap
 ---
 
 # Le traitement des données OSM chez Geovelo
@@ -172,6 +172,4 @@ Bonus ! La station de travail de [Simon](https://twitter.com/c_geovelo), notre c
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/sdes.md"
+<!-- geotribu:authors-block -->

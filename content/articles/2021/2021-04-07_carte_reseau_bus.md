@@ -1,14 +1,14 @@
 ---
-title: "Représentation d'un réseau de bus"
+title: Représentation d'un réseau de bus
 authors:
     - Florian BORET
 categories:
     - article
     - tutoriel
 comments: true
-date: 2021-04-07 14:14
-description: "Représenter un réseau de bus et gérer la superposition des lignes"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/reseau_bus_qgis/reseau_bus_osm.png"
+date: 2021-04-07
+description: Représenter un réseau de bus et gérer la superposition des lignes
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/reseau_bus_qgis/reseau_bus_osm.png
 tags:
     - bus
     - PostGIS
@@ -37,7 +37,7 @@ Après avoir parcouru internet, je suis tombé sur une solution apportée par un
 
 Tout d'abord, créer une table dans PostgreSQL pour dessiner le réseau de bus :
 
-```sql
+```sql title="Création de la table des lignes de bus" linenums="1"
 -- Création de la table bus_ligne
 CREATE TABLE bus.bus_lignes
 (
@@ -67,7 +67,7 @@ Maintenant que les tronçons des lignes de bus ont été dessinés proprement (a
 
 Pour ce faire, vous devez utiliser cette requête :
 
-```sql
+```sql title="Création de la table des points de rencontre" linenums="1"
 -- Suppression de la table si elle existe
 DROP TABLE IF EXISTS bus.bus_lignes_pt;
 -- Création de la table
@@ -109,7 +109,7 @@ FROM
 
 A partir des points qu'on a déterminé, on peut découper les lignes de bus en tronçons et en fonction du nombre de superpositions attribuer une valeur de décalage.
 
-```sql
+```sql title="Découper les lignes de bus en tronçons" linenums="1"
 -- Suppression de la table si elle existe
 DROP TABLE IF EXISTS bus.bus_lignes_offset;
 -- Création de la table
@@ -174,7 +174,7 @@ WINDOW w_c AS (PARTITION BY pt_from, pt_to ORDER BY line_id, loc_from));
 
 La dernière étape consiste à compter le nombre de chevauchements pour chacun des tronçons.
 
-```sql
+```sql title="Compter les chevauchements" linenums="1"
 -- Suppression de la table si elle existe
 DROP TABLE IF EXISTS bus.bus_lignes_offset_count;
 -- Création de la table
@@ -222,7 +222,7 @@ Pour terminer, vous pouvez ajouter la dernière table créée dans QGIS pour tra
 1. Faire un style catégorisé sur le numéro de ligne et attribuer une couleur différente par ligne
 2. Définir l'épaisseur des tronçons pour chacune des lignes
 
-    ```sql
+    ```sql title="Définir l'épaisseur des tronçons" linenums="1"
     CASE
         WHEN "count" = 2 THEN 1.2
         WHEN "count" > 2 THEN 0.8
@@ -232,7 +232,7 @@ Pour terminer, vous pouvez ajouter la dernière table créée dans QGIS pour tra
 
 3. Définir le décalage pour chacune des lignes
 
-    ```sql
+    ```sql title="Définir le décalage des tronçons" linenums="1"
     CASE
         WHEN "count" = 2 THEN (("offset_nr"-1)*1.2)-((("count"-1)/2)*1.2)
         WHEN "count" > 2 THEN (("offset_nr"-1)*0.8)-((("count"-1)/2)*0.8)
@@ -260,6 +260,4 @@ A noter, que j'envisage de suivre la même démarche pour représenter nos itin�
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fbor.md"
+<!-- geotribu:authors-block -->

@@ -1,12 +1,12 @@
 ---
-title: "9. Superposer une carte à Google Maps avec génération préalable de tuiles"
+title: 9. Superposer une carte à Google Maps avec génération préalable de tuiles
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-09-07 10:20
-description: "9. Superposer une carte à Google Maps avec génération préalable de tuiles"
+date: 2008-09-07
+description: 9. Superposer une carte à Google Maps avec génération préalable de tuiles
 tags:
     - Google Maps
     - mapcruncher
@@ -194,6 +194,4 @@ Ce tutoriel décrit les étapes pour superposer un fond de carte dans Google Map
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

@@ -93,6 +93,4 @@ Je profite de ce post pour vous annoncer que je quitterai bientôt mon île pour
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

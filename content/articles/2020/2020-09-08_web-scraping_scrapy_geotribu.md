@@ -1,14 +1,14 @@
 ---
-title: "Le web-scraping avec Scrapy"
+title: Le web-scraping avec Scrapy
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 comments: true
-date: "2020-09-08 10:20"
-description: "Utiliser le web-scraping (Scrapy) pour récupérer les anciens contenus de Geotribu depuis l'Internet Archive."
-image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
+date: 2020-09-08
+description: Utiliser le web-scraping (Scrapy) pour récupérer les anciens contenus de Geotribu depuis l'Internet Archive.
+image: https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png
 tags:
     - Geotribu
     - Histoire
@@ -191,9 +191,7 @@ Maintenant on sait comment moissonner un site web, en l'occurence l'ancien Geotr
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [Scrapy]: https://scrapy.org/

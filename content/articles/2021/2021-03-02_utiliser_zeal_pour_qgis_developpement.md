@@ -5,9 +5,10 @@ authors:
 categories:
     - article
 comments: true
-date: "2021-03-02 10:20"
-description: "Blog-note de développement sur QGIS : présentation de Zeal qui permet de disposer d'un naviguer hors-ligne dans les documentations techniques de QGIS et PyQGIS."
-image: "https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png"
+date: 2021-03-02
+description: "Blog-note de développement sur QGIS : présentation de Zeal qui permet de naviguer hors-ligne dans les documentations techniques de QGIS, PyQGIS, PostGIS etc."
+icon: material/bookshelf
+image: https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png
 tags:
     - développement
     - documentation
@@ -18,7 +19,7 @@ tags:
 
 # Utiliser Zeal pour développer sur QGIS
 
-:calendar: Date de publication initiale : 2 mars 2021
+:calendar: Date de publication initiale :  {{ page.meta.date | date_localized }}
 
 ![logo Zeal Docs](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/zeal.png "logo Zeal Docs"){: .img-thumbnail-left }
 
@@ -157,9 +158,7 @@ En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 <!-- Footnotes reference -->
 [^1]: traduction de *framework* recommandée par l'Office québécois de la langue française. Source : [Wikipedia](https://fr.wikipedia.org/wiki/Framework#Traduction_fran%C3%A7aise)

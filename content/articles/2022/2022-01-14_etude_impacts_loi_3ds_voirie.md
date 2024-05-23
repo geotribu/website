@@ -1,13 +1,13 @@
 ---
-title: "3DS : mesurer l'impact du transfert des Routes Nationales aux Départements"
+title: '3DS : mesurer l''impact du transfert des Routes Nationales aux Départements'
 authors:
     - Michaël GALIEN
 categories:
     - article
 comments: true
-date: "2022-01-14 10:00"
-description: "Etude d'impacts du déclassement de la voirie nationale aux Départements dans le cadre de la loi 3DS ; loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png"
+date: 2022-01-14
+description: Etude d'impacts du déclassement de la voirie nationale aux Départements dans le cadre de la loi 3DS ; loi relative à la Différenciation, la Décentralisation, la Déconcentration et portant diverses mesures de Simplification de l'action publique locale.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/etude_impacts_loi_3ds_voirie/etude_impacts_loi_3ds_voirie-logo.png
 tags:
     - loi 3DS
     - PostGIS
@@ -307,6 +307,4 @@ A noter que les requêtes peuvent facilement être adaptées pour les autres Dé
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mgal.md"
+<!-- geotribu:authors-block -->

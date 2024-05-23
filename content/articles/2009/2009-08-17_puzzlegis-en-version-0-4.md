@@ -31,6 +31,4 @@ Néanmoins, j'avoue être un peu déçu par cette nouvelle version. En effet, d�
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

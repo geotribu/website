@@ -53,6 +53,4 @@ Et voilà ! Quelques longues minutes plus tard, vous êtes en possession d'un no
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

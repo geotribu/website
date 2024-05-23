@@ -1,12 +1,12 @@
 ---
-title: "4. Marqueurs et événements"
+title: 4. Marqueurs et événements
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-11-02 10:20
-description: "4. Marqueurs et événements"
+date: 2008-11-02
+description: 4. Marqueurs et événements
 image: ''
 license: default
 robots: index, follow
@@ -219,6 +219,4 @@ La gallerie de démonstration - [http://code.google.com/apis/earth/documentation
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

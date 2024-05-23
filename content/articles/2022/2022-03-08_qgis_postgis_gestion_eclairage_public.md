@@ -1,14 +1,14 @@
 ---
-title: "Éclairage Public - Gestion et visualisation du réseau avec QGIS et PostGIS"
+title: Éclairage Public - Gestion et visualisation du réseau avec QGIS et PostGIS
 authors:
     - Stéphane RITZENTHALER
 categories:
     - article
 comments: true
-date: "2022-03-08 10:30"
-description: "Création d'une base de données PostgreSQL/PostGIS pour la visualisation et la gestion du réseau d'éclairage public sur QGIS par une collectivité."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png"
-license: "CC-BY-SA"
+date: 2022-03-08
+description: Création d'une base de données PostgreSQL/PostGIS pour la visualisation et la gestion du réseau d'éclairage public sur QGIS par une collectivité.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png
+license: CC-BY-SA
 tags:
     - éclairage public
     - PostGIS
@@ -115,8 +115,6 @@ Merci à la Communauté de Communes Thann-Cernay grâce à qui nous avons pu fai
 
 ----
 
-## Auteur
-
---8<-- "content/team/srit.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

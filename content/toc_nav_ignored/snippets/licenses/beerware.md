@@ -5,7 +5,7 @@ Ce contenu est sous licence [Beerware (Révision 42)](https://fr.wikipedia.org/w
 Les médias d'illustration sont potentiellement soumis à d'autres conditions d'utilisation.
 
 <!-- markdownlint-disable MD046 -->
-??? quote "Détails"
+??? quote "Réutiliser, citer l'article"
     Tant que vous conservez cette licence :
 
     * vous pouvez faire ce que vous voulez de ce contenu

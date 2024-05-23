@@ -1,12 +1,12 @@
 ---
-title: "Diagramme des classes (UML) d'OpenLayers"
+title: Diagramme des classes (UML) d'OpenLayers
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-09-18 10:20
-description: "Diagramme des classes (UML) d'OpenLayers"
+date: 2008-09-18
+description: Diagramme des classes (UML) d'OpenLayers
 tags:
     - OpenLayers
     - diagramme
@@ -25,6 +25,4 @@ Merci à Emanuel Schütze pour ce [diagramme des classes de la librairie OpenLay
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

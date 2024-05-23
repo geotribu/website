@@ -1,12 +1,12 @@
 ---
-title: "2. Ajoutons quelques contrôles"
+title: 2. Ajoutons quelques contrôles
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-11-02 10:20
-description: "2. Ajoutons quelques contrôles"
+date: 2008-11-02
+description: 2. Ajoutons quelques contrôles
 image: ''
 license: default
 robots: index, follow
@@ -105,6 +105,4 @@ L'utilisation des boutons de navigation est exactement la même que le logiciel 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

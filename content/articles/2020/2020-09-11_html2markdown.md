@@ -1,14 +1,14 @@
 ---
-title: "Du HTML en Markdown (et vice-versa)"
+title: Du HTML en Markdown (et vice-versa)
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 comments: true
-date: "2020-09-14 10:20"
-description: "Convertir les contenus récupérés de l'ancien site de Geotribu en Markdown (via markdownify) : lingua franca du contenu web 2020."
-image : "https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png"
+date: 2020-09-14
+description: 'Convertir les contenus récupérés de l''ancien site de Geotribu en Markdown (via markdownify) : lingua franca du contenu web 2020.'
+image: https://cdn.geotribu.fr/img/tuto/webscraping/web_scraping.png
 tags:
     - BeautifulSoup
     - Geotribu
@@ -165,9 +165,7 @@ graph TD
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [Markdown]: https://fr.wikipedia.org/wiki/Markdown

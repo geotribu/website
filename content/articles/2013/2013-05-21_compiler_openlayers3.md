@@ -88,6 +88,4 @@ Passons maintenant a la compilation de la documentation. Cela se fait toujours a
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

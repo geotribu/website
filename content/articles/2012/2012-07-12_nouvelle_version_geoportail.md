@@ -36,6 +36,4 @@ Quoi qu'il en soit, c'est du beau boulot et je dois saluer l'effort porté sur l
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

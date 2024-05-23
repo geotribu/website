@@ -1,12 +1,12 @@
 ---
-title: "Utiliser un SLD pour filtrer un flux WMS depuis OpenLayers"
+title: Utiliser un SLD pour filtrer un flux WMS depuis OpenLayers
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-10-16 10:20
-description: "Utiliser un SLD pour filtrer un flux WMS depuis OpenLayers"
+date: 2008-10-16
+description: Utiliser un SLD pour filtrer un flux WMS depuis OpenLayers
 tags:
     - OpenLayers
     - WMS
@@ -82,6 +82,4 @@ La carte ci-dessous, est une représentation mondiale du nombre d'habitant par K
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

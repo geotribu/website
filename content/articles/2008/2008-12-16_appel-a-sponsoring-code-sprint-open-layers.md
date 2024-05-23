@@ -1,12 +1,12 @@
 ---
-title: "Appel à sponsoring - Code Sprint Open Layers"
+title: Appel à sponsoring - Code Sprint Open Layers
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2008-12-16 10:20
-description: "Appel à sponsoring - Code Sprint Open Layers"
+date: 2008-12-16
+description: Appel à sponsoring - Code Sprint Open Layers
 tags:
     - OpenLayers
 ---
@@ -31,6 +31,4 @@ Plus d'infos sur :
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -1,12 +1,12 @@
 ---
-title: "GeoExt, le mariage de l'IHM et de la cartographie"
+title: GeoExt, le mariage de l'IHM et de la cartographie
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2008-12-11 10:20
-description: "GeoExt, le mariage de l'IHM et de la cartographie"
+date: 2008-12-11
+description: GeoExt, le mariage de l'IHM et de la cartographie
 tags:
     - GeoExt
     - Ext
@@ -31,6 +31,4 @@ Néanmoins, si GeoExt rencontre le même succès qu'OpenLayers et EXT celle-ci d
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

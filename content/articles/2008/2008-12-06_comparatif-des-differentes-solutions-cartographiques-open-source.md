@@ -1,12 +1,12 @@
 ---
-title: "Comparatif des différentes solutions cartographiques Open-Source"
+title: Comparatif des différentes solutions cartographiques Open-Source
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2008-12-06 10:20
-description: "Comparatif des différentes solutions cartographiques Open-Source"
+date: 2008-12-06
+description: Comparatif des différentes solutions cartographiques Open-Source
 tags:
     - open source
 ---
@@ -29,6 +29,4 @@ Merci pour cette nouvelle ressource qui prouve que l'Open-Source n'est pas seule
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

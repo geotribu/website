@@ -53,6 +53,4 @@ Notre petit tour des applications [OpenStreetMap](https://www.openstreetmap.org/
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

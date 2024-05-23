@@ -1,12 +1,12 @@
 ---
-title: "Documentation française de PyWPS"
+title: Documentation française de PyWPS
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-09-28 10:20
-description: "Documentation française de PyWPS"
+date: 2008-09-28
+description: Documentation française de PyWPS
 tags:
     - PyWPS
 ---
@@ -482,6 +482,4 @@ Traduction réalisée par Van De Casteele Arnaud le 2009-09-28
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

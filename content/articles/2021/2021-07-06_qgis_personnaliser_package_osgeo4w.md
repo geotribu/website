@@ -1,14 +1,14 @@
 ---
-title: "Préconfigurer QGIS en entreprise avec OSGEO4W"
+title: Préconfigurer QGIS en entreprise avec OSGEO4W
 authors:
     - Régis HAUBOURG
 categories:
     - article
     - tutoriel
 comments: true
-date: "2021-07-06 10:20"
-description: "vous voulez contrôler l'interface et les paramètres de QGIS dans votre organisation. Ne pas infliger à vos utilisateurs de trifouiller les réglages du proxy, ou connaître l'adresse IP des serveurs PostGIS ? Suivez le guide pour industrialiser votre installation personnalisée de QGIS."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png"
+date: 2021-07-06
+description: vous voulez contrôler l'interface et les paramètres de QGIS dans votre organisation. Ne pas infliger à vos utilisateurs de trifouiller les réglages du proxy, ou connaître l'adresse IP des serveurs PostGIS ? Suivez le guide pour industrialiser votre installation personnalisée de QGIS.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png
 license: default
 tags:
     - configuration
@@ -324,8 +324,6 @@ Maintenant, à vous de jouer, et pensez à remonter toute anomalie ou améliorat
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/rha.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

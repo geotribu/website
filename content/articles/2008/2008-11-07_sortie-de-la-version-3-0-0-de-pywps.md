@@ -1,12 +1,12 @@
 ---
-title: "Sortie de la version 3.0.0 de PyWPS"
+title: Sortie de la version 3.0.0 de PyWPS
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2008-11-07 10:20
-description: "Sortie de la version 3.0.0 de PyWPS"
+date: 2008-11-07
+description: Sortie de la version 3.0.0 de PyWPS
 tags:
     - Python
     - PyWPS
@@ -35,6 +35,4 @@ Vous pouvez vous rendre directement sur le site à l'adresse suivante : [PyWPS](
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

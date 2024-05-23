@@ -1,14 +1,14 @@
 ---
-title: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
+title: Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque
 authors:
     - Florian Boret
 categories:
     - article
     - tutoriel
 comments: true
-date: 2021-10-05 14:20
-description: "Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/osm_sig.png"
+date: 2021-10-05
+description: Intégrer les données OpenStreetMap dans son SIG pour s'engager dans un processus de contribution réciproque
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/lien_osm_sig/osm_sig.png
 license: default
 tags:
     - Bash
@@ -64,7 +64,7 @@ graph TD;
 
 Pour télécharger les données OpenStreetMap depuis le site [Geofabrik](https://download.geofabrik.de/europe/france.html), j'utilise cURL :
 
-```bash
+```bash title="Télécharger les données OpenStreetMap" linenums="1"
 # SUPPRESSION DU FICHIER SI IL EXISTE
 rm './data_in/LANGUEDOC_ROUSSILLON.pbf'
 # TELECHARGEMENT ET RENOMMAGE
@@ -77,7 +77,7 @@ Avant de se lancer, il est bon de paramétrer le fichier de configuration que vo
 
 Voici le fichier `config.env` à adapter :
 
-```ini
+```ini title="Environnement de travail" linenums="1"
 # REPERTOIRE DE TRAVAIL
 REPER='/Users/'
 
@@ -119,7 +119,7 @@ Pour la suite des opérations, j'utilise [ogr2ogr](https://gdal.org/programs/ogr
 
 Voici les [tags à ajouter pour les composteurs](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Drecycling) :
 
-```ini
+```ini title="osmconf.ini" linenums="1"
 # keys to report as OGR fields
 attributes=amenity,recycling:organic
 ```
@@ -129,7 +129,7 @@ attributes=amenity,recycling:organic
 
 Maintenant que le fichier de configuration est paramétré, on va passer au script qui va nous permettre d'extraire la donnée d'OpenStreetMap pour ensuite le mettre en forme et l'intégrer dans PostgreSQL :
 
-```bash
+```bash title="Extraction des données" linenums="1"
 # LECTURE DU FICHIER DE CONFIGURATION
 . ./config.env
 #------------------------------------------------------------------------------------------------------------
@@ -171,7 +171,7 @@ Après avoir intégré les données OpenStreetMap dans PostgreSQL, il est mainte
 
 Après avoir créé une colonne `id_osm` dans ma table des composteurs, on va lancer la requête pour renseigner l'identifiant OSM dans la table des composteurs, il sera donc stocké en dur.
 
-```sql
+```sql title="Association OSM et données SIG" linenums="1"
 -- On désactive le trigger permettant de renseigner la date de mise à jour
 ALTER TABLE dechet.composteurs DISABLE TRIGGER set_timestamp_update;
 
@@ -208,7 +208,7 @@ A ce stade, on peut d'ores et déjà :
 
 Afin de visualiser plus rapidement, les lacunes de notre SIG et celles d'OpenStreetMap, il est possible de créer une vue dans PostgreSQL pour catégoriser les actions à réaliser à la fois en interne et dans OpenStreetMap.
 
-```sql
+```sql title="Différences entre les données" linenums="1"
 CREATE OR REPLACE VIEW dechet.v_composteurs_comparaison_osm
  AS
  SELECT row_number() OVER () AS id,
@@ -250,7 +250,7 @@ Voici un autre exemple avec des données sur le patrimoine :
 
 Vous l'avez compris la mise à jour de notre `id_osm` ne se fait qu'après l'intégration des données OpenStreetMap actualisées mais pour gérer les actions réalisées par les utilisateurs de notre base de données interne nous utilisons un *trigger* afin de mettre à jour l'`id_osm` à une entité modifiée ou ajoutée. Ce *trigger* utilise la même définition que la requête SQL lancée après l'intégration des données OSM.
 
-```sql
+```sql title="Récupération de l'id_osm" linenums="1"
 CREATE OR REPLACE FUNCTION dechet.trigger_set_openstreetmap_composteurs()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -283,8 +283,6 @@ Après la phase de mise en œuvre et d'état des lieux sur le territoire, nous a
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fbor.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

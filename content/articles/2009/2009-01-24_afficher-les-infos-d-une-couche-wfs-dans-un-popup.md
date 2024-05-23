@@ -1,12 +1,12 @@
 ---
-title: "Afficher les infos d'une couche WFS dans un popup"
+title: Afficher les infos d'une couche WFS dans un popup
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-01-24 10:20
-description: "Afficher les infos d'une couche WFS dans un popup"
+date: 2009-01-24
+description: Afficher les infos d'une couche WFS dans un popup
 tags:
     - OpenLayers
     - WFS
@@ -118,6 +118,4 @@ function popUP(e) {
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

@@ -238,6 +238,4 @@ Au-delà de notre "petit" test, lecteur de géotribu, avez-vous déjà essayé c
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

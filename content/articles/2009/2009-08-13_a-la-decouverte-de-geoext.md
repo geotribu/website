@@ -1,12 +1,12 @@
 ---
-title: "A la découverte de GeoExt"
+title: A la découverte de GeoExt
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-08-13 10:20
-description: "A la découverte de GeoExt"
+date: 2009-08-13
+description: A la découverte de GeoExt
 tags:
     - ExtJS
     - GeoExt
@@ -313,6 +313,4 @@ J'espère que ce petit tour d'horizon de GeoExt vous donnera envie de continuer 
 
 ----
 
-## Auteur
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

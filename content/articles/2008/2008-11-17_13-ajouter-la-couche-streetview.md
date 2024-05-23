@@ -1,12 +1,12 @@
 ---
-title: "13. Ajouter la couche StreetView"
+title: 13. Ajouter la couche StreetView
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-11-17 10:20
-description: "13. Ajouter la couche StreetView"
+date: 2008-11-17
+description: 13. Ajouter la couche StreetView
 image: ''
 license: default
 robots: index, follow
@@ -90,6 +90,4 @@ Les méthodes relatives à StreetView commencent ici : [http://code.google.com/a
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

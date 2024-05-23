@@ -32,6 +32,4 @@ Pour ceux qui ne pourront s'y rendre, rassurez-vous nous vous ferons un récapit
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

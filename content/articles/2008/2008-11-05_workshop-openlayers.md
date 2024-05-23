@@ -1,12 +1,12 @@
 ---
-title: "WorkShop OpenLayers"
+title: WorkShop OpenLayers
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2008-11-05 10:20
-description: "WorkShop OpenLayers"
+date: 2008-11-05
+description: WorkShop OpenLayers
 tags:
     - OpenLayers
 ---
@@ -28,6 +28,4 @@ Il ne vous reste plus qu'a vous lancer à vos claviers et (re)découvrir cette m
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

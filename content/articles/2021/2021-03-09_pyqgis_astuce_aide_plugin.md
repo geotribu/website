@@ -1,14 +1,14 @@
 ---
-title: "Afficher facilement l'aide de son plugin QGIS"
+title: Afficher facilement l'aide de son plugin QGIS
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 comments: true
-date: "2021-03-09 10:20"
-description: "Petite astuce dans le développement de plugins QGIS : rediriger facilement l'utilisateur final vers la documentation en ligne."
-image: "https://cdn.geotribu.fr/img/tuto/qgis_plugin_show_help/documentation_le-chat.jpg"
+date: 2021-03-09
+description: 'Petite astuce dans le développement de plugins QGIS : rediriger facilement l''utilisateur final vers la documentation en ligne.'
+image: https://cdn.geotribu.fr/img/tuto/qgis_plugin_show_help/documentation_le-chat.jpg
 tags:
     - documentation
     - help
@@ -159,9 +159,7 @@ C'est pas cher payé pour orienter facilement vos utilisateur/ices vers la docum
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 <!-- Footnotes reference -->
 [^1]: [**R**épertoire **O**pérationnel des **M**étiers et des **E**mplois](https://fr.wikipedia.org/wiki/R%C3%A9pertoire_op%C3%A9rationnel_des_m%C3%A9tiers_et_des_emplois). En savoir plus sur l'historique de création de cette fiche pour le domaine de la géomatique, voir [la démarche métier sur GeoRezo](https://georezo.net/wiki/main:formetiers:dem_metiers/).

@@ -1,13 +1,13 @@
 ---
-title: "A la redécouverte de QGIS 0.x"
+title: A la redécouverte de QGIS 0.x
 authors:
     - Julien MOURA
 categories:
     - article
 comments: true
-date: "2021-10-31 10:20"
-description: "Tiens et si on installait QGIS 0.9 Ganymède en 2021 et qu'on essayait de faire une carte ? Petit voyage dans le temps."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9_ganymede_splash.png"
+date: 2021-10-31
+description: Tiens et si on installait QGIS 0.9 Ganymède en 2021 et qu'on essayait de faire une carte ? Petit voyage dans le temps.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9_ganymede_splash.png
 tags:
     - Halloween
     - QGIS
@@ -119,8 +119,6 @@ Un participant de la formation a tenu à montrer que MapInfo 1998 tournait égal
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

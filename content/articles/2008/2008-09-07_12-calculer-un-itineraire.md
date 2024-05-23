@@ -1,12 +1,12 @@
 ---
-title: "12. Calculer un itinéraire"
+title: 12. Calculer un itinéraire
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-09-07 10:20
-description: "12. Calculer un itinéraire"
+date: 2008-09-07
+description: 12. Calculer un itinéraire
 tags:
     - Google Maps
     - itinéraire
@@ -108,6 +108,4 @@ De la même manière que le géocodage, le calcul d'un itinéraire se fait de fa
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

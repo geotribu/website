@@ -1,20 +1,20 @@
 ---
-title: "Portails d'accès aux données Sentinel, 'the road so far'"
-subtitle: "Accès aux données Copernicus et Sentinel"
+title: Portails d'accès aux données Sentinel, 'the road so far'
+subtitle: Accès aux données Copernicus et Sentinel
 authors:
     - Nicolas DAVID
 categories:
     - article
 comments: true
-date: "2023-02-28 09:00"
-description: "Historique des portails d'accès aux données Sentinel en Europe et en France et description de leur grandes fonctionnalités"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"
+date: 2023-02-28
+description: Historique des portails d'accès aux données Sentinel en Europe et en France et description de leur grandes fonctionnalités
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png
 license: beerware
 robots: index, follow
 tags:
     - open data
     - OSO
-    - PEPS  
+    - PEPS
     - satellite
     - Sentinel-2
     - télédétection
@@ -210,6 +210,4 @@ Pour avoir une liste plus exhaustive des différents portails et des outils d'ac
 
 Et si vous vous demandez si cela est vraiment bien raisonnable de devoir avoir 42 outils différents de téléchargement de données selon les portails d'accès utilisés alors vous serez sûrement intéressés par l'outil [EODAG](https://eodag.readthedocs.io/en/stable/) développé en open-source par la société [C.S Group](https://www.csgroup.eu/en/).
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/ndav.md"
+<!-- geotribu:authors-block -->

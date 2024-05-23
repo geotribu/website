@@ -1,13 +1,13 @@
 ---
-title: "Publication d'un site avec les icônes QGIS"
-subtitle: "Et tout totomatique svp !"
+title: Publication d'un site avec les icônes QGIS
+subtitle: Et tout totomatique svp !
 authors:
     - Julien MOURA
 categories:
     - article
 comments: true
-date: "2023-03-24 18:20"
-description: "Pour faciliter le travail d'intégration des icônes de QGIS par les développeurs de plugins, j'ai automatisé la génération et la mise à jour d'un site web : PyQGIS Icons Cheatsheet."
+date: 2023-03-24
+description: 'Pour faciliter le travail d''intégration des icônes de QGIS par les développeurs de plugins, j''ai automatisé la génération et la mise à jour d''un site web : PyQGIS Icons Cheatsheet.'
 image: https://pyqgis-icons-cheatsheet.geotribu.fr/assets/images/social/index.png
 license: beerware
 robots: index, follow
@@ -64,8 +64,6 @@ Je lui ai donc proposé mon aide pour en faire un plugin dédié indépendant. �
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

@@ -1,12 +1,12 @@
 ---
-title: "19. Clusterisation côté serveur - Ajax, PHP et PostGIS"
+title: 19. Clusterisation côté serveur - Ajax, PHP et PostGIS
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2009-06-06 10:20
-description: "19. Clusterisation côté serveur - Ajax, PHP et PostGIS"
+date: 2009-06-06
+description: 19. Clusterisation côté serveur - Ajax, PHP et PostGIS
 tags:
     - Ajax
     - cluster
@@ -614,6 +614,4 @@ Ce tutoriel n'est qu'une méthode parmi d'autres et ne se veut pas la plus optim
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

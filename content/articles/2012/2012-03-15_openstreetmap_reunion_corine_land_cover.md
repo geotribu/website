@@ -62,6 +62,4 @@ Quand je vous disais qu'elle était un peu triste notre carte OSM de la réunion
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

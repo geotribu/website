@@ -1,12 +1,12 @@
 ---
-title: "11. Géocoder une adresse"
+title: 11. Géocoder une adresse
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-08-22 10:20
-description: "11. Géocoder une adresse"
+date: 2008-08-22
+description: 11. Géocoder une adresse
 tags:
     - géocodage
     - Google Maps
@@ -144,6 +144,4 @@ Le géocodage à l'adresse est très simple à mettre en place grâce à l'API G
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

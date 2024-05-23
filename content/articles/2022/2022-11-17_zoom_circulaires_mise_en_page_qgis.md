@@ -1,5 +1,5 @@
 ---
-title: "Création de zooms circulaires et autres astuces amusantes de mise en page dans QGIS"
+title: Création de zooms circulaires et autres astuces amusantes de mise en page dans QGIS
 authors:
     - Jérémie PRUD'HOMME
 categories:
@@ -7,8 +7,8 @@ categories:
     - traduction
     - tutoriel
 comments: true
-date: "2022-11-17 13:30"
-description: "Paramétrer la mise en page de QGIS pour afficher des zooms circulaires. Traduction d'un article de North Road."
+date: 2022-11-17
+description: Paramétrer la mise en page de QGIS pour afficher des zooms circulaires. Traduction d'un article de North Road.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis_encastre_circulaire_overview_north_road.png
 license: beerware
 robots: index, follow
@@ -151,8 +151,6 @@ Et n'oubliez pas de suivre le [30 Day Map Challenge](https://30daymapchallenge.c
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jpru.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

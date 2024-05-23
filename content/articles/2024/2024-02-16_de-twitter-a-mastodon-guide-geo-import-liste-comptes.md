@@ -31,7 +31,7 @@ Nous sommes en 2024 et il est temps de faire de [X (Twitter)](https://x.com/geot
 Peur de sauter par-dessus bord ? Je comprends.  
 Voici un guide pour atterrir en douceur sur le réseau décentralisé Mastodon.  
 Peur d'un énième guide ? Je comprends.  
-Ce guide est fait sur-mesure pour les cartographes, géomaticiennes, géomaticiens et même pour les sigistes ! Oui, même pour les sigistes.
+Ce guide est fait sur mesure pour les cartographes, géomaticiennes, géomaticiens et même pour les sigistes ! Oui, même pour les sigistes.
 Impressionné/e ? Je comprends.
 
 Je comprends sincèrement que :
@@ -136,7 +136,7 @@ Si en plus des comptes, vous avez envie d'importer les listes, c'est-à-dire com
 
 1. Télécharger le fichier des listes :
 
-    [:material-format-list-bulleted-type: Télécharger les listes de comptes de Geotribu](https://cdn.geotribu.fr/img/download/mastodon_listes_geotribu.csv){: target="_blank" download=mastodon_listes_geotribu.csv .md-button }
+    [:material-format-list-bulleted-type: Télécharger les listes de comptes de Geotribu](https://geotribu.github.io/geo-mastodon-comptes-listes/mastodon_listes_geotribu.csv){: target="_blank" download=mastodon_listes_geotribu.csv .md-button }
     {: align=middle }
 
 1. Sur votre instance Mastodon, se rendre dans votre profil et dans le menu `Import et export` > `Import` ou directement <https://mapstodon.space/settings/imports> si vous êtes sur l'instance [Mapstodon].
@@ -154,7 +154,7 @@ Si vous voulez seulement suivre les comptes sans récupérer les listes, suivez 
 
 1. Télécharger le fichier des comptes suivis par Geotribu et ajoutés aux listes :
 
-    [:material-account-eye: :material-format-list-bulleted-type: Télécharger les comptes sélectionnés dans les listes Geotribu](https://cdn.geotribu.fr/img/download/mastodon_comptes_des_listes_geotribu.csv){: target="_blank" download=mastodon_comptes_des_listes_geotribu.csv .md-button }
+    [:material-account-eye: :material-format-list-bulleted-type: Télécharger les comptes sélectionnés dans les listes Geotribu](https://geotribu.github.io/geo-mastodon-comptes-listes/mastodon_comptes_des_listes_geotribu.csv){: target="_blank" download=mastodon_comptes_des_listes_geotribu.csv .md-button }
     {: align=middle }
 
 1. Sur votre instance Mastodon, se rendre dans votre profil et dans le menu `Import et export` > `Import` ou directement <https://mapstodon.space/settings/imports> si vous êtes sur l'instance [Mapstodon].
@@ -168,7 +168,7 @@ Si vous voulez seulement suivre les comptes sans récupérer les listes, suivez 
 
 Si vous êtes du genre sans filtre ou que notre sélection vous semble trop restreinte, vous pouvez aussi importer la liste de **tous les comptes** suivis par Geotribu avec la même procédure :
 
-[:material-account-eye: Télécharger tous les comptes suivis par Geotribu](https://cdn.geotribu.fr/img/download/mastodon_comptes_suivis_geotribu.csv){: target="_blank" download=mastodon_comptes_suivis_geotribu.csv .md-button }
+[:material-account-eye: Télécharger tous les comptes suivis par Geotribu](https://geotribu.github.io/geo-mastodon-comptes-listes/mastodon_comptes_suivis_geotribu.csv){: target="_blank" download=mastodon_comptes_suivis_geotribu.csv .md-button }
 {: align=middle }
 
 ### Comptes internationaux
@@ -180,7 +180,7 @@ L'écosystème propose un générateur de micro site web, [Mastodon Sociologists
 Allez, petit tutoriel rapide pour les moins aventureux/ses :
 <!-- markdownlint-disable MD051 -->
 1. Se rendre sur [le site de Florian Ledermann](https://cartolab.at/cartography-on-mastodon/)
-1. Sélectionner les catégories qui vous intéressent. Il est aussi possible de sélectionner compte par compte mais si vous êtes rendus là c'est que vous n'êtes pas ce genre de forçat :grin:. Personnellement, je commence par tout déselectionner (`Select none`) puis je clique sur les `Select all` en regard des catégories `Cartography, geovisualization and visual aspects of GIS`, `GIS, geodata and geography` et `General information visualization & data science` ce qui, à date, représente 208 des 245 comptes répertoriés :
+1. Sélectionner les catégories qui vous intéressent. Il est aussi possible de sélectionner compte par compte, mais si vous êtes rendus là c'est que vous n'êtes pas ce genre de forçat :grin:. Personnellement, je commence par tout désélectionner (`Select none`) puis je clique sur les `Select all` en regard des catégories `Cartography, geovisualization and visual aspects of GIS`, `GIS, geodata and geography` et `General information visualization & data science` ce qui, à date, représente 208 des 245 comptes répertoriés :
 
     ![Listes de comptes à suivre - Florian Ledermann](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mastodon_listes_Florian_Ledermann.webp){: .img-center loading=lazy }
 
@@ -224,7 +224,7 @@ Enfin bref, vous avez compris l'idée quoi.
 
 ## Soutenir l'initiative Mapstodon
 
-Enfin, si vous pensez l'utiliser, sachez que [Mapstodon] a été créé par l'ami [Jérémy](https://mapper.fr/) et qu'à ce titre c'est son compte en banque qui est débité à chaque message posté, requête envoyée etc. Si vous en avez les moyens, donnez donc 1€/mois pour contribuer à la viabilité de cet espace qui ne se finance ni tout seul, ni en revendant nos données personnelles ou de l'espace publicitaire.
+Enfin, si vous pensez l'utiliser, sachez que [Mapstodon] a été créé par l'ami [Jérémy](https://mapper.fr/) et qu'à ce titre c'est son compte en banque qui est débité à chaque message posté, requête envoyée, etc. Si vous en avez les moyens, donnez donc 1€/mois pour contribuer à la viabilité de cet espace qui ne se finance ni tout seul, ni en revendant nos données personnelles ou de l'espace publicitaire.
 
 ![Page Patreon pour l'instance Mapstodon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/transition_mastodon/mapstodon_patreon.webp){: .img-center loading=lazy }
 
@@ -243,9 +243,7 @@ Si l'article vous a intéressé et aidé à embarquer, venez donc le dire en ré
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
 

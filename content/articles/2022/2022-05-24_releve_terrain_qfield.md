@@ -1,13 +1,13 @@
 ---
-title: "Effectuer un relevé de terrain avec QGIS et QField"
+title: Effectuer un relevé de terrain avec QGIS et QField
 authors:
     - Valérian LEBERT
 categories:
     - article
 comments: true
-date: "2022-05-24 10:20"
-description: "Retour d'expérience de l'utilisation de QField en milieu professionnel. Astuces et méthodes de synchronisation."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield.jpg"
+date: 2022-05-24
+description: Retour d'expérience de l'utilisation de QField en milieu professionnel. Astuces et méthodes de synchronisation.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield.jpg
 license: cc4_by-sa
 tags:
     - collecte
@@ -202,8 +202,6 @@ Pour la restitution des données et leur vie après l’acquisition sur le terra
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/vleb.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

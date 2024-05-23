@@ -1,12 +1,12 @@
 ---
-title: "Créer une MiniMap personnalisable avec mapFish et Ext"
+title: Créer une MiniMap personnalisable avec mapFish et Ext
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-11-30 10:20
-description: "Créer une MiniMap personnalisable avec mapFish et Ext"
+date: 2008-11-30
+description: Créer une MiniMap personnalisable avec mapFish et Ext
 image: ''
 tags:
     - OpenLayers
@@ -163,6 +163,4 @@ Et enfin, l'exemple illustrant le code ci-dessus :
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

@@ -1,15 +1,14 @@
 ---
-title: "Afficher une carte dans une application Android"
+title: Afficher une carte dans une application Android
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2009-11-20 10:20
-description: "Afficher une carte dans une application Android"
+date: 2009-11-20
+description: Afficher une carte dans une application Android
 tags:
     - Android
-
 ---
 
 # Afficher une carte dans une application Android
@@ -219,6 +218,4 @@ Ce premier tutoriel à propos d'Android peut sembler un peu technique, mais il s
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

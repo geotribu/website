@@ -1,13 +1,13 @@
 ---
-title: "Quand QGIS nous régale d'Easter eggs !"
+title: Quand QGIS nous régale d'Easter eggs !
 authors:
     - Delphine MONTAGNE
     - Julien MOURA
 categories:
     - article
 comments: true
-date: "2022-04-18 14:20"
-description: "Easter egg, une tradition technique qui se marie bien à la cartographie. Certains des Easter eggs de QGIS sont connus : dizzy, contributors... Mais comment les dénicher à coup sûr ? Suivez le lapin blanc dans le voyage au coeur du terrier de QGIS !"
+date: 2022-04-18
+description: 'Easter egg, une tradition technique qui se marie bien à la cartographie. Certains des Easter eggs de QGIS sont connus : dizzy, contributors... Mais comment les dénicher à coup sûr ? Suivez le lapin blanc dans le voyage au coeur du terrier de QGIS !'
 icon: material/egg-easter
 image: https://cdn.geotribu.fr/img/tuto/qgis_easter_eggs/qgis_316_easteregg_user_groups.png
 license: cc4_by-sa
@@ -141,10 +141,6 @@ C'est fou la transparence, c'est beau l'open source :heart_eyes: !
 
 ----
 
-## Auteur/es
-
---8<-- "content/team/jmou.md"
-
---8<-- "content/team/dmon.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

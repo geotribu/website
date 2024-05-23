@@ -1,12 +1,12 @@
 ---
-title: "Géolocalisation et OpenLayers"
+title: Géolocalisation et OpenLayers
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-12-21 10:20
-description: "Géolocalisation et OpenLayers"
+date: 2009-12-21
+description: Géolocalisation et OpenLayers
 tags:
     - géolocalisation
     - HTML 5
@@ -102,6 +102,4 @@ Dans l'[exemple](http://geotribu.net/applications/tutoriaux/openlayers/geolocali
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

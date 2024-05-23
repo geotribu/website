@@ -1,12 +1,12 @@
 ---
-title: "Ajouter de nouvelles fonctionnalités à la bibliothèque OpenLayers"
+title: Ajouter de nouvelles fonctionnalités à la bibliothèque OpenLayers
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-08-31 10:20
-description: "Ajouter de nouvelles fonctionnalités à la bibliothèque OpenLayers"
+date: 2008-08-31
+description: Ajouter de nouvelles fonctionnalités à la bibliothèque OpenLayers
 tags:
     - OpenLayers
 ---
@@ -143,6 +143,4 @@ Il ne vous reste plus qu'a rajouter les divers attributs et méthodes que vous s
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

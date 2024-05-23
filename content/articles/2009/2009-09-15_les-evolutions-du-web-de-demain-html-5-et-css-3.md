@@ -24,6 +24,4 @@ De nombreux articles mettant en avant la puissance jumelée de ces nouvelles ver
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

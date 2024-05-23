@@ -1,13 +1,13 @@
 ---
-title: "Histoire de Geotribu : vie, mort et renaissance."
+title: 'Histoire de Geotribu : vie, mort et renaissance.'
 authors:
     - Julien MOURA
 categories:
     - article
 comments: true
-date: "2020-08-31 10:20"
-description: "Invité à faire un retour d'expérience sur l'aventure Geotribu, voici une petite histoire du site : naissance, jeunesse, vie, mort... et renaissance en 2020. Souvenirs, souvenirs et avenir !"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_frise_chrono_2006-2017.png"
+date: 2020-08-31
+description: 'Invité à faire un retour d''expérience sur l''aventure Geotribu, voici une petite histoire du site : naissance, jeunesse, vie, mort... et renaissance en 2020. Souvenirs, souvenirs et avenir !'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/geotribu/history/geotribu_frise_chrono_2006-2017.png
 tags:
     - bénévolat
     - Geotribu
@@ -82,7 +82,7 @@ Mais si récupérer des contenus n'est qu'une question technique (on le verra da
 
 Qu'importe, on a retrouvé le plaisir et pourvu que ça dure !
 
-[Page des contributeur/ices :fontawesome-solid-people-carry-box:](../../team/contributors.md){: .md-button }
+[Page des contributeur/ices :fontawesome-solid-people-carry-box:](../../team/index.md){: .md-button }
 {: align=middle }
 
 ----
@@ -116,12 +116,10 @@ Car à sa façon, Geotribu est un exemple de ces initiatives qui parfois gagnent
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
-[Arnaud]: ../../team/avan.md
-[Fabien]: ../../team/fgob.md
-[Jérémie]: ../../team/jory.md
+[Arnaud]: ../../team/arnaud-vandecasteele.md
+[Fabien]: ../../team/fabien-goblet.md
+[Jérémie]: ../../team/jeremie-ory.md
 [GeoRezo]: https://georezo.net/

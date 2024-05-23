@@ -1,12 +1,12 @@
 ---
-title: "Classification automatisée avec le plugin QGIS dzetsaka"
+title: Classification automatisée avec le plugin QGIS dzetsaka
 authors:
     - Sylvain KERDREUX
 categories:
     - article
 comments: true
-date: "2022-07-22 10:20"
-description: "Présentation de Dzetsaka, un plugin QGIS pour faire de la classification semi-automatisée."
+date: 2022-07-22
+description: Présentation de Dzetsaka, un plugin QGIS pour faire de la classification semi-automatisée.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/L_Dzetsaka_Resultat4.png
 license: default
 tags:
@@ -140,8 +140,6 @@ A noter qu'il existe aussi d'autres méthodes de calcul (expérimental) du plugi
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/sker.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

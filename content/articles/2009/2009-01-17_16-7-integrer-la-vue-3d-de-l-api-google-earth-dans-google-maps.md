@@ -1,12 +1,12 @@
 ---
-title: "7. Intégrer la vue 3D de l'API Google Earth dans Google Maps"
+title: 7. Intégrer la vue 3D de l'API Google Earth dans Google Maps
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2009-01-17 10:20
-description: "7. Intégrer la vue 3D de l'API Google Earth dans Google Maps"
+date: 2009-01-17
+description: 7. Intégrer la vue 3D de l'API Google Earth dans Google Maps
 tags:
     - Google Earth
     - Google Maps
@@ -86,6 +86,4 @@ Rien de bien compliqué ici.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

@@ -1,13 +1,13 @@
 ---
-title: "Mots-croisés avec les solutions de webmapping"
+title: Mots-croisés avec les solutions de webmapping
 authors:
     - Jérémie ORY
 categories:
     - article
 comments: true
-date: "2013-11-20 10:20"
-description: "Deuxième géogame proposé par Geotribu : des mots-croisés sur les solutions de webmapping. Bon jeu !"
-image: "https://cdn.geotribu.fr/img/geogames/geogame1_capture.png"
+date: 2013-11-20
+description: 'Deuxième géogame proposé par Geotribu : des mots-croisés sur les solutions de webmapping. Bon jeu !'
+image: https://cdn.geotribu.fr/img/geogames/geogame1_capture.png
 tags:
     - Géogame
     - mots-croisés
@@ -30,6 +30,4 @@ Bonne chance !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jory.md"
+<!-- geotribu:authors-block -->

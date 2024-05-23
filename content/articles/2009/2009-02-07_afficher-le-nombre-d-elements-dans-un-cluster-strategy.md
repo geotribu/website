@@ -1,12 +1,12 @@
 ---
-title: "Afficher le nombre d'éléments dans un Cluster Strategy"
+title: Afficher le nombre d'éléments dans un Cluster Strategy
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-02-07 10:20
-description: "Afficher le nombre d'éléments dans un Cluster Strategy"
+date: 2009-02-07
+description: Afficher le nombre d'éléments dans un Cluster Strategy
 tags:
     - cluster
     - OpenLayers
@@ -128,6 +128,4 @@ Et voilà, rien de plus compliqué. Le résultat de ces deux scripts est visible
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

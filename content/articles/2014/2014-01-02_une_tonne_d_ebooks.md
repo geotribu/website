@@ -34,6 +34,4 @@ Il vous reste peu de temps pour en profiter, alors n'hésitez pas :D
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

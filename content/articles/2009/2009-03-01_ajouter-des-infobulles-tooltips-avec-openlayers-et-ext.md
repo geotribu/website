@@ -1,12 +1,12 @@
 ---
-title: "Ajouter des infobulles (tooltips) avec OpenLayers et Ext"
+title: Ajouter des infobulles (tooltips) avec OpenLayers et Ext
 authors:
-- Arnaud Vandecasteele
+    - Arnaud Vandecasteele
 categories:
-- article
+    - article
 comments: true
-date: 2009-03-01 10:20
-description: "Ajouter des infobulles (tooltips) avec OpenLayers et Ext"
+date: 2009-03-01
+description: Ajouter des infobulles (tooltips) avec OpenLayers et Ext
 tags:
     - OpenLayers
     - ExtJS
@@ -58,6 +58,4 @@ Les propriétés initiales de l'objet ToolTips n'ont pas été modifiées, réf�
 
 ----
 
-## Auteur
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

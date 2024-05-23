@@ -1,12 +1,12 @@
 ---
-title: "Utiliser la fonctionnalité Strategy d'OpenLayers 2.7"
+title: Utiliser la fonctionnalité Strategy d'OpenLayers 2.7
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-10-08 10:20
-description: "Utiliser la fonctionnalité Strategy d'OpenLayers 2.7"
+date: 2008-10-08
+description: Utiliser la fonctionnalité Strategy d'OpenLayers 2.7
 tags:
     - OpenLayers
     - strategy
@@ -144,6 +144,4 @@ Voici un exemple concret de ce qu'il est possible de réaliser :
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

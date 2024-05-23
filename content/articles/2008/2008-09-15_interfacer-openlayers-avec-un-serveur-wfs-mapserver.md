@@ -1,15 +1,15 @@
 ---
-title: "Interfacer OpenLayers avec un serveur WFS (MapServer)"
+title: Interfacer OpenLayers avec un serveur WFS (MapServer)
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-09-15 10:20
-description: "Interfacer OpenLayers avec un serveur WFS (MapServer)"
+date: 2008-09-15
+description: Interfacer OpenLayers avec un serveur WFS (MapServer)
 tags:
-  - WFS
-  - MapServer
+    - WFS
+    - MapServer
 ---
 
 # Interfacer OpenLayers avec un serveur WFS (MapServer)
@@ -137,6 +137,4 @@ A noter que si vous désirez pouvoir utiliser les données attributaires de la c
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

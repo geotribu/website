@@ -1,14 +1,14 @@
 ---
-title: "Données Copernicus et Sentinel"
-subtitle: "Accès aux données Copernicus et Sentinel"
+title: Données Copernicus et Sentinel
+subtitle: Accès aux données Copernicus et Sentinel
 authors:
     - Nicolas DAVID
 categories:
     - article
 comments: true
-date: "2023-02-21 09:00"
-description: "Introduction et description des données d'observation de la terre produite dans le cadre du progamme européen Copernicus"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png"
+date: 2023-02-21
+description: Introduction et description des données d'observation de la terre produite dans le cadre du progamme européen Copernicus
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/copernicus_data/copernicus_logo.png
 license: beerware
 robots: index, follow
 tags:
@@ -145,6 +145,4 @@ Les données SLC sont en particulier utilisées en mode "différentiel" entre de
 
 Si tout cela n'a pas encore suffi à satisfaire vos mirettes, ou que vous souhaitez changer votre fond d'écran, je ne peux que vous conseiller d'aller par exemple sur le site [Image of the day Copernicus]( https://www.copernicus.eu/en/media/image-day) pour y trouver d'autres images Sentinel sélectionnées en fonction de l'actualité ou de leur esthétisme.
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/ndav.md"
+<!-- geotribu:authors-block -->

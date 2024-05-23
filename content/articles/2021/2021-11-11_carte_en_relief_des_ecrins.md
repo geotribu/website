@@ -1,22 +1,22 @@
 ---
-title: "Faire une carte en relief des Écrins"
+title: Faire une carte en relief des Écrins
 authors:
-  - Jean-Marc Viglino
+    - Jean-Marc Viglino
 categories:
-  - article
-  - tutoriel
+    - article
+    - tutoriel
 comments: true
-date: 2021-11-11 08:00
-description: "Réalisez facilement une carte en relief du Parc National des Écrins avec des données IGN et QGIS. #30DayMapChallenge 2021."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/0-head.jpg"
+date: 2021-11-11
+description: 'Réalisez facilement une carte en relief du Parc National des Écrins avec des données IGN et QGIS. #30DayMapChallenge 2021.'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_en_relief_des_ecrins/0-head.jpg
 license: default
 tags:
-  - 3D
-  - BDAlti
-  - DEM
-  - QGIS
-  - relief
-  - three.js
+    - 3D
+    - BDAlti
+    - DEM
+    - QGIS
+    - relief
+    - three.js
 ---
 
 # Faire une carte en relief des Écrins
@@ -152,6 +152,4 @@ Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page in
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jvig.md"
+<!-- geotribu:authors-block -->

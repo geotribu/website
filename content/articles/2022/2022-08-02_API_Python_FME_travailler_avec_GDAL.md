@@ -1,14 +1,14 @@
 ---
-title: "API Python de FME : comment travailler avec des rasters et GDAL"
+title: 'API Python de FME : comment travailler avec des rasters et GDAL'
 authors:
     - Humbert FIORINO
 categories:
     - article
     - tutoriel
 comments: true
-date: "2022-08-02 14:00"
-description: "Comment travailler avec des librairies Python dans FME. Illustration avec GDAL."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_gdal_python.png"
+date: 2022-08-02
+description: Comment travailler avec des librairies Python dans FME. Illustration avec GDAL.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/fme_gdal_raster/fme_gdal_python.png
 license: default
 tags:
     - FME
@@ -254,8 +254,6 @@ def close(self):
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/hfio.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

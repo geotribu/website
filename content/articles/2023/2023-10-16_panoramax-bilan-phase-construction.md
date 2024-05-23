@@ -1,5 +1,5 @@
 ---
-title: "Panoramax, quel bilan tirer de la phase de construction ?"
+title: Panoramax, quel bilan tirer de la phase de construction ?
 subtitle: Photo-cartographions librement le monde
 authors:
     - Mathilde FERREY
@@ -7,8 +7,8 @@ authors:
 categories:
     - article
 comments: true
-date: "2023-10-16 10:20"
-description: "C'était il y a un an... l'IGN répondait à la proposition d'OpenStreetMap France et se lançait dans une phase d'investigation pour la création d'un street-view libre. Aujourd'hui, où en est-on ?"
+date: 2023-10-16
+description: C'était il y a un an... l'IGN répondait à la proposition d'OpenStreetMap France et se lançait dans une phase d'investigation pour la création d'un street-view libre. Aujourd'hui, où en est-on ?
 icon: material/panorama-variant
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/panoramax/panoramax_grand_lyon.png
 license: default
@@ -20,7 +20,6 @@ tags:
     - Panoramax
     - vues immersives
 ---
-
 
 # Panoramax, quel bilan tirer de la phase de construction ?
 
@@ -152,9 +151,6 @@ Et beaucoup d'autres encore à inventer. À suivre !
 
 ----
 
-## Auteurs
-
---8<-- "content/team/mfer.md"
---8<-- "content/team/cque.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

@@ -5,8 +5,9 @@ authors:
 categories:
     - article
 comments: true
-date: "2023-05-24 10:20"
-description: "Détection du vandalisme cartographique dans OSM grâce à de l'apprentissage automatique"
+date: 2023-05-24
+description: Détection du vandalisme cartographique dans OSM grâce à de l'apprentissage automatique
+icon: material/spray
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/osm_carto_vandalisme/osm_vandalisme_en-tete.png
 license: default
 robots: index, follow
@@ -17,7 +18,7 @@ tags:
 
 # Carto-vandalisme dans OpenStreetMap : mythe ou réalité ?
 
-:calendar: Date de publication initiale : 24 mai 2023
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
 
@@ -170,8 +171,6 @@ Si vous souhaitez en savoir plus sur la détection automatique du carto-vandalis
 
 ----
 
-## Autrice
-
---8<-- "content/team/qthy.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

@@ -1,12 +1,12 @@
 ---
-title: "OpenLayers, pouvoir réaliser un 'padding' dans une infobulle"
+title: OpenLayers, pouvoir réaliser un 'padding' dans une infobulle
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-01-14 10:20
-description: "OpenLayers, pouvoir réaliser un 'padding' dans une infobulle"
+date: 2009-01-14
+description: OpenLayers, pouvoir réaliser un 'padding' dans une infobulle
 tags:
     - infobulle
     - padding
@@ -57,6 +57,4 @@ Ce qu'il est possible de remarquer immédiatement c'est que par rapport a une ut
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

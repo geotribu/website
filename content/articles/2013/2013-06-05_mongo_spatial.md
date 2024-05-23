@@ -1,15 +1,15 @@
 ---
-title: "Mongo Spatial"
+title: Mongo Spatial
 authors:
-    - Geotribu
+    - Guillaume De Boyer
 categories:
     - article
 comments: true
-date: 2013-06-05 10:20
-description: "Mongo Spatial"
+date: 2013-06-05
+description: Mongo Spatial
 tags:
-  - Mongo
-  - Node.js
+    - Mongo
+    - Node.js
 ---
 
 # Mongo Spatial
@@ -151,6 +151,4 @@ C'est prêt :).
 
 ----
 
-## Auteur {: data-search-exclude }
-
-Guillaume
+<!-- geotribu:authors-block -->

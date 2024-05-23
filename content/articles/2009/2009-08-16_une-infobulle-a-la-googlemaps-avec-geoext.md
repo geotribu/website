@@ -1,16 +1,15 @@
 ---
-title: "Une infobulle à la GoogleMaps avec GeoExt"
+title: Une infobulle à la GoogleMaps avec GeoExt
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-08-16 10:20
-description: "Une infobulle à la GoogleMaps avec GeoExt"
+date: 2009-08-16
+description: Une infobulle à la GoogleMaps avec GeoExt
 tags:
     - GeoExt
     - Open Source
-
 ---
 
 # Une infobulle à la GoogleMaps avec GeoExt
@@ -63,6 +62,4 @@ Comme vous pouvez le constater cela n'a rien de compliqué, juste une simple uti
 
 ----
 
-## Auteur
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

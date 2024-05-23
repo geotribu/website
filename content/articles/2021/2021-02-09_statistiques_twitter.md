@@ -1,13 +1,13 @@
 ---
-title: "Impact de Twitter sur la fréquentation du site GeoTribu"
+title: Impact de Twitter sur la fréquentation du site GeoTribu
 authors:
     - Aurélien CHAUMET
 categories:
     - article
 comments: true
-date: "2021-02-09 10:20"
-description: "Récupérer des données sociales de Twitter, les préparer et les représenter est assez simple, grâce à trois bibliothèques Python : Twint, Pandas et Plolty. L'exemple développé ici s'appuie sur les statistiques autour des GeoRDP et articles parus dans GeoTribu en 2020"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png"
+date: 2021-02-09
+description: 'Récupérer des données sociales de Twitter, les préparer et les représenter est assez simple, grâce à trois bibliothèques Python : Twint, Pandas et Plolty. L''exemple développé ici s''appuie sur les statistiques autour des GeoRDP et articles parus dans GeoTribu en 2020'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png
 tags:
     - Geotribu
     - Pandas
@@ -271,6 +271,4 @@ N'hésitez pas à nous faire des retours dans les commentaires, si vous avez ég
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/acha.md"
+<!-- geotribu:authors-block -->

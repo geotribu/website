@@ -1,16 +1,15 @@
 ---
-title: "Utiliser OGR avec python"
+title: Utiliser OGR avec python
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2009-10-18 10:20
-description: "Utiliser OGR avec python"
+date: 2009-10-18
+description: Utiliser OGR avec python
 tags:
     - Python
     - OGR
-
 ---
 
 # Utiliser OGR avec python
@@ -145,6 +144,4 @@ Les exemples ci-dessus ne sont qu'un très faible aperçu des possibilités de l
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

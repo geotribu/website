@@ -1,12 +1,12 @@
 ---
-title: "Afficher des tooltips (infobulles) sur des objets [part 3]"
+title: Afficher des tooltips (infobulles) sur des objets [part 3]
 authors:
     - Arnaud Vandecasteele
 categories:
     - article
 comments: true
-date: 2008-12-15 10:20
-description: "Afficher des tooltips (infobulles) sur des objets [part 3]"
+date: 2008-12-15
+description: Afficher des tooltips (infobulles) sur des objets [part 3]
 image: ''
 tags:
     - OpenLayers
@@ -79,6 +79,4 @@ Ci-dessous un exemple de ce qu'il est possible de réaliser :
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

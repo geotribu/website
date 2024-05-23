@@ -1,14 +1,14 @@
 ---
-title: "Geotribu à la maison"
+title: Geotribu à la maison
 authors:
     - Julien MOURA
 categories:
     - article
     - tutoriel
 comments: true
-date: 2020-12-30 11:11
-description: "A l'instar de nombreux autres sites web, celui de Geotribu est un site statique. So what ? Pour comprendre, le mieux c'est encore de le déployer à la maison."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg"
+date: 2020-12-30
+description: A l'instar de nombreux autres sites web, celui de Geotribu est un site statique. So what ? Pour comprendre, le mieux c'est encore de le déployer à la maison.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/divers/fernand_leger_constructeurs.jpg
 tags:
     - Geotribu
     - GitHub
@@ -162,6 +162,4 @@ Et voilà, vous avez le site Geotribu sur votre ordinateur :smile: !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->

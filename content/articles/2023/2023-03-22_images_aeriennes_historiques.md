@@ -1,15 +1,15 @@
 ---
-title: "Reconstitution d'images aériennes historiques"
-subtitle: "Marty, la DeLorean"
+title: Reconstitution d'images aériennes historiques
+subtitle: Marty, la DeLorean
 authors:
     - Florian Boret
 categories:
     - article
     - tutoriel
 comments: true
-date: 2023-03-22 14:20
-description: "Reconstitution d'images aériennes historiques"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/remonterletemps_img.png"
+date: 2023-03-22
+description: Reconstitution d'images aériennes historiques
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/remonterletemps_img.png
 license: beerware
 tags:
     - IGN
@@ -66,7 +66,7 @@ Avant de se lancer, il est bon de vous parler du fichier de configuration que vo
 
 Voici le fichier `config.env` à adapter :
 
-```ini
+```ini title="Environnement de travail" linenums="1"
 # CLEF IGN PUBLIQUE (VISIBLE DANS L'URL DE TELECHARGEMENT)
 key='x7yv499pbcguxhhxh8syehwe'
 
@@ -115,7 +115,7 @@ Pour trouver l'identifiant de la mission, il faut :
 
 Si vous préférez une méthode plus automatique pour identifier toutes les missions qui ont été réalisées sur votre territoire, vous pouvez opter pour ce script qui permet après avoir paramétré son environnement de travail de télécharger un fichier `json` des missions et de le convertir au format `csv`.
 
-```bash
+```bash title="Listing des missions" linenums="1"
 #!/usr/bin/env bash
 
 # LECTURE DU FICHIER DE CONFIGURATION
@@ -147,7 +147,7 @@ rm './1_missions/missions.json'
 
 Voici ce que vous obtiendrez en sortie :
 
-```csv
+```csv title="Exemple" linenums="1"
 id,pv_date,kml_layer_id,title,jp2
 missions.5575239,1926/01/01,CF0D-3081,1926_CAF_D-308_P_5000,"1"
 missions.5555476,1927/01/01,CF0D-1455,1927_CAF_D-145_P_100,"1"
@@ -168,7 +168,7 @@ On ne peut pas dire que l'IGN nous facilite la tâche sur l'identification et le
 
 Pour identifier les images d'une mission, il faut télécharger un premier fichier `kml` qui sert de point de départ pour chercher une filiation et trouver des enfants, petits enfants et arrières petits enfants de `kml`. Je ne sais pas pour quelle raison l'IGN a procédé ainsi mais pour une mission, les informations sur les images (leur description et leur emprise) sont réparties dans différents fichiers `kml` qu'il faut parcourir.
 
-```bash
+```bash title="Télécharger le fichier kml de départ" linenums="1"
 # EXTRAIT - CONSULTER LE SCRIPT COMPLET POUR PLUS DE DÉTAILS
 # TÉLÉCHARGER LE FICHIER DE DÉPART DE LA MISSION
 curl "https://wxs.ign.fr/$key/dematkml/DEMAT.PVA/$id_mission/t.kml" > $folder_mission'/kml/'$id_mission'.kml'
@@ -189,7 +189,7 @@ Maintenant que l'on a récupéré l'emprise et la liste de toutes les images de 
 2. télécharger les images,
 3. convertir les images en `jp2` vers `jpg` pour pouvoir les exploiter dans OpenDroneMap par la suite.
 
-```bash
+```bash title="Télécharger les images" linenums="1"
  while IFS="," read -r Name ; do
     echo ">>>>>>>" $Name
     echo "URL de téléchargement : https://wxs.ign.fr/$key/jp2/DEMAT.PVA/$id_mission/$Name.jp2"
@@ -207,7 +207,7 @@ Maintenant que l'on a récupéré l'emprise et la liste de toutes les images de 
 
 Ensuite à partir de l'emprise des images contenue dans les fichiers `kml`, on va calculer le centroïde de toutes celles qui se trouvent dans notre BBOX et récupérer les informations sur la date de la prise de vue afin de créer un fichier `.csv`. Toutes ces informations vont nous permettre de compléter les données [EXIF](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format) des images.
 
-```bash
+```bash title="Accès au centroïde et aux informations de l'image" linenums="1"
 # PERMET D'EXTRAIRE LE CENTROIDE ET LES INFORMATIONS DE L'IMAGE
 ogr2ogr \
     -f CSV \
@@ -219,7 +219,7 @@ ogr2ogr \
 
 Après avoir généré le fichier des attributs nécessaires à `Exiftool`, il nous faut simplement lancer la commande permettant d'insérer les attributs dans chacune des images.
 
-```bash
+```bash title="Modification de l'exif" linenums="1"
 exiftool -csv=$folder_mission'/csv_exif/list_exif.csv' $folder_mission'/img_jpg' -Overwrite_Original -m
 ```
 
@@ -239,7 +239,7 @@ Maintenant que toutes nos images ont été téléchargées, converties, et que l
 
 Pour ce faire, il est possible d'utiliser `ImageMagick` en définissant le nombre de pixels à enlever sur chacun des côtés :
 
-```bash
+```bash  title="Découper une image" linenums="1"
 # DECOUPER UNE IMAGE
 # -crop left,top      -crop right,bottom
 convert $folder_mission'/img_jpg/'$file'.jpg' -crop +350+1100 -crop -350-375 -colorspace sRGB -type truecolor $folder_mission'/img_jpg_crop/'$file'.jpg'
@@ -324,7 +324,7 @@ Pour les fans de la ligne de commande sur Windows, vous pouvez utiliser le packa
 3. Dans le répertoire du projet, créer un nouveau répertoire `images` qui contiendra les images et le fichier GCP
 4. Adapter et lancer la commande :
 
-```bash
+```bash title="Commande ODM pour la reconstitution" linenums="1"
 run --project-path C:\XXXXXX\ODM YY_PROJET_YY --min-num-features 30000 --skip-3dmodel --feature-quality high --orthophoto-resolution 50 --gcp "C:\XXXX\ODM\YY_PROJET_YY\images\gcp_list.txt"
 ```
 
@@ -349,6 +349,4 @@ La méthode mise en place nous a permis à moindre coup et de manière autonome 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fbor.md"
+<!-- geotribu:authors-block -->

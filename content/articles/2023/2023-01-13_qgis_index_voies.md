@@ -1,14 +1,14 @@
 ---
-title: "Créer un index des voies dans QGIS"
+title: Créer un index des voies dans QGIS
 authors:
     - Florian Boret
 categories:
     - article
     - tutoriel
 comments: true
-date: 2023-01-13 14:20
-description: "Créer un index des voies dans QGIS"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png"
+date: 2023-01-13
+description: Créer un index des voies dans QGIS
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png
 license: beerware
 tags:
     - QGIS
@@ -49,7 +49,7 @@ Sur la couche correspondant à la grille, ajouter un champ virtuel afin de déno
 
 ![Nommage de chaque maille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/nom_maille.png "Nommage de chaque maille"){: .img-center loading=lazy }
 
-```sql
+```sql title="Identifiant de la maille" linenums="1"
 --Source : https://gis.stackexchange.com/questions/330760/create-a-grid-with-all-polygons-labelled-index-style
 CASE --Condition
   WHEN floor(((maximum("top") - "top" ) / 999) / 26) > 0 --Sur la hauteur : Compte si plus de 26 lignes et donc plus de 26 lettres qui seront utilisées (A-Z)
@@ -78,7 +78,7 @@ Sur la couche correspondant aux voies, ajouter un champ virtuel qui va permettre
 
 ![Calcul des mailles qui croisent les voies](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/calcul_liste_mailles.png "Calcul des mailles qui croisent les voies"){: .img-center loading=lazy }
 
-```sql
+```sql title="Liste des mailles traversées par une voie" linenums="1"
 aggregate(
 layer:= 'Grille', --Nom de la couche correspondant à la grille
 aggregate:='concatenate', --Méthode d'agrégation
@@ -112,8 +112,6 @@ Il est également possible d'exploiter le maillage créé pour afficher dans le 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fbor.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

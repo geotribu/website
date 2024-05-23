@@ -1,26 +1,28 @@
 ---
-title: "Aperçu de la bibliothèque PowerShell SI3P0"
+title: Aperçu de la bibliothèque PowerShell SI3P0
 authors:
     - Michaël GALIEN
 categories:
     - article
 comments: true
-date: "2021-05-25 16:00"
-description: "Petit aperçu de la bibliothèque PowerShell SI3P0 développée par le département du Gard pour la gestion de son SIg routes et bâtiments."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-logo.png"
+date: 2021-05-25
+description: Petit aperçu de la bibliothèque PowerShell SI3P0 développée par le département du Gard pour la gestion de son SIg routes et bâtiments.
+icon: material/powershell
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-logo.png
 tags:
     - adresse
     - BAN
-    - SIG
     - open source
     - PostGIS
     - PostgreSQL
     - PowerShell
+    - SIG
+    - SQL
 ---
 
 # Aperçu de la bibliothèque PowerShell SI3P0
 
-:calendar: Date de publication initiale : 25 mai 2021
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 Pré-requis :
 
@@ -259,9 +261,7 @@ Comme indiqué plus haut, si tu souhaites récupérer les sources (sous licence 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mgal.md"
+<!-- geotribu:authors-block -->
 
 !!! note "Pourquoi est-ce que j'écris SIg et pas SIG ?"
     Je traite au quotidien différentes données dont une partie est géographique. A ce titre, je considère que je participe à la construction du SI de la collectivité. Ce "G", s'il précise la composante géographique des travaux, apporte je trouve, un côté réducteur à la matière. J'ai donc opté pour ce compromis d'écriture.

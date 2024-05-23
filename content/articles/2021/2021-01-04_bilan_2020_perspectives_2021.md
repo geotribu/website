@@ -1,12 +1,12 @@
 ---
-title: "2020 dans le géorétro, 2021 en ligne de mire"
+title: 2020 dans le géorétro, 2021 en ligne de mire
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2021-01-06 11:11
-description: "L'équipe de Geotribu vous souhaite ses meilleurs voeux pour 2021, avec quelques statistiques sur l'année 2020 et une feuille de route 2021."
+date: 2021-01-06
+description: L'équipe de Geotribu vous souhaite ses meilleurs voeux pour 2021, avec quelques statistiques sur l'année 2020 et une feuille de route 2021.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/divers/phoenix_constellation_map_fr.png
 tags:
     - collaboratif
@@ -44,7 +44,7 @@ En y regardant de plus près, ce sont 4 contributeurs réguliers qui rédigent l
 
 En somme, une dynamique progressive mais réelle qu'il s'agira de consolider dans les mois à venir pour éviter [le syndrôme du SPOF](https://fr.wikipedia.org/wiki/Point_de_d%C3%A9faillance_unique).
 
-En tout cas, on est content de retrouver le plaisir de partager notre effort de veille et notre passion. [**Encore merci à tout le monde !**](../../team/index.md) Régulier, irrégulier, ponctuel ou "simple" tipex numérique, toute contribution est vraiment la bienvenue et comme on ne le dit jamais assez : il n'y a aucune obligation. Ni de contribution, ni de résultat.
+En tout cas, on est content de retrouver le plaisir de partager notre effort de veille et notre passion. [**Encore merci à tout le monde !**](../../about/index.md) Régulier, irrégulier, ponctuel ou "simple" tipex numérique, toute contribution est vraiment la bienvenue et comme on ne le dit jamais assez : il n'y a aucune obligation. Ni de contribution, ni de résultat.
 
 ### Fréquentation
 
@@ -156,6 +156,4 @@ La Geotribu.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

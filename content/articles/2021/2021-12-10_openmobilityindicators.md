@@ -1,13 +1,13 @@
 ---
-title: "OpenMobilityIndicators, l'appli 'Mon quartier à pied' est en ligne"
+title: OpenMobilityIndicators, l'appli 'Mon quartier à pied' est en ligne
 authors:
     - Patrick GENDRE
 categories:
     - article
 comments: true
-date: "2021-12-10 14:20"
-description: "Open Mobility Indicators est un ensemble d’outils logiciels libres et collaboratifs qui traite les données ouvertes pour créer des indicateurs de mobilité durable."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/open_mobility_indicators/OpenMobilityIndicators_apercu.png"
+date: 2021-12-10
+description: Open Mobility Indicators est un ensemble d’outils logiciels libres et collaboratifs qui traite les données ouvertes pour créer des indicateurs de mobilité durable.
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/open_mobility_indicators/OpenMobilityIndicators_apercu.png
 license: default
 tags:
     - marche
@@ -70,8 +70,6 @@ Toutes vos suggestions, questions, remarques et critiques sont bienvenues, et m�
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/pgen.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

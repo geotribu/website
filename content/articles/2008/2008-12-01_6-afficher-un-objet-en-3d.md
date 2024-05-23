@@ -5,16 +5,16 @@ authors:
 categories:
     - article
 comments: true
-date: 2008-12-01 10:20
-description: ""
+date: 2008-12-01
+description: ''
 image: ''
 license: default
 robots: index, follow
 tags:
-- Google Earth
-- 3D
-- API
-- Sketchup
+    - Google Earth
+    - 3D
+    - API
+    - Sketchup
 ---
 
 # 6. Afficher un objet en 3D
@@ -131,6 +131,4 @@ Sketchup est un logiciel de création d'objets 3D, voir le [site officiel](http:
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

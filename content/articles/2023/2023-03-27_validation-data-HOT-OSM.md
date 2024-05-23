@@ -1,12 +1,12 @@
 ---
-title: "Qualité des données : un voyage sur la plateforme humanitaire d'OpenStreetMap"
+title: 'Qualité des données : un voyage sur la plateforme humanitaire d''OpenStreetMap'
 authors:
     - Delphine Montagne
 categories:
     - article
 comments: true
-date: "2023-03-27 16:30"
-description: "Offrir des données de qualité quand elles sont produites par des centaines de personnes de niveaux différents est un défi. Focus sur les méthodes en cartographie humanitaire avec HOT OSM."
+date: 2023-03-27
+description: Offrir des données de qualité quand elles sont produites par des centaines de personnes de niveaux différents est un défi. Focus sur les méthodes en cartographie humanitaire avec HOT OSM.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/hot_qualite_contributions/hot_validation_qualite_donnees.png
 license: default
 robots: index, follow
@@ -198,8 +198,6 @@ Quant aux statistiques elles sont formelles : on passe beaucoup moins de temps �
 
 ----
 
-## Autrice
-
---8<-- "content/team/dmon.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

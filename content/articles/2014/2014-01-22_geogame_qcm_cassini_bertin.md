@@ -1,13 +1,13 @@
 ---
-title: "QCM de Cassini à Bertin"
+title: QCM de Cassini à Bertin
 authors:
     - Jérémie ORY
 categories:
     - article
 comments: true
-date: "2014-01-22 10:20"
-description: "Géogame de Geotribu : QCM (questions à choix multiples) sur l'histoire contemporaine française de la cartographie. De Cassini à Jacques Bertin, dix questions pour tester vos connaissances."
-image: "https://cdn.geotribu.fr/img/geogames/geogame1_capture.png"
+date: 2014-01-22
+description: 'Géogame de Geotribu : QCM (questions à choix multiples) sur l''histoire contemporaine française de la cartographie. De Cassini à Jacques Bertin, dix questions pour tester vos connaissances.'
+image: https://cdn.geotribu.fr/img/geogames/geogame1_capture.png
 tags:
     - cartographie
     - Géogame
@@ -34,6 +34,4 @@ Pour achever ce qui reste à faire, on se propose d'augmenter le nombre des ing�
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jory.md"
+<!-- geotribu:authors-block -->

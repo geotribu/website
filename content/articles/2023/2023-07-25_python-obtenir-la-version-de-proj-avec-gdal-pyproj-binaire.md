@@ -1,14 +1,14 @@
 ---
 title: Obtenir la version de PROJ installée en Python
-subtitle: "EPSG:9.2.1"
+subtitle: EPSG:9.2.1
 icon: material/spotlight
 authors:
     - Julien MOURA
 categories:
     - article
 comments: true
-date: 2023-07-25 10:20
-description: "Mémo technique : comment récupérer la version de PROJ installée depuis un script Python, avec GDAL, PyProj ou le binaire proj."
+date: 2023-07-25
+description: 'Mémo technique : comment récupérer la version de PROJ installée depuis un script Python, avec GDAL, PyProj ou le binaire proj.'
 image:
 license: beerware
 robots: index, follow
@@ -114,8 +114,6 @@ Et surtout que l'open source communautaire, c'est fichtrement vertueux !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

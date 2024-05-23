@@ -1,13 +1,13 @@
 ---
-title: "QCM Histoire de la cartographie"
+title: QCM Histoire de la cartographie
 authors:
     - Jérémie ORY
 categories:
     - article
 comments: true
-date: "2014-01-08 10:20"
-description: "Géogame de Geotribu : testez vos connaissances en histoire de la cartographie avec des questions à choix multiples (QCM)."
-image: "https://cdn.geotribu.fr/img/geogames/geogame1_capture.png"
+date: 2014-01-08
+description: 'Géogame de Geotribu : testez vos connaissances en histoire de la cartographie avec des questions à choix multiples (QCM).'
+image: https://cdn.geotribu.fr/img/geogames/geogame1_capture.png
 tags:
     - cartographie
     - Géogame
@@ -30,6 +30,4 @@ Vous êtes prêt ? c'est parti... Bonne chance !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jory.md"
+<!-- geotribu:authors-block -->

@@ -1,13 +1,13 @@
 ---
-title: "Rendez-vous aux GéoDataDays"
+title: Rendez-vous aux GéoDataDays
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: "2020-09-09 10:20"
-description: "On vous donne rendez-vous aux GéoDataDays 2020, les 15 et 16 septembre à Montpellier, l'événement indépendant de la géomatique francophone."
-image: "https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_2020_banniere.jpg"
+date: 2020-09-09
+description: On vous donne rendez-vous aux GéoDataDays 2020, les 15 et 16 septembre à Montpellier, l'événement indépendant de la géomatique francophone.
+image: https://cdn.geotribu.fr/img/external/salons_conferences/geodatadays/2020/geodatadays_2020_banniere.jpg
 tags:
     - Afigéo
     - événement
@@ -49,6 +49,4 @@ Tout ça pour dire qu'on se voit mardi !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->

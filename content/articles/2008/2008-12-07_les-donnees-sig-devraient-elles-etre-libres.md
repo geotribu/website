@@ -1,12 +1,12 @@
 ---
-title: "Les données SIG devraient-elles être libres ?"
+title: Les données SIG devraient-elles être libres ?
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2008-12-07 10:20
-description: "Et si les données SIG étaient libres ?"
+date: 2008-12-07
+description: Et si les données SIG étaient libres ?
 tags:
     - open data
     - SIG
@@ -56,6 +56,4 @@ En cadeau quelques sites permettant de télécharger librement des données SIG 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -1,13 +1,13 @@
 ---
-title: "Les interviews de Géotribu"
+title: Les interviews de Géotribu
 authors:
     - Geotribu
 categories:
     - article
 comments: true
-date: 2013-05-29 14:20
-description: "Avec le nouveau site, nouveau format sur Geotribu : les GeoInterviews."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/interview/interview_panneau.png"
+date: 2013-05-29
+description: 'Avec le nouveau site, nouveau format sur Geotribu : les GeoInterviews.'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/interview/interview_panneau.png
 tags:
     - GeoITW
     - Geotribu
@@ -39,6 +39,4 @@ L'evénement est accessible ici : **[GéoInterview de David Jonglez](https://plu
 <iframe src="http://www.youtube.com/embed/Ft9sCvkZnMs" allowfullscreen="" frameborder="0" height="315" width="100%"></iframe>
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

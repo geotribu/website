@@ -1,12 +1,12 @@
 ---
-title: "14. Se promener place du Capitole"
+title: 14. Se promener place du Capitole
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2008-11-17 10:20
-description: "14. Se promener place du Capitole"
+date: 2008-11-17
+description: 14. Se promener place du Capitole
 image: ''
 tags:
     - Google Maps
@@ -137,6 +137,4 @@ Il faut maintenant coupler la couche des photos sur la carte - <http://geotribu.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

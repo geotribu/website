@@ -1,12 +1,12 @@
 ---
-title: "18. Introduction à l'API v3"
+title: 18. Introduction à l'API v3
 authors:
     - Fabien Goblet
 categories:
     - article
 comments: true
-date: 2009-06-06 10:20
-description: "18. Introduction à l'API v3"
+date: 2009-06-06
+description: 18. Introduction à l'API v3
 tags:
     - API
     - Google Maps
@@ -104,6 +104,4 @@ Bien qu'encore à l'état bêta, il est tout à fait possible de créer une simp
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

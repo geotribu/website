@@ -1,13 +1,13 @@
 ---
-title: "Comment j'ai quantifié les inégalités de traitement météorologiques entre Brest et Dijon"
+title: Comment j'ai quantifié les inégalités de traitement météorologiques entre Brest et Dijon
 authors:
     - Victor ALEXANDRE
 categories:
     - article
 comments: true
-date: "2022-01-11 22:01"
-description: "Comment quantifier le temps passé par une présentatrice météo devant une zone de la carte de France : passer de la remarque d'un canapé à une réponse circonstanciée"
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/distance_moyenne_toutes_journees_toutes_sequences.jpg"
+date: 2022-01-11
+description: 'Comment quantifier le temps passé par une présentatrice météo devant une zone de la carte de France : passer de la remarque d''un canapé à une réponse circonstanciée'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/meteo_inegalites_traitement_avec_r/distance_moyenne_toutes_journees_toutes_sequences.jpg
 license: default
 robots: index, follow
 tags:
@@ -128,6 +128,4 @@ Voilà donc la conclusion de notre enquête : **il est 20 fois plus difficile de
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/vale.md"
+<!-- geotribu:authors-block -->
