@@ -231,7 +231,7 @@ pdal pipeline 2_pipeline.json \
 
 #### Identifier le sol
 
-On va maintenant utiliser l'algorithme  de classification *[Simple Morphological Filter (SMRF)](https://pdal.io/en/latest/stages/filters.smrf.html)*  pour distinguer le sol en excluant les points préalablement classifiés comme "bâtiment".
+On va maintenant utiliser l'algorithme  de classification _[Simple Morphological Filter (SMRF)](https://pdal.io/en/latest/stages/filters.smrf.html)_  pour distinguer le sol en excluant les points préalablement classifiés comme "bâtiment".
 
 Le pipeline de traitement est défini par :
 
@@ -284,7 +284,7 @@ pdal pipeline 3_ground.json \
 
 #### Identifier le sursol
 
-Ensuite, on relance l'algorithme de classification *[Simple Morphological Filter (SMRF)](https://pdal.io/en/latest/stages/filters.smrf.html)* en ajustant les paramètres pour isoler le sursol.
+Ensuite, on relance l'algorithme de classification _[Simple Morphological Filter (SMRF)](https://pdal.io/en/latest/stages/filters.smrf.html)_ en ajustant les paramètres pour isoler le sursol.
 
 Le pipeline de traitement est défini ainsi :
 
