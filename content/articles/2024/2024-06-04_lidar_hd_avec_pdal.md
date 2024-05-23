@@ -99,7 +99,7 @@ Maintenant, entrons dans le vif du sujet avec la présentation des différentes 
 
 Les fichiers bruts ayant été livrés au format 7-zip, la première étape consiste àextraire les 4 dalles contenues dans chaque fichier.
 
-```bash title="Décompression" linenums="1"
+```bash title="Décompression"
 # Installation de p7zip : sudo apt install p7zip
 7z x "$REPER/data_in/$base.7z" -o$REPER'/data_tmp/un7z'
 ```
