@@ -137,6 +137,9 @@ Ici on définit :
 }
 ```
 
+[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/1_colorize.json){: .md-button }
+{: align=middle }
+
 Ensuite dans le script "maître", je vais appeler mon pipeline au format `json` pour lancer la commande en définissant les variables correspondant aux fichiers à utiliser :
 
 - `readers.las.filename` : correspond au fichier en entrée qui est associé au `input.laz` du pipeline
@@ -149,9 +152,6 @@ pdal pipeline 1_colorize.json
   --filters.colorization.raster="/home/utilisateur/Documents/traitement_LIDAR/data_ortho/34-2021-0"$ref_ortho_x"-"$ref_ortho_y"-LA93-0M20-E080.jp2" \
   --writers.las.filename=$REPER'/data_tmp/colorisation/'${base}'/'$base_lidar'_color.laz'
 ```
-
-[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/1_colorize.json){: .md-button }
-{: align=middle }
 
 ![LiDAR colorisé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/colorisation.png){: .img-center loading=lazy }
 
@@ -213,6 +213,9 @@ Ensuite le même principe que pour la colorisation, on va créer un pipeline de 
 }
 ```
 
+[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/2_pipeline.json){: .md-button }
+{: align=middle }
+
 On exécute le pipeline en définissant nos données colorisées en entrée sur laquelle devra se faire la classification.
 
 ```bash title="Classification des bâtiments" linenums="1"
@@ -224,9 +227,6 @@ pdal pipeline 2_pipeline.json \
 
 !!! info
     L'argument `verbose` : permet d'afficher explicitement toutes les opérations effectuées par la commande pdal. Valeur autorisée de 0 à 8.
-
-[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/2_pipeline.json){: .md-button }
-{: align=middle }
 
 #### Identifier le sol
 
@@ -267,6 +267,9 @@ Le pipeline de traitement est défini par :
 }
 ```
 
+[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/3_ground.json){: .md-button }
+{: align=middle }
+
 Toujours sur le même principe, on définit les variables d'entrée et de sortie pour la bonne exécution :
 
 ```bash title="Extraction du sol" linenums="1"
@@ -275,9 +278,6 @@ pdal pipeline 3_ground.json \
   --readers.las.filename=$REPER'/data_tmp/filter/'${base}'/'${filename_lidar%%.*}'_filter.laz' \
   --writers.las.filename=$REPER'/data_tmp/ground/'${base}'/'$base_lidar'_ground.laz'
 ```
-
-[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/3_ground.json){: .md-button }
-{: align=middle }
 
 ![LiDAR - sol](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/sol.png){: .img-center loading=lazy }
 
@@ -324,6 +324,9 @@ Le pipeline de traitement est défini ainsi :
 }
 ```
 
+[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/4_non_ground.json){: .md-button }
+{: align=middle }
+
 On appelle le pipeline et on définit les variables :
 
 ```bash title="Extraction du sursol" linenums="1"
@@ -331,9 +334,6 @@ pdal pipeline 4_non_ground.json
   --readers.las.filename=$REPER'/data_tmp/filter/'${base}'/'${filename_lidar%%.*}'_filter.laz' \
   --writers.las.filename=$REPER'/data_tmp/no_ground/'${base}'/'$base_lidar'_no_ground.laz'
 ```
-
-[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/4_non_ground.json){: .md-button }
-{: align=middle }
 
 ![LiDAR - sursol](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/sursol.png){: .img-center loading=lazy }
 
@@ -380,6 +380,9 @@ Maintenant que toutes les dalles ont été traitées (4 dalles dans un fichier 7
 }
 ```
 
+[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/5_merge.json){: .md-button }
+{: align=middle }
+
 On paramètre maintenant la fusion des différentes dalles.
 
 ```bash title="fusion_sol" linenums="1"
@@ -391,9 +394,6 @@ pdal pipeline 5_merge.json
   --stage.las3.filename=$las_ground3 \
   --stage.las4.filename=$las_ground4
 ```
-
-[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/5_merge.json){: .md-button }
-{: align=middle }
 
 ![LiDAR - Lunel Sud - Fusion de 4 dalles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/lunel_sud.png){: .img-center loading=lazy }
 
@@ -423,6 +423,9 @@ La dernière étape consiste à générer un raster à partir du nuage de points
 }
 ```
 
+[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/6_ground_raster.json){: .md-button }
+{: align=middle }
+
 On appelle le pipeline et on définit les variables :
 
 ```bash title="Génération d'un raster" linenums="1"
@@ -430,9 +433,6 @@ pdal pipeline 6_ground_raster.json
   --readers.las.filename=$REPER'/data_tmp/ground/'${base}'_ground.laz' \
   --writers.gdal.filename=$REPER'/data_tmp/ground_raster/'${base}'_ground_raster.tif'
 ```
-
-[Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/6_ground_raster.json){: .md-button }
-{: align=middle }
 
 ![LiDAR - Export raster du sol](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/export_raster_sol.png){: .img-center loading=lazy }
 
