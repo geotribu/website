@@ -155,7 +155,6 @@ pdal pipeline 1_colorize.json
 
 ![LiDAR colorisé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/colorisation.png){: .img-center loading=lazy }
 
-
 ### Distinguer le sol et le sursol
 
 ![icône LiDAR](https://cdn.geotribu.fr/img/logos-icones/divers/lidar.jpg "icône LiDAR"){: .img-thumbnail-left }
@@ -331,7 +330,7 @@ On appelle le pipeline et on définit les variables :
 pdal pipeline 4_non_ground.json
   --readers.las.filename=$REPER'/data_tmp/filter/'${base}'/'${filename_lidar%%.*}'_filter.laz' \
   --writers.las.filename=$REPER'/data_tmp/no_ground/'${base}'/'$base_lidar'_no_ground.laz'
-```                                       
+```  
 
 [Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/4_non_ground.json){: .md-button }
 {: align=middle }
@@ -435,7 +434,7 @@ pdal pipeline 6_ground_raster.json
 [Consulter le fichier :fontawesome-regular-file-code:](https://github.com/igeofr/lidarhd_pdal/blob/main/6_ground_raster.json){: .md-button }
 {: align=middle }
 
-![LiDAR - Export raster du sol](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/export_raster du sol.png){: .img-center loading=lazy }
+![LiDAR - Export raster du sol](<https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/export_raster> du sol.png){: .img-center loading=lazy }
 
 ----
 
