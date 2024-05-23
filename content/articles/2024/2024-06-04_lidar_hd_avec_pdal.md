@@ -7,7 +7,7 @@ categories:
     - article
     - tutoriel
 date: 2024-06-04
-description: "LiDAR HD brut - Distinguer sol et sursol avec pdal"
+description: "Les données LiDAR HD brut ont été traitées avec PDAL pour coloriser le nuage de points et distinguer le sol et le sursol."
 icon: material/star-four-points-small
 license: beerware
 robots: index, follow
@@ -30,7 +30,7 @@ tags:
 
 ## Intro
 
-![logo IGN France]<https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png){>: .img-thumbnail-left }
+![logo IGN France](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png){: .img-thumbnail-left }
 
 Le relevé LiDAR (Light Detection and Ranging) est une technique de plus en plus utilisée pour la création de modèles numériques de précision. Cependant, les données LiDAR de part leur volumétrie et leurs spécificités, peuvent être difficiles à manipuler et à interpréter, en particulier lorsqu'il s'agit de distinguer le sol et le sursol.
 
@@ -403,7 +403,7 @@ pdal pipeline 5_merge.json
 La dernière étape consiste à générer un raster à partir du nuage de points classifié comme du sol en définissant :
 
 1. une variable d'entrée : `input.laz`
-2. [les paramètres de création du raster ) l'aide de gdal](https://pdal.io/en/2.6.0/stages/writers.gdal.html) :
+2. [les paramètres de création du raster à l'aide de gdal](https://pdal.io/en/2.6.0/stages/writers.gdal.html) :
     - Format : `GTiff`
     - La méthode d'interpolation
     - La résolution
