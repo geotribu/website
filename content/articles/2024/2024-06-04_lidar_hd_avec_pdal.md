@@ -441,7 +441,7 @@ pdal pipeline 6_ground_raster.json
 
 ## Conclusion
 
-Cette article avait vocation à montrer les fonctionnalités et le fonctionnement global de pdal.
+Cet article avait vocation à montrer les fonctionnalités et le fonctionnement global de PDAL.
 
 La méthode proposée pour distinguer le sol et le sursol à partir de données LIDAR est à repositionner dans le contexte de la livraison des fichiers bruts. Celle-ci est perfectible si on compare aux fichiers classifiés livrés par l'IGN mais elle a l'avantage d'être facilement adaptable dans un autre contexte et suffisamment robuste pour pouvoir traiter de vastes emprises.
 
