@@ -30,7 +30,7 @@ tags:
 
 ## Intro
 
-![logo IGN France]https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png){: .img-thumbnail-left }
+![logo IGN France]<https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png){>: .img-thumbnail-left }
 
 Le relevé LiDAR (Light Detection and Ranging) est une technique de plus en plus utilisée pour la création de modèles numériques de précision. Cependant, les données LiDAR de part leur volumétrie et leurs spécificités, peuvent être difficiles à manipuler et à interpréter, en particulier lorsqu'il s'agit de distinguer le sol et le sursol.
 
