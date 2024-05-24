@@ -149,6 +149,7 @@ pdal pipeline 1_colorize.json
   --filters.colorization.raster="/home/utilisateur/Documents/traitement_LIDAR/data_ortho/34-2021-0"$ref_ortho_x"-"$ref_ortho_y"-LA93-0M20-E080.jp2" \
   --writers.las.filename=$REPER'/data_tmp/colorisation/'${base}'/'$base_lidar'_color.laz'
 ```
+
 !!! info
     Le résultat de la colorisation est stocké dans l'attribut `rgb` des points LiDAR.
 ![LiDAR colorisé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/colorisation.png){: .img-center loading=lazy }
