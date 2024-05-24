@@ -1,5 +1,5 @@
 ---
-title: A la redécouverte de QGIS 0.x
+title: À la redécouverte de QGIS 0.x
 authors:
     - Julien MOURA
 categories:
@@ -7,6 +7,7 @@ categories:
 comments: true
 date: 2021-10-31
 description: Tiens et si on installait QGIS 0.9 Ganymède en 2021 et qu'on essayait de faire une carte ? Petit voyage dans le temps.
+icon: material/history
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9_ganymede_splash.png
 tags:
     - Halloween
