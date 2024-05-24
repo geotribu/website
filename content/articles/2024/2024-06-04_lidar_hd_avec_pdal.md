@@ -111,12 +111,8 @@ Les fichiers bruts ayant été livrés au format 7-zip, la première étape cons
 
 Dans cette étape, nous allons utiliser pdal pour affecter les informations colorimétriques de l'image aérienne sur chaque point LiDAR car cela facilite l'interprétation et améliore le rendu.
 
-!!! warning
+!!! warning inline end
     Il est important de noter que l'image aérienne utilisée n'est pas réalisée au même moment que le levé LiDAR, ce qui aura pour conséquence la justesse de la colorisation (c'est notamment le cas avec les voitures).
-
-!!! info
-    Le résultat de la colorisation est stocké dans l'attribut `rgb` des points LiDAR.
-
 Pour arriver au résultat, nous devons créer un [pipeline de traitement pdal (enchainement des étapes à réaliser)](https://pdal.io/en/latest/pipeline.html) au format `json` que l'on pourra ensuite appeler pour lancer une commande `pdal pipeline`.
 
 Ici on définit :
