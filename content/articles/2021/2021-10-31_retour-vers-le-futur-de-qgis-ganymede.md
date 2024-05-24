@@ -1,5 +1,6 @@
 ---
-title: À la redécouverte de QGIS 0.x
+title: À la redécouverte de QGIS 0.9 Ganymède
+subtitle: Archéologie logicielle
 authors:
     - Julien MOURA
 categories:
@@ -14,7 +15,7 @@ tags:
     - QGIS
 ---
 
-# Retour vers le futur de QGIS
+# Retour vers le futur de QGIS Ganymède
 
 :calendar: Date de publication initiale : 31 octobre 2021
 
