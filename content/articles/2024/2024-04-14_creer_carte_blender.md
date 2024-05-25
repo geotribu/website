@@ -201,10 +201,10 @@ En cliquant là :
 
 ![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img8_engine.png){: .img-center loading=lazy }
 
-Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. 
+Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources.
 
 !!! warning
-    Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). 
+    Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin).
 
 Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute.
 
