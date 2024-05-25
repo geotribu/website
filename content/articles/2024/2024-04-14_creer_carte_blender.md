@@ -23,6 +23,8 @@ tags:
 
 (et aussi un petit tuto GDAL en lignes de commandes)
 
+## Introduction
+
 Cet article se base sur celui initialement paru en anglais sur [somethingaboutmaps](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/), dont on remerciera l'auteur Daniel Huffman pour l'article initial et l'aimable autorisation d'écrire celui-ci.
 
 Ou comment faire des cartes qui ont la classe. Grossièrement, la technique consiste à déformer un plan avec un raster d'élévation.
@@ -48,8 +50,8 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
 - Dans QGIS, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format CSV qu'on nommera select.csv.
 - On ouvre ce fichier dans LibreOffice Calc (ou logiciel propriétaire équivalent) et on supprime l'entête des colonnes ainsi que toutes les colonnes sauf celle contenant le nom des tuiles.
 - Dans la colonne adjacente on écrit cette formule :
-    - Libre office : =CONCAT(A1;".asc")
-    - Excel : =CONCATENER(A1;".asc")
+    - Libre office : `=CONCAT(A1;".asc")`
+    - Excel : `=CONCATENER(A1;".asc")`
 - On applique la formule sur l'ensemble de la colonne et on remplace par les valeurs "en dur " avec un collage spécial
 - Puis on supprime la colonne d'origine.
 - Enfin on change à la brutasse l'extension du fichier en TXT ce qui nous donne une fois ouvert :
@@ -75,7 +77,7 @@ Pour remonter d'un cran dans l'arborescence :
 `cd ..`
 
 !!! tip "le nommage des fichiers et dossiers"
-  Vous vous souvenez de ces gens relous qui vous demandent des noms de dossiers/fichiers juste en alphanumériques et sans espaces mais avec des _ ? C'est pour ça.
+  Vous vous souvenez de ces gens relous qui vous demandent des noms de dossiers/fichiers juste en alphanumériques et sans espaces mais avec des `_` ? C'est pour ça.
 
 Les commandes GDAL sont accompagnées de `-` ou `--` et de lettres, ceci correspond aux options spécifiques du programme.
 
@@ -97,9 +99,9 @@ gdal_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
 
 Il faut ensuite normalement spécifier un par un les noms de fichiers à fusionner, ce qui serait fastidieux, mais l'option `--optfile` nous permet de passer un fichier contenant une liste, d'où les étapes précédentes !
 
-Dans le répertoire, vous trouverez votre geotiff mosaic.tif que je vous encourage à déplacer ailleurs pour vous y retrouver.
+Dans le répertoire, vous trouverez votre geotiff `mosaic.tif` que je vous encourage à déplacer ailleurs pour vous y retrouver.
 
-Dans ~~l'interface graphique de GDAL~~ QGIS cette étape est faisable via le menu raster -> Divers -> fusion (il faut au préalable charger l'ensemble des tuiles voulues dans QGIS).
+Dans ~~l'interface graphique de GDAL~~ QGIS cette étape est faisable via le menu `raster -> Divers -> fusion` (il faut au préalable charger l'ensemble des tuiles voulues dans QGIS).
 
 ### Reprojection
 
@@ -116,7 +118,7 @@ gdalwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
 
 Pour celles et ceux à l'aise avec GDAL, vous pouvez compresser les images pour réduire la taille des fichiers de sortie au moins en `deflate` (pour les autres, ça se fait en passant une seconde option pour le driver de type de fichier : `-co COMPRESS=methode`, la plus couramment utilisée étant `-co COMPRESS=DEFLATE` pour s'assurer de la compatibilité avec tous les systèmes/logiciels).
 
-Sinon, dans QGIS, ça se fait avec Raster -> Projection -> Assigner une projection.
+Sinon, dans QGIS, ça se fait avec `Raster -> Projection -> Assigner une projection`.
 
 ### Fausser les données
 
@@ -136,7 +138,7 @@ Avec `GDAL_calc.py`, les maths doivent être "[numpy](https://numpy.org/) style"
 - `--outfile` le nom du fichier de sortie (ça dépend des programmes GDAL, souvent c'est la position du nom qui fait foi dans la commande).
 - `--calc` la formule de calcul, entourée de `""`.
 
-Ou dans QGIS : raster -> calculatrice raster puis
+Ou dans QGIS : `raster -> calculatrice raster` puis
 
 ![calc_raster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img4_calc.png)
 
@@ -175,6 +177,8 @@ gdal_translate -ot UInt16 mosaic_rescale.tif mnt.tif
 
 ## Petite présentation de Blender et configuration
 
+![logo Blender](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/blender.png){: .img-thumbnail-left }
+
 Pour télécharger Blender ça se passe [ici](https://www.blender.org/download/). C'est un logiciel libre donc pas d'inquiétudes. (sur Linux il est aussi présent sur [Flatpak](https://flathub.org/apps/org.blender.Blender)).
 
 Faire le tour de Blender serait bien sûr beaucoup trop ambitieux ici, mais voici quelques indications de base pour celles et ceux qui n'ont jamais ouvert le logiciel.
@@ -197,9 +201,14 @@ En cliquant là :
 
 ![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img8_engine.png){: .img-center loading=lazy }
 
-Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. **Important :** Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute.
+Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources. 
 
-En fonction de votre carte graphique, vous pouvez aussi faire un tour par le menu edit -> preferences -> system et choisir en fonction de votre crémerie ce qui sera utilisé par Cycles. Choisir [OptiX](https://fr.wikipedia.org/wiki/OptiX) chez Nvidia / [HIP](https://rocm.docs.amd.com/projects/HIP/en/latest/index.html) chez AMD si votre configuration matérielle le supporte (hey, vous venez sur un tuto 3D, il faut s'attendre à ce genre de phrases !).
+!!! warning
+    Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin). 
+
+Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute.
+
+En fonction de votre carte graphique, vous pouvez aussi faire un tour par le menu `edit -> preferences -> system` et choisir en fonction de votre crémerie ce qui sera utilisé par Cycles. Choisir [OptiX](https://fr.wikipedia.org/wiki/OptiX) chez Nvidia / [HIP](https://rocm.docs.amd.com/projects/HIP/en/latest/index.html) chez AMD si votre configuration matérielle le supporte (hey, vous venez sur un tuto 3D, il faut s'attendre à ce genre de phrases !).
 
 Toujours là :
 
@@ -312,7 +321,7 @@ Dans notre cas on va l'utiliser pour faire croire à Blender que notre objet est
 ### Déplacement réel
 
 - On retourne dans le "shader editor".
-- Add -> vector -> [displacement](https://docs.blender.org/manual/fr/dev/render/shader_nodes/vector/vector_displacement.html)
+- `Add -> vector ->` [displacement](https://docs.blender.org/manual/fr/dev/render/shader_nodes/vector/vector_displacement.html)`
 
 ![true displacement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img18_t_displacement.png){: .img-center loading=lazy }
 
@@ -364,11 +373,13 @@ Comme dans l'article original, je vous incite à explorer les matériaux. Sauveg
 
 ## La caméra
 
+![caméra de surveillance](https://cdn.geotribu.fr/img/logos-icones/divers/camera_surveillance.png){: .img-thumbnail-left }
+
 On retourne dans le 3D view port. La caméra, c'est ce machin :
 
 ![la caméra](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img25_camera.png){: .img-center loading=lazy }
 
-Elle determine la position de la vue lors des rendus. En appuyant sur la touche 0 du pavé numérique de votre clavier vous pouvez "voir" ce que voit la caméra (réaappuyer sur 0 pour sortir). Si l'idée saugrenue d'utiliser Blender sur un pc portable sans pavé numérique vous est venue, il faudra à chaque fois passer par le menu View -> Cameras -> active Camera pour obtenir le même effet.
+Elle determine la position de la vue lors des rendus. En appuyant sur la touche 0 du pavé numérique de votre clavier vous pouvez "voir" ce que voit la caméra (réaappuyer sur 0 pour sortir). Si l'idée saugrenue d'utiliser Blender sur un pc portable sans pavé numérique vous est venue, il faudra à chaque fois passer par le menu `View -> Cameras -> active Camera` pour obtenir le même effet.
 
 On veut que notre caméra soit située juste au-dessus de notre plan, et avec un angle de 0 degré.
 
@@ -418,6 +429,8 @@ Maintenant, on peut s'intéresser à l'exagération du relief. On retourne dans 
 
 ## La lumière
 
+![Cadran solaire](https://cdn.geotribu.fr/img/logos-icones/divers/sundial.png "Cadran solaire"){: .img-thumbnail-left }
+
 On va maintenant régler la source de lumière qui éclaire notre sène. La source de lumière c'est ce truc :
 
 ![lumière](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img32_light.png){: .img-center loading=lazy }
@@ -456,13 +469,15 @@ Waoohh !!!
 
 ## Coloriser
 
+![Color](https://cdn.geotribu.fr/img/logos-icones/divers/color_wheel.png "Color"){: .img-thumbnail-left }
+
 Pour ça, je vais vous laissez vous reposer et ne pas ressortir GDAL, mais réouvrir un logiciel obscur nommé QGIS dans lequel on va charger notre raster d'élévation. L'idée va être de générer une image colorée qu'on appliquera ensuite dans Blender comme texture.
 
 Si vous avez de l'eau :
 
-On ouvre la calculatrice raster (raster -> calculatrice) et on tape juste cette formule `mnt@1 <= 0`. On enregistre sur le disque le résultat plutôt que de faire un raster virtuel car l'algorithme suivant veut un fichier (par exemple eau.tif). (le chiffre derriere le @ désigne le numéro de bande de l'image à utiliser).
+On ouvre la calculatrice raster (`raster -> calculatrice`) et on tape juste cette formule `mnt@1 <= 0`. On enregistre sur le disque le résultat plutôt que de faire un raster virtuel car l'algorithme suivant veut un fichier (par exemple eau.tif). (le chiffre derriere le @ désigne le numéro de bande de l'image à utiliser).
 
-Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés et rendre le résultat plus propre ( [GDAL_sieve.py](https://GDAL.org/programs/GDAL_sieve.html) ). Ca se passe avec raster -> Analyse -> Tamiser.
+Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés et rendre le résultat plus propre ( [GDAL_sieve.py](https://GDAL.org/programs/GDAL_sieve.html) ). Ca se passe avec `raster -> Analyse -> Tamiser`.
 
 - On sélectionne notre raster eau.
 - l'option `seuil` détermine la taille limite des polygones qui devront êtres fusionnés avec leur voisin le plus proche
@@ -470,7 +485,7 @@ Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction d
 
 Personnellement je choisis un seuil de 75 et je n'utilise pas 8-connectedness ici pour vraiment nettoyer.
 
-Enfin, on va polygoniser le résultat pour transformer ça en couche vecteur : raster -> conversion -> Polygoniser.
+Enfin, on va polygoniser le résultat pour transformer ça en couche vecteur : `raster -> conversion -> Polygoniser`.
 Cet algorithme ne permet pas de créer une couche vectorielle en mémoire, donc veillez à bien indiquer un fichier de sortie soit au format [Geopackage](https://www.geopackage.org/) (une base sqlite normée par l'[OGC](https://www.ogc.org/)), soit [FlatGeoBuf](http://flatgeobuf.org/) (format moderne optimisé cloud avec un fichier = une couche conçue pour la simplicité d'usage). Pas en [geojson](https://blog.ianturton.com/gis/2023/11/11/geojson.html) s'il vous plait.
 
 On fait un clic droit sur notre vecteur d'eau, et on choisi filtrer avec la formule suivante "DN"=1. DN est le champ où la valeur du raster a été conservée. Vous pouvez maintenant donner une couleur bleue à votre eau (voilà, vous pouvez être prof de sémiologie).
@@ -488,17 +503,19 @@ Pour le reste :
 
 ![menteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img38_menteur.png){: .img-center loading=lazy }
 
-Maintenant, essayez de zoomer sur la carte pour l'avoir la plus grande possible, mais complète sur votre écran. Puis choisir dans le menu Projet -> Importer/Exporter -> Exporter la carte au format image (ça permet d'exporter le contenu de votre canevas de carte sans passer par le composeur). Changez la résolution en 300 dpi et exporter au format PNG.
+Maintenant, essayez de zoomer sur la carte pour l'avoir la plus grande possible, mais complète sur votre écran. Puis choisir dans le menu `Projet -> Importer/Exporter -> Exporter la carte au format image` (ça permet d'exporter le contenu de votre canevas de carte sans passer par le composeur). Changez la résolution en 300 dpi et exporter au format PNG.
 
-Maintenant ouvrez cette image dans [The Gimp](https://www.gimp.org/), un éditeur d'image libre et open source. La seule et unique manipulation est de passer par le menu image -> rogner selon le contenu. Celà supprimera tout le blanc qui restait visible et d'obtenir une image avec le même ratio que notre mnt. Puis fichier -> écraser couleur.png (le nom de mon image).
+Maintenant ouvrez cette image dans [The Gimp](https://www.gimp.org/), un éditeur d'image libre et open source. La seule et unique manipulation est de passer par le menu `image -> rogner` selon le contenu. Celà supprimera tout le blanc qui restait visible et d'obtenir une image avec le même ratio que notre mnt. Puis `fichier -> écraser` `couleur.png` (le nom de mon image).
 
-On revient maintenant dans le `shader editor` de Blender. Comme pour ajouter notre mnt, on passe par le menu Add -> Texture -> Image texture. On sélectionne notre image de couleur, on n’oublie pas de passer l'interpolation en smart et l'extension en extend, mais on laisse le color space en sRGB. Puis on relie `color` à `Base color` de principled BSDF.
+On revient maintenant dans le `shader editor` de Blender. Comme pour ajouter notre mnt, on passe par le menu `Add -> Texture -> Image texture`. On sélectionne notre image de couleur, on n’oublie pas de passer l'interpolation en smart et l'extension en extend, mais on laisse le color space en sRGB. Puis on relie `color` à `Base color` de principled BSDF.
 
 ![coloriser](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img39_coloriser.png){: .img-center loading=lazy }
 
 Et on effectue le rendu final !!!
 
 ![render final](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img40_renderfinal.png){: .img-center loading=lazy }
+
+## Conclusion
 
 On pourrait bien sûr jouer un peu plus avec les réglages (je trouve par exemple mes ombres encore un peu trop profondes et pourrai passer du temps sur le paramètre angle de ma lumière soleil), ou les couleurs (je trouve ce vert bouteille assez moche), ou encore sur le tamisage de notre couche d'eau, mais vous avez maintenant la base de la technique !
 
