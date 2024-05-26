@@ -2,9 +2,10 @@
 title: Réaliser des cartes avec Blender - Partie 2
 subtitle: Blindé jusqu’au relief 2
 authors:
-  - Thomas Szczurek-Gayant
+
+- Thomas Szczurek-Gayant
 categories:
-  - article
+- article
 comments: true
 date: 2024-04-07
 description: Technique permettant de réaliser des cartes de relief avec le logiciel libre 3D Blender, ainsi qu'un petit tutoriel GDAL.
@@ -13,10 +14,11 @@ image:
 license: default
 robots: index, follow
 tags:
-  - 3D
-  - Blender
-  - cartographie
-  - GDAL
+- 3D
+- Blender
+- cartographie
+- GDAL
+
 ---
 
 # Réaliser des cartes avec Blender - Partie 2
