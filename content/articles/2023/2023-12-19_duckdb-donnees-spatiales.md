@@ -37,7 +37,7 @@ Si depuis quelques semaines, vous voyez passer beaucoup de choses sur des sujets
 
 ## DuckDB c’est quoi ?
 
-[DuckDB](https://duckdb.org/) est un SGBD (système de gestion de base de données) relationnel principalement écrit en C++ et [open source](https://github.com/duckdb/duckdb) publié sous[licence MIT](https://fr.wikipedia.org/wiki/Licence_MIT). Le projet a débuté en 2018 et vit beaucoup. Il fait l'objet de releases fréquentes (13 300 étoiles sur GitHub le 09/12/23) et en est à la version 0.9.2.
+[DuckDB](https://duckdb.org/) est un SGBD (système de gestion de base de données) relationnel principalement écrit en C++ et [open source](https://github.com/duckdb/duckdb) publié sous [licence MIT](https://fr.wikipedia.org/wiki/Licence_MIT). Le projet a débuté en 2018 et vit beaucoup. Il fait l'objet de releases fréquentes (13 300 étoiles sur GitHub le 09/12/23) et en est à la version 0.9.2.
 
 Ce SGBD a la particularité d'être sous forme de fichier portable (comme les bases GeoPackage, File GeoDatabase d'ESRI ou encore Access MDB) ce qui simplifie les échanges. Cette portabilité présente cependant un défaut : la non rétrocompatibilité entre les différentes versions de DuckDB. Un fichiers produit avec une version de DuckDB ne peut actuellement pas être lu avec une autre version de DuckDB.
 
@@ -53,7 +53,7 @@ Enfin, indépendamment du client de votre choix, DuckDB fonctionne en SQL. Dans 
 
 ## Les fonctions spatiales
 
-Les fonctions spatiales de DuckDB sont rassemblées dans une [extension](https://duckdb.org/docs/extensions/spatial.html) et sont pour la plupart issues de la librairie [GEOS](https://libgeos.org/). Néanmoins, toutes ne sont pas implémentées nativement dans le cœur de DuckDB. Si vous êtes un habitué des fonctions spatiales de PostGIS vous ne serez pas dépaysé en utilisant les fonctions spatiales du canard : la syntaxe et le nom des fonctions est extrêmement proche.
+Les fonctions spatiales de DuckDB sont rassemblées dans une [extension](https://duckdb.org/docs/extensions/spatial.html) et sont pour la plupart issues de la librairie [GEOS](https://libgeos.org/). Néanmoins, toutes ne sont pas implémentées nativement dans le cœur de DuckDB. Si vous êtes un habitué des fonctions spatiales de PostGIS vous ne serez pas dépaysé en utilisant les fonctions spatiales du canard : la syntaxe et le nom des fonctions sont extrêmement proches.
 
 On retrouve ainsi une bonne soixantaine de fonctions dont la star de la jointure spatiale `ST_Intersects(GEOMETRY, GEOMETRY)`.
 
