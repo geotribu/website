@@ -19,7 +19,7 @@ tags:
   - GDAL
 ---
 
-# Réaliser des cartes avec Blender
+# Réaliser des cartes avec Blender - Partie 1
 
 Pour cette première partie on ne touchera pas a Blender mais on va s'attarder sur la préparation des données avec GDAL en lignes de commandes.
 
