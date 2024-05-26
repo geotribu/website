@@ -175,7 +175,7 @@ gdal_translate -ot UInt16 mosaic_rescale.tif mnt.tif
 - `-ot` est l'option qui permet de forcer le type de données de sortie.
 - les fichiers d'entrée et de sortie se précisent par leur position dans la commande comme précisée dans la [**documentation**](https://GDAL.org/index.html) très complète de GDAL que je m'efforce de vous inciter à consulter depuis le début en vous en spammant le lien le plus de fois possible.
 
-La suite et Blender prochainement ! 
+La suite et Blender prochainement !
 
 <!-- geotribu:authors-block -->
 
