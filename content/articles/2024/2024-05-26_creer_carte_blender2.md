@@ -13,16 +13,15 @@ image:
 license: default
 robots: index, follow
 tags:
-
-- 3D
-- Blender
-- cartographie
-- GDAL
+    - 3D
+    - Blender
+    - cartographie
+    - GDAL
 ---
 
 # Réaliser des cartes avec Blender - Partie 2
 
-La suite de l'article précédent où nous nous étions attardés sur la préparation des données. Aujourddhui le gros morceaux, Blender !
+La suite de l'article précédent où nous nous étions attardés sur la préparation des données. Aujourd'hui le gros morceau : Blender !
 
 ## Petite présentation de Blender et configuration
 
