@@ -6,8 +6,8 @@ authors:
 categories:
   - article
 comments: true
-date: 2024-04-07
-description: Technique permettant de réaliser des cartes de relief avec le logiciel libre 3D Blender, ainsi qu'un petit tutoriel GDAL.
+date: 2024-05-28
+description: "Technique permettant de réaliser des cartes de relief avec le logiciel libre 3D Blender. Partie 1 : préparer les données avec GDAL et/ou QGIS."
 icon: simple/blender
 image:
 license: default
@@ -17,11 +17,12 @@ tags:
   - Blender
   - cartographie
   - GDAL
+  - relief
 ---
 
-# Réaliser des cartes avec Blender - Partie 1
+# Réaliser des cartes avec Blender - Partie 1 : préparer les données avec GDAL/QGIS
 
-Pour cette première partie on ne touchera pas a Blender mais on va s'attarder sur la préparation des données avec GDAL en lignes de commandes.
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
 
@@ -31,9 +32,17 @@ Ou comment faire des cartes qui ont la classe. Grossièrement, la technique cons
 
 Je vais ici utiliser le MNT à 1 mètre issu du [RGE ALTI](https://geoservices.ign.fr/rgealti) de l'IGN sur le département des Pyrénées-Atlantiques, ce qui permettra d'avoir du relief (ce qui rend bien avec cette technique) et de la mer (sacro-sainte règle des effets de manche pour avoir la classe : mettez de la flotte).
 
-Il y a plusieurs étapes de préparation des données et l'une d'entre elles nécessite obligatoirement l'utilisation de GDAL en ligne de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tous les pré-traitements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec QGIS).
+L'article est en deux partie. Pour cette première partie on ne touchera pas à Blender mais on va s'attarder sur la préparation des données.  
+Il y a plusieurs étapes de préparation et l'une d'entre elles nécessite obligatoirement l'utilisation de GDAL en ligne de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tous les pré-traitements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec QGIS).
 
 Ceci implique d'avoir accès à GDAL. Sur Windows, ça se passe en se rendant dans votre répertoire d'installation de QGIS, puis en démarrant OSGeo4W.bat. Je considère que les linuxiens sont assez aguerris pour se débrouiller (au pire faites-vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux apple-iens (sauf à ma cheffe de service car je suis bien obligé).
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+{: align=middle }
+
+<!-- more -->
+
+----
 
 ## Préparation des données
 
@@ -47,37 +56,44 @@ Sur ces considérations on chargera plutôt la couche "dalles" [dans le format d
 
 On va ici créer un fichier qui nous permettra de fusionner les dalles voulues pour notre carte.
 
-- Dans QGIS, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format CSV qu'on nommera select.csv.
-- On ouvre ce fichier dans LibreOffice Calc (ou logiciel propriétaire équivalent) et on supprime l'entête des colonnes ainsi que toutes les colonnes sauf celle contenant le nom des tuiles.
-- Dans la colonne adjacente on écrit cette formule :
+1. Dans QGIS, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format CSV qu'on nommera select.csv.
+1. On ouvre ce fichier dans LibreOffice Calc (ou logiciel propriétaire équivalent) et on supprime l'entête des colonnes ainsi que toutes les colonnes sauf celle contenant le nom des tuiles.
+1. Dans la colonne adjacente on écrit cette formule :
     - Libre office : `=CONCAT(A1;".asc")`
     - Excel : `=CONCATENER(A1;".asc")`
-- On applique la formule sur l'ensemble de la colonne et on remplace par les valeurs "en dur " avec un collage spécial
-- Puis on supprime la colonne d'origine.
-- Enfin on change à la brutasse l'extension du fichier en TXT ce qui nous donne une fois ouvert :
+1. On applique la formule sur l'ensemble de la colonne et on remplace par les valeurs "en dur " avec un collage spécial.
+1. Puis on supprime la colonne d'origine.
+1. Enfin on change à la brutasse l'extension du fichier en TXT ce qui nous donne une fois ouvert :
 
 ![exemple fichier tuile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img2_tuiles.png){: .img-center loading=lazy }
 
 - On déplace ce fichier directement dans le répertoire contenant les tuiles ASC téléchargées.
 
-Et maintenant GDAL coeuravélesdoigts.
+Et maintenant GDAL coeuravélesdoigts :heart_hands:.
 
-Pour les non-initiés à la ligne de commande, on se déplace dans un répertoire avec la commande cd (pour _change directory_). On peut soit passer un répertoire situé dans le repertoire courant, soit une adresse complète.
+#### Le moment ligne de commandes
 
-Ex :
+![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-thumbnail-left }
+
+Pour les non-initiés à la ligne de commande, on se déplace dans un répertoire avec la commande `cd` (pour _change directory_). On peut soit passer un répertoire situé dans le repertoire courant, soit une adresse complète.
+
+Exemple :
 
 - sur Linux : `cd /home/nabuchodonosor/Documents`
 - sur Windows : `cd C:\\\Users\nabuchodonosor\Documents`
 
-Sur Windows, pour changer de lecteur, juste indiquer la lettre et les deux points, sans cd (exemple `D:`).
+Sur Windows, pour changer de lecteur, juste indiquer la lettre et les deux points, sans `cd` (exemple `D:`).
 
 (on peut copier l'adresse dans l'explorateur et la coller pour se simplifier la vie)
 
 Pour remonter d'un cran dans l'arborescence :
-`cd ..`
+
+```sh
+cd ..
+```
 
 !!! tip "le nommage des fichiers et dossiers"
-  Vous vous souvenez de ces gens relous qui vous demandent des noms de dossiers/fichiers juste en alphanumériques et sans espaces mais avec des `_` ? C'est pour ça.
+    Vous vous souvenez de ces gens relous qui vous demandent des noms de dossiers/fichiers juste en alphanumériques et sans espaces mais avec des `_` ? C'est pour ça.
 
 Les commandes GDAL sont accompagnées de `-` ou `--` et de lettres, ceci correspond aux options spécifiques du programme.
 
@@ -89,13 +105,12 @@ On se déplace dans le dossier contenant les images. Exemple :
 
 On va ensuite utiliser [GDAL_merge.py](https://GDAL.org/programs/GDAL_merge.html), le programme de GDAL permettant de fusionner des images.
 
-```bash
+```sh
 gdal_merge.py -o mosaic.tif -co BIGTIFF=YES --optfile select.txt
 ```
 
-- L'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière GDAL donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension.
-
-- `-co` correspond aux options spécifiques non pas du programme mais du driver du type de fichier (ici geotiff). BIGTIFF permet de faire des tif de plus de 4gb. Ce n'est pas mon cas ici mais ça ne coute rien de passer la commande par sécurité.
+- l'option`-o` permet de spécifier le nom du fichier de sortie (c'est donc obligatoire). On ne caressera jamais assez dans le sens du poil les gens derrière GDAL donc on dit que c'est très fort et ça reconnait le type de fichier désiré juste avec l'extension.
+- `-co` correspond aux options spécifiques non pas du programme mais du driver du type de fichier (ici geotiff). BIGTIFF permet de faire des tif de plus de 4gb. Ce n'est pas mon cas ici mais ça ne coûte rien de passer la commande par sécurité.
 
 Il faut ensuite normalement spécifier un par un les noms de fichiers à fusionner, ce qui serait fastidieux, mais l'option `--optfile` nous permet de passer un fichier contenant une liste, d'où les étapes précédentes !
 
@@ -105,11 +120,13 @@ Dans ~~l'interface graphique de GDAL~~ QGIS cette étape est faisable via le men
 
 ### Reprojection
 
+![icône projection](https://cdn.geotribu.fr/img/logos-icones/divers/projection.png){: .img-thumbnail-left }
+
 On va maintenant reprojeter (vous vous souvenez des fichiers ASC ?) notre image avec [GDALwarp](https://GDAL.org/programs/GDALwarp.html) le programme servant à... reprojeter.
 
 Se déplacer dans le répertoire où vous avez placé l'image et :
 
-```bash
+```sh
 gdalwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
 ```
 
@@ -122,13 +139,13 @@ Sinon, dans QGIS, ça se fait avec `Raster -> Projection -> Assigner une project
 
 ### Fausser les données
 
-Oui. Nous allons commettre ceci. Ne sortez pas les bidons d'essence tout de suite s'il vous plaît. Pour ce que nous allons en faire, Blender n'accepte que les images en entier 16 bits non signés (UInt16, on y reviendra), donc une plage de valeur pour les pixels comprise entre 0 et 65 535. Mais sans virgules, ce que contient notre raster initial donc on perdrait du détail. L'idée est donc de réattribuer aux pixels de notre image des valeurs sur l'ensemble de cette plage, ceci pour bénéficier de l'entièreté de cette finesse.
+Oui. Nous allons commettre ceci. Ne sortez pas les bidons d'essence tout de suite s'il vous plaît. Pour ce que nous allons en faire, Blender n'accepte que les images en entier 16 bits non signés (`UInt16`, on y reviendra), donc une plage de valeur pour les pixels comprise entre 0 et 65 535. Mais sans virgules, ce que contient notre raster initial donc on perdrait du détail. L'idée est donc de réattribuer aux pixels de notre image des valeurs sur l'ensemble de cette plage, ceci pour bénéficier de l'entièreté de cette finesse.
 
 On fait ça avec [GDAL_calc.py](https://GDAL.org/programs/GDAL_calc.html) mais on peut aussi rester simple et faire ça avec la calculatrice raster de QGIS.
 
 Tout d'abord, on normalise notre raster car certaines valeurs peuvent êtres en dessous de 0 (notamment quand il y a de l'eau). On va donc les mettre à 0.
 
-```bash
+```sh
 gdal_calc.py -A moasicl93.tif --outfile=mosaic_cut.tif --calc="A*(A>=0)"
 ```
 
@@ -138,7 +155,7 @@ Avec `GDAL_calc.py`, les maths doivent être "[numpy](https://numpy.org/) style"
 - `--outfile` le nom du fichier de sortie (ça dépend des programmes GDAL, souvent c'est la position du nom qui fait foi dans la commande).
 - `--calc` la formule de calcul, entourée de `""`.
 
-Ou dans QGIS : `raster -> calculatrice raster` puis
+Ou dans QGIS : `raster -> calculatrice raster` puis :
 
 ![calc_raster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img4_calc.png)
 
@@ -146,7 +163,7 @@ if (condition, valeur si vrai, valeur si faux)
 
 On regarde les valeurs minimum et maximum de notre raster, soit dans les propriétés de la couche QGIS, soit avec [GDALinfo](https://GDAL.org/programs/GDALinfo.html).
 
-```bash
+```sh
 gdalinfo -mm mosaic_cut.tif
 ```
 
@@ -155,27 +172,38 @@ gdalinfo -mm mosaic_cut.tif
 ![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img5_minmax.png){: .img-center loading=lazy }
 
 Le calcul à faire pour réaffecter nos pixels est le suivant :
+
+```math
 (Valeur pixel – min) ÷ (max – min) * 65535
+```
 
 Dans mon cas cela donne :
 
-```bash
+```sh
 gdal_calc.py -A mosaic_cut.tif --outfile=mosaic_rescale.tif --calc="(A - 0) / (196.8 - 0) * 65535"
 ```
 
 Dans la calculatrice raster de QGIS, cela donnerait :
-("mosaic_cut@1" - 0) / (196.8 - 0) * 65535.
+
+```math
+("mosaic_cut@1" - 0) / (196.8 - 0) * 65535
+```
 
 Enfin, on va convertir notre raster en UInt16 pour l'importer dans Blender. C'est cette opération qui n'est pas réalisable dans QGIS sans circonvolutions. Donc on sort [GDAL_translate](https://GDAL.org/programs/GDAL_translate.html), le programme qui sert à faire des conversions.
 
-```bash
+```sh
 gdal_translate -ot UInt16 mosaic_rescale.tif mnt.tif
 ```
 
 - `-ot` est l'option qui permet de forcer le type de données de sortie.
 - les fichiers d'entrée et de sortie se précisent par leur position dans la commande comme précisée dans la [**documentation**](https://GDAL.org/index.html) très complète de GDAL que je m'efforce de vous inciter à consulter depuis le début en vous en spammant le lien le plus de fois possible.
 
-La suite et Blender prochainement !
+Voilà, nos données sont désormais fin prêtes !  
+La suite sous Blender prochainement !
+
+<!--
+[Lire la deuxième partie :fontawesome-solid-forward:](2024-06-11_carte-relief-ombre-avec-blender-partie-2-modelisation-reglages-cartographie.md){: .md-button }
+{: align=middle } -->
 
 <!-- geotribu:authors-block -->
 
