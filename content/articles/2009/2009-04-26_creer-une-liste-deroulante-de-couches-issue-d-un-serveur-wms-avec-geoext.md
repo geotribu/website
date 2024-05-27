@@ -71,6 +71,4 @@ Les deux paramètres importants à préciser sont :
 
 ----
 
-## Auteur
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

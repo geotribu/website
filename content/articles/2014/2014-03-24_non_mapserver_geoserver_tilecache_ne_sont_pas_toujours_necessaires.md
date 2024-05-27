@@ -117,6 +117,4 @@ Voilà comment au final vous pouvez créer votre application cartographique sans
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

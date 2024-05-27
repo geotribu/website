@@ -31,6 +31,4 @@ Une bonne nouvelle n'arrivant jamais seule j'ai eu le plaisir, ce matin, de déc
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -34,7 +34,7 @@ Dans ce tuto, je te propose de faire une carte inspirée de ses réalisations gr
 * Une dose de géo-données.
 * Un soupçon de créativité.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -194,6 +194,4 @@ Allé, à toi de jouer maintenant !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mgal.md"
+<!-- geotribu:authors-block -->

@@ -114,6 +114,4 @@ Merci à Patrick Hochstenbach pour avoir publié ce [billet](http://www.use-it.b
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

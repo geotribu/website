@@ -69,6 +69,4 @@ On remercie chaleureusement R. Mejean pour cette initiative et on espère que ce
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

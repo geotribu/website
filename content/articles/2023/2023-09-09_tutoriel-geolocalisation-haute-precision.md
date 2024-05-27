@@ -52,7 +52,7 @@ Il s'agit d'une alternative au [projet de création de rover initié par l'INRAE
 
 :warning: Je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et j'ignore la fiabilité des solutions matérielles ou logicielles choisies. Cet article a simplement pour but de partager une démarche et eventuellement d'alimenter la réflexion collective sur le sujet.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -211,7 +211,7 @@ Contributions qui pourraient être intéressantes :
 L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
 
 !!! info "Remerciement"
-    Merci à [Florian](../../team/fbor.md), pour la contextualisation du tutoriel.
+    Merci à [Florian](../../team/florian-boret.md), pour la contextualisation du tutoriel.
 
 ## Sources
 
@@ -227,8 +227,6 @@ L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jhan.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

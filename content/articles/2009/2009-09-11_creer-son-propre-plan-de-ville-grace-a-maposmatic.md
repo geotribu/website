@@ -47,6 +47,4 @@ Cet outil, en plus d'être simple d'utilisation, offre un service des plus utile
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

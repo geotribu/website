@@ -1,7 +1,7 @@
 ---
 title: Mongo Spatial
 authors:
-    - Geotribu
+    - Guillaume De Boyer
 categories:
     - article
 comments: true
@@ -151,6 +151,4 @@ C'est prêt :).
 
 ----
 
-## Auteur {: data-search-exclude }
-
-Guillaume
+<!-- geotribu:authors-block -->

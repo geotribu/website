@@ -208,9 +208,7 @@ On voit donc qu'il est possible d'automatiser l'installation et le déploiement 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [Git]: https://git-scm.com/

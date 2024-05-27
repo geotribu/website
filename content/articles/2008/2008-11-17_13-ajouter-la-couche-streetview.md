@@ -90,6 +90,4 @@ Les méthodes relatives à StreetView commencent ici : [http://code.google.com/a
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

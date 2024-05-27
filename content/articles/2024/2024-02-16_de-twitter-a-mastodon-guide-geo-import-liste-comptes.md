@@ -49,7 +49,7 @@ Mais je suis persuadé qu'il y a un intérêt à peupler ce réseau social de ge
 Essayez. Ça n'engage à rien. Vraiment.  
 Laissez vous guider, ça va bien se passer.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Choisir où créer son compte
@@ -243,9 +243,7 @@ Si l'article vous a intéressé et aidé à embarquer, venez donc le dire en ré
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
 

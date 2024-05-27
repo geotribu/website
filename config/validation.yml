@@ -1,5 +1,6 @@
 links:
   absolute_links: warn
+  anchors: ignore
   not_found: warn
   unrecognized_links: warn
 nav:

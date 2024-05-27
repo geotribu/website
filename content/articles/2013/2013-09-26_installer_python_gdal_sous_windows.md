@@ -286,6 +286,4 @@ Comme [GitHub for Windows](https://windows.github.com/) par exemple.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->

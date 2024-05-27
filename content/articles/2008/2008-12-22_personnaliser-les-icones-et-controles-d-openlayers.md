@@ -72,6 +72,4 @@ Ci-dessous voici quelques exemples présentant cette nouvelle classe ainsi que l
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

@@ -35,6 +35,4 @@ Au-delà de l'aspect simpliste de ce questionnaire, c'est une bonne chose pour l
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

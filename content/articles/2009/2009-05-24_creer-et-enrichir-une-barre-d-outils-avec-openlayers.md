@@ -80,6 +80,4 @@ Il est possible d'adapter le css à sa guise avec l'attribut displayClass. Preno
 
 ----
 
-## Auteur
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

@@ -92,6 +92,4 @@ Télécharger le script : Script [ToolTips V2](http://ks356007.kimsufi.com/arno/
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

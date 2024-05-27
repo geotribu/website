@@ -8,6 +8,9 @@ social:
   - icon: "fontawesome/brands/mastodon"
     link: https://mapstodon.space/@geotribu
     name: "Geotribu sur Mapstodon"
+  - icon: fontawesome/brands/bluesky
+    link: https://bsky.app/profile/geotribu.bsky.social
+    name: Geotribu sur BlueSky
   - icon: "fontawesome/brands/twitter"
     link: "https://twitter.com/geotribu"
     name: "Geotribu sur Twitter"
@@ -26,9 +29,6 @@ social:
   - icon: fontawesome/solid/paper-plane
     link: mailto:<geotribu@gmail.com>
     name: "Nous contacter"
-  - icon: "fontawesome/solid/feather-pointed"
-    link: http://pad.geotribu.fr/
-    name: "Editeur en ligne"
   - icon: "fontawesome/solid/piggy-bank"
     link: /team/sponsoring/
     name: "Le pot commun sur Tipee"

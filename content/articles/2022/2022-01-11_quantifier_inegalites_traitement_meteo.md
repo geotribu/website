@@ -35,7 +35,7 @@ Ceci est mon histoire.
 
 Ce projet, complètement con sur le fond, consiste à tenter de mesurer les variations autour de zones sur une vidéo. Je m'y suis penché en me disant que ce serait une occasion de faire de me faire la main sur du machine learning, pis en fait non.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -128,6 +128,4 @@ Voilà donc la conclusion de notre enquête : **il est 20 fois plus difficile de
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/vale.md"
+<!-- geotribu:authors-block -->

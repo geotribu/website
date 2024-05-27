@@ -23,6 +23,8 @@ site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 hooks:
   # - hooks/mkdocs/G002_check_images_size.py
   - hooks/mkdocs/G003_social_cards_adapter.py
+  - hooks/mkdocs/G005_jinja_filters.py
+  - hooks/mkdocs/G006_authors_block.py
 
 # Plugins
 plugins:
@@ -103,7 +105,6 @@ plugins:
       cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, false]
       cards_exclude:
-        - index.md
         - toc_nav_ignored/*.md
       cards_layout_options:
         background_color: "#00000000"
@@ -242,3 +243,6 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
+
+exclude_docs: |
+  toc_nav_ignored/*

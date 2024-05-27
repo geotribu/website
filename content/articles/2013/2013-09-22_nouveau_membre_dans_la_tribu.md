@@ -29,6 +29,4 @@ J'aimerais trouver le temps de faire quelques tutos à propos de R et de la cart
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/edel.md"
+<!-- geotribu:authors-block -->

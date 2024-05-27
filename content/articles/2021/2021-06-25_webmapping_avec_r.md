@@ -8,6 +8,7 @@ categories:
 comments: true
 date: 2021-06-25
 description: Comment réaliser des cartes interactives personnalisées simplement à l'aide de R et quelques packages
+icon: fontawesome/brands/r-project
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/exempletitre.png
 tags:
     - carte interactive
@@ -46,7 +47,7 @@ Vous êtes prêts ? Allez, pour bien comprendre, suivez bien les pas :trumpet:
 
 ![Carioca](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/GrizzledCircularArmedcrab-size_restricted.gif "Carioca"){: .img-center loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -594,16 +595,6 @@ Bon courage !
 
 ----
 
-## Auteur {: data-search-exclude }
+<!-- geotribu:authors-block -->
 
-### Romain Lacroix
-
-![Portrait Romain Lacroix](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/rl_225.jpg "Portrait Romain Lacroix"){: .img-thumbnail-left }
-
-Ingénieur SIG mutualisé entre différents organismes vitivinicoles de la Vallée du Rhône, mon travail consiste à simplifier le travail administratif d'une petite dizaine de milliers d'exploitations agricoles à travers des technologies SIG et d'assister les études techniques et expérimentations réalisées en viticulture et oenologie.
-
-Géographe attiré par les géostatistiques et la cartographie sous ses différentes formes, fouilleur de données (spatiales ou non), j'utilise essentiellement QGIS et R. Je produis à l'occasion quelques trucs visibles sur mon compte [Twitter](https://twitter.com/lacxrx).
-
-Je suis aussi un GISticier masqué !
-
-![GISticier masqué](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/GISticier_masque_zorro.jpg "GISticier masqué"){: .img-center loading=lazy; width: 50%;  }
+{% include "licenses/default.md" %}

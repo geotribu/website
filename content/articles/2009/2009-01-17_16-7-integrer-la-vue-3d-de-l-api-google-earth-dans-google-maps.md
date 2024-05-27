@@ -86,6 +86,4 @@ Rien de bien compliqué ici.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

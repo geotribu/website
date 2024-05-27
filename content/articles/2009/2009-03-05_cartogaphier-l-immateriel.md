@@ -51,9 +51,7 @@ Source :
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->
 
 <!-- Notes de bas de page -->
 [^1]: Retaille, 1987, cité par C. Davaud, in "Didactique de la géographie, un état de la question", CRPP, 1988.
