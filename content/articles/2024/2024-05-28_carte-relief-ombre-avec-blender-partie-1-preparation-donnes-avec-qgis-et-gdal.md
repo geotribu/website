@@ -65,9 +65,9 @@ On va ici créer un fichier qui nous permettra de fusionner les dalles voulues p
 1. Puis on supprime la colonne d'origine.
 1. Enfin on change à la brutasse l'extension du fichier en TXT ce qui nous donne une fois ouvert :
 
-![exemple fichier tuile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img2_tuiles.png){: .img-center loading=lazy }
+    ![exemple fichier tuile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img2_tuiles.png){: .img-center loading=lazy }
 
-- On déplace ce fichier directement dans le répertoire contenant les tuiles ASC téléchargées.
+1. On déplace ce fichier directement dans le répertoire contenant les tuiles ASC téléchargées.
 
 Et maintenant GDAL coeuravélesdoigts :heart_hands:.
 
