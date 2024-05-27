@@ -46,7 +46,7 @@ Les géo-traitements nécessaires à cette réalisation ont été faits avec Pos
 
 Pour faire la promotion de ces travaux au sein de la collectivité, nous avons décidé de "personnifier" le SIg que nous développons. Le nom retenu est SI3P0 (pour Système d'Information 3 Point 0) pour le côté "geek" de sa consonance et en lien avec le logo 3.0 du Gard qui fait référence au code officiel géographique du département.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

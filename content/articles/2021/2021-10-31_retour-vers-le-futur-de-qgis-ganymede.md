@@ -29,7 +29,7 @@ Ces jours-ci je formais quelques éminents membres des [CEN](https://fr.wikipedi
 
 Alors, plus de 12 ans après [notre article "A la découverte de Quantum GIS 1.0.0"](../2009/2009-08-28_a-la-decouverte-de-qgis.md), pour fêter la Toussaint / Halloween, je vous propose d'exhumer Quantum GIS 0.x et de voir si le cadavre bouge encore :skull: :headstone:.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

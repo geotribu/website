@@ -41,7 +41,7 @@ La solution que je développe ici est un projet libre de serveur permettant de p
 
 ![screenshot vectipy cadastre](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/vectipy/vectipy_rendu_exemple_cadastre.png "Affichage du cadastre sur une carte web"){: loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

@@ -41,7 +41,7 @@ Comment j'étais rincé à la fin de ces deux jours ! Et c'est sûrement pas à 
 
 Vivement la prochaine édition !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

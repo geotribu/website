@@ -30,7 +30,7 @@ Pré-requis :
 Fin 2020, une demande a émergé du service transport de ma collectivité qui souhaitait visualiser toutes les lignes de bus du territoire sur une même carte. De prime abord, cela ne me paraissait pas spécialement compliqué mais j'avais omis que plusieurs lignes pouvaient passer par des tronçons identiques et qu'il allait falloir gérer ces superpositions.  
 Après avoir parcouru internet, je suis tombé sur une solution apportée par un utilisateur sur le forum [gis.stackexchange.com](https://gis.stackexchange.com/questions/197384/how-to-split-overlapping-linestrings) et je vous propose de revenir sur la mise en oeuvre de cette solution pour nos 5 lignes de bus.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Constitution du réseau de bus

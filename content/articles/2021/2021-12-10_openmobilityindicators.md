@@ -28,7 +28,7 @@ la nouvelle version de l'application web "Mon quartier à pied" dans le cadre du
 
 ![OpenMobilityIndicators - Clapiers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/open_mobility_indicators/OpenMobilityIndicators_clapiers.png "OpenMobilityIndicators - Clapiers"){: .img-center loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

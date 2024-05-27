@@ -34,7 +34,7 @@ Les données cyclables d’OSM sont l’un des fondements de l’activité même
 La validité, la qualité, la cohérence et la complétude de ces données sont donc des rouages essentiels de la valeur ajoutée des produits Geovelo.  
 Nous participons donc activement à la communauté OSM, notamment grâce à [l'activité de notre cartographe](https://www.openstreetmap.org/user/simon_geovelo)  !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

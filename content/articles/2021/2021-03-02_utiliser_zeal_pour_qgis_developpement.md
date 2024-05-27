@@ -33,7 +33,7 @@ C'est un autre collègue qui m'en a reparlé récemment (coucou [Loïc](https://
 
 ![Capture d'écran de Zeal](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png "Zeal - Recherche filtrée sur PyQGIS"){: loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

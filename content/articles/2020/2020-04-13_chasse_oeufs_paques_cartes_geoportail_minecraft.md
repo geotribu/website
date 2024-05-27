@@ -34,7 +34,7 @@ Avec le confinement, la **chasse aux œufs** est compromise pour Pâques !
 
 Alors embarquez pour une chasse aux œufs virtuelle :rabbit: :egg: :bell:, **sans sortir de chez vous** ?
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
