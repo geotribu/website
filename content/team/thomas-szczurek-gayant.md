@@ -9,8 +9,8 @@ social:
     - linkedin: https://www.linkedin.com/in/thomas-szczurek-gayant-7406b5257/
     - mail:
     - mastodon:
-        - instance:
-        - username:
+        - instance: mapstodon.space
+        - username: thomas_szczurek
     - openstreetmap:
     - osgeo:
     - twitter:
