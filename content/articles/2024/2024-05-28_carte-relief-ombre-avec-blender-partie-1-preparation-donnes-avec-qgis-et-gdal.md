@@ -7,7 +7,7 @@ categories:
   - article
 comments: true
 date: 2024-05-28
-description: "Technique permettant de réaliser des cartes de relief avec le logiciel libre 3D Blender. Partie 1 : préparer les données avec GDAL et/ou QGIS."
+description: "Réaliser des cartes de relief avec le logiciel libre 3D Blender. Partie 1 : préparer les données avec GDAL et/ou QGIS."
 icon: simple/blender
 image:
 license: default
@@ -41,7 +41,7 @@ L'article est en **deux parties**.
 Pour cette première partie on ne touchera pas à Blender mais on va s'attarder sur la préparation des données.  
 Il y a plusieurs étapes de préparation et l'une d'entre elles nécessite obligatoirement l'utilisation de GDAL en ligne de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tous les pré-traitements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec QGIS).
 
-Ceci implique d'avoir accès à GDAL. Sur Windows, ça se passe en se rendant dans votre répertoire d'installation de QGIS, puis en démarrant OSGeo4W.bat. Vous pouvez plus simplement consulter cet artcile de Geotribu [Installer Python et GDAL sous Windows](https://geotribu.fr/articles/2013/2013-09-26_installer_python_gdal_sous_windows) ou encore celui-ci [Utiliser GDAL sous Windows avec WSL](https://geotribu.fr/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/#). Je considère que les linuxiens sont assez aguerris pour se débrouiller (au pire faites-vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux apple-iens (sauf à ma cheffe de service car je suis bien obligé).
+Ceci implique d'avoir accès à GDAL. Sur Windows, ça se passe en se rendant dans votre répertoire d'installation de QGIS, puis en démarrant OSGeo4W.bat. Vous pouvez plus simplement consulter cet article de Geotribu [Installer Python et GDAL sous Windows](https://geotribu.fr/articles/2013/2013-09-26_installer_python_gdal_sous_windows) ou encore celui-ci [Utiliser GDAL sous Windows avec WSL](https://geotribu.fr/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/#). Je considère que les linuxiens sont assez aguerris pour se débrouiller (au pire faites-vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux apple-iens (sauf à ma cheffe de service car je suis bien obligé).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
