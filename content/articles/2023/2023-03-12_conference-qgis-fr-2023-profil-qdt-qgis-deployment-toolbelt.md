@@ -50,7 +50,7 @@ C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.gith
 - [tout au clic sur des interfaces graphiques](#jaime-le-son-du-clic)
 - [tout à la ligne de commande](#jaime-le-bruit-des-touches)
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

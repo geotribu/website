@@ -52,7 +52,7 @@ Il s'agit d'une alternative au [projet de création de rover initié par l'INRAE
 
 :warning: Je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et j'ignore la fiabilité des solutions matérielles ou logicielles choisies. Cet article a simplement pour but de partager une démarche et eventuellement d'alimenter la réflexion collective sur le sujet.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

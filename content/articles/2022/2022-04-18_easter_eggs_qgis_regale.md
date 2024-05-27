@@ -55,7 +55,7 @@ Certaines entreprises comme Google s'en sont fait une spécialité ([carte 8 bit
 La carte est à l'évidence un media idéal pour mettre en jeu cette chasse aux oeufs qui revête d'autres aspects.  
 Revue à 4 mains des oeufs cartographiques, en particulier dans QGIS.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
