@@ -70,13 +70,13 @@ Toujours là :
 
 En descendant vous verrez "Sampling". Ces options permettent de configurer le nombre de passages qu'effectuera le moteur de rendu en changeant la valeur `max samples`. Je vous conseille de configurer Viewport (quand vous serez en train de travailler mais en affichant quelque chose proche du rendu) avec une valeur basse pour gagner du temps, et Render avec une valeur haute pour avoir un beau rendu final. Activer l'option Denoise dans les deux cas qui permet d'enlever du "bruit" sur les rendus. Sur l'image vous verrez ma proposition de paramétrage.
 
-Enfin la chose la plus importante, Blender fonctionne beaucoup avec les raccourcis clavier. Pour ajouter un objet : `Shift + A`.
+Enfin la chose la plus importante, Blender fonctionne beaucoup avec les raccourcis clavier. Pour ajouter un objet : ++maj+a++.
 
-Pour se déplacer, appuyez sur le bouton central de votre souris (le clic de la molette) pour tourner, maintenez shift en plus pour translater ou ctrl pour zoomer.
+Pour se déplacer, appuyez sur le bouton central de votre souris (le clic de la molette ++middle-button++) pour tourner, maintenez ++maj++ en plus pour translater ou ctrl pour zoomer.
 
 ## Modéliser le relief
 
-Tout d'abord, on retire cube par défaut en cliquant dessus pour le sélectionner puis en appuyant sur `suppr` de votre clavier et on ajoute un plan à notre scène. `shift + A` -> mesh -> plane. Ne pas supprimer la caméra et la source de lumière (les autres trucs présents dans la scène par défaut).
+Tout d'abord, on retire cube par défaut en cliquant dessus pour le sélectionner puis en appuyant sur ++suppr++ de votre clavier et on ajoute un plan à notre scène. ++maj+a++ -> `mesh` -> `plane`. Ne pas supprimer la caméra et la source de lumière (les autres trucs présents dans la scène par défaut).
 
 Par défaut les objets apparaissent sous le "curseur 3D" mais on va déplacer notre plan pour le mettre aux coordonnées x 0 y 0 z 0 pour se simplifier la vie si ce n'est pas le cas.
 
@@ -186,18 +186,18 @@ Et on modifie notre diagramme pour qu'il ressemble à ceci :
 Color vers height and displacement vers displacement. Ceci dit à Blender "regarde la couleur (clair ou sombre) et transforme ça en déplacement".
 
 !!! tip "Changer l'espace colorimétrique"
-  Tant que nous y sommes, changez le `color space` de votre texture MNT de `sRGB` à `non-color`.
-  Dans la majorité des cas, les textures sont utilisées pour appliquer une image sur des objets, mais ce n'est pas notre cas. Si on laisse en `sRGB`, Blender va appliquer une courbe de correction sur notre couleur de MNT au lieu d'attribuer une hauteur de relief de façon linéaire en fonction du niveau de gris.
+    Tant que nous y sommes, changez le `color space` de votre texture MNT de `sRGB` à `non-color`.
+    Dans la majorité des cas, les textures sont utilisées pour appliquer une image sur des objets, mais ce n'est pas notre cas. Si on laisse en `sRGB`, Blender va appliquer une courbe de correction sur notre couleur de MNT au lieu d'attribuer une hauteur de relief de façon linéaire en fonction du niveau de gris.
 
 Si vous effectuez un rendu maintenant vous constaterez que pas grand-chose n'a changé. En effet il faut demander à Blender d'arrêter de bump mapper et de modifier réellement steuplé.
 
-Dans les paramètres de notre matériau, sous la section `Settings`-> `Surface` réglez displacement à "displacement only".
+Dans les paramètres de notre matériau, sous la section `Settings`-> `Surface` réglez `displacement` à `displacement only`.
 
 ![true displacement 3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img20_t_displacement3.png){: .img-center loading=lazy }
 
-Vous pouvez tester un render et sous vos yeux émerveillés vous auto congratuler. Vous êtes beaux/belles et fort/es. (j'ai rien contre le point médian mais on devine que ce choix a été fait par des gens qui ne tapent pas sur un clavier d'ordinateur (c'est alt + 0183 mais sous ghostwritter ça marche pas)).
+Vous pouvez tester un render et sous vos yeux émerveillés vous auto congratuler. Vous êtes beaux/belles et fort/es. (j'ai rien contre le point médian mais on devine que ce choix a été fait par des gens qui ne tapent pas sur un clavier d'ordinateur ! C'est ++alt+0+1+8+3++ mais sous [ghostwritter](https://ghostwriter.kde.org/fr/) ça marche pas).
 
-![true displacement 3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img21_t_displacement4.png){: .img-center loading=lazy }
+![true displacement 4](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img21_t_displacement4.png){: .img-center loading=lazy }
 
 Vous remarquez cependant trois choses :
 
@@ -217,7 +217,7 @@ C'est déjà mieux !
 
 Pour améliorer nos temps de rendu, nous avons déjà modifié le nombre de passages. Mais il est aussi possible de diminuer la taille des tiles (ce qui permet d'avoir un aperçu plus rapide du résultat et de stopper le rendu si celà ne nous convient pas)
 
-Ca se passe ici :
+Ça se passe ici :
 
 ![tiles_size](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img24_tiles.png){: .img-center loading=lazy }
 
@@ -229,24 +229,24 @@ Comme dans l'article original, je vous incite à explorer les matériaux. Sauveg
 
 ![caméra de surveillance](https://cdn.geotribu.fr/img/logos-icones/divers/camera_surveillance.png){: .img-thumbnail-left }
 
-On retourne dans le 3D view port. La caméra, c'est ce machin :
+![Blender - La caméra](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img25_camera.png){: .img-right loading=lazy }
 
-![la caméra](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img25_camera.png){: .img-center loading=lazy }
+On retourne dans le 3D view port. La caméra, c'est ce machin ci-contre :
 
 Elle determine la position de la vue lors des rendus. En appuyant sur la touche 0 du pavé numérique de votre clavier vous pouvez "voir" ce que voit la caméra (réaappuyer sur 0 pour sortir). Si l'idée saugrenue d'utiliser Blender sur un pc portable sans pavé numérique vous est venue, il faudra à chaque fois passer par le menu `View -> Cameras -> active Camera` pour obtenir le même effet.
 
 On veut que notre caméra soit située juste au-dessus de notre plan, et avec un angle de 0 degré.
 
-- On la selection (elle devient orange)
+- On la sélectionne (elle devient orange)
 - On va dans le paneau des propriétés de l'objet.
-- Et dans Transform, on passe les valeurs de location x et y = 0, et z = 3 (la valeur de z n'a pas trop d'importance à part d'être supérieure à 0, voir plus bas)
-- Toujours dans transform, on passe toutes les valeurs de rotation à 0
+- Et dans `Transform`, on passe les valeurs de location x et y = 0, et z = 3 (la valeur de z n'a pas trop d'importance à part d'être supérieure à 0, voir plus bas)
+- Toujours dans `Transform`, on passe toutes les valeurs de rotation à 0
 
 ![réglages caméra](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img26_camera_settings.png){: .img-center loading=lazy }
 
 Si vous passez en vue caméra vous verrez qu'on commence à avoir quelque chose qui ressemblera a une carte.
 
-Il nous faut encore régler le ratio de la prise de vue pour le faire correspondre à celui de notre mnt/plan. Ca se fait dans les `output properties`. Dans Format (ou Dimensions dans d'anciennes versions de Blender), indiquez les dimensions en pixels de votre raster que vous aviez otenus avec GDALinfo. Ce paramètre modifie la résolution de sortie des rendus et vous verrez la caméra changer en fonction pour presque s'adapter aux dimensions de votre plan.
+Il nous faut encore régler le ratio de la prise de vue pour le faire correspondre à celui de notre mnt/plan. Ça se fait dans les `output properties`. Dans Format (ou Dimensions dans d'anciennes versions de Blender), indiquez les dimensions en pixels de votre raster que vous aviez otenus avec `gdalinfo`. Ce paramètre modifie la résolution de sortie des rendus et vous verrez la caméra changer en fonction pour presque s'adapter aux dimensions de votre plan.
 
 En dessous se trouve le symbole `%` qui adaptera la résolution indiquée par ce pourcentage lors des rendus. Cela peut être intéressant lors de rendus intermédiaires pour accélérer le processus, ou si comme moi votre raster est très grand et que vous avez des petits problèmes de mémoire lors des rendus.
 
@@ -289,17 +289,19 @@ On va maintenant régler la source de lumière qui éclaire notre sène. La sour
 
 ![lumière](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img32_light.png){: .img-center loading=lazy }
 
-Après l'avoir sélectionnée, cliquez sur l'icône en forme de bulbe d'ampoule pour accéder à ses propriétés.
+Après l'avoir sélectionnée, cliquez sur l'icône en forme de bulbe d'ampoule :bulb: pour accéder à ses propriétés.
 
 ![réglages lumière](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img33_light2.png){: .img-center loading=lazy }
 
-Plusieurs types de sources sont possibles (ampoule, spot...). Mais dans notre cas on veut une lumière naturelle. Choisir donc "boule de feu géante abritant en son coeur des réactions de fusion nucléaire qui se transformera en [naine blanche](https://fr.wikipedia.org/wiki/Naine_blanche) à sa mort mais pas avant d'avoir enflé jusqu'aux limites de la terre la carbonisant au passage mais qui si elle était plus massive finirait en [étoile à neutrons](https://fr.wikipedia.org/wiki/%C3%89toile_%C3%A0_neutrons) voir en [trou noir stellaire](https://fr.wikipedia.org/wiki/Trou_noir_stellaire) dont notre physique n'arrive pas à expliquer les singularités centrales sans unifier la relativité générale et la quantique et ça fait 100 ans qu'on cherche, prend ça dans ta face la science."
+Plusieurs types de sources sont possibles (ampoule, spot...). Mais dans notre cas on veut une lumière naturelle.
 
-Ou bien juste sun (ça veut dire [soleil](https://fr.wikipedia.org/wiki/Soleil)).
+Choisir donc "boule de feu géante abritant en son coeur des réactions de fusion nucléaire qui se transformera en [naine blanche](https://fr.wikipedia.org/wiki/Naine_blanche) à sa mort mais pas avant d'avoir enflé jusqu'aux limites de la terre la carbonisant au passage mais qui si elle était plus massive finirait en [étoile à neutrons](https://fr.wikipedia.org/wiki/%C3%89toile_%C3%A0_neutrons) voir en [trou noir stellaire](https://fr.wikipedia.org/wiki/Trou_noir_stellaire) dont notre physique n'arrive pas à expliquer les singularités centrales sans unifier la relativité générale et la quantique et ça fait 100 ans qu'on cherche, prend ça dans ta face la science."
+
+Ou bien juste `sun` (ça veut dire [soleil](https://fr.wikipedia.org/wiki/Soleil)) :sun:.
 
 Pour celles et ceux qui préfèrent la première version, je vous conseille [ceci](https://www.youtube.com/watch?v=zjIC6jIQRKQ) (avec un type qui a des patchs sur les coudes de ses vestes). Il a aussi écrit [ça](https://www.dunod.com/sciences-techniques/univers-multiples-nouveaux-horizons-cosmiques) si vous voulez vous retourner la tête. Si vraiment vous êtes hardcore il y a aussi [ceci](https://www.odilejacob.fr/catalogue/sciences/astronomie-astrophysique-cosmologie/ecume-de-l-espace-temps_9782738139719.php). Promis j'arrête.
 
-Une ampoule près de vous enverra ses rayons dans toutes les directions. Dans le cas du soleil, il est suffisamment éloigné (et gros) pour que ses rayons arrivent à nous orientés tous selon le même angle (rappelez-vous vos cours de pourquoi qu'il fait chaud à l'équateur et froid aux pôles). C'est ce que simulera Blender en douchant notre scène de lumière provenant d'une unique direction.
+Une ampoule près de vous enverra ses rayons dans toutes les directions. Dans le cas du soleil, il est suffisamment éloigné (et gros) pour que ses rayons arrivent à nous orienter tous selon le même angle (rappelez-vous vos cours de pourquoi qu'il fait chaud à l'équateur et froid aux pôles). C'est ce que simulera Blender en douchant notre scène de lumière provenant d'une unique direction.
 
 Avec ce type de lumière, la position de l'objet la générant dans la scène n'est pas importante. Si vous effectuez un rendu maintenant vous vous rendrez compte que tout est très surexposé car nous n'avons pas réglé sa force (strength). Passons ce paramètre de 1000 à ... 5.
 
@@ -309,7 +311,7 @@ Indiquer 0 pour x, 45 pour y et 135 pour z.
 
 ![réglages lumière](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img34_light3.png){: .img-center loading=lazy }
 
-La valeur de y contrôle l'angle par rapport à l'horizon, et celle de z la direction de provenance. Une valeur de 135 vous donne une lumière qui arrive du Nord Ouest (en haut à gauche quoi), ce à quoi l'oeil humain est habitué pour une carte. Mettre 225 donnerai l'impression que notre relief est inversé.
+La valeur de `y` contrôle l'angle par rapport à l'horizon, et celle de `z` la direction de provenance. Une valeur de 135 vous donne une lumière qui arrive du Nord Ouest (en haut à gauche quoi), ce à quoi l'oeil humain est habitué pour une carte. Mettre 225 donnerait l'impression que notre relief est inversé.
 
 Le tout dernier réglage à faire est de régler la taille de notre soleil. On reclique sur la petite ampoule verte et on regarde le paramètre Angle, mal nommé puisqu'il correspond au [diamètre angulaire](https://fr.wikipedia.org/wiki/Taille_apparente). Changer sa valeur régle la _douceur_ de la lumière. Avec une valeur basse par défaut, notre lumière nous donne un relief lunaire, essayez plutôt une valeur de 90 pour quelque chose de plus doux.
 
@@ -331,7 +333,7 @@ Si vous avez de l'eau :
 
 On ouvre la calculatrice raster (`raster -> calculatrice`) et on tape juste cette formule `mnt@1 <= 0`. On enregistre sur le disque le résultat plutôt que de faire un raster virtuel car l'algorithme suivant veut un fichier (par exemple eau.tif). (le chiffre derriere le @ désigne le numéro de bande de l'image à utiliser).
 
-Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés et rendre le résultat plus propre ( [GDAL_sieve.py](https://GDAL.org/programs/GDAL_sieve.html) ). Ca se passe avec `raster -> Analyse -> Tamiser`.
+Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction de la hauteur par rapport au niveau de la mer. Comme notre raster d'origine est très précis, on va le tamiser pour retirer les pixels isolés et rendre le résultat plus propre ( [GDAL_sieve.py](https://GDAL.org/programs/GDAL_sieve.html) ). Ça se passe avec `raster -> Analyse -> Tamiser`.
 
 - On sélectionne notre raster eau.
 - l'option `seuil` détermine la taille limite des polygones qui devront êtres fusionnés avec leur voisin le plus proche
@@ -340,26 +342,30 @@ Celà nous permet de générer un raster comprenant des 0 et des 1 en fonction d
 Personnellement je choisis un seuil de 75 et je n'utilise pas 8-connectedness ici pour vraiment nettoyer.
 
 Enfin, on va polygoniser le résultat pour transformer ça en couche vecteur : `raster -> conversion -> Polygoniser`.
-Cet algorithme ne permet pas de créer une couche vectorielle en mémoire, donc veillez à bien indiquer un fichier de sortie soit au format [Geopackage](https://www.geopackage.org/) (une base sqlite normée par l'[OGC](https://www.ogc.org/)), soit [FlatGeoBuf](http://flatgeobuf.org/) (format moderne optimisé cloud avec un fichier = une couche conçue pour la simplicité d'usage). Pas en [geojson](https://blog.ianturton.com/gis/2023/11/11/geojson.html) s'il vous plait.
+Cet algorithme ne permet pas de créer une couche vectorielle en mémoire, donc veillez à bien indiquer un fichier de sortie :
+
+- soit au format [Geopackage](https://www.geopackage.org/), une base SQLite normée par l'[OGC](https://www.ogc.org/)
+- soit [FlatGeoBuf](http://flatgeobuf.org/), un format moderne optimisé cloud avec un fichier = une couche conçue pour la simplicité d'usage
+- pas en [geojson](https://blog.ianturton.com/gis/2023/11/11/geojson.html) s'il vous plait.
 
 On fait un clic droit sur notre vecteur d'eau, et on choisi filtrer avec la formule suivante "DN"=1. DN est le champ où la valeur du raster a été conservée. Vous pouvez maintenant donner une couleur bleue à votre eau (voilà, vous pouvez être prof de sémiologie).
 
 Pour le reste :
 
-- On selectionne notre raster de mnt, et dans son style on change bande grise unique pour Pseudo-couleur à bande unique.
-- Dans palette de couleur, on choisi "créer une nouvelle palette" puis "catalogue cpt-city"
+1. On selectionne notre raster de mnt, et dans son style on change bande grise unique pour Pseudo-couleur à bande unique.
+1. Dans palette de couleur, on choisit "créer une nouvelle palette" puis "catalogue cpt-city"
 
-![catalogue cpt city](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img37_cptcity.png){: .img-center loading=lazy }
+    ![catalogue cpt city](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img37_cptcity.png){: .img-center loading=lazy }
 
-- Descendre dans la section "Topography" et par exemple choisir "DEM_screen"
-- Une fois validé cliquez sur "classer"
-- Pour bien faire il faudrait rectifier la palette en fonction de vos hauteurs maximums mais comme je commence à vraiment aimer pouvoir finir (autre manière de dire : j'ai la grosse flemme), j'aurai des hauteurs de 198 mètres qui paraitront couvertes de neiges éternelles.
+1. Descendre dans la section "Topography" et par exemple choisir "DEM_screen"
+1. Une fois validé cliquez sur "classer"
+1. Pour bien faire il faudrait rectifier la palette en fonction de vos hauteurs maximums mais comme je commence à vraiment aimer pouvoir finir (autre manière de dire : j'ai la grosse flemme), j'aurai des hauteurs de 198 mètres qui paraitront couvertes de neiges éternelles.
 
 ![menteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img38_menteur.png){: .img-center loading=lazy }
 
 Maintenant, essayez de zoomer sur la carte pour l'avoir la plus grande possible, mais complète sur votre écran. Puis choisir dans le menu `Projet -> Importer/Exporter -> Exporter la carte au format image` (ça permet d'exporter le contenu de votre canevas de carte sans passer par le composeur). Changez la résolution en 300 dpi et exporter au format PNG.
 
-Maintenant ouvrez cette image dans [The Gimp](https://www.gimp.org/), un éditeur d'image libre et open source. La seule et unique manipulation est de passer par le menu `image -> rogner` selon le contenu. Celà supprimera tout le blanc qui restait visible et d'obtenir une image avec le même ratio que notre mnt. Puis `fichier -> écraser` `couleur.png` (le nom de mon image).
+Maintenant ouvrez cette image dans [The Gimp](https://www.gimp.org/), un éditeur d'image libre, gratuit et open source. La seule et unique manipulation est de passer par le menu `image -> rogner` selon le contenu. Celà supprimera tout le blanc qui restait visible et d'obtenir une image avec le même ratio que notre mnt. Puis `fichier -> écraser` `couleur.png` (le nom de mon image).
 
 On revient maintenant dans le `shader editor` de Blender. Comme pour ajouter notre mnt, on passe par le menu `Add -> Texture -> Image texture`. On sélectionne notre image de couleur, on n’oublie pas de passer l'interpolation en smart et l'extension en extend, mais on laisse le color space en sRGB. Puis on relie `color` à `Base color` de principled BSDF.
 
