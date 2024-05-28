@@ -36,7 +36,7 @@ Nous proposons dans ce billet de **construire étape par étape une [carte Web 1
 
 ![carte presentation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/carte_presentation.JPG "Carte de presentation"){: .img-center loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

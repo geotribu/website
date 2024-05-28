@@ -1,7 +1,10 @@
 tags:
+  3D: 3d
   atlas: atlas
   base de données: database
   Bash: code
+  Blender: blender
+  cartographie: carte
   Centipede: satellite
   CNIG: institution
   collecte: telephone
@@ -19,6 +22,7 @@ tags:
   FIG: conference
   FME: roue
   FOSS4G: conference
+  GDAL: gdal
   GéoDataDays: conference
   GeoGames: manette
   GeoKettle: roue
@@ -56,9 +60,11 @@ tags:
   Mastodon: mastodon
   Matrix: commentaires
   Minecraft: manette
+  modèle numérique d'élévation: terrain
   MySQL: database
   NoSQL: database
   ODK: telephone
+  OGR: GDAL
   Open Data Kit: telephone
   OpenDroneMap: drone
   OpenPathView: streetview
@@ -84,8 +90,10 @@ tags:
   Python: python
   PyWPS: python
   QField: telephone
-  QGIS: globe
+  QGIS: qgis
   R: rstats
+  raster: raster
+  relief: terrain
   réseaux sociaux: rezosocio
   route: route
   routing: route

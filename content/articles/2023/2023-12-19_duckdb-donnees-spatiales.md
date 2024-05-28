@@ -30,7 +30,7 @@ tags:
 
 Si depuis quelques semaines, vous voyez passer beaucoup de choses sur des sujets comme DuckDB, les fichiers Parquet ou encore les données d’Overture Maps, mais sans trop comprendre de quoi il s’agit, vous êtes au bon endroit !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

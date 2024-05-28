@@ -46,7 +46,7 @@ Voici le scénario proposé :
     - peuvent prendre des photos.
 - L’admin exporte ces données vers un service professionnel de cartographie
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
  {: align=middle }
 
 ## Côté adminstrateur de données

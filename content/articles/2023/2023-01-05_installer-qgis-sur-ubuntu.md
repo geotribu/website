@@ -39,7 +39,7 @@ Enfin, on ne va pas râler puisque c'est gratuit, qu'on n'est pas le produit et 
 Comme je n'installe ni ne réinstalle QGIS tous les 4 matins, je me note la procédure ici histoire de pouvoir la retrouver et la partager facilement.  
 Vu que c'est un sujet vivant, je tenterai de mettre ce tutoriel à jour de temps à autre mais n'hésitez pas à signaler un souci ou à [proposer un ajustement](https://contribuer.geotribu.fr/edit/fix_content_from_website/).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

@@ -41,7 +41,7 @@ Série **Accès aux données Copernicus/Sentinel** :
 * [Partie 1 : données OCS et Sentinel](2023-02-21_portails-copernicus-1-donnees.md).
 * [Partie 3 : évolution de l'accès aux données Copernicus](2023-03-07_portails-copernicus-3-futur.md).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

@@ -34,7 +34,7 @@ Input App est stable, open source et disponible pour Android et iOS. Les dévelo
 
 Dans la suite de ce tutoriel, je vais me concentrer sur cette solution, en prenant l’exemple d’un inventaire d’arbres urbains.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

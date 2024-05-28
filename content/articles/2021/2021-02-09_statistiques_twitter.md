@@ -37,7 +37,7 @@ Et puis c'est aussi l'occasion de faire un article sur le forage de données ([u
 
 ![banner geotribu stats twitter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png "Geotribu stats Twitter"){: .img-center loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Récupérer les données de Twitter grâce à Twint
