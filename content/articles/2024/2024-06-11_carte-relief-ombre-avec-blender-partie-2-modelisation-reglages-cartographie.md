@@ -70,13 +70,13 @@ Toujours là :
 
 En descendant vous verrez "Sampling". Ces options permettent de configurer le nombre de passages qu'effectuera le moteur de rendu en changeant la valeur `max samples`. Je vous conseille de configurer Viewport (quand vous serez en train de travailler mais en affichant quelque chose proche du rendu) avec une valeur basse pour gagner du temps, et Render avec une valeur haute pour avoir un beau rendu final. Activer l'option Denoise dans les deux cas qui permet d'enlever du "bruit" sur les rendus. Sur l'image vous verrez ma proposition de paramétrage.
 
-Enfin la chose la plus importante, Blender fonctionne beaucoup avec les raccourcis clavier. Pour ajouter un objet : ++maj+a++.
+Enfin la chose la plus importante, Blender fonctionne beaucoup avec les raccourcis clavier. Pour ajouter un objet : ++shift+a++.
 
-Pour se déplacer, appuyez sur le bouton central de votre souris (le clic de la molette ++middle-button++) pour tourner, maintenez ++maj++ en plus pour translater ou ctrl pour zoomer.
+Pour se déplacer, appuyez sur le bouton central de votre souris (++middle-button++) pour tourner, maintenez ++shift++ en plus pour translater ou ctrl pour zoomer.
 
 ## Modéliser le relief
 
-Tout d'abord, on retire cube par défaut en cliquant dessus pour le sélectionner puis en appuyant sur ++suppr++ de votre clavier et on ajoute un plan à notre scène. ++maj+a++ -> `mesh` -> `plane`. Ne pas supprimer la caméra et la source de lumière (les autres trucs présents dans la scène par défaut).
+Tout d'abord, on retire cube par défaut en cliquant dessus pour le sélectionner puis en appuyant sur ++delete++ de votre clavier et on ajoute un plan à notre scène. ++shift+a++ -> `mesh` -> `plane`. Ne pas supprimer la caméra et la source de lumière (les autres trucs présents dans la scène par défaut).
 
 Par défaut les objets apparaissent sous le "curseur 3D" mais on va déplacer notre plan pour le mettre aux coordonnées x 0 y 0 z 0 pour se simplifier la vie si ce n'est pas le cas.
 
