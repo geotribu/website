@@ -219,9 +219,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys:
       key_map:
-        maj: MAJ
-        suppr: Suppr
-        verr_maj: VER MAJ
+        shift: MAJ
+        delete: Suppr
+        caps-lock: "🄰 VER MAJ"
+        middle-button: "🖱️ clic molette"
   - pymdownx.smartsymbols
   - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
