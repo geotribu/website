@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-06-11
-description: Technique permettant de réaliser des cartes de relief avec le logiciel libre 3D Blender, ainsi qu'un petit tutoriel GDAL.
+description: "Réaliser des cartes de relief avec le logiciel libre 3D Blender. Partie 2 : préparer les données avec GDAL et/ou QGIS."
 icon: simple/blender
 image:
 license: default
@@ -17,17 +17,23 @@ tags:
     - Blender
     - cartographie
     - GDAL
+    - relief
 ---
 
 # Réaliser des cartes avec Blender - Partie 2
 
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
 La suite de l'article précédent où nous nous étions attardés sur la préparation des données. Aujourd'hui le gros morceau : Blender !
+
+[Lire la première partie :fontawesome-solid-backward:](./2024-05-28_carte-relief-ombre-avec-blender-partie-1-preparation-donnes-avec-qgis-et-gdal.md "Réaliser des cartes avec Blender - Partie 1 : préparation des données"){: .md-button }
+{: align=middle }
 
 ## Petite présentation de Blender et configuration
 
 ![logo Blender](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/blender.png){: .img-thumbnail-left }
 
-Pour télécharger Blender ça se passe [ici](https://www.blender.org/download/). C'est un logiciel libre donc pas d'inquiétudes. (sur Linux il est aussi présent sur [Flatpak](https://flathub.org/apps/org.blender.Blender)).
+Pour télécharger Blender ça se passe [ici](https://www.blender.org/download/). Côté Windows, il est disponible dans le Windows Store et sur Linux il est aussi présent sur [Flatpak](https://flathub.org/apps/org.blender.Blender) si vous aimez ces formats de distribution. C'est un logiciel libre et gratuit, donc pas d'inquiétudes.
 
 Faire le tour de Blender serait bien sûr beaucoup trop ambitieux ici, mais voici quelques indications de base pour celles et ceux qui n'ont jamais ouvert le logiciel.
 
@@ -49,12 +55,12 @@ En cliquant là :
 
 ![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img8_engine.png){: .img-center loading=lazy }
 
-Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmant en ressources.
+Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est plus couramment utilisé pour du dynamique, et Cycles pour du rendu statique (notre cas). Attention, Cycles est plus gourmand en ressources.
 
 !!! warning
     Choisissez aussi le "Feature Set" Expérimental (nous en aurons besoin).
 
-Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en GPU compute.
+Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en `GPU Compute`.
 
 En fonction de votre carte graphique, vous pouvez aussi faire un tour par le menu `edit -> preferences -> system` et choisir en fonction de votre crémerie ce qui sera utilisé par Cycles. Choisir [OptiX](https://fr.wikipedia.org/wiki/OptiX) chez Nvidia / [HIP](https://rocm.docs.amd.com/projects/HIP/en/latest/index.html) chez AMD si votre configuration matérielle le supporte (hey, vous venez sur un tuto 3D, il faut s'attendre à ce genre de phrases !).
 
