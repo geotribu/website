@@ -32,7 +32,7 @@ La couverture de l'album 'Unknow Pleasures' du groupe Joy Division est iconique 
 
 ![Joy Division cover](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/joy_division_unknown_pleasures.webp "Joy Division cover"){: loading=lazy .img-center }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

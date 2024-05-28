@@ -37,7 +37,7 @@ Par exemple, il n'y a pas de moyen simple de générer des rasters de proximité
 
 La question est donc : comment obtenir le même résultat avec FME Workbench ?
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

@@ -34,7 +34,7 @@ Le dernier sera consacré à la récupération des données collectées dans une
 [3 : Récupération des données dans PostGIS](2021-09-22_odk_postgis_3.md){: .md-button }
 {: align=middle }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Introduction à Open Data Kit

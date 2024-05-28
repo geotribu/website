@@ -53,7 +53,7 @@ Une fois les données centralisés, différentes solutions d'exploitation, d'ana
 * [Google Data Studio](https://github.com/UDub-Impact/OData-Connector/issues)
 * Tableau
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 *Previously on ODK PostGIS* :

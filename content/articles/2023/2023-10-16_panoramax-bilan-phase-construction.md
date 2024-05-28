@@ -29,7 +29,7 @@ C'était il y a un an... l'[IGN](https://www.ign.fr/) répondait à la propositi
 
 Le projet tient-il ses promesses et les contributeurs sont-ils bien au rendez-vous ?
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
