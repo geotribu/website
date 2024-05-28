@@ -68,7 +68,7 @@ Toujours là :
 
 ![Là](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img9_sampling.png){: .img-center loading=lazy }
 
-En descendant vous verrez "Sampling". Ces options permettent de configurer le nombre de passages qu'effectuera le moteur de rendu en changeant la valeur `max samples`. Je vous conseille de configurer Viewport (quand vous serez en train de travailler mais en affichant quelque chose proche du rendu) avec une valeur basse pour gagner du temps, et Render avec une valeur haute pour avoir un beau rendu final. Activer l'option Denoise dans les deux cas qui permet d'enlever du "bruit" sur les rendus. Sur l'image vous verrez ma proposition de paramétrage.
+En descendant vous verrez "Sampling". Ces options permettent de configurer le nombre de passages qu'effectuera le moteur de rendu en changeant la valeur `max samples`. Je vous conseille de configurer Viewport (quand vous serez en train de travailler mais en affichant quelque chose proche du rendu) avec une valeur basse pour gagner du temps, et Render avec une valeur haute pour avoir un beau rendu final. Activer l'option `Denoise` dans les deux cas qui permet d'enlever du "bruit" sur les rendus. Sur l'image vous verrez ma proposition de paramétrage.
 
 Enfin la chose la plus importante, Blender fonctionne beaucoup avec les raccourcis clavier. Pour ajouter un objet : ++shift+a++.
 
@@ -76,7 +76,7 @@ Pour se déplacer, appuyez sur le bouton central de votre souris (++middle-butto
 
 ## Modéliser le relief
 
-Tout d'abord, on retire cube par défaut en cliquant dessus pour le sélectionner puis en appuyant sur ++delete++ de votre clavier et on ajoute un plan à notre scène. ++shift+a++ -> `mesh` -> `plane`. Ne pas supprimer la caméra et la source de lumière (les autres trucs présents dans la scène par défaut).
+Tout d'abord, on retire le cube par défaut en cliquant dessus pour le sélectionner puis en appuyant sur ++delete++ de votre clavier et on ajoute un plan à notre scène. ++shift+a++ -> `mesh` -> `plane`. Ne pas supprimer la caméra et la source de lumière (les autres trucs présents dans la scène par défaut).
 
 Par défaut les objets apparaissent sous le "curseur 3D" mais on va déplacer notre plan pour le mettre aux coordonnées x 0 y 0 z 0 pour se simplifier la vie si ce n'est pas le cas.
 
@@ -92,7 +92,7 @@ Je vous ai déjà parlé de mon amour de GDAL ? Et bien on ve le ressortir avec 
 
 La ligne Size vous donne la taille en pixels de votre mnt.
 
-Toujours dans ce panneau de Blender, on modifie `scale` pour faire correspondre. Indiquer x 8000 / y 7000 (mon cas) donnerait un plan beaucoup trop grand, l'important est de garder le ratio. J'indique donc x 0.8 et y 0.7 comme valeur pour scale.
+Toujours dans ce panneau de Blender, on modifie les valeurs de `scale` pour les faire correspondre. Indiquer x 8000 / y 7000 (mon cas) donnerait un plan beaucoup trop grand, l'important étant de garder le ratio. J'indique donc x 0.8 et y 0.7 comme valeur pour scale.
 
 Je ne répèterai pas cette information mais pensez à sauvegarder ! `File > Save as`, puis enregistrez votre espace de travail au format `.blend.`
 
@@ -108,7 +108,7 @@ Pour affecter un matériau au plan, sélectionnez-le puis cliquez sur cette icô
 
 ![setup materials](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img12_material.png){: .img-center loading=lazy }
 
-Puis cliquez sur `New`. Blender créera alors un nouveau matériau nommé `Material.001`. Vous pouvez le renommer si vous le désirez.
+Maintenant cliquez sur `New`. Blender créera alors un nouveau matériau nommé `Material.001`. Vous pouvez le renommer si vous le désirez.
 
 Pour l'instant nous ne modifierons rien mais voici quelques explications :
 
@@ -124,7 +124,7 @@ Cette interface permet de régler les paramètres du `matériau` comme précéde
 
 ![selectionner le plan](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img13_explorer.png){: .img-center loading=lazy }
 
-La manière dont est rendu votre matériau est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boîtes pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3D View Port.
+La manière dont est rendu votre `matériau` est présentée sous forme d'un diagramme. Vous pouvez cliquer sur chacune des boîtes pour les déplacer, ainsi que vous déplacer dans la vue comme dans le 3D View Port.
 
 Chaque boîte est un `node` et vous verrez une ligne reliant "Principle BSDF" à la "Surface" de notre `matériau` final, indiquant qu'il est utilisé pour déterminer son apparence. Vous verrez que vous pouvez aussi relier quelque chose qui donnera à la surface un `displacement`.
 
@@ -137,7 +137,7 @@ Une nouvelle boite apparait. Positionnez-la où bon vous semble. Dans le languag
 - Cliquez sur `Open` dans cette boite et indiquez votre `mnt.TIF`.
 - Cliquez sur le petit cercle à côté de `Color` en maintenant le bouton gauche de la souris appuyé.
 - Et relier à `Displacement`
-- Tant que nous y sommes, changez l'option `Linear` pour `Smart`. Ceci change l'interpolation de la texture pour être un peu plus joli.
+- Tant que nous y sommes, changez l'option `Linear` pour `Smart`. Ceci change l'interpolation de la texture pour être un peu plus jolie.
 
 ![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img15_displacement.png){: .img-center loading=lazy }
 
@@ -145,7 +145,7 @@ Vous pouvez faire un essai de rendu en cliquant sur `Render -> Render Image` dan
 
 ![ajouter texture](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img16_1strender.png){: .img-center loading=lazy }
 
-Pour reprendre les mots de l'auteur originel : "Tout ceci est bâti sur un mensonge". Pour le moment Blender ne fait que **simuler** la déformation en utilisant une technique nommée _bump mapping_. C'est plus rapide à calculer mais pas aussi réaliste. Cette technique ne fait que donner une _apparence_ de profondeur, mais elle n'est pas réelle : aucune ombre n'est projetée et la lumière n'interagit pas avec.
+Pour reprendre les mots de l'auteur originel : "Tout ceci est bâti sur un mensonge". Pour le moment Blender ne fait que **simuler** la déformation en utilisant une technique nommée _bump mapping_. C'est plus rapide à calculer mais pas aussi réaliste. Cette technique ne fait que donner une _apparence_ de profondeur, mais elle n'est pas réelle : aucune ombre n'est projetée et la lumière n'interagit pas avec l'objet.
 
 On va faire beaucoup mieux.
 
@@ -160,7 +160,7 @@ Pour l'instant ces derniers ne sont pas utilisés, Blender n'a fait que _peindre
 - Retournez dans le `3D Viewport`
 - Toujours bien penser à sélectionner le plan et cliquer sur l'icône en forme de clef à molette.
 ![modifiers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img17_modifiers.png){: .img-center loading=lazy }
-- Et maintenant, cliquer sur "Add Modifier"
+- Et maintenant, cliquez sur "Add Modifier"
 - L'apparence de ce menu a été modifiée dans la toute dernière version de Blender mais l'idée est de choisir le groupe "Generate" puis ["Subdivision Surface"](https://docs.blender.org/manual/fr/4.1/modeling/modifiers/generate/subdivision_surface.html).
 
 Apparemment, la communauté Blender surnomme ce modificateur `subsurf` ou `subdiv`. Ne me demandez pas. Il est très utilisé et permet de dire à Blender d'ajouter du détail à un objet (ainsi il permet de faire des objets très arrondis en travaillant avec des `mesh` simples).
@@ -191,7 +191,7 @@ Color vers height and displacement vers displacement. Ceci dit à Blender "regar
 
 Si vous effectuez un rendu maintenant vous constaterez que pas grand-chose n'a changé. En effet il faut demander à Blender d'arrêter de bump mapper et de modifier réellement steuplé.
 
-Dans les paramètres de notre matériau, sous la section `Settings`-> `Surface` réglez `displacement` à `displacement only`.
+Dans les paramètres de notre matériau, sous la section `Settings -> Surface` réglez `displacement` à `displacement only`.
 
 ![true displacement 3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img20_t_displacement3.png){: .img-center loading=lazy }
 
@@ -205,7 +205,7 @@ Vous remarquez cependant trois choses :
 - Les bords sont cracra
 - le temps de rendu est beaucoup plus long
 
-En changeant le paramètre `scale` du `node` displacement du shader editor, vous pouvez réduire l'exagération (on est ici dans l'artistique et plus dans le technique, donc pas de recommandation à part votre feeling). Comme notre éclairage et notre caméra ne sont pas encore configurés il est trop tôt pour s'en préoccuper.
+En changeant le paramètre `scale` du `node` `displacement` du shader editor, vous pouvez réduire l'exagération (on est ici dans l'artistique et plus dans le technique, donc pas de recommandation à part votre feeling). Comme notre éclairage et notre caméra ne sont pas encore configurés il est trop tôt pour s'en préoccuper.
 
 Pour ce qui est des bords ce qui se passe c'est que pour le moment, Blender essaye de répéter votre image sur les bords. Dans le shader editor, sur le `node` de votre image, changez _Repeat_ pour _Extend_ pour corriger ça.
 
@@ -223,15 +223,15 @@ Pour améliorer nos temps de rendu, nous avons déjà modifié le nombre de pass
 
 Et vous pouvez par exemple diminuer à 512.
 
-Comme dans l'article original, je vous incite à explorer les matériaux. Sauvegardez votre espace de travail puis changez des valeurs au hasard pour voir ce que ça donne (mais ne sauvegardez pas !)
+Comme dans l'article original, je vous incite à explorer les matériaux. Sauvegardez votre espace de travail puis changez des valeurs au hasard pour voir ce que ça donne (mais ne sauvegardez pas ensuite !)
 
 ## La caméra
 
 ![caméra de surveillance](https://cdn.geotribu.fr/img/logos-icones/divers/camera_surveillance.png){: .img-thumbnail-left }
 
-![Blender - La caméra](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img25_camera.png){: .img-right loading=lazy }
-
 On retourne dans le 3D view port. La caméra, c'est ce machin ci-contre :
+
+![Blender - La caméra](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img25_camera.png){: .img-right loading=lazy }
 
 Elle determine la position de la vue lors des rendus. En appuyant sur la touche 0 du pavé numérique de votre clavier vous pouvez "voir" ce que voit la caméra (réaappuyer sur 0 pour sortir). Si l'idée saugrenue d'utiliser Blender sur un pc portable sans pavé numérique vous est venue, il faudra à chaque fois passer par le menu `View -> Cameras -> active Camera` pour obtenir le même effet.
 
@@ -301,7 +301,7 @@ Ou bien juste `sun` (ça veut dire [soleil](https://fr.wikipedia.org/wiki/Soleil
 
 Pour celles et ceux qui préfèrent la première version, je vous conseille [ceci](https://www.youtube.com/watch?v=zjIC6jIQRKQ) (avec un type qui a des patchs sur les coudes de ses vestes). Il a aussi écrit [ça](https://www.dunod.com/sciences-techniques/univers-multiples-nouveaux-horizons-cosmiques) si vous voulez vous retourner la tête. Si vraiment vous êtes hardcore il y a aussi [ceci](https://www.odilejacob.fr/catalogue/sciences/astronomie-astrophysique-cosmologie/ecume-de-l-espace-temps_9782738139719.php). Promis j'arrête.
 
-Une ampoule près de vous enverra ses rayons dans toutes les directions. Dans le cas du soleil, il est suffisamment éloigné (et gros) pour que ses rayons arrivent à nous orienter tous selon le même angle (rappelez-vous vos cours de pourquoi qu'il fait chaud à l'équateur et froid aux pôles). C'est ce que simulera Blender en douchant notre scène de lumière provenant d'une unique direction.
+Une ampoule près de vous enverra ses rayons dans toutes les directions. Dans le cas du soleil, il est suffisamment éloigné (et gros) pour que ses rayons arrivent à nous orientés tous selon le même angle (rappelez-vous vos cours de pourquoi qu'il fait chaud à l'équateur et froid aux pôles). C'est ce que simulera Blender en douchant notre scène de lumière provenant d'une unique direction.
 
 Avec ce type de lumière, la position de l'objet la générant dans la scène n'est pas importante. Si vous effectuez un rendu maintenant vous vous rendrez compte que tout est très surexposé car nous n'avons pas réglé sa force (strength). Passons ce paramètre de 1000 à ... 5.
 
