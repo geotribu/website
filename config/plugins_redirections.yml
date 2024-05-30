@@ -595,7 +595,14 @@ redirects:
     node/847.md: rdp/2016/rdp_2016-07-01.md
     # node/850.md:
     rdp/2010/rdp_2010-10-14.md: rdp/2010/rdp_2010-10-15.md
+    rdp/2012/rdp_2012-09-06.md: rdp/2012/rdp_2012-09-07.md
+    rdp/2013/rdp_2013-07-02.md: rdp/2013/rdp_2013-07-05.md
+    rdp/2014/rdp_2014-06-14.md: rdp/2014/rdp_2014-06-13.md
+    rdp/2014/rdp_2014-11-10.md: rdp/2014/rdp_2014-11-14.md
     rdp/2015/rdp_2015-04-07.md: rdp/2015/rdp_2015-04-10.md
+    rdp/2015/rdp_2015-04-20.md: rdp/2015/rdp_2015-04-24.md
+    rdp/2010/rdp_2010-10-05.md: rdp/2010/rdp_2010-10-01.md
+    rdp/2015/rdp_2015-12-21.md: rdp/2015/rdp_2015-12-18.md
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
     # rss.md: https://geotribu.fr/feed_rss_created.xml
 
@@ -606,6 +613,7 @@ redirects:
     articles/2008/art_2008-11-17.md: articles/2008/2008-11-17_workshop-quantum-gis.md
     articles/2008/art_2008-12-06.md: articles/2008/2008-12-06_comparatif-des-differentes-solutions-cartographiques-open-source.md
     articles/2008/art_2008-12-07.md: articles/2008/2008-12-07_les-donnees-sig-devraient-elles-etre-libres.md
+    articles/2008/art_2008-12-16.md: articles/2008/2008-12-16_appel-a-sponsoring-code-sprint-open-layers.md
     articles/2009/art_2009-01-13.md: articles/2009/2009-01-13_generer-des-tuiles-avec-php.md
     articles/2009/art_2009-01-14.md: articles/2009/2009-01-14_android-et-openstreetmap.md
     articles/2009/art_2009-01-21.md: articles/2009/2009-01-21_liste-des-logiciels-opensource-disponible.md
@@ -687,6 +695,7 @@ redirects:
     articles/2010/art_2010-03-02.md: articles/2010/2010-03-02_etl_spatiaux_opensource.md
     articles/2010/art_2010-03-11.md: articles/2010/2010-03-11_linux_sans_contrainte_virtualbox.md
     articles/2010/art_2010-03-12.md: articles/2010/2010-03-12_geojquery_alternative_a_geoext.md
+    articles/2010/art_2010-03-15.md: articles/2010/2010-03-15_yql_geo_library.md
     articles/2010/art_2010-03-17.md: articles/2010/2010-03-17_api_geoportail_version1.md
     articles/2010/art_2010-03-18.md: articles/2010/2010-03-18_rapprochement_osmfr_osgeofr.md
     articles/2010/art_2010-03-25.md: articles/2010/2010-03-25_ca_bouge_chez_geoext.md
@@ -845,6 +854,7 @@ redirects:
     # migration
     toc_nav_ignored/qgis_resources_preview_table.md: https://geotribu.github.io/pyqgis-icons-cheatsheet/
     team/statistiques.md: index.md
+    team/contributors.md: team/index.md
 
     # page auteurices
     team/acha.md: team/aurelien-chaumet.md
@@ -861,6 +871,7 @@ redirects:
     team/gall.md: team/guilhem-allaman.md
     team/gdbo.md: team/guillaume-de-boyer.md
     team/hfio.md: team/humbert-fiorino.md
+    team/jdes.md: team/jean-baptiste-desbas.md
     team/jemv.md: team/jean-marc-viglino.md
     team/jgar.md: team/jeremy-garniaux.md
     team/jhan.md: team/jeremie-hanke.md
@@ -893,3 +904,8 @@ redirects:
     team/tgro.md: team/theo-grondin.md
     team/vale.md: team/victor-alexandre.md
     team/vleb.md: team/valerian-lebert.md
+
+    # divers (typos, changement de date...)
+    articles/2010/2010-12-13_imagemap_baselayers_v2.md: articles/2010/2010-12-13_imagimap_baselayers_v2.md
+    rdp/2015/rdp_2015-05-16.md: rdp/2015/rdp_2015-05-15.md
+    rdp/2015/rdp_2015-09-21.md: rdp/2015/rdp_2015-09-25.md
