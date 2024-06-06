@@ -22,8 +22,7 @@ tags:
 
 ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
 
-[Commenter :fontawesome-solid-comments:](#__comments){: .md-button }
-[Proposer :material-newspaper-plus:]({{ config.extra.url_contribuer }}rdp/add_news/){: .md-button }
+[Commenter cette revue de presse :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
