@@ -4,15 +4,15 @@ categories:
     - contributeur
 social:
     - github: bchartier
-    - gitlab: 
+    - gitlab:
     - linkedin: benjaminchartier
     - mail: contact@bchartier.net
-    - mastodon: 
-        - instance: 
-        - username: 
-    - openstreetmap: 
-    - osgeo: 
-    - twitter: 
+    - mastodon:
+        - instance:
+        - username:
+    - openstreetmap:
+    - osgeo:
+    - twitter:
     - website: https://www.bchartier.net
 ---
 
