@@ -20,7 +20,7 @@ social:
 
 <!-- --8<-- [start:author-sign-block] -->
 
-![Portrait Benjamin Chartier](https://www.bchartier.net/assets/img/bchartier.jpg "Portrait Benjamin Chartier"){: .img-thumbnail-left }
+![Portrait Benjamin Chartier](https://cdn.geotribu.fr/img/internal/contributeurs/bchartier.webp "Portrait Benjamin Chartier"){: .img-thumbnail-left }
 
 Consultant indépendant, géomaticien de formation.
 Domaines d'expertise : publication de données, interopérabilité, traitement de données.
