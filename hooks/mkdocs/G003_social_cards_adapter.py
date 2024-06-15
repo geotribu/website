@@ -113,9 +113,6 @@ def on_page_markdown(
         elif is_insiders:
             cards_layout = social_plugin.config.cards_layout
 
-        # indique l'URL de l'image qui sera utilisée par le plugin RSS
-        page.meta["image"] = social_card_url
-
         # définit les paramètres pour les social cards au niveau de la page
         if is_insiders:
             page.meta["social"] = {
@@ -150,7 +147,8 @@ def on_page_markdown(
         #     }
     else:
         logger.debug(
-            f"[{hook_name}] {page.abs_url} a une image paramétrée. Désactivation du plugin social sur la page."
+            f"[{hook_name}] {page.abs_url} a une image paramétrée. "
+            "Désactivation du plugin social sur la page."
         )
         page.meta["social"] = {
             "cards": False,
