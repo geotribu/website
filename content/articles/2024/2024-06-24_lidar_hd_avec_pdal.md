@@ -6,7 +6,7 @@ authors:
 categories:
     - article
     - tutoriel
-date: 2024-06-04
+date: 2024-06-24
 description: "Les données LiDAR HD brut ont été traitées avec PDAL pour coloriser le nuage de points et distinguer le sol et le sursol."
 icon: material/star-four-points-small
 license: beerware
