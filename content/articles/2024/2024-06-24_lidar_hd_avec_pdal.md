@@ -54,7 +54,7 @@ Voici un schéma récapitulatif de la procédure mise en place.
 
 ```mermaid
 graph TD
-    A[LiDAR HD] -->G(décompression)
+    A[LiDAR HD] -->G(Décompression)
     G --> C(Colorisation)
     B[Ortho] --> C
     C --> R(Filtrer le bâti)
@@ -115,7 +115,7 @@ Les fichiers bruts ayant été livrés au format 7-zip, la première étape cons
 Dans cette étape, nous allons utiliser pdal pour affecter les informations colorimétriques de l'image aérienne sur chaque point LiDAR car cela facilite l'interprétation et améliore le rendu.
 
 !!! warning inline end
-    Il est important de noter que l'image aérienne utilisée n'est pas réalisée au même moment que le levé LiDAR, ce qui aura pour conséquence la justesse de la colorisation (c'est notamment le cas avec les voitures).
+    Il est important de noter que l'image aérienne utilisée n'est pas réalisée au même moment que le levé LiDAR, ce qui aura des conséquences sur la justesse de la colorisation. Par exemple : On peut voir le relief d'une voiture mais pas sa couleur, ou l'inverse.
 Pour arriver au résultat, nous devons créer un [pipeline de traitement pdal (enchainement des étapes à réaliser)](https://pdal.io/en/latest/pipeline.html) au format `json` que l'on pourra ensuite appeler pour lancer une commande `pdal pipeline`.
 
 Ici on définit :
@@ -442,7 +442,7 @@ pdal pipeline 6_ground_raster.json
 
 ## Conclusion
 
-Cet article avait vocation à montrer les possibilités et le fonctionnement global de PDAL.
+Cet article a vocation à montrer les possibilités et le fonctionnement global de PDAL.
 
 La méthode proposée pour distinguer le sol et le sursol à partir de données LIDAR est à repositionner dans le contexte de la livraison des fichiers bruts. Celle-ci est perfectible si on compare aux fichiers classifiés livrés par l'IGN mais elle a l'avantage d'être facilement adaptable dans un autre contexte et suffisamment robuste pour pouvoir traiter de vastes emprises.
 
