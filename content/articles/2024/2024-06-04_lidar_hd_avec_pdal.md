@@ -34,11 +34,14 @@ tags:
 
 Le relevé LiDAR (Light Detection and Ranging) est une technique de plus en plus utilisée pour la création de modèles numériques de précision. Cependant, les données LiDAR de part leur volumétrie et leurs spécificités, peuvent être difficiles à manipuler et à interpréter, en particulier lorsqu'il s'agit de distinguer le sol et le sursol.
 
+!!! question "Mais dis-moi Jamy"
+    Le LiDAR envoie des impulsions dont les échos constituent un nuage de points bruts. Ce nuage de points bruts, donc indistincts, permet de construire un MNE (modèle numérique d'élévation). En différenciant ces échos, il s'agit d'extraire les échos du sol dans un MNT (modèle numérique de terrain) et ce qui en dépasse (le cas échéant) dans un MNS (modèle numérique de surface).
+
 Heureusement, des outils tels que [PDAL](https://pdal.io/) (_Point Data Abstraction Library_) et [GDAL](https://gdal.org/) (_Geospatial Data Abstraction Library_) aident à traiter et à analyser les données LiDAR pour créer des MNT ou des MNS.  
 Dans cet article, je vais vous expliquer comment j'ai utilisé ces deux outils pour distinguer le sol et le sursol à partir des données LiDAR brutes de l'IGN, et fournir des exemples de code pour vous aider à démarrer dans la manipulation de ces données.
 
 !!! info
-    La rédaction de cette article a été réalisée avant la livraison des données [LiDAR HD](https://geoservices.ign.fr/lidarhd) classifiées par l'IGN.
+    La rédaction de cette article a été réalisée avant la livraison des données [LiDAR HD](https://geoservices.ign.fr/lidarhd) classifiées par l'IGN. Toutefois, si vous souhaitez vous mettre en condition "données brutes" pour vous amuser, vous pouvez prendre les fichiers classifiés en attribuant la valeur de classification à `0`.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }
@@ -98,7 +101,7 @@ Maintenant, entrons dans le vif du sujet avec la présentation des différentes 
 
 ### La décompression
 
-Les fichiers bruts ayant été livrés au format 7-zip, la première étape consiste àextraire les 4 dalles contenues dans chaque fichier.
+Les fichiers bruts ayant été livrés au format 7-zip, la première étape consiste à extraire les 4 dalles contenues dans chaque fichier 7z.
 
 ```bash title="Décompression"
 # Installation de p7zip : sudo apt install p7zip
@@ -161,11 +164,11 @@ pdal pipeline 1_colorize.json
 Dans l'étape suivante, nous allons procéder à l'identification du sol et du sursol. Nous allons utiliser pdal pour filtrer les points LiDAR en utilisant une donnée vectorielle des bâtiments et différents filtres mathématiques pour isoler le sol et le reste des éléments de sursol.
 
 !!! info
-    Nous allons stocker les résultats de la classification dans l'attribut de `classification` des points LiDAR pour.
+    Nous allons stocker les résultats de la classification dans l'attribut de `classification` des points LiDAR.
 
 #### Identifier les bâtiments
 
-Pour me "faciliter le travail" et pour vous présenter comment l'utilisation d'une donnée vectorielle peut être mobilisée pour classifier un nuage de point, j'ai décidé d'utiliser une couche vectorielle des bâtiments sur laquelle je vais ajouter une colonne où je vais attribuer un attribut de classification pour les distinguer (ici j'ai utilisé la valeur 7).
+Pour me "faciliter le travail" et pour vous présenter comment l'utilisation d'une donnée vectorielle peut être mobilisée pour classifier un nuage de points, j'ai décidé d'utiliser une couche vectorielle des bâtiments sur laquelle je vais ajouter une colonne où je vais attribuer un attribut de classification pour les distinguer (ici j'ai utilisé la valeur 7).
 
 !!! warning
     La méthode est perfectible car les bâtiments ne sont pas nécessairement bien calés sur le relevé LiDAR, il est donc possible que certains points de sol ou de sursol périphériques au bâtiment soient classifiés comme tels et inversement.  
@@ -185,7 +188,7 @@ ogr2ogr \
 Ensuite le même principe que pour la colorisation, on va créer un pipeline de traitement :
 
 1. une variable d'entrée : `input.laz`
-2. on va assigner la valeur 0 à l'attribut `classification` de l'ensemble des points du nuage pour s'assurer qu'il n'y ait pas eu d'affectation ultérieure
+2. on va assigner la valeur 0 à l'attribut `classification` de l'ensemble des points du nuage pour s'assurer qu'il n'y ait pas eu d'affectation antérieure
 3. on va utiliser un filtre permettant de travailler sur la superposition d'une donnée vectorielle avec des données LiDAR : [filters.overlay](https://pdal.io/en/latest/stages/filters.overlay.html)
    - en définissant notre volonté de classifier `"dimension":"Classification"`
    - en définissant le fichier à utiliser
@@ -396,7 +399,7 @@ pdal pipeline 5_merge.json
 
 ![LiDAR - Lunel Sud - Fusion de 4 dalles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/lidarhd_pdal/lunel_sud.png){: .img-center loading=lazy }
 
-#### Créer un rasteur du sol (MNT)
+#### Créer un raster du sol (MNT)
 
 La dernière étape consiste à générer un raster à partir du nuage de points classifié comme du sol en définissant :
 
@@ -439,7 +442,7 @@ pdal pipeline 6_ground_raster.json
 
 ## Conclusion
 
-Cet article avait vocation à montrer les fonctionnalités et le fonctionnement global de PDAL.
+Cet article avait vocation à montrer les possibilités et le fonctionnement global de PDAL.
 
 La méthode proposée pour distinguer le sol et le sursol à partir de données LIDAR est à repositionner dans le contexte de la livraison des fichiers bruts. Celle-ci est perfectible si on compare aux fichiers classifiés livrés par l'IGN mais elle a l'avantage d'être facilement adaptable dans un autre contexte et suffisamment robuste pour pouvoir traiter de vastes emprises.
 
