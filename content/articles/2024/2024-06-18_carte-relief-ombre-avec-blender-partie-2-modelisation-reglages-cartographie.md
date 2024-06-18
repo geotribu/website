@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-06-11
-description: "Réaliser des cartes de relief avec le logiciel libre 3D Blender. Partie 2 : préparer les données avec GDAL et/ou QGIS."
+description: "Réaliser des cartes de relief avec le logiciel libre 3D Blender. Partie 2 : Modéliser le relief avec Blender."
 icon: simple/blender
 image:
 license: default
@@ -62,7 +62,7 @@ Vous pouvez changer le moteur de rendu utilisé entre Eevee et Cycles. Eevee est
 
 Enfin, si vous faites des choix de vie douteux comme moi et que votre carte graphique est puissante, passez "Device" en `GPU Compute`.
 
-En fonction de votre carte graphique, vous pouvez aussi faire un tour par le menu `edit -> preferences -> system` et choisir en fonction de votre crémerie ce qui sera utilisé par Cycles. Choisir [OptiX](https://fr.wikipedia.org/wiki/OptiX) chez Nvidia / [HIP](https://rocm.docs.amd.com/projects/HIP/en/latest/index.html) chez AMD si votre configuration matérielle le supporte (hey, vous venez sur un tuto 3D, il faut s'attendre à ce genre de phrases !).
+En fonction de votre carte graphique, vous pouvez aussi faire un tour par le menu `edit -> preferences -> system` et choisir en fonction de votre crêmerie ce qui sera utilisé par Cycles. Choisir [OptiX](https://fr.wikipedia.org/wiki/OptiX) chez Nvidia / [HIP](https://rocm.docs.amd.com/projects/HIP/en/latest/index.html) chez AMD si votre configuration matérielle le supporte (hey, vous venez sur un tuto 3D, il faut s'attendre à ce genre de phrases !).
 
 Toujours là :
 
@@ -183,7 +183,7 @@ Et on modifie notre diagramme pour qu'il ressemble à ceci :
 
 ![true displacement 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img19_t_displacement2.png){: .img-center loading=lazy }
 
-Color vers height and displacement vers displacement. Ceci dit à Blender "regarde la couleur (clair ou sombre) et transforme ça en déplacement".
+Color vers height et displacement vers displacement. Ceci dit à Blender "regarde la couleur (clair ou sombre) et transforme ça en déplacement".
 
 !!! tip "Changer l'espace colorimétrique"
     Tant que nous y sommes, changez le `color space` de votre texture MNT de `sRGB` à `non-color`.
