@@ -216,7 +216,12 @@ markdown_extensions:
       pygments_lang_class: true
       use_pygments: true
   - pymdownx.inlinehilite
-  - pymdownx.keys
+  - pymdownx.keys:
+      key_map:
+        shift: MAJ
+        delete: Suppr
+        caps-lock: "🄰 VER MAJ"
+        middle-button: "🖱️ clic molette"
   - pymdownx.smartsymbols
   - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/

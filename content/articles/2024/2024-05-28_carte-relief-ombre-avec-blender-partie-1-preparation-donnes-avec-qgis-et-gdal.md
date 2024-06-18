@@ -207,9 +207,8 @@ gdal_translate -ot UInt16 mosaic_rescale.tif mnt.tif
 Voilà, nos données sont désormais fin prêtes !  
 La suite sous Blender prochainement !
 
-<!--
-[Lire la deuxième partie :fontawesome-solid-forward:](2024-06-11_carte-relief-ombre-avec-blender-partie-2-modelisation-reglages-cartographie.md){: .md-button }
-{: align=middle } -->
+[Lire la deuxième partie :fontawesome-solid-forward:](2024-06-18_carte-relief-ombre-avec-blender-partie-2-modelisation-reglages-cartographie.md "Réaliser des cartes avec Blender - Partie 2"){: .md-button }
+{: align=middle }
 
 <!-- geotribu:authors-block -->
 
