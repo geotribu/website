@@ -64,7 +64,7 @@ tags:
   MySQL: database
   NoSQL: database
   ODK: telephone
-  OGR: GDAL
+  OGR: gdal
   Open Data Kit: telephone
   OpenDroneMap: drone
   OpenPathView: streetview
