@@ -1,0 +1,5 @@
+# Adrien Pavie {: data-search-exclude }
+
+[Entrepreneur en géomatique et développement logiciel](https://pavie.info/), je suis spécialisé sur les enjeux autour du logiciel libre et des données ouvertes. Je propose à mes clients du conseil, de la formation et du développement logiciel à façon. J'ai pu accompagner dans leurs projets la SNCF, l'IGN, le Ministère des Transports et bien d'autres. Je suis issu d'un double parcours universitaire _développement logiciel_ (IUT de Vannes et INSA de Rennes) et _géomatique_ (Master SIGAT de Rennes).
+
+Contributeur OpenStreetMap depuis 2010, j'ai réalisé des outils pour faciliter la visualisation et la contribution aux données, comme [OpenLevelUp](https://openlevelup.net/), [Pic4Review](https://pic4review.pavie.info/) ou [Projet du Mois.fr](https://projetdumois.fr/). Je travaille également depuis 2022 sur l'outillage [GeoVisio](https://gitlab.com/geovisio), la pile logicielle utilisée par [Panoramax](https://panoramax.fr/), le géocommun des photos de rues.
