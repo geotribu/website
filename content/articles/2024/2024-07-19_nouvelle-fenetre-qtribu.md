@@ -10,11 +10,13 @@ date: 2024-07-19
 description: "Une nouvelle fenêtre des contenus Geotribu dans le plugin QGIS QTribu, qui permet d'accéder et de contribuer aux contenus du site"
 icon: material/window-closed-variant
 image:
-license: default
+license: beerware
 robots: index, follow
 tags:
+    - article
     - Geotribu
     - QGIS
+    - news
     - plugin
 ---
 
