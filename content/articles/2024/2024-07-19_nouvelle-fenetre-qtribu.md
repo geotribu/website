@@ -40,6 +40,8 @@ Tu es au bon endroit : surtout pas besoin de cliquer sur [ce lien](https://theus
 
 Les contenus et contributions de Geotribu font peau neuve, au travers d'une nouvelle fenêtre disponible grâce au [plugin QGIS QTribu](https://plugins.qgis.org/plugins/qtribu/), le plugin pour garder le Qontact, avec son équipe Qompacte, soudée ... :notes:
 
+![Suprême MNT - Laisse pas traîner ton GIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/supreme_mnt.webp)
+
 ## Plugin QTribu
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
