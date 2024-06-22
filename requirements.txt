@@ -2,7 +2,7 @@
 
 # Development
 # -----------------------
-geotribu>=0.33,<1
+geotribu>=0.34,<1
 pre-commit>=3,<4
 
 # Project requirements
