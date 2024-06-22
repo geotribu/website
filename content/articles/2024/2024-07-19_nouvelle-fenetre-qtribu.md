@@ -34,8 +34,9 @@ Tu t'ennuies un peu à la plage et l'horizon bleu de la mer t'inspire ?
 Tu trouves que les flux RSS et plus généralement les mails et les newsletters c'est trop de la BAL ?  
 T'as loupé ta dernière séance chez ton/ta *PSIG™*[^1] et tu ressens l'envie de te confier ?  
 T'aimes pas les pizzas à l'ananas et tu trouves que quand même, c'est meilleur les pizzas tartiflette ?
+T'en as un peu marre du tutoiement récurrent ?
 
-Tu es au bon endroit : surtout pas besoin de cliquer sur [ce lien](https://theuselessweb.com/), vous êtes au bon endroit !
+Tu es au bon endroit : surtout pas besoin de cliquer sur [ce lien](https://theuselessweb.com/), enfin, vous êtes au bon endroit !
 
 Les contenus et contributions de Geotribu font peau neuve, au travers d'une nouvelle fenêtre disponible grâce au [plugin QGIS QTribu](https://plugins.qgis.org/plugins/qtribu/), le plugin pour garder le Qontact, avec son équipe Qompacte, soudée ... :notes:
 
