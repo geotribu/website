@@ -1,6 +1,6 @@
 ---
 title: Une nouvelle fenêtre des contenus Geotribu dans QGIS
-subtitle: Écris ce qui te passe par la fenêtre !
+subtitle: Écris ce qui te passe par la fenêtre
 authors:
     - Geotribu
 categories:
@@ -30,7 +30,7 @@ Tu travailles sur un projet sympa et t'aimerais le présenter et le diffuser ?
 T'as participé à une conférence ou un géo-évènement et t'aimerais partager aux autres ce que t'as appris ?  
 T'en envie de changer de job et tu veux augmenter ta visibilité pour basculer plus facilement sur un autre ?  
 T'as envie de faire le malin à la machine à café (ou sur le slack/IRC, faut vivre avec son temps !) parce qu'il y a ton nom incrusté dans QGIS ?  
-Tu t'ennuies un peu à la plage et l'horizon bleu de la mer t'inspires ?  
+Tu t'ennuies un peu à la plage et l'horizon bleu de la mer t'inspire ?  
 Tu trouves que les flux RSS et plus généralement les mails et les newsletters c'est trop de la BAL ?  
 T'as loupé ta dernière séance chez ton/ta *PSIG™*[^1] et tu ressens l'envie de te confier ?  
 T'aimes pas les pizzas à l'ananas et tu trouves que quand même, c'est meilleur les pizzas tartiflette ?  
