@@ -28,12 +28,12 @@ T'as découvert un super géo-outil et t'aimerais faire profiter ta découverte 
 T'es tombé sur un super article dans une autre langue que le franssais et t'aimerais voir cet article disponible pour les francophones ?  
 Tu travailles sur un projet sympa et t'aimerais le présenter et le diffuser ?  
 T'as participé à une conférence ou un géo-évènement et t'aimerais partager aux autres ce que t'as appris ?  
-T'en envie de changer de job et tu veux augmenter ta visibilité pour basculer plus facilement sur un autre ?  
+T'as envie de changer de job et tu veux améliorer ta visibilité pour basculer plus facilement sur un autre en montrant ce que tu sais faire ?  
 T'as envie de faire le malin à la machine à café (ou sur le slack/IRC, faut vivre avec son temps !) parce qu'il y a ton nom incrusté dans QGIS ?  
 Tu t'ennuies un peu à la plage et l'horizon bleu de la mer t'inspire ?  
 Tu trouves que les flux RSS et plus généralement les mails et les newsletters c'est trop de la BAL ?  
 T'as loupé ta dernière séance chez ton/ta *PSIG™*[^1] et tu ressens l'envie de te confier ?  
-T'aimes pas les pizzas à l'ananas et tu trouves que quand même, c'est meilleur les pizzas tartiflette ?
+T'aimes pas les pizzas à l'ananas et tu trouves que quand même, c'est meilleur les pizzas tartiflette ?  
 T'en as un peu marre du tutoiement récurrent ?
 
 Tu es au bon endroit : surtout pas besoin de cliquer sur [ce lien](https://theuselessweb.com/), enfin, vous êtes au bon endroit !
@@ -57,7 +57,7 @@ La fenêtre pour lister et rechercher parmi les contenus de Geotribu est disponi
 Les articles et GeoRDP peuvent être filtrées par auteur/ice, par mot-clé ou via une recherche texte.
 
 !!! info
-    Vous aurez sûrement remarqué le bouton `Soutenir le projet` ? Ça peut permettre de financer l'impression de stickers et autres goodies :kissing:
+    Vous aurez sûrement remarqué le bouton `Soutenir le projet` ? Ça peut permettre d'amortir les coûts liés au site, sponsoriser les projets open-source dont le site tire partie, aussi financer l'impression de stickers et autres goodies :kissing:
 
 ## Send news
 
