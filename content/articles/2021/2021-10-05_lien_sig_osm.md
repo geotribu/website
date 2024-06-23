@@ -38,7 +38,7 @@ tags:
 
 Après cette première année bien remplie à la Communauté de Communes, j'ai profité du calme estival pour travailler sur la possibilité de créer des liens entre les informations renseignées dans OpenStreetMap et les données que nous produisons en interne avec pour objectif de consolider les deux bases de données de manière réciproque. Pour l'instant, la solution proposée a été uniquement utilisée pour valider nos données ponctuelles mais n'hésitez pas à partager vos expériences avec d'autres types de données ainsi que vos adaptations éventuelles.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

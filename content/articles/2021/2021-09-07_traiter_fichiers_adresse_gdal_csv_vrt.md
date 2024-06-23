@@ -46,7 +46,7 @@ Pour les besoins de ce tutoriel, on va utiliser les données du plus grand dépa
 !!! tip
     Les commandes du tutoriel sont écrites en [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)). Elles peuvent être exécutées avec [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) sur Windows 10+ (cf. le tuto de l'an dernier). Si vous utilisez GDAL sur Windows avec PowerShell, remplacez le caractère multi-ligne \\ (*backslash*) par ` (*backtick*).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

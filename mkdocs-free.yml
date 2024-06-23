@@ -67,7 +67,6 @@ plugins:
 # Theme
 theme:
   name: "material"
-  insiders_flavor: false
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/logo_geotribu.png
 
@@ -159,7 +158,12 @@ markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.inlinehilite
-  - pymdownx.keys
+  - pymdownx.keys:
+      key_map:
+        shift: MAJ
+        delete: Suppr
+        caps-lock: "🄰 VER MAJ"
+        middle-button: "🖱️ clic molette"
   - pymdownx.smartsymbols
   - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/

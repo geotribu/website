@@ -27,7 +27,7 @@ A noter tout de même la parution d'un article vous proposant de [préconfigurer
 
 Vous souhaitant un bel été :sun_with_face: !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Une nouvelle page d'accueil

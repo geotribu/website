@@ -51,7 +51,7 @@ Pour démarrer, taper : 'geotribu --help' ou 'geotribu rss'.
 
 <!-- markdownlint-enable MD040 -->
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

@@ -32,7 +32,7 @@ Malgré tout, le flux continu apporte son lot de projets excitants et pour certa
 
 Merci à toustes de nous suivre et en particulier à celles et ceux qui prennent le temps de saluer le travail bénévole qui est fait ici, à travers les commentaires ou autres moyens. Cela fait toujours plaisir aussi de voir autant de personne venir contribuer ou simplement consulter et partager nos contenus !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----

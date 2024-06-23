@@ -49,7 +49,7 @@ Mais je suis persuadé qu'il y a un intérêt à peupler ce réseau social de ge
 Essayez. Ça n'engage à rien. Vraiment.  
 Laissez vous guider, ça va bien se passer.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Choisir où créer son compte
