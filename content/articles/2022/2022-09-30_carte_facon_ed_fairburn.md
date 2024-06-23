@@ -8,7 +8,6 @@ comments: true
 date: 2022-09-30
 description: Utiliser les modes de fusion pour produire avec QGIS une carte inspirée des dessins d'Ed Fairburn.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/carte_facon_ed_fairburn.png
-license: default
 tags:
     - carte
     - composeur d'impression
