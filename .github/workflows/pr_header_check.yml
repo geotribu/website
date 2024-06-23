@@ -2,7 +2,9 @@ name: "✅ Markdown header check"
 
 on:
   pull_request:
-    types: [ labeled ]
+    types: [labeled]
+    paths:
+      - "content/articles/**/*.md"
 
 jobs:
   header-check:
