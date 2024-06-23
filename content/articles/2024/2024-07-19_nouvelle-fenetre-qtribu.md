@@ -29,24 +29,22 @@ T'es tombé sur un super article dans une autre langue que le franssais et t'aim
 Tu travailles sur un projet sympa et t'aimerais le présenter et le diffuser ?  
 T'as participé à une conférence ou un géo-évènement et t'aimerais partager aux autres ce que t'as appris ?  
 T'as envie de changer de job et tu veux améliorer ta visibilité pour basculer plus facilement sur un autre en montrant ce que tu sais faire ?  
-T'as envie de faire le malin à la machine à café (ou sur le slack/IRC, faut vivre avec son temps !) parce qu'il y a ton nom incrusté dans QGIS ?  
+T'as envie de fanfaronner à la machine à café (ou sur le slack/IRC, faut vivre avec son temps !) parce qu'il y a ton nom incrusté dans QGIS ?  
 Tu t'ennuies un peu à la plage et l'horizon bleu de la mer t'inspire ?  
 Tu trouves que les flux RSS et plus généralement les mails et les newsletters c'est trop de la BAL ?  
-T'as loupé ta dernière séance chez ton/ta *PSIG™*[^1] et tu ressens l'envie de te confier ?  
-T'aimes pas les pizzas à l'ananas et tu trouves que quand même, c'est meilleur les pizzas tartiflette ?  
+T'as loupé ta dernière séance chez ton/ta *PSIG*[^1] et tu ressens l'envie de te confier ?  
+T'aimes pas trop les pizzas à l'ananas et tu trouves que quand même, c'est meilleur les pizzas tartiflette brocolis ?  
 T'en as un peu marre du tutoiement récurrent ?
 
-Tu es au bon endroit : surtout pas besoin de cliquer sur [ce lien](https://theuselessweb.com/), enfin, vous êtes au bon endroit !
+Vous êtes au bon endroit : surtout pas besoin de cliquer sur [ce lien](https://theuselessweb.com/), c'est ici que ça se passe !
 
-Les contenus et contributions de Geotribu font peau neuve, au travers d'une nouvelle fenêtre disponible grâce au [plugin QGIS QTribu](https://plugins.qgis.org/plugins/qtribu/), le plugin pour garder le Qontact, avec son équipe Qompacte, soudée ... :notes:
-
-![Suprême MNT - Laisse pas traîner ton GIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/supreme_mnt.webp)
+Les contenus et contributions de Geotribu sont maintenant disponibles dans [QGIS](https://www.qgis.org), au travers d'une nouvelle fenêtre du [plugin QTribu](https://plugins.qgis.org/plugins/qtribu/), le plugin pour garder le Qontact.
 
 ## Plugin QTribu
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Présentée un 1 avril par [Julien](../../team/julien-moura.md) au travers de [cet article](../2021/2021-04-01_qtribu_plugin_qgis_geotribu.md), l'extension `QTribu` est disponible dans QGIS via le dépôt QGIS officiel :
+Présentée un 1er avril dans [cet article](../2021/2021-04-01_qtribu_plugin_qgis_geotribu.md), l'extension `QTribu` est disponible dans QGIS via le dépôt QGIS officiel :
 
 ![fenêtre du gestionnaire des extensions QGIS avec QTribu sélectionnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/qtribu-qgis-plugin.webp)
 
@@ -57,6 +55,8 @@ La fenêtre pour lister et rechercher parmi les contenus de Geotribu est disponi
 ![fenêtre des contenus Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/qtribu-fenetre-contenus.webp)
 
 Les articles et GeoRDP peuvent être filtrées par auteur/ice, par mot-clé ou via une recherche texte.
+
+Sous le capot, c'est le [JSON feed de Geotribu](https://geotribu.fr/feed_json_created.json) qui est utilisé afin de récupérer les 50 derniers contenus, articles et GeoRDP, puis les afficher.
 
 !!! info
     Vous aurez sûrement remarqué le bouton `Soutenir le projet` ? Ça peut permettre d'amortir les coûts liés au site, sponsoriser les projets open-source dont le site tire partie, aussi financer l'impression de stickers et autres goodies :kissing:
