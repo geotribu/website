@@ -10,7 +10,7 @@ jobs:
   header-check:
     name: "👓 Vérification du header markdown de l'article"
     runs-on: ubuntu-latest
-    if: ${{ github.event.label.name == 'articles' }}
+    if: contains(github.event.pull_request.labels.*.name, 'articles')
 
     steps:
       - name: "Récupère le code source"
