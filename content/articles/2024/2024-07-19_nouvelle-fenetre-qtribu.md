@@ -33,14 +33,11 @@ T'as envie de fanfaronner à la machine à café (ou sur le slack/IRC, faut vivr
 Tu t'ennuies un peu à la plage et l'horizon bleu de la mer t'inspire ?  
 Tu trouves que les flux RSS et plus généralement les mails et les newsletters c'est trop de la BAL ?  
 T'as loupé ta dernière séance chez ton/ta *PSIG*[^1] et tu ressens le besoin de te confier ?  
-T'aimes pas trop les pizzas à l'ananas et tu trouves que quand même, c'est meilleur les pizzas tartiflette brocolis ?  
 T'en as un peu marre du tutoiement récurrent ?
 
-Vous êtes au bon endroit : eh mais ce serait pas un topito des raisons de contribuer à Geotribu ? Oui ! Mais pas seulement : surtout pas besoin de cliquer sur [ce lien](https://theuselessweb.com/), c'est ici que ça se passe !
+Vous êtes au bon endroit. Eh mais ce serait pas un topito des raisons de contribuer à Geotribu ? Oui ! Mais pas seulement : surtout pas besoin de cliquer sur [ce lien](https://theuselessweb.com/), c'est ici que ça se passe !
 
-Les contenus et contributions de Geotribu sont maintenant disponibles dans [QGIS](https://www.qgis.org), au travers d'une nouvelle fenêtre du [plugin QTribu](https://plugins.qgis.org/plugins/qtribu/), le plugin pour garder le Qontact, avec son équipe qompacte ... :notes:
-
-![Suprême MNT - Laisse pas traîner ton GIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/supreme_mnt.webp)
+Les contenus et contributions de Geotribu sont maintenant disponibles dans [QGIS](https://www.qgis.org), au travers d'une nouvelle fenêtre du [plugin QTribu](https://plugins.qgis.org/plugins/qtribu/), le plugin pour garder le Qontact.
 
 ## Plugin QTribu
 
