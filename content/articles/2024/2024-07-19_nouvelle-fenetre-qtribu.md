@@ -25,26 +25,28 @@ tags:
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 T'as découvert un super géo-outil et t'aimerais faire profiter ta découverte au plus grand nombre ?  
-T'es tombé sur un super article dans une autre langue que le franssais et t'aimerais voir cet article disponible pour les francophones ?  
+T'es tombé sur un super article dans une autre langue et t'aimerais rendre cet article disponible pour les francophones ?  
 Tu travailles sur un projet sympa et t'aimerais le présenter et le diffuser ?  
 T'as participé à une conférence ou un géo-évènement et t'aimerais partager aux autres ce que t'as appris ?  
 T'as envie de changer de job et tu veux améliorer ta visibilité pour basculer plus facilement sur un autre en montrant ce que tu sais faire ?  
-T'as envie de fanfaronner à la machine à café (ou sur le slack/IRC, faut vivre avec son temps !) parce qu'il y a ton nom incrusté dans QGIS ?  
+T'as envie de fanfaronner à la machine à café (ou sur le slack/IRC, faut vivre avec son temps !) parce que ton nom est incrusté dans QGIS ?  
 Tu t'ennuies un peu à la plage et l'horizon bleu de la mer t'inspire ?  
 Tu trouves que les flux RSS et plus généralement les mails et les newsletters c'est trop de la BAL ?  
-T'as loupé ta dernière séance chez ton/ta *PSIG*[^1] et tu ressens l'envie de te confier ?  
+T'as loupé ta dernière séance chez ton/ta *PSIG*[^1] et tu ressens le besoin de te confier ?  
 T'aimes pas trop les pizzas à l'ananas et tu trouves que quand même, c'est meilleur les pizzas tartiflette brocolis ?  
 T'en as un peu marre du tutoiement récurrent ?
 
-Vous êtes au bon endroit : surtout pas besoin de cliquer sur [ce lien](https://theuselessweb.com/), c'est ici que ça se passe !
+Vous êtes au bon endroit : eh mais ce serait pas un topito des raisons de contribuer à Geotribu ? Oui ! Mais pas seulement : surtout pas besoin de cliquer sur [ce lien](https://theuselessweb.com/), c'est ici que ça se passe !
 
-Les contenus et contributions de Geotribu sont maintenant disponibles dans [QGIS](https://www.qgis.org), au travers d'une nouvelle fenêtre du [plugin QTribu](https://plugins.qgis.org/plugins/qtribu/), le plugin pour garder le Qontact.
+Les contenus et contributions de Geotribu sont maintenant disponibles dans [QGIS](https://www.qgis.org), au travers d'une nouvelle fenêtre du [plugin QTribu](https://plugins.qgis.org/plugins/qtribu/), le plugin pour garder le Qontact, avec son équipe qompacte ... :notes:
+
+![Suprême MNT - Laisse pas traîner ton GIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/supreme_mnt.webp)
 
 ## Plugin QTribu
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Présentée un 1er avril dans [cet article](../2021/2021-04-01_qtribu_plugin_qgis_geotribu.md), l'extension `QTribu` est disponible dans QGIS via le dépôt QGIS officiel :
+Présentée un 1er avril dans [cet article](../2021/2021-04-01_qtribu_plugin_qgis_geotribu.md), l'extension `QTribu` est disponible dans QGIS via le dépôt officiel :
 
 ![fenêtre du gestionnaire des extensions QGIS avec QTribu sélectionnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/qtribu-qgis-plugin.webp)
 
@@ -58,9 +60,6 @@ Les articles et GeoRDP peuvent être filtrées par auteur/ice, par mot-clé ou v
 
 Sous le capot, c'est le [JSON feed de Geotribu](https://geotribu.fr/feed_json_created.json) qui est utilisé afin de récupérer les 50 derniers contenus, articles et GeoRDP, puis les afficher.
 
-!!! info
-    Vous aurez sûrement remarqué le bouton `Soutenir le projet` ? Ça peut permettre d'amortir les coûts liés au site, sponsoriser les projets open-source dont le site tire partie, aussi financer l'impression de stickers et autres goodies :kissing:
-
 ## Send news
 
 L'action `Proposer une news` vous ouvrira un formulaire pour saisir une news à destination d'une future GeoRDP.
@@ -69,7 +68,7 @@ L'action `Proposer une news` vous ouvrira un formulaire pour saisir une news à 
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
-![gif conducteur fou](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/gif-drive.gif)
+![gif conducteur à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/gif-drive.gif)
 
 ## Propositions d'articles
 
@@ -79,7 +78,7 @@ L'action `Proposer un article` vous ouvrira un formulaire pour saisir un article
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
-![gif cycliste fou](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/gif-bicycle.gif)
+![gif cycliste à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/gif-bicycle.gif)
 
 ## Autres nouveautés de Geotribu
 
