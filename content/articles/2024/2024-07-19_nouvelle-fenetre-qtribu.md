@@ -45,13 +45,13 @@ Les contenus et contributions de Geotribu sont maintenant disponibles dans [QGIS
 
 Présentée un 1er avril par [Julien](../../team/julien-moura.md) au travers de [cet article](../2021/2021-04-01_qtribu_plugin_qgis_geotribu.md), l'extension `QTribu` est disponible dans QGIS via le dépôt officiel :
 
-![fenêtre du gestionnaire des extensions QGIS avec QTribu sélectionnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/qtribu-qgis-plugin.webp)
+![fenêtre du gestionnaire des extensions QGIS avec QTribu sélectionnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-qgis-plugin.webp)
 
 ## Fenêtre des contenus
 
 La fenêtre pour lister et rechercher parmi les contenus de Geotribu est disponible dans le menu `Internet`, puis `Qtribu` > `Rechercher dans les contenus` :
 
-![fenêtre des contenus Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/qtribu-fenetre-contenus.webp)
+![fenêtre des contenus Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-fenetre-contenus.webp)
 
 Les articles et GeoRDP peuvent être filtrées par auteur/ice, par mot-clé ou via une recherche texte.
 
@@ -61,21 +61,21 @@ Sous le capot, c'est le [JSON feed de Geotribu](https://geotribu.fr/feed_json_cr
 
 L'action `Proposer une news` vous ouvrira un formulaire pour saisir une news à destination d'une future GeoRDP.
 
-![formulaire de saisie d'une news](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/qtribu-news.webp)
+![formulaire de saisie d'une news](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-news-form.webp)
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
-![gif conducteur à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/gif-drive.gif)
+![gif conducteur à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/gif-drive.gif)
 
 ## Propositions d'articles
 
 L'action `Proposer un article` vous ouvrira un formulaire pour saisir un article à destination d'une future GeoRDP.
 
-![formulaire de saisie d'un article](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/qtribu-article.webp)
+![formulaire de saisie d'un article](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-article-form.webp)
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
-![gif cycliste à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/gif-bicycle.gif)
+![gif cycliste à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/gif-bicycle.gif)
 
 ## Autres nouveautés de Geotribu
 
@@ -85,7 +85,7 @@ Parmi les autres évolutions récentes de Geotribu, nous pouvons citer :
 - plus de qualitay dans l'automatisation de la chaîne de publication des contenus
 - la [rétrospective Gource](https://www.youtube.com/watch?v=cHQzkNkLeW8) des contributions de 2023 au site
 - bientôt un [plugin QField](https://www.opengis.ch/2024/06/18/supercharge-your-fieldwork-with-qfields-project-and-app-wide-plugins/) ?
-- et d'autres trucs marrants pour troller tes collègues :wink:
+- et bientôt d'autres trucs marrants :wink:
 
 <!-- Footnotes reference -->
 [^1]: PSIG : psy des SIG, profession réglementée
