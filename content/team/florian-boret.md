@@ -1,6 +1,6 @@
 ---
 title: Florian Boret
-subtitle: DATA\WAX
+subtitle: DATA-WAX
 categories:
     - contributeur
 social:
