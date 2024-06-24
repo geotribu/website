@@ -1,6 +1,6 @@
 ---
 title: Une nouvelle fenêtre des contenus Geotribu dans QGIS
-subtitle: Écris ce qui te passe par la fenêtre
+subtitle: Fenêtre ou ne pas fenêtre
 authors:
     - Geotribu
 categories:
