@@ -1,6 +1,6 @@
 ---
-title: Une nouvelle fenêtre des contenus Geotribu dans QGIS
-subtitle: Fenêtre ou ne pas fenêtre
+title: Nouvelle fenêtre des contenus Geotribu dans QGIS
+subtitle: Fenêtre ou ne pas fenêtre, telle est la question
 authors:
     - Geotribu
 categories:
