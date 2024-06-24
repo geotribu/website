@@ -43,7 +43,7 @@ Les contenus et contributions de Geotribu sont maintenant disponibles dans [QGIS
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Présentée un 1er avril dans [cet article](../2021/2021-04-01_qtribu_plugin_qgis_geotribu.md), l'extension `QTribu` est disponible dans QGIS via le dépôt officiel :
+Présentée un 1er avril par [Julien](../../team/julien-moura.md) au travers de [cet article](../2021/2021-04-01_qtribu_plugin_qgis_geotribu.md), l'extension `QTribu` est disponible dans QGIS via le dépôt officiel :
 
 ![fenêtre du gestionnaire des extensions QGIS avec QTribu sélectionnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu-nouvelle-fenetre/qtribu-qgis-plugin.webp)
 
