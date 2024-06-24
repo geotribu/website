@@ -1,12 +1,16 @@
 ---
-title: "Calcul de buffer sous MySQL - 2ème partie - la pratique"
+title: "Calcul de buffer sous MySQL - 2ème partie : la pratique"
+subtitle: MyTamponQL 2
 authors:
-    - Geotribu
+    - Fabien Goblet
 categories:
     - article
 comments: true
 date: 2012-04-17
-description: "Calcul de buffer sous MySQL - 2ème partie - la pratique"
+description: "Calculer un buffer avec un SGBD sans extension spatiale (MySQL 5). 2ème partie : la pratique"
+icon: simple/mysql
+legacy:
+    - node: 505
 tags:
     - buffer
     - latitude
@@ -18,11 +22,11 @@ tags:
 
 # Calcul de buffer sous MySQL - 2ème partie - la pratique
 
-:calendar: Date de publication initiale : 17 avril 2012
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-![Logo MySQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mysql.png "MySQL"){: .img-thumbnail-left }
+![logo MySQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mysql.png){: .img-thumbnail-left }
 
-Pour mettre en application le [premier article](http://www.geotribu.net/node/504) sur le calcul de buffer dans MySQL, nous allons développer une petite démo. Tout d'abord il nous faudra initialiser une base de données qui contiendra pas mal d'enregistrements, puis nous alimenterons cette base avec des points d'intérêts provenant d'OpenStreetMap et enfin nous développerons une carto avec l'API Google Maps pour tester la formule Haversine.
+Pour mettre en application le [premier article](./2012-04-16_calcul_buffer_mysql_partie_1_theorie.md) sur le calcul de buffer dans MySQL, nous allons développer une petite démo. Tout d'abord il nous faudra initialiser une base de données qui contiendra pas mal d'enregistrements, puis nous alimenterons cette base avec des points d'intérêts provenant d'OpenStreetMap et enfin nous développerons une carto avec l'API Google Maps pour tester la formule Haversine.
 
 ## La base de données
 
@@ -486,6 +490,4 @@ Si vous avez des remarques et / ou des suggestions, vous pouvez sans problème l
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

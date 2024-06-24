@@ -1,0 +1,16 @@
+{# JSON Feed
+voir : https://github.com/squidfunk/mkdocs-material/pull/6907#issuecomment-1998847696
+et https://guts.github.io/mkdocs-rss-plugin/configuration/#json_feed_enabled
+#}
+{% if "rss" in config.plugins %}
+<link
+  rel="alternate"
+  type="application/feed+json"
+  title="JSON feed" href="{{ 'feed_json_created.json' | url }}"
+  />
+<link
+  rel="alternate"
+  type="application/feed+json"
+  title="JSON feed of updated content"
+  href="{{ 'feed_json_updated.json' | url }}" />
+{% endif %}

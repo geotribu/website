@@ -56,6 +56,4 @@ Vous trouverez de nombreux autres exemples sur le site. En tout cas, je dois avo
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

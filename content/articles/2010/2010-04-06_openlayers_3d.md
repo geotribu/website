@@ -31,6 +31,4 @@ Bon d'accord, il n'y a pas de grande utilité, je vous l'accorde. Mais, j'aime a
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

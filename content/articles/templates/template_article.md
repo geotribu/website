@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Titre 2
@@ -36,8 +36,6 @@ Texte.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

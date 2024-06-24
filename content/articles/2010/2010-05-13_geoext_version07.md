@@ -32,6 +32,4 @@ La version 1.0 approche à grands pas. Que de chemin parcouru depuis cette simpl
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

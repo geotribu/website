@@ -104,6 +104,4 @@ Bien qu'encore à l'état bêta, il est tout à fait possible de créer une simp
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fgob.md"
+<!-- geotribu:authors-block -->

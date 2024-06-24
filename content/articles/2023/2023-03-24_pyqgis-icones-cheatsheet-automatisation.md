@@ -64,8 +64,6 @@ Je lui ai donc proposé mon aide pour en faire un plugin dédié indépendant. �
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

@@ -118,6 +118,4 @@ function popUP(e) {
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

@@ -105,6 +105,4 @@ Par rapport au code précédent il y a peu de changements à effectuer pour plac
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

@@ -27,12 +27,12 @@ A noter tout de même la parution d'un article vous proposant de [préconfigurer
 
 Vous souhaitant un bel été :sun_with_face: !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Une nouvelle page d'accueil
 
-Lors de la renaissance du site en avril 2020 (voir [l'article sur l'histoire de Geotribu](../2020/2020-08-31_geotribu_histoire.md#la-difficile-renaissance)), nous avions opté pour le générateur de site statique MkDocs avec le thème Material for MkDocs et quelques plugins (voir [la page des crédits](../../team/credits.md)).
+Lors de la renaissance du site en avril 2020 (voir [l'article sur l'histoire de Geotribu](../2020/2020-08-31_geotribu_histoire.md#la-difficile-renaissance)), nous avions opté pour le générateur de site statique MkDocs avec le thème Material for MkDocs et quelques plugins (voir [la page des crédits](../../about/credits.md)).
 
 L'avantage est que nous connaissions l'outil (pour l'avoir utilisé à Isogeo), le langage sur lequel il est basé (Python), la syntaxe Markdown et que le rendu fait la part belle au contenu.  
 L'inconvénient c'est que, comme son nom l'indique, c'est pensé pour accueillir de la documentation technique. Un type de contenu pour lequel on investit pas vraiment dans l'esthétique. De notre point de vue, il est alors plus important que Geotribu soit un site simple, efficace et qui mette en avant le contenu plutôt que joli. Notez que l'un n'empeche pas l'autre, mais dans le bénévolat plus qu'ailleurs, les choix sont affaire de moyens et de priorités.
@@ -74,8 +74,6 @@ Nous vous en reparlerons bientôt mais d'ici là, n'hésitez pas à nous donner 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

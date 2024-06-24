@@ -96,6 +96,4 @@ Je vous laisse maintenant assaisonner vos cartes de couleurs :yum:!
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fbor.md"
+<!-- geotribu:authors-block -->

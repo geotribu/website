@@ -30,7 +30,7 @@ Or, à mon sens, l'un des enjeux de la pérennité du projet réside dans sa cap
 
 Et au milieu du dernier printemps, j'ai fait la connaissance de Street Complete, une application qui facilite grandement la contribution en plus de la rendre ludique. Petite présentation en guise de coup de pub.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ![StreetComplete](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_banniere.webp "Bannière Street Complete")
@@ -77,9 +77,7 @@ Pour finir, voici une vidéo de l'utilisation (elle date d'avril donc il y a eu 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [ludification]: https://fr.wikipedia.org/wiki/Ludification

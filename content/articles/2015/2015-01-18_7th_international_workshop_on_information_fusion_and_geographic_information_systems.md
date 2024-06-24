@@ -45,6 +45,4 @@ N'hésitez pas à [proposer votre papier ou à vous y inscire](http://if-gis.com
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

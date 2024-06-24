@@ -26,7 +26,7 @@ tags:
 
 Pour donner suite à [l’article récent sur Input](2022-03-11_releve_terrain_qgis_input.md), et pour répondre à une perche tendue par Julien, j’ai décidé de prendre ma plume pour vous livrer un petit retour d’expérience de mon utilisation intensive de QField ces dernières années avec le cabinet Tactis.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -202,8 +202,6 @@ Pour la restitution des données et leur vie après l’acquisition sur le terra
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/vleb.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

@@ -5,9 +5,12 @@ icon:
   tag:
     default: fontawesome/solid/tag
     # -- custom tags icons
+    3d: material/rotate-3d
     ananas: material/fruit-pineapple
     atlas: fontawesome/solid/book-atlas
+    blender: material/blender-software
     brick: material/toy-brick
+    carte: fontawesome/solid/map-location
     cerveau: material/brain
     citrouille: material/pumpkin
     code: fontawesome/solid/code
@@ -17,6 +20,7 @@ icon:
     drone: material/drone
     facebook: fontawesome/brands/facebook
     feuille: fontawesome/solid/leaf
+    gdal: simple/gdal
     geoloupe: fontawesome/solid/magnifying-glass-location
     git: fontawesome/brands/git-alt
     globe: fontawesome/solid/earth-europe
@@ -28,6 +32,7 @@ icon:
     maplibre: simple/maplibre
     markdown: fontawesome/brands/markdown
     masques: fontawesome/solid/masks-theater
+    mastodon: material/mastodon
     meridiens: fontawesome/solid/globe
     oeuf: fontawesome/solid/egg
     open: fontawesome/solid/lock-open
@@ -35,6 +40,9 @@ icon:
     parquet: simple/apacheparquet
     pingouin: simple/linux
     python: fontawesome/brands/python
+    qgis: simple/qgis
+    raster: material/data-matrix
+    rezosocio: material/account-network
     roue: material/cog-play
     route: fontawesome/solid/route
     rstats: fontawesome/brands/r-project
@@ -42,6 +50,8 @@ icon:
     streetview: fontawesome/solid/street-view
     tente: material/tent
     telephone: material/cellphone-marker
+    terrain: fontawesome/solid/mountain-city
+    twitter: simple/x
     ubuntu: material/ubuntu
     wikipedia: material/wikipedia
     windows: fontawesome/brands/windows

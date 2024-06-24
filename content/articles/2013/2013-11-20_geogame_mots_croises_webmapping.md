@@ -30,6 +30,4 @@ Bonne chance !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jory.md"
+<!-- geotribu:authors-block -->

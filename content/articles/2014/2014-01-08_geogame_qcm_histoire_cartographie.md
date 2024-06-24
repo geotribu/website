@@ -30,6 +30,4 @@ Vous êtes prêt ? c'est parti... Bonne chance !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jory.md"
+<!-- geotribu:authors-block -->

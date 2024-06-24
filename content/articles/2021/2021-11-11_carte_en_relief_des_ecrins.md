@@ -152,6 +152,4 @@ Ensuite, il suffit d'enregistrer le résultat 3D pour l'afficher sur une page in
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jvig.md"
+<!-- geotribu:authors-block -->

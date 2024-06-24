@@ -45,6 +45,4 @@ Allé pour finir un petit gout de CSS 3 et notamment de la propriété transitio
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

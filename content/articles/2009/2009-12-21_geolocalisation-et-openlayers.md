@@ -102,6 +102,4 @@ Dans l'[exemple](http://geotribu.net/applications/tutoriaux/openlayers/geolocali
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->

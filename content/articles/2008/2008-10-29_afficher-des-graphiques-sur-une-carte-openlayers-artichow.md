@@ -126,6 +126,4 @@ Les données utilisées proviennent de : [geodata](http://geodata.grid.unep.ch/#
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/avan.md"
+<!-- geotribu:authors-block -->
