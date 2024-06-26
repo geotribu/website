@@ -8,7 +8,7 @@ categories:
 comments: true
 date: 2024-07-01
 description: "Un tour d'horizon des SIG sur la précision des calculs géométriques."
-icon: 
+icon:
 image:
 license: beerware
 robots: index, follow
@@ -54,8 +54,6 @@ Dans les sections suivantes, nous explorerons ensemble :
 
 Êtes-vous prêts pour l'aventure ? Sortons nos SIG !
 
-
-
 ## Le constat : les calculs ne sont pas bons
 
 Dans nos SIG, les opérations de superposition (_overlay_ dans la langue de Shakespeare) telles que les intersections, les unions, les différences, etc. ainsi que l'accrochage utilisé par les dessinateurs, sont omniprésentes. Ces processus s'appuient sur des calculs similaires, simplifiés ici pour une meilleure compréhension dans cette présentation générale.
@@ -71,7 +69,6 @@ Toutes les données utilisées sont disponibles sur [mon GitHub](), et pour simp
 Revenons-en au fait, prenons un exemple avec une géométrie de type ligne, ici fermée, mais cela serait similaire pour un polygone (puisqu'un polygone est une ligne). Les géométries utilisées sont projetées dans le système de coordonnées EPSG:3946, projection de mon coin magnifique.
 
 Exemple d'une géométrie de ligne au format WKB : :
-
 
 ```bin
 0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341
@@ -107,7 +104,6 @@ Quand je dis « précisément », si l'on visualise sur une échelle totalement 
 
 ![Base and line points intersection, absurd scale](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/point_intersection_base_line_absurd_scale.png?raw=true)
 
-
 Pour plus tard, on notera leurs WKB :
 
 ```bin
@@ -123,7 +119,6 @@ et
 ```
 
 respectivement `POINT(1981583.6205737416 5199333.301878075)``
-
 
 #### Création de lignes depuis ces intersections
 
@@ -154,35 +149,35 @@ Si l'accrochage se déroule correctement, on devrait avoir les mêmes points de 
 
 | wkb_geom | wkt_geom |
 | :------- | :------- |
-| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d5534124c410b4923c3e411668a7ae7bd55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981586.70338083151727915 5199342.7289676871150732) | 
-| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d553414819cb1c8c3c3e41d19efa7177d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981580.11247404105961323 5199325.78092165384441614) | 
-| b'010200000002000000a899efc8c83c3e4175e5698166d5534120d8f49bcc3c3e41ff84f6ed68d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981644.60920477658510208 5199267.71817135717719793) | 
-| b'010200000002000000a899efc8c83c3e4175e5698166d55341bc8cd13bc53c3e411d15f16064d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981637.23366622533649206 5199249.5147145064547658) | 
-| b'010200000002000000a899efc8c83c3e4175e5698166d5534199299383d33c3e412d56acf265d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981651.51396427140571177 5199255.79176859278231859) | 
-| b'010200000002000000a899efc8c83c3e4175e5698166d55341faacc621bc3c3e4126b2ed1567d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981628.13193780044093728 5199260.34263280592858791) | 
-| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d55341dc272032983c3e41f6e5308b78d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981592.19580315705388784 5199330.17485951445996761) | 
+| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d5534124c410b4923c3e411668a7ae7bd55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981586.70338083151727915 5199342.7289676871150732) |
+| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d553414819cb1c8c3c3e41d19efa7177d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981580.11247404105961323 5199325.78092165384441614) |
+| b'010200000002000000a899efc8c83c3e4175e5698166d5534120d8f49bcc3c3e41ff84f6ed68d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981644.60920477658510208 5199267.71817135717719793) |
+| b'010200000002000000a899efc8c83c3e4175e5698166d55341bc8cd13bc53c3e411d15f16064d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981637.23366622533649206 5199249.5147145064547658) |
+| b'010200000002000000a899efc8c83c3e4175e5698166d5534199299383d33c3e412d56acf265d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981651.51396427140571177 5199255.79176859278231859) |
+| b'010200000002000000a899efc8c83c3e4175e5698166d55341faacc621bc3c3e4126b2ed1567d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981628.13193780044093728 5199260.34263280592858791) |
+| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d55341dc272032983c3e41f6e5308b78d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981592.19580315705388784 5199330.17485951445996761) |
 | b'010200000002000000b5ebdd9e8f3c3e416bf8515379d5534167a9c58f873c3e41c2567db879d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981575.56160982861183584 5199334.88265007920563221) |
 
 line\_snap:
 | wkb_geom | wkt_geom |
 |-|-|
-| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d553419c2333eb913c3e417ba04d457cd55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981585.91874907072633505 5199345.08286296855658293) | 
-| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d553416d6001368d3c3e41080dad2b77d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981581.2109585062135011 5199324.68243718892335892) | 
-| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d553412f400c50963c3e413ab69fef78d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981590.31268693110905588 5199331.74412303604185581) | 
-| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d5534142628f76863c3e41b7d3bff479d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981574.46312536345794797 5199335.82420819159597158) | 
-| b'010200000002000000a899efc8c83c3e4175e5698166d55341259db491ca3c3e410908b4b168d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981642.56916219857521355 5199266.77661324385553598) | 
-| b'010200000002000000a899efc8c83c3e4175e5698166d5534175e25c6ad23c3e4164c45eac65d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981650.41547980648465455 5199254.69328412786126137) | 
-| b'010200000002000000a899efc8c83c3e4175e5698166d55341cccd8ccdc63c3e414a00e65664d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981638.80292974691838026 5199249.35778815485537052) | 
+| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d553419c2333eb913c3e417ba04d457cd55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981585.91874907072633505 5199345.08286296855658293) |
+| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d553416d6001368d3c3e41080dad2b77d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981581.2109585062135011 5199324.68243718892335892) |
+| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d553412f400c50963c3e413ab69fef78d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981590.31268693110905588 5199331.74412303604185581) |
+| b'010200000002000000b5ebdd9e8f3c3e416bf8515379d5534142628f76863c3e41b7d3bff479d55341' | LineString (1981583.62057374161668122 5199333.30187807511538267, 1981574.46312536345794797 5199335.82420819159597158) |
+| b'010200000002000000a899efc8c83c3e4175e5698166d55341259db491ca3c3e410908b4b168d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981642.56916219857521355 5199266.77661324385553598) |
+| b'010200000002000000a899efc8c83c3e4175e5698166d5534175e25c6ad23c3e4164c45eac65d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981650.41547980648465455 5199254.69328412786126137) |
+| b'010200000002000000a899efc8c83c3e4175e5698166d55341cccd8ccdc63c3e414a00e65664d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981638.80292974691838026 5199249.35778815485537052) |
 | b'010200000002000000a899efc8c83c3e4175e5698166d55341d0a0d012bd3c3e4126b2ed1567d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981629.07349591329693794 5199260.34263280592858791) |
 
 On remarque que nos points d'origines sont dans les deux cas :
 
 - `1981583.62057374161668122 5199333.30187807511538267`
-- `1981640.78490600921213627 5199258.02208839822560549` 
+- `1981640.78490600921213627 5199258.02208839822560549`
 
 respectivement en WKB :
 
-- `0101000000b5ebdd9e8f3c3e416bf8515379d55341` 
+- `0101000000b5ebdd9e8f3c3e416bf8515379d55341`
 - `0101000000a899efc8c83c3e4175e5698166d55341`
 
 Les lignes semblent donc avoir été correctement accrochées, comme le montrent nos représentations en WKT et WKB.
@@ -190,7 +185,6 @@ Les lignes semblent donc avoir été correctement accrochées, comme le montrent
 En effet, on retrouve bien les coordonnées d'origine :
 
 `b5ebdd9e8f3c3e416bf8515379d55341` et `a899efc8c83c3e4175e5698166d55341` dans les points.
-
 
 #### Sélection des lignes intersectant la base
 
@@ -282,7 +276,6 @@ Et bien, nous verrons cela plus tard.
 
 Pour plus d'informations, consultez la page [Wikipedia](https://fr.wikipedia.org/wiki/Well-known_text)
 
-
 ## GEOS au cœur de QGIS
 
 Dans la partie précédente, nous avons posé le problème : le résultat d'une intersection n'intersecte pas toujours la donnée d'origine. Cette réalité peut surprendre les nouveaux utilisateurs de SIG et frustrer les plus expérimentés qui cherchent une précision dans leurs analyses spatiales.
@@ -294,7 +287,7 @@ Dans cette section, nous allons plonger dans les dessous des SIG en explorant le
 GEOS (Geometry Engine - Open Source) est une bibliothèque C++ qui fournit des fonctions de calculs sur les géométries Simple Feature OGC. Elle est largement utilisée dans divers outils SIG, y compris QGIS, pour effectuer des calculs géométriques. GEOS est une implémentation de l'API de JTS (Java Topology Suite) qui vise à manipuler des géométries planes en 2D.
 
 ![GEOS diagram from crunchy data](https://f.hubspotusercontent00.net/hubfs/2283855/geos-jts%20(1).png)
-(Source : https://www.crunchydata.com/blog/performance-improvements-in-geos)
+(Source : <https://www.crunchydata.com/blog/performance-improvements-in-geos>)
 
 ### Le rôle de GEOS dans QGIS
 
@@ -341,7 +334,6 @@ Le résultat retourné est `true`. C'est cohérent.
 
 Maintenant, nous allons calculer l'intersection. Pour cela, on utilise l'opérateur `intersection` au lieu de `intersects`, rien de compliqué.
 
-
 ```shell
 > geosop \
 -a \
@@ -357,7 +349,6 @@ Ah ! C'est une petite différence avec QGIS qui retourne deux points. Ici, GEOS 
 Le WKT est plus lisible, mais il a l'inconvénient de ne pas avoir toujours la même représentation. QGIS nous retourne 17 décimales et GEOS : 10 ; ce qui, dans tous les cas, est déjà trop pour du projeté,  on en reparlera plus tard.
 
 Afin d'éviter ces différences, nous allons travailler avec le WKB. Pour le récupérer, on ajoute simplement l'option WKB à l'option `-f` pour le format de sortie :
-
 
 ```shell
 > geosop \
@@ -380,10 +371,9 @@ Ici, nous avons la représentation d'un multipoint, où les coordonnées peuvent
 Ce qui équivaut, moyennant la différence, sans conséquence, entre majuscules et minuscules, à :
 
 - `0101000000a899efc8c83c3e4175e5698166d55341`
-- `0101000000b5ebdd9e8f3c3e416bf8515379d55341` 
+- `0101000000b5ebdd9e8f3c3e416bf8515379d55341`
 
 Très bien. Est-ce que le point intersecte ou touche une des géométries d'origine ?
-
 
 ```shell
 > geosop \
@@ -408,7 +398,7 @@ intersects
 ```
 
 Vous pouvez également essayer directement avec les points `0101000000A899EFC8C83C3E4175E5698166D55341` et `0101000000B5EBDD9E8F3C3E416BF8515379D55341`, plutôt que le multipoint.
-De même, vous pouvez tester les autres prédicats comme `touches`, le résultat sera toujours `false`... 
+De même, vous pouvez tester les autres prédicats comme `touches`, le résultat sera toujours `false`...
 Sauf pour... `disjoint` ce qui veut dire que les points ne sont pas sur les géométries.
 
 Alors pourquoi, si les points ne sont pas sur les lignes, nous avions sur QGIS des segments qui intersectaient la géométrie d'origine ?
@@ -419,7 +409,6 @@ Je vous laisse regarder les images de la partie précédente.
 On commence à toucher du doigt le problème. Le point d'intersection est d'un côté ou de l'autre du segment. Si l'on était sur un hyper zoom, on aurait quelque chose comme :
 
 [<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/example_grid_line.png?raw=true" alt="Example points along line" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/example_grid_line.png?raw=true)
-
 
 En simplifiant, on pourrait dire que les points sont sur des minuscules grilles. Le point n'est pas sur la ligne, mais très proche.
 
@@ -450,7 +439,6 @@ distance
 ```
 
 `3.0508414550559678e-10`
-
 
 La distance du premier point par rapport à `line` :
 
@@ -485,18 +473,13 @@ En attendant, on observe que QGIS donne le même résultat que GEOS. Ce qui n'es
 C'est donc GEOS qui est faux ? Non, GEOS donne le « bon » résultat, mais la vérité est ailleurs.
 Nous continuerons cette exploration dans les parties suivantes.
 
-
 [^1] Comme expliqué avant, QGIS réalise certains calculs, identiques à ceux de GEOS, pourtant sans utiliser cette bibliothèque. En particulier, l'accrochage ne repose pas sur GEOS, mais sur des calculs équivalents. Je simplifie ici pour éviter de perdre les moins connaisseurs de cet écosystème.
 
-
-
 ## Et les autres SIG Open Source ? Comparaisons avec GRASS et SAGA
-
 
 ### GRASS : Le vénérable du SIG
 
 Comme j'ai déjà trahi les petits secrets internes, Julien m'avait ~~demandé~~ proposé de faire une version actualisée de cet [article](https://geotribu.fr/articles/2014/2014-11-13_corriger_automatiquement_geometries_invalides_qgis/). J'ai ~~procrastiné~~ volontairement, attendu jusqu'en 2024, pour fêter les 10 ans de l'article. Mais, ce n'est pas dans celui-là que je le ferai. Néanmoins, on va bien évidemment utiliser GRASS pour tester si notre cas est différent avec GRASS.
-
 
 Pour notre expérience avec GRASS, il faudra faire quelques manipulations, car on n'a pas la possibilité de faire directement nos calculs avec le WKB.
 Afin de simplifier la reproductibilité aux lecteurs, j'ai ajouté des modèles de traitements dans le projet ; ils sont également disponibles individuellement sur mon GitHub.
@@ -507,15 +490,15 @@ Dans GRASS, `v.overlay` permet de réaliser des opérations… d'overlay - super
 
 La couche `base` est une polyligne fermée, elle sera utilisée pour être convertie en polygone. Pour les puristes, on regardera que les coordonnées du WKB sont bien identiques entre le linestring et le (multi)polygone. Il y a plusieurs façons de procéder, mais, comme pour rendre accessible à tous, nous allons utiliser GRASS via QGIS, j'utilise les premières conversions dans QGIS ; ensuite, nous utiliserons uniquement les outils de GRASS.
 
-![grass_line_overlay_points](https://github.com/lbartoletti/lbartoletti.github.io/blob/main
+![grass_line_overlay_points](<https://github.com/lbartoletti/lbartoletti.github.io/blob/main>
 /assets/2024_intersection_intersects/data/processing/grass_line_overlay_points.svg)
 
-Notre algorithme va convertir la `base` en polygone, puis effectuer l'opération d'overlay. Pour calculer l'intersection entre `line` et `base_poly`, on extrait les points d'intersections que l'on peut afficher dans QGIS. On retrouve le même résultat, ici, je passe les détails, mais on retrouve bien nos WKB : 
+Notre algorithme va convertir la `base` en polygone, puis effectuer l'opération d'overlay. Pour calculer l'intersection entre `line` et `base_poly`, on extrait les points d'intersections que l'on peut afficher dans QGIS. On retrouve le même résultat, ici, je passe les détails, mais on retrouve bien nos WKB :
 
 - `0101000000a899efc8c83c3e4175e5698166d55341`
 - `0101000000b5ebdd9e8f3c3e416bf8515379d55341`
 
-Pour le prédicat `intersects`, nous allons continuer d'utiliser GRASS avec la commande `v.select` avec l'opération `intersects`. 
+Pour le prédicat `intersects`, nous allons continuer d'utiliser GRASS avec la commande `v.select` avec l'opération `intersects`.
 Encore false… du moins, les points retournés sont ceux des extrémités de `line` et aucun point pour `base` ou `base_poly`.
 
 ![grass_select_line_overlay](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/grass_select_line_overlay_points.svg?raw=true)
@@ -523,15 +506,14 @@ Encore false… du moins, les points retournés sont ceux des extrémités de `l
 Le model est disponible [ici](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/line_overlay_points.model3).
 
 C'est au moins rassurant, car derrière `v.select` avec l'opérateur `intersects` on utilise… GEOS.
-Il existe une autre façon de réaliser la sélection, mais je la garde pour la prochaine partie :wink: 
-
+Il existe une autre façon de réaliser la sélection, mais je la garde pour la prochaine partie :wink:
 
 ### SAGA : Le Chevalier Oublié du SIG
 
 Si [SAGA](https://fr.wikipedia.org/wiki/Saga_(personnage)) est le plus puissant des chevaliers du zodiaque, [SAGA GIS](https://saga-gis.sourceforge.io/en/index.html) est malheureusement bien souvent le chevalier oublié du SIG. Il possède certains traitements qui ne sont pas disponibles dans QGIS et peut également se révéler utile pour d'autres existants.
 
 Depuis quelques versions, il n'est plus possible d'avoir les traitements de SAGA directement depuis QGIS. Il faut installer le plugin [SAGA NG](lien du plugin) mais il a quelques limitations m'empêchant de l'utiliser pour l'article.
-Pour cette partie, je vais directement passer par l'interface de SAGA, notamment afin de visualiser le résultat. 
+Pour cette partie, je vais directement passer par l'interface de SAGA, notamment afin de visualiser le résultat.
 
 Il est intéressant de comparer le résultat de SAGA avec GEOS/QGIS. En effet, les opérations d'overlay ne reposent pas sur GEOS, mais sur une autre bibliothèque dédiée ; pour ceux intéressés, j'y reviendrai dans la partie sur les algorithmes.
 
@@ -541,22 +523,18 @@ Tout d'abord, SAGA, ne sait pas lire le GeoPackage. J'ai réalisé une conversio
 
 On charge ces fichiers dans l'interface de SAGA.
 
-
 [<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_load_shapes.png?raw=true" alt="Load shapes" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_load_shapes.png?raw=true)
 
 Nous affichons nos données. Rien de surprenant, on se retrouve avec nos deux géométries.
 
-
 [<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_base_line.png?raw=true" alt="Map base line" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_base_line.png?raw=true)
 
-Première étape, vérifier, le calcul d'intersection. Dans le vocabulaire de SAGA, l'intersection entre lignes, s'appelle "Crossing". 
+Première étape, vérifier, le calcul d'intersection. Dans le vocabulaire de SAGA, l'intersection entre lignes, s'appelle "Crossing".
 On exécute le traitement : Geoprocessing -> Shapes -> Lines -> Line Crossing
-
 
 [<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_line_crossing.png?raw=true" alt="Line Crossing" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_line_crossing.png?raw=true)
 
-On retrouve bien nos deux points : 
-
+On retrouve bien nos deux points :
 
 [<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_crossing.png?raw=true" alt="Map crossing" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_crossing.png?raw=true)
 
@@ -567,23 +545,19 @@ Je passe ici les étapes pour leurs récupérations, mais, les WKB sont bien les
 
 L'algorithme de SAGA, qui rappelons-le, n'utilisant pas GEOS retourne le même résultat. Très bien !
 
-
 ### sélection
 
-Maintenant, tentons de vérifier si les points intersectent, ou non, notre base. Pour cela, on utilise l'outil « sélection par localisation » : 
+Maintenant, tentons de vérifier si les points intersectent, ou non, notre base. Pour cela, on utilise l'outil « sélection par localisation » :
 Geoprocessing -> Shapes -> Selection -> Selection by localisation.
-
 
 [<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base.png?raw=true" alt="Select crossing base" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base.png?raw=true)
 <insérer images/saga_select_crossing_base.png>
 
 Paf, erreur intéressante. Cela fonctionne seulement pour un point avec un polygone !
 
-
 [<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_error.png?raw=true" alt="Select crossing base error" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_error.png?raw=true)
 
 Dans notre expérience avec GRASS, on avait un problème identique. Nous allons donc tester avec `base_poly` :
-
 
 [<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_poly.png?raw=true" alt="Select crossing base poly" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_poly.png?raw=true)
 
@@ -595,12 +569,9 @@ On va reprendre notre exemple entre base et test_line.
 
 20 sur 34, comme pour GEOS !
 
-
 [<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_base_test_line.png?raw=true" alt="Select base test line" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_base_test_line.png?raw=true)
 
 C'est normal d'une certaine façon. Cependant, le premier test avec crossing, nous montre également que le point d'intersection n'intersecte pas la géométrie d'origine, comme pour GEOS.
-
-
 
 ## Et dans les bases de données ? Comparaisons de SQL Server, Oracle et PostGIS
 
@@ -615,7 +586,7 @@ Autant, je connais très bien PostGIS, autant, ma connaissance est limitée sur 
 
 Le titre donne directement la conclusion, mais c'était déjà annoncé.
 
-Nous allons reprendre nos deux WKB : 
+Nous allons reprendre nos deux WKB :
 
 - base : `0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341`
 
@@ -627,14 +598,13 @@ Nous allons reprendre nos deux WKB :
 
 `01040000206A0F0000020000000101000000A899EFC8C83C3E4175E5698166D553410101000000B5EBDD9E8F3C3E416BF8515379D55341`
 
-
 Retourne un EWKB, d'où la différence avec notre WKB de GEOS ; j'expliquerai cela dans le prochain article sur le WKB/WKT.
 
-Si l'on enlève la partie « E », à savoir le SRID `0206A0F0`, on se retrouve avec le « bon » WKB : 
+Si l'on enlève la partie « E », à savoir le SRID `0206A0F0`, on se retrouve avec le « bon » WKB :
 
 `0104000000020000000101000000A899EFC8C83C3E4175E5698166D553410101000000B5EBDD9E8F3C3E416BF8515379D55341`
 
-On peut directement le retrouver avec PostGIS en utilisant ST_AsBinary : 
+On peut directement le retrouver avec PostGIS en utilisant ST_AsBinary :
 
 ```sql
 SELECT ST_AsBinary(ST_Intersection(base, line)) FROM ST_GeomFromWKB(decode('0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341', 'hex'), 3946) as base, ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) as line;
@@ -649,12 +619,11 @@ SELECT ST_AsText(ST_Intersection(base, line)) FROM ST_GeomFromWKB(decode('010200
 ```
 
 `MULTIPOINT((1981640.7849060092 5199258.022088398),(1981583.6205737416 5199333.301878075))`
- 
 
 Je vais légèrement adapter la requête, grâce à des CTE, pour plus de lisibilité par la suite.
 
 ```sql
-WITH 
+WITH
 base AS (
     SELECT ST_GeomFromWKB(decode('0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341', 'hex'), 3946) AS geom
 ),
@@ -664,20 +633,19 @@ line AS (
 SELECT ST_AsBinary(ST_Intersection(base.geom, line.geom)), ST_AsText(ST_Intersection(base.geom, line.geom)) FROM base, line
 ```
 
-Retourne le même résultat : 
+Retourne le même résultat :
 `\x0104000000020000000101000000a899efc8c83c3e4175e5698166d553410101000000b5ebdd9e8f3c3e416bf8515379d55341`
 `MULTIPOINT((1981640.7849060092 5199258.022088398),(1981583.6205737416 5199333.301878075))`
 
-
 ```sql
-WITH 
+WITH
 base AS (
     SELECT ST_GeomFromWKB(decode('0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341', 'hex'), 3946) AS geom
 ),
 line AS (
     SELECT ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) AS geom
 )
-SELECT 
+SELECT
     ST_Intersects(base.geom, ST_Intersection(base.geom,line.geom)), ST_Intersects(line.geom, ST_Intersection(base.geom,line.geom)),
     ST_Distance(base.geom, ST_Intersection(base.geom,line.geom)), ST_Distance(line.geom, ST_Intersection(base.geom,line.geom))
 FROM base, line
@@ -685,15 +653,13 @@ FROM base, line
 
 On retrouve bien, notre malheureux `false` et notre distance très proche de 0, mais pas 0.
 
-
 Ils se passent quoi chez les autres ?
-
 
 ### Microsoft SQL Server
 
 La syntaxe SQL Server est différente de celle de PostGIS, mais assez lisible. La « grosse » différence est l'ajout du « 0 x » dans le WKB d'entrée. Il s'agit en fait de sa représentation hexadécimale ; plus d'informations dans le prochain article.
 
-Voici cette requête : 
+Voici cette requête :
 
 ```sql
 WITH
@@ -712,7 +678,7 @@ SELECT
 FROM base, line;
 ```
 
-Le résultat, sur SQL Server 15.0.4153, remis en forme, est : 
+Le résultat, sur SQL Server 15.0.4153, remis en forme, est :
 
 `
 0x6A0F0000010402000000B5EBDD9E8F3C3E416BF8515379D55341A899EFC8C83C3E4175E5698166D55341020000000100000000010100000003000000FFFFFFFF0000000004000000000000000001000000000100000001,
@@ -772,17 +738,17 @@ Ici, j'ai adapté la requête au langage SDO, expliquons la requête et le résu
 
 Comme pour SQL Server, il faut convertir le WKB hexadécimal pour Oracle, on utilise `HEXTORAW`.
 
-Si PostGIS va retourner un EWKB, pour un résultat de géométrie, ORACLE, retourne sa représentation interne, à savoir : 
+Si PostGIS va retourner un EWKB, pour un résultat de géométrie, ORACLE, retourne sa représentation interne, à savoir :
 `{2005,null,null,{1,1,2},{1981583.62057374,5199333.30187808,1981640.78490601,5199258.0220884}}`
 
 Ce qui nous intéresse ici est le code `2005` qui veut dire MultiPoint 2D, ainsi que le tableau de coordonnées X/Y `{1981583.62057374,5199333.30187808,1981640.78490601,5199258.0220884}`.
 
-On retrouve cette information avec la représentation WKT à laquelle nous sommes habitués : 
+On retrouve cette information avec la représentation WKT à laquelle nous sommes habitués :
 `MULTIPOINT ((1981583.62057374 5199333.30187808), (1981640.784906015199258.0220884))`
 
 Je ne vais pas m'étendre sur le WKB qui est « étrange », il est en Big Endian, alors que jusqu'à présent, je n'ai eu que du Little Endian ; encore une fois plus d'explications dans l'article sur le WKB/WKT. Néanmoins, on a quelques différences entre ceux-ci. Sans-doute lié à la précision du résultat ; n'étant pas expert ORACLE, il me manque des éléments de compréhension et des tests à mener.
 
-Toutefois, à la représentation après la virgule près, on a le même résultat : 
+Toutefois, à la représentation après la virgule près, on a le même résultat :
 
 | Base | x1 | y1 | x2 | y2 |
 |-|-|-|-|-|
@@ -794,7 +760,7 @@ J'ai indiqué en introduction qu'ORACLE [allait] nous donner des éléments int�
 Sur ma version, je n'ai pas de `ST_Intersects` ou un `SDO_Intersects`, je dois utiliser [`RELATE`](https://docs.oracle.com/en/database/oracle/oracle-database/21/spatl/SDO_GEOM-reference.html#GUID-E1209A71-F5D8-42A9-A93E-72657B115579). Nous avons également cela avec [PostGIS](https://postgis.net/docs/ST_Relate.html) (et GEOS). `ANYINTERACT` retourne `TRUE` si les objets ne sont pas disjoints, c'est ce que l'on veut.
 Donc, on a notre équivalent de `ST_Intersects` ou plus exactement `not ST_Disjoint`. Toutefois, cela ne nous dit toujours pas ce qu'est ce `0.00000000001`. Vous souvenez-vous du titre principal de cette série ? [La tolérance](https://docs.oracle.com/en/database/oracle/oracle-database/21/spatl/spatial-concepts.html#GUID-7469388B-6D23-4294-904F-78CA3B7191D3).
 
-Il s'agit donc d'une tolérance dans le calcul du prédicat. Avec une valeur « extrême », comme ici, le résultat est faux. Cependant, si l'on utilise une valeur plus cohérente avec notre unité, par exemple `1e-6`, nous aurons enfin notre « bon » résultat tant attendu : 
+Il s'agit donc d'une tolérance dans le calcul du prédicat. Avec une valeur « extrême », comme ici, le résultat est faux. Cependant, si l'on utilise une valeur plus cohérente avec notre unité, par exemple `1e-6`, nous aurons enfin notre « bon » résultat tant attendu :
 
 `"{2005,null,null,{1,1,2},
 {1981583.62057374,5199333.30187808,1981640.78490601,5199258.0220884}}",
@@ -807,17 +773,17 @@ Les géométries WKT et WKB sont identiques, en revanche, on obtient `TRUE` et `
 
 Comment interpréter cela ? L'utilisation de la tolérance va être plus… tolérante dans le calcul. Dans notre cas, on va retourner vrai, si le point est aux alentours de la géométrie d'environ la tolérance donnée, ici 1e-6.
 
-En PostGIS, on pourrait réécrire cela avec ST_DWithin : 
+En PostGIS, on pourrait réécrire cela avec ST_DWithin :
 
 ```sql
-WITH 
+WITH
 base AS (
     SELECT ST_GeomFromWKB(decode('0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341', 'hex'), 3946) AS geom
 ),
 line AS (
     SELECT ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) AS geom
 )
-SELECT 
+SELECT
     ST_DWithin(base.geom, ST_Intersection(base.geom,line.geom), 1e-6), ST_DWithin(line.geom, ST_Intersection(base.geom,line.geom), 1e-6)
 FROM base, line;
 ```
@@ -825,9 +791,7 @@ FROM base, line;
 Enfin, concernant la distance, ORACLE accepte un paramètre tolérance et donne un résultat différent suivant ce paramètre.
 On pourrait penser que la distance devrait toujours être la même. Cependant, je pense — supposition, car connaissant mal ORACLE — que celle-ci sert à arrondir si l'on est dans sa plage, et alors, pour notre cas, retourne 0, plutôt qu'un presque zéro.
 
-
 Notre exploration n'est pas encore terminée, même si l'on s'approche de l'explication. On vient de voir, que, comme les SIG OpenSource, on ignore comment retourner correctement le prédicat `intersects` d'une intersection. Sauf à être tolérant, et nous y reviendrons.
-
 
 ## Utilisation de la topologie : est-ce que la topologie peut nous sauver ?
 
@@ -857,7 +821,7 @@ Mais, comme GRASS est topologique, on peut également s'en servir pour retrouver
 
 Pour utiliser la topologie, nous allons faire l'union de nos deux lignes de `base` et `line` pour ensuite nettoyer celles-ci.
 Le nettoyage, via `v.clean` se fera seulement avec l'outil `break`.
-Nous allons passer de : 
+Nous allons passer de :
 < insérer image >
 à
 < insérer image avec break>
@@ -870,11 +834,11 @@ Quels sont les points ? Les mêmes que jusqu'à présent. Mais, alors, que s'est
 
 ### De la topologie dans QGIS
 
-Dans QGIS, il existe un mode d'édition que j'affectionne particulièrement, qui est… l'édition topologique. 
+Dans QGIS, il existe un mode d'édition que j'affectionne particulièrement, qui est… l'édition topologique.
 
 QGIS est spaghetti. Les données sont toutes dans ce plat de pâtes : les entités géographiques sont stockées individuellement sans relations topologiques explicites. Mais, bien que QGIS utilise un modèle de données de type « spaghetti », le logiciel propose des outils qui aident à maintenir la cohérence géométrique entre les couches.
 
-En particulier, ici, nous allons utiliser la fonction d'édition topologique, qui, lors de chaque accrochage sur un segment, va ajouter des nœuds sur le segment accroché. 
+En particulier, ici, nous allons utiliser la fonction d'édition topologique, qui, lors de chaque accrochage sur un segment, va ajouter des nœuds sur le segment accroché.
 
 < insérer gif>
 
@@ -892,7 +856,7 @@ La topologie est grande, la topologie est bonne, elle va sauver nos calculs !
 
 ### Les limites de la topologie
 
-Oui, la topologie c'est très bien, et son utilisation dans QGIS, via ses outils ou via GRASS, est très puissante. Mais, l'on peut faire quelques reproches : 
+Oui, la topologie c'est très bien, et son utilisation dans QGIS, via ses outils ou via GRASS, est très puissante. Mais, l'on peut faire quelques reproches :
 
 – plus difficile à utiliser/à maintenir ;
 – traitements plus longs lors d'intégrations de données externes, non topologiques ;
@@ -910,11 +874,12 @@ Toutefois, en dehors des nœuds ajoutés, est-ce que notre géométrie est la m�
 
 Comparons les angles des segments.
 
-Dans notre géométrie d'origine, nous avons quatre segments, avec comme azimut, en radians : 
+Dans notre géométrie d'origine, nous avons quatre segments, avec comme azimut, en radians :
 
 ![](https://github.com/lbartoletti/lbartoletti.github.io/blob/e2a7c896516af05da86d079c589edda415471e83/assets/2024_intersection_intersects/data/processing/qgis_segments_azimuth.svg?raw=true)
 
 Soit, en partant du bas gauche et en tournant dans le sens horaire :
+
 - 4.341309933406307
 - 1.0434054052601267
 - 2.401617769614756
@@ -923,6 +888,7 @@ Soit, en partant du bas gauche et en tournant dans le sens horaire :
 Dans notre base qui a été éditée topologiquement ?
 
 Sur le premier segment d'origine :
+
 - 4.341309933414985
 - 4.3413099333929175
 - 4.341309933355925
@@ -934,6 +900,7 @@ Sur le premier segment d'origine :
 - 4.341309933391953
 
 Le deuxième :
+
 - 5.848325554496416
 - 5.848325554486275
 - 5.8483255545512725
@@ -945,6 +912,7 @@ Le deuxième :
 - 5.848325554479168
 
 Le troisième :
+
 - 1.0434054052235737
 - 1.043405405251191
 - 1.0434054052730521
@@ -956,6 +924,7 @@ Le troisième :
 - 1.0434054052482782
 
 Le quatrième :
+
 - 2.401617769621854
 - 2.401617769590059
 - 2.4016177695994174
@@ -967,7 +936,8 @@ Le quatrième :
 - 2.4016177696067103
 - 2.4016177696313
 
-Les nouveaux segments ne sont pas « alignés » comme le segment d'origine. De rien du tout, en vrai, car si on convertit ces angles en degrés, on obtient 4 valeurs, identiques à nos segments d'origine : 
+Les nouveaux segments ne sont pas « alignés » comme le segment d'origine. De rien du tout, en vrai, car si on convertit ces angles en degrés, on obtient 4 valeurs, identiques à nos segments d'origine :
+
 - 335.084
 - 59.783
 - 137.603
@@ -976,7 +946,6 @@ Les nouveaux segments ne sont pas « alignés » comme le segment d'origine. De 
 En réalité, pas totalement, mais j'ai volontairement arrondi à trois chiffres après la virgule.
 Pourquoi ai-je fait ça ? Marre de me trimbaler autant de chiffres.
 Et, puis, est-ce vraiment utile d'avoir autant de chiffres après la virgule ? :wink:
-
 
 ## Approche Alternative : Exploration de méthodes alternatives telles que l'utilisation de SFCGAL pour des calculs plus robustes
 
@@ -987,9 +956,9 @@ Nous allons maintenant utiliser une « approche alternative » dans les calculs.
 Pour cela, laissez-moi introduire SFCGAL.
 
 > SFCGAL est une bibliothèque d'enveloppe C++ autour de [CGAL](https://www.cgal.org/) avec pour objectif de supporter l'ISO 19107:2013 et l'accès aux fonctions simples (Simple Features Access) 1.2 de l'OGC pour les opérations en 3D.
-> 
+>
 > SFCGAL fournit des types de géométries et des opérations conformes aux normes, qui peuvent être accédées via ses API C ou C++. PostGIS utilise l'API C pour exposer certaines fonctions de SFCGAL dans les bases de données spatiales (cf. manuel de PostGIS).
-> 
+>
 > Les coordonnées des géométries ont une représentation en nombre rationnel exact et peuvent être en 2D ou en 3D.
 
 En gros, SFCGAL, fait la géométrie comme on connaît dans nos SIG, mais avec le moteur de CGAL et surtout des nombres « différents » : rationnel exact. L'explication plus détaillée sera donnée dans la partie algorithme et code, mais considérons que ce sont des fractions.
@@ -1002,7 +971,7 @@ PySFCGAL est une interface Python pour la bibliothèque SFCGAL, en cours de dév
 
 Sur mon système FreeBSD, voici, comment je l'utilise pour notre test :
 
-```python 
+```python
 # Import de la bibliothèque
 from pysfcgal import sfcgal
 # Lecture du wkb base
@@ -1011,7 +980,7 @@ base = sfcgal.read_wkb('0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7
 line = sfcgal.read_wkb('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341')
 ```
 
-Notre calcul d'intersection se fera simplement avec cette ligne : 
+Notre calcul d'intersection se fera simplement avec cette ligne :
 
 ```python
 # Calcul de l'intersection
@@ -1024,7 +993,7 @@ Le résultat `MULTIPOINT((1981583.62057374 5199333.30187807),(1981640.78490601 5
 
 On note, une petite différence à partir du 10e chiffre. Cela se traduit dans le WKB qui, outre l'inversion des points, est légèrement différent.
 
-```python 
+```python
 print(result.wkb)
 ```
 
@@ -1046,7 +1015,7 @@ C'est un double `TRUE` !
 
 ### PostGIS avec SFCGAL
 
-Le principal consommateur de SFCGAL est PostGIS, il est notamment utilisé pour les calculs 3D et certaines opérations qui ne sont pas disponibles dans GEOS. 
+Le principal consommateur de SFCGAL est PostGIS, il est notamment utilisé pour les calculs 3D et certaines opérations qui ne sont pas disponibles dans GEOS.
 À l'heure, où j'écris, la version 3.5 de PostGIS n'est pas encore sortie. Cependant, elle contient tous les algorithmes de SFCGAL, y compris ceux pouvant faire « doublon » avec GEOS.
 Vous connaissez vos fonctions `ST_` de PostGIS, vous remplacez le préfixe par `CG_` et vous aurez les fonctions SFCGAL.
 
@@ -1062,33 +1031,33 @@ base AS (
 line AS (
     SELECT ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) AS geom
 )
-SELECT 
+SELECT
     CG_Intersects(base.geom, CG_Intersection(base.geom,line.geom)), CG_Intersects(line.geom, CG_Intersection(base.geom,line.geom)),
     CG_Distance(base.geom, CG_Intersection(base.geom,line.geom)), CG_Distance(line.geom, CG_Intersection(base.geom,line.geom))
 FROM base, line
 ```
 
-Le résultat tant attendu : 
+Le résultat tant attendu :
 
  cg_intersects | cg_intersects |      cg_distance       |     cg_distance
 ---------------|---------------|------------------------|----------------------
  f             | f             | 3.0508500689910857e-10 | 1.72344247851053e-10
- 
+
 Comment ça, « faux » ? C'était vrai avec Python.
 
 En effet, mais il faut comprendre, que lorsque l'on réalise cette requête, plusieurs conversions s'effectuent.
 
-Si vous vous souvenez, plus haut, j'ai indiqué que SFCGAL utilisait « d'autres nombres », des sortes de fractions. En vrai, sa représentation interne ressemble à ça : 
+Si vous vous souvenez, plus haut, j'ai indiqué que SFCGAL utilisait « d'autres nombres », des sortes de fractions. En vrai, sa représentation interne ressemble à ça :
 
 ```python
 print(result.wkt)
 ```
 
-On obtient un "WKT" mais avec des fractions : 
+On obtient un "WKT" mais avec des fractions :
 
 `MULTIPOINT((39835383350819973229271557358571370825/20102802090827818983138002993152 26130292092976317370966223130398592513/5025700522706954745784500748288),(4210607705173521426482690542319302151/2124808763144847138096555229184 2761857251796143622778067803204906245/531202190786211784524138807296))`
 
-Le passage de la fraction, au nombre à virgule « double », va faire une légère approximation et on ne va pas retomber sur nos ~~pattes~~ bits. D'où ce comportement. 
+Le passage de la fraction, au nombre à virgule « double », va faire une légère approximation et on ne va pas retomber sur nos ~~pattes~~ bits. D'où ce comportement.
 
 Pour les plus curieux, la partie « algorithme » contiendra un exemple en Python SFCGAL et d'autres exemples en PostGIS SFCGAL.
 
@@ -1096,10 +1065,9 @@ Ce qu'il faut comprendre, c'est que SFCGAL peut donner le résultat correct, à 
 
 Il existerait une façon de rendre le calcul correct dans PostGIS avec SFCGAL, mais ce n'est pas encore implémenté.
 
-
 ## Et chez la concurrence, ça se passe comment ?
 
-On ne va pas tous les faire, mais seulement deux un peu connus et installé parfois à côté de QGIS :wink: 
+On ne va pas tous les faire, mais seulement deux un peu connus et installé parfois à côté de QGIS :wink:
 
 Le premier sera FME, une sorte de boîte à outils de QGIS et l'autre ArcGis Pro, le concurrent payant de GRASS/QGIS.
 
@@ -1116,7 +1084,6 @@ Et le résultat :
 KO !
 
 FME utilise, et contribue, aux outils open source. Néanmoins, même si le résultat est le même qu'avec GEOS, ce n'est pas cette bibliothèque qui est utilisée, mais une de leur conception. Encore une fois, le problème n'est donc pas GEOS.
-
 
 ### ESRI ArcGis Pro
 
@@ -1163,7 +1130,7 @@ arcpy.analysis.Intersect(
 - MultiPoint ((1981583.62049999833106995 5199333.30189999938011169),(1981640.78490000218153 5199258.02210000157356262))
 
 Un résultat également légèrement différent, mais proche de celui que nous obtenons avec les autres SIG.
-Que se passe-t-il ici ? 
+Que se passe-t-il ici ?
 
 ArcGis utilise, pour tous les calculs, une notion que l'on retrouve parfois dans les SIG OpenSource, celui de résolution et tolérance.
 On peut la modifier en passant en paramètres des valeurs XY. Voici les requêtes et les résultats avec une valeur de 0.00001 mm.
@@ -1178,10 +1145,9 @@ with arcpy.EnvManager(XYResolution="0.00001 Millimeters", XYTolerance="0.00001 M
         output_type="POINT"
     )
 ```
-    
+
 - MultiPoint ((1981640.78490600734949112 5199258.02208840474486351),(1981583.6205737441778183 5199333.30187807604670525))
 - 0104000000020000000101000000a099efc8c83c3e417ce5698166d553410101000000c0ebdd9e8f3c3e416cf8515379d55341
-
 
 Ah, on retrouve nos petits ! Du moins, l'écart a été réduit.
 
@@ -1214,7 +1180,6 @@ arcpy.management.SelectLayerByLocation(
 Dans les deux cas, ArcGis sélectionne les points d'intersection. C'est donc un bon point pour eux.
 
 #### Via le WKB et ArcPy
-
 
 Dans la partie suivante, nous allons regarder comment cela se passe, en utilisant directement les fonctions de base.
 
@@ -1262,10 +1227,7 @@ result.contains(line), result.crosses(line), result.equals(line), result.overlap
 # (False, False, False, False, False, True)
 ```
 
-On obtient bien le résultat souhaité. En fait, vous l'aurez peut-être compris en filigrane, ArcGis ne propose pas un calcul "strict" comme les autres, mais bien quelque chose de particulier. Il est "tolérant". 
-
-
-
+On obtient bien le résultat souhaité. En fait, vous l'aurez peut-être compris en filigrane, ArcGis ne propose pas un calcul "strict" comme les autres, mais bien quelque chose de particulier. Il est "tolérant".
 
 ## Algorithmes et Code : comment cela fonctionne-t-il ?
 
@@ -1281,7 +1243,6 @@ Dit autrement, avec un peu plus de formalisme, pour déterminer si un point \( C
    - \( $\overrightarrow{AB}$ = (x_B - x_A, y_B - y_A) \)
    - \( $\overrightarrow{AC}$ = (x_C - x_A, y_C - y_A) \)
 
-
 3. **Déterminant** : Calculons le déterminant des vecteurs \( $\overrightarrow{AB}$ \) et \( $\overrightarrow{AC}$ \). Ce déterminant est donné par :
    \[
    $\text{D}$ = (x_B - x_A) $\cdot$ (y_C - y_A) - (y_B - y_A) $\cdot$ (x_C - x_A)
@@ -1291,14 +1252,16 @@ Dit autrement, avec un peu plus de formalisme, pour déterminer si un point \( C
    - Si \( $\text{D}$ = 0 \), alors les points \( A \), \( B \) et \( C \) sont colinéaires, ce qui signifie que \( C \) est sur la droite \( AB \).
    - Si \( $\text{D} \neq 0$ \), alors \( C \) n'est pas sur la droite \( AB \).
 
-### Exemple :
+### Exemple
 
 Supposons que les coordonnées soient :
+
 - \( A = (1, 2) \)
 - \( B = (4, 6) \)
 - \( C = (2, 3) \)
 
 Calculons les vecteurs :
+
 - \( $\overrightarrow{AB}$ = (4 - 1, 6 - 2) = (3, 4) \)
 - \( $\overrightarrow{AC}$ = (2 - 1, 3 - 2) = (1, 1) \)
 
@@ -1350,7 +1313,6 @@ print(f"L'orientation du triangle BAC est : {orient}")
 
 On retrouve un nombre positif. Le point C est de l'autre côté de l'axe AB, dit autrement, AB et C ne sont pas collinéaires.
 
-
 ```python
 # Exemple d'utilisation avec des points colinéaires
 x_a, y_a = 1, 1
@@ -1362,7 +1324,6 @@ orient = orient2d(x_b, y_b, x_a, y_a, x_c, y_c)
 print(f"L'aire du triangle est : {area}")
 print(f"L'orientation du triangle BAC est : {orient}")
 ```
-
 
 ```python
 # Exemple d'utilisation avec des points colinéaires
@@ -1384,7 +1345,7 @@ Quelles sont donc les problèmes de cette « blague » ?
 
 Si l'on admet que C est le point d'intersection d'un segment avec AB, alors, en théorie, les lignes se croisent en un point bien défini : C. Cependant, en pratique, les ordinateurs effectuent des calculs en utilisant une représentation numérique finie qui peut introduire de petites erreurs. Voici pourquoi cela se produit :
 
-Les ordinateurs utilisent majoritairement une représentation en [virgule flottante](https://fr.wikipedia.org/wiki/Virgule_flottante) pour stocker des nombres réels. C'est même, la norme pour les coordonnées de nos géométries. Ce fameux double que l'on retrouve de partout. Toutefois son utilisation peut introduire des erreurs d'arrondi. J'ai indiqué une opération en introduction, 0.1 + 0.2 != 0.3. Comme 0.3 ne peut pas être représenté exactement cela conduit à des approximations. C'est un problème connu des informaticiens, au point d'avoir son propre site https://0.30000000000000004.com/
+Les ordinateurs utilisent majoritairement une représentation en [virgule flottante](https://fr.wikipedia.org/wiki/Virgule_flottante) pour stocker des nombres réels. C'est même, la norme pour les coordonnées de nos géométries. Ce fameux double que l'on retrouve de partout. Toutefois son utilisation peut introduire des erreurs d'arrondi. J'ai indiqué une opération en introduction, 0.1 + 0.2 != 0.3. Comme 0.3 ne peut pas être représenté exactement cela conduit à des approximations. C'est un problème connu des informaticiens, au point d'avoir son propre site <https://0.30000000000000004.com/>
 De même, je ne peux qu'encourager la lecture de l'article [What Every Computer Scientist Should Know About Floating-Point Arithmetic
 ](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html).
 
@@ -1394,7 +1355,7 @@ Les opérations sur les entiers sont toujours justes, dans leurs limites. Alors 
 
 C'est plus ou moins ce qui est fait par d'autres bibliothèques de calculs. On pensera notamment à SFCGAL, mais comme on l'a vue, cela ne fait pas tout. L'enregistrement se faisant en double, la conversion va introduire des erreurs ; on détaillera cela plus bas.
 
-### l'accumulation d'erreurs 
+### l'accumulation d'erreurs
 
 Lors de calculs complexes, ces petites erreurs d'arrondi peuvent s'accumuler et devenir significatives.
 
@@ -1402,14 +1363,13 @@ Lors du calcul de l'intersection de deux lignes, plusieurs opérations arithmét
 
 Des solutions comme GEOS ou Clipper (pour SAGA), repose sur des calculs bien plus robuste que notre exemple ; d'ailleurs, elles passent également par des entiers. Le calcul de l'intersection va être juste - à la précision du float.
 
-
-### Comparaisons de précision 
+### Comparaisons de précision
 
 En réalité, ce qu'il manque dans nos SIG, c'est de la tolérance.
 
 Lorsqu'on vérifie si un point est sur une ligne, la précision des calculs peut affecter le résultat.
 
-Une des règles lorsque l'on utilise des nombres à virgule est de calculer suivant une valeur. On ne doit jamais comparer directement un nombre flottant. C'est à dire, éviter : 
+Une des règles lorsque l'on utilise des nombres à virgule est de calculer suivant une valeur. On ne doit jamais comparer directement un nombre flottant. C'est à dire, éviter :
 
 ```python
 0.1 + 0.2 == 0.3
@@ -1439,6 +1399,7 @@ if compare_doubles(a, b, tolerance):
 else:
     print(f"Les nombres {a} et {b} ne sont pas égaux avec une tolérance de {tolerance}.")
 ```
+
 Vous devriez avoir cette sortie :
 
 `Les nombres 0.30000000000000004 et 0.3 sont égaux avec une tolérance de 1e-09.`
@@ -1535,7 +1496,6 @@ Plus généralement, vous pouvez exécuter ce [mini script python](https://githu
 
 Il réalise notre calcul d'intersects/intersection sur 2 segments en utilisant des nombres floats, Decimal et Fraction de Python.
 
-
 ### Webographie
 
 En plus des liens vers les documentations que j'ai indiquées par moments, voici quelques liens permettant de compléter ou d'approfondir le sujet.
@@ -1543,13 +1503,14 @@ En plus des liens vers les documentations que j'ai indiquées par moments, voici
 Tout d'abord, rendons à César ce qui est à César, cette suite d'articles, n'est qu'une explication illustrée de la [FAQ](https://locationtech.github.io/jts/jts-faq.html) de JTS ; qui est à l'origine de GEOS. Mais, comme personne ne lit la documentation :wink: autant remettre le lien [ici](https://locationtech.github.io/jts/jts-faq.html#D8)
 
 Sur la robustesse de l'intersection des segments, vous pouvez commencer par cet échange [stack](https://cs.stackexchange.com/questions/119760/robust-two-lines-segments-intersection-point-in-2d) et ensuite lire et utiliser le code de Shewchuk sur la robustesse des calculs avec des nombres flottants :
-- https://people.eecs.berkeley.edu/~jrs/meshpapers/robnotes.pdf
-- https://www.cs.cmu.edu/~quake/robust.html
-- https://www.cs.cmu.edu/afs/cs/project/quake/public/code/predicates.c
 
-Des versions modernes ont été reprises comme https://github.com/mourner/robust-predicates qui a également fait un article complet sur ce concept.
+- <https://people.eecs.berkeley.edu/~jrs/meshpapers/robnotes.pdf>
+- <https://www.cs.cmu.edu/~quake/robust.html>
+- <https://www.cs.cmu.edu/afs/cs/project/quake/public/code/predicates.c>
 
-JTS/GEOS utilise une version modifiée de ces calculs. Afin de ne pas allonger un article déjà bien long. Je n'ai pas montré d'exemple avec ces fonctions, mais le résultat est le même. 
+Des versions modernes ont été reprises comme <https://github.com/mourner/robust-predicates> qui a également fait un article complet sur ce concept.
+
+JTS/GEOS utilise une version modifiée de ces calculs. Afin de ne pas allonger un article déjà bien long. Je n'ai pas montré d'exemple avec ces fonctions, mais le résultat est le même.
 
 Dans nos SIG, voici quelques liens vers les codes sources utilisés :
 QGIS
@@ -1560,17 +1521,16 @@ Grass
 
 Le manuel de [v.clean](https://grass.osgeo.org/grass83/manuals/v.clean.html) qui utilise une fonction `split` qui va découper  le segment avec une [distance](https://github.com/OSGeo/grass/blob/9cb4745b6c4abfeaf542ef05468060d68af72703/vector/v.clean/split.c). Pour être exhaustif, j'aurais pu indiquer que ce traitement peut légèrement modifier les géométries.
 
-SAGA 
+SAGA
 
 - Le calcul de [l'intersection](https://github.com/saga-gis/saga-gis/blob/0e66e5a768d771052553f270c0ffe24efda1d0a8/saga-gis/src/saga_core/saga_api/geo_functions.cpp#L280)
 - La fonction [line crossings](https://github.com/saga-gis/saga-gis/blob/0e66e5a768d771052553f270c0ffe24efda1d0a8/saga-gis/src/tools/shapes/shapes_lines/line_crossings.cpp#L226)
 - et la bibliothèque [Clipper2](https://github.com/AngusJohnson/Clipper2) qui est utilisée par SAGA.
 
 Enfin, GEOS :
+
 - Le test d'[intersects](https://github.com/libgeos/geos/blob/a8d2ed0aba46f88f9b8987526e68eea6565d16ae/src/algorithm/LineIntersector.cpp#L222)
 - Le calcul [orient2d](https://github.com/libgeos/geos/blob/a8d2ed0aba46f88f9b8987526e68eea6565d16ae/src/algorithm/CGAlgorithmsDD.cpp#L54) où l'on aperçoit un premier test rapide et si la robustesse n'est pas assez bonne, on passe sur une autre [arithmétique](https://github.com/libgeos/geos/blob/a8d2ed0aba46f88f9b8987526e68eea6565d16ae/include/geos/math/DD.h).
-
-
 
 ## Comment arrêter de trop penser et vivre une vie meilleure !
 
@@ -1580,42 +1540,41 @@ Plutôt que de se perdre dans une quête de surprécision, voici quelques consei
 
 Derrière cette expression « putaclic », voici en réalité quelques conseils ou expériences que j'ai pu rencontrer sur différents projets.
 
-### Arrêtez de chercher la surprécision :
+### Arrêtez de chercher la surprécision
 
-*La rigueur à tout prix peut devenir une source de frustration. Acceptez qu’une légère imprécision est inévitable et concentrez-vous sur l’essentiel.*
+_La rigueur à tout prix peut devenir une source de frustration. Acceptez qu’une légère imprécision est inévitable et concentrez-vous sur l’essentiel._
 
 On est dans un monde infini, mais avec des ressources finies. Quelques arrondis ne font pas de mal. De combien de chiffres après la virgule avez-vous réellement besoin ? Votre précision c'est le décimètre, le centimètre, le millimètre, au-delà  ? Vous avez besoin de combien de chiffres pour [Pi](https://www.jpl.nasa.gov/edu/news/2016/3/16/how-many-decimals-of-pi-do-we-really-need/). Combien d'approximations réalisez-vous au quotidien, tout en étant précis ? Il est actuellement 21 h 02 ou simplement 21 h ? Quand vous réalisez un trajet de chez vous aux rencontres QGIS, vous êtes précis à la seconde, à la minute, au quart d'heure ? Bref, la précision dépend de votre contexte et il y a fort à parier que vous allez rarement être en dessous de 10^-3 sur du cartésien et 10^-8 en géodésique.
 
 ![https://xkcd.com/2170/](https://imgs.xkcd.com/comics/coordinate_precision.png)
 
+### Gérez la tolérance
 
-### Gérez la tolérance :
-
-*Utilisez des tolérances appropriées dans vos calculs pour minimiser les effets des erreurs d'arrondi. Définissez des tolérances adaptées à l’échelle et aux objectifs de votre projet.*
+_Utilisez des tolérances appropriées dans vos calculs pour minimiser les effets des erreurs d'arrondi. Définissez des tolérances adaptées à l’échelle et aux objectifs de votre projet._
 
 En lien avec le nombre de chiffres après la virgule, vous pouvez également ajouter une tolérance. En France, les gestionnaires de réseaux savent qu'on les caractérise suivant 3 classes : A, B ou C. 10 cm, 40 cm, etc. Une bonne pratique est de se demander si le point n'est pas à une distance d'environ X cm. Sur PostGIS, cela va se caractériser par l'utilisation de ST_DWithin plutôt qu'un ST_Intersects.
 
-### Utilisez la topologie :
-        
-*La topologie permet de gérer les relations spatiales et de corriger les erreurs géométriques. Les outils topologiques garantissent que les entités spatiales respectent certaines règles, améliorant ainsi la cohérence des données.*
+### Utilisez la topologie
+
+_La topologie permet de gérer les relations spatiales et de corriger les erreurs géométriques. Les outils topologiques garantissent que les entités spatiales respectent certaines règles, améliorant ainsi la cohérence des données._
 
 Si vraiment, vous souhaitez que les nœuds soient identiques, la topologie est là pour vous. Mais, attention, vous avez vu, cela transforme légèrement la donnée en entrée. Par ailleurs, suivant les outils que vous utilisez, elle peut ne pas être respectée lors d'éditions dans d'autres outils que ceux sur lesquels vous allez travailler. D'où l'idée de déporter l'intelligence en base : Thick database (base épaisse).
 
-### Connaissez les autres nombres :
+### Connaissez les autres nombres
 
-*Comprenez comment les nombres sont représentés dans les ordinateurs. Cela aide à anticiper et à gérer les erreurs de calcul, notamment les différences entre les nombres en virgule flottante et les autres.*
+_Comprenez comment les nombres sont représentés dans les ordinateurs. Cela aide à anticiper et à gérer les erreurs de calcul, notamment les différences entre les nombres en virgule flottante et les autres._
 
 Tout est de la faute des nombres en virgule flottante ! Vous pouvez utiliser d'autres outils, mais attention, la conversion peut engendrer des erreurs.
 
-### Investissez dans l'évolution des outils :
-        
-*Soutenez le développement et l'amélioration des outils SIG, surtout les projets open source comme ceux de l'OSGeo !*
+### Investissez dans l'évolution des outils
+
+_Soutenez le développement et l'amélioration des outils SIG, surtout les projets open source comme ceux de l'OSGeo !_
 
 On ne le dira jamais assez, mais si un fonctionnement ou un bug vous dérange. Financez-nous ! On se fera un plaisir d'y répondre. Ça vaut également pour les demandes de fonctionnalités.
 
 ### Conclusion
 
-*La quête de la perfection numérique dans les SIG peut être frustrante. En adoptant une approche pragmatique et en comprenant les limites des calculs numériques, vous pouvez réduire le stress et améliorer votre efficacité. En acceptant ces réalités, vous pourrez arrêter de trop penser et commencer à vivre une vie meilleure, plus sereine et productive dans vos projets géospatiaux.*
+_La quête de la perfection numérique dans les SIG peut être frustrante. En adoptant une approche pragmatique et en comprenant les limites des calculs numériques, vous pouvez réduire le stress et améliorer votre efficacité. En acceptant ces réalités, vous pourrez arrêter de trop penser et commencer à vivre une vie meilleure, plus sereine et productive dans vos projets géospatiaux._
 
 C'est beau, hein ?
 
@@ -1624,7 +1583,6 @@ En réalité, vivez vos SIG comme vous le voulez, mais ayez connaissance de leur
 J'espère que cette série d'articles vous a intéressés. D'autres sur la comparaison entre les outils devraient venir.
 
 Et pour finir, merci à mes relecteurs de GeoTribu, à Sandro Santilli (correction d'une erreur dans un code), Martin Davis aka Dr. Jts (pour ses apports sur les « concurrents » et tout ce qu'il a pu faire pour nos outils !. Et, enfin, merci à Julien Moura qui a su être patient avant de voir la première phrase :D
-
 
 <!-- geotribu:authors-block -->
 
