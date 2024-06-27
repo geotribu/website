@@ -74,7 +74,7 @@ body:
     id: in_art_title
     attributes:
       label: Titre
-      description: "Le titre de l'article. Longeur maximale indicative : 100/120 caractères"
+      description: "Le titre de l'article. Longueur maximale indicative : 100/120 caractères"
     validations:
       required: true
 
