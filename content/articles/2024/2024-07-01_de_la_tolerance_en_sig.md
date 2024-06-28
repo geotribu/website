@@ -511,7 +511,7 @@ Il existe une autre façon de réaliser la sélection, mais je la garde pour la 
 
 Si [SAGA](https://fr.wikipedia.org/wiki/Saga_(personnage)) est le plus puissant des chevaliers du zodiaque, [SAGA GIS](https://saga-gis.sourceforge.io/en/index.html) est malheureusement bien souvent le chevalier oublié du SIG. Il possède certains traitements qui ne sont pas disponibles dans QGIS et peut également se révéler utile pour d'autres existants.
 
-Depuis quelques versions, il n'est plus possible d'avoir les traitements de SAGA directement depuis QGIS. Il faut installer le plugin [SAGA NG](lien du plugin) mais il a quelques limitations m'empêchant de l'utiliser pour l'article.
+Depuis quelques versions, il n'est plus possible d'avoir les traitements de SAGA directement depuis QGIS. Il faut installer le plugin [SAGA NG](https://plugins.qgis.org/plugins/processing_saga_nextgen/) mais il a quelques limitations m'empêchant de l'utiliser pour l'article.
 Pour cette partie, je vais directement passer par l'interface de SAGA, notamment afin de visualiser le résultat.
 
 Il est intéressant de comparer le résultat de SAGA avec GEOS/QGIS. En effet, les opérations d'overlay ne reposent pas sur GEOS, mais sur une autre bibliothèque dédiée ; pour ceux intéressés, j'y reviendrai dans la partie sur les algorithmes.
