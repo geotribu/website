@@ -490,8 +490,7 @@ Dans GRASS, `v.overlay` permet de réaliser des opérations… d'overlay - super
 
 La couche `base` est une polyligne fermée, elle sera utilisée pour être convertie en polygone. Pour les puristes, on regardera que les coordonnées du WKB sont bien identiques entre le linestring et le (multi)polygone. Il y a plusieurs façons de procéder, mais, comme pour rendre accessible à tous, nous allons utiliser GRASS via QGIS, j'utilise les premières conversions dans QGIS ; ensuite, nous utiliserons uniquement les outils de GRASS.
 
-![grass_line_overlay_points](<https://github.com/lbartoletti/lbartoletti.github.io/blob/main>
-/assets/2024_intersection_intersects/data/processing/grass_line_overlay_points.svg)
+![grass_line_overlay_points](https://github.com/lbartoletti/lbartoletti.github.io/blob/main/assets/2024_intersection_intersects/data/processing/grass_line_overlay_points.svg)
 
 Notre algorithme va convertir la `base` en polygone, puis effectuer l'opération d'overlay. Pour calculer l'intersection entre `line` et `base_poly`, on extrait les points d'intersections que l'on peut afficher dans QGIS. On retrouve le même résultat, ici, je passe les détails, mais on retrouve bien nos WKB :
 
