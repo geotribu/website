@@ -364,7 +364,7 @@ intersection
 Notre résultat est : `0104000000020000000101000000A899EFC8C83C3E4175E5698166D553410101000000B5EBDD9E8F3C3E416BF8515379D55341`
 
 Vous comprendrez mieux l'opération qui va suivre grâce à la lecture de l'article sur le WKT et WKB. En attendant, je vous demande de me faire confiance.
-Ici, nous avons la représentation d'un multipoint, où les coordonnées peuvent se retrouver dans ces parties :
+Ce WKB est la représentation d'un multipoint. On peut en extraire les coordonnées des deux points suivants :
 
 - `0101000000A899EFC8C83C3E4175E5698166D55341`
 - `0101000000B5EBDD9E8F3C3E416BF8515379D55341`
