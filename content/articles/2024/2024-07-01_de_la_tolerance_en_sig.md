@@ -550,7 +550,7 @@ L'algorithme de SAGA, qui rappelons-le, n'utilisant pas GEOS retourne le même r
 Maintenant, tentons de vérifier si les points intersectent, ou non, notre base. Pour cela, on utilise l'outil « sélection par localisation » :
 Geoprocessing -> Shapes -> Selection -> Selection by localisation.
 
-![Select crossing base](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base.png?raw=true
+![Select crossing base](<https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base.png?raw=true>
 
 Paf, erreur intéressante. Cela fonctionne seulement pour un point avec un polygone !
 
