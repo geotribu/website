@@ -62,7 +62,7 @@ Dans nos SIG, les opérations de superposition (_overlay_ dans la langue de Shak
 
 #### Chargement des données
 
-Toutes les données utilisées sont disponibles sur [mon GitHub](), et pour simplifier la compréhension et la transposition de ces données dans différents SIG, j'utiliserai les formats WKB et WKT[^1].
+Toutes les données utilisées sont disponibles sur [mon GitHub](https://github.com/lbartoletti/lbartoletti.github.io/tree/master/assets/2024_intersection_intersects), et pour simplifier la compréhension et la transposition de ces données dans différents SIG, j'utiliserai les formats WKB et WKT[^1].
 
 !!! tip "autopromo"
     Pour ceux qui veulent en savoir plus sur ces formats, pensez à suivre ou aimer pour être informé du prochain article dédié.
@@ -195,11 +195,11 @@ Par conséquent, nous avons des lignes qui sont sur le point d'intersection. Si 
 
 On regarde si `line_snap` est accroché sur `base`. Dans les exemples ci-après, même si je devrais n'utiliser que touches ou intersects, je vais tout cocher sauf disjoint.
 
-![](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_line_snap_intersects_base.png?raw=true)
+![line snap intersects base](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_line_snap_intersects_base.png?raw=true)
 
 Le résultat :
 
-![](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/selected_line_snap.png?raw=true)
+![selected line snap](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/selected_line_snap.png?raw=true)
 
 Aïe, seulement 2 sur les 4…
 
@@ -251,7 +251,7 @@ Et maintenant, on va sélectionner les entités de `transect_left` et `transect_
 
 Et, non, ce n'est pas l'algo de transect qui est tout buggué.
 
-![Canvas select transect](https://github.com/lbartoletti/lbartoletti.github.io/blob/40c1b2bf53b7842b3a86eb009525578fe492efd8/assets/2024_intersection_intersects/selected_transect_left_right.png?raw=true)
+![Canvas select transect](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/selected_transect_left_right.png?raw=true)
 
 Mais, comme on dit… "Caramba ! Encore raté !"
 
@@ -468,7 +468,7 @@ distance
 `1.7234470954287178e-10`
 
 On remarque que le résultat n'est pas 0, mais très proche. C'est en gros 0, mais y'a une « blague » vers 10 chiffres après la virgule.
-Pour ceux intéressés, je reviendrai sur l'importance du calcul dans la partie algorithme.
+Pour celles et ceux que cela intéresse, je reviendrai sur l'importance du calcul dans la partie algorithme.
 En attendant, on observe que QGIS donne le même résultat que GEOS. Ce qui n'est pas étonnant puisque derrière QGIS [^1], c'est GEOS.
 
 C'est donc GEOS qui est faux ? Non, GEOS donne le « bon » résultat, mais la vérité est ailleurs.
@@ -821,9 +821,9 @@ Mais, comme GRASS est topologique, on peut également s'en servir pour retrouver
 Pour utiliser la topologie, nous allons faire l'union de nos deux lignes de `base` et `line` pour ensuite nettoyer celles-ci.
 Le nettoyage, via `v.clean` se fera seulement avec l'outil `break`.
 Nous allons passer de :
-< insérer image >
+![GRASS line overlay](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/grass_line_overlay_points.svg?raw=true)
 à
-< insérer image avec break>
+![GRASS line overlay clean](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/grass_select_line_clean_points.svg?raw=true)
 
 Maintenant, on regarde si notre fonction v.select avec `intersects` fonctionne.
 
@@ -839,17 +839,14 @@ QGIS est spaghetti. Les données sont toutes dans ce plat de pâtes : les entit�
 
 En particulier, ici, nous allons utiliser la fonction d'édition topologique, qui, lors de chaque accrochage sur un segment, va ajouter des nœuds sur le segment accroché.
 
-< insérer gif>
 
 La couche `base_topology` est une copie de `base` sur laquelle j'ai dessiné, avec l'édition topologique, la couche `test_line`.
 
 Si l'on refait notre test de « sélection par localisation » avec le prédicat « intersects », nous avons nos 34 lignes de sélectionnées.
 
-<insérer image>
 
 Pour être certain que ce n'est pas juste des sommets qui seraient de l'autre côté de la ligne, on peut les extraire et refaire l'opération.
 
-<insérer image>
 
 La topologie est grande, la topologie est bonne, elle va sauver nos calculs !
 
@@ -875,7 +872,7 @@ Comparons les angles des segments.
 
 Dans notre géométrie d'origine, nous avons quatre segments, avec comme azimut, en radians :
 
-![](https://github.com/lbartoletti/lbartoletti.github.io/blob/e2a7c896516af05da86d079c589edda415471e83/assets/2024_intersection_intersects/data/processing/qgis_segments_azimuth.svg?raw=true)
+![QGIS segments azimuth](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/qgis_segments_azimuth.svg?raw=true)
 
 Soit, en partant du bas gauche et en tournant dans le sens horaire :
 
@@ -1078,7 +1075,7 @@ Vous pouvez trouver le fichier [fmw sur mon github](https://github.com/lbartolet
 
 Et le résultat :
 
-![](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fme_test_intersects.png?raw=true)
+![FME test intersects](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fme_test_intersects.png?raw=true)
 
 KO !
 
@@ -1441,7 +1438,7 @@ print(base.intersects(np))
 print(line.intersects(np))
 ```
 
-Et voilà, "l'imprécision" des doubles nous donne ce mauvais résultat.
+Et, voilà, « l'imprécision » des doubles nous donne ce mauvais résultat.
 
 Une solution, qui n'est pas élégante et donc pas encore implémentée, serait d'avoir des fonctions qui s'enchaînent et ne fassent pas continuellement des va et vient entre les nombres. Avec une fonction CG_IntersectsIntersection comme suit, le résultat dans PostGIS sera juste.
 
