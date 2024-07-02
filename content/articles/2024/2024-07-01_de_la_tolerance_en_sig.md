@@ -347,7 +347,7 @@ intersection
 La réponse est `MULTIPOINT ((1981640.7849060092 5199258.022088398), (1981583.6205737416 5199333.301878075))`
 
 Ah ! C'est une petite différence avec QGIS qui retourne deux points. Ici, GEOS retourne un MULTIPOINT, qui, selon moi, est plus cohérent, mais qu'importe.
-Le WKT est plus lisible, mais il a l'inconvénient de ne pas avoir toujours la même représentation. QGIS nous retourne 17 décimales et GEOS : 10 ; ce qui, dans tous les cas, est déjà trop pour du projeté,  on en reparlera plus tard.
+Le WKT est plus lisible, mais il a l'inconvénient de ne pas avoir toujours la même représentation. QGIS nous retourne 17 décimales et GEOS : 10 ; ce qui, dans tous les cas, est déjà trop pour du projeté, on en reparlera plus tard.
 
 Afin d'éviter ces différences, nous allons travailler avec le WKB. Pour le récupérer, on ajoute simplement l'option WKB à l'option `-f` pour le format de sortie :
 
