@@ -839,14 +839,11 @@ QGIS est spaghetti. Les données sont toutes dans ce plat de pâtes : les entit�
 
 En particulier, ici, nous allons utiliser la fonction d'édition topologique, qui, lors de chaque accrochage sur un segment, va ajouter des nœuds sur le segment accroché.
 
-
 La couche `base_topology` est une copie de `base` sur laquelle j'ai dessiné, avec l'édition topologique, la couche `test_line`.
 
 Si l'on refait notre test de « sélection par localisation » avec le prédicat « intersects », nous avons nos 34 lignes de sélectionnées.
 
-
 Pour être certain que ce n'est pas juste des sommets qui seraient de l'autre côté de la ligne, on peut les extraire et refaire l'opération.
-
 
 La topologie est grande, la topologie est bonne, elle va sauver nos calculs !
 
