@@ -64,7 +64,8 @@ Dans nos SIG, les opérations de superposition (_overlay_ dans la langue de Shak
 
 Toutes les données utilisées sont disponibles sur [mon GitHub](), et pour simplifier la compréhension et la transposition de ces données dans différents SIG, j'utiliserai les formats WKB et WKT[^1].
 
-<autopromo> Pour ceux qui veulent en savoir plus sur ces formats, pensez à suivre ou aimer pour être informé du prochain article dédié. </autopromo>
+!!! tip "autopromo"
+    Pour ceux qui veulent en savoir plus sur ces formats, pensez à suivre ou aimer pour être informé du prochain article dédié.
 
 Revenons-en au fait, prenons un exemple avec une géométrie de type ligne, ici fermée, mais cela serait similaire pour un polygone (puisqu'un polygone est une ligne). Les géométries utilisées sont projetées dans le système de coordonnées EPSG:3946, projection de mon coin magnifique.
 
