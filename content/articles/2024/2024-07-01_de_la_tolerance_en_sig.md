@@ -527,7 +527,7 @@ On charge ces fichiers dans l'interface de SAGA.
 
 Nous affichons nos données. Rien de surprenant, on se retrouve avec nos deux géométries.
 
-[<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_base_line.png?raw=true" alt="Map base line" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_base_line.png?raw=true)
+![Map base line](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_base_line.png?raw=true)
 
 Première étape, vérifier, le calcul d'intersection. Dans le vocabulaire de SAGA, l'intersection entre lignes, s'appelle "Crossing".
 On exécute le traitement : Geoprocessing -> Shapes -> Lines -> Line Crossing
