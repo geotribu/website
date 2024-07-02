@@ -523,7 +523,7 @@ Tout d'abord, SAGA, ne sait pas lire le GeoPackage. J'ai réalisé une conversio
 
 On charge ces fichiers dans l'interface de SAGA.
 
-[<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_load_shapes.png?raw=true" alt="Load shapes" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_load_shapes.png?raw=true)
+![Load shapes](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_load_shapes.png?raw=true)
 
 Nous affichons nos données. Rien de surprenant, on se retrouve avec nos deux géométries.
 
