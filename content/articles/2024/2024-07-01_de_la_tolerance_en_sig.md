@@ -1361,7 +1361,7 @@ Lors de calculs complexes, ces petites erreurs d'arrondi peuvent s'accumuler et 
 
 Lors du calcul de l'intersection de deux lignes, plusieurs opérations arithmétiques sont nécessaires. Chaque opération peut introduire une petite erreur.
 
-Des solutions comme GEOS ou Clipper (pour SAGA), repose sur des calculs bien plus robuste que notre exemple ; d'ailleurs, elles passent également par des entiers. Le calcul de l'intersection va être juste - à la précision du float.
+Des solutions comme GEOS ou Clipper (pour SAGA), repose sur des calculs bien plus robustes que notre exemple ; d'ailleurs, elles passent également par des entiers. Le calcul de l'intersection va être juste - à la précision du float.
 
 ### Comparaisons de précision
 
