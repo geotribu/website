@@ -1580,7 +1580,7 @@ C'est beau, hein ?
 
 En réalité, vivez vos SIG comme vous le voulez, mais ayez connaissance de leurs fonctionnements. Oui, leurs, car chacun peut vous donner des résultats plus ou moins différents.
 
-J'espère que cette série d'articles vous a intéressés. D'autres sur la comparaison entre les outils devraient venir.
+J'espère que cette série d'articles vous a intéressé. D'autres sur la comparaison entre les outils devraient venir.
 
 Et pour finir, merci à mes relecteurs de GeoTribu, à Sandro Santilli (correction d'une erreur dans un code), Martin Davis aka Dr. Jts (pour ses apports sur les « concurrents » et tout ce qu'il a pu faire pour nos outils !. Et, enfin, merci à Julien Moura qui a su être patient avant de voir la première phrase :D
 
