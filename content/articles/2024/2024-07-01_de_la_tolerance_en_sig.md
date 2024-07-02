@@ -1032,9 +1032,9 @@ FROM base, line
 
 Le résultat tant attendu :
 
- cg_intersects | cg_intersects |      cg_distance       |     cg_distance
----------------|---------------|------------------------|----------------------
- f             | f             | 3.0508500689910857e-10 | 1.72344247851053e-10
+| cg_intersects | cg_intersects |      cg_distance       |     cg_distance      |
+|---------------|---------------|------------------------|----------------------|
+|  f            | f             | 3.0508500689910857e-10 | 1.72344247851053e-10 |
 
 Comment ça, « faux » ? C'était vrai avec Python.
 
