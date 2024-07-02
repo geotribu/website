@@ -1,6 +1,6 @@
 ---
 title: De la tolérance en SIG
-subtitle: Fenêtre ou ne pas fenêtre, telle est la question
+subtitle: La vraie tolérance consiste à voir large sans perdre la mesure (c) Barratin
 authors:
     - Loïc Bartoletti
 categories:
