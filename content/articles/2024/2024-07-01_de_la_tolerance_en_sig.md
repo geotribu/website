@@ -1444,7 +1444,7 @@ print(line.intersects(np))
 
 Et voilà, "l'imprécision" des doubles nous donne ce mauvais résultat.
 
-Une solution, qui n'est pas élégante et donc pas encore implémentée, serait d'avoir des fonctions qui s'enchaînent et ne fasse pas continuellement des va et vient entre les nombres. Avec une fonction CG_IntersectsIntersection comme suit, le résultat dans PostGIS sera juste.
+Une solution, qui n'est pas élégante et donc pas encore implémentée, serait d'avoir des fonctions qui s'enchaînent et ne fassent pas continuellement des va et vient entre les nombres. Avec une fonction CG_IntersectsIntersection comme suit, le résultat dans PostGIS sera juste.
 
 ```c
 PG_FUNCTION_INFO_V1(sfcgal_intersects_intersection);
