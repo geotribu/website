@@ -1492,7 +1492,7 @@ sfcgal_intersects_intersection(PG_FUNCTION_ARGS)
 }
 ```
 
-Plus généralement, vous pouvez exécuter ce [mini script python](https://github.com/lbartoletti/lbartoletti.github.io/blob/e2a7c896516af05da86d079c589edda415471e83/assets/2024_intersection_intersects/data/intersects_intersection_numbers.py) qui résume ce que l'on a vue.
+Plus généralement, vous pouvez exécuter ce [mini script python](https://github.com/lbartoletti/lbartoletti.github.io/blob/e2a7c896516af05da86d079c589edda415471e83/assets/2024_intersection_intersects/data/intersects_intersection_numbers.py) qui résume ce que l'on a vu.
 
 Il réalise notre calcul d'intersects/intersection sur 2 segments en utilisant des nombres floats, Decimal et Fraction de Python.
 
