@@ -532,11 +532,11 @@ Nous affichons nos données. Rien de surprenant, on se retrouve avec nos deux g�
 Première étape, vérifier, le calcul d'intersection. Dans le vocabulaire de SAGA, l'intersection entre lignes, s'appelle "Crossing".
 On exécute le traitement : Geoprocessing -> Shapes -> Lines -> Line Crossing
 
-[<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_line_crossing.png?raw=true" alt="Line Crossing" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_line_crossing.png?raw=true)
+![Line Crossing](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_line_crossing.png?raw=true)
 
 On retrouve bien nos deux points :
 
-[<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_crossing.png?raw=true" alt="Map crossing" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_crossing.png?raw=true)
+![Map crossing](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_crossing.png?raw=true)
 
 Je passe ici les étapes pour leurs récupérations, mais, les WKB sont bien les mêmes, à savoir :
 
@@ -550,16 +550,15 @@ L'algorithme de SAGA, qui rappelons-le, n'utilisant pas GEOS retourne le même r
 Maintenant, tentons de vérifier si les points intersectent, ou non, notre base. Pour cela, on utilise l'outil « sélection par localisation » :
 Geoprocessing -> Shapes -> Selection -> Selection by localisation.
 
-[<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base.png?raw=true" alt="Select crossing base" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base.png?raw=true)
-<insérer images/saga_select_crossing_base.png>
+![Select crossing base](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base.png?raw=true
 
 Paf, erreur intéressante. Cela fonctionne seulement pour un point avec un polygone !
 
-[<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_error.png?raw=true" alt="Select crossing base error" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_error.png?raw=true)
+![Select crossing base error](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_error.png?raw=true)
 
 Dans notre expérience avec GRASS, on avait un problème identique. Nous allons donc tester avec `base_poly` :
 
-[<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_poly.png?raw=true" alt="Select crossing base poly" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_poly.png?raw=true)
+![Select crossing base poly](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_poly.png?raw=true)
 
 Aucune sélection. Le message d'exécution nous l'indique bien (en Anglais) : "selected shapes: 0"
 
@@ -569,7 +568,7 @@ On va reprendre notre exemple entre base et test_line.
 
 20 sur 34, comme pour GEOS !
 
-[<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_base_test_line.png?raw=true" alt="Select base test line" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_base_test_line.png?raw=true)
+![Select base test line](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_base_test_line.png?raw=true)
 
 C'est normal d'une certaine façon. Cependant, le premier test avec crossing, nous montre également que le point d'intersection n'intersecte pas la géométrie d'origine, comme pour GEOS.
 
@@ -1111,8 +1110,8 @@ arcpy.analysis.PairwiseIntersect(
 
 Je passe les étapes pour l'extraction du WKB et WKT, dont voici les résultats :
 
-- 0104000000020000000101000000e034efc8c83c3e4120166a8166d55341010100000040a4df9e8f3c3e416054525379d55341
-- MultiPoint ((1981640.78490000218153 5199258.02210000157356262),(1981583.62060000002384186 5199333.30189999938011169))
+- `0104000000020000000101000000e034efc8c83c3e4120166a8166d55341010100000040a4df9e8f3c3e416054525379d55341`
+- `MultiPoint ((1981640.78490000218153 5199258.02210000157356262),(1981583.62060000002384186 5199333.30189999938011169))`
 
 ArcGis nous sort un résultat légèrement différent. Testons avec l'autre outil pour les intersections : [Intersect](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/intersect.htm)
 
@@ -1345,7 +1344,7 @@ Quelles sont donc les problèmes de cette « blague » ?
 
 Si l'on admet que C est le point d'intersection d'un segment avec AB, alors, en théorie, les lignes se croisent en un point bien défini : C. Cependant, en pratique, les ordinateurs effectuent des calculs en utilisant une représentation numérique finie qui peut introduire de petites erreurs. Voici pourquoi cela se produit :
 
-Les ordinateurs utilisent majoritairement une représentation en [virgule flottante](https://fr.wikipedia.org/wiki/Virgule_flottante) pour stocker des nombres réels. C'est même, la norme pour les coordonnées de nos géométries. Ce fameux double que l'on retrouve de partout. Toutefois son utilisation peut introduire des erreurs d'arrondi. J'ai indiqué une opération en introduction, 0.1 + 0.2 != 0.3. Comme 0.3 ne peut pas être représenté exactement cela conduit à des approximations. C'est un problème connu des informaticiens, au point d'avoir son propre site <https://0.30000000000000004.com/>
+Les ordinateurs utilisent majoritairement une représentation en [virgule flottante](https://fr.wikipedia.org/wiki/Virgule_flottante) pour stocker des nombres réels. C'est même la norme pour les coordonnées de nos géométries. Ce fameux double que l'on retrouve de partout. Toutefois son utilisation peut introduire des erreurs d'arrondi. J'ai indiqué une opération en introduction, 0.1 + 0.2 != 0.3. Comme 0.3 ne peut pas être représenté exactement cela conduit à des approximations. C'est un problème connu des informaticiens, au point d'avoir [son propre site](https://0.30000000000000004.com/).
 De même, je ne peux qu'encourager la lecture de l'article [What Every Computer Scientist Should Know About Floating-Point Arithmetic
 ](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html).
 
@@ -1355,7 +1354,7 @@ Les opérations sur les entiers sont toujours justes, dans leurs limites. Alors 
 
 C'est plus ou moins ce qui est fait par d'autres bibliothèques de calculs. On pensera notamment à SFCGAL, mais comme on l'a vue, cela ne fait pas tout. L'enregistrement se faisant en double, la conversion va introduire des erreurs ; on détaillera cela plus bas.
 
-### l'accumulation d'erreurs
+### L'accumulation d'erreurs
 
 Lors de calculs complexes, ces petites erreurs d'arrondi peuvent s'accumuler et devenir significatives.
 
