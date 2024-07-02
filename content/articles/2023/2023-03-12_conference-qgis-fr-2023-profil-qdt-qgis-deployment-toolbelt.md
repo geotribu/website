@@ -14,8 +14,8 @@ robots: index, follow
 tags:
     - OSGeo-fr
     - QDT
-    - QGIS Deployment Toolbelt
     - QGIS
+    - QGIS Deployment Toolbelt
 ---
 
 # La conférence QGIS FR approche : préparez votre environnement avec QDT !
