@@ -1500,7 +1500,7 @@ Il réalise notre calcul d'intersects/intersection sur 2 segments en utilisant d
 
 En plus des liens vers les documentations que j'ai indiquées par moments, voici quelques liens permettant de compléter ou d'approfondir le sujet.
 
-Tout d'abord, rendons à César ce qui est à César, cette suite d'articles, n'est qu'une explication illustrée de la [FAQ](https://locationtech.github.io/jts/jts-faq.html) de JTS ; qui est à l'origine de GEOS. Mais, comme personne ne lit la documentation :wink: autant remettre le lien [ici](https://locationtech.github.io/jts/jts-faq.html#D8)
+Tout d'abord, rendons à César ce qui est à César, cette suite d'articles, n'est qu'une explication illustrée de la [FAQ](https://locationtech.github.io/jts/jts-faq.html) de JTS ; qui est à l'origine de GEOS. Mais, comme personne ne lit la documentation :wink: autant remettre le lien [ici](https://locationtech.github.io/jts/jts-faq.html#D8).
 
 Sur la robustesse de l'intersection des segments, vous pouvez commencer par cet échange [stack](https://cs.stackexchange.com/questions/119760/robust-two-lines-segments-intersection-point-in-2d) et ensuite lire et utiliser le code de Shewchuk sur la robustesse des calculs avec des nombres flottants :
 
