@@ -409,7 +409,7 @@ Je vous laisse regarder les images de la partie précédente.
 
 On commence à toucher du doigt le problème. Le point d'intersection est d'un côté ou de l'autre du segment. Si l'on était sur un hyper zoom, on aurait quelque chose comme :
 
-[<img src="https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/example_grid_line.png?raw=true" alt="Example points along line" width="349" height="203">](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/example_grid_line.png?raw=true)
+![Example points along line](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/example_grid_line.png?raw=true)
 
 En simplifiant, on pourrait dire que les points sont sur des minuscules grilles. Le point n'est pas sur la ligne, mais très proche.
 
