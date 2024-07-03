@@ -6,29 +6,29 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-07-01
+date: 2024-07-05
 description: "Un tour d'horizon des SIG sur la précision des calculs géométriques."
 icon: material/vector-intersection
 image:
 license: beerware
 robots: index, follow
 tags:
-    - article
-    - Geotribu
     - analyse
-    - géométrie
-    - topologie
-    - QGIS
-    - geos
-    - PostGIS
-    - SFCGAL
     - ArcGIS
     - FME
-    - grass
-    - saga
+    - géométrie
+    - GEOS
+    - GRASS
+    - PostGIS
+    - QGIS
+    - SAGA
+    - SFCGAL
+    - topologie
 ---
 
 # De la tolérance en SIG
+
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 Régulièrement, j'ai des questions sur certaines « irrégularités » rencontrées lors d'opérations courantes :
 
@@ -83,11 +83,11 @@ Exemple d'une géométrie de ligne au format WKB : :
 
 Sur QGIS, on peut charger ces WKB - ainsi que les EWKB, EWKT, WKT - avec le très utile plugin [QuickWKT](https://plugins.qgis.org/plugins/QuickWKT/).
 
-![Plugin QGIS QuickWKT](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/quickwkt_base.png?raw=true)
+![Plugin QGIS QuickWKT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/quickwkt_base.png){: .img-center loading=lazy }
 
 Ce qui nous donne :
 
-![QGIS - Base and line](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/base_line.png?raw=true)
+![QGIS - Base and line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/base_line.png){: .img-center loading=lazy }
 
 #### Intersections de ces lignes
 
@@ -95,15 +95,15 @@ Nous avons désormais notre base pour étudier ce problème de précision/tolér
 
 Justement, calculons l'intersection entre ces lignes. Pour cela, nous allons utiliser l'outil `native:lineintersections` de QGIS.
 
-![Base and line intersection](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/native_lineintersections_base_line.png?raw=true)
+![Base and line intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/native_lineintersections_base_line.png){: .img-center loading=lazy }
 
 Nous obtenons deux points d'intersection. Visuellement, les résultats sont conformes à nos attentes, les points d'intersection se trouvant précisément sur les lignes.
 
-![Base and line points intersection](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/point_intersection_base_line.png?raw=true)
+![Base and line points intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/point_intersection_base_line.png){: .img-center loading=lazy }
 
 Quand je dis « précisément », si l'on visualise sur une échelle totalement « absurde », on a toujours cette superposition.
 
-![Base and line points intersection, absurd scale](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/point_intersection_base_line_absurd_scale.png?raw=true)
+![Base and line points intersection, absurd scale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/point_intersection_base_line_absurd_scale.png){: .img-center loading=lazy }
 
 Pour plus tard, on notera leurs WKB :
 
@@ -131,13 +131,13 @@ Tout d'abord, on va utiliser la fonctionnalité d'accrochage sur les intersectio
 
 Dans la vidéo ci-après, je montre comment j'ai généré des lignes de part et d'autre de la ligne principale aux points d'intersection.
 
-![QGIS - Snap line intersection](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/line_snap_draw.gif?raw=true)
+![QGIS - Snap line intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/line_snap_draw.gif){: .img-center loading=lazy }
 
 ##### Accrochage sur les intersections
 
 Je répète l'opération, cette fois en me focalisant sur les points d'intersection. L'objectif est de garantir l'accrochage précis sur la ligne principale, indépendamment des variations des sommets adjacents.
 
-![QGIS - Snap line points intersection](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/line_intersection_draw.gif?raw=true)
+![QGIS - Snap line points intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/line_intersection_draw.gif){: .img-center loading=lazy }
 
 ##### Comparaison des points d'accrochage
 
@@ -195,11 +195,11 @@ Par conséquent, nous avons des lignes qui sont sur le point d'intersection. Si 
 
 On regarde si `line_snap` est accroché sur `base`. Dans les exemples ci-après, même si je devrais n'utiliser que touches ou intersects, je vais tout cocher sauf disjoint.
 
-![line snap intersects base](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_line_snap_intersects_base.png?raw=true)
+![line snap intersects base](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fr_line_snap_intersects_base.png){: .img-center loading=lazy }
 
 Le résultat :
 
-![selected line snap](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/selected_line_snap.png?raw=true)
+![selected line snap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/selected_line_snap.png){: .img-center loading=lazy }
 
 Aïe, seulement 2 sur les 4…
 
@@ -207,11 +207,11 @@ Aïe, seulement 2 sur les 4…
 
 On fait de même pour `line_intersection` :
 
-![Line snap intersects base](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_line_intersection_intersects_base.png?raw=true)
+![Line snap intersects base](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fr_line_intersection_intersects_base.png){: .img-center loading=lazy }
 
 Et voici le résultat :
 
-![Select line snap intersects base](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/selected_line_snap.png?raw=true)
+![Select line snap intersects base](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/selected_line_snap.png){: .img-center loading=lazy }
 
 Re Aïe. Seulement 2 sur les 4, et du même côté. C'est au moins ça de cohérent dans notre incohérence…
 
@@ -219,11 +219,11 @@ Re Aïe. Seulement 2 sur les 4, et du même côté. C'est au moins ça de cohér
 
 Pour aller plus loin, je réalise des tests aléatoires en essayant d'accrocher la ligne principale à différents endroits. C'est la couche `test_line` dans le GeoPackage.
 
-![Spiderman](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/test_line_spider.png?raw=true)
+![Spiderman](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/test_line_spider.png){: .img-center loading=lazy }
 
 Dans notre franchise OSGeo, QGIS est un de nos superhéros, tel [Spider-Man](https://www.youtube.com/watch?v=i5P8lrgBtcU). Notre petite toile d'araignée manque de [glu](https://www.youtube.com/watch?v=rf6Yv4lMhhs), car notre accrochage n'est toujours pas bon :
 
-![Spider selected](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/test_line_spider_selected.png?raw=true)
+![Spider selected](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/test_line_spider_selected.png){: .img-center loading=lazy }
 
 ##### Testons tous les 1 mètre sur la base
 
@@ -231,41 +231,41 @@ Il y a quelques années, j'ai développé un outil pour créer des transects. Il
 
 Pour commencer, nous allons densifier la géométrie :
 
-![Densify](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_densify.png?raw=true)
+![Densify](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fr_densify.png){: .img-center loading=lazy }
 
 Ensuite, on génère de cette couche les transects à gauche et à droite de la ligne (suivant le sens de la ligne) :
 
-![Transect densify left](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_transect_densify_left.png?raw=true)
+![Transect densify left](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fr_transect_densify_left.png){: .img-center loading=lazy }
 
-![Transect densify right](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_transect_densify_right.png?raw=true)
+![Transect densify right](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fr_transect_densify_right.png){: .img-center loading=lazy }
 
 Notre dessin ressemble à :
 
-![Canvas transect](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/transect_left_right.png?raw=true)
+![Canvas transect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/transect_left_right.png){: .img-center loading=lazy }
 
 Et maintenant, on va sélectionner les entités de `transect_left` et `transect_right` qui intersectent la base :
 
-![Select transect left](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_select_transect_left.png?raw=true)
+![Select transect left](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fr_select_transect_left.png){: .img-center loading=lazy }
 
-![Select transect right](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_select_transect_right.png?raw=true)
+![Select transect right](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fr_select_transect_right.png){: .img-center loading=lazy }
 
 Et, non, ce n'est pas l'algo de transect qui est tout buggué.
 
-![Canvas select transect](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/selected_transect_left_right.png?raw=true)
+![Canvas select transect](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/selected_transect_left_right.png){: .img-center loading=lazy }
 
 Mais, comme on dit… "Caramba ! Encore raté !"
 
-![carambar](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/carramba.jpg?raw=true)
+![carambar](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/carramba.jpg?raw=true)
 
 Et si je teste sur la géométrie densifiée ?
 
-![Select transect densify left](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_select_transect_left_densify.png?raw=true)
+![Select transect densify left](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fr_select_transect_left_densify.png){: .img-center loading=lazy }
 
-![Select transect densify right](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fr_select_transect_right_densify.png?raw=true)
+![Select transect densify right](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fr_select_transect_right_densify.png){: .img-center loading=lazy }
 
 Et notre résultat ?
 
-![Canvas select transect densify](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/selected_transect_left_right_densify.png?raw=true)
+![Canvas select transect densify](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/selected_transect_left_right_densify.png){: .img-center loading=lazy }
 
 Cela fonctionne ! Mais pourquoi ?
 
@@ -410,7 +410,7 @@ Je vous laisse regarder les images de la partie précédente.
 
 On commence à toucher du doigt le problème. Le point d'intersection est d'un côté ou de l'autre du segment. Si l'on était sur un hyper zoom, on aurait quelque chose comme :
 
-![Example points along line](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/example_grid_line.png?raw=true)
+![Example points along line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/example_grid_line.png){: .img-center loading=lazy }
 
 En simplifiant, on pourrait dire que les points sont sur des minuscules grilles. Le point n'est pas sur la ligne, mais très proche.
 
@@ -492,7 +492,7 @@ Dans GRASS, `v.overlay` permet de réaliser des opérations… d'overlay - super
 
 La couche `base` est une polyligne fermée, elle sera utilisée pour être convertie en polygone. Pour les puristes, on regardera que les coordonnées du WKB sont bien identiques entre le linestring et le (multi)polygone. Il y a plusieurs façons de procéder, mais, comme pour rendre accessible à tous, nous allons utiliser GRASS via QGIS, j'utilise les premières conversions dans QGIS ; ensuite, nous utiliserons uniquement les outils de GRASS.
 
-![grass_line_overlay_points](https://github.com/lbartoletti/lbartoletti.github.io/blob/main/assets/2024_intersection_intersects/data/processing/grass_line_overlay_points.svg)
+![grass_line_overlay_points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_line_overlay_points.svg)
 
 Notre algorithme va convertir la `base` en polygone, puis effectuer l'opération d'overlay. Pour calculer l'intersection entre `line` et `base_poly`, on extrait les points d'intersections que l'on peut afficher dans QGIS. On retrouve le même résultat, ici, je passe les détails, mais on retrouve bien nos WKB :
 
@@ -502,9 +502,9 @@ Notre algorithme va convertir la `base` en polygone, puis effectuer l'opération
 Pour le prédicat `intersects`, nous allons continuer d'utiliser GRASS avec la commande `v.select` avec l'opération `intersects`.
 Encore false… du moins, les points retournés sont ceux des extrémités de `line` et aucun point pour `base` ou `base_poly`.
 
-![grass_select_line_overlay](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/grass_select_line_overlay_points.svg?raw=true)
+![grass_select_line_overlay](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_select_line_overlay_points.svg){: .img-center loading=lazy }
 
-Le model est disponible [ici](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/line_overlay_points.model3).
+Le modèle est disponible [ici](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/line_overlay_points.model3).
 
 C'est au moins rassurant, car derrière `v.select` avec l'opérateur `intersects` on utilise… GEOS.
 Il existe une autre façon de réaliser la sélection, mais je la garde pour la prochaine partie :wink:
@@ -524,20 +524,20 @@ Tout d'abord, SAGA, ne sait pas lire le GeoPackage. J'ai réalisé une conversio
 
 On charge ces fichiers dans l'interface de SAGA.
 
-![Load shapes](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_load_shapes.png?raw=true)
+![Load shapes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_load_shapes.png){: .img-center loading=lazy }
 
 Nous affichons nos données. Rien de surprenant, on se retrouve avec nos deux géométries.
 
-![Map base line](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_base_line.png?raw=true)
+![Map base line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_map_base_line.png){: .img-center loading=lazy }
 
 Première étape, vérifier, le calcul d'intersection. Dans le vocabulaire de SAGA, l'intersection entre lignes, s'appelle "Crossing".
 On exécute le traitement : Geoprocessing -> Shapes -> Lines -> Line Crossing
 
-![Line Crossing](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_line_crossing.png?raw=true)
+![Line Crossing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_line_crossing.png){: .img-center loading=lazy }
 
 On retrouve bien nos deux points :
 
-![Map crossing](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_map_crossing.png?raw=true)
+![Map crossing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_map_crossing.png){: .img-center loading=lazy }
 
 Je passe ici les étapes pour leurs récupérations, mais, les WKB sont bien les mêmes, à savoir :
 
@@ -551,15 +551,15 @@ L'algorithme de SAGA, qui rappelons-le, n'utilisant pas GEOS retourne le même r
 Maintenant, tentons de vérifier si les points intersectent, ou non, notre base. Pour cela, on utilise l'outil « sélection par localisation » :
 Geoprocessing -> Shapes -> Selection -> Selection by localisation.
 
-![Select crossing base](<https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base.png?raw=true>
+![Select crossing base](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_select_crossing_base.png){: .img-center loading=lazy }
 
 Paf, erreur intéressante. Cela fonctionne seulement pour un point avec un polygone !
 
-![Select crossing base error](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_error.png?raw=true)
+![Select crossing base error](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_select_crossing_base_error.png){: .img-center loading=lazy }
 
 Dans notre expérience avec GRASS, on avait un problème identique. Nous allons donc tester avec `base_poly` :
 
-![Select crossing base poly](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_crossing_base_poly.png?raw=true)
+![Select crossing base poly](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_select_crossing_base_poly.png){: .img-center loading=lazy }
 
 Aucune sélection. Le message d'exécution nous l'indique bien (en Anglais) : "selected shapes: 0"
 
@@ -569,7 +569,7 @@ On va reprendre notre exemple entre base et test_line.
 
 20 sur 34, comme pour GEOS !
 
-![Select base test line](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/saga_select_base_test_line.png?raw=true)
+![Select base test line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_select_base_test_line.png){: .img-center loading=lazy }
 
 C'est normal d'une certaine façon. Cependant, le premier test avec crossing, nous montre également que le point d'intersection n'intersecte pas la géométrie d'origine, comme pour GEOS.
 
@@ -822,9 +822,12 @@ Mais, comme GRASS est topologique, on peut également s'en servir pour retrouver
 Pour utiliser la topologie, nous allons faire l'union de nos deux lignes de `base` et `line` pour ensuite nettoyer celles-ci.
 Le nettoyage, via `v.clean` se fera seulement avec l'outil `break`.
 Nous allons passer de :
-![GRASS line overlay](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/grass_line_overlay_points.svg?raw=true)
+
+![GRASS line overlay](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_line_overlay_points.svg){: .img-center loading=lazy }
+
 à
-![GRASS line overlay clean](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/grass_select_line_clean_points.svg?raw=true)
+
+![GRASS line overlay clean](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_select_line_clean_points.svg){: .img-center loading=lazy }
 
 Maintenant, on regarde si notre fonction v.select avec `intersects` fonctionne.
 
@@ -852,10 +855,10 @@ La topologie est grande, la topologie est bonne, elle va sauver nos calculs !
 
 Oui, la topologie c'est très bien, et son utilisation dans QGIS, via ses outils ou via GRASS, est très puissante. Mais, l'on peut faire quelques reproches :
 
-– plus difficile à utiliser/à maintenir ;
-– traitements plus longs lors d'intégrations de données externes, non topologiques ;
-– sommets plus importants ;
-– modification de la donnée d'origine ;
+- plus difficile à utiliser/à maintenir ;
+- traitements plus longs lors d'intégrations de données externes, non topologiques ;
+- sommets plus importants ;
+- modification de la donnée d'origine ;
 — etc.
 
 En particulier, j'expliquerai bientôt ce que j'indique par « modification de la donnée d'origine ».
@@ -870,7 +873,7 @@ Comparons les angles des segments.
 
 Dans notre géométrie d'origine, nous avons quatre segments, avec comme azimut, en radians :
 
-![QGIS segments azimuth](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/qgis_segments_azimuth.svg?raw=true)
+![QGIS segments azimuth](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/qgis_segments_azimuth.svg){: .img-center loading=lazy }
 
 Soit, en partant du bas gauche et en tournant dans le sens horaire :
 
@@ -1073,7 +1076,7 @@ Vous pouvez trouver le fichier [fmw sur mon github](https://github.com/lbartolet
 
 Et le résultat :
 
-![FME test intersects](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/images/fme_test_intersects.png?raw=true)
+![FME test intersects](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/fme_test_intersects.png){: .img-center loading=lazy }
 
 KO !
 
@@ -1307,8 +1310,7 @@ print(f"L'orientation du triangle BAC est : {orient}")
 
 On retrouve un nombre positif. Le point C est de l'autre côté de l'axe AB, dit autrement, AB et C ne sont pas collinéaires.
 
-```python
-# Exemple d'utilisation avec des points colinéaires
+```python title="Exemple d'utilisation avec des points colinéaires"
 x_a, y_a = 1, 1
 x_b, y_b = 2, 2
 x_c, y_c = 3, 3
@@ -1319,8 +1321,7 @@ print(f"L'aire du triangle est : {area}")
 print(f"L'orientation du triangle BAC est : {orient}")
 ```
 
-```python
-# Exemple d'utilisation avec des points colinéaires
+```python title="Exemple d'utilisation avec des points colinéaires"
 x_a, y_a = 0.1, 0.1
 x_b, y_b = 0.2, 0.2
 x_c, y_c = 0.3, 0.3
@@ -1340,8 +1341,7 @@ Quelles sont donc les problèmes de cette « blague » ?
 Si l'on admet que C est le point d'intersection d'un segment avec AB, alors, en théorie, les lignes se croisent en un point bien défini : C. Cependant, en pratique, les ordinateurs effectuent des calculs en utilisant une représentation numérique finie qui peut introduire de petites erreurs. Voici pourquoi cela se produit :
 
 Les ordinateurs utilisent majoritairement une représentation en [virgule flottante](https://fr.wikipedia.org/wiki/Virgule_flottante) pour stocker des nombres réels. C'est même la norme pour les coordonnées de nos géométries. Ce fameux double que l'on retrouve de partout. Toutefois son utilisation peut introduire des erreurs d'arrondi. J'ai indiqué une opération en introduction, 0.1 + 0.2 != 0.3. Comme 0.3 ne peut pas être représenté exactement cela conduit à des approximations. C'est un problème connu des informaticiens, au point d'avoir [son propre site](https://0.30000000000000004.com/).
-De même, je ne peux qu'encourager la lecture de l'article [What Every Computer Scientist Should Know About Floating-Point Arithmetic
-](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html).
+De même, je ne peux qu'encourager la lecture de l'article [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html).
 
 Il existe d'autres nombres sur des ordinateurs. Vous avez pu voir que 1 + 2 est bien égale à 3. Tandis que 0.1 + 0.2 n'est pas égale à 0.3.
 
@@ -1486,7 +1486,7 @@ sfcgal_intersects_intersection(PG_FUNCTION_ARGS)
 }
 ```
 
-Plus généralement, vous pouvez exécuter ce [mini script python](https://github.com/lbartoletti/lbartoletti.github.io/blob/e2a7c896516af05da86d079c589edda415471e83/assets/2024_intersection_intersects/data/intersects_intersection_numbers.py) qui résume ce que l'on a vu.
+Plus généralement, vous pouvez exécuter ce [mini script python](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/intersects_intersection_numbers.py) qui résume ce que l'on a vu.
 
 Il réalise notre calcul d'intersects/intersection sur 2 segments en utilisant des nombres floats, Decimal et Fraction de Python.
 
@@ -1540,7 +1540,7 @@ _La rigueur à tout prix peut devenir une source de frustration. Acceptez qu’u
 
 On est dans un monde infini, mais avec des ressources finies. Quelques arrondis ne font pas de mal. De combien de chiffres après la virgule avez-vous réellement besoin ? Votre précision c'est le décimètre, le centimètre, le millimètre, au-delà  ? Vous avez besoin de combien de chiffres pour [Pi](https://www.jpl.nasa.gov/edu/news/2016/3/16/how-many-decimals-of-pi-do-we-really-need/). Combien d'approximations réalisez-vous au quotidien, tout en étant précis ? Il est actuellement 21 h 02 ou simplement 21 h ? Quand vous réalisez un trajet de chez vous aux rencontres QGIS, vous êtes précis à la seconde, à la minute, au quart d'heure ? Bref, la précision dépend de votre contexte et il y a fort à parier que vous allez rarement être en dessous de 10^-3 sur du cartésien et 10^-8 en géodésique.
 
-![https://xkcd.com/2170/](https://imgs.xkcd.com/comics/coordinate_precision.png)
+![xkcd 2170 - Credits : Randall Monroe](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/xkcd_coordinate_precision.webp){: .img-center loading=lazy }
 
 ### Gérez la tolérance
 
@@ -1576,7 +1576,7 @@ En réalité, vivez vos SIG comme vous le voulez, mais ayez connaissance de leur
 
 J'espère que cette série d'articles vous a intéressé. D'autres sur la comparaison entre les outils devraient venir.
 
-Et pour finir, merci à mes relecteurs de GeoTribu, à Sandro Santilli (correction d'une erreur dans un code), Martin Davis aka Dr. Jts (pour ses apports sur les « concurrents » et tout ce qu'il a pu faire pour nos outils !. Et, enfin, merci à Julien Moura qui a su être patient avant de voir la première phrase :D
+Et pour finir, merci à mes relecteurs de GeoTribu, à Sandro Santilli (correction d'une erreur dans un code), Martin Davis aka Dr. Jts (pour ses apports sur les « concurrents ») et tout ce qu'il a pu faire pour nos outils ! Et, enfin, merci à Julien Moura qui a su être patient avant de voir la première phrase :D
 
 <!-- geotribu:authors-block -->
 
