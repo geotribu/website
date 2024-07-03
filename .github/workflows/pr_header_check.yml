@@ -28,4 +28,4 @@ jobs:
 
       - name: "Check markdown headers using CLI"
         run: |
-          geotribu header-check content/articles/2024/*.md --authors-folder content/team -maxw 1000 -v
+          geotribu header-check content/articles/202*/*.md --authors-folder content/team -maxw 1000 -v
