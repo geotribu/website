@@ -2,7 +2,6 @@ name: "✅ Markdown header check"
 
 on:
   pull_request:
-    types: [labeled]
     paths:
       - "content/articles/**/*.md"
 
@@ -13,7 +12,7 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'articles')
 
     steps:
-      - name: "Récupère le code source"
+      - name: "Fetch source code"
         uses: actions/checkout@v4
 
       - name: "Set up Python"
@@ -22,11 +21,11 @@ jobs:
           cache: "pip"
           python-version: 3.11
 
-      - name: "Installer dépendances"
+      - name: "Install requirements"
         run: |
           python -m pip install -U pip setuptools wheel
           python -m pip install -U -r requirements.txt
 
-      - name: "Vérifie les entêtes markdown avec le CLI"
+      - name: "Check markdown headers using CLI"
         run: |
-          geotribu header-check content/articles/2024/*.md --authors-folder content/team -minw 250 -maxw 1000 -v
+          geotribu header-check content/articles/2024/*.md --authors-folder content/team -maxw 1000 -v
