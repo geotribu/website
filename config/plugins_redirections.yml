@@ -855,6 +855,7 @@ redirects:
     toc_nav_ignored/qgis_resources_preview_table.md: https://geotribu.github.io/pyqgis-icons-cheatsheet/
     team/statistiques.md: index.md
     team/contributors.md: team/index.md
+    team/confidentialite.md: about/confidentialite.md
 
     # page auteurices
     team/acha.md: team/aurelien-chaumet.md
