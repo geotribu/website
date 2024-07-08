@@ -38,7 +38,7 @@ Régulièrement, j'ai des questions sur certaines « irrégularités » rencontr
 
 Ces questions reflètent des préoccupations courantes parmi les utilisateurs de SIG, qui s'attendent à une exactitude et à une précision rigoureuses. La maxime "rigueur, rigueur, rigueur", si chère à l'un de mes anciens chefs, n'est pas toujours… de rigueur sur nos ordinateurs.
 
-Alors que je préparais un article sur la topologie que je dois à Julien depuis plusieurs mois, j'ai été frappé par ce que l'on appelle le [phénomène Baader-Meinhof, ou l'illusion de fréquence](https://fr.wikipedia.org/wiki/Illusion_de_fr%C3%A9quence) : soudainement, ce sujet paraît surgir partout, des cours aux discussions en ligne. Entre les issues signalées et les conversations avec mes collègues, j'ai décidé de changer mon fusil d'épaule. Plutôt que de continuer sur le chemin prévu, j'ai opté pour réaliser plusieurs séries d'articles, explorant certains traitements, « problèmes », différences dans les SIG. Cet article, subdivisé en chapitres, fera partie d'une série qui vise donc à montrer le dessous des SIG.
+Alors que je préparais un article sur la topologie que je dois à [Julien](https://geotribu.fr/team/julien-moura/) depuis plusieurs mois, j'ai été frappé par ce que l'on appelle le [phénomène Baader-Meinhof, ou l'illusion de fréquence](https://fr.wikipedia.org/wiki/Illusion_de_fr%C3%A9quence) : soudainement, ce sujet paraît surgir partout, des cours aux discussions en ligne. Entre les _issues_ signalées et les conversations avec mes collègues, j'ai décidé de changer mon fusil d'épaule. Plutôt que de continuer sur le chemin prévu, j'ai opté pour réaliser plusieurs séries d'articles, explorant certains traitements, « problèmes », différences dans les SIG. Cet article, subdivisé en chapitres, fera partie d'une série qui vise donc à montrer le dessous des SIG.
 
 Dans les sections suivantes, nous explorerons ensemble :
 
@@ -119,7 +119,7 @@ et
 0101000000b5ebdd9e8f3c3e416bf8515379d55341
 ```
 
-respectivement `POINT(1981583.6205737416 5199333.301878075)``
+respectivement `POINT(1981583.6205737416 5199333.301878075)`
 
 #### Création de lignes depuis ces intersections
 
@@ -171,7 +171,7 @@ line\_snap:
 | b'010200000002000000a899efc8c83c3e4175e5698166d55341cccd8ccdc63c3e414a00e65664d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981638.80292974691838026 5199249.35778815485537052) |
 | b'010200000002000000a899efc8c83c3e4175e5698166d55341d0a0d012bd3c3e4126b2ed1567d55341' | LineString (1981640.78490600921213627 5199258.02208839822560549, 1981629.07349591329693794 5199260.34263280592858791) |
 
-On remarque que nos points d'origines sont dans les deux cas :
+On remarque que nos points d'origine sont dans les deux cas :
 
 - `1981583.62057374161668122 5199333.30187807511538267`
 - `1981640.78490600921213627 5199258.02208839822560549`
@@ -275,7 +275,7 @@ Et bien, nous verrons cela plus tard.
 
 - **WKT (Well-Known Text)** : Le WKT est un format texte utilisé pour représenter des objets géométriques de manière lisible par l'humain. Il est souvent utilisé pour le partage et l'affichage de données géographiques.
 
-Pour plus d'informations, consultez la page [Wikipedia](https://fr.wikipedia.org/wiki/Well-known_text)
+Pour plus d'informations, consultez la page [Wikipedia](https://fr.wikipedia.org/wiki/Well-known_text).
 
 ## GEOS au cœur de QGIS
 
@@ -348,7 +348,7 @@ intersection
 La réponse est `MULTIPOINT ((1981640.7849060092 5199258.022088398), (1981583.6205737416 5199333.301878075))`
 
 Ah ! C'est une petite différence avec QGIS qui retourne deux points. Ici, GEOS retourne un MULTIPOINT, qui, selon moi, est plus cohérent, mais qu'importe.
-Le WKT est plus lisible, mais il a l'inconvénient de ne pas avoir toujours la même représentation. QGIS nous retourne 17 décimales et GEOS : 10 ; ce qui, dans tous les cas, est déjà trop pour du projeté, on en reparlera plus tard.
+Le WKT est plus lisible, mais il a l'inconvénient de ne pas toujours avoir la même représentation. QGIS nous retourne 17 décimales et GEOS : 10 ; ce qui, dans tous les cas, est déjà trop pour du projeté, on en reparlera plus tard.
 
 Afin d'éviter ces différences, nous allons travailler avec le WKB. Pour le récupérer, on ajoute simplement l'option WKB à l'option `-f` pour le format de sortie :
 
@@ -386,7 +386,7 @@ Très bien. Est-ce que le point intersecte ou touche une des géométries d'orig
 intersects
 ```
 
-Ici, je teste, si le multipoint intersecte la géométrie `base`. Cela retourne faux.
+Ici, je teste si le multipoint intersecte la géométrie `base`. Cela retourne faux.
 
 De même entre le multipoint et `line` :
 
@@ -412,7 +412,7 @@ On commence à toucher du doigt le problème. Le point d'intersection est d'un c
 
 ![Example points along line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/example_grid_line.png){: .img-center loading=lazy }
 
-En simplifiant, on pourrait dire que les points sont sur des minuscules grilles. Le point n'est pas sur la ligne, mais très proche.
+En simplifiant, on pourrait dire que les points sont sur de minuscules grilles. Le point n'est pas sur la ligne, mais très proche.
 
 D'ailleurs, demandons à GEOS où se trouvent les points sur nos géométries d'origine.
 
@@ -490,7 +490,7 @@ Afin de simplifier la reproductibilité aux lecteurs, j'ai ajouté des modèles 
 
 Dans GRASS, `v.overlay` permet de réaliser des opérations… d'overlay - superposition en français - (intersection, union, différence) entre deux couches vectorielles. Il nécessite deux vecteurs, dont le second B, doit être de type « area » (polygone en langage OGC). Si le vecteur n'est pas un polygone, il nécessite une conversion avant d'effectuer le traitement ; ce qui est notre cas.
 
-La couche `base` est une polyligne fermée, elle sera utilisée pour être convertie en polygone. Pour les puristes, on regardera que les coordonnées du WKB sont bien identiques entre le linestring et le (multi)polygone. Il y a plusieurs façons de procéder, mais, comme pour rendre accessible à tous, nous allons utiliser GRASS via QGIS, j'utilise les premières conversions dans QGIS ; ensuite, nous utiliserons uniquement les outils de GRASS.
+La couche `base` est une polyligne fermée, elle sera utilisée pour être convertie en polygone. Pour les puristes, on regardera que les coordonnées du WKB sont bien identiques entre le linestring et le (multi)polygone. Il y a plusieurs façons de procéder, mais, pour rendre accessible à tous, nous allons utiliser GRASS via QGIS, j'utilise les premières conversions dans QGIS ; ensuite, nous utiliserons uniquement les outils de GRASS.
 
 ![grass_line_overlay_points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_line_overlay_points.svg)
 
@@ -530,7 +530,7 @@ Nous affichons nos données. Rien de surprenant, on se retrouve avec nos deux g�
 
 ![Map base line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_map_base_line.png){: .img-center loading=lazy }
 
-Première étape, vérifier, le calcul d'intersection. Dans le vocabulaire de SAGA, l'intersection entre lignes, s'appelle "Crossing".
+Première étape, vérifier le calcul d'intersection. Dans le vocabulaire de SAGA, l'intersection entre lignes s'appelle "Crossing".
 On exécute le traitement : Geoprocessing -> Shapes -> Lines -> Line Crossing
 
 ![Line Crossing](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/saga_line_crossing.png){: .img-center loading=lazy }
@@ -544,7 +544,7 @@ Je passe ici les étapes pour leurs récupérations, mais, les WKB sont bien les
 - `0101000000b5ebdd9e8f3c3e416bf8515379d55341`
 - `0101000000a899efc8c83c3e4175e5698166d55341`
 
-L'algorithme de SAGA, qui rappelons-le, n'utilisant pas GEOS retourne le même résultat. Très bien !
+L'algorithme de SAGA qui, rappelons-le, n'utilise pas GEOS retourne le même résultat. Très bien !
 
 ### sélection
 
@@ -620,7 +620,7 @@ SELECT ST_AsText(ST_Intersection(base, line)) FROM ST_GeomFromWKB(decode('010200
 
 `MULTIPOINT((1981640.7849060092 5199258.022088398),(1981583.6205737416 5199333.301878075))`
 
-Je vais légèrement adapter la requête, grâce à des CTE, pour plus de lisibilité par la suite.
+Je vais légèrement adapter la requête, grâce à des [CTE](https://www.postgresql.org/docs/current/queries-with.html), pour plus de lisibilité par la suite.
 
 ```sql
 WITH
@@ -686,7 +686,7 @@ false,false,
 0,0.00000000023283064365386963
 `
 
-Le résultat d'intersects est faux, et pourtant pour un des cas, la distance est égale à 0. Intéressant, est-ce vraiment un zéro ou tellement proche de 0, que ça retourne 0 ? Sinon, le second, est égale à celui de GEOS : 2.3283064365386963e-10
+Le résultat d'intersects est faux, et pourtant pour un des cas, la distance est égale à 0. Intéressant, est-ce vraiment un zéro ou tellement proche de 0, que ça retourne 0 ? Sinon, le second, est égal à celui de GEOS : 2.3283064365386963e-10
 
 Pour le WKB, il est « particulier », mais nous retrouvons nos coordonnées :
 
@@ -746,7 +746,7 @@ Ce qui nous intéresse ici est le code `2005` qui veut dire MultiPoint 2D, ainsi
 On retrouve cette information avec la représentation WKT à laquelle nous sommes habitués :
 `MULTIPOINT ((1981583.62057374 5199333.30187808), (1981640.784906015199258.0220884))`
 
-Je ne vais pas m'étendre sur le WKB qui est « étrange », il est en Big Endian, alors que jusqu'à présent, je n'ai eu que du Little Endian ; encore une fois plus d'explications dans l'article sur le WKB/WKT. Néanmoins, on a quelques différences entre ceux-ci. Sans-doute lié à la précision du résultat ; n'étant pas expert ORACLE, il me manque des éléments de compréhension et des tests à mener.
+Je ne vais pas m'étendre sur le WKB qui est « étrange », il est en Big Endian, alors que jusqu'à présent, je n'ai eu que du Little Endian ; encore une fois plus d'explications dans l'article sur le WKB/WKT. Néanmoins, on a quelques différences entre ceux-ci, sans-doute liées à la précision du résultat ; n'étant pas expert ORACLE, il me manque des éléments de compréhension et des tests à mener.
 
 Toutefois, à la représentation après la virgule près, on a le même résultat :
 
@@ -857,13 +857,13 @@ Oui, la topologie c'est très bien, et son utilisation dans QGIS, via ses outils
 
 - plus difficile à utiliser/à maintenir ;
 - traitements plus longs lors d'intégrations de données externes, non topologiques ;
-- sommets plus importants ;
+- nombre de sommets plus important ;
 - modification de la donnée d'origine ;
 — etc.
 
 En particulier, j'expliquerai bientôt ce que j'indique par « modification de la donnée d'origine ».
 
-Dans la première partie, j'ai écrit que le point que la distance du point par rapport à la géométrie d'origine était proche de zéro, mais pas exactement 0.
+Dans la première partie, j'ai écrit que la distance du point par rapport à la géométrie d'origine était proche de zéro, mais pas exactement 0.
 
 Avec l'édition topologique de QGIS ou le stockage de GRASS, les points d'intersections coïncident avec les sommets de nos géométries, merci à la topologie.
 
