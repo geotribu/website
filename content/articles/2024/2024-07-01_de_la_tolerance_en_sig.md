@@ -42,14 +42,14 @@ Alors que je préparais un article sur la topologie que je dois à [Julien](http
 
 Dans les sections suivantes, nous explorerons ensemble :
 
-- Le constat : les calculs ne sont pas bons ;
-- Fonctionnement Interne de QGIS et GEOS : comment ces outils gèrent-ils les données et les opérations géométriques ;
-- Et les autres SIG Open Source ? Comparaisons avec GRASS et SAGA ;
-- Et dans les bases de données ? Comparaisons de SQL Server, Oracle et PostGIS ;
-- Utilisation de la Topologie : est-ce que la topologie peut nous sauver ? ;
-- Approche alternative : exploration de méthodes alternatives telles que l'utilisation de SFCGAL pour des calculs plus robustes ;
-- Et chez la concurrence, ça se passe comment ? ;
-- Algorithmes et Code : comment cela fonctionne-t-il ? Cette partie sera optionnelle, pour ceux ne voulant pas voir de code ;
+- Le constat : les calculs ne sont pas bons.
+- Fonctionnement Interne de QGIS et GEOS : comment ces outils gèrent-ils les données et les opérations géométriques.
+- Et les autres SIG Open Source ? Comparaisons avec GRASS et SAGA.
+- Et dans les bases de données ? Comparaisons de SQL Server, Oracle et PostGIS.
+- Utilisation de la Topologie : est-ce que la topologie peut nous sauver ?
+- Approche alternative : exploration de méthodes alternatives telles que l'utilisation de SFCGAL pour des calculs plus robustes.
+- Et chez la concurrence, ça se passe comment ?
+- Algorithmes et Code : comment cela fonctionne-t-il ? Cette partie sera optionnelle, pour ceux ne voulant pas voir de code.
 - La conclusion : comment arrêter de trop penser et vivre une vie meilleure !
 
 Êtes-vous prêts pour l'aventure ? Sortons nos SIG !
