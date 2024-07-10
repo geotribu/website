@@ -949,7 +949,7 @@ Et, puis, est-ce vraiment utile d'avoir autant de chiffres après la virgule ? :
 
 Dans les parties précédentes, nous avons montré que le « intersects » d'une intersection, était faux, sauf avec la topologie ou la tolérance.
 
-Nous allons maintenant utiliser une « approche alternative » dans les calculs. Promis, je réserve la partie code dans une autre partie à la lecture optionnelle.
+Nous allons maintenant utiliser une « approche alternative » dans les calculs. Promis, je garde le code pour une autre partie à la lecture optionnelle.
 
 Pour cela, laissez-moi introduire SFCGAL.
 
@@ -965,7 +965,7 @@ On utilisera SFCGAL de deux façons, pour comparer leurs résultats, avec Python
 
 ### Python avec PySFCGAL
 
-PySFCGAL est une interface Python pour la bibliothèque SFCGAL, en cours de développement et de packaging. À défaut, d'avoir une application `sfcgalop` à la `geosop` — qui est en cours de développement — l'interface Python permet de faire des calculs plus facilement qu'en C ou C++. Promis, c'est « lisible » comme code.
+PySFCGAL est une interface Python pour la bibliothèque SFCGAL, en cours de développement et de packaging. À défaut d'avoir une application `sfcgalop` à la `geosop`  (au moment de la publication de l'article, celle-ci est en cours de développement) l'interface Python permet de faire des calculs plus facilement qu'en C ou C++. Promis, c'est « lisible » comme code.
 
 Sur mon système FreeBSD, voici, comment je l'utilise pour notre test :
 
@@ -1014,7 +1014,7 @@ C'est un double `TRUE` !
 ### PostGIS avec SFCGAL
 
 Le principal consommateur de SFCGAL est PostGIS, il est notamment utilisé pour les calculs 3D et certaines opérations qui ne sont pas disponibles dans GEOS.
-À l'heure, où j'écris, la version 3.5 de PostGIS n'est pas encore sortie. Cependant, elle contient tous les algorithmes de SFCGAL, y compris ceux pouvant faire « doublon » avec GEOS.
+À l'heure où j'écris, la version 3.5 de PostGIS n'est pas encore sortie. Cependant, elle contient tous les algorithmes de SFCGAL, y compris ceux pouvant faire « doublons » avec GEOS.
 Vous connaissez vos fonctions `ST_` de PostGIS, vous remplacez le préfixe par `CG_` et vous aurez les fonctions SFCGAL.
 
 Comme il s'agit d'une extension, il faudra l'activer avec la commande SQL `CREATE EXTENSION postgis_sfcgal CASCADE;`
@@ -1043,7 +1043,7 @@ Le résultat tant attendu :
 
 Comment ça, « faux » ? C'était vrai avec Python.
 
-En effet, mais il faut comprendre, que lorsque l'on réalise cette requête, plusieurs conversions s'effectuent.
+En effet, mais il faut comprendre que, lorsque l'on réalise cette requête, plusieurs conversions s'effectuent.
 
 Si vous vous souvenez, plus haut, j'ai indiqué que SFCGAL utilisait « d'autres nombres », des sortes de fractions. En vrai, sa représentation interne ressemble à ça :
 
@@ -1055,17 +1055,17 @@ On obtient un "WKT" mais avec des fractions :
 
 `MULTIPOINT((39835383350819973229271557358571370825/20102802090827818983138002993152 26130292092976317370966223130398592513/5025700522706954745784500748288),(4210607705173521426482690542319302151/2124808763144847138096555229184 2761857251796143622778067803204906245/531202190786211784524138807296))`
 
-Le passage de la fraction, au nombre à virgule « double », va faire une légère approximation et on ne va pas retomber sur nos ~~pattes~~ bits. D'où ce comportement.
+Le passage de la fraction au nombre à virgule « double » va faire une légère approximation. De fait, on ne va pas retomber sur nos ~~pattes~~ bits, d'où ce comportement.
 
 Pour les plus curieux, la partie « algorithme » contiendra un exemple en Python SFCGAL et d'autres exemples en PostGIS SFCGAL.
 
-Ce qu'il faut comprendre, c'est que SFCGAL peut donner le résultat correct, à condition de rester dans sa numérotation ou d'avoir des nombres qui sont finis ou dans la plage de valeur des doubles.
+Ce qu'il faut comprendre, c'est que SFCGAL peut donner le résultat correct, à condition de rester dans son modèle de représentation des nombres ou d'avoir des nombres qui sont finis ou dans la plage de valeur des doubles.
 
 Il existerait une façon de rendre le calcul correct dans PostGIS avec SFCGAL, mais ce n'est pas encore implémenté.
 
 ## Et chez la concurrence, ça se passe comment ?
 
-On ne va pas tous les faire, mais seulement deux un peu connus et installé parfois à côté de QGIS :wink:
+On ne va pas tous les faire, mais seulement deux un peu connus et installés parfois à côté de QGIS :wink:
 
 Le premier sera FME, une sorte de boîte à outils de QGIS et l'autre ArcGis Pro, le concurrent payant de GRASS/QGIS.
 
@@ -1124,8 +1124,8 @@ arcpy.analysis.Intersect(
 )
 ```
 
-- 01040000000200000001010000008016d99e8f3c3e416054525379d553410101000000e034efc8c83c3e4120166a8166d55341
-- MultiPoint ((1981583.62049999833106995 5199333.30189999938011169),(1981640.78490000218153 5199258.02210000157356262))
+- `01040000000200000001010000008016d99e8f3c3e416054525379d553410101000000e034efc8c83c3e4120166a8166d55341`
+- `MultiPoint ((1981583.62049999833106995 5199333.30189999938011169),(1981640.78490000218153 5199258.02210000157356262))`
 
 Un résultat également légèrement différent, mais proche de celui que nous obtenons avec les autres SIG.
 Que se passe-t-il ici ?
@@ -1144,8 +1144,8 @@ with arcpy.EnvManager(XYResolution="0.00001 Millimeters", XYTolerance="0.00001 M
     )
 ```
 
-- MultiPoint ((1981640.78490600734949112 5199258.02208840474486351),(1981583.6205737441778183 5199333.30187807604670525))
-- 0104000000020000000101000000a099efc8c83c3e417ce5698166d553410101000000c0ebdd9e8f3c3e416cf8515379d55341
+- `MultiPoint ((1981640.78490600734949112 5199258.02208840474486351),(1981583.6205737441778183 5199333.30187807604670525))`
+- `0104000000020000000101000000a099efc8c83c3e417ce5698166d553410101000000c0ebdd9e8f3c3e416cf8515379d55341`
 
 Ah, on retrouve nos petits ! Du moins, l'écart a été réduit.
 
