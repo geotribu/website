@@ -14,9 +14,9 @@ license: beerware
 robots: index, follow
 tags:
     - IGN
+    - LiDAR
     - OGR
     - PDAL
-    - LiDAR
 ---
 
 # LiDAR HD brut - Distinguer sol et sursol avec pdal
