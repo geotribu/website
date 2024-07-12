@@ -22,7 +22,7 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-![logo IGN France](https://cdn.geotribu.fr/images/logos-icones/logiciels_librairies/prodige-logo-small.png){: .img-thumbnail-left }
+![logo Prodige](https://cdn.geotribu.fr/images/logos-icones/logiciels_librairies/prodige-logo-small.png){: .img-thumbnail-left }
 
 La communauté [Prodige](https://www.prodige-opensource.org/accueil) s'est réunie lors d'un évènement en ligne organisé le 3 juin 2024 : [Journée annuelle PRODIGE 2024](https://www.prodige-opensource.org/accueil/journee-nationale-prodige). Comme l'année précédente, elle a accueilli des représentants d'autres communautés logicielles : notamment la plateforme Géo2France et le projet Ecosphères.
 
