@@ -15,8 +15,8 @@ license: beerware
 robots: index, follow
 tags:
     - cartographie
-    - OpenStreetMap
     - Matplotlib
+    - OpenStreetMap
     - prettymapp
     - prettymaps
     - Python
