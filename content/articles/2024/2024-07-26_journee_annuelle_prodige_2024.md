@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-07-12
+date: 2024-07-26
 description: "Synthèse de la journée annuelle Prodige qui s'est tenue en ligne le 3 juin 2024"
 icon: octicons/people-16
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/journee_annuelle_prodige_2024/prodige_au_service_des_territoires.webp
@@ -26,7 +26,9 @@ tags:
 
 La communauté [Prodige](https://www.prodige-opensource.org/accueil) s'est réunie lors d'un évènement en ligne organisé le 3 juin 2024 : [Journée annuelle PRODIGE 2024](https://www.prodige-opensource.org/accueil/journee-nationale-prodige). Comme l'année précédente, elle a accueilli des représentants d'autres communautés logicielles : notamment la plateforme Géo2France et le projet Ecosphères.
 
-Cet article met en avant quelques points remarquables de cette journée. Je l'ai rédigé à l'occasion de mon intervention à propos du collectif CICCLO dans le cadre des missions d'animation que l'[Afigéo](https://www.afigeo.asso.fr/) m'a confiées pour dynamiser l'écosystème technique des plateformes de données géographiques.
+Cet article met en avant quelques points remarquables de cette journée. Je l'ai rédigé à l'occasion de mon intervention à propos du collectif [CICCLO](https://cnig.gouv.fr/collectif-interoperabilite-et-mise-en-commun-de-a26159.html) dans le cadre des missions d'animation que l'[Afigéo](https://www.afigeo.asso.fr/) m'a confiées pour dynamiser l'écosystème technique des plateformes de données géographiques (l'objet et les travaux de CICCLO sont rapidement décrits plus bas dans la section de l'article consacrée à l'interopérabilité).
+
+Pour ceux qui ne connaissent pas Prodige : il s'agit d'un projet lancé au début des années 2010 par l'État et visant à fournir une solution logicielle libre adaptée aux plateformes de données (géographiques essentiellement) initialement pour répondre aux besoins de la directive Européenne INSPIRE. Ses principales fonctions : cataloguer, visualiser et mettre à disposition des données (en particulier via des standards comme WMS, WFS et WMTS). Cet outil bénéficie d'une base d'utilisateurs importante en France (voir les [déploiements référencés sur le site de Prodige](https://www.prodige-opensource.org/accueil/connaitre/les-plateformes-prodige)) avec une bonne implantation au niveau des plateformes de données régionales. Au niveau technique, on retrouve des briques logicielles de référence dans le domaine de l'information géographique numérique : GeoNetwork pour le catalogage, MapServer pour la diffusion des données géographiques, PostgreSQL/PostGIS pour le stockage et une visionneuse carto basée sur OpenLayers. Parmi les fonctionnalités à plus forte valeur ajoutée on trouve un générateur d'applications mobiles pour de la saisie sur le terrain.
 
 ## Expérience utilisateur
 
