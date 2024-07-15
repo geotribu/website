@@ -842,7 +842,20 @@ Mais, comme GRASS est topologique, on peut également s'en servir pour retrouver
 
 Pour utiliser la topologie, nous allons faire l'union de nos deux lignes de `base` et `line` pour ensuite nettoyer celles-ci.
 Le nettoyage, via `v.clean` se fera seulement avec l'outil `break`.
-Nous allons passer de :
+L'utilisation de l'outil `break` de `v.clean` dans ce cas précis sert à « nettoyer » les données en réalisant une opération topologique :
+
+Que fait la fonction `break` ?
+
+    - Cela découpe les lignes à leurs points d'intersection.
+    - Cela crée de nouveaux nœuds aux endroits où les lignes se croisent.
+
+On parle de nettoyage, car, initialement, les lignes de `base` et `line` se croisent sans être réellement connectées topologiquement. Le « nettoyage » consiste à établir une véritable connexion topologique à ces intersections.
+
+Dans notre cas, en appliquant « break » après l'union des lignes, on force GRASS à reconnaître et à matérialiser les points d'intersection ; cela transforme de simples croisements géométriques en nœuds topologiques explicites.
+
+Cela permet d'exploiter ensuite la structure topologique de GRASS pour identifier facilement ces points d'intersection.
+
+Ainsi, nous allons passer de :
 
 ![GRASS line overlay](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_line_overlay_points.svg){: .img-center loading=lazy }
 
