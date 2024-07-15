@@ -1138,6 +1138,8 @@ Ce qu'il faut comprendre, c'est que SFCGAL peut donner le résultat correct, à 
 
 Il existerait une façon de rendre le calcul correct dans PostGIS avec SFCGAL, mais ce n'est pas encore implémenté.
 
+Malgré les problèmes potentiels de précision dans son utilisation dans PostGIS, SFCGAL reste un outil précieux. Son principal atout réside dans ses fonctionnalités avancées en 2D et 3D, absentes de GEOS/PostGIS natif. Par ailleurs, ces erreurs ne sont pas systématiques et dépendent des données et opérations effectuées.
+
 ## Et chez la concurrence, ça se passe comment ?
 
 On ne va pas tous les faire, mais seulement deux un peu connus et installés parfois à côté de QGIS :wink:
