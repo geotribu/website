@@ -54,6 +54,8 @@ Dans les sections suivantes, nous explorerons ensemble :
 
 Êtes-vous prêts pour l'aventure ? Sortons nos SIG !
 
+![Série d'été 2024 de Loïc Bartoletti - Les Géométries- Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_annonce.png){: .img-center loading=lazy }
+
 ## Le constat : les calculs ne sont pas bons
 
 Dans nos SIG, les opérations de superposition (_overlay_ dans la langue de Shakespeare) telles que les intersections, les unions, les différences, etc. ainsi que l'accrochage utilisé par les dessinateurs, sont omniprésentes. Ces processus s'appuient sur des calculs similaires, simplifiés ici pour une meilleure compréhension dans cette présentation générale.
