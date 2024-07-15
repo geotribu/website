@@ -292,9 +292,9 @@ Dans cette section, nous allons plonger dans les dessous des SIG en explorant le
 
 [GEOS (Geometry Engine - Open Source)](https://libgeos.org/) est une bibliothèque C++ qui fournit des fonctions de calculs sur les géométries Simple Feature OGC. Elle est largement utilisée dans divers outils SIG, y compris QGIS, pour effectuer des calculs géométriques. GEOS est une implémentation de l'API de JTS (Java Topology Suite) qui vise à manipuler des géométries planes en 2D.
 
-![GEOS diagram from crunchy data](https://f.hubspotusercontent00.net/hubfs/2283855/geos-jts%20(1).png)
+![GEOS diagram from crunchy data](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/geos_diagram_dependent_project.webp){: .img-center loading=lazy }
 
-(Source : <https://www.crunchydata.com/blog/performance-improvements-in-geos>)
+> Source : [Performance Improvements in GEOS](https://www.crunchydata.com/blog/performance-improvements-in-geos), Paul Ramsey (2021, Crunchy Data)
 
 ### Le rôle de GEOS dans QGIS
 
@@ -498,7 +498,7 @@ Dans GRASS, `v.overlay` permet de réaliser des opérations… d'overlay - super
 
 La couche `base` est une polyligne fermée, elle sera utilisée pour être convertie en polygone. Pour les puristes, on regardera que les coordonnées du WKB sont bien identiques entre le linestring et le (multi)polygone. Il y a plusieurs façons de procéder, mais, pour rendre accessible à tous, nous allons utiliser GRASS via QGIS, j'utilise les premières conversions dans QGIS ; ensuite, nous utiliserons uniquement les outils de GRASS.
 
-![grass_line_overlay_points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_line_overlay_points.svg)
+![grass_line_overlay_points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_line_overlay_points.svg){: .img-center loading=lazy }
 
 Notre algorithme va convertir la `base` en polygone, puis effectuer l'opération d'overlay. Pour calculer l'intersection entre `line` et `base_poly`, on extrait les points d'intersections que l'on peut afficher dans QGIS. On retrouve le même résultat, ici, je passe les détails, mais on retrouve bien nos WKB :
 
