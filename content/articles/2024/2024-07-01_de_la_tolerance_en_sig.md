@@ -73,7 +73,7 @@ Toutes les données utilisées sont disponibles sur [mon GitHub](https://github.
 
 Revenons-en au fait, prenons un exemple avec une géométrie de type ligne, ici fermée, mais cela serait similaire pour un polygone (puisqu'un polygone est une ligne). Les géométries utilisées sont projetées dans le système de coordonnées EPSG:3946, projection de mon coin magnifique.
 
-Exemple d'une géométrie de ligne au format WKB : :
+Exemple d'une géométrie de ligne au format WKB :
 
 ```bin
 0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341
