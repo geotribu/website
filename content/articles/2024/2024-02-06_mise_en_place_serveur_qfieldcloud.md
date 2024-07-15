@@ -16,9 +16,9 @@ tags:
     - déploiement
     - Docker
     - infra
+    - Q-ops
     - QField
     - QFieldCloud
-    - Q-ops
 ---
 
 # Déploiement et configuration d'un serveur QFieldCloud

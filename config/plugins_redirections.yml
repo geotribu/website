@@ -855,12 +855,14 @@ redirects:
     toc_nav_ignored/qgis_resources_preview_table.md: https://geotribu.github.io/pyqgis-icons-cheatsheet/
     team/statistiques.md: index.md
     team/contributors.md: team/index.md
+    team/confidentialite.md: about/confidentialite.md
 
     # page auteurices
     team/acha.md: team/aurelien-chaumet.md
     team/avha.md: team/adrien-van-hamme.md
     team/avan.md: team/arnaud-vandecasteele.md
     team/bmer.md: team/boris-mericskay.md
+    team/credits.md: about/credits.md
     team/cros.md: team/cedric-rossi.md
     team/cque.md: team/christian-quest.md
     team/dmon.md: team/delphine-montagne.md
@@ -898,6 +900,7 @@ redirects:
     team/sdeb.md: team/samuel-deschamps-berger.md
     team/sdes.md: team/samuel-deschamps-berger.md
     team/sker.md: team/sylvain-kerdreux.md
+    team/sponsoring.md: about/sponsoring.md
     team/srit.md: team/stephane-ritzenthaler.md
     team/tgra.md: team/thomas-gratier.md
     team/tgram.md: team/tristram-grabener.md
