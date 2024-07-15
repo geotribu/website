@@ -943,7 +943,7 @@ Comparons les angles des segments.
 
 Dans notre géométrie d'origine, nous avons quatre segments, avec comme azimut, en radians :
 
-![QGIS segments azimuth](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/processing/qgis_segments_azimuth.svg){: .img-center loading=lazy }
+![QGIS segments azimuth](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_segments_azimuth.svg){: .img-center loading=lazy }
 
 Soit, en partant du bas gauche et en tournant dans le sens horaire :
 
