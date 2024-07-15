@@ -62,10 +62,12 @@ Dans nos SIG, les opérations de superposition (_overlay_ dans la langue de Shak
 
 #### Chargement des données
 
+![icône add layer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_icon_mActionAddOgrLayer.png){: .img-thumbnail-left }
+
 Toutes les données utilisées sont disponibles sur [mon GitHub](https://github.com/lbartoletti/lbartoletti.github.io/tree/master/assets/2024_intersection_intersects), et pour simplifier la compréhension et la transposition de ces données dans différents SIG, j'utiliserai les formats WKB et WKT[^1].
 
 !!! tip "autopromo"
-    Pour ceux qui veulent en savoir plus sur ces formats, pensez à suivre ou aimer pour être informé du prochain article dédié.
+    Pour celles et ceux qui veulent en savoir plus sur ces formats, pensez à suivre Geotribu sur les réseaux sociaux ou à vous abonner à notre [newsletter](https://geotribu.fr/newsletter/signup/) pour être informé du prochain article dédié :wink:.
 
 Revenons-en au fait, prenons un exemple avec une géométrie de type ligne, ici fermée, mais cela serait similaire pour un polygone (puisqu'un polygone est une ligne). Les géométries utilisées sont projetées dans le système de coordonnées EPSG:3946, projection de mon coin magnifique.
 
@@ -90,6 +92,8 @@ Ce qui nous donne :
 ![QGIS - Base and line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/base_line.png){: .img-center loading=lazy }
 
 #### Intersections de ces lignes
+
+![icône intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_icon_mIconSnappingIntersection.png){: .img-thumbnail-left }
 
 Nous avons désormais notre base pour étudier ce problème de précision/tolérance/intersection.
 
@@ -122,6 +126,8 @@ et
 respectivement `POINT(1981583.6205737416 5199333.301878075)`
 
 #### Création de lignes depuis ces intersections
+
+![icône création de ligne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_icon_mActionCaptureLine.png){: .img-thumbnail-left }
 
 QGIS propose différentes options pour s'accrocher. On en utilisera deux, l'accrochage sur un sommet et l'accrochage aux intersections.
 
@@ -190,6 +196,8 @@ En effet, on retrouve bien les coordonnées d'origine :
 
 #### Sélection des lignes intersectant la base
 
+![icône intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_icon_mIconSelectIntersect.png){: .img-thumbnail-left }
+
 Par conséquent, nous avons des lignes qui sont sur le point d'intersection. Si l'on souhaite vérifier l'accrochage, on utilise le prédicat « intersecte » de QGIS. Pour vérifier cela, utilisons l'outil « sélection par localisation » :
 
 ##### Le prédicat `intersects` avec `line_snap`
@@ -222,7 +230,7 @@ Pour aller plus loin, je réalise des tests aléatoires en essayant d'accrocher 
 
 ![Spiderman](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/test_line_spider.png){: .img-center loading=lazy }
 
-Dans notre franchise OSGeo, QGIS est un de nos superhéros, tel [Spider-Man](https://www.youtube.com/watch?v=i5P8lrgBtcU). Notre petite toile d'araignée manque de [glu](https://www.youtube.com/watch?v=rf6Yv4lMhhs), car notre accrochage n'est toujours pas bon :
+Dans notre franchise [OSGeo](https://www.osgeo.org), QGIS est un de nos superhéros, tel [Spider-Man](https://www.youtube.com/watch?v=i5P8lrgBtcU). Notre petite toile d'araignée manque de [glu](https://www.youtube.com/watch?v=rf6Yv4lMhhs), car notre accrochage n'est toujours pas bon :
 
 ![Spider selected](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/test_line_spider_selected.png){: .img-center loading=lazy }
 
@@ -286,7 +294,9 @@ Dans cette section, nous allons plonger dans les dessous des SIG en explorant le
 
 ### Qu'est-ce que GEOS ?
 
-GEOS (Geometry Engine - Open Source) est une bibliothèque C++ qui fournit des fonctions de calculs sur les géométries Simple Feature OGC. Elle est largement utilisée dans divers outils SIG, y compris QGIS, pour effectuer des calculs géométriques. GEOS est une implémentation de l'API de JTS (Java Topology Suite) qui vise à manipuler des géométries planes en 2D.
+![logo GEOS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geos.png){: .img-thumbnail-left }
+
+[GEOS (Geometry Engine - Open Source)](https://libgeos.org/) est une bibliothèque C++ qui fournit des fonctions de calculs sur les géométries Simple Feature OGC. Elle est largement utilisée dans divers outils SIG, y compris QGIS, pour effectuer des calculs géométriques. GEOS est une implémentation de l'API de JTS (Java Topology Suite) qui vise à manipuler des géométries planes en 2D.
 
 ![GEOS diagram from crunchy data](https://f.hubspotusercontent00.net/hubfs/2283855/geos-jts%20(1).png)
 (Source : <https://www.crunchydata.com/blog/performance-improvements-in-geos>)
@@ -482,6 +492,8 @@ Nous continuerons cette exploration dans les parties suivantes.
 
 ### GRASS : Le vénérable du SIG
 
+![logo GRASS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/grass.png){: .img-thumbnail-left }
+
 Comme j'ai déjà trahi les petits secrets internes, Julien m'avait ~~demandé~~ proposé de faire une version actualisée de cet [article](https://geotribu.fr/articles/2014/2014-11-13_corriger_automatiquement_geometries_invalides_qgis/). J'ai ~~procrastiné~~ volontairement, attendu jusqu'en 2024, pour fêter les 10 ans de l'article. Mais, ce n'est pas dans celui-là que je le ferai. Néanmoins, on va bien évidemment utiliser GRASS pour tester si notre cas est différent avec GRASS.
 
 Pour notre expérience avec GRASS, il faudra faire quelques manipulations, car on n'a pas la possibilité de faire directement nos calculs avec le WKB.
@@ -511,6 +523,8 @@ C'est au moins rassurant, car derrière `v.select` avec l'opérateur `intersects
 Il existe une autre façon de réaliser la sélection, mais je la garde pour la prochaine partie :wink:
 
 ### SAGA : Le Chevalier Oublié du SIG
+
+![logo SAGA](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/logo_saga.png){: .img-thumbnail-left }
 
 Si [SAGA](https://fr.wikipedia.org/wiki/Saga_(personnage)) est le plus puissant des chevaliers du zodiaque, [SAGA GIS](https://saga-gis.sourceforge.io/en/index.html) est malheureusement bien souvent le chevalier oublié du SIG. Il possède certains traitements qui ne sont pas disponibles dans QGIS et peut également se révéler utile pour d'autres existants.
 
@@ -585,6 +599,8 @@ Autant, je connais très bien PostGIS, autant, ma connaissance est limitée sur 
 
 ### PostGIS, même résultat que GEOS
 
+![logo PostGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgis.jpg){: .img-thumbnail-left }
+
 Le titre donne directement la conclusion, mais c'était déjà annoncé.
 
 Nous allons reprendre nos deux WKB :
@@ -658,6 +674,8 @@ Ils se passent quoi chez les autres ?
 
 ### Microsoft SQL Server
 
+![logo MS SQL Server](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/microsoft_sql_server.png){: .img-thumbnail-left }
+
 La syntaxe SQL Server est différente de celle de PostGIS, mais assez lisible. La « grosse » différence est l'ajout du « 0 x » dans le WKB d'entrée. Il s'agit en fait de sa représentation hexadécimale ; plus d'informations dans le prochain article.
 
 Voici cette requête :
@@ -697,6 +715,8 @@ Pour le WKB, il est « particulier », mais nous retrouvons nos coordonnées :
 SQL Server n'utilise pas GEOS, mais sa propre [bibliothèque](https://docs.lib.purdue.edu/ddad2011/8/). Encore une fois, le problème n'est pas dans le code de GEOS.
 
 ### ORACLE Spatial
+
+![logo ORACLE](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/oracle.png){: .img-thumbnail-left }
 
 ORACLE va nous donner des éléments intéressants. Passons directement à la requête :
 
@@ -1071,6 +1091,8 @@ Le premier sera FME, une sorte de boîte à outils de QGIS et l'autre ArcGis Pro
 
 ### FME
 
+![logo FME](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/FME.png){: .img-thumbnail-left }
+
 Pour FME, pas de blabla. J'insère les WKB, je fais une test d'intersection et je regarde si les points intersectent `line` et `base`.
 
 Vous pouvez trouver le fichier [fmw sur mon github](https://github.com/lbartoletti/lbartoletti.github.io/blob/master/assets/2024_intersection_intersects/data/fme_test_intersects.fmw)
@@ -1084,6 +1106,8 @@ KO !
 FME utilise, et contribue, aux outils open source. Néanmoins, même si le résultat est le même qu'avec GEOS, ce n'est pas cette bibliothèque qui est utilisée, mais une de leur conception. Encore une fois, le problème n'est donc pas GEOS.
 
 ### ESRI ArcGis Pro
+
+![logo ArcGis Pro](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/arcgis_pro.png){: .img-thumbnail-left }
 
 Comme pour QGIS, nous allons tester notre problème de deux façons : par les traitements via une couche SIG et directement avec le WKB.
 
@@ -1229,6 +1253,8 @@ On obtient bien le résultat souhaité. En fait, vous l'aurez peut-être compris
 
 ## Algorithmes et Code : comment cela fonctionne-t-il ?
 
+![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png){: .img-thumbnail-left }
+
 Disclaimer : Cet article s'adresse à tous les géomaticiens, quel que soit leur niveau de compétence. Cependant, ceux qui sont déjà familiers avec les erreurs comme 0.1 + 0.2 != 0.3 ne trouveront peut-être pas de nouvelles informations ici. Encore une fois, j'essaie de vulgariser. Si une version plus détaillée vous intéresse, je peux essayer d'en faire une.
 
 Ceci dit, comment qu'on calcule si un point C est sur un segment AB ? On calcule l'aire du triangle ABC !
@@ -1344,11 +1370,11 @@ Si l'on admet que C est le point d'intersection d'un segment avec AB, alors, en 
 Les ordinateurs utilisent majoritairement une représentation en [virgule flottante](https://fr.wikipedia.org/wiki/Virgule_flottante) pour stocker des nombres réels. C'est même la norme pour les coordonnées de nos géométries. Ce fameux double que l'on retrouve de partout. Toutefois son utilisation peut introduire des erreurs d'arrondi. J'ai indiqué une opération en introduction, 0.1 + 0.2 != 0.3. Comme 0.3 ne peut pas être représenté exactement cela conduit à des approximations. C'est un problème connu des informaticiens, au point d'avoir [son propre site](https://0.30000000000000004.com/).
 De même, je ne peux qu'encourager la lecture de l'article [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html).
 
-Il existe d'autres nombres sur des ordinateurs. Vous avez pu voir que 1 + 2 est bien égale à 3. Tandis que 0.1 + 0.2 n'est pas égale à 0.3.
+Il existe d'autres nombres sur des ordinateurs. Vous avez pu voir que 1 + 2 est bien égal à 3. Tandis que 0.1 + 0.2 n'est pas égal à 0.3.
 
 Les opérations sur les entiers sont toujours justes, dans leurs limites. Alors pourquoi ne pas utiliser que des entiers ?
 
-C'est plus ou moins ce qui est fait par d'autres bibliothèques de calculs. On pensera notamment à SFCGAL, mais comme on l'a vue, cela ne fait pas tout. L'enregistrement se faisant en double, la conversion va introduire des erreurs ; on détaillera cela plus bas.
+C'est plus ou moins ce qui est fait par d'autres bibliothèques de calculs. On pensera notamment à SFCGAL, mais comme on l'a vu, cela ne fait pas tout. L'enregistrement se faisant en double, la conversion va introduire des erreurs ; on détaillera cela plus bas.
 
 ### L'accumulation d'erreurs
 
@@ -1399,7 +1425,7 @@ Vous devriez avoir cette sortie :
 
 `Les nombres 0.30000000000000004 et 0.3 sont égaux avec une tolérance de 1e-09.`
 
-Pour une étude plus approfondie, je vous encourage à lire l'article[Comparing Two Floating-Point Numbers
+Pour une étude plus approfondie, je vous encourage à lire l'article [Comparing Two Floating-Point Numbers
 ](https://embeddeduse.com/2019/08/26/qt-compare-two-floats/).
 
 Comme vous avez pu le deviner, c'est ce que fait ArcGIS.
@@ -1423,7 +1449,7 @@ print(line.intersects(result))
 ```
 
 On a le résutat souhaité. Maintenant, essayons de reproduire ce qu'il se passe dans PostGIS.
-Dans notre requête, on calcul le point d'intersection avec CG_Intersection. A la fin de son traitement, elle va convertir sa géométrie, et ses nombres, en [double PostGIS](https://github.com/postgis/postgis/blob/d29ba84cb05988ab0aa1b2da3eef90108dfae1db/sfcgal/lwgeom_sfcgal.c#L559). Cette étape est la cause du problème. Cette conversion revient à cela en Python :
+Dans notre requête, on calcule le point d'intersection avec CG_Intersection. A la fin de son traitement, elle va convertir sa géométrie, et ses nombres, en [double PostGIS](https://github.com/postgis/postgis/blob/d29ba84cb05988ab0aa1b2da3eef90108dfae1db/sfcgal/lwgeom_sfcgal.c#L559). Cette étape est la cause du problème. Cette conversion revient à cela en Python :
 
 ```python
 # Création d'un point np en passant par des floats
@@ -1439,7 +1465,7 @@ print(line.intersects(np))
 
 Et, voilà, « l'imprécision » des doubles nous donne ce mauvais résultat.
 
-Une solution, qui n'est pas élégante et donc pas encore implémentée, serait d'avoir des fonctions qui s'enchaînent et ne fassent pas continuellement des va et vient entre les nombres. Avec une fonction CG_IntersectsIntersection comme suit, le résultat dans PostGIS sera juste.
+Une solution, qui n'est pas élégante et donc pas encore implémentée, serait d'avoir des fonctions qui s'enchaînent et ne fassent pas continuellement des va-et-vient entre les nombres. Avec une fonction CG_IntersectsIntersection comme suit, le résultat dans PostGIS sera juste.
 
 ```c
 PG_FUNCTION_INFO_V1(sfcgal_intersects_intersection);
@@ -1508,6 +1534,7 @@ Des versions modernes ont été reprises comme <https://github.com/mourner/robus
 JTS/GEOS utilise une version modifiée de ces calculs. Afin de ne pas allonger un article déjà bien long. Je n'ai pas montré d'exemple avec ces fonctions, mais le résultat est le même.
 
 Dans nos SIG, voici quelques liens vers les codes sources utilisés :
+
 QGIS
 
 - Les fonctions sur les calculs géométriques de [QGIS](https://github.com/qgis/QGIS/blob/0c41c22343ded7c6b6a7be0d382477128e837bd9/src/core/geometry/qgsgeometryutils_base.cpp)
@@ -1529,11 +1556,13 @@ Enfin, GEOS :
 
 ## Comment arrêter de trop penser et vivre une vie meilleure !
 
+![Globe cerveau](https://cdn.geotribu.fr/img/internal/icons-rdp-news/mentale.png){: .img-thumbnail-left }
+
 On a souvent ces interrogations sur les « irrégularités » rencontrées lors des opérations courantes dans les SIG : pourquoi les accrochages dans QGIS ne se positionnent-ils pas toujours exactement sur la géométrie ? Pourquoi les calculs de superposition manquent-ils de précision ? Et pourquoi les résultats peuvent-ils être incohérents ?
 
 Plutôt que de se perdre dans une quête de surprécision, voici quelques conseils pour améliorer votre expérience SIG et vivre une vie meilleure :
 
-Derrière cette expression « putaclic », voici en réalité quelques conseils ou expériences que j'ai pu rencontrer sur différents projets.
+Derrière cette expression « incitaclic », voici en réalité quelques conseils ou expériences que j'ai pu rencontrer sur différents projets.
 
 ### Arrêtez de chercher la surprécision
 
@@ -1547,7 +1576,7 @@ On est dans un monde infini, mais avec des ressources finies. Quelques arrondis 
 
 _Utilisez des tolérances appropriées dans vos calculs pour minimiser les effets des erreurs d'arrondi. Définissez des tolérances adaptées à l’échelle et aux objectifs de votre projet._
 
-En lien avec le nombre de chiffres après la virgule, vous pouvez également ajouter une tolérance. En France, les gestionnaires de réseaux savent qu'on les caractérise suivant 3 classes : A, B ou C. 10 cm, 40 cm, etc. Une bonne pratique est de se demander si le point n'est pas à une distance d'environ X cm. Sur PostGIS, cela va se caractériser par l'utilisation de ST_DWithin plutôt qu'un ST_Intersects.
+En lien avec le nombre de chiffres après la virgule, vous pouvez également ajouter une tolérance. En France, les gestionnaires de réseaux savent qu'on les caractérise suivant 3 classes : A, B ou C. 10 cm, 40 cm, etc. Une bonne pratique est de se demander si le point n'est pas à une distance d'environ X cm. Sur PostGIS, cela va se caractériser par l'utilisation de `ST_DWithin` plutôt qu'un `ST_Intersects`.
 
 ### Utilisez la topologie
 
