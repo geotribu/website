@@ -8,7 +8,7 @@ comments: true
 date: 2024-07-26
 description: "Synthèse de la journée annuelle Prodige qui s'est tenue en ligne le 3 juin 2024"
 icon: octicons/people-16
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/journee_annuelle_prodige_2024/prodige_au_service_des_territoires.webp
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/journee_annuelle_prodige_2024/prodige_au_service_des_territoires_bandeau.jpg
 license: beerware
 robots: index, follow
 tags:
