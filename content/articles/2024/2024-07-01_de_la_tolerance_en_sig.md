@@ -586,9 +586,9 @@ C'est normal d'une certaine façon. Cependant, le premier test avec crossing, no
 Si vous avez bien suivi les parties précédentes, vous savez que PostGIS va utiliser GEOS pour réaliser la plupart de ses opérations.
 En particulier, notre cas sur l'intersection et le prédicat « intersects », sera délégué à GEOS.
 
-![GEOS diagram from crunchy data](https://f.hubspotusercontent00.net/hubfs/2283855/geos-jts%20(1).png)
+![GEOS diagram from crunchy data](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/geos_diagram_dependent_project.webp){: .img-center loading=lazy }
 
-(Source : <https://www.crunchydata.com/blog/performance-improvements-in-geos>)
+> Source : [Performance Improvements in GEOS](https://www.crunchydata.com/blog/performance-improvements-in-geos), Paul Ramsey (2021, Crunchy Data)
 
 Dans un premier temps, nous allons vérifier que les résultats de PostGIS sont identiques à ceux de GEOS « natifs », puis nous comparerons avec d'autres bases de données propriétaires.
 
