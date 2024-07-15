@@ -327,8 +327,8 @@ Ici, nous avons utilisé le format WKT pour tester si les géométries `a` et `b
 
 Pour rappel, nos géométries sont les suivantes :
 
-- base : 0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341
-- line : 010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341
+- base : `0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341`
+- line : `010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341`
 
 Pour se faire la main, on va tester si nos géométries s'intersectent bien. On ne l'avait pas testé sur QGIS, mais cela semble évident.
 
