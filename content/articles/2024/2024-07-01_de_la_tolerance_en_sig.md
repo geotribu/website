@@ -873,7 +873,8 @@ Quels sont les points ? Les mêmes que jusqu'à présent. Mais, alors, que s'est
 
 Dans QGIS, il existe un mode d'édition que j'affectionne particulièrement, qui est… l'édition topologique.
 
-QGIS est spaghetti. Les données sont toutes dans ce plat de pâtes : les entités géographiques sont stockées individuellement sans relations topologiques explicites. Mais, bien que QGIS utilise un modèle de données de type « spaghetti », le logiciel propose des outils qui aident à maintenir la cohérence géométrique entre les couches.
+Le stockage dans QGIS est dit « spaghetti ». Les données sont toutes dans ce plat de pâtes : les entités géographiques sont stockées individuellement sans relations topologiques explicites.
+Mais, bien que QGIS utilise un modèle de données de type « spaghetti », le logiciel propose des outils qui aident à maintenir la cohérence géométrique entre les couches.
 
 En particulier, ici, nous allons utiliser la fonction d'édition topologique, qui, lors de chaque accrochage sur un segment, va ajouter des nœuds sur le segment accroché.
 
