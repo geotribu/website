@@ -615,7 +615,15 @@ Nous allons reprendre nos deux WKB :
 - ligne : `010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341`
 
 ```sql
- SELECT ST_Intersection(base, line) FROM ST_GeomFromWKB(decode('0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341', 'hex'), 3946) as base, ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) as line;
+SELECT 
+    ST_Intersection(base, line)
+FROM   
+    ST_GeomFromWKB(decode(
+        '0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341'
+        , 'hex'), 3946) AS base,
+    ST_GeomFromWKB(decode(
+        '010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341'
+        , 'hex'), 3946) AS line; 
 ```
 
 `01040000206A0F0000020000000101000000A899EFC8C83C3E4175E5698166D553410101000000B5EBDD9E8F3C3E416BF8515379D55341`
@@ -629,7 +637,15 @@ Si l'on enlève la partie « E », à savoir le SRID `0206A0F0`, on se retrouve 
 On peut directement le retrouver avec PostGIS en utilisant ST_AsBinary :
 
 ```sql
-SELECT ST_AsBinary(ST_Intersection(base, line)) FROM ST_GeomFromWKB(decode('0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341', 'hex'), 3946) as base, ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) as line;
+SELECT 
+    ST_AsBinary(ST_Intersection(base, line))
+FROM
+    ST_GeomFromWKB(decode(
+        '0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341'
+        , 'hex'), 3946) AS base,
+    ST_GeomFromWKB(decode(
+        '010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341'
+        , 'hex'), 3946) AS line; 
 ```
 
 `\x0104000000020000000101000000a899efc8c83c3e4175e5698166d553410101000000b5ebdd9e8f3c3e416bf8515379d55341`
@@ -637,7 +653,15 @@ SELECT ST_AsBinary(ST_Intersection(base, line)) FROM ST_GeomFromWKB(decode('0102
 Pour la géométrie lisible, utilisant le format textuel, cela se fait avec `ST_AsText` :
 
 ```sql
-SELECT ST_AsText(ST_Intersection(base, line)) FROM ST_GeomFromWKB(decode('0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341', 'hex'), 3946) as base, ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) as line;
+SELECT 
+    ST_AsText(ST_Intersection(base, line))
+FROM   
+    ST_GeomFromWKB(decode(
+        '0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341'
+        , 'hex'), 3946) AS base,
+    ST_GeomFromWKB(decode(
+        '010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341'
+        , 'hex'), 3946) AS line; 
 ```
 
 `MULTIPOINT((1981640.7849060092 5199258.022088398),(1981583.6205737416 5199333.301878075))`
@@ -652,7 +676,10 @@ base AS (
 line AS (
     SELECT ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) AS geom
 )
-SELECT ST_AsBinary(ST_Intersection(base.geom, line.geom)), ST_AsText(ST_Intersection(base.geom, line.geom)) FROM base, line
+SELECT 
+    ST_AsBinary(ST_Intersection(base.geom, line.geom)), ST_AsText(ST_Intersection(base.geom, line.geom)) 
+FROM
+    base, line;
 ```
 
 Retourne le même résultat :
@@ -670,7 +697,8 @@ line AS (
 SELECT
     ST_Intersects(base.geom, ST_Intersection(base.geom,line.geom)), ST_Intersects(line.geom, ST_Intersection(base.geom,line.geom)),
     ST_Distance(base.geom, ST_Intersection(base.geom,line.geom)), ST_Distance(line.geom, ST_Intersection(base.geom,line.geom))
-FROM base, line
+FROM
+    base, line;
 ```
 
 On retrouve bien, notre malheureux `false` et notre distance très proche de 0, mais pas 0.
@@ -699,23 +727,26 @@ SELECT
     line.geom.STIntersects(base.geom.STIntersection(line.geom)) AS Intersects_Line_Base,
     base.geom.STDistance(base.geom.STIntersection(line.geom)) AS Distance_Base_Line,
     line.geom.STDistance(base.geom.STIntersection(line.geom)) AS Distance_Line_Base
-FROM base, line;
+FROM
+    base, line;
 ```
 
 Le résultat, sur SQL Server 15.0.4153, remis en forme, est :
 
 `
 0x6A0F0000010402000000B5EBDD9E8F3C3E416BF8515379D55341A899EFC8C83C3E4175E5698166D55341020000000100000000010100000003000000FFFFFFFF0000000004000000000000000001000000000100000001,
-false,false,
-0,0.00000000023283064365386963
+false,
+false,
+0,
+0.00000000023283064365386963
 `
 
 Le résultat d'intersects est faux, et pourtant pour un des cas, la distance est égale à 0. Intéressant, est-ce vraiment un zéro ou tellement proche de 0, que ça retourne 0 ? Sinon, le second, est égal à celui de GEOS : 2.3283064365386963e-10
 
 Pour le WKB, il est « particulier », mais nous retrouvons nos coordonnées :
 
-- A899EFC8C83C3E4175E5698166D55341
-- B5EBDD9E8F3C3E416BF8515379D55341
+- `A899EFC8C83C3E4175E5698166D55341`
+- `B5EBDD9E8F3C3E416BF8515379D55341`
 
 SQL Server n'utilise pas GEOS, mais sa propre [bibliothèque](https://docs.lib.purdue.edu/ddad2011/8/). Encore une fois, le problème n'est pas dans le code de GEOS.
 
@@ -755,8 +786,10 @@ Dont le résultat, sur ORACLE XE 21, est :
 `"{2005,null,null,{1,1,2},{1981583.62057374,5199333.30187808,1981640.78490601,5199258.0220884}}",
 "MULTIPOINT ((1981583.62057374 5199333.30187808), (1981640.78490601 5199258.0220884))",
 0x0000000004000000020000000001413E3C8F9EDDEBAE4153D5795351F8700000000001413E3CC8C8EF99AB4153D5668169E577,
-FALSE,FALSE,
-0.00000000104125029291017,0.00000000023283064365387`
+FALSE,
+FALSE,
+0.00000000104125029291017,
+0.00000000023283064365387`
 
 Encore une fois ici, un résultat `false`. Comme PostGIS et SQL Server, on retrouve notre distance d'environ 2.3e-10, et une autre de 1e-9. Je trouve intéressant d'avoir ce petit écart sur une distance, mais je m'égare.
 
@@ -788,12 +821,13 @@ Donc, on a notre équivalent de `ST_Intersects` ou plus exactement `not ST_Disjo
 
 Il s'agit donc d'une tolérance dans le calcul du prédicat. Avec une valeur « extrême », comme ici, le résultat est faux. Cependant, si l'on utilise une valeur plus cohérente avec notre unité, par exemple `1e-6`, nous aurons enfin notre « bon » résultat tant attendu :
 
-`"{2005,null,null,{1,1,2},
-{1981583.62057374,5199333.30187808,1981640.78490601,5199258.0220884}}",
+`"{2005,null,null,{1,1,2},{1981583.62057374,5199333.30187808,1981640.78490601,5199258.0220884}}",
 "MULTIPOINT ((1981583.62057374 5199333.30187808), (1981640.78490601 199258.0220884))",
 0x0000000004000000020000000001413E3C8F9EDDEBAE4153D5795351F8700000000001413E3CC8C8EF99AB4153D5668169E577,
-TRUE,TRUE,
-0,0`
+TRUE,
+TRUE,
+0,
+0`
 
 Les géométries WKT et WKB sont identiques, en revanche, on obtient `TRUE` et `0`.
 
@@ -810,8 +844,10 @@ line AS (
     SELECT ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) AS geom
 )
 SELECT
-    ST_DWithin(base.geom, ST_Intersection(base.geom,line.geom), 1e-6), ST_DWithin(line.geom, ST_Intersection(base.geom,line.geom), 1e-6)
-FROM base, line;
+    ST_DWithin(base.geom, ST_Intersection(base.geom,line.geom), 1e-6), 
+    ST_DWithin(line.geom, ST_Intersection(base.geom,line.geom), 1e-6)
+FROM
+    base, line;
 ```
 
 Enfin, concernant la distance, ORACLE accepte un paramètre tolérance et donne un résultat différent suivant ce paramètre.
