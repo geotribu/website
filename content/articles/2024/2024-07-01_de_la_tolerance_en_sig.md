@@ -615,15 +615,15 @@ Nous allons reprendre nos deux WKB :
 - ligne : `010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341`
 
 ```sql
-SELECT 
+SELECT
     ST_Intersection(base, line)
-FROM   
+FROM  
     ST_GeomFromWKB(decode(
         '0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341'
         , 'hex'), 3946) AS base,
     ST_GeomFromWKB(decode(
         '010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341'
-        , 'hex'), 3946) AS line; 
+        , 'hex'), 3946) AS line;
 ```
 
 `01040000206A0F0000020000000101000000A899EFC8C83C3E4175E5698166D553410101000000B5EBDD9E8F3C3E416BF8515379D55341`
@@ -637,7 +637,7 @@ Si l'on enlève la partie « E », à savoir le SRID `0206A0F0`, on se retrouve 
 On peut directement le retrouver avec PostGIS en utilisant ST_AsBinary :
 
 ```sql
-SELECT 
+SELECT
     ST_AsBinary(ST_Intersection(base, line))
 FROM
     ST_GeomFromWKB(decode(
@@ -645,7 +645,7 @@ FROM
         , 'hex'), 3946) AS base,
     ST_GeomFromWKB(decode(
         '010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341'
-        , 'hex'), 3946) AS line; 
+        , 'hex'), 3946) AS line;
 ```
 
 `\x0104000000020000000101000000a899efc8c83c3e4175e5698166d553410101000000b5ebdd9e8f3c3e416bf8515379d55341`
@@ -653,15 +653,15 @@ FROM
 Pour la géométrie lisible, utilisant le format textuel, cela se fait avec `ST_AsText` :
 
 ```sql
-SELECT 
+SELECT
     ST_AsText(ST_Intersection(base, line))
-FROM   
+FROM  
     ST_GeomFromWKB(decode(
         '0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341'
         , 'hex'), 3946) AS base,
     ST_GeomFromWKB(decode(
         '010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341'
-        , 'hex'), 3946) AS line; 
+        , 'hex'), 3946) AS line;
 ```
 
 `MULTIPOINT((1981640.7849060092 5199258.022088398),(1981583.6205737416 5199333.301878075))`
@@ -676,8 +676,8 @@ base AS (
 line AS (
     SELECT ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) AS geom
 )
-SELECT 
-    ST_AsBinary(ST_Intersection(base.geom, line.geom)), ST_AsText(ST_Intersection(base.geom, line.geom)) 
+SELECT
+    ST_AsBinary(ST_Intersection(base.geom, line.geom)), ST_AsText(ST_Intersection(base.geom, line.geom))
 FROM
     base, line;
 ```
@@ -844,7 +844,7 @@ line AS (
     SELECT ST_GeomFromWKB(decode('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341', 'hex'), 3946) AS geom
 )
 SELECT
-    ST_DWithin(base.geom, ST_Intersection(base.geom,line.geom), 1e-6), 
+    ST_DWithin(base.geom, ST_Intersection(base.geom,line.geom), 1e-6),
     ST_DWithin(line.geom, ST_Intersection(base.geom,line.geom), 1e-6)
 FROM
     base, line;
