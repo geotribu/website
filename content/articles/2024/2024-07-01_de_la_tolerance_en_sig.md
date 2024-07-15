@@ -851,8 +851,8 @@ L'utilisation de l'outil `break` de `v.clean` dans ce cas précis sert à « net
 
 Que fait la fonction `break` ?
 
-    - Cela découpe les lignes à leurs points d'intersection.
-    - Cela crée de nouveaux nœuds aux endroits où les lignes se croisent.
+- Cela découpe les lignes à leurs points d'intersection.
+- Cela crée de nouveaux nœuds aux endroits où les lignes se croisent.
 
 On parle de nettoyage, car, initialement, les lignes de `base` et `line` se croisent sans être réellement connectées topologiquement. Le « nettoyage » consiste à établir une véritable connexion topologique à ces intersections.
 
