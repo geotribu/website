@@ -1306,26 +1306,29 @@ On obtient bien le résultat souhaité. En fait, vous l'aurez peut-être compris
 
 ![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png){: .img-thumbnail-left }
 
-Disclaimer : Cet article s'adresse à tous les géomaticiens, quel que soit leur niveau de compétence. Cependant, ceux qui sont déjà familiers avec les erreurs comme 0.1 + 0.2 != 0.3 ne trouveront peut-être pas de nouvelles informations ici. Encore une fois, j'essaie de vulgariser. Si une version plus détaillée vous intéresse, je peux essayer d'en faire une.
+Disclaimer : Cet article s'adresse à tous les géomaticiens, quel que soit leur niveau de compétence. Cependant, ceux qui sont déjà familiers avec les erreurs comme `#!python 0.1 + 0.2 != 0.3` ne trouveront peut-être pas de nouvelles informations ici. Encore une fois, j'essaie de vulgariser. Si une version plus détaillée vous intéresse, je peux essayer d'en faire une.
 
 Ceci dit, comment qu'on calcule si un point C est sur un segment AB ? On calcule l'aire du triangle ABC !
 
 Dit autrement, avec un peu plus de formalisme, pour déterminer si un point \( C \) est sur une droite définie par deux points \( A \) et \( B \), on peut utiliser la géométrie vectorielle. Voici une méthode simple pour le faire :
 
-1. **Coordonnées des points** : Supposons que les coordonnées des points \( A \), \( B \) et \( C \) soient respectivement \( (x_A, y_A) \), \( (x_B, y_B) \) et \( (x_C, y_C) \).
+1. **Coordonnées des points** : supposons que les coordonnées des points \( A \), \( B \) et \( C \) soient respectivement \( (x_A, y_A) \), \( (x_B, y_B) \) et \( (x_C, y_C) \).
 
-2. **Vecteur AB et AC** : Calculons les vecteurs \( $\overrightarrow{AB}$ \) et \( $\overrightarrow{AC}$ \) :
-   - \( $\overrightarrow{AB}$ = (x_B - x_A, y_B - y_A) \)
-   - \( $\overrightarrow{AC}$ = (x_C - x_A, y_C - y_A) \)
+1. **Vecteur AB et AC** : calculons les vecteurs \( \overrightarrow{AB} \) et \( \overrightarrow{AC} \) :
 
-3. **Déterminant** : Calculons le déterminant des vecteurs \( $\overrightarrow{AB}$ \) et \( $\overrightarrow{AC}$ \). Ce déterminant est donné par :
-   \[
-   $\text{D}$ = (x_B - x_A) $\cdot$ (y_C - y_A) - (y_B - y_A) $\cdot$ (x_C - x_A)
-   \]
+    - \( \overrightarrow{AB} = (x_B - x_A, y_B - y_A) \)
+    - \( \overrightarrow{AC} = (x_C - x_A, y_C - y_A) \)
 
-4. **Vérification** :
-   - Si \( $\text{D}$ = 0 \), alors les points \( A \), \( B \) et \( C \) sont colinéaires, ce qui signifie que \( C \) est sur la droite \( AB \).
-   - Si \( $\text{D} \neq 0$ \), alors \( C \) n'est pas sur la droite \( AB \).
+1. **Déterminant** : calculons le déterminant des vecteurs \( \overrightarrow{AB} \) et \( \overrightarrow{AC} \). Ce déterminant est donné par :
+
+    \[
+    \text{D} = (x_B - x_A) \cdot (y_C - y_A) - (y_B - y_A) \cdot (x_C - x_A)
+    \]
+
+1. **Vérification** :
+
+    - Si \( \text{D} = 0 \), alors les points \( A \), \( B \) et \( C \) sont colinéaires, ce qui signifie que \( C \) est sur la droite \( AB \).
+    - Si \( \text{D} \neq 0 \), alors \( C \) n'est pas sur la droite \( AB \).
 
 ### Exemple
 
@@ -1337,15 +1340,16 @@ Supposons que les coordonnées soient :
 
 Calculons les vecteurs :
 
-- \( $\overrightarrow{AB}$ = (4 - 1, 6 - 2) = (3, 4) \)
-- \( $\overrightarrow{AC}$ = (2 - 1, 3 - 2) = (1, 1) \)
+- \( \overrightarrow{AB} = (4 - 1, 6 - 2) = (3, 4) \)
+- \( \overrightarrow{AC} = (2 - 1, 3 - 2) = (1, 1) \)
 
 Calculons le déterminant :
+
 \[
-$\text{D} = 3 \cdot 1 - 4 \cdot 1 = 3 - 4 = -1$
+\text{D} = 3 \cdot 1 - 4 \cdot 1 = 3 - 4 = -1
 \]
 
-Puisque $\text{D} \neq 0$, le point \( C \) n'est pas sur la droite \( AB \).
+Puisque \( \text{D} \neq 0 \), le point \( C \) n'est pas sur la droite \( AB \).
 
 Voici une implémentation simple en Python :
 
