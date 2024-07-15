@@ -598,7 +598,6 @@ En particulier, notre cas sur l'intersection et le prédicat « intersects », s
 
 (Source : <https://www.crunchydata.com/blog/performance-improvements-in-geos>)
 
-
 Dans un premier temps, nous allons vérifier que les résultats de PostGIS sont identiques à ceux de GEOS « natifs », puis nous comparerons avec d'autres bases de données propriétaires.
 
 Autant, je connais très bien PostGIS, autant, ma connaissance est limitée sur les autres bases. Je vous prie de m'excuser s'il y a des erreurs dans les requêtes ou des façons de faire plus académiques. Si une erreur se glisse ou une meilleure méthode existe, surtout n'hésitez pas à laisser un commentaire, respectueux, et je corrigerai cela.
