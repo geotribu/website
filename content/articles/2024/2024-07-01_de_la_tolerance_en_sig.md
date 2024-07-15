@@ -1353,18 +1353,18 @@ Puisque \( \text{D} \neq 0 \), le point \( C \) n'est pas sur la droite \( AB \)
 
 Voici une implémentation simple en Python :
 
-```python
-def orient2d(x_a, y_a, x_b, y_b, x_c, y_c):
-    """
-    Calcule le double de l'aire du triangle formé par les points a, b et c.
+```python title="Calcul aire et orientation d'un triangle"
+def orient2d(x_a: float, y_a: float, x_b: float, y_b: float, x_c: float, y_c: float):
+    """Calcule le double de l'aire du triangle formé par les points a, b et c.
+
     Si le résultat est positif, les points sont orientés dans le sens antihoraire.
     Si le résultat est négatif, les points sont orientés dans le sens horaire.
     Si le résultat est nul, les points sont alignés.
     """
     return (x_b - x_a) * (y_c - y_a) - (y_b - y_a) * (x_c - x_a)
 
-def shoelace_area(x_a, y_a, x_b, y_b, x_c, y_c):
-    # Calcul de l'aire en utilisant la formule de la shoelace
+def shoelace_area(x_a: float, y_a: float, x_b: float, y_b: float, x_c: float, y_c: float):
+    """Calcul de l'aire en utilisant la formule de la shoelace."""  
     area = 0.5 * (x_a * (y_b - y_c) + x_b * (y_c - y_a) + x_c * (y_a - y_b))
     return area
 
