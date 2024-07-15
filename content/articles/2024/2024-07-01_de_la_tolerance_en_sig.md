@@ -1390,7 +1390,7 @@ print(f"L'aire du triangle est : {area}")
 print(f"L'orientation du triangle BAC est : {orient}")
 ```
 
-On retrouve un nombre positif. Le point C est de l'autre côté de l'axe AB, dit autrement, AB et C ne sont pas collinéaires.
+On retrouve un nombre positif. Le point C est de l'autre côté de l'axe AB, dit autrement, AB et C ne sont pas colinéaires.
 
 ```python title="Exemple d'utilisation avec des points colinéaires"
 x_a, y_a = 1, 1
