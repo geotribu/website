@@ -64,7 +64,7 @@ Dans nos SIG, les opérations de superposition (_overlay_ dans la langue de Shak
 
 ![icône add layer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_icon_mActionAddOgrLayer.png){: .img-thumbnail-left }
 
-Toutes les données utilisées sont disponibles sur [mon GitHub](https://github.com/lbartoletti/lbartoletti.github.io/tree/master/assets/2024_intersection_intersects), et pour simplifier la compréhension et la transposition de ces données dans différents SIG, j'utiliserai les formats WKB et WKT[^1].
+Toutes les données utilisées sont disponibles sur [mon GitHub](https://github.com/lbartoletti/lbartoletti.github.io/tree/master/assets/2024_intersection_intersects), et pour simplifier la compréhension et la transposition de ces données dans différents SIG, j'utiliserai les formats WKB et WKT[^wkt_wkb].
 
 !!! tip "autopromo"
     Pour celles et ceux qui veulent en savoir plus sur ces formats, pensez à suivre Geotribu sur les réseaux sociaux ou à vous abonner à notre [newsletter](https://geotribu.fr/newsletter/signup/) pour être informé du prochain article dédié :wink:.
@@ -280,13 +280,6 @@ Cela fonctionne ! Mais pourquoi ?
 
 Et bien, nous verrons cela plus tard.
 
-[^1]:
-
-- **WKB (Well-Known Binary)** : Le WKB est un format binaire utilisé pour représenter des objets géométriques de manière compacte et efficace, couramment utilisé dans les bases de données géospatiales pour le stockage et l'échange de données géographiques.
-- **WKT (Well-Known Text)** : Le WKT est un format texte utilisé pour représenter des objets géométriques de manière lisible par l'humain. Il est souvent utilisé pour le partage et l'affichage de données géographiques.
-
-Pour plus d'informations, consultez la page [Wikipedia](https://fr.wikipedia.org/wiki/Well-known_text).
-
 ## GEOS au cœur de QGIS
 
 Dans la partie précédente, nous avons posé le problème : le résultat d'une intersection n'intersecte pas toujours la donnée d'origine. Cette réalité peut surprendre les nouveaux utilisateurs de SIG et frustrer les plus expérimentés qui cherchent une précision dans leurs analyses spatiales.
@@ -483,12 +476,10 @@ distance
 
 On remarque que le résultat n'est pas 0, mais très proche. C'est en gros 0, mais y'a une « blague » vers 10 chiffres après la virgule.
 Pour celles et ceux que cela intéresse, je reviendrai sur l'importance du calcul dans la partie algorithme.
-En attendant, on observe que QGIS donne le même résultat que GEOS. Ce qui n'est pas étonnant puisque derrière QGIS [^1], c'est GEOS.
+En attendant, on observe que QGIS donne le même résultat que GEOS. Ce qui n'est pas étonnant puisque derrière QGIS [^qgis_geom], c'est GEOS.
 
 C'est donc GEOS qui est faux ? Non, GEOS donne le « bon » résultat, mais la vérité est ailleurs.
 Nous continuerons cette exploration dans les parties suivantes.
-
-[^1] Comme expliqué avant, QGIS réalise certains calculs, identiques à ceux de GEOS, pourtant sans utiliser cette bibliothèque. En particulier, l'accrochage ne repose pas sur GEOS, mais sur des calculs équivalents. Je simplifie ici pour éviter de perdre les moins connaisseurs de cet écosystème.
 
 ## Et les autres SIG Open Source ? Comparaisons avec GRASS et SAGA
 
@@ -1669,3 +1660,16 @@ Et pour finir, merci à mes relecteurs de GeoTribu, à Sandro Santilli (correcti
 <!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
+
+<!-- Notes de bas de page -->
+
+[^qgis_geom]: Comme expliqué avant, QGIS réalise certains calculs, identiques à ceux de GEOS, pourtant sans utiliser cette bibliothèque. En particulier, l'accrochage ne repose pas sur GEOS, mais sur des calculs équivalents. Je simplifie ici pour éviter de perdre les moins connaisseurs de cet écosystème.
+
+<!-- markdownlint-disable   MD007 MD032 -->
+[^wkt_wkb]: formats standards de représentation des géométries :
+
+    - **WKB (Well-Known Binary)** : Le WKB est un format binaire utilisé pour représenter des objets géométriques de manière compacte et efficace, couramment utilisé dans les bases de données géospatiales pour le stockage et l'échange de données géographiques.
+    - **WKT (Well-Known Text)** : Le WKT est un format texte utilisé pour représenter des objets géométriques de manière lisible par l'humain. Il est souvent utilisé pour le partage et l'affichage de données géographiques.
+
+    Pour plus d'informations, consultez la page [Wikipedia](https://fr.wikipedia.org/wiki/Well-known_text).
+<!-- markdownlint-enable  MD007 MD032 -->
