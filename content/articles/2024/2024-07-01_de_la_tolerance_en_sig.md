@@ -299,6 +299,7 @@ Dans cette section, nous allons plonger dans les dessous des SIG en explorant le
 [GEOS (Geometry Engine - Open Source)](https://libgeos.org/) est une bibliothèque C++ qui fournit des fonctions de calculs sur les géométries Simple Feature OGC. Elle est largement utilisée dans divers outils SIG, y compris QGIS, pour effectuer des calculs géométriques. GEOS est une implémentation de l'API de JTS (Java Topology Suite) qui vise à manipuler des géométries planes en 2D.
 
 ![GEOS diagram from crunchy data](https://f.hubspotusercontent00.net/hubfs/2283855/geos-jts%20(1).png)
+
 (Source : <https://www.crunchydata.com/blog/performance-improvements-in-geos>)
 
 ### Le rôle de GEOS dans QGIS
@@ -592,6 +593,11 @@ C'est normal d'une certaine façon. Cependant, le premier test avec crossing, no
 
 Si vous avez bien suivi les parties précédentes, vous savez que PostGIS va utiliser GEOS pour réaliser la plupart de ses opérations.
 En particulier, notre cas sur l'intersection et le prédicat « intersects », sera délégué à GEOS.
+
+![GEOS diagram from crunchy data](https://f.hubspotusercontent00.net/hubfs/2283855/geos-jts%20(1).png)
+
+(Source : <https://www.crunchydata.com/blog/performance-improvements-in-geos>)
+
 
 Dans un premier temps, nous allons vérifier que les résultats de PostGIS sont identiques à ceux de GEOS « natifs », puis nous comparerons avec d'autres bases de données propriétaires.
 
