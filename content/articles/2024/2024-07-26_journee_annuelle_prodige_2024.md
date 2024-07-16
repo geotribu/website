@@ -15,7 +15,6 @@ tags:
     - Prodige
     - Afigéo
     - CNIG
-    - Plateformes de données
 ---
 
 # Journée annuelle Prodige 2024
