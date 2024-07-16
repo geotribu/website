@@ -1014,7 +1014,7 @@ En réalité, pas totalement, mais j'ai volontairement arrondi à trois chiffres
 Pourquoi ai-je fait ça ? Marre de me trimbaler autant de chiffres.
 Et, puis, est-ce vraiment utile d'avoir autant de chiffres après la virgule ? :wink:
 
-## Approche Alternative : Exploration de méthodes alternatives telles que l'utilisation de SFCGAL pour des calculs plus robustes
+## Approche alternative : exploration de méthodes alternatives telles que l'utilisation de SFCGAL pour des calculs plus robustes
 
 Dans les parties précédentes, nous avons montré que le « intersects » d'une intersection, était faux, sauf avec la topologie ou la tolérance.
 
@@ -1027,6 +1027,8 @@ Pour cela, laissez-moi introduire SFCGAL.
 > SFCGAL fournit des types de géométries et des opérations conformes aux normes, qui peuvent être accédées via ses API C ou C++. PostGIS utilise l'API C pour exposer certaines fonctions de SFCGAL dans les bases de données spatiales (cf. manuel de PostGIS).
 >
 > Les coordonnées des géométries ont une représentation en nombre rationnel exact et peuvent être en 2D ou en 3D.
+
+![logo SFCGAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sfcgal.webp){: .img-center loading=lazy }
 
 En gros, SFCGAL, fait la géométrie comme on connaît dans nos SIG, mais avec le moteur de CGAL et surtout des nombres « différents » : rationnel exact. L'explication plus détaillée sera donnée dans la partie algorithme et code, mais considérons que ce sont des fractions.
 
