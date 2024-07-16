@@ -1014,25 +1014,29 @@ En réalité, pas totalement, mais j'ai volontairement arrondi à trois chiffres
 Pourquoi ai-je fait ça ? Marre de me trimbaler autant de chiffres.
 Et, puis, est-ce vraiment utile d'avoir autant de chiffres après la virgule ? :wink:
 
-## Approche alternative : exploration de méthodes alternatives telles que l'utilisation de SFCGAL pour des calculs plus robustes
+## Approche alternative : utilisation de SFCGAL pour des calculs plus robustes
 
-Dans les parties précédentes, nous avons montré que le « intersects » d'une intersection, était faux, sauf avec la topologie ou la tolérance.
-
+Dans les parties précédentes, nous avons montré que le « intersects » d'une intersection, était faux, sauf avec la topologie ou la tolérance.  
 Nous allons maintenant utiliser une « approche alternative » dans les calculs. Promis, je garde le code pour une autre partie à la lecture optionnelle.
 
-Pour cela, laissez-moi introduire SFCGAL.
+Pour cela, laissez-moi introduire [SFCGAL](https://sfcgal.gitlab.io/SFCGAL/).
 
-> SFCGAL est une bibliothèque d'enveloppe C++ autour de [CGAL](https://www.cgal.org/) avec pour objectif de supporter l'ISO 19107:2013 et l'accès aux fonctions simples (Simple Features Access) 1.2 de l'OGC pour les opérations en 3D.
->
-> SFCGAL fournit des types de géométries et des opérations conformes aux normes, qui peuvent être accédées via ses API C ou C++. PostGIS utilise l'API C pour exposer certaines fonctions de SFCGAL dans les bases de données spatiales (cf. manuel de PostGIS).
->
-> Les coordonnées des géométries ont une représentation en nombre rationnel exact et peuvent être en 2D ou en 3D.
+Il s'agit d'une bibliothèque logicielle C++ sous licence [LGPL2+](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html) construite comme une surcouche de [CGAL](https://www.cgal.org/) avec pour objectif de supporter l'[ISO 19107:2013](https://www.iso.org/fr/standard/26012.html) et la norme OGC [Simple Features Access](www.opengeospatial.org/standards/sfa) 1.2 de l'OGC pour les opérations en 3D.
 
-![logo SFCGAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sfcgal.webp){: .img-center loading=lazy }
+Concrètement, SFCGAL fournit des types de géométries et des opérations conformes aux normes, auxquels on accède via ses API [C](https://sfcgal.gitlab.io/SFCGAL/doxygen/group__capi.html) ou [C++](https://sfcgal.gitlab.io/SFCGAL/doxygen/group__public__api.html).
 
-En gros, SFCGAL, fait la géométrie comme on connaît dans nos SIG, mais avec le moteur de CGAL et surtout des nombres « différents » : rationnel exact. L'explication plus détaillée sera donnée dans la partie algorithme et code, mais considérons que ce sont des fractions.
+Par exemple, PostGIS utilise l'API C pour exposer certaines fonctions de SFCGAL dans les bases de données spatiales (cf. [manuel de PostGIS](https://postgis.net/docs/reference.html#reference_sfcgal)).
 
-On utilisera SFCGAL de deux façons, pour comparer leurs résultats, avec Python et avec PostGIS.
+Les coordonnées des géométries ont une représentation en [nombre rationnel exact](https://fr.wikipedia.org/wiki/Nombre_rationnel) et peuvent être en 2D ou en 3D.
+
+En gros, SFCGAL, fait la géométrie comme on connaît dans nos SIG, mais avec le moteur de CGAL et surtout des nombres « différents » : rationnel exact.   
+L'explication plus détaillée sera donnée dans [la partie algorithme et code](#algorithmes-et-code-comment-cela-fonctionne-t-il), mais considérons que ce sont des fractions.
+
+On utilisera SFCGAL de deux façons, pour comparer leurs résultats :
+
+- avec Python
+- et avec PostGIS.
+
 
 ### Python avec PySFCGAL
 
