@@ -808,7 +808,7 @@ Toutefois, à la représentation après la virgule près, on a le même résulta
 | ORACLE | 1981583.62057374 | 5199333.30187808 | 1981640.78490601 | 5199258.0220884 |
 | PostGIS | 1981583.6205737416 | 5199333.301878075 | 1981640.7849060092 | 5199258.022088398 |
 
-J'ai indiqué en introduction qu'ORACLE [allait] nous donner des éléments intéressants, mais pour l'instant, c'est comme les autres ? Oui, mais, il y a un paramètre que je n'ai pas encore expliqué. D'où sort le `0.00000000001` ?
+J'ai indiqué en introduction qu'ORACLE allait nous donner des éléments intéressants, mais pour l'instant, c'est comme les autres ? Oui, mais, il y a un paramètre que je n'ai pas encore expliqué. D'où sort le `0.00000000001` ?
 
 Sur ma version, je n'ai pas de `ST_Intersects` ou un `SDO_Intersects`, je dois utiliser [`RELATE`](https://docs.oracle.com/en/database/oracle/oracle-database/21/spatl/SDO_GEOM-reference.html#GUID-E1209A71-F5D8-42A9-A93E-72657B115579). Nous avons également cela avec [PostGIS](https://postgis.net/docs/ST_Relate.html) (et GEOS). `ANYINTERACT` retourne `TRUE` si les objets ne sont pas disjoints, c'est ce que l'on veut.
 Donc, on a notre équivalent de `ST_Intersects` ou plus exactement `not ST_Disjoint`. Toutefois, cela ne nous dit toujours pas ce qu'est ce `0.00000000001`. Vous souvenez-vous du titre principal de cette série ? [La tolérance](https://docs.oracle.com/en/database/oracle/oracle-database/21/spatl/spatial-concepts.html#GUID-7469388B-6D23-4294-904F-78CA3B7191D3).
@@ -1021,7 +1021,7 @@ Nous allons maintenant utiliser une « approche alternative » dans les calculs.
 
 Pour cela, laissez-moi introduire [SFCGAL](https://sfcgal.gitlab.io/SFCGAL/).
 
-Il s'agit d'une bibliothèque logicielle C++ sous licence [LGPL2+](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html) construite comme une surcouche de [CGAL](https://www.cgal.org/) avec pour objectif de supporter l'[ISO 19107:2013](https://www.iso.org/fr/standard/26012.html) et la norme OGC [Simple Features Access](www.opengeospatial.org/standards/sfa) 1.2 de l'OGC pour les opérations en 3D.
+Il s'agit d'une bibliothèque logicielle C++ sous licence [LGPL2+](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html) construite comme une surcouche de [CGAL](https://www.cgal.org/) avec pour objectif de supporter l'[ISO 19107:2013](https://www.iso.org/fr/standard/26012.html) et la norme OGC [Simple Features Access](https://www.opengeospatial.org/standards/sfa/) 1.2 de l'OGC pour les opérations en 3D.
 
 Concrètement, SFCGAL fournit des types de géométries et des opérations conformes aux normes, auxquels on accède via ses API [C](https://sfcgal.gitlab.io/SFCGAL/doxygen/group__capi.html) ou [C++](https://sfcgal.gitlab.io/SFCGAL/doxygen/group__public__api.html).
 
@@ -1029,14 +1029,13 @@ Par exemple, PostGIS utilise l'API C pour exposer certaines fonctions de SFCGAL 
 
 Les coordonnées des géométries ont une représentation en [nombre rationnel exact](https://fr.wikipedia.org/wiki/Nombre_rationnel) et peuvent être en 2D ou en 3D.
 
-En gros, SFCGAL, fait la géométrie comme on connaît dans nos SIG, mais avec le moteur de CGAL et surtout des nombres « différents » : rationnel exact.   
+En gros, SFCGAL, fait la géométrie comme on connaît dans nos SIG, mais avec le moteur de CGAL et surtout des nombres « différents » : rationnel exact.
 L'explication plus détaillée sera donnée dans [la partie algorithme et code](#algorithmes-et-code-comment-cela-fonctionne-t-il), mais considérons que ce sont des fractions.
 
 On utilisera SFCGAL de deux façons, pour comparer leurs résultats :
 
 - avec Python
 - et avec PostGIS.
-
 
 ### Python avec PySFCGAL
 
