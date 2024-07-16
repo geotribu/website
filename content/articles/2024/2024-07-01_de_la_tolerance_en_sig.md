@@ -1038,7 +1038,7 @@ On utilisera SFCGAL de deux façons, pour comparer leurs résultats, avec Python
 
 [PySFCGAL](https://gitlab.com/sfcgal/pysfcgal) est une interface Python pour la bibliothèque SFCGAL, en cours de développement et de packaging. À défaut d'avoir une application `sfcgalop` à la `geosop`  (au moment de la publication de l'article, celle-ci est en cours de développement) l'interface Python permet de faire des calculs plus facilement qu'en C ou C++. Promis, c'est « lisible » comme code.
 
-Sur mon système FreeBSD, voici, comment je l'utilise pour notre test :
+Sur mon système FreeBSD, voici comment je l'utilise pour notre test :
 
 ```python
 # Import de la bibliothèque
