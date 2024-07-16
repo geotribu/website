@@ -1040,7 +1040,7 @@ On utilisera SFCGAL de deux façons, pour comparer leurs résultats, avec Python
 
 Sur mon système FreeBSD, voici comment je l'utilise pour notre test :
 
-```python
+```python title="Lecture de WKB avec PySFCGAL"
 # Import de la bibliothèque
 from pysfcgal import sfcgal
 # Lecture du wkb base
