@@ -1051,7 +1051,7 @@ line = sfcgal.read_wkb('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db77
 
 Notre calcul d'intersection se fera simplement avec cette ligne :
 
-```python
+```python title="Calcul d'intersection avec PySFCGAL"
 # Calcul de l'intersection
 result = base.intersection(line)
 # Affiche du WKT avec 10 décimales
