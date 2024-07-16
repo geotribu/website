@@ -42,7 +42,7 @@ Alors que je préparais un article sur la topologie que je dois à [Julien](http
 
 Dans les chapitres suivants, nous explorerons ensemble :
 
-- Le constat : les calculs ne sont pas bons.
+- [Le constat : les calculs ne sont pas bons](./2024-07-18_de-la-tolerance-en-sig-geometrie-02-calculs-intersects-qgis-pas-bons.md).
 - Fonctionnement interne de QGIS et GEOS : comment ces outils gèrent-ils les données et les opérations géométriques.
 - Et les autres SIG Open Source ? Comparaisons avec GRASS et SAGA.
 - Et dans les bases de données ? Comparaisons de SQL Server, Oracle et PostGIS.

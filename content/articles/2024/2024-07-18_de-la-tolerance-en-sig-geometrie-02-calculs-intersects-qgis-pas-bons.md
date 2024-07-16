@@ -1,29 +1,24 @@
 ---
-title: De la tolérance en SIG
-subtitle: La vraie tolérance consiste à voir large sans perdre la mesure (c) Barratin
+title: "Le constat : les calculs géométriques ne sont pas bons"
+subtitle: "Série : De la tolérance en SIG - partie 1"
 authors:
     - Loïc Bartoletti
 categories:
     - article
 comments: true
-date: 2024-07-05
-description: "Un tour d'horizon des SIG sur la précision des calculs géométriques."
+date: 2024-07-18
+description: "Deuxième partie du tour d'horizon des SIG sur la précision des calculs géométriques : analyse des opérations de superposition et de leurs limites."
 icon: material/vector-intersection
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_annonce.png
 license: beerware
 robots: index, follow
 tags:
     - analyse
-    - ArcGIS
-    - FME
     - géométrie
-    - GEOS
-    - GRASS
-    - PostGIS
     - QGIS
-    - SAGA
-    - SFCGAL
     - topologie
+    - WKB
+    - WKT
 ---
 
 # Le constat : les calculs ne sont pas bons
@@ -31,6 +26,16 @@ tags:
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 Dans nos SIG, les opérations de superposition (_overlay_ dans la langue de Shakespeare) telles que les intersections, les unions, les différences, etc. ainsi que l'accrochage utilisé par les dessinateurs, sont omniprésentes. Ces processus s'appuient sur des calculs similaires, simplifiés ici pour une meilleure compréhension dans cette présentation générale.
+
+Cet article est la deuxième partie de la série d'été sur la gestion de la géométrie dans les SIG.
+
+[De la tolérance en SIG :fontawesome-solid-backward-step:](2024-07-16_de-la-tolerance-en-sig-geometrie-01-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
+{: align=middle }
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
+----
 
 ## Identification du problème
 
