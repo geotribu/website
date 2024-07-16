@@ -799,7 +799,7 @@ Ce qui nous intéresse ici est le code `2005` qui veut dire MultiPoint 2D, ainsi
 On retrouve cette information avec la représentation WKT à laquelle nous sommes habitués :
 `MULTIPOINT ((1981583.62057374 5199333.30187808), (1981640.784906015199258.0220884))`
 
-Je ne vais pas m'étendre sur le WKB qui est « étrange », il est en Big Endian, alors que jusqu'à présent, je n'ai eu que du Little Endian ; encore une fois plus d'explications dans l'article sur le WKB/WKT. Néanmoins, on a quelques différences entre ceux-ci, sans-doute liées à la précision du résultat ; n'étant pas expert ORACLE, il me manque des éléments de compréhension et des tests à mener.
+Je ne vais pas m'étendre sur le WKB qui est « étrange », il est en Big Endian[^big_little_endian], alors que jusqu'à présent, je n'ai eu que du Little Endian[^big_little_endian] ; encore une fois plus d'explications dans l'article sur le WKB/WKT. Néanmoins, on a quelques différences entre ceux-ci, sans-doute liées à la précision du résultat ; n'étant pas expert ORACLE, il me manque des éléments de compréhension et des tests à mener.
 
 Toutefois, à la représentation après la virgule près, on a le même résultat :
 
@@ -1673,6 +1673,8 @@ Et pour finir, merci à mes relecteurs de GeoTribu, à Sandro Santilli (correcti
 {% include "licenses/beerware.md" %}
 
 <!-- Notes de bas de page -->
+
+[^big_little_endian]: ou en Français, gros- et petit-boutisme, sont l'ordre dans lequel les octets sont placés. Pour plus d'informations, je vous invite à regarder [la page Wikipedia](https://fr.wikipedia.org/wiki/Boutisme)
 
 [^qgis_geom]: Comme expliqué avant, QGIS réalise certains calculs, identiques à ceux de GEOS, pourtant sans utiliser cette bibliothèque. En particulier, l'accrochage ne repose pas sur GEOS, mais sur des calculs équivalents. Je simplifie ici pour éviter de perdre les moins connaisseurs de cet écosystème.
 
