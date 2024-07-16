@@ -9,7 +9,7 @@ comments: true
 date: 2024-07-18
 description: "Deuxième partie du tour d'horizon des SIG sur la précision des calculs géométriques : analyse des opérations de superposition et de leurs limites."
 icon: material/vector-intersection
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_annonce.png
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_01_calculs.png
 license: beerware
 robots: index, follow
 tags:
@@ -26,6 +26,8 @@ tags:
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 Dans nos SIG, les opérations de superposition (_overlay_ dans la langue de Shakespeare) telles que les intersections, les unions, les différences, etc. ainsi que l'accrochage utilisé par les dessinateurs, sont omniprésentes. Ces processus s'appuient sur des calculs similaires, simplifiés ici pour une meilleure compréhension dans cette présentation générale.
+
+![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : calculs - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_01_calculs.png){: .img-center loading=lazy }
 
 Cet article est la deuxième partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
