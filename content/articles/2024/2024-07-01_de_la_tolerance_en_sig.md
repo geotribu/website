@@ -266,7 +266,7 @@ Et, non, ce n'est pas l'algo de transect qui est tout buggué.
 
 Mais, comme on dit… "Caramba ! Encore raté !"
 
-![carambar](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/carramba.jpg?raw=true)
+![carambar](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/carramba.jpg){: .img-center loading=lazy }
 
 Et si je teste sur la géométrie densifiée ?
 
@@ -372,16 +372,26 @@ intersection
 
 Notre résultat est : `0104000000020000000101000000A899EFC8C83C3E4175E5698166D553410101000000B5EBDD9E8F3C3E416BF8515379D55341`
 
-Vous comprendrez mieux l'opération qui va suivre grâce à la lecture de l'article sur le WKT et WKB. En attendant, je vous demande de me faire confiance.
-Ce WKB est la représentation d'un multipoint. On peut en extraire les coordonnées des deux points suivants :
+Vous comprendrez mieux l'opération qui va suivre grâce à la lecture de l'article sur le WKT et WKB[^wkt_wkb]. En attendant, je vous demande de me faire confiance :wink:.
 
-- `0101000000A899EFC8C83C3E4175E5698166D55341`
-- `0101000000B5EBDD9E8F3C3E416BF8515379D55341`
+<!-- markdownlint-disable MD046 -->
+!!! info "En attendant l'article WKT/B : décomposer un WKB"
+    Lorsque l'on lit le WKB d'un multipoint comme celui-ci `0104000000020000000101000000A899EFC8C83C3E4175E5698166D553410101000000B5EBDD9E8F3C3E416BF8515379D55341`, on voit... que dalle ! Hum certes.  
+    Allez, prenez un peu de géo-collyre et à y regarder de plus près, on y distingue nos deux points dedans, chacun "préfixé" par `0101000000` (le `01` pour Little endian[^big_little_endian] et `01000000` pour indiquer que c'est un point 2D) :
 
-Ce qui équivaut, moyennant la différence, sans conséquence, entre majuscules et minuscules, à :
+    - `0101000000` `A899EFC8C83C3E4175E5698166D55341`
+    - `0101000000` `B5EBDD9E8F3C3E416BF8515379D55341`
 
-- `0101000000a899efc8c83c3e4175e5698166d55341`
-- `0101000000b5ebdd9e8f3c3e416bf8515379d55341`
+    Ce qui équivaut, moyennant la différence, sans conséquence, entre majuscules et minuscules, à :
+
+    - `0101000000``a899efc8c83c3e4175e5698166d55341`
+    - `0101000000``b5ebdd9e8f3c3e416bf8515379d55341`
+
+    Ainsi, on peut continuer de décomposer le WKB pour obtenir les coordonnées du premier point  `0101000000``A899EFC8C83C3E4175E5698166D55341` qui, une fois le "préfixe" `0101000000` retiré, est une paire de 16 caractères :
+
+    - `a899efc8c83c3e41`
+    - `75e5698166d55341`
+<!-- markdownlint-enable MD046 -->
 
 Très bien. Est-ce que le point intersecte ou touche une des géométries d'origine ?
 
