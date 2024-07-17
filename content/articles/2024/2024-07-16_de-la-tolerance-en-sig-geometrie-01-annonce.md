@@ -42,7 +42,7 @@ Alors que je préparais un article sur la topologie que je dois à [Julien](http
 
 Dans les chapitres suivants, nous explorerons ensemble :
 
-- Le constat : les calculs ne sont pas bons.
+- [Le constat : les calculs ne sont pas bons](./2024-07-18_de-la-tolerance-en-sig-geometrie-02-calculs-intersects-qgis-pas-bons.md).
 - Fonctionnement interne de QGIS et GEOS : comment ces outils gèrent-ils les données et les opérations géométriques.
 - Et les autres SIG Open Source ? Comparaisons avec GRASS et SAGA.
 - Et dans les bases de données ? Comparaisons de SQL Server, Oracle et PostGIS.
@@ -54,7 +54,7 @@ Dans les chapitres suivants, nous explorerons ensemble :
 
 Êtes-vous prêts pour l'aventure ? Sortons nos SIG !
 
-![Série d'été 2024 de Loïc Bartoletti - Les Géométries- Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_annonce.png){: .img-center loading=lazy }
+![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : annonce - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_annonce.png){: .img-center loading=lazy }
 
 <!-- geotribu:authors-block -->
 
