@@ -28,7 +28,7 @@ T'as découvert un super géo-outil et t'aimerais faire profiter ta découverte 
 T'es tombé sur un super article dans une autre langue et t'aimerais rendre cet article disponible pour les francophones ?  
 Tu travailles sur un projet sympa et t'aimerais le présenter et le diffuser ?  
 T'as participé à une conférence ou un géo-évènement et t'aimerais partager aux autres ce que t'as appris ?  
-T'as envie de changer de job et tu veux améliorer ta visibilité pour basculer plus facilement sur un autre en montrant ce que tu sais faire ?  
+T'as envie d'évoluer dans ton job en montrant ce que tu sais faire ?  
 T'as envie de fanfaronner à la machine à café (ou sur le slack/IRC, faut vivre avec son temps !) parce que ton nom est incrusté dans QGIS ?  
 Tu t'ennuies un peu à la plage et l'horizon bleu de la mer t'inspire ?  
 Tu trouves que les flux RSS et plus généralement les mails et les newsletters c'est trop de la BAL ?  
