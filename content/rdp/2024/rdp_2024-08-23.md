@@ -16,7 +16,7 @@ tags:
     - ...
 ---
 
-# Revue de presse du 21 août 2023
+# Revue de presse du {{ page.meta.date | date_localized }}
 
 ## Intro
 
