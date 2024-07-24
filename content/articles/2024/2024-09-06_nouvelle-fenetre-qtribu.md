@@ -3,6 +3,7 @@ title: Nouvelle fenêtre des contenus Geotribu dans QGIS
 subtitle: Fenêtre ou ne pas fenêtre, telle est la question
 authors:
     - Geotribu
+    - Guilhem Allaman
 categories:
     - article
 comments: true
