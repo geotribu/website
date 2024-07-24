@@ -74,7 +74,7 @@ body:
     id: in_art_title
     attributes:
       label: Titre
-      description: "Le titre de l'article. Longeur maximale indicative : 100/120 caractères"
+      description: "Le titre de l'article. Longueur maximale indicative : 100/120 caractères"
     validations:
       required: true
 
@@ -111,7 +111,7 @@ body:
     attributes:
       label: Contenu de l'article
       description: |
-        Si vous avez déjà votre contenu, collez le ici.
+        Si vous avez déjà votre contenu, collez le ici. Longueur maximale 65536 caractères.
         La syntaxe Markdown est acceptée, mais rappelez-vous que le rendu final est celui de Material for Mkdocs et diffèrera donc de celui de GitHub. Voici [le guide de rédaction avec les principales différences de syntaxe](https://contribuer.geotribu.fr/guides/markdown_quality/#interligne-simple).
     validations:
       required: false

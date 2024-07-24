@@ -190,6 +190,12 @@ extra_javascript:
   - path: https://mastodon.social/embed.js
     async: true
     defer: true
+  - path: javascripts/mathjax.js
+    async: true
+    defer: true
+  - path: https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+    async: true
+    defer: true
   - path: https://platform.twitter.com/widgets.js
     async: true
     defer: true
@@ -206,6 +212,8 @@ markdown_extensions:
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji

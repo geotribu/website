@@ -14,9 +14,9 @@ license: default
 robots: index, follow
 tags:
     - cocarto
-    - contribution
     - collecte
     - collecte terrain
+    - contribution
     - smartphone
 ---
 
