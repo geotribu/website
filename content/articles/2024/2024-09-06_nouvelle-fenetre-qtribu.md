@@ -71,7 +71,7 @@ Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub p
 
 ## Propositions d'articles
 
-L'action `Proposer un article` vous ouvrira un formulaire pour saisir un article à destination d'une future GeoRDP.
+L'action `Proposer un article` vous ouvrira un formulaire pour rédiger une ébauche d'article.
 
 ![formulaire de saisie d'un article](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-article-form.webp)
 
