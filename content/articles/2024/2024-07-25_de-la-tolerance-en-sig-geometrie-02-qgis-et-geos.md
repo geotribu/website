@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-07-25
-description: "troisième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : GEOS et QGIS, au tableau !"
+description: "Troisième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : GEOS et QGIS, au tableau !"
 icon: material/vector-curve
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_02_geos_qgis.png
 license: beerware
@@ -47,6 +47,8 @@ Dans cette section, nous allons plonger dans les dessous des SIG en explorant le
 
 > Source : [Performance Improvements in GEOS](https://www.crunchydata.com/blog/performance-improvements-in-geos), Paul Ramsey (2021, Crunchy Data)
 
+----
+
 ## Le rôle de GEOS dans QGIS
 
 Dans QGIS, GEOS joue un rôle crucial dans le traitement des données géographiques. Il est particulièrement utilisé pour évaluer les prédicats spatiaux tels que `intersects`, `touches`, `disjoint`, etc. Ces prédicats sont essentiels pour déterminer les relations spatiales entre différentes géométries.
@@ -66,7 +68,9 @@ true
 false
 ```
 
-Ici, nous avons utilisé le format WKT pour tester si les géométries `a` et `b` s'intersectent. Par la suite, on ajoutera et expliquera d'autres options au fur et à mesure de nos utilisations.
+Ici, nous avons utilisé le format WKT[^wkt_wkb] pour tester si les géométries `a` et `b` s'intersectent. Par la suite, on ajoutera et expliquera d'autres options au fur et à mesure de nos utilisations.
+
+----
 
 ## Testons notre cas directement avec GEOS
 
