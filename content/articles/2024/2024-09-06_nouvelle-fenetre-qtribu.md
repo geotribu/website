@@ -55,7 +55,7 @@ La fenêtre pour lister et rechercher parmi les contenus de Geotribu est disponi
 
 ![fenêtre des contenus Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-nouvelle-fenetre-contenus.webp)
 
-Les articles et GeoRDP peuvent être filtrées par auteur/ice, par mot-clé ou via une recherche texte.
+Les articles et GeoRDP peuvent être filtrés par auteur/ice, par mot-clé ou via une recherche texte.
 
 Sous le capot, c'est le [JSON feed de Geotribu](https://geotribu.fr/feed_json_created.json) qui est utilisé afin de récupérer les 50 derniers contenus, articles et GeoRDP, puis les afficher.
 
@@ -83,7 +83,7 @@ Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub p
 
 Parmi les autres évolutions récentes de Geotribu, nous pouvons citer :
 
-- une [nouvelle page](https://geotribu.fr/team/) qui liste les membres ainsi que les contributeur/rices
+- une [nouvelle page](https://geotribu.fr/team/) qui liste les membres ainsi que les contributeur·rices
 - plus de qualitay dans l'automatisation de la chaîne de publication des contenus
 - la [rétrospective Gource](https://www.youtube.com/watch?v=cHQzkNkLeW8) des contributions de 2023 au site
 - bientôt un [plugin QField](https://www.opengis.ch/2024/06/18/supercharge-your-fieldwork-with-qfields-project-and-app-wide-plugins/) ?
