@@ -33,7 +33,7 @@ Dans cette section, nous allons plonger dans les dessous des SIG en explorant le
 
 Cet article est la deuxième partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
-[Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-01-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
+[Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
