@@ -1,40 +1,47 @@
 ---
-title: De la tolérance en SIG
-subtitle: La vraie tolérance consiste à voir large sans perdre la mesure (c) Barratin
+title: "Olympiades de géométrie : GRASS et SAGA"
+subtitle: "Série : De la tolérance en SIG - chapitre 3"
 authors:
     - Loïc Bartoletti
 categories:
     - article
 comments: true
 date: 2024-08-01
-description: "Un tour d'horizon des SIG sur la précision des calculs géométriques."
-icon: material/vector-intersection
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_annonce.png
+description: "Troisième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : GEOS et QGIS, au tableau !"
+icon: material/grass
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_03_grass_saga.png
 license: beerware
 robots: index, follow
 tags:
     - analyse
-    - ArcGIS
-    - FME
     - géométrie
-    - GEOS
     - GRASS
-    - PostGIS
-    - QGIS
     - SAGA
-    - SFCGAL
     - topologie
 ---
 
-# Et les autres SIG Open Source ? Comparaisons avec GRASS et SAGA
+# Et la géométrie dans les autres SIG Open Source ? Comparaisons avec GRASS et SAGA
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
+Suite de la série sur la gestion de la géométrie dans les logiciels SIG. Après avoir constaté que les calculs n'étaient pas bons et avoir soulevé le capot de QGIS pour voir comment GEOS se débrouillait. Le moins que le l'on puisse dire c'est que cela nous laisse circonspect, sinon perplexes : GEOS, et donc QGIS, donnent le même résultat mais il n'est pas **exactement** celui attendu.
+
+Il est temps d'aller voir ailleurs et de revenir à nos premières amours : GRASS et SAGA.
+
+![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : GRASS et SAGA - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_03_grass_saga.png){: .img-center loading=lazy }
+
+Cet article est la troisième partie de la série d'été sur la gestion de la géométrie dans les SIG.
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
+----
 
 ## GRASS : Le vénérable du SIG
 
 ![logo GRASS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/grass.png){: .img-thumbnail-left }
 
-Comme j'ai déjà trahi les petits secrets internes, Julien m'avait ~~demandé~~ proposé de faire une version actualisée de cet [article](https://geotribu.fr/articles/2014/2014-11-13_corriger_automatiquement_geometries_invalides_qgis/). J'ai ~~procrastiné~~ volontairement, attendu jusqu'en 2024, pour fêter les 10 ans de l'article. Mais, ce n'est pas dans celui-là que je le ferai. Néanmoins, on va bien évidemment utiliser GRASS pour tester si notre cas est différent avec GRASS.
+Comme j'ai déjà trahi les petits secrets internes, Julien m'avait ~~demandé~~ proposé de faire une version actualisée de cet [article](../2014/2014-11-13_corriger_automatiquement_geometries_invalides_qgis.md). J'ai ~~procrastiné~~ volontairement attendu jusqu'en 2024, pour fêter les 10 ans de l'article. Mais, ce n'est pas dans celui-là que je le ferai. Néanmoins, on va bien évidemment utiliser GRASS pour tester si notre cas est différent avec GRASS.
 
 Pour notre expérience avec GRASS, il faudra faire quelques manipulations, car on n'a pas la possibilité de faire directement nos calculs avec le WKB.
 Afin de simplifier la reproductibilité aux lecteurs, j'ai ajouté des modèles de traitements dans le projet ; ils sont également disponibles individuellement sur mon GitHub.

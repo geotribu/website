@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-07-25
-description: "Troisième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : GEOS et QGIS, au tableau !"
+description: "Deuxième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : GEOS et QGIS, au tableau !"
 icon: material/vector-curve
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_02_geos_qgis.png
 license: beerware
@@ -29,7 +29,11 @@ Dans la partie précédente, nous avons posé le problème : le résultat d'une 
 
 Dans cette section, nous allons plonger dans les dessous des SIG en explorant le fonctionnement de ces traitements. Nous nous concentrerons en particulier sur le rôle de GEOS dans QGIS.
 
-[De la tolérance en SIG :fontawesome-solid-backward-step:](2024-07-16_de-la-tolerance-en-sig-geometrie-01-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
+![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : QGIS et GEOS - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_02_geos_qgis.png){: .img-center loading=lazy }
+
+Cet article est la deuxième partie de la série d'été sur la gestion de la géométrie dans les SIG.
+
+[Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-01-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
@@ -245,6 +249,9 @@ En attendant, on observe que QGIS donne le même résultat que GEOS. Ce qui n'es
 
 C'est donc GEOS qui est faux ? Non, GEOS donne le « bon » résultat, mais la vérité est ailleurs.
 Nous continuerons cette exploration dans les parties suivantes.
+
+[3 : GRASS et SAGA :fontawesome-solid-forward-step:](./2024-08-01_de-la-tolerance-en-sig-geometrie-03-grass-saga.md "GRASS et SAGA"){: .md-button }
+{: align=middle }
 
 <!-- geotribu:authors-block -->
 
