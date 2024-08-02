@@ -32,6 +32,10 @@ Il est temps d'aller voir ailleurs et de revenir à nos premières amours : GRAS
 
 Cet article est la troisième partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
+[Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
+[2 : QGIS et GEOS :fontawesome-solid-backward-step:](./2024-07-25_de-la-tolerance-en-sig-geometrie-02-qgis-et-geos.md "GEOS au cœur de QGIS"){: .md-button }
+{: align=middle }
+
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
