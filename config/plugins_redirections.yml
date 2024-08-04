@@ -913,3 +913,5 @@ redirects:
     rdp/2015/rdp_2015-05-16.md: rdp/2015/rdp_2015-05-15.md
     rdp/2015/rdp_2015-09-21.md: rdp/2015/rdp_2015-09-25.md
     rdp/2013/rdp_2013-07-13.md: rdp/2013/rdp_2013-07-12.md
+    articles/2024/2024-07-16_de-la-tolerance-en-sig-geometrie-01-annonce.md: articles/2024/2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md
+    articles/2024/2024-07-18_de-la-tolerance-en-sig-geometrie-02-calculs-intersects-qgis-pas-bons.md: articles/2024/2024-07-18_de-la-tolerance-en-sig-geometrie-01-calculs-intersects-qgis-pas-bons.md
