@@ -6,10 +6,10 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-07-05
+date: 2024-08-08
 description: "Un tour d'horizon des SIG sur la précision des calculs géométriques."
-icon: material/vector-intersection
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_annonce.png
+icon: material/database-marker
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_04_sgbdr.png
 license: beerware
 robots: index, follow
 tags:
