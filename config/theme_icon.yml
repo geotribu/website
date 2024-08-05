@@ -18,13 +18,16 @@ icon:
     conference: fontawesome/solid/person-chalkboard
     database: fontawesome/solid/database
     drone: material/drone
+    esri: simple/esri
     facebook: fontawesome/brands/facebook
     feuille: fontawesome/solid/leaf
     gdal: simple/gdal
+    gemeaux: material/zodiac-gemini
     geoloupe: fontawesome/solid/magnifying-glass-location
     git: fontawesome/brands/git-alt
     globe: fontawesome/solid/earth-europe
     google: fontawesome/brands/google
+    grass: material/grass
     html: fontawesome/brands/html5
     institution: fontawesome/solid/building-columns
     js: fontawesome/brands/js
@@ -53,5 +56,6 @@ icon:
     terrain: fontawesome/solid/mountain-city
     twitter: simple/x
     ubuntu: material/ubuntu
+    vector: material/vector-polygon
     wikipedia: material/wikipedia
     windows: fontawesome/brands/windows

@@ -1,5 +1,6 @@
 tags:
   3D: 3d
+  ArcGIS: esri
   atlas: atlas
   base de données: database
   Bash: code
@@ -15,7 +16,7 @@ tags:
   D3.js: js
   DuckDB: database
   Easter eggs: oeuf
-  Esri: globe
+  Esri: esri
   ETL: roue
   ExtJS: js
   Facebook: facebook
@@ -38,6 +39,7 @@ tags:
   Google Maps: google
   Google Street View: google
   GraphHopper: route
+  GRASS: grass
   Halloween: citrouille
   HTML: html
   HTML5: html
@@ -97,8 +99,10 @@ tags:
   réseaux sociaux: rezosocio
   route: route
   routing: route
+  SAGA: gemeaux
   SQL: database
   three.js: js
+  topologie: vector
   Twitter: twitter
   Ubuntu: ubuntu
   Wikipédia: wikipedia
