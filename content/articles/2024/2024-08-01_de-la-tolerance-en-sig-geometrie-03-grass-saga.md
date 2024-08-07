@@ -141,6 +141,9 @@ C'est normal d'une certaine façon. Cependant, le premier test avec crossing, no
 
 Et qu'en est-il avec les bases de données relationnelles ? C'est ce que nous verrons dans la prochaine partie avec Microsoft SQL Server, Oracle et PostGIS.
 
+[4 : les bases de données relationnelles :fontawesome-solid-forward-step:](./2024-08-08_de-la-tolerance-en-sig-geometrie-04-postgis-oracle-ms-sql-server.md "PostGIS, Oracle et MS SQL Server"){: .md-button }
+{: align=middle }
+
 <!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
