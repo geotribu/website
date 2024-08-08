@@ -11,12 +11,14 @@ repos:
       - id: check-added-large-files
       - id: check-case-conflict
       - id: check-yaml
-        args: [--unsafe]
+        args:
+          - --unsafe
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: fix-byte-order-marker
       - id: trailing-whitespace
-        args: [--markdown-linebreak-ext=md]
+        args:
+          - --markdown-linebreak-ext=md
 
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.17.0
@@ -29,7 +31,8 @@ repos:
     rev: "v0.5.6"
     hooks:
       - id: ruff
-        args: ["--fix-only"]
+        args:
+          - --fix-only
 
   - repo: https://github.com/psf/black
     rev: 24.8.0
@@ -40,15 +43,18 @@ repos:
     rev: 5.13.2
     hooks:
       - id: isort
-        args: ["--profile", "black", "--filter-files"]
+        args:
+          - --profile
+          - black
+          - --filter-files
 
   - repo: https://github.com/pycqa/flake8
     rev: 7.1.1
     hooks:
       - id: flake8
         language: python
-        types: [python]
-        args: ["--select=E9,F63,F7,F82"]
+        args:
+          - --select=E9,F63,F7,F82
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.41.0
