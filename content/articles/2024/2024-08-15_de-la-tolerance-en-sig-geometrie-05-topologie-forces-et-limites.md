@@ -49,7 +49,9 @@ Cet article est la cinquième partie de la série d'été sur la gestion de la g
 
 ## Retour sur GRASS
 
-L'une des caractéristiques de GRASS GIS est sa gestion topologique des données vectorielles. Contrairement à d'autres systèmes qui utilisent un modèle de données « spaghetti », où les entités géométriques sont stockées sans considération explicite des relations spatiales entre elles, GRASS GIS maintient une structure topologique stricte.
+![logo GRASS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/grass.png){: .img-thumbnail-left }
+
+L'une des caractéristiques de GRASS est sa gestion topologique des données vectorielles. Contrairement à d'autres systèmes qui utilisent un modèle de données « spaghetti », où les entités géométriques sont stockées sans considération explicite des relations spatiales entre elles, GRASS maintient une structure topologique stricte.
 
 ### Overlap pour une meilleure sélection dans GRASS
 
@@ -95,6 +97,8 @@ Quels sont les points ? Les mêmes que jusqu'à présent. Mais, alors, que s'est
 ----
 
 ## De la topologie dans QGIS
+
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Dans QGIS, il existe un mode d'édition que j'affectionne particulièrement, qui est… l'édition topologique.
 
