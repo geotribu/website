@@ -39,7 +39,7 @@ Autant, je connais très bien PostGIS (au code duquel je contribue), autant, ma 
 
 ![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : PostGIS, Oracle et MS SQL Server - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_04_sgbdr.png){: .img-center loading=lazy }
 
-Cet article est la troisième partie de la série d'été sur la gestion de la géométrie dans les SIG.
+Cet article est la quatrième partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
 [Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
 [3 : GRASS et SAGA :fontawesome-solid-backward-step:](./2024-08-01_de-la-tolerance-en-sig-geometrie-03-grass-saga.md "GRASS et SAGA"){: .md-button }
@@ -310,6 +310,9 @@ Enfin, concernant la distance, Oracle accepte un paramètre tolérance et donne 
 On pourrait penser que la distance devrait toujours être la même. Cependant, je pense — supposition, car connaissant mal Oracle — que celle-ci sert à arrondir si l'on est dans sa plage, et alors, pour notre cas, retourne 0, plutôt qu'un presque zéro.
 
 Notre exploration n'est pas encore terminée, même si l'on s'approche de l'explication. On vient de voir, que, comme les SIG OpenSource, on ignore comment retourner correctement le prédicat `intersects` d'une intersection. Sauf à être tolérant, et nous y reviendrons.
+
+[5 : la topologie à la rescousse des spaghettis :fontawesome-solid-forward-step:](./2024-08-15_de-la-tolerance-en-sig-geometrie-05-topologie-forces-et-limites.md "Modèles topologique et spaghetti"){: .md-button }
+{: align=middle }
 
 <!-- geotribu:authors-block -->
 
