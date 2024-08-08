@@ -1,13 +1,13 @@
 ---
-title: De la tolérance en SIG
-subtitle: La vraie tolérance consiste à voir large sans perdre la mesure (c) Barratin
+title: La topologie à la rescousse du spaghetti
+subtitle: "Série : De la tolérance en SIG - chapitre 5"
 authors:
     - Loïc Bartoletti
 categories:
     - article
 comments: true
 date: 2024-08-15
-description: "Un tour d'horizon des SIG sur la précision des calculs géométriques."
+description: "Cinquième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : la topologie à la rescousse du spaghetti !"
 icon: material/vector-polygon-variant
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_05_topologie.png
 license: beerware
@@ -28,7 +28,22 @@ Dans les SIG, on distingue souvent deux types de modèles pour représenter les 
 
 - :material-vector-polygon: Topologie : à l'inverse, la topologie dans QGIS (ou dans tout autre SIG supportant ce modèle) s'assure que les entités spatiales sont stockées avec des règles qui définissent et maintiennent les relations spatiales entre les entités. Par exemple, deux polygones adjacents partageront une ligne commune sans duplication, et les intersections seront gérées correctement. La gestion topologique aide à prévenir les erreurs géométriques, améliore la précision des analyses et facilite la maintenance des données.
 
+![Comparaison du modèle spaghetti et topologique - Crédits : Handbook of Exploration and Environmental Geochemistry,](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/geometry_spaghetti_vs_topology.webp){: .img-center loading=lazy }
+
 Non, ce n'est toujours pas ici que je ferai l'article sur la topologie. Au mieux, cela sert de teaser.
+
+![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : la topologie - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_05_topologie.png){: .img-center loading=lazy }
+
+Cet article est la cinquième partie de la série d'été sur la gestion de la géométrie dans les SIG.
+
+[Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
+[4 : les bases de données relationnelles :fontawesome-solid-backward-step:](./2024-08-08_de-la-tolerance-en-sig-geometrie-04-postgis-oracle-ms-sql-server.md "PostGIS, Oracle et MS SQL Server"){: .md-button }
+{: align=middle }
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
+----
 
 ----
 
