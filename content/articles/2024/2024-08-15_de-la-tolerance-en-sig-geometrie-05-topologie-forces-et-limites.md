@@ -18,7 +18,7 @@ tags:
     - topologie
 ---
 
-# Utilisation de la topologie : est-ce que la topologie peut nous sauver ?De la tolérance en SIG
+# Est-ce que la topologie peut nous sauver ?
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
