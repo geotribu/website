@@ -59,9 +59,29 @@ Les articles et GeoRDP peuvent être filtrés par auteur/ice, par mot-clé ou vi
 
 Sous le capot, c'est le [JSON feed de Geotribu](https://geotribu.fr/feed_json_created.json) qui est utilisé afin de récupérer les 50 derniers contenus, articles et GeoRDP, puis les afficher.
 
+## Les contenus de Geotribu
+
+À ce moment-là, il peut être judicieux de faire un petit rappel sur les contenus de Geotribu auxquels tout un chacun peut participer, via un [ticket Github](https://github.com/geotribu/website/issues/new/choose) ou donc via le plugin QGIS `QTribu`, et qui peuvent être de deux natures :
+
+- une news/brève pour une GeoRDP. Généralement plutôt courte, il s'agit de décrire une actualité géomatique pouvant être de différent type : sortie d'un logiciel, nouvelle version d'un outil, sortie d'un article, annonce ou rétrospective sur un évènement géo, actualité OpenStreetMap ...etc etc Il y a même une rubrique "Divers" pour les news qui ne rentrent dans aucune case, c'est libre et seulement limité par votre imagination ! [Le site de contribution](https://contribuer.geotribu.fr/rdp/add_news/) explique la démarche
+
+- un article. Pour celles et ceux qui pensent que c'est la taille qui compte, c'est l'occasion de s'étendre davantage (certaines mauvaises langues diraient "tartiner"), illustré avec des images, des bouts de code et autres, offrant ainsi la possibilité de montrer l'utilisation ou la découverte d'un outil, un partage d'expérience, un récapitulatif illustré d'un évènement, une présentation d'un projet auquel vous participez, ou non... etc [Le site de contribution](https://contribuer.geotribu.fr/articles/workflow/) explique la démarche
+
+Et tout ceci sans pression et dans la bonne humeur ! Il est même possible d'insérer des blagues un peu douteuses, comme par exemple :
+
+- mon premier est un langage de programmation assez utilisé dans les SIG. Il s'agit également d'un serpent :snake:
+- mon second peut être vectoriel, et peut également être utilisé en toiture
+- mon tout contient du liquide pour graisser les chaînes de vélo, en Alsace
+- :question: Je suis je suis je suis ?
+
+![Julien Lepers - Je suis je suis ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/julien_lepers_je_suis.webp)
+
+??? question "Réponse"
+    Un python tuile !!
+
 ## Send news
 
-L'action `Proposer une news` vous ouvrira un formulaire pour saisir une news à destination d'une future GeoRDP.
+Revenons à nos moutons, et à nos actions de contribution dans le plugin QGIS QTribu : l'action `Proposer une news` vous ouvrira un formulaire pour saisir une news à destination d'une future GeoRDP (menu `Internet` > `QTribu`) :
 
 ![formulaire de saisie d'une news](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-news-form.webp)
 
@@ -71,7 +91,7 @@ Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub p
 
 ## Propositions d'articles
 
-L'action `Proposer un article` vous ouvrira un formulaire pour rédiger une ébauche d'article.
+L'action `Proposer un article` vous ouvrira un formulaire pour rédiger une ébauche d'article :
 
 ![formulaire de saisie d'un article](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-article-form.webp)
 
@@ -85,9 +105,10 @@ Parmi les autres évolutions récentes de Geotribu, nous pouvons citer :
 
 - une [nouvelle page](https://geotribu.fr/team/) qui liste les membres ainsi que les contributeur·rices
 - plus de qualitay dans l'automatisation de la chaîne de publication des contenus
-- la [rétrospective Gource](https://www.youtube.com/watch?v=cHQzkNkLeW8) des contributions de 2023 au site
 - bientôt un [plugin QField](https://www.opengis.ch/2024/06/18/supercharge-your-fieldwork-with-qfields-project-and-app-wide-plugins/) ?
-- et bientôt d'autres trucs marrants :wink:
+- et bientôt d'autres trucs marrants :wink: :smile_cat:
+
+![un petit chat trop 'gnon qui dit "Miaou" dans QGIS avec le plugin Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/geotricat_qgis_meow.webp)
 
 <!-- Footnotes reference -->
 [^1]: PSIG : psy des SIG, profession réglementée
