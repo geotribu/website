@@ -42,12 +42,12 @@ Alors que je préparais un article sur la topologie que je dois à [Julien](http
 
 Dans les chapitres suivants, nous explorerons ensemble :
 
-- [Le constat : les calculs ne sont pas bons](./2024-07-18_de-la-tolerance-en-sig-geometrie-02-calculs-intersects-qgis-pas-bons.md).
-- Fonctionnement interne de QGIS et GEOS : comment ces outils gèrent-ils les données et les opérations géométriques.
-- Et les autres SIG Open Source ? Comparaisons avec GRASS et SAGA.
-- Et dans les bases de données ? Comparaisons de SQL Server, Oracle et PostGIS.
-- Utilisation de la topologie : est-ce que la topologie peut nous sauver ?
-- Approche alternative : utilisation de SFCGAL pour des calculs plus robustes.
+- [Le constat : les calculs ne sont pas bons](./2024-07-18_de-la-tolerance-en-sig-geometrie-01-calculs-intersects-qgis-pas-bons.md).
+- [Fonctionnement interne de QGIS et GEOS : comment ces outils gèrent-ils les données et les opérations géométriques](./2024-07-25_de-la-tolerance-en-sig-geometrie-02-qgis-et-geos.md).
+- [Et les autres SIG Open Source ? Comparaisons avec GRASS et SAGA](./2024-08-01_de-la-tolerance-en-sig-geometrie-03-grass-saga.md).
+- [Et dans les bases de données ? Comparaisons de SQL Server, Oracle et PostGIS](./2024-08-08_de-la-tolerance-en-sig-geometrie-04-postgis-oracle-ms-sql-server.md).
+- [Utilisation de la topologie : est-ce que la topologie peut nous sauver ?](./2024-08-15_de-la-tolerance-en-sig-geometrie-05-topologie-forces-et-limites.md)
+- [Approche alternative : utilisation de SFCGAL pour des calculs plus robustes.](./2024-08-22_de-la-tolerance-en-sig-geometrie-06-sfcgal.md)
 - Et chez la concurrence, ça se passe comment ?
 - Algorithmes et code : comment cela fonctionne-t-il ? Cette partie sera optionnelle, pour ceux ne voulant pas voir de code.
 - La conclusion : comment arrêter de trop penser et vivre une vie meilleure !

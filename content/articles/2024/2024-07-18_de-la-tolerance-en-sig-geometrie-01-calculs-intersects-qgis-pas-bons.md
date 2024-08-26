@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-07-18
-description: "Deuxième partie du tour d'horizon des SIG sur la précision des calculs géométriques : analyse des opérations de superposition et de leurs limites."
+description: "Premier chapitre du tour d'horizon des SIG sur la précision des calculs géométriques : analyse des opérations de superposition et de leurs limites."
 icon: material/vector-intersection
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_01_calculs.png
 license: beerware
@@ -29,9 +29,9 @@ Dans nos SIG, les opérations de superposition (_overlay_ dans la langue de Shak
 
 ![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : calculs - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_01_calculs.png){: .img-center loading=lazy }
 
-Cet article est la deuxième partie de la série d'été sur la gestion de la géométrie dans les SIG.
+Cet article est la première partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
-[De la tolérance en SIG :fontawesome-solid-backward-step:](2024-07-16_de-la-tolerance-en-sig-geometrie-01-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
+[Le dossier :octicons-move-to-start-16:](2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
@@ -260,6 +260,9 @@ Et notre résultat ?
 Cela fonctionne ! Mais pourquoi ?
 
 Et bien, nous verrons cela plus tard.
+
+[2 : QGIS et GEOS :fontawesome-solid-forward-step:](./2024-07-25_de-la-tolerance-en-sig-geometrie-02-qgis-et-geos.md "GEOS au cœur de QGIS"){: .md-button }
+{: align=middle }
 
 <!-- geotribu:authors-block -->
 
