@@ -7,7 +7,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-08-27
+date: 2024-09-03
 description: "Une nouvelle fenêtre des contenus Geotribu dans le plugin QGIS QTribu, qui permet d'accéder et de contribuer aux contenus du site"
 icon: material/window-closed-variant
 image:
