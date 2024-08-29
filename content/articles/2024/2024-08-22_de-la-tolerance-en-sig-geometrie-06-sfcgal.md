@@ -42,6 +42,8 @@ Pour cela, laissez-moi introduire [SFCGAL](https://sfcgal.gitlab.io/SFCGAL/).
 
 Il s'agit d'une bibliothèque logicielle C++ sous licence [LGPL2+](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html) construite comme une surcouche de [CGAL](https://www.cgal.org/) avec pour objectif de supporter l'[ISO 19107:2013](https://www.iso.org/fr/standard/26012.html) et la norme OGC [Simple Features Access](https://www.opengeospatial.org/standards/sfa/) 1.2 de l'OGC pour les opérations en 3D.
 
+![logo SFCGAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sfcgal.webp){: .img-center loading=lazy }
+
 Concrètement, SFCGAL fournit des types de géométries et des opérations conformes aux normes, auxquels on accède via ses API [C](https://sfcgal.gitlab.io/SFCGAL/doxygen/group__capi.html) ou [C++](https://sfcgal.gitlab.io/SFCGAL/doxygen/group__public__api.html).
 
 Par exemple, PostGIS utilise l'API C pour exposer certaines fonctions de SFCGAL dans les bases de données spatiales (cf. [manuel de PostGIS](https://postgis.net/docs/reference.html#reference_sfcgal)).
