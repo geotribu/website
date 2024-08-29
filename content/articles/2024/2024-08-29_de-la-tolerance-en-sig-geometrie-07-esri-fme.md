@@ -53,7 +53,6 @@ Comme pour QGIS, nous allons tester notre problème de deux façons : par les tr
 ### Utilisation du ShapeFile
 
 Sauf erreur de ma part, ArcGis ne sait pas ouvrir les fichiers GeoPackage. Qu'importe, nous utiliserons le bon vieux ShapeFile qui sera importé dans une GeoDatabase.
-lbartoletti marked this conversation as resolved.
 
 Afin de réaliser le calcul de l'intersection, nous utilisons l'outil [Pairwise Intersect](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/pairwise-intersect.htm).
 
