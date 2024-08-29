@@ -8,7 +8,7 @@ categories:
 comments: true
 date: 2024-08-29
 description: "Septième et avant-dernière partie du tour d'horizon des SIG sur les dessous des calculs géométriques : un petit tour chez ESRI et FME"
-icon: material/vector-polygon-variant
+icon: simple/esri
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_07_esri_fme.png
 license: beerware
 robots: index, follow
@@ -22,11 +22,22 @@ tags:
 
 # Et chez la concurrence, ça se passe comment ?
 
-On ne va pas tous les faire, mais seulement deux un peu connus et installés parfois à côté de QGIS :wink:
+On ne va pas tous les faire, mais seulement deux un peu connus et installés parfois à côté de QGIS comme logiciels SIG secondaires :wink:.
 
 Le premier sera FME, une sorte de boîte à outils de QGIS et l'autre ArcGis Pro, le concurrent payant de GRASS/QGIS.
 
 ![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : ESRI & FME - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_07_esri_fme.png){: .img-center loading=lazy }
+
+Cet article est la septième partie de la série d'été sur la gestion de la géométrie dans les SIG.
+
+[Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
+[6 : SFCGAL pour les calculs robustes :fontawesome-solid-backward-step:](./2024-08-22_de-la-tolerance-en-sig-geometrie-06-sfcgal.md "SFCGAL"){: .md-button }
+{: align=middle }
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
+----
 
 ## FME
 

@@ -88,7 +88,7 @@ Ainsi, nous allons passer de :
 
 ![GRASS line overlay clean](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_select_line_clean_points.svg){: .img-center loading=lazy }
 
-Maintenant, on regarde si notre fonction v.select avec `intersects` fonctionne.
+Maintenant, on regarde si notre fonction `v.select` avec `intersects` fonctionne.
 
 Hourra !
 
@@ -209,6 +209,9 @@ Les nouveaux segments ne sont pas « alignés » comme le segment d'origine. De 
 En réalité, pas totalement, mais j'ai volontairement arrondi à trois chiffres après la virgule.
 Pourquoi ai-je fait ça ? Marre de me trimbaler autant de chiffres.
 Et, puis, est-ce vraiment utile d'avoir autant de chiffres après la virgule ? :wink:
+
+[6 : _beyond the comma_ avec SFCGAL :fontawesome-solid-forward-step:](./2024-08-22_de-la-tolerance-en-sig-geometrie-06-sfcgal.md "SFCGAL pour des calculs géométriques robustes"){: .md-button }
+{: align=middle }
 
 <!-- geotribu:authors-block -->
 
