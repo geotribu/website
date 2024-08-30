@@ -919,3 +919,4 @@ redirects:
     rdp/2013/rdp_2013-07-13.md: rdp/2013/rdp_2013-07-12.md
     articles/2024/2024-07-16_de-la-tolerance-en-sig-geometrie-01-annonce.md: articles/2024/2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md
     articles/2024/2024-07-18_de-la-tolerance-en-sig-geometrie-02-calculs-intersects-qgis-pas-bons.md: articles/2024/2024-07-18_de-la-tolerance-en-sig-geometrie-01-calculs-intersects-qgis-pas-bons.md
+    articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gconfig.md: articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gsconfig.md
