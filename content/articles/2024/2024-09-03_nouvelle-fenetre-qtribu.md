@@ -96,7 +96,7 @@ L'action `Proposer un article` vous ouvrira un formulaire pour rédiger une éba
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
-![gif cycliste à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/gif-bicycle.gif)
+![gif cycliste à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/gif-bicycle.gif){: .img-center loading=lazy }
 
 ## Autres nouveautés de Geotribu
 
