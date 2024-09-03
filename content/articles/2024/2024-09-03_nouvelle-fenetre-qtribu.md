@@ -86,7 +86,7 @@ Revenons à nos moutons, et à nos actions de contribution dans le plugin QGIS Q
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
-![gif conducteur à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/gif-drive.gif)
+![gif conducteur à toute berzingue](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/gif-drive.gif){: .img-center loading=lazy }
 
 ## Propositions d'articles
 
