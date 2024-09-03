@@ -14,7 +14,6 @@ image:
 license: beerware
 robots: index, follow
 tags:
-    - article
     - Geotribu
     - QGIS
     - news
