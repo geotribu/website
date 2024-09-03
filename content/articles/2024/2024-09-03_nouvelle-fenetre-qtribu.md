@@ -53,7 +53,7 @@ Présentée un 1er avril par [Julien](../../team/julien-moura.md) au travers de 
 
 La fenêtre pour lister et rechercher parmi les contenus de Geotribu est disponible dans le menu `Internet`, puis `Qtribu` > `Rechercher dans les contenus` :
 
-![fenêtre des contenus Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-nouvelle-fenetre-contenus.webp)
+![fenêtre des contenus Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-nouvelle-fenetre.webp)
 
 Les articles et GeoRDP peuvent être filtrés par auteur/ice, par mot-clé ou via une recherche texte.
 
@@ -83,7 +83,7 @@ Et tout ceci sans pression et dans la bonne humeur ! Il est même possible d'ins
 
 Revenons à nos moutons, et à nos actions de contribution dans le plugin QGIS QTribu : l'action `Proposer une news` vous ouvrira un formulaire pour saisir une news à destination d'une future GeoRDP (menu `Internet` > `QTribu`) :
 
-![formulaire de saisie d'une news](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-news-form.webp)
+![formulaire de saisie d'une news](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-news.webp)
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
@@ -93,7 +93,7 @@ Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub p
 
 L'action `Proposer un article` vous ouvrira un formulaire pour rédiger une ébauche d'article :
 
-![formulaire de saisie d'un article](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-article-form.webp)
+![formulaire de saisie d'un article](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-article.webp)
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
