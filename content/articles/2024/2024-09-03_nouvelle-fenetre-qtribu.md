@@ -92,7 +92,7 @@ Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub p
 
 L'action `Proposer un article` vous ouvrira un formulaire pour rédiger une ébauche d'article :
 
-![formulaire de saisie d'un article](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-article.webp)
+![formulaire de saisie d'un article](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-article.webp){: .img-center loading=lazy }
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
