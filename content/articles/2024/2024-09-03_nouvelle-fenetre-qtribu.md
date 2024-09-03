@@ -1,6 +1,6 @@
 ---
 title: Nouvelle fenêtre des contenus Geotribu dans QGIS
-subtitle: Fenêtre ou ne pas fenêtre, telle est la question
+subtitle: La porte ouverte à toutes les qontributions
 authors:
     - Geotribu
     - Guilhem Allaman
