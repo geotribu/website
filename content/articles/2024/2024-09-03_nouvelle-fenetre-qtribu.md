@@ -1,5 +1,5 @@
 ---
-title: Nouvelle fenêtre des contenus Geotribu dans QGIS
+title: Cherchez et contribuez à Geotribu depuis QGIS
 subtitle: La porte ouverte à toutes les qontributions
 authors:
     - Geotribu
