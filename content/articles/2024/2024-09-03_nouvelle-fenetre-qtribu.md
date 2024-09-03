@@ -52,7 +52,7 @@ Présentée un 1er avril par [Julien](../../team/julien-moura.md) au travers de 
 
 La fenêtre pour lister et rechercher parmi les contenus de Geotribu est disponible dans le menu `Internet`, puis `Qtribu` > `Rechercher dans les contenus` :
 
-![fenêtre des contenus Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-nouvelle-fenetre.webp)
+![fenêtre des contenus Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-nouvelle-fenetre.webp){: .img-center loading=lazy }
 
 Les articles et GeoRDP peuvent être filtrés par auteur/ice, par mot-clé ou via une recherche texte.
 
