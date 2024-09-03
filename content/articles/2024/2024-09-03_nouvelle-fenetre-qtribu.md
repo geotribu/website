@@ -73,7 +73,7 @@ Et tout ceci sans pression et dans la bonne humeur ! Il est même possible d'ins
 - mon tout contient du liquide pour graisser les chaînes de vélo, en Alsace
 - :question: Je suis je suis je suis ?
 
-![Julien Lepers - Je suis je suis ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/julien_lepers_je_suis.webp)
+![Julien Lepers - Je suis je suis ?](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/julien_lepers_je_suis.webp){: .img-center loading=lazy }
 
 ??? question "Réponse"
     Un python tuile !!
