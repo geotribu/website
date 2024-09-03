@@ -20,7 +20,7 @@ tags:
     - plugin
 ---
 
-# Une nouvelle fenêtre des contenus Geotribu dans QGIS
+# Cherchez et contribuez à Geotribu depuis QGIS
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
