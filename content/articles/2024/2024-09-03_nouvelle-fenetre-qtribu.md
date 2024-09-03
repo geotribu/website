@@ -82,7 +82,7 @@ Et tout ceci sans pression et dans la bonne humeur ! Il est même possible d'ins
 
 Revenons à nos moutons, et à nos actions de contribution dans le plugin QGIS QTribu : l'action `Proposer une news` vous ouvrira un formulaire pour saisir une news à destination d'une future GeoRDP (menu `Internet` > `QTribu`) :
 
-![formulaire de saisie d'une news](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-news.webp)
+![formulaire de saisie d'une news](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qtribu_nouvelle_fenetre/qtribu-news.webp){: .img-center loading=lazy }
 
 Le bouton `Envoyer` vous conduira directement sur les rails d'une issue GitHub paramétrée et remplie comme il faut !
 
