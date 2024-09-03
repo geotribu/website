@@ -6,7 +6,8 @@ categories:
     - article
 comments: true
 date: 2021-04-01
-description: 'Présentation du plugin de Geotribu pour QGIS : QTribu. Inutile donc forcément indispensable.'
+description: "Présentation du plugin de Geotribu pour QGIS : QTribu. Inutile donc forcément indispensable."
+icon: material/puzzle-heart-outline
 image: https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png
 license: default
 tags:
