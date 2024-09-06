@@ -106,7 +106,9 @@ x_c, y_c = 2, 3
 area = shoelace_area(x_a, y_a, x_b, y_b, x_c, y_c)
 orient = orient2d(x_a, y_a, x_b, y_b, x_c, y_c)
 print(f"L'aire du triangle est : {area}")
+# L'aire du triangle est : -0.5
 print(f"L'orientation du triangle ABC est : {orient}")
+# L'orientation du triangle ABC est : -1
 ```
 
 Le code retourne un nombre négatif ; l'aire étant la moitié de l'orientation.
@@ -117,13 +119,14 @@ Si l'on inverse A et B, comme suit :
 area = shoelace_area(x_b, y_b, x_a, y_a, x_c, y_c)
 orient = orient2d(x_b, y_b, x_a, y_a, x_c, y_c)
 print(f"L'aire du triangle est : {area}")
+# L'aire du triangle est : 0.5
 print(f"L'orientation du triangle BAC est : {orient}")
+# L'orientation du triangle BAC est : 1
 ```
 
 On retrouve un nombre positif. Le point C est de l'autre côté de l'axe AB, dit autrement, AB et C ne sont pas colinéaires.
 
 ```python title="Exemple d'utilisation avec des points colinéaires"
-Guts marked this conversation as resolved.
 x_a, y_a = 1, 1
 x_b, y_b = 2, 2
 x_c, y_c = 3, 3
@@ -131,7 +134,9 @@ x_c, y_c = 3, 3
 area = shoelace_area(x_b, y_b, x_a, y_a, x_c, y_c)
 orient = orient2d(x_b, y_b, x_a, y_a, x_c, y_c)
 print(f"L'aire du triangle est : {area}")
+# L'aire du triangle est : 0.0
 print(f"L'orientation du triangle BAC est : {orient}")
+# L'orientation du triangle BAC est : 0
 ```
 
 ```python title="Exemple d'utilisation avec des points colinéaires"
@@ -142,10 +147,12 @@ x_c, y_c = 0.3, 0.3
 area = shoelace_area(x_b, y_b, x_a, y_a, x_c, y_c)
 orient = orient2d(x_b, y_b, x_a, y_a, x_c, y_c)
 print(f"L'aire du triangle est : {area}")
+# L'aire du triangle est : -1.734723475976807e-18
 print(f"L'orientation du triangle BAC est : {orient}")
+# L'orientation du triangle BAC est : 0.0
 ```
 
-Ici, vous devriez avoir une « blague ». L'aire n'est pas exactement égale à 0, mais proche de 0.
+Comme sur ma machine, vous devriez avoir une « blague ». L'aire n'est pas exactement égale à 0, mais proche de 0.
 
 Quelles sont donc les problèmes de cette « blague » ?
 
@@ -229,8 +236,11 @@ line = sfcgal.read_wkb('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db77
 result = base.intersection(line)
 # Affiche du WKT avec 10 décimales
 print(result.wktDecim(10))
+# MULTIPOINT((1981583.6205737418 5199333.3018780742),(1981640.7849060092 5199258.0220883982))
 print(base.intersects(result))
+# True
 print(line.intersects(result))
+# True
 ```
 
 On a le résutat souhaité. Maintenant, essayons de reproduire ce qu'il se passe dans PostGIS.
@@ -245,7 +255,9 @@ y = sfcgal.lib.sfcgal_point_y(p)
 # création du point avec ces doubles
 np = sfcgal.Point(x, y)
 print(base.intersects(np))
+# False
 print(line.intersects(np))
+# False
 ```
 
 Et, voilà, « l'imprécision » des doubles nous donne ce mauvais résultat.
