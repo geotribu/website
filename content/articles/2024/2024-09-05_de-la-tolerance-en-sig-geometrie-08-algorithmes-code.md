@@ -22,6 +22,8 @@ tags:
 
 # Algorithmes et Code : comment cela fonctionne-t-il ?
 
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
 ![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png){: .img-thumbnail-left }
 
 Disclaimer : Cet article s'adresse à tous les géomaticiens, quel que soit leur niveau de compétence. Cependant, ceux qui sont déjà familiers avec les erreurs comme `#!python 0.1 + 0.2 != 0.3` ne trouveront peut-être pas de nouvelles informations ici. Encore une fois, j'essaie de vulgariser. Si une version plus détaillée vous intéresse, je peux essayer d'en faire une.
