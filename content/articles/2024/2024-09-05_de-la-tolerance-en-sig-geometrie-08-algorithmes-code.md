@@ -28,7 +28,8 @@ tags:
 
 Maintenant que l'on a regardé comment sont gérées les opérations géométriques sous le capot de différents logiciels SIG, essayons de comprendre comment se code concrètement une formule mathématique. En somme, codons notre propre algorithme de calcul géométrique !
 
-Disclaimer : Cet article s'adresse à tous les géomaticiens, quel que soit leur niveau de compétence. Cependant, ceux qui sont déjà familiers avec les erreurs comme `#!python 0.1 + 0.2 != 0.3` ne trouveront peut-être pas de nouvelles informations ici. Encore une fois, j'essaie de vulgariser. Si une version plus détaillée vous intéresse, je peux essayer d'en faire une.
+!!! info "Disclaimer"
+    Cet article s'adresse à tous les géomaticiens, quel que soit leur niveau de compétence informatique. Cependant, ceux qui sont déjà familiers avec les erreurs comme `#!python 0.1 + 0.2 != 0.3` ne trouveront peut-être pas de nouvelles informations ici. Encore une fois, j'essaie de vulgariser. Si une version plus détaillée vous intéresse, je peux essayer d'en faire une.
 
 ![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : Algorithmes - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_08_algos.png){: .img-center loading=lazy }
 
@@ -235,10 +236,12 @@ On a vu que SFCGAL est la seule bibliothèque à donner le bon résultat pour in
 
 SFCGAL, n'utilise pas les flottants, mais une autre arithmétique. Pour rappel, notre code exemple est :
 
-```python
+```python title="Intersection avec PySFCGAL"
 from pysfcgal import sfcgal
+
 base = sfcgal.read_wkb('0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341')
 line = sfcgal.read_wkb('010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341')
+
 result = base.intersection(line)
 # Affiche du WKT avec 10 décimales
 print(result.wktDecim(10))
