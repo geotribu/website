@@ -26,6 +26,8 @@ tags:
 
 ![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png){: .img-thumbnail-left }
 
+Maintenant que l'on a regardé comment sont gérées les opérations géométriques sous le capot de différents logiciels SIG, essayons de comprendre comment se code concrètement une formule mathématique. En somme, codons notre propre algorithme de calcul géométrique !
+
 Disclaimer : Cet article s'adresse à tous les géomaticiens, quel que soit leur niveau de compétence. Cependant, ceux qui sont déjà familiers avec les erreurs comme `#!python 0.1 + 0.2 != 0.3` ne trouveront peut-être pas de nouvelles informations ici. Encore une fois, j'essaie de vulgariser. Si une version plus détaillée vous intéresse, je peux essayer d'en faire une.
 
 ![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : Algorithmes - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_08_algos.png){: .img-center loading=lazy }
@@ -33,15 +35,19 @@ Disclaimer : Cet article s'adresse à tous les géomaticiens, quel que soit leur
 Cet article est la huitième partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
 [Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
-[7 : ESRI et FME :fontawesome-solid-backward-step:](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md "ESRI et FME"){: .md-button }
+[7 : ESRI et FME :fontawesome-solid-backward-step:](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md "Gestion de la géométrie dans ESRI et FME"){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
+----
+
+## Un triangle ne manque pas d'aire
+
 Ceci dit, comment qu'on calcule si un point C est sur un segment AB ? On calcule l'aire du triangle ABC !
 
-Dit autrement, avec un peu plus de formalisme, pour déterminer si un point \( C \) est sur une droite définie par deux points \( A \) et \( B \), on peut utiliser la géométrie vectorielle. Voici une méthode simple pour le faire :
+Dit autrement, avec un peu plus de formalisme mathématique, pour déterminer si un point \( C \) est sur une droite définie par deux points \( A \) et \( B \), on peut utiliser la géométrie vectorielle. Voici une méthode simple pour le faire :
 
 1. **Coordonnées des points** : supposons que les coordonnées des points \( A \), \( B \) et \( C \) soient respectivement \( (x_A, y_A) \), \( (x_B, y_B) \) et \( (x_C, y_C) \).
 
