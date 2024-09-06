@@ -1,5 +1,5 @@
 ---
-title: Algorithmes et Code
+title: "Algorithmes géométriques et code : comment cela fonctionne-t-il ?"
 subtitle: "Série : De la tolérance en SIG - chapitre 8"
 authors:
     - Loïc Bartoletti
@@ -20,7 +20,7 @@ tags:
     - SFCGAL
 ---
 
-# Algorithmes et Code : comment cela fonctionne-t-il ?
+# Algorithmes géométriques et code : comment cela fonctionne-t-il ?
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
