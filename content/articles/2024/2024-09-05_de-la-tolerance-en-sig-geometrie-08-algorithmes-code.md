@@ -111,7 +111,7 @@ print(f"L'orientation du triangle ABC est : {orient}")
 
 Le code retourne un nombre négatif ; l'aire étant la moitié de l'orientation.
 
-Si l'on inverse A et B, comme suit,
+Si l'on inverse A et B, comme suit :
 
 ```python
 area = shoelace_area(x_b, y_b, x_a, y_a, x_c, y_c)
