@@ -28,6 +28,15 @@ Disclaimer : Cet article s'adresse à tous les géomaticiens, quel que soit leur
 
 ![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : Algorithmes - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_08_algos.png){: .img-center loading=lazy }
 
+Cet article est la huitième partie de la série d'été sur la gestion de la géométrie dans les SIG.
+
+[Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
+[7 : ESRI et FME :fontawesome-solid-backward-step:](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md "ESRI et FME"){: .md-button }
+{: align=middle }
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
 Ceci dit, comment qu'on calcule si un point C est sur un segment AB ? On calcule l'aire du triangle ABC !
 
 Dit autrement, avec un peu plus de formalisme, pour déterminer si un point \( C \) est sur une droite définie par deux points \( A \) et \( B \), on peut utiliser la géométrie vectorielle. Voici une méthode simple pour le faire :
