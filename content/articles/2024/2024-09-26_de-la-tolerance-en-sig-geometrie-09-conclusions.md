@@ -26,7 +26,7 @@ tags:
 
 On a souvent ces interrogations sur les « irrégularités » rencontrées lors des opérations courantes dans les SIG : pourquoi les accrochages dans QGIS ne se positionnent-ils pas toujours exactement sur la géométrie ? Pourquoi les calculs de superposition manquent-ils de précision ? Et pourquoi les résultats peuvent-ils être incohérents ?
 
-Plutôt que de se perdre dans une quête de surprécision, voici les 10 conseils conseils pour améliorer votre expérience SIG et vivre une vie meilleure.
+Plutôt que de se perdre dans une quête de surprécision, voici les 5 conseils pour améliorer votre expérience SIG et vivre une vie meilleure.
 
 Derrière cette expression « incitaclic », voici en réalité quelques conseils ou expériences que j'ai pu rencontrer sur différents projets.
 
