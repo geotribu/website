@@ -75,7 +75,7 @@ Si vraiment, vous souhaitez que les nœuds soient identiques, la topologie est l
 !!! quote "Conseil n°4 : comptez-vous !"
     Comprenez comment les nombres sont représentés dans les ordinateurs. Cela aide à anticiper et à gérer les erreurs de calcul, notamment les différences entre les nombres en virgule flottante et les autres.
 
-Tout est de la faute des nombres en virgule flottante ! Vous pouvez utiliser d'autres outils, mais attention, la conversion peut engendrer des erreurs.
+Tout est de la faute des nombres en virgule flottante ! Vous pouvez utiliser d'autres outils, mais attention, la conversion peut engendrer des erreurs. Sans aller jusqu'au détail de ces nombres, il faudrait retenir que 0.1 + 0.2 != 0.3.
 
 ----
 
