@@ -7,23 +7,15 @@ categories:
     - article
 comments: true
 date: 2024-09-26
-description: "Neuvième et dernière partie du tour d'horizon des SIG sur les dessous des calculs géométriques : conslusions et 5 conseils pour vivre une vie meilleure."
+description: "Neuvième et dernière partie du tour d'horizon des SIG sur les dessous des calculs géométriques : 5 conseils pour vivre votre meilleure vie géométrique."
 icon: material/meditation
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_09_conclusion.png
 license: beerware
 robots: index, follow
 tags:
-    - analyse
-    - ArcGIS
-    - FME
     - géométrie
-    - GEOS
-    - GRASS
-    - PostGIS
-    - QGIS
-    - SAGA
-    - SFCGAL
     - topologie
+    - way of life
 ---
 
 # 5 conseils pour arrêter de trop penser et vivre une vie meilleure !
@@ -51,40 +43,55 @@ Cet article est la neuvième et dernière partie de la série d'été sur la ges
 
 ## Arrêtez de chercher la surprécision
 
-!!! quote "Le prix de la rigueur"
+!!! quote "Conseil n°1 : Le prix de la rigueur"
     La rigueur à tout prix peut devenir une source de frustration. Acceptez qu’une légère imprécision est inévitable et concentrez-vous sur l’essentiel.
 
 On est dans un monde infini, mais avec des ressources finies. Quelques arrondis ne font pas de mal. De combien de chiffres après la virgule avez-vous réellement besoin ? Votre précision c'est le décimètre, le centimètre, le millimètre, au-delà  ? Vous avez besoin de combien de chiffres pour [Pi](https://www.jpl.nasa.gov/edu/news/2016/3/16/how-many-decimals-of-pi-do-we-really-need/). Combien d'approximations réalisez-vous au quotidien, tout en étant précis ? Il est actuellement 21 h 02 ou simplement 21 h ? Quand vous réalisez un trajet de chez vous aux rencontres QGIS, vous êtes précis à la seconde, à la minute, au quart d'heure ? Bref, la précision dépend de votre contexte et il y a fort à parier que vous allez rarement être en dessous de 10^-3 sur du cartésien et 10^-8 en géodésique.
 
 ![xkcd 2170 - Credits : Randall Monroe](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/xkcd_coordinate_precision.webp){: .img-center loading=lazy }
 
+----
+
 ## Gérez la tolérance
 
-_Utilisez des tolérances appropriées dans vos calculs pour minimiser les effets des erreurs d'arrondi. Définissez des tolérances adaptées à l’échelle et aux objectifs de votre projet._
+!!! quote "Conseil n°2 : À chaque calcul, sa tolérance"
+    Utilisez des tolérances appropriées dans vos calculs pour minimiser les effets des erreurs d'arrondi. Définissez des tolérances adaptées à l’échelle et aux objectifs de votre projet.
 
 En lien avec le nombre de chiffres après la virgule, vous pouvez également ajouter une tolérance. En France, les gestionnaires de réseaux savent qu'on les caractérise suivant 3 classes : A, B ou C. 10 cm, 40 cm, etc. Une bonne pratique est de se demander si le point n'est pas à une distance d'environ X cm. Sur PostGIS, cela va se caractériser par l'utilisation de `ST_DWithin` plutôt qu'un `ST_Intersects`.
 
+----
+
 ## Utilisez la topologie
 
-_La topologie permet de gérer les relations spatiales et de corriger les erreurs géométriques. Les outils topologiques garantissent que les entités spatiales respectent certaines règles, améliorant ainsi la cohérence des données._
+!!! quote "Conseil n°3 : faut-il vraiment vous faire un topo ?"
+    La topologie permet de gérer les relations spatiales et de corriger les erreurs géométriques. Les outils topologiques garantissent que les entités spatiales respectent certaines règles, améliorant ainsi la cohérence des données.
 
 Si vraiment, vous souhaitez que les nœuds soient identiques, la topologie est là pour vous. Mais, attention, vous avez vu, cela transforme légèrement la donnée en entrée. Par ailleurs, suivant les outils que vous utilisez, elle peut ne pas être respectée lors d'éditions dans d'autres outils que ceux sur lesquels vous allez travailler. D'où l'idée de déporter l'intelligence en base : Thick database (base épaisse).
 
+----
+
 ## Connaissez les autres nombres
 
-_Comprenez comment les nombres sont représentés dans les ordinateurs. Cela aide à anticiper et à gérer les erreurs de calcul, notamment les différences entre les nombres en virgule flottante et les autres._
+!!! quote "Conseil n°4 : comptez-vous !"
+    Comprenez comment les nombres sont représentés dans les ordinateurs. Cela aide à anticiper et à gérer les erreurs de calcul, notamment les différences entre les nombres en virgule flottante et les autres.
 
 Tout est de la faute des nombres en virgule flottante ! Vous pouvez utiliser d'autres outils, mais attention, la conversion peut engendrer des erreurs.
 
+----
+
 ## Investissez dans l'évolution des outils
 
-_Soutenez le développement et l'amélioration des outils SIG, surtout les projets open source comme ceux de l'OSGeo !_
+!!! quote "Conseil n°5 : calculez sur le temps long."
+    Soutenez le développement et l'amélioration des outils SIG, surtout les projets open source comme ceux de l'OSGeo !
 
 On ne le dira jamais assez, mais si un fonctionnement ou un bug vous dérange. Financez-nous ! On se fera un plaisir d'y répondre. Ça vaut également pour les demandes de fonctionnalités.
 
+----
+
 ## Conclusion finale
 
-_La quête de la perfection numérique dans les SIG peut être frustrante. En adoptant une approche pragmatique et en comprenant les limites des calculs numériques, vous pouvez réduire le stress et améliorer votre efficacité. En acceptant ces réalités, vous pourrez arrêter de trop penser et commencer à vivre une vie meilleure, plus sereine et productive dans vos projets géospatiaux._
+!!! quote "Comprendre > penser"
+    La quête de la perfection numérique dans les SIG peut être frustrante. En adoptant une approche pragmatique et en comprenant les limites des calculs numériques, vous pouvez réduire le stress et améliorer votre efficacité. En acceptant ces réalités, vous pourrez arrêter de trop penser et commencer à vivre une vie meilleure, plus sereine et productive dans vos projets géospatiaux.
 
 C'est beau, hein ?
 
@@ -92,7 +99,7 @@ En réalité, vivez vos SIG comme vous le voulez, mais ayez connaissance de leur
 
 J'espère que cette série d'articles vous a intéressé. D'autres sur la comparaison entre les outils devraient venir.
 
-Et pour finir, merci à mes relecteurs de GeoTribu, à Sandro Santilli (correction d'une erreur dans un code), Martin Davis aka Dr. Jts (pour ses apports sur les « concurrents ») et tout ce qu'il a pu faire pour nos outils ! Et, enfin, merci à Julien Moura qui a su être patient avant de voir la première phrase :D
+Et pour finir, merci à mes relecteurs de GeoTribu, à [Sandro Santilli](https://www.osgeo.org/member/sandro-santilli/) (correction d'une erreur dans un code), [Martin Davis](https://wiki.osgeo.org/wiki/User:Mdavis) aka Dr. [JTS](https://www.osgeo.org/projects/jts/) (pour ses apports sur les « concurrents ») et tout ce qu'il a pu faire pour nos outils ! Et, enfin, merci à [Julien Moura](../../team/julien-moura.md "Julien Moura") qui a su être patient avant de voir la première phrase :grin:.
 
 <!-- geotribu:authors-block -->
 
