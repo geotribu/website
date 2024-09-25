@@ -30,6 +30,8 @@ Plutôt que de se perdre dans une quête de surprécision, voici les 10 conseils
 
 Derrière cette expression « incitaclic », voici en réalité quelques conseils ou expériences que j'ai pu rencontrer sur différents projets.
 
+![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : conclusions - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_09_conclusion.png){: .img-center loading=lazy }
+
 Cet article est la neuvième et dernière partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
 [Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
