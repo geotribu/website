@@ -36,7 +36,7 @@ Maintenant que l'on a regardé comment sont gérées les opérations géométriq
 Cet article est la huitième partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
 [Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
-[7 : ESRI et FME :fontawesome-solid-backward-step:](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md "Gestion de la géométrie dans ESRI et FME"){: .md-button }
+[7 : gestion propriétaire de la géométrie : ESRI et FME :fontawesome-solid-backward-step:](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md "Gestion de la géométrie dans ESRI et FME"){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
@@ -356,6 +356,9 @@ SAGA
 Enfin, GEOS :
 - Le test d'[intersects](https://github.com/libgeos/geos/blob/a8d2ed0aba46f88f9b8987526e68eea6565d16ae/src/algorithm/LineIntersector.cpp#L222)
 - Le calcul [orient2d](https://github.com/libgeos/geos/blob/a8d2ed0aba46f88f9b8987526e68eea6565d16ae/src/algorithm/CGAlgorithmsDD.cpp#L54) où l'on aperçoit un premier test rapide et si la robustesse n'est pas assez bonne, on passe sur une autre [arithmétique](https://github.com/libgeos/geos/blob/a8d2ed0aba46f88f9b8987526e68eea6565d16ae/include/geos/math/DD.h).
+
+[9 : 5 conseils pour bien vivre géométriquement (le 4è va vous étonner) :fontawesome-solid-forward-step:](./2024-09-26_de-la-tolerance-en-sig-geometrie-09-conclusions.md "Conclusions et conseils de vie"){: .md-button }
+{: align=middle }
 
 <!-- geotribu:authors-block -->
 

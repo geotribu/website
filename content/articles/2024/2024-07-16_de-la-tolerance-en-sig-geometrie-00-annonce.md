@@ -48,7 +48,7 @@ Dans les chapitres suivants, nous explorerons ensemble :
 - [Et dans les bases de données ? Comparaisons de SQL Server, Oracle et PostGIS](./2024-08-08_de-la-tolerance-en-sig-geometrie-04-postgis-oracle-ms-sql-server.md).
 - [Utilisation de la topologie : est-ce que la topologie peut nous sauver ?](./2024-08-15_de-la-tolerance-en-sig-geometrie-05-topologie-forces-et-limites.md)
 - [Approche alternative : utilisation de SFCGAL pour des calculs plus robustes.](./2024-08-22_de-la-tolerance-en-sig-geometrie-06-sfcgal.md)
-- [Et chez la concurrence, ça se passe comment ?](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md)
+- [Et chez les proprios, ça se passe comment ?](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md)
 - [Algorithmes et code : comment cela fonctionne-t-il ? Cette partie sera optionnelle, pour ceux ne voulant pas voir de code.](./2024-09-05_de-la-tolerance-en-sig-geometrie-08-algorithmes-code.md)
 - [La conclusion : comment arrêter de trop penser et vivre une vie meilleure !](./2024-09-26_de-la-tolerance-en-sig-geometrie-09-conclusions.md "Conclusions")
 

@@ -26,7 +26,7 @@ tags:
     - topologie
 ---
 
-# Comment arrêter de trop penser et vivre une vie meilleure !
+# 5 conseils pour arrêter de trop penser et vivre une vie meilleure !
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
@@ -51,7 +51,7 @@ Cet article est la neuvième et dernière partie de la série d'été sur la ges
 
 ## Arrêtez de chercher la surprécision
 
-!!! quote
+!!! quote "Le prix de la rigueur"
     La rigueur à tout prix peut devenir une source de frustration. Acceptez qu’une légère imprécision est inévitable et concentrez-vous sur l’essentiel.
 
 On est dans un monde infini, mais avec des ressources finies. Quelques arrondis ne font pas de mal. De combien de chiffres après la virgule avez-vous réellement besoin ? Votre précision c'est le décimètre, le centimètre, le millimètre, au-delà  ? Vous avez besoin de combien de chiffres pour [Pi](https://www.jpl.nasa.gov/edu/news/2016/3/16/how-many-decimals-of-pi-do-we-really-need/). Combien d'approximations réalisez-vous au quotidien, tout en étant précis ? Il est actuellement 21 h 02 ou simplement 21 h ? Quand vous réalisez un trajet de chez vous aux rencontres QGIS, vous êtes précis à la seconde, à la minute, au quart d'heure ? Bref, la précision dépend de votre contexte et il y a fort à parier que vous allez rarement être en dessous de 10^-3 sur du cartésien et 10^-8 en géodésique.
