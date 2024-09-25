@@ -66,7 +66,7 @@ En lien avec le nombre de chiffres après la virgule, vous pouvez également ajo
 !!! quote "Conseil n°3 : faut-il vraiment vous faire un topo ?"
     La topologie permet de gérer les relations spatiales et de corriger les erreurs géométriques. Les outils topologiques garantissent que les entités spatiales respectent certaines règles, améliorant ainsi la cohérence des données.
 
-Si vraiment, vous souhaitez que les nœuds soient identiques, la topologie est là pour vous. Mais, attention, vous avez vu, cela transforme légèrement la donnée en entrée. Par ailleurs, suivant les outils que vous utilisez, elle peut ne pas être respectée lors d'éditions dans d'autres outils que ceux sur lesquels vous allez travailler. D'où l'idée de déporter l'intelligence en base : Thick database (base épaisse).
+Si vraiment, vous souhaitez que les nœuds soient identiques, la topologie est là pour vous. Mais, attention, vous avez vu, cela transforme légèrement la donnée en entrée. Par ailleurs, suivant les outils que vous utilisez, elle peut ne pas être respectée lors d'éditions dans d'autres outils que ceux sur lesquels vous allez travailler. D'où l'idée de déporter l'intelligence en base : [Thick database (base épaisse)](https://img1.lemondeinformatique.fr/fichiers/telechargement/plaidoyer-de-frederic-brouard-sur-le-concept-de-bases-de-donnees-epaisses.pdf).
 
 ----
 
