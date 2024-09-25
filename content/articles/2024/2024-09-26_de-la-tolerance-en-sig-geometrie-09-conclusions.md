@@ -99,6 +99,8 @@ C'est beau, hein ?
 
 En réalité, vivez vos SIG comme vous le voulez, mais ayez connaissance de leurs fonctionnements. Oui, leurs, car chacun peut vous donner des résultats plus ou moins différents.
 
+![Bannière 5 conseils pour bien vivre géométriquement](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/bien_vivre_geometriquement.webp){: .img-center loading=lazy }
+
 J'espère que cette série d'articles vous a intéressé. D'autres sur la comparaison entre les outils devraient venir.
 
 Et pour finir, merci à mes relecteurs de GeoTribu, à [Sandro Santilli](https://www.osgeo.org/member/sandro-santilli/) (correction d'une erreur dans un code), [Martin Davis](https://wiki.osgeo.org/wiki/User:Mdavis) aka Dr. [JTS](https://www.osgeo.org/projects/jts/) (pour ses apports sur les « concurrents ») et tout ce qu'il a pu faire pour nos outils ! Et, enfin, merci à [Julien Moura](../../team/julien-moura.md "Julien Moura") qui a su être patient avant de voir la première phrase :grin:.
