@@ -26,7 +26,7 @@ tags:
 
 On a souvent ces interrogations sur les « irrégularités » rencontrées lors des opérations courantes dans les SIG : pourquoi les accrochages dans QGIS ne se positionnent-ils pas toujours exactement sur la géométrie ? Pourquoi les calculs de superposition manquent-ils de précision ? Et pourquoi les résultats peuvent-ils être incohérents ?
 
-Plutôt que de se perdre dans une quête de surprécision, voici les 10 conseils conseils pour améliorer votre expérience SIG et vivre une vie meilleure.
+Plutôt que de se perdre dans une quête de surprécision, voici les 5 conseils pour améliorer votre expérience SIG et vivre une vie meilleure.
 
 Derrière cette expression « incitaclic », voici en réalité quelques conseils ou expériences que j'ai pu rencontrer sur différents projets.
 
@@ -68,7 +68,7 @@ En lien avec le nombre de chiffres après la virgule, vous pouvez également ajo
 !!! quote "Conseil n°3 : faut-il vraiment vous faire un topo ?"
     La topologie permet de gérer les relations spatiales et de corriger les erreurs géométriques. Les outils topologiques garantissent que les entités spatiales respectent certaines règles, améliorant ainsi la cohérence des données.
 
-Si vraiment, vous souhaitez que les nœuds soient identiques, la topologie est là pour vous. Mais, attention, vous avez vu, cela transforme légèrement la donnée en entrée. Par ailleurs, suivant les outils que vous utilisez, elle peut ne pas être respectée lors d'éditions dans d'autres outils que ceux sur lesquels vous allez travailler. D'où l'idée de déporter l'intelligence en base : Thick database (base épaisse).
+Si vraiment, vous souhaitez que les nœuds soient identiques, la topologie est là pour vous. Mais, attention, vous avez vu, cela transforme légèrement la donnée en entrée. Par ailleurs, suivant les outils que vous utilisez, elle peut ne pas être respectée lors d'éditions dans d'autres outils que ceux sur lesquels vous allez travailler. D'où l'idée de déporter l'intelligence en base : [Thick database (base épaisse)](https://img1.lemondeinformatique.fr/fichiers/telechargement/plaidoyer-de-frederic-brouard-sur-le-concept-de-bases-de-donnees-epaisses.pdf).
 
 ----
 
@@ -77,7 +77,7 @@ Si vraiment, vous souhaitez que les nœuds soient identiques, la topologie est l
 !!! quote "Conseil n°4 : comptez-vous !"
     Comprenez comment les nombres sont représentés dans les ordinateurs. Cela aide à anticiper et à gérer les erreurs de calcul, notamment les différences entre les nombres en virgule flottante et les autres.
 
-Tout est de la faute des nombres en virgule flottante ! Vous pouvez utiliser d'autres outils, mais attention, la conversion peut engendrer des erreurs.
+Tout est de la faute des nombres en virgule flottante ! Vous pouvez utiliser d'autres outils, mais attention, la conversion peut engendrer des erreurs. Sans aller jusqu'au détail de ces nombres, il faudrait retenir que 0.1 + 0.2 != 0.3.
 
 ----
 
