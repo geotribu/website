@@ -50,7 +50,7 @@ Dans les chapitres suivants, nous explorerons ensemble :
 - [Approche alternative : utilisation de SFCGAL pour des calculs plus robustes.](./2024-08-22_de-la-tolerance-en-sig-geometrie-06-sfcgal.md)
 - [Et chez la concurrence, ça se passe comment ?](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md)
 - [Algorithmes et code : comment cela fonctionne-t-il ? Cette partie sera optionnelle, pour ceux ne voulant pas voir de code.](./2024-09-05_de-la-tolerance-en-sig-geometrie-08-algorithmes-code.md)
-- La conclusion : comment arrêter de trop penser et vivre une vie meilleure !
+- [La conclusion : comment arrêter de trop penser et vivre une vie meilleure !](./2024-09-26_de-la-tolerance-en-sig-geometrie-09-conclusions.md "Conclusions")
 
 Êtes-vous prêts pour l'aventure ? Sortons nos SIG !
 

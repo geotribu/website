@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-09-05
-description: "Huitième et dernière partie du tour d'horizon des SIG sur les dessous des calculs géométriques : algorithmes et code"
+description: "Huitième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : algorithmes et code"
 icon: material/code-block-tags
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_08_algos.png
 license: beerware
