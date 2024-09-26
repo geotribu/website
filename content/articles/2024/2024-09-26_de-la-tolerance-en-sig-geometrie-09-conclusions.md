@@ -14,8 +14,9 @@ license: beerware
 robots: index, follow
 tags:
     - géométrie
+    - lifestyle
+    - open source
     - topologie
-    - way of life
 ---
 
 # 5 conseils pour arrêter de trop penser et vivre une vie meilleure !
@@ -86,7 +87,7 @@ Tout est de la faute des nombres en virgule flottante ! Vous pouvez utiliser d'a
 !!! quote "Conseil n°5 : calculez sur le temps long."
     Soutenez le développement et l'amélioration des outils SIG, surtout les projets open source comme ceux de l'OSGeo !
 
-On ne le dira jamais assez, mais si un fonctionnement ou un bug vous dérange. Financez-nous ! On se fera un plaisir d'y répondre. Ça vaut également pour les demandes de fonctionnalités.
+On ne le dira jamais assez, mais si un fonctionnement ou un bug vous dérange donnez-vous les moyens de le corriger. **Investissez dans vos outils SIG !** Du temps et/ou de l'argent pour consolider les bases techniques sur lesquelles votre travail ou vos missions reposent. Rappelez-vous que même les logiciels propriétaires s'inspirent voire s'appuient sur les briques libres, ouvertes et gratuites (à l'usage) que sont GEOS, GDAL, SFCGAL, QGIS, SAGA, GRASS et d'autres encore. Ça vaut également pour les demandes de fonctionnalités.
 
 ----
 
@@ -103,7 +104,7 @@ En réalité, vivez vos SIG comme vous le voulez, mais ayez connaissance de leur
 
 J'espère que cette série d'articles vous a intéressé. D'autres sur la comparaison entre les outils devraient venir.
 
-Et pour finir, merci à mes relecteurs de GeoTribu, à [Sandro Santilli](https://www.osgeo.org/member/sandro-santilli/) (correction d'une erreur dans un code), [Martin Davis](https://wiki.osgeo.org/wiki/User:Mdavis) aka Dr. [JTS](https://www.osgeo.org/projects/jts/) (pour ses apports sur les « concurrents ») et tout ce qu'il a pu faire pour nos outils ! Et, enfin, merci à [Julien Moura](../../team/julien-moura.md "Julien Moura") qui a su être patient avant de voir la première phrase :grin:.
+Et pour finir, merci à mes relecteurs de Geotribu ([Michaël](../../team/michael-galien.md "Michaël Galien"), [Florian](../../team/florian-boret.md "Florian Boret"), [Guilhem](../../team/guilhem-allaman.md "Guilhem"), [Arnaud](../../team/arnaud-vandecasteele.md) et Julien), à [Sandro Santilli](https://www.osgeo.org/member/sandro-santilli/) (correction d'une erreur dans un code), [Martin Davis](https://wiki.osgeo.org/wiki/User:Mdavis) aka Dr. [JTS](https://www.osgeo.org/projects/jts/) (pour ses apports sur les « concurrents ») et tout ce qu'il a pu faire pour nos outils ! Et, enfin, merci à [Julien Moura](../../team/julien-moura.md "Julien Moura") qui a su être patient avant de voir la première phrase :grin:.
 
 <!-- geotribu:authors-block -->
 
