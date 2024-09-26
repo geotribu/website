@@ -1,5 +1,5 @@
 ---
-title: ESRI et FME
+title: "La gestion propriétaire de la géométrie : ESRI et FME"
 subtitle: "Série : De la tolérance en SIG - chapitre 7"
 authors:
     - Loïc Bartoletti
@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-08-29
-description: "Septième et avant-dernière partie du tour d'horizon des SIG sur les dessous des calculs géométriques : un petit tour chez ESRI et FME"
+description: "Septième et avant-dernière partie du tour d'horizon des SIG sur les dessous des calculs géométriques : un petit tour chez ESRI et FME."
 icon: simple/esri
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_07_esri_fme.png
 license: beerware
@@ -20,7 +20,7 @@ tags:
     - géométrie
 ---
 
-# Et chez la concurrence, ça se passe comment ?
+# Et chez les proprios, ça se passe comment ?
 
 On ne va pas tous les faire, mais seulement deux un peu connus et installés parfois à côté de QGIS comme logiciels SIG secondaires :wink:.
 
@@ -202,6 +202,9 @@ result.contains(line), result.crosses(line), result.equals(line), result.overlap
 ```
 
 On obtient bien le résultat souhaité. En fait, vous l'aurez peut-être compris en filigrane, ArcGIS ne propose pas un calcul "strict" comme les autres, mais bien quelque chose de particulier. Il est "tolérant".
+
+[8 : Algorithmes géométriques et code :fontawesome-solid-forward-step:](./2024-09-05_de-la-tolerance-en-sig-geometrie-08-algorithmes-code.md "Algorithmes géométriques et code : comment cela fonctionne-t-il ?"){: .md-button }
+{: align=middle }
 
 <!-- geotribu:authors-block -->
 
