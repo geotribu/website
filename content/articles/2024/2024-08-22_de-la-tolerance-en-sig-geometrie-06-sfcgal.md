@@ -8,7 +8,7 @@ categories:
 comments: true
 date: 2024-08-22
 description: "Sixième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : utilisation de SFCGAL pour des calculs plus robustes"
-icon: material/vector-polygon-variant
+icon: material/decimal-comma-decrease
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_06_sfcgal.png
 license: beerware
 robots: index, follow
@@ -29,7 +29,20 @@ Pour cela, laissez-moi introduire [SFCGAL](https://sfcgal.gitlab.io/SFCGAL/).
 
 ![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : SFCGAL - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_06_sfcgal.png){: .img-center loading=lazy }
 
+[Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
+[5 : topologie vs spaghetti :fontawesome-solid-backward-step:](./2024-08-15_de-la-tolerance-en-sig-geometrie-05-topologie-forces-et-limites.md "Topologie ; forces et limites"){: .md-button }
+{: align=middle }
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
+----
+
+## SFCGAL ?
+
 Il s'agit d'une bibliothèque logicielle C++ sous licence [LGPL2+](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html) construite comme une surcouche de [CGAL](https://www.cgal.org/) avec pour objectif de supporter l'[ISO 19107:2013](https://www.iso.org/fr/standard/26012.html) et la norme OGC [Simple Features Access](https://www.opengeospatial.org/standards/sfa/) 1.2 de l'OGC pour les opérations en 3D.
+
+![logo SFCGAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sfcgal.webp){: .img-center loading=lazy }
 
 Concrètement, SFCGAL fournit des types de géométries et des opérations conformes aux normes, auxquels on accède via ses API [C](https://sfcgal.gitlab.io/SFCGAL/doxygen/group__capi.html) ou [C++](https://sfcgal.gitlab.io/SFCGAL/doxygen/group__public__api.html).
 
@@ -44,6 +57,8 @@ On utilisera SFCGAL de deux façons, pour comparer leurs résultats :
 
 - avec Python
 - et avec PostGIS.
+
+----
 
 ## Python avec PySFCGAL
 
@@ -146,6 +161,9 @@ Ce qu'il faut comprendre, c'est que SFCGAL peut donner le résultat correct, à 
 Il existerait une façon de rendre le calcul correct dans PostGIS avec SFCGAL, mais ce n'est pas encore implémenté.
 
 Malgré les problèmes potentiels de précision dans son utilisation dans PostGIS, SFCGAL reste un outil précieux. Son principal atout réside dans ses fonctionnalités avancées en 2D et 3D, absentes de GEOS/PostGIS natif. Par ailleurs, ces erreurs ne sont pas systématiques et dépendent des données et opérations effectuées.
+
+[7 : La gestion propriétaire de la géométrie : ESRI et FME :fontawesome-solid-forward-step:](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md "Gestion de la précision géométrique dans Esri et FME"){: .md-button }
+{: align=middle }
 
 <!-- geotribu:authors-block -->
 
