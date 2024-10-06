@@ -110,11 +110,11 @@ graph TD
     C --> |Lecture des coordonnées RTK| G(App. carto) --> Z
 ```
 
-### Option 1 avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (gratuit) ou Map-it ( add-on NTRIP payant)
+### Option 1 avec interface native de gestion des corrections : utilisation de SW Maps
 
 ![icône SW Maps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sw_maps.webp){: .img-thumbnail-left }
 
-SW Maps présente l'avantage d'être gratuite et de gérer les corrections en temps réel du serveur NTRIP.
+[SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (gratuit) ou Map-it ( add-on NTRIP payant) présente l'avantage d'être gratuite et de gérer les corrections en temps réel du serveur NTRIP.
 
 !!! info "NTRIP"
     Un serveur NTRIP est un serveur qui permet d'accéder aux données de correction à apporter aux récepteurs mobiles.
