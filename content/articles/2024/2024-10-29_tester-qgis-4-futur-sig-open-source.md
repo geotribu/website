@@ -36,10 +36,11 @@ flowchart TD
     Q{QGIS} -->|Dépend de| B(Qt)
     Q -->|Dépend de| C(API géospatiales)
     Q <-->|Optionnellement| P[Python]
-    M(plugins) --> P:::pointilles
+    M(plugins) -->|Dépendent de| P:::pointilles
     B:::blocimportant --> S{"Système exploitation<br/>(et donc toutes les API système)"}
     C -->|dépend de| E[GEOS]
     C -->|dépend de| T[/Autres trucs moins connus\]
+    Q --> T
     C -->|dépend de| D[/GDAL\]
     D -->|dépend de| E
     D -->|dépend de| G
@@ -124,15 +125,15 @@ mkdir -p ~/Git/
 cd ~/Git
 git clone https://github.com/qgis/QGIS.git -b release-3_38 --single-branch --depth 1
 cd QGIS
-CXX=clang++-14 && CC=clang-14 && cmakeQGIS -DWITH_QTWEBKIT=FALSE -DWITH_SERVER=TRUE -DBUILD_WITH_QT6=ON -DCMAKE_PREFIX_PATH="$DEPENDS_DIR/qwt/install"
+CXX=clang++-14 && CC=clang-14 && cmakeQGIS -DWITH_QTWEBKIT=FALSE -DWITH_SERVER=FALSE -DBUILD_WITH_QT6=ON -DCMAKE_PREFIX_PATH="$DEPENDS_DIR/qwt/install" -DCMAKE_INSTALL_PREFIX=/usr/local/bin/qgis-build/
 ```
 
 ----
 
 ### Sur MacOS
 
-!!! example ""
-    Compte-tenu des coûts associés pour l'obtention d'un Mac M4, cette section est réservée aux abonnés premium de Geotribu. :face_with_hand_over_mouth:
+!!! warning ""
+    Compte-tenu des coûts associés pour l'obtention d'un [MacBook Pro M3 Max](https://www.apple.com/fr/shop/buy-mac/macbook-pro/16-pouces-m3-max), forcément indispensable pour ce tutoriel, cette section est réservée aux [abonnés premium de Geotribu](../../about/sponsoring.md). :face_with_hand_over_mouth:
 
 ----
 
