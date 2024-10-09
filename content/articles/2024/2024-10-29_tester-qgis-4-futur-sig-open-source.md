@@ -1,6 +1,6 @@
 ---
 title: Testez QGIS 4
-subtitle:
+subtitle: Le futur à portée de clics
 authors:
     - Julien MOURA
 categories:
@@ -33,19 +33,23 @@ tags:
 
 ```mermaid
 flowchart TD
-    A{QGIS} -->|Dépend de| B(Qt)
-    A -->|Dépend de| C(API géospatiales)
+    Q{QGIS} -->|Dépend de| B(Qt)
+    Q -->|Dépend de| C(API géospatiales)
+    Q <-->|Optionnellement| P[Python]
+    M(plugins) --> P:::pointilles
     B:::blocimportant --> S{"Système exploitation<br/>(et donc toutes les API système)"}
-    C --->|dépend de| D[/GDAL\]
-    D --> E
-    D --> G
-    D --> F
-    D --> Z@{ shape: docs, label: "Environ 73% des <br/>bibliothèques de drivers <br/>de formats de données <br/>géo-quelque-chose"}
     C -->|dépend de| E[GEOS]
+    C -->|dépend de| T[/Autres trucs moins connus\]
+    C -->|dépend de| D[/GDAL\]
+    D -->|dépend de| E
+    D -->|dépend de| G
+    D -->|dépend de| F
+    D -->|dépend de| Z@{ shape: docs, label: "Environ 73% des <br/>bibliothèques de drivers <br/>de formats de données <br/>géo-quelque-chose"}
     C -->|dépend de| F[PROJ]
-    C --->|dépend de| G[("Clients BDD<br/>liboci, libpq, <br/>libspatialite...")]
+    C --->|dépend de| G@{ shape: cyl, label: "Clients BDD<br/>liboci, libpq, <br/>libspatialite..." }
 
-    classDef blocimportant fill:#ff0000
+    classDef blocimportant fill:#ff0000,font-weight:bold
+    classDef pointilles fill:stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 ```
 
 Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trouve qu'elle est arrivée en fin de vie en... mai 2025 selon [la documentation officielle](https://doc.qt.io/qt-6/supported-platforms.html#supported-qt-versions).
@@ -54,9 +58,11 @@ Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trou
 
 ----
 
-## Sur Windows
+## Installer QGIS basé sur Qt6
 
-### Niveau : Arche Perdue
+### Sur Windows
+
+#### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg
 
 [le workflow Windows Qt6](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess)
 
@@ -66,7 +72,7 @@ Sinon, en mars dernier, OPENGIS.ch, en tête de pont sur le packaging Windows av
     Notez que cette version téléchargeable et autoporteuse est idéale pour les environnements où les droits d'installation sont limités.
     Si on vous demande d'où ça sort, dites que vous avez lu ça sur [arcOrama](https://www.arcorama.fr/) :zipper_mouth:.
 
-### Avec l'OSGeo4W
+#### Niveau aventurier dominical : l'OSGeo4W
 
 [Télécharger l'installateur OSGeo4W](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe){: .md-button }
 {: align=middle }
@@ -89,36 +95,62 @@ Lancer en mode administrateur puis suivre les étapes :
 1. :coffee:
 1. Il y aura peut-être des erreurs mais qu'importe, vous êtes arrivés jusqu'ici car vous vouliez un goût d'aventure dans la bouche ? Il n'est plus temps de reculer pour si peu.
 
-### Titre 3
+----
 
-On lance, on prend le temps d'essayer de reconnaître des têtes connues sur le splash screen de dév
+### Sur Linux
+
+Comment vous dire... c'est moins fluide, c'est plus... Linux quoi !
+Donc attachez vos ceintures de lignes de commande, préparez vos merguez électroniques, ça va basher et faire chauffer vos CPU et barrettes de ~~sh~~RAM ! Téléguidé par la bonne fée Cabièces, je vous livre une recette pour Debian/Ubuntu. Je passe les détails car on n'est pas ici sur [le guide pour développeurs barbus](https://github.com/qgis/QGIS/blob/master/INSTALL.md).
+
+#### Prérequis
+
+- make et build essentials
+- Git
+- 8 Go de RAM mais 12 c'est bien, 16 très bien et 32 c'est mieux
+- 6,5 Go d'espace disque. Notez qu'avec un SSD, tu gagnes un bonnus de vitesse.
+
+Globalement, ça doit se régler avec un :
+
+```sh
+sudo apt install cmake build-essentials git
+```
+
+#### Lancer le jeu de construction
+
+Sur un malentendu, la suite de commandes pourrait bien marcher du premier coup :
+
+```sh title="Builder QGIS avec Qt6 à partir d'une branche"
+mkdir -p ~/Git/
+cd ~/Git
+git clone https://github.com/qgis/QGIS.git -b release-3_38 --single-branch --depth 1
+cd QGIS
+CXX=clang++-14 && CC=clang-14 && cmakeQGIS -DWITH_QTWEBKIT=FALSE -DWITH_SERVER=TRUE -DBUILD_WITH_QT6=ON -DCMAKE_PREFIX_PATH="$DEPENDS_DIR/qwt/install"
+```
+
+----
+
+### Sur MacOS
+
+!!! example ""
+    Compte-tenu des coûts associés pour l'obtention d'un Mac M4, cette section est réservée aux abonnés premium de Geotribu. :face_with_hand_over_mouth:
+
+----
+
+## Quoi de neuf dans QGIS Qt 6 ?
+
+Allez, on lance, on prend le temps d'essayer de reconnaître des têtes connues sur le splash screen de dév
 
 et hop !
 
 Alors, qu'est-ce que ça change ?
 
 - le thème de l'interface s'aligne automatiquement sur les paramètres du système (sombre ou clair)
-- on peut choisir des couleurs en CMJN
+- on peut choisir des couleurs en CMJN et qu'elles soient conservées dans les PDF générés par QGIS, ainsi que le profil d'impression
 - peu de plugins sont compatibles et on ne peut pas filtrer dessus donc c'est assez compliqué de savoir
 - on peut voter sur un plugin directement depuis l'interface
 - on a une sensation de vitesse à l'utilisation mais c'est peut-être lié au fait qu'il n'y a aucun plugin d'installé
-- il y a parfois des messages d'erreur
-- sur Linux, le support de Wayland
-
-----
-
-## Sur Linux
-
-Comment vous dire...
-
-----
-
-## Sur MacOS
-
-!!! example ""
-    Compte-tenu des coûts associés pour l'obtention d'un Mac M4, cette section est réservée aux abonnés premium de Geotribu.
-
-:face_with_hand_over_mouth:
+- il y a parfois des messages d'erreur mais c'est bon pour le karma d'aventurier
+- sur Linux, le système d'affichage Wayland est désormais pleinement supporté
 
 ----
 
