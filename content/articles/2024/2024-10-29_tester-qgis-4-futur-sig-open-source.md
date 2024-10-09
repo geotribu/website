@@ -33,9 +33,9 @@ tags:
 
 ```mermaid
 flowchart TD
-    Q{QGIS} -->|Dépend de| B(Qt)
+    Q{QGIS} == Dépend de ==> B(Qt)
     Q -->|Dépend de| C(API géospatiales)
-    Q <-->|Optionnellement| P[Python]
+    Q <--->|Optionnellement| P[Python]
     M(plugins) -->|Dépendent de| P:::pointilles
     B:::blocimportant --> S{"Système exploitation<br/>(et donc toutes les API système)"}
     C -->|dépend de| E[GEOS]
@@ -47,7 +47,7 @@ flowchart TD
     D -->|dépend de| F
     D -->|dépend de| Z@{ shape: docs, label: "Environ 73% des <br/>bibliothèques de drivers <br/>de formats de données <br/>géo-quelque-chose"}
     C -->|dépend de| F[PROJ]
-    C --->|dépend de| G@{ shape: cyl, label: "Clients BDD<br/>liboci, libpq, <br/>libspatialite..." }
+    C -->|dépend de| G@{ shape: cyl, label: "Clients BDD<br/>liboci, libpq, <br/>libspatialite..." }
 
     classDef blocimportant fill:#ff0000,font-weight:bold
     classDef pointilles fill:stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
