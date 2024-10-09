@@ -10,29 +10,29 @@ De Panoramax à Osmose, des grands référentiels publics (BNB, OCSGE...) à ceu
 
 Dès lors, qu'en retenir de façon globale ? Exercice difficile s'il en est, car la concomitance des présentations, dilemme habituel du congressiste, ne permet pas de rendre pleinement compte d'autre chose que ce à quoi il a assisté.
 
-Quelques mots-clés peuvent servir à en décrire le contenu : Panoramax, qualité des données, vélo, trains, IGN, eau, portails d'accès, tourisme, applications, climat, IA, adresses, archivage... 
+Quelques mots-clés peuvent servir à en décrire le contenu : Panoramax, qualité des données, vélo, trains, IGN, eau, portails d'accès, tourisme, applications, climat, IA, adresses, archivage...
 
 Dans cet article, je vous parlerais donc essentiellement de quelques conférences auxquelles j'ai eu le bonheur d'assister. Pour le reste, les [vidéos](https://peertube.openstreetmap.fr/c/sotm_fr_2024/videos) et les [présentations](http://sotm2024.openstreetmap.fr/programme.html) sont disponibles (ou vont arriver très bientôt) et je rajoute en fin d'articles quelques liens plus directs pour fouiller.
 
-**Intervention inaugurale** 
+**Intervention inaugurale**
 
 - par la métropole de Lyon : H. Greolas retrace l'évolution de la gestion des données (spatiales) de la métropole de Lyon, notamment du MCPP (« Moi C'est Pas Pareil ») à la stratégie open data actuelle basée sur le triptyque «Comprendre (passé), Piloter (présent), Prévoir (futur)»
 
 - puis par l'Université Lyon 3 : sont présentés la richesse actuelle des événements pour les amoureux des cartes avec de nombreuses [conférences](https://ichc2024.univ-lyon3.fr/accueil-fr) et nombreuses [expositions](https://ichc2024.univ-lyon3.fr/expositions-1) de cartographie en cours dans la capitale des Gaules. Bernard Gauthiez, professeur de géographie, pointe la nécessité d'archivage des données numériques en particulier dans les services publics. Petit clin d'œil malicieux du public qui le renvoie sur le travail de Christian Quest, présent dans la salle : [opendatarchives](https://www.opendatarchives.fr/).
 
 - Petits topo éclairs sur quelques sujets :
-  
-  - C. Frayssinet nous présente une petite application permettant de proposer de la **formation sur smartphone** (*mobile learning*) avec **[ePoc](https://epoc.inria.fr/)** et comment il a développé une formation à OSM à destination de ses élèves de seconde
-  
-  - F. Rodrigo sur la difficulté à avoir de la **lisibilité spatiale et réglementaire sur les zones à faibles émissions** ([BN ZFE](https://transport.data.gouv.fr/datasets/base-nationale-consolidee-des-zones-a-faibles-emissions) «inutilisable», on utilise le tag [boundary = low_emission_zone](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dlow_emission_zone#France) dans OSM) et leurs liens avec les zones Crit'Air encore bien flous
-  
-  - A. Vuillard nous raconte ses **galères à développer des applications SIG** quand on n'a pas l'habitude
-  
-  - I. Amri nous présente un **[générateur d'atlas pour faire des cyclorando](http://atlas.iliasamri.com/)** à partir d'une trace GPX
-  
-  - Thibault nous renvoie vers son usage d'[OSM Tracker Android](https://wiki.openstreetmap.org/wiki/FR:OSMTracker_(Android)) pour **contribuer en mouvement**
-  
-  - JC Becquet nous parle des **belles rencontres** que l'on fait **grâce à OSM** 
+
+    - C. Frayssinet nous présente une petite application permettant de proposer de la **formation sur smartphone** (*mobile learning*) avec **[ePoc](https://epoc.inria.fr/)** et comment il a développé une formation à OSM à destination de ses élèves de seconde
+
+    - F. Rodrigo sur la difficulté à avoir de la **lisibilité spatiale et réglementaire sur les zones à faibles émissions** ([BN ZFE](https://transport.data.gouv.fr/datasets/base-nationale-consolidee-des-zones-a-faibles-emissions) «inutilisable», on utilise le tag [boundary = low_emission_zone](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dlow_emission_zone#France) dans OSM) et leurs liens avec les zones Crit'Air encore bien flous
+
+    - A. Vuillard nous raconte ses **galères à développer des applications SIG** quand on n'a pas l'habitude
+
+    - I. Amri nous présente un **[générateur d'atlas pour faire des cyclorando](http://atlas.iliasamri.com/)** à partir d'une trace GPX
+
+    - Thibault nous renvoie vers son usage d'[OSM Tracker Android](https://wiki.openstreetmap.org/wiki/FR:OSMTracker_(Android)) pour **contribuer en mouvement**
+
+    - JC Becquet nous parle des **belles rencontres** que l'on fait **grâce à OSM**
 
 *Un petit ravitaillement juste après ces introductions aurait dû nous mettre la puce à l'oreille que l'activité principale du SotM serait bien physique : la montée des marches jusqu'au 3e étage pour rejoindre les salles de conférence.*
 
@@ -42,33 +42,33 @@ Dans cet article, je vous parlerais donc essentiellement de quelques conférence
 
 #### DataSud (T. Emery & V. Canut - Région SUD-PACA)
 
-Présentation de l'outil [DataSud](https://www.datasud.fr/portal/), plateforme d'opendata, mais pas que ! 
+Présentation de l'outil [DataSud](https://www.datasud.fr/portal/), plateforme d'opendata, mais pas que !
 
 L'infrastructure est pensée pour mettre à disposition des données de différentes natures (dont données MAJIC) à des publics différents : collectivités, associations, etc. Se voulant un hub de données régionales, DataSud moissonne les données OSM sur les [fichiers diffs](https://wiki.openstreetmap.org/wiki/Planet.osm/diffs) et crée des couches prétraitées grâce à [Osmium](https://github.com/osmcode/), [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis) et [osm2pgsql](https://osm2pgsql.org/). La base initiale est ainsi digérée en 35 tables définies par un fichier LUA, puis d'autres tables gérées avec des vues thématisées selon [la nomenclature OSM FR](https://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques) (plus d'infos [ici](https://gitlab.datasud.fr/projets_publics/openstreetmap4datasud)).
 
 Un [catalogue](https://www.datasud.fr/explorer/fr/recherche) propose des téléchargements dans des formats très divers et des [cartes](https://www.datasud.fr/maps/) sont directement proposées.
 
-*Entendu au SOTM* : « - *Vous savez où sont les toilettes ?* - *Attendez je regarde sur OSM [...] Ah oui, c'est bon ! ils sont là, juste à gauche !*» 
+*Entendu au SOTM* : « - *Vous savez où sont les toilettes ?* - *Attendez je regarde sur OSM [...] Ah oui, c'est bon ! ils sont là, juste à gauche !*»
 
 #### L'OCSGE et le CoSIA de l'IGN : une nouvelle opportunité pour OSM? (X. Halbecq IGN et J.-L. Zimmermann CD84)
 
-L'occupation du sol à grande échelle (OCSGE) est une nouvelle base géographique vectorielle de référence développée par l'IGN. En 2 dimensions, elle vise à **(1) décrire la couverture et (2) l'usage des sols** de la [France entière d'ici fin 2025](https://macarte.ign.fr/carte/VVpbhc/Production-de-l-OCS-GE-NG). La résolution est d'environ 20cm mais l'échelle d'utilisation est a priori entre 1:2500 et 1:5000.  Son développement vient notamment combler les besoins de suivi de la loi Zéro Artificialisation Nette. 
+L'occupation du sol à grande échelle (OCSGE) est une nouvelle base géographique vectorielle de référence développée par l'IGN. En 2 dimensions, elle vise à **(1) décrire la couverture et (2) l'usage des sols** de la [France entière d'ici fin 2025](https://macarte.ign.fr/carte/VVpbhc/Production-de-l-OCS-GE-NG). La résolution est d'environ 20cm mais l'échelle d'utilisation est a priori entre 1:2500 et 1:5000.  Son développement vient notamment combler les besoins de suivi de la loi Zéro Artificialisation Nette.
 
 Comment ça marche ?
 
-- des photographies aériennes (RVB & infrarouges) sont récupérées et associées à des MNS et MNT 
+- des photographies aériennes (RVB & infrarouges) sont récupérées et associées à des MNS et MNT
 
 - un [modèle de *deep learning*](https://ignf.github.io/FLAIR/index_fr.html) entraîné sur un important jeu d'annotations classifie [14 formes de couverture](https://artificialisation.developpement-durable.gouv.fr/sites/artificialisation/files/inline-files/Marque%20page_OCS_GE_sept2017_RV_V3-1_0.png) et [17 formes d'usages du sol](https://artificialisation.developpement-durable.gouv.fr/sites/artificialisation/files/inline-files/Marque%20page_OCS_GE_sept2017_RV_V3-2.png)
 
 - un processus de correction double est ensuite mobilisé pour détecter des anomalies dans la classification automatique :
-  
-  - correction par photointerprétation d'un sous-traitant
-  
-  - remontées utilisateurs
+
+    - correction par photointerprétation d'un sous-traitant
+
+    - remontées utilisateurs
 
 - un [téléchargement de la donnée](https://geoservices.ign.fr/ocsge#telechargement) est proposé, accompagné d'une [feuille de style pour SIG](https://geoservices.ign.fr/sites/default/files/2023-07/Styles_OCSGE.zip) ou même un [projet SIG](https://geoservices.ign.fr/sites/default/files/2022-11/Projets_carto_OCSGE.zip)
 
-Autre produit présenté, [CosIA](https://cosia.ign.fr/), qui lui est un traitement purement automatique proposant [la couverture du sol en 16 classes](https://cosia.ign.fr/pdf/Cosia_Nomenclature_IGN_2023.pdf) sur une base vectorisée et simplifiée lui aussi à une résolution de 20cm. [La précision et l'usage sont assez différents de l'OCSGE](https://cosia.ign.fr/pdf/Comparatif_OCSGE_CoSIA_IGN_2023.pdf) : c'est un pur traitement d'images aériennes, sans corrections, et sans info sur ce qui n'est pas visible. [Le produit est déjà téléchargeable pour quelques départements]((https://cosia.ign.fr/info#export).
+Autre produit présenté, [CosIA](https://cosia.ign.fr/), qui lui est un traitement purement automatique proposant [la couverture du sol en 16 classes](https://cosia.ign.fr/pdf/Cosia_Nomenclature_IGN_2023.pdf) sur une base vectorisée et simplifiée lui aussi à une résolution de 20cm. [La précision et l'usage sont assez différents de l'OCSGE](https://cosia.ign.fr/pdf/Comparatif_OCSGE_CoSIA_IGN_2023.pdf) : c'est un pur traitement d'images aériennes, sans corrections, et sans info sur ce qui n'est pas visible. [Le produit est déjà téléchargeable pour quelques départements]((<https://cosia.ign.fr/info#export>).
 
 Ces produits de grande résolution offrent une formidable opportunité pour les cartes OSM françaises : [les données d'utilisation du sol](https://wiki.openstreetmap.org/wiki/FR:Key:landuse) ont historiquement été importées du Corine Land Cover, relativement grossières et imprécises. La mise à jour régulière annoncée (tous les 3 ans) porte également en elle des espoirs de maintien durable de la qualité des données sur OSM.
 
@@ -88,15 +88,15 @@ L'application [uMap](https://umap-project.org/fr/) qui aide à la création de c
 
 - Le clic-droit > "Modifier dans OpenStreetMap"
 
-https://nuage.yohanboniface.me/umap_lyon_2024.pdf
+<https://nuage.yohanboniface.me/umap_lyon_2024.pdf>
 
 #### Présentation de Cartes.app (M. Thomas)
 
 *Cette [présentation](https://peertube.openstreetmap.fr/w/oJwaAP1PbeLsK2zywTzLga) de Maël Thomas-Quillévéré m'a fait forte impression et je ne pense pas être le seul étant donné sa limpidité et son engagement. Vous pouvez d'ailleurs la revisionner [ici](https://peertube.openstreetmap.fr/w/oJwaAP1PbeLsK2zywTzLga). Il est rare que des développeurs tombent le masque et affichent des positions qui ne soient pas consensuelles pour les congressistes. Cette radicalité a pour elle de nous rappeler à l'acceptabilité éthique et morale de nos développements. En l'occurrence, Maël plante immédiatement le décor du problème à résoudre avec [ce graphique](https://ourworldindata.org/grapher/co2-mitigation-15c) montrant les réductions d'émissions à effectuer pour atteindre des objectifs climatiques qui ne soient pas irrémédiables pour notre planète et ses habitants des différentes espèces.*
 
-En France, 1/4 de l'empreinte environnementale est liée à la voiture et 90% des dépenses totales de mobilité (privées + publiques) vont pour le système "voiture". 
+En France, 1/4 de l'empreinte environnementale est liée à la voiture et 90% des dépenses totales de mobilité (privées + publiques) vont pour le système "voiture".
 
-Par ailleurs, l'application de mobilité dominante en France est Google Maps : une application qui est pensée pour la voiture et qui met en avant des fonctionnalités et des résultats pour la voiture au détriment des autres modes de transport. 
+Par ailleurs, l'application de mobilité dominante en France est Google Maps : une application qui est pensée pour la voiture et qui met en avant des fonctionnalités et des résultats pour la voiture au détriment des autres modes de transport.
 
 La France est très/trop attachée à la voiture et de nombreuses lacunes informationnelles sont pointées quant au [coût réel du système "voiture" dans son ensemble et pour le particulier](https://futur.eco/cout-voiture#introduction), mais aussi sur des solutions comme la voiture électrique qui nage dans un "[océan d'infox](https://bonpote.com/ocean-de-fake-news-sur-la-voiture-electrique/)"
 
@@ -126,7 +126,7 @@ Les problèmes rencontrés :
 
 #### Cartographier les cours d'eau (F. Lacombe et J.L. Zimmermann)
 
-La restitution de l'expérience acquise par deux grands contributeurs de cette thématique sur OSM a tenu toutes ses promesses. La résolution d'un certain nombre de problèmes de sémantique ou de capillarité a ici été démontrée pour cette thématique d'avenir. 
+La restitution de l'expérience acquise par deux grands contributeurs de cette thématique sur OSM a tenu toutes ses promesses. La résolution d'un certain nombre de problèmes de sémantique ou de capillarité a ici été démontrée pour cette thématique d'avenir.
 
 Quand on parle de cours d'eau on imagine évidemment aux lacs ou à la belle rivière coulant sans obstacle, mais la réalité est bien plus compliquée que ça à intégrer pour OSM : cours d'eau artificiels, intermittents, de tracé variable ou enterrés.
 
@@ -145,16 +145,16 @@ Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléme
 - disposer d'une **sémantique détaillée** : définie par l'ensemble des tags utilisés, la sémantique émerge de la communauté par propositions et par uniformisation au niveau mondial. Certains tags ont été supprimés pour les faire évoluer faire des choses plus précises et utilisables. On a maintenant la capacité de décrire un grand nombre d'objets très précisément : à découvrir sans tarder sur le wiki ([FR:Key:inlet](https://wiki.openstreetmap.org/wiki/FR:Key:inlet)). Il reste cependant beaucoup de travaux à mener aux niveaux des tags ! Une attention doit enfin être portée aux liens avec les **référentiels nationaux** (Sandre notamment) et les standards (Star-EAU)
 
 - **compléter l'inventaire : en allant sur le terrain !!**
-  
-  - très peu d'objets hors écoulement libre
-  
-  - beaucoup d'objets non/mal connectés au réseau, en assurant la connectivité : la base OSM fournit finalement un graphe connexe des cours d'eau et en utilisant https://waterwaymap.org/ on peut vérifier la connectivité !
-  
-  - ce qui permet de pallier les manques de la BD Topage, très incomplète et/ou incorrecte qui gagnerait sans doute à intégrer OSM dans ses données.
 
-#### 
+    - très peu d'objets hors écoulement libre
 
-#### Conférences parallèles et quelques liens :
+    - beaucoup d'objets non/mal connectés au réseau, en assurant la connectivité : la base OSM fournit finalement un graphe connexe des cours d'eau et en utilisant <https://waterwaymap.org/> on peut vérifier la connectivité !
+
+    - ce qui permet de pallier les manques de la BD Topage, très incomplète et/ou incorrecte qui gagnerait sans doute à intégrer OSM dans ses données.
+
+####
+
+#### Conférences parallèles et quelques liens
 
 - [State of Panoramax](https://peertube.openstreetmap.fr/w/iKjt6BjhP9Da54cUxmfohT) par C. Quest & F. Lainez : [Panoramax](https://panoramax.fr/), « *une seule photo pour les servir tous*» (libre, [ouvert](https://gitlab.com/panoramax), commun), [une appli de contribution en alphatest](https://s.42l.fr/panoramax-beta), [une carto des zones à photographier !](https://panoramax.openstreetmap.fr)
 
@@ -166,7 +166,7 @@ Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléme
 
 - [Clearance : contrôler collaborativement des données OSM pour des usages thématiques](https://peertube.openstreetmap.fr/w/m9irHASKWBdCLqff9nbLnQ) par V. Bergeot et F. Rodrigo. Pour un contrôle collaboratif des données sur OSM.
 
-- Cartes IGN par N. Berthelot : présentation [ici](https://pretalx.com/media/sotm-fr-2024/submissions/PKLYHN/resources/Appli_Cartes_IGN_SOTM_2024_lZHF0sl.pdf). En attendant https://cartes.gouv.fr/
+- Cartes IGN par N. Berthelot : présentation [ici](https://pretalx.com/media/sotm-fr-2024/submissions/PKLYHN/resources/Appli_Cartes_IGN_SOTM_2024_lZHF0sl.pdf). En attendant <https://cartes.gouv.fr/>
 
 - [Comment SNCF Voyageurs utilise OSM pour calculer l'écart horaire](https://peertube.openstreetmap.fr/w/1Bi7aeGiRFWAXhU61a8gKC) par D. Cheynet
 
@@ -182,7 +182,7 @@ Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléme
 
 - Cartographie pour le VTT par L. Morinon : présentation [ici](https://pretalx.com/media/sotm-fr-2024/submissions/HJ7ZLW/resources/SOTM2024-UtagawaVTT_2_e7Jho5z.pdf). [UTAGAWA VTT](https://www.utagawavtt.com/search?city=&w=[-12.48047,39.59722,15.64454,52.88901]&q=[1,2,3,4]&k=0&l=all&u=1&aa=25)
 
-- Mapper les trottoirs pour l'accessibilité par F. Lainez et M. Nicolas : présentation [ici](https://pretalx.com/media/sotm-fr-2024/submissions/RR8LHN/resources/Mapper_des_trottoirs_pour_laccessibilit%C3%A9_XvYiUhZ.pdf) 
+- Mapper les trottoirs pour l'accessibilité par F. Lainez et M. Nicolas : présentation [ici](https://pretalx.com/media/sotm-fr-2024/submissions/RR8LHN/resources/Mapper_des_trottoirs_pour_laccessibilit%C3%A9_XvYiUhZ.pdf)
 
 - Architecture SIG au SDIS34 pour l'exploitation des données OSM par N. Moyroud : présentation [ici](https://pretalx.com/media/sotm-fr-2024/submissions/83N9QQ/resources/architecture_SIG_OSM_SDIS34_RVKi3xx.pdf). [LeBonTag](https://www.lebontag.fr/)
 
@@ -190,6 +190,6 @@ Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléme
 
 - Géocoder efficacement avec BANO et Addok F. Rodrigo : présentation [ici](https://pretalx.com/media/sotm-fr-2024/submissions/9XBWWA/resources/G%C3%A9ocoder_effectivement_avec_BANO_et_Addok_BYTKxkM.pdf)
 
-- Le[ stationnement cyclable dans les grandes villes européennes](https://peertube.openstreetmap.fr/w/pxjVCP4BYEEowJXvL7y4Fy) par [GeoVélo](https://geovelo.app/fr/). Selon leur classement, dépendant des données remontées, Lyon est la meilleure ville française en nombre de stationnement vélo /hab.
+- Le[stationnement cyclable dans les grandes villes européennes](https://peertube.openstreetmap.fr/w/pxjVCP4BYEEowJXvL7y4Fy) par [GeoVélo](https://geovelo.app/fr/). Selon leur classement, dépendant des données remontées, Lyon est la meilleure ville française en nombre de stationnement vélo /hab.
 
 - [OSMTracker-Android : personnaliser, contribuer et maintenir](https://peertube.openstreetmap.fr/w/51rvQ2UVMbC8fwUs9NZB8y) par Thibtib51
