@@ -2,7 +2,7 @@
 
 Qu’on se le dise, OSM France, c'est du costaud. Tellement même qu'en assemblée générale ce samedi 29 juin au soir, les contributeurs s'interrogent sur une évolution qualitative du projet associatif.
 
-Pont d'orgue de ce **State of the Map**, l'événement annuel des contributeurs, cette AG montre la maturité des développements et des actions produits au sein ou en lien avec OSM en France. Du vendredi au dimanche 30 juin, plus de 300 participants se sont en effet donnés rendez vous à la Manufacture des Tabacs de Lyon pour faire un point d'étape festif sur les avancées des uns et des autres et pour collectivement se transmettre des compétences sur leurs pratiques de contribution et d'usage des données.
+Pont d'orgue de ce **State of the Map**, l'événement annuel des contributeurs, cette AG montre la maturité des développements et des actions produits au sein ou en lien avec OSM en France. Du vendredi au dimanche 30 juin, plus de 300 participants se sont donnés rendez-vous à la Manufacture des Tabacs de Lyon pour faire un point d'étape festif sur les avancées des uns et des autres et pour collectivement se transmettre des compétences sur leurs pratiques de contribution et d'usage des données.
 
 Il est alors difficile d'en résumer le contenu sans en perdre la richesse des sujets, des techniques et des moyens pédagogiques mis en œuvre pour que tout un chacun y trouve son compte.
 
@@ -10,7 +10,7 @@ De Panoramax à Osmose, des grands référentiels publics (BNB, OCSGE...) à ceu
 
 Dès lors, qu'en retenir de façon globale ? Exercice difficile s'il en est, car la concomitance des présentations, dilemme habituel du congressiste, ne permet pas de rendre pleinement compte d'autre chose que ce à quoi il a assisté.
 
-Quelques mots clés peuvent servir à en décrire le contenu : Panoramax, qualité des données, vélo, trains, IGN, eau, portails d'accès, tourisme, applications, climat, IA, adresses, archivage... 
+Quelques mots-clés peuvent servir à en décrire le contenu : Panoramax, qualité des données, vélo, trains, IGN, eau, portails d'accès, tourisme, applications, climat, IA, adresses, archivage... 
 
 Dans cet article, je vous parlerais donc essentiellement de quelques conférences auxquelles j'ai eu le bonheur d'assister. Pour le reste, les [vidéos](https://peertube.openstreetmap.fr/c/sotm_fr_2024/videos) et les [présentations](http://sotm2024.openstreetmap.fr/programme.html) sont disponibles (ou vont arriver très bientôt) et je rajoute en fin d'articles quelques liens plus directs pour fouiller.
 
@@ -34,7 +34,7 @@ Dans cet article, je vous parlerais donc essentiellement de quelques conférence
   
   - JC Becquet nous parle des **belles rencontres** que l'on fait **grâce à OSM** 
 
-*Un petit ravitaillement juste après ces introductions aurait du nous mettre la puce à l'oreille que l'activité principale du SotM serait bien physique : la montée des marches jusqu'au 3e étage pour rejoindre les salles de conférence.*
+*Un petit ravitaillement juste après ces introductions aurait dû nous mettre la puce à l'oreille que l'activité principale du SotM serait bien physique : la montée des marches jusqu'au 3e étage pour rejoindre les salles de conférence.*
 
 *Pas grand chose en soi. Simplement un soleil voilé. Par plus de 30°C. Et avec 70-80% d'humidité. Ce fut une occasion pour tout le monde d'en apprendre un peu plus sur sa propre résistance aux climats tropicaux humides (absolument médiocre pour ma part), mais également sur l['indice de chaleur](https://fr.wikipedia.org/wiki/Indice_de_chaleur).*
 
@@ -148,7 +148,7 @@ Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléme
   
   - très peu d'objets hors écoulement libre
   
-  - beaucoup d'objets non/mal connectés au réseau, en assurant la connectivité : la base OSM fournit finalement un graphe connexe des cours d'eau : en utilisant https://waterwaymap.org/ on peut vérifier la connectivité !
+  - beaucoup d'objets non/mal connectés au réseau, en assurant la connectivité : la base OSM fournit finalement un graphe connexe des cours d'eau et en utilisant https://waterwaymap.org/ on peut vérifier la connectivité !
   
   - ce qui permet de pallier les manques de la BD Topage, très incomplète et/ou incorrecte qui gagnerait sans doute à intégrer OSM dans ses données.
 
