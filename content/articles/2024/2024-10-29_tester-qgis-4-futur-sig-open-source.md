@@ -33,7 +33,7 @@ tags:
 
 ```mermaid
 flowchart TD
-    Q{QGIS} == Dépend de ==> B(Qt)
+    Q{QGIS} ====> |Dépend de| B(Qt)
     Q -->|Dépend de| C(API géospatiales)
     Q <--->|Optionnellement| P[Python]
     M(plugins) -->|Dépendent de| P:::pointilles
