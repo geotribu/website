@@ -1,24 +1,25 @@
 ---
 title: Testez QGIS 4
-subtitle: Le futur à portée de clics
+subtitle: Les dépendances se plient en 4
 authors:
     - Julien MOURA
 categories:
     - article
 comments: true
 date: 2024-11-09
-description: "Description de 160 caractères maximum qui résume l'article qui est présente dans le flux RSS, la newsletter, les moteurs de recherche, en page d'accueil... "
+description: Essayez QGIS 4 en avant-première ! Comme tout logiciel, open source ou propriétaire, QGIS repose sur d'autres logiciels ou biblioth, es dépendances et principalement Qt.
 icon: material/crystal-ball
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
 license: default
 robots: index, follow
 tags:
+    - OSGeo4W
     - QGIS
     - Qt
-    - OSGeo4W
+    - vcpkg
 ---
 
-# QGIS 4
+# QGIS 4 : un QGIS basé sur Qt6
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
@@ -65,15 +66,21 @@ Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trou
 
 #### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg
 
-[le workflow Windows Qt6](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess)
+[OPENGIS.ch](https://www.opengis.ch/fr/), en tête de pont sur le packaging Windows avec [vcpkg](https://vcpkg.io) diffusait un lien de téléchargement sur leurs réseaux sociaux.
 
-Sinon, en mars dernier, OPENGIS.ch, en tête de pont sur le packaging Windows avec vcpkg diffusait un lien de téléchargement sur leurs réseaux sociaux.  <https://download.opengis.ch/qgis-qt6.zip>
+[:material-download: Télécharger un exécutable depuis GitHub Actions :simple-githubactions:](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess){: .md-button }
+{: align=middle }
+
+[:material-download: Télécharger l'exécutable diffusé par OPENGIS.ch :material-folder-zip:](https://download.opengis.ch/qgis-qt6.zip){: .md-button }
+{: align=middle }
 
 !!! note "Dans l'ombre de la DSI"
     Notez que cette version téléchargeable et autoporteuse est idéale pour les environnements où les droits d'installation sont limités.
     Si on vous demande d'où ça sort, dites que vous avez lu ça sur [arcOrama](https://www.arcorama.fr/) :zipper_mouth:.
 
-#### Niveau aventurier dominical : l'OSGeo4W
+![QGIS - Splashscreen Qt6 by OPENGIS.ch](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qgis_Qt6_OPENGIS-CH_splashscreen.webp){: .img-center loading=lazy }
+
+#### Niveau aventurier dominical : le package dév de l'OSGeo4W
 
 [Télécharger l'installateur OSGeo4W](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe){: .md-button }
 {: align=middle }
@@ -95,6 +102,10 @@ Lancer en mode administrateur puis suivre les étapes :
 1. cocher les licences (ERDAS, MrSID, ORacle, SZIP...). Notez qu'il est aussi possible de les imprimer de façon à les étudier en détail.
 1. :coffee:
 1. Il y aura peut-être des erreurs mais qu'importe, vous êtes arrivés jusqu'ici car vous vouliez un goût d'aventure dans la bouche ? Il n'est plus temps de reculer pour si peu.
+
+En images :
+
+![Texte de remplacement utilisé aussi comme légende](https://url_de_l_image.extension){: .img-center loading=lazy }
 
 ----
 
