@@ -19,6 +19,8 @@ tags:
 
 # « *Je portais déjà une grande attention à mon environnement, maintenant c’est pire.*» Retour sur le SotM 2024
 
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
 ![Logo du SotM 2024 à Lyon](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/sotm_fr_2024.png){: .img-center loading=lazy }
 
 Qu’on se le dise, OSM France, c'est du costaud. Tellement même qu'en assemblée générale ce samedi 29 juin au soir, les contributeurs s'interrogent sur une évolution qualitative du projet associatif.
