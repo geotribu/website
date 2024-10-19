@@ -1,6 +1,4 @@
-
 ---
-
 title: Retour sur le SotM 2024
 subtitle: Attention à votre environnement
 authors:
@@ -9,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-11-12
-description: "Description de 160 caractères maximum qui résume l'article qui est présente dans le flux RSS, la newsletter, les moteurs de recherche, en page d'accueil... "
+description: Romain Lacroix était au State of the Map France 2024 à Lyon et nous livre ce qui l'a marqué et ce qu'il a retenu.
 icon: simple/openstreetmap
 image:
 license: default
@@ -21,7 +19,7 @@ tags:
 
 # « *Je portais déjà une grande attention à mon environnement, maintenant c’est pire.*» Retour sur le SotM 2024
 
-![Logo du SotM 2024 à Lyon](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/logos_Sotm-2024.png "Logo SotM2024")
+![Logo du SotM 2024 à Lyon](https://cdn.geotribu.fr/img/logos-icones/OpenStreetMap/sotm_fr_2024.png){: .img-center loading=lazy }
 
 Qu’on se le dise, OSM France, c'est du costaud. Tellement même qu'en assemblée générale ce samedi 29 juin au soir, les contributeurs s'interrogent sur une évolution qualitative du projet associatif.
 
@@ -37,7 +35,9 @@ Quelques mots-clés peuvent servir à en décrire le contenu : Panoramax, qualit
 
 Dans cet article, je vous parlerais donc essentiellement de quelques conférences auxquelles j'ai eu le bonheur d'assister. Pour le reste, les [vidéos](https://peertube.openstreetmap.fr/c/sotm_fr_2024/videos) et les [présentations](http://sotm2024.openstreetmap.fr/programme.html) sont disponibles (ou vont arriver très bientôt) et je rajoute en fin d'articles quelques liens plus directs pour fouiller.
 
-![Carte des participants](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/carte_participantsOSM2024.jpg "carte SotM2024")
+![Carte des participants au SotM FR 2024](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/carte_participantsOSM2024.jpg){: .img-center loading=lazy }
+
+----
 
 ## Intervention inaugurale
 
@@ -69,7 +69,10 @@ L'infrastructure est pensée pour mettre à disposition des données de différe
 
 Un [catalogue](https://www.datasud.fr/explorer/fr/recherche) propose des téléchargements dans des formats très divers et des [cartes](https://www.datasud.fr/maps/) sont directement proposées.
 
-*Entendu au SOTM* : « - *Vous savez où sont les toilettes ?* - *Attendez je regarde sur OSM [...] Ah oui, c'est bon ! ils sont là, juste à gauche !*»
+!!! quote "Entendu au SOTM"
+    - Vous savez où sont les toilettes ?
+    - Attendez je regarde sur OSM...
+    - Ah oui, c'est bon ! ils sont là, juste à gauche !
 
 ### L'OCSGE et le CoSIA de l'IGN : une nouvelle opportunité pour OSM? (X. Halbecq IGN et J.-L. Zimmermann CD84)
 
@@ -86,7 +89,7 @@ Comment ça marche ?
 
 Autre produit présenté, [CosIA](https://cosia.ign.fr/), qui lui est un traitement purement automatique proposant [la couverture du sol en 16 classes](https://cosia.ign.fr/pdf/Cosia_Nomenclature_IGN_2023.pdf) sur une base vectorisée et simplifiée lui aussi à une résolution de 20cm. [La précision et l'usage sont assez différents de l'OCSGE](https://cosia.ign.fr/pdf/Comparatif_OCSGE_CoSIA_IGN_2023.pdf) : c'est un pur traitement d'images aériennes, sans corrections, et sans info sur ce qui n'est pas visible. [Le produit est déjà téléchargeable pour quelques départements]((<https://cosia.ign.fr/info#export>).
 
-![Comparatif COSIA OCS GE](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/comparatif_cosia_ocsge.png "Comparatif COSIA OCS GE")
+![Comparatif COSIA OCS GE](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/comparatif_cosia_ocsge.png){: .img-center loading=lazy }
 
 Ces produits de grande résolution offrent une formidable opportunité pour les cartes OSM françaises : [les données d'utilisation du sol](https://wiki.openstreetmap.org/wiki/FR:Key:landuse) ont historiquement été importées du Corine Land Cover, relativement grossières et imprécises. La mise à jour régulière annoncée (tous les 3 ans) porte également en elle des espoirs de maintien durable de la qualité des données sur OSM.
 
@@ -116,7 +119,7 @@ La France est très/trop attachée à la voiture et de nombreuses lacunes inform
 
 Le parti pris de Maël est que nous avons une *fausse dépendance à la voiture* et que **si les modes de transport alternatifs étaient mieux exposés et promus, bien plus de trajets pourraient s'effectuer sur des modes de transport peu émetteurs de CO2**.
 
-![Etude citee par Mael sur le velo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/cartesapp-veloetude.jpg "Chiffres etude velo")
+![Étude citée par Maël Thomas-Quillévéré sur le vélo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/cartesapp-veloetude.jpg "Chiffres etude velo"){: .img-center loading=lazy }
 
 L'application navigateur [**cartes.app**](https://cartes.app/#5.52/46.857/2.025) développée entend prendre le contrepied en proposant  :
 
@@ -156,14 +159,18 @@ Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléme
 
 - parvenir à décrire l'**hydrographie globale** : le maillage des cours d'eau naturels et artificiels. Ce n'est clairement pas finalisé dans de nombreux territoires et c'est relativement facile à compléter (quoi que pas toujours !), sur différentes échelles, différentes activités liées aux cours d'eau (loisirs, tourisme, agriculture, fontaines) et différents éléments affleurants (piézomètres, captages, ripisylves)
 - disposer d'une **sémantique détaillée** : définie par l'ensemble des tags utilisés, la sémantique émerge de la communauté par propositions et par uniformisation au niveau mondial. Certains tags ont été supprimés pour les faire évoluer faire des choses plus précises et utilisables. On a maintenant la capacité de décrire un grand nombre d'objets très précisément : à découvrir sans tarder sur le wiki ([FR:Key:inlet](https://wiki.openstreetmap.org/wiki/FR:Key:inlet)). Il reste cependant beaucoup de travaux à mener aux niveaux des tags ! Une attention doit enfin être portée aux liens avec les **référentiels nationaux** (Sandre notamment) et les standards (Star-EAU)
- ![Schéma d'évolution des tags sur OSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/negociation_travailsemantique_osm.png "Schéma d'évolution des tags sur OSM")
+
+    ![Schéma d'évolution des tags sur OSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/negociation_travailsemantique_osm.png ){: .img-center loading=lazy }
 
 - **compléter l'inventaire : en allant sur le terrain !!**
     - très peu d'objets hors écoulement libre
     - beaucoup d'objets non/mal connectés au réseau, en assurant la connectivité : la base OSM fournit finalement un graphe connexe des cours d'eau et en utilisant <https://waterwaymap.org/> on peut vérifier la connectivité !
- ![Connectivité globale des cours d'eau sur waterwaymap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/waterwaymap.png "Waterwaymap.org")
+
+    ![Connectivité globale des cours d'eau sur waterwaymap - Crédit : waterwaymap.org](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/waterwaymap.png){: .img-center loading=lazy }
 
     - ce qui permet de pallier les manques de la BD Topage, très incomplète et/ou incorrecte qui gagnerait sans doute à intégrer OSM dans ses données.
+
+----
 
 ## Conférences parallèles et quelques liens
 
