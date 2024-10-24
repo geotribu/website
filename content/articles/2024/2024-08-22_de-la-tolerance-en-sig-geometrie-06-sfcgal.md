@@ -162,7 +162,7 @@ Il existerait une façon de rendre le calcul correct dans PostGIS avec SFCGAL, m
 
 Malgré les problèmes potentiels de précision dans son utilisation dans PostGIS, SFCGAL reste un outil précieux. Son principal atout réside dans ses fonctionnalités avancées en 2D et 3D, absentes de GEOS/PostGIS natif. Par ailleurs, ces erreurs ne sont pas systématiques et dépendent des données et opérations effectuées.
 
-[7 : Esri et FME :fontawesome-solid-forward-step:](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md "Gestion de la précision géométrique dans Esri et FME"){: .md-button }
+[7 : La gestion propriétaire de la géométrie : ESRI et FME :fontawesome-solid-forward-step:](./2024-08-29_de-la-tolerance-en-sig-geometrie-07-esri-fme.md "Gestion de la précision géométrique dans Esri et FME"){: .md-button }
 {: align=middle }
 
 <!-- geotribu:authors-block -->
