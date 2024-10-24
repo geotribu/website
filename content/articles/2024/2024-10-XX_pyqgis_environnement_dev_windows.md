@@ -98,4 +98,4 @@ Tout ça pour avoir un code coloré :smiley: !
 
 <!-- geotribu:authors-block -->
 
-{% include "licenses/default.md" %
+{% include "licenses/beerware.md" %}
