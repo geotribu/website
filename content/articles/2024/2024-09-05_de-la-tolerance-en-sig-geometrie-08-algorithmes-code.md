@@ -224,8 +224,7 @@ Vous devriez avoir cette sortie :
 
 `Les nombres 0.30000000000000004 et 0.3 sont égaux avec une tolérance de 1e-09.`
 
-Pour une étude plus approfondie, je vous encourage à lire l'article [Comparing Two Floating-Point Numbers
-](https://embeddeduse.com/2019/08/26/qt-compare-two-floats/).
+Pour une étude plus approfondie, je vous encourage à lire l'article [Comparing Two Floating-Point Numbers](https://embeddeduse.com/2019/08/26/qt-compare-two-floats/).
 
 Comme vous avez pu le deviner, c'est ce que fait ArcGIS.
 Dans plusieurs endroits de nos SIG, il existe des comparaisons floues, peut-être que les prochaines versions de GEOS intègreront cette tolérance pour les relations. :wink:
