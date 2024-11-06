@@ -14,6 +14,7 @@ license: default
 robots: index, follow
 tags:
     - OSGeo4W
+    - PyQGIS
     - QGIS
     - Qt
     - vcpkg
@@ -163,6 +164,49 @@ Alors, qu'est-ce que ça change ?
 - on a une sensation de vitesse à l'utilisation mais c'est peut-être lié au fait qu'il n'y a aucun plugin d'installé
 - il y a parfois des messages d'erreur mais c'est bon pour le karma d'aventurier
 - sur Linux, le système d'affichage Wayland est désormais pleinement supporté
+
+### Je développe ou maintiens un ou plusieurs plugin(s), comment faire pour qu'il soit compatible ?
+
+![logo PyQGIS](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-thumbnail-left }
+
+Si votre plugin n'utilise pas ou peu Qt ou vous avez suivi de bonnes pratiques de développement pour votre plugin, notamment l'import de tout ce qui est PyQt via PyQGIS et non directement, il n'y aura pas grand chose à faire. Sinon, il faut prévoir un travail de migration et de tests. Plus tôt vous commencez, mieux ce sera.
+
+Une procédure de migration a été ajoutée il y a quelques semaines dans le ~~cookbook PyQGIS~~ [wiki du projet GitHub de QGIS](https://github.com/qgis/QGIS/wiki/Plugin-migration-to-be-compatible-with-Qt5-and-Qt6/_edit) pour documenter l'usage d'un script de migration et rendre un plugin compatible à la fois avec QGIS Qt5 and Qt6 :
+
+1. Dans votre environnement Python de développement :
+
+  ```sh
+  pip install astpretty tokenize-rt
+  ```
+
+1. Si vous êtes sur Linux, il faut installer des dépendances supplémentaires :
+
+    ```sh
+    sudo apt install python3-pyqt6 python3-pyqt6.qtsvg python3-pyqt6.qsci
+    ```
+
+1. Télécharger le [script sur le projet QGIS sur GitHub](https://github.com/qgis/QGIS/blob/master/scripts/pyqt5_to_pyqt6/pyqt5_to_pyqt6.py)
+1. L'exécuter en pointant sur le dossier de votre plugin :
+
+    ```sh
+    python pyqt5_to_pyqt6.py /path/to/plugin
+    ```
+
+1. Tester votre plugin sur une installation de QGIS avec Qt5 **et** sur une installation de QGIS avec Qt6 en faisant les adaptations nécessaires.
+1. Éditer le fichier `metadata.txt` et ajouter :
+
+    ```ini
+    [...]
+    supportsQt6=True
+    [...]
+    ```
+
+Il y a forcément quelques limites au script, notamment :
+
+- la gestion des imports : il recommande souvent d'importer Qt depuis PyQGIS (`from qgis.PyQt.QtCore import Qt`) mais c'est rarement pertinent. Ceci dit, si vous utilisez des outils classiques de contrôle statique du code (flake8, ruff, isort, etc.), ils se chargeront de nettoyer le superflu.
+-
+
+La documentation sur cette migration est inextistante ou très difficile à trouver. Quand on m'a répondu "la seule documentation, à ce jour, hormis le wiki d'Étienne, c'était [la description de la PR de Nyall](https://github.com/qgis/QGIS/pull/55912)", je me suis dit qu'on est proche du délit d'initiés :grin: ! Mais cela n'a finalement rien d'étonnant pour l'instant car cela ne concerne encore que les développeurs actuellement autour duquel gravite l'écosystème QGIS.
 
 ----
 
