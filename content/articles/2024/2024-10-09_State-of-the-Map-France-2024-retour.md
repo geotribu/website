@@ -87,7 +87,7 @@ Comment ça marche ?
 - un processus de correction double est ensuite mobilisé pour détecter des anomalies dans la classification automatique :
     - correction par photointerprétation d'un sous-traitant
     - remontées utilisateurs
-- un [téléchargement de la donnée](https://geoservices.ign.fr/ocsge#telechargement) est proposé, accompagné d'une [feuille de style pour SIG](https://geoservices.ign.fr/sites/default/files/2023-07/Styles_OCSGE.zip) ou même un [projet SIG](https://geoservices.ign.fr/sites/default/files/2022-11/Projets_carto_OCSGE.zip)
+- un service de [téléchargement de la donnée](https://geoservices.ign.fr/ocsge#telechargement) est proposé, accompagné d'une [feuille de style pour SIG](https://geoservices.ign.fr/sites/default/files/2023-07/Styles_OCSGE.zip) ou même d'un [projet SIG](https://geoservices.ign.fr/sites/default/files/2022-11/Projets_carto_OCSGE.zip)
 
 Autre produit présenté, [CosIA](https://cosia.ign.fr/), qui lui est un traitement purement automatique proposant [la couverture du sol en 16 classes](https://cosia.ign.fr/pdf/Cosia_Nomenclature_IGN_2023.pdf) sur une base vectorisée et simplifiée lui aussi à une résolution de 20cm. [La précision et l'usage sont assez différents de l'OCSGE](https://cosia.ign.fr/pdf/Comparatif_OCSGE_CoSIA_IGN_2023.pdf) : c'est un pur traitement d'images aériennes, sans corrections, et sans info sur ce qui n'est pas visible. [Le produit est déjà téléchargeable pour quelques départements]((<https://cosia.ign.fr/info#export>).
 
