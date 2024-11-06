@@ -149,7 +149,7 @@ Les problèmes rencontrés :
 
 La restitution de l'expérience acquise par deux grands contributeurs de cette thématique sur OSM a tenu toutes ses promesses. La résolution d'un certain nombre de problèmes de sémantique ou de capillarité a ici été démontrée pour cette thématique d'avenir.
 
-Quand on parle de cours d'eau on imagine évidemment aux lacs ou à la belle rivière coulant sans obstacle, mais la réalité est bien plus compliquée que ça à intégrer pour OSM : cours d'eau artificiels, intermittents, de tracé variable ou enterrés.
+Quand on parle de cours d'eau, on pense évidemment aux lacs ou à la belle rivière coulant sans obstacle, mais la réalité est bien plus complexe que ça à intégrer pour OSM : cours d'eau artificiels, intermittents, de tracé variable ou enterré.
 
 L'attention sémantique pour OSM est d'abord portée sur l'identification du type d'écoulement lié finalement au cycle général de l'eau :
 
