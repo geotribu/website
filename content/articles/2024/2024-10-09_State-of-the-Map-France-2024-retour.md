@@ -17,7 +17,7 @@ tags:
     - SotM
 ---
 
-# « *Je portais déjà une grande attention à mon environnement, maintenant c’est pire.*» Retour sur le SotM 2024
+# « *Je portais déjà une grande attention à mon environnement, maintenant c’est pire.* » Retour sur le SotM 2024
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
