@@ -1,6 +1,6 @@
 ---
 title: Testez QGIS 4
-subtitle: Le chiffre de la dépendance
+subtitle: Une histoire de dépendance
 authors:
     - Julien MOURA
 categories:
@@ -31,15 +31,19 @@ tags:
 
 ----
 
-## Architecture de QGIS
+## L'architecture de QGIS pour les nuls
+
+![icône briques différentes](https://cdn.geotribu.fr/img/logos-icones/divers/briques_lego.webp){: .img-thumbnail-left }
+
+Allez, on n'est pas là pour trop entrer dans les détails alros je vous ai fait un schéma simplifié de ce qui compose le logiciel QGIS. Oui, oui il est simplifié.
 
 ```mermaid
 flowchart TD
-    Q{QGIS} ====> |Dépend de| B(Qt)
+    Q{QGIS} ====> |Dépend de| B(((Qt)))
     Q -->|Dépend de| C(API géospatiales)
     Q <--->|Optionnellement| P[Python]
     M(plugins) -->|Dépendent de| P:::pointilles
-    B:::blocimportant --> S{"Système exploitation<br/>(et donc toutes les API système)"}
+    B:::blocimportant --> S{"Interface graphique et système exploitation<br/>(et donc toutes les API système)"}
     C -->|dépend de| E[GEOS]
     C -->|dépend de| T[/Autres trucs moins connus\]
     Q --> T
@@ -55,7 +59,9 @@ flowchart TD
     classDef pointilles fill:stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 ```
 
-Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trouve qu'elle est arrivée en fin de vie en... mai 2025 selon [la documentation officielle](https://doc.qt.io/qt-6/supported-platforms.html#supported-qt-versions).
+Vous avez remarqué le rond rouge au milieu ? Eh bien c'est le [cadriciel (_framework_) Qt](https://www.qt.io/) (prononcez "kuté" ou comme "_cute_" qui signifie mignon en anglais) retenu par le projet QGIS pour s'interfacer avec les API graphiques et techniques des différents systèmes d'exploitation.
+
+Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trouve qu'elle est arrivée en fin de vie en... mai 2025 selon [la documentation officielle](https://doc.qt.io/qt-6/supported-platforms.html#supported-qt-versions). La dernière fois que QGIS a changé de version majeure de Qt, QGIS est aussi passé à la version majeure supérieure (donc oui `QGIS 2 = Qt 4` et `QGIS 3 = Qt 5`).
 
 ![Planning des versions de Qt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qt_versions_planning.webp){: .img-center loading=lazy }
 
