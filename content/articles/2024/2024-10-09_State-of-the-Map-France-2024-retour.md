@@ -78,7 +78,7 @@ Un [catalogue](https://www.datasud.fr/explorer/fr/recherche) propose des téléc
 
 ### L'OCSGE et le CoSIA de l'IGN : une nouvelle opportunité pour OSM? (X. Halbecq IGN et J.-L. Zimmermann CD84)
 
-L'occupation du sol à grande échelle (OCSGE) est une nouvelle base géographique vectorielle de référence développée par l'IGN. En 2 dimensions, elle vise à **(1) décrire la couverture et (2) l'usage des sols** de la [France entière d'ici fin 2025](https://macarte.ign.fr/carte/VVpbhc/Production-de-l-OCS-GE-NG). La résolution est d'environ 20cm mais l'échelle d'utilisation est a priori entre 1:2500 et 1:5000.  Son développement vient notamment combler les besoins de suivi de la loi Zéro Artificialisation Nette.
+L'occupation du sol à grande échelle (OCSGE) est une nouvelle base géographique vectorielle de référence développée par l'IGN. En deux dimensions, elle vise à **(1) décrire la couverture et (2) l'usage des sols** de la [France entière d'ici fin 2025](https://macarte.ign.fr/carte/VVpbhc/Production-de-l-OCS-GE-NG). La résolution est d'environ 20cm mais l'échelle d'utilisation est a priori entre 1:2500 et 1:5000.  Son développement vient notamment combler les besoins de suivi de la loi Zéro Artificialisation Nette.
 
 Comment ça marche ?
 
