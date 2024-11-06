@@ -1,6 +1,6 @@
 ---
 title: Testez QGIS 4
-subtitle: Les dépendances se plient en 4
+subtitle: Le chiffre de la dépendance
 authors:
     - Julien MOURA
 categories:
@@ -66,6 +66,14 @@ Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trou
 ### Sur Windows
 
 #### Niveau aventurier dominical : le package dév de l'OSGeo4W
+
+![logo OSGeo4W](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osgeo4w.webp){: .img-thumbnail-left }
+
+On ne présente plus l'installateur "réseau" (_OSGeo4W Network Installer_ comme on dit sur les sites non traduits de projets internationaux) que nous avons mis en avant à plusieurs reprises [ici](../2020/2020-07-03_deploy_qgis_windows.md "Installer QGIS en ligne de commande avec OSGeo4W") et [là](../2021/2021-07-06_qgis_personnaliser_package_osgeo4w.md "Utiliser OSGeo4W pour déployer QGIS en entreprise").
+
+Ce petit coquin d'inspiration linuxienne infiltré derrière les lignes windowsiennes pour permettre une installation de tout ~~et n'importe quoi ~~ ce qui a trait ~~aux projets OSGeo~~ à QGIS sur Windows avec une finesse de sélection des dépendances justement.
+
+Allez c'est parti !
 
 [Télécharger l'installateur OSGeo4W](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe){: .md-button }
 {: align=middle }
