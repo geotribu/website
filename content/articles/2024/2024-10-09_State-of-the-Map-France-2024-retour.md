@@ -127,7 +127,7 @@ L'application navigateur [**cartes.app**](https://cartes.app/#5.52/46.857/2.025)
 
 - des trajets calculés de façon préférentielle sur des modes doux (via [BRouter](https://brouter.de/brouter-web/#map=6/46.823/-0.791/cyclosm) pour le vélo) ou en transports publics (via [Motis](https://routing.spline.de/?motis=https%3A%2F%2Frouting.spline.de%2Fapi) et l'intégration des GTFS) avec une signalétique (discrète :smile:) sur l'itinéraire voiture. Une navigation possible au sein des différents réseaux de transports publics.
 
-- une mise en avant des lieux de façon non commerciale (un salon de massage ne sera jamais au-dessus d'une gare dans les priorités d'affichages !)
+- une mise en avant des lieux de façon non commerciale (un salon de massage ne sera jamais au-dessus d'une gare dans les priorités d'affichage !)
 
 - des données basées sur OSM, avec des requêtes Overpass
 
