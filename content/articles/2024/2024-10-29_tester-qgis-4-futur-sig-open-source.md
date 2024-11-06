@@ -65,22 +65,6 @@ Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trou
 
 ### Sur Windows
 
-#### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg
-
-[OPENGIS.ch](https://www.opengis.ch/fr/), en tête de pont sur le packaging Windows avec [vcpkg](https://vcpkg.io) diffusait un lien de téléchargement sur leurs réseaux sociaux.
-
-[:material-download: Télécharger un exécutable depuis GitHub Actions :simple-githubactions:](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess){: .md-button }
-{: align=middle }
-
-[:material-download: Télécharger l'exécutable diffusé par OPENGIS.ch :material-folder-zip:](https://download.opengis.ch/qgis-qt6.zip){: .md-button }
-{: align=middle }
-
-!!! note "Dans l'ombre de la DSI"
-    Notez que cette version téléchargeable et autoporteuse est idéale pour les environnements où les droits d'installation sont limités.
-    Si on vous demande d'où ça sort, dites que vous avez lu ça sur [arcOrama](https://www.arcorama.fr/) :zipper_mouth:.
-
-![QGIS - Splashscreen Qt6 by OPENGIS.ch](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qgis_Qt6_OPENGIS-CH_splashscreen.webp){: .img-center loading=lazy }
-
 #### Niveau aventurier dominical : le package dév de l'OSGeo4W
 
 [Télécharger l'installateur OSGeo4W](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe){: .md-button }
@@ -89,12 +73,12 @@ Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trou
 Lancer en mode administrateur puis suivre les étapes :
 
 1. _Advanced Install_
-1. Install from Internet
-1. All Users
+1. Choisir _Install from Internet_
+1. _All Users_
 
     Choisir un dossier convenable pour l'installation car on n'est pas des bêtes quand même. Par exemple, soyons civilisés et mettons cela dans `%PROGRAMFILES%/QGIS/OSGeo4W`
 
-1. Tant pis pour l'avertissement. Si en 2024 on doit encore s'embêter avec des espaces dans les cehmins de fichiers, c'est qu'on a un souci d'anachronisme. Ignorons et continuons donc.
+1. Tant pis pour l'avertissement. Si en 2024 on doit encore s'embêter avec des espaces dans les chemins de fichiers, surtout pour un emplacement système variabilisé, c'est que le problème n'est pas du côté de l'utilisateur final. Ignorons et continuons donc.
 1. Laissons les valeurs par défaut
 1. Dans le champ Search, taper `qt6-dev-full`
 1. Dérouler `Desktop`
@@ -106,7 +90,37 @@ Lancer en mode administrateur puis suivre les étapes :
 
 En images :
 
-![Texte de remplacement utilisé aussi comme légende](https://url_de_l_image.extension){: .img-center loading=lazy }
+![QGIS - OSGeo4W Qt6 - Capture d'écran du menu À propos](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_about.webp){: .img-center loading=lazy }
+
+#### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg
+
+[OPENGIS.ch](https://www.opengis.ch/fr/), en tête de pont sur le packaging Windows avec [vcpkg](https://vcpkg.io), diffusait un lien de téléchargement sur [leurs réseaux sociaux](https://fosstodon.org/@opengisch/112155006378447452) dès mars dernier.
+
+[:material-folder-zip: Télécharger l'exécutable diffusé par OPENGIS.ch](https://download.opengis.ch/qgis-qt6.zip){: .md-button }
+{: align=middle }
+
+Depuis les choses ont bien avancé et QGIS est compilé/packagé avec Qt6 à chaque modification du code source (_commit_) sur GitHub.
+
+[:simple-githubactions: Aller télécharger un exécutable depuis GitHub](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess){: .md-button }
+{: align=middle }
+
+Notez qu'il est possible de filtrer sur une branche en particulier. Par exemple, pour n'afficher que [les jobs Windows Qt6 pour QGIS 3.40 ayant réussi](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess+branch%3Arelease-3_40).
+
+!!! note "Dans l'ombre de la DSI"
+    Notez que cette version téléchargeable et autoporteuse est idéale pour les environnements où les droits d'installation sont limités.
+    Si on vous demande d'où ça sort, dites que vous avez lu ça sur [arcOrama](https://www.arcorama.fr/) :zipper_mouth:.
+
+Une fois le téléchargement terminé :
+
+1. on dézippe
+1. on va dans le dossier `bin`
+1. et on lance le fichier `qgis.exe` (pensez à activer l'affichage des extensions de fichiers sur Windows, la vie est plus belle).
+
+    ![Lancer QGIS Qt6 OPENGIS.CH](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/OPENGIS-CH_binaire_QGIS.webp){: .img-center loading=lazy }
+
+Si tout se passe bien, on admire le [splash screen](../2021/2021-06-11_qgis_personnaliser_splash_screen.md "Personnaliser l'image au lancement de QGIS") personnalisé pour l'occasion :
+
+![QGIS - Splashscreen Qt6 by OPENGIS.ch](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qgis_Qt6_OPENGIS-CH_splashscreen.webp){: .img-center loading=lazy }
 
 ----
 
@@ -159,13 +173,15 @@ Alors, qu'est-ce que ça change ?
 
 - le thème de l'interface s'aligne automatiquement sur les paramètres du système (sombre ou clair)
 - on peut choisir des couleurs en CMJN et qu'elles soient conservées dans les PDF générés par QGIS, ainsi que le profil d'impression
-- peu de plugins sont compatibles et on ne peut pas filtrer dessus donc c'est assez compliqué de savoir
+- peu de plugins sont compatibles et on ne peut pas filtrer dessus donc c'est assez compliqué de savoir lequel on peut installer
 - on peut voter sur un plugin directement depuis l'interface
 - on a une sensation de vitesse à l'utilisation mais c'est peut-être lié au fait qu'il n'y a aucun plugin d'installé
 - il y a parfois des messages d'erreur mais c'est bon pour le karma d'aventurier
 - sur Linux, le système d'affichage Wayland est désormais pleinement supporté
 
-### Je développe ou maintiens un ou plusieurs plugin(s), comment faire pour qu'il soit compatible ?
+![QGIS - ColorPicker CMJN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_CMJN.webp){: width=20% loading=lazy } ![QGIS - Plugin incompatible avec Qt 6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_installation_plugins_LMFP.webp){: width=20% loading=lazy }
+
+### Je maintiens un plugin, comment faire pour qu'il soit compatible ?
 
 ![logo PyQGIS](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-thumbnail-left }
 
