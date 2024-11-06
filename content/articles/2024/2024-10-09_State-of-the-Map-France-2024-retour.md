@@ -35,7 +35,7 @@ Dès lors, qu'en retenir de façon globale ? Exercice difficile s'il en est, car
 
 Quelques mots-clés peuvent servir à en décrire le contenu : Panoramax, qualité des données, vélo, trains, IGN, eau, portails d'accès, tourisme, applications, climat, IA, adresses, archivage...
 
-Dans cet article, je vous parlerais donc essentiellement de quelques conférences auxquelles j'ai eu le bonheur d'assister. Pour le reste, les [vidéos](https://peertube.openstreetmap.fr/c/sotm_fr_2024/videos) et les [présentations](http://sotm2024.openstreetmap.fr/programme.html) sont disponibles (ou vont arriver très bientôt) et je rajoute en fin d'articles quelques liens plus directs pour fouiller.
+Dans cet article, je vous parlerai donc essentiellement de quelques conférences auxquelles j'ai eu le bonheur d'assister. Pour le reste, les [vidéos](https://peertube.openstreetmap.fr/c/sotm_fr_2024/videos) et les [présentations](http://sotm2024.openstreetmap.fr/programme.html) sont disponibles (ou vont arriver très bientôt) et je rajoute en fin d'article quelques liens plus directs pour fouiller.
 
 ![Carte des participants au SotM FR 2024](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/carte_participantsOSM2024.jpg){: .img-center loading=lazy }
 
