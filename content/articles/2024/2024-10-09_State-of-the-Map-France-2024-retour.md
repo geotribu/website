@@ -25,7 +25,7 @@ tags:
 
 Qu’on se le dise, OSM France, c'est du costaud. Tellement même qu'en assemblée générale ce samedi 29 juin au soir, les contributeurs s'interrogent sur une évolution qualitative du projet associatif.
 
-Point d'orgue de ce **State of the Map**, l'événement annuel des contributeurs, cette AG montre la maturité des développements et des actions produits au sein ou en lien avec OSM en France. Du vendredi au dimanche 30 juin, plus de 300 participants se sont donnés rendez-vous à la Manufacture des Tabacs de Lyon pour faire un point d'étape festif sur les avancées des uns et des autres et pour collectivement se transmettre des compétences sur leurs pratiques de contribution et d'usage des données.
+Point d'orgue de ce **State of the Map**, l'événement annuel des contributeurs, cette AG montre la maturité des actions et des développements produits au sein ou en lien avec OSM en France. Du vendredi au dimanche 30 juin, plus de 300 participants se sont donnés rendez-vous à la Manufacture des Tabacs de Lyon pour faire un point d'étape festif sur les avancées des uns et des autres et pour collectivement se transmettre des compétences sur leurs pratiques de contribution et d'usage des données.
 
 Il est alors difficile d'en résumer le contenu sans en perdre la richesse des sujets, des techniques et des moyens pédagogiques mis en œuvre pour que tout un chacun y trouve son compte.
 
