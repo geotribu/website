@@ -93,7 +93,7 @@ Autre produit présenté, [CosIA](https://cosia.ign.fr/), traitement purement au
 
 ![Comparatif COSIA OCS GE](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/comparatif_cosia_ocsge.png){: .img-center loading=lazy }
 
-Ces produits de grande résolution offrent une formidable opportunité pour les cartes OSM françaises : [les données d'utilisation du sol](https://wiki.openstreetmap.org/wiki/FR:Key:landuse) ont historiquement été importées du Corine Land Cover, relativement grossières et imprécises. La mise à jour régulière annoncée (tous les 3 ans) porte également en elle des espoirs de maintien durable de la qualité des données sur OSM.
+Ces produits de grande résolution offrent une formidable opportunité pour les cartes OSM françaises : [les données d'utilisation du sol](https://wiki.openstreetmap.org/wiki/FR:Key:landuse) ont historiquement été importées de Corine Land Cover, source relativement grossière et imprécise. La mise à jour régulière annoncée (tous les 3 ans) porte également en elle des espoirs de maintien durable de la qualité des données sur OSM... Mais aussi des problématiques sur les données Corine depuis enrichies et modifiées par la communauté sur OSM et qu'il faudra finement comparer.
 
 !!! note "Une nomenclature sévère avec l'agriculture"
     Avec quelques regrets néanmoins de l'assemblée qui considère la nomenclature choisie relativement sévère sur l'agriculture, rassemblée dans un seul poste avec une absence de distinction des cultures (pérennes / annuelles / vergers / vignes, etc.)*
