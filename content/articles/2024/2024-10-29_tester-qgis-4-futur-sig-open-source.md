@@ -61,9 +61,11 @@ flowchart TD
 
 Vous avez remarqué le rond rouge au milieu ? Eh bien c'est le [cadriciel (_framework_) Qt](https://www.qt.io/) (prononcez "kuté" ou comme "_cute_" qui signifie mignon en anglais) retenu par le projet QGIS pour s'interfacer avec les API graphiques et techniques des différents systèmes d'exploitation.
 
-Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trouve qu'elle est arrivée en fin de vie en... mai 2025 selon [la documentation officielle](https://doc.qt.io/qt-6/supported-platforms.html#supported-qt-versions). La dernière fois que QGIS a changé de version majeure de Qt, QGIS est aussi passé à la version majeure supérieure (donc oui `QGIS 2 = Qt 4` et `QGIS 3 = Qt 5`).
+Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trouve qu'elle est arrivée en fin de vie en... mai 2025 selon [la documentation officielle](https://doc.qt.io/qt-6/supported-platforms.html#supported-qt-versions). La dernière fois que QGIS a changé de version majeure de Qt, QGIS est aussi passé à la version majeure supérieure (donc oui `QGIS 2 = Qt 4` et `QGIS 3 = Qt 5`)...
 
 ![Planning des versions de Qt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qt_versions_planning.webp){: .img-center loading=lazy }
+
+Dans cet article, je vous propose donc
 
 ----
 
@@ -89,9 +91,7 @@ Lancer en mode administrateur puis suivre les étapes :
 1. _Advanced Install_
 1. Choisir _Install from Internet_
 1. _All Users_
-
-    Choisir un dossier convenable pour l'installation car on n'est pas des bêtes quand même. Par exemple, soyons civilisés et mettons cela dans `%PROGRAMFILES%/QGIS/OSGeo4W`
-
+1. Choisir un dossier convenable pour l'installation car on n'est pas des bêtes quand même. Par exemple, soyons civilisés et mettons cela dans `%PROGRAMFILES%/QGIS/OSGeo4W`
 1. Tant pis pour l'avertissement. Si en 2024 on doit encore s'embêter avec des espaces dans les chemins de fichiers, surtout pour un emplacement système variabilisé, c'est que le problème n'est pas du côté de l'utilisateur final. Ignorons et continuons donc.
 1. Laissons les valeurs par défaut
 1. Dans le champ Search, taper `qt6-dev-full`
@@ -108,10 +108,9 @@ En images :
 
 #### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg
 
-[OPENGIS.ch](https://www.opengis.ch/fr/), en tête de pont sur le packaging Windows avec [vcpkg](https://vcpkg.io), diffusait un lien de téléchargement sur [leurs réseaux sociaux](https://fosstodon.org/@opengisch/112155006378447452) dès mars dernier.
+![logo vcpkg](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/vcpkg.webp){: .img-thumbnail-left }
 
-[:material-folder-zip: Télécharger l'exécutable diffusé par OPENGIS.ch](https://download.opengis.ch/qgis-qt6.zip){: .md-button }
-{: align=middle }
+[OPENGIS.ch](https://www.opengis.ch/fr/), en tête de pont sur le packaging Windows avec [vcpkg](https://vcpkg.io), diffusait un [lien de téléchargement](https://download.opengis.ch/qgis-qt6.zip) sur [leurs réseaux sociaux](https://fosstodon.org/@opengisch/112155006378447452) dès mars dernier. Depuis, l'entreprise Suisse à qui l'on doit QField a continué son travail autour d'une chaîne de compilation et packaging plus moderne et multi-plateforme dans le cadre de la [proposition communautaire d'évolution (QEP) n°292](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/292) pour aboutir le mois dernier. Le [compte-rendu dans la liste de mail au PSC](https://lists.osgeo.org/pipermail/qgis-psc/2024-October/010340.html) donne une idée du travail accompli.
 
 Depuis les choses ont bien avancé et QGIS est compilé/packagé avec Qt6 à chaque modification du code source (_commit_) sur GitHub.
 
