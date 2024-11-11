@@ -147,7 +147,7 @@ Donc attachez vos ceintures de lignes de commande, préparez vos merguez électr
 - make et build essentials
 - Git
 - 8 Go de RAM mais 12 c'est bien, 16 très bien et 32 c'est mieux
-- 6,5 Go d'espace disque. Notez qu'avec un SSD, tu gagnes un bonnus de vitesse.
+- 6,5 Go d'espace disque. Notez qu'avec un SSD, tu gagnes un bonus de vitesse.
 
 Globalement, ça doit se régler avec un :
 
