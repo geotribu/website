@@ -162,7 +162,7 @@ Sur un malentendu, la suite de commandes pourrait bien marcher du premier coup :
 ```sh title="Builder QGIS avec Qt6 à partir d'une branche"
 mkdir -p ~/Git/
 cd ~/Git
-git clone https://github.com/qgis/QGIS.git -b release-3_38 --single-branch --depth 1
+git clone https://github.com/qgis/QGIS.git -b release-3_40 --single-branch --depth 1
 cd QGIS
 CXX=clang++-14 && CC=clang-14 && cmakeQGIS -DWITH_QTWEBKIT=FALSE -DWITH_SERVER=FALSE -DBUILD_WITH_QT6=ON -DCMAKE_PREFIX_PATH="$DEPENDS_DIR/qwt/install" -DCMAKE_INSTALL_PREFIX=/usr/local/bin/qgis-build/
 ```
