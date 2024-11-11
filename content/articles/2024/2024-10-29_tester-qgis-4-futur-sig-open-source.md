@@ -1,15 +1,15 @@
 ---
-title: Testez QGIS 4
-subtitle: Une histoire de dépendance
+title: Testez QGIS 4 avant tout le monde
+subtitle: Comme si votre Qt en dépendait
 authors:
     - Julien MOURA
 categories:
     - article
 comments: true
 date: 2024-11-09
-description: Essayez QGIS 4 en avant-première ! Comme tout logiciel, open source ou propriétaire, QGIS repose sur d'autres logiciels ou biblioth, es dépendances et principalement Qt.
+description: Essayez QGIS 4 en avant-première ! Comme tout logiciel, open source ou propriétaire, QGIS repose sur d'autres logiciels ou bibliothèques. Des dépendances dont la principale est Qt.
 icon: material/crystal-ball
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
+image:
 license: default
 robots: index, follow
 tags:
@@ -24,18 +24,13 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-## Introduction
-
-[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
-{: align=middle }
-
-----
-
 ## L'architecture de QGIS pour les nuls
 
 ![icône briques différentes](https://cdn.geotribu.fr/img/logos-icones/divers/briques_lego.webp){: .img-thumbnail-left }
 
-Allez, on n'est pas là pour trop entrer dans les détails alros je vous ai fait un schéma simplifié de ce qui compose le logiciel QGIS. Oui, oui il est simplifié.
+Comme tout logiciel, open source ou propriétaire, QGIS repose sur d'autres logiciels ou "bibliothèques" logicielles. Des dépendances dont la principale est Qt.  
+
+On n'est pas là pour trop entrer dans les détails alors je vous ai fait un schéma simplifié de ce qui compose le logiciel QGIS. Oui, oui il est simplifié.
 
 ```mermaid
 flowchart TD
@@ -65,7 +60,12 @@ Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trou
 
 ![Planning des versions de Qt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qt_versions_planning.webp){: .img-center loading=lazy }
 
-Dans cet article, je vous propose donc
+Dans cet article, je vous propose donc d'essayer QGIS 4 en avant-première avec Qt6 et au passage d'en faire un prétexte pour glisser quelques éléments de compréhension du projet (dépendances, dynamique communautaire, forge logicielle...).
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
+<!-- more -->
 
 ----
 
@@ -86,23 +86,22 @@ Allez c'est parti !
 [Télécharger l'installateur OSGeo4W](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe){: .md-button }
 {: align=middle }
 
-Lancer en mode administrateur puis suivre les étapes :
+Lancer en mode administrateur puis suivre les étapes habituelles jusqu'à la fenêtre _Select packages_ :
 
-1. _Advanced Install_
-1. Choisir _Install from Internet_
-1. _All Users_
-1. Choisir un dossier convenable pour l'installation car on n'est pas des bêtes quand même. Par exemple, soyons civilisés et mettons cela dans `%PROGRAMFILES%/QGIS/OSGeo4W`
-1. Tant pis pour l'avertissement. Si en 2024 on doit encore s'embêter avec des espaces dans les chemins de fichiers, surtout pour un emplacement système variabilisé, c'est que le problème n'est pas du côté de l'utilisateur final. Ignorons et continuons donc.
-1. Laissons les valeurs par défaut
-1. Dans le champ Search, taper `qt6-dev-full`
+1. Dans le champ `Search`, taper `qt6-dev-full`
 1. Dérouler `Desktop`
-1. Cliquer sur `Skip` en regard de `qgis-qt6-dev-full` jusqu'à obtenir un numéro de version (probablement impair et supérieur d'un chiffre à la version courante.)
+1. Cliquer sur `Skip` en regard de `qgis-qt6-dev-full` jusqu'à obtenir un numéro de version (probablement impair et supérieur d'un chiffre à la version courante mais peu importe)
+
+    ![OSGeo4W - Select package Qt6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/OSGeo4W_packages_Qt6.webp){: .img-center loading=lazy }
+
 1. suivant, suivant
-1. cocher les licences (ERDAS, MrSID, ORacle, SZIP...). Notez qu'il est aussi possible de les imprimer de façon à les étudier en détail.
-1. :coffee:
+1. cocher les licences (ERDAS, MrSID, Oracle, SZIP...). Notez qu'il est aussi possible de les imprimer de façon à les étudier en détail :face_with_hand_over_mouth:.
+1. :coffee: :hourglass_flowing_sand:
 1. Il y aura peut-être des erreurs mais qu'importe, vous êtes arrivés jusqu'ici car vous vouliez un goût d'aventure dans la bouche ? Il n'est plus temps de reculer pour si peu.
 
-En images :
+![QGIS - OSGeo4W Qt6 - Capture d'écran du menu À propos](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_menu_demarrer_Windows.webp){: .img-center loading=lazy }
+
+Une fois QGIS démarré, aller dans le menu `À propos` pour juger sur pièces de la fraîcheur des dépendances :
 
 ![QGIS - OSGeo4W Qt6 - Capture d'écran du menu À propos](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_about.webp){: .img-center loading=lazy }
 
@@ -178,6 +177,8 @@ CXX=clang++-14 && CC=clang-14 && cmakeQGIS -DWITH_QTWEBKIT=FALSE -DWITH_SERVER=F
 
 ## Quoi de neuf dans QGIS Qt 6 ?
 
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
+
 Allez, on lance, on prend le temps d'essayer de reconnaître des têtes connues sur le splash screen de dév
 
 et hop !
@@ -189,7 +190,7 @@ Alors, qu'est-ce que ça change ?
 - peu de plugins sont compatibles et on ne peut pas filtrer dessus donc c'est assez compliqué de savoir lequel on peut installer
 - on peut voter sur un plugin directement depuis l'interface
 - on a une sensation de vitesse à l'utilisation mais c'est peut-être lié au fait qu'il n'y a aucun plugin d'installé
-- il y a parfois des messages d'erreur mais c'est bon pour le karma d'aventurier
+- il y a parfois des messages d'erreur et des crashs mais c'est bon pour le karma d'aventurier
 - sur Linux, le système d'affichage Wayland est désormais pleinement supporté
 
 ![QGIS - ColorPicker CMJN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_CMJN.webp){: width=20% loading=lazy } ![QGIS - Plugin incompatible avec Qt 6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_installation_plugins_LMFP.webp){: width=20% loading=lazy }
@@ -204,9 +205,9 @@ Une procédure de migration a été ajoutée il y a quelques semaines dans le ~~
 
 1. Dans votre environnement Python de développement :
 
-  ```sh
-  pip install astpretty tokenize-rt
-  ```
+    ```sh
+    pip install astpretty tokenize-rt
+    ```
 
 1. Si vous êtes sur Linux, il faut installer des dépendances supplémentaires :
 
@@ -232,10 +233,10 @@ Une procédure de migration a été ajoutée il y a quelques semaines dans le ~~
 
 Il y a forcément quelques limites au script, notamment :
 
-- la gestion des imports : il recommande souvent d'importer Qt depuis PyQGIS (`from qgis.PyQt.QtCore import Qt`) mais c'est rarement pertinent. Ceci dit, si vous utilisez des outils classiques de contrôle statique du code (flake8, ruff, isort, etc.), ils se chargeront de nettoyer le superflu.
-- il ne gère pas bien les imports de PyQt qui sont hors du scope de PyQGIS. Par exemple, si vous utilisez `QtMultimedia` il va forcer l'import via `qgis.PyQt` alors que ce module là de PyQy n'y est pas référencé.
+- la gestion des imports : il recommande souvent d'importer Qt depuis PyQGIS (`from qgis.PyQt.QtCore import Qt`) mais c'est rarement pertinent. Ceci dit, si vous utilisez des outils classiques de contrôle statique du code (flake8, ruff, isort, etc.), ils se chargeront de nettoyer le superflu. Si vous n'en utilisez pas, pensez à consulter :grimacing:.
+- il ne gère pas bien les imports de PyQt qui sont hors du scope de PyQGIS. Par exemple, si vous utilisez `QtMultimedia` il va forcer l'import via `qgis.PyQt` alors que ce module PyQt là n'y est pas référencé. Cela mènera alors à une erreur d'import.
 
-La documentation sur cette migration est inextistante ou très difficile à trouver. Quand on m'a répondu "la seule documentation, à ce jour, hormis le wiki d'Étienne, c'était [la description de la PR de Nyall](https://github.com/qgis/QGIS/pull/55912)", je me suis dit qu'on est proche du délit d'initiés :grin: ! Mais cela n'a finalement rien d'étonnant pour l'instant car cela ne concerne encore que les développeurs actuellement autour duquel gravite l'écosystème QGIS.
+La documentation sur cette migration est inextistante ou très difficile à trouver. Quand on m'a répondu "la seule documentation, à ce jour, hormis le wiki d'[Étienne](https://mapstodon.space/@etrimaille), c'était [la description de la PR de Nyall](https://github.com/qgis/QGIS/pull/55912)", je me suis dit qu'on est proche du délit d'initiés :grin: ! Mais cela n'a finalement rien d'étonnant pour l'instant car cela ne concerne encore que les développeurs actuellement autour duquel gravite l'écosystème QGIS.
 
 ----
 
