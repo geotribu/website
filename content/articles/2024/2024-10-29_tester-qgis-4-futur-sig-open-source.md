@@ -140,7 +140,7 @@ Si tout se passe bien, on admire le [splash screen](../2021/2021-06-11_qgis_pers
 ### Sur Linux
 
 Comment vous dire... c'est moins fluide, c'est plus... Linux quoi !
-Donc attachez vos ceintures de lignes de commande, préparez vos merguez électroniques, ça va basher et faire chauffer vos CPU et barrettes de ~~sh~~RAM ! Téléguidé par la bonne fée Cabieces, je vous livre une recette pour Debian/Ubuntu. Je passe les détails car on n'est pas ici sur [le guide pour développeurs barbus](https://github.com/qgis/QGIS/blob/master/INSTALL.md).
+Donc attachez vos ceintures de lignes de commande, préparez vos merguez électroniques, ça va basher et faire chauffer vos CPU et barrettes de ~~sh~~RAM ! Téléguidé par [la bonne fée Cabieces](https://github.com/troopa81), je vous livre une recette pour Debian/Ubuntu. Je passe les détails car on n'est pas ici sur [le guide pour développeurs barbus](https://github.com/qgis/QGIS/blob/master/INSTALL.md).
 
 #### Prérequis
 
@@ -155,6 +155,19 @@ Globalement, ça doit se régler avec un :
 sudo apt install cmake build-essentials git
 ```
 
+Plus délicat, il faut gérer la dépendance à [Qwt](https://qwt.sourceforge.io/index.html), une biblithèque de widgets Qt pour les applications techniques qui n'est pas installable facilement via apt. On doit donc partir des sources :
+
+```sh title="Télécharger, compiler et installer Qwt"
+cd /tmp \
+    && wget -N -c https://sourceforge.net/projects/qwt/files/qwt/6.3.0/qwt-6.3.0.zip/download -O qwt.zip \
+    && unzip -o -q qwt.zip \
+    && cd qwt-6.3.0/ \
+    && qmake6 qwt.pro \
+    && make \
+    && cp -Rf lib/* ./install/lib \
+    && cp -Rf src/* ./install/include/qwt
+```
+
 #### Lancer le jeu de construction
 
 Sur un malentendu, la suite de commandes pourrait bien marcher du premier coup :
@@ -164,7 +177,7 @@ mkdir -p ~/Git/
 cd ~/Git
 git clone https://github.com/qgis/QGIS.git -b release-3_40 --single-branch --depth 1
 cd QGIS
-CXX=clang++-14 && CC=clang-14 && cmakeQGIS -DWITH_QTWEBKIT=FALSE -DWITH_SERVER=FALSE -DBUILD_WITH_QT6=ON -DCMAKE_PREFIX_PATH="$DEPENDS_DIR/qwt/install" -DCMAKE_INSTALL_PREFIX=/usr/local/bin/qgis-build/
+cmakeQGIS -DWITH_QTWEBKIT=FALSE -DWITH_SERVER=FALSE -DBUILD_WITH_QT6=ON -DCMAKE_PREFIX_PATH="$DEPENDS_DIR/qwt/install" -DCMAKE_INSTALL_PREFIX=/usr/local/bin/qgis-build/
 ```
 
 ----
@@ -172,7 +185,7 @@ CXX=clang++-14 && CC=clang-14 && cmakeQGIS -DWITH_QTWEBKIT=FALSE -DWITH_SERVER=F
 ### Sur MacOS
 
 !!! warning ""
-    Compte-tenu des coûts associés pour l'obtention d'un [MacBook Pro M3 Max](https://www.apple.com/fr/shop/buy-mac/macbook-pro/14-pouces-m4-pro), forcément indispensable pour ce tutoriel, cette section est réservée aux [abonnés premium de Geotribu](../../about/sponsoring.md). :face_with_hand_over_mouth:
+    Compte-tenu des coûts associés pour l'obtention d'un [MacBook Pro M4 Pro](https://www.apple.com/fr/shop/buy-mac/macbook-pro/14-pouces-m4-pro), forcément indispensable pour ce tutoriel, cette section est réservée aux [abonnés premium de Geotribu](../../about/sponsoring.md). :face_with_hand_over_mouth:
 
 ----
 
