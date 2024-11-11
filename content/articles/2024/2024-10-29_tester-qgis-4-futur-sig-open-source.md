@@ -100,7 +100,7 @@ Lancer en mode administrateur puis suivre les étapes habituelles jusqu'à la fe
 
 Une fois l'installation terminée, cherchez et ouvrez QGIS depuis le menu démarrer de votre système à fenêtres :
 
-![QGIS dans le mnu démarrer de Windows](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_menu_demarrer_Windows.webp){: .img-center loading=lazy }
+![QGIS dans le menu démarrer de Windows](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_menu_demarrer_Windows.webp){: .img-center loading=lazy }
 
 Une fois QGIS démarré, aller dans le menu `À propos` pour juger sur pièces de la fraîcheur des dépendances :
 
