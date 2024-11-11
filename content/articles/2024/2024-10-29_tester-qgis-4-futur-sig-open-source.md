@@ -243,7 +243,7 @@ La documentation sur cette migration est inextistante ou très difficile à trou
 
 ## Conclusion
 
-Derrière le titre _putaclic_, l'article est l'occasion de glisser quelques éléments de compréhension d'un projet logiciel : dépendances, dynamique communautaire, forge logicielle....
+Derrière le titre _putaclic_, l'article est l'occasion de glisser quelques éléments de compréhension d'un projet logiciel : dépendances, dynamique communautaire, forge logicielle...
 
 On aura aussi vu qu'il y a plusieurs manières d'empaqueter et distribuer le même code source. Ici, OSGeo4W et vcpkg.
 
