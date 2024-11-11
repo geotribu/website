@@ -60,7 +60,7 @@ Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trou
 
 ![Planning des versions de Qt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qt_versions_planning.webp){: .img-center loading=lazy }
 
-Dans cet article, je vous propose donc d'essayer QGIS 4 en avant-première avec Qt6 et au passage d'en faire un prétexte pour glisser quelques éléments de compréhension du projet (dépendances, dynamique communautaire, forge logicielle...).
+Dans cet article, je vous propose donc 2 façons de télécharger une version de QGIS basée sur Qt6 afin de vous laisser tester par vous-même, avec un petit détour du côté de la mise à jour de vos plugins.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
@@ -97,9 +97,10 @@ Lancer en mode administrateur puis suivre les étapes habituelles jusqu'à la fe
 1. suivant, suivant
 1. cocher les licences (ERDAS, MrSID, Oracle, SZIP...). Notez qu'il est aussi possible de les imprimer de façon à les étudier en détail :face_with_hand_over_mouth:.
 1. :coffee: :hourglass_flowing_sand:
-1. Il y aura peut-être des erreurs mais qu'importe, vous êtes arrivés jusqu'ici car vous vouliez un goût d'aventure dans la bouche ? Il n'est plus temps de reculer pour si peu.
 
-![QGIS - OSGeo4W Qt6 - Capture d'écran du menu À propos](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_menu_demarrer_Windows.webp){: .img-center loading=lazy }
+Une fois l'installation terminée, cherchez et ouvrez QGIS depuis le menu démarrer de votre système à fenêtres :
+
+![QGIS dans le mnu démarrer de Windows](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_menu_demarrer_Windows.webp){: .img-center loading=lazy }
 
 Une fois QGIS démarré, aller dans le menu `À propos` pour juger sur pièces de la fraîcheur des dépendances :
 
@@ -237,6 +238,14 @@ Il y a forcément quelques limites au script, notamment :
 - il ne gère pas bien les imports de PyQt qui sont hors du scope de PyQGIS. Par exemple, si vous utilisez `QtMultimedia` il va forcer l'import via `qgis.PyQt` alors que ce module PyQt là n'y est pas référencé. Cela mènera alors à une erreur d'import.
 
 La documentation sur cette migration est inextistante ou très difficile à trouver. Quand on m'a répondu "la seule documentation, à ce jour, hormis le wiki d'[Étienne](https://mapstodon.space/@etrimaille), c'était [la description de la PR de Nyall](https://github.com/qgis/QGIS/pull/55912)", je me suis dit qu'on est proche du délit d'initiés :grin: ! Mais cela n'a finalement rien d'étonnant pour l'instant car cela ne concerne encore que les développeurs actuellement autour duquel gravite l'écosystème QGIS.
+
+----
+
+## Conclusion
+
+Derrière le titre _putaclic_, l'article est l'occasion de glisser quelques éléments de compréhension d'un projet logiciel : dépendances, dynamique communautaire, forge logicielle....
+
+On aura aussi vu qu'il y a plusieurs manières d'empaqueter et distribuer le même code source. Ici, OSGeo4W et vcpkg.
 
 ----
 
