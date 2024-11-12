@@ -56,11 +56,21 @@ flowchart TD
 
 Vous avez remarqué le rond rouge au milieu ? Eh bien c'est le [cadriciel (_framework_) Qt](https://www.qt.io/) (prononcez "kuté" ou comme "_cute_" qui signifie mignon en anglais) retenu par le projet QGIS pour s'interfacer avec les API graphiques et techniques des différents systèmes d'exploitation.
 
-Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trouve qu'elle est arrivée en fin de vie en... mai 2025 selon [la documentation officielle](https://doc.qt.io/qt-6/supported-platforms.html#supported-qt-versions). La dernière fois que QGIS a changé de version majeure de Qt, QGIS est aussi passé à la version majeure supérieure (donc oui `QGIS 2 = Qt 4` et `QGIS 3 = Qt 5`)...
+Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trouve qu'elle est arrivée en fin de vie en... mai 2025 selon [la documentation officielle](https://doc.qt.io/qt-6/supported-platforms.html#supported-qt-versions).
 
 ![Planning des versions de Qt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qt_versions_planning.webp){: .img-center loading=lazy }
 
-Dans cet article, je vous propose donc deux façons de télécharger une version de QGIS basée sur Qt6 afin de vous laisser tester par vous-même, avec un petit détour du côté de la mise à jour de vos plugins.
+La dernière fois que QGIS a changé de version majeure de Qt et celle de Python, QGIS est aussi passé à la version majeure supérieure. Ce qui nous donne l'équation savante suivante :
+
+$$\begin{array}{l|rcl}
+N° majeur version QGIS : & QGIS 2 &= (Qt 4 + Python 2) \\
+    & QGIS 3 &= (Qt 5 + Python 3) \\
+    & QGIS 4 & \approx (Qt 6 + Python 3)
+\end{array}$$
+
+Mais pour l'instant, rien n'est encore décidé sur l'incrémentation du [numéro majeur de version de QGIS](https://semver.org/lang/fr/). Le suspense est à son comble.
+
+Dans cet article, je vous propose donc deux façons de télécharger une version de QGIS 3 basée sur Qt6 afin de vous laisser tester par vous-même, avec un petit détour du côté de la mise à jour de vos plugins.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
