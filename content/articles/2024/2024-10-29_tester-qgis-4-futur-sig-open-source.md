@@ -144,6 +144,8 @@ Si tout se passe bien, on admire le [splash screen](../2021/2021-06-11_qgis_pers
 
 ### Sur Linux
 
+![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-thumbnail-left }
+
 Comment vous dire... c'est moins fluide, c'est plus... Linux quoi !
 Donc attachez vos ceintures de lignes de commande, préparez vos merguez électroniques, ça va basher et faire chauffer vos CPU et barrettes de ~~sh~~RAM ! Téléguidé par [la bonne fée Cabieces](https://github.com/troopa81), je vous livre une recette pour Debian/Ubuntu. Je passe les détails car on n'est pas ici sur [le guide pour développeurs barbus](https://github.com/qgis/QGIS/blob/master/INSTALL.md).
 
@@ -157,7 +159,7 @@ Donc attachez vos ceintures de lignes de commande, préparez vos merguez électr
 Globalement, ça doit se régler avec un :
 
 ```sh
-sudo apt install cmake build-essential git
+sudo apt install cmake build-essential git qmake6
 ```
 
 Plus délicat, il faut gérer la dépendance à [Qwt](https://qwt.sourceforge.io/index.html), une bibliothèque de widgets Qt pour les applications techniques qui n'est pas installable facilement via apt. On doit donc partir des sources :
@@ -182,7 +184,7 @@ mkdir -p ~/Git/
 cd ~/Git
 git clone https://github.com/qgis/QGIS.git -b release-3_40 --single-branch --depth 1
 cd QGIS
-cmakeQGIS -DWITH_QTWEBKIT=FALSE -DWITH_SERVER=FALSE -DBUILD_WITH_QT6=ON -DCMAKE_PREFIX_PATH="$DEPENDS_DIR/qwt/install" -DCMAKE_INSTALL_PREFIX=/usr/local/bin/qgis-build/
+cmake ./ -GNinja -DSUPPRESS_QT_WARNINGS=ON  -DBUILD_WITH_QT6=ON -DCMAKE_PREFIX_PATH="$DEPENDS_DIR/qwt/install" -DCMAKE_INSTALL_PREFIX=/usr/local/bin/qgis-build/ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DWERROR=ON -DWITH_PDAL=OFF -DWITH_GRASS7=OFF -DWITH_GRASS8=OFF -DWITH_QTWEBKIT=FALSE
 ```
 
 ----
