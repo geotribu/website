@@ -114,26 +114,31 @@ Une fois QGIS démarré, aller dans le menu `À propos` pour juger sur pièces d
 
 Depuis les choses ont bien avancé et QGIS est compilé/packagé avec Qt6 à chaque modification du code source (_commit_) sur GitHub.
 
-[:simple-githubactions: Aller télécharger un exécutable depuis GitHub](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess){: .md-button }
-{: align=middle }
+1. Se connecter à son compte [GitHub](https://github.com/) (ou en créer un gratuitement pour l'occasion) et cliquer sur le bouton ci-dessous :
 
-Notez qu'il est possible de filtrer sur une branche en particulier. Par exemple, pour n'afficher que [les jobs Windows Qt6 pour QGIS 3.40 ayant réussi](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess+branch%3Arelease-3_40).
+    [:simple-githubactions: Aller télécharger un exécutable depuis GitHub](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess){: .md-button }
+    {: align=middle }
 
-!!! note "Dans l'ombre de la DSI"
-    Notez que cette version téléchargeable et autoporteuse est idéale pour les environnements où les droits d'installation sont limités.
-    Si on vous demande d'où ça sort, dites que vous avez lu ça sur [arcOrama](https://www.arcorama.fr/) :zipper_mouth:.
+1. Cliquer sur la première ligne (cadre vert dans la capture ci-dessous) pour ouvrir les résultats de la dernière exécution. Notez qu'il est possible de filtrer sur une branche en particulier (menu déroulant détouré en bleu dans la capture ci-dessous). Par exemple, pour n'afficher que [les jobs Windows Qt6 pour QGIS 3.40 ayant réussi](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess+branch%3Arelease-3_40).
 
-Une fois le téléchargement terminé :
+    ![GitHub Actions - Jobs du workflow QGIS Windows Qt6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/OPENGIS-CH_Qt6_GitHub_Action_jobs_annotated.png){: .img-center loading=lazy }
 
-1. on dézippe
-1. on va dans le dossier `bin`
-1. et on lance le fichier `qgis.exe` (pensez à activer l'affichage des extensions de fichiers sur Windows, la vie est plus belle).
+1. Dans la page qui s'ouvre, cliquer sur `qgis-windows-qt6` dans la section `Artifacts` en bas (encadré vert dans la capture ci-dessous) :
+
+    ![GitHub Actions - Résumé d'un job du workflow QGIS Windows Qt6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/OPENGIS-CH_Qt6_GitHub_Action_artefact_annotated.png)
+
+1. Une fois le téléchargement terminé, Dézipper jusqu'à obtenir un dossier `qgis-X.y.z-win64` où `X.y.z` correspond à la version que vous avez sélectionnée
+1. Aller dans le dossier `bin` et lancer le fichier `qgis.exe` (pensez à activer l'affichage des extensions de fichiers sur Windows, la vie est plus belle).
 
     ![Lancer QGIS Qt6 OPENGIS.CH](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/OPENGIS-CH_binaire_QGIS.webp){: .img-center loading=lazy }
 
 Si tout se passe bien, on admire le [splash screen](../2021/2021-06-11_qgis_personnaliser_splash_screen.md "Personnaliser l'image au lancement de QGIS") personnalisé pour l'occasion :
 
 ![QGIS - Splashscreen Qt6 by OPENGIS.ch](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qgis_Qt6_OPENGIS-CH_splashscreen.webp){: .img-center loading=lazy }
+
+!!! note "Dans l'ombre de la DSI"
+    Notez que cette version téléchargeable et autoporteuse est idéale pour les environnements où les droits d'installation sont limités.
+    Si on vous demande d'où ça sort, dites que vous avez lu ça sur [arcOrama](https://www.arcorama.fr/) :zipper_mouth:.
 
 ----
 
