@@ -144,7 +144,7 @@ Donc attachez vos ceintures de lignes de commande, préparez vos merguez électr
 
 #### Prérequis
 
-- make et build essentials
+- suite de logiciels de build essentiels
 - Git
 - 8 Go de RAM mais 12 c'est bien, 16 très bien et 32 c'est mieux
 - 6,5 Go d'espace disque. Notez qu'avec un SSD, tu gagnes un bonus de vitesse.
@@ -152,10 +152,10 @@ Donc attachez vos ceintures de lignes de commande, préparez vos merguez électr
 Globalement, ça doit se régler avec un :
 
 ```sh
-sudo apt install cmake build-essentials git
+sudo apt install cmake build-essential git
 ```
 
-Plus délicat, il faut gérer la dépendance à [Qwt](https://qwt.sourceforge.io/index.html), une biblithèque de widgets Qt pour les applications techniques qui n'est pas installable facilement via apt. On doit donc partir des sources :
+Plus délicat, il faut gérer la dépendance à [Qwt](https://qwt.sourceforge.io/index.html), une bibliothèque de widgets Qt pour les applications techniques qui n'est pas installable facilement via apt. On doit donc partir des sources :
 
 ```sh title="Télécharger, compiler et installer Qwt"
 cd /tmp \
