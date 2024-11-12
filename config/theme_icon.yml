@@ -44,6 +44,7 @@ icon:
     pingouin: simple/linux
     python: fontawesome/brands/python
     qgis: simple/qgis
+    qt: simple/qt
     raster: material/data-matrix
     rezosocio: material/account-network
     roue: material/cog-play
