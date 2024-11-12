@@ -73,7 +73,12 @@ Dans cet article, je vous propose donc deux façons de télécharger une version
 
 ### Sur Windows
 
-#### Niveau aventurier dominical : le package dév de l'OSGeo4W
+Si vous travaillez sur le principal système d'exploitation des utilisateur/ices de QGIS, vous avez l'embarras du choix pour tester :
+
+- [une installation avec l'OSGeo4W](#aventure-osgeo4w) : relativement classique mais plus risquée pour votre environnement de travail
+- la [récupération d'une version autoporteuse génére avec vckpg](#aventure-vcpkg) : plus périlleuse mais plus isolée du reste de votre système. Personnellement, c'est celle que je préfère :cowboy:.
+
+#### Niveau aventurier dominical : le package dév de l'OSGeo4W {: #aventure-osgeo4w }
 
 ![logo OSGeo4W](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osgeo4w.webp){: .img-thumbnail-left }
 
@@ -106,7 +111,7 @@ Une fois QGIS démarré, aller dans le menu `À propos` pour juger sur pièces d
 
 ![QGIS - OSGeo4W Qt6 - Capture d'écran du menu À propos](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_about.webp){: .img-center loading=lazy }
 
-#### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg
+#### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg  {: #aventure-vcpkg }
 
 ![logo vcpkg](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/vcpkg.webp){: .img-thumbnail-left }
 
@@ -160,6 +165,9 @@ Globalement, ça doit se régler avec un :
 
 ```sh
 sudo apt install cmake build-essential git qmake6
+
+ bison build-essential ca-certificates ccache cmake cmake-curses-gui dh-python doxygen expect flex flip gdal-bin git graphviz grass-dev libdraco-dev libexiv2-dev libexpat1-dev libfcgi-dev libgdal-dev libgeos-dev libgsl-dev libpq-dev libproj-dev libprotobuf-dev libqca-qt5-2-dev libqca-qt5-2-plugins libqscintilla2-qt5-dev libqt5opengl5-dev libqt5serialport5-dev libqt5sql5-sqlite libqt5svg5-dev libqt5webkit5-dev libqt5xmlpatterns5-dev libqwt-qt5-dev libspatialindex-dev libspatialite-dev libsqlite3-dev libsqlite3-mod-spatialite libyaml-tiny-perl libzip-dev libzstd-dev lighttpd locales ninja-build ocl-icd-opencl-dev opencl-headers pandoc pkg-config poppler-utils protobuf-compiler pyqt5-dev pyqt5-dev-tools pyqt5.qsci-dev python3-all-dev python3-autopep8 python3-dev python3-gdal python3-jinja2 python3-lxml python3-mock python3-nose2 python3-owslib python3-plotly python3-psycopg2 python3-pygments python3-pyproj python3-pyqt5 python3-pyqt5.qsci python3-pyqt5.qtmultimedia python3-pyqt5.qtpositioning python3-pyqt5.qtserialport python3-pyqt5.qtsql python3-pyqt5.qtsvg python3-pyqt5.qtwebkit python3-pyqtbuild python3-sip python3-termcolor python3-yaml qt3d-assimpsceneimport-plugin qt3d-defaultgeometryloader-plugin qt3d-gltfsceneio-plugin qt3d-scene2d-plugin qt3d5-dev qtbase5-dev qtbase5-private-dev qtkeychain-qt5-dev qtmultimedia5-dev qtpositioning5-dev qttools5-dev qttools5-dev-tools sip-tools spawn-fcgi xauth xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable xvfb
+
 ```
 
 Plus délicat, il faut gérer la dépendance à [Qwt](https://qwt.sourceforge.io/index.html), une bibliothèque de widgets Qt pour les applications techniques qui n'est pas installable facilement via apt. On doit donc partir des sources :
