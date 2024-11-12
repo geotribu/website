@@ -60,7 +60,7 @@ Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trou
 
 ![Planning des versions de Qt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qt_versions_planning.webp){: .img-center loading=lazy }
 
-Dans cet article, je vous propose donc 2 façons de télécharger une version de QGIS basée sur Qt6 afin de vous laisser tester par vous-même, avec un petit détour du côté de la mise à jour de vos plugins.
+Dans cet article, je vous propose donc deux façons de télécharger une version de QGIS basée sur Qt6 afin de vous laisser tester par vous-même, avec un petit détour du côté de la mise à jour de vos plugins.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
