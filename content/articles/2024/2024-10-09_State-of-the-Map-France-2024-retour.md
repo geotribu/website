@@ -139,7 +139,7 @@ Les problèmes rencontrés :
 
 - la décentralisation et les silos de données concernant les réseaux de transports publics en France : chaque petite région de mobilité a ses données, a développé son application de transport, mais est très frileuse (modes de gestion public-privé) à l'idée de partager et de rendre tout ça interopérable à l'échelle de la France entière
 
-- La simplification pour le rendu d'autant de données complexes sur le Web qui peut rendre l'utilisation parfois un peu moins fluide que prévue
+- La simplification pour le rendu d'autant de données complexes sur le Web : elle peut rendre l'utilisation parfois un peu moins fluide que prévue
 
 - L'installation sur smartphone qui n'est pas toujours évidente pour tout le monde selon l'OS, le navigateur, etc.
 
