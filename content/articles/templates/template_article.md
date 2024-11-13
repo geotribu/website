@@ -1,5 +1,6 @@
 ---
 title: "Titre principal"
+subtitle: un sous-titre subtil
 authors:
     - Prénom NOM
 categories:
@@ -22,6 +23,8 @@ tags:
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
+
+Texte.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
