@@ -48,7 +48,7 @@ Dans cet article, je vous parlerai donc essentiellement de quelques conférences
 
 - par la métropole de Lyon : H. Greolas retrace l'évolution de la gestion des données (spatiales) de la métropole de Lyon, notamment du MCPP (« Moi C'est Pas Pareil ») à la stratégie open data actuelle basée sur le triptyque «Comprendre (passé), Piloter (présent), Prévoir (futur)»
 
-- puis par l'Université Lyon 3 : sont présentées la richesse actuelle des événements pour les amoureux des cartes avec de nombreuses [conférences](https://ichc2024.univ-lyon3.fr/accueil-fr) et de nombreuses [expositions](https://ichc2024.univ-lyon3.fr/expositions-1) de cartographie en cours dans la capitale des Gaules. Bernard Gauthiez, professeur de géographie, pointe la nécessité d'archivage des données numériques en particulier dans les services publics. Petit clin d'œil malicieux du public qui le renvoie sur le travail de Christian Quest, présent dans la salle : [opendatarchives](https://www.opendatarchives.fr/).
+- puis par l'Université Lyon 3 : sont présentées la richesse actuelle des événements pour les amoureux des cartes avec de nombreuses [conférences](https://ichc2024.univ-lyon3.fr/accueil-fr) et de nombreuses [expositions](https://ichc2024.univ-lyon3.fr/expositions-1) de cartographie en cours dans la capitale des Gaules. Bernard Gauthiez, professeur de géographie, pointe le nécessaire archivage des données numériques en particulier dans les services publics. Petit clin d'œil malicieux du public qui le renvoie sur le travail de Christian Quest, présent dans la salle : [opendatarchives](https://www.opendatarchives.fr/).
 
 - Petits topo éclairs sur quelques sujets :
     - C. Frayssinet nous présente une petite application permettant de proposer de la **formation sur smartphone** (*mobile learning*) avec **[ePoc](https://epoc.inria.fr/)** et comment il a développé une formation à OSM à destination de ses élèves de seconde
@@ -74,7 +74,7 @@ Dans cet article, je vous parlerai donc essentiellement de quelques conférences
 
 Présentation de l'outil [DataSud](https://www.datasud.fr/portal/), plateforme d'opendata, mais pas que !
 
-L'infrastructure est pensée pour mettre à disposition des données de différentes natures (dont données MAJIC) à des publics différents : collectivités, associations, etc. Se voulant un hub de données régionales, DataSud moissonne les données OSM sur les [fichiers diffs](https://wiki.openstreetmap.org/wiki/Planet.osm/diffs) et crée des couches prétraitées grâce à [Osmium](https://github.com/osmcode/), [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis) et [osm2pgsql](https://osm2pgsql.org/). La base initiale est ainsi digérée en 35 tables définies par un fichier LUA. Puis d'autres tables sont gérées avec des vues thématisées selon [la nomenclature OSM FR](https://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques) (plus d'infos [ici](https://gitlab.datasud.fr/projets_publics/openstreetmap4datasud)).
+L'infrastructure est pensée pour mettre à disposition des données de différentes natures (dont [la matrice cadastrale MAJIC](https://guides.data.gouv.fr/reutiliser-des-donnees/autour-du-cadastre/manipuler-les-donnees-du-cadastre#faire-lintegration-metier-parcelles-et-majic)) à des publics différents : collectivités, associations, etc. Se voulant un hub de données régionales, DataSud moissonne les données OSM sur les [fichiers diffs](https://wiki.openstreetmap.org/wiki/Planet.osm/diffs) et crée des couches prétraitées grâce à [Osmium](https://github.com/osmcode/), [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis) et [osm2pgsql](https://osm2pgsql.org/). La base initiale est ainsi digérée en 35 tables définies par un fichier LUA. Puis d'autres tables sont gérées avec des vues thématisées selon [la nomenclature OSM FR](https://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques) (plus d'infos [ici](https://gitlab.datasud.fr/projets_publics/openstreetmap4datasud)).
 
 Un [catalogue](https://www.datasud.fr/explorer/fr/recherche) propose des téléchargements dans des formats très divers et des [cartes](https://www.datasud.fr/maps/) sont directement proposées.
 
@@ -130,7 +130,7 @@ De ce succès, notamment dans le cadre de fonction publique, a découlé des fin
 
 ### Présentation de Cartes.app
 
-:fontawesome-solid-person-chalkboard: M. Thomas
+:fontawesome-solid-person-chalkboard: M. Thomas-Quillévéré
 
 ![logo cartes.app](https://cdn.geotribu.fr/img/logos-icones/divers/cartes_app.webp){: .img-thumbnail-left }
 
