@@ -39,6 +39,9 @@ Dans cet article, je vous parlerai donc essentiellement de quelques conférences
 
 ![Carte des participants au SotM FR 2024](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/carte_participantsOSM2024.jpg){: .img-center loading=lazy }
 
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
 ----
 
 ## Intervention inaugurale
@@ -63,7 +66,11 @@ Dans cet article, je vous parlerai donc essentiellement de quelques conférences
 
 ## Conférences
 
-### DataSud (T. Emery & V. Canut - Région SUD-PACA)
+### DataSud
+
+:fontawesome-solid-person-chalkboard: T. Emery et V. Canut (Région SUD-PACA)
+
+![logo DataSud](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/DataSud.webp){: .img-thumbnail-left }
 
 Présentation de l'outil [DataSud](https://www.datasud.fr/portal/), plateforme d'opendata, mais pas que !
 
@@ -76,7 +83,11 @@ Un [catalogue](https://www.datasud.fr/explorer/fr/recherche) propose des téléc
     - Attendez je regarde sur OSM...
     - Ah oui, c'est bon ! ils sont là, juste à gauche !
 
-### L'OCSGE et le CoSIA de l'IGN : une nouvelle opportunité pour OSM? (X. Halbecq IGN et J.-L. Zimmermann CD84)
+### L'OCSGE et le CoSIA de l'IGN : une nouvelle opportunité pour OSM ?
+
+:fontawesome-solid-person-chalkboard: X. Halbecq (IGN) et J.-L. Zimmermann (CD84)
+
+![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png){: .img-thumbnail-left }
 
 L'occupation du sol à grande échelle (OCSGE) est une nouvelle base géographique vectorielle de référence développée par l'IGN. En deux dimensions, elle vise à **(1) décrire la couverture et (2) l'usage des sols** de la [France entière d'ici fin 2025](https://macarte.ign.fr/carte/VVpbhc/Production-de-l-OCS-GE-NG). La résolution est d'environ 20cm mais l'échelle d'utilisation est a priori entre 1:2500 et 1:5000.  Son développement vient notamment combler les besoins de suivi de la loi Zéro Artificialisation Nette.
 
@@ -98,20 +109,32 @@ Ces produits de grande résolution offrent une formidable opportunité pour les 
 !!! note "Une nomenclature sévère avec l'agriculture"
     Avec quelques regrets néanmoins de l'assemblée qui considère la nomenclature choisie relativement sévère sur l'agriculture, rassemblée dans un seul poste avec une absence de distinction des cultures (pérennes / annuelles / vergers / vignes, etc.)*
 
-### uMap incubé par l'état, ça donne quoi ? (Y. Boniface)
+### uMap incubé par l'état, ça donne quoi ?
 
-L'application [uMap](https://umap-project.org/fr/) qui aide à la création de cartographies interactives personnalisées à partir de couches OSM a passé le million de cartes créées. De ce succès, notamment dans le cadre de fonction publique, a découlé des financements de la part de l'AIC - [Accélérateur d'Initiatives Citoyennes](https://communs.beta.gouv.fr/) - et de l'[Agence Nationale de la Cohésion des Territoires](https://agence-cohesion-territoires.gouv.fr/). Outre la création d'une [instance spécifique pour les agents de la fonction publique](https://umap.incubateur.anct.gouv.fr/)) afin de ne pas surcharger les serveurs OSM-France, cela a permis le financement de nombreux développements (V2) et nouvelles fonctionnalités présentés :
-    - Nombreuses améliorations UX (tableau de bord, explorateur, avertissements, alertes, signalisations, panneau de partage, gabarits de pop-up)
-    - Drag & Drop des données
-    - Assistant d'import Overpass, recherche GPS
-    - Formatage conditionnel
-    - Le clic-droit > "Modifier dans OpenStreetMap"
+:fontawesome-solid-person-chalkboard: Y. Boniface
 
-<https://nuage.yohanboniface.me/umap_lyon_2024.pdf>
+![logo uMap](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/umap_logo.png){: .img-thumbnail-left }
 
-### Présentation de Cartes.app (M. Thomas)
+L'application [uMap](https://umap-project.org/fr/) qui aide à la création de cartographies interactives personnalisées à partir de couches OSM a passé le million de cartes créées.
 
-*Cette [présentation](https://peertube.openstreetmap.fr/w/oJwaAP1PbeLsK2zywTzLga) de Maël Thomas-Quillévéré m'a fait forte impression et je ne pense pas être le seul étant donné sa limpidité et son engagement. Vous pouvez d'ailleurs la revisionner [ici](https://peertube.openstreetmap.fr/w/oJwaAP1PbeLsK2zywTzLga). Il est rare que des développeurs tombent le masque et affichent des positions qui ne soient pas consensuelles pour les congressistes. Cette radicalité a pour elle de nous rappeler à l'acceptabilité éthique et morale de nos développements. En l'occurrence, Maël plante immédiatement le décor du problème à résoudre avec [ce graphique](https://ourworldindata.org/grapher/co2-mitigation-15c) montrant les réductions d'émissions à effectuer pour atteindre des objectifs climatiques qui ne soient pas irrémédiables pour notre planète et ses habitants des différentes espèces.*
+De ce succès, notamment dans le cadre de fonction publique, a découlé des financements de la part de l'AIC - [Accélérateur d'Initiatives Citoyennes](https://communs.beta.gouv.fr/) - et de l'[Agence Nationale de la Cohésion des Territoires](https://agence-cohesion-territoires.gouv.fr/). Outre la création d'une [instance spécifique pour les agents de la fonction publique](https://umap.incubateur.anct.gouv.fr/)) afin de ne pas surcharger les serveurs OSM-France, cela a permis le financement de nombreux développements (V2) et nouvelles fonctionnalités présentés :
+
+- Nombreuses améliorations UX (tableau de bord, explorateur, avertissements, alertes, signalisations, panneau de partage, gabarits de pop-up)
+- Drag & Drop des données
+- Assistant d'import Overpass, recherche GPS
+- Formatage conditionnel
+- Le clic-droit > "Modifier dans OpenStreetMap"
+
+[:material-cloud-download: Télécharger le support de présentation :fontawesome-solid-file-pdf:](https://nuage.yohanboniface.me/umap_lyon_2024.pdf){: .md-button }
+{: align=middle }
+
+### Présentation de Cartes.app
+
+:fontawesome-solid-person-chalkboard: M. Thomas
+
+![logo cartes.app](https://cdn.geotribu.fr/img/logos-icones/divers/cartes_app.webp){: .img-thumbnail-left }
+
+Cette [présentation](https://peertube.openstreetmap.fr/w/oJwaAP1PbeLsK2zywTzLga) de Maël Thomas-Quillévéré m'a fait forte impression et je ne pense pas être le seul étant donné sa limpidité et son engagement. Vous pouvez d'ailleurs la revisionner [ici](https://peertube.openstreetmap.fr/w/oJwaAP1PbeLsK2zywTzLga). Il est rare que des développeurs tombent le masque et affichent des positions qui ne soient pas consensuelles pour les congressistes. Cette radicalité a pour elle de nous rappeler à l'acceptabilité éthique et morale de nos développements. En l'occurrence, Maël plante immédiatement le décor du problème à résoudre avec [ce graphique](https://ourworldindata.org/grapher/co2-mitigation-15c) montrant les réductions d'émissions à effectuer pour atteindre des objectifs climatiques qui ne soient pas irrémédiables pour notre planète et ses habitants des différentes espèces.
 
 En France, 1/4 de l'empreinte environnementale est liée à la voiture et 90% des dépenses totales de mobilité (privées + publiques) vont pour le système "voiture".
 
@@ -126,13 +149,9 @@ Le parti pris de Maël est que nous avons une *fausse dépendance à la voiture*
 L'application navigateur [**cartes.app**](https://cartes.app/#5.52/46.857/2.025) développée entend prendre le contrepied en proposant  :
 
 - des trajets calculés de façon préférentielle sur des modes doux (via [BRouter](https://brouter.de/brouter-web/#map=6/46.823/-0.791/cyclosm) pour le vélo) ou en transports publics (via [Motis](https://routing.spline.de/?motis=https%3A%2F%2Frouting.spline.de%2Fapi) et l'intégration des GTFS) avec une signalétique (discrète :smile:) sur l'itinéraire voiture. Une navigation possible au sein des différents réseaux de transports publics.
-
 - une mise en avant des lieux de façon non commerciale (un salon de massage ne sera jamais au-dessus d'une gare dans les priorités d'affichage !)
-
 - des données basées sur OSM, avec des requêtes Overpass
-
 - une interface de rendu qui soit plus jolie que celle de la carte OSM ! (qui doit être considérée comme une vue de la BDD) avec l'intégration de Panoramax pour la vue immersive
-
 - une application sur navigateur pour des facilités de développement
 
 Les problèmes rencontrés :
@@ -142,10 +161,13 @@ Les problèmes rencontrés :
 - La simplification pour le rendu d'autant de données complexes sur le Web : elle peut rendre l'utilisation parfois un peu moins fluide que prévue
 
 - L'installation sur smartphone qui n'est pas toujours évidente pour tout le monde selon l'OS, le navigateur, etc.
-
 - Un modèle économique ? 😉
 
-### Cartographier les cours d'eau (F. Lacombe et J.L. Zimmermann)
+### Cartographier les cours d'eau
+
+:fontawesome-solid-person-chalkboard: F. Lacombe et J.L. Zimmermann
+
+![icône cours d'eau](https://cdn.geotribu.fr/img/logos-icones/divers/cours_eau.webp){: .img-thumbnail-left }
 
 La restitution de l'expérience acquise par deux grands contributeurs de cette thématique sur OSM a tenu toutes ses promesses. La résolution d'un certain nombre de problèmes de sémantique ou de capillarité a ici été démontrée pour cette thématique d'avenir.
 
@@ -213,6 +235,14 @@ Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléme
 - Le[stationnement cyclable dans les grandes villes européennes](https://peertube.openstreetmap.fr/w/pxjVCP4BYEEowJXvL7y4Fy) par [GeoVélo](https://geovelo.app/fr/). Selon leur classement, dépendant des données remontées, Lyon est la meilleure ville française en nombre de stationnement vélo /hab.
 
 - [OSMTracker-Android : personnaliser, contribuer et maintenir](https://peertube.openstreetmap.fr/w/51rvQ2UVMbC8fwUs9NZB8y) par Thibtib51
+
+----
+
+## Conclusion
+
+Voilà pour ce petit article sur cette édition 2024 du SotM. Beaucoup de liens dans tous les sens, il faut dire que c'était riche ! J'espère que ça ne vous a pas rebuté, l'idée était de revenir sur quelques conf qu'il me semblait intéressant à partager au plus grand nombre. En espérant vous avoir donné envie de participer une prochaine fois et bien sûr de contribuer à openStreetMap :wink:. Merci de m'avoir lu, je vous laisse avec la vidéo rétrospective :
+
+<iframe title="Retour sur le SOTM∙France₂₀₂₄ | Édition 2024" width="100%" height="400" src="https://peertube.openstreetmap.fr/videos/embed/e827c08c-f4d1-4ca2-9a65-555aa28f5b5c" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 
 <!-- geotribu:authors-block -->
 
