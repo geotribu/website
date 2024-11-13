@@ -182,7 +182,7 @@ L'attention sémantique pour OSM est d'abord portée sur l'identification du typ
 Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléments, mais 3 objectifs réalistes sont présentés pour la communauté OSM :
 
 - parvenir à décrire l'**hydrographie globale** : le maillage des cours d'eau naturels et artificiels. Ce n'est clairement pas finalisé dans de nombreux territoires et c'est relativement facile à compléter (quoique pas toujours !), sur différentes échelles, différentes activités liées aux cours d'eau (loisirs, tourisme, agriculture, fontaines) et différents éléments affleurants (piézomètres, captages, ripisylves)
-- disposer d'une **sémantique détaillée** : définie par l'ensemble des tags utilisés, la sémantique émerge de la communauté par propositions et par uniformisation au niveau mondial. Certains tags ont été supprimés pour les faire évoluer faire des choses plus précises et utilisables. On a maintenant la capacité de décrire un grand nombre d'objets très précisément : à découvrir sans tarder sur le wiki ([FR:Key:inlet](https://wiki.openstreetmap.org/wiki/FR:Key:inlet)). Il reste cependant beaucoup de travaux à mener au niveau des tags ! Une attention doit enfin être portée aux liens avec les **référentiels nationaux** (Sandre notamment) et les standards (Star-EAU)
+- disposer d'une **sémantique détaillée** : définie par l'ensemble des tags utilisés, la sémantique émerge de la communauté par propositions et par uniformisation au niveau mondial. Certains tags ont été supprimés pour les faire évoluer vers des choses plus précises et utilisables. On a maintenant la capacité de décrire un grand nombre d'objets très précisément : à découvrir sans tarder sur le wiki ([FR:Key:inlet](https://wiki.openstreetmap.org/wiki/FR:Key:inlet)). Il reste cependant beaucoup de travaux à mener au niveau des tags ! Une attention doit enfin être portée aux liens avec les **référentiels nationaux** (Sandre notamment) et les standards (Star-EAU)
 
     ![Schéma d'évolution des tags sur OSM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/negociation_travailsemantique_osm.png ){: .img-center loading=lazy }
 
@@ -202,11 +202,11 @@ Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléme
 
 - Cartographier les zones climatiques locales avec OSM par E. Bocher : [un package R pour analyse tout ça](https://github.com/orbisgis/lczexplore) et les besoins d'avoir la hauteur des bâtiments remplie dans OSM avec une [méthode d'estimation](https://hal.science/hal-03811271)
 
-- Adiu ! Quand l'union des communs fait la force du patrimoine immatériel par D. Montagne et H. Lopez : cas de l'occitan sifflé, mise en commun de communs [Wikipédia](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal), [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page?uselang=fr), [Commons](https://commons.wikimedia.org/wiki/Accueil), [Lingua Libre](https://lingualibre.org/wiki/LinguaLibre:Main_Page) et OpenStreetMap
+- Adiu ! Quand l'union des communs fait la force du patrimoine immatériel par D. Montagne et H. Lopez : cas de l'occitan sifflé, mise en commun de communs [Wikipédia](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal), [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page?uselang=fr), [Commons](https://commons.wikimedia.org/wiki/Accueil), [Lingua Libre](https://lingualibre.org/wiki/LinguaLibre:Main_Page) et OpenStreetMap. [Lien vers la présentation](https://hal.science/hal-04628915v1).
 
 - [Atelier de découverte d'OSM](https://peertube.openstreetmap.fr/w/7Pa25evG1WV8Zo5u2AGaRc) par C. Frayssinet : présentation [ici](https://pretalx.com/media/sotm-fr-2024/submissions/YA93ZV/resources/2024_Decouverte_OSM_r%C3%A9duite_iBaHjW7.pdf)
 
-- [Clearance : contrôler collaborativement des données OSM pour des usages thématiques](https://peertube.openstreetmap.fr/w/m9irHASKWBdCLqff9nbLnQ) par V. Bergeot et F. Rodrigo. Pour un contrôle collaboratif des données sur OSM.
+- [Clearance : contrôler collaborativement des données OSM pour des usages thématiques](https://peertube.openstreetmap.fr/w/m9irHASKWBdCLqff9nbLnQ) par V. Bergeot et F. Rodrigo.
 
 - Cartes IGN par N. Berthelot : présentation [ici](https://pretalx.com/media/sotm-fr-2024/submissions/PKLYHN/resources/Appli_Cartes_IGN_SOTM_2024_lZHF0sl.pdf). En attendant <https://cartes.gouv.fr/>
 
@@ -240,7 +240,7 @@ Alors pour l'instant OSM ne peut pas représenter l'intégralité de ces éléme
 
 ## Conclusion
 
-Voilà pour ce petit article sur cette édition 2024 du SotM. Beaucoup de liens dans tous les sens, il faut dire que c'était riche ! J'espère que ça ne vous a pas rebuté, l'idée était de revenir sur quelques conf qu'il me semblait intéressant à partager au plus grand nombre. En espérant vous avoir donné envie de participer une prochaine fois et bien sûr de contribuer à openStreetMap :wink:. Merci de m'avoir lu, je vous laisse avec la vidéo rétrospective :
+Voilà pour ce petit article sur cette édition 2024 du SotM. Beaucoup de liens dans tous les sens, il faut dire que c'était riche ! J'espère que ça vous en a donné un aperçu, l'idée était de revenir sur quelques conf qu'il me semblait intéressant à partager au plus grand nombre. En espérant vous avoir donné envie de participer une prochaine fois et bien sûr de contribuer à openStreetMap :wink:. Merci de m'avoir lu, je vous laisse avec la vidéo rétrospective et un [autre compte-rendu de l'événement](https://mschauli.fr/2024/06/29/cartographier-le-temps-dun-week-end-%F0%9F%97%BA%EF%B8%8F/) suggéré par Delphine en relecture :
 
 <iframe title="Retour sur le SOTM∙France₂₀₂₄ | Édition 2024" width="100%" height="400" src="https://peertube.openstreetmap.fr/videos/embed/e827c08c-f4d1-4ca2-9a65-555aa28f5b5c" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 
