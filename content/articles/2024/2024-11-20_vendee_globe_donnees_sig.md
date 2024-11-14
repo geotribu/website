@@ -108,6 +108,7 @@ Une fois affiché dans QGIS et avec un peu de travail sur le style, voici le ré
 ![dernier_pointage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/dernier_pointage.png){: .img-center loading=lazy }
 
 !!! tip "Expression QGIS pour afficher uniquement le nom des navigateurs sur les étiquettes"
+
    ```python
    regexp_substr("bateau", '^[^-]+')
    ```
