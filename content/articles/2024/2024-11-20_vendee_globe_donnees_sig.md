@@ -98,7 +98,7 @@ Pour l’instant, ce projet propose deux fonctionnalités :
 Il s’agit d’une couche de points indiquant la dernière position communiquée des concurrents. Le format obtenu est un geopackage.
 
 ```shell title="Obtenir un GPKG avec le dernier pointage en date"
-python get_last_ranking.py --output-dir ./data_vg
+python dernier_pointage.py --output-dir ./data_vg
 ```
 
 Le résultat obtenu est une couche de points du dernier pointage en date. Par exemple, si j'exécute cette ligne de commande à 14h45, j'aurai le pointage de 10h (et non celui de 14h à cause du décalage de publication de 1h).
@@ -118,7 +118,7 @@ Une fois affiché dans QGIS et avec un peu de travail sur le style, voici le ré
 Il s’agit d’une couche de points indiquant tous les pointages de chaque bateau depuis le départ, ainsi qu’une couche de lignes reliant ces points pour former la trajectoire des bateaux. Le format obtenu est également un geopackage.
 
 ```shell title="Obtenir un GPKG avec l'intégralité de la trace et des pointages"
-python get_race_progress.py --output-dir ./data_vg
+python trajectoires_pointages.py --output-dir ./data_vg
 ```
 
 On obtient un geopackage qui contient deux couches :
