@@ -1,28 +1,29 @@
 ---
-title: "Suivre le Vendée Globe 2024 depuis un SIG"
-subtitle: "Vendée Globe et données SIG"
+title: Suivre le Vendée Globe 2024 depuis un SIG
+subtitle: Vendée Globe et données SIG
 authors:
     - Florent FOUGÈRES
 categories:
     - article
 comments: true
 date: 2024-11-20
-description: "Créer et visualiser les données SIG de l'avancement de la course du Vendée Globe 2024"
+description: Créer et visualiser les données SIG de l'avancement de la course du Vendée Globe 2024 à partir des tableurs officiels.
 icon: material/sail-boat
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/trajectoire.png
 license: beerware
 robots: index, follow
 tags:
-    - Geopandas
+    - GeoPandas
     - Pandas
     - Python
     - QGIS
     - Vendée Globe
-    - Voile
-
+    - voile
 ---
 
 # Suivre le Vendée Globe 2024 depuis un SIG
+
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Le Vendée Globe, c’est quoi ?
 
@@ -32,11 +33,13 @@ C’est une course à la voile en solitaire, sans escale et sans assistance, aut
 
 ![carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/carte_vendee_globe.svg){: .img-center loading=lazy }
 
+----
+
 ## Suivre l’avancée
 
 Qui dit course autour du monde, dit forcément carte pour suivre l’évolution des participants. Le site officiel de l’épreuve propose une [carte interactive](https://www.vendeeglobe.org/cartographie) pour visualiser cette avancée.
 
-![carte_interactive](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/carte_interactive.png){: .img-center loading=lazy }
+![Vendée Globe- Carte interactive officielle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/carte_interactive.png){: .img-center loading=lazy }
 
 J’ai donc cherché s’il existait une API ou un web service fournissant les données de positionnement pour les visualiser dans un SIG, comme QGIS par exemple. Après quelques recherches, je n’ai rien trouvé de tel.
 
@@ -44,13 +47,20 @@ J’ai trouvé une [discussion](https://www.reddit.com/r/Vendee_Globe/s/Gbli34xy
 
 En revanche, j’ai fini par découvrir que le site officiel publie toutes les 4 heures un fichier Excel contenant les données de navigation et les coordonnées des bateaux.
 
-![tableur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/tableur.png){: .img-center loading=lazy }
+![Vendée Globe - Tableur des données de navigation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/tableur.png){: .img-center loading=lazy }
 
 Ce fichier communique chaque jour les positions à 2h, 6h, 10h, 14h, 18h et 22h, avec un retard de 1h. Par exemple, le fichier de 10h est fourni à 11h (c’est un élément qui sera à prendre en compte dans l’industrialisation du processus). Pour télécharger ce fichier il faut se rendre dans la section [classement](https://www.vendeeglobe.org/classement).
 
 Ce tableau contient le rang, le nom du bateau et du skipper, mais également la vitesse et le cap sur les dernières 30 min, les dernières 24h et depuis le dernier pointage.
 
 À partir de ce tableur, le but sera donc de construire des données géographiques de la course, que ce soit pour tracer la trajectoire, mais aussi pour agréger tous les pointages.
+
+<!-- more -->
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
+----
 
 ## Les étapes à suivre
 
@@ -59,6 +69,8 @@ Il faut commencer par récupérer les informations relatives aux positions des b
 Ensuite, il est nécessaire de traiter la manière dont les données de localisation sont présentées. En effet, les positions des bateaux sont souvent fournies sous un format de coordonnées géographiques en degrés, minutes et secondes (DMS). Bien que ce format soit utile, il n'est pas directement compatible avec les outils de géomatique. Il est donc indispensable de les convertir en degrés décimaux, un format plus standard et précis, qui permet de travailler facilement avec des cartes et des systèmes d'information géographique (SIG).
 
 Enfin, il est important d'exporter ces données SIG dans un format compatible, comme le Geopackage ou le GeoJSON. Une fois converties, ces données peuvent être utilisées dans n'importe quel SIG, qu'il s'agisse d'un SIG bureautique comme QGIS ou d'une carte web SIG avec des outils comme MapLibre ou Leaflet.
+
+----
 
 ## Industrialiser la méthode
 
@@ -107,11 +119,13 @@ Une fois affiché dans QGIS et avec un peu de travail sur le style, voici le ré
 
 ![dernier_pointage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/dernier_pointage.png){: .img-center loading=lazy }
 
+<!-- markdownlint-disable MD046 -->
 !!! tip "Expression QGIS pour afficher uniquement le nom des navigateurs sur les étiquettes"
 
-   ```python
-   regexp_substr("bateau", '^[^-]+')
-   ```
+    ```python
+    regexp_substr("bateau", '^[^-]+')
+    ```
+<!-- markdownlint-enable MD046 -->
 
 ### Obtenir l’intégralité des pointages et la trace depuis le départ
 
@@ -130,7 +144,7 @@ On obtient un geopackage qui contient deux couches :
 
 ### Les données attributaires
 
-Dans les deux fonctionnalités, on retrouve dans la table atttributaire des couches toutes les informations du tableur. J'ai seulement ajouté une colonne timestamp, elle est utilisée pour relier les pointages entre eux et créer la couche des trajectoires.
+Dans les deux fonctionnalités, on retrouve dans la table atttributaire des couches toutes les informations du tableur. J'ai seulement ajouté une colonne `timestamp`, elle est utilisée pour relier les pointages entre eux et créer la couche des trajectoires.
 
 ![table attributaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/table_attrib.png){: .img-center loading=lazy }
 
@@ -150,3 +164,9 @@ Cette première étape n’est qu’un POC (Proof of Concept) le code peut encor
 - **Fournir les données via une API** : On pourrait imaginer un projet qui récupère automatiquement ces données, les convertit et les structure, puis expose une API qui fournit une position ou une trajectoire en fonction du numéro d’un concurrent, par exemple.
 
 - **Créer une application web cartographique** pour visualiser l'avancée des bateaux avec plus de possibilités que ce que propose l'interface cartographique officielle. J'avais imaginé utiliser [mviewer](https://mviewer.github.io/fr/) pour cela.
+
+----
+
+<!-- geotribu:authors-block -->
+
+{% include "licenses/beerware.md" %}
