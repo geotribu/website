@@ -149,4 +149,4 @@ Cette première étape n’est qu’un POC (Proof of Concept) le code peut encor
 
 - **Fournir les données via une API** : On pourrait imaginer un projet qui récupère automatiquement ces données, les convertit et les structure, puis expose une API qui fournit une position ou une trajectoire en fonction du numéro d’un concurrent, par exemple.
 
-- **Créer une application web cartographique** pour visualiser l'avancé des bateaux avec plus de pssibilité que ce que propose l'interface cartographique officiel. J'avais imaginé utilisé [mviewer](https://mviewer.github.io/fr/) pour cela.
+- **Créer une application web cartographique** pour visualiser l'avancée des bateaux avec plus de possibilités que ce que propose l'interface cartographique officielle. J'avais imaginé utiliser [mviewer](https://mviewer.github.io/fr/) pour cela.
