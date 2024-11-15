@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2021-08-09
+date: 2024-11-19
 description: "Pour le bonheur d'Intellisense"
 icon: material/microsoft-visual-studio-code
 image:
@@ -26,20 +26,30 @@ tags:
 
 ## Introduction
 
+![logo PyQGIS](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-thumbnail-left }
+
 Tout ceux qui s'y sont frottés le savent, configurer son environnement Python, PyQGIS et PyQt sous Windows pour développer des plugins pour QGIS est un réel parcours du combattant. À la fin, on est souvent perdant...
 
 Et bien, plus maintenant ! Après avoir fouillé les archives d'internet et exploré les pistes fournies par [Julien](../../team/julien-moura.md), voici l'une des méthodes permettant d'avoir toutes (ou presque) les autocomplétions d'objets et méthodes PyQGIS, PyQt, etc. dans VS Code.
+
+
+<!-- more -->
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
+----
 
 ## Création de l'environnement virtuel
 
 Je suppose dans la suite que vous avez installé QGIS dans le répertoire `C:\OSGeo4W` (la procédure est identique que QGIS soit installé via l'installateur réseau OSGeo4W ou via le package MSI, les chemins indiqués dans la suite de l'article sont simplement à adapter selon votre installation).
 
-1. Ouvrir une console OSGeo Shell et naviguer jusqu'à l'emplacement où vous souhaitez créer l'environnement virtuel.  
+1. Ouvrir une console OSGeo4W Shell et naviguer jusqu'à l'emplacement où vous souhaitez créer l'environnement virtuel.  
    Par exemple, un template de plugin fraîchement créé via l'outil [QGIS Plugin Templater](https://gitlab.com/Oslandia/qgis/template-qgis-plugin).
 
 1. Exécuter les commandes suivantes :
 
-    ```ps
+    ```cmd title="Création d'un environnement virtuel dans l'OSGeo4W Shell"
     C:\OSGeo4W\bin\python-qgis.bat -m venv --system-site-packages .venv
     C:\OSGeo4W\bin\python-qgis.bat -c "import pathlib;import qgis;print(str((pathlib.Path(qgis.__file__)/'../..').resolve()))" > .venv\qgis.pth
     ```
@@ -51,7 +61,7 @@ Je suppose dans la suite que vous avez installé QGIS dans le répertoire `C:\OS
 
     Votre fichier devrait ressembler à ça :
 
-    ```text
+    ```text title="Contenu du fichier .venv\qgis.pth"
     C:\OSGeo4W\apps\qgis\python
     C:\OSGeo4W\apps\qgis\python\plugins
     ```
@@ -60,7 +70,7 @@ Je suppose dans la suite que vous avez installé QGIS dans le répertoire `C:\OS
 
 1. Créer le fichier `sitecustomize.py` dans le dossier `.venv\Lib\site-packages` avec le contenu suivant :
 
-    ```python title="venv\Lib\site-packages\sitecustomize.py"
+    ```python title=".venv\Lib\site-packages\sitecustomize.py"
     import os
 
     os.add_dll_directory("C:/OSGeo4W/bin")
@@ -70,7 +80,7 @@ Je suppose dans la suite que vous avez installé QGIS dans le répertoire `C:\OS
 
 1. Dans le fichier `.venv\pyvenv.cfg`, modifier les occurences `C:\OSGeo4W\bin` en `C:\OSGeo4W\apps\Python312` :
 
-    ```ini
+    ```ini title=".venv\pyenv.cfg"
     home = C:\OSGeo4W\apps\Python312
     include-system-site-packages = true
     version = 3.12.6
@@ -78,16 +88,22 @@ Je suppose dans la suite que vous avez installé QGIS dans le répertoire `C:\OS
     command = C:\OSGeo4W\apps\Python312\python.exe -m venv --system-site-packages <Le chemin complet vers votre venv>
     ```
 
+----
+
 ## Dans VS Code
 
-Si vous ouvrez VS Code dans le dossier où vous venez de créer l'environnement virtuel, VS Code détectera automatique l'environnement (sinon installer l'extension VS Code Python) et lorsque vous taperez des bouts de code, VS Code vous proposera les objets ou méthodes PyQGIS.
+Si vous ouvrez VS Code dans le dossier où vous venez de créer l'environnement virtuel, VS Code détectera automatiquement l'environnement (sinon installer [l'extension VS Code Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)) et lorsque vous taperez des bouts de code, VS Code vous proposera les objets ou méthodes PyQGIS.
 
-![Complétion des imports](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/pyqgis_environnement_dev_windows/vscode.webp){: .img-center loading=lazy }
+![Complétion des imports](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/pyqgis_environnement_dev_windows/vscode_intellisense_completion_imports.webp){: .img-center loading=lazy }
 
-![Complétion des méthodes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/pyqgis_environnement_dev_windows/vscode2.webp){: .img-center loading=lazy }
+![Complétion des méthodes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/pyqgis_environnement_dev_windows/vscode_intellisense_completion_methodes.webp){: .img-center loading=lazy }
 
 Pour également avoir l'ensemble des complétions associées à PyQt, il semble être nécessaire d'installer une librairie Python supplémentaire `PyQt5-stubs` (certes qui n'est plus maintenue mais qui a le mérite de fonctionner).  
-Dans le terminal VS Code, exécuter la commande `pip install PyQt5-stubs`.
+Dans le terminal VS Code, exécuter la commande : 
+
+```powershell title="Installer la complétion PyQT dans l'environnement virtuel"
+pip install PyQt5-stubs
+```
 
 ![PyQt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/pyqgis_environnement_dev_windows/vscode_pyqt.webp){: .img-center loading=lazy }
 
