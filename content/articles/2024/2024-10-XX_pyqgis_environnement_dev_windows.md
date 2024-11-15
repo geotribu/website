@@ -32,7 +32,6 @@ Tout ceux qui s'y sont frottés le savent, configurer son environnement Python, 
 
 Et bien, plus maintenant ! Après avoir fouillé les archives d'internet et exploré les pistes fournies par [Julien](../../team/julien-moura.md), voici l'une des méthodes permettant d'avoir toutes (ou presque) les autocomplétions d'objets et méthodes PyQGIS, PyQt, etc. dans VS Code.
 
-
 <!-- more -->
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
@@ -99,7 +98,7 @@ Si vous ouvrez VS Code dans le dossier où vous venez de créer l'environnement 
 ![Complétion des méthodes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/pyqgis_environnement_dev_windows/vscode_intellisense_completion_methodes.webp){: .img-center loading=lazy }
 
 Pour également avoir l'ensemble des complétions associées à PyQt, il semble être nécessaire d'installer une librairie Python supplémentaire `PyQt5-stubs` (certes qui n'est plus maintenue mais qui a le mérite de fonctionner).  
-Dans le terminal VS Code, exécuter la commande : 
+Dans le terminal VS Code, exécuter la commande :
 
 ```powershell title="Installer la complétion PyQT dans l'environnement virtuel"
 pip install PyQt5-stubs
