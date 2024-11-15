@@ -130,7 +130,7 @@ On obtient un geopackage qui contient deux couches :
 
 ### Les données attributaires
 
-Dans les deux fonctionnalités ont retoruvent la table atttributaire des couches toutes les informations du tableur. J'ai seulement ajouter une colonne timestamp, elle est utilise pour relier les pointages entre eux et créer la couche des trajectoire.
+Dans les deux fonctionnalités, on retrouve dans la table atttributaire des couches toutes les informations du tableur. J'ai seulement ajouté une colonne timestamp, elle est utilisée pour relier les pointages entre eux et créer la couche des trajectoires.
 
 ![table attributaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/table_attrib.png){: .img-center loading=lazy }
 
