@@ -143,7 +143,7 @@ Peut-être faudrait-il enlever les unités dans les données pour avoir des vale
 
 ## Pour aller plus loin
 
-Cette première étape n’est qu’un POC (Proof of Concept) le code peut encore être optimisé et je vais continuer de le faire tout au long de la course (en espérant que le formalisme et les horaires de publication du tableur ne change pas). Par la suite, plusieurs idées pourraient être explorées. Je vais surement exploré l'une d'entre elle.
+Cette première étape n’est qu’un POC (Proof of Concept) le code peut encore être optimisé et je vais continuer de le faire tout au long de la course (en espérant que le formalisme et les horaires de publication du tableur ne changent pas). Par la suite, plusieurs idées pourraient être explorées. Je vais sûrement explorer l'une d'entre elles.
 
 - **Créer un plugin QGIS** : Un plugin QGIS pourrait permettre de charger le classement, la dernière position des navires, et leur trajectoire. On pourrait imaginer que le post-traitement du fichier Excel vers des données SIG soit effectué par l’intégration continue (CI) et exporté en GeoJSON, et que le plugin charge ces GeoJSON hébergés dans le projet GitHub.
 
