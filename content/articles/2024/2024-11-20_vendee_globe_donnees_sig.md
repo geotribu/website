@@ -39,7 +39,7 @@ C’est une course à la voile en solitaire, sans escale et sans assistance, aut
 
 Qui dit course autour du monde, dit forcément carte pour suivre l’évolution des participants. Le site officiel de l’épreuve propose une [carte interactive](https://www.vendeeglobe.org/cartographie) pour visualiser cette avancée.
 
-![Vendée Globe- Carte interactive officielle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/carte_interactive.png){: .img-center loading=lazy }
+![Vendée Globe - Carte interactive officielle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/carte_interactive.png){: .img-center loading=lazy }
 
 J’ai donc cherché s’il existait une API ou un web service fournissant les données de positionnement pour les visualiser dans un SIG, comme QGIS par exemple. Après quelques recherches, je n’ai rien trouvé de tel.
 
@@ -117,7 +117,7 @@ Le résultat obtenu est une couche de points du dernier pointage en date. Par ex
 
 Une fois affiché dans QGIS et avec un peu de travail sur le style, voici le résultat :
 
-![dernier_pointage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/dernier_pointage.png){: .img-center loading=lazy }
+![Screenshot QGIS - Couche des positions du dernier pointage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/dernier_pointage.png){: .img-center loading=lazy }
 
 <!-- markdownlint-disable MD046 -->
 !!! tip "Expression QGIS pour afficher uniquement le nom des navigateurs sur les étiquettes"
@@ -140,13 +140,13 @@ On obtient un geopackage qui contient deux couches :
 - Une couche de l'historique de tous les pointages depuis le départ.
 - Une couche de ligne qui reproduit la trajectoire de chaque bateau.
 
-![trajectoire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/trajectoire.png){: .img-center loading=lazy }
+![Screenshot QGIS - Couches des trajectoires depuis le départ et intégralité des pointages](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/trajectoire.png){: .img-center loading=lazy }
 
 ### Les données attributaires
 
 Dans les deux fonctionnalités, on retrouve dans la table atttributaire des couches toutes les informations du tableur. J'ai seulement ajouté une colonne `timestamp`, elle est utilisée pour relier les pointages entre eux et créer la couche des trajectoires.
 
-![table attributaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/table_attrib.png){: .img-center loading=lazy }
+![Screenshot QGIS - Table attributaire des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/table_attrib.png){: .img-center loading=lazy }
 
 !!! info "Signification des préfixes dans les noms de colonne"
     - `30m` = Depuis 30 minutes
