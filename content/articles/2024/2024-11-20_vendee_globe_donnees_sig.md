@@ -134,7 +134,7 @@ Dans les deux fonctionnalités, on retrouve dans la table atttributaire des couc
 
 ![table attributaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/table_attrib.png){: .img-center loading=lazy }
 
-!!! info "Signification des préfixes dans les noms de colonnes"
+!!! info "Signification des préfixes dans les noms de colonne"
     - `30m` = Depuis 30 minutes
     - `last_rank` = Depuis le pointage précédent
     - `24h` = Depuis 24h
