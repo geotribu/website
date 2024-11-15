@@ -139,7 +139,7 @@ Dans les deux fonctionnalités, on retrouve dans la table atttributaire des couc
     - `last_rank` = Depuis le pointage précédent
     - `24h` = Depuis 24h
 
-Peut être faudrait-il enlever les unités dans les données pour avoir des valeurs numériques ? Dans ce cas, il faudrait peut-être ajouté les unités dans les noms de colonnes. C'est un des pistes d'amélioration. J'aimerais aussi séparer le nom du skipper et le nom du bateau dans deux colonnes distinct. Les contributions pour améliorés ce code sont les bienvenues.
+Peut-être faudrait-il enlever les unités dans les données pour avoir des valeurs numériques ? Dans ce cas, il faudrait peut-être ajouter les unités dans les noms des colonnes. C'est une des pistes d'amélioration. J'aimerais aussi séparer le nom du skipper et le nom du bateau dans deux colonnes distinctes. Les contributions pour améliorer ce code sont les bienvenues.
 
 ## Pour aller plus loin
 
