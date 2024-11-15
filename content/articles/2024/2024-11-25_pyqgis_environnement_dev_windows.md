@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-11-19
+date: 2024-11-25
 description: "Pour le bonheur d'Intellisense"
 icon: material/microsoft-visual-studio-code
 image:
