@@ -129,7 +129,7 @@ Une fois affiché dans QGIS et avec un peu de travail sur le style, voici le ré
 
 ### Obtenir l’intégralité des pointages et la trace depuis le départ
 
-Il s’agit d’une couche de points indiquant tous les pointages de chaque bateau depuis le départ, ainsi qu’une couche de lignes reliant ces points pour former la trajectoire des bateaux. Le format obtenu est également un geopackage.
+Il s’agit d’une couche de points indiquant tous les pointages de chaque bateau depuis le départ, ainsi qu’une couche de lignes reliant ces points pour former la trajectoire des bateaux. Le format obtenu est également un GeoPackage.
 
 ```shell title="Obtenir un GPKG avec l'intégralité de la trace et des pointages"
 python trajectoires_pointages.py --output-dir ./data_vg
