@@ -39,6 +39,8 @@ C’est une course à la voile en solitaire, sans escale et sans assistance, aut
 
 ## Suivre l’avancée
 
+![logo Smarty Pins](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/google/SmartyPins.png){: .img-thumbnail-left }
+
 Qui dit course autour du monde, dit forcément carte pour suivre l’évolution des participants. Le site officiel de l’épreuve propose une [carte interactive](https://www.vendeeglobe.org/cartographie) pour visualiser cette avancée.
 
 ![Vendée Globe - Carte interactive officielle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/carte_interactive.png){: .img-center loading=lazy }
