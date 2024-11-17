@@ -18,7 +18,7 @@ tags:
     - Python
     - QGIS
     - Vendée Globe
-    - voile
+    - Voile
 ---
 
 # Suivre le Vendée Globe 2024 depuis un SIG
