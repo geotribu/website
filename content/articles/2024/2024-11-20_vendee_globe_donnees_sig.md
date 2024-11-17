@@ -68,7 +68,7 @@ Il faut commencer par récupérer les informations relatives aux positions des b
 
 Ensuite, il est nécessaire de traiter la manière dont les données de localisation sont présentées. En effet, les positions des bateaux sont souvent fournies sous un format de coordonnées géographiques en degrés, minutes et secondes (DMS). Bien que ce format soit utile, il n'est pas directement compatible avec les outils de géomatique. Il est donc indispensable de les convertir en degrés décimaux, un format plus standard et précis, qui permet de travailler facilement avec des cartes et des systèmes d'information géographique (SIG).
 
-Enfin, il est important d'exporter ces données SIG dans un format compatible, comme le Geopackage ou le GeoJSON. Une fois converties, ces données peuvent être utilisées dans n'importe quel SIG, qu'il s'agisse d'un SIG bureautique comme QGIS ou d'une carte web SIG avec des outils comme MapLibre ou Leaflet.
+Enfin, il est important d'exporter ces données SIG dans un format compatible, comme le GeoPackage ou le GeoJSON. Une fois converties, ces données peuvent être utilisées dans n'importe quel SIG, qu'il s'agisse d'un SIG bureautique comme QGIS ou d'une carte web SIG avec des outils comme MapLibre ou Leaflet.
 
 ----
 
