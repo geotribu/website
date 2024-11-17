@@ -78,6 +78,8 @@ Enfin, il est important d'exporter ces données SIG dans un format compatible, c
 
 ## Industrialiser la méthode
 
+![logo usine](https://cdn.geotribu.fr/img/logos-icones/divers/factory.png){: .img-thumbnail-left }
+
 Pour automatiser le processus décrit ci-dessus, j’ai créé un [projet GitHub](https://github.com/florentfgrs/Vendee-Globe-2024) qui automatise ces tâches avec des scripts Python. Il fonctionne en lignes de commande, et elles sont pour le moment au nombre de deux (voir plus bas).
 
 Pour le téléchargement, j’utilise la bibliothèque tierce `requests`.
