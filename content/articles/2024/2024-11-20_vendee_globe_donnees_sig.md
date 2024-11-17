@@ -27,6 +27,8 @@ tags:
 
 ## Le Vendée Globe, c’est quoi ?
 
+![logo Vendée Globe](https://cdn.geotribu.fr/img/logos-icones/divers/vendee_globe.png){: .img-thumbnail-left }
+
 Avant de commencer à parler SIG et aspects techniques, parlons du Vendée Globe.
 
 C’est une course à la voile en solitaire, sans escale et sans assistance, autour du monde. Elle a lieu tous les 4 ans depuis 1989. Le départ se fait aux Sables d’Olonne. Le parcours consiste à descendre l’Atlantique, puis passer successivement sous l’Afrique et le Cap de Bonne Espérance, sous l’Australie et le Cap Leeuwin et enfin sous l’Amérique du Sud et le Cap Horn, pour remonter en Vendée le plus rapidement possible. Le record a été établi par Armel Le Cléac'h lors de l'édition 2016-2017 avec un trajet de 74 jours 3 heures et 35 minutes.
