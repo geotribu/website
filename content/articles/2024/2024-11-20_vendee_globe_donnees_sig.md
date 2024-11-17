@@ -119,14 +119,6 @@ Une fois affiché dans QGIS et avec un peu de travail sur le style, voici le ré
 
 ![Screenshot QGIS - Couche des positions du dernier pointage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/dernier_pointage.png){: .img-center loading=lazy }
 
-<!-- markdownlint-disable MD046 -->
-!!! tip "Expression QGIS pour afficher uniquement le nom des navigateurs sur les étiquettes"
-
-    ```python
-    regexp_substr("bateau", '^[^-]+')
-    ```
-<!-- markdownlint-enable MD046 -->
-
 ### Obtenir l’intégralité des pointages et la trace depuis le départ
 
 Il s’agit d’une couche de points indiquant tous les pointages de chaque bateau depuis le départ, ainsi qu’une couche de lignes reliant ces points pour former la trajectoire des bateaux. Le format obtenu est également un GeoPackage.
