@@ -203,6 +203,9 @@ Peut-être faudrait-il enlever les unités dans les données pour avoir des vale
 
 ## Animer la progression avec le Temporal Control de QGIS
 
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+
+Pour visualiser les données, QGIS est tout indiqué et comme les données ont une dimension temporelles, c'est l'occasion de jouer avec le contrôleur temporel.
 Pour ce tutoriel, il faut utiliser la couche `pointages` produite par `trajectoires_pointages.py`.
 
 ### Configurer la couche
