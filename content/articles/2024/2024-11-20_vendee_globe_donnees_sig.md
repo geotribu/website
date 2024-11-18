@@ -103,14 +103,54 @@ Les en-têtes du fichier Excel sont souvent constitués de cellules fusionnées,
 3. **Nettoyage des données.**  
 Cette étape consiste à supprimer les sauts de ligne, les caractères spéciaux ou toute autre anomalie qui pourrait perturber le traitement des données.
 
+```shell title="DataFrame avant nettoyage"
+   rang             code                                                nom         heure  ...   24h_vmg 24h_distance         dtf       dtl
+0     1   GBR\r\nFRA 100                        Sam Goodchild\r\nVULNERABLE  10:30 FR\r\n  ...  10.5 kts     255.1 nm  22300.7 nm    0.0 nm
+1     2   FRA\r\nFRA 112                 Sébastien Simon\r\nGroupe Dubreuil  10:30 FR\r\n  ...   7.4 kts     223.1 nm  22324.7 nm   24.0 nm
+2     3    FRA\r\nFRA 59                        Thomas Ruyant\r\nVULNERABLE  10:30 FR\r\n  ...  10.7 kts     288.1 nm  22352.7 nm   52.0 nm
+3     4     FRA\r\nFRA85                     Nicolas Lunven\r\nHOLCIM - PRB  10:30 FR\r\n  ...  12.7 kts     306.4 nm  22378.5 nm   77.8 nm
+4     5    FRA\r\nFRA 29  Jean Le Cam\r\nTout commence en Finistère - Ar...  10:30 FR\r\n  ...   5.0 kts     158.5 nm  22379.0 nm   78.3 nm
+5     6    FRA\r\nFRA 15          Clarisse Crémer\r\nL'Occitane en Provence  10:30 FR\r\n  ...   7.3 kts     211.9 nm  22410.7 nm  110.1 nm
+```
+
+```shell title="DataFrame après nettoyage"
+   rang            code                                                nom        heure  ...   24h_vmg 24h_distance         dtf       dtl
+0     1   GBR - FRA 100                         Sam Goodchild - VULNERABLE  10:30 FR -   ...  10.5 kts     255.1 nm  22300.7 nm    0.0 nm
+1     2   FRA - FRA 112                  Sébastien Simon - Groupe Dubreuil  10:30 FR -   ...   7.4 kts     223.1 nm  22324.7 nm   24.0 nm
+2     3    FRA - FRA 59                         Thomas Ruyant - VULNERABLE  10:30 FR -   ...  10.7 kts     288.1 nm  22352.7 nm   52.0 nm
+3     4     FRA - FRA85                      Nicolas Lunven - HOLCIM - PRB  10:30 FR -   ...  12.7 kts     306.4 nm  22378.5 nm   77.8 nm
+4     5    FRA - FRA 29  Jean Le Cam - Tout commence en Finistère - Arm...  10:30 FR -   ...   5.0 kts     158.5 nm  22379.0 nm   78.3 nm
+5     6    FRA - FRA 15           Clarisse Crémer - L'Occitane en Provence  10:30 FR -   ...   7.3 kts     211.9 nm  22410.7 nm  110.1 nm
+```
+
 4. **Création du timestamp.**  
 Un timestamp doit être généré pour chaque pointage afin de pouvoir suivre l'évolution de la position des bateaux au fil du temps. Il sera également utile pour construire la trajectoire.
+
+```shell title="Création de la colonne timestamp à partir de la colonne heure et de la date du fichier excel"
+          heure           timestamp
+0   10:30 FR -  2024-11-18 10:30:00
+1   10:30 FR -  2024-11-18 10:30:00
+2   10:30 FR -  2024-11-18 10:30:00
+3   10:30 FR -  2024-11-18 10:30:00
+4   10:30 FR -  2024-11-18 10:30:00
+5   10:30 FR -  2024-11-18 10:30:00
+```
 
 5. **Conversion des colonnes latitude et longitude de degrés DMS vers degrés décimaux.**  
 Il faut d'abord parser les coordonnés pour obtenir les degrés, minutes, secondes et orientation. Puis faire la conversion.
 
 6. **Création de la géométrie.**  
 À partir des coordonnées converties, il faut générer des géométries. Cela consiste à générer des points pour les positions des bateaux (lors des pointages) ou des lignes pour tracer les trajectoires.
+
+```shell title="Conversion des latitude/longitude DMS en décimal puis création de la colonne de géométrie"
+      latitude   longitude  latitude_decimal  longitude_decimal                    geometry
+0   17°56.15'N  31°09.06'W         17.937500         -31.151667   POINT (-31.15167 17.9375)
+1   18°32.68'N  30°10.63'W         18.552222         -30.184167  POINT (-30.18417 18.55222)
+2   18°19.45'N  33°17.34'W         18.329167         -33.292778  POINT (-33.29278 18.32917)
+3   18°59.38'N  32°23.11'W         18.993889         -32.386389  POINT (-32.38639 18.99389)
+4   19°17.37'N  19°24.52'W         19.293611         -19.414444  POINT (-19.41444 19.29361)
+5   19°58.12'N  30°22.88'W         19.970000         -30.391111     POINT (-30.39111 19.97)
+```
 
 7. **Exportation vers un format SIG vectoriel.**  
 Export vers le format [Geopackage](https://www.geopackage.org/).
@@ -158,6 +198,42 @@ Dans les deux fonctionnalités, on retrouve dans la table atttributaire des couc
     - `24h` = Depuis 24h
 
 Peut-être faudrait-il enlever les unités dans les données pour avoir des valeurs numériques ? Dans ce cas, il faudrait peut-être ajouter les unités dans les noms des colonnes. C'est une des pistes d'amélioration. J'aimerais aussi séparer le nom du skipper et le nom du bateau dans deux colonnes distinctes. Les contributions pour améliorer ce code sont les bienvenues.
+
+## Animer la progression avec le Temporal Control de QGIS
+
+*Pour ce tutoriel, il faut utiliser la couche `pointages` produite par `trajectoires_pointages.py`.*
+
+### Configurer la couche
+
+Après avoir accédé aux propriétés de la couche (clic droit > Propriétés), rendez-vous dans l'onglet **Temporel**. Configurez les paramètres comme suit :
+
+![QGIS - Configuration de l'onglet Temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/temporel.png){: .img-center loading=lazy }
+
+### Afficher la barre d'outils temporelle
+
+- Clic droit en haut dans les barres d'outils.
+- Cochez (si ce n'est pas déjà fait) **Panneau contrôleur temporel** dans la section **Panneaux**.
+
+### Configurer la barre d'outils
+
+- Ajustez la date de départ au début de l'épreuve.
+- Indiquez un pas de 4 heures (c'est le delta entre deux pointages).
+
+![QGIS - Configuration du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/controleur.png)
+
+### Animation de la couche
+
+Après avoir cliqué sur Play, voici le résultat que vous devriez obtenir :
+
+![QGIS - Animation du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/qgis-temporal.gif)
+
+<!-- markdownlint-disable MD046 -->
+!!! tip "Pour suivre uniquement un concurent vous pouvez filtrer la couche"
+
+    ```sql
+    "skipper" = 'Maxime Sorel'
+    ```
+<!-- markdownlint-enable MD046 -->
 
 ## Pour aller plus loin
 
