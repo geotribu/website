@@ -103,7 +103,7 @@ Les en-têtes du fichier Excel sont souvent constitués de cellules fusionnées,
 3. **Nettoyage des données.**  
 Cette étape consiste à supprimer les sauts de ligne, les caractères spéciaux ou toute autre anomalie qui pourrait perturber le traitement des données.
 
-    ```shell title="DataFrame avant nettoyage"
+    ```pandas title="DataFrame avant nettoyage"
     rang             code                                                nom         heure  ...   24h_vmg 24h_distance         dtf       dtl
     0     1   GBR\r\nFRA 100                        Sam Goodchild\r\nVULNERABLE  10:30 FR\r\n  ...  10.5 kts     255.1 nm  22300.7 nm    0.0 nm
     1     2   FRA\r\nFRA 112                 Sébastien Simon\r\nGroupe Dubreuil  10:30 FR\r\n  ...   7.4 kts     223.1 nm  22324.7 nm   24.0 nm
@@ -113,7 +113,7 @@ Cette étape consiste à supprimer les sauts de ligne, les caractères spéciaux
     5     6    FRA\r\nFRA 15          Clarisse Crémer\r\nL'Occitane en Provence  10:30 FR\r\n  ...   7.3 kts     211.9 nm  22410.7 nm  110.1 nm
     ```
 
-    ```shell title="DataFrame après nettoyage"
+    ```pandas title="DataFrame après nettoyage"
     rang            code                                                nom        heure  ...   24h_vmg 24h_distance         dtf       dtl
     0     1   GBR - FRA 100                         Sam Goodchild - VULNERABLE  10:30 FR -   ...  10.5 kts     255.1 nm  22300.7 nm    0.0 nm
     1     2   FRA - FRA 112                  Sébastien Simon - Groupe Dubreuil  10:30 FR -   ...   7.4 kts     223.1 nm  22324.7 nm   24.0 nm
@@ -126,7 +126,7 @@ Cette étape consiste à supprimer les sauts de ligne, les caractères spéciaux
 4. **Création du timestamp.**  
 Un timestamp doit être généré pour chaque pointage afin de pouvoir suivre l'évolution de la position des bateaux au fil du temps. Il sera également utile pour construire la trajectoire.
 
-    ```shell title="Création de la colonne timestamp à partir de la colonne heure et de la date du fichier excel"
+    ```pandas title="Création de la colonne timestamp à partir de la colonne heure et de la date du fichier excel"
             heure           timestamp
     0   10:30 FR -  2024-11-18 10:30:00
     1   10:30 FR -  2024-11-18 10:30:00
@@ -142,7 +142,7 @@ Il faut d'abord parser les coordonnés pour obtenir les degrés, minutes, second
 6. **Création de la géométrie.**  
 À partir des coordonnées converties, il faut générer des géométries. Cela consiste à générer des points pour les positions des bateaux (lors des pointages) ou des lignes pour tracer les trajectoires.
 
-    ```shell title="Conversion des latitude/longitude DMS en décimal puis création de la colonne de géométrie"
+    ```pandas title="Conversion des latitude/longitude DMS en décimal puis création de la colonne de géométrie"
         latitude   longitude  latitude_decimal  longitude_decimal                    geometry
     0   17°56.15'N  31°09.06'W         17.937500         -31.151667   POINT (-31.15167 17.9375)
     1   18°32.68'N  30°10.63'W         18.552222         -30.184167  POINT (-30.18417 18.55222)
