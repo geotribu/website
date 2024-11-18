@@ -199,9 +199,11 @@ Dans les deux fonctionnalités, on retrouve dans la table atttributaire des couc
 
 Peut-être faudrait-il enlever les unités dans les données pour avoir des valeurs numériques ? Dans ce cas, il faudrait peut-être ajouter les unités dans les noms des colonnes. C'est une des pistes d'amélioration. J'aimerais aussi séparer le nom du skipper et le nom du bateau dans deux colonnes distinctes. Les contributions pour améliorer ce code sont les bienvenues.
 
+----
+
 ## Animer la progression avec le Temporal Control de QGIS
 
-*Pour ce tutoriel, il faut utiliser la couche `pointages` produite par `trajectoires_pointages.py`.*
+Pour ce tutoriel, il faut utiliser la couche `pointages` produite par `trajectoires_pointages.py`.
 
 ### Configurer la couche
 
@@ -219,16 +221,16 @@ Après avoir accédé aux propriétés de la couche (clic droit > Propriétés),
 - Ajustez la date de départ au début de l'épreuve.
 - Indiquez un pas de 4 heures (c'est le delta entre deux pointages).
 
-![QGIS - Configuration du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/controleur.png)
+![QGIS - Configuration du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/controleur.png){: .img-center loading=lazy }
 
 ### Animation de la couche
 
 Après avoir cliqué sur Play, voici le résultat que vous devriez obtenir :
 
-![QGIS - Animation du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/qgis-temporal.gif)
+![QGIS - Animation du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/qgis-temporal.gif){: .img-center loading=lazy }
 
 <!-- markdownlint-disable MD046 -->
-!!! tip "Pour suivre uniquement un concurent vous pouvez filtrer la couche"
+!!! tip "Expression QGIS pour filtrer le suivi sur un concurent"
 
     ```sql
     "skipper" = 'Maxime Sorel'
