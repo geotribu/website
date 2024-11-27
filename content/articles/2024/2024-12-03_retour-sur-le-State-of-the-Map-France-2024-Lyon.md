@@ -95,7 +95,7 @@ L'occupation du sol à grande échelle (OCSGE) est une nouvelle base géographiq
 Comment ça marche ?
 
 - des photographies aériennes (RVB & infrarouges) sont récupérées et associées à des MNS et MNT
-- un [modèle de *deep learning*](https://ignf.github.io/FLAIR/index_fr.html) entraîné sur un important jeu d'annotations classifie [14 formes de couverture](https://artificialisation.developpement-durable.gouv.fr/sites/artificialisation/files/inline-files/Marque%20page_OCS_GE_sept2017_RV_V3-1_0.png) et [17 formes d'usages du sol](https://artificialisation.developpement-durable.gouv.fr/sites/artificialisation/files/inline-files/Marque%20page_OCS_GE_sept2017_RV_V3-2.png)
+- un [modèle de *deep learning*](https://ignf.github.io/FLAIR/index_fr.html) entraîné sur un important jeu d'annotations classifie chaque pixel [14 formes de couverture](https://artificialisation.developpement-durable.gouv.fr/sites/artificialisation/files/inline-files/Marque%20page_OCS_GE_sept2017_RV_V3-1_0.png) et [17 formes d'usages du sol](https://artificialisation.developpement-durable.gouv.fr/sites/artificialisation/files/inline-files/Marque%20page_OCS_GE_sept2017_RV_V3-2.png)
 - un processus de correction double est ensuite mobilisé pour détecter des anomalies dans la classification automatique :
     - correction par photointerprétation d'un sous-traitant
     - remontées utilisateurs
