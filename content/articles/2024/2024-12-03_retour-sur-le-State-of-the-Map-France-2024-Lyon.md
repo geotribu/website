@@ -143,7 +143,7 @@ Par ailleurs, l'application de mobilité dominante en France est Google Maps : u
 
 La France est très/trop attachée à la voiture et de nombreuses lacunes informationnelles sont pointées quant au [coût réel du système "voiture" dans son ensemble et pour le particulier](https://futur.eco/cout-voiture#introduction), mais aussi sur des solutions comme la voiture électrique qui nage dans un "[océan d'infox](https://bonpote.com/ocean-de-fake-news-sur-la-voiture-electrique/)"
 
-Le parti pris de Maël est que nous avons une *fausse dépendance à la voiture* et que **si les modes de transport alternatifs étaient mieux exposés et promus, bien plus de trajets pourraient s'effectuer sur des modes de transport peu émetteurs de CO2**.
+Le parti pris de Maël est que nous avons une *fausse dépendance à la voiture* et que **si les modes de transport alternatifs étaient mieux exposés et promus, bien plus de trajets pourraient s'effectuer avec des modes de transport peu émetteurs de CO2**.
 
 ![Étude citée par Maël Thomas-Quillévéré sur le vélo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/sotm2024/cartesapp-veloetude.webp){: .img-center loading=lazy }
 
