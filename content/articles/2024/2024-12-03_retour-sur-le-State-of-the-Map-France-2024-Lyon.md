@@ -90,7 +90,7 @@ Un [catalogue](https://www.datasud.fr/explorer/fr/recherche) propose des téléc
 
 ![logo IGN](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/ign.png){: .img-thumbnail-left }
 
-L'occupation du sol à grande échelle (OCSGE) est une nouvelle base géographique vectorielle de référence développée par l'IGN. En deux dimensions, elle vise à **(1) décrire la couverture et (2) l'usage des sols** de la [France entière d'ici fin 2025](https://macarte.ign.fr/carte/VVpbhc/Production-de-l-OCS-GE-NG). La résolution est d'environ 20cm mais l'échelle d'utilisation est a priori entre 1:2500 et 1:5000.  Son développement vient notamment combler les besoins de suivi de la loi Zéro Artificialisation Nette.
+L'occupation du sol à grande échelle (OCSGE) est une nouvelle base géographique vectorielle de référence développée par l'IGN. En deux dimensions, elle vise à **(1) décrire la couverture et (2) l'usage des sols** de la [France entière d'ici fin 2025](https://macarte.ign.fr/carte/VVpbhc/Production-de-l-OCS-GE-NG). La résolution est d'environ 20cm mais l'échelle d'utilisation est a priori entre 1:2500 et 1:5000.  Son développement vient notamment combler les besoins de suivi de la [loi Zéro Artificialisation Nette](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047866733).
 
 Comment ça marche ?
 
