@@ -79,7 +79,7 @@ L'infrastructure est pensée pour mettre à disposition des données de différe
 
 Un [catalogue](https://www.datasud.fr/explorer/fr/recherche) propose des téléchargements dans des formats très divers et des [cartes](https://www.datasud.fr/maps/) sont directement proposées.
 
-!!! quote "Entendu au SOTM"
+!!! quote "Entendu au SotM"
     - Vous savez où sont les toilettes ?
     - Attendez je regarde sur OSM...
     - Ah oui, c'est bon ! Elles sont là, juste à gauche !
