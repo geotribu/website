@@ -47,7 +47,7 @@ Dans cet article, je vous parlerai donc essentiellement de quelques conférences
 
 ## Intervention inaugurale
 
-- par la métropole de Lyon : H. Greolas retrace l'évolution de la gestion des données (spatiales) de la métropole de Lyon, notamment du MCPP (« Moi C'est Pas Pareil ») à la stratégie open data actuelle basée sur le triptyque «Comprendre (passé), Piloter (présent), Prévoir (futur)»
+- par la métropole de Lyon : H. Greolas retrace l'évolution de la gestion des données (spatiales) de la métropole de Lyon, notamment du MCPP (« Moi C'est Pas Pareil ») à la stratégie open data actuelle basée sur le triptyque « Comprendre (passé), Piloter (présent), Prévoir (futur) »
 
 - puis par l'Université Lyon 3 : sont présentées la richesse actuelle des événements pour les amoureux des cartes avec de nombreuses [conférences](https://ichc2024.univ-lyon3.fr/accueil-fr) et de nombreuses [expositions](https://ichc2024.univ-lyon3.fr/expositions-1) de cartographie en cours dans la capitale des Gaules. Bernard Gauthiez, professeur de géographie, pointe le nécessaire archivage des données numériques en particulier dans les services publics. Petit clin d'œil malicieux du public qui le renvoie sur le travail de Christian Quest, présent dans la salle : [opendatarchives](https://www.opendatarchives.fr/).
 
