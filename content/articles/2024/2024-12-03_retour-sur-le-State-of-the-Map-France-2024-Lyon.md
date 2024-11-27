@@ -82,7 +82,7 @@ Un [catalogue](https://www.datasud.fr/explorer/fr/recherche) propose des téléc
 !!! quote "Entendu au SOTM"
     - Vous savez où sont les toilettes ?
     - Attendez je regarde sur OSM...
-    - Ah oui, c'est bon ! ils sont là, juste à gauche !
+    - Ah oui, c'est bon ! Elles sont là, juste à gauche !
 
 ### L'OCSGE et le CoSIA de l'IGN : une nouvelle opportunité pour OSM ?
 
