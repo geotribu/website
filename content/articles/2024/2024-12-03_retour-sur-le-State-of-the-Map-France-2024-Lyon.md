@@ -57,7 +57,7 @@ Dans cet article, je vous parlerai donc essentiellement de quelques conférences
     - A. Vuillard nous raconte ses **galères à développer des applications SIG** quand on n'a pas l'habitude
     - I. Amri nous présente un **[générateur d'atlas pour faire des cyclorando](http://atlas.iliasamri.com/)** à partir d'une trace GPX
     - Thibault nous renvoie vers son usage d'[OSM Tracker Android](https://wiki.openstreetmap.org/wiki/FR:OSMTracker_(Android)) pour **contribuer en mouvement**
-    - JC Becquet nous parle des **belles rencontres** que l'on fait **grâce à OSM**
+    - J-C. Becquet nous parle des **belles rencontres** que l'on fait **grâce à OSM**
 
 *Un petit ravitaillement juste après ces introductions aurait dû nous mettre la puce à l'oreille que l'activité principale du SotM serait bien physique : la montée des marches jusqu'au 3e étage pour rejoindre les salles de conférence.*
 
