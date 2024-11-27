@@ -110,7 +110,7 @@ Ces produits de grande résolution offrent une formidable opportunité pour les 
 !!! note "Une nomenclature sévère avec l'agriculture"
     Avec quelques regrets néanmoins de l'assemblée qui considère la nomenclature choisie relativement sévère sur l'agriculture, rassemblée dans un seul poste avec une absence de distinction des cultures (pérennes / annuelles / vergers / vignes, etc.)*
 
-### uMap incubé par l'état, ça donne quoi ?
+### uMap incubé par l'État, ça donne quoi ?
 
 :fontawesome-solid-person-chalkboard: Y. Boniface
 
