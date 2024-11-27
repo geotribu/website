@@ -73,7 +73,7 @@ Dans cet article, je vous parlerai donc essentiellement de quelques conférences
 
 ![logo DataSud](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/DataSud.webp){: .img-thumbnail-left }
 
-Présentation de l'outil [DataSud](https://www.datasud.fr/portal/), plateforme d'opendata, mais pas que !
+Présentation de l'outil [DataSud](https://www.datasud.fr/portal/), plateforme d'open data, mais pas que !
 
 L'infrastructure est pensée pour mettre à disposition des données de différentes natures (dont [la matrice cadastrale MAJIC](https://guides.data.gouv.fr/reutiliser-des-donnees/autour-du-cadastre/manipuler-les-donnees-du-cadastre#faire-lintegration-metier-parcelles-et-majic)) à des publics différents : collectivités, associations, etc. Se voulant un hub de données régionales, DataSud moissonne les données OSM sur les [fichiers diffs](https://wiki.openstreetmap.org/wiki/Planet.osm/diffs) et crée des couches prétraitées grâce à [Osmium](https://github.com/osmcode/), [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis) et [osm2pgsql](https://osm2pgsql.org/). La base initiale est ainsi digérée en 35 tables définies par un fichier LUA. Puis d'autres tables sont gérées avec des vues thématisées selon [la nomenclature OSM FR](https://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques) (plus d'infos [ici](https://gitlab.datasud.fr/projets_publics/openstreetmap4datasud)).
 
