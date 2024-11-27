@@ -53,7 +53,7 @@ Dans cet article, je vous parlerai donc essentiellement de quelques conférences
 
 - Petits topo éclairs sur quelques sujets :
     - C. Frayssinet nous présente une petite application permettant de proposer de la **formation sur smartphone** (*mobile learning*) avec **[ePoc](https://epoc.inria.fr/)** et comment il a développé une formation à OSM à destination de ses élèves de seconde
-    - F. Rodrigo sur la difficulté à avoir de la **lisibilité spatiale et réglementaire sur les zones à faibles émissions** ([BN ZFE](https://transport.data.gouv.fr/datasets/base-nationale-consolidee-des-zones-a-faibles-emissions) «inutilisable», on utilise le tag [boundary = low_emission_zone](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dlow_emission_zone#France) dans OSM) et leurs liens avec les zones Crit'Air encore bien flous
+    - F. Rodrigo sur la difficulté à avoir de la **lisibilité spatiale et réglementaire sur les zones à faibles émissions** ([BN ZFE](https://transport.data.gouv.fr/datasets/base-nationale-consolidee-des-zones-a-faibles-emissions) « inutilisable », on utilise le tag [boundary = low_emission_zone](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dlow_emission_zone#France) dans OSM) et leurs liens avec les zones Crit'Air encore bien flous
     - A. Vuillard nous raconte ses **galères à développer des applications SIG** quand on n'a pas l'habitude
     - I. Amri nous présente un **[générateur d'atlas pour faire des cyclorando](http://atlas.iliasamri.com/)** à partir d'une trace GPX
     - Thibault nous renvoie vers son usage d'[OSM Tracker Android](https://wiki.openstreetmap.org/wiki/FR:OSMTracker_(Android)) pour **contribuer en mouvement**
