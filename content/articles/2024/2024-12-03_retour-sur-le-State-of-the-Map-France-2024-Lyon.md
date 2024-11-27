@@ -94,7 +94,7 @@ L'occupation du sol à grande échelle (OCSGE) est une nouvelle base géographiq
 
 Comment ça marche ?
 
-- des photographies aériennes (RVB & infrarouges) sont récupérées et associées à des MNS et MNT
+- des photographies aériennes (RVB & infrarouges) sont récupérées et associées à des MNS et MNT[^mne_mns_mnt]
 - un [modèle de *deep learning*](https://ignf.github.io/FLAIR/index_fr.html) entraîné sur un important jeu d'annotations classifie chaque pixel [14 formes de couverture](https://artificialisation.developpement-durable.gouv.fr/sites/artificialisation/files/inline-files/Marque%20page_OCS_GE_sept2017_RV_V3-1_0.png) et [17 formes d'usages du sol](https://artificialisation.developpement-durable.gouv.fr/sites/artificialisation/files/inline-files/Marque%20page_OCS_GE_sept2017_RV_V3-2.png)
 - un processus de correction double est ensuite mobilisé pour détecter des anomalies dans la classification automatique :
     - correction par photointerprétation d'un sous-traitant
@@ -248,3 +248,7 @@ Voilà pour ce petit article sur cette édition 2024 du SotM. Beaucoup de liens 
 <!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}
+
+<!-- Notes de bas de page -->
+[^mne_mns_mnt]:
+    Modèles Numérique d'Élévation, Surface ou Terrain : description altimétrique du sol, des structures (bâtiments, végétaux...) à partir de photogrammétrie. On parle parfois aussi de MNC pour la Canopée. Pour plus d'informations, consulter la [page de l'IGN](https://geoservices.ign.fr/actualites/2020-12-10-MNT-MNS) ou [Wikipedia](https://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain).
