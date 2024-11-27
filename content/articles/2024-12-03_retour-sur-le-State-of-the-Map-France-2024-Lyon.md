@@ -6,13 +6,14 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-11-12
+date: 2024-12-03
 description: Romain Lacroix était au State of the Map France 2024 à Lyon et nous livre ce qui l'a marqué et ce qu'il a retenu.
 icon: simple/openstreetmap
 image:
 license: default
 robots: index, follow
 tags:
+    - conférence
     - OpenStreetMap
     - SotM
 ---
