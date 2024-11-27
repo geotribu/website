@@ -118,7 +118,7 @@ Ces produits de grande résolution offrent une formidable opportunité pour les 
 
 L'application [uMap](https://umap-project.org/fr/) qui aide à la création de cartographies interactives personnalisées à partir de couches OSM a passé le million de cartes créées.
 
-De ce succès, notamment dans le cadre de fonction publique, a découlé des financements de la part de l'AIC - [Accélérateur d'Initiatives Citoyennes](https://communs.beta.gouv.fr/) - et de l'[Agence Nationale de la Cohésion des Territoires](https://agence-cohesion-territoires.gouv.fr/). Outre la création d'une [instance spécifique pour les agents de la fonction publique](https://umap.incubateur.anct.gouv.fr/)) afin de ne pas surcharger les serveurs OSM-France, cela a permis le financement de nombreux développements (V2) et nouvelles fonctionnalités présentés :
+De ce succès, notamment dans le cadre de fonction publique, a découlé des financements de la part de l'AIC - [Accélérateur d'Initiatives Citoyennes](https://communs.beta.gouv.fr/) - et de l'[Agence Nationale de la Cohésion des Territoires](https://agence-cohesion-territoires.gouv.fr/). Outre la création d'une [instance spécifique pour les agents de la fonction publique](https://umap.incubateur.anct.gouv.fr/)) afin de ne pas surcharger les serveurs OSM-France, cela a permis le financement de nombreux développements (V2) et nouvelles fonctionnalités présentées :
 
 - Nombreuses améliorations UX (tableau de bord, explorateur, avertissements, alertes, signalisations, panneau de partage, gabarits de pop-up)
 - Drag & Drop des données
