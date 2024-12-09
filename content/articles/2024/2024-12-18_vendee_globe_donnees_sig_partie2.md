@@ -27,7 +27,8 @@ tags:
 
 ## Résumé de la Partie 1
 
-[:material-web: Accéder au premier article :simple-readdotcv:](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/){: .md-button }{: align=middle }
+[:material-web: Accéder au premier article :simple-readdotcv:](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/){: .md-button }
+{: align=middle }
 
 Dans le [premier article](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/), que je vous incite à consulter si ce n'est pas déja le cas, avant de lire celui-ci, nous avions abordé les étapes techniques nécessaires à l'exploitation du tableur Excel officiel des pointages émis par l'organisation. Le but étant de construire des données SIG à partir de ceux-ci qui sont publiés toutes les quatres heures. Pour cela je vous avais présenté une série du script python qui permettent le téléchargement automatisé des fichiers Excel, leur nettoyage, préparation des données, la conversion des coordonnées DMS en degrés décimaux, ainsi que la création des géométries pour tracer les points et les trajectoires des bateaux.
 
@@ -74,7 +75,7 @@ C'est dans cette partie qu'est paramétré l'automatisation, il s'agit d'un cron
 
 Chaque fois que le pipeline est exécuté, les dernières données écrasent les précédentes. Plus précisément, la dernière release est supprimé, et une nouvelle portant le même nom (`latest`) est créée. Il n'y a donc qu'une seule release des données disponibles à cette [adresse](https://github.com/florentfgrs/Vendee-Globe-2024/releases/tag/latest).  Tous les quatre heures, vous pouvez donc télécharger les dernières données d'avancement de la course.
 
-![Release des données sur GitHub](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/release.png){: .img-thumbnail-left }
+![Release des données sur GitHub](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/release.png){: .img-center loading=lazy }
 
 L'intérêt est donc de pouvoir récupérer les données sans avoir à cloner le projet, installer les dépendances et lancer les scripts pour construire les données, c'est la magie de la CI qui s'occupe de tout ça !
 
@@ -83,7 +84,7 @@ L'intérêt est donc de pouvoir récupérer les données sans avoir à cloner le
 Vous pouvez même charger ces données directement dans QGIS sans avoir à télécharger le fichier manuellement.
 
 Pour cela dans votre QGIS rendez-vous dans le menu **Couche** puis **Ajouter une couche** et enfin **Ajouter une couche vecteur**
-![QGIS - Ajouter une couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/ajouter_une_couche.png){: .img-thumbnail-left }
+![QGIS - Ajouter une couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/ajouter_une_couche.png){: .img-center loading=lazy }
 
 Dans la fenêtre qui s'affiche, dans le champ `Jeux de données vectorielles` vous pouvez coller un URL de fichier qui provient de la release.
 
@@ -93,13 +94,14 @@ On va donc y mettre l'URL du fichier latest_data.gpkg qui contient la couche des
 https://github.com/florentfgrs/Vendee-Globe-2024/releases/download/latest/latest_data.gpkg
 ```
 
-![QGIS - URL de couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/qgis_url_couche_vecteur.png){: .img-thumbnail-left }
+![QGIS - URL de couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/qgis_url_couche_vecteur.png){: .img-center loading=lazy }
 
 Après un temps de chargement (le temps que QGIS télécharge le fichier dans le cache) les données vont apparaître.
 
 ## Visualiseur cartographique web
 
-[:material-web: Accéder à la cartographie web du Vendée Globe 2024 :map:](https://florentfgrs.github.io/Vendee-Globe-2024/){: .md-button }{: align=middle }
+[:material-web: Accéder à la cartographie web du Vendée Globe 2024 :map:](https://florentfgrs.github.io/Vendee-Globe-2024/){: .md-button }
+{: align=middle }
 
 !!! info "Transparence sur le développement"
     Le développement web n'étant pas mon domaine de prédilection, j'ai quelques connaissances de base acquise il y a quelques années lors de la formation au [master SIGAT](https://formations.univ-rennes2.fr/fr/formations/master-37/master-mention-geomatique-parcours-systeme-d-information-geographique-et-analyse-des-territoires-sigat-JEOC8L9A.html), je me suis aidé pour le développement de la partie JavaScript et CSS de l'intelligence artificielle comme indiqué dans le [readme](https://formations.univ-rennes2.fr/fr/formations/master-37/master-mention-geomatique-parcours-systeme-d-information-geographique-et-analyse-des-territoires-sigat-JEOC8L9A.html).
@@ -108,7 +110,7 @@ Cette carte est basée sur les données générées par la CI, ce n'est donc pas
 
 D'un point de vue technique, elle se base sur [Maplibre](https://maplibre.org/), il s'agit d'une bibliothèque JavaScript open-source de cartographie web permettant de créer des cartes interactives personnalisées à partir de données géospatiales.
 
-![Application web de visualisation des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/webapp.png){: .img-thumbnail-left }
+![Application web de visualisation des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/webapp.png){: .img-center loading=lazy }
 
 Par défaut aucune trace n'est affiché, il faut alors cliquer sur les concurrents de votre choix dans la barre de gauche (ils sont classés dans l'ordre de leur position en course), ou bien cliqué sur le bouton tout afficher.
 
