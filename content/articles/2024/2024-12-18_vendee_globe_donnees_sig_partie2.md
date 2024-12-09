@@ -104,7 +104,7 @@ Après un temps de chargement (le temps que QGIS télécharge le fichier dans le
 {: align=middle }
 
 !!! info "Transparence sur le développement"
-    Le développement web n'étant pas mon domaine de prédilection, j'ai quelques connaissances de base acquise il y a quelques années lors de la formation au [master SIGAT](https://formations.univ-rennes2.fr/fr/formations/master-37/master-mention-geomatique-parcours-systeme-d-information-geographique-et-analyse-des-territoires-sigat-JEOC8L9A.html), je me suis aidé pour le développement de la partie JavaScript et CSS de l'intelligence artificielle comme indiqué dans le [readme](https://formations.univ-rennes2.fr/fr/formations/master-37/master-mention-geomatique-parcours-systeme-d-information-geographique-et-analyse-des-territoires-sigat-JEOC8L9A.html).
+    Le développement web n'étant pas mon domaine de prédilection, j'ai quelques connaissances de base acquise il y a quelques années lors de la formation au [master SIGAT](https://formations.univ-rennes2.fr/fr/formations/master-37/master-mention-geomatique-parcours-systeme-d-information-geographique-et-analyse-des-territoires-sigat-JEOC8L9A.html), je me suis aidé pour le développement de la partie JavaScript et CSS de l'intelligence artificielle comme indiqué dans le [readme](https://github.com/florentfgrs/Vendee-Globe-2024?tab=readme-ov-file#%EF%B8%8F-visualisateur-web).
 
 Cette carte est basée sur les données générées par la CI, ce n'est donc pas du temps réel, mais un aperçu du dernier pointage. Les données sont donc automatiquement mises à jour toutes les 4h, là encore, c'est la magie de la CI qui permet ça.
 
