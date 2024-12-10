@@ -13,7 +13,7 @@ social:
     - openstreetmap:
     - osgeo:
     - twitter:
-    - website:
+    - website
 ---
 
 # Emilie BIGORNE
