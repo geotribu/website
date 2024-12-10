@@ -9,7 +9,7 @@ comments: true
 date: 2024-12-18
 description: Suite de créer et visualiser les données SIG de l'avancement de la course du Vendée Globe 2024 à partir des tableurs officiels. Comment automatiser la génération des données SIG et les visualiser dans une application Web ou sur QGIS.
 icon: material/sail-boat
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/webapp.png
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/illustration_article_partie_2.png
 license: beerware
 robots: index, follow
 tags:
