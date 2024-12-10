@@ -1,9 +1,10 @@
-title: Emilie BIGORNE
+---
+title: Émilie BIGORNE
 categories:
     - contributeur
 social:
     - bluesky:
-    - github:EmilieEPLoire
+    - github: EmilieEPLoire
     - gitlab:
     - linkedin:
     - mail:
@@ -13,7 +14,7 @@ social:
     - openstreetmap:
     - osgeo:
     - twitter:
-    - website
+    - website:
 ---
 
 # Emilie BIGORNE
