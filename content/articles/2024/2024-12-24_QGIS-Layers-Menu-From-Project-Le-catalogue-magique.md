@@ -124,7 +124,8 @@ Aujourd'hui, on a remarqué d'autres limites à cette extension (nul n'est parfa
 
 ## En résumé
 
-### Nos :heavy_plus_sign:
+### Nos :material-plus-thick:
+
 
 * Facile d'utilisation pour les utilisateurs et adaptable par groupes d'utilisateurs
 * Facile à configurer
