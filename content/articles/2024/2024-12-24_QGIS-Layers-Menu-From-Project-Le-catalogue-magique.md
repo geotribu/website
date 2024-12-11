@@ -133,7 +133,8 @@ Aujourd'hui, on a remarqué d'autres limites à cette extension (nul n'est parfa
 * Mises à jour des données et styles facilitées
 * Une communauté de fans grandissante qui va permettre de faire évoluer l'extension pour encore plus de magie !
 
-### Nos :heavy_minus_sign:
+### Nos :material-minus-thick:
+
 
 * Attention aux menus trop longs : le projet initial est lourd, le chargement trop impactant sur les perfs d'ouverture du logiciel
 * Trop de menus différents : temps d'ouverture de qgis plus long
