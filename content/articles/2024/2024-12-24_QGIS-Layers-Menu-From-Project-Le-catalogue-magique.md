@@ -7,7 +7,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-12-10
+date: 2024-12-24
 description: "Une extension extension QGIS peut être (trop) méconnue : Layers Menu From Project permet de simplifier la vie des administrateurs ET des utilisateurs, retour d'expérience à deux voix. "
 icon: fontawesome/solid/wand-magic-sparkles
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/retex_layers_menu_from_project/be-qool_myriade.png
@@ -98,12 +98,12 @@ Du coup, la liste des couches configurées depuis la base de données dans l'exp
 La liste des couches configurée depuis la base de données dans l'explorateur : ça ne fonctionne pas non plus ! Il faudrait nommer les schémas, tables et vues et que tout soit rangé en pensant à l'utilisateur ... ou utiliser un schéma dédié avec toutes les vues renommées ...
 Avec LMFP : pas de sujet ! **Peu importe le modèle de données, c'est le nommage et la configuration dans le projet QGIS utilisé qui comptent**.
 
-!!! tip Autre avantage
+!!! tip "Autre avantage"
     Étant donné qu'il est possible aussi de mettre des flux, on s'épargne des actions de mise à jour et on remercie les producteurs de gérer leurs mises à jour tous seuls !
 
 Comme dit précédemment : la principale contrainte est alors liée au maintient du projet QGIS en entrée du plugin et à l'accès des utilisateurs à ce projet. Chez nous, il est enregistré en base de donnée. Une authentification avec un identifiant / mot de passe est enregistrée à la première connexion de l'utilisateur, qui lui donne accès au projet via le menu et aux différentes données en base (en lecture ou en écriture).
 
-!!!tip **Encore plus de paillettes**
+!!! tip "Encore plus de paillettes"
     En plus des groupes, sous-groupes et agencement de différents projets, il est possible de créer des sections avec des titres et des séparateurs. Rendez-vous sur la documentation du plugin pour rendre tout ça encore plus beau ! [C'est par ici](https://aeag.github.io/MenuFromProject-Qgis-Plugin/usage/fr_use.html#)
 
 Pour finir, la **cerise sur le gateau : la mise à jour d'un outil sans réinstallation ou téléchargement.**
