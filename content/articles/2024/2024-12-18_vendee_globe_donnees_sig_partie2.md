@@ -112,7 +112,7 @@ D'un point de vue technique, elle se base sur [Maplibre](https://maplibre.org/),
 
 ![Application web de visualisation des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/webapp.png){: .img-center loading=lazy }
 
-Par défaut aucune trace n'est affiché, il faut alors cliquer sur les concurrents de votre choix dans la barre de gauche (ils sont classés dans l'ordre de leur position en course), ou bien cliqué sur le bouton tout afficher.
+Par défaut aucune trace n'est affichée, il faut alors cliquer sur les concurrents de votre choix dans la barre de gauche (ils sont classés dans l'ordre de leur position en course), ou bien cliquer sur le bouton `Tout afficher`.
 
 Au survol d'une trace, un popup avec le temps apparait et des informations complémentaires en haut à gauche, tel que le cap et la vitesse.
 
