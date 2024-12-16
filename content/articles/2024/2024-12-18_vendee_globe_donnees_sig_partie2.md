@@ -116,7 +116,7 @@ Par défaut aucune trace n'est affichée, il faut alors cliquer sur les concurre
 
 Au survol d'une trace, un popup avec le temps apparait et des informations complémentaires en haut à gauche, tel que le cap et la vitesse.
 
-Cette application web est encore en phase de développement, j'aimerais encore l'améliorer. Par exemple, actuellement, dans la petite fenêtre qui s'affiche au survol,  en haut à gauche, il n'y a pas tous les attributs d'afficher. Comme énoncé plus haut, j'aimerais aussi ne plus lire les données dur dans le repo GitHub, mais j'aimerais tout gérer dans le pipeline de déploiement de la GitHub Pages.
+Cette application web est encore en phase de développement, j'aimerais encore l'améliorer. Par exemple, actuellement, dans la petite fenêtre qui s'affiche au survol, en haut à gauche, tous les attributs ne sont pas affichés. Comme énoncé plus haut, j'aimerais aussi ne plus lire les données en dur dans le dépôt GitHub, mais j'aimerais tout gérer dans le pipeline de déploiement de la GitHub Pages.
 
 ----
 
