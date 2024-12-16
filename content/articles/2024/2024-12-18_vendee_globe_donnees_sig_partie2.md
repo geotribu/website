@@ -53,7 +53,7 @@ Sans rentrer dans une explication détaillée de ce code, globalement ce pipelin
 
 - `generate` : ce [job](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/pointages.yml#L21) installe les dépendances python puis exécute les scripts qui permettent de télécharger les tableurs Excel des pointages pour les convertir en données SIG.
 - `release`: ce [second job](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/pointages.yml#L48) publie les données SIG dans une release GitHub, cette partie est détaillée plus tard dans l'article.
-- `update-files`: ce [dernier job](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/pointages.yml#L75) commit et push les données SIG dans le projet afin d'avoir une URL fixe pour les utiliser dans l'application web. Ce job est amené à disparaitre pour être intégré cela au [job de déploiement](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/static.yml) de l'application web dans GitHub Pages.
+- `update-files`: ce [dernier job](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/pointages.yml#L75) commit et push les données SIG dans le projet afin d'avoir une URL fixe pour les utiliser dans l'application web. Ce job est amené à disparaitre pour être intégré au [job de déploiement](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/static.yml) de l'application web dans GitHub Pages.
 
 En [haut du pipeline](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/pointages.yml#L3-L5), on peut voir ce format de morceau code.
 
