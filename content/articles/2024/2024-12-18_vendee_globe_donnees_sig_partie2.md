@@ -63,7 +63,7 @@ on:
     - cron: "30 3,7,11,15,19,23 * * *"
 ```
 
-C'est dans cette partie qu'est paramétré l'automatisation, il s'agit d'un cron, pour plus d'informations sur cette syntaxe, je trouve cette [documentation](https://doc.ubuntu-fr.org/cron) bien faite. Ici le script s'exécute chaque jour à 3h30, 7h30, 11h30 ... etc.
+C'est dans cette partie qu'est paramétrée l'automatisation, il s'agit d'un cron, pour plus d'informations sur cette syntaxe, je trouve cette [documentation](https://doc.ubuntu-fr.org/cron) bien faite. Ici le script s'exécute chaque jour à 3h30, 7h30, 11h30 ... etc.
 
 !!! warning "Attention sur l'heure"
     Les heures qu'on indique sont des heures GMT 0 ([heure de Greenwich](https://time.is/fr/GMT)) dans mon exemple il y a donc un décalage de +1h avec l'heure de Paris (GMT+1).
