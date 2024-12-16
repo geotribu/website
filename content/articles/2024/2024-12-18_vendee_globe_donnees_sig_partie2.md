@@ -30,7 +30,7 @@ tags:
 [:material-web: Accéder au premier article :simple-readdotcv:](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/){: .md-button }
 {: align=middle }
 
-Dans le [premier article](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/), que je vous invite à consulter si ce n'est pas déja le cas, avant de lire celui-ci, nous avions abordé les étapes techniques nécessaires à l'exploitation du tableur Excel officiel des pointages émis par l'organisation. Le but étant de construire des données SIG à partir de ceux-ci qui sont publiés toutes les quatres heures. Pour cela je vous avais présenté une série du script python qui permet le téléchargement automatisé des fichiers Excel, leur nettoyage, préparation des données, la conversion des coordonnées DMS en degrés décimaux, ainsi que la création des géométries pour tracer les points et les trajectoires des bateaux.
+Dans le [premier article](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/), que je vous invite à consulter si ce n'est pas déjà fait, avant de lire celui-ci, nous avions abordé les étapes techniques nécessaires à l'exploitation du tableur Excel officiel des pointages émis par l'organisation. Le but était de construire des données SIG à partir de ceux-ci qui sont publiés toutes les quatre heures. Pour cela je vous avais présenté une série de script Python qui permet le téléchargement automatisé des fichiers Excel, leur nettoyage, préparation des données, la conversion des coordonnées DMS en degrés décimaux, ainsi que la création des géométries pour tracer les points et les trajectoires des bateaux.
 
 Dans cette seconde partie, nous allons voir les suites que j'ai apportées à ce projet.
 
@@ -51,7 +51,7 @@ Ce pipeline se trouve dans le fichier [.github/workflows/pointages.yml](https://
 
 Sans rentrer dans une explication détaillée de ce code, globalement ce pipeline exécute trois jobs, qu'on pourrait appeler trois étapes.
 
-- `generate` : ce [job](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/pointages.yml#L21) installe les dépendances python puis exécute les scripts qui permettent de télécharger les tableurs Excel des pointages pour les convertir en données SIG.
+- `generate` : ce [job](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/pointages.yml#L21) installe les dépendances Python puis exécute les scripts qui permettent de télécharger les tableurs Excel des pointages pour les convertir en données SIG.
 - `release`: ce [second job](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/pointages.yml#L48) publie les données SIG dans une release GitHub, cette partie est détaillée plus tard dans l'article.
 - `update-files`: ce [dernier job](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/pointages.yml#L75) commit et push les données SIG dans le projet afin d'avoir une URL fixe pour les utiliser dans l'application web. Ce job est amené à disparaitre pour être intégré au [job de déploiement](https://github.com/florentfgrs/Vendee-Globe-2024/blob/main/.github/workflows/static.yml) de l'application web dans GitHub Pages.
 
@@ -73,7 +73,7 @@ C'est dans cette partie qu'est paramétrée l'automatisation, il s'agit d'un cro
 !!! question "C'est quoi une release ?"
     Une release GitHub est une version officielle d’un projet publiée sur une plateforme git. Elle permet de regrouper des fichiers ou des artefacts générés par la CI/CD, comme des exécutables, des binaires ou des données, et de les partager avec les utilisateurs.
 
-Chaque fois que le pipeline est exécuté, les dernières données écrasent les précédentes. Plus précisément, la dernière release est supprimée, et une nouvelle portant le même nom (`latest`) est créée. Il n'y a donc qu'une seule release des données disponible à cette [adresse](https://github.com/florentfgrs/Vendee-Globe-2024/releases/tag/latest).  Toutes les quatre heures, vous pouvez donc télécharger les dernières données d'avancement de la course.
+Chaque fois que le pipeline est exécuté, les dernières données écrasent les précédentes. Plus précisément, la dernière release est supprimée, et une nouvelle portant le même nom (`latest`) est créée. Il n'y a donc qu'une seule release des données disponible à cette [adresse](https://github.com/florentfgrs/Vendee-Globe-2024/releases/tag/latest).  Toutes les quatre heures, vous pouvez ainsi télécharger les dernières données d'avancement de la course.
 
 ![Release des données sur GitHub](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/release.png){: .img-center loading=lazy }
 
@@ -86,7 +86,7 @@ Vous pouvez même charger ces données directement dans QGIS sans avoir à tél�
 Pour cela dans votre QGIS rendez-vous dans le menu **Couche** puis **Ajouter une couche** et enfin **Ajouter une couche vecteur**
 ![QGIS - Ajouter une couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/ajouter_une_couche.png){: .img-center loading=lazy }
 
-Dans la fenêtre qui s'affiche, dans le champ `Jeux de données vectorielles` vous pouvez coller un URL de fichier qui provient de la release.
+Dans la fenêtre qui s'affiche, dans le champ `Jeux de données vectorielles` vous pouvez coller une URL de fichier qui provient de la release.
 
 On va donc y mettre l'URL du fichier `latest_data.gpkg` qui contient la couche des pointages et celle des trajectoires.
 
