@@ -73,7 +73,7 @@ C'est dans cette partie qu'est paramétrée l'automatisation, il s'agit d'un cro
 !!! question "C'est quoi une release ?"
     Une release GitHub est une version officielle d’un projet publiée sur une plateforme git. Elle permet de regrouper des fichiers ou des artefacts générés par la CI/CD, comme des exécutables, des binaires ou des données, et de les partager avec les utilisateurs.
 
-Chaque fois que le pipeline est exécuté, les dernières données écrasent les précédentes. Plus précisément, la dernière release est supprimé, et une nouvelle portant le même nom (`latest`) est créée. Il n'y a donc qu'une seule release des données disponibles à cette [adresse](https://github.com/florentfgrs/Vendee-Globe-2024/releases/tag/latest).  Tous les quatre heures, vous pouvez donc télécharger les dernières données d'avancement de la course.
+Chaque fois que le pipeline est exécuté, les dernières données écrasent les précédentes. Plus précisément, la dernière release est supprimée, et une nouvelle portant le même nom (`latest`) est créée. Il n'y a donc qu'une seule release des données disponible à cette [adresse](https://github.com/florentfgrs/Vendee-Globe-2024/releases/tag/latest).  Toutes les quatre heures, vous pouvez donc télécharger les dernières données d'avancement de la course.
 
 ![Release des données sur GitHub](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/release.png){: .img-center loading=lazy }
 
