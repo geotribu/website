@@ -34,7 +34,7 @@ Dans le [premier article](https://geotribu.fr/articles/2024/2024-11-20_vendee_gl
 
 Dans cette seconde partie, nous allons voir les suites que j'ai apportées à ce projet.
 
-Spoiler : CI/CD et carographie web.
+Spoiler : CI/CD et cartographie web.
 
 ## Mise en musique de la construction des données SIG dans un pipeline de CI/CD
 
