@@ -39,7 +39,8 @@ J'ai découvert il y a déjà plusieurs années, l'outil "layers menu from proje
 
 ### Pourquoi c'est magique
 
-Layers menu from project répond aux questions récurrentes des utilisateurs : où est stockée la donnée (sur le serveur, dans une base de données, dans un flux WMS ?), quelle est la dernière version, comment dois-je la représenter ? Les données sont désormais accessibles en 2 clicks, depuis des menus intégrés directement à QGIS.
+Layers menu from project répond aux questions récurrentes des utilisateurs : où est stockée la donnée (sur le serveur, dans une base de données, dans un flux WMS ?), qu'elle est la dernière version, comment dois-je la représenter ? Les données sont désormais accessibles en 2 clicks, depuis des menus intégrés directement à QGIS.
+
 Grâce à LMFP, en deux coups de baguette magique, la donnée est affichée !
 
 ![Be Qool](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/retex_layers_menu_from_project/be-qool_myriade.png){: .img-center loading=lazy }
