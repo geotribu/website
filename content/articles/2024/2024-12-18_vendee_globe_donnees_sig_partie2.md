@@ -30,7 +30,7 @@ tags:
 [:material-web: Accéder au premier article :simple-readdotcv:](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/){: .md-button }
 {: align=middle }
 
-Dans le [premier article](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/), que je vous incite à consulter si ce n'est pas déja le cas, avant de lire celui-ci, nous avions abordé les étapes techniques nécessaires à l'exploitation du tableur Excel officiel des pointages émis par l'organisation. Le but étant de construire des données SIG à partir de ceux-ci qui sont publiés toutes les quatres heures. Pour cela je vous avais présenté une série du script python qui permettent le téléchargement automatisé des fichiers Excel, leur nettoyage, préparation des données, la conversion des coordonnées DMS en degrés décimaux, ainsi que la création des géométries pour tracer les points et les trajectoires des bateaux.
+Dans le [premier article](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/), que je vous invite à consulter si ce n'est pas déja le cas, avant de lire celui-ci, nous avions abordé les étapes techniques nécessaires à l'exploitation du tableur Excel officiel des pointages émis par l'organisation. Le but étant de construire des données SIG à partir de ceux-ci qui sont publiés toutes les quatres heures. Pour cela je vous avais présenté une série du script python qui permet le téléchargement automatisé des fichiers Excel, leur nettoyage, préparation des données, la conversion des coordonnées DMS en degrés décimaux, ainsi que la création des géométries pour tracer les points et les trajectoires des bateaux.
 
 Dans cette seconde partie, nous allons voir les suites que j'ai apportées à ce projet.
 
