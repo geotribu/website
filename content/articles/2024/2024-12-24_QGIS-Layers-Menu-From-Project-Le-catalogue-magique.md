@@ -8,7 +8,8 @@ categories:
     - article
 comments: true
 date: 2024-12-24
-description: "Une extension extension QGIS peut être (trop) méconnue : Layers Menu From Project permet de simplifier la vie des administrateurs ET des utilisateurs, retour d'expérience à deux voix. "
+description: "Une extension QGIS peut être (trop) méconnue : Layers Menu From Project permet de simplifier la vie des administrateurs ET des utilisateurs, retour d'expérience à deux voix. "
+
 icon: fontawesome/solid/wand-magic-sparkles
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/retex_layers_menu_from_project/be-qool_myriade.png
 license: default
