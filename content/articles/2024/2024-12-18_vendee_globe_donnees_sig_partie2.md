@@ -88,7 +88,7 @@ Pour cela dans votre QGIS rendez-vous dans le menu **Couche** puis **Ajouter une
 
 Dans la fenêtre qui s'affiche, dans le champ `Jeux de données vectorielles` vous pouvez coller un URL de fichier qui provient de la release.
 
-On va donc y mettre l'URL du fichier latest_data.gpkg qui contient la couche des pointages et celle des trajectoires.
+On va donc y mettre l'URL du fichier `latest_data.gpkg` qui contient la couche des pointages et celle des trajectoires.
 
 ```url
 https://github.com/florentfgrs/Vendee-Globe-2024/releases/download/latest/latest_data.gpkg
