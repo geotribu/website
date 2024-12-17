@@ -1,6 +1,6 @@
 ---
 title: Suivre le Vendée Globe 2024 depuis un SIG - Partie 2
-subtitle: Vendée Globe et données SIG - Partie 2
+subtitle: Hissez la grand voile carto - Partie 2
 authors:
   - Florent FOUGÈRES
 categories:
