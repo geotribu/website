@@ -105,7 +105,7 @@ On va donc y mettre l'URL du fichier `latest_data.gpkg` qui contient la couche d
 https://github.com/florentfgrs/Vendee-Globe-2024/releases/download/latest/latest_data.gpkg
 ```
 
-![QGIS - URL de couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/qgis_url_couche_vecteur.png){: .img-center loading=lazy }
+![QGIS - URL de couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/ajouter-couche-vecteur.png){: .img-center loading=lazy }
 
 Après un temps de chargement (le temps que QGIS télécharge le fichier dans le cache) les données vont apparaître.
 
