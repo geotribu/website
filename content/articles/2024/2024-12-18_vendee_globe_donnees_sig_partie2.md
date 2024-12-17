@@ -117,7 +117,7 @@ Cette carte est basée sur les données générées par la CI, ce n'est donc pas
 
 D'un point de vue technique, elle se base sur [Maplibre](https://maplibre.org/), il s'agit d'une bibliothèque JavaScript open-source de cartographie web permettant de créer des cartes interactives personnalisées à partir de données géospatiales.
 
-!!! info inline end "Transparence sur le développement"
+!!! info "Transparence sur le développement"
     Le développement web n'étant pas mon domaine de prédilection, j'ai quelques connaissances de base acquise il y a quelques années lors de la formation au [master SIGAT](https://formations.univ-rennes2.fr/fr/formations/master-37/master-mention-geomatique-parcours-systeme-d-information-geographique-et-analyse-des-territoires-sigat-JEOC8L9A.html), je me suis aidé pour le développement de la partie JavaScript et CSS de l'intelligence artificielle comme indiqué dans le [readme](https://github.com/florentfgrs/Vendee-Globe-2024?tab=readme-ov-file#%EF%B8%8F-visualisateur-web).
 
 ![Application web de visualisation des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/webapp.png){: .img-center loading=lazy }
