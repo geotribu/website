@@ -27,7 +27,6 @@ tags:
 
 ## Résumé de la Partie 1
 
-
 ![logo Vendée Globe](https://cdn.geotribu.fr/img/logos-icones/divers/vendee_globe.png){: .img-thumbnail-left }
 
 Dans le [premier article](https://geotribu.fr/articles/2024/2024-11-20_vendee_globe_donnees_sig/), que je vous invite à consulter si ce n'est pas déjà fait, avant de lire celui-ci, nous avions abordé les étapes techniques nécessaires à l'exploitation du tableur Excel officiel des pointages émis par l'organisation. Le but était de construire des données SIG à partir de ceux-ci qui sont publiés toutes les quatre heures. Pour cela je vous avais présenté une série de script Python qui permet le téléchargement automatisé des fichiers Excel, leur nettoyage, préparation des données, la conversion des coordonnées DMS en degrés décimaux, ainsi que la création des géométries pour tracer les points et les trajectoires des bateaux.
