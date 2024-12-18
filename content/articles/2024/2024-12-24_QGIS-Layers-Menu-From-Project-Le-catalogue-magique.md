@@ -115,7 +115,8 @@ Notre outil est en constante évolution : champs, listes de valeurs, symbologie 
 ### L'évolution du plugin
 
 Il n'y a pas que nos outils qui évoluent, le plugin aussi !
-L'année dernière, on a commencé à intégrer des relations dans notre projet QGIS. Le problème : charger une couche depuis le menu ne chargeait ni l'autre (ou les autres ) couche(s) ni la relation.
+L'année dernière, on a commencé à intégrer des relations dans notre projet QGIS. Le problème : charger une couche depuis le menu ne chargeait ni l'autre (ou les autres) couche(s) ni la relation.
+
 Un ticket Git, quelques échanges avec le développeur : et voilà, problème réglé.
 
 Aujourd'hui, on a remarqué d'autres limites à cette extension (nul n'est parfait ...) alors on va continuer d'apporter notre contribution et nos retours pour la faire évoluer. Et quand on est plusieurs concernés, autant mutualiser, et c'est ce qu'on va faire avec d'autres structures qui utilisent ce plugin !
