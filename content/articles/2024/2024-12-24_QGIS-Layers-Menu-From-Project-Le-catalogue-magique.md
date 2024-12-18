@@ -143,7 +143,8 @@ Aujourd'hui, on a remarqué d'autres limites à cette extension (nul n'est parfa
 <!-- markdownlint-enable MD026 -->
 
 * Attention aux menus trop longs : le projet initial est lourd, le chargement trop impactant sur les perfs d'ouverture du logiciel
-* Trop de menus différents : temps d'ouverture de qgis plus long
+* Trop de menus différents : temps d'ouverture de QGIS plus long
+
 * Des optimisations à faire côté performances dans certains cas techniques
 
 !!! success "Le mot de la fin"
