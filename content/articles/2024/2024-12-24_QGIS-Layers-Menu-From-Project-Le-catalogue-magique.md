@@ -51,7 +51,6 @@ Les entrées du menu correspondent aux couches stockées dans un projet QGIS (qg
 
 Concrètement, l’administrateur prépare le.s projet.s QGIS, l’utilisateur le pointe dans le plugin LMFP et le tour est joué.
 
-
 ![QGIS - Exemple de menus générés par le plugin Layers Menu From Project](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/retex_layers_menu_from_project/LMFP_QGIS_EP-Loire_exemple.webp){: .img-center loading=lazy }
 
 <!-- markdownlint-disable MD046 -->
