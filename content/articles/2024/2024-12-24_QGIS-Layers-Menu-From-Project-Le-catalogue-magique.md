@@ -47,7 +47,8 @@ Grâce à LMFP, en deux coups de baguette magique, la donnée est affichée !
 
 ### Comment ça fonctionne ?
 
-Les entrées du menu correspondent aux couches stockées dans un projet qgis (qgs ou qgz), accessible depuis les postes utilisateurs. Les données peuvent être vecteurs ou rasters, des fichiers plats, issus d'une base de données ou des flux, et toute la configuration de la couche est conservée : symbologie, actions, mise en forme de la table attributaire, formulaire, notes de couche,…
+Les entrées du menu correspondent aux couches stockées dans un projet QGIS (qgs ou qgz), accessible depuis les postes utilisateurs. Les données peuvent être vecteurs ou rasters, des fichiers plats, issues d'une base de données ou des flux, et toute la configuration de la couche est conservée : symbologie, actions, mise en forme de la table attributaire, formulaire, notes de couche,…
+
 Concrètement, l’administrateur prépare le.s projet.s QGIS, l’utilisateur le pointe dans le plugin LMP et le tour est joué.
 
 ![QGIS - Exemple de menus générés par le plugin Layers Menu From Project](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/retex_layers_menu_from_project/LMFP_QGIS_EP-Loire_exemple.webp){: .img-center loading=lazy }
