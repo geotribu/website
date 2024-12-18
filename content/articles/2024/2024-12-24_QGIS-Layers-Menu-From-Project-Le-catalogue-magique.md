@@ -1,6 +1,6 @@
 ---
 title: "LMFP : LE catalogue magique !"
-subtitle: Dexu voix, une magie
+subtitle: Deux voix, une magie
 authors:
     - Emilie BIGORNE
     - Céline PORNIN
@@ -62,7 +62,7 @@ Concrètement, l’administrateur prépare le.s projet.s QGIS, l’utilisateur l
 
 ### L'association avec une base de données PostgreSQL
 
-Avec une base PG, je peux afficher les couches directement depuis une requête, plus besoin de stocker des vues qui induise des dépendances parfois complexes. En revanche, attention, le mode de connexion à la base (identifiant/mot de passe) est également stocké.
+Avec une base PG, je peux afficher les couches directement depuis une requête, plus besoin de stocker des vues qui induisent des dépendances parfois complexes. En revanche, attention, le mode de connexion à la base (identifiant/mot de passe) est également stocké.
 
 !!! tip "Astuce sécurité"
     Pour contourner cette difficulté, j'ajoute des couches depuis une connexion dont je n'ai pas sauvegardé les paramètres d'authentification. Ainsi, l'utilisateur est invité à saisir ses propres identifiants.
@@ -75,7 +75,7 @@ Pour l'utilisateur, un menu trop long peut être inconfortable. Pour remédier a
 
 ### En action
 
-Les actions des couches sont également conservées. On peut par exemple permettre, au clic sur des entités, d'ouvrir une page web, de charger des dalles raster ou des photos (moyennant quelques lignes de python)
+Les actions des couches sont également conservées. On peut par exemple permettre, au clic sur des entités, d'ouvrir une page web, de charger des dalles raster ou des photos (moyennant quelques lignes de Python)
 
 !!! quote "La conclusion d'Émilie"
     En interne, on adore la magie.
@@ -99,7 +99,7 @@ Du coup, la liste des couches configurées depuis la base de données dans l'exp
 ### Du côté administrateur
 
 La liste des couches configurée depuis la base de données dans l'explorateur : ça ne fonctionne pas non plus ! Il faudrait nommer les schémas, tables et vues et que tout soit rangé en pensant à l'utilisateur ... ou utiliser un schéma dédié avec toutes les vues renommées ...
-Avec LMFP : pas de sujet ! **Peu importe le modèle de données, c'est le nommage et la configuration dans le projet QGIS utilisé qui comptent**.
+Avec LMFP : pas de sujet ! **Peu importe le modèle de données, c'est le nommage et la configuration dans le projet QGIS utilisé qui comptent** (et bienvenue aux accents et aux espaces).
 
 !!! tip "Autre avantage"
     Étant donné qu'il est possible aussi de mettre des flux, on s'épargne des actions de mise à jour et on remercie les producteurs de gérer leurs mises à jour tous seuls !
