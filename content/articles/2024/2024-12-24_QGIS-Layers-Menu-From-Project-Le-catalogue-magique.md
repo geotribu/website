@@ -107,7 +107,8 @@ Avec LMFP : pas de sujet ! **Peu importe le modèle de données, c'est le nommag
 Comme dit précédemment : la principale contrainte est alors liée au maintien du projet QGIS en entrée du plugin et à l'accès des utilisateurs à ce projet. Chez nous, il est enregistré en base de données. Une authentification avec un identifiant / mot de passe est enregistrée à la première connexion de l'utilisateur, qui lui donne accès au projet via le menu et aux différentes données en base (en lecture ou en écriture).
 
 !!! tip "Encore plus de paillettes"
-    En plus des groupes, sous-groupes et agencement de différents projets, il est possible de créer des sections avec des titres et des séparateurs. Rendez-vous sur la documentation du plugin pour rendre tout ça encore plus beau ! [C'est par ici](https://aeag.github.io/MenuFromProject-Qgis-Plugin/usage/fr_use.html#)
+    En plus des groupes, sous-groupes et agencement de différents projets, il est possible de créer des sections avec des titres et des séparateurs. Rendez-vous sur la documentation du plugin pour rendre tout ça encore plus beau ! [C'est par ici](https://aeag.github.io/MenuFromProject-Qgis-Plugin/usage/fr_use.html#).
+
 
 Pour finir, la **cerise sur le gateau : la mise à jour d'un outil sans réinstallation ou téléchargement.**
 Notre outil est en constante évolution : champs, listes de valeurs, symbologie ... on change des trucs régulièrement (on corrige aussi des fautes de frappe dans les formulaires par exemple...). Il suffit simplement à l'utilisateur de recharger la couche depuis le menu pour que tout soit à jour : pas besoin de redémmarrer QGIS, réinstaller une extension, aller chercher un style enregistré quelque part ou encore télécharger et écraser un projet QGIS !
