@@ -8,7 +8,7 @@ categories:
     - article
 comments: true
 date: 2024-12-24
-description: "Une extension QGIS peut être (trop) méconnue : Layers Menu From Project permet de simplifier la vie des administrateurs ET des utilisateurs, retour d'expérience à deux voix. "
+description: "Une extension QGIS peut-être (trop) méconnue : Layers Menu From Project permet de simplifier la vie des administrateurs ET des utilisateurs, retour d'expérience à deux voix. "
 
 icon: fontawesome/solid/wand-magic-sparkles
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/retex_layers_menu_from_project/be-qool_myriade.png
@@ -74,7 +74,7 @@ Pour l'utilisateur, un menu trop long peut être inconfortable. Pour remédier a
 
 ### En action
 
-Les actions des couches sont également conservées. On peut ainsi par exemple permettre, au clic sur des entités, d'ouvrir une page web, de charger des dalles raster ou des photos (moyennant quelques lignes de python)
+Les actions des couches sont également conservées. On peut par exemple permettre, au clic sur des entités, d'ouvrir une page web, de charger des dalles raster ou des photos (moyennant quelques lignes de python)
 
 !!! quote "La conclusion d'Émilie"
     En interne, on adore la magie.
@@ -95,7 +95,7 @@ Du coup, la liste des couches configurées depuis la base de données dans l'exp
 
 ![Le plugin LMFP rend les utilisateurs finaux heureux - Testé en laboratoire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/retex_layers_menu_from_project/lmfp_utilisateur_qgis_malheureux_heureux.webp){: .img-center loading=lazy }
 
-### Du coté administrateur
+### Du côté administrateur
 
 La liste des couches configurée depuis la base de données dans l'explorateur : ça ne fonctionne pas non plus ! Il faudrait nommer les schémas, tables et vues et que tout soit rangé en pensant à l'utilisateur ... ou utiliser un schéma dédié avec toutes les vues renommées ...
 Avec LMFP : pas de sujet ! **Peu importe le modèle de données, c'est le nommage et la configuration dans le projet QGIS utilisé qui comptent**.
@@ -103,13 +103,13 @@ Avec LMFP : pas de sujet ! **Peu importe le modèle de données, c'est le nommag
 !!! tip "Autre avantage"
     Étant donné qu'il est possible aussi de mettre des flux, on s'épargne des actions de mise à jour et on remercie les producteurs de gérer leurs mises à jour tous seuls !
 
-Comme dit précédemment : la principale contrainte est alors liée au maintient du projet QGIS en entrée du plugin et à l'accès des utilisateurs à ce projet. Chez nous, il est enregistré en base de donnée. Une authentification avec un identifiant / mot de passe est enregistrée à la première connexion de l'utilisateur, qui lui donne accès au projet via le menu et aux différentes données en base (en lecture ou en écriture).
+Comme dit précédemment : la principale contrainte est alors liée au maintien du projet QGIS en entrée du plugin et à l'accès des utilisateurs à ce projet. Chez nous, il est enregistré en base de données. Une authentification avec un identifiant / mot de passe est enregistrée à la première connexion de l'utilisateur, qui lui donne accès au projet via le menu et aux différentes données en base (en lecture ou en écriture).
 
 !!! tip "Encore plus de paillettes"
     En plus des groupes, sous-groupes et agencement de différents projets, il est possible de créer des sections avec des titres et des séparateurs. Rendez-vous sur la documentation du plugin pour rendre tout ça encore plus beau ! [C'est par ici](https://aeag.github.io/MenuFromProject-Qgis-Plugin/usage/fr_use.html#)
 
 Pour finir, la **cerise sur le gateau : la mise à jour d'un outil sans réinstallation ou téléchargement.**
-Notre outil est en constante évolution : champs, listes de valeurs, symbologie ... on change des trucs régulièrement (on corrige aussi des fautes de frappe dans les formulaires par exemple...). Il suffit simplement à l'utilisateur de recharger la couche depuis le menu pour que tout soit à jour : pas besoin de redémmarer QGIS, réinstaller une extension, aller chercher un style enregistré quelque part ou encore télécharger et écraser un projet QGIS !
+Notre outil est en constante évolution : champs, listes de valeurs, symbologie ... on change des trucs régulièrement (on corrige aussi des fautes de frappe dans les formulaires par exemple...). Il suffit simplement à l'utilisateur de recharger la couche depuis le menu pour que tout soit à jour : pas besoin de redémmarrer QGIS, réinstaller une extension, aller chercher un style enregistré quelque part ou encore télécharger et écraser un projet QGIS !
 
 ### L'évolution du plugin
 
@@ -132,8 +132,8 @@ Aujourd'hui, on a remarqué d'autres limites à cette extension (nul n'est parfa
 
 * Facile d'utilisation pour les utilisateurs et adaptable par groupes d'utilisateurs
 * Facile à configurer
-* Permet de rendre accessible des données issues de différentes sources (base de données, fichiers, flux, requêtes...)
-* Permet de gérer facilement les styles (symbologie, formulaires, actions)
+* Permets de rendre accessible des données issues de différentes sources (base de données, fichiers, flux, requêtes...)
+* Permets de gérer facilement les styles (symbologie, formulaires, actions)
 * Mises à jour des données et styles facilitées
 * Une communauté de fans grandissante qui va permettre de faire évoluer l'extension pour encore plus de magie !
 
