@@ -13,6 +13,7 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_
 license: beerware
 robots: index, follow
 tags:
+  - CI/CD
   - GitHub Pages
   - GitHub Actions
   - MapLibre
