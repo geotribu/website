@@ -1,6 +1,6 @@
 ---
 title: Suivre le Vendée Globe 2024 depuis un SIG
-subtitle: Vendée Globe et données SIG
+subtitle: Hissez la grand voile carto - Partie 1
 authors:
     - Florent FOUGÈRES
 categories:
@@ -18,7 +18,7 @@ tags:
     - Python
     - QGIS
     - Vendée Globe
-    - Voile
+    - voile
 ---
 
 # Suivre le Vendée Globe 2024 depuis un SIG
