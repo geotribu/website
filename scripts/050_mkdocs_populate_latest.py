@@ -12,6 +12,7 @@ from typing import Literal
 
 # 3rd party
 import yaml
+from babel.dates import format_date
 from mkdocs.structure.pages import Page
 from mkdocs.utils import yaml_load
 from mkdocs.utils.meta import get_data
@@ -83,15 +84,26 @@ def get_latest_content(
 
         page_meta = get_data(source)[1]
 
+        date_txt_long = format_date(
+            date=page_meta.get("date"), format="long", locale="fr_FR"
+        )
+
         page_rel = str(content.relative_to("content/"))[:-3]
 
         if page_meta.get("image") is None or page_meta.get("image") == "":
             social_card_url = f"{social_card_image_base}{page_rel}.png"
             output_contents_list.append(
-                get_data(source)[1] | {"url_rel": page_rel} | {"image": social_card_url}
+                get_data(source)[1]
+                | {"url_rel": page_rel}
+                | {"image": social_card_url}
+                | {"date_txt_long": date_txt_long}
             )
         else:
-            output_contents_list.append(get_data(source)[1] | {"url_rel": page_rel})
+            output_contents_list.append(
+                get_data(source)[1]
+                | {"url_rel": page_rel}
+                | {"date_txt_long": date_txt_long}
+            )
 
     return output_contents_list
 
