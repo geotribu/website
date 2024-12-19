@@ -247,8 +247,7 @@ Voici ce que ça donne :
 
 Ce travail semble long mais c'est surtout que j'ai tenu à le détailler car en réalité, l'exécution complète de toute la chaîne de valeur prend moins d'une minute :
 
-![Github workflow result](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/github_action_workflow_result.png "Résultat de l'exécution déclenchée manuellement : 40 secondes"){: loading=lazy }
-{: align=middle }
+![Github workflow result](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/ign_opendata_map/github_action_workflow_result.png "Résultat de l'exécution déclenchée manuellement : 40 secondes"){: .img-center loading=lazy }
 
 ----
 
