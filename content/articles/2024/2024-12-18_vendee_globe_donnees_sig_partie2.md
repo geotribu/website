@@ -115,21 +115,21 @@ Après un temps de chargement (le temps que QGIS télécharge le fichier dans le
 
 Cette carte est basée sur les données générées par la CI, ce n'est donc pas du temps réel, mais un aperçu du dernier pointage. Les données sont donc automatiquement mises à jour toutes les 4h, là encore, c'est la magie de la CI qui permet ça.
 
-D'un point de vue technique, elle se base sur [Maplibre](https://maplibre.org/), il s'agit d'une bibliothèque JavaScript open-source de cartographie web permettant de créer des cartes interactives personnalisées à partir de données géospatiales.
-
-!!! info "Transparence sur le développement"
+!!! info inline end "Transparence sur le développement"
     Le développement web n'étant pas mon domaine de prédilection, j'ai quelques connaissances de base acquise il y a quelques années lors de la formation au [master SIGAT](https://formations.univ-rennes2.fr/fr/formations/master-37/master-mention-geomatique-parcours-systeme-d-information-geographique-et-analyse-des-territoires-sigat-JEOC8L9A.html), je me suis aidé pour le développement de la partie JavaScript et CSS de l'intelligence artificielle comme indiqué dans le [readme](https://github.com/florentfgrs/Vendee-Globe-2024?tab=readme-ov-file#%EF%B8%8F-visualisateur-web).
 
-![Application web de visualisation des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/webapp.png){: .img-center loading=lazy }
+D'un point de vue technique, elle se base sur [Maplibre](https://maplibre.org/), il s'agit d'une bibliothèque JavaScript open-source de cartographie web permettant de créer des cartes interactives personnalisées à partir de données géospatiales.
 
 Par défaut aucune trace n'est affichée, il faut alors cliquer sur les concurrents de votre choix dans la barre de gauche (ils sont classés dans l'ordre de leur position en course), ou bien cliquer sur le bouton `Tout afficher`.
 
 Au survol d'une trace, un popup avec le temps apparait et des informations complémentaires en haut à gauche, tel que le cap et la vitesse.
 
-[:material-web: Accéder à la cartographie web du Vendée Globe 2024 :map:](https://florentfgrs.github.io/Vendee-Globe-2024/){: .md-button }
-{: align=middle }
+![Application web de visualisation des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/webapp.png){: .img-center loading=lazy }
 
 Cette application web est encore en phase de développement, j'aimerais encore l'améliorer. Par exemple, actuellement, dans la petite fenêtre qui s'affiche au survol, en haut à gauche, tous les attributs ne sont pas affichés. Comme énoncé plus haut, j'aimerais aussi ne plus lire les données en dur dans le dépôt GitHub, mais j'aimerais tout gérer dans le pipeline de déploiement de la GitHub Pages.
+
+[:material-web: Accéder à la cartographie web du Vendée Globe 2024 :map:](https://florentfgrs.github.io/Vendee-Globe-2024/){: .md-button }
+{: align=middle }
 
 À suivre donc !
 
