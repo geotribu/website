@@ -109,6 +109,13 @@ https://github.com/florentfgrs/Vendee-Globe-2024/releases/download/latest/latest
 
 Après un temps de chargement (le temps que QGIS télécharge le fichier dans le cache) les données vont apparaître.
 
+Ou plus simplement, télécharger et ouvrir le projet QGIS :
+
+[:octicons-download-24: Projet QGIS Vendée Globe 2024 :simple-qgis:](https://github.com/florentfgrs/Vendee-Globe-2024/raw/refs/heads/main/Vend%C3%A9e%20Globe%202024.qgz){: download .md-button .md-button--primary }
+{: align=middle }
+
+----
+
 ## Visualiseur cartographique web
 
 ![icône MapLibre](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/maplibre.png){: .img-thumbnail-left }
