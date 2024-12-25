@@ -38,7 +38,7 @@ J'ai découvert il y a déjà plusieurs années, l'outil "layers menu from proje
 
 ### Pourquoi c'est magique
 
-[Layers menu from project](https://aeag.github.io/MenuFromProject-Qgis-Plugin/index.html) répond aux questions récurrentes des utilisateurs : où est stockée la donnée (sur le serveur, dans une base de données, dans un flux WMS ?), qu'elle est la dernière version, comment dois-je la représenter ? Les données sont désormais accessibles en 2 clicks, depuis des menus intégrés directement à QGIS.
+[Layers menu from project](https://aeag.github.io/MenuFromProject-Qgis-Plugin/index.html) répond aux questions récurrentes des utilisateurs : où est stockée la donnée (sur le serveur, dans une base de données, dans un flux WMS ?), q'elle est la dernière version, comment dois-je la représenter ? Les données sont désormais accessibles en 2 clics, depuis des menus intégrés directement à QGIS.
 
 Grâce à LMFP, en deux coups de baguette magique, la donnée est affichée !
 
