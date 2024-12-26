@@ -6,7 +6,7 @@ social:
     - bluesky:
     - github: "https://github.com/florentfgrs"
     - gitlab: "https://gitlab.com/florent_fougeres"
-    - linkedin: "https://www.linkedin.com/in/florent-foug%C3%A8res-083597b8/"
+    - linkedin: "https://www.linkedin.com/in/florent-fougeres/"
     - mail: "florent.fougeres@gmail.com"
     - mastodon:
         - instance: "mapstodon.space"
