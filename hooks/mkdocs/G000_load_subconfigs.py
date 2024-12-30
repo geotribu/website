@@ -22,6 +22,7 @@ from mkdocs.utils.meta import get_data
 
 
 logger = logging.getLogger("mkdocs")
+log_prefix = f"[{__name__}] "
 
 # ###########################################################################
 # ########## Functions #############
@@ -68,10 +69,10 @@ def is_mkdocs_theme_material_insiders() -> Optional[bool]:
         bool: True if the theme is Insiders edition. False if community.
     """
     if material_version is not None and "insiders" in material_version:
-        logger.debug("Material theme edition INSIDERS")
+        logger.debug(log_prefix + "Material theme edition INSIDERS")
         return True
     else:
-        logger.debug("Material theme edition COMMUNITY")
+        logger.debug(log_prefix + "Material theme edition COMMUNITY")
         return False
 
 
@@ -109,16 +110,19 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
         and not is_mkdocs_theme_material_insiders()
     ):
         logger.warning(
-            f"Le fichier {config.get('config_file_path')} contient des paramètres ou "
+            log_prefix
+            + f"Le fichier {config.get('config_file_path')} contient des paramètres ou "
             "plugins uniquement disponibles dans la version Insiders (payante) du thème "
-            "Material. Or c'est la version community (gratuite) qui est installée : "
-            f"{material_version}. C'est donc la version communautaire (gratuite) qui "
-            "sera utilisée pour générer le site web."
+            "Material. Or c'est la version community (gratuite) qui est installée "
+            f"({material_version}). La génération va probablement échouer. Deux solutions :"
+            "A. Installer la version Insiders (requiert un jeton GitHub). "
+            "B. Utiliser la configuration basée sur la version communautaire (gratuite), "
+            "par exemple : 'mkdocs build -f mkdocs-free.yml'"
         )
         config["extra"]["website_flavor"] = "community"
 
     logger.info(
-        f"Génération du site {config.get('site_name')} "
+        log_prefix + f"Génération du site {config.get('site_name')} "
         f"en version {config.get('extra').get('website_flavor').upper()}"
     )
 
