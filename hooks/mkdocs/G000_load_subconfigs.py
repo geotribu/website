@@ -7,10 +7,11 @@
 # standard library
 import logging
 from pathlib import Path
-from typing import Literal
+from typing import Literal, Optional
 
 # 3rd party
 import mkdocs.plugins
+from material import __version__ as material_version
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.structure.pages import Page
 from mkdocs.utils.meta import get_data
@@ -60,6 +61,25 @@ def get_latest_content(
     return output_contents_list
 
 
+def is_mkdocs_theme_material_insiders() -> Optional[bool]:
+    """Check if the material theme is community or insiders edition.
+
+    Returns:
+        bool: True if the theme is Insiders edition. False if community.
+    """
+    if material_version is not None and "insiders" in material_version:
+        logger.debug("Material theme edition INSIDERS")
+        return True
+    else:
+        logger.debug("Material theme edition COMMUNITY")
+        return False
+
+
+# ###########################################################################
+# ########## Hooks #################
+# ##################################
+
+
 @mkdocs.plugins.event_priority(10)
 def on_config(config: MkDocsConfig) -> MkDocsConfig:
     """The config event is the first event called on build and
@@ -71,10 +91,6 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     Args:
         config (config_options.Config): global configuration object
 
-    Raises:
-        FileExistsError: if the template for the RSS feed is not found
-        PluginError: if the 'date_from_meta.default_time' format does not comply
-
     Returns:
         MkDocsConfig: global configuration object
     """
@@ -82,11 +98,28 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     if config.get("config_file_path") == "mkdocs.yml":
         config["extra"]["website_flavor"] = "insiders"
     elif config.get("config_file_path") == "mkdocs-free.yml":
-        config["extra"]["website_flavor"] = "free"
+        config["extra"]["website_flavor"] = "community"
     else:
         config["extra"]["website_flavor"] = "minimal"
 
-    logger.info(f"Version du site : {config.get('extra').get('website_flavor')}")
+    # check if insiders version is installed
+    if (
+        config["extra"]["website_flavor"] == "insiders"
+        and not is_mkdocs_theme_material_insiders()
+    ):
+        logger.warning(
+            f"Le fichier {config.get('config_file_path')} contient des paramètres ou "
+            "plugins uniquement disponibles dans la version Insiders (payante) du thème "
+            "Material. Or c'est la version community (gratuite) qui est installée : "
+            f"{material_version}. C'est donc la version communautaire (gratuite) qui "
+            "sera utilisée pour générer le site web."
+        )
+        config["extra"]["website_flavor"] = "community"
+
+    logger.info(
+        f"Génération du site {config.get('site_name')} "
+        f"en version {config.get('extra').get('website_flavor').upper()}"
+    )
 
     # latest contents
     latest_contents: dict = {"articles": [], "rdp": []}
