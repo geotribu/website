@@ -95,9 +95,10 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
         MkDocsConfig: global configuration object
     """
     # determine the website flavor
-    if config.get("config_file_path") == "mkdocs.yml":
+    config_filename = Path(config.get("config_file_path")).name
+    if config_filename == "mkdocs.yml":
         config["extra"]["website_flavor"] = "insiders"
-    elif config.get("config_file_path") == "mkdocs-free.yml":
+    elif config_filename == "mkdocs-free.yml":
         config["extra"]["website_flavor"] = "community"
     else:
         config["extra"]["website_flavor"] = "minimal"
