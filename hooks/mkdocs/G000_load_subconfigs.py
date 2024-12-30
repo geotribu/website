@@ -4,16 +4,15 @@
 # ########## Libraries #############
 # ##################################
 
-# standard lib
-import argparse
+# standard library
 import logging
 from pathlib import Path
 from typing import Literal
 
 # 3rd party
-import yaml
+import mkdocs.plugins
+from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.structure.pages import Page
-from mkdocs.utils import yaml_load
 from mkdocs.utils.meta import get_data
 
 # ###########################################################################
@@ -22,41 +21,6 @@ from mkdocs.utils.meta import get_data
 
 
 logger = logging.getLogger("mkdocs")
-
-
-# -- CLI --
-parser = argparse.ArgumentParser(
-    prog="MkDocsConfigMerger", description="Merge configuration files.", add_help=True
-)
-parser.add_argument(
-    "-c",
-    "--config-file",
-    dest="output_config_file",
-    type=Path,
-    help="Path to the configuration file to complete. Must exist.",
-    default="mkdocs.yml",
-)
-parser.add_argument(
-    "-i",
-    "--input-folder",
-    dest="input_config_folder",
-    type=Path,
-    help="Path to the folder where to load configurations files to merge. Must exist.",
-    default="./config",
-)
-
-args = parser.parse_args()
-
-output_config_file = args.output_config_file
-input_config_folder = args.input_config_folder
-
-# -- CHECKS --
-
-if not output_config_file.is_file():
-    raise FileNotFoundError(output_config_file)
-if not input_config_folder.is_dir():
-    raise FileNotFoundError(input_config_folder)
-
 
 # ###########################################################################
 # ########## Functions #############
@@ -96,29 +60,40 @@ def get_latest_content(
     return output_contents_list
 
 
-# charge la configuration
-with output_config_file.open(mode="r", encoding="UTF8") as in_yaml:
-    mkdocs_config = yaml_load(in_yaml)
+@mkdocs.plugins.event_priority(10)
+def on_config(config: MkDocsConfig) -> MkDocsConfig:
+    """The config event is the first event called on build and
+    is run immediately after the user configuration is loaded and validated.
+    Any alterations to the config should be made here.
 
-output_dict = {"latest": {"articles": [], "rdp": []}}
+    See: https://www.mkdocs.org/user-guide/plugins/#on_config
 
-# print(get_latest_content(content_type="articles"))
+    Args:
+        config (config_options.Config): global configuration object
 
-for k in output_dict.get("latest"):
-    output_dict["latest"][k] = get_latest_content(
-        content_type=k,
-        social_card_image_base=f"{mkdocs_config.get('site_url')}assets/images/social/",
-    )
+    Raises:
+        FileExistsError: if the template for the RSS feed is not found
+        PluginError: if the 'date_from_meta.default_time' format does not comply
 
-with input_config_folder.joinpath("extra_latest.yml").open(
-    "w", encoding="UTF-8"
-) as out_file:
-    yaml.safe_dump(
-        output_dict,
-        out_file,
-        allow_unicode=True,
-        default_flow_style=False,
-        encoding="UTF8",
-        # indent=4,
-        sort_keys=True,
-    )
+    Returns:
+        MkDocsConfig: global configuration object
+    """
+    # determine the website flavor
+    if config.get("config_file_path") == "mkdocs.yml":
+        config["extra"]["website_flavor"] = "insiders"
+    elif config.get("config_file_path") == "mkdocs-free.yml":
+        config["extra"]["website_flavor"] = "free"
+    else:
+        config["extra"]["website_flavor"] = "minimal"
+
+    logger.info(f"Version du site : {config.get('extra').get('website_flavor')}")
+
+    # latest contents
+    latest_contents: dict = {"articles": [], "rdp": []}
+    for k in latest_contents:
+        latest_contents[k] = get_latest_content(
+            content_type=k,
+            social_card_image_base=f"{config.get('site_url')}assets/images/social/",
+        )
+
+    config["extra"]["latest"] = latest_contents
