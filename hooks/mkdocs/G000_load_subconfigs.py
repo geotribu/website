@@ -135,3 +135,6 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
         )
 
     config["extra"]["latest"] = latest_contents
+    logger.info(
+        log_prefix + "Contenus récents ajoutés à la configuration globale du site."
+    )
