@@ -14,6 +14,7 @@ import mkdocs.plugins
 from material import __version__ as material_version
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.structure.pages import Page
+from mkdocs.utils import yaml_load
 from mkdocs.utils.meta import get_data
 
 # ###########################################################################
@@ -138,3 +139,50 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     logger.info(
         log_prefix + "Contenus récents ajoutés à la configuration globale du site."
     )
+
+    # -- LOAD SUBCONFIGS --
+
+    # list files to append
+    configs_to_merge = Path("config").glob("*.yml")
+
+    # load final config
+    for cfg_file in configs_to_merge:
+        logger.info(log_prefix + f"Chargement de la sous-configuration : {cfg_file}")
+        dest_section = cfg_file.stem.split("_")[0]
+        # print(dest_section)
+        with cfg_file.open(mode="r") as part_config:
+            cfg_data = yaml_load(part_config)
+        out_section = config.get(dest_section)
+        print(
+            # out_section,
+            type(out_section),
+            isinstance(out_section, (dict, list)),
+        )
+        if isinstance(out_section, list):
+            out_section.append(cfg_data)
+        elif isinstance(out_section, dict):
+            out_section.update(cfg_data)
+        else:
+            print("toto")
+            logging.info(
+                log_prefix
+                + f"La section '{cfg_file.stem}' n'existe pas et va donc être ajoutée."
+            )
+            config[cfg_file.stem] = cfg_data
+        break
+
+    return config
+
+    # # write merged final config file
+    # with Path("mkdocs-generated-configuration.yml").open(
+    #     "w", encoding="UTF-8"
+    # ) as out_file:
+    #     yaml.dump(
+    #         config.__dict__,
+    #         out_file,
+    #         sort_keys=False,
+    #         default_flow_style=False,
+    #         encoding="UTF8",
+    #     )
+
+    return config
