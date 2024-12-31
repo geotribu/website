@@ -1,13 +1,14 @@
 {
     "recommendations": [
-      "bierner.markdown-mermaid",
-      "davidanson.vscode-markdownlint",
-      "eamodio.gitlens",
-      "github.vscode-pull-request-github",
-      "mdickin.markdown-shortcuts",
-      "ms-python.python",
-      "ms-ceintl.vscode-language-pack-fr",
-      "redhat.vscode-yaml",
-      "streetsidesoftware.code-spell-checker-french"
+        "bierner.markdown-emoji",
+        "bierner.markdown-mermaid",
+        "davidanson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github",
+        "mdickin.markdown-shortcuts",
+        "ms-python.python",
+        "ms-ceintl.vscode-language-pack-fr",
+        "redhat.vscode-yaml",
+        "streetsidesoftware.code-spell-checker-french"
     ]
-  }
+}
