@@ -20,7 +20,7 @@ tags:
 
 ## Intro
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png){: .img-thumbnail-left }
 
 [Commenter cette revue de presse :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
@@ -29,7 +29,7 @@ tags:
 
 ## Vie du site
 
-![logo geotribu orange](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png "logo geotribu orange"){: .off-glb style="border: none; box-shadow: none;" }
+![logo Geotribu rectange](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png){: .off-glb style="border: none; box-shadow: none;" }
 {: align=middle }
 
 ----

@@ -1,5 +1,6 @@
 ---
 title: Romain Lacroix
+subtitle: "🌐🌍🍇🍷🍺🧀 Maps, viticulture, beers, cheeses"
 categories:
     - contributeur
 social:
@@ -9,12 +10,12 @@ social:
     - linkedin:
     - mail: romain.lacroix@free.fr
     - mastodon:
-        - instance:
-        - username:
+        - instance: fosstodon.org
+        - username: rxlacroix
     - openstreetmap:
     - osgeo:
     - twitter: lacxrx
-    - website:
+    - website: https://rxlacroix.github.io
 ---
 
 # Romain Lacroix

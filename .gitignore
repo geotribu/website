@@ -233,3 +233,4 @@ linkchecker_report.html
 # fichiers liés aux vidéos Gource
 gource.ini
 avatars/
+mkdocs-generated-configuration.yml

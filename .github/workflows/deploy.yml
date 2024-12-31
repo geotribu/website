@@ -65,7 +65,6 @@ jobs:
       - name: Build static website
         run: |
           geotribu --help > content/toc_nav_ignored/snippets/code/geotribu_cli_help.txt
-          python scripts/050_mkdocs_populate_latest.py -c mkdocs.yml
           python scripts/100_mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
