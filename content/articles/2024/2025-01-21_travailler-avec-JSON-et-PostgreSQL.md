@@ -17,12 +17,12 @@ tags:
     - json
 ---
 
-# Travailler avec du json dans PostgreSQL
+# Travailler avec du JSON dans PostgreSQL
 
-Dans le cadre d'un projet personnel encadré de type "tu l'as fait pour les iris de Lille avec Sqlite, t'as vu que tu sais faire. Bon bah maintenant tu le fait pour toutes les communes de France dans PG", j'ai voulu stocker une bonne partie des données du recensement de l'Insee dans une base PostgreSQL avec des tables multimillésimes. Problème, même au sein d'un même jeu de données, les champs peuvent changer au cours des années et celà empêche de pouvoir dégager une structure de table fixe, ce qui est assez génant vous en conviendrez. La solution ? Passer par des données semi-structurées, soit stocker ces données en json dans le champ d'une table. Cet article se veut un condensé de cette expérience.
+Dans le cadre d'un projet personnel encadré de type "tu l'as fait pour les iris de Lille avec Sqlite, t'as vu que tu sais faire. Bon bah maintenant tu le fait pour toutes les communes de France dans PG", j'ai voulu stocker une bonne partie des données du recensement de l'Insee dans une base PostgreSQL avec des tables multimillésimes. Problème, même au sein d'un même jeu de données, les champs peuvent changer au cours des années et celà empêche de pouvoir dégager une structure de table fixe, ce qui est assez génant vous en conviendrez. La solution ? Passer par des données semi-structurées, soit stocker ces données en JSON dans le champ d'une table. Cet article se veut un condensé de cette expérience.
 
 !!! warning
- Ces travaux ont été réalisés avant la sortie de PostgreSQL 17 qui ajoute d'importantes fonctionnalités pour le json avec les [`JSON_TABLE`](https://doc.postgresql.fr/17/functions-json.html#FUNCTIONS-SQLJSON-TABLE), elles ne seront ici pas évoquées.
+    Ces travaux ont été réalisés avant la sortie de PostgreSQL 17 qui ajoute d'importantes fonctionnalités pour le JSON avec les [`JSON_TABLE`](https://doc.postgresql.fr/17/functions-json.html#FUNCTIONS-SQLJSON-TABLE), elles ne seront pas évoquées ici.
 
 Puisque nous allons parler de json et de données semi-structurées, je me sens dans l'obligation de commencer cet article par un avertissement.
 
@@ -30,7 +30,7 @@ Puisque nous allons parler de json et de données semi-structurées, je me sens 
 
 Cet article ne se veut surtout pas être une invitation à partir en mode yolo sur la gestion des données "c'est bon ya qu'a tout mettre en json" (comme un vulgaire dev qui mettrait tout dans Mongodb diraient les mauvaises langues).
 
-### Le json pour les débutant.es
+## Le JSON pour les débutant.es
 
 Pour celles et ceux qui ne connaisent pas le `json`, il s'agit d'un format textuel de représentation des données fonctionnant en partie sur un système de `clé : valeur` qu'on peut voir comme une sorte d'évolution du `xml`.
 
@@ -98,7 +98,7 @@ Ce qu'on appelle un objet, c'est tout ce qu'il se trouve entre les `{}` qui serv
 
 Exemple issu du site de [Mozilla](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/JSON) qui vous permettra d'approfondir. Vous pouvez aussi consulter l'article [wikipedia](https://fr.wikipedia.org/wiki/JavaScript_Object_Notation) ou encore [l'infâme site de la spécification](https://www.json.org/json-fr.html).
 
-### Les types json de PostgreSQL
+## Les types json de PostgreSQL
 
 PostgreSQL est capable de stocker les données/objets au format json dans des champs auxquels on attribuera un type dédié. Il y en a deux car sinon ça ne serait pas rigolo.
 
@@ -106,7 +106,7 @@ PostgreSQL est capable de stocker les données/objets au format json dans des ch
 
 - le type `jsonb`. Le type moderne. Il stocke les informations sous forme binaire et énormément de fonctions sont disponibles en plus de celles du type `json`.
 
-### Les index
+## Les index
 
 Il est possible d'indexer un champ de type `json` / `jsonb` sur ses clés **de premier niveau** et ça se fait avec des index de type `GIN`.
 
@@ -124,7 +124,7 @@ CREATE INDEX idx_tb_champjson ON tb USING gin (champ_json -> cle_ou_se_situent_l
 
 Pour les aventuriers et aventurières, il existe une extention de PostgreSQL `btree_gin` permettant de faire des index multi-champs mixant des champs classiques et json. Elle est disponible nativement à l'installation de PostgreSQL et ne vous demandera pas de devenir développeur.se C/C++ pour l'installer (coucou les fdw parquet ! Ca va par chez vous ?).
 
-### Création des tables
+## Création des tables
 
 Je vais éviter de vous spammer du DDL, mais vous pourrez retrouver le schéma complet de la base [ici](https://github.com/thomas-szczurek/base_donnees_insee/tree/main/sql/creation_tables)
 
@@ -171,7 +171,7 @@ INSERT INTO insee.bases (nom) VALUES
 ('rp_emploi')
 ```
 
-#### (Bonus) Partition de la table données
+### (Bonus) Partition de la table données
 
 Imaginons que nous travaillons sur l'ensemble des données du recensement (soit 6 fichiers sources), de 2015 à 2021 pour environ 35 000 communes. On va arriver sur du 1,5 millions d'enregistrements. Entendons nous bien, à l'échelle de Postgres ça ne reste pas grand chose. Mais, si comme moi vous voulez voir ce qu'on peut tirer des entrailles de Postres, ça permet de pouvoir commencer à justifier d'utiliser certaines fonctionnalités avancées. Une table partitionnée c'est quoi ?
 
@@ -210,11 +210,11 @@ END;
 
 On remarque quelques changements : la déclaration de la clé primaire composite dans une `CONSTRAINT`, le `PARTITION BY LIST` qu'on fait suivre par le champ de partitionnement, et la création des différentes partitions suivant les valeurs de ce champ.
 
-### Insertion de données et récupération
+## Insertion de données et récupération
 
 Pour passer des données textuelles / sql vers des données encodées en json dans le champ dédié qui va bien, PostgreSQL dispose de [*quelques* fonctions](https://docs.postgresql.fr/17/functions-json.html#FUNCTIONS-JSON-PROCESSING). Nous allons utiliser la fonction `jsonb_object()` qui permet de transformer un `array` sql sous forme `clef1, valeur1, clef2, valeur2 ....` en objet `jsonb` qui n'aura qu'un niveau d'imbrication. D'autres fonctions sont disponibles pour des objets plus complexes (comme `jsonb_build_object()`).
 
-#### Exemple simple
+### Exemple simple
 
 On va créer une chaine de texte qui contiendra le contenu de notre json dont les valeurs serons séparées par des virgules `clé1,valeur1, clé2, valeur2`. Cette chaine sera passée dans une fonction `string_to_array()` la transformant en `array` avec comme séparateur des `,` pour séparer les éléments de la chaine de texte vers des éléments de liste, caractère passé en second paramètre de la fonction. Cet `array` sera ensuite envoyé dans la fonction `jsonb_object()`.
 
@@ -256,7 +256,7 @@ Vous pouvez voir que j'utilise l'opérateur `?` (uniquement vable pour les champ
 
 Je précise, même si si vous êtes encore ici je suppose que vous savez déjà cela, mais la forme `(quelque_chose)::int4` est un raccourci de PostgreSQL pour faire un `cast` soit convertir une valeur dans un autre type. Avec `->>` la valeur nous est renvoyée sour forme de texte et nous la convertissons en entier.
 
-#### Avec du json imbriqué
+### Avec du json imbriqué
 
 Bon, il est bien gentil, mais là son json reste du json où tout est au premier niveau. Bah oui, pour mon besoin cela m'a suffit. Mais je ne vais pas fuir mes responsabilités et on va voir comment cela se passe avec du json plus complexe. Je repartirai de l'exemple de la partie précedente pour compléxifier après cet apparté.
 
@@ -287,10 +287,10 @@ SELECT
 FROM test.test
 ```
 
-Le `$` désigne le début du chemin json retourné. Nous faisons suivre ce premier symbole par un point pour passer à l'objet suivant puis par le nom de clé suivante et ainsi de suite juqu'à la clé recherchée, a laquelle nous collons un [1] pour la 2ème valeur de la liste (les valeurs commencent à 0).
-Pour plus di'nformations sur les `json_path`, vous pouvez consulter la [documentation](https://www.postgresql.org/docs/current/functions-json.html#FUNCTIONS-SQLJSON-PATH)
+Le `$` désigne le début du chemin json retourné. Nous faisons suivre ce premier symbole par un point pour passer à l'objet suivant puis par le nom de clé suivante et ainsi de suite juqu'à la clé recherchée, a laquelle nous collons un `[1]` pour la 2ème valeur de la liste (les valeurs commencent à 0).
+Pour plus d'informations sur les `json_path`, vous pouvez consulter la [documentation](https://www.postgresql.org/docs/current/functions-json.html#FUNCTIONS-SQLJSON-PATH)
 
-### Attaquons nous au recensement
+## Attaquons nous au recensement
 
 Bien, maintenant que nous avons essayé d'expliquer tant bien que mal les concepts avec des exemples simples car il faut bien commencer quelque part, essayons avec quelque chose d'un peu plus volumineux.
 
@@ -461,7 +461,7 @@ returning *;
 
 `-` est un opérateur qui permet de supprimer une clé d'un objet json. Pour notre UPDATE on enlève donc notre faute de frappe de l'ensemble de l'objet et on concatène tout le reste avec la construction d'un nouvel objet où on corrige le nom de la clé, et à laquelle on assigne la valeur de la clé en train d'être supprimée (elle est toujours utilisable au moment de l'UPDATE), sur les champs qui la contiennent à l'origine avec `?`.
 
-### Et maintenant ? Qu'est-ce qu'on fait de ça ?
+## Et maintenant ? Qu'est-ce qu'on fait de ça ?
 
 Jusqu'à maintenant, nous n'avons travaillé qu'avec le volet population pour son dernier millésime. Imaginons maintenant que nous répétions l'exercice pour les 6 volets et sur plusieurs millésimes et ce sachant qu'au cours du temps, certains champs peuvent apparaitre / disparaitre (changement dans les niveaux de diplômes observés par exemple). Il serait interessant de récupérer une table indiquant la première et la dernière année de présence de chacune des clés. Mettons que lors de ces travaux nous en avons profité pour mettre à jour une table "correspondance_clefs_champs" listant chacune des clés présente et son nom INSEE d'origine (tout du moins, celui que nous avions normalisé).
 
@@ -532,7 +532,7 @@ WITH
 SELECT * FROM final WHERE valeur IS NOT NULL;
 ```
 
-![vm_presence_cles_annees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/vm_donnees_olap.png)vm_donnees_olap.png){: .img-center loading=lazy }
+![vm_presence_cles_annees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/vm_donnees_olap.png){: .img-center loading=lazy }
 
 Attention, la création de cette vue matérialisée ou son refresh peut prendre un certain temps si vous avez stocké beaucoup de données (1 heure chez moi pour les 6 volets de 2015 à 2021).
 
