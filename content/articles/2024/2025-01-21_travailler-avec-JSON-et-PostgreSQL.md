@@ -207,6 +207,7 @@ CREATE TABLE insee.donnees_communes_fk_5 PARTITION OF insee.donnees_communes FOR
 CREATE TABLE insee.donnees_communes_fk_6 PARTITION OF insee.donnees_communes FOR VALUES IN (6);
 END;
 ```
+
 On remarque quelques changements : la déclaration de la clé primaire composite dans une `CONSTRAINT`, le `PARTITION BY LIST` qu'on fait suivre par le champ de partitionnement, et la création des différentes partitions suivant les valeurs de ce champ.
 
 ### Insertion de données et récupération
