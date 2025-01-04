@@ -25,9 +25,9 @@ tags:
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Les Journées QGIS fr 2024 ont été un véritable succès, rassemblant des passionnés et des professionnels du SIG autour de l'écosystème QGIS. Parmi les nombreuses activités et présentations, les micro-trottoirs réalisé par Julien et Florian ont permis de capturer l'essence de ces rencontres, offrant un aperçu unique des expériences et des anecdotes partagées par certains participants. 
+Les Journées QGIS fr 2024 ont été un véritable succès, rassemblant des passionnés et des professionnels du SIG autour de l'écosystème QGIS. Parmi les nombreuses activités et présentations, les micro-trottoirs réalisé par Julien et Florian ont permis de capturer l'essence de ces rencontres, offrant un aperçu unique des expériences et des anecdotes partagées par certains participants.
 
-Aujourd'hui, nous avons le plaisir de vous présenter la playlist de ces GeoInterviews, pour que vous puissiez revivre ces instants magiques à volonté : 
+Aujourd'hui, nous avons le plaisir de vous présenter la playlist de ces GeoInterviews, pour que vous puissiez revivre ces instants magiques à volonté :
 
 <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLm8_Gh1bXPzphVGId876Rb5OLwKiiNRon" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -53,7 +53,7 @@ S'il y a une chose à retenir c'est que l'organisation de l'événement représe
 
 ## Journées QGIS fr 2025
 
-📢 Les prochaines rencontres des utilisateurs francophones de QGIS auront lieu du 10 au 12 juin 2025 à Avignon. Cette année, l'événement se conclura par une journée des contributeurs dédiée à la traduction, la documentation et un code sprint. Co-organisé avec Avignon Université et l’UMR 7300 ESPACE, cet événement promet d'être passionnant. 
+📢 Les prochaines rencontres des utilisateurs francophones de QGIS auront lieu du 10 au 12 juin 2025 à Avignon. Cette année, l'événement se conclura par une journée des contributeurs dédiée à la traduction, la documentation et un code sprint. Co-organisé avec Avignon Université et l’UMR 7300 ESPACE, cet événement promet d'être passionnant.
 
 Pour celles et ceux qui le souhaitent, l'appel à participation est ouvert jusqu'au 19 janvier 2025, alors n'hésitez pas à soumettre vos projets dès maintenant !
 
