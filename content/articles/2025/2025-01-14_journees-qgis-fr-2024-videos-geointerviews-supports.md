@@ -19,7 +19,7 @@ tags:
     - QGIS
 ---
 
-# Journées QGIS fr 2024 : La playlist des GeoInterviews est en ligne !
+# Journées QGIS fr 2024 : la playlist des GeoInterviews est en ligne !
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
