@@ -28,7 +28,7 @@
                 {
                 "@type": "Person",
                 "name": "{{ a }}",
-                "url": "{{ config.site_url }}team/{{ author[0] | slugger }}/"
+                "url": "{{ config.site_url }}team/{{ author[loop.index0] | slugger }}/"
                 {% if a != author|last %}
                 {# Si l'auteur n'est pas le dernier de la liste, on ajoute une virgule #}
                   },
