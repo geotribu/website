@@ -21,7 +21,7 @@ tags:
 
 # Journées QGIS fr 2024 : La playlist des GeoInterviews est en ligne !
 
-:calendar: Date de publication initiale : 14 janvier 2025
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
