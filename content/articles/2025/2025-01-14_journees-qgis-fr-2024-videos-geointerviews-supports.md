@@ -25,7 +25,7 @@ tags:
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Les Journées QGIS fr 2024 ont été un véritable succès, rassemblant des passionnés et des professionnels du SIG autour de l'écosystème QGIS. Parmi les nombreuses activités et présentations, les micro-trottoirs réalisé par Julien et Florian ont permis de capturer l'essence de ces rencontres, offrant un aperçu unique des expériences et des anecdotes partagées par certains participants.
+Les Journées QGIS fr 2024 ont été un véritable succès, rassemblant des passionnés et des professionnels du SIG autour de l'écosystème QGIS. Parmi les nombreuses activités et présentations, les micro-trottoirs réalisés par Julien et Florian ont permis de capturer l'essence de ces rencontres, offrant un aperçu unique des expériences et des anecdotes partagées par certains participants.
 
 Aujourd'hui, nous avons le plaisir de vous présenter la playlist de ces GeoInterviews, pour que vous puissiez revivre ces instants magiques à volonté :
 
