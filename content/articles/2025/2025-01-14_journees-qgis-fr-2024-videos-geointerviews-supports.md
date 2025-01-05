@@ -53,7 +53,7 @@ S'il y a une chose à retenir c'est que l'organisation de l'événement représe
 
 ## Journées QGIS fr 2025
 
-📢 Les prochaines rencontres des utilisateurs francophones de QGIS auront lieu du 10 au 12 juin 2025 à Avignon. Cette année, l'événement se conclura par une journée des contributeurs dédiée à la traduction, la documentation et un code sprint. Co-organisé avec Avignon Université et l’UMR 7300 ESPACE, cet événement promet d'être passionnant.
+:loudspeaker: Les prochaines rencontres des utilisateurs francophones de QGIS auront lieu du 10 au 12 juin 2025 à Avignon. Cette année, l'événement se conclura par une journée des contributeurs dédiée à la traduction, la documentation et un code sprint. Co-organisé avec Avignon Université et l’UMR 7300 ESPACE, cet événement promet d'être passionnant.
 
 Pour celles et ceux qui le souhaitent, l'appel à participation est ouvert jusqu'au 19 janvier 2025, alors n'hésitez pas à soumettre vos projets dès maintenant !
 
