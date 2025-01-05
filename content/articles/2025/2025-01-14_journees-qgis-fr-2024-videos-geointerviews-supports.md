@@ -1,6 +1,6 @@
 ---
 title: Vidéos, présentations et interviews des journées QGIS FR 2024
-subtitle: QTribu
+subtitle: Nostalgie
 authors:
     - Florian BORET
     - Julien MOURA
@@ -9,6 +9,7 @@ categories:
 comments: true
 date: 2025-01-14
 description: La Geotribu était bien présente aux journées QGIS FR 2024. Julien a assuré l'animation de la journée de conférences et avec Florian, ils ont renouvelé les mini-interviews.
+icon: fontawesome/solid/tv
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/conf_qgis_2024_videos/journees_qgis_2024_transition.png
 license: beerware
 robots: index, follow
@@ -46,7 +47,7 @@ Aujourd'hui, nous avons le plaisir de vous présenter la playlist de ces GeoInte
 S'il y a une chose à retenir c'est que l'organisation de l'événement représente un gros travail et qu'il est fait en grande partie grâce aux bénévoles. Alors soutenez ce genre d'événement ! Pour cela, il y a globalement 2 options :
 
 [Acheter un goodie :fontawesome-solid-shirt:](https://conf.qgis.osgeo.fr/z55_qgis_shop.html#!/all){: .md-button }
-[Adhérer et participer à l'organisation :fontawesome-solid-hand-holding-heart:](https://www.osgeo.fr/comment/adherer/){: .md-button }
+[Envoyer un mail pour participer à l'organisation :fontawesome-solid-hand-holding-heart:](mailto:qgis-conf@osgeo.asso.fr){: .md-button }
 {: align=middle }
 
 ----
