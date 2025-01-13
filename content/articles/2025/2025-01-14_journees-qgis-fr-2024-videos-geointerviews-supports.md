@@ -44,10 +44,10 @@ Aujourd'hui, nous avons le plaisir de vous présenter la playlist de ces GeoInte
 
 <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLAl6XWer3JnPMoqSy-MEVCCj8dbt9gab_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-S'il y a une chose à retenir c'est que l'organisation de l'événement représente un gros travail et qu'il est fait en grande partie grâce aux bénévoles. Alors soutenez ce genre d'événement ! Pour cela, il y a globalement 2 options :
+S'il y a une chose à retenir c'est que l'[organisation de l'événement](https://gitlab.com/osgeo-fr/journees_qgis/-/wikis/home) représente un gros travail et qu'il est fait en grande partie grâce aux bénévoles. Alors soutenez ce genre d'événement ! Pour cela, il y a globalement 2 options :
 
 [Acheter un goodie :fontawesome-solid-shirt:](https://conf.qgis.osgeo.fr/z55_qgis_shop.html#!/all){: .md-button }
-[Envoyer un mail pour participer à l'organisation :fontawesome-solid-hand-holding-heart:](mailto:qgis-conf@osgeo.asso.fr){: .md-button }
+[Participer à l'organisation :fontawesome-solid-hand-holding-heart:](https://gitlab.com/osgeo-fr/journees_qgis/-/wikis/Comment%20participer%20aux%20réunions%20d'organisation%20){: .md-button }
 {: align=middle }
 
 ----
@@ -59,6 +59,7 @@ S'il y a une chose à retenir c'est que l'organisation de l'événement représe
 Pour celles et ceux qui le souhaitent, l'appel à participation est ouvert jusqu'au 19 janvier 2025, alors n'hésitez pas à soumettre vos projets dès maintenant !
 
 [:material-sign-direction: En savoir plus](https://conf.qgis.osgeo.fr){: .md-button .md-button--primary }
+[Contacter l'organisation :fontawesome-solid-hand-holding-heart:](mailto:qgis-conf@osgeo.asso.fr){: .md-button }
 {: align=middle }
 
 ![QGIS fr 2025 - Avignon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/conf_qgis_2024_videos/journees_qgis_2025.png){: .img-center loading=lazy }
