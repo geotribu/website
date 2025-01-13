@@ -79,16 +79,14 @@ Dans cet article, je vous propose donc deux façons de télécharger une version
 
 ----
 
-## Installer QGIS basé sur Qt6
-
-### Sur Windows
+## Installer QGIS basé sur Qt6 sur Windows
 
 Si vous travaillez sur le principal système d'exploitation des utilisateur/ices de QGIS, vous avez l'embarras du choix pour tester :
 
 - [une installation avec l'OSGeo4W](#aventure-osgeo4w) : relativement classique mais plus risquée pour votre environnement de travail
 - la [récupération d'une version autoporteuse génére avec vckpg](#aventure-vcpkg) : plus périlleuse mais plus isolée du reste de votre système. Personnellement, c'est celle que je préfère :cowboy:.
 
-#### Niveau aventurier dominical : le package dév de l'OSGeo4W {: #aventure-osgeo4w }
+### Niveau aventurier dominical : le package dév de l'OSGeo4W {: #aventure-osgeo4w }
 
 ![logo OSGeo4W](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/osgeo4w.webp){: .img-thumbnail-left }
 
@@ -121,7 +119,7 @@ Une fois QGIS démarré, aller dans le menu `À propos` pour juger sur pièces d
 
 ![QGIS - OSGeo4W Qt6 - Capture d'écran du menu À propos](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_about.webp){: .img-center loading=lazy }
 
-#### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg  {: #aventure-vcpkg }
+### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg  {: #aventure-vcpkg }
 
 ![logo vcpkg](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/vcpkg.webp){: .img-thumbnail-left }
 
@@ -157,57 +155,19 @@ Si tout se passe bien, on admire le [splash screen](../2021/2021-06-11_qgis_pers
 
 ----
 
-### Sur Linux
+## Sur Linux
 
 ![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-thumbnail-left }
 
 Comment vous dire... c'est moins fluide, c'est plus... Linux quoi !
-Donc attachez vos ceintures de lignes de commande, préparez vos merguez électroniques, ça va basher et faire chauffer vos CPU et barrettes de ~~sh~~RAM ! Téléguidé par [la bonne fée Cabieces](https://github.com/troopa81), je vous livre une recette pour Debian/Ubuntu. Je passe les détails car on n'est pas ici sur [le guide pour développeurs barbus](https://github.com/qgis/QGIS/blob/master/INSTALL.md).
 
-#### Prérequis
+Les packages liés à Qt n'ont pas encore tous été portés sur Qt6 ou ne sont pas encore présents dans les dépôts officiels. Il est donc nécessaire de compiler QGIS avec Qt6 soi-même en repartant parfois de oin dans l'arbre des dépendances. Si l'aventure vous motive, vous pouvez suivre [le guide de compilation de QGIS sur le wiki du projet](https://github.com/qgis/QGIS/blob/master/INSTALL.md). Notez que c'est nettement plus simple de le faire sur une distribution comme Fedora qui utilise des packages plus récents plutôt que sur une distribution comme Debian qui privilégie la stabilité.
 
-- suite de logiciels de build essentiels
-- Git
-- une bonne connexion réseau pour télécharger le code source et [les dépendances de compilation](https://github.com/qgis/QGIS/blob/master/INSTALL.md#33-install-build-dependencies)
-- 8 Go de RAM mais 12 c'est bien, 16 très bien et 32 c'est mieux
-- 6,5 Go d'espace disque. Avec un SSD, tu gagnes un bonus de vitesse.
-
-Globalement, ça doit se régler avec un :
-
-```sh title="Installation des dépendances de QGIS avec apt"
-sudo apt install cmake build-essential git libc++-dev libqscintilla2-qt6-dev libqca-qt6-dev libqt6serialport6-dev libqt6svg6-dev python3-pyqtbuild python3-pyqt6 python3-pyqt6.qsci pyqt6-dev-tools python3-pyqt6.qtsvg python3-pyqt6.qtmultimedia python3-pyqt6.sip python3-pyqt6.qtserialport python3-pyqt6.qtpositioning qmake6 qtkeychain-qt6-dev qt6-base-dev  qt6-positioning-dev qt6-5compat-dev qt6-3d-dev qt6-multimedia-dev qt6-tools-dev qt6-base-private-dev sip-tools
-```
-
-Plus délicat, il faut gérer la dépendance à [Qwt](https://qwt.sourceforge.io/index.html), une bibliothèque de widgets Qt pour les applications techniques qui n'est pas installable facilement via apt. On doit donc partir des sources :
-
-```sh title="Télécharger, compiler et installer Qwt"
-cd /tmp \
-    && wget -N -c https://sourceforge.net/projects/qwt/files/qwt/6.3.0/qwt-6.3.0.zip/download -O qwt.zip \
-    && unzip -o -q qwt.zip \
-    && cd qwt-6.3.0/ \
-    && qmake6 qwt.pro \
-    && make \
-    && mkdir -p ~/QGIS/dependencies/install/lib \
-    && mkdir -p ~/QGIS/dependencies/install/include/qwt \
-    && cp -Rf lib/* ~/QGIS/dependencies/install/lib \
-    && cp -Rf src/* ~/QGIS/dependencies/install/include/qwt
-```
-
-#### Lancer le jeu de construction
-
-Sur un malentendu, la suite de commandes pourrait bien marcher du premier coup :
-
-```sh title="Builder QGIS avec Qt6 à partir d'une branche"
-mkdir -p ~/Git/
-cd ~/Git
-git clone https://github.com/qgis/QGIS.git -b release-3_40 --single-branch --depth 1
-cd QGIS
-cmake ./ -GNinja -DSUPPRESS_QT_WARNINGS=ON  -DBUILD_WITH_QT6=ON -DCMAKE_PREFIX_PATH="$DEPENDS_DIR/qwt/install" -DCMAKE_INSTALL_PREFIX=/usr/local/bin/qgis-build/ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DWERROR=ON -DWITH_PDAL=OFF -DWITH_GRASS7=OFF -DWITH_GRASS8=OFF -DWITH_QTWEBKIT=FALSE
-```
+Attachez vos ceintures de lignes de commande, préparez vos merguez électroniques, ça va basher et faire chauffer vos CPU et barrettes de ~~sh~~RAM !
 
 ----
 
-### Sur MacOS
+## Sur MacOS
 
 !!! warning ""
     Compte-tenu des coûts associés pour l'obtention d'un [MacBook Pro M4 Pro](https://www.apple.com/fr/shop/buy-mac/macbook-pro/14-pouces-m4-pro), forcément indispensable pour ce tutoriel, cette section est réservée aux [abonnés premium de Geotribu](../../about/sponsoring.md). :face_with_hand_over_mouth:
