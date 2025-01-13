@@ -59,7 +59,7 @@ S'il y a une chose à retenir c'est que l'[organisation de l'événement](https:
 Pour celles et ceux qui le souhaitent, l'appel à participation est ouvert jusqu'au 19 janvier 2025, alors n'hésitez pas à soumettre vos projets dès maintenant !
 
 [:material-sign-direction: En savoir plus](https://conf.qgis.osgeo.fr){: .md-button .md-button--primary }
-[Contacter l'organisation :fontawesome-solid-hand-holding-heart:](mailto:qgis-conf@osgeo.asso.fr){: .md-button }
+[Contacter l'organisation :material-email-fast:](mailto:qgis-conf@osgeo.asso.fr){: .md-button }
 {: align=middle }
 
 ![QGIS fr 2025 - Avignon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/conf_qgis_2024_videos/journees_qgis_2025.png){: .img-center loading=lazy }
