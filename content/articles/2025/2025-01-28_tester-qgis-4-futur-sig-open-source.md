@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2024-11-09
+date: 2025-01-28
 description: Essayez QGIS 4 en avant-première ! Comme tout logiciel, open source ou propriétaire, QGIS repose sur d'autres logiciels ou bibliothèques. Des dépendances dont la principale est Qt.
 icon: material/crystal-ball
 image:
