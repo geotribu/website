@@ -28,7 +28,7 @@ Dans le cadre d'un projet personnel encadré de type "tu l'as fait pour les iris
 
 Puisque nous allons parler de json et de données semi-structurées, je me sens dans l'obligation de commencer cet article par un avertissement.
 
-**Le modèle relationnel c'est bon, mangez en, et les contraintes d'intégrités ont été inventées pour de bonnes raisons.**
+**Le modèle relationnel, c'est bon, mangez-en, et les contraintes d'intégrités ont été inventées pour de bonnes raisons.**
 
 Cet article ne se veut surtout pas être une invitation à partir en mode yolo sur la gestion des données "c'est bon ya qu'a tout mettre en json" (comme un vulgaire dev qui mettrait tout dans Mongodb diraient les mauvaises langues).
 
