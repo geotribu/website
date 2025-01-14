@@ -214,7 +214,7 @@ On remarque quelques changements : la déclaration de la clé primaire composite
 
 ## Insertion de données et récupération
 
-Pour passer des données textuelles / sql vers des données encodées en json dans le champ dédié qui va bien, PostgreSQL dispose de [*quelques* fonctions](https://docs.postgresql.fr/17/functions-json.html#FUNCTIONS-JSON-PROCESSING). Nous allons utiliser la fonction `jsonb_object()` qui permet de transformer un `array` sql sous forme `clef1, valeur1, clef2, valeur2 ....` en objet `jsonb` qui n'aura qu'un niveau d'imbrication. D'autres fonctions sont disponibles pour des objets plus complexes (comme `jsonb_build_object()`).
+Pour passer des données textuelles / SQL vers des données encodées en JSON dans le champ dédié qui va bien, PostgreSQL dispose de [*quelques* fonctions](https://docs.postgresql.fr/17/functions-json.html#FUNCTIONS-JSON-PROCESSING). Nous allons utiliser la fonction `jsonb_object()` qui permet de transformer un `array` sql sous forme `clef1, valeur1, clef2, valeur2 ....` en objet `jsonb` qui n'aura qu'un niveau d'imbrication. D'autres fonctions sont disponibles pour des objets plus complexes (comme `jsonb_build_object()`).
 
 ### Exemple simple
 
