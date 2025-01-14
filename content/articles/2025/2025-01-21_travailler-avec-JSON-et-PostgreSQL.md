@@ -274,7 +274,7 @@ INSERT INTO test.test (donnees) VALUES
  )
 ```
 
-Cette insertion pourrait tout aussi bien s'écrire avec un cast d'une chaine de texte vers du jsonb, attention, la syntaxe json doit être ici respectée :
+Cette insertion pourrait tout aussi bien s'écrire avec un cast d'une chaine de texte vers du jsonb. Attention, la syntaxe json doit être ici respectée :
 
 ```sql
 INSERT INTO test.test (donnees) VALUES
