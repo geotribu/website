@@ -289,7 +289,7 @@ SELECT
 FROM test.test
 ```
 
-Le `$` désigne le début du chemin json retourné. Nous faisons suivre ce premier symbole par un point pour passer à l'objet suivant puis par le nom de clé suivante et ainsi de suite juqu'à la clé recherchée, a laquelle nous collons un `[1]` pour la 2ème valeur de la liste (les valeurs commencent à 0).
+Le `$` désigne le début du chemin json retourné. Nous faisons suivre ce premier symbole par un point pour passer à l'objet suivant. Puis, par le nom de clé suivant et ainsi de suite jusqu'à la clé recherchée, à laquelle nous collons un `[1]` pour la 2ᵉ valeur de la liste (les valeurs commencent à 0).
 Pour plus d'informations sur les `json_path`, vous pouvez consulter la [documentation](https://www.postgresql.org/docs/current/functions-json.html#FUNCTIONS-SQLJSON-PATH)
 
 ## Attaquons nous au recensement
