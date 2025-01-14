@@ -116,7 +116,7 @@ Il est possible d'indexer un champ de type `json` / `jsonb` sur ses clés **de p
 CREATE INDEX idx_tb_champjson ON tb USING gin (champ_json);
 ```
 
-Pour indexer des valeurs plus "profondes", il faudra passer par des indexs fonctionnels (index sur des fonctions)
+Pour indexer des valeurs plus "profondes", il faudra passer par des indexs fonctionnels, index sur des fonctions :
 
 ```sql
 CREATE INDEX idx_tb_champjson ON tb USING gin (champ_json -> cle_ou_se_situent_les_valeur_a_indexer);
