@@ -539,7 +539,7 @@ SELECT * FROM final WHERE valeur IS NOT NULL;
 Attention, la création de cette vue matérialisée ou son refresh peut prendre un certain temps si vous avez stocké beaucoup de données (1 heure chez moi pour les 6 volets de 2015 à 2021).
 
 Enfin, histoire de vivre avec son temps et non comme un viel ours des cavernes ou comme un data machin de collectivité territoriale (j'y bosse, j'ai le droit), on va convertir cette vue matérialisée en fichier [parquet](https://parquet.apache.org/).
-Et pour ça on va utiliser gdal/ogr qui est décidemment incroyable.
+Et, pour ça, on va utiliser gdal/ogr qui est décidément incroyable.
 
 ```sh
 ogr2ogr -of parquet donnees_insee.parquet PG:"dbname='insee' shcema='insee' tables='donnees_communes_olap' user='nom_utilisateur' password='votre_mot_de_passe'"
