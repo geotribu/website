@@ -46,7 +46,7 @@ Pour celles et ceux qui ne connaisent pas le `json`, il s'agit d'un format textu
 {"nb_champignons": 42, "nb_tomates": 31, "prenom": "roger"}
 ```
 
-Les valeurs peuvent prendre deux formes. Soit une valeur unique comme dans l'exemple ci-dessus, soit un `array` (une liste) qu'on place entre `[]`, les deux pouvant êtres combinés au sein d'un seul objet json.
+Les valeurs peuvent prendre deux formes. Soit une valeur unique comme dans l'exemple ci-dessus, soit un `array`, une liste, qu'on place entre `[]`, les deux pouvant êtres combinés au sein d'un seul objet json.
 
 ```json
 {"prenoms": ["elodie", "roger", "fatima"], "nb_champgnons": 42}
