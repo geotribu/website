@@ -161,7 +161,7 @@ Si tout se passe bien, on admire le [splash screen](../2021/2021-06-11_qgis_pers
 
 Comment vous dire... c'est moins fluide, c'est plus... Linux quoi !
 
-Les packages liés à Qt n'ont pas encore tous été portés sur Qt6 ou ne sont pas encore présents dans les dépôts officiels. Il est donc nécessaire de compiler QGIS avec Qt6 soi-même en repartant parfois de oin dans l'arbre des dépendances. Si l'aventure vous motive, vous pouvez suivre [le guide de compilation de QGIS sur le wiki du projet](https://github.com/qgis/QGIS/blob/master/INSTALL.md). Notez que c'est nettement plus simple de le faire sur une distribution comme Fedora qui utilise des packages plus récents plutôt que sur une distribution comme Debian qui privilégie la stabilité.
+Les packages liés à Qt n'ont pas encore tous été portés sur Qt6 ou ne sont pas encore présents dans les dépôts officiels. Il est donc nécessaire de compiler QGIS avec Qt6 soi-même en repartant parfois de loin dans l'arbre des dépendances. Si l'aventure vous motive, vous pouvez suivre [le guide de compilation de QGIS sur le wiki du projet](https://github.com/qgis/QGIS/blob/master/INSTALL.md). Notez que c'est nettement plus simple de le faire sur une distribution comme Fedora qui utilise des packages plus récents plutôt que sur une distribution comme Debian qui privilégie la stabilité.
 
 Attachez vos ceintures de lignes de commande, préparez vos merguez électroniques, ça va basher et faire chauffer vos CPU et barrettes de ~~sh~~RAM !
 
