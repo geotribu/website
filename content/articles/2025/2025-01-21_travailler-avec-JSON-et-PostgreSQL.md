@@ -14,7 +14,7 @@ license: default
 robots: index, follow
 tags:
     - PostgreSQL
-    - json
+    - JSON
 ---
 
 # Travailler avec du JSON dans PostgreSQL
