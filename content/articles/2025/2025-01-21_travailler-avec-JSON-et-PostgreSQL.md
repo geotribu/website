@@ -461,7 +461,7 @@ WHERE champ ? 'nme'
 returning *;
 ```
 
-`-` est un opérateur qui permet de supprimer une clé d'un objet json. Pour notre UPDATE on enlève donc notre faute de frappe de l'ensemble de l'objet et on concatène tout le reste avec la construction d'un nouvel objet où on corrige le nom de la clé, et à laquelle on assigne la valeur de la clé en train d'être supprimée (elle est toujours utilisable au moment de l'UPDATE), sur les champs qui la contiennent à l'origine avec `?`.
+`-` est un opérateur qui permet de supprimer une clé d'un objet json. Pour notre UPDATE on enlève donc notre faute de frappe de l'ensemble de l'objet. De plus, on concatène tout le reste avec la construction d'un nouvel objet où l'on corrige le nom de la clé. On assigne également la valeur de la clé en train d'être supprimée, elle est toujours utilisable au moment de l'UPDATE, sur les champs qui la contiennent à l'origine avec `?`.
 
 ## Et maintenant ? Qu'est-ce qu'on fait de ça ?
 
