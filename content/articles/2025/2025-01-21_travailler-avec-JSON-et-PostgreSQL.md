@@ -294,11 +294,11 @@ Pour plus d'informations sur les `json_path`, vous pouvez consulter la [document
 
 ## Attaquons nous au recensement
 
-Bien, maintenant que nous avons essayé d'expliquer tant bien que mal les concepts avec des exemples simples car il faut bien commencer quelque part, essayons avec quelque chose d'un peu plus volumineux.
+Bien, maintenant que nous avons essayé d'expliquer tant bien que mal les concepts avec des exemples simples, car il faut bien commencer quelque part, essayons avec quelque chose d'un peu plus volumineux.
 
-Récupérons le dernier millésime du volet population du recensement communal [au format csv sur le site de l'INSEE](https://www.insee.fr/fr/information/8183122) (vous voulez les bases des principaux indicateurs). Pour l'exemple, on utilisera le fichier "Evolution et structure de la population". Il faut tout d'abord nettoyer les noms de champs car l'INSEE indique le millésime systématiquement dans ses noms de champs, ce qui fait que ces derniers changent tous les ans pour un même indicateur.
+Récupérons le dernier millésime du volet population du recensement communal [au format csv sur le site de l'INSEE](https://www.insee.fr/fr/information/8183122) (vous voulez les bases des principaux indicateurs). Pour l'exemple, on utilisera le fichier "Evolution et structure de la population". Il faut tout d'abord nettoyer les noms de champ. En effet, l'INSEE indique le millésime systématiquement dans ses noms de champ, ce qui fait que ces derniers changent tous les ans pour un même indicateur.
 
-Les noms de champs commencent tous par P ou C, ceci indique *exploitation principale* (réponses brutes aux questions du recensement) ou *exploitation complémentaire* (croisement de réponses pour établir un indicateur). Les champs provenant de l'exploitation principale et ceux issus de la complémentaire ne doivent pas êtres croisés entre eux. Cette information est évidemmment a conserver mais par choix personnel je préfère la mettre à la fin plutôt qu'au début du nom.
+Les noms de champ commencent tous par P ou C, ceci indique *exploitation principale* (réponses brutes aux questions du recensement) ou *exploitation complémentaire* (croisement de réponses pour établir un indicateur). Les champs provenant de l'exploitation principale et ceux issus de la complémentaire ne doivent pas être croisés entre eux. Cette information est évidemment à conserver, mais par choix personnel, je préfère la mettre à la fin plutôt qu'au début du nom.
 
 Vous trouverez [ici](https://github.com/thomas-szczurek/base_donnees_insee/blob/main/sql/import/correction_champs_insee.xlsx) un tableur dont le rôle est de s'occuper de tout ça.
 
