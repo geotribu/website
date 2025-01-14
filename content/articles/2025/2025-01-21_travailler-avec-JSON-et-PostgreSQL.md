@@ -122,7 +122,7 @@ Pour indexer des valeurs plus "profondes", il faudra passer par des indexs fonct
 CREATE INDEX idx_tb_champjson ON tb USING gin (champ_json -> cle_ou_se_situent_les_valeur_a_indexer);
 ```
 
-(on va expliquer ce `->` par la suite)
+On expliquera ce `->` par la suite.
 
 Pour les aventuriers et aventurières, il existe une extention de PostgreSQL `btree_gin` permettant de faire des index multi-champs mixant des champs classiques et json. Elle est disponible nativement à l'installation de PostgreSQL et ne vous demandera pas de devenir développeur.se C/C++ pour l'installer (coucou les fdw parquet ! Ca va par chez vous ?).
 
