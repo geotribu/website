@@ -465,7 +465,7 @@ returning *;
 
 ## Et maintenant ? Qu'est-ce qu'on fait de ça ?
 
-Jusqu'à maintenant, nous n'avons travaillé qu'avec le volet population pour son dernier millésime. Imaginons maintenant que nous répétions l'exercice pour les 6 volets et sur plusieurs millésimes et ce sachant qu'au cours du temps, certains champs peuvent apparaitre / disparaitre (changement dans les niveaux de diplômes observés par exemple). Il serait interessant de récupérer une table indiquant la première et la dernière année de présence de chacune des clés. Mettons que lors de ces travaux nous en avons profité pour mettre à jour une table "correspondance_clefs_champs" listant chacune des clés présente et son nom INSEE d'origine (tout du moins, celui que nous avions normalisé).
+Jusqu'à maintenant, nous n'avons travaillé qu'avec le volet population pour son dernier millésime. Imaginons maintenant que nous répétions l'exercice pour les 6 volets et sur plusieurs millésimes, et ce, en sachant qu'au cours du temps, certains champs peuvent apparaitre ou disparaitre ; changement dans les niveaux de diplômes observés par exemple. Il serait intéressant de récupérer une table indiquant la première et la dernière année de présence de chaque clé. Mettons que lors de ces travaux, nous en avons profité pour mettre à jour une table "correspondance_clefs_champs" listant chaque clé présentes et son nom INSEE d'origine (tout du moins, celui que nous avions normalisé).
 
 ```sql
 CREATE MATERIALIZED VIEW insee.presence_clefs_annees AS
