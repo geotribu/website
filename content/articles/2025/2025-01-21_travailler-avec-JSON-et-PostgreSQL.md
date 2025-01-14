@@ -40,7 +40,7 @@ Pour celles et ceux qui ne connaisent pas le `json`, il s'agit d'un format textu
 {"clé_1": "valeur", "clé_2": "valeur", "clé_3": "valeur"}
 ```
 
-(pas besoin de guillemets pour les nombres)
+pas besoin de guillemets pour les nombres
 
 ```json
 {"nb_champignons": 42, "nb_tomates": 31, "prenom": "roger"}
