@@ -218,7 +218,7 @@ Pour passer des données textuelles / SQL vers des données encodées en JSON da
 
 ### Exemple simple
 
-On va créer une chaine de texte qui contiendra le contenu de notre json dont les valeurs serons séparées par des virgules `clé1,valeur1, clé2, valeur2`. Cette chaine sera passée dans une fonction `string_to_array()` la transformant en `array` avec comme séparateur des `,` pour séparer les éléments de la chaine de texte vers des éléments de liste, caractère passé en second paramètre de la fonction. Cet `array` sera ensuite envoyé dans la fonction `jsonb_object()`.
+On va créer une chaine de texte qui contiendra le contenu de notre json dont les valeurs seront séparées par des virgules `clé1,valeur1, clé2, valeur2`. Cette chaine sera passée dans une fonction `string_to_array()` la transformant en `array` avec comme séparateur des `,` pour séparer les éléments de la chaine de texte vers des éléments de liste, caractère passé en second paramètre de la fonction. Cet `array` sera ensuite envoyé dans la fonction `jsonb_object()`.
 
 ```sql
 INSERT INTO insee.donnees_communes (code_commune, annee, fk_base, donnees) VALUES
