@@ -187,7 +187,7 @@ Imaginons que nous travaillons sur l'ensemble des données du recensement (soit 
 
 Vous pouvez aussi lire le contenu de la [documentation à ce sujet](https://doc.postgresql.fr/17/ddl-partitioning.html)
 
-A quoi ressemblerai la création de insee.donnees_communes si on la partitionnait selon les différentes sources de données ?
+À quoi ressemblerait la création de insee.donnees_communes si on la partitionnait selon les différentes sources de données ?
 
 ```sql
 BEGIN;
