@@ -281,7 +281,7 @@ INSERT INTO test.test (donnees) VALUES
 ('{"cle1": "valeur1", "cle2": ["foo", "bar", "baz"]}'::jsonb)
 ```
 
-Pour récupérer une valeur, on utilise la fonction `jsonb_path_query()` qui possède deux paramètres : `le nom du champ` contenant les données json, et le `json_path` vers la valeur a atteindre. Imaginons que nous voulions récupérer la deuxième valeur de la liste contenue dans "cle2" :
+Pour récupérer une valeur, on utilise la fonction `jsonb_path_query()` qui possède deux paramètres : `le nom du champ` contenant les données json, et le `json_path` vers la valeur à atteindre. Imaginons que nous voulions récupérer la deuxième valeur de la liste contenue dans "cle2" :
 
 ```sql
 SELECT
