@@ -110,7 +110,7 @@ PostgreSQL est capable de stocker les données/objets au format json dans des ch
 
 ## Les index
 
-Il est possible d'indexer un champ de type `json` / `jsonb` sur ses clés **de premier niveau** et ça se fait avec des index de type `GIN`.
+Il est possible d'indexer un champ de type `json` / `jsonb` sur ses clés **de premier niveau** et cela se fait avec des index de type `GIN` :
 
 ```sql
 CREATE INDEX idx_tb_champjson ON tb USING gin (champ_json);
