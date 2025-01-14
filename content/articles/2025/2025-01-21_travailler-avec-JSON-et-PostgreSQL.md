@@ -260,9 +260,9 @@ Je précise que même si vous êtes encore ici, je suppose que vous savez déjà
 
 ### Avec du json imbriqué
 
-Bon, il est bien gentil, mais là son json reste du json où tout est au premier niveau. Bah oui, pour mon besoin cela m'a suffit. Mais je ne vais pas fuir mes responsabilités et on va voir comment cela se passe avec du json plus complexe. Je repartirai de l'exemple de la partie précedente pour compléxifier après cet apparté.
+Bon, il est bien gentil, mais là son json reste du json où tout est au premier niveau. Bah oui, pour mon besoin, cela m'a suffi. Mais, je ne vais pas fuir mes responsabilités et on va voir comment cela se passe avec du json plus complexe. Je repartirai de l'exemple de la partie précédente pour complexifier après cet aparté.
 
-Pour injecter du json complexe dans un champs, deux solutions s'offrent à nous : imbriquer les fonctions dédiées, ou caster une chaine de texte. Imaginons un table "test", dans un schema "test" et dont un champ `jsonb` se nomme "donnees".
+Pour injecter du json complexe dans un champ, deux solutions s'offrent à nous : imbriquer les fonctions dédiées, ou caster une chaine de texte. Imaginons une table "test", dans un schema "test" et dont un champ `jsonb` se nomme "donnees".
 
 ```sql
 INSERT INTO test.test (donnees) VALUES
