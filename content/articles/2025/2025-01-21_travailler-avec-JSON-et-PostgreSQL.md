@@ -104,7 +104,7 @@ Exemple issu du site de [Mozilla](https://developer.mozilla.org/fr/docs/Learn/Ja
 
 PostgreSQL est capable de stocker les données/objets au format json dans des champs auxquels on attribuera un type dédié. Il y en a deux car sinon ça ne serait pas rigolo.
 
-- Le type `json` qui est là pour des raisons historiques et laisser fonctionner des bases qui auraient utilisé ce type dans le passé. Il stocke les informations sous forme textuelle ce qui peu optimisé pour un ordinateur. Il existe toutefois un intérêt à l'utiliser : il permet de retrouver l'information sur l'ordre des clés. Si il est important pour vous de savoir que `nom` est la clef 1 et `prenom` la clef 2, sans avoir à repasser par le nom de la clef, alors il vous faudra passer par le type `json`.
+- Le type `json` qui est là pour des raisons historiques et laisser fonctionner des bases qui auraient utilisé ce type dans le passé. Il stocke les informations sous forme textuelle, ce qui est peu optimisé pour un ordinateur. Il existe toutefois un intérêt à l'utiliser : il permet de retrouver l'information sur l'ordre des clés. S'il est important pour vous de savoir que `nom` est la clef 1 et `prenom` la clef 2, sans avoir à repasser par le nom de la clef, alors il vous faudra passer par le type `json`.
 
 - le type `jsonb`. Le type moderne. Il stocke les informations sous forme binaire et énormément de fonctions sont disponibles en plus de celles du type `json`.
 
