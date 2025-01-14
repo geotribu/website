@@ -130,7 +130,7 @@ Pour les aventuriers et aventurières, il existe une extention de PostgreSQL `bt
 
 Je vais éviter de vous spammer du DDL, mais vous pourrez retrouver le schéma complet de la base [ici](https://github.com/thomas-szczurek/base_donnees_insee/tree/main/sql/creation_tables)
 
-Partant d'un schéma nommé `insee`, on va créer deux tables. La première contiendra la liste des *bases* disponibles (les différentes volets du recensement) et une seconde permettant de stocker les données (pour rester concentré sur le json, on va s'épargner 95% du modèle sous jacent, on ne gérera donc par ici les codes communes etc...). En bonus pour celles et ceux voulant tester ce que Postgres a dans le ventre, je proposerai une variante juste en dessous :
+Partant d'un schéma nommé `insee`, on va créer deux tables. La première contiendra la liste des *bases* disponibles, les différents volets du recensement. Une seconde permettant de stocker les données ; pour rester concentré sur le json, on va s'épargner 95% du modèle sous-jacent. On ne gérera donc par ici les codes communes, etc. En bonus pour celles et ceux voulant tester ce que Postgres a dans le ventre, je proposerai une variante juste en dessous :
 
 ```sql
 BEGIN;
