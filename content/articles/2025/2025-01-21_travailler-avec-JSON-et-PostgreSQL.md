@@ -226,7 +226,7 @@ INSERT INTO insee.donnees_communes (code_commune, annee, fk_base, donnees) VALUE
   '99999',
   2024,
   1,
-  json_object(
+  jsonb_object(
     string_to_array('tomates,42,melons,12',',')
     )
 )
