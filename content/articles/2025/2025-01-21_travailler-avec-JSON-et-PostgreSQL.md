@@ -161,7 +161,7 @@ END;
 
 Les plus tatillons des DBA d'entre vous auront remarqué ce `CHECK`. "Mais pourquoi qu'il utilise pas varchar(5) ? Il fait vraiment n'importe quoi !" Tout simplement, car cette forme permet d'utiliser un type de texte aux nombres de caractère **réellement** arbitraire (le type `text`) contrairement à varchar(255), tout en pouvant en contrôler le nombre minimum et maximum avec le prédicat `CHECK` (contrairement à varchar qui ne contrôle que le maximum) comme expliqué sur le [wiki Postgres](https://wiki.postgresql.org/wiki/Don%27t_Do_This#Don.27t_use_varchar.28n.29_by_default).
 
-Et on insère quleques ligne dans notre table insee.bases
+Et on insère quelques lignes dans notre table insee.bases
 
 ```sql
 INSERT INTO insee.bases (nom) VALUES
