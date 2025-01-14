@@ -19,6 +19,8 @@ tags:
 
 # Travailler avec du JSON dans PostgreSQL
 
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
 Dans le cadre d'un projet personnel encadré de type "tu l'as fait pour les iris de Lille avec Sqlite, t'as vu que tu sais faire. Bon bah maintenant tu le fait pour toutes les communes de France dans PG", j'ai voulu stocker une bonne partie des données du recensement de l'Insee dans une base PostgreSQL avec des tables multimillésimes. Problème, même au sein d'un même jeu de données, les champs peuvent changer au cours des années et celà empêche de pouvoir dégager une structure de table fixe, ce qui est assez génant vous en conviendrez. La solution ? Passer par des données semi-structurées, soit stocker ces données en JSON dans le champ d'une table. Cet article se veut un condensé de cette expérience.
 
 !!! warning
