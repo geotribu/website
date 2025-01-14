@@ -175,7 +175,7 @@ INSERT INTO insee.bases (nom) VALUES
 
 ### (Bonus) Partition de la table données
 
-Imaginons que nous travaillons sur l'ensemble des données du recensement (soit 6 fichiers sources), de 2015 à 2021 pour environ 35 000 communes. On va arriver sur du 1,5 millions d'enregistrements. Entendons nous bien, à l'échelle de Postgres ça ne reste pas grand chose. Mais, si comme moi vous voulez voir ce qu'on peut tirer des entrailles de Postres, ça permet de pouvoir commencer à justifier d'utiliser certaines fonctionnalités avancées. Une table partitionnée c'est quoi ?
+Imaginons que nous travaillons sur l'ensemble des données du recensement (soit 6 fichiers sources), de 2015 à 2021 pour environ 35 000 communes. On va arriver sur du 1,5 million d'enregistrements. Entendons-nous bien, à l'échelle de Postgres ça ne reste pas grand-chose. Mais, si comme moi, vous voulez voir ce qu'on peut tirer des entrailles de Postres, ça permet de pouvoir commencer à justifier d'utiliser certaines fonctionnalités avancées. Une table partitionnée, c'est quoi ?
 
 - C'est une table découpée en plusieurs morceaux où une table *parent* contrôlera les tables *enfants*.
 - Une table partitionée peut se découper selon la valeur d'un champ ou une période temporelle ("fait moi une partition tous les mois")
