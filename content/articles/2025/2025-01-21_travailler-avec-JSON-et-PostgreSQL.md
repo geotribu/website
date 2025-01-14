@@ -178,14 +178,14 @@ INSERT INTO insee.bases (nom) VALUES
 Imaginons que nous travaillons sur l'ensemble des données du recensement (soit 6 fichiers sources), de 2015 à 2021 pour environ 35 000 communes. On va arriver sur du 1,5 million d'enregistrements. Entendons-nous bien, à l'échelle de Postgres ça ne reste pas grand-chose. Mais, si comme moi, vous voulez voir ce qu'on peut tirer des entrailles de Postres, ça permet de pouvoir commencer à justifier d'utiliser certaines fonctionnalités avancées. Une table partitionnée, c'est quoi ?
 
 - C'est une table découpée en plusieurs morceaux où une table *parent* contrôlera les tables *enfants*.
-- Une table partitionée peut se découper selon la valeur d'un champ ou une période temporelle ("fait moi une partition tous les mois")
+- Une table partitionnée peut se découper selon la valeur d'un champ ou une période temporelle ("fais -moi une partition tous les mois")
 - On peut requêter la table parent ou les tables enfants.
-- Une table doit être partitionnée à sa création, une table déjà existante ne peut pas être convertie. De nouvelles partitions peuvent toutefois êtres créées à volonté.
-- Celà peut être interessant pour limiter la taille des scans séquentiels qui se feront sur des tables plus petites que la table *parent*, où pour se faciliter la gestion de tables volumineuses.
-- On peut attacher / détacher une partition (qui devient alors une table classique) avec les "mots" `ATTACH PARTITION` / `DETACH PARTITION` y comprit sur une base en production grace à l'option `CONCURENTLY`
-- Une clé primaire de table partitionnée **doit** être composite, c'est à dire que son unicité sera vérifiée par la composition de plusieurs champs, et contenir obligatoirement le champ de partitionnement.
+- Une table doit être partitionnée à sa création, une table déjà existante ne peut pas être convertie. De nouvelles partitions peuvent toutefois être créées à volonté.
+- Cela peut être intéressant pour limiter la taille des scans séquentiels qui se feront sur des tables plus petites que la table *parent*, où pour se faciliter la gestion de tables volumineuses.
+- On peut attacher / détacher une partition (qui devient alors une table classique) avec les "mots" `ATTACH PARTITION` / `DETACH PARTITION` y compris sur une base en production grâce à l'option `CONCURENTLY`
+- Une clé primaire de table partitionnée **doit** être composite, c'est-à-dire que son unicité sera vérifiée par la composition de plusieurs champs et contenir obligatoirement le champ de partitionnement.
 
-(vous aussi lire le contenu de la [documentation à se sujet](https://doc.postgresql.fr/17/ddl-partitioning.html))
+Vous pouvez aussi lire le contenu de la [documentation à ce sujet](https://doc.postgresql.fr/17/ddl-partitioning.html)
 
 A quoi ressemblerai la création de insee.donnees_communes si on la partitionnait selon les différentes sources de données ?
 
