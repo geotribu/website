@@ -96,13 +96,15 @@ Je suppose dans la suite que vous avez installé QGIS dans le répertoire `C:\OS
 
 Juste après que cet article soit publié, on découvrait [le projet create-qgis-venv](https://github.com/GispoCoding/qgis-venv-creator) de GispoCoding.
 
-Il se présente comme un outil en ligne de commande (CLI) multi-plateforme. Il est recommandé de l'installer avec [pipx](https://pipx.pypa.io/stable/#on-windows) qui gère la plupart des paramètres un peu sioux et qui est compatible avec Windows. C'est désormais l'outil recommandé dans la communauté Python pour gérer les outils en ligne de commande (CLI), c'est donc une bonne occasion de s'y mettre. Une fois pipx installé, paramétré et une nouvelle session PowerShell lancée, l'installation se passe comme un charme :
+Il se présente comme un outil en ligne de commande (CLI) multi-plateforme. Il est recommandé de l'installer avec [pipx](https://pipx.pypa.io/stable/#on-windows) qui gère la plupart des paramètres un peu sioux et qui est compatible avec Windows. C'est désormais l'outil recommandé dans la communauté Python pour gérer les outils en ligne de commande (CLI), c'est donc une bonne occasion de s'y mettre. Une fois pipx installé, paramétré (`ensurepath`...) et une nouvelle session PowerShell lancée, l'installation se passe comme un charme :
 
 ```powershell title="Installation de qgis-venv-creator avec pipx"
 pipx install qgis-venv-creator
 ```
 
 ![Installation de qgis-venv-creator avec pipx](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/pyqgis_environnement_dev_windows/powershell_pipx_qgis-venv-creator.webp){: .img-center loading=lazy }
+
+L'outil qgis-venv-creator est désormais accessible depuis n'importe quelle session PowerShell avec la commande suivante :
 
 ```powershell title="Commande de base de qgis-venv-creator"
 create-qgis-venv --venv-name ".venv"
