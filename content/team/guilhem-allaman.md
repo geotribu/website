@@ -1,18 +1,19 @@
 ---
 title: Guilhem Allaman
+subtitle: gounux
 categories:
     - contributeur
 social:
     - bluesky:
-    - github:
-    - gitlab:
-    - linkedin:
-    - mail:
+    - github: gounux
+    - gitlab: gounux
+    - linkedin: guilhemallaman
+    - mail: contact@guilhemallaman.net
     - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
+        - instance: mapstodon.space
+        - username: guilhem_allaman
+    - openstreetmap: gounux
+    - osgeo: guilhemallaman
     - twitter:
     - website:
 ---
