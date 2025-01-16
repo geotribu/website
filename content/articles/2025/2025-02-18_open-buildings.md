@@ -117,6 +117,8 @@ L’objectif est de fournir une méthode efficace pour obtenir des informations 
 
 Qu'on se le dise : les Open Buildings pallient un manque de services publics et de données disponibles dans les pays couverts par ce jeu de données, où le niveau de complétion des bâtiments OpenStreetMap n'est pas toujours haut, et tout le monde n'a pas la chance d'avoir [l'IGN](https://www.ign.fr/) et [sa BD TOPO](https://geoservices.ign.fr/bdtopo)...
 
+Même si ça commence à bouger ces derniers temps, citons notamment [le projet SIGFU en Côte d'Ivoire](https://sigfu.gouv.ci/accueil) : à mi-chemin entre SIG et Kung-Fu, il s'agit du _Système Intégré de Gestion du Foncier Urbain_, initié par le Ministère en charge de la Construction du Logement et de l’Urbanisme. Ou [le service d'adressage et de parcelles numériques et uniques de la Poste au Ghana](https://www.ghanapostgps.com/map/).
+
 Nous encourageons les organisations et les individus à utiliser ce jeu de données Open Buildings, pour des applications vertueuses et en faveur du développement des pays du Sud.
 
 ----
