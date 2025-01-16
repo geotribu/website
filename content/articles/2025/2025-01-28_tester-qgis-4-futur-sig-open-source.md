@@ -58,7 +58,7 @@ Vous avez remarqué le rond rouge au milieu ? Eh bien c'est le [cadriciel (_fram
 
 Actuellement, c'est la version 5 de Qt qui est utilisée dans QGIS 3. Il se trouve qu'elle est arrivée en fin de vie en... mai 2025 selon [la documentation officielle](https://doc.qt.io/qt-6/supported-platforms.html#supported-qt-versions).
 
-![Planning des versions de Qt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qt_versions_planning.webp){: .img-center loading=lazy }
+![Planning des versions de Qt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/qt_versions_planning.webp){: .img-center loading=lazy }
 
 La dernière fois que QGIS a changé de version majeure de Qt et celle de Python, QGIS est aussi passé à la version majeure supérieure. Ce qui nous donne l'équation savante suivante :
 
@@ -105,7 +105,7 @@ Lancer en mode administrateur puis suivre les étapes habituelles jusqu'à la fe
 1. Dérouler `Desktop`
 1. Cliquer sur `Skip` en regard de `qgis-qt6-dev-full` jusqu'à obtenir un numéro de version (probablement impair et supérieur d'un chiffre à la version courante mais peu importe)
 
-    ![OSGeo4W - Select package Qt6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/OSGeo4W_packages_Qt6.webp){: .img-center loading=lazy }
+    ![OSGeo4W - Select package Qt6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/OSGeo4W_packages_Qt6.webp){: .img-center loading=lazy }
 
 1. suivant, suivant
 1. cocher les licences (ERDAS, MrSID, Oracle, SZIP...). Notez qu'il est aussi possible de les imprimer de façon à les étudier en détail :face_with_hand_over_mouth:.
@@ -113,11 +113,11 @@ Lancer en mode administrateur puis suivre les étapes habituelles jusqu'à la fe
 
 Une fois l'installation terminée, cherchez et ouvrez QGIS depuis le menu démarrer de votre système à fenêtres :
 
-![QGIS dans le menu démarrer de Windows](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_menu_demarrer_Windows.webp){: .img-center loading=lazy }
+![QGIS dans le menu démarrer de Windows](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/QGIS_Qt6_OSGeo4W_menu_demarrer_Windows.webp){: .img-center loading=lazy }
 
 Une fois QGIS démarré, aller dans le menu `À propos` pour juger sur pièces de la fraîcheur des dépendances :
 
-![QGIS - OSGeo4W Qt6 - Capture d'écran du menu À propos](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_OSGeo4W_about.webp){: .img-center loading=lazy }
+![QGIS - OSGeo4W Qt6 - Capture d'écran du menu À propos](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/QGIS_Qt6_OSGeo4W_about.webp){: .img-center loading=lazy }
 
 ### Niveau aventurier/ère de l'Arche Perdue : l'autoporteur de vcpkg  {: #aventure-vcpkg }
 
@@ -134,20 +134,20 @@ Depuis les choses ont bien avancé et QGIS est compilé/packagé avec Qt6 à cha
 
 1. Cliquer sur la première ligne (cadre vert dans la capture ci-dessous) pour ouvrir les résultats de la dernière exécution. Notez qu'il est possible de filtrer sur une branche en particulier (menu déroulant détouré en bleu dans la capture ci-dessous). Par exemple, pour n'afficher que [les jobs Windows Qt6 pour QGIS 3.40 ayant réussi](https://github.com/qgis/QGIS/actions/workflows/windows-qt6.yml?query=is%3Asuccess+branch%3Arelease-3_40).
 
-    ![GitHub Actions - Jobs du workflow QGIS Windows Qt6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/OPENGIS-CH_Qt6_GitHub_Action_jobs_annotated.png){: .img-center loading=lazy }
+    ![GitHub Actions - Jobs du workflow QGIS Windows Qt6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/OPENGIS-CH_Qt6_GitHub_Action_jobs_annotated.png){: .img-center loading=lazy }
 
 1. Dans la page qui s'ouvre, cliquer sur `qgis-windows-qt6` dans la section `Artifacts` en bas (encadré vert dans la capture ci-dessous) :
 
-    ![GitHub Actions - Résumé d'un job du workflow QGIS Windows Qt6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/OPENGIS-CH_Qt6_GitHub_Action_artefact_annotated.png)
+    ![GitHub Actions - Résumé d'un job du workflow QGIS Windows Qt6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/OPENGIS-CH_Qt6_GitHub_Action_artefact_annotated.png)
 
 1. Une fois le téléchargement terminé, Dézipper jusqu'à obtenir un dossier `qgis-X.y.z-win64` où `X.y.z` correspond à la version que vous avez sélectionnée
 1. Aller dans le dossier `bin` et lancer le fichier `qgis.exe` (pensez à activer l'affichage des extensions de fichiers sur Windows, la vie est plus belle).
 
-    ![Lancer QGIS Qt6 OPENGIS.CH](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/OPENGIS-CH_binaire_QGIS.webp){: .img-center loading=lazy }
+    ![Lancer QGIS Qt6 OPENGIS.CH](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/OPENGIS-CH_binaire_QGIS.webp){: .img-center loading=lazy }
 
 Si tout se passe bien, on admire le [splash screen](../2021/2021-06-11_qgis_personnaliser_splash_screen.md "Personnaliser l'image au lancement de QGIS") personnalisé pour l'occasion :
 
-![QGIS - Splashscreen Qt6 by OPENGIS.ch](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/qgis_Qt6_OPENGIS-CH_splashscreen.webp){: .img-center loading=lazy }
+![QGIS - Splashscreen Qt6 by OPENGIS.ch](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/qgis_Qt6_OPENGIS-CH_splashscreen.webp){: .img-center loading=lazy }
 
 !!! note "Dans l'ombre de la DSI"
     Notez que cette version téléchargeable et autoporteuse est idéale pour les environnements où les droits d'installation sont limités.
@@ -192,7 +192,7 @@ Alors, qu'est-ce que ça change ?
 - il y a parfois des messages d'erreur et des crashs mais c'est bon pour le karma d'aventurier
 - sur Linux, le système d'affichage Wayland est désormais pleinement supporté
 
-![QGIS - ColorPicker CMJN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_CMJN.webp){: width=20% loading=lazy } ![QGIS - Plugin incompatible avec Qt 6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qgis_4_qt6/QGIS_Qt6_installation_plugins_LMFP.webp){: width=20% loading=lazy }
+![QGIS - ColorPicker CMJN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/QGIS_Qt6_CMJN.webp){: width=40% loading=lazy } ![QGIS - Plugin incompatible avec Qt 6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_4_qt6/QGIS_Qt6_installation_plugins_QuickMapServices.webp){: width=40% loading=lazy }
 
 ### Je maintiens un plugin, comment faire pour qu'il soit compatible ?
 
@@ -242,6 +242,8 @@ La documentation sur cette migration est inexistante ou très difficile à trouv
 ## Conclusion
 
 Derrière le titre _putaclic_, l'article est l'occasion de glisser quelques éléments de compréhension d'un projet logiciel : dépendances, dynamique communautaire, forge logicielle... et les enjeux de "packaging" pour mettre tout cela à disposition des utilisateurs dans de bonnes conditions de livraison. Il y a plusieurs manières d'empaqueter et distribuer le même code source. Ici, OSGeo4W et vcpkg.
+
+Que QGIS passe en version 4 ou pas, le changement de version majeure de Qt n'est pas une révolution pour les utilisateurs et utilisatrices finaux du logiciel, mais une évolution. D'ailleurs, que cela se fasse sans rupture majeure est le signe de la maturité du projet QGIS qui a tout pour s'imposer dans des parcs informatiques de niveau industriel qui aiment la stabilité.
 
 ----
 
