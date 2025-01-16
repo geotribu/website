@@ -42,7 +42,8 @@ La version actuelle de ce jeu de données est la troisième (v3), publiée en ma
 Chaque bâtiment, dans ce jeu de données, est représenté par :
 
 - un polygone décrivant son empreinte au sol
-- un score de confiance indiquant la probabilité qu’il s’agisse d’un bâtiment - un [code Plus](https://fr.wikipedia.org/wiki/Open_Location_Code) correspondant au centre du bâtiment
+- un score de confiance indiquant la probabilité qu’il s’agisse d’un bâtiment
+- un [code Plus](https://fr.wikipedia.org/wiki/Open_Location_Code) correspondant au centre du bâtiment
 
 Aucune information sur le type de bâtiment, son adresse ou d’autres détails n’est incluse, seulement sa géométrie. Il est bien sûr possible d'adapter et personnaliser son modèle de données basé sur ces bâtiments, selon les besoins.
 
