@@ -30,16 +30,17 @@ La génération de fichiers Cloud Optimized GeoTIFF (COG) est de plus en plus cr
 S'il est conçu pour le cloud, il présente bien des avantages sur d'autres environnement : 
 
 - gain de performances sur les flux WMS
-- affiche quasi instantané dans le cadre d'une utilisation en réseau. Qui n'a jamais pesté contre des lenteurs réseaux que ce soit au bureau ou en télétravail ? 
+- affiche quasi instantané dans le cadre d'une utilisation en réseau. Qui n'a jamais pesté contre des lenteurs réseaux que ce soit au bureau ou en télétravail ?
 Dans cet article, nous allons explorer les meilleures pratiques pour générer des COG en utilisant GDAL, un incontournable de l'outillage SIG.
+- N'avoir qu'une image uniquement même pour des surfaces importantes à charger. Pas besoin de VRT, organisation sous forme de fichiers bien plus simple (1 seul contre x centaines ou milliers de fichiers)
 
 ## Pré-requis
 
 Avant de commencer avec la génération de COG, voici quelques pré-requis essentiels:
 
 - **GDAL Version 3.1 ou supérieure**: Assurez-vous que votre installation de GDAL est à jour. Les versions plus récentes comprennent des améliorations et des fonctionnalités spécifiques pour le COG.
-- **Types de Raster appropriés**: Pour les données raster à une bande (comme les Modèles Numériques de Terrain - MNT - ou d’Élévation - MNE), vous pourriez utiliser des fichiers au format ASC. Quant aux rasters à trois bandes, ceux-ci couvrent notamment les orthophotos.
-- **Environnement Linux ou Windows**: Les commandes et opérations décrites ici ont été testées sur les deux systèmes d’exploitation Linux.
+- **Types de Raster appropriés**: Pour les données raster à une bande (comme les Modèles Numériques de Terrain - MNT - ou d’Élévation - MNE), vous pourriez utiliser des fichiers au format TIF, ASC, bref tout ce que peux lire GDAL. Quant aux rasters à trois bandes, ceux-ci couvrent notamment les orthophotos.
+- **Environnement Linux ou Windows**: Les commandes et opérations décrites ici ont été testées sur les deux systèmes d’exploitation.
 
 ## Construction du VRT pour Raster 1 Bande
 
