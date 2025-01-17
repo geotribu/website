@@ -46,11 +46,13 @@ Avant de commencer la génération de COG, assurez-vous de disposer des élémen
 
 Pour combiner plusieurs fichiers raster ASC en un VRT (Virtual Raster Tile), une étape nécessaire avant de générer le COG final, utilisez la commande suivante :
 :penguin:
+
 ```bash
 gdalbuildvrt my_dsm.vrt -addalpha -a_srs EPSG:2154 /dsm_directory/*.asc
 ```
 
 🪟
+
 ```powershell
 gdalbuildvrt.exe C:\dsm\my_dsm.vrt C:\dsm_directory\*.asc -addalpha -a_srs EPSG:2154
 ```
@@ -63,6 +65,7 @@ gdalbuildvrt.exe C:\dsm\my_dsm.vrt C:\dsm_directory\*.asc -addalpha -a_srs EPSG:
 Une fois le VRT construit, transformez-le en COG avec cette commande :
 
 :penguin:
+
 ```bash
 gdal_translate input_dsm.vrt my_dsm_output_cog.tif -of COG \
   -co RESAMPLING=NEAREST \
@@ -74,6 +77,7 @@ gdal_translate input_dsm.vrt my_dsm_output_cog.tif -of COG \
 ```
 
 🪟
+
 ```powershell
 ggdal_translate.exe C:\dsm\input_dsm.vrt C:\dsm\my_dsm_output_cog.tif -of COG -co BLOCKSIZE=512 -co OVERVIEW_RESAMPLING=NEAREST -co COMPRESS=DEFLATE -co PREDICTOR=2 -co NUM_THREADS=20 -co BIGTIFF=IF_NEEDED
 ```
@@ -90,6 +94,7 @@ ggdal_translate.exe C:\dsm\input_dsm.vrt C:\dsm\my_dsm_output_cog.tif -of COG -c
 Commencez par convertir chaque fichier JP2 en TIF en utilisant une boucle bash. Assurez-vous d'avoir créé un répertoire dédié pour les fichiers TIF :
 
 :penguin:
+
 ```bash
 for f in *.jp2; do
   gdal_translate -of GTiff \
@@ -105,6 +110,7 @@ done
 ```
 
 🪟
+
 ```powershell
 FOR %%F IN (C:\ortho\jpg2\*.jp2) DO gdal_translate.exe -of GTiff -co TILED=YES -co BIGTIFF=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=20 -co COMPRESS=ZSTD -co PREDICTOR=2 -a_srs EPSG:2154 %%F C:\ortho\0_TIF\%%~nxF.tif
 ```
@@ -116,11 +122,13 @@ FOR %%F IN (C:\ortho\jpg2\*.jp2) DO gdal_translate.exe -of GTiff -co TILED=YES -
 Créez un VRT pour votre ensemble de données TIFF avec la commande suivante :
 
 :penguin:
+
 ```bash
 gdalbuildvrt my_orthophotography.vrt 0_TIF/*.tif -addalpha -hidenodata -a_srs EPSG:2154
 ```
 
 🪟
+
 ```powershell
 gdalbuildvrt.exe C:\ortho\my_orthophotography.vrt C:\ortho\0_TIF\*.tif -addalpha -hidenodata -a_srs EPSG:2154
 ```
@@ -132,6 +140,7 @@ gdalbuildvrt.exe C:\ortho\my_orthophotography.vrt C:\ortho\0_TIF\*.tif -addalpha
 Générez le COG à partir du VRT :
 
 :penguin:
+
 ```bash
 gdal_translate my_orthophotography.vrt my_orthophotography_output_cog.tif -of COG \
   -co BLOCKSIZE=512 \
@@ -143,6 +152,7 @@ gdal_translate my_orthophotography.vrt my_orthophotography_output_cog.tif -of CO
 ```
 
 🪟
+
 ```powershell
 gdal_translate.exe C:\ortho\my_orthophotography.vrt C:\ortho\my_orthophotography_output_cog.tif -of COG -co BLOCKSIZE=512 -co OVERVIEW_RESAMPLING=BILINEAR -co COMPRESS=JPEG -co QUALITY=85 -co NUM_THREADS=12 -co BIGTIFF=YES
 ```
@@ -157,6 +167,7 @@ gdal_translate.exe C:\ortho\my_orthophotography.vrt C:\ortho\my_orthophotography
 Pour éliminer les pixels indésirables en bordure (non définis comme nodata), utilisez un shapefile d'emprise :
 
 :penguin:
+
 ```bash
 gdalwarp -of GTiff \
   -co TILED=YES \
@@ -175,6 +186,7 @@ gdalwarp -of GTiff \
 ```
 
 🪟
+
 ```powershell
 gdalwarp.exe -of GTiff -co TILED=YES -co BIGTIFF=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co COMPRESS=ZSTD -co PREDICTOR=2 -s_srs EPSG:2154 -t_srs EPSG:2154 -dstalpha -cutline C:\data\area_of_interest.shp C:\ortho\input_image.jp2 C:\ortho\image_output.tif
 ```
@@ -184,6 +196,7 @@ gdalwarp.exe -of GTiff -co TILED=YES -co BIGTIFF=YES -co BLOCKXSIZE=512 -co BLOC
 Pour convertir un JP2 en TIFF RVBA tout en préservant l’unité colorimétrique :
 
 :penguin:
+
 ```bash
 gdal_translate -of GTiff \
   -co BIGTIFF=YES \
@@ -201,6 +214,7 @@ gdal_translate -of GTiff \
 ```
 
 🪟
+
 ```powershell
 gdal_translate.exe -of GTiff -co BIGTIFF=YES -co TILED=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=12 -co COMPRESS=ZSTD -co PREDICTOR=2 -b 1 -b 2 -b 3 -b mask -colorinterp red,green,blue,alpha -a_srs EPSG:2154 C:\ortho\input_image.jp2 C:\ortho\output_image.jp2
 ```
@@ -208,11 +222,11 @@ gdal_translate.exe -of GTiff -co BIGTIFF=YES -co TILED=YES -co BLOCKXSIZE=512 -c
 ## Considérations Finales
 
 - **Compression** :
-  - Utilisez `JPEG` pour les fichiers RVB (3 bandes).
-  - Préférez `DEFLATE` ou `ZSTD` pour les fichiers avec plus de 3 bandes ou en 16 bits.
+    - Utilisez `JPEG` pour les fichiers RVB (3 bandes).
+    - Préférez `DEFLATE` ou `ZSTD` pour les fichiers avec plus de 3 bandes ou en 16 bits.
 - **Méthode de Rééchantillonnage** :
-  - `BILINEAR` est idéal pour le rendu visuel.
-  - `NEAREST` est recommandé pour les traitements analytiques afin de préserver l'intégrité des données.
+    - `BILINEAR` est idéal pour le rendu visuel.
+    - `NEAREST` est recommandé pour les traitements analytiques afin de préserver l'intégrité des données.
 
 En suivant ces bonnes pratiques, vous assurerez une génération efficace de COG, améliorant ainsi la manipulation et la visualisation de vos données spatiales quelque soit votre environnement.
 
