@@ -134,7 +134,6 @@ En voici cependant un schéma succinct pour pour aider à la compréhension du r
 
 ![modele_de_donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/modele.png){: .img-center loading=lazy }
 
-
 Partant d'un schéma nommé `insee`, on va créer deux tables. La première contiendra la liste des *bases* disponibles, les différents volets du recensement. Une seconde permettant de stocker les données ; pour rester concentré sur le json, on va s'épargner 95% du modèle sous-jacent. On ne gérera donc par ici les codes communes, etc. En bonus pour celles et ceux voulant tester ce que Postgres a dans le ventre, je proposerai une variante juste en dessous :
 
 ```sql
