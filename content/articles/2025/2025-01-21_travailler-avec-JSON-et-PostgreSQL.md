@@ -130,7 +130,7 @@ Pour les aventuriers et aventurières, il existe une extention de PostgreSQL `bt
 
 Je vais éviter de vous spammer du DDL, mais vous pourrez retrouver le schéma complet de la base [ici](https://github.com/thomas-szczurek/base_donnees_insee/tree/main/sql/creation_tables)
 
-En voici cependant un schéma succinct pour pour aider à la compréhension du reste de l'article :
+En voici cependant un schéma succinct pour aider à la compréhension du reste de l'article :
 
 ![modele_de_donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/modele.png){: .img-center loading=lazy }
 
