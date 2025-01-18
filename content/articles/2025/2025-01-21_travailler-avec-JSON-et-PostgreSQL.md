@@ -130,6 +130,11 @@ Pour les aventuriers et aventurières, il existe une extention de PostgreSQL `bt
 
 Je vais éviter de vous spammer du DDL, mais vous pourrez retrouver le schéma complet de la base [ici](https://github.com/thomas-szczurek/base_donnees_insee/tree/main/sql/creation_tables)
 
+En voici cependant un schéma succinct pour pour aider à la compréhension du reste de l'article :
+
+![modele_de_donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/modele.png){: .img-center loading=lazy }
+
+
 Partant d'un schéma nommé `insee`, on va créer deux tables. La première contiendra la liste des *bases* disponibles, les différents volets du recensement. Une seconde permettant de stocker les données ; pour rester concentré sur le json, on va s'épargner 95% du modèle sous-jacent. On ne gérera donc par ici les codes communes, etc. En bonus pour celles et ceux voulant tester ce que Postgres a dans le ventre, je proposerai une variante juste en dessous :
 
 ```sql
@@ -243,7 +248,7 @@ Cette requête encodera cet objet json dans le champs `données` :
 
 Maintenant comment récupérer notre nombre de melons pour le code commune 99999 en 2024 ? Celà se fait grace à des opérateurs spéciaux :
 
-- `champ_jsonb -> 'clé'` récupère la valeur d'une clé en concervant son type json
+- `champ_jsonb -> 'clé'` récupère la valeur d'une clé en conservant son type json
 - `champ_jsonb ->> 'clé'` fait de même en transformant la valeur en type sql "classique"
 
 ```sql
@@ -538,14 +543,14 @@ SELECT * FROM final WHERE valeur IS NOT NULL;
 
 Attention, la création de cette vue matérialisée ou son refresh peut prendre un certain temps si vous avez stocké beaucoup de données (1 heure chez moi pour les 6 volets de 2015 à 2021).
 
-Enfin, histoire de vivre avec son temps et non comme un viel ours des cavernes ou comme un data machin de collectivité territoriale (j'y bosse, j'ai le droit), on va convertir cette vue matérialisée en fichier [parquet](https://parquet.apache.org/).
+Enfin, histoire de vivre avec son temps et non comme un viel ours des cavernes, on va convertir cette vue matérialisée en fichier [parquet](https://parquet.apache.org/).
 Et, pour ça, on va utiliser gdal/ogr qui est décidément incroyable.
 
 ```sh
 ogr2ogr -of parquet donnees_insee.parquet PG:"dbname='insee' shcema='insee' tables='donnees_communes_olap' user='nom_utilisateur' password='votre_mot_de_passe'"
 ```
 
-Et on peut ainsi mettre le fichier sur un espace cloud, comme [ici](https://donnees-insee.s3.fr-par.scw.cloud/donnees_insee_olap.parquet) ! Vous pouvez ensuite sortir votre plus beau générateur de publications Linkedin qui mettra plein d'emojis choupi et faire le cake sur les rezos (imaginez que 90% du contenu de Linkedin doit être fait avec ces trucs qui sont capable de vous générer des publications expliquant que le shape a des avantages sur le geopackage, le tout sur un ton très assuré).
+Et on peut ainsi mettre le fichier sur un espace cloud, comme [ici](https://donnees-insee.s3.fr-par.scw.cloud/donnees_insee_olap.parquet) ! Vous pouvez ensuite sortir votre plus beau générateur de publications Linkedin qui mettra plein d'emojis choupi et faire le cake sur les rezos (imaginez que 90% du contenu de Linkedin doit être fait avec ces trucs qui sont capable de vous générer des publications expliquant que l'un  des rares avantages du shape sur le geopackage est d'être un format multi-fichiers, le tout sur un ton très assuré).
 
 <!-- geotribu:authors-block -->
 
