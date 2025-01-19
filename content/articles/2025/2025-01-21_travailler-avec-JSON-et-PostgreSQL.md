@@ -260,7 +260,7 @@ WHERE
   AND annee = 2024
 ```
 
-Vous pouvez voir que j'utilise l'opérateur `?`; uniquement valable pour les champs `jsonb` et non ceux en simple `json`. En effet, lorsque l'on requête un champ json/jsonb, un retour vous est fait pour l'ensemble des enregistrements de la table, même ceux ne contenant pas la clé. Comprendre que si votre table comprend 100 000 enregistrements, mais que seuls 100 contiennent la clé "melons", ne pas spécifier cette clause WHERE vous renverrait 100 000 lignes, dont 99 900 de `NULL`.`?` est un opérateur json permettant de poser la question "la clé est-elle présente au premier niveau du champ json pour cet enregistrement ?", et on ne récupérerait que nos 100 enregistrements contenant la clé "melons".
+Vous pouvez voir que j'utilise l'opérateur `?`; uniquement valable pour les champs `jsonb` et non ceux en simple `json`. En effet, lorsque l'on requête un champ json/jsonb, un retour vous est fait pour l'ensemble des enregistrements de la table, même ceux ne contenant pas la clé. Comprendre que si votre table contient 100 000 enregistrements, mais que seuls 100 contiennent la clé "melons", ne pas spécifier cette clause WHERE vous renverrait 100 000 lignes, dont 99 900 de `NULL`.`?` est un opérateur json permettant de poser la question "la clé est-elle présente au premier niveau du champ json pour cet enregistrement ?", et on ne récupérerait que nos 100 enregistrements contenant la clé "melons".
 
 Je précise que même si vous êtes encore ici, je suppose que vous savez déjà cela. Cependant, la forme `(quelque_chose)::int4` est un raccourci de PostgreSQL pour faire un `cast` soit convertir une valeur dans un autre type. Avec `->>` la valeur nous est renvoyée sous forme de texte et nous la convertissons en entier.
 
