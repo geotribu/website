@@ -542,7 +542,7 @@ SELECT * FROM final WHERE valeur IS NOT NULL;
 
 Attention, la création de cette vue matérialisée ou son refresh peut prendre un certain temps si vous avez stocké beaucoup de données (1 heure chez moi pour les 6 volets de 2015 à 2021).
 
-Enfin, histoire de vivre avec son temps et non comme un viel ours des cavernes, on va convertir cette vue matérialisée en fichier [parquet](https://parquet.apache.org/).
+Enfin, histoire de vivre avec son temps et non comme un vieil ours des cavernes, on va convertir cette vue matérialisée en fichier [parquet](https://parquet.apache.org/).
 Et, pour ça, on va utiliser gdal/ogr qui est décidément incroyable.
 
 ```sh
