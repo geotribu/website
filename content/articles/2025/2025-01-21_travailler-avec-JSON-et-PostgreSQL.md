@@ -128,7 +128,7 @@ Pour les aventuriers et aventurières, il existe une extention de PostgreSQL `bt
 
 ## Création des tables
 
-Je vais éviter de vous spammer du DDL, mais vous pourrez retrouver le schéma complet de la base [ici](https://github.com/thomas-szczurek/base_donnees_insee/tree/main/sql/creation_tables)
+Je vais éviter de vous spammer du `DDL` ([Data Definition Language](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es), mais vous pourrez retrouver le schéma complet de la base [ici](https://github.com/thomas-szczurek/base_donnees_insee/tree/main/sql/creation_tables)
 
 En voici cependant un schéma succinct pour aider à la compréhension du reste de l'article :
 
