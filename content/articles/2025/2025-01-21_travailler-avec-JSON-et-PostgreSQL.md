@@ -34,7 +34,7 @@ Cet article ne se veut surtout pas être une invitation à partir en mode yolo s
 
 ## Le JSON pour les débutant.es
 
-Pour celles et ceux qui ne connaisent pas le `json`, il s'agit d'un format textuel de représentation des données fonctionnant en partie sur un système de `clé : valeur` qu'on peut voir comme une sorte d'évolution du `xml`.
+Pour celles et ceux qui ne connaissent pas le `json`, il s'agit d'un format textuel de représentation des données venant du Java Script fonctionnant en partie sur un système de `clé : valeur` qu'on peut voir comme une sorte d'évolution du `xml`.
 
 ```json
 {"clé_1": "valeur", "clé_2": "valeur", "clé_3": "valeur"}
