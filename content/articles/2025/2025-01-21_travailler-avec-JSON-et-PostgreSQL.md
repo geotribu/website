@@ -256,6 +256,8 @@ SELECT
 FROM insee.donnees_communes
 WHERE
   donnees ? 'melons'
+  AND code_commune = '99999'
+  AND annee = 2024
 ```
 
 Vous pouvez voir que j'utilise l'opérateur `?`; uniquement valable pour les champs `jsonb` et non ceux en simple `json`. En effet, lorsque l'on requête un champ json/jsonb, un retour vous est fait pour l'ensemble des enregistrements de la table, même ceux ne contenant pas la clé. Comprendre que si votre table comprend 100 000 enregistrements, mais que seuls 100 contiennent la clé "melons", ne pas spécifier cette clause WHERE vous renverrait 100 000 lignes, dont 99 900 de `NULL`.`?` est un opérateur json permettant de poser la question "la clé est-elle présente au premier niveau du champ json pour cet enregistrement ?", et on ne récupérerait que nos 100 enregistrements contenant la clé "melons".
