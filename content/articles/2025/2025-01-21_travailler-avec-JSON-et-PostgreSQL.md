@@ -437,7 +437,7 @@ WITH d AS (
 -- Conversion des chaines de texte en json et insertion dans la table
 INSERT INTO insee.donnees_communes("code_commune","annee","fk_base","donnees")
 SELECT
-    "CODGEO",
+    CODGEO,
     2021,
     1,
     jsonb_object(string_to_array(data::text,','))
