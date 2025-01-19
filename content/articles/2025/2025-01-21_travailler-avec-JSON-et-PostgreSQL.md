@@ -21,7 +21,7 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-Dans le cadre d'un projet personnel encadré de type "tu l'as fait pour les IRIS de Lille avec Sqlite, t'as vu que tu sais faire. Bon bah maintenant tu le fais pour toutes les communes de France dans PG", j'ai voulu stocker une bonne partie des données du recensement de l'Insee dans une base PostgreSQL avec des tables multimillésimes. Problème, même au sein d'un même jeu de données, les champs peuvent changer au cours des années et cela empêche de pouvoir dégager une structure de table fixe, ce qui est assez gênant vous en conviendrez. La solution ? Passer par des données semi-structurées, soit stocker ces données en JSON dans le champ d'une table. Cet article se veut un condensé de cette expérience.
+Dans le cadre d'un projet personnel, j'ai voulu stocker une bonne partie des données du recensement de l'Insee dans une base PostgreSQL avec des tables multimillésimes. Problème, au sein d'un même jeu de données, les champs peuvent changer au cours des années et cela empêche de pouvoir dégager une structure de table fixe, ce qui est assez gênant vous en conviendrez. La solution ? Passer par des données semi-structurées, soit stocker ces données en JSON dans le champ d'une table. Cet article se veut un condensé de cette expérience.
 
 !!! warning
     Ces travaux ont été réalisés avant la sortie de PostgreSQL 17 qui ajoute d'importantes fonctionnalités pour le JSON avec les [`JSON_TABLE`](https://doc.postgresql.fr/17/functions-json.html#FUNCTIONS-SQLJSON-TABLE), elles ne seront pas évoquées ici.
