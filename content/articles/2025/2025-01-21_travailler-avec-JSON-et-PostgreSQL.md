@@ -310,11 +310,9 @@ Les noms de champ commencent tous par P ou C, ceci indique *exploitation princip
 
 Vous trouverez [ici](https://github.com/thomas-szczurek/base_donnees_insee/blob/main/sql/import/correction_champs_insee.xlsx) un tableur dont le rôle est de s'occuper de tout ça.
 
-
 Avant d'insérer les données dans notre table, nous allons passer par une table temporaire afin de rendre les données accessibles dans Postgres. Utiliser `COPY` de Postgresql serait fastidieux car il faudrait indiquer la centaine de champs que contient le volet population du recensement dans la commande. Et, je n'ai pas honte de dire que j'ai un baobab dans la main à cette idée. Nous sortons donc ce merveilleux logiciel qu'est QGIS. On active les panneaux Explorateur et Explorateur2. On crée une connexion vers la base avec les droits de création, et d'un mouvement gracile du poignet, vous glissez le fichier depuis le panneau Explorateur vers la base Postgres dans l'Explorateur2. Laissez la magie opérer.
 
 Maintenant, préparez-vous pour peut-être un des INSERT les plus bizarres de votre vie (en tout cas, ça l'a été pour moi !). Arf. Je me rends compte que si je voulais bien faire, il faudrait aussi que j'explique les [CTE](https://www.postgresql.org/docs/current/queries-with.html). Mais pour ne pas trop alourdir, je vous laisser cliquer sur le lien.
-
 
 On va utiliser la CTE pour concaténer le nom que l'on veut donner à nos clés avec les valeurs contenues dans notre table temporaire dans une chaine séparée par des `,`. On l'enverra dans une fonction `string_to_array()` puis dans une fonction `jsonb_object()`. On en profitera pour au passage, nettoyer toute tabulation ou retour chariot qui pourrait subsister avec une expression régulière grâce à la fonction `regex_replace()`. (ces caractères se notent `\t`, `\n` et `\r`). Cette dernière fonction prend 3 arguments : la chaine de caractères source, le `pattern` recherché, le texte de remplacement. On y ajoute le *drapeau* optionnel `g` afin de remplacer toutes les occurrences trouvées.
 
