@@ -478,7 +478,7 @@ SELECT
  c.clef_json AS clef_json,
  c.fk_base AS fk_base,
  p.premiere AS premiere_annee_presence,
- d.derniere AS derniere_annee_presence
+ a.derniere AS derniere_annee_presence
 FROM insee.correspondance_clefs_champs AS c,
  LATERAL (SELECT min(annee) AS premiere FROM insee.donnees_communes WHERE fk_base = c.fk_base AND donnees ? c.clef_json) AS a
 ORDER BY fk_base, clef_json;
