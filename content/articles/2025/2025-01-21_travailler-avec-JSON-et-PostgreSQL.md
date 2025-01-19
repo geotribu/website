@@ -293,7 +293,7 @@ Pour récupérer une valeur, on utilise la fonction `jsonb_path_query()` qui pos
 
 ```sql
 SELECT
- jsonb_path_query(donnee, '$.cle2[1]')
+ jsonb_path_query(donnees, '$.cle2[1]')
 FROM test.test
 ```
 
