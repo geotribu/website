@@ -1,5 +1,6 @@
 ---
-title: Optimiser vos rasters et générer des mosaïques au format COG (Cloud Optimized GeoTIFF) avec GDAL
+title: Optimiser vos rasters et générer des mosaïques au format COG avec GDAL
+subtitle: Des images grille en-tête
 authors:
   - Nicolas ROCHARD
 categories:
@@ -25,7 +26,9 @@ tags:
 
 ## Introduction
 
-Les données Raster sont une composante majeure des référentiels de nos systèmes d'information géographique. Ces fichiers sont bien plus volumineux que des données vectorielles et sont parfois fragmenté en plusieurs dalles rendant son chargement laborieux. Lorsque ces données sont disponibles en flux WMS ou WMTS, alors leur consultation est plus aisée mais présente des limitations (pas de possibilité d'affiner la radiométrie, lenteur d'affichage, problème d'impression, etc.). Il est alors indispensable d'avoir une donnée en locale ou sur le réseau de la structure. C'est là que le format COG intervient pour simplifier la vie des géomaticiens. Ces fichiers, optimisés pour le cloud, facilitent le traitement et la visualisation des données spatiales à grande échelle grâce à leur accessibilité rapide et leur structure efficiente. Conçus spécifiquement pour le cloud, les COG offrent de nombreux avantages sur d'autres environnements :
+Les données Raster sont une composante majeure des référentiels de nos systèmes d'information géographique. Ces fichiers sont bien plus volumineux que des données vectorielles et sont parfois fragmenté en plusieurs dalles rendant son chargement laborieux. Lorsque ces données sont disponibles en flux WMS ou WMTS, alors leur consultation est plus aisée mais présente des limitations (pas de possibilité d'affiner la radiométrie, lenteur d'affichage, problème d'impression, etc.). Il est alors indispensable d'avoir une donnée en locale ou sur le réseau de la structure.
+
+C'est là que le format COG (_Cloud Optimized GeoTIFF_) intervient pour simplifier la vie des géomaticiens. Ces fichiers, optimisés pour le cloud, facilitent le traitement et la visualisation des données spatiales à grande échelle grâce à leur accessibilité rapide et leur structure efficiente. Conçus spécifiquement pour le cloud, les COG offrent de nombreux avantages sur d'autres environnements :
 
 - **Performance améliorée** : affichage quasi-immédiat même sur des volumes importants évitant ainsi les frustrations liées aux lenteurs, que ce soit au bureau ou en télétravail.
 - **Données peu ou pas alterées**_(en fonction des options de compression choisies)_ : vous pouvez modifier la radiométrie, l'ordre des bandes, l'utiliser dans des processus de geotraitements, etc.
