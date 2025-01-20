@@ -139,6 +139,8 @@ En voici cependant un schéma succinct pour aider à la compréhension du reste 
 
 ![modele_de_donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/modele.png){: .img-center loading=lazy }
 
+*Ne vous préoccupez pas des tables empilées tout à droite, ce sont des partitions de la table `donnees_communes`. Le sujet ne sera pas évoqué ici et elles ne sont nécessaires pour l'exemple.*
+
 Partant d'un schéma nommé `insee`, on va créer deux tables. La première contiendra la liste des *bases* disponibles, les différents volets du recensement. Une seconde permettant de stocker les données ; pour rester concentré sur le json, on va s'épargner 95% du modèle sous-jacent. On ne gérera donc pas ici les codes communes, etc. En bonus pour celles et ceux voulant tester ce que Postgres a dans le ventre, je proposerai une variante juste en dessous :
 
 ```sql
@@ -182,14 +184,7 @@ INSERT INTO insee.bases (nom) VALUES
 ('rp_emploi')
 ```
 
-### (Bonus) Partition de la table données
 
-Imaginons que nous travaillons sur l'ensemble des données du recensement (soit 6 fichiers sources), de 2015 à 2021 pour environ 35 000 communes. On va arriver sur du 1,5 million d'enregistrements. Entendons-nous bien, à l'échelle de Postgres ça ne reste pas grand-chose. Mais, si comme moi, vous voulez voir ce qu'on peut tirer des entrailles de Postres, ça permet de pouvoir commencer à justifier d'utiliser certaines fonctionnalités avancées. Une table partitionnée, c'est quoi ?
-
-- C'est une table découpée en plusieurs morceaux où une table *parent* contrôlera les tables *enfants*.
-- Une table partitionnée peut se découper selon la valeur d'un champ ou une période temporelle ("fais -moi une partition tous les mois")
-- On peut requêter la table parent ou les tables enfants.
-- Une table doit être partitionnée à sa création, une table déjà existante ne peut pas être convertie. De nouvelles partitions peuvent toutefois être créées à volonté.
 - Cela peut être intéressant pour limiter la taille des scans séquentiels qui se feront sur des tables plus petites que la table *parent*, où pour se faciliter la gestion de tables volumineuses.
 - On peut attacher / détacher une partition (qui devient alors une table classique) avec les "mots" `ATTACH PARTITION` / `DETACH PARTITION` y compris sur une base en production grâce à l'option `CONCURENTLY`
 - Une clé primaire de table partitionnée **doit** être composite, c'est-à-dire que son unicité sera vérifiée par la composition de plusieurs champs et contenir obligatoirement le champ de partitionnement.
