@@ -424,7 +424,7 @@ Ouf.
 
 ![donnees_communes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/donnees_communes.png){: .img-center loading=lazy }
 
-On veillera à bien grouper les inserts dans cet ordre annee/base/code_commune afin de faciliter la lecture des données par PostgreSQL (si votre table est partitionnée, cela sera facilité).
+On veillera à bien grouper les inserts dans cet ordre annee/base/code_commune afin de faciliter la lecture des données par PostgreSQL.
 
 Maintenant, imaginez que comme l'auteur de ces lignes, vos gros doigts boudinnés cafouillent et glissent sur les touches lors de la rédaction de cette requête, qu'une faute de frappe s'y glisse, et là c'est le drame. Comment modifier le nom d'une clé déjà encodée dans la table ? Avec cette astuce :
 
