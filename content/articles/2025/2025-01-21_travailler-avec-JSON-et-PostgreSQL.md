@@ -21,32 +21,38 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
+
+![logo JSON](https://cdn.geotribu.fr/img/logos-icones/programmation/json.png){: .img-thumbnail-left }
+
 Dans le cadre d'un projet personnel, j'ai voulu stocker une bonne partie des données du recensement de l'Insee dans une base PostgreSQL avec des tables multimillésimes. Problème, au sein d'un même jeu de données, les champs peuvent changer au cours des années et cela empêche de pouvoir dégager une structure de table fixe, ce qui est assez gênant vous en conviendrez. La solution ? Passer par des données semi-structurées, soit stocker ces données en JSON dans le champ d'une table. Cet article se veut un condensé de cette expérience.
 
-!!! warning
+!!! info "Obsolescence non programmée"
     Ces travaux ont été réalisés avant la sortie de PostgreSQL 17 qui ajoute d'importantes fonctionnalités pour le JSON avec les [`JSON_TABLE`](https://doc.postgresql.fr/17/functions-json.html#FUNCTIONS-SQLJSON-TABLE), elles ne seront pas évoquées ici.
 
-Puisque nous allons parler de json et de données semi-structurées, je me sens dans l'obligation de commencer cet article par un avertissement.
+Puisque nous allons parler de JSON et de données semi-structurées, je me sens dans l'obligation de commencer cet article par un avertissement.
 
 **Le modèle relationnel, c'est bon, mangez-en, et les contraintes d'intégrités ont été inventées pour de bonnes raisons.**
 
-Cet article ne se veut surtout pas être une invitation à partir en mode yolo sur la gestion des données "c'est bon ya qu'a tout mettre en json" (comme un vulgaire dev qui mettrait tout dans MongoDB diraient les mauvaises langues).
+Cet article ne se veut surtout pas être une invitation à partir en mode YOLO sur la gestion des données "c'est bon ya qu'a tout mettre en JSON" (comme un vulgaire dev qui mettrait tout dans MongoDB diraient les mauvaises langues).
 
-## Le JSON pour les débutant.es
+## Le JSON pour les débutant⸱es
 
-Pour celles et ceux qui ne connaissent pas le `json`, il s'agit d'un format textuel de représentation des données venant du Java Script fonctionnant en partie sur un système de `clé : valeur` qu'on peut voir comme une sorte d'évolution du `xml`.
+Pour celles et ceux qui ne connaissent pas le [JSON](https://www.json.org/json-fr.html) il s'agit d'un format textuel de représentation des données venant du JavaScript fonctionnant en partie sur un système de `clé : valeur` qu'on peut voir comme une sorte d'évolution du XML.
 
 ```json
 {"clé_1": "valeur", "clé_2": "valeur", "clé_3": "valeur"}
 ```
 
-pas besoin de guillemets pour les nombres
+Pas besoin de guillemets pour les nombres :
 
 ```json
 {"nb_champignons": 42, "nb_tomates": 31, "prenom": "roger"}
 ```
 
-Les valeurs peuvent prendre deux formes. Soit une valeur unique comme dans l'exemple ci-dessus, soit un `array`, une liste, qu'on place entre `[]`, les deux pouvant êtres combinés au sein d'un seul objet json.
+Les valeurs peuvent prendre deux formes :
+
+- soit une valeur unique comme dans l'exemple ci-dessus,
+- soit un `array`, une liste, qu'on place entre `[]`, les deux pouvant êtres combinés au sein d'un seul objet JSON.
 
 ```json
 {"prenoms": ["elodie", "roger", "fatima"], "nb_champgnons": 42}
