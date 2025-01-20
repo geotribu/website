@@ -21,7 +21,7 @@ social:
 
 <!-- --8<-- [start:author-sign-block] -->
 
-![Portrait Nicolas Rochard](https://cdn.geotribu.fr/img/internal/contributeurs/nrochard.png "Portrait Nicolas Rochard"){: .img-thumbnail-left }
+![Portrait Nicolas Rochard](https://cdn.geotribu.fr/img/internal/contributeurs/nrochard.jpg "Portrait Nicolas Rochard"){: .img-thumbnail-left }
 
 Je suis chef de projet data au sein de la Région Hauts-de-France pour la plateforme Geo2France. Je suis spécialisé dans la conception, la gestion et l’exploitation de données, avec un intérêt particulier pour celles liées à l’occupation du sol. Mon travail consiste à animer des groupes de travail collaboratifs, à structurer et mettre en avant des données de qualité, et à développer des outils pour leur valorisation et leur accessibilité.
 
