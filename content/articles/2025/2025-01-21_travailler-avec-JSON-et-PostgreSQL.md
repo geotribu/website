@@ -186,7 +186,6 @@ INSERT INTO insee.bases (nom) VALUES
 ('rp_emploi')
 ```
 
-
 ```sql
  annee int2 NOT NULL,
  fk_base int2 NOT NULL,
@@ -203,7 +202,6 @@ CREATE TABLE insee.donnees_communes_fk_5 PARTITION OF insee.donnees_communes FOR
 CREATE TABLE insee.donnees_communes_fk_6 PARTITION OF insee.donnees_communes FOR VALUES IN (6);
 END;
 ```
-
 
 ## Insertion de données et récupération
 
