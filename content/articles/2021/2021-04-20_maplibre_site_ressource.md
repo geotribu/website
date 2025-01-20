@@ -27,7 +27,7 @@ Fork open source de MapboxGL, **MapLibreGL** représente l'une des solutions act
 
 Cette bibliothèque de cartographie en ligne (côté client) repose sur la logique et la syntaxe de [MapboxGL.js](https://docs.mapbox.com/mapbox-gl-js/api/) (version 1.13). Au-delà de produire des cartes en ligne, elle offre de multiples possibilités pour la **cartographie thématique**, autement dit pour représenter sur une carte des données statistiques sous différentes formes.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -676,8 +676,6 @@ Bref, MapLibre c'est une super solution, assez simple de prise en main, donc plu
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/boris-mericskay.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

@@ -61,6 +61,4 @@ Les quelques captures d'écran ci-dessous vous donneront je l'espère l'envie de
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

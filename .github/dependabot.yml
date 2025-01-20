@@ -8,8 +8,6 @@ updates:
     open-pull-requests-limit: 10
     reviewers:
       - Guts
-    labels:
-      - dependencies
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -17,5 +15,3 @@ updates:
       interval: "monthly"
     reviewers:
       - Guts
-    labels:
-      - ci-cd

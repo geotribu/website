@@ -122,6 +122,4 @@ Il existe beaucoup d'événements sur les objets - carte et marqueur - dans l'AP
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

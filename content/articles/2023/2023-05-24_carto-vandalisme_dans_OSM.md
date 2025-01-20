@@ -30,7 +30,7 @@ La qualité de ces nouveaux référentiels repose sur une forte participation de
 
 C'est sur le sujet du carto-vandalisme dans OSM que j'ai axé mes recherches durant quelques années de thèse à l'IGN (coucou à mes anciens collègues du LASTIG !). Et pour éviter que mon [mémoire](https://www.researchgate.net/publication/344121146_Le_vandalisme_de_l'information_geographique_volontaire_analyse_exploratoire_et_proposition_d'une_methodologie_de_detection_automatique) ne prenne la poussière, je profite qu'on me laisse la parole au micro de GeoTribu pour partager un des fruits de mes recherches :smile:.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -171,8 +171,6 @@ Si vous souhaitez en savoir plus sur la détection automatique du carto-vandalis
 
 ----
 
-## Autrice
-
---8<-- "content/team/quy-thy-truong.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

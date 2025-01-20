@@ -36,7 +36,7 @@ tags:
 
 Il y a des projets que tu as en tête depuis des mois pour ne pas dire plus. Et puis un jour, c’est le bon moment, un créneau s’ouvre, tu t’engouffres dans la brèche happé par l’envie. Je vous propose donc de découvrir comment j’ai reconstitué des images aériennes historiques sur mon territoire à partir des imagettes disponibles sur le site : [Remonter le temps](https://remonterletemps.ign.fr) de l’IGN.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -349,6 +349,4 @@ La méthode mise en place nous a permis à moindre coup et de manière autonome 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->

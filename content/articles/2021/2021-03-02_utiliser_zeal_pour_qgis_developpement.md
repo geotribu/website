@@ -33,7 +33,7 @@ C'est un autre collègue qui m'en a reparlé récemment (coucou [Loïc](https://
 
 ![Capture d'écran de Zeal](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png "Zeal - Recherche filtrée sur PyQGIS"){: loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -158,9 +158,7 @@ En plus, avec ces documentations hors-ligne, on gagne quelques points de *green-
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Footnotes reference -->
 [^1]: traduction de *framework* recommandée par l'Office québécois de la langue française. Source : [Wikipedia](https://fr.wikipedia.org/wiki/Framework#Traduction_fran%C3%A7aise)

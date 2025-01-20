@@ -52,6 +52,4 @@ Le seul bémol avec l'ouverture au monde entier c'est que le temps d'attente pou
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

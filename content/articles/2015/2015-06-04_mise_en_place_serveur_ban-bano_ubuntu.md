@@ -37,7 +37,7 @@ Nous nous concentrons sur l'utilisation des données mais si votre rue ou votre 
 !!! note
     Ce contenu a été présenté lors du SOTM (State Of The Map) France 2015 à Brest (29) pendant la journée d'organisation libre, le Dimanche.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Le géocodage, pour qui, pour quoi ?
@@ -336,6 +336,4 @@ Nous espérons que vous avez apprécié ce contenu. N'hésitez pas à commenter 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/thomas-gratier.md"
+<!-- geotribu:authors-block -->

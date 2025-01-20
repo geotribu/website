@@ -65,7 +65,6 @@ jobs:
       - name: Build static website
         run: |
           geotribu --help > content/toc_nav_ignored/snippets/code/geotribu_cli_help.txt
-          python scripts/050_mkdocs_populate_latest.py -c mkdocs.yml
           python scripts/100_mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
@@ -82,7 +81,7 @@ jobs:
           MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

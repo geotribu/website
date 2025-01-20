@@ -482,6 +482,4 @@ Traduction réalisée par Van De Casteele Arnaud le 2009-09-28
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

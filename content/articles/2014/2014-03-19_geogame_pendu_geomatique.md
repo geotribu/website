@@ -36,6 +36,4 @@ Bonne chance !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jeremie-ory.md"
+<!-- geotribu:authors-block -->

@@ -37,6 +37,4 @@ La [version 1.0](http://trac.geoext.org/milestone/1.0) de GeoExt se profile à l
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

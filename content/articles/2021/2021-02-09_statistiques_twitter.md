@@ -6,7 +6,8 @@ categories:
     - article
 comments: true
 date: 2021-02-09
-description: 'Récupérer des données sociales de Twitter, les préparer et les représenter est assez simple, grâce à trois bibliothèques Python : Twint, Pandas et Plolty. L''exemple développé ici s''appuie sur les statistiques autour des GeoRDP et articles parus dans GeoTribu en 2020'
+description: "Récupérer des données sociales de Twitter, les préparer et les représenter est assez simple, grâce à trois bibliothèques Python : Twint, Pandas et Plolty. L'exemple développé ici s'appuie sur les statistiques autour des GeoRDP et articles parus dans GeoTribu en 2020"
+icon: material/twitter
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png
 tags:
     - Geotribu
@@ -37,7 +38,7 @@ Et puis c'est aussi l'occasion de faire un article sur le forage de données ([u
 
 ![banner geotribu stats twitter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/stats_twitter/geotribu_stats_twitter.png "Geotribu stats Twitter"){: .img-center loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Récupérer les données de Twitter grâce à Twint
@@ -271,6 +272,4 @@ N'hésitez pas à nous faire des retours dans les commentaires, si vous avez ég
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/aurelien-chaumet.md"
+<!-- geotribu:authors-block -->

@@ -36,6 +36,4 @@ Chacune de ces librairies possède ces avantages et ces inconvénients, c'est av
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

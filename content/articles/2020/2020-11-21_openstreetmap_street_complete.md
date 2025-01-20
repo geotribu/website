@@ -1,21 +1,21 @@
 ---
-title: Contribution facile et ludique à OSM avec Street Complete
+title: Contribution facile et ludique à OSM avec StreetComplete
 authors:
     - Julien MOURA
 categories:
     - article
 comments: true
 date: 2020-11-21
-description: Présentation de Street Complete, l'application Android qui permet de contribuer facilement et de façon ludique à OpenStreetMap.
+description: Présentation de StreetComplete, l'application Android qui permet de contribuer facilement et de façon ludique à OpenStreetMap.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/streetcomplete_banner.png
 tags:
     - Android
     - contribution
     - OpenStreetMap
-    - Street Complete
+    - StreetComplete
 ---
 
-# Street Complete : la contribution facile à OpenStreetMap
+# StreetComplete : la contribution facile à OpenStreetMap
 
 :calendar: Date de publication initiale : 21 novembre 2020
 
@@ -28,18 +28,18 @@ Je dois vous avouer quelque-chose : cela fait quelques années déjà que je ne 
 Au-delà de mon propre cas, je n'ai jamais réussi à convaincre des amis de contribuer qui n'étaient pas déjà des géo-machins ou des geeks plus ou moins politisés. On me rétorque souvent que c'est trop lourd et long pour juste renseigner les petites infos qui seraient intéressantes d'un point de vue d'un utilisateur grand public : numéro de boîte, nom d'un commerce, horaires d'ouverture, etc.
 Or, à mon sens, l'un des enjeux de la pérennité du projet réside dans sa capacité à engranger de nouveaux contributeurs/ices et avec des profils plus diversifiés.
 
-Et au milieu du dernier printemps, j'ai fait la connaissance de Street Complete, une application qui facilite grandement la contribution en plus de la rendre ludique. Petite présentation en guise de coup de pub.
+Et au milieu du dernier printemps, j'ai fait la connaissance de StreetComplete, une application qui facilite grandement la contribution en plus de la rendre ludique. Petite présentation en guise de coup de pub.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
-![StreetComplete](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_banniere.webp "Bannière Street Complete")
+![StreetComplete](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_banniere.webp "Bannière StreetComplete")
 
 ## Présentation
 
-![La carte de Street Complete](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_carte.jpg "La carte de Street Complete"){: loading=lazy align=left clear=right width=150px }
+![La carte de StreetComplete](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_carte.jpg "La carte de StreetComplete"){: loading=lazy align=left clear=right width=150px }
 
-Sponsorisée entre autres par le ministère de l'éducation et de la recherche de l'Allemagne et soutenue par la fondation OSM, Street Complete est une [application open source pour smartphone Android](https://github.com/westnordost/StreetComplete) qui propose de contribuer à la base OpenStreetMap au travers d'un système de questions simples sur les éléments environnants.
+Sponsorisée entre autres par le ministère de l'éducation et de la recherche de l'Allemagne et soutenue par la fondation OSM, StreetComplete est une [application open source pour smartphone Android](https://github.com/westnordost/StreetComplete) qui propose de contribuer à la base OpenStreetMap au travers d'un système de questions simples sur les éléments environnants.
 
 Une fois authentifié/e à son compte OpenStreetMap, l'interface principale est un fond de carte (propulsé [JawgMaps](https://www.jawg.io/)) sur lequel les questions sont représentées par des marqueurs dont l'icône représente la catégorie.
 
@@ -51,14 +51,14 @@ Pour rendre le tout attrayant, l'application suit les préceptes de la [ludifica
 
 ![Quête : typologie des bâtiments](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_batiment.jpg "Quête : typologie des bâtiments"){: loading=lazy width=140px }
 ![Quête : bornes de recyclage](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_type_dechets.jpg "Quête : bornes de recyclage"){: loading=lazy width=140px }
-![Street Complete : quête route](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_route.jpg "Street Complete : quête route"){: loading=lazy width=140px }
-![Street Complete : rang enquêteur](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_enqueteur.jpg "Street Complete : rang enquêteur"){: loading=lazy width=140px }
-![Street Complete : choix des quêtes](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quetes_options.jpg "Street Complete : choix des quêtes"){: loading=lazy width=140px }
+![StreetComplete : quête route](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quete_route.jpg "StreetComplete : quête route"){: loading=lazy width=140px }
+![StreetComplete : rang enquêteur](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_enqueteur.jpg "StreetComplete : rang enquêteur"){: loading=lazy width=140px }
+![StreetComplete : choix des quêtes](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_quetes_options.jpg "StreetComplete : choix des quêtes"){: loading=lazy width=140px }
 {: align=middle }
 
 ## Un beau projet en pleine croissance
 
-![Street Complete : rang habitué](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_habitue.jpg "Street Complete : rang habitué"){: loading=lazy width=150px align=right }
+![StreetComplete : rang habitué](https://cdn.geotribu.fr/img/articles-blog-rdp/openstreetmap/street_complete/StreetComplete_rang_habitue.jpg "StreetComplete : rang habitué"){: loading=lazy width=150px align=right }
 
 En somme, une application bien conçue, bien développée et qui plus est connectée à la communauté et à ses valeurs : ouverte, accueillante, mise en valeur des autres projets et appui sur la base de connaissance centralisée qu'est le sacro-saint wiki.
 
@@ -77,9 +77,7 @@ Pour finir, voici une vidéo de l'utilisation (elle date d'avril donc il y a eu 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [ludification]: https://fr.wikipedia.org/wiki/Ludification

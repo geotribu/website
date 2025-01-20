@@ -126,6 +126,4 @@ On peut déclarer une caméra, et agir dessus.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

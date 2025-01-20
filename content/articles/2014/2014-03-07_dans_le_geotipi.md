@@ -21,7 +21,7 @@ Au-delà de vous faire découvrir l'envers du décor, ce billet a également pou
 
 ----
 
-Nous aurions aimé vous dire que nous sommes une [équipe](../../team/contributors.md) rigoureuse, que le processus de création de notre revue de presse est parfaitement défini, bien rodé... et qu'il nous suffit de l'appliquer chaque semaine. Malheureusement non, et cela est loin d'être le cas. En effet, les contributions sont réalisées de manière bénévole et l'implication de nos contributeurs est donc soumise à différents aléas (famille, charge de travail, occupation, coup de blues, etc.). Du coup, toute nouvelle revue de presse est un éternel challenge qu'il nous faut surmonter en jonglant avec les disponibilités de chacun.
+Nous aurions aimé vous dire que nous sommes une [équipe](../../team/index.md) rigoureuse, que le processus de création de notre revue de presse est parfaitement défini, bien rodé... et qu'il nous suffit de l'appliquer chaque semaine. Malheureusement non, et cela est loin d'être le cas. En effet, les contributions sont réalisées de manière bénévole et l'implication de nos contributeurs est donc soumise à différents aléas (famille, charge de travail, occupation, coup de blues, etc.). Du coup, toute nouvelle revue de presse est un éternel challenge qu'il nous faut surmonter en jonglant avec les disponibilités de chacun.
 
 En plus de l'aspect humain, nous discutons également au préalable sur notre mailing list des thématiques qui seront abordées. Cela a d'ailleurs donné lieu à des discussions enflammées. C'est d'ailleurs de là que vient l'origine de ce billet et surtout de la super image que Jérémie nous a créée pour l'occasion !
 
@@ -33,6 +33,4 @@ Alors n'oubliez pas : si vous êtes une entreprise, une association ou autres, e
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

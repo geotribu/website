@@ -1,4 +1,25 @@
-# Samuel Deschamps-Berger {: data-search-exclude }
+---
+title: Samuel Deschamps-Berger
+categories:
+    - contributeur
+social:
+    - bluesky:
+    - github:
+    - gitlab:
+    - linkedin:
+    - mail:
+    - mastodon:
+        - instance:
+        - username:
+    - openstreetmap:
+    - osgeo:
+    - twitter:
+    - website:
+---
+
+# Samuel Deschamps-Berger
+
+<!-- --8<-- [start:author-sign-block] -->
 
 ![Portrait Samuel Deschamps-Berger](https://cdn.geotribu.fr/img/internal/contributeurs/sdeb.jpg "Portrait Samuel Deschamps-Berger"){: .img-thumbnail-left }
 
@@ -8,3 +29,5 @@ Chez Forcity, plateforme "Simcity IRL", en tant qu'expert SIG : qualité et proc
 J'aide maintenant [Geovelo](https://geovelo.fr/pro/) autour des problématiques du calculateur d'itinéraires cyclables (conception des profils cyclistes, performances, récupération & traitements des données OpenStreetMap, ... ).
 
 Vous pouvez me contacter sur [Twitter](https://twitter.com/Sam_DeschB) ou [LinkedIn](https://www.linkedin.com/in/samuel-deschamps-berger/).
+
+<!-- --8<-- [end:author-sign-block] -->

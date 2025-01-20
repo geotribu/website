@@ -15,8 +15,8 @@ license: beerware
 robots: index, follow
 tags:
     - cartographie
-    - OpenStreetMap
     - Matplotlib
+    - OpenStreetMap
     - prettymapp
     - prettymaps
     - Python
@@ -41,7 +41,7 @@ Cette bibliothèque Python est un générateur de cartes statiques stylisées à
 
 Il y a déjà de nombreuses ressources et posts ([notamment sur LinkedIn](https://www.linkedin.com/search/results/content/?keywords=prettymaps&origin=FACETED_SEARCH&sid=jXj&sortBy=%22date_posted%22)) sur [prettymaps](https://github.com/marceloprates/prettymaps/) mais je n'ai rien trouvé en français ni rien qui ne détaille vraiment le fonctionnement. Alors c'est parti !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -323,8 +323,6 @@ Ah j'oubliais. J'ai fait pas mal d'essais avec les 2 bibliothèques que j'ai sto
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

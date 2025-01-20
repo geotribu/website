@@ -190,6 +190,4 @@ Chacun s'occupe de ce dans quoi il est bon. Si vous avez plus d'infos concernant
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

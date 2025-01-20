@@ -14,8 +14,8 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective
 license: beerware
 tags:
     - 30DayMapChallenge
-    - QGIS
     - OpenSource
+    - QGIS
 ---
 
 # Retour vers le futur du #30DayMapChallenge 2022
@@ -32,7 +32,7 @@ tags:
 
 :sparkles: En novembre dernier avait lieu le **#30DayMapChallenge** !
 
-À cette occasion, les :two_women_holding_hands: _[géotribuns](../../team/index.md)_ :two_women_holding_hands: n'avaient d'ailleurs pas manqué d'aborder [en long](../../rdp/2022/rdp_2022-10-21.md#cest-bientot-le-30daymapchallenge) et [en large](../../rdp/2022/rdp_2022-11-18.md#30daymapchallenge) la tenue de cet évènement, particulièrement apprécié par la communauté :world_map:. Un évènement décousu et attendu de longue date, mais pas cousu de fil blanc, bien au contraire : découvrons ensemble les perles inattendues, les décoctions géoréférencées et autres remèdes cartographiques concoctés par les herboristes véhéments qui ont participé au challenge :herb:
+À cette occasion, les :two_women_holding_hands: _[géotribuns](../../about/index.md)_ :two_women_holding_hands: n'avaient d'ailleurs pas manqué d'aborder [en long](../../rdp/2022/rdp_2022-10-21.md#cest-bientot-le-30daymapchallenge) et [en large](../../rdp/2022/rdp_2022-11-18.md#30daymapchallenge) la tenue de cet évènement, particulièrement apprécié par la communauté :world_map:. Un évènement décousu et attendu de longue date, mais pas cousu de fil blanc, bien au contraire : découvrons ensemble les perles inattendues, les décoctions géoréférencées et autres remèdes cartographiques concoctés par les herboristes véhéments qui ont participé au challenge :herb:
 
 ![20: My favourite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/retrospective_30dmc_2022/30dmc_2022_retro_02_d20.png){: .img-center loading=lazy }
 
@@ -314,8 +314,6 @@ Rendez-vous en novembre pour la prochaine édition !
 
 ----
 
-## Auteur
-
---8<-- "content/team/guilhem-allaman.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

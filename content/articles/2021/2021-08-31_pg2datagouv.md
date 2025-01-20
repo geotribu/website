@@ -44,7 +44,7 @@ Je ne vais pas vous faire un rappel sur l'ouverture des données publiques mais 
 
 En ce qui me concerne et contrairement au Parc national des Écrins, je n'ai pas de serveur à disposition pour y déposer mes données, j'ai donc développé un processus en Bash qui s'appuie sur [OGR](https://gdal.org/programs/ogr2ogr.html) pour extraire des données stockées dans une base [PostgreSQL](https://www.postgresql.org) et les publier directement sur le portail [data.gouv.fr](https://www.data.gouv.fr/fr/) à travers l'[API dédiée](https://doc.data.gouv.fr/api/intro/).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## pg2datagouv
@@ -270,8 +270,6 @@ La solution que je vous propose nécessite un peu de temps de mise en oeuvre et 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

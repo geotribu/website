@@ -144,6 +144,4 @@ Les exemples ci-dessus ne sont qu'un très faible aperçu des possibilités de l
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

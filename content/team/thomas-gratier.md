@@ -1,4 +1,25 @@
-# Thomas Gratier {: data-search-exclude }
+---
+title: Thomas Gratier
+categories:
+    - contributeur
+social:
+    - bluesky:
+    - github:
+    - gitlab:
+    - linkedin:
+    - mail:
+    - mastodon:
+        - instance:
+        - username:
+    - openstreetmap:
+    - osgeo:
+    - twitter:
+    - website:
+---
+
+# Thomas Gratier
+
+<!-- --8<-- [start:author-sign-block] -->
 
 ![portrait Thomas Gratier](https://cdn.geotribu.fr/img/internal/contributeurs/tgra.png "portrait Thomas Gratier"){: .img-thumbnail-left }
 
@@ -7,3 +28,5 @@ Géographe de formation, après quelques années tant côté gestion de projet ,
 J'utilise plutôt des technologies open source mais je m'intéresse aussi à l'interopérabilité entre les solutions propriétaires et open source. Même si je rédige pas mal au sein de l'équipe, je contribue plutôt à identifier les ressources pour alimenter la revue de presse, étant très rôdé sur la veille géomatique.
 
 Pour en savoir plus, [suivez-moi sur Twitter](https://twitter.com/ThomasG77).
+
+<!-- --8<-- [end:author-sign-block] -->

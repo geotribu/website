@@ -39,7 +39,7 @@ Comme évoqué dans l'introduction de [la GeoRDP du 12 mars](../../rdp/2021/rdp_
 
 Finalement, on a mis en place [Isso] et après un mois d'utilisation, il est temps de faire un retour d'expérience.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -166,9 +166,7 @@ C'est beau l'open source :smiling_face_with_3_hearts:.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [Disqus]: https://disqus.com/

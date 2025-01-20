@@ -34,7 +34,7 @@ Avec le confinement, la **chasse aux œufs** est compromise pour Pâques !
 
 Alors embarquez pour une chasse aux œufs virtuelle :rabbit: :egg: :bell:, **sans sortir de chez vous** ?
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -83,6 +83,4 @@ Chasse ouverte jusqu'au 30 avril et 100% garantie sans crise de foie !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jean-marc-viglino.md"
+<!-- geotribu:authors-block -->

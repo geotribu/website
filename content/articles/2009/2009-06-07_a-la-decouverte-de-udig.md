@@ -83,6 +83,4 @@ Pour le moment, je dois avouer que c'est UDIG qui me convient le plus. Seul poin
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

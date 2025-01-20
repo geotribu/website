@@ -157,6 +157,4 @@ L'ajout de contrôle sur une carte Google Maps est très simple tout comme la cr
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

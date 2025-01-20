@@ -27,6 +27,4 @@ Au delà de ce manuel, je salue l'important travail réalisé par l'OSGEO-fr dan
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -1,6 +1,19 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
+
+{# Meta type #}
+{% set page_type = "article" %}
+{% if page.is_homepage or page.abs_url == "/" %}
+{% set page_type = "website" %}
+{% elif "rdp/" in page.url %}
+{% set page_type = "geordp" %}
+{% elif "team/" in page.url %}
+{% set page_type = "author_profile" %}
+{% else %}
+{% set page_type = "article" %}
+{% endif %}
+
 {# SEO Robots #}
 {% if page and page.meta and page.meta.robots %}
 <meta property="robots" content="{{ page.meta.robots }}" />
@@ -19,21 +32,27 @@
 {% endif %}
 
 {# Meta date #}
+{% set page_date = build_date_utc.date() %}
 {% if page and page.meta and page.meta.date %}
-{% set date = page.meta.date %}
+{% set page_date = page.meta.date %}
 {% endif %}
+
 {# Meta description #}
 {% set description = config.site_description %}
 {% if page and page.meta and page.meta.description %}
 {% set description = page.meta.description | striptags %}
+{% elif page and page_type == "author_profile" %}
+{% set description = "Profil Geotribu de " + page.title | striptags %}
 {% elif page and page.description and not page.is_homepage %}
 {% set description = page.description | striptags %}
 {% endif %}
+
 {# Meta image #}
 {% set image = 'https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg' %}
 {% if page and page.meta and page.meta.image %}
 {% set image = page.meta.image %}
 {% endif %}
+
 {# Meta author #}
 {% set author = config.site_author %}
 {% if page and page.meta and page.meta.authors and not page.is_homepage %}
@@ -54,7 +73,7 @@
 
 {# Social card enabled #}
 {% set social_card = false %}
-{% if page and not page.is_homepage and page.meta and page.meta.social and page.meta.social.cards %}
+{% if page and page.meta and page.meta.social and page.meta.social.cards %}
 {% set social_card = true %}
 {% endif %}
 
@@ -63,14 +82,8 @@
 <meta http-equiv="cache-control" content="public">
 <meta http-equiv="expires" content="43200" />
 
-{# Meta type #}
-{% if page.is_homepage %}
-{% set type = "website" %}
-{% else %}
-{% set type = "article" %}
-{% endif %}
 
-<meta name="social:card" content="{{ social_card }}">
+
 {# JSON Feed #}
 {% include "partials/json_feed.html.jinja2" %}
 {# Semantic web - schemas.org #}
@@ -79,6 +92,10 @@
 {% include "partials/cards_opengraph.html.jinja2" %}
 {# Social cards - Twitter #}
 {% include "partials/cards_twitter.html.jinja2" %}
+
+{# Store custom Geotribu tags #}
+<meta name="geotribu:page_type" content="{{ page_type }}">
+<meta name="social:card" content="{{ social_card }}">
 
 {% endblock %}
 

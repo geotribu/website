@@ -27,7 +27,7 @@ Depuis 2019, le Département accompagne les communes pour la saisie et la diffus
 
 ![QGIS label](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_dashboard_calvados/intro.png  "QGIS - intro vue Dashboard"){: .img-center loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -192,9 +192,7 @@ Ci-dessous, un exemple d'affichage des bilans adresses (en haut à droite) aprè
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/theo-grondin.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}
 

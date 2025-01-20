@@ -102,6 +102,4 @@ Ainsi s'achève ce billet qui j'espère vous aura convaincu des potentialités d
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

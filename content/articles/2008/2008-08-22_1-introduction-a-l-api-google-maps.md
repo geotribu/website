@@ -107,6 +107,4 @@ La fonction `GUnload()` permet de libérer la mémoire lorsque l'on quitte la pa
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

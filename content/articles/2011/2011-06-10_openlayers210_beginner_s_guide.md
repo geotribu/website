@@ -31,6 +31,4 @@ En somme, c'est un ouvrage à mettre entre toutes les mains qui permettra de dé
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

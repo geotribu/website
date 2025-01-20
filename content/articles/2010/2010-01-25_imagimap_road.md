@@ -36,6 +36,4 @@ Afin d'améliorer ce service, nous vous invitons à poster vos remarques, nous �
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -13,8 +13,8 @@ license: default
 tags:
     - Bash
     - data
-    - OGR
     - Mapillary
+    - OGR
     - SQL
 ---
 
@@ -44,7 +44,7 @@ tags:
 
 Cet article s'inscrit dans la continuité de l'article que j'avais intitulé [accéder aux données Mapillary et les intégrer dans son SIG](2022-05-31_donnees_mapillary.md). En effet, au moment où celui-ci avait été rédigé, je n'étais pas encore équipé pour réaliser des vues immersives. C'est maintenant chose faite et je vous propose un retour d'expérience qui je l'espère permettra d'alimenter discussions et réflexions sur le sujet.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -341,8 +341,6 @@ Cet article vous illustre mon retour d'expérience matériel concernant la prise
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

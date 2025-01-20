@@ -28,7 +28,7 @@ Je vous propose un guide pour réaliser ce travail en prenant en main le [plugin
 
 Initialement, le plugin a été développé pour classifier différents types de végétation mais il peut être utilisé pour différencier des structures bien distinctes.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -140,8 +140,6 @@ A noter qu'il existe aussi d'autres méthodes de calcul (expérimental) du plugi
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/sylvain-kerdreux.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

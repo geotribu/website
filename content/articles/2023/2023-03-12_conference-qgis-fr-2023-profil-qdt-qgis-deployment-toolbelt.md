@@ -14,8 +14,8 @@ robots: index, follow
 tags:
     - OSGeo-fr
     - QDT
-    - QGIS Deployment Toolbelt
     - QGIS
+    - QGIS Deployment Toolbelt
 ---
 
 # La conférence QGIS FR approche : préparez votre environnement avec QDT !
@@ -50,7 +50,7 @@ C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.gith
 - [tout au clic sur des interfaces graphiques](#jaime-le-son-du-clic)
 - [tout à la ligne de commande](#jaime-le-bruit-des-touches)
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -212,8 +212,6 @@ Manquent à l'appel les plugins fermés (Espace Collaboratif de l'IGN...), ceux 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

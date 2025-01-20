@@ -193,6 +193,4 @@ Cette vérification est nécessaire pour éviter de faire 'planter' la carte.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

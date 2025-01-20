@@ -1,7 +1,11 @@
 tags:
+  3D: 3d
+  ArcGIS: esri
   atlas: atlas
   base de données: database
   Bash: code
+  Blender: blender
+  cartographie: carte
   Centipede: satellite
   CNIG: institution
   collecte: telephone
@@ -12,13 +16,14 @@ tags:
   D3.js: js
   DuckDB: database
   Easter eggs: oeuf
-  Esri: globe
+  Esri: esri
   ETL: roue
   ExtJS: js
   Facebook: facebook
   FIG: conference
   FME: roue
   FOSS4G: conference
+  GDAL: gdal
   GéoDataDays: conference
   GeoGames: manette
   GeoKettle: roue
@@ -34,6 +39,7 @@ tags:
   Google Maps: google
   Google Street View: google
   GraphHopper: route
+  GRASS: grass
   Halloween: citrouille
   HTML: html
   HTML5: html
@@ -56,9 +62,11 @@ tags:
   Mastodon: mastodon
   Matrix: commentaires
   Minecraft: manette
+  modèle numérique d'élévation: terrain
   MySQL: database
   NoSQL: database
   ODK: telephone
+  OGR: gdal
   Open Data Kit: telephone
   OpenDroneMap: drone
   OpenPathView: streetview
@@ -84,13 +92,17 @@ tags:
   Python: python
   PyWPS: python
   QField: telephone
-  QGIS: globe
+  QGIS: qgis
   R: rstats
+  raster: raster
+  relief: terrain
   réseaux sociaux: rezosocio
   route: route
   routing: route
+  SAGA: gemeaux
   SQL: database
   three.js: js
+  topologie: vector
   Twitter: twitter
   Ubuntu: ubuntu
   Wikipédia: wikipedia

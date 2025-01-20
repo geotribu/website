@@ -31,7 +31,7 @@ Après l'avoir évoqué dans [la dernière GeoRDP](../../rdp/2021/rdp_2021-01-15
 
 Si vous avez essayé Unfolded Studio, n'hésitez pas à laisser vos impressions dans les commentaires !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -211,9 +211,7 @@ Reste à voir la manière dont cela évoluera dans le futur !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/aurelien-chaumet.md"
+<!-- geotribu:authors-block -->
 
 <!-- hyperlinks reference -->
 [deck.gl]: https://deck.gl/

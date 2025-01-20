@@ -134,6 +134,4 @@ Comme vous pouvez le constater, une fois la procédure connue, cela ne prend pas
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

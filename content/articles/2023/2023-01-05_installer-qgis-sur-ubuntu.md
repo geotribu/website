@@ -9,6 +9,7 @@ categories:
 comments: true
 date: 2023-01-05
 description: Installer QGIS sur la distribution la plus répandue de l'écosystème Linux pose encore question, voire des problèmes. Un tutoriel sur la marche à suivre pour s'en rappeler quand le besoin se fait sentir.
+icon: fontawesome/brands/ubuntu
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/qgis_installation_ubuntu/qgis_ubuntu_linux.png
 license: beerware
 tags:
@@ -19,7 +20,7 @@ tags:
 
 # Installer QGIS sur Ubuntu, le pense-bête simple et efficace
 
-:calendar: Date de publication initiale : 5 janvier 2023
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
 
@@ -38,7 +39,7 @@ Enfin, on ne va pas râler puisque c'est gratuit, qu'on n'est pas le produit et 
 Comme je n'installe ni ne réinstalle QGIS tous les 4 matins, je me note la procédure ici histoire de pouvoir la retrouver et la partager facilement.  
 Vu que c'est un sujet vivant, je tenterai de mettre ce tutoriel à jour de temps à autre mais n'hésitez pas à signaler un souci ou à [proposer un ajustement](https://contribuer.geotribu.fr/edit/fix_content_from_website/).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -285,9 +286,7 @@ On aère un peu et on repart sur [le début de la procédure](#dependances).
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
 

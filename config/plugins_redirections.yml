@@ -327,7 +327,7 @@ redirects:
     node/501.md: rdp/2012/rdp_2012-03-16.md
     node/502.md: rdp/2012/rdp_2012-03-23.md
     node/503.md: rdp/2012/rdp_2012-03-30.md
-    # node/504.md: articles/2012/2012-04-17_calcul_de_buffer_sous_mysql_1ere_partie_theorie.md
+    node/504.md: articles/2012/2012-04-16_calcul_buffer_mysql_partie_1_theorie.md
     node/505.md: articles/2012/2012-04-17_calcul_buffer_mysql_pratique.md
     node/506.md: rdp/2012/rdp_2012-04-06.md
     node/507.md: rdp/2012/rdp_2012-04-13.md
@@ -595,7 +595,17 @@ redirects:
     node/847.md: rdp/2016/rdp_2016-07-01.md
     # node/850.md:
     rdp/2010/rdp_2010-10-14.md: rdp/2010/rdp_2010-10-15.md
+    rdp/2012/rdp_2012-09-06.md: rdp/2012/rdp_2012-09-07.md
+    rdp/2012/rdp_2012-02-05.md: rdp/2012/rdp_2012-02-03.md
+    rdp/2013/rdp_2013-07-02.md: rdp/2013/rdp_2013-07-05.md
+    rdp/2014/rdp_2014-06-14.md: rdp/2014/rdp_2014-06-13.md
+    rdp/2014/rdp_2014-11-10.md: rdp/2014/rdp_2014-11-14.md
+    rdp/2014/rdp_2014-11-24.md: rdp/2014/rdp_2014-11-28.md
     rdp/2015/rdp_2015-04-07.md: rdp/2015/rdp_2015-04-10.md
+    rdp/2015/rdp_2015-04-20.md: rdp/2015/rdp_2015-04-24.md
+    rdp/2010/rdp_2010-10-05.md: rdp/2010/rdp_2010-10-01.md
+    rdp/2014/rdp_2014-11-17.md: rdp/2014/rdp_2014-11-14.md
+    rdp/2015/rdp_2015-12-21.md: rdp/2015/rdp_2015-12-18.md
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
     # rss.md: https://geotribu.fr/feed_rss_created.xml
 
@@ -606,6 +616,7 @@ redirects:
     articles/2008/art_2008-11-17.md: articles/2008/2008-11-17_workshop-quantum-gis.md
     articles/2008/art_2008-12-06.md: articles/2008/2008-12-06_comparatif-des-differentes-solutions-cartographiques-open-source.md
     articles/2008/art_2008-12-07.md: articles/2008/2008-12-07_les-donnees-sig-devraient-elles-etre-libres.md
+    articles/2008/art_2008-12-16.md: articles/2008/2008-12-16_appel-a-sponsoring-code-sprint-open-layers.md
     articles/2009/art_2009-01-13.md: articles/2009/2009-01-13_generer-des-tuiles-avec-php.md
     articles/2009/art_2009-01-14.md: articles/2009/2009-01-14_android-et-openstreetmap.md
     articles/2009/art_2009-01-21.md: articles/2009/2009-01-21_liste-des-logiciels-opensource-disponible.md
@@ -687,6 +698,7 @@ redirects:
     articles/2010/art_2010-03-02.md: articles/2010/2010-03-02_etl_spatiaux_opensource.md
     articles/2010/art_2010-03-11.md: articles/2010/2010-03-11_linux_sans_contrainte_virtualbox.md
     articles/2010/art_2010-03-12.md: articles/2010/2010-03-12_geojquery_alternative_a_geoext.md
+    articles/2010/art_2010-03-15.md: articles/2010/2010-03-15_yql_geo_library.md
     articles/2010/art_2010-03-17.md: articles/2010/2010-03-17_api_geoportail_version1.md
     articles/2010/art_2010-03-18.md: articles/2010/2010-03-18_rapprochement_osmfr_osgeofr.md
     articles/2010/art_2010-03-25.md: articles/2010/2010-03-25_ca_bouge_chez_geoext.md
@@ -800,6 +812,7 @@ redirects:
     articles/2015/art_2015-02-09.md: articles/2015/2015-02-09_8eme_geoseminaire_silat.md
     articles/2015/art_2015-02-16.md: articles/2015/2015-02-16_orientation_des_rues_de_paris.md
     articles/2015/art_2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md: articles/2015/2015-06-04_mise_en_place_serveur_ban-bano_ubuntu.md
+    articles/2021/2021-01-25_pyqgis_previsualiser_images_integrees.md: articles/2021/2021-02-02_pyqgis_previsualiser_images_integrees.md
     articles/2021/2021-06-08_odk_postgis_2.md: articles/2021/2021-06-22_odk_postgis_2.md
     articles/2021/2021-06-17_qgis_personnaliser_splash_screen.md: articles/2021/2021-06-11_qgis_personnaliser_splash_screen.md
     articles/2023/2023-03-12_conference-qgis-fr-2023-preparer-profil-qdt-.md: articles/2023/2023-03-12_conference-qgis-fr-2023-profil-qdt-qgis-deployment-toolbelt.md
@@ -845,12 +858,16 @@ redirects:
     # migration
     toc_nav_ignored/qgis_resources_preview_table.md: https://geotribu.github.io/pyqgis-icons-cheatsheet/
     team/statistiques.md: index.md
+    team/contributors.md: team/index.md
+    team/confidentialite.md: about/confidentialite.md
 
     # page auteurices
     team/acha.md: team/aurelien-chaumet.md
     team/avha.md: team/adrien-van-hamme.md
     team/avan.md: team/arnaud-vandecasteele.md
+    team/avdc.md: team/arnaud-vandecasteele.md
     team/bmer.md: team/boris-mericskay.md
+    team/credits.md: about/credits.md
     team/cros.md: team/cedric-rossi.md
     team/cque.md: team/christian-quest.md
     team/dmon.md: team/delphine-montagne.md
@@ -861,6 +878,7 @@ redirects:
     team/gall.md: team/guilhem-allaman.md
     team/gdbo.md: team/guillaume-de-boyer.md
     team/hfio.md: team/humbert-fiorino.md
+    team/jdes.md: team/jean-baptiste-desbas.md
     team/jemv.md: team/jean-marc-viglino.md
     team/jgar.md: team/jeremy-garniaux.md
     team/jhan.md: team/jeremie-hanke.md
@@ -887,9 +905,23 @@ redirects:
     team/sdeb.md: team/samuel-deschamps-berger.md
     team/sdes.md: team/samuel-deschamps-berger.md
     team/sker.md: team/sylvain-kerdreux.md
+    team/sponsoring.md: about/sponsoring.md
     team/srit.md: team/stephane-ritzenthaler.md
     team/tgra.md: team/thomas-gratier.md
     team/tgram.md: team/tristram-grabener.md
     team/tgro.md: team/theo-grondin.md
     team/vale.md: team/victor-alexandre.md
     team/vleb.md: team/valerian-lebert.md
+
+    # divers (typos, changement de date...)
+    articles/2010/2010-12-13_imagemap_baselayers_v2.md: articles/2010/2010-12-13_imagimap_baselayers_v2.md
+    rdp/2013/rdp_2013-01-26.md: rdp/2013/rdp_2013-01-25.md
+    rdp/2013/rdp_2013-02-02.md: rdp/2013/rdp_2013-02-01.md
+    rdp/2013/rdp_2013-07-13.md: rdp/2013/rdp_2013-07-12.md
+    rdp/2015/rdp_2015-03-16.md: rdp/2015/rdp_2015-03-13.md
+    rdp/2015/rdp_2015-05-16.md: rdp/2015/rdp_2015-05-15.md
+    rdp/2015/rdp_2015-09-21.md: rdp/2015/rdp_2015-09-25.md
+    rdp/2015/rdp_2015-11-30.md: rdp/2015/rdp_2015-12-11.md
+    articles/2024/2024-07-16_de-la-tolerance-en-sig-geometrie-01-annonce.md: articles/2024/2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md
+    articles/2024/2024-07-18_de-la-tolerance-en-sig-geometrie-02-calculs-intersects-qgis-pas-bons.md: articles/2024/2024-07-18_de-la-tolerance-en-sig-geometrie-01-calculs-intersects-qgis-pas-bons.md
+    articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gconfig.md: articles/2010/2010-08-25_interroger_geoserver_en_python_grace_a_gsconfig.md

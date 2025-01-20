@@ -127,6 +127,4 @@ En conclusion, je dirais que ces applications sont à considérer comme les futu
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

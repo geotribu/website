@@ -42,7 +42,7 @@ Pour trouver les icônes, je vous renvoyais sur [le fichier de ressources de QGI
 
 Dans cet article, je vous propose de générer une page HTML dans laquelle on liste et on prévisualise les images intégrées.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## L'heure du script a sonné
@@ -260,9 +260,7 @@ Pour les plus curieux, j'ai stocké le script complet et avec quelques optimisat
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
 

@@ -51,7 +51,7 @@ Pour démarrer, taper : 'geotribu --help' ou 'geotribu rss'.
 
 <!-- markdownlint-enable MD040 -->
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -201,9 +201,7 @@ C'est évidemment open source et libre (licence MIT) donc si cela vous intéress
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}
 

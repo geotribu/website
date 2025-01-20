@@ -39,7 +39,7 @@ C'est un gage de plein de mots-clés : légèreté, réactivité, faible mainten
 
 Mais c'est surtout un bon moyen de jouer avec un site web sans se casser la tête !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 Pour mieux se rendre compte de la légèreté et de la facilité des sites statiques, faisons un exercice simple de mise en pratique : **déployons le site actuel de Geotribu sur notre ordinateur en 2 étapes**.
@@ -162,6 +162,4 @@ Et voilà, vous avez le site Geotribu sur votre ordinateur :smile: !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->

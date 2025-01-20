@@ -225,6 +225,4 @@ Sinon, le cercle chromatique a été réalisé par [sylveno](https://fr.wikipedi
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mathieu-rajerison.md"
+<!-- geotribu:authors-block -->

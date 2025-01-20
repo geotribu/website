@@ -1,12 +1,12 @@
 rss:
   abstract_chars_count: 500
+  cache_dir: !ENV [MKDOCS_PLUGIN_RSS_CACHE_DIR, .cache/plugins/rss]
   categories:
     - categories
     - tags
   comments_path: "#__comments"
   date_from_meta:
     as_creation: "date"
-    as_update: false
     datetime_format: "%Y-%m-%d %H:%M"
     default_timezone: Europe/Paris
     default_time: "14:00"

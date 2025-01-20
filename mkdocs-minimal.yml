@@ -14,6 +14,12 @@ copyright:
 docs_dir: !ENV [MKDOCS_SOURCE_DIR, "./content"]
 site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
+# Scripts pendant le build
+hooks:
+  - hooks/mkdocs/G000_load_subconfigs.py
+  - hooks/mkdocs/G005_jinja_filters.py
+  - hooks/mkdocs/G006_authors_block.py
+
 # Plugins
 plugins:
   - awesome-pages
@@ -33,7 +39,6 @@ plugins:
 # Theme
 theme:
   name: "material"
-  insiders_flavor: false
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/logo_geotribu.png
 
@@ -116,3 +121,20 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
+
+# validation:
+#   links:
+#     absolute_links: info
+#     not_found: info
+#     unrecognized_links: info
+#   nav:
+#     absolute_links: info
+#     not_found: info
+#     omitted_files: info
+
+validation:
+  absolute_links: ignore
+  anchors: ignore
+  not_found: ignore
+  omitted_files: ignore
+  unrecognized_links: ignore

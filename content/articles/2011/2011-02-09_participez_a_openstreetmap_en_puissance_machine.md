@@ -70,6 +70,4 @@ La génération des images utilise le moteur de style [Osmarender](https://wiki.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

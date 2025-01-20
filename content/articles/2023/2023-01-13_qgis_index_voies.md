@@ -28,7 +28,7 @@ tags:
 
 Nombreuses sont les communes qui disposent d'un plan de ville, qu'elles affichent dans la rue ou qu'elles mettent à disposition sous la forme d'un dépliant, je vous partage ici la manière dont j'ai créé un listing des voies sur une expérimentation de plan de ville. Il y a sans aucun doute des choses à améliorer alors n'hésitez pas à laisser vos propositions ou vos remarques en commentaire.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -112,8 +112,6 @@ Il est également possible d'exploiter le maillage créé pour afficher dans le 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

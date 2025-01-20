@@ -1,4 +1,25 @@
-# Aurélien Chaumet {: data-search-exclude }
+---
+title: Aurélien Chaumet
+categories:
+    - contributeur
+social:
+    - bluesky:
+    - github:
+    - gitlab:
+    - linkedin:
+    - mail:
+    - mastodon:
+        - instance:
+        - username:
+    - openstreetmap:
+    - osgeo:
+    - twitter:
+    - website:
+---
+
+# Aurélien Chaumet
+
+<!-- --8<-- [start:author-sign-block] -->
 
 ![Portrait Aurélien Chaumet](https://cdn.geotribu.fr/img/internal/contributeurs/achaumet.webp "Portrait Aurélien Chaumet"){: .img-thumbnail-left }
 
@@ -11,3 +32,5 @@ Intéressé par les données et leurs représentations, je reste en permanence e
 J'ai créé [un site internet](https://aurelienchaumet.github.io) me permettant de compiler certaines de mes réalisations.
 
 À travers Geotribu, j'espère pouvoir apporter mes connaissances sur les différents outils que j'utilise, en continuant de me former sur de nouveaux ! Pour toute question, [n'hésitez pas à passer par Twitter](https://twitter.com/AurelienChaumet) :bird:
+
+<!-- --8<-- [end:author-sign-block] -->

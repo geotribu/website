@@ -36,7 +36,7 @@ Vous aimez que tout soit bien paramétré pour vos utilisateurs ? Vous avez ce c
 
 Dans la lignée des articles parlant de l'installeur [OSGeo4W en ligne de commande](../2020/2020-07-03_deploy_qgis_windows.md), ou de la personnalisation du [splashscreen](2021-06-11_qgis_personnaliser_splash_screen.md), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -324,8 +324,6 @@ Maintenant, à vous de jouer, et pensez à remonter toute anomalie ou améliorat
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/regis-haubourg.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

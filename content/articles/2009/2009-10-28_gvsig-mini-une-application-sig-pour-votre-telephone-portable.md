@@ -37,6 +37,4 @@ Par rapport à d'autres applications orientées cartographie (AndNav 2, Nav4All.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

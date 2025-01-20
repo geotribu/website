@@ -41,7 +41,7 @@ Série **Accès aux données Copernicus/Sentinel** :
 * [Partie 1 : données OCS et Sentinel](2023-02-21_portails-copernicus-1-donnees.md).
 * [Partie 3 : évolution de l'accès aux données Copernicus](2023-03-07_portails-copernicus-3-futur.md).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -210,6 +210,4 @@ Pour avoir une liste plus exhaustive des différents portails et des outils d'ac
 
 Et si vous vous demandez si cela est vraiment bien raisonnable de devoir avoir 42 outils différents de téléchargement de données selon les portails d'accès utilisés alors vous serez sûrement intéressés par l'outil [EODAG](https://eodag.readthedocs.io/en/stable/) développé en open-source par la société [C.S Group](https://www.csgroup.eu/en/).
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/nicolas-david.md"
+<!-- geotribu:authors-block -->

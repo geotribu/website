@@ -23,7 +23,7 @@ Avec le changement de braquet de la firme de Redmond par rapport à l'open sourc
 
 Ceci dit, cela fait toujours du bien de se noter quelque part les méthodes et étapes à ne pas oublier pour être rapidement confortable et efficace. Et, qui sait, en partageant, ça servira peut-être à quelqu'un et j'apprendrai des éventuels retours :slightly_smiling_face:.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Installation et configuration
@@ -207,8 +207,6 @@ Il existe de [nombreuses listes de packages recommandés](https://encrypted.goog
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

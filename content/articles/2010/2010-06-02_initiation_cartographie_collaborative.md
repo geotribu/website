@@ -26,11 +26,11 @@ Je vous livre ci-dessous l'invitation faite par Nicolas Moyroud qui est à l'ini
 > Le Samedi 26 Juin 2010 à partir de 10h00 à la Maison de la Télédétection de Montpellier, va se dérouler une journée d'initiation à la cartographie collaborative OpenStreetMap. Cette journée accessible à tous permettra de découvrir le projet OpenStreetMap, comment utiliser les données géographiques disponibles et comment participer en contribuant au projet. La journée se terminera vers 16h00.
 >
 > Une sortie sera proposée pour cartographier les environs de la Maison de la Télédétection, vous pouvez donc amener votre GPS et votre appareil photo numérique. Vous pouvez également amener votre ordinateur portable si vous souhaitez en profiter pour installer les logiciels présentés. Quelques GPS et les ordinateurs de la Maison de la Télédétection seront disponibles pour ceux qui n'en auront pas.
->  
+>
 > Pour le repas de midi, chaque participant devra prévoir son pique-nique qui se déroulera dans les environs de la Maison de la Télédétection.
->  
+>
 > Pour vous inscrire, merci d'envoyer avant le 20 Juin vos nom, prénom et organisme/entreprise en contactant par mail Nicolas Moyroud à l'adresse  
-suivante : **nicolas[dot]moyroud[at]teledetection[dot]fr**
+> suivante : **nicolas[dot]moyroud[at]teledetection[dot]fr**
 
 *Liens utiles :*
 
@@ -40,6 +40,4 @@ suivante : **nicolas[dot]moyroud[at]teledetection[dot]fr**
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -80,6 +80,4 @@ Pour plus d'informations, n'hésitez pas à consulter :
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

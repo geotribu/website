@@ -16,9 +16,9 @@ tags:
     - déploiement
     - Docker
     - infra
+    - Q-ops
     - QField
     - QFieldCloud
-    - Q-ops
 ---
 
 # Déploiement et configuration d'un serveur QFieldCloud
@@ -62,7 +62,7 @@ Bon allez, on reprend.
 
 ![logo QField cloud](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qfield_cloud.png "logo QField cloud"){: .img-thumbnail-left }
 
-Connaissez-vous [QField](https://qfield.org/) ? C'est comme [David Copperfield](https://fr.wikipedia.org/wiki/David_Copperfield_(illusionniste)) le magicien, sauf que c'est pas de la magie... enfin, si ! C'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
+Connaissez-vous [QField](https://qfield.org/) ? QField c'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
 
 Plus concrètement, il s'agit d'une application mobile de saisie et relevé terrain, hautement compatible avec [QGIS](https://www.qgis.org), permettant de reproduire les paramétrages de saisie et formulaires des couches quasi à l'identique, poussée par [OPENGIS.ch](https://www.opengis.ch/) qu'on remercie pour tout le développement made with :heart:. [Un précédent article](../2022/2022-05-24_releve_terrain_qfield.md) explique plus en détail un processus de relevé grâce à l'appli QField qu'on ne présente dorénavant plus.
 
@@ -84,22 +84,6 @@ Concernant les specs, pas forcément besoin de beaucoup de ressources, enfin tou
 Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de Go. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets QGIS (geopackages, photos...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
-
-!!! info
-    _Penn ar Menez_ c'est le nom d'une ferme bio qui fait du fromage et qui place ses clotûres avec QField. Des fois que vous passiez par le centre Finistère, sur le marché de Châteaulin le jeudi ou le marché de Kerinou à Brest le samedi matin, ou en vente directe le vendredi après-midi, il y a 15% de réduction avec le code promo "QFieldCloud". C'est pas une blague.
-
-```sh
-echo "QFieldCloud meeeeuh" | cowsay
-
- _____________________
-< QFieldCloud meeeeuh >
- ---------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
 
 ### Installations
 
@@ -164,7 +148,7 @@ git clone --recurse-submodules https://github.com/opengisch/qfieldcloud.git
 
 ```sh
 cd qfieldcloud
-git checkout -b v0.24.0
+git checkout v0.26.4
 ```
 
 - copier le fichier `.env.local` vers un fichier `.env` qui va contenir toute la configuration du serveur :
@@ -284,8 +268,8 @@ docker compose up -d --build
 Une fois le certificat généré, valable 3 mois, il nous faut à présent le copier dans la config de QFieldCloud :
 
 ```sh
-sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/privkey.pem ./conf/nginx/certs/${QFIELDCLOUD_HOST}-key.pem
-sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/fullchain.pem ./conf/nginx/certs/${QFIELDCLOUD_HOST}.pem
+sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/privkey.pem ./docker-nginx/certs/${QFIELDCLOUD_HOST}-key.pem
+sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/fullchain.pem ./docker-nginx/certs/${QFIELDCLOUD_HOST}.pem
 ```
 
 Après avoir relancé les services, normalement le serveur doit maintenant être fonctionnel et prêt à l'emploi. Normalement.
@@ -353,8 +337,6 @@ Une fois le projet téléchargé dans la liste puis ouvert, c'est parti pour la 
 
 :sparkles: Magie magie ! :sparkles:
 
-![David CopperQField](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/david_copperqfield.webp){: .img-center loading=lazy }
-
 ## Et maintenant ?
 
 Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldCloud fonctionnelle sur un serveur linux, nous permettant de synchroniser aisément les données entre QGIS et QField. Mais ... vous vous souvenez ? La Fête de la Bière ? La ceinture ? Les bretelles ?
@@ -363,8 +345,6 @@ Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldC
 
 Les backups, les maintenances, les montées de version ... ne font pas l'objet de cet article. Pourquoi ne pas s'entourer de vrai/es expert/es sur ce domaine purement IT ? Il y a des boîtes qui proposent ces services et qui permettent de se soulager de ces contraintes, tout en discutant de la stratégie la plus adéquate à adopter. Car après tout, qui de mieux que _votre partenaire QField_ pour s'occuper de _votre QField_ ?
 
-## Auteur
-
---8<-- "content/team/guilhem-allaman.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

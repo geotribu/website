@@ -308,6 +308,4 @@ Ce tutoriel décrit les étapes pour ajouter un fichier KML à la carte et pour 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

@@ -241,6 +241,4 @@ Libre √† vous de faire jouer votre imagination et votre sens artistique, et n'h√
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/aurelien-chaumet.md"
+<!-- geotribu:authors-block -->

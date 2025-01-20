@@ -41,7 +41,7 @@ Je partage ici ce travail car il pourrait, je l'espère, être utile à d'autres
 
 ![Eclairage public - Crédits : PxHere](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_postgis_eclairage_public/qgis_postgis_EP.png "Éclairage public - Crédits : PxHere"){: .img-center loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -115,8 +115,6 @@ Merci à la Communauté de Communes Thann-Cernay grâce à qui nous avons pu fai
 
 ----
 
-## Auteur
-
---8<-- "content/team/stephane-ritzenthaler.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

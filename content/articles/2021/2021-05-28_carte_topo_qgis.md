@@ -36,7 +36,7 @@ Mais voilà, avec l'[ouverture des données de la BD TOPO®](https://geoservices
 
 A noter que ce projet vient en complément du projet [TOPen25](https://osm.cquest.org/topen25/#15/48.4018/2.7945) de [C. Quest](https://twitter.com/cq94).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Le projet QGIS
@@ -68,6 +68,4 @@ Ce projet QGIS est une première proposition de rendu mais n'hésitez pas à l'a
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->

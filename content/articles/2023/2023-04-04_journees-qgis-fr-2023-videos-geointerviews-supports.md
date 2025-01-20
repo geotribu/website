@@ -41,7 +41,7 @@ Comment j'étais rincé à la fin de ces deux jours ! Et c'est sûrement pas à 
 
 Vivement la prochaine édition !
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -68,10 +68,6 @@ S'il y a une chose à retenir c'est que l'organisation de l'événement représe
 
 ----
 
-## Auteurs {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

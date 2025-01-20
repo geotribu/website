@@ -30,6 +30,4 @@ Cet utilitaire fait donc partie des indispensables de la boite à outil du géom
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

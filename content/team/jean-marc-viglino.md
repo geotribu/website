@@ -1,4 +1,25 @@
-# Jean-Marc Viglino {: data-search-exclude }
+---
+title: Jean-Marc Viglino
+categories:
+    - contributeur
+social:
+    - bluesky:
+    - github:
+    - gitlab:
+    - linkedin:
+    - mail:
+    - mastodon:
+        - instance:
+        - username:
+    - openstreetmap:
+    - osgeo:
+    - twitter:
+    - website:
+---
+
+# Jean-Marc Viglino
+
+<!-- --8<-- [start:author-sign-block] -->
 
 ![Portrait Jean-Marc Viglino](https://cdn.geotribu.fr/img/internal/contributeurs/jemv.jpg "Portrait Jean-Marc Viglino"){: .img-thumbnail-left }
 
@@ -8,3 +29,5 @@ J'entretiens une bibliothèque JS d'extensions pour Openlayers [ol-ext](https://
 Ma page [Github](https://github.com/Viglino). Vous pouvez me contacter sur [Twitter](https://twitter.com/jmviglino) ou [LinkedIn](https://www.linkedin.com/in/jean-marc-viglino-87826b14b/).
 
 Je m'exprime sur ce blog à titre personnel.
+
+<!-- --8<-- [end:author-sign-block] -->

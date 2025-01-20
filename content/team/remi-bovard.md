@@ -1,4 +1,25 @@
-# Rémi Bovard {: data-search-exclude }
+---
+title: Rémi Bovard
+categories:
+    - contributeur
+social:
+    - bluesky:
+    - github:
+    - gitlab:
+    - linkedin:
+    - mail:
+    - mastodon:
+        - instance:
+        - username:
+    - openstreetmap:
+    - osgeo:
+    - twitter:
+    - website:
+---
+
+# Rémi Bovard
+
+<!-- --8<-- [start:author-sign-block] -->
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/rbov.jpg "portrait"){: .img-thumbnail-left }
 
@@ -7,3 +28,5 @@ Ingénieur en géomatique, je suis passionné par les SIG, le webmapping et tout
 J'ai rejoint l'équipe de GéoTribu pour apporter une touche helvétique aux revues de presse et pour participer à la rédaction des différents tutoriaux.
 
 Je fais aussi pas mal de veille technologique via [mon compte twitter](https://twitter.com/RemiBovard).
+
+<!-- --8<-- [end:author-sign-block] -->

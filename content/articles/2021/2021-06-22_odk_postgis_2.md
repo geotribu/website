@@ -40,7 +40,7 @@ Dans un dernier article, nous verrons comment les données collectées sur les t
 [3 : Récupération des données dans notre SI](2021-09-22_odk_postgis_3.md){: .md-button }
 {: align=middle }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Introduction
@@ -416,9 +416,7 @@ Enfin ce graphique, basé sur la nouvelle base de donnée "Occitanie" montre l'�
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mathieu-bossaert.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}
 

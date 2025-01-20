@@ -18,7 +18,7 @@ tags:
 
 ![logo Geotribu](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_75x75.webp "logo Geotribu"){: .img-thumbnail-left }
 
-Geotribu est un projet collaboratif et indépendant (voir [Geotribu, c'est quoi ?](index.md#geotribu-cest-quoi)) qui repose sur le bénévolat et des projets libres (et généralement gratuits).
+Geotribu est un projet collaboratif et indépendant (voir [Geotribu, c'est quoi ?](./index.md#geotribu-cest-quoi)) qui repose sur le bénévolat et des projets libres (et généralement gratuits).
 
 Cependant, certains coûts sont incompressibles (nom de domaine, hébergement) et d'autre part nous avons à coeur de perpétuer le cercle vertueux de l'open source en y contribuant à notre tour, techniquement et/ou financièrement.
 
@@ -31,7 +31,7 @@ Si vous vous souhaitez nous aider à financer le site et à l'améliorer, nous a
 {: align=middle }
 
 !!! note
-    Geotribu n'étant adossée à aucune structure administrative, nous ne disposons pas d'un compte partagé. Les dons parviennent sur celui de [Julien](julien-moura.md) qui se charge de les répartir et de régler les frais.
+    Geotribu n'étant adossée à aucune structure administrative, nous ne disposons pas d'un compte partagé. Les dons parviennent sur celui de [Julien](../team/julien-moura.md) qui se charge de les répartir et de régler les frais.
 
 ----
 

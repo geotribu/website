@@ -39,7 +39,7 @@ Personnellement, je me considère comme étant sensible et informé des question
 L'objectif de cette fiche de géo-lecture n'est pas de résumer le livre, mais plus d'en sortir quelques idées fortes et chiffres choc.  
 J'espère sincèrement qu'il vous donnera envie de vous plonger dans ce livre, car il a changé ma manière de réfléchir sur un certain nombre de choses, et m'a donné envie d'agir différemment.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -195,8 +195,6 @@ Encore une fois, j'espère sincèrement vous avoir donné l'envie de lire ce liv
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/aurelien-chaumet.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

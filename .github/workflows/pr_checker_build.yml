@@ -66,6 +66,7 @@ jobs:
       - name: Build in strict mode
         env:
           MKDOCS_EDIT_URI: "edit/$GITHUB_HEAD_REF/content"
+          MKDOCS_ENABLE_PLUGIN_RSS: true
           MKDOCS_ENABLE_PLUGIN_SOCIAL: true
           MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS: true
           MKDOCS_SITE_NAME: "Geotribu PREVIEW - PR ${{ github.event.pull_request.number }}"
@@ -76,7 +77,6 @@ jobs:
           export MKDOCS_SITE_URL="https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
 
           # merge different configs
-          python scripts/050_mkdocs_populate_latest.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
           python scripts/100_mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
 
           # build

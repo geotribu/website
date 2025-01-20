@@ -39,6 +39,4 @@ Parce que d'autres l'on dit bien mieux que moi, je vous conseille également ces
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -39,6 +39,4 @@ L'evénement est accessible ici : **[GéoInterview de David Jonglez](https://plu
 <iframe src="http://www.youtube.com/embed/Ft9sCvkZnMs" allowfullscreen="" frameborder="0" height="315" width="100%"></iframe>
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

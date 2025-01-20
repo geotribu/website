@@ -41,6 +41,4 @@ Cette seconde journée, s'est ensuite terminée par une visite de Toulouse et un
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

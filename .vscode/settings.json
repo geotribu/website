@@ -5,7 +5,7 @@
     "files.associations": {
         "./requirements*.txt": "pip-requirements",
         ".linkcheckrrc": "ini",
-        "content/**/*.html": "jinja"
+        "./content/theme/*.html": "jinja-html"
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -18,6 +18,8 @@
     "markdown.validate.fileLinks.markdownFragmentLinks": "warning",
     "markdown.validate.fragmentLinks.enabled": "warning",
     "[markdown]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
         "files.trimTrailingWhitespace": false,
     },
     // Python
@@ -29,9 +31,11 @@
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true,
         "editor.guides.bracketPairs": "active",
+        "editor.insertSpaces": true,
         "editor.rulers": [
             88
         ],
+        "editor.tabSize": 4,
         "editor.wordWrapColumn": 88,
     },
     "flake8.args": [

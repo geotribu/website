@@ -48,8 +48,6 @@ Merci à Christophe Rodier pour [la piqûre de rappel](https://twitter.com/lepon
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

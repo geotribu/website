@@ -21,7 +21,10 @@ site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
 
 # Scripts pendant le build
 hooks:
+  - hooks/mkdocs/G000_load_subconfigs.py
   - hooks/mkdocs/G003_social_cards_adapter.py
+  - hooks/mkdocs/G005_jinja_filters.py
+  - hooks/mkdocs/G006_authors_block.py
 
 # Plugins
 plugins:
@@ -65,7 +68,6 @@ plugins:
 # Theme
 theme:
   name: "material"
-  insiders_flavor: false
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/logo_geotribu.png
 
@@ -135,6 +137,12 @@ extra_javascript:
   - "theme/assets/javascripts/extra.js"
   - path: https://mastodon.social/embed.js
     defer: true
+  - path: javascripts/mathjax.js
+    async: true
+    defer: true
+  - path: https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+    async: true
+    defer: true
   - path: https://platform.twitter.com/widgets.js
     defer: true
 
@@ -150,6 +158,8 @@ markdown_extensions:
   # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
   - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -157,7 +167,12 @@ markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.inlinehilite
-  - pymdownx.keys
+  - pymdownx.keys:
+      key_map:
+        shift: MAJ
+        delete: Suppr
+        caps-lock: "🄰 VER MAJ"
+        middle-button: "🖱️ clic molette"
   - pymdownx.smartsymbols
   - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/

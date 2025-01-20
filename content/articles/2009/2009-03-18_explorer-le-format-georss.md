@@ -25,6 +25,4 @@ Cet article offre ainsi une bonne introduction à tous ceux qui souhaiteraient c
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

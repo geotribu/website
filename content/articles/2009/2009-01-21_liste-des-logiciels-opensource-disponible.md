@@ -27,6 +27,4 @@ Merci encore Stefan Steiniger pour cette initiative.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

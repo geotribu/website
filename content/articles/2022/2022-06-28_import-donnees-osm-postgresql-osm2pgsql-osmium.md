@@ -48,7 +48,7 @@ Compagniiiie... en mesure !
 
 ![Marche des Eléphants Postgres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/marche_elephants_osm_postgres.png "Marche des Eléphants Postgres"){: loading=lazy .img-center }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -462,8 +462,6 @@ sudo pg_dropcluster 14 osmdata
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

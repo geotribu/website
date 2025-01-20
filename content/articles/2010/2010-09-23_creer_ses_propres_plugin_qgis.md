@@ -287,6 +287,4 @@ L'intérêt technique de ce plugin est très limité. Mais l'objectif était de 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

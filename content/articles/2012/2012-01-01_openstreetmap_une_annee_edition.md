@@ -25,6 +25,4 @@ Et voilà, une année s'achève et c'est le moment pour le projet [OpenStreetMap
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

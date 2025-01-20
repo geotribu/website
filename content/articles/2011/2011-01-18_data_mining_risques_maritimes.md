@@ -35,6 +35,4 @@ Merci d'envoyer vos candidatures (CV + lettre de motivation) à [aldo.napoli@crc
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

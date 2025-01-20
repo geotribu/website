@@ -37,6 +37,4 @@ En cadeau (~~bonux~~) mes principales sources d'informations dans le vaste (~~an
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

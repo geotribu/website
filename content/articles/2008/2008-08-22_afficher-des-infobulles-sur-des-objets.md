@@ -49,6 +49,4 @@ L'exemple ci-dessous très simpliste présente l'utilisation de ce script:
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

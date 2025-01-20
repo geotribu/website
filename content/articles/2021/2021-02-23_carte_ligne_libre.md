@@ -36,7 +36,7 @@ Nous proposons dans ce billet de **construire étape par étape une [carte Web 1
 
 ![carte presentation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte-ligne-libre/carte_presentation.JPG "Carte de presentation"){: .img-center loading=lazy }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -463,8 +463,6 @@ Le code complet [se trouve ici](https://bl.ocks.org/mastersigat/30898810b41783ff
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/boris-mericskay.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

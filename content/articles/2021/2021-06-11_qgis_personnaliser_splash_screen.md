@@ -39,7 +39,7 @@ Le *splash screen* est l'image qui apparaît au lancement de QGIS. Une image que
 Le lancement de QGIS vous semble long ? Vous êtes sur la LTR et las de voir la même image pendant presque 2 ans ?  
 Depuis QGIS 3, il est possible de personnaliser cette image, alors pourquoi se priver ?
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -111,8 +111,6 @@ Pas de souci, j'ai intégré la possibilité de le faire en un clic sur [notre p
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}

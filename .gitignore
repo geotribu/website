@@ -229,3 +229,8 @@ md_linter_report.txt
 config/extra_latest.yml
 linkchecker_report.html
 !content/theme/assets/images/geotribu/background_geotribu.png
+
+# fichiers liés aux vidéos Gource
+gource.ini
+avatars/
+mkdocs-generated-configuration.yml

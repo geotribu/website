@@ -30,6 +30,7 @@ from pathlib import Path
 from typing import Optional
 
 # Mkdocs
+from material import __version__ as material_version
 from material.plugins.social.plugin import SocialPlugin
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import event_priority
@@ -42,6 +43,9 @@ from mkdocs.structure.pages import Page
 
 logger = logging.getLogger("mkdocs")
 hook_name = Path(__file__).stem
+
+# check si c'est la version Insiders (payante) ou la version Communauté (gratuite) du thème
+is_insiders = "insiders" in material_version
 
 # ###########################################################################
 # ########## Functions #############
@@ -66,13 +70,6 @@ def on_page_markdown(
     Returns:
         Markdown source text of page as string
     """
-    # exclude homepage
-    if page.is_homepage:
-        return
-
-    # check si c'est la version Insiders (payante) ou la version Communauté (gratuite) du thème
-    is_insiders = config.theme.get("insiders_flavor")
-
     # vérifie que le plugin social est bien installé et configuré
     if not config.plugins.get("material/social"):
         logger.warning(
@@ -91,11 +88,17 @@ def on_page_markdown(
 
     # Cas de figure où une image n'est pas définie
     if page.meta.get("image") is None or page.meta.get("image") == "":
-        social_card_url = (
-            f"{config.site_url}assets/images/social{page.abs_url[:-1]}.png"
-        )
+        if not page.is_index:
+            social_card_url = (
+                f"{config.site_url}assets/images/social{page.abs_url[:-1]}.png"
+            )
+        else:
+            social_card_url = (
+                f"{config.site_url}assets/images/social{page.abs_url[:-1]}/index.png"
+            )
+
         logger.debug(
-            f"{page.abs_url} n'a pas d'image. Une 'social card' sera automatiquement générée : {social_card_url}"
+            f"{page.file.abs_src_path} n'a pas d'image. Une 'social card' sera automatiquement générée : {social_card_url}"
         )
 
         # si la page a une icône, on adapte le template de l'image (disponible que pour Insiders)
@@ -109,11 +112,6 @@ def on_page_markdown(
             )
         elif is_insiders:
             cards_layout = social_plugin.config.cards_layout
-        else:
-            pass
-
-        # indique l'URL de l'image qui sera utilisée par le plugin RSS
-        page.meta["image"] = social_card_url
 
         # définit les paramètres pour les social cards au niveau de la page
         if is_insiders:
@@ -149,7 +147,8 @@ def on_page_markdown(
         #     }
     else:
         logger.debug(
-            f"[{hook_name}] {page.abs_url} a une image paramétrée. Désactivation du plugin social sur la page."
+            f"[{hook_name}] {page.abs_url} a une image paramétrée. "
+            "Désactivation du plugin social sur la page."
         )
         page.meta["social"] = {
             "cards": False,

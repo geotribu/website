@@ -8,6 +8,7 @@ categories:
 comments: true
 date: 2020-03-31
 description: Le site de Geotribu se présente comme une PWA. Voici comment l'installer comme une application (Windows 10 et Android).
+icon: simple/pwa
 image: https://cdn.geotribu.fr/img/internal/install_pwa/geotribu_uninstall_pwa_win10.png
 license: default
 tags:
@@ -70,6 +71,8 @@ Deux méthodes :
     ![Geotribu sur l'écran d'accueil d'un smartphone Android](https://cdn.geotribu.fr/img/internal/install_pwa/geotribu_pwa_install_android_homescreen.jpg)
 
 En cliquant dessus, le site s'ouvre dans sa propre fenêtre et se comporte comme une application, avec notamment l'accès hors-ligne aux pages déjà consultées avec une connexion.
+
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks -->
 

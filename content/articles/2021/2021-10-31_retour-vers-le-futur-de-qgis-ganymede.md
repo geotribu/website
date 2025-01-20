@@ -1,5 +1,6 @@
 ---
-title: A la redécouverte de QGIS 0.x
+title: À la redécouverte de QGIS 0.9 Ganymède
+subtitle: Archéologie logicielle
 authors:
     - Julien MOURA
 categories:
@@ -7,13 +8,14 @@ categories:
 comments: true
 date: 2021-10-31
 description: Tiens et si on installait QGIS 0.9 Ganymède en 2021 et qu'on essayait de faire une carte ? Petit voyage dans le temps.
+icon: material/history
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_0x/qgis_0-9_ganymede_splash.png
 tags:
     - Halloween
     - QGIS
 ---
 
-# Retour vers le futur de QGIS
+# Retour vers le futur de QGIS Ganymède
 
 :calendar: Date de publication initiale : 31 octobre 2021
 
@@ -27,7 +29,7 @@ Ces jours-ci je formais quelques éminents membres des [CEN](https://fr.wikipedi
 
 Alors, plus de 12 ans après [notre article "A la découverte de Quantum GIS 1.0.0"](../2009/2009-08-28_a-la-decouverte-de-qgis.md), pour fêter la Toussaint / Halloween, je vous propose d'exhumer Quantum GIS 0.x et de voir si le cadavre bouge encore :skull: :headstone:.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -119,8 +121,6 @@ Un participant de la formation a tenu à montrer que MapInfo 1998 tournait égal
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

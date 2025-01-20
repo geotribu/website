@@ -28,6 +28,4 @@ Il ne vous reste plus qu'a vous lancer à vos claviers et (re)découvrir cette m
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

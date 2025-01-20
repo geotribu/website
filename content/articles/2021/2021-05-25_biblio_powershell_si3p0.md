@@ -46,7 +46,7 @@ Les géo-traitements nécessaires à cette réalisation ont été faits avec Pos
 
 Pour faire la promotion de ces travaux au sein de la collectivité, nous avons décidé de "personnifier" le SIg que nous développons. Le nom retenu est SI3P0 (pour Système d'Information 3 Point 0) pour le côté "geek" de sa consonance et en lien avec le logo 3.0 du Gard qui fait référence au code officiel géographique du département.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -261,9 +261,7 @@ Comme indiqué plus haut, si tu souhaites récupérer les sources (sous licence 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/michael-galien.md"
+<!-- geotribu:authors-block -->
 
 !!! note "Pourquoi est-ce que j'écris SIg et pas SIG ?"
     Je traite au quotidien différentes données dont une partie est géographique. A ce titre, je considère que je participe à la construction du SI de la collectivité. Ce "G", s'il précise la composante géographique des travaux, apporte je trouve, un côté réducteur à la matière. J'ai donc opté pour ce compromis d'écriture.

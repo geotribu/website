@@ -37,7 +37,7 @@ Série **Accès aux données Copernicus/Sentinel** :
 * [Partie 2 : portails d'accès, 'the road so far'](2023-02-28_portails-copernicus-2-passe.md).
 * [Partie 3 : évolution de l'accès aux données Copernicus](2023-03-07_portails-copernicus-3-futur.md).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -145,6 +145,4 @@ Les données SLC sont en particulier utilisées en mode "différentiel" entre de
 
 Si tout cela n'a pas encore suffi à satisfaire vos mirettes, ou que vous souhaitez changer votre fond d'écran, je ne peux que vous conseiller d'aller par exemple sur le site [Image of the day Copernicus]( https://www.copernicus.eu/en/media/image-day) pour y trouver d'autres images Sentinel sélectionnées en fonction de l'actualité ou de leur esthétisme.
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/nicolas-david.md"
+<!-- geotribu:authors-block -->

@@ -1,11 +1,11 @@
 # Insiders
 # --------
 
-git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-insiders.git@9.5.13-insiders-4.53.1#egg=mkdocs-material
+git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-insiders.git@9.5.49-insiders-4.53.14#egg=mkdocs-material
 # git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-insiders.git
 
 # social plugin requirements
 cairosvg~=2.7
-Pillow>=10,<10.3
+Pillow>=10.3,<10.5
 
 -r requirements.txt

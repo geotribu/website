@@ -9,11 +9,11 @@ date: 2022-09-30
 description: Utiliser les modes de fusion pour produire avec QGIS une carte inspirée des dessins d'Ed Fairburn.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/carte_facon_ed_fairburn.png
 tags:
-    - QGIS
     - carte
-    - rendu
-    - mode de fusion
     - composeur d'impression
+    - mode de fusion
+    - QGIS
+    - rendu
 ---
 
 # Faire une carte façon Ed Fairburn avec QGIS
@@ -34,7 +34,7 @@ Dans ce tuto, je te propose de faire une carte inspirée de ses réalisations gr
 * Une dose de géo-données.
 * Un soupçon de créativité.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -194,6 +194,4 @@ Allé, à toi de jouer maintenant !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/michael-galien.md"
+<!-- geotribu:authors-block -->

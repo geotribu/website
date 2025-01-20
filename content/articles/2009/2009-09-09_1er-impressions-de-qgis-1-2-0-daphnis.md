@@ -69,6 +69,4 @@ Cette nouvelle version de QGIS apporte son lot de nouveautés et de surprises. J
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

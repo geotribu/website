@@ -34,7 +34,7 @@ Une technique qui peut améliorer considérablement l'apparence des cartes consi
 
 En 2020, nous avons eu l'occasion d'ajouter la possibilité dans les mise en page de QGIS de créer directement des zooms circulaires (grâce au parrainage de la ville de Canning, en Australie !). Bien que cette fonctionnalité facilite la création de zooms non rectangulaires, de nombreux utilisateurs de QGIS ne savent peut-être pas que c'est possible. Nous avons donc voulu mettre en avant cette fonctionnalité pour notre premier post du 30 Day Map Challenge.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Zooms circulaires : exemple avec les JO de 2032
@@ -151,8 +151,6 @@ Et n'oubliez pas de suivre le [30 Day Map Challenge](https://30daymapchallenge.c
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jeremie-prudhomme.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

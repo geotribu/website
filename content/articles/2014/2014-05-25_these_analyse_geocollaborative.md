@@ -63,6 +63,4 @@ Aldo NAPOLI, Chargé de recherche à MINES ParisTech - CRC
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

@@ -135,3 +135,13 @@ blockquote.twitter-tweet a:hover,
 blockquote.twitter-tweet a:focus {
   text-decoration: underline;
 }
+
+/* isso comments textboxes */
+
+.isso-textarea,
+.isso-post-action input,
+#isso-postbox-author,
+#isso-postbox-email,
+#isso-postbox-website {
+  color: var(--fbc-primary-text);
+}

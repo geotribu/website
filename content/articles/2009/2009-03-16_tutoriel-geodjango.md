@@ -623,9 +623,7 @@ admin.site.register(WorldBorders, admin.OSMGeoAdmin)
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->
 
 <!-- Notes de bas de page -->
 [^1]: Un grand merci à Bjørn Sandvik de thematicmapping.org qui propose et entretient ce jeu de données.

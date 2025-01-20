@@ -1,4 +1,25 @@
-# Arnaud Vandecasteele  {: data-search-exclude }
+---
+title: Arnaud Vandecasteele
+categories:
+    - contributeur
+social:
+    - bluesky:
+    - github:
+    - gitlab:
+    - linkedin:
+    - mail:
+    - mastodon:
+        - instance:
+        - username:
+    - openstreetmap:
+    - osgeo:
+    - twitter:
+    - website:
+---
+
+# Arnaud Vandecasteele
+
+<!-- --8<-- [start:author-sign-block] -->
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/avdc.jpg "portrait"){: .img-thumbnail-left }
 
@@ -9,3 +30,5 @@ J'aime également le développement informatique avec une forte préférence à 
 Pendant mon temps libre, vous me trouverez un GPS à la main afin de contribuer à [OpenStreetMap](https://www.openstreetmap.org/) ou sur un tatami en train de pratiquer le [Jiu-Jitsu Brésilien](https://fr.wikipedia.org/wiki/Jiu-jitsu_br%C3%A9silien).
 
 Si vous êtes intéressé par l'un ou tous ces sujets, n'hésitez pas à me contacter !
+
+<!-- --8<-- [end:author-sign-block] -->

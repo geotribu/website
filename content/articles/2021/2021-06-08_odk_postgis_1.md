@@ -34,7 +34,7 @@ Le dernier sera consacré à la récupération des données collectées dans une
 [3 : Récupération des données dans PostGIS](2021-09-22_odk_postgis_3.md){: .md-button }
 {: align=middle }
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Introduction à Open Data Kit
@@ -364,10 +364,7 @@ Il s'agit d'une [série de points, au moins deux, formant une ligne](https://doc
 - Les vidéos de <https://www.humanitariandatasolutions.com/>
 
 ----
-
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mathieu-bossaert.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}
 

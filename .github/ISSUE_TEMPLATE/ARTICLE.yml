@@ -21,7 +21,7 @@ body:
         # Vous
 
   - type: checkboxes
-    id: cb-author-content-relationship
+    id: cb_author_content_relationship
     attributes:
       label: "Avez-vous un lien avec le contenu proposé ?"
       description: Mise en avant du travail d'un tiers ? Auto-promo ? Publicité ?
@@ -32,7 +32,7 @@ body:
       required: true
 
   - type: input
-    id: in-author-name
+    id: in_author_name
     attributes:
       label: Votre nom
       description: Merci de nous indiquer le Prénom NOM (pseudonyme accepté) sous lequel vous signez l'article (voir [signer ses contributions](https://contribuer.geotribu.fr/guides/authoring/#signer-pour-quelquun-dautre)).
@@ -41,7 +41,7 @@ body:
       required: true
 
   - type: input
-    id: in-author-mail
+    id: in_author_mail
     attributes:
       label: Votre adresse email
       description: Merci de nous indiquer votre adresse email afin de pouvoir vous signez l'article (voir [signer ses contributions](https://contribuer.geotribu.fr/guides/authoring/#signer-pour-quelquun-dautre)).
@@ -50,15 +50,15 @@ body:
       required: true
 
   - type: dropdown
-    id: dr-author-license
+    id: dr_author_license
     attributes:
       label: Licence
       description: |
         Choisissez la licence qui vous convient le mieux. Voir [le guide](https://contribuer.geotribu.fr/guides/licensing/).
       options:
-        - "[Creative Commons International BY-NC-SA 4.0](https://contribuer.geotribu.fr/guides/licensing/#licence-par-defaut) **licence par défaut**"
-        - "[Creative Commons International BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
-        - "[Beerware (Révision 42)](https://fr.wikipedia.org/wiki/Beerware)"
+        - "Creative Commons International BY-NC-SA 4.0"
+        - "Creative Commons International BY-SA 4.0"
+        - "Beerware (Révision 42)"
         - "autre - merci de préciser dans le champ libre en fin de formulaire"
     validations:
       required: true
@@ -71,15 +71,23 @@ body:
         # L'article
 
   - type: input
-    id: in-art-title
+    id: in_art_title
     attributes:
       label: Titre
-      description: "Le titre de l'article. Longeur maximale indicative : 100/120 caractères"
+      description: "Le titre de l'article. Longueur maximale indicative : 100/120 caractères"
     validations:
       required: true
 
   - type: input
-    id: in-art-tags
+    id: in_art_description
+    attributes:
+      label: Description courte
+      description: "Description de 160 caractères maximum qui résume l'article et qui est présente dans le [flux RSS](https://geotribu.fr/feed_rss_created.xml), la [newsletter](https://us5.campaign-archive.com/home/?u=465e16ce303f65e4f490e8a71&id=6c4efaf092), les moteurs de recherche, en page d'accueil... Pensez en termes de SEO !"
+    validations:
+      required: true
+
+  - type: input
+    id: in_art_tags
     attributes:
       label: Mots-clés
       description: |
@@ -89,23 +97,24 @@ body:
       required: true
 
   - type: input
-    id: in-art-date
+    id: in_art_date
     attributes:
       label: Date de publication envisagée
       description: |
-        Pour information, nous avons pour habitude de publier les mardis ou les vendredis sans RDP.
+        Pour information, nous avons pour habitude de publier les articles les mardis ou les vendredis sans RDP.
         Afin d'assurer une bonne ventilation des publications, l'équipe se réserve le droit de changer la date.
     validations:
       required: true
 
   - type: textarea
-    id: tx-art-content
+    id: tx_art_content
     attributes:
       label: Contenu de l'article
       description: |
-        La syntaxe Markdown est acceptée, mais le rendu final diffèrera de celui de GitHub.
+        Si vous avez déjà votre contenu, collez le ici. Longueur maximale 65536 caractères.
+        La syntaxe Markdown est acceptée, mais rappelez-vous que le rendu final est celui de Material for Mkdocs et diffèrera donc de celui de GitHub. Voici [le guide de rédaction avec les principales différences de syntaxe](https://contribuer.geotribu.fr/guides/markdown_quality/#interligne-simple).
     validations:
-      required: true
+      required: false
 
   - type: markdown
     attributes:
@@ -113,7 +122,7 @@ body:
         ----
 
   - type: textarea
-    id: tx-misc-comment
+    id: tx_misc_comment
     attributes:
       label: Message libre
       description: "Un commentaire ? Une précision à apporter ? Un message pour l'équipe ?"

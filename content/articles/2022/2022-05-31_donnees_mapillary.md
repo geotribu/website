@@ -14,9 +14,9 @@ tags:
     - Bash
     - cURL
     - data
-    - OGR
     - Mapillary
     - MVT
+    - OGR
     - PostGIS
     - PostgreSQL
     - tuiles vectorielles
@@ -39,7 +39,7 @@ tags:
 
 Aujourd'hui, je vais vous présenter différentes manières d'accéder aux données identifiées à partir des prises de vue publiées sur Mapillary et qui pourront peut-être vous permettre d'enrichir votre SIG sur certaines thématiques. Pour ce faire nous allons nous appuyer sur les différents services proposés par la [4ème version de l'API](https://www.mapillary.com/developer/api-documentation/).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 <!-- markdownlint-disable MD046 -->
@@ -283,8 +283,6 @@ En parallèle et pour d'autres usages, le script de téléchargement des donnée
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/florian-boret.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

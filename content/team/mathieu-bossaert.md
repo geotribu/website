@@ -1,4 +1,25 @@
-# Mathieu Bossaert {: data-search-exclude }
+---
+title: Mathieu Bossaert
+categories:
+    - contributeur
+social:
+    - bluesky:
+    - github:
+    - gitlab:
+    - linkedin:
+    - mail:
+    - mastodon:
+        - instance:
+        - username:
+    - openstreetmap:
+    - osgeo:
+    - twitter:
+    - website:
+---
+
+# Mathieu Bossaert
+
+<!-- --8<-- [start:author-sign-block] -->
 
 ![Portrait Mathieu Bossaert](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/mb.jpeg "Portrait Mathieu Bossaert"){: .img-thumbnail-left }
 
@@ -12,3 +33,5 @@ J'ai intégré il y a quelques années l'équipe de GeoRezo et j'y assure la fon
 Enfin je contribue dans la mesure de mes compétences et de ma disponibilité aux forums techniques dédiés (principalement celui d'[ODK](https://forum.getodk.org))
 
 Vous pouvez me contacter pour échanger sur le sujet via [twitter](https://twitter.com/MathieuBossaert) et [linkedin](https://www.linkedin.com/in/mathieu-bossaert-08b73a205/).
+
+<!-- --8<-- [end:author-sign-block] -->

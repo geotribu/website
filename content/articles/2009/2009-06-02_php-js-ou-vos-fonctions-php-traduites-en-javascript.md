@@ -28,6 +28,4 @@ A quand la même chose pour python? Cela risque d'être tout de même plus compl
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

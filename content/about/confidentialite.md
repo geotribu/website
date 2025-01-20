@@ -102,6 +102,8 @@ Néanmoins, les commentaires sont publics et certaines données sont enregistré
 
 Afin de favoriser les échanges constructifs, merci de préférer le [pseudonymat](https://fr.wikipedia.org/wiki/Pseudonymat) à l'anonymat, en renseignant a minima une de vos adresses emails valable.
 
+Les commentaires sont automatiquement republiés sur nos réseaux sociaux pour favoriser l'engagement et la discussion.
+
 [Consulter l'article sur la migration vers Isso](../articles/2021/2021-05-14_commentaires_migration_disqus_isso.md){: .md-button }
 {: align=middle }
 

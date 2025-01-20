@@ -1,5 +1,6 @@
 ---
 title: "Titre principal"
+subtitle: un sous-titre subtil
 authors:
     - Prénom NOM
 categories:
@@ -23,7 +24,9 @@ tags:
 
 ## Introduction
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+Texte.
+
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Titre 2
@@ -36,8 +39,6 @@ Texte.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

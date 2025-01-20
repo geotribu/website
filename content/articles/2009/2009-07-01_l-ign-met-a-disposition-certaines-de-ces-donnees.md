@@ -41,6 +41,4 @@ Au final, j'espère que ce premier pas de l'IGN s'enrichira de nouvelles donnée
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

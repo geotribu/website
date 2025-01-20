@@ -25,7 +25,7 @@ jobs:
       # =============================== #
 
       - name: Download artifact from build workflow
-        uses: dawidd6/action-download-artifact@v3
+        uses: dawidd6/action-download-artifact@v7
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           name: pr-build-website
@@ -56,7 +56,7 @@ jobs:
           context: "Deploy Preview (pull_request => workflow_run)"
 
       - name: Deploy preview to Netlify
-        uses: nwtgck/actions-netlify@v2.1
+        uses: nwtgck/actions-netlify@v3.0
         id: preview
         timeout-minutes: 10
         env:

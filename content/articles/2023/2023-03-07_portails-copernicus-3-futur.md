@@ -39,7 +39,7 @@ Série **Accès aux données Copernicus/Sentinel** :
 * [Partie 1 : données OCS et Sentinel](2023-02-21_portails-copernicus-1-donnees.md).
 * [Partie 2 : portails d'accès, 'the road so far'](2023-02-28_portails-copernicus-2-passe.md).
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -249,6 +249,4 @@ Pour commencer à prendre en main ces données et comme je trouve que juste leur
 
 Et bien sûr, n'hésitez pas à revenir partager ici vos exemples d'utilisation ou vos plus jolies visualisations de données !
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/nicolas-david.md"
+<!-- geotribu:authors-block -->

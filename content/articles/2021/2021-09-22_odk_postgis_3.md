@@ -53,7 +53,7 @@ Une fois les données centralisés, différentes solutions d'exploitation, d'ana
 * [Google Data Studio](https://github.com/UDub-Impact/OData-Connector/issues)
 * Tableau
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 *Previously on ODK PostGIS* :
@@ -268,9 +268,7 @@ ODK est devenu un outil essentiel au sein de notre SI. Les raisons principales s
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/mathieu-bossaert.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-sa.md" %}
 

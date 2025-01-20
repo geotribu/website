@@ -52,7 +52,7 @@ Il s'agit d'une alternative au [projet de création de rover initié par l'INRAE
 
 :warning: Je n'ai pas de préférence pour tel ou tel produit / marque / revendeur et j'ignore la fiabilité des solutions matérielles ou logicielles choisies. Cet article a simplement pour but de partager une démarche et eventuellement d'alimenter la réflexion collective sur le sujet.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -110,11 +110,11 @@ graph TD
     C --> |Lecture des coordonnées RTK| G(App. carto) --> Z
 ```
 
-### Option 1 avec interface native de gestion des corrections : utilisation de [SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (gratuit) ou Map-it ( add-on NTRIP payant)
+### Option 1 avec interface native de gestion des corrections : utilisation de SW Maps
 
 ![icône SW Maps](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/sw_maps.webp){: .img-thumbnail-left }
 
-SW Maps présente l'avantage d'être gratuite et de gérer les corrections en temps réel du serveur NTRIP.
+[SW Maps](https://play.google.com/store/apps/details?id=np.com.softwel.swmaps) (gratuit) ou Map-it ( add-on NTRIP payant) présente l'avantage d'être gratuite et de gérer les corrections en temps réel du serveur NTRIP.
 
 !!! info "NTRIP"
     Un serveur NTRIP est un serveur qui permet d'accéder aux données de correction à apporter aux récepteurs mobiles.
@@ -227,8 +227,6 @@ L'idée serait de pouvoir évaluer le gain sur un rapport coût/précision.
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jeremie-hanke.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

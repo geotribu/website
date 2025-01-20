@@ -189,11 +189,7 @@ Un autre article sera publié dans les prochains jours pour vous expliquer la pa
 
 ----
 
-## Auteurs
-
---8<-- "content/team/florian-boret.md"
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 <!-- Hyperlinks reference -->
 [sed]: https://fr.wikipedia.org/wiki/Stream_Editor

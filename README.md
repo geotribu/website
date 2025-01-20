@@ -7,8 +7,6 @@
 [![🎳 Vérification des liens](https://github.com/geotribu/website/actions/workflows/links_checker.yml/badge.svg)](https://github.com/geotribu/website/actions/workflows/links_checker.yml)
 [![🤖 Réponse automatique à un ticket de proposition de contenu](https://github.com/geotribu/website/actions/workflows/issue_comment.yml/badge.svg)](https://github.com/geotribu/website/actions/workflows/issue_comment.yml)
 
-[![Ouvrir dans l'éditeur en ligne](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/geotribu/website)
-
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
 Sources et contenus du site de Geotribu, accessible via les URLs suivantes :

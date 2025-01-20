@@ -30,7 +30,7 @@ En juin dernier, Avignon a accueilli les [Rencontres R](https://rr2023.sciencesc
 
 C'est de ce point de vue que je propose ce retour sur trois jours de présentations et de discussions.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
@@ -240,8 +240,6 @@ Merci à l'organisation pour ces journées !
 
 ----
 
-## Autrice
-
---8<-- "content/team/delphine-montagne.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}

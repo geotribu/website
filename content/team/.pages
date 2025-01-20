@@ -1,9 +1,5 @@
-title: "⛺ A propos"
+title: "👩‍🏭👨‍💼 Auteur·ices"
 
 nav:
-    - index.md
-    - contributors.md
-    - credits.md
-    - sponsoring.md
-    - confidentialite.md
+    - ...
     - archives

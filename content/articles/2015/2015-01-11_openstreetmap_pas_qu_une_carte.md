@@ -6,7 +6,8 @@ categories:
     - article
 comments: true
 date: 2015-01-11
-description: "OpenStreetMap ce n'est pas (qu') une carte"
+description: "Lorsque je discute d'OpenStreetMap, pour beaucoup c'est une carte, rien de plus. Alors qu'en réalité OSM est un projet collaboratif dont le coeur est la base de données géographiques. La carte résultante n’étant qu'un des nombreux dérivés de cette base."
+icon: material/database-marker
 tags:
     - OpenStreetMap
 ---
@@ -51,8 +52,4 @@ Comme je vous le disais en introduction, OpenStreetMap c'est un système complet
 
 J'espère avoir réussi à clarifier ce qu'est OpenStreetMap sans pour autant trop vous embrouiller. Mais c'est un projet complexe dont l'étendue ne cesse de s'agrandir. Ne voir que sa simple composante cartographique est très réducteur et cela serait oublier toutes les autres fonctionnalités !
 
-----
-
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

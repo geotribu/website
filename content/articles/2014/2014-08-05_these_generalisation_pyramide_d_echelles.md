@@ -67,6 +67,4 @@ La date de fin de dépôt des dossiers est fixée au mercredi 10 septembre. Des 
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jeremie-ory.md"
+<!-- geotribu:authors-block -->

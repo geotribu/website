@@ -33,7 +33,7 @@ C'est alors que mon surmoi de galérien a pris le dessus !
 
 Je me note donc ça ici, histoire de pas oublier et que ça puisse resservir.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments){: .md-button }
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Avec pyproj
@@ -114,8 +114,6 @@ Et surtout que l'open source communautaire, c'est fichtrement vertueux !
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/julien-moura.md"
+<!-- geotribu:authors-block -->
 
 {% include "licenses/beerware.md" %}

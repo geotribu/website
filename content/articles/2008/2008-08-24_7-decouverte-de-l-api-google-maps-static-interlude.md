@@ -71,6 +71,4 @@ Si vous avez la flemme, vous pouvez générer l'URL directement en ligne - [http
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/fabien-goblet.md"
+<!-- geotribu:authors-block -->

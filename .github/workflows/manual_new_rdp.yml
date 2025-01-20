@@ -68,10 +68,9 @@ jobs:
 
       - name: Notification Slack
         id: slack
-        uses: slackapi/slack-github-action@v1.25
+        uses: slackapi/slack-github-action@v2.0
         if: "${{ github.event.inputs.notify-slack == 'true' }}"
         with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
           payload: '{"blocks":[{"type":"section","text":{"type":"mrkdwn","text":":newspaper: La GeoRDP du ${{ env.DATE_FR_LONG }} a été créée et attend vos contributions :writing_hand: !"}},{"type":"section","fields":[{"type":"mrkdwn","text":"Créée par *${{ github.actor }}* via GitHub Action."}]},{"type":"actions","elements":[{"type":"button","text":{"type":"plain_text","emoji":true,"text":":squid: Voir la PR (GitHub)"},"url":"${{ steps.cpr.outputs.pr_url }}"},{"type":"button","text":{"type":"plain_text","emoji":true,"text":":eye: Voir la preview (Netlify)"},"style":"primary","url":"https://preview-pullrequest-${{steps.cpr.outputs.pr_number}}--geotribu-preprod.netlify.app/"}]}]}'
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK

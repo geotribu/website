@@ -112,6 +112,4 @@ Dans la bibliothèque prototype initialize joue le rôle de constructeur. Jusqu'
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/arnaud-vandecasteele.md"
+<!-- geotribu:authors-block -->

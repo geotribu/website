@@ -100,6 +100,4 @@ Faux, l'opposé du logiciel libre est le logiciel propriétaire. La commercialis
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

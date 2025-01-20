@@ -45,6 +45,4 @@ En conclusion, j'estime que les quelques jours passés à la compréhension de c
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md"
+<!-- geotribu:authors-block -->

@@ -1,12 +1,13 @@
 ---
-title: "Temps de réponses comparés OSRM vs GraphHopper"
+title: Temps de réponses comparés OSRM vs GraphHopper
 authors:
     - Rodolphe Quiédeville
 categories:
     - article
 comments: true
 date: 2013-12-04
-description: "Temps de réponses comparés OSRM vs GraphHopper"
+description: La récente sortie de la version 0.2 de GraphHopper est l'occasion de comparer les performances avec OSRM, le projet de calcul d'itinéraires (routing) open source de référence.
+icon: material/routes-clock
 tags:
     - benchmark
     - GraphHopper
@@ -23,13 +24,16 @@ La [récente sortie](https://karussell.wordpress.com/2013/11/25/releasing-graphh
 
 ----
 
-Commencons par faire un point sur les versions, en ce qui concerne OSRM nous allons utiliser la version extraite du git v0.3.5-501-g992458a qui est proche de la dernière version stable à savoir la 0.3.7, pour GraphHopper nous utilisons la version 0.2 téléchargée depuis le site du projet.
+Commençons par faire un point sur les versions :
+
+- en ce qui concerne OSRM nous allons utiliser la version extraite du git `v0.3.5-501-g992458a` qui est proche de la dernière version stable à savoir la 0.3.7,
+- pour GraphHopper nous utilisons la version 0.2 téléchargée depuis le site du projet.
 
 ## Méthodo
 
-En ce qui concerne le jeu de données, celui-ci provient du projet OpenStreetMap en utilisant le fichier france-latest des exports [Geofabrik](http://download.geofabrik.de/europe/france.html). Afin de pouvoir faire des calculs de routage nous avons besoin d'un ensemble de couples de points qui représentent le point de départ et le point d'arrivée. Ces couples sont créés en extrayant du fichier protobuff de la France un lot de points référencés __amenity__. La liste non exhaustive des `amenity` utilisées contient `school`, `bank`, `parking`, `atm`, `library`, `pub`, `fuel`, `bus_station`, ... Nous avons pris garde de mixer des points se trouvant sur les way et des points en dehors des ways, ce qui a une inluence sur les résultats comme on le verra plus loin. L'intérêt de ces points est qu'ils sont diffus sur toute la France et permettront d'extraire des populations de points plus ou moins proches entre eux.
+En ce qui concerne le jeu de données, celui-ci provient du projet OpenStreetMap en utilisant le fichier france-latest des exports [Geofabrik](https://download.geofabrik.de/europe/france.html). Afin de pouvoir faire des calculs de routage nous avons besoin d'un ensemble de couples de points qui représentent le point de départ et le point d'arrivée. Ces couples sont créés en extrayant du fichier protobuff de la France un lot de points référencés __amenity__. La liste non exhaustive des `amenity` utilisées contient `school`, `bank`, `parking`, `atm`, `library`, `pub`, `fuel`, `bus_station`... Nous avons pris garde de mixer des points se trouvant sur les _way_ et des points en dehors des _ways_, ce qui a une inluence sur les résultats comme on le verra plus loin. L'intérêt de ces points est qu'ils sont diffus sur toute la France et permettront d'extraire des populations de points plus ou moins proches entre eux.
 
-Le test qui va servir à la mesure consiste à faire un appel de l'API en mode __json__ avec la présentation de l'itinéraire, comme cela est fait dans les cas d'utilisation réel. Tous les tests seront réalisés avec [Tsung](http://tsung.erlang-projects.org/) en utilisant une cible sur internet et des machines d'injections également sur internet mais dans un datacenter différent afin de se placer au plus près des conditions réelles d'utilisation.
+Le test qui va servir à la mesure consiste à faire un appel de l'API en mode _json_ avec la présentation de l'itinéraire, comme cela est fait dans les cas d'utilisation réels. Tous les tests seront réalisés avec [Tsung](http://tsung.erlang-projects.org/) en utilisant une cible sur internet et des machines d'injections également sur internet mais dans un datacenter différent afin de se placer au plus près des conditions réelles d'utilisation.
 
 Un premier test effectue deux appels, une fois vers GraphHopper et une fois vers OSRM dans la même session, la charge est légère (7,5 req/s au max) étant donné que les deux outils tournent en même temps sur la machine, ceci afin de ne pas perturber les mesures par une éventuelle saturation de ressource.
 
@@ -43,7 +47,7 @@ Ce premier test nous a également permis de créer cinq nouveaux jeux de donnée
 
 Tous les temps sont exprimés en msec. ([détail](http://tsung.quiedeville.org/tsung-reports/20131202-1446/report.html) des résultats)
 
-|Jeu de données | Ghp Mean | OSRM mean | delta % | Ghp 95th | OSRM 95th | delta % |
+| Jeu de données | Ghp Mean | OSRM mean | delta % | Ghp 95th | OSRM 95th | delta % |
 | :--------------- |:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 | inf à 3km | 49.5 | 48.01 | -3.10 | 55.12 | 52.13 | -5.74 |
 | entre 3 km et 50km | 51.94 | 54.29 | 4.33 | 58.74 | 75.93 | 22.64 |  
@@ -75,6 +79,4 @@ Dans un contexte d'installation "out of the box" on peut conclure après ces que
 
 ----
 
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/rodolphe-quiedeville.md"
+<!-- geotribu:authors-block -->
