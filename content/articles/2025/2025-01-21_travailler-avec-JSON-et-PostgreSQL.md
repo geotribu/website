@@ -148,7 +148,7 @@ Partant d'un schéma nommé `insee`, on va créer deux tables :+1:
 - la première contiendra la liste des *bases* disponibles, les différents volets du recensement ;
 - lae seconde permettant de stocker les données.
 
-Pour rester concentré sur le JSON, on va s'épargner 95% du modèle sous-jacent. On ne gérera donc pas ici les codes communes, etc. En bonus pour celles et ceux voulant tester ce que PostgreSQL a dans le ventre, je proposerai une variante juste en dessous :
+Pour rester concentré sur le JSON, on va s'épargner 95% du modèle sous-jacent. On ne gérera donc pas ici les codes communes, etc. :
 
 ```sql
 BEGIN;
