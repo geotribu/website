@@ -296,7 +296,7 @@ On va utiliser la CTE pour concaténer le nom que l'on veut donner à nos clés 
 
 Notez que si votre table temporaire possède un nom différent de "rp_population_import" il vous faudra modifier la clause FROM de la CTE.
 
-```sql
+```sql title="L'INSERT le plus bizarre de votre vie (avec une CTE)" linenums="1"
 -- cte concatenant les données avec les clés et nettoyant les caractères spéciaux.
 WITH d AS (
   SELECT
