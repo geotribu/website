@@ -525,6 +525,7 @@ Et, pour ça, on va utiliser GDAL qui est décidément incroyable.
 
 ```sh title="Export vue au format parquet"
 ogr2ogr -of parquet donnees_insee.parquet PG:"dbname='insee' schema='insee' tables='donnees_communes_olap' user='nom_utilisateur' password='votre_mot_de_passe'"
+```
 
 Et on peut ainsi mettre le fichier sur un espace cloud, comme [ici](https://donnees-insee.s3.fr-par.scw.cloud/donnees_insee_olap.parquet) ! Vous pouvez ensuite sortir votre plus beau générateur de publications Linkedin qui mettra plein d'emojis choupi et faire le cake sur les rezos (imaginez que 90% du contenu de Linkedin doit être fait avec ces trucs qui sont capable de vous générer des publications expliquant que l'un des rares avantages du shape sur le geopackage est d'être un format multi-fichiers, le tout sur un ton très assuré).
 
