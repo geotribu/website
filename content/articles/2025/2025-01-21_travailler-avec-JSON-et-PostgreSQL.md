@@ -143,7 +143,8 @@ En voici cependant un schéma succinct pour aider à la compréhension du reste 
 
 *Ne vous préoccupez pas des tables empilées tout à droite, ce sont des partitions de la table `donnees_communes`. Le sujet ne sera pas évoqué ici et elles ne sont nécessaires pour l'exemple.*
 
-Partant d'un schéma nommé `insee`, on va créer deux tables :+1: 
+Partant d'un schéma nommé `insee`, on va créer deux tables :+1:
+
 - la première contiendra la liste des *bases* disponibles, les différents volets du recensement ;
 - lae seconde permettant de stocker les données.
 
