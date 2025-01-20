@@ -32,7 +32,8 @@ Les données Raster sont une composante majeure des référentiels de nos systè
 - **Données peu ou pas alterées**_(en fonction des options de compression choisies)_ : vous pouvez modifier la radiométrie, l'ordre des bandes, l'utiliser dans des processus de geotraitements, etc.
 - **Simplicité d'organisation** : une seule image à charger, éliminant le besoin de VRT peu performant, la génération de pyramides et réduisant la gestion de nombreux fichiers
 
-Dans cet article, nous explorerons les meilleures pratiques pour générer des COG en utilisant GDAL, un outil incontournable dans l'arsenal SIG.
+![vador_command_line](https://cdn.geotribu.fr/tinyfilemanager.php?p=articles-blog-rdp%2Farticles%2F2025%2Fraster_cog_gdal&view=command_line.jpg){: .img-thumbnail-left }
+Dans cet article, nous aborderons les meilleures pratiques pour générer des COG avec GDAL, un outil essentiel des SIG. Certaines options ne soit pas encore disponible dans QGIS, nous utiliserons donc la ligne de commande. Pas d'inquiétude : il s'agit toujours de la même base avec quelques variations, et même sans être un expert, vous vous en sortirez très bien (j'ai pu tester sur mes collègues et ils ont survécut).
 
 ## Pré-requis
 
@@ -45,15 +46,16 @@ Avant de commencer la génération de COG, assurez-vous de disposer des élémen
 ## Construction du VRT pour un Raster à 1 Bande
 
 Pour combiner plusieurs fichiers raster ASC en un VRT (Virtual Raster Tile), une étape nécessaire avant de générer le COG final, utilisez la commande suivante :
-:penguin:
+
+=== ":penguin: Linux"
 
 ```bash
 gdalbuildvrt my_dsm.vrt -addalpha -a_srs EPSG:2154 /dsm_directory/*.asc
 ```
 
-🪟
+=== "🪟 Windows"
 
-```powershell
+```cmd
 gdalbuildvrt.exe C:\dsm\my_dsm.vrt C:\dsm_directory\*.asc -addalpha -a_srs EPSG:2154
 ```
 
@@ -64,7 +66,7 @@ gdalbuildvrt.exe C:\dsm\my_dsm.vrt C:\dsm_directory\*.asc -addalpha -a_srs EPSG:
 
 Une fois le VRT construit, transformez-le en COG avec cette commande :
 
-:penguin:
+=== ":penguin: Linux"
 
 ```bash
 gdal_translate input_dsm.vrt my_dsm_output_cog.tif -of COG \
@@ -76,10 +78,10 @@ gdal_translate input_dsm.vrt my_dsm_output_cog.tif -of COG \
   -co BIGTIFF=IF_NEEDED
 ```
 
-🪟
+=== "🪟 Windows"
 
-```powershell
-ggdal_translate.exe C:\dsm\input_dsm.vrt C:\dsm\my_dsm_output_cog.tif -of COG -co BLOCKSIZE=512 -co OVERVIEW_RESAMPLING=NEAREST -co COMPRESS=DEFLATE -co PREDICTOR=2 -co NUM_THREADS=20 -co BIGTIFF=IF_NEEDED
+```cmd
+gdal_translate.exe C:\dsm\input_dsm.vrt C:\dsm\my_dsm_output_cog.tif -of COG -co BLOCKSIZE=512 -co OVERVIEW_RESAMPLING=NEAREST -co COMPRESS=DEFLATE -co PREDICTOR=2 -co NUM_THREADS=20 -co BIGTIFF=IF_NEEDED
 ```
 
 ### Points clés
@@ -93,7 +95,7 @@ ggdal_translate.exe C:\dsm\input_dsm.vrt C:\dsm\my_dsm_output_cog.tif -of COG -c
 
 Commencez par convertir chaque fichier JP2 en TIF en utilisant une boucle bash. Assurez-vous d'avoir créé un répertoire dédié pour les fichiers TIF :
 
-:penguin:
+=== ":penguin: Linux"
 
 ```bash
 for f in *.jp2; do
@@ -109,9 +111,9 @@ for f in *.jp2; do
 done
 ```
 
-🪟
+=== "🪟 Windows"
 
-```powershell
+```cmd
 FOR %%F IN (C:\ortho\jpg2\*.jp2) DO gdal_translate.exe -of GTiff -co TILED=YES -co BIGTIFF=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=20 -co COMPRESS=ZSTD -co PREDICTOR=2 -a_srs EPSG:2154 %%F C:\ortho\0_TIF\%%~nxF.tif
 ```
 
@@ -121,15 +123,15 @@ FOR %%F IN (C:\ortho\jpg2\*.jp2) DO gdal_translate.exe -of GTiff -co TILED=YES -
 
 Créez un VRT pour votre ensemble de données TIFF avec la commande suivante :
 
-:penguin:
+=== ":penguin: Linux"
 
 ```bash
 gdalbuildvrt my_orthophotography.vrt 0_TIF/*.tif -addalpha -hidenodata -a_srs EPSG:2154
 ```
 
-🪟
+=== "🪟 Windows"
 
-```powershell
+```cmd
 gdalbuildvrt.exe C:\ortho\my_orthophotography.vrt C:\ortho\0_TIF\*.tif -addalpha -hidenodata -a_srs EPSG:2154
 ```
 
@@ -139,7 +141,7 @@ gdalbuildvrt.exe C:\ortho\my_orthophotography.vrt C:\ortho\0_TIF\*.tif -addalpha
 
 Générez le COG à partir du VRT :
 
-:penguin:
+=== ":penguin: Linux"
 
 ```bash
 gdal_translate my_orthophotography.vrt my_orthophotography_output_cog.tif -of COG \
@@ -151,9 +153,9 @@ gdal_translate my_orthophotography.vrt my_orthophotography_output_cog.tif -of CO
   -co BIGTIFF=YES
 ```
 
-🪟
+=== "🪟 Windows"
 
-```powershell
+```cmd
 gdal_translate.exe C:\ortho\my_orthophotography.vrt C:\ortho\my_orthophotography_output_cog.tif -of COG -co BLOCKSIZE=512 -co OVERVIEW_RESAMPLING=BILINEAR -co COMPRESS=JPEG -co QUALITY=85 -co NUM_THREADS=12 -co BIGTIFF=YES
 ```
 
@@ -166,7 +168,7 @@ gdal_translate.exe C:\ortho\my_orthophotography.vrt C:\ortho\my_orthophotography
 
 Pour éliminer les pixels indésirables en bordure (non définis comme nodata), utilisez un shapefile d'emprise :
 
-:penguin:
+=== ":penguin: Linux"
 
 ```bash
 gdalwarp -of GTiff \
@@ -185,9 +187,9 @@ gdalwarp -of GTiff \
   image_output.tif
 ```
 
-🪟
+=== "🪟 Windows"
 
-```powershell
+```cmd
 gdalwarp.exe -of GTiff -co TILED=YES -co BIGTIFF=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co COMPRESS=ZSTD -co PREDICTOR=2 -s_srs EPSG:2154 -t_srs EPSG:2154 -dstalpha -cutline C:\data\area_of_interest.shp C:\ortho\input_image.jp2 C:\ortho\image_output.tif
 ```
 
@@ -195,7 +197,7 @@ gdalwarp.exe -of GTiff -co TILED=YES -co BIGTIFF=YES -co BLOCKXSIZE=512 -co BLOC
 
 Pour convertir un JP2 en TIFF RVBA tout en préservant l’unité colorimétrique :
 
-:penguin:
+=== ":penguin: Linux"
 
 ```bash
 gdal_translate -of GTiff \
@@ -213,9 +215,9 @@ gdal_translate -of GTiff \
   output_image.tif
 ```
 
-🪟
+=== "🪟 Windows"
 
-```powershell
+```cmd
 gdal_translate.exe -of GTiff -co BIGTIFF=YES -co TILED=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=12 -co COMPRESS=ZSTD -co PREDICTOR=2 -b 1 -b 2 -b 3 -b mask -colorinterp red,green,blue,alpha -a_srs EPSG:2154 C:\ortho\input_image.jp2 C:\ortho\output_image.jp2
 ```
 
