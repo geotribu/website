@@ -59,7 +59,7 @@ Les valeurs peuvent prendre deux formes :
 
 Ce qu'on appelle un objet, c'est tout ce qu'il se trouve entre les `{}` qui servent à déclarer le dit objet. Pour complexifier tout ça, on peut imbriquer les objets et ainsi vous donner un exemple un peu plus parlant que de parler de tomates et de champignons :
 
-```json
+```json title="Exemple de JSON des superhéros" linenums="1"
 {
   "squadName": "Super hero squad",
   "homeTown": "Metro City",
