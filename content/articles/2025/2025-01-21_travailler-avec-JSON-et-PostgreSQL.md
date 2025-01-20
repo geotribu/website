@@ -239,9 +239,10 @@ Vous pouvez voir que j'utilise l'opérateur `?`; uniquement valable pour les cha
 
 Je précise que même si vous êtes encore ici, je suppose que vous savez déjà cela. Cependant, la forme `(quelque_chose)::(type)` est un raccourci de PostgreSQL pour faire un `cast` soit convertir une valeur dans un autre type. Avec `->>` la valeur nous est renvoyée sous forme de texte et nous la convertissons en entier.
 
-### Avec du json imbriqué
+### Avec du JSON imbriqué
 
-Bon, il est bien gentil, mais là son json reste du json où tout est au premier niveau. Bah oui, pour mon besoin, cela m'a suffi. Mais, je ne vais pas fuir mes responsabilités et on va voir comment cela se passe avec du json plus complexe. Je repartirai de l'exemple de la partie précédente pour complexifier après cet aparté.
+Bon, il est bien gentil, mais là son JSON reste du JSON où tout est au premier niveau. Bah oui, pour mon besoin, cela m'a suffi. Mais, je ne vais pas fuir mes responsabilités et on va voir comment cela se passe avec du JSON plus complexe.  
+Je repartirai de l'exemple de la partie précédente pour complexifier après cet aparté.
 
 Pour injecter du json complexe dans un champ, deux solutions s'offrent à nous : imbriquer les fonctions dédiées, ou caster une chaine de texte. Imaginons une table "test", dans un schema "test" et dont un champ `jsonb` se nomme "donnees".
 
@@ -276,6 +277,8 @@ Le `$` désigne le début du chemin json retourné. Nous faisons suivre ce premi
 Pour plus d'informations sur les `json_path`, vous pouvez consulter la [documentation](https://www.postgresql.org/docs/current/functions-json.html#FUNCTIONS-SQLJSON-PATH).
 
 ## Attaquons nous au recensement
+
+![logo INSEE](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/INSEE.svg){: .img-thumbnail-left }
 
 Bien, maintenant que nous avons essayé d'expliquer tant bien que mal les concepts avec des exemples simples, car il faut bien commencer quelque part, essayons avec quelque chose d'un peu plus volumineux.
 
