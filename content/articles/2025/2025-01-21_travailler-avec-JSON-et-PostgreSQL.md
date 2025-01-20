@@ -139,7 +139,7 @@ Je vais éviter de vous spammer du `DDL` ([Data Definition Language](https://fr.
 
 En voici cependant un schéma succinct pour aider à la compréhension du reste de l'article :
 
-![modele_de_donnees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/modele.png){: .img-center loading=lazy }
+![Diagramme du modèle de la base de données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/modele.png){: .img-center loading=lazy }
 
 *Ne vous préoccupez pas des tables empilées tout à droite, ce sont des partitions de la table `donnees_communes`. Le sujet ne sera pas évoqué ici et elles ne sont nécessaires pour l'exemple.*
 
