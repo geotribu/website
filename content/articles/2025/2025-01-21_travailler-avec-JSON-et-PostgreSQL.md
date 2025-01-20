@@ -143,7 +143,11 @@ En voici cependant un schéma succinct pour aider à la compréhension du reste 
 
 *Ne vous préoccupez pas des tables empilées tout à droite, ce sont des partitions de la table `donnees_communes`. Le sujet ne sera pas évoqué ici et elles ne sont nécessaires pour l'exemple.*
 
-Partant d'un schéma nommé `insee`, on va créer deux tables. La première contiendra la liste des *bases* disponibles, les différents volets du recensement. Une seconde permettant de stocker les données ; pour rester concentré sur le json, on va s'épargner 95% du modèle sous-jacent. On ne gérera donc pas ici les codes communes, etc. En bonus pour celles et ceux voulant tester ce que Postgres a dans le ventre, je proposerai une variante juste en dessous :
+Partant d'un schéma nommé `insee`, on va créer deux tables :+1: 
+- la première contiendra la liste des *bases* disponibles, les différents volets du recensement ;
+- lae seconde permettant de stocker les données.
+
+Pour rester concentré sur le JSON, on va s'épargner 95% du modèle sous-jacent. On ne gérera donc pas ici les codes communes, etc. En bonus pour celles et ceux voulant tester ce que PostgreSQL a dans le ventre, je proposerai une variante juste en dessous :
 
 ```sql
 BEGIN;
