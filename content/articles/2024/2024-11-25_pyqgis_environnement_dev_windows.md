@@ -3,6 +3,7 @@ title: "Créer un environnement virtuel Python pour le développement de plugin 
 subtitle: Protégeons notre environnement, pour nos enfants PyQGIS
 authors:
     - Nicolas Godet
+    - Julien MOURA
 categories:
     - article
 comments: true
@@ -86,6 +87,39 @@ Je suppose dans la suite que vous avez installé QGIS dans le répertoire `C:\OS
     executable = C:\OSGeo4W\apps\Python312\python.exe
     command = C:\OSGeo4W\apps\Python312\python.exe -m venv --system-site-packages <Le chemin complet vers votre venv>
     ```
+
+### Avec l'utilitaire _qgis-venv-creator_
+
+> Paragraphe ajouté en janvier 2025
+
+![logo Gispo](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/Gispo.webp){: .img-thumbnail-left }
+
+Juste après que cet article soit publié, on découvrait [le projet create-qgis-venv](https://github.com/GispoCoding/qgis-venv-creator) de GispoCoding.
+
+Il se présente comme un outil en ligne de commande (CLI) multi-plateforme. Il est recommandé de l'installer avec [pipx](https://pipx.pypa.io/stable/#on-windows) qui gère la plupart des paramètres un peu sioux et qui est compatible avec Windows. C'est désormais l'outil recommandé dans la communauté Python pour gérer les outils en ligne de commande (CLI), c'est donc une bonne occasion de s'y mettre. Une fois pipx installé, paramétré (`ensurepath`...) et une nouvelle session PowerShell lancée, l'installation se passe comme un charme :
+
+```powershell title="Installation de qgis-venv-creator avec pipx"
+pipx install qgis-venv-creator
+```
+
+![Installation de qgis-venv-creator avec pipx](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/pyqgis_environnement_dev_windows/powershell_pipx_qgis-venv-creator.webp){: .img-center loading=lazy }
+
+L'outil qgis-venv-creator est désormais accessible depuis n'importe quelle session PowerShell avec la commande suivante :
+
+```powershell title="Commande de base de qgis-venv-creator"
+create-qgis-venv --venv-name ".venv"
+```
+
+L'outil a besoin d'identifier l'installation de QGIS à utiliser pour la génération de l'environnement de développement et cherche dans les emplacements par défaut (`C:\OSGeo4W` et `C:\PROGRAMFILES\QGIS X.y.z`). Mais si vous êtes quelqu'un de bien, soigneux et utilisez QGIS dans un monde professionnel, vous l'installez probablement dans un emplacement correct au regard de ce que recommande le système d'exploitation, `%PROGRAMFILES%/QGIS/X_y` par exemple. Il est possible de passer un _pattern_ pour lui indiquer où chercher :
+
+```powershell title="qgis-venv-creator avec un chemin d'installation de QGIS personnalisé"
+create-qgis-venv --qgis-installation-search-path-pattern "C:\Program Files\QGIS\*\apps\qgis*" --venv-name ".venv"
+```
+
+<iframe title="qgis-venv-creator demonstration" width="100%" height="400" src="https://video.osgeo.org/videos/embed/9b5806ca-d489-443f-8edc-d6be9b9a83c6" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+
+Il suffit d'activer son environnement virtuel `.venv/Scripts/activate` et de continuer ce tutoriel !  
+Merci Gispo !
 
 ----
 
