@@ -6,8 +6,8 @@ categories:
   - article
 comments: true
 date: 2025-02-11
-description: "Découvrez comment optimiser vos rasters et créer des mosaïques au format COG avec GDAL pour une gestion efficace des données raster géospatiales."
-icon: :material-grid:
+description: Découvrez comment optimiser vos rasters et créer des mosaïques au format COG avec GDAL pour une gestion efficace des données raster géospatiales.
+icon: material/grid
 image:
 license: default
 robots: index, follow
