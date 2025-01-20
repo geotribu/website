@@ -143,7 +143,7 @@ En voici cependant un schéma succinct pour aider à la compréhension du reste 
 
 *Ne vous préoccupez pas des tables empilées tout à droite, ce sont des partitions de la table `donnees_communes`. Le sujet ne sera pas évoqué ici et elles ne sont nécessaires pour l'exemple.*
 
-Partant d'un schéma nommé `insee`, on va créer deux tables :+1:
+Partant d'un schéma nommé `insee`, on va créer deux tables :
 
 - la première contiendra la liste des *bases* disponibles, les différents volets du recensement ;
 - lae seconde permettant de stocker les données.
@@ -181,7 +181,7 @@ Les plus tatillons des DBA d'entre vous auront remarqué ce `CHECK`. "Mais pourq
 
 Et on insère quelques lignes dans notre table insee.bases :
 
-```sql
+```sql title="Script SQL d'insertion de données" linenums="1"
 INSERT INTO insee.bases (nom) VALUES
 ('rp_population'),
 ('rp_menages'),
@@ -466,9 +466,10 @@ ORDER BY fk_base, clef_json;
 
 La seule difficulté ici est la présence de [LATERAL](https://docs.postgresql.fr/17/queries-table-expressions.html#QUERIES-FROM). Ce « mot » permet d'utiliser un champ de la requête principale dans une sous-requête placée dans une clause FROM. Les éléments de la sous-requête seront ensuite évalués atomiquement avant d'être joints à la table d'origine. Oui, ce n'est pas très facile à expliquer. Ici, le WHERE de la sous-requête va interroger le champ `donnees` de la table "donnees_communes" pour voir s'il y voit la clef_json en train d'être évaluée dans la table "correspondance_clefs_champs" possédant l'alias "c". Si oui, alors on prend la valeur minimum/maximum du champ année et on le joint à cette ligne et uniquement à cette ligne. Puis évaluation de clef_json suivante ... (*évaluée atomiquement*)
 
-Maintenant, on voudrait proposer un produit un peu plus simple d'utilisation avec tout ça. Excusez-moi d'avance, je copierai une requête de 50 lignes une seconde fois. La seule table utilisée ici que nous n'avons pas créée est une table zonages_administratifs comprenant les codes communes dans un champ "code_admin", et un champ "fk_type" contenant le type de zonage administratif (1 pour les communes).
+Maintenant, on voudrait proposer un produit un peu plus simple d'utilisation avec tout ça. Excusez-moi d'avance, je copierai une requête de 50 lignes une seconde fois.  
+La seule table utilisée ici que nous n'avons pas créée est une table `zonages_administratifs` comprenant les codes communes dans un champ `code_admin` et un champ `fk_type` contenant le type de zonage administratif (1 pour les communes).
 
-```sql
+```sql title="Création de la vue matérialisée agrémentée" linenums="1"
 CREATE MATERIALIZED VIEW insee.donnees_communes_olap AS
 WITH
 -- Sélection des codes communes
@@ -517,14 +518,13 @@ SELECT * FROM final WHERE valeur IS NOT NULL;
 
 ![vm_presence_cles_annees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/vm_donnees_olap.png){: .img-center loading=lazy }
 
-Attention, la création de cette vue matérialisée ou son refresh peut prendre un certain temps si vous avez stocké beaucoup de données (1 heure chez moi pour les 6 volets de 2015 à 2021).
+Attention, la création de cette vue matérialisée ou son rafraîchissement peut prendre un certain temps si vous avez stocké beaucoup de données (1 heure chez moi pour les 6 volets de 2015 à 2021).
 
 Enfin, histoire de vivre avec son temps et non comme un vieil ours des cavernes, on va convertir cette vue matérialisée en fichier [parquet](https://parquet.apache.org/).
-Et, pour ça, on va utiliser gdal/ogr qui est décidément incroyable.
+Et, pour ça, on va utiliser GDAL qui est décidément incroyable.
 
-```sh
-ogr2ogr -of parquet donnees_insee.parquet PG:"dbname='insee' shcema='insee' tables='donnees_communes_olap' user='nom_utilisateur' password='votre_mot_de_passe'"
-```
+```sh title="Export vue au format parquet"
+ogr2ogr -of parquet donnees_insee.parquet PG:"dbname='insee' schema='insee' tables='donnees_communes_olap' user='nom_utilisateur' password='votre_mot_de_passe'"
 
 Et on peut ainsi mettre le fichier sur un espace cloud, comme [ici](https://donnees-insee.s3.fr-par.scw.cloud/donnees_insee_olap.parquet) ! Vous pouvez ensuite sortir votre plus beau générateur de publications Linkedin qui mettra plein d'emojis choupi et faire le cake sur les rezos (imaginez que 90% du contenu de Linkedin doit être fait avec ces trucs qui sont capable de vous générer des publications expliquant que l'un des rares avantages du shape sur le geopackage est d'être un format multi-fichiers, le tout sur un ton très assuré).
 
