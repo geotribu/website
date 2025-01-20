@@ -184,7 +184,6 @@ INSERT INTO insee.bases (nom) VALUES
 ('rp_emploi')
 ```
 
-
 - Cela peut être intéressant pour limiter la taille des scans séquentiels qui se feront sur des tables plus petites que la table *parent*, où pour se faciliter la gestion de tables volumineuses.
 - On peut attacher / détacher une partition (qui devient alors une table classique) avec les "mots" `ATTACH PARTITION` / `DETACH PARTITION` y compris sur une base en production grâce à l'option `CONCURENTLY`
 - Une clé primaire de table partitionnée **doit** être composite, c'est-à-dire que son unicité sera vérifiée par la composition de plusieurs champs et contenir obligatoirement le champ de partitionnement.
