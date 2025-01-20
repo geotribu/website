@@ -115,6 +115,8 @@ PostgreSQL est capable de stocker les données/objets au format json dans des ch
 
 ## Les index
 
+![icône index](https://cdn.geotribu.fr/img/logos-icones/divers/index_pointeur.webp){: .img-thumbnail-left }
+
 Il est possible d'indexer un champ de type `json` / `jsonb` sur ses clés **de premier niveau** et cela se fait avec des index de type `GIN` :
 
 ```sql
