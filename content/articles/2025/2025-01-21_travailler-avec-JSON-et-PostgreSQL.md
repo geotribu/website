@@ -150,7 +150,7 @@ Partant d'un schéma nommé `insee`, on va créer deux tables :+1:
 
 Pour rester concentré sur le JSON, on va s'épargner 95% du modèle sous-jacent. On ne gérera donc pas ici les codes communes, etc. :
 
-```sql
+```sql title="Script de création des tables" linenums="1"
 BEGIN;
 -- table listant les differentes bases Insee disponibles
 
@@ -191,22 +191,6 @@ INSERT INTO insee.bases (nom) VALUES
 ('rp_emploi')
 ```
 
-```sql
- annee int2 NOT NULL,
- fk_base int2 NOT NULL,
- donnees jsonb NOT NULL,
- UNIQUE (annee, code_commune, fk_base),
- CONSTRAINT pk_donnees_communes PRIMARY KEY (pk_id, fk_base),
- CONSTRAINT fk_donnees_bases FOREIGN KEY (fk_base) REFERENCES insee.bases (pk_id) ON UPDATE CASCADE ON DELETE CASCADE
-) PARTITION BY LIST (fk_base);
-CREATE TABLE insee.donnees_communes_fk_1 PARTITION OF insee.donnees_communes FOR VALUES IN (1);
-CREATE TABLE insee.donnees_communes_fk_2 PARTITION OF insee.donnees_communes FOR VALUES IN (2);
-CREATE TABLE insee.donnees_communes_fk_3 PARTITION OF insee.donnees_communes FOR VALUES IN (3);
-CREATE TABLE insee.donnees_communes_fk_4 PARTITION OF insee.donnees_communes FOR VALUES IN (4);
-CREATE TABLE insee.donnees_communes_fk_5 PARTITION OF insee.donnees_communes FOR VALUES IN (5);
-CREATE TABLE insee.donnees_communes_fk_6 PARTITION OF insee.donnees_communes FOR VALUES IN (6);
-END;
-```
 
 ## Insertion de données et récupération
 
