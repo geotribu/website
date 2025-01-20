@@ -5,16 +5,16 @@ authors:
 categories:
   - article
 comments: true
-date: 2024-04-11
+date: 2025-02-11
 description: "Découvrez comment optimiser vos rasters et créer des mosaïques au format COG avec GDAL pour une gestion efficace des données raster géospatiales."
-icon: ":material-grid:"
-image: "Image d'illustration de l'article servant à la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
+icon: :material-grid:
+image:
 license: default
 robots: index, follow
 tags:
-  - raster
-  - image
-  - gdal
+    - COG
+    - GDAL
+    - raster
 ---
 
 # Optimiser vos rasters et générer des mosaïques au format COG (Cloud Optimized GeoTIFF) avec GDAL
@@ -233,6 +233,7 @@ En suivant ces bonnes pratiques, vous assurerez une génération efficace de COG
 Si vous souhaitez apporter votre expertise aux bonnes pratiques et astuces de GDAL et du COG, n'hésitez pas à contribuer à ce dépôt <https://github.com/geo2france/cog-tips>. Merci à Benjamin Chartier pour avoir proposé les commandes Windows.
 
 ----
+
 <!-- geotribu:authors-block -->
 
 {% include "licenses/default.md" %}
