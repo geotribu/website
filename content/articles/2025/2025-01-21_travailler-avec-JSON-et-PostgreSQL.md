@@ -422,7 +422,7 @@ ORDER BY "CODGEO";
 
 Ouf.
 
-![donnees_communes](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/donnees_communes.png){: .img-center loading=lazy }
+![Aperçu de la table donnees_communes après insertion des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/donnees_communes.png){: .img-center loading=lazy }
 
 On veillera à bien grouper les inserts dans cet ordre annee/base/code_commune afin de faciliter la lecture des données par PostgreSQL.
 
@@ -462,7 +462,7 @@ FROM insee.correspondance_clefs_champs AS c,
 ORDER BY fk_base, clef_json;
 ```
 
-![vm_presence_cles_annees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/vm_presence_cles_annees.png){: .img-center loading=lazy }
+![Apercu de la vm avec la première et dernière année de présence des cles](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/vm_presence_cles_annees.png){: .img-center loading=lazy }
 
 La seule difficulté ici est la présence de [LATERAL](https://docs.postgresql.fr/17/queries-table-expressions.html#QUERIES-FROM). Ce « mot » permet d'utiliser un champ de la requête principale dans une sous-requête placée dans une clause FROM. Les éléments de la sous-requête seront ensuite évalués atomiquement avant d'être joints à la table d'origine. Oui, ce n'est pas très facile à expliquer. Ici, le WHERE de la sous-requête va interroger le champ `donnees` de la table "donnees_communes" pour voir s'il y voit la clef_json en train d'être évaluée dans la table "correspondance_clefs_champs" possédant l'alias "c". Si oui, alors on prend la valeur minimum/maximum du champ année et on le joint à cette ligne et uniquement à cette ligne. Puis évaluation de clef_json suivante ... (*évaluée atomiquement*)
 
@@ -516,7 +516,7 @@ WITH
 SELECT * FROM final WHERE valeur IS NOT NULL;
 ```
 
-![vm_presence_cles_annees](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/vm_donnees_olap.png){: .img-center loading=lazy }
+![aperçu de la vm avec les données organisées façon "olap"](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/postgresql_json/vm_donnees_olap.png){: .img-center loading=lazy }
 
 Attention, la création de cette vue matérialisée ou son rafraîchissement peut prendre un certain temps si vous avez stocké beaucoup de données (1 heure chez moi pour les 6 volets de 2015 à 2021).
 
