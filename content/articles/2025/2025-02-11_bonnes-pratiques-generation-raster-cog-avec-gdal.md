@@ -90,7 +90,13 @@ Une fois le VRT construit, transformez-le en COG avec cette commande :
 === "🪟 Windows"
 
     ```cmd
-    gdal_translate.exe C:\dsm\input_dsm.vrt C:\dsm\my_dsm_output_cog.tif -of COG -co BLOCKSIZE=512 -co OVERVIEW_RESAMPLING=NEAREST -co COMPRESS=DEFLATE -co PREDICTOR=2 -co NUM_THREADS=20 -co BIGTIFF=IF_NEEDED
+    gdal_translate.exe C:\dsm\input_dsm.vrt C:\dsm\my_dsm_output_cog.tif -of COG ^
+    -co BLOCKSIZE=512 ^
+    -co OVERVIEW_RESAMPLING=NEAREST ^
+    -co COMPRESS=DEFLATE ^
+    -co PREDICTOR=2 ^
+    -co NUM_THREADS=20 ^
+    -co BIGTIFF=IF_NEEDED
     ```
 
 ### Points clés
@@ -123,7 +129,16 @@ Commencez par convertir chaque fichier JP2 en TIF en utilisant une boucle bash. 
 === "🪟 Windows"
 
     ```cmd
-    FOR %%F IN (C:\ortho\jpg2\*.jp2) DO gdal_translate.exe -of GTiff -co TILED=YES -co BIGTIFF=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=20 -co COMPRESS=ZSTD -co PREDICTOR=2 -a_srs EPSG:2154 %%F C:\ortho\0_TIF\%%~nxF.tif
+    FOR %%F IN (C:\ortho\jpg2\*.jp2) DO ^
+    gdal_translate.exe -of GTiff ^
+    -co TILED=YES ^
+    -co BIGTIFF=YES ^
+    -co BLOCKXSIZE=512 ^
+    -co BLOCKYSIZE=512 ^
+    -co NUM_THREADS=20 ^
+    -co COMPRESS=ZSTD ^
+    -co PREDICTOR=2 ^
+    %%F C:\ortho\0_TIF\%%~nxF.tif
     ```
 
 - **Taille des blocs** : `BLOCKXSIZE` et `BLOCKYSIZE` impactent les performances de lecture.
@@ -165,7 +180,13 @@ Générez le COG à partir du VRT :
 === "🪟 Windows"
 
     ```cmd
-    gdal_translate.exe C:\ortho\my_orthophotography.vrt C:\ortho\my_orthophotography_output_cog.tif -of COG -co BLOCKSIZE=512 -co OVERVIEW_RESAMPLING=BILINEAR -co COMPRESS=JPEG -co QUALITY=85 -co NUM_THREADS=12 -co BIGTIFF=YES
+    gdal_translate.exe C:\ortho\my_orthophotography.vrt C:\ortho\my_orthophotography_output_cog.tif -of COG ^
+    -co BLOCKSIZE=512 ^
+    -co OVERVIEW_RESAMPLING=BILINEAR ^
+    -co COMPRESS=JPEG ^
+    -co QUALITY=85 ^
+    -co NUM_THREADS=12 ^
+    -co BIGTIFF=YES
     ```
 
 - **Compression JPEG** : Un bon compromis entre taille de fichier et qualité avec une `QUALITY` de 85.
@@ -199,7 +220,19 @@ Pour éliminer les pixels indésirables en bordure (non définis comme nodata), 
 === "🪟 Windows"
 
     ```cmd
-    gdalwarp.exe -of GTiff -co TILED=YES -co BIGTIFF=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co COMPRESS=ZSTD -co PREDICTOR=2 -s_srs EPSG:2154 -t_srs EPSG:2154 -dstalpha -cutline C:\data\area_of_interest.shp C:\ortho\input_image.jp2 C:\ortho\image_output.tif
+    gdalwarp.exe -of GTiff ^
+    -co TILED=YES ^
+    -co BIGTIFF=YES ^
+    -co BLOCKXSIZE=512 ^
+    -co BLOCKYSIZE=512 ^
+    -co COMPRESS=ZSTD ^
+    -co PREDICTOR=2 ^
+    -s_srs EPSG:2154 ^
+    -t_srs EPSG:2154 ^
+    -dstalpha ^
+    -cutline C:\data\area_of_interest.shp ^
+    C:\ortho\input_image.jp2 ^
+    C:\ortho\image_output.tif
     ```
 
 ### Conversion de JP2 en TIFF RVBA
@@ -227,7 +260,19 @@ Pour convertir un JP2 en TIFF RVBA tout en préservant l’unité colorimétriqu
 === "🪟 Windows"
 
     ```cmd
-    gdal_translate.exe -of GTiff -co BIGTIFF=YES -co TILED=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=12 -co COMPRESS=ZSTD -co PREDICTOR=2 -b 1 -b 2 -b 3 -b mask -colorinterp red,green,blue,alpha -a_srs EPSG:2154 C:\ortho\input_image.jp2 C:\ortho\output_image.jp2
+    gdal_translate.exe -of GTiff ^
+    -co BIGTIFF=YES ^
+    -co TILED=YES ^
+    -co BLOCKXSIZE=512 ^
+    -co BLOCKYSIZE=512 ^
+    -co NUM_THREADS=12 ^
+    -co COMPRESS=ZSTD ^
+    -co PREDICTOR=2 ^
+    -b 1 -b 2 -b 3 -b mask ^
+    -colorinterp red,green,blue,alpha ^
+    -a_srs EPSG:2154 ^
+    C:\ortho\input_image.jp2 ^
+    C:\ortho\output_image.tif
     ```
 
 ## Considérations finales
