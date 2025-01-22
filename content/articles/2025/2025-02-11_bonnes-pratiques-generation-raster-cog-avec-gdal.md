@@ -108,7 +108,7 @@ Une fois le VRT construit, transformez-le en COG avec cette commande :
 
 Mon COG sera plus léger que les données téléchargées, sauf si celles-ci sont déjà compressées. L'objectif est de préserver la donnée source tout en optimisant les performances d'affichage et de traitement. Voici quelques exemples de données assemblées et converties en COG pour la Région Hauts-de-France :
 
-| Données | format source | poids brute | poids en COG |
+| Données | Format source | Poids brut | Poids en COG |
 | --------|--------------|-----|-----|
 | [MNS correlés](https://geoservices.ign.fr/modeles-numeriques-de-surfaces-correles) | TIF (compression LZW) | 241.4 Go | 235.5 Go |
 | [RGE ALTI®](https://geoservices.ign.fr/rgealti) | ASC | 206.3 Go | 48.2 Go |
@@ -206,10 +206,10 @@ Générez le COG à partir du VRT :
 Le format JP2 offre une compression efficace mais requiert un codec propriétaire, limitant son utilisation. Une licence est nécessaire pour des applications serveur. La conversion en COG améliore les performances et la polyvalence d'utilisation (SIG desktop, flux, traitements d'images, etc.), bien qu'au détriment de la taille.
 La compression JPEG, bien que destructrice, convient parfaitement aux orthophotos. La qualité visuelle reste suffisante, même pour l'impression ou le traitement d'image.
 
-| Données | format source | poids brute | poids en COG |
+| Données | Format source | Poids brut | Poids en COG |
 | --------|--------------|--------|--------|
 | [BD ORTHO®](https://geoservices.ign.fr/bdortho) | JP2 (format compressé) | 30.7 Go | 60.5 Go |
-| [PCRS Rater](https://www.geo2france.fr/datahub/dataset/94a69703-572f-463a-9cfc-6bca075384b8) | TIF (LZW) | 20.1 To | 3.1 Go |
+| [PCRS Rater](https://www.geo2france.fr/datahub/dataset/94a69703-572f-463a-9cfc-6bca075384b8) | TIF (ZSTD) | 20.1 To | 3.1 Go |
 
 ## Cas particuliers et bonnes pratiques
 
