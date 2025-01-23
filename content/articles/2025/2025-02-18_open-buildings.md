@@ -69,17 +69,17 @@ Pour ajouter le jeu de données Open Buildings dans QGIS, il suffit de l'importe
 
 Tada :tada:, le CSV est importé !
 
-Et là, [c'est le drame](https://www.arteradio.com/son/61658634/et_la_c_est_le_drame).
+[Et là, c'est le drame.](https://www.arteradio.com/son/61658634/et_la_c_est_le_drame)
 
-![gif d'une personne en train de pointer sa montre du doigt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/gif_waiting.gif)
+![gif d'une personne qui a l'air pressée, en train de pointer sa montre du doigt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/gif_waiting.gif)
 
 ## Convertir un CSV en geopackage, un format plus commode
 
 Le nombre important de bâtiments, chargé via CSV en plus, peut rendre l'usage dans QGIS pas forcément fluide. Pour cela, on préférera utiliser un `gpkg`, qu'il est possible d'exporter depuis la couche CSV via un export classique.
 
-Ou alors via un peu de :fireworks: [GDAL/OGR](https://gdal.org/en/stable/drivers/raster/gpkg.html), en créant d'abord un fichier `.vrt`, qu'on nomme `0fd_buildings.vrt` en écho au CSV initial appelé `0fd_buildings.csv` :
+Ou alors via un peu de magie [GDAL/OGR](https://gdal.org/en/stable/drivers/raster/gpkg.html), en créant d'abord un fichier `.vrt`, qu'on nomme `0fd_buildings.vrt` en écho au CSV initial appelé `0fd_buildings.csv` :
 
-```xml title="Contenu du fichier 0fd_buildings.csv"
+```xml title="Contenu du fichier 0fd_buildings.vrt"
 <OGRVRTDataSource>
     <OGRVRTLayer name="0fd_buildings">
         <SrcDataSource>0fd_buildings.csv</SrcDataSource>
@@ -96,7 +96,9 @@ Puis on convertit ce [VRT](https://gdal.org/en/stable/drivers/raster/vrt.html) e
 ogr2ogr -f GPKG 0fd_buildings.gpkg 0fd_buildings.vrt -t_srs EPSG:4326 -nlt Polygon -nln footprints -progress
 ```
 
-En sortie, on se retrouve avec le geopackage `0fd_buildings.gpkg`, ce qui est pratique pour une utilisation plus fluide dans QGIS. Également pour un import éventuel en base PostGIS, qu'on peut effectuer là aussi avec `GDAL/OGR` :
+En sortie, on se retrouve avec le geopackage `0fd_buildings.gpkg`, ce qui est pratique pour une utilisation plus fluide dans QGIS.
+
+Également pour un import éventuel en base PostGIS, qu'on peut effectuer là aussi avec `GDAL/OGR` :
 
 ```sh
 ogr2ogr -f "PostgreSQL" \
@@ -110,7 +112,7 @@ ogr2ogr -f "PostgreSQL" \
 
 Nous avons vu comment télécharger puis convertir dans un format plus commode des données de bâtiments Open Buildings.
 
-L’objectif est de fournir une méthode efficace pour obtenir des informations géospatiales précises sur les bâtiments, qui peuvent être utilisées pour diverses applications, telles que :
+L’objectif est de fournir une méthode efficace pour obtenir des informations géospatiales précises sur les bâtiments, qui peuvent être utilisés pour diverses applications, telles que :
 
 - La cartographie des populations, notamment pour les recensements et l’estimation de la densité
 - L’évaluation des pertes et la planification des interventions lors de catastrophes naturelles
@@ -118,7 +120,7 @@ L’objectif est de fournir une méthode efficace pour obtenir des informations 
 
 Qu'on se le dise : les Open Buildings pallient un manque de services publics et de données disponibles dans les pays couverts par ce jeu de données, où le niveau de complétion des bâtiments OpenStreetMap n'est pas toujours haut, et tout le monde n'a pas la chance d'avoir [l'IGN](https://www.ign.fr/) et sa [BD TOPO](https://geoservices.ign.fr/bdtopo)...
 
-Même si ça commence à bouger ces derniers temps, citons notamment [le projet SIGFU en Côte d'Ivoire](https://sigfu.gouv.ci/accueil) : à mi-chemin entre SIG et Kung-Fu, il s'agit du _Système Intégré de Gestion du Foncier Urbain_, initié par le Ministère en charge de la Construction du Logement et de l’Urbanisme. Ou [le service d'adressage et de parcelles numériques et uniques de la Poste au Ghana](https://www.ghanapostgps.com/map/).
+Même si ça commence à bouger ces derniers temps, citons notamment [le projet SIGFU en Côte d'Ivoire](https://sigfu.gouv.ci/accueil) : 50% SIG 50% Kung-Fu, il s'agit du _Système Intégré de Gestion du Foncier Urbain_, initié par le _Ministère en charge de la Construction du Logement et de l’Urbanisme_. Ou [le service d'adressage et de parcelles numériques et uniques de la Poste au Ghana](https://www.ghanapostgps.com/map/).
 
 Nous encourageons les organisations et les individus à utiliser ce jeu de données Open Buildings, pour des applications vertueuses et en faveur du développement des pays du Sud.
 
