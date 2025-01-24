@@ -594,17 +594,19 @@ redirects:
     # node/846.md:
     node/847.md: rdp/2016/rdp_2016-07-01.md
     # node/850.md:
+    rdp/2010/rdp_2010-10-05.md: rdp/2010/rdp_2010-10-01.md
     rdp/2010/rdp_2010-10-14.md: rdp/2010/rdp_2010-10-15.md
-    rdp/2012/rdp_2012-09-06.md: rdp/2012/rdp_2012-09-07.md
     rdp/2012/rdp_2012-02-05.md: rdp/2012/rdp_2012-02-03.md
+    rdp/2012/rdp_2012-09-06.md: rdp/2012/rdp_2012-09-07.md
+    rdp/2012/rdp_2012-11-08.md: rdp/2012/rdp_2012-11-09.md
     rdp/2013/rdp_2013-07-02.md: rdp/2013/rdp_2013-07-05.md
     rdp/2014/rdp_2014-06-14.md: rdp/2014/rdp_2014-06-13.md
     rdp/2014/rdp_2014-11-10.md: rdp/2014/rdp_2014-11-14.md
     rdp/2014/rdp_2014-11-24.md: rdp/2014/rdp_2014-11-28.md
+    rdp/2014/rdp_2014-11-17.md: rdp/2014/rdp_2014-11-14.md
+    rdp/2015/rdp_2015-02-16.md: rdp/2015/rdp_2015-02-20.md
     rdp/2015/rdp_2015-04-07.md: rdp/2015/rdp_2015-04-10.md
     rdp/2015/rdp_2015-04-20.md: rdp/2015/rdp_2015-04-24.md
-    rdp/2010/rdp_2010-10-05.md: rdp/2010/rdp_2010-10-01.md
-    rdp/2014/rdp_2014-11-17.md: rdp/2014/rdp_2014-11-14.md
     rdp/2015/rdp_2015-12-21.md: rdp/2015/rdp_2015-12-18.md
     rdp/rdp_2020-04-30.md: rdp/2020/rdp_2020-04-30.md
     # rss.md: https://geotribu.fr/feed_rss_created.xml
