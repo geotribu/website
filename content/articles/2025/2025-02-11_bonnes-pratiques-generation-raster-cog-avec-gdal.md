@@ -305,11 +305,11 @@ Pour convertir un JP2 en TIFF RVBA tout en préservant l’unité colorimétriqu
 ## Considérations finales
 
 - **Compression** :
-  - Utilisez `JPEG` pour les fichiers RVB (3 bandes).
-  - Préférez `DEFLATE` ou `ZSTD` pour les fichiers avec plus de 3 bandes ou en 16 bits.
+    - Utilisez `JPEG` pour les fichiers RVB (3 bandes).
+    - Préférez `DEFLATE` ou `ZSTD` pour les fichiers avec plus de 3 bandes ou en 16 bits.
 - **Méthode de Rééchantillonnage** :
-  - `BILINEAR` est idéal pour le rendu visuel.
-  - `NEAREST` est recommandé pour les traitements analytiques afin de préserver l'intégrité des données.
+    - `BILINEAR` est idéal pour le rendu visuel.
+    - `NEAREST` est recommandé pour les traitements analytiques afin de préserver l'intégrité des données.
 
 En suivant ces bonnes pratiques, vous assurerez une génération efficace de COG, améliorant ainsi la manipulation et la visualisation de vos données spatiales quelque soit votre environnement.
 
