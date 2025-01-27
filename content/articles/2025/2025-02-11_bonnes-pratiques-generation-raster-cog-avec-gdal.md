@@ -211,7 +211,7 @@ La compression JPEG, bien que destructrice, convient parfaitement aux orthophoto
 | Données | Format source | Poids brut | Poids en COG |
 | --------|--------------|--------|--------|
 | [BD ORTHO®](https://geoservices.ign.fr/bdortho) | JP2 (format compressé) | 30.7 Go | 60.5 Go |
-| [PCRS Rater](https://www.geo2france.fr/datahub/dataset/94a69703-572f-463a-9cfc-6bca075384b8) | TIF (ZSTD) | 20.1 To | 3.1 Go |
+| [PCRS Raster](https://www.geo2france.fr/datahub/dataset/94a69703-572f-463a-9cfc-6bca075384b8) | TIF (ZSTD) | 20.1 To | 3.1 Go |
 
 ## Cas particuliers et bonnes pratiques
 
@@ -308,6 +308,14 @@ Pour convertir un JP2 en TIFF RVBA tout en préservant l’unité colorimétriqu
 En suivant ces bonnes pratiques, vous assurerez une génération efficace de COG, améliorant ainsi la manipulation et la visualisation de vos données spatiales quelque soit votre environnement.
 
 Si vous souhaitez apporter votre expertise aux bonnes pratiques et astuces de GDAL et du COG, n'hésitez pas à contribuer à ce dépôt <https://github.com/geo2france/cog-tips>. Merci à [Benjamin Chartier](../../team/benjamin-chartier.md "Profil de Benjamin Chartier") pour avoir proposé les commandes Windows.
+
+## Affichage dans QGIS
+
+1. Si votre fichier est disponible sur le réseau, il se consulte de la même manière qu'une n'importe quel raster.
+2. S'il est disponible en flux WMS ou WMTS, c'est transparent pour vous, vous ne saurez pas que vous chargez un COG. NDLR : nous avons remarqué, sur Geo2France, une meilleure performance dans les temps de réponse de flux en utilisant une mosaique COG. Cela évite de devoir générer du cache tuilé chronophage en espace disque (utile pour la sobriété numérique).
+3. Un COG peut être publié via un simple serveur web HTTP(S). Il est disponible via une simple URL. Pour le charger dans QGIS, rendez-vous dans le menu _Raster_ , choisissez _"Protocole HTTP(S), cloud, etc."_ et coller l'URL dans URI.
+
+![menu raster de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/raster_qgis.png)
 
 ----
 
