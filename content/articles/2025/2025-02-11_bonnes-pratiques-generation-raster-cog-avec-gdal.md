@@ -101,6 +101,9 @@ Une fois le VRT construit, transformez-le en COG avec cette commande :
     -co BIGTIFF=IF_NEEDED
     ```
 
+Aperçu du RGE ALTI® 1m à l'échelle des Hauts-de-France
+![rgealti_2017_hdf](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/bdalti_1m.png){: .img-center loading=lazy }
+
 ### Points clés
 
 - **Resampling** : Utilisez `RESAMPLING=NEAREST` pour préserver l'intégrité des données.
@@ -203,6 +206,9 @@ Générez le COG à partir du VRT :
 - **Compression JPEG** : Un bon compromis entre taille de fichier et qualité avec une `QUALITY` de 85.
 - **Rééchantillonnage** : `BILINEAR` pour un rendu visuel optimal dans les visualisations géospatiales.
 
+Aperçu de la BD ORTHO® 2021 à l'échelle des Hauts-de-France
+![bdortho_2021_hdf](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/bdortho_20cm.png){: .img-center loading=lazy }
+
 ### Volumétrie
 
 Le format JP2 offre une compression efficace mais requiert un codec propriétaire, limitant son utilisation. Une licence est nécessaire pour des applications serveur. La conversion en COG améliore les performances et la polyvalence d'utilisation (SIG desktop, flux, traitements d'images, etc.), bien qu'au détriment de la taille.
@@ -299,11 +305,11 @@ Pour convertir un JP2 en TIFF RVBA tout en préservant l’unité colorimétriqu
 ## Considérations finales
 
 - **Compression** :
-    - Utilisez `JPEG` pour les fichiers RVB (3 bandes).
-    - Préférez `DEFLATE` ou `ZSTD` pour les fichiers avec plus de 3 bandes ou en 16 bits.
+  - Utilisez `JPEG` pour les fichiers RVB (3 bandes).
+  - Préférez `DEFLATE` ou `ZSTD` pour les fichiers avec plus de 3 bandes ou en 16 bits.
 - **Méthode de Rééchantillonnage** :
-    - `BILINEAR` est idéal pour le rendu visuel.
-    - `NEAREST` est recommandé pour les traitements analytiques afin de préserver l'intégrité des données.
+  - `BILINEAR` est idéal pour le rendu visuel.
+  - `NEAREST` est recommandé pour les traitements analytiques afin de préserver l'intégrité des données.
 
 En suivant ces bonnes pratiques, vous assurerez une génération efficace de COG, améliorant ainsi la manipulation et la visualisation de vos données spatiales quelque soit votre environnement.
 
@@ -312,10 +318,12 @@ Si vous souhaitez apporter votre expertise aux bonnes pratiques et astuces de GD
 ## Affichage dans QGIS
 
 1. Si votre fichier est disponible sur le réseau, il se consulte de la même manière qu'une n'importe quel raster.
-2. S'il est disponible en flux WMS ou WMTS, c'est transparent pour vous, vous ne saurez pas que vous chargez un COG. NDLR : nous avons remarqué, sur Geo2France, une meilleure performance dans les temps de réponse de flux en utilisant une mosaique COG. Cela évite de devoir générer du cache tuilé chronophage en espace disque (utile pour la sobriété numérique).
+2. S'il est disponible en flux WMS ou WMTS, c'est transparent pour vous, vous ne saurez pas que vous chargez un COG. NDLR : nous avons remarqué, sur Geo2France, une meilleure performance dans les temps de réponse de flux en utilisant une mosaique COG. Cela évite de devoir générer du cache tuilé consommateur d'espace disque (utile pour la sobriété numérique).
 3. Un COG peut être publié via un simple serveur web HTTP(S). Il est disponible via une simple URL. Pour le charger dans QGIS, rendez-vous dans le menu _Raster_ , choisissez _"Protocole HTTP(S), cloud, etc."_ et coller l'URL dans URI.
 
 ![menu raster de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/raster_qgis.png)
+
+Envie de tester ? Utilisez l'url suivante pour charger l'orthophoto IGN 2021 sur la région Hauts-de-France ![IGN_BDOrtho_2021_RVB_COG_Geo2France.tif](http://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif) (~242.6 Go)
 
 ----
 
