@@ -321,9 +321,9 @@ Si vous souhaitez apporter votre expertise aux bonnes pratiques et astuces de GD
 2. S'il est disponible en flux WMS ou WMTS, c'est transparent pour vous, vous ne saurez pas que vous chargez un COG. NDLR : nous avons remarqué, sur Geo2France, une meilleure performance dans les temps de réponse de flux en utilisant une mosaique COG. Cela évite de devoir générer du cache tuilé consommateur d'espace disque (utile pour la sobriété numérique).
 3. Un COG peut être publié via un simple serveur web HTTP(S). Il est disponible via une simple URL. Pour le charger dans QGIS, rendez-vous dans le menu _Raster_ , choisissez _"Protocole HTTP(S), cloud, etc."_ et coller l'URL dans URI.
 
-![menu raster de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/raster_qgis.png)
+![menu raster de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/raster_qgis.png){: .img-center loading=lazy }
 
-Envie de tester ? Utilisez l'url suivante pour charger l'orthophoto IGN 2021 sur la région Hauts-de-France ![IGN_BDOrtho_2021_RVB_COG_Geo2France.tif](http://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif) (~242.6 Go)
+Envie de tester ? Utilisez l'url suivante pour charger l'orthophoto IGN 2021 sur la région Hauts-de-France [IGN_BDOrtho_2021_RVB_COG_Geo2France.tif](http://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif) (~242.6 Go en quelques secondes ^^)
 
 ----
 
