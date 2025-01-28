@@ -87,12 +87,14 @@ tags:
   PyCSW: python
   PyGEOS: python
   PyQGIS: python
-  PyQt: python
+  PyQt: qt
+  PyQt5: qt
   PySQL: python
   Python: python
   PyWPS: python
   QField: telephone
   QGIS: qgis
+  Qt: qt
   R: rstats
   raster: raster
   relief: terrain
