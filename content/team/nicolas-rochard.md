@@ -9,8 +9,8 @@ social:
     - linkedin: nicolas-rochard
     - mail:
     - mastodon:
-        - instance:
-        - username:
+        - instance: mapstodon.space
+        - username: badwolf42
     - openstreetmap:
     - osgeo: doctorwho
     - twitter:
