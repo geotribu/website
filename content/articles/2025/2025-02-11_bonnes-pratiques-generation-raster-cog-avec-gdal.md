@@ -49,9 +49,13 @@ Dans cet article, nous aborderons les meilleures pratiques pour générer des CO
 
 Avant de commencer la génération de COG, assurez-vous de disposer des éléments suivants :
 
-- **GDAL Version 3.1 ou supérieure** : Vérifiez que votre installation de GDAL est à jour pour bénéficier des dernières améliorations et fonctionnalités spécifiques aux COG.
-- **Types de Raster appropriés** : Pour les données raster à une bande (comme les Modèles Numériques de Terrain - MNT ou d’Élévation - MNE), utilisez des fichiers au format TIF, ASC ou tout autre format compatible avec GDAL. Pour les rasters à trois bandes, les orthophotos sont particulièrement adaptées.
-- **Environnement Linux ou Windows** : Les commandes abordées ici ont été testées sur ces deux systèmes d’exploitation.
+- **GDAL Version 3.1 ou supérieure** : vérifiez que votre installation de GDAL est à jour pour bénéficier des dernières améliorations et fonctionnalités spécifiques aux COG.
+- **Types de Raster appropriés** : pour les données raster à une bande (comme les Modèles Numériques de Terrain - MNT ou d’Élévation - MNE), utilisez des fichiers au format TIF, ASC ou tout autre format compatible avec GDAL. Pour les rasters à trois bandes, les orthophotos sont particulièrement adaptées.
+- **Environnement Linux ou Windows** : les commandes abordées ici ont été testées sur ces deux systèmes d’exploitation.
+
+!!! info précaution d'usage pour Windows
+    Si votre terminal ne vous trouve pas les commandes GDAL, indiquez le chemin complet jusqu'au binaire GDAL. Exemple : ``
+    Sinon référez vous à cet article : [article GDAL sur Windows](../2013/2013-09-26_installer_python_gdal_sous_windows.md)
 
 ## Construction du VRT pour un raster à 1 bande
 
@@ -107,8 +111,8 @@ Aperçu du RGE ALTI® 1m à l'échelle des Hauts-de-France
 
 ### Points clés
 
-- **Resampling** : Utilisez `RESAMPLING=NEAREST` pour préserver l'intégrité des données.
-- **Optimisation des performances** : Ajustez `NUM_THREADS` en fonction de la capacité de votre machine.
+- **Resampling** : utilisez `RESAMPLING=NEAREST` pour préserver l'intégrité des données.
+- **Optimisation des performances** : ajustez `NUM_THREADS` en fonction de la capacité de votre machine.
 
 ### Volumétrie
 
@@ -174,7 +178,7 @@ Créez un VRT pour votre ensemble de données TIFF avec la commande suivante :
     gdalbuildvrt.exe C:\ortho\my_orthophotography.vrt C:\ortho\0_TIF\*.tif -addalpha -hidenodata -a_srs EPSG:2154
     ```
 
-- `-hidenodata` : Masque les cellules nodata, rendant les zones correspondantes transparentes.
+- `-hidenodata` : masque les cellules nodata, rendant les zones correspondantes transparentes.
 
 ### Conversion du VRT en COG
 
@@ -204,7 +208,7 @@ Générez le COG à partir du VRT :
     -co BIGTIFF=YES
     ```
 
-- **Compression JPEG** : Un bon compromis entre taille de fichier et qualité avec une `QUALITY` de 85.
+- **Compression JPEG** : un bon compromis entre taille de fichier et qualité avec une `QUALITY` de 85.
 - **Rééchantillonnage** : `BILINEAR` pour un rendu visuel optimal dans les visualisations géospatiales.
 
 Aperçu de la BD ORTHO® 2021 à l'échelle des Hauts-de-France :
@@ -328,7 +332,12 @@ Si vous souhaitez apporter votre expertise aux bonnes pratiques et astuces de GD
 Envie de tester ? Collez l'URL suivante dans QGIS et chargez l'orthophoto IGN 2021 sur la région Hauts-de-France (~242.6 Go en quelques secondes ^^) :
 
 ```txt
-http://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif``
+https://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif
+```
+
+Voici ce que cela donne dans QGIS :
+
+![aperçu du chargement d'un COG dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/qgis_cog_live.webm){: .img-center loading=lazy }
 
 ----
 
