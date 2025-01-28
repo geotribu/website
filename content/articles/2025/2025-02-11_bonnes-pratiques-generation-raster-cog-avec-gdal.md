@@ -207,7 +207,8 @@ Générez le COG à partir du VRT :
 - **Compression JPEG** : Un bon compromis entre taille de fichier et qualité avec une `QUALITY` de 85.
 - **Rééchantillonnage** : `BILINEAR` pour un rendu visuel optimal dans les visualisations géospatiales.
 
-Aperçu de la BD ORTHO® 2021 à l'échelle des Hauts-de-France
+Aperçu de la BD ORTHO® 2021 à l'échelle des Hauts-de-France :
+
 ![bdortho_2021_hdf](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/bdortho_20cm.png){: .img-center loading=lazy }
 
 ### Volumétrie
