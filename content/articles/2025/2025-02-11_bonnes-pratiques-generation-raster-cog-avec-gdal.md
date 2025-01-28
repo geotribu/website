@@ -217,7 +217,7 @@ Le format JP2 offre une compression efficace mais requiert un codec propriétair
 La compression JPEG, bien que destructrice, convient parfaitement aux orthophotos. La qualité visuelle reste suffisante, même pour l'impression ou le traitement d'image.
 
 | Données | Format source | Poids brut | Poids en COG |
-| --------|--------------|--------|--------|
+| :------ | :-----------: | :--------: | :----------: |
 | [BD ORTHO®](https://geoservices.ign.fr/bdortho) | JP2 (format compressé) | 30.7 Go | 60.5 Go |
 | [PCRS Raster](https://www.geo2france.fr/datahub/dataset/94a69703-572f-463a-9cfc-6bca075384b8) | TIF (ZSTD) | 20.1 To | 3.1 Go |
 
