@@ -115,7 +115,7 @@ Aperçu du RGE ALTI® 1m à l'échelle des Hauts-de-France
 Mon COG sera plus léger que les données téléchargées, sauf si celles-ci sont déjà compressées. L'objectif est de préserver la donnée source tout en optimisant les performances d'affichage et de traitement. Voici quelques exemples de données assemblées et converties en COG pour la Région Hauts-de-France :
 
 | Données | Format source | Poids brut | Poids en COG |
-| --------|--------------|-----|-----|
+| :------ | :-----------: | :--------: | :----------: |
 | [MNS correlés](https://geoservices.ign.fr/modeles-numeriques-de-surfaces-correles) | TIF (compression LZW) | 241.4 Go | 235.5 Go |
 | [RGE ALTI®](https://geoservices.ign.fr/rgealti) | ASC | 206.3 Go | 48.2 Go |
 
