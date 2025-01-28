@@ -54,7 +54,7 @@ Avant de commencer la génération de COG, assurez-vous de disposer des élémen
 - **Environnement Linux ou Windows** : les commandes abordées ici ont été testées sur ces deux systèmes d’exploitation.
 
 !!! info précaution d'usage pour Windows
-    Si votre terminal ne vous trouve pas les commandes GDAL, indiquez le chemin complet jusqu'au binaire GDAL. Exemple : ``
+    Si votre terminal ne vous trouve pas les commandes GDAL, indiquez le chemin complet jusqu'au binaire GDAL. Exemple : `C:\Users\nom_utilisateur> C:\"Program Files"\"QGIS 3.34.8"\bin\gdalinfo --version`
     Sinon référez vous à cet article : [article GDAL sur Windows](../2013/2013-09-26_installer_python_gdal_sous_windows.md)
 
 ## Construction du VRT pour un raster à 1 bande
