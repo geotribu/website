@@ -102,6 +102,7 @@ Une fois le VRT construit, transformez-le en COG avec cette commande :
     ```
 
 Aperçu du RGE ALTI® 1m à l'échelle des Hauts-de-France
+
 ![rgealti_2017_hdf](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/bdalti_1m.png){: .img-center loading=lazy }
 
 ### Points clés
