@@ -103,7 +103,7 @@ Une fois le VRT construit, transformez-le en COG avec cette commande :
 
 Aperçu du RGE ALTI® 1m à l'échelle des Hauts-de-France
 
-![rgealti_2017_hdf](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/bdalti_1m.png){: .img-center loading=lazy }
+![aperçu du RGE ALTI 1m avec ombrage sur les Hauts-de-France](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/bdalti_1m.png){: .img-center loading=lazy }
 
 ### Points clés
 
@@ -209,7 +209,7 @@ Générez le COG à partir du VRT :
 
 Aperçu de la BD ORTHO® 2021 à l'échelle des Hauts-de-France :
 
-![bdortho_2021_hdf](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/bdortho_20cm.png){: .img-center loading=lazy }
+![aperçu de la BD ORTHO 20cm 2021 sur les Hauts-de-France](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/bdortho_20cm.png){: .img-center loading=lazy }
 
 ### Volumétrie
 
