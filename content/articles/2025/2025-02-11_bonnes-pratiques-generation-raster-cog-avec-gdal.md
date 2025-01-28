@@ -53,9 +53,14 @@ Avant de commencer la génération de COG, assurez-vous de disposer des élémen
 - **Types de Raster appropriés** : pour les données raster à une bande (comme les Modèles Numériques de Terrain - MNT ou d’Élévation - MNE), utilisez des fichiers au format TIF, ASC ou tout autre format compatible avec GDAL. Pour les rasters à trois bandes, les orthophotos sont particulièrement adaptées.
 - **Environnement Linux ou Windows** : les commandes abordées ici ont été testées sur ces deux systèmes d’exploitation.
 
-!!! info précaution d'usage pour Windows
-    Si votre terminal ne vous trouve pas les commandes GDAL, indiquez le chemin complet jusqu'au binaire GDAL. Exemple : `C:\Users\nom_utilisateur> C:\"Program Files"\"QGIS 3.34.8"\bin\gdalinfo --version`
-    Sinon référez vous à cet article : [article GDAL sur Windows](../2013/2013-09-26_installer_python_gdal_sous_windows.md)
+!!! info "Précaution d'usage pour Windows"
+    Si votre terminal ne vous trouve pas les commandes GDAL, indiquez le chemin complet jusqu'au binaire GDAL. Exemple avec celui intégré à votre installation de QGIS :
+
+    ```batch
+    C:\Users\nom_utilisateur> C:\"Program Files"\"QGIS 3.34.8"\bin\gdalinfo --version
+    ```
+
+    Sinon référez vous à cet article [Python et GDAL sur Windows](../2013/2013-09-26_installer_python_gdal_sous_windows.md "Python et GDAL sur Windows") ou [à celui-ci](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md "Utiliser GDAL sur Windows via WSL").
 
 ## Construction du VRT pour un raster à 1 bande
 
@@ -69,7 +74,7 @@ Pour combiner plusieurs fichiers raster ASC en un VRT (Virtual Raster Tile), une
 
 === "🪟 Windows"
 
-    ```cmd
+    ```batch
     gdalbuildvrt.exe C:\dsm\my_dsm.vrt C:\dsm_directory\*.asc -addalpha -a_srs EPSG:2154
     ```
 Détail des options :
@@ -85,24 +90,24 @@ Une fois le VRT construit, transformez-le en COG avec cette commande :
 
     ```bash
     gdal_translate input_dsm.vrt my_dsm_output_cog.tif -of COG \
-    -co RESAMPLING=NEAREST \
-    -co OVERVIEW_RESAMPLING=NEAREST \
-    -co COMPRESS=DEFLATE \
-    -co PREDICTOR=2 \
-    -co NUM_THREADS=20 \
-    -co BIGTIFF=IF_NEEDED
+        -co RESAMPLING=NEAREST \
+        -co OVERVIEW_RESAMPLING=NEAREST \
+        -co COMPRESS=DEFLATE \
+        -co PREDICTOR=2 \
+        -co NUM_THREADS=20 \
+        -co BIGTIFF=IF_NEEDED
     ```
 
 === "🪟 Windows"
 
-    ```cmd
+    ```batch
     gdal_translate.exe C:\dsm\input_dsm.vrt C:\dsm\my_dsm_output_cog.tif -of COG ^
-    -co BLOCKSIZE=512 ^
-    -co OVERVIEW_RESAMPLING=NEAREST ^
-    -co COMPRESS=DEFLATE ^
-    -co PREDICTOR=2 ^
-    -co NUM_THREADS=20 ^
-    -co BIGTIFF=IF_NEEDED
+        -co BLOCKSIZE=512 ^
+        -co OVERVIEW_RESAMPLING=NEAREST ^
+        -co COMPRESS=DEFLATE ^
+        -co PREDICTOR=2 ^
+        -co NUM_THREADS=20 ^
+        -co BIGTIFF=IF_NEEDED
     ```
 
 Aperçu du RGE ALTI® 1m à l'échelle des Hauts-de-France
@@ -147,17 +152,17 @@ Commencez par convertir chaque fichier JP2 en TIF en utilisant une boucle bash. 
 
 === "🪟 Windows"
 
-    ```cmd
+    ```batch
     FOR %%F IN (C:\ortho\jpg2\*.jp2) DO ^
-    gdal_translate.exe -of GTiff ^
-    -co TILED=YES ^
-    -co BIGTIFF=YES ^
-    -co BLOCKXSIZE=512 ^
-    -co BLOCKYSIZE=512 ^
-    -co NUM_THREADS=20 ^
-    -co COMPRESS=ZSTD ^
-    -co PREDICTOR=2 ^
-    %%F C:\ortho\0_TIF\%%~nxF.tif
+        gdal_translate.exe -of GTiff ^
+            -co TILED=YES ^
+            -co BIGTIFF=YES ^
+            -co BLOCKXSIZE=512 ^
+            -co BLOCKYSIZE=512 ^
+            -co NUM_THREADS=20 ^
+            -co COMPRESS=ZSTD ^
+            -co PREDICTOR=2 ^
+        %%F C:\ortho\0_TIF\%%~nxF.tif
     ```
 
 - **Taille des blocs** : `BLOCKXSIZE` et `BLOCKYSIZE` impactent les performances de lecture.
@@ -174,7 +179,7 @@ Créez un VRT pour votre ensemble de données TIFF avec la commande suivante :
 
 === "🪟 Windows"
 
-    ```cmd
+    ```batch
     gdalbuildvrt.exe C:\ortho\my_orthophotography.vrt C:\ortho\0_TIF\*.tif -addalpha -hidenodata -a_srs EPSG:2154
     ```
 
@@ -188,24 +193,24 @@ Générez le COG à partir du VRT :
 
     ```bash
     gdal_translate my_orthophotography.vrt my_orthophotography_output_cog.tif -of COG \
-    -co BLOCKSIZE=512 \
-    -co OVERVIEW_RESAMPLING=BILINEAR \
-    -co COMPRESS=JPEG \
-    -co QUALITY=85 \
-    -co NUM_THREADS=12 \
-    -co BIGTIFF=YES
+        -co BLOCKSIZE=512 \
+        -co OVERVIEW_RESAMPLING=BILINEAR \
+        -co COMPRESS=JPEG \
+        -co QUALITY=85 \
+        -co NUM_THREADS=12 \
+        -co BIGTIFF=YES
     ```
 
 === "🪟 Windows"
 
-    ```cmd
+    ```batch
     gdal_translate.exe C:\ortho\my_orthophotography.vrt C:\ortho\my_orthophotography_output_cog.tif -of COG ^
-    -co BLOCKSIZE=512 ^
-    -co OVERVIEW_RESAMPLING=BILINEAR ^
-    -co COMPRESS=JPEG ^
-    -co QUALITY=85 ^
-    -co NUM_THREADS=12 ^
-    -co BIGTIFF=YES
+        -co BLOCKSIZE=512 ^
+        -co OVERVIEW_RESAMPLING=BILINEAR ^
+        -co COMPRESS=JPEG ^
+        -co QUALITY=85 ^
+        -co NUM_THREADS=12 ^
+        -co BIGTIFF=YES
     ```
 
 - **Compression JPEG** : un bon compromis entre taille de fichier et qualité avec une `QUALITY` de 85.
@@ -235,37 +240,37 @@ Pour éliminer les pixels indésirables en bordure (non définis comme nodata), 
 
     ```bash
     gdalwarp -of GTiff \
-    -co TILED=YES \
-    -co BIGTIFF=YES \
-    -co BLOCKXSIZE=512 \
-    -co BLOCKYSIZE=512 \
-    -co NUM_THREADS=12 \
-    -co COMPRESS=ZSTD \
-    -co PREDICTOR=2 \
-    -s_srs EPSG:2154 \
-    -t_srs EPSG:2154 \
-    -dstalpha \
-    -cutline area_of_interest.shp \
-    input_image.jp2 \
-    image_output.tif
+        -co TILED=YES \
+        -co BIGTIFF=YES \
+        -co BLOCKXSIZE=512 \
+        -co BLOCKYSIZE=512 \
+        -co NUM_THREADS=12 \
+        -co COMPRESS=ZSTD \
+        -co PREDICTOR=2 \
+        -s_srs EPSG:2154 \
+        -t_srs EPSG:2154 \
+        -dstalpha \
+        -cutline area_of_interest.shp \
+        input_image.jp2 \
+        image_output.tif
     ```
 
 === "🪟 Windows"
 
-    ```cmd
+    ```batch
     gdalwarp.exe -of GTiff ^
-    -co TILED=YES ^
-    -co BIGTIFF=YES ^
-    -co BLOCKXSIZE=512 ^
-    -co BLOCKYSIZE=512 ^
-    -co COMPRESS=ZSTD ^
-    -co PREDICTOR=2 ^
-    -s_srs EPSG:2154 ^
-    -t_srs EPSG:2154 ^
-    -dstalpha ^
-    -cutline C:\data\area_of_interest.shp ^
-    C:\ortho\input_image.jp2 ^
-    C:\ortho\image_output.tif
+        -co TILED=YES ^
+        -co BIGTIFF=YES ^
+        -co BLOCKXSIZE=512 ^
+        -co BLOCKYSIZE=512 ^
+        -co COMPRESS=ZSTD ^
+        -co PREDICTOR=2 ^
+        -s_srs EPSG:2154 ^
+        -t_srs EPSG:2154 ^
+        -dstalpha ^
+        -cutline C:\data\area_of_interest.shp ^
+        C:\ortho\input_image.jp2 ^
+        C:\ortho\image_output.tif
     ```
 
 ### Conversion de JP2 en TIFF RVBA
@@ -292,7 +297,7 @@ Pour convertir un JP2 en TIFF RVBA tout en préservant l’unité colorimétriqu
 
 === "🪟 Windows"
 
-    ```cmd
+    ```batch
     gdal_translate.exe -of GTiff ^
     -co BIGTIFF=YES ^
     -co TILED=YES ^
@@ -323,13 +328,19 @@ Si vous souhaitez apporter votre expertise aux bonnes pratiques et astuces de GD
 
 ## Affichage dans QGIS
 
-1. Si votre fichier est disponible sur le réseau, il se consulte de la même manière qu'une n'importe quel raster.
-2. S'il est disponible en flux WMS ou WMTS, c'est transparent pour vous, vous ne saurez pas que vous chargez un COG. NDLR : nous avons remarqué, sur Geo2France, une meilleure performance dans les temps de réponse de flux en utilisant une mosaique COG. Cela évite de devoir générer du cache tuilé consommateur d'espace disque (utile pour la sobriété numérique).
-3. Un COG peut être publié via un simple serveur web HTTP(S). Il est disponible via une simple URL. Pour le charger dans QGIS, rendez-vous dans le menu _Raster_ , choisissez _"Protocole HTTP(S), cloud, etc."_ et coller l'URL dans URI.
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
+
+Le format COG présente de nombreux avantages en termes de performance à l'affichage et, à l'instar de n'importe quel raster, il se consulte parfaitement dans QGIS.
+
+S'il est disponible en flux WMS ou WMTS, c'est transparent pour vous, vous ne saurez pas que vous chargez un COG. NDLR : nous avons remarqué, sur Geo2France, une meilleure performance dans les temps de réponse de flux en utilisant une mosaique COG. Cela évite de devoir générer du cache tuilé consommateur d'espace disque (utile pour la sobriété numérique).
+
+Un COG peut être publié via un simple serveur web HTTP(S), sans brique logicielle additionnelle comme MapServer, GeoServer ou QGIS Server. Il est disponible via une simple URL.
+
+Pour le charger dans QGIS, rendez-vous dans le menu _Raster_ , choisissez _"Protocole HTTP(S), cloud, etc."_ et coller l'URL dans le champ `URI` :
 
 ![menu raster de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/raster_qgis.png){: .img-center loading=lazy }
 
-Envie de tester ? Collez l'URL suivante dans QGIS et chargez l'orthophoto IGN 2021 sur la région Hauts-de-France (~242.6 Go en quelques secondes ^^) :
+Envie de tester ? Collez l'URL suivante dans QGIS et chargez l'orthophoto IGN 2021 sur la région Hauts-de-France (~242.6 Go en quelques secondes :smile:) :
 
 ```txt
 https://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif
@@ -337,7 +348,12 @@ https://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif
 
 Voici ce que cela donne dans QGIS :
 
-![aperçu du chargement d'un COG dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/qgis_cog_live.webm){: .img-center loading=lazy }
+<video width="100%" controls>
+    <!-- markdownlint-disable MD033 -->
+      <source src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/qgis_cog_live.webm" type="video/webm">
+      Votre navigateur ne supporte pas la balise video HTML 5.
+      <!-- markdownlint-enable MD033 -->
+</video>
 
 ----
 
