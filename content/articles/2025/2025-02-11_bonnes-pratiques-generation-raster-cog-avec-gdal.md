@@ -323,7 +323,8 @@ Si vous souhaitez apporter votre expertise aux bonnes pratiques et astuces de GD
 
 ![menu raster de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/raster_qgis.png){: .img-center loading=lazy }
 
-Envie de tester ? Utilisez l'url suivante pour charger l'orthophoto IGN 2021 sur la région Hauts-de-France [IGN_BDOrtho_2021_RVB_COG_Geo2France.tif](http://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif) (~242.6 Go en quelques secondes ^^)
+Envie de tester ? Collez l'URL suivante dans QGIS et chargez l'orthophoto IGN 2021 sur la région Hauts-de-France :
+`http://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif` (~242.6 Go en quelques secondes ^^)
 
 ----
 
