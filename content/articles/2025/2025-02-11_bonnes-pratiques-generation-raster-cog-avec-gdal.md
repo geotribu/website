@@ -36,7 +36,7 @@ C'est là que le format COG (_Cloud Optimized GeoTIFF_) intervient pour simplifi
 - **Données peu ou pas alterées**_(en fonction des options de compression choisies)_ : vous pouvez modifier la radiométrie, l'ordre des bandes, l'utiliser dans des processus de geotraitements, etc.
 - **Simplicité d'organisation** : une seule image à charger, éliminant le besoin de VRT peu performant, la génération de pyramides et réduisant la gestion de nombreux fichiers
 
-![vador_command_line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/command_line.jpg){: .img-center loading=lazy }
+![Dark Vador - You don't know the power of command-line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/command_line.jpg){: .img-center loading=lazy }
 
 Dans cet article, nous aborderons les meilleures pratiques pour générer des COG avec GDAL, un outil essentiel des SIG. Certaines options ne soit pas encore disponible dans QGIS, nous utiliserons donc la ligne de commande. Pas d'inquiétude : il s'agit toujours de la même base avec quelques variations, et même sans être un expert, vous vous en sortirez très bien (j'ai pu tester sur mes collègues et ils ont survécut).
 
