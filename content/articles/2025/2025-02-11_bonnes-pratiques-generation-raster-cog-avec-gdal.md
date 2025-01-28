@@ -1,6 +1,6 @@
 ---
 title: Optimiser vos rasters et générer des mosaïques au format COG avec GDAL
-subtitle: Des images grille en-tête
+subtitle: Des orthos grille en-tête
 authors:
   - Nicolas ROCHARD
 categories:
