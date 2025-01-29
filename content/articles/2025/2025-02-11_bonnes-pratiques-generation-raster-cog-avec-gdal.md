@@ -26,14 +26,14 @@ tags:
 
 ## Introduction
 
-Les données Raster sont une composante majeure des référentiels de nos systèmes d'information géographique. Ces fichiers sont bien plus volumineux que des données vectorielles et sont parfois fragmenté en plusieurs dalles rendant son chargement laborieux. Lorsque ces données sont disponibles en flux WMS ou WMTS, alors leur consultation est plus aisée mais présente des limitations (pas de possibilité d'affiner la radiométrie, lenteur d'affichage, problème d'impression, etc.). Il est alors indispensable d'avoir une donnée en locale ou sur le réseau de la structure.
+Les données Raster sont une composante majeure des référentiels de nos systèmes d'information géographique. Ces fichiers sont bien plus volumineux que des données vectorielles et sont parfois fragmentés en plusieurs dalles rendant son chargement laborieux. Lorsque ces données sont disponibles en flux WMS ou WMTS, alors leur consultation est plus aisée mais présente des limitations (pas de possibilité d'affiner la radiométrie, lenteur d'affichage, problème d'impression, etc.). Il est alors indispensable d'avoir une donnée en local ou sur le réseau de la structure.
 
 ![logo COG](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/COG.png "logo COG"){: .img-thumbnail-left }
 
 C'est là que le format COG (_Cloud Optimized GeoTIFF_) intervient pour simplifier la vie des géomaticiens. Ces fichiers, optimisés pour le cloud, facilitent le traitement et la visualisation des données spatiales à grande échelle grâce à leur accessibilité rapide et leur structure efficiente. Conçus spécifiquement pour le cloud, les COG offrent de nombreux avantages sur d'autres environnements :
 
 - **Performance améliorée** : affichage quasi-immédiat même sur des volumes importants évitant ainsi les frustrations liées aux lenteurs, que ce soit au bureau ou en télétravail.
-- **Données peu ou pas alterées**_(en fonction des options de compression choisies)_ : vous pouvez modifier la radiométrie, l'ordre des bandes, l'utiliser dans des processus de geotraitements, etc.
+- **Données peu ou pas altérées**_(en fonction des options de compression choisies)_ : vous pouvez modifier la radiométrie, l'ordre des bandes, l'utiliser dans des processus de geotraitements, etc.
 - **Simplicité d'organisation** : une seule image à charger, éliminant le besoin de VRT peu performant, la génération de pyramides et réduisant la gestion de nombreux fichiers
 
 ![Dark Vador - You don't know the power of command-line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/command_line.jpg){: .img-center loading=lazy }
@@ -60,7 +60,7 @@ Avant de commencer la génération de COG, assurez-vous de disposer des élémen
     C:\Users\nom_utilisateur> C:\"Program Files"\"QGIS 3.34.8"\bin\gdalinfo --version
     ```
 
-    Sinon référez vous à cet article [Python et GDAL sur Windows](../2013/2013-09-26_installer_python_gdal_sous_windows.md "Python et GDAL sur Windows") ou [à celui-ci](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md "Utiliser GDAL sur Windows via WSL").
+    Sinon référez-vous à cet article [Python et GDAL sur Windows](../2013/2013-09-26_installer_python_gdal_sous_windows.md "Python et GDAL sur Windows") ou [à celui-ci](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md "Utiliser GDAL sur Windows via WSL").
 
 ## Construction du VRT pour un raster à 1 bande
 
@@ -322,7 +322,7 @@ Pour convertir un JP2 en TIFF RVBA tout en préservant l’unité colorimétriqu
     - `BILINEAR` est idéal pour le rendu visuel.
     - `NEAREST` est recommandé pour les traitements analytiques afin de préserver l'intégrité des données.
 
-En suivant ces bonnes pratiques, vous assurerez une génération efficace de COG, améliorant ainsi la manipulation et la visualisation de vos données spatiales quelque soit votre environnement.
+En suivant ces bonnes pratiques, vous assurerez une génération efficace de COG, améliorant ainsi la manipulation et la visualisation de vos données spatiales quel que soit votre environnement.
 
 Si vous souhaitez apporter votre expertise aux bonnes pratiques et astuces de GDAL et du COG, n'hésitez pas à contribuer à ce dépôt <https://github.com/geo2france/cog-tips>. Merci à [Benjamin Chartier](../../team/benjamin-chartier.md "Profil de Benjamin Chartier") pour avoir proposé les commandes Windows.
 
