@@ -12,7 +12,7 @@ babel>=2.14,<3 # pour les macros
 mkdocs-awesome-pages-plugin>=2.6,<2.11
 mkdocs-exclude>=1.0,<1.1
 mkdocs-git-authors-plugin<0.10
-mkdocs-git-committers-plugin-2>=2.2.3,<2.5
+mkdocs-git-committers-plugin-2>=2.5,<2.6
 mkdocs-git-revision-date-localized-plugin>=1,<1.4
 mkdocs-glightbox>=0.3,<0.5
 mkdocs-macros-plugin>=0.5,<1.4
