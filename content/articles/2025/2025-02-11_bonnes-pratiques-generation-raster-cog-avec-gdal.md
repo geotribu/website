@@ -355,6 +355,21 @@ Voici ce que cela donne dans QGIS :
       <!-- markdownlint-enable MD033 -->
 </video>
 
+## Affichage dans des clients Web
+
+Le format COG offre une intégration optimale avec vos clients web préférés. Pour l'intégrer, il faudra consulter la documentation détaillée du projet qui vous fournira le code adapté.
+Pour vous inspirer, voici quelques liens vers de la documentation et des démonstrateurs :
+
+- Les COG dans OpenLayers : [documentation et démo](https://openlayers.org/en/latest/examples/cog.html)
+- Les COG dans MapLibre : [documentation](https://github.com/geomatico/maplibre-cog-protocol?tab=readme-ov-file) et [démo](https://labs.geomatico.es/maplibre-cog-protocol/dem.html)
+- Les COG dans Cesium : [documentation](https://github.com/hongfaqiu/TIFFImageryProvider) et [démo](https://tiff-imagery-provider.opendde.com/?panel=layer)
+- Les COG dans Giro3D : [documentation](https://giro3d.org/latest/examples/cog_color.html) et [demo](https://giro3d.org/latest/examples/cog_elevation.html)
+
+## Affichage dans ArcGIS Pro
+
+Le COG est supporté dans ArcGIS Pro d'après cette [documentation](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm) ...
+... mais pas (encore ?) dans ArcGIS Online ([source](https://community.esri.com/t5/arcgis-pro-ideas/support-cloud-optimized-geotiff-cog-across-the/idi-p/938786))
+
 ----
 
 <!-- geotribu:authors-block -->
