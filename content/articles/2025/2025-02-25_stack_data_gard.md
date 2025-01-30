@@ -3,7 +3,7 @@ title: 'L''enjeu de la data au département du Gard'
 authors:
     - Satya MINGUEZ
 categories:
-    - article 
+    - article
 comments: true
 date: 2025-02-17
 description: Comment le département du Gard valorise son patrimoine de données classiques et de géo-données au travers de différents outils numériques.
@@ -24,7 +24,7 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-Le département du Gard dispose de plusieurs compétences parmi lesquelles l'aide sociale et l'infrastructure routière. Il entretient et améliore un réseau de 4 600 km de routes afin de sécuriser les déplacements. 
+Le département du Gard dispose de plusieurs compétences parmi lesquelles l'aide sociale et l'infrastructure routière. Il entretient et améliore un réseau de 4 600 km de routes afin de sécuriser les déplacements.
 L’éducation fait également partie de ses missions, notamment à travers la gestion de 53 collèges publics. À cela s’ajoutent d’autres domaines importants comme la culture et les archives départementales.
 
 Dans chacun de ces domaines, une grande quantité de données est produite et consommée, c'est ce patrimoine de données que le département souhaite valoriser pour notamment aider les directions et services à prendre les décisions éclairées dans l'exercice de leurs missions.
@@ -68,8 +68,8 @@ Pour résumer, ces différences peuvent être synthétisées dans le tableau sui
 Si tu as envie de creuser un peu, laisse-moi te recommander quelques ressources en ligne :
 
 - Définition et avantages d'une MDS : [https://datascientest.com/modern-data-stack-tout-savoir](https://datascientest.com/modern-data-stack-tout-savoir)
-- MDS expliquée en vidéo par [Michael Kahan](https://www.youtube.com/c/KahanDataSolutions) (la vidéo est en anglais, sous-titres disponibles) : https://youtu.be/GVyuPHumef8
-- ETL vs ELT (sous-titres dispo) https://www.youtube.com/watch?v=_Nk0v9qUWk4&list=PLy4OcwImJzBKg3rmROyI_CBBAYlQISkOO&index=1
+- MDS expliquée en vidéo par [Michael Kahan](https://www.youtube.com/c/KahanDataSolutions) (la vidéo est en anglais, sous-titres disponibles) : <https://youtu.be/GVyuPHumef8>
+- ETL vs ELT (sous-titres dispo) <https://www.youtube.com/watch?v=_Nk0v9qUWk4&list=PLy4OcwImJzBKg3rmROyI_CBBAYlQISkOO&index=1>
 
 ### 2. Notre stratégie
 
@@ -84,6 +84,7 @@ La stack mise en oeuvre au département porte le nom de **Taradata**.
 Bien qu'inspirée des principes de la MDS, Taradata n'en est pas une version stricte. En effet, nos logiciels ne sont pas hébergés sur le Cloud, mais plutôt On-Premise / [Docker](https://fr.wikipedia.org/wiki/Docker_(logiciel)). Cependant, nous avons conservé les éléments essentiels d'une MDS, comme la modularité et l'approche ELT.
 
 ### Son utilité
+
 Nous devons traiter les données dites **« attributaires »** et **« géographiques »**.  
 Cela implique :  
 
@@ -97,6 +98,7 @@ Voici le principe de la stack simplifié au travers d'un schéma :
 ---
 
 ## Les outils
+
 Mettre en place une Modern Data Stack, c'est choisir les différentes briques qui la constituent, nous allons détailler ici les outils retenus pour Taradata.
 
 ### PostgreSQL/PostGIS
@@ -109,11 +111,12 @@ Pour l'entrepôt de données, nous avons retenu PostgreSQL/[PostGIS](https://pos
 ### Extraction et chargement : GDAL/OGR (ogr2ogr)
 
 ![GDAL/OGR](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png){: .img-thumbnail-left }
- 
+
 [ogr2ogr](https://gdal.org/en/stable/programs/ogr2ogr.html) permet d'extraire et charger des données :
--	de différentes natures (notamment des données géographiques)
--	de différents formats (CSV, SHP, GPKG, GeoJSON...)
--	de différentes sources
+
+- de différentes natures (notamment des données géographiques)
+- de différents formats (CSV, SHP, GPKG, GeoJSON...)
+- de différentes sources
 
 Voilà à quoi pourrait ressembler une extraction de données au format GeoJSON par un appel API avec au passage une transformation du système de coordonnées.
 
@@ -166,6 +169,7 @@ Apache Airflow est [l'orchestrateur](https://www.redhat.com/fr/topics/automation
  Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (Directed Acyclic Graph), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
 
 Et donc Airflow nous permet de :
+
 - définir les tâches en Python,
 - spécifier les contraintes entre les tâches,
 - organiser les tâches dans un DAG,
@@ -186,6 +190,7 @@ Dans l'idéal, nous aurions souhaité un outil aussi performant en dataviz qu'en
 Metabase est limité en carto certes (pas de carte multi-couches, pas de gestion de la symbologie), mais il est auto hébergé et permet de produire des tableaux de bord de manière autonome.
 
 Voyons un peu les actions qu'il permet de faire :
+
 - Interroger l’entrepôt en mode graphique.
 - Représenter les données sous différentes formes.  
 - Combiner plusieurs visualisations dans des tableaux de bord.  
@@ -211,12 +216,14 @@ Si tu as bien suivi, tu as sans doute compris que nous avions un outil pour chac
 
 ![Stack Taradata](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/stack_taradata.png){: .img-center loading=lazy }
 
-## Quelques ressources 
+## Quelques ressources
 
 Tu pourras trouver le lien vers le support que [Michaël Galien](https://geotribu.fr/team/michael-galien/) a présenté lors des GeoDataDays de Nantes les 19 et 20 septembre 2024. Il explique la Modern Data Stack et détaille le cas d'usage Metabase que je t'ai présenté plus haut.
-- https://www.geodatadays.fr/_medias/afigeo/files/GDD_2024/Presentations/3_GDD24_Modern_GIS_Stack_GARD.pdf
+
+- <https://www.geodatadays.fr/_medias/afigeo/files/GDD_2024/Presentations/3_GDD24_Modern_GIS_Stack_GARD.pdf>
 
 Dans ce replay de la Forward Data Conference, il présente comment la composante géographique a été prise en compte dans Taradata.
-- https://youtu.be/KaXUk44cRzw
+
+- <https://youtu.be/KaXUk44cRzw>
 
 <!-- geotribu:authors-block -->
