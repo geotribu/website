@@ -30,7 +30,6 @@ tags:
 Le département du Gard dispose de plusieurs compétences parmi lesquelles l'aide sociale et l'infrastructure routière. Il entretient et améliore un réseau de 4 600 km de routes afin de sécuriser les déplacements.
 L’éducation fait également partie de ses missions, notamment à travers la gestion de 53 collèges publics. À cela s’ajoutent d’autres domaines importants comme la culture et les archives départementales.
 
-
 Dans chacun de ces domaines, une grande quantité de données est produite et consommée, c'est ce patrimoine de données que le département souhaite valoriser pour notamment aider les directions et services à prendre les décisions éclairées dans l'exercice de leurs missions.
 
 Auparavant, les analyses se faisaient plutôt dans des silos métiers mais aussi des silos techniques avec une séparation BI/SIG. Or, le croisement de données de natures et de sources diverses peut apporter de l'information.
@@ -100,7 +99,6 @@ Voici le principe de la stack simplifié au travers d'un schéma :
 
 ![Schéma de la stack Taradata](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/principes_taradata.png){: .img-center loading=lazy }
 
-
 ---
 
 ### Les outils
@@ -162,11 +160,9 @@ Voici un extrait de lignage avec les données sources en vert, la donnée finale
 
 ![Lignage de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/lignage_dbt.png){: .img-center loading=lazy }
 
-
 Documenter les données est aussi une possibilité que nous offre le logiciel.
 
 ![Extrait de documentation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/documentation_dbt.png){: .img-center loading=lazy }
-
 
 Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.youtube.com/watch?v=5rNquRnNb4E&list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT), toujours de Michael Kahan qui est une excellente source d'apprentissage et qui te détaillera bien plus les spécificités du logiciel que moi.
 
@@ -180,7 +176,6 @@ Apache Airflow est [l'orchestrateur](https://www.redhat.com/fr/topics/automation
 
 Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (Directed Acyclic Graph), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
 
-
 Et donc Airflow nous permet de :
 
 - définir les tâches en Python,
@@ -191,7 +186,6 @@ Et donc Airflow nous permet de :
 Tu peux trouver ci-dessous une représentation graphique des différentes dépendances entre les tâches d'un DAG d'extraction et chargement des données de la Base Adresse Nationale (BAN) concernant le Gard ainsi que ses départements limitrophes.  
 
 ![Représentation graphique des tâches pour le DAG de la BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/graph_ban_airflow.png){: .img-center loading=lazy }
-
 
 ---
 
