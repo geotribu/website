@@ -1,31 +1,35 @@
 ---
-title: 'L''enjeu de la data au département du Gard'
+title: "L'enjeu de la data au département du Gard"
+
 authors:
     - Satya MINGUEZ
 categories:
     - article
 comments: true
-date: 2025-02-17
+date: 2025-02-25
 description: Comment le département du Gard valorise son patrimoine de données classiques et de géo-données au travers de différents outils numériques.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/affiche.png
 tags:
-    - QGIS
-    - PostgreSQL
-    - PostGIS
-    - GDAL/OGR
-    - Open Source
-    - DBT
     - Apache Airflow
-    - Python
+    - DBT
+    - GDAL/OGR
     - Metabase
+    - Open Source
+    - PostGIS
+    - PostgreSQL
+    - Python
+    - QGIS
 ---
 
 # L’enjeu de la data au département du Gard
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-![Logo du département du Gard](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/gard.jpg "Logo du département du Gard"){: .img-thumbnail-left } Le département du Gard dispose de plusieurs compétences parmi lesquelles l'aide sociale et l'infrastructure routière. Il entretient et améliore un réseau de 4 600 km de routes afin de sécuriser les déplacements.
+![Logo du département du Gard](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/gard.jpg){: .img-thumbnail-left }
+
+Le département du Gard dispose de plusieurs compétences parmi lesquelles l'aide sociale et l'infrastructure routière. Il entretient et améliore un réseau de 4 600 km de routes afin de sécuriser les déplacements.
 L’éducation fait également partie de ses missions, notamment à travers la gestion de 53 collèges publics. À cela s’ajoutent d’autres domaines importants comme la culture et les archives départementales.
+
 
 Dans chacun de ces domaines, une grande quantité de données est produite et consommée, c'est ce patrimoine de données que le département souhaite valoriser pour notamment aider les directions et services à prendre les décisions éclairées dans l'exercice de leurs missions.
 
@@ -67,7 +71,7 @@ Pour résumer, ces différences peuvent être synthétisées dans le tableau sui
 
 Si tu as envie de creuser un peu, laisse-moi te recommander quelques ressources en ligne :
 
-- Définition et avantages d'une MDS : [https://datascientest.com/modern-data-stack-tout-savoir](https://datascientest.com/modern-data-stack-tout-savoir)
+- Définition et avantages d'une MDS : <https://datascientest.com/modern-data-stack-tout-savoir>
 - MDS expliquée en vidéo par [Michael Kahan](https://www.youtube.com/c/KahanDataSolutions) (la vidéo est en anglais, sous-titres disponibles) : <https://youtu.be/GVyuPHumef8>
 - ETL vs ELT (sous-titres dispo) <https://www.youtube.com/watch?v=_Nk0v9qUWk4&list=PLy4OcwImJzBKg3rmROyI_CBBAYlQISkOO&index=1>
 
@@ -93,7 +97,9 @@ Cela implique :
 3. Transformer ces données via renommages, restructurations et associations.
 
 Voici le principe de la stack simplifié au travers d'un schéma :
-![Schéma de la stack](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/principes_taradata.png){: .img-center loading=lazy }
+
+![Schéma de la stack Taradata](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/principes_taradata.png){: .img-center loading=lazy }
+
 
 ---
 
@@ -153,10 +159,14 @@ Les transformations sont décrites en SQL/[Jinja](https://jinja.palletsprojects.
 
 Le logiciel permet aussi de connaître le [lignage](https://fr.wikipedia.org/wiki/Data_lineage) de la donnée c'est-à-dire la capacité à visualiser et tracer l'origine, les transformations, et les relations entre les différentes données.
 Voici un extrait de lignage avec les données sources en vert, la donnée finale en violet et toutes les liaisons.
+
 ![Lignage de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/lignage_dbt.png){: .img-center loading=lazy }
 
+
 Documenter les données est aussi une possibilité que nous offre le logiciel.
+
 ![Extrait de documentation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/documentation_dbt.png){: .img-center loading=lazy }
+
 
 Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.youtube.com/watch?v=5rNquRnNb4E&list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT), toujours de Michael Kahan qui est une excellente source d'apprentissage et qui te détaillera bien plus les spécificités du logiciel que moi.
 
@@ -165,8 +175,11 @@ Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.you
 #### Orchestration : Apache Airflow
 
 ![Logo Apache Airflow](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/airflow.png){: .img-thumbnail-left }
+
 Apache Airflow est [l'orchestrateur](https://www.redhat.com/fr/topics/automation/what-is-orchestration#:~:text=L%27orchestration%20renvoie%20%C3%A0%20l,se%20d%C3%A9roulent%20dans%20l%27ordre.), la clé de voûte de toute la stack. Son objectif est de décrire les tâches à réaliser et planifier leur exécution.
- Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (Directed Acyclic Graph), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
+
+Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (Directed Acyclic Graph), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
+
 
 Et donc Airflow nous permet de :
 
@@ -176,7 +189,9 @@ Et donc Airflow nous permet de :
 - planifier l’exécution des DAGs et suivre leur avancement.
 
 Tu peux trouver ci-dessous une représentation graphique des différentes dépendances entre les tâches d'un DAG d'extraction et chargement des données de la Base Adresse Nationale (BAN) concernant le Gard ainsi que ses départements limitrophes.  
+
 ![Représentation graphique des tâches pour le DAG de la BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/graph_ban_airflow.png){: .img-center loading=lazy }
+
 
 ---
 
