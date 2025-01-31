@@ -1,28 +1,31 @@
 ---
-title: 'L''enjeu de la data au département du Gard'
+title: "L'enjeu de la data au département du Gard"
+
 authors:
     - Satya MINGUEZ
 categories:
     - article
 comments: true
-date: 2025-02-17
+date: 2025-02-25
 description: Comment le département du Gard valorise son patrimoine de données classiques et de géo-données au travers de différents outils numériques.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/affiche.png
 tags:
-    - QGIS
-    - PostgreSQL
-    - PostGIS
-    - GDAL/OGR
-    - Open Source
-    - DBT
     - Apache Airflow
-    - Python
+    - DBT
+    - GDAL/OGR
     - Metabase
+    - Open Source
+    - PostGIS
+    - PostgreSQL
+    - Python
+    - QGIS
 ---
 
 # L’enjeu de la data au département du Gard
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
+![Logo du département du Gard](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/gard.jpg){: .img-thumbnail-left }
 
 Le département du Gard dispose de plusieurs compétences parmi lesquelles l'aide sociale et l'infrastructure routière. Il entretient et améliore un réseau de 4 600 km de routes afin de sécuriser les déplacements.
 L’éducation fait également partie de ses missions, notamment à travers la gestion de 53 collèges publics. À cela s’ajoutent d’autres domaines importants comme la culture et les archives départementales.
@@ -38,7 +41,7 @@ L'objectif de l'étude était donc de tirer les meilleures pratiques de chacun e
 
 Il va donc être question pour la suite, de te présenter la démarche mise en place ainsi que les outils retenus par le département du Gard pour valoriser son patrimoine de données.
 
----
+----
 
 ## Vers un nouveau modèle Data
 
@@ -59,7 +62,7 @@ Par ailleurs, le modèle de traitement diffère. En traditionnel, l'approche ETL
 Pour résumer, ces différences peuvent être synthétisées dans le tableau suivant :
 
 | Caractéristique               | Traditional Data Stack                  | Modern Data Stack                    |
-|-------------------------------|------------------------------------------|---------------------------------------|
+| :---------------------------- | :-------------------------------------- | :----------------------------------- |
 | **Architecture**              | Monolithique / Graphique (ex. FME)      | Modulaire / As Code                  |
 | **Hébergement**               | Logiciels On-Premise                    | Cloud / SaaS                         |
 | **Logiciels**                 | Fermés, propriétaires                   | Plus ouverts, souvent Open Source    |
@@ -67,7 +70,7 @@ Pour résumer, ces différences peuvent être synthétisées dans le tableau sui
 
 Si tu as envie de creuser un peu, laisse-moi te recommander quelques ressources en ligne :
 
-- Définition et avantages d'une MDS : [https://datascientest.com/modern-data-stack-tout-savoir](https://datascientest.com/modern-data-stack-tout-savoir)
+- Définition et avantages d'une MDS : <https://datascientest.com/modern-data-stack-tout-savoir>
 - MDS expliquée en vidéo par [Michael Kahan](https://www.youtube.com/c/KahanDataSolutions) (la vidéo est en anglais, sous-titres disponibles) : <https://youtu.be/GVyuPHumef8>
 - ETL vs ELT (sous-titres dispo) <https://www.youtube.com/watch?v=_Nk0v9qUWk4&list=PLy4OcwImJzBKg3rmROyI_CBBAYlQISkOO&index=1>
 
@@ -75,9 +78,9 @@ Si tu as envie de creuser un peu, laisse-moi te recommander quelques ressources 
 
 Notre objectif initial était de réunir les données classiques et géographiques au sein d'un même système, afin de tirer parti de leur complémentarité. Pour y parvenir, nous avons élaboré une stratégie consistant à construire un modèle de traitement des données inspiré des principes de la Modern Data Stack, tout en l'adaptant pour répondre aux spécificités liées à la composante géographique.
 
----
+----
 
-## Taradata : notre  Data Stack
+## Taradata : notre Data Stack
 
 La stack mise en oeuvre au département porte le nom de **Taradata**.
 
@@ -93,22 +96,23 @@ Cela implique :
 3. Transformer ces données via renommages, restructurations et associations.
 
 Voici le principe de la stack simplifié au travers d'un schéma :
-![Schéma de la stack](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/principes_taradata.png){: .img-center loading=lazy }
 
----
+![Schéma de la stack Taradata](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/principes_taradata.png){: .img-center loading=lazy }
 
-## Les outils
+----
+
+### Les outils
 
 Mettre en place une Modern Data Stack, c'est choisir les différentes briques qui la constituent, nous allons détailler ici les outils retenus pour Taradata.
 
-### PostgreSQL/PostGIS
+#### PostgreSQL/PostGIS
 
 ![Logo PostgreSQL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/postgresql.png){: .img-thumbnail-left }
 
 Pour l'entrepôt de données, nous avons retenu PostgreSQL/[PostGIS](https://postgis.net/docs/manual-3.5/) simplement car nous n'avons pas trouvé d'équivalence en termes de traitement pour la composante géographique dans les moteurs les plus utilisés en MDS.
 À titre d'exemple [GoogleBigQuery](https://fr.wikipedia.org/wiki/BigQuery) et [Snowflake](https://docs.snowflake.com/), qui sont deux entrepôts de données Cloud, disposent respectivement de 67 et 70 fonctions géographiques, alors que PostGIS en propose plus de 500.
 
-### Extraction et chargement : GDAL/OGR (ogr2ogr)
+#### Extraction et chargement : GDAL/OGR (ogr2ogr)
 
 ![GDAL/OGR](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png){: .img-thumbnail-left }
 
@@ -136,9 +140,9 @@ niveau/exports/geojson?select=id_if%2Clibelle%2Cmnemo%2Cobstacle%2Ccode_ligne%2C
 
 A ce stade, les données sont chargées dans l'entrepôt mais de façon brute. Nous avons donc besoin d'un outil pour les transformer.
 
----
+----
 
-### Transformation : Data Build Tool (DBT)
+#### Transformation : Data Build Tool (DBT)
 
 ![DBT logo](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/dbt.png){: .img-thumbnail-left }
 
@@ -153,20 +157,24 @@ Les transformations sont décrites en SQL/[Jinja](https://jinja.palletsprojects.
 
 Le logiciel permet aussi de connaître le [lignage](https://fr.wikipedia.org/wiki/Data_lineage) de la donnée c'est-à-dire la capacité à visualiser et tracer l'origine, les transformations, et les relations entre les différentes données.
 Voici un extrait de lignage avec les données sources en vert, la donnée finale en violet et toutes les liaisons.
+
 ![Lignage de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/lignage_dbt.png){: .img-center loading=lazy }
 
 Documenter les données est aussi une possibilité que nous offre le logiciel.
+
 ![Extrait de documentation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/documentation_dbt.png){: .img-center loading=lazy }
 
 Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.youtube.com/watch?v=5rNquRnNb4E&list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT), toujours de Michael Kahan qui est une excellente source d'apprentissage et qui te détaillera bien plus les spécificités du logiciel que moi.
 
----
+----
 
-### Orchestration : Apache Airflow
+#### Orchestration : Apache Airflow
 
 ![Logo Apache Airflow](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/airflow.png){: .img-thumbnail-left }
+
 Apache Airflow est [l'orchestrateur](https://www.redhat.com/fr/topics/automation/what-is-orchestration#:~:text=L%27orchestration%20renvoie%20%C3%A0%20l,se%20d%C3%A9roulent%20dans%20l%27ordre.), la clé de voûte de toute la stack. Son objectif est de décrire les tâches à réaliser et planifier leur exécution.
- Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (Directed Acyclic Graph), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
+
+Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (Directed Acyclic Graph), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
 
 Et donc Airflow nous permet de :
 
@@ -176,11 +184,12 @@ Et donc Airflow nous permet de :
 - planifier l’exécution des DAGs et suivre leur avancement.
 
 Tu peux trouver ci-dessous une représentation graphique des différentes dépendances entre les tâches d'un DAG d'extraction et chargement des données de la Base Adresse Nationale (BAN) concernant le Gard ainsi que ses départements limitrophes.  
+
 ![Représentation graphique des tâches pour le DAG de la BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/graph_ban_airflow.png){: .img-center loading=lazy }
 
----
+----
 
-### Valorisation avec Metabase et QGIS
+#### Valorisation avec Metabase et QGIS
 
 ![Logo Metabase](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/Metabase.png){: .img-thumbnail-left }
 
@@ -196,9 +205,9 @@ Voyons un peu les actions qu'il permet de faire :
 - Combiner plusieurs visualisations dans des tableaux de bord.  
 - Ajouter des filtres interactifs sur les données affichées.  
 
----
+----
 
-### Interaction avec les données
+#### Interaction avec les données
 
 Découvrons justement ce qu'il est possible de faire avec Metabase au travers d'un cas d'usage.
 
