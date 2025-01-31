@@ -41,7 +41,7 @@ L'objectif de l'étude était donc de tirer les meilleures pratiques de chacun e
 
 Il va donc être question pour la suite, de te présenter la démarche mise en place ainsi que les outils retenus par le département du Gard pour valoriser son patrimoine de données.
 
----
+----
 
 ## Vers un nouveau modèle Data
 
@@ -62,7 +62,7 @@ Par ailleurs, le modèle de traitement diffère. En traditionnel, l'approche ETL
 Pour résumer, ces différences peuvent être synthétisées dans le tableau suivant :
 
 | Caractéristique               | Traditional Data Stack                  | Modern Data Stack                    |
-|-------------------------------|------------------------------------------|---------------------------------------|
+| :---------------------------- | :-------------------------------------- | :----------------------------------- |
 | **Architecture**              | Monolithique / Graphique (ex. FME)      | Modulaire / As Code                  |
 | **Hébergement**               | Logiciels On-Premise                    | Cloud / SaaS                         |
 | **Logiciels**                 | Fermés, propriétaires                   | Plus ouverts, souvent Open Source    |
@@ -78,7 +78,7 @@ Si tu as envie de creuser un peu, laisse-moi te recommander quelques ressources 
 
 Notre objectif initial était de réunir les données classiques et géographiques au sein d'un même système, afin de tirer parti de leur complémentarité. Pour y parvenir, nous avons élaboré une stratégie consistant à construire un modèle de traitement des données inspiré des principes de la Modern Data Stack, tout en l'adaptant pour répondre aux spécificités liées à la composante géographique.
 
----
+----
 
 ## Taradata : notre  Data Stack
 
@@ -99,7 +99,7 @@ Voici le principe de la stack simplifié au travers d'un schéma :
 
 ![Schéma de la stack Taradata](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/principes_taradata.png){: .img-center loading=lazy }
 
----
+----
 
 ### Les outils
 
@@ -140,7 +140,7 @@ niveau/exports/geojson?select=id_if%2Clibelle%2Cmnemo%2Cobstacle%2Ccode_ligne%2C
 
 A ce stade, les données sont chargées dans l'entrepôt mais de façon brute. Nous avons donc besoin d'un outil pour les transformer.
 
----
+----
 
 #### Transformation : Data Build Tool (DBT)
 
@@ -166,7 +166,7 @@ Documenter les données est aussi une possibilité que nous offre le logiciel.
 
 Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.youtube.com/watch?v=5rNquRnNb4E&list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT), toujours de Michael Kahan qui est une excellente source d'apprentissage et qui te détaillera bien plus les spécificités du logiciel que moi.
 
----
+----
 
 #### Orchestration : Apache Airflow
 
@@ -187,7 +187,7 @@ Tu peux trouver ci-dessous une représentation graphique des différentes dépen
 
 ![Représentation graphique des tâches pour le DAG de la BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/graph_ban_airflow.png){: .img-center loading=lazy }
 
----
+----
 
 #### Valorisation avec Metabase et QGIS
 
@@ -205,7 +205,7 @@ Voyons un peu les actions qu'il permet de faire :
 - Combiner plusieurs visualisations dans des tableaux de bord.  
 - Ajouter des filtres interactifs sur les données affichées.  
 
----
+----
 
 #### Interaction avec les données
 
