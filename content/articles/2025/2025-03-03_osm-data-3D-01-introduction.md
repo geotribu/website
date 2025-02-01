@@ -83,7 +83,7 @@ Pour mieux comprendre le module d'importation des données, le diagramme ci-dess
 
 ![Parcours des données avant visualisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/parcours_des_donnees_avant_visualisation.png){: .img-center loading=lazy }
 
-Si le jeu de données provient d'un fichier SIG, celui-ci est lu et analysé à l'aide de la librairie Geopandas avant d'être enregistrée sous forme de table en base de données. Si le jeu de données est créé à partir d'une reqête SQL, cette dernière est convertie en vue dématérialisée et enregistrée en base de données (approfondi dans le cadre d'un futur article). 
+Si le jeu de données provient d'un fichier SIG, celui-ci est lu et analysé à l'aide de la librairie Geopandas avant d'être enregistrée sous forme de table en base de données. Si le jeu de données est créé à partir d'une reqête SQL, cette dernière est convertie en vue dématérialisée et enregistrée en base de données (approfondi dans le cadre d'un futur article).
 
 Une fois les données intégrées en base de données, un projet QGIS est créé avec la librairie pyqgis, facilitant ensuite la définition de flux WMS/WFS directement créés avec QGIS SERVER.
 
@@ -91,7 +91,7 @@ Une fois les données intégrées en base de données, un projet QGIS est créé
 
 Lors de l'ajout d'une couche dans OSM DATA, les données sont sauvegardées en 2D en base de données avant d'être publiées sous des flux cartographiques WMS/WFS. Deux cas de figure (patrimoine bâti, autres données) se présentent pour représenter des couches d'entités avec Giro3D.
 
-[Giro3D](https://giro3d.org/) est une bibliothèque JavaScript pour visualiser/interagir avec des données 3D sur un navigateur web, utilisant les technologies OpenLayers et Three.js. OSM DATA étant initialement développé avec OpenLayers, la transition vers Giro3D a été facilitée. Ci-dessous un exemple d'utilisation d'un WMS avec les deux technologies : 
+[Giro3D](https://giro3d.org/) est une bibliothèque JavaScript pour visualiser/interagir avec des données 3D sur un navigateur web, utilisant les technologies OpenLayers et Three.js. OSM DATA étant initialement développé avec OpenLayers, la transition vers Giro3D a été facilitée. Ci-dessous un exemple d'utilisation d'un WMS avec les deux technologies :
 
 - Avec OpenLayers :
 
@@ -110,7 +110,7 @@ const wmsSource = new TileWMS({
         crossOrigin: 'anonymous',
 });
 
-// Création du "layer" 
+// Création du "layer"
 const wmsLayer = new TileLayer({
   source: wmsSource
 })
