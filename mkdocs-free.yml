@@ -55,10 +55,6 @@ plugins:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, false]
       cards_layout_options:
         font_family: Ubuntu
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
-      listings_sort_by: !!python/name:material.plugins.tags.item_url
   - termynal
 
 # Theme

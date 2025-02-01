@@ -50,11 +50,6 @@ plugins:
   - macros:
       include_dir: content/toc_nav_ignored/snippets
       module_name: hooks/macros/custom_jinja
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
-      listings_sort_by: !!python/name:material.plugins.tags.item_url
-  - termynal
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
       cache_dir:
