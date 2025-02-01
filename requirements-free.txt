@@ -1,6 +1,6 @@
 # No Material Insiders
 # --------------------
 
-mkdocs-material[imaging]>=9.5.50,<9.6
+mkdocs-material[imaging]>=9.6.1,<9.7
 
 -r requirements.txt
