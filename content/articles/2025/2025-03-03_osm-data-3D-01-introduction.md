@@ -1,24 +1,24 @@
 ---
-title: "OSM DATA : présentation"
-subtitle: OSM DATA 1/4
+title: "OSM DATA 3D: présentation"
+subtitle: OSM DATA 1/5
 authors:
     - Karl TAYOU
     - Romain LATAPIE
 categories:
     - article
 comments: true
-date: 2025-02-25
-description: Cet article présente la plateforme OSM DATA
+date: 2025-03-03
+description: Cet article présente la plateforme OSM DATA et sa nouvelle version en 3D
 icon: material/emoticon-happy-outline
-image:
+image:https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/vignette.png
 license: default
 robots: index, follow
 tags:
     - 3D
     - digital twin
     - Giro3D
+    - Three.js
     - jumeau numérique
-    - MapLibre
     - OpenStreetMap
     - QGIS
     - Smart City
