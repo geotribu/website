@@ -30,7 +30,7 @@ tags:
 
 ## Contexte
 
-Bonjour à tous, je m'appelle [Karl](www.linkedin.com/in/karl-tayou-53a3a7b9) !
+Bonjour à tous, je m'appelle [Karl](https://www.linkedin.com/in/karl-tayou-53a3a7b9/) !
 
 En 2020, né d'une collaboration entre Jean-Louis Zimmermann et moi-même, [**OSM DATA**](https://demo.openstreetmap.fr/) a vu le jour. L'objectif d'OSM DATA est de **faciliter l'accès, la visualisation et le téléchargement des données [OpenStreetMap (OSM)](https://www.openstreetmap.org/#map=6/46.45/2.21.)**. Je m'occcupe du développement de la plateforme, Jean-Louis paramètre les (nombreux !) jeux de données thématiques. Actuellement, le projet OSM possède plus de 365 couches sur la France avec des styles parfois complexes.
 
@@ -64,7 +64,7 @@ Le premier changement apparait dès l'ouverture de la page : **les éléments st
 
 ![La Tour Eiffel Minecraft de Wish](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/la_tour_eiffel_minecraft_de_wish.png){: .img-center loading=lazy }
 
-La seconde nouveauté réside dans l'**import et la stylisation de données**. Une fois devenu administrateur de la plateforme (n'hésitez pas à m'écrire sur [Linkedin](www.linkedin.com/in/karl-tayou-53a3a7b9) pour le devenir), il est possible de choisir un jeu de données préexistant mais aussi :
+La seconde nouveauté réside dans l'**import et la stylisation de données**. Une fois devenu administrateur de la plateforme (n'hésitez pas à m'écrire sur [Linkedin](https://www.linkedin.com/in/karl-tayou-53a3a7b9/) pour le devenir), il est possible de choisir un jeu de données préexistant mais aussi :
 
 - d'ajouter un jeu de données géoréférencé externe, à partir d'un fichier (Geopackage, Shapefile, GeoJSON....)
 - de créer son propre jeu de données à partir d'une requête SQL sur la base de données d'OpenStreetMap ou sur une ou plusieurs autres bases de données PostgreSQL (jointure, transformation avec fonctions PostGIS...)
@@ -95,44 +95,42 @@ Lors de l'ajout d'une couche dans OSM DATA, les données sont sauvegardées en 2
 
 - Avec OpenLayers :
 
-```javascript title="Afficher un WMS avec OpenLayers"
-import TileWMS from 'ol/source/TileWMS';
-import TileLayer from 'ol/layer/Tile.js';
+    ```javascript title="Afficher un WMS avec OpenLayers"
+    import TileWMS from 'ol/source/TileWMS';
+    import TileLayer from 'ol/layer/Tile.js';
 
-// Création de la "source"
-const wmsSource = new TileWMS({
-        url: "QGIS SERVER URL",
-        params: {
-          "LAYERS":"LAYER NAME",
-          "STYLE":"LAYER STYLE NAME"
-        },
-        serverType: 'qgis',
-        crossOrigin: 'anonymous',
-});
+    // Création de la "source"
+    const wmsSource = new TileWMS({
+            url: "QGIS SERVER URL",
+            params: {
+            "LAYERS":"LAYER NAME",
+            "STYLE":"LAYER STYLE NAME"
+            },
+            serverType: 'qgis',
+            crossOrigin: 'anonymous',
+    });
 
-// Création du "layer"
-const wmsLayer = new TileLayer({
-  source: wmsSource
-})
-
-```
+    // Création du "layer"
+    const wmsLayer = new TileLayer({
+    source: wmsSource
+    })
+    ```
 
 - Avec Giro3D :
 
-```javascript title="Afficher un WMS avec Giro3D"
-import ColorLayer from '@giro3d/giro3d/core/layer/ColorLayer.js';
-import TiledImageSource from '@giro3d/giro3d/sources/TiledImageSource.js';
+    ```javascript title="Afficher un WMS avec Giro3D"
+    import ColorLayer from '@giro3d/giro3d/core/layer/ColorLayer.js';
+    import TiledImageSource from '@giro3d/giro3d/sources/TiledImageSource.js';
 
-// Création du "layer"
-const wmsLayer = new ColorLayer({
-  name: "NAME OF OUR LAYER",
-  source: new TiledImageSource({
-      // Réutilisation de notre "source" d'openlayer
-      source: wmsSource,
-  })
-})
-
-```
+    // Création du "layer"
+    const wmsLayer = new ColorLayer({
+    name: "NAME OF OUR LAYER",
+    source: new TiledImageSource({
+        // Réutilisation de notre "source" d'openlayer
+        source: wmsSource,
+    })
+    })
+    ```
 
 De plus, Giro3D est *open source* et le développeur principal est réactif et réceptif aux *merge-request* :+1:.
 
