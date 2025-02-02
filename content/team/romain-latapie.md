@@ -6,21 +6,19 @@ social:
     - bluesky:
     - github:
     - gitlab:
-    - linkedin: 
-    - mail: 
+    - linkedin:
+    - mail:
     - mastodon:
         - instance:
         - username:
     - openstreetmap:
     - osgeo:
-    - twitter: 
+    - twitter:
     - website:
 ---
 
 # Romain Latapie
 
 <!-- --8<-- [start:author-sign-block] -->
-
-
 
 <!-- --8<-- [end:author-sign-block] -->
