@@ -95,6 +95,8 @@ Cela implique :
 1. Extraire les données provenant de sources variées comme les bases de données, les API, les données issues d’IoT, etc.
 2. Charger ces données dans un entrepôt.
 3. Transformer ces données via renommages, restructurations et associations.
+4. Entreposer dans une base de données.
+5. Valoriser ces données via des tableaux de bords, cartographie, etc.
 
 Voici le principe de la stack simplifié au travers d'un schéma :
 
@@ -211,7 +213,7 @@ Voyons un peu les actions qu'il permet de faire :
 
 ----
 
-#### Interaction avec les données
+### Interaction avec les données
 
 Découvrons justement ce qu'il est possible de faire avec Metabase au travers d'un cas d'usage.
 
