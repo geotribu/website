@@ -156,6 +156,8 @@ C'est un peu un abus de langage de dire qu'il transforme les données simplement
 On peut dire que DBT a pour rôle de commander les transformations.
 
 Les transformations sont décrites en SQL/[Jinja](https://jinja.palletsprojects.com/en/stable/).
+Voici par exemple une transformation des données de la [Base Adresse Nationale (BAN)](https://adresse.data.gouv.fr/) lors de l'étape dite de [staging](https://docs.getdbt.com/best-practices/how-we-structure/2-staging) :
+
 (image staging adresses)
 
 Le logiciel permet aussi de connaître le [lignage](https://fr.wikipedia.org/wiki/Data_lineage) de la donnée c'est-à-dire la capacité à visualiser et tracer l'origine, les transformations, et les relations entre les différentes données.
