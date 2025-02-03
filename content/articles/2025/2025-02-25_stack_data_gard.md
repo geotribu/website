@@ -72,8 +72,8 @@ Pour résumer, ces différences peuvent être synthétisées dans le tableau sui
 Si tu as envie de creuser un peu, laisse-moi te recommander quelques ressources en ligne :
 
 - Définition et avantages d'une MDS : <https://datascientest.com/modern-data-stack-tout-savoir>
-- MDS expliquée en vidéo par [Michael Kahan](https://www.youtube.com/c/KahanDataSolutions) (la vidéo est en anglais, sous-titres disponibles) : <https://youtu.be/GVyuPHumef8>
-- ETL vs ELT (sous-titres dispo) <https://www.youtube.com/watch?v=_Nk0v9qUWk4&list=PLy4OcwImJzBKg3rmROyI_CBBAYlQISkOO&index=1>
+- MDS expliquée en vidéo par [Michael Kahan](https://www.youtube.com/c/KahanDataSolutions) (la vidéo est en anglais, sous-titres disponibles) : <https://www.youtube.com/watch?v=GVyuPHumef8>
+- ETL vs ELT (sous-titres dispo) <https://www.youtube.com/watch?v=_Nk0v9qUWk4>
 
 ### 2. Notre stratégie
 
@@ -157,7 +157,7 @@ On peut dire que DBT a pour rôle de commander les transformations.
 Les transformations sont décrites en SQL/[Jinja](https://jinja.palletsprojects.com/en/stable/).
 Voici par exemple une transformation des données de la [Base Adresse Nationale (BAN)](https://adresse.data.gouv.fr/) lors de l'étape dite de [staging](https://docs.getdbt.com/best-practices/how-we-structure/2-staging) :
 
-(image staging adresses)
+![Étape de staging de la BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/staging_ban.png)
 
 Le logiciel permet aussi de connaître le [lignage](https://fr.wikipedia.org/wiki/Data_lineage) de la donnée c'est-à-dire la capacité à visualiser et tracer l'origine, les transformations, et les relations entre les différentes données.
 Voici un extrait de lignage avec les données sources en vert, la donnée finale en violet et toutes les liaisons.
@@ -222,7 +222,7 @@ L'exemple ci-dessous, réalisé en collaboration avec la direction des bâtiment
 Il est possible, comme spécifier plus haut, de filtrer nos données par catégorie, nom et autres.
 
 ![Fitres Metabase](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/filtres_metabase.png){: .img-center loading=lazy }
-Et voici le résultat lorsqu'on active le filtre sur la catégorie "EDUCATION"
+Et voici le résultat lorsqu'on active le filtre sur la catégorie "EDUCATION".
 
 ## En résumé
 
