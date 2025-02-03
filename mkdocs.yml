@@ -45,26 +45,9 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
-  - meta:
-      meta_file: "content/**/.meta.yml"
-  - minify:
-      minify_css: true
-      css_files:
-        - theme/assets/stylesheets/extra.css
-        - theme/assets/stylesheets/homepage.css
-      minify_html: true
-      htmlmin_opts:
-        remove_comments: true
-  - search:
-      lang: fr
   - macros:
       include_dir: content/toc_nav_ignored/snippets
       module_name: hooks/macros/custom_jinja
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
-      listings_sort_by: !!python/name:material.plugins.tags.item_url
-  - termynal
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
       cache_dir:
@@ -101,6 +84,8 @@ plugins:
         - boundlessgeo.com/*
         - i3.codeplex.com/*
         - drfhlmcehrc34.cloudfront.net/*
+  - search:
+      lang: fr
   - social:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, false]
       cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
@@ -112,6 +97,7 @@ plugins:
         background_image: content/theme/assets/images/geotribu/background_geotribu.png
         color: "#3e93a7"
         font_family: Ubuntu
+  - termynal
   - typeset:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TYPESET, true]
 
