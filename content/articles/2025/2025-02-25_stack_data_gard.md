@@ -120,9 +120,10 @@ Pour l'entrepôt de données, nous avons retenu PostgreSQL/[PostGIS](https://pos
 
 [ogr2ogr](https://gdal.org/en/stable/programs/ogr2ogr.html) permet d'extraire et charger des données :
 
-- de différentes natures (notamment des données géographiques)
-- de différents formats (CSV, SHP, GPKG, GeoJSON...)
-- de différentes sources
+- de différentes natures (notamment des données géographiques),
+- de différents formats (CSV, SHP, GPKG, GeoJSON...),
+- de différentes sources.
+
 
 Voilà à quoi pourrait ressembler une extraction de données au format GeoJSON par un appel API avec au passage une transformation du système de coordonnées.
 
