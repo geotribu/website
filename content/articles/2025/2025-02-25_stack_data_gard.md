@@ -237,6 +237,7 @@ Tu pourras trouver le lien vers le support que [Michaël](https://geotribu.fr/te
 
 Dans ce replay de la Forward Data Conference, il présente comment la composante géographique a été prise en compte dans Taradata.
 
-- <https://youtu.be/KaXUk44cRzw>
+- <https://www.youtube.com/watch?v=KaXUk44cRzw>
+
 
 <!-- geotribu:authors-block -->
