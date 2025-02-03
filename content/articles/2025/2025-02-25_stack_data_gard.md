@@ -170,7 +170,6 @@ Documenter les données est aussi une possibilité que nous offre le logiciel.
 
 Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT), toujours de Michael Kahan qui est une excellente source d'apprentissage et qui te détaillera bien plus les spécificités du logiciel que moi.
 
-
 ----
 
 #### Orchestration : Apache Airflow
@@ -178,7 +177,6 @@ Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.you
 ![Logo Apache Airflow](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/airflow.png){: .img-thumbnail-left }
 
 Apache Airflow est [l'orchestrateur](https://github.com/apache/airflow/blob/main/README.md), la clé de voûte de toute la stack. Son objectif est de décrire les tâches à réaliser et planifier leur exécution.
-
 
 Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (Directed Acyclic Graph), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
 
@@ -190,7 +188,6 @@ Et donc Airflow nous permet de :
 - planifier l’exécution des DAGs et suivre leur avancement.
 
 Tu peux trouver ci-dessous une représentation graphique des différentes dépendances entre les tâches d'un DAG d'extraction et chargement des données de la BAN concernant le Gard ainsi que ses départements limitrophes.  
-
 
 ![Représentation graphique des tâches pour le DAG de la BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/graph_ban_airflow.png){: .img-center loading=lazy }
 
