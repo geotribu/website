@@ -112,7 +112,8 @@ Mettre en place une Modern Data Stack, c'est choisir les différentes briques qu
 
 Pour l'entrepôt de données, nous avons retenu PostgreSQL/[PostGIS](https://postgis.net/) simplement car nous n'avons pas trouvé d'équivalence en termes de traitement pour la composante géographique dans les moteurs les plus utilisés en MDS.
 
-À titre d'exemple [GoogleBigQuery](https://fr.wikipedia.org/wiki/BigQuery) et [Snowflake](https://docs.snowflake.com/), qui sont deux entrepôts de données Cloud, disposent respectivement de 67 et 70 fonctions géographiques, alors que PostGIS en propose plus de 500.
+À titre d'exemple [GoogleBigQuery](https://cloud.google.com/bigquery/docs/reference/standard-sql/geography_functions) et [Snowflake](https://docs.snowflake.com/en/sql-reference/functions-geospatial), qui sont deux entrepôts de données Cloud, disposent, au moment où j'écris ces lignes, respectivement de 67 et 70 fonctions géographiques, alors que [PostGIS en propose plus de 500](https://postgis.net/docs/manual-3.5/reference.html).
+
 
 #### Extraction et chargement : GDAL/OGR (ogr2ogr)
 
