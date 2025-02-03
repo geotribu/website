@@ -222,6 +222,7 @@ L'exemple ci-dessous, réalisé en collaboration avec la direction des bâtiment
 Il est possible, comme spécifier plus haut, de filtrer nos données par catégorie, nom et autres.
 
 ![Fitres Metabase](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/filtres_metabase.png){: .img-center loading=lazy }
+Et voici le résultat lorsqu'on active le filtre sur la catégorie "EDUCATION"
 
 ## En résumé
 
