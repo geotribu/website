@@ -230,7 +230,8 @@ Si tu as bien suivi, tu as sans doute compris que nous avions un outil pour chac
 
 ## Quelques ressources
 
-Tu pourras trouver le lien vers le support que [Michaël Galien](https://geotribu.fr/team/michael-galien/) a présenté lors des GeoDataDays de Nantes les 19 et 20 septembre 2024. Il explique la Modern Data Stack et détaille le cas d'usage Metabase que je t'ai présenté plus haut.
+Tu pourras trouver le lien vers le support que [Michaël](https://geotribu.fr/team/michael-galien/) a présenté lors des GeoDataDays de Nantes les 19 et 20 septembre 2024. Il explique la Modern Data Stack et détaille le cas d'usage Metabase que je t'ai présenté plus haut.
+
 
 - <https://www.geodatadays.fr/_medias/afigeo/files/GDD_2024/Presentations/3_GDD24_Modern_GIS_Stack_GARD.pdf>
 
