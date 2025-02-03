@@ -27,7 +27,8 @@ tags:
 
 ![Logo du département du Gard](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/gard.jpg){: .img-thumbnail-left }
 
-Le département du Gard dispose de plusieurs compétences parmi lesquelles l'aide sociale et l'infrastructure routière. Il entretient et améliore un réseau de 4 600 km de routes afin de sécuriser les déplacements.
+Le département du Gard dispose de [plusieurs compétences](https://www.gard.fr/ses-missions) parmi lesquelles l'aide sociale et l'infrastructure routière. Il entretient et améliore un réseau de 4 600 km de routes afin de sécuriser les déplacements.
+
 L’éducation fait également partie de ses missions, notamment à travers la gestion de 53 collèges publics. À cela s’ajoutent d’autres domaines importants comme la culture et les archives départementales.
 
 Dans chacun de ces domaines, une grande quantité de données est produite et consommée, c'est ce patrimoine de données que le département souhaite valoriser pour notamment aider les directions et services à prendre les décisions éclairées dans l'exercice de leurs missions.
