@@ -177,7 +177,8 @@ Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.you
 
 ![Logo Apache Airflow](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/airflow.png){: .img-thumbnail-left }
 
-Apache Airflow est [l'orchestrateur](https://www.redhat.com/fr/topics/automation/what-is-orchestration#:~:text=L%27orchestration%20renvoie%20%C3%A0%20l,se%20d%C3%A9roulent%20dans%20l%27ordre.), la clé de voûte de toute la stack. Son objectif est de décrire les tâches à réaliser et planifier leur exécution.
+Apache Airflow est [l'orchestrateur](https://github.com/apache/airflow/blob/main/README.md), la clé de voûte de toute la stack. Son objectif est de décrire les tâches à réaliser et planifier leur exécution.
+
 
 Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (Directed Acyclic Graph), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
 
