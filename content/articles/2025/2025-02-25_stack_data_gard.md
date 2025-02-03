@@ -189,7 +189,8 @@ Et donc Airflow nous permet de :
 - organiser les tâches dans un DAG,
 - planifier l’exécution des DAGs et suivre leur avancement.
 
-Tu peux trouver ci-dessous une représentation graphique des différentes dépendances entre les tâches d'un DAG d'extraction et chargement des données de la Base Adresse Nationale (BAN) concernant le Gard ainsi que ses départements limitrophes.  
+Tu peux trouver ci-dessous une représentation graphique des différentes dépendances entre les tâches d'un DAG d'extraction et chargement des données de la BAN concernant le Gard ainsi que ses départements limitrophes.  
+
 
 ![Représentation graphique des tâches pour le DAG de la BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/graph_ban_airflow.png){: .img-center loading=lazy }
 
