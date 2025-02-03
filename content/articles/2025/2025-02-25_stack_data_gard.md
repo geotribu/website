@@ -168,7 +168,8 @@ Documenter les données est aussi une possibilité que nous offre le logiciel.
 
 ![Extrait de documentation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/documentation_dbt.png){: .img-center loading=lazy }
 
-Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.youtube.com/watch?v=5rNquRnNb4E&list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT), toujours de Michael Kahan qui est une excellente source d'apprentissage et qui te détaillera bien plus les spécificités du logiciel que moi.
+Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT), toujours de Michael Kahan qui est une excellente source d'apprentissage et qui te détaillera bien plus les spécificités du logiciel que moi.
+
 
 ----
 
