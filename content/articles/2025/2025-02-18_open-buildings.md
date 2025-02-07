@@ -37,7 +37,7 @@ Ces bâtiments sont dérivés d’images satellites haute résolution, issus d'u
 
 La version actuelle de ce jeu de données est la troisième (v3), publiée en mai 2023. Geotribu abordait d'ailleurs la première version du dataset, qui couvrait l'Afrique uniquement, [lors d'une GeoRDP en 2021](../../rdp/2021/rdp_2021-08-27.md#cartographie-des-batiments-dafrique).
 
-![Carte de densité de bâtiments en Afrique dans le dataset Google Open Buildings première version](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/google_oepn_buildings_building-density.png)
+![Carte de densité de bâtiments en Afrique dans le dataset Google Open Buildings première version](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/google_oepn_buildings_building-density.png){: .img-center loading=lazy }
 
 Chaque bâtiment, dans ce jeu de données, est représenté par :
 
@@ -46,21 +46,25 @@ Chaque bâtiment, dans ce jeu de données, est représenté par :
 - un score de confiance indiquant la probabilité qu’il s’agisse d’un bâtiment
 - un [code Plus](https://fr.wikipedia.org/wiki/Open_Location_Code) correspondant au centre du bâtiment
 
-Aucune information sur le type de bâtiment, son adresse ou d’autres détails n’est inclue, seulement sa géométrie. Il est bien sûr possible d'adapter et personnaliser son modèle de données basé sur ces bâtiments, selon les besoins.
+Le type de bâtiment n'est pas renseigné, contrairement à [aux données OpenStreetMap par exemple](https://wiki.openstreetmap.org/wiki/Key:building), seulement la géométrie et donc un score de confiance dont le seuil minimal de filtrage est fixé à 65%, ce qui peut parfois s'avérer assez bas (dis "camion!" :truck:).
+
+Et la méthode de détection de la v2 [est décrite ici](https://arxiv.org/abs/2107.12283v2), qui explique notamment que c'est basé sur des images satellites de résolution 50cm.
 
 ## Importer les Open Buildings dans QGIS
 
-Les Open Buildings sont regroupés en tuiles carrées, pour lesquelles il est possible de télécharger tous les bâtiments situés à l'intérieur de chaque tuile, [sur la carte du site officiel](https://sites.research.google/gr/open-buildings/#open-buildings-download), dans la partie `Download` :
+Il existe des manières très _fancy_ de récupérer les OpenBuildings v3, qui feraient sensation lors d'une soirée mondaine. Via [Earth Engine en JavaScript notamment](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_Research_open-buildings_v3_polygons). Ou bien via [gsutil](https://cloud.google.com/storage/docs/gsutil_install), un outil [CLI](https://en.wikipedia.org/wiki/Command-line_interface) de _Gogole Claude Storage_.
 
-![Carte de téléchargement des tuiles Open Buildings](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/carte_telechargement_open_buildings.png)
+Ici on va préférer le [KISS](https://en.wikipedia.org/wiki/KISS_principle) :kissing_smiling_eyes:, et le bon vieux CSV des familles: les Open Buildings sont regroupés en tuiles carrées, pour lesquelles il est possible de télécharger tous les bâtiments situés à l'intérieur de chaque tuile, [sur la carte du site officiel](https://sites.research.google/gr/open-buildings/#open-buildings-download), dans la partie `Download` :
 
-Le format fourni est du CSV. Pour cet exemple, nous téléchargerons [ce zip](https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/0fd_buildings.csv.gz) qui couvre le Ghana et la partie Est de la Côte d'Ivoire, pour une taille de 1.5 GO (3.4 GO une fois dézippé), et presque 15 millions de bâtiments.
+![Carte de téléchargement des tuiles Open Buildings](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/carte_telechargement_open_buildings.png){: .img-center loading=lazy }
+
+Le format fourni est donc du CSV. Pour cet exemple, nous téléchargerons [ce zip](https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/0fd_buildings.csv.gz) qui couvre le Ghana et la partie Est de la Côte d'Ivoire, pour une taille de 1.5 GO (3.4 GO une fois dézippé), et presque 15 millions de bâtiments.
 
 Pour ajouter le jeu de données Open Buildings dans QGIS, il suffit de l'importer au format CSV :
 
 - Aller dans le menu `Couche` puis `Ajouter une couche` et `Ajouter une couche de texte délimité`
 
-![Écran d'import d'une tuile de données Open Buildings en format CSV dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/import_open_buildings_csv_qgis.webp)
+![Écran d'import d'une tuile de données Open Buildings en format CSV dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/import_open_buildings_csv_qgis.webp){: .img-center loading=lazy }
 
 - Choisir l’emplacement du fichier CSV et le sélectionner
 - Au niveau des géométries, sélectionner `WKT` (pour [Well-known text](https://fr.wikipedia.org/wiki/Well-known_text), un standard de représentation de géométries utile pour les échanges, en CSV notamment)
@@ -71,7 +75,7 @@ Tada :tada:, le CSV est importé !
 
 [Et là, c'est le drame.](https://www.arteradio.com/son/61658634/et_la_c_est_le_drame)
 
-![gif d'une personne qui a l'air pressée, en train de pointer sa montre du doigt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/gif_waiting.gif)
+![gif d'une personne qui a l'air pressée, en train de pointer sa montre du doigt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/gif_waiting.gif){: .img-center loading=lazy }
 
 ## Convertir un CSV en geopackage, un format plus commode
 
@@ -122,7 +126,15 @@ Qu'on se le dise : les Open Buildings pallient un manque de services publics et 
 
 Même si ça commence à bouger ces derniers temps, citons notamment [le projet SIGFU en Côte d'Ivoire](https://sigfu.gouv.ci/accueil) : 50% SIG 50% Kung-Fu, il s'agit du _Système Intégré de Gestion du Foncier Urbain_, initié par le _Ministère en charge de la Construction du Logement et de l’Urbanisme_. Ou [le service d'adressage et de parcelles numériques et uniques de la Poste au Ghana](https://www.ghanapostgps.com/map/).
 
-Nous encourageons les organisations et les individus à utiliser ce jeu de données Open Buildings, pour des applications vertueuses et en faveur du développement des pays du Sud.
+Il peut également arriver parfois que la pertinence de certains bâtiments laisse à désirer. Bon, comme c'est une équipe de Google qui a généré le jeu de données, on pourrait s'attendre à ce qu'il soit synchro avec les tuiles satellites fournies par big G (qu'il est d'ailleurs possible de configurer dans QGIS, [en suivant ce tuto et l'ajout via tuiles XYZ](https://geossc.ma/ajouter-les-couches-de-google-sur-qgis-3-x/)). Or ces tuiles satellites sont rafraîchies plus souvent que le jeu de données OpenBuildings, comme il est possible de le voir, par exemple, ici à [Luanda](https://fr.wikipedia.org/wiki/Luanda):
+
+![Delta temporel entre tuile Google sat et Open Buildings - Luanda](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/openbuilding_delta_temporel_sat_luanda.webp){: .img-center loading=lazy }
+
+Et parfois, il y a des décalages entre sat et bâtiments, comme par exemple ici à [Yaoundé](https://fr.wikipedia.org/wiki/Yaound%C3%A9):
+
+![Décalage de quelques mètres entre image satellite Google et bâtiment OpenBuildings - Yaoundé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/openbuilding_yaounde_decalage_googlesat.png){: .img-center loading=lazy }
+
+De toutes les manières, nous encourageons les organisations et les individus à utiliser ce jeu de données Open Buildings, pour des applications vertueuses et en faveur du développement des pays du Sud.
 
 ----
 
