@@ -50,7 +50,7 @@ Aucune information sur le type de bâtiment, son adresse ou d’autres détails 
 
 ## Importer les Open Buildings dans QGIS
 
-Les Open Buildings sont regroupés en tuiles carrées, pour lesquelles il est possible de télécharger tous les bâtiments situés à l'intérieur de chaque tuile, [sur la carte du site officiel](https://sites.research.google/gr/open-buildings/), dans la partie `Download` :
+Les Open Buildings sont regroupés en tuiles carrées, pour lesquelles il est possible de télécharger tous les bâtiments situés à l'intérieur de chaque tuile, [sur la carte du site officiel](https://sites.research.google/gr/open-buildings/#open-buildings-download), dans la partie `Download` :
 
 ![Carte de téléchargement des tuiles Open Buildings](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/carte_telechargement_open_buildings.png)
 
