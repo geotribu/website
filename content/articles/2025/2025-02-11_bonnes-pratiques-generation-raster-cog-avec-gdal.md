@@ -30,7 +30,7 @@ Les données Raster sont une composante majeure des référentiels de nos systè
 
 ![logo COG](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/COG.png "logo COG"){: .img-thumbnail-left }
 
-C'est là que le format COG (_Cloud Optimized GeoTIFF_) intervient pour simplifier la vie des géomaticiens. Ces fichiers, optimisés pour le cloud, facilitent le traitement et la visualisation des données spatiales à grande échelle grâce à leur accessibilité rapide et leur structure efficiente. Conçus spécifiquement pour le cloud, les COG offrent de nombreux avantages sur d'autres environnements :
+C'est là que le COG (_Cloud Optimized GeoTIFF_) intervient pour simplifier la vie des géomaticiens. Ce type de GeoTIFF, optimisé par sa structure, facilite le traitement et la visualisation des données spatiales à grande échelle grâce à leur accessibilité rapide et leur structure efficiente. En effet, il ne va pas charger l'intégralité de l'image comme un GeoTiff classique mais "streamer" uniquement la partie qui vous intéresse. Sa compatibilité est excellente, si l'application n'est pas capable de tirer parti du pilote COG, le raster se comportera comme un GeoTIFF classique. C'est un vrai plus pour la portabilité et la diffusion des données. Pour en savoir plus, consultez le [site officiel du projet](https://cogeo.org/). Conçus spécifiquement pour le cloud, les COG offrent de nombreux avantages sur d'autres environnements :
 
 - **Performance améliorée** : affichage quasi-immédiat même sur des volumes importants évitant ainsi les frustrations liées aux lenteurs, que ce soit au bureau ou en télétravail.
 - **Données peu ou pas altérées**_(en fonction des options de compression choisies)_ : vous pouvez modifier la radiométrie, l'ordre des bandes, l'utiliser dans des processus de geotraitements, etc.
@@ -363,7 +363,7 @@ Pour vous inspirer, voici quelques liens vers de la documentation et des démons
 - Les COG dans OpenLayers : [documentation et démo](https://openlayers.org/en/latest/examples/cog.html)
 - Les COG dans MapLibre : [documentation](https://github.com/geomatico/maplibre-cog-protocol?tab=readme-ov-file) et [démo](https://labs.geomatico.es/maplibre-cog-protocol/dem.html)
 - Les COG dans Cesium : [documentation](https://github.com/hongfaqiu/TIFFImageryProvider) et [démo](https://tiff-imagery-provider.opendde.com/?panel=layer)
-- Les COG dans Giro3D : [documentation](https://giro3d.org/latest/examples/cog_color.html) et [demo](https://giro3d.org/latest/examples/cog_elevation.html)
+- Les COG dans Giro3D : [documentation](https://giro3d.org/latest/apidoc/classes/sources.GeoTIFFSource.html), [démo](https://giro3d.org/latest/examples/cog_color.html) et [démo](https://giro3d.org/latest/examples/cog_elevation.html)
 
 ## Affichage dans ArcGIS Pro
 
