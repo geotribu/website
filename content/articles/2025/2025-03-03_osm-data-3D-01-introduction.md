@@ -39,7 +39,7 @@ En 2023, après des défaites (trop nombreuses!) contre mes anciens collègues �
 
 ![Vue de la tour Montparnasse dans OSM DATA V2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/tour_montparnasse_dans_osm_data.png){: .img-center loading=lazy }
 
-C'est dans ce contexte et une [(potentielle) accélération de l'adoption des jumeaux numériques](https://www.afigeo.asso.fr/publication-de-la-1ere-etude-economique-de-l-ecosysteme-geonumerique-en-france/) que je vous présente les nouveautés d'OSM DATA V2 !
+C'est dans ce contexte et une [(potentielle) accélération de l'adoption des jumeaux numériques](https://www.afigeo.asso.fr/publication-de-la-1ere-etude-economique-de-l-ecosysteme-geonumerique-en-france/) que je vous présente, avec la contribution de [Romain](https://fr.linkedin.com/in/romain-latapie), les nouveautés d'OSM DATA V2 !
 
 Bonne lecture !
 
