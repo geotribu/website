@@ -6,7 +6,7 @@ social:
     - bluesky:
     - github:
     - gitlab:
-    - linkedin:
+    - linkedin:https://fr.linkedin.com/in/romain-latapie
     - mail:
     - mastodon:
         - instance:
