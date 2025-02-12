@@ -1,8 +1,8 @@
 #! python3  # noqa: E265
 
 """Script permettant de lister les derniers contenus avec leurs propriétés
-    dans un fichier YAML. Utilisé pour la page d'accueil et les pages
-    d'index des derniers contenus publiés.
+dans un fichier YAML. Utilisé pour la page d'accueil et les pages
+d'index des derniers contenus publiés.
 """
 
 # ############################################################################
