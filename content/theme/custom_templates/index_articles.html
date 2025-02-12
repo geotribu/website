@@ -46,7 +46,7 @@
           <a class="md-tag md-tag-icon" href="/tags/#tag:{{ tag | lower }}">{{ tag }}</a>{{ ", " if not loop.last else
           "" }}
           {% endfor %}
-          <h5>{{ "Publié le {}".format(contenu.date_txt_long) |
+          <h5>{{ "Publié le {}".format(contenu.date.year ) |
             default('vendredi 9 août 1985') }} par {{ contenu.authors | default('Prénom NOM') | join(", ") }}</h5>
           <p>{{ contenu.description | default('Description') }}</p>
           <a href="/{{ contenu.url_rel | default('/') }}" class="md-button">Lire cet article...</a>

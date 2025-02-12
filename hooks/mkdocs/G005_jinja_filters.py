@@ -1,8 +1,10 @@
 # standard library
+import datetime
 import logging
 
 # 3rd party
 import mkdocs.plugins
+from babel.dates import format_date
 from geotribu_cli.utils.slugger import sluggy
 from jinja2 import Environment
 from mkdocs.config.defaults import MkDocsConfig
@@ -10,6 +12,12 @@ from mkdocs.structure.files import Files
 
 # globals
 logger = logging.getLogger("mkdocs")
+log_prefix = f"[{__name__}] "
+
+
+def date_localized(in_date: datetime.date):
+    "Localize a date using babel."
+    return format_date(date=in_date, format="long", locale="fr_FR")
 
 
 @mkdocs.plugins.event_priority(-50)
@@ -29,10 +37,12 @@ def on_env(env: Environment, config: MkDocsConfig, files: Files) -> Environment:
     Returns:
         Environment: global Jinja Environment
     """
+    env.filters["date_localized"] = date_localized
     env.filters["slugger"] = sluggy
 
     logger.info(
-        "Jinja2 filters added for templates: slugger (handy filter to slugify a string)"
+        log_prefix
+        + "Jinja2 filters added for templates: slugger (handy filter to slugify a string)"
     )
 
     return env
