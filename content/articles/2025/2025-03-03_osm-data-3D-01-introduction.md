@@ -34,7 +34,7 @@ Bonjour à tous, je m'appelle [Karl](https://www.linkedin.com/in/karl-tayou-53a3
 
 En 2020, né d'une collaboration entre Jean-Louis Zimmermann et moi-même, [**OSM DATA**](https://demo.openstreetmap.fr/) a vu le jour. L'objectif d'OSM DATA est de **faciliter l'accès, la visualisation et le téléchargement des données [OpenStreetMap (OSM)](https://www.openstreetmap.org/#map=6/46.45/2.21.)**. Je m'occcupe du développement de la plateforme, Jean-Louis paramètre les (nombreux !) jeux de données thématiques. Actuellement, le projet OSM possède plus de 365 couches sur la France avec des styles parfois complexes.
 
-En 2023, après des défaites (trop nombreuses!) contre mes anciens collègues à FIFA, je change de vie et je réfléchis à une nouvelle version d'OSM DATA. Est-ce-que cette plateforme n'est destinée qu'à l'utilisation de données d'OSM ? Pourrait-on importer et afficher des fichiers externes (Geopackage, Shapefile, IFC...) ? Un affichage en 3D avec Mapbox / Maplibre / Giro3D ?  
+En 2023, après des défaites (trop nombreuses !) contre mes anciens collègues à FIFA, je change de vie et je réfléchis à une nouvelle version d'OSM DATA. Est-ce-que cette plateforme n'est destinée qu'à l'utilisation de données d'OSM ? Pourrait-on importer et afficher des fichiers externes (Geopackage, Shapefile, IFC...) ? Un affichage en 3D avec Mapbox / Maplibre / Giro3D ?  
 **OSM - SIG - BIM/CIM - jumeaux numériques, où sont les points de convergence ?**
 
 ![Vue de la tour Montparnasse dans OSM DATA V2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/tour_montparnasse_dans_osm_data.png){: .img-center loading=lazy }
