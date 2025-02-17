@@ -62,14 +62,14 @@ Le format fourni est donc du CSV. Pour cet exemple, nous téléchargerons [ce zi
 
 Pour ajouter le jeu de données Open Buildings dans QGIS, il suffit de l'importer au format CSV :
 
-- Aller dans le menu `Couche` puis `Ajouter une couche` et `Ajouter une couche de texte délimité`
+1. Aller dans le menu `Couche` puis `Ajouter une couche` et `Ajouter une couche de texte délimité`
 
-![Écran d'import d'une tuile de données Open Buildings en format CSV dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/import_open_buildings_csv_qgis.webp){: .img-center loading=lazy }
+    ![Écran d'import d'une tuile de données Open Buildings en format CSV dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/import_open_buildings_csv_qgis.webp){: .img-center loading=lazy }
 
-- Choisir l’emplacement du fichier CSV et le sélectionner
-- Au niveau des géométries, sélectionner `WKT` (pour [Well-known text](https://fr.wikipedia.org/wiki/Well-known_text), un standard de représentation de géométries utile pour les échanges, en CSV notamment)
-- Choisir le SCR `EPSG:4326`
-- Cliquer sur `Ajouter` pour intégrer le jeu de données à QGIS
+1. Choisir l’emplacement du fichier CSV et le sélectionner
+1. Au niveau des géométries, sélectionner `WKT` (pour [Well-known text](https://fr.wikipedia.org/wiki/Well-known_text), un standard de représentation de géométries utile pour les échanges, en CSV notamment)
+1. Choisir le SCR `EPSG:4326`
+1. Cliquer sur `Ajouter` pour intégrer le jeu de données à QGIS
 
 Tada :tada:, le CSV est importé !
 
