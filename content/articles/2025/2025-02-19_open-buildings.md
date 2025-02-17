@@ -58,7 +58,7 @@ Ici on va préférer le [KISS](https://en.wikipedia.org/wiki/KISS_principle) :ki
 
 ![Carte de téléchargement des tuiles Open Buildings](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/carte_telechargement_open_buildings.png){: .img-center loading=lazy }
 
-Le format fourni est donc du CSV. Pour cet exemple, nous téléchargerons [ce zip](https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/0fd_buildings.csv.gz) qui couvre le Ghana et la partie Est de la Côte d'Ivoire, pour une taille de 1.5 GO (3.4 GO une fois dézippé), et presque 15 millions de bâtiments.
+Le format fourni est donc du CSV. Pour cet exemple, nous téléchargerons [ce zip](https://storage.googleapis.com/open-buildings-data/v3/polygons_s2_level_4_gzip/0fd_buildings.csv.gz) qui couvre le Ghana et la partie Est de la Côte d'Ivoire, pour une taille de 1.5 Go (3.4 Go une fois dézippé), et presque 15 millions de bâtiments.
 
 Pour ajouter le jeu de données Open Buildings dans QGIS, il suffit de l'importer au format CSV :
 
