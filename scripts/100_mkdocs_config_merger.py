@@ -1,10 +1,10 @@
 #! python3  # noqa: E265
 
 """
-    Description: Merge different mkdocs configuration files from a directory.
-    Author: Julien Moura (@Guts@github.com)
+Description: Merge different mkdocs configuration files from a directory.
+Author: Julien Moura (@Guts@github.com)
 
-    Requires: MkDocs installed (it uses its YAML loader)
+Requires: MkDocs installed (it uses its YAML loader)
 """
 
 # -- IMPORTS --

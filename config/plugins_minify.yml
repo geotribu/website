@@ -1,0 +1,8 @@
+minify:
+  minify_css: true
+  css_files:
+    - theme/assets/stylesheets/extra.css
+    - theme/assets/stylesheets/homepage.css
+  minify_html: true
+  htmlmin_opts:
+    remove_comments: true

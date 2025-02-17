@@ -7,6 +7,9 @@ git-committers:
       .cache/plugins/git-committers/,
     ]
   docs_path: content/
+  exclude_committers:
+    - pre-commit-ci[bot]
+    - web-flow
   repository: geotribu/website
   token:
     !ENV ["MKDOCS_GIT_COMMITTERS_APIKEY", !ENV ["GH_TOKEN_MATERIAL_INSIDERS"]]

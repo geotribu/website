@@ -47,11 +47,6 @@ plugins:
   - macros:
       include_dir: content/toc_nav_ignored/snippets
       module_name: hooks/macros/custom_jinja
-  - minify:
-      minify_css: true
-      css_files:
-        - theme/assets/stylesheets/extra.css
-        - theme/assets/stylesheets/homepage.css
   - search:
       lang: fr
   - social:
@@ -60,9 +55,6 @@ plugins:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, false]
       cards_layout_options:
         font_family: Ubuntu
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_file: tags.md
   - termynal
 
 # Theme

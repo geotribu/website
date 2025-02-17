@@ -1,8 +1,8 @@
 #! python3  # noqa: E265
 
 """
-    Script one-shot pour nettoyer la syntaxe de la lightbox pour les images
-    dans le cadre de https://github.com/geotribu/website/pull/720.
+Script one-shot pour nettoyer la syntaxe de la lightbox pour les images
+dans le cadre de https://github.com/geotribu/website/pull/720.
 """
 
 from pathlib import Path
