@@ -46,7 +46,7 @@ Chaque bâtiment, dans ce jeu de données, est représenté par :
 - un score de confiance indiquant la probabilité qu’il s’agisse d’un bâtiment
 - un [code Plus](https://fr.wikipedia.org/wiki/Open_Location_Code) correspondant au centre du bâtiment
 
-Le type de bâtiment n'est pas renseigné, contrairement à [aux données OpenStreetMap par exemple](https://wiki.openstreetmap.org/wiki/Key:building), seulement la géométrie et donc un score de confiance dont le seuil minimal de filtrage est fixé à 65%, ce qui peut parfois s'avérer assez bas (dis "camion!" :truck:).
+Le type de bâtiment n'est pas renseigné, contrairement [aux données OpenStreetMap par exemple](https://wiki.openstreetmap.org/wiki/Key:building), seulement la géométrie et donc un score de confiance dont le seuil minimal de filtrage est fixé à 65%, ce qui peut parfois s'avérer assez bas (dis "camion!" :truck:).
 
 Et la méthode de détection de la v2 [est décrite ici](https://arxiv.org/abs/2107.12283v2), qui explique notamment que c'est basé sur des images satellites de résolution 50cm.
 
