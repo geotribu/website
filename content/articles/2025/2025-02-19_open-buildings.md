@@ -130,7 +130,7 @@ Il peut également arriver parfois que la pertinence de certains bâtiments lais
 
 ![Delta temporel entre tuile Google sat et Open Buildings - Luanda](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/openbuilding_delta_temporel_sat_luanda.webp){: .img-center loading=lazy }
 
-Et parfois, il y a des décalages entre sat et bâtiments, comme par exemple ici à [Yaoundé](https://fr.wikipedia.org/wiki/Yaound%C3%A9):
+Et parfois, il y a des décalages entre imagerie satellitaire et bâtiments, comme par exemple ici à [Yaoundé](https://fr.wikipedia.org/wiki/Yaound%C3%A9) :
 
 ![Décalage de quelques mètres entre image satellite Google et bâtiment OpenBuildings - Yaoundé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/openbuilding_yaounde_decalage_googlesat.png){: .img-center loading=lazy }
 
