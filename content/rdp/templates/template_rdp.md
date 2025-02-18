@@ -29,7 +29,7 @@ tags:
 
 ## Vie du site
 
-![logo Geotribu rectange](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png){: .off-glb style="border: none; box-shadow: none;" }
+![logo Geotribu rectangle](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png){: .off-glb style="border: none; box-shadow: none;" }
 {: align=middle }
 
 ----
