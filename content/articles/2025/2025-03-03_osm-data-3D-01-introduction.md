@@ -152,6 +152,7 @@ Concernant le patrimoine bâti, il est issu de la base de données d'OSM où l'e
 Pour l'ajout de données via l'interface administrateur et dans le cas de géométries de type `Polyline` et `Polygon`, les données sont affichées en 2D avec une altitude nulle. Pour les géométries de type `Point`, une altitude (+ 4 m) est appliquée par défaut aux données par rapport au sol / au bâtiment (si l'entité en intersecte un).
 
 Dans le prochain article de cette série, nous détaillerons les mécanismes techniques permettant d'ajouter des données issues d'un fichier SIG ou d'une requête SQL, en décrivant chaque étape, depuis leur validation jusqu'à leur diffusion via QGIS SERVER. L'article inclura également des extraits de code afin de mieux comprendre et voir reproduire le processus
+
 ----
 
 <!-- geotribu:authors-block -->
