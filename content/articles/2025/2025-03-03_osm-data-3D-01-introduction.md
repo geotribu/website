@@ -32,14 +32,23 @@ tags:
 
 Bonjour à tous, je m'appelle [Karl](https://www.linkedin.com/in/karl-tayou-53a3a7b9/) !
 
-En 2020, né d'une collaboration entre Jean-Louis Zimmermann et moi-même, [**OSM DATA**](https://demo.openstreetmap.fr/) a vu le jour. L'objectif d'OSM DATA est de **faciliter l'accès, la visualisation et le téléchargement des données [OpenStreetMap (OSM)](https://www.openstreetmap.org/#map=6/46.45/2.21.)**. Je m'occcupe du développement de la plateforme, Jean-Louis paramètre les (nombreux !) jeux de données thématiques. Actuellement, le projet OSM possède plus de 365 couches sur la France avec des styles parfois complexes.
+[**OSM DATA**](https://demo.openstreetmap.fr/) a vu le jour en 2020, né d'une collaboration entre Jean-Louis Zimmermann et moi-même. Son objectif est de **faciliter l'accès, la visualisation et le téléchargement des données [OpenStreetMap (OSM)](https://www.openstreetmap.org/#map=6/46.45/2.21.)**.
+
+Je m’occupe du développement de la plateforme, Jean-Louis paramètre les (nombreux !) jeux de données thématiques. Actuellement, le projet OSM possède plus de 365 couches sur la France avec des styles parfois complexes.
 
 En 2023, après des défaites (trop nombreuses !) contre mes anciens collègues à FIFA, je change de vie et je réfléchis à une nouvelle version d'OSM DATA. Est-ce-que cette plateforme n'est destinée qu'à l'utilisation de données d'OSM ? Pourrait-on importer et afficher des fichiers externes (Geopackage, Shapefile, IFC...) ? Un affichage en 3D avec Mapbox / Maplibre / Giro3D ?  
+
 **OSM - SIG - BIM/CIM - jumeaux numériques, où sont les points de convergence ?**
 
 ![Vue de la tour Montparnasse dans OSM DATA V2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/tour_montparnasse_dans_osm_data.png){: .img-center loading=lazy }
 
-C'est dans ce contexte et une [(potentielle) accélération de l'adoption des jumeaux numériques](https://www.afigeo.asso.fr/publication-de-la-1ere-etude-economique-de-l-ecosysteme-geonumerique-en-france/) que je vous présente, avec la contribution de [Romain](https://fr.linkedin.com/in/romain-latapie), les nouveautés d'OSM DATA V2 !
+C'est dans ce contexte et une [potentielle accélération de l'adoption des jumeaux numériques](https://www.afigeo.asso.fr/publication-de-la-1ere-etude-economique-de-l-ecosysteme-geonumerique-en-france/) que je vous présente une série d'articles, avec la contribution de [Romain](https://fr.linkedin.com/in/romain-latapie), les nouveautés d'OSM DATA V2 !
+
+En complément de cet article introductif, qui explique le fonctionnement d'OSM DATA et présente ses principales nouveautés, nous publierons quatre autres articles pour explorer :  
+- Les étapes techniques d’ingestion des données, jusqu’à la diffusion des flux WMS/WFS.  
+- La modélisation 3D des bâtiments.  
+- Les performances d’une application intégrant plusieurs objets en 3D.  
+
 
 Bonne lecture !
 
@@ -56,11 +65,11 @@ Pour les plus techniciens, voici la technologie utilisée derrière OSM DATA :
 
 L'objectif avec OSM DATA est de créer un écosystème webSIG entièrement *open source* "QGIS centré" :heart: : données - métadonnées - symbologie.
 
-L'ensemble de l'application est hébergée avec OSM France :heart:.
+L'ensemble de l'application est hébergée par OSM France :heart:.
 
 ## Les nouveautés
 
-Le premier changement apparait dès l'ouverture de la page : **les éléments structurants et informationnels sont représentés en 3D** (l'affichage de la topographie est en développement) intégrant une modélisation du patrimoine bâti. Les données sont extrudées à partir des bâtiments d'OSM, la représentation est généralement proche d'un [LOD1](https://3d.bk.tudelft.nl/lod/) texturé. Des améliorations persistent sur la modélisation, la tour Eiffel en est un bon exemple, le rendu est (beaucoup) moins réaliste que la plupart des représentations réalisées sur [*Minecraft*](https://www.planetminecraft.com/projects/tag/eiffel/).
+Le premier changement apparaît dès l'ouverture de la page : **les éléments structurants et informationnels sont représentés en 3D** (l'affichage de la topographie est en développement) intégrant une modélisation du patrimoine bâti. Les données sont extrudées à partir des bâtiments d'OSM, la représentation est généralement proche d'un [LOD1](https://3d.bk.tudelft.nl/lod/) texturé. Des améliorations persistent sur la modélisation, la tour Eiffel en est un bon exemple, le rendu est beaucoup moins réaliste que la plupart des représentations réalisées sur [*Minecraft*](https://www.planetminecraft.com/projects/tag/eiffel/).
 
 ![La Tour Eiffel Minecraft de Wish](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/la_tour_eiffel_minecraft_de_wish.png){: .img-center loading=lazy }
 
@@ -142,6 +151,7 @@ Concernant le patrimoine bâti, il est issu de la base de données d'OSM où l'e
 
 Pour l'ajout de données via l'interface administrateur et dans le cas de géométries de type `Polyline` et `Polygon`, les données sont affichées en 2D avec une altitude nulle. Pour les géométries de type `Point`, une altitude (+ 4 m) est appliquée par défaut aux données par rapport au sol / au bâtiment (si l'entité en intersecte un).
 
+Dans le prochain article de cette série, nous détaillerons les mécanismes techniques permettant d'ajouter des données issues d'un fichier SIG ou d'une requête SQL, en décrivant chaque étape, depuis leur validation jusqu'à leur diffusion via QGIS SERVER. L'article inclura également des extraits de code afin de mieux comprendre et voir reproduire le processus.
 ----
 
 <!-- geotribu:authors-block -->
