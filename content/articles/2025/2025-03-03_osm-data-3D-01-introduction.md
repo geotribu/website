@@ -45,10 +45,10 @@ En 2023, après des défaites (trop nombreuses !) contre mes anciens collègues 
 C'est dans ce contexte et une [potentielle accélération de l'adoption des jumeaux numériques](https://www.afigeo.asso.fr/publication-de-la-1ere-etude-economique-de-l-ecosysteme-geonumerique-en-france/) que je vous présente une série d'articles, avec la contribution de [Romain](https://fr.linkedin.com/in/romain-latapie), les nouveautés d'OSM DATA V2 !
 
 En complément de cet article introductif, qui explique le fonctionnement d'OSM DATA et présente ses principales nouveautés, nous publierons quatre autres articles pour explorer :  
+
 - Les étapes techniques d’ingestion des données, jusqu’à la diffusion des flux WMS/WFS.  
 - La modélisation 3D des bâtiments.  
 - Les performances d’une application intégrant plusieurs objets en 3D.  
-
 
 Bonne lecture !
 
@@ -151,7 +151,7 @@ Concernant le patrimoine bâti, il est issu de la base de données d'OSM où l'e
 
 Pour l'ajout de données via l'interface administrateur et dans le cas de géométries de type `Polyline` et `Polygon`, les données sont affichées en 2D avec une altitude nulle. Pour les géométries de type `Point`, une altitude (+ 4 m) est appliquée par défaut aux données par rapport au sol / au bâtiment (si l'entité en intersecte un).
 
-Dans le prochain article de cette série, nous détaillerons les mécanismes techniques permettant d'ajouter des données issues d'un fichier SIG ou d'une requête SQL, en décrivant chaque étape, depuis leur validation jusqu'à leur diffusion via QGIS SERVER. L'article inclura également des extraits de code afin de mieux comprendre et voir reproduire le processus.
+Dans le prochain article de cette série, nous détaillerons les mécanismes techniques permettant d'ajouter des données issues d'un fichier SIG ou d'une requête SQL, en décrivant chaque étape, depuis leur validation jusqu'à leur diffusion via QGIS SERVER. L'article inclura également des extraits de code afin de mieux comprendre et voir reproduire le processus
 ----
 
 <!-- geotribu:authors-block -->
