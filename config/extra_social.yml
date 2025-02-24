@@ -11,18 +11,18 @@ social:
   - icon: fontawesome/brands/bluesky
     link: https://bsky.app/profile/geotribu.bsky.social
     name: Geotribu sur BlueSky
-  - icon: "fontawesome/brands/twitter"
-    link: "https://twitter.com/geotribu"
-    name: "Geotribu sur Twitter"
-  - icon: "fontawesome/brands/linkedin"
-    link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
+  # - icon: "fontawesome/brands/twitter"
+  #   link: "https://twitter.com/geotribu"
+  #   name: "Geotribu sur Twitter"
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/company/geotribu/
     name: "Les contenus de Geotribu sur LinkedIn"
   - icon: "fontawesome/brands/youtube"
     link: https://www.youtube.com/@geotribu
     name: "Chaîne Youtube de Geotribu"
-  - icon: "fontawesome/brands/facebook"
-    link: "https://fr-fr.facebook.com/geotribu/"
-    name: "Page Facebook de Geotribu"
+  # - icon: "fontawesome/brands/facebook"
+  #   link: "https://fr-fr.facebook.com/geotribu/"
+  #   name: "Page Facebook de Geotribu"
   - icon: "fontawesome/brands/mailchimp"
     link: http://eepurl.com/hL0zVr
     name: "Abonnez-vous à la newsletter"
