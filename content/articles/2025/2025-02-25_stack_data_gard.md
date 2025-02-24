@@ -1,6 +1,6 @@
 ---
 title: "L'enjeu de la data au département du Gard"
-
+subtitle: "Taradata, stack moderne"
 authors:
     - Satya MINGUEZ
 categories:
@@ -8,6 +8,7 @@ categories:
 comments: true
 date: 2025-02-25
 description: Comment le département du Gard valorise son patrimoine de données classiques et de géo-données au travers de différents outils numériques.
+icon: fontawesome/solid/cubes-stacked
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/affiche.png
 tags:
     - Apache Airflow
