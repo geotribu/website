@@ -240,10 +240,11 @@ Si tu as bien suivi, tu as sans doute compris que nous avions un outil pour chac
 Tu pourras trouver le lien vers le support que [Michaël](https://geotribu.fr/team/michael-galien/) a présenté lors des GeoDataDays de Nantes les 19 et 20 septembre 2024. Il explique la Modern Data Stack et détaille le cas d'usage Metabase que je t'ai présenté plus haut.
 
 [Modern GIS Stack - Geodatadays 2024 :simple-slideshare:](https://www.geodatadays.fr/_medias/afigeo/files/GDD_2024/Presentations/3_GDD24_Modern_GIS_Stack_GARD.pdf){ .md-button }
-{: .align-middle }
+{: align=middle }
 
 Dans ce replay de la Forward Data Conference, il présente comment la composante géographique a été prise en compte dans Taradata.
 
-- <https://www.youtube.com/watch?v=KaXUk44cRzw>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/KaXUk44cRzw?si=onlR84yd2KtHhKHJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <!-- geotribu:authors-block -->
