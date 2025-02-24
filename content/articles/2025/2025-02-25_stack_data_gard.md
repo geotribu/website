@@ -180,7 +180,8 @@ Pour aller plus loin, je te conseille vivement la [playlist DBT](https://www.you
 
 Apache Airflow est [l'orchestrateur](https://github.com/apache/airflow/blob/main/README.md), la clé de voûte de toute la stack. Son objectif est de décrire les tâches à réaliser et planifier leur exécution.
 
-Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (Directed Acyclic Graph), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
+Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (_Directed Acyclic Graph_), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
+
 
 Et donc Airflow nous permet de :
 
@@ -221,7 +222,8 @@ L'exemple ci-dessous, réalisé en collaboration avec la direction des bâtiment
 
 ![Dashboard de la localisation des sites](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/dashboard_dlog_metabase.png){: .img-center loading=lazy }
 
-Il est possible, comme spécifier plus haut, de filtrer nos données par catégorie, nom et autres.
+Il est possible, comme spécifié plus haut, de filtrer nos données par catégorie, nom et autres.
+
 
 ![Fitres Metabase](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/filtres_metabase.png){: .img-center loading=lazy }
 
@@ -239,7 +241,8 @@ Si tu as bien suivi, tu as sans doute compris que nous avions un outil pour chac
 
 Tu pourras trouver le lien vers le support que [Michaël](https://geotribu.fr/team/michael-galien/) a présenté lors des GeoDataDays de Nantes les 19 et 20 septembre 2024. Il explique la Modern Data Stack et détaille le cas d'usage Metabase que je t'ai présenté plus haut.
 
-- <https://www.geodatadays.fr/_medias/afigeo/files/GDD_2024/Presentations/3_GDD24_Modern_GIS_Stack_GARD.pdf>
+[Modern GIS Stack - Geodatadays 2024 :simple-slideshare:](https://www.geodatadays.fr/_medias/afigeo/files/GDD_2024/Presentations/3_GDD24_Modern_GIS_Stack_GARD.pdf){ .md-button }
+{: .align-middle }
 
 Dans ce replay de la Forward Data Conference, il présente comment la composante géographique a été prise en compte dans Taradata.
 
