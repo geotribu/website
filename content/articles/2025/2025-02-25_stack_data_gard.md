@@ -182,7 +182,6 @@ Apache Airflow est [l'orchestrateur](https://github.com/apache/airflow/blob/main
 
 Dans Airflow, les tâches sont définies et organisées dans ce qu’on appelle un DAG (_Directed Acyclic Graph_), une structure qui permet de représenter les relations et l’ordre d’exécution des tâches. Ces tâches sont créées à l'aide de scripts Python (car Airflow est écrit en Python)
 
-
 Et donc Airflow nous permet de :
 
 - définir les tâches en Python,
@@ -223,7 +222,6 @@ L'exemple ci-dessous, réalisé en collaboration avec la direction des bâtiment
 ![Dashboard de la localisation des sites](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/dashboard_dlog_metabase.png){: .img-center loading=lazy }
 
 Il est possible, comme spécifié plus haut, de filtrer nos données par catégorie, nom et autres.
-
 
 ![Fitres Metabase](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/filtres_metabase.png){: .img-center loading=lazy }
 
