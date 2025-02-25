@@ -13,7 +13,7 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_ga
 tags:
     - Apache Airflow
     - DBT
-    - GDAL/OGR
+    - GDAL
     - Metabase
     - Open Source
     - PostGIS
