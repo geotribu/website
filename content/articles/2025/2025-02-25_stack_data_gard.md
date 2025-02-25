@@ -160,6 +160,8 @@ On peut dire que DBT a pour rôle de commander les transformations.
 Les transformations sont décrites en SQL/[Jinja](https://jinja.palletsprojects.com/en/stable/).
 Voici par exemple une transformation des données de la [Base Adresse Nationale (BAN)](https://adresse.data.gouv.fr/) lors de l'étape dite de [staging](https://docs.getdbt.com/best-practices/how-we-structure/2-staging) :
 
+{% raw %}
+
 ```sql+jinja
 {% set departements = ["07", "12", "13", "26", "30", "34", "48", "84"] %}
 
@@ -194,6 +196,8 @@ geolocalisations as (
 select *
 from geolocalisations
 ```
+
+{% endraw %}
 
 Le logiciel permet aussi de connaître le [lignage](https://fr.wikipedia.org/wiki/Data_lineage) de la donnée c'est-à-dire la capacité à visualiser et tracer l'origine, les transformations, et les relations entre les différentes données.
 Voici un extrait de lignage avec les données sources en vert, la donnée finale en violet et toutes les liaisons.
