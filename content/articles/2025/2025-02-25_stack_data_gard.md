@@ -162,7 +162,7 @@ Voici par exemple une transformation des données de la [Base Adresse Nationale 
 
 {% raw %}
 
-```sql+jinja
+```sql+jinja title="Script SQL templaté avec la syntaxe Jinja dans DBT" linenums="1"
 {% set departements = ["07", "12", "13", "26", "30", "34", "48", "84"] %}
 
 with adresses as (
