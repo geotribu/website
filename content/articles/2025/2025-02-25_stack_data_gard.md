@@ -160,7 +160,40 @@ On peut dire que DBT a pour rôle de commander les transformations.
 Les transformations sont décrites en SQL/[Jinja](https://jinja.palletsprojects.com/en/stable/).
 Voici par exemple une transformation des données de la [Base Adresse Nationale (BAN)](https://adresse.data.gouv.fr/) lors de l'étape dite de [staging](https://docs.getdbt.com/best-practices/how-we-structure/2-staging) :
 
-![Étape de staging de la BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/stack_data_gard/staging_ban.png)
+```sql+jinja
+{% set departements = ["07", "12", "13", "26", "30", "34", "48", "84"] %}
+
+with adresses as (
+    {% for departement in departements %}
+        select *
+        from {{ source("src_adresse_data_gouv_fr", "adresses_" ~ departement) }}
+        {% if not loop.last %} union all {% endif %}
+    {% endfor %}
+),
+selections_typages_renommages as (
+    select
+        {{ to_integer_or_null("numero") }} as numero,
+        {{ trim_or_null_if_empty("suffixe") }} as suffixe,
+        {{ trim_or_null_if_empty("voie_nom") }} as nom_voie,
+        {{ trim_or_null_if_empty("commune_insee") }} as cog_commune,
+        {{ trim_or_null_if_empty("source") }} as source,
+        {{ trim_or_null_if_empty("position") }} as position,
+        {{ to_numeric_or_null("long") }} as longitude,
+        {{ to_numeric_or_null("lat") }} as latitude
+    from adresses
+),
+geolocalisations as (
+    select
+        *,
+        case
+            when {{ is_valid_longitude("longitude") }} and {{ is_valid_latitude("latitude") }}
+            then {{ to_srid_2154(make_2d_point_4326("longitude", "latitude")) }}
+        end as geom
+    from selections_typages_renommages
+)
+select *
+from geolocalisations
+```
 
 Le logiciel permet aussi de connaître le [lignage](https://fr.wikipedia.org/wiki/Data_lineage) de la donnée c'est-à-dire la capacité à visualiser et tracer l'origine, les transformations, et les relations entre les différentes données.
 Voici un extrait de lignage avec les données sources en vert, la donnée finale en violet et toutes les liaisons.
