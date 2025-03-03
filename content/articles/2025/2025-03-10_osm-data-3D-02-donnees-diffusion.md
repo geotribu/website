@@ -171,7 +171,6 @@ Pour OSM DATA, les requêtes peuvent faire appel à des milliers d'entités, ré
 A l'aide de la requête d'assemblage créée, la vue matérialisée est créée de la manière suivante :
 
 ```sql title="Création de la vue matérialisée"
-
 CREATE MATERIALIZED VIEW {NOM_DE_LA_VUE} AS ({REQUETE_SQL_ENTIERE})
 ```
 
