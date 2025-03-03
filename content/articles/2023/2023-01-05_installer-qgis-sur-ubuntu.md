@@ -22,6 +22,9 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
+!!! info ""
+    À l'occasion de la publication de [sa version traduite en anglais](https://blog.geotribu.net/2025/02/11/installing-qgis-on-ubuntu-with-apt/), l'article a été mis à jour début février 2025 avec QGIS 3.34 LTR et Ubuntu 24.04 LTS.
+
 ## Introduction
 
 ![logo Ubuntu](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/ubuntu.svg "logo Ubuntu"){: loading=lazy .img-thumbnail-left }
@@ -55,7 +58,7 @@ Vu que c'est un sujet vivant, je tenterai de mettre ce tutoriel à jour de temps
 
 Avant d'installer, sonne l'heure du choix : quelle version de QGIS ?
 
-Pour ma part, je cherche à installer **QGIS LTR** (3.22.14 à date) sur **Ubuntu LTS** (22.04.1 à date) via **le dépôt officiel** des paquets du projet QGIS.
+Pour ma part, je cherche à installer **QGIS LTR** (3.34.15 à date) sur **Ubuntu LTS** (24.04.1 à date) via **le dépôt officiel** des paquets du projet QGIS.
 
 Oui, j'aime la stabilité.  
 Oui, le [dépôt `ubuntugis-unstable`](https://wiki.ubuntu.com/UbuntuGIS) porte bien son nom.  
@@ -120,10 +123,10 @@ On référence ensuite le dépôt dans un fichier chargé de lister les sources 
     less -F /etc/apt/sources.list.d/qgis.list
     ```
 
-    Ce qui donne sur Ubuntu 22.04 :
+    Ce qui donne sur Ubuntu 24.04 :
 
-    ```debsources
-    deb [arch=amd64 signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu-ltr
+    ```debsources title="/etc/apt/sources.list.d/qgis.list"
+    deb [arch=amd64 signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu-ltr noble main
     ```
 
 === ":person_juggling: QGIS, version 'basique'"
@@ -140,10 +143,10 @@ On référence ensuite le dépôt dans un fichier chargé de lister les sources 
     less -F /etc/apt/sources.list.d/qgis.list
     ```
 
-    Ce qui donne sur Ubuntu 22.04 :
+    Ce qui donne sur Ubuntu 24.04 :
 
-    ```debsources
-    deb [arch=amd64 signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu
+    ```debsources title="/etc/apt/sources.list.d/qgis.list"
+    deb [arch=amd64 signed-by=/etc/apt/keyrings/qgis-archive-keyring.gpg] https://qgis.org/ubuntu noble main
     ```
 
 <!-- markdownlint-enable MD046 -->
@@ -173,12 +176,12 @@ On référence alors dans un fichier `/etc/apt/sources.list.d/qgis.sources` :
     less -F /etc/apt/sources.list.d/qgis.sources
     ```
 
-    Ce qui donne sur Ubuntu 22.04 :
+    Ce qui donne sur Ubuntu 24.04 :
 
-    ```debsources
+    ```yaml title="/etc/apt/sources.list.d/qgis.sources"
     Types: deb deb-src
     URIs: https://qgis.org/ubuntu-ltr
-    Suites: jammy
+    Suites: noble
     Architectures: amd64
     Components: main
     Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
@@ -202,12 +205,12 @@ On référence alors dans un fichier `/etc/apt/sources.list.d/qgis.sources` :
     less -F /etc/apt/sources.list.d/qgis.sources
     ```
 
-    Ce qui donne sur Ubuntu 22.04 :
+    Ce qui donne sur Ubuntu 24.04 :
 
-    ```debsources
+    ```yaml title="/etc/apt/sources.list.d/qgis.sources"
     Types: deb deb-src
     URIs: https://qgis.org/ubuntu
-    Suites: jammy
+    Suites: noble
     Architectures: amd64
     Components: main
     Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
@@ -220,7 +223,8 @@ On référence alors dans un fichier `/etc/apt/sources.list.d/qgis.sources` :
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Allez, tout est désormais fin prêt, on passe à l'installation !  
+Allez, tout est désormais fin prêt, on passe à l'installation !
+
 On met à jour la liste des paquets accessibles depuis qu'on a ajouté le dépôt :
 
 ```sh
@@ -229,7 +233,7 @@ sudo apt update
 
 Pour savoir quels paquets liés à QGIS sont disponibles, on commence à taper `sudo apt install qgis` et on laisse faire l'autocomplétion via la touche ++tab++ :
 
-```sh
+```sh title="Lister les packages installables et dont le nom commence par 'qgis'"
 $ sudo apt install qgis
 qgis                      qgis-plugin-grass-common  qgis-server-common        qgis-server-wms
 qgis3-survex-import       qgis-provider-grass       qgis-server-dummy         qgis-server-wmts
