@@ -1,5 +1,5 @@
 ---
-title: "OSM DATA 3D: présentation"
+title: "OSM DATA 3D : présentation"
 subtitle: OSM DATA 1/5
 authors:
     - Karl TAYOU
