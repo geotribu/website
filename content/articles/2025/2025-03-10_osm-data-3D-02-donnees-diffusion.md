@@ -121,7 +121,7 @@ La clause source (`FROM`) dépend elle du type de géométrie défini lors de la
 
 Une fois les clauses définies, un assemblage de celles-ci permet de former la requête entière. Pour l' exemple des métros :
 
-```sql type="Requête entière pour les métros"
+```sql title="Requête entière pour les métros"
 SELECT
     A.osm_id,
     A.name,
