@@ -9,7 +9,7 @@ categories:
 comments: true
 date: 2025-03-10
 description: "OSM DATA 3D : mécanismes d'ingestion de données jusqu'à leur diffusion en flux WFS/WMS."
-icon: material/emoticon-happy-outline
+icon: material/database-import-outline
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/parcours_des_donnees_avant_visualisation_400.png
 license: default
 robots: index, follow
