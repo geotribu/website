@@ -116,7 +116,7 @@ L'utilisateur peut aussi éditer la clause de projection (`SELECT`), ci-dessous 
 
 La clause source (`FROM`) dépend elle du type de géométrie défini lors de la création du jeu de données :
 
-- Pour les géométrie de type `Point`, la sélection est réalisée sur l'union des tables `planet_osm_point` et les centroides issus de la table `planet_osm_polygon`.
+- Pour les géométrie de type `Point`, la sélection est réalisée sur l'union des tables `planet_osm_point` et les centroïdes issus de la table `planet_osm_polygon`.
 - Pour les géométrie de type `Polyline`, seule la table `planet_osm_line` est considérée.
 - Pour les géométrie de type `Polygon`, seule la table `planet_osm_polygon` est considérée.
 
