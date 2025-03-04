@@ -107,7 +107,8 @@ En ce qui concerne l'ajout d'un jeu de données à partir d'une requête SQL, on
 
 On possède donc les trois principales tables de données d'OpenStreetMap à savoir `planet_osm_point`, `planet_osm_line` et `planet_osm_polygon`.
 
-La définition d'une requête SQL sur les données OpenStreetMap est simplifiée : seule la clause de restriction (`WHERE`) de la requête peut être définie. Ainsi, un utilisateur qui ne maitrise pas le SQL ou le schéma de la base d'OSM peut s'appuyer uniquement sur le [Wiki d'OpenStreetMap (exemple des stations de métro)](https://wiki.openstreetmap.org/wiki/Tag:station%3Dsubway) pour définir de nouvelles couches. La majorité des 350 couches présentes aujourd'hui a été créée à l'aide de cette fonctionnalité.
+La définition d'une requête SQL sur les données OpenStreetMap est simplifiée : seule la clause de restriction (`WHERE`) de la requête peut être définie.
+Ainsi, un utilisateur qui ne maitrise pas le SQL ou le schéma de la base d'OSM peut définir de nouvelles couches en s'appuyant uniquement sur le [Wiki d'OpenStreetMap (exemple des stations de métro)](https://wiki.openstreetmap.org/wiki/Tag:station%3Dsubway). La majorité des 350 couches présentes aujourd'hui a été créée à l'aide de cette fonctionnalité.
 
 L'utilisateur peut aussi éditer la clause de projection (`SELECT`), ci-dessous un exemple de sélection des métros dans la base de données OSM. Pour cette clause et en complément de ce qui a été défini par l'utilisateur, sont rajoutés d'autres champs `geom`, `osm_id`, `name` et `tags` contenant toutes les autres attributs sous forme de `hstore`.
 
