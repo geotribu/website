@@ -1,5 +1,5 @@
 ---
-title: "OSM Data : des données OSM jusqu'au serveur carto, avec une interface d'administration, etc.."
+title: "OSM Data : des données SIG jusqu'au serveur cartographique"
 subtitle: OSM Data 2/5
 authors:
     - Karl TAYOU
@@ -14,16 +14,15 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/arti
 license: default
 robots: index, follow
 tags:
-    - 3D
-    - Digital twin
-    - Giro3D
-    - Three.js
-    - jumeau numérique
     - OpenStreetMap
     - QGIS
     - QGIS SERVER
-    - WFS/WMS
-    - Smart City
+    - WFS
+    - WMS
+    - PostgreSQL
+    - GeoPandas
+    - SQLAlchemy
+    - PyQGIS
 ---
 
 # OSM DATA V2 : Des données à la cartographie
@@ -103,14 +102,14 @@ La couche est insérée en base de données ! :fireworks:
 
 ### À partir d'une requête SQL
 
-En ce qui concerne l'ajout d'un jeu de données à partir d'une requête SQL, on considère qu'une base de données est fournie avec des données d'OpenStreetMap par le biais d'osm2pgsql, un article détaille la procédure [ici](../2022/2022-06-28_import-donnees-osm-postgresql-osm2pgsql-osmium/).
+En ce qui concerne l'ajout d'un jeu de données à partir d'une requête SQL, on considère qu'une base de données est fournie avec des données d'OpenStreetMap par le biais d'osm2pgsql, un article détaille la procédure [ici](../2022/2022-06-28_import-donnees-osm-postgresql-osm2pgsql-osmium).
 
 On possède donc les trois principales tables de données d'OpenStreetMap à savoir `planet_osm_point`, `planet_osm_line` et `planet_osm_polygon`.
 
 La définition d'une requête SQL sur les données OpenStreetMap est simplifiée : seule la clause de restriction (`WHERE`) de la requête peut être définie.
 Ainsi, un utilisateur qui ne maitrise pas le SQL ou le schéma de la base d'OSM peut définir de nouvelles couches en s'appuyant uniquement sur le [Wiki d'OpenStreetMap (exemple des stations de métro)](https://wiki.openstreetmap.org/wiki/Tag:station%3Dsubway). La majorité des 350 couches présentes aujourd'hui a été créée à l'aide de cette fonctionnalité.
 
-L'utilisateur peut aussi éditer la clause de projection (`SELECT`), ci-dessous un exemple de sélection des métros dans la base de données OSM. Pour cette clause et en complément de ce qui a été défini par l'utilisateur, sont rajoutés d'autres champs `geom`, `osm_id`, `name` et `tags` contenant toutes les autres attributs sous forme de `hstore`.
+L'utilisateur peut aussi éditer la clause de projection (`SELECT`), ci-dessous un exemple de sélection des métros dans la base de données OSM. Pour cette clause, en plus de ce que l'utilisateur a défini, d'autres champs sont automatiquement ajoutés : `geom`, `osm_id`, `name` et `tags`; Le dernier champ `tags` regroupent les autres attributs d'OpenStreetMap disponibles sous forme de [`hstore`](https://www.postgresql.org/docs/current/hstore.html).
 
 ![Requête SQL pour les métros](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/requete_sql_metro.png){: .img-center loading=lazy }
 
@@ -277,7 +276,7 @@ Cette caractéristique multi-styles découle de la fonctionnalité déjà prése
 
 - A l'aide du moteur de style intégré d'OSM DATA :
     - Sous la forme d'un icone ponctuel :  L'utilisateur fournit un icône (raster ou vecteur), un style est créé avec [`QgsSingleSymbolRenderer`](https://api.qgis.org/api/classQgsSingleSymbolRenderer.html) et PyQGIS pour l'appliquer au jeu de données. Le détail de l'implémentation est disponible sur le [GitHub](https://github.com/data-osm/geosm-backend/blob/master/provider/qgis/customStyle/point_icon_simple.py#L24) du projet.
-    - Sous la forme d'un regroupement de point (*cluster*) : L'utilisateur fournit un icône, un style est créé avec [`QgsPointClusterRenderer`](https://api.qgis.org/api/classQgsPointClusterRenderer.html) pour l'appliquer au jeu de données. Le détail de l'implémentation est disponible sur le [GitHub](https://github.com/data-osm/geosm-backend/blob/master/provider/qgis/customStyle/point_icon_simple.py#L24) du projet.
+    - Sous la forme d'un regroupement de point (*cluster*) : L'utilisateur fournit un icône, un style est créé avec [`QgsPointClusterRenderer`](https://api.qgis.org/api/classQgsPointClusterRenderer.html) pour l'appliquer au jeu de données. Le détail de l'implémentation est disponible sur le [GitHub](https://github.com/data-osm/geosm-backend/blob/master/provider/qgis/customStyle/cluster.py#L24) du projet.
 
 ![Fonction de création de style sous forme de *clusters*](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/ajout_style_cluster.png){: .img-center loading=lazy }
 
@@ -285,7 +284,7 @@ Au besoin, un dernier article peut compléter cette série pour expliciter davan
 
 ## Diffusion des flux OGC WMS/WFS
 
-Pour utiliser QGIS Server, rien de plus simple ! Il suffit d'enregistrer le projet QGIS dans un dossier et [cet article](https://geotribu.fr/articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis/) détaille les étapes d'exploitation de ce dossier pour créer les flux OGC.
+Pour utiliser QGIS Server, rien de plus simple ! Il suffit d'enregistrer le projet QGIS dans un dossier et [cet article](./2010-09-03_creer_diffuser_services_wms_avec_qgis) détaille les étapes d'exploitation de ce dossier pour créer les flux OGC.
 
 Cependant, nous avons évoqué plus haut qu'à ce jour 139 projets QGIS sont présents. Une seule instance QGIS ne peut pas gérer l'ensemble de ces données de manière efficace. Pour cela, [py-qgis-server](https://github.com/3liz/py-qgis-server) est utilisé, il permet de définir plusieurs instances sur plusieurs *workers*, améliorant ainsi les performances. De plus certaines variables d'environnement QGIS sont directement exposées, voici celles qui sont actuellement activées sur OSM DATA lors de l'initialisation d'un projet :
 
@@ -294,7 +293,7 @@ Cependant, nous avons évoqué plus haut qu'à ce jour 139 projets QGIS sont pr�
 
 Après avoir exploré le mécanisme d’ingestion et de diffusion des données par OSM DATA, nous pouvons désormais nous intéresser à ses fonctionnalités récentes, notamment la visualisation des données en 3D. Ce sera l’objectif du prochain article.
 
-[1 : Introduction à OSM Data 3D :fontawesome-solid-forward-step:](./2025-03-03_osm-data-3d-01-introduction/ "Introduction à OSM Data 3D"){: .md-button }
+[1 : Introduction à OSM Data 3D :fontawesome-solid-forward-step:](./2025-03-03_osm-data-3d-01-introduction "Introduction à OSM Data 3D"){: .md-button }
 {: align=middle }
 
 <!-- geotribu:authors-block -->
