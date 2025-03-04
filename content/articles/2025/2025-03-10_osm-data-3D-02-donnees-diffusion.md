@@ -71,7 +71,7 @@ Une fois le fichier interprété avec succès et le `GeoDataFrame` créé, deux 
 
 Dans le cadre d'une mise à jour du jeu de données, on vérifie également la conformité du type de géométrie entre les données sources et les données de mise à jour. Si ce n'est pas le cas, le jeu de données de mise à jour est considéré invalide (sa définition/symbologie dans QGIS dépendant du type de géométrie du jeu de données source).
 
-- Présence d'entités au sein du fichier  :
+- Présence d'entités au sein du fichier :
 
     ```python title="Vérification que le fichier n'est pas vide"
     # Vérification que le fichier n'est pas vide
