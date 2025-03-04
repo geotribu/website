@@ -196,7 +196,7 @@ La création d'un projet QGIS permet, à partir des données stockées dans la b
 
 Techniquement, c'est beau, très beau, trop beau... et vous n'êtes certainement pas amoureux de [Brad Pitt](https://www.marieclaire.fr/anne-escroquee-par-un-faux-brad-pitt-un-porte-parole-de-l-acteur-s-exprime-apres-l-arnaque-de-830-000-euros,1487356.asp) donc oui il y a quelques contraintes !
 
-QGIS est avant tout un logiciel *desktop* donc en l'ouvrant , il initialise par défaut son environnement avec l'ensemble des dépendances qu'il juge nécessaires à une utilisation *desktop*. Compte tenu de notre utilisation, certaines contraintes sont soient superflues, soient limitantes en termes de performance, il est donc nécessaire de paramétrer les variables d'environnement afin de désactiver le lancement de certaines fonctionnalités (voir ci-dessous *Diffusion des flux OGC WMS/WFS)*).
+QGIS est avant tout un logiciel *desktop* donc en l'ouvrant, il initialise par défaut son environnement avec l'ensemble des dépendances qu'il juge nécessaires à une utilisation *desktop*. Compte tenu de notre utilisation, certaines contraintes sont soient superflues, soient limitantes en termes de performance, il est donc nécessaire de paramétrer les variables d'environnement afin de désactiver le lancement de certaines fonctionnalités (voir ci-dessous *Diffusion des flux OGC WMS/WFS)*).
 
 Aussi, si on considère le lancement d'un projet ne contenant qu'une couche, l'initialisation peut être rapide, lorsque le projet dispose de 350 couches, c'est moins évident.
 
