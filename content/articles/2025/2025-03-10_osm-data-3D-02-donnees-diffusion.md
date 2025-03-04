@@ -8,7 +8,7 @@ categories:
     - article
 comments: true
 date: 2025-03-10
-description: Cet article présente les mécanisme d'ingestion de données dans OSM DATA jusqu'à leur diffusion en flux WFS/WMS.
+description: "OSM DATA 3D : mécanismes d'ingestion de données jusqu'à leur diffusion en flux WFS/WMS."
 icon: material/emoticon-happy-outline
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/parcours_des_donnees_avant_visualisation_400.png
 license: default
