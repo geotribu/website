@@ -81,7 +81,7 @@ Dans le cadre d'une mise à jour du jeu de données, on vérifie également la c
 
 Une fois ces vérification effectuées, on prépare la connexion à la base de données avec `SQLAlchemy` :
 
-```python title="Connection à la base de données avec SQLAlchemy"
+```python title="Connexion à la base de données avec SQLAlchemy"
 # Connexion à la base de données
 from sqlalchemy import create_engine
 engine = create_engine("postgresql://{db_user}:{db_password}@{db_host}{db_port}/{db_name}")
