@@ -36,7 +36,7 @@ Dans l'article précédent, nous avons présenté les différentes possibilités
 Pour rappel, quatre étapes principales permettent l'affichage des données :
 
 1. La définition puis la validation de la conformité des fichiers / requêtes SQL
-2. L'intégration en base de données des données sous forme de table ou de vues dématérialisées
+2. L'intégration en base de données des données sous forme de table ou de vues matérialisées
 3. La création d'un projet QGIS et la définition de la symbologie associée à chaque couche
 4. La création des flux WMS et WFS à l'aide des projets QGIS créé
 
@@ -74,7 +74,7 @@ Dans le cadre d'une mise à jour du jeu de données, on vérifie également la c
 
     ```python title="Vérification que le fichier n'est pas vide"
     # Vérification que le fichier n'est pas vide
-    if len(gpdSource.empty is False :
+    if gpdSource.empty is False :
         raise Exception("Votre fichier ne contient aucune donnée :(")
     ```
 
@@ -83,7 +83,7 @@ Une fois ces vérification effectuées, on prépare la connexion à la base de d
 ```python title="Connexion à la base de données avec SQLAlchemy"
 # Connexion à la base de données
 from sqlalchemy import create_engine
-engine = create_engine("postgresql://{db_user}:{db_password}@{db_host}{db_port}/{db_name}")
+engine = create_engine("postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")
 ```
 
 Enfin, l'importation en base de données est réalisé à l'aide de la commande `to_postgis` :
