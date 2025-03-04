@@ -293,7 +293,7 @@ Cependant, nous avons évoqué plus haut qu'à ce jour 139 projets QGIS sont pr�
 
 Après avoir exploré le mécanisme d’ingestion et de diffusion des données par OSM DATA, nous pouvons désormais nous intéresser à ses fonctionnalités récentes, notamment la visualisation des données en 3D. Ce sera l’objectif du prochain article.
 
-[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+[1 : Introduction à OSM Data 3D :fontawesome-solid-forward-step:](./2025-03-03_osm-data-3d-01-introduction/ "Introduction à OSM Data 3D"){: .md-button }
 {: align=middle }
 
 <!-- geotribu:authors-block -->
