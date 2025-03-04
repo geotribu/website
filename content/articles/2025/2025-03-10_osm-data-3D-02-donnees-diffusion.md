@@ -229,7 +229,6 @@ path_to_qgis_project = "projet" + "_" + str(int({nombre_total_de_couches_existan
 project = QgsProject()
 project.read(path_to_qgis_project)
 project.write()
-
 ```
 
 Si le projet existe déja il est utilisé, et s'il n'existe pas, le projet est créé.
