@@ -165,7 +165,7 @@ WHERE ( B.railway='station' AND B.tags->'station'='subway' )
 LIMIT 1
 ```
 
-En l'absence d'erreurs, une vue matérialisée dans PostgreSQL est créée. Les données d'une vue sont toujours à jour, car elles sont directement dérivées des tables sources chaque fois qu'on y accède. Les vues matérialisées offrent un mécanisme puissant pour améliorer les performances des requêtes en pré-calculant et en stockant le jeu de résultats d'une requête sous forme de table physique.
+En l'absence d'erreurs, une vue matérialisée est créée dans PostgreSQL. Les données d'une vue sont toujours à jour, car elles sont directement dérivées des tables sources chaque fois qu'on y accède. Les vues matérialisées offrent un mécanisme puissant pour améliorer les performances des requêtes en pré-calculant et en stockant le jeu de résultats d'une requête sous forme de table physique.
 
 Pour OSM DATA, les requêtes peuvent faire appel à des milliers d'entités, résultant de plusieurs tables sous-jacentes, des conditions sur des champs indexés (ou non) et qui sont mises à jour une seule fois par jour. Pour toutes ces raisons, les vues matérialisées semblent être l'option la plus approriée pour notre solution.
 
