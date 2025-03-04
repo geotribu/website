@@ -45,7 +45,7 @@ Pour rappel, quatre étapes principales permettent l'affichage des données :
 
 ## Définition et validation de la conformité des fichiers / requêtes SQL
 
-Dans l'article précédent, le module d'ajout des données est brièvement présenté, une fonction (optionnelle) de définition du type de géométrie est aussi incluse. Pour s'assurer d'une intégration dans les meilleures conditions, seul un type de géométrie est considéré pour chaque ajout.
+Dans l'article précédent, le module d'ajout des données est brièvement présenté, une fonction (optionnelle) de définition du type de géométrie est aussi incluse. Pour s'assurer d'une intégration dans les meilleures conditions, un seul type de géométrie est considéré pour chaque ajout.
 
 ![Ajout d'un jeu de données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/creation_nouvelle_source.png){: .img-center loading=lazy }
 
