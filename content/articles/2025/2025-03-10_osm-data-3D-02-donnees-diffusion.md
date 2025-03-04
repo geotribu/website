@@ -285,7 +285,7 @@ Au besoin, un dernier article peut compléter cette série pour expliciter davan
 
 ## Diffusion des flux OGC WMS/WFS
 
-Pour utiliser QGIS Server, rien de plus simple ! Il suffit d'enregistrer le projet QGIS dans un dossier et cet [article](https://geotribu.fr/articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis/#test-du-service-wms) détaille les étapes d'exploitation de ce dossier pour créer les flux OGC.
+Pour utiliser QGIS Server, rien de plus simple ! Il suffit d'enregistrer le projet QGIS dans un dossier et [cet article](https://geotribu.fr/articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis/) détaille les étapes d'exploitation de ce dossier pour créer les flux OGC.
 
 Cependant, nous avons évoqué plus haut qu'à ce jour 139 projets QGIS sont présents. Une seule instance QGIS ne peut pas gérer l'ensemble de ces données de manière efficace. Pour cela, [py-qgis-server](https://github.com/3liz/py-qgis-server) est utilisé, il permet de définir plusieurs instances sur plusieurs *workers*, améliorant ainsi les performances. De plus certaines variables d'environnement QGIS sont directement exposées, voici celles qui sont actuellement activées sur OSM DATA lors de l'initialisation d'un projet :
 
