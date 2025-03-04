@@ -51,7 +51,7 @@ Dans l'article précédent, le module d'ajout des données est brièvement prés
 
 ### A partir d'un fichier SIG
 
-Pour l'ajout de fichiers SIG avec Geopandas, la première étape est de créer un `GeoDataFrame` à partir des données :
+Pour l'ajout de fichiers SIG avec GeoPandas, la première étape est de créer un `GeoDataFrame` à partir des données :
 
 ```python title="Import d'un fichier SIG avec GeoPandas"
 # Importation du fichier SIG
