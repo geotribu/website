@@ -101,7 +101,7 @@ gpdSource.to_postgis(
 
 La couche est insérée en base de données ! :fireworks:
 
-### A partir d'une requête SQL
+### À partir d'une requête SQL
 
 En ce qui concerne l'ajout d'un jeu de données à partir d'une requête QSL, on considère qu'une base de données est fournie avec des données d'OpenStreetMap par le biais d' OSM2PGSQL, un article détaille la procédure [ici](https://geotribu.fr/articles/2022/2022-06-28_import-donnees-osm-postgresql-osm2pgsql-osmium/).
 
