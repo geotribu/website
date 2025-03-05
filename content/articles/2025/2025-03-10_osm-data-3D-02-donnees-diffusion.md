@@ -284,7 +284,7 @@ Au besoin, un dernier article peut compléter cette série pour expliciter davan
 
 ## Diffusion des flux OGC WMS/WFS
 
-Pour utiliser QGIS Server, rien de plus simple ! Il suffit d'enregistrer le projet QGIS dans un dossier et [cet article](./2010-09-03_creer_diffuser_services_wms_avec_qgis) détaille les étapes d'exploitation de ce dossier pour créer les flux OGC.
+Pour utiliser QGIS Server, rien de plus simple ! Il suffit d'enregistrer le projet QGIS dans un dossier et [cet article](../2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md) détaille les étapes d'exploitation de ce dossier pour créer les flux OGC.
 
 Cependant, nous avons évoqué plus haut qu'à ce jour 139 projets QGIS sont présents. Une seule instance QGIS ne peut pas gérer l'ensemble de ces données de manière efficace. Pour cela, [py-qgis-server](https://github.com/3liz/py-qgis-server) est utilisé, il permet de définir plusieurs instances sur plusieurs *workers*, améliorant ainsi les performances. De plus certaines variables d'environnement QGIS sont directement exposées, voici celles qui sont actuellement activées sur OSM DATA lors de l'initialisation d'un projet :
 
@@ -293,7 +293,7 @@ Cependant, nous avons évoqué plus haut qu'à ce jour 139 projets QGIS sont pr�
 
 Après avoir exploré le mécanisme d’ingestion et de diffusion des données par OSM DATA, nous pouvons désormais nous intéresser à ses fonctionnalités récentes, notamment la visualisation des données en 3D. Ce sera l’objectif du prochain article.
 
-[1 : Introduction à OSM Data 3D :fontawesome-solid-forward-step:](./2025-03-03_osm-data-3d-01-introduction "Introduction à OSM Data 3D"){: .md-button }
+[1 : Introduction à OSM Data 3D :fontawesome-solid-forward-step:](./2025-03-03_osm-data-3D-01-introduction.md "Introduction à OSM Data 3D"){: .md-button }
 {: align=middle }
 
 <!-- geotribu:authors-block -->
