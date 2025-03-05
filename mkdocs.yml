@@ -115,7 +115,10 @@ theme:
     - content.footnote.tooltips
     - content.tabs.link
     - content.tooltips
+    - navigation.instant
+    - navigation.instant.prefetch
     - navigation.instant.preview
+    - navigation.instant.progress
     - navigation.path
     - navigation.prune
     - navigation.tabs
