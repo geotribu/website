@@ -9,7 +9,7 @@ categories:
 comments: true
 date: 2025-03-03
 description: Cet article présente la plateforme OSM DATA et sa nouvelle version en 3D
-icon: material/emoticon-happy-outline
+icon: simple/openstreetmap
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/vignette.png
 license: default
 robots: index, follow
