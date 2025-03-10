@@ -31,7 +31,7 @@ tags:
 
 ## Introduction
 
-Dans l'article précédent, nous avons présenté les différentes possibilités d'ajout de données à OSM DATA. L'objet de cet article est d'expliciter techniquement les mécanismes mis en place pour ajouter les données.
+Dans l'article précédent, nous avons présenté les différentes possibilités d'ajout de données à [OSM DATA](https://demo.openstreetmap.fr/map?profil=1&layers=8,15,layer;3,15,layer;253,11,layer;396,11,layer;36,11,layer;519,16,layer&pos=259312,6253359,260.6,258894.7,6253800.6,0). L'objet de cet article est d'expliciter techniquement les mécanismes mis en place pour ajouter les données.
 
 Pour rappel, quatre étapes principales permettent l'affichage des données :
 
