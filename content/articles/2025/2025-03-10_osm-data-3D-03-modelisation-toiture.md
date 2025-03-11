@@ -76,7 +76,7 @@ Considérons le [bâtiment suivant](https://www.openstreetmap.org/way/822290992)
 Le `GeoJSON` de ce bâtiment est :
 
 ??? "GeoJSON du bâtiment exemple"
-    ```json=GeoJSON du bâtiment exemple
+    ```json title="GeoJSON du bâtiment exemple"
     {
         "type": "Feature",
         "geometry": {
@@ -177,7 +177,7 @@ En considérant le squelette droit précédemment créé, on peut donc décompos
 Ci-dessous, l'écriture de ces quatre polygones au format `JSON`, chacun avec un somment de début et un sommet de fin de polygone :
 
 ??? "Les 4 polygones associées au squelette droit"
-    ```json=Les 4 polygones associées au squelette droit
+    ```json title="Les 4 polygones associées au squelette droit"
     {
         "polygons": [
             {
