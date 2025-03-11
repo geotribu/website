@@ -67,7 +67,7 @@ OpenStreetMap étant une base de données d'emprise mondiale, il nous semble plu
 
 ## Exemple de modélisation
 
-Pour faciliter la compréhension, nous utilisons un exemple pour présenter l'ensemble du processus de modélisation 3D.
+Pour faciliter la compréhension, utilisons un exemple pour présenter l'ensemble du processus de modélisation 3D.
 
 Considérons le [bâtiment suivant](https://www.openstreetmap.org/way/822290992) dans OpenStreetMap (oui oui ce bâtiment est présent dans l'Opéra Garnier) :
 
