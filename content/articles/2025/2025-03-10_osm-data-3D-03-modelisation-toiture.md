@@ -45,7 +45,7 @@ Pour ce processus, nous utilisons la table `planet_osm_polygon` dans laquelle no
 - La [hauteur du bâtiment par rapport au sol *min_height*](https://wiki.openstreetmap.org/wiki/Key:min_height) définie entre le point le plus bas du bâtiment et le point projeté au sol.
 - La [hauteur du point le plus haut du bâtiment par rapport au sol *height*](https://wiki.openstreetmap.org/wiki/Key:height) définie entre le point le plus haut du bâtiment et le point projeté au sol.
 - Le [type de toiture](https://wiki.openstreetmap.org/wiki/Key:roof:shape) définissant la forme du toit.
-- La [texture](https://wiki.openstreetmap.org/wiki/Key:roof:material) caractérisant les matériaux du toit et/ou de la facade.
+- La [texture](https://wiki.openstreetmap.org/wiki/Key:roof:material) caractérisant les matériaux du toit et/ou de la façade.
 
 ![Hauteur du toit et hauteur par rapport au sol](https://wiki.openstreetmap.org/w/images/thumb/4/49/Cottage_on_a_chicken_foot_3D_height_definition.jpg/473px-Cottage_on_a_chicken_foot_3D_height_definition.jpg?20120330080948){: .img-center loading=lazy }
 
@@ -145,7 +145,7 @@ Pour réaliser la toiture, trois étapes sont nécessaires :
 
 Pour réaliser cette transformation, nous nous appuyons sur la bibliothèque [CGAL](https://www.cgal.org/).
 
-## Déterminsation du squelette droit (*straight skeleton*)
+## Détermination du squelette droit (*straight skeleton*)
 
 La construction d'un squelette droit permet de définir, à partir de l'emprise d'un polygone, la version la plus fine d'un polygone jusqu'à l'obtention d'un ou plusieurs axes médians. Si vous n'avez rien compris, c'est normal, on essaye d'une autre manière : imaginez qu'un polygone (rectangle pour faire facile) se rétracte progressivement comme si ses bords brûlaient uniformément vers l'intérieur. Les lignes tracées par les sommets qui se déplacent pendant cette "rétraction" forment le squelette droit. Si vous n'avez toujours rien compris, c'est encore normal, rendez-vous sur [Wikipedia](https://en.wikipedia.org/wiki/Straight_skeleton) pour les bilingues.  
 
@@ -294,11 +294,11 @@ Afin d'obtenir un toit à pignon, nous souhaitons atteindre le résultat suivant
 
 Ainsi, il faut supprimer les polygones roses et modifier les sommets des polygones verts en deux étapes :
 
-1. Modification des sommets des deux polygones verts : projection orthogonale des sommets intérieurs sur la base des triangles roses.
+- Modification des sommets des deux polygones verts : projection orthogonale des sommets intérieurs sur la base des triangles roses.
 
 ![Projection orthogonale des sommets intérieurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_3/projection_skeleton_droit.png){: .img-center loading=lazy }
 
-1. Suppression des triangles roses
+- Suppression des triangles roses
 
 Ces deux actions peuvent être faites de manières simultanées (à voir dans l'onglet `TypeScript`) :
 
@@ -312,12 +312,12 @@ Notre squelette maintenant adapté au type de toit, il faut affecter une hauteur
 
 ## Ajout de la hauteur à chaque sommet du squelette
 
-Pour réprésenter les polygones en WebGL (et donc avec Three.js et Giro3D), il convient de réaliser un réseau de triangles irréguliers (*Triangle Irregular Network*, TIN) à partir du squelette modifié. Les triangles disposent des avantages suivants :
+Pour représenter les polygones en WebGL (et donc avec Three.js et Giro3D), il convient de réaliser un réseau de triangles irréguliers (*Triangle Irregular Network*, TIN) à partir du squelette modifié. Les triangles disposent des avantages suivants :
 
-- Les triangles sont la forme polygonale la plus simple, définie par seulement trois sommets. Ils réprésentent une surface toujours plane quelle que soit la position des sommets.
+- Les triangles sont la forme polygonale la plus simple, définie par seulement trois sommets. Ils représentent une surface toujours plane quelle que soit la position des sommets.
 - Tout polygone, aussi complexe soit-il, peut être décomposé en un ensemble de triangles.
 
-La triangulation est réalisée avec la bibliothèque JS [Earcut](https://github.com/mapbox/earcut) pour obtenir la géométrie ci-dessous : Chaque polygone est réprésenté par deux triangles.
+La triangulation est réalisée avec la bibliothèque JS [Earcut](https://github.com/mapbox/earcut) pour obtenir la géométrie ci-dessous : Chaque polygone est représenté par deux triangles.
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="Triangulation de la géométrie de notre toiture" src="https://codepen.io/TANK2003/embed/azoVzVa?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   Allez sur le codepen <a href="https://codepen.io/TANK2003/pen/azoVzVa">
@@ -349,7 +349,7 @@ Dans notre cas, la formule ci-dessous est égale à :
 
 $Zi = 58 - 10 + 10 * (Dmax / Di) = 48 + 10 * (Dmax / Di)$
 
-La même schéma mais en 3D pour une meilleure réprésenation de `Dmax`:
+La même schéma mais en 3D pour une meilleure représentation de `Dmax`:
 
 ![Représentation du Dmax](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_3/representation_dmax.png){: .img-center loading=lazy }
 
