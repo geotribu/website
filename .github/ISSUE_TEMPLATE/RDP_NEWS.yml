@@ -73,11 +73,11 @@ body:
       placeholder: "@geotribu@mapstodon.space"
 
   - type: input
-    id: in_author_twitter
+    id: in_author_bluesky
     attributes:
-      label: Compte Twitter
-      description: Qui citer au moment de la diffusion sur Twitter
-      placeholder: "@geotribu"
+      label: Compte Bluesky
+      description: Qui citer au moment de la diffusion sur Bluesky
+      placeholder: "@geotribu@bsky.social"
 
   - type: markdown
     attributes:
