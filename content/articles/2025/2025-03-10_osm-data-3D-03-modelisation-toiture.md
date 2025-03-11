@@ -8,29 +8,29 @@ categories:
     - article
 comments: true
 date: 2025-03-18
-description: "OSM DATA 3D : des données en deux dimensions, à leurs représentation en 3D"
-icon: material/material-video-3d
+description: "OSM DATA 3D : des données 2D à leur représentation en 3D"
+icon: material/video-3d
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_3/miniature.png
 license: default
 robots: index, follow
 tags:
-    - OpenStreetMap
+    - CGAL
+    - MapBox
+    - Modélisation 3D
     - OpenLayers
+    - OpenStreetMap
+    - Straight skeleton
     - Three.js
     - WebGL
-    - Modélisation 3D
-    - Straight skeleton
-    - CGAL
-    - earcut.js
 ---
 
-# OSM DATA V2 : De la visualisation cartographique à la scène 3D
+# OSM DATA V2 : de la visualisation cartographique à la scène 3D
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
 
-Dans l'article précédent, le processus de gestion des données SIG a été présenté afin de définir des flux cartographiques WMS et WFS. Ces flux permettent d'exposer des données en 2D, mais comment est générée la visualisation 3D avec [OSM DATA](https://demo.openstreetmap.fr/map?profil=1&layers=8,15,layer;3,15,layer;253,11,layer;396,11,layer;36,11,layer;519,16,layer&pos=259312,6253359,260.6,258894.7,6253800.6,0)?
+Dans [l'article précédent](./2025-03-10_osm-data-3D-02-donnees-diffusion.md), le processus de gestion des données SIG a été présenté afin de définir des flux cartographiques WMS et WFS. Ces flux permettent d'exposer des données en 2D, mais comment est générée la visualisation 3D avec [OSM DATA](https://demo.openstreetmap.fr/map?profil=1&layers=8,15,layer;3,15,layer;253,11,layer;396,11,layer;36,11,layer;519,16,layer&pos=259312,6253359,260.6,258894.7,6253800.6,0)?
 
 De manière simple, les géométries `Point`, `Polyline`, `Polygon` peuvent être représentées en 3D en renseignant l'altitude dans la géométrie (`PointZ`, `PolylineZ`, `PolygonZ`) ou alors à l'aide d'une valeur attributaire définie pour chaque entité.
 
@@ -124,7 +124,7 @@ L'objectif est d'arriver au résultat suivant :
 
 ![Objectif batiment 3D](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_3/objectif_batiment_3D.png){: .img-center loading=lazy }
 
-Pour le reste de l'article, à des fins de simplification, les visualisations 3D sont affichées sous Three.js. Dans le dernier article, nous présentons la vissualisation avec Giro3D dans OSM DATA.
+Pour le reste de l'article, à des fins de simplification, les visualisations 3D sont affichées sous Three.js. Dans le dernier article, nous présentons la visualisation avec Giro3D dans OSM DATA.
 
 ## Création de la toiture
 
@@ -371,7 +371,7 @@ Nous avons déterminé $Dmax$ pour notre exemple, sa valeur est de 28.85 m. La f
 
 Dans ce troisième article, nous avons construit la toiture d’un bâtiment issu d’OpenStreetMap. Les principales étapes sont la génération du squelette droit, sa correction éventuelle, la triangulation et la détermination de la hauteur de chaque sommet. Dans le prochain article, nous présentons la génération des façades afin de produire le modèle géométrique 3D complet du bâtiment.
 
-[2 : Des données à la cartographie :fontawesome-solid-forward-step:](./2025-03-10_osm-data-3D-02-donnees-diffusion.md "Des données à la cartographie"){: .md-button }
+[2 : Des données à la cartographie :fontawesome-solid-backward-step:](./2025-03-10_osm-data-3D-02-donnees-diffusion.md "Des données à la cartographie"){: .md-button }
 {: align=middle }
 
 <!-- geotribu:authors-block -->
