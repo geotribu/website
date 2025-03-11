@@ -312,7 +312,7 @@ Notre squelette maintenant adapté au type de toit, il faut affecter une hauteur
 
 ## Ajout de la hauteur à chaque sommet du squelette
 
-Pour représenter les polygones en WebGL (et donc avec Three.js et Giro3D), il convient de réaliser un réseau de triangles irréguliers (*Triangle Irregular Network*, TIN) à partir du squelette modifié. Les triangles disposent des avantages suivants :
+Pour représenter les polygones en WebGL (et donc avec Three.js et Giro3D), il convient de réaliser un réseau triangulé irrégulier (*Triangulated Irregular Network*, TIN) à partir du squelette modifié. Les triangles disposent des avantages suivants :
 
 - Les triangles sont la forme polygonale la plus simple, définie par seulement trois sommets. Ils représentent une surface toujours plane quelle que soit la position des sommets.
 - Tout polygone, aussi complexe soit-il, peut être décomposé en un ensemble de triangles.
