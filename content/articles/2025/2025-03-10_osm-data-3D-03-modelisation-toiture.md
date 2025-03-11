@@ -30,7 +30,7 @@ tags:
 
 ## Introduction
 
-Dans [l'article précédent](./2025-03-10_osm-data-3D-02-donnees-diffusion.md), le processus de gestion des données SIG a été présenté afin de définir des flux cartographiques WMS et WFS. Ces flux permettent d'exposer des données en 2D, mais comment est générée la visualisation 3D avec [OSM DATA](https://demo.openstreetmap.fr/map?profil=1&layers=8,15,layer;3,15,layer;253,11,layer;396,11,layer;36,11,layer;519,16,layer&pos=259312,6253359,260.6,258894.7,6253800.6,0)?
+Dans [l'article précédent](./2025-03-10_osm-data-3D-02-donnees-diffusion.md), le processus de gestion des données SIG a été présenté afin de définir des flux cartographiques WMS et WFS. Ces flux permettent d'exposer des données en 2D, mais comment est générée la visualisation 3D avec [OSM DATA](https://demo.openstreetmap.fr/map?profil=1&layers=8,15,layer;3,15,layer;253,11,layer;396,11,layer;36,11,layer;519,16,layer&pos=259312,6253359,260.6,258894.7,6253800.6,0) ?
 
 De manière simple, les géométries `Point`, `Polyline`, `Polygon` peuvent être représentées en 3D en renseignant l'altitude dans la géométrie (`PointZ`, `PolylineZ`, `PolygonZ`) ou alors à l'aide d'une valeur attributaire définie pour chaque entité.
 
