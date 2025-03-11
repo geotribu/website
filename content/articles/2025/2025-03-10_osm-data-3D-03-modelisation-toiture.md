@@ -361,7 +361,7 @@ Pour déterminer la valeur $Dmax$, on analyse tous les polygones par itération 
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-Nous avons déterminé $Dmax$ pour notre exemple, sa valeur est de 28.85 m. La formule ci-dessus est utilisée afin de déterminer chaque hauteur de sommet. On peut alors visualiser notre toiture en 3D à l'aide de Three.js (n'hésitez pas à bouger la scène avec votre souris :mouse2:)
+Nous avons déterminé $Dmax$ pour notre exemple, sa valeur est de 28.85 m. La formule ci-dessus est utilisée afin de déterminer chaque hauteur de sommet. On peut alors visualiser notre toiture en 3D à l'aide de Three.js (n'hésitez pas à bouger la scène avec votre souris :mouse2:).
 
 <iframe height="500" style="width: 100%;" scrolling="no" title="Affectation de l'altitude à chaque sommet des triangles" src="https://codepen.io/TANK2003/embed/YPKELWd?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/TANK2003/pen/YPKELWd">
