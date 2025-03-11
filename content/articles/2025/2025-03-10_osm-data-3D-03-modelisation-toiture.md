@@ -335,7 +335,7 @@ Dans le cas de notre polygone, la détermination des hauteurs est assez simple c
 
 Dans le cas de toitures plus complexes et à des fins d'industrialisation de la solution, nous avons défini une formule de détermination générale de la hauteur pour chaque point de notre géométrie. Soit le point i, son altitude est définie de la manière suivante :
 
-$Zi = *height* - *roof:height* + *roof:height* * (Dmax / Di)$
+$Zi = height - roof:height + roof:height * (Dmax / Di)$
 
 Avec :
 
