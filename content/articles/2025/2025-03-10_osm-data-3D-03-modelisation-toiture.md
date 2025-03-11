@@ -58,7 +58,7 @@ Avec l'ensemble de ces informations, il est donc possible de reconstruire le bâ
 Cet article aborde la création de la toiture, le prochain article présente la génération des façades.
 En modélisation 3D, la notion de *Level Of Detail* (LOD) est importante et caractérise le niveau de représentation géométrique d'un objet, il s'appuie sur l'une des normes suivantes :
 
-- [BIM Forum](https://bimforum.org/bimforum-level-of-development-lod-specification-2024-in-english-and-spanish-language-version/), essentiellement utilisée dans le cadre de projets *Building Information Modeling* (BIM)
+- [BIMForum](https://bimforum.org/bimforum-level-of-development-lod-specification-2024-in-english-and-spanish-language-version/), essentiellement utilisée dans le cadre de projets *Building Information Modeling* (BIM)
 - [CityGML](https://www.ogc.org/publications/standard/citygml/), largement répandue dans la création de socles 3D territoriaux
 
 OpenStreetMap étant une base de données d'emprise mondiale, il nous semble plus pertinent d'utiliser la norme CityGML pour définir le niveau de détail. Dans OSM DATA, le niveau de détail est équivalent à celui d'un **LOD2**.
