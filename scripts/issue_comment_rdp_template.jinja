@@ -20,7 +20,9 @@ A ajouter dans l'en-tête :
 {{ tx_news_content}}
 
 !!! info "Contribution externe"
-    Cette news est proposée par {{ in_author_name }} via [le formulaire GitHub renouvelé](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml) : [voir le ticket](https://github.com/geotribu/website/issues/{{ issue_id }}). Merci !
+Cette news est proposée par {{ in_author_name }} via [le formulaire GitHub
+renouvelé](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml)
+: [voir le ticket](https://github.com/geotribu/website/issues/{{ issue_id }}). Merci !
 ```
 
 ## Ajouter cette news à la RDP
@@ -28,32 +30,36 @@ A ajouter dans l'en-tête :
 > Volet réservé à un ayant-droit de commit sur le dépôt
 
 - [ ] tenir compte de l'éventuel commentaire libre
-- [ ] [optimiser](https://tinypng.com/) puis [téléverser](https://contribuer.geotribu.fr/guides/cdn-images-hebergement/) l'éventuelle illustration sur le CDN et l'intégrer dans le corps du texte avec les balises `{ .img-center loading=lazy }`
-- [ ] référencer ce ticket (_issue_) dans la section _Development_ de la _Pull Request_ de la revue de presse (en bas à droite dans l'interface de la page de la PR)
+- [ ] [optimiser](https://tinypng.com/) puis [téléverser](https://contribuer.geotribu.fr/guides/cdn-images-hebergement/)
+l'éventuelle illustration sur le CDN et l'intégrer dans le corps du texte avec les balises `{ .img-center loading=lazy
+}`
+- [ ] référencer ce ticket (_issue_) dans la section _Development_ de la _Pull Request_ de la revue de presse (en bas à
+droite dans l'interface de la page de la PR)
 - [ ] peaufiner la description et le texte de remplacement de la vignette
 
 ### Commande Git pour garantir l'attribution
 
 ```sh
-git commit --author="{{ in_author_name }} <{{ in_author_mail }}>" --message="Ajout news {{ in_news_title }} par @{{ issue_author }}. Close #{{ issue_id }}"
-```
+git commit --author="{{ in_author_name }} <{{ in_author_mail }}>" --message="Ajout news {{ in_news_title }} par @{{
+    issue_author }}. Close #{{ issue_id }}"
+    ```
 
-### Diffusion
+    ### Diffusion
 
-#### LinkedIn
+    #### LinkedIn
 
-```txt
-{{ in_author_linkedin }}
-```
+    ```txt
+    {{ in_author_linkedin }}
+    ```
 
-#### Mastodon
+    #### Mastodon
 
-```txt
-{{ in_author_mastodon }}
-```
+    ```txt
+    {{ in_author_mastodon }}
+    ```
 
-#### Twitter
+    #### Bluesky
 
-```txt
-{{ in_author_twitter }}
-```
+    ```txt
+    {{ in_author_bluesky }}
+    ```
