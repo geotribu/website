@@ -16,7 +16,7 @@ tags:
     - DEM
     - QGIS
     - relief
-    - three.js
+    - Three.js
 ---
 
 # Faire une carte en relief des Écrins

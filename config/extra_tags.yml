@@ -56,6 +56,7 @@ tags:
   LIDAR: satellite
   livre: atlas
   Linux: pingouin
+  MapBox: mapbox
   Mapillary: streetview
   MapLibre: maplibre
   Markdown: markdown
@@ -69,6 +70,7 @@ tags:
   OGR: gdal
   Open Data Kit: telephone
   OpenDroneMap: drone
+  OpenLayers: openlayers
   OpenPathView: streetview
   OpenRouteService: route
   open data: open
@@ -103,9 +105,10 @@ tags:
   routing: route
   SAGA: gemeaux
   SQL: database
-  three.js: js
+  Three.js: threejs
   topologie: vector
   Twitter: twitter
   Ubuntu: ubuntu
+  WebGL: webgl
   Wikipédia: wikipedia
   Windows: windows

@@ -174,9 +174,9 @@ L'idéal est de disposer d'une version d'Android relativement récente.
 
 On vous propose un exemple de [paramétrage NTRIP pour se connecter au réseau collaboratif de bases GNSS RTK centipede](https://docs.centipede.fr/docs/centipede/3_connect_caster.html) qui vise à fournir un signal de correction RTK libre et ouvert afin de disposer d'une précision centimétrique sur un territoire continu :
 
-- Nom du réseau : `caster.centipede.fr`
+- Nom du réseau : `crtk.net`
 - Identifiant et mot de passe : laisser vide ou `centipede` pour les 2 champs
-- Choisir un [point de montage](https://centipede.fr/index.php/view/map/?repository=cent&project=centipede) proche de votre lieu de collecte en consultant la [carte des antennes disponibles](https://centipede.fr/index.php/view/map/?repository=cent&project=centipede).
+- Choisir un [point de montage](https://centipede.fr/index.php/view/map/?repository=cent&project=centipede) proche de votre lieu de collecte en consultant la [carte des antennes disponibles](https://centipede.fr/index.php/view/map/?repository=cent&project=centipede).Vous pouvez aussi définir le point de montage NEAR ( qui trouvera la base la plus proche )
 
 A noter qu'en France, il existe d'autres réseaux de correction propriétaires qui nécessitent un abonnement payant comme le réseau [Orphéon](https://reseau-orpheon.fr) ou encore [Téria](https://www.reseau-teria.com).
 
