@@ -60,6 +60,7 @@ En itérant sur l'ensemble des segments composant le périmètre du bâtiment, o
 WebGL ne pouvant gérer les polygones à plus de trois sommets, une triangulation est réalisée sur chaque façade du bâtiment.
 
 On aurait pu refaire cette manipulation avec [Earcut](https://github.com/mapbox/earcut) mais on a décidé de se compliquer la vie en se rajoutant le défi de réaliser la triangulation. Il faut pour cela construire une série de triangles verticaux de notre façade entre les sommets de notre toiture et leurs projections à hauteur *min_height*.
+
 On considère donc le premier sommet du toit, sa projection et le sommet suivant de la toiture pour définir notre premier triangle. Pour le second triangle, on considère la projection du premier sommet, le second sommet et la projection du second sommet. Ensuite on recommence ce processus itératif pour chaque paire de sommets consécutifs; Enfin, afin de clôturer la géométrie, le dernier sommet est associé au premier sommet du toit, permettant ainsi de générer les triangles de la dernière façade.
 
 Ce traitement permet de s'assurer qu'on obtient des géométries fermées. Si vous n'avez rien compris, c'est normal, passez tous vos sommets de toiture et leurs projections à [Earcut](https://github.com/mapbox/earcut), qui présente en plus l’avantage d’éviter la duplication des sommets grâce à l’utilisation d’un système d’indexation.
