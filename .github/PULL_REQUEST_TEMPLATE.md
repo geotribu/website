@@ -21,7 +21,7 @@ Pour les articles, voir : https://contribuer.geotribu.fr/articles/workflow/#soum
 - [ ] tweeter le lien du fichier de la RDP. Voici ci-dessous un modèle dans lequel :
 
 - remplacer `XXXXXXXXXX` par le lien vers le fichier de la GeoRDP dans la branche créée (par exemple : <https://github.com/geotribu/website/blob/rdp/2021-02-26/content/rdp/2021/rdp_2021-02-26.md?plain=1>)
-- insérer cette image dans le tweet <https://cdn.geotribu.fr/img/internal/contribution/geotribu_contribuer_rdp_github_edit.png>
+- insérer cette image dans le post <https://cdn.geotribu.fr/img/internal/contribution/geotribu_contribuer_rdp_github_edit.png>
 
 ```txt
 Ce vendredi c'est #GeoRDP !
@@ -34,9 +34,9 @@ C'est par ici 👉 XXXXXXXXXX 👈
 Modèle de news ici : https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp_news.md
 ```
 
-Exemple de [tweet](https://twitter.com/geotribu/status/1364625815099613185) :
+Exemple de [post](https://twitter.com/geotribu/status/1364625815099613185) :
 
-![tweet geordp](https://cdn.geotribu.fr/img/internal/contribution/geotribu_rdp_tweet_incitation.png)
+![post geordp](https://cdn.geotribu.fr/img/internal/contribution/geotribu_rdp_tweet_incitation.png)
 
 ----
 
@@ -74,17 +74,9 @@ Exemple de [tweet](https://twitter.com/geotribu/status/1364625815099613185) :
 
 ## Diffuser
 
-### Twitter
+Une fois le déploiement effectué (~ 5-10 minutes), diffuser _a minima_ sur Mastodon & LinkedIn, Bluesky idéalement aussi.
 
-Une fois le déploiement effectué (~ 5 minutes), diffuser a minima sur Twitter :
-
-- avec le hashtag `#GeoRDP`, en citant les contributeur/ices avec leur éventuel compte
-- si possible en intégrant quelques hastags des personne, organisations ou logiciels cités dans la revue de presse
-- de préférence via le compte `@geotribu` en utilisant Tweetdeck.
-
-### LinkedIn
-
-La diffusion sur LinkedIn est à faire avec un compte personnel. Exemple de structure :
+### Exemple de structure d'un post d'annonce de publication
 
 ```txt
 🗞 La #GeoRDP est en ligne :
@@ -95,3 +87,21 @@ La diffusion sur LinkedIn est à faire avec un compte personnel. Exemple de stru
 
 🌍 #Geotribu #veille #géomatique #YYYY @ZZZZ
 ```
+
+### Mastodon
+
+- avec le hashtag `#GeoRDP`, en citant les contributeur/ices avec leur éventuel compte.
+- si possible en intégrant quelques hashtags des personnes, organisations ou logiciels cités dans la revue de presse.
+- de préférence via le compte `@geotribu@mapstodon.space`.
+
+### LinkedIn
+
+La diffusion sur LinkedIn se fait [avec la page de Geotribu](https://www.linkedin.com/company/geotribu). Mêmes modalités que ci-dessus pour Mastodon. Sur LinkedIn il est ceci dit possible d'être plus verbeux, du fait de la limite d'un post fixée à 3000 caractères.
+
+### Bluesky
+
+Mêmes indications que pour Mastodon, via le compte de Geotribu: [`@geotribu@bsky.social`](https://bsky.app/profile/geotribu.bsky.social). Attention, le nombre de caractères est limité à 300 ! Ne pas hésiter à "répondre" au post initial pour créditer tout le monde et/ou lâcher les hashtags.
+
+### ~~Twitter~~
+
+Compte inactif.

@@ -32,6 +32,7 @@ icon:
     institution: fontawesome/solid/building-columns
     js: fontawesome/brands/js
     manette: fontawesome/solid/gamepad
+    mapbox: material/mapbox
     maplibre: simple/maplibre
     markdown: fontawesome/brands/markdown
     masques: fontawesome/solid/masks-theater
@@ -39,6 +40,7 @@ icon:
     meridiens: fontawesome/solid/globe
     oeuf: fontawesome/solid/egg
     open: fontawesome/solid/lock-open
+    openlayers: simple/openlayers
     opensource: material/open-source-initiative
     parquet: simple/apacheparquet
     pingouin: simple/linux
@@ -55,8 +57,10 @@ icon:
     tente: material/tent
     telephone: material/cellphone-marker
     terrain: fontawesome/solid/mountain-city
+    threejs: simple/threedotjs
     twitter: simple/x
     ubuntu: material/ubuntu
     vector: material/vector-polygon
+    webgl: simple/webgl
     wikipedia: material/wikipedia
     windows: fontawesome/brands/windows
