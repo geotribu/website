@@ -38,7 +38,7 @@ L'objectif ici est donc de reconstruire les polygones comme celui présenté en 
 
 ## Création des façades
 
-Pour rappel, voici les informations importantes de nôtre bâtiment exemple de l'article précédent :
+Pour rappel, voici les informations importantes de notre bâtiment exemple de l'article précédent :
 
 - Hauteur de la toiture : 10 m.
 - Hauteur du bâtiment par rapport au sol : 31 m.
