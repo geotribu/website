@@ -79,7 +79,7 @@ function createWallTriangles(positions: Array<Vector3>) {
     postionsResult.push(B); // B
     postionsResult.push(new Vector3(A.x, A.y, minHeight)); // A'
 
-    // Triangle A',B,B'
+    // Triangle A', B, B'
     postionsResult.push(new Vector3(A.x, A.y, minHeight)); // A'
     postionsResult.push(B); // B
     postionsResult.push(new Vector3(B.x, B.y, minHeight)); // B'
