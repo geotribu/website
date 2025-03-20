@@ -47,7 +47,7 @@ Pour rappel, voici les informations importantes de notre bâtiment exemple de l'
 
 Les façades correspondent à des polygones produits à l'aide des sommets de la toiture et de leurs projections sur une surface de référence de hauteur constante *min_height*, 31 m dans notre exemple.
 
-Sur l'image ci dessous, les sommets A ($Ax$, $Ay$, $Az$), B ($Bx$, $By$, $Bz$) et C ($Cx$, $Cy$, $Cz$) correspondent aux sommets de notre toiture. Les coordonnées des sommets projetés sont définis de la manière suivante :
+Sur l'image ci dessous, les sommets A ($Ax$, $Ay$, $Az$), B ($Bx$, $By$, $Bz$) et C ($Cx$, $Cy$, $Cz$) correspondent aux sommets de notre toiture. Les coordonnées des sommets projetés sont définies de la manière suivante :
 
 - A'($Ax$, $Ay$, *min_height*)
 - B'($Bx$, $By$, *min_height*)
