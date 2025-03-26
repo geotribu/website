@@ -229,6 +229,7 @@ http {
         }
     }
 }
+
 ```
 
 Il faut ensuite rédiger un fichier de configuration pour l'outil `docker compose`, afin de décrire notre application multi-conteneurs:
@@ -256,7 +257,6 @@ services:
 
 !!! warning
     Les scripts de configuration ci-dessus sont volontairement simplifiés pour la compréhension du lecteur mais ne doivent pas être utilisés en production :bomb:
-
 
 Il reste finalement à exécuter nos conteneurs grâce à la commande `docker-compose` qui va automatiquement lire le fichier de configuration nommé `docker-compose.yml` présent dans le répertoire courant:
 
@@ -313,7 +313,6 @@ countries.1,1,Antigua and Barbuda
 L'image Docker officielle de QGIS Server simplifie considérablement le déploiement de cette solution serveur cartographique, offrant une configuration prête à l'emploi et facilement adaptable. Grâce à Docker, il devient facile de déployer QGIS Server de manière portable et isolée, sans se soucier des dépendances complexes telles que les serveurs graphiques ou Web.
 
 En intégrant `NGINX`, `Xvfb` et `FastCGI`, l'image permet de faire fonctionner QGIS Server de manière fluide dans un environnement conteneurisé. Elle offre aussi la possibilité d'utiliser un serveur Web externe, comme NGINX, pour séparer les fonctions et mieux contrôler les configurations.
-
 
 <!-- geotribu:authors-block -->
 
