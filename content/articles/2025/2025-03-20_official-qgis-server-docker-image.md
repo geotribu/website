@@ -161,7 +161,7 @@ Maintenant que nous avons exploré les fonctionnalités de notre image, nous pou
 Il est possible de démarrer le conteneur QIGS Server avec la configuration par défaut grâce aux paramètres ci-dessous:
 
 1. Redirection du port `8080` local vers le port `80` du serveur Web du conteneur.
-3. Montage du répertoire de projets QGIS vers `/io/data` du conteneur.
+2. Montage du répertoire de projets QGIS vers `/io/data` du conteneur.
 
 ```bash title="Démarrage d'un conteneur QGIS Server"
 # Clone du dépôt QGIS-Training-Data de QGIS
@@ -211,7 +211,7 @@ Comme mentionné précédemment, une variable d'environnement `SKIP_NGINX` perme
 
 Tout d'abord le fichier de configuration de NGINX permet de décrire un point d'accès et le moyen de communiquer avec QGIS Server:
 
-```yml title="Fichier de configuration de NGINX `nginx.conf``"
+```Nginx title="Fichier de configuration de NGINX nginx.conf"
 events {
     worker_connections  1024;
 }
@@ -228,7 +228,6 @@ http {
         }
     }
 }
-
 ```
 
 Il faut ensuite rédiger un fichier de configuration pour l'outil `docker compose`, afin de décrire notre application multi-conteneurs:
