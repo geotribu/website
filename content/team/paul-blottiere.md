@@ -4,7 +4,7 @@ categories:
     - contributeur
 social:
     - bluesky:
-    - github:
+    - github: https://github.com/pblottiere
     - gitlab:
     - linkedin:
     - mail:
@@ -14,7 +14,7 @@ social:
     - openstreetmap:
     - osgeo:
     - twitter:
-    - website:
+    - website: https://pblottiere.github.io/
 ---
 
 # Paul Blottiere
@@ -24,8 +24,6 @@ social:
 ![Portrait Paul Blottiere](https://cdn.geotribu.fr/img/internal/contributeurs/pbl.jpg "Portrait Paul Blottiere"){: .img-thumbnail-left }
 
 Ingénieur logiciel à l'Ouest :ocean:
-
-Mon [site web personnel](https://pblottiere.github.io/) !
 
 <!-- --8<-- [end:author-sign-block] -->
 
