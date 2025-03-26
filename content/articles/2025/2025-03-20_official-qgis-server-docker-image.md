@@ -14,9 +14,8 @@ license: default
 robots: index, follow
 tags:
     - QGIS Server
-    - Plugin
     - Docker
-    - Load balancer
+    - Plugin
 ---
 
 # Que se cache-t-il derrière l'image Docker officielle de QGIS Server ?
