@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-Le dernier article de Géotribu sur le [déploiement de QGIS Server](articles/2010/2010-09-03_creer_diffuser_services_wms_avec_qgis/index.html) date de 2010 :scream:! À cette époque, [Docker](https://www.docker.com/) ne faisait pas encore partie des pratiques de déploiement, et pour cause puisqu'il n'a été rendu disponible qu'en 2013. Nous allons donc profiter de la publication d'une image Docker officielle QGIS Server l'année dernière pour revenir dans la course.
+Le dernier article de Géotribu sur le [déploiement de QGIS Server](../2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md) date de 2010 :scream:! À cette époque, [Docker](https://www.docker.com/) ne faisait pas encore partie des pratiques de déploiement, et pour cause puisqu'il n'a été rendu disponible qu'en 2013. Nous allons donc profiter de la publication d'une image Docker officielle QGIS Server l'année dernière pour revenir dans la course.
 
 Pour rappel, QGIS Server est une solution open source de serveur cartographique, similaire à [GeoServer](https://geoserver.org/) ou [MapServer](https://mapserver.org/), qui permet de diffuser des cartes et des données géospatiales sur le web. Il s'appuie sur les standards OGC (Open Geospatial Consortium) pour offrir des services interopérables. QGIS Desktop joue le rôle d'outil de configuration WYSIWYG, permettant ainsi aux utilisateurs de configurer facilement leurs cartes.
 
