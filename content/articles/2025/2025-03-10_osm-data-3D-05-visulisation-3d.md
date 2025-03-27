@@ -57,7 +57,7 @@ Les principales étapes de calcul d'une image dans notre scène sont les suivant
 
 Une fois les calculs effectués, le rendu 3D de la scène est généré par la réalisation d'appels au *Global Processing Unit (GPU)*.
 
-L'ensemble de ces étapes peuvent être chronophages et excrément énergivores si on considère une réalisation du processus pour chaque objet affiché, voici un résultat obtenu avec mon ordinateur qui a perdu quelques années de vie juste pour vous lecteurs de Geotribu :
+L'ensemble de ces étapes peuvent être chronophages et extrêmement énergivores si on considère une réalisation du processus pour chaque objet affiché. Voici un résultat obtenu avec mon ordinateur qui a perdu quelques années de vie juste pour vous lecteurs de Geotribu :
 
 ![Utilitaire de *monitoring* pour une génération séquentielle d'images](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_5/inspecteur_giro3d_non_optimise.png){: .img-center loading=lazy }
 
