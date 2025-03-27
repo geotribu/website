@@ -82,7 +82,7 @@ Status:  500
 <ServerException>Project file error. For OWS services: please provide a SERVICE and a MAP parameter pointing to a valid QGIS project file</ServerException>
 ```
 
-On observe ici un code d'erreur `500` de QGIS Server indiquant que le projet `fake.qgs` n'existe pas via l'exception `<ServerException>Project file error.</ServerException>`.
+On observe ici un code d'erreur `500` de QGIS Server indiquant que le projet `fake.qgs` reseigné via `REQUEST_URI="MAP=fake.qgs"` n'existe pas.  L'exception `<ServerException>Project file error.</ServerException>` est donc retournée par QGIS Server.
 
 ### Script de démarrage
 
@@ -188,12 +188,12 @@ curl "http://localhost:8080/ogc/world?SERVICE=WMS&REQUEST=GetCapabilities"
 # Requête WMS vers /ows en indiquant explicitement le chemin du projet via le paramètre MAP
 curl "http://localhost:8080/ows/?MAP=/io/data/qgis-server-tutorial-data/world.qgs&SERVICE=WMS&REQUEST=GetCapabilities"
 
-# Requête OGC API Features vers vers /wfs3 en indiquant explicitement le chemin du projet via le
+# Requête OGC API Features vers /wfs3 en indiquant explicitement le chemin du projet via le
 # paramètre MAP
 curl "http://localhost:8080/wfs3/collections.json?MAP=/io/data/qgis-server-tutorial-data/world.qgs"
 ```
 
-Le protocole OGC API Feature, également connu sous le nom de WFS3, offre également un rendu HTML, permettant ainsi d'accéder directement, via votre navigateur, à une page web pour explorer les données sous-jacentes.
+Le protocole OGC API Feature, aussi connu sous le nom de WFS3, offre également un rendu HTML, permettant ainsi d'accéder directement, via votre navigateur, à une page web pour explorer les données sous-jacentes.
 
 ```bash title="URL d'une page de rendu HTML de OGC API Features"
 http://localhost:8080/wfs3/collections/countries/items/65.html?MAP=/io/data/qgis-server-tutorial-data/world.qgs
@@ -279,7 +279,7 @@ $ curl "http://localhost:8080/qgisserver/?MAP=/io/data/qgis-server-tutorial-data
 
 Depuis le début de cet article nous nous sommes ammusé (oui oui :sparkles:!) à explorer l'image officielle de QGIS Server à travers un peu de rétro-ingénierie. Toutefois, il est également possible de consulter la [documentation](https://github.com/qgis/qgis-docker/blob/main/server/README.md) ou d'examiner le fichier [Dockerfile](https://github.com/qgis/qgis-docker/blob/main/server/Dockerfile) utilisé pour générer cette image.
 
-En regardant ce fichier de plus prêt, nous pouvons constater l'existence de l'instruction `ENV QGIS_PLUGINPATH /io/plugins`. Cela implique que QGIS Server s'attend à avoir des plugins Python dans le répertoire indiqué. Pour tester cette mécanique, le plugin [wfsOutputExtension](https://plugins.qgis.org/plugins/wfsOutputExtension/) peut être déployé:
+En regardant ce fichier de plus prêt, nous pouvons constater l'existence de l'instruction `ENV QGIS_PLUGINPATH /io/plugins`. Cela implique que QGIS Server s'attend à avoir des plugins Python dans le répertoire indiqué. Pour tester cette mécanique, le plugin [wfsOutputExtension](https://plugins.qgis.org/plugins/wfsOutputExtension/) de la société [3Liz](https://www.3liz.com/) peut être déployé:
 
 ```bash title="Déploiement du plugin wfsOutputExtension"
 # Création d'un répertoire dédié pour les plugins
@@ -297,7 +297,7 @@ docker run \
     qgis/qgis-server:ltr
 ```
 
-Grâce au plugin `wfsOutputExtension`, il est possible de spécifier divers formats supplémentaires grâce au paramètre `OUTPUTFORMAT` de la requête WFS `GetFeature`. Nous pouvons par exemple spécifier le format `csv` non supporté nativement par QGIS Server:
+Grâce au plugin `wfsOutputExtension`, il est possible de spécifier divers formats supplémentaires à travers le paramètre `OUTPUTFORMAT` de la requête WFS `GetFeature`. Nous pouvons par exemple spécifier le format `csv` non supporté nativement par QGIS Server:
 
 ```bash title="Exécution d'une requête WFS GetFeature"
 $ curl "http://localhost:8080/ows/?MAP=/io/data/qgis-server-tutorial-data/world.qgs&SERVICE=WFS&REQUEST=GetFeature&TYPENAME=countries&FEATUREID=countries.1&OUTPUTFORMAT=csv"
