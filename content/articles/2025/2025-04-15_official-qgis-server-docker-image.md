@@ -6,16 +6,15 @@ authors:
 categories:
     - article
 comments: true
-date: 2025-03-20
+date: 2025-04-15
 description: "QGIS Server et image Docker"
-icon: material/database-import-outline
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/parcours_des_donnees_avant_visualisation_400.png
+icon: material/docker
+image:
 license: default
 robots: index, follow
 tags:
-    - QGIS Server
     - Docker
-    - Plugin
+    - QGIS Server
 ---
 
 # Que se cache-t-il derrière l'image Docker officielle de QGIS Server ?
@@ -196,11 +195,11 @@ curl "http://localhost:8080/wfs3/collections.json?MAP=/io/data/qgis-server-tutor
 
 Le protocole OGC API Feature, également connu sous le nom de WFS3, offre également un rendu HTML, permettant ainsi d'accéder directement, via votre navigateur, à une page web pour explorer les données sous-jacentes.
 
-```bash title="URL d'une page de rendu HTML de OGC API Features (WFS3)"
+```bash title="URL d'une page de rendu HTML de OGC API Features"
 http://localhost:8080/wfs3/collections/countries/items/65.html?MAP=/io/data/qgis-server-tutorial-data/world.qgs
 ```
 
-TODO: include image
+![OGC API Features Landing Page](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_server_docker/ogcapif.png "OGC API Feeatures Landing Page"){: .img-center loading=lazy }
 
 ### Composition avec NGINX externe
 
