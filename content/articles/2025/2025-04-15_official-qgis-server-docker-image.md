@@ -91,6 +91,7 @@ Auparavant, nous avons lancé le conteneur QGIS Server en mode interactif à l'a
 Le script de démarrage utilisé, situé dans le système de fichiers du conteneur, peut être trouvé à l'emplacement `/usr/local/bin/start-xvfb-nginx.sh`, et son chemin peut être obtenu en inspectant l'image.
 
 {% raw %}
+
 ```bash title="Inspection de l'image pour localiser le script de démarrage"
 # Récupération du chemin du script de démarrage
 $ docker inspect -f '{{.Config.Cmd}}' qgis/qgis-server:ltr
@@ -99,6 +100,7 @@ $ docker inspect -f '{{.Config.Cmd}}' qgis/qgis-server:ltr
 # Affichage du contenu du script de démarrage
 $ docker run qgis/qgis-server:ltr cat /usr/local/bin/start-xvfb-nginx.sh
 ```
+
 {% endraw %}
 
 En étudiant le contenu de ce script, nous observons la séquence de démarrage des utilitaires tiers mentionnés ci-dessus:
