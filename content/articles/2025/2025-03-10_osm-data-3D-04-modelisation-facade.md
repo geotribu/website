@@ -9,7 +9,7 @@ categories:
 comments: true
 date: 2025-03-25
 description: "OSM DATA 3D : des données 2D à leur représentation en 3D - suite"
-icon: material/video-3d
+icon: material/office-building-marker
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_3/miniature_article_4.png
 license: default
 robots: index, follow
