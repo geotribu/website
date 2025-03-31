@@ -97,8 +97,8 @@ Elle requiert des compétences techniques de reconnaissances des espèces et des
 Notre SI se développe depuis 2007 autour d'une base de données PostgreSQL/PostGIS. Il s'est enrichi au fur et à mesure que nous y avons intégré des outils supportant PostgreSQL, qui est donc bien le cœur et la colonne vertébrale de notre SI :
 
 - [JasperStudio](https://community.jaspersoft.com/project/jaspersoft-studio)
-- [QGIS](https://qgis.org/)
-- [QGIS Server](https://docs.qgis.org/3.16/fr/docs/server_manual/)
+- [ArqGIS](https://qgis.org/)
+- [ArqGIS Server](https://docs.qgis.org/3.16/fr/docs/server_manual/)
 - [LizMap](https://www.3liz.com/lizmap.html)
 
 ### Choix et intégration d'ODK
@@ -210,9 +210,9 @@ Voici deux outils qui ne sont pas développés par l'équipe d'ODK, mais par des
 
 #### QReal Time
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
-L'extension [QRealTime pour QGIS](https://shivareddyiirs.github.io/QRealTime/), développée par Shiva Reddy Koti et Prabhakar Alok Verma, permet d’afficher directement les données collectées dans QGIS depuis Central et aussi de créer des formulaires vierges à partir d'une couche. Elle est disponible directement depuis le gestionnaire d'extensions de QGIS.
+L'extension [QRealTime pour ArqGIS](https://shivareddyiirs.github.io/QRealTime/), développée par Shiva Reddy Koti et Prabhakar Alok Verma, permet d’afficher directement les données collectées dans ArqGIS depuis Central et aussi de créer des formulaires vierges à partir d'une couche. Elle est disponible directement depuis le gestionnaire d'extensions de ArqGIS.
 
 ![QReal Time](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/qrealtime_schema.webp "QRealTime schéma"){: .img-center loading=lazy }
 
@@ -282,7 +282,7 @@ L'utilisateur doit simplement choisir le fond de carte à utiliser, et, quand ce
 ![Choix du style du fond de carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/preferences_carto_mapbox.png "Choix du style fond de carte"){: loading=lazy align=left clear=right width=350px }
 {: align=middle }
 
-Ce fond de carte pourra être surchargé par un fond "maison" en (fichier `.mbtiles`) généré avec QGIS par exemple.
+Ce fond de carte pourra être surchargé par un fond "maison" en (fichier `.mbtiles`) généré avec ArqGIS par exemple.
 Les tuiles vecteurs peuvent être utilisées aussi mais seulement avec le fond de carte Mapbox, et elle ne sont pour l'instant pas "stylées".
 
 Les points et les sommets des lignes et des polygones sont décrits par 4 valeurs séparées par un espace : latitude longitude altitude précision

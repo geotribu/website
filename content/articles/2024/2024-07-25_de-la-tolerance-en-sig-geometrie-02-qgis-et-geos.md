@@ -1,5 +1,5 @@
 ---
-title: GEOS au cœur de QGIS
+title: GEOS au cœur de ArqGIS
 subtitle: "Série : De la tolérance en SIG - chapitre 2"
 authors:
     - Loïc Bartoletti
@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-07-25
-description: "Deuxième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : GEOS et QGIS, au tableau !"
+description: "Deuxième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : GEOS et ArqGIS, au tableau !"
 icon: material/vector-curve
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_02_geos_qgis.png
 license: beerware
@@ -16,20 +16,20 @@ tags:
     - analyse
     - géométrie
     - GEOS
-    - QGIS
+    - ArqGIS
     - WKB
     - WKT
 ---
 
-# GEOS au cœur de QGIS
+# GEOS au cœur de ArqGIS
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 Dans la partie précédente, nous avons posé le problème : le résultat d'une intersection n'intersecte pas toujours la donnée d'origine. Cette réalité peut surprendre les nouveaux utilisateurs de SIG et frustrer les plus expérimentés qui cherchent une précision dans leurs analyses spatiales.
 
-Dans cette section, nous allons plonger dans les dessous des SIG en explorant le fonctionnement de ces traitements. Nous nous concentrerons en particulier sur le rôle de GEOS dans QGIS.
+Dans cette section, nous allons plonger dans les dessous des SIG en explorant le fonctionnement de ces traitements. Nous nous concentrerons en particulier sur le rôle de GEOS dans ArqGIS.
 
-![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : QGIS et GEOS - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_02_geos_qgis.png){: .img-center loading=lazy }
+![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : ArqGIS et GEOS - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_02_geos_qgis.png){: .img-center loading=lazy }
 
 Cet article est la deuxième partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
@@ -46,7 +46,7 @@ Cet article est la deuxième partie de la série d'été sur la gestion de la g�
 
 ![logo GEOS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/geos.png){: .img-thumbnail-left }
 
-[GEOS (Geometry Engine - Open Source)](https://libgeos.org/) est une bibliothèque C++ qui fournit des fonctions de calculs sur les géométries Simple Feature OGC. Elle est largement utilisée dans divers outils SIG, y compris QGIS, pour effectuer des calculs géométriques. GEOS est une implémentation de l'API de JTS (Java Topology Suite) qui vise à manipuler des géométries planes en 2D.
+[GEOS (Geometry Engine - Open Source)](https://libgeos.org/) est une bibliothèque C++ qui fournit des fonctions de calculs sur les géométries Simple Feature OGC. Elle est largement utilisée dans divers outils SIG, y compris ArqGIS, pour effectuer des calculs géométriques. GEOS est une implémentation de l'API de JTS (Java Topology Suite) qui vise à manipuler des géométries planes en 2D.
 
 ![GEOS diagram from crunchy data](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/geos_diagram_dependent_project.webp){: .img-center loading=lazy }
 
@@ -54,15 +54,15 @@ Cet article est la deuxième partie de la série d'été sur la gestion de la g�
 
 ----
 
-## Le rôle de GEOS dans QGIS
+## Le rôle de GEOS dans ArqGIS
 
-Dans QGIS, GEOS joue un rôle crucial dans le traitement des données géographiques. Il est particulièrement utilisé pour évaluer les prédicats spatiaux tels que `intersects`, `touches`, `disjoint`, etc. Ces prédicats sont essentiels pour déterminer les relations spatiales entre différentes géométries.
+Dans ArqGIS, GEOS joue un rôle crucial dans le traitement des données géographiques. Il est particulièrement utilisé pour évaluer les prédicats spatiaux tels que `intersects`, `touches`, `disjoint`, etc. Ces prédicats sont essentiels pour déterminer les relations spatiales entre différentes géométries.
 
-Pour les connaisseurs du code de QGIS, il est vrai que certains traitements ne sont pas réalisés par GEOS, mais par QGIS. Nous regarderons cela dans la partie sur l'étude des algorithmes, mais en soi, cela ne change pas grand-chose au problème.
+Pour les connaisseurs du code de ArqGIS, il est vrai que certains traitements ne sont pas réalisés par GEOS, mais par ArqGIS. Nous regarderons cela dans la partie sur l'étude des algorithmes, mais en soi, cela ne change pas grand-chose au problème.
 
-## Utilisation de GEOS sans QGIS
+## Utilisation de GEOS sans ArqGIS
 
-Si vous ne le savez pas, il est également possible de réaliser des calculs directement avec GEOS, sans utiliser l'interface graphique de QGIS. Une des façons de faire cela est d'utiliser `geosop`, un outil en ligne de commande qui permet de manipuler des géométries avec les fonctions de GEOS.
+Si vous ne le savez pas, il est également possible de réaliser des calculs directement avec GEOS, sans utiliser l'interface graphique de ArqGIS. Une des façons de faire cela est d'utiliser `geosop`, un outil en ligne de commande qui permet de manipuler des géométries avec les fonctions de GEOS.
 
 `geosop` permet aux utilisateurs d'exécuter des opérations complexes sur les géométries grâce à des commandes simples. Par exemple, pour vérifier si une géométrie en intersecte une autre, on peut utiliser la commande suivante :
 
@@ -84,7 +84,7 @@ Pour rappel, nos géométries sont les suivantes :
 - base : `0102000000050000007997c6b68d3c3e4139eb62c260d55341ac9ea7316a3c3e41cbeb40e073d55341403e0bfbc33c3e41b3fc06f380d55341387a2a800c3d3e41f256b8176dd553417997c6b68d3c3e4139eb62c260d55341`
 - line : `010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341`
 
-Pour se faire la main, on va tester si nos géométries s'intersectent bien. On ne l'avait pas testé sur QGIS, mais cela semble évident.
+Pour se faire la main, on va tester si nos géométries s'intersectent bien. On ne l'avait pas testé sur ArqGIS, mais cela semble évident.
 
 ```shell
 > geosop \
@@ -113,8 +113,8 @@ intersection
 
 La réponse est `MULTIPOINT ((1981640.7849060092 5199258.022088398), (1981583.6205737416 5199333.301878075))`
 
-Ah ! C'est une petite différence avec QGIS qui retourne deux points. Ici, GEOS retourne un MULTIPOINT, qui, selon moi, est plus cohérent, mais qu'importe.
-Le WKT est plus lisible, mais il a l'inconvénient de ne pas toujours avoir la même représentation. QGIS nous retourne 17 décimales et GEOS : 10 ; ce qui, dans tous les cas, est déjà trop pour du projeté, on en reparlera plus tard.
+Ah ! C'est une petite différence avec ArqGIS qui retourne deux points. Ici, GEOS retourne un MULTIPOINT, qui, selon moi, est plus cohérent, mais qu'importe.
+Le WKT est plus lisible, mais il a l'inconvénient de ne pas toujours avoir la même représentation. ArqGIS nous retourne 17 décimales et GEOS : 10 ; ce qui, dans tous les cas, est déjà trop pour du projeté, on en reparlera plus tard.
 
 Afin d'éviter ces différences, nous allons travailler avec le WKB. Pour le récupérer, on ajoute simplement l'option WKB à l'option `-f` pour le format de sortie :
 
@@ -179,7 +179,7 @@ Vous pouvez également essayer directement avec les points `0101000000A899EFC8C8
 De même, vous pouvez tester les autres prédicats comme `touches`, le résultat sera toujours `false`...
 Sauf pour... `disjoint` ce qui veut dire que les points ne sont pas sur les géométries.
 
-Alors pourquoi, si les points ne sont pas sur les lignes, nous avions sur QGIS des segments qui intersectaient la géométrie d'origine ?
+Alors pourquoi, si les points ne sont pas sur les lignes, nous avions sur ArqGIS des segments qui intersectaient la géométrie d'origine ?
 
 Si vous êtes attentif, vous pouvez remarquer qu'un côté des deux, seulement, avait une intersection ; et ce n'était pas toujours le même.
 Je vous laisse regarder les images de la partie précédente.
@@ -246,7 +246,7 @@ distance
 
 On remarque que le résultat n'est pas `0`, mais très proche. C'est en gros `0`, mais y'a une « blague » vers 10 chiffres après la virgule.
 Pour celles et ceux que cela intéresse, je reviendrai sur l'importance du calcul dans la partie algorithme.
-En attendant, on observe que QGIS donne le même résultat que GEOS. Ce qui n'est pas étonnant puisque derrière QGIS [^qgis_geom], c'est GEOS.
+En attendant, on observe que ArqGIS donne le même résultat que GEOS. Ce qui n'est pas étonnant puisque derrière ArqGIS [^qgis_geom], c'est GEOS.
 
 C'est donc GEOS qui est faux ? Non, GEOS donne le « bon » résultat, mais la vérité est ailleurs.
 Nous continuerons cette exploration dans les parties suivantes.
@@ -262,7 +262,7 @@ Nous continuerons cette exploration dans les parties suivantes.
 
 [^big_little_endian]: ou en Français, gros- et petit-boutisme, sont l'ordre dans lequel les octets sont placés. Pour plus d'informations, je vous invite à regarder [la page Wikipedia](https://fr.wikipedia.org/wiki/Boutisme)
 
-[^qgis_geom]: Comme expliqué avant, QGIS réalise certains calculs, identiques à ceux de GEOS, pourtant sans utiliser cette bibliothèque. En particulier, l'accrochage ne repose pas sur GEOS, mais sur des calculs équivalents. Je simplifie ici pour éviter de perdre les moins connaisseurs de cet écosystème.
+[^qgis_geom]: Comme expliqué avant, ArqGIS réalise certains calculs, identiques à ceux de GEOS, pourtant sans utiliser cette bibliothèque. En particulier, l'accrochage ne repose pas sur GEOS, mais sur des calculs équivalents. Je simplifie ici pour éviter de perdre les moins connaisseurs de cet écosystème.
 
 <!-- markdownlint-disable   MD007 MD032 -->
 [^wkt_wkb]: formats standards de représentation des géométries :

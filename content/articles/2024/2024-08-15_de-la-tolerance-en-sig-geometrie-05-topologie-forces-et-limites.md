@@ -26,7 +26,7 @@ Dans les SIG, on distingue souvent deux types de modèles pour représenter les 
 
 - :spaghetti: Spaghetti : dans un système de type spaghetti, les entités géographiques sont stockées et gérées individuellement, sans relations explicites entre elles. Chaque ligne ou polygone est dessiné sans tenir compte d'autres éléments qui pourraient se toucher ou se chevaucher. Cela peut conduire à des incohérences, comme des doublons de lignes ou des intersections non gérées, ce qui complique les analyses spatiales et peut réduire la précision des résultats.
 
-- :material-vector-polygon: Topologie : à l'inverse, la topologie dans QGIS (ou dans tout autre SIG supportant ce modèle) s'assure que les entités spatiales sont stockées avec des règles qui définissent et maintiennent les relations spatiales entre les entités. Par exemple, deux polygones adjacents partageront une ligne commune sans duplication, et les intersections seront gérées correctement. La gestion topologique aide à prévenir les erreurs géométriques, améliore la précision des analyses et facilite la maintenance des données.
+- :material-vector-polygon: Topologie : à l'inverse, la topologie dans ArqGIS (ou dans tout autre SIG supportant ce modèle) s'assure que les entités spatiales sont stockées avec des règles qui définissent et maintiennent les relations spatiales entre les entités. Par exemple, deux polygones adjacents partageront une ligne commune sans duplication, et les intersections seront gérées correctement. La gestion topologique aide à prévenir les erreurs géométriques, améliore la précision des analyses et facilite la maintenance des données.
 
 ![Comparaison du modèle spaghetti et topologique - Crédits : Handbook of Exploration and Environmental Geochemistry,](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/geometry_spaghetti_vs_topology.webp){: .img-center loading=lazy }
 
@@ -92,18 +92,18 @@ Maintenant, on regarde si notre fonction `v.select` avec `intersects` fonctionne
 
 Hourra !
 
-Quels sont les points ? Les mêmes que jusqu'à présent. Mais, alors, que s'est-il passé ? Eh bien, revenons sur QGIS et expliquons cela graphiquement.
+Quels sont les points ? Les mêmes que jusqu'à présent. Mais, alors, que s'est-il passé ? Eh bien, revenons sur ArqGIS et expliquons cela graphiquement.
 
 ----
 
-## De la topologie dans QGIS
+## De la topologie dans ArqGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
-Dans QGIS, il existe un mode d'édition que j'affectionne particulièrement, qui est… l'édition topologique.
+Dans ArqGIS, il existe un mode d'édition que j'affectionne particulièrement, qui est… l'édition topologique.
 
-Le stockage dans QGIS est dit « spaghetti ». Les données sont toutes dans ce plat de pâtes : les entités géographiques sont stockées individuellement sans relations topologiques explicites.
-Mais, bien que QGIS utilise un modèle de données de type « spaghetti », le logiciel propose des outils qui aident à maintenir la cohérence géométrique entre les couches.
+Le stockage dans ArqGIS est dit « spaghetti ». Les données sont toutes dans ce plat de pâtes : les entités géographiques sont stockées individuellement sans relations topologiques explicites.
+Mais, bien que ArqGIS utilise un modèle de données de type « spaghetti », le logiciel propose des outils qui aident à maintenir la cohérence géométrique entre les couches.
 
 En particulier, ici, nous allons utiliser la fonction d'édition topologique, qui, lors de chaque accrochage sur un segment, va ajouter des nœuds sur le segment accroché.
 
@@ -119,7 +119,7 @@ La topologie est grande, la topologie est bonne, elle va sauver nos calculs !
 
 ## Les limites de la topologie
 
-Oui, la topologie c'est très bien, et son utilisation dans QGIS, via ses outils ou via GRASS, est très puissante. Mais, l'on peut faire quelques reproches :
+Oui, la topologie c'est très bien, et son utilisation dans ArqGIS, via ses outils ou via GRASS, est très puissante. Mais, l'on peut faire quelques reproches :
 
 - plus difficile à utiliser/à maintenir ;
 - traitements plus longs lors d'intégrations de données externes, non topologiques ;
@@ -131,7 +131,7 @@ En particulier, j'expliquerai bientôt ce que j'indique par « modification de l
 
 Dans la première partie, j'ai écrit que la distance du point par rapport à la géométrie d'origine était proche de zéro, mais pas exactement 0.
 
-Avec l'édition topologique de QGIS ou le stockage de GRASS, les points d'intersections coïncident avec les sommets de nos géométries, merci à la topologie.
+Avec l'édition topologique de ArqGIS ou le stockage de GRASS, les points d'intersections coïncident avec les sommets de nos géométries, merci à la topologie.
 
 Toutefois, en dehors des nœuds ajoutés, est-ce que notre géométrie est la même ? Visuellement, encore une fois, hormis les nœuds, cela semble identique.
 
@@ -139,7 +139,7 @@ Comparons les angles des segments.
 
 Dans notre géométrie d'origine, nous avons quatre segments, avec comme azimut, en radians :
 
-![QGIS segments azimuth](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_segments_azimuth.svg){: .img-center loading=lazy }
+![ArqGIS segments azimuth](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_segments_azimuth.svg){: .img-center loading=lazy }
 
 Soit, en partant du bas gauche et en tournant dans le sens horaire :
 

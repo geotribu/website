@@ -15,14 +15,14 @@ license: default
 robots: index, follow
 tags:
     - OpenStreetMap
-    - QGIS
-    - QGIS SERVER
+    - ArqGIS
+    - ArqGIS SERVER
     - WFS
     - WMS
     - PostgreSQL
     - GeoPandas
     - SQLAlchemy
-    - PyQGIS
+    - PyArqGIS
 ---
 
 # OSM DATA V2 : Des données à la cartographie
@@ -37,8 +37,8 @@ Pour rappel, quatre étapes principales permettent l'affichage des données :
 
 1. La définition puis la validation de la conformité des fichiers / requêtes SQL
 2. L'intégration en base de données des données sous forme de table ou de vues matérialisées
-3. La création d'un projet QGIS et la définition de la symbologie associée à chaque couche
-4. La création des flux WMS et WFS à l'aide des projets QGIS créé
+3. La création d'un projet ArqGIS et la définition de la symbologie associée à chaque couche
+4. La création des flux WMS et WFS à l'aide des projets ArqGIS créé
 
 ![Parcours des données avant visualisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/parcours_des_donnees_avant_visualisation.png){: .img-center loading=lazy }
 
@@ -68,7 +68,7 @@ Une fois le fichier interprété avec succès et le `GeoDataFrame` créé, deux 
         raise Exception("Votre fichier contient plusieurs types de géométries :(")
     ```
 
-Dans le cadre d'une mise à jour du jeu de données, on vérifie également la conformité du type de géométrie entre les données sources et les données de mise à jour. Si ce n'est pas le cas, le jeu de données de mise à jour est considéré invalide (sa définition/symbologie dans QGIS dépendant du type de géométrie du jeu de données source).
+Dans le cadre d'une mise à jour du jeu de données, on vérifie également la conformité du type de géométrie entre les données sources et les données de mise à jour. Si ce n'est pas le cas, le jeu de données de mise à jour est considéré invalide (sa définition/symbologie dans ArqGIS dépendant du type de géométrie du jeu de données source).
 
 - Présence d'entités au sein du fichier :
 
@@ -178,13 +178,13 @@ Pour information, l'utilisateur PostgreSQL exécutant la requête SQL détient u
 
 La couche est insérée en base de données ! :fireworks:
 
-## Création d'un projet QGIS et de la symbologie associée au jeu de données
+## Création d'un projet ArqGIS et de la symbologie associée au jeu de données
 
 ### Création d'un projet
 
-La création d'un projet QGIS permet, à partir des données stockées dans la base de données PostgreSQL et de QGIS Server, de créer les flux WMS/WFS nécessaires à la visualisation des couches sur le web.
+La création d'un projet ArqGIS permet, à partir des données stockées dans la base de données PostgreSQL et de ArqGIS Server, de créer les flux WMS/WFS nécessaires à la visualisation des couches sur le web.
 
- **Pourquoi QGIS et QGIS Server ? Pourquoi ne pas avoir utilisé Mapserver ou Geoserver ? En deux mots : interopérabilité et efficacité**. QGIS :heart: dispose d'un moteur de style puissant et dont les capacités ne cessent de s'étoffer. Couplé à QGIS Server, la visualisation avec symbologie synchronisée *desktop*/*web* permet de créer rapidement et interactivement des symbologies, [Mathieu Rajerison](https://x.com/datagistips?s=21) a par exemple mis en place différents styles :
+ **Pourquoi ArqGIS et ArqGIS Server ? Pourquoi ne pas avoir utilisé Mapserver ou Geoserver ? En deux mots : interopérabilité et efficacité**. ArqGIS :heart: dispose d'un moteur de style puissant et dont les capacités ne cessent de s'étoffer. Couplé à ArqGIS Server, la visualisation avec symbologie synchronisée *desktop*/*web* permet de créer rapidement et interactivement des symbologies, [Mathieu Rajerison](https://x.com/datagistips?s=21) a par exemple mis en place différents styles :
 
 - Les lampadaires sont discriminés en fonction de leur type de mât, du nombre de sources lumineuses, de leurs intensités...
 
@@ -196,19 +196,19 @@ La création d'un projet QGIS permet, à partir des données stockées dans la b
 
 Techniquement, c'est beau, très beau, trop beau... et vous n'êtes certainement pas amoureux de [Brad Pitt](https://www.marieclaire.fr/anne-escroquee-par-un-faux-brad-pitt-un-porte-parole-de-l-acteur-s-exprime-apres-l-arnaque-de-830-000-euros,1487356.asp) donc oui il y a quelques contraintes !
 
-QGIS est avant tout un logiciel *desktop* donc en l'ouvrant, il initialise par défaut son environnement avec l'ensemble des dépendances qu'il juge nécessaires à une utilisation *desktop*. Compte tenu de notre utilisation, certaines contraintes sont soient superflues, soient limitantes en termes de performance, il est donc nécessaire de paramétrer les variables d'environnement afin de désactiver le lancement de certaines fonctionnalités (voir ci-dessous *Diffusion des flux OGC WMS/WFS)*).
+ArqGIS est avant tout un logiciel *desktop* donc en l'ouvrant, il initialise par défaut son environnement avec l'ensemble des dépendances qu'il juge nécessaires à une utilisation *desktop*. Compte tenu de notre utilisation, certaines contraintes sont soient superflues, soient limitantes en termes de performance, il est donc nécessaire de paramétrer les variables d'environnement afin de désactiver le lancement de certaines fonctionnalités (voir ci-dessous *Diffusion des flux OGC WMS/WFS)*).
 
 Aussi, si on considère le lancement d'un projet ne contenant qu'une couche, l'initialisation peut être rapide, lorsque le projet dispose de 350 couches, c'est moins évident.
 
 ![Perceval](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/pas_faux.gif){: .img-center loading=lazy }
 
-Pour ces raisons et sans avoir encore eu l'occasion de faire une analyse de l'outil [PerfSuite](https://github.com/qgis/QGIS-Server-PerfSuite/tree/master?tab=readme-ov-file), il a été décidé de répartir les couches entre plusieurs projets QGIS avec un maximum de 5 couches par projet. Sur OSM DATA, il y a actuellement 139 projets répertoriés :
+Pour ces raisons et sans avoir encore eu l'occasion de faire une analyse de l'outil [PerfSuite](https://github.com/qgis/ArqGIS-Server-PerfSuite/tree/master?tab=readme-ov-file), il a été décidé de répartir les couches entre plusieurs projets ArqGIS avec un maximum de 5 couches par projet. Sur OSM DATA, il y a actuellement 139 projets répertoriés :
 
 ```sh
-# Décompte des projets QGIS d'OSM DATA
+# Décompte des projets ArqGIS d'OSM DATA
 debian@osm_data:provider/qgis/project$ ls | grep '\.qgs$' | wc -l
 139
-# Liste des projets QGIS d'OSM DATA
+# Liste des projets ArqGIS d'OSM DATA
 debian@osm_data:provider/qgis/project$ ls | grep '\.qgs$'
 projet_0.qgs
 projet_1.qgs
@@ -217,15 +217,15 @@ projet_100.qgs
 ...
 ```
 
-Pour créer un projet QGIS relié à un jeu de données, il est donc nécessaire d'établir une nomenclature structurée dépendante de la contrainte de "5 jeux de données maximum par projet". Ainsi, pour lancer la création d'un projet associé à un nouveau jeu de données, voici le script utilisé :
+Pour créer un projet ArqGIS relié à un jeu de données, il est donc nécessaire d'établir une nomenclature structurée dépendante de la contrainte de "5 jeux de données maximum par projet". Ainsi, pour lancer la création d'un projet associé à un nouveau jeu de données, voici le script utilisé :
 
-```python title="Création d'un projet QGIS avec PyQGIS"
+```python title="Création d'un projet ArqGIS avec PyArqGIS"
 from qgis.core import QgsProject
 
-# Nomenclature du projet QGIS
+# Nomenclature du projet ArqGIS
 path_to_qgis_project = "projet" + "_" + str(int({nombre_total_de_couches_existantes} / 5)) + ".qgs"
 
-# Création du projet QGIS
+# Création du projet ArqGIS
 project = QgsProject()
 project.read(path_to_qgis_project)
 project.write()
@@ -233,9 +233,9 @@ project.write()
 
 Si le projet existe déja il est utilisé, et s'il n'existe pas, le projet est créé.
 
-Une fois le projet QGIS sélectionné/créé, on ajoute le nouveau jeu de données avec pour source la table ou la vue matérialisée précédement créée :
+Une fois le projet ArqGIS sélectionné/créé, on ajoute le nouveau jeu de données avec pour source la table ou la vue matérialisée précédement créée :
 
-```python title="Création d'une couche dans un projet QGIS"
+```python title="Création d'une couche dans un projet ArqGIS"
 from qgis.core import QgsProject, QgsDataSourceUri
 
 # Création de la connexion à la base de données
@@ -260,7 +260,7 @@ project.writeEntry("WMSAddWktGeometry", "", "true")
 project.write()
 ```
 
-Une fois le projet QGIS créé, les données peuvent déjà être diffusées sous forme de flux WMS/WFS avec QGIS Server ! Cependant, afin d'améliorer leur visualisation, le style doit être défini.
+Une fois le projet ArqGIS créé, les données peuvent déjà être diffusées sous forme de flux WMS/WFS avec ArqGIS Server ! Cependant, afin d'améliorer leur visualisation, le style doit être défini.
 
 ### Définition et application du style par l'utilisateur
 
@@ -268,25 +268,25 @@ Dans la fenêtre de définition d'une couche sur OSM DATA, un onglet Styles perm
 
 ![Fenêtre de définition d'une couche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/osm_data_gestion_style.png){: .img-center loading=lazy }
 
-Cette caractéristique multi-styles découle de la fonctionnalité déjà présente au sein de QGIS. Les différentes manières de définir un style dans OSM DATA permettent de faciliter l'administration des jeux de données depuis l'interface, deux options sont disponibles :
+Cette caractéristique multi-styles découle de la fonctionnalité déjà présente au sein de ArqGIS. Les différentes manières de définir un style dans OSM DATA permettent de faciliter l'administration des jeux de données depuis l'interface, deux options sont disponibles :
 
-- A l'aide d'un fichier QML directement préparé à partir de QGIS
+- A l'aide d'un fichier QML directement préparé à partir de ArqGIS
 
 ![Fonction d'import d'un fichier QML](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/ajout_style_qml.png){: .img-center loading=lazy }
 
 - A l'aide du moteur de style intégré d'OSM DATA :
-    - Sous la forme d'un icone ponctuel :  L'utilisateur fournit un icône (raster ou vecteur), un style est créé avec [`QgsSingleSymbolRenderer`](https://api.qgis.org/api/classQgsSingleSymbolRenderer.html) et PyQGIS pour l'appliquer au jeu de données. Le détail de l'implémentation est disponible sur le [GitHub](https://github.com/data-osm/geosm-backend/blob/master/provider/qgis/customStyle/point_icon_simple.py#L24) du projet.
+    - Sous la forme d'un icone ponctuel :  L'utilisateur fournit un icône (raster ou vecteur), un style est créé avec [`QgsSingleSymbolRenderer`](https://api.qgis.org/api/classQgsSingleSymbolRenderer.html) et PyArqGIS pour l'appliquer au jeu de données. Le détail de l'implémentation est disponible sur le [GitHub](https://github.com/data-osm/geosm-backend/blob/master/provider/qgis/customStyle/point_icon_simple.py#L24) du projet.
     - Sous la forme d'un regroupement de point (*cluster*) : L'utilisateur fournit un icône, un style est créé avec [`QgsPointClusterRenderer`](https://api.qgis.org/api/classQgsPointClusterRenderer.html) pour l'appliquer au jeu de données. Le détail de l'implémentation est disponible sur le [GitHub](https://github.com/data-osm/geosm-backend/blob/master/provider/qgis/customStyle/cluster.py#L24) du projet.
 
 ![Fonction de création de style sous forme de *clusters*](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_2/ajout_style_cluster.png){: .img-center loading=lazy }
 
-Au besoin, un dernier article peut compléter cette série pour expliciter davantage la création de styles avec PyQGIS.
+Au besoin, un dernier article peut compléter cette série pour expliciter davantage la création de styles avec PyArqGIS.
 
 ## Diffusion des flux OGC WMS/WFS
 
-Pour utiliser QGIS Server, rien de plus simple ! Il suffit d'enregistrer le projet QGIS dans un dossier et [cet article](../2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md) détaille les étapes d'exploitation de ce dossier pour créer les flux OGC.
+Pour utiliser ArqGIS Server, rien de plus simple ! Il suffit d'enregistrer le projet ArqGIS dans un dossier et [cet article](../2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md) détaille les étapes d'exploitation de ce dossier pour créer les flux OGC.
 
-Cependant, nous avons évoqué plus haut qu'à ce jour 139 projets QGIS sont présents. Une seule instance QGIS ne peut pas gérer l'ensemble de ces données de manière efficace. Pour cela, [py-qgis-server](https://github.com/3liz/py-qgis-server) est utilisé, il permet de définir plusieurs instances sur plusieurs *workers*, améliorant ainsi les performances. De plus certaines variables d'environnement QGIS sont directement exposées, voici celles qui sont actuellement activées sur OSM DATA lors de l'initialisation d'un projet :
+Cependant, nous avons évoqué plus haut qu'à ce jour 139 projets ArqGIS sont présents. Une seule instance ArqGIS ne peut pas gérer l'ensemble de ces données de manière efficace. Pour cela, [py-qgis-server](https://github.com/3liz/py-qgis-server) est utilisé, il permet de définir plusieurs instances sur plusieurs *workers*, améliorant ainsi les performances. De plus certaines variables d'environnement ArqGIS sont directement exposées, voici celles qui sont actuellement activées sur OSM DATA lors de l'initialisation d'un projet :
 
 - Ignorance des composeurs d'impression du projet
 - Ignorance de la validité des couches

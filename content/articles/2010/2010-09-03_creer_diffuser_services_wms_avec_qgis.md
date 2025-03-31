@@ -1,5 +1,5 @@
 ---
-title: "Créer et diffuser des services WMS avec QGIS"
+title: "Créer et diffuser des services WMS avec ArqGIS"
 authors:
     - Geotribu
 categories:
@@ -7,38 +7,38 @@ categories:
     - tutoriel
 comments: true
 date: 2010-09-03
-description: "Créer et diffuser des services WMS avec QGIS"
+description: "Créer et diffuser des services WMS avec ArqGIS"
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_net.png"
 license: default
 tags:
     - OGC
     - open source
-    - QGIS
+    - ArqGIS
     - serveur géographique
     - WMS
 ---
 
-# Créer et diffuser des services WMS avec QGIS
+# Créer et diffuser des services WMS avec ArqGIS
 
 :calendar: Date de publication initiale : 03 septembre 2010
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
-[QGIS](https://www.qgis.org/) est l'un des, voir même à mon sens, le meilleur logiciel SIG Open Source existant actuellement. Ses possibilités ainsi que les plugins dont il dispose font qu'il offre toutes les fonctionnalités dont a besoin un géomaticien pour son travail quotidien.
+[ArqGIS](https://www.qgis.org/) est l'un des, voir même à mon sens, le meilleur logiciel SIG Open Source existant actuellement. Ses possibilités ainsi que les plugins dont il dispose font qu'il offre toutes les fonctionnalités dont a besoin un géomaticien pour son travail quotidien.
 
-La dernière nouveauté que j'ai pu découvrir, grâce au blog [linfiniti](http://linfiniti.com/2010/08/qgis-mapserver-a-wms-server-for-the-masses/), est la possibilité de créer et de publier des services WMS directement depuis QGIS. Cette fonctionnalité a été développée par l'[institut cartographique de Zurich](https://www.karto.ethz.ch/) dans le cadre du projet [orchestra](http://www.eu-orchestra.org/). Vous pourrez ainsi, directement depuis votre logiciel SIG, définir le style de vos couches avant de les exporter sur Internet.
+La dernière nouveauté que j'ai pu découvrir, grâce au blog [linfiniti](http://linfiniti.com/2010/08/qgis-mapserver-a-wms-server-for-the-masses/), est la possibilité de créer et de publier des services WMS directement depuis ArqGIS. Cette fonctionnalité a été développée par l'[institut cartographique de Zurich](https://www.karto.ethz.ch/) dans le cadre du projet [orchestra](http://www.eu-orchestra.org/). Vous pourrez ainsi, directement depuis votre logiciel SIG, définir le style de vos couches avant de les exporter sur Internet.
 
 ----
 
 ## Installation et paramétrages
 
-La communication entre QGIS Mapserver et notre serveur Web s'appuie sur le protocole CGI/FCGI. Commençons alors par l'installer :
+La communication entre ArqGIS Mapserver et notre serveur Web s'appuie sur le protocole CGI/FCGI. Commençons alors par l'installer :
 
 ```bash
 sudo apt-get install libfcgi-dev
 ```
 
-Attaquons-nous maintenant à l'installation de QGIS Mapserver. Deux solutions s'offrent alors à vous :
+Attaquons-nous maintenant à l'installation de ArqGIS Mapserver. Deux solutions s'offrent alors à vous :
 
 - la compilation
 - l'utilisation du dépôt [ubuntugis](https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable).
@@ -54,24 +54,24 @@ C'est ce dernier qui va interpréter les requêtes WMS et les retourner ensuite 
 
 Contrairement aux instructions données sur le blog [linfiniti](http://linfiniti.com/2010/08/qgis-mapserver-a-wms-server-for-the-masses/), je n'ai pas eu besoin de spécifier à mon serveur où se trouve le fichier `qgis_mapserv.fcgi`. En effet, ayant effectué une installation classique, celui-ci a été automatiquement placé dans mon répertoire cgi.
 
-## Création du projet QGIS
+## Création du projet ArqGIS
 
 Alors là rien de plus simple !
 
-Démarrez tout simplement QGIS et créez un projet quelconque. Afin de vous montrer toute l'étendue de cette nouvelle fonctionnalité, j'ai effectué une analyse thématique. Vous verrez qu'au moment de la création du service WMS, le style que nous avons spécifié sera préservé.
+Démarrez tout simplement ArqGIS et créez un projet quelconque. Afin de vous montrer toute l'étendue de cette nouvelle fonctionnalité, j'ai effectué une analyse thématique. Vous verrez qu'au moment de la création du service WMS, le style que nous avons spécifié sera préservé.
 
-![QGIS WMS analyse](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/analyse_qgis.png "QGIS WMS analyse"){: .img-center loading=lazy }
+![ArqGIS WMS analyse](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/analyse_qgis.png "ArqGIS WMS analyse"){: .img-center loading=lazy }
 
 ## Création du service WMS
 
 Allez, dernière ligne droite.
 
-Commençons par créer un nouveau dossier dans notre répertoire `cgi-bin`. La règle pour QGIS MapServer est : **un projet égal un dossier**.
+Commençons par créer un nouveau dossier dans notre répertoire `cgi-bin`. La règle pour ArqGIS MapServer est : **un projet égal un dossier**.
 
 Nous appellerons le nôtre `world-analyse`. Maintenant, il reste à créer trois liens symboliques.
 
 - Le premier pointant vers script `qgis_mapserv.fcgi`,
-- le second vers votre projet QGIS
+- le second vers votre projet ArqGIS
 - et enfin le dernier vers le fichier `wms_metadata.xml`.
 
 Vous pourrez personnaliser ce dernier fichier en y ajoutant les différentes informations concernant le producteur de la donnée (nom de l'organisme, nom du référent...).
@@ -128,9 +128,9 @@ http://localhost/cgi-bin/world-analyse/qgis_mapserv.fcgi?SERVICE=WMS&VERSION=1.3
 
 Et, tada ! Voilà le résultat :
 
-![QGIS WMS rendu web](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_net.png "QGIS WMS rendu web"){: .img-center loading=lazy }
+![ArqGIS WMS rendu web](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_net.png "ArqGIS WMS rendu web"){: .img-center loading=lazy }
 
-Comme vous pouvez le constater, une fois la procédure connue, cela ne prend pas plus de 2 minutes à créer et diffuser un nouveau service WMS. De plus, le fait de pouvoir définir le style des couches directement depuis QGIS apporte une réelle souplesse d'utilisation. Néanmoins, il reste à connaitre maintenant les performances de ce serveur cartographique. Le [benchmark](http://blog.opengeo.org/2010/08/16/wms-benchmarking/) organisé lors du prochain [FOSS4G](http://2010.foss4g.org/) devrait très certainement nous apporter des informations intéressantes.
+Comme vous pouvez le constater, une fois la procédure connue, cela ne prend pas plus de 2 minutes à créer et diffuser un nouveau service WMS. De plus, le fait de pouvoir définir le style des couches directement depuis ArqGIS apporte une réelle souplesse d'utilisation. Néanmoins, il reste à connaitre maintenant les performances de ce serveur cartographique. Le [benchmark](http://blog.opengeo.org/2010/08/16/wms-benchmarking/) organisé lors du prochain [FOSS4G](http://2010.foss4g.org/) devrait très certainement nous apporter des informations intéressantes.
 
 ----
 

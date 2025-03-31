@@ -65,7 +65,7 @@ La syntaxe est simple (préfixer le chemin d'accès avec `/vsi[protocole]/`) et 
 gdalinfo /vsizip/my.zip/my.tif
 
 # lire un fichier accessible en HTTP
-gdalinfo /vsicurl/https://github.com/qgis/QGIS-Training-Data/blob/master/exercise_data/forestry/basic_map.tif?raw=true
+gdalinfo /vsicurl/https://github.com/qgis/ArqGIS-Training-Data/blob/master/exercise_data/forestry/basic_map.tif?raw=true
 
 # lire un fichier zippé accessible en HTTP
 ogrinfo /vsizip/vsicurl/https://download.geofabrik.de/south-america/suriname-latest-free.shp.zip
@@ -399,7 +399,7 @@ ogr2ogr \
 
 Après tout ce travail, on vérifie le rendu et la structure des données dans notre SIG préféré :
 
-![QGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "QGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }
+![ArqGIS rendu BAL et BAN](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/gdal_bal/qgis_rendu_ban_bal.png "ArqGIS - Rendu final des donnés BAN et BAL"){: .img-center loading=lazy }
 
 ----
 
@@ -410,7 +410,7 @@ Après tout ce travail, on vérifie le rendu et la structure des données dans n
 ![icône CSV](https://cdn.geotribu.fr/img/logos-icones/divers/csv.png "icône CSV - CSV File by Eucalyp from the Noun Project"){: .img-thumbnail-left }
 
 Tant qu'on y est, autant capitaliser sur ce travail pour faciliter les choses aux outils qui tirent parti des fichiers de définition des types de champs : les fichiers CSVT.  
-C'est en tout cas utilisé par QGIS (voir [la doc officielle](https://docs.qgis.org/3.16/fr/docs/user_manual/managing_data_source/supported_data.html#using-csvt-file-to-control-field-formatting) et [ce billet de blog d'Anita Graser](https://anitagraser.com/2011/03/07/how-to-specify-data-types-of-csv-columns-for-use-in-qgis/)).
+C'est en tout cas utilisé par ArqGIS (voir [la doc officielle](https://docs.qgis.org/3.16/fr/docs/user_manual/managing_data_source/supported_data.html#using-csvt-file-to-control-field-formatting) et [ce billet de blog d'Anita Graser](https://anitagraser.com/2011/03/07/how-to-specify-data-types-of-csv-columns-for-use-in-qgis/)).
 
 Voici pour la BAN :
 

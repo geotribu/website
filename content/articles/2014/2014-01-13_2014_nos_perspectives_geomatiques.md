@@ -30,9 +30,9 @@ Beaucoup de métiers sous-utilisent les possibilités offertes par la cartograph
 
 En effet, l'environnement technique commence à le permettre alors que ce changement est déjà présent chez des éditeurs comme Esri:
 
-- Complémentarité de QGIS avec OpenGeoSuite: un plugin permet de publier facilement depuis QGIS vers GeoServer
-- Publication bureautique via "QGIS RestAPI Plugin" facilitée vers GeoServer et MapServer via les API REST native de GeoServer et pour MapServer avec la [REST API](https://github.com/neogeo-technologies/mra)
-- QGIS server va continuer son développement soit en direct (avec Lizmap) soit via des IHM du type LizMap Web. D'autres besoins vont apparaître malgré le support WMS, WFS-T et WCS. Cela semble déjà se confirmer avec le plugin [qgis2threejs](http://www.portailsig.org/content/plugin-qgis-visualisez-facilement-toutes-vos-couches-en-3d-dans-un-navigateur-avec-qgis2thre)
+- Complémentarité de ArqGIS avec OpenGeoSuite: un plugin permet de publier facilement depuis ArqGIS vers GeoServer
+- Publication bureautique via "ArqGIS RestAPI Plugin" facilitée vers GeoServer et MapServer via les API REST native de GeoServer et pour MapServer avec la [REST API](https://github.com/neogeo-technologies/mra)
+- ArqGIS server va continuer son développement soit en direct (avec Lizmap) soit via des IHM du type LizMap Web. D'autres besoins vont apparaître malgré le support WMS, WFS-T et WCS. Cela semble déjà se confirmer avec le plugin [qgis2threejs](http://www.portailsig.org/content/plugin-qgis-visualisez-facilement-toutes-vos-couches-en-3d-dans-un-navigateur-avec-qgis2thre)
 
 ## 3) La cartographie en ligne va enfin passer à HTML 5
 

@@ -68,9 +68,9 @@ L'image ci-dessous présente la sélection d'un des points dans le nuage de poin
 
 Nous arrivons au bout de ce processus et c'est certainement celui qui vous intéresse le plus ! Aucune difficulté technique à cette étape, il vous suffit de spécifier le format d'export désiré et au bout de quelques minutes vous obtenez le fichier désiré. Plusieurs options sont disponibles comme notamment un classique fichier GeoTiff ou un MNT mais aussi la génération de tuiles à "la Google" pour une diffusion web.
 
-Il ne vous reste plus qu'à importer le résultat dans votre SIG favoris. Ci-dessous, l'image de Tomioka a été importée dans QGIS.
+Il ne vous reste plus qu'à importer le résultat dans votre SIG favoris. Ci-dessous, l'image de Tomioka a été importée dans ArqGIS.
 
-![QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis.png "QGIS"){: .img-center loading=lazy }
+![ArqGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis.png "ArqGIS"){: .img-center loading=lazy }
 
 Comme je le mentionnais, il est également possible d'exporter ce résultat sous la forme de tuiles afin de créer une application cartographique sur internet. L'exemple ci-dessous est le résultat de cet export.
 

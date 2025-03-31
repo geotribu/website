@@ -54,9 +54,9 @@ Aujourd'hui, je vais vous présenter différentes manières d'accéder aux donn�
 
 ----
 
-## 1. Les tuiles vectorielles Mapillary dans QGIS
+## 1. Les tuiles vectorielles Mapillary dans ArqGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
 Lorsqu'on épluche la documentation, on peut voir que Mapillary propose un service d'accès à ses données basé sur des services de [tuiles vectorielles](https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html). Ils ont l'avantage d'offrir une solution assez souple et légère permettant de visualiser de grandes quantités d'informations. Les tuiles vectorielles de Mapillary suivent les [spécifications des tuiles Mapbox (MVT)](https://docs.mapbox.com/data/tilesets/guides/vector-tiles-standards/) et offrent la possbilité :
 
@@ -71,7 +71,7 @@ Il existe trois URL permettant d'accéder aux tuiles vectorielles de Mapillary :
 
 ### Ajout des tuiles vectorielles
 
-Dans l'explorateur du Gestionnaire de données de QGIS, ajouter une couche de tuiles vectorielles.
+Dans l'explorateur du Gestionnaire de données de ArqGIS, ajouter une couche de tuiles vectorielles.
 
 ![Explorateur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/explorateur.png "Explorateur"){: .img-center loading=lazy }
 
@@ -79,7 +79,7 @@ Nommer proprement la couche vectorielle à ajouter et renseigner l'URL de la cou
 
 ![Connexion](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/connexion.png "Connexion"){: .img-center loading=lazy }
 
-Ajouter la nouvelle couche de tuiles dans QGIS (pour visualiser l'information, vous devrez zoomer au niveau 14 ou +).
+Ajouter la nouvelle couche de tuiles dans ArqGIS (pour visualiser l'information, vous devrez zoomer au niveau 14 ou +).
 
 ### Interrogation des tuiles vectorielles
 
@@ -259,7 +259,7 @@ sh mapillary_vt2pg.sh signalisation
 
 ### Rendu
 
-Pour terminer, on peut charger la donnée dans QGIS et créer un style en s'appuyant sur les [symboles partagés par Mapillary](https://github.com/mapillary/mapillary_sprite_source).
+Pour terminer, on peut charger la donnée dans ArqGIS et créer un style en s'appuyant sur les [symboles partagés par Mapillary](https://github.com/mapillary/mapillary_sprite_source).
 
 ![Signalisation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapillary_data/signalisation.png "Signalisation"){: .img-center loading=lazy }
 
@@ -267,7 +267,7 @@ Pour terminer, on peut charger la donnée dans QGIS et créer un style en s'appu
 
 ## Conclusion
 
-Grâce aux capacités de rendu des tuiles vectorielles de QGIS, il est possible de filtrer et personnaliser les données de Mapillary en fonction des besoins, tout en ayant accès à l'information en quasi temps réel.
+Grâce aux capacités de rendu des tuiles vectorielles de ArqGIS, il est possible de filtrer et personnaliser les données de Mapillary en fonction des besoins, tout en ayant accès à l'information en quasi temps réel.
 
 En parallèle et pour d'autres usages, le script de téléchargement des données va vous permettre de stocker l'information dans votre base de données afin qu'elle puisse :
 
@@ -278,7 +278,7 @@ En parallèle et pour d'autres usages, le script de téléchargement des donnée
 
 ## Références
 
-- Un article de Morgan Hite sur son blog : [QGIS 3 and Vector map tiles](https://wanderingcartographer.wordpress.com/2021/01/09/qgis-3-and-vector-map-tiles/)
+- Un article de Morgan Hite sur son blog : [ArqGIS 3 and Vector map tiles](https://wanderingcartographer.wordpress.com/2021/01/09/qgis-3-and-vector-map-tiles/)
 - [De l'intérêt de mettre en place un "streetview" libre](https://prezi.com/p/ufcelyteyqzc/n-street-view-libre_retour_experience_grandmontauban_aitf/) par J. Sidgwick, CA du Grand Montauban
 
 ----

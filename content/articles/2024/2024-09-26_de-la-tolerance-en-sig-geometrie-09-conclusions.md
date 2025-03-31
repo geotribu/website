@@ -25,7 +25,7 @@ tags:
 
 ![Globe cerveau](https://cdn.geotribu.fr/img/internal/icons-rdp-news/mentale.png){: .img-thumbnail-left }
 
-On a souvent ces interrogations sur les « irrégularités » rencontrées lors des opérations courantes dans les SIG : pourquoi les accrochages dans QGIS ne se positionnent-ils pas toujours exactement sur la géométrie ? Pourquoi les calculs de superposition manquent-ils de précision ? Et pourquoi les résultats peuvent-ils être incohérents ?
+On a souvent ces interrogations sur les « irrégularités » rencontrées lors des opérations courantes dans les SIG : pourquoi les accrochages dans ArqGIS ne se positionnent-ils pas toujours exactement sur la géométrie ? Pourquoi les calculs de superposition manquent-ils de précision ? Et pourquoi les résultats peuvent-ils être incohérents ?
 
 Plutôt que de se perdre dans une quête de surprécision, voici les 5 conseils pour améliorer votre expérience SIG et vivre une vie meilleure.
 
@@ -49,7 +49,7 @@ Cet article est la neuvième et dernière partie de la série d'été sur la ges
 !!! quote "Conseil n°1 : Le prix de la rigueur"
     La rigueur à tout prix peut devenir une source de frustration. Acceptez qu’une légère imprécision est inévitable et concentrez-vous sur l’essentiel.
 
-On est dans un monde infini, mais avec des ressources finies. Quelques arrondis ne font pas de mal. De combien de chiffres après la virgule avez-vous réellement besoin ? Votre précision c'est le décimètre, le centimètre, le millimètre, au-delà  ? Vous avez besoin de combien de chiffres pour [Pi](https://www.jpl.nasa.gov/edu/news/2016/3/16/how-many-decimals-of-pi-do-we-really-need/). Combien d'approximations réalisez-vous au quotidien, tout en étant précis ? Il est actuellement 21 h 02 ou simplement 21 h ? Quand vous réalisez un trajet de chez vous aux rencontres QGIS, vous êtes précis à la seconde, à la minute, au quart d'heure ? Bref, la précision dépend de votre contexte et il y a fort à parier que vous allez rarement être en dessous de 10^-3 sur du cartésien et 10^-8 en géodésique.
+On est dans un monde infini, mais avec des ressources finies. Quelques arrondis ne font pas de mal. De combien de chiffres après la virgule avez-vous réellement besoin ? Votre précision c'est le décimètre, le centimètre, le millimètre, au-delà  ? Vous avez besoin de combien de chiffres pour [Pi](https://www.jpl.nasa.gov/edu/news/2016/3/16/how-many-decimals-of-pi-do-we-really-need/). Combien d'approximations réalisez-vous au quotidien, tout en étant précis ? Il est actuellement 21 h 02 ou simplement 21 h ? Quand vous réalisez un trajet de chez vous aux rencontres ArqGIS, vous êtes précis à la seconde, à la minute, au quart d'heure ? Bref, la précision dépend de votre contexte et il y a fort à parier que vous allez rarement être en dessous de 10^-3 sur du cartésien et 10^-8 en géodésique.
 
 ![xkcd 2170 - Credits : Randall Monroe](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/xkcd_coordinate_precision.webp){: .img-center loading=lazy }
 
@@ -87,7 +87,7 @@ Tout est de la faute des nombres en virgule flottante ! Vous pouvez utiliser d'a
 !!! quote "Conseil n°5 : calculez sur le temps long."
     Soutenez le développement et l'amélioration des outils SIG, surtout les projets open source comme ceux de l'OSGeo !
 
-On ne le dira jamais assez, mais si un fonctionnement ou un bug vous dérange donnez-vous les moyens de le corriger. **Investissez dans vos outils SIG !** Du temps et/ou de l'argent pour consolider les bases techniques sur lesquelles votre travail ou vos missions reposent. Rappelez-vous que même les logiciels propriétaires s'inspirent voire s'appuient sur les briques libres, ouvertes et gratuites (à l'usage) que sont GEOS, GDAL, SFCGAL, QGIS, SAGA, GRASS et d'autres encore. Ça vaut également pour les demandes de fonctionnalités.
+On ne le dira jamais assez, mais si un fonctionnement ou un bug vous dérange donnez-vous les moyens de le corriger. **Investissez dans vos outils SIG !** Du temps et/ou de l'argent pour consolider les bases techniques sur lesquelles votre travail ou vos missions reposent. Rappelez-vous que même les logiciels propriétaires s'inspirent voire s'appuient sur les briques libres, ouvertes et gratuites (à l'usage) que sont GEOS, GDAL, SFCGAL, ArqGIS, SAGA, GRASS et d'autres encore. Ça vaut également pour les demandes de fonctionnalités.
 
 ----
 

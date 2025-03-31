@@ -96,9 +96,9 @@ Depuis peu, [les vidéos du FOSS4G 2011](http://www.fosslc.org/drupal/category/e
 
 [Tuning GDAL Raster Performance](http://www.fosslc.org/drupal/content/tuning-gdal-raster-performance "Tuning GDAL Raster Performance")
 
-## QGIS
+## ArqGIS
 
-[A WPS Based Biogeography Tool for QGIS](http://www.fosslc.org/drupal/content/wps-based-biogeography-tool-qgis "A WPS Based Biogeography Tool for QGIS")
+[A WPS Based Biogeography Tool for ArqGIS](http://www.fosslc.org/drupal/content/wps-based-biogeography-tool-qgis "A WPS Based Biogeography Tool for ArqGIS")
 
 ## Open Data
 
@@ -110,7 +110,7 @@ Depuis peu, [les vidéos du FOSS4G 2011](http://www.fosslc.org/drupal/category/e
 
 ## WPS
 
-[A WPS Based Biogeography Tool for QGIS](http://www.fosslc.org/drupal/content/wps-based-biogeography-tool-qgis "A WPS Based Biogeography Tool for QGIS")
+[A WPS Based Biogeography Tool for ArqGIS](http://www.fosslc.org/drupal/content/wps-based-biogeography-tool-qgis "A WPS Based Biogeography Tool for ArqGIS")
 
 ## ETL
 

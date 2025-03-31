@@ -19,7 +19,7 @@ tags:
 
 ![logo OrbisGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/orbigis.jpg "logo OrbisGIS"){: .img-thumbnail-left}
 
-Après avoir successivement exploré [PuzzleGis](http://geotribu.net/node/117), [OpenJump](http://geotribu.net/node/120), [UDIG](http://geotribu.net/node/126) et enfin [QGIS](http://geotribu.net/node/152) nous découvrirons au cours de ce billet [OrbisGis](http://brehat.ec-nantes.fr/orbisgis/doku.php). Ce dernier développé par l'[Institute on Urban Sciences and Technics](http://www.irstv.cnrs.fr/) (CNRS) est l'œuvre de trois géomaticiens Erwan BOCHER, Thomas LEDUC, Fernando GONZALES-CORTES. N'ayant jamais entendu parlé de ce logiciel, je m'attendais à une "petite application maison" sans grande particularité. Cet a priori ne fut que temporaire et j'avoue avoir été très agréablement surpris. De plus OrbisGIS dispose d'une [documentation](http://brehat.ec-nantes.fr/orbisgis/doku.php?id=support:doc) riche et interactive ce qui permet de ne jamais se sentir pris au dépourvu. Découvrons ensemble ce logiciel.
+Après avoir successivement exploré [PuzzleGis](http://geotribu.net/node/117), [OpenJump](http://geotribu.net/node/120), [UDIG](http://geotribu.net/node/126) et enfin [ArqGIS](http://geotribu.net/node/152) nous découvrirons au cours de ce billet [OrbisGis](http://brehat.ec-nantes.fr/orbisgis/doku.php). Ce dernier développé par l'[Institute on Urban Sciences and Technics](http://www.irstv.cnrs.fr/) (CNRS) est l'œuvre de trois géomaticiens Erwan BOCHER, Thomas LEDUC, Fernando GONZALES-CORTES. N'ayant jamais entendu parlé de ce logiciel, je m'attendais à une "petite application maison" sans grande particularité. Cet a priori ne fut que temporaire et j'avoue avoir été très agréablement surpris. De plus OrbisGIS dispose d'une [documentation](http://brehat.ec-nantes.fr/orbisgis/doku.php?id=support:doc) riche et interactive ce qui permet de ne jamais se sentir pris au dépourvu. Découvrons ensemble ce logiciel.
 
 ## Téléchargement et installation
 
@@ -35,7 +35,7 @@ L'interface est complètement modulaire ce qui permet d'ajouter, de supprimer ou
 
 ## Accès aux données
 
-Même si OrbisGis permet d'accéder à plus d'une dizaine de formats de données, nous sommes tout de même loin des potentialités de QGIS. Néanmoins, il est possible d'ouvrir des données au format VRML (3D). Cela s'explique je pense du fait qu'OrbisGIS soit développé dans le but de simuler des phénomènes urbains d'où la nécessité de pouvoir afficher des objets 3D.
+Même si OrbisGis permet d'accéder à plus d'une dizaine de formats de données, nous sommes tout de même loin des potentialités de ArqGIS. Néanmoins, il est possible d'ouvrir des données au format VRML (3D). Cela s'explique je pense du fait qu'OrbisGIS soit développé dans le but de simuler des phénomènes urbains d'où la nécessité de pouvoir afficher des objets 3D.
 
 ![OrbisGIS - Données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/data.png "OrbisGIS - Données"){: .img-center loading=lazy }
 

@@ -16,7 +16,7 @@ tags:
     - GeoPandas
     - Pandas
     - Python
-    - QGIS
+    - ArqGIS
     - Vendée Globe
     - voile
 ---
@@ -45,7 +45,7 @@ Qui dit course autour du monde, dit forcément carte pour suivre l’évolution 
 
 ![Vendée Globe - Carte interactive officielle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/carte_interactive.png){: .img-center loading=lazy }
 
-J’ai donc cherché s’il existait une API ou un web service fournissant les données de positionnement pour les visualiser dans un SIG, comme QGIS par exemple. Après quelques recherches, je n’ai rien trouvé de tel.
+J’ai donc cherché s’il existait une API ou un web service fournissant les données de positionnement pour les visualiser dans un SIG, comme ArqGIS par exemple. Après quelques recherches, je n’ai rien trouvé de tel.
 
 J’ai trouvé une [discussion](https://www.reddit.com/r/Vendee_Globe/s/Gbli34xyQO) sur Reddit à ce sujet, mais sans réponse concluante.
 
@@ -78,7 +78,7 @@ Il faut donc complèter la date (format AAAAMMJJ) et l'heure du pointages (HHMMS
 
 Ensuite, il est nécessaire de traiter la manière dont les données de localisation sont présentées. En effet, les positions des bateaux sont souvent fournies sous un format de coordonnées géographiques en degrés, minutes et secondes (DMS). Bien que ce format soit utile, il n'est pas directement compatible avec les outils de géomatique. Il est donc indispensable de les convertir en degrés décimaux, un format plus standard et précis, qui permet de travailler facilement avec des cartes et des systèmes d'information géographique (SIG).
 
-Enfin, il est important d'exporter ces données SIG dans un format compatible, comme le GeoPackage ou le GeoJSON. Une fois converties, ces données peuvent être utilisées dans n'importe quel SIG, qu'il s'agisse d'un SIG bureautique comme QGIS ou d'une carte web SIG avec des outils comme MapLibre ou Leaflet.
+Enfin, il est important d'exporter ces données SIG dans un format compatible, comme le GeoPackage ou le GeoJSON. Une fois converties, ces données peuvent être utilisées dans n'importe quel SIG, qu'il s'agisse d'un SIG bureautique comme ArqGIS ou d'une carte web SIG avec des outils comme MapLibre ou Leaflet.
 
 ----
 
@@ -167,9 +167,9 @@ python dernier_pointage.py --output-dir ./data_vg
 
 Le résultat obtenu est une couche de points du dernier pointage en date. Par exemple, si j'exécute cette ligne de commande à 14h45, j'aurai le pointage de 10h (et non celui de 14h à cause du décalage de publication de 1h).
 
-Une fois affiché dans QGIS et avec un peu de travail sur le style, voici le résultat :
+Une fois affiché dans ArqGIS et avec un peu de travail sur le style, voici le résultat :
 
-![Screenshot QGIS - Couche des positions du dernier pointage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/dernier_pointage.png){: .img-center loading=lazy }
+![Screenshot ArqGIS - Couche des positions du dernier pointage](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/dernier_pointage.png){: .img-center loading=lazy }
 
 ### Obtenir l’intégralité des pointages et la trace depuis le départ
 
@@ -184,13 +184,13 @@ On obtient un geopackage qui contient deux couches :
 - Une couche de l'historique de tous les pointages depuis le départ.
 - Une couche de ligne qui reproduit la trajectoire de chaque bateau.
 
-![Screenshot QGIS - Couches des trajectoires depuis le départ et intégralité des pointages](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/trajectoire.png){: .img-center loading=lazy }
+![Screenshot ArqGIS - Couches des trajectoires depuis le départ et intégralité des pointages](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/trajectoire.png){: .img-center loading=lazy }
 
 ### Les données attributaires
 
 Dans les deux fonctionnalités, on retrouve dans la table atttributaire des couches toutes les informations du tableur. J'ai seulement ajouté une colonne `timestamp`, elle est utilisée pour relier les pointages entre eux et créer la couche des trajectoires.
 
-![Screenshot QGIS - Table attributaire des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/table_attrib.png){: .img-center loading=lazy }
+![Screenshot ArqGIS - Table attributaire des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/table_attrib.png){: .img-center loading=lazy }
 
 !!! info "Signification des préfixes dans les noms de colonne"
     - `30m` = Depuis 30 minutes
@@ -201,18 +201,18 @@ Peut-être faudrait-il enlever les unités dans les données pour avoir des vale
 
 ----
 
-## Animer la progression avec le Temporal Control de QGIS
+## Animer la progression avec le Temporal Control de ArqGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
-Pour visualiser les données, QGIS est tout indiqué et comme les données ont une dimension temporelles, c'est l'occasion de jouer avec le contrôleur temporel.
+Pour visualiser les données, ArqGIS est tout indiqué et comme les données ont une dimension temporelles, c'est l'occasion de jouer avec le contrôleur temporel.
 Pour ce tutoriel, il faut utiliser la couche `pointages` produite par `trajectoires_pointages.py`.
 
 ### Configurer la couche
 
 Après avoir accédé aux propriétés de la couche (clic droit > Propriétés), rendez-vous dans l'onglet **Temporel**. Configurez les paramètres comme suit :
 
-![QGIS - Configuration de l'onglet Temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/temporel.png){: .img-center loading=lazy }
+![ArqGIS - Configuration de l'onglet Temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/temporel.png){: .img-center loading=lazy }
 
 ### Afficher la barre d'outils temporelle
 
@@ -224,16 +224,16 @@ Après avoir accédé aux propriétés de la couche (clic droit > Propriétés),
 - Ajustez la date de départ au début de l'épreuve.
 - Indiquez un pas de 4 heures (c'est le delta entre deux pointages).
 
-![QGIS - Configuration du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/controleur.png){: .img-center loading=lazy }
+![ArqGIS - Configuration du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/controleur.png){: .img-center loading=lazy }
 
 ### Animation de la couche
 
 Après avoir cliqué sur Play, voici le résultat que vous devriez obtenir :
 
-![QGIS - Animation du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/qgis-temporal.gif){: .img-center loading=lazy }
+![ArqGIS - Animation du contrôleur temporel](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/qgis-temporal.gif){: .img-center loading=lazy }
 
 <!-- markdownlint-disable MD046 -->
-!!! tip "Expression QGIS pour filtrer le suivi sur un concurent"
+!!! tip "Expression ArqGIS pour filtrer le suivi sur un concurent"
 
     ```sql
     "skipper" = 'Maxime Sorel'
@@ -244,7 +244,7 @@ Après avoir cliqué sur Play, voici le résultat que vous devriez obtenir :
 
 Cette première étape n’est qu’un POC (Proof of Concept) le code peut encore être optimisé et je vais continuer de le faire tout au long de la course (en espérant que le formalisme et les horaires de publication du tableur ne changent pas). Par la suite, plusieurs idées pourraient être explorées. Je vais sûrement explorer l'une d'entre elles.
 
-- **Créer un plugin QGIS** : Un plugin QGIS pourrait permettre de charger le classement, la dernière position des navires, et leur trajectoire. On pourrait imaginer que le post-traitement du fichier Excel vers des données SIG soit effectué par l’intégration continue (CI) et exporté en GeoJSON, et que le plugin charge ces GeoJSON hébergés dans le projet GitHub.
+- **Créer un plugin ArqGIS** : Un plugin ArqGIS pourrait permettre de charger le classement, la dernière position des navires, et leur trajectoire. On pourrait imaginer que le post-traitement du fichier Excel vers des données SIG soit effectué par l’intégration continue (CI) et exporté en GeoJSON, et que le plugin charge ces GeoJSON hébergés dans le projet GitHub.
 
 - **Fournir les données via une API** : On pourrait imaginer un projet qui récupère automatiquement ces données, les convertit et les structure, puis expose une API qui fournit une position ou une trajectoire en fonction du numéro d’un concurrent, par exemple.
 

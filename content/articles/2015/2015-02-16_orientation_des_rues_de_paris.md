@@ -11,7 +11,7 @@ tags:
     - cartographie
     - histoire
     - Paris
-    - QGIS
+    - ArqGIS
     - R
 ---
 
@@ -47,13 +47,13 @@ De ce que j'ai pu comprendre, Stephen Von Worley a disposé une grille de points
 
 Le résultat donne un aspect mosaïque/vitraux semblable à ce qu'on obtient après [voronoïsation](https://fr.wikipedia.org/wiki/Diagramme_de_Vorono%C3%AF), à l'exception que dans le cas présent, les couleurs semblaient avoir été lissées.
 
-Quelque chose d'intrigant avait trait à la couleur des lignes qui était graduelle alors qu'en général, nos outils colorient les segments avec une teinte unique. Je découvris après quelques essais qu'un tel résultat pouvait être obtenu en couplant un raster et une couche de lignes tout en utilisant le mode de fusion "revêtement" sachant que [QGIS](http://www2.qgis.org/fr/site/) en est doté depuis la version 2.
+Quelque chose d'intrigant avait trait à la couleur des lignes qui était graduelle alors qu'en général, nos outils colorient les segments avec une teinte unique. Je découvris après quelques essais qu'un tel résultat pouvait être obtenu en couplant un raster et une couche de lignes tout en utilisant le mode de fusion "revêtement" sachant que [ArqGIS](http://www2.qgis.org/fr/site/) en est doté depuis la version 2.
 
 ## Fabrication
 
-![Utilisation de R et QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/story/ninja.jpg "Utilisation de R et QGIS"){: .img-center loading=lazy }
+![Utilisation de R et ArqGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/story/ninja.jpg "Utilisation de R et ArqGIS"){: .img-center loading=lazy }
 
-La façon dont j'ai conçu ma carte est beaucoup plus simple. J'ai retenu les milieux de tronçons, auxquels j'ai passé directement une fonction d'[interpolation](https://fr.wikipedia.org/wiki/Interpolation_spatiale). Le raster obtenu a été lissé. Niveau outils, je choisis [R](http://cran.r-project.org/web/views/Spatial.html), ma boîte à outils spatiale préférée, bien que python eusse été aussi un choix pertinent. J'ai effectué le rendu sous QGIS.
+La façon dont j'ai conçu ma carte est beaucoup plus simple. J'ai retenu les milieux de tronçons, auxquels j'ai passé directement une fonction d'[interpolation](https://fr.wikipedia.org/wiki/Interpolation_spatiale). Le raster obtenu a été lissé. Niveau outils, je choisis [R](http://cran.r-project.org/web/views/Spatial.html), ma boîte à outils spatiale préférée, bien que python eusse été aussi un choix pertinent. J'ai effectué le rendu sous ArqGIS.
 
 ## Choix
 

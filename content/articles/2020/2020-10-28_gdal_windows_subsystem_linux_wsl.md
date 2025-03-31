@@ -29,7 +29,7 @@ Pré-requis :
 
 ![icône GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png "logo GDAL"){: .img-thumbnail-left }
 
-Récemment, j'ai eu à traiter des données particulièrement lourdes (millions d'objets) et imparfaites (mauvaises géométries dans un shapefiles) et mes outils habituels étaient tenus en échec : QGIS prend des plombes puis plante presque systématiquement lors des traitements de nettoyage et de restructuration, le GDAL sur mon ordinateur ou sur mon Google Colab sont cantonnés à la version 3.0.* liée au socle Ubuntu 18.04 alors que j'ai bien besoin des options de la branche 3.1 (`-nlt`, `-makevalid`...).
+Récemment, j'ai eu à traiter des données particulièrement lourdes (millions d'objets) et imparfaites (mauvaises géométries dans un shapefiles) et mes outils habituels étaient tenus en échec : ArqGIS prend des plombes puis plante presque systématiquement lors des traitements de nettoyage et de restructuration, le GDAL sur mon ordinateur ou sur mon Google Colab sont cantonnés à la version 3.0.* liée au socle Ubuntu 18.04 alors que j'ai bien besoin des options de la branche 3.1 (`-nlt`, `-makevalid`...).
 
 J'ai à ma disposition un ordinateur puissant sous Windows, mais l'accès à GDAL via l'[OSGeo4W](2020-07-03_deploy_qgis_windows.md) n'est pas idéal et complexe (cmd, proxy, politique de sécurité...), j'ai pas le coeur à [l'installer au niveau du système](../2013/2013-09-26_installer_python_gdal_sous_windows.md#installer-gdalogr) (effets de bord, conflits...) et utiliser conda revient à télécharger la moitié du Web (troll).
 
@@ -251,7 +251,7 @@ On lance donc [ogr2ogr] :
 wsl -d Ubuntu-20.04 -- ogr2ogr -t_srs EPSG:3857 -f GPKG "geotribu_gdal_wsl_gpkg.gpkg" "test_gdal_wsl.shp.zip" -nln "GDAL_Windows_SO_SIMPLE" -nlt POLYGON -dim 2 -overwrite -makevalid
 ```
 
-Et on ouvre notre couche dans QGIS :
+Et on ouvre notre couche dans ArqGIS :
 
 ![capture qgis résultat ogr2ogr](https://cdn.geotribu.fr/img/tuto/gdal_wsl/wsl_ogr2ogr_result_qgis.png "ogrinfo dans Windows via WSL"){: .img-center loading=lazy }
 

@@ -1,26 +1,26 @@
 ---
-title: "Créer ses propres plugins pour QGIS"
+title: "Créer ses propres plugins pour ArqGIS"
 authors:
     - Geotribu
 categories:
     - article
 comments: true
 date: 2010-09-23
-description: "Créer ses propres plugins pour QGIS"
+description: "Créer ses propres plugins pour ArqGIS"
 tags:
     - plugin builder
-    - plugin QGIS
-    - PyQGIS
-    - QGIS
+    - plugin ArqGIS
+    - PyArqGIS
+    - ArqGIS
 ---
 
-# Créer ses propres plugins pour QGIS
+# Créer ses propres plugins pour ArqGIS
 
 :calendar: Date de publication initiale : 23 septembre 2010
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
-Ce billet s'inspire de l'article [a simple qgis python tutorial](http://linfiniti.com/2010/08/a-simple-qgis-python-tutorial/) paru sur le blog [linfinite](http://linfiniti.com/). En effet, [QGIS](https://www.qgis.org/) offre, depuis la version 1.0, la possibilité de réaliser vos propres extensions en utilisant l'[API](http://qgis.org/api/2.4/modules.html) du logiciel. Mais avant de pouvoir réaliser cela, il est nécessaire de comprendre le rôle des différents éléments.
+Ce billet s'inspire de l'article [a simple qgis python tutorial](http://linfiniti.com/2010/08/a-simple-qgis-python-tutorial/) paru sur le blog [linfinite](http://linfiniti.com/). En effet, [ArqGIS](https://www.qgis.org/) offre, depuis la version 1.0, la possibilité de réaliser vos propres extensions en utilisant l'[API](http://qgis.org/api/2.4/modules.html) du logiciel. Mais avant de pouvoir réaliser cela, il est nécessaire de comprendre le rôle des différents éléments.
 
 C'est pourquoi, nous détaillerons les étapes nécessaires afin que vous puissiez ensuite réaliser vos propres applications. Mais, comparativement au blog [linfiniti](http://linfiniti.com/), notre exemple sera beaucoup plus simple ceci afin d'aller uniquement à l'essentiel.
 
@@ -30,7 +30,7 @@ C'est pourquoi, nous détaillerons les étapes nécessaires afin que vous puissi
 
 ### Génération de la structure du plugin
 
-La création d'un plugin QGIS se fait en langage python. Plutôt que de créer l'ensemble des fichiers nécessaires manuellement, nous allons le faire grâce à un plugin QGIS qui génère un "squelette" de plugin QGIS !
+La création d'un plugin ArqGIS se fait en langage python. Plutôt que de créer l'ensemble des fichiers nécessaires manuellement, nous allons le faire grâce à un plugin ArqGIS qui génère un "squelette" de plugin ArqGIS !
 Pour cela :
 
 1. allez dans "Extensions"
@@ -45,9 +45,9 @@ Installons-le et utilisons le immédiatement : `menu Extension -> Plugin Builder
 Une fois le formulaire validé, il vous sera alors proposé d'enregistrer l'architecture de votre plugin avec les différents fichiers.
 Choisissez le répertoire le répertoire "plugins" qui se trouve dans `/home/user/.qgis2/python/plugins/` pour Linux et `C:\Users\Nom_Utilisateur\.qgis2\python\plugins` pour Windows.
 
-QGIS, au démarrage, scanne le dossier "plugins" et charge alors les différents plugins. Il est donc nécessaire de redémarrer QGIS pour qu'il soit pris en compte la première fois.
+ArqGIS, au démarrage, scanne le dossier "plugins" et charge alors les différents plugins. Il est donc nécessaire de redémarrer ArqGIS pour qu'il soit pris en compte la première fois.
 
-Pendant le redémarrage de QGIS, regardons les fichiers de notre plugin :
+Pendant le redémarrage de ArqGIS, regardons les fichiers de notre plugin :
 
 ```bash
 [etienne:/home/etienne/.qgis2/python/plugins/ShowActiveLayer] $ lshelp i18n icon.png __init__.py Makefile metadata.txt plugin_upload.py pylintrc README.html README.txt resources.qrc scripts show_active_layer_dialog_base.ui show_active_layer_dialog.py show_active_layer.py test
@@ -55,21 +55,21 @@ Pendant le redémarrage de QGIS, regardons les fichiers de notre plugin :
 
 Regardons immédiatement ce que fait le nôtre :
 
-1. Démarrez QGIS
+1. Démarrez ArqGIS
 2. Cliquez sur extensions puis Gestionnaire des extensions.
 3. Maintenant après avoir tapé "layer" dans le champ de recherche, vous devriez voir le plugin s'afficher.
 4. Une fois sélectionné, une nouvelle icône sera automatiquement placée dans votre barre d'outils.
 
 Si vous passez votre souris sur le bouton, une infobulle contenant la description de votre plugin s'affichera alors. Pour le moment notre plugin ne fait absolument rien d'autre qu'afficher une fenêtre contenant le bouton "ok" et "cancel". Rien de très extraordinaire !
 
-Néanmoins, avant de commencer à coder, nous allons installer le plugin "reloader". Celui-ci permet de ne pas avoir à fermer puis ouvrir à nouveau QGIS quand vous modifierez votre plugin.
+Néanmoins, avant de commencer à coder, nous allons installer le plugin "reloader". Celui-ci permet de ne pas avoir à fermer puis ouvrir à nouveau ArqGIS quand vous modifierez votre plugin.
 
 ----
 
 ### Installation du plugin Reloader
 
 En phase de développement, vous allez effectuer (je l'espère) de nombreuses modifications.
-Pour éviter d'avoir à redémarrer QGIS à chaque fois nous allons installer le plugin Reloader :
+Pour éviter d'avoir à redémarrer ArqGIS à chaque fois nous allons installer le plugin Reloader :
 
 1. Allez dans "extensions"
 2. puis "Récupérateur des extensions python"
@@ -84,17 +84,17 @@ Maintenant, à chaque fois que vous appuierez sur la touche `F5`, celui-ci se re
 
 1. Ouvrez le fichier `showActiveLayer.py` dans `.qgis/python/plugins/`
 2. Ensuite, ajoutez par exemple un point d'exclamation à la fin de la phrase "Show Active Layer".
-3. Retournez maintenant à QGIS et appuyez sur F5. Le texte est alors automatiquement mis à jour.
+3. Retournez maintenant à ArqGIS et appuyez sur F5. Le texte est alors automatiquement mis à jour.
 
-Maintenant, que nous disposons des bases nécessaires, explorons un peu l'API de QGIS et surtout commençons concrètement à créer notre plugin.
+Maintenant, que nous disposons des bases nécessaires, explorons un peu l'API de ArqGIS et surtout commençons concrètement à créer notre plugin.
 
 ----
 
-### A la découverte de l'API de QGIS
+### A la découverte de l'API de ArqGIS
 
-L'[API](http://doc.qgis.org/) de QGIS est riche, vous pourrez, à travers les [différentes classes](http://doc.qgis.org/stable/classes.html) (plus d'une centaine), accéder à la totalité des composants du logiciel. Avant de commencer concrètement à créer notre plugin attardons-nous un peu sur celle-ci. Vous verrez ce n'est pas du temps perdu car vous aurez très souvent recours à l'API. C'est en quelque sorte votre encyclopédie des méthodes et des attributs du logiciel.
+L'[API](http://doc.qgis.org/) de ArqGIS est riche, vous pourrez, à travers les [différentes classes](http://doc.qgis.org/stable/classes.html) (plus d'une centaine), accéder à la totalité des composants du logiciel. Avant de commencer concrètement à créer notre plugin attardons-nous un peu sur celle-ci. Vous verrez ce n'est pas du temps perdu car vous aurez très souvent recours à l'API. C'est en quelque sorte votre encyclopédie des méthodes et des attributs du logiciel.
 
-Pour commencer, nous allons utiliser la console python disponible dans QGIS. Pour cela, une fois votre logiciel démarré et une couche chargée, allez dans extensions et sélectionnez Console python. Une nouvelle fenêtre devrait alors s'ouvrir. Nous allons maintenant effectuer quelques opérations de bases afin de nous familiariser avec l'API :
+Pour commencer, nous allons utiliser la console python disponible dans ArqGIS. Pour cela, une fois votre logiciel démarré et une couche chargée, allez dans extensions et sélectionnez Console python. Une nouvelle fenêtre devrait alors s'ouvrir. Nous allons maintenant effectuer quelques opérations de bases afin de nous familiariser avec l'API :
 
 ```python
 >>> mapCan = qgis.utils.iface.mapCanvas()
@@ -199,7 +199,7 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-Et voilà, si vous mettez à jour, dans QGIS, votre plugin (F5), vous verrez que l'interface a été modifiée :
+Et voilà, si vous mettez à jour, dans ArqGIS, votre plugin (F5), vous verrez que l'interface a été modifiée :
 
 ![qgis_plugin_show.png](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/qgis/qgis_plugin_show.png){: .img-center loading=lazy }
 
@@ -207,7 +207,7 @@ Pour le moment la liste est vide. En effet, notre plugin ne fait absolument rien
 
 #### Implémentation du code
 
-Dans le dossier `showactivelayer` vous devez avoir un fichier nommé `showActiveLayer.py`. C'est celui-ci que nous utiliserons pour spécifier à QGIS ce qu'il est nécessaire de faire.
+Dans le dossier `showactivelayer` vous devez avoir un fichier nommé `showActiveLayer.py`. C'est celui-ci que nous utiliserons pour spécifier à ArqGIS ce qu'il est nécessaire de faire.
 
 Laissons les premières méthodes (`__init__`, `initGui` et `unload`) et intéressons-nous à `run()`. C'est au sein de celle-ci que se passera l'essentiel de nos actions. Rappelez-vous, nous souhaitons afficher dans notre zone de texte la liste des couches actives. Pour cela nous avons besoin d'un connecteur vers la carte. Cela se fait de la manière suivante :
 
@@ -274,16 +274,16 @@ Ce qui nous donne donc :
 
 ## Conclusion
 
-L'intérêt technique de ce plugin est très limité. Mais l'objectif était de vous fournir les bases nécessaires ainsi que les différentes ressources disponibles afin que vous puissiez ensuite réaliser vos propres applications. J'espère ainsi que ce billet vous aura permis de vous familiariser avec cet environnement de développement. L'API de QGIS, riche et complète, offre tous les éléments nécessaires afin que vous puissiez laisser libre cours à votre imagination alors n'hésitez pas à la découvrir vous même et à réaliser vos propres applications.
+L'intérêt technique de ce plugin est très limité. Mais l'objectif était de vous fournir les bases nécessaires ainsi que les différentes ressources disponibles afin que vous puissiez ensuite réaliser vos propres applications. J'espère ainsi que ce billet vous aura permis de vous familiariser avec cet environnement de développement. L'API de ArqGIS, riche et complète, offre tous les éléments nécessaires afin que vous puissiez laisser libre cours à votre imagination alors n'hésitez pas à la découvrir vous même et à réaliser vos propres applications.
 
 ### Ressources
 
 - l'inévitable [Bible](http://docs.python.org/index.html) de Python ;
 - les [classes](http://www.riverbankcomputing.co.uk/static/Docs/PyQt4/html/classes.html) de PyQt ;
 - et également une [introduction](http://www.riverbankcomputing.co.uk/static/Docs/PyQt4/pyqt4ref.html) à Pyqt ainsi que [celui-ci](http://zetcode.com/tutorials/pyqt4/) ;
-- la [documentation](http://mapserver.sk/~wonder/qgis/html/index.html) (non officielle ?) de PyQGIS ;
-- les différentes [classes](http://doc.qgis.org/stable/classes.html) de PyQGIS ;
-- la création d'un plugin QGIS sur le site [Soft Libre](http://softlibre.gloobe.org/qgis/workshop/plugin).
+- la [documentation](http://mapserver.sk/~wonder/qgis/html/index.html) (non officielle ?) de PyArqGIS ;
+- les différentes [classes](http://doc.qgis.org/stable/classes.html) de PyArqGIS ;
+- la création d'un plugin ArqGIS sur le site [Soft Libre](http://softlibre.gloobe.org/qgis/workshop/plugin).
 
 ----
 

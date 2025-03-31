@@ -345,9 +345,9 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville 
     AND bbox.ymax < 48.073450034830316);
     ```
 
-#### Visualiser les données dans QGIS
+#### Visualiser les données dans ArqGIS
 
-Pour cela, installer le plugin QGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qduckdb/), en cochant la case `Afficher les extensions expérimentales` dans l'onglet `Paramètres` du gestionnaire d'extensions.
+Pour cela, installer le plugin ArqGIS [QDuckDB](https://oslandia.gitlab.io/qgis/qduckdb/), en cochant la case `Afficher les extensions expérimentales` dans l'onglet `Paramètres` du gestionnaire d'extensions.
 
 ![qduckdb](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/duckdb_spatial/qduckdb.png){: .img-center loading=lazy }
 

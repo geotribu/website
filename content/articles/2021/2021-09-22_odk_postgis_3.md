@@ -42,7 +42,7 @@ Une fois les données centralisés, différentes solutions d'exploitation, d'ana
 ### Outils opensource
 
 * R / [RuODK](https://github.com/ropensci/ruODK)
-* QGIS -> [QRealtime](https://shivareddyiirs.github.io/QRealTime/)
+* ArqGIS -> [QRealtime](https://shivareddyiirs.github.io/QRealTime/)
 * Redash : via [l'API](https://forum.getodk.org/t/first-use-of-a-central-web-form-and-basic-restitution-with-redash/30334/4) ou à travers une base de données PostgreSQL intermédiaire
 * PostgreSQL/PostGIS -> [Central2PG](https://forum.getodk.org/t/postgresql-set-of-functions-to-get-data-from-central/33350) est la solution qui sera présentée plus en détail dans cet article
 
@@ -99,7 +99,7 @@ Ne souhaitant pas passer par un outil tiers, de type ETL (*Extract, Transform an
 
 La première idée explorée a consisté à exploiter les données XML de la table submission_defs avec les fonctions intégrées de PostgreSQL.
 
-Cette méthode a été concluante puisque la vue suivante, présentée en détail [sur le forum d'ODK](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102?u=mathieubossaert) peut être affichée dans QGIS :partying_face: :
+Cette méthode a été concluante puisque la vue suivante, présentée en détail [sur le forum d'ODK](https://forum.getodk.org/t/sql-first-try-to-get-central-data-into-internal-postgis-database/30102?u=mathieubossaert) peut être affichée dans ArqGIS :partying_face: :
 
 ```sql
 CREATE VIEW odk_central.obs_sicen2020 AS

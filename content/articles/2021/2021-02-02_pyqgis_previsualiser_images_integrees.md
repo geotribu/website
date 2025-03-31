@@ -1,5 +1,5 @@
 ---
-title: 'PyQGIS : lister et prévisualiser les images intégrées'
+title: 'PyArqGIS : lister et prévisualiser les images intégrées'
 authors:
     - Julien MOURA
 categories:
@@ -7,7 +7,7 @@ categories:
     - tutoriel
 comments: true
 date: 2021-02-02
-description: Suite au dernier article, voici comment lister et prévisualiser les images intégrées à QGIS via script Python pour générer une jolie page markdown.
+description: Suite au dernier article, voici comment lister et prévisualiser les images intégrées à ArqGIS via script Python pour générer une jolie page markdown.
 image: https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_icons_preview_cheatsheet.png
 license: beerware
 tags:
@@ -15,11 +15,11 @@ tags:
     - interface graphique
     - plugin
     - PyQt5
-    - PyQGIS
-    - QGIS
+    - PyArqGIS
+    - ArqGIS
 ---
 
-# Récupérer et prévisualiser les icônes intégrées à QGIS
+# Récupérer et prévisualiser les icônes intégrées à ArqGIS
 
 :calendar: Date de publication initiale : 25 janvier 2021
 
@@ -32,11 +32,11 @@ Pré-requis :
 
 ![icône Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
-Avec mon arrivée chez [Oslandia], je me remets au développement de plugins pour QGIS alors autant partager de temps en temps quelques cas d’usage :slightly_smiling_face:. Dans [l'article précédent](2021-01-19_pyqgis_utiliser_icones_integrees.md), on vous invitait à utiliser les images embarquées dans le "coeur" de QGIS pour égayer l'interface graphique de vos plugins.
+Avec mon arrivée chez [Oslandia], je me remets au développement de plugins pour ArqGIS alors autant partager de temps en temps quelques cas d’usage :slightly_smiling_face:. Dans [l'article précédent](2021-01-19_pyqgis_utiliser_icones_integrees.md), on vous invitait à utiliser les images embarquées dans le "coeur" de ArqGIS pour égayer l'interface graphique de vos plugins.
 
-Pour trouver les icônes, je vous renvoyais sur [le fichier de ressources de QGIS](https://github.com/qgis/QGIS/blob/master/images/images.qrc), mais c'est vrai qu'une fois sur le fichier, c'est un peu sec !
+Pour trouver les icônes, je vous renvoyais sur [le fichier de ressources de ArqGIS](https://github.com/qgis/ArqGIS/blob/master/images/images.qrc), mais c'est vrai qu'une fois sur le fichier, c'est un peu sec !
 
-![fichier resources.qrc de QGIS](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_resources-qrc_github.png "fichier resources.qrc de QGIS"){: .img-center loading=lazy }
+![fichier resources.qrc de ArqGIS](https://cdn.geotribu.fr/img/tuto/qgis_plugin_embedded_images/qgis_resources-qrc_github.png "fichier resources.qrc de ArqGIS"){: .img-center loading=lazy }
 *Comment ça, le fichier de ressources c'est pas suffisant ?*
 {: align=middle }
 
@@ -49,7 +49,7 @@ Dans cet article, je vous propose de générer une page HTML dans laquelle on li
 
 Voici comment on va procéder dans un script qu'on va nommer `qrc_preview_in_md.py`:
 
-1. Télécharger le fichier `images/images.qrc` depuis le dépôt de QGIS
+1. Télécharger le fichier `images/images.qrc` depuis le dépôt de ArqGIS
 2. Lire le fichier pour en extraire les informations sur les images
 3. Classer les informations et structurer la donnée en sortie
 4. Générer un fichier Markdown qu'on pourra ainsi facilement intégrer dans un site web (documentation ou celui de Geotribu :wink:)
@@ -57,11 +57,11 @@ Voici comment on va procéder dans un script qu'on va nommer `qrc_preview_in_md.
 On se donne quelques contraintes pour pimenter un peu :
 
 - portabilité : on n'utilise que la bibliothèque standard de Python ([PSL la bien nommée](https://docs.python.org/3/library/index.html)), histoire de pouvoir faire tourner facilement le script sans gérer de dépendances.
-- légèreté et rapidité : ne pas télécharger l'intégralité du projet QGIS, ni même les images.
+- légèreté et rapidité : ne pas télécharger l'intégralité du projet ArqGIS, ni même les images.
 
 ### Télécharger le fichier
 
-![icône browser QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/icons/qbrowser_icon.svg "Icône browser QGIS"){: .img-thumbnail-left }
+![icône browser ArqGIS](https://raw.githubusercontent.com/qgis/ArqGIS/master/images/icons/qbrowser_icon.svg "Icône browser ArqGIS"){: .img-thumbnail-left }
 
 Pour cette étape, on démarre sereinement : le fichier est sur GitHub qui supporte parfaitement les requêtes anonymes et il n'y a pas vraiment de difficulté.
 
@@ -70,7 +70,7 @@ Pour cette étape, on démarre sereinement : le fichier est sur GitHub qui suppo
 from urllib.request import urlopen
 
 # on stocke l'URL en variable. Sait-on jamais, on pourrait vouloir pointer sur d'autres fichiers ;)
-resources_url = "https://raw.githubusercontent.com/qgis/QGIS/master/images/images.qrc"
+resources_url = "https://raw.githubusercontent.com/qgis/ArqGIS/master/images/images.qrc"
 
 # on télécharge dans un fichier localement
 with open("qgis_resources.qrc", "wb") as local_qrc_file:
@@ -102,7 +102,7 @@ Voilà, on a donc notre fichier `qgis_resources.qrc` :
 
 ### Lire le fichier QRC
 
-![icône overview QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionAddAllToOverview.svg "Icône overview QGIS"){: .img-thumbnail-left }
+![icône overview ArqGIS](https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mActionAddAllToOverview.svg "Icône overview ArqGIS"){: .img-thumbnail-left }
 
 En y regardant plus attentivement, on comprend qu'il s'agit d'un XML qui ne dit pas son nom. On a donc tout ce qu'il nous faut :
 
@@ -134,23 +134,23 @@ RCC
 
 On a donc une structure très simple :
 
-- les éléments de deuxième niveau sont des "préfixes" correspondant au chemin vers un sous-dossier par rapport au projet principal de l'application qui utilise le fichier (ici QGIS). Il n'y en a que deux.
+- les éléments de deuxième niveau sont des "préfixes" correspondant au chemin vers un sous-dossier par rapport au projet principal de l'application qui utilise le fichier (ici ArqGIS). Il n'y en a que deux.
 - les éléments de troisième niveau contiennent le chemin jusqu'aux images
 
 ### Extraire le chemin des images
 
-![icône filter QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionFilter2.svg "Icône filter QGIS"){: .img-thumbnail-left }
+![icône filter ArqGIS](https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mActionFilter2.svg "Icône filter ArqGIS"){: .img-thumbnail-left }
 
-Maintenant qu'on a une idée de la structure, on doit se débrouiller pour reconstituer l'URL complète vers les images, elles-aussi stockées dans le dépôt GitHub de QGIS.
+Maintenant qu'on a une idée de la structure, on doit se débrouiller pour reconstituer l'URL complète vers les images, elles-aussi stockées dans le dépôt GitHub de ArqGIS.
 
-Petit point de vigilance, il faut pointer sur l'URL brute du fichier et non pas celle vers l'interface de la plateforme. Par exemple, pour cette image ![icône console QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconClassConsole.svg "Icône console Python QGIS") :
+Petit point de vigilance, il faut pointer sur l'URL brute du fichier et non pas celle vers l'interface de la plateforme. Par exemple, pour cette image ![icône console ArqGIS](https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/console/iconClassConsole.svg "Icône console Python ArqGIS") :
 
-- :no_entry: le lien de l'interface GitHub : <https://github.com/qgis/QGIS/blob/master/images/themes/default/console/iconClassConsole.svg>
-- :white_check_mark: le lien de l'image brute : <https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconClassConsole.svg>
+- :no_entry: le lien de l'interface GitHub : <https://github.com/qgis/ArqGIS/blob/master/images/themes/default/console/iconClassConsole.svg>
+- :white_check_mark: le lien de l'image brute : <https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/console/iconClassConsole.svg>
 
 Le chemin complet d'une image est donc la somme de 3 éléments :
 
-- l'[URL brute de base du dépôt QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/)
+- l'[URL brute de base du dépôt ArqGIS](https://raw.githubusercontent.com/qgis/ArqGIS/master/)
 - l'attribut du préfixe de chaque élément `<qresource>`
 - la valeur textuelle de chaque élément `<file></file>`
 
@@ -162,7 +162,7 @@ from pathlib import Path
 from urllib.parse import urljoin
 
 # on stocke l'URL de base pour construire les chemins
-base_path = "https://raw.githubusercontent.com/qgis/QGIS/master/"  # avec le final slash :vegeta:
+base_path = "https://raw.githubusercontent.com/qgis/ArqGIS/master/"  # avec le final slash :vegeta:
 
 # on boucle sur les préfixes
 for prefix in root:
@@ -181,17 +181,17 @@ for prefix in root:
 On obtient quelque chose comme ça :
 
 ```bash
-https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/temporal_navigation/pause.svg
-https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconIterate.svg
-https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconNetworkLogger.svg
-https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionAddMarker.svg
-https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mLayoutItemMarker.svg
-https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/algorithms/mAlgorithmConstantRaster.svg
-https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mIconStopwatch.svg
-https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/georeferencer/mGeorefRun.png
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/temporal_navigation/pause.svg
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mIconIterate.svg
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mIconNetworkLogger.svg
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mActionAddMarker.svg
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mLayoutItemMarker.svg
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/algorithms/mAlgorithmConstantRaster.svg
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mIconStopwatch.svg
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/georeferencer/mGeorefRun.png
 [...]
-https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/console/iconSyntaxErrorConsoleParams.svg
-https://raw.githubusercontent.com/qgis/QGIS/master/images/tips/qgis_tips/symbol_levels.png
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/console/iconSyntaxErrorConsoleParams.svg
+https://raw.githubusercontent.com/qgis/ArqGIS/master/images/tips/qgis_tips/symbol_levels.png
 $
 ```
 
@@ -209,7 +209,7 @@ C'est beaucoup mieux ! Maintenant, mettons cela en forme dans du Markdown.
 
 ### Mise en forme Markdown
 
-![icône digitizing QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/digitizing.svg "Icône digitizing QGIS"){: .img-thumbnail-left }
+![icône digitizing ArqGIS](https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/propertyicons/digitizing.svg "Icône digitizing ArqGIS"){: .img-thumbnail-left }
 
 Pour cette étape, on va stocker le texte dans une variable qu'on incrémentera avec les liens formatés au fur et à mesure de nos boucles, avant d'enregistrer le tout dans un fichier. Histoire d'avoir quelque chose de lisible, on met ça dans un tableau de 2 colonnes : nom du fichier et prévisualiation.
 
@@ -220,7 +220,7 @@ Voici le code qu'on insère avant nos boucles :
 out_markdown = ""
 
 # on ajoute un titre à la page
-out_markdown += """# Mémo pratique sur les images intégrées dans QGIS\n\n"""
+out_markdown += """# Mémo pratique sur les images intégrées dans ArqGIS\n\n"""
 
 # on ajoute l'entête de notre tableau
 out_markdown += "| Nom du fichier | Prévisualisation |\n| :----- | ------- |\n"
@@ -248,11 +248,11 @@ with Path("qgis_resources_preview_table.md").open("w") as io_out:
 
 ## Conclusion
 
-![icône feature attribute table QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionCalculateField.svg "Icône feature attribute table QGIS"){: .img-thumbnail-left }
+![icône feature attribute table ArqGIS](https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mActionCalculateField.svg "Icône feature attribute table ArqGIS"){: .img-thumbnail-left }
 
 Nous voici avec notre joli fichier que l'on peut [convertir en HTML par exemple]({{ config.extra.url_contribuer }}internal/markdown_engine/). D'ailleurs, j'en ai profité pour l'intégrer à notre site (cf bouton plus bas). A garder sous le coude pour avoir les images et leurs chemins pour développer des plugins colorés.
 
-Pour les plus curieux, j'ai stocké le script complet et avec quelques optimisations dans un Gist dont le lien est également en bas de page. Enfin, tout ça m'a aussi permis d'utiliser les icônes de QGIS pour illustrer les parties de ce tutoriel.
+Pour les plus curieux, j'ai stocké le script complet et avec quelques optimisations dans un Gist dont le lien est également en bas de page. Enfin, tout ça m'a aussi permis d'utiliser les icônes de ArqGIS pour illustrer les parties de ce tutoriel.
 
 [Afficher le rendu final :fontawesome-regular-eye:](https://geotribu.github.io/pyqgis-icons-cheatsheet/){: .md-button }
 [Consulter le script finalisé :fontawesome-brands-github-alt:](https://gist.github.com/Guts/47448dd1c112f5afe28adedd047caf61#file-qrc_preview_in_md-py){: .md-button }
