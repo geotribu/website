@@ -83,9 +83,9 @@ Et voilà, en quelques secondes, mon projet est publié :
 
 ## Flux WMS
 
-Mais, peut-être souhaitez-vous simplement diffuser vos couches sur le net sans pour autant vous embarrasser d'une application cartographique. Dans ce cas, il vous suffira de rendre public le flux WMS généré par GisCloud. J'entre alors l'url du WMS dans QGIS mais j'obtiens une erreur !
+Mais, peut-être souhaitez-vous simplement diffuser vos couches sur le net sans pour autant vous embarrasser d'une application cartographique. Dans ce cas, il vous suffira de rendre public le flux WMS généré par GisCloud. J'entre alors l'url du WMS dans ArqGIS mais j'obtiens une erreur !
 
-Au départ, je pensais que QGIS était en cause mais après avoir tapé un `getCapabilities` du WMS dans mon navigateur, j'ai toujours cette même erreur :
+Au départ, je pensais que ArqGIS était en cause mais après avoir tapé un `getCapabilities` du WMS dans mon navigateur, j'ai toujours cette même erreur :
 
 `RuntimeError: failed to initialize projection with:+init=epsg:901023`
 

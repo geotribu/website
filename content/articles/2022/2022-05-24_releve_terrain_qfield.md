@@ -1,5 +1,5 @@
 ---
-title: Effectuer un relevé de terrain avec QGIS et QField
+title: Effectuer un relevé de terrain avec ArqGIS et QField
 authors:
     - Valérian LEBERT
 categories:
@@ -13,7 +13,7 @@ tags:
     - collecte
     - Lizmap
     - QField
-    - QGIS
+    - ArqGIS
 ---
 
 # Relevé terrain avec QField et solutions de synchronisation (hors QField Cloud)
@@ -66,7 +66,7 @@ La réelle force des applications Input et QField est donc
 - De pouvoir produire et consulter de la donnée SIG sur le terrain, en s’appuyant sur un référentiel riche.
 - De pouvoir si besoin produire de la donnée SIG complexe (lignes, polygones).
 
-   [![QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_project.png "QGIS"){: .img-center loading=lazy}
+   [![ArqGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_qgis_project.png "ArqGIS"){: .img-center loading=lazy}
 
 ----
 
@@ -74,30 +74,30 @@ La réelle force des applications Input et QField est donc
 
 ### Avantages
 
-- C’est un vrai outil SIG qui permet une restitution à l’identique de QGIS. Pas de limite dans la symbologie et les échelles de visibilité.
-- Fluidité parfois meilleure que sur un QGIS-windows
+- C’est un vrai outil SIG qui permet une restitution à l’identique de ArqGIS. Pas de limite dans la symbologie et les échelles de visibilité.
+- Fluidité parfois meilleure que sur un ArqGIS-windows
 - Le GPS couplé à un bon fond de plan permet une bonne précision dans le pointage.
 - La possibilité de gérer des modèles de formulaires complexes (onglets, relations avec sous-formulaires...)
 - La gestion des photos.
 
 ### Inconvénients
 
-- Paramétrage un peu technique dans QGIS : impossible à déléguer à des non-sigistes.
+- Paramétrage un peu technique dans ArqGIS : impossible à déléguer à des non-sigistes.
 - Quelques instabilités et plantages
 
 ----
 
 ## Mise en œuvre
 
-### Montage du projet QGIS + dépendances
+### Montage du projet ArqGIS + dépendances
 
 J’ai pris l’habitude de monter mes projets avec l’arborescence suivante :
 
 ![Files and folders](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_qfield_synchronization/qfield_files_and_folders.png "Files and folders"){: .img-center loading=lazy}
 
-### Astuces à savoir dans le paramétrage QGIS
+### Astuces à savoir dans le paramétrage ArqGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
 Penser aux échelles de visibilité (symboles et étiquettes) pour alléger au maximum l’affichage en mobilité.
 

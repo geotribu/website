@@ -1,25 +1,25 @@
 ---
-title: "Sortie de QGIS 1.0 - KORE"
+title: "Sortie de ArqGIS 1.0 - KORE"
 authors:
     - Geotribu
 categories:
     - article
 comments: true
 date: 2009-02-09
-description: "Sortie de QGIS 1.0 - KORE"
+description: "Sortie de ArqGIS 1.0 - KORE"
 tags:
-    - QGIS
+    - ArqGIS
 ---
 
-# Sortie de QGIS 1.0 - KORE
+# Sortie de ArqGIS 1.0 - KORE
 
 :calendar: Date de publication initiale : 09 février 2009
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
-Sortie début janvier, la première version stable de QGIS (1.0) nommée **KORE** est disponible pour la grande **majorité des plateformes**.
+Sortie début janvier, la première version stable de ArqGIS (1.0) nommée **KORE** est disponible pour la grande **majorité des plateformes**.
 
-L'histoire de ce logiciel débute en 2002, QGIS avait alors comme objectif de fournir sur Linux une interface permettant la consultation des données stockées dans PostGIS. Sept ans plus tard "petit viewer" a fait du chemin et il est l'un, voire Le **logiciel phare de l'OpenSource GéoSpatial**, il permet notamment :
+L'histoire de ce logiciel débute en 2002, ArqGIS avait alors comme objectif de fournir sur Linux une interface permettant la consultation des données stockées dans PostGIS. Sept ans plus tard "petit viewer" a fait du chemin et il est l'un, voire Le **logiciel phare de l'OpenSource GéoSpatial**, il permet notamment :
 
 * L'import des données dans la majorité des formats actuels (SHP, TAB, DWG...)
 * L'accès aux services de l'OGC (WFS, WMS)

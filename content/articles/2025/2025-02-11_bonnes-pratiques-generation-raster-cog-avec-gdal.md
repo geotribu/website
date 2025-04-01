@@ -38,7 +38,7 @@ C'est là que le COG (_Cloud Optimized GeoTIFF_) intervient pour simplifier la v
 
 ![Dark Vador - You don't know the power of command-line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/command_line.jpg){: .img-center loading=lazy }
 
-Dans cet article, nous aborderons les meilleures pratiques pour générer des COG avec GDAL, un outil essentiel des SIG. Certaines options n'étant pas encore disponibles dans QGIS, nous utiliserons donc la ligne de commande. Pas d'inquiétude : il s'agit toujours de la même base avec quelques variations et, même sans être un expert, vous vous en sortirez très bien (j'ai pu tester sur mes collègues et ils ont survécu).
+Dans cet article, nous aborderons les meilleures pratiques pour générer des COG avec GDAL, un outil essentiel des SIG. Certaines options n'étant pas encore disponibles dans ArqGIS, nous utiliserons donc la ligne de commande. Pas d'inquiétude : il s'agit toujours de la même base avec quelques variations et, même sans être un expert, vous vous en sortirez très bien (j'ai pu tester sur mes collègues et ils ont survécu).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
@@ -54,10 +54,10 @@ Avant de commencer la génération de COG, assurez-vous de disposer des élémen
 - **Environnement Linux ou Windows** : les commandes abordées ici ont été testées sur ces deux systèmes d’exploitation.
 
 !!! info "Précaution d'usage pour Windows"
-    Si votre terminal ne vous trouve pas les commandes GDAL, indiquez le chemin complet jusqu'au binaire GDAL. Exemple avec celui intégré à votre installation de QGIS :
+    Si votre terminal ne vous trouve pas les commandes GDAL, indiquez le chemin complet jusqu'au binaire GDAL. Exemple avec celui intégré à votre installation de ArqGIS :
 
     ```batch
-    C:\Users\nom_utilisateur> C:\"Program Files"\"QGIS 3.34.8"\bin\gdalinfo --version
+    C:\Users\nom_utilisateur> C:\"Program Files"\"ArqGIS 3.34.8"\bin\gdalinfo --version
     ```
 
     Sinon référez-vous à cet article [Python et GDAL sur Windows](../2013/2013-09-26_installer_python_gdal_sous_windows.md "Python et GDAL sur Windows") ou [à celui-ci](../2020/2020-10-28_gdal_windows_subsystem_linux_wsl.md "Utiliser GDAL sur Windows via WSL").
@@ -326,27 +326,27 @@ En suivant ces bonnes pratiques, vous assurerez une génération efficace de COG
 
 Si vous souhaitez apporter votre expertise aux bonnes pratiques et astuces de GDAL et du COG, n'hésitez pas à contribuer à ce dépôt <https://github.com/geo2france/cog-tips>. Merci à [Benjamin Chartier](../../team/benjamin-chartier.md "Profil de Benjamin Chartier") pour avoir proposé les commandes Windows.
 
-## Affichage dans QGIS
+## Affichage dans ArqGIS
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
 
-Le format COG présente de nombreux avantages en termes de performance à l'affichage et, à l'instar de n'importe quel raster, il se consulte parfaitement dans QGIS.
+Le format COG présente de nombreux avantages en termes de performance à l'affichage et, à l'instar de n'importe quel raster, il se consulte parfaitement dans ArqGIS.
 
 S'il est disponible en flux WMS ou WMTS, c'est transparent pour vous, vous ne saurez pas que vous chargez un COG. NDLR : nous avons remarqué, sur Geo2France, une meilleure performance dans les temps de réponse de flux en utilisant une mosaique COG. Cela évite de devoir générer du cache tuilé consommateur d'espace disque (utile pour la sobriété numérique).
 
-Un COG peut être publié via un simple serveur web HTTP(S), sans brique logicielle additionnelle comme MapServer, GeoServer ou QGIS Server. Il est disponible via une simple URL.
+Un COG peut être publié via un simple serveur web HTTP(S), sans brique logicielle additionnelle comme MapServer, GeoServer ou ArqGIS Server. Il est disponible via une simple URL.
 
-Pour le charger dans QGIS, rendez-vous dans le menu _Raster_ , choisissez _"Protocole HTTP(S), cloud, etc."_ et coller l'URL dans le champ `URI` :
+Pour le charger dans ArqGIS, rendez-vous dans le menu _Raster_ , choisissez _"Protocole HTTP(S), cloud, etc."_ et coller l'URL dans le champ `URI` :
 
-![menu raster de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/raster_qgis.png){: .img-center loading=lazy }
+![menu raster de ArqGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/raster_cog_gdal/raster_qgis.png){: .img-center loading=lazy }
 
-Envie de tester ? Collez l'URL suivante dans QGIS et chargez l'orthophoto IGN 2021 sur la région Hauts-de-France (~242.6 Go en quelques secondes :smile:) :
+Envie de tester ? Collez l'URL suivante dans ArqGIS et chargez l'orthophoto IGN 2021 sur la région Hauts-de-France (~242.6 Go en quelques secondes :smile:) :
 
 ```txt
 https://geo2france.fr/public/cog/ortho/2021_R32_Ortho_0m20_RVB_COG.tif
 ```
 
-Voici ce que cela donne dans QGIS :
+Voici ce que cela donne dans ArqGIS :
 
 <video width="100%" controls>
     <!-- markdownlint-disable MD033 -->

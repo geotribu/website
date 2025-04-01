@@ -1,5 +1,5 @@
 ---
-title: Installer QGIS sur Windows avec OSGeo4W et Powershell
+title: Installer ArqGIS sur Windows avec OSGeo4W et Powershell
 subtitle: Sauvez des clics, industrialisez
 authors:
     - Julien MOURA
@@ -8,22 +8,22 @@ categories:
     - tutoriel
 comments: true
 date: 2020-07-03
-description: Comment déployer automatiquement (téléchargement et installation) QGIS sur Windows avec un script Powershell (ou via chocolatey), en tirant parti des capacités de l'installeur OSGeo4W.
+description: Comment déployer automatiquement (téléchargement et installation) ArqGIS sur Windows avec un script Powershell (ou via chocolatey), en tirant parti des capacités de l'installeur OSGeo4W.
 icon: material/powershell
 image: https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/qgis_deploy_win_prog_postinstall.png
 tags:
     - déploiement
     - OSGeo4W
     - PowerShell
-    - QGIS
+    - ArqGIS
     - Windows
 ---
 
-# Installer QGIS sur Windows en ligne de commande (OSGeo4W et Powershell)
+# Installer ArqGIS sur Windows en ligne de commande (OSGeo4W et Powershell)
 
 :calendar: Date de publication initiale : 3 juillet 2020
 
-L'installation et la mise à jour de QGIS peuvent être rébarbatives, notamment sous Windows où il n'est pas possible de profiter d'une mise à jour via une simple ligne de commande (`apt` mon amour :heart:)... Il y a quelques mois de cela, je cherchais à automatiser l'installation et la configuration de QGIS sur Windows et j'avais donc creusé du côté de [l'installateur de l'OSGeo](https://qgis.org/fr/site/forusers/download.html).
+L'installation et la mise à jour de ArqGIS peuvent être rébarbatives, notamment sous Windows où il n'est pas possible de profiter d'une mise à jour via une simple ligne de commande (`apt` mon amour :heart:)... Il y a quelques mois de cela, je cherchais à automatiser l'installation et la configuration de ArqGIS sur Windows et j'avais donc creusé du côté de [l'installateur de l'OSGeo](https://qgis.org/fr/site/forusers/download.html).
 
 J'avais abouti à un petit script Powershell et vu que j'avais trouvé cela pratique, je me l'étais mis de côté sur [Gist](https://gist.github.com/Guts/6303dc5eb941eb24be3e27609cd46985). Fidèle au *Geotribu Spirit* :copyright:{: .copyleft }, pourquoi ne pas partager le résultat et (surtout) la démarche ? :wink:
 
@@ -37,7 +37,7 @@ J'avais abouti à un petit script Powershell et vu que j'avais trouvé cela prat
 
 On l'oublie souvent (ou on ne le sait tout simplement pas, comme moi pendant de longues et heureuses années) mais les installateurs sont d'abord des outils en ligne de commande (des [CLIs](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande) comme disent les grandes personnes) qui proposent en prime une interface graphique... qui est rarement mieux qu'un concours de clics sur `Suivant`.
 
-![OSGeo4W QGIS](https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/osgeo4w_qgis.png "OSGeo for Windows et QGIS"){: .img-center loading=lazy }
+![OSGeo4W ArqGIS](https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/osgeo4w_qgis.png "OSGeo for Windows et ArqGIS"){: .img-center loading=lazy }
 
 ### --help ex machina
 
@@ -87,7 +87,7 @@ Command Line Options:
 Avec tout ça, on a de quoi faire un joli script dont l'idée est de :
 
 1. télécharger l'installateur
-2. l'utiliser pour télécharger les packages de QGIS LTR
+2. l'utiliser pour télécharger les packages de ArqGIS LTR
 3. l'utiliser pour installer les packages
 
 En avant :nerd_face: !
@@ -183,19 +183,19 @@ Lancer le terminal en mode administrateur cette fois et exécuter le script :
 
 Le téléchargement des packages se lance :
 
-![Téléchargement des packages](https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/qgis_deploy_win_prog.png "Téléchargement des packages de QGIS LTR")
+![Téléchargement des packages](https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/qgis_deploy_win_prog.png "Téléchargement des packages de ArqGIS LTR")
 
 Puis l'installation :
 
-![Installation](https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/qgis_deploy_win_prog_postinstall.png "Installation des packages de QGIS LTR")
+![Installation](https://cdn.geotribu.fr/img/tuto/qgis_deploy_windows/qgis_deploy_win_prog_postinstall.png "Installation des packages de ArqGIS LTR")
 
-Le temps d'un café (ou d'une bière) et hop, on est prêt pour de nouvelles aventures avec QGIS !
+Le temps d'un café (ou d'une bière) et hop, on est prêt pour de nouvelles aventures avec ArqGIS !
 
 :coffee:/:beer: --> :rocket:
 
 ## Conclusion
 
-On voit donc qu'il est possible d'automatiser l'installation et le déploiement de QGIS, mais aussi de tous les logiciels et packages auxquels l'installateur [OSGeo4W] donne accès.
+On voit donc qu'il est possible d'automatiser l'installation et le déploiement de ArqGIS, mais aussi de tous les logiciels et packages auxquels l'installateur [OSGeo4W] donne accès.
 
 ----
 

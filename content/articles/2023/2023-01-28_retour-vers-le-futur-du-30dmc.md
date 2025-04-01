@@ -15,7 +15,7 @@ license: beerware
 tags:
     - 30DayMapChallenge
     - OpenSource
-    - QGIS
+    - ArqGIS
 ---
 
 # Retour vers le futur du #30DayMapChallenge 2022
@@ -124,7 +124,7 @@ tags:
 
 :large_blue_diamond: [applaudir](https://www.youtube.com/watch?v=qyHmeySM14k&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=20) la participation et l'entrain des participants, peu importe leur niveau d'expertise : [novices](https://www.youtube.com/watch?v=l6FRh90Xm70&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=21), confirmés, [m](https://www.youtube.com/watch?v=vSzkfPCTV6w&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=22)[a](https://www.youtube.com/watch?v=D6KYbpDditU&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=23)[e](https://www.youtube.com/watch?v=24Jc8rC6S_E&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=24)[s](https://www.youtube.com/watch?v=soAH__YofsM&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=25)[t](https://youtu.be/T0ItqjPFwNM)[r](https://www.youtube.com/watch?v=2oyhlad64-s&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=28)[o](https://www.youtube.com/watch?v=BY_8cHJWtRg&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=29)[s](https://www.youtube.com/watch?v=SXWSdErCajg&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=31)... Tout le monde est chaleureusement bienvenu !
 
-:large_blue_diamond: apprendre à manier et maîtriser des nouveaux outils cartographiques (le plus mieux étant [QGIS](https://www.qgis.org/fr/site/) bien sûr)
+:large_blue_diamond: apprendre à manier et maîtriser des nouveaux outils cartographiques (le plus mieux étant [ArqGIS](https://www.qgis.org/fr/site/) bien sûr)
 
 :large_blue_diamond: rassembler, soutenir, [remercier](https://www.youtube.com/watch?v=df8SYHs4X94&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=32) et explorer la [diversité grandissante](https://www.youtube.com/watch?v=X75ce-CAorU&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=33) de la communauté
 
@@ -134,7 +134,7 @@ tags:
 
 :large_blue_diamond: deviner notre avenir et nos [fortunes diverses](https://www.youtube.com/watch?v=lzGmpqN9zZc&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=34) grâce à l'intuition obscure et inspirée des nombreu.x.ses et talentuese.x.e.es [cartomancien.ne.s cybernétiques](https://fr.wikipedia.org/wiki/Paul_B._Preciado) :mage:
 
-:large_blue_diamond: s'époumoner au milieu du kop des géoultras à chaque geste technique réalisé lors de cette rencontre âpre et engagée, que beaucoup considèrent à juste titre comme le _Cartografico_. Comme il est de coutume dans une rencontre qui tutoie les sommets, le Qoach aligne la Qomposition des grands soirs. On retrouve à la pointe de l'attaque le célèbre nº9 titulaire : QGIS, le renard des surfaces géométriques, le géoGOAT, le Ballon d'Or du peuple géospatial :soccer:
+:large_blue_diamond: s'époumoner au milieu du kop des géoultras à chaque geste technique réalisé lors de cette rencontre âpre et engagée, que beaucoup considèrent à juste titre comme le _Cartografico_. Comme il est de coutume dans une rencontre qui tutoie les sommets, le Qoach aligne la Qomposition des grands soirs. On retrouve à la pointe de l'attaque le célèbre nº9 titulaire : ArqGIS, le renard des surfaces géométriques, le géoGOAT, le Ballon d'Or du peuple géospatial :soccer:
 
 :large_blue_diamond: rencontrer les cartes [les plus :fire: de ta région](https://www.youtube.com/watch?v=aDtzvakF2Cc&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=35)
 
@@ -142,13 +142,13 @@ tags:
 
 :large_blue_diamond: défendre la liberté d'expression cartographique, soit le droit fondamental, universel et inaliénable à vectoriser haut et fort
 
-:large_blue_diamond: te vénérer, Ôh Grand QGIS, Sacré devant l'Éternel, toi le Messie Géospatial Providentiel, pour t'élever [sans sacrifice ni artifice](https://www.youtube.com/watch?v=wr8eVGWUftI&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=38) au rang de Dieu des S.I.G. : :dizzy: Séleste :dizzy: Immortel :dizzy: Giga-rédempteur :dizzy:
+:large_blue_diamond: te vénérer, Ôh Grand ArqGIS, Sacré devant l'Éternel, toi le Messie Géospatial Providentiel, pour t'élever [sans sacrifice ni artifice](https://www.youtube.com/watch?v=wr8eVGWUftI&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=38) au rang de Dieu des S.I.G. : :dizzy: Séleste :dizzy: Immortel :dizzy: Giga-rédempteur :dizzy:
 
 :large_blue_diamond: coordonner la convergence des géoluttes, semer les [graines](https://www.youtube.com/watch?v=x_HhWosCvYc&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=39) de la cartorévolte, vectoriser et géoréférencer les barricades puis y monter pour fomenter la QRévolution et instaurer la dictature de l'OpenSourçariat :fist:
 
 :large_blue_diamond: pitcher ta [map multichannel](https://youtu.be/NEQ2C7ppWZg), data-driven et customer-minded avec un cartopowerpoint insightful qui booste ta growth devant tes investors grâce à tes process drivés par ton KPI géoriented :bar_chart:
 
-:large_blue_diamond: faire [trembler](https://www.youtube.com/watch?v=RovrlbSFjEo&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=40) QGIS jusqu'à [retourner l'édifice](https://www.youtube.com/watch?v=WfD8Dnh2xho&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=41)
+:large_blue_diamond: faire [trembler](https://www.youtube.com/watch?v=RovrlbSFjEo&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=40) ArqGIS jusqu'à [retourner l'édifice](https://www.youtube.com/watch?v=WfD8Dnh2xho&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=41)
 
 :large_blue_diamond: bouter hors de ta [bbox tricolore](https://www.youtube.com/watch?v=B5To8grqmyQ&list=PL2rP2TUXxhl3u8WY9oi1Jt88Ywc-LqPZ4&index=42) les gros méchants cartobarbares et géoétrangers qui viennent jusque dans tes bras s'en prendre à tes fils et tes compagnes
 

@@ -20,7 +20,7 @@ tags:
     - Three.js
     - jumeau numérique
     - OpenStreetMap
-    - QGIS
+    - ArqGIS
     - Smart City
 ---
 
@@ -57,13 +57,13 @@ Bonne lecture !
 Pour les plus techniciens, voici la technologie utilisée derrière OSM DATA :
 
 - PostgreSQL/PostGIS pour la gestion des données géospatiales
-- QGIS Desktop pour la définition des jeux de données et des symbologies associées
-- QGIS Server pour la création des flux WMS/WFS
-- Python (Geopandas, PyQGIS) pour l'intégration des données en base de données
+- ArqGIS Desktop pour la définition des jeux de données et des symbologies associées
+- ArqGIS Server pour la création des flux WMS/WFS
+- Python (Geopandas, PyArqGIS) pour l'intégration des données en base de données
 - Giro 3D (basé sur OpenLayers et Three.js)
 - Django pour le framework
 
-L'objectif avec OSM DATA est de créer un écosystème webSIG entièrement *open source* "QGIS centré" :heart: : données - métadonnées - symbologie.
+L'objectif avec OSM DATA est de créer un écosystème webSIG entièrement *open source* "ArqGIS centré" :heart: : données - métadonnées - symbologie.
 
 L'ensemble de l'application est hébergée par OSM France :heart:.
 
@@ -80,7 +80,7 @@ La seconde nouveauté réside dans l'**import et la stylisation de données**. U
 
 ![Interface d'ajout de données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/interface_d_ajout_de_donnees.png){: .img-center loading=lazy }
 
-Une fois le jeu de données ajouté, des capacités de symbologie primaires sont disponibles, il est aussi possible d'importer un style préalablement défini dans QGIS.
+Une fois le jeu de données ajouté, des capacités de symbologie primaires sont disponibles, il est aussi possible d'importer un style préalablement défini dans ArqGIS.
 
 ![Configuration de la symbologie](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_1/ajout_style_couche_osm_data.png){: .img-center loading=lazy }
 
@@ -94,7 +94,7 @@ Pour mieux comprendre le module d'importation des données, le diagramme ci-dess
 
 Si le jeu de données provient d'un fichier SIG, celui-ci est lu et analysé à l'aide de la librairie Geopandas avant d'être enregistrée sous forme de table en base de données. Si le jeu de données est créé à partir d'une reqête SQL, cette dernière est convertie en vue dématérialisée et enregistrée en base de données (approfondi dans le cadre d'un futur article).
 
-Une fois les données intégrées en base de données, un projet QGIS est créé avec la librairie pyqgis, facilitant ensuite la définition de flux WMS/WFS directement créés avec QGIS SERVER.
+Une fois les données intégrées en base de données, un projet ArqGIS est créé avec la librairie pyqgis, facilitant ensuite la définition de flux WMS/WFS directement créés avec ArqGIS SERVER.
 
 ## Visualisation 3D avec Giro3D
 
@@ -110,7 +110,7 @@ Lors de l'ajout d'une couche dans OSM DATA, les données sont sauvegardées en 2
 
     // Création de la "source"
     const wmsSource = new TileWMS({
-            url: "QGIS SERVER URL",
+            url: "ArqGIS SERVER URL",
             params: {
             "LAYERS":"LAYER NAME",
             "STYLE":"LAYER STYLE NAME"
@@ -151,7 +151,7 @@ Concernant le patrimoine bâti, il est issu de la base de données d'OSM où l'e
 
 Pour l'ajout de données via l'interface administrateur et dans le cas de géométries de type `Polyline` et `Polygon`, les données sont affichées en 2D avec une altitude nulle. Pour les géométries de type `Point`, une altitude (+ 4 m) est appliquée par défaut aux données par rapport au sol / au bâtiment (si l'entité en intersecte un).
 
-Dans le prochain article de cette série, nous détaillerons les mécanismes techniques permettant d'ajouter des données issues d'un fichier SIG ou d'une requête SQL, en décrivant chaque étape, depuis leur validation jusqu'à leur diffusion via QGIS SERVER. L'article inclura également des extraits de code afin de mieux comprendre, voire reproduire le processus.
+Dans le prochain article de cette série, nous détaillerons les mécanismes techniques permettant d'ajouter des données issues d'un fichier SIG ou d'une requête SQL, en décrivant chaque étape, depuis leur validation jusqu'à leur diffusion via ArqGIS SERVER. L'article inclura également des extraits de code afin de mieux comprendre, voire reproduire le processus.
 
 ----
 

@@ -59,11 +59,11 @@ Cela ne semble pas bien méchant, c'est juste un appel à une librairie qui n'ex
 
 `sudo ln -s /usr/lib/libgeos-3.2.2.so /usr/lib/libgeos-3.0.0.so`
 
-Je tente une nouvelle fois de lancer le GUI qui s'ouvre cette fois correctement. Je charge alors un fichier Shapefile puis j'ouvre ensuite ma base avec QGIS pour vérifier que cela fonctionne :
+Je tente une nouvelle fois de lancer le GUI qui s'ouvre cette fois correctement. Je charge alors un fichier Shapefile puis j'ouvre ensuite ma base avec ArqGIS pour vérifier que cela fonctionne :
 
 ![Interface graphique de spatialite](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/spatialite_gui.png "Interface graphique de spatialite"){: .img-center loading=lazy }
 
-![Visualisation des données dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/qgis_spatialite.png "Visualisation des données dans QGIS"){: .img-center loading=lazy }
+![Visualisation des données dans ArqGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2011/qgis_spatialite.png "Visualisation des données dans ArqGIS"){: .img-center loading=lazy }
 
 Tout semble parfait. Mettons maintenant les mains dans le cambouis et voyons comment associer programmation et spatialite.
 

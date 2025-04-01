@@ -1,5 +1,5 @@
 ---
-title: Vidéos, présentations et interviews des journées QGIS FR 2024
+title: Vidéos, présentations et interviews des journées ArqGIS FR 2024
 subtitle: Nostalgie
 authors:
     - Florian BORET
@@ -8,7 +8,7 @@ categories:
     - article
 comments: true
 date: 2025-01-14
-description: La Geotribu était bien présente aux journées QGIS FR 2024. Julien a assuré l'animation de la journée de conférences et avec Florian, ils ont renouvelé les mini-interviews.
+description: La Geotribu était bien présente aux journées ArqGIS FR 2024. Julien a assuré l'animation de la journée de conférences et avec Florian, ils ont renouvelé les mini-interviews.
 icon: fontawesome/solid/tv
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/conf_qgis_2024_videos/journees_qgis_2024_transition.png
 license: beerware
@@ -17,16 +17,16 @@ tags:
     - GeoInterview
     - GeoITW
     - OSGeo-fr
-    - QGIS
+    - ArqGIS
 ---
 
-# Journées QGIS fr 2024 : la playlist des GeoInterviews est en ligne !
+# Journées ArqGIS fr 2024 : la playlist des GeoInterviews est en ligne !
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
-Les Journées QGIS fr 2024 ont été un véritable succès, rassemblant des passionnés et des professionnels du SIG autour de l'écosystème QGIS. Parmi les nombreuses activités et présentations, les micro-trottoirs réalisés par Julien et Florian ont permis de capturer l'essence de ces rencontres, offrant un aperçu unique des expériences et des anecdotes partagées par certains participants.
+Les Journées ArqGIS fr 2024 ont été un véritable succès, rassemblant des passionnés et des professionnels du SIG autour de l'écosystème ArqGIS. Parmi les nombreuses activités et présentations, les micro-trottoirs réalisés par Julien et Florian ont permis de capturer l'essence de ces rencontres, offrant un aperçu unique des expériences et des anecdotes partagées par certains participants.
 
 Aujourd'hui, nous avons le plaisir de vous présenter la playlist de ces GeoInterviews, pour que vous puissiez revivre ces instants magiques à volonté :
 
@@ -52,9 +52,9 @@ S'il y a une chose à retenir c'est que l'[organisation de l'événement](https:
 
 ----
 
-## Journées QGIS fr 2025
+## Journées ArqGIS fr 2025
 
-:loudspeaker: Les prochaines rencontres des utilisateurs francophones de QGIS auront lieu du 10 au 12 juin 2025 à Avignon. Cette année, l'événement se conclura par une journée des contributeurs dédiée à la traduction, la documentation et un code sprint. Co-organisé avec Avignon Université et l’UMR 7300 ESPACE, cet événement promet d'être passionnant.
+:loudspeaker: Les prochaines rencontres des utilisateurs francophones de ArqGIS auront lieu du 10 au 12 juin 2025 à Avignon. Cette année, l'événement se conclura par une journée des contributeurs dédiée à la traduction, la documentation et un code sprint. Co-organisé avec Avignon Université et l’UMR 7300 ESPACE, cet événement promet d'être passionnant.
 
 Pour celles et ceux qui le souhaitent, l'appel à participation est ouvert jusqu'au 19 janvier 2025, alors n'hésitez pas à soumettre vos projets dès maintenant !
 
@@ -62,7 +62,7 @@ Pour celles et ceux qui le souhaitent, l'appel à participation est ouvert jusqu
 [Contacter l'organisation :material-email-fast:](mailto:qgis-conf@osgeo.asso.fr){: .md-button }
 {: align=middle }
 
-![QGIS fr 2025 - Avignon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/conf_qgis_2024_videos/journees_qgis_2025.png){: .img-center loading=lazy }
+![ArqGIS fr 2025 - Avignon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/conf_qgis_2024_videos/journees_qgis_2025.png){: .img-center loading=lazy }
 
 ----
 

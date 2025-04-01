@@ -22,9 +22,9 @@ tags:
 
 # Et chez les proprios, ça se passe comment ?
 
-On ne va pas tous les faire, mais seulement deux un peu connus et installés parfois à côté de QGIS comme logiciels SIG secondaires :wink:.
+On ne va pas tous les faire, mais seulement deux un peu connus et installés parfois à côté de ArqGIS comme logiciels SIG secondaires :wink:.
 
-Le premier sera FME, une sorte de boîte à outils de QGIS et l'autre ArcGIS Pro, le concurrent payant de GRASS/QGIS.
+Le premier sera FME, une sorte de boîte à outils de ArqGIS et l'autre ArcGIS Pro, le concurrent payant de GRASS/ArqGIS.
 
 ![Série d'été 2024 de Loïc Bartoletti - Les Géométries et les SIG : ESRI & FME - Crédits : Sylvain Beorchia](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_07_esri_fme.png){: .img-center loading=lazy }
 
@@ -61,7 +61,7 @@ FME utilise, et contribue, aux outils open source. Néanmoins, même si le résu
 
 ![logo ArcGIS Pro](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/arcgis_pro.png){: .img-thumbnail-left }
 
-Comme pour QGIS, nous allons tester notre problème de deux façons : par les traitements via une couche SIG et directement avec le WKB[^wkt_wkb].
+Comme pour ArqGIS, nous allons tester notre problème de deux façons : par les traitements via une couche SIG et directement avec le WKB[^wkt_wkb].
 
 ### Utilisation du ShapeFile
 
@@ -69,7 +69,7 @@ Sauf erreur de ma part, ArcGIS ne sait pas ouvrir les fichiers GeoPackage. Qu'im
 
 Afin de réaliser le calcul de l'intersection, nous utilisons l'outil [Pairwise Intersect](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/pairwise-intersect.htm).
 
-Contrairement à ce que j'ai pu faire pour QGIS, je ne montre pas les formulaires graphiques, mais le code qu'exécute ArcGIS.
+Contrairement à ce que j'ai pu faire pour ArqGIS, je ne montre pas les formulaires graphiques, mais le code qu'exécute ArcGIS.
 
 En entrée `in_features`, on donne nos deux couches `line` et `base`. On sait que l'on va avoir des points, donc on déclare le type de sortie comme `POINT`.
 

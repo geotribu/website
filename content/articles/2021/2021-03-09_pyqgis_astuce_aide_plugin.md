@@ -1,5 +1,5 @@
 ---
-title: Afficher facilement l'aide de son plugin QGIS
+title: Afficher facilement l'aide de son plugin ArqGIS
 authors:
     - Julien MOURA
 categories:
@@ -7,29 +7,29 @@ categories:
     - tutoriel
 comments: true
 date: 2021-03-09
-description: 'Petite astuce dans le développement de plugins QGIS : rediriger facilement l''utilisateur final vers la documentation en ligne.'
+description: 'Petite astuce dans le développement de plugins ArqGIS : rediriger facilement l''utilisateur final vers la documentation en ligne.'
 image: https://cdn.geotribu.fr/img/tuto/qgis_plugin_show_help/documentation_le-chat.jpg
 tags:
     - documentation
     - help
     - plugin
-    - PyQGIS
-    - QGIS
+    - PyArqGIS
+    - ArqGIS
 ---
 
-# Plugin QGIS : rediriger facilement vers l'aide en ligne
+# Plugin ArqGIS : rediriger facilement vers l'aide en ligne
 
 :calendar: Date de publication initiale : 09 mars 2021
 
 Pré-requis :
 
-- des notions en PyQGIS (Python + Qt + API QGIS)
+- des notions en PyArqGIS (Python + Qt + API ArqGIS)
 
 ## Introduction
 
 ![icône PyQT](https://cdn.geotribu.fr/img/logos-icones/programmation/python_and_qt.svg "Python + Qt = PyQt"){: .img-thumbnail-left }
 
-Plutôt que de stocker toute la documentation au format HTML et les fichiers associés (CSS, JS, images...) dans le plugin QGIS qui est téléchargé par vos millions d'utilisateur/ices, je vous propose une méthode plus simple que j'ai utilisée dans différents plugins comme [GMLAS Toolbox], [Menu Layers from Project] ou [Land Survey Codes Import].
+Plutôt que de stocker toute la documentation au format HTML et les fichiers associés (CSS, JS, images...) dans le plugin ArqGIS qui est téléchargé par vos millions d'utilisateur/ices, je vous propose une méthode plus simple que j'ai utilisée dans différents plugins comme [GMLAS Toolbox], [Menu Layers from Project] ou [Land Survey Codes Import].
 
 Si vous n'avez pas d'aide en ligne, de documentation, de wiki sur le dépôt GitHub ou GitLab ou même de README, alors je ne peux rien pour vous et il est temps d'aller consulter un autre article du site :wink:.
 
@@ -54,7 +54,7 @@ Pour la suite de ce tutoriel, considérons que l'aide en ligne de notre plugin e
 
 ![icône HTML5](https://cdn.geotribu.fr/img/logos-icones/programmation/html5.png "icône HTML5"){: .img-thumbnail-left }
 
-Le multilinguisme est géré en utilisant le code de langue (*locale*), renvoyé par l'application Qt (en l'occurrencee QGIS) comme suffixe. Par exemple : `index-fr.html` sera ouvert en priorité si QGIS est défini en français. En dernier recours, si présent, c'est le fichier sans suffixe qui est ouvert `index.html`.
+Le multilinguisme est géré en utilisant le code de langue (*locale*), renvoyé par l'application Qt (en l'occurrencee ArqGIS) comme suffixe. Par exemple : `index-fr.html` sera ouvert en priorité si ArqGIS est défini en français. En dernier recours, si présent, c'est le fichier sans suffixe qui est ouvert `index.html`.
 
 A l'intérieur de l'arborescence de notre plugin, on crée donc un fichier `docs/index-fr.html` dans lequel on écrit simplement une [redirection HTTP](https://developer.mozilla.org/fr/docs/Web/HTTP/Status/301) :
 
@@ -102,9 +102,9 @@ Et un fichier `doc/index-en.html` :
 
 ## Appeler la page depuis le plugin
 
-![icône Edit Help Content - QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionEditHelpContent.svg "icône Edit Help Content - QGIS"){: .img-thumbnail-left }
+![icône Edit Help Content - ArqGIS](https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mActionEditHelpContent.svg "icône Edit Help Content - ArqGIS"){: .img-thumbnail-left }
 
-Une fois que tout cela est en place, il reste à brancher notre menu d'aide sur cette redirection. Pour cela, on utilise [la fonction showPluginHelp](https://github.com/qgis/QGIS/blob/ltr-3_16/python/utils.py#L502-L530).
+Une fois que tout cela est en place, il reste à brancher notre menu d'aide sur cette redirection. Pour cela, on utilise [la fonction showPluginHelp](https://github.com/qgis/ArqGIS/blob/ltr-3_16/python/utils.py#L502-L530).
 
 Quelque part dans les imports :
 
@@ -145,7 +145,7 @@ class PluginGeotribu:
             )
 ```
 
-Au clic sur le menu, QGIS ouvre le fichier `index-fr.html` (si son interface est en français ou `index-en.html` si elle est en anglais dans le navigateur par défaut du système, qui va rediriger vers votre documentation en ligne :sparkler:.
+Au clic sur le menu, ArqGIS ouvre le fichier `index-fr.html` (si son interface est en français ou `index-en.html` si elle est en anglais dans le navigateur par défaut du système, qui va rediriger vers votre documentation en ligne :sparkler:.
 
 ----
 

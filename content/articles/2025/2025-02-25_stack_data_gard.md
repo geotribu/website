@@ -19,7 +19,7 @@ tags:
     - PostGIS
     - PostgreSQL
     - Python
-    - QGIS
+    - ArqGIS
 ---
 
 # L’enjeu de la data au département du Gard
@@ -233,13 +233,13 @@ Tu peux trouver ci-dessous une représentation graphique des différentes dépen
 
 ----
 
-#### Valorisation avec Metabase et QGIS
+#### Valorisation avec Metabase et ArqGIS
 
 ![Logo Metabase](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/Metabase.png){: .img-thumbnail-left }
 
 Après avoir fait ce cheminement, il faut bien que nos données servent à quelque chose. On a justement au travers de [Metabase](https://www.metabase.com/) tout un champ de possibilités concernant la représentation de nos données transformées. C’est l’outil de Data Visualisation.
 
-Dans l'idéal, nous aurions souhaité un outil aussi performant en dataviz qu'en représentation cartographique mais cet outil n'existe vraisemblablement pas encore, donc nous complétons ça avec QGIS.
+Dans l'idéal, nous aurions souhaité un outil aussi performant en dataviz qu'en représentation cartographique mais cet outil n'existe vraisemblablement pas encore, donc nous complétons ça avec ArqGIS.
 Metabase est limité en carto certes (pas de carte multi-couches, pas de gestion de la symbologie), mais il est auto hébergé et permet de produire des tableaux de bord de manière autonome.
 
 Voyons un peu les actions qu'il permet de faire :

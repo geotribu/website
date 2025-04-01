@@ -177,7 +177,7 @@ curl "https://wxs.ign.fr/$key/dematkml/DEMAT.PVA/$id_mission/t.kml" > $folder_mi
 [Consulter le script complet :fontawesome-regular-file-code:](https://github.com/igeofr/remonterletemps2img/blob/main/2_mission_kml.sh){: .md-button }
 {: align=middle }
 
-Après avoir téléchargé nos `X` fichiers `kml`, on va pouvoir les assembler pour visualiser le tuilage des prises de vue au format `shapefile` afin de faciliter la visualisation dans QGIS.
+Après avoir téléchargé nos `X` fichiers `kml`, on va pouvoir les assembler pour visualiser le tuilage des prises de vue au format `shapefile` afin de faciliter la visualisation dans ArqGIS.
 
 ![Emprise des images identifiées](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/images_aeriennes_historiques/images_emprises.png){: .img-center loading=lazy }
 

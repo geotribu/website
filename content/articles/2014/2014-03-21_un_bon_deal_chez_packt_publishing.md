@@ -30,7 +30,7 @@ Voici notamment quelques ouvrages qui pourraient vous intéresser:
 - [Postgis Cookbook](http://www.packtpub.com/postgis-to-store-organize-manipulate-analyze-spatial-data-cookbook/book)
 - [Programming ArcGIS 10.1 with Python Cookbook](http://www.packtpub.com/programming-arcgis-10-1-with-python-cookbook/book)
 - [Learning Geospatial Analysis with Python](http://www.packtpub.com/learning-geospatial-analysis-with-python/book)
-- [Learning QGIS 2.0](http://www.packtpub.com/learning-qgis-2-0-to-create-maps-and-perform-geoprocessing-tasks/book)
+- [Learning ArqGIS 2.0](http://www.packtpub.com/learning-qgis-2-0-to-create-maps-and-perform-geoprocessing-tasks/book)
 - [OpenLayers Cookbook](http://www.packtpub.com/openlayers-create-gis-web-applications-cookbook/book)
 - [OpenLayers 3 beginner guide](http://www.packtpub.com/openlayers-3-beginners-guide/book)
 - [Python Geospatial Development - Second Edition](http://www.packtpub.com/python-geospatial-development-second-edition/book)

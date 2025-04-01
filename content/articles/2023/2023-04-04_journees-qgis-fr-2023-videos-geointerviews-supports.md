@@ -1,5 +1,5 @@
 ---
-title: Vidéos, présentations et interviews des journées QGIS FR 2023
+title: Vidéos, présentations et interviews des journées ArqGIS FR 2023
 subtitle: QNews 24
 authors:
     - Florian BORET
@@ -8,7 +8,7 @@ categories:
     - article
 comments: true
 date: 2023-04-05
-description: La Geotribu était bien présente aux journées QGIS FR 2023. En plus d'assurer l'animation de la journée de conférences, Florian et moi avons eu l'idée d'improviser des mini-interviews.
+description: La Geotribu était bien présente aux journées ArqGIS FR 2023. En plus d'assurer l'animation de la journée de conférences, Florian et moi avons eu l'idée d'improviser des mini-interviews.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_videos/journees_qgis_2023_transition.png
 license: beerware
 robots: index, follow
@@ -16,18 +16,18 @@ tags:
     - GeoInterview
     - GeoITW
     - OSGeo-fr
-    - QGIS
+    - ArqGIS
 ---
 
-# Micro-trottoirs aux journées QGIS 2023
+# Micro-trottoirs aux journées ArqGIS 2023
 
 :calendar: Date de publication initiale : 4 avril 2023
 
-![logo conf QGIS FR 2023](https://cdn.geotribu.fr/img/external/salons_conferences/qgis_fr/qgis_journees_francophones_2023_logo.svg){: .img-thumbnail-left loading=lazy }
+![logo conf ArqGIS FR 2023](https://cdn.geotribu.fr/img/external/salons_conferences/qgis_fr/qgis_journees_francophones_2023_logo.svg){: .img-thumbnail-left loading=lazy }
 
-La Geotribu était bien présente aux journées QGIS. En plus d'assurer l'animation de la journée de conférences (plutôt au titre de membre de l'OSGeo-FR et grâce au soutien d'[Oslandia](https://oslandia.com/)), Florian et moi avons eu l'idée d'improviser des mini-interviews !
+La Geotribu était bien présente aux journées ArqGIS. En plus d'assurer l'animation de la journée de conférences (plutôt au titre de membre de l'OSGeo-FR et grâce au soutien d'[Oslandia](https://oslandia.com/)), Florian et moi avons eu l'idée d'improviser des mini-interviews !
 
-On a filmé quelques participant/es pour recueillir leurs impressions sur la conférence mais aussi la façon dont ils utilisent, financent ou contribuent à QGIS.
+On a filmé quelques participant/es pour recueillir leurs impressions sur la conférence mais aussi la façon dont ils utilisent, financent ou contribuent à ArqGIS.
 
 L'idée était d'avoir un format proche de ce qu'on connaît désormais très bien au travers de médias tels que Brut ou Konbini, toutes proportions de moyens gardées. Nous publions ces courtes capsules vidéos sur notre chaîne YouTube à raison de 2 par semaine depuis jeudi dernier.
 
@@ -50,11 +50,11 @@ Vivement la prochaine édition !
 
 > On remet ici ce qui a été publié dans [la dernière revue de presse](../../rdp/2023/rdp_2023-03-31.md#videos-et-supports-des-rencontres-des-utilisateurs-francophones-de-qgis-2023) histoire que tout soit au même endroit
 
-- [supports et vidéos des présentations du mardi aux journées QGIS FR 2023](https://conf.qgis.osgeo.fr/2023/03/24/retrouver_les_presentations_2023.html)
+- [supports et vidéos des présentations du mardi aux journées ArqGIS FR 2023](https://conf.qgis.osgeo.fr/2023/03/24/retrouver_les_presentations_2023.html)
 - les ateliers du lundi n'étaient pas filmés et le choix de diffuser des supports de présentation appartient aux animateur/ices de chaque atelier. C'est par exemple le cas de :
     - [Créer un outil de saisie avec des expressions](https://docs.3liz.org/formation-qgis-expressions/tp_outil_saisie/), par Michaël Douchin (3Liz)
-    - [QGIS & PostGIS : trucs et astuces](https://troopa81.github.io/presentations/qgisuserfr_ws_postgis_qgis/ws_postgis_qgis.html), par Julien Cabièces (Oslandia)
-    - [Associer vos documents et vos données avec QGIS](https://troopa81.github.io/presentations/qgisuserfr_ws_qgisdocs/ws_qgisdocs.html#/), par Julien Cabièces et Jacky Volpes (Oslandia)
+    - [ArqGIS & PostGIS : trucs et astuces](https://troopa81.github.io/presentations/qgisuserfr_ws_postgis_qgis/ws_postgis_qgis.html), par Julien Cabièces (Oslandia)
+    - [Associer vos documents et vos données avec ArqGIS](https://troopa81.github.io/presentations/qgisuserfr_ws_qgisdocs/ws_qgisdocs.html#/), par Julien Cabièces et Jacky Volpes (Oslandia)
 
 N'hésitez pas à compléter cette liste avec le lien vers un support diffusé, soit en [commentaire](#__comments), soit via l'icône :material-file-edit-outline: en regard du titre de cette page en haut.
 

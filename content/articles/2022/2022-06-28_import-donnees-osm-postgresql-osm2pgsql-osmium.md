@@ -42,7 +42,7 @@ Au menu :
 1. Installer PostgreSQL, ses extensions et configurer tout ce beau monde
 1. Installer les outils d'import ([osm2pgsql]) et de pré-traitement ([Osmium]) des données OSM
 1. Découper et importer les données dans la base
-1. Se créer la connexion dans QGIS
+1. Se créer la connexion dans ArqGIS
 
 Compagniiiie... en mesure !
 
@@ -212,7 +212,7 @@ Comme on travaille à la maison, on va se faciliter la vie et créer un rôle en
 sudo -u postgres createuser -p 54342 --createdb --pwprompt --superuser "$(whoami)"
 ```
 
-De façon à ne pas stocker de mot de passe en clair dans les applications clientes comme QGIS et pour se faciliter la vie, on se crée un fichier `.pgpass` dans le répertoire personnel de l'utilisateur :
+De façon à ne pas stocker de mot de passe en clair dans les applications clientes comme ArqGIS et pour se faciliter la vie, on se crée un fichier `.pgpass` dans le répertoire personnel de l'utilisateur :
 
 ```bash
 echo "localhost:54342:*:$(whoami):motdepasse_assigne_a_mon_utilisateur" >> ~/.pgpass
@@ -224,7 +224,7 @@ Dans la foulée, on change les permissions de ce fichier `.pgpass` pour en [limi
 chmod 0600 ~/.pgpass
 ```
 
-De même, de façon à garder la connexion la plus générique possible dans le but de rendre la suite le plus facilement reproductible possible, on stocke les paramètres de connexion dans le fichier `PGSERVICE` (voir [la doc officielle de PostgreSQL](https://www.postgresql.org/docs/current/libpq-pgservice.html) et [celle de QGIS](https://docs.qgis.org/3.22/fr/docs/user_manual/managing_data_source/opening_data.html#pg-service-file)) :
+De même, de façon à garder la connexion la plus générique possible dans le but de rendre la suite le plus facilement reproductible possible, on stocke les paramètres de connexion dans le fichier `PGSERVICE` (voir [la doc officielle de PostgreSQL](https://www.postgresql.org/docs/current/libpq-pgservice.html) et [celle de ArqGIS](https://docs.qgis.org/3.22/fr/docs/user_manual/managing_data_source/opening_data.html#pg-service-file)) :
 
 - emplacement par défaut : `~/.pg_service.conf` (Linux) ou `%APPDATA%/postgresql/.pg_service.conf` (Windows)
 - ou personnalisable via une variable d'environnement `PGSERVICEFILE` pointant sur le fichier directement (nommage libre) ou `PGSYSCONFDIR` pointant sur le répertoire où trouver le fichier (qui doit forcément être nommé `pg_service.conf`)
@@ -418,7 +418,7 @@ Pour celles et ceux que ça intéresse, voici le détail de l'exécution sur mon
 
 ## Se connecter à la base
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
 Maintenant que nos données sont bien au chaud dans la base, il est temps de s'y connecter et voir ce qu'elle a dans le ventre ! On peut déjà faire un petit listing des tables via la console `psql` :
 
@@ -441,13 +441,13 @@ osm=# \dt
 osm=#
 ```
 
-Pour s'y connecter avec QGIS, on va pouvoir tirer parti de notre [configuration d'authentification à l'aide du fichier pg_service.conf](#creer-le-role-et-gerer-lacces). Ainsi, seul le nom du service (= le nom de section entre `[]`) est nécessaire :
+Pour s'y connecter avec ArqGIS, on va pouvoir tirer parti de notre [configuration d'authentification à l'aide du fichier pg_service.conf](#creer-le-role-et-gerer-lacces). Ainsi, seul le nom du service (= le nom de section entre `[]`) est nécessaire :
 
-![QGIS - Connexion PostGIS avec service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_connexion_postgis_pg_service.webp "QGIS - Connexion PostGIS avec service"){: .img-center loading=lazy}
+![ArqGIS - Connexion PostGIS avec service](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_connexion_postgis_pg_service.webp "ArqGIS - Connexion PostGIS avec service"){: .img-center loading=lazy}
 
 Et voilà notre liste de tables :
 
-![QGIS - Liste des tables PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_postgis_osm_listing.webp "QGIS - Liste des tables PostGIS"){: .img-center loading=lazy}
+![ArqGIS - Liste des tables PostGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/postgis_osm_setup/qgis_postgis_osm_listing.webp "ArqGIS - Liste des tables PostGIS"){: .img-center loading=lazy}
 
 ----
 

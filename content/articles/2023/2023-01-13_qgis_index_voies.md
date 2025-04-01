@@ -1,5 +1,5 @@
 ---
-title: Créer un index des voies dans QGIS
+title: Créer un index des voies dans ArqGIS
 authors:
     - Florian Boret
 categories:
@@ -7,24 +7,24 @@ categories:
     - tutoriel
 comments: true
 date: 2023-01-13
-description: Créer un index des voies dans QGIS
+description: Créer un index des voies dans ArqGIS
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/plan_ville.png
 license: beerware
 tags:
-    - QGIS
+    - ArqGIS
 ---
 
-# Créer un index des voies dans QGIS
+# Créer un index des voies dans ArqGIS
 
 :calendar: Date de publication initiale : 13 janvier 2023
 
 ## Prérequis
 
-- QGIS
+- ArqGIS
 
 ## Intro
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
 Nombreuses sont les communes qui disposent d'un plan de ville, qu'elles affichent dans la rue ou qu'elles mettent à disposition sous la forme d'un dépliant, je vous partage ici la manière dont j'ai créé un listing des voies sur une expérimentation de plan de ville. Il y a sans aucun doute des choses à améliorer alors n'hésitez pas à laisser vos propositions ou vos remarques en commentaire.
 
@@ -35,7 +35,7 @@ Nombreuses sont les communes qui disposent d'un plan de ville, qu'elles affichen
 
 ## Créer une grille
 
-La première étape consiste à créer une grille carrée à l'aide des outils vectoriels de QGIS : `Vecteur` / `Outils de recherche` / `Créer une grille`.
+La première étape consiste à créer une grille carrée à l'aide des outils vectoriels de ArqGIS : `Vecteur` / `Outils de recherche` / `Créer une grille`.
 
 ![Créer une grille](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_index_voies/creer_grille.png "Créer une grille"){: .img-center loading=lazy }
 

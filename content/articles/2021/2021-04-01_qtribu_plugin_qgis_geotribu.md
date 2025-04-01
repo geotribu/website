@@ -1,43 +1,43 @@
 ---
-title: QTribu, le plugin QGIS inutile donc forcément indispensable
+title: QTribu, le plugin ArqGIS inutile donc forcément indispensable
 authors:
     - Julien MOURA
 categories:
     - article
 comments: true
 date: 2021-04-01
-description: "Présentation du plugin de Geotribu pour QGIS : QTribu. Inutile donc forcément indispensable."
+description: "Présentation du plugin de Geotribu pour ArqGIS : QTribu. Inutile donc forcément indispensable."
 icon: material/puzzle-heart-outline
 image: https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png
 license: default
 tags:
     - plugin
     - Geotribu
-    - QGIS
+    - ArqGIS
     - QTribu
 ---
 
-# QTribu, le plugin Geotribu pour QGIS
+# QTribu, le plugin Geotribu pour ArqGIS
 
 :calendar: Date de publication initiale : 1er avril 2021
 
 ## Un plugin sérieux pour ne pas se prendre au sérieux
 
-![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
+![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
 
-Au détour d'un travail sur la négociation de contenu pour un plugin QGIS dans le cadre de mes fonctions à [Oslandia](https://oslandia.com/fr/), je me suis dit :
+Au détour d'un travail sur la négociation de contenu pour un plugin ArqGIS dans le cadre de mes fonctions à [Oslandia](https://oslandia.com/fr/), je me suis dit :
 
-- Tiens, et si c'était possible de lire un flux RSS dans QGIS, on pourrait faire un plugin pour Geotribu ?
+- Tiens, et si c'était possible de lire un flux RSS dans ArqGIS, on pourrait faire un plugin pour Geotribu ?
 - Mais pourquoi faire ?
 - Pourquoi pas ?
 
 Et voilà ! :smile:
 
-Pour l'instant, le plugin permet de consulter Geotribu sans quitter QGIS. D'autres fonctionnalités arriveront probablement par la suite.
+Pour l'instant, le plugin permet de consulter Geotribu sans quitter ArqGIS. D'autres fonctionnalités arriveront probablement par la suite.
 
-![QTribu - Dernier article dans le navigateur intégré de QGIS](https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png "QTribu - Dernier article dans le navigateur intégré de QGIS"){: .img-center loading=lazy }
+![QTribu - Dernier article dans le navigateur intégré de ArqGIS](https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png "QTribu - Dernier article dans le navigateur intégré de ArqGIS"){: .img-center loading=lazy }
 
-C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemple concret de ce que je considère comme étant de bonnes pratiques et que je présente en partie sur ce site : le [raccourci vers l'aide en ligne](2021-03-09_pyqgis_astuce_aide_plugin.md), l'utilisation des [icônes intégrées de QGIS](2021-01-19_pyqgis_utiliser_icones_integrees.md), l'intégration des options du plugin dans le menu des préférences de QGIS, la gestion centralisée des logs et messages à l'utilisateur/ice final/e, etc.
+C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemple concret de ce que je considère comme étant de bonnes pratiques et que je présente en partie sur ce site : le [raccourci vers l'aide en ligne](2021-03-09_pyqgis_astuce_aide_plugin.md), l'utilisation des [icônes intégrées de ArqGIS](2021-01-19_pyqgis_utiliser_icones_integrees.md), l'intégration des options du plugin dans le menu des préférences de ArqGIS, la gestion centralisée des logs et messages à l'utilisateur/ice final/e, etc.
 
 [Documentation du plugin :fontawesome-solid-book:](https://geotribu.github.io/qtribu/){: .md-button }
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
@@ -45,10 +45,10 @@ C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemp
 
 ## Installer le plugin
 
-![QGIS icône plugins](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/propertyicons/plugins.svg "QGIS icône plugins"){: .img-thumbnail-left }
+![ArqGIS icône plugins](https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/propertyicons/plugins.svg "ArqGIS icône plugins"){: .img-thumbnail-left }
 
 !!!note
-    Compte-tenu du périmètre fonctionnel particulier de ce plugin et pour ne pas ajouter du bruit supplémentaire au dépôt officiel des extensions de QGIS, QTribu est uniquement disponible en ajoutant un dépôt personnalisé.
+    Compte-tenu du périmètre fonctionnel particulier de ce plugin et pour ne pas ajouter du bruit supplémentaire au dépôt officiel des extensions de ArqGIS, QTribu est uniquement disponible en ajoutant un dépôt personnalisé.
 
 1. Menu `Extensions` > `Installer/Gérer des extensions`
 2. Onglet `Paramètres`
@@ -63,11 +63,11 @@ C'est surtout un projet "modèle" dont je me sers pour tester ou donner un exemp
     ![QTribu - Non installée](https://cdn.geotribu.fr/img/tuto/qgis_plugins_repository/qgis_plugins_available_qtribu.png "QTribu - Non installée"){: loading=lazy }
 
 !!!warning
-    Selon votre configuration, redémarrer QGIS peut être nécessaire, le gestionnaire d'extensions ayant des comportement parfois capricieux par rapport aux dépôts tiers.
+    Selon votre configuration, redémarrer ArqGIS peut être nécessaire, le gestionnaire d'extensions ayant des comportement parfois capricieux par rapport aux dépôts tiers.
 
 ----
 
-## Intégration dans QGIS
+## Intégration dans ArqGIS
 
 Une fois installé, le plugin s'intègre :
 
