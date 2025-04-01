@@ -34,11 +34,26 @@ La documentation officielle de QGIS Server explique en détail l'[installation d
 
 Oui il existe depuis 2024 une image Docker officielle de QGIS Server :tada:... mais qu'est ce que cela signifie ? Commençons par rappeler d'abord la pile technologique sous-jacente ainsi qu'un peu de vocabulaire.
 
-- Docker est une plateforme qui permet de créer, déployer et exécuter des applications dans des conteneurs, garantissant ainsi leur portabilité et leur isolation. Ces applications peuvent être distribuées sous forme d'images via des plateformes spécialisées ou reconstruites à partir des sources.
-- [Dockerfile](https://docs.docker.com/reference/dockerfile/) est un script définissant les étapes pour construire une image Docker personnalisée.
-- [Docker Hub](https://hub.docker.com/) est une plateforme en ligne qui permet de stocker, partager et distribuer des images Docker, offrant ainsi un dépôt centralisé pour les applications et leurs composants.
-- La composition - généralement via l'outil [Docker Compose](https://docs.docker.com/compose/) - permet de définir et de gérer des applications multi-conteneurs en utilisant un fichier de configuration, qui décrit les services, réseaux et volumes nécessaires à l'application.
-- La clusterisation - non abordée dans cet article - concerne la gestion de plusieurs instances de Docker réparties sur plusieurs machines physiques ou virtuelles pour augmenter la disponibilité, la résilience et la scalabilité de l'application. Il s'agit généralement d'environnements cloud basés par exemple sur [Kubernetes](https://kubernetes.io/).
+
+`Docker`
+
+:   Docker est une plateforme qui permet de créer, déployer et exécuter des applications dans des conteneurs, garantissant ainsi leur portabilité et leur isolation. Ces applications peuvent être distribuées sous forme d'images via des plateformes spécialisées ou reconstruites à partir des sources.
+
+`Dockerfile`
+
+:   [Dockerfile](https://docs.docker.com/reference/dockerfile/) est un script définissant les étapes pour construire une image Docker personnalisée.
+
+`Docker Hub`
+
+:   [Docker Hub](https://hub.docker.com/) est une plateforme en ligne qui permet de stocker, partager et distribuer des images Docker, offrant ainsi un dépôt centralisé pour les applications et leurs composants.
+
+`docker-compose`
+
+:   La composition - généralement via l'outil [Docker Compose](https://docs.docker.com/compose/) - permet de définir et de gérer des applications multi-conteneurs en utilisant un fichier de configuration, qui décrit les services, réseaux et volumes nécessaires à l'application.
+
+`Cluster cloud`
+
+:   La clusterisation - non abordée dans cet article - concerne la gestion de plusieurs instances de Docker réparties sur plusieurs machines physiques ou virtuelles pour augmenter la disponibilité, la résilience et la scalabilité de l'application. Il s'agit généralement d'environnements cloud basés par exemple sur [Kubernetes](https://kubernetes.io/).
 
 De nombreuses images Docker de QGIS Server sont disponibles en ligne, chacune ayant des spécificités liées à son utilisation et à sa configuration. Mais depuis 2024, l'image initialement fournie par [OPENGIS.ch](https://www.opengis.ch/) est désormais disponible en tant qu'image officielle sur le [Docker Hub de QGIS.org](https://hub.docker.com/r/qgis/qgis-server). Pour l'obtenir, rien de plus simple:
 
