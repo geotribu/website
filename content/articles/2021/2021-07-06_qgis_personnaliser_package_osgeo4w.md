@@ -1,5 +1,5 @@
 ---
-title: Préconfigurer ArqGIS en entreprise avec OSGEO4W
+title: Préconfigurer QGIS en entreprise avec OSGEO4W
 authors:
     - Régis HAUBOURG
 categories:
@@ -7,7 +7,7 @@ categories:
     - tutoriel
 comments: true
 date: 2021-07-06
-description: vous voulez contrôler l'interface et les paramètres de ArqGIS dans votre organisation. Ne pas infliger à vos utilisateurs de trifouiller les réglages du proxy, ou connaître l'adresse IP des serveurs PostGIS ? Suivez le guide pour industrialiser votre installation personnalisée de ArqGIS.
+description: vous voulez contrôler l'interface et les paramètres de QGIS dans votre organisation. Ne pas infliger à vos utilisateurs de trifouiller les réglages du proxy, ou connaître l'adresse IP des serveurs PostGIS ? Suivez le guide pour industrialiser votre installation personnalisée de QGIS.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png
 license: default
 tags:
@@ -15,24 +15,24 @@ tags:
     - déploiement
     - OSGeo4W
     - personnalisation
-    - ArqGIS
+    - QGIS
     - Windows
 ---
 
-# Préconfigurer ArqGIS en entreprise avec OSGEO4W
+# Préconfigurer QGIS en entreprise avec OSGEO4W
 
 :calendar: Date de publication initiale : 6 juillet 2021
 
 Pré-requis :
 
-- être en charge de déployer ArqGIS sur des postes d'une organisation, grande ou petite
+- être en charge de déployer QGIS sur des postes d'une organisation, grande ou petite
 - ne pas avoir peur de petits scripts shell et batch
 
 ## Introduction
 
-![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png){: .img-thumbnail-left }
 
-Vous aimez que tout soit bien paramétré pour vos utilisateurs ? Vous avez ce coté psychorigide de l'admin SIG perfectionniste ? Vous voulez déployer de manière transparente un jeu de plugins obligatoires ? Ou vous aimeriez tout simplement que les connexions aux bases de données dans les projets ArqGIS soient toutes les mêmes ?
+Vous aimez que tout soit bien paramétré pour vos utilisateurs ? Vous avez ce coté psychorigide de l'admin SIG perfectionniste ? Vous voulez déployer de manière transparente un jeu de plugins obligatoires ? Ou vous aimeriez tout simplement que les connexions aux bases de données dans les projets QGIS soient toutes les mêmes ?
 
 Dans la lignée des articles parlant de l'installeur [OSGeo4W en ligne de commande](../2020/2020-07-03_deploy_qgis_windows.md), ou de la personnalisation du [splashscreen](2021-06-11_qgis_personnaliser_splash_screen.md), cet article vient faire un peu de publicité à une méthode pour préconfigurer tout votre environnement SIG préféré aux petits oignons.
 
@@ -41,7 +41,7 @@ Dans la lignée des articles parlant de l'installeur [OSGeo4W en ligne de comman
 
 ----
 
-## Préconfigurez ArqGIS !
+## Préconfigurez QGIS !
 
 Ce n'est pas une suggestion, mais presque une obligation !
 
@@ -54,7 +54,7 @@ En effet, déployer un logiciel SIG en entreprise, c'est préparer les fondation
 - que le cache internet ne fasse pas plus de 5 Mo sinon votre admin sys boude et ronchonne
 - etc..
 
-Bonne nouvelle, ArqGIS étant open source et financé par des administrateurs SIG, la grande majorité de ces fonctionnalités sont déjà possibles.
+Bonne nouvelle, QGIS étant open source et financé par des administrateurs SIG, la grande majorité de ces fonctionnalités sont déjà possibles.
 
 ![tuning voiture qgis moche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/qgis_osgeo4w_voiture_rallye.png){: .img-center loading=lazy }
 
@@ -62,11 +62,11 @@ Par exemple, moi j'aime bien :
 
 - toujours avoir une recherche d'adresse dans la barre de recherche universelle (merci la BAN), via le plugin [French Locator Filter](https://oslandia.gitlab.io/qgis/french_locator_filter/) :
 
-  ![capture écran french locator filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/recherche_adresse_qgis.png "Plugin French Locator Filter pour ArqGIS"){: .img-center loading=lazy }
+  ![capture écran french locator filter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/recherche_adresse_qgis.png "Plugin French Locator Filter pour QGIS"){: .img-center loading=lazy }
 
 - Le plugin [Mask](https://plugins.qgis.org/plugins/mask/), pour faire des jolis... masques qui [gèrent les étiquettes à masquer et les atlas](https://regishaubourg.net/2015/12/21/le-plugin-mask-dans-qgis-genese-dune-extension-python-bien-pratique/) :
 
-  ![capture écran plugin mask](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/etiquettes_with_mask.png "Plugin Mask pour ArqGIS"){: .img-center loading=lazy }
+  ![capture écran plugin mask](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/etiquettes_with_mask.png "Plugin Mask pour QGIS"){: .img-center loading=lazy }
 
 - [Layers menu from project](https://xcaeag.github.io/MenuFromProject-Qgis-Plugin/#en-francais), pour servir un socle de données de référence facile à maintenir :
 
@@ -74,9 +74,9 @@ Par exemple, moi j'aime bien :
 
 - et [Red Layer](https://plugins.qgis.org/plugins/redLayer/), pour gribouiller un fond de carte rapido, [spreadsheet layers](https://plugins.qgis.org/plugins/SpreadsheetLayers/) pour faciliter l'ouverture de tableurs excel, etc.
 
-- et tous les paramètres qui vont bien, comme ici un [*user-agent*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) nommé `ArqGIS` et le proxy système (qui passe par le `proxy.pac` d'entreprise) :
+- et tous les paramètres qui vont bien, comme ici un [*user-agent*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) nommé `QGIS` et le proxy système (qui passe par le `proxy.pac` d'entreprise) :
 
-  ![quelques paramètres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/some_settings.png "Personnalisation ArqGIS"){: .img-center loading=lazy }
+  ![quelques paramètres](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/some_settings.png "Personnalisation QGIS"){: .img-center loading=lazy }
 
 A vous de jouer sur le contenu de votre profil utilisateur.
 
@@ -91,16 +91,16 @@ Ils codent de préférence sous Linux, parfois sous MacOS ou BSD. Rarement sous 
 
 Ces développeurs ne seraient rien sans les "packagers", qui ont en charge la compilation des sources en binaires éxécutables sur les différentes plateformes. Et c'est un cauchemar le packaging, particulièrement sous Windows puisque le code est développé sur et pour Linux.
 
-ArqGIS se veut multi-plateforme, ce qui veut dire qu'il est possible de le compiler sur la majorité des OS.  
-Le projet ArqGIS.org gère le packaging pour Ubuntu/Debian et Windows. Les autres plateformes sont dans les mains d'autres volontaires.  
+QGIS se veut multi-plateforme, ce qui veut dire qu'il est possible de le compiler sur la majorité des OS.  
+Le projet QGIS.org gère le packaging pour Ubuntu/Debian et Windows. Les autres plateformes sont dans les mains d'autres volontaires.  
 
 Pour Windows, il n'existait pas (jusqu'en [2021 en tous cas](https://docs.microsoft.com/fr-fr/windows/package-manager/winget/)) de véritable gestionnaire de paquets natif. On réinstalle donc pour chaque application une majorité de ses dépendances logicielles. C'est plus lourd, il faut tout faire rentrer dans un énorme installateur (parfois au chausse pied).
 
 Puisque la majorité des utilisateurs travaillent sous Windows, l'[OSGeo](https://www.osgeo.org) a développé un environnement de compilation et d'installation, basé sur [MinGW](https://fr.wikipedia.org/wiki/MinGW), le fameux [OSGeo4W](https://www.osgeo.org/projects/osgeo4w/) (prononcez *OSGeo for Windows*).
 
-Cet utilitaire est à la base de tous les installeurs ArqGIS, mais il embarque également d'autres outils (GRASS, SAGA, etc.), des librairies (GDAL, PROJ), des langages et *framework* de développement (Python, Qt, etc.), dans une arborescence similaire à une plateforme Linux.
+Cet utilitaire est à la base de tous les installeurs QGIS, mais il embarque également d'autres outils (GRASS, SAGA, etc.), des librairies (GDAL, PROJ), des langages et *framework* de développement (Python, Qt, etc.), dans une arborescence similaire à une plateforme Linux.
 
-Et donc, nous reposons tous sur les larges épaules de [Jurgen Fischer](https://qgis.org/lt/site/getinvolved/governance/governance.html#release-management), qui a la lourde charge de maintenir OSGeo4W et les releases de ArqGIS.
+Et donc, nous reposons tous sur les larges épaules de [Jurgen Fischer](https://qgis.org/lt/site/getinvolved/governance/governance.html#release-management), qui a la lourde charge de maintenir OSGeo4W et les releases de QGIS.
 
 !!! tip "Spoiler"
     Et non, ce n'est pas une tâche facile, ni rapide, ni réellement payée par des clients. Pensez éventuellement un jour à financer des choses de ce coté là :pray:.
@@ -111,14 +111,14 @@ Maintenant vous [saCHez](https://twitter.com/ComplotsFaciles/status/140988093508
 
 ## Partageons nos recettes
 
-Il existe une grande diversité de méthodes pour faire des installeurs et préconfigurer ArqGIS.
+Il existe une grande diversité de méthodes pour faire des installeurs et préconfigurer QGIS.
 
 Pour rendre hommage aux recettes existantes, il y a :
 
-- Une série de recettes souvent obsolètes comme [l'installation alternative par Frederikssund (obsolète)](https://github.com/Frederikssund/Alternativ-ArqGIS-installation), ou cette [version de l'université d'Edinburgh](https://fr.slideshare.net/RossMcDonald1/installing-qgis-on-a-network)
+- Une série de recettes souvent obsolètes comme [l'installation alternative par Frederikssund (obsolète)](https://github.com/Frederikssund/Alternativ-QGIS-installation), ou cette [version de l'université d'Edinburgh](https://fr.slideshare.net/RossMcDonald1/installing-qgis-on-a-network)
 - [Les installeurs du ministère en charge de l'écologie](http://www.geoinformations.developpement-durable.gouv.fr/qgis-r625.html)
-- Le vénérable et désormais obsolète installeur [NSIS](https://github.com/qgis/ArqGIS/blob/master/ms-windows/ArqGIS-Installer.nsi), que l'on peut bricoler
-- Le fringant installeur [MSI](https://qgis.org/downloads/ArqGIS-OSGeo4W-3.20.0-4.msi) qui permet de passer la limitation des 2 Go. Les recettes sont [ici](https://github.com/jef-n/OSGeo4W)
+- Le vénérable et désormais obsolète installeur [NSIS](https://github.com/qgis/QGIS/blob/master/ms-windows/QGIS-Installer.nsi), que l'on peut bricoler
+- Le fringant installeur [MSI](https://qgis.org/downloads/QGIS-OSGeo4W-3.20.0-4.msi) qui permet de passer la limitation des 2 Go. Les recettes sont [ici](https://github.com/jef-n/OSGeo4W)
 - et certainement beaucoup d'autres méthodes ad-hoc à chaque organisation
 
 A la différence de ces solutions qui réalisaient un paquet "tout en un", long à compresser, long à installer, et qui ne permet pas de gérer finement les versions des différents sous paquets, l'idée ici est de faire un paquet logiciel dédié à la configuration uniquement.
@@ -173,16 +173,16 @@ qgis-yourorganizationname/
 ```
 
 Il est possible d'embarquer des extensions, des symboles, du code, des ressources fichiers diverses, et d'ajouter de la logique applicative à l'installation et la désinstallation du paquet.
-Il est même possible de changer l'[écran de démarrage](2021-06-11_qgis_personnaliser_splash_screen.md), ou de forcer l'utilisation de versions très simplifiées de l'interface de ArqGIS.
+Il est même possible de changer l'[écran de démarrage](2021-06-11_qgis_personnaliser_splash_screen.md), ou de forcer l'utilisation de versions très simplifiées de l'interface de QGIS.
 
 Si vous combinez cela avec les [options de démarrage](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#running-qgis-with-advanced-settings) :
 
 ```sh
-<ArqGIS is a user friendly Open Source Geographic Information System.
+<QGIS is a user friendly Open Source Geographic Information System.
 Usage: /usr/bin/qgis.bin [OPTION] [FILE]
   OPTION:
         [...]
-        [--project projectfile] load the given ArqGIS project
+        [--project projectfile] load the given QGIS project
         [--extent xmin,ymin,xmax,ymax]  set initial map extent
         [--nologo]      hide splash screen
         [...]
@@ -206,11 +206,11 @@ Suivant vos contraintes, vous pouvez choisir d'embarquer toutes les ressources d
 
 A l'opposé, une bonne partie des ressources (plugins, SVG, settings), peuvent être déplacées sur un lecteur réseau (avec des problèmes potentiels de latence ou de non montage de disque réseau).
 
-Donc, on vous laisse faire votre tuning ! La méthode étant de paramétrer une autre instance de ArqGIS à la main, piocher dans le profil utilisateur et paramètres du `ArqGIS3.ini` et de reporter uniquement le strict minimum dans votre paquet.  
+Donc, on vous laisse faire votre tuning ! La méthode étant de paramétrer une autre instance de QGIS à la main, piocher dans le profil utilisateur et paramètres du `QGIS3.ini` et de reporter uniquement le strict minimum dans votre paquet.  
 
-N'oubliez pas que ArqGIS a une logique permissive. Si on propose des paramètres par défaut, l'utilisateur peut à tout moment les écraser.
+N'oubliez pas que QGIS a une logique permissive. Si on propose des paramètres par défaut, l'utilisateur peut à tout moment les écraser.
 
-Si vous souhaitez **contraindre** certains de ces paramètres, par exemple en forçant le chargement d'une extension, ou un paramètre proxy, jetez un coup d'oeil sur le projet [ArqGIS Constrained settings](https://github.com/Oslandia/qgis-constrained-settings), financé par l'ami Alain Ferraton et le ministère de l'écologie.
+Si vous souhaitez **contraindre** certains de ces paramètres, par exemple en forçant le chargement d'une extension, ou un paramètre proxy, jetez un coup d'oeil sur le projet [QGIS Constrained settings](https://github.com/Oslandia/qgis-constrained-settings), financé par l'ami Alain Ferraton et le ministère de l'écologie.
 
 (On vous a déjà dit qu'on s'appuie sur les épaules des géants dans l'open source ?).
 
@@ -244,8 +244,8 @@ Vous devriez trouver à la fin du fichier ce genre de choses :
 
 ```ini
 @qgis-custom
-sdesc: "ArqGIS LTR configuration package"
-ldesc: "ArqGIS LTR custom configuration package"
+sdesc: "QGIS LTR configuration package"
+ldesc: "QGIS LTR custom configuration package"
 maintainer: RHaubourg
 category: Desktop
 requires: qgis-ltr
@@ -253,7 +253,7 @@ version: 0.9-2
 install: x86_64/release/qgis/qgis-custom/qgis-custom-0.9-2.tar.bz2 4891963 80c5d2d743718e4c4472f983e4972dbe
 ```
 
-Et si vous lancez l'installeur `setup.exe` qui est dans votre version de ArqGIS de développement, vous devez voir ce paquet apparaître comme ici :
+Et si vous lancez l'installeur `setup.exe` qui est dans votre version de QGIS de développement, vous devez voir ce paquet apparaître comme ici :
 
 ![OSGEO4W GUI avec paquet de personnaliszation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_customize_osgeo4w_rha/osgeo4W_with_custom_package.png){: .img-center loading=lazy }
 
@@ -263,7 +263,7 @@ Ici `qgis-gam` est le paquet de personnalisation pour Grenoble Alpes Métropole.
 
 On rebascule ici dans le monde **Windows**.
 
-Vous pouvez soit utiliser l'interface graphique, soit la ligne de commande (DOS-batch ou PowerShell) à ce stade. Et comme le but est de déployer automatiquement ArqGIS en masse, voilà une commande type qui va installer, mettre à jour et nettoyer tous les paquets disponibles :
+Vous pouvez soit utiliser l'interface graphique, soit la ligne de commande (DOS-batch ou PowerShell) à ce stade. Et comme le but est de déployer automatiquement QGIS en masse, voilà une commande type qui va installer, mettre à jour et nettoyer tous les paquets disponibles :
 
 ```batch
 .\osgeo4w-setup.exe `
@@ -304,7 +304,7 @@ Restera à choisir votre stratégie de versionnement de méta-paquet logiciel et
 
 Promis, si la recette interne de ma DSI pour SCCM est publiable, je documenterais ça.
 
-Je ne vous mets pas d'image, rien de moins spectaculaire qu'un ArqGIS avec les bonnes barres d'outils, les bons paramètres et des templates de mise en page tout prêt. :smile:
+Je ne vous mets pas d'image, rien de moins spectaculaire qu'un QGIS avec les bonnes barres d'outils, les bons paramètres et des templates de mise en page tout prêt. :smile:
 
 Et là, normalement, l'admin SIG est satisfait, heureux et ses utilisateurs l'appellent pour le remercier de tant de sollicitude à leur égard. Je m'égare...
 
@@ -318,7 +318,7 @@ Et là, normalement, l'admin SIG est satisfait, heureux et ses utilisateurs l'ap
 4. Compilez le et déployer le sur une machine locale.
 5. Versionnez et déposez votre paquet sur les répertoires de déploiement réels utilisés.
 
-Une fois en place, une mise à jour de version sera vraiment légère pour vous. Cela vous permettra de garder le rythme des mises à jour mineures, et surtout d'être en phase avec le rythme de développement de ArqGIS. Si vous devez financer un correctif bloquant, vous n'avez aucune chance de déployer les patchs simplement si vous utilisez une version en fin de vie.
+Une fois en place, une mise à jour de version sera vraiment légère pour vous. Cela vous permettra de garder le rythme des mises à jour mineures, et surtout d'être en phase avec le rythme de développement de QGIS. Si vous devez financer un correctif bloquant, vous n'avez aucune chance de déployer les patchs simplement si vous utilisez une version en fin de vie.
 
 Maintenant, à vous de jouer, et pensez à remonter toute anomalie ou amélioration (oui, il faudrait de suite tester cette recette avec l'[installeur V2](https://www.qgis.org/fr/site/forusers/download.html) tout juste sorti).
 

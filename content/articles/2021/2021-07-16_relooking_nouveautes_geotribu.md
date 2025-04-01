@@ -23,7 +23,7 @@ tags:
 
 Comme évoqué dans la dernière GeoRDP, pas de revue de presse aujourd'hui mais une revue des nouveautés que vous pouvez trouver sur notre site.
 
-A noter tout de même la parution d'un article vous proposant de [préconfigurer ArqGIS en entreprise avec OSGeo4W](2021-07-06_qgis_personnaliser_package_osgeo4w.md) par Régis Haubourg.
+A noter tout de même la parution d'un article vous proposant de [préconfigurer QGIS en entreprise avec OSGeo4W](2021-07-06_qgis_personnaliser_package_osgeo4w.md) par Régis Haubourg.
 
 Vous souhaitant un bel été :sun_with_face: !
 

@@ -327,7 +327,7 @@ Waoohh !!!
 
 ![Color](https://cdn.geotribu.fr/img/logos-icones/divers/color_wheel.png "Color"){: .img-thumbnail-left }
 
-Pour ça, je vais vous laissez vous reposer et ne pas ressortir GDAL, mais réouvrir un logiciel obscur nommé ArqGIS dans lequel on va charger notre raster d'élévation. L'idée va être de générer une image colorée qu'on appliquera ensuite dans Blender comme texture.
+Pour ça, je vais vous laissez vous reposer et ne pas ressortir GDAL, mais réouvrir un logiciel obscur nommé QGIS dans lequel on va charger notre raster d'élévation. L'idée va être de générer une image colorée qu'on appliquera ensuite dans Blender comme texture.
 
 Si vous avez de l'eau :
 

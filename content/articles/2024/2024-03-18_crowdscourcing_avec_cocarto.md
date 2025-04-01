@@ -120,7 +120,7 @@ L’admin verra apparaitre tous les points dès leur signalement et pourra les c
 
 ![Écran du tableau de données et du boutton exporter](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/cocarto/tableau_exporter.webp){: .img-center loading=lazy }
 
-Afin de collaborer avec des cartographes, il suffira de cliquer sur le bouton télécharger pour obtenir un GeoJSON qui sera très simple à exploiter, avec [ArqGIS](https://qgis.org/fr/) par exemple.
+Afin de collaborer avec des cartographes, il suffira de cliquer sur le bouton télécharger pour obtenir un GeoJSON qui sera très simple à exploiter, avec [QGIS](https://qgis.org/fr/) par exemple.
 
 Il est également possible d’obtenir un lien permanent vers le dernier GeoJSON à jour, mais cela depasse le cadre de ce guide.
 

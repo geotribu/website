@@ -1,29 +1,29 @@
 ---
-title: "Développement ArqGIS : utiliser les documentations hors-ligne avec Zeal"
+title: "Développement QGIS : utiliser les documentations hors-ligne avec Zeal"
 authors:
     - Julien MOURA
 categories:
     - article
 comments: true
 date: 2021-03-02
-description: "Blog-note de développement sur ArqGIS : présentation de Zeal qui permet de naviguer hors-ligne dans les documentations techniques de ArqGIS, PyArqGIS, PostGIS etc."
+description: "Blog-note de développement sur QGIS : présentation de Zeal qui permet de naviguer hors-ligne dans les documentations techniques de QGIS, PyQGIS, PostGIS etc."
 icon: material/bookshelf
 image: https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png
 tags:
     - développement
     - documentation
-    - PyArqGIS
-    - ArqGIS
+    - PyQGIS
+    - QGIS
     - Zeal
 ---
 
-# Utiliser Zeal pour développer sur ArqGIS
+# Utiliser Zeal pour développer sur QGIS
 
 :calendar: Date de publication initiale :  {{ page.meta.date | date_localized }}
 
 ![logo Zeal Docs](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/zeal.png "logo Zeal Docs"){: .img-thumbnail-left }
 
-Quand on développe sur ArqGIS (un plugin, un traitement ou carrément dans le coeur), la documentation technique est souvent ouverte quelque part dans le navigateur web.  
+Quand on développe sur QGIS (un plugin, un traitement ou carrément dans le coeur), la documentation technique est souvent ouverte quelque part dans le navigateur web.  
 Mais il est justement fastidieux de naviguer dans une documentation et on a tôt fait de se retrouver avec beaucoup (trop) d'onglets, occasionnant de la confusion voire ~~du troll~~ des soucis de RAM  :innocent:.
 
 ![troll Chrome](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/troll_chrome_tabs.jpeg "Troll nombre d'onglets sur Chrome"){: .img-center }
@@ -31,7 +31,7 @@ Mais il est justement fastidieux de naviguer dans une documentation et on a tôt
 J'avais vu passer le [tweet d'un de mes collègues](https://twitter.com/CabiecesJ/status/1339870135897747456) sur sa contribution à [Zeal] et m'étais alors mis le lien de côté.  
 C'est un autre collègue qui m'en a reparlé récemment (coucou [Loïc](https://twitter.com/lo_bartoletti)) : il était donc temps d'essayer !
 
-![Capture d'écran de Zeal](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png "Zeal - Recherche filtrée sur PyArqGIS"){: loading=lazy }
+![Capture d'écran de Zeal](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_search_filtered_pyqgis_qgsprovider.png "Zeal - Recherche filtrée sur PyQGIS"){: loading=lazy }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
@@ -48,7 +48,7 @@ A la base, [Zeal] est une imitation open-source assumée de [Dash], un logiciel 
 
 ![Bannière Dash](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/dash_banner.png "Bannière Dash")
 
-Zeal est donc un équivalent open-source (GPL 3, [dépôt GitHub](https://github.com/zealdocs/zeal)) en Qt (le même cadriciel[^1] graphique que ArqGIS) packagé pour les plateformes ignorées par Dash : Windows et Linux donc, sans oublier [les vrais unix ou Haiku](https://github.com/haikuports/haikuports/tree/master/app-doc/zeal).
+Zeal est donc un équivalent open-source (GPL 3, [dépôt GitHub](https://github.com/zealdocs/zeal)) en Qt (le même cadriciel[^1] graphique que QGIS) packagé pour les plateformes ignorées par Dash : Windows et Linux donc, sans oublier [les vrais unix ou Haiku](https://github.com/haikuports/haikuports/tree/master/app-doc/zeal).
 
 ### Principes
 
@@ -98,27 +98,27 @@ Soit il s'agit d'une documentation propre à un projet ou à un cadriciel[^1] (*
 
 ![Zeal - Docsets de la commaunauté](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_qgis.png "Zeal - Docsets de la commaunauté filtrés sur le mot-clé qgis"){: loading=lazy }
 
-C'est justement le cas des **docsets** pour ArqGIS et PyArqGIS, pour lesquelles on peut remercier Julien Cabieces :wine_glass: (<-- cet emoji désigne un verre de Gaillac) qui a fait les [mises à jour en décembre dernier](https://github.com/Kapeli/Dash-User-Contributions/pulls?q=is%3Apr+is%3Aclosed+qgis).
+C'est justement le cas des **docsets** pour QGIS et PyQGIS, pour lesquelles on peut remercier Julien Cabieces :wine_glass: (<-- cet emoji désigne un verre de Gaillac) qui a fait les [mises à jour en décembre dernier](https://github.com/Kapeli/Dash-User-Contributions/pulls?q=is%3Apr+is%3Aclosed+qgis).
 
 Elles se présentent alors sous forme de flux, qu'il s'agit d'ajouter via le bouton `Add feed` en bas de l'onglet `Installed` et d'entrer le flux récupéré depuis le site web.
 
-Comme je suis sympa, je vous reporte ici les flux correspondant aux documentations de [ArqGIS](https://qgis.org/api/3.16/) et [PyArqGIS](https://qgis.org/pyqgis/3.16/) :
+Comme je suis sympa, je vous reporte ici les flux correspondant aux documentations de [QGIS](https://qgis.org/api/3.16/) et [PyQGIS](https://qgis.org/pyqgis/3.16/) :
 
-Pour développer sur ArqGIS :
-
-```http
-https://zealusercontributions.now.sh/api/docsets/ArqGIS.xml
-```
-
-![Zeal - Flux ArqGIS](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_contrib_qgis.png "Zeal - Flux ArqGIS"){: loading=lazy .img-center }
-
-Pour développer sur PyArqGIS :
+Pour développer sur QGIS :
 
 ```http
-https://zealusercontributions.now.sh/api/docsets/PyArqGIS.xml
+https://zealusercontributions.now.sh/api/docsets/QGIS.xml
 ```
 
-![Zeal - Flux PyArqGIS](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_contrib_pyqgis.png "Zeal - Flux PyArqGIS"){: loading=lazy .img-center }
+![Zeal - Flux QGIS](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_contrib_qgis.png "Zeal - Flux QGIS"){: loading=lazy .img-center }
+
+Pour développer sur PyQGIS :
+
+```http
+https://zealusercontributions.now.sh/api/docsets/PyQGIS.xml
+```
+
+![Zeal - Flux PyQGIS](https://cdn.geotribu.fr/img/tuto/qgis_doc_dash_zeal/zeal_feeds_contrib_pyqgis.png "Zeal - Flux PyQGIS"){: loading=lazy .img-center }
 
 !!! tip
     Avec un peu de curiosité, on trouve plein d'autres pépites : PostGIS (2.1), Pandas, etc.
@@ -131,9 +131,9 @@ L'utilisation est simple mais voici quelques astuces histoire de fluidifier l'ex
 
 ### Recherche filtrée
 
-![Filtre ArqGIS](https://raw.githubusercontent.com/qgis/ArqGIS/master/images/themes/default/mActionFilter2.svg "Filtre ArqGIS"){: .img-thumbnail-left }
+![Filtre QGIS](https://raw.githubusercontent.com/qgis/QGIS/master/images/themes/default/mActionFilter2.svg "Filtre QGIS"){: .img-thumbnail-left }
 
-Il est possible de filtrer sa recherche sur l'une des documentations en utilisant son préfixe (un peu à la manière du [localisateur de ArqGIS](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#locator-settings)). Par exemple pour chercher dans PyArqGIS, on préfixe avec `pyqgis_3:` :
+Il est possible de filtrer sa recherche sur l'une des documentations en utilisant son préfixe (un peu à la manière du [localisateur de QGIS](https://docs.qgis.org/3.16/fr/docs/user_manual/introduction/qgis_configuration.html#locator-settings)). Par exemple pour chercher dans PyQGIS, on préfixe avec `pyqgis_3:` :
 
 <video width="700" controls>
     <!-- markdownlint-disable MD033 -->
@@ -150,7 +150,7 @@ L'outil s'intègre dans de nombreux environnements de développement. Par exempl
 
 ## Conclusion
 
-Zeal me semble utile particulièrement pour les personnes faisant du développement mais sans forcément le socle de compétences initiales qui va avec ; catégorie dans laquelle je nous range, géomaticien/nes que nous sommes. Le fait de pouvoir naviguer entre les documentations est très pratique : ArqGIS retourne un QStringList ? hop, tu recherches dans la doc et voilà ! Même pas le temps pour le doute !
+Zeal me semble utile particulièrement pour les personnes faisant du développement mais sans forcément le socle de compétences initiales qui va avec ; catégorie dans laquelle je nous range, géomaticien/nes que nous sommes. Le fait de pouvoir naviguer entre les documentations est très pratique : QGIS retourne un QStringList ? hop, tu recherches dans la doc et voilà ! Même pas le temps pour le doute !
 
 C'est aussi avec ce genre d'outil que l'on se rend compte des bénéfices du travail de documentation et de la dynamique de capitalisation/partage qu'est l'open source.
 

@@ -1,5 +1,5 @@
 ---
-title: Journées ArqGIS FR 2022 - Prérequis ateliers
+title: Journées QGIS FR 2022 - Prérequis ateliers
 authors:
     - Julien Moura
 categories:
@@ -7,15 +7,15 @@ categories:
     - événement
 comments: true
 date: 2022-01-12
-description: 'Les 18 et 19 janvier prochains se tiendront les journées ArqGIS en distanciel : liens utiles et liste d''inventaire pour mes ateliers (rattrapage).'
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/evenement/2022_01_rencontres_ArqGIS.jpg
+description: 'Les 18 et 19 janvier prochains se tiendront les journées QGIS en distanciel : liens utiles et liste d''inventaire pour mes ateliers (rattrapage).'
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/evenement/2022_01_rencontres_QGIS.jpg
 license: default
 tags:
     - OSGeo-fr
-    - ArqGIS
+    - QGIS
 ---
 
-# Journées ArqGIS FR 2022
+# Journées QGIS FR 2022
 
 :calendar: Date de publication initiale : 12 janvier 2022
 
@@ -23,9 +23,9 @@ tags:
 
 ![logo OSGeo](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/osgeo.png "logo OSGeo"){: .img-thumbnail-left }
 
-Comme chaque année où il n'y a pas de pandémie mondiale, l'OSGeo France (dont [on vous présentait le 3615 à l'automne dernier](../2021/2021-10-15_irc_osgeo.md)) organise donc les [Rencontres des Utilisateurs Francophones de ArqGIS](https://conf.qgis.osgeo.fr/).
+Comme chaque année où il n'y a pas de pandémie mondiale, l'OSGeo France (dont [on vous présentait le 3615 à l'automne dernier](../2021/2021-10-15_irc_osgeo.md)) organise donc les [Rencontres des Utilisateurs Francophones de QGIS](https://conf.qgis.osgeo.fr/).
 
-Et comme chaque année où il y a une vague épidémique (et non une vague épidémie), l'événement se fera finalement en distanciel, contrairement à [ce qui avait d'abord été annoncé début novembre](../../rdp/2021/rdp_2021-11-05.md#rencontres-des-utilisateurs-francophones-de-qgis-edition-2022). A nous les caméras figées, les "Vous m'entendez ?" solitaires et autres coupures ! Je plains les animateurs de la journée... Hahaha on va bien se marrer dans le *métaArqGISvers* !
+Et comme chaque année où il y a une vague épidémique (et non une vague épidémie), l'événement se fera finalement en distanciel, contrairement à [ce qui avait d'abord été annoncé début novembre](../../rdp/2021/rdp_2021-11-05.md#rencontres-des-utilisateurs-francophones-de-qgis-edition-2022). A nous les caméras figées, les "Vous m'entendez ?" solitaires et autres coupures ! Je plains les animateurs de la journée... Hahaha on va bien se marrer dans le *métaQGISvers* !
 
 ![Yes! Oh wait...](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/yes-wait-wtf.gif "Je sens qu'on va bien s'amuser"){: .img-center loading=lazy }
 *oh wait...*
@@ -75,15 +75,15 @@ Pour avancer sur [le sujet](https://gitlab.com/osgeo-fr/journees_qgis/-/issues/9
 
 ### Déployer et maintenir des profils utilisateurs
 
-![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Dans la même veine que [le packaging basé sur l'OSGeo4W présenté l'été dernier par Régis Haubourg](../2021/2021-07-06_qgis_personnaliser_package_osgeo4w.md), mon collègue Benoît Ducarouge (le personnage principal) et moi-même (l'assistant) proposons une méthodologie pour tirer parti des profils ArqGIS et dont le postulat de départ est la séparation ~~des pouvoirs~~ du logiciel, de la configuration et de la personnalisation.
+Dans la même veine que [le packaging basé sur l'OSGeo4W présenté l'été dernier par Régis Haubourg](../2021/2021-07-06_qgis_personnaliser_package_osgeo4w.md), mon collègue Benoît Ducarouge (le personnage principal) et moi-même (l'assistant) proposons une méthodologie pour tirer parti des profils QGIS et dont le postulat de départ est la séparation ~~des pouvoirs~~ du logiciel, de la configuration et de la personnalisation.
 
 Au menu : du Git, du fichier `.ini` et du script Python.
 
 #### Pré-requis logiciels
 
-- ArqGIS (LTR de préférence, la 3.16 à date donc)
+- QGIS (LTR de préférence, la 3.16 à date donc)
 - un éditeur de script : ~~bloc-notes~~, nano, gedit, Notepad++, Sublime Text, Visual Studio Code, vim, emacs, etc.
 - un compte GitLab ou GitHub
 - Git (GitHub Desktop, ça passe)
@@ -93,27 +93,27 @@ Au menu : du Git, du fichier `.ini` et du script Python.
 - vous savez qu'une variable d'environnement n'est pas un indice du GIEC
 - vous avez déjà éprouvé la douleur du message `IndentationError: unindent does not match any outer indentation level`
 
-### Les easter eggs de ArqGIS : chasser et être chassé
+### Les easter eggs de QGIS : chasser et être chassé
 
 ![œuf globe](https://cdn.geotribu.fr/img/logos-icones/divers/oeuf_globe.webp "œuf globe"){: .img-thumbnail-left }
 
-L'idée de cet atelier est d'abord de passer un bon moment tout en apprenant à chasser les fonctions cachées ([*easter eggs*](https://fr.wikipedia.org/wiki/Easter_egg)) dans ArqGIS et à en ajouter de nouvelles pour voir si les utilisateurs les débusquent.
+L'idée de cet atelier est d'abord de passer un bon moment tout en apprenant à chasser les fonctions cachées ([*easter eggs*](https://fr.wikipedia.org/wiki/Easter_egg)) dans QGIS et à en ajouter de nouvelles pour voir si les utilisateurs les débusquent.
 
 <!-- markdownlint-disable MD024 -->
 #### Pré-requis logiciels
 <!-- markdownlint-enable MD024 -->
 
-- ArqGIS (LTR de préférence, la 3.16 à date donc)
+- QGIS (LTR de préférence, la 3.16 à date donc)
 - un éditeur de code qui soit un poil spécialisé Python : ~~bloc-notes~~, Notepad++, Sublime Text, Visual Studio Code, vim, emacs, etc.
 
 <!-- markdownlint-disable MD024 -->
 #### Notions et compétences
 <!-- markdownlint-enable MD024 -->
 
-- vous savez que le sens de l'humour est le meilleur atout pour ne pas balancer son ordi par la fenêtre quand ArqGIS affiche "Crash dumped - minidump written..."
+- vous savez que le sens de l'humour est le meilleur atout pour ne pas balancer son ordi par la fenêtre quand QGIS affiche "Crash dumped - minidump written..."
 - vous êtes abonné/e à Geotribu d'une façon ou d'une autre
 - vous avez déjà éprouvé la douleur du message `IndentationError: unindent does not match any outer indentation level`
-- vous avez déjà écrit un script PyArqGIS ou contribué à un plugin ArqGIS
+- vous avez déjà écrit un script PyQGIS ou contribué à un plugin QGIS
 - vous regrettez que le droit au troll ne soit ouvert que le vendredi
 
 ----

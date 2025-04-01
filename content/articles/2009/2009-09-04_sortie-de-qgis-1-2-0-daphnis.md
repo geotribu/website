@@ -1,30 +1,30 @@
 ---
-title: "Sortie de ArqGIS 1.2.0 'Daphnis'"
+title: "Sortie de QGIS 1.2.0 'Daphnis'"
 authors:
     - Geotribu
 categories:
     - article
 comments: true
 date: 2009-09-04
-description: "Sortie de ArqGIS 1.2.0 'Daphnis'"
+description: "Sortie de QGIS 1.2.0 'Daphnis'"
 tags:
     - GIS
     - logiciel
     - open source
-    - ArqGIS
+    - QGIS
 ---
 
-# Sortie de ArqGIS 1.2.0 'Daphnis'
+# Sortie de QGIS 1.2.0 'Daphnis'
 
 :calendar: Date de publication initiale : 04 septembre 2009
 
-![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Il y a quelques jours sur la liste OSGEO-fr j'ai eu le bonheur d'apprendre la sortie de la version 1.2.0 de ArqGIS. Je me fais donc l'écho Jean Roc Morreale et reprends ci-dessous son annonce :
+Il y a quelques jours sur la liste OSGEO-fr j'ai eu le bonheur d'apprendre la sortie de la version 1.2.0 de QGIS. Je me fais donc l'écho Jean Roc Morreale et reprends ci-dessous son annonce :
 
 ## Annonce
 
-Nous sommes très heureux de pouvoir vous annoncer la sortie de la version de développement 1.2.0 de ArqGIS, portant le nom de "Daphnis".
+Nous sommes très heureux de pouvoir vous annoncer la sortie de la version de développement 1.2.0 de QGIS, portant le nom de "Daphnis".
 
 Nos versions de développement sont fournies afin d'offrir une chance à nos utilisateurs d'essayer de nouvelles fonctionnalités au fur et à mesure de leur inclusion. Nous n'offrons pas un support de longue durée pour ces versions et de fait, elles sont plutôt destinées à ceux ne craignant pas les changements d'outils et d'interfaces d'une version à l'autre. Nous abandonnons le terme d'instable en faveur de celui de développement pour caractériser ces versions, car cela donnait la mauvaise impression que celles-ci étaient plus sujettes aux plantages. En réalité, les versions de développement contiennent de nombreuses résolutions de problèmes qui améliorent la stabilité par rapport aux versions précédentes.
 
@@ -34,13 +34,13 @@ Les fichiers d'installations et le code source sont disponibles à cette page :
 Une liste de changements avec des captures d'écrans est visible à cette adresse :  
 <http://blog.qgis.org/node/137>
 
-En parallèle à la version ArqGIS 1.2.0, l'équipe de la communauté ArqGIS travaille d'arrache-pied à la mise à jour du manuel utilisateur anglais tandis que la version française de la 1.0 devrait être disponible courant septembre.
+En parallèle à la version QGIS 1.2.0, l'équipe de la communauté QGIS travaille d'arrache-pied à la mise à jour du manuel utilisateur anglais tandis que la version française de la 1.0 devrait être disponible courant septembre.
 
-ArqGIS est un projet mené de manière volontaire par une équipe dévouée de programmeurs, documentalistes, traducteurs, etc. Nous tenons à remercier tous ceux qui ont donné de leur temps pour faire aboutir cette version.
+QGIS est un projet mené de manière volontaire par une équipe dévouée de programmeurs, documentalistes, traducteurs, etc. Nous tenons à remercier tous ceux qui ont donné de leur temps pour faire aboutir cette version.
 
-Si vous désirez faire une donation ou sponsorisez notre projet, veuillez visiter la page <https://www.qgis.org/en/sponsorship.html> . ArqGIS est un logiciel libre et donc rien ne vous y oblige.
+Si vous désirez faire une donation ou sponsorisez notre projet, veuillez visiter la page <https://www.qgis.org/en/sponsorship.html> . QGIS est un logiciel libre et donc rien ne vous y oblige.
 
-Une rencontre des contributeurs est organisée à Vienne (Autriche) du 05 au 09 septembre 2009, si cela vous intéresse faite un tour à cette page pour plus de détails :[https://www.qgis.org/wiki/2._ArqGIS_Hackfest_in_Vienna_2009](https://www.qgis.org/wiki/2._ArqGIS_Hackfest_in_Vienna_2009)
+Une rencontre des contributeurs est organisée à Vienne (Autriche) du 05 au 09 septembre 2009, si cela vous intéresse faite un tour à cette page pour plus de détails :[https://www.qgis.org/wiki/2._QGIS_Hackfest_in_Vienna_2009](https://www.qgis.org/wiki/2._QGIS_Hackfest_in_Vienna_2009)
 
 ================
 
@@ -48,7 +48,7 @@ Voici une courte liste des changements apportés dans la 1.2.0 :
 
 ### Édition
 
-Les fonctionnalités d'édition de ArqGIS ont été améliorées dans cette  
+Les fonctionnalités d'édition de QGIS ont été améliorées dans cette  
 version, elles incluent de nouveaux outils d'édition vectorielle :  
 — supprimer une partie d'une entité multipartite  
 — supprimer un trou d'un polygone  
@@ -65,11 +65,11 @@ De plus, il y a des actions d'annulation/répétition dans le menu d'édition, d
 
 À propos de l'outil de noeuds : il rassemble un outil pour éditer les chemins par noeuds qui sont présents dans tous les éditeurs vecteurs. Comment ça marche ? Cliquez sur une entité, ses noeuds seront marqués par de petits rectangles. Clqiuez sur un noeud pour le déplacer. Double-cliquer un segment rajoutera un nouveau noeud. La touche Supprimer effacera le noeud actif. Il est possible de sélectionner plus de noeuds actifs à la fois en cliquant et déplaçant un rectangle. On peut sélectionner les noeuds adjacents d'un segment en cliquant sur le segment. Il est possible d'ajouter et de supprimer des noeuds actifs en utilisant la touche Ctrl lorsque vous cliquez sur noeud ou étirez un rectangle.
 
-Nous vous recommandons de désactiver les marqueurs de sommets dans les options de ArqGIS lorsque vous travaillez avec cet outil pour des raisons de performances graphiques.
+Nous vous recommandons de désactiver les marqueurs de sommets dans les options de QGIS lorsque vous travaillez avec cet outil pour des raisons de performances graphiques.
 
 ### Raccourcis clavier
 
-On peut maintenant configurer les raccourcis des actions directement depuis la fenêtre principale de ArqGIS, en allant dans Préférences->Configurer les raccourcis.
+On peut maintenant configurer les raccourcis des actions directement depuis la fenêtre principale de QGIS, en allant dans Préférences->Configurer les raccourcis.
 
 ### Composition de cartes
 
@@ -84,17 +84,17 @@ Les alias d'attributs des couches vecteurs sont disponibles, ils sont affichés 
 ### Extensions
 
 — l'ordre des couches dans la liste du dialogue WMS peut être modifié  
-— l'extension eVis, version 1.1.0, a été intégrée au projet ArqGIS et inclus de manière standard. Plus d'information à [http://biodiversityinformatics.amnh.org/open_source/evis/documentation.php](http://biodiversityinformatics.amnh.org/open_source/evis/documentation.php)  
+— l'extension eVis, version 1.1.0, a été intégrée au projet QGIS et inclus de manière standard. Plus d'information à [http://biodiversityinformatics.amnh.org/open_source/evis/documentation.php](http://biodiversityinformatics.amnh.org/open_source/evis/documentation.php)  
 — l'extension d'interpolation peut utiliser les couches de lignes comme contraintes pour la triangulation. Vous pouvez aussi enregistrer la triangulation dans un fichier shapefile  
 — un service et une extension OpenStreetMap ont été ajoutés
 
 ### Gestion de projet
 
-ArqGIS inclut le support optionnel des chemins relatifs pour les sources de fichiers.
+QGIS inclut le support optionnel des chemins relatifs pour les sources de fichiers.
 
 Service PostGIS & PostgreSQL :
 
-Vous pouvez sélectionner le mode de connexion SLL quand vous ajoutez une nouvelle base de données. Désactiver le SSL améliore les performances de chargement de données ArqGIS quand des conditions de sécurité ne sont pas requises. Le support de types natifs et de paramètres a été étendu.
+Vous pouvez sélectionner le mode de connexion SLL quand vous ajoutez une nouvelle base de données. Désactiver le SSL améliore les performances de chargement de données QGIS quand des conditions de sécurité ne sont pas requises. Le support de types natifs et de paramètres a été étendu.
 
 ### Amélioration de la symbologie
 

@@ -79,7 +79,7 @@ C'est pourquoi je vous conseille vivement l'installation des plugins disponibles
 
 Du fait du nombre important de bases de données auquel il est possible d'accéder, UDIG est l'outil idéal pour toutes les personnes ayant un profil WEB/SIG. Les géomaticien plus traditionalistes se sentiront surement quelque peu dépaysés.
 
-Pour le moment, je dois avouer que c'est UDIG qui me convient le plus. Seul point noir et décidément ils ont tous ce défaut, c'est la pauvreté des formats vecteurs qu'il est possible d'ouvrir. Pour le moment sur ce point, aucun n'a égalé mon fidèle ArqGIS. Néanmoins, à part cela je trouve UDIG vraiment exceptionnel il mérite en tous cas à être connu et plus "médiatisé".
+Pour le moment, je dois avouer que c'est UDIG qui me convient le plus. Seul point noir et décidément ils ont tous ce défaut, c'est la pauvreté des formats vecteurs qu'il est possible d'ouvrir. Pour le moment sur ce point, aucun n'a égalé mon fidèle QGIS. Néanmoins, à part cela je trouve UDIG vraiment exceptionnel il mérite en tous cas à être connu et plus "médiatisé".
 
 ----
 

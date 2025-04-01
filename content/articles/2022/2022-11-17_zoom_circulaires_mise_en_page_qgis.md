@@ -1,5 +1,5 @@
 ---
-title: Création de zooms circulaires et autres astuces amusantes de mise en page dans ArqGIS
+title: Création de zooms circulaires et autres astuces amusantes de mise en page dans QGIS
 authors:
     - Jérémie PRUD'HOMME
 categories:
@@ -8,31 +8,31 @@ categories:
     - tutoriel
 comments: true
 date: 2022-11-17
-description: Paramétrer la mise en page de ArqGIS pour afficher des zooms circulaires. Traduction d'un article de North Road.
+description: Paramétrer la mise en page de QGIS pour afficher des zooms circulaires. Traduction d'un article de North Road.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/qgis_encastre_circulaire_overview_north_road.png
 license: beerware
 robots: index, follow
 tags:
     - cartographie
-    - ArqGIS
+    - QGIS
 ---
 
-# Création de zooms circulaires et autres astuces amusantes de mise en page dans ArqGIS
+# Création de zooms circulaires et autres astuces amusantes de mise en page dans QGIS
 
 :calendar: Date de publication initiale : 17 novembre 2022
 
 !!! info "Traduction"
-    Suite à l'appel de Julien [dans la GeoRDP du 4 novembre](../../rdp/2022/rdp_2022-11-04.md#trucs-et-astuces-sur-le-composeur-dimpression-de-qgis), j'ai tenté de traduire au plus juste le [billet de blog](https://north-road.com/2022/11/04/creating-circular-insets-and-other-fun-qgis-layout-tricks/) publié le 4 novembre 2022 par North Road à l'occasion du [30 Day Map Challenge](https://twitter.com/hashtag/30DayMapChallenge) concernant la création de zooms circulaires dans les mises en page de ArqGIS. Dans la suite de cet article c'est donc North Road qui donne les explications.
+    Suite à l'appel de Julien [dans la GeoRDP du 4 novembre](../../rdp/2022/rdp_2022-11-04.md#trucs-et-astuces-sur-le-composeur-dimpression-de-qgis), j'ai tenté de traduire au plus juste le [billet de blog](https://north-road.com/2022/11/04/creating-circular-insets-and-other-fun-qgis-layout-tricks/) publié le 4 novembre 2022 par North Road à l'occasion du [30 Day Map Challenge](https://twitter.com/hashtag/30DayMapChallenge) concernant la création de zooms circulaires dans les mises en page de QGIS. Dans la suite de cet article c'est donc North Road qui donne les explications.
 
 ## Introduction
 
-![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Grâce à la récente popularité du «30 Day Map Challenge», le mois de novembre est devenu synonyme de belles cartes et cartographies. Au cours de ce mois de novembre, nous allons partager un certain nombre de conseils et d'astuces qui utilisent certaines fonctionnalités avancées de ArqGIS pour aider à créer de belles cartes.
+Grâce à la récente popularité du «30 Day Map Challenge», le mois de novembre est devenu synonyme de belles cartes et cartographies. Au cours de ce mois de novembre, nous allons partager un certain nombre de conseils et d'astuces qui utilisent certaines fonctionnalités avancées de QGIS pour aider à créer de belles cartes.
 
 Une technique qui peut améliorer considérablement l'apparence des cartes consiste à remplacer les zooms rectangulaires par des formes plus douces, inspirées par la nature, telles que des cercles ou des ovales.
 
-En 2020, nous avons eu l'occasion d'ajouter la possibilité dans les mise en page de ArqGIS de créer directement des zooms circulaires (grâce au parrainage de la ville de Canning, en Australie !). Bien que cette fonctionnalité facilite la création de zooms non rectangulaires, de nombreux utilisateurs de ArqGIS ne savent peut-être pas que c'est possible. Nous avons donc voulu mettre en avant cette fonctionnalité pour notre premier post du 30 Day Map Challenge.
+En 2020, nous avons eu l'occasion d'ajouter la possibilité dans les mise en page de QGIS de créer directement des zooms circulaires (grâce au parrainage de la ville de Canning, en Australie !). Bien que cette fonctionnalité facilite la création de zooms non rectangulaires, de nombreux utilisateurs de QGIS ne savent peut-être pas que c'est possible. Nous avons donc voulu mettre en avant cette fonctionnalité pour notre premier post du 30 Day Map Challenge.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
@@ -59,7 +59,7 @@ Tout d'abord, préparez une mise en page avec une carte principale et un zoom. V
 
 Dans la barre d'outils de mise en page, cliquez sur le bouton Ajouter Forme, puis sélectionnez Ajouter Ellipse :
 
-![Capture d'écran du menu ArqGIS Ajouter Ellipse](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-05_zoom_circulaires_mise_en_page_qgis/qgis_menu_ellipse.png "Menu Ajouter Ellipse"){: .img-center loading=lazy }
+![Capture d'écran du menu QGIS Ajouter Ellipse](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-05_zoom_circulaires_mise_en_page_qgis/qgis_menu_ellipse.png "Menu Ajouter Ellipse"){: .img-center loading=lazy }
 
 Dessinez l'ellipse au milieu de votre zoom (astuce : si vous maintenez la touche Maj enfoncée pendant que vous dessinez l'ellipse, vous la forcerez à prendre une forme circulaire !) Si vous n'avez pas réussi à créer un cercle exact, vous pouvez préciser manuellement la largeur et la hauteur dans les propriétés de l'élément de forme. Pour cet exemple, nous avons choisi un cercle de 50 mm x 50 mm :
 
@@ -85,7 +85,7 @@ Encore un peu plus de magie à ajouter à cette carte – dans les propriétés 
 
 ## Point bonus : un texte de titre circulaire !
 
-Pour les utilisateurs avancés, nous avons une autre astuce amusante... et par amusante nous voulons dire « jouons avec les courbes » ! Ici, nous allons créer un titre avec un arrière-plan calé sur le contour de notre zoom circulaire. Cela demande un peu de doigté, mais le résultat final peut être visuellement remarquable ! Nous allons utiliser l'élément HTML de la mise en page de ArqGIS pour créer un dessin avancé. Une certaine expérience du codage HTML et CSS est donc souhaitable. (Une autre approche serait d'utiliser une application d'illustration vectorielle comme Inkscape, et d'ajouter votre titre et votre fond circulaire en tant qu'élément SVG dans la mise en page d'impression).
+Pour les utilisateurs avancés, nous avons une autre astuce amusante... et par amusante nous voulons dire « jouons avec les courbes » ! Ici, nous allons créer un titre avec un arrière-plan calé sur le contour de notre zoom circulaire. Cela demande un peu de doigté, mais le résultat final peut être visuellement remarquable ! Nous allons utiliser l'élément HTML de la mise en page de QGIS pour créer un dessin avancé. Une certaine expérience du codage HTML et CSS est donc souhaitable. (Une autre approche serait d'utiliser une application d'illustration vectorielle comme Inkscape, et d'ajouter votre titre et votre fond circulaire en tant qu'élément SVG dans la mise en page d'impression).
 
 ### Texte circulaire
 
@@ -95,7 +95,7 @@ Nous allons commencer par créer un texte circulaire incurvé :
 
 Tout d'abord, ajoutez un « cadre HTML » à votre mise en page d'impression :
 
-![Capture d'écran du menu ArqGIS Ajouter HTML](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-05_zoom_circulaires_mise_en_page_qgis/qgis_ajouter_html.png "Menu Ajouter HTML"){: .img-center loading=lazy }
+![Capture d'écran du menu QGIS Ajouter HTML](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-11-05_zoom_circulaires_mise_en_page_qgis/qgis_ajouter_html.png "Menu Ajouter HTML"){: .img-center loading=lazy }
 
 Les cadres HTML permettent de placer du contenu dynamique dans vos mises en page, qui peuvent utiliser HTML, CSS et JavaScript pour créer des composants graphiques.
 
@@ -145,7 +145,7 @@ Pour ajouter l'arrière-plan, créez un autre cadre HTML. Nous allons à nouveau
 !!! tip
     Vous pouvez en savoir plus sur [les courbes et les arcs SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths) sur le site de ressources MDN.
 
-Et voilà ! Ces deux techniques peuvent vous aider à pousser plus loin vos créations de cartes ArqGIS et à faciliter la création de belles cartographies directement dans ArqGIS lui-même. Si vous avez trouvé ces conseils utiles, gardez un œil sur ce blog car nous publierons d'autres conseils et astuces au cours du mois de novembre.
+Et voilà ! Ces deux techniques peuvent vous aider à pousser plus loin vos créations de cartes QGIS et à faciliter la création de belles cartographies directement dans QGIS lui-même. Si vous avez trouvé ces conseils utiles, gardez un œil sur ce blog car nous publierons d'autres conseils et astuces au cours du mois de novembre.
 
 Et n'oubliez pas de suivre le [30 Day Map Challenge](https://30daymapchallenge.com/) pour découvrir tout un assortiment de cartes absolument époustouflantes.
 

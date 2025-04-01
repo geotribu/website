@@ -51,7 +51,7 @@ Une fois habitué ce logiciel se révèle être un véritable couteau suisse de 
 
 ![BT747 - Carte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/BT747_map.png "BT747 - Carte"){: .img-center loading=lazy }
 
-Bon, me voilà muni de mon fichier GPX contenant mes traces. J'ai vérifié rapidement leur cohérence en les visualisant sur [ArqGIS](https://www.qgis.org/). Passons maintenant au coeur de notre projet, mettre à jour les données d'OSM.
+Bon, me voilà muni de mon fichier GPX contenant mes traces. J'ai vérifié rapidement leur cohérence en les visualisant sur [QGIS](https://www.qgis.org/). Passons maintenant au coeur de notre projet, mettre à jour les données d'OSM.
 
 ## Réaliser la mise à jour
 

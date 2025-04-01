@@ -13,7 +13,7 @@ tags:
     - bus
     - PostGIS
     - PostgreSQL
-    - ArqGIS
+    - QGIS
 ---
 
 # Représentation d'un réseau de bus
@@ -23,7 +23,7 @@ tags:
 Pré-requis :
 
 - Maîtriser PostgreSQL et PostGIS
-- Définir un style ArqGIS
+- Définir un style QGIS
 
 ## Intro
 
@@ -215,9 +215,9 @@ FROM bus.bus_lignes_offset GROUP BY
     pt_to) AS a ON a.pt_from = b.pt_from AND a.pt_to = b.pt_to);
 ```
 
-## Le rendu ArqGIS
+## Le rendu QGIS
 
-Pour terminer, vous pouvez ajouter la dernière table créée dans ArqGIS pour travailler sur le rendu :
+Pour terminer, vous pouvez ajouter la dernière table créée dans QGIS pour travailler sur le rendu :
 
 1. Faire un style catégorisé sur le numéro de ligne et attribuer une couleur différente par ligne
 2. Définir l'épaisseur des tronçons pour chacune des lignes

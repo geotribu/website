@@ -167,7 +167,7 @@ ogr2ogr -append -clipsrc $REPER'/'$EMPRISE -f "PostgreSQL" PG:"host=$C_HOST user
 
 ### 5. Un script SQL pour associer les composteurs OSM à nos données SIG
 
-Après avoir intégré les données OpenStreetMap dans PostgreSQL, il est maintenant possible de les visualiser avec ArqGIS pour notamment faire une comparaison visuelle avec les données internes mais cela s'apparente à chercher des aiguilles dans une meule de foin. Je vous propose donc de créer une requête pour associer spatialement l'entité OpenStreetMap la plus proche de notre donnée si elle se trouve dans un rayon de 20m (choix purement arbitraire).
+Après avoir intégré les données OpenStreetMap dans PostgreSQL, il est maintenant possible de les visualiser avec QGIS pour notamment faire une comparaison visuelle avec les données internes mais cela s'apparente à chercher des aiguilles dans une meule de foin. Je vous propose donc de créer une requête pour associer spatialement l'entité OpenStreetMap la plus proche de notre donnée si elle se trouve dans un rayon de 20m (choix purement arbitraire).
 
 Après avoir créé une colonne `id_osm` dans ma table des composteurs, on va lancer la requête pour renseigner l'identifiant OSM dans la table des composteurs, il sera donc stocké en dur.
 

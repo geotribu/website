@@ -98,7 +98,7 @@ On a deux composantes :
 - un serveur qui mange des données adresse et s'occupe de les indexer, nommé Addok. Cela s'effectue avec Redis (une base de données clés/valeurs) permettant une indexation efficace combinée à des algorithmes de ressemblance de caractères (ngrams) côté Python.
 
 - un client qui appelle le serveur. Il le fait par l'intermédiaire d'un appel http. Cet appel peut être fait depuis :
-    - un client lourd bureautique SIG type ArqGIS
+    - un client lourd bureautique SIG type QGIS
     - une bibliothèque JavaScript pour la cartographie web (Leaflet ou OpenLayers)
     - une ligne de commande (géocodage CSV)
     - depuis un navigateur
@@ -272,7 +272,7 @@ Elle est simplement tellement bien faite et didactique, que ce serait bête de n
 - OpenLayers 3 : le plugin est sur <https://github.com/webgeodatavore/ol3-photon>. Il est accompagné de la démo.
 - OpenLayers 2 : il n'existe pas de code pour OpenLayers 2 mais le code pour OpenLayers 3 est quasi prêt pour cela, seule la partie zoom et construction du point pour zoomer est à changer.
 
-#### Via un client comme ArqGIS
+#### Via un client comme QGIS
 
 Sinon en ligne de commande, en ouvrant la console Python :
 
@@ -301,7 +301,7 @@ centerToAdress('Paris')
 Il est possible de "pluginiser" les appels à BAN/BANO :
 
 - soit en hackant [MMGIS](http://michaelminn.com/linux/mmqgis/),
-- soit sur [GeoCoding ArqGIS](http://www.itopen.it/geocoding-qgis-plugins-released/),
+- soit sur [GeoCoding QGIS](http://www.itopen.it/geocoding-qgis-plugins-released/),
 - soit avec un développement "from scratch" (à partir de rien).
 
 #### En géocodant un CSV

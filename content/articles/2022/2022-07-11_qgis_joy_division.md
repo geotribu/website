@@ -7,7 +7,7 @@ categories:
     - tutoriel
 comments: true
 date: 2022-07-11
-description: Comment faire des cartes à la mode de Joy Division avec les générateurs de géométrie de ArqGIS
+description: Comment faire des cartes à la mode de Joy Division avec les générateurs de géométrie de QGIS
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/cover.jpeg
 license: default
 tags:
@@ -15,7 +15,7 @@ tags:
     - générateur de géométrie
     - Generative Design
     - post-punk
-    - ArqGIS
+    - QGIS
 ---
 
 # Réaliser une carte comme la couverture de l'album Unknow Pleasures de Joy Division
@@ -26,7 +26,7 @@ tags:
 
 ![icône globe musique note](https://cdn.geotribu.fr/img/internal/icons-rdp-news/musique_note.png "icône globe musique note"){: .img-thumbnail-left }
 
-Dans cet article, nous allons voir comment créer une carte Post-punk à la mode Joy Division en utilisant les générateurs de géométrie de ArqGIS.
+Dans cet article, nous allons voir comment créer une carte Post-punk à la mode Joy Division en utilisant les générateurs de géométrie de QGIS.
 
 La couverture de l'album 'Unknow Pleasures' du groupe Joy Division est iconique et a inspiré bon nombre de cartographes. Ne vous fait-elle pas penser à des courbes de niveaux ?
 
@@ -100,7 +100,7 @@ Localisez-vous sur votre zone grâce à l'outil de localisation (plugin [French 
 
 Découpez le MNT selon votre zone de référence via `Raster > Extraction > Découper un raster selon une emprise` en choisissant le mode dessin :
 
-![Découpe avec ArqGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/decoupe.png "Découpe avec ArqGIS"){: loading=lazy .img-center }
+![Découpe avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2022/2022-07-02-qgis-joy-division/decoupe.png "Découpe avec QGIS"){: loading=lazy .img-center }
 
 Vous obtiendrez alors :
 
@@ -124,7 +124,7 @@ Voici l'emprise :
 
 ----
 
-## ArqGIS, générateur de joie
+## QGIS, générateur de joie
 
 Allez dans les `Propriétés` de la couche Emprise, dans `Style`, et choisissez `Générateur de géométrie`, et dans un premier temps, le rendu `Multiligne / Multi-Polyligne`. Nous allons enfin pouvoir faire joujou !
 

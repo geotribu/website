@@ -1,20 +1,20 @@
 ---
-title: Classification automatisée avec le plugin ArqGIS dzetsaka
+title: Classification automatisée avec le plugin QGIS dzetsaka
 authors:
     - Sylvain KERDREUX
 categories:
     - article
 comments: true
 date: 2022-07-22
-description: Présentation de Dzetsaka, un plugin ArqGIS pour faire de la classification semi-automatisée.
+description: Présentation de Dzetsaka, un plugin QGIS pour faire de la classification semi-automatisée.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/L_Dzetsaka_Resultat4.png
 license: default
 tags:
     - classification
-    - ArqGIS
+    - QGIS
 ---
 
-# Dzetsaka : outil de classification pour ArqGIS
+# Dzetsaka : outil de classification pour QGIS
 
 :calendar: Date de publication initiale : 22 juillet 2022
 
@@ -24,7 +24,7 @@ tags:
 
 La classification (dans notre exemple d'une image raster) est une tâche permettant d'extraire des classes d'information à partir de l'analyse du jeu de données.
 
-Je vous propose un guide pour réaliser ce travail en prenant en main le [plugin Dzetsaka pour ArqGIS](https://github.com/nkarasiak/dzetsaka). Il est issu d'un premier plugin (Historical Map) développé aussi par Nicolas Karasiak dont le but était d'automatiser la vectorisation des forêts sur des vieilles cartes papiers. Il a été publié en version 1.0 en octobre 2016 suite à une conférence au début de la même année où Nicolas a découvert la possibilité d'ajouter des algorithmes directement dans la toolbox des géotraitements. Depuis 2016 les mises à jour sont très nombreuses jusqu'en 2021 où le plugin peut être considéré comme stable (des mises à jour mineures sur des petits bugs).
+Je vous propose un guide pour réaliser ce travail en prenant en main le [plugin Dzetsaka pour QGIS](https://github.com/nkarasiak/dzetsaka). Il est issu d'un premier plugin (Historical Map) développé aussi par Nicolas Karasiak dont le but était d'automatiser la vectorisation des forêts sur des vieilles cartes papiers. Il a été publié en version 1.0 en octobre 2016 suite à une conférence au début de la même année où Nicolas a découvert la possibilité d'ajouter des algorithmes directement dans la toolbox des géotraitements. Depuis 2016 les mises à jour sont très nombreuses jusqu'en 2021 où le plugin peut être considéré comme stable (des mises à jour mineures sur des petits bugs).
 
 Initialement, le plugin a été développé pour classifier différents types de végétation mais il peut être utilisé pour différencier des structures bien distinctes.
 
@@ -35,17 +35,17 @@ Initialement, le plugin a été développé pour classifier différents types de
 
 ## Installation du plugin
 
-L'installation se fait simplement via la gestion des extensions de ArqGIS (ici en version 3.22) :
+L'installation se fait simplement via la gestion des extensions de QGIS (ici en version 3.22) :
 
-![ArqGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/A_ArqGIS_InstallPlugin.png "ArqGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/A_QGIS_InstallPlugin.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 Puis on effectue une recherche `dzetsaka` :
 
-![ArqGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/B_ArqGIS_InstallPlugin_suite.png "ArqGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/B_QGIS_InstallPlugin_suite.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 Une fois installé le plugin est accessible via le menu Extension :
 
-![ArqGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/C_ArqGIS_InstallPlugin_Fin.png "ArqGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/C_QGIS_InstallPlugin_Fin.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 ----
 
@@ -55,13 +55,13 @@ Une fois installé le plugin est accessible via le menu Extension :
 
 La fenêtre de bienvenue permet d'accéder à la documentation et à un jeu d'essai (que nous n'allons pas utiliser dans notre exemple).
 
-![ArqGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/D_Dzetsaka_Welcome.png "ArqGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/D_Dzetsaka_Welcome.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 ### Configuration
 
 Avant de s'attaquer à la partie classification, un petit détour par la partie configuration est préférable :
 
-![ArqGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/E_Dzetsaka_Configuration.png "ArqGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/E_Dzetsaka_Configuration.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 Cette fenêtre regroupe plusieurs propriétés :
 
@@ -83,7 +83,7 @@ Elle devra comporter a minima un champ de type entier pour identifier les classe
 
 Dans notre cas, on crée aussi un champ description :
 
-![ArqGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/F_Dzetsaka_Configuration_Train.png "ArqGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
+![QGIS - Installation plugin Dzetsaka](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/qgis_plugin_dzetsaka_classification/F_Dzetsaka_Configuration_Train.png "QGIS - Installation plugin Dzetsaka"){: .img-center loading=lazy }
 
 Nous allons ensuite créer différentes entités sur les zones qui nous intéressent :
 

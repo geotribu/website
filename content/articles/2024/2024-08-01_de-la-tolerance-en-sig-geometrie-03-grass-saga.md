@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2024-08-01
-description: "Troisième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : GEOS et ArqGIS, au tableau !"
+description: "Troisième partie du tour d'horizon des SIG sur les dessous des calculs géométriques : GEOS et QGIS, au tableau !"
 icon: material/grass
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/splash_serie_geometrie_03_grass_saga.png
 license: beerware
@@ -24,7 +24,7 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-Suite de la série sur la gestion de la géométrie dans les logiciels SIG. Après avoir constaté que les calculs n'étaient pas bons et avoir soulevé le capot de ArqGIS pour voir comment GEOS se débrouillait. Le moins que le l'on puisse dire c'est que cela nous laisse circonspect, sinon perplexes : GEOS, et donc ArqGIS, donnent le même résultat mais il n'est pas **exactement** celui attendu.
+Suite de la série sur la gestion de la géométrie dans les logiciels SIG. Après avoir constaté que les calculs n'étaient pas bons et avoir soulevé le capot de QGIS pour voir comment GEOS se débrouillait. Le moins que le l'on puisse dire c'est que cela nous laisse circonspect, sinon perplexes : GEOS, et donc QGIS, donnent le même résultat mais il n'est pas **exactement** celui attendu.
 
 Il est temps d'aller voir ailleurs et de revenir à nos premières amours : GRASS et SAGA.
 
@@ -33,7 +33,7 @@ Il est temps d'aller voir ailleurs et de revenir à nos premières amours : GRAS
 Cet article est la troisième partie de la série d'été sur la gestion de la géométrie dans les SIG.
 
 [Le dossier :octicons-move-to-start-16:](./2024-07-16_de-la-tolerance-en-sig-geometrie-00-annonce.md "De la tolérance en SIG : le dossier"){: .md-button }
-[2 : ArqGIS et GEOS :fontawesome-solid-backward-step:](./2024-07-25_de-la-tolerance-en-sig-geometrie-02-qgis-et-geos.md "GEOS au cœur de ArqGIS"){: .md-button }
+[2 : QGIS et GEOS :fontawesome-solid-backward-step:](./2024-07-25_de-la-tolerance-en-sig-geometrie-02-qgis-et-geos.md "GEOS au cœur de QGIS"){: .md-button }
 {: align=middle }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
@@ -54,11 +54,11 @@ Afin de simplifier la reproductibilité aux lecteurs, j'ai ajouté des modèles 
 
 Dans GRASS, `v.overlay` permet de réaliser des opérations… d'overlay - superposition en français - (intersection, union, différence) entre deux couches vectorielles. Il nécessite deux vecteurs, dont le second B, doit être de type « area » (polygone en langage OGC). Si le vecteur n'est pas un polygone, il nécessite une conversion avant d'effectuer le traitement ; ce qui est notre cas.
 
-La couche `base` est une polyligne fermée, elle sera utilisée pour être convertie en polygone. Pour les puristes, on regardera que les coordonnées du WKB sont bien identiques entre le linestring et le (multi)polygone. Il y a plusieurs façons de procéder, mais, pour rendre accessible à tous, nous allons utiliser GRASS via ArqGIS, j'utilise les premières conversions dans ArqGIS ; ensuite, nous utiliserons uniquement les outils de GRASS.
+La couche `base` est une polyligne fermée, elle sera utilisée pour être convertie en polygone. Pour les puristes, on regardera que les coordonnées du WKB sont bien identiques entre le linestring et le (multi)polygone. Il y a plusieurs façons de procéder, mais, pour rendre accessible à tous, nous allons utiliser GRASS via QGIS, j'utilise les premières conversions dans QGIS ; ensuite, nous utiliserons uniquement les outils de GRASS.
 
 ![grass_line_overlay_points](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/grass_line_overlay_points.svg){: .img-center loading=lazy }
 
-Notre algorithme va convertir la `base` en polygone, puis effectuer l'opération d'overlay. Pour calculer l'intersection entre `line` et `base_poly`, on extrait les points d'intersections que l'on peut afficher dans ArqGIS. On retrouve le même résultat, ici, je passe les détails, mais on retrouve bien nos WKB :
+Notre algorithme va convertir la `base` en polygone, puis effectuer l'opération d'overlay. Pour calculer l'intersection entre `line` et `base_poly`, on extrait les points d'intersections que l'on peut afficher dans QGIS. On retrouve le même résultat, ici, je passe les détails, mais on retrouve bien nos WKB :
 
 - `0101000000a899efc8c83c3e4175e5698166d55341`
 - `0101000000b5ebdd9e8f3c3e416bf8515379d55341`
@@ -77,12 +77,12 @@ Il existe une autre façon de réaliser la sélection, mais je la garde pour la 
 
 ![logo SAGA](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/logo_saga.png){: .img-thumbnail-left }
 
-Si [SAGA](https://fr.wikipedia.org/wiki/Saga_(personnage)) est le plus puissant des chevaliers du zodiaque, [SAGA GIS](https://saga-gis.sourceforge.io/en/index.html) est malheureusement bien souvent le chevalier oublié du SIG. Il possède certains traitements qui ne sont pas disponibles dans ArqGIS et peut également se révéler utile pour d'autres existants.
+Si [SAGA](https://fr.wikipedia.org/wiki/Saga_(personnage)) est le plus puissant des chevaliers du zodiaque, [SAGA GIS](https://saga-gis.sourceforge.io/en/index.html) est malheureusement bien souvent le chevalier oublié du SIG. Il possède certains traitements qui ne sont pas disponibles dans QGIS et peut également se révéler utile pour d'autres existants.
 
-Depuis quelques versions, il n'est plus possible d'avoir les traitements de SAGA directement depuis ArqGIS. Il faut installer le plugin [SAGA NG](https://plugins.qgis.org/plugins/processing_saga_nextgen/) mais il a quelques limitations m'empêchant de l'utiliser pour l'article.
+Depuis quelques versions, il n'est plus possible d'avoir les traitements de SAGA directement depuis QGIS. Il faut installer le plugin [SAGA NG](https://plugins.qgis.org/plugins/processing_saga_nextgen/) mais il a quelques limitations m'empêchant de l'utiliser pour l'article.
 Pour cette partie, je vais directement passer par l'interface de SAGA, notamment afin de visualiser le résultat.
 
-Il est intéressant de comparer le résultat de SAGA avec GEOS/ArqGIS. En effet, les opérations d'overlay ne reposent pas sur GEOS, mais sur une autre bibliothèque dédiée ; pour ceux intéressés, j'y reviendrai dans la partie sur les algorithmes.
+Il est intéressant de comparer le résultat de SAGA avec GEOS/QGIS. En effet, les opérations d'overlay ne reposent pas sur GEOS, mais sur une autre bibliothèque dédiée ; pour ceux intéressés, j'y reviendrai dans la partie sur les algorithmes.
 
 Comme pour les autres, nous allons réaliser les points d'intersection entre `line` et `base`, puis tester si ceux-ci intersectent les géométries d'origine et également, combien de lignes de `test_line` intersectent `base`.
 
@@ -129,7 +129,7 @@ Dans notre expérience avec GRASS, on avait un problème identique. Nous allons 
 
 Aucune sélection. Le message d'exécution nous l'indique bien (en Anglais) : "selected shapes: 0"
 
-Même si l'on peut critiquer la méthode, car le dessin a été fait dans un autre contexte, ArqGIS/GEOS, on va tout de même tester la sélection des lignes :
+Même si l'on peut critiquer la méthode, car le dessin a été fait dans un autre contexte, QGIS/GEOS, on va tout de même tester la sélection des lignes :
 
 On va reprendre notre exemple entre base et test_line.
 

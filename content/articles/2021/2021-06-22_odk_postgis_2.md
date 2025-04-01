@@ -304,7 +304,7 @@ ODK peut mobiliser l'ensemble des capteurs de votre téléphone. La prise de pho
 
 L'annotation de la photo peut être utile par exemple pour les observations de type "pression/menace" ou "observation générale"
 
-[Ces photos seront mobilisables par la suite dans ArqGIS ou dans nos tableaux de bord.](https://si.cen-occitanie.org/?p=191)
+[Ces photos seront mobilisables par la suite dans QGIS ou dans nos tableaux de bord.](https://si.cen-occitanie.org/?p=191)
 
 ![prendre un photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/prise_de_photo.png "prendre un photo"){: loading=lazy width=175px }
 ![Annotation de la photo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/annotation_photo.png "Annotation de la photo"){: loading=lazy width=300px }

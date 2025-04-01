@@ -25,7 +25,7 @@ tags:
 
 :calendar: Date de publication initiale : 6 février 2024
 
-Dans cet article, nous allons voir comment mettre en place un serveur QFieldCloud custom, qui permettra pour vos enquêtes et relevés terrain de synchroniser vos données entre `ArqGIS`, graĉe au plugin `QFieldSync`, et l'application `QField`, et ce sans avoir à brancher ni péter des câbles.
+Dans cet article, nous allons voir comment mettre en place un serveur QFieldCloud custom, qui permettra pour vos enquêtes et relevés terrain de synchroniser vos données entre `QGIS`, graĉe au plugin `QFieldSync`, et l'application `QField`, et ce sans avoir à brancher ni péter des câbles.
 
 Les informations se trouvent :point_right: [ici](https://docs.qfield.org/zh/reference/qfieldcloud/concepts/) :point_left:, merci de lire et suivre les instructions #RTFM.
 
@@ -64,9 +64,9 @@ Bon allez, on reprend.
 
 Connaissez-vous [QField](https://qfield.org/) ? QField c'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
 
-Plus concrètement, il s'agit d'une application mobile de saisie et relevé terrain, hautement compatible avec [ArqGIS](https://www.qgis.org), permettant de reproduire les paramétrages de saisie et formulaires des couches quasi à l'identique, poussée par [OPENGIS.ch](https://www.opengis.ch/) qu'on remercie pour tout le développement made with :heart:. [Un précédent article](../2022/2022-05-24_releve_terrain_qfield.md) explique plus en détail un processus de relevé grâce à l'appli QField qu'on ne présente dorénavant plus.
+Plus concrètement, il s'agit d'une application mobile de saisie et relevé terrain, hautement compatible avec [QGIS](https://www.qgis.org), permettant de reproduire les paramétrages de saisie et formulaires des couches quasi à l'identique, poussée par [OPENGIS.ch](https://www.opengis.ch/) qu'on remercie pour tout le développement made with :heart:. [Un précédent article](../2022/2022-05-24_releve_terrain_qfield.md) explique plus en détail un processus de relevé grâce à l'appli QField qu'on ne présente dorénavant plus.
 
-Maintenant, connaissez-vous Claude QField, la cousine un peu éloignée de Jean-Marc ? Euh non, pardon, "le cloud QField", ["QFieldCloud"](https://qfield.cloud/), _QFC_ pour les intimes. Aucun rapport avec _Quantum Fried Chicken_, même si on va voir qu'il est parfois question de _buckets_. QfieldCloud c'est LA brique qui permet de faire la liaison cloud entre ArqGIS et QField, faisant ainsi de ce triptyque un système robuste et complet d'enquête terrain. QFieldCloud offre entre autres la possibilité de synchroniser les données saisies dans QField directement dans l'application, grâce à un mode semi-offline bien articulé, qui permet de se libérer de pas mal de contraintes concernant le transfert de données PC - smartphone/tablette initialement filaire. Ainsi qu'un système de droits et d'accès aux projets qui permet de gérer finement la configuration et les permissions de plusieurs utilisateur/rices en lecture-écriture.
+Maintenant, connaissez-vous Claude QField, la cousine un peu éloignée de Jean-Marc ? Euh non, pardon, "le cloud QField", ["QFieldCloud"](https://qfield.cloud/), _QFC_ pour les intimes. Aucun rapport avec _Quantum Fried Chicken_, même si on va voir qu'il est parfois question de _buckets_. QfieldCloud c'est LA brique qui permet de faire la liaison cloud entre QGIS et QField, faisant ainsi de ce triptyque un système robuste et complet d'enquête terrain. QFieldCloud offre entre autres la possibilité de synchroniser les données saisies dans QField directement dans l'application, grâce à un mode semi-offline bien articulé, qui permet de se libérer de pas mal de contraintes concernant le transfert de données PC - smartphone/tablette initialement filaire. Ainsi qu'un système de droits et d'accès aux projets qui permet de gérer finement la configuration et les permissions de plusieurs utilisateur/rices en lecture-écriture.
 
 !!! info
     À ce moment de l'article, il est important de noter qu'il existe [ici](https://qfield.cloud/) une instance QFieldCloud "officielle" hébergée par OpenGIS. Qui propose une offre gratuite jusqu'à 100 MO de stockage. Ce qui peut s'avérer limité dès lors que les projets peuvent embarquer beaucoup de photos, et dont les projets privés ne permettent pas forcément la saisie par équipe/organisation ou par plusieurs utilisateur/rices. Pour cela, il y a [les offres Pro et Organization](https://qfield.cloud/pricing.html) qui offrent plus de stockage et plus d'autres trucs. Voire la version "Private Cloud", soit l'hébergement custom d'une instance de serveur QFieldCloud, dont la mise en place, rendue possible grâce à l'ouverture du logiciel, est au cœur de cet article. Mais, il faut savoir que mettre en place une propre instance suppose la charge d'un tas d'autres contraintes liées à l'hébergement : maintenance, montées de versions, backups ... Alors si vous aimez porter ceinture et bretelles, il vaut mieux privilégier l'instance officielle de QFieldCloud, ce qui aura en plus l'avantage de soutenir la boîte et pousser le développement de la solution. Sans oublier qu'une instance on-premise de QFieldCloud ne propose pas la belle page de configuration qu'on retrouve sur [app.qfield.cloud](https://app.qfield.cloud)...
@@ -81,7 +81,7 @@ Pour le déploiement, on aura besoin d'un système Linux. On va partir sur une V
 
 Concernant les specs, pas forcément besoin de beaucoup de ressources, enfin tout dépend du nombre d'utilisateur/rices simultané/es que vous souhaitez pouvoir supporter. Ceci dit le côté asynchrone de QFieldCloud et le fonctionnement de la synchronisation en semi-offline le rend peu gourmand en ressources. Ici 4 CPU et 6GB de RAM nous suffiront.
 
-Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de Go. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets ArqGIS (geopackages, photos...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
+Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de Go. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets QGIS (geopackages, photos...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
 
 Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
 
@@ -167,7 +167,7 @@ Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gr
 
 - `SECRET_KEY` : générer une clé et la mettre ici, via `pwgen 64` par exemple
 
-- les variables qui commencent par `STORAGE_` font référence au _bucket_ compatible S3 dans lequel seront stockées les données géo : projets ArqGIS, geopackages, photos ... Il est possible d'utiliser un bucket de grande enseigne si vous le souhaitez, mais l'équipe de Geotribu vous propose d'utiliser un bucket frais, local et de saison avec [minio](https://min.io/). Qui possède en plus le (gros) avantage de ne rien avoir à changer au niveau de la config (sauf la variable `STORAGE_SECRET_ACCESS_KEY` bien sûr), étant donné que le dépôt de QFieldCloud propose la mise en place d'un service de buckets minio que nous allons voir dans la suite
+- les variables qui commencent par `STORAGE_` font référence au _bucket_ compatible S3 dans lequel seront stockées les données géo : projets QGIS, geopackages, photos ... Il est possible d'utiliser un bucket de grande enseigne si vous le souhaitez, mais l'équipe de Geotribu vous propose d'utiliser un bucket frais, local et de saison avec [minio](https://min.io/). Qui possède en plus le (gros) avantage de ne rien avoir à changer au niveau de la config (sauf la variable `STORAGE_SECRET_ACCESS_KEY` bien sûr), étant donné que le dépôt de QFieldCloud propose la mise en place d'un service de buckets minio que nous allons voir dans la suite
 
 - les variables qui commencent par `POSTGRES_` représentent les informations de connexion à la base de données postgres. Attention il ne s'agit pas d'une BD spatiale, qui aurait vocation à héberger des données SIG (la config par défaut en propose une, configurable avec les variables qui commencent par `GEODB_`). Il s'agit de la BD interne de QFieldCloud, qui contiendra les données des utilisateurs, des organisations, des équipes ... On peut donc allègrement ne rien changer à ce niveau-là, sauf le `POSTGRES_PASSWORD` bien sûr
 
@@ -283,7 +283,7 @@ En tapant l'URL de votre nom de domaine en HTTPS dans un navigateur, l'interface
 
 ### Configuration dans l'interface web
 
-C'est dans cette interface - l'interface d'admin de [Django](https://www.djangoproject.com/) soit le framework utilisé par QFieldCloud - que nous allons créer les utilisateurs, les organisations, les équipes, et assigner les droits sur les projets. Les projets sont eux créés directement dans ArqGIS grâce au plugin QFieldSync.
+C'est dans cette interface - l'interface d'admin de [Django](https://www.djangoproject.com/) soit le framework utilisé par QFieldCloud - que nous allons créer les utilisateurs, les organisations, les équipes, et assigner les droits sur les projets. Les projets sont eux créés directement dans QGIS grâce au plugin QFieldSync.
 
 Voyons maintenant comment créer notre première utilisatrice : il faut nous rendre dans la partie people :notes: people have the power :notes: puis cliquer sur "Add person" en-haut à droite :
 
@@ -294,7 +294,7 @@ Voyons maintenant comment créer notre première utilisatrice : il faut nous ren
 !!! question "Jane Doe"
     _Le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores. Si vous pensez avoir trouvé, vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login) :eyes:._
 
-N.B. : Au cours de la vie du QFieldCloud, il est possible que dans ArqGIS / QField, un message d'erreur comportant la mention "subscription inactive" apparaisse, empêchant par là la possibilité de récupérer ou synchroniser les projets. Pour régler cela, il faut se connecter au serveur et rentrer les commandes suivantes de sorte à corriger le statut des souscriptions (qui deviennent inactives après un mois généralement) :
+N.B. : Au cours de la vie du QFieldCloud, il est possible que dans QGIS / QField, un message d'erreur comportant la mention "subscription inactive" apparaisse, empêchant par là la possibilité de récupérer ou synchroniser les projets. Pour régler cela, il faut se connecter au serveur et rentrer les commandes suivantes de sorte à corriger le statut des souscriptions (qui deviennent inactives après un mois généralement) :
 
 ```sh
 # se connecter en bash dans le container de la base de données interne
@@ -310,9 +310,9 @@ Puis changer le statut des subscriptions en SQL :
 UPDATE subscription_subscription SET status = 'active_paid';
 ```
 
-### Création d'un projet ArqGIS
+### Création d'un projet QGIS
 
-![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Créons maintenant un projet pour tester un tant soit peu notre setup. Il faudra d'abord se connecter à notre instance QFC dans le plugin QFieldSync. Pour cela, cliquer deux fois sur l'abeille cool dans l'interface de connexion et renseigner l'URL de l'instance de même que login / mot de passe :
 
@@ -320,12 +320,12 @@ Créons maintenant un projet pour tester un tant soit peu notre setup. Il faudra
 
 Ensuite créer un projet bateau puis le téléverser grâce au bouton "Create new project".
 
-![Écran d'un projet QFieldCloud dans ArqGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qgis_qfc_project.webp){: .img-center loading=lazy }
+![Écran d'un projet QFieldCloud dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/screenshot_qgis_qfc_project.webp){: .img-center loading=lazy }
 
-Le projet apparaît maintenant dans la liste, et même dans les signets "QFieldCloud" de l'explorateur ArqGIS !
+Le projet apparaît maintenant dans la liste, et même dans les signets "QFieldCloud" de l'explorateur QGIS !
 
 !!! question
-    _:round_pushpin: Reconnaissez-vous l'emplacement du :heart: ? Indice : c'est l'endroit où se dérouleront [les Journées ArqGIS](https://conf.qgis.osgeo.fr/z20_programme.html), les 27 et 28 mars prochains. D'ailleurs, il s'y tiendra un atelier pratique sur le sujet :eyes:, de même qu'une présentation d'un retour d'expérience._
+    _:round_pushpin: Reconnaissez-vous l'emplacement du :heart: ? Indice : c'est l'endroit où se dérouleront [les Journées QGIS](https://conf.qgis.osgeo.fr/z20_programme.html), les 27 et 28 mars prochains. D'ailleurs, il s'y tiendra un atelier pratique sur le sujet :eyes:, de même qu'une présentation d'un retour d'expérience._
 
 Dans l'application mobile QField, même chose: on clique sur l'abeille 2 fois pour pouvoir rentrer l'URL de l'instance et le login / mot de passe :
 
@@ -339,7 +339,7 @@ Une fois le projet téléchargé dans la liste puis ouvert, c'est parti pour la 
 
 ## Et maintenant ?
 
-Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldCloud fonctionnelle sur un serveur linux, nous permettant de synchroniser aisément les données entre ArqGIS et QField. Mais ... vous vous souvenez ? La Fête de la Bière ? La ceinture ? Les bretelles ?
+Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldCloud fonctionnelle sur un serveur linux, nous permettant de synchroniser aisément les données entre QGIS et QField. Mais ... vous vous souvenez ? La Fête de la Bière ? La ceinture ? Les bretelles ?
 
 ![gif de bob l'éponge et patrick en panique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/bob_et_patrick.gif){: .img-center loading=lazy }
 

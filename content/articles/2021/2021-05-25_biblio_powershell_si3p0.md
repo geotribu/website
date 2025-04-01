@@ -249,9 +249,9 @@ SIg-Effacer-Table -table 'BAN_CSV' -sortie "$dossierRapports\$(Get-Date -Format 
 
 Après exécution du script, la table `BAN_Geo` est disponible dans la base SIg et les versions GeoJSON et SHP par commune sont accessibles dans le dossier de sortie.
 
-Les données peuvent être visualisées dans ArqGIS :
+Les données peuvent être visualisées dans QGIS :
 
-![Visualisation du résultat d'exécution du script sous ArqGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-resultat_script.png "Visualisation du résultat d'exécution du script sous ArqGIS"){: loading=lazy }
+![Visualisation du résultat d'exécution du script sous QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/api_powershell_si3p0/apercu_SI3P0-resultat_script.png "Visualisation du résultat d'exécution du script sous QGIS"){: loading=lazy }
 
 ----
 

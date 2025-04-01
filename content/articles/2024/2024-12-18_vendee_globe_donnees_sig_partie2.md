@@ -7,7 +7,7 @@ categories:
   - article
 comments: true
 date: 2024-12-18
-description: Après avoir récupéré, nettoyé et visualisé les données SIG du Vendée Globe 2024 dans ArqGIS, voyons comment automatiser tout cela et développer une application application Web de suivi avec MapLibre.
+description: Après avoir récupéré, nettoyé et visualisé les données SIG du Vendée Globe 2024 dans QGIS, voyons comment automatiser tout cela et développer une application application Web de suivi avec MapLibre.
 icon: material/sail-boat
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/illustration_article_partie_2.png
 license: beerware
@@ -17,7 +17,7 @@ tags:
   - GitHub Pages
   - GitHub Actions
   - MapLibre
-  - ArqGIS
+  - QGIS
   - Vendée Globe
   - voile
   - webmapping
@@ -90,13 +90,13 @@ Chaque fois que le pipeline est exécuté, les dernières données écrasent les
 
 L'intérêt est donc de pouvoir récupérer les données sans avoir à cloner le projet, installer les dépendances et lancer les scripts pour construire les données, c'est la magie de la CI qui s'occupe de tout ça !
 
-### Interroger directement la release depuis ArqGIS
+### Interroger directement la release depuis QGIS
 
-Vous pouvez même charger ces données directement dans ArqGIS sans avoir à télécharger le fichier manuellement.
+Vous pouvez même charger ces données directement dans QGIS sans avoir à télécharger le fichier manuellement.
 
-Pour cela dans votre ArqGIS rendez-vous dans le menu **Couche** puis **Ajouter une couche** et enfin **Ajouter une couche vecteur**
+Pour cela dans votre QGIS rendez-vous dans le menu **Couche** puis **Ajouter une couche** et enfin **Ajouter une couche vecteur**
 
-![ArqGIS - Ajouter une couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/ajouter_une_couche.png){: .img-center loading=lazy }
+![QGIS - Ajouter une couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/ajouter_une_couche.png){: .img-center loading=lazy }
 
 Dans la fenêtre qui s'affiche, dans le champ `Jeux de données vectorielles` vous pouvez coller une URL de fichier qui provient de la release.
 
@@ -106,13 +106,13 @@ On va donc y mettre l'URL du fichier `latest_data.gpkg` qui contient la couche d
 https://github.com/florentfgrs/Vendee-Globe-2024/releases/download/latest/latest_data.gpkg
 ```
 
-![ArqGIS - URL de couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/ajouter-couche-vecteur.png){: .img-center loading=lazy }
+![QGIS - URL de couche vecteur](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/vendee_globe_donnees_sig/ajouter-couche-vecteur.png){: .img-center loading=lazy }
 
-Après un temps de chargement (le temps que ArqGIS télécharge le fichier dans le cache) les données vont apparaître.
+Après un temps de chargement (le temps que QGIS télécharge le fichier dans le cache) les données vont apparaître.
 
-Ou plus simplement, télécharger et ouvrir le projet ArqGIS :
+Ou plus simplement, télécharger et ouvrir le projet QGIS :
 
-[:octicons-download-24: Projet ArqGIS Vendée Globe 2024 :simple-qgis:](https://github.com/florentfgrs/Vendee-Globe-2024/raw/refs/heads/main/Vend%C3%A9e%20Globe%202024.qgz){: download .md-button .md-button--primary }
+[:octicons-download-24: Projet QGIS Vendée Globe 2024 :simple-qgis:](https://github.com/florentfgrs/Vendee-Globe-2024/raw/refs/heads/main/Vend%C3%A9e%20Globe%202024.qgz){: download .md-button .md-button--primary }
 {: align=middle }
 
 ----

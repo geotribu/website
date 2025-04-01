@@ -339,9 +339,9 @@ JTS/GEOS utilise une version modifiée de ces calculs. Afin de ne pas allonger u
 
 Dans nos SIG, voici quelques liens vers les codes sources utilisés :
 
-ArqGIS
+QGIS
 
-- Les fonctions sur les calculs géométriques de [ArqGIS](https://github.com/qgis/ArqGIS/blob/0c41c22343ded7c6b6a7be0d382477128e837bd9/src/core/geometry/qgsgeometryutils_base.cpp)
+- Les fonctions sur les calculs géométriques de [QGIS](https://github.com/qgis/QGIS/blob/0c41c22343ded7c6b6a7be0d382477128e837bd9/src/core/geometry/qgsgeometryutils_base.cpp)
 
 Grass
 

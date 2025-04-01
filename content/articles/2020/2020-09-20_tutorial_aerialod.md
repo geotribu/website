@@ -27,11 +27,11 @@ tags:
 Lorsqu'on parle de cartographie 3D, des choses arrivent pèle mêle en tête.
 
 Un peu de technique, comme la technologie Lidar et sa capacité à générer des modèles numériques de terrain (MNT). GoogleMaps ou bien Maps d'Apple qui génèrent des vues 3D à partir de photo aériennes.
-Côté logiciel, ArqGIS, avec le plug-in ArqGIS2threeJS qui permet depuis un moment de réaliser des blocs 3D et [maintenant nativement dans sa version 3](https://www.qgis.org/fr/site/forusers/visualchangelog30/index.html#d-features). Ou bien encore [Blender](https://www.blender.org/download/), qui est un logiciel libre de modélisation, d'animation et de rendu 3D. Et pêle-mêle [ArcGIS](https://www.esrifrance.fr/arcgis.aspx), [MapBox](https://www.mapbox.com/) ou [Kepler.gl](https://kepler.gl/) pour ne citer qu'eux.
+Côté logiciel, QGIS, avec le plug-in QGIS2threeJS qui permet depuis un moment de réaliser des blocs 3D et [maintenant nativement dans sa version 3](https://www.qgis.org/fr/site/forusers/visualchangelog30/index.html#d-features). Ou bien encore [Blender](https://www.blender.org/download/), qui est un logiciel libre de modélisation, d'animation et de rendu 3D. Et pêle-mêle [ArcGIS](https://www.esrifrance.fr/arcgis.aspx), [MapBox](https://www.mapbox.com/) ou [Kepler.gl](https://kepler.gl/) pour ne citer qu'eux.
 
 Des noms et leurs créations viennent également :
 
-- Sean Conway réalise des cartes visuellement impressionnantes. Il travaille pour Quantum Spatial aux Etats-Unis, en tant que spécialiste orthophoto. Et au vu de ses créations, il a clairement un sacré sens artistique ! Il utilise notamment ArqGIS et Blender pour ses rendus. Vous pouvez admirer son travail [sur son profil Twitter](https://twitter.com/geo_spatialist?s=20).
+- Sean Conway réalise des cartes visuellement impressionnantes. Il travaille pour Quantum Spatial aux Etats-Unis, en tant que spécialiste orthophoto. Et au vu de ses créations, il a clairement un sacré sens artistique ! Il utilise notamment QGIS et Blender pour ses rendus. Vous pouvez admirer son travail [sur son profil Twitter](https://twitter.com/geo_spatialist?s=20).
 
 ![france geologique](https://cdn.geotribu.fr/img/tuto/aerialod/sean_conway.png "Carte géologique France 3D"){: .img-center loading=lazy }
 

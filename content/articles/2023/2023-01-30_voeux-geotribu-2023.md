@@ -42,7 +42,7 @@ Merci à toustes de nous suivre et en particulier à celles et ceux qui prennent
 ![Bonne année 2023](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/bonne_annee/geotribu_2023.png "Bonne année 2023"){: .img-center loading=lazy }
 
 !!! info
-    Carte de voeux réalisée avec [PostgreSQL/PostGIS (fonction ST_Letters)](https://www.crunchydata.com/blog/fun-with-letters-in-postgis-33) et ArqGIS.
+    Carte de voeux réalisée avec [PostgreSQL/PostGIS (fonction ST_Letters)](https://www.crunchydata.com/blog/fun-with-letters-in-postgis-33) et QGIS.
 
 ----
 
@@ -85,7 +85,7 @@ Découvrez la rétrospective des contributions réalisée à partir de l'histori
 - :fontawesome-solid-signature: les avatars GitHub des principaux contributeur/ices d'une page sont automatiquement ajoutés en bas de page
 - :frame_photo: ajout du [plugin mkdocs-glightbox](https://blueswen.github.io/mkdocs-glightbox/) pour appliquer un mode galerie à toutes les images par défaut. Vous savez, quand on clique sur une image et que ça l'agrandit en floutant le site à l'arrière-plan et en permettant de naviguer d'une image à l'autre ? Avant c'était ~~galère~~ exigeant de faire ça dans un contenu Geotribu, maintenant y'a rien à faire. Plus d'information dans [le guide de contribution]({{ config.extra.url_contribuer }}/guides/image/#lightbox-mode-galerie).
 - :heartpulse: il est désormais possible de montrer son amour d'un contenu sans avoir à écrire de commentaire. Idéal pour les timides qui souhaiteraient quand même remercier les auteur/ices :wink:.
-- :material-puzzle: notre [plugin ArqGIS](https://plugins.qgis.org/plugins/qtribu/) est désormais publié dans le dépôt officiel des extensions pour que son installation soit plus facile
+- :material-puzzle: notre [plugin QGIS](https://plugins.qgis.org/plugins/qtribu/) est désormais publié dans le dépôt officiel des extensions pour que son installation soit plus facile
 - :robot: un robot pré-mâche le travail d'intégration des news proposées via le formulaire GitHub ([voir cet exemple](https://github.com/geotribu/website/issues/703#issuecomment-1256246426))
 - :label: ajout d'icônes aux mots-clés (travail en cours) et légère amélioration du design
 - :factory_worker: des évolutions sous le capot du site notamment liées au thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) dont on contribue à financer la version payante (_Insiders_) via notre [Tipeee](https://fr.tipeee.com/geotribu).

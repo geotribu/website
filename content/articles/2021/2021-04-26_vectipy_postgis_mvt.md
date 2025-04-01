@@ -35,7 +35,7 @@ Le serveur de tuiles [vectipy](https://github.com/jbdesbas/vectipy) peut vous in
 
 - Vous disposez de données spatiales sur une base PostGIS
 - Vous souhaitez partager ces données via une carte en ligne et/ou un flux SIG
-- Vous ne souhaitez pas (ou ne pouvez pas) mettre en place et administrer une "solution lourde" telle que GeoServer, MapServer ou ArqGIS Server.
+- Vous ne souhaitez pas (ou ne pouvez pas) mettre en place et administrer une "solution lourde" telle que GeoServer, MapServer ou QGIS Server.
 
 La solution que je développe ici est un projet libre de serveur permettant de publier, aussi facilement que possible, un flux de tuiles vectorielles. Ce flux peut convenir aussi bien à un usage web que SIG. Il exploite la faculté de PostGIS à générer des tuiles vectorielles directement depuis une requête SQL, ces tuiles sont ensuites mise à disposition par le micro-framework web [Flask](https://flask.palletsprojects.com/).
 
@@ -65,17 +65,17 @@ Les tuiles sont généralement (mais pas obligatoirement) encodées au format [P
 
 ![tiles pyramid](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/mvt_vector_tiles_schema_pyramides.png "Structure pyramidale de tuiles vectorielles avec niveaux de zoom"){: .img-center loading=lazy }
 
-> Extrait de la [documentation](https://docs.qgis.org/3.16/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html?highlight=tuiles%20vectorielles) de ArqGIS.
+> Extrait de la [documentation](https://docs.qgis.org/3.16/fr/docs/user_manual/working_with_vector_tiles/vector_tiles_properties.html?highlight=tuiles%20vectorielles) de QGIS.
 
 ### Génération des tuiles
 
 PostGIS permet de directement générer des tuiles grâce à la fonction [ST_AsMVT](https://postgis.net/docs/ST_AsMVT.html) avec des [bonnes performances](https://blog.cleverelephant.ca/2019/08/postgis-3-mvt.html). C'est ce principe qui sera utilisé ici pour mettre en place un serveur de tuiles.
 
-ArqGIS permet également de prégénérer des tuiles à partir de n'importe quel fichier vectoriel compatible ([`Boite à outils`](https://docs.qgis.org/3.16/fr/docs/user_manual/processing/toolbox.html) --> `Ecrire des tuiles vectorielles`).
+QGIS permet également de prégénérer des tuiles à partir de n'importe quel fichier vectoriel compatible ([`Boite à outils`](https://docs.qgis.org/3.16/fr/docs/user_manual/processing/toolbox.html) --> `Ecrire des tuiles vectorielles`).
 
 ### Utilisation
 
-Les flux ainsi publiés sont utilisables par une interface web avec [MapLibre GL](https://github.com/maplibre/maplibre-gl-js), [Leaflet](https://github.com/Leaflet/Leaflet) (avec plugin), mais aussi [supportées nativement par ArqGIS](https://makina-corpus.com/blog/metier/2020/qgis-nouveau-support-tuiles-rasters-vectorielles) depuis la version 3.14.
+Les flux ainsi publiés sont utilisables par une interface web avec [MapLibre GL](https://github.com/maplibre/maplibre-gl-js), [Leaflet](https://github.com/Leaflet/Leaflet) (avec plugin), mais aussi [supportées nativement par QGIS](https://makina-corpus.com/blog/metier/2020/qgis-nouveau-support-tuiles-rasters-vectorielles) depuis la version 3.14.
 
 [Cet article](2021-02-23_carte_ligne_libre.md) vous explique comment styliser un fichier GeoJSON sur carte MapLibre. Le fonctionnement avec un flux MVT est rigoureusement identique, la seule différence se faisant au moment de la définition de la source de données :
 
@@ -94,7 +94,7 @@ Dans ce cas, il convient :
 - soit d'étudier un autre mode de représentation (aggrégation, etc.)
 
 MapLibre GL permet toutefois l'affichage de plusieurs milliers de points sans ralentissements notables.  
-Sur ArqGIS, les données du flux peuvent être stylisées avec le moteur de symbologie. Le support des tuiles vectorielles est assez récent, mais il offre une alternative simple au WFS.
+Sur QGIS, les données du flux peuvent être stylisées avec le moteur de symbologie. Le support des tuiles vectorielles est assez récent, mais il offre une alternative simple au WFS.
 
 ----
 

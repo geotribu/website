@@ -9,7 +9,7 @@ date: 2009-09-25
 description: "Sortie du manuel de QGis 1.0 en français"
 tags:
     - open source
-    - ArqGIS
+    - QGIS
     - SIG
 ---
 
@@ -17,7 +17,7 @@ tags:
 
 :calendar: Date de publication initiale : 25 septembre 2009
 
-![logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo ArqGIS"){: .img-thumbnail-left }
+![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
 Grâce au formidable travail du noyau dur de l'équipe de l'OSGEO-fr, le manuel d'utilisation de QGis 1.0 ([pdf](http://download.osgeo.org/qgis/doc/manual/qgis-1.0.0_user_guide_fr.pdf)) est enfin disponible en français. Sur presque 300 pages, l'ensemble des fonctionnalités de cet outil est expliqué, détaillé et analysé. Les différents niveaux de lecture permettront d'intéresser autant les novices que les confirmés.
 

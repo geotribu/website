@@ -15,7 +15,7 @@ robots: index, follow
 tags:
     - analyse
     - géométrie
-    - ArqGIS
+    - QGIS
     - topologie
     - WKB
     - WKT
@@ -64,13 +64,13 @@ Exemple d'une géométrie de ligne au format WKB :
 010200000002000000ea9c6d2b873c3e41a03d941b7cd5534133db7796ce3c3e413fba569864d55341
 ```
 
-Sur ArqGIS, on peut charger ces WKB - ainsi que les EWKB, EWKT, WKT - avec le très utile plugin [QuickWKT](https://plugins.qgis.org/plugins/QuickWKT/).
+Sur QGIS, on peut charger ces WKB - ainsi que les EWKB, EWKT, WKT - avec le très utile plugin [QuickWKT](https://plugins.qgis.org/plugins/QuickWKT/).
 
-![Plugin ArqGIS QuickWKT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/quickwkt_base.png){: .img-center loading=lazy }
+![Plugin QGIS QuickWKT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/quickwkt_base.png){: .img-center loading=lazy }
 
 Ce qui nous donne :
 
-![ArqGIS - Base and line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/base_line.png){: .img-center loading=lazy }
+![QGIS - Base and line](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/base_line.png){: .img-center loading=lazy }
 
 ### Intersections de ces lignes
 
@@ -78,7 +78,7 @@ Ce qui nous donne :
 
 Nous avons désormais notre base pour étudier ce problème de précision/tolérance/intersection.
 
-Justement, calculons l'intersection entre ces lignes. Pour cela, nous allons utiliser l'outil `native:lineintersections` de ArqGIS.
+Justement, calculons l'intersection entre ces lignes. Pour cela, nous allons utiliser l'outil `native:lineintersections` de QGIS.
 
 ![Base and line intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/native_lineintersections_base_line.png){: .img-center loading=lazy }
 
@@ -110,7 +110,7 @@ respectivement `POINT(1981583.6205737416 5199333.301878075)`
 
 ![icône création de ligne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_icon_mActionCaptureLine.png){: .img-thumbnail-left }
 
-ArqGIS propose différentes options pour s'accrocher. On en utilisera deux, l'accrochage sur un sommet et l'accrochage aux intersections.
+QGIS propose différentes options pour s'accrocher. On en utilisera deux, l'accrochage sur un sommet et l'accrochage aux intersections.
 
 #### Accrochage sur les points d'intersection
 
@@ -118,17 +118,17 @@ Tout d'abord, on va utiliser la fonctionnalité d'accrochage sur les intersectio
 
 Dans la vidéo ci-après, je montre comment j'ai généré des lignes de part et d'autre de la ligne principale aux points d'intersection.
 
-![ArqGIS - Snap line intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/line_snap_draw.gif){: .img-center loading=lazy }
+![QGIS - Snap line intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/line_snap_draw.gif){: .img-center loading=lazy }
 
 #### Accrochage sur les intersections
 
 Je répète l'opération, cette fois en me focalisant sur les points d'intersection. L'objectif est de garantir l'accrochage précis sur la ligne principale, indépendamment des variations des sommets adjacents.
 
-![ArqGIS - Snap line points intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/line_intersection_draw.gif){: .img-center loading=lazy }
+![QGIS - Snap line points intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/line_intersection_draw.gif){: .img-center loading=lazy }
 
 #### Comparaison des points d'accrochage
 
-On fait confiance à ArqGIS et, visuellement, les lignes apparaissent bien accrochées à la ligne de base.
+On fait confiance à QGIS et, visuellement, les lignes apparaissent bien accrochées à la ligne de base.
 
 Comparons maintenant nos géométries textuelles. On a 8 lignes/segments dans les deux cas.
 Si l'accrochage se déroule correctement, on devrait avoir les mêmes points de départs.
@@ -179,7 +179,7 @@ En effet, on retrouve bien les coordonnées d'origine :
 
 ![icône intersection](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/qgis_icon_mIconSelectIntersect.png){: .img-thumbnail-left }
 
-Par conséquent, nous avons des lignes qui sont sur le point d'intersection. Si l'on souhaite vérifier l'accrochage, on utilise le prédicat « intersecte » de ArqGIS. Pour vérifier cela, utilisons l'outil « sélection par localisation » :
+Par conséquent, nous avons des lignes qui sont sur le point d'intersection. Si l'on souhaite vérifier l'accrochage, on utilise le prédicat « intersecte » de QGIS. Pour vérifier cela, utilisons l'outil « sélection par localisation » :
 
 #### Le prédicat `intersects` avec `line_snap`
 
@@ -211,7 +211,7 @@ Pour aller plus loin, je réalise des tests aléatoires en essayant d'accrocher 
 
 ![Spiderman](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/test_line_spider.png){: .img-center loading=lazy }
 
-Dans notre franchise [OSGeo](https://www.osgeo.org), ArqGIS est un de nos superhéros, tel [Spider-Man](https://www.youtube.com/watch?v=i5P8lrgBtcU). Notre petite toile d'araignée manque de [glu](https://www.youtube.com/watch?v=rf6Yv4lMhhs), car notre accrochage n'est toujours pas bon :
+Dans notre franchise [OSGeo](https://www.osgeo.org), QGIS est un de nos superhéros, tel [Spider-Man](https://www.youtube.com/watch?v=i5P8lrgBtcU). Notre petite toile d'araignée manque de [glu](https://www.youtube.com/watch?v=rf6Yv4lMhhs), car notre accrochage n'est toujours pas bon :
 
 ![Spider selected](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/geometrie_tolerance_sig/test_line_spider_selected.png){: .img-center loading=lazy }
 
@@ -261,7 +261,7 @@ Cela fonctionne ! Mais pourquoi ?
 
 Et bien, nous verrons cela plus tard.
 
-[2 : ArqGIS et GEOS :fontawesome-solid-forward-step:](./2024-07-25_de-la-tolerance-en-sig-geometrie-02-qgis-et-geos.md "GEOS au cœur de ArqGIS"){: .md-button }
+[2 : QGIS et GEOS :fontawesome-solid-forward-step:](./2024-07-25_de-la-tolerance-en-sig-geometrie-02-qgis-et-geos.md "GEOS au cœur de QGIS"){: .md-button }
 {: align=middle }
 
 <!-- geotribu:authors-block -->

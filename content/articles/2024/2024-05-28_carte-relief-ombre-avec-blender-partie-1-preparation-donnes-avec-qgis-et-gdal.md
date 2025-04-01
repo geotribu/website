@@ -7,7 +7,7 @@ categories:
   - article
 comments: true
 date: 2024-05-28
-description: "Réaliser des cartes de relief avec le logiciel libre 3D Blender. Partie 1 : préparer les données avec GDAL et/ou ArqGIS."
+description: "Réaliser des cartes de relief avec le logiciel libre 3D Blender. Partie 1 : préparer les données avec GDAL et/ou QGIS."
 icon: simple/blender
 image:
 license: default
@@ -20,7 +20,7 @@ tags:
   - relief
 ---
 
-# Réaliser des cartes avec Blender - Partie 1 : préparer les données avec GDAL/ArqGIS
+# Réaliser des cartes avec Blender - Partie 1 : préparer les données avec GDAL/QGIS
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
@@ -39,9 +39,9 @@ L'article est en **deux parties**.
 ![logo GDAL tshirt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal_logo_tshirt.webp){: .img-right width=20% }
 
 Pour cette première partie on ne touchera pas à Blender mais on va s'attarder sur la préparation des données.  
-Il y a plusieurs étapes de préparation et l'une d'entre elles nécessite obligatoirement l'utilisation de GDAL en ligne de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tous les pré-traitements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec ArqGIS).
+Il y a plusieurs étapes de préparation et l'une d'entre elles nécessite obligatoirement l'utilisation de GDAL en ligne de commande. Restez ici ! Rien de bien compliqué et on vous explique tout (et on va profiter de cet article pour essayer de faire tous les pré-traitements raster en lignes de commande pour s'y familiariser. Au cazou j'indiquerai aussi comment faire avec QGIS).
 
-Ceci implique d'avoir accès à GDAL. Sur Windows, ça se passe en se rendant dans votre répertoire d'installation de ArqGIS, puis en démarrant OSGeo4W.bat. Vous pouvez plus simplement consulter cet article de Geotribu [Installer Python et GDAL sous Windows](https://geotribu.fr/articles/2013/2013-09-26_installer_python_gdal_sous_windows) ou encore celui-ci [Utiliser GDAL sous Windows avec WSL](https://geotribu.fr/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/#). Je considère que les linuxiens sont assez aguerris pour se débrouiller (au pire faites-vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux apple-iens (sauf à ma cheffe de service car je suis bien obligé).
+Ceci implique d'avoir accès à GDAL. Sur Windows, ça se passe en se rendant dans votre répertoire d'installation de QGIS, puis en démarrant OSGeo4W.bat. Vous pouvez plus simplement consulter cet article de Geotribu [Installer Python et GDAL sous Windows](https://geotribu.fr/articles/2013/2013-09-26_installer_python_gdal_sous_windows) ou encore celui-ci [Utiliser GDAL sous Windows avec WSL](https://geotribu.fr/articles/2020/2020-10-28_gdal_windows_subsystem_linux_wsl/#). Je considère que les linuxiens sont assez aguerris pour se débrouiller (au pire faites-vous un environnement [mamba](https://mamba.readthedocs.io/en/latest/) qui va bien (miniconda réécrit en c/c++)) et je refuse par principe de parler aux apple-iens (sauf à ma cheffe de service car je suis bien obligé).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
@@ -52,17 +52,17 @@ Ceci implique d'avoir accès à GDAL. Sur Windows, ça se passe en se rendant da
 
 ## Préparation des données
 
-Après récupération du jeu de données, chargez une des dalles au format ASC dans ArqGIS. Le format ASC ne gère pas les projections et ArqGIS essayera par défaut de les positionner en WGS84 (ne vous inquiétez pas, les coordonnées sont les bonnes). Vous pouvez repositionner l'image en cliquant sur la petite icône de l'image ci-dessous et en spécifiant ce bon vieux Lambert 93.
+Après récupération du jeu de données, chargez une des dalles au format ASC dans QGIS. Le format ASC ne gère pas les projections et QGIS essayera par défaut de les positionner en WGS84 (ne vous inquiétez pas, les coordonnées sont les bonnes). Vous pouvez repositionner l'image en cliquant sur la petite icône de l'image ci-dessous et en spécifiant ce bon vieux Lambert 93.
 
 ![Ça arrive même aux meilleurs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img1_lign.png){: .img-center loading=lazy }
 
-Sur ces considérations on chargera plutôt la couche "dalles" [dans le format dont il ne faut pas prononcer le nom](http://switchfromshapefile.org/) située dans le dossier "3_SUPPLEMENTS_LIVRAISON" de l'archive. On active ensuite un fond de plan OpenStreetMap sous "xyz tiles" de l'explorateur de ArqGIS histoire de se repérer.
+Sur ces considérations on chargera plutôt la couche "dalles" [dans le format dont il ne faut pas prononcer le nom](http://switchfromshapefile.org/) située dans le dossier "3_SUPPLEMENTS_LIVRAISON" de l'archive. On active ensuite un fond de plan OpenStreetMap sous "xyz tiles" de l'explorateur de QGIS histoire de se repérer.
 
 ### Liste des tuiles et bases de la ligne de commandes
 
 On va ici créer un fichier qui nous permettra de fusionner les dalles voulues pour notre carte.
 
-1. Dans ArqGIS, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format CSV qu'on nommera select.csv.
+1. Dans QGIS, on sélectionne les dalles de la région (rectangulaire) que l'on souhaite cartographier et on exporte la sélection au format CSV qu'on nommera select.csv.
 1. On ouvre ce fichier dans LibreOffice Calc (ou logiciel propriétaire équivalent) et on supprime l'entête des colonnes ainsi que toutes les colonnes sauf celle contenant le nom des tuiles.
 1. Dans la colonne adjacente on écrit cette formule :
     - Libre office : `=CONCAT(A1;".asc")`
@@ -122,7 +122,7 @@ Il faut ensuite normalement spécifier un par un les noms de fichiers à fusionn
 
 Dans le répertoire, vous trouverez votre geotiff `mosaic.tif` que je vous encourage à déplacer ailleurs pour vous y retrouver.
 
-Dans ~~l'interface graphique de GDAL~~ ArqGIS cette étape est faisable via le menu `raster -> Divers -> fusion` (il faut au préalable charger l'ensemble des tuiles voulues dans ArqGIS).
+Dans ~~l'interface graphique de GDAL~~ QGIS cette étape est faisable via le menu `raster -> Divers -> fusion` (il faut au préalable charger l'ensemble des tuiles voulues dans QGIS).
 
 ### Reprojection
 
@@ -141,13 +141,13 @@ gdalwarp -t_srs EPSG:2154 -r near -co BIGTIFF=YES mosaic.tif mosaicl93.tif
 
 Pour celles et ceux à l'aise avec GDAL, vous pouvez compresser les images pour réduire la taille des fichiers de sortie au moins en `deflate` (pour les autres, ça se fait en passant une seconde option pour le driver de type de fichier : `-co COMPRESS=methode`, la plus couramment utilisée étant `-co COMPRESS=DEFLATE` pour s'assurer de la compatibilité avec tous les systèmes/logiciels).
 
-Sinon, dans ArqGIS, ça se fait avec `Raster -> Projection -> Assigner une projection`.
+Sinon, dans QGIS, ça se fait avec `Raster -> Projection -> Assigner une projection`.
 
 ### Fausser les données
 
 Oui. Nous allons commettre ceci. Ne sortez pas les bidons d'essence tout de suite s'il vous plaît. Pour ce que nous allons en faire, Blender n'accepte que les images en entier 16 bits non signés (`UInt16`, on y reviendra), donc une plage de valeur pour les pixels comprise entre 0 et 65 535. Mais sans virgules, ce que contient notre raster initial donc on perdrait du détail. L'idée est donc de réattribuer aux pixels de notre image des valeurs sur l'ensemble de cette plage, ceci pour bénéficier de l'entièreté de cette finesse.
 
-On fait ça avec [GDAL_calc.py](https://GDAL.org/programs/GDAL_calc.html) mais on peut aussi rester simple et faire ça avec la calculatrice raster de ArqGIS.
+On fait ça avec [GDAL_calc.py](https://GDAL.org/programs/GDAL_calc.html) mais on peut aussi rester simple et faire ça avec la calculatrice raster de QGIS.
 
 Tout d'abord, on normalise notre raster car certaines valeurs peuvent êtres en dessous de 0 (notamment quand il y a de l'eau). On va donc les mettre à 0.
 
@@ -161,13 +161,13 @@ Avec `GDAL_calc.py`, les maths doivent être "[numpy](https://numpy.org/) style"
 - `--outfile` le nom du fichier de sortie (ça dépend des programmes GDAL, souvent c'est la position du nom qui fait foi dans la commande).
 - `--calc` la formule de calcul, entourée de `""`.
 
-Ou dans ArqGIS : `raster -> calculatrice raster` puis :
+Ou dans QGIS : `raster -> calculatrice raster` puis :
 
 ![calc_raster](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/gdal_qgis_blender/img4_calc.png)
 
 Où la formule se comprend ainsi : `if (condition, valeur si vrai, valeur si faux)`
 
-On regarde les valeurs minimum et maximum de notre raster, soit dans les propriétés de la couche ArqGIS, soit avec [GDALinfo](https://GDAL.org/programs/GDALinfo.html).
+On regarde les valeurs minimum et maximum de notre raster, soit dans les propriétés de la couche QGIS, soit avec [GDALinfo](https://GDAL.org/programs/GDALinfo.html).
 
 ```sh
 gdalinfo -mm mosaic_cut.tif
@@ -189,13 +189,13 @@ Dans mon cas cela donne :
 gdal_calc.py -A mosaic_cut.tif --outfile=mosaic_rescale.tif --calc="(A - 0) / (196.8 - 0) * 65535"
 ```
 
-Dans la calculatrice raster de ArqGIS, cela donnerait :
+Dans la calculatrice raster de QGIS, cela donnerait :
 
 ```math
 ("mosaic_cut@1" - 0) / (196.8 - 0) * 65535
 ```
 
-Enfin, on va convertir notre raster en UInt16 pour l'importer dans Blender. C'est cette opération qui n'est pas réalisable dans ArqGIS sans circonvolutions. Donc on sort [GDAL_translate](https://GDAL.org/programs/GDAL_translate.html), le programme qui sert à faire des conversions.
+Enfin, on va convertir notre raster en UInt16 pour l'importer dans Blender. C'est cette opération qui n'est pas réalisable dans QGIS sans circonvolutions. Donc on sort [GDAL_translate](https://GDAL.org/programs/GDAL_translate.html), le programme qui sert à faire des conversions.
 
 ```sh
 gdal_translate -ot UInt16 mosaic_rescale.tif mnt.tif

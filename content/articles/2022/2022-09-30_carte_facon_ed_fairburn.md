@@ -1,22 +1,22 @@
 ---
-title: Faire une carte façon Ed Fairburn avec ArqGIS
+title: Faire une carte façon Ed Fairburn avec QGIS
 authors:
     - Michaël GALIEN
 categories:
     - article
 comments: true
 date: 2022-09-30
-description: Utiliser les modes de fusion pour produire avec ArqGIS une carte inspirée des dessins d'Ed Fairburn.
+description: Utiliser les modes de fusion pour produire avec QGIS une carte inspirée des dessins d'Ed Fairburn.
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/carte_facon_ed_fairburn.png
 tags:
     - carte
     - composeur d'impression
     - mode de fusion
-    - ArqGIS
+    - QGIS
     - rendu
 ---
 
-# Faire une carte façon Ed Fairburn avec ArqGIS
+# Faire une carte façon Ed Fairburn avec QGIS
 
 :calendar: Date de publication initiale : 30 septembre 2022
 
@@ -30,7 +30,7 @@ Dans ce tuto, je te propose de faire une carte inspirée de ses réalisations gr
 
 **Pré-requis :**
 
-* [ArqGIS](https://qgis.org/fr/site/).
+* [QGIS](https://qgis.org/fr/site/).
 * Une dose de géo-données.
 * Un soupçon de créativité.
 
@@ -43,7 +43,7 @@ Dans ce tuto, je te propose de faire une carte inspirée de ses réalisations gr
 
 `Superposition`, `Écran`, `Soustraire`, `Différence`, ... j'avais prévenu : quelques mots.
 
-Plus sérieusement, sous ArqGIS les modes de fusion sont disponibles dans les options de rendu.
+Plus sérieusement, sous QGIS les modes de fusion sont disponibles dans les options de rendu.
 On les trouve à plusieurs endroits, au niveau de la symbologie d'une couche aussi bien vecteur que raster par exemple, mais aussi sur les objets d'une mise en page dans le composeur d'impression.
 
 Le mode de fusion détermine comment un élément graphique se comporte vis à vis des éléments qui se trouvent en-dessous.
@@ -56,9 +56,9 @@ Mon avis : le mieux reste de tester pour visualiser et enfin comprendre le compo
 
 ----
 
-## Projet ArqGIS
+## Projet QGIS
 
-![Logo ArqGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo ArqGIS"){: .img-thumbnail-left }
+![Logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "Logo QGIS"){: .img-thumbnail-left }
 
 J'utilise ici la [BD Topo® de l'IGN](https://geoservices.ign.fr/bdtopo) mais tu peux travailler avec d'autres sources, pourquoi pas te tourner vers [OSMData](https://demo.openstreetmap.fr/map) et chopper 2 - 3 données sympas.
 
@@ -78,7 +78,7 @@ Les `zone_de_vegetation` et `surface_hydrographique` sont respectivement vertes 
 
 La classe `troncon_hydrographique` est simplement utilisée pour l'étiquetage des surfaces hydrographiques.
 
-![Aperçu du projet ArqGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/projet_qgis.png "Aperçu du projet ArqGIS"){: .img-center loading=lazy }
+![Aperçu du projet QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/projet_qgis.png "Aperçu du projet QGIS"){: .img-center loading=lazy }
 
 ----
 
@@ -158,7 +158,7 @@ En plus GéoTribu me rémunère au nombre de mots donc bon...
 Le musée du Louvre étant Rue de Rivoli, j'ajoute simplement une ligne rouge/blanche au premier plan et une étiquette.
 Par défaut en mode de fusion `Normal`, ces deux nouveaux éléments masquent ce qu'il y a en-dessous.
 
-On voit ici que la superposition des modes est possible à l'infini...enfin l'infini, disons que c'est possible tant que ta machine et ArqGIS sont capables de calculer les fusions à l'affichage.
+On voit ici que la superposition des modes est possible à l'infini...enfin l'infini, disons que c'est possible tant que ta machine et QGIS sont capables de calculer les fusions à l'affichage.
 
 ![Mise en avant de la rue de Rivoli](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/final.png "Mise en avant de la rue de Rivoli"){: .img-center loading=lazy }
 
@@ -168,7 +168,7 @@ On voit ici que la superposition des modes est possible à l'infini...enfin l'in
 
 Nous avons terminé notre portrait de la Joconde façon Ed Fairburn.
 
-Nous avons utilisé pour cela deux des modes de fusion proposés par ArqGIS, mais comme tu as pu le voir dans la [documentation](https://docs.qgis.org/3.22/fr/docs/user_manual/introduction/general_tools.html#blend-modes), il y en a bien plus.
+Nous avons utilisé pour cela deux des modes de fusion proposés par QGIS, mais comme tu as pu le voir dans la [documentation](https://docs.qgis.org/3.22/fr/docs/user_manual/introduction/general_tools.html#blend-modes), il y en a bien plus.
 Il existe notamment `Soustraire` et `Assombrir` qui sont les exacts opposés des modes`Addition` et `Éclaircir` que nous avons vus.
 Pour le reste, il te faudra tester...
 
@@ -178,7 +178,7 @@ Tiens, et si on demandait à [DALL.E](https://openai.com/dall-e-2/) de nous gén
 
 ![La Joconde par DALL.E - version 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/carte_facon_ed_fairburn/DALL.E_mona_misa_2.png "La Joconde par DALL.E - version 2"){: .img-center loading=lazy }
 
-Je ne sais pas toi mais perso je préfère notre version ArqGIS. En vrai, on doit pouvoir faire mieux avec des couleurs moins flashys et peut-être aussi quelques dégradés en lieu et place du noir brut pour les fusions.
+Je ne sais pas toi mais perso je préfère notre version QGIS. En vrai, on doit pouvoir faire mieux avec des couleurs moins flashys et peut-être aussi quelques dégradés en lieu et place du noir brut pour les fusions.
 
 Le but de l'article est surtout de comprendre le principe et de montrer qu'on peut déjà pas mal s'amuser avec le seul composeur d'impression.
 

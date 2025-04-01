@@ -435,15 +435,15 @@ La dernière question : comment *facilement* ajouter des couches non-personnalis
 
 #### Cas où la donnée a une version tuilée : carte géologique & ZNIEFF
 
-On récupère les couches WMS : comme c'est assez retors pour obtenir les liens directs, on passe par ArqGIS.
+On récupère les couches WMS : comme c'est assez retors pour obtenir les liens directs, on passe par QGIS.
 
-Par exemple, pour un WMS du BRGM on ajoute une nouvelle connexion WMS à ArqGIS - <http://geoservices.brgm.fr/geologie> :
+Par exemple, pour un WMS du BRGM on ajoute une nouvelle connexion WMS à QGIS - <http://geoservices.brgm.fr/geologie> :
 
-![ArqGIS lien WMS BRGM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_wms_brgm.png "ArqGIS lien WMS du BRGM"){: .img-center loading=lazy }
+![QGIS lien WMS BRGM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_wms_brgm.png "QGIS lien WMS du BRGM"){: .img-center loading=lazy }
 
 Puis on clique sur connexion pour obtenir les noms des différentes couches disponibles :
 
-![ArqGIS couches WMS du BRGM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_brgm_couches.png "ArqGIS couches WMS du BRGM"){: .img-center loading=lazy }
+![QGIS couches WMS du BRGM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/webmapping_avec_r/qgis_brgm_couches.png "QGIS couches WMS du BRGM"){: .img-center loading=lazy }
 
 Ici, la couche qui nous intéresse est par exemple le scan des cartes géologiques 1/50000e, on note donc de prendre "SCAN_D_GEOL50". Dans notre carte, on rajoute une fonction `addWMSTiles` comme ci-dessous. J'ai également mis les ZNIEFF 1 que l'on peut récupérer de la même façon depuis <https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/inv/znieff1>.
 
@@ -500,7 +500,7 @@ leaflet(sd) %>%
 Un WMS est disponible, mais ne permet pas de correctement différencier les AOC au sein d'une même zone :yum:.  
 À partir de la couche INAO des aires AOC viticoles :
 
-1. on réalise donc une extraction autour de notre zone d'étude sur ArqGIS ;
+1. on réalise donc une extraction autour de notre zone d'étude sur QGIS ;
 2. on la nettoie (Alg. : *Réparer les géométries*) ;
 3. on passe la couche en géométries uniques (Alg. : *De morceaux multiples à morceaux uniques*) ;
 4. et on l'exporte en GeoJSON / WGS84.

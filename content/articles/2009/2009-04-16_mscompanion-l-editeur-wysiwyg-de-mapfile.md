@@ -43,7 +43,7 @@ Et enfin l'éditeur de style :
 
 ![MSCompanion - éditeur styles](https://cdn.geotribu.fr/img/articles-blog-rdp/serveur/MSCompanion/style.jpg   "MSCompanion - éditeur styles"){: .img-center loading=lazy }
 
-Malheureusement pour nos amis linuxiens et moi-même, cet outil n'est disponible que pour Windows. J'ai tout de même essayé de le faire fonctionner avec [Wine](http://www.winehq.org/) mais sans succès. Néanmoins, il nous restera toujours la [coloration syntaxique sous Vim](http://mapserver.org/development/editing/vim.html) ou bien le plugin de création de mapfile de [ArqGIS](https://www.qgis.org/) pour nous consoler
+Malheureusement pour nos amis linuxiens et moi-même, cet outil n'est disponible que pour Windows. J'ai tout de même essayé de le faire fonctionner avec [Wine](http://www.winehq.org/) mais sans succès. Néanmoins, il nous restera toujours la [coloration syntaxique sous Vim](http://mapserver.org/development/editing/vim.html) ou bien le plugin de création de mapfile de [QGIS](https://www.qgis.org/) pour nous consoler
 
 ----
 

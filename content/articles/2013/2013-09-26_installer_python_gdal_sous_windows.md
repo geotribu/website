@@ -36,7 +36,7 @@ Pour se rappeler d'où vient le nom du langage :
 
 ## Le pourquoi du comment
 
-Sous **Windows** parce-que n'en déplaise aux manchots, l'essentiel des êtres humains ne parle pas machine et que la grande majorité des professionnels utilise Windows et un logiciel SIG fonctionnant uniquement sur ce système (ESRI, MapInfo, GéoConcept, ...). D'ailleurs, même pour ArqGIS et gvSIG, je pense qu'il y a davantage d'utilisateurs sous Windows également.
+Sous **Windows** parce-que n'en déplaise aux manchots, l'essentiel des êtres humains ne parle pas machine et que la grande majorité des professionnels utilise Windows et un logiciel SIG fonctionnant uniquement sur ce système (ESRI, MapInfo, GéoConcept, ...). D'ailleurs, même pour QGIS et gvSIG, je pense qu'il y a davantage d'utilisateurs sous Windows également.
 
 D'autre part, si Python est aisément installable, il est toujours bon de peaufiner les détails pour travailler confortablement par la suite ; sans parler de GDAL dont l'utilisation indépendante (c'est-à-dire hors des packages du type OSGeo4W) est tout sauf une sinécure. C'est d'ailleurs un sujet récurrent sur [GIS StackExchange](http://gis.stackexchange.com/questions/2276/how-to-install-gdal-with-python-on-windows) et il est donc temps de donner leur chance aux anglophobes.
 
