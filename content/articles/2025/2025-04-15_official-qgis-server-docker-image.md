@@ -34,7 +34,6 @@ La documentation officielle de QGIS Server explique en détail l'[installation d
 
 Oui il existe depuis 2024 une image Docker officielle de QGIS Server :tada:... mais qu'est ce que cela signifie ? Commençons par rappeler d'abord la pile technologique sous-jacente ainsi qu'un peu de vocabulaire.
 
-
 `Docker`
 
 :   Docker est une plateforme qui permet de créer, déployer et exécuter des applications dans des conteneurs, garantissant ainsi leur portabilité et leur isolation. Ces applications peuvent être distribuées sous forme d'images via des plateformes spécialisées ou reconstruites à partir des sources.
