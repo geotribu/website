@@ -34,7 +34,7 @@ Cela nous asticotait depuis un moment et après avoir sacrément ramé, nous voi
 
 ![Plugin ArqTribu pour ArcGIS Pro - Menu ruban](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/arqtribu/ArqTribu_menu_ribbon.png){: .img-center loading=lazy }
 
-La peinture est encore fraîche et pourrait même s'écailler alors on compte sur votre bienveillance pour nous faire remonter les bugs et les suggestions d'amélioration.
+La peinture est encore fraîche et pourrait même s'écailler alors on compte sur votre bienveillance pour faire remonter les bugs et les suggestions d'amélioration à la surface !
 
 [:simple-arcgis: Obtenir ArqTribu depuis la marketplace Esri](https://www.esri.com/en-us/arcgis-marketplace/products?s=Newest&businessNeeds=operationalEfficiency){: .md-button .md-button--primary }
 {: align=center }
