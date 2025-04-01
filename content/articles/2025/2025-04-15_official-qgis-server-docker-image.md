@@ -1,19 +1,20 @@
 ---
-title: "Que se cache-t-il derrière l'image Docker officielle de QGIS Server?"
-subtitle: QGIS Server
+title: "Que se cache-t-il derrière l'image Docker officielle de QGIS Server ?"
+subtitle: (ou l’article que personne ne lira)
 authors:
     - Paul BLOTTIERE
 categories:
     - article
 comments: true
 date: 2025-04-15
-description: "QGIS Server et image Docker"
+description: "Les mystères de l'image Docker officielle de QGIS Server"
 icon: material/docker
 image:
 license: default
 robots: index, follow
 tags:
     - Docker
+    - QGIS
     - QGIS Server
 ---
 
@@ -23,21 +24,21 @@ tags:
 
 ## Introduction
 
-Le dernier article de Géotribu sur le [déploiement de QGIS Server](../2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md) date de 2010 :scream:! À cette époque, [Docker](https://www.docker.com/) ne faisait pas encore partie des pratiques de déploiement, et pour cause puisqu'il n'a été rendu disponible qu'en 2013. Nous allons donc profiter de la publication d'une image Docker officielle QGIS Server l'année dernière pour revenir dans la course.
+Le dernier article de Geotribu sur le [déploiement de QGIS Server](../2010/2010-09-03_creer_diffuser_services_wms_avec_qgis.md) date de 2010 :scream: ! À cette époque, [Docker](https://www.docker.com/) ne faisait pas encore partie des pratiques de déploiement, et pour cause puisqu'il n'a été rendu disponible qu'en 2013. Nous allons donc profiter de la publication d'une image Docker officielle QGIS Server l'année dernière pour revenir dans la course.
 
 Pour rappel, QGIS Server est une solution open source de serveur cartographique, similaire à [GeoServer](https://geoserver.org/) ou [MapServer](https://mapserver.org/), qui permet de diffuser des cartes et des données géospatiales sur le web. Il s'appuie sur les standards OGC (Open Geospatial Consortium) pour offrir des services interopérables. QGIS Desktop joue le rôle d'outil de configuration WYSIWYG, permettant ainsi aux utilisateurs de configurer facilement leurs cartes.
 
-La documentation officielle de QGIS Server explique en détail l'[installation de QGIS Server](https://docs.qgis.org/3.40/en/docs/server_manual/getting_started.html) de manière native, c'est-à-dire directement depuis les dépôts de paquets de votre plateforme ou distribution. Cependant, il existe très peu de ressources concernant le déploiement conteneurisé de manière générale. Nous allons donc expliquer en quoi et comment l'utilisation de l'image Docker officielle de QGIS Server facilite le déploiement.
+La documentation officielle de QGIS Server explique en détail l'[installation de QGIS Server](https://docs.qgis.org/3.40/fr/docs/server_manual/getting_started.html) de manière native, c'est-à-dire directement depuis les dépôts de paquets de votre plateforme ou distribution. Cependant, il existe très peu de ressources concernant le déploiement conteneurisé de manière générale. Nous allons donc expliquer en quoi et comment l'utilisation de l'image Docker officielle de QGIS Server facilite le déploiement.
 
 ## Écosystème technique
 
-Oui il existe depuis 2024 une image Docker officielle de QGIS Server :tada:... mais qu'est ce que cela signifie? Commençons par rappeler d'abord la pile technologique sous-jacente ainsi qu'un peu de vocabulaire.
+Oui il existe depuis 2024 une image Docker officielle de QGIS Server :tada:... mais qu'est ce que cela signifie ? Commençons par rappeler d'abord la pile technologique sous-jacente ainsi qu'un peu de vocabulaire.
 
-1. Docker est une plateforme qui permet de créer, déployer et exécuter des applications dans des conteneurs, garantissant ainsi leur portabilité et leur isolation. Ces applications peuvent être distribuées sous forme d'images via des plateformes spécialisées ou reconstruites à partir des sources.
-2. [Dockerfile](https://docs.docker.com/reference/dockerfile/) est un script définissant les étapes pour construire une image Docker personnalisée.
-3. [Docker Hub](https://hub.docker.com/) est une plateforme en ligne qui permet de stocker, partager et distribuer des images Docker, offrant ainsi un dépôt centralisé pour les applications et leurs composants.
-4. La composition - généralement via l'outil [Docker Compose](https://docs.docker.com/compose/) - permet de définir et de gérer des applications multi-conteneurs en utilisant un fichier de configuration, qui décrit les services, réseaux et volumes nécessaires à l'application.
-5. La clusterisation - non abordée dans cet article - concerne la gestion de plusieurs instances de Docker réparties sur plusieurs machines physiques ou virtuelles pour augmenter la disponibilité, la résilience et la scalabilité de l'application. Il s'agit généralement d'environnements cloud basés par exemple sur [Kubernetes](https://kubernetes.io/).
+- Docker est une plateforme qui permet de créer, déployer et exécuter des applications dans des conteneurs, garantissant ainsi leur portabilité et leur isolation. Ces applications peuvent être distribuées sous forme d'images via des plateformes spécialisées ou reconstruites à partir des sources.
+- [Dockerfile](https://docs.docker.com/reference/dockerfile/) est un script définissant les étapes pour construire une image Docker personnalisée.
+- [Docker Hub](https://hub.docker.com/) est une plateforme en ligne qui permet de stocker, partager et distribuer des images Docker, offrant ainsi un dépôt centralisé pour les applications et leurs composants.
+- La composition - généralement via l'outil [Docker Compose](https://docs.docker.com/compose/) - permet de définir et de gérer des applications multi-conteneurs en utilisant un fichier de configuration, qui décrit les services, réseaux et volumes nécessaires à l'application.
+- La clusterisation - non abordée dans cet article - concerne la gestion de plusieurs instances de Docker réparties sur plusieurs machines physiques ou virtuelles pour augmenter la disponibilité, la résilience et la scalabilité de l'application. Il s'agit généralement d'environnements cloud basés par exemple sur [Kubernetes](https://kubernetes.io/).
 
 De nombreuses images Docker de QGIS Server sont disponibles en ligne, chacune ayant des spécificités liées à son utilisation et à sa configuration. Mais depuis 2024, l'image initialement fournie par [OPENGIS.ch](https://www.opengis.ch/) est désormais disponible en tant qu'image officielle sur le [Docker Hub de QGIS.org](https://hub.docker.com/r/qgis/qgis-server). Pour l'obtenir, rien de plus simple:
 
@@ -49,15 +50,15 @@ docker pull qgis/qgis-server:ltr
 
 Pour déployer QGIS Server en tant qu'application, il est nécessaire d'intégrer des services tiers dans le conteneur afin d'assurer son bon fonctionnement. Comme indiqué dans la documentation, QGIS Server est une application :
 
-1. Nécessitant un serveur graphique.
-2. Basée sur le protocole de communication FastCGI pour interagir avec un serveur Web.
-3. En fonction du serveur Web utilisé (Apache, NGINX, etc.), un utilitaire spécifique peut être requis pour lancer le processus FCGI sous-jacent.
+- Nécessitant un serveur graphique.
+- Basée sur le protocole de communication FastCGI pour interagir avec un serveur Web.
+- En fonction du serveur Web utilisé (Apache, NGINX, etc.), un utilitaire spécifique peut être requis pour lancer le processus FCGI sous-jacent.
 
 Afin de répondre à ces contraintes, plusieurs solutions techniques peuvent être envisagées, ce qui explique en partie la diversité des images Docker de QGIS Server disponibles en ligne. L'image proposée par OPENGIS.ch repose sur :
 
-1. [Xvfb](https://www.x.org/archive/X11R7.7/doc/man/man1/Xvfb.1.xhtml) (X virtual framebuffer) comme serveur graphique.
-2. [NGINX](https://nginx.org/) comme serveur Web.
-3. [spawn-fcgi](https://linux.die.net/man/1/spawn-fcgi) comme utilitaire pour exécuter l'application FastCGI QGIS Server.
+- [Xvfb](https://www.x.org/archive/X11R7.7/doc/man/man1/Xvfb.1.xhtml) (X virtual framebuffer) comme serveur graphique.
+- [NGINX](https://nginx.org/) comme serveur Web.
+- [spawn-fcgi](https://linux.die.net/man/1/spawn-fcgi) comme utilitaire pour exécuter l'application FastCGI QGIS Server.
 
 ### QGIS Server et FastCGI
 
@@ -82,7 +83,7 @@ Status:  500
 <ServerException>Project file error. For OWS services: please provide a SERVICE and a MAP parameter pointing to a valid QGIS project file</ServerException>
 ```
 
-On observe ici un code d'erreur `500` de QGIS Server indiquant que le projet `fake.qgs` reseigné via `REQUEST_URI="MAP=fake.qgs"` n'existe pas.  L'exception `<ServerException>Project file error.</ServerException>` est donc retournée par QGIS Server.
+On observe ici un code d'erreur `500` de QGIS Server indiquant que le projet `fake.qgs` renseigné via `REQUEST_URI="MAP=fake.qgs"` n'existe pas.  L'exception `<ServerException>Project file error.</ServerException>` est donc retournée par QGIS Server.
 
 ### Script de démarrage
 
@@ -105,9 +106,9 @@ $ docker run qgis/qgis-server:ltr cat /usr/local/bin/start-xvfb-nginx.sh
 
 En étudiant le contenu de ce script, nous observons la séquence de démarrage des utilitaires tiers mentionnés ci-dessus:
 
-1. le serveur graphique `Xvfb`
-2. `spawn-fcgi` avec le lancement de QGIS Server en spécifiant le port TCP `9993` pour la communication entre le serveur Web et le processus FCGI
-3. `NGINX` si besoin en fonction de la variable d'environnement `SKIP_NGINX` renseignée au moment de l'exécution
+- le serveur graphique `Xvfb`
+- `spawn-fcgi` avec le lancement de QGIS Server en spécifiant le port TCP `9993` pour la communication entre le serveur Web et le processus FCGI
+- `NGINX` si besoin en fonction de la variable d'environnement `SKIP_NGINX` renseignée au moment de l'exécution
 
 ```bash title="Extrait du script de démarrage"
 ...
@@ -149,9 +150,9 @@ $ docker run -it qgis/qgis-server:ltr cat /etc/nginx/nginx.conf
 
 Dans cette configuration, on distingue trois points d'entrée publics et un point d'entrée interne :
 
-1. Un accès via `/ogc/my_project`, qui attend spécifiquement un projet QGIS situé à `/io/data/my_project/my_project.qgs`.
-2. Un accès via `/ows/` et `/wfs3/`.
-3. Un accès interne via `/qgis`, utilisé par les autres points d'accès, permettant la communication avec le processus FCGI via la socket `localhost:9993`.
+- Un accès via `/ogc/my_project`, qui attend spécifiquement un projet QGIS situé à `/io/data/my_project/my_project.qgs`.
+- Un accès via `/ows/` et `/wfs3/`.
+- Un accès interne via `/qgis`, utilisé par les autres points d'accès, permettant la communication avec le processus FCGI via la socket `localhost:9993`.
 
 Le point d'accès numéro 1 nécessite donc un montage du répertoire `/io/data/` afin de fonctionner avec un répertoire dédié à chaque projet.
 
@@ -163,8 +164,8 @@ Maintenant que nous avons exploré les fonctionnalités de notre image, nous pou
 
 Il est possible de démarrer le conteneur QIGS Server avec la configuration par défaut grâce aux paramètres ci-dessous:
 
-1. Redirection du port `8080` local vers le port `80` du serveur Web du conteneur.
-2. Montage du répertoire de projets QGIS vers `/io/data` du conteneur.
+- Redirection du port `8080` local vers le port `80` du serveur Web du conteneur.
+- Montage du répertoire de projets QGIS vers `/io/data` du conteneur.
 
 ```bash title="Démarrage d'un conteneur QGIS Server"
 # Clone du dépôt QGIS-Training-Data de QGIS
@@ -209,8 +210,8 @@ http://localhost:8080/wfs3/collections/countries/items/65.html?MAP=/io/data/qgis
 
 Comme mentionné précédemment, une variable d'environnement `SKIP_NGINX` permet d'utiliser le conteneur QGIS Server sans serveur web intégré. Dans ce cas, le conteneur QGIS Server fonctionne uniquement comme un *backend* de rendu graphique. Il est alors possible de recourir à la notion de composition pour créer une application multi-conteneurs avec:
 
-1. Un conteneur QGIS Server pour le rendu graphique.
-2. Un conteneur NGINX comme serveur Web qui redirige les requêtes vers le processus FCGI via la socket `9993`.
+- Un conteneur QGIS Server pour le rendu graphique.
+- Un conteneur NGINX comme serveur Web qui redirige les requêtes vers le processus FCGI via la socket `9993`.
 
 Tout d'abord le fichier de configuration de NGINX permet de décrire un point d'accès et le moyen de communiquer avec QGIS Server:
 
