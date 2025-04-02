@@ -45,7 +45,7 @@ Plus sérieusement et dans le cas d'OSM DATA, si on considère une scène avec 1
 
 Le défi de notre application est donc d'être capable de générer des scènes 3D avec un taux de rafraîchissement suffisant pour proposer une expérience utilisateur agréable, c'est-à-dire sans *bugs* (défaut de fonctionnement) et sans *lags* (retard/décalage d'images). Pour cela, étant donné que Giro3D est basé sur Three.js, lui-même basé sur [WebGL](https://get.webgl.org/), il est recommandé une fréquence d'affichage de [60 fps](http://www.opengl-tutorial.org/fr/miscellaneous/an-fps-counter/), soit 1 image toutes les 17 millisecondes.
 
-Ce suivi est rendu possible dans Giro3D à l'aide d'un utilitaire directement intégré (`import Inspector from '@giro3d/giro3d/gui/Inspector.js';`) et qui n'est pas encore inclus dans la documentation. :trollface:
+Ce suivi est rendu possible dans Giro3D à l'aide d'un utilitaire directement intégré (`#!typescript import Inspector from '@giro3d/giro3d/gui/Inspector.js';`) et qui n'est pas encore inclus dans la documentation. :trollface:
 
 En exécutant la commande JavaScript, on obtient un graphique représentant la durée de visualisation (en ordonnée) pour chaque image définie au cours du temps (en abscisse).
 
