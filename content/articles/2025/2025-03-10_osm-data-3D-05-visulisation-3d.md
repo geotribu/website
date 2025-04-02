@@ -84,7 +84,7 @@ Dans la prochaine partie, nous approfondissons la méthode de tuilage sous forme
 Au fil des interactions avec la scène, les données sont récupérées depuis le serveur cartographique en fonction du cône visible et uniquement au niveau de *zoom* 16 (zoom à partir duquel les bâtiments extrudés s'affichent - choix arbitraire). La grille est générée à ce niveau de *zoom* avec une taille de 512 pixels * 512 pixels. Afin de limiter les ressources en CPU et GPU, chaque tuile doit pouvoir :
 
 - Être chargée une seule fois avec un seul objet fusionné (ensemble des objets présents au sein de l'emprise de la tuile) : cette contrainte permet d’éviter la répétition d'opérations d'extrusion et de fusion géométrique.
-- Être affichée dès que tous les objets présents au sein de la tuile sont générés
+- Être affichée dès que tous les objets présents au sein de la tuile sont générés.
 
 Pour réussir ce double objectif, la bibliothèque OpenLayers dispose d'une classe de type [VectorTile](https://openlayers.org/en/v6.15.1/apidoc/module-ol_source_VectorTile-VectorTile.html). Cette classe permet de récupérer directement les données depuis le serveur en les affectant à une grille dont la dimension est spécifiée.
 
