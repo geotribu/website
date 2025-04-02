@@ -151,7 +151,7 @@ const updateTileStateSubscription = interval(500).pipe(
             return currentTileState.state !== previousTileState.state;
         });
 
-        // On oublie pas de mettre à jour l'observable avec les nouveaux états
+        // On n'oublie pas de mettre à jour l'observable avec les nouveaux états
         // afin que dans 500 ms, le filtre précédent puisse détecter s'il y a des changements ;)
         getTileState$.next(currentStates);
 
