@@ -57,7 +57,7 @@ Les principales étapes de calcul d'une image dans notre scène sont les suivant
 2. Application des lumières et des ombres en fonction des nouvelles conditions de position et d'orientation de la *pose* considérée
 3. Génération à la volée des objets 3D présents dans le cône de vue défini.
 
-Une fois les calculs effectués, le rendu 3D de la scène est généré par la réalisation d'appels au *Global Processing Unit (GPU)*.
+Une fois les calculs effectués, le rendu 3D de la scène est généré par la réalisation d'appels au *Graphics Processing Unit (GPU)*.
 
 L'ensemble de ces étapes peut être chronophage et extrêmement énergivore si on considère une réalisation du processus pour chaque objet affiché. Voici un résultat obtenu avec mon ordinateur qui a perdu quelques années de vie juste pour vous lecteurs de Geotribu :
 
