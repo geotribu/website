@@ -111,7 +111,7 @@ buildingTileSource.tileGrid.forEachTileCoord(mapExtent, 16, (tileCoord: TileCoor
     const zoom = tileCoord[0]
     const x = tileCoord[1]
     const y = tileCoord[2]
-    // On récupère notre tuile à partir de ses coordonées
+    // On récupère notre tuile à partir de ses coordonnées
     const tile = this.vectorTileSource.getTile(zoom, x, y, "RESOLUTION DE NOTRE SCENE", "EPSG:3857")
     // Si notre tuile a un statut IDLE, ce qu'elle est n'est pas encore chargée
     if (tile.getState() == TileState.IDLE) {
