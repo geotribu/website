@@ -221,6 +221,8 @@ instance.add(treeJsTile)
 
 Nous avons présenté dans cet article les spécificités de visualisation avec Giro3D dans OSM DATA : les processus de gestion, de traitement et d'affichage des données 3D doivent être bien déterminés et optimisés en amont afin d'assurer une visualisation fluide des données.
 
+## Fin de série
+
 On espère que cette série d'articles sur les nouveautés d'OSM DATA vous a permis d'en savoir un peu plus sur les possibilités d'exploitation de la base de données d'OpenStreetMap. On espère vous avoir fait partagé notre appétence pour l'*opensource*, l'interopérabilité et l'interconnexion SIG / 3D / jumeaux numériques. Nous reviendrons écrire ici mais nous devons d'abord repartir nous entrainer à FIFA ! :soccer:
 
 [4 : Extrusion des données en 3D - suite :fontawesome-solid-backward-step:](./2025-03-10_osm-data-3D-04-modelisation-facade.md "Extrusion des données en 3D - suite"){: .md-button }
