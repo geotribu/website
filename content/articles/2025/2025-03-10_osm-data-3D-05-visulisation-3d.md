@@ -145,7 +145,7 @@ const updateTileStateSubscription = interval(500).pipe(
         const currentStates = getTileState();
 
         // On filtre les tuiles dont l'état a changé
-        // En 500 ms plusieurs tuiles peuvent avoir changées
+        // En 500 ms plusieurs tuiles peuvent avoir changé
         const changedTiles = currentStates.filter((currentTileState, index) => {
             const previousTileState = previousStates[index];
             return currentTileState.state !== previousTileState.state;
