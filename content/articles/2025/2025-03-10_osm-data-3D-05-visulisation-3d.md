@@ -29,6 +29,8 @@ tags:
 
 Dans les articles précédents, nous avons présenté les étapes de modélisation architecturale 3D à partir des données d'OpenStreetMap. Ce dernier article présente la méthode de visualisation des données 3D sur le web à l'aide de [Giro3D](https://giro3d.org/giro3d.html).
 
+![logo Giro3D](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/giro3d_rectangle.svg){: .img-center loading=lazy }
+
 Pourquoi Giro3D ? Giro3D est un *framework* permettant de visualiser tout type de données géospatiales, en 2D, 2.5D ou 3D. Le moteur cartographique 2D est basé sur [OpenLayers](https://openlayers.org/), le moteur 3D repose sur [Three.js](https://threejs.org/), le projet est *opensource* et se veut *communautaire*, même s'il est actuellement principalement maintenu par [Oslandia](https://oslandia.com/). C'est pour le caractère *opensource*, la complémentarité avec OpenLayers, le développement régulier du produit et la réactivité du support qu'on a choisi cette technologie pour OSM DATA.
 
 Comment représenter des milliers de données 3D avec des textures sur un navigateur web avec Giro3D afin que cela soit le plus fluide possible ? Comment mesurer la performance d'une telle application et identifier les différentes étapes consommatrices de ressources ? Quelle(s) méthode(s) utiliser pour permettre une navigation fluide ?
