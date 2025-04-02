@@ -7,18 +7,18 @@ authors:
 categories:
     - article
 comments: true
-date: 2025-03-31
+date: 2025-04-03
 description: "OSM DATA : visualisation des données avec Giro3D, avec suivi des performances"
 icon: material/video-3d
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_5/miniature.png
 license: default
 robots: index, follow
 tags:
-    - WebGL
-    - Three.js
     - Giro3D
-    - OpenLayers
     - Modélisation 3D
+    - OpenLayers
+    - Three.js
+    - WebGL
 ---
 
 # OSM DATA V2 : La visualisation en 3D d'OpenStreetMap
