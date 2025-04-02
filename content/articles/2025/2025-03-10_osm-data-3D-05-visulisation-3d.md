@@ -35,7 +35,7 @@ Pourquoi Giro3D ? Giro3D est un *framework* permettant de visualiser tout type d
 
 Comment représenter des milliers de données 3D avec des textures sur un navigateur web avec Giro3D afin que cela soit le plus fluide possible ? Comment mesurer la performance d'une telle application et identifier les différentes étapes consommatrices de ressources ? Quelle(s) méthode(s) utiliser pour permettre une navigation fluide ?
 
-## Le suivi et l'optimisation de la performance de visualisation
+## Suivi et optimisation des performances de visualisation
 
 Pour évoquer les performances de la solution, la notion de *frame* est importante. Dans le secteur multimédia, le terme *frame* représente une image, l’enchaînement d'images permet de créer une vidéo et le nombre d'images présentées successivement en une seconde représente le taux de rafraîchissement exprimé soit en Hertz, soit en nombre d'images par secondes (*frames per second*). Cette notion de *frame* est importante pour la suite car elle permet d'estimer les performances de la solution mise en en place.
 
