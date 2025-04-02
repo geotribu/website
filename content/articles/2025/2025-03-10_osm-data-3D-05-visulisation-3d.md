@@ -215,7 +215,7 @@ features.map((feature)=>{
     polygon.setCoordinates(newCoordinates)
 })
 
-// On construit la géométrie unique pour tous nos objets : ceci utilise toutes les méthodes détaillées dans les deux articles précédent de cette série
+// On construit la géométrie unique pour tous nos objets : ceci utilise toutes les méthodes détaillées dans les deux articles précédents de cette série
 const buildingsGeometry = buildBuildingsFromFeatures(features)
 // Ajout de la tuile directement à notre scène Giro3D
 instance.add(treeJsTile)
