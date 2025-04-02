@@ -65,7 +65,7 @@ L'ensemble de ces étapes peut être chronophage et extrêmement énergivore si 
 
 Les temps de génération sont extrêmement longs, variant de 1,5 secondes à ... 8 secondes ! :dizzy_face:
 
-![PC Killer](https://media.tenor.com/hEwfEcj2R60AAAAM/laptop-smoking.gif){: .img-center loading=lazy }
+![PC Killer](https://cdn.geotribu.fr/img/articles-blog-rdp/gifs/laptop-smoking.gif){: .img-center loading=lazy }
 
 Afin de réduire ce temps de génération, plusieurs actions peuvent être mises en place :
 
