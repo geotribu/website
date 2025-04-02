@@ -122,7 +122,7 @@ buildingTileSource.tileGrid.forEachTileCoord(mapExtent, 16, (tileCoord: TileCoor
 })
 ```
 
-Lorsqu'une tuile est entièrement chargée dans la scène, il convient de l'identifier. Pour cela, la bibliothèque [RxJs](https://rxjs.dev/) facilite la gestion des changements: nous pouvons suivre efficacement l’état de chargement des données des tuiles et déclencher les actions nécessaires.
+Lorsqu'une tuile est entièrement chargée dans la scène, il convient de l'identifier. Pour cela, la bibliothèque [RxJs](https://rxjs.dev/) facilite la gestion des changements : nous pouvons suivre efficacement l’état de chargement des données des tuiles et déclencher les actions nécessaires.
 
 ```javascript title="Surveillance du chargement des tuiles afin de les traiter"
 
