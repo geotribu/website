@@ -105,7 +105,7 @@ import TileState from "ol/TileState"
 // Tableau qui stockera toutes les tuiles à charger
 const loadingTiles: VectorRenderTile[] = []
 
-// On parcourt toutes les coordonées (x,y,zoom) des tuiles du niveau 16 dans la zone visible  par l'utilisateur
+// On parcourt toutes les coordonnées (x,y,zoom) des tuiles du niveau 16 dans la zone visible  par l'utilisateur
 // mapExtent : zone visible par l'utilisateur
 buildingTileSource.tileGrid.forEachTileCoord(mapExtent, 16, (tileCoord: TileCoord) => {
     const zoom = tileCoord[0]
