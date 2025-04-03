@@ -47,7 +47,7 @@ Pour ce processus, nous utilisons la table `planet_osm_polygon` dans laquelle no
 - Le [type de toiture](https://wiki.openstreetmap.org/wiki/Key:roof:shape) définissant la forme du toit.
 - La [texture](https://wiki.openstreetmap.org/wiki/Key:roof:material) caractérisant les matériaux du toit et/ou de la façade.
 
-![Hauteur du toit et hauteur par rapport au sol](https://wiki.openstreetmap.org/w/images/thumb/4/49/Cottage_on_a_chicken_foot_3D_height_definition.jpg/473px-Cottage_on_a_chicken_foot_3D_height_definition.jpg?20120330080948){: .img-center loading=lazy }
+![Hauteur du toit et hauteur par rapport au sol](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_3/calcul_toit_cottage_on_a_chicken_foot_3D_height_definition.webp){: .img-center loading=lazy }
 
 Avec l'ensemble de ces informations, il est donc possible de reconstruire le bâti en 3D d'un territoire en appliquant à l'ensemble des polygones le processus suivant :
 
@@ -149,7 +149,7 @@ Pour réaliser cette transformation, nous nous appuyons sur la bibliothèque [CG
 
 La construction d'un squelette droit permet de définir, à partir de l'emprise d'un polygone, la version la plus fine d'un polygone jusqu'à l'obtention d'un ou plusieurs axes médians. Si vous n'avez rien compris, c'est normal, on essaye d'une autre manière : imaginez qu'un polygone (rectangle pour faire facile) se rétracte progressivement comme si ses bords brûlaient uniformément vers l'intérieur. Les lignes tracées par les sommets qui se déplacent pendant cette "rétraction" forment le squelette droit. Si vous n'avez toujours rien compris, c'est encore normal, rendez-vous sur [Wikipedia](https://en.wikipedia.org/wiki/Straight_skeleton) pour les bilingues.  
 
-![Exemple de squelette droit](https://upload.wikimedia.org/wikipedia/commons/a/ab/StraightSkeletonDefinition.png){: .img-center loading=lazy }
+![Exemple de squelette droit](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/osm_data/article_3/exemple_squelette_droit_wikimedia.webp){: .img-center loading=lazy }
 
 La majorité des toitures dans OSM DATA sont construites à l'aide du squelette droit. En assignant une hauteur à chaque segment du squelette et/ou à chaque sommet du polygone initial, il est donc possible de générer des toitures complexes et cohérentes avec la géométrie initiale.
 
