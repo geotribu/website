@@ -32,7 +32,7 @@ La documentation officielle de QGIS Server explique en détail l'[installation d
 
 ## Écosystème technique
 
-Oui il existe depuis 2024 une image Docker officielle de QGIS Server :tada:... mais qu'est ce que cela signifie ? Commençons par rappeler d'abord la pile technologique sous-jacente ainsi qu'un peu de vocabulaire.
+Oui, il existe depuis 2024 une image Docker officielle de QGIS Server :tada:... mais qu'est-ce que cela signifie ? Commençons par rappeler d'abord la pile technologique sous-jacente ainsi qu'un peu de vocabulaire.
 
 `Docker`
 
