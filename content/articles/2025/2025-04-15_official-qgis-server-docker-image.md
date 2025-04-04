@@ -97,7 +97,7 @@ Status:  500
 <ServerException>Project file error. For OWS services: please provide a SERVICE and a MAP parameter pointing to a valid QGIS project file</ServerException>
 ```
 
-On observe ici un code d'erreur `500` de QGIS Server indiquant que le projet `fake.qgs` renseigné via `REQUEST_URI="MAP=fake.qgs"` n'existe pas.  L'exception `<ServerException>Project file error.</ServerException>` est donc retournée par QGIS Server.
+On observe ici un code d'erreur `500` de QGIS Server indiquant que le projet `fake.qgs` renseigné via `REQUEST_URI="MAP=fake.qgs"` n'existe pas. L'exception `<ServerException>Project file error.</ServerException>` est donc retournée par QGIS Server.
 
 ### Script de démarrage
 
