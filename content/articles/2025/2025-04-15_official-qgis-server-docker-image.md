@@ -179,7 +179,7 @@ Maintenant que nous avons exploré les fonctionnalités de notre image, nous pou
 Il est possible de démarrer le conteneur QIGS Server avec la configuration par défaut grâce aux paramètres ci-dessous:
 
 - Redirection du port `8080` local vers le port `80` du serveur Web du conteneur (option `-p`).
-- Montage du répertoire de projets QGIS vers `/io/data` du conteneur.
+- Montage du répertoire de projets QGIS vers `/io/data` du conteneur  (option `-v`).
 
 ```bash title="Démarrage d'un conteneur QGIS Server"
 # Clone du dépôt QGIS-Training-Data de QGIS
