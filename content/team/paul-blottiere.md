@@ -23,6 +23,8 @@ social:
 
 ![Portrait Paul Blottiere](https://cdn.geotribu.fr/img/internal/contributeurs/pblottiere.jpg "Portrait Paul Blottiere"){: .img-thumbnail-left }
 
-Ingénieur logiciel à l'Ouest :ocean:
+Ingénieur logiciel à l'Ouest :ocean:.
+
+Les curieux peuvent visiter mon [site web](https://pblottiere.github.io/).
 
 <!-- --8<-- [end:author-sign-block] -->
