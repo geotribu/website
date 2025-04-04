@@ -222,7 +222,7 @@ http://localhost:8080/wfs3/collections/countries/items/65.html?MAP=/io/data/qgis
 
 ### Composition avec NGINX externe
 
-Comme mentionné précédemment, une variable d'environnement `SKIP_NGINX` permet d'utiliser le conteneur QGIS Server sans serveur web intégré. Dans ce cas, le conteneur QGIS Server fonctionne uniquement comme un *backend* de rendu graphique. Il est alors possible de recourir à la notion de composition pour créer une application multi-conteneurs avec:
+Comme mentionné précédemment, une variable d'environnement `SKIP_NGINX` permet d'utiliser le conteneur QGIS Server sans serveur web intégré. Dans ce cas, le conteneur QGIS Server fonctionne uniquement comme un *backend* de rendu graphique. Il est alors possible de recourir à la notion de composition pour créer une application multi-conteneurs avec :
 
 - Un conteneur QGIS Server pour le rendu graphique.
 - Un conteneur NGINX comme serveur Web qui redirige les requêtes vers le processus FCGI via la socket `9993`.
