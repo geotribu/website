@@ -140,7 +140,7 @@ spawn-fcgi -n -u ${QGIS_USER:-www-data} -g ${QGIS_USER:-www-data} -d ${HOME:-/va
 
 ### Configuration NGINX
 
-La configuration du serveur Web NGINX est déployée de manière standard dans le fichier de configuration `/etc/nginx/nginx.conf`:
+La configuration du serveur Web NGINX est déployée en remplaçant le fichier de configuration par défaut `/etc/nginx/nginx.conf`:
 
 ```bash title="Affichage du contenu du fichier de configuration de NGINX"
 $ docker run -it qgis/qgis-server:ltr cat /etc/nginx/nginx.conf
