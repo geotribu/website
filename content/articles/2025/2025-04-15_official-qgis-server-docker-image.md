@@ -197,7 +197,7 @@ docker run \
     qgis/qgis-server:ltr
 ```
 
-Une fois le conteneur déployé, il est possible d'envoyer des requêtes à QGIS Server par le biais des points d'entrée NGINX décrit dans la partie précédente:
+Une fois le conteneur déployé, il est possible d'envoyer des requêtes à QGIS Server par le biais des points d'entrée NGINX décrit dans la partie précédente :
 
 ```bash title="Points d'entrée /ogc, /ows et /wfs3"
 # Requête WMS vers /ogc du serveur web NGINX du conteneur pour accéder au projet
