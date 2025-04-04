@@ -296,7 +296,7 @@ $ curl "http://localhost:8080/qgisserver/?MAP=/io/data/qgis-server-tutorial-data
 
 ## Et les plugins?
 
-Depuis le début de cet article nous nous sommes ammusé (oui oui :sparkles:!) à explorer l'image officielle de QGIS Server à travers un peu de rétro-ingénierie. Toutefois, il est également possible de consulter la [documentation](https://github.com/qgis/qgis-docker/blob/main/server/README.md) ou d'examiner le fichier [Dockerfile](https://github.com/qgis/qgis-docker/blob/main/server/Dockerfile) utilisé pour générer cette image.
+Depuis le début de cet article nous nous sommes amusés (oui oui :sparkles: !) à explorer l'image officielle de QGIS Server à travers un peu de rétro-ingénierie. Toutefois, il est également possible de consulter la [documentation](https://github.com/qgis/qgis-docker/blob/main/server/README.md) ou d'examiner le fichier [Dockerfile](https://github.com/qgis/qgis-docker/blob/main/server/Dockerfile) utilisé pour générer cette image.
 
 En regardant ce fichier de plus prêt, nous pouvons constater l'existence de l'instruction `ENV QGIS_PLUGINPATH /io/plugins`. Cela implique que QGIS Server s'attend à avoir des plugins Python dans le répertoire indiqué. Pour tester cette mécanique, le plugin [wfsOutputExtension](https://plugins.qgis.org/plugins/wfsOutputExtension/) de la société [3Liz](https://www.3liz.com/) peut être déployé:
 
