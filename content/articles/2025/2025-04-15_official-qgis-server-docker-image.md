@@ -74,7 +74,7 @@ Afin de répondre à ces contraintes, plusieurs solutions techniques peuvent êt
 - [NGINX](https://nginx.org/) comme serveur Web.
 - [spawn-fcgi](https://linux.die.net/man/1/spawn-fcgi) comme utilitaire pour exécuter l'application FastCGI QGIS Server.
 
-### QGIS Server et FastCGI
+### Tester QGIS Server et FastCGI
 
 Il est possible de tester simplement l'application QGIS Server en ligne de commande dès lors qu'un serveur graphique est en cours d'exécution. Pour cela, il faut simuler le passage des variables d'environnement au processus FCGI, comme le ferait un serveur Web. Par exemple, il est possible d'envoyer une requête à QGIS Server en utilisant la variable d'environnement `REQUEST_URI`:
 
