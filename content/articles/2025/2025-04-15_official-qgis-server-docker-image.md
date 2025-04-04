@@ -274,7 +274,7 @@ services:
 !!! warning
     Les scripts de configuration ci-dessus sont volontairement simplifiés pour la compréhension du lecteur mais ne doivent pas être utilisés en production :bomb:
 
-Il reste finalement à exécuter nos conteneurs grâce à la commande `docker-compose` qui va automatiquement lire le fichier de configuration nommé `docker-compose.yml` présent dans le répertoire courant:
+Il reste finalement à exécuter nos conteneurs grâce à la commande `docker compose` qui va automatiquement lire le fichier de configuration nommé `docker-compose.yml` présent dans le répertoire courant:
 
 ```bash
 # Exécution des conteneurs en fond
