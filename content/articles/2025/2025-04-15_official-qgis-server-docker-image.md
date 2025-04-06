@@ -298,7 +298,7 @@ CONTAINER ID   IMAGE                  COMMAND                  CREATED          
 $ curl "http://localhost:8080/qgisserver/?MAP=/io/data/qgis-server-tutorial-data/world.qgs&SERVICE=WMS&REQUEST=GetCapabilities"
 ```
 
-## Et les plugins?
+## Et les plugins ?
 
 Depuis le début de cet article nous nous sommes amusés (oui oui :sparkles: !) à explorer l'image officielle de QGIS Server à travers un peu de rétro-ingénierie. Toutefois, il est également possible de consulter la [documentation](https://github.com/qgis/qgis-docker/blob/main/server/README.md) ou d'examiner le fichier [Dockerfile](https://github.com/qgis/qgis-docker/blob/main/server/Dockerfile) utilisé pour générer cette image.
 
