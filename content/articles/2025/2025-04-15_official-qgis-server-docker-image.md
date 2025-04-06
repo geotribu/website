@@ -144,6 +144,8 @@ spawn-fcgi -n -u ${QGIS_USER:-www-data} -g ${QGIS_USER:-www-data} -d ${HOME:-/va
 
 ### Configuration NGINX
 
+![logo nginx](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/nginx.svg){: .img-thumbnail-left }
+
 La configuration du serveur Web NGINX est déployée en remplaçant le fichier de configuration par défaut `/etc/nginx/nginx.conf` :
 
 ```bash title="Affichage du contenu du fichier de configuration de NGINX"
