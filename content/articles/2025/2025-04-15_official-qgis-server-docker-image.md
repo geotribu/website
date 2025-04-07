@@ -34,7 +34,7 @@ La documentation officielle de QGIS Server explique en détail l'[installation d
 
 ## Écosystème technique
 
-![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.png){: .img-thumbnail-left }
+![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.svg){: .img-thumbnail-left }
 
 Oui, il existe depuis 2024 une image Docker officielle de QGIS Server :tada:... mais qu'est-ce que cela signifie ? Commençons par rappeler d'abord la pile technologique sous-jacente ainsi qu'un peu de vocabulaire.
 
@@ -78,7 +78,9 @@ Afin de répondre à ces contraintes, plusieurs solutions techniques peuvent êt
 - [NGINX](https://nginx.org/) comme serveur Web.
 - [spawn-fcgi](https://linux.die.net/man/1/spawn-fcgi) comme utilitaire pour exécuter l'application FastCGI QGIS Server.
 
-### Tester QGIS Server et FastCGI
+### QGIS Server et FastCGI
+
+![logo X11](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/x11.png){: .img-thumbnail-left }
 
 Il est possible de tester simplement l'application QGIS Server en ligne de commande dès lors qu'un serveur graphique est en cours d'exécution. Pour cela, il faut simuler le passage des variables d'environnement au processus FCGI, comme le ferait un serveur Web. Par exemple, il est possible d'envoyer une requête à QGIS Server en utilisant la variable d'environnement `REQUEST_URI`:
 
@@ -186,7 +188,7 @@ Maintenant que nous avons exploré les fonctionnalités de notre image, nous pou
 
 ### Configuration par défaut
 
-Il est possible de démarrer le conteneur QIGS Server avec la configuration par défaut grâce aux paramètres ci-dessous :
+Il est possible de démarrer le conteneur QGIS Server avec la configuration par défaut grâce aux paramètres ci-dessous :
 
 - Redirection du port `8080` local vers le port `80` du serveur Web du conteneur (option `-p`).
 - Montage du répertoire de projets QGIS vers `/io/data` du conteneur  (option `-v`).
@@ -231,6 +233,8 @@ http://localhost:8080/wfs3/collections/countries/items/65.html?MAP=/io/data/qgis
 ![OGC API Features Landing Page](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qgis_server_docker/ogcapif.png "OGC API Feeatures Landing Page"){: .img-center loading=lazy }
 
 ### Composition avec NGINX externe
+
+![logo docker compose](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker-compose.png){: .img-thumbnail-left }
 
 Comme mentionné précédemment, une variable d'environnement `SKIP_NGINX` permet d'utiliser le conteneur QGIS Server sans serveur web intégré. Dans ce cas, le conteneur QGIS Server fonctionne uniquement comme un *backend* de rendu graphique. Il est alors possible de recourir à la notion de composition pour créer une application multi-conteneurs avec :
 
@@ -305,6 +309,8 @@ $ curl "http://localhost:8080/qgisserver/?MAP=/io/data/qgis-server-tutorial-data
 ```
 
 ## Et les plugins ?
+
+![logo pyqgis](https://cdn.geotribu.fr/img/logos-icones/programmation/pyqgis.png){: .img-thumbnail-left }
 
 Depuis le début de cet article nous nous sommes amusés (oui oui :sparkles: !) à explorer l'image officielle de QGIS Server à travers un peu de rétro-ingénierie. Toutefois, il est également possible de consulter la [documentation](https://github.com/qgis/qgis-docker/blob/main/server/README.md) ou d'examiner le fichier [Dockerfile](https://github.com/qgis/qgis-docker/blob/main/server/Dockerfile) utilisé pour générer cette image.
 
