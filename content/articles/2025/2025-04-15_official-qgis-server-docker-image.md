@@ -1,6 +1,6 @@
 ---
 title: "Que se cache-t-il derrière l'image Docker officielle de QGIS Server ?"
-subtitle: (ou l’article que personne ne lira)
+subtitle: (bouh !)
 authors:
     - Paul BLOTTIERE
 categories:
