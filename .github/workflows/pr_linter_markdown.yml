@@ -26,7 +26,7 @@ jobs:
       # Filter results by added/modified lines.
       - name: "Vérifie la syntaxe des lignes ajoutées ou modifiées"
         id: markdownlint-github-pr-review-added
-        uses: reviewdog/action-markdownlint@v0.26.0
+        uses: reviewdog/action-markdownlint@v0.26.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -61,7 +61,7 @@ jobs:
       # # as long as they are in added/modified file even if the results are not in actual diff.
       # - name: "Vérifie la syntaxe de tous les fichiers ajoutés ou modifiés"
       #   id: markdownlint-github-pr-review-file
-      #   uses: reviewdog/action-markdownlint@v0.26.0
+      #   uses: reviewdog/action-markdownlint@v0.26.2
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
       #     fail_on_error: false

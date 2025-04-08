@@ -1,5 +1,6 @@
 redirects:
   redirect_maps:
+    GeoRDP/20161007.md: rdp/2016/rdp_2016-10-07.md
     GeoRDP/20161028.md: rdp/2016/rdp_2016-10-14.md
     acknowledgements.md: team/index.md
     dicogis.md: articles/2014/2014-09-25_dicogis.md
