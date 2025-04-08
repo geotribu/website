@@ -146,6 +146,8 @@ markdown_extensions:
   # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - admonition
   - attr_list
+  # Définitions - https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#definition-lists
+  - def_list
   # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
   - footnotes
   - md_in_html
