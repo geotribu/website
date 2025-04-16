@@ -321,7 +321,7 @@ En regardant ce fichier de plus près, nous pouvons constater l'existence de l'i
 mkdir plugins
 
 # Récupération du plugin serveur wfsOutputExtension
-gt clone https://github.com/3liz/qgis-wfsOutputExtension plugins
+git clone https://github.com/3liz/qgis-wfsOutputExtension plugins
 
 # Démarrage d'un conteneur en montant les répertoires des projets QGIS et des
 # plugins
