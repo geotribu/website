@@ -113,6 +113,8 @@ La responsabilité de l'exécution des tâches incombe à trois briques d'Apache
 -	L'_Executor_ : Il gère l'exécution des tâches planifiées par le _Scheduler_. Plusieurs natures d'_Executor_ sont disponibles et le type à utiliser est fixé par paramétrage. Par exemple, le `CeleryExecutor` est capable de distribuer l'exécution sur plusieurs serveurs.
 -	Les _Workers_ : Ce sont les processus qui exécutent réellement les tâches. Ils reçoivent les tâches à faire du _Scheduler_ via l'_Executor_.
 
+![Architecture d'Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/architecture_apache_airflow.jpg "Architecture d'Apache Airflow"){: .img-center loading=lazy }
+
 ### Instances et statuts
 
 Un _DAG_ et ses tâches associées décrivent les traitements à effectuer. Lorsque ceux-ci sont exécutés, on parle respectivement d'instance de _DAG_ et d'instance de tâche.
@@ -346,19 +348,6 @@ def call_map_features_api(cell: dict):
 ```
 
 L'appel à `http_helper.get_json` fait référence à une fonction présente dans notre boîte à outils et qui s'appuie sur le bibliothèque Python `requests`.
-
-``` py
-def get_json(url: str, **params):
-    """
-    Réalise un appel HTTP GET et retourne le contenu de la réponse sous forme d'un objet JSON désérialisé.
-
-    url : L'URL à invoquer.
-    params : Les paramètres supplémentaires du GET.
-    """
-    response = requests.get(url, **params)
-    response.raise_for_status()
-    return response.json()
-```
 
 #### Chargement des données
 
