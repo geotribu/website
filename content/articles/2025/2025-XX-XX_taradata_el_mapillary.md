@@ -191,7 +191,7 @@ create_schema_task >> create_table_task
 
 Bien, passons aux choses sérieuses !
 
-L'API de Mapillary permet de récupérer les _features_ présentent dans une _bbox_ passée en paramètre d'appel. Cependant, [la documentation](https://www.mapillary.com/developer/api-documentation?locale=fr_FR#map-feature) précise que ce sont au maximum 2000 _features_ qui seront renvoyées sans possibilité d'itérer sur les résultats suivants ; l'API n'étant pas paginée.
+L'API de Mapillary permet de récupérer les _features_ présentes dans une _bbox_ passée en paramètre d'appel. Cependant, [la documentation](https://www.mapillary.com/developer/api-documentation?locale=fr_FR#map-feature) précise que ce sont au maximum 2000 _features_ qui seront renvoyées sans possibilité d'itérer sur les résultats suivants ; l'API n'étant pas paginée.
 
 Comme seuls les éléments à proximité du réseau routier départemental nous intéressent, nous allons calculer une grille sur l'emprise du référentiel routier et ne conserver que les cellules à proximité immédiate d'un tronçon.
 
@@ -293,17 +293,76 @@ Ensuite, pour chacune des cellules, nous appelons l'API d'extraction des _featur
 
 Bien que nous ayons calculé une grille assez fine, il arrive que, sur certaines zones urbaines, 2000 éléments soient retournés. Ceci indique que la limite d'appel est atteinte ; le résultat est alors ignoré.
 
-Si en revanche le nombre de _features_ retournés est en dessous du seuil, alors le JSON retourné est sauvegardé en base de données.
+Si en revanche le nombre de _features_ retournées est en dessous du seuil, alors le JSON retourné est sauvegardé en base de données.
 
 En sortie de boucle `pour chaque`, les cellules qui n'ont pas de JSON associé sont divisées en nouvelles cellules plus petites à extraire/charger.
 
 La liste des cellules à extraire/charger est à nouveau récupérée si bien que la sortie de la boucle `tant qu'il y a` n'interviendra qu'une fois que la totalité de l'emprise souhaitée aura pu être extraite.
 
-#### Récupération de la liste des cellules à traiter pas la tâche
+#### Récupération de la liste des cellules à traiter
 
-#### Extraction des données via appel à l'API
+Cette étape consiste simplement à exécuter la requête suivante.
+
+``` sql
+select
+	geom,
+	ST_XMin(geom) as x_min,
+	ST_YMin(geom) as y_min,
+	ST_XMax(geom) as x_max,
+	ST_YMax(geom) as y_max
+from tmp_features
+where id_tache = %(id_tache)s
+and informations is null
+```
+
+Le premier critère de la clause `where` permet de limiter la recherche à la tâche courante.
+
+Le second filtre exclut les cellules pour lesquelles les _features_ ont déjà été extraites. Ce critère intervient dans de cas :
+
+- D'une part, comme vu dans le pseudo-code, plusieurs itérations peuvent être nécessaires lorsque 2000 éléments sont retournés pour certaines emprises. Dans ce cas, seules les nouvelles cellules issues de la division seront retournées pour l'itération suivante.
+- D'autre part, si une erreur devait survenir, par exemple en cas d'indisponibilité du réseau au moment de l'appel à l'API, ce filtre permet de ne pas avoir à retraiter la totalité des cellules lors des `retries`. En effet, il serait dommage de refaire tous les appels si 90% des emprises ont pu être traitées avant l'apparition de l'erreur.
+
+#### Extraction des données
+
+Sur chaque cellule, l'extraction se fait via un appel HTTP à l'API en passant en paramètre les bornes de la _bbox_.
+
+Nous avons encapsulé cet appel dans la fonction ci-dessous.
+
+``` py
+def call_map_features_api(cell: dict):
+	"""
+	Appel à l'API d'extraction des "features" au format JSON pour une cellule donnée.
+
+	cell : La cellule pour laquelle les "features" doivent être extraites.
+	"""
+	url = (
+		"https://graph.mapillary.com/map_features"
+		f"?access_token={mapillary_conn.password}"
+		"&fields=id,aligned_direction,first_seen_at,last_seen_at,object_value,object_type,geometry"
+		f"&bbox={cell['x_min']},{cell['y_min']},{cell['x_max']},{cell['y_max']}"
+	)
+
+	return http_helper.get_json(url, verify = False)
+```
+
+L'appel à `http_helper.get_json` fait référence à une fonction présente dans notre boîte à outils et qui s'appuie sur le bibliothèque Python `requests`.
+
+``` py
+def get_json(url: str, **params):
+    """
+    Réalise un appel HTTP GET et retourne le contenu de la réponse sous forme d'un objet JSON désérialisé.
+
+    url : L'URL à invoquer.
+    params : Les paramètres supplémentaires du GET.
+    """
+    response = requests.get(url, **params)
+    response.raise_for_status()
+    return response.json()
+```
 
 #### Chargement des données
+
+#### Division des cellules non traitées
 
 ### Tâche 5 – écrasement de la table destination
 
