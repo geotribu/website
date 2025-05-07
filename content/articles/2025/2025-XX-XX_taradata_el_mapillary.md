@@ -37,7 +37,7 @@ Dans cet article, je vais t'expliquer comment nous utilisons Apache Airflow et P
 
 Ces deux articles te rappelleront peut-être [celui de Florian sur ce même sujet](https://geotribu.fr/articles/2022/2022-05-31_donnees_mapillary/). Le script qu'il propose s'appuie sur les tuiles vectorielles. Notre approche quant à elle utilise les API. Deux départements limitrophes, une rivalité, et donc 2 façons de voir le monde ; le Gard ne pouvant pas faire comme l'Hérault (:kissing_heart: Florian). :three:, :two:, :one:, c'est parti !
 
-Ah non ! J'ai failli oublier. Si je tiens la plume AZERTY aujourd'hui, je me dois de remercier [Leo Pironti](https://www.linkedin.com/in/leo-pironti-379557293/) pour son travail sur le sujet. En effet, c'est Leo qui a rédigé le code que je m'apprête à te décrire. Ce travail, il l'a fait dans le cadre de son stage de première année de [BTS SIO à la CCI du Gard](https://lycee.gard.cci.fr/formations/bts-services-informatiques-aux-organisations-sio/). Alors merci Leo et cette fois :three:, :two:, :one:, c'est vraiment parti !!!
+Ah non ! J'ai failli oublier. Si je tiens la plume AZERTY aujourd'hui, je me dois de remercier [Leo Pironti](https://www.linkedin.com/in/leo-pironti-379557293/) pour son travail sur le sujet. En effet, c'est Leo qui a rédigé la majeure partie du code que je m'apprête à te décrire. Ce travail, il l'a fait dans le cadre de son stage de première année de [BTS SIO à la CCI du Gard](https://lycee.gard.cci.fr/formations/bts-services-informatiques-aux-organisations-sio/). Alors merci Leo et cette fois :three:, :two:, :one:, c'est vraiment parti !!!
 
 ----
 
@@ -218,7 +218,7 @@ cellules as (
 
 Au regard du réseau géré par le département du Gard, ce sont ici plus de 4000 cellules qui sont retournées.
 
-Nous aurions tout à fait pu créer 4000 tâches, une par cellule, mais il s'avère que cette approche n'est pas optimale...revenons un peu sur le fonctionnement d'Apache Airflow pour comprendre.
+Nous aurions tout à fait pu créer 4000 tâches d'extraction des _features_, une par cellule, mais il s'avère que cette approche n'est pas optimale...revenons un peu sur le fonctionnement d'Apache Airflow pour comprendre.
 
 Le _Scheduler_ détermine les tâches à exécuter et charge l'_Executor_ de transmettre le travail à faire aux _Workers_. Or, d'une part le nombre de _Workers_ est limité. Par exemple, sur notre infra nous en avons configurés 3, chacun pouvant exécuter 4 tâches soit un total de 12 tâches en parallèle au maximum. D'autre part, le mécanisme d'attribution des tâches aux _Workers_ prend un peu de temps. Sur des traitements massifs comme celui-ci, il est donc plus optimal de lancer moins de tâches, mais de faire faire à chacune plus de choses.
 
