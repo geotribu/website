@@ -48,7 +48,7 @@ Ah non ! J'ai failli oublier. Si je tiens la plume AZERTY aujourd'hui, je me doi
 
 Apache Airflow est un outil d'orchestration orienté data. Son rôle est de déclencher des traitements lorsque les conditions de lancement sont réunies. Il propose également une interface graphique de suivi d'exécution avec la possibilité, par exemple, de visualiser les logs et de relancer manuellement une tâche en échec.
 
-![Aperçu Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/_images/demo_grid_view_with_task_logs.png "Aperçu Apache Airflow"){: .img-center loading=lazy }
+![Aperçu Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/demo_grid_view_with_task_logs.png "Aperçu Apache Airflow"){: .img-center loading=lazy }
 
 Ce n'est pas le seul outil à proposer cela, on peut par exemple citer [Dagster](https://dagster.io/), [Prefect](https://www.prefect.io/) ou encore le français [Kestra](https://kestra.io/) (Cocorico :flag_fr: !!!). Cependant, après étude, Apache Airflow nous a paru être la meilleure option pour répondre à nos objectifs et contraintes (voir [les commentaires dans l'article de Satya](https://geotribu.fr/articles/2025/2025-02-25_stack_data_gard/#satya-minguez) pour plus de détails).
 
