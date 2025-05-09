@@ -13,6 +13,7 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_m
 tags:
     - Apache Airflow
 	- Mapillary
+	- Modern Data Stack
     - Open Source
     - PostGIS
     - PostgreSQL
