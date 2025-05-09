@@ -50,6 +50,8 @@ L'avantage est que DBT ne vient pas en coupure du moteur de bases de données so
 
 Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` puisque c'est DBT qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
 
+Difficile, impossible même, pour moi de faire de toi un expert DBT en quelques lignes seulement. Voyons quand-même les notions essentielles et je te proposerai plus bas quelques ressources qui m'ont permis de démarrer. 
+
 ### Sources
 
 Pour pouvoir faire les transformations, DBT a besoin de savoir où se trouvent les [sources](https://docs.getdbt.com/docs/build/sources) de données dans l'entrepôt. Concrètement, dans le cas de PostgreSQL, cela revient à lui indiquer les schémas et les tables à interroger.
@@ -119,11 +121,11 @@ from selections_typages_renommages
 
 ### Macros
 
-Lorsqu'on souhaite factoriser du code, il est d'usage de créer des procédures stockées. Avec DBT, on utilisera plutôt des [macros](https://docs.getdbt.com/docs/build/jinja-macros#macros).
+Lorsqu'on souhaite factoriser du code, il est d'usage en bases de données de créer des procédures stockées. Avec DBT, on utilisera plutôt des [macros](https://docs.getdbt.com/docs/build/jinja-macros#macros).
 
 Les macros sont des blocs de SQL réutilisables. Par exemple, dans la requête de transformation Hubeau qui précède, tu peux voir un appel `to_utc_timestamp_or_null`.
 
-Cette macro, nous l'avons développée pour faciliter les transformations de chaînes en dates et heures tout en s'assurant que la conversion n'entraine pas une erreur par la validation préalable d'une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re).
+Cette macro, nous l'avons développée pour faciliter les transformations de chaînes de caractères en dates et heures tout en s'assurant que la conversion n'entraine pas une erreur par la validation préalable d'une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re).
 
 ```sql
 {% macro to_utc_timestamp_or_null(column, regexp_check, format) %}
@@ -131,11 +133,41 @@ Cette macro, nous l'avons développée pour faciliter les transformations de cha
 {% endmacro %}
 ```
 
+### Architecture en médaillon
+
 ### Matérialisation
 
-### Modèles incrémentaux
+La [matérialisation](https://docs.getdbt.com/docs/build/materializations) détermine la façon dont DBT stocke le résultat des transformations, c'est à dire le résultat d'exécution des modèles, dans l'entrepôt.
 
-### Architecture en médaillon
+Concrètement, et dans la mesure où DBT se charge du DDL, il est question de lui dire s'il doit créer une table ou une vue dans la base de données.
+
+En règle générale, les modèles sont organisés en couches suivant l'architecture en médaillon. Le mode de matérialisation est alors fixé au niveau du projet, dans le fichier [_dbt_project.yml_](https://docs.getdbt.com/reference/dbt_project.yml), pour l'ensemble des modèles d'une même couche.
+
+```yml
+models:
+  +persist_docs:
+      relation: true
+      columns: true
+    
+  taradata:
+    2_staging:
+        +materialized: view
+
+    3_warehouses:
+        +materialized: table
+
+    4_marts:
+        +materialized: table
+```
+
+Il reste possible de redéfinir cette matérialisation par défaut sur un modèle spécifique grâce à la clé `materialized` de la section `config` du YAML.
+
+```yml
+config:
+	materialized: view
+```
+
+### Modèles incrémentaux
 
 ### Lignage
 
