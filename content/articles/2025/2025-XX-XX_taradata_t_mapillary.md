@@ -170,18 +170,31 @@ models:
 
 Il reste possible de redéfinir cette matérialisation par défaut sur un modèle spécifique grâce à la clé `materialized` de la section `config` du YAML.
 
-```yml
-config:
-	materialized: view
-```
-
 ### Modèles incrémentaux
 
-Lorsque la matérialisation en table ou en vue est retenue, DBT va à chaque lancement recréer la structure de données et donc lancer l'ordre `create table as select...` ou `create view as select...` correspondant.
+Lorsque les matérialisations `table` ou `view` sont retenues, DBT va recréer à chaque lancement la structure de données et donc exécuter l'ordre `create table as select...` ou `create view as select...` correspondant.
 
-Cette approche a plusieurs avantages. D'une part, elle est résiliente car la suppression malencontreuse de la structure peut être corrigée en rejouant le modèle. Par ailleurs, comme toute la donnée source est retraitée, il n'est pas utile d'aller identifier de façon chirurgicale les lignes ayant évoluées, ce qui rend la rédaction du modèle de transformation simple.
+Cette approche a plusieurs avantages. D'une part, elle est résiliente car la suppression malencontreuse de la structure peut être corrigée en rejouant le modèle. Par ailleurs, comme toutes les données sont retraitées, il n'est pas utile d'identifier de façon chirurgicale les lignes ayant évoluées, ce qui rend la rédaction du modèle de transformation simple.
+
+Cependant, les matérialisations `table` et `view` trouvent leurs limites quand le volume de données est important ou lorsque le but est de conserver l'historique des données alors même que la source ne le propose pas.
+
+DBT propose pour cela le mode [`incremental`](https://docs.getdbt.com/docs/build/incremental-models). Avec lui, une table est créée à la première exécution du modèle. Les exécutions suivantes se chargent ensuite de mettre à jour et/ou d'insérer les nouvelles données en fonction du paramétrage défini pour le modèle.
 
 ### Lignage et parallélisation
+
+C'est probablement le point fort de DBT ; sa capacité à déterminer le lignage des modèles.
+
+Imagine, tu récupères le tout dernier millésime de la [BD TOPO®](https://geoservices.ign.fr/bdtopo) et tu dois reconstruire toutes les données qui dépendent du thème commune. _"Quels sont les processus que je dois relancer ? Est-ce que je dois faire celui-là avant celui-ci ? Peut-être que je peux lancer ces deux transformations en même temps pour aller plus vite, mais peut-être pas."_. Bref, la galère !
+
+Grâce à DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles. 
+
+![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/lignage.png "Lignage des données"){: .img-center loading=lazy }
+
+Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des modèles descendants grâce à la commande suivante :
+
+`dbt run --select source:src_ign_bdtopo.commune+` 
+
+Ce lignage permet non seulement à DBT de savoir l'ordre dans lequel il doit faire les transformations, mais il est aussi capable d'identifier les modèles indépendants qu'il est possible d'exécuter en parallèle.
 
 ### Documentation des modèles
 
