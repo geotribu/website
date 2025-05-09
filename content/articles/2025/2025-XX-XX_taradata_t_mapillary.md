@@ -50,7 +50,7 @@ L'avantage est que DBT ne vient pas en coupure du moteur de bases de données so
 
 Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` puisque c'est DBT qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
 
-Difficile, impossible même, pour moi de faire de toi un expert DBT en quelques lignes seulement. Voyons quand-même les notions essentielles et je te proposerai plus bas quelques ressources qui m'ont permis de démarrer. 
+Difficile, impossible même, pour moi de faire de toi un expert DBT en quelques lignes seulement. Voyons quand-même les notions essentielles et je te proposerai plus bas quelques ressources qui nous ont permis de démarrer. 
 
 ### Sources
 
@@ -123,7 +123,7 @@ from selections_typages_renommages
 
 Lorsqu'on souhaite factoriser du code, il est d'usage en bases de données de créer des procédures stockées. Avec DBT, on utilisera plutôt des [macros](https://docs.getdbt.com/docs/build/jinja-macros#macros).
 
-Les macros sont des blocs de SQL réutilisables. Par exemple, dans la requête de transformation Hubeau qui précède, tu peux voir un appel `to_utc_timestamp_or_null`.
+Les macros sont des blocs de SQL réutilisables. Par exemple, dans la requête de transformation Hubeau qui précède, tu peux voir un appel à `to_utc_timestamp_or_null`.
 
 Cette macro, nous l'avons développée pour faciliter les transformations de chaînes de caractères en dates et heures tout en s'assurant que la conversion n'entraine pas une erreur par la validation préalable d'une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re).
 
@@ -135,6 +135,18 @@ Cette macro, nous l'avons développée pour faciliter les transformations de cha
 
 ### Architecture en médaillon
 
+L'architecture en médaillon n'est pas propre à DBT. Il s'agit d'un modèle de structuration des données en 3 couches :
+
+- La couche _Bronze_ : Cette couche correspond aux données non transformées telles qu'extraites depuis leur source.
+- La couche _Silver_ : Dans cette couche, les données sont nettoyées, validées et transformées. Il peut notamment être question de [normalisation](https://fr.wikipedia.org/wiki/Forme_normale_(bases_de_donn%C3%A9es_relationnelles)) et d'enrichissement via le croisement et l'association de données provenant de sources distinctes.
+- La couche _Gold_ : Cette couche contient les données hautement transformées et agrégées, prêtes pour l'analyse et la consommation par les utilisateurs finaux. Les données sont en général dénormalisées pour en faciliter l'analyse ; [modèles en étoile](https://fr.wikipedia.org/wiki/%C3%89toile_(mod%C3%A8le_de_donn%C3%A9es)) ou [_"one big table"_](https://dataengineering.wiki/Concepts/Data+Modeling/One+Big+Table).
+
+L'objectif est de garantir l’atomicité et la cohérence des traitements en isolant les différentes étapes de transformation dans des couches spécifiques.
+
+![Architecture en médaillon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/medallion_architecture.png "Architecture en médaillon"){: .img-center loading=lazy }
+
+Cette approche présente des similitudes avec l'architecture logicielle en 3 couches où chaque strate (et même chaque classe en programmation orientée objet) a une [responsabilité unique](https://fr.wikipedia.org/wiki/Principe_de_responsabilit%C3%A9_unique) ; la couche d'accès aux données, la couche métier et la couche de présentation.
+
 ### Matérialisation
 
 La [matérialisation](https://docs.getdbt.com/docs/build/materializations) détermine la façon dont DBT stocke le résultat des transformations, c'est à dire le résultat d'exécution des modèles, dans l'entrepôt.
@@ -145,10 +157,6 @@ En règle générale, les modèles sont organisés en couches suivant l'architec
 
 ```yml
 models:
-  +persist_docs:
-      relation: true
-      columns: true
-    
   taradata:
     2_staging:
         +materialized: view
@@ -169,9 +177,13 @@ config:
 
 ### Modèles incrémentaux
 
-### Lignage
+Lorsque la matérialisation en table ou en vue est retenue, DBT va à chaque lancement recréer la structure de données et donc lancer l'ordre `create table as select...` ou `create view as select...` correspondant.
 
-### Documentation
+Cette approche a plusieurs avantages. D'une part, elle est résiliente car la suppression malencontreuse de la structure peut être corrigée en rejouant le modèle. Par ailleurs, comme toute la donnée source est retraitée, il n'est pas utile d'aller identifier de façon chirurgicale les lignes ayant évoluées, ce qui rend la rédaction du modèle de transformation simple.
+
+### Lignage et parallélisation
+
+### Documentation des modèles
 
 ### Ressources
 
