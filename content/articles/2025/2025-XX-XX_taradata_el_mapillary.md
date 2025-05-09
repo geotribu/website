@@ -12,8 +12,8 @@ icon: fontawesome/solid/cubes-stacked
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/affiche.png
 tags:
     - Apache Airflow
-	- Mapillary
-	- Modern Data Stack
+    - Mapillary
+    - Modern Data Stack
     - Open Source
     - PostGIS
     - PostgreSQL
@@ -108,9 +108,9 @@ Un _DAG_ correspond donc un ensemble de tâches à réaliser...mais il faut bien
 
 La responsabilité de l'exécution des tâches incombe à trois briques d'Apache Airflow :
 
--	Le _Scheduler_ : Il est responsable de la planification des tâches. Il décide quand elles doivent être exécutées en fonction du calendrier de lancement et de leurs dépendances.
--	L'_Executor_ : Il gère l'exécution des tâches planifiées par le _Scheduler_. [Plusieurs natures d'_Executor_ sont disponibles](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/index.html) et le type à utiliser est fixé par paramétrage. Par exemple, le `CeleryExecutor` est capable de distribuer l'exécution sur plusieurs serveurs.
--	Les _Workers_ : Ce sont les processus qui exécutent réellement les tâches. Ils reçoivent les tâches à faire du _Scheduler_ via l'_Executor_.
+- Le _Scheduler_ : Il est responsable de la planification des tâches. Il décide quand elles doivent être exécutées en fonction du calendrier de lancement et de leurs dépendances.
+- L'_Executor_ : Il gère l'exécution des tâches planifiées par le _Scheduler_. [Plusieurs natures d'_Executor_ sont disponibles](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/index.html) et le type à utiliser est fixé par paramétrage. Par exemple, le `CeleryExecutor` est capable de distribuer l'exécution sur plusieurs serveurs.
+- Les _Workers_ : Ce sont les processus qui exécutent réellement les tâches. Ils reçoivent les tâches à faire du _Scheduler_ via l'_Executor_.
 
 ![Architecture d'Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/architecture_apache_airflow.jpg "Architecture d'Apache Airflow"){: .img-center loading=lazy }
 
@@ -162,17 +162,17 @@ Avec cette seconde tâche, nous créons la table d'accueil des données que nous
 
 ``` py
 create_table_task = postgresql_tasks.execute_sql_statement.override(task_id = "créer_table_temporaire")(
-	taradata_storage,
-	"""
-	drop table if exists tmp_features;
+    taradata_storage,
+    """
+    drop table if exists tmp_features;
 
-	create table tmp_features(
-		geom geometry(polygon, 4326) primary key,
-		id_tache integer not null,
-		informations jsonb
-	);
-	""",
-	search_path = f"{target_schema},public"
+    create table tmp_features(
+        geom geometry(polygon, 4326) primary key,
+        id_tache integer not null,
+        informations jsonb
+    );
+    """,
+    search_path = f"{target_schema},public"
 )
 ```
 
@@ -202,18 +202,18 @@ Ceci est fait grâce aux 2 [_CTE_](https://www.postgresql.org/docs/current/queri
 
 ``` sql
 with emprise as (
-	select ST_Collect(geom) as geom
-	from troncons_wgs84
+    select ST_Collect(geom) as geom
+    from troncons_wgs84
 ),
 cellules as (
-	select sg.geom
-	from emprise e
-	cross join ST_SquareGrid(0.01, e.geom) sg
-	where exists (
-		select *
-		from troncons_wgs84 t
-		where ST_DWithin(sg.geom, t.geom, 0.0001)
-	)
+    select sg.geom
+    from emprise e
+    cross join ST_SquareGrid(0.01, e.geom) sg
+    where exists (
+        select *
+        from troncons_wgs84 t
+        where ST_DWithin(sg.geom, t.geom, 0.0001)
+    )
 ),
 ```
 
@@ -229,8 +229,8 @@ Ci-dessous, la _CTE_ de répartition des cellules à N tâches.
 
 ``` sql
 repartition_aleatoire as (
-	select geom, ntile(%(nb_taches)s) over(order by random()) as id_tache
-	from cellules
+    select geom, ntile(%(nb_taches)s) over(order by random()) as id_tache
+    from cellules
 )
 ```
 
@@ -238,22 +238,22 @@ Ne reste plus qu'à insérer cette répartition aléatoire dans notre table de c
 
 ``` sql
 with emprise as (
-	select ST_Collect(geom) as geom
-	from troncons_wgs84
+    select ST_Collect(geom) as geom
+    from troncons_wgs84
 ),
 cellules as (
-	select sg.geom
-	from emprise e
-	cross join ST_SquareGrid(0.01, e.geom) sg
-	where exists (
-		select *
-		from troncons_wgs84 t
-		where ST_DWithin(sg.geom, t.geom, 0.0001)
-	)
+    select sg.geom
+    from emprise e
+    cross join ST_SquareGrid(0.01, e.geom) sg
+    where exists (
+        select *
+        from troncons_wgs84 t
+        where ST_DWithin(sg.geom, t.geom, 0.0001)
+    )
 ),
 repartition_aleatoire as (
-	select geom, ntile(%(nb_taches)s) over(order by random()) as id_tache
-	from cellules
+    select geom, ntile(%(nb_taches)s) over(order by random()) as id_tache
+    from cellules
 )
 insert into tmp_features (geom, id_tache)
 select geom, id_tache
@@ -273,19 +273,19 @@ Tout est prêt pour extraire et charger les données. Histoire de ne pas rentrer
 ``` py
 @task(task_id = "extraire_charger_features", retries = 3)
 def extract_load_features(extract_load_task_id: int):
-	"""
-	Tâche d'extraction et de chargement des "features" présentes sur l'emprise de cellules.
+    """
+    Tâche d'extraction et de chargement des "features" présentes sur l'emprise de cellules.
 
-	extract_load_task_id : Le numéro de tâche d'extraction et de chargement.
-	"""
-	# récupération de la liste des cellules à extraire/charger
-	# tant qu'il y a des cellules à extraire/charger
-		# pour chaque cellule :
-			# appel de l'API
-			# si le résultat contient moins de 2000 éléments (limite de l'API)
-				# alors, chargement du résultat dans la base de données
-		# division des cellules qui n'ont pas pu être extraites/chargées
-		# récupération de la nouvelle liste des cellules à extraire/charger
+    extract_load_task_id : Le numéro de tâche d'extraction et de chargement.
+    """
+    # récupération de la liste des cellules à extraire/charger
+    # tant qu'il y a des cellules à extraire/charger
+        # pour chaque cellule :
+            # appel de l'API
+            # si le résultat contient moins de 2000 éléments (limite de l'API)
+                # alors, chargement du résultat dans la base de données
+        # division des cellules qui n'ont pas pu être extraites/chargées
+        # récupération de la nouvelle liste des cellules à extraire/charger
 ```
 
 Cette fois, le décorateur `@task` est bien visible. Le paramètre `task_id`, déjà aperçu plus haut, permet d'identifier la tâche. Le `retries` quant à lui, indique à Apache Airflow de retenter l'exécution en cas d'échec. Il est également possible de définir le délai minimal entre deux tentatives via le paramètre `retry_delay`. En son absence, c'est la valeur par défaut qui s'applique soit 300 secondes.
@@ -308,11 +308,11 @@ Cette étape consiste simplement à exécuter la requête suivante.
 
 ``` sql
 select
-	geom,
-	ST_XMin(geom) as x_min,
-	ST_YMin(geom) as y_min,
-	ST_XMax(geom) as x_max,
-	ST_YMax(geom) as y_max
+    geom,
+    ST_XMin(geom) as x_min,
+    ST_YMin(geom) as y_min,
+    ST_XMax(geom) as x_max,
+    ST_YMax(geom) as y_max
 from tmp_features
 where id_tache = %(id_tache)s
 and informations is null
@@ -333,19 +333,19 @@ Nous avons encapsulé cet appel dans la fonction ci-dessous.
 
 ``` py
 def call_map_features_api(cell: dict):
-	"""
-	Appel à l'API d'extraction des "features" au format JSON pour une cellule donnée.
+    """
+    Appel à l'API d'extraction des "features" au format JSON pour une cellule donnée.
 
-	cell : La cellule pour laquelle les "features" doivent être extraites.
-	"""
-	url = (
-		"https://graph.mapillary.com/map_features"
-		f"?access_token={mapillary_conn.password}"
-		"&fields=id,aligned_direction,first_seen_at,last_seen_at,object_value,object_type,geometry"
-		f"&bbox={cell['x_min']},{cell['y_min']},{cell['x_max']},{cell['y_max']}"
-	)
+    cell : La cellule pour laquelle les "features" doivent être extraites.
+    """
+    url = (
+        "https://graph.mapillary.com/map_features"
+        f"?access_token={mapillary_conn.password}"
+        "&fields=id,aligned_direction,first_seen_at,last_seen_at,object_value,object_type,geometry"
+        f"&bbox={cell['x_min']},{cell['y_min']},{cell['x_max']},{cell['y_max']}"
+    )
 
-	return http_helper.get_json(url, verify = False)
+    return http_helper.get_json(url, verify = False)
 ```
 
 L'appel à `http_helper.get_json` fait référence à une fonction présente dans notre boîte à outils. Celle-ci s'appuie sur la bibliothèque Python `requests`.
@@ -368,11 +368,11 @@ La suppression et l'ajout sont réalisés en un seul ordre SQL grâce au mot-cl�
 
 ``` sql
 with cellules_a_diviser as (
-	delete
-	from tmp_features
-	where id_tache = %(id_tache)s
-	and informations is null
-	returning geom
+    delete
+    from tmp_features
+    where id_tache = %(id_tache)s
+    and informations is null
+    returning geom
 )
 insert into tmp_features (geom, id_tache)
 select sg.geom, %(id_tache)s
@@ -394,7 +394,7 @@ Il faut donc invoquer autant de fois que souhaité la tâche pour chacune des so
 ```py
 extract_load_features_tasks = []
 for extract_load_task_id in range(1, extract_load_tasks_count + 1):
-	extract_load_features_tasks.append(extract_load_features.override(task_id = f"extraire_charger_features_{extract_load_task_id}")(extract_load_task_id))
+    extract_load_features_tasks.append(extract_load_features.override(task_id = f"extraire_charger_features_{extract_load_task_id}")(extract_load_task_id))
 ```
 
 L'appel à `override` permet de redéfinir les paramètres de la tâche. Nous l'utilisons ici pour mettre un intitulé distinct à chacune.
@@ -411,17 +411,17 @@ Après chargement, la table définitive de stockage des données est écrasée a
 
 ```py
 replace_table_task = postgresql_tasks.execute_sql_statement.override(task_id = "remplacer_table")(
-	taradata_storage,
-	"""
-	begin;
+    taradata_storage,
+    """
+    begin;
 
-	drop table if exists features cascade;
-	create table features as select informations from tmp_features;
-	drop table tmp_features;
+    drop table if exists features cascade;
+    create table features as select informations from tmp_features;
+    drop table tmp_features;
 
-	commit;
-	""",
-	search_path = target_schema
+    commit;
+    """,
+    search_path = target_schema
 )
 ```
 
