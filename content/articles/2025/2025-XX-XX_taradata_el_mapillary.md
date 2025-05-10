@@ -198,7 +198,7 @@ L'API de Mapillary permet de récupérer les _features_ présentes dans une _bbo
 
 Comme seuls les éléments à proximité du réseau routier départemental nous intéressent, nous allons calculer une grille sur l'emprise du référentiel routier et ne conserver que les cellules à proximité immédiate d'un tronçon.
 
-Ceci est fait grâce aux 2 [_CTE_](https://www.postgresql.org/docs/current/queries-with.html) suivantes, à noter que l'API attend des coordonnées en WGS84 pour la _bbox_, les distances sont donc exprimées en degrés.
+Ceci est fait grâce aux 2 [_CTE_](https://www.postgresql.org/docs/current/queries-with.html) suivantes. À noter que l'API attend des coordonnées en WGS84 pour la _bbox_, les distances sont donc exprimées en degrés.
 
 ``` sql
 with emprise as (
@@ -320,7 +320,7 @@ and informations is null
 
 Le premier critère de la clause `where` permet de limiter la recherche à la tâche courante.
 
-Le second filtre exclut les cellules pour lesquelles les _features_ ont déjà été extraites. Ce critère intervient dans de cas :
+Le second filtre exclut les cellules pour lesquelles les _features_ ont déjà été extraites. Ce critère intervient dans deux cas :
 
 - D'une part, comme vu dans le pseudo-code, plusieurs itérations peuvent être nécessaires lorsque 2000 éléments sont retournés pour certaines cellules. Dans ce cas, seules les nouvelles cellules issues de la division seront retournées pour l'itération suivante.
 - D'autre part, si une erreur devait survenir, par exemple en cas d'indisponibilité du réseau au moment de l'appel à l'API, ce filtre permet de ne pas avoir à retraiter la totalité des cellules lors des `retries`. En effet, il serait dommage de refaire tous les appels si 90% de l'emprise a pu être traitée avant l'apparition de l'erreur.
