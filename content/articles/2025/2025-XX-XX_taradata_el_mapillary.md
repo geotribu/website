@@ -447,6 +447,14 @@ La première tâche `ignorer_si_dag_subséquent_en_cours`, que nous n'avons pas 
 
 Nous pouvons voir que les 8 tâches d'extraction et de chargement ne sont pas liées entre elles. Apache Airflow aura donc la possibilité de les exécuter en parallèle.
 
+## Résultat
+
+Après exécution, la table `features` est disponible dans le schéma `src_mapillary_com` de l'entrepôt.
+
+Elle est constituée d'une unique colonne de type `jsonb` et contient un peu plus de 4000 lignes ; une par cellule. 
+
+![Table résultat de l'extraction et du chargement des _features_](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png "Table résultat de l'extraction et du chargement des _features_"){: .img-center loading=lazy }
+
 ## Conclusion
 
 Apache Airflow est donc un outil totalement adapté à la mise en oeuvre de processus automatisés de traitement de données, que celles-ci soient géographiques ou non.
