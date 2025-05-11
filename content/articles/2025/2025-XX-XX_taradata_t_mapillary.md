@@ -156,16 +156,16 @@ Concrètement, et dans la mesure où DBT se charge du DDL, il est question de lu
 En règle générale, les modèles sont organisés en couches suivant l'architecture en médaillon. Le mode de matérialisation est alors fixé au niveau du projet, dans le fichier [_dbt_project.yml_](https://docs.getdbt.com/reference/dbt_project.yml), pour l'ensemble des modèles d'une même couche.
 
 ```yml
-models:
+models: 
   taradata:
     2_staging:
-        +materialized: view
+      +materialized: view
 
     3_warehouses:
-        +materialized: table
+      +materialized: table
 
     4_marts:
-        +materialized: table
+      +materialized: table
 ```
 
 Il reste possible de redéfinir cette matérialisation par défaut sur un modèle spécifique grâce à la clé `materialized` de la section `config` du YAML.
@@ -202,33 +202,33 @@ C'est un autre avantage de DBT ; [il est possible de documenter](https://docs.ge
 
 ```yml
 - name: wrh_hydrometrie__stations
-description: >
-  Les stations hydrométriques du Gard et de ses départements limitrophes.
-  Les données sont issues de [hubeau.eaufrance.fr](https://hubeau.eaufrance.fr/) et [vigicrues.gouv.fr](https://www.vigicrues.gouv.fr/).
-config:
-  alias: stations
-  schema: wrh_hydrometrie
-  indexes:
-    - columns: ["code_station"]
-      unique: True
-    - columns: ["code_troncon"]
-    - columns: ["geom"]
-      type: "gist"
-columns:
-- name: code_station
-  description: "Le code de la station."
-- name: code_troncon
-  description: "Le code du tronçon."
-- name: libelle
-  description: "Le libellé de la station."
-- name: libelle_site
-  description: "Le libellé du site."
-- name: type
-  description: "Le type de la station (HC, DEB, LIMNI, LIMNIMERE, LIMNIFILLE)."
-- name: en_service
-  description: "Détermine si la station est en service ou non."
-- name: geom
-  description: "La localisation ponctuelle de la station."
+  description: >
+    Les stations hydrométriques du Gard et de ses départements limitrophes.
+    Les données sont issues de [hubeau.eaufrance.fr](https://hubeau.eaufrance.fr/) et [vigicrues.gouv.fr](https://www.vigicrues.gouv.fr/).
+  config:
+    alias: stations
+    schema: wrh_hydrometrie
+    indexes:
+      - columns: ["code_station"]
+        unique: True
+      - columns: ["code_troncon"]
+      - columns: ["geom"]
+        type: "gist"
+  columns:
+  - name: code_station
+    description: "Le code de la station."
+  - name: code_troncon
+    description: "Le code du tronçon."
+  - name: libelle
+    description: "Le libellé de la station."
+  - name: libelle_site
+    description: "Le libellé du site."
+  - name: type
+    description: "Le type de la station (HC, DEB, LIMNI, LIMNIMERE, LIMNIFILLE)."
+  - name: en_service
+    description: "Détermine si la station est en service ou non."
+  - name: geom
+    description: "La localisation ponctuelle de la station."
 ```
 
 Cette documentation est ensuite visualisable au travers d'une page Web que DBT peut générer grâce à la commande `dbt docs generate`.
@@ -258,18 +258,102 @@ Nous nous fournissons auprès de dizaines de partenaires. Chacun nous met à dis
 
 S'il est indéniable qu'un effort de mise en avant des produits a été fait par chaque fournisseur, nous faisons face à plusieurs difficultés.
 
-En effet, certains de nos fournisseurs sont basés à Barcelone et le catalogue qu'ils nous présentent est en espagnol. Nous avons également un partenaire à Hastings au Sud-Est de Londres. Non seulement son catalogue est en anglais mais en plus les prix sont exprimés en livre sterling. Et je ne vous parle pas des unités de mesures...
+En effet, certains de nos fournisseurs sont basés à Barcelone et le catalogue qu'ils nous présentent est en espagnol. Nous avons également un partenaire à Hastings au Sud-Est de Londres. Non seulement son catalogue est en anglais mais en plus les prix sont exprimés en livre sterling. Et je ne te parle même pas des unités de mesures...
 
 - _Staging_ ; Un pré-traitement de l'ensemble des catalogues est fait ; même langue, mêmes unités et prix en €uros. A cette étape, chaque catalogue est analysé indépendamment des autres, le but étant d'uniformiser. 
 - _Intermediate_ ; Nous pouvons maintenant commander les produits auprès de nos partenaires. L'objectif est d'alimenter nos entrepôts. Dès la livraison, un tri est fait de sorte à ce que les produits de notre stock soient classés non pas par fournisseur, mais par gamme.
 - _Marts_ ; Les produits sont sortis du stock et mis en rayon. Les prix au kilo et prix au litre sont calculés et nous mettons en avant les informations utiles concernant les articles, telles que la provenance et les allergènes. En bref, tout est fait pour satisfaire le client et l'aider dans ses décisions d'achat.
 
-### Staging
+### Source
 
-### Warehouses
+Avant toute chose, nous devons indiquer à DBT où se trouvent les données brutes grâce au fichier YAML suivant.
 
-### Marts
+```yml
+version: 2
 
+sources:
+  - name: src_mapillary_com
+    tags: ["monthly"]
+    tables:
+      - name: features
+```
 
+C'est là que se trouve le résultat d'extraction et de chargement des _features_.
+
+![Table résultat de l'extraction et du chargement des _features_](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png "Table résultat de l'extraction et du chargement des _features_"){: .img-center loading=lazy }
+
+Il est possible d'associer aux sources des tags comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur DBT. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande `dbt run --select tag:monthly+`.
+
+### _Staging_
+
+L'objectif du _staging_ est de rendre les données sources prêtes à l'emploi. Il n'est pas question ici de commencer les croisements (jointures, unions, ...) avec d'autres données.
+
+Comme dans notre exemple des catalogues de produits, nous allons dans cette étape "traduire" les données extraites et chargées depuis Mapillary. Par traduction, on entend convertir en lignes et colonnes le champs `jsonb`. Par ailleurs, nous conservons à cette étape le lien avec le fournisseur des données mais nous avons fait le choix d'utiliser le français pour notre entrepôt.
+
+Ainsi, le fichier YAML suivant précise que le résultat d'exécution du modèle doit être stocké dans la vue `elements` (matérialisation définie au niveau du projet) du schéma `stg_mapillary_com`.
+
+```yml
+version: 2
+
+models: 
+  - name: stg_mapillary_com__elements
+    config: 
+      alias: elements
+      schema: stg_mapillary_com
+```
+
+Le fichier SQL quant à lui détermine comment le `jsonb` est transformé.
+
+```sql
+with features as (
+    select *
+    from {{ source("src_mapillary_com", "features") }}
+),
+selections_typages_renommages as (
+    select
+        distinct
+        (feature ->> 'id')::bigint as id_element,
+        
+        (feature ->> 'first_seen_at')::timestamp AS date_heure_premiere_detection,
+        (feature ->> 'last_seen_at')::timestamp AS date_heure_derniere_detection,
+        
+        feature ->> 'object_type' AS categorie,
+        feature ->> 'object_value' AS nature,
+        (feature ->> 'aligned_direction')::numeric AS alignement,
+
+        (feature -> 'geometry' -> 'coordinates' ->> 0)::numeric AS longitude,
+        (feature -> 'geometry' -> 'coordinates' ->> 1)::numeric AS latitude
+        
+    from features
+    cross join jsonb_array_elements(informations -> 'data') feature
+),
+geolocalisations as (
+    select
+        *,
+        case
+            when {{ is_valid_longitude("longitude") }} and {{ is_valid_latitude("latitude") }}
+            then {{ to_srid_2154(make_2d_point_4326("longitude", "latitude")) }}
+        end as geom
+    from selections_typages_renommages
+)
+select *
+from geolocalisations
+```
+
+Tu peux voir que la requête s'appuie aussi bien sur des opérateurs et fonctions propres à PostgreSQL ([`->>`](https://www.postgresql.org/docs/9.5/functions-json.html#FUNCTIONS-JSON-OP-TABLE), [`jsonb_array_elements`](https://www.postgresql.org/docs/9.5/functions-json.html#FUNCTIONS-JSON-PROCESSING-TABLE)) que sur des macros développées pas nos soins. Voici par exemple le code de la macro `make_2d_point_4326`.
+
+```sql
+{% macro make_2d_point_2154(x, y) %}
+    ST_SetSRID(ST_MakePoint({{ x }}, {{ y }}), 2154)
+{% endmacro %}
+```
+
+Après exécution du modèle, la vue est disponible et requêtable dans l'entrepôt.
+
+![Staging des _features_ Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/staging.png "Staging des _features_ Mapillary"){: .img-center loading=lazy }
+
+### _Warehouses_ (ou _Intermediate_)
+
+### _Marts_
 
 <!-- geotribu:authors-block -->
