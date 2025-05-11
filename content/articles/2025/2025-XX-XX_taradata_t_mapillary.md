@@ -50,7 +50,7 @@ L'avantage de DBT est qu'il ne vient pas en coupure du moteur de bases de donné
 
 Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` puisque c'est DBT qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
 
-Difficile, impossible même, pour moi de faire de toi un expert DBT en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille [comme Satya a déjà pu le faire dans son article](https://geotribu.fr/articles/2025/2025-02-25_stack_data_gard/) de visionner [la playlist DBT de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT). 
+Difficile, impossible même, pour moi de faire de toi un expert DBT en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille, [comme Satya a déjà pu le faire dans son article](https://geotribu.fr/articles/2025/2025-02-25_stack_data_gard/), de visionner [la playlist DBT de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT). 
 
 ### Sources
 
@@ -125,7 +125,7 @@ Lorsqu'on souhaite factoriser du code, il est d'usage en bases de données de cr
 
 Les macros sont des blocs de SQL réutilisables. Par exemple, dans la requête de transformation Hubeau qui précède, tu peux voir un appel à `to_utc_timestamp_or_null`.
 
-Cette macro, nous l'avons développée pour faciliter les transformations de chaînes de caractères en dates et heures tout en s'assurant que la conversion n'entraine pas une erreur par la validation préalable d'une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re).
+Cette macro, nous l'avons développée pour faciliter les transformations de chaînes de caractères en dates et heures, tout en s'assurant que la conversion n'entraine pas une erreur par la validation préalable d'une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re).
 
 ```sql
 {% macro to_utc_timestamp_or_null(column, regexp_check, format) %}
@@ -172,7 +172,7 @@ Il reste possible de redéfinir cette matérialisation par défaut sur un modèl
 
 ### Modèles incrémentaux
 
-Lorsque les matérialisations `table` ou `view` sont retenues, DBT va recréer à chaque lancement la structure de données et donc exécuter l'ordre `create table as select...` ou `create view as select...` correspondant.
+Lorsque les matérialisations `table` ou `view` sont retenues, DBT va recréer à chaque lancement la structure de données, et donc, exécuter l'ordre `create table as select...` ou `create view as select...` correspondant.
 
 Cette approche a plusieurs avantages. D'une part, elle est résiliente car la suppression malencontreuse de la structure peut être corrigée en rejouant le modèle. Par ailleurs, comme toutes les données sont retraitées, il n'est pas utile d'identifier de façon chirurgicale les lignes ayant évoluées, ce qui rend la rédaction du modèle de transformation simple.
 
@@ -190,17 +190,86 @@ Grâce à DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de
 
 ![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/lignage.png "Lignage des données"){: .img-center loading=lazy }
 
-Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des modèles descendants grâce à la commande suivante :
+Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des descendants d'une source ou d'un modèle en suffixant celui-ci d'un +, comme par exemple dans la commande suivante :
 
 `dbt run --select source:src_ign_bdtopo.commune+` 
 
-Ce lignage permet non seulement à DBT de savoir l'ordre dans lequel il doit faire les transformations, mais il est aussi capable d'identifier les modèles indépendants qu'il est possible d'exécuter en parallèle.
+Ce lignage permet non seulement à DBT de savoir l'ordre dans lequel il doit faire les transformations, mais il est aussi capable d'identifier les modèles indépendants et de les exécuter en parallèle.
 
 ### Documentation des modèles
 
+C'est un autre avantage de DBT ; [il est possible de documenter](https://docs.getdbt.com/docs/build/documentation), en markdown, les modèles depuis le fichier YAML. Cette possibilité concerne aussi bien le modèle lui-même que les colonnes qui le constituent.
+
+```yml
+- name: wrh_hydrometrie__stations
+description: >
+  Les stations hydrométriques du Gard et de ses départements limitrophes.
+  Les données sont issues de [hubeau.eaufrance.fr](https://hubeau.eaufrance.fr/) et [vigicrues.gouv.fr](https://www.vigicrues.gouv.fr/).
+config:
+  alias: stations
+  schema: wrh_hydrometrie
+  indexes:
+    - columns: ["code_station"]
+      unique: True
+    - columns: ["code_troncon"]
+    - columns: ["geom"]
+      type: "gist"
+columns:
+- name: code_station
+  description: "Le code de la station."
+- name: code_troncon
+  description: "Le code du tronçon."
+- name: libelle
+  description: "Le libellé de la station."
+- name: libelle_site
+  description: "Le libellé du site."
+- name: type
+  description: "Le type de la station (HC, DEB, LIMNI, LIMNIMERE, LIMNIFILLE)."
+- name: en_service
+  description: "Détermine si la station est en service ou non."
+- name: geom
+  description: "La localisation ponctuelle de la station."
+```
+
+Cette documentation est ensuite visualisable au travers d'une page Web que DBT peut générer grâce à la commande `dbt docs generate`.
+
+![Documentation d'un modèle DBT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_generate.png "Documentation d'un modèle DBT"){: .img-center loading=lazy }
+
+Il est également possible de demander à DBT de persister la documentation dans les [commentaires](https://www.postgresql.org/docs/current/sql-comment.html) de tables/vues et colonnes PostgreSQL. Ainsi, la description est directement visualisable dans QGIS.
+
+![Documentation d'un modèle DBT vue dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_persist.png "Documentation d'un modèle DBT vue dans QGIS"){: .img-center loading=lazy }
 
 ----
 
 ## Transformation des _features_
+
+Voyons maintenant comment DBT nous permet de transformer les _features_ de Mapillary, de leur forme brute JSON à une couche utilisable dans QGIS.
+
+### Best-practices
+
+La structuration de notre projet DBT est largement inspirée des préconisations de l'éditeur consultables dans son [guide des bonnes pratiques](https://docs.getdbt.com/best-practices).
+
+Les transformations vont se faire en trois étapes ; staging > intermediate > marts. Je vais essayer de t'expliquer celles-ci en gardant pour image celle de la grande distribution.
+
+
+Nous sommes les gestionnaires du **super-data-marché** de Nîmes, le spécialiste de la data à prix discount.
+
+Nous nous fournissons auprès de dizaines de partenaires. Chacun nous met à disposition le catalogue de ses références.
+
+S'il est indéniable qu'un effort de mise en avant des produits a été fait par chaque fournisseur, nous faisons face à plusieurs difficultés.
+
+En effet, certains de nos fournisseurs sont basés à Barcelone et le catalogue qu'ils nous présentent est en espagnol. Nous avons également un partenaire à Hastings au Sud-Est de Londres. Non seulement son catalogue est en anglais mais en plus les prix sont exprimés en livre sterling. Et je ne vous parle pas des unités de mesures...
+
+- _Staging_ ; Un pré-traitement de l'ensemble des catalogues est fait ; même langue, mêmes unités et prix en €uros. A cette étape, chaque catalogue est analysé indépendamment des autres, le but étant d'uniformiser. 
+- _Intermediate_ ; Nous pouvons maintenant commander les produits auprès de nos partenaires. L'objectif est d'alimenter nos entrepôts. Dès la livraison, un tri est fait de sorte à ce que les produits de notre stock soient classés non pas par fournisseur, mais par gamme.
+- _Marts_ ; Les produits sont sortis du stock et mis en rayon. Les prix au kilo et prix au litre sont calculés et nous mettons en avant les informations utiles concernant les articles, telles que la provenance et les allergènes. En bref, tout est fait pour satisfaire le client et l'aider dans ses décisions d'achat.
+
+### Staging
+
+### Warehouses
+
+### Marts
+
+
 
 <!-- geotribu:authors-block -->
