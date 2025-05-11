@@ -251,18 +251,21 @@ La structuration de notre projet DBT est largement inspirée des préconisations
 
 Les transformations vont se faire en trois étapes ; staging > intermediate > marts. Je vais essayer de t'expliquer celles-ci en gardant pour image celle de la grande distribution.
 
-!!! info "Teasing"
-	Nous sommes les gestionnaires du **super-data-marché** de Nîmes, le spécialiste de la data à prix discount.
+----
 
-	Nous nous fournissons auprès de dizaines de partenaires. Chacun nous met à disposition le catalogue de ses références.
+Nous sommes les gestionnaires du **super-data-marché** de Nîmes, le spécialiste de la data à prix discount.
 
-	S'il est indéniable qu'un effort de mise en avant des produits a été fait par chaque fournisseur, nous faisons face à plusieurs difficultés.
+Nous nous fournissons auprès de dizaines de partenaires. Chacun nous met à disposition le catalogue de ses références.
 
-	En effet, certains de nos fournisseurs sont basés à Barcelone et le catalogue qu'ils nous présentent est en espagnol. Nous avons également un partenaire à Hastings au Sud-Est de Londres. Non seulement son catalogue est en anglais mais en plus les prix sont exprimés en livre sterling. Et je ne te parle même pas des unités de mesures...
+S'il est indéniable qu'un effort de mise en avant des produits a été fait par chaque fournisseur, nous faisons face à plusieurs difficultés.
 
-	- _Staging_ ; Un pré-traitement de l'ensemble des catalogues est fait ; même langue, mêmes unités et prix en €uros. A cette étape, chaque catalogue est analysé indépendamment des autres, le but étant d'uniformiser. 
-	- _Intermediate_ ; Nous pouvons maintenant commander les produits auprès de nos partenaires. L'objectif est d'alimenter nos entrepôts. Dès la livraison, un tri est fait de sorte à ce que les produits de notre stock soient classés non pas par fournisseur, mais par gamme.
-	- _Marts_ ; Les produits sont sortis du stock et mis en rayon. Les prix au kilo et prix au litre sont calculés et nous mettons en avant les informations utiles concernant les articles, telles que la provenance et les allergènes. En bref, tout est fait pour satisfaire le client et l'aider dans ses décisions d'achat.
+En effet, certains de nos fournisseurs sont basés à Barcelone et le catalogue qu'ils nous présentent est en espagnol. Nous avons également un partenaire à Hastings au Sud-Est de Londres. Non seulement son catalogue est en anglais mais en plus les prix sont exprimés en livre sterling. Et je ne te parle même pas des unités de mesures...
+
+- _Staging_ ; Un pré-traitement de l'ensemble des catalogues est fait ; même langue, mêmes unités et prix en €uros. A cette étape, chaque catalogue est analysé indépendamment des autres, le but étant d'uniformiser. 
+- _Intermediate_ ; Nous pouvons maintenant commander les produits auprès de nos partenaires. L'objectif est d'alimenter nos entrepôts. Dès la livraison, un tri est fait de sorte à ce que les produits de notre stock soient classés non pas par fournisseur, mais par gamme.
+- _Marts_ ; Les produits sont sortis du stock et mis en rayon. Les prix au kilo et prix au litre sont calculés et nous mettons en avant les informations utiles concernant les articles, telles que la provenance et les allergènes. En bref, tout est fait pour satisfaire le client et l'aider dans ses décisions d'achat.
+
+----
 
 ### Source
 
