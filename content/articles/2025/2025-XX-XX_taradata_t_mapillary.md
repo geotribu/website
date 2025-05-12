@@ -442,4 +442,16 @@ S'agissant de données géographiques, la table peut également être affichée 
 
 ### _Marts_
 
+----
+
+## Conclusion
+
+Ma conviction est que les métiers de la géomatique et de la data-science vont inévitablement se rapprocher, et certainement fusionner. D'ailleurs, j'ai déjà pu lire dans certaines signatures e-mails la mention "geodatascientist". Le travail de la géomaticienne/du géomaticien ne se limite plus à la production de cartes. Parallèlement, il parait invraisemblable qu'un data*ist puisse faire toute une carrière sans jamais traiter de données rattachées à un territoire.
+
+Dès lors, je trouve opportun de regarder, et de s'inspirer de, ce qu'il se fait dans ces deux mondes ; c'est ainsi que nous avons construit **Taradata**.
+
+Au travers de ces deux articles (et même trois avec celui de Satya), j'ai souhaité te montrer que les principes que nous avons empruntés à la data-science peuvent s'adapter aux besoins et contraintes de la géomatique. Avec Mapillary comme cas d'usage, nous avons vu comment extraire et charger des données avec Apache Airflow, puis comment les transformer avec DBT pour au final les exploiter dans QGIS. Cependant, j'aurais tout à fait pu te présenter ces outils en illustrant avec des thématiques plus éloignées de la géographie ; les finances ou les RH par exemple.
+
+Je suis conscient que mon propos est dense du fait notamment des nombreuses sections de code qui y apparaissent, que ce soit en Python ou en SQL. Je ne peux pas le nier, la mise en place d'une _Modern Data Stack_ géographique n'est pas triviale. La prise en main des différents outils demande du temps et de l'investissement. Pour autant, notre _stack_ est entièrement basée sur des briques _Open Source_ déployées _On Premise_. D'une part, cela nous apporte une forme de souveraineté. D'autre part, je suis convaincu que cet investissement sera rapidement rentabilisé. D'ailleurs, par investissement il est surtout question d'acquérir de nouvelles compétences et il me semble qu'on perd rarement son temps quand on apprend.
+
 <!-- geotribu:authors-block -->
