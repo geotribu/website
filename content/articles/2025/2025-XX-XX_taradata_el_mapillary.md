@@ -118,7 +118,7 @@ La responsabilité de l'exécution des tâches incombe à trois briques d'Apache
 
 Un _DAG_ et ses tâches associées décrivent les traitements à effectuer. Lorsque ceux-ci sont exécutés, on parle respectivement d'instance de _DAG_ et d'instance de tâche.
 
-Les instances de _DAG_ et de tâches ont des statuts qui renseignent sur l'état de leur exécution.
+Les instances de _DAG_ et de tâche ont des statuts qui renseignent sur l'état de leur exécution.
 
 Ainsi une instance de tâche passera de `queued` à `running` lorsqu'un _Worker_ la prendra en charge. Si le traitement se termine sans erreur, l'instance prendra l'état `success`. Dans le cas contraire, elle sera en `failed` ou en `up_for_retry` si plusieurs tentatives ont été paramétrées.
 
@@ -223,7 +223,7 @@ Nous aurions tout à fait pu créer 4000 tâches d'extraction des _features_, un
 
 Le _Scheduler_ détermine les tâches à exécuter et charge l'_Executor_ de transmettre le travail à faire aux _Workers_. Or, d'une part le nombre de _Workers_ est limité. Par exemple, sur notre infra nous en avons configurés 3, chacun pouvant exécuter 4 tâches soit un total de 12 tâches en parallèle au maximum. D'autre part, le mécanisme d'attribution des tâches aux _Workers_ prend un peu de temps. Sur des traitements massifs comme celui-ci, il est donc plus optimal de lancer moins de tâches, mais de faire faire à chacune plus de choses.
 
-L'idée est donc de répartir ces 4000 cellules à N tâches. Ainsi, pour une valeur de N à 8, chaque tâche aura à traiter 500 cellules. Le revers de la médaille est que plus la tâche doit faire de choses, plus il y aura de choses à refaire en cas d'échec et de réexécution. Nous verrons plus bas comment nous avons gérer cette contrainte.
+L'idée est donc de répartir ces 4000 cellules à N tâches. Ainsi, pour une valeur de N à 8, chaque tâche aura à traiter 500 cellules. Le revers de la médaille est que plus la tâche doit faire de choses, plus il y aura de choses à refaire en cas d'échec et de réexécution. Nous verrons plus bas comment nous avons géré cette contrainte.
 
 Ci-dessous, la _CTE_ de répartition des cellules à N tâches.
 
