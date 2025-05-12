@@ -1,6 +1,6 @@
 ---
 title: "Extraction et chargement des features Mapillary avec Apache Airflow"
-subtitle: "Extraction et chargement de données géographiques avec une Modern Data Stack basée sur l'orchestrateur Apache Airflow"
+subtitle: "Un bol d'air frais pour tes données."
 authors:
     - Michaël GALIEN
 categories:
