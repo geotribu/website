@@ -359,14 +359,84 @@ Après exécution du modèle, la vue est disponible et requêtable dans l'entrep
 
 La phase intermédiaire (que nous avons décidé d'appeler _warehouses_ puisqu'il est question d'organiser son stock de données) et pour moi l'étape primordiale. C'est grâce à elle que tu vas t'approprier les données collectées et façonner le modèle de données qui te permettra, à l'étape suivante, de répondre aux besoins de tes utilisateurs.
 
-Si lors du _staging_, chaque source est analysée indépendamment des autres, il va être question ici de les combiner, de les comparer, de les restructurer, de les filtrer...bref de faire des multiples sources un ensemble cohérent de données. Par exemple, si nous collectons des données depuis [Hubeau](https://hubeau.eaufrance.fr/) et [Vigicrues](https://www.vigicrues.gouv.fr/), ces deux sources ne font plus qu'une après le passage en _warehouses_ pour nous fournir des informations à propos de l'état des cours d'eau dans le Gard.
+Si lors du _staging_, chaque source est analysée indépendamment des autres, il va être question ici de les combiner, de les comparer, de les restructurer, de les filtrer...bref de faire des multiples sources un ensemble cohérent de données. Pour prendre un exemple, si nous collectons des données depuis [Hubeau](https://hubeau.eaufrance.fr/) et [Vigicrues](https://www.vigicrues.gouv.fr/), ces deux sources ne font plus qu'une après le passage en _warehouses_ pour nous fournir des informations à propos de l'état des cours d'eau dans le Gard.
 
-Concernant les _features_ Mapillary, nous allons profiter de cette étape pour :
+Dans notre cas, nous essayons à cette étape de nous rapprocher d'un modèle relationnel normalisé, même s'il faut bien avouer que nous nous autorisons quelques écarts. Concernant les _features_ Mapillary, nous allons profiter de cette étape pour :
 
 - isoler les éléments de signalisation routière,
 - ne conserver que les éléments à moins de 10 mètres d'une route départementale.
 
 Sur ce dernier point, nous avions pris soin lors de l'EL de ne conserver que les cellules à proximité du réseau. Malgré tout, chacune couvre environ 90 hectares et une partie seulement de cette surface peut se trouver réellement à 10 mètres d'une route.
+
+Tu peux voir dans le YAML que, si nous mentionnons Mapillary dans le documentation, le schéma lui porte désormais un nom "métier" (`wrh_signalisation_routiere`).
+
+```yml
+version: 2
+
+models:
+  - name: wrh_signalisation_routiere__signalisations_verticales
+    description: >
+      Les panneaux de signalisation à proximité (10 m) des routes départementales présentes dans le référentiel routier.
+      Les données sont issues de [Mapillary](https://www.mapillary.com).
+    config:
+      alias: signalisations_verticales
+      schema: wrh_signalisation_routiere
+      indexes:
+        - columns: ["nature"]
+        - columns: ['geom']
+          type: 'gist'
+    columns:
+      - name: id_signalisation_verticale
+        description: "L'identifiant de la signalisation verticale."
+      - name: date_heure_premiere_detection
+        description: "La date et l'heure de première détection de cette signalisation."
+      - name: date_heure_derniere_detection
+        description: "La date et l'heure de dernière détection de cette signalisation."
+      - name: nature
+        description: "La nature de la signalisation, cf. [documentation Mapillary](https://www.mapillary.com/developer/api-documentation/traffic-signs?locale=fr_FR)"
+      - name: alignement
+        description: "L'alignement du panneau."
+      - name: geom
+        description: "La localisation ponctuelle du panneau."
+```
+
+Dans le SQL, l'appel à `ST_DWithin` nous permet d'ignorer les éléments à plus de 10 mètres des tronçons du référentiel routier.
+
+```sql
+with elements as (
+    select *
+    from {{ ref("stg_mapillary_com__elements") }}
+),
+troncons as (
+    select *
+    from {{ ref("wrh_referentiel_routier__troncons") }}
+),
+filtre_signalisation_proximite_route_departementale as (
+    select
+        id_element as id_signalisation_verticale,
+        date_heure_premiere_detection,
+        date_heure_derniere_detection,
+        nature,
+        alignement,
+        geom
+    from elements e
+    where categorie = 'trafficsign'
+    and exists (
+        select *
+        from troncons t
+        where not t.fictif
+        and ST_DWithin(t.geom, e.geom, 10)
+    )
+)
+select *
+from filtre_signalisation_proximite_route_departementale
+```
+
+L'exécution du modèle aboutit à la création de la table dans l'entrepôt.
+
+![Signalisation routière extraite de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/warehouses.png "Signalisation routière extraite de Mapillary"){: .img-center loading=lazy }
+
+S'agissant de données géographiques, la table peut également être affichée dans QGIS.
 
 ### _Marts_
 
