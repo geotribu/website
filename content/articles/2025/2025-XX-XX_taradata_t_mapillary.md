@@ -143,7 +143,7 @@ L'architecture en médaillon n'est pas propre à DBT. Il s'agit d'un modèle de 
 
 L'objectif est de garantir l’atomicité et la cohérence des traitements en isolant les différentes étapes de transformation dans des couches spécifiques.
 
-![Architecture en médaillon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/medallion_architecture.png "Architecture en médaillon"){: .img-center loading=lazy }
+![Architecture en médaillon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/architecture_medaillon.png "Architecture en médaillon"){: .img-center loading=lazy }
 
 Cette approche présente des similitudes avec l'architecture logicielle en 3 couches où chaque strate (et même chaque classe en programmation orientée objet) a une [responsabilité unique](https://fr.wikipedia.org/wiki/Principe_de_responsabilit%C3%A9_unique) ; la couche d'accès aux données, la couche métier et la couche de présentation.
 
@@ -353,7 +353,7 @@ Tu peux voir que la requête s'appuie aussi bien sur des opérateurs et fonction
 
 Après exécution du modèle, la vue est disponible et requêtable dans l'entrepôt.
 
-![Staging des _features_ Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/staging.png "Staging des _features_ Mapillary"){: .img-center loading=lazy }
+![Staging des _features_ Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/stg_mapillary_com__elements.png "Staging des _features_ Mapillary"){: .img-center loading=lazy }
 
 ### _Intermediate_ (ou _Warehouses_)
 
@@ -434,9 +434,11 @@ from filtre_signalisation_proximite_route_departementale
 
 L'exécution du modèle aboutit à la création de la table dans l'entrepôt.
 
-![Signalisation routière extraite de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/warehouses.png "Signalisation routière extraite de Mapillary"){: .img-center loading=lazy }
+![Signalisation routière extraite de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/wrh_signalisation_routiere__signalisations_verticales.png "Signalisation routière extraite de Mapillary"){: .img-center loading=lazy }
 
 S'agissant de données géographiques, la table peut également être affichée dans QGIS.
+
+![Affichage de la signalisation routière dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/signalisation_routiere_qgis.jpg "Affichage de la signalisation routière dans QGIS"){: .img-center loading=lazy }
 
 ### _Marts_
 
