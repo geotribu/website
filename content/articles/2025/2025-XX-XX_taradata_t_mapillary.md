@@ -48,7 +48,7 @@ Tout comme Apache Airflow, DBT est un outil "as code" qui mélange [SQL](https:/
 
 L'avantage de DBT est qu'il ne vient pas en coupure du moteur de bases de données sous-jacent mais, qu'au contraire, il s'appuie pleinement sur ce dernier. De fait, toute la puissance du moteur est là, entre tes mains. Avoue que c'est vraiment un plus quand on dispose d'un système extensible tel que [PostgreSQL](https://www.postgresql.org/) pour, au hasard, traiter des données géographiques avec [PostGIS](https://postgis.net/). 
 
-Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` puisque c'est DBT qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
+Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` ou d'`alter` puisque c'est DBT qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
 
 Difficile, impossible même, pour moi de faire de toi un expert DBT en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille, [comme Satya a déjà pu le faire dans son article](https://geotribu.fr/articles/2025/2025-02-25_stack_data_gard/), de visionner [la playlist DBT de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT). 
 
@@ -186,7 +186,7 @@ C'est probablement le point fort de DBT ; sa capacité à déterminer le lignage
 
 Imagine, tu récupères le tout dernier millésime de la [BD TOPO®](https://geoservices.ign.fr/bdtopo) et tu dois reconstruire toutes les données qui dépendent du thème commune. _"Quels sont les processus que je dois relancer ? Est-ce que je dois faire celui-là avant celui-ci ? Peut-être que je peux lancer ces deux transformations en même temps pour aller plus vite, mais peut-être pas."_. Bref, la galère !
 
-Grâce à DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles. 
+Avec DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles. 
 
 ![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/lignage.png "Lignage des données"){: .img-center loading=lazy }
 
@@ -235,7 +235,7 @@ Cette documentation est ensuite visualisable au travers d'une page Web que DBT p
 
 ![Documentation d'un modèle DBT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_generate.png "Documentation d'un modèle DBT"){: .img-center loading=lazy }
 
-Il est également possible de demander à DBT de persister la documentation dans les [commentaires](https://www.postgresql.org/docs/current/sql-comment.html) de tables, vues et colonnes PostgreSQL. Ainsi, la description est directement visualisable dans QGIS.
+Il est également possible de demander à DBT de persister la documentation dans les [commentaires](https://www.postgresql.org/docs/current/sql-comment.html) des tables, vues et colonnes PostgreSQL. Ainsi, la description est directement visualisable dans QGIS.
 
 ![Documentation d'un modèle DBT vue dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_persist.png "Documentation d'un modèle DBT vue dans QGIS"){: .img-center loading=lazy }
 
