@@ -1,6 +1,6 @@
 ---
 title: "Transformation des features Mapillary avec DBT"
-subtitle: "Transformation de données géographiques avec une Modern Data Stack basée sur Data Build Tool (DBT)"
+subtitle: "Transformers & DeBepTicons"
 authors:
     - Michaël GALIEN
 categories:
@@ -235,7 +235,7 @@ Cette documentation est ensuite visualisable au travers d'une page Web que DBT p
 
 ![Documentation d'un modèle DBT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_generate.png "Documentation d'un modèle DBT"){: .img-center loading=lazy }
 
-Il est également possible de demander à DBT de persister la documentation dans les [commentaires](https://www.postgresql.org/docs/current/sql-comment.html) de tables/vues et colonnes PostgreSQL. Ainsi, la description est directement visualisable dans QGIS.
+Il est également possible de demander à DBT de persister la documentation dans les [commentaires](https://www.postgresql.org/docs/current/sql-comment.html) de tables, vues et colonnes PostgreSQL. Ainsi, la description est directement visualisable dans QGIS.
 
 ![Documentation d'un modèle DBT vue dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_persist.png "Documentation d'un modèle DBT vue dans QGIS"){: .img-center loading=lazy }
 
@@ -355,7 +355,18 @@ Après exécution du modèle, la vue est disponible et requêtable dans l'entrep
 
 ![Staging des _features_ Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/staging.png "Staging des _features_ Mapillary"){: .img-center loading=lazy }
 
-### _Warehouses_ (ou _Intermediate_)
+### _Intermediate_ (ou _Warehouses_)
+
+La phase intermédiaire (que nous avons décidé d'appeler _warehouses_ puisqu'il est question d'organiser son stock de données) et pour moi l'étape primordiale. C'est grâce à elle que tu vas t'approprier les données collectées et façonner le modèle de données qui te permettra, à l'étape suivante, de répondre aux besoins de tes utilisateurs.
+
+Si lors du _staging_, chaque source est analysée indépendamment des autres, il va être question ici de les combiner, de les comparer, de les restructurer, de les filtrer...bref de faire des multiples sources un ensemble cohérent de données. Par exemple, si nous collectons des données depuis [Hubeau](https://hubeau.eaufrance.fr/) et [Vigicrues](https://www.vigicrues.gouv.fr/), ces deux sources ne font plus qu'une après le passage en _warehouses_ pour nous fournir des informations à propos de l'état des cours d'eau dans le Gard.
+
+Concernant les _features_ Mapillary, nous allons profiter de cette étape pour :
+
+- isoler les éléments de signalisation routière,
+- ne conserver que les éléments à moins de 10 mètres d'une route départementale.
+
+Sur ce dernier point, nous avions pris soin lors de l'EL de ne conserver que les cellules à proximité du réseau. Malgré tout, chacune couvre environ 90 hectares et une partie seulement de cette surface peut se trouver réellement à 10 mètres d'une route.
 
 ### _Marts_
 
