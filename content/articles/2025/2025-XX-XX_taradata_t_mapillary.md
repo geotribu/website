@@ -9,7 +9,7 @@ comments: true
 date: 2025-XX-XX
 description: Transformation avec DBT des features extraites via les API de Mapillary au sein de la Modern Data Stack du Gard.
 icon: fontawesome/solid/cubes-stacked
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/affiche.png
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/affiche.png TODO affiche à revoir après création du mart
 tags:
     - DBT
     - Jinja
@@ -43,6 +43,8 @@ Pour faire ces transformations, nous allons utiliser Data Build Tool ; [DBT](htt
 ![Logo DBT](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/dbt.png "Logo DBT"){: .img-thumbnail-left }
 
 DBT est un outil de transformation, et uniquement de transformation, de données. En d'autres termes, il est incapable de faire de l'extraction et du chargement et s'attend à ce que les données à transformer soit déjà dans l'entrepôt sous leur forme brute.
+
+Il existe en [version _Core Open Source_](https://github.com/dbt-labs/dbt-core) ou en [version Cloud avec abonnement](https://www.getdbt.com/pricing). Dans sa version _Open Source_ DBT n'est rien de plus qu'un outil en mode CLI (_Command Line Interface_).
 
 Tout comme Apache Airflow, DBT est un outil "as code" qui mélange [SQL](https://fr.wikipedia.org/wiki/Structured_Query_Language), [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)) et [YAML](https://fr.wikipedia.org/wiki/YAML). Il va donc te falloir réviser tes `select`, `from` et `where`. Cela dit, peut-on vraiment faire l'impasse sur le SQL quand on fait de la data, qu'elle soit géographique ou non ? Je ne pense pas :innocent:.
 
@@ -188,6 +190,7 @@ Imagine, tu récupères le tout dernier millésime de la [BD TOPO®](https://geo
 
 Avec DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles. 
 
+TODO - image à revoir après la création du mart signalisation_routiere
 ![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/lignage.png "Lignage des données"){: .img-center loading=lazy }
 
 Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des descendants d'une source ou d'un modèle en suffixant celui-ci d'un +, comme par exemple dans la commande suivante :
@@ -198,7 +201,7 @@ Ce lignage permet non seulement à DBT de savoir l'ordre dans lequel il doit fai
 
 ### Documentation des modèles
 
-C'est un autre avantage de DBT ; [il est possible de documenter](https://docs.getdbt.com/docs/build/documentation), en markdown, les modèles depuis le fichier YAML. Cette possibilité concerne aussi bien le modèle lui-même que les colonnes qui le constituent.
+C'est un autre avantage de DBT ; [il est possible de documenter](https://docs.getdbt.com/docs/build/documentation), en [markdown](https://fr.wikipedia.org/wiki/Markdown), les modèles depuis le fichier YAML. Cette possibilité concerne aussi bien le modèle lui-même que les colonnes qui le constituent.
 
 ```yml
 - name: wrh_hydrometrie__stations
@@ -245,7 +248,7 @@ Il est également possible de demander à DBT de persister la documentation dans
 
 Voyons maintenant comment DBT nous permet de transformer les _features_ de Mapillary, de leur forme brute JSON à une couche utilisable dans QGIS.
 
-### Best-practices
+### D'abord, les _best-practices_
 
 La structuration de notre projet DBT est largement inspirée des préconisations de l'éditeur consultables dans son [guide des bonnes pratiques](https://docs.getdbt.com/best-practices).
 
@@ -317,15 +320,15 @@ selections_typages_renommages as (
         distinct
         (feature ->> 'id')::bigint as id_element,
         
-        (feature ->> 'first_seen_at')::timestamp AS date_heure_premiere_detection,
-        (feature ->> 'last_seen_at')::timestamp AS date_heure_derniere_detection,
+        (feature ->> 'first_seen_at')::timestamp as date_heure_premiere_detection,
+        (feature ->> 'last_seen_at')::timestamp as date_heure_derniere_detection,
         
-        feature ->> 'object_type' AS categorie,
-        feature ->> 'object_value' AS nature,
-        (feature ->> 'aligned_direction')::numeric AS alignement,
+        feature ->> 'object_type' as type,
+        string_to_array(feature ->> 'object_value', '--') as valeur,
+        (feature ->> 'aligned_direction')::numeric as alignement,
 
-        (feature -> 'geometry' -> 'coordinates' ->> 0)::numeric AS longitude,
-        (feature -> 'geometry' -> 'coordinates' ->> 1)::numeric AS latitude
+        (feature -> 'geometry' -> 'coordinates' ->> 0)::numeric as longitude,
+        (feature -> 'geometry' -> 'coordinates' ->> 1)::numeric as latitude
         
     from features
     cross join jsonb_array_elements(informations -> 'data') feature
@@ -357,43 +360,50 @@ Après exécution du modèle, la vue est disponible et requêtable dans l'entrep
 
 ### _Intermediate_ (ou _Warehouses_)
 
-La phase intermédiaire (que nous avons décidé d'appeler _warehouses_ puisqu'il est question d'organiser son stock de données) et pour moi l'étape primordiale. C'est grâce à elle que tu vas t'approprier les données collectées et façonner le modèle de données qui te permettra, à l'étape suivante, de répondre aux besoins de tes utilisateurs.
+La phase intermédiaire (que nous avons décidé d'appeler _warehouses_ puisqu'il est question d'organiser son stock de données) et selon moi l'étape primordiale. C'est grâce à elle que tu vas t'approprier les données collectées et façonner le modèle de données qui te permettra, à l'étape suivante, de répondre aux besoins de tes utilisateurs.
 
 Si lors du _staging_, chaque source est analysée indépendamment des autres, il va être question ici de les combiner, de les comparer, de les restructurer, de les filtrer...bref de faire des multiples sources un ensemble cohérent de données. Pour prendre un exemple, si nous collectons des données depuis [Hubeau](https://hubeau.eaufrance.fr/) et [Vigicrues](https://www.vigicrues.gouv.fr/), ces deux sources ne font plus qu'une après le passage en _warehouses_ pour nous fournir des informations à propos de l'état des cours d'eau dans le Gard.
 
 Dans notre cas, nous essayons à cette étape de nous rapprocher d'un modèle relationnel normalisé, même s'il faut bien avouer que nous nous autorisons quelques écarts. Concernant les _features_ Mapillary, nous allons profiter de cette étape pour :
 
-- isoler les éléments de signalisation routière,
-- ne conserver que les éléments à moins de 10 mètres d'une route départementale.
+- isoler les panneaux de police de circulation,
+- affiner les noms des colonnes et traduire leur contenu,
+- ne conserver que les panneaux à moins de 10 mètres d'une route départementale.
 
 Sur ce dernier point, nous avions pris soin lors de l'EL de ne conserver que les cellules à proximité du réseau. Malgré tout, chacune couvre environ 90 hectares et une partie seulement de cette surface peut se trouver réellement à 10 mètres d'une route.
 
-Tu peux voir dans le YAML que, si nous mentionnons Mapillary dans le documentation, le schéma lui porte désormais un nom "métier" (`wrh_signalisation_routiere`).
+Tu peux voir dans le YAML que, si nous mentionnons Mapillary dans le documentation, le schéma comme la table portent désormais un nom "métier" (`wrh_signalisation_routiere.panneaux_police`).
 
 ```yml
 version: 2
 
 models:
-  - name: wrh_signalisation_routiere__signalisations_verticales
+  - name: wrh_signalisation_routiere__panneaux_police
     description: >
-      Les panneaux de signalisation à proximité (10 m) des routes départementales présentes dans le référentiel routier.
+      Les panneaux de police de circulation à proximité (<= 10 mètres) des routes départementales présentes dans le référentiel routier.
       Les données sont issues de [Mapillary](https://www.mapillary.com).
+      Pour plus d'informations, voir la [documentation de Mapillary sur les panneaux de signalisation](https://www.mapillary.com/developer/api-documentation/traffic-signs?locale=fr_FR).
     config:
-      alias: signalisations_verticales
+      alias: panneaux_police
       schema: wrh_signalisation_routiere
       indexes:
-        - columns: ["nature"]
+        - columns: ["categorie"]
+        - columns: ["nom"]
         - columns: ['geom']
           type: 'gist'
     columns:
-      - name: id_signalisation_verticale
-        description: "L'identifiant de la signalisation verticale."
+      - name: id_panneau_police
+        description: "L'identifiant du panneau de police de circulation."
       - name: date_heure_premiere_detection
-        description: "La date et l'heure de première détection de cette signalisation."
+        description: "La date et l'heure de première détection du panneau."
       - name: date_heure_derniere_detection
-        description: "La date et l'heure de dernière détection de cette signalisation."
-      - name: nature
-        description: "La nature de la signalisation, cf. [documentation Mapillary](https://www.mapillary.com/developer/api-documentation/traffic-signs?locale=fr_FR)"
+        description: "La date et l'heure de dernière détection du panneau."
+      - name: categorie
+        description: "La catégorie du panneau selon Mapillary (ex : réglementaire, danger)."
+      - name: nom
+        description: "Le nom du panneau selon Mapillary."
+      - name: aspect
+        description: "L'aspect du panneau selon Mapillary."
       - name: alignement
         description: "L'alignement du panneau."
       - name: geom
@@ -407,20 +417,34 @@ with elements as (
     select *
     from {{ ref("stg_mapillary_com__elements") }}
 ),
+noms_panneaux as (
+    select *
+    from {{ ref("stg_mapillary_com__noms_panneaux") }}
+),
 troncons as (
     select *
     from {{ ref("wrh_referentiel_routier__troncons") }}
 ),
-filtre_signalisation_proximite_route_departementale as (
+jointures_selections as (
     select
-        id_element as id_signalisation_verticale,
-        date_heure_premiere_detection,
-        date_heure_derniere_detection,
-        nature,
-        alignement,
-        geom
+        e.id_element as id_panneau_police,
+        e.date_heure_premiere_detection,
+        e.date_heure_derniere_detection,
+        case e.valeur[1]
+            when 'complementary' then 'complémentaire'
+            when 'general' then 'général'
+            when 'information' then 'information'
+            when 'regulatory' then 'réglementaire'
+            when 'warning' then 'danger'
+            else e.valeur[1]
+        end as categorie,
+        coalesce(np.nom_fr, e.valeur[2]) as nom,
+        e.valeur[3] as aspect,
+        e.alignement,
+        e.geom
     from elements e
-    where categorie = 'trafficsign'
+    left join noms_panneaux np on np.valeur = e.valeur[2]
+    where e.type = 'trafficsign'
     and exists (
         select *
         from troncons t
@@ -429,16 +453,12 @@ filtre_signalisation_proximite_route_departementale as (
     )
 )
 select *
-from filtre_signalisation_proximite_route_departementale
+from jointures_selections
 ```
 
 L'exécution du modèle aboutit à la création de la table dans l'entrepôt.
 
-![Signalisation routière extraite de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/wrh_signalisation_routiere__signalisations_verticales.png "Signalisation routière extraite de Mapillary"){: .img-center loading=lazy }
-
-S'agissant de données géographiques, la table peut également être affichée dans QGIS.
-
-![Affichage de la signalisation routière dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/signalisation_routiere_qgis.jpg "Affichage de la signalisation routière dans QGIS"){: .img-center loading=lazy }
+![Panneaux de police de circulation extrait de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/wrh_signalisation_routiere__panneaux_police.png "Panneaux de police de circulation extrait de Mapillary"){: .img-center loading=lazy }
 
 ### _Marts_
 
