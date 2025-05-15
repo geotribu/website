@@ -48,11 +48,11 @@ Il existe en [version _Core Open Source_](https://github.com/dbt-labs/dbt-core) 
 
 Tout comme Apache Airflow, DBT adopte l'approche "as code" et mélange [SQL](https://fr.wikipedia.org/wiki/Structured_Query_Language), [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)) et [YAML](https://fr.wikipedia.org/wiki/YAML). Il va donc te falloir réviser tes `select`, `from` et `where`. Cela dit, peut-on vraiment faire l'impasse sur le SQL quand on fait de la data, qu'elle soit géographique ou non ? Je ne pense pas :innocent:.
 
-L'avantage de DBT est qu'il ne vient pas en coupure du moteur de bases de données sous-jacent mais, qu'au contraire, il s'appuie pleinement sur ce dernier. De fait, toute la puissance du moteur est là, entre tes mains. Avoue que c'est vraiment un plus quand on dispose d'un système extensible tel que [PostgreSQL](https://www.postgresql.org/) pour, au hasard, traiter des données géographiques avec [PostGIS](https://postgis.net/). 
+L'avantage de DBT est qu'il ne vient pas en coupure du moteur de bases de données sous-jacent mais, qu'au contraire, il s'appuie pleinement sur ce dernier. De fait, toute la puissance du moteur est là, entre tes mains. Avoue que c'est vraiment un plus quand on dispose d'un système extensible tel que [PostgreSQL](https://www.postgresql.org/) pour, au hasard, traiter des données géographiques avec [PostGIS](https://postgis.net/).
 
 Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` ou d'`alter` puisque c'est DBT qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
 
-Difficile, impossible même, pour moi de faire de toi un expert DBT en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille, [comme Satya a déjà pu le faire dans son article](https://geotribu.fr/articles/2025/2025-02-25_stack_data_gard/), de visionner [la playlist DBT de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT). 
+Difficile, impossible même, pour moi de faire de toi un expert DBT en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille, [comme Satya a déjà pu le faire dans son article](https://geotribu.fr/articles/2025/2025-02-25_stack_data_gard/), de visionner [la playlist DBT de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT).
 
 ### Sources
 
@@ -63,7 +63,7 @@ La déclaration des sources se fait via un fichier YAML.
 ```yml
 version: 2
 
-sources: 
+sources:
   - name: src_hubeau_eaufrance_fr
     tables:
       - name: stations
@@ -92,7 +92,7 @@ version: 2
 
 models:
   - name: stg_hubeau_eaufrance_fr__observations
-    config: 
+    config:
       alias: observations
       schema: stg_hubeau_eaufrance_fr
 ```
@@ -158,7 +158,7 @@ Concrètement, et dans la mesure où DBT se charge du DDL, il est question de lu
 En règle générale, les modèles sont organisés en couches suivant l'architecture en médaillon. Le mode de matérialisation est alors fixé au niveau du projet, dans le fichier [_dbt_project.yml_](https://docs.getdbt.com/reference/dbt_project.yml), pour l'ensemble des modèles d'une même couche.
 
 ```yml
-models: 
+models:
   taradata:
     2_staging:
       +materialized: view
@@ -188,13 +188,13 @@ C'est probablement le point fort de DBT ; sa capacité à déterminer le lignage
 
 Imagine, tu récupères le tout dernier millésime de la [BD TOPO®](https://geoservices.ign.fr/bdtopo) et tu dois reconstruire toutes les données qui dépendent du thème commune. _"Quels sont les processus que je dois relancer ? Est-ce que je dois faire celui-là avant celui-ci ? Peut-être que je peux lancer ces deux transformations en même temps pour aller plus vite, mais peut-être pas."_. Bref, la galère !
 
-Avec DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles. 
+Avec DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles.
 
 ![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/lignage.png "Lignage des données"){: .img-center loading=lazy }
 
 Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des descendants d'une source ou d'un modèle en suffixant celui-ci d'un +, comme par exemple dans la commande suivante :
 
-`dbt run --select source:src_ign_bdtopo.commune+` 
+`dbt run --select source:src_ign_bdtopo.commune+`
 
 Ce lignage permet non seulement à DBT de savoir l'ordre dans lequel il doit faire les transformations, mais il est aussi capable d'identifier les modèles indépendants et de les exécuter en parallèle.
 
@@ -263,7 +263,7 @@ S'il est indéniable qu'un effort de mise en avant des produits a été fait par
 
 En effet, certains de nos fournisseurs sont basés à Barcelone et le catalogue qu'ils nous présentent est en espagnol. Nous avons également un partenaire à Hastings au Sud-Est de Londres. Non seulement son catalogue est en anglais mais en plus les prix sont exprimés en livre sterling. Et je ne te parle même pas des unités de mesures...
 
-- _Staging_ ; Un pré-traitement de l'ensemble des catalogues est fait ; même langue, mêmes unités et prix en €uros. A cette étape, chaque catalogue est analysé indépendamment des autres, le but étant d'uniformiser. 
+- _Staging_ ; Un pré-traitement de l'ensemble des catalogues est fait ; même langue, mêmes unités et prix en €uros. A cette étape, chaque catalogue est analysé indépendamment des autres, le but étant d'uniformiser.
 - _Intermediate_ ; Nous pouvons maintenant commander les produits auprès de nos partenaires. L'objectif est d'alimenter nos entrepôts. Dès la livraison, un tri est fait de sorte à ce que les produits de notre stock soient classés non pas par fournisseur, mais par gamme.
 - _Marts_ ; Les produits sont sortis du stock et mis en rayon. Les prix au kilo et prix au litre sont calculés et nous mettons en avant les informations utiles concernant les articles, telles que la provenance et les allergènes. En bref, tout est fait pour satisfaire le client et l'aider dans ses décisions d'achat.
 
@@ -300,9 +300,9 @@ Ainsi, le fichier YAML suivant précise que le résultat d'exécution du modèle
 ```yml
 version: 2
 
-models: 
+models:
   - name: stg_mapillary_com__elements
-    config: 
+    config:
       alias: elements
       schema: stg_mapillary_com
 ```
@@ -318,17 +318,17 @@ selections_typages_renommages as (
     select
         distinct
         (feature ->> 'id')::bigint as id_element,
-        
+
         (feature ->> 'first_seen_at')::timestamp as date_heure_premiere_detection,
         (feature ->> 'last_seen_at')::timestamp as date_heure_derniere_detection,
-        
+
         feature ->> 'object_type' as type,
         string_to_array(feature ->> 'object_value', '--') as valeur,
         (feature ->> 'aligned_direction')::numeric as alignement,
 
         (feature -> 'geometry' -> 'coordinates' ->> 0)::numeric as longitude,
         (feature -> 'geometry' -> 'coordinates' ->> 1)::numeric as latitude
-        
+
     from features
     cross join jsonb_array_elements(informations -> 'data') feature
 ),
