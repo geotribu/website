@@ -451,7 +451,7 @@ Nous pouvons voir que les 8 tâches d'extraction et de chargement ne sont pas li
 
 Après exécution, la table `features` est disponible dans le schéma `src_mapillary_com` de l'entrepôt.
 
-Elle est constituée d'une unique colonne de type `jsonb` et contient un peu plus de 4000 lignes ; une par cellule. 
+Elle est constituée d'une unique colonne de type `jsonb` et contient un peu plus de 4000 lignes ; une par cellule.
 
 ![Table résultat de l'extraction et du chargement des _features_](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png "Table résultat de l'extraction et du chargement des _features_"){: .img-center loading=lazy }
 
@@ -638,11 +638,11 @@ def dag():
         )
 
         return http_helper.get_json(url, verify = False)
-    
+
     def divide_task_cells(extract_load_task_id: int):
         """
         Division des cellules non extraites et chargées en cellules de surface 4 fois inférieures.
-        
+
         extract_load_task_id : L'identifiant de la tâche d'extraction et de chargement pour laquelle il faut diviser les cellules.
         """
         postgresql_tasks.execute_sql_statement.function(
@@ -679,23 +679,23 @@ def dag():
 
             # pour chaque cellule :
             for cell in cells:
-                
+
                 # appel de l'API
                 features = call_map_features_api(cell)
 
-                if (len(features["data"]) < 2000): 
+                if (len(features["data"]) < 2000):
                     # si le résultat contient moins de 2000 éléments (limite de l'API)
-                    # alors, chargement du résultat dans la base de données                    
+                    # alors, chargement du résultat dans la base de données  
                     postgresql_tasks.execute_sql_statement.function(
                         taradata_storage,
                         """
                         update tmp_features
                         set informations = %(informations)s
                         where ST_Equals(geom, (%(geom)s)::geometry);
-                        """,    
+                        """,  
                         statement_params = {
                             "informations": json.dumps(features),
-                            "geom": cell["geom"] 
+                            "geom": cell["geom"]
                         },
                         search_path = f"{target_schema},public",
                         log_sql = False
