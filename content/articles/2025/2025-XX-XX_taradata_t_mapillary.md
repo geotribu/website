@@ -9,7 +9,7 @@ comments: true
 date: 2025-XX-XX
 description: Transformation avec DBT des features extraites via les API de Mapillary au sein de la Modern Data Stack du Gard.
 icon: fontawesome/solid/cubes-stacked
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/affiche.png TODO affiche à revoir après création du mart
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/affiche.png
 tags:
     - DBT
     - Jinja
@@ -46,7 +46,7 @@ DBT est un outil de transformation, et uniquement de transformation, de données
 
 Il existe en [version _Core Open Source_](https://github.com/dbt-labs/dbt-core) ou en [version Cloud avec abonnement](https://www.getdbt.com/pricing). Dans sa version _Open Source_ DBT n'est rien de plus qu'un outil en mode CLI (_Command Line Interface_).
 
-Tout comme Apache Airflow, DBT est un outil "as code" qui mélange [SQL](https://fr.wikipedia.org/wiki/Structured_Query_Language), [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)) et [YAML](https://fr.wikipedia.org/wiki/YAML). Il va donc te falloir réviser tes `select`, `from` et `where`. Cela dit, peut-on vraiment faire l'impasse sur le SQL quand on fait de la data, qu'elle soit géographique ou non ? Je ne pense pas :innocent:.
+Tout comme Apache Airflow, DBT adopte l'approche "as code" et mélange [SQL](https://fr.wikipedia.org/wiki/Structured_Query_Language), [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)) et [YAML](https://fr.wikipedia.org/wiki/YAML). Il va donc te falloir réviser tes `select`, `from` et `where`. Cela dit, peut-on vraiment faire l'impasse sur le SQL quand on fait de la data, qu'elle soit géographique ou non ? Je ne pense pas :innocent:.
 
 L'avantage de DBT est qu'il ne vient pas en coupure du moteur de bases de données sous-jacent mais, qu'au contraire, il s'appuie pleinement sur ce dernier. De fait, toute la puissance du moteur est là, entre tes mains. Avoue que c'est vraiment un plus quand on dispose d'un système extensible tel que [PostgreSQL](https://www.postgresql.org/) pour, au hasard, traiter des données géographiques avec [PostGIS](https://postgis.net/). 
 
@@ -190,7 +190,6 @@ Imagine, tu récupères le tout dernier millésime de la [BD TOPO®](https://geo
 
 Avec DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles. 
 
-TODO - image à revoir après la création du mart signalisation_routiere
 ![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/lignage.png "Lignage des données"){: .img-center loading=lazy }
 
 Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des descendants d'une source ou d'un modèle en suffixant celui-ci d'un +, comme par exemple dans la commande suivante :
@@ -284,7 +283,7 @@ sources:
       - name: features
 ```
 
-C'est là que se trouve le résultat d'extraction et de chargement des _features_.
+C'est là que se trouve le résultat de notre dur labeur d'extraction et de chargement des _features_ vu lors du précédent article.
 
 ![Table résultat de l'extraction et du chargement des _features_](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png "Table résultat de l'extraction et du chargement des _features_"){: .img-center loading=lazy }
 
@@ -360,7 +359,7 @@ Après exécution du modèle, la vue est disponible et requêtable dans l'entrep
 
 ### _Intermediate_ (ou _Warehouses_)
 
-La phase intermédiaire (que nous avons décidé d'appeler _warehouses_ puisqu'il est question d'organiser son stock de données) et selon moi l'étape primordiale. C'est grâce à elle que tu vas t'approprier les données collectées et façonner le modèle de données qui te permettra, à l'étape suivante, de répondre aux besoins de tes utilisateurs.
+La phase intermédiaire (que nous avons décidé d'appeler _warehouses_ puisqu'il est question d'organiser le stock de données) et selon moi l'étape primordiale. C'est grâce à elle que tu vas t'approprier les données collectées et façonner le modèle de données qui te permettra, à l'étape suivante, de répondre aux besoins de tes utilisateurs.
 
 Si lors du _staging_, chaque source est analysée indépendamment des autres, il va être question ici de les combiner, de les comparer, de les restructurer, de les filtrer...bref de faire des multiples sources un ensemble cohérent de données. Pour prendre un exemple, si nous collectons des données depuis [Hubeau](https://hubeau.eaufrance.fr/) et [Vigicrues](https://www.vigicrues.gouv.fr/), ces deux sources ne font plus qu'une après le passage en _warehouses_ pour nous fournir des informations à propos de l'état des cours d'eau dans le Gard.
 
@@ -461,6 +460,131 @@ L'exécution du modèle aboutit à la création de la table dans l'entrepôt.
 ![Panneaux de police de circulation extrait de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/wrh_signalisation_routiere__panneaux_police.png "Panneaux de police de circulation extrait de Mapillary"){: .img-center loading=lazy }
 
 ### _Marts_
+
+_Last but not least_, les _marts_ !
+
+L'objectif est simple, rendre la vie de tes utilisateurs plus simple et plus belle :hearts:. Comment fait-on ça ? Il y a plusieurs pistes.
+
+Tu peux commencer par mettre à plat les données, autrement dit, dénormaliser ton modèle. Imagine, tu as un modèle relationnel `communes -> départements -> régions`, et bien tu peux mettre l'ensemble des informations dans une même table pour éviter à ton utilisateur de devoir faire les jointures.
+
+Tu as probablement déjà entendu dire que la règle est de ne pas stocker les champs calculés en base de données ! Et bien il est temps pour toi d'enfreindre les règles. C'est un exemple un peu simpliste mais si tu as la date de début et la date de fin dans ton outil de suivi d'activités, alors tu peux calculer la durée de la tâche. Ton utilisateur pourra ainsi plus facilement identifier les activités de ces 3 derniers mois qui ont demandé plus de 2h.
+
+Et surtout, dans le cas d'une analyse orientée décisionnel, c'est le bon moment pour faire tes agrégats. Par exemple, tu pourras faire la somme de tes recettes et de tes dépenses par mois. Non seulement, cela facilitera le travail d'analyse de ton utilisateur qui aura accès aux chiffres consolidés, mais en plus ce sera plus rapide pour lui car déjà pré-calculé, surtout s'il est question de traiter de gros volumes.
+
+Pour le cas d'usage Mapillary, nous ne sommes clairement pas sur du décisionnel. L'idée est de mettre à disposition de l'utilisateur une couche géographique. Celle-ci sera agrémentée de nouveaux champs, par rapport au _warehouse_, qui devraient en faciliter l'exploitation.
+
+D'une part, avec la localisation du panneau, nous allons déterminer la commune sur laquelle il est implanté. Nous allons aussi indiquer à proximité de quelle route départementale il se trouve et donner sa localisation en [PR+Abscisse](https://fr.wikipedia.org/wiki/Point_de_rep%C3%A8re). Enfin, nous allons proposer à l'utilisateur l'URL d'accès directe au droit du panneau dans Mapillary. Il pourra alors visualiser les images ayant permis la détection et confirmer qu'il s'agit du bon panneau.
+
+Tout ceci est fait à l'aide de la requête suivante.
+
+```sql
+with panneaux_police as (
+    select *
+    from {{ ref("wrh_signalisation_routiere__panneaux_police") }}
+),
+communes as (
+    select *
+    from {{ ref("wrh_administratif__communes") }}
+),
+jointures_selections as (
+    select
+        pp.id_panneau_police,
+        pp.date_heure_premiere_detection,
+        pp.date_heure_derniere_detection,
+        pp.categorie,
+        pp.nom,
+        pp.aspect,
+        pp.alignement,
+        c.cog_commune,
+        c.nom as nom_commune,
+        pra.numero_route,
+        pra.pr_abs / 10000 as pr,
+        pra.pr_abs % 10000 as abs,
+        concat({{ point_to_mapillary("pp.geom", 20) }}, '&trafficSign=all') as url_mapillary,
+        pp.geom
+    from panneaux_police pp
+    inner join communes c on ST_Intersects(pp.geom, c.geom)
+    cross join lateral ({{ point_vers_pr_abs("pp.geom") }}) pra
+)
+select *
+from jointures_selections
+```
+
+La macro `point_to_mapillary` est une simple concaténation de chaînes qui exploite la localisation ponctuelle du panneau.
+
+```sql
+{% macro point_to_mapillary(point, zoom = 15) %}
+    concat('https://www.mapillary.com/app/?lat=', ST_Y(ST_Transform({{ point }}, 4326)), '&lng=', ST_X(ST_Transform({{ point }}, 4326)), '&z=', {{ zoom }})
+{% endmacro %}
+```
+
+Bien entendu, nous mettons à disposition de l'utilisateur la documentation du modèle.
+
+```yml
+version: 2
+
+models:
+  - name: mrt_signalisation_routiere__panneaux_police
+    description: >
+      Les panneaux de police de circulation à proximité (<= 10 mètres) des routes départementales présentes dans le référentiel routier.
+      Les données sont issues de [Mapillary](https://www.mapillary.com).
+      Pour plus d'informations, voir la [documentation de Mapillary sur les panneaux de signalisation](https://www.mapillary.com/developer/api-documentation/traffic-signs?locale=fr_FR).
+    config:
+      alias: panneaux_police
+      schema: mrt_signalisation_routiere
+      indexes:
+        - columns: ['geom']
+          type: 'gist'
+    columns:
+      - name: id_panneau_police
+        description: "L'identifiant du panneau de police de circulation."
+      - name: date_heure_premiere_detection
+        description: "La date et l'heure de première détection du panneau."
+      - name: date_heure_derniere_detection
+        description: "La date et l'heure de dernière détection du panneau."
+      - name: categorie
+        description: "La catégorie du panneau selon Mapillary (ex : réglementaire, danger)."
+      - name: nom
+        description: "Le nom du panneau selon Mapillary."
+      - name: aspect
+        description: "L'aspect du panneau selon Mapillary."
+      - name: alignement
+        description: "L'alignement du panneau."
+      - name: cog_commune
+        description: "Le Code Officiel Géographique de la commune."
+      - name: nom_commune
+        description: "Le nom de la commune."
+      - name: numero_route
+        description: "Le numéro de la route départementale à proximité."
+      - name: pr
+        description: "Le PR de localisation du panneau sur la route départementale."
+      - name: abs
+        description: "L'abscisse de localisation du panneau sur la route départementale."
+      - name: url_mapillary
+        description: "L'URL d'accès à Mapillary au droit du panneau."
+      - name: geom
+        description: "La localisation ponctuelle du panneau."
+```
+
+L'exécution du modèle crée la table `mrt_signalisation_routiere.panneaux_police` qu'il est possible d'afficher dans QGIS.
+
+![Panneaux de police de circulation vus avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_mrt_signalisation_routiere.panneaux_police.png "Panneaux de police de circulation vus avec QGIS"){: .img-center loading=lazy }
+
+Grâce aux différents champs, l'utilisateur peut filtrer les panneaux annonçant un danger sur la D999 à Nîmes.
+
+![Filtrage des panneaux de police de circulation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_filtre.png "Filtrage des panneaux de police de circulation"){: .img-center loading=lazy }
+
+Seuls les panneaux validant les critères s'affichent.
+
+![Panneaux de danger à Nîmes sur la D999](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_danger_d999_nimes.png "Panneaux de danger à Nîmes sur la D999"){: .img-center loading=lazy }
+
+Parmi les attributs, on retrouve l'URL d'accès à Mapillary.
+
+![Attributs des panneaux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_attributs.png "Attributs des panneaux"){: .img-center loading=lazy }
+
+Par un simple clic, l'utilisateur peut naviguer vers Mapillary et afficher les images du panneau.
+
+![Mapillary au droit du panneau](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/point_to_mapillary.png "Mapillary au droit du panneau"){: .img-center loading=lazy }
 
 ----
 
