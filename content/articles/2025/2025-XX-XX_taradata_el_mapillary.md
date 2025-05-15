@@ -1,6 +1,6 @@
 ---
 title: "Extraction et chargement des features Mapillary avec Apache Airflow"
-subtitle: "Un bol d'air frais pour tes données."
+subtitle: "Un article qui brasse de l'air et des data."
 authors:
     - Michaël GALIEN
 categories:
