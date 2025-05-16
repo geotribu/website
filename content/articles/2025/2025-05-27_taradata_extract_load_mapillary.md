@@ -26,7 +26,7 @@ tags:
 
 ![Logo Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Logo Mapillary"){: .img-thumbnail-left }
 
-Salut à toi chère lectrice/cher lecteur ! Dans son article intitulé ["L'enjeu de la data au département du Gard"](/articles/2025/2025-02-25_stack_data_gard/), [Satya](/team/satya-minguez/) t'explique comment nous avons combiné _Modern Data Stack_ (MDS) et géomatique au sein de notre _stack data_, qui porte le joli petit nom de **Taradata**.
+Salut à toi chère lectrice/cher lecteur ! Dans son article intitulé ["L'enjeu de la data au département du Gard"](./2025-02-25_stack_data_gard.md), [Satya](../../team/satya-minguez.md) t'explique comment nous avons combiné _Modern Data Stack_ (MDS) et géomatique au sein de notre _stack data_, qui porte le joli petit nom de **Taradata**.
 
 Le but : être en mesure de valoriser le patrimoine de données départemental (rien que ça !) et ainsi offrir aux élus, aux directions et aux services, les informations clés pour la prise de décisions et le suivi de leurs actions.
 
@@ -36,7 +36,7 @@ Les données sont extraites depuis leur source avant d'être chargées dans l'en
 
 Dans cet article, je vais t'expliquer comment nous utilisons Apache Airflow et Python pour extraire et charger dans notre entrepôt les [_features_ de Mapillary](https://help.mapillary.com/hc/en-us/articles/115002332165-Map-features). Dans un article à venir, tu pourras voir comment nous transformons cette donnée brute en une information utile à la direction des routes grâce à DBT.
 
-Ces deux articles te rappelleront peut-être [celui de Florian sur ce même sujet](/articles/2022/2022-05-31_donnees_mapillary/). Le script qu'il propose s'appuie sur les tuiles vectorielles. Notre approche quant à elle utilise les API. Deux départements limitrophes, une rivalité, et donc 2 façons de voir le monde ; le Gard ne pouvant pas faire comme l'Hérault (:kissing_heart: Florian). :three:, :two:, :one:, c'est parti !
+Ces deux articles te rappelleront peut-être [celui de Florian sur ce même sujet](../2022/2022-05-31_donnees_mapillary.md). Le script qu'il propose s'appuie sur les tuiles vectorielles. Notre approche quant à elle utilise les API. Deux départements limitrophes, une rivalité, et donc 2 façons de voir le monde ; le Gard ne pouvant pas faire comme l'Hérault (:kissing_heart: Florian). :three:, :two:, :one:, c'est parti !
 
 Ah non ! J'ai failli oublier. Si je tiens la plume AZERTY aujourd'hui, je me dois de remercier [Leo Pironti](https://www.linkedin.com/in/leo-pironti-379557293/) pour son travail sur le sujet. En effet, c'est Leo qui a rédigé la majeure partie du code que je m'apprête à te décrire. Ce travail, il l'a fait dans le cadre de son stage de première année de [BTS SIO à la CCI du Gard](https://lycee.gard.cci.fr/formations/bts-services-informatiques-aux-organisations-sio/). Alors merci Leo et cette fois :three:, :two:, :one:, c'est vraiment parti !!!
 
@@ -50,7 +50,7 @@ Apache Airflow est un outil d'orchestration orienté data. Son rôle est de déc
 
 ![Aperçu Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/demo_grid_view_with_task_logs.png "Aperçu Apache Airflow"){: .img-center loading=lazy }
 
-Ce n'est pas le seul outil à proposer cela, on peut par exemple citer [Dagster](https://dagster.io/), [Prefect](https://www.prefect.io/) ou encore le français [Kestra](https://kestra.io/) (Cocorico :flag_fr: !!!). Cependant, après étude, Apache Airflow nous a paru être la meilleure option pour répondre à nos objectifs et contraintes (voir [les commentaires dans l'article de Satya](/articles/2025/2025-02-25_stack_data_gard/#satya-minguez) pour plus de détails).
+Ce n'est pas le seul outil à proposer cela, on peut par exemple citer [Dagster](https://dagster.io/), [Prefect](https://www.prefect.io/) ou encore le français [Kestra](https://kestra.io/) (Cocorico :flag_fr: !!!). Cependant, après étude, Apache Airflow nous a paru être la meilleure option pour répondre à nos objectifs et contraintes (voir [les commentaires dans l'article de Satya](./2025-02-25_stack_data_gard.md#satya-minguez) pour plus de détails).
 
 Avant de rentrer dans le vif du sujet, voyons quelques concepts clés de l'outil.
 
@@ -189,7 +189,7 @@ Toujours pas de décorateur en vue, tout comme pour la création du schéma, le 
 
 Si tu es attentif, tu auras probablement remarqué que nous utilisons le type `jsonb`. Mais pourquoi diable faire cela ?!? La raison est simple, et nous l'avons dit plus haut, c'est parce que nous travaillons suivant un modèle ELT.
 
-En effet, les API de Mapillary retournent les résultats au format JSON. C'est ce résultat que nous allons stocker directement dans l'entrepôt. Après tout, n'en déplaise à [MongoDB](https://www.mongodb.com/), PostgreSQL se débrouille très bien avec le JSON comme nous l'explique [cet autre article de Thomas](/articles/2025/2025-01-21_travailler-avec-JSON-et-PostgreSQL/).
+En effet, les API de Mapillary retournent les résultats au format JSON. C'est ce résultat que nous allons stocker directement dans l'entrepôt. Après tout, n'en déplaise à [MongoDB](https://www.mongodb.com/), PostgreSQL se débrouille très bien avec le JSON comme nous l'explique [cet autre article de Thomas](./2025-01-21_travailler-avec-JSON-et-PostgreSQL.md).
 
 La transformation de ces données JSON en quelque chose d'exploitable, avec [QGIS](https://qgis.org/) par exemple, ne sera réalisée que par la suite avec DBT. Ce sera l'objet du prochain article.
 
@@ -226,7 +226,7 @@ cellules as (
 ),
 ```
 
-À noter que l'API attend des coordonnées en WGS84 pour la _bbox_, les distances sont donc exprimées en degrés. La valeur `0.01` correspond à des cellules d'environ 800 mètres * 1100 mêtres. Parmi elles, seules celles à moins de `0.0001` d'un tronçon (environ 10 mètres) sont conservées grâce à l'appel à `ST_DWithin`. Tout ceci est approximatif et comme Loïc nous l'a démontré dans sa série d'articles, [en SIG il faut être tolérant](/articles/2024/2024-08-08_de-la-tolerance-en-sig-geometrie-04-postgis-oracle-ms-sql-server/).
+À noter que l'API attend des coordonnées en WGS84 pour la _bbox_, les distances sont donc exprimées en degrés. La valeur `0.01` correspond à des cellules d'environ 800 mètres * 1100 mêtres. Parmi elles, seules celles à moins de `0.0001` d'un tronçon (environ 10 mètres) sont conservées grâce à l'appel à `ST_DWithin`. Tout ceci est approximatif et comme Loïc nous l'a démontré dans sa série d'articles, [en SIG il faut être tolérant](../2024/2024-08-08_de-la-tolerance-en-sig-geometrie-04-postgis-oracle-ms-sql-server.md).
 
 Au regard du réseau géré par le département du Gard, ce sont ici plus de 4000 cellules qui sont retournées.
 
