@@ -52,7 +52,7 @@ L'avantage de DBT est qu'il ne vient pas en coupure du moteur de bases de donné
 
 Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` ou d'`alter` puisque c'est DBT qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
 
-Difficile, impossible même, pour moi de faire de toi un expert DBT en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille, [comme Satya a déjà pu le faire dans son article](https://geotribu.fr/articles/2025/2025-02-25_stack_data_gard/), de visionner [la playlist DBT de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT).
+Difficile, impossible même, pour moi de faire de toi un expert DBT en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille, [comme Satya a déjà pu le faire dans son article](/articles/2025/2025-02-25_stack_data_gard/), de visionner [la playlist DBT de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT).
 
 ### Sources
 
