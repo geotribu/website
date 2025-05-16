@@ -83,7 +83,7 @@ Il est construit avec un couple SQL+Jinja / YAML :
 - Le SQL+Jinja va porter la requête `select` de transformation des données.
 - Le YAML va quant à lui donner les informations utiles à DBT pour générer la partie DDL en précisant par exemple le schéma et le nom de la table ou de la vue de stockage.
 
-En aucun cas, le SQL ne doit accéder directement à une table ou une vue de l'entrepôt. Les `from` doivent à la place faire référence à une source, via le template Jinja `{{ source("<source_name>", "<table_name>") }}`, ou à un autre modèle, via le template Jinja `{{ ref("<model_name>") }}`.
+En aucun cas, le SQL ne doit accéder directement à une table ou une vue de l'entrepôt. Les `from` doivent à la place faire référence à une source, via le template Jinja {% raw %}`{{ source("<source_name>", "<table_name>") }}`{% endraw %}, ou à un autre modèle, via le template Jinja {% raw %}`{{ ref("<model_name>") }}`{% endraw %}.
 
 Voici par exemple un modèle de transformation des observations extraites et chargées dans l'entrepôt au format JSON depuis l'[API Hydrométrie de Hubeau](https://hubeau.eaufrance.fr/page/api-hydrometrie).
 
@@ -96,6 +96,8 @@ models:
       alias: observations
       schema: stg_hubeau_eaufrance_fr
 ```
+
+{% raw %}
 
 ```sql
 with observations as (
@@ -121,6 +123,8 @@ select *
 from selections_typages_renommages
 ```
 
+{% endraw %}
+
 ### Macros
 
 Lorsqu'on souhaite factoriser du code, il est d'usage en bases de données de créer des procédures stockées. Avec DBT, on utilisera plutôt des [macros](https://docs.getdbt.com/docs/build/jinja-macros#macros).
@@ -129,11 +133,15 @@ Les macros sont des blocs de SQL réutilisables. Par exemple, dans la requête d
 
 Cette macro, nous l'avons développée pour faciliter les transformations de chaînes de caractères en dates et heures, tout en s'assurant que la conversion n'entraine pas une erreur par la validation préalable d'une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re).
 
+{% raw %}
+
 ```sql
 {% macro to_utc_timestamp_or_null(column, regexp_check, format) %}
     case when {{ column }} ~ '{{ regexp_check }}' then to_timestamp({{ column }}, '{{ format }}')::timestamp at time zone 'UTC' end
 {% endmacro %}
 ```
+
+{% endraw %}
 
 ### Architecture en médaillon
 
@@ -194,7 +202,9 @@ Avec DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dép
 
 Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des descendants d'une source ou d'un modèle en suffixant celui-ci d'un +, comme par exemple dans la commande suivante :
 
-`dbt run --select source:src_ign_bdtopo.commune+`
+```sh
+dbt run --select source:src_ign_bdtopo.commune+
+```
 
 Ce lignage permet non seulement à DBT de savoir l'ordre dans lequel il doit faire les transformations, mais il est aussi capable d'identifier les modèles indépendants et de les exécuter en parallèle.
 
@@ -287,7 +297,11 @@ C'est là que se trouve le résultat de notre dur labeur d'extraction et de char
 
 ![Table résultat de l'extraction et du chargement des _features_](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png "Table résultat de l'extraction et du chargement des _features_"){: .img-center loading=lazy }
 
-Il est possible d'associer aux sources des tags comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur DBT. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande `dbt run --select tag:monthly+`.
+Il est possible d'associer aux sources des tags comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur DBT. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande :
+
+```sh
+dbt run --select tag:monthly+
+```
 
 ### _Staging_
 
@@ -308,6 +322,8 @@ models:
 ```
 
 Le fichier SQL quant à lui détermine comment le `jsonb` est transformé.
+
+{% raw %}
 
 ```sql
 with features as (
@@ -345,13 +361,19 @@ select *
 from geolocalisations
 ```
 
+{% endraw %}
+
 Tu peux voir que la requête s'appuie aussi bien sur des opérateurs et fonctions propres à PostgreSQL ([`->>`](https://www.postgresql.org/docs/9.5/functions-json.html#FUNCTIONS-JSON-OP-TABLE), [`jsonb_array_elements`](https://www.postgresql.org/docs/9.5/functions-json.html#FUNCTIONS-JSON-PROCESSING-TABLE)) que sur des macros développées pas nos soins. Voici par exemple le code de la macro `make_2d_point_4326`.
+
+{% raw %}
 
 ```sql
 {% macro make_2d_point_2154(x, y) %}
     ST_SetSRID(ST_MakePoint({{ x }}, {{ y }}), 2154)
 {% endmacro %}
 ```
+
+{% endraw %}
 
 Après exécution du modèle, la vue est disponible et requêtable dans l'entrepôt.
 
@@ -411,6 +433,8 @@ models:
 
 Dans le SQL, l'appel à `ST_DWithin` nous permet d'ignorer les éléments à plus de 10 mètres des tronçons du référentiel routier.
 
+{% raw %}
+
 ```sql
 with elements as (
     select *
@@ -455,6 +479,8 @@ select *
 from jointures_selections
 ```
 
+{% endraw %}
+
 L'exécution du modèle aboutit à la création de la table dans l'entrepôt.
 
 ![Panneaux de police de circulation extrait de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/wrh_signalisation_routiere__panneaux_police.png "Panneaux de police de circulation extrait de Mapillary"){: .img-center loading=lazy }
@@ -476,6 +502,8 @@ Pour le cas d'usage Mapillary, nous ne sommes clairement pas sur du décisionnel
 D'une part, avec la localisation du panneau, nous allons déterminer la commune sur laquelle il est implanté. Nous allons aussi indiquer à proximité de quelle route départementale il se trouve et donner sa localisation en [PR+Abscisse](https://fr.wikipedia.org/wiki/Point_de_rep%C3%A8re). Enfin, nous allons proposer à l'utilisateur l'URL d'accès directe au droit du panneau dans Mapillary. Il pourra alors visualiser les images ayant permis la détection et confirmer qu'il s'agit du bon panneau.
 
 Tout ceci est fait à l'aide de la requête suivante.
+
+{% raw %}
 
 ```sql
 with panneaux_police as (
@@ -510,13 +538,19 @@ select *
 from jointures_selections
 ```
 
+{% endraw %}
+
 La macro `point_to_mapillary` est une simple concaténation de chaînes qui exploite la localisation ponctuelle du panneau.
+
+{% raw %}
 
 ```sql
 {% macro point_to_mapillary(point, zoom = 15) %}
     concat('https://www.mapillary.com/app/?lat=', ST_Y(ST_Transform({{ point }}, 4326)), '&lng=', ST_X(ST_Transform({{ point }}, 4326)), '&z=', {{ zoom }})
 {% endmacro %}
 ```
+
+{% endraw %}
 
 Bien entendu, nous mettons à disposition de l'utilisateur la documentation du modèle.
 
