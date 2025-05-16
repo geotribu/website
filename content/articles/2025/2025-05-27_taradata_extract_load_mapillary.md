@@ -106,7 +106,7 @@ Apache Airflow scrute à intervalles réguliers un répertoire dans lequel les f
 
 <!-- markdownlint-disable MD046 -->
 
-!!! info "Airflow 3.0 est sorti"
+!!! info "Apache Airflow 3.0 est sorti !"
     Au moment où j'écris ces lignes, la version 3.0 d'Apache Airflow vient de sortir.
 
     Celle-ci arrive avec de nombreuses nouveautés. Il est désormais possible de spécifier plusieurs emplacements pour les fichiers .py des _DAGs_ via les [_DAG bundles_](https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/dag-bundles.html). Il semble même possible de demander à Apache Airflow de charger les _DAGs_ directement depuis un repository Git.
