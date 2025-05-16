@@ -1,0 +1,27 @@
+{% if page.meta.social %}
+<ul class="author-social-links">
+    {% for network, value in page.meta.social.items() %}
+    {% if value %}
+    {% if network == "mastodon" and value.username and value.instance %}
+    <li>
+        <a href="https://{{ value.instance }}/@{{ value.username }}" target="_blank" rel="noopener">
+            <i class="fab fa-mastodon"></i> Mastodon
+        </a>
+    </li>
+    {% elif network == "website" %}
+    <li>
+        <a href="{{ value }}" target="_blank" rel="noopener">
+            <i class="fas fa-globe"></i> Website
+        </a>
+    </li>
+    {% else %}
+    <li>
+        <a href="https://{{ network }}.com/{{ value }}" target="_blank" rel="noopener">
+            <i class="fab fa-{{ network }}"></i> {{ network|capitalize }}
+        </a>
+    </li>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
