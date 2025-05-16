@@ -42,6 +42,7 @@
 {% if page and page.meta and page.meta.description %}
 {% set description = page.meta.description | striptags %}
 {% elif page and page_type == "author_profile" %}
+{% include "partials/contributors_social.html.jinja" %}
 {% set description = "Profil Geotribu de " + page.title | striptags %}
 {% elif page and page.description and not page.is_homepage %}
 {% set description = page.description | striptags %}
