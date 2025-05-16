@@ -32,7 +32,7 @@ Salut everybody, tout le monde ! Ça y est, c'est le deuxième article !
 
 Dans le précédent opus, nous avons vu comment [Apache Airflow](https://airflow.apache.org/) nous permet d'extraire et de charger les [_features_ de Mapillary](https://help.mapillary.com/hc/en-us/articles/115002332165-Map-features) à proximité de réseau routier départemental gardois.
 
-Cette fois, nous allons transformer les données pour les rendre exploitables avec [QGIS](https://qgis.org/) car, souviens-toi, nous avions stocker directement les éléments retournés par les API au format JSON.
+Cette fois, nous allons transformer les données pour les rendre exploitables avec [QGIS](https://qgis.org/) car, souviens-toi, nous avions stocké directement les éléments retournés par les API au format JSON.
 
 Pour faire ces transformations, nous allons utiliser Data Build Tool ; [DBT](https://www.getdbt.com/) pour les intimes.
 
