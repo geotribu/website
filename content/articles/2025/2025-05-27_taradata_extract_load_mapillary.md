@@ -38,7 +38,7 @@ Dans cet article, je vais t'expliquer comment nous utilisons Apache Airflow et P
 
 Ces deux articles te rappelleront peut-être [celui de Florian sur ce même sujet](../2022/2022-05-31_donnees_mapillary.md). Le script qu'il propose s'appuie sur les tuiles vectorielles. Notre approche quant à elle utilise les API. Deux départements limitrophes, une rivalité, et donc 2 façons de voir le monde ; le Gard ne pouvant pas faire comme l'Hérault (:kissing_heart: Florian). :three:, :two:, :one:, c'est parti !
 
-Ah non ! J'ai failli oublier. Si je tiens la plume AZERTY aujourd'hui, je me dois de remercier [Leo Pironti](https://www.linkedin.com/in/leo-pironti-379557293/) pour son travail sur le sujet. En effet, c'est Leo qui a rédigé la majeure partie du code que je m'apprête à te décrire. Ce travail, il l'a fait dans le cadre de son stage de première année de [BTS SIO à la CCI du Gard](https://lycee.gard.cci.fr/formations/bts-services-informatiques-aux-organisations-sio/). Alors merci Leo et cette fois :three:, :two:, :one:, c'est vraiment parti !!!
+Ah non ! J'ai failli oublier. Si je tiens la plume AZERTY aujourd'hui, je me dois de remercier [Leo Pironti](https://www.linkedin.com/in/leo-pironti-379557293/) pour son travail sur le sujet. En effet, c'est Leo qui a rédigé la majeure partie du code que je m'apprête à te décrire. Ce travail, il l'a fait dans le cadre de son stage de première année de [BTS SIO à la CCI du Gard](https://lycee.gard.cci.fr/formations/bts-services-informatiques-aux-organisations-sio/). Je remercie également [Romain Mazière](https://www.linkedin.com/in/rmaziere/) pour m'avoir fait découvrir Apache Airflow. Allez, cette fois :three:, :two:, :one:, c'est vraiment parti !!!
 
 ----
 
@@ -104,10 +104,16 @@ mon_dag()
 
 Apache Airflow scrute à intervalles réguliers un répertoire dans lequel les fichiers .py des _DAGs_ doivent être déposés. Aussi, il suffit d'enregistrer ce fichier à l'emplacement qui convient pour le voir apparaitre, après un petit délai d'interprétation, dans l'IHM d'Apache Airflow.
 
+<!-- markdownlint-disable MD046 -->
+
 !!! info "Airflow 3.0 est sorti"
     Au moment où j'écris ces lignes, la version 3.0 d'Apache Airflow vient de sortir.
+
     Celle-ci arrive avec de nombreuses nouveautés. Il est désormais possible de spécifier plusieurs emplacements pour les fichiers .py des _DAGs_ via les [_DAG bundles_](https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/dag-bundles.html). Il semble même possible de demander à Apache Airflow de charger les _DAGs_ directement depuis un repository Git.
+
     Pour plus d'informations sur la version 3.0, tu peux consulter le blog d'[Apache Airflow](https://airflow.apache.org/blog/airflow-three-point-oh-is-here/).
+
+<!-- markdownlint-enable MD046 -->
 
 ### _Scheduler_, _Executor_ et _Workers_
 
