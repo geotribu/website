@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2025-XX-XX
+date: 2025-05-27
 description: Utilisation des API de Mapillary au sein de la Modern Data Stack du Gard pour extraire et charger des objets détectés (features) sur les images.
 icon: fontawesome/solid/cubes-stacked
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/affiche.png
@@ -26,9 +26,9 @@ tags:
 
 ![Logo Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Logo Mapillary"){: .img-thumbnail-left }
 
-Salut à toi chère lectrice/cher lecteur ! Dans son article intitulé ["L'enjeu de la data au département du Gard"](https://geotribu.fr/articles/2025/2025-02-25_stack_data_gard/), [Satya](https://geotribu.fr/team/satya-minguez/) t'explique comment nous avons combiné _Modern Data Stack_ (MDS) et géomatique au sein de notre _stack data_, qui porte le joli petit nom de **Taradata**.
+Salut à toi chère lectrice/cher lecteur ! Dans son article intitulé ["L'enjeu de la data au département du Gard"](/articles/2025/2025-02-25_stack_data_gard/), [Satya](/team/satya-minguez/) t'explique comment nous avons combiné _Modern Data Stack_ (MDS) et géomatique au sein de notre _stack data_, qui porte le joli petit nom de **Taradata**.
 
-Le but ; être en mesure de valoriser le patrimoine de données départemental (rien que ça !) et ainsi offrir aux élus, aux directions et aux services, les informations clés pour la prise de décisions et le suivi de leurs actions.
+Le but : être en mesure de valoriser le patrimoine de données départemental (rien que ça !) et ainsi offrir aux élus, aux directions et aux services, les informations clés pour la prise de décisions et le suivi de leurs actions.
 
 Conformément aux principes de la MDS, Taradata est construite de façon modulaire avec notamment [PostgreSQL](https://www.postgresql.org/)/[PostGIS](https://postgis.net/) pour l'entreposage des données, [Apache Airflow](https://airflow.apache.org/) pour l'orchestration des traitements et [DBT](https://www.getdbt.com/) pour les transformations.
 
@@ -36,7 +36,7 @@ Les données sont extraites depuis leur source avant d'être chargées dans l'en
 
 Dans cet article, je vais t'expliquer comment nous utilisons Apache Airflow et Python pour extraire et charger dans notre entrepôt les [_features_ de Mapillary](https://help.mapillary.com/hc/en-us/articles/115002332165-Map-features). Dans un article à venir, tu pourras voir comment nous transformons cette donnée brute en une information utile à la direction des routes grâce à DBT.
 
-Ces deux articles te rappelleront peut-être [celui de Florian sur ce même sujet](https://geotribu.fr/articles/2022/2022-05-31_donnees_mapillary/). Le script qu'il propose s'appuie sur les tuiles vectorielles. Notre approche quant à elle utilise les API. Deux départements limitrophes, une rivalité, et donc 2 façons de voir le monde ; le Gard ne pouvant pas faire comme l'Hérault (:kissing_heart: Florian). :three:, :two:, :one:, c'est parti !
+Ces deux articles te rappelleront peut-être [celui de Florian sur ce même sujet](/articles/2022/2022-05-31_donnees_mapillary/). Le script qu'il propose s'appuie sur les tuiles vectorielles. Notre approche quant à elle utilise les API. Deux départements limitrophes, une rivalité, et donc 2 façons de voir le monde ; le Gard ne pouvant pas faire comme l'Hérault (:kissing_heart: Florian). :three:, :two:, :one:, c'est parti !
 
 Ah non ! J'ai failli oublier. Si je tiens la plume AZERTY aujourd'hui, je me dois de remercier [Leo Pironti](https://www.linkedin.com/in/leo-pironti-379557293/) pour son travail sur le sujet. En effet, c'est Leo qui a rédigé la majeure partie du code que je m'apprête à te décrire. Ce travail, il l'a fait dans le cadre de son stage de première année de [BTS SIO à la CCI du Gard](https://lycee.gard.cci.fr/formations/bts-services-informatiques-aux-organisations-sio/). Alors merci Leo et cette fois :three:, :two:, :one:, c'est vraiment parti !!!
 
@@ -50,7 +50,7 @@ Apache Airflow est un outil d'orchestration orienté data. Son rôle est de déc
 
 ![Aperçu Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/demo_grid_view_with_task_logs.png "Aperçu Apache Airflow"){: .img-center loading=lazy }
 
-Ce n'est pas le seul outil à proposer cela, on peut par exemple citer [Dagster](https://dagster.io/), [Prefect](https://www.prefect.io/) ou encore le français [Kestra](https://kestra.io/) (Cocorico :flag_fr: !!!). Cependant, après étude, Apache Airflow nous a paru être la meilleure option pour répondre à nos objectifs et contraintes (voir [les commentaires dans l'article de Satya](https://geotribu.fr/articles/2025/2025-02-25_stack_data_gard/#satya-minguez) pour plus de détails).
+Ce n'est pas le seul outil à proposer cela, on peut par exemple citer [Dagster](https://dagster.io/), [Prefect](https://www.prefect.io/) ou encore le français [Kestra](https://kestra.io/) (Cocorico :flag_fr: !!!). Cependant, après étude, Apache Airflow nous a paru être la meilleure option pour répondre à nos objectifs et contraintes (voir [les commentaires dans l'article de Satya](/articles/2025/2025-02-25_stack_data_gard/#satya-minguez) pour plus de détails).
 
 Avant de rentrer dans le vif du sujet, voyons quelques concepts clés de l'outil.
 
@@ -58,7 +58,7 @@ Avant de rentrer dans le vif du sujet, voyons quelques concepts clés de l'outil
 
 Avec Apache Airflow, un traitement est décrit comme un graphe acyclique dirigé ; un _DAG_ en _n'english_. Il s'agit d'un ensemble de tâches à exécuter, celles-ci pouvant être réalisées en séquence ou en parallèle. Un _DAG_ a un début et une fin et il est impossible de boucler d'où le "acyclique dirigé".
 
-Les fans de [FME](https://fme.safe.com/) ou autre ETL graphique risquent d'être bousculés en découvrant que la réalisation d'un _DAG_ se fait grâce à un script Python ; exit donc les glisser-déplacer dans une IHM, Apache Airflow adopte l'approche "as code".
+Les fans de [FME](https://fme.safe.com/) ou autre ETL graphique risquent d'être bousculés en découvrant que la réalisation d'un _DAG_ se fait grâce à un script Python ; exit donc les glisser-déplacer dans une IHM, Apache Airflow adopte l'approche "as code". Ici, nous utilisons majoritairement [Visual Studio Code](https://fr.wikipedia.org/wiki/Visual_Studio_Code) pour construire nos _DAGs_ mais d'autres options sont possibles.
 
 Si elle peut faire peur, cette approche présente plusieurs avantages. Elle facilite le travail collaboratif et permet le versionning via des outils tels que [Git](https://fr.wikipedia.org/wiki/Git). D'ailleurs, l'approche "as code" est plébiscitée dans d'autres domaines que celui de la data avec par exemple [Terraform](https://developer.hashicorp.com/terraform) pour la gestion des infrastructures.
 
@@ -102,6 +102,15 @@ def mon_dag():
 mon_dag()
 ```
 
+Apache Airflow scrute à intervalles réguliers un répertoire dans lequel les fichiers .py des _DAGs_ doivent être déposés. Aussi, il suffit d'enregistrer ce fichier à l'emplacement qui convient pour le voir apparaitre, après un petit délai d'interprétation, dans l'IHM d'Apache Airflow.
+
+!!! info "Airflow 3.0 est sorti"
+	Au moment où j'écris ces lignes, la version 3.0 d'Apache Airflow vient de sortir.
+
+	Celle-ci arrive avec de nombreuses nouveautés. Il est désormais possible de spécifier plusieurs emplacements pour les fichiers .py des _DAGs_ via les [_DAG bundles](https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/dag-bundles.html). Il semble même possible de demander à Apache Airflow de charger les _DAGs_ directement depuis un repository Git.
+
+	Pour plus d'informations sur la version 3.0, tu peux consulter le blog d'[Apache Airflow](https://airflow.apache.org/blog/airflow-three-point-oh-is-here/).
+
 ### _Scheduler_, _Executor_ et _Workers_
 
 Un _DAG_ correspond donc un ensemble de tâches à réaliser...mais il faut bien que quelqu'un s'occupe de les exécuter ces tâches justement !
@@ -109,7 +118,7 @@ Un _DAG_ correspond donc un ensemble de tâches à réaliser...mais il faut bien
 La responsabilité de l'exécution des tâches incombe à trois briques d'Apache Airflow :
 
 - Le _Scheduler_ : Il est responsable de la planification des tâches. Il décide quand elles doivent être exécutées en fonction du calendrier de lancement et de leurs dépendances.
-- L'_Executor_ : Il gère l'exécution des tâches planifiées par le _Scheduler_. [Plusieurs natures d'_Executor_ sont disponibles](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/index.html) et le type à utiliser est fixé par paramétrage. Par exemple, le `CeleryExecutor` est capable de distribuer l'exécution sur plusieurs serveurs.
+- L'_Executor_ : Il gère l'exécution des tâches planifiées par le _Scheduler_. [Plusieurs natures d'_Executor_ sont disponibles](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/index.html) et le type à utiliser est fixé par paramétrage. Par exemple, le [`CeleryExecutor`](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) est capable de distribuer l'exécution sur plusieurs serveurs.
 - Les _Workers_ : Ce sont les processus qui exécutent réellement les tâches. Ils reçoivent les tâches à faire du _Scheduler_ via l'_Executor_.
 
 ![Architecture d'Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/architecture_apache_airflow.jpg "Architecture d'Apache Airflow"){: .img-center loading=lazy }
@@ -180,7 +189,7 @@ Toujours pas de décorateur en vue, tout comme pour la création du schéma, le 
 
 Si tu es attentif, tu auras probablement remarqué que nous utilisons le type `jsonb`. Mais pourquoi diable faire cela ?!? La raison est simple, et nous l'avons dit plus haut, c'est parce que nous travaillons suivant un modèle ELT.
 
-En effet, les API de Mapillary retournent les résultats au format JSON. C'est ce résultat que nous allons stocker directement dans l'entrepôt. Après tout, n'en déplaise à [MongoDB](https://www.mongodb.com/), PostgreSQL se débrouille très bien avec le JSON comme nous l'explique [cet autre article de Thomas](https://geotribu.fr/articles/2025/2025-01-21_travailler-avec-JSON-et-PostgreSQL/).
+En effet, les API de Mapillary retournent les résultats au format JSON. C'est ce résultat que nous allons stocker directement dans l'entrepôt. Après tout, n'en déplaise à [MongoDB](https://www.mongodb.com/), PostgreSQL se débrouille très bien avec le JSON comme nous l'explique [cet autre article de Thomas](/articles/2025/2025-01-21_travailler-avec-JSON-et-PostgreSQL/).
 
 La transformation de ces données JSON en quelque chose d'exploitable, avec [QGIS](https://qgis.org/) par exemple, ne sera réalisée que par la suite avec DBT. Ce sera l'objet du prochain article.
 
@@ -194,11 +203,11 @@ create_schema_task >> create_table_task
 
 Bien, passons aux choses sérieuses !
 
-L'API de Mapillary permet de récupérer les _features_ présentes dans une _bbox_ passée en paramètre d'appel. Cependant, [la documentation](https://www.mapillary.com/developer/api-documentation?locale=fr_FR#map-feature) précise que ce sont au maximum 2000 _features_ qui seront renvoyées sans possibilité d'itérer sur les résultats suivants ; l'API n'étant pas paginée.
+L'API de Mapillary permet de récupérer les _features_ présentes dans une [_bbox_](https://en.wikipedia.org/wiki/Minimum_bounding_rectangle) passée en paramètre d'appel. Cependant, [la documentation](https://www.mapillary.com/developer/api-documentation?locale=fr_FR#map-feature) précise que ce sont au maximum 2000 _features_ qui seront renvoyées sans possibilité d'itérer sur les résultats suivants ; l'API n'étant pas paginée.
 
 Comme seuls les éléments à proximité du réseau routier départemental nous intéressent, nous allons calculer une grille sur l'emprise du référentiel routier et ne conserver que les cellules à proximité immédiate d'un tronçon.
 
-Ceci est fait grâce aux 2 [_CTE_](https://www.postgresql.org/docs/current/queries-with.html) suivantes. À noter que l'API attend des coordonnées en WGS84 pour la _bbox_, les distances sont donc exprimées en degrés.
+Ceci est fait grâce aux 2 [_CTE_](https://www.postgresql.org/docs/current/queries-with.html) suivantes.
 
 ``` sql
 with emprise as (
@@ -216,6 +225,8 @@ cellules as (
     )
 ),
 ```
+
+À noter que l'API attend des coordonnées en WGS84 pour la _bbox_, les distances sont donc exprimées en degrés. La valeur `0.01` correspond à des cellules d'environ 800 mètres * 1100 mêtres. Parmi elles, seules celles à moins de `0.0001` d'un tronçon (environ 10 mètres) sont conservées grâce à l'appel à `ST_DWithin`. Tout ceci est approximatif et comme Loïc nous l'a démontré dans sa série d'articles, [en SIG il faut être tolérant](/articles/2024/2024-08-08_de-la-tolerance-en-sig-geometrie-04-postgis-oracle-ms-sql-server/).
 
 Au regard du réseau géré par le département du Gard, ce sont ici plus de 4000 cellules qui sont retournées.
 
@@ -298,9 +309,9 @@ Bien que nous ayons calculé une grille assez fine, il arrive que, sur certaines
 
 Si en revanche le nombre de _features_ retournées est en dessous du seuil, alors le JSON retourné est sauvegardé en base de données.
 
-En sortie de boucle `pour chaque`, les cellules qui n'ont pas de JSON associé sont divisées en nouvelles cellules plus petites à extraire/charger.
+En sortie de boucle `pour chaque`, les cellules qui n'ont pas de JSON associé sont celles pour lesquelles le seuil des 2000 éléments a été atteint. Celles-ci sont alors divisées en plus petites cellules de sorte à diminuer la taille de la _bbox_ d'appel afin de passer en dessous du seuil.
 
-La liste des cellules à extraire/charger est à nouveau récupérée si bien que la sortie de la boucle `tant qu'il y a` n'interviendra qu'une fois que la totalité de l'emprise souhaitée aura pu être extraite.
+De nouvelles cellules sont donc potentiellement créées à la sortie de la boucle `pour chaque`. Pour cette raison, la boucle `pour chaque` est incluse dans une autre boucle `tant qu'il y a` qui à chaque itération récupère à nouveau la liste des cellules à extraire et charger. Grâce à cela, la tâche ne sera terminée que lorsque les _features_ de toutes les cellules auront été extraites.
 
 #### Récupération de la liste des cellules à traiter
 
@@ -349,6 +360,8 @@ def call_map_features_api(cell: dict):
 ```
 
 L'appel à `http_helper.get_json` fait référence à une fonction présente dans notre boîte à outils. Celle-ci s'appuie sur la bibliothèque Python `requests`.
+
+Par ailleurs, Apache Airflow propose [la gestion de connexions](https://airflow.apache.org/docs/apache-airflow/stable/howto/connection.html) ce qui permet de ne pas avoir à faire apparaitre les secrets (utilisateur, mot de passe, token, ...) dans le code source. Ici, la variable `mapillary_conn` est globale au _DAG_ et a été initialisée grâce à la méthode [`get_connection_from_secrets`](https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/models/connection/index.html#airflow.models.connection.Connection.get_connection_from_secrets). Elle contient dans son champ `password` le token qui nous permet d'interroger l'API de Mapillary.
 
 #### Chargement des données
 
@@ -407,7 +420,7 @@ compute_cells_task >> extract_load_features_tasks
 
 ### Tâche 5 – écrasement de la table destination
 
-Après chargement, la table définitive de stockage des données est écrasée avec la table de chargement. Seul le champ `informations` est conservé, les autres champs n'étant utile que pour la phase d'EL.
+Après chargement, la table définitive de stockage des données est écrasée avec la table de chargement. Seul le champ `informations` est conservé, les autres champs n'étant utiles que pour la phase d'EL.
 
 ```py
 replace_table_task = postgresql_tasks.execute_sql_statement.override(task_id = "remplacer_table")(
@@ -424,6 +437,8 @@ replace_table_task = postgresql_tasks.execute_sql_statement.override(task_id = "
     search_path = target_schema
 )
 ```
+
+Le passage par la table temporaire `tmp_features` couplé à l'utilisation de la transaction `begin ... commit` nous assure la cohérence de l'entrepôt. En effet, en cas d'échec, la version antérieure des données extraites et chargées reste disponible.
 
 ### Planification du @dag et représentation graphique
 
