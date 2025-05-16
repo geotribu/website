@@ -106,7 +106,7 @@ Apache Airflow scrute à intervalles réguliers un répertoire dans lequel les f
 
 !!! info "Airflow 3.0 est sorti"
     Au moment où j'écris ces lignes, la version 3.0 d'Apache Airflow vient de sortir.
-    Celle-ci arrive avec de nombreuses nouveautés. Il est désormais possible de spécifier plusieurs emplacements pour les fichiers .py des _DAGs_ via les [_DAG bundles](https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/dag-bundles.html). Il semble même possible de demander à Apache Airflow de charger les _DAGs_ directement depuis un repository Git.
+    Celle-ci arrive avec de nombreuses nouveautés. Il est désormais possible de spécifier plusieurs emplacements pour les fichiers .py des _DAGs_ via les [_DAG bundles_](https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/dag-bundles.html). Il semble même possible de demander à Apache Airflow de charger les _DAGs_ directement depuis un repository Git.
     Pour plus d'informations sur la version 3.0, tu peux consulter le blog d'[Apache Airflow](https://airflow.apache.org/blog/airflow-three-point-oh-is-here/).
 
 ### _Scheduler_, _Executor_ et _Workers_
@@ -461,6 +461,8 @@ La première tâche `ignorer_si_dag_subséquent_en_cours`, que nous n'avons pas 
 Nous pouvons voir que les 8 tâches d'extraction et de chargement ne sont pas liées entre elles. Apache Airflow aura donc la possibilité de les exécuter en parallèle.
 
 ## Résultat
+
+La parallélisation par les _workers_ des 8 tâches d'extraction fait que le _DAG_ s'exécute en environ 6/7 minutes sur notre infrastructure.
 
 Après exécution, la table `features` est disponible dans le schéma `src_mapillary_com` de l'entrepôt.
 
