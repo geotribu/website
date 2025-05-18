@@ -209,6 +209,8 @@ Bien, passons aux choses sérieuses !
 
 L'API de Mapillary permet de récupérer les _features_ présentes dans une [_bbox_](https://en.wikipedia.org/wiki/Minimum_bounding_rectangle) passée en paramètre d'appel. Cependant, [la documentation](https://www.mapillary.com/developer/api-documentation?locale=fr_FR#map-feature) précise que ce sont au maximum 2000 _features_ qui seront renvoyées sans possibilité d'itérer sur les résultats suivants ; l'API n'étant pas paginée.
 
+Impossible donc d'appeler l'API en y passant le rectangle englobant du Gard. Il faut travailler avec une maille plus fine.
+
 Comme seuls les éléments à proximité du réseau routier départemental nous intéressent, nous allons calculer une grille sur l'emprise du référentiel routier et ne conserver que les cellules à proximité immédiate d'un tronçon.
 
 Ceci est fait grâce aux 2 [_CTE_](https://www.postgresql.org/docs/current/queries-with.html) suivantes.
