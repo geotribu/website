@@ -317,7 +317,7 @@ Si en revanche le nombre de _features_ retournées est en dessous du seuil, alor
 
 En sortie de boucle `pour chaque`, les cellules qui n'ont pas de JSON associé sont celles pour lesquelles le seuil des 2000 éléments a été atteint. Celles-ci sont alors divisées en plus petites cellules de sorte à diminuer la taille de la _bbox_ d'appel afin de passer en dessous du seuil.
 
-De nouvelles cellules sont donc potentiellement créées à la sortie de la boucle `pour chaque`. Pour cette raison, la boucle `pour chaque` est incluse dans une autre boucle `tant qu'il y a` qui à chaque itération récupère à nouveau la liste des cellules à extraire et charger. Grâce à cela, la tâche ne sera terminée que lorsque les _features_ de toutes les cellules auront été extraites.
+De nouvelles cellules sont donc potentiellement créées à la sortie de la boucle `pour chaque`. Pour cette raison, la boucle `pour chaque` est incluse dans une autre boucle `tant qu'il y a`. Cette dernière récupère à chaque itération la liste des cellules à extraire et charger. Grâce à cela, la tâche ne sera terminée que lorsque les _features_ de toutes les cellules auront été extraites.
 
 #### Récupération de la liste des cellules à traiter
 
