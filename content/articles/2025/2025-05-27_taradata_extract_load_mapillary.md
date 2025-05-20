@@ -72,7 +72,7 @@ A noter qu'il est possible de mixer, au sein d'un même _DAG_, les deux syntaxes
 
 Ci-dessous, un exemple de _DAG_ pour récupérer chaque heure la hauteur d'eau du Gardon à Anduze grâce à l'[API Hydrométrie de Hubeau](https://hubeau.eaufrance.fr/page/api-hydrometrie).
 
-``` py
+```py
 import requests
 from airflow.decorators import dag, task
 from datetime import datetime
@@ -149,7 +149,7 @@ Après cette entrée en matière sur Apache Airflow, voyons maintenant le script
 
 La première tâche de notre _DAG_ consiste en la création du schéma d'accueil dans l'entrepôt PostgreSQL.
 
-``` py
+```py
 create_schema_task = postgresql_tasks.create_schema(taradata_storage, target_schema)
 ```
 
@@ -157,7 +157,7 @@ Alors oui, on ne voit pas de décorateur `@task` ici. C'est simplement parce que
 
 Regardons donc le code de cette fonction.
 
-``` py
+```py
 @task(task_id = "créer_schéma")
 def create_schema(pg_storage: BasePostgreSQLDataStorage, schema: str):
     """
@@ -173,7 +173,7 @@ def create_schema(pg_storage: BasePostgreSQLDataStorage, schema: str):
 
 Avec cette seconde tâche, nous créons la table d'accueil des données que nous nous apprêtons à extraire.
 
-``` py
+```py
 create_table_task = postgresql_tasks.execute_sql_statement.override(task_id = "créer_table_temporaire")(
     taradata_storage,
     """
@@ -199,7 +199,7 @@ La transformation de ces données JSON en quelque chose d'exploitable, avec [QGI
 
 Avant de poursuivre, nous devons chaîner les tâches. En effet, il ne faut pas essayer de créer la table avant d'avoir terminé la création du schéma. Ceci est fait grâce à l'opérateur `>>`.
 
-``` py
+```py
 create_schema_task >> create_table_task
 ```
 
@@ -215,7 +215,7 @@ Comme seuls les éléments à proximité du réseau routier départemental nous 
 
 Ceci est fait grâce aux 2 [_CTE_](https://www.postgresql.org/docs/current/queries-with.html) suivantes.
 
-``` sql
+```sql
 with emprise as (
     select ST_Collect(geom) as geom
     from troncons_wgs84
@@ -244,7 +244,7 @@ L'idée est donc de répartir ces 4000 cellules à N tâches. Ainsi, pour une va
 
 Ci-dessous, la _CTE_ de répartition des cellules à N tâches.
 
-``` sql
+```sql
 repartition_aleatoire as (
     select geom, ntile(%(nb_taches)s) over(order by random()) as id_tache
     from cellules
@@ -253,7 +253,7 @@ repartition_aleatoire as (
 
 Ne reste plus qu'à insérer cette répartition aléatoire dans notre table de chargement, ce qui donne la requête globale suivante.
 
-``` sql
+```sql
 with emprise as (
     select ST_Collect(geom) as geom
     from troncons_wgs84
@@ -287,7 +287,7 @@ Nous pouvons alors afficher le résultat de cette répartition dans QGIS. De l'a
 
 Tout est prêt pour extraire et charger les données. Histoire de ne pas rentrer directement dans le dur, analysons d'abord l'entête et le pseudo-code de la tâche.
 
-``` py
+```py
 @task(task_id = "extraire_charger_features", retries = 3)
 def extract_load_features(extract_load_task_id: int):
     """
@@ -323,7 +323,7 @@ De nouvelles cellules sont donc potentiellement créées à la sortie de la bouc
 
 Cette étape consiste simplement à exécuter la requête suivante.
 
-``` sql
+```sql
 select
     geom,
     ST_XMin(geom) as x_min,
@@ -348,7 +348,7 @@ Sur chaque cellule, l'extraction se fait via un appel HTTP à l'API en passant e
 
 Nous avons encapsulé cet appel dans la fonction ci-dessous.
 
-``` py
+```py
 def call_map_features_api(cell: dict):
     """
     Appel à l'API d'extraction des "features" au format JSON pour une cellule donnée.
@@ -373,7 +373,7 @@ Par ailleurs, Apache Airflow propose [la gestion de connexions](https://airflow.
 
 Le chargement des données consiste en la mise à jour du champs `ìnformations` (type `jsonb`) de la table de chargement pour la géometrie correspondante.
 
-``` sql
+```sql
 update tmp_features
 set informations = %(informations)s
 where ST_Equals(geom, (%(geom)s)::geometry);
@@ -385,7 +385,7 @@ Les cellules pour lesquelles 2000 _features_ ont été retournées sont supprim�
 
 La suppression et l'ajout sont réalisés en un seul ordre SQL grâce au mot-clé [`returning`](https://www.postgresql.org/docs/current/dml-returning.html) qui permet de récupérer tout ou partie des champs des lignes modifiées.
 
-``` sql
+```sql
 with cellules_a_diviser as (
     delete
     from tmp_features
@@ -494,7 +494,7 @@ Concernant le déploiement, celui-ci est facilité via les [images Docker dispon
 
 ## Annexe - code complet du _DAG_
 
-``` py
+```py
 import gard.taradata.airflow.extensions.connection
 import gard.taradata.airflow.schedule as schedule
 import gard.taradata.airflow.tasks.dags.sensors as dags_sensors
