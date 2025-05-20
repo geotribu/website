@@ -4,7 +4,7 @@ categories:
     - contributeur
 social:
     - bluesky:
-    - github:
+    - github: https://github.com/Michael-cd30
     - gitlab:
     - linkedin: https://www.linkedin.com/in/micha%C3%ABl-galien/
     - mail:
@@ -13,7 +13,7 @@ social:
         - username:
     - openstreetmap:
     - osgeo:
-    - twitter: https://github.com/Michael-cd30
+    - twitter:
     - website:
 ---
 
