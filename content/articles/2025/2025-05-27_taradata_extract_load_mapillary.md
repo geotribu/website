@@ -450,7 +450,7 @@ Le passage par la table temporaire `tmp_features` couplé à l'utilisation de la
 
 L'ensemble des tâches est encapsulé dans un _DAG_ planifié de façon mensuelle.
 
-```py title="Entête du _DAG_ d'extraction/chargement des _features_ Mapillary"
+```py title="Entête du DAG d'extraction/chargement des _features_ Mapillary"
 @dag(dag_id = "extraction_et_chargement__mensuel__mapillary_com",
      start_date = datetime(1993, 1, 10),
      schedule_interval = schedule.get_dag_cron(tags.extract_and_load, tags.monthly),
