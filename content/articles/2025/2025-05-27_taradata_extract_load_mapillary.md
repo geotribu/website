@@ -72,7 +72,7 @@ Plusieurs options sont également disponibles pour créer un _DAG_ mais avec _Ta
 
 Ci-dessous, un exemple de _DAG_ pour récupérer chaque heure la hauteur d'eau du Gardon à Anduze grâce à l'[API Hydrométrie de Hubeau](https://hubeau.eaufrance.fr/page/api-hydrometrie).
 
-```py title="_DAG_ d'extraction/chargement de données depuis Hubeau"
+```py title="DAG d'extraction/chargement de données depuis Hubeau"
 import requests
 from airflow.decorators import dag, task
 from datetime import datetime
