@@ -26,7 +26,7 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-![Logo Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png "Logo Mapillary"){: .img-thumbnail-left }
+![Logo Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png){: .img-thumbnail-left }
 
 Salut everybody, tout le monde ! Ça y est, c'est le deuxième article !
 
@@ -40,7 +40,7 @@ Pour faire ces transformations, nous allons utiliser Data Build Tool ; [DBT](htt
 
 ## DBT
 
-![Logo DBT](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/dbt.png "Logo DBT"){: .img-thumbnail-left }
+![Logo DBT](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/dbt.png){: .img-thumbnail-left }
 
 DBT est un outil de transformation, et uniquement de transformation, de données. En d'autres termes, il est incapable de faire de l'extraction et du chargement et s'attend à ce que les données à transformer soit déjà dans l'entrepôt sous leur forme brute.
 
@@ -153,7 +153,7 @@ L'architecture en médaillon n'est pas propre à DBT. Il s'agit d'un modèle de 
 
 L'objectif est de garantir l’atomicité et la cohérence des traitements en isolant les différentes étapes de transformation dans des couches spécifiques.
 
-![Architecture en médaillon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/architecture_medaillon.png "Architecture en médaillon"){: .img-center loading=lazy }
+![Architecture en médaillon](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/architecture_medaillon.png){: .img-center loading=lazy }
 
 Cette approche présente des similitudes avec l'architecture logicielle en 3 couches où chaque strate (et même chaque classe en programmation orientée objet) a une [responsabilité unique](https://fr.wikipedia.org/wiki/Principe_de_responsabilit%C3%A9_unique) ; la couche d'accès aux données, la couche métier et la couche de présentation.
 
@@ -198,7 +198,7 @@ Imagine, tu récupères le tout dernier millésime de la [BD TOPO®](https://geo
 
 Avec DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles.
 
-![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/lignage.png "Lignage des données"){: .img-center loading=lazy }
+![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/lignage.png){: .img-center loading=lazy }
 
 Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des descendants d'une source ou d'un modèle en suffixant celui-ci d'un +, comme par exemple dans la commande suivante :
 
@@ -245,11 +245,11 @@ C'est un autre avantage de DBT ; [il est possible de documenter](https://docs.ge
 
 Cette documentation est ensuite visualisable au travers d'une page Web que DBT peut générer grâce à la commande `dbt docs generate`.
 
-![Documentation d'un modèle DBT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_generate.png "Documentation d'un modèle DBT"){: .img-center loading=lazy }
+![Documentation d'un modèle DBT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_generate.png){: .img-center loading=lazy }
 
 Il est également possible de demander à DBT de persister la documentation dans les [commentaires](https://www.postgresql.org/docs/current/sql-comment.html) des tables, vues et colonnes PostgreSQL. Ainsi, la description est directement visualisable dans QGIS.
 
-![Documentation d'un modèle DBT vue dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_persist.png "Documentation d'un modèle DBT vue dans QGIS"){: .img-center loading=lazy }
+![Documentation d'un modèle DBT vue dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/dbt_docs_persist.png){: .img-center loading=lazy }
 
 ----
 
@@ -295,7 +295,7 @@ sources:
 
 C'est là que se trouve le résultat de notre dur labeur d'extraction et de chargement des _features_ vu lors du précédent article.
 
-![Table résultat de l'extraction et du chargement des _features_](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png "Table résultat de l'extraction et du chargement des _features_"){: .img-center loading=lazy }
+![Table résultat de l'extraction et du chargement des _features_](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
 
 Il est possible d'associer aux sources des tags comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur DBT. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande :
 
@@ -377,7 +377,7 @@ Tu peux voir que la requête s'appuie aussi bien sur des opérateurs et fonction
 
 Après exécution du modèle, la vue est disponible et requêtable dans l'entrepôt.
 
-![Staging des _features_ Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/stg_mapillary_com__elements.png "Staging des _features_ Mapillary"){: .img-center loading=lazy }
+![Staging des _features_ Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/stg_mapillary_com__elements.png){: .img-center loading=lazy }
 
 ### _Intermediate_ (ou _Warehouses_)
 
@@ -483,7 +483,7 @@ from jointures_selections
 
 L'exécution du modèle aboutit à la création de la table dans l'entrepôt.
 
-![Panneaux de police de circulation extrait de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/wrh_signalisation_routiere__panneaux_police.png "Panneaux de police de circulation extrait de Mapillary"){: .img-center loading=lazy }
+![Panneaux de police de circulation extrait de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/wrh_signalisation_routiere__panneaux_police.png){: .img-center loading=lazy }
 
 ### _Marts_
 
@@ -602,23 +602,23 @@ models:
 
 L'exécution du modèle crée la table `mrt_signalisation_routiere.panneaux_police` qu'il est possible d'afficher dans QGIS.
 
-![Panneaux de police de circulation vus avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_mrt_signalisation_routiere.panneaux_police.png "Panneaux de police de circulation vus avec QGIS"){: .img-center loading=lazy }
+![Panneaux de police de circulation vus avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_mrt_signalisation_routiere.panneaux_police.png){: .img-center loading=lazy }
 
 Grâce aux différents champs, l'utilisateur peut filtrer les panneaux annonçant un danger sur la D999 à Nîmes.
 
-![Filtrage des panneaux de police de circulation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_filtre.png "Filtrage des panneaux de police de circulation"){: .img-center loading=lazy }
+![Filtrage des panneaux de police de circulation](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_filtre.png){: .img-center loading=lazy }
 
 Seuls les panneaux validant les critères s'affichent.
 
-![Panneaux de danger à Nîmes sur la D999](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_danger_d999_nimes.png "Panneaux de danger à Nîmes sur la D999"){: .img-center loading=lazy }
+![Panneaux de danger à Nîmes sur la D999](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_danger_d999_nimes.png){: .img-center loading=lazy }
 
 Parmi les attributs, on retrouve l'URL d'accès à Mapillary.
 
-![Attributs des panneaux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_attributs.png "Attributs des panneaux"){: .img-center loading=lazy }
+![Attributs des panneaux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/qgis_attributs.png){: .img-center loading=lazy }
 
 Par un simple clic, l'utilisateur peut naviguer vers Mapillary et afficher les images du panneau.
 
-![Mapillary au droit du panneau](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/point_to_mapillary.png "Mapillary au droit du panneau"){: .img-center loading=lazy }
+![Mapillary au droit du panneau](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_t_mapillary/point_to_mapillary.png){: .img-center loading=lazy }
 
 ----
 
