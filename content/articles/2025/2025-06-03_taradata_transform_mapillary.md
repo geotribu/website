@@ -60,7 +60,7 @@ Pour pouvoir faire les transformations, DBT a besoin de savoir où se trouvent l
 
 La déclaration des sources se fait via un fichier YAML.
 
-```yml
+```yml title="YAML de déclaration d'une source de données"
 version: 2
 
 sources:
@@ -87,7 +87,7 @@ En aucun cas, le SQL ne doit accéder directement à une table ou une vue de l'e
 
 Voici par exemple un modèle de transformation des observations extraites et chargées dans l'entrepôt au format JSON depuis l'[API Hydrométrie de Hubeau](https://hubeau.eaufrance.fr/page/api-hydrometrie).
 
-```yml
+```yml title="YAML de déclaration d'un modèle de données"
 version: 2
 
 models:
@@ -99,7 +99,7 @@ models:
 
 {% raw %}
 
-```sql
+```sql title="SQL de création d'un modèle de données par transformation d'une source"
 with observations as (
     select *
     from {{ source("src_hubeau_eaufrance_fr", "observations_tr")}}
@@ -135,7 +135,7 @@ Cette macro, nous l'avons développée pour faciliter les transformations de cha
 
 {% raw %}
 
-```sql
+```sql  title="Macro de conversion d'une chaîne de caractères en date et heure"
 {% macro to_utc_timestamp_or_null(column, regexp_check, format) %}
     case when {{ column }} ~ '{{ regexp_check }}' then to_timestamp({{ column }}, '{{ format }}')::timestamp at time zone 'UTC' end
 {% endmacro %}
@@ -165,7 +165,7 @@ Concrètement, et dans la mesure où DBT se charge du DDL, il est question de lu
 
 En règle générale, les modèles sont organisés en couches suivant l'architecture en médaillon. Le mode de matérialisation est alors fixé au niveau du projet, dans le fichier [_dbt_project.yml_](https://docs.getdbt.com/reference/dbt_project.yml), pour l'ensemble des modèles d'une même couche.
 
-```yml
+```yml title="Paramétrage de la matérialisation au niveau du projet DBT"
 models:
   taradata:
     2_staging:
@@ -202,7 +202,7 @@ Avec DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dép
 
 Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des descendants d'une source ou d'un modèle en suffixant celui-ci d'un +, comme par exemple dans la commande suivante :
 
-```sh
+```sh title="Exécution des modèles descendants de la source src_ign_bdtopo.commune"
 dbt run --select source:src_ign_bdtopo.commune+
 ```
 
@@ -212,7 +212,7 @@ Ce lignage permet non seulement à DBT de savoir l'ordre dans lequel il doit fai
 
 C'est un autre avantage de DBT ; [il est possible de documenter](https://docs.getdbt.com/docs/build/documentation), en [markdown](https://fr.wikipedia.org/wiki/Markdown), les modèles depuis le fichier YAML. Cette possibilité concerne aussi bien le modèle lui-même que les colonnes qui le constituent.
 
-```yml
+```yml title="Documentation d'un modèle et de ses champs"
 - name: wrh_hydrometrie__stations
   description: >
     Les stations hydrométriques du Gard et de ses départements limitrophes.
@@ -283,7 +283,7 @@ En effet, certains de nos fournisseurs sont basés à Barcelone et le catalogue 
 
 Avant toute chose, nous devons indiquer à DBT où se trouvent les données brutes grâce au fichier YAML suivant.
 
-```yml
+```yml title="Déclaration de la source de données src_mapillary_com"
 version: 2
 
 sources:
@@ -299,7 +299,7 @@ C'est là que se trouve le résultat de notre dur labeur d'extraction et de char
 
 Il est possible d'associer aux sources des tags comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur DBT. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande :
 
-```sh
+```sh title="Exécution des modèles descendants d'une source/d'un modèle portant le tag monthly"
 dbt run --select tag:monthly+
 ```
 
@@ -311,7 +311,7 @@ Comme dans notre exemple des catalogues de produits, nous allons dans cette éta
 
 Ainsi, le fichier YAML suivant précise que le résultat d'exécution du modèle doit être stocké dans la vue `elements` (matérialisation définie au niveau du projet) du schéma `stg_mapillary_com`.
 
-```yml
+```yml title="Déclaration du modèle de staging des features Mapillary"
 version: 2
 
 models:
@@ -325,7 +325,7 @@ Le fichier SQL quant à lui détermine comment le `jsonb` est transformé.
 
 {% raw %}
 
-```sql
+```sql title="Requête de transformation source -> staging"
 with features as (
     select *
     from {{ source("src_mapillary_com", "features") }}
@@ -367,7 +367,7 @@ Tu peux voir que la requête s'appuie aussi bien sur des opérateurs et fonction
 
 {% raw %}
 
-```sql
+```sql title="Macro de création d'un point 2D en Lambert 93"
 {% macro make_2d_point_2154(x, y) %}
     ST_SetSRID(ST_MakePoint({{ x }}, {{ y }}), 2154)
 {% endmacro %}
@@ -395,7 +395,7 @@ Sur ce dernier point, nous avions pris soin lors de l'EL de ne conserver que les
 
 Tu peux voir dans le YAML que, si nous mentionnons Mapillary dans le documentation, le schéma comme la table portent désormais un nom "métier" (`wrh_signalisation_routiere.panneaux_police`).
 
-```yml
+```yml title="Déclaration et documentation du modèle de données contenant les panneaux de police de circulation"
 version: 2
 
 models:
@@ -435,7 +435,7 @@ Dans le SQL, l'appel à `ST_DWithin` nous permet d'ignorer les éléments à plu
 
 {% raw %}
 
-```sql
+```sql title="Requête de transformation staging -> warehouses"
 with elements as (
     select *
     from {{ ref("stg_mapillary_com__elements") }}
@@ -505,7 +505,7 @@ Tout ceci est fait à l'aide de la requête suivante.
 
 {% raw %}
 
-```sql
+```sql title="Requête de transformation warehouses -> marts"
 with panneaux_police as (
     select *
     from {{ ref("wrh_signalisation_routiere__panneaux_police") }}
@@ -544,7 +544,7 @@ La macro `point_to_mapillary` est une simple concaténation de chaînes qui expl
 
 {% raw %}
 
-```sql
+```sql title="Macro de calcul d'une URL Mapillary au droit d'un point"
 {% macro point_to_mapillary(point, zoom = 15) %}
     concat('https://www.mapillary.com/app/?lat=', ST_Y(ST_Transform({{ point }}, 4326)), '&lng=', ST_X(ST_Transform({{ point }}, 4326)), '&z=', {{ zoom }})
 {% endmacro %}
@@ -554,7 +554,7 @@ La macro `point_to_mapillary` est une simple concaténation de chaînes qui expl
 
 Bien entendu, nous mettons à disposition de l'utilisateur la documentation du modèle.
 
-```yml
+```yml title="Déclaration et documentation du mart contenant les panneaux de police de circulation"
 version: 2
 
 models:
