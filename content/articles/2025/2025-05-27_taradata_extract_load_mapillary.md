@@ -1,6 +1,6 @@
 ---
-title: "Extraction et chargement des features Mapillary avec Apache Airflow"
-subtitle: "Un article qui brasse de l'air et des data."
+title: Extraction et chargement des features Mapillary avec Apache Airflow
+subtitle: Un article qui brasse de l'air et des data.
 authors:
     - Michaël GALIEN
 categories:
@@ -50,7 +50,7 @@ Apache Airflow est un outil d'orchestration orienté data. Son rôle est de déc
 
 ![Aperçu Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/demo_grid_view_with_task_logs.png){: .img-center loading=lazy }
 
-Ce n'est pas le seul outil à proposer cela, on peut par exemple citer [Dagster](https://dagster.io/), [Prefect](https://www.prefect.io/) ou encore le français [Kestra](https://kestra.io/) (Cocorico :flag_fr: !!!). Cependant, après étude, Apache Airflow nous a paru être la meilleure option pour répondre à nos objectifs et contraintes (voir [les commentaires dans l'article de Satya](./2025-02-25_stack_data_gard.md#satya-minguez) pour plus de détails).
+Ce n'est pas le seul outil à proposer cela, on peut par exemple citer [Dagster](https://dagster.io/), [Prefect](https://www.prefect.io/) ou encore le français [Kestra](https://kestra.io/) (Cocorico :flag_fr: !). Cependant, après étude, Apache Airflow nous a paru être la meilleure option pour répondre à nos objectifs et contraintes (voir [les commentaires dans l'article de Satya](./2025-02-25_stack_data_gard.md#satya-minguez) pour plus de détails).
 
 Avant de rentrer dans le vif du sujet, voyons quelques concepts clés de l'outil.
 
@@ -68,7 +68,7 @@ Désormais, la syntaxe [_TaskFlow_](https://airflow.apache.org/docs/apache-airfl
 
 Plusieurs options sont également disponibles pour créer un _DAG_ mais avec _TaskFlow_ le principe est identique ; un _DAG_ est une fonction Python décorée d'un `@dag`.
 
-A noter qu'il est possible de mixer, au sein d'un même _DAG_, les deux syntaxes.
+À noter qu'il est possible de mixer, au sein d'un même _DAG_, les deux syntaxes.
 
 Ci-dessous, un exemple de _DAG_ pour récupérer chaque heure la hauteur d'eau du Gardon à Anduze grâce à l'[API Hydrométrie de Hubeau](https://hubeau.eaufrance.fr/page/api-hydrometrie).
 
@@ -121,9 +121,9 @@ Un _DAG_ correspond donc un ensemble de tâches à réaliser...mais il faut bien
 
 La responsabilité de l'exécution des tâches incombe à trois briques d'Apache Airflow :
 
-- Le _Scheduler_ : Il est responsable de la planification des tâches. Il décide quand elles doivent être exécutées en fonction du calendrier de lancement et de leurs dépendances.
-- L'_Executor_ : Il gère l'exécution des tâches planifiées par le _Scheduler_. [Plusieurs natures d'_Executor_ sont disponibles](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/index.html) et le type à utiliser est fixé par paramétrage. Par exemple, le [`CeleryExecutor`](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) est capable de distribuer l'exécution sur plusieurs serveurs.
-- Les _Workers_ : Ce sont les processus qui exécutent réellement les tâches. Ils reçoivent les tâches à faire du _Scheduler_ via l'_Executor_.
+- Le _Scheduler_ : il est responsable de la planification des tâches. Il décide quand elles doivent être exécutées en fonction du calendrier de lancement et de leurs dépendances.
+- L'_Executor_ : il gère l'exécution des tâches planifiées par le _Scheduler_. [Plusieurs natures d'_Executor_ sont disponibles](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/index.html) et le type à utiliser est fixé par paramétrage. Par exemple, le [`CeleryExecutor`](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) est capable de distribuer l'exécution sur plusieurs serveurs.
+- Les _Workers_ : ce sont les processus qui exécutent réellement les tâches. Ils reçoivent les tâches à faire du _Scheduler_ via l'_Executor_.
 
 ![Architecture d'Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/architecture_apache_airflow.jpg){: .img-center loading=lazy }
 
@@ -446,7 +446,7 @@ replace_table_task = postgresql_tasks.execute_sql_statement.override(task_id = "
 
 Le passage par la table temporaire `tmp_features` couplé à l'utilisation de la transaction `begin ... commit` nous assure la cohérence de l'entrepôt. En effet, en cas d'échec, la version antérieure des données extraites et chargées reste disponible.
 
-### Planification du @dag et représentation graphique
+### Planification du _DAG_ et représentation graphique
 
 L'ensemble des tâches est encapsulé dans un _DAG_ planifié de façon mensuelle.
 
