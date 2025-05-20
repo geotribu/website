@@ -117,7 +117,7 @@ Apache Airflow scrute à intervalles réguliers un répertoire dans lequel les f
 
 ### _Scheduler_, _Executor_ et _Workers_
 
-Un _DAG_ correspond donc un ensemble de tâches à réaliser...mais il faut bien que quelqu'un s'occupe de les exécuter ces tâches justement !
+Un _DAG_ correspond donc à un ensemble de tâches à réaliser... Mais il faut bien que quelqu'un s'occupe de les exécuter ces tâches justement !
 
 La responsabilité de l'exécution des tâches incombe à trois briques d'Apache Airflow :
 
@@ -236,7 +236,7 @@ cellules as (
 
 Au regard du réseau géré par le département du Gard, ce sont ici plus de 4000 cellules qui sont retournées.
 
-Nous aurions tout à fait pu créer 4000 tâches d'extraction des _features_, une par cellule, mais il s'avère que cette approche n'est pas optimale...revenons un peu sur le fonctionnement d'Apache Airflow pour comprendre.
+Nous aurions tout à fait pu créer 4000 tâches d'extraction des _features_, une par cellule, mais il s'avère que cette approche n'est pas optimale... Revenons un peu sur le fonctionnement d'Apache Airflow pour comprendre.
 
 Le _Scheduler_ détermine les tâches à exécuter et charge l'_Executor_ de transmettre le travail à faire aux _Workers_. Or, d'une part le nombre de _Workers_ est limité. Par exemple, sur notre infra nous en avons configurés 3, chacun pouvant exécuter 4 tâches soit un total de 12 tâches en parallèle au maximum. D'autre part, le mécanisme d'attribution des tâches aux _Workers_ prend un peu de temps. Sur des traitements massifs comme celui-ci, il est donc plus optimal de lancer moins de tâches, mais de faire faire à chacune plus de choses.
 
@@ -444,7 +444,7 @@ replace_table_task = postgresql_tasks.execute_sql_statement.override(task_id = "
 )
 ```
 
-Le passage par la table temporaire `tmp_features` couplé à l'utilisation de la transaction `begin ... commit` nous assure la cohérence de l'entrepôt. En effet, en cas d'échec, la version antérieure des données extraites et chargées reste disponible.
+Le passage par la table temporaire `tmp_features` couplé à l'utilisation de la transaction `begin (...) commit` nous assure la cohérence de l'entrepôt. En effet, en cas d'échec, la version antérieure des données extraites et chargées reste disponible.
 
 ### Planification du _DAG_ et représentation graphique
 
