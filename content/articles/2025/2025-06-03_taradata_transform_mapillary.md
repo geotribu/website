@@ -1,6 +1,6 @@
 ---
-title: "Transformation des features Mapillary avec DBT"
-subtitle: "Transformers & DeBepTicons"
+title: Transformation des features Mapillary avec DBT
+subtitle: Transformers & DeBepTicons
 authors:
     - Michaël GALIEN
 categories:
