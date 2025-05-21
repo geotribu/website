@@ -249,7 +249,7 @@ Cette documentation est ensuite visualisable au travers d'une page Web que DBT p
 
 Il est également possible de demander à DBT de persister la documentation dans les [commentaires](https://www.postgresql.org/docs/current/sql-comment.html) des tables, vues et colonnes PostgreSQL. Ainsi, la description est directement visualisable dans QGIS.
 
-![Documentation d'un modèle DBT vue dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/dbt_docs_persist.png){: .img-center loading=lazy }
+![Affichage de la documentation d'un modèle DBT dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/dbt_docs_persist.png){: .img-center loading=lazy }
 
 ----
 
@@ -295,7 +295,7 @@ sources:
 
 C'est là que se trouve le résultat de notre dur labeur d'extraction et de chargement des _features_ vu lors du précédent article.
 
-![Table résultat de l'extraction et du chargement des _features_](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
+![Table résultat de l'extraction et du chargement des features](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
 
 Il est possible d'associer aux sources des tags comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur DBT. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande :
 
@@ -377,7 +377,7 @@ Tu peux voir que la requête s'appuie aussi bien sur des opérateurs et fonction
 
 Après exécution du modèle, la vue est disponible et requêtable dans l'entrepôt.
 
-![Staging des _features_ Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/stg_mapillary_com__elements.png){: .img-center loading=lazy }
+![Staging des features Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/stg_mapillary_com__elements.png){: .img-center loading=lazy }
 
 ### _Intermediate_ (ou _Warehouses_)
 
@@ -483,7 +483,7 @@ from jointures_selections
 
 L'exécution du modèle aboutit à la création de la table dans l'entrepôt.
 
-![Panneaux de police de circulation extrait de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/wrh_signalisation_routiere__panneaux_police.png){: .img-center loading=lazy }
+![Panneaux de police de circulation extraits de Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/wrh_signalisation_routiere__panneaux_police.png){: .img-center loading=lazy }
 
 ### _Marts_
 
@@ -602,7 +602,7 @@ models:
 
 L'exécution du modèle crée la table `mrt_signalisation_routiere.panneaux_police` qu'il est possible d'afficher dans QGIS.
 
-![Panneaux de police de circulation vus avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/qgis_mrt_signalisation_routiere__panneaux_police.jpg){: .img-center loading=lazy }
+![Affichage des panneaux de police de circulation avec QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/qgis_mrt_signalisation_routiere__panneaux_police.jpg){: .img-center loading=lazy }
 
 Grâce aux différents champs, l'utilisateur peut filtrer les panneaux annonçant un danger sur la D999 à Nîmes.
 
@@ -618,7 +618,7 @@ Parmi les attributs, on retrouve l'URL d'accès à Mapillary.
 
 Par un simple clic, l'utilisateur peut naviguer vers Mapillary et afficher les images du panneau.
 
-![Mapillary au droit du panneau](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/point_to_mapillary.jpg){: .img-center loading=lazy }
+![Affichage du panneau de danger dans Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/point_to_mapillary.jpg){: .img-center loading=lazy }
 
 ----
 
