@@ -125,7 +125,7 @@ La responsabilité de l'exécution des tâches incombe à trois briques d'Apache
 - L'_Executor_ : il gère l'exécution des tâches planifiées par le _Scheduler_. [Plusieurs natures d'_Executor_ sont disponibles](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/index.html) et le type à utiliser est fixé par paramétrage. Par exemple, le [`CeleryExecutor`](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) est capable de distribuer l'exécution sur plusieurs serveurs.
 - Les _Workers_ : ce sont les processus qui exécutent réellement les tâches. Ils reçoivent les tâches à faire du _Scheduler_ via l'_Executor_.
 
-![Architecture d'Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/architecture_apache_airflow.jpg){: .img-center loading=lazy }
+![Architecture d'Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/architecture_apache_airflow.png){: .img-center loading=lazy }
 
 ### Instances et statuts
 
