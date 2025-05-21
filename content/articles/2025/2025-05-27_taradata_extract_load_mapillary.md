@@ -279,7 +279,7 @@ from repartition_aleatoire;
 
 Nous pouvons alors afficher le résultat de cette répartition dans QGIS. De l'art cartographique !
 
-![Répartition des cellules à 8 tâches](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/repartition_cellules.jpeg){: .img-center loading=lazy }
+![Répartition des cellules à 8 tâches](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/repartition_cellules.jpg){: .img-center loading=lazy }
 
 ### Tâche 4 – extraction et chargement des _features_
 
@@ -402,7 +402,7 @@ on ST_Intersects(sg.geom, cad.geom) and not ST_Touches(sg.geom, cad.geom)
 
 Nous pouvons voir dans l'image ci-dessous que certaines cellules doivent être découpées une à deux fois pour permettre l'extraction de l'ensemble des _features_ de l'emprise.
 
-![Découpage des cellules](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/decoupage_cellules.jpeg){: .img-center loading=lazy }
+![Découpage des cellules](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/decoupage_cellules.jpg){: .img-center loading=lazy }
 
 #### Invocation multiple de la tâche
 
