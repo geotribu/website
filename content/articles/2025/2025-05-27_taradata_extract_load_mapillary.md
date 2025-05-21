@@ -462,7 +462,7 @@ def dag():
 
 La représentation graphique du _DAG_ est alors visible dans l'IHM d'Apache Airflow.
 
-![_DAG_ d'EL des _features_ Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/extration_et_chargement__mensuel__mapillary_com.png){: .img-center loading=lazy }
+![DAG d'EL des features Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/extration_et_chargement__mensuel__mapillary_com.png){: .img-center loading=lazy }
 
 La première tâche `ignorer_si_dag_subséquent_en_cours`, que nous n'avons pas évoquée, permet d'ignorer le lancement du _DAG_ si d'autres _DAGs_ de transformation ou d'export sont en cours. L'objectif est d'assurer la cohérence des données en étant sûr que celles-ci ne soient pas écrasées au moment de leur transformation ou de leur export.
 
@@ -476,7 +476,7 @@ Après exécution, la table `features` est disponible dans le schéma `src_mapil
 
 Elle est constituée d'une unique colonne de type `jsonb` et contient un peu plus de 4000 lignes ; une par cellule.
 
-![Table résultat de l'extraction et du chargement des _features_](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
+![Table résultat de l'extraction et du chargement des features](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
 
 Pour que tu puisses voir le _DAG_ global, nous avons mis à ta disposition le fichier .py sur le repo Git que nous utilisons pour partager certaines ressources. C'est [par ici](https://raw.githubusercontent.com/CD30-Devil/taradata-ressources/refs/heads/main/Sources/Geotribu/2025-05-27_taradata_extract_load_mapillary/mapillary_com.py) que ça se passe.
 
