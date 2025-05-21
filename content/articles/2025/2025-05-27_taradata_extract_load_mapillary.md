@@ -9,7 +9,7 @@ comments: true
 date: 2025-05-27
 description: Utilisation des API de Mapillary au sein de la Modern Data Stack du Gard pour extraire et charger des objets détectés (features) sur les images.
 icon: fontawesome/solid/cubes-stacked
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/affiche.png
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/affiche.png
 tags:
     - Apache Airflow
     - Mapillary
@@ -48,7 +48,7 @@ Ah non ! J'ai failli oublier. Si je tiens la plume AZERTY aujourd'hui, je me doi
 
 Apache Airflow est un outil d'orchestration orienté data. Son rôle est de déclencher des traitements lorsque les conditions de lancement sont réunies. Il propose également une interface graphique de suivi d'exécution avec la possibilité, par exemple, de visualiser les logs et de relancer manuellement une tâche en échec.
 
-![Aperçu Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/demo_grid_view_with_task_logs.png){: .img-center loading=lazy }
+![Aperçu Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/demo_grid_view_with_task_logs.png){: .img-center loading=lazy }
 
 Ce n'est pas le seul outil à proposer cela, on peut par exemple citer [Dagster](https://dagster.io/), [Prefect](https://www.prefect.io/) ou encore le français [Kestra](https://kestra.io/) (Cocorico :flag_fr: !). Cependant, après étude, Apache Airflow nous a paru être la meilleure option pour répondre à nos objectifs et contraintes (voir [les commentaires dans l'article de Satya](./2025-02-25_stack_data_gard.md#satya-minguez) pour plus de détails).
 
@@ -125,7 +125,7 @@ La responsabilité de l'exécution des tâches incombe à trois briques d'Apache
 - L'_Executor_ : il gère l'exécution des tâches planifiées par le _Scheduler_. [Plusieurs natures d'_Executor_ sont disponibles](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/executor/index.html) et le type à utiliser est fixé par paramétrage. Par exemple, le [`CeleryExecutor`](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) est capable de distribuer l'exécution sur plusieurs serveurs.
 - Les _Workers_ : ce sont les processus qui exécutent réellement les tâches. Ils reçoivent les tâches à faire du _Scheduler_ via l'_Executor_.
 
-![Architecture d'Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/architecture_apache_airflow.jpg){: .img-center loading=lazy }
+![Architecture d'Apache Airflow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/architecture_apache_airflow.jpg){: .img-center loading=lazy }
 
 ### Instances et statuts
 
@@ -135,7 +135,7 @@ Les instances de _DAG_ et de tâche ont des statuts qui renseignent sur l'état 
 
 Ainsi une instance de tâche passera de `queued` à `running` lorsqu'un _Worker_ la prendra en charge. Si le traitement se termine sans erreur, l'instance prendra l'état `success`. Dans le cas contraire, elle sera en `failed` ou en `up_for_retry` si plusieurs tentatives ont été paramétrées.
 
-![Les statuts possibles d'une tâche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/task_status.png){: .img-center loading=lazy }
+![Les statuts possibles d'une tâche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/task_status.png){: .img-center loading=lazy }
 
 ----
 
@@ -279,7 +279,7 @@ from repartition_aleatoire;
 
 Nous pouvons alors afficher le résultat de cette répartition dans QGIS. De l'art cartographique !
 
-![Répartition des cellules à 8 tâches](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/repartition_cellules.jpeg){: .img-center loading=lazy }
+![Répartition des cellules à 8 tâches](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/repartition_cellules.jpeg){: .img-center loading=lazy }
 
 ### Tâche 4 – extraction et chargement des _features_
 
@@ -402,7 +402,7 @@ on ST_Intersects(sg.geom, cad.geom) and not ST_Touches(sg.geom, cad.geom)
 
 Nous pouvons voir dans l'image ci-dessous que certaines cellules doivent être découpées une à deux fois pour permettre l'extraction de l'ensemble des _features_ de l'emprise.
 
-![Découpage des cellules](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/decoupage_cellules.jpeg){: .img-center loading=lazy }
+![Découpage des cellules](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/decoupage_cellules.jpeg){: .img-center loading=lazy }
 
 #### Invocation multiple de la tâche
 
@@ -462,7 +462,7 @@ def dag():
 
 La représentation graphique du _DAG_ est alors visible dans l'IHM d'Apache Airflow.
 
-![DAG d'EL des features Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/extration_et_chargement__mensuel__mapillary_com.png){: .img-center loading=lazy }
+![DAG d'EL des features Mapillary](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/extration_et_chargement__mensuel__mapillary_com.png){: .img-center loading=lazy }
 
 La première tâche `ignorer_si_dag_subséquent_en_cours`, que nous n'avons pas évoquée, permet d'ignorer le lancement du _DAG_ si d'autres _DAGs_ de transformation ou d'export sont en cours. L'objectif est d'assurer la cohérence des données en étant sûr que celles-ci ne soient pas écrasées au moment de leur transformation ou de leur export.
 
@@ -476,7 +476,7 @@ Après exécution, la table `features` est disponible dans le schéma `src_mapil
 
 Elle est constituée d'une unique colonne de type `jsonb` et contient un peu plus de 4000 lignes ; une par cellule.
 
-![Table résultat de l'extraction et du chargement des features](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_el_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
+![Table résultat de l'extraction et du chargement des features](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
 
 Pour que tu puisses voir le _DAG_ global, nous avons mis à ta disposition le fichier .py sur le repo Git que nous utilisons pour partager certaines ressources. C'est [par ici](https://raw.githubusercontent.com/CD30-Devil/taradata-ressources/refs/heads/main/Sources/Geotribu/2025-05-27_taradata_extract_load_mapillary/mapillary_com.py) que ça se passe.
 
