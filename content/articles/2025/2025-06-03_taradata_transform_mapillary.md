@@ -30,7 +30,7 @@ tags:
 
 Salut everybody, tout le monde ! Ça y est, c'est le deuxième article !
 
-Dans le précédent opus, nous avons vu comment [Apache Airflow](https://airflow.apache.org/) nous permet d'extraire et de charger les [_features_ de Mapillary](https://help.mapillary.com/hc/en-us/articles/115002332165-Map-features) à proximité de réseau routier départemental gardois.
+Dans [le précédent opus](./2025-05-27_taradata_extract_load_mapillary.md), nous avons vu comment [Apache Airflow](https://airflow.apache.org/) nous permet d'extraire et de charger les [_features_ de Mapillary](https://help.mapillary.com/hc/en-us/articles/115002332165-Map-features) à proximité de réseau routier départemental gardois.
 
 Cette fois, nous allons transformer les données pour les rendre exploitables avec [QGIS](https://qgis.org/) car, souviens-toi, nous avions stocké directement les éléments retournés par les API au format JSON.
 
@@ -293,7 +293,7 @@ sources:
       - name: features
 ```
 
-C'est là que se trouve le résultat de notre dur labeur d'extraction et de chargement des _features_ vu lors du précédent article.
+C'est là que se trouve le résultat de notre dur labeur d'extraction et de chargement des _features_ vu lors du [précédent article](./2025-05-27_taradata_extract_load_mapillary.md).
 
 ![Table résultat de l'extraction et du chargement des features](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
 
