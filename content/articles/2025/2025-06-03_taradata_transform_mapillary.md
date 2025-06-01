@@ -87,7 +87,7 @@ En aucun cas, le SQL ne doit accéder directement à une table ou une vue de l'e
 
 Voici par exemple un modèle de transformation des observations extraites et chargées dans l'entrepôt au format JSON depuis l'[API Hydrométrie de Hubeau](https://hubeau.eaufrance.fr/page/api-hydrometrie).
 
-```yml title="YAML de déclaration d'un modèle de données"
+```yaml title="YAML de déclaration d'un modèle de données"
 version: 2
 
 models:
