@@ -165,7 +165,7 @@ Concrètement, et dans la mesure où DBT se charge du DDL, il est question de lu
 
 En règle générale, les modèles sont organisés en couches suivant l'architecture en médaillon. Le mode de matérialisation est alors fixé au niveau du projet, dans le fichier [_dbt_project.yml_](https://docs.getdbt.com/reference/dbt_project.yml), pour l'ensemble des modèles d'une même couche.
 
-```yml title="Paramétrage de la matérialisation au niveau du projet DBT"
+```yaml title="Paramétrage de la matérialisation au niveau du projet DBT"
 models:
   taradata:
     2_staging:
