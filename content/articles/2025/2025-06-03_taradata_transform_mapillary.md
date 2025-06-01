@@ -554,7 +554,7 @@ La macro `point_to_mapillary` est une simple concaténation de chaînes qui expl
 
 Bien entendu, nous mettons à disposition de l'utilisateur la documentation du modèle.
 
-```yml title="Déclaration et documentation du mart contenant les panneaux de police de circulation"
+```yaml title="Déclaration et documentation du mart contenant les panneaux de police de circulation"
 version: 2
 
 models:
