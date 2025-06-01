@@ -212,7 +212,7 @@ Ce lignage permet non seulement à DBT de savoir l'ordre dans lequel il doit fai
 
 C'est un autre avantage de DBT ; [il est possible de documenter](https://docs.getdbt.com/docs/build/documentation), en [markdown](https://fr.wikipedia.org/wiki/Markdown), les modèles depuis le fichier YAML. Cette possibilité concerne aussi bien le modèle lui-même que les colonnes qui le constituent.
 
-```yml title="Documentation d'un modèle et de ses champs"
+```yaml title="Documentation d'un modèle et de ses champs"
 - name: wrh_hydrometrie__stations
   description: >
     Les stations hydrométriques du Gard et de ses départements limitrophes.
