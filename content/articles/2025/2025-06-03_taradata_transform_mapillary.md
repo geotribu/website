@@ -283,7 +283,7 @@ En effet, certains de nos fournisseurs sont basés à Barcelone et le catalogue 
 
 Avant toute chose, nous devons indiquer à DBT où se trouvent les données brutes grâce au fichier YAML suivant.
 
-```yml title="Déclaration de la source de données src_mapillary_com"
+```yaml title="Déclaration de la source de données src_mapillary_com"
 version: 2
 
 sources:
