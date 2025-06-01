@@ -395,7 +395,7 @@ Sur ce dernier point, nous avions pris soin lors de l'EL de ne conserver que les
 
 Tu peux voir dans le YAML que, si nous mentionnons Mapillary dans le documentation, le schéma comme la table portent désormais un nom "métier" (`wrh_signalisation_routiere.panneaux_police`).
 
-```yml title="Déclaration et documentation du modèle de données contenant les panneaux de police de circulation"
+```yaml title="Déclaration et documentation du modèle de données contenant les panneaux de police de circulation"
 version: 2
 
 models:
