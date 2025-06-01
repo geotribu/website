@@ -60,7 +60,7 @@ Pour pouvoir faire les transformations, DBT a besoin de savoir où se trouvent l
 
 La déclaration des sources se fait via un fichier YAML.
 
-```yml title="YAML de déclaration d'une source de données"
+```yaml title="YAML de déclaration d'une source de données"
 version: 2
 
 sources:
