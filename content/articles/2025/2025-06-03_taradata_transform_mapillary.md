@@ -60,10 +60,10 @@ Difficile, impossible même, pour moi de faire de toi un expert dbt en seulement
     Fin mai, dbt Labs a annoncé la publication en version beta de [dbt Fusion](https://docs.getdbt.com/docs/fusion/about-fusion). Il s'agit d'une réécriture complète du moteur en Rust. Celui-ci apporterait un gain significatif de performance.
 
     Point important, [dbt Fusion sera sous licence Elastic Version 2](https://www.getdbt.com/blog/new-code-new-license-understanding-the-new-license-for-the-dbt-fusion-engine). La société annonce cependant qu'elle continue de maintenir dbt Core sous licence Apache 2.
-
- A ce stade, la beta de dbt Fusion a encore [plusieurs limitations](https://docs.getdbt.com/docs/fusion/supported-features#limitations) et ne supporte que Snowflake.
-
- Affaire à suivre donc, mais on peut s'attendre à ce que tôt ou tard le développement de dbt Core soit stoppé au profit de dbt Fusion.
+    
+    A ce stade, la beta de dbt Fusion a encore [plusieurs limitations](https://docs.getdbt.com/docs/fusion/supported-features#limitations) et supporte uniquement Snowflake.
+    
+    Affaire à suivre donc, mais on peut s'attendre à ce que tôt ou tard le développement de dbt Core soit stoppé au profit de dbt Fusion.
 
 <!-- markdownlint-enable MD046 -->
 
