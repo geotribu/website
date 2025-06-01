@@ -1,5 +1,5 @@
 ---
-title: Transformation des features Mapillary avec DBT
+title: Transformation des features Mapillary avec dbt
 subtitle: Transformers & DeBepTicons
 authors:
     - Michaël GALIEN
@@ -7,11 +7,11 @@ categories:
     - article
 comments: true
 date: 2025-06-03
-description: Transformation avec DBT des features extraites via les API de Mapillary au sein de la Modern Data Stack du Gard.
+description: Transformation avec dbt des features extraites via les API de Mapillary au sein de la Modern Data Stack du Gard.
 icon: fontawesome/solid/cubes-stacked
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/affiche.png
 tags:
-    - DBT
+    - dbt
     - Jinja
     - Mapillary
     - Modern Data Stack
@@ -22,7 +22,7 @@ tags:
     - YAML
 ---
 
-# Transformation des _features_ Mapillary avec DBT
+# Transformation des _features_ Mapillary avec dbt
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
@@ -34,43 +34,43 @@ Dans [le précédent opus](./2025-05-27_taradata_extract_load_mapillary.md), nou
 
 Cette fois, nous allons transformer les données pour les rendre exploitables avec [QGIS](https://qgis.org/) car, souviens-toi, nous avions stocké directement les éléments retournés par les API au format JSON.
 
-Pour faire ces transformations, nous allons utiliser Data Build Tool ; [DBT](https://www.getdbt.com/) pour les intimes.
+Pour faire ces transformations, nous allons utiliser Data Build Tool ; [dbt](https://www.getdbt.com/) pour les intimes.
 
 ----
 
-## DBT
+## dbt
 
-![Logo DBT](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/dbt.png){: .img-thumbnail-left }
+![Logo dbt](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/dbt.png){: .img-thumbnail-left }
 
-DBT est un outil de transformation, et uniquement de transformation, de données. En d'autres termes, il est incapable de faire de l'extraction et du chargement et s'attend à ce que les données à transformer soit déjà dans l'entrepôt sous leur forme brute.
+dbt est un outil de transformation, et uniquement de transformation, de données. En d'autres termes, il est incapable de faire de l'extraction et du chargement et s'attend à ce que les données à transformer soit déjà dans l'entrepôt sous leur forme brute.
 
-Il existe en [version _Core Open Source_](https://github.com/dbt-labs/dbt-core) ou en [version Cloud avec abonnement](https://www.getdbt.com/pricing). Dans sa version _Open Source_ DBT n'est rien de plus qu'un outil en mode CLI (_Command Line Interface_).
+Il existe en [version _Core Open Source_](https://github.com/dbt-labs/dbt-core) ou en [version Cloud avec abonnement](https://www.getdbt.com/pricing). Dans sa version _Open Source_ dbt n'est rien de plus qu'un outil en mode CLI (_Command Line Interface_).
 
-Tout comme Apache Airflow, DBT adopte l'approche "as code" et mélange [SQL](https://fr.wikipedia.org/wiki/Structured_Query_Language), [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)) et [YAML](https://fr.wikipedia.org/wiki/YAML). Il va donc te falloir réviser tes `select`, `from` et `where`. Cela dit, peut-on vraiment faire l'impasse sur le SQL quand on fait de la data, qu'elle soit géographique ou non ? Je ne pense pas :innocent:.
+Tout comme Apache Airflow, dbt adopte l'approche "as code" et mélange [SQL](https://fr.wikipedia.org/wiki/Structured_Query_Language), [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)) et [YAML](https://fr.wikipedia.org/wiki/YAML). Il va donc te falloir réviser tes `select`, `from` et `where`. Cela dit, peut-on vraiment faire l'impasse sur le SQL quand on fait de la data, qu'elle soit géographique ou non ? Je ne pense pas :innocent:.
 
-L'avantage de DBT est qu'il ne vient pas en coupure du moteur de bases de données sous-jacent mais, qu'au contraire, il s'appuie pleinement sur ce dernier. De fait, toute la puissance du moteur est là, entre tes mains. Avoue que c'est vraiment un plus quand on dispose d'un système extensible tel que [PostgreSQL](https://www.postgresql.org/) pour, au hasard, traiter des données géographiques avec [PostGIS](https://postgis.net/).
+L'avantage de dbt est qu'il ne vient pas en coupure du moteur de bases de données sous-jacent mais, qu'au contraire, il s'appuie pleinement sur ce dernier. De fait, toute la puissance du moteur est là, entre tes mains. Avoue que c'est vraiment un plus quand on dispose d'un système extensible tel que [PostgreSQL](https://www.postgresql.org/) pour, au hasard, traiter des données géographiques avec [PostGIS](https://postgis.net/).
 
-Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` ou d'`alter` puisque c'est DBT qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
+Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` ou d'`alter` puisque c'est dbt qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
 
-Difficile, impossible même, pour moi de faire de toi un expert DBT en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille, [comme Satya a déjà pu le faire dans son article](./2025-02-25_stack_data_gard.md), de visionner [la playlist DBT de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT).
+Difficile, impossible même, pour moi de faire de toi un expert dbt en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille, [comme Satya a déjà pu le faire dans son article](./2025-02-25_stack_data_gard.md), de visionner [la playlist dbt de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT).
 
 <!-- markdownlint-disable MD046 -->
 
-!!! info "Annonce de la version beta publique de DBT Fusion"
-    Fin mai, DBT Labs a annoncé la publication en version beta de [DBT Fusion](https://docs.getdbt.com/docs/fusion/about-fusion). Il s'agit d'une réécriture complète du moteur en Rust. Celui-ci apporterait un gain significatif de performance.
+!!! info "Annonce de la version beta publique de dbt Fusion"
+    Fin mai, dbt Labs a annoncé la publication en version beta de [dbt Fusion](https://docs.getdbt.com/docs/fusion/about-fusion). Il s'agit d'une réécriture complète du moteur en Rust. Celui-ci apporterait un gain significatif de performance.
 
-    Point important, [DBT Fusion sera sous licence Elastic Version 2](https://www.getdbt.com/blog/new-code-new-license-understanding-the-new-license-for-the-dbt-fusion-engine). La société annonce cependant qu'elle continue de maintenir DBT Core sous licence Apache 2.
+    Point important, [dbt Fusion sera sous licence Elastic Version 2](https://www.getdbt.com/blog/new-code-new-license-understanding-the-new-license-for-the-dbt-fusion-engine). La société annonce cependant qu'elle continue de maintenir dbt Core sous licence Apache 2.
 	
-	A ce stade, la beta de DBT Fusion a encore [plusieurs limitations](https://docs.getdbt.com/docs/fusion/supported-features#limitations) et ne supporte que Snowflake.
+	A ce stade, la beta de dbt Fusion a encore [plusieurs limitations](https://docs.getdbt.com/docs/fusion/supported-features#limitations) et ne supporte que Snowflake.
 	
-	Affaire à suivre donc, mais on peut s'attendre à ce que tôt ou tard le développement de DBT Core soit stoppé au profit de DBT Fusion.
+	Affaire à suivre donc, mais on peut s'attendre à ce que tôt ou tard le développement de dbt Core soit stoppé au profit de dbt Fusion.
 
 <!-- markdownlint-enable MD046 -->
 
 
 ### Sources
 
-Pour pouvoir faire les transformations, DBT a besoin de savoir où se trouvent les [sources](https://docs.getdbt.com/docs/build/sources) de données dans l'entrepôt. Concrètement, dans le cas de PostgreSQL, cela revient à lui indiquer les schémas et les tables à interroger.
+Pour pouvoir faire les transformations, dbt a besoin de savoir où se trouvent les [sources](https://docs.getdbt.com/docs/build/sources) de données dans l'entrepôt. Concrètement, dans le cas de PostgreSQL, cela revient à lui indiquer les schémas et les tables à interroger.
 
 La déclaration des sources se fait via un fichier YAML.
 
@@ -95,7 +95,7 @@ Un [modèle](https://docs.getdbt.com/docs/build/models) est la description d'une
 Il est construit avec un couple SQL+Jinja / YAML :
 
 - Le SQL+Jinja va porter la requête `select` de transformation des données.
-- Le YAML va quant à lui donner les informations utiles à DBT pour générer la partie DDL en précisant par exemple le schéma et le nom de la table ou de la vue de stockage.
+- Le YAML va quant à lui donner les informations utiles à dbt pour générer la partie DDL en précisant par exemple le schéma et le nom de la table ou de la vue de stockage.
 
 En aucun cas, le SQL ne doit accéder directement à une table ou une vue de l'entrepôt. Les `from` doivent à la place faire référence à une source, via le template Jinja {% raw %}`{{ source("<source_name>", "<table_name>") }}`{% endraw %}, ou à un autre modèle, via le template Jinja {% raw %}`{{ ref("<model_name>") }}`{% endraw %}.
 
@@ -141,7 +141,7 @@ from selections_typages_renommages
 
 ### Macros
 
-Lorsqu'on souhaite factoriser du code, il est d'usage en bases de données de créer des procédures stockées. Avec DBT, on utilisera plutôt des [macros](https://docs.getdbt.com/docs/build/jinja-macros#macros).
+Lorsqu'on souhaite factoriser du code, il est d'usage en bases de données de créer des procédures stockées. Avec dbt, on utilisera plutôt des [macros](https://docs.getdbt.com/docs/build/jinja-macros#macros).
 
 Les macros sont des blocs de SQL réutilisables. Par exemple, dans la requête de transformation Hubeau qui précède, tu peux voir un appel à `to_utc_timestamp_or_null`.
 
@@ -159,7 +159,7 @@ Cette macro, nous l'avons développée pour faciliter les transformations de cha
 
 ### Architecture en médaillon
 
-L'architecture en médaillon n'est pas propre à DBT. Il s'agit d'un modèle de structuration des données en 3 couches :
+L'architecture en médaillon n'est pas propre à dbt. Il s'agit d'un modèle de structuration des données en 3 couches :
 
 - La couche _Bronze_ : Cette couche correspond aux données non transformées telles qu'extraites depuis leur source.
 - La couche _Silver_ : Dans cette couche, les données sont nettoyées, validées et transformées. Il peut notamment être question de [normalisation](https://fr.wikipedia.org/wiki/Forme_normale_(bases_de_donn%C3%A9es_relationnelles)) et d'enrichissement via le croisement et l'association de données provenant de sources distinctes.
@@ -173,13 +173,13 @@ Cette approche présente des similitudes avec l'architecture logicielle en 3 cou
 
 ### Matérialisation
 
-La [matérialisation](https://docs.getdbt.com/docs/build/materializations) détermine la façon dont DBT stocke le résultat des transformations, c'est à dire le résultat d'exécution des modèles, dans l'entrepôt.
+La [matérialisation](https://docs.getdbt.com/docs/build/materializations) détermine la façon dont dbt stocke le résultat des transformations, c'est à dire le résultat d'exécution des modèles, dans l'entrepôt.
 
-Concrètement, et dans la mesure où DBT se charge du DDL, il est question de lui dire s'il doit créer une table ou une vue dans la base de données.
+Concrètement, et dans la mesure où dbt se charge du DDL, il est question de lui dire s'il doit créer une table ou une vue dans la base de données.
 
 En règle générale, les modèles sont organisés en couches suivant l'architecture en médaillon. Le mode de matérialisation est alors fixé au niveau du projet, dans le fichier [_dbt_project.yml_](https://docs.getdbt.com/reference/dbt_project.yml), pour l'ensemble des modèles d'une même couche.
 
-```yaml title="Paramétrage de la matérialisation au niveau du projet DBT"
+```yaml title="Paramétrage de la matérialisation au niveau du projet dbt"
 models:
   taradata:
     2_staging:
@@ -196,21 +196,21 @@ Il reste possible de redéfinir cette matérialisation par défaut sur un modèl
 
 ### Modèles incrémentaux
 
-Lorsque les matérialisations `table` ou `view` sont retenues, DBT va recréer à chaque lancement la structure de données, et donc, exécuter l'ordre `create table as select...` ou `create view as select...` correspondant.
+Lorsque les matérialisations `table` ou `view` sont retenues, dbt va recréer à chaque lancement la structure de données, et donc, exécuter l'ordre `create table as select...` ou `create view as select...` correspondant.
 
 Cette approche a plusieurs avantages. D'une part, elle est résiliente car la suppression malencontreuse de la structure peut être corrigée en rejouant le modèle. Par ailleurs, comme toutes les données sont retraitées, il n'est pas utile d'identifier de façon chirurgicale les lignes ayant évoluées, ce qui rend la rédaction du modèle de transformation simple.
 
 Cependant, les matérialisations `table` et `view` trouvent leurs limites quand le volume de données est important ou lorsque le but est de conserver l'historique des données alors même que la source ne le propose pas.
 
-DBT propose pour cela le mode [`incremental`](https://docs.getdbt.com/docs/build/incremental-models). Avec lui, une table est créée à la première exécution du modèle. Les exécutions suivantes se chargent ensuite de mettre à jour et/ou d'insérer les nouvelles données en fonction du paramétrage défini pour le modèle.
+dbt propose pour cela le mode [`incremental`](https://docs.getdbt.com/docs/build/incremental-models). Avec lui, une table est créée à la première exécution du modèle. Les exécutions suivantes se chargent ensuite de mettre à jour et/ou d'insérer les nouvelles données en fonction du paramétrage défini pour le modèle.
 
 ### Lignage et parallélisation
 
-C'est probablement le point fort de DBT ; sa capacité à déterminer le lignage des modèles.
+C'est probablement le point fort de dbt ; sa capacité à déterminer le lignage des modèles.
 
 Imagine, tu récupères le tout dernier millésime de la [BD TOPO®](https://geoservices.ign.fr/bdtopo) et tu dois reconstruire toutes les données qui dépendent du thème commune. _"Quels sont les processus que je dois relancer ? Est-ce que je dois faire celui-là avant celui-ci ? Peut-être que je peux lancer ces deux transformations en même temps pour aller plus vite, mais peut-être pas."_. Bref, la galère !
 
-Avec DBT, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles.
+Avec dbt, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles.
 
 ![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/lignage.jpg){: .img-center loading=lazy }
 
@@ -220,11 +220,11 @@ Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possi
 dbt run --select source:src_ign_bdtopo.commune+
 ```
 
-Ce lignage permet non seulement à DBT de savoir l'ordre dans lequel il doit faire les transformations, mais il est aussi capable d'identifier les modèles indépendants et de les exécuter en parallèle.
+Ce lignage permet non seulement à dbt de savoir l'ordre dans lequel il doit faire les transformations, mais il est aussi capable d'identifier les modèles indépendants et de les exécuter en parallèle.
 
 ### Documentation des modèles
 
-C'est un autre avantage de DBT ; [il est possible de documenter](https://docs.getdbt.com/docs/build/documentation), en [markdown](https://fr.wikipedia.org/wiki/Markdown), les modèles depuis le fichier YAML. Cette possibilité concerne aussi bien le modèle lui-même que les colonnes qui le constituent.
+C'est un autre avantage de dbt ; [il est possible de documenter](https://docs.getdbt.com/docs/build/documentation), en [markdown](https://fr.wikipedia.org/wiki/Markdown), les modèles depuis le fichier YAML. Cette possibilité concerne aussi bien le modèle lui-même que les colonnes qui le constituent.
 
 ```yaml title="Documentation d'un modèle et de ses champs"
 - name: wrh_hydrometrie__stations
@@ -257,23 +257,23 @@ C'est un autre avantage de DBT ; [il est possible de documenter](https://docs.ge
     description: "La localisation ponctuelle de la station."
 ```
 
-Cette documentation est ensuite visualisable au travers d'une page Web que DBT peut générer grâce à la commande `dbt docs generate`.
+Cette documentation est ensuite visualisable au travers d'une page Web que dbt peut générer grâce à la commande `dbt docs generate`.
 
-![Documentation d'un modèle DBT](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/dbt_docs_generate.png){: .img-center loading=lazy }
+![Documentation d'un modèle dbt](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/dbt_docs_generate.png){: .img-center loading=lazy }
 
-Il est également possible de demander à DBT de persister la documentation dans les [commentaires](https://www.postgresql.org/docs/current/sql-comment.html) des tables, vues et colonnes PostgreSQL. Ainsi, la description est directement visualisable dans QGIS.
+Il est également possible de demander à dbt de persister la documentation dans les [commentaires](https://www.postgresql.org/docs/current/sql-comment.html) des tables, vues et colonnes PostgreSQL. Ainsi, la description est directement visualisable dans QGIS.
 
-![Affichage de la documentation d'un modèle DBT dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/dbt_docs_persist.png){: .img-center loading=lazy }
+![Affichage de la documentation d'un modèle dbt dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/dbt_docs_persist.png){: .img-center loading=lazy }
 
 ----
 
 ## Transformation des _features_
 
-Voyons maintenant comment DBT nous permet de transformer les _features_ de Mapillary, de leur forme brute JSON à une couche utilisable dans QGIS.
+Voyons maintenant comment dbt nous permet de transformer les _features_ de Mapillary, de leur forme brute JSON à une couche utilisable dans QGIS.
 
 ### D'abord, les _best-practices_
 
-La structuration de notre projet DBT est largement inspirée des préconisations de l'éditeur consultables dans son [guide des bonnes pratiques](https://docs.getdbt.com/best-practices).
+La structuration de notre projet dbt est largement inspirée des préconisations de l'éditeur consultables dans son [guide des bonnes pratiques](https://docs.getdbt.com/best-practices).
 
 Les transformations vont se faire en trois étapes ; staging > intermediate > marts. Je vais essayer de t'expliquer celles-ci en gardant pour image celle de la grande distribution.
 
@@ -295,7 +295,7 @@ En effet, certains de nos fournisseurs sont basés à Barcelone et le catalogue 
 
 ### Source
 
-Avant toute chose, nous devons indiquer à DBT où se trouvent les données brutes grâce au fichier YAML suivant.
+Avant toute chose, nous devons indiquer à dbt où se trouvent les données brutes grâce au fichier YAML suivant.
 
 ```yaml title="Déclaration de la source de données src_mapillary_com"
 version: 2
@@ -311,7 +311,7 @@ C'est là que se trouve le résultat de notre dur labeur d'extraction et de char
 
 ![Table résultat de l'extraction et du chargement des features](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
 
-Il est possible d'associer aux sources des tags comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur DBT. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande :
+Il est possible d'associer aux sources des tags comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur dbt. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande :
 
 ```sh title="Exécution des modèles descendants d'une source/d'un modèle portant le tag monthly"
 dbt run --select tag:monthly+
@@ -642,7 +642,7 @@ Ma conviction est que les métiers de la géomatique et de la data-science vont 
 
 Dès lors, je trouve opportun de regarder, et de s'inspirer de, ce qu'il se fait dans ces deux mondes ; c'est ainsi que nous avons construit **Taradata**.
 
-Au travers de ces deux articles (et même trois avec celui de Satya), j'ai souhaité te montrer que les principes que nous avons empruntés à la data-science peuvent s'adapter aux besoins et contraintes de la géomatique. Avec Mapillary comme cas d'usage, nous avons vu comment extraire et charger des données avec Apache Airflow, puis comment les transformer avec DBT pour au final les exploiter dans QGIS. Cependant, j'aurais tout à fait pu te présenter ces outils en illustrant avec des thématiques plus éloignées de la géographie ; les finances ou les RH par exemple.
+Au travers de ces deux articles (et même trois avec celui de Satya), j'ai souhaité te montrer que les principes que nous avons empruntés à la data-science peuvent s'adapter aux besoins et contraintes de la géomatique. Avec Mapillary comme cas d'usage, nous avons vu comment extraire et charger des données avec Apache Airflow, puis comment les transformer avec dbt pour au final les exploiter dans QGIS. Cependant, j'aurais tout à fait pu te présenter ces outils en illustrant avec des thématiques plus éloignées de la géographie ; les finances ou les RH par exemple.
 
 Je suis conscient que mon propos est dense du fait notamment des nombreuses sections de code qui y apparaissent, que ce soit en Python ou en SQL. Je ne peux pas le nier, la mise en place d'une _Modern Data Stack_ géographique n'est pas triviale. La prise en main des différents outils demande du temps et de l'investissement. Pour autant, notre _stack_ est entièrement basée sur des briques _Open Source_ déployées _On Premise_. D'une part, cela nous apporte une forme de souveraineté. D'autre part, je suis convaincu que cet investissement sera rapidement rentabilisé. D'ailleurs, par investissement il est surtout question d'acquérir de nouvelles compétences et il me semble qu'on perd rarement son temps quand on apprend.
 
