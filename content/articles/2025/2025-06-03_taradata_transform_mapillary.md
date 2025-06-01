@@ -54,6 +54,20 @@ Tu es septique, je l'étais aussi ! Histoire d'accroitre un peu plus tes doutes,
 
 Difficile, impossible même, pour moi de faire de toi un expert DBT en seulement quelques lignes. Voyons quand-même les notions essentielles et si tu souhaites aller plus loin, je te conseille, [comme Satya a déjà pu le faire dans son article](./2025-02-25_stack_data_gard.md), de visionner [la playlist DBT de Michael Kahan](https://www.youtube.com/playlist?list=PLy4OcwImJzBLJzLYxpxaPUmCWp8j1esvT).
 
+<!-- markdownlint-disable MD046 -->
+
+!!! info "Annonce de la version beta publique de DBT Fusion"
+    Fin mai, DBT Labs a annoncé la publication en version beta de [DBT Fusion](https://docs.getdbt.com/docs/fusion/about-fusion). Il s'agit d'une réécriture complète du moteur en Rust. Celui-ci apporterait un gain significatif de performance.
+
+    Point important, [DBT Fusion sera sous licence Elastic Version 2](https://www.getdbt.com/blog/new-code-new-license-understanding-the-new-license-for-the-dbt-fusion-engine). La société annonce cependant qu'elle continue de maintenir DBT Core sous licence Apache 2.
+	
+	A ce stade, la beta de DBT Fusion a encore [plusieurs limitations](https://docs.getdbt.com/docs/fusion/supported-features#limitations) et ne supporte que Snowflake.
+	
+	Affaire à suivre donc, mais on peut s'attendre à ce que tôt ou tard le développement de DBT Core soit stoppé au profit de DBT Fusion.
+
+<!-- markdownlint-enable MD046 -->
+
+
 ### Sources
 
 Pour pouvoir faire les transformations, DBT a besoin de savoir où se trouvent les [sources](https://docs.getdbt.com/docs/build/sources) de données dans l'entrepôt. Concrètement, dans le cas de PostgreSQL, cela revient à lui indiquer les schémas et les tables à interroger.
