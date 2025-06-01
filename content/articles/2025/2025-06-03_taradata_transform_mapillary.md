@@ -311,7 +311,7 @@ Comme dans notre exemple des catalogues de produits, nous allons dans cette éta
 
 Ainsi, le fichier YAML suivant précise que le résultat d'exécution du modèle doit être stocké dans la vue `elements` (matérialisation définie au niveau du projet) du schéma `stg_mapillary_com`.
 
-```yml title="Déclaration du modèle de staging des features Mapillary"
+```yaml title="Déclaration du modèle de staging des features Mapillary"
 version: 2
 
 models:
