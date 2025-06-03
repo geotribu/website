@@ -61,7 +61,7 @@ Difficile, impossible même, pour moi de faire de toi un expert dbt en seulement
 
     Point important, [dbt Fusion sera sous licence Elastic Version 2](https://www.getdbt.com/blog/new-code-new-license-understanding-the-new-license-for-the-dbt-fusion-engine). La société annonce cependant qu'elle continue de maintenir dbt Core sous licence Apache 2.
 
-    A ce stade, la beta de dbt Fusion a encore [plusieurs limitations](https://docs.getdbt.com/docs/fusion/supported-features#limitations) et supporte uniquement Snowflake.
+    À ce stade, la beta de dbt Fusion a encore [plusieurs limitations](https://docs.getdbt.com/docs/fusion/supported-features#limitations) et supporte uniquement Snowflake.
 
     Affaire à suivre donc, mais on peut s'attendre à ce que tôt ou tard le développement de dbt Core soit stoppé au profit de dbt Fusion.
 
