@@ -645,4 +645,5 @@ Au travers de ces deux articles (et même trois avec celui de Satya), j'ai souha
 
 Je suis conscient que mon propos est dense du fait notamment des nombreuses sections de code qui y apparaissent, que ce soit en Python ou en SQL. Je ne peux pas le nier, la mise en place d'une _Modern Data Stack_ géographique n'est pas triviale. La prise en main des différents outils demande du temps et de l'investissement. Pour autant, notre _stack_ est entièrement basée sur des briques _Open Source_ déployées _On Premise_. D'une part, cela nous apporte une forme de souveraineté. D'autre part, je suis convaincu que cet investissement sera rapidement rentabilisé. D'ailleurs, par investissement il est surtout question d'acquérir de nouvelles compétences et il me semble qu'on perd rarement son temps quand on apprend.
 
+C'est d'ailleurs ce que tu es venu/e faire sur Geotribu non ? :wink:
 <!-- geotribu:authors-block -->
