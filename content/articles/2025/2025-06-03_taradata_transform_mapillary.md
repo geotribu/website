@@ -209,7 +209,7 @@ C'est probablement le point fort de dbt ; sa capacité à déterminer le lignage
 
 Imagine, tu récupères le tout dernier millésime de la [BD TOPO®](https://geoservices.ign.fr/bdtopo) et tu dois reconstruire toutes les données qui dépendent du thème commune. _"Quels sont les processus que je dois relancer ? Est-ce que je dois faire celui-là avant celui-ci ? Peut-être que je peux lancer ces deux transformations en même temps pour aller plus vite, mais peut-être pas."_. Bref, la galère !
 
-Avec dbt, plus besoin de se faire des noeuds au cerveau grâce au graphe de dépendances des modèles.
+Avec dbt, plus besoin de se faire des nœuds au cerveau grâce au graphe de dépendances des modèles.
 
 ![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/lignage.jpg){: .img-center loading=lazy }
 
