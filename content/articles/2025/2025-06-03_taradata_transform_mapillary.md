@@ -213,7 +213,7 @@ Avec dbt, plus besoin de se faire des nœuds au cerveau grâce au graphe de dép
 
 ![Lignage des données](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/lignage.jpg){: .img-center loading=lazy }
 
-Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des descendants d'une source ou d'un modèle en suffixant celui-ci d'un +, comme par exemple dans la commande suivante :
+Cette fonctionnalité ne se limite pas à un rendu graphique. Il est aussi possible de demander la reconstruction des descendants d'une source ou d'un modèle en suffixant celui-ci d'un `+`, comme par exemple dans la commande suivante :
 
 ```sh title="Exécution des modèles descendants de la source src_ign_bdtopo.commune"
 dbt run --select source:src_ign_bdtopo.commune+
