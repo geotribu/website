@@ -148,7 +148,7 @@ Cette macro, nous l'avons développée pour faciliter les transformations de cha
 
 {% raw %}
 
-```sql  title="Macro de conversion d'une chaîne de caractères en date et heure"
+```sql+jinja  title="Macro de conversion d'une chaîne de caractères en date et heure"
 {% macro to_utc_timestamp_or_null(column, regexp_check, format) %}
     case when {{ column }} ~ '{{ regexp_check }}' then to_timestamp({{ column }}, '{{ format }}')::timestamp at time zone 'UTC' end
 {% endmacro %}
@@ -338,7 +338,7 @@ Le fichier SQL quant à lui détermine comment le `jsonb` est transformé.
 
 {% raw %}
 
-```sql title="Requête de transformation source -> staging"
+```sql+jinja title="Requête de transformation source -> staging"
 with features as (
     select *
     from {{ source("src_mapillary_com", "features") }}
@@ -380,7 +380,7 @@ Tu peux voir que la requête s'appuie aussi bien sur des opérateurs et fonction
 
 {% raw %}
 
-```sql title="Macro de création d'un point 2D en Lambert 93"
+```sql+jinja title="Macro de création d'un point 2D en Lambert 93"
 {% macro make_2d_point_2154(x, y) %}
     ST_SetSRID(ST_MakePoint({{ x }}, {{ y }}), 2154)
 {% endmacro %}
@@ -448,7 +448,7 @@ Dans le SQL, l'appel à `ST_DWithin` nous permet d'ignorer les éléments à plu
 
 {% raw %}
 
-```sql title="Requête de transformation staging -> warehouses"
+```sql+jinja title="Requête de transformation staging -> warehouses"
 with elements as (
     select *
     from {{ ref("stg_mapillary_com__elements") }}
@@ -518,7 +518,7 @@ Tout ceci est fait à l'aide de la requête suivante.
 
 {% raw %}
 
-```sql title="Requête de transformation warehouses -> marts"
+```sql+jinja title="Requête de transformation warehouses -> marts"
 with panneaux_police as (
     select *
     from {{ ref("wrh_signalisation_routiere__panneaux_police") }}
@@ -557,7 +557,7 @@ La macro `point_to_mapillary` est une simple concaténation de chaînes qui expl
 
 {% raw %}
 
-```sql title="Macro de calcul d'une URL Mapillary au droit d'un point"
+```sql+jinja title="Macro de calcul d'une URL Mapillary au droit d'un point"
 {% macro point_to_mapillary(point, zoom = 15) %}
     concat('https://www.mapillary.com/app/?lat=', ST_Y(ST_Transform({{ point }}, 4326)), '&lng=', ST_X(ST_Transform({{ point }}, 4326)), '&z=', {{ zoom }})
 {% endmacro %}
