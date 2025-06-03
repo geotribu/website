@@ -144,7 +144,7 @@ Lorsqu'on souhaite factoriser du code, il est d'usage en bases de données de cr
 
 Les macros sont des blocs de SQL réutilisables. Par exemple, dans la requête de transformation Hubeau qui précède, tu peux voir un appel à `to_utc_timestamp_or_null`.
 
-Cette macro, nous l'avons développée pour faciliter les transformations de chaînes de caractères en dates et heures, tout en s'assurant que la conversion n'entraine pas une erreur par la validation préalable d'une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re).
+Cette macro, nous l'avons développée pour faciliter les transformations de chaînes de caractères en dates et heures, tout en s'assurant que la conversion n'entraîne pas une erreur par la validation préalable d'une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re).
 
 {% raw %}
 
