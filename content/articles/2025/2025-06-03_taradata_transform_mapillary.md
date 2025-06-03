@@ -639,7 +639,7 @@ Par un simple clic, l'utilisateur peut naviguer vers Mapillary et afficher les i
 
 Ma conviction est que les métiers de la géomatique et de la data-science vont inévitablement se rapprocher, et possiblement fusionner. D'ailleurs, j'ai déjà pu lire dans certaines signatures e-mails la mention "geodatascientist". Le travail de la géomaticienne/du géomaticien ne se limite plus à la production de cartes. Parallèlement, il parait invraisemblable qu'un data*ist puisse faire toute une carrière sans jamais traiter de données rattachées à un territoire.
 
-Dès lors, je trouve opportun de regarder, et de s'inspirer de, ce qu'il se fait dans ces deux mondes ; c'est ainsi que nous avons construit **Taradata**.
+Dès lors, je trouve opportun de regarder et de s'inspirer de ce qu'il se fait dans ces deux mondes ; c'est ainsi que nous avons construit **Taradata**.
 
 Au travers de ces deux articles (et même trois avec celui de Satya), j'ai souhaité te montrer que les principes que nous avons empruntés à la data-science peuvent s'adapter aux besoins et contraintes de la géomatique. Avec Mapillary comme cas d'usage, nous avons vu comment extraire et charger des données avec Apache Airflow, puis comment les transformer avec dbt pour au final les exploiter dans QGIS. Cependant, j'aurais tout à fait pu te présenter ces outils en illustrant avec des thématiques plus éloignées de la géographie ; les finances ou les RH par exemple.
 
