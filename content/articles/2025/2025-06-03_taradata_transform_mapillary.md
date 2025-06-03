@@ -310,7 +310,7 @@ C'est là que se trouve le résultat de notre dur labeur d'extraction et de char
 
 ![Table résultat de l'extraction et du chargement des features](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_extract_load_mapillary/src_mapillary_com__features.png){: .img-center loading=lazy }
 
-Il est possible d'associer aux sources des tags comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur dbt. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande :
+Il est possible d'associer aux sources des `tags` comme tu peux le voir dans le YAML. Ceux-ci n'ont pas d'incidence directe sur dbt. Ils peuvent cependant être utilisés comme critère de lancement des modèles. Par exemple, le tag `monthly` nous permet d'exécuter les modèles dépendants d'une source mise à jour de façon mensuelle via la commande :
 
 ```sh title="Exécution des modèles descendants d'une source/d'un modèle portant le tag monthly"
 dbt run --select tag:monthly+
