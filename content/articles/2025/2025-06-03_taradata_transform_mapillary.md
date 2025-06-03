@@ -637,7 +637,7 @@ Par un simple clic, l'utilisateur peut naviguer vers Mapillary et afficher les i
 
 ## Conclusion
 
-Ma conviction est que les métiers de la géomatique et de la data-science vont inévitablement se rapprocher, et possiblement fusionner. D'ailleurs, j'ai déjà pu lire dans certaines signatures e-mails la mention "geodatascientist". Le travail de la géomaticienne/du géomaticien ne se limite plus à la production de cartes. Parallèlement, il parait invraisemblable qu'un data*ist puisse faire toute une carrière sans jamais traiter de données rattachées à un territoire.
+Ma conviction est que les métiers de la géomatique et de la data-science vont inévitablement se rapprocher, et possiblement fusionner. D'ailleurs, j'ai déjà pu lire dans certaines signatures e-mails la mention "geodatascientist". Le travail de la géomaticienne/du géomaticien ne se limite plus à la production de cartes. Parallèlement, il parait peu probable qu'un data*ist puisse faire toute une carrière sans jamais traiter de données rattachées à un territoire.
 
 Dès lors, je trouve opportun de regarder et de s'inspirer de ce qu'il se fait dans ces deux mondes ; c'est ainsi que nous avons construit **Taradata**.
 
