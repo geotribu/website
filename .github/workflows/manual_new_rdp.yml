@@ -68,7 +68,7 @@ jobs:
 
       - name: Notification Slack
         id: slack
-        uses: slackapi/slack-github-action@v2.0
+        uses: slackapi/slack-github-action@v2.1
         if: "${{ github.event.inputs.notify-slack == 'true' }}"
         with:
           webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
