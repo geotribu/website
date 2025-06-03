@@ -112,7 +112,7 @@ models:
 
 {% raw %}
 
-```sql title="SQL de création d'un modèle de données par transformation d'une source"
+```sql+jinja title="SQL de création d'un modèle de données par transformation d'une source"
 with observations as (
     select *
     from {{ source("src_hubeau_eaufrance_fr", "observations_tr")}}
