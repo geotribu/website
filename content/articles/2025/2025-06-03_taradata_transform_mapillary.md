@@ -57,7 +57,7 @@ Difficile, impossible même, pour moi de faire de toi un expert dbt en seulement
 <!-- markdownlint-disable MD046 -->
 
 !!! info "Annonce de la version beta publique de dbt Fusion"
-    Fin mai, dbt Labs a annoncé la publication en version beta de [dbt Fusion](https://docs.getdbt.com/docs/fusion/about-fusion). Il s'agit d'une réécriture complète du moteur en Rust. Celui-ci apporterait un gain significatif de performance.
+    Fin mai, dbt Labs a annoncé la publication en version beta de [dbt Fusion](https://docs.getdbt.com/docs/fusion/about-fusion). Il s'agit d'une réécriture complète du moteur en Rust. Celui-ci apporterait un gain significatif de performances.
 
     Point important, [dbt Fusion sera sous licence Elastic Version 2](https://www.getdbt.com/blog/new-code-new-license-understanding-the-new-license-for-the-dbt-fusion-engine). La société annonce cependant qu'elle continue de maintenir dbt Core sous licence Apache 2.
 
