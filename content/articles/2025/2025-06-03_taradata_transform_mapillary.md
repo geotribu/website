@@ -162,9 +162,9 @@ Cette macro, nous l'avons développée pour faciliter les transformations de cha
 
 L'architecture en médaillon n'est pas propre à dbt. Il s'agit d'un modèle de structuration des données en 3 couches :
 
-- La couche _Bronze_ : Cette couche correspond aux données non transformées telles qu'extraites depuis leur source.
-- La couche _Silver_ : Dans cette couche, les données sont nettoyées, validées et transformées. Il peut notamment être question de [normalisation](https://fr.wikipedia.org/wiki/Forme_normale_(bases_de_donn%C3%A9es_relationnelles)) et d'enrichissement via le croisement et l'association de données provenant de sources distinctes.
-- La couche _Gold_ : Cette couche contient les données hautement transformées et agrégées, prêtes pour l'analyse et la consommation par les utilisateurs finaux. Les données sont en général dénormalisées pour en faciliter l'analyse ; [modèles en étoile](https://fr.wikipedia.org/wiki/%C3%89toile_(mod%C3%A8le_de_donn%C3%A9es)) ou [_"one big table"_](https://dataengineering.wiki/Concepts/Data+Modeling/One+Big+Table).
+- La couche _Bronze_ : elle correspond aux données non transformées telles qu'extraites depuis leur source.
+- La couche _Silver_ : dans cette couche, les données sont nettoyées, validées et transformées. Il peut notamment être question de [normalisation](https://fr.wikipedia.org/wiki/Forme_normale_(bases_de_donn%C3%A9es_relationnelles)) et d'enrichissement via le croisement et l'association de données provenant de sources distinctes.
+- La couche _Gold_ : elle contient les données hautement transformées et agrégées, prêtes pour l'analyse et la consommation par les utilisateurs finaux. Les données sont en général dénormalisées pour en faciliter l'analyse ; [modèles en étoile](https://fr.wikipedia.org/wiki/%C3%89toile_(mod%C3%A8le_de_donn%C3%A9es)) ou [_"one big table"_](https://dataengineering.wiki/Concepts/Data+Modeling/One+Big+Table).
 
 L'objectif est de garantir l’atomicité et la cohérence des traitements en isolant les différentes étapes de transformation dans des couches spécifiques.
 
