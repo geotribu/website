@@ -83,7 +83,8 @@ sources:
         tags:
           - monthly
       - name: observations_tr
-        tags: ["every_10min"]
+        tags: 
+          - every_10min
 ```
 
 Par défaut en PostgreSQL, le nom de la source correspond au nom du schéma, mais il est également possible de préciser le schéma via la clé `schema`.
@@ -302,7 +303,8 @@ version: 2
 
 sources:
   - name: src_mapillary_com
-    tags: ["monthly"]
+    tags: 
+      - monthly
     tables:
       - name: features
 ```
