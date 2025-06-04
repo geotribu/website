@@ -399,7 +399,9 @@ Après exécution du modèle, la vue est disponible et requêtable dans l'entrep
 
 La phase intermédiaire (que nous avons décidé d'appeler _warehouses_ puisqu'il est question d'organiser le stock de données) est selon moi l'étape primordiale. C'est grâce à elle que tu vas t'approprier les données collectées et façonner le modèle de données qui te permettra, à l'étape suivante, de répondre aux besoins de tes utilisateurs.
 
-Si lors du _staging_, chaque source est analysée indépendamment des autres, il va être question ici de les combiner, de les comparer, de les restructurer, de les filtrer...bref de faire des multiples sources un ensemble cohérent de données. Pour prendre un exemple, si nous collectons des données depuis [Hubeau](https://hubeau.eaufrance.fr/) et [Vigicrues](https://www.vigicrues.gouv.fr/), ces deux sources ne font plus qu'une après le passage en _warehouses_ pour nous fournir des informations à propos de l'état des cours d'eau dans le Gard.
+Si lors du _staging_, chaque source est analysée indépendamment des autres, il va être question ici de les combiner, de les comparer, de les restructurer, de les filtrer ; bref de faire des multiples sources un ensemble cohérent de données.
+
+Pour prendre un exemple, si nous collectons des données depuis [Hubeau](https://hubeau.eaufrance.fr/) et [Vigicrues](https://www.vigicrues.gouv.fr/), ces deux sources ne font plus qu'une après le passage en _warehouses_ pour nous fournir des informations à propos de l'état des cours d'eau dans le Gard.
 
 Dans notre cas, nous essayons à cette étape de nous rapprocher d'un modèle relationnel normalisé, même s'il faut bien avouer que nous nous autorisons quelques écarts. Concernant les _features_ Mapillary, nous allons profiter de cette étape pour :
 
