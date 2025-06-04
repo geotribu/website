@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2025-06-03
+date: 2025-06-05
 description: Transformation avec dbt des features extraites via les API de Mapillary au sein de la Modern Data Stack du Gard.
 icon: fontawesome/solid/cubes-stacked
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/taradata_transform_mapillary/affiche.png
