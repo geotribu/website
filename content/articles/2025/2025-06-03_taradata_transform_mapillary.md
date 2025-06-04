@@ -80,7 +80,8 @@ sources:
   - name: src_hubeau_eaufrance_fr
     tables:
       - name: stations
-        tags: ["monthly"]
+        tags:
+          - monthly
       - name: observations_tr
         tags: ["every_10min"]
 ```
