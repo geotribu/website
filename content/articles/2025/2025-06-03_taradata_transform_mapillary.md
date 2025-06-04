@@ -652,3 +652,5 @@ Je suis conscient que mon propos est dense du fait notamment des nombreuses sect
 
 C'est d'ailleurs ce que tu es venu/e faire sur Geotribu non ? :wink:
 <!-- geotribu:authors-block -->
+
+{% include "licenses/cc4_by.md" %}

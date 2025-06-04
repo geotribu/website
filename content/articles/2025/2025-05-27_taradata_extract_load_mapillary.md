@@ -495,3 +495,5 @@ Enfin, en cas d'échecs répétés, il donne la possibilité à l'utilisateur de
 Concernant le déploiement, celui-ci est facilité via les [images Docker disponibles sur DockerHub](https://hub.docker.com/r/apache/airflow).
 
 <!-- geotribu:authors-block -->
+
+{% include "licenses/cc4_by.md" %}
