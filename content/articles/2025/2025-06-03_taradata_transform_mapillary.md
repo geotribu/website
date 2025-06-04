@@ -83,7 +83,7 @@ sources:
         tags:
           - monthly
       - name: observations_tr
-        tags: 
+        tags:
           - every_10min
 ```
 
@@ -303,7 +303,7 @@ version: 2
 
 sources:
   - name: src_mapillary_com
-    tags: 
+    tags:
       - monthly
     tables:
       - name: features
