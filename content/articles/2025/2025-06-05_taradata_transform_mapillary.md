@@ -28,13 +28,13 @@ tags:
 
 ![Logo Mapillary](https://cdn.geotribu.fr/img/logos-icones/divers/mapillary.png){: .img-thumbnail-left }
 
-Salut everybody, tout le monde ! Ça y est, c'est le deuxième article !
+Salut _everybody_, tout le monde ! Ça y est, c'est le deuxième article !
 
 Dans [le précédent opus](./2025-05-27_taradata_extract_load_mapillary.md), nous avons vu comment [Apache Airflow](https://airflow.apache.org/) nous permet d'extraire et de charger les [_features_ de Mapillary](https://help.mapillary.com/hc/en-us/articles/115002332165-Map-features) à proximité du réseau routier départemental gardois.
 
 Cette fois, nous allons transformer les données pour les rendre exploitables avec [QGIS](https://qgis.org/) car, souviens-toi, nous avions stocké directement les éléments retournés par les API au format JSON.
 
-Pour faire ces transformations, nous allons utiliser Data Build Tool ; [dbt](https://www.getdbt.com/) pour les intimes.
+Pour faire ces transformations, nous allons utiliser Data Build Tool : [dbt](https://www.getdbt.com/) pour les intimes.
 
 ----
 
@@ -48,7 +48,7 @@ Il existe en [version _Core Open Source_](https://github.com/dbt-labs/dbt-core) 
 
 Tout comme Apache Airflow, dbt adopte l'approche "as code" et mélange [SQL](https://fr.wikipedia.org/wiki/Structured_Query_Language), [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)) et [YAML](https://fr.wikipedia.org/wiki/YAML). Il va donc te falloir réviser tes `select`, `from` et `where`. Cela dit, peut-on vraiment faire l'impasse sur le SQL quand on fait de la data, qu'elle soit géographique ou non ? Je ne pense pas :innocent:.
 
-L'avantage de dbt est qu'il ne vient pas en coupure du moteur de bases de données sous-jacent mais, qu'au contraire, il s'appuie pleinement sur ce dernier. De fait, toute la puissance du moteur est là, entre tes mains. Avoue que c'est vraiment un plus quand on dispose d'un système extensible tel que [PostgreSQL](https://www.postgresql.org/) pour, au hasard, traiter des données géographiques avec [PostGIS](https://postgis.net/).
+Si plusieurs ETL proposent des _transformers_ qui fonctionnent indépendamment du moteur de bases de données cible, dbt lui s'appuie pleinement sur ce dernier en exploitant les fonctions qu'il propose. De fait, toute la puissance du moteur est là, entre tes mains. Avoue que c'est vraiment un plus quand on dispose d'un système extensible tel que [PostgreSQL](https://www.postgresql.org/) pour, au hasard, traiter des données géographiques avec [PostGIS](https://postgis.net/).
 
 Tu es sceptique, je l'étais aussi ! Histoire d'accroître un peu plus tes doutes, je dois t'apprendre que pour faire les transformations, tu auras uniquement droit à des `select` ; ni `ìnsert` ni `update` et encore moins de `create` ou d'`alter` puisque c'est dbt qui prend en charge la partie [DDL (Data Definition Language)](https://fr.wikipedia.org/wiki/Langage_de_d%C3%A9finition_de_donn%C3%A9es).
 
@@ -100,7 +100,9 @@ Il est construit avec un couple SQL+Jinja / YAML :
 
 En aucun cas, le SQL ne doit accéder directement à une table ou une vue de l'entrepôt. Les `from` doivent à la place faire référence à une source, via le template Jinja {% raw %}`{{ source("<source_name>", "<table_name>") }}`{% endraw %}, ou à un autre modèle, via le template Jinja {% raw %}`{{ ref("<model_name>") }}`{% endraw %}.
 
-Voici par exemple un modèle de transformation des observations extraites et chargées dans l'entrepôt au format JSON depuis l'[API Hydrométrie de Hubeau](https://hubeau.eaufrance.fr/page/api-hydrometrie).
+Voici par exemple un modèle de transformation des observations extraites et chargées dans l'entrepôt depuis l'[API Hydrométrie de Hubeau](https://hubeau.eaufrance.fr/page/api-hydrometrie).
+
+Son rôle est de transformer le résultat JSON issu de l'appel à l'API en un tableau des observations contenant 4 colonnes : `code_station`, `date_heure`, `resultat` et `grandeur_hydro`.
 
 ```yaml title="YAML de déclaration d'un modèle de données"
 version: 2
@@ -411,7 +413,7 @@ Dans notre cas, nous essayons à cette étape de nous rapprocher d'un modèle re
 
 Sur ce dernier point, nous avions pris soin lors de l'EL de ne conserver que les cellules à proximité du réseau. Malgré tout, chacune couvre environ 90 hectares et une partie seulement de cette surface peut se trouver réellement à 10 mètres d'une route.
 
-Tu peux voir dans le YAML que, si nous mentionnons Mapillary dans le documentation, le schéma comme la table portent désormais un nom "métier" (`wrh_signalisation_routiere.panneaux_police`).
+Tu peux voir dans le YAML que, si nous mentionnons Mapillary dans la documentation, le schéma comme la table portent désormais un nom "métier" (`wrh_signalisation_routiere.panneaux_police`).
 
 ```yaml title="Déclaration et documentation du modèle de données contenant les panneaux de police de circulation"
 version: 2
