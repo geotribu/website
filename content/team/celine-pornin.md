@@ -3,15 +3,15 @@ title: Céline Pornin
 categories:
     - contributeur
 social:
-    - bluesky:
-    - github: cpornin
-    - gitlab:
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance: mapstodon.space
-        - username: CelinePnn
-    - twitter:
+    bluesky:
+    github: cpornin
+    gitlab:
+    linkedin:
+    mail:
+    mastodon:
+        instance: mapstodon.space
+        username: CelinePnn
+    twitter:
 ---
 
 # Céline Pornin

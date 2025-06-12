@@ -3,18 +3,18 @@ title: Christian Quest
 categories:
     - contributeur
 social:
-    - bluesky:
-    - github:
-    - gitlab:
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+    bluesky:
+    github:
+    gitlab:
+    linkedin:
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 # Christian Quest

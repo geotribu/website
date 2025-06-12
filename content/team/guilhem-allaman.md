@@ -3,18 +3,18 @@ title: Guilhem Allaman
 categories:
     - contributeur
 social:
-    - bluesky:
-    - github:
-    - gitlab:
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+    bluesky:
+    github:
+    gitlab:
+    linkedin:
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 # Guilhem Allaman
