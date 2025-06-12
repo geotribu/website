@@ -3,18 +3,18 @@ title: Romain Latapie
 categories:
     - contributeur
 social:
-    - bluesky:
-    - github:
-    - gitlab:
-    - linkedin:https://fr.linkedin.com/in/romain-latapie
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+    bluesky:
+    github:
+    gitlab:
+    linkedin:https://fr.linkedin.com/in/romain-latapie
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 # Romain Latapie

@@ -1,4 +1,5 @@
 {% if page.meta.social %}
+{% if page.meta.social is mapping %}
 <ul class="author-social-links">
     {% for network, value in page.meta.social.items() %}
     {% if value %}
@@ -24,4 +25,5 @@
     {% endif %}
     {% endfor %}
 </ul>
+{% endif %}
 {% endif %}

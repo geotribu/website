@@ -4,17 +4,17 @@ subtitle:
 categories:
     - contributeur
 social:
-    - github: thomas-szczurek
-    - gitlab:
-    - linkedin: https://www.linkedin.com/in/thomas-szczurek-gayant-7406b5257/
-    - mail:
-    - mastodon:
-        - instance: mapstodon.space
-        - username: thomas_szczurek
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+    github: thomas-szczurek
+    gitlab:
+    linkedin: https://www.linkedin.com/in/thomas-szczurek-gayant-7406b5257/
+    mail:
+    mastodon:
+        instance: mapstodon.space
+        username: thomas_szczurek
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 <!-- --8<-- [start:author-sign-block] -->

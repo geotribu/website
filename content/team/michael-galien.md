@@ -3,18 +3,18 @@ title: Michaël Galien
 categories:
     - contributeur
 social:
-    - bluesky:
-    - github: https://github.com/Michael-cd30
-    - gitlab:
-    - linkedin: https://www.linkedin.com/in/micha%C3%ABl-galien/
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+    bluesky:
+    github: https://github.com/Michael-cd30
+    gitlab:
+    linkedin: https://www.linkedin.com/in/micha%C3%ABl-galien/
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 # Michaël Galien
