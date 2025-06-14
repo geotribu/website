@@ -4,18 +4,18 @@ subtitle: "🌐🌍🍇🍷🍺🧀 Maps, viticulture, beers, cheeses"
 categories:
     - contributeur
 social:
-    - bluesky:
-    - github: rxlacroix
-    - gitlab:
-    - linkedin:
-    - mail: romain.lacroix@free.fr
-    - mastodon:
-        - instance: fosstodon.org
-        - username: rxlacroix
-    - openstreetmap:
-    - osgeo:
-    - twitter: lacxrx
-    - website: https://rxlacroix.github.io
+    bluesky:
+    github: rxlacroix
+    gitlab:
+    linkedin:
+    mail: romain.lacroix@free.fr
+    mastodon:
+        instance: fosstodon.org
+        username: rxlacroix
+    openstreetmap:
+    osgeo:
+    twitter: lacxrx
+    website: https://rxlacroix.github.io
 ---
 
 # Romain Lacroix

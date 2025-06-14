@@ -3,18 +3,18 @@ title: Paul Blottiere
 categories:
     - contributeur
 social:
-    - bluesky:
-    - github: https://github.com/pblottiere
-    - gitlab:
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website: https://pblottiere.github.io/
+    bluesky:
+    github: https://github.com/pblottiere
+    gitlab:
+    linkedin:
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website: https://pblottiere.github.io/
 ---
 
 # Paul Blottiere

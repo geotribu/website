@@ -3,18 +3,18 @@ title: Karl TAYOU
 categories:
     - contributeur
 social:
-    - bluesky:
-    - github:
-    - gitlab:
-    - linkedin: karl-tayou-53a3a7b9
-    - mail: nelsontayou1@gmail.com
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter: armeltayou
-    - website:
+    bluesky:
+    github:
+    gitlab:
+    linkedin: karl-tayou-53a3a7b9
+    mail: nelsontayou1@gmail.com
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter: armeltayou
+    website:
 ---
 
 # Karl TAYOU

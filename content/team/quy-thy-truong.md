@@ -3,20 +3,20 @@ title: Quy Thy Truong
 categories:
     - contributeur
 social:
-    - bluesky:
-    - github: https://github.com/quythytruong
-    - gitlab: https://gitlab.com/qttruong
-    - linkedin: https://www.linkedin.com/in/quythytruong/
-    - mail: quythy.truong@oslandia.com
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap: QualiThyAssessment
-    - osgeo:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+    bluesky:
+    github: https://github.com/quythytruong
+    gitlab: https://gitlab.com/qttruong
+    linkedin: https://www.linkedin.com/in/quythytruong/
+    mail: quythy.truong@oslandia.com
+    mastodon:
+        instance:
+        username:
+    openstreetmap: QualiThyAssessment
+    osgeo:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 # Quy Thy Truong
