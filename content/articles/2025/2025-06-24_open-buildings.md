@@ -14,7 +14,9 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_building
 license: beerware
 robots: index, follow
 tags:
+    - Afrique
     - CSV
+    - GDAL
     - Google
     - OpenBuildings
     - QGIS
@@ -31,7 +33,7 @@ La planification urbaine ainsi qu'un nombre croissant de domaines & secteurs né
 En France, nous avons la chance de pouvoir utiliser plusieurs sources de données bâtiments, de qualité et ouvertes :
 
 - [la BD TOPO](https://geoservices.ign.fr/bdtopo), fournie par [l'IGN](https://www.ign.fr/institut).
-- [la Base de Données Nationale des Bâtiments](https://www.cstb.fr/bases-donnees/base-donnees-nationale-batiments), fournie par [le CSTB - Centre Scientifique et Technique du Bâtiment](https://www.cstb.fr/groupe).
+- [la BDNB - _Base de Données Nationale des Bâtiments_](https://www.cstb.fr/bases-donnees/base-donnees-nationale-batiments), fournie par [le CSTB - _Centre Scientifique et Technique du Bâtiment_](https://www.cstb.fr/groupe).
 
 Or ce n'est pas toujours le cas partout dans le monde. Et notamment dans les pays du Sud, là où certains besoins en données bâtiments commencent à se faire fortement ressentir, compte-tenu d'une urbanisation parfois galopante. En témoigne par exemple [les inondations mortelles récentes à Kinshasa](https://www.jeuneafrique.com/1676221/politique/rdc-a-kinshasa-des-inondations-font-au-moins-une-trentaine-de-morts/), capitale de la RDC, une ville malheureusement "réputée" pour ses embouteillages monstres et son réseau électrique déficient.
 
@@ -145,7 +147,7 @@ Qu'on se le dise : les Open Buildings pallient un manque de services publics et 
 
 Même si ça commence à bouger ces derniers temps, citons notamment [le projet SIGFU en Côte d'Ivoire](https://sigfu.gouv.ci/accueil) : 50% SIG 50% Kung-Fu, il s'agit du _Système Intégré de Gestion du Foncier Urbain_, initié par le _Ministère en charge de la Construction du Logement et de l’Urbanisme_. Ou [le service d'adressage et de parcelles numériques et uniques de la Poste au Ghana](https://www.ghanapostgps.com/map/).
 
-Il peut également arriver parfois que la pertinence de certains bâtiments laisse à désirer. Bon, comme c'est une équipe de Google qui a généré le jeu de données, on pourrait s'attendre à ce qu'il soit synchro avec les tuiles satellites fournies par big G (qu'il est d'ailleurs possible de configurer dans QGIS, [en suivant ce tuto et l'ajout via tuiles XYZ](https://geossc.ma/ajouter-les-couches-de-google-sur-qgis-3-x/)). Or ces tuiles satellites sont rafraîchies plus souvent que le jeu de données OpenBuildings, comme il est possible de le voir, par exemple, ici à [Luanda](https://fr.wikipedia.org/wiki/Luanda):
+Il peut également arriver parfois que la pertinence de certains bâtiments laisse à désirer. Bon, comme c'est une équipe de Google qui a généré le jeu de données, on pourrait s'attendre à ce qu'il soit synchro avec les tuiles satellites fournies par Big G (qu'il est d'ailleurs possible de configurer dans QGIS, [en suivant ce tuto et l'ajout via tuiles XYZ](https://geossc.ma/ajouter-les-couches-de-google-sur-qgis-3-x/)). Or ces tuiles satellites sont rafraîchies plus souvent que le jeu de données OpenBuildings, comme il est possible de le voir, par exemple, ici à [Luanda](https://fr.wikipedia.org/wiki/Luanda):
 
 ![Delta temporel entre tuile Google sat et Open Buildings - Luanda](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/openbuilding_delta_temporel_sat_luanda.webp){: .img-center loading=lazy }
 
@@ -157,7 +159,7 @@ Toutefois, notons au travers de cette interview publicitaire d'Abdoulaye Diack, 
 
 <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/9VtoKJWZ5os?si=ohH3v4u14sEvjmcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Aussi, la dernière version datant de 2023, il serait recommandable et sympa de la part de Big G de proposer assez rapidement une nouvelle version, dans des zones où l'urbanisation va vite, parfois trop vite et de manière anarchique.
+Aussi, la dernière version datant de 2023, il serait quand même sympa de la part de Big G de proposer assez rapidement une nouvelle version, dans des zones où l'urbanisation va vite, parfois trop vite...
 
 De toutes les manières, nous encourageons les organisations et les individus à utiliser ce jeu de données Open Buildings, pour des applications vertueuses et en faveur du développement et de la résilience des pays du Sud.
 
