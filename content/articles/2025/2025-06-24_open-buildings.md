@@ -33,7 +33,7 @@ En France, nous avons la chance de pouvoir utiliser plusieurs sources de donnée
 - [la BD TOPO](https://geoservices.ign.fr/bdtopo), fournie par [l'IGN](https://www.ign.fr/institut).
 - [la Base de Données Nationale des Bâtiments](https://www.cstb.fr/bases-donnees/base-donnees-nationale-batiments), fournie par [le CSTB - Centre Scientifique et Technique du Bâtiment](https://www.cstb.fr/groupe).
 
-Or ce n'est pas toujours le cas partout dans le monde. Et notamment dans les pays du Sud, là où certains besoins en données bâtiments commencent à se faire fortement ressentir, compte-tenu d'une urbanisation parfois galopante. En témoigne par exemple [les inondations mortelles récentes à Kinshasa](https://www.jeuneafrique.com/1676221/politique/rdc-a-kinshasa-des-inondations-font-au-moins-une-trentaine-de-morts/), capitale de la RDC, une ville où le réseau électrique est désastreux car mal dimensionné.
+Or ce n'est pas toujours le cas partout dans le monde. Et notamment dans les pays du Sud, là où certains besoins en données bâtiments commencent à se faire fortement ressentir, compte-tenu d'une urbanisation parfois galopante. En témoigne par exemple [les inondations mortelles récentes à Kinshasa](https://www.jeuneafrique.com/1676221/politique/rdc-a-kinshasa-des-inondations-font-au-moins-une-trentaine-de-morts/), capitale de la RDC, une ville malheureusement "réputée" pour ses embouteillages monstres et son réseau électrique déficient.
 
 Il existe ceci dit certains jeux de données bâtiments à couverture mondiale :
 
