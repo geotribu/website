@@ -26,7 +26,7 @@ tags:
 
 ## Introduction
 
-La planification urbaine ainsi qu'un nombre croissant de domaines & secteurs nécessitent d'avoir des données bâtiments, les plus à jour possibles dans l'idéal. Il s'agit là d'un point crucial dans l'optique de mieux comprendre et planifier la gestion urbaine et énergétique notamment, au travers de ses SIG.
+La planification urbaine ainsi qu'un nombre croissant de domaines & secteurs nécessitent d'avoir des données bâtiments, les plus à jour possibles dans l'idéal. Il s'agit là d'un point crucial dans l'optique de mieux comprendre et planifier la gestion urbaine, climatique et énergétique notamment, au travers de ses SIG.
 
 En France, nous avons la chance de pouvoir utiliser plusieurs sources de données bâtiments, de qualité et ouvertes :
 
