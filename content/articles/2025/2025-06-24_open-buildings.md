@@ -1,14 +1,14 @@
 ---
-title: Les Open Buildings, des données bâtiments pour le Sud
-subtitle: Les pros du bâtiment
+title: Open Buildings, un jeu de données de bâtiments pour le Sud
+subtitle: Les semi-pros du bâtiment
 authors:
     - Michel-Francis KISWESO
     - Guilhem ALLAMAN
 categories:
     - article
 comments: true
-date: 2025-02-19
-description: Présentation, guide d'import et d'extraction des Open Buildings, un jeu de données de bâti couvrant les pays du Sud et généré par Google
+date: 2025-06-24
+description: Présentation, guide d'import et d'extraction des Open Buildings, un jeu de données de bâti couvrant les pays du Sud et généré par une équipe de Google au Ghana.
 icon: fontawesome/solid/building
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/carte_telechargement_open_buildings.png
 license: beerware
@@ -20,18 +20,43 @@ tags:
     - QGIS
 ---
 
-# Extraction des Open Buildings, un jeu de données de bâtiments pour le Sud
+# Présentation et extraction des Open Buildings, un jeu de données de bâtiments pour le Sud
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
 
-Les [Open Buildings](https://sites.research.google/gr/open-buildings/) sont un jeu de données, disponible [sous licence ODbL](https://fr.wikipedia.org/wiki/Open_Database_License), qui caractérise les empreintes des bâtiments dans les pays du Sud.
+La planification urbaine ainsi qu'un nombre important de domaines & secteurs nécessitent d'avoir des données bâtiments, les plus à jour possibles dans l'idéal. Il s'agit là d'un point crucial dans l'optique de mieux comprendre et planifier la gestion urbaine et énergétique, au travers de ses SIG.
 
-Ces bâtiments sont dérivés d’images satellites haute résolution, issus d'un traitement effectué par une équipe de recherche de Google au Ghana. Ils sont au nombre d'environ 1,8 milliard, sur une zone de 58 millions de km² et sur plusieurs continents : en Afrique, en Asie du Sud et du Sud-Est, en Amérique du Sud et Centrale, dans les Caraïbes...
+En France, nous avons la chance de pouvoir utiliser plusieurs sources de données bâtiments, de qualité et ouvertes :
+
+- [la BD TOPO](https://geoservices.ign.fr/bdtopo), fournie par [l'IGN](https://www.ign.fr/institut).
+- [la Base de Données Nationale des Bâtiments](https://www.cstb.fr/bases-donnees/base-donnees-nationale-batiments), fournie par [le CSTB - Centre Scientifique et Technique du Bâtiment](https://www.cstb.fr/groupe).
+
+Or ce n'est pas toujours le cas partout dans le monde. Et notamment dans les pays du Sud, là où certains besoins en données bâtiments commencent à se faire ressentir, compte-tenu d'une urbanisation parfois galopante.
+
+Il existe ceci dit certains jeux de données bâtiments à couverture mondiale :
+
+- [les bâtiments d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/Key:building), qui ont le mérite de présenter un niveau de complétion assez élevé en Europe - ce n'est pas toujours le cas dans les autres régions du monde.
+- [le jeu de données OpenBuildings de Google](https://sites.research.google/gr/open-buildings/), généré par une équipe de recherche de Big G au Ghana, qui ont le mérite de couvrir tous les pays du Sud depuis la dernière version en date.
+- [les bâtiments de la fondation Overture](https://docs.overturemaps.org/guides/buildings), qui agrègent plusieurs sources de données bâtiments : les bâtiments d'OpenStreetMap, les OpenBuildings, les [Microsoft ML Buildings](https://github.com/microsoft/GlobalMLBuildingFootprints), les bâtiments d'ESRI Community Maps...
+
+Au cours de cet article, nous allons nous concentrer sur les OpenBuildings, en gardant à l'esprit de ne pas faire trop de publicité pour la boîte qui les génère. Nous présenterons le jeu de données, ainsi qu'une manière de les récupérer puis de les transformer avec GDAL/OGR, avant de réaliser une brève analyse qualitative de ces données.
+
+L’objectif est de fournir une méthode efficace pour obtenir des informations géospatiales précises sur les bâtiments, qui peuvent être utilisés pour diverses applications, telles que :
+
+- La cartographie des populations, notamment pour les recensements et l’estimation de la densité
+- L’évaluation des pertes et la planification des interventions lors de catastrophes naturelles
+- Les secteurs de l’environnement, de la santé, du foncier, le développement économique...
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
+
+## Présentation
+
+Les [Open Buildings](https://sites.research.google/gr/open-buildings/) sont un jeu de données, disponible [sous licence ODbL](https://fr.wikipedia.org/wiki/Open_Database_License), qui caractérise les empreintes des bâtiments dans les pays du Sud.
+
+Ces bâtiments sont dérivés d’images satellites haute résolution, issus d'un traitement effectué par une équipe de recherche de Google au Ghana. Ils sont au nombre d'environ 1,8 milliard, sur une zone de 58 millions de km² et sur plusieurs continents : en Afrique, en Asie du Sud et du Sud-Est, en Amérique du Sud et Centrale, dans les Caraïbes...
 
 ## Description des données Open Buildings
 
@@ -116,13 +141,7 @@ ogr2ogr -f "PostgreSQL" \
 
 Nous avons vu comment télécharger puis convertir dans un format plus commode des données de bâtiments Open Buildings.
 
-L’objectif est de fournir une méthode efficace pour obtenir des informations géospatiales précises sur les bâtiments, qui peuvent être utilisés pour diverses applications, telles que :
-
-- La cartographie des populations, notamment pour les recensements et l’estimation de la densité
-- L’évaluation des pertes et la planification des interventions lors de catastrophes naturelles
-- Les secteurs de l’environnement, de la santé, du foncier, le développement économique...
-
-Qu'on se le dise : les Open Buildings pallient un manque de services publics et de données disponibles dans les pays couverts par ce jeu de données, où le niveau de complétion des bâtiments OpenStreetMap n'est pas toujours haut. Tout le monde n'a pas la chance d'avoir [l'IGN](https://www.ign.fr/) et sa [BD TOPO](https://geoservices.ign.fr/bdtopo)...
+Qu'on se le dise : les Open Buildings pallient un manque de services publics et de données disponibles dans les pays couverts par ce jeu de données, où le niveau de complétion des bâtiments OpenStreetMap n'est pas toujours haut. Tout le monde n'a pas la chance d'avoir l'IGN et sa BD TOPO, ni la BD du CSTB...
 
 Même si ça commence à bouger ces derniers temps, citons notamment [le projet SIGFU en Côte d'Ivoire](https://sigfu.gouv.ci/accueil) : 50% SIG 50% Kung-Fu, il s'agit du _Système Intégré de Gestion du Foncier Urbain_, initié par le _Ministère en charge de la Construction du Logement et de l’Urbanisme_. Ou [le service d'adressage et de parcelles numériques et uniques de la Poste au Ghana](https://www.ghanapostgps.com/map/).
 
@@ -134,9 +153,11 @@ Et parfois, il y a des décalages entre imagerie satellitaire et bâtiments, com
 
 ![Décalage de quelques mètres entre image satellite Google et bâtiment OpenBuildings - Yaoundé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/openbuilding_yaounde_decalage_googlesat.png){: .img-center loading=lazy }
 
-Toutefois, notons au travers de cette interview toute fraîche d'Abdoulaye Diack, le responsable du lab qui génère les Open Buildings, qu'en réalité ce sont les images de Sentinel-2 qui sont utilisées pour générer les emprises de bâtiments :
+Toutefois, notons au travers de cette interview publicitaire d'Abdoulaye Diack, le responsable du lab qui génère les Open Buildings, qu'en réalité ce sont les images de Sentinel-2 qui sont utilisées pour générer les emprises de bâtiments :
 
 <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/9VtoKJWZ5os?si=ohH3v4u14sEvjmcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Aussi, la dernière version datant de 2023, il serait recommandable et sympa de la part de Big G de proposer assez rapidement une nouvelle version, dans des zones où l'urbanisation va vite, parfois trop vite et de manière anarchique.
 
 De toutes les manières, nous encourageons les organisations et les individus à utiliser ce jeu de données Open Buildings, pour des applications vertueuses et en faveur du développement et de la résilience des pays du Sud.
 
