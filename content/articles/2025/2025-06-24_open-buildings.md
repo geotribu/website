@@ -155,9 +155,7 @@ Et parfois, il y a des décalages entre imagerie satellitaire et bâtiments, com
 
 ![Décalage de quelques mètres entre image satellite Google et bâtiment OpenBuildings - Yaoundé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/openbuilding_yaounde_decalage_googlesat.png){: .img-center loading=lazy }
 
-Toutefois, notons au travers de cette interview publicitaire d'Abdoulaye Diack, le responsable du lab qui génère les Open Buildings, qu'en réalité ce sont les images de Sentinel-2 qui sont utilisées pour générer les emprises de bâtiments :
-
-<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/9VtoKJWZ5os?si=ohH3v4u14sEvjmcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Toutefois, notons au travers de [cette interview assez publicitaire d'Abdoulaye Diack](https://www.youtube.com/watch?v=9VtoKJWZ5os), le responsable du lab qui génère les Open Buildings, qu'en réalité ce sont les images de Sentinel-2 qui sont utilisées pour générer les emprises de bâtiments :
 
 Aussi, la dernière version datant de 2023, il serait quand même sympa de la part de Big G de proposer assez rapidement une nouvelle version, dans des zones où l'urbanisation va vite, parfois trop vite...
 
