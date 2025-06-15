@@ -143,7 +143,7 @@ ogr2ogr -f "PostgreSQL" \
 
 Nous avons vu comment télécharger puis convertir dans un format plus commode des données de bâtiments Open Buildings.
 
-Qu'on se le dise : les Open Buildings pallient un manque de services publics et de données disponibles dans les pays couverts par ce jeu de données, où le niveau de complétion des bâtiments OpenStreetMap n'est pas toujours haut. Tout le monde n'a pas la chance d'avoir l'IGN et sa BD TOPO, ni la BD du CSTB...
+Qu'on se le dise : les Open Buildings pallient un manque de services publics et de données disponibles dans les pays couverts par ce jeu de données, où le niveau de complétion des bâtiments OpenStreetMap n'est pas toujours haut. Et tout le monde n'a pas la chance d'avoir l'IGN et sa BD TOPO, ni la BDNB du CSTB...
 
 Même si ça commence à bouger ces derniers temps, citons notamment [le projet SIGFU en Côte d'Ivoire](https://sigfu.gouv.ci/accueil) : 50% SIG 50% Kung-Fu, il s'agit du _Système Intégré de Gestion du Foncier Urbain_, initié par le _Ministère en charge de la Construction du Logement et de l’Urbanisme_. Ou [le service d'adressage et de parcelles numériques et uniques de la Poste au Ghana](https://www.ghanapostgps.com/map/).
 
@@ -155,7 +155,7 @@ Et parfois, il y a des décalages entre imagerie satellitaire et bâtiments, com
 
 ![Décalage de quelques mètres entre image satellite Google et bâtiment OpenBuildings - Yaoundé](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/open_buildings/openbuilding_yaounde_decalage_googlesat.png){: .img-center loading=lazy }
 
-Toutefois, notons au travers de [cette interview assez publicitaire d'Abdoulaye Diack](https://www.youtube.com/watch?v=9VtoKJWZ5os), le responsable du lab qui génère les Open Buildings, qu'en réalité ce sont les images de Sentinel-2 qui sont utilisées pour générer les emprises de bâtiments :
+Toutefois, notons au travers de [cette interview assez publicitaire d'Abdoulaye Diack](https://www.youtube.com/watch?v=9VtoKJWZ5os), le responsable du lab qui génère les Open Buildings, qu'en réalité ce sont les images de Sentinel-2 qui sont utilisées pour générer les emprises de bâtiments.
 
 Aussi, la dernière version datant de 2023, il serait quand même sympa de la part de Big G de proposer assez rapidement une nouvelle version, dans des zones où l'urbanisation va vite, parfois trop vite...
 
