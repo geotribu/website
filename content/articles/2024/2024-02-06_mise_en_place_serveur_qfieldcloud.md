@@ -46,7 +46,7 @@ Ce contenu est sous licence [`PV`](https://poudreverte.org).
 
 <!-- markdownlint-disable MD046 -->
 ??? quote "Détails"
-    :trollface:
+    ![Trollface - Jim Carrey](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/jim_carrey_trollface.webp)
 
 <!-- markdownlint-enable MD026 MD041 MD046 -->
 
@@ -64,12 +64,12 @@ Bon allez, on reprend.
 
 Connaissez-vous [QField](https://qfield.org/) ? QField c'est de la magie ! Mais c'est pas ambiance au chaud, le Q vissé dans son siège, dans une salle avec des rideaux qui s'ouvrent, avec des chapeaux desquels sortent des lapins ... tout ça c'est la magie de [QFieldSync](https://plugins.qgis.org/plugins/qfieldsync/). QField, c'est de la magie plutôt ambiance dehors, avec gourde, sac-à-dos, casquette, lunettes, parce qu'y'a du monde partout, ça chauffe à l'arrière de la Modus _[...]_ là j'suis tranquille, j'passe vers le marché aux Puces, posé à la playa playa, avec tous les vaillants vaillants :point_up_2: :point_up:
 
-Plus concrètement, il s'agit d'une application mobile de saisie et relevé terrain, hautement compatible avec [QGIS](https://www.qgis.org), permettant de reproduire les paramétrages de saisie et formulaires des couches quasi à l'identique, poussée par [OPENGIS.ch](https://www.opengis.ch/) qu'on remercie pour tout le développement made with :heart:. [Un précédent article](../2022/2022-05-24_releve_terrain_qfield.md) explique plus en détail un processus de relevé grâce à l'appli QField qu'on ne présente dorénavant plus.
+Plus concrètement, il s'agit d'une application mobile de saisie et relevé terrain, hautement compatible avec [QGIS](https://www.qgis.org), permettant de reproduire les paramétrages de saisie et formulaires des couches quasi à l'identique, poussée par [OPENGIS.ch](https://www.opengis.ch/) qu'on remercie pour tout le développement made with :heartbeat:. [Un précédent article](../2022/2022-05-24_releve_terrain_qfield.md) explique plus en détail un processus de relevé grâce à l'appli QField qu'on ne présente dorénavant plus.
 
 Maintenant, connaissez-vous Claude QField, la cousine un peu éloignée de Jean-Marc ? Euh non, pardon, "le cloud QField", ["QFieldCloud"](https://qfield.cloud/), _QFC_ pour les intimes. Aucun rapport avec _Quantum Fried Chicken_, même si on va voir qu'il est parfois question de _buckets_. QfieldCloud c'est LA brique qui permet de faire la liaison cloud entre QGIS et QField, faisant ainsi de ce triptyque un système robuste et complet d'enquête terrain. QFieldCloud offre entre autres la possibilité de synchroniser les données saisies dans QField directement dans l'application, grâce à un mode semi-offline bien articulé, qui permet de se libérer de pas mal de contraintes concernant le transfert de données PC - smartphone/tablette initialement filaire. Ainsi qu'un système de droits et d'accès aux projets qui permet de gérer finement la configuration et les permissions de plusieurs utilisateur/rices en lecture-écriture.
 
 !!! info
-    À ce moment de l'article, il est important de noter qu'il existe [ici](https://qfield.cloud/) une instance QFieldCloud "officielle" hébergée par OpenGIS. Qui propose une offre gratuite jusqu'à 100 MO de stockage. Ce qui peut s'avérer limité dès lors que les projets peuvent embarquer beaucoup de photos, et dont les projets privés ne permettent pas forcément la saisie par équipe/organisation ou par plusieurs utilisateur/rices. Pour cela, il y a [les offres Pro et Organization](https://qfield.cloud/pricing.html) qui offrent plus de stockage et plus d'autres trucs. Voire la version "Private Cloud", soit l'hébergement custom d'une instance de serveur QFieldCloud, dont la mise en place, rendue possible grâce à l'ouverture du logiciel, est au cœur de cet article. Mais, il faut savoir que mettre en place une propre instance suppose la charge d'un tas d'autres contraintes liées à l'hébergement : maintenance, montées de versions, backups ... Alors si vous aimez porter ceinture et bretelles, il vaut mieux privilégier l'instance officielle de QFieldCloud, ce qui aura en plus l'avantage de soutenir la boîte et pousser le développement de la solution. Sans oublier qu'une instance on-premise de QFieldCloud ne propose pas la belle page de configuration qu'on retrouve sur [app.qfield.cloud](https://app.qfield.cloud)...
+    À ce moment de l'article, il est important de noter qu'il existe [ici](https://qfield.cloud/) une instance QFieldCloud "officielle" hébergée par OPENGIS.ch. Qui propose une offre gratuite jusqu'à 100 MO de stockage. Ce qui peut s'avérer limité dès lors que les projets peuvent embarquer beaucoup de photos, et dont les projets privés ne permettent pas forcément la saisie par équipe/organisation ou par plusieurs utilisateur/rices. Pour cela, il y a [les offres Pro et Organization](https://qfield.cloud/pricing.html) qui offrent plus de stockage et plus d'autres trucs. Voire la version "Private Cloud", soit l'hébergement custom d'une instance de serveur QFieldCloud, dont la mise en place, rendue possible grâce à l'ouverture du logiciel, est au cœur de cet article. Mais, il faut savoir que mettre en place une propre instance suppose la charge d'un tas d'autres contraintes liées à l'hébergement : maintenance, montées de versions, backups ... Alors si vous aimez porter ceinture et bretelles, il vaut mieux privilégier l'instance officielle de QFieldCloud, ce qui aura en plus l'avantage de soutenir la boîte et pousser le développement de la solution. Sans oublier qu'une instance on-premise de QFieldCloud ne propose pas la belle page de configuration qu'on retrouve sur [app.qfield.cloud](https://app.qfield.cloud)...
 
 ### Infrastructure
 
@@ -83,7 +83,7 @@ Concernant les specs, pas forcément besoin de beaucoup de ressources, enfin tou
 
 Au niveau de l'espace de stockage, il nous faudra au grand minimum une vingtaine de Go. Prenons-en 100 pour être sûrs #CeintureEtBretelles. D'autant plus que nous verrons par la suite qu'il y a la possibilité de stocker nos données géo des projets QGIS (geopackages, photos...) séparément du stockage principal du système QFieldCloud, via des buckets respectant le protocole "Simple Storage Service". Même si ici (spoiler) nous allons tout stocker sur le même serveur.
 
-Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et le nom de domaine `"qfieldcloud.pennarmenez.com"` qui pointe vers la VM mise en place pour l'article.
+Il nous faudra également une entrée DNS qui pointe vers la VM. Ici ce sera une entrée de type `A` et disons le nom de domaine `"i.love.unicorns.space"` qui pointe vers la VM mise en place pour l'article.
 
 ### Installations
 
@@ -103,22 +103,7 @@ Il nous faudra ensuite installer [git](https://git-scm.com/), de sorte à pouvoi
 apt install -y git
 ```
 
-Maintenant, il est nécessaire d'installer [docker](https://www.docker.com/), en suivant les instructions de [la doc officielle](https://docs.docker.com/engine/install/debian/) dont voici les commandes résumées, que vous pouvez copier-coller (le savoir-faire numero uno de tout/e développeur/se qui se respecte):
-
-```sh
-sudo apt-get install ca-certificates curl gnupg
-sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
-
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
-  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update
-
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-```
+Maintenant, il est nécessaire d'installer [docker](https://www.docker.com/), en suivant les instructions de [la doc officielle](https://docs.docker.com/engine/install/debian/) : quelques commandes à _copier-coller_, le savoir-faire numero uno de tout/e développeur/se qui se respecte :v:
 
 Docker (et [`compose`](https://docs.docker.com/compose/)) sont les outils de containerisation qui nous permettront de lancer les différents services nécessaires pour notre instance QFieldCloud, qu'il n'est pas recommandé de lancer en tant que `root`. C'est pourquoi on peut ajouter l'utilisateur `qfc` précédemment créé au groupe `docker` :
 
@@ -140,7 +125,7 @@ Suivons maintenant les instructions sur [le dépôt GitHub de QFieldCloud](https
 # si vous avez renseigné une clé SSH/GPG sur votre compte GitHub
 git clone --recurse-submodules git@github.com:opengisch/qfieldcloud.git
 
-# si vous n'avez pas de clé SSH enregistrée
+# si vous n'avez pas de clé enregistrée
 git clone --recurse-submodules https://github.com/opengisch/qfieldcloud.git
 ```
 
@@ -148,7 +133,7 @@ git clone --recurse-submodules https://github.com/opengisch/qfieldcloud.git
 
 ```sh
 cd qfieldcloud
-git checkout v0.26.4
+git checkout v0.24.0
 ```
 
 - copier le fichier `.env.local` vers un fichier `.env` qui va contenir toute la configuration du serveur :
@@ -161,17 +146,17 @@ cp .env.example .env
 
 Jetons à présent un coup d':eyes: sur ce fichier `.env`, qui va contenir le gros de la configuration du serveur. Il s'agit d'une liste de variables d'environnement ÉCRITES EN MAJUSCULES dont il nous faut adapter certaines :
 
-- `ENVIRONMENT=production` : on passe en prod direct :metal: tester c'est douter
+- `ENVIRONMENT=production` : on passe en prod direct, tester c'est douter :metal:
 
-- `QFIELDCLOUD_HOST` : dans cette variable on met le nom de domaine utilisé pour l'instance QFieldCloud, "qfieldcloud.pennarmenez.com" dans notre cas
+- `QFIELDCLOUD_HOST` : dans cette variable on met le nom de domaine utilisé pour l'instance QFieldCloud, `"i.love.unicorns.space"` dans notre cas.
 
-- `SECRET_KEY` : générer une clé et la mettre ici, via `pwgen 64` par exemple
+- `SECRET_KEY` : générer une clé et la mettre ici, via `pwgen 64` par exemple.
 
-- les variables qui commencent par `STORAGE_` font référence au _bucket_ compatible S3 dans lequel seront stockées les données géo : projets QGIS, geopackages, photos ... Il est possible d'utiliser un bucket de grande enseigne si vous le souhaitez, mais l'équipe de Geotribu vous propose d'utiliser un bucket frais, local et de saison avec [minio](https://min.io/). Qui possède en plus le (gros) avantage de ne rien avoir à changer au niveau de la config (sauf la variable `STORAGE_SECRET_ACCESS_KEY` bien sûr), étant donné que le dépôt de QFieldCloud propose la mise en place d'un service de buckets minio que nous allons voir dans la suite
+- les variables qui commencent par `STORAGE_` font référence au _bucket_ compatible S3 dans lequel seront stockées les données géo : projets QGIS, geopackages, photos ... Il est possible d'utiliser un bucket de grande enseigne si vous le souhaitez, mais l'équipe de Geotribu vous propose d'utiliser un bucket frais, local et de saison avec [minio](https://min.io/). Qui possède en plus le (gros) avantage de ne rien avoir à changer au niveau de la config (sauf la variable `STORAGE_SECRET_ACCESS_KEY` bien sûr), étant donné que le dépôt de QFieldCloud propose la mise en place d'un service de buckets minio que nous allons voir dans la suite. Même s'il peut aussi être judicieux d'utiliser un S3 externe, ce qui a le mérite de décorréler la maintenance du stockage et du QFieldCloud.
 
-- les variables qui commencent par `POSTGRES_` représentent les informations de connexion à la base de données postgres. Attention il ne s'agit pas d'une BD spatiale, qui aurait vocation à héberger des données SIG (la config par défaut en propose une, configurable avec les variables qui commencent par `GEODB_`). Il s'agit de la BD interne de QFieldCloud, qui contiendra les données des utilisateurs, des organisations, des équipes ... On peut donc allègrement ne rien changer à ce niveau-là, sauf le `POSTGRES_PASSWORD` bien sûr
+- les variables qui commencent par `POSTGRES_` représentent les informations de connexion à la base de données postgres. Attention il ne s'agit pas d'une BD spatiale, qui aurait vocation à héberger des données SIG (la config par défaut en propose une, configurable avec les variables qui commencent par `GEODB_`). Il s'agit de la BD interne de QFieldCloud, qui contiendra les données des utilisateurs, des organisations, des équipes ... On peut donc allègrement ne rien changer à ce niveau-là, sauf le `POSTGRES_PASSWORD` bien sûr.
 
-- dans les variables qui commencent par `EMAIL_` on peut mettre les informations d'un serveur mél existant, ou les laisser telles quelles dans le cas où on ne souhaite pas utiliser de méls
+- dans les variables qui commencent par `EMAIL_` on peut mettre les informations d'un serveur mél existant, ou les laisser telles quelles dans le cas où on ne souhaite pas utiliser de méls.
 
 - `COMPOSE_FILE=docker-compose.yml:docker-compose.override.standalone.yml`: il s'agit des fichiers "compose" qui déclarent les services en question de notre instance QFieldCloud. Zieutons-y un petit coup !
 
@@ -225,10 +210,10 @@ Une fois la commande arrivée à son terme et tous les _containers_ dans le :whi
 docker compose exec app python manage.py migrate
 
 # collecter les fichiers web statiques
-docker compose run app python manage.py collectstatic --noinput3
+docker compose run app python manage.py collectstatic --noinput
 
 # créer le compte admin pour l'interface web, en remplaçant avec le nom d'utilisateur et le mél adéquat
-docker compose run app python manage.py createsuperuser --username admin --email admin@mon.domain
+docker compose run app python manage.py createsuperuser --username admin --email admin@i.love.unicorns.space
 ```
 
 !!! warning
@@ -262,7 +247,7 @@ Voici l'interrupteur :
 docker compose down --remove-orphans
 
 # jour
-docker compose up -d --build
+docker compose up -d
 ```
 
 Une fois le certificat généré, valable 3 mois, il nous faut à présent le copier dans la config de QFieldCloud :
@@ -291,9 +276,6 @@ Voyons maintenant comment créer notre première utilisatrice : il faut nous ren
 
 À noter que la case "Staff status" permet à ce/tte people de se connecter à l'interface d'admin web. Combiné à une gestion des droits d'admin via la partie "Groups", cela peut permettre de créer des groupes d'admins avec des droits spécifiques et ce sans avoir à utiliser le super user principal.
 
-!!! question "Jane Doe"
-    _Le mot de passe de Jane est 4 fois la répétition, en minuscules, du nom d'un logiciel bureautique SIG stylay, avec entre chaque des underscores. Si vous pensez avoir trouvé, vous pouvez essayer [ici](https://qfieldcloud.pennarmenez.com/admin/login) :eyes:._
-
 N.B. : Au cours de la vie du QFieldCloud, il est possible que dans QGIS / QField, un message d'erreur comportant la mention "subscription inactive" apparaisse, empêchant par là la possibilité de récupérer ou synchroniser les projets. Pour régler cela, il faut se connecter au serveur et rentrer les commandes suivantes de sorte à corriger le statut des souscriptions (qui deviennent inactives après un mois généralement) :
 
 ```sh
@@ -314,7 +296,7 @@ UPDATE subscription_subscription SET status = 'active_paid';
 
 ![logo QGIS](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/qgis.png "logo QGIS"){: .img-thumbnail-left }
 
-Créons maintenant un projet pour tester un tant soit peu notre setup. Il faudra d'abord se connecter à notre instance QFC dans le plugin QFieldSync. Pour cela, cliquer deux fois sur l'abeille cool dans l'interface de connexion et renseigner l'URL de l'instance de même que login / mot de passe :
+Créons maintenant un projet pour tester un tant soit peu notre setup. Il faudra d'abord se connecter à notre instance QFC dans le plugin QFieldSync. Pour cela, cliquer deux fois sur l'abeille cool (son petit nom : "Nyuki") dans l'interface de connexion, puis renseigner l'URL de l'instance de même que login / mot de passe :
 
 ![Écran de connexion du plugin QFieldSync](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/qfieldsync_login.webp){: .img-center loading=lazy }
 
@@ -343,7 +325,7 @@ Et maintenant ? Nous venons de voir comment mettre en place une instance QFieldC
 
 ![gif de bob l'éponge et patrick en panique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/mise_en_place_qfieldcloud_custom/bob_et_patrick.gif){: .img-center loading=lazy }
 
-Les backups, les maintenances, les montées de version ... ne font pas l'objet de cet article. Pourquoi ne pas s'entourer de vrai/es expert/es sur ce domaine purement IT ? Il y a des boîtes qui proposent ces services et qui permettent de se soulager de ces contraintes, tout en discutant de la stratégie la plus adéquate à adopter. Car après tout, qui de mieux que _votre partenaire QField_ pour s'occuper de _votre QField_ ?
+Ces considérations de mises à jour régulières et maintien en conditions opérationnelles ne sont pas à prendre à la légère, et il est généralement conseillé d'établir une vraie stratégie sur la question, de même que tester régulièrement ses backups.
 
 <!-- geotribu:authors-block -->
 
