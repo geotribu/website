@@ -2,6 +2,8 @@
 title: Céline Pornin
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github: cpornin

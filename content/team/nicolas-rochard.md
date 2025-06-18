@@ -2,6 +2,8 @@
 title: Nicolas Rochard
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky: badwolf59.bsky.social
     github: Doctor-Who

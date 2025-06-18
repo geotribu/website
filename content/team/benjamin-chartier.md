@@ -2,6 +2,8 @@
 title: Benjamin Chartier
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     github: bchartier
     gitlab:

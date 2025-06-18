@@ -2,6 +2,8 @@
 title: Rodolphe Quiédeville
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github:

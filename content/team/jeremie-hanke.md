@@ -2,6 +2,8 @@
 title: Jérémie Hanke
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github:

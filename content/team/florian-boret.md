@@ -3,6 +3,8 @@ title: Florian Boret
 subtitle: DATA-WAX
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky: data-wax
     github: igeofr

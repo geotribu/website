@@ -2,6 +2,8 @@
 title: Jérémy Garniaux
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github:

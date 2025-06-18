@@ -3,6 +3,8 @@ title: Thomas Szczurek-Gayant
 subtitle:
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     github: thomas-szczurek
     gitlab:

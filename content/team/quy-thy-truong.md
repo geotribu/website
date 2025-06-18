@@ -2,6 +2,8 @@
 title: Quy Thy Truong
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github: https://github.com/quythytruong

@@ -2,6 +2,8 @@
 title: Nicolas Godet
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github: nicogodet

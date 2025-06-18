@@ -2,6 +2,8 @@
 title: Étienne Delay
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github:

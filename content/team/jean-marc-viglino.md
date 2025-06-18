@@ -2,6 +2,8 @@
 title: Jean-Marc Viglino
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github:

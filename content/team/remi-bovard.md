@@ -2,6 +2,8 @@
 title: Rémi Bovard
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github:

@@ -2,6 +2,8 @@
 title: Guillaume de Boyer
 categories:
     - contributeur
+hide:
+  - feedback
 social_accounts:
     bluesky:
     github:
