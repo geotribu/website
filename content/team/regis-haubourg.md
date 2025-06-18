@@ -2,19 +2,21 @@
 title: Régis Haubourg
 categories:
     - contributeur
-social:
-    - bluesky:
-    - github:
-    - gitlab:
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+hide:
+  - feedback
+social_accounts:
+    bluesky:
+    github:
+    gitlab:
+    linkedin:
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 # Régis Haubourg

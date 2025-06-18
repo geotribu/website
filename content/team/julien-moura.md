@@ -3,18 +3,20 @@ title: Julien Moura
 subtitle: GeoJulien
 categories:
     - contributeur
-social:
-    - github: guts
-    - gitlab: geojulien
-    - linkedin: julienmoura
-    - mail: julien@ingeoveritas.com
-    - mastodon:
-        - instance: mapstodon.space
-        - username: geojulien
-    - openstreetmap: GutsJM
-    - osgeo: geojulien
-    - twitter: geojulien
-    - website:
+hide:
+  - feedback
+social_accounts:
+    github: guts
+    gitlab: geojulien
+    linkedin: julienmoura
+    mail: julien@ingeoveritas.com
+    mastodon:
+        instance: mapstodon.space
+        username: geojulien
+    openstreetmap: GutsJM
+    osgeo: geojulien
+    twitter: geojulien
+    website:
 ---
 
 # Julien Moura
