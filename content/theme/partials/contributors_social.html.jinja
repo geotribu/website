@@ -1,29 +1,75 @@
-{% if page.meta.social %}
 {% if page.meta.social is mapping %}
-<ul class="author-social-links">
+{# if a social account at least is filled #}
+{% set ns = namespace(social_account_counter=0) %}
+{% for network, value in page.meta.social.items() %}
+{% if network == "mastodon" %}
+{% if value and value.username and value.instance %}
+{% set ns.social_account_counter = ns.social_account_counter +1 %}
+{% endif %}
+{% else %}
+{% if value %}
+{% set ns.social_account_counter = ns.social_account_counter +1 %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{# iterate over social account and display icon with hyperlink #}
+{% if ns.social_account_counter > 0 %}
+<div class="author-social-links">
+    <strong>Retrouvez-moi sur mes réseaux : </strong>
     {% for network, value in page.meta.social.items() %}
     {% if value %}
-    {% if network == "mastodon" and value.username and value.instance %}
-    <li>
-        <a href="https://{{ value.instance }}/@{{ value.username }}" target="_blank" rel="noopener">
-            <i class="fab fa-mastodon"></i> Mastodon
-        </a>
-    </li>
+    {% if network == "linkedin" %}
+    <a href="https://www.linkedin.com/in/{{ value }}" target="_blank" rel="noopener"
+        aria-label="Profil LinkedIn de {{ page.meta.title }}">
+        <span class="twemoji">
+            {% include ".icons/fontawesome/brands/linkedin.svg" %}
+        </span>
+    </a>
+    {% elif network == "mail" %}
+    <a href="mailto:{{ value }}?subject=Contact via Geotribu" target="_blank" rel="noopener"
+        aria-label="Contacter {{ page.meta.title }} par mail">
+        <span class="twemoji">
+            {% include ".icons/octicons/mail-16.svg" %}
+        </span>
+    </a>
+    {% elif network == "mastodon" and value.username and value.instance %}
+    <a href="https://{{ value.instance }}/@{{ value.username }}" target="_blank" rel="noopener"
+        aria-label="Profil Mastodon de {{ page.meta.title }}">
+        <span class="twemoji">
+            {% include ".icons/fontawesome/brands/mastodon.svg" %}
+        </span>
+    </a>
+    {% elif network == "openstreetmap" %}
+    <a href="https://www.openstreetmap.org/user/{{ value }}" target="_blank" rel="noopener"
+        aria-label="Profil OpenStreetMap de {{ page.meta.title }}">
+        <span class="twemoji">
+            {% include ".icons/simple/openstreetmap.svg" %}
+        </span>
+    </a>
+    {% elif network == "osgeo" %}
+    <a href="https://www.osgeo.org/member/{{ value }}" target="_blank" rel="noopener"
+        aria-label="Profil OSGeo de {{ page.meta.title }}">
+        <span class="twemoji">
+            {% include ".icons/simple/osgeo.svg" %}
+        </span>
+    </a>
     {% elif network == "website" %}
-    <li>
-        <a href="{{ value }}" target="_blank" rel="noopener">
-            <i class="fas fa-globe"></i> Website
-        </a>
-    </li>
+    <a href="{{ value }}" target="_blank" rel="noopener" aria-label="Site web de {{ page.meta.title }}">
+        <span class="twemoji">
+            {% include ".icons/fontawesome/solid/globe.svg" %}
+        </span>
+    </a>
     {% else %}
-    <li>
-        <a href="https://{{ network }}.com/{{ value }}" target="_blank" rel="noopener">
-            <i class="fab fa-{{ network }}"></i> {{ network|capitalize }}
-        </a>
-    </li>
+    <a href="https://{{ network }}.com/{{ value }}" target="_blank" rel="noopener"
+        aria-label="Profil {{ network }} de {{ page.meta.title }}">
+        <span class="twemoji">
+            {% include ".icons/fontawesome/brands/" + network + ".svg" %}
+        </span>
+    </a>
     {% endif %}
     {% endif %}
     {% endfor %}
-</ul>
+</div>
 {% endif %}
 {% endif %}
