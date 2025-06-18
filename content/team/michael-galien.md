@@ -6,9 +6,9 @@ hide:
   - feedback
 social_accounts:
     bluesky:
-    github: https://github.com/Michael-cd30
+    github: Michael-cd30
     gitlab:
-    linkedin: https://www.linkedin.com/in/micha%C3%ABl-galien/
+    linkedin: micha%C3%ABl-galien
     mail:
     mastodon:
         instance:
