@@ -1,7 +1,7 @@
-{% if page.meta.social is mapping %}
+{% if page.meta.social_accounts is mapping %}
 {# if a social account at least is filled #}
 {% set ns = namespace(social_account_counter=0) %}
-{% for network, value in page.meta.social.items() %}
+{% for network, value in page.meta.social_accounts.items() %}
 {% if network == "mastodon" %}
 {% if value and value.username and value.instance %}
 {% set ns.social_account_counter = ns.social_account_counter +1 %}
@@ -17,7 +17,7 @@
 {% if ns.social_account_counter > 0 %}
 <div class="author-social-links">
     <strong>Retrouvez-moi sur mes réseaux : </strong>
-    {% for network, value in page.meta.social.items() %}
+    {% for network, value in page.meta.social_accounts.items() %}
     {% if value %}
     {% if network == "linkedin" %}
     <a href="https://www.linkedin.com/in/{{ value }}" target="_blank" rel="noopener"
