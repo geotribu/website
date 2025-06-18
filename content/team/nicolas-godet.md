@@ -2,7 +2,7 @@
 title: Nicolas Godet
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github: nicogodet
     gitlab: nicogodet

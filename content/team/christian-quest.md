@@ -2,7 +2,7 @@
 title: Christian Quest
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

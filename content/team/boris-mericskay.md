@@ -2,7 +2,7 @@
 title: Boris Mericksay
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

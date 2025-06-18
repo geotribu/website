@@ -2,7 +2,7 @@
 title: Benjamin Chartier
 categories:
     - contributeur
-social:
+social_accounts:
     github: bchartier
     gitlab:
     linkedin: benjaminchartier

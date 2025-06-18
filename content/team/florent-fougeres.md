@@ -2,7 +2,7 @@
 title: Florent Fougères
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github: "https://github.com/florentfgrs"
     gitlab: "https://gitlab.com/florent_fougeres"

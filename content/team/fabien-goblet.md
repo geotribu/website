@@ -2,7 +2,7 @@
 title: Fabien Goblet
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

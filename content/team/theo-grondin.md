@@ -2,7 +2,7 @@
 title: Théo Grondin
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

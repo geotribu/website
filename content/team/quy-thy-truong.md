@@ -2,7 +2,7 @@
 title: Quy Thy Truong
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github: https://github.com/quythytruong
     gitlab: https://gitlab.com/qttruong

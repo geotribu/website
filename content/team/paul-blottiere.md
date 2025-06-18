@@ -2,7 +2,7 @@
 title: Paul Blottiere
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github: https://github.com/pblottiere
     gitlab:

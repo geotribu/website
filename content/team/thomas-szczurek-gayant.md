@@ -3,7 +3,7 @@ title: Thomas Szczurek-Gayant
 subtitle:
 categories:
     - contributeur
-social:
+social_accounts:
     github: thomas-szczurek
     gitlab:
     linkedin: https://www.linkedin.com/in/thomas-szczurek-gayant-7406b5257/

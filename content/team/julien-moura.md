@@ -3,7 +3,7 @@ title: Julien Moura
 subtitle: GeoJulien
 categories:
     - contributeur
-social:
+social_accounts:
     github: guts
     gitlab: geojulien
     linkedin: julienmoura

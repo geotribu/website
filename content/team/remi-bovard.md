@@ -2,7 +2,7 @@
 title: Rémi Bovard
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

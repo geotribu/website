@@ -2,7 +2,7 @@
 title: Émilie BIGORNE
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github: EmilieEPLoire
     gitlab:

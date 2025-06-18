@@ -2,7 +2,7 @@
 title: Guillaume de Boyer
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

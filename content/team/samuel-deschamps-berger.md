@@ -2,7 +2,7 @@
 title: Samuel Deschamps-Berger
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

@@ -2,7 +2,7 @@
 title: Thomas Gratier
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

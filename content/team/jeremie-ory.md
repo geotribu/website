@@ -2,7 +2,7 @@
 title: Jérémie Ory
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

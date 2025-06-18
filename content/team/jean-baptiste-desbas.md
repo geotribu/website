@@ -2,7 +2,7 @@
 title: Jean-Baptiste Desbas
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github: jbdesbas
     gitlab:

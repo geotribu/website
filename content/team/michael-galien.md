@@ -2,7 +2,7 @@
 title: Michaël Galien
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github: https://github.com/Michael-cd30
     gitlab:

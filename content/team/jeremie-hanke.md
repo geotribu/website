@@ -2,7 +2,7 @@
 title: Jérémie Hanke
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github:
     gitlab:

@@ -3,7 +3,7 @@ title: Romain Lacroix
 subtitle: "🌐🌍🍇🍷🍺🧀 Maps, viticulture, beers, cheeses"
 categories:
     - contributeur
-social:
+social_accounts:
     bluesky:
     github: rxlacroix
     gitlab:
