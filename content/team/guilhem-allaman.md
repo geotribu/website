@@ -14,7 +14,7 @@ social_accounts:
         instance: mapstodon.space
         username: guilhem_allaman
     openstreetmap: gounux
-    osgeo: guilhemallaman
+    osgeo: gounux
 ---
 
 # Guilhem Allaman
