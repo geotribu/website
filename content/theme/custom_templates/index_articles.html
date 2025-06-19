@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+
+<link rel=stylesheet href=../theme/assets/stylesheets/homepage.min.css>
+{% endblock %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+{{ super() }}
+
+<!-- Hero for landing page -->
+<div class="tx-container">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero">
+      <div class="tx-hero__title">
+        <h1 style="visibility: hidden">Geotribu</h1>
+      </div>
+      <div class="tx-hero__image">
+        <img src="https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png"
+          alt="Bannière Geotribu" draggable="false" title="logo Geotribu">
+      </div>
+      <div class="tx-hero__content">
+        <p>Site collaboratif sur la géomatique <span class="em">libre</span> et <span class="em">ouverte</span>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="md-container secondary-section">
+  <div class="g">
+    {% if config.extra.latest %}{% for contenu in config.extra.latest.articles %}
+    <div class="section" id="articles">
+      <div class="component-wrapper">
+        <div class="first-column">
+          <a class="toclink" href="/{{ contenu.url_rel | default('/') }}">
+            <h3>{{ contenu.title | default('Titre') }}</h3>
+          </a>
+
+          {% if contenu.subtitle %}<h4>{{ contenu.subtitle | default('Sous-titre') }}</h4>{%
+          endif
+          %}
+          {% for tag in contenu.tags %}
+          <a class="md-tag md-tag-icon" href="/tags/#tag:{{ tag | lower }}">{{ tag }}</a>{{ ", " if not loop.last else
+          "" }}
+          {% endfor %}
+          <h5>{{ "Publié le {}".format(contenu.date | date_localized ) |
+            default('vendredi 9 août 1985') }} par {{ contenu.authors | default('Prénom NOM') | join(", ") }}</h5>
+          <p>{{ contenu.description | default('Description') }}</p>
+          <a href="/{{ contenu.url_rel | default('/') }}" class="md-button">Lire cet article...</a>
+        </div>
+        <div class="second-column">
+          <div class="image-wrapper">
+            <a href="/{{ contenu.url_rel | default('/') }}" hreflang="{{ contenu.language | default('fr') }}"
+              title="Lien vers le dernier article">
+              <img
+                src="{{ contenu.image | default('https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_rectangle_384x80.png') }}"
+                alt="Illustration du dernier article publié" decoding="async" loading="lazy" draggable="false">
+              <div class="image-overlay">{{ contenu.title | default('Placeholder') }}, par {{
+                contenu.authors | default('Prénom NOM') | join(", ") }}</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}{% endif %}
+
+  </div>
+</div>
+
+
+{% endblock %}
