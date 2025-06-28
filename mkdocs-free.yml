@@ -25,6 +25,7 @@ hooks:
   - hooks/mkdocs/G003_social_cards_adapter.py
   - hooks/mkdocs/G005_jinja_filters.py
   - hooks/mkdocs/G006_authors_block.py
+  - hooks/mkdocs/G007_social_share_buttons.py
 
 # Plugins
 plugins:
@@ -130,6 +131,7 @@ extra_css:
 extra_javascript:
   - "theme/assets/javascripts/extra.js"
   - path: https://mastodon.social/embed.js
+    async: true
     defer: true
   - path: javascripts/mathjax.js
     async: true
@@ -138,6 +140,7 @@ extra_javascript:
     async: true
     defer: true
   - path: https://platform.twitter.com/widgets.js
+    async: true
     defer: true
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions

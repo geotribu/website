@@ -2,19 +2,21 @@
 title: Nicolas Godet
 categories:
     - contributeur
-social:
-    - bluesky:
-    - github: nicogodet
-    - gitlab: nicogodet
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+hide:
+  - feedback
+social_accounts:
+    bluesky:
+    github: nicogodet
+    gitlab: nicogodet
+    linkedin:
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 # Nicolas Godet

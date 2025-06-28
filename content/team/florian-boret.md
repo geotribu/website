@@ -3,19 +3,21 @@ title: Florian Boret
 subtitle: DATA-WAX
 categories:
     - contributeur
-social:
-    - bluesky: data-wax
-    - github: igeofr
-    - gitlab:
-    - linkedin: florian-boret
-    - mail:
-    - mastodon:
-        - instance: mapstodon.space
-        - username: Data_Wax
-    - openstreetmap: DATA_WAX
-    - osgeo:
-    - twitter:
-    - website: https://www.data-wax.com
+hide:
+  - feedback
+social_accounts:
+    bluesky: data-wax
+    github: igeofr
+    gitlab:
+    linkedin: florian-boret
+    mail:
+    mastodon:
+        instance: mapstodon.space
+        username: Data_Wax
+    openstreetmap: DATA_WAX
+    osgeo:
+    twitter:
+    website: https://www.data-wax.com
 ---
 
 # Florian Boret

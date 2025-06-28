@@ -2,19 +2,21 @@
 title: Valérian Lebert
 categories:
     - contributeur
-social:
-    - bluesky:
-    - github:
-    - gitlab:
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website: https://digi-stud.io
+hide:
+  - feedback
+social_accounts:
+    bluesky:
+    github:
+    gitlab:
+    linkedin:
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website: https://digi-stud.io
 ---
 
 # Valérian Lebert

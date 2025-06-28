@@ -2,18 +2,20 @@
 title: Benjamin Chartier
 categories:
     - contributeur
-social:
-    - github: bchartier
-    - gitlab:
-    - linkedin: benjaminchartier
-    - mail: contact@bchartier.net
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website: https://www.bchartier.net
+hide:
+  - feedback
+social_accounts:
+    github: bchartier
+    gitlab:
+    linkedin: benjaminchartier
+    mail: contact@bchartier.net
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website: https://www.bchartier.net
 ---
 
 # Benjamin Chartier
