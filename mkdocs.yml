@@ -26,6 +26,7 @@ hooks:
   - hooks/mkdocs/G003_social_cards_adapter.py
   - hooks/mkdocs/G005_jinja_filters.py
   - hooks/mkdocs/G006_authors_block.py
+  - hooks/mkdocs/G007_social_share_buttons.py
 
 # Plugins
 plugins:

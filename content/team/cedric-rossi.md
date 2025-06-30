@@ -2,19 +2,21 @@
 title: Cedric Rossi
 categories:
     - contributeur
-social:
-    - bluesky:
-    - github:
-    - gitlab:
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter: cedricr
-    - website:
+hide:
+  - feedback
+social_accounts:
+    bluesky:
+    github:
+    gitlab:
+    linkedin:
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter: cedricr
+    website:
 ---
 
 # Cedric Rossi

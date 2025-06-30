@@ -2,19 +2,21 @@
 title: Nicolas David
 categories:
     - contributeur
-social:
-    - bluesky:
-    - github:
-    - gitlab:
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+hide:
+  - feedback
+social_accounts:
+    bluesky:
+    github:
+    gitlab:
+    linkedin:
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 # Nicolas David

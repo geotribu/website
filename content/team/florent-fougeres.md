@@ -2,19 +2,21 @@
 title: Florent Fougères
 categories:
     - contributeur
-social:
-    - bluesky:
-    - github: "https://github.com/florentfgrs"
-    - gitlab: "https://gitlab.com/florent_fougeres"
-    - linkedin: "https://www.linkedin.com/in/florent-fougeres/"
-    - mail: "florent.fougeres@gmail.com"
-    - mastodon:
-        - instance: "mapstodon.space"
-        - username: "florent001"
-    - openstreetmap:
-    - osgeo: "https://www.osgeo.org/member/fougeres/"
-    - twitter: "https://x.com/florent1foug"
-    - website:
+hide:
+  - feedback
+social_accounts:
+    bluesky:
+    github: "https://github.com/florentfgrs"
+    gitlab: "https://gitlab.com/florent_fougeres"
+    linkedin: "https://www.linkedin.com/in/florent-fougeres/"
+    mail: "florent.fougeres@gmail.com"
+    mastodon:
+        instance: "mapstodon.space"
+        username: "florent001"
+    openstreetmap:
+    osgeo: "https://www.osgeo.org/member/fougeres/"
+    twitter: "https://x.com/florent1foug"
+    website:
 ---
 
 # Florent Fougères

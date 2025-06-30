@@ -2,19 +2,21 @@
 title: Jean-Baptiste Desbas
 categories:
     - contributeur
-social:
-    - bluesky:
-    - github: jbdesbas
-    - gitlab:
-    - linkedin:
-    - mail: jb.desbas@gmail.com
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+hide:
+  - feedback
+social_accounts:
+    bluesky:
+    github: jbdesbas
+    gitlab:
+    linkedin:
+    mail: jb.desbas@gmail.com
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter:
+    website:
 ---
 
 # Jean-Baptiste Desbas

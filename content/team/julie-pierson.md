@@ -2,19 +2,21 @@
 title: Julie Pierson
 categories:
     - contributeur
-social:
-    - bluesky:
-    - github:
-    - gitlab:
-    - linkedin:
-    - mail:
-    - mastodon:
-        - instance:
-        - username:
-    - openstreetmap:
-    - osgeo:
-    - twitter:
-    - website:
+hide:
+  - feedback
+social_accounts:
+    bluesky:
+    github:
+    gitlab:
+    linkedin:
+    mail:
+    mastodon:
+        instance:
+        username:
+    openstreetmap:
+    osgeo:
+    twitter: sigomatique
+    website:
 ---
 
 # Julie Pierson
@@ -22,7 +24,5 @@ social:
 <!-- --8<-- [start:author-sign-block] -->
 
 ![portrait](https://cdn.geotribu.fr/img/internal/contributeurs/jpie.png "portrait"){: .img-thumbnail-left }
-
-> Twitter : <https://twitter.com/sigomatique>
 
 <!-- --8<-- [end:author-sign-block] -->

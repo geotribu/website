@@ -2,19 +2,21 @@
 title: Nicolas Rochard
 categories:
     - contributeur
-social:
-    - bluesky: badwolf59.bsky.social
-    - github: Doctor-Who
-    - gitlab:
-    - linkedin: nicolas-rochard
-    - mail:
-    - mastodon:
-        - instance: mapstodon.space
-        - username: badwolf42
-    - openstreetmap:
-    - osgeo: doctorwho
-    - twitter:
-    - website:
+hide:
+  - feedback
+social_accounts:
+    bluesky: badwolf59.bsky.social
+    github: Doctor-Who
+    gitlab:
+    linkedin: nicolas-rochard
+    mail:
+    mastodon:
+        instance: mapstodon.space
+        username: badwolf42
+    openstreetmap:
+    osgeo: doctorwho
+    twitter:
+    website:
 ---
 
 # Nicolas Rochard
