@@ -73,6 +73,13 @@ repos:
         pass_filenames: true
         types: [file, markdown, non-executable]
 
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.37.1
+    hooks:
+      - id: yamllint
+        additional_dependencies:
+          - yamllint
+
 # Specific part for https://pre-commit.ci
 ci:
   autofix_commit_msg: "[pre-commit.ci] Corrections automatiques appliquées par les git hooks."
