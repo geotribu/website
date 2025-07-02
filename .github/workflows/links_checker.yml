@@ -4,16 +4,21 @@ on:
   schedule:
     - cron: "0 18 5 */3 *" # tous les trois mois, le 5 du mois à 18h
   pull_request:
-    branches: [master]
+    branches:
+      - master
     paths:
       - ".github/workflows/links_checker.yml"
   workflow_dispatch:
+
+permissions: read-all
 
 jobs:
   linkchecker:
     name: "🔗 Check la validité des liens du site"
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'geotribu' }}
+    permissions:
+      contents: read
 
     steps:
       - name: Get source code

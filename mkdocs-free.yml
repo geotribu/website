@@ -36,10 +36,12 @@ plugins:
         - "*.yml"
   - git-authors:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, False]
+      add_co_authors: true
       exclude:
         - index.md
       show_contribution: true
       show_email_address: false
+      sort_authors_by: contribution
   - git-revision-date-localized:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, False]
       enable_creation_date: true
