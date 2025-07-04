@@ -34,7 +34,7 @@ tags:
 
 ----
 
-## Sorties de la semaine
+## Sorties récentes
 
 ----
 

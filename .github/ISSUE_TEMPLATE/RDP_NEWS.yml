@@ -92,7 +92,7 @@ body:
       label: Section / catégorie
       description: "A quelle [section ou catégorie](https://contribuer.geotribu.fr/rdp/structure_news/#sections-categories) rattacher la news ?"
       options:
-        - Sorties de la semaine
+        - Sorties récentes
         - Logiciel
         - Représentation Cartographique
         - OpenStreetMap
