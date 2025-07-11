@@ -25,7 +25,7 @@ jobs:
       # =============================== #
 
       - name: Download artifact from build workflow
-        uses: dawidd6/action-download-artifact@v10
+        uses: dawidd6/action-download-artifact@v11
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           name: pr-build-website
