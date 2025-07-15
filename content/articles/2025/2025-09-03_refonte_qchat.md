@@ -1,12 +1,12 @@
 ---
-title: La Révolution de QChat
+title: La refonte de QChat
 subtitle: Choisis ton channel camarade
 authors:
     - Guilhem ALLAMAN
 categories:
     - article
 comments: true
-date: 2025-09-09
+date: 2025-09-03
 description: Raisons et explications techniques de la refonte de QChat, le système pour tchatter avec ses pair/es dans QGIS.
 icon: material/chat
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/velo_deguise_en_moto.png
@@ -18,7 +18,7 @@ tags:
     - Redis
 ---
 
-# La Revolución del QChat
+# El rediseño de QChat
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
