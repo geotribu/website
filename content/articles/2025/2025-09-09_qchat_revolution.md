@@ -103,7 +103,7 @@ On a fait tourner le templater, et 24 prompts plus tard on se retrouve avec une 
 
 Voici la sortie de l'opération de génération du plugin, en plus c'est bien ça permet de savoir s'il y a besoin d'aller voir l'ophtalmo en cette rentrée...
 
-![Lancement du templater de plugins QGIS pour générer la structure de QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/qchat_plugin_templater_run.webp)
+![Lancement du templater de plugins QGIS pour générer la structure de QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/qchat_plugin_templater_run.webp){: .img-center loading=lazy }
 
 !!! warning
     Si vous souhaitez créer un nouveau plugin QGIS à l'avenir, oubliez l'article de 2010 et le ~~Plugin Builder~~, mieux vaut partir sur le templater.
@@ -112,7 +112,7 @@ Voici la sortie de l'opération de génération du plugin, en plus c'est bien ç
 
 En parallèle du développement de l'API et du plugin QChat, il y a aussi maintenant [un plugin QField](https://github.com/geotribu/qchat-qfield-plugin) compatible avec QChat, pour lequel nous remercions [Mathieu Pellerin](https://github.com/nirvn), à l'initiative et qui nous a lancés sur les rails.
 
-![Écran du plugin QField compatible avec QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/prez/ecran_qchat_qfield_plugin.webp)
+![Écran du plugin QField compatible avec QChat](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2024/qchat/prez/ecran_qchat_qfield_plugin.webp){: .img-center loading=lazy }
 
 À l'heure actuelle, pour l'utiliser il faut ajouter cette URL dans les paramètres "Plugins" de QField : <https://github.com/geotribu/qchat-qfield-plugin/releases/latest/download/qfield-plugin-qchat.zip>
 
@@ -128,3 +128,9 @@ Il y a toujours des idées et des nouveaux trucs à développer dans QChat, on p
 - Ajout d'un nouveau panneau et fonctionnalité de l'API, pour communiquer avec des serveurs [matrix](https://matrix.org/), un standard de communication décentralisé.
 
 Et d'autres trucs encore ! Si vous avez des idées, n'hésitez pas à nous les partager !
+
+----
+
+<!-- geotribu:authors-block -->
+
+{% include "licenses/beerware.md" %}
