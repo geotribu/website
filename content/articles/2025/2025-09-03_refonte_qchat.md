@@ -3,6 +3,7 @@ title: La refonte de QChat
 subtitle: Choisis ton channel camarade
 authors:
     - Guilhem ALLAMAN
+    - Geotribu
 categories:
     - article
 comments: true
@@ -24,7 +25,7 @@ tags:
 
 :raised_hands: QChat est mort, vive QChat !
 
-Après [une première version assez bancale](../2024/2024-10-15_qchat.md), Geotribu est content d'annoncer des changements assez profonds et impactants pour QChat, le système de tchat intégré à QGIS.
+Après [une première version un peu bancale](../2024/2024-10-15_qchat.md), Geotribu est content d'annoncer des changements assez profonds et impactants pour QChat, le système de tchat intégré à QGIS.
 
 QChat nouvelle version, c'est un peu comme quand [Com Truise](https://www.youtube.com/watch?v=L4ENAdECytk) monte sur une moto : ça fait de l'air dans les veuch !
 
@@ -34,7 +35,7 @@ _Une photo honteusement volée sur mastodon... Si vous connaissez l'auteur/ice, 
 
 ## Pourquoi ?
 
-La première version de QChat était assez rudimentaire, et pas très _scalable_ comme on dit dans les milieux autorisés. Concrètement, du fait de sa conception initiale assez limitée, l'API ne pouvait tourner que sur un seul [_worker uvicorn_](https://fastapi.tiangolo.com/deployment/server-workers/), c'est-à-dire un seul processus. Ce qui pouvait amener à limiter le nombre de gens connectés simultanément.
+La première version de QChat était assez rudimentaire, et pas très _scalable_ comme on dit dans les milieux autorisés. Concrètement, du fait de sa conception initiale assez limitée, l'API ne pouvait tourner que sur un seul [_worker uvicorn_](https://fastapi.tiangolo.com/deployment/server-workers/), c'est-à-dire un seul processus système. Ce qui pouvait amener à limiter le nombre de personnes connectées simultanément.
 
 On s'en est rendu compte [lors des dernières Rencontres QGIS-fr d'Avignon](https://video.osgeo.org/w/cabBYiLUoRAZZbLp2CTRj7), et lors du quizz notamment :cold_sweat:
 
@@ -44,7 +45,7 @@ Avec plus de 100 personnes connectées, ça commence à souffler... :boom::dash:
 
 Afin d'être en capacité d'accueillir plus de personnes, quand y'a du monde sur la corde à linge, il nous fallait donc revoir la conception et l'implémentation de l'API.
 
-Il y a quelques fonctionnalités supplémentaires, ceci dit la refonte est principalement _sous le capot_.
+À noter que la nouvelle version apporte quelques fonctionnalités supplémentaires, ceci dit la refonte est principalement _sous le capot_.
 
 ## Refonte de l'API : `gischat`
 
@@ -124,7 +125,7 @@ Il y a toujours des idées et des nouveaux trucs à développer dans QChat, on p
 
 - Ajout d'un petit formulaire pour lâcher des emojis :joy_cat:
 - Partage de modèles graphiques entre plusieurs clients connectés à QChat.
-- Partage et exécution de code pyqgis, oui, rien que pour faire plaisir à ton _Responsable Sécurité Informatique_ :smirk:
+- Partage et exécution de code pyqgis. Oui. Rien que pour faire plaisir à ton _Responsable Sécurité Informatique_ :smirk:
 - Ajout d'un nouveau panneau et fonctionnalité de l'API, pour communiquer avec des serveurs [matrix](https://matrix.org/), un standard de communication décentralisé.
 
 Et d'autres trucs encore ! Si vous avez des idées, n'hésitez pas à nous les partager !
