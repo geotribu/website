@@ -82,8 +82,8 @@ graph TD
 
     QGIS2 --> |6📦 Envoie un message| Worker2
     Worker2 --> |7📦 Publie le message| Redis
-    Redis --> |7📦 Publie le message| Worker1
-    Worker1 --> |8📦 Diffuse le message| QGIS1
+    Redis --> |8📦 Publie le message| Worker1
+    Worker1 --> |9📦 Diffuse le message| QGIS1
 
 ```
 
@@ -121,7 +121,9 @@ En parallèle du développement de l'API et du plugin QChat, il y a aussi mainte
 
 ## Et maintenant ?
 
-Il y a toujours des idées et des nouveaux trucs à développer dans QChat, on pense à ceux-là notamment :
+Il y a maintenant une unique instance servie par Geotribu : [`qchat.geotribu.net`](https://qchat.geotribu.net). Dessus, vous pouvez y retrouver des channels par langue.
+
+Et il y a toujours des idées et des nouveaux trucs à développer dans QChat, on pense à ceux-là notamment :
 
 - Ajout d'un petit formulaire pour lâcher des emojis :joy_cat:
 - Partage de modèles graphiques entre plusieurs clients connectés à QChat.
