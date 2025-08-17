@@ -40,26 +40,25 @@ droite dans l'interface de la page de la PR)
 ### Commande Git pour garantir l'attribution
 
 ```sh
-git commit --author="{{ in_author_name }} <{{ in_author_mail }}>" --message="Ajout news {{ in_news_title }} par @{{
-    issue_author }}. Close #{{ issue_id }}"
-    ```
+git commit --author="{{ in_author_name }} <{{ in_author_mail }}>" --message="Ajout news {{ in_news_title }} par @{{issue_author }}. Close #{{ issue_id }}"
+```
 
-    ### Diffusion
+## Diffusion
 
-    #### LinkedIn
+### LinkedIn
 
-    ```txt
-    {{ in_author_linkedin }}
-    ```
+```txt
+{{ in_author_linkedin }}
+```
 
-    #### Mastodon
+### Mastodon
 
-    ```txt
-    {{ in_author_mastodon }}
-    ```
+```txt
+{{ in_author_mastodon }}
+```
 
-    #### Bluesky
+### Bluesky
 
-    ```txt
-    {{ in_author_bluesky }}
-    ```
+```txt
+{{ in_author_bluesky }}
+```

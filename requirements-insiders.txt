@@ -6,6 +6,6 @@ git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-i
 
 # social plugin requirements
 cairosvg~=2.8
-Pillow>=10.3,<11.3
+Pillow>=10.3,<11.4
 
 -r requirements.txt
