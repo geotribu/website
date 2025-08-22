@@ -55,8 +55,6 @@ Que vous partiez de Montpellier ou que vous souhaitiez nous rejoindre en chemin,
 
 Vous souhaitez organiser un départ depuis une autre ville, n'hésitez pas à vous signaler, on adaptera l'article en conséquence ;)
 
-# GeodatadaysAVelo #Geotribu #MobilitéDurable
-
 <!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by.md" %}
