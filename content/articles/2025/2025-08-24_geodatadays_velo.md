@@ -1,13 +1,13 @@
 ---
-title: Geodatadays à vélo
-subtitle: Tous à velo !
+title: "Geodatadays à vélo"
+subtitle: "Tous à velo !"
 authors:
     - Florian BORET
 categories:
     - article
 comments: true
 date: 2025-08-24
-description: Rejoignez le défi : pédalez jusqu’aux Geodatadays.
+description: "Rejoignez le défi : pédalez jusqu’aux Geodatadays".
 icon: fontawesome/solid/bicycle
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/evenement/2025_GDD.png
 license: beerware
