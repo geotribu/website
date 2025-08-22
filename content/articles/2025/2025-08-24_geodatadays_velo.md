@@ -51,7 +51,7 @@ Que vous soyez cycliste aguerri ou occasionnel, vous êtes les bienvenus ! Pour 
 
 ## Logistique
 
-- Hébergement le 8 : ça dépendra du nombre de personne qu'on est, on part pr l'instant sur un camping mais si on est peu nombreux et qu'un géomaticien local veut bien nous acceuillir à mi-chemin (vers Arles par exemple ?) on sera ravi de rompre le pain ensemble. 
+- Hébergement le 8 : ça dépendra du nombre de personne qu'on est, on part pr l'instant sur un camping mais si on est peu nombreux et qu'un géomaticien local veut bien nous acceuillir à mi-chemin (vers Arles par exemple ?) on sera ravi de rompre le pain ensemble.
 - Matériel : Prévoyez un vélo en bon état, un casque, et une tenue adaptée.
 
 ## Rejoignez le mouvement !
