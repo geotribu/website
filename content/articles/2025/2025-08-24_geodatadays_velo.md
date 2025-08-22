@@ -25,6 +25,9 @@ tags:
 
 Les [Geodatadays](https://www.geodatadays.fr/), le rendez-vous incontournable des passionnés de géomatique, se tiendra cette année à Marseille les 10 et 11 septembre 2025. Mais cette fois, un petit groupe de motivés a décidé d’y ajouter une touche d’aventure : les rejoindre à vélo depuis Montpellier !
 
+[Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
+{: align=middle }
+
 ## L'idée
 
 Initiée par une poignée d’enthousiastes montpelliérains, cette aventure vise à allier sport, convivialité et engagement environnemental. L’objectif ? Relier Montpellier à Marseille à vélo, en deux jours, pour arriver à temps pour l’ouverture de l’événement.
@@ -57,6 +60,8 @@ Que vous partiez de Montpellier ou que vous souhaitiez nous rejoindre en chemin,
 
 Vous souhaitez organiser un départ depuis une autre ville, n'hésitez pas à vous signaler, on adaptera l'article en conséquence ;)
 
+----
+
 <!-- geotribu:authors-block -->
 
-{% include "licenses/cc4_by.md" %}
+{% include "licenses/default.md" %}
