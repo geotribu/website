@@ -31,16 +31,16 @@ Initiée par une poignée d’enthousiastes montpelliérains, cette aventure vis
 
 ## Le parcours
 
-Départ : Lundi 8 septembre 2025 depuis Montpellier (lieu précis à confirmer).
-Arrivée : Mardi 9 septembre 2025 à Marseille, juste à temps pour les Geodatadays.
-Distance : Environ 170 km, répartis sur deux étapes, avec des paysages variés entre garrigues, étangs et littoral méditerranéen.
-Rythme : Adapté à tous les niveaux, avec des pauses et des moments d’échange pour faire connaissance.
+- Départ : Lundi 8 septembre 2025 depuis Montpellier (lieu précis à confirmer).
+- Arrivée : Mardi 9 septembre 2025 à Marseille, juste à temps pour les Geodatadays.
+- Distance : Environ 170 km, répartis sur deux étapes, avec des paysages variés entre garrigues, étangs et littoral méditerranéen.
+- Rythme : Adapté à tous les niveaux, avec des pauses et des moments d’échange pour faire connaissance.
 
 ## Pourquoi participer ?
 
-Un défi sportif : Une belle occasion de se dépasser et de partager une expérience collective.
-Une démarche écolo : Réduire l’empreinte carbone tout en sensibilisant à la mobilité douce.
-Une aventure humaine : Rencontrer d’autres passionnés de géomatique et de vélo, échanger et créer des liens avant même le début des conférences.
+- Un défi sportif : Une belle occasion de se dépasser et de partager une expérience collective.
+- Une démarche écolo : Réduire l’empreinte carbone tout en sensibilisant à la mobilité douce.
+- Une aventure humaine : Rencontrer d’autres passionnés de géomatique et de vélo, échanger et créer des liens avant même le début des conférences.
 
 ## Comment participer ?
 
@@ -48,8 +48,8 @@ Que vous soyez cycliste aguerri ou occasionnel, vous êtes les bienvenus ! Pour 
 
 ## Logistique
 
-Hébergement le 8 : ça dépendra du nombre de personne qu'on est, on part pr l'instant sur un camping mais si on est peu nombreux et qu'un géomaticien veut bien nous acceuillir
-Matériel : Prévoyez un vélo en bon état, un casque, et une tenue adaptée.
+- Hébergement le 8 : ça dépendra du nombre de personne qu'on est, on part pr l'instant sur un camping mais si on est peu nombreux et qu'un géomaticien veut bien nous acceuillir
+- Matériel : Prévoyez un vélo en bon état, un casque, et une tenue adaptée.
 
 ## Rejoignez le mouvement !
 
