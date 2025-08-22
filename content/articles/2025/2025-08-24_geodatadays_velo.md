@@ -9,7 +9,7 @@ comments: true
 date: 2025-08-24
 description: Rejoignez le défi : pédalez jusqu’aux Geodatadays.
 icon: fontawesome/solid/bicycle
-image: 
+image:
 tags:
     - GéoDataDays
     - vélo
@@ -23,7 +23,7 @@ tags:
 
 Les [Geodatadays](https://www.geodatadays.fr/), le rendez-vous incontournable des passionnés de géomatique, se tiendra cette année à Marseille les 10 et 11 septembre 2025. Mais cette fois, un petit groupe de motivés a décidé d’y ajouter une touche d’aventure : les rejoindre à vélo depuis Montpellier !
 
-## L'idée 
+## L'idée
 
 Initiée par une poignée d’enthousiastes montpelliérains, cette aventure vise à allier sport, convivialité et engagement environnemental. L’objectif ? Relier Montpellier à Marseille à vélo, en deux jours, pour arriver à temps pour l’ouverture de l’événement.
 
@@ -53,9 +53,9 @@ Matériel : Prévoyez un vélo en bon état, un casque, et une tenue adaptée.
 
 Que vous partiez de Montpellier ou que vous souhaitiez nous rejoindre en chemin, votre participation est la bienvenue. Ensemble, faisons de ce trajet un symbole de l’engagement des acteurs de la géomatique pour une mobilité plus durable.
 
-Vous souhaitez organiser un départ depuis une autre ville, n'hésitez pas à vous signaler, on adaptera l'article en conséquence ;) 
+Vous souhaitez organiser un départ depuis une autre ville, n'hésitez pas à vous signaler, on adaptera l'article en conséquence ;)
 
-#GeodatadaysAVelo #Geotribu #MobilitéDurable
+# GeodatadaysAVelo #Geotribu #MobilitéDurable
 
 <!-- geotribu:authors-block -->
 
