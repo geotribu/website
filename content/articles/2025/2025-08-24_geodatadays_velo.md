@@ -30,7 +30,7 @@ Les [Geodatadays](https://www.geodatadays.fr/), le rendez-vous incontournable de
 
 ## L'idée
 
-Initiée par une poignée d’enthousiastes montpelliérain.ne.s, cette aventure vise à allier sport, convivialité et engagement environnemental. L’objectif ? Relier Montpellier à Marseille à vélo, en deux jours, pour arriver à temps pour l’ouverture de l’événement.
+Initiée par une poignée d’enthousiastes montpelliérain.ne.s, cette aventure vise à allier sport, convivialité et engagement environnemental. L’objectif ? Relier [Montpellier à Marseille à vélo](https://geovelo.app/fr/route/bG9jPTQzLjYwNzg0NiwzLjg3ODcyNyZsb2M9NDMuMjY5ODM1LDUuMzk1OTEyI01FRElBTiNGYWxzZSNNRURJQU4jMTUjRmFsc2UjTm9uZSMyMDI1LTA4LTI0IDEzOjQ5OjI5LjUyODYzMSNUUkFESVRJT05BTCMwIzAjUkVDT01NRU5ERUQjRmFsc2UjRmFsc2U=/?c=4.681251%2C43.486253&z=8.65), en deux jours, pour arriver à temps pour l’ouverture de l’événement.
 
 ## Le parcours
 
@@ -51,7 +51,7 @@ Que vous soyez cycliste aguerri.e ou occasionnel.le, vous êtes les bienvenu.e.s
 
 ## Logistique
 
-- Hébergement le 8 : ça dépendra du nombre de personnes qu'on est, on part pr l'instant sur un camping mais si on est peu nombreu.x.ses et qu'un.e géomaticien.ne local.e veut bien nous acceuillir à mi-chemin (vers Arles par exemple ?) on sera ravi.e.s de rompre le pain ensemble.
+- Hébergement le 8 : ça dépendra du nombre de personnes qu'on est, on part pour l'instant sur un camping mais si on est peu nombreu.x.ses et qu'un.e géomaticien.ne local.e veut bien nous acceuillir à mi-chemin (vers Arles par exemple ?) on sera ravi.e.s de rompre le pain ensemble.
 - Matériel : Prévoyez un vélo en bon état, un bidon d'eau et de la crême solaire, ainsi qu'un casque et une tenue adaptée.
 
 ## Rejoignez le mouvement !
