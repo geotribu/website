@@ -1,6 +1,6 @@
 ---
 title: "Geodatadays à vélo"
-subtitle: "Tous à velo !"
+subtitle: "Tous à vélo !"
 authors:
     - Florian BORET
 categories:
@@ -24,6 +24,8 @@ tags:
 ![GeoDataDays](https://cdn.geotribu.fr/img/logos-icones/geodatadays.png "GeoDataDays"){: .img-thumbnail-left }
 
 Les [Geodatadays](https://www.geodatadays.fr/), le rendez-vous incontournable des passionné.e.s de géomatique, se tiendra cette année à Marseille les 10 et 11 septembre 2025. Mais cette fois, un petit groupe de motivé.e.s a décidé d’y ajouter une touche d’aventure : les rejoindre à vélo depuis Montpellier !
+
+![Affiche GDD à vélo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/gdd_velo/affiche_GDD_velo.jpg){: .img-center loading=lazy }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
