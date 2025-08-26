@@ -62,6 +62,8 @@ Que vous partiez de Montpellier ou que vous souhaitiez nous rejoindre en chemin,
 
 Vous souhaitez organiser un départ depuis une autre ville, n'hésitez pas à vous signaler, on adaptera l'article en conséquence ;)
 
+Pour suivre et partager l'aventure, suivez-nous via le hastag : `#GeoDataRiders25`
+
 ----
 
 <!-- geotribu:authors-block -->
