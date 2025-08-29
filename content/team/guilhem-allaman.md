@@ -10,9 +10,6 @@ social_accounts:
     gitlab: gounux
     linkedin: guilhemallaman
     mail: contact@guilhemallaman.net
-    mastodon:
-        instance: mapstodon.space
-        username: guilhem_allaman
     openstreetmap: gounux
     osgeo: gounux
 ---
@@ -27,6 +24,6 @@ Je suis ingénieur informaticien. J'aime les ordinateurs. Mais ce que j'aime par
 
 Basé à Paris, j'ai commencé par le développement Java avant de découvrir les joies des SIG et de m'y spécialiser. Mon parcours m'a amené à travailler un certain temps dans les télécommunications au sens large, et avec des boîtes comme Oslandia, une filiale de Canal+ Afrique et OPENGIS.ch avec qui j'évolue désormais.
 
-Je contribue et participe à Geotribu depuis début 2024.
+Je participe à Geotribu depuis début 2024, et mes contributions ici n'engagent que moi, _me, myself and I_.
 
 <!-- --8<-- [end:author-sign-block] -->
