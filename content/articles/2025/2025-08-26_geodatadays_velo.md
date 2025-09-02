@@ -41,6 +41,12 @@ Initiée par une poignée d’enthousiastes montpelliérain.ne.s, cette aventure
 - Distance : Environ 170 km très majoritairement plats, répartis sur deux étapes, avec des paysages variés entre garrigues, étangs et littoral méditerranéen.
 - Rythme : Adapté à tous les niveaux, avec des pauses et des moments d’échange pour faire connaissance.
 
+### Jour 1 
+
+<iframe src="https://www.komoot.com/fr-fr/tour/2532206143/embed?share_token=avCy9NZEJE1dE0HH8NuWKafpOqKzew0Xuro3Nqb3zmT27lyiUg&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
+
+### Jour 2
+
 ## Pourquoi participer ?
 
 - Un défi sportif : Une belle occasion de se dépasser sans forcer et de partager une expérience collective.
