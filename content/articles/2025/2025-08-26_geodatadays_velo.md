@@ -32,7 +32,7 @@ Les [Geodatadays](https://www.geodatadays.fr/), le rendez-vous incontournable de
 
 ## L'idée
 
-Initiée par une poignée d’enthousiastes montpelliérain.ne.s, cette aventure vise à allier sport, convivialité et engagement environnemental. L’objectif ? Relier [Montpellier à Marseille à vélo](https://geovelo.app/fr/route/bG9jPTQzLjYwNzg0NiwzLjg3ODcyNyZsb2M9NDMuMjY5ODM1LDUuMzk1OTEyI01FRElBTiNGYWxzZSNNRURJQU4jMTUjRmFsc2UjTm9uZSMyMDI1LTA4LTI0IDEzOjQ5OjI5LjUyODYzMSNUUkFESVRJT05BTCMwIzAjUkVDT01NRU5ERUQjRmFsc2UjRmFsc2U=/?c=4.681251%2C43.486253&z=8.65), en deux jours, pour arriver à temps pour l’ouverture de l’événement.
+Initiée par une poignée d’enthousiastes montpelliérain.ne.s, cette aventure vise à allier sport, convivialité et engagement environnemental. L’objectif ? Relier Montpellier à Marseille à vélo, en deux jours, pour arriver à temps pour l’ouverture de l’événement.
 
 ## Le parcours
 
@@ -46,6 +46,8 @@ Initiée par une poignée d’enthousiastes montpelliérain.ne.s, cette aventure
 <iframe src="https://www.komoot.com/fr-fr/tour/2532206143/embed?share_token=avCy9NZEJE1dE0HH8NuWKafpOqKzew0Xuro3Nqb3zmT27lyiUg&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
 
 ### Jour 2
+
+<iframe src="https://www.komoot.com/fr-fr/tour/2547880278/embed?share_token=adDp9KCJ0dswesmkkBa6E8RbIBAKd2tgBRYmHEcGLBf5SNDBQ6&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
 
 ## Pourquoi participer ?
 
