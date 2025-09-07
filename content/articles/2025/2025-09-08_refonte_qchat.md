@@ -7,7 +7,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2025-09-03
+date: 2025-09-08
 description: Raisons et explications techniques de la refonte de QChat, le système pour tchatter avec ses pair/es dans QGIS.
 icon: material/chat
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/velo_deguise_en_moto.png
@@ -84,8 +84,10 @@ graph TD
     Worker2 --> |7📦 Publie le message| Redis
     Redis --> |8📦 Publie le message| Worker1
     Worker1 --> |9📦 Diffuse le message| QGIS1
-
 ```
+
+!!! info
+    Le serveur "par défaut" de Geotribu est à l'adresse `qchat.geotribu.net`, et propose un _channel_ par langue / pays: `QGIS-fr`, `QGIS-es`, `QGIS-de`, `QGIS-it`... Il est aussi possible de monter son propre serveur [en suivant les instructions sur le dépôt `gischat`](https://github.com/geotribu/gischat#deploy-a-self-hosted-instance).
 
 ## Création du plugin QGIS officiel: `QChat`
 
