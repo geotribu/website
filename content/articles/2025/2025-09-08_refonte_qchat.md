@@ -33,6 +33,12 @@ QChat nouvelle version, c'est un peu comme quand [Com Truise](https://www.youtub
 
 _Une photo honteusement volée sur mastodon... Si vous connaissez l'auteur/ice, contactez-nous !_
 
+## QChat !?
+
+[_QChat_](https://plugins.qgis.org/plugins/qchat/) est un tchat qui s'intègre dans QGIS sous forme de panneau, permettant de partager des messages texte, des images, des screenshots, des données vectorielles légères etc, avec les autres gens connectés.
+
+![Écran du panneau QChat dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/qchat_revolution/screen_qchat_qgis.webp){: .img-center loading=lazy }
+
 ## Pourquoi ?
 
 La première version de QChat était assez rudimentaire, et pas très _scalable_ comme on dit dans les milieux autorisés. Concrètement, du fait de sa conception initiale assez limitée, l'API ne pouvait tourner que sur un seul [_worker uvicorn_](https://fastapi.tiangolo.com/deployment/server-workers/), c'est-à-dire un seul processus système. Ce qui pouvait amener à limiter le nombre de personnes connectées simultanément.
@@ -123,9 +129,7 @@ En parallèle du développement de l'API et du plugin QChat, il y a aussi mainte
 
 ## Et maintenant ?
 
-Il y a maintenant une unique instance servie par Geotribu : [`qchat.geotribu.net`](https://qchat.geotribu.net). Dessus, vous pouvez y retrouver des channels par langue.
-
-Et il y a toujours des idées et des nouveaux trucs à développer dans QChat, on pense à ceux-là notamment :
+Il y a toujours des idées et des nouveaux trucs à développer dans QChat, on pense à ceux-là notamment :
 
 - Ajout d'un petit formulaire pour lâcher des emojis :joy_cat:
 - Partage de modèles graphiques entre plusieurs clients connectés à QChat.
