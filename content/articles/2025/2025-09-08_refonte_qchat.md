@@ -93,7 +93,7 @@ graph TD
 ```
 
 !!! info
-    Le serveur "par défaut" de Geotribu est à l'adresse `qchat.geotribu.net`, et propose un _channel_ par langue / pays: `QGIS-fr`, `QGIS-es`, `QGIS-de`, `QGIS-it`... Il est aussi possible de monter son propre serveur [en suivant les instructions sur le dépôt `gischat`](https://github.com/geotribu/gischat#deploy-a-self-hosted-instance).
+    Le serveur "par défaut" de Geotribu est à l'adresse `qchat.geotribu.net`, et propose un _channel_ par langue / pays : `QGIS-fr`, `QGIS-es`, `QGIS-de`, `QGIS-it`... Il est aussi possible de monter son propre serveur [en suivant les instructions sur le dépôt `gischat`](https://github.com/geotribu/gischat#deploy-a-self-hosted-instance).
 
 ## Création du plugin QGIS officiel: `QChat`
 
