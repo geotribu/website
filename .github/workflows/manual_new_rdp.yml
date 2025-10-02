@@ -39,7 +39,7 @@ jobs:
           echo "DATE_FR_LONG=$(date -d ${{ github.event.inputs.date }} '+%-d %B %Y')" >> $GITHUB_ENV
 
       - name: Get source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Create a new GeoRDP
         shell: bash
