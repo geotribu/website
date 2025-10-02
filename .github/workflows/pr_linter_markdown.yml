@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: "Récupère le code source"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Filter results by added/modified lines.
       - name: "Vérifie la syntaxe des lignes ajoutées ou modifiées"
