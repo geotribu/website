@@ -37,7 +37,7 @@ jobs:
           JSON_STRING: ${{ steps.issue-parser.outputs.jsonString }}
 
       - name: Save form output as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: input_form.json
           path: "rdp*.json"
@@ -56,7 +56,7 @@ jobs:
         run: python scripts/issue_comment_templater_rdp.py
 
       - name: Save comment artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: output_comment.md
           overwrite: true
