@@ -51,7 +51,6 @@ exclude_list_url = (
     "https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/google_maps_pacman.gif",
     "https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/leaflet_compare.gif",
     "https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/ezgif.com-video-to-gif.gif",
-    "https://www.unfolded.ai/46ae6ae487feaefc145bcccf850b17ba/polygon-layer-vancouver.gif",
     "https://documents.buzzfeednews.com/_NewsDesign/tech/2020_08XX_Xinjiang/gm_1a_r.gif",
     "https://user-images.githubusercontent.com/6421175/107518494-5a197a00-6baf-11eb-9ab6-a054ff821cf5.gif",
     "https://github.com/giswqs/data/raw/main/timelapse/goes.gif",
