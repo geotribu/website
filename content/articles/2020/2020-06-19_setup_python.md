@@ -102,27 +102,29 @@ Par exemple :
 Lister les versions installées :
 
 ```powershell
-PS C:\Users\ingeoveritas> py --list
-Installed Pythons found by C:\WINDOWS\py.exe Launcher for Windows
- -3.8-64 *
- -3.7-64
+PS C:\Users\ingeoveritas> py --list-paths
+ -V:3.13 *      C:\Users\prenom.nom\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe
+ -V:3.12        C:\Users\prenom.nom\AppData\Local\Programs\Python\Python312\python.exe
+ -3.8-64        C:\Users\prenom.nom\AppData\Local\Programs\Python\Python38\python.exe
+ -3.7-64        C:\Users\prenom.nom\AppData\Local\Programs\Python\Python37\python.exe
+
 ```
 
 Mettre à jour `pip` pour une version de Python en particulier :
 
 ```powershell
-py -3.7 -m pip install -U pip
+py -3.12 -m pip install -U pip
 ```
 
 ### Environnements virtuels
 
 Les environnements virtuels (_virtual environment_) sont un des fondamentaux du développement en Python, car ils permettent de garantir l'isolation des dépendances (et leurs versions) entre les différents projets.
 
-Tout développement, sur un projet nouveau ou existant, commence donc plus ou moins ar ces commandes :
+Tout développement, sur un projet nouveau ou existant, commence donc plus ou moins par ces commandes :
 
 ```powershell
 # créer l'environnement virtuel
-py -3.7 -m venv .venv
+py -3.12 -m venv .venv
 # l'activer / y entrer
 .venv/Scripts/activate
 # MAJ pip, setuptools et wheel
@@ -152,9 +154,7 @@ Python est un langage qui se documente facilement avec les _docstrings_, utilisa
 
 Personnellement, j'utilise Visual Studio Code et [l'extension Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) qui permet de générer automatiquement une structure type de docstring à partir du code.
 
-Par défaut, elle implémente certaines conventions mais il est possible de personnaliser la structure avec un fichier `docstring-config.mustache` (généralement stocké dans le dossier `.vscode`) :
-
-> Voir le [fichier de template mustache](https://github.com/Guts/elgeopaso/blob/master/.vscode/docstring-config.mustache) que j'utilise pour El Géo Paso.
+Par défaut, elle implémente certaines conventions mais il est possible de personnaliser la structure avec un fichier `docstring-config.mustache` (généralement stocké dans le dossier `.vscode`).
 
 ### Tests
 
@@ -165,7 +165,7 @@ Les fichiers de tests sont :
 * préfixés par le mot `test`
 * stockés dans un sous-dossier `tests`
 
-La configuration de `pytest` est gérée dans la section `[tool:pytest]` du fichier `setup.cfg` de chaque projet.
+La configuration de `pytest` est gérée dans la section `[tool:pytest]` du fichier `setup.cfg` / `pyproject.toml` de chaque projet.
 
 ----
 
