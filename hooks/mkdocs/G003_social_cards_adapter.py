@@ -30,7 +30,6 @@ from pathlib import Path
 from typing import Optional
 
 # Mkdocs
-from material import __version__ as material_version
 from material.plugins.social.plugin import SocialPlugin
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import event_priority

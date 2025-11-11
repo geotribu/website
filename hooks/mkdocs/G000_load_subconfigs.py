@@ -7,11 +7,10 @@
 # standard library
 import logging
 from pathlib import Path
-from typing import Literal, Optional
+from typing import Literal
 
 # 3rd party
 import mkdocs.plugins
-from material import __version__ as material_version
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.structure.pages import Page
 from mkdocs.utils.meta import get_data
