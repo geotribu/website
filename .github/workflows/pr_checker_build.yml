@@ -41,21 +41,9 @@ jobs:
 
       - name: Install dependencies
         id: dependencies
-        env:
-          GH_TOKEN_MATERIAL_INSIDERS: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
         run: |
           python -m pip install -U pip setuptools wheel
-
-          # if secret (PR created by repo collaborator) exists = paid features, else only free
-          if [[ -z "${GH_TOKEN_MATERIAL_INSIDERS}" ]]; then
-            echo "::warning:: L'accès aux token est réservé aux comptes avec droits d'écriture sur le dépôt. La version gratuite du thème est donc utilisée sans mots-clés, etc.)"
-            python -m pip install -U -r requirements-free.txt
-            echo "MKDOCS_CONFIG_FILENAME=mkdocs-free.yml" >> $GITHUB_ENV
-          else
-            # install insiders version using token
-            python -m pip install -U -r requirements-insiders.txt
-            echo "MKDOCS_CONFIG_FILENAME=mkdocs.yml" >> $GITHUB_ENV
-          fi
+          python -m pip install -U -r requirements.txt
 
       - name: Cache build dependencies (external assets downloaded)
         uses: actions/cache@v4
@@ -77,13 +65,13 @@ jobs:
           export MKDOCS_SITE_URL="https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/"
 
           # merge different configs
-          python scripts/100_mkdocs_config_merger.py -c ${{ env.MKDOCS_CONFIG_FILENAME }}
+          python scripts/100_mkdocs_config_merger.py
 
           # build
-          mkdocs build --config-file ${{ env.MKDOCS_CONFIG_FILENAME }} --strict
+          mkdocs build --strict
 
           # save mkdocs.yml for debug
-          cp ${{ env.MKDOCS_CONFIG_FILENAME }} ${{ env.BUILD_DIR }}
+          cp mkdocs.yml ${{ env.BUILD_DIR }}
 
           # remove files reserved for production
           rm ${{ env.BUILD_DIR }}/CNAME

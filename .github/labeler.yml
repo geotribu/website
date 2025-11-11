@@ -1,81 +1,80 @@
 articles:
-    - changed-files:
-          - any-glob-to-any-file:
-                - content/articles/**/*.md
+  - changed-files:
+      - any-glob-to-any-file:
+          - content/articles/**/*.md
 
 contenus communs:
-    - changed-files:
-          - any-glob-to-any-file:
-                - content/*.md
-                - content/newsletter/*.md
-                - content/toc_nav_ignored/**
-    - head-branch:
-          - common
+  - changed-files:
+      - any-glob-to-any-file:
+          - content/*.md
+          - content/newsletter/*.md
+          - content/toc_nav_ignored/**
+  - head-branch:
+      - common
 
 contributeurices:
-    - changed-files:
-          - any-glob-to-any-file:
-                - content/team/**/*.md
+  - changed-files:
+      - any-glob-to-any-file:
+          - content/team/**/*.md
 
 dependencies:
-    - changed-files:
-          - any-glob-to-any-file:
-                - requirements/*.txt
-                - requirements.txt
+  - changed-files:
+      - any-glob-to-any-file:
+          - requirements/*.txt
+          - requirements.txt
 
 enhancement:
-    - head-branch:
-          - ^feature
-          - feature
-          - ^improve
-          - improve
+  - head-branch:
+      - ^feature
+      - feature
+      - ^improve
+      - improve
 
 mkdocs:
-    - changed-files:
-          - any-glob-to-any-file:
-                - config/**
-                - content/**/*.pages
-                - hooks/**
-                - mkdocs*.yml
+  - changed-files:
+      - any-glob-to-any-file:
+          - config/**
+          - content/**/*.pages
+          - hooks/**
+          - mkdocs*.yml
 
 rdp:
-    - changed-files:
-          - any-glob-to-any-file:
-                - content/rdp/**/*.md
-    - head-branch:
-          - ^rdp
-          - rdp
+  - changed-files:
+      - any-glob-to-any-file:
+          - content/rdp/**/*.md
+  - head-branch:
+      - ^rdp
+      - rdp
 
 thème:
-    - changed-files:
-          - any-glob-to-any-file:
-                - content/theme/**/*
-                - requirements-insiders.txt
-    - head-branch:
-          - theme
-          - ^theme
+  - changed-files:
+      - any-glob-to-any-file:
+          - content/theme/**/*
+  - head-branch:
+      - theme
+      - ^theme
 
 tipex:
-    - head-branch:
-          - tipex
-          - ^tipex
+  - head-branch:
+      - tipex
+      - ^tipex
 
 outillage:
-    - changed-files:
-          - any-glob-to-any-file:
-                - .devcontainer/**
-                - .github/**
-                - .pre-commit-config.yaml
-                - .vscode/**/*
-                - .docker
-                - .lincheckrrc
-                - .mailmap
-                - .markdownlint*
-                - docker*
-                - Dockerfile
-                - scripts/**
-    - head-branch:
-          - ^ci
-          - ci
-          - ^tooling
-          - tooling
+  - changed-files:
+      - any-glob-to-any-file:
+          - .devcontainer/**
+          - .github/**
+          - .pre-commit-config.yaml
+          - .vscode/**/*
+          - .docker
+          - .lincheckrrc
+          - .mailmap
+          - .markdownlint*
+          - docker*
+          - Dockerfile
+          - scripts/**
+  - head-branch:
+      - ^ci
+      - ci
+      - ^tooling
+      - tooling

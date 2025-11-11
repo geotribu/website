@@ -62,20 +62,6 @@ def get_latest_content(
     return output_contents_list
 
 
-def is_mkdocs_theme_material_insiders() -> Optional[bool]:
-    """Check if the material theme is community or insiders edition.
-
-    Returns:
-        bool: True if the theme is Insiders edition. False if community.
-    """
-    if material_version is not None and "insiders" in material_version:
-        logger.debug(log_prefix + "Material theme edition INSIDERS")
-        return True
-    else:
-        logger.debug(log_prefix + "Material theme edition COMMUNITY")
-        return False
-
-
 # ###########################################################################
 # ########## Hooks #################
 # ##################################
@@ -99,27 +85,8 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     config_filename = Path(config.get("config_file_path")).name
     if config_filename == "mkdocs.yml":
         config["extra"]["website_flavor"] = "insiders"
-    elif config_filename == "mkdocs-free.yml":
-        config["extra"]["website_flavor"] = "community"
     else:
         config["extra"]["website_flavor"] = "minimal"
-
-    # check if insiders version is installed
-    if (
-        config["extra"]["website_flavor"] == "insiders"
-        and not is_mkdocs_theme_material_insiders()
-    ):
-        logger.warning(
-            log_prefix
-            + f"Le fichier {config.get('config_file_path')} contient des paramètres ou "
-            "plugins uniquement disponibles dans la version Insiders (payante) du thème "
-            "Material. Or c'est la version community (gratuite) qui est installée "
-            f"({material_version}). La génération va probablement échouer. Deux solutions :"
-            "A. Installer la version Insiders (requiert un jeton GitHub). "
-            "B. Utiliser la configuration basée sur la version communautaire (gratuite), "
-            "par exemple : 'mkdocs build -f mkdocs-free.yml'"
-        )
-        config["extra"]["website_flavor"] = "community"
 
     logger.info(
         log_prefix + f"Génération du site {config.get('site_name')} "
