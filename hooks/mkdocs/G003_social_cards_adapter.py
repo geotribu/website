@@ -30,7 +30,6 @@ from pathlib import Path
 from typing import Optional
 
 # Mkdocs
-from material import __version__ as material_version
 from material.plugins.social.plugin import SocialPlugin
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import event_priority
@@ -43,9 +42,6 @@ from mkdocs.structure.pages import Page
 
 logger = logging.getLogger("mkdocs")
 hook_name = Path(__file__).stem
-
-# check si c'est la version Insiders (payante) ou la version Communauté (gratuite) du thème
-is_insiders = "insiders" in material_version
 
 # ###########################################################################
 # ########## Functions #############
@@ -101,50 +97,36 @@ def on_page_markdown(
             f"{page.file.abs_src_path} n'a pas d'image. Une 'social card' sera automatiquement générée : {social_card_url}"
         )
 
-        # si la page a une icône, on adapte le template de l'image (disponible que pour Insiders)
+        # si la page a une icône, on adapte le template de l'image
         # ref : https://squidfunk.github.io/mkdocs-material/reference#setting-the-page-icon
-        if page.meta.get("icon") and is_insiders:
+        if page.meta.get("icon"):
             cards_layout = "default/variant"
             logger.info(
                 f"[{hook_name}] La page {page.abs_url} a une icône définie "
                 f"({page.meta.get('icon')}). Dans ce cas, le modèle de social "
                 f"card est : {cards_layout}"
             )
-        elif is_insiders:
+        else:
             cards_layout = social_plugin.config.cards_layout
 
         # définit les paramètres pour les social cards au niveau de la page
-        if is_insiders:
-            page.meta["social"] = {
-                "cards": True,
-                "cards_layout": cards_layout,
-                "cards_layout_options": {
-                    "background_color": social_plugin.config.cards_layout_options.get(
-                        "background_color"
-                    ),
-                    "background_image": social_plugin.config.cards_layout_options.get(
-                        "background_image",
-                        "content/theme/assets/images/geotribu/background_geotribu.png",
-                    ),
-                    "color": social_plugin.config.cards_layout_options.get("color"),
-                    "font_family": social_plugin.config.cards_layout_options.get(
-                        "font_family"
-                    ),
-                },
-            }
-        # else:
-        #     page.meta["social"] = {
-        #         "cards": True,
-        #         "cards_layout_options": {
-        #             "background_color": social_plugin.config.cards_layout_options.get(
-        #                 "background_color"
-        #             ),
-        #             "color": social_plugin.config.cards_layout_options.get("color"),
-        #             "font_family": social_plugin.config.cards_layout_options.get(
-        #                 "font_family"
-        #             ),
-        #         },
-        #     }
+        page.meta["social"] = {
+            "cards": True,
+            "cards_layout": cards_layout,
+            "cards_layout_options": {
+                "background_color": social_plugin.config.cards_layout_options.get(
+                    "background_color"
+                ),
+                "background_image": social_plugin.config.cards_layout_options.get(
+                    "background_image",
+                    "content/theme/assets/images/geotribu/background_geotribu.png",
+                ),
+                "color": social_plugin.config.cards_layout_options.get("color"),
+                "font_family": social_plugin.config.cards_layout_options.get(
+                    "font_family"
+                ),
+            },
+        }
     else:
         logger.debug(
             f"[{hook_name}] {page.abs_url} a une image paramétrée. "
