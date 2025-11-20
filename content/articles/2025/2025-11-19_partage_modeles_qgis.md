@@ -1,6 +1,6 @@
 ---
 title: "Partagez vos modèles QGIS facilement !"
-subtitle: Quatres méthodes pour un modèle en QGIS en toute simplicité
+subtitle: Quatres méthodes pour partager un modèle en QGIS en toute simplicité
 authors:
   - Marc Ducobu
 categories:
@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-Après de longues heures de travail et beaucoup trop de litres de café, vous avez enfin créé un modèle digne d’un tableau de Kandinsky. Maintenant, vous souhaitez le partager avec vos collègues, tata Jeannine afin de ne pas être le seul à pouvoir en profiter !
+Après de longues heures de travail et beaucoup trop de litres de café, vous avez enfin créé un modèle digne d’un tableau de Qandinsky. Maintenant, vous souhaitez le partager avec vos collègues, tata Jeannine afin de ne pas être le seul à pouvoir en profiter !
 
 Dans cet article, nous vous proposons quatre méthodes pour diffuser votre modèle QGIS de manière simple et efficace.
 
@@ -34,7 +34,7 @@ Dans cet article, nous vous proposons quatre méthodes pour diffuser votre modè
 
 Un stagiaire, très créatif, pourrait vous proposer la méthode suivante : faire une copie d'écran du modèle, l'imprimer sur une feuille A4, un pliage magique pour la transformer en concorde et l'envoyer. Merci à lui !
 
-Bon, on est d'accord, c'est drôle mais très efficace. Heureusement, la communauté de QGIS s'est penchée sur le problème et propose d'autres alternatives.
+Bon, on est d'accord, c'est drôle mais pas très efficace. Heureusement, la communauté de QGIS s'est penchée sur le problème et propose d'autres alternatives.
 
 ## Utilisation du hub de QGIS
 
@@ -60,7 +60,7 @@ SHARE_FOLDER.png
 
 ## Intégration dans un plugin
 
-La dernière méthode consiste à intégrer vos modèles dans un plugin QGIS. Un plugin permet d’ajouter des outils dans la "Boîte à outils de traitement" (Processing Toolbox) de QGIS, y compris des modèles. Par exemple, l’extension [Cadastre](https://plugins.qgis.org/plugins/cadastre/) ajoute à la boîte à outils des traitements supplémentaires 🤯 !
+La dernière méthode consiste à intégrer vos modèles dans un plugin QGIS. Un plugin permet d’ajouter des outils dans la "Boîte à outils de traitement" (Processing Toolbox) de QGIS, y compris des modèles. Par exemple, l’extension [Cadastre](https://plugins.qgis.org/plugins/cadastre/) ajoute à la boîte à outils des traitements supplémentaires :exploding_head: !
 
 PROCESSING_TOOL_BOX_CADASTRE.png
 
@@ -74,7 +74,7 @@ Nous venons de voir quatre méthodes pour partager vos modèles QGIS. Chaque mé
 
 Connaissiez-vous ces différentes méthodes ? Qu’en pensez-vous ? Avez-vous d’autres astuces pour partager vos modèles ? N’hésitez pas à partager votre expérience dans les commentaires !
 
----
+----
 
 <!-- geotribu:authors-block -->
 
