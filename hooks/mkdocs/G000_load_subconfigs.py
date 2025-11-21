@@ -22,6 +22,7 @@ from mkdocs.utils.meta import get_data
 
 logger = logging.getLogger("mkdocs")
 log_prefix = f"[{__name__}] "
+witness_output = Path("./latest_content.yml")
 
 # ###########################################################################
 # ########## Functions #############
@@ -101,6 +102,11 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
         )
 
     config["extra"]["latest"] = latest_contents
+    print(
+        latest_contents,
+        file=witness_output.open(mode="w", encoding="UTF-8"),
+    )
     logger.info(
-        log_prefix + "Contenus récents ajoutés à la configuration globale du site."
+        log_prefix + "Contenus récents ajoutés à la configuration globale du site. "
+        f"Également écrits dans le fichier témoin : {witness_output.resolve()}"
     )
