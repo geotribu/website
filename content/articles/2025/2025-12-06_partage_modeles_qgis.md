@@ -17,7 +17,7 @@ tags:
   - modèles
 ---
 
-# Quatres méthodes pour un modèle en QGIS en toute simplicité
+# Quatres méthodes pour partager un modèle en QGIS en toute simplicité
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
@@ -74,7 +74,7 @@ Nous venons de voir quatre méthodes pour partager vos modèles QGIS. Chaque mé
 
 Connaissiez-vous ces différentes méthodes ? Qu’en pensez-vous ? Avez-vous d’autres astuces pour partager vos modèles ? N’hésitez pas à partager votre expérience dans les commentaires !
 
----
+----
 
 <!-- geotribu:authors-block -->
 
