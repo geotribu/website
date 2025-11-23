@@ -6,7 +6,7 @@ authors:
 categories:
   - article
 comments: true
-date: 2025-11-19
+date: 2025-12-06
 description: "Découvrez 4 façons de partager vos modèles QGIS : de l'avion à l’intégration dans un plugin !"
 icon: fontawesome/regular/paper-plane
 image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
@@ -74,7 +74,7 @@ Nous venons de voir quatre méthodes pour partager vos modèles QGIS. Chaque mé
 
 Connaissiez-vous ces différentes méthodes ? Qu’en pensez-vous ? Avez-vous d’autres astuces pour partager vos modèles ? N’hésitez pas à partager votre expérience dans les commentaires !
 
-----
+---
 
 <!-- geotribu:authors-block -->
 
