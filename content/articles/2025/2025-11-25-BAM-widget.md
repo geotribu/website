@@ -83,7 +83,7 @@ Voici un exemple d'intégration du widget BAM, avec les espèces observées auto
 <iframe
         title="BAM"
         width="100%" height="640" allow="geolocation"
-        src="https://pnx-si.github.io/BAM-widget/#/?widgetType=mapList&lang=fr&buffer=200&x=-4.05224&y=5.38471"></iframe>
+        src="https://pnx-si.github.io/BAM-widget/#/?widgetType=mapList&nbTaxonPerLine=4&primaryColor=009485&switchModeAvailable=true&showFilters=true&lang=fr&buffer=200&x=-4.05224&y=5.38471"></iframe>
 
 BAM peut aussi être utilisé comme un explorateur de données de biodiversité autonome, adapté à un usage mobile et installable sous forme de PWA,
 en se rendant directement sur <https://pnx-si.github.io/BAM-widget/>.
