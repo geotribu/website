@@ -7,7 +7,7 @@ categories:
     - article
 comments: true
 date: 2025-11-25
-description: "Description de 160 caractères maximum qui résume l'article qui est présente dans le flux RSS, la newsletter, les moteurs de recherche, en page d'accueil... "
+description: "Un nouveau widget de biodiversité pour afficher les espèces observées autour d'un lieu."
 icon: "material/bee-flower"
 image: "https://geonature.fr/documents/autres/BAM/BAM-widget-thumb.png"
 license: cc4_by-sa
