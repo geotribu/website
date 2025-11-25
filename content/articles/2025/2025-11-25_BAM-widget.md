@@ -85,6 +85,8 @@ Voici un exemple d'intégration du widget BAM, avec les espèces observées auto
         width="100%" height="640" allow="geolocation"
         src="https://pnx-si.github.io/BAM-widget/#/?widgetType=mapList&nbTaxonPerLine=4&primaryColor=009485&switchModeAvailable=true&showFilters=true&lang=fr&buffer=200&x=-4.05224&y=5.38471"></iframe>
 
+Un [configurateur du widget](https://pnx-si.github.io/BAM-widget/#/config) est disponible pour faciliter le paramétrage du widget et son intégration, en définissant son mode d'affichage et ses options (carte et liste ou liste uniquement, mode galerie ou détaillé, nombre de résultats par ligne, affichage des filtres ou non, zone de recherche, source de données, couleur...).
+
 BAM peut aussi être utilisé comme un explorateur de données de biodiversité autonome, adapté à un usage mobile et installable sous forme de PWA,
 en se rendant directement sur <https://pnx-si.github.io/BAM-widget/>.
 
