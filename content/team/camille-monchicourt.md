@@ -24,7 +24,7 @@ social_accounts:
 
 <!-- --8<-- [start:author-sign-block] -->
 
-Responsable du système d'informations et géomaticien au Parc national des Écrins. 
+Responsable du système d'informations et géomaticien au Parc national des Écrins.
 
 Coordinateur des logiciels libres [Geotrek](https://geotrek.fr) et [GeoNature](https://geonature.fr) et animateur des communautés mutualisant leur développement.
 
