@@ -9,7 +9,7 @@ comments: true
 date: 2025-12-06
 description: "Découvrez 4 façons de partager vos modèles QGIS : de l'avion à l’intégration dans un plugin !"
 icon: fontawesome/regular/paper-plane
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
+image:
 license: default
 robots: index, follow
 tags:
