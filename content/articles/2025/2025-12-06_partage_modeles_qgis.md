@@ -23,7 +23,7 @@ tags:
 
 ## Introduction
 
-Après de longues heures de travail et beaucoup trop de litres de café, vous avez enfin créé un modèle digne d’un tableau de Qandinsky. Maintenant, vous souhaitez le partager avec vos collègues, tata Jeannine afin de ne pas être le seul à pouvoir en profiter !
+Après de longues heures de travail et beaucoup trop de litres de café, vous avez enfin créé un modèle digne d’[un tableau de Qandinsky](https://fr.wikipedia.org/wiki/Vassily_Kandinsky#/media/Fichier:Vassily_Kandinsky,_1923_-_Circles_in_a_Circle.jpg). Maintenant, vous souhaitez le partager avec vos collègues, tata Jeannine afin de ne pas être le seul à pouvoir en profiter !
 
 Dans cet article, je vous propose quatre méthodes pour diffuser votre modèle QGIS de manière simple et efficace.
 
