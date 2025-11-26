@@ -25,7 +25,7 @@ tags:
 
 Après de longues heures de travail et beaucoup trop de litres de café, vous avez enfin créé un modèle digne d’un tableau de Qandinsky. Maintenant, vous souhaitez le partager avec vos collègues, tata Jeannine afin de ne pas être le seul à pouvoir en profiter !
 
-Dans cet article, nous vous proposons quatre méthodes pour diffuser votre modèle QGIS de manière simple et efficace.
+Dans cet article, je vous propose quatre méthodes pour diffuser votre modèle QGIS de manière simple et efficace.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
