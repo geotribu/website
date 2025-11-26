@@ -17,7 +17,7 @@ tags:
   - modèles
 ---
 
-# Quatres méthodes pour partager un modèle en QGIS en toute simplicité
+# Quatre méthodes pour partager un modèle avec QGIS en toute simplicité
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
