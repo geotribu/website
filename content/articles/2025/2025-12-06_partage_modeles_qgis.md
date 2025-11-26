@@ -72,7 +72,7 @@ En 3 étapes : encodage des informations de base, sélection des modèles à int
 
 ## Pour conclure
 
-Nous venons de voir quatre méthodes pour partager vos modèles QGIS. Chaque méthode a ses spécificités et peut répondre à un besoin spécifique. La communauté QGIS est très active et créative pour rendre l'utilisation de QGIS toujours plus efficace.
+Nous venons de voir quatre méthodes pour partager vos modèles QGIS. Chaque méthode a ses spécificités et peut répondre à un besoin particulier. La communauté QGIS est très active et créative pour rendre l'utilisation de QGIS toujours plus efficace.
 
 Connaissiez-vous ces différentes méthodes ? Qu’en pensez-vous ? Avez-vous d’autres astuces pour partager vos modèles ? N’hésitez pas à partager votre expérience dans les commentaires !
 
