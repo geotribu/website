@@ -54,7 +54,7 @@ Si, comme moi, vous préférez limiter les manipulations, vous pouvez installer 
 
 Si vous travaillez en équipe et que vous souhaitez partager vos modèles avec vos collègues sans les rendre publics, vous pouvez configurer QGIS pour qu’il aille aussi chercher des modèles dans un répertoire partagé.
 
-Pour cela, rendez-vous dans "Settings" > "Options" > "Processing" > "Modèles" et ajoutez le chemin du répertoire partagé dans la liste des dossiers de modèles. Rapide et efficace ( merci à GeoJulien l’astuce ! ) !
+Pour cela, rendez-vous dans "Settings" > "Options" > "Processing" > "Modèles" et ajoutez le chemin du répertoire partagé dans la liste des dossiers de modèles. Rapide et efficace ( merci à GeoJulien pour l’astuce ! ) !
 
 ![Capture d'écran de la configuration du répertoire partagé.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/SHARE_FOLDER.png){: .img-center loading=lazy }
 
