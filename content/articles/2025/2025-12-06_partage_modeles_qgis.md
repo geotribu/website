@@ -64,7 +64,9 @@ La dernière méthode consiste à intégrer vos modèles dans un plugin QGIS. Un
 
 ![Capture d'écran des outils de l'extenstion Cadastre dans la Processing Toolbox](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/cadastre_processing.png){: .img-center loading=lazy }
 
-Créer un plugin n'est pas une mince affaire, mais depuis quelque temps, un outil facilite cette tâche : le plugin [Models2Plugin](https://plugins.qgis.org/plugins/models2plugin/). En 3 étapes : encodage des informations de base, sélection des modèles à intégrer et génération du plugin, vous pouvez créer un plugin QGIS contenant vos modèles.
+Créer un plugin n'est pas une mince affaire, c'est pour cela que j'ai entrepris le développement d'un outil qui facilite cette tâche : le plugin [Models2Plugin](https://plugins.qgis.org/plugins/models2plugin/).
+
+En 3 étapes : encodage des informations de base, sélection des modèles à intégrer et génération du plugin, vous pouvez créer un plugin QGIS contenant vos modèles.
 
 ![Image présentant le plugin Models2Plugin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/img_modes2plugin.png){: .img-center loading=lazy }
 
