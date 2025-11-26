@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2025-11-25
+date: 2025-12-11
 description: "Un nouveau widget de biodiversité pour afficher les espèces observées autour d'un lieu."
 icon: "material/bee-flower"
 image: "https://geonature.fr/documents/autres/BAM/BAM-widget-thumb.png"
