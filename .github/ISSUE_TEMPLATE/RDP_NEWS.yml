@@ -32,6 +32,16 @@ body:
     validations:
       required: true
 
+  - type: checkboxes
+    id: cb_author_aware_ai_guidelines
+    attributes:
+      label: "Êtes-vous au courant des [lignes directrices concernant l'usage de l'IA](https://contribuer.geotribu.fr/requirements/) pour les contributions à Geotribu ?"
+      description: La contribution doit émaner de votre originalité, et non découler d'un copier / coller issu d'un prompt.
+      options:
+        - label: Oui
+    validations:
+      required: true
+
   - type: input
     id: in_author_name
     attributes:
