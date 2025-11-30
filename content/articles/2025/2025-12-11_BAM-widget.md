@@ -68,7 +68,7 @@ Elles peuvent également provenir de sources plus locales comme [GeoNature](http
 L'outil n'a besoin d’aucune installation, ni de serveur, ni de base de données : Il récupère les observations collectées à jour en interrogeant les services exposés par des API.
 Il fonctionne partout dans le monde, et est multilingue (Français 🇫🇷, Anglais 🇬🇧, Espagnol 🇪🇸, Italien 🇮🇹, Allemand 🇩🇪, et même Tchèque 🇨🇿 depuis la [contribution récente de Jiří Podhorecký](https://github.com/PnX-SI/BAM-widget/pull/83)).
 
-Voici un exemple d'intégration du widget BAM, avec les espèces observées autour de l'école forestière dans le Parc national du Banco à Abidjan (rayon 200m) :
+Voici un exemple d'intégration du widget BAM, avec les espèces observées, dans un rayon de 200 m, autour de l'école forestière dans le Parc national du Banco à Abidjan  :
 
 <iframe
         title="BAM - Parc national du Banco"
