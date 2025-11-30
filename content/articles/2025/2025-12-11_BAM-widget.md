@@ -34,6 +34,7 @@ Ces 10 dernières années nous avons notamment développé 2 systèmes d'informa
 
 - [Geotrek](https://geotrek.fr) pour gérer et valoriser les sentiers,
 - [GeoNature](https://geonature.fr) pour collecter, gérer et diffuser des données de biodiversité.
+
 Ces deux outils sont désormais utilisés par plus de 250 structures en France. Et plusieurs membres de leurs communautés souhaitaient pouvoir connecter GeoNature et Geotrek en faisant remonter les espèces observées autour d'une rando.
 
 Plutôt que de développer un composant ou module spécifique à nos outils, nous avons réfléchi - avec Amandine Sahl du Parc national des Cévennes - à une solution plus globale et générique, pouvant être utilisée dans différents contextes et avec différentes sources de données.
