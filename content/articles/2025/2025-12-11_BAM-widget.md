@@ -95,7 +95,7 @@ en se rendant directement sur <https://pnx-si.github.io/BAM-widget/>.
 
 ## Une reconnaissance internationale
 
-Le 24 octobre 2025, à Bogotá (Colombie), BAM a reçu un prix lors du [défi international Ebbe Nielsen](https://www.gbif.org/fr/news/2LugQxJfG2kCzjiJocXzVZ/des-laureats-de-norvege-et-daustralie-partagent-la-premiere-place-du-defi-ebbe-nielsen-2025),
+Le 24 octobre 2025, à Bogota (Colombie), BAM a reçu un prix lors du [défi international Ebbe Nielsen](https://www.gbif.org/fr/news/2LugQxJfG2kCzjiJocXzVZ/des-laureats-de-norvege-et-daustralie-partagent-la-premiere-place-du-defi-ebbe-nielsen-2025),
 organisé par le GBIF, qui récompense chaque année les meilleures applications utilisant les données ouvertes sur la biodiversité.
 
 ![L'équipe des parcs nationaux à l'origine et la réalisation du widget BAM](https://github.com/user-attachments/assets/caf93b35-e20b-4174-9448-2b072b062bae)
