@@ -37,7 +37,7 @@ Ces 10 dernières années, nous avons notamment développé 2 systèmes d'inform
 
 Ces deux outils sont désormais utilisés par plus de 250 structures en France. Et plusieurs membres de leurs communautés souhaitaient pouvoir connecter GeoNature et Geotrek en faisant remonter les espèces observées autour d'une rando.
 
-Plutôt que de développer un composant ou module spécifique à nos outils, nous avons réfléchi - avec Amandine Sahl du Parc national des Cévennes - à une solution plus globale et générique, pouvant être utilisée dans différents contextes et avec différentes sources de données.
+Plutôt que de développer un composant ou un module spécifique à nos outils, nous avons réfléchi à une solution plus globale et générique. Ainsi, avec Amandine Sahl du Parc national des Cévennes, nous avons envisagé une approche pouvant s’adapter à différents contextes et à diverses sources de données.
 
 Ces dernières années, les données ouvertes sur la biodiversité se sont en effet multipliées grâce aux programmes participatifs internationaux
 ([iNaturalist](https://www.inaturalist.org/), [Pl@ntNet](https://plantnet.org/), [eBird](https://ebird.org/)…), aux naturalistes professionnels ou amateurs,
