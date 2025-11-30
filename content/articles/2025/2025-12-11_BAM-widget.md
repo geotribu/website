@@ -83,7 +83,7 @@ Voici un exemple d'intégration du widget BAM, avec les espèces observées, dan
 </iframe>
 ```
 
-⚙️ Un [configurateur du widget](https://pnx-si.github.io/BAM-widget/#/config) est disponible pour faciliter le paramétrage du widget et son intégration. Définissez le lieu, le mode d'affichage et les options (carte et liste ou liste uniquement, mode galerie ou détaillé, nombre de résultats par ligne, affichage des filtres ou non, zone de recherche, source de données, couleur...)... et BAM ! Vous n'avez plus qu'à copier-coller dans votre site les quelques lignes de l'iframe que vous retourne le configurateur.
+⚙️ Un [configurateur du widget](https://pnx-si.github.io/BAM-widget/#/config) est disponible pour faciliter le paramétrage du widget et son intégration. Définissez le lieu, le mode d'affichage et les options (carte et liste ou liste uniquement, mode galerie ou détaillé, nombre de résultats par ligne, affichage des filtres ou non, zone de recherche, source de données, couleur...) et BAM ! Vous n'avez plus qu'à copier-coller dans votre site les quelques lignes de l'iframe que vous retourne le configurateur.
 
 Des parcs naturels et sentiers aux écoles, refuges de montagne, sites d'escalade, événements ou hébergements, nous espérons voir le widget BAM intégré dans un large éventail de sites,
 éveillant curiosité et sensibilisation à la nature auprès de nouveaux publics.
