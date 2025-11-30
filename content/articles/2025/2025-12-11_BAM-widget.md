@@ -30,7 +30,7 @@ tags:
 {: align=middle }
 
 Au Parc national des Écrins et au Parc national des Cévennes, on aime la géomatique open source, les bases de données 🐘 et l'open data !
-Ces 10 dernières années nous avons notamment développé 2 systèmes d'information open source :
+Ces 10 dernières années, nous avons notamment développé 2 systèmes d'information open source :
 
 - [Geotrek](https://geotrek.fr) pour gérer et valoriser les sentiers,
 - [GeoNature](https://geonature.fr) pour collecter, gérer et diffuser des données de biodiversité.
