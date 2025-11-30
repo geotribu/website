@@ -45,7 +45,7 @@ et aux plateformes nationales comme l'[INPN](https://inpn.mnhn.fr/). Mais, elles
 
 Nous voulions donc que n'importe qui puisse afficher et intégrer dans son site, en quelques clics, la liste des espèces observées autour d’un gîte, d’un sentier, d'un événement ou encore d'une école.
 
-C’est ainsi qu'est né l'outil [BAM – Biodiversité Autour de Moi](https://si.ecrins-parcnational.com/blog/2025-08-BAM-widget.html), dont nous avons initié le développement lors d'un workshop fin 2024 avec plusieurs parcs nationaux français, coordonné par Amandine Sahl (Parc national des Cévennes) et Jacques Fize (Parc national des Écrins).
+C’est ainsi qu'est né l'outil [BAM – Biodiversité Autour de Moi](https://si.ecrins-parcnational.com/blog/2025-08-BAM-widget.html), dont nous avons initié le développement lors d'un workshop, fin 2024, avec plusieurs parcs nationaux français, coordonné par Amandine Sahl (Parc national des Cévennes) et Jacques Fize (Parc national des Écrins).
 
 ![BAM screenshot](https://github.com/user-attachments/assets/39ae6276-c95e-469d-8247-5ba781f76159)
 
