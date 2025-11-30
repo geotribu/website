@@ -35,7 +35,7 @@ Ces 10 dernières années, nous avons notamment développé 2 systèmes d'inform
 - [Geotrek](https://geotrek.fr) pour gérer et valoriser les sentiers,
 - [GeoNature](https://geonature.fr) pour collecter, gérer et diffuser des données de biodiversité.
 
-Ces deux outils sont désormais utilisés par plus de 250 structures en France. Et plusieurs membres de leurs communautés souhaitaient pouvoir connecter GeoNature et Geotrek en faisant remonter les espèces observées autour d'une rando.
+Ces deux outils sont désormais utilisés par plus de 250 structures en France. Plusieurs membres de leurs communautés souhaitaient pouvoir connecter GeoNature et Geotrek en faisant remonter les espèces observées autour d'une rando.
 
 Plutôt que de développer un composant ou un module spécifique à nos outils, nous avons réfléchi à une solution plus globale et générique. Ainsi, avec Amandine Sahl du Parc national des Cévennes, nous avons envisagé une approche pouvant s’adapter à différents contextes et à diverses sources de données.
 
@@ -43,7 +43,7 @@ Ces dernières années, les données ouvertes sur la biodiversité se sont en ef
 ([iNaturalist](https://www.inaturalist.org/), [Pl@ntNet](https://plantnet.org/), [eBird](https://ebird.org/)…), aux naturalistes professionnels ou amateurs,
 et aux plateformes nationales comme l'[INPN](https://inpn.mnhn.fr/). Mais, elles ne sont pas facilement accessibles au plus grand nombre.
 
-Nous voulions donc que n'importe qui puisse afficher et intégrer dans son site, en quelques clics, la liste des espèces observées autour d’un gîte, d’un sentier, d'un événement ou encore d'une école.
+Nous voulions donc que n'importe qui puisse intégrer dans son site, en quelques clics, la liste des espèces observées autour d’un gîte, d’un sentier, d'un événement ou encore d'une école.
 
 C’est ainsi qu'est né l'outil [BAM – Biodiversité Autour de Moi](https://si.ecrins-parcnational.com/blog/2025-08-BAM-widget.html), dont nous avons initié le développement lors d'un workshop, fin 2024, avec plusieurs parcs nationaux français, coordonné par Amandine Sahl (Parc national des Cévennes) et Jacques Fize (Parc national des Écrins).
 
