@@ -30,11 +30,11 @@ Voici donc un article principalement composé d'images, de "mèmes" comme on dit
 
 En novembre dernier, suite [au billet de blog de QGIS.org](https://blog.qgis.org/2025/10/07/update-on-qgis-4-0-release-schedule-and-ltr-plans/) qui annonçait la _roadmap_ et les dates de QGIS 4, ça m'a donné envie de créer des images humoristiques, pour marquer le coup et amorcer la transition vers cette nouvelle version majeure.
 
-Suite à une discussion au sein de la communauté Geotribu, on s'est dit que ce serait marrant de publier ces mèmes sur les réseaux sociaux, histoire de rigoler un coup, _hi-jacker_ les calendriers de l'avent à but commercial, et communiquer sur cette date majeure dans la joie et la bonne humeur :face_with_peeking_eye:
+Suite à une discussion au sein de la communauté Geotribu, on s'est dit que ce serait marrant de publier ces mèmes sur les réseaux sociaux, histoire de rigoler un coup, _hi-jacker_ les calendriers de l'avent à but commercial, et communiquer sur ces dates majeures dans la joie et la bonne humeur :face_with_peeking_eye:
 
 D'autant plus qu'on avait quelques images en stock et d'autres déjà publiées, sur des évènements et technologies SIG - [c'est un peu notre bouzin](https://contribuer.geotribu.fr/requirements/#ligne-editoriale). Soit une belle occasion de les mettre à jour et de les ressortir !
 
-À noter qu'une partie de ces mèmes a été réalisée [sur le site imgflip](https://imgflip.com/memetemplates), qui permet de créer un mème en deux temps trois mouvements au travers d'une librairie de _templates_.
+À noter qu'une partie de ces mèmes a été réalisée [sur le site imgflip](https://imgflip.com/memetemplates), qui permet de créer un mème en deux temps trois mouvements, au travers d'une librairie de _templates_.
 
 ## Qalendrier 2025
 
@@ -54,7 +54,7 @@ L'occasion de jauger votre qumiqata ? L'occasion d'arborer fièrement et de renc
 
 ### Jour 3
 
-Foqus sur la roadmap de QGIS4, avec la v4.0 prévues en février prochain, et la v4.2 - première LTR - en octobre 2026.
+Foqus sur la roadmap de QGIS4, avec la v4.0 prévue en février prochain, et la v4.2 - première LTR - en octobre 2026.
 
 Ça va venir vite, alors un conseil: anticipez, dès maintenant ! Par exemple en vérifiant la compatibilité de vos plugins avec Qt6, la nouvelle version qu'embarquera QGIS4.
 
@@ -102,7 +102,7 @@ Une mème qui on l'espère ne vous rendra pas chèvre... Ouah la vache !
 
 ### Jour 10
 
-Un mème à destination des admins SIG, et qui malheureusement n'apporte pas d'éléments nouveaux sur cette question gistentielle : installer sur son parc la dernière version en date de QGIS ? Au bénéfice de pouvoir utiliser les dernières fonctionnalités mais au prix de potentiels bugs. Ou alors déployer [la version _Long Term Release_](https://qgis.org/resources/roadmap/) ?
+Un mème à destination des admins SIG, et qui malheureusement n'apporte pas d'éléments nouveaux sur cette question gistentielle : installer sur son parc la dernière version en date de QGIS ? Au bénéfice de pouvoir utiliser les dernières fonctionnalités mais au prix de potentiels bugs ? Ou alors déployer [la version _Long Term Release_](https://qgis.org/resources/roadmap/), considérée comme plus stable ?
 
 ![Qalendrier jour 10 - À REMPLACER](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/retrospective_qalendrier_2025/10_buttons_qgis4.webp){: .img-center loading=lazy }
 
