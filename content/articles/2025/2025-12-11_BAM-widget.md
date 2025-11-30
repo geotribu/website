@@ -41,7 +41,7 @@ Plutôt que de développer un composant ou un module spécifique à nos outils, 
 
 Ces dernières années, les données ouvertes sur la biodiversité se sont en effet multipliées grâce aux programmes participatifs internationaux
 ([iNaturalist](https://www.inaturalist.org/), [Pl@ntNet](https://plantnet.org/), [eBird](https://ebird.org/)…), aux naturalistes professionnels ou amateurs,
-et aux plateformes nationales comme l'[INPN](https://inpn.mnhn.fr/). Mais elles ne sont pas facilement accessibles au plus grand nombre.
+et aux plateformes nationales comme l'[INPN](https://inpn.mnhn.fr/). Mais, elles ne sont pas facilement accessibles au plus grand nombre.
 
 Nous voulions donc que n'importe qui puisse afficher et intégrer dans son site, en quelques clics, la liste des espèces observées autour d’un gîte, d’un sentier, d'un événement ou encore d'une école.
 
