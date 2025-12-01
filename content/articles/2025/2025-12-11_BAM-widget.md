@@ -60,7 +60,7 @@ Il suffit de lui indiquer un lieu ou une zone de recherche pour que le widget af
 - une photo,
 - parfois même un enregistrement sonore.
 
-Toutes ces informations viennent directement de grandes bases de données mondiales et ouvertes comme le [GBIF](https://www.gbif.org/fr/)  ou [Wikidata](https://www.wikidata.org/).
+Toutes ces informations viennent directement de grandes bases de données mondiales et ouvertes comme le [GBIF](https://www.gbif.org/fr/) ou [Wikidata](https://www.wikidata.org/).
 Elles peuvent également provenir de sources plus locales comme [GeoNature](https://geonature.fr/), avec une logique de connecteurs que l'on peut enrichir si l'on souhaite ajouter de nouvelles sources de données.
 
 ![Architecture BAM](https://github.com/user-attachments/assets/0adf126e-0219-49de-a8c0-7ef6c9b9e8c7)
