@@ -45,7 +45,7 @@ Nous voulions donc que n'importe qui puisse intégrer dans son site, en quelques
 
 C'est ainsi qu'est né l'outil [BAM – Biodiversité Autour de Moi](https://si.ecrins-parcnational.com/blog/2025-08-BAM-widget.html), dont nous avons initié le développement lors d'un workshop, fin 2024, avec plusieurs parcs nationaux français, coordonné par Amandine Sahl (Parc national des Cévennes) et Jacques Fize (Parc national des Écrins).
 
-![Aperçu de BAM en mode liste galerie, autour de Saint-Léger-les-Mélèzes dans les Hautes-Alpes)](https://github.com/user-attachments/assets/f05e1831-36eb-463b-926b-715bec152181)
+![Aperçu de BAM en mode liste galerie, autour de Saint-Léger-les-Mélèzes (dans les Hautes-Alpes)](https://github.com/user-attachments/assets/f05e1831-36eb-463b-926b-715bec152181)
 
 ## Comment fonctionne BAM ?
 
