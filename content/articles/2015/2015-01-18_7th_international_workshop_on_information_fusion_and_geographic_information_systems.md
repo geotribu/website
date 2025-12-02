@@ -21,8 +21,8 @@ Du 18 au 20 Mai se tiendra à Grenoble le [7e workshop international sur la fusi
 
 Voici en détail les thèmes et sous thèmes qui seront abordés :
 
-|GIS Fundamental Issues | GIS applications, practical experience reviews and project reports |
-| :--------------- |:---------------|
+| GIS Fundamental Issues | GIS applications, practical experience reviews and project reports |
+| :--------------- | :-------------- |
 | Data modeling, analysis, integration and fusion in GIS | Aerial GIS |
 | Artificial Intelligence and GIS. | Transportation GIS |
 | Knowledge-based GIS | Energy GIS |
