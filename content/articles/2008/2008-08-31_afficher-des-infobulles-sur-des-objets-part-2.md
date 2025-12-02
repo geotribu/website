@@ -55,8 +55,8 @@ mlayer.addMarker(marker1);
 
 Voici les propriétés et méthodes de cette classe :
 
-| Propriétés |  |
-| :--------------- |:---------------|
+| Propriétés | Type |
+| :--------- | :--- |
 | labelDiv | DOMElement |
 | label | String |
 | mouseOver | Boolean |
@@ -71,8 +71,8 @@ Voici les propriétés et méthodes de cette classe :
 | opacity | String |
 | fontBold | String |
 
-| Méthodes | |
-| :--------------- |:---------------|
+| Méthodes | Type |
+| :------- | :--- |
 | OpenLayers.Marker.Label | Constructeur |
 | destroy | Supprime le marker et l'infobulle |
 | draw | Dessine le marker et l'infobulle |

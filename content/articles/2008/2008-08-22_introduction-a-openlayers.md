@@ -79,14 +79,14 @@ Comme vous avez pu le constater dans l'exemple 1, OpenLayers dispose d'une inter
 
 Dans la liste ci-dessous sont définies les boutons de contrôles les plus courants (une liste complète est néanmoins disponible ici) :
 
-|Classe | Description |
-| :--------------- |:---------------|
-|PanZoomBar | Affiche une barre de zoom (par défaut c'est panZoom qui est utilisé).|
-|Scale | Affiche l'échelle courante.|
-|LayerSwitcher | Affiche un sélecteur permettant de choisir la couche désirée.|
-|EditingToolbar | Affiche la barre d'édition des objets géographiques.|
-|MousePosition | Affiche la position du curseur.|
-|OverviewMap | Ajoute une carte de référence.|
+| Classe | Description |
+| :----- | :---------- |
+| PanZoomBar | Affiche une barre de zoom (par défaut c'est panZoom qui est utilisé). |
+| Scale | Affiche l'échelle courante. |
+| LayerSwitcher | Affiche un sélecteur permettant de choisir la couche désirée. |
+| EditingToolbar | Affiche la barre d'édition des objets géographiques. |
+| MousePosition | Affiche la position du curseur. |
+| OverviewMap | Ajoute une carte de référence. |
 
 Il existe deux manières pour modifier l'apparence général de la carte :
 
