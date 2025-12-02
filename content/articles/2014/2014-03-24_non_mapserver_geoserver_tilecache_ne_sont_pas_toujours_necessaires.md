@@ -35,17 +35,17 @@ Il faut savoir que ce système fonctionne de manière pyramidale avec un nombre 
 
 Source de l'image : [Web Map Tile Services for Spatial Data Infrastructures: Management and Optimization](http://www.intechopen.com/books/cartography-a-tool-for-spatial-analysis/web-map-tile-services-for-spatial-data-infrastructures-management-and-optimization#F1)
 
-|zoom | nombre de tuiles |
-| :---------------: |:---------------:|
-|0 | 1 tuile qui recouvre la terre entière |
-|1 | 4 tuiles |
-|2 | 16 tuiles |
-|n | 2^2n  tuiles |
-|12 | 16 777 216 tuiles |
-|16 | 2^32 = 4 294 967 296 tuiles |
-|17 | 17 179 869 184 tuiles |
-|18 | 68 719 476 736 tuiles |
-|19 | 274 877 906 944 tuiles |
+| zoom | nombre de tuiles |
+| :--: | :--------------: |
+| 0 | 1 tuile qui recouvre la terre entière |
+| 1 | 4 tuiles |
+| 2 | 16 tuiles |
+| n | 2^2n  tuiles |
+| 12 | 16 777 216 tuiles |
+| 16 | 2^32 = 4 294 967 296 tuiles |
+| 17 | 17 179 869 184 tuiles |
+| 18 | 68 719 476 736 tuiles |
+| 19 | 274 877 906 944 tuiles |
 
 Source du tableau : le [Wiki d'OSM](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#Zoom_levels)
 

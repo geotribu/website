@@ -24,7 +24,7 @@ Sources et contenus du site de Geotribu, accessible via les URLs suivantes :
 
 ### Prérequis
 
-- Python >= 3.9
+- Python >= 3.12
 
 #### Recommandés
 
@@ -39,19 +39,8 @@ python -m pip install -U pip
 python -m pip install -U setuptools wheel
 ```
 
-### Version gratuite
-
 ```bash
-python -m pip install -U -r requirements-free.txt
-```
-
-#### Version Insiders
-
-Pour utiliser la [version Insiders du thème Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/), il faut disposer du *token* lié au compte GitHub de Geotribu :
-
-```bash
-export GH_TOKEN_MATERIAL_INSIDERS=************
-python -m pip install -U -r requirements-insiders.txt
+python -m pip install -U -r requirements.txt
 ```
 
 ### Générer le site
@@ -60,12 +49,6 @@ Version complète :
 
 ```bash
 mkdocs build
-```
-
-Version complète gratuite :
-
-```bash
-mkdocs build -f mkdocs-free.yml
 ```
 
 Version minimale (seulement certains plugins) :
@@ -80,12 +63,6 @@ Version complète :
 
 ```bash
 mkdocs serve --dirtyreload
-```
-
-Version complète gratuite :
-
-```bash
-mkdocs serve -f mkdocs-free.yml --dirtyreload
 ```
 
 Version minimale (seulement certains plugins) :
@@ -115,4 +92,4 @@ L'objectif de ce financement est de :
 - financer les outils open-source que l'on utilise pour le site :
     - Material for MkDocs (voir la page sponsor <https://github.com/sponsors/squidfunk>)
     - GeoRezo (pour le CDN)
-- financer les suffixes du nom de domaine (geotribu.fr/.net/.org)
+- financer le nom de domaine (geotribu.fr/.net/.org)
