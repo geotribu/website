@@ -90,9 +90,9 @@ Exemple :
 
 ## Tableau récapitulatif
 
-|Concept |Support par JavaScript|
-|:--------------- |:---------------|
-|Classe | Support partiel, aucun élément élément de langage dédié. Mais possibilité d'utilisation via les fonctions/closures/prototype |
+| Concept | Support par JavaScript |
+| :------ | :------------ |
+| Classe | Support partiel, aucun élément élément de langage dédié. Mais possibilité d'utilisation via les fonctions/closures/prototype |
 | Composition/agrégation | Ces deux mécanismes sont supportés |
 | Encapsulation/visibilité | Aucun support |
 | Héritage | JS permet de faire de l'héritage mais il n'existe pas de mot-clé extends prévu à cet effet. L'héritage est une recopie compléte des méthodes et attributs |

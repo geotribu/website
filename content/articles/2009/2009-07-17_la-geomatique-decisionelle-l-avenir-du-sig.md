@@ -33,13 +33,13 @@ Si de par sa logique la géomatique décisionnelle se situe à l'opposée des st
 
 Globalement les différences entre nos systèmes SIG actuels et les systèmes SOLAP se situent au niveau de leur conception et des objectifs finaux. Le tableau ci-dessous compare succinctement les caractéristiques de chacune :
 
-| SIG  | SOLAP |
-| :---------------: |:---------------:|
-|Base de données de type transactionnelle : orientée MAJ/transaction |Base de données de type OLTP : orienté analyse |
-|Optimisation de l'espace de stockage |Optimisation des temps de réponse (précalcul et agrégation des données)|
-|Interface de requête et d'analyse complexe |Interaction complète de l'utilisateur avec les données.|
+| SIG | SOLAP |
+| :--: | :---: |
+| Base de données de type transactionnelle : orientée MAJ/transaction | Base de données de type OLTP : orienté analyse |
+| Optimisation de l'espace de stockage | Optimisation des temps de réponse (précalcul et agrégation des données) |
+| Interface de requête et d'analyse complexe | Interaction complète de l'utilisateur avec les données. |
 
- De cette nouvelle approche est née [Jmap](http://www.kheops-tech.com/en/home/index.jsp) 1er logiciel commercial intégrant le concept SOLAP. Néanmoins au niveau openSource aucune solution n'était jusqu'alors disponible. Ce vide est dorénavant comblé avec l'arrivée de la nouvelle version de [GeoKettle](http://geosoa.scg.ulaval.ca/en/index.php?module=pagemaster&PAGE_user_op=view_page&PAGE_id=17), de [GeoMondrian](http://www.geo-mondrian.org/) et [Spatialytics](http://www.spatialytics.org/), tous développés par l'équipe du professeur Thierry Badard également de l'université de Laval. Sa présentation est résumée dans les deux paragraphes ci-dessous :  
+De cette nouvelle approche est née [Jmap](http://www.kheops-tech.com/en/home/index.jsp) 1er logiciel commercial intégrant le concept SOLAP. Néanmoins au niveau openSource aucune solution n'était jusqu'alors disponible. Ce vide est dorénavant comblé avec l'arrivée de la nouvelle version de [GeoKettle](http://geosoa.scg.ulaval.ca/en/index.php?module=pagemaster&PAGE_user_op=view_page&PAGE_id=17), de [GeoMondrian](http://www.geo-mondrian.org/) et [Spatialytics](http://www.spatialytics.org/), tous développés par l'équipe du professeur Thierry Badard également de l'université de Laval. Sa présentation est résumée dans les deux paragraphes ci-dessous :  
 
 GeoKettle ajoute une dimension spatiale à l'ETL (Extract Transform Load) de Pentaho Data Integration (Kettle). Les nouveautés apportées par la version 3.1.0-20081103 sont notamment :
 
