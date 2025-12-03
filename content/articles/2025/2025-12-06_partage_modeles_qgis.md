@@ -23,18 +23,20 @@ tags:
 
 ## Introduction
 
-Après de longues heures de travail et beaucoup trop de litres de café, vous avez enfin créé un modèle digne d’[un tableau de Qandinsky](https://fr.wikipedia.org/wiki/Vassily_Kandinsky#/media/Fichier:Vassily_Kandinsky,_1923_-_Circles_in_a_Circle.jpg). Maintenant, vous souhaitez le partager avec vos collègues, tata Jeannine afin de ne pas être le seul à pouvoir en profiter !
+Après de longues heures de travail et beaucoup trop de litres de café, vous avez enfin créé un modèle digne d’[un tableau de Qandinsky](https://fr.wikipedia.org/wiki/Vassily_Kandinsky#/media/Fichier:Vassily_Kandinsky,_1923_-_Circles_in_a_Circle.jpg). Maintenant, vous souhaitez le partager avec vos collègue, tata Jeannine ou d'autres, afin de ne pas être le seul à pouvoir en profiter !
 
 Dans cet article, je vous propose quatre méthodes pour diffuser votre modèle QGIS de manière simple et efficace.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
-## Méthode du stagiaire
+## Méthode de l'avion en papier
 
-Un stagiaire, très créatif, pourrait vous proposer la méthode suivante : faire une copie d'écran du modèle, l'imprimer sur une feuille A4, un pliage magique pour la transformer en concorde et l'envoyer. Merci à lui !
+Un collègue très créatif, pourrait vous proposer la méthode suivante : faire une copie d'écran du modèle, l'imprimer sur une feuille A4, un pliage magique pour la transformer en concorde et l'envoyer. Merci à lui !
 
-Bon, on est d'accord, c'est drôle mais pas très efficace. Heureusement, la communauté de QGIS s'est penchée sur le problème et propose d'autres alternatives.
+Cette méthode, qui peut paraître un peu loufoque, n'est pas si éloignée du temps où l'on partageait les connaissances avec des codes imprimés dans les manuels. Cela se fait encore dans certains magazines spécialisés.
+
+Bon, on est d'accord, ce n'est pas très efficace. Heureusement, la communauté de QGIS s'est penchée sur le problème et propose d'autres alternatives.
 
 ## Utilisation du hub de QGIS
 
