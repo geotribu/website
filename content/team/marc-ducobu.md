@@ -1,5 +1,6 @@
 ---
 title: Marc Ducobu
+subtitle:  GIS & Python Developer
 categories:
   - contributeur
 hide:
