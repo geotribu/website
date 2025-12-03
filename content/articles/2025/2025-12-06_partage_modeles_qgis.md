@@ -38,6 +38,14 @@ Cette méthode, qui peut paraître un peu loufoque, n'est pas si éloignée du t
 
 Bon, on est d'accord, ce n'est pas très efficace. Heureusement, la communauté de QGIS s'est penchée sur le problème et propose d'autres solutions.
 
+## Répertoire partagé
+
+Si vous travaillez en équipe et que vous souhaitez partager vos modèles avec vos collègues sans les rendre publics, vous pouvez configurer QGIS pour qu’il aille aussi chercher des modèles dans un répertoire partagé.
+
+Pour cela, rendez-vous dans "Settings" > "Options" > "Processing" > "Modèles" et ajoutez le chemin du répertoire partagé dans la liste des dossiers de modèles. Rapide et efficace ( merci à GeoJulien pour l’astuce ! ) !
+
+![Capture d'écran de la configuration du répertoire partagé.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/SHARE_FOLDER.png){: .img-center loading=lazy }
+
 ## Utilisation du hub de QGIS
 
 Connaissez-vous le hub des ressources QGIS ? Le hub a été introduit dans QGIS 3.14 et permet de partager facilement des modèles, des scripts, des styles, des symboles, etc. J'avoue que je n'ai pas encore le réflexe de l'utiliser et de l'inclure dans les solutions que je mets en œuvre. Si c’est aussi votre cas, voici un petit aperçu de son fonctionnement.
@@ -51,14 +59,6 @@ Le hub de QGIS est accessible à l’adresse [https://hub.qgis.org](https://hub.
 Si, comme moi, vous préférez limiter les manipulations, vous pouvez installer l’extension [QGIS Hub Plugin](https://plugins.qgis.org/plugins/qgis_hub_plugin/) et accéder aux ressources directement dans QGIS via l'extension.
 
 ![Capture d'écran de l'extension QGIS Hub.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/QGIS_HUB_PLUGIN.png){: .img-center loading=lazy }
-
-## Répertoire partagé
-
-Si vous travaillez en équipe et que vous souhaitez partager vos modèles avec vos collègues sans les rendre publics, vous pouvez configurer QGIS pour qu’il aille aussi chercher des modèles dans un répertoire partagé.
-
-Pour cela, rendez-vous dans "Settings" > "Options" > "Processing" > "Modèles" et ajoutez le chemin du répertoire partagé dans la liste des dossiers de modèles. Rapide et efficace ( merci à GeoJulien pour l’astuce ! ) !
-
-![Capture d'écran de la configuration du répertoire partagé.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/SHARE_FOLDER.png){: .img-center loading=lazy }
 
 ## Intégration dans un plugin
 
