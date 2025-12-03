@@ -36,7 +36,7 @@ Un collègue très créatif, pourrait vous proposer la méthode suivante : faire
 
 Cette méthode, qui peut paraître un peu loufoque, n'est pas si éloignée du temps où l'on partageait les connaissances avec des codes imprimés dans les manuels. Cela se fait encore dans certains magazines spécialisés.
 
-Bon, on est d'accord, ce n'est pas très efficace. Heureusement, la communauté de QGIS s'est penchée sur le problème et propose d'autres alternatives.
+Bon, on est d'accord, ce n'est pas très efficace. Heureusement, la communauté de QGIS s'est penchée sur le problème et propose d'autres solutions.
 
 ## Utilisation du hub de QGIS
 
@@ -62,7 +62,7 @@ Pour cela, rendez-vous dans "Settings" > "Options" > "Processing" > "Modèles" e
 
 ## Intégration dans un plugin
 
-La dernière méthode consiste à intégrer vos modèles dans un plugin QGIS. Un plugin permet d’ajouter des outils dans la "Boîte à outils de traitement" (Processing Toolbox) de QGIS, y compris des modèles. Par exemple, l’extension [Cadastre](https://plugins.qgis.org/plugins/cadastre/) ajoute à la boîte à outils des traitements supplémentaires :exploding_head: !
+La dernière méthode consiste à intégrer vos modèles dans un plugin QGIS. Un plugin permet d’ajouter des outils dans la "Boîte à outils de traitements" (Processing Toolbox) de QGIS, y compris des modèles. Par exemple, l’extension [Cadastre](https://plugins.qgis.org/plugins/cadastre/) ajoute à la boîte à outils des traitements supplémentaires :exploding_head: !
 
 ![Capture d'écran des outils de l'extenstion Cadastre dans la Processing Toolbox](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/cadastre_processing.png){: .img-center loading=lazy }
 
