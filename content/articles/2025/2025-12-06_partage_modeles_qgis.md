@@ -60,6 +60,18 @@ Si, comme moi, vous préférez limiter les manipulations, vous pouvez installer 
 
 ![Capture d'écran de l'extension QGIS Hub.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/QGIS_HUB_PLUGIN.png){: .img-center loading=lazy }
 
+## Utilisation du QGIS Resource Sharing
+
+Le [QGIS Resource Sharing](https://plugins.qgis.org/plugins/qgis_resource_sharing/) est un plugin qui permet de charger des ressources depuis des dépôts (repositories) en ligne. Ces dépôts peuvent contenir des styles, des symboles, des scripts et des modèles de de traitement, des modèles de traitement, des scripts R, etc. Une fois installé, le partage de ressources se fait très facilement.
+
+![Capture d'écran du plugin QGIS Resource Sharing.](https://qgis-contribution.github.io/QGIS-ResourceSharing/_images/repositories.png){: .img-center loading=lazy }
+
+Cette méthode a comme avantage de pouvoir paramétrer des sources multiples. De plus, la gestion des mises à jour est automatisée : les collections sont téléchargées et mises à jour via Git, ce qui facilite grandement la synchronisation des ressources partagées.
+
+Pour partager vos ressources, vous pouvez [créer votre propre dépôt Git](https://qgis-contribution.github.io/QGIS-ResourceSharing/authoring/creating-repository.html) ou contribuer à des dépôts existants.
+
+( merci à GeoJulien et à lbartoletti pour la découverte de l'outil ! )-
+
 ## Intégration dans un plugin
 
 La dernière méthode consiste à intégrer vos modèles dans un plugin QGIS. Un plugin permet d’ajouter des outils dans la "Boîte à outils de traitements" (Processing Toolbox) de QGIS, y compris des modèles. Par exemple, l’extension [Cadastre](https://plugins.qgis.org/plugins/cadastre/) ajoute à la boîte à outils des traitements supplémentaires :exploding_head: !
