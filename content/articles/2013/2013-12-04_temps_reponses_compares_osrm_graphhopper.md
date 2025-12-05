@@ -48,11 +48,11 @@ Ce premier test nous a également permis de créer cinq nouveaux jeux de donnée
 Tous les temps sont exprimés en msec. ([détail](http://tsung.quiedeville.org/tsung-reports/20131202-1446/report.html) des résultats)
 
 | Jeu de données | Ghp Mean | OSRM mean | delta % | Ghp 95th | OSRM 95th | delta % |
-| :--------------- |:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
+| :------------- | :------: | :-------: | :-----: | :------: | :-------: | :-----: |
 | inf à 3km | 49.5 | 48.01 | -3.10 | 55.12 | 52.13 | -5.74 |
 | entre 3 km et 50km | 51.94 | 54.29 | 4.33 | 58.74 | 75.93 | 22.64 |  
 | entre 50 km et 200 km | 60.10 | 72.33 | 16.91 | 79.51 | 96.42 | 17.54 |  
-| entre 200 km et 500 km | 81.92 | 100 | 18.08 | 93.43 | 150 | 37.71  |
+| entre 200 km et 500 km | 81.92 | 100 | 18.08 | 93.43 | 150 | 37.71 |
 | sup à 500 km | 98.97 | 150 | 34.02 | 120 | 220 | 45.45 |
 
 L'analyse des résultats du tableau ci-dessus montre que si l'on compare les temps de réponses de chacun des outils par jeu de données, on voit que globalement les temps de GraphHopper (Ghp) sont meilleurs que OSRM. Il faut tout de même noter que OSRM reste plus rapide sur les trajets courts (inférieur à 3 km). Enfin pour les deux outils le temps de réponses augmente en fonction de la distance du trajet, ce que montre très nettement le grahique ci dessous.

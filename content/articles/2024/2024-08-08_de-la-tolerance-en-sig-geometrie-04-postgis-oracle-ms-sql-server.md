@@ -263,8 +263,8 @@ Je ne vais pas m'étendre sur le WKB qui est « étrange », il est en Big Endia
 
 Toutefois, à la représentation après la virgule près, on a le même résultat :
 
-| Base | x1  | y1  | x2  | y2  |
-| :--  | :-: | :-: | :-: | :-: |
+| Base | x1 | y1 | x2 | y2 |
+| :--- | :-: | :-: | :-: | :-: |
 | Oracle | 1981583.62057374 | 5199333.30187808 | 1981640.78490601 | 5199258.0220884 |
 | PostGIS | 1981583.6205737416 | 5199333.301878075 | 1981640.7849060092 | 5199258.022088398 |
 
