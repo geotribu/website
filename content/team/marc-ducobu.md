@@ -15,7 +15,7 @@ social_accounts:
     instance: mapstodon.space
     username: marcu
   openstreetmap: marcuv
-  osgeo: marcu
+  osgeo: ducobu
   twitter:
   website: https://www.wapy.be/
 ---
