@@ -1,6 +1,6 @@
 ---
 title: "Partagez vos modèles QGIS facilement !"
-subtitle: Quatres méthodes pour partager un modèle en QGIS en toute simplicité
+subtitle: Cinq méthodes pour partager un modèle dans QGIS en toute simplicité
 authors:
   - Marc Ducobu
 categories:
@@ -17,15 +17,15 @@ tags:
   - modèles
 ---
 
-# Quatre méthodes pour partager un modèle avec QGIS en toute simplicité
+# Cinq méthodes pour partager un modèle dans QGIS en toute simplicité
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 ## Introduction
 
-Après de longues heures de travail et beaucoup trop de litres de café, vous avez enfin créé un modèle digne d’[un tableau de Qandinsky](https://fr.wikipedia.org/wiki/Vassily_Kandinsky#/media/Fichier:Vassily_Kandinsky,_1923_-_Circles_in_a_Circle.jpg). Maintenant, vous souhaitez le partager avec vos collègue, tata Jeannine ou d'autres, afin de ne pas être le seul à pouvoir en profiter !
+Après de longues heures de travail et beaucoup trop de litres de café, vous avez enfin créé un modèle digne d’[un tableau de Qandinsky](https://fr.wikipedia.org/wiki/Vassily_Kandinsky#/media/Fichier:Vassily_Kandinsky,_1923_-_Circles_in_a_Circle.jpg). Maintenant, vous souhaitez le partager avec vos collègues, tata Jeannine ou d'autres, afin de ne pas être le seul à pouvoir en profiter !
 
-Dans cet article, je vous propose quatre méthodes pour diffuser votre modèle QGIS de manière simple et efficace.
+Dans cet article, je vous propose cinq méthodes pour diffuser votre modèle QGIS de manière simple et efficace.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
@@ -86,7 +86,7 @@ En 3 étapes : encodage des informations de base, sélection des modèles à int
 
 ## Pour conclure
 
-Nous venons de voir quatre méthodes pour partager vos modèles QGIS. Chaque méthode a ses spécificités et peut répondre à un besoin particulier. La communauté QGIS est très active et créative pour rendre l'utilisation de QGIS toujours plus efficace.
+Nous venons de voir cinq méthodes pour partager vos modèles QGIS. Chaque méthode a ses spécificités et peut répondre à un besoin particulier. La communauté QGIS est très active et créative pour rendre l'utilisation de QGIS toujours plus efficace.
 
 Connaissiez-vous ces différentes méthodes ? Qu’en pensez-vous ? Avez-vous d’autres astuces pour partager vos modèles ? N’hésitez pas à partager votre expérience dans les commentaires !
 
