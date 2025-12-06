@@ -1,0 +1,93 @@
+---
+title: Retrospective du Qalendrier Geotribu 2025
+subtitle: Quelques moyens mèmotechnique
+authors:
+    - Guilhem ALLAMAN
+categories:
+    - article
+comments: true
+date: 2025-12-25
+description: Une retrospective sur les posts du Qalendrier de l'Avent 2025 de Geotribu, histoire d'amorcer en douceur la transition vers QGIS 4.
+icon: material/emoticon-happy-outline
+image:
+license: beerware
+tags:
+    - gischat
+    - QGIS
+    - QGIS4
+    - meme
+---
+
+# Restrospective sur le Qalendrier 2025
+
+:calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
+Quand j'étais petit, j'aimais bien lire des atlas et des BD. Et, entre nous, mes vignettes préférées c'était celles où y'avait que des images...
+
+Voici donc un article principalement composé d'images, de "mèmes" comme on dit et au-delà de [réduire la charge pour l'équipe de relecture :wink:](https://contribuer.geotribu.fr/articles/review/), c'est l'occasion de publier et de revenir sur le Qalendrier Geotribu 2025 !
+
+## Concept, principe, règles du jeu
+
+En novembre dernier, suite [au billet de blog de QGIS.org](https://blog.qgis.org/2025/10/07/update-on-qgis-4-0-release-schedule-and-ltr-plans/) qui annonçait la _roadmap_ et les dates de QGIS 4, ça m'a donné envie de créer des images humoristiques, pour marquer le coup et amorcer la transition vers cette nouvelle version majeure.
+
+Après discussion, on s'est dit que ce serait marrant de publier ces images sur les réseaux sociaux, histoire de rigoler un coup, communiquer sur ces dates majeures dans la joie et la bonne humeur :face_with_peeking_eye:
+
+D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà publiées, sur des évènements et technologies SIG. Soit une occasion de les mettre à jour et de les ressortir !
+
+_À noter qu'une partie de ces mèmes a été réalisée [sur le site imgflip](https://imgflip.com/memetemplates), qui permet de créer un mème en deux temps trois mouvements, au travers d'une librairie de templates_.
+
+## Qalendrier 2025
+
+### Jour 1
+
+Première publication : on explique les règles du jeu et on place le décor !
+
+![Qalendrier - jour 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/1_drake_qalendar_alt.webp){: .img-center loading=lazy }
+
+### Jour 2
+
+:sailboat: Cap sur Brest, avec [les prochaines Rencontres QGIS-fr](https://conf.qgis.osgeo.fr/) qui s'y tiendront fin mars 2026, organisées par [l'OSGeo-fr](https://www.osgeo.fr/) en partenariat avec [l'UMR LETG](https://letg.cnrs.fr/).
+
+L'occasion de jauger votre qumi-qata ?  
+L'occasion d'arborer votre nouveau Qimono ?  
+L'occasion de rencontrer d'autres ceintures du Q-Gitsu / PostGiTsu ?
+
+![Affiche des Journées Portes Ouvertes de la Fédération Francophone de QGITSU](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/2_qgitsu_brest_qgisfr2026.webp){: .img-center loading=lazy }
+
+### Jour 3
+
+Focus sur [la roadmap de QGIS4](https://blog.qgis.org/2025/10/07/update-on-qgis-4-0-release-schedule-and-ltr-plans/), avec la v4.0 prévue en février prochain, et la v4.2 - première LTR - en octobre 2026.
+
+Ça va venir vite, alors anticipez, dès maintenant !
+
+Par exemple en vérifiant la compatibilité de vos plugins avec Qt6, la nouvelle version qu'embarquera QGIS4.
+
+![Qalendrier - jour 3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/3_shaq_qgis4_deadline_en.webp){: .img-center loading=lazy }
+
+### Jour 4
+
+Aujourd'hui, un tuyau #BlaqFriday : vente flash sur la nouvelle gamme de Barbe-Q multifonctions !
+
+![Qalendrier - jour 4](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/4_qing_of_the_grid_queen_of_the_fid.webp){: .img-center loading=lazy }
+
+### Jour 5
+
+Quand on a fait tourner pour la première fois les outils de vérification de compatibilité QGIS4 sur notre plugin [QTribu](https://plugins.qgis.org/plugins/qtribu/)...
+
+À noter que les outils permettent de détecter précisément les endroits du code à changer, ainsi que par quoi remplacer.
+
+![Qalendrier - jour 5](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/5_harold_run_pyqt5_to_pyqt6_script.webp){: .img-center loading=lazy }
+
+### Jour 6
+
+QGIS4 c'est Qt6 et non plus Qt5, pour que vos outils soient compatibles exit donc les imports explicites !
+
+Dîtes au revoir aux `from PyQt5.QtGui import QIcon`, dîtes bonjour aux `from qgis.PyQt.QtGui import QIcon` !
+
+![Qalendrier - jour 6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/6_cardriver_pyqt5import_qgis4.webp){: .img-center loading=lazy }
+
+----
+
+<!-- geotribu:authors-block -->
+
+{% include "licenses/beerware.md" %}
