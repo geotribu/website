@@ -1,5 +1,5 @@
 ---
-title: "Partagez vos modèles QGIS facilement !"
+title: Partagez vos modèles QGIS facilement !
 subtitle: Cinq méthodes pour partager un modèle dans QGIS en toute simplicité
 authors:
   - Marc Ducobu
@@ -7,7 +7,7 @@ categories:
   - article
 comments: true
 date: 2025-12-06
-description: "Découvrez 4 façons de partager vos modèles QGIS : de l'avion à l’intégration dans un plugin !"
+description: "Découvrez 5 façons de partager vos modèles QGIS : de l'avion à l’intégration dans un plugin !"
 icon: fontawesome/regular/paper-plane
 image:
 license: default
@@ -30,6 +30,8 @@ Dans cet article, je vous propose cinq méthodes pour diffuser votre modèle QGI
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
+----
+
 ## Méthode de l'avion en papier
 
 Un collègue très créatif, pourrait vous proposer la méthode suivante : faire une copie d'écran du modèle, l'imprimer sur une feuille A4, un pliage magique pour la transformer en concorde et l'envoyer. Merci à lui !
@@ -38,6 +40,8 @@ Cette méthode, qui peut paraître un peu loufoque, n'est pas si éloignée du t
 
 Bon, on est d'accord, ce n'est pas très efficace. Heureusement, la communauté de QGIS s'est penchée sur le problème et propose d'autres solutions.
 
+----
+
 ## Répertoire partagé
 
 Si vous travaillez en équipe et que vous souhaitez partager vos modèles avec vos collègues sans les rendre publics, vous pouvez configurer QGIS pour qu’il aille aussi chercher des modèles dans un répertoire partagé.
@@ -45,6 +49,8 @@ Si vous travaillez en équipe et que vous souhaitez partager vos modèles avec v
 Pour cela, rendez-vous dans "Préférences" > "Options" > "Traitement" > "Modèles" et ajoutez le chemin du répertoire partagé dans la liste des dossiers de modèles. Rapide et efficace ( merci à GeoJulien pour l’astuce ! ) !
 
 ![Capture d'écran de la configuration du répertoire partagé.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/SHARE_FOLDER.png){: .img-center loading=lazy }
+
+----
 
 ## Utilisation du hub de QGIS
 
@@ -60,6 +66,8 @@ Si, comme moi, vous préférez limiter les manipulations, vous pouvez installer 
 
 ![Capture d'écran de l'extension QGIS Hub.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/partage_modeles_qgis/QGIS_HUB_PLUGIN.png){: .img-center loading=lazy }
 
+----
+
 ## Utilisation du QGIS Resource Sharing
 
 Le [QGIS Resource Sharing](https://plugins.qgis.org/plugins/qgis_resource_sharing/) est un plugin qui permet de charger des ressources depuis des dépôts (repositories) en ligne. Ces dépôts peuvent contenir des styles, des symboles, des scripts et des modèles de de traitement, des modèles de traitement, des scripts R, etc. Une fois installé, le partage de ressources se fait très facilement.
@@ -70,7 +78,9 @@ Cette méthode a comme avantage de pouvoir paramétrer des sources multiples. De
 
 Pour partager vos ressources, vous pouvez [créer votre propre dépôt Git](https://qgis-contribution.github.io/QGIS-ResourceSharing/authoring/creating-repository.html) ou contribuer à des dépôts existants.
 
-( merci à GeoJulien et à lbartoletti pour la découverte de l'outil ! )-
+_Merci à [Julien](../../team/julien-moura.md) et à [Loïc](../../team/loic-bartoletti.md) pour la découverte de l'outil !_
+
+----
 
 ## Intégration dans un plugin
 
