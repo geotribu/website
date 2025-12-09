@@ -13,7 +13,7 @@ mkdocs-git-authors-plugin>=0.10,<0.11
 mkdocs-git-committers-plugin-2>=2.5,<2.6
 mkdocs-git-revision-date-localized-plugin>=1,<1.6
 mkdocs-glightbox>=0.3,<0.6
-mkdocs-macros-plugin>=0.5,<1.5
+mkdocs-macros-plugin>=0.5,<1.6
 mkdocs-material[imaging]>=9.7.0,<9.8
 mkdocs-minify-plugin<0.9
 mkdocs-redirects<1.3

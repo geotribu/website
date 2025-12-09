@@ -135,8 +135,8 @@ Notez que la dernière question n'est pas visible et nécessite de "scroller" l'
 
 L'ensemble de ces paramètres est concaténé dans une chaîne nommée "preferences_utilisateur" (champ de type _calculate_ et fonction _concat_ dans la colonne **calculation**).
 
-| **type**  | **name**                | **calculation**                                              |
-| --------- | ----------------------- | ------------------------------------------------------------ |
+| **type** | **name** | **calculation** |
+| :------- | :------- | :-------------- |
 | calculate | preferences_utilisateur | concat(if(${utiliser_geopoint} = 'true','point',''),if(${utiliser_geotrace} = 'true','line',''),if(${utiliser_geoshape} = 'true','polygon',''),if(${animalia} = 'true','animalia',''),if(${plantae} = 'true','plantae',''),if(${fungi} = 'true','fungi',''),if(${habitat} = 'true','habitat',''),if(${pression_menace} = 'true','pression_menace',''),if(${observation_generale} = 'true','observation_generale',''),${nb_lettres}) |
 
 Une fois les paramétrages vérifiés et/ou modifiés, l'utilisateur peut choisir l'étude pour laquelle le relevé est effectué ainsi que le protocole de collecte utilisé.
@@ -253,15 +253,15 @@ Ils ont souhaité que cette liste propose d'abord les noms de référence, class
 ![propositions de taxons correspondant à la recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/odk_postgis_collecte/recherche_d_une_espece_propositions.png "propositions de taxons correspondant à la recherche"){: loading=lazy width=175px }
 {: align=middle }
 
-#### Extrait de la feuille de calcul **survey**
+#### Extrait de la feuille de calcul `survey`
 
-|      | **type**               | **name**          | **label**                  | **hint**                       | **calculation**                                              | **required** | **appearance**                                               | **relevant**                                              |
-| ---- | ---------------------- | ----------------- | -------------------------- | ------------------------------ | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | --------------------------------------------------------- |
-| 1    | begin group            | plantae_selection | ${lb_nom_plantae}          |                                |                                                              |              | field-list                                                   | ${type_observation} = 'plantae'                           |
-| 2    | text                   | recherche_plantae | Nom de l’espèce végétale : | au moins ${nb_lettres} lettres |                                                              | yes          |                                                              |                                                           |
-| 3    | select_one list_espece | lb_nom_plantae    | Sélectionnez l'espèce :    |                                |                                                              | yes          | quick search('espece_plante', 'startswith', 'code_espece_key,lb_nom_key', ${recherche_plantae}) | string-length(${recherche_plantae}) > (${nb_lettres} - 1) |
-| 4    | calculate              | cd_nom_plantae    |                            |                                | pulldata('espece_plante','cd_nom_key','lb_cd_nom_key',${lb_nom_plantae}) |              |                                                              |                                                           |
-| 5    | end group              |                   |                            |                                |                                                              |              |                                                              |                                                           |
+| `#` | type | name | label | hint | calculation | required | appearance | relevant |
+| --- | ---- | ---- | ----- | ---- | ----------- | -------- | ---------- | -------- |
+| 1 | begin group | plantae_selection | ${lb_nom_plantae} | | | | field-list | ${type_observation} = 'plantae' |
+| 2 | text | recherche_plantae | Nom de l’espèce végétale : | au moins ${nb_lettres} lettres | | yes | | |
+| 3 | select_one list_espece | lb_nom_plantae | Sélectionnez l'espèce : | | | yes | quick search('espece_plante', 'startswith', 'code_espece_key,lb_nom_key', ${recherche_plantae}) | string-length(${recherche_plantae}) > (${nb_lettres} - 1) |
+| 4 | calculate | cd_nom_plantae | | | pulldata('espece_plante','cd_nom_key','lb_cd_nom_key',${lb_nom_plantae}) | | | |
+| 5 | end group | | | | | | | |
 
 Nous utilisons ici aussi un référentiel externe (les entrées de la "liste déroulante" ne sont pas stockées dans la feuille **choices** mais dans un fichier csv).
 
