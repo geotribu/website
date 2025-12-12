@@ -26,6 +26,20 @@ Quand j'étais petit, j'aimais bien lire des atlas et des BD. Et, entre nous, me
 
 Voici donc un article principalement composé d'images, de "mèmes" comme on dit et au-delà de [réduire la charge pour l'équipe de relecture :wink:](https://contribuer.geotribu.fr/articles/review/), c'est l'occasion de publier et de revenir sur le Qalendrier Geotribu 2025 !
 
+Un Qalendrier publié dans le but de célébrer,
+
+<!-- markdownlint-disable MD033 -->
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/3GwjfUFyY6M?si=4sjAKodS7wD8aj41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<!-- markdownlint-enable MD033 -->
+
+Et préparer les qalins pour la période des fêtes !
+
+![Livraison de qalins](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/qalins.webp){: .img-center loading=lazy }
+
+D'autant plus que la création de mèmes a un peu été ma porte d'entrée vers la contribution à Geotribu, via disons la fibre de "_trolling_" que contient le groupe et la communauté, en parallèle de l'affinité pour les technos FOSS4G.
+
 ## Concept, principe, règles du jeu
 
 En novembre dernier, suite [au billet de blog de QGIS.org](https://blog.qgis.org/2025/10/07/update-on-qgis-4-0-release-schedule-and-ltr-plans/) qui annonçait la _roadmap_ et les dates de QGIS 4, ça m'a donné envie de créer des images humoristiques, pour marquer le coup et amorcer la transition vers cette nouvelle version majeure.
@@ -85,6 +99,45 @@ QGIS4 c'est Qt6 et non plus Qt5, pour que vos outils soient compatibles exit don
 Dîtes au revoir aux `from PyQt5.QtGui import QIcon`, dîtes bonjour aux `from qgis.PyQt.QtGui import QIcon` !
 
 ![Qalendrier - jour 6](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/6_cardriver_pyqt5import_qgis4.webp){: .img-center loading=lazy }
+
+### Jour 7
+
+QGIS 4 ? #QuickMath
+
+![Qalendrier - jour 7](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/7_qgis4_qgis3_plus_1_alt.webp){: .img-center loading=lazy }
+
+### Jour 8
+
+Vous avez dit "[GDAL](https://gdal.org/en/stable/software_using_gdal.html)" ?
+
+![Qalendrier - jour 8](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/8_gdal_softwares.webp){: .img-center loading=lazy }
+
+### Jour 9
+
+On traverse le Rhin, avec une blague qlassique chez nos amis allemands, au sujet de ce logiciel SIG qu'est vachement bien : KuhGIS :cow:.  
+Une image qui on l'espère ne vous rendra pas chèvre...
+
+![Qalendrier - jour 9](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/9_kuhqgis4.webp){: .img-center loading=lazy }
+
+### Jour 10
+
+Et cette fameuse tirade de _William Shakesfile_:
+
+> LTR or not LTR, that is the question.
+
+![Qalendrier - jour 10](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/10_buttons_qgis4_0_qgis4_2_en.webp){: .img-center loading=lazy }
+
+## Jour 11
+
+Exorcisez vos démons, par exemple en lançant [l'outil](https://github.com/qgis/pyqgis4-checker)`pyqgis4-checker` sur vos plugins ?
+
+![Qalendrier - jour 11](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/11_monkey_bike_pyqgis4-checker_plugins_fr.webp){: .img-center loading=lazy }
+
+## Jour 12
+
+On est en avance de phase avec cette playlist "Summer GIS Hits" du plus bon goût, pour les mélomanes de cet été...
+
+![Qalendrier - jour 12](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/12_summer_gis_hits.webp){: .img-center loading=lazy }
 
 ----
 
