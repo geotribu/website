@@ -13,9 +13,9 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/bam_widget/BA
 license: cc4_by-sa
 robots: index, follow
 tags:
-    - Biodiversité
-    - OpenSource
-    - Widget
+    - biodiversité
+    - open source
+    - widget
 ---
 
 # BAM (Biodiversité Autour de Moi), les données ouvertes de biodiversité accessibles facilement à tous, partout !
