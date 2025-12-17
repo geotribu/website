@@ -54,7 +54,7 @@ _À noter qu'une partie de ces mèmes a été réalisée [sur le site imgflip](h
 
 ### Jour 1
 
-Première publication : on explique les règles du jeu et on place le décor !
+Première publication : on explique les règles du jeu et on plante le décor !
 
 ![Qalendrier - jour 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/1_drake_qalendar_alt.webp){: .img-center loading=lazy }
 
