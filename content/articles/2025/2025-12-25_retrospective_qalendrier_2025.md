@@ -125,19 +125,19 @@ Et cette fameuse tirade de _William Shakesfile_:
 
 ![Qalendrier - jour 10](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/10_buttons_qgis4_0_qgis4_2_en.webp){: .img-center loading=lazy }
 
-## Jour 11
+### Jour 11
 
 Exorcisez vos démons, par exemple en lançant [l'outil](https://github.com/qgis/pyqgis4-checker)`pyqgis4-checker` sur vos plugins ?
 
 ![Qalendrier - jour 11](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/11_monkey_bike_pyqgis4-checker_plugins_fr.webp){: .img-center loading=lazy }
 
-## Jour 12
+### Jour 12
 
 On est en avance de phase avec cette playlist "Summer GIS Hits" du plus bon goût, pour les mélomanes de cet été...
 
 ![Qalendrier - jour 12](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/12_summer_gis_hits.webp){: .img-center loading=lazy }
 
-## Jour 13
+### Jour 13
 
 :notes: Y'a de la data, y'a de la data, ohé ohé !
 
@@ -145,13 +145,13 @@ RIP Guy Bévert, feu batteur et chanteur de [la Compagnie Créole](https://fr.wi
 
 ![Qalendrier - jour 13](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/13_gdal_masque.webp){: .img-center loading=lazy }
 
-## Jour 14
+### Jour 14
 
 Puisqu'un calendrier sans chat n'en est pas vraiment un :cat:
 
 ![Qalendrier - jour 14](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/14_cat_qt5_import_qgis4_en.webp){: .img-center loading=lazy }
 
-## Jour 15
+### Jour 15
 
 On parle _Extract - Transform - Load_, avec ce fameux single du R'n'B français des années 2000, de **Q-Maro** :
 
@@ -159,7 +159,7 @@ On parle _Extract - Transform - Load_, avec ce fameux single du R'n'B français 
 
 ![Qalendrier - jour 15](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/15_qmaro_fme_like_u.webp){: .img-center loading=lazy }
 
-## Jour 16
+### Jour 16
 
 Votre pare-data a subi un impaqt ?  
 Votre qarosserie nécessite une remise en forme ?  
@@ -170,7 +170,7 @@ Et profitez d'une paire d'essuie-grass offerte jusqu'au 24.12 !
 
 ![Qalendrier - jour 16](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/16_qargrass_repare_qargrass_remplace.webp){: .img-center loading=lazy }
 
-## Jour 17
+### Jour 17
 
 On célèbre le modeleur graphique de QGIS, et notamment sa capacité à se plonger en profondeur dans les SIG !
 
