@@ -38,7 +38,7 @@ Et préparer les qalins pour la période des fêtes !
 
 ![Livraison de qalins](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/qalins.webp){: .img-center loading=lazy }
 
-D'autant plus que la création de mèmes a un peu été ma porte d'entrée vers la contribution à Geotribu, via disons la fibre de "_trolling_" que contient le groupe et la communauté, en parallèle de l'affinité pour les technos FOSS4G.
+D'autant plus que la création de mèmes a un peu été ma porte d'entrée vers la contribution à Geotribu, notamment via [mon premier article signé ici](../2023/2023-01-28_retour-vers-le-futur-du-30dmc.md), sur un ton disons _décontract'_ au risque de passer pour un Guignol... Et via disons la fibre de "_trolling_" que contient le groupe et la communauté, en parallèle d'une affinité pour le partage, les technos et les évènements FOSS4G.
 
 ## Concept, principe, règles du jeu
 
@@ -46,9 +46,7 @@ En novembre dernier, suite [au billet de blog de QGIS.org](https://blog.qgis.org
 
 Après discussion, on s'est dit que ce serait marrant de publier ces images sur les réseaux sociaux, histoire de rigoler un coup, communiquer sur ces dates majeures dans la joie et la bonne humeur :face_with_peeking_eye:
 
-D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà publiées, sur des évènements et technologies SIG. Soit une occasion de les mettre à jour et de les ressortir !
-
-_À noter qu'une partie de ces mèmes a été réalisée [sur le site imgflip](https://imgflip.com/memetemplates), qui permet de créer un mème en deux temps trois mouvements, au travers d'une librairie de templates_.
+D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà publiées, sur des évènements et technologies SIG. Soit aussi l'occasion de les mettre à jour et de les ressortir !
 
 ## Qalendrier 2025
 
@@ -138,6 +136,47 @@ Exorcisez vos démons, par exemple en lançant [l'outil](https://github.com/qgis
 On est en avance de phase avec cette playlist "Summer GIS Hits" du plus bon goût, pour les mélomanes de cet été...
 
 ![Qalendrier - jour 12](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/12_summer_gis_hits.webp){: .img-center loading=lazy }
+
+## Jour 13
+
+:notes: Y'a de la data, y'a de la data, ohé ohé !
+
+RIP Guy Bévert, feu batteur et chanteur de [la Compagnie Créole](https://fr.wikipedia.org/wiki/La_Compagnie_cr%C3%A9ole) <3
+
+![Qalendrier - jour 13](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/13_gdal_masque.webp){: .img-center loading=lazy }
+
+## Jour 14
+
+Puisqu'un calendrier sans chat n'en est pas vraiment un :cat:
+
+![Qalendrier - jour 14](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/14_cat_qt5_import_qgis4_en.webp){: .img-center loading=lazy }
+
+## Jour 15
+
+On parle _Extract - Transform - Load_, avec ce fameux single du R'n'B français des années 2000, de **Q-Maro** :
+
+:notes: Donne-moi ton core bébé, j'veux FME like U !
+
+![Qalendrier - jour 15](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/15_qmaro_fme_like_u.webp){: .img-center loading=lazy }
+
+## Jour 16
+
+Votre pare-data a subi un impaqt ?  
+Votre qarosserie nécessite une remise en forme ?  
+Vous aussi vous en avez marre de cette pub qui matraque les neurones ?  
+
+RDV dans votre garage OSGeo le plus proche, QGIS et GRASS s'en chargent !  
+Et profitez d'une paire d'essuie-grass offerte jusqu'au 24.12 !
+
+![Qalendrier - jour 16](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/16_qargrass_repare_qargrass_remplace.webp){: .img-center loading=lazy }
+
+## Jour 17
+
+On célèbre le modeleur graphique de QGIS, et notamment sa capacité à se plonger en profondeur dans les SIG !
+
+Et :two_hearts: sur les cyclistes sigistes qui sont sous l'eau pour boucler l'année !
+
+![Qalendrier - jour 17](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/17_bicycle_undersea_buzy_qgis_model_fr.webp){: .img-center loading=lazy }
 
 ----
 
