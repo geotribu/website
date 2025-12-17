@@ -1,5 +1,5 @@
 ---
-title: "BAM (Biodiversité Autour de Moi)"
+title: BAM (Biodiversité Autour de Moi)
 subtitle: Les données ouvertes de biodiversité accessibles facilement à tous, partout !
 authors:
     - Camille MONCHICOURT
@@ -7,27 +7,29 @@ categories:
     - article
 comments: true
 date: 2025-12-11
-description: "Un nouveau widget de biodiversité pour afficher les espèces observées autour d'un lieu."
-icon: "material/bee-flower"
-image: "https://geonature.fr/documents/autres/BAM/BAM-widget-thumb.png"
+description: Un nouveau widget de biodiversité pour afficher les espèces observées autour d'un lieu.
+icon: material/bee-flower
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/bam_widget/BAM-widget-thumb.png
 license: cc4_by-sa
 robots: index, follow
 tags:
-    - Biodiversité
-    - OpenSource
-    - Widget
+    - biodiversité
+    - open source
+    - widget
 ---
 
 # BAM (Biodiversité Autour de Moi), les données ouvertes de biodiversité accessibles facilement à tous, partout !
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-![BAM widget](https://geonature.fr/documents/autres/BAM/BAM-logo.png "BAM widget"){: .img-thumbnail-left }
+![logo widget BAM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/bam_widget/BAM-logo.webp){: .img-thumbnail-left }
 
-**Un nouveau widget de biodiversité, libre, développé par les parcs nationaux français et reconnu internationalement, qui permet d'afficher les espèces observées autour d'un lieu.**
+Un nouveau widget de biodiversité, libre, développé par les parcs nationaux français et reconnu internationalement, qui permet d'afficher les espèces observées autour d'un lieu.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
+
+----
 
 Au [Parc national des Écrins](https://www.ecrins-parcnational.fr/) et au [Parc national des Cévennes](https://cevennes-parcnational.fr), on aime la géomatique open source, les bases de données :elephant: et l'open data !  
 Ces 10 dernières années, nous avons notamment développé 2 systèmes d'information open source :
@@ -45,7 +47,7 @@ Nous voulions donc que n'importe qui puisse intégrer dans son site, en quelques
 
 C'est ainsi qu'est né l'outil [BAM – Biodiversité Autour de Moi](https://si.ecrins-parcnational.com/blog/2025-08-BAM-widget.html), dont nous avons initié le développement lors d'un workshop, fin 2024, avec plusieurs parcs nationaux français, coordonné par Amandine Sahl (Parc national des Cévennes) et Jacques Fize (Parc national des Écrins).
 
-![Aperçu de BAM en mode liste galerie, autour de Saint-Léger-les-Mélèzes (dans les Hautes-Alpes)](https://github.com/user-attachments/assets/f05e1831-36eb-463b-926b-715bec152181)
+![Aperçu de BAM en mode liste galerie, autour de Saint-Léger-les-Mélèzes (dans les Hautes-Alpes)](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/bam_widget/BAM_liste-galerie_exemple_Saint-Leger-Les-Melezes.webp){: .img-center loading=lazy }
 
 ## Comment fonctionne BAM ?
 
@@ -61,7 +63,7 @@ Il suffit de lui indiquer un lieu ou une zone de recherche pour que le widget af
 Toutes ces informations viennent directement de grandes bases de données mondiales et ouvertes comme le [GBIF](https://www.gbif.org/fr/) ou [Wikidata](https://www.wikidata.org/).  
 Elles peuvent également provenir de sources plus locales comme [GeoNature](https://geonature.fr/), avec une logique de connecteurs que l'on peut enrichir si l'on souhaite ajouter de nouvelles sources de données.
 
-![Architecture des données dans BAM](https://github.com/user-attachments/assets/0adf126e-0219-49de-a8c0-7ef6c9b9e8c7)
+![Architecture des données dans BAM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/bam_widget/BAM_architecture_data.webp){: .img-center loading=lazy }
 
 L'outil n'a besoin d’aucune installation, ni de serveur, ni de base de données : Il récupère les observations collectées à jour en interrogeant les services exposés par des API.  
 Il fonctionne partout dans le monde, et est multilingue (Français :flag_fr:, Anglais :flag_gb:, Espagnol :flag_es:, Italien :flag_it:, Allemand :flag_de:, et même Tchèque :flag_cz: depuis la [contribution récente de Jiří Podhorecký](https://github.com/PnX-SI/BAM-widget/pull/83)).
@@ -93,12 +95,11 @@ Le Parc national des Cévennes l'a déjà intégré sur les fiches des randonné
 
 Le 24 octobre 2025, à Bogota (Colombie), BAM a reçu un prix lors du [défi international Ebbe Nielsen](https://www.gbif.org/fr/news/2LugQxJfG2kCzjiJocXzVZ/des-laureats-de-norvege-et-daustralie-partagent-la-premiere-place-du-defi-ebbe-nielsen-2025), organisé par le GBIF, qui récompense chaque année les meilleures applications utilisant les données ouvertes sur la biodiversité.
 
-![L'équipe des parcs nationaux à l'origine de la réalisation du widget BAM](https://github.com/user-attachments/assets/caf93b35-e20b-4174-9448-2b072b062bae)
+![L'équipe des parcs nationaux à l'origine de la réalisation du widget BAM](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/bam_widget/BAM_equipe_parcs-nationaux.webp){: .img-center loading=lazy }
 
 Une belle reconnaissance pour ce projet porté par nos équipes des parcs nationaux des Cévennes et des Écrins, déjà lauréates de ce défi en 2019 pour l’outil GeoNature-atlas.
 
-Avec ce nouveau projet, nos 2 parcs nationaux continuent leur démarche commune de développement d’outils libres pour répondre à des besoins locaux et spécifiques de manière générique et globale,
-initiée depuis un peu plus de 10 ans avec les projets mutualisés Geotrek et GeoNature.
+Avec ce nouveau projet, nos 2 parcs nationaux continuent leur démarche commune de développement d’outils libres pour répondre à des besoins locaux et spécifiques de manière générique et globale, initiée depuis un peu plus de 10 ans avec les projets mutualisés Geotrek et GeoNature.
 
 ## Pour aller plus loin
 
