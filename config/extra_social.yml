@@ -8,6 +8,9 @@ social:
   - icon: "fontawesome/brands/mastodon"
     link: https://mapstodon.space/@geotribu
     name: "Geotribu sur Mapstodon"
+  - icon: simple/matrix
+    link: "https://matrix.to/#/#geotribu:matrix.org"
+    name: "Rejoindre le chat Matrix de Geotribu"
   - icon: fontawesome/brands/bluesky
     link: https://bsky.app/profile/geotribu.bsky.social
     name: Geotribu sur BlueSky
@@ -31,4 +34,4 @@ social:
     name: "Nous contacter"
   - icon: "fontawesome/solid/piggy-bank"
     link: /team/sponsoring/
-    name: "Le pot commun sur Tipee"
+    name: "Sponsoriser Geotribu"
