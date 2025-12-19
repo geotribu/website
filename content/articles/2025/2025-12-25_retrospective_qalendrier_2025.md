@@ -48,6 +48,8 @@ Après discussion, on s'est dit que ce serait marrant de publier ces images sur 
 
 D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà publiées, sur des évènements et technologies SIG. Soit aussi l'occasion de les mettre à jour et de les ressortir !
 
+_À noter que le site imgflip.com a été utilisé pour certains mèmes, ainsi que textstudio.com pour certains lettrages._
+
 ## Qalendrier 2025
 
 ### Jour 1
@@ -177,6 +179,22 @@ On célèbre le modeleur graphique de QGIS, et notamment sa capacité à se plon
 Et :two_hearts: sur les cyclistes sigistes qui sont sous l'eau pour boucler l'année !
 
 ![Qalendrier - jour 17](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/17_bicycle_undersea_buzy_qgis_model_fr.webp){: .img-center loading=lazy }
+
+### Jour 18
+
+Ça part sur ce classique du rap français, et le _Suprême MNT_ :
+
+:notes: Laisse pas traîner ton GIS, si tu veux pas qu'il glisse !
+
+![Qalendrier - jour 18](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/18_supreme_mnt.webp){: .img-center loading=lazy }
+
+### Jour 19
+
+Aujourd'hui on met en avant [Panoramax](https://panoramax.fr/), les _Gissy Riders_ et toute la contribution vaillante en vadrouille : à pattes, à biqlou, à béqane, en qamion de pompier...
+
+Ce qui s'accompagne également d'une playlist Roq'n'Roll, est-ce que vous reconnaîtrez les morceaux ?
+
+![Qalendrier - jour 19](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/19_gissy_rider_ride.webp){: .img-center loading=lazy }
 
 ----
 
