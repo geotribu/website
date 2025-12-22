@@ -168,7 +168,7 @@ Votre qarosserie nécessite une remise en forme ?
 Vous aussi vous en avez marre de cette pub qui matraque les neurones ?  
 
 RDV dans votre garage OSGeo le plus proche, QGIS et GRASS s'en chargent !  
-Et profitez d'une paire d'essuie-grass offerte jusqu'au 24.12 !
+Et Antoine G. [nous dit qu'une paire d'essuie-grass est offerte](https://mapstodon.space/@ant2trem/115728039463134015) jusqu'au 24.12 !
 
 ![Qalendrier - jour 16](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/16_qargrass_repare_qargrass_remplace.webp){: .img-center loading=lazy }
 
@@ -195,6 +195,39 @@ Aujourd'hui on met en avant [Panoramax](https://panoramax.fr/), les _Gissy Rider
 Ce qui s'accompagne également d'une playlist Roq'n'Roll, est-ce que vous reconnaîtrez les morceaux ?
 
 ![Qalendrier - jour 19](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/19_gissy_rider_ride.webp){: .img-center loading=lazy }
+
+Une playlist [complétée par Panoramax et Christian Q.](https://www.linkedin.com/feed/update/urn:li:activity:7407668515299540992?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7407668515299540992%2C7407719952951975936%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287407719952951975936%2Curn%3Ali%3Aactivity%3A7407668515299540992%29) avec les morceaux suivants :
+
+- Grass Jones : Slave to the algo-rythm
+- Visages : Fade to grey and blur
+- Police : Ghost in the server / Too much data / Every little thing sgblur does is magic / Don't stand so close to my camera
+- Tomtom Jones : It's not undefined
+
+### Jour 20
+
+Suite arithmétique ? 🤔
+
+$$
+\forall n \ge 2 ; QGIS(n) = Qt(n+2) ?
+$$
+
+C'est vrai ce mensonge ?
+
+![Qalendrier - jour 20](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/20_qgis8_qt10_en.webp){: .img-center loading=lazy }
+
+### Jour 21
+
+Hommage au [QGIS plugin templater](https://oslandia.gitlab.io/qgis/template-qgis-plugin/), et sachiez-vous qu'il y a maintenant [un plugin QGIS](https://plugins.qgis.org/plugins/qgis_plugin_templater_gui/) ?
+
+Oui, il est possible de générer une structure de plugin moderne en quelques clics !
+
+![Qalendrier - jour 21](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/21_danny_qgis_plugin_templater_en_v2.webp){: .img-center loading=lazy }
+
+### Jour 22
+
+Aujourd'hui, clin d'oeil aux connexions Marseille - Nord-Est Parisien, au travers de la projection Lambert 80 zetrei !
+
+![Qalendrier - jour 22](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/22_reprojection_lambert80zetrei.webp){: .img-center loading=lazy }
 
 ----
 
