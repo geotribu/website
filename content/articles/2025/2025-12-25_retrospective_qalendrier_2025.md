@@ -264,7 +264,7 @@ Et en voici quelques uns pour la route, qui n'ont pas été sélectionnés pour 
 
 ![Qalendrier - bonus 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/32_goosebumps_qgis4_en.webp){: .img-center loading=lazy }
 
-> Une image à destination de décideurs / décideuses SIG, fans de tuning et de qustomization de véhiQles ?
+> Une image à destination de décideurs / décideuses SIG, fans de tuning et de qustomization de véhiqles ?
 
 ![Qalendrier - bonus 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/32_reprends_les_qles_du_qamion.webp){: .img-center loading=lazy }
 
