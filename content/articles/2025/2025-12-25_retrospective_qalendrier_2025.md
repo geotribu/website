@@ -38,13 +38,13 @@ Et préparer les qalins pour la période des fêtes !
 
 ![Livraison de qalins](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/qalins.webp){: .img-center loading=lazy }
 
-D'autant plus que la création de mèmes a un peu été ma porte d'entrée vers la contribution à Geotribu, notamment via [mon premier article signé ici](../2023/2023-01-28_retour-vers-le-futur-du-30dmc.md), sur un ton disons _décontract'_ au risque de passer pour un Guignol... Et via disons la fibre de "_trolling_" que contient le groupe et la communauté, en parallèle d'une affinité pour le partage, les technos et les évènements FOSS4G.
+D'autant plus que la création de mèmes a un peu été ma porte d'entrée vers la contribution à Geotribu, notamment via [mon premier article signé ici](../2023/2023-01-28_retour-vers-le-futur-du-30dmc.md), sur un ton disons _décontract'_ au risque de passer pour un Guignol... Et via disons la fibre de "_trolling_" que contient le groupe et la communauté, qui s'accompagne d'une affinité pour le partage, les technos et les évènements FOSS4G.
 
 ## Concept, principe, règles du jeu
 
 En novembre dernier, suite [au billet de blog de QGIS.org](https://blog.qgis.org/2025/10/07/update-on-qgis-4-0-release-schedule-and-ltr-plans/) qui annonçait la _roadmap_ et les dates de QGIS 4, ça m'a donné envie de créer des images humoristiques, pour marquer le coup et amorcer la transition vers cette nouvelle version majeure.
 
-Après discussion, on s'est dit que ce serait marrant de publier ces images sur les réseaux sociaux, histoire de rigoler un coup, communiquer sur ces dates majeures dans la joie et la bonne humeur :face_with_peeking_eye:
+Après discussion, on s'est dit que ce serait marrant de publier ces images sur les réseaux sociaux, et [Julien](../../team/julien-moura.md) m'a donné le petit coup de boost pour me lancer. Histoire de rigoler un coup, communiquer sur ces dates majeures dans la joie et la bonne humeur :face_with_peeking_eye:
 
 D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà publiées, sur des évènements et technologies SIG. Soit aussi l'occasion de les mettre à jour et de les ressortir !
 
@@ -121,7 +121,7 @@ Une image qui on l'espère ne vous rendra pas chèvre...
 
 ### Jour 10
 
-Et cette fameuse tirade de _William Shakesfile_:
+Et cette fameuse tirade de _William Shakesfile_ :
 
 > LTR or not LTR, that is the question.
 
@@ -139,6 +139,12 @@ On est en avance de phase avec cette playlist "Summer GIS Hits" du plus bon goû
 
 ![Qalendrier - jour 12](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/12_summer_gis_hits.webp){: .img-center loading=lazy }
 
+Une playlist [enrichie par Jean-Daniel C.](https://www.linkedin.com/feed/update/urn:li:activity:7405131827734167552) avec les _hits_ suivants :
+
+- Quand la statistique est bonne
+- Les LAS du Connemara
+- Les Shapefiles des tropiques
+
 ### Jour 13
 
 :notes: Y'a de la data, y'a de la data, ohé ohé !
@@ -146,6 +152,8 @@ On est en avance de phase avec cette playlist "Summer GIS Hits" du plus bon goû
 RIP Guy Bévert, feu batteur et chanteur de [la Compagnie Créole](https://fr.wikipedia.org/wiki/La_Compagnie_cr%C3%A9ole) <3
 
 ![Qalendrier - jour 13](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/13_gdal_masque.webp){: .img-center loading=lazy }
+
+Stéphane R. [a aussi du GDALida dans son répertoire](https://www.linkedin.com/feed/update/urn:li:activity:7405509292247756800) :wink:
 
 ### Jour 14
 
@@ -168,13 +176,14 @@ Votre qarosserie nécessite une remise en forme ?
 Vous aussi vous en avez marre de cette pub qui matraque les neurones ?  
 
 RDV dans votre garage OSGeo le plus proche, QGIS et GRASS s'en chargent !  
-Et Antoine G. [nous dit qu'une paire d'essuie-grass est offerte](https://mapstodon.space/@ant2trem/115728039463134015) jusqu'au 24.12 !
 
 ![Qalendrier - jour 16](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/16_qargrass_repare_qargrass_remplace.webp){: .img-center loading=lazy }
 
+Et Antoine G. [nous dit qu'une paire d'essuie-grass est offerte](https://mapstodon.space/@ant2trem/115728039463134015) jusqu'au 24.12 !
+
 ### Jour 17
 
-On célèbre le modeleur graphique de QGIS, et notamment sa capacité à se plonger en profondeur dans les SIG !
+On célèbre le modeleur graphique de QGIS, et notamment sa capacité à se plonger en profondeur dans le vaste océan des SIG !
 
 Et :two_hearts: sur les cyclistes sigistes qui sont sous l'eau pour boucler l'année !
 
@@ -190,13 +199,13 @@ Et :two_hearts: sur les cyclistes sigistes qui sont sous l'eau pour boucler l'an
 
 ### Jour 19
 
-Aujourd'hui on met en avant [Panoramax](https://panoramax.fr/), les _Gissy Riders_ et toute la contribution vaillante en vadrouille : à pattes, à biqlou, à béqane, en qamion de pompier...
+Aujourd'hui on met en avant [Panoramax](https://panoramax.fr/), les _Gissy Riders_ et toute la contribution vaillante en vadrouille : à pinces, à biqlou, à béqane, en qamion de pompier...
 
 Ce qui s'accompagne également d'une playlist Roq'n'Roll, est-ce que vous reconnaîtrez les morceaux ?
 
 ![Qalendrier - jour 19](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/19_gissy_rider_ride.webp){: .img-center loading=lazy }
 
-Une playlist [complétée par Panoramax et Christian Q.](https://www.linkedin.com/feed/update/urn:li:activity:7407668515299540992?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7407668515299540992%2C7407719952951975936%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287407719952951975936%2Curn%3Ali%3Aactivity%3A7407668515299540992%29) avec les morceaux suivants :
+Une playlist [enrichie par Panoramax et Christian Q.](https://www.linkedin.com/feed/update/urn:li:activity:7407668515299540992) avec les morceaux suivants :
 
 - Grass Jones : Slave to the algo-rythm
 - Visages : Fade to grey and blur
@@ -207,13 +216,13 @@ Une playlist [complétée par Panoramax et Christian Q.](https://www.linkedin.co
 
 Suite arithmétique ? 🤔
 
+![Qalendrier - jour 20](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/20_qgis8_qt10_en.webp){: .img-center loading=lazy }
+
 $$
 \forall n \ge 2 ; QGIS(n) = Qt(n+2) ?
 $$
 
 C'est vrai ce mensonge ?
-
-![Qalendrier - jour 20](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/20_qgis8_qt10_en.webp){: .img-center loading=lazy }
 
 ### Jour 21
 
@@ -228,6 +237,48 @@ Oui, il est possible de générer une structure de plugin moderne en quelques cl
 Aujourd'hui, clin d'oeil aux connexions Marseille - Nord-Est Parisien, au travers de la projection Lambert 80 zetrei !
 
 ![Qalendrier - jour 22](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/22_reprojection_lambert80zetrei.webp){: .img-center loading=lazy }
+
+### Jour 23
+
+On fête la sortie de QField 4, au travers de cette référence géomusicale de 1979 :mirror_ball:
+
+![Qalendrier - jour 23](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/23_sugar_qfield_gang_mappers_delight.webp){: .img-center loading=lazy }
+
+### Jour 24
+
+Il y a bien longtemps, dans une géogalaxie lointaine, très lointaine...
+
+Les GeoJedis s'allient, rassemblent et mutualisent les forces en présence.
+
+Jeune padawan, rejoins le côté QGIS de la Force !
+
+![Qalendrier - jour 24](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/24_qgis_episode_4.webp){: .img-center loading=lazy }
+
+Et merci de nous avoir suivi pendant ce qalendrier de décembre, joyeuses fêtes !
+
+### Bonus
+
+Et en voici quelques uns pour la route, qui n'ont pas été sélectionnés pour publication au cours du qalendrier...
+
+> Mmmmh ces mots doux que vous pouvez dès à présent susurrer à l'oreille de vos qollègues...
+
+![Qalendrier - bonus 1](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/32_goosebumps_qgis4_en.webp){: .img-center loading=lazy }
+
+> Une image à destination de décideurs / décideuses SIG, fans de tuning et de qustomization de véhiQles ?
+
+![Qalendrier - bonus 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/32_reprends_les_qles_du_qamion.webp){: .img-center loading=lazy }
+
+> Contrairement à QGIS et aux logiciels libres et OpenSource, celui-ci est "gratuit"... Juste pour le template qui est plutôt cool :)
+
+![Qalendrier - bonus 3](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/32_undertaker_qgis4_qgis3plugin_en.webp){: .img-center loading=lazy }
+
+> _Rest In Peace_ Plugin Builder, merci pour toutes ces années de bons et loyaux services !
+
+![Qalendrier - bonus 4](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/32_bath_gisers_qgis_plugin_templater_plugin_builder_fr.webp){: .img-center loading=lazy }
+
+> C.F. Indiana Jones - Les Aventuriers de l'_Artefact Build pour Windows_...
+
+![Qalendrier - bonus 5](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/32_indiana_jones_qgis4_qt6_vcpkg.webp){: .img-center loading=lazy }
 
 ----
 
