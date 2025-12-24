@@ -38,7 +38,7 @@ Et préparer les qalins pour la période des fêtes !
 
 ![Livraison de qalins](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/qalins.webp){: .img-center loading=lazy }
 
-D'autant plus que la création de mèmes a un peu été ma porte d'entrée vers la contribution à Geotribu, notamment via [mon premier article signé ici](../2023/2023-01-28_retour-vers-le-futur-du-30dmc.md), sur un ton disons _décontract'_ au risque de passer pour un Guignol... Et via disons la fibre de "_trolling_" que contient le groupe et la communauté, qui s'accompagne d'une affinité pour le partage, les technos et les évènements FOSS4G.
+D'autant plus que la création de mèmes a un peu été ma porte d'entrée vers la contribution à Geotribu, notamment via [mon premier article signé ici](../2023/2023-01-28_retour-vers-le-futur-du-30dmc.md), sur un ton disons _décontract'_ au risque de passer pour un Guignol... Et via, disons, la fibre de "_trolling_" que contient le groupe et la communauté, qui s'accompagne d'une affinité pour le partage, les technos et les évènements FOSS4G.
 
 ## Concept, principe, règles du jeu
 
