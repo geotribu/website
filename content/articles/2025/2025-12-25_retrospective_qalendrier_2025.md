@@ -46,7 +46,7 @@ En novembre dernier, suite [au billet de blog de QGIS.org](https://blog.qgis.org
 
 Après discussion, on s'est dit que ça serait marrant de publier ces images sur les réseaux sociaux, et [Julien](../../team/julien-moura.md) m'a donné le petit coup de boost pour me lancer. Histoire de rigoler un coup et de communiquer sur ces dates majeures dans la joie et la bonne humeur :face_with_peeking_eye:
 
-D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà publiées, sur des évènements et technologies SIG. Soit aussi l'occasion de les mettre à jour et de les ressortir !
+D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà publiées, sur des évènements et technologies SIG. C'était aussi l'occasion de les mettre à jour et de les ressortir !
 
 _À noter que le site imgflip.com a été utilisé pour certains mèmes, ainsi que textstudio.com pour certains lettrages._
 
