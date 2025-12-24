@@ -44,7 +44,7 @@ D'autant plus que la création de mèmes a un peu été ma porte d'entrée vers 
 
 En novembre dernier, suite [au billet de blog de QGIS.org](https://blog.qgis.org/2025/10/07/update-on-qgis-4-0-release-schedule-and-ltr-plans/) qui annonçait la _roadmap_ et les dates de QGIS 4, ça m'a donné envie de créer des images humoristiques, pour marquer le coup et amorcer la transition vers cette nouvelle version majeure.
 
-Après discussion, on s'est dit que ce serait marrant de publier ces images sur les réseaux sociaux, et [Julien](../../team/julien-moura.md) m'a donné le petit coup de boost pour me lancer. Histoire de rigoler un coup, communiquer sur ces dates majeures dans la joie et la bonne humeur :face_with_peeking_eye:
+Après discussion, on s'est dit que ça serait marrant de publier ces images sur les réseaux sociaux, et [Julien](../../team/julien-moura.md) m'a donné le petit coup de boost pour me lancer. Histoire de rigoler un coup et de communiquer sur ces dates majeures dans la joie et la bonne humeur :face_with_peeking_eye:
 
 D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà publiées, sur des évènements et technologies SIG. Soit aussi l'occasion de les mettre à jour et de les ressortir !
 
