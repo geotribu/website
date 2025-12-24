@@ -157,7 +157,7 @@ Stéphane R. [a aussi du GDALida dans son répertoire](https://www.linkedin.com/
 
 ### Jour 14
 
-Puisqu'un calendrier sans chat n'en est pas vraiment un :cat:
+Puisqu'un qalendrier sans chat n'en est pas vraiment un :cat:
 
 ![Qalendrier - jour 14](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2025/retrospective_qalendrier_2025/14_cat_qt5_import_qgis4_en.webp){: .img-center loading=lazy }
 
