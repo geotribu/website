@@ -1,5 +1,5 @@
 ---
-title: Retrospective du Qalendrier Geotribu 2025
+title: Le Qalendrier Geotribu de Décembre 2025
 subtitle: Quelques moyens mèmotechnique
 authors:
     - Guilhem ALLAMAN
@@ -18,7 +18,7 @@ tags:
     - meme
 ---
 
-# Restrospective sur le Qalendrier 2025
+# Retour sur le Qalendrier de Décembre 2025
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
