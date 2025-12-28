@@ -51,7 +51,8 @@ D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà pu
 !!! info
     Une version _slides_ du Qalendrier est également disponible, en anglais.
 
-[Consulter la version slides du qalendrier de décembre 2025](https://slides.geotribu.net/2025-12-25_geotribu_2025_qalendar_en.html){ .md-button }{: align=middle }
+[Consulter la version slides du qalendrier de décembre 2025](https://slides.geotribu.net/2025-12-25_geotribu_2025_qalendar_en.html){ .md-button }
+{: align=middle }
 
 _À noter que le site imgflip.com a été utilisé pour certains mèmes, ainsi que textstudio.com pour certains lettrages._
 
