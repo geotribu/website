@@ -40,8 +40,6 @@ Et préparer les qalins pour la période des fêtes !
 
 D'autant plus que la création de mèmes a un peu été ma porte d'entrée vers la contribution à Geotribu, notamment via [mon premier article signé ici](../2023/2023-01-28_retour-vers-le-futur-du-30dmc.md), sur un ton disons _décontract'_ au risque de passer pour un Guignol... Et via, disons, la fibre de "_trolling_" que contient le groupe et la communauté, qui s'accompagne d'une affinité pour le partage, les technos et les évènements FOSS4G.
 
-Une version _slides_ du Qalendrier [est disponible en anglais sur ce lien](https://slides.geotribu.net/2025-12-25_geotribu_2025_qalendar_en.html).
-
 ## Concept, principe, règles du jeu
 
 En novembre dernier, suite [au billet de blog de QGIS.org](https://blog.qgis.org/2025/10/07/update-on-qgis-4-0-release-schedule-and-ltr-plans/) qui annonçait la _roadmap_ et les dates de QGIS 4, ça m'a donné envie de créer des images humoristiques, pour marquer le coup et amorcer la transition vers cette nouvelle version majeure.
@@ -49,6 +47,11 @@ En novembre dernier, suite [au billet de blog de QGIS.org](https://blog.qgis.org
 Après discussion, on s'est dit que ça serait marrant de publier ces images sur les réseaux sociaux, et [Julien](../../team/julien-moura.md) m'a donné le petit coup de boost pour me lancer. Histoire de rigoler un coup et de communiquer sur ces dates majeures dans la joie et la bonne humeur :face_with_peeking_eye:
 
 D'autant plus qu'on avait quelques images en stock, ainsi que d'autres déjà publiées, sur des évènements et technologies SIG. C'était aussi l'occasion de les mettre à jour et de les ressortir !
+
+!!! info
+    Une version _slides_ du Qalendrier est également disponible, en anglais.
+
+[Consulter la version slides du qalendrier de décembre 2025](https://slides.geotribu.net/2025-12-25_geotribu_2025_qalendar_en.html){ .md-button }{: align=middle }
 
 _À noter que le site imgflip.com a été utilisé pour certains mèmes, ainsi que textstudio.com pour certains lettrages._
 
