@@ -120,7 +120,7 @@ Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public
 
     ![Matrix terms](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_post_creation_compte.webp){: .img-center loading=lazy }
 
-1. Vous voilà arrivé:e à bon port, cliquer sur "Rejoindre" :
+1. Vous voilà arrivé/e à bon port, cliquer sur "Rejoindre" :
 
     ![Element - Rejoindre le salon Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/element_landing_rejoindre.webp){: .img-center loading=lazy }
 
