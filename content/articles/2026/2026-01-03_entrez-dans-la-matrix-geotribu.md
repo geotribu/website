@@ -62,7 +62,7 @@ C'est un outil de tchat un peu comme Slack, Discord ou Teams. Mais open source e
 
 ### Version longue
 
-C'est un protocole de communication décentralisé et ouvert, un peu comme le mail ou le web. Il permet d'échanger des messages textes, des fichiers, de faire des appels audio/vidéo, etc. via des applications clientes (Element est la plus connue). Chaque utilisateur est hébergé sur un serveur (appelé _homeserver_) et peut rejoindre des salons de discussion (appelés _rooms_ ou "salons") qui peuvent être fédérés entre plusieurs serveurs.
+C'est un protocole de communication décentralisé et ouvert, un peu comme le mail ou le web. Il permet d'échanger des messages textes, des fichiers, de faire des appels audio/vidéo, etc. via des applications clientes ; Element est la plus connue. Chaque utilisateur est hébergé sur un serveur - appelé _homeserver_ - et peut rejoindre des salons de discussion - appelés _rooms_ ou "salons" - qui peuvent être fédérés entre plusieurs serveurs.
 
 ```mermaid
 flowchart LR
