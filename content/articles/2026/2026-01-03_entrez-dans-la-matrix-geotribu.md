@@ -29,7 +29,7 @@ Au printemps 2020, lorsque nous [relançions Geotribu après son AVC SQL](../202
 - l'adoption du protocle est en forte croissance avec notamment l'OSGeo qui dispose de [sa propre instance](https://matrix.osgeo.org/), l'OSGeo-FR ([Loïc et Nicolas vous en parlaient à propos de l'OSGeo-FR dès 2021](../2021/2021-10-15_irc_osgeo.md#via-matrix-méthode-recommandée)), [QGIS](https://matrix.to/#/#qgis:osgeo.org) et d'autres projets anglophones ([OpenStreetMap](https://wiki.openstreetmap.org/wiki/Matrix) bien sûr) comme francophones ([mViewer](https://matrix.to/#/#mviewer:matrix.org), le [plugin IDG pour QGIS](https://matrix.to/#/!DqHgKIoltGIikFRreo:matrix.org?via=matrix.org&via=craig.fr)...) ou bilingues ([Panoramax](https://matrix.to/#/#panoramax_fr:matrix.org), [QDT](https://matrix.to/#/#qdt:matrix.org)...) ;
 - il est également sous-jacent aux applications sécurisées de l'État Français comme [Tchap](https://tchap.gouv.fr/) et bénéficie donc de soutiens de poids ;
 
-Bon, par contre, côté ergonomie et facilité d'utilisation... comment dire... eh bien, on a besoin d'écrire un tutoriel pour guider un maxium de personnes, c'est déjà un indicateur ! :grin:
+Bon, par contre, côté ergonomie et facilité d'utilisation... comment dire... Bienvenue dans la Matrice, voici un tutoriel pour faire passer la pilule (rouge) ! :pill: :grin:
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
