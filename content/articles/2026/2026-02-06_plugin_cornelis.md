@@ -55,7 +55,7 @@ Cet article aurait simplement pu reprendre ce _README_, qui est une oeuvre d'art
 
 De temps à autre, je prends donc mon pied à créer des cartes, dans QGIS, avec un SCR random, histoire d'en découvrir quelques uns, histoire d'admirer les artefacts des reprojections géodésiques et les glitchs du _rendering_ de QGIS :two_hearts:...
 
-En voici une réalisée en période post-Noël, dont voici dans les grandes lignes la recette de création :
+En voici une réalisée, en période post-Noël, dont voici, dans les grandes lignes, la recette de création :
 
 1. Ouvrir un nouveau projet vide dans QGIS.
 
