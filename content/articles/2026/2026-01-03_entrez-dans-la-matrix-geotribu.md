@@ -25,7 +25,7 @@ tags:
 
 Au printemps 2020, lorsque nous [relançions Geotribu après son AVC SQL](../2020/2020-08-31_geotribu_histoire.md#la-difficile-renaissance), nous avons choisi d'ouvrir un espace Slack en lieu et place de la liste de diffusion historique, feue `geotribu@lafrere.org`. Après 4 ans de bons et loyaux services, nous avons décidé de migrer vers [Matrix](https://matrix.org/), un protocole de communication ouvert et décentralisé. Plusieurs raisons à cela :
 
-- Matrix est open source et c'est donc l'occasion de  gagner quelques points de cohérence karmique avec [notre ligne éditoriale]({{ config.extra.url_contribuer }}requirements#ligne-editoriale) ;
+- Matrix est open source et c'est donc l'occasion de gagner quelques points de cohérence karmique avec [notre ligne éditoriale]({{ config.extra.url_contribuer }}requirements#ligne-editoriale) ;
 - l'adoption du protocle est en forte croissance avec notamment l'OSGeo qui dispose de [sa propre instance](https://matrix.osgeo.org/), l'OSGeo-FR ([Loïc et Nicolas vous en parlaient à propos de l'OSGeo-FR dès 2021](../2021/2021-10-15_irc_osgeo.md#via-matrix-méthode-recommandée)), [QGIS](https://matrix.to/#/#qgis:osgeo.org) et d'autres projets anglophones ([OpenStreetMap](https://wiki.openstreetmap.org/wiki/Matrix) bien sûr) comme francophones ([mViewer](https://matrix.to/#/#mviewer:matrix.org), le [plugin IDG pour QGIS](https://matrix.to/#/!DqHgKIoltGIikFRreo:matrix.org?via=matrix.org&via=craig.fr)...) ou bilingues ([Panoramax](https://matrix.to/#/#panoramax_fr:matrix.org), [QDT](https://matrix.to/#/#qdt:matrix.org)...) ;
 - il est également sous-jacent aux applications sécurisées de l'État Français comme [Tchap](https://tchap.gouv.fr/) et bénéficie donc de soutiens de poids ;
 
