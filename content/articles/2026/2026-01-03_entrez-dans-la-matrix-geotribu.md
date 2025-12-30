@@ -135,11 +135,12 @@ Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public
 
 ## Applications mobile et bureau
 
-![Element - Application mobile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_mobile.webp){: .img-right loading=lazy width=150px }
-
 Je vous conseille d'installer une application mobile et/ou bureau pour suivre plus facilement les échanges. Les applications open source sont souvent allergiques aux notifications et mails de relance. Cela part d'un bon sentiment mais dans un monde numérique bruyant, on oublie vite ce qui est silencieux. Alors une fois l'onglet fermé...
 
 Surtout que je trouve l'application mobile Element très bien faite et ergonomique.
+
+![Application mobile Element - Volet latéral](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_mobile.webp){: loading=lazy width=150px } ![Application mobile Element - Favoris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_mobile_favoris.webp){: loading=lazy width=150px }
+{: align=middle }
 
 Vous pouvez la télécharger ici :
 
