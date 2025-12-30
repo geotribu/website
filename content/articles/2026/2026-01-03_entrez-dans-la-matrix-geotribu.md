@@ -31,6 +31,13 @@ Au printemps 2020, lorsque nous [relançions Geotribu après son AVC SQL](../202
 
 Bon, par contre, côté ergonomie et facilité d'utilisation... comment dire... Bienvenue dans la Matrice, voici un tutoriel pour faire passer la pilule (rouge) ! :pill: :grin:
 
+<video width="100%" autoplay loop muted playsinline>
+    <!-- markdownlint-disable MD033 -->
+    <source src="https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_bullet_time.webm" type="video/webm">
+    Votre navigateur ne supporte pas la balise video HTML 5.
+    <!-- markdownlint-enable MD033 -->
+</video>
+
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
@@ -83,7 +90,7 @@ flowchart LR
 
 Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public `#geotribu:matrix.org` (<https://matrix.to/#/#geotribu:matrix.org>) :
 
-- :fr: le salon public **francophone** `#geotribu-agora:matrix.org` (<https://matrix.to/#/#geotribu-agora:matrix.org>) pour discuter de tout ce qui touche à la géomatique, aux SIG, à l'open source, etc. ;
+- :flag_fr: le salon public **francophone** `#geotribu-agora:matrix.org` (<https://matrix.to/#/#geotribu-agora:matrix.org>) pour discuter de tout ce qui touche à la géomatique, aux SIG, à l'open source, etc. ;
 - :flag_gb: le salon public **anglophone** `#geotribu-agora-en:matrix.org` (<https://matrix.to/#/#geotribu-agora-en:matrix.org>) pour les échanges sur le blog anglophone ;
 - :tent:  un salon privé, sur invitation seulement pour l'équipe
 
