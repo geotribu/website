@@ -53,7 +53,7 @@ Si vous avez déjà un compte sur Matrix :
 Sinon pour faire au plus vite :
 
 1. ouvrir l'application web Element qui est le client Matrix le plus utilisé (et qui a aussi une app mobile ou desktop) : <https://app.element.io/>
-1. se créer un compte <https://app.element.io/#/register> (sélectionner matrix.org comme serveur)
+1. se créer un compte <https://app.element.io/#/register> (sélectionner `matrix.org` comme serveur)
 1. ensuite c'est assez classique
 1. cliquer sur [ce lien](ttps://matrix.to/#/#geotribu:matrix.org), ou chercher `geotribu` dans l'interface (barre en haut ou raccourci clavier ++ctrl+k++ comme dans QGIS :wink: )
 
@@ -98,6 +98,8 @@ Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public
 
 ### Procédure pour rejoindre le tchat avec l'application web
 
+![logo Element](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/logo_element.svg){: .img-thumbnail-left }
+
 1. Cliquer sur le lien ci-dessous :
 
     [:simple-matrix: Rejoindre le tchat Matrix :fontawesome-solid-comments:](https://matrix.to/#/#geotribu-agora:matrix.org){ .md-button }
@@ -131,9 +133,17 @@ Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public
 
     ![Element - Rejoindre le salon Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/element_landing_rejoindre.webp){: .img-center loading=lazy }
 
-### Application mobile
+## Applications mobile et bureau
 
-[Télécharger l'application Element](https://element.io/download){ .md-button }
+![Element - Application mobile](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_mobile.webp){: .img-right loading=lazy width=150px }
+
+Je vous conseille d'installer une application mobile et/ou bureau pour suivre plus facilement les échanges. Les applications open source sont souvent allergiques aux notifications et mails de relance. Cela part d'un bon sentiment mais dans un monde numérique bruyant, on oublie vite ce qui est silencieux. Alors une fois l'onglet fermé...
+
+Surtout que je trouve l'application mobile Element très bien faite et ergonomique.
+
+Vous pouvez la télécharger ici :
+
+[Télécharger l'application Element](https://element.io/download/){ .md-button }
 {: align=middle }
 
 ----
@@ -142,7 +152,7 @@ Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public
 
 Nous donnons ici les étapes pour embarquer le plus simplement et rapidement possible. Mais le réseau étant décentralisé, vous pouvez également choisir d'opter pour différentes alternatives.
 
-Par exemple, choisir matrix.osgeo.org comme _homeserver_ avec votre compte OSGeo. Ou utiliser un autre client, comme Thunderbird par exemple :
+Par exemple, choisir `matrix.osgeo.org` comme _homeserver_ avec [votre compte OSGeo](https://www.osgeo.org/community/getting-started-osgeo/osgeo_userid/). Ou utiliser un autre client, comme Thunderbird par exemple :
 
 ![Tchatter sur Matrix depuis Thunderbird](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_client_thunderbird.webp){: .img-center loading=lazy }
 
@@ -157,4 +167,4 @@ Par exemple, choisir matrix.osgeo.org comme _homeserver_ avec votre compte OSGeo
 
 <!-- geotribu:authors-block -->
 
-{% include "licenses/default.md" %}
+{% include "licenses/beerware.md" %}
