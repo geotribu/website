@@ -116,7 +116,7 @@ Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public
 
     ![Matrix choix nom d'utilisateurice et mode création de compte](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_compte_creation.webp){: .img-center loading=lazy }
 
-1. Une fois le compte créé, cliquer sur "Continuer vers Element" :
+1. Une fois le compte créé, cliquer sur `Continuer vers Element` :
 
     ![Matrix terms](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_post_creation_compte.webp){: .img-center loading=lazy }
 
