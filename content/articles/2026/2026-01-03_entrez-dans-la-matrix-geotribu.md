@@ -108,7 +108,7 @@ Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public
 
     ![Element flavor picker](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/02_matrix_element_download-or-browser.webp){: .img-center loading=lazy }
 
-1. Une fois sur la page d'accueil de l'application Element, se connecter avec son compte (`Se connecter`) et aller à l'étape X ou s'en créer un `Créer un compte` :
+1. Une fois sur la page d'accueil de l'application Element, se connecter avec son compte (`Se connecter`) et aller à l'étape 8, ou s'en créer un (`Créer un compte`) :
 
     ![Element authentication screen](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_welcome_element.webp){: .img-center loading=lazy }
 
