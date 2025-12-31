@@ -154,7 +154,13 @@ services:
 - On désactive le mode `MULTI_MAPPROXY` pour ce tuto.
 - Les deux entrées dans la partie `volumes` représentent les dossiers locaux montés dans le container :
     - Il doit y avoir un répertoire `config` là où vous vous trouvez (où créez-le via `mkdir -p config`). Ce répertoire contiendra notamment la configuration et la déclaration des couches servies par le mapproxy.
-    - Il doit y avoir un répertoire `cache` là où vous vous trouvez (où créez-le via `mkdir -p cache`). Ce répertoire accueillera les tuiles cachées, étant donné qu'ici on va rester sur du cache simple de type [_file_](https://mapproxy.github.io/mapproxy/latest/caches.html#file). Notez qu'il est possible d'enregistrer les tuiles cachées dans [du geopackage](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-geopackage), dans [des mbtiles](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-mbtiles), dans [du redis](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-redis), dans [du s3](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-s3), et d'autres trucs !
+    - Il doit y avoir un répertoire `cache` là où vous vous trouvez (où créez-le via `mkdir -p cache`). Ce répertoire accueillera les tuiles cachées, étant donné qu'ici on va rester sur du cache simple de type [_file_](https://mapproxy.github.io/mapproxy/latest/caches.html#file). Notez qu'il est possible d'enregistrer les tuiles cachées dans [du geopackage](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-geopackage), dans [des mbtiles](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-mbtiles), dans [du redis](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-redis), dans [du s3](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-s3), et d'autres trucs comme nous le savons, _à nous l'savon_ !
+
+<!-- markdownlint-disable MD033 -->
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/cknUKHVD-00?si=yhtTkNjjgRv8PtUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<!-- markdownlint-enable MD033 -->
 
 Une fois ce `docker-compose.yaml` créé de même que les deux dossiers nécessaires, jettons un coup d'oeil au fichier de configuration (unique) de mapproxy !
 
@@ -248,83 +254,77 @@ globals:
 
 Voyons maintenant comment configurer les différentes sources de données qu'on définissait plus haut.
 
-Au niveau des **_sources_** :
+- Source _OpenStreetMap_ :
 
-<!-- markdownlint-disable MD046 -->
+```yaml
+paris19_osm_source:
+  type: tile
+  url: https://tile.openstreetmap.org/%(z)s/%(x)s/%(y)s.png
+  grid: osm_grid
+  coverage:
+    bbox:
+      - 2.3646858891194782
+      - 48.8720621793437502
+      - 2.4108388540828618
+      - 48.9021619064262865
+    srs: EPSG:4326
+```
 
-=== "OpenStreetMap"
+Source _WMS-Vecteur Géoplateforme_ :
 
-    ```yaml
-    paris19_osm_source:
-      type: tile
-      url: https://tile.openstreetmap.org/%(z)s/%(x)s/%(y)s.png
-      grid: osm_grid
-      coverage:
-        bbox:
-          - 2.3646858891194782
-          - 48.8720621793437502
-          - 2.4108388540828618
-          - 48.9021619064262865
-        srs: EPSG:4326
-    ```
+```yaml
+paris19_bu_building_source:
+  type: wms
+  req:
+    url: https://data.geopf.fr/wms-v/ows
+    layers: BU.Building
+    transparent: true
+  grid: osm_grid
+  coverage:
+    bbox:
+      - 2.3646858891194782
+      - 48.8720621793437502
+      - 2.4108388540828618
+      - 48.9021619064262865
+    srs: EPSG:4326
+  wms_opts:
+    legendurl: https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BU.Building
+  image:
+    transparent_color: "#ffffff"
+    transparent_color_tolerance: 0
+```
 
-=== "WMS-Vecteur Géoplateforme"
+Source _Imagerie Google Hybrid_ :
 
-    ```yaml
-    paris19_bu_building_source:
-      type: wms
-      req:
-        url: https://data.geopf.fr/wms-v/ows
-        layers: BU.Building
-        transparent: true
-      grid: osm_grid
-      coverage:
-        bbox:
-          - 2.3646858891194782
-          - 48.8720621793437502
-          - 2.4108388540828618
-          - 48.9021619064262865
-        srs: EPSG:4326
-      wms_opts:
-        legendurl: https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BU.Building
-      image:
-        transparent_color: "#ffffff"
-        transparent_color_tolerance: 0
-    ```
+```yaml
+paris19_googlehybrid_source:
+  type: tile
+  url: https://mt.google.com/vt/lyrs=y&hl=en&x=%(x)s&y=%(y)s&z=%(z)s
+  grid: osm_grid
+  coverage:
+    bbox:
+      - 2.3646858891194782
+      - 48.8720621793437502
+      - 2.4108388540828618
+      - 48.9021619064262865
+    srs: EPSG:4326
+```
 
-  === "Imagerie Google Hybrid"
+Source _Imagerie Bing Aerial_ :
 
-    ```yaml
-    paris19_googlehybrid_source:
-      type: tile
-      url: https://mt.google.com/vt/lyrs=y&hl=en&x=%(x)s&y=%(y)s&z=%(z)s
-      grid: osm_grid
-      coverage:
-        bbox:
-          - 2.3646858891194782
-          - 48.8720621793437502
-          - 2.4108388540828618
-          - 48.9021619064262865
-        srs: EPSG:4326
-    ```
-
-  === "Imagerie Bing Aerial"
-
-    ```yaml
-    paris19_bing_aerial_source:
-      type: tile
-      url: https://ecn.t3.tiles.virtualearth.net/tiles/a%(quadkey)s.jpeg?g=1
-      grid: osm_grid
-      coverage:
-        bbox:
-          - 2.3646858891194782
-          - 48.8720621793437502
-          - 2.4108388540828618
-          - 48.9021619064262865
-        srs: EPSG:4326
-    ```
-
-<!-- markdownlint-enable MD046 -->
+```yaml
+paris19_bing_aerial_source:
+  type: tile
+  url: https://ecn.t3.tiles.virtualearth.net/tiles/a%(quadkey)s.jpeg?g=1
+  grid: osm_grid
+  coverage:
+    bbox:
+      - 2.3646858891194782
+      - 48.8720621793437502
+      - 2.4108388540828618
+      - 48.9021619064262865
+    srs: EPSG:4326
+```
 
 Les `caches` et `layers` sont sensiblement les mêmes, adaptés pour pointer sur la bonne `source`.
 
