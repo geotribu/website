@@ -103,7 +103,7 @@ jobs:
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
 
       - name: Save build website as artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: pr-build-website
           path: artifact.tar.zst
