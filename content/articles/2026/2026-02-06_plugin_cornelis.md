@@ -97,7 +97,11 @@ Une fois le pavage dessiné, on lance la génération de la carte grâce au bout
 
 Voici le résultat final de l'expérimentation :
 
-![Résultat final - carte pavée avec le plugin Cornelis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/cornelis_tesselation_final.png){: .img-center loading=lazy }
+![Résultat final - carte pavée 1 avec le plugin Cornelis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/cornelis_tesselation_final_1.png){: .img-center loading=lazy }
+
+Et avec une autre tesselation :
+
+![Résultat final - carte pavée 2 avec le plugin Cornelis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/cornelis_tesselation_final_2.png){: .img-center loading=lazy }
 
 Un processus très sympa à dérouler, et j'apprécie particulièrement les capacités artistiques de QGIS qui ne sont plus à démontrer, et enrichies grâce à ce plugin Cornelis que je vous invite à essayer sur vos données vecteur !
 
