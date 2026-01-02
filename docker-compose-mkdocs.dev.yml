@@ -1,5 +1,3 @@
-version: '3.7'
-
 services:
   website:
     container_name: geotribu-mkdocs-site
@@ -12,5 +10,5 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - .:/app
-    command: mkdocs serve --config-file mkdocs-minimal.yml --dirtyreload --dev-addr=0.0.0.0:8000
+      - ./content/:/app
+    command: mkdocs serve --dirtyreload --dev-addr=0.0.0.0:8000
