@@ -55,7 +55,7 @@ Sinon pour faire au plus vite :
 1. ouvrir l'application web Element qui est le client Matrix le plus utilisé (et qui a aussi une app mobile ou desktop) : <https://app.element.io/>
 1. se créer un compte <https://app.element.io/#/register> (sélectionner `matrix.org` comme serveur)
 1. ensuite c'est assez classique
-1. cliquer sur [ce lien](ttps://matrix.to/#/#geotribu:matrix.org), ou chercher `geotribu` dans l'interface (barre en haut ou raccourci clavier ++ctrl+k++ comme dans QGIS :wink: )
+1. cliquer sur [ce lien](https://matrix.to/#/#geotribu:matrix.org), ou chercher `geotribu` dans l'interface (barre en haut ou raccourci clavier ++ctrl+k++ comme dans QGIS :wink: )
 
 ----
 
