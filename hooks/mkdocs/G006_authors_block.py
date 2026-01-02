@@ -23,7 +23,7 @@ from mkdocs.structure.pages import Page
 
 
 logger = logging.getLogger("mkdocs")
-
+log_prefix = f"[{__name__}] "
 dico_contributors = {}
 exclude_files = [
     "confidentialite.md",
@@ -64,12 +64,14 @@ def on_page_markdown(
 ):
     if (
         "articles" in page.file.abs_src_path
+        and "index" not in page.file.name
         and "templates" not in page.file.abs_src_path
     ):
         page_authors = page.meta.get("authors")
         if not isinstance(page_authors, list):
             logger.warning(
-                f"L'entrée 'authors' de l'en-tête de la page '{page.file.abs_src_path}' est incorrecte."
+                log_prefix
+                + f"L'entrée 'authors' de l'en-tête de la page '{page.file.abs_src_path}' est incorrecte."
             )
             return
 

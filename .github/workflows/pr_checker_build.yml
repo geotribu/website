@@ -30,8 +30,17 @@ jobs:
     if: ${{ github.repository_owner == 'geotribu' }}
 
     steps:
+      - name: Install French locale
+        id: locale-fr
+        shell: bash
+        run: |
+          sudo locale-gen fr_FR.UTF-8
+          sudo update-locale LANG=fr_FR.UTF-8
+
       - name: Get source code
         uses: actions/checkout@v6
+
+
 
       - name: Set up Python
         uses: actions/setup-python@v6
