@@ -105,11 +105,11 @@ Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public
     [:simple-matrix: Rejoindre le tchat Matrix :fontawesome-solid-comments:](https://matrix.to/#/#geotribu-agora:matrix.org){ .md-button }
     {: align=middle }
 
-1. Si vous voyez cet écran à propos d'une prévisualisation de lien, cliquer sur `Continue` :
+1. Si cet écran à propos d'une prévisualisation de lien s'affiche, cliquer sur `Continue` :
 
     ![Matrix preview dialog](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/00_matrix_continue.png){: .img-center loading=lazy }
 
-1. Sur l'écran suivant, nous vous recommandons de choisir le client Element :
+1. Sur l'écran suivant, choisir [le client Element](https://app.element.io/) :
 
     ![Matrix pick application Element](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_choix_client.webp){: .img-center loading=lazy }
 
