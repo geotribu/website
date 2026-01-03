@@ -56,18 +56,11 @@ La logique pourrait se traduire par le schéma suivant :
 
 ```mermaid
 graph TD
-    classDef client fill:#E3F2FD,stroke:#1E88E5,stroke-width:1px,color:#0D47A1;
-    classDef mapproxy fill:#E8F5E9,stroke:#43A047,stroke-width:1px,color:#1B5E20;
-    classDef server fill:#FFF3E0,stroke:#FB8C00,stroke-width:1px,color:#E65100;
-    classDef decision fill:#FFEBEE,stroke:#E53935,stroke-width:2px,color:#B71C1C;
-    classDef col stroke:#000000,stroke-width:2px,color:#B71C1C;
 
     subgraph Col1[ ]
         direction TB
-        subgraph Z1C[Clients en zone 1]
-            ClientZ11[👩 Alicia<br>sur QGIS]
-            ClientZ12[👨 Bobby<br>sur MapLibre]
-        end
+        ClientZ11[👩 Alicia<br>sur QGIS]
+        ClientZ12[👨 Boby<br>sur MapLibre]
     end
 
     subgraph Col2[ ]
@@ -90,12 +83,6 @@ graph TD
     ServeurCentral --> |5: 📦 Retourne la ressource| mapproxyZ1
     mapproxyZ1 --> |6: 🌀 Met en cache<br>la ressource| mapproxyZ1
     mapproxyZ1 --> |7: 📦 Retourne la ressource| ClientZ11
-
-    class ClientZ11,ClientZ12 client;
-    class mapproxyZ1,mapproxyZ2 mapproxy;
-    class ServeurCentral server;
-    class D1,D2 decision;
-    class Col1,Col2,Col3 col;
 ```
 
 Aussi possible de mettre en place [du _load balancing_](https://fr.wikipedia.org/wiki/R%C3%A9partition_de_charge) pour des flux carto, avec plusieurs instances mapproxy configurées de la même manière, mais on ne s'étendra pas trop sur ce cas ici.
@@ -125,7 +112,7 @@ Pour rappel, il est déjà possible d'ajouter ces couches à QGIS, en ajoutant p
 
 Entrons maintenant dans le vif du sujet, et la partie _geek_ : l'installation de mapproxy sur une machine linux. Ici on se limitera aux distributions basées sur debian et ubuntu.
 
-Une fois n'est pas coutume - j'ai plutôt l'habitude de déployer des mapproxy avec [systemd](https://fr.wikipedia.org/wiki/Systemd), étant donné qu'on va utiliser [docker](https://www.docker.com/) pour lancer l'applicatif, il est déjà nécessaire d'installer ça [en suivant la doc officielle](https://docs.docker.com/engine/install/debian/).
+Une fois n'est pas coutume - j'ai plutôt l'habitude de déployer des mapproxy avec [systemd](https://fr.wikipedia.org/wiki/Systemd), étant donné qu'on va utiliser [docker](https://www.docker.com/) pour lancer l'applicatif, il est déjà nécessaire d'installer cet outil [en suivant la doc officielle](https://docs.docker.com/engine/install/debian/).
 
 Une fois docker installé, attardons-nous sur le léger fichier `docker-compose.yaml` pour lancer le service :
 
@@ -144,7 +131,7 @@ services:
       - LOGGING=true
     volumes:
       - ./config:/mapproxy
-      - ./cache/:/cache_data
+      - ./cache:/cache_data
     ports:
       - 8765:8080
 
