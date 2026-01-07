@@ -2,9 +2,10 @@
 title: Antoine Moriceau
 categories:
     - contributeur
-social:
-    - linkedin: antoine-moriceau-ba112764
-    - mail: antoine.moriceau@sogefi-sig.com
+social_accounts:
+    linkedin: antoine-moriceau-ba112764
+    mail: antoine.moriceau@sogefi-sig.com
+    website: https://www.sogefi-sig.com/
 ---
 
 # Antoine Moriceau
