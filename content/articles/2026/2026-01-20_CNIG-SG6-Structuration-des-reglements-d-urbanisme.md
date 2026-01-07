@@ -102,7 +102,7 @@ Dans la chaîne de valeur qui se dessine, chaque acteur joue son rôle :
 - Le Géoportail de l'Urbanisme (GPU) a vocation à devenir le lieu de dépôt des règlements écrits structurés, en complément des règlements graphiques qu'il héberge déjà.
 - Les éditeurs de logiciels ont un double rôle stratégique. En amont, développer des outils de traduction pour transformer les règlements PDF existants en SRU. En aval, intégrer la SRU dans leurs solutions SIG, ADS, ou grand public pour valoriser cette donnée structurée.
 
-## POC SOGEFI : démonstration par l'exemple
+## Démonstration par l'exemple
 
 Chez SOGEFI, nous avons développé un démonstrateur accessible en ligne sur [cnig-sru.sogefi.io](https://cnig-sru.sogefi.io/). À date, deux documents d'urbanisme y sont disponibles : Pechbonnieu (31) et Preignan (32).
 
