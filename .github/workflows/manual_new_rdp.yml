@@ -7,11 +7,6 @@ on:
         type: string
         description: Date de la prochaine RDP au format YYYY-MM-DD
         required: true
-      notify-slack:
-        type: boolean
-        default: true
-        description: Notifier l'équipe sur Slack
-        required: false
       notify-matrix:
         type: boolean
         default: true
@@ -71,15 +66,6 @@ jobs:
           pr_title: "🗞 GeoRDP du ${{ env.DATE_FR_LONG }}"
           pr_template: .github/PULL_REQUEST_TEMPLATE.md
 
-      - name: Notification Slack
-        id: slack
-        uses: slackapi/slack-github-action@v2.1
-        if: "${{ github.event.inputs.notify-slack == 'true' }}"
-        with:
-          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
-          webhook-type: incoming-webhook
-          payload: '{"blocks":[{"type":"section","text":{"type":"mrkdwn","text":":newspaper: La GeoRDP du ${{ env.DATE_FR_LONG }} a été créée et attend vos contributions :writing_hand: !"}},{"type":"section","fields":[{"type":"mrkdwn","text":"Créée par *${{ github.actor }}* via GitHub Action."}]},{"type":"actions","elements":[{"type":"button","text":{"type":"plain_text","emoji":true,"text":":squid: Voir la PR (GitHub)"},"url":"${{ steps.cpr.outputs.pr_url }}"},{"type":"button","text":{"type":"plain_text","emoji":true,"text":":eye: Voir la preview (Netlify)"},"style":"primary","url":"https://preview-pullrequest-${{steps.cpr.outputs.pr_number}}--geotribu-preprod.netlify.app/"}]}]}'
-
       - name: Notification matrix
         id: matrix-notification
         uses: fadenb/matrix-chat-message@v0.0.6
@@ -89,7 +75,7 @@ jobs:
           token: ${{ secrets.MATRIX_TOKEN }}
           channel: ${{ secrets.MATRIX_CHANNEL }}
           message: |
-            📰 La GeoRDP du **${{ env.DATE_FR_LONG }}** a été créée et attend vos contributions ✍️ !
-            Créée par **${{ github.actor }}** via GitHub Action.
-            [Voir la PR (GitHub)](${{ steps.cpr.outputs.pr_url }})
-            [Voir la preview (Netlify)](https://preview-pullrequest-${{steps.cpr.outputs.pr_number}}--geotribu-preprod.netlify.app/)
+            📰 La GeoRDP du **${{ env.DATE_FR_LONG }}** a été créée et attend vos contributions ✍️ !\
+            Créée par ${{ github.actor }} via GitHub Action.
+            - Voir la PR (GitHub): ${{ steps.cpr.outputs.pr_url }}
+            - Voir la preview (Netlify): https://preview-pullrequest-${{steps.cpr.outputs.pr_number}}--geotribu-preprod.netlify.app/
