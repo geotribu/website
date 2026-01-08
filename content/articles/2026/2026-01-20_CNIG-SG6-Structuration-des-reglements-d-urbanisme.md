@@ -82,7 +82,7 @@ Le niveau 1 traduit le règlement écrit en une arborescence de titres, sous-tit
 Le niveau 2, c'est l'horizon plein de promesses dont la première version est en cours de finalisation. Ici, on entre dans le dur : implémenter les principales règles d'urbanisme avec leurs paramètres chiffrés ou listés. Emprise au sol maximale ? 40% dans la zone UD. Hauteur maximale autorisée ? 9 mètres. Recul par rapport aux limites séparatives du terrain ? 5 mètres minimum.
 
 Le schéma global ci-dessus se complète de deux schémas sur le github SRU du CNIG qui illustrent [le modèle des conditions](https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/standard_niveau2/conditions27112025.png) et [celui des contraintes](https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/standard_niveau2/contraintes27112025.png).
-L'objectif de ce niveau 2 est l'exploitation automatisée par un système informatique : calcul  et modélisation 3D d’enveloppes constructibles théoriques, vérifications automatiques de conformité d’un projet, simulations d'impact d'une révision de PLU, …
+L'objectif de ce niveau 2 est l'exploitation automatisée par un système informatique : calcul et modélisation 3D d’enveloppes constructibles théoriques, vérifications automatiques de conformité d’un projet, simulations d'impact d'une révision de PLU, …
 
 ![Exemple d’instanciation d’une règle d'emprise au sol : du texte niveau 1 à la modélisation niveau 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cnig_sru/SRU3_instanciation_et_regle.webp){: .img-center loading=lazy}
 
