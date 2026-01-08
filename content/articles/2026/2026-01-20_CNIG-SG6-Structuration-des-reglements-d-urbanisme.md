@@ -34,11 +34,9 @@ tags:
 
 ## Introduction
 
-![logo CNIG](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/CNIG.png){: .img-thumbnail-left }
+Si vous avez déjà eu l'occasion de plonger dans un règlement de Plan Local d'Urbanisme (PLU)[^7] pour savoir si vous pouviez construire votre abri de jardin ou agrandir votre terrasse, vous savez que c'est souvent une expérience... disons... enrichissante. Entre les articles qui renvoient à d'autres articles, les prescriptions qui se contredisent selon les zones, et les PDF de 200 pages où chercher l'information relève de la chasse au trésor, on peut légitimement se demander s'il n'y aurait pas moyen de faire mieux. Spoiler : oui, et ça s'appelle la SRU.
 
-Si vous avez déjà eu l'occasion de plonger dans un règlement de Plan Local d'Urbanisme pour savoir si vous pouviez construire votre abri de jardin ou agrandir votre terrasse, vous savez que c'est souvent une expérience... disons... enrichissante. Entre les articles qui renvoient à d'autres articles, les prescriptions qui se contredisent selon les zones, et les PDF de 200 pages où chercher l'information relève de la chasse au trésor, on peut légitimement se demander s'il n'y aurait pas moyen de faire mieux. Spoiler : oui, et ça s'appelle la SRU.
-
-Lors des GéoDataDays 2025 à Marseille, nous avons animé un atelier pour présenter ce projet qui transforme progressivement l'écosystème de l'urbanisme numérique en France. Nicolas Kulpinski, géomaticien urbaniste de la Métropole Aix-Marseille-Provence, s’est joint à la démarche pour coanimer cet atelier. Retour sur cette initiative portée par le [sous-groupe 6 (SG6) du CNIG DDU](https://cnig.gouv.fr/structuration-des-reglements-d-urbanisme-a25890.html), qui mérite que l'on s'y attarde car elle pourrait bien changer la donne pour tous les acteurs du territoire.
+Lors des GéoDataDays 2025 à Marseille, nous avons animé un atelier pour présenter ce projet qui transforme progressivement l'écosystème de l'urbanisme numérique en France. Nicolas Kulpinski, géomaticien urbaniste de la Métropole Aix-Marseille-Provence, s’est joint à la démarche pour coanimer cet atelier. Retour sur cette initiative portée par le [sous-groupe 6 (SG6) du CNIG DDU](https://cnig.gouv.fr/structuration-des-reglements-d-urbanisme-a25890.html)[^1], qui mérite que l'on s'y attarde car elle pourrait bien changer la donne pour tous les acteurs du territoire.
 
 L'atelier et cet article qui vise à en diffuser le contenu ont été menés en tant que porte parole du SG6 du CNIG, après validation du principe par ses participants.
 
@@ -55,7 +53,7 @@ Le projet, entamé en 2018, s'attaque précisément à cette problématique. L'o
 
 ## Des cas d’usage opérationnels pressentis
 
-Les cas d'usage du SRU font saliver n'importe quel géomaticien territorial ou acteur de l'aménagement :
+Les cas d'usage de la SRU font saliver n'importe quel géomaticien territorial ou acteur de l'aménagement :
 
 - Pour le grand public, imaginez pouvoir cliquer sur votre parcelle et obtenir instantanément toutes les règles qui s'y appliquent, sans avoir à déchiffrer un PDF de 150 pages. Mieux encore, des chatbots capables de répondre à vos questions en langage naturel.
 - Pour les instructeurs ADS, c'est une révolution potentielle. Fini le jonglage entre le PDF du règlement, le SIG pour vérifier la zone, et les calculs manuels. Tout pourrait être automatisé ou semi-automatisé, avec des données enrichies directement à la parcelle.
@@ -80,7 +78,7 @@ Le niveau 1 traduit le règlement écrit en une arborescence de titres, sous-tit
 Le niveau 2, c'est l'horizon plein de promesses dont la première version est en cours de finalisation. Ici, on entre dans le dur : implémenter les principales règles d'urbanisme avec leurs paramètres chiffrés ou listés. Emprise au sol maximale ? 40% dans la zone UD. Hauteur maximale autorisée ? 9 mètres. Recul par rapport aux limites séparatives du terrain ? 5 mètres minimum.
 
 Le schéma global ci-dessus se complète de deux schémas sur le github SRU du CNIG qui illustrent [le modèle des conditions](https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/standard_niveau2/conditions27112025.png) et [celui des contraintes](https://github.com/cnigfr/structuration-reglement-urbanisme/blob/master/schemas/standard_niveau2/contraintes27112025.png).
-L'objectif de ce niveau 2 est l'exploitation automatisée par un système informatique : calcul et modélisation 3D d’enveloppes constructibles théoriques, vérifications automatiques de conformité d’un projet, simulations d'impact d'une révision de PLU, …
+L'objectif de ce niveau 2 est l'exploitation automatisée par un système informatique : calcul et modélisation 3D d’enveloppes constructibles théoriques, vérifications automatiques de conformité d’un projet, simulations d'impact d'une révision de PLU[^7], …
 
 ![Exemple d’instanciation d’une règle d'emprise au sol : du texte niveau 1 à la modélisation niveau 2](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cnig_sru/SRU3_instanciation_et_regle.webp){: .img-center loading=lazy}
 
@@ -90,61 +88,70 @@ Les deux niveaux sont fortement complémentaires : le niveau 1 est le passage ob
 
 ![Les différents acteurs impliqués dans la démarche de production et d'exploitation du SRU](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cnig_sru/SRU4_acteurs.webp){: .img-center loading=lazy}
 
-Un projet de cette ampleur ne se fait pas tout seul. Au cœur du projet SRU œuvre le sous-groupe 6 du GT CNIG DDU, composé de représentants des collectivités, de l'État (DHUP, IGN, Cerema), de bureaux d'études, d'éditeurs de logiciels et d'experts techniques. C'est ce collectif qui a construit la démarche depuis 2018, arbitré les choix de modélisation, et produit les spécifications techniques sous le pilotage de la DGALN du ministère de la transition écologique.
+![logo CNIG](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/CNIG.png){: .img-thumbnail-left }
+Un projet de cette ampleur ne se fait pas tout seul. Au cœur du projet SRU œuvre le sous-groupe 6 du GT CNIG DDU, composé de représentants des collectivités, de l'État (DHUP[^2], IGN[^3], Cerema), de bureaux d'études, d'éditeurs de logiciels et d'experts techniques. C'est ce collectif qui a construit la démarche depuis 2018 dans le cadre de [son mandat](https://cnig.gouv.fr/IMG/documents_wordpress/2020/11/200527_Mandat-SG6-du-GT-DDU_v1.3.pdf), arbitré les choix de modélisation, et produit les spécifications techniques sous le pilotage de la DGALN[^4] du ministère de la transition écologique.
 Sans ce travail collaboratif et cette gouvernance partagée, la SRU n'aurait jamais atteint son niveau de maturité actuel. Les membres du SG6 ont su dépasser les intérêts particuliers pour construire un standard véritablement utile et applicable.
 
 Dans la chaîne de valeur qui se dessine, chaque acteur joue son rôle :
 
-- Les collectivités restent maîtres d'ouvrage de leurs PLU. Leur adhésion au projet SRU sera déterminante pour son déploiement à grande échelle.
-- Les bureaux d'études en urbanisme rédigent les règlements de PLU pour le compte des collectivités. Ils pourront progressivement intégrer la SRU dans leurs processus de production.
-- Le Géoportail de l'Urbanisme (GPU) a vocation à devenir le lieu de dépôt des règlements écrits structurés, en complément des règlements graphiques qu'il héberge déjà.
-- Les éditeurs de logiciels ont un double rôle stratégique. En amont, développer des outils de traduction pour transformer les règlements PDF existants en SRU. En aval, intégrer la SRU dans leurs solutions SIG, ADS, ou grand public pour valoriser cette donnée structurée.
+- Les collectivités restent maîtres d'ouvrage de leurs PLU[^7]. Leur adhésion au projet SRU sera déterminante pour son déploiement à grande échelle.
+- Les bureaux d'études en urbanisme rédigent les règlements de PLU[^7] pour le compte des collectivités. Ils pourront progressivement intégrer la SRU dans leurs processus de production.
+- [Le Géoportail de l'Urbanisme (GPU)](https://www.geoportail-urbanisme.gouv.fr/) a vocation à devenir le lieu de dépôt des règlements écrits structurés, en complément des règlements graphiques qu'il héberge déjà.
+- Les éditeurs de logiciels ont un double rôle stratégique. En amont, développer des outils de traduction pour transformer les règlements PDF existants en SRU. En aval, intégrer la SRU dans leurs solutions SIG, d'instruction des dossiers ADS[^5], ou grand public pour valoriser cette donnée structurée.
 
 ## Démonstration par l'exemple
 
-Chez SOGEFI, nous avons développé un démonstrateur accessible en ligne sur [cnig-sru.sogefi.io](https://cnig-sru.sogefi.io/). À date, deux documents d'urbanisme y sont disponibles : Pechbonnieu (31) et Preignan (32).
+Chez SOGEFI, nous avons développé un démonstrateur accessible librement en ligne sur [cnig-sru.sogefi.io](https://cnig-sru.sogefi.io/). À date, deux documents d'urbanisme y sont disponibles : Pechbonnieu (31) et Preignan (32).
 
 ![Interface du POC SOGEFI : consultation contextuelle du règlement à la parcelle](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cnig_sru/SRU5_poc.png){: .img-center loading=lazy}
 
 Le principe est simple mais redoutablement efficace : vous cliquez sur une parcelle, et vous obtenez uniquement et exhaustivement les éléments de règlement applicables sur ce terrain. Plus besoin de naviguer dans un PDF en cherchant la bonne zone puis les bons articles. Tout est filtré et contextualisé.
 
 Une fonction de recherche par mots-clés permet également de filtrer les paragraphes contenant un terme spécifique. Vous cherchez tout ce qui concerne les "clôtures" ou les "piscines" ? Un coup de recherche et l’interface vous retourne les articles concernés.
-Cette preuve de concept (POC) démontre concrètement l'intérêt de la SRU et préfigure quelques usages qui pourront se développer une fois le standard largement adopté. Les retours des premiers utilisateurs test sont d'ailleurs très encourageants.
+Cette preuve de concept (POC[^6]) démontre concrètement l'intérêt de la SRU et préfigure quelques usages qui pourront se développer une fois le standard largement adopté. Les retours des premiers utilisateurs test sont d'ailleurs très encourageants.
 
 ## Les défis à relever
 
 ### Une modélisation limitée
 
 Premier constat lucide : si le niveau 1 de la SRU est parfaitement exhaustif par construction, un règlement écrit ne sera jamais modélisable à 100% dans le niveau 2. Il y aura toujours des formulations ambiguës, des exceptions, des cas particuliers qui résistent à la modélisation informatique.
-La perspective ultime n'est donc pas la l'exhaustivité absolue de la modélisation de la règle, mais une montée en charge progressive et itérative du niveau 2 sur les règles principales. Le standard SRU de niveau 2 s'enrichira donc progressivement des cas rencontrés suite à l'analyse menée au fur et à mesure par le sous-groupe 6 .
+La perspective ultime n'est donc pas la l'exhaustivité absolue de la modélisation de la règle, mais une montée en charge progressive et itérative du niveau 2 sur les règles principales. Le standard SRU de niveau 2 s'enrichira donc progressivement des cas rencontrés suite à l'analyse menée au fur et à mesure par le SG6 .
 
 ### Une dialectique commune
 
 La dialectique entre l'urbaniste et le géomaticien est au cœur du sujet. Ces deux métiers ont des logiques différentes. La SRU est précisément une piste pour opérer une synthèse entre ces approches et favoriser un dialogue constructif.
 
-L'écosystème a déjà relevé ce défi sur la Dématérialisation des Documents d'Urbanisme (DDU). Les outils et processus techniques et réglementaires ont mis près de 10 ans à se stabiliser et s’industrialiser (et encore des affinages constants continuent d’être mis en œuvre). Le chemin sera probablement similaire pour la SRU : progressif, itératif, avec des ajustements en cours de route mais un horizon clair.
+L'écosystème a déjà relevé ce défi sur la numérisation des PLU[^7]. Les outils et processus techniques et réglementaires ont mis près de 10 ans à se stabiliser et s’industrialiser (et encore des affinages constants continuent d’être mis en œuvre par le groupe de travail[^1]). Le chemin sera probablement similaire pour la SRU : progressif, itératif, avec des ajustements en cours de route mais un horizon clair.
 
 ### La production des règlements
 
-Même s'il ne s'agit pas de l'objectif de cette démarche de standardisation, il y a à terme l'éventualité d'orienter les pratiques des bureaux d’études et collectivités producteurs de la règle pour faciliter la mise en œuvre du standard. Pourquoi ne pas penser "SRU-compatible" dès la rédaction ? Cela impliquera évidemment pour les acteurs une acculturation, une vision claire de la valeur ajoutée, et du temps de maturation collective.
+Même s'il ne s'agit pas de l'objectif de cette démarche de standardisation il y a, à terme, l'éventualité d'orienter les pratiques des bureaux d’études et collectivités producteurs de la règle pour faciliter la mise en œuvre du standard. Pourquoi ne pas penser "SRU-compatible" dès la rédaction ? Cela impliquera évidemment pour les acteurs une acculturation, une vision claire de la valeur ajoutée, et du temps de maturation collective.
 
 ## Perspectives : une dynamique à construire collectivement
 
-Le sous-groupe 6 du CNIG définit actuellement sa feuille de route pour les deux prochaines années, sous le pilotage de la DGALN. Les axes principaux : finalisation du niveau 2, mobilisation de l'écosystème informatique pour développer un outil de traduction, mise en œuvre progressive du standard sur les futurs PLU, et multiplication des projets pilotes.
+Le SG6 définit actuellement sa feuille de route pour les deux prochaines années, sous le pilotage de la DGALN[^4]. Les axes principaux : finalisation du niveau 2, mobilisation de l'écosystème informatique pour développer un outil de traduction, mise en œuvre progressive du standard sur les futurs PLU[^7], et multiplication des projets pilotes.
 
-La question stratégique reste entière : comment provoquer une dynamique d'adoption comparable à celle de la DDU ? Cela passera par une combinaison de contraintes réglementaires, de développement technique d’outils de traduction performants, et surtout, de démonstrations convaincantes de la valeur ajoutée.
+La question stratégique reste entière : comment provoquer une dynamique d'adoption comparable à celle de la DDU[^1]? Cela passera par une combinaison de contraintes réglementaires, de développement technique d’outils de traduction performants, et surtout, de démonstrations convaincantes de la valeur ajoutée.
 
 Les premières preuves de concept montrent non seulement que c'est possible mais aussi que c’est utile ! Plusieurs acteurs publics et privés explorent actuellement les possibilités offertes par la SRU, chacun avec ses propres cas d'usage et contraintes métier. Les mois à venir seront déterminants pour transformer ces expérimentations en déploiement opérationnel à plus grande échelle.
 
 ## En conclusion
 
-Le projet SRU répond à des besoins réels : simplifier l'accès au droit pour les citoyens, optimiser l'instruction des autorisations d'urbanisme, outiller la sobriété foncière, et moderniser la fabrique de la ville.
+Le projet SRU répond à des besoins réels : simplifier l'accès au droit pour les citoyens, optimiser l'instruction des autorisations d'urbanisme[^5], outiller la sobriété foncière, et moderniser la fabrique de la ville.
 
-Le travail du sous-groupe 6 du CNIG DDU a permis d'atteindre un niveau de maturité où le standard devient applicable. Les premiers retours d'expérience sont encourageants et démontrent la faisabilité technique et l'intérêt opérationnel.
+Le travail du SG6 a permis d'atteindre un niveau de maturité où le standard devient applicable. Les premiers retours d'expérience sont encourageants et démontrent la faisabilité technique et l'intérêt opérationnel.
 Il reste maintenant à confirmer les expérimentations, développer l'écosystème logiciel et embarquer l'ensemble des acteurs pour faire de la SRU une réalité quotidienne dans nos pratiques professionnelles. Chez SOGEFI, nous sommes convaincus du potentiel de cette démarche et nous investissons pour en faire un levier de transformation de l'urbanisme numérique.
 
 La SRU n'est pas qu'une affaire de standard : c'est surtout une opportunité collective de repenser nos outils et nos pratiques pour tendre vers une gestion modernisée des règlements d’urbanisme.
 
+<!-- Footnotes reference -->
+[^1]: Le CNIG aborde plusieurs thématiques métier avec une vocation d'impliquer plusieurs acteurs de l'écosystème dans la production de standard. L'un des groupes de travail du CNIG s'attache à la Dématérialisation des Documents d'Urbanisme (DDU). Le SG6 constitue un de ses sous groupes de travail sur la thématique SRU donc 
+[^2]: DHUP :  La Direction Habitat, Urbanisme et Paysage est une direction de la DGALN
+[^3]: IGN : Institut national de l'information géographique et forestière, placé sous la tutelle du ministère de la Transisition écologique et de la Cohésion des territoires
+[^4]: DGALN : La Direction Général de l'Aménagement, du Logement et de la Nature est une partie du même ministère
+[^5]: ADS : Autorisation du Droit du Sol (permis de construire et autre), on parle aussi d'autorisation d'urbanisme
+[^6]: POC : Proof of concept pour les fan des anglicismes
+[^7]: PLU : Plan Local d'Urbanisme est le document qui règlemente géograhiquement le droit à construire
 ----
 
 <!-- geotribu:authors-block -->
