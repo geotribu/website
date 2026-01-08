@@ -144,6 +144,12 @@ Il reste maintenant à confirmer les expérimentations, développer l'écosystè
 
 La SRU n'est pas qu'une affaire de standard : c'est surtout une opportunité collective de repenser nos outils et nos pratiques pour tendre vers une gestion modernisée des règlements d’urbanisme.
 
+----
+
+<!-- geotribu:authors-block -->
+
+{% include "licenses/default.md" %}
+
 <!-- Footnotes reference -->
 [^1]: Le CNIG aborde plusieurs thématiques métier avec une vocation d'impliquer plusieurs acteurs de l'écosystème dans la production de standard. L'un des groupes de travail du CNIG s'attache à la Dématérialisation des Documents d'Urbanisme (DDU). Le SG6 constitue un de ses sous groupes de travail sur la thématique SRU donc
 [^2]: DHUP :  La Direction Habitat, Urbanisme et Paysage est une direction de la DGALN
@@ -152,8 +158,4 @@ La SRU n'est pas qu'une affaire de standard : c'est surtout une opportunité col
 [^5]: ADS : Autorisation du Droit du Sol (permis de construire et autre), on parle aussi d'autorisation d'urbanisme
 [^6]: POC : Proof of concept pour les fan des anglicismes
 [^7]: PLU : Plan Local d'Urbanisme est le document qui règlemente géograhiquement le droit à construire
-----
 
-<!-- geotribu:authors-block -->
-
-{% include "licenses/default.md" %}
