@@ -158,4 +158,3 @@ La SRU n'est pas qu'une affaire de standard : c'est surtout une opportunité col
 [^5]: ADS : Autorisation du Droit du Sol (permis de construire et autre), on parle aussi d'autorisation d'urbanisme
 [^6]: POC : Proof of concept pour les fan des anglicismes
 [^7]: PLU : Plan Local d'Urbanisme est le document qui règlemente géograhiquement le droit à construire
-
