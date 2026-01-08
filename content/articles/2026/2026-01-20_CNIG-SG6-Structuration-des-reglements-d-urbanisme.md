@@ -38,22 +38,20 @@ tags:
 
 Si vous avez déjà eu l'occasion de plonger dans un règlement de Plan Local d'Urbanisme pour savoir si vous pouviez construire votre abri de jardin ou agrandir votre terrasse, vous savez que c'est souvent une expérience... disons... enrichissante. Entre les articles qui renvoient à d'autres articles, les prescriptions qui se contredisent selon les zones, et les PDF de 200 pages où chercher l'information relève de la chasse au trésor, on peut légitimement se demander s'il n'y aurait pas moyen de faire mieux. Spoiler : oui, et ça s'appelle la SRU.
 
-Lors des GéoDataDays 2025 à Marseille, nous avons animé un atelier pour présenter ce projet qui transforme progressivement l'écosystème de l'urbanisme numérique en France. Nicolas Kulpinski, géomaticien urbaniste de la Métropole Aix-Marseille-Provence, s’est joint à la démarche pour coanimer cet atelier. Retour sur cette initiative portée par le [sous-groupe 6 du CNIG DDU](https://cnig.gouv.fr/structuration-des-reglements-d-urbanisme-a25890.html), qui mérite que l'on s'y attarde car elle pourrait bien changer la donne pour tous les acteurs du territoire.
+Lors des GéoDataDays 2025 à Marseille, nous avons animé un atelier pour présenter ce projet qui transforme progressivement l'écosystème de l'urbanisme numérique en France. Nicolas Kulpinski, géomaticien urbaniste de la Métropole Aix-Marseille-Provence, s’est joint à la démarche pour coanimer cet atelier. Retour sur cette initiative portée par le [sous-groupe 6 (SG6) du CNIG DDU](https://cnig.gouv.fr/structuration-des-reglements-d-urbanisme-a25890.html), qui mérite que l'on s'y attarde car elle pourrait bien changer la donne pour tous les acteurs du territoire.
 
-Retour sur l'atelier des GéoDataDays 2025 consacré à la Structuration du Règlement d'Urbanisme (SRU). L'atelier et cet article qui vise à en diffuser le contenu ont été menés en tant que porte parole du SG6
-du CNIG, après validation du principe par ses participants.
+L'atelier et cet article qui vise à en diffuser le contenu ont été menés en tant que porte parole du SG6 du CNIG, après validation du principe par ses participants.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Du PDF à la base de données : un saut quantique pour l'urbanisme
 
-Aujourd'hui, lorsque l'on parle de Dématérialisation des Documents d’Urbanisme (DDU), on parle essentiellement du standard CNIG PLU/CC qui régit la structure et le format des pièces composants les Plans Locaux d’Urbanisme et Cartes Communales. Ce standard précise notamment les attendus pour les éléments graphiques (zonage, prescriptions surfaciques et informations) dans des formats SIG exploitables. C'est déjà une belle avancée qui permet de visualiser et d'analyser les règles spatiales. Mais le règlement écrit, lui, reste confiné au format PDF. Certes, c'est mieux que le papier, mais on est loin d'une vraie exploitation informatique.
+Aujourd'hui, quand on parle de Dématérialisation des Documents d’Urbanisme (DDU), on parle essentiellement du [standard CNIG PLU/CC](https://cnig.gouv.fr/ressources-dematerialisation-documents-d-urbanisme-a2732.html) qui régit la structure et le format des pièces composants les Plans Locaux d’Urbanisme et Cartes Communales. Ce standard précise notamment les attendus pour les éléments graphiques (zonage, prescriptions surfaciques et informations) dans des formats SIG exploitables. C'est déjà une belle avancée qui permet de visualiser et d'analyser les règles spatiales. Mais le règlement écrit, lui, reste confiné au format PDF. Certes, c'est mieux que le papier, mais on est loin d'une vraie exploitation informatique.
 
 ![L'articulation entre le standard PLU/CC (règlement graphique), le standard SRU (règlement écrit) et la plateforme GPU](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cnig_sru/SRU1_articulation_plu-sru-gpu.webp){: .img-center loading=lazy}
 
-Le projet SRU (Structuration du Règlement d'Urbanisme), porté par le sous-groupe 6 du CNIG depuis 2018, s'attaque précisément à cette problématique. L'objectif ? Transformer le règlement écrit en base de données structurée et exploitable. Concrètement, il s'agit de passer d'un document textuel linéaire à une modélisation fine des règles d'urbanisme, avec leurs paramètres, leurs conditions d'application, et leurs relations.
-Le projet arrive aujourd'hui à une étape charnière avec une volonté claire d'aboutir fin 2025 à une première version du standard  qui sera ouverte aux commentaires de l’écosystème.  
+Le projet, entamé en 2018, s'attaque précisément à cette problématique. L'objectif ? Transformer le règlement écrit en base de données structurée et exploitable. Concrètement, il s'agit de passer d'un document textuel linéaire à une modélisation fine des règles d'urbanisme, avec leurs paramètres, leurs conditions d'application, et leurs relations. Le projet arrive aujourd'hui à une étape charnière avec une volonté claire d'aboutir début 2026 à une première version du standard qui sera ouverte aux commentaires de l’écosystème. 
 
 ## Des cas d’usage opérationnels pressentis
 
