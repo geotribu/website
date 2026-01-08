@@ -51,7 +51,7 @@ Aujourd'hui, quand on parle de Dématérialisation des Documents d’Urbanisme (
 
 ![L'articulation entre le standard PLU/CC (règlement graphique), le standard SRU (règlement écrit) et la plateforme GPU](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cnig_sru/SRU1_articulation_plu-sru-gpu.webp){: .img-center loading=lazy}
 
-Le projet, entamé en 2018, s'attaque précisément à cette problématique. L'objectif ? Transformer le règlement écrit en base de données structurée et exploitable. Concrètement, il s'agit de passer d'un document textuel linéaire à une modélisation fine des règles d'urbanisme, avec leurs paramètres, leurs conditions d'application, et leurs relations. Le projet arrive aujourd'hui à une étape charnière avec une volonté claire d'aboutir début 2026 à une première version du standard qui sera ouverte aux commentaires de l’écosystème. 
+Le projet, entamé en 2018, s'attaque précisément à cette problématique. L'objectif ? Transformer le règlement écrit en base de données structurée et exploitable. Concrètement, il s'agit de passer d'un document textuel linéaire à une modélisation fine des règles d'urbanisme, avec leurs paramètres, leurs conditions d'application, et leurs relations. Le projet arrive aujourd'hui à une étape charnière avec une volonté claire d'aboutir début 2026 à une première version du standard qui sera ouverte aux commentaires de l’écosystème.
 
 ## Des cas d’usage opérationnels pressentis
 
