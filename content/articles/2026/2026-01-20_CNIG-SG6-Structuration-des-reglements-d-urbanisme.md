@@ -145,7 +145,7 @@ Il reste maintenant à confirmer les expérimentations, développer l'écosystè
 La SRU n'est pas qu'une affaire de standard : c'est surtout une opportunité collective de repenser nos outils et nos pratiques pour tendre vers une gestion modernisée des règlements d’urbanisme.
 
 <!-- Footnotes reference -->
-[^1]: Le CNIG aborde plusieurs thématiques métier avec une vocation d'impliquer plusieurs acteurs de l'écosystème dans la production de standard. L'un des groupes de travail du CNIG s'attache à la Dématérialisation des Documents d'Urbanisme (DDU). Le SG6 constitue un de ses sous groupes de travail sur la thématique SRU donc 
+[^1]: Le CNIG aborde plusieurs thématiques métier avec une vocation d'impliquer plusieurs acteurs de l'écosystème dans la production de standard. L'un des groupes de travail du CNIG s'attache à la Dématérialisation des Documents d'Urbanisme (DDU). Le SG6 constitue un de ses sous groupes de travail sur la thématique SRU donc
 [^2]: DHUP :  La Direction Habitat, Urbanisme et Paysage est une direction de la DGALN
 [^3]: IGN : Institut national de l'information géographique et forestière, placé sous la tutelle du ministère de la Transisition écologique et de la Cohésion des territoires
 [^4]: DGALN : La Direction Général de l'Aménagement, du Logement et de la Nature est une partie du même ministère
