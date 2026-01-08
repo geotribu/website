@@ -48,7 +48,7 @@ du CNIG, après validation du principe par ses participants.
 
 ## Du PDF à la base de données : un saut quantique pour l'urbanisme
 
-Aujourd'hui, quand on parle de Dématérialisation des Documents d’Urbanisme (DDU), on parle essentiellement du standard CNIG PLU/CC qui régit la structure et le format des pièces composants les Plans Locaux d’Urbanisme et Cartes Communales. Ce standard précise notamment les attendus pour les éléments graphiques (zonage, prescriptions surfaciques et informations) dans des formats SIG exploitables. C'est déjà une belle avancée qui permet de visualiser et d'analyser les règles spatiales. Mais le règlement écrit, lui, reste confiné au format PDF. Certes, c'est mieux que le papier, mais on est loin d'une vraie exploitation informatique.
+Aujourd'hui, lorsque l'on parle de Dématérialisation des Documents d’Urbanisme (DDU), on parle essentiellement du standard CNIG PLU/CC qui régit la structure et le format des pièces composants les Plans Locaux d’Urbanisme et Cartes Communales. Ce standard précise notamment les attendus pour les éléments graphiques (zonage, prescriptions surfaciques et informations) dans des formats SIG exploitables. C'est déjà une belle avancée qui permet de visualiser et d'analyser les règles spatiales. Mais le règlement écrit, lui, reste confiné au format PDF. Certes, c'est mieux que le papier, mais on est loin d'une vraie exploitation informatique.
 
 ![L'articulation entre le standard PLU/CC (règlement graphique), le standard SRU (règlement écrit) et la plateforme GPU](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cnig_sru/SRU1_articulation_plu-sru-gpu.webp){: .img-center loading=lazy}
 
