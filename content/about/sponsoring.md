@@ -110,6 +110,16 @@ Cela se fait de plusieurs manières :
 
     [:octicons-arrow-right-24: La carte](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html) - [Les coulisses](../articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes.md)
 
+- :material-map-speech-balloon:{ .lg .middle } __QChat__
+
+    ----
+
+    Un [plugin QGIS](https://plugins.qgis.org/plugins/qchat/) pour tchatter avec les autres gens connectés, qui s'appuie sur [un backend](https://github.com/geotribu/gischat) dont nous faisons tourner une instance, chez [un hébergeur en Allemagne](https://contabo.com/en/).
+
+    [:octicons-arrow-right-24: Les dessous](../articles/2025/2025-09-08_refonte_qchat.md)
+
+    :money_with_wings: Montant : 13.70€ TTC/mois.
+
 </div>
 <!-- markdownlint-enable MD033 -->
 
