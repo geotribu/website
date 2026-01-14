@@ -110,7 +110,7 @@ Cela se fait de plusieurs manières :
 
     [:octicons-arrow-right-24: La carte](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html) - [Les coulisses](../articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes.md)
 
-- :material-map-speech-balloon:{ .lg .middle } __QChat__
+- :material-chat-processing:{ .lg .middle } __QChat__
 
     ----
 
