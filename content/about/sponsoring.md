@@ -90,17 +90,9 @@ Cela se fait de plusieurs manières :
 
     ----
 
-    Développement et mainteance d'un plugin pour Mkdocs permettant de générer des flux RSS qui servent pour alimenter automatiquement la newsletter et les lecteurs compatibles (Feedly, etc.).
+    Développement et maintenance d'un plugin pour Mkdocs permettant de générer des flux RSS qui servent pour alimenter automatiquement la newsletter et les lecteurs compatibles (Feedly, etc.).
 
     [:octicons-arrow-right-24: Documentation](https://guts.github.io/mkdocs-rss-plugin/)
-
-- :material-map-marker-down:{ .lg .middle } __ign2map__
-
-    ----
-
-    Une webmap pour faciliter le téléchargement des données ouvertes de l'IGN selon plusieurs échelles administrativres et par produit. Simple, efficace, open source et auto-maintenu.
-
-    [:octicons-arrow-right-24: La carte](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html) - [Les coulisses](../articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes.md)
 
 - :material-chat-processing:{ .lg .middle } __QChat__
 
@@ -111,6 +103,14 @@ Cela se fait de plusieurs manières :
     [:octicons-arrow-right-24: Les dessous](../articles/2025/2025-09-08_refonte_qchat.md)
 
     :money_with_wings: Montant : 13.70€ TTC/mois.
+
+- :material-map-marker-down:{ .lg .middle } __ign2map__
+
+    ----
+
+    Une webmap pour faciliter le téléchargement des données ouvertes de l'IGN selon plusieurs échelles administrativres et par produit. Simple, efficace, open source et auto-maintenu.
+
+    [:octicons-arrow-right-24: La carte](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html) - [Les coulisses](../articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes.md)
 
 </div>
 <!-- markdownlint-enable MD033 -->
