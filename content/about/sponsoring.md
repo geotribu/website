@@ -30,6 +30,8 @@ Si vous vous souhaitez nous aider à financer le site et à l'améliorer, nous a
 [Liberapay :fontawesome-solid-gift:](https://liberapay.com/Geotribu/){: .md-button }
 {: align=middle }
 
+Ainsi [qu'une page sur un site de _e-commerce_](https://www.redbubble.com/people/geotribu/shop) où vous pouvez nous soutenir via l'achat de _goodies_ Geotribu : stickers, pins, magnets, mugs et tasses, et quelques totebags !
+
 !!! note
     Geotribu n'étant adossée à aucune structure administrative, nous ne disposons pas d'un compte partagé. Les dons parviennent sur celui de [Julien](../team/julien-moura.md) qui se charge de les répartir et de régler les frais.
 
