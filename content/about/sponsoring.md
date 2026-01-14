@@ -54,14 +54,6 @@ Cela se fait de plusieurs manières :
 <!-- markdownlint-disable MD033 -->
 <div class="grid cards" markdown>
 
-- :material-material-design:{ .lg .middle } __Material for Mkdocs__
-
-    ----
-
-    Permet de soutenir le développement du thème utilisé et profiter des [fonctionnalités "Insiders"](https://squidfunk.github.io/mkdocs-material/insiders/#exclusive-features) (modèle [Sponsorware](https://github.com/sponsorware/docs#sponsorware)).  
-
-    :money_with_wings: Montant : 10$/mois (~120€/an) via [GitHub Sponsor](https://github.com/orgs/geotribu/sponsoring).
-
 - :material-dns:{ .lg .middle } __Nom de domaine__
 
     ----
@@ -119,6 +111,22 @@ Cela se fait de plusieurs manières :
     [:octicons-arrow-right-24: Les dessous](../articles/2025/2025-09-08_refonte_qchat.md)
 
     :money_with_wings: Montant : 13.70€ TTC/mois.
+
+</div>
+<!-- markdownlint-enable MD033 -->
+
+### Projets archivés et soutenus par le passé
+
+<!-- markdownlint-disable MD033 -->
+<div class="grid cards" markdown>
+
+- :material-material-design:{ .lg .middle } __Material for Mkdocs__
+
+    ----
+
+    Nous a permis de soutenir le développement du thème utilisé et profiter des [fonctionnalités "Insiders"](https://squidfunk.github.io/mkdocs-material/insiders/#exclusive-features) (modèle [Sponsorware](https://github.com/sponsorware/docs#sponsorware)). Depuis la mise en maintenance du projet _Material for Mkdocs_ et [la redirection de l'équipe de ce projet vers `zenzical`](https://squidfunk.github.io/mkdocs-material/blog/2025/11/05/zensical/), nous avons arrêté le soutien "Insiders", maintenant [ouvert à tout le monde](https://squidfunk.github.io/mkdocs-material/blog/2025/11/11/insiders-now-free-for-everyone/).
+
+    :money_with_wings: Montant : 10$/mois (~120€/an) via [GitHub Sponsor](https://github.com/orgs/geotribu/sponsoring), de 2020 à 2025.
 
 </div>
 <!-- markdownlint-enable MD033 -->
