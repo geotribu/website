@@ -258,13 +258,15 @@ Si tout est ok, on rallume le service nginx :
 sudo systemctrl start nginx
 ```
 
-Et voilà ! Nous avons maintenant un NextCloud fonctionnel :clap: !
+Et voilà ! Nous avons maintenant un NextCloud fonctionnel ! :tada:
 
 ![DiCaprio qui porte un toast avec une coupe de champagne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/mise_en_place_nextcloud_autoheberge/dicaprio_toast_champagne.webp){: .img-center loading=lazy }
 
 Vous pouvez vous rendre, dans votre navigateur web, sur l'URL de votre domaine pour la finalisation dans l'interface graphique - `cloud.lageowcestshow.xyz` dans notre cas.
 
 ![Écran d'accueil lors de la finalisation après la création d'un compte NextCloud](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/mise_en_place_nextcloud_autoheberge/nextcloud_init_welcome_apps.webp){: .img-center loading=lazy }
+
+Pour configurer les applications clientes (mobile, Desktop, etc.), ce sera la même URL à utiliser, il faudra aussi un compte utilisateur sur l'instance créée.
 
 <!-- Footnotes reference -->
 [^1]: _chépe_: format de données géo [_ancient_](https://dictionary.cambridge.org/dictionary/english/ancient), enterré au géocimetière ?
