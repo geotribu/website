@@ -11,8 +11,10 @@ description: Mise en place d'un serveur NextCloud pour stocker et partager ses f
 icon: fontawesome/solid/cloud
 image:
 tags:
+    - auto-hébergement
     - cloud
     - déploiement
+    - docker
     - infrastructure
     - linux
     - NextCloud
@@ -24,15 +26,15 @@ tags:
 
 ![Logo NextCloud](https://cdn.geotribu.fr/img/logos-icones/nextcloud.webp){: .img-thumbnail-left }
 
-Salut les _géomaniacs_ ! Aujourd'hui on va voir, au long de cet article, comment mettre en place un serveur NextCloud, pour stocker et partager des fichiers en toute sérénité, au poste comme en mobilité.
+Salut les _géomaniacs_ ! Aujourd'hui on va voir, au long de cet article, comment mettre en place un serveur NextCloud auto-hébergé, pour stocker et partager des fichiers en toute sérénité, au poste comme en mobilité.
 
 ![Interface web de NextCloud, qui montre les dossiers et fichiers stockés](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/mise_en_place_nextcloud_autoheberge/nextcloud_files.webp){: .img-center loading=lazy }
 
 ## Un énième article sur NextCloud :thinking: ?
 
-Alors, devant la multitude de docs et tutos qui traînent sur le net concernant l'installation de NextCloud, comme par exemple [la documentation officielle](https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html), ou encore [un billet sur le blog officiel](https://nextcloud.com/blog/how-to-install-the-nextcloud-all-in-one-on-linux/), ou encore des tutos sur les plateformes vidéos, et si le sujet n'est pas à proprement parler orienté géo, la question c'est pourquoi en faire un tuto ici dans Geotribu ? _Why_ ? _Warum_ ? ¿_Por qué_? _なぜですか_ !？
+Alors, devant la multitude de docs et tutos qui traînent sur le net concernant l'installation de NextCloud, comme par exemple [la documentation officielle](https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html), ou encore [un billet sur le blog officiel](https://nextcloud.com/blog/how-to-install-the-nextcloud-all-in-one-on-linux/), ou encore des tutos sur les plateformes vidéos, et si le sujet n'est pas à proprement parler orienté géo, la question c'est pourquoi en faire un tuto ici dans Geotribu ? _Why_ ? _Wieso_ ? ¿_Por qué_? _今すぐチーズをくれ_ !
 
-Premièrement, on a souvent besoin de partager des documents, par exemple des données géospatiales, style [geopackage](https://www.geopackage.org/), ou _chépe[^1]_, ou que sais-je encore. Ce que permet NextCloud, avec des partages de liens, de la synchronisation de fichiers sur le _File System_, etc. Et franchement ça marche bien, le bouzin est solide et stable. Et il y a aussi un système d’extensions, avec beaucoup qui sont sympa ! En plus, utiliser NextCloud permet de garder le contrôle sur ses données, contrairement aux clouds propriétaires... Bref, il s'agit d'un cloud qui mérite d'être mis en avant, pour un usage perso, ou pro, ou associatif, ou autre.
+Premièrement, on a souvent besoin de partager des documents, par exemple des données géospatiales, style [geopackage](https://www.geopackage.org/), ou _chépe[^1]_, ou que sais-je encore. Ce que permet NextCloud, avec des partages de liens, de la synchronisation de fichiers sur le _File System_, etc. Et franchement ça marche bien, le bouzin est solide et stable. Et il y a aussi un système d’extensions, avec beaucoup qui sont sympa ! En plus, utiliser NextCloud permet de garder le contrôle sur ses données... Bref, il s'agit d'un applicatif cloud qui mérite d'être mis en avant, pour un usage perso, ou pro, ou associatif, ou autre.
 
 Le sujet est également revenu sur la géotable de Geotribu récemment, après qu'on ait ~~bousculé~~ basculé [le serveur qui fournit le CDN des photos du site ainsi que les commentaires, vers un nouvel hébergeur](https://mapstodon.space/@geotribu/114929845299328320). On en profite pour dire un grand merci à [Georezo](https://georezo.net/), qui nous met un serveur à disposition en ce sens :heart: ! Alors peut-être qu'on mettra en place un NextCloud pour Geotribu à l'avenir, qui sait ?
 
@@ -43,7 +45,7 @@ De plus, _last but not least_, ici dans Geotribu on peut se permettre des blague
 
 Et enfin, cet article est un appel à la rédaction d'autres, pour aborder l'utilisation et l'intégration de NextCloud avec des outils SIG.
 
-Allez, fini le [non-sense](https://youtu.be/J6G9t6haDII?si=roO8rcYY30lxq4v6&t=362), c'est parti ! Pas d'inquiétude ceci dit, en espérant qu'il y ait plus de blabla que de lignes de commande au long de cet article...
+Allez, fini le [non-sense](https://youtu.be/J6G9t6haDII?si=roO8rcYY30lxq4v6&t=362), c'est parti ! Pas d'inquiétude ceci dit, on espère qu'il y aura plus de blabla que de lignes de commande au long de cet article...
 
 ## NextCloud ? Qu'est-ce ?
 
@@ -57,10 +59,10 @@ La "méthode d'installation officielle" mise en avant est la méthode maintenue 
 
 Oui on va passer par [docker](https://www.docker.com/) ici, une technologie qui a ses avantages et ses inconvénients, et à noter qu'il est aussi possible [de lancer une installation manuelle](https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html#prerequisites-for-manual-installation). Il existe aussi une manière d'installer NextCloud [via des paquets snap](https://doc.ubuntu-fr.org/snap).
 
-Ici on va lancer [la version via l'image _community_](https://hub.docker.com/_/nextcloud/), rien que pour se la raconter et le goût du risque, car la description stipule "_:warning::warning::warning: This image is maintained by community volunteers and designed for expert use_" :sunglasses:. Plus sérieusement, il s'agit d'une version maintenue par la communauté, et qui lance uniquement l'applicatif, nous permettant ainsi de choisir la base de données utilisée, ainsi que la configuration du [_reverse-proxy_](https://en.wikipedia.org/wiki/Reverse_proxy) nginx.
+Ici on va lancer [la version via l'image _community_](https://hub.docker.com/_/nextcloud/), rien que pour se la raconter et le goût du risque, car la description stipule "_:warning::warning::warning: This image is maintained by community volunteers and designed for expert use_" :sunglasses: (notez les 3 _warnings_). Plus sérieusement, il s'agit d'une version maintenue par la communauté, et qui lance uniquement l'applicatif, nous permettant ainsi de choisir la base de données utilisée, ainsi que la configuration du [_reverse-proxy_](https://en.wikipedia.org/wiki/Reverse_proxy) nginx.
 
 !!! warning "Ceintures et bretelles"
-    Vous comprendrez que ça part sur une installation d'un NextCloud _on-premise_, donc à administrer, maintenir, sauvegarder etc. Notez qu'il y a des fournisseurs et hébergeurs sur qui vous pouvez vous appuyer concernant ces joies :yum:. Si vous souhaitez mettre en production une instance installée à partir de cet article, c'est à vos rixes et périls ! _Geotribu Incorporated Cloud & Services Providing Associates Holding :copyright::registered:_ est content de partager comment installer un NextCloud, ceci dit une attention particulière est toujours nécessaire quand ça commence à stocker des données en production.
+    Vous comprendrez que ça part sur une installation d'un NextCloud auto-hébergé, donc à administrer, maintenir, sauvegarder etc. Notez qu'il y a des fournisseurs et hébergeurs sur qui vous pouvez vous appuyer concernant ces joies :yum:. Si vous souhaitez mettre en production une instance installée à partir de cet article, c'est à vos rixes et périls !
 
 !!! warning "Nombre d'utilisateurs max sur une instance _Community_"
     [Certaines discussions sur la plateforme communautaire de NextCloud](https://help.nextcloud.com/t/nextcloud-licensing/206830/2) semblent indiquer des nombres max de comptes d'utilisateur/rices. Personnellement, sur les instances que j'ai mises en place et utilisées, je n'ai jamais atteint ce plafond, alors je ne saurais vous dire.
@@ -79,7 +81,7 @@ Pour schématiser, on aura principalement besoin de 3 briques :
 
 [NextCloud est compatible avec 3 systèmes de bases de données](https://docs.nextcloud.com/server/stable/admin_manual/configuration_database/linux_database_configuration.html): PostgreSQL, MySQL et Oracle. _Ouh la la_, vraiment du mal à me décider sur lequel partir ! Et si on lançait un dé à 3 faces, histoire de se dédouaner de cette responsabilité et comme [il est possible de le faire avec la commande slash `/roll` dans QChat, le plugin de tchat dans QGIS #PlacementDeProduit ?](https://geotribu.github.io/qchat/usage/slash_commands.html#roll)
 
-Résultat : les dés ont parlé, c'est PostgreSQL ! Dites-donc, le hasard fait bien les choses...
+Résultat : les dés ont parlé, c'est PostgreSQL ! Dîtes-donc, le hasard fait bien les choses...
 
 Deux manières de la jouer maintenant :
 
