@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2026-01-08
+date: 2026-04-14
 description: Mise en place d'un serveur NextCloud pour stocker et partager ses fichiers en mode collaboratif, sur Desktop et Mobile.
 icon: fontawesome/solid/cloud
 image:
