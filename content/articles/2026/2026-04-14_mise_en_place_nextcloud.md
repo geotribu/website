@@ -212,7 +212,7 @@ server {
 !!! info "À noter que...²"
     À noter que cette conf redirige toutes les requêtes en HTTP plain vers le HTTPS. On s'assure ainsi que les communications avec le serveur NextCloud sont chiffrées.
 
-- On créé [un lien sympbolique](https://fr.wikipedia.org/wiki/Lien_symbolique) vers le répertoire `/etc/nginx/sites-enabled` :
+- On créé [un lien symbolique](https://fr.wikipedia.org/wiki/Lien_symbolique) vers le répertoire `/etc/nginx/sites-enabled` :
 
 ```sh
 sudo ln -s /etc/nginx/sites-available/nextcloud.conf /etc/nginx/sites-enabled/nextcloud.conf
