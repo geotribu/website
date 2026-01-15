@@ -260,7 +260,7 @@ sudo systemctrl start nginx
 
 Et voilà ! Nous avons maintenant un NextCloud fonctionnel ! :tada:
 
-![DiCaprio qui porte un toast avec une coupe de champagne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/mise_en_place_nextcloud_autoheberge/dicaprio_toast_champagne.webp){: .img-center loading=lazy }
+![DiCaprio qui porte un toast avec une coupe de champagne](https://cdn.geotribu.fr/img/articles-blog-rdp/divers/gif_cocktail_gatsby.webp){: .img-center loading=lazy }
 
 Vous pouvez vous rendre, dans votre navigateur web, sur l'URL de votre domaine pour la finalisation dans l'interface graphique - `cloud.lageowcestshow.xyz` dans notre cas.
 
