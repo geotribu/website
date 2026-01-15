@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Get source code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Prepare redirection
         run: |

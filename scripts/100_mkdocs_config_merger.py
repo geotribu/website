@@ -16,7 +16,7 @@ from pathlib import Path
 
 # 3rd party
 import yaml
-from mkdocs.utils import yaml_load
+from mkdocs.utils.yaml import yaml_load
 
 # -- GLOBALS --
 logging.basicConfig(level=logging.INFO)
