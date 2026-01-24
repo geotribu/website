@@ -34,7 +34,7 @@ C'est par ici 👉 XXXXXXXXXX 👈
 Modèle de news ici : https://github.com/geotribu/website/blob/master/content/rdp/templates/template_rdp_news.md
 ```
 
-Exemple de [post](https://twitter.com/geotribu/status/1364625815099613185) :
+Exemple de [post](https://mapstodon.space/@geotribu/115846860375931981) sur Mastodon :
 
 ![post geordp](https://cdn.geotribu.fr/img/internal/contribution/geotribu_rdp_tweet_incitation.png)
 

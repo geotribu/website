@@ -20,6 +20,10 @@ env:
 
 jobs:
   create_rdp:
+    permissions:
+      contents: write
+      pull-requests: write
+
     runs-on: ubuntu-latest
 
     if: ${{ github.repository_owner == 'geotribu' }}
@@ -60,11 +64,11 @@ jobs:
         uses: repo-sync/pull-request@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: rdp/${{ github.event.inputs.date }}
           destination_branch: "master"
           pr_allow_empty: false
+          pr_template: .github/PULL_REQUEST_TEMPLATE/RDP.md
           pr_title: "🗞 GeoRDP du ${{ env.DATE_FR_LONG }}"
-          pr_template: .github/PULL_REQUEST_TEMPLATE.md
+          source_branch: rdp/${{ github.event.inputs.date }}
 
       - name: Notification matrix
         id: matrix-notification
@@ -76,6 +80,6 @@ jobs:
           channel: ${{ secrets.MATRIX_CHANNEL }}
           message: |
             📰 La GeoRDP du **${{ env.DATE_FR_LONG }}** a été créée et attend vos contributions ✍️ !\
-            Créée par ${{ github.actor }} via GitHub Action.\
-            - Voir la PR (GitHub): ${{ steps.cpr.outputs.pr_url }}\
+            Créée par ${{ github.actor }} via GitHub Action.
+            - Voir la PR (GitHub): ${{ steps.cpr.outputs.pr_url }}
             - Voir la preview (Netlify): https://preview-pullrequest-${{steps.cpr.outputs.pr_number}}--geotribu-preprod.netlify.app/
