@@ -255,7 +255,7 @@ sudo nginx -t
 Si tout est ok, on rallume le service nginx :
 
 ```sh
-sudo systemctrl start nginx
+sudo systemctl start nginx
 ```
 
 Et voilà ! Nous avons maintenant un NextCloud fonctionnel ! :tada:
