@@ -40,7 +40,7 @@ Votre âme de géomaticien·ne en vous s’éveille, et se dit, ça doit pas êt
 
 Voilà c’est parti, peut-être êtes-vous inconscient·e ? Ou peut-être êtes-vous juste *étrange* ? Mais, vous vous partagez mutuellement vos localisations.
 
-Le reste de cet article est adaptation méthodologique tirée de faits réels (ou non).
+Cet article est adaptation méthodologique tirée de faits réels (ou non).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
