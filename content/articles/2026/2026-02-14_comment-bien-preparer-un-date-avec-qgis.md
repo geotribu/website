@@ -12,13 +12,13 @@ image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-d
 license: beerware
 robots: index, follow
 tags:
-    - QGIS
-    - OSM
-    - OpenStreetMap
-    - modélisation
     - modèles
-    - urbanisme
+    - modélisation
+    - OpenStreetMap
+    - OSM
     - parodie
+    - QGIS
+    - urbanisme
 ---
 
 # Comment bien préparer un date avec QGIS et l’analyse spatiale ?
@@ -33,12 +33,12 @@ Après une rude journée à *géomatiquer* vous ouvrez votre application de renc
 
 Et là, par on ne sait quel miracle vous avez un *match*. Encore plus incroyable, vous ne vous ghostez pas mutuellement, et finalement la discussion se passe bien.
 
-Arrive alors le moment fatidique où vous convenez d’un date. Avec la grande question:
-> "T’as envie d’aller où?”.
+Arrive alors le moment fatidique où vous convenez d’un date. Avec la grande question :
+> "T’as envie d’aller où ?”.
 
 Votre âme de géomaticien·ne en vous s’éveille, et se dit, ça doit pas être si compliqué de trouver tous les cafés entre vous et votre *crush*. Après tout, tout ce dont vous avez besoin pour ça c’est de deux coordonnées, le reste vous pouvez le déduire.
 
-Voilà c’est parti, peut-être êtes-vous inconscient·e?  Ou peut-être êtes-vous juste *étrange* ? Mais, vous vous partagez mutuellement vos localisations.
+Voilà c’est parti, peut-être êtes-vous inconscient·e ? Ou peut-être êtes-vous juste *étrange* ? Mais, vous vous partagez mutuellement vos localisations.
 
 Le reste de cet article est adaptation méthodologique tirée de faits réels (ou non).
 
@@ -89,7 +89,7 @@ Mais pas de panique ! Il ne nous reste qu’à couper (clipper) le résultat de 
 
 ![couper les résultats sur la zone de recherche](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/step_4.webp){: .img-center loading=lazy }
 
-Et voilà! Félicitations, vous avez trouvé tous les lieux idéaux pour vos dates. (ou alors une couche vide, s’il n’y a aucun bar ou café entre vous, navré)
+Et voilà ! Félicitations, vous avez trouvé tous les lieux idéaux pour vos dates. (ou alors une couche vide, s’il n’y a aucun bar ou café entre vous, navré)
 
 ## Partager vos fiertés
 
@@ -138,7 +138,7 @@ Si nous reprenons notre exemple de tout à l’heure et que l’on remplace le c
 
 Voilà, maintenant vous pouvez à la fois préparer vos dates, mais aussi et surtout quand on vous posera la question : “A quoi ça sert QGIS et la géomatique?” vous pouvez répondre à ça : ⬆️
 
-PS: L'auteur·ice se dédouane de toute responsabilité en cas d’échec de vos dates.
+PS : L'auteur·ice se dédouane de toute responsabilité en cas d’échec de vos dates.
 
 ----
 
