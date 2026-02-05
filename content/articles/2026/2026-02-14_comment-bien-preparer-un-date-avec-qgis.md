@@ -127,9 +127,8 @@ J’aurais pu arrêter cet article ici, mais à quoi bon faire un mémoire sur l
 
 Depuis le début, notre méthodologie utilise le chemin à vol d’oiseau représenté par une ligne droite comme pour construire le tampon qui sert de “zone de recherche”. Mais si la distance à vol d’oiseau est une bonne approximation, elle ne correspond à la réalité que dans le cas où vous rentrez de votre date sur un petit nuage. Y aller à pied est  en revanche une autre paire de manches.
 
-![Sangoku et Chichi sur le nuage magique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/goku_chichi_nuage.webp){: .img-center loading=lazy }
-
-*Sangoku et Chichi revenant d’un date circa 1985*
+![Sangoku et Chichi sur le nuage magique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/goku_chichi_nuage.webp){: .img-center loading=lazy }  
+*Sangoku et Chichi revenant d’un date circa 1985*  
 
 Si nous reprenons notre exemple de tout à l’heure et que l’on remplace le chemin à vol d’oiseau par le chemin le plus court à pied, nous obtenons alors un résultat très différent.  
 
