@@ -21,7 +21,3 @@ Aujourd'hui, je contribue principalement au projet QGIS où j'essaie d'améliore
 je milite également pour plus de diversité au sein de la géomatique et de l'opensource.
 
 <!-- --8<-- [end:author-sign-block] -->
-
-## Liste de mes articles
-
-- :material-heart-cog-outline: [Comment bien préparer un date avec QGIS et l’analyse spatiale ?](../articles/2026/2026-02-14_comment-bien-preparer-un-date-avec-qgis.md 'La structuration des règlements écrit d&#x27;urbanisme, un projet du CNIG qui va changer la donne pour l&#x27;écosystème de l&#x27;urbanimse numérique<br/><br/><i>Mots-clés : QGIS, OSM, OpenStreetMap, modélisation, urbanisme</i>') - *publié le 20 janvier 2026*
