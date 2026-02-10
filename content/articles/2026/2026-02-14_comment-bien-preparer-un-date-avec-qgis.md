@@ -75,7 +75,7 @@ Pour ce faire, nous allons partir des données d’OpenStreetMap, qui ont l’av
 
 QuickOSM est un plugin de QGIS qui permet de télécharger facilement des données depuis OpenStreetMap directement dans QGIS.
 
-OSM utilise un modèle de données “clé”=”valeur” appelé _tags_. A chaque objet dans OpenStreetMap sont associés plusieurs tags que l’on peut ensuite venir interroger comme base de données.  
+OSM utilise un modèle de données “clé”=”valeur” appelé *tags*. A chaque objet dans OpenStreetMap sont associés plusieurs tags que l’on peut ensuite venir interroger comme base de données.  
 
 Dans notre exemple, nous allons rechercher les cafés et les bars. Mais vous pouvez tout à fait customiser votre requête à cette étape, la liste des tags et clés de open street map est assez [ex](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcinema)[haus](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dswingerclub)[ti](https://wiki.openstreetmap.org/wiki/Tag:shop%3Derotic)[ve](https://wiki.openstreetmap.org/wiki/Key:lgbtq).
 
