@@ -8,7 +8,7 @@ social_accounts:
     bluesky:
     github:
     gitlab:
-    linkedin:
+    linkedin: patrick-gendre-87113a
     mail:
     mastodon:
         instance:

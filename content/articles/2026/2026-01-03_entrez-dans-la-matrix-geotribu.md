@@ -133,7 +133,35 @@ Nous avons créé 3 salons liés à Geotribu, regroupés dans un "espace" public
 
     ![Element - Rejoindre le salon Geotribu](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/element_landing_rejoindre.webp){: .img-center loading=lazy }
 
-## Applications mobile et bureau
+### Bonnes pratiques sur les salons Geotribu
+
+Vu qu'on commence à être nombreux·ses, voici quelques conseils pour bien fonctionner collectivement.
+
+#### Utiliser les fils de discussion
+
+Depuis [sa version 1.4](https://matrix.org/blog/2022/09/29/matrix-v-1-4-release/), Matrix supporte les fils de discussion (_threads_). C'est très pratique pour organiser les échanges et éviter de mélanger plusieurs sujets dans une même conversation, surtout dans un salon public comme celui de Geotribu.
+
+Pour créer un fil de discussion, il suffit de cliquer sur l'icône de fil de discussion au survol du message ou de faire un clic droit sur un message (ou un appui long sur mobile) et de sélectionner `Démarrer un fil de discussion` :
+
+![Bouton pour créer un nouveau fil de discussion au survol d'un message](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_thread_new_hover.webp){: loading=lazy width=300px }
+![Bouton pour créer un nouveau fil de discussion via le menu contextuel d'un message](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_thread_new_right-click.webp){: loading=lazy width=300px }
+{: align=middle }
+
+#### Se présenter et accueillir
+
+Lorsque vous rejoignez le salon Geotribu pour la première fois, n'hésitez pas à publier une courte présentation histoire que les autres membres puissent faire connaissance avec vous. Vous pouvez mentionner vos intérêts en géomatique, vos projets actuels ou tout autre sujet pertinent. Cela aide à créer un sentiment de communauté et facilite les échanges futurs.
+
+Réciproquement, lorsqu'une nouvelle personne fait l'effort de se présenter, c'est tout aussi sympa de prendre le temps de mettre une réaction voire un petit message de bienvenue dans le fil de discussion associé.
+
+Côté Geotribu, on ~~s'efforce~~ se fait plaisir avec les messages arc-en-ciel, confettis, feux d'artifice et autres commandes conviviales pour accueillir les nouveaux·elles arrivant·es :
+
+![Réponse de bienvenue avec la commande rainbow](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_welcome_rainbow.webp){: .img-center loading=lazy }
+
+----
+
+## Trucs et astuces pour se simplifier la vie
+
+### Applications mobile et bureau
 
 Je vous conseille d'installer une application mobile et/ou bureau pour suivre plus facilement les échanges. Les applications open source sont souvent allergiques aux notifications et mails de relance. Cela part d'un bon sentiment mais dans un monde numérique bruyant, on oublie vite ce qui est silencieux. Alors une fois l'onglet fermé...
 
@@ -145,6 +173,19 @@ Surtout que je trouve l'application mobile Element très bien faite et ergonomiq
 Vous pouvez la télécharger ici :
 
 [Télécharger l'application Element](https://element.io/download/){ .md-button }
+{: align=middle }
+
+### Gérer ses notifications
+
+Si vous préférez les notifications par mail, il est possible de les activer dans les paramètres de l'application Element, dans la section `Notifications` :
+
+![Paramètres de notifications Element](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_settings_notifications.webp){: .img-center loading=lazy }
+
+### Gérer son profil
+
+Parfois, Matrix peut sembler un peu déroutant pour gérer son profil utilisateur (avatar, mot de passe, etc.). Pour cela, le plus simple est d'utiliser le gestionnaire de compte web dédié :
+
+[:material-account-cog: Gérer son compte Matrix](https://account.matrix.org/account/){ .md-button }
 {: align=middle }
 
 ----
