@@ -40,14 +40,14 @@ Votre âme de géomaticien·ne en vous s’éveille, et se dit, ça doit pas êt
 
 Voilà c’est parti, peut-être êtes-vous inconscient·e ? Ou peut-être êtes-vous juste *étrange* ? Mais, vous vous partagez mutuellement vos localisations.
 
-Cet article est adaptation méthodologique tirée de faits réels (ou non).
+Cet article est une adaptation méthodologique tirée de faits réels (ou non).
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ## Méthodologie
 
-Pour cet article, nous allons prendre un exemple fictif, dans lequel vous habitez rue Ada Lovelace à Paris, et où votre *match* habite allée Marie Laurent.  Une chance inouie si j’ose dire, alors que [seulement 13% des rues ont un nom de femme en France](https://asmn.univ-nantes.fr/index.php?id=795).
+Pour cet article, nous allons prendre un exemple fictif, dans lequel vous habitez rue Ada Lovelace à Paris, et où votre *match* habite allée Marie Laurent. Une chance inouie si j’ose dire, alors que [seulement 13% des rues ont un nom de femme en France](https://asmn.univ-nantes.fr/index.php?id=795).
 
 Notre objectif final sera donc de trouver tous les cafés et bars entre ces deux adresses.
 
@@ -59,7 +59,7 @@ Pour commencer, dans QGIS, nous allons créer une couche ligne, pour y tracer un
 
 ### Changer de dimension pour mieux chercher
 
-ça n'a pas de sens de chercher des cafés ( c’est-à-dire des points) sur une ligne, cela pourrait cependant être plus intéressant concernant un polygone.  Nous allons donc utiliser un **tampon** (buffer) autour de notre ligne créée à l’étape précédente pour générer un polygone.
+Ça n'a pas de sens de chercher des cafés (c’est-à-dire des points) sur une ligne, cela pourrait cependant être plus intéressant concernant un polygone. Nous allons donc utiliser un **tampon** (buffer) autour de notre ligne créée à l’étape précédente pour générer un polygone.
 
 J’ai choisi par défaut de faire un tampon de 250 mètres autour de notre ligne, mais vous pouvez augmenter ou baisser cette valeur en fonction de la distance que vous êtes prêts à parcourir autour de la ligne initiale.
 
@@ -71,11 +71,11 @@ Ce tampon sera notre “zone de recherche” pour les cafés et bars.
 
 ### QuickOSM à la rescousse
 
-Pour ce faire,  nous allons partir des données d’OpenStreetMap, qui ont l’avantage d’être disponibles mondialement, et qui sont souvent plus complètes que les données institutionnelles grâce au modèle collaboratif d’OpenStreetMap, similaire à celui de Wikipedia. Et enfin la communauté QGIS à créer des outils pour exploiter et extraire les données d’OpenStreetMap, notamment le plugin QuickOSM.
+Pour ce faire, nous allons partir des données d’OpenStreetMap, qui ont l’avantage d’être disponibles mondialement, et qui sont souvent plus complètes que les données institutionnelles grâce au modèle collaboratif d’OpenStreetMap, similaire à celui de Wikipedia. Et enfin la communauté QGIS à créé des outils pour exploiter et extraire les données d’OpenStreetMap, notamment le plugin QuickOSM.
 
 QuickOSM est un plugin de QGIS qui permet de télécharger facilement des données depuis OpenStreetMap directement dans QGIS.
 
-OSM utilise un modèle de données “clé”=”valeur” appelé tags. A chaque objet dans OpenStreetMap sont associés plusieurs tags que l’on peut ensuite venir interroger comme base de données.  
+OSM utilise un modèle de données “clé”=”valeur” appelé _tags_. A chaque objet dans OpenStreetMap sont associés plusieurs tags que l’on peut ensuite venir interroger comme base de données.  
 
 Dans notre exemple, nous allons rechercher les cafés et les bars. Mais vous pouvez tout à fait customiser votre requête à cette étape, la liste des tags et clés de open street map est assez [ex](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcinema)[haus](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dswingerclub)[ti](https://wiki.openstreetmap.org/wiki/Tag:shop%3Derotic)[ve](https://wiki.openstreetmap.org/wiki/Key:lgbtq).
 
@@ -115,7 +115,7 @@ Mais une fois que vous avez fait votre modèle, il est directement intégré aux
 
 ### Mettre votre modèle en ligne sur le hub de QGIS
 
-Maintenant que vous avez fini votre modèle (ou votre [spaghetti](https://pbs.twimg.com/media/EYbqaEaUMAARbja?format=jpg&name=small)). Vous pouvez le partager au reste du monde. C’est d’ailleur le cas du modèle de cet article ! Vous pouvez dès à présent l’utiliser dans QGIS, grâce à l'extension [QGIS Hub Plugin](https://plugins.qgis.org/plugins/qgis_hub_plugin/) qui permet d'accéder directement dans QGIS aux ressources en ligne sur hub.qgis.org.
+Maintenant que vous avez fini votre modèle (ou votre [spaghetti](https://pbs.twimg.com/media/EYbqaEaUMAARbja?format=jpg&name=small)). Vous pouvez le partager au reste du monde. C’est d’ailleurs le cas du modèle de cet article ! Vous pouvez dès à présent l’utiliser dans QGIS, grâce à l'extension [QGIS Hub Plugin](https://plugins.qgis.org/plugins/qgis_hub_plugin/) qui permet d'accéder directement dans QGIS aux ressources en ligne sur <hub.qgis.org>.
 
 Je ne reviens pas sur le fonctionnement du ressources hub de QGIS, ni sur les autres méthodes existantes pour partager un modèle. Marc Ducobu en parle déjà mieux que moi sur géotribu [ici](https://geotribu.fr/articles/2025/2025-12-06_partage_modeles_qgis/).
 
