@@ -136,7 +136,7 @@ Si nous reprenons notre exemple de tout à l’heure et que l’on remplace le c
 
 ## Conclusion
 
-Voilà, maintenant vous pouvez à la fois préparer vos dates, mais aussi et surtout quand on vous posera la question : “A quoi ça sert QGIS et la géomatique?” vous pouvez répondre à ça : ⬆️
+Voilà, maintenant vous pouvez à la fois préparer vos dates, mais aussi et surtout quand on vous posera la question : “A quoi ça sert QGIS et la géomatique?” vous pouvez répondre à ça : :arrow_up:
 
 PS : L'auteur·ice se dédouane de toute responsabilité en cas d’échec de vos dates.
 
