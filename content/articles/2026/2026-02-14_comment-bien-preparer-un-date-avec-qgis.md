@@ -93,7 +93,7 @@ Et voilà ! Félicitations, vous avez trouvé tous les lieux idéaux pour vos da
 
 ## Partager vos fiertés
 
-Bon c’est bien gentil tout ça, mais s' il y a pas de second date ? Vous allez quand même pas refaire tous ces clics à chaque date ? C’est là qu’intervient le [modeleur graphique de QGIS](https://docs.qgis.org/3.40/fr/docs/user_manual/processing/modeler.html)
+Bon c’est bien gentil tout ça, mais s' il y a un second date ? Vous allez quand même pas refaire tous ces clics à chaque date ? C’est là qu’intervient le [modeleur graphique de QGIS](https://docs.qgis.org/3.40/fr/docs/user_manual/processing/modeler.html)
 
 ### Automatiser votre méthodologie
 
