@@ -1,5 +1,6 @@
 ---
 title: Comment bien préparer un date avec QGIS et l’analyse spatiale ?
+subtitle: L'amour est dans le précarté ?
 authors:
     - Valentin Buira
 categories:
@@ -47,7 +48,7 @@ Cet article est une adaptation méthodologique tirée de faits réels (ou non).
 
 ## Méthodologie
 
-Pour cet article, nous allons prendre un exemple fictif, dans lequel vous habitez rue Ada Lovelace à Paris, et où votre *match* habite allée Marie Laurent. Une chance inouie si j’ose dire, alors que [seulement 13% des rues ont un nom de femme en France](https://asmn.univ-nantes.fr/index.php?id=795).
+Pour cet article, nous allons prendre un exemple fictif, dans lequel vous habitez rue Ada Lovelace à Paris, et où votre *match* habite allée Marie Laurent. Une chance inouie si j’ose dire, si on prends l'exemple sur Nantes [seul 14% des rues ont un nom de femme en France](https://asmn.univ-nantes.fr/index.php?id=795), mais cette proportion se retourve ailleurs en France, même si Paris figure parmis les bons élèves.
 
 Notre objectif final sera donc de trouver tous les cafés et bars entre ces deux adresses.
 
@@ -81,9 +82,7 @@ Dans notre exemple, nous allons rechercher les cafés et les bars. Mais vous pou
 
 ![Interface de QuickOSM pour query les cafés et les bars](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/quickosm_annotation.webp){: .img-center loading=lazy width=85%}
 
-
-
-_Interface de QuickOSM pour requêter OpenStreetMap_
+*Interface de QuickOSM pour requêter OpenStreetMap*
 
 QuickOSM fonctionne sur l’étendue de la couche, c'est-à-dire le rectangle qui englobe notre tampon, et non sur la couche en elle-même. Nous nous retrouvons alors avec plus de points que ce nécessaire.
 
@@ -133,7 +132,7 @@ Depuis le début, notre méthodologie utilise le chemin à vol d’oiseau repré
 
 ![Sangoku et Chichi sur le nuage magique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/goku_chichi_nuage.webp){: .img-center loading=lazy }
 
-_Sangoku et Chichi revenant d’un date circa 1985_  
+*Sangoku et Chichi revenant d’un date circa 1985*  
 
 Si nous reprenons notre exemple de tout à l’heure et que l’on remplace le chemin à vol d’oiseau par le chemin le plus court à pied, nous obtenons alors un résultat très différent.  
 
