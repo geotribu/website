@@ -65,7 +65,7 @@ Pour commencer, dans QGIS, nous allons créer une couche ligne, pour y tracer un
 
 J’ai choisi par défaut de faire un tampon de 250 mètres autour de notre ligne, mais vous pouvez augmenter ou baisser cette valeur en fonction de la distance que vous êtes prêts à parcourir autour de la ligne initiale.
 
-Nous avons donc maintenant quelque chose qui ressemble désormais à ça :
+Nous avons donc maintenant quelque chose qui ressemble à ça :
 
 ![Etape 2 tampon(buffer) autour de la ligne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/step_2.webp){: .img-center loading=lazy width=85%}
 
@@ -73,7 +73,7 @@ Ce tampon sera notre "zone de recherche" pour les cafés et bars.
 
 ### QuickOSM à la rescousse
 
-Pour ce faire, nous allons partir des données d’OpenStreetMap, qui ont l’avantage d’être disponibles mondialement, et qui sont souvent plus complètes que les données institutionnelles grâce au modèle collaboratif d’OpenStreetMap, similaire à celui de Wikipedia. Et enfin la communauté QGIS à créé des outils pour exploiter et extraire les données d’OpenStreetMap, notamment le plugin QuickOSM.
+Pour ce faire, nous allons partir des données d’OpenStreetMap, qui ont l’avantage d’être disponibles mondialement, et qui sont souvent plus complètes que les données institutionnelles grâce au modèle collaboratif du projet, similaire à celui de Wikipedia. Et enfin la communauté QGIS à créé des outils pour exploiter et extraire les données d’OpenStreetMap, notamment [le plugin QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/).
 
 QuickOSM est un plugin de QGIS qui permet de télécharger facilement des données depuis OpenStreetMap directement dans QGIS.
 
@@ -97,7 +97,7 @@ Et voilà ! Félicitations, vous avez trouvé tous les lieux idéaux pour vos da
 
 ## Partager vos fiertés
 
-Bon c’est bien gentil tout ça, mais s' il y a un second date ? Vous allez quand même pas refaire tous ces clics à chaque date ? C’est là qu’intervient le [modeleur graphique de QGIS](https://docs.qgis.org/3.40/fr/docs/user_manual/processing/modeler.html)
+Bon c’est bien gentil tout ça, mais s' il y a un second date ? Vous allez quand même pas refaire tous ces clics à chaque date ? C’est là qu’intervient le [modeleur graphique de QGIS](https://docs.qgis.org/3.40/fr/docs/user_manual/processing/modeler.html).
 
 ### Automatiser votre méthodologie
 
@@ -140,7 +140,7 @@ Si nous reprenons notre exemple de tout à l’heure et que l’on remplace le c
 
 ## Conclusion
 
-Voilà, maintenant vous pouvez à la fois préparer vos dates, mais aussi et surtout quand on vous posera la question : “A quoi ça sert QGIS et la géomatique?” vous pouvez répondre à ça : :arrow_up:
+Voilà, maintenant vous pouvez à la fois préparer vos dates, mais aussi et surtout quand on vous posera la question : "A quoi ça sert QGIS et la géomatique ?" vous pouvez répondre ça : :arrow_up:
 
 PS : L'auteur·ice se dédouane de toute responsabilité en cas d’échec de vos dates.
 
