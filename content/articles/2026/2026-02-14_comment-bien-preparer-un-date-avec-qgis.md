@@ -49,7 +49,7 @@ Cet article est une adaptation méthodologique tirée de faits réels (ou non).
 
 ## Méthodologie
 
-Pour cet article, nous allons prendre un exemple fictif, dans lequel vous habitez rue Ada Lovelace à Paris, et où votre *match* habite allée Marie Laurent. Une chance inouie si j’ose dire, si on prends l'exemple sur Nantes [seul 14% des rues ont un nom de femme en France](https://asmn.univ-nantes.fr/index.php?id=795), mais cette proportion se retrouve ailleurs en France, même si Paris figure parmi les bons élèves.
+Pour cet article, nous allons prendre un exemple fictif, dans lequel vous habitez rue Ada Lovelace à Paris, et où votre *match* habite allée Marie Laurent. Une chance inouie si j’ose dire, si on prends l'exemple sur Nantes [seul 14% des rues portent un nom de femme](https://asmn.univ-nantes.fr/index.php?id=795), mais cette proportion se retrouve ailleurs en France, même si Paris figure parmi les bons élèves.
 
 Notre objectif final sera donc de trouver tous les cafés et bars entre ces deux adresses.
 
