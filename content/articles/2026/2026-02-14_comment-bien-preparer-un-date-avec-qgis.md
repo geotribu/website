@@ -113,7 +113,7 @@ Ensuite, j’ai dit dans mon paragraphe précédent que les géotraitements sont
 
 De plus, si les traitements sont  disponibles, d'autres actions manuelles de QGIS sont plus compliquées. Par exemple, créer une couche avec une seule entité s’avère étonnamment compliqué dans le modeleur, et a requis une ligne de SQL.
 
-![le modele finale](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/plan_a_date_final.webp){: .img-center loading=lazy width=85%}
+![le modèle final](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/plan_a_date_final.webp){: .img-center loading=lazy width=85%}
 
 Mais une fois que vous avez fait votre modèle, il est directement intégré aux autres géotraitements de la boîte à outils, et vous pouvez l’utiliser comme n’importe quel géotraitement.
 
