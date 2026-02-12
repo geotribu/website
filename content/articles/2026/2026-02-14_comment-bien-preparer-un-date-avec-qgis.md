@@ -55,7 +55,7 @@ Notre objectif final sera donc de trouver tous les cafés et bars entre ces deux
 
 ### Connect the dots
 
-Pour commencer, dans QGIS, nous allons créer une couche ligne, pour y tracer une ligne servant à relier vos deux positions.  Dans notre exemple parisien nous obtenons quelque chose comme ça :
+Pour commencer, dans QGIS, nous allons créer une couche ligne, pour y tracer une ligne servant à relier vos deux positions. Dans notre exemple parisien nous obtenons quelque chose comme ça :
 
 ![étape 1 créer une ligne entre vos positions](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/step_1.webp){: .img-center loading=lazy  width=85% }
 
