@@ -82,7 +82,7 @@ Dans notre exemple, nous allons rechercher les cafés et les bars. Mais vous pou
 
 ![Interface de QuickOSM pour query les cafés et les bars](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/quickosm_annotation.webp){: .img-center loading=lazy width=85%}
 
-*Interface de QuickOSM pour requêter OpenStreetMap*
+*Interface de QuickOSM pour requêter OpenStreetMap*  
 
 QuickOSM fonctionne sur l’étendue de la couche, c'est-à-dire le rectangle qui englobe notre tampon, et non sur la couche en elle-même. Nous nous retrouvons alors avec plus de points que ce nécessaire.
 
