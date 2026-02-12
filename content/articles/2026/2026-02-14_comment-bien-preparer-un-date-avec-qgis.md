@@ -35,6 +35,7 @@ Après une rude journée à *géomatiquer* vous ouvrez votre application de renc
 Et là, par on ne sait quel miracle vous avez un *match*. Encore plus incroyable, vous ne vous ghostez pas mutuellement, et finalement la discussion se passe bien.
 
 Arrive alors le moment fatidique où vous convenez d’un date. Avec la grande question :
+
 > "T’as envie d’aller où ?”.
 
 Votre âme de géomaticien·ne en vous s’éveille, et se dit, ça doit pas être si compliqué de trouver tous les cafés entre vous et votre *crush*. Après tout, tout ce dont vous avez besoin pour ça c’est de deux coordonnées, le reste vous pouvez le déduire.
