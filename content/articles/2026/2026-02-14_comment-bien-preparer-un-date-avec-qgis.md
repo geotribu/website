@@ -16,7 +16,6 @@ tags:
     - modèles
     - modélisation
     - OpenStreetMap
-    - OSM
     - parodie
     - QGIS
     - urbanisme
