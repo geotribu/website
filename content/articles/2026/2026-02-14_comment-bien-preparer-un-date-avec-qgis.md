@@ -18,6 +18,7 @@ tags:
     - OpenStreetMap
     - parodie
     - QGIS
+    - QuickOSM
     - urbanisme
 ---
 
