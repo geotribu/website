@@ -5,7 +5,7 @@ categories:
 social_accounts:
     linkedin: valentin-buira-56a504206/
     mail: valentin.buira@gmail.com
-    github: https://github.com/ValentinBuira/
+    github: ValentinBuira
 ---
 
 # Valentin Buira
