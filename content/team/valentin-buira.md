@@ -3,7 +3,7 @@ title: Valentin Buira
 categories:
     - contributeur
 social_accounts:
-    linkedin: valentin-buira-56a504206/
+    linkedin: valentin-buira-56a504206
     mail: valentin.buira@gmail.com
     github: ValentinBuira
 ---
