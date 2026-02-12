@@ -107,7 +107,7 @@ Et le mieux dans tout ça ? C’est que vous avez déjà fait la moitié du boul
 
 **Et l’autre moitié restante ?**
 
-Il vous faut identifier les éléments qui serviront d'entrées à votre modèle. Ici ce sont votre position et la position de votre *crush* qui serviront pour créer la ligne entre vos positions  dans notre méthodologie.
+Il vous faut identifier les éléments qui serviront d'entrées à votre modèle. Ici ce sont votre position et la position de votre *crush* qui serviront pour créer la ligne entre vos positions dans notre méthodologie.
 
 Ensuite, j’ai dit dans mon paragraphe précédent que les géotraitements sont les mêmes que dans QGIS, et c’est vrai pour la majorité des cas, car les développeur·euses les ont codés pour. Mais on a parfois des mauvaises surprises, et c’est le cas ici pour les traitements de QuickOSM qui ne sont pas exactement les mêmes. Quelques modifications ont donc été nécessaires pour les faire marcher dans le modeleur.
 
