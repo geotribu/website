@@ -69,7 +69,7 @@ Nous avons donc maintenant quelque chose qui ressemble désormais à ça :
 
 ![Etape 2 tampon(buffer) autour de la ligne](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/step_2.webp){: .img-center loading=lazy width=85%}
 
-Ce tampon sera notre “zone de recherche” pour les cafés et bars.
+Ce tampon sera notre "zone de recherche" pour les cafés et bars.
 
 ### QuickOSM à la rescousse
 
@@ -77,7 +77,7 @@ Pour ce faire, nous allons partir des données d’OpenStreetMap, qui ont l’av
 
 QuickOSM est un plugin de QGIS qui permet de télécharger facilement des données depuis OpenStreetMap directement dans QGIS.
 
-OSM utilise un modèle de données “clé”=”valeur” appelé *tags*. A chaque objet dans OpenStreetMap sont associés plusieurs tags que l’on peut ensuite venir interroger comme base de données.  
+OSM utilise un modèle de données "clé"="valeur" appelé *tags*. À chaque objet dans OpenStreetMap sont associés plusieurs *tags* que l’on peut ensuite venir interroger comme base de données.  
 
 Dans notre exemple, nous allons rechercher les cafés et les bars. Mais vous pouvez tout à fait customiser votre requête à cette étape, la liste des tags et clés de open street map est assez [ex](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcinema)[haus](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dswingerclub)[ti](https://wiki.openstreetmap.org/wiki/Tag:shop%3Derotic)[ve](https://wiki.openstreetmap.org/wiki/Key:lgbtq).
 
