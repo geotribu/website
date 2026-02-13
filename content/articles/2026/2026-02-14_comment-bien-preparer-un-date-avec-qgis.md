@@ -121,7 +121,7 @@ Mais une fois que vous avez fait votre modèle, il est directement intégré aux
 
 Maintenant que vous avez fini votre modèle (ou votre [spaghetti](https://pbs.twimg.com/media/EYbqaEaUMAARbja?format=jpg&name=small)). Vous pouvez le partager au reste du monde. C’est d’ailleurs le cas du modèle de cet article ! Vous pouvez dès à présent l’utiliser dans QGIS, grâce à l'extension [QGIS Hub Plugin](https://plugins.qgis.org/plugins/qgis_hub_plugin/) qui permet d'accéder directement dans QGIS aux ressources en ligne sur <https://hub.qgis.org>.
 
-Je ne reviens pas sur le fonctionnement du ressources hub de QGIS, ni sur les autres méthodes existantes pour partager un modèle. Marc Ducobu en parle déjà mieux que moi sur géotribu [ici](https://geotribu.fr/articles/2025/2025-12-06_partage_modeles_qgis/).
+Je ne reviens pas sur le fonctionnement du ressources hub de QGIS, ni sur les autres méthodes existantes pour partager un modèle. Marc Ducobu en parle déjà mieux que moi sur Geotribu [ici](https://geotribu.fr/articles/2025/2025-12-06_partage_modeles_qgis/).
 
 ![modele "plan a date" de l'article dans le model hub de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/model_plan_a_date_in_qgis_hub_plugin.webp){: .img-center loading=lazy width=75%}
 
@@ -132,8 +132,9 @@ J’aurais pu arrêter cet article ici, mais à quoi bon faire un mémoire sur l
 Depuis le début, notre méthodologie utilise le chemin à vol d’oiseau représenté par une ligne droite comme pour construire le tampon qui sert de “zone de recherche”. Mais si la distance à vol d’oiseau est une bonne approximation, elle ne correspond à la réalité que dans le cas où vous rentrez de votre date sur un petit nuage. Y aller à pied est  en revanche une autre paire de manches.
 
 ![Sangoku et Chichi sur le nuage magique](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/goku_chichi_nuage.webp){: .img-center loading=lazy }
-*Sangoku et Chichi revenant d’un date circa 1985*  
+*Sangoku et Chichi revenant d’un date circa 1985*
 {: align=middle }
+
 Si nous reprenons notre exemple de tout à l’heure et que l’on remplace le chemin à vol d’oiseau par le chemin le plus court à pied, nous obtenons alors un résultat très différent.  
 
 ![comparaison entre la distance à voil d'oiseau et à pieds](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/piste_amelioration.webp){: .img-center loading=lazy width=85%}
