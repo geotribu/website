@@ -121,7 +121,7 @@ Mais une fois que vous avez fait votre modèle, il est directement intégré aux
 
 Maintenant que vous avez fini votre modèle (ou votre [spaghetti](https://pbs.twimg.com/media/EYbqaEaUMAARbja?format=jpg&name=small)). Vous pouvez le partager au reste du monde. C’est d’ailleurs le cas du modèle de cet article ! Vous pouvez dès à présent l’utiliser dans QGIS, grâce à l'extension [QGIS Hub Plugin](https://plugins.qgis.org/plugins/qgis_hub_plugin/) qui permet d'accéder directement dans QGIS aux ressources en ligne sur <https://hub.qgis.org>.
 
-Je ne reviens pas sur le fonctionnement du ressources hub de QGIS, ni sur les autres méthodes existantes pour partager un modèle. Marc Ducobu en parle déjà mieux que moi sur géotribu [ici](https://geotribu.fr/articles/2025/2025-12-06_partage_modeles_qgis/).
+Je ne reviens pas sur le fonctionnement du ressources hub de QGIS, ni sur les autres méthodes existantes pour partager un modèle. Marc Ducobu en parle déjà mieux que moi sur Geotribu [ici](https://geotribu.fr/articles/2025/2025-12-06_partage_modeles_qgis/).
 
 ![modele "plan a date" de l'article dans le model hub de QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/preparer-un-date-avec-qgis/model_plan_a_date_in_qgis_hub_plugin.webp){: .img-center loading=lazy width=75%}
 
