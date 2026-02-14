@@ -30,6 +30,8 @@ Si vous vous souhaitez nous aider à financer le site et à l'améliorer, nous a
 [Liberapay :fontawesome-solid-gift:](https://liberapay.com/Geotribu/){: .md-button }
 {: align=middle }
 
+Ainsi [qu'une page sur un site de _e-commerce_](https://www.redbubble.com/people/geotribu/shop) où vous pouvez nous soutenir via l'achat de _goodies_ Geotribu : stickers, pins, magnets, mugs et tasses, et quelques totebags !
+
 !!! note
     Geotribu n'étant adossée à aucune structure administrative, nous ne disposons pas d'un compte partagé. Les dons parviennent sur celui de [Julien](../team/julien-moura.md) qui se charge de les répartir et de régler les frais.
 
@@ -51,14 +53,6 @@ Cela se fait de plusieurs manières :
 
 <!-- markdownlint-disable MD033 -->
 <div class="grid cards" markdown>
-
-- :material-material-design:{ .lg .middle } __Material for Mkdocs__
-
-    ----
-
-    Permet de soutenir le développement du thème utilisé et profiter des [fonctionnalités "Insiders"](https://squidfunk.github.io/mkdocs-material/insiders/#exclusive-features) (modèle [Sponsorware](https://github.com/sponsorware/docs#sponsorware)).  
-
-    :money_with_wings: Montant : 10$/mois (~120€/an) via [GitHub Sponsor](https://github.com/orgs/geotribu/sponsoring).
 
 - :material-dns:{ .lg .middle } __Nom de domaine__
 
@@ -96,9 +90,19 @@ Cela se fait de plusieurs manières :
 
     ----
 
-    Développement et mainteance d'un plugin pour Mkdocs permettant de générer des flux RSS qui servent pour alimenter automatiquement la newsletter et les lecteurs compatibles (Feedly, etc.).
+    Développement et maintenance d'un plugin pour Mkdocs permettant de générer des flux RSS qui servent pour alimenter automatiquement la newsletter et les lecteurs compatibles (Feedly, etc.).
 
     [:octicons-arrow-right-24: Documentation](https://guts.github.io/mkdocs-rss-plugin/)
+
+- :material-chat-processing:{ .lg .middle } __QChat__
+
+    ----
+
+    Un [plugin QGIS](https://plugins.qgis.org/plugins/qchat/) pour tchatter avec les autres gens connectés, qui s'appuie sur [un backend](https://github.com/geotribu/gischat) dont nous faisons tourner une instance, chez [un hébergeur en Allemagne](https://contabo.com/en/).
+
+    [:octicons-arrow-right-24: Les dessous](../articles/2025/2025-09-08_refonte_qchat.md)
+
+    :money_with_wings: Montant : 13.70€ TTC/mois.
 
 - :material-map-marker-down:{ .lg .middle } __ign2map__
 
@@ -107,6 +111,22 @@ Cela se fait de plusieurs manières :
     Une webmap pour faciliter le téléchargement des données ouvertes de l'IGN selon plusieurs échelles administrativres et par produit. Simple, efficace, open source et auto-maintenu.
 
     [:octicons-arrow-right-24: La carte](https://geotribu.github.io/ign-fr-opendata-download-ui/index.html) - [Les coulisses](../articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes.md)
+
+</div>
+<!-- markdownlint-enable MD033 -->
+
+### Projets archivés et soutenus par le passé
+
+<!-- markdownlint-disable MD033 -->
+<div class="grid cards" markdown>
+
+- :material-material-design:{ .lg .middle } __Material for Mkdocs__
+
+    ----
+
+    Nous a permis de soutenir le développement du thème utilisé et profiter des [fonctionnalités "Insiders"](https://squidfunk.github.io/mkdocs-material/insiders/#exclusive-features) (modèle [Sponsorware](https://github.com/sponsorware/docs#sponsorware)). Depuis la mise en maintenance du projet _Material for Mkdocs_ et [la redirection de l'équipe de ce projet vers `zenzical`](https://squidfunk.github.io/mkdocs-material/blog/2025/11/05/zensical/), nous avons arrêté le soutien "Insiders", maintenant [ouvert à tout le monde](https://squidfunk.github.io/mkdocs-material/blog/2025/11/11/insiders-now-free-for-everyone/).
+
+    :money_with_wings: Montant : 10$/mois (~120€/an) via [GitHub Sponsor](https://github.com/orgs/geotribu/sponsoring), de 2020 à 2025.
 
 </div>
 <!-- markdownlint-enable MD033 -->
