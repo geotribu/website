@@ -110,12 +110,10 @@ def on_page_markdown(markdown: str, page: Page, config: MkDocsConfig, **kwargs) 
     )
     share_url_reddit = f"{share_url_base_reddit}?title={page_title}%20par%20{page_authors}&url={page_url}"
 
-    return markdown + dedent(
-        f"""\n{SHARE_MARKER}\n\nPartager sur :
+    return markdown + dedent(f"""\n{SHARE_MARKER}\n\nPartager sur :
         [:fontawesome-brands-bluesky:]({share_url_bluesky} "Partager sur BlueSky"){{: rel="noopener" }}
         [:fontawesome-brands-linkedin:]({share_url_linkedin} "Partager sur LinkedIn"){{: rel="noopener" }}
         [:fontawesome-brands-mastodon:]({share_url_mastodon} "Partager sur Mastodon"){{: rel="noopener" }}
         [:fontawesome-brands-reddit:]({share_url_reddit} "Partager sur Reddit"){{: rel="noopener" }}
         {{: align=middle }}
-    """
-    )
+    """)
