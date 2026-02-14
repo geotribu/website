@@ -169,7 +169,7 @@ Abordons maintenant les services déclarés, dans le [fichier `docker-compose`](
 
 <!-- markdownlint-enable MD046 -->
 
-- La 1e partie des `ports` du service `app` représente le port interne sur lequel NextCloud écoutera, à réutiliser plus tard dans la conf nginx.
+- Le premier nombre avant le `:` des ports du service `app` représente le port interne sur lequel NextCloud écoutera, à réutiliser plus tard dans la conf nginx.
 
 - Dans la clé `volumes` du service `app`, mettre le chemin du dossier qui hébergera tous les fichiers stockés sur l'instance.
 
@@ -230,33 +230,14 @@ S'il y a des erreurs, on avise, on corrige. Il est possible qu'un fichier `defau
 
 Maintenant, pour naviguer et synchroniser avec le NextCloud en utilisant du HTTPS, il nous faut des certificats TLS/SSL.
 
-Pour cela, on utilise [Let's Encrypt](https://letsencrypt.org/), qui nous fournit ça gracieusement, et plus particulièrement [l'utilitaire `certbot` en mode _standalone_](https://certbot.eff.org/), ce qui nécessite d'éteindre nginx en amont.
+Pour cela, on utilise [Let's Encrypt](https://letsencrypt.org/), qui nous fournit ça gracieusement, [et son utilitaire `certbot`](https://certbot.eff.org/) qui propose deux manières de récupérer les certificats :
 
-- Arrêter le service nginx :
+- en mode _standalone_, ce qui nécessite d'éteindre nginx en amont via `sudo systemctl stop nginx`, puis avec `sudo certbot certonly --standalone -d cloud.lageowcestshow.xyz`. Ne pas oublier de vérifier le bonne config via `sudo nginx -t`, puis rallumer le service nginx via `sudo systemctl start nginx`.
 
-```sh
-sudo systemctl stop nginx
-```
+- avec le plugin _nginx_, qui s'installe via `sudo apt install python-certbot-nginx`, et qui s'utilise avec `sudo certbot certonly --nginx -d cloud.lageowcestshow.xyz`
 
-- Récupérer un certificat pour notre domaine - le DNS doit être configuré correctement et pointer sur notre machine hôte :
-
-```sh
-sudo certbot certonly --standalone -d cloud.lageowcestshow.xyz
-```
-
-Si tout va bien, tant mieux : vous verrez un message de confirmation dans le terminal.
-
-- On vérifie que nginx est correctement configuré, notamment concernant la configuration des chemins des certificats récupérés à l'étape précédente :
-
-```sh
-sudo nginx -t
-```
-
-Si tout est ok, on rallume le service nginx :
-
-```sh
-sudo systemctl start nginx
-```
+!!! info
+  Récupérer un certificat via `cerbot` pour notre domaine nécessite que le DNS soit configuré correctement et pointe sur notre machine hôte, avant de lancer les commandes.
 
 Et voilà ! Nous avons maintenant un NextCloud fonctionnel ! :tada:
 
