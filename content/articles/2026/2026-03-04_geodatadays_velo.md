@@ -59,6 +59,10 @@ Arrivée :
 - Date : 15 septembre 2026
 - Lieu : Tours, Centre-Val de Loire
 
+## Et les initiateurs dans tout ça ?
+
+Cette année, l’équipe à l’origine du projet prévoit de partir de Nevers, avec une étape clé organisée le 15 septembre au départ d’Orléans (avec une étape à Blois le midi). L’objectif : rassembler un maximum de participants pour une arrivée symbolique et collective à Tours, à la veille des Géodatadays. Une belle occasion de fédérer la communauté autour d’une aventure humaine !
+
 ## Conclusion
 
 Alors, prêt à pédaler pour les Géodatadays 2026 ? Partagez votre point de départ et mobilisez vos collègues et amis pour une arrivée en fanfare à Tours !
