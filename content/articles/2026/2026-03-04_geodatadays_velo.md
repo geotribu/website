@@ -36,26 +36,27 @@ L’idée est simple : chacun peut organiser son propre départ, seul ou en grou
 
 ## Pourquoi participer ?
 
-* Un geste éco-responsable : réduire l’empreinte carbone de l’événement en privilégiant le vélo.
-* Une aventure collective : partager des moments de convivialité avec d’autres passionnés de géodata et de cyclisme.
-* Une arrivée festive : un accueil spécial est prévu pour les cyclistes à Tours.
+- Un geste éco-responsable : réduire l’empreinte carbone de l’événement en privilégiant le vélo.
+- Une aventure collective : partager des moments de convivialité avec d’autres passionnés de géodata et de cyclisme.
+- Une arrivée festive : un accueil spécial est prévu pour les cyclistes à Tours.
 
 ## Comment s’organiser ?
 
-* Consultez les parcours proposés ou créez le vôtre.
-* Rejoignez ou formez un groupe de cyclistes depuis votre région.
-* Partagez votre aventure sur les réseaux sociaux avec le hashtag #GéoDataDaysAVélo.
+- Consultez les parcours proposés ou créez le vôtre.
+- Rejoignez ou formez un groupe de cyclistes depuis votre région.
+- Partagez votre aventure sur les réseaux sociaux avec le hashtag #GéoDataDaysAVélo.
 
 AJOUTER LA CARTE DES PARCOURS UMAP
 
 ## Logistique
 
-Hébergement : Camping, Hôtel,... chacun est autonome, mais n'hésitez pas à mutualiser vos hébergements (vous risquez d'en avoir tellement plein les jambes que vous n'entendrez pas vos camarades ronfler !)
-Matériel : Prévoyez un vélo en bon état, bidon d'eau et de la crême solaire (on est optimiste avec toute la pluie qui est déjà tombée), ainsi qu'un casque et une tenue adaptée.
+- Hébergement : Camping, Hôtel,... chacun est autonome, mais n'hésitez pas à mutualiser vos hébergements (vous risquez d'en avoir tellement plein les jambes que vous n'entendrez pas vos camarades ronfler !)
+- Matériel : Prévoyez un vélo en bon état, bidon d'eau et de la crême solaire (on est optimiste avec toute la pluie qui est déjà tombée), ainsi qu'un casque et une tenue adaptée.
 
 ## Informations pratiques
 
-* Dates : 16 et 17 septembre 2026
+Arrivée : 
+* Date : 15 septembre 2026
 * Lieu : Tours, Centre-Val de Loire
 
 ## Conclusion
