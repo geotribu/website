@@ -2,9 +2,9 @@
 title: Géodatadays à Vélo 2026 : Cap sur Tours !
 subtitle: Géolocalisez vos mollets !
 authors:
-  - Florian BORET
+    - Florian BORET
 categories:
-  - article
+    - article
 comments: true
 date: 2026-09-16
 description: "Rejoignez le défi : pédalez jusqu’aux Géodatadays 2026 à Tours !"
@@ -13,8 +13,8 @@ image:
 license: beerware
 robots: index, follow
 tags:
-  - GéoDataDays
-  - vélo
+    - GéoDataDays
+    - vélo
 ---
 
 # Géodatadays à Vélo 2026 : Cap sur Tours !
