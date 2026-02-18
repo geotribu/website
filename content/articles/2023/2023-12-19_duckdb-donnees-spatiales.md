@@ -259,7 +259,7 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
 
 ### Traiter des données parquet d'Overture Maps avec DuckDB
 
-Les données d’Overture Maps sont fournies sous forme de fichier Parquet ([décrites ici](https://docs.overturemaps.org/overview/feature-model/)), nous allons donc importer ces données dans une base pour les consulter.
+Les données d’Overture Maps sont fournies sous forme de fichier Parquet ([décrites ici](https://docs.overturemaps.org/theme-definitions-table.html)), nous allons donc importer ces données dans une base pour les consulter.
 
 #### Importer les données dans la base
 
