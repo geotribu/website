@@ -21,14 +21,14 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-Pour la 9ème édition des [Géodatadays](https://www.geodatadays.fr), la communauté géonumérique se retrouve à Tours les 16 et 17 septembre 2026. Et pour la deuxième année, l’équipe d’Occitanie relance son initiative « Géodatadays à Vélo » pour allier convivialité, sport et engagement écologique. 
+Pour la 9ème édition des [Géodatadays](https://www.geodatadays.fr), la communauté géonumérique se retrouve à Tours les 16 et 17 septembre 2026. Et pour la deuxième année, l’équipe d’Occitanie relance son initiative « Géodatadays à Vélo » pour allier convivialité, sport et engagement écologique.
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
 ----
 
-## Et vous, d’où partirez-vous ? 
+## Et vous, d’où partirez-vous ?
 
 L’idée est simple : chacun peut organiser son propre départ, seul ou en groupe, depuis sa ville ou sa région, pour converger vers Tours. Que vous soyez en Auvergne-Rhône-Alpes, en Île-de-France, en Bretagne ou ailleurs, toutes les routes mènent aux Géodatadays !
 
@@ -56,7 +56,7 @@ Matériel : Prévoyez un vélo en bon état, bidon d'eau et de la crême solaire
 * Dates : 16 et 17 septembre 2026
 * Lieu : Tours, Centre-Val de Loire
 
-## Conclusion 
+## Conclusion
 
 Alors, prêt à pédaler pour les Géodatadays 2026 ? Partagez votre point de départ et mobilisez vos collègues et amis pour une arrivée en fanfare à Tours !
 
