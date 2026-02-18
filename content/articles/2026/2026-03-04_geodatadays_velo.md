@@ -56,6 +56,7 @@ AJOUTER LA CARTE DES PARCOURS UMAP
 ## Informations pratiques
 
 Arrivée :
+
 - Date : 15 septembre 2026
 - Lieu : Tours, Centre-Val de Loire
 
