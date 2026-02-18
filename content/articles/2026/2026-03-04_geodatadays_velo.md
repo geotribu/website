@@ -23,6 +23,8 @@ tags:
 
 Pour la 9ème édition des [Géodatadays](https://www.geodatadays.fr), la communauté géonumérique se retrouve à Tours les 16 et 17 septembre 2026. Et pour la deuxième année, l’équipe d’Occitanie relance son initiative « Géodatadays à Vélo » pour allier convivialité, sport et engagement écologique.
 
+![Affiche GDD à vélo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/gdd_velo/affiche_geodatadays_a_velo.png){: .img-center loading=lazy }
+
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
