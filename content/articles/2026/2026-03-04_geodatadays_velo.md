@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2026-09-16
+date: 2026-03-04
 description: "Rejoignez le défi : pédalez jusqu’aux Géodatadays 2026 à Tours !"
 icon: fontawesome/solid/bicycle
 image:
