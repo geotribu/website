@@ -9,7 +9,7 @@
     // "image": "mcr.microsoft.com/devcontainers/python:0-3.11",
     // Features to add to the dev container. More info: https://containers.dev/features.
     "features": {
-        "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
+        "ghcr.io/devcontainers-extra/features/apt-packages:1": {
             "packages": [
                 "libcairo2-dev",
                 "libfreetype6-dev",
@@ -20,7 +20,7 @@
                 "pngquant"
             ]
         },
-        "ghcr.io/devcontainers-contrib/features/coverage-py:2": {}
+        "ghcr.io/devcontainers-extra/features/coverage-py:2": {}
     },
     // Configure tool-specific properties.
     "customizations": {
@@ -80,7 +80,7 @@
                     "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
                     "tag:yaml.org,2002:python/name:material.plugins.tags.casefold",
                     "tag:yaml.org,2002:python/name:material.plugins.tags.page_url"
-                ],
+                ]
             },
             "extensions": [
                 "bierner.markdown-mermaid",
