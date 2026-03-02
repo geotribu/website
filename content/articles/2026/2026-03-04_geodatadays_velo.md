@@ -51,7 +51,7 @@ L’idée est simple : chacun peut organiser son propre départ, seul ou en grou
 
 ## Logistique
 
-- Hébergement : Camping, Hôtel,... chacun est autonome, mais n'hésitez pas à mutualiser vos hébergements (vous risquez d'en avoir tellement plein les jambes que vous n'entendrez pas vos camarades ronfler !)
+- Hébergement : camping, hôtel,... chacun est autonome, mais n'hésitez pas à mutualiser vos hébergements (vous risquez d'en avoir tellement plein les jambes que vous n'entendrez pas vos camarades ronfler !)
 - Train : Regarder vos accès avec ou sans vélo depuis [Sncf connect](https://www.sncf-connect.com/) ou [Carto Tchoo](https://carto.tchoo.net/46.66209,3.79874,6.69718,0,0)
 - Matériel :
     - Prévoyez un vélo en bon état, bidon d'eau et de la crème solaire (on est optimiste avec toute la pluie qui est déjà tombée), ainsi qu'un casque et une tenue adaptée.
