@@ -63,7 +63,7 @@ L’idée est simple : chacun peut organiser son propre départ, seul ou en grou
 
 Départs :
 
-<iframe style="width: 100%; height: 600px; border: 0;" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/gdd-a-velo_1366949?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"></iframe><p><a href="//umap.openstreetmap.fr/fr/map/gdd-a-velo_1366949?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true">Voir en plein écran</a></p>
+<iframe style="width: 100%; height: 600px; border: 0;" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/gdd-a-velo_1366949?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#8/47.755945/2.427979"></iframe><p><a href="//umap.openstreetmap.fr/fr/map/gdd-a-velo_1366949?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#8/47.755945/2.427979">Voir en plein écran</a></p>
 
 Arrivée :
 
