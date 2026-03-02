@@ -54,7 +54,7 @@ L’idée est simple : chacun peut organiser son propre départ, seul ou en grou
 - Hébergement : Camping, Hôtel,... chacun est autonome, mais n'hésitez pas à mutualiser vos hébergements (vous risquez d'en avoir tellement plein les jambes que vous n'entendrez pas vos camarades ronfler !)
 - Train : Regarder vos accès avec ou sans vélo depuis [Sncf connect](https://www.sncf-connect.com/) ou [Carto Tchoo](https://carto.tchoo.net/46.66209,3.79874,6.69718,0,0)
 - Matériel :
-    - Prévoyez un vélo en bon état, bidon d'eau et de la crême solaire (on est optimiste avec toute la pluie qui est déjà tombée), ainsi qu'un casque et une tenue adaptée.
+    - Prévoyez un vélo en bon état, bidon d'eau et de la crème solaire (on est optimiste avec toute la pluie qui est déjà tombée), ainsi qu'un casque et une tenue adaptée.
     - Possibilité de louer des vélos le long de la [Loire à vélo](https://geovelo.app/en/ride-sets/3/?c=0.478615%2C47.423750&tab=details&z=7.44) :
           - [Les vélos Verts](https://www.lesvelosverts.com)
           - [Vélo Val de Loire](https://velovaldeloire.com)
