@@ -42,18 +42,27 @@ L’idée est simple : chacun peut organiser son propre départ, seul ou en grou
 
 ## Comment s’organiser ?
 
-- Consultez les parcours proposés ou créez le vôtre.
+- Consultez les [parcours proposés ou créez le vôtre](https://umap.openstreetmap.fr/fr/map/gdd-a-velo_1366949).
 - Rejoignez ou formez un groupe de cyclistes depuis votre région.
-- Partagez votre aventure sur les réseaux sociaux avec le hashtag #GéoDataDaysAVélo.
+- Partagez votre aventure sur les réseaux sociaux avec le hashtag #GeoDataDaysAVélo.
 
-AJOUTER LA CARTE DES PARCOURS UMAP
+[:fontawesome-brands-whatsapp: Rejoindre le groupe WhatsApp pour discuter :fontawesome-solid-comments:](https://chat.whatsapp.com/GXtOqnhuwLA04yZNc9x9JK?mode=hq1temi){ .md-button }
+{: align=middle }
 
 ## Logistique
 
 - Hébergement : Camping, Hôtel,... chacun est autonome, mais n'hésitez pas à mutualiser vos hébergements (vous risquez d'en avoir tellement plein les jambes que vous n'entendrez pas vos camarades ronfler !)
+- Train : Regarder vos accès avec ou sans vélo depuis [Sncf connect](https://www.sncf-connect.com/) ou [Carto Tchoo](https://carto.tchoo.net/46.66209,3.79874,6.69718,0,0)
 - Matériel : Prévoyez un vélo en bon état, bidon d'eau et de la crême solaire (on est optimiste avec toute la pluie qui est déjà tombée), ainsi qu'un casque et une tenue adaptée.
+    - Possibilité de louer des vélos le long de la [Loire à vélo](https://geovelo.app/en/ride-sets/3/?c=0.478615%2C47.423750&tab=details&z=7.44) :
+          - [Les vélos Verts](https://www.lesvelosverts.com)
+          - [Vélo Val de Loire](https://velovaldeloire.com)
 
 ## Informations pratiques
+
+Départs :
+
+<iframe style="width: 100%; height: 300px; border: 0;" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/gdd-a-velo_1366949?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"></iframe><p><a href="//umap.openstreetmap.fr/fr/map/gdd-a-velo_1366949?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true">Voir en plein écran</a></p>
 
 Arrivée :
 
