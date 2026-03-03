@@ -51,7 +51,7 @@ L’idée est simple : chacun peut organiser son propre départ, seul ou en grou
 
 ## Logistique
 
-- Hébergement : camping, hôtel,... chacun est autonome, mais n'hésitez pas à mutualiser vos hébergements (vous risquez d'en avoir tellement plein les jambes que vous n'entendrez pas vos camarades ronfler !)
+- Hébergement : camping, hôtel, château... chacun est autonome et l'[offre est abondante](https://www.loireavelo.fr/hebergements/) sur le parcours Loire à Vélo. N'hésitez pas à en parler, notamment sur le groupe WhatsApp pour mutualiser les hébergements (vous risquez d'en avoir tellement plein les jambes que vous n'entendrez pas vos camarades ronfler !).
 - Train : Regarder vos accès avec ou sans vélo depuis [Sncf connect](https://www.sncf-connect.com/) ou [Carto Tchoo](https://carto.tchoo.net/46.66209,3.79874,6.69718,0,0)
 - Matériel :
     - Prévoyez un vélo en bon état, bidon d'eau et de la crème solaire (on est optimiste avec toute la pluie qui est déjà tombée), ainsi qu'un casque et une tenue adaptée.
@@ -72,7 +72,7 @@ Arrivée :
 
 ## Et les initiateurs dans tout ça ?
 
-Cette année, l’équipe à l’origine du projet prévoit de partir de Nevers, avec une étape clé organisée le 15 septembre au départ d’Orléans (avec une étape à Blois le midi). L’objectif : rassembler un maximum de participants pour une arrivée symbolique et collective à Tours, à la veille des Géodatadays. Une belle occasion de fédérer la communauté autour d’une aventure humaine !
+Cette année, l’équipe à l’origine du projet prévoit de partir de Nevers dès le dimanche 13 septembre, avec une étape clé organisée le 15 septembre au départ d’Orléans (avec une étape à Blois le midi). L’objectif : rassembler un maximum de participants pour une arrivée symbolique et collective à Tours, à la veille des Géodatadays. Une belle occasion de fédérer la communauté autour d’une aventure humaine !
 
 ## Conclusion
 
