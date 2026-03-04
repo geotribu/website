@@ -21,9 +21,9 @@ tags:
 
 ![icone art SIG](https://cdn.geotribu.fr/img/logos-icones/divers/artsig.png){: .img-thumbnail-left }
 
-Connaissez-vous l'artiste [M.C. Escher](https://fr.wikipedia.org/wiki/Maurits_Cornelis_Escher) ? Il y a quelques temps, j'aurais répondu non à cette question, issu d'un cursus académique lors duquel j'ai appris à manier les pointeurs plutôt que les pinceaux. Et encore...
+Connaissez-vous l'artiste [M.C. Escher](https://fr.wikipedia.org/wiki/Maurits_Cornelis_Escher) ? Issu d'un cursus académique où j'ai appris à manier les pointeurs plutôt que les pinceaux, il y a quelques temps, j'aurais répondu non à cette question.
 
-Il s'agit d'un artiste néerlandais du XXe siècle, connu notamment pour ses gravures sur bois et [lithographies](https://fr.wikipedia.org/wiki/Lithographie), souvent inspirées des mathématiques et des motifs de l'art islamique.
+Il s'agit d'un artiste néerlandais du XXe siècle, connu notamment pour ses gravures sur bois et ses [lithographies](https://fr.wikipedia.org/wiki/Lithographie), souvent inspirées des mathématiques et des motifs de l'art islamique.
 
 ![Reptiles de M.C. Escher](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/Study_of_Regular_Division_of_the_Plane_with_Reptiles.webp){: .img-center loading=lazy }
 
@@ -49,21 +49,21 @@ Waouh ! Possible de décliner des motifs dans QGIS grâce à ce plugin !
 
 Styley, et [le _README_ du dépôt GitHub du plugin](https://github.com/xcaeag/Cornelis-QGis-Plugin) est vraiment magnifique :star_struck: !
 
-Cet article aurait simplement pu reprendre ce _README_, qui est une oeuvre d'art en soi, ceci dit j'ai aussi voulu essayer ce plugin avec un autre truc que j'aime bien faire : des cartes psychédéliques dans QGIS avec des projections random.
+Cet article aurait simplement pu reprendre ce _README_, qui est une œuvre d'art en soi. Ceci dit j'ai aussi voulu essayer ce plugin avec un autre truc que j'aime bien faire : des cartes psychédéliques dans QGIS avec des projections random.
 
 ## Création d'un "fond de carte" en guise de base au motif
 
-De temps à autre, je prends donc mon pied à créer des cartes, dans QGIS, avec un SCR random, histoire d'en découvrir quelques uns, histoire d'admirer les artefacts des reprojections géodésiques et les glitchs du _rendering_ de QGIS :two_hearts:...
+De temps à autre, je prends donc le temps de créer des cartes, dans QGIS, avec un SCR random, histoire d'en découvrir quelques uns, histoire d'admirer les artefacts des reprojections géodésiques et les _glitchs_ du _rendering_ de QGIS :two_hearts:...
 
-En voici une réalisée, en période post-Noël, dont voici, dans les grandes lignes, la recette de création :
+Voici l'une d'elle, réalisée en période post-Noël. Et voici dans les grandes lignes la recette de création :
 
 1. Ouvrir un nouveau projet vide dans QGIS.
 
-1. Tapper "`world`" dans la barre des coordonnées de QGIS. Il s'agit ici d'un _easter egg_, et vous pouvez [en découvrir d'autres dans cet article](../2022/2022-04-18_easter_eggs_qgis_regale.md) de [Delphine](../../team/delphine-montagne.md) et [Julien](../../team/julien-moura.md). Concrètement, cette action va ajouter une carte du monde avec la projection `EPSG:4326` dans le canvas de QGIS.
+1. Taper "`world`" dans la barre des coordonnées de QGIS. Il s'agit ici d'un _easter egg_, et vous pouvez [en découvrir d'autres dans cet article](../2022/2022-04-18_easter_eggs_qgis_regale.md) de [Delphine](../../team/delphine-montagne.md) et [Julien](../../team/julien-moura.md). Concrètement, cette action va ajouter une carte du monde avec la projection `EPSG:4326` dans le canvas de QGIS.
 
 1. Créer une grille avec l'algorithme de processing adéquat, en essayant différentes tailles.
 
-1. Ouvrir le dialogue du choix du SCR du projet QGIS actuel, explorer et se lâcher. Parfois j'utilise un générateur de nombres aléatoires, ceci dit QGIS affiche parfois un message disant l'impossibilité de reprojeter, ce qui je dois l'avouer dépasse mon champ d'intervention. Ici j'ai pris [le SCR _ESRI:102036_](https://spatialreference.org/ref/esri/102036/), soit le "South Pole Gnomonic" :smirk: En plus - le hasard fait bien les choses, j'avais regardé la veille [ce super documentaire, sur les traces du manchot empereur en Antarctique](https://www.arte.tv/fr/videos/060769-000-A/antarctica-sur-les-traces-de-l-empereur/)...
+1. Ouvrir le dialogue du choix du SCR du projet QGIS actuel, explorer et se lâcher. Parfois j'utilise un générateur de nombres aléatoires, ceci dit QGIS affiche parfois un message disant l'impossibilité de reprojeter, ce qui je dois l'avouer dépasse mes compétences. Ici j'ai pris [le SCR _ESRI:102036_](https://spatialreference.org/ref/esri/102036/), soit le "South Pole Gnomonic" :smirk: En plus - le hasard fait bien les choses, j'avais regardé la veille [ce super documentaire, sur les traces du manchot empereur en Antarctique](https://www.arte.tv/fr/videos/060769-000-A/antarctica-sur-les-traces-de-l-empereur/)...
 
 1. Jouer avec les symbologies, les couleurs de remplissages, les bordures, etc... Personnellement j'aime bien le jaune, pas seulement parce que c'est rafraîchissant en été à l'apéro, mais aussi parce que c'est la couleur par défaut de la sélection dans QGIS !
 
@@ -77,7 +77,9 @@ Maintenant, installons et utilisons [le plugin Cornelis](https://plugins.qgis.or
 
 À noter que ce plugin est en mode expérimental, il vous faudra donc activer les plugins expérimentaux dans vos paramètres.
 
-Une fois installé, une boîte à outils vient s'intégrer dans QGIS. Voyons ce qu'elle fournit et comment créer des motifs.
+![Activation des extensions expérimentales dans QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/qgis_plugins_settings_experimental.webp){: .img-center loading=lazy }
+
+Une fois installée, une boîte à outils vient s'intégrer dans QGIS. Voyons ce qu'elle fournit et comment créer des motifs.
 
 ![Choix du type de pavage dans la boîte à outils du plugin Cornelis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/cornelis_tesselation_menu_choice.webp){: .img-center loading=lazy }
 
