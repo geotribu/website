@@ -2,7 +2,8 @@ name: "🚀 Déploiement"
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
     paths:
       - ".github/workflows/deploy.yml"
       - "config/*.yml"
