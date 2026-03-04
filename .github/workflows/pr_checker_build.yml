@@ -4,7 +4,8 @@ name: "Pull Request Checker 🛃"
 
 on:
   pull_request:
-    branches: [master]
+    branches:
+      - master
 
 # Environment variables
 env:
