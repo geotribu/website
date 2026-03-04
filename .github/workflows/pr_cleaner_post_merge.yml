@@ -17,6 +17,8 @@ jobs:
   clean-preview:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'geotribu' }}
+    permissions:
+      contents: read
 
     steps:
       - name: Get source code

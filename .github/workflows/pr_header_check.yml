@@ -10,6 +10,8 @@ jobs:
     name: "👓 Vérification du header markdown de l'article"
     runs-on: ubuntu-latest
     if: contains(github.event.pull_request.labels.*.name, 'articles')
+    permissions:
+      contents: read
 
     steps:
       - name: "Fetch source code"

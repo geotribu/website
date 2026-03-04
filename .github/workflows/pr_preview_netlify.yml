@@ -18,6 +18,12 @@ jobs:
     name: "⌛ Site temporaire sur Netlify"
     runs-on: ubuntu-latest
     if: "${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' }}"
+    permissions:
+      contents: read
+      # Required by `marocchino/sticky-pull-request-comment` (write) + `set-pr-context` (read):
+      pull-requests: write
+      # Required by `myrotvorets/set-commit-status-action`:
+      statuses: write
 
     steps:
       # =============================== #
