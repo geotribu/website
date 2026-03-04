@@ -1,5 +1,5 @@
 ---
-title: "Géodatadays à Vélo 2026 : cap sur Tours !"
+title: "GeoDataDays à Vélo 2026 : cap sur Tours !"
 subtitle: Roulez jeunesse !
 authors:
     - Florian BORET
@@ -7,23 +7,23 @@ categories:
     - article
 comments: true
 date: 2026-03-04
-description: "Rejoignez le défi : pédalez jusqu’aux Géodatadays 2026 à Tours !"
+description: "Rejoignez le défi : pédalez jusqu’aux GeoDataDays 2026 à Tours !"
 icon: fontawesome/solid/bicycle
 image:
 license: beerware
 robots: index, follow
 tags:
-    - GéoDataDays
+    - GeoDataDays
     - vélo
 ---
 
-# Géodatadays à Vélo 2026 : cap sur Tours !
+# GeoDataDays à Vélo 2026 : cap sur Tours !
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-Pour la 9ème édition des [Géodatadays](https://www.geodatadays.fr), la communauté géonumérique se retrouve à Tours les 16 et 17 septembre 2026. Et pour la deuxième année, l’équipe d’Occitanie relance son initiative « Géodatadays à Vélo » pour allier convivialité, sport et engagement écologique.
+Pour la 9ème édition des [GeoDataDays](https://www.geodatadays.fr), la communauté géonumérique se retrouve à Tours les 16 et 17 septembre 2026. Et pour la deuxième année, l’équipe d’Occitanie relance son initiative « GeoDataDays à Vélo » pour allier convivialité, sport et engagement écologique.
 
-![Affiche GDD à vélo](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/gdd_velo/affiche_geodatadays_a_velo.png){: .img-center loading=lazy }
+![Affiche GDD à vélo - Juliette Enfer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/gdd_velo/affiche_geodatadays_a_velo.png){: .img-center loading=lazy }
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
@@ -32,7 +32,7 @@ Pour la 9ème édition des [Géodatadays](https://www.geodatadays.fr), la commun
 
 ## Et vous, d’où partirez-vous ?
 
-L’idée est simple : chacun peut organiser son propre départ, seul ou en groupe, depuis sa ville ou sa région, pour converger vers Tours. Que vous soyez en Auvergne-Rhône-Alpes, en Île-de-France, en Bretagne ou ailleurs, toutes les routes mènent aux Géodatadays !
+L’idée est simple : chacun peut organiser son propre départ, seul ou en groupe, depuis sa ville ou sa région, pour converger vers Tours. Que vous soyez en Auvergne-Rhône-Alpes, en Île-de-France, en Bretagne ou ailleurs, toutes les routes mènent aux GeoDataDays !
 
 ## Pourquoi participer ?
 
@@ -72,11 +72,11 @@ Arrivée :
 
 ## Et les initiateurs dans tout ça ?
 
-Cette année, l’équipe à l’origine du projet prévoit de partir de Nevers dès le dimanche 13 septembre, avec une étape clé organisée le 15 septembre au départ d’Orléans (avec une étape à Blois le midi). L’objectif : rassembler un maximum de participants pour une arrivée symbolique et collective à Tours, à la veille des Géodatadays. Une belle occasion de fédérer la communauté autour d’une aventure humaine !
+Cette année, l’équipe à l’origine du projet prévoit de partir de Nevers dès le dimanche 13 septembre, avec une étape clé organisée le 15 septembre au départ d’Orléans (avec une étape à Blois le midi). L’objectif : rassembler un maximum de participants pour une arrivée symbolique et collective à Tours, à la veille des GeoDataDays. Une belle occasion de fédérer la communauté autour d’une aventure humaine !
 
 ## Conclusion
 
-Alors, prêt à pédaler pour les Géodatadays 2026 ? Partagez votre point de départ et mobilisez vos collègues et amis pour une arrivée en fanfare à Tours !
+Alors, prêt à pédaler pour les GeoDataDays 2026 ? Partagez votre point de départ et mobilisez vos collègues et amis pour une arrivée en fanfare à Tours !
 
 N’hésitez pas à me dire si vous souhaitez ajouter des détails ou des liens vers des ressources pratiques (parcours, hébergements, etc.) !
 
