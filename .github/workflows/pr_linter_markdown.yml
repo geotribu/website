@@ -3,21 +3,21 @@ name: "🎳 Markdown Linter"
 # Trigger
 on:
   pull_request:
-    branches: [master]
+    branches:
+      - master
     paths:
       - ".github/workflows/pr_linter_markdown.yml"
       - "content/**/*.md"
-
-permissions:
-  contents: read
-  pull-requests: write
-  statuses: write
 
 jobs:
   lint-markdown-review:
     name: "👓 Vérification de la syntaxe"
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'geotribu' }}
+    permissions:
+      contents: read
+      pull-requests: write
+      statuses: write
 
     steps:
       - name: "Récupère le code source"
@@ -29,7 +29,7 @@ jobs:
         uses: reviewdog/action-markdownlint@v0.26.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
+          fail_level: error
           filter_mode: added
           reporter: github-pr-review
 
