@@ -46,11 +46,11 @@ Pas de panique, les anciennes commandes restent disponibles pour garder vos scri
 
 ```mermaid
 flowchart
-	A(["gdal"])
-	A --> B(["Vector/Raster"])
-	B --> C(["Programme"])
-	C --> D(["Options"])
-	D --> E(["In / Out"])
+ A(["gdal"])
+ A --> B(["Vector/Raster"])
+ B --> C(["Programme"])
+ C --> D(["Options"])
+ D --> E(["In / Out"])
 ```
 
 Vous pourrez retrouver l'intégralité des programmes disponibles et leurs options [ici](https://gdal.org/en/stable/programs/index.html)
@@ -66,7 +66,7 @@ Commande pour convertir un fichier in.jp2 au format geotiff en autorisant l'écr
 Pour du vecteur on peut aussi importer un shape (beurk) dans une base Postgis
 
 ```sh
-gdal vector convert --append in.shp PG:"dbname='my_db' user='me' password='admin123' schemas='my_schema'" 
+gdal vector convert --append in.shp PG:"dbname='my_db' user='me' password='admin123' schemas='my_schema'"
 ```
 
 Une différence par rapport à l'ancienne CLI est l'obligation de l'utilisation de l'option `append`, même pour créer une table non existante.
@@ -114,13 +114,13 @@ Les commandes utilisant un pipeline doivent toutes commencer par `read` et se te
 
 ```mermaid
 flowchart
-	A(["gdal"])
-	A --> B(["vector / raster"])
-	B --> C(["pipeline"])
-	C --> D(["read"])
-	D --> E(["programme 1"])
-	E --> F(["programme 2"])
-	F --> G(["write"])
+ A(["gdal"])
+ A --> B(["vector / raster"])
+ B --> C(["pipeline"])
+ C --> D(["read"])
+ D --> E(["programme 1"])
+ E --> F(["programme 2"])
+ F --> G(["write"])
 ```
 
 Exemple simple n'appliquant qu'une reprojection :
@@ -238,7 +238,6 @@ gdal.Run("vsi", "copy", source=f"/vsizip/{file}_csv.zip/{file}.CSV", destination
 (notez qu'avec le programme `copy`, entrée et sortie se nomment `source` et `destination`)
 
 Sur ce, g la dahl de lentilles, alors bon appétit ! (au fond de moi j'ai honte, mais ça fait du bien).
-
 
 <!-- geotribu:authors-block -->
 
