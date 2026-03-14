@@ -79,7 +79,7 @@ gdal vector convert --overwrite --output-layer=arrondissement_municipal WFS:"htt
 
 On pourrait imaginer combiner les commandes précédantes pour importer le contenu d'un flux WFS vers une base PostgreSQL, mais pour ça on préfèrera utiliser le [Foreign Data Wrapper OGR](https://github.com/pramsey/pgsql-ogr-fdw) car Saint Paul Ramsey veille sur nous. (rejoignez moi dans mon culte esothérique secret vénérant la sainte trinité gdal/geos/proj, représentée par Saint Paul Ramsey, Saint Even Rouault et la Sainte papesse Anita Graser. Venez, on est pas méchant, ça vous coute juste une licence ESRI pour l'adhésion mais on pourra en discuter après la première réunion).
 
-Si certain.nes d'entre vous ont envie de faire comme le bouton "calculer un indice radiométrique" d'un quelconque logiciel de télédétection, on peut appliquer des formules avec `gdal raster math`. On assigne les bandes/rasters à des lettres qu'on appellera ensuite dans la formule. Laissez bien sur toutes les options en *par défaut*. 
+Si certain.nes d'entre vous ont envie de faire comme le bouton "calculer un indice radiométrique" d'un quelconque logiciel de télédétection, on peut appliquer des formules avec `gdal raster math`. On assigne les bandes/rasters à des lettres qu'on appellera ensuite dans la formule. Laissez bien sur toutes les options en *par défaut*.
 
 ```sh
 gdal raster calc -i "A=ir.tif" -i "B=r.tif" --calc "(A-B)/(A+B)" -o out.tif
