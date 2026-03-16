@@ -85,7 +85,7 @@ Si certain.nes d'entre vous ont envie de faire comme le bouton "calculer un indi
 gdal raster calc -i "A=ir.tif" -i "B=r.tif" --calc "(A-B)/(A+B)" -o out.tif
 ```
 
-On peut s'en servir pour créer des [Cloud Optimized Geotiff](https://guide.cloudnativegeo.org/cloud-optimized-geotiffs/intro.html). Voir cet [article de geotribu par Nicolas Rochard](https://geotribu.fr/articles/2025/2025-02-11_bonnes-pratiques-generation-raster-cog-avec-gdal/) pour les options qui sont bien utilisées par la région Hauts de France.
+On peut s'en servir pour créer des [Cloud Optimized Geotiff](https://guide.cloudnativegeo.org/cloud-optimized-geotiffs/intro.html). Voir cet [article de geotribu par Nicolas Rochard](https://geotribu.fr/articles/2025/2025-02-11_bonnes-pratiques-generation-raster-cog-avec-gdal/) pour les options qui sont utilisées par la région Hauts de France.
 
 ```sh
 gdal raster convert --ouput-format=COG -co COMPRESS=ZSTD -co BIGTIFF=IF_NEEDED in.tif out.tif
