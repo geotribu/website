@@ -107,7 +107,7 @@ gdal raster hillshade --zfactor=2 in.tif out.tif
 
 ## Les pipelines
 
-Une autre nouveauté fait partie de cette mise à jour : Les pipelines [vecteurs](https://gdal.org/en/stable/programs/gdal_vector_pipeline.html#gdal-vector-pipeline) ou [raster](https://gdal.org/en/stable/programs/gdal_raster_pipeline.html#gdal-raster-pipeline).
+Une autre nouveauté fait partie de cette mise à jour : les pipelines [vecteurs](https://gdal.org/en/stable/programs/gdal_vector_pipeline.html#gdal-vector-pipeline) ou [raster](https://gdal.org/en/stable/programs/gdal_raster_pipeline.html#gdal-raster-pipeline).
 Ils permettent d'appeler un programme nommé `pipeline` qui va enchainer les traitements de plusieurs programmes `GDAL` avant d'écrire le fichier de sortie.
 
 Les commandes utilisant un pipeline doivent toutes commencer par `read` et se terminer par `write`, les différentes opérations étant séparées par des `!`.
