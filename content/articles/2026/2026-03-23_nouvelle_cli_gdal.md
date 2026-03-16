@@ -191,7 +191,7 @@ gdal vsi copy /vsizip//vsicurl/https://www.ign.fr/bd_topo/my_file.zip/my_layer_i
 
 `GDAL` possède même des pilotes `S3` ou `AWS` pour son système VSI !
 
-Enfin, on peut aussi profiter de `GDAL` pour générer des `SOzip` (Seek-Optimized Zips), grace au programme `sozip`. Des zips faits pour qu'on cherche vite à l'intérieur. C'est bizarre, ça parait être le penchant de "lire une donnée dans un zip sans avoir à le dezipper" vu juste haut dessus ;).
+Enfin, on peut aussi profiter de `GDAL` pour générer des `SOzip` (Seek-Optimized Zips), grace au programme `sozip`. Des zips faits pour qu'on cherche vite à l'intérieur. C'est bizarre, ça parait être le penchant de "lire une donnée dans un zip sans avoir à le dézipper" vu juste haut dessus ;).
 
 ```sh
 gdal vsi sozip create my_gpkg.zip my.gpkg
