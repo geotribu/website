@@ -35,7 +35,7 @@ On ne le répétera jamais assez mais sans GDAL, presque rien n'existerait dans 
 
 Maitriser `GDAL`, c'est être capable de remplacer des ~~interfaces graphiques~~ logiciels coutant des dizaines de milliers d'euros.
 
-Cependant, historiquement les programmes `GDAL` étaient ... comment dire ... peut normés entre eux, par exemple `gdal_translate` (le programme servant aux conversions raster) demandait ses fichiers d'entrée / sortie dans cet ordre : in -> out alors qu'`ogr2ogr` (le programme servant aux conversions vecteur) lui demandait : out -> in. De plus les plus gros programmes, ceux qui "faisaient tout" on été supprimés et remplacés des équivalents plus spécifiques.
+Cependant, historiquement les programmes `GDAL` étaient ... comment dire ... peut normés entre eux, par exemple `gdal_translate` (le programme servant aux conversions raster) demandait ses fichiers d'entrée / sortie dans cet ordre : in -> out alors qu'`ogr2ogr` (le programme servant aux conversions vecteur) lui demandait : out -> in. De plus les plus gros programmes, ceux qui "faisaient tout" on été supprimés et remplacés par des équivalents plus spécifiques.
 Pas de panique, les anciennes commandes restent disponibles pour garder vos scripts existants en vie.
 
 ## Principes de la nouvelle CLI
