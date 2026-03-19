@@ -9,7 +9,7 @@ comments: true
 date: 2026-03-18
 description: Découverte et expérimentations avec le plugin Cornelis, pour mimer la lithographie façon Maurits Cornelis Escher.
 icon: fontawesome/solid/paintbrush
-image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/cornelis_tesselation_final.png
+image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/cornelis_tesselation_final_2.png
 tags:
     - Cornelis
     - QGIS
