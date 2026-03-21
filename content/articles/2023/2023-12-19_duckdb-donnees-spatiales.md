@@ -259,7 +259,7 @@ La fonction `read_csv_auto` nous permet de pouvoir importer un CSV sans avoir à
 
 ### Traiter des données parquet d'Overture Maps avec DuckDB
 
-Les données d’Overture Maps sont fournies sous forme de fichier Parquet ([décrites ici](https://docs.overturemaps.org/overview/feature-model/)), nous allons donc importer ces données dans une base pour les consulter.
+Les données d’Overture Maps sont fournies sous forme de fichier Parquet ([décrites ici](https://docs.overturemaps.org/theme-definitions-table.html)), nous allons donc importer ces données dans une base pour les consulter.
 
 #### Importer les données dans la base
 
@@ -276,9 +276,9 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
         "class,"
         "JSON(names) as names,"
         "JSON(sources) as sources,"
-        "ST_GeomFromWKB(geometry) as geometry"
+        "geometry"
         "FROM"
-        "read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)"
+        "read_parquet('s3://overturemaps-us-west-2/release/2026-01-21.0/theme=buildings/type=building/*.parquet', hive_partitioning=1)"
         "LIMIT 100);"
     )
 
@@ -296,9 +296,9 @@ Dans cet exemple, on récupère 100 bâtiments aléatoirement ; environ une minu
     class,
     JSON(names) as names,
     JSON(sources) as sources,
-    ST_GeomFromWKB(geometry) as geometry
+    geometry
     FROM
-    read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)
+    read_parquet('s3://overturemaps-us-west-2/release/2026-01-21.0/theme=buildings/type=building/*.parquet', hive_partitioning=1)
     LIMIT 100);
     ```
 
@@ -315,9 +315,9 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville 
     "class,"
     "JSON(names) as names,"
     "JSON(sources) as sources,"
-    "ST_GeomFromWKB(geometry) as geometry"
+    "geometry"
     "FROM"
-    "read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)"
+    "read_parquet('s3://overturemaps-us-west-2/release/2026-01-21.0/theme=buildings/type=building/*.parquet', hive_partitioning=1)"
     "WHERE bbox.xmin > -0.7948129589175504"
     "AND bbox.xmax < -0.7472280816538276"
     "AND bbox.ymin > 48.069335046027035"
@@ -336,9 +336,9 @@ Dans cet autre exemple, on récupère les bâtiments d’une partie de la ville 
     level,
     JSON(names) as names,
     JSON(sources) as sources,
-    ST_GeomFromWKB(geometry) as geometry
+    geometry
     FROM
-    read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)
+    read_parquet('s3://overturemaps-us-west-2/release/2026-01-21.0/theme=buildings/type=building/*.parquet', hive_partitioning=1)
     WHERE bbox.xmin > -0.7948129589175504
     AND bbox.xmax < -0.7472280816538276
     AND bbox.ymin > 48.069335046027035
@@ -375,9 +375,9 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
     "class,"
     "JSON(names) as names,"
     "JSON(sources) as sources,"
-    "ST_GeomFromWKB(geometry) as geometry"
+    "geometry"
     "FROM"
-    "read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)"
+    "read_parquet('s3://overturemaps-us-west-2/release/2026-01-21.0/theme=buildings/type=building/*.parquet', hive_partitioning=1)"
     "WHERE bbox.xmin > -0.7948129589175504"
     "AND bbox.xmax < -0.7472280816538276"
     "AND bbox.ymin > 48.069335046027035"
@@ -399,9 +399,9 @@ Un des atouts de DuckDB est qu'en plus d’intégrer des données pour les trait
     level,
     JSON(names) as names,
     JSON(sources) as sources,
-    ST_GeomFromWKB(geometry) as geometry
+    geometry
     FROM
-    read_parquet('s3://overturemaps-us-west-2/release/2024-04-16-beta.0/theme=buildings/type=*/*', hive_partitioning=1)
+    read_parquet('s3://overturemaps-us-west-2/release/2026-01-21.0/theme=buildings/type=building/*.parquet', hive_partitioning=1)
     WHERE bbox.xmin > -0.7948129589175504
     AND bbox.xmax < -0.7472280816538276
     AND bbox.ymin > 48.069335046027035

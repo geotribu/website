@@ -2,8 +2,8 @@ name: "🤖 Réponse automatique à un ticket de proposition de contenu"
 on:
   issues:
     types:
-      - reopened
       - opened
+      - reopened
 jobs:
   rdp_form:
     name: "📰 Proposition de news"
@@ -37,7 +37,7 @@ jobs:
           JSON_STRING: ${{ steps.issue-parser.outputs.jsonString }}
 
       - name: Save form output as artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: input_form.json
           path: "rdp*.json"
@@ -56,7 +56,7 @@ jobs:
         run: python scripts/issue_comment_templater_rdp.py
 
       - name: Save comment artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: output_comment.md
           overwrite: true
@@ -67,4 +67,4 @@ jobs:
         uses: peter-evans/create-or-update-comment@v5
         with:
           issue-number: ${{ github.event.issue.number }}
-          body-file: 'rdp_news_submitted_comment_output.md'
+          body-file: "rdp_news_submitted_comment_output.md"
