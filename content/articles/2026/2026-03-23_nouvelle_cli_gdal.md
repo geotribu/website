@@ -14,7 +14,7 @@ license: default
 robots: index, follow
 tags:
     - GDAL
-    - json 
+    - json
     - CLI
     - raster
 ---
