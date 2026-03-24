@@ -74,7 +74,7 @@ gdal vector convert --append in.shp PG:"dbname='my_db' user='me' password='admin
 
 Une différence par rapport à l'ancienne CLI est l'obligation de l'utilisation de l'option `append`, même pour créer une table non existante.
 
-On peut même copier le contenu d'un flux wms vers un geopackage.
+On peut même copier le contenu d'un flux wfs vers un geopackage.
 
 ```sh
 gdal vector convert --overwrite --output-layer=arrondissement_municipal WFS:"https://data.geopf.fr/wfs/ows?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=BDTOPO_V3:arrondissement_municipal" bdtopo.gpkg
