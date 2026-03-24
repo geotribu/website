@@ -155,7 +155,7 @@ Cette manière de faire est certes plus verbeuse qu'un classique :
 ogr2ogr --t_srs=EPSG:2154 --sql "WHERE mon_champ='valeur'" --option_3 --option_4 --option_n -lco option1_diver=YES -lco option2_diver=NO out.gpkg in.shp
 ```
 
-Mais bien plus claire, et surtout réemployable puisque le fichier `gdalg.json` n'est que la description d'une succession de traitements sur la couche source, et peut être appelé comme n'importe qu'elle autre entrée par n'importe quel programme de `GDAL` et non écrit sur un fichier qui devrait être mis à jour à chaque modification de la couche d'origine comme dans ce dernier exemple.
+Mais bien plus claire, et surtout réemployable puisque le fichier `gdalg.json` n'est que la description d'une succession de traitements sur la couche source, et peut être appelé comme n'importe quelle autre entrée par n'importe quel programme de `GDAL` et non écrit sur un fichier qui devrait être mis à jour à chaque modification de la couche d'origine comme dans ce dernier exemple.
 
 ## L'Interface Système Virtuelle (VSI)
 
