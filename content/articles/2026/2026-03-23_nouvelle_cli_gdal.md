@@ -14,6 +14,9 @@ license: default
 robots: index, follow
 tags:
     - GDAL
+    - json 
+    - CLI
+    - raster
 ---
 
 # La nouvelle CLI GDAL 3.11
