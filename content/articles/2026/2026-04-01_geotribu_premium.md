@@ -29,3 +29,7 @@ Nous sommes en joie à l'idée d'annoncer une prochaine offre : _Geotribu Premiu
 
 [Obtenir Geotribu Premium :tm: :fontawesome-solid-comments:](https://theuselessweb.com/ "Obtenir Geotribu Premium"){: .md-button }
 {: align=middle }
+
+<!-- geotribu:authors-block -->
+
+{% include "licenses/beerware.md" %}
