@@ -83,7 +83,7 @@ jobs:
           publish-dir: ${{ env.BUILD_DIR }}
 
       - name: "Comment on PR: Add/Update deployment status"
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           number: ${{ env.PR_NUMBER }}
           recreate: true

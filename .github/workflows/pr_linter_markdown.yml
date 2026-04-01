@@ -35,7 +35,7 @@ jobs:
 
       - name: "Explications sur les erreurs du linter"
         id: pr-comment-error-create
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-error
@@ -50,7 +50,7 @@ jobs:
 
       - name: "Marque le commentaire de félicitations comme résolu"
         id: pr-comment-good-solve
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-success
@@ -72,7 +72,7 @@ jobs:
       # SUCCESS
       - name: "Marque le commentaire d'erreur comme résolu"
         id: pr-comment-error-solve
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-error
@@ -81,7 +81,7 @@ jobs:
 
       - name: "Félicitations"
         id: pr-comment-good
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-success
