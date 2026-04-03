@@ -9,7 +9,7 @@ comments: true
 date: 2026-04-03
 description: "Nos SIG n'ont pas ton temps en fait... "
 icon: material/clock-in
-image: https://www.openig.org/sites/default/files/styles/wide/public/2026-04/Visuel_JPro26_carre_complet_0.png
+image: https://www.openig.org/sites/default/files/2026-04/Visuel_JPro26_banner.png
 license: default
 robots: index, follow
 tags:
@@ -40,7 +40,10 @@ tags:
 
 ![Affiche Journée Pro OPenIG 2026](https://www.openig.org/sites/default/files/2026-04/Visuel_JPro26_small.png){: .img-right }
 
-Quand tout tourne à 88 mph et en consommant 2.21 gigowatts, la 24e édition de la Journée Pro d'OPenIG se pose dans la lignée du film de Zemeckis pour explorer la dimension temporelle de nos outils géonumériques et autres géodatas. Bien commun pour nos politiques publiques, comment modéliser et représenter le temps ? Jusqu’où va le « temps réel » ? Quelles données pour garder la mémoire des évolutions ? À quel rythme mettre à jour sans perdre en qualité ? Quelles données nous aident à remonter le temps ? Qu'apprend t'on sur noter avenir ?
+Quand tout tourne à 88 mph et en consommant 2.21 gigowatts, la 24e édition de la Journée Pro d'OPenIG se place sous le thème de ce blockbuster pour explorer la dimension temporelle de nos outils et autres géodatas. 
+
+Bien commun pour nos politiques publiques, comment modéliser et représenter le temps ? Jusqu’où va le « temps réel » ? Quelles données pour garder la mémoire des évolutions ? À quel rythme mettre à jour sans perdre en qualité ? Quelles données nous aident à remonter le temps ? Qu'apprend t'on sur noter avenir ?
+
 Cette journée ouvrira en grand les portes de l’espace-temps.
 
 ## Pour venir à GIS Valley le 14 avril
