@@ -4,7 +4,6 @@ categories:
     - contributeur
 social_accounts:
     linkedin: gabrielpoujol
-    mail: gabriel.poujol@gmail.com
 ---
 
 # Gabriel Poujol
