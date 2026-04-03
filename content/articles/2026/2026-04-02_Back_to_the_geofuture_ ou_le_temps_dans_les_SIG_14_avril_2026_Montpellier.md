@@ -24,9 +24,9 @@ tags:
 
 # Prêts pour un voyage dans le géofutur Marty ?
 
-![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }
-
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
+![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }
 
 !!! info "Transparence : des contributeurices de Géotribu participeront à la Journée Professionnelle d'OPenIG"
     Pour être tout à faits honnête, l'auteur de l'article travaille là bas depuis 2019.
