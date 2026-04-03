@@ -34,7 +34,7 @@ tags:
 
  ![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }
 
- Voici le [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et là ou [s'inscrire](https://jp.openig.org/inscr.php) (tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
+ Voici le [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et là ou [s'inscrire](https://jp.openig.org/inscr.php) avec tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
 
 ## Le temps, thème de la journée d'OPenIG à Montpellier
 
@@ -42,7 +42,7 @@ tags:
 
 Quand tout tourne à 88 mph et en consommant 2.21 gigowatts, la 24e édition de la Journée Pro d'OPenIG se place sous le thème de ce blockbuster pour explorer la dimension temporelle de nos outils et autres géodatas.
 
-Bien commun pour nos politiques publiques, comment modéliser et représenter le temps ? Jusqu’où va le « temps réel » ? Quelles données pour garder la mémoire des évolutions ? À quel rythme mettre à jour sans perdre en qualité ? Quelles données nous aident à remonter le temps ? Qu'apprend t'on sur noter avenir ?
+Bien commun pour nos politiques publiques, comment modéliser et représenter le temps ? Jusqu’où va le « temps réel » ? Quelles données pour garder la mémoire des évolutions ? À quel rythme mettre à jour sans perdre en qualité ? Quelles données nous aident à voyager dans le temps ? Qu'apprend-on sur notre avenir ?
 
 Cette journée ouvrira en grand les portes de l’espace-temps.
 
