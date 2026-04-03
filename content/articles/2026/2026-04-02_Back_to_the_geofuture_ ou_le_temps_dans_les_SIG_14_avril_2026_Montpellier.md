@@ -32,7 +32,9 @@ tags:
 
 ## Programme et inscriptions
 
- ![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }Voici le [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et là ou [s'inscrire](https://jp.openig.org/inscr.php) (tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
+ ![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }
+ 
+ Voici le [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et là ou [s'inscrire](https://jp.openig.org/inscr.php) (tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
 
 ## Le temps, thème de la journée d'OPenIG à Montpellier
 
@@ -43,7 +45,7 @@ Cette journée ouvrira en grand les portes de l’espace-temps.
 
 ## Pour venir à GIS Valley le 14 avril
 
-Prenez direction de la tour de l'horloge la plus proche, et direction l'[Institut Agro](https://www.openstreetmap.org/node/5380755263#map=19/43.618549/3.855075)
+Prenez la direction de la tour avec une horloge la plus proche, puis go à l'[Institut Agro](https://www.openstreetmap.org/node/5380755263#map=19/43.618549/3.855075)
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
