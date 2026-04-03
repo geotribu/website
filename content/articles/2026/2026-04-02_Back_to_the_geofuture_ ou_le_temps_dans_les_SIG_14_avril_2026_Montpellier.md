@@ -28,7 +28,7 @@ tags:
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 !!! info "Transparence"
-    Des contributeurices de Géotribu participeront à l'évènement, et l'auteur de l'article travaille pour l'[association OPenIG](https://www.openig.org).
+    Des contributeurices de Géotribu participeront à l'évènement dont l'auteur qui travaille pour [OPenIG](https://www.openig.org).
 
 ## Programme et inscriptions
 
