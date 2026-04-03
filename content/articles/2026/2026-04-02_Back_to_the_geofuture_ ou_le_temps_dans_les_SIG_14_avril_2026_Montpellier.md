@@ -33,7 +33,7 @@ tags:
 ## Programme et inscriptions
 
  ![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }
- 
+
  Voici le [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et là ou [s'inscrire](https://jp.openig.org/inscr.php) (tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
 
 ## Le temps, thème de la journée d'OPenIG à Montpellier
