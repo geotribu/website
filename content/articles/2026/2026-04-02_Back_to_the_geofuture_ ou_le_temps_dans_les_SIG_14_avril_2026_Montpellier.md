@@ -22,7 +22,9 @@ tags:
     - OPenIG
 ---
 
-# ![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left } Prêts pour un voyage dans le géofutur Marty ?
+# Prêts pour un voyage dans le géofutur Marty ?
+
+![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
