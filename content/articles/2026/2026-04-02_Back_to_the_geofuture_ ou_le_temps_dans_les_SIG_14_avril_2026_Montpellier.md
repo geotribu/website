@@ -26,11 +26,11 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-!!! info : Transparence 
+!!! info : Transparence
     ![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }
 des contributeurices de Géotribu participeront à l'évènement, et pour être tout à fait honnête, l'auteur de l'article travaille d'ailleurs pour l'association OPenIG, centre de ressources en information géographique en Occitanie, depuis 2019.
 
-## Programme et inscriptions 
+## Programme et inscriptions
 
 Prenez connaissance du [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et [inscrivez vous ici](https://jp.openig.org/inscr.php) (tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
 
