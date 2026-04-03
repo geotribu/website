@@ -24,9 +24,12 @@ tags:
 
 # Prêts pour un voyage dans le géofutur Marty ?
 
-![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }
-
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
+!!! info "Transparence : des contributeurices de Géotribu participeront à la Journée Professionnelle d'OPenIG"
+    Pour être tout à faits honnête, l'auteur de l'article travaille là bas depuis 2019.
+
+![Emmett Brown](https://www.francebleu.fr/pikapi/images/32f933d4-502e-482f-9327-b9458b22157b/1280?webp=false){: .img-thumbnail-left }
 
 ## Retour vers le Géofutur, c'est le thème de la Journée Professionnelle 2026 d'OPenIG, le 14 avril à l'[Institut Agro](https://www.openstreetmap.org/node/5380755263#map=19/43.618549/3.855075)
 
