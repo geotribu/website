@@ -30,6 +30,7 @@ tags:
 ## C'est quoi les Journées Pro d'OPenIG ?
 
 La **JP** (où encore JPro) d'OPenIG, c'est un r**endez vous annuel en Occitanie**, ouvert à tous portant sur [un thème particulier choisi par l'asso et ses adhérents](https://www.openig.org/groupe-de-travail/journees-professionnelles) (collectivités, privé, public, recherche, personnes morales ou physiques, etc.). Au delà du thème, c'est surtout une occasion de partager des moments de convivialité ensemble et d'échanger autour de :
+
 - l’actualité de la géomatique
 - les besoins de veille exprimés par les membres de l'association
 - des usages, projets et travaux de tout un chacun
