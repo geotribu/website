@@ -24,9 +24,6 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-!!! info "Transparence"
-    Des contributeurices de Géotribu participeront à l'évènement dont l'auteur qui travaille pour [OPenIG](https://www.openig.org).
-
 ## C'est quoi les Journées Pro d'OPenIG ?
 
 La **JP** (où encore JPro) d'OPenIG, c'est un r**endez vous annuel en Occitanie**, ouvert à tous portant sur [un thème particulier choisi par l'asso et ses adhérents](https://www.openig.org/groupe-de-travail/journees-professionnelles) (collectivités, privé, public, recherche, personnes morales ou physiques, etc.). Au delà du thème, c'est surtout une occasion de partager des moments de convivialité ensemble et d'échanger autour de :
@@ -50,6 +47,9 @@ Cette journée ouvrira en grand les portes de l’espace-temps.
  ![Emmett Brown](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/jpro_openig_retour-geofutur/Emmett-Brown.jpeg){: .img-thumbnail-left }
 
  Voici le [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et là ou [s'inscrire](https://jp.openig.org/inscr.php) avec tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
+
+!!! info "Transparence"
+    Des contributeurices de Géotribu participeront à l'évènement dont l'auteur qui travaille pour [OPenIG](https://www.openig.org).
 
 ## Pour venir à GIS Valley le 14 avril
 
