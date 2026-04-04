@@ -13,14 +13,11 @@ image: https://www.openig.org/sites/default/files/2026-04/Visuel_JPro26_banner.p
 license: default
 robots: index, follow
 tags:
-    - géofutur
-    - géomatique
+    - conférence
     - Journée Professionnelle
     - OPenIG
-    - outatime
     - SIG
     - temps
-
 ---
 
 # Journée Pro d'OPenIG le 14 avril à Montpellier - GIS Valley 2026, prêts pour le voyage Marty ?
