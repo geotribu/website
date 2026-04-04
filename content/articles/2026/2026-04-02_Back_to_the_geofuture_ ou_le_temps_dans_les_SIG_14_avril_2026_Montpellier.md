@@ -48,7 +48,6 @@ Cette journée ouvrira en grand les portes de l’espace-temps.
 
 Voici le [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et là ou [s'inscrire](https://jp.openig.org/inscr.php) avec tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
 
-
 !!! info "Transparence"
     Des contributeurices de Géotribu y participeront, dont l'auteur qui travaille pour [OPenIG](https://www.openig.org).
 
