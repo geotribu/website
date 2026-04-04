@@ -46,10 +46,11 @@ Cette journée ouvrira en grand les portes de l’espace-temps.
 
  ![Emmett Brown](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/jpro_openig_retour-geofutur/Emmett-Brown.jpeg){: .img-thumbnail-left }
 
- Voici le [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et là ou [s'inscrire](https://jp.openig.org/inscr.php) avec tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
+Voici le [programme détaillé](https://openig.org/sites/default/files/2026-03/programme.pdf) et là ou [s'inscrire](https://jp.openig.org/inscr.php) avec tarif réduit pour les adhérents d’OPenIG, étudiants et demandeurs d’emploi jusqu'au 6 avril.
+
 
 !!! info "Transparence"
-    Des contributeurices de Géotribu participeront à l'évènement dont l'auteur qui travaille pour [OPenIG](https://www.openig.org).
+    Des contributeurices de Géotribu y participeront, dont l'auteur qui travaille pour [OPenIG](https://www.openig.org).
 
 ## Pour venir à GIS Valley le 14 avril
 
