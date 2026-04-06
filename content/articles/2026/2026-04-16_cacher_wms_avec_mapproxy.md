@@ -328,17 +328,17 @@ upstream mapproxy_upstream {
 
 server {
   listen 80;
-  server_name mapproxy.guilhemallaman.net;
+  server_name mapproxy.geotribu.xyz;
   return 301 https://$host$request_uri;
 }
 
 server {
 
   listen 443 ssl;
-  server_name mapproxy.guilhemallaman.net;
+  server_name mapproxy.geotribu.xyz;
 
-  ssl_certificate /etc/letsencrypt/live/mapproxy.guilhemallaman.net/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/mapproxy.guilhemallaman.net/privkey.pem;
+  ssl_certificate /etc/letsencrypt/live/mapproxy.geotribu.xyz/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/mapproxy.geotribu.xyz/privkey.pem;
 
   error_log /var/log/nginx/mapproxy.error.log;
   access_log /var/log/nginx/mapproxy.access.log combined;
@@ -357,13 +357,7 @@ Créer ensuite un lien symbolique vers `/etc/nginx/sites-enabled/` :
 sudo ln -s /etc/nginx/sites-available/mapproxy.conf /etc/nginx/sites-enabled/mapproxy.conf
 ```
 
-Récupérer les certificats de la manière suivante, après avoir préalablement éteint le nginx avec `systemctl stop nginx`:
-
-```sh
-sudo certbot certonly --standalone -d mapproxy.guilhemallaman.net
-```
-
-Une fois ok, redémarrer le nginx avec `systemctl start nginx`.
+Récupérer ensuite des certificats Let's Encrypt, soit en éteignant nginx avec `systemctl stop nginx` puis `sudo certbot certonly --standalone -d mapproxy.geotribu.xyz`, soit avec le plugin nginx pour certbot via `sudo certbot certonly --nginx -d cloud.geotribu.xyz`.
 
 Retourner maintenant à l'emplacement où vous avez mis le `docker-compose.yaml` ainsi que le dossier de config de MapProxy. Démarrer l'instance via  `docker compose up -d`.
 
