@@ -24,7 +24,7 @@ tags:
 
 Hello la troupe :wave: !
 
-![Logo MapProxy](https://cdn.geotribu.fr/img/logos-icones/mapproxy.png){: .img-thumbnail-left }
+![Logo MapProxy](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapproxy.png){: .img-thumbnail-left }
 
 Dans un contexte d'une de mes missions pros, des utilisateurs de QGIS consomment du WMS et des tuiles et il y a des enjeux et défis de connectivité et performances, compte-tenu du fait que les serveurs sont parfois très distants des _users_ finaux. Aussi, la bande passante des réseaux dans lesquels les postes QGIS demandent des flux n'est pas toujours fiable, alors il faut faire preuve d'ingéniosité pour rendre un usage fluide de ces flux, dans notre logiciel SIG Desktop préféré.
 
