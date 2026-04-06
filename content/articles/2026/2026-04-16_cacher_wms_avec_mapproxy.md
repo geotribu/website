@@ -22,11 +22,9 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-Hello la troupe :wave: !
-
 ![Logo MapProxy](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapproxy.png){: .img-thumbnail-left }
 
-Dans un contexte d'une de mes missions pros, des utilisateurs de QGIS consomment du WMS et des tuiles et il y a des enjeux et défis de connectivité et performances, compte-tenu du fait que les serveurs sont parfois très distants des _users_ finaux. Aussi, la bande passante des réseaux dans lesquels les postes QGIS demandent des flux n'est pas toujours fiable, alors il faut faire preuve d'ingéniosité pour rendre un usage fluide de ces flux, dans notre logiciel SIG Desktop préféré.
+Dans certains contextes qu'il est possible de rencontrer, des utilisateurs de QGIS peuvent être amenés à consommer du WMS et des tuiles, avec des enjeux et défis de connectivité et performances, compte-tenu du fait que les serveurs sont parfois distants des utilisateurs finaux. Aussi, la bande passante des réseaux dans lesquels les postes QGIS demandent des flux n'est pas toujours garantie, alors il faut parfois se creuser la tête pour rendre un usage fluide de ces flux, dans notre logiciel SIG Desktop préféré.
 
 Une brique existe pour cela, [MapProxy](https://mapproxy.org/) : opensource, léger et svelte, écrit en Python et qui porte plutôt bien son nom : un proxy de cartes, qui va servir à mettre en cache des flux générés par **d'autres** serveurs cartographiques. L'avantage est déjà que MapProxy possède, à l'instar d'autres serveurs géographiques la possibilité de mettre en cache les tuiles servies, et ce de différentes manières : fichiers classiques, mbtiles, geopackage, redis, s3... Aussi, MapProxy permet comme son nom l'indique de servir de proxy, c'est-à-dire de relai de flux entre un serveur carto et d'autres clients, qui peuvent être par ex. QGIS, du WebGIS, d'autres serveurs carto...
 
