@@ -30,7 +30,7 @@ Dans un contexte d'une de mes missions pros, des utilisateurs de QGIS consomment
 
 Une brique existe pour cela, [MapProxy](https://mapproxy.org/) : opensource, léger et svelte, écrit en Python et qui porte plutôt bien son nom : un proxy de cartes, qui va servir à mettre en cache des flux générés par **d'autres** serveurs cartographiques. L'avantage est déjà que MapProxy possède, à l'instar de QGIS server et GeoServer avec [GeoWebCache](https://docs.geoserver.org/main/en/user/geowebcache/index.html) la possibilité de mettre en cache les tuiles servies, et ce de différentes manières : fichiers classiques, mbtiles, geopackage, redis, s3... Aussi, MapProxy permet comme son nom l'indique de servir de proxy, c'est-à-dire de relai de flux entre un serveur carto et d'autres clients, qui peuvent être par ex. QGIS, du WebGIS, d'autres serveurs carto...
 
-Et la configuration est basée sur des fichiers [yaml](https://yaml.org/spec/), ce qui facilite des automatisations et des instantiations de plusieurs instances iso, via [ansible](https://docs.ansible.com/) par exemple.
+La configuration est basée sur des fichiers [YAML](https://yaml.org/spec/), ce qui facilite des automatisations et des instanciations de plusieurs instances iso, via [Ansible](https://docs.ansible.com/) par exemple.
 
 ## Des cas d'usage de mapproxy
 
