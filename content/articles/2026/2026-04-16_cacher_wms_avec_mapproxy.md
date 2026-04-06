@@ -357,7 +357,7 @@ Créer ensuite un lien symbolique vers `/etc/nginx/sites-enabled/` :
 sudo ln -s /etc/nginx/sites-available/mapproxy.conf /etc/nginx/sites-enabled/mapproxy.conf
 ```
 
-Récupérer ensuite des certificats Let's Encrypt, soit en éteignant nginx avec `systemctl stop nginx` puis `sudo certbot certonly --standalone -d mapproxy.geotribu.xyz`, soit avec le plugin nginx pour certbot via `sudo certbot certonly --nginx -d cloud.geotribu.xyz`.
+Récupérer ensuite des certificats Let's Encrypt, soit en éteignant nginx avec `systemctl stop nginx` puis `sudo certbot certonly --standalone -d mapproxy.geotribu.xyz`, soit avec le plugin nginx pour certbot via `sudo certbot certonly --nginx -d mapproxy.geotribu.xyz`.
 
 Retourner maintenant à l'emplacement où vous avez mis le `docker-compose.yaml` ainsi que le dossier de config de MapProxy. Démarrer l'instance via  `docker compose up -d`.
 
