@@ -183,7 +183,7 @@ redirects:
     node/244.md: articles/2010/2010-04-12_arramagong_version3.md
     node/247.md: articles/2010/2010-04-08_osgeofr_ouverture_adhesions.md
     node/248.md: articles/2010/2010-07-15_modelisation_base_de_donnees_sql_power_architect.md
-    # node/249.md:
+    node/249.md: articles/2010/2010-04-23_accelerer-et-personnaliser-services-WMS-avec-MapProxy.md
     node/252.md: articles/2010/2010-04-23_geoscript.md
     # node/253.md:
     node/254.md: articles/2010/2010-04-26_openlayers29.md
