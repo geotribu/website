@@ -1,5 +1,5 @@
 ---
-title: Servir du WMS caché avec mapproxy
+title: Servir du WMS caché avec MapProxy
 subtitle: On joue à cache-cache ?
 authors:
     - Guilhem ALLAMAN
@@ -13,18 +13,18 @@ image:
 license: beerware
 tags:
     - cache
-    - mapproxy
+    - MapProxy
     - QGIS
     - WMS
 ---
 
-# Servir du WMS caché avec mapproxy
+# Servir du WMS caché avec MapProxy
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
 Hello la troupe :wave: !
 
-![Logo mapproxy](https://cdn.geotribu.fr/img/logos-icones/mapproxy.png){: .img-thumbnail-left }
+![Logo MapProxy](https://cdn.geotribu.fr/img/logos-icones/mapproxy.png){: .img-thumbnail-left }
 
 Dans un contexte d'une de mes missions pros, des utilisateurs de QGIS consomment du WMS et des tuiles et il y a des enjeux et défis de connectivité et performances, compte-tenu du fait que les serveurs sont parfois très distants des _users_ finaux. Aussi, la bande passante des réseaux dans lesquels les postes QGIS demandent des flux n'est pas toujours fiable, alors il faut faire preuve d'ingéniosité pour rendre un usage fluide de ces flux, dans notre logiciel SIG Desktop préféré.
 
@@ -34,13 +34,13 @@ La configuration est basée sur des fichiers [YAML](https://yaml.org/spec/), ce 
 
 ## Cas d'usage de MapProxy
 
-Le site de mapproxy présente un premier cas d'usage, où un serveur `mapproxy` cache et sert à des clients finaux des flux générés par plusieurs autres serveurs :
+Le site de MapProxy présente un premier cas d'usage, où un serveur `MapProxy` cache et sert à des clients finaux des flux générés par plusieurs autres serveurs :
 
 ![Architecture avec un mapproxy qui sert des flux en provenance d'autres serveurs carto à des clients](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/servir_wms_cache_mapproxy/mapproxy-overview.webp){: .img-center loading=lazy }
 
-On note déjà que les flux en entrée du mapproxy peuvent être du WMS ou de la tuile (par exemple les couches `XYZ` dans QGIS), fournies par exemple par MapServer, GeoServer, QGIS Server...
+On note déjà que les flux en entrée du MapProxy peuvent être du WMS ou de la tuile (par exemple les couches `XYZ` dans QGIS), fournies par exemple par MapServer, GeoServer, QGIS Server...
 
-Les clients qui consomment ce WMS en provenance du mapproxy peuvent être des clients Desktop comme QGIS, ou des librairies web style OpenLayers, MapLibre, Leaflet, ou encore des app mobiles comme QField / Mergin Maps, ou bien même d'autres serveurs cartographiques ! C'est la beauté des protocoles.
+Les clients qui consomment ce WMS en provenance du MapProxy peuvent être des clients Desktop comme QGIS, ou des librairies web style OpenLayers, MapLibre, Leaflet, ou encore des app mobiles comme QField / Mergin Maps, ou bien même d'autres serveurs cartographiques ! C'est la beauté des protocoles.
 
 ----
 
@@ -48,9 +48,9 @@ Un autre cas d'usage pourrait être le suivant :
 
 - des clients éparpillés et/ou à l'autre bout du monde, avec des latences très lentes en visant un unique serveur cartographique.
 
-- un _super_ serveur cartographique, quelque part, qui calcule et sert tout le nécessaire, par exemple QGIS server. Nous n'avons pas envie de répliquer et manipuler plusieurs instances de QGIS server ayant vocation à servir strictement les mêmes flux, alors nous allons préférer instancier différentes instances de mapproxy.
+- un _super_ serveur cartographique, quelque part, qui calcule et sert tout le nécessaire, par exemple QGIS server. Nous n'avons pas envie de répliquer et manipuler plusieurs instances de QGIS server ayant vocation à servir strictement les mêmes flux, alors nous allons préférer instancier différentes instances de MapProxy.
 
-- des instances de mapproxy plus proches des clients, permettant ainsi de cacher et fournir les flux aux clients de manière plus fluide et performante.
+- des instances de MapProxy plus proches des clients, permettant ainsi de cacher et fournir les flux aux clients de manière plus fluide et performante.
 
 La logique pourrait se traduire par le schéma suivant :
 
@@ -89,7 +89,7 @@ Aussi possible de mettre en place [du _load balancing_](https://fr.wikipedia.org
 
 ## Mise en route avec un exemple
 
-Afin d'illustrer et mettre en route une stack avec mapproxy au centre, entre un serveur carto et un client, faisons un petit exemple en mettant en cache des données sur le 19e arrondissement de Paris. En bout de chaîne, notre mapproxy va donc servir des couches WMS pour cette zone, pour laquelle nous auront besoin de la _bounding box_.
+Afin d'illustrer et mettre en route une stack avec MapProxy au centre, entre un serveur carto et un client, faisons un petit exemple en mettant en cache des données sur le 19e arrondissement de Paris. En bout de chaîne, notre MapProxy va donc servir des couches WMS pour cette zone, pour laquelle nous auront besoin de la _bounding box_.
 
 Concernant les sources "centrales", étant donné qu'on n'a pas vraiment de serveur carto qui tourne avec des "vraies" données, on va utiliser les tuiles d'OpenStreetMap, du WMS de la Géoplateforme ainsi que des tuiles d'imagerie satellite de Google et Bing.
 
@@ -98,7 +98,7 @@ Concernant les sources "centrales", étant donné qu'on n'a pas vraiment de serv
 
 Pour rappel, il est déjà possible d'ajouter ces couches à QGIS, en ajoutant par exemple une nouvelle source `XYZ`, ou bien via une connexion WMS :
 
-- _OpenStreetMap_: `https://tile.openstreetmap.org/{z}/{x}/{y}.png`, qui [propose d'ailleurs un guide pour configurer mapproxy avec OSM](https://wiki.openstreetmap.org/wiki/MapProxy).
+- _OpenStreetMap_: `https://tile.openstreetmap.org/{z}/{x}/{y}.png`, qui [propose d'ailleurs un guide pour configurer MapProxy avec OSM](https://wiki.openstreetmap.org/wiki/MapProxy).
 - _Géoplateforme_: on va utiliser la couche [`BU.building` du service _WMS-Vecteur_](https://geoservices.ign.fr/documentation/services/services-geoplateforme/diffusion#70068). Ce service est limité à 50 requêtes par seconde.
 - _Googly Hybrid_: `https://mt.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}`
 - _Bing Aerial_: `http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1` - ici on n'utilise pas de `x/y/z` mais un paramètre `q`, pour _quadkey_. Rien à voir avec un véhicule de kéké des forêts, c'est plutôt une manière d'indexer spatialement des tuiles carrées. [Plus d'infos ici](https://medium.com/data-science/geospatial-indexing-with-quadkeys-d933dff01496).
@@ -108,11 +108,11 @@ Pour rappel, il est déjà possible d'ajouter ces couches à QGIS, en ajoutant p
 !!! info
     À noter que lors de la création d'une connexion de type `XYZ`, le bas de l'interface montre des niveaux de zoom min et max à demander (respectivement 0 et 19). Gardez ces valeurs en tête, nous pourrions les ressortir plus tard lorsque nous jouerons à cache-cache :wink:
 
-## Installation de mapproxy sur un serveur debian / ubuntu
+## Installation de MapProxy sur un serveur debian / ubuntu
 
-Entrons maintenant dans le vif du sujet, et la partie _geek_ : l'installation de mapproxy sur une machine linux. Ici on se limitera aux distributions basées sur debian et ubuntu.
+Entrons maintenant dans le vif du sujet, et la partie _geek_ : l'installation de MapProxy sur une machine linux. Ici on se limitera aux distributions basées sur debian et ubuntu.
 
-Une fois n'est pas coutume - j'ai plutôt l'habitude de déployer des mapproxy avec [systemd](https://fr.wikipedia.org/wiki/Systemd), étant donné qu'on va utiliser [docker](https://www.docker.com/) pour lancer l'applicatif, il est déjà nécessaire d'installer cet outil [en suivant la doc officielle](https://docs.docker.com/engine/install/debian/).
+Une fois n'est pas coutume - j'ai plutôt l'habitude de déployer des MapProxy avec [systemd](https://fr.wikipedia.org/wiki/Systemd), étant donné qu'on va utiliser [docker](https://www.docker.com/) pour lancer l'applicatif, il est déjà nécessaire d'installer cet outil [en suivant la doc officielle](https://docs.docker.com/engine/install/debian/).
 
 Une fois docker installé, attardons-nous sur le léger fichier `docker-compose.yaml` pour lancer le service :
 
@@ -140,7 +140,7 @@ services:
 - On redirige vers le port 8765 en sortie, qu'on configurera dans nginx, notre serveur agissant comme reverse-proxy devant notre map proxy :hot_face:...
 - On désactive le mode `MULTI_MAPPROXY` pour ce tuto.
 - Les deux entrées dans la partie `volumes` représentent les dossiers locaux montés dans le container :
-    - Il doit y avoir un répertoire `config` là où vous vous trouvez (où créez-le via `mkdir -p config`). Ce répertoire contiendra notamment la configuration et la déclaration des couches servies par le mapproxy.
+    - Il doit y avoir un répertoire `config` là où vous vous trouvez (où créez-le via `mkdir -p config`). Ce répertoire contiendra notamment la configuration et la déclaration des couches servies par le MapProxy.
     - Il doit y avoir un répertoire `cache` là où vous vous trouvez (où créez-le via `mkdir -p cache`). Ce répertoire accueillera les tuiles cachées, étant donné qu'ici on va rester sur du cache simple de type [_file_](https://mapproxy.github.io/mapproxy/latest/caches.html#file). Notez qu'il est possible d'enregistrer les tuiles cachées dans [du geopackage](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-geopackage), dans [des mbtiles](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-mbtiles), dans [du redis](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-redis), dans [du s3](https://mapproxy.github.io/mapproxy/latest/caches.html#cache-s3), et d'autres trucs comme nous le savons, _à nous l'savon_ !
 
 <!-- markdownlint-disable MD033 -->
@@ -149,9 +149,9 @@ services:
 
 <!-- markdownlint-enable MD033 -->
 
-Une fois ce `docker-compose.yaml` créé de même que les deux dossiers nécessaires, jettons un coup d'oeil au fichier de configuration (unique) de mapproxy !
+Une fois ce `docker-compose.yaml` créé de même que les deux dossiers nécessaires, jettons un coup d'oeil au fichier de configuration (unique) de MapProxy !
 
-## Configuration du mapproxy
+## Configuration du MapProxy
 
 Il s'agit donc d'[un fichier unique `mapproxy.yaml`](https://mapproxy.github.io/mapproxy/latest/configuration.html#mapproxy-yaml), qui doit se trouver dans votre dossier `config` là où vous vous trouvez.
 
@@ -317,7 +317,7 @@ Les `caches` et `layers` sont sensiblement les mêmes, adaptés pour pointer sur
 
 ## Configuration du serveur web nginx
 
-Maintenant, configurons notre serveur web nginx, qui va directement recevoir les requêtes en provenance des clients avant de les dispatcher à l'instance mapproxy.
+Maintenant, configurons notre serveur web nginx, qui va directement recevoir les requêtes en provenance des clients avant de les dispatcher à l'instance MapProxy.
 
 Pour cela créer un nouveau "site", dans `/etc/nginx/sites-available/` :
 
@@ -365,9 +365,9 @@ sudo certbot certonly --standalone -d mapproxy.guilhemallaman.net
 
 Une fois ok, redémarrer le nginx avec `systemctl start nginx`.
 
-Retourner maintenant à l'emplacement où vous avez mis le `docker-compose.yaml` ainsi que le dossier de config de mapproxy. Démarrer l'instance via  `docker compose up -d`.
+Retourner maintenant à l'emplacement où vous avez mis le `docker-compose.yaml` ainsi que le dossier de config de MapProxy. Démarrer l'instance via  `docker compose up -d`.
 
-Regarder les logs avec `docker compose logs -f -n 200`, si tout est ok, on a maintenant un mapproxy fonctionnel :tada: !
+Regarder les logs avec `docker compose logs -f -n 200`, si tout est ok, on a maintenant un MapProxy fonctionnel :tada: !
 
 ## Tester dans QGIS
 
@@ -385,7 +385,7 @@ Ouvrons la couche des Buildings de la Géoplateforme, tada :tada: :
 
 ## Pré-cacher les zones configurées
 
-Comme tout bon serveur de cache tuilé, mapproxy vient avec un utilitaire, qui permet de pré-générer les tuiles dans le cache.
+Comme tout bon serveur de cache tuilé, MapProxy vient avec un utilitaire, qui permet de pré-générer les tuiles dans le cache.
 
 Pour cela, on a (encore) besoin de configurer un fichier `seeds.yaml`, qu'on dépose au même endroit que le `mapproxy.yaml` - dans le dossier `config` monté dans le container docker :
 
@@ -488,9 +488,9 @@ drwxr-xr-x 3 root root 4096 Dec 29 12:51 18
 
 ## Conclusion
 
-En conclusion, nous avons vu comment instancier un serveur mapproxy, qui comme son nom l'indique permet de jouer au proxy et mettre en cache des tuiles en provenance de un ou plusieurs serveurs cartographiques, et à destination de clients consommateurs de WMS.
+En conclusion, nous avons vu comment instancier un serveur MapProxy, qui comme son nom l'indique permet de jouer au proxy et mettre en cache des tuiles en provenance de un ou plusieurs serveurs cartographiques, et à destination de clients consommateurs de WMS.
 
-J'attire l'attention sur l'utilisation des datasources qu'on peut être amenés à configurer et servir via mapproxy : important de lire etde  s'informer des conditions d'utilisation avant de se lancer.
+J'attire l'attention sur l'utilisation des datasources qu'on peut être amenés à configurer et servir via MapProxy : important de lire etde  s'informer des conditions d'utilisation avant de se lancer.
 
 Et nous avons ici réalisé un setup rudimentaire, sans implémenter les requêtes WMS `GetFeature` et autres. Et généralement, en production il est toujours judicieux de décrire les flux servis avec des métadonnées.
 
