@@ -32,7 +32,7 @@ Une brique existe pour cela, [MapProxy](https://mapproxy.org/) : opensource, lé
 
 La configuration est basée sur des fichiers [YAML](https://yaml.org/spec/), ce qui facilite des automatisations et des instanciations de plusieurs instances iso, via [Ansible](https://docs.ansible.com/) par exemple.
 
-## Des cas d'usage de mapproxy
+## Cas d'usage de MapProxy
 
 Le site de mapproxy présente un premier cas d'usage, où un serveur `mapproxy` cache et sert à des clients finaux des flux générés par plusieurs autres serveurs :
 
