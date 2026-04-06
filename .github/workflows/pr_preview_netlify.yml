@@ -31,7 +31,7 @@ jobs:
       # =============================== #
 
       - name: Download artifact from build workflow
-        uses: dawidd6/action-download-artifact@v16
+        uses: dawidd6/action-download-artifact@v20
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           name: pr-build-website
@@ -83,7 +83,7 @@ jobs:
           publish-dir: ${{ env.BUILD_DIR }}
 
       - name: "Comment on PR: Add/Update deployment status"
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           number: ${{ env.PR_NUMBER }}
           recreate: true
