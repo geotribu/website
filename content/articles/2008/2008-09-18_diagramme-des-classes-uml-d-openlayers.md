@@ -21,7 +21,7 @@ tags:
 
 Merci à Emanuel Schütze pour ce [diagramme des classes de la librairie OpenLayers](http://trac.openlayers.org/attachment/wiki/UML/ClassDiagram_OL2.7RC2-20080916.pdf?format=raw "diagramme des classes de la librairie OpenLayers") (2.7).
 
-![Diagramme des classes (UML) d'OpenLayers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/ClassDiagram_OL2.7RC2-20080916.png "Diagramme des classes (UML) d'OpenLayers"){: .img-center loading=lazy }
+![Diagramme des classes (UML) d'OpenLayers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2008/OpenLayers_2-7-RC2_Diagramme-des-classes_Emanuel-SCHUTZE_20080916.png){: .img-center loading=lazy }
 
 ----
 
