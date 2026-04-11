@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2026-04-23
+date: 2026-04-30
 description: Un article qui montre une manière de servir en WMS des flux en provenance d'autres serveurs cartographiques. Deuxième partie, pour aller plus loin.
 icon: simple/tile
 image:
