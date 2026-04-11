@@ -26,7 +26,7 @@ tags:
 Au printemps 2020, lorsque nous [relançions Geotribu après son AVC SQL](../2020/2020-08-31_geotribu_histoire.md#la-difficile-renaissance), nous avons choisi d'ouvrir un espace Slack en lieu et place de la liste de diffusion historique, feue `geotribu@lafrere.org`. Après 4 ans de bons et loyaux services, nous avons décidé de migrer vers [Matrix](https://matrix.org/), un protocole de communication ouvert et décentralisé. Plusieurs raisons à cela :
 
 - Matrix est open source et c'est donc l'occasion de gagner quelques points de cohérence karmique avec [notre ligne éditoriale]({{ config.extra.url_contribuer }}requirements#ligne-editoriale) ;
-- l'adoption du protocole est en forte croissance avec notamment l'OSGeo qui dispose de [sa propre instance](https://matrix.osgeo.org/), l'OSGeo-FR ([Loïc et Nicolas vous en parlaient à propos de l'OSGeo-FR dès 2021](../2021/2021-10-15_irc_osgeo.md#via-matrix-méthode-recommandée)), [QGIS](https://matrix.to/#/#qgis:osgeo.org) et d'autres projets anglophones ([OpenStreetMap](https://wiki.openstreetmap.org/wiki/Matrix) bien sûr) comme francophones ([mViewer](https://matrix.to/#/#mviewer:matrix.org), le [plugin IDG pour QGIS](https://matrix.to/#/!DqHgKIoltGIikFRreo:matrix.org?via=matrix.org&via=craig.fr), les communautés [Geotrek](https://matrix.to/#/#geotrek:matrix.org) et [GeoNature](https://matrix.to/#/#geonature:matrix.org)...) ou bilingues ([Panoramax](https://matrix.to/#/#panoramax_fr:matrix.org), [QDT](https://matrix.to/#/#qdt:matrix.org)...) ;
+- l'adoption du protocole est en forte croissance avec notamment l'OSGeo qui dispose de [sa propre instance](https://matrix.osgeo.org/), l'OSGeo-FR ([Loïc et Nicolas vous en parlaient à propos de l'OSGeo-FR dès 2021](../2021/2021-10-15_irc_osgeo.md#via-matrix-méthode-recommandée)), avec maintenant [un espace pour l'association](https://matrix.to/#/#osgeofr:osgeo.org) avec un [salon général](https://matrix.to/#/#general-osgeofr:osgeo.org) et un [salon pour les rencontres QGIS-fr](https://matrix.to/#/#qgisfr:osgeo.org), [QGIS.org](https://matrix.to/#/#qgis:osgeo.org) et d'autres projets anglophones ([OpenStreetMap](https://wiki.openstreetmap.org/wiki/Matrix) bien sûr) comme francophones ([mViewer](https://matrix.to/#/#mviewer:matrix.org), le [plugin IDG pour QGIS](https://matrix.to/#/!DqHgKIoltGIikFRreo:matrix.org?via=matrix.org&via=craig.fr), les communautés [Geotrek](https://matrix.to/#/#geotrek:matrix.org) et [GeoNature](https://matrix.to/#/#geonature:matrix.org)...) ou bilingues ([Panoramax](https://matrix.to/#/#panoramax_fr:matrix.org), [QDT](https://matrix.to/#/#qdt:matrix.org)...) ;
 - il est également sous-jacent aux applications sécurisées de l'État Français comme [Tchap](https://tchap.gouv.fr/) et bénéficie donc de soutiens de poids ;
 
 Bon, par contre, côté ergonomie et facilité d'utilisation... comment dire... Bienvenue dans la Matrice, voici un tutoriel pour faire passer la pilule (rouge) ! :pill: :grin:
@@ -165,15 +165,20 @@ Côté Geotribu, on ~~s'efforce~~ se fait plaisir avec les messages arc-en-ciel,
 
 Je vous conseille d'installer une application mobile et/ou bureau pour suivre plus facilement les échanges. Les applications open source sont souvent allergiques aux notifications et mails de relance. Cela part d'un bon sentiment mais dans un monde numérique bruyant, on oublie vite ce qui est silencieux. Alors une fois l'onglet fermé...
 
-Surtout que je trouve l'application mobile Element très bien faite et ergonomique.
+Surtout que je trouve l'application mobile **Element Classic** très bien faite et ergonomique.
 
-![Application mobile Element - Volet latéral](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_mobile.webp){: loading=lazy width=150px } ![Application mobile Element - Favoris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_mobile_favoris.webp){: loading=lazy width=150px }
+![Application mobile Element Classic - Volet latéral](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_mobile.webp){: loading=lazy width=150px } ![Application mobile Element Classic - Favoris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_mobile_favoris.webp){: loading=lazy width=150px }
 {: align=middle }
 
 Vous pouvez la télécharger ici :
 
-[Télécharger l'application Element](https://element.io/download/){ .md-button }
+!!! warning "Element Classic plutôt qu'Element X"
+    L'application mobile Element a récemment été complètement réécrite et renommée Element X. Malheureusement, elle est très buggée et peu ergonomique pour le moment. Nous vous recommandons d'utiliser la version Element **Classic**, qui est plus stable, fonctionnelle et toujours maintenue à date.
+
+[:simple-element: Télécharger l'application Element **Classic**](https://element.io/download/#classic){ .md-button }
 {: align=middle }
+
+![Bannière de téléchargement de l'application mobile Element Classic](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/matrix_geotribu/matrix_element_mobile_classic_banner.webp){: .img-center loading=lazy }
 
 ### Gérer ses notifications
 
