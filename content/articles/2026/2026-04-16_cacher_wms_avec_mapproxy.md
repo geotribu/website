@@ -26,6 +26,8 @@ tags:
 
 Dans certains contextes qu'il est possible de rencontrer, des utilisateurs de QGIS peuvent être amenés à consommer du WMS et des tuiles, avec des enjeux et défis de connectivité et performances, compte-tenu du fait que les serveurs sont parfois distants des utilisateurs finaux. Aussi, la bande passante des réseaux dans lesquels les postes QGIS demandent des flux n'est pas toujours garantie, alors il faut parfois se creuser la tête pour rendre un usage fluide de ces flux, dans notre logiciel SIG Desktop préféré.
 
+## MapProxy : quèsaco ?
+
 Une brique existe pour cela, [MapProxy](https://mapproxy.org/) : opensource, léger et svelte, écrit en Python et qui porte plutôt bien son nom : un proxy de cartes, qui va servir à mettre en cache des flux générés par **d'autres** serveurs cartographiques. L'avantage est déjà que MapProxy possède, à l'instar d'autres serveurs géographiques la possibilité de mettre en cache les tuiles servies, et ce de différentes manières : fichiers classiques, mbtiles, geopackage, redis, s3... Aussi, MapProxy permet comme son nom l'indique de servir de proxy, c'est-à-dire de relai de flux entre un serveur carto et d'autres clients, qui peuvent être par ex. QGIS, du WebGIS, d'autres serveurs carto...
 
 La configuration est basée sur des fichiers [YAML](https://yaml.org/spec/), ce qui peut faciliter des automatisations et des déploiements d'instances iso.
@@ -63,7 +65,7 @@ graph TD
 
     subgraph Col2[ ]
         direction LR
-        mapproxyZ1[🤖 mapproxy zone 1]
+        mapproxyZ1[🤖 MapProxy zone 1]
     end
 
     subgraph Col3[ ]
@@ -74,7 +76,7 @@ graph TD
 
     ClientZ11 --> |1: ✉️ Demande le flux| mapproxyZ1
     mapproxyZ1 ---> D1{2: 🌀 Ressource<br>en cache ?}
-    D1 --> |✅ Oui<br>📦 retourne la ressource| ClientZ11
+    D1 --> |✅ Oui<br>📦 Retourne la ressource| ClientZ11
     D1 --> |❌ Non| R1Z1[3: ✉️ Demande la ressource]
     R1Z1 --> ServeurCentral
     ServeurCentral --> |4: 👷 Calcule la ressource| ServeurCentral
@@ -82,8 +84,6 @@ graph TD
     mapproxyZ1 --> |6: 🌀 Met en cache<br>la ressource| mapproxyZ1
     mapproxyZ1 --> |7: 📦 Retourne la ressource| ClientZ11
 ```
-
-Aussi possible de mettre en place [du _load balancing_](https://fr.wikipedia.org/wiki/R%C3%A9partition_de_charge) pour des flux carto, avec plusieurs instances mapproxy configurées de la même manière, mais on ne s'étendra pas trop sur ce cas ici.
 
 ## Mise en route avec un exemple
 
