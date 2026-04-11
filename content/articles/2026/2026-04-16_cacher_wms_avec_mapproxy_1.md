@@ -18,7 +18,7 @@ tags:
     - WMS
 ---
 
-# Servir du WMS caché avec MapProxy
+# Servir du WMS caché avec MapProxy - partie 1
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
@@ -31,6 +31,8 @@ Dans certains contextes qu'il est possible de rencontrer, des utilisateurs de QG
 Une brique existe pour cela, [MapProxy](https://mapproxy.org/) : opensource, léger et svelte, écrit en Python et qui porte plutôt bien son nom : un proxy de cartes, qui va servir à mettre en cache des flux générés par **d'autres** serveurs cartographiques. L'avantage est déjà que MapProxy possède, à l'instar d'autres serveurs géographiques la possibilité de mettre en cache les tuiles servies, et ce de différentes manières : fichiers classiques, mbtiles, geopackage, redis, s3... Aussi, MapProxy permet comme son nom l'indique de servir de proxy, c'est-à-dire de relai de flux entre un serveur carto et d'autres clients, qui peuvent être par ex. QGIS, du WebGIS, d'autres serveurs carto...
 
 La configuration est basée sur des fichiers [YAML](https://yaml.org/spec/), ce qui peut faciliter des automatisations et des déploiements d'instances iso.
+
+À noter qu'[Arnaud](../../team/arnaud-vandecasteele.md) en parlait déjà en 2010, au travers [de cet article](../2010/2010-04-23_accelerer-et-personnaliser-services-WMS-avec-MapProxy.md) qui explique comment installer un serveur local, avec environnement virtuel Python.
 
 ## Cas d'usage de MapProxy
 
