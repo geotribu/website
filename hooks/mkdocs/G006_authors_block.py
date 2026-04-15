@@ -23,6 +23,7 @@ from mkdocs.structure.pages import Page
 
 
 logger = logging.getLogger("mkdocs")
+log_prefix = f"[{__name__}] "
 
 dico_contributors = {}
 exclude_files = [
@@ -65,7 +66,8 @@ def on_files(files: Files, config: MkDocsConfig):
             if AUTHOR_ARTICLES_AUTOLIST_START in content:
                 authors_with_existing_autolist.add(filepath.stem)
                 logger.debug(
-                    f"[G006] Liste auto-générée déjà présente pour : {filepath.stem}"
+                    log_prefix
+                    + f"[G006] Liste auto-générée déjà présente pour : {filepath.stem}"
                 )
 
 
@@ -83,7 +85,8 @@ def on_page_markdown(
         page_authors = page.meta.get("authors")
         if not isinstance(page_authors, list):
             logger.warning(
-                f"L'entrée 'authors' de l'en-tête de la page '{page.file.abs_src_path}' est incorrecte."
+                log_prefix
+                + f"L'entrée 'authors' de l'en-tête de la page '{page.file.abs_src_path}' est incorrecte."
             )
             return
 
@@ -100,7 +103,8 @@ def on_page_markdown(
             else:
                 if author_slug not in dico_contributors:
                     logger.warning(
-                        f"L'auteur/ice '{author}' du contenu '{page.file.abs_src_path}' "
+                        log_prefix
+                        + f"L'auteur/ice '{author}' du contenu '{page.file.abs_src_path}' "
                         f"n'a pas de page correspondante : {author_slug}"
                     )
                     continue
@@ -113,7 +117,8 @@ def on_page_markdown(
                         dico_contributors.get(author_slug) + 1
                     )
                     logger.debug(
-                        f"[G006] La liste des articles existe déjà pour '{author_slug}'."
+                        log_prefix
+                        + f"[G006] La liste des articles existe déjà pour '{author_slug}'."
                     )
                 else:
 
@@ -174,3 +179,31 @@ def on_page_markdown(
             author_block,
             markdown,
         )
+
+
+def on_post_build(config: MkDocsConfig):
+    for author_slug, count in dico_contributors.items():
+        # auteuricess ayant au moins 1 article ET dont la liste a été
+        # créée durant ce build.
+        if count == 0 or author_slug in authors_with_existing_autolist:
+            continue
+
+        author_file_path = Path(f"content/team/{author_slug}.md")
+        if not author_file_path.exists():
+            continue
+
+        content = author_file_path.read_text(encoding="UTF-8")
+
+        # on ajoute le marqueur de fin que si le marqueur de début
+        # est présent mais que la fin est absente
+        if (
+            AUTHOR_ARTICLES_AUTOLIST_START in content
+            and AUTHOR_ARTICLES_AUTOLIST_END not in content
+        ):
+            with author_file_path.open("a", encoding="UTF-8") as f:
+                f.write(f"\n\n{AUTHOR_ARTICLES_AUTOLIST_END}\n")
+            logger.info(
+                log_prefix
+                + "Balise de fin de liste autogénérée des articles ajoutée à la "
+                f"page '{author_slug}' ({count} article(s))."
+            )
