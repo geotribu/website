@@ -38,7 +38,7 @@ La configuration est basée sur des fichiers [YAML](https://yaml.org/spec/), ce 
 
 Le site de MapProxy présente un premier cas d'usage, où un serveur `MapProxy` cache et sert à des clients finaux des flux générés par plusieurs autres serveurs :
 
-![Architecture avec un mapproxy qui sert des flux en provenance d'autres serveurs carto à des clients](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/servir_wms_cache_mapproxy/mapproxy-overview.webp){: .img-center loading=lazy }
+![Architecture avec un mapproxy qui sert des flux en provenance d'autres serveurs carto à des clients](https://cdn.geotribu.fr/img/articles-blog-rdp/logiciels/MapProxy/mapproxy_schema.png){: .img-center loading=lazy }
 
 On note déjà que les flux en entrée du MapProxy peuvent être du WMS ou de la tuile (par exemple les couches `XYZ` dans QGIS), fournies par exemple par MapServer, GeoServer, QGIS Server...
 
