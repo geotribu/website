@@ -33,6 +33,11 @@ exclude_files = [
     "sponsoring.md",
 ]
 
+# balises pour éviter de dupliquer la section "Liste de mes articles" autogénérée
+authors_with_existing_autolist: set[str] = set()
+AUTHOR_ARTICLES_AUTOLIST_START = "<!-- --8<-- [start:author-articles-autolist] -->"
+AUTHOR_ARTICLES_AUTOLIST_END = "<!-- --8<-- [end:author-articles-autolist] -->"
+
 regex_pattern = re.compile(
     pattern="<!-- geotribu:authors-block -->",
     flags=re.I | re.M,
@@ -53,6 +58,15 @@ def on_files(files: Files, config: MkDocsConfig):
             and Path(f.abs_src_path).name not in exclude_files
         ):
             dico_contributors[Path(f.abs_src_path).stem] = 0
+
+            # Si y'a déjà le marqueur de début, on met la page auteur dans une liste à
+            # ignorer au prochain build.
+            content = filepath.read_text(encoding="UTF-8")
+            if AUTHOR_ARTICLES_AUTOLIST_START in content:
+                authors_with_existing_autolist.add(filepath.stem)
+                logger.debug(
+                    f"[G006] Liste auto-générée déjà présente pour : {filepath.stem}"
+                )
 
 
 # @mkdocs.plugins.event_priority(-100)
@@ -79,62 +93,80 @@ def on_page_markdown(
             author_block = "\n## Auteur·ice {: data-search-exclude }\n"
 
         for author in page_authors:
+            author_slug = sluggy(author)
+
             if author == "Geotribu":
                 author_block += '### L\'équipe Geotribu\n\n--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md:author-sign-block"\n\n'
             else:
-                if sluggy(author) not in dico_contributors:
+                if author_slug not in dico_contributors:
                     logger.warning(
                         f"L'auteur/ice '{author}' du contenu '{page.file.abs_src_path}' "
-                        f"n'a pas de page correspondante : {sluggy(author)}"
+                        f"n'a pas de page correspondante : {author_slug}"
                     )
                     continue
-                author_block += f'### [{author}](../../team/{sluggy(author)}.md "Voir la page complète de l\'auteur·ice avec la liste de ses articles")\n\n--8<-- "content/team/{sluggy(author)}.md:author-sign-block"\n\n'
+                author_block += f'### [{author}](../../team/{author_slug}.md "Voir la page complète de l\'auteur·ice avec la liste de ses articles")\n\n--8<-- "content/team/{author_slug}.md:author-sign-block"\n\n'
 
-                # -- Ajoute la page à la liste des articles dans la page auteur
-                articles_headers = ""
-                if dico_contributors.get(sluggy(author)) == 0:
-                    articles_headers = "\n\n## Liste de mes articles\n"
-                dico_contributors[sluggy(author)] = (
-                    dico_contributors.get(sluggy(author)) + 1
-                )
-
-                # date
-                item_date = format_date(
-                    date=page.meta.get("date"), format="long", locale="fr_FR"
-                )
-
-                # icône
-                item_icon = ""
-                if page.meta.get("icon"):
-                    item_icon = f" :{page.meta.get('icon').replace('/', '-')}:"
-
-                # hyperlink data
-                list_item_link_data = ""
-                if (
-                    page.meta.get("description")
-                    and page.meta.get("description") != page.title
-                ):
-                    list_item_link_data += escape(
-                        page.meta.get("description"), quote=True
+                if author_slug in authors_with_existing_autolist:
+                    # liste autogénérée déjà présente dans le fichier, probablement via
+                    # un précédent build (rebuild)
+                    dico_contributors[author_slug] = (
+                        dico_contributors.get(author_slug) + 1
                     )
-                if page.meta.get("tags"):
+                    logger.debug(
+                        f"[G006] La liste des articles existe déjà pour '{author_slug}'."
+                    )
+                else:
+
+                    # -- Ajoute la page à la liste des articles dans la page auteur
+                    articles_headers = ""
+
+                    if dico_contributors.get(author_slug) == 0:
+                        # intère une balise pour éviter de dupliquer cette section quand
+                        # plusieurs builds sont successivement lancés
+                        articles_headers += f"\n{AUTHOR_ARTICLES_AUTOLIST_START}"
+                        articles_headers += "\n## Liste de mes articles\n"
+
+                    dico_contributors[author_slug] = (
+                        dico_contributors.get(author_slug) + 1
+                    )
+
+                    # date
+                    item_date = format_date(
+                        date=page.meta.get("date"), format="long", locale="fr_FR"
+                    )
+
+                    # icône
+                    item_icon = ""
+                    if page.meta.get("icon"):
+                        item_icon = f" :{page.meta.get('icon').replace('/', '-')}:"
+
+                    # hyperlink data
+                    list_item_link_data = ""
                     if (
                         page.meta.get("description")
                         and page.meta.get("description") != page.title
                     ):
-                        list_item_link_data += "<br/><br/>"
-                    list_item_link_data += (
-                        "<i>Mots-clés : "
-                        f"{escape(', ', quote=True).join(page.meta.get('tags'))}</i>"
-                    )
+                        list_item_link_data += escape(
+                            page.meta.get("description"), quote=True
+                        )
+                    if page.meta.get("tags"):
+                        if (
+                            page.meta.get("description")
+                            and page.meta.get("description") != page.title
+                        ):
+                            list_item_link_data += "<br/><br/>"
+                        list_item_link_data += (
+                            "<i>Mots-clés : "
+                            f"{escape(', ', quote=True).join(page.meta.get('tags'))}</i>"
+                        )
 
-                with Path(f"content/team/{sluggy(author)}.md").open(
-                    "a", encoding="UTF-8"
-                ) as author_file:
-                    author_file.write(articles_headers)
-                    author_file.write(
-                        f"\n-{item_icon} [{escape(page.title, quote=True)}](../{page.file.src_uri} '{list_item_link_data}') - _publié le {item_date}_"
-                    )
+                    with Path(f"content/team/{author_slug}.md").open(
+                        "a", encoding="UTF-8"
+                    ) as author_file:
+                        author_file.write(articles_headers)
+                        author_file.write(
+                            f"\n-{item_icon} [{escape(page.title, quote=True)}](../{page.file.src_uri} '{list_item_link_data}') - _publié le {item_date}_"
+                        )
 
         # on cherche et remplace la balise de bloc de signature en ignorant la casse
         # (re.I) et en gérant le multi-ligne (re.M)
