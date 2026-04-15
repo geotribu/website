@@ -24,7 +24,7 @@ tags:
 
 ![Logo MapProxy](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapproxy.png){: .img-thumbnail-left }
 
-Dans certains contextes qu'il est possible de rencontrer, des utilisateurs de QGIS peuvent être amenés à consommer du WMS et des tuiles, avec des enjeux et défis de connectivité et performances, compte-tenu du fait que les serveurs sont parfois distants des utilisateurs finaux. Aussi, la bande passante des réseaux dans lesquels les postes QGIS demandent des flux n'est pas toujours garantie, alors il faut parfois se creuser la tête pour rendre un usage fluide de ces flux, dans notre logiciel SIG Desktop préféré.
+Dans certains contextes, des utilisateurs de QGIS peuvent être amenés à consommer du WMS et des tuiles, avec des enjeux et défis de connectivité et performances, compte-tenu du fait que les serveurs sont parfois distants des utilisateurs finaux. Aussi, la bande passante des réseaux dans lesquels les postes QGIS demandent des flux n'est pas toujours garantie, alors il faut parfois se creuser la tête pour rendre un usage fluide de ces flux, dans notre logiciel SIG Desktop préféré.
 
 ## MapProxy : quèsaco ?
 
