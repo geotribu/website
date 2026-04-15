@@ -98,10 +98,10 @@ Concernant les sources "centrales", étant donné qu'on n'a pas vraiment de serv
 
 Pour rappel, il est déjà possible d'ajouter ces couches à QGIS, en ajoutant par exemple une nouvelle source `XYZ`, ou bien via une connexion WMS :
 
-- _OpenStreetMap_: `https://tile.openstreetmap.org/{z}/{x}/{y}.png`, qui [propose d'ailleurs un guide pour configurer MapProxy avec OSM](https://wiki.openstreetmap.org/wiki/MapProxy).
-- _Géoplateforme_: on va utiliser la couche [`BU.building` du service _WMS-Vecteur_](https://geoservices.ign.fr/documentation/services/services-geoplateforme/diffusion#70068). Ce service est limité à 50 requêtes par seconde.
-- _Googly Hybrid_: `https://mt.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}`
-- _Bing Aerial_: `http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1` - ici on n'utilise pas de `x/y/z` mais un paramètre `q`, pour _quadkey_. Rien à voir avec un véhicule de kéké des forêts, c'est plutôt une manière d'indexer spatialement des tuiles carrées. [Plus d'infos ici](https://medium.com/data-science/geospatial-indexing-with-quadkeys-d933dff01496).
+- _OpenStreetMap_ : `https://tile.openstreetmap.org/{z}/{x}/{y}.png`, qui [propose d'ailleurs un guide pour configurer MapProxy avec OSM](https://wiki.openstreetmap.org/wiki/MapProxy).
+- _Géoplateforme_ : on va utiliser la couche [`BU.building` du service _WMS-Vecteur_](https://geoservices.ign.fr/documentation/services/services-geoplateforme/diffusion#70068). Ce service est limité à 50 requêtes par seconde.
+- _Googly Hybrid_ : `https://mt.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}`
+- _Bing Aerial_ : `http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1` - ici on n'utilise pas de `x/y/z` mais un paramètre `q`, pour _quadkey_. Rien à voir avec un véhicule de kéké des forêts, c'est plutôt une manière d'indexer spatialement des tuiles carrées. [Plus d'infos ici](https://medium.com/data-science/geospatial-indexing-with-quadkeys-d933dff01496).
 
 ![Configuration d'une source XYZ avec les tuiles d'OpenStreetMap](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/servir_wms_cache_mapproxy/xyz_openstreetmap_source_config.webp){: .img-center loading=lazy }
 
