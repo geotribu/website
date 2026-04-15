@@ -28,15 +28,17 @@ tags:
 
 Depuis sa version 3.11 (et son intégration à QGIS 3.44), la CLI (Command Line Interface / Interface en Ligne de Commande) de `GDAL` a été entièrement revue. On va ici présenter cette nouvelle interface et brosser un aperçu de ce qu'on peut réaliser avec `GDAL` dans un court article. *Nota bene : COURT on a dit.*
 
-## Gdal qu'est ce que c'est ?
+## GDAL qu'est ce que c'est ?
 
-`GDAL` est une librairie de programmes open source en C/C++ permettant de réaliser des convertion de fichier vecteur/rasteur, et des traitements raster. Cette librairie se cache derrière à peu près tous les logiciels contenant "SIG" dans leur description. Quand vous demandez à QGIS d'enregistrer votre fichier `geopackage` en `flatgeobuf` ou en `geoparquet` pour les amateur.trices de formats modernes mais étranges (perso je ne travaille plus qu'en [DuckLake](https://duckdb.org/2025/05/27/ducklake.html) Spatial pour embêter mes collègues), en réalité QGIS *demande* à GDAL de réaliser l'opération.
+![Logo GDAL](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gdal.png){: .img-thumbnail-left}
 
-Les anciens noms des programmes dédiés au vecteur font référence à ogr, une ancienne librairie depuis *absorbée* par GDAL.
+[`GDAL`](https://gdal.org/en/stable/) est une librairie de programmes open source en C/C++ permettant de réaliser des convertion de fichier vecteur/rasteur, et des traitements raster. Cette librairie se cache derrière à peu près tous les logiciels contenant "SIG" dans leur description. Quand vous demandez à QGIS d'enregistrer votre fichier `geopackage` en `flatgeobuf` ou en `geoparquet` pour les amateur.trices de formats modernes mais étranges (perso je ne travaille plus qu'en [DuckLake](https://duckdb.org/2025/05/27/ducklake.html) Spatial pour embêter mes collègues), en réalité QGIS *demande* à GDAL de réaliser l'opération.
+
+Les anciens noms des programmes dédiés au vecteur font référence à `ogr`, une ancienne librairie depuis *absorbée* par GDAL.
 
 On ne le répétera jamais assez mais sans GDAL, presque rien n'existerait dans le monde de la géomatique, qu'elle soit libre ou propriétaire. A tout ces égards, cette librairie fait partie de la sainte trinité [gdal](https://gdal.org/en/stable/)/[geos](https://libgeos.org/)/[proj](https://proj.org/en/stable/).
 
-Maitriser `GDAL`, c'est être capable de remplacer des ~~interfaces graphiques~~ logiciels coutant des dizaines de milliers d'euros.
+Maîtriser `GDAL`, c'est être capable de remplacer des ~~interfaces graphiques~~ logiciels coûtant des dizaines de milliers d'euros.
 
 Cependant, historiquement les programmes `GDAL` étaient ... comment dire ... peut normés entre eux, par exemple `gdal_translate` (le programme servant aux conversions raster) demandait ses fichiers d'entrée / sortie dans cet ordre : in -> out alors qu'`ogr2ogr` (le programme servant aux conversions vecteur) lui demandait : out -> in. De plus les plus gros programmes, ceux qui "faisaient tout" on été supprimés et remplacés par des équivalents plus spécifiques.
 Pas de panique, les anciennes commandes restent disponibles pour garder vos scripts existants en vie.
@@ -64,9 +66,9 @@ Exemple :
 gdal raster convert --overwrite in.jp2 out.tif
 ```
 
-Commande pour convertir un fichier in.jp2 au format geotiff en autorisant l'écrasement d'un potentiel fichier out.tif déjà existant.
+Commande pour convertir un fichier `in.jp2` au format geotiff en autorisant l'écrasement d'un potentiel fichier `out.tif` déjà existant.
 
-Pour du vecteur on peut aussi importer un shape (beurk) dans une base Postgis
+Pour du vecteur on peut aussi importer un shape (beurk) dans une base PostGIS :
 
 ```sh
 gdal vector convert --append in.shp PG:"dbname='my_db' user='me' password='admin123' schemas='my_schema'"
@@ -74,15 +76,15 @@ gdal vector convert --append in.shp PG:"dbname='my_db' user='me' password='admin
 
 Une différence par rapport à l'ancienne CLI est l'obligation de l'utilisation de l'option `append`, même pour créer une table non existante.
 
-On peut même copier le contenu d'un flux wfs vers un geopackage.
+On peut même copier le contenu d'un flux WFS vers un geopackage :
 
 ```sh
 gdal vector convert --overwrite --output-layer=arrondissement_municipal WFS:"https://data.geopf.fr/wfs/ows?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=BDTOPO_V3:arrondissement_municipal" bdtopo.gpkg
 ```
 
-On pourrait imaginer combiner les commandes précédantes pour importer le contenu d'un flux WFS vers une base PostgreSQL, mais pour ça on préfèrera utiliser le [Foreign Data Wrapper OGR](https://github.com/pramsey/pgsql-ogr-fdw) car Saint Paul Ramsey veille sur nous. (rejoignez moi dans mon culte esothérique secret vénérant la sainte trinité gdal/geos/proj, représentée par Saint Paul Ramsey, Saint Even Rouault et la Sainte papesse Anita Graser. Venez, on est pas méchant, ça vous coute juste une licence ESRI pour l'adhésion mais on pourra en discuter après la première réunion).
+On pourrait imaginer combiner les commandes précédentes pour importer le contenu d'un flux WFS vers une base PostgreSQL, mais pour ça on préfèrera utiliser le [Foreign Data Wrapper OGR](https://github.com/pramsey/pgsql-ogr-fdw) car Saint Paul Ramsey veille sur nous. (rejoignez moi dans mon culte esothérique secret vénérant la sainte trinité gdal/geos/proj, représentée par Saint Paul Ramsey, Saint Even Rouault et la Sainte papesse Anita Graser. Venez, on est pas méchant, ça vous coute juste une licence ESRI pour l'adhésion mais on pourra en discuter après la première réunion).
 
-Si certain.nes d'entre vous ont envie de faire comme le bouton "calculer un indice radiométrique" d'un quelconque logiciel de télédétection, on peut appliquer des formules avec `gdal raster calc`. On assigne les bandes/rasters à des lettres qu'on appellera ensuite dans la formule. Laissez bien sur toutes les options en *par défaut*.
+Si certain.nes d'entre vous ont envie de faire comme le bouton "calculer un indice radiométrique" d'un quelconque logiciel de télédétection, on peut appliquer des formules avec `gdal raster calc`. On assigne les bandes/rasters à des lettres qu'on appellera ensuite dans la formule. Laissez bien sur toutes les options *par défaut* :
 
 ```sh
 gdal raster calc -i "A=ir.tif" -i "B=r.tif" --calc "(A-B)/(A+B)" -o out.tif
@@ -94,7 +96,7 @@ On peut s'en servir pour créer des [Cloud Optimized Geotiff](https://guide.clou
 gdal raster convert --ouput-format=COG -co COMPRESS=ZSTD -co BIGTIFF=IF_NEEDED in.tif out.tif
 ```
 
-Avec les `-co` qui servent à passer les options spécifiques au driver de sortie. On retrouvera ces différents drivers [ici](https://gdal.org/en/stable/drivers/raster/index.html) pour le raster, et [ici](https://gdal.org/en/stable/drivers/vector/index.html) pour le vecteur.
+Avec les `--co` qui servent à passer les options spécifiques au driver de sortie. On retrouvera ces différents drivers [ici](https://gdal.org/en/stable/drivers/raster/index.html) pour le raster, et [ici](https://gdal.org/en/stable/drivers/vector/index.html) pour le vecteur.
 
 Ou bien simplement pour demander des informations sur une couche :
 
@@ -113,7 +115,8 @@ gdal raster hillshade --zfactor=2 in.tif out.tif
 Une autre nouveauté fait partie de cette mise à jour : les pipelines [vecteurs](https://gdal.org/en/stable/programs/gdal_vector_pipeline.html#gdal-vector-pipeline) ou [raster](https://gdal.org/en/stable/programs/gdal_raster_pipeline.html#gdal-raster-pipeline).
 Ils permettent d'appeler un programme nommé `pipeline` qui va enchainer les traitements de plusieurs programmes `GDAL` avant d'écrire le fichier de sortie.
 
-Les commandes utilisant un pipeline doivent toutes commencer par `read` et se terminer par `write`, les différentes opérations étant séparées par des `!`.
+!!! warning
+    Les commandes utilisant un pipeline doivent toutes commencer par `read` et se terminer par `write`, les différentes opérations étant séparées par des `!`.
 
 ```mermaid
 flowchart
@@ -144,9 +147,9 @@ Qu'on lira ensuite avec :
 gdal vector info in_epsg_2154.gdalg.json
 ```
 
-(exemple issu de la documentation officielle de GDAL)
+(L'exemple ci-dessus est issu de la documentation officielle de GDAL)
 
-On peut ainsi imaginer un pipeline qui reprojetera une couche, avant de la filtrer sur la valeur d'un de ses attributs.
+On peut ainsi imaginer un pipeline qui reprojetera une couche, avant de la filtrer sur la valeur d'un de ses attributs :
 
 ```sh
 gdal vector pipeline ! read in.gpkg ! reproject --dst-crs=EPSG:2154 ! filter --where "mon_champ = 'valeur'" ! write out.gdalg.json
@@ -197,14 +200,14 @@ gdal vsi copy /vsizip//vsicurl/https://www.ign.fr/bd_topo/my_file.zip/my_layer_i
 Enfin, on peut aussi profiter de `GDAL` pour générer des `SOzip` (Seek-Optimized Zips), grace au programme `sozip`. Des zips faits pour qu'on cherche vite à l'intérieur. C'est bizarre, ça parait être le penchant de "lire une donnée dans un zip sans avoir à le dézipper" vu juste haut dessus ;).
 
 ```sh
-gdal vsi sozip create my_gpkg.zip my.gpkg
+gdal vsi sozip create my.gpkg my.gpkg.zip
 ```
 
 ## l'API Python
 
-Enfin, toute cette modernisation impacte evidemment les API, et celle qui nous interesse ici, l'[API Python](https://gdal.org/en/stable/programs/gdal_cli_from_python.html).
+Enfin, toute cette modernisation impacte évidemment les API, et celle qui nous interesse ici, l'[API Python](https://gdal.org/en/stable/programs/gdal_cli_from_python.html).
 
-On rappelle que de façon curieuse, l'api Python de GDAL s'installe et s'importe comme ceci :
+On rappelle que de façon curieuse, l'API Python de GDAL s'installe et s'importe comme ceci :
 
 ```sh
 pip install gdal
@@ -224,7 +227,7 @@ Ensuite, c'est simple, ils s'appellent comme ceci :
 gdal.Run("vector"/"raster"/"vsi", "programme", option(s), input="in.tif", output="out.tif)
 ```
 
-exemple pour importer un fichier csv dans une base Postgres (plutôt que d'utiliser `COPY` de postgres, plus fastidieux):
+Exemple pour importer un fichier csv dans une base PostgreSQL (plutôt que d'utiliser `COPY` de postgres, plus fastidieux):
 
 ```python
 gdal.Run("vector", "convert", append=True, format="PostgreSQL", lco="LAUNDER=NO", input=my_file.csv, output="PG:dbname='insee' schemas='wip' user='me' password='admin123'")
