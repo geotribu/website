@@ -14,7 +14,6 @@ repos:
         files: ^content/team/.*\.md$
         language: python
         pass_filenames: true
-        types: [markdown]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
@@ -28,6 +27,9 @@ repos:
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: fix-byte-order-marker
+      - id: mixed-line-ending
+        args:
+          - --fix=lf
       - id: trailing-whitespace
         args:
           - --markdown-linebreak-ext=md
