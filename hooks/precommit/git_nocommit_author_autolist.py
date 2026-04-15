@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import re
 import sys
-from collections.abc import Iterable
 from pathlib import Path
 
 regex_pattern = re.compile(
@@ -29,13 +28,15 @@ def process_file(path: Path) -> bool:
 
     if cleaned != original:
         path.write_text(cleaned, encoding="utf-8")
-        print(f"Stripped autolist block(s) in {path}")
+        print(
+            f"La liste autogénérée d'articles a été retirée de la page de l'auteurice {path}"
+        )
         return True
 
     return False
 
 
-def main(argv: Iterable[str]) -> int:
+def main() -> int:
     """Entry point for the git hook.
 
     Returns:
