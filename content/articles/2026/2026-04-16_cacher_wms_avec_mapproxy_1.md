@@ -365,4 +365,4 @@ Regarder les logs avec `docker compose logs -f -n 200`, si tout est ok, on a mai
 
 <!-- geotribu:authors-block -->
 
-{% include "licenses/default.md" %}
+{% include "licenses/beerware.md" %}
