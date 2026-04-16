@@ -149,7 +149,7 @@ drwxr-xr-x 3 root root 4096 Dec 29 12:51 18
 
 En conclusion, nous avons vu comment instancier un serveur MapProxy, qui comme son nom l'indique permet de jouer au proxy et mettre en cache des tuiles en provenance de un ou plusieurs serveurs cartographiques, et à destination de clients consommateurs de WMS.
 
-J'attire l'attention sur l'utilisation des datasources qu'on peut être amenés à configurer et servir via MapProxy : important de lire etde  s'informer des conditions d'utilisation avant de se lancer.
+J'attire l'attention sur l'utilisation des datasources qu'on peut être amenés à configurer et servir via MapProxy : important de lire et de s'informer des conditions d'utilisation avant de se lancer.
 
 Et nous avons ici réalisé un setup rudimentaire, sans implémenter les requêtes WMS `GetFeature` et autres. Et généralement, en production il est toujours judicieux de décrire les flux servis avec des métadonnées.
 
