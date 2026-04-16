@@ -102,7 +102,7 @@ def on_page_markdown(
                 author_block += '### L\'équipe Geotribu\n\n--8<-- "content/toc_nav_ignored/snippets/authors/geotribu.md:author-sign-block"\n\n'
             else:
                 if author_slug not in dico_contributors:
-                    logger.warning(
+                    logger.error(
                         log_prefix
                         + f"L'auteur/ice '{author}' du contenu '{page.file.abs_src_path}' "
                         f"n'a pas de page correspondante : {author_slug}"
@@ -202,7 +202,7 @@ def on_post_build(config: MkDocsConfig):
         ):
             with author_file_path.open("a", encoding="UTF-8") as f:
                 f.write(f"\n\n{AUTHOR_ARTICLES_AUTOLIST_END}\n")
-            logger.info(
+            logger.debug(
                 log_prefix
                 + "Balise de fin de liste autogénérée des articles ajoutée à la "
                 f"page '{author_slug}' ({count} article(s))."
