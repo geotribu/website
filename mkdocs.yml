@@ -87,8 +87,6 @@ plugins:
         - boundlessgeo.com/*
         - i3.codeplex.com/*
         - drfhlmcehrc34.cloudfront.net/*
-  - redirects:
-      redirect_maps: {}
   - search:
       lang: fr
   - social:
