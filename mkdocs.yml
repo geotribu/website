@@ -27,6 +27,7 @@ hooks:
   - hooks/mkdocs/G005_jinja_filters.py
   - hooks/mkdocs/G006_authors_block.py
   - hooks/mkdocs/G007_social_share_buttons.py
+  - hooks/mkdocs/G008_rdp_url_to_latest.py
 
 # Plugins
 plugins:
