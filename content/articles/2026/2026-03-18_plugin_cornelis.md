@@ -11,6 +11,7 @@ description: Découverte et expérimentations avec le plugin Cornelis, pour mime
 icon: fontawesome/solid/paintbrush
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/cornelis_tesselation_final_2.png
 tags:
+    - art
     - Cornelis
     - QGIS
 ---
@@ -26,12 +27,12 @@ Connaissez-vous l'artiste [M.C. Escher](https://fr.wikipedia.org/wiki/Maurits_Co
 Il s'agit d'un artiste néerlandais du XXe siècle, connu notamment pour ses gravures sur bois et ses [lithographies](https://fr.wikipedia.org/wiki/Lithographie), souvent inspirées des mathématiques et des motifs de l'art islamique.
 
 ![Reptiles de M.C. Escher](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/Study_of_Regular_Division_of_the_Plane_with_Reptiles.webp){: .img-center loading=lazy }
-
 _[Reptiles](https://en.wikipedia.org/wiki/Reptiles_(M._C._Escher)) de M.C. Escher_
+{: align=middle }
 
 Il a notamment été influencé par les motifs du [palais de l'Alhambra, à Grenade](https://fr.wikipedia.org/wiki/Alhambra_(Grenade)) :
 
-![Alhambra par Juan Laurent, c. 1874, Department of Image Collections [archive], National Gallery of Art Library, Washington, D.C.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/Alhambra_by_Juan_Laurent.webp){: .img-center loading=lazy }
+![Alhambra par Juan Laurent, c. 1874, Department of Image Collections, National Gallery of Art Library, Washington, D.C.](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/Alhambra_by_Juan_Laurent.webp){: .img-center loading=lazy }
 
 Je suis personnellement plutôt sensible à cet art, et une récente découverte d'outillage QGIS permet de relier ceci avec les SIG !
 
@@ -53,9 +54,9 @@ Cet article aurait simplement pu reprendre ce _README_, qui est une œuvre d'art
 
 ## Création d'un "fond de carte" en guise de base au motif
 
-De temps à autre, je prends donc le temps de créer des cartes, dans QGIS, avec un SCR random, histoire d'en découvrir quelques uns, histoire d'admirer les artefacts des reprojections géodésiques et les _glitchs_ du _rendering_ de QGIS :two_hearts:...
+De temps à autre, je prends donc le temps de créer des cartes dans QGIS, avec un SCR random, histoire d'en découvrir quelques uns, histoire d'admirer les artefacts des reprojections géodésiques et les _glitchs_ du _rendering_ de QGIS :two_hearts:...
 
-Voici l'une d'elle, réalisée en période post-Noël. Et voici dans les grandes lignes la recette de création :
+Voici l'une d'elles, réalisée en période post-Noël. Et voici dans les grandes lignes la recette de création :
 
 1. Ouvrir un nouveau projet vide dans QGIS.
 
@@ -63,7 +64,7 @@ Voici l'une d'elle, réalisée en période post-Noël. Et voici dans les grandes
 
 1. Créer une grille avec l'algorithme de processing adéquat, en essayant différentes tailles.
 
-1. Ouvrir le dialogue du choix du SCR du projet QGIS actuel, explorer et se lâcher. Parfois j'utilise un générateur de nombres aléatoires, ceci dit QGIS affiche parfois un message disant l'impossibilité de reprojeter, ce qui je dois l'avouer dépasse mes compétences. Ici j'ai pris [le SCR _ESRI:102036_](https://spatialreference.org/ref/esri/102036/), soit le "South Pole Gnomonic" :smirk: En plus - le hasard fait bien les choses, j'avais regardé la veille [ce super documentaire, sur les traces du manchot empereur en Antarctique](https://www.arte.tv/fr/videos/060769-000-A/antarctica-sur-les-traces-de-l-empereur/)...
+1. Ouvrir le dialogue du choix du SCR du projet QGIS actuel, explorer et se lâcher. Parfois j'utilise un générateur de nombres aléatoires, ceci dit QGIS affiche parfois un message disant l'impossibilité de reprojeter, ce qui je dois l'avouer dépasse mes compétences. Ici j'ai pris [le SCR _ESRI:102036_](https://spatialreference.org/ref/esri/102036/), soit le "South Pole Gnomonic" :smirk:. En plus, le hasard fait bien les choses, j'avais regardé la veille [ce super documentaire, sur les traces du manchot empereur en Antarctique](https://www.arte.tv/fr/videos/060769-000-A/antarctica-sur-les-traces-de-l-empereur/)...
 
 1. Jouer avec les symbologies, les couleurs de remplissages, les bordures, etc... Personnellement j'aime bien le jaune, pas seulement parce que c'est rafraîchissant en été à l'apéro, mais aussi parce que c'est la couleur par défaut de la sélection dans QGIS !
 
@@ -73,7 +74,7 @@ Et voici la carte finale :
 
 ## Création d'un pavage avec le plugin Cornelis
 
-Maintenant, installons et utilisons [le plugin Cornelis](https://plugins.qgis.org/plugins/Cornelis) pour créer et décliner des motifs sur base de cette "carte".
+Maintenant, installons et utilisons [le plugin Cornelis](https://plugins.qgis.org/plugins/Cornelis) pour créer et décliner des motifs sur la base de cette "carte".
 
 À noter que ce plugin est en mode expérimental, il vous faudra donc activer les plugins expérimentaux dans vos paramètres.
 
@@ -85,7 +86,7 @@ Une fois installée, une boîte à outils vient s'intégrer dans QGIS. Voyons ce
 
 Il y a différents types de pavages disponibles, avec une image qui permet de prévisualiser ce que ce type de pavage fera.
 
-Une fois le type de pavage choisi, celui-ci est visible dans le canvas de QGIS, et peut être modifié / affiné à souhait :
+Une fois le type de pavage choisi, celui-ci est visible dans le canevas de QGIS et peut être modifié / affiné à souhait :
 
 ![Dessin d'un pavage dans QGIS avec le plugin Cornelis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/cornelis_tesselation_drawing.webp){: .img-center loading=lazy }
 
@@ -105,7 +106,7 @@ Et avec une autre tesselation :
 
 ![Résultat final - carte pavée 2 avec le plugin Cornelis](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/decouverte_plugin_cornelis/cornelis_tesselation_final_2.png){: .img-center loading=lazy }
 
-Un processus très sympa à dérouler, et j'apprécie particulièrement les capacités artistiques de QGIS qui ne sont plus à démontrer, et enrichies grâce à ce plugin Cornelis que je vous invite à essayer sur vos données vecteur !
+Un processus très sympa à dérouler ! J'apprécie particulièrement les capacités artistiques de QGIS qui ne sont plus à démontrer et qui sont enrichies grâce à ce plugin Cornelis que je vous invite à essayer sur vos données vecteur !
 
 <!-- geotribu:authors-block -->
 
