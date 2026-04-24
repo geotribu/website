@@ -112,4 +112,13 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     ] = latest_rdp
     logger.info(log_prefix + f"Redirection de /rdp/latest/ vers {latest_rdp} ajoutée.")
 
+    # redirect /articles/latest index to latest article
+    latest_article = latest_contents["articles"][0].get("url_rel") + ".md"
+    config.plugins["redirects"].config["redirect_maps"][
+        "articles/latest/index.md"
+    ] = latest_article
+    logger.info(
+        log_prefix + f"Redirection de /articles/latest/ vers {latest_article} ajoutée."
+    )
+
     return config
