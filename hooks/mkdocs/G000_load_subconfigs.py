@@ -106,7 +106,7 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     )
 
     # redirect /rdp/latest index to latest rdp
-    latest_rdp = latest_contents["rdp"][0].get("url_rel")
+    latest_rdp = latest_contents["rdp"][0].get("url_rel") + ".md"
     config.plugins["redirects"].config["redirect_maps"][
         "rdp/latest/index.md"
     ] = latest_rdp
