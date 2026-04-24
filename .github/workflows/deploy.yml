@@ -8,6 +8,8 @@ on:
       - ".github/workflows/deploy.yml"
       - "config/*.yml"
       - "content/**"
+      - hooks/macros/*.py
+      - hooks/mkdocs/*.py
       - "mkdocs.yml"
       - "requirements*.txt"
   workflow_dispatch:
