@@ -105,7 +105,7 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
         log_prefix + "Contenus récents ajoutés à la configuration globale du site."
     )
 
-    # redirect rdp index to latest rdp
+    # redirect /rdp/latest index to latest rdp
     rdp_files = sorted(Path("content/rdp/").glob("20*/rdp_20*.md"), reverse=True)
 
     if not rdp_files:
@@ -113,7 +113,9 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
 
     latest_rdp = str(rdp_files[0].relative_to("content/"))
 
-    config.plugins["redirects"].config["redirect_maps"]["rdp/index.md"] = latest_rdp
-    logger.info(log_prefix + f"Redirection de /rdp/ vers {latest_rdp} ajoutée.")
+    config.plugins["redirects"].config["redirect_maps"][
+        "rdp/latest/index.md"
+    ] = latest_rdp
+    logger.info(log_prefix + f"Redirection de /rdp/latest/ vers {latest_rdp} ajoutée.")
 
     return config
