@@ -1,23 +1,22 @@
 # Project information
-site_name: !ENV [MKDOCS_SITE_NAME, "Geotribu"]
+site_name: !ENV [ MKDOCS_SITE_NAME, "Geotribu" ]
 site_description: >-
-  Site indépendant de veille sur la géomatique libre et open source.
-  Articles, tutoriels et revues de presse (#GeoRDP) sur
-  l'information géographique, les SIG, la cartographie, la représentation des données...
+  Site indépendant de veille sur la géomatique libre et open source. Articles,
+  tutoriels et revues de presse (#GeoRDP) sur l'information géographique, les
+  SIG, la cartographie, la représentation des données...
 
-site_author: !ENV [MKDOCS_SITE_AUTHOR, "Geotribu"]
-site_url: !ENV [MKDOCS_SITE_URL, "https://geotribu.fr/"]
-copyright:
-  !ENV [MKDOCS_SITE_COPYRIGHT, '<span class="copyleft">&copy;</span> Geotribu']
+site_author: !ENV [ MKDOCS_SITE_AUTHOR, "Geotribu" ]
+site_url: !ENV [ MKDOCS_SITE_URL, "https://geotribu.fr/" ]
+copyright: !ENV [ MKDOCS_SITE_COPYRIGHT, "<span class=\"copyleft\">&copy;</span> Geotribu" ]
 
 # Repository
-repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/website"]
-repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/website"]
-edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/master/content"]
+repo_name: !ENV [ GITHUB_REPOSITORY, "geotribu/website" ]
+repo_url: !ENV [ MKDOCS_REPO_URL, "https://github.com/geotribu/website" ]
+edit_uri: !ENV [ MKDOCS_EDIT_URI, "edit/master/content" ]
 
 # Custom folder structure
-docs_dir: !ENV [MKDOCS_SOURCE_DIR, "./content"]
-site_dir: !ENV [MKDOCS_OUTPUT_DIR, "./build/mkdocs/site"]
+docs_dir: !ENV [ MKDOCS_SOURCE_DIR, "./content" ]
+site_dir: !ENV [ MKDOCS_OUTPUT_DIR, "./build/mkdocs/site" ]
 
 # Scripts pendant le build
 hooks:
@@ -27,7 +26,6 @@ hooks:
   - hooks/mkdocs/G005_jinja_filters.py
   - hooks/mkdocs/G006_authors_block.py
   - hooks/mkdocs/G007_social_share_buttons.py
-  - hooks/mkdocs/G008_rdp_url_to_latest.py
 
 # Plugins
 plugins:
@@ -37,7 +35,7 @@ plugins:
         - "*/templates/*"
         - "*.yml"
   - git-authors:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, false]
+      enabled: !ENV [ MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, false ]
       add_co_authors: true
       exclude:
         - index.md
@@ -45,7 +43,7 @@ plugins:
       show_email_address: false
       sort_authors_by: contribution
   - git-revision-date-localized:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, false]
+      enabled: !ENV [ MKDOCS_ENABLE_PLUGIN_GIT_DATES, false ]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
@@ -53,9 +51,8 @@ plugins:
       include_dir: content/toc_nav_ignored/snippets
       module_name: hooks/macros/custom_jinja
   - privacy:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
-      cache_dir:
-        !ENV [MKDOCS_PLUGIN_PRIVACY_EXTERNAL_CACHE_DIR, .cache/plugins/privacy]
+      enabled: !ENV [ MKDOCS_ENABLE_PLUGIN_PRIVACY, false ]
+      cache_dir: !ENV [ MKDOCS_PLUGIN_PRIVACY_EXTERNAL_CACHE_DIR, .cache/plugins/privacy ]
       links_attr_map:
         target: _blank
       assets_exclude:
@@ -91,9 +88,9 @@ plugins:
   - search:
       lang: fr
   - social:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, false]
-      cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
-      cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, false]
+      enabled: !ENV [ MKDOCS_ENABLE_PLUGIN_SOCIAL, false ]
+      cache_dir: !ENV [ MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social ]
+      cards: !ENV [ MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, false ]
       cards_exclude:
         - toc_nav_ignored/*.md
       cards_layout_options:
@@ -103,7 +100,7 @@ plugins:
         font_family: Ubuntu
   - termynal
   - typeset:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TYPESET, true]
+      enabled: !ENV [ MKDOCS_ENABLE_PLUGIN_TYPESET, true ]
 
 # Theme
 theme:
@@ -229,7 +226,7 @@ markdown_extensions:
   - pymdownx.saneheaders
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
-      auto_append: [content/toc_nav_ignored/snippets/glossaire.md]
+      auto_append: [ content/toc_nav_ignored/snippets/glossaire.md ]
       base_path:
         - "."
       check_paths: true
