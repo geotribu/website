@@ -85,7 +85,7 @@ Elle se décompose en 3 parties : Le panneau de gauche gère les options princip
 
 La partie centrale, en plus d'afficher le rendu, permet d'afficher le nom des options en bas et le paramétrage de la caméra : vue personnelle, freestyle, orthogonale ou isométrique.
 
-![panneau central](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_centre2.png "Panneau central"){: .img-center loading=lazy }
+![panneau central](https://cdn.geotribu.fr/img/tuto/aerialod/fenetre_centre.png "Panneau central"){: .img-center loading=lazy }
 
 ### Panneau de droite
 

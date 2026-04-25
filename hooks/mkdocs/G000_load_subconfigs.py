@@ -32,7 +32,7 @@ def get_latest_content(
     content_type: Literal["articles", "rdp"],
     count: int = 10,
     social_card_image_base: str = "https://geotribu.fr/assets/images/social/",
-):
+) -> list[Page]:
     output_contents_list: list[Page] = []
 
     if content_type == "articles":
@@ -104,3 +104,21 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     logger.info(
         log_prefix + "Contenus récents ajoutés à la configuration globale du site."
     )
+
+    # redirect /rdp/latest index to latest rdp
+    latest_rdp = latest_contents["rdp"][0].get("url_rel") + ".md"
+    config.plugins["redirects"].config["redirect_maps"][
+        "rdp/latest/index.md"
+    ] = latest_rdp
+    logger.info(log_prefix + f"Redirection de /rdp/latest/ vers {latest_rdp} ajoutée.")
+
+    # redirect /articles/latest index to latest article
+    latest_article = latest_contents["articles"][0].get("url_rel") + ".md"
+    config.plugins["redirects"].config["redirect_maps"][
+        "articles/latest/index.md"
+    ] = latest_article
+    logger.info(
+        log_prefix + f"Redirection de /articles/latest/ vers {latest_article} ajoutée."
+    )
+
+    return config
