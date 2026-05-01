@@ -1,6 +1,6 @@
 # Development
 # -----------------------
-geotribu>=0.35.1,<1
+geotribu>=0.35.2,<1
 pre-commit>=4.5,<5
 
 # Project requirements
