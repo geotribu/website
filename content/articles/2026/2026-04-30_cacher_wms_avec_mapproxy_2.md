@@ -24,7 +24,7 @@ tags:
 
 ![Logo MapProxy](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/mapproxy.png){: .img-thumbnail-left }
 
-Voici la deuxième partie de l'article sur [MapProxy](https://mapproxy.org/), suite du premier lors duquel nous avons installé une instance qui sert quelques couches en WMS.
+Voici la deuxième partie de l'article sur [MapProxy](https://mapproxy.org/), suite du [premier lors duquel nous avons installé une instance qui sert quelques couches en WMS](./2026-04-16_cacher_wms_avec_mapproxy_1.md).
 
 Voyons maintenant comment l'utiliser et l'optimiser !
 
