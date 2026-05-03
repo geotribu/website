@@ -83,7 +83,7 @@ coverages:
     srs: EPSG:4326
 ```
 
-Pour le seed `paris19osm_seed`, les tuiles correspondantes au niveaux de zoom de 8 à 18 seront générées avec une telle config. Aussi, toutes les tuiles mise en cache il y a plus de 4 semaines seront régénérées (clé `remove_before`). [La doc](https://mapproxy.github.io/mapproxy/latest/seed.html#seeding) montre toutes les options et configurations possibles.
+Pour le seed `paris19osm_seed`, les tuiles correspondantes au niveaux de zoom de 8 à 18 seront générées avec une telle config. Aussi, toutes les tuiles mise en cache il y a plus de 4 semaines seront régénérées (clé `refresh_before`). [La doc](https://mapproxy.github.io/mapproxy/latest/seed.html#seeding) montre toutes les options et configurations possibles.
 
 Pour lancer une opération de _seeding_, voici la commande qui spécifie avec l'option `--seed=x,y` quel(s) _seed(s)_ pré-générer :
 
