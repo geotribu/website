@@ -72,10 +72,10 @@ jobs:
           python scripts/100_mkdocs_config_merger.py
 
           # build
-          mkdocs build --strict
+          properdocs build --strict
 
           # save mkdocs.yml for debug
-          cp mkdocs.yml ${{ env.BUILD_DIR }}
+          cp properdocs.yml ${{ env.BUILD_DIR }}
 
           # remove files reserved for production
           rm ${{ env.BUILD_DIR }}/CNAME
