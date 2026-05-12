@@ -101,8 +101,6 @@ plugins:
         color: "#3e93a7"
         font_family: Ubuntu
   - termynal
-  - typeset:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TYPESET, true]
 
 # Theme
 theme:
