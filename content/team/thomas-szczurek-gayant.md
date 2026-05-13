@@ -8,7 +8,7 @@ hide:
 social_accounts:
     github: thomas-szczurek
     gitlab:
-    linkedin: https://www.linkedin.com/in/thomas-szczurek-gayant-7406b5257/
+    linkedin: thomas-szczurek-gayant-7406b5257
     mail:
     mastodon:
         instance: mapstodon.space
