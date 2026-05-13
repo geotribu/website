@@ -2,11 +2,14 @@ name: "🚀 Déploiement"
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
     paths:
       - ".github/workflows/deploy.yml"
       - "config/*.yml"
       - "content/**"
+      - hooks/macros/*.py
+      - hooks/mkdocs/*.py
       - "mkdocs.yml"
       - "requirements*.txt"
   workflow_dispatch:
@@ -77,16 +80,17 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_TYPESET: true
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
           MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+          NO_MKDOCS_2_WARNING: "1"
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           # Upload entire repository
           path: "build/mkdocs/site"
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

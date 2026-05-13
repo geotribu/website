@@ -42,6 +42,7 @@ jobs:
           mkdocs build --clean --config-file mkdocs.yml --quiet --strict
         env:
           MKDOCS_ENABLE_PLUGIN_RSS: true
+          NO_MKDOCS_2_WARNING: "1"
 
       - name: Run linkcheckr
         run: |
@@ -53,7 +54,7 @@ jobs:
           > linkchecker_report.html
 
       - name: Save report output as artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         if: ${{ always() }}
         continue-on-error: true
         with:

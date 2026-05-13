@@ -25,7 +25,7 @@ Le monde du GeoBI OpenSource a été, ces derniers jours, particulièrement acti
 
 ## GeoBI Initiative
 
-![logo GeoBI](https://cdn.geotribu.fr/img/logos-icones/divers/GeoBI.png "logo GeoBI"){: .img-thumbnail-left }
+![logo GeoBI](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/GeoBI.png "logo GeoBI"){: .img-thumbnail-left }
 
 Initié par cinq compagnies[^1] et une université[^2], l'initiative GeoBI vise à regrouper l'ensemble des personnes évoluant dans le monde du géodécisionnel OpenSource. Ce projet est d'autant plus important qu'il allie recherche appliquée et partenariat industriel. Cette information a été largement commentée aussi bien sur les [blogs francophones](http://www.osbi.fr/) qu'[internationaux](http://fabiodovidio.blogspot.com/2010/06/geobi-initiative-has-been-launched.html).
 

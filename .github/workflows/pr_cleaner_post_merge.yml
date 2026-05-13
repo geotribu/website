@@ -5,7 +5,8 @@ name: "🧹 PR Cleaner"
 # only trigger on pull request closed events, that includes both merged and closed (dismissed) PRs
 on:
   pull_request_target:
-    types: [closed]
+    types:
+      - closed
 
 # Environment variables
 env:
@@ -17,6 +18,8 @@ jobs:
   clean-preview:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'geotribu' }}
+    permissions:
+      contents: read
 
     steps:
       - name: Get source code

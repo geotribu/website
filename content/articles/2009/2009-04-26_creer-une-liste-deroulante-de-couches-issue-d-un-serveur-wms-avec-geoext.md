@@ -67,7 +67,9 @@ Les deux paramètres importants à préciser sont :
 
 ## Exemple
 
-[![Liste déroulante WMS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2009/comboBow_WMS.png "Liste déroulante WMS"){: .img-center loading=lazy }](http://geotribu.net/applications/tutoriaux/GeoExt/Combobox/geoExt_ComboBox.html)
+![Liste déroulante WMS](https://cdn.geotribu.fr/img/articles-blog-rdp/client/GeoExt/GeoExt_comboBox_WMS.png){: .img-center loading=lazy }
+
+[Voir sur le tutoriel publié](http://geotribu.net/applications/tutoriaux/GeoExt/Combobox/geoExt_ComboBox.html)
 
 ----
 

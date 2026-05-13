@@ -4,7 +4,8 @@ name: "Pull Request Checker 🛃"
 
 on:
   pull_request:
-    branches: [master]
+    branches:
+      - master
 
 # Environment variables
 env:
@@ -28,6 +29,8 @@ jobs:
     name: "Check site build 📦"
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'geotribu' }}
+    permissions:
+      contents: read
 
     steps:
       - name: Get source code
@@ -59,6 +62,7 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS: true
           MKDOCS_SITE_NAME: "Geotribu PREVIEW - PR ${{ github.event.pull_request.number }}"
           MKDOCS_SITE_COPYRIGHT: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
+          NO_MKDOCS_2_WARNING: "1"
         run: |
           # store custom env vars that need resolution
           export MKDOCS_EDIT_URI="edit/${GITHUB_HEAD_REF}/content"
@@ -103,7 +107,7 @@ jobs:
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
 
       - name: Save build website as artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: pr-build-website
           path: artifact.tar.zst
