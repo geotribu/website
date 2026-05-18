@@ -82,7 +82,7 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     """
     # determine the website flavor
     config_filename = Path(config.get("config_file_path")).name
-    if config_filename == "mkdocs.yml":
+    if config_filename == "properdocs.yml":
         config["extra"]["website_flavor"] = "insiders"
     else:
         config["extra"]["website_flavor"] = "minimal"

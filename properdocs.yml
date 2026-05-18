@@ -101,12 +101,10 @@ plugins:
         color: "#3e93a7"
         font_family: Ubuntu
   - termynal
-  - typeset:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TYPESET, true]
 
 # Theme
 theme:
-  name: "material"
+  name: materialx
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/logo_geotribu.png
 

@@ -38,8 +38,8 @@ jobs:
 
       - name: Build static website
         run: |
-          python scripts/100_mkdocs_config_merger.py -c mkdocs.yml
-          mkdocs build --clean --config-file mkdocs.yml --quiet --strict
+          python scripts/100_mkdocs_config_merger.py -c properdocs.yml
+          properdocs build --clean --config-file properdocs.yml --quiet --strict
         env:
           MKDOCS_ENABLE_PLUGIN_RSS: true
           NO_MKDOCS_2_WARNING: "1"

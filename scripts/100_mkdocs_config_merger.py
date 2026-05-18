@@ -31,7 +31,7 @@ parser.add_argument(
     dest="output_config_file",
     type=Path,
     help="Path to the configuration file to complete. Must exist.",
-    default="mkdocs.yml",
+    default="properdocs.yml",
 )
 parser.add_argument(
     "-i",
