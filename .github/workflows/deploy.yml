@@ -68,9 +68,7 @@ jobs:
           python scripts/100_mkdocs_config_merger.py -c properdocs.yml
           properdocs build --clean --config-file properdocs.yml --verbose --strict
         env:
-          MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
           MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true
-          MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
           MKDOCS_ENABLE_PLUGIN_PRIVACY: true
           MKDOCS_ENABLE_PLUGIN_SOCIAL: true
           MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS: true
