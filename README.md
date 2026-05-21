@@ -51,24 +51,12 @@ Version complète :
 properdocs build
 ```
 
-Version minimale (seulement certains plugins) :
-
-```bash
-properdocs build -f mkdocs-minimal.yml
-```
-
 ### Servir le site en local
 
 Version complète :
 
 ```bash
 properdocs serve --dirtyreload
-```
-
-Version minimale (seulement certains plugins) :
-
-```bash
-properdocs serve --dirtyreload -f mkdocs-minimal.yml
 ```
 
 Le site est accessible en local à l'adresse suivante : <http://localhost:8000/>.  
