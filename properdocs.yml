@@ -105,6 +105,7 @@ theme:
   favicon: theme/assets/images/geotribu/logo_geotribu.png
 
   features:
+    - content.action.agents
     - content.action.edit
     - content.action.view
     - content.code.annotate
