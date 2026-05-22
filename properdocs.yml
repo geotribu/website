@@ -36,7 +36,8 @@ plugins:
       exclude:
         - index.md
         - toc_nav_ignored/*
-      position: top
+      locale: fr
+      position: bottom
       time_format: "%H:%M"
       type: datetime
   - exclude:
