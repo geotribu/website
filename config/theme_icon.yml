@@ -14,6 +14,7 @@ icon:
     cerveau: material/brain
     citrouille: material/pumpkin
     code: fontawesome/solid/code
+    command_line: octicons/command-palette-24
     commentaires: fontawesome/solid/comments
     conference: fontawesome/solid/person-chalkboard
     database: fontawesome/solid/database
@@ -31,6 +32,7 @@ icon:
     html: fontawesome/brands/html5
     institution: fontawesome/solid/building-columns
     js: fontawesome/brands/js
+    json: simple/json
     manette: fontawesome/solid/gamepad
     mapbox: material/mapbox
     maplibre: simple/maplibre

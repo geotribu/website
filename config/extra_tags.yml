@@ -7,6 +7,7 @@ tags:
   Blender: blender
   cartographie: carte
   Centipede: satellite
+  CLI: command_line
   CNIG: institution
   collecte: telephone
   collecte terrain: telephone
@@ -51,6 +52,7 @@ tags:
   JavaScript: js
   jeu: manette
   jeux vidéo: manette
+  JSON: json
   Leaflet: feuille
   Lego: brick
   LIDAR: satellite
