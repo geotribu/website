@@ -48,13 +48,7 @@ python -m pip install -U -r requirements.txt
 Version complète :
 
 ```bash
-mkdocs build
-```
-
-Version minimale (seulement certains plugins) :
-
-```bash
-mkdocs build -f mkdocs-minimal.yml
+properdocs build
 ```
 
 ### Servir le site en local
@@ -62,13 +56,7 @@ mkdocs build -f mkdocs-minimal.yml
 Version complète :
 
 ```bash
-mkdocs serve --dirtyreload
-```
-
-Version minimale (seulement certains plugins) :
-
-```bash
-mkdocs serve --dirtyreload -f mkdocs-minimal.yml
+properdocs serve --dirtyreload
 ```
 
 Le site est accessible en local à l'adresse suivante : <http://localhost:8000/>.  
@@ -90,6 +78,6 @@ Afin de pérenniser le site, nous avons ouvert un compte sur Liberapay : <https:
 L'objectif de ce financement est de :
 
 - financer les outils open-source que l'on utilise pour le site :
-    - Material for MkDocs (voir la page sponsor <https://github.com/sponsors/squidfunk>)
+    - Material for properdocs (voir la page sponsor <https://github.com/sponsors/squidfunk>)
     - GeoRezo (pour le CDN)
 - financer le nom de domaine (geotribu.fr/.net/.org)
