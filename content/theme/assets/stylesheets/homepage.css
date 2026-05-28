@@ -29,12 +29,7 @@
 /* Hero */
 .tx-container {
   padding-top: 0rem;
-  background: linear-gradient(
-    to bottom,
-    var(--md-primary-fg-color),
-    #56c29e 99%,
-    #fff 99%
-  );
+  background: var(--md-default-bg-color);
 }
 
 .tx-hero {
@@ -56,7 +51,7 @@
 }
 
 .tx-hero p {
-  color: currentColor;
+  color: var(--md-default-fg-color);
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
