@@ -286,6 +286,7 @@
 .secondary-section .g .section .component-wrapper .responsive-grid .card:hover {
   box-shadow: var(--md-accent-fg-color--transparent) 0.3125rem 0.3125rem 0px -0.0625rem,
     var(--md-accent-bg-color--light) 0px 0.25rem 0.5rem 0px;
+  background-color: var(--md-primary-fg-color--transparent);
 }
 
 @media screen and (min-width: 75rem) {
