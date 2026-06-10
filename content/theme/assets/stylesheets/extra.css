@@ -153,3 +153,13 @@ blockquote.twitter-tweet a:focus {
 #isso-postbox-website {
   color: var(--fbc-primary-text);
 }
+
+/*Couleur plus accentuée des textes dans les nav de droite et gauche*/
+
+.md-nav--primary .md-nav__item .md-nav__link--active {
+	color: var(--md-typeset-a-color);
+}
+
+.md-nav--secondary .md-nav__link--active {
+	color: var(--md-typeset-a-color);
+}
