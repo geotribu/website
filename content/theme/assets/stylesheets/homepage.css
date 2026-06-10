@@ -395,7 +395,13 @@
   font-weight: 600;
 }
 
-.component-wrapper .responsive-grid a:hover {
+/*Style des grid au survol pour plus d'accentuation*/
+
+.component-wrapper .responsive-grid a:hover{
   color: var(--md-typeset-a-color);
   background: var(--md-accent-fg-color--transparent);
+}
+
+.component-wrapper .responsive-grid a:hover h5 {
+  color: var(--md-typeset-a-color) !important;
 }
