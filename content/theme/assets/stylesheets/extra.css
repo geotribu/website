@@ -151,7 +151,7 @@ blockquote.twitter-tweet a:focus {
 #isso-postbox-author,
 #isso-postbox-email,
 #isso-postbox-website {
-  color: var(--fbc-primary-text);
+  color: var(--isso-primary-text-color);
 }
 
 /*Couleur plus accentuée des textes dans les nav de droite et gauche*/
