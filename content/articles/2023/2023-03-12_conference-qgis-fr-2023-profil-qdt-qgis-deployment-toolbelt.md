@@ -8,10 +8,12 @@ categories:
 comments: true
 date: 2023-03-12
 description: Afin de suivre au mieux les rencontres 2023 des utilisateurs francophones de QGIS, je vous propose de déployer facilement un profil QGIS avec tout ce qu'il faut dedans pour suivre les ateliers et présentations. Bonne conférence !
+icon: material/face-man-profile
 image: https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qgis_ecran_demarrage_conf_qgis_fr_2023.png
 license: beerware
 robots: index, follow
 tags:
+    - déploiement
     - OSGeo-fr
     - QDT
     - QGIS
@@ -43,7 +45,9 @@ Une conférence QGIS donne à voir l'hétérogénéité des usages, fonctionnali
 
 ![Un profil QGIS tout en un](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/all_inclusive_qgis.webp){: .img-center loading=lazy }
 
-C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.github.io/qgis-deployment-cli/) (QDT pour les intimes), un projet sur lequel je travaille depuis un an à Oslandia et qui fera justement l'objet d'une présentation par Emilie Bigorne (EPT Loire) mardi.
+C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://qgis-deployment.github.io/qgis-deployment-toolbelt-cli/) (QDT pour les intimes), un projet sur lequel je travaille depuis un an à Oslandia et qui fera justement l'objet d'une présentation par Emilie Bigorne (EPT Loire) mardi.
+
+![logo QDT](https://qgis-deployment.github.io/qgis-deployment-toolbelt-cli/_static/logo_qdt.png){: .img-center-noborder loading=lazy }
 
 2 modes d'installation et d'utilisation au choix dans cet article :
 
@@ -59,16 +63,17 @@ C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.gith
 
 ![Pour l'amour de la souris](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/souris_old_school.gif){: .img-center loading=lazy }
 
-1. [Télécharger l'exécutable de QDT pour votre système d'exploitation depuis la page de documentation](https://guts.github.io/qgis-deployment-cli/usage/installation.html)
-1. S'assurer qu'il soit autorisé à s'exécuter:
+1. [Télécharger l'exécutable de QDT pour votre système d'exploitation depuis la page de documentation](https://qgis-deployment.github.io/qgis-deployment-toolbelt-cli/usage/installation.html)
+1. S'assurer qu'il soit autorisé à s'exécuter :
+
     - sur Linux : clic droit sur l'exécutable > `Propriétés` > onglet `Permissions` > Cocher la case `Autoriser l'exécution du fichier comme un programme`
 
-    ![AUtoriser l'exécution sur Linux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qdt_linux_authorize_executable.webp){: .img-center loading=lazy }
+    ![Autoriser l'exécution sur Linux](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/qdt_linux_authorize_executable.webp){: .img-center loading=lazy }
 
     - sur Windows : un dialogue s'ouvre avec un message anxiogène indiquant que Windows a protégé votre ordinateur. C'est le moment où il faut nous faire confiance, cliquer sur `Informations complémentaires` > `Exécuter quand même`.
 
 1. Télécharger le [fichier du scénario](https://raw.githubusercontent.com/geotribu/profils-qgis/main/qdt/scenario.qdt.yml) (clic droit -> `Enregistrer sous...`) dans le même dossier que l'exécutable
-1. Si QGIS 3.28.4 est installé avec les paquets (Linux) ou l'installateur (*.msi) officiels sans personnalisation du chemin d'installation et donc accessible sur `C:\Program Files\QGIS 3.28.4\bin\qgis-ltr-bin.exe` sur Windows et `/usr/bin/qgis/` sur Linux Debian, il n'y a rien à faire. Sinon il faut spécifier le chemin vers l'exécutable de QGIS avec la variable d'environnement `QDT_QGIS_EXE_PATH`. Par exemple sur Windows :
+1. Si QGIS est [installé avec apt depuis les dépôts officiels](../2023/2023-01-05_installer-qgis-sur-ubuntu.md) sur Linux (typiquement `/usr/bin/qgis/` sur Debian et dérivés) ou dans un emplacement classique sur Windows (`C:\Program Files\QGIS X.y.z`,  `%PROGRAMFILES%`, `C:\\OSGeo4W`), il n'y a rien à faire. Sinon il faut spécifier le chemin vers l'exécutable de QGIS avec la variable d'environnement `QDT_QGIS_EXE_PATH`. Par exemple sur Windows :
 
     1. chercher `variable` dans le menu de recherche du système et cliquer sur `Modifier les variables d'environnement pour votre compte` :
 
@@ -89,9 +94,9 @@ C'est aussi l'occasion de dévoiler [QGIS Deployment Toolbelt](https://guts.gith
 
 Prérequis complémentaires :
 
-- Python 3.10 ou supérieur: avec pip
-    - si vous êtes sur Windows, [voir notre article dédié](../2020/2020-06-19_setup_python.md "Installer et configurer Python sur Windows")
-    - si vous êtes sur Ubuntu il faut installer pip `sudo apt install python3-pip`
+- Python 3.10 ou supérieur : avec pipx
+    - si vous êtes sur Windows, [voir notre article dédié](../2020/2020-06-19_setup_python.md "Installer et configurer Python sur Windows") et faire `py -3 -m pip install pipx` puis `py -3 -m pipx ensurepath`
+    - si vous êtes sur Ubuntu il faut installer pipx `sudo apt install pipx && pipx ensurepath`
 - une connexion internet autorisée vers <https://pypi.org>
 
 ![Pour l'amour du clavier](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2023/conf_qgis_2023_qdt/clavier_joie.gif){: .img-center loading=lazy }
@@ -104,7 +109,7 @@ Prérequis complémentaires :
     Exemple sur Ubuntu LTS (22.04 à date) :
 
     ```sh
-    pip install --user --upgrade qgis-deployment-toolbelt
+    pipx install qgis-deployment-toolbelt
     ```
 
 === ":window: Windows"
@@ -112,7 +117,7 @@ Prérequis complémentaires :
     Dans une fenêtre PowerShell :
 
     ```powershell
-    py -3 -m pip install --user --upgrade qgis-deployment-toolbelt
+    pipx install qgis-deployment-toolbelt
     ```
 
     Si un message d'avertissement comme celui-ci s'affiche :
@@ -142,7 +147,7 @@ Prérequis complémentaires :
 
 === ":window: Windows"
 
-    Si QGIS 3.28.4 est installé avec l'installateur officiel sans personnalisation du chemin d'installation (ne pas [voir cet article](../2020/2020-07-03_deploy_qgis_windows.md "Installer QGIS avec PowerShell et l'OSGeo4W")) et donc accessible sur `C:\Program Files\QGIS 3.28.4\bin\qgis-ltr-bin.exe`, il n'y a rien à faire.
+    Si QGIS est [installé avec apt depuis les dépôts officiels](../2023/2023-01-05_installer-qgis-sur-ubuntu.md) sur Linux (typiquement `/usr/bin/qgis/` sur Debian et dérivés) ou dans un emplacement classique sur Windows (`C:\Program Files\QGIS X.y.z`,  `%PROGRAMFILES%`, `C:\\OSGeo4W`), il n'y a rien à faire.
 
     Sinon, ouvrir une console PowerShell (++shift++ + clic droit) dans le même dossier et spécifier le chemin vers l'exécutable de QGIS à utiliser :
 
@@ -194,7 +199,7 @@ Prérequis complémentaires :
 - CRAIG
 - Geotuileur
 - ICEtool (désactivé par défaut pour cause de dépendances non présentes par défaut)
-Land Survey Codes Import
+- Land Survey Codes Import
 - LizMap
 - Mergin
 - QField Sync

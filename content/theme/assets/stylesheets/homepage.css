@@ -29,12 +29,7 @@
 /* Hero */
 .tx-container {
   padding-top: 0rem;
-  background: linear-gradient(
-    to bottom,
-    var(--md-primary-fg-color),
-    #56c29e 99%,
-    #fff 99%
-  );
+  background: var(--md-default-bg-color);
 }
 
 .tx-hero {
@@ -56,7 +51,7 @@
 }
 
 .tx-hero p {
-  color: currentColor;
+  color: var(--md-default-fg-color);
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -291,6 +286,7 @@
 .secondary-section .g .section .component-wrapper .responsive-grid .card:hover {
   box-shadow: var(--md-accent-fg-color--transparent) 0.3125rem 0.3125rem 0px -0.0625rem,
     var(--md-accent-bg-color--light) 0px 0.25rem 0.5rem 0px;
+  background-color: var(--md-primary-fg-color--transparent);
 }
 
 @media screen and (min-width: 75rem) {
@@ -399,7 +395,13 @@
   font-weight: 600;
 }
 
-.component-wrapper .responsive-grid a:hover {
+/*Style des grid au survol pour plus d'accentuation*/
+
+.component-wrapper .responsive-grid a:hover{
   color: var(--md-typeset-a-color);
   background: var(--md-accent-fg-color--transparent);
+}
+
+.component-wrapper .responsive-grid a:hover h5 {
+  color: var(--md-typeset-a-color) !important;
 }

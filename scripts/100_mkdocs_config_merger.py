@@ -16,7 +16,7 @@ from pathlib import Path
 
 # 3rd party
 import yaml
-from mkdocs.utils.yaml import yaml_load
+from properdocs.utils.yaml import yaml_load
 
 # -- GLOBALS --
 logging.basicConfig(level=logging.INFO)
@@ -31,7 +31,7 @@ parser.add_argument(
     dest="output_config_file",
     type=Path,
     help="Path to the configuration file to complete. Must exist.",
-    default="mkdocs.yml",
+    default="properdocs.yml",
 )
 parser.add_argument(
     "-i",

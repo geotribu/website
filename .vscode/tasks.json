@@ -4,16 +4,16 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Mkdocs - Générer le site (config PROD)",
+            "label": "Properdocs - Générer le site (config PROD)",
             "group": "build",
             "command": "${command:python.interpreterPath}",
             "args": [
                 "-m",
-                "mkdocs",
+                "properdocs",
                 "build",
                 "--strict",
                 "--config-file",
-                "mkdocs.yml"
+                "propderdocs.yml"
             ],
             "presentation": {
                 "echo": true,
@@ -26,12 +26,12 @@
             "problemMatcher": []
         },
         {
-            "label": "Mkdocs - Servir le site localement (config MINIMALE)",
+            "label": "Properdocs - Servir le site localement (config MINIMALE)",
             "group": "test",
             "command": "${command:python.interpreterPath}",
             "args": [
                 "-m",
-                "mkdocs",
+                "properdocs",
                 "serve",
                 "-f",
                 "mkdocs-minimal.yml",

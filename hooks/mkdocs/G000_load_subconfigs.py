@@ -82,7 +82,7 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     """
     # determine the website flavor
     config_filename = Path(config.get("config_file_path")).name
-    if config_filename == "mkdocs.yml":
+    if config_filename == "properdocs.yml":
         config["extra"]["website_flavor"] = "insiders"
     else:
         config["extra"]["website_flavor"] = "minimal"
@@ -106,19 +106,23 @@ def on_config(config: MkDocsConfig) -> MkDocsConfig:
     )
 
     # redirect /rdp/latest index to latest rdp
-    latest_rdp = latest_contents["rdp"][0].get("url_rel") + ".md"
-    config.plugins["redirects"].config["redirect_maps"][
-        "rdp/latest/index.md"
-    ] = latest_rdp
-    logger.info(log_prefix + f"Redirection de /rdp/latest/ vers {latest_rdp} ajoutée.")
+    if "redirects" in config.plugins:
+        latest_rdp = latest_contents["rdp"][0].get("url_rel") + ".md"
+        config.plugins["redirects"].config["redirect_maps"][
+            "rdp/latest/index.md"
+        ] = latest_rdp
+        logger.info(
+            log_prefix + f"Redirection de /rdp/latest/ vers {latest_rdp} ajoutée."
+        )
 
-    # redirect /articles/latest index to latest article
-    latest_article = latest_contents["articles"][0].get("url_rel") + ".md"
-    config.plugins["redirects"].config["redirect_maps"][
-        "articles/latest/index.md"
-    ] = latest_article
-    logger.info(
-        log_prefix + f"Redirection de /articles/latest/ vers {latest_article} ajoutée."
-    )
+        # redirect /articles/latest index to latest article
+        latest_article = latest_contents["articles"][0].get("url_rel") + ".md"
+        config.plugins["redirects"].config["redirect_maps"][
+            "articles/latest/index.md"
+        ] = latest_article
+        logger.info(
+            log_prefix
+            + f"Redirection de /articles/latest/ vers {latest_article} ajoutée."
+        )
 
     return config
