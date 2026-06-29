@@ -6,21 +6,22 @@ authors:
 categories:
     - article
 comments: true
-date: 2026-05-12
+date: 2026-07-03
 description: "La rubrique Biblio-SIG et le planet ont été mis à jour !"
-icon: "icone à choisir parmi celles disponibles dans le thème : https://squidfunk.github.io/mkdocs-material/reference/#setting-the-page-icon. Cliquer sur le + pour dérouler un mini moteur de recherche"
-image: "Image d'illustration de l'article qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
+icon: fontawesome/solid/book
+image: 
 license: default
 robots: index, follow
 tags:
-    - tag 1
-    - tag 2
-    - ...
+    - bibliographie
+    - veille
 ---
 
 # Deux nouveautés sur GeoRezo
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
+
+[Accueil de Biblio-SIG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/nouveautes_georezo/GeorezoBiblioSIG.png){: .img-center loading=lazy }
 
 ## Mise à jour de Biblio-SIG
 
@@ -43,7 +44,7 @@ Si vous souhaitez ajouter des sources, n’hésitez pas à l’indiquer dans ce 
 
 En 2025, GeoRezo a diffusé (toujours gratuitement) plus de [600 annonces d’emploi](https://georezo.net/forum/viewforum.php?id=10), et près de 400 nouveaux sujets sur [le forum QGIS](https://georezo.net/forum/viewforum.php?id=55).
 
-Enfin, si vous souhaitez rejoindre la petite association qui porte le GeoRezo depuis 2004, n’hésitez pas à me contacter (Aline).
+Enfin, si vous souhaitez rejoindre la petite association qui porte le GeoRezo depuis 2004, n’hésitez pas à contacter l'équipe par mail : contact@georezo.net.
 
 ----
 
