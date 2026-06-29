@@ -21,7 +21,7 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-[Accueil de Biblio-SIG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/nouveautes_georezo/GeorezoBiblioSIG.png){: .img-center loading=lazy }
+![Accueil de Biblio-SIG](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/nouveautes_georezo/GeorezoBiblioSIG.png){: .img-center loading=lazy }
 
 ## Mise à jour de Biblio-SIG
 
