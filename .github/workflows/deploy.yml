@@ -42,7 +42,7 @@ jobs:
 
     steps:
       - name: Get source code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -57,7 +57,7 @@ jobs:
           python -m pip install --upgrade -r requirements.txt
 
       - name: Cache build dependencies (external assets downloaded)
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           key: ${{ github.ref }}
           path: .cache

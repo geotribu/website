@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: Get source code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Prepare redirection
         run: |
@@ -32,7 +32,7 @@ jobs:
           cp scripts/redirect.html ${{ env.BUILD_DIR }}/404.html
 
       - name: Deploy preview to Netlify
-        uses: nwtgck/actions-netlify@v3.0
+        uses: nwtgck/actions-netlify@v4.0
         id: preview
         timeout-minutes: 1
         env:
