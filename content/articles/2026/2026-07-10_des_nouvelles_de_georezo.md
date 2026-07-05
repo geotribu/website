@@ -6,7 +6,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2026-07-03
+date: 2026-07-10
 description: "La rubrique Biblio-SIG et le planet ont été mis à jour !"
 icon: fontawesome/solid/book
 image: 
@@ -43,8 +43,6 @@ Si vous souhaitez ajouter des sources, n’hésitez pas à l’indiquer dans ce 
 ## Par ailleurs sur GeoRezo
 
 En 2025, GeoRezo a diffusé (toujours gratuitement) plus de [600 annonces d’emploi](https://georezo.net/forum/viewforum.php?id=10), et près de 400 nouveaux sujets sur [le forum QGIS](https://georezo.net/forum/viewforum.php?id=55).
-
-Enfin, si vous souhaitez rejoindre la petite association qui porte le GeoRezo depuis 2004, n’hésitez pas à contacter l'équipe par mail : contact@georezo.net.
 
 ----
 
