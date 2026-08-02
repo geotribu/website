@@ -118,7 +118,7 @@ Libre à vous ensuite de changer le type de représentation, dont les possibilit
 
 #### [Trip layer](https://docs.unfolded.ai/studio/layer-reference/trip)
 
-![trip layer](https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/documentation/k-trip.gif "Trip layer"){: .img-center loading=lazy }
+![trip layer](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/unfolded/kepler_k-trip.gif){: .img-center loading=lazy }
 
 Vous avez la possibilité de choisir quel(s) champs servira(ont) à la symbologie.  
 
