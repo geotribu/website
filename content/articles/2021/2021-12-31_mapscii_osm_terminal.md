@@ -51,7 +51,7 @@ Ensuite, la commande pour lancer MapSCII dans le terminal sous Linux ou MacOS es
 telnet mapscii.me
 ```
 
-[![asciicast](https://asciinema.org/a/117813.svg)](https://asciinema.org/a/117813)
+[![asciicast](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/mapscii/mapscii_demo.svg)](https://asciinema.org/a/117813)
 
 ### Windows
 
