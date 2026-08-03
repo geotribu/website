@@ -1,4 +1,4 @@
-#! python3  # noqa: E265
+#! python3
 
 """Script meant to be used as one-shot to convert YAML fonrtmatter 'date' value from
     str into date.
