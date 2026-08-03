@@ -39,7 +39,7 @@ repos:
           - "--py39-plus"
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.15.20"
+    rev: "v0.16.1"
     hooks:
       - id: ruff
         args:
@@ -51,7 +51,7 @@ repos:
       - id: black
 
   - repo: https://github.com/pycqa/isort
-    rev: 9.0.0a3
+    rev: 9.0.0b1
     hooks:
       - id: isort
         args:
@@ -68,7 +68,7 @@ repos:
           - --select=E9,F63,F7,F82
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.49.0
+    rev: v0.49.1
     hooks:
       - id: markdownlint
         args:
