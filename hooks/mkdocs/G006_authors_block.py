@@ -1,4 +1,4 @@
-#! python3  # noqa: E265
+#! python3
 
 # ############################################################################
 # ########## Libraries #############
@@ -41,7 +41,7 @@ AUTHOR_ARTICLES_AUTOLIST_END = "<!-- --8<-- [end:author-articles-autolist] -->"
 
 regex_pattern = re.compile(
     pattern="<!-- geotribu:authors-block -->",
-    flags=re.I | re.M,
+    flags=re.IGNORECASE | re.MULTILINE,
 )
 
 # ###########################################################################
