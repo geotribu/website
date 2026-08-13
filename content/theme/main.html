@@ -103,6 +103,8 @@
 {% block content %}
 {{ super() }}
 
+{% include "partials/related.html.jinja2" %}
+
 {# Contributors social links #}
 {% if "team/" in page.url and not page.is_index %}
 {% include "partials/contributors_social.html.jinja" %}

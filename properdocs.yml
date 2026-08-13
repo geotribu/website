@@ -83,6 +83,12 @@ plugins:
         - boundlessgeo.com/*
         - i3.codeplex.com/*
         - drfhlmcehrc34.cloudfront.net/*
+  - related-content:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RELATED_CONTENT, false]
+      match_path: "(articles|rdp)/.*"
+      max_related: 4
+      section_title: "Sur le même sujet"
+      weight_by_tag_rarity: true
   - search:
       provider: lunr
       lunr:
