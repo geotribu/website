@@ -1,4 +1,4 @@
-#! python3  # noqa: E265
+#! python3
 
 """
 Script one-shot pour nettoyer la syntaxe de la lightbox pour les images

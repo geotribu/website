@@ -57,6 +57,7 @@ jobs:
       - name: Build in strict mode
         env:
           MKDOCS_EDIT_URI: "edit/$GITHUB_HEAD_REF/content"
+          MKDOCS_ENABLE_PLUGIN_RELATED_CONTENT: true
           MKDOCS_ENABLE_PLUGIN_RSS: true
           MKDOCS_ENABLE_PLUGIN_SOCIAL: true
           MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS: true
