@@ -1,9 +1,11 @@
 {% if related_pages and "related_content" not in (page.meta.hide or []) %}
 <div class="{{ related_content_css_class }}">
-    <h2>{{ related_content_section_title }}</h2>
+    <h2 id="related-content">{{ related_content_section_title }}</h2>
     <ul>
         {% for r in related_pages %}
-        <li><a href="{{ r.url }}">{{ r.title }}</a></li>
+        <li><a href="{{ r.url }}" title="Lien vers {{ r.title }}">{{ r.title }}</a> <small
+                title="Mots-clés en commun : {{ ', '.join(r.shared_tags) }}"><i>Score de similarité : {{
+                    "%.0f"|format(r.score * 100) }}%</i></small></li>
         {% endfor %}
     </ul>
 </div>
