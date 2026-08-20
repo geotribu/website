@@ -12,7 +12,7 @@ image:
 license: default
 robots: index, follow
 tags:
-    - Cartes.gouv.fr 
+    - Cartes.gouv.fr
     - Géoplateforme
     - Géoportail
     - IGN
@@ -27,9 +27,9 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
->  Vu de loin, [cartes.gouv.fr](https://cartes.gouv.fr) ressemble à un successeur du Géoportail avec une interface neuve.
-La lecture est naturelle, elle est aussi assez trompeuse. 
-Ce qui s'est joué derrière ce site, c'est le passage d'une collection d'outils spécialisés à une logique de plateforme, avec des briques faites pour vivre ensemble et un cycle de vie de la donnée traité comme un tout. 
+> Vu de loin, [cartes.gouv.fr](https://cartes.gouv.fr) ressemble à un successeur du Géoportail avec une interface neuve.
+La lecture est naturelle, elle est aussi assez trompeuse.
+Ce qui s'est joué derrière ce site, c'est le passage d'une collection d'outils spécialisés à une logique de plateforme, avec des briques faites pour vivre ensemble et un cycle de vie de la donnée traité comme un tout.
 Retour sur plusieurs années de chantier, jusqu'à l'ouverture aux professionnels.
 
 *Écrit à l'été 2026, huit mois après l'ouverture aux professionnels et quelques semaines après celle au grand public. Assez de recul pour que les choses aient décanté, pas assez pour avoir oublié pourquoi certains arbitrages ont été pris.*
@@ -38,8 +38,8 @@ Retour sur plusieurs années de chantier, jusqu'à l'ouverture aux professionnel
 
 C'est la question qui revenait le plus souvent au début du projet. Le Géoportail ? Géoservices ? MaCarte ? L'Espace collaboratif ?
 
-La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine d'utilisateurs en phase de conception. Et impossible de les assigner à un profil particulier car leurs missions les faisaient côtoyer le rôle de producteur de données, de géomaticiens, de développeurs ou encore d'utilisateurs. 
-**Conclusion : aucun de ces outils et un peu tous à la fois.** 
+La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine d'utilisateurs en phase de conception. Et impossible de les assigner à un profil particulier car leurs missions les faisaient côtoyer le rôle de producteur de données, de géomaticiens, de développeurs ou encore d'utilisateurs.
+**Conclusion : aucun de ces outils et un peu tous à la fois.**
 
 L'écosystème de l'époque fonctionnait bien et le projet n'est pas né d'un constat d'échec. On avait simplement accumulé, au fil des besoins métier, des outils solides chacun dans son silo. Le Géoportail pour la consultation. Géoservices pour les flux et les API. MaCarte pour la composition et la diffusion. L'Espace collaboratif pour la contribution. Quatre bons outils, quatre univers.
 
@@ -52,12 +52,12 @@ La tentation de la page blanche existe toujours, sauf que la page n'était pas b
 
 Le [géotuileur](https://github.com/IGNF/geotuileur-site) est éclairant. Démonstrateur déployé et testé entre l'été 2022 et l'été 2023, il couvrait déjà une chaîne complète — téléverser, tuiler, appliquer une symbologie, publier le service — avec un objectif qui tenait en une phrase : rendre le producteur autonome pour diffuser et faire connaître ses données. L'expérimentation a été concluante et l'intention comme les fonctionnalités ont été reprises dans [cartes.gouv.fr](cartes.gouv.fr) et dans le plugin Géoplateforme QGIS, qui repart de ces bases.
 
-Le point structurel est ailleurs. Chaque outil historique couvrait proprement un segment du cycle de vie, et un seul, sans mécanisme pour passer le relais au suivant. Les usages, eux, avaient bougé.  On ne vient plus seulement consulter une carte, on veut comprendre une donnée, la croiser, l'intégrer dans son SIG, la republier. 
+Le point structurel est ailleurs. Chaque outil historique couvrait proprement un segment du cycle de vie, et un seul, sans mécanisme pour passer le relais au suivant. Les usages, eux, avaient bougé.  On ne vient plus seulement consulter une carte, on veut comprendre une donnée, la croiser, l'intégrer dans son SIG, la republier.
 **La question n'était plus de savoir si nos briques étaient performantes mais comment elles s'articulaient entre elles.**
 
 ## Une doctrine qui paraît simple
 
-**Proposer un point d'accès cohérent aux cartes, aux données et aux services du territoire.** 
+**Proposer un point d'accès cohérent aux cartes, aux données et aux services du territoire.**
 Énoncé comme ça, ça paraît évident. C'est justement ce qui rend l'exercice redoutable, parce qu'il faut faire cohabiter des profils qui n'entrent pas par la même porte.
 
 Le développeur cherche une API et sa documentation. Le producteur veut publier et suivre ce que devient sa donnée. Le créateur de cartes veut composer et diffuser. L'animateur de communautés veut fédérer des contributions. Le géomaticien veut surtout que la ressource arrive proprement dans QGIS. Du coup, une question apparemment anodine devient un arbitrage structurant. Par quoi commence-t-on ? Par la carte, par la recherche de données, par les services, par un cas d'usage ? Chaque réponse est défendable, pour un profil différent et chaque personne peut adopter tout ou partie des attentes des profils.
@@ -68,8 +68,8 @@ En avril 2022, le COPIL Géoplateforme décide d'engager le projet Interfaces, c
 
 <p align="center"><img width="1170" height="395" alt="Proposition de valeur par profil" src="https://github.com/user-attachments/assets/b17f8e66-c35c-4ae5-a9ce-d9383bec3575" /></p>
 
-Ce schéma montre que l'ambition ne portait déjà pas sur un site; usine logicielle, catalogue d'API, bac à sable partenaires, plugin QGIS, studio de création de cartes, fabrique à espaces collaboratifs, outil de création de portails en marque blanche. Il fournit aussi un instrument de mesure rudimentaire, puisqu'il suffit de le relire aujourd'hui pour voir ce qui est en service, ce qui a été transformé en chemin et ce qui attend toujours. 
-Le bloc « outil de création de portails » mérite qu'on s'y arrête. Une plateforme qui permet à d'autres de fabriquer leurs propres portails accepte, par construction, de ne plus être le point d'entrée unique. 
+Ce schéma montre que l'ambition ne portait déjà pas sur un site; usine logicielle, catalogue d'API, bac à sable partenaires, plugin QGIS, studio de création de cartes, fabrique à espaces collaboratifs, outil de création de portails en marque blanche. Il fournit aussi un instrument de mesure rudimentaire, puisqu'il suffit de le relire aujourd'hui pour voir ce qui est en service, ce qui a été transformé en chemin et ce qui attend toujours.
+Le bloc « outil de création de portails » mérite qu'on s'y arrête. Une plateforme qui permet à d'autres de fabriquer leurs propres portails accepte, par construction, de ne plus être le point d'entrée unique.
 
 ## Donner une forme aux idées
 
@@ -77,7 +77,7 @@ Avant les développements, il a fallu rendre le projet tangible. Les premiers mo
 
 <p align="center"><img width="2277" height="1252" alt="Image" src="https://github.com/user-attachments/assets/3a4f7ef3-73f7-4a75-adf8-541145cd6ce4" /></p>
 
-Le travail ne s'est ensuite jamais vraiment arrêté. Les développements ont fait émerger de nouvelles questions, les retours utilisateurs ont conduit à revoir certains parcours et l'arrivée progressive des différents composants a nécessité des ajustements réguliers. 
+Le travail ne s'est ensuite jamais vraiment arrêté. Les développements ont fait émerger de nouvelles questions, les retours utilisateurs ont conduit à revoir certains parcours et l'arrivée progressive des différents composants a nécessité des ajustements réguliers.
 **L'UX/UI n'a donc pas été une étape préalable au projet mais un compagnon de route présent jusqu'aux dernières livraisons et encore aujourd'hui.**
 
 ## La tentation de l'isofonctionnel
@@ -90,9 +90,9 @@ Le travail ne s'est ensuite jamais vraiment arrêté. Les développements ont fa
 
 Comment une donnée est-elle produite, validée, documentée, diffusée ? Comment la retrouve-t-on ? Et comment finit-elle réellement réutilisée, dans un SIG ou une application métier ? Ce parti pris impose des choix structurants à court terme : maintenir une cohérence forte entre données et métadonnées, préférer l'automatisation aux interventions manuelles, chercher la convergence entre produits au lieu de laisser chacun régler son problème dans son coin, ...
 
-## Les métadonnées, ce sujet fréquemment relégué au second plan 
+## Les métadonnées, ce sujet fréquemment relégué au second plan
 
-Les métadonnées ont longtemps été traitées comme une obligation. On les renseigne pour la conformité, sans supposer que quiconque les lise. Les usages disent l'inverse. On ne cherche pas seulement à visualiser, on veut savoir d'où vient la donnée, ce qu'elle contient, comment elle est diffusée, à quelles conditions elle est réutilisable. Comprendre avant de télécharger. Et elles ne servent pas qu'à être lues, on s'appuie dessus pour automatiser, à commencer par l'index Géoplateforme. 
+Les métadonnées ont longtemps été traitées comme une obligation. On les renseigne pour la conformité, sans supposer que quiconque les lise. Les usages disent l'inverse. On ne cherche pas seulement à visualiser, on veut savoir d'où vient la donnée, ce qu'elle contient, comment elle est diffusée, à quelles conditions elle est réutilisable. Comprendre avant de télécharger. Et elles ne servent pas qu'à être lues, on s'appuie dessus pour automatiser, à commencer par l'index Géoplateforme.
 **Entretenir un produit pour sa diffusion, c'est le décrire une fois proprement** plutôt que de traîner les scories d'un contenu maintenu à la main dans un gestionnaire de contenu (CMS).
 
 C'est le rôle qu'a pris le Datahub, appuyé sur [GeoNetwork-UI](https://github.com/geonetwork/geonetwork-ui), une brique éprouvée et portée par une communauté européenne. Construire avec l'existant plutôt que réinventer localement ce que d'autres améliorent déjà.
@@ -103,9 +103,9 @@ L'effet de bord est largement sous-estimé. Il a fallu reprendre les métadonné
 
 C'est la difficulté la plus réelle du projet, et elle n'a rien de technique.
 
-**Le mode produit repose sur le triptyque : livrer tôt, observer, ajuster.** 
-Dans la sphère publique, l'exigence d'irréprochabilité immédiate prend le pas : si une fonctionnalité n'est pas totalement aboutie, elle est écartée « à plus tard » — ce qui, dans un programme de cette envergure, signifie souvent aux calendes grecques. 
-Faute de pouvoir ouvrir pleinement le dialogue avec les communautés pour nourrir le produit de retours qualitatifs, les arbitrages se sont faits en circuit fermé, à partir d'un échantillon d'avis trop étroit pour être représentatif. 
+**Le mode produit repose sur le triptyque : livrer tôt, observer, ajuster.**
+Dans la sphère publique, l'exigence d'irréprochabilité immédiate prend le pas : si une fonctionnalité n'est pas totalement aboutie, elle est écartée « à plus tard » — ce qui, dans un programme de cette envergure, signifie souvent aux calendes grecques.
+Faute de pouvoir ouvrir pleinement le dialogue avec les communautés pour nourrir le produit de retours qualitatifs, les arbitrages se sont faits en circuit fermé, à partir d'un échantillon d'avis trop étroit pour être représentatif.
 S'ajoute une réalité qu'on oublie en regardant l'interface. **Cartes.gouv.fr est un client de la Géoplateforme**, pas son propriétaire. Il consomme des API, un index, des services qui ont leur propre trajectoire et servent d'autres clients. Beaucoup de sujets produit ne se règlent donc pas dans l'IHM mais en amont, à un rythme qui n'est pas celui du portail. C'est le prix normal de la mutualisation, et ça déplace une partie du travail produit vers la gestion de dépendances.
 
 Des exemples de reports, il y en a eu. J'en retiens cinq.
@@ -120,16 +120,16 @@ Des exemples de reports, il y en a eu. J'en retiens cinq.
 
 Les trois premiers ont été financés par le programme Géoplateforme et sont [disponibles](https://github.com/geonetwork/geonetwork-ui/releases?page=2#release-v2.6.0) depuis la fin de l'été 2025. Restent à les activer et à pousser du contenu dans le GeoNetwork de la Géoplateforme. Le catalogue de styles, lui, en est resté à l'état de souhait.
 
-Aucun de ces sujets ne fait une annonce, et c'est probablement ce qui les condamne à glisser. Une fois déployés, en revanche, ils se voient immédiatement, puisque ce sont eux qu'on rencontre en cherchant une couche, en lisant une fiche ou en branchant un SIG. 
-**Le coût du report ne se manifeste jamais comme un incident, il se manifeste comme un contournement.** 
+Aucun de ces sujets ne fait une annonce, et c'est probablement ce qui les condamne à glisser. Une fois déployés, en revanche, ils se voient immédiatement, puisque ce sont eux qu'on rencontre en cherchant une couche, en lisant une fiche ou en branchant un SIG.
+**Le coût du report ne se manifeste jamais comme un incident, il se manifeste comme un contournement.**
 L'utilisateur qui abandonne la recherche de couches. Celui qui va chercher la description des champs ailleurs. Celui qui recompose son index dans son [coin](https://github.com/Geoplateforme/plugin_idg_gpf). Les retours terrain tranchent assez nettement : **mieux vaut un service imparfait mais utile qu'un service théoriquement parfait qui tarde à répondre à un besoin réel.**
 
 ## Des petites équipes, et la cohérence à tenir
 
 Un aspect dont on parle peu, parce qu'il ne se voit ni dans l'interface ni dans les dépôts : l'organisation du travail.
 
-Un duo produit et technique en pilotage, un product manager et un lead dev, et autour plusieurs petites équipes organisées sur le même modèle, chacune avec son couple product owner et tech lead sur un composant — Explorer, Rechercher, Publier de cartes.gouv, les extensions cartographiques, le plugin Géoplateforme QGIS, la documentation. C'est efficace, chaque équipe est autonome et développe une vraie expertise sur son périmètre. 
-En contrepartie, **la cohérence cesse d'être un effet secondaire du développement pour devenir un travail à part entière.** Ce n'est la faute de personne, c'est mécanique. Chaque équipe optimise légitimement son composant, et l'articulation entre composants n'a pas de propriétaire naturel. 
+Un duo produit et technique en pilotage, un product manager et un lead dev, et autour plusieurs petites équipes organisées sur le même modèle, chacune avec son couple product owner et tech lead sur un composant — Explorer, Rechercher, Publier de cartes.gouv, les extensions cartographiques, le plugin Géoplateforme QGIS, la documentation. C'est efficace, chaque équipe est autonome et développe une vraie expertise sur son périmètre.
+En contrepartie, **la cohérence cesse d'être un effet secondaire du développement pour devenir un travail à part entière.** Ce n'est la faute de personne, c'est mécanique. Chaque équipe optimise légitimement son composant, et l'articulation entre composants n'a pas de propriétaire naturel.
 Concrètement, ça veut dire arbitrer entre vitesse locale et convergence globale, écarter une solution locale élégante parce qu'elle diverge, répéter la même intention à plusieurs endroits, vérifier qu'une décision prise ailleurs a été comprise de la même manière. Le duo de tête tient le pourquoi et l'ordre des priorités d'un côté, le comment et la chaîne de dépendances de l'autre.
 
 C'est aussi la partie la plus difficile à valoriser, puisqu'elle ne produit aucune fonctionnalité identifiable.
@@ -138,14 +138,14 @@ C'est aussi la partie la plus difficile à valoriser, puisqu'elle ne produit auc
 
 Comme tout service numérique de l'État, cartes.gouv.fr doit respecter le [système de design de l'État](https://www.systeme-de-design.gouv.fr/version-courante/fr). C'est plutôt une bonne chose, entre la cohérence d'ensemble des sites publics et l'accessibilité. Mais le DSFR ne couvre pas la cartographie. Ni sélecteur de couches, ni légende, ni widget de zoom, ni recherche géographique, ni gestion des styles. Il fallait donc s'écarter du référentiel ou produire ce qui manquait.
 
-On a choisi de produire une bibliothèque publique : la bibliothèque d'extensions [geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers), sous AGPL-3.0. Des widgets alignés sur l'identité de l'État, utilisables dans n'importe quelle application cartographique. Rien de ce qu'affiche cartes.gouv.fr ne lui appartient en propre. 
+On a choisi de produire une bibliothèque publique : la bibliothèque d'extensions [geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers), sous AGPL-3.0. Des widgets alignés sur l'identité de l'État, utilisables dans n'importe quelle application cartographique. Rien de ce qu'affiche cartes.gouv.fr ne lui appartient en propre.
 
 <p align="center"><img width="2680" height="1065" alt="Image" src="https://github.com/user-attachments/assets/07dd67af-dbe4-4739-90f8-1585fc2aab71" /></p>
 
 **Une obligation réglementaire devenue un actif partagé, et enrichissable avec de nouveaux widgets** (contributeurs, n'hésitez pas).
 
-Même logique avec le [plugin Géoplateforme pour QGIS](https://github.com/Geoplateforme/plugin-qgis-geoplateforme), porte d'entrée plus naturelle qu'une interface web pour une grande partie des géomaticiens. En repartant des bases du Géotuileur, entre avril et décembre 2025, il est distribué en GPLv2+ depuis le [dépôt officiel des plugins QGIS](https://plugins.qgis.org/plugins/geoplateforme/) et [documenté ici](https://geoplateforme.github.io/plugin-qgis-geoplateforme/). 
-Il se synchronise avec cartes.gouv.fr pour la publication et la découvrabilité des services ainsi que pour l'interface de style. Il fonctionne comme un fédérateur de plugins — [GPF Isochrone / Isodistance / Itinéraire](https://plugins.qgis.org/plugins/gpf_isochrone_isodistance_itineraire/), [French Locator Filter](https://plugins.qgis.org/plugins/french_locator_filter/), [QGiréférentiels](https://plugins.qgis.org/plugins/qgireferentiels/), [BD TOPO® Extractor](https://plugins.qgis.org/plugins/bd_topo_extractor/) — plutôt que comme un monolithe. 
+Même logique avec le [plugin Géoplateforme pour QGIS](https://github.com/Geoplateforme/plugin-qgis-geoplateforme), porte d'entrée plus naturelle qu'une interface web pour une grande partie des géomaticiens. En repartant des bases du Géotuileur, entre avril et décembre 2025, il est distribué en GPLv2+ depuis le [dépôt officiel des plugins QGIS](https://plugins.qgis.org/plugins/geoplateforme/) et [documenté ici](https://geoplateforme.github.io/plugin-qgis-geoplateforme/).
+Il se synchronise avec cartes.gouv.fr pour la publication et la découvrabilité des services ainsi que pour l'interface de style. Il fonctionne comme un fédérateur de plugins — [GPF Isochrone / Isodistance / Itinéraire](https://plugins.qgis.org/plugins/gpf_isochrone_isodistance_itineraire/), [French Locator Filter](https://plugins.qgis.org/plugins/french_locator_filter/), [QGiréférentiels](https://plugins.qgis.org/plugins/qgireferentiels/), [BD TOPO® Extractor](https://plugins.qgis.org/plugins/bd_topo_extractor/) — plutôt que comme un monolithe.
 La liste a vocation à s'allonger, avec des plugins qui ne viendront pas forcément de l'IGN. C'est le travail de mon successeur.
 
 <p align="center"><img width="1400" height="788" alt="Image" src="https://github.com/user-attachments/assets/caefbdf8-b080-470e-b571-8e1e9e8d04a4" /></p>
@@ -154,7 +154,7 @@ La liste a vocation à s'allonger, avec des plugins qui ne viendront pas forcém
 
 Une plateforme impose des choix. Bibliothèque cartographique, référentiel de design, socle de catalogage, standards d'échange. Sans eux, pas de cohérence possible.
 
-La ligne à tenir tient dans une distinction. **Un choix structurant fixe une direction, un choix bloquant interdit les usages qu'on n'avait pas prévus.** 
+La ligne à tenir tient dans une distinction. **Un choix structurant fixe une direction, un choix bloquant interdit les usages qu'on n'avait pas prévus.**
 Le test est simple, il suffit de se demander si quelqu'un peut faire autrement que nous avec les mêmes briques. En pratique, ça veut dire exposer les composants indépendamment de l'application, garder API, flux et métadonnées accessibles hors interface, et ne jamais faire du portail le chemin obligatoire vers la donnée. C'est aussi ce qui rend les reports évoqués plus haut coûteux, parce qu'un index propre ou un catalogue d'attributs ne sert pas qu'au portail. Il sert à tout ce qui se branche dessus.
 
 ## Ouvrir le code, et le reste
@@ -172,10 +172,10 @@ Le 4 décembre 2024, à [Open Source Experience](https://www.opensource-experien
 
 ## Durer
 
-C'est le sujet dont on parle le moins. **Contribuer n'est pas un acte ponctuel**, et c'est là que les démarches publiques peinent à se maintenir sur le long terme (mais je suis confiant). 
+C'est le sujet dont on parle le moins. **Contribuer n'est pas un acte ponctuel**, et c'est là que les démarches publiques peinent à se maintenir sur le long terme (mais je suis confiant).
 On finance un développement, on livre, l'attention passe au chantier suivant. Six mois plus tard la version amont a avancé sans nous et la dette qu'on voulait éviter réapparaît ailleurs. Durer coûte du temps de développeur sur du code qui n'est pas le nôtre, mais pas seulement. Il faut animer, participer à la conception en amont, relire les contributions des autres, être présent là où se décident les orientations, cofinancer des évolutions dont on ne sera pas l'unique bénéficiaire. Aucune de ces lignes n'apparaît dans un bilan de projet.
 
-Le périmètre est déjà large — GeoNetwork-UI, QGIS et ses plugins, OpenLayers, GeoStyler, le DSFR  — et à chaque fois l'IGN est passé d'utilisateur à contributeur. Mais cela reste à formaliser au travers de financements récurrents, d'engagement de maintenance, de siège dans une gouvernance. 
+Le périmètre est déjà large — GeoNetwork-UI, QGIS et ses plugins, OpenLayers, GeoStyler, le DSFR  — et à chaque fois l'IGN est passé d'utilisateur à contributeur. Mais cela reste à formaliser au travers de financements récurrents, d'engagement de maintenance, de siège dans une gouvernance.
 
 ## Où on en est
 
@@ -196,23 +196,23 @@ La suite est [engagée](https://cartes.gouv.fr/evolutions/). **Collaborer** repr
 
 Relier la donnée à sa documentation. Faciliter le passage de la publication à la réutilisation. Rapprocher les producteurs de données de ceux qui les utilisent au quotidien. Fédérer progressivement des producteurs aux pratiques, aux outils et aux contraintes différentes afin de rendre leurs données plus faciles à découvrir, comprendre et exploiter. Relier les outils historiques aux usages émergents. Et, plus largement, faire dialoguer un service public avec les communautés qui peuvent contribuer à son enrichissement.
 
-Le résultat reste perfectible, comme toute plateforme vivante. L'apport le plus intéressant n'est sans doute pas le site, mais la tentative de traiter la donnée géographique comme un continuum. C'est aussi ce qui permet de passer la main sans trop d'inquiétude. 
+Le résultat reste perfectible, comme toute plateforme vivante. L'apport le plus intéressant n'est sans doute pas le site, mais la tentative de traiter la donnée géographique comme un continuum. C'est aussi ce qui permet de passer la main sans trop d'inquiétude.
 Un socle posé, des briques publiées, des communautés qui s'en emparent. À condition d'y contribuer encore!
 
 **Les portails finissent par vieillir. Les écosystèmes peuvent grandir.**
 
 ---
 P.S. : Le 30 septembre 2026, le **Géoportail** fermera définitivement ses portes pour rejoindre [cartes.gouv.fr](https://cartes.gouv.fr), pour en savoir [plus](https://cartes.gouv.fr/actualites/le-geoportail-rejoint-cartesgouvfr).
+
 ## Ressources
 
-- [cartes.gouv.fr](https://cartes.gouv.fr) 
+- [cartes.gouv.fr](https://cartes.gouv.fr)
 - [geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers) — extensions Géoplateforme pour OpenLayers (AGPL-3.0)
 - [plugin Géoplateforme pour QGIS](https://github.com/Geoplateforme/plugin-qgis-geoplateforme) — [documentation](https://geoplateforme.github.io/plugin-qgis-geoplateforme/), [dépôt officiel des plugins QGIS](https://plugins.qgis.org/plugins/geoplateforme/)
 - [GeoNetwork-UI](https://github.com/geonetwork/geonetwork-ui) — socle du Datahub
 - [géotuileur](https://github.com/IGNF/geotuileur-site) — dépôt archivé de l'expérimentation 2022-2023
 - [Les Acteurs du Libre 2024](https://cnll.fr/news/laur%C3%A9ats-des-acteurs-du-libre-2024/) — palmarès du CNLL, et l'[annonce de Camptocamp](https://camptocamp.com/fr/actualites-evenements/acteurs-du-libre-2024)
 - [rencontres QGIS d'Avignon du 11 juin 2025](https://conf.qgis.osgeo.fr/2025/07/08/publication-videos-conferences.html)
-
 
 <!-- geotribu:authors-block -->
 
