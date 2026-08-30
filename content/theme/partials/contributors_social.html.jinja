@@ -40,6 +40,13 @@
             {% include ".icons/fontawesome/brands/mastodon.svg" %}
         </span>
     </a>
+    {% elif network == "bluesky" %}
+    <a href="https://bsky.app/profile/{{ value }}" target="_blank" rel="noopener"
+        aria-label="Profil Bluesky de {{ page.meta.title }}">
+        <span class="twemoji">
+            {% include ".icons/fontawesome/brands/bluesky.svg" %}
+        </span>
+    </a>
     {% elif network == "openstreetmap" %}
     <a href="https://www.openstreetmap.org/user/{{ value }}" target="_blank" rel="noopener"
         aria-label="Profil OpenStreetMap de {{ page.meta.title }}">
