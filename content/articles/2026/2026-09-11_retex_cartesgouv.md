@@ -129,7 +129,7 @@ Des exemples de reports, il y en a eu. J'en retiens cinq :
 - **Un catalogue de styles**, qui permettrait de récupérer les styles proposés par le producteur de la donnée, voire par la communauté, au lieu de les refaire chacun de son côté. L'intérêt saute aux yeux avec le plugin [BD TOPO® Extractor](https://plugins.qgis.org/plugins/bd_topo_extractor/) : on extrait une couche, puis il faut reconstruire à la main une symbologie que le producteur a déjà définie quelque part ou exploiter celle proposée par le propriétaire du plugin.
 - **Le nettoyage de l'index Géoplateforme**, moins visible et plus structurant. Il conditionne la recherche de couches dans Explorer de cartes.gouv et la capacité des IHM tierces — SIG, plugins, applications métier — à exploiter proprement l'offre. Le symptôme se constate en trois clics : dans les filtres d'Explorer de cartes.gouv, la catégorie « Autres » rassemble 384 entrées côté thématique et 410 côté producteur.
 
-![Capture cartes.gouv](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_cartalogue.png){: width="300px" .img-center }
+![Capture cartes.gouv.fr](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_cartalogue.png){: width="300px" .img-center }
 
 Les trois premiers ont été financés par le programme Géoplateforme et sont [disponibles](https://github.com/geonetwork/geonetwork-ui/releases?page=2#release-v2.6.0) depuis la fin de l'été 2025. Restent à les activer et à pousser du contenu dans le GeoNetwork de la Géoplateforme. Le catalogue de styles, lui, en est resté à l'état de souhait.
 
