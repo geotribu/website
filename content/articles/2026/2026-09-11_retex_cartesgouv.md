@@ -47,7 +47,7 @@ La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine
     On avait simplement accumulé, au fil des besoins métier, des outils solides certes mais "silotés" :
 
     - le Géoportail pour la consultation,
-    - Géoservices pour les flux et les API,
+    - les Géoservices pour les flux et les API,
     - MaCarte pour la composition et la diffusion
     - l'Espace collaboratif pour la contribution.
 
