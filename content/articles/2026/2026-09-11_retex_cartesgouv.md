@@ -121,7 +121,7 @@ Dans la sphère publique, l'exigence d'irréprochabilité immédiate prend le pa
 Faute de pouvoir ouvrir pleinement le dialogue avec les communautés pour nourrir le produit de retours qualitatifs, les arbitrages se sont faits en circuit fermé, à partir d'un échantillon d'avis trop étroit pour être représentatif.
 S'ajoute une réalité qu'on oublie en regardant l'interface. **Cartes.gouv.fr est un client de la Géoplateforme**, pas son propriétaire. Il consomme des API, un index, des services qui ont leur propre trajectoire et servent d'autres clients. Beaucoup de sujets produit ne se règlent donc pas dans l'IHM mais en amont, à un rythme qui n'est pas celui du portail. C'est le prix normal de la mutualisation, et ça déplace une partie du travail produit vers la gestion de dépendances.
 
-Des exemples de reports, il y en a eu. J'en retiens cinq.
+Des exemples de reports, il y en a eu. J'en retiens cinq : 
 
 - [**Le catalogue d'attributs**](https://github.com/geonetwork/geonetwork-ui/pull/1206) (*feature catalog*) de "*Rechercher une donnée*", qui décrit le contenu réel d'une donnée champ par champ. C'est ce qui permet de connaitre le modèle de données de ce qu'on télécharge avant de le télécharger, bien plus ergonomique que le format PDF.
 - [**Les réutilisations affichées dans les fiches**](https://github.com/geonetwork/geonetwork-ui/issues/1140) de "*Rechercher une donnée*", pour montrer ce que d'autres ont fait d'une donnée. Souvent le signal le plus parlant sur son intérêt.
