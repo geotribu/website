@@ -27,7 +27,7 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-> Vu de loin, [cartes.gouv.fr](https://cartes.gouv.fr) ressemble à un successeur du Géoportail avec une interface neuve.
+> Vu de loin, [.fr](https://.fr) ressemble à un successeur du Géoportail avec une interface neuve.
 La lecture est naturelle, elle est aussi assez trompeuse.
 Ce qui s'est joué derrière ce site, c'est le passage d'une collection d'outils spécialisés à une logique de plateforme, avec des briques faites pour vivre ensemble et un cycle de vie de la donnée traité comme un tout.
 Retour sur plusieurs années de chantier, jusqu'à l'ouverture aux professionnels.
@@ -63,7 +63,7 @@ La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine
 
 La tentation de la page blanche existe toujours, sauf que la page n'était pas blanche. 67 millions de visites annuelles sur geoportail.gouv.fr. À ce niveau d'usage, on ne réinvente pas, on compose.
 
-Le [géotuileur](https://github.com/IGNF/geotuileur-site) est éclairant. Démonstrateur déployé et testé entre l'été 2022 et l'été 2023, il couvrait déjà une chaîne complète (téléverser, tuiler, appliquer une symbologie, publier le service) avec un objectif qui tenait en une phrase : rendre le producteur autonome pour diffuser et faire connaître ses données. L'expérimentation a été concluante et l'intention comme les fonctionnalités ont été reprises dans [cartes.gouv.fr](https://cartes.gouv.fr) et dans [le plugin Géoplateforme pour QGIS](https://plugins.qgis.org/plugins/geoplateforme/), reparti des bases du plugin Géotuileur.
+Le [géotuileur](https://github.com/IGNF/geotuileur-site) est éclairant. Démonstrateur déployé et testé entre l'été 2022 et l'été 2023, il couvrait déjà une chaîne complète (téléverser, tuiler, appliquer une symbologie, publier le service) avec un objectif qui tenait en une phrase : rendre le producteur autonome pour diffuser et faire connaître ses données. L'expérimentation a été concluante et l'intention comme les fonctionnalités ont été reprises dans [.fr](https://.fr) et dans [le plugin Géoplateforme pour QGIS](https://plugins.qgis.org/plugins/geoplateforme/), reparti des bases du plugin Géotuileur.
 
 Le point structurel est ailleurs. Chaque outil historique couvrait proprement un segment du cycle de vie, et un seul, sans mécanisme pour passer le relais au suivant. Les usages, eux, avaient bougé.  On ne vient plus seulement consulter une carte, on veut comprendre une donnée, la croiser, l'intégrer dans son SIG, la republier.
 **La question n'était plus de savoir si nos briques étaient performantes mais comment elles s'articulaient entre elles.**
@@ -77,7 +77,7 @@ Le développeur cherche une API et sa documentation. Le producteur veut publier 
 
 ## L'engagement en 2022
 
-En avril 2022, le COPIL Géoplateforme décide d'engager le projet Interfaces, celui qui donnera naissance à cartes.gouv.fr. La réponse retenue a été de **ne pas raisonner en fonctionnalités à reprendre, mais en proposition de valeur par profil**. Ce découpage date de l'été suivant, bien avant les premières maquettes.
+En avril 2022, le COPIL Géoplateforme décide d'engager le projet Interfaces, celui qui donnera naissance à .fr. La réponse retenue a été de **ne pas raisonner en fonctionnalités à reprendre, mais en proposition de valeur par profil**. Ce découpage date de l'été suivant, bien avant les premières maquettes.
 
 ![Proposition de valeur par profil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_projet.svg){: width="1170px" .img-center }
 
@@ -88,7 +88,7 @@ Le bloc « outil de création de portails » mérite qu'on s'y arrête. Une plat
 
 Avant les développements, il a fallu rendre le projet tangible. Les premiers mois ont été consacrés à la réalisation de filaires et de maquettes permettant de matérialiser les parcours imaginés lors du cadrage. À ce stade, l'objectif n'était pas de dessiner l'interface définitive mais de vérifier que les différentes briques pouvaient s'articuler de manière cohérente pour les utilisateurs.
 
-![Filaire de cartes.gouv](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_filaire.png ){: width="2277px" .img-center .caption  }
+![Filaire de cartes.gouv.fr](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_filaire.png ){: width="2277px" .img-center .caption  }
 
 Le travail ne s'est ensuite jamais vraiment arrêté. Les développements ont fait émerger de nouvelles questions, les retours utilisateurs ont conduit à revoir certains parcours et l'arrivée progressive des différents composants a nécessité des ajustements réguliers.
 **L'UX/UI n'a donc pas été une étape préalable au projet mais un compagnon de route présent jusqu'aux dernières livraisons et encore aujourd'hui.**
@@ -127,7 +127,7 @@ Des exemples de reports, il y en a eu. J'en retiens cinq :
 - [**Les réutilisations affichées dans les fiches**](https://github.com/geonetwork/geonetwork-ui/issues/1140) de "*Rechercher une donnée*", pour montrer ce que d'autres ont fait d'une donnée. Souvent le signal le plus parlant sur son intérêt.
 - [**L'explorateur de capacités**](https://github.com/geonetwork/geonetwork-ui/issues/1139) de "*Rechercher une donnée*" qui décrit les données mises à disposition dans les fiches API/Services.
 - **Un catalogue de styles**, qui permettrait de récupérer les styles proposés par le producteur de la donnée, voire par la communauté, au lieu de les refaire chacun de son côté. L'intérêt saute aux yeux avec le plugin [BD TOPO® Extractor](https://plugins.qgis.org/plugins/bd_topo_extractor/) : on extrait une couche, puis il faut reconstruire à la main une symbologie que le producteur a déjà définie quelque part ou exploiter celle proposée par le propriétaire du plugin.
-- **Le nettoyage de l'index Géoplateforme**, moins visible et plus structurant. Il conditionne la recherche de couches dans Explorer de cartes.gouv et la capacité des IHM tierces — SIG, plugins, applications métier — à exploiter proprement l'offre. Le symptôme se constate en trois clics : dans les filtres d'Explorer de cartes.gouv, la catégorie « Autres » rassemble 384 entrées côté thématique et 410 côté producteur.
+- **Le nettoyage de l'index Géoplateforme**, moins visible et plus structurant. Il conditionne la recherche de couches dans Explorer de cartes.gouv.fr et la capacité des IHM tierces — SIG, plugins, applications métier — à exploiter proprement l'offre. Le symptôme se constate en trois clics : dans les filtres d'Explorer de cartes.gouv.fr, la catégorie « Autres » rassemble 384 entrées côté thématique et 410 côté producteur.
 
 ![Capture cartes.gouv.fr](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_cartalogue.png){: width="300px" .img-center }
 
