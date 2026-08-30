@@ -223,7 +223,7 @@ Pour rejoindre la communauté [Géoplateforme et Cartes.gouv](https://www.expert
 
 - [cartes.gouv.fr](https://cartes.gouv.fr)
 - [geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers) : extensions Géoplateforme pour OpenLayers (AGPL-3.0)
-- [plugin Géoplateforme pour QGIS](https://github.com/Geoplateforme/plugin-qgis-geoplateforme) :[documentation](https://geoplateforme.github.io/plugin-qgis-geoplateforme/), [dépôt officiel des plugins QGIS](https://plugins.qgis.org/plugins/geoplateforme/)
+- [plugin Géoplateforme pour QGIS](https://github.com/Geoplateforme/plugin-qgis-geoplateforme) : [documentation](https://geoplateforme.github.io/plugin-qgis-geoplateforme/), [dépôt officiel des plugins QGIS](https://plugins.qgis.org/plugins/geoplateforme/)
 - [GeoNetwork-UI](https://github.com/geonetwork/geonetwork-ui) : socle du Datahub
 - [géotuileur](https://github.com/IGNF/geotuileur-site) : dépôt archivé de l'expérimentation 2022-2023
 - [Les Acteurs du Libre 2024](https://cnll.fr/news/laur%C3%A9ats-des-acteurs-du-libre-2024/) : palmarès du CNLL, et l'[annonce de Camptocamp](https://camptocamp.com/fr/actualites-evenements/acteurs-du-libre-2024)
