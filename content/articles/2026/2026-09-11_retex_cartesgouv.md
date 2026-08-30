@@ -141,7 +141,9 @@ L'utilisateur qui abandonne la recherche de couches. Celui qui va chercher la de
 
 Un aspect dont on parle peu, parce qu'il ne se voit ni dans l'interface ni dans les dépôts : l'organisation du travail.
 
-Un duo produit et technique en pilotage, un product manager et un lead dev, et autour plusieurs petites équipes organisées sur le même modèle, chacune avec son couple product owner et tech lead sur un composant: Explorer, Rechercher, Publier de cartes.gouv, les extensions cartographiques, le plugin Géoplateforme QGIS, la documentation. C'est efficace, chaque équipe est autonome et développe une vraie expertise sur son périmètre.
+Un duo produit et technique en pilotage, un product manager et un lead dev, et autour plusieurs petites équipes organisées sur le même modèle, chacune avec son couple product owner et tech lead sur un composant : Explorer, Rechercher, Publier de cartes.gouv.fr, les extensions cartographiques, le plugin Géoplateforme QGIS, la documentation. 
+
+C'est efficace, chaque équipe est autonome et développe une vraie expertise sur son périmètre.
 En contrepartie, **la cohérence cesse d'être un effet secondaire du développement pour devenir un travail à part entière.** Ce n'est la faute de personne, c'est mécanique. Chaque équipe optimise légitimement son composant, et l'articulation entre composants n'a pas de propriétaire naturel.
 Concrètement, ça veut dire arbitrer entre vitesse locale et convergence globale, écarter une solution locale élégante parce qu'elle diverge, répéter la même intention à plusieurs endroits, vérifier qu'une décision prise ailleurs a été comprise de la même manière. Le duo de tête tient le pourquoi et l'ordre des priorités d'un côté, le comment et la chaîne de dépendances de l'autre.
 
