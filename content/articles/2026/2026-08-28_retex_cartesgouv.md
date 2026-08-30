@@ -44,18 +44,18 @@ La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine
 **Réponse : aucun de ces outils et un peu tous à la fois.**
 
 <!-- markdownlint-disable MD046 -->
-!!! L'écosystème de l'époque fonctionnait bien et le projet n'est pas né d'un constat d'échec. On avait simplement accumulé, au fil des besoins métier, des outils solides certes mais "silotés" :
+!!! tip  "L'écosystème de l'époque fonctionnait bien et le projet n'est pas né d'un constat d'échec. On avait simplement accumulé, au fil des besoins métier, des outils solides certes mais "silotés" :"
 
-- le Géoportail pour la consultation,
-- Géoservices pour les flux et les API,
-- MaCarte pour la composition et la diffusion
-- l'Espace collaboratif pour la contribution.
+    - le Géoportail pour la consultation,
+    - Géoservices pour les flux et les API,
+    - MaCarte pour la composition et la diffusion
+    - l'Espace collaboratif pour la contribution.
 
-Quatre (bons) outils, quatre univers.
+    Quatre (bons) outils, quatre univers.
 
-Les passages de l'un à l'autre restaient limités et le cycle de vie de la donnée n'était jamais couvert de bout en bout : produite ici, décrite là, diffusée ailleurs, réutilisée dans un quatrième endroit. Quand le métier consiste précisément à produire, documenter, diffuser et faire réutiliser de la donnée géographique, cette fragmentation finit par coûter.
-Pas en performance, en cohérence.
-**On ne remplaçait donc pas un produit, on essayait de sortir d'un modèle.**
+    Les passages de l'un à l'autre restaient limités et le cycle de vie de la donnée n'était jamais couvert de bout en bout : produite ici, décrite là, diffusée ailleurs, réutilisée dans un quatrième endroit. Quand le métier consiste précisément à produire, documenter, diffuser et faire réutiliser de la donnée géographique, cette fragmentation finit par coûter.
+    Pas en performance, en cohérence.
+    **On ne remplaçait donc pas un produit, on essayait de sortir d'un modèle.**
 <!-- markdownlint-enable MD046 -->
 
 ## Guidé par un historique
