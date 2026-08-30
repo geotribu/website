@@ -41,7 +41,8 @@ J'ai écrit cet article à l'été 2026, huit mois après l'ouverture aux profes
 C'est la question qui revenait le plus souvent au début du projet. Le Géoportail ? Géoservices ? MaCarte ? L'Espace collaboratif ?
 
 La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine d'utilisateurs en phase de conception. Et impossible de les assigner à un profil particulier car leurs missions les faisaient côtoyer le rôle de producteur de données, de géomaticiens, de développeurs ou encore d'usagers.
-**Conclusion : aucun de ces outils et un peu tous à la fois.**
+
+**Réponse : aucun de ces outils et un peu tous à la fois.**
 
 L'écosystème de l'époque fonctionnait bien et le projet n'est pas né d'un constat d'échec. On avait simplement accumulé, au fil des besoins métier, des outils solides chacun dans son silo. Le Géoportail pour la consultation. Géoservices pour les flux et les API. MaCarte pour la composition et la diffusion. L'Espace collaboratif pour la contribution. Quatre bons outils, quatre univers.
 
