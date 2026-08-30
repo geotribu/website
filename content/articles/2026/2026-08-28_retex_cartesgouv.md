@@ -5,7 +5,7 @@ authors:
 categories:
     - article
 comments: true
-date: 2026-08-28
+date: 2026-09-11
 description: "Cartes.gouv.fr : retour d’expérience sur la transformation du Géoportail en plateforme ouverte de données, services et cartes du territoire."
 icon: fontawesome/solid/map
 image:
