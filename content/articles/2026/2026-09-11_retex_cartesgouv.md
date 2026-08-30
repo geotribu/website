@@ -43,8 +43,8 @@ La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine
 **Réponse : aucun de ces outils et un peu tous à la fois.**
 
 <!-- markdownlint-disable MD046 -->
-!!! tip  "L'écosystème de l'époque fonctionnait bien et le projet n'est pas né d'un constat d'échec. On avait simplement accumulé, au fil des besoins métier, des outils solides certes mais "silotés" :"
-
+!!! note  "L'écosystème de l'époque fonctionnait bien et le projet n'est pas né d'un constat d'échec."
+On avait simplement accumulé, au fil des besoins métier, des outils solides certes mais "silotés" :
     - le Géoportail pour la consultation,
     - Géoservices pour les flux et les API,
     - MaCarte pour la composition et la diffusion
