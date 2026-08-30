@@ -6,7 +6,7 @@ hide:
   - feedback
 social_accounts:
     github: IGNF-Xavier
-    bsky: xaviert
+    bluesky: xaviert
     gitlab:
     linkedin: xavierthauvin
     mail:
