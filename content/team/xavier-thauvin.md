@@ -11,7 +11,7 @@ social_accounts:
     linkedin: xavierthauvin
     mail:
     mastodon:
-        instance:mastodon.social 
+        instance:mastodon.social
         username:xavier8384
     openstreetmap:
     osgeo:
