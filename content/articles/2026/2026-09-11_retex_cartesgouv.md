@@ -13,13 +13,12 @@ license: default
 robots: index, follow
 tags:
     - cartes.gouv.fr
-    - geoNetwork-UI
-    - géoplateforme
-    - géoportail
-    - géoservices
+    - GeoNetwork-UI
+    - Géoplateforme
+    - Géoportail
     - IGN
     - métadonnées
-    - opensource
+    - OpenSource
     - QGIS
 
 ---
