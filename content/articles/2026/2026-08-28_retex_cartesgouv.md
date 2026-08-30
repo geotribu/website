@@ -34,7 +34,7 @@ La lecture est naturelle, elle est aussi assez trompeuse.
 Ce qui s'est joué derrière ce site, c'est le passage d'une collection d'outils spécialisés à une logique de plateforme, avec des briques faites pour vivre ensemble et un cycle de vie de la donnée traité comme un tout.
 Retour sur plusieurs années de chantier, jusqu'à l'ouverture aux professionnels.
 
-*Écrit à l'été 2026, huit mois après l'ouverture aux professionnels et quelques semaines après celle au grand public. Assez de recul pour que les choses aient décanté, pas assez pour avoir oublié l'historique.*
+J'ai écrit cet article à l'été 2026, huit mois après l'ouverture aux professionnels et quelques semaines après celle au grand public. Assez de recul pour que les choses aient décanté, pas assez pour avoir oublié l'historique.
 
 ## « Au fond, que remplace-t-on ? »
 
