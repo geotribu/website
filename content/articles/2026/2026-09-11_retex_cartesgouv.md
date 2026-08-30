@@ -81,14 +81,14 @@ En avril 2022, le COPIL Géoplateforme décide d'engager le projet Interfaces, c
 
 ![Proposition de valeur par profil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_projet.svg){: width="1170px" .img-center }
 
-Ce schéma montre que l'ambition ne portait déjà pas sur un site; usine logicielle, catalogue d'API, bac à sable partenaires, plugin QGIS, studio de création de cartes, fabrique à espaces collaboratifs, outil de création de portails en marque blanche. Il fournit aussi un instrument de mesure rudimentaire, puisqu'il suffit de le relire aujourd'hui pour voir ce qui est en service, ce qui a été transformé en chemin et ce qui attend toujours.
+Ce schéma montre que l'ambition ne portait déjà pas sur un site : usine logicielle, catalogue d'API, bac à sable partenaires, plugin QGIS, studio de création de cartes, fabrique à espaces collaboratifs, outil de création de portails en marque blanche. Il fournit aussi un instrument de mesure rudimentaire, puisqu'il suffit de le relire aujourd'hui pour voir ce qui est en service, ce qui a été transformé en chemin et ce qui attend toujours.
 Le bloc « outil de création de portails » mérite qu'on s'y arrête. Une plateforme qui permet à d'autres de fabriquer leurs propres portails accepte, par construction, de ne plus être le point d'entrée unique.
 
 ## Donner une forme aux idées
 
 Avant les développements, il a fallu rendre le projet tangible. Les premiers mois ont été consacrés à la réalisation de filaires et de maquettes permettant de matérialiser les parcours imaginés lors du cadrage. À ce stade, l'objectif n'était pas de dessiner l'interface définitive mais de vérifier que les différentes briques pouvaient s'articuler de manière cohérente pour les utilisateurs.
 
-![Filaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_filaire.png ){: width="2277px" .img-center }
+![Filaire de cartes.gouv](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_filaire.png ){: width="2277px" .img-center .caption  }
 
 Le travail ne s'est ensuite jamais vraiment arrêté. Les développements ont fait émerger de nouvelles questions, les retours utilisateurs ont conduit à revoir certains parcours et l'arrivée progressive des différents composants a nécessité des ajustements réguliers.
 **L'UX/UI n'a donc pas été une étape préalable au projet mais un compagnon de route présent jusqu'aux dernières livraisons et encore aujourd'hui.**
@@ -177,9 +177,9 @@ L'ouverture est souvent comprise dans un seul sens, diffuser des données. C'est
 - la bibliothèque d'extensions **[geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers),** développées pour Explorer de cartes.gouv et utilisables telles quelles dans n'importe quel site, gouvernemental ou non ;
 - le **Datahub**, qui porte [Rechercher de cartes.gouv](https://cartes.gouv.fr/catalogue/search), construit au sein de la communauté [GeoNetwork-UI](https://github.com/geonetwork/geonetwork-ui) aux côtés de [Camptocamp](https://camptocamp.com/) ;
 - le **[plugin Géoplateforme pour QGIS](https://github.com/Geoplateforme/plugin-qgis-geoplateforme),** conçu et financé par l'IGN, développé par [Oslandia](https://oslandia.com/), un financement dont ont également bénéficié French Locator Filter et, à travers lui, la Base Adresse Nationale ;
-- **Geostyler**, qui sert à donner une symbologie à une donnée publiée depuis Publier de cartes.gouv, entretenu par une [communauté active](https://geostyler.org/codesprint-2025/).
+- **Geostyler**, qui sert à donner une symbologie à une donnée publiée depuis Publier de cartes.gouv.fr, entretenu par une [communauté active](https://geostyler.org/codesprint-2025/).
 
-La documentation suit la même règle, et l'ouverture n'y porte pas que sur le code. Le [site d'aide](https://github.com/IGNF/cartes.gouv.fr-documentation) est un site statique généré avec Eleventy, à partir du template eleventy-dsfr de codegouvfr, avec Pagefind pour la recherche. Surtout, les contributeurs de l'écosystème cartes.gouv.fr et Géoplateforme peuvent y publier leur propre documentation.
+La documentation suit la même règle, et l'ouverture ne porte pas que sur le code. Le [site d'aide](https://github.com/IGNF/cartes.gouv.fr-documentation) est un site statique généré avec Eleventy, à partir du [template eleventy-dsfr de codegouvfr](https://github.com/codegouvfr/eleventy-dsfr), avec Pagefind pour la recherche. Surtout, les contributeurs de l'écosystème cartes.gouv.fr et Géoplateforme peuvent y publier leur propre documentation.
 
 Le 4 décembre 2024, à [Open Source Experience](https://www.opensource-experience.com/), le concours [Les Acteurs du Libre](https://cnll.fr/news/laur%C3%A9ats-des-acteurs-du-libre-2024/) organisé par le CNLL a décerné son Prix de la collaboration public-privé à l'IGN et Camptocamp pour le travail mené sur GeoNetwork-UI et le Datahub. Le plugin Géoplateforme, lui, a été bien accueilli aux rencontres des utilisateurs francophones de QGIS, à Avignon, le 11 juin 2025. **Ces distinctions ne portent pas sur le portail, elles portent sur les briques.**
 
@@ -197,7 +197,7 @@ L'ouverture aux professionnels, le 15 décembre 2025, est la première étape r�
 ![Image](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_logo.png ){: width="500px" .img-center }
 
 C'est là que s'arrête mon rôle sur le projet. **Le socle est posé, les choix structurants assumés, les briques publiées**, et ce qui reste relève de l'ajout plutôt que de la fondation.
-Mes derniers faits d'armes de ce début d'année 2026 auront permis de boucler la VSR du plugin Géoplateforme pour QGIS, d'embarquer des plugins tiers, tout en élargissant la communication vers les réseaux sociaux professionnels, au-delà du cercle initial de bêta-testeurs mobilisés sur Tchap.
+Mes derniers faits d'armes de ce début d'année 2026 auront permis de boucler la VSR (Validation de Service Régulier) du plugin Géoplateforme pour QGIS, d'embarquer des plugins tiers, tout en élargissant la communication vers les réseaux sociaux professionnels, au-delà du cercle initial de bêta-testeurs mobilisés sur Tchap.
 
 L'[ouverture au grand public](https://www.ign.fr/institut/espace-presse/cartesgouvfr-le-nouveau-site-souverain-de-cartographie) a suivi à l'été 2026. Vue de l'extérieur, c'est le lancement, le moment dont on parle. Côté fonctionnalités, la principale nouveauté tenait à l'arrivée de [Panoramax](https://panoramax.fr/), le reste était déjà en service. Le gros du travail était ailleurs, dans les dispositions programmées pour accompagner les utilisateurs et dans le contenu de documentation à verser.
 
@@ -217,7 +217,7 @@ Un socle posé, des briques publiées, des communautés qui s'en emparent. À co
 ----
 P.S. : Le 30 septembre 2026, le **Géoportail** fermera définitivement ses portes pour rejoindre [cartes.gouv.fr](https://cartes.gouv.fr), pour en savoir [plus](https://cartes.gouv.fr/actualites/le-geoportail-rejoint-cartesgouvfr).
 
-Pour rejoindre la communauté [Géoplateforme et Cartes.gouv](https://www.expertises-territoires.fr/jcms/pl1_557493/fr/communaute-geoplateforme-et-cartes-gouv)
+Pour rejoindre la communauté [Géoplateforme et Cartes.gouv.fr](https://www.expertises-territoires.fr/jcms/pl1_557493/fr/communaute-geoplateforme-et-cartes-gouv)
 
 ## Ressources
 
