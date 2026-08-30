@@ -27,7 +27,7 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-> Vu de loin, [.fr](https://.fr) ressemble à un successeur du Géoportail avec une interface neuve.
+> Vu de loin, [cartes.gouv.fr](https://cartes.gouv.fr) ressemble à un successeur du Géoportail avec une interface neuve.
 La lecture est naturelle, elle est aussi assez trompeuse.
 Ce qui s'est joué derrière ce site, c'est le passage d'une collection d'outils spécialisés à une logique de plateforme, avec des briques faites pour vivre ensemble et un cycle de vie de la donnée traité comme un tout.
 Retour sur plusieurs années de chantier, jusqu'à l'ouverture aux professionnels.
