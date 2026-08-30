@@ -53,7 +53,8 @@ L'écosystème de l'époque fonctionnait bien et le projet n'est pas né d'un co
 
 Quatre (bons) outils, quatre univers.
 
-Les passages de l'un à l'autre restaient limités et le cycle de vie de la donnée n'était jamais couvert de bout en bout :  produite ici, décrite là, diffusée ailleurs, réutilisée dans un quatrième endroit. Quand le métier consiste précisément à produire, documenter, diffuser et faire réutiliser de la donnée géographique, cette fragmentation finit par coûter. Pas en performance, en cohérence.
+Les passages de l'un à l'autre restaient limités et le cycle de vie de la donnée n'était jamais couvert de bout en bout : produite ici, décrite là, diffusée ailleurs, réutilisée dans un quatrième endroit. Quand le métier consiste précisément à produire, documenter, diffuser et faire réutiliser de la donnée géographique, cette fragmentation finit par coûter.
+Pas en performance, en cohérence.
 **On ne remplaçait donc pas un produit, on essayait de sortir d'un modèle.**
 
 ## Guidé par un historique
