@@ -177,7 +177,7 @@ Le test est simple, il suffit de se demander si quelqu'un peut faire autrement q
 L'ouverture est souvent comprise dans un seul sens, diffuser des données. C'est le socle, et la Géoplateforme l'assume, elle héberge et diffuse les données d'autres producteurs que l'IGN. Le plus intéressant concerne l'ouverture des briques logicielles :
 
 - la bibliothèque d'extensions **[geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers),** développées pour Explorer de cartes.gouv.fr et utilisables telles quelles dans n'importe quel site, gouvernemental ou non ;
-- le **Datahub**, qui porte [Rechercher de cartes.gouv](https://cartes.gouv.fr/catalogue/search), construit au sein de la communauté [GeoNetwork-UI](https://github.com/geonetwork/geonetwork-ui) aux côtés de [Camptocamp](https://camptocamp.com/) ;
+- le **Datahub**, qui porte [Rechercher de cartes.gouv.fr](https://cartes.gouv.fr/catalogue/search), construit au sein de la communauté [GeoNetwork-UI](https://github.com/geonetwork/geonetwork-ui) aux côtés de [Camptocamp](https://camptocamp.com/) ;
 - le **[plugin Géoplateforme pour QGIS](https://github.com/Geoplateforme/plugin-qgis-geoplateforme),** conçu et financé par l'IGN, développé par [Oslandia](https://oslandia.com/), un financement dont ont également bénéficié French Locator Filter et, à travers lui, la Base Adresse Nationale ;
 - **Geostyler**, qui sert à donner une symbologie à une donnée publiée depuis Publier de cartes.gouv.fr, entretenu par une [communauté active](https://geostyler.org/codesprint-2025/).
 
