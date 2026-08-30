@@ -6,12 +6,13 @@ hide:
   - feedback
 social_accounts:
     github: IGNF-Xavier
+    bluesky ; xaviert.bsky.social
     gitlab:
     linkedin: xavierthauvin
     mail:
     mastodon:
-        instance:
-        username:
+        instance:mastodon.social 
+        username:xavier8384
     openstreetmap:
     osgeo:
     twitter:
