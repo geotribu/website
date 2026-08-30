@@ -12,14 +12,14 @@ image:
 license: default
 robots: index, follow
 tags:
-    - Cartes.gouv.fr
-    - GeoNetwork-UI
-    - Géoplateforme
-    - Géoportail
-    - Géoservices
+    - cartes.gouv.fr
+    - geoNetwork-UI
+    - géoplateforme
+    - géoportail
+    - géoservices
     - IGN
-    - Métadonnées
-    - Open source
+    - métadonnées
+    - opensource
     - QGIS
 
 ---
@@ -78,7 +78,7 @@ Le développeur cherche une API et sa documentation. Le producteur veut publier 
 
 En avril 2022, le COPIL Géoplateforme décide d'engager le projet Interfaces, celui qui donnera naissance à cartes.gouv.fr. La réponse retenue a été de **ne pas raisonner en fonctionnalités à reprendre, mais en proposition de valeur par profil**. Ce découpage date de l'été suivant, bien avant les premières maquettes.
 
-![Proposition de valeur par profil](https://github.com/user-attachments/assets/b17f8e66-c35c-4ae5-a9ce-d9383bec3575){: width="1170px" .img-center }
+![Proposition de valeur par profil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_projet.svg){: width="1170px" .img-center }
 
 Ce schéma montre que l'ambition ne portait déjà pas sur un site; usine logicielle, catalogue d'API, bac à sable partenaires, plugin QGIS, studio de création de cartes, fabrique à espaces collaboratifs, outil de création de portails en marque blanche. Il fournit aussi un instrument de mesure rudimentaire, puisqu'il suffit de le relire aujourd'hui pour voir ce qui est en service, ce qui a été transformé en chemin et ce qui attend toujours.
 Le bloc « outil de création de portails » mérite qu'on s'y arrête. Une plateforme qui permet à d'autres de fabriquer leurs propres portails accepte, par construction, de ne plus être le point d'entrée unique.
@@ -87,7 +87,7 @@ Le bloc « outil de création de portails » mérite qu'on s'y arrête. Une plat
 
 Avant les développements, il a fallu rendre le projet tangible. Les premiers mois ont été consacrés à la réalisation de filaires et de maquettes permettant de matérialiser les parcours imaginés lors du cadrage. À ce stade, l'objectif n'était pas de dessiner l'interface définitive mais de vérifier que les différentes briques pouvaient s'articuler de manière cohérente pour les utilisateurs.
 
-![Filaire](https://github.com/user-attachments/assets/3a4f7ef3-73f7-4a75-adf8-541145cd6ce4){: width="2277px" .img-center }
+![Filaire](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_filaire.png ){: width="2277px" .img-center }
 
 Le travail ne s'est ensuite jamais vraiment arrêté. Les développements ont fait émerger de nouvelles questions, les retours utilisateurs ont conduit à revoir certains parcours et l'arrivée progressive des différents composants a nécessité des ajustements réguliers.
 **L'UX/UI n'a donc pas été une étape préalable au projet mais un compagnon de route présent jusqu'aux dernières livraisons et encore aujourd'hui.**
@@ -98,7 +98,7 @@ Le travail ne s'est ensuite jamais vraiment arrêté. Les développements ont fa
 
 **La valeur est ailleurs, dans la capacité à raisonner sur le cycle de vie complet de la donnée.**
 
-![Cycle de vie de la donnée](https://github.com/user-attachments/assets/229ebfdd-e881-459e-9c1e-9c69eab2e0b8){: width="400px" .img-center }
+![Cycle de vie de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_cycle.svg){: width="400px" .img-center }
 
 Comment une donnée est-elle produite, validée, documentée, diffusée ? Comment la retrouve-t-on ? Et comment finit-elle réellement réutilisée, dans un SIG ou une application métier ? Ce parti pris impose des choix structurants à court terme : maintenir une cohérence forte entre données et métadonnées, préférer l'automatisation aux interventions manuelles, chercher la convergence entre produits au lieu de laisser chacun régler son problème dans son coin, ...
 
@@ -128,7 +128,7 @@ Des exemples de reports, il y en a eu. J'en retiens cinq.
 - **Un catalogue de styles**, qui permettrait de récupérer les styles proposés par le producteur de la donnée, voire par la communauté, au lieu de les refaire chacun de son côté. L'intérêt saute aux yeux avec BD TOPO® Extractor : on extrait une couche, puis il faut reconstruire à la main une symbologie que le producteur a déjà définie quelque part ou exploiter celle proposée par le propriétaire du plugin.
 - **Le nettoyage de l'index Géoplateforme**, moins visible et plus structurant. Il conditionne la recherche de couches dans Explorer de cartes.gouv et la capacité des IHM (Interface Homme Machine) tierces — SIG, plugins, applications métier — à exploiter proprement l'offre. Le symptôme se constate en trois clics : dans les filtres d'Explorer de cartes.gouv, la catégorie « Autres » rassemble 384 entrées côté thématique et 410 côté producteur.
 
-![Capture cartes.gouv](https://github.com/user-attachments/assets/f66c27da-8ab0-4d4e-995e-61cf13ba9ce0){: width="300px" .img-center }
+![Capture cartes.gouv](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_cartalogue.png){: width="300px" .img-center }
 
 Les trois premiers ont été financés par le programme Géoplateforme et sont [disponibles](https://github.com/geonetwork/geonetwork-ui/releases?page=2#release-v2.6.0) depuis la fin de l'été 2025. Restent à les activer et à pousser du contenu dans le GeoNetwork de la Géoplateforme. Le catalogue de styles, lui, en est resté à l'état de souhait.
 
@@ -152,7 +152,7 @@ Comme tout service numérique de l'État, cartes.gouv.fr doit respecter le [syst
 
 On a choisi de produire une bibliothèque publique : la bibliothèque d'extensions [geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers), sous AGPL-3.0. Des widgets alignés sur l'identité de l'État, utilisables dans n'importe quelle application cartographique. Rien de ce qu'affiche cartes.gouv.fr ne lui appartient en propre.
 
-![geopf-extensions-openlayers](https://github.com/user-attachments/assets/07dd67af-dbe4-4739-90f8-1585fc2aab71){: width="2680px" .img-center }
+![geopf-extensions-openlayers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_geopf-extensions-openlayers.png){: width="2680px" .img-center }
 
 **Une obligation réglementaire devenue un actif partagé, et enrichissable avec de nouveaux widgets** (contributeurs, n'hésitez pas).
 
@@ -160,7 +160,7 @@ Même logique avec le [plugin Géoplateforme pour QGIS](https://github.com/Geopl
 Il se synchronise avec cartes.gouv.fr pour la publication et la découvrabilité des services ainsi que pour l'interface de style. Il fonctionne comme un fédérateur de plugins : [GPF Isochrone / Isodistance / Itinéraire](https://plugins.qgis.org/plugins/gpf_isochrone_isodistance_itineraire/), [French Locator Filter](https://plugins.qgis.org/plugins/french_locator_filter/), [QGiréférentiels](https://plugins.qgis.org/plugins/qgireferentiels/), [BD TOPO® Extractor](https://plugins.qgis.org/plugins/bd_topo_extractor/) ; plutôt que comme un monolithe.
 La liste a vocation à s'allonger, avec des plugins qui ne viendront pas forcément de l'IGN. C'est le travail de mon successeur.
 
-![Plugin GPF pour QGIS](https://github.com/user-attachments/assets/caefbdf8-b080-470e-b571-8e1e9e8d04a4){: width="1400px" .img-center }
+![Plugin GPF pour QGIS](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_pluginQGIS.png ){: width="1400px" .img-center }
 
 ## Structurant, mais pas bloquant
 
@@ -193,7 +193,7 @@ Le périmètre est déjà large — GeoNetwork-UI, QGIS et ses plugins, OpenLaye
 
 L'ouverture aux professionnels, le 15 décembre 2025, est la première étape réelle de la bascule. Cartes.gouv.fr cesse d'être un site pour devenir une offre, un ensemble de produits cohérents entre eux, désignés par ce qu'ils permettent de faire : **Explorer**, **Rechercher**, **Publier**.
 
-![Image](https://github.com/user-attachments/assets/278e9911-d520-43ea-a05c-0a739891b203){: width="500px" .img-center }
+![Image](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_logo.png ){: width="500px" .img-center }
 
 C'est là que s'arrête mon rôle sur le projet. **Le socle est posé, les choix structurants assumés, les briques publiées**, et ce qui reste relève de l'ajout plutôt que de la fondation.
 Mes derniers faits d'armes de ce début d'année 2026 auront permis de boucler la VSR du plugin Géoplateforme pour QGIS, d'embarquer des plugins tiers, tout en élargissant la communication vers les réseaux sociaux professionnels, au-delà du cercle initial de bêta-testeurs mobilisés sur Tchap.
@@ -215,7 +215,7 @@ Un socle posé, des briques publiées, des communautés qui s'en emparent. À co
 
 ----
 P.S. : Le 30 septembre 2026, le **Géoportail** fermera définitivement ses portes pour rejoindre [cartes.gouv.fr](https://cartes.gouv.fr), pour en savoir [plus](https://cartes.gouv.fr/actualites/le-geoportail-rejoint-cartesgouvfr).
-
+Pour rejoindre la communauté [Géoplateforme et Cartes.gouv](https://www.expertises-territoires.fr/jcms/pl1_557493/fr/communaute-geoplateforme-et-cartes-gouv)
 ## Ressources
 
 - [cartes.gouv.fr](https://cartes.gouv.fr)
