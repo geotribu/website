@@ -24,6 +24,7 @@ tags:
     - Métadonnées
     - Géoservices
 ---
+
 # Cartes.gouv.fr : on ne remplace pas un portail, on sort d'un modèle
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
