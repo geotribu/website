@@ -101,7 +101,7 @@ Le travail ne s'est ensuite jamais vraiment arrêté. Les développements ont fa
 
 ![Cycle de vie de la donnée](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_cycle.svg){: width="400px" .img-center }
 
-Comment une donnée est-elle produite, validée, documentée, diffusée ? Comment la retrouve-t-on ? Et comment finit-elle réellement réutilisée, dans un SIG ou une application métier ? Ce parti pris impose des choix structurants à court terme : maintenir une cohérence forte entre données et métadonnées, préférer l'automatisation aux interventions manuelles, chercher la convergence entre produits au lieu de laisser chacun régler son problème dans son coin, ...
+Comment une donnée est-elle produite, validée, documentée, diffusée ? Comment la retrouve-t-on ? Et comment finit-elle réellement réutilisée, dans un SIG ou une application métier ? Ce parti pris impose des choix structurants à court terme : maintenir une cohérence forte entre données et métadonnées, préférer l'automatisation aux interventions manuelles, chercher la convergence entre produits au lieu de laisser chacun régler son problème dans son coin…
 
 ## Les métadonnées, ce sujet fréquemment relégué au second plan
 
