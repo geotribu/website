@@ -215,6 +215,7 @@ Un socle posé, des briques publiées, des communautés qui s'en emparent. À co
 
 ----
 P.S. : Le 30 septembre 2026, le **Géoportail** fermera définitivement ses portes pour rejoindre [cartes.gouv.fr](https://cartes.gouv.fr), pour en savoir [plus](https://cartes.gouv.fr/actualites/le-geoportail-rejoint-cartesgouvfr).
+
 Pour rejoindre la communauté [Géoplateforme et Cartes.gouv](https://www.expertises-territoires.fr/jcms/pl1_557493/fr/communaute-geoplateforme-et-cartes-gouv)
 
 ## Ressources
