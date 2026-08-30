@@ -119,7 +119,7 @@ C'est la difficulté la plus réelle du projet, et elle n'a rien de technique.
 **Le mode produit repose sur le triptyque : livrer tôt, observer, ajuster.**
 Dans la sphère publique, l'exigence d'irréprochabilité immédiate prend le pas : si une fonctionnalité n'est pas totalement aboutie, elle est écartée « à plus tard », ce qui, dans un programme de cette envergure, signifie souvent aux calendes grecques.
 Faute de pouvoir ouvrir pleinement le dialogue avec les communautés pour nourrir le produit de retours qualitatifs, les arbitrages se sont faits en circuit fermé, à partir d'un échantillon d'avis trop étroit pour être représentatif.
-S'ajoute une réalité qu'on oublie en regardant l'interface. **Cartes.gouv.fr est un client de la Géoplateforme**, pas son propriétaire. Il consomme des API, un index, des services qui ont leur propre trajectoire et servent d'autres clients. Beaucoup de sujets produit ne se règlent donc pas dans l'IHM mais en amont, à un rythme qui n'est pas celui du portail. C'est le prix normal de la mutualisation, et ça déplace une partie du travail produit vers la gestion de dépendances.
+S'ajoute une réalité qu'on oublie en regardant l'interface. **Cartes.gouv.fr est un client de la Géoplateforme**, pas son propriétaire. Il consomme des API, un index, des services qui ont leur propre trajectoire et servent d'autres clients. Beaucoup de sujets produit ne se règlent donc pas dans l'IHM (Interface Homme Machine) mais en amont, à un rythme qui n'est pas celui du portail. C'est le prix normal de la mutualisation, et ça déplace une partie du travail produit vers la gestion de dépendances.
 
 Des exemples de reports, il y en a eu. J'en retiens cinq : 
 
