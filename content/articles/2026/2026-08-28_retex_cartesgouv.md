@@ -136,7 +136,7 @@ Aucun de ces sujets ne fait une annonce, et c'est probablement ce qui les condam
 **Le coût du report ne se manifeste jamais comme un incident, il se manifeste comme un contournement.**
 L'utilisateur qui abandonne la recherche de couches. Celui qui va chercher la description des champs ailleurs. Celui qui recompose son index dans son [coin](https://github.com/Geoplateforme/plugin_idg_gpf). Les retours terrain tranchent assez nettement : **mieux vaut un service imparfait mais utile qu'un service théoriquement parfait qui tarde à répondre à un besoin réel.**
 
-## Des petites équipes, et la cohérence à tenir
+## Des petites équipes et la cohérence à tenir
 
 Un aspect dont on parle peu, parce qu'il ne se voit ni dans l'interface ni dans les dépôts : l'organisation du travail.
 
