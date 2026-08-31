@@ -41,22 +41,9 @@
         </span>
     </a>
     {% elif network == "bluesky" %}
+    {# Simplified handling per review: prefer mapping {username, instance}; fallback to bsky.app/profile/{value} #}
     {% if value and value.username and value.instance %}
     <a href="https://{{ value.instance }}/profile/{{ value.username }}" target="_blank" rel="noopener"
-        aria-label="Profil Bluesky de {{ page.meta.title }}">
-        <span class="twemoji">
-            {% include ".icons/fontawesome/brands/bluesky.svg" %}
-        </span>
-    </a>
-    {% elif value and value.startswith('http') %}
-    <a href="{{ value }}" target="_blank" rel="noopener"
-        aria-label="Profil Bluesky de {{ page.meta.title }}">
-        <span class="twemoji">
-            {% include ".icons/fontawesome/brands/bluesky.svg" %}
-        </span>
-    </a>
-    {% elif value and '.' in value %}
-    <a href="https://bsky.app/profile/{{ value }}" target="_blank" rel="noopener"
         aria-label="Profil Bluesky de {{ page.meta.title }}">
         <span class="twemoji">
             {% include ".icons/fontawesome/brands/bluesky.svg" %}
