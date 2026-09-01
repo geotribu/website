@@ -77,7 +77,7 @@ Le développeur cherche une API et sa documentation. Le producteur veut publier 
 
 ## L'engagement en 2022
 
-En avril 2022, le COPIL Géoplateforme décide d'engager le projet Interfaces, celui qui donnera naissance à .fr. La réponse retenue a été de **ne pas raisonner en fonctionnalités à reprendre, mais en proposition de valeur par profil**. Ce découpage date de l'été suivant, bien avant les premières maquettes.
+En avril 2022, le COPIL Géoplateforme décide d'engager le projet Interfaces, celui qui donnera naissance à [cartes.gouv.fr](https://cartes.gouv.fr) . La réponse retenue a été de **ne pas raisonner en fonctionnalités à reprendre, mais en proposition de valeur par profil**. Ce découpage date de l'été suivant (2022), bien avant les premières maquettes.
 
 ![Proposition de valeur par profil](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_projet.svg){: width="1170px" .img-center }
 
@@ -88,7 +88,7 @@ Le bloc « outil de création de portails » mérite qu'on s'y arrête. Une plat
 
 Avant les développements, il a fallu rendre le projet tangible. Les premiers mois ont été consacrés à la réalisation de filaires et de maquettes permettant de matérialiser les parcours imaginés lors du cadrage. À ce stade, l'objectif n'était pas de dessiner l'interface définitive mais de vérifier que les différentes briques pouvaient s'articuler de manière cohérente pour les utilisateurs.
 
-![Filaire de cartes.gouv.fr](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_filaire.png ){: width="2277px" .img-center .caption  }
+![Filaire de cartes.gouv.fr](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_filaire.png ){: width="1700px" .img-center .caption  }
 
 Le travail ne s'est ensuite jamais vraiment arrêté. Les développements ont fait émerger de nouvelles questions, les retours utilisateurs ont conduit à revoir certains parcours et l'arrivée progressive des différents composants a nécessité des ajustements réguliers.
 **L'UX/UI n'a donc pas été une étape préalable au projet mais un compagnon de route présent jusqu'aux dernières livraisons, et encore aujourd'hui.**
@@ -153,7 +153,7 @@ C'est aussi la partie la plus difficile à valoriser, puisqu'elle ne produit auc
 
 Comme tout service numérique de l'État, cartes.gouv.fr doit respecter le [système de design de l'État](https://www.systeme-de-design.gouv.fr/version-courante/fr). C'est plutôt une bonne chose, entre la cohérence d'ensemble des sites publics et l'accessibilité. Mais le DSFR ne couvre pas la cartographie. Ni sélecteur de couches, ni légende, ni widget de zoom, ni recherche géographique, ni gestion des styles. Il fallait donc s'écarter du référentiel ou produire ce qui manquait.
 
-On a choisi de produire une bibliothèque publique : la bibliothèque d'extensions [geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers), sous AGPL-3.0. Des widgets alignés sur l'identité de l'État, utilisables dans n'importe quelle application cartographique. Rien de ce qu'affiche cartes.gouv.fr ne lui appartient en propre.
+On a choisi de produire une bibliothèque publique : la bibliothèque d'extensions [geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers), sous licence AGPL-3.0. Des widgets alignés sur l'identité de l'État, utilisables dans n'importe quelle application cartographique. Rien de ce qu'affiche cartes.gouv.fr ne lui appartient en propre.
 
 ![geopf-extensions-openlayers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_geopf-extensions-openlayers.png){: width="2680px" .img-center }
 
@@ -199,7 +199,7 @@ L'ouverture aux professionnels, le 15 décembre 2025, est la première étape r�
 ![Identité visuelle de Cartes.gouv.fr](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_logo.png ){: width="500px" .img-center }
 
 C'est là que s'arrête mon rôle sur le projet. **Le socle est posé, les choix structurants assumés, les briques publiées**, et ce qui reste relève de l'ajout plutôt que de la fondation.
-Mes derniers faits d'armes de ce début d'année 2026 auront permis de boucler la VSR (Validation de Service Régulier) du plugin Géoplateforme pour QGIS, d'embarquer des plugins tiers, tout en élargissant la communication vers les réseaux sociaux professionnels, au-delà du cercle initial de bêta-testeurs mobilisés sur Tchap.
+Mes derniers faits d'armes de ce début d'année 2026 auront permis de boucler la VSR (Validation de Service Régulier) du plugin Géoplateforme pour QGIS, d'embarquer des plugins tiers, tout en élargissant la communication vers les réseaux sociaux professionnels, au-delà du cercle initial de bêta-testeurs mobilisés sur [Tchap](https://tchap.gouv.fr/#/room/#PluginQgisGoplateformeKDBGAqBBfs:agent.dev-durable.tchap.gouv.fr).
 
 L'[ouverture au grand public](https://www.ign.fr/institut/espace-presse/cartesgouvfr-le-nouveau-site-souverain-de-cartographie) a suivi à l'été 2026. Vue de l'extérieur, c'est le lancement, le moment dont on parle. Côté fonctionnalités, la principale nouveauté tenait à l'arrivée de [Panoramax](https://panoramax.fr/), le reste était déjà en service. Le gros du travail était ailleurs, dans les dispositions programmées pour accompagner les utilisateurs et dans le contenu de documentation à verser.
 
