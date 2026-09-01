@@ -53,7 +53,7 @@ La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine
 
     Quatre (bons) outils, quatre univers.
 
-    Les passages de l'un à l'autre restaient limités et le cycle de vie de la donnée n'était jamais couvert de bout en bout : produite ici, décrite là, diffusée ailleurs, réutilisée dans un quatrième endroit. Quand le métier consiste précisément à produire, documenter, diffuser et faire réutiliser de la donnée géographique, cette fragmentation finit par coûter.
+    Les passages de l'un à l'autre restaient limités et le cycle de vie de la donnée n'était jamais couvert de bout en bout : produite ici, décrite là, diffusée ailleurs, réutilisée dans un quatrième endroit. Quand le métier consiste précisément à produire, documenter, diffuser et faire réutiliser de la donnée géographique, cette fragmentation finit par avoir un coût.
     Pas en performance, en cohérence.
 <!-- markdownlint-enable MD046 -->
 
