@@ -183,7 +183,7 @@ L'ouverture est souvent comprise dans un seul sens, diffuser des données. C'est
 
 La documentation suit la même règle, et l'ouverture ne porte pas que sur le code. Le [site d'aide](https://github.com/IGNF/cartes.gouv.fr-documentation) est un site statique généré avec Eleventy, à partir du [template eleventy-dsfr de codegouvfr](https://github.com/codegouvfr/eleventy-dsfr), avec Pagefind pour la recherche. Surtout, les contributeurs de l'écosystème cartes.gouv.fr et Géoplateforme peuvent y publier leur propre documentation.
 
-Le 4 décembre 2024, à [Open Source Experience](https://www.opensource-experience.com/), le concours [Les Acteurs du Libre](https://cnll.fr/news/laur%C3%A9ats-des-acteurs-du-libre-2024/) organisé par le CNLL a décerné son Prix de la collaboration public-privé à l'IGN et Camptocamp pour le travail mené sur GeoNetwork-UI et le Datahub. Le plugin Géoplateforme, lui, a été bien accueilli aux rencontres des utilisateurs francophones de QGIS, à Avignon, le 11 juin 2025. **Ces distinctions ne portent pas sur le portail, elles portent sur les briques.**
+Le 4 décembre 2024, à [Open Source Experience](https://www.opensource-experience.com/), le concours [Les Acteurs du Libre](https://cnll.fr/news/laur%C3%A9ats-des-acteurs-du-libre-2024/) organisé par le CNLL a décerné son Prix de la collaboration public-privé à l'IGN et Camptocamp pour le travail mené sur GeoNetwork-UI et le Datahub. Le plugin Géoplateforme, lui, a été bien accueilli aux Rencontres des Utilisateurs Francophones de QGIS, à Avignon, le 11 juin 2025. **Ces distinctions ne portent pas sur le portail, elles portent sur les briques.**
 
 ## Durer
 
