@@ -48,7 +48,7 @@ La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine
 
     - le Géoportail pour la consultation,
     - les Géoservices pour les flux et les API,
-    - MaCarte pour la composition et la diffusion
+    - MaCarte pour la composition et la diffusion,
     - l'Espace collaboratif pour la contribution.
 
     Quatre (bons) outils, quatre univers.
