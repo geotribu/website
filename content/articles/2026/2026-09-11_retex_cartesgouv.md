@@ -196,7 +196,7 @@ Le périmètre est déjà large — GeoNetwork-UI, QGIS et ses plugins, OpenLaye
 
 L'ouverture aux professionnels, le 15 décembre 2025, est la première étape réelle de la bascule. Cartes.gouv.fr cesse d'être un site pour devenir une offre, un ensemble de produits cohérents entre eux, désignés par ce qu'ils permettent de faire : **Explorer**, **Rechercher**, **Publier**.
 
-![Image](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_logo.png ){: width="500px" .img-center }
+![Identité visuelle de Cartes.gouv.fr](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_logo.png ){: width="500px" .img-center }
 
 C'est là que s'arrête mon rôle sur le projet. **Le socle est posé, les choix structurants assumés, les briques publiées**, et ce qui reste relève de l'ajout plutôt que de la fondation.
 Mes derniers faits d'armes de ce début d'année 2026 auront permis de boucler la VSR (Validation de Service Régulier) du plugin Géoplateforme pour QGIS, d'embarquer des plugins tiers, tout en élargissant la communication vers les réseaux sociaux professionnels, au-delà du cercle initial de bêta-testeurs mobilisés sur Tchap.
