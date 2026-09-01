@@ -155,7 +155,7 @@ Comme tout service numérique de l'État, cartes.gouv.fr doit respecter le [syst
 
 On a choisi de produire une bibliothèque publique : la bibliothèque d'extensions [geopf-extensions-openlayers](https://github.com/IGNF/geopf-extensions-openlayers), sous licence AGPL-3.0. Des widgets alignés sur l'identité de l'État, utilisables dans n'importe quelle application cartographique. Rien de ce qu'affiche cartes.gouv.fr ne lui appartient en propre.
 
-![geopf-extensions-openlayers](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_geopf-extensions-openlayers.png){: width="2680px" .img-center }
+![bibliothèque d'extensions geopf-extensions-openlayers pour page internet avec composante cartographique au design-system de l'Etat ou non](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/cartes_gouv_fr_coulisses/cartesgouv_retex_geopf-extensions-openlayers.png){: width="2680px" .img-center }
 
 **Une obligation réglementaire devenue un actif partagé, et enrichissable avec de nouveaux widgets** (contributeurs, n'hésitez pas).
 
