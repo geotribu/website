@@ -6,7 +6,9 @@ hide:
   - feedback
 social_accounts:
     github: IGNF-Xavier
-    bluesky: xaviert.bsky.social
+    bluesky:
+        instance: https://bsky.app  
+        username: xaviert.bsky.social
     gitlab:
     linkedin: xavierthauvin
     mail:
