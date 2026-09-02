@@ -61,7 +61,7 @@ La réponse s'est imposée très tôt, confirmée par un atelier d'une quinzaine
 
 ## Guidé par un historique
 
-La tentation de la page blanche existe toujours, sauf que la page n'était pas blanche. 67 millions de visites annuelles sur <geoportail.gouv.fr>. À ce niveau d'usage, on ne réinvente pas, on compose.
+La tentation de la page blanche existe toujours, sauf que la page n'était pas blanche. 67 millions de visites annuelles sur 'geoportail.gouv.fr'. À ce niveau d'usage, on ne réinvente pas, on compose.
 
 Le [géotuileur](https://github.com/IGNF/geotuileur-site) est éclairant. Démonstrateur déployé et testé entre l'été 2022 et l'été 2023, il couvrait déjà une chaîne complète (téléverser, tuiler, appliquer une symbologie, publier le service) avec un objectif qui tenait en une phrase : rendre le producteur autonome pour diffuser et faire connaître ses données. L'expérimentation a été concluante et l'intention comme les fonctionnalités ont été reprises dans [`cartes.gouv.fr`](https://cartes.gouv.fr) et dans [le plugin Géoplateforme pour QGIS](https://plugins.qgis.org/plugins/geoplateforme/), reparti des bases du plugin Géotuileur.
 
