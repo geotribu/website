@@ -24,15 +24,16 @@ tags:
 
 :calendar: Date de publication initiale : {{ page.meta.date | date_localized }}
 
-_La suite est à lire avec une voix façon vieux doublage dégueulasse de la TNT des années 2000_ :
+_La suite est un dialogue à lire avec une voix façon vieux doublage de la TNT du début des années 2000_ :
 
-> :truck: Hey yo mec/meuf, mate ta tire ! Ton ArqMap est tellement boîteux que l'autre jour en allant donner à manger aux canards, j'crois que j'lui ai lancé un bout de pain. Et encore, j'crois que ta géocaisse faisait fuir les grand-mères et les cygnes. Ta tire est un putain de danger mec, même un _Shapefile_ ne veut pas y prendre place. Alors aujourd'hui, au garage de _Geotribu Customs(tm)_, on va tuner ta Qaisse !
+> - Yo la géotroupe, j'me présente c'est Jean-Marc, mes amis m'appellent Double-Jay car mon nom de famille c'est Jisse. J'roule dans une vieille ArqMap(c) de 1999, et j'dois dire que mes jeunes collègues veulent pas monter dedans, j'sais pas trop quoi faire. J'ai aussi un MapInfo(c) de secours que ma tante m'a légué, celui-là date de 1995, et je modifie mes GeoJSON à la main dans _Edit_ de Windows. J'dois avouer que c'est pas facile tous les jours, et quand ma tire me lâche c'est-à-dire assez souvent, j'dois faire mes cartes sur Paint. _Geotribu Customs(tm)_, est-ce que vous pouvez faire quelque chose pour moi ?
+> - Yo Double-Jay, ça roule mon pote ? T'as toqué à la bonne porte mec, mais laisse-moi t'dire un truc d'abord, vieux, c'est à propose de ton _setup_ et de ta géo-caisse: ta tire est un vrai danger mec, même un `.shp` ne veut pas s'asseoir dedans. Alors t'imagines même pas ouvrir un _COG_ ou un _zarr_ avec tes jeunes collègues. Ils veulent du tout-terrain, des étoiles dans les yeux et la tête dans le _cloud_, mec. Alors c'est pas dans ta poubelle antique que tu risques de les conduire en after-work. Mais tout ceci va changer vieux, et aujourd'hui Jean-Marc, on va tuner ta Qaisse.
 
 ![Pimp my Georide: Tune ta Qaisse avec le garage Geotribu Customs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/pimp_my_georide/pimp_my_georide.webp){: .img-center loading=lazy }
 
-> C'est bientôt l'hiver, et pour te réchauffer on va installer de la géo-fourrure rose dans ta barre de menu horizontale. Et comme tu nous as dit que t'étais fan de GeoParquet, on va installer une piste de bowling dans ta Boîte à Outils de traitement. Allez c'est parti, j'vais tuner ta géocaisse !
+> C'est bientôt l'hiver, et pour te réchauffer on va installer de la géo-fourrure rose dans ta barre de menu horizontale. Et comme tu nous as dit que tes jeunes collègues étaient fan de geoparquet, on va installer une piste de bowling dans ta Boîte à Outils de traitement pour que vous puissiez vous amuser en after-work. Allez c'est parti, on ouvre le qapot.
 
-Voilà, fin de l'introduction.... Voici [:point_right: la ref :point_left:](https://www.youtube.com/watch?v=KTZznOF8zMs), issue de l'émission _Pimp My Ride_. Si vous souhaitez creuser davantage ce phénomène culturel essentiel, il y a aussi [une parodie de Mister V.](https://www.youtube.com/watch?v=KTZznOF8zMs)
+Voilà, fin de l'introduction.... Voici [:point_right: la ref douteuse :point_left:](https://www.youtube.com/watch?v=KTZznOF8zMs), issue de l'émission [_Pimp My Ride_](https://fr.wikipedia.org/wiki/Pimp_My_Ride). Si vous souhaitez creuser davantage ce phénomène culturel essentiel, il y a aussi [une parodie de Mister V.](https://www.youtube.com/watch?v=KTZznOF8zMs)
 
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
