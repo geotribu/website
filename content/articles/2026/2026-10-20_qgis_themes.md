@@ -31,7 +31,8 @@ _La suite est un dialogue à lire avec une voix façon vieux doublage de la TNT 
 
 ![Pimp my Georide: Tune ta Qaisse avec le garage Geotribu Customs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/pimp_my_georide/pimp_my_georide.webp){: .img-center loading=lazy }
 
-> C'est bientôt l'hiver, et pour te réchauffer on va installer de la géo-fourrure rose dans ta barre de menu horizontale. Et comme tu nous as dit que tes jeunes collègues étaient fan de geoparquet, on va installer une piste de bowling dans ta Boîte à Outils de traitement pour que vous puissiez vous amuser en after-work. Allez c'est parti, on ouvre le qapot.
+??? info "Du RAB de géogras en entrée..."
+    > C'est bientôt l'hiver, et pour te réchauffer on va installer de la géo-fourrure rose dans ta barre de menu horizontale. Et comme tu nous as dit que tes jeunes collègues étaient fan de geoparquet, on va installer une piste de bowling dans ta Boîte à Outils de traitement pour que vous puissiez vous amuser en after-work. Allez c'est parti, on ouvre le qapot.
 
 Voilà, fin de l'introduction.... Voici [:point_right: la ref douteuse :point_left:](https://www.youtube.com/watch?v=KTZznOF8zMs), issue de l'émission [_Pimp My Ride_](https://fr.wikipedia.org/wiki/Pimp_My_Ride). Si vous souhaitez creuser davantage ce phénomène culturel essentiel, il y a aussi [une parodie de Mister V.](https://www.youtube.com/watch?v=KTZznOF8zMs)
 
@@ -107,13 +108,9 @@ En voici donc quelques uns, parmi les thèmes fournis directement par le plugin 
 
 Valivala, je trouve personnellement que ça rend plutôt bien, épuré et agréable, avec des différents thèmes clairs et sombres, selon les goûts et appétences de tout-un-chacun.
 
-_Retour de la voix dégueulasse de la TNT / MTV des années 2000..._
-
-> Et maintenant, j'vais filer ta géo-tire au garage de _Geotribu Customs_ : c'est le moment d'ouvrir le capot et d'ajouter de la puissance à ton véhicule. J'vais tuner ton QGIS.
-
 ### Les mains dans le qambouis
 
-Au sein du profil QGIS dans lequel on a installé le plugin, le code source est déposé dans `python/plugins/qgis_studio_themes/`.
+Jetons maintenant un coup d'oeil à comment ce plugin fonctionnne. Au sein de notre profil QGIS courant, le code source est déposé dans `python/plugins/qgis_studio_themes/`.
 
 !!! warning "Disqlaimer"
     C'est (très) crado de modifier le code source d'un plugin comme ça dans le dossier du profil. On peut se noter d'envisager la proposition d'une contribution au plugin `QGIS Studio Themes`, si jamais nos expérimentations sont concluantes et nous amènenent à un "joli" thème...
@@ -141,10 +138,8 @@ DARK_THEMES = frozenset(
 
 Déclarons-y un nouveau thème, qu'on appellera `Dolphins`...
 
-> Eh yo tu nous a dit que l'été dernier t'avais bien aimé regarder la mer pendant tes vacances, alors on va te peindre plein de dauphins bleus sur ta qarrosserie, comme ça t'as pas b'soin de faire le déplacement et tu peux mater la mer à travers ta nouvelle tire.
-
-!!! warning "Disclaimer"
-    C'est la dernière fois que vous entendez le doublage TNT des années 2000, promis...
+??? info "Encore un peu de géogras, dernière fois que vous entendez le doublage TNT des années 2000, promis..."
+    > Eh yo tu nous a dit que l'été dernier t'avais bien aimé regarder la mer pendant tes vacances, alors on va te peindre plein de dauphins bleus sur ta qarrosserie, comme ça t'as pas besoin de poser des vacances: tu peux mater la mer à travers ta nouvelle tire.
 
 En regardant l'arborescence des fichiers fournis par le plugin, on remarque un dossier `themes`, avec un sous-dossier par thème sélectionnable:
 
@@ -167,6 +162,12 @@ Changeons donc quelques variables, et voici le thème _Dolphins_ :dolphin: :tada
 Voici pour la petite expérimentation avec un nouveau thème dans l'esprit du plugin, et je crois que (_caramaba_) au final on va peut-être pas proposer une contribution au plugin avec ce thème _Dolphins_...
 
 En tout cas si (vous) vous avez du goût, et des capacités en design, n'hésitez pas : plus y'a de thèmes plus on rit !
+
+### Pimp my QChat
+
+Revenons à nos boutons, et essayons de mettre un place quelques règles `qss`. L'idée c'est de changer les styles des boutons et de quelques autres _widgets_ graphiques, dont on peut voir les changements d'affichages au travers de l'UI, par exemple via QChat, ou autre.
+
+TODO: balises de code avec `qss` modifié + screenshot de QChat.
 
 ## Ribbon dans QGIS
 
