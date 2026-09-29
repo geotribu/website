@@ -31,11 +31,7 @@ _La suite est un dialogue à lire avec une voix façon vieux doublage de la TNT 
 
 ![Pimp my Georide: Tune ta Qaisse avec le garage Geotribu Customs](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/pimp_my_georide/pimp_my_georide.webp){: .img-center loading=lazy }
 
-??? info "Du RAB de géogras en entrée..."
-    > Comme c'est bientôt l'hiver, et pour te tenir chaud on va installer de la géo-fourrure rose dans ta barre de menu horizontale. Et comme tu nous as dit que tes jeunes collègues étaient fan de geoparquet, on va installer une piste de bowling dans ta Boîte à Outils de traitement, pour que vous puissiez vous amuser en after-work. Allez c'est parti, on ouvre le *q*apot.
-
-Voilà, c'est la fin de l'introduction.... Et voici [:point_right: la ref douteuse :point_left:](https://www.youtube.com/watch?v=KTZznOF8zMs), issue de l'émission [_Pimp My Ride_](https://fr.wikipedia.org/wiki/Pimp_My_Ride). Si vous souhaitez creuser davantage ce phénomène culturel essentiel, il y a aussi [une parodie par _Mister V_.](https://www.youtube.com/watch?v=KTZznOF8zMs)
-
+Voilà, c'est la fin de l'introduction, voici [la ref douteuse](https://www.youtube.com/watch?v=KTZznOF8zMs), issue de l'émission [_Pimp My Ride_](https://fr.wikipedia.org/wiki/Pimp_My_Ride).
 [Commenter cet article :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
 {: align=middle }
 
