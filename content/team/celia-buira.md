@@ -1,20 +1,20 @@
 ---
-title: Valentin Buira
+title: Célia Buira
 categories:
     - contributeur
 social_accounts:
-    linkedin: valentin-buira-56a504206
-    mail: valentin.buira@gmail.com
-    github: ValentinBuira
+    linkedin: célia-buira-56a504206
+    mail: celia.buira@gmail.com
+    github: CeliaBuira
 ---
 
-# Valentin Buira
+# Célia Buira
 
 <!-- --8<-- [start:author-sign-block] -->
 
-![Portrait Valentin Buira](https://avatars.githubusercontent.com/u/30632058?v=4){: .img-thumbnail-left }
+![Portrait Celia Buira](https://avatars.githubusercontent.com/u/30632058?v=4){: .img-thumbnail-left }
 
-Urbaniste-géomaticien, j'ai travaillé sur les sujets de planifications et de mobilité.
+Urbaniste-géomaticienne, j'ai travaillé sur les sujets de planifications et de mobilité.
 
 Aujourd'hui, je contribue principalement au projet QGIS où j'essaie d'améliorer l'*user experience* par ma propre expèrience en urbanisme et en retour j'intègre QGIS dans mes workflows. Pratique également appelée de manière plus familière [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) chez nos amis anglo-saxons
 

@@ -2,7 +2,7 @@
 title: Comment bien préparer un date avec QGIS et l’analyse spatiale ?
 subtitle: L'amour est dans le précarté
 authors:
-    - Valentin Buira
+    - Célia Buira
 categories:
     - article
 comments: true
