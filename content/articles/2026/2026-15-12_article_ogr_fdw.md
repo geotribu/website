@@ -120,7 +120,7 @@ Pour pouvoir utiliser un `FDW` PostgreSQL a besoin d'un `foreign server` qui ser
 
 Comme tout Geomaticien qui se respecte je confonds toujours la latitude et la longitude. Ou bien ça n'est que moi. Pour cette bbox je vous laisse donc tester l'ordre des X et des Y (ici il s'agit de la Baie de Somme qui est un coin très très chouette à visiter).
 
-## CREATION des Foreign Tables et des vues matérialisées
+## Création des Foreign Tables et des vues matérialisées
 
 Maintenant, créons un shéma nommé `ign` qui stockera toutes nos données.
 
@@ -263,7 +263,7 @@ Et voilà, nos données issus des flux de l'IGN sur le périmètre sont consulta
 Pour raffraichir nos 54 vues matérialisée et donc la donnée, il ne suffira plus qu'à lancer
 
 ```sql
-CALL ign.bdtopo_maj()
+CALL ign.bdtopo_maj();
 ```
 
 Attention ça peut prendre 1 ou 2 heures à cette échelle, mais le flux n'est évidemment pas mit à jour sur une temporalité où cela soit pénalisant.
