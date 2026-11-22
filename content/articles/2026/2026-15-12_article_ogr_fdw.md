@@ -60,7 +60,7 @@ Sur Fenêtres, l'extension semble être disponible via StackBuilder, mais je n'a
 
 Le cas étrange du SIG sur Apple ne sera pas non plus détaillé.
 
-On rappelera donc que l'habitat naturel de l'éléphant bleu est Linux. Et comme toutes les espèces protégées, prière de le laisse dans sont habitat naturel. 
+On rappelera donc que l'habitat naturel de l'éléphant bleu est Linux. Et comme toutes les espèces protégées, prière de le laisse dans sont habitat naturel.
 
 *oui FreeBSD on sait. S'il te plait ne nous déconcentre pas*.
 
@@ -114,9 +114,9 @@ Pour pouvoir utiliser un `FDW` PostgreSQL a besoin d'un `foreign server` qui ser
 ![position du nom de l'extension dans pgadmin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/ogr_fdw/img2_liste_extension.png){: .img-center loading=lazy }
 
 - datasource : la source donnée (ici le serveur WFS de l'IGN)
-- - &COUNT=100&STARTINDEX=0 permet de paginer les requêtes de 100 en 100 pour éviter de demander trente douzes mille milliards d'objets en même temps
-- - &BBOX= : coins inférieur gauche / supérieur droit du rectangle englobant sur lequel on veut limiter notre requête pour éviter de récupérer la France entière.
-- - spécifité `d'ogr_fdw`, il faut préciser `format` qui indique quel pilote GDAL on veut utiliser.
+  - - &COUNT=100&STARTINDEX=0 permet de paginer les requêtes de 100 en 100 pour éviter de demander trente douzes mille milliards d'objets en même temps
+  - - &BBOX= : coins inférieur gauche / supérieur droit du rectangle englobant sur lequel on veut limiter notre requête pour éviter de récupérer la France entière.
+  - - spécifité `d'ogr_fdw`, il faut préciser `format` qui indique quel pilote GDAL on veut utiliser.
 
 Comme tout Geomaticien qui se respecte je confonds toujours la latitude et la longitude. Ou bien ça n'est que moi. Pour cette bbox je vous laisse donc tester l'ordre des X et des Y (ici il s'agit de la Baie de Somme qui est un coin très très chouette à visiter).
 
@@ -128,10 +128,9 @@ Maintenant, créons un shéma nommé `ign` qui stockera toutes nos données.
 CREATE SCHEMA ign;
 ```
 
-Les données provenant d'un `FDW` sont stockées dans des objets nommées `tables étrangères`. Il existe une commande [`IMPORT FOREIGN SCHEMA`](https://docs.postgresql.fr/10/sql-importforeignschema.html) mais que l'on utilisera pas ici pour éviter d'importer **l'ensemble** des données contenues sur https://data.geopf.fr/. Donc on s'arme de courage et on se prépare a traiter les 54 tables de la bdtopo individuellement. Attention a bien utiliser le type de géométrie d'origine.
+Les données provenant d'un `FDW` sont stockées dans des objets nommées `tables étrangères`. Il existe une commande [`IMPORT FOREIGN SCHEMA`](https://docs.postgresql.fr/10/sql-importforeignschema.html) mais que l'on utilisera pas ici pour éviter d'importer **l'ensemble** des données contenues sur <https://data.geopf.fr/>. Donc on s'arme de courage et on se prépare a traiter les 54 tables de la bdtopo individuellement. Attention a bien utiliser le type de géométrie d'origine.
 
 Consulter une `table étrangère` c'est requêter la données source, qui nous ramène ici au même problème que de consulter le flux directement. On va donc créer une `vue matérialisée` (et donc avec les données écrites sur disque contrairement a une simple `vue`) sur la `table étrangère` qui servira de tampon pour la consultation de la donnée, et que l'on pourra indexer spatialement et reprojeter en 2154.
-
 
 ```sql
 BEGIN;
@@ -189,7 +188,7 @@ END;
 Lors de la création de la table étrangère, il faut passer deux options spécifiques :
 
 - SERVER : le `foreign server` que l'on a créé précédemment.
-- OPTIONS : des options spécifiques au `FDW` ou au pilote GDAL. Ici, il s'agit du nom de la table sur https://data.geopf.fr/.
+- OPTIONS : des options spécifiques au `FDW` ou au pilote GDAL. Ici, il s'agit du nom de la table sur <https://data.geopf.fr/>.
 
 Et on peut indiquer en commentaire la date de création pour conserver l'information :
 
