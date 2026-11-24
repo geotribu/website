@@ -69,6 +69,12 @@ On rappelera donc que l'habitat naturel de l'éléphant bleu est Linux. Et comme
 Donc, si le dépôt est bien enregistré, la suite est simple :
 
 ```sh
+# On installe les paquet de contrib du dépôt pour rendre accessibles les extensions
+sudo apt install postgresql18-contrib # sous Debian et dérivés
+
+sudo dnf install postgresql18-contrib # sous RedHat et dérivés
+
+# Puis on installe l'extension
 sudo apt install ogr_fdw # sous Debian et dérivés
 
 sudo dnf install ogr_fdw # sous RedHat et dérivés
