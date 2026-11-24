@@ -279,7 +279,6 @@ Et enfin, voici le script complet ici !
 
 <script src="https://gitlab.com/-/snippets/6093205.js"></script>
 
-
 <!-- geotribu:authors-block -->
 
 {% include "licenses/cc4_by-nc-sa.md" %}
