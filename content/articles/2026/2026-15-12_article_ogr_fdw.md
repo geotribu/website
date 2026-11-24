@@ -64,7 +64,7 @@ On rappelera donc que l'habitat naturel de l'éléphant bleu est Linux. Et comme
 
 *oui FreeBSD on sait. S'il te plait ne nous déconcentre pas*.
 
-`ogr_fdw` est présent dans le dépôt PGDG qui sert à intaller l'animal correctement comme expliqué pour Débian et dériviées [ici](https://www.postgresql.org/download/linux/debian/) ou [ici](https://www.postgresql.org/download/linux/redhat/) chez RedHat. Postgis devra lui aussi être installé.
+`ogr_fdw` est présent dans le dépôt PGDG qui sert à installer l'animal correctement comme expliqué pour Debian et dériviée [ici](https://www.postgresql.org/download/linux/debian/) ou [ici](https://www.postgresql.org/download/linux/redhat/) chez RedHat. Postgis devra lui aussi être installé.
 
 Donc, si le dépôt est bien enregistré, la suite est simple :
 
