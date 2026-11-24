@@ -60,7 +60,7 @@ Sur Fenêtres, l'extension semble être disponible via StackBuilder, mais je n'a
 
 Le cas étrange du SIG sur Apple ne sera pas non plus détaillé.
 
-On rappelera donc que l'habitat naturel de l'éléphant bleu est Linux. Et comme toutes les espèces protégées, prière de le laisse dans sont habitat naturel.
+On rappelera donc que l'habitat naturel de l'éléphant bleu est Linux. Et comme toutes les espèces protégées, prière de le laisser dans son habitat naturel.
 
 *oui FreeBSD on sait. S'il te plait ne nous déconcentre pas*.
 
