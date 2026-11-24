@@ -44,7 +44,7 @@ Passer par des flux WFS n'est pas non plus une solution toujours pratique. Essay
 
 Dans le monde de PostgreSQL, un Foreign Data Wrapper (qu'on va raccourcir en FDW car vous ne voulez jamais avoir a prononcer ces mots en réunion plus d'une fois) consiste, comme son nom l'indique, en un *enveloppeur de données externes*, soit un outil qui va permettre de lire dans PostgreSQL des données externes *comme si elles y étaient*. Si vous êtes atteins de névroses profondes, vous pouvez approfondir dans le [Necronomicon](https://www.interdb.jp/pg/pgsql04/index.html).
 
-Ces outils sont le plus souvent présents sous la forme d'extensions. Par défaut, POstgreSQL vient avec `postgres_fdw` qui permet de lire dans une base PostgreSQL des données provenant d'une autre base PostgreSQL, et `file_fdw` qui permet d'y lire des CSV. Mais il y en a énormement d'autres ! [liste non exhaustive](https://wiki.postgresql.org/wiki/Foreign_data_wrappers). Dans les "Exotic Wrappers" on notera la présence du  mystérieux mais fascinant *Phillips Hue Lighting Systems*.
+Ces outils sont le plus souvent présents sous la forme d'extensions. Par défaut, POstgreSQL vient avec `postgres_fdw` qui permet de lire dans une base PostgreSQL des données provenant d'une autre base PostgreSQL, et `file_fdw` qui permet d'y lire des CSV. Mais il y en a énormement d'autres ! [liste non exhaustive](https://wiki.postgresql.org/wiki/Foreign_data_wrappers). Dans les "Exotic Wrappers" on notera la présence du mystérieux mais fascinant *Phillips Hue Lighting Systems*.
 
 L'avantage d'un `FDW` par rapport à un `dblink`, c'est qu'ils n'ont pas besoins d'être rafraichis. Une modification dans la donnée source est directement visible dans la base cible.
 
