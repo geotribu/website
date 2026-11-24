@@ -119,7 +119,7 @@ Pour pouvoir utiliser un `FDW` PostgreSQL a besoin d'un `foreign server` qui ser
 
 ![position du nom de l'extension dans pgadmin](https://cdn.geotribu.fr/img/articles-blog-rdp/articles/2026/ogr_fdw/img2_liste_extension.png){: .img-center loading=lazy }
 
-- datasource : la source donnée (ici le serveur WFS de l'IGN)
+* datasource : la source donnée (ici le serveur WFS de l'IGN)
       - - &COUNT=100&STARTINDEX=0 permet de paginer les requêtes de 100 en 100 pour éviter de demander trente douzes mille milliards d'objets en même temps
       - - &BBOX= : coins inférieur gauche / supérieur droit du rectangle englobant sur lequel on veut limiter notre requête pour éviter de récupérer la France entière.
       - - spécifité `d'ogr_fdw`, il faut préciser `format` qui indique quel pilote GDAL on veut utiliser.
