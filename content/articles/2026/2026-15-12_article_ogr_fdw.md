@@ -275,7 +275,8 @@ Attention ça peut prendre 1 ou 2 heures à cette échelle, mais le flux n'est �
 
 On peut même imaginer un job `cron` ou `pgcron` qui lancera automatiquement ce `CALL` régulièrement (ou autre outil d'orchestration).
 
-Et enfin, voici le script complet [ici](https://gitlab.com/-/snippets/6093205) !
+Et enfin, voici le script complet ici !
+<script src="https://gitlab.com/-/snippets/6093205.js"></script>
 
 <!-- geotribu:authors-block -->
 
